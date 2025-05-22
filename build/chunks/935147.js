@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(350327),
   v = n(996073),
   T = n(25990),
-  N = n(626135),
-  I = n(74538),
+  I = n(626135),
+  N = n(74538),
   y = n(296810),
   A = n(433411),
   P = n(532432),
@@ -48,7 +48,7 @@ function G(e) {
     user: G,
     isVisible: F,
     shouldShow: H
-  } = e, z = I.ZP.isPremium(G), {
+  } = e, z = N.ZP.isPremium(G), {
     pendingAvatar: W,
     pendingThemeColors: Y,
     tryItOutThemeColors: K,
@@ -104,13 +104,13 @@ function G(e) {
         let e = g.Z.getProduct(J.skuId);
         null != e && (0, p.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, a.cV)(J)) : null != m.Z.getPurchase(J.skuId) && (0, a.cV)(J)
       }
-      N.default.track(L.rMx.TRY_IT_OUT_PRESET_SELECTED, {
+      I.default.track(L.rMx.TRY_IT_OUT_PRESET_SELECTED, {
         preset: ee
       })
     }
   };
   r.useEffect(() => {
-    F && N.default.track(L.rMx.PREMIUM_UPSELL_VIEWED, {
+    F && I.default.track(L.rMx.PREMIUM_UPSELL_VIEWED, {
       type: B.cd.PREMIUM_PROFILE_TRY_IT_OUT,
       location: {
         page: L.ZY5.USER_SETTINGS

@@ -31,7 +31,7 @@ let _ = e => {
     customVideoStyle: S,
     isReducedMotion: v,
     onClick: T
-  } = e, N = (0, m.rO)(), I = r.useRef(null), y = r.useRef(0), A = function(e) {
+  } = e, I = (0, m.rO)(), N = r.useRef(null), y = r.useRef(0), A = function(e) {
     let t;
     switch (e) {
       case p.NA.EMOJIS:
@@ -64,9 +64,9 @@ let _ = e => {
       box_type: (0, a.snakeCase)(t)
     })
   }, 800), w = () => {
-    null == I.current || v || (I.current.currentTime = y.current, I.current.play())
+    null == N.current || v || (N.current.currentTime = y.current, N.current.play())
   }, k = () => {
-    null == I.current || v || (y.current = I.current.currentTime, I.current.pause())
+    null == N.current || v || (y.current = N.current.currentTime, N.current.pause())
   }, L = () => (0, i.jsxs)("div", {
     className: l()({
       [b.largeTextBox]: O === p.y$.LARGE,
@@ -113,10 +113,10 @@ let _ = e => {
         [b.smallBoxVideo]: O === p.y$.SMALL,
         [S]: null != S
       }),
-      ref: I,
+      ref: N,
       children: (0, i.jsx)("source", {
         src: E,
-        type: N ? f.m.MP4 : f.m.WEBM
+        type: I ? f.m.MP4 : f.m.WEBM
       })
     }, E)
   });

@@ -31,7 +31,7 @@ let d = r.forwardRef(function(e, t) {
     tooltipForceOpen: S,
     tooltipContentClassName: v,
     plated: T
-  } = e, N = "function" == typeof g ? (0, i.jsx)(g, {
+  } = e, I = "function" == typeof g ? (0, i.jsx)(g, {
     width: 20,
     height: 20,
     size: "custom",
@@ -121,8 +121,8 @@ let d = r.forwardRef(function(e, t) {
           width: 20,
           height: 20,
           mask: o.ZP.Masks.PANEL_BUTTON,
-          children: N
-        }) : N, r]
+          children: I
+        }) : I, r]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

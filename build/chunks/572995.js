@@ -26,8 +26,8 @@ var i, r, s = n(230711),
   S = n(751125),
   v = n(357003),
   T = n(904505),
-  N = n(712626),
-  I = n(386014),
+  I = n(712626),
+  N = n(386014),
   y = n(845571),
   A = n(220046),
   P = n(385874),
@@ -96,8 +96,8 @@ let B = () => {
         description: p.intl.format(p.t.jRPQUF, {
           learnMoreLink: i
         }),
-        previewImage: N.Z,
-        videoUrl: n ? T.ZP : I.ZP,
+        previewImage: I.Z,
+        videoUrl: n ? T.ZP : N.ZP,
         size: r === u.h.VARIANT_1 ? "medium" : r === u.h.VARIANT_2 ? "small" : "large"
       }, r === u.h.VARIANT_2 && {
         customVideoStyle: h.shareNitroVideo

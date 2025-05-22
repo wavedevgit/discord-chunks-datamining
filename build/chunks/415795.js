@@ -1,8 +1,8 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  $W: () => N,
+  $W: () => I,
   Mx: () => A,
-  PZ: () => I,
+  PZ: () => N,
   h4: () => P,
   ic: () => T,
   n5: () => y,
@@ -178,7 +178,7 @@ class T extends s.Component {
     })
   }
 }
-class N extends(i = s.Component) {
+class I extends(i = s.Component) {
   renderIcon() {
     var e;
     let {
@@ -287,10 +287,10 @@ class N extends(i = s.Component) {
     })
   }
 }
-S(N, "defaultProps", {
+S(I, "defaultProps", {
   unread: !1
 });
-class I extends s.Component {
+class N extends s.Component {
   renderIcon() {
     let {
       channel: e

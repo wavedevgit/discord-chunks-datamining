@@ -33,16 +33,16 @@ function T() {
     location: "revenue_storybook"
   });
   return (0, i.jsxs)("div", {
-    children: [e && (0, i.jsx)(I, {}), (0, i.jsx)(N, {}), (0, i.jsx)(y, {})]
+    children: [e && (0, i.jsx)(N, {}), (0, i.jsx)(I, {}), (0, i.jsx)(y, {})]
   })
 }
 
-function N() {
+function I() {
   let {
     openIntroToOrbsClaimedCoachmark: e
   } = (0, g.l)({
     location: "VirtualCurrencyComponents"
-  }), [t, n] = r.useState(150), [m, p] = r.useState(150), [x, E] = r.useState(500), [C, T] = r.useState(h.b.DEFAULT), N = () => {
+  }), [t, n] = r.useState(150), [m, p] = r.useState(150), [x, E] = r.useState(500), [C, T] = r.useState(h.b.DEFAULT), I = () => {
     switch (C) {
       case h.b.DEFAULT:
         T(h.b.HIGHLIGHTED);
@@ -54,7 +54,7 @@ function N() {
         T(h.b.DEFAULT)
     }
   }, {
-    analyticsLocations: I
+    analyticsLocations: N
   } = (0, c.ZP)(o.Z.PAYMENT_FLOW_TEST_PAGE);
   return (0, i.jsxs)(j.$0, {
     children: [(0, i.jsx)(l.X6q, {
@@ -89,7 +89,7 @@ function N() {
         onClick: () => {
           (0, a.xf)(), (0, u.s1)().location.pathname.includes(O.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
             openInLayer: !1,
-            analyticsLocations: I,
+            analyticsLocations: N,
             analyticsSource: o.Z.REVENUE_STORYBOOK_TEST_PAGE
           }), e({
             forceOpen: !0,
@@ -138,7 +138,7 @@ function N() {
         children: (0, i.jsx)(_.A4, {
           balance: m,
           balanceWidgetMode: C,
-          onClick: () => N()
+          onClick: () => I()
         })
       }), (0, i.jsx)(l.Text, {
         variant: "text-md/normal",
@@ -162,7 +162,7 @@ function N() {
         children: (0, i.jsx)(_.A4, {
           balance: m,
           balanceWidgetMode: C,
-          onClick: () => N()
+          onClick: () => I()
         })
       })]
     }), (0, i.jsx)(j.E_, {
@@ -176,7 +176,7 @@ function N() {
   })
 }
 
-function I() {
+function N() {
   let [e, t] = r.useState("1144308439720394944");
   return (0, i.jsxs)(j.$0, {
     children: [(0, i.jsx)(l.X6q, {

@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => I
+  Z: () => N
 });
 var i = n(255367),
   r = n(73800),
@@ -26,7 +26,7 @@ var i = n(255367),
   S = n(981631),
   v = n(388032),
   T = n(189435);
-class N extends r.PureComponent {
+class I extends r.PureComponent {
   componentDidMount() {
     c.Z.wait(() => {
       d.tZ(), d.jg()
@@ -86,7 +86,7 @@ class N extends r.PureComponent {
   }
 }
 
-function I() {
+function N() {
   let e = (0, a.cj)([j.default, x.Z, E.Z, _.default, b.Z, C.ZP], () => {
     let e = C.ZP.getPremiumTypeSubscription(),
       t = _.default.getCurrentUser();
@@ -103,7 +103,7 @@ function I() {
       isUpdatingPaymentSource: x.Z.isUpdatingPaymentSource
     }
   });
-  return (0, i.jsx)(N, function(e) {
+  return (0, i.jsx)(I, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

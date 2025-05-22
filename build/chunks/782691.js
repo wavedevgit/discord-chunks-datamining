@@ -63,7 +63,7 @@ let j = {
       back: n
     } = e, {
       upsertConfig: s
-    } = (0, p.n6)(), S = (0, o.e7)([m.default], () => m.default.getCurrentUser()), [v, T] = r.useState(!0), N = r.useRef(null), [I, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(j), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, p.n6)(), S = (0, o.e7)([m.default], () => m.default.getCurrentUser()), [v, T] = r.useState(!0), I = r.useRef(null), [N, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(j), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       type: a.Z.PROFILE_EFFECT,
       id: O,
       skuId: O,
@@ -157,7 +157,7 @@ let j = {
         children: [(0, i.jsxs)("div", {
           className: l()(b.col, b.preview),
           children: [(0, i.jsx)("img", {
-            src: I ? _ : x,
+            src: N ? _ : x,
             alt: "",
             width: 450
           }), v && (0, i.jsx)(f.Z, {
@@ -187,10 +187,10 @@ let j = {
                 children: "Dark Theme"
               }), (0, i.jsx)("input", {
                 type: "checkbox",
-                checked: I,
+                checked: N,
                 className: b.checkBox,
                 onChange: () => {
-                  y(!I)
+                  y(!N)
                 }
               })]
             }), (0, i.jsxs)("div", {
@@ -212,7 +212,7 @@ let j = {
             children: [(0, i.jsxs)(c.zxk, {
               color: c.Ttl.GREEN,
               children: ["Upload Animated Layer", (0, i.jsx)(u.Z, {
-                ref: N,
+                ref: I,
                 onChange: e => {
                   let t = V(e);
                   null != t && (0, h.i0)(t, async e => {
@@ -231,21 +231,21 @@ let j = {
             children: [(0, i.jsxs)(c.zxk, {
               color: c.Ttl.GREEN,
               children: ["Upload thumbnail.png", (0, i.jsx)(u.Z, {
-                ref: N,
+                ref: I,
                 onChange: e => G(h.cq.THUMBNAIL, e),
                 multiple: !1
               })]
             }), (0, i.jsxs)(c.zxk, {
               color: c.Ttl.GREEN,
               children: ["Upload static.png", (0, i.jsx)(u.Z, {
-                ref: N,
+                ref: I,
                 onChange: e => G(h.cq.STATIC, e),
                 multiple: !1
               })]
             }), (0, i.jsxs)(c.zxk, {
               color: c.Ttl.GREEN,
               children: ["Upload reduced_motion.png", (0, i.jsx)(u.Z, {
-                ref: N,
+                ref: I,
                 onChange: e => G(h.cq.REDUCED_MOTION, e),
                 multiple: !1
               })]
@@ -489,7 +489,7 @@ let j = {
                   color: "always-white",
                   children: "Add Alternative"
                 }), (0, i.jsx)(u.Z, {
-                  ref: N,
+                  ref: I,
                   onChange: e => F(e, t),
                   multiple: !1
                 })]
