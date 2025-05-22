@@ -54,7 +54,7 @@ function i(e) {
       segment_end_sec: e.segmentEndSec,
       segment_duration_sec: e.segmentEndSec - e.segmentStartSec
     })
-  }, [s]), E = (0, r.useCallback)(() => {
+  }, [s]), b = (0, r.useCallback)(() => {
     let e = t();
     if (null != e && i && a) {
       let t = Date.now();
@@ -65,7 +65,7 @@ function i(e) {
         segmentEndSec: e
       }), v.current = !0
     }
-  }, [t, i, a]), b = (0, r.useCallback)(() => {
+  }, [t, i, a]), E = (0, r.useCallback)(() => {
     let e = t();
     if (null == e || null == d) return;
     let n = Date.now();
@@ -82,8 +82,8 @@ function i(e) {
   return (0, r.useEffect)(() => {
     i && a || (m(null), v.current = !1)
   }, [i, a]), (0, r.useEffect)(() => {
-    if (n && i && a) v.current || E(), p.current = window.setInterval(() => {
-      b()
+    if (n && i && a) v.current || b(), p.current = window.setInterval(() => {
+      E()
     }, 200);
     else {
       let e = t();
@@ -99,7 +99,7 @@ function i(e) {
     return () => {
       null != p.current && (clearInterval(p.current), p.current = null)
     }
-  }, [n, i, a, d, b, g, E, t]), {
+  }, [n, i, a, d, E, g, b, t]), {
     forceSendCurrentSegment: (0, r.useCallback)(() => {
       let e = t();
       if (null != d && null != e) {

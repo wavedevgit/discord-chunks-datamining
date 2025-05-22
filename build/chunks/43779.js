@@ -36,13 +36,13 @@ function P(e) {
     contentPosition: k,
     rowIndex: B,
     onReceiveErrorHints: q
-  } = e, I = (0, g.j)({
+  } = e, D = (0, g.j)({
     location: _.dr.QUESTS_BAR_MOBILE
-  }), D = o.useMemo(() => x.r.build(N.config), [N.config]), M = D.defaultReward.messages.name, L = D.defaultReward.messages.nameWithArticle, W = I ? M : L, Z = (null == (t = N.userStatus) ? void 0 : t.enrolledAt) != null, {
+  }), I = o.useMemo(() => x.r.build(N.config), [N.config]), M = I.defaultReward.messages.name, L = I.defaultReward.messages.nameWithArticle, W = D ? M : L, Z = (null == (t = N.userStatus) ? void 0 : t.enrolledAt) != null, {
     ref: V,
     scrollHeight: Q
-  } = (0, d.kE)(), U = 104 !== Q, {
-    onAssetLoadComplete: H
+  } = (0, d.kE)(), H = 104 !== Q, {
+    onAssetLoadComplete: U
   } = o.useContext(j.k), {
     expansionSpring: z
   } = (0, c.q_F)({
@@ -143,7 +143,7 @@ function P(e) {
                 className: w.circularQuestRewardTileAsset,
                 location: _.dr.QUEST_HOME_DESKTOP,
                 autoplay: R,
-                onLoadComplete: H
+                onLoadComplete: U
               })
             })
           })]
@@ -153,12 +153,12 @@ function P(e) {
           questContent: A,
           className: w.questRewardTileAsset,
           location: _.dr.QUEST_HOME_DESKTOP,
-          onLoadComplete: H
+          onLoadComplete: U
         })]
       }), (0, r.jsxs)("div", {
         ref: V,
         className: a()(w.textContainer, {
-          [w.justifyCenter]: !U
+          [w.justifyCenter]: !H
         }),
         children: [(0, r.jsx)(c.X6q, {
           variant: "eyebrow",
@@ -171,14 +171,14 @@ function P(e) {
           variant: "text-md/semibold",
           color: "header-primary",
           className: a()(w.header, {
-            [w.headerWithoutMargin]: I
+            [w.headerWithoutMargin]: D
           }),
           children: ee
-        }), I && (0, r.jsx)(v.Z, {
+        }), D && (0, r.jsx)(v.Z, {
           quest: N,
           textColor: "text-muted"
         }), et]
-      }), U && (0, r.jsx)(i.animated.div, {
+      }), H && (0, r.jsx)(i.animated.div, {
         style: {
           opacity: z.to([0, 1], [1, 0])
         },

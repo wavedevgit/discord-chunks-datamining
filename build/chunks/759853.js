@@ -32,7 +32,7 @@ let b = ["#51BC9D"],
     } = (0, f.G)(), C = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = o.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = o.useRef(null), E = (0, d.e7)([m.Z], () => m.Z.hasLayers()), T = (0, u.Z)(E), [N, A] = o.useState(null), [R, k] = o.useState(null), B = o.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), q = (0, i.uR)(N, R), I = o.useCallback(() => {
+    })), q = (0, i.uR)(N, R), D = o.useCallback(() => {
       if (S) return;
       let e = v.current,
         t = P.current;
@@ -110,16 +110,16 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [v, P, q, S]), D = (0, u.Z)(y);
+    }, [v, P, q, S]), I = (0, u.Z)(y);
     return (o.useEffect(() => {
-      C && y && !D && (O(), I())
-    }, [y, C, O, I, D]), o.useEffect(() => {
+      C && y && !I && (O(), D())
+    }, [y, C, O, D, I]), o.useEffect(() => {
       C && !E && T && setTimeout(() => {
-        O(), I()
+        O(), D()
       }, 200)
-    }, [C, T, E, O, I]), o.useEffect(() => {
-      q.isReady && (!w.current && C && (O(), I()), w.current = C)
-    }, [C, w, I, O, q]), S) ? null : (0, r.jsxs)("div", {
+    }, [C, T, E, O, D]), o.useEffect(() => {
+      q.isReady && (!w.current && C && (O(), D()), w.current = C)
+    }, [C, w, D, O, q]), S) ? null : (0, r.jsxs)("div", {
       className: x.wrapper,
       "aria-hidden": "true",
       ref: P,

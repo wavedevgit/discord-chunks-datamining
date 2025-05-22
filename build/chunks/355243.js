@@ -28,62 +28,62 @@ function v(e) {
     interactionEnabled: o,
     backgroundColor: v,
     preloadedBuffers: g,
-    duration: E,
-    maxSeekableTime: b,
+    duration: b,
+    maxSeekableTime: E,
     onClick: O,
     onScrubBack: h,
-    onScrubForward: S
-  } = e, [C, j] = l.useState(null), [_, y] = l.useState(null), [x, D] = l.useState(null), [P, T] = l.useState(!1), N = l.useRef(null), k = e => {
+    onScrubForward: C
+  } = e, [S, j] = l.useState(null), [y, _] = l.useState(null), [x, D] = l.useState(null), [T, P] = l.useState(!1), N = l.useRef(null), k = e => {
     N.current = e, j(e)
   };
   l.useEffect(() => {
-    null != C && (null == b ? D(null) : D(f(b, E, C)))
-  }, [C, b, E]);
+    null != S && (null == E ? D(null) : D(f(E, b, S)))
+  }, [S, E, b]);
   let I = (0, c.Z)(e => {
       k(e.contentRect)
     }),
-    A = (0, s.y)(I);
+    w = (0, s.y)(I);
   l.useLayoutEffect(() => {
-    null != A.current && k(A.current.getBoundingClientRect())
-  }, [A]), l.useEffect(() => {
+    null != w.current && k(w.current.getBoundingClientRect())
+  }, [w]), l.useEffect(() => {
     let e = () => {
-      null != A.current && k(A.current.getBoundingClientRect())
+      null != w.current && k(w.current.getBoundingClientRect())
     };
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, [A]);
-  let w = e => {
-      y(e.clientX)
+  }, [w]);
+  let A = e => {
+      _(e.clientX)
     },
     L = l.useCallback(e => {
       let {
         key: t
       } = e;
-      t === d.mR.ArrowLeft && null != h ? (e.preventDefault(), e.stopPropagation(), h()) : t === d.mR.ArrowRight && null != S && (e.preventDefault(), e.stopPropagation(), S())
-    }, [h, S]),
-    R = null != _ && null != C ? p(_, C, E) : 0,
+      t === d.mR.ArrowLeft && null != h ? (e.preventDefault(), e.stopPropagation(), h()) : t === d.mR.ArrowRight && null != C && (e.preventDefault(), e.stopPropagation(), C())
+    }, [h, C]),
+    R = null != y && null != S ? p(y, S, b) : 0,
     M = (0, u.yv)(R),
-    V = null != C ? C.right - f(t / 100 * E, E, C) : null,
-    B = null != _ && null != C ? C.right - _ : null,
-    F = null != x && null != C ? C.right - x : null;
+    V = null != S ? S.right - f(t / 100 * b, b, S) : null,
+    B = null != y && null != S ? S.right - y : null,
+    F = null != x && null != S ? S.right - x : null;
   return (0, r.jsxs)("div", {
     className: m.cont,
-    ref: A,
+    ref: w,
     children: [(0, r.jsxs)(a.P3F, {
       className: i()(m.hitboxArea, {
         [m.interactionEnabled]: o
       }),
       ignoreKeyPress: !0,
       onClick: e => {
-        o && null != O && O(p(e.clientX, e.currentTarget.getBoundingClientRect(), E))
+        o && null != O && O(p(e.clientX, e.currentTarget.getBoundingClientRect(), b))
       },
       onMouseEnter: e => {
-        o && (null != A.current && k(A.current.getBoundingClientRect()), T(!0), w(e))
+        o && (null != w.current && k(w.current.getBoundingClientRect()), P(!0), A(e))
       },
       onMouseLeave: e => {
-        o && (T(!1), y(null))
+        o && (P(!1), _(null))
       },
       onMouseMove: e => {
-        o && P && w(e)
+        o && T && A(e)
       },
       onKeyDown: L,
       tabIndex: o ? void 0 : -1,
@@ -95,7 +95,7 @@ function v(e) {
       },
       children: [null == g ? void 0 : g.map(e => (0, r.jsx)("div", {
         className: i()(m.buffer, {
-          [m.bufferHovered]: P
+          [m.bufferHovered]: T
         }),
         style: {
           width: "".concat(100 * e.size, "%"),
@@ -112,9 +112,9 @@ function v(e) {
         percent: t,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != v ? v : void 0,
-        size: P ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
+        size: T ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
         animate: n
-      }), P && null != M && (0, r.jsx)(a.Text, {
+      }), T && null != M && (0, r.jsx)(a.Text, {
         className: m.timeDisplay,
         variant: "text-xs/normal",
         style: {
@@ -122,7 +122,7 @@ function v(e) {
           color: "#FFFFFF"
         },
         children: M
-      }), P && o && null != V && (0, r.jsx)("div", {
+      }), T && o && null != V && (0, r.jsx)("div", {
         className: m.grabber,
         style: {
           right: "".concat(V - 6, "px")

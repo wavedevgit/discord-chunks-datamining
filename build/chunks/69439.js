@@ -65,24 +65,24 @@ function C(e) {
     useReducedMotion: A
   }), k = (0, u.O5)(), B = (0, p._s)({
     quest: w
-  }), q = (0, p.z)(w), I = (0, p.B6)(w.config.expiresAt, {
+  }), q = (0, p.z)(w), D = (0, p.B6)(w.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), {
-    isClaiming: D,
+    isClaiming: I,
     isEnrolling: M,
     isQuestEnrollmentBlocked: L
   } = (0, i.cj)([m.Z], () => ({
     isClaiming: m.Z.isClaimingReward(w.id) || m.Z.isFetchingRewardCode(w.id),
     isEnrolling: m.Z.isEnrolling(w.id),
     isQuestEnrollmentBlocked: null != m.Z.questEnrollmentBlockedUntil
-  })), W = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, Z = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, V = Z && (null == (s = w.userStatus) ? void 0 : s.claimedAt) == null, Q = (0, g.iQ)(w), U = !(0, g.zi)(w), H = (0, p._Q)(w), z = (0, g.Xv)(w.config), F = (0, g.q8)(w), K = (0, g.Vl)(w), X = o.useRef(null), Y = (0, p.Rf)(w), [G, J, $] = (0, p.me)(w, Y), ee = U && H === p.OH.ACCEPTED, et = ee && G === f.LI.SELECT, en = ee && !et && J.length > 1, er = o.useCallback(e => {
+  })), W = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, Z = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, V = Z && (null == (s = w.userStatus) ? void 0 : s.claimedAt) == null, Q = (0, g.iQ)(w), H = !(0, g.zi)(w), U = (0, p._Q)(w), z = (0, g.Xv)(w.config), F = (0, g.q8)(w), K = (0, g.Vl)(w), X = o.useRef(null), Y = (0, p.Rf)(w), [G, J, $] = (0, p.me)(w, Y), ee = H && U === p.OH.ACCEPTED, et = ee && G === f.LI.SELECT, en = ee && !et && J.length > 1, er = o.useCallback(e => {
     $(e), e === j.cd.DESKTOP && P([])
   }, [$, P]), {
     text: eo,
     onClick: es
   } = (0, x.Ks)({
-    progressState: H,
+    progressState: U,
     quest: w,
     location: S,
     isCollectibleQuest: z,
@@ -111,7 +111,7 @@ function C(e) {
   }), el = (null == (C = w.userStatus) ? void 0 : C.claimedAt) != null, ec = null;
   return (Q && V ? ec = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
-    submitting: D,
+    submitting: I,
     onClick: null != es ? es : void 0,
     className: y.button,
     children: eo
@@ -145,13 +145,13 @@ function C(e) {
     className: y.button,
     onClick: null != es ? es : void 0,
     children: eo
-  }) : U ? U && V ? ec = (0, r.jsx)(l.zxk, {
+  }) : H ? H && V ? ec = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
-    submitting: D,
+    submitting: I,
     onClick: null != es ? es : void 0,
     className: y.button,
     children: eo
-  }) : U && W && !el ? ec = et ? (0, r.jsx)(l.PhF, {
+  }) : H && W && !el ? ec = et ? (0, r.jsx)(l.PhF, {
     className: y.platformSelectorPrimary,
     isSelected: () => !1,
     options: _,
@@ -190,7 +190,7 @@ function C(e) {
     disabled: !0,
     className: y.button,
     children: v.intl.string(v.t["9KoPyM"])
-  }) : U && !W && (ec = L ? (0, r.jsxs)(r.Fragment, {
+  }) : H && !W && (ec = L ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zxk, {
       color: l.Ttl.PRIMARY,
       className: y.button,
@@ -213,7 +213,7 @@ function C(e) {
     disabled: !0,
     className: y.button,
     children: v.intl.format(v.t["14o6QU"], {
-      expiryDate: I
+      expiryDate: D
     })
   }), null == ec) ? null : (0, r.jsxs)("div", {
     className: y.container,
