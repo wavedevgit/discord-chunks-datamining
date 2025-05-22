@@ -1,6 +1,6 @@
 /**
   Module ID: 41259
-  Original File Name: f30cc0059463baa8
+  Original File Name: f529e76f60c48e34
 **/
 .modal__46773 {
     display: flex;
@@ -41,8 +41,8 @@
 }
 
 .iconContainer__46773.petite__46773 {
-    height: 72px;
-    width: 72px
+    height: 80px;
+    width: 80px
 }
 
 .iconContainer__46773 .pencilIconWrapper__46773 {
@@ -76,19 +76,23 @@
 .iconPlaceholder__46773 {
     align-items: center;
     background-color: var(--bg-mod-subtle);
+    border-radius: 50%;
     color: var(--interactive-muted);
     display: flex;
-    justify-content: center
-}
-
-.iconImage__46773,.iconPlaceholder__46773 {
-    border-radius: 50%;
     height: 100%;
+    justify-content: center;
     width: 100%
 }
 
+.iconContainer__46773:hover .iconPlaceholder__46773 {
+    color: var(--interactive-normal)
+}
+
 .iconImage__46773 {
-    object-fit: cover
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+    width: 100%
 }
 
 .closeButton__46773 {
@@ -109,4 +113,4 @@
     color: var(--text-primary)
 }
 
-/*# sourceMappingURL=f30cc0059463baa8.css.map*/
+/*# sourceMappingURL=f529e76f60c48e34.css.map*/

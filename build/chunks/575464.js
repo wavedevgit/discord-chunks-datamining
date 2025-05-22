@@ -25,11 +25,12 @@ function m(e) {
     comparator: b,
     selected: _,
     checked: x,
-    onClick: C,
-    onMouseEnter: y,
-    "aria-setsize": v,
-    "aria-posinset": j
-  } = e, O = (0, o.e7)([p.Z], () => p.Z.getStatus(i.id)), E = (0, a.JA)(String(i.id));
+    inlineUsername: C = !0,
+    onClick: y,
+    onMouseEnter: v,
+    "aria-setsize": j,
+    "aria-posinset": O
+  } = e, E = (0, o.e7)([p.Z], () => p.Z.getStatus(i.id)), I = (0, a.JA)(String(i.id));
   return (0, r.jsx)(s.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -51,41 +52,47 @@ function m(e) {
     id: "user-row-".concat(m),
     className: f.friendWrapper,
     onClick: () => {
-      null != C && C(i.id)
+      null != y && y(i.id)
     },
     onMouseEnter: () => {
-      null != y && y(m)
+      null != v && v(m)
     }
-  }, E), n = n = {
+  }, I), n = n = {
     role: "option",
     "aria-selected": x,
-    "aria-setsize": v,
-    "aria-posinset": j,
+    "aria-setsize": j,
+    "aria-posinset": O,
     children: (0, r.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
       className: l()(f.friend, {
-        [f.friendSelected]: _
+        [f.friendSelected]: _,
+        [f.twoRows]: !C
       }),
       children: [(0, r.jsx)(u.Z, {
         user: i,
-        status: O,
+        status: E,
         className: f.avatar
       }), (0, r.jsxs)(d.Z, {
         className: f.match,
         align: d.Z.Align.BASELINE,
+        direction: C ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
         children: [(0, r.jsx)(s.Text, {
           tag: "strong",
           className: f.nickname,
           "aria-hidden": !0,
           variant: "text-md/medium",
           children: null != b && b === i.tag ? h.ZP.getName(i) : null != b && "" !== b ? b : h.ZP.getName(i)
-        }), (0, r.jsx)(c.Z, {
-          user: i,
-          hideDiscriminator: g,
-          className: f.discordTag,
-          usernameClass: f.__invalid_weightMedium,
-          discriminatorClass: f.__invalid_weightMedium,
-          forceUsername: !0
+        }), (0, r.jsx)(s.Text, {
+          variant: "text-xs/normal",
+          color: "text-muted",
+          children: (0, r.jsx)(c.Z, {
+            user: i,
+            hideDiscriminator: g,
+            className: f.discordTag,
+            usernameClass: f.__invalid_weightMedium,
+            discriminatorClass: f.__invalid_weightMedium,
+            forceUsername: !0
+          })
         })]
       }), (0, r.jsx)(s.XZJ, {
         displayOnly: !0,

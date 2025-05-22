@@ -1,6 +1,6 @@
 /**
   Module ID: 8787
-  Original File Name: 64c0415dc9a457dc
+  Original File Name: d146e47419af6dab
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -12714,95 +12714,6 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     margin-right: 8px
 }
 
-.iconRow_a653e3 {
-    align-items: center;
-    display: flex;
-    gap: 8px;
-    height: 24px
-}
-
-.icon_a653e3 {
-    border-radius: var(--radius-xs)
-}
-
-.normal_a653e3 {
-    height: 24px;
-    width: 24px
-}
-
-.small_a653e3 {
-    height: 16px;
-    width: 16px
-}
-
-.overflow_a653e3 {
-    align-items: center;
-    background-color: var(--background-secondary);
-    display: flex;
-    justify-content: center
-}
-
-.cardsContainer__5a92b {
-    display: flex;
-    gap: 20px
-}
-
-.container__5a92b {
-    background-color: var(--background-secondary);
-    border-radius: var(--radius-md)
-}
-
-.container__5a92b,.innerContainer__5a92b {
-    display: flex;
-    flex: 1;
-    flex-direction: column
-}
-
-.innerContainer__5a92b {
-    gap: 24px;
-    padding: 20px
-}
-
-.disabled__5a92b {
-    opacity: .5
-}
-
-.headerContainer__5a92b {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    gap: 8px
-}
-
-.headerAsset__5a92b {
-    height: 24px;
-    width: 24px
-}
-
-.header__5a92b {
-    margin: 8px 0
-}
-
-.sharingContainer__5a92b {
-    display: flex;
-    flex-direction: column;
-    gap: 4px
-}
-
-.sharingTitleSpacer__5a92b {
-    height: 18px
-}
-
-.manageContainer__5a92b {
-    align-items: center;
-    display: flex;
-    justify-content: space-between
-}
-
-.disableButton__5a92b {
-    width: 200px
-}
-
 .allActivitySharingTitle_eda416 {
     margin-top: 24px
 }
@@ -18717,4 +18628,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=64c0415dc9a457dc.css.map*/
+/*# sourceMappingURL=d146e47419af6dab.css.map*/
