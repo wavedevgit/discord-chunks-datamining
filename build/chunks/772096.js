@@ -3,7 +3,7 @@
 n.d(t, {
   ZP: () => C,
   yw: () => N
-}), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(415506), n(35282), n(781311);
+}), n(388685), n(35282), n(415506), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(781311);
 var r = n(392711),
   i = n.n(r),
   o = n(31775),
@@ -131,6 +131,7 @@ function A(e) {
 function N(e) {
   try {
     var t;
+    if (/\\/.test(e)) throw Error("Rejected due to backslash obfuscation: " + e);
     let n = new URL(e),
       r = null != (t = n.protocol) ? t : "";
     if (!b.includes(r.toLowerCase())) throw Error("Provided protocol is not allowed: " + r);
