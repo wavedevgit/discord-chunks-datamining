@@ -5,16 +5,16 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  a = n.n(i),
+  a = n(120356),
+  i = n.n(a),
   o = n(685816),
   s = n(481060),
   c = n(381585),
   u = n(139668),
   d = n(364111),
   f = n(303952),
-  p = n(752053),
-  b = n(81136),
+  b = n(752053),
+  p = n(81136),
   g = n(953655),
   h = n(548685),
   m = n(580914),
@@ -27,14 +27,14 @@ let S = e => {
     var t;
     let {
       handleTransition: n,
-      numVisibleItems: i,
+      numVisibleItems: a,
       isFetchingCategories: s,
       tab: u,
       isFullScreen: v
     } = e, {
       noCache: O,
       includeUnpublished: S
-    } = (0, b.Z)(), j = (0, c.sp)(), y = null != (t = null == j ? void 0 : j.sessionId) ? t : "";
+    } = (0, p.Z)(), j = (0, c.sp)(), y = null != (t = null == j ? void 0 : j.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
         sessionId: y,
@@ -71,9 +71,9 @@ let S = e => {
           unpublishedCategoriesShown: S,
           cacheDisabled: O
         })
-      }, [P, E, k.length, S, O, y, u, v]), null != P) return (0, r.jsx)(p.Z, {
+      }, [P, E, k.length, S, O, y, u, v]), null != P) return (0, r.jsx)(b.Z, {
       onRetry: I,
-      errorOrigin: p.i.SHOP_PAGE,
+      errorOrigin: b.i.SHOP_PAGE,
       errorMessage: P.message
     });
     if (E || 0 === k.length) return (0, r.jsxs)("div", {
@@ -89,7 +89,7 @@ let S = e => {
       }), (0, r.jsx)(h.Z, {
         isLoading: E,
         handleTransition: n,
-        numVisibleItems: i,
+        numVisibleItems: a,
         tab: u
       })]
     });
@@ -117,7 +117,7 @@ let S = e => {
           l = (0, r.jsx)(h.Z, {
             isLoading: E || s,
             handleTransition: n,
-            numVisibleItems: i,
+            numVisibleItems: a,
             sortedSkuIds: c,
             tab: u
           }, t);
@@ -140,7 +140,7 @@ let S = e => {
           return null
       }
       return (0, r.jsx)("div", {
-        className: a()(x.blockContainer, {
+        className: i()(x.blockContainer, {
           [x.topBlockContainer]: 0 === t
         }),
         children: l
@@ -155,22 +155,22 @@ let S = e => {
       isFullScreen: t,
       handleTransition: n,
       numVisibleItems: l,
-      tab: i,
+      tab: a,
       isFetchingCategories: o
     } = e, c = (0, u.R)("CollectiblesFeedShop");
     return (0, r.jsx)("div", {
-      className: a()(x.shop, {
+      className: i()(x.shop, {
         [x.shopFullscreen]: t
       }),
       children: (0, r.jsxs)("div", {
-        className: a()(x.content, x.mainContent),
+        className: i()(x.content, x.mainContent),
         children: [(0, r.jsx)(S, {
           handleTransition: n,
           numVisibleItems: l,
           isFetchingCategories: o,
-          tab: i,
+          tab: a,
           isFullScreen: t
-        }), i !== v.AW.CATALOG && l >= c && (0, r.jsxs)("div", {
+        }), a !== v.AW.CATALOG && l >= c && (0, r.jsxs)("div", {
           className: x.endOfFeed,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-md/semibold",

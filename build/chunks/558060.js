@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var l = n(120356),
-  i = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  i = n(481060),
   o = n(884697),
   s = n(409116),
   c = n(200615),
@@ -15,8 +15,8 @@ var l = n(120356),
   d = n(388032),
   f = n(561197);
 
-function p() {
-  return (p = Object.assign || function(e) {
+function b() {
+  return (b = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -25,7 +25,7 @@ function p() {
   }).apply(this, arguments)
 }
 
-function b(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -68,24 +68,24 @@ function h(e) {
   } = e, C = (0, o.ql)(t, u.tuJ.DEFAULT);
   if (null == C) return null;
   if (C.amount <= 0) return (0, r.jsx)("div", {
-    className: i()(f.priceTagsContainer, h),
+    className: a()(f.priceTagsContainer, h),
     children: (0, r.jsx)(s.F, {
       price: C
     })
   });
   let v = (0, o.ql)(t, u.tuJ.PREMIUM_TIER_2),
     O = !n && !(0, o.x6)(t),
-    x = (0, o.x6)(t) && n ? g(b({}, C), {
+    x = (0, o.x6)(t) && n ? g(p({}, C), {
       amount: l.original
     }) : C,
     S = _ && n,
     j = _ && !n;
   return (0, r.jsxs)("div", {
-    className: i()(f.priceTagsContainer, h),
+    className: a()(f.priceTagsContainer, h),
     children: [!S && (0, r.jsx)(s.F, {
       price: x,
       discount: n ? o.f_ : l,
-      className: i()(f.price, {
+      className: a()(f.price, {
         [f.striked]: n,
         [f.dimmed]: n,
         [f.fullPrice]: O
@@ -93,7 +93,7 @@ function h(e) {
     }), null != v && !j && (0, r.jsx)(s.F, {
       price: v,
       discount: n ? l : o.f_,
-      renderPrice: m ? e => (0, r.jsx)(a.Text, {
+      renderPrice: m ? e => (0, r.jsx)(i.Text, {
         variant: "text-xs/medium",
         children: d.intl.format(d.t.Sv8iiY, {
           price: e,
@@ -104,24 +104,24 @@ function h(e) {
       }) : O ? e => d.intl.formatToPlainString(d.t.W3gIWF, {
         price: e
       }) : void 0,
-      className: i()(f.price, {
+      className: a()(f.price, {
         [f.dimmed]: !n,
         [f.fullPrice]: O
       }),
       variant: n ? void 0 : "text-xs/semibold",
-      icon: (0, r.jsx)(a.ua7, {
+      icon: (0, r.jsx)(i.ua7, {
         text: d.intl.string(d.t.MPFyJy),
         "aria-label": d.intl.string(d.t.X3Ekj4),
         children: e => {
-          var t = p({}, function(e) {
+          var t = b({}, function(e) {
             if (null == e) throw TypeError("Cannot destructure " + e);
             return e
           }(e));
-          return (0, r.jsx)(a.SrA, g(b({
+          return (0, r.jsx)(i.SrA, g(p({
             size: "md",
             color: "currentColor"
           }, t), {
-            className: i()(f.premiumIcon, {
+            className: a()(f.premiumIcon, {
               [f.fullPrice]: O
             })
           }))

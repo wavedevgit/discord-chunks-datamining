@@ -5,16 +5,16 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  a = n.n(i),
+  a = n(120356),
+  i = n.n(a),
   o = n(442837),
   s = n(481060),
   c = n(782568),
   u = n(607070),
   d = n(594174),
   f = n(451478),
-  p = n(626135),
-  b = n(63063),
+  b = n(626135),
+  p = n(63063),
   g = n(74538),
   h = n(381585),
   m = n(597688),
@@ -32,7 +32,7 @@ let k = e => {
   var t;
   let {
     isLoading: n,
-    sortedSkuIds: i,
+    sortedSkuIds: a,
     handleTransition: k,
     numVisibleItems: T,
     tab: I
@@ -43,20 +43,20 @@ let k = e => {
     sortOptions: Z,
     shuffleProducts: F,
     showRecommendationOption: H
-  } = (0, C.N)(i, B), D = (0, S.St)(A), M = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, o.e7)([f.Z], () => f.Z.isFocused()), V = !M && W, {
+  } = (0, C.N)(a, B), D = (0, S.St)(A), M = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, o.e7)([f.Z], () => f.Z.isFocused()), V = !M && W, {
     animationPhase: U,
     startAnimation: G
   } = (0, x.y)(), z = (0, h.sp)(), q = null != (t = null == z ? void 0 : z.sessionId) ? t : "", Y = l.useRef(null), $ = l.useCallback(e => {
     G({
       isShuffling: !1,
       onOutroComplete: () => R(e)
-    }), p.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+    }), b.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: q,
       sort_type: e
     })
   }, [G, R, q]);
   return null == w ? null : (0, r.jsxs)("div", {
-    className: a()(P.popularPicksSection, P.centeredSection),
+    className: i()(P.popularPicksSection, P.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: P.blockHeader,
       children: [(0, r.jsxs)("div", {
@@ -88,7 +88,7 @@ let k = e => {
               }
               return e
             }({}, e), n = n = {
-              onClick: () => (0, c.Z)(b.Z.getArticleURL(y.BhN.DATA_USED_FOR_RECOMMENDED)),
+              onClick: () => (0, c.Z)(p.Z.getArticleURL(y.BhN.DATA_USED_FOR_RECOMMENDED)),
               className: P.informationIcon,
               children: (0, r.jsx)(s.d3s, {
                 size: "sm"
@@ -126,7 +126,7 @@ let k = e => {
               isShuffling: !0,
               onOutroComplete: F,
               returnRef: Y
-            }), p.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+            }), b.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
               page_session_id: q
             })
           },

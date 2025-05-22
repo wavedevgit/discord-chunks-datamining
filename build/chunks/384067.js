@@ -5,19 +5,19 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  a = n.n(i),
+  a = n(120356),
+  i = n.n(a),
   o = n(622535),
   s = n(481060),
   c = n(63063),
   u = n(597688),
   d = n(297651),
   f = n(215023),
-  p = n(981631),
-  b = n(388032),
+  b = n(981631),
+  p = n(388032),
   g = n(806734);
 let h = e => {
-  var t, n, i;
+  var t, n, a;
   let {
     wideBannerBlock: h,
     handleTransition: m,
@@ -46,18 +46,18 @@ let h = e => {
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: v,
-      className: a()(g.row, g.between, g.bannerBlockContainer, g.centeredSection, {
+      className: i()(g.row, g.between, g.bannerBlockContainer, g.centeredSection, {
         [g.extraRounded]: P
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(g.wideBannerBackgroundImg, {
+        className: i()(g.wideBannerBackgroundImg, {
           [g.extraRounded]: P
         }),
         children: (0, r.jsx)("img", {
           ref: O,
           src: E,
           alt: h.title,
-          className: a()(g.wideBannerArt, {
+          className: i()(g.wideBannerArt, {
             [g.wideBannerArtOrbs]: P
           }),
           style: {
@@ -80,12 +80,12 @@ let h = e => {
             children: h.title
           }), (0, r.jsx)(s.Text, {
             style: {
-              color: null != (i = h.bannerTextColor) ? i : "var(--text-muted)"
+              color: null != (a = h.bannerTextColor) ? a : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: P ? "text-md/medium" : "text-sm/medium",
-            children: P ? b.intl.format(b.t.SFFP7O, {
-              helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
+            children: P ? p.intl.format(p.t.SFFP7O, {
+              helpdeskArticle: c.Z.getArticleURL(b.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : h.body
           })]
         })
@@ -93,7 +93,7 @@ let h = e => {
         className: g.wideBannerBlockButton,
         color: s.Ttl.PRIMARY,
         onClick: () => m("shop wide banner", j),
-        children: b.intl.string(b.t.jVcuVV)
+        children: p.intl.string(p.t.jVcuVV)
       })]
     })
   })

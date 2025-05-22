@@ -31,8 +31,8 @@ function x(e) {
     available: v,
     purchased: h,
     isFetchingCategories: x,
-    isFetchingPurchases: O
-  } = (0, u.yV)("NameplateModal"), j = x || O && 0 === h.length;
+    isFetchingPurchases: _
+  } = (0, u.yV)("NameplateModal"), j = x || _ && 0 === h.length;
   return (0, i.useEffect)(() => {
     b.default.track(m.rMx.OPEN_MODAL, {
       type: m.jXE.NAMEPLATE_CUSTOMIZATION,
@@ -46,7 +46,7 @@ function x(e) {
       children: j ? (0, n.jsx)(l.$jN, {
         className: g.spinner,
         type: l.$jN.Type.SPINNING_CIRCLE
-      }) : (0, n.jsx)(_, {
+      }) : (0, n.jsx)(O, {
         user: d,
         onClose: c,
         available: v,
@@ -57,7 +57,7 @@ function x(e) {
   })
 }
 
-function _(e) {
+function O(e) {
   let {
     user: t,
     available: r,
@@ -69,7 +69,7 @@ function _(e) {
     return e.skuId === (null == t || null == (n = t.collectibles) || null == (r = n.nameplate) ? void 0 : r.skuId)
   }), {
     pendingNameplate: b
-  } = (0, d._A)(), [m, x] = (0, i.useState)(() => void 0 !== b ? b : null != p ? p : null), [_, O] = (0, i.useState)(null != m), j = (0, i.useCallback)(e => {
+  } = (0, d._A)(), [m, x] = (0, i.useState)(() => void 0 !== b ? b : null != p ? p : null), [O, _] = (0, i.useState)(null != m), j = (0, i.useCallback)(e => {
     u(), (0, c.mK)({
       analyticsLocations: s,
       analyticsSource: a.Z.EDIT_NAMEPLATE_MODAL,
@@ -93,7 +93,7 @@ function _(e) {
       children: [(0, n.jsx)(v.Z, {
         selected: m,
         onSelect: (e, t) => {
-          x(e), O(null != t && t)
+          x(e), _(null != t && t)
         },
         onOpenShop: j,
         available: r,
@@ -101,10 +101,10 @@ function _(e) {
       }), (0, n.jsx)(f.Z, {
         user: t,
         selectedNameplate: m,
-        purchased: _
+        purchased: O
       })]
     }), (0, n.jsxs)(l.mzw, {
-      children: [_ || null == m ? (0, n.jsx)(l.zxk, {
+      children: [O || null == m ? (0, n.jsx)(l.zxk, {
         disabled: void 0 === m,
         onClick: () => {
           (0, d.Wh)(m), u()

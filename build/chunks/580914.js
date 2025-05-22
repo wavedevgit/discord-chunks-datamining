@@ -5,16 +5,16 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   l = n(73800),
-  i = n(120356),
-  a = n.n(i),
+  a = n(120356),
+  i = n.n(a),
   o = n(636977),
   s = n(685816),
   c = n(442837),
   u = n(481060),
   d = n(607070),
   f = n(70097),
-  p = n(688465),
-  b = n(341907),
+  b = n(688465),
+  p = n(341907),
   g = n(507808),
   h = n(594174),
   m = n(451478),
@@ -69,10 +69,10 @@ let L = {
     let {
       isLoading: t,
       handleTransition: n,
-      category: i,
+      category: a,
       heroBlock: s,
       tab: v
-    } = e, j = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), R = (0, c.e7)([m.Z], () => m.Z.isFocused()), A = (0, c.e7)([h.default], () => h.default.getCurrentUser()), Z = (0, O.u)(), F = l.useMemo(() => null != s ? s : N(i), [s, i]), {
+    } = e, j = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), R = (0, c.e7)([m.Z], () => m.Z.isFocused()), A = (0, c.e7)([h.default], () => h.default.getCurrentUser()), Z = (0, O.u)(), F = l.useMemo(() => null != s ? s : N(a), [s, a]), {
       isPreviewingStaticBanner: H,
       bannerOverrides: D,
       bannerStyleOverrides: M,
@@ -83,7 +83,7 @@ let L = {
       category_name: F.name
     });
     return null != A && (t || F !== L) ? (0, r.jsxs)("div", {
-      className: a()(B.heroBlock, {
+      className: i()(B.heroBlock, {
         [B.responsiveHero]: null == M ? void 0 : M.responsive
       }),
       children: [(0, r.jsxs)("div", {
@@ -103,14 +103,14 @@ let L = {
           loop: !0
         }), (null == M ? void 0 : M.hideSideShadow) !== !0 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
-            className: a()(B.bannerShadow, B.left, {
+            className: i()(B.bannerShadow, B.left, {
               [B.darker]: null == G ? void 0 : G.darker
             }),
             style: (null == G ? void 0 : G.gradientLeft) != null ? {
               background: null == G ? void 0 : G.gradientLeft
             } : void 0
           }), (0, r.jsx)("div", {
-            className: a()(B.bannerShadow, B.right, {
+            className: i()(B.bannerShadow, B.right, {
               [B.darker]: null == G ? void 0 : G.darker
             }),
             style: (null == G ? void 0 : G.gradientRight) != null ? {
@@ -140,7 +140,7 @@ let L = {
                 variant: "heading-xxl/bold",
                 className: B.title,
                 color: "header-primary",
-                children: [F.title, v === T.AW.ORBS && (0, r.jsx)(p.Z, {})]
+                children: [F.title, v === T.AW.ORBS && (0, r.jsx)(b.Z, {})]
               }), (0, r.jsx)(u.Text, {
                 variant: v === T.AW.ORBS ? "text-lg/medium" : "text-md/normal",
                 className: v === T.AW.ORBS ? B.orbsSubHeaderText : (null == D ? void 0 : D.showDarkBannerText) ? B.subHeaderTextDark : B.subHeaderText,
@@ -160,7 +160,7 @@ let L = {
                   pageType: I.ZY5.SHOP_ORBS_TAB,
                   sectionType: I.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: I.qAy.CTA_TO_QUEST_HOME
-                }), (0, b.navigateToQuestHome)({
+                }), (0, p.navigateToQuestHome)({
                   fromContent: o.j.ORBS_SHOP_HERO_CTA
                 })) : n("shop latest category hero", F.categorySkuId)
               },
@@ -168,7 +168,7 @@ let L = {
             })
           })]
         }), (0, r.jsx)("div", {
-          className: a()(B.row, B.feed, {
+          className: i()(B.row, B.feed, {
             [B.feedSingleRow]: v !== T.AW.ORBS
           }),
           children: t ? (0, r.jsx)(r.Fragment, {

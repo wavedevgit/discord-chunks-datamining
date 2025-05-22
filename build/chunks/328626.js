@@ -1,24 +1,24 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  g: () => i,
-  y: () => a
+  g: () => a,
+  y: () => i
 }), n(388685);
 var r, l = n(73800),
-  i = ((r = {}).MOUNTED = "mounted", r.SORT_OUT = "sort-out", r.SORT_IN = "sort-in", r.SHUFFLE_OUT = "shuffle-out", r.SHUFFLE_IN = "shuffle-in", r.FINISHED = "finished", r);
-let a = () => {
-  let [e, t] = l.useState("mounted"), [n, r] = l.useState(!1), i = l.useRef(null);
+  a = ((r = {}).MOUNTED = "mounted", r.SORT_OUT = "sort-out", r.SORT_IN = "sort-in", r.SHUFFLE_OUT = "shuffle-out", r.SHUFFLE_IN = "shuffle-in", r.FINISHED = "finished", r);
+let i = () => {
+  let [e, t] = l.useState("mounted"), [n, r] = l.useState(!1), a = l.useRef(null);
   return l.useEffect(() => {
-    n && "finished" === e && (null !== i.current && i.current.focus(), r(!1))
+    n && "finished" === e && (null !== a.current && a.current.focus(), r(!1))
   }, [e, n]), {
     animationPhase: e,
     startAnimation: l.useCallback(e => {
       let {
         isShuffling: n,
         onOutroComplete: l,
-        returnRef: a
+        returnRef: i
       } = e;
-      (null == a ? void 0 : a.current) != null && (i.current = a.current, r(!0)), t(n ? "shuffle-out" : "sort-out"), setTimeout(() => {
+      (null == i ? void 0 : i.current) != null && (a.current = i.current, r(!0)), t(n ? "shuffle-out" : "sort-out"), setTimeout(() => {
         l(), t(n ? "shuffle-in" : "sort-in"), setTimeout(() => {
           t("finished")
         }, n ? 200 : 300)

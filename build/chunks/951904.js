@@ -1,11 +1,11 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  a: () => a
+  a: () => i
 });
 var r = n(818083),
   l = n(215023);
-let i = (0, r.B)({
+let a = (0, r.B)({
     kind: "user",
     id: "2025-04_shop_shop_all_perf",
     label: "Shop All Pagination Experiment",
@@ -20,10 +20,10 @@ let i = (0, r.B)({
       }
     }]
   }),
-  a = e => {
+  i = e => {
     let {
       isPaginationEnabled: t
-    } = i.useExperiment({
+    } = a.useExperiment({
       location: e
     });
     return {

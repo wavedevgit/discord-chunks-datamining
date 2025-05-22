@@ -1,6 +1,6 @@
 /**
   Module ID: 22274
-  Original File Name: d0b9be431ec8086c
+  Original File Name: d56f87132c5cb867
 **/
 .container__2a3ed {
     color: var(--text-normal);
@@ -91,24 +91,6 @@
     }
 }
 
-@keyframes oldBadgeTextWhite__2a3ed {
-    0% {
-        opacity: 0
-    }
-
-    50% {
-        opacity: 1
-    }
-
-    90% {
-        opacity: 1
-    }
-
-    to {
-        opacity: 0
-    }
-}
-
 @keyframes newBadgeText__2a3ed {
     0% {
         opacity: 0;
@@ -122,17 +104,7 @@
 }
 
 .loaded__2a3ed .badgeText__2a3ed.old__2a3ed {
-    animation: oldBadgeText__2a3ed .5s linear 1s forwards;
-    background-image: var(--custom-old-badge-color)
-}
-
-.loaded__2a3ed .badgeText__2a3ed.oldWhite__2a3ed {
-    animation: oldBadgeTextWhite__2a3ed 1s linear .5s forwards;
-    background-color: #fff;
-    opacity: 0
-}
-
-.theme-light .loaded__2a3ed .badgeText__2a3ed.oldWhite__2a3ed {
+    animation: oldBadgeText__2a3ed .5s linear .5s forwards;
     background-image: var(--custom-old-badge-color)
 }
 
@@ -184,4 +156,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=d0b9be431ec8086c.css.map*/
+/*# sourceMappingURL=d56f87132c5cb867.css.map*/
