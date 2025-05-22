@@ -59,7 +59,7 @@ function p(e) {
   } = e, {
     staticAsset: s,
     animatedAsset: l
-  } = (0, c._)(t), u = null == l ? void 0 : l.endsWith(".png");
+  } = (0, c._)(t), u = !(null == l ? void 0 : l.endsWith(".webm"));
   return null == s || null == l ? null : u ? (0, r.jsx)(m, {
     nameplate: t,
     asset: o ? l : s,

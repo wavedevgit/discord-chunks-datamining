@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => w
 });
 var r = n(255367),
   i = n(73800),
@@ -19,10 +19,10 @@ var r = n(255367),
   m = n(357355),
   g = n(104494),
   E = n(639119),
-  b = n(767714),
-  y = n(165583),
-  O = n(302945),
-  v = n(631771),
+  b = n(311476),
+  y = n(767714),
+  O = n(165583),
+  v = n(302945),
   I = n(474936),
   S = n(981631),
   T = n(388032),
@@ -48,9 +48,31 @@ function P(e, t) {
 }
 
 function R(e) {
+  switch (e) {
+    case I.cd.CLIENT_THEMES_UPSELL:
+    case I.cd.APP_ICON_UPSELL:
+      return b.Z.getCurrentConfig({
+        location: "shouldShowSocialProof"
+      }, {
+        autoTrackExposure: !1
+      }).addSocialProof;
+    case I.cd.ANIMATED_AVATAR_MODAL_UPSELL:
+    case I.cd.ANIMATED_BANNER_MODAL_UPSELL:
+    case I.cd.PROFILE_EFFECT_MODAL_UPSELL:
+    case I.cd.AVATAR_DECORATION_MODAL_UPSELL:
+    case I.cd.FOR_LATER_MODAL_UPSELL:
+    case I.cd.VOICE_FILTERS_UPSELL:
+    case I.cd.RECENT_AVATARS_ROADBLOCK_UPSELL:
+      return !0;
+    default:
+      return !1
+  }
+}
+
+function w(e) {
   var t, n, o, {
-      title: P,
-      type: R,
+      title: b,
+      type: P,
       guildBoostProps: w,
       analyticsSource: D,
       analyticsLocation: L,
@@ -101,7 +123,7 @@ function R(e) {
       analyticsLocations: eE,
       analyticsSource: D,
       guildBoostProps: w,
-      type: R
+      type: P
     },
     ey = i.useRef(eb);
   i.useEffect(() => {
@@ -130,7 +152,7 @@ function R(e) {
     })
   }, [ep, ee, et]);
   let eO = (0, s.e7)([m.Z], () => m.Z.affinities),
-    ev = eO.length > 1 && (0, v.Y)(R),
+    ev = eO.length > 1 && R(P),
     eI = (0, s.e7)([m.Z], () => m.Z.hasFetched);
   i.useEffect(() => {
     eI || c.MH()
@@ -152,7 +174,7 @@ function R(e) {
         } else null != em && (e = T.intl.formatToPlainString(T.t.bkQ4bG, {
           percent: em.discount.amount
         }));
-      return (0, r.jsx)(b.Z, {
+      return (0, r.jsx)(y.Z, {
         className: ea,
         showGradient: ei || eo,
         premiumModalAnalyticsLocation: L,
@@ -176,7 +198,7 @@ function R(e) {
     src: e_.artURL
   }) : null != e_.artElement && (eA = e_.artElement), (0, r.jsxs)(l.Y0X, {
     className: a()(A.root, !eg && j),
-    "aria-label": P,
+    "aria-label": b,
     transitionState: Z,
     children: [null != eA && (0, r.jsxs)("div", {
       className: eT,
@@ -188,11 +210,11 @@ function R(e) {
     }), (0, r.jsx)(l.hzk, {
       scrollbarType: "none",
       className: a()(ei ? A.enhancedContent : A.content, !eg && U),
-      children: et ? (0, r.jsx)(l.$jN, {}) : eg ? (0, r.jsx)(y.ZP, {
+      children: et ? (0, r.jsx)(l.$jN, {}) : eg ? (0, r.jsx)(O.ZP, {
         onClose: H,
-        type: R,
+        type: P,
         subscriptionTier: null != (o = null == eh || null == (n = eh.subscription_trial) ? void 0 : n.sku_id) ? o : I.Si.TIER_2,
-        headingText: P,
+        headingText: b,
         context: k,
         analyticsLocationObject: L,
         discountOffer: em,
@@ -207,10 +229,10 @@ function R(e) {
               [A.enhancedHeader]: ei
             }, F),
             variant: "heading-xl/bold",
-            children: [P, J ? (0, r.jsx)(f.Z, {
+            children: [b, J ? (0, r.jsx)(f.Z, {
               className: A.betaTag
             }) : null]
-          }), ev ? (0, r.jsx)(O.Z, {
+          }), ev ? (0, r.jsx)(v.Z, {
             affinities: eO
           }) : void 0, el, (0, r.jsx)(l.Text, {
             variant: ed ? "text-sm/normal" : "text-md/normal",
