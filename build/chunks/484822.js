@@ -18,12 +18,5 @@ e.exports = {
   addStatusPrompt: "addStatusPrompt_ab8609",
   italicPrompt: "italicPrompt_ab8609",
   addStatusIcon: "addStatusIcon_ab8609",
-  addStatusIconColor: "addStatusIconColor_ab8609",
-  labelToolbar: "labelToolbar_ab8609",
-  labelToolbarHoverGap: "labelToolbarHoverGap_ab8609",
-  labelToolbarVisible: "labelToolbarVisible_ab8609",
-  labelToolbarFadeIn: "labelToolbarFadeIn_ab8609",
-  labelToolbarFadingOut: "labelToolbarFadingOut_ab8609",
-  labelToolbarFadeOut: "labelToolbarFadeOut_ab8609",
-  customStatusLabelToolbar: "customStatusLabelToolbar_ab8609"
+  addStatusIconColor: "addStatusIconColor_ab8609"
 }
