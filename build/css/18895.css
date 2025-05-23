@@ -1,6 +1,6 @@
 /**
   Module ID: 18895
-  Original File Name: 1b02fa258268e936
+  Original File Name: f6164c2b26affc67
 **/
 .effect_a9ddb3 {
     bottom: 0;
@@ -1196,12 +1196,20 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    max-height: 72px
+    --__post-thumbnail-size: 72px
+}
+
+.thumbnailContainer_faa96b,.thumbnailOverride_faa96b {
+    height: var(--__post-thumbnail-size);
+    max-height: var(--__post-thumbnail-size);
+    max-width: var(--__post-thumbnail-size);
+    min-height: var(--__post-thumbnail-size);
+    min-width: var(--__post-thumbnail-size);
+    width: var(--__post-thumbnail-size)
 }
 
 .thumbnailOverride_faa96b {
-    object-fit: cover;
-    object-position: center left
+    object-fit: cover
 }
 
 .obscured_faa96b {
@@ -1413,4 +1421,4 @@
     background-color: var(--background-tertiary)
 }
 
-/*# sourceMappingURL=1b02fa258268e936.css.map*/
+/*# sourceMappingURL=f6164c2b26affc67.css.map*/

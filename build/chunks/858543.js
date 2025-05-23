@@ -42,21 +42,21 @@ function g(e) {
     shownTags: d,
     remainingTags: g,
     moreTagsCount: b,
-    isPinned: j,
-    shouldRenderTagsRow: O
+    isPinned: O,
+    shouldRenderTagsRow: j
   } = f({
     channel: t,
     isNew: n
   }), {
     tagFilter: v
   } = (0, s.H)(t.id);
-  return O ? (0, i.jsxs)("div", {
+  return j ? (0, i.jsxs)("div", {
     className: o()(m.tags, c),
     children: [n ? (0, i.jsx)(a.IGR, {
       className: o()(p.newBadge, p.inTagsRow),
       color: l.Z.unsafe_rawColors.BRAND_260.css,
       text: h.intl.string(h.t.y2b7CA)
-    }) : null, j && (0, i.jsx)("div", {
+    }) : null, O && (0, i.jsx)("div", {
       className: m.pinIcon,
       children: (0, i.jsx)(a.ua7, {
         text: h.intl.string(h.t["1QLRYW"]),

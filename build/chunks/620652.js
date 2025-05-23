@@ -1,7 +1,7 @@
 /** Chunk was on 18895 **/
 n.d(t, {
   M: () => g,
-  Z: () => j
+  Z: () => O
 });
 var i, r = n(255367),
   o = n(73800),
@@ -24,7 +24,7 @@ let b = async e => {
   return r.assets[0].p = n.url, r
 };
 
-function j(e) {
+function O(e) {
   let {
     className: t,
     effect: n,

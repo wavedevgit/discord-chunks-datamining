@@ -1,8 +1,8 @@
 /** Chunk was on 18895 **/
 n.d(t, {
   AF: () => v,
-  oL: () => j,
-  xH: () => O
+  oL: () => O,
+  xH: () => j
 }), n(388685), n(781311);
 var i = n(255367),
   r = n(73800),
@@ -134,13 +134,13 @@ class g {
     let a = null != (i = h.Z.getThreadSettings(l.id)) ? i : {},
       g = null == l.template ? "" : l.template.trim(),
       b = h.Z.getDraft(l.id, h.d.FirstThreadMessage),
-      j = (0, u.eK)(null != b && "" !== b.trim() ? b : g);
-    this.name = null != (r = a.name) ? r : "", o = new Set(a.appliedTags), this.appliedTags = void 0 !== o ? o : new Set, this.formOpen = this.name.length > 0, this.textAreaState = j
+      O = (0, u.eK)(null != b && "" !== b.trim() ? b : g);
+    this.name = null != (r = a.name) ? r : "", o = new Set(a.appliedTags), this.appliedTags = void 0 !== o ? o : new Set, this.formOpen = this.name.length > 0, this.textAreaState = O
   }
 }
 let b = r.createContext(null);
 
-function j(e) {
+function O(e) {
   let {
     children: t,
     channel: n
@@ -151,7 +151,7 @@ function j(e) {
   })
 }
 
-function O(e, t) {
+function j(e, t) {
   let n = r.useContext(b);
   return l()(null != n, "[useForumPostComposerStore] Context should not be null"), n(e, t)
 }

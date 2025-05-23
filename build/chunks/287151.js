@@ -19,13 +19,13 @@ var i, r = n(255367),
   f = n(481060),
   g = n(596454),
   b = n(785388),
-  j = n(607070),
-  O = n(446489),
+  O = n(607070),
+  j = n(446489),
   v = n(367907),
   y = n(436774),
   T = n(98474),
-  x = n(339085),
-  S = n(906411),
+  S = n(339085),
+  x = n(906411),
   _ = n(56314),
   P = n(231053),
   E = n(944386),
@@ -142,11 +142,11 @@ class ed extends(i = o.PureComponent) {
         isLurking: p,
         isGuest: m,
         isPendingMember: b,
-        className: j,
+        className: O,
         useChatFontScaling: v,
         message: y,
-        hideEmoji: x,
-        animationStartPosition: S,
+        hideEmoji: S,
+        animationStartPosition: x,
         emojiSize: _
       } = this.props,
       {
@@ -173,8 +173,8 @@ class ed extends(i = o.PureComponent) {
       this.isMe() && (N.borderColor = i), N.background = l, e = n, t = n
     }
     let L = null == C ? void 0 : C.getBoundingClientRect(),
-      k = null != S && null != L,
-      D = null == S;
+      k = null != x && null != L,
+      D = null == x;
     return (0, r.jsx)(f.yRy, {
       targetElementRef: {
         current: C
@@ -191,10 +191,10 @@ class ed extends(i = o.PureComponent) {
         onMouseLeave: this.handleLeave,
         ref: this.handleSetReactionRef,
         children: (0, r.jsx)(d.Z.div, {
-          className: a()(w.reaction, j, {
+          className: a()(w.reaction, O, {
             [w.reactionMe]: this.isMe(),
             [w.reactionReadOnly]: u && !p && !b && !m,
-            [w.shakeReaction]: x && null == S
+            [w.shakeReaction]: S && null == x
           }),
           style: N,
           children: (0, r.jsx)(f.yRy, {
@@ -220,7 +220,7 @@ class ed extends(i = o.PureComponent) {
                   children: [k && (0, r.jsx)(T.Z, {
                     messageId: y.id,
                     emoji: c,
-                    startPosition: S,
+                    startPosition: x,
                     targetPosition: L
                   }), D && (0, r.jsx)(q.Z, {
                     count: i,
@@ -233,14 +233,14 @@ class ed extends(i = o.PureComponent) {
                   })]
                 }) : null, (0, r.jsx)(g.Z, {
                   className: a()({
-                    [w.hideEmoji]: x
+                    [w.hideEmoji]: S
                   }),
                   emojiId: c.id,
                   emojiName: c.name,
                   size: _,
                   animated: c.animated
                 })]
-              }), s ? null : (0, r.jsx)(O.Z, {
+              }), s ? null : (0, r.jsx)(j.Z, {
                 className: w.reactionCount,
                 value: Z,
                 color: e,
@@ -526,7 +526,7 @@ let eh = o.memo(e => {
       burst_colors: n,
       message: i,
       emoji: o
-    } = e, l = t === z.O.BURST, a = (0, _.v)(l && null != n ? n : []), s = (0, p.e7)([H.Z], () => void 0 !== H.Z.getEffectForEmojiId(i.getChannelId(), i.id, o)), c = (0, p.e7)([j.Z], () => j.Z.useReducedMotion), u = M.Yk.useSetting(), d = F.default.getCurrentUser(), h = (0, G.I5)(d), m = (0, p.e7)([H.Z], () => H.Z.getReactionPickerAnimation(i.id, o.name, o.id)), f = l && (s || null != m);
+    } = e, l = t === z.O.BURST, a = (0, _.v)(l && null != n ? n : []), s = (0, p.e7)([H.Z], () => void 0 !== H.Z.getEffectForEmojiId(i.getChannelId(), i.id, o)), c = (0, p.e7)([O.Z], () => O.Z.useReducedMotion), u = M.Yk.useSetting(), d = F.default.getCurrentUser(), h = (0, G.I5)(d), m = (0, p.e7)([H.Z], () => H.Z.getReactionPickerAnimation(i.id, o.name, o.id)), f = l && (s || null != m);
     return (0, r.jsx)(ed, ea(el({}, e), {
       colors: a,
       isBurstReaction: l,
@@ -589,12 +589,12 @@ let eh = o.memo(e => {
       nonce: s
     } = e, {
       joinedEmojiSourceGuild: c
-    } = (0, p.cj)([x.ZP, k.Z], () => {
-      let e = x.ZP.getCustomEmojiById(n);
+    } = (0, p.cj)([S.ZP, k.Z], () => {
+      let e = S.ZP.getCustomEmojiById(n);
       return {
-        joinedEmojiSourceGuild: (null == e ? void 0 : e.type) === S.B.GUILD ? k.Z.getGuild(null == e ? void 0 : e.guildId) : void 0
+        joinedEmojiSourceGuild: (null == e ? void 0 : e.type) === x.B.GUILD ? k.Z.getGuild(null == e ? void 0 : e.guildId) : void 0
       }
-    }), [u, d] = o.useState(void 0), [h, m] = o.useState(void 0), [g, b] = o.useState(null), [j, O] = o.useState(!1), [v, y] = o.useState(!1), [T, _] = o.useState(!1), E = null != c, C = null != (t = null == u ? void 0 : u.isDiscoverable()) && t, R = U.Z.getGuildId(), I = null != R && (R === (null == u ? void 0 : u.id) || R === (null == c ? void 0 : c.id)), w = F.default.getCurrentUser(), N = (0, W.a)({
+    }), [u, d] = o.useState(void 0), [h, m] = o.useState(void 0), [g, b] = o.useState(null), [O, j] = o.useState(!1), [v, y] = o.useState(!1), [T, _] = o.useState(!1), E = null != c, C = null != (t = null == u ? void 0 : u.isDiscoverable()) && t, R = U.Z.getGuildId(), I = null != R && (R === (null == u ? void 0 : u.id) || R === (null == c ? void 0 : c.id)), w = F.default.getCurrentUser(), N = (0, W.a)({
       sourceType: g,
       expressionSourceApplication: null != h ? h : null,
       isPremium: G.ZP.isPremium(w),
@@ -607,7 +607,7 @@ let eh = o.memo(e => {
       shouldHideRoleSubscriptionCTA: !1
     });
     if (o.useEffect(() => {
-        j && !T && (async () => {
+        O && !T && (async () => {
           i(), y(!0);
           let e = null != n ? await (0, P.Fi)(n) : null;
           if (null != e) switch (b(e.type), e.type) {
@@ -619,11 +619,11 @@ let eh = o.memo(e => {
           } else d(null);
           y(!1), _(!0), i()
         })()
-      }, [n, j, T, i]), E) return null;
+      }, [n, O, T, i]), E) return null;
     let Z = () => {
-        O(!j)
+        j(!O)
       },
-      A = j && (void 0 !== u || void 0 !== h);
+      A = O && (void 0 !== u || void 0 !== h);
     return (0, r.jsxs)("div", {
       children: [A ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
@@ -647,7 +647,7 @@ let eh = o.memo(e => {
             size: "xs",
             color: "currentColor",
             className: a()(et.reactionEmojiDetailsArrow, {
-              [et.reactionEmojiDetailsArrowCollapsed]: !j
+              [et.reactionEmojiDetailsArrowCollapsed]: !O
             })
           })]
         })
