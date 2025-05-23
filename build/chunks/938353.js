@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 40417 **/
 n.d(t, {
   $p: () => e7,
   BB: () => e6,
@@ -104,7 +104,7 @@ var r, i = n(255367),
   eK = n(981631),
   eY = n(474936),
   eX = n(388032),
-  eq = n(813102),
+  eq = n(219509),
   eQ = n(680674);
 
 function eJ(e, t, n) {
@@ -160,7 +160,7 @@ function e1() {
 }
 let e3 = 15 * eb.Z.Millis.MINUTE,
   e5 = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
-  e8 = (e, t, n) => () => {
+  e2 = (e, t, n) => () => {
     let r = null != t ? t : n;
     if (null == r) return null;
     let {
@@ -178,7 +178,7 @@ let e3 = 15 * eb.Z.Millis.MINUTE,
       className: eq.gifFavoriteButton
     })
   },
-  e2 = e => () => {
+  e8 = e => () => {
     let {
       url: t,
       proxyUrl: n,
@@ -451,7 +451,7 @@ class e6 extends(r = l.Component) {
               duration: r
             })
           },
-          gifFavoriteButton: e2(o),
+          gifFavoriteButton: e8(o),
           isSearchResult: this.props.isSearchResult
         },
         c = (0, eg.q)({
@@ -499,7 +499,7 @@ class e6 extends(r = l.Component) {
     } = this.props;
     return (0, i.jsx)(eM.F, {
       gifAutoPlay: t,
-      getGifFavButton: e2,
+      getGifFavButton: e8,
       getOnMediaItemContextMenu: null == a ? void 0 : e => t => {
         t.stopPropagation(), t.preventDefault(), null == a || a(t, e)
       },
@@ -748,7 +748,7 @@ class e6 extends(r = l.Component) {
         isSearchResult: u
       } = this.props, d = r.channel_id, p = r.id, m = (0, ej.BP)(e, d, p, s, c);
       return e.type === eK.hBH.GIFT ? null : (0, i.jsx)(A.h.Provider, {
-        value: e8(e.url, e.image, e.video),
+        value: e2(e.url, e.image, e.video),
         children: (0, i.jsx)(O.ZP, e$({
           className: eq.embedWrapper,
           embed: e,

@@ -1,6 +1,6 @@
 /**
   Module ID: 43438
-  Original File Name: 93c91ce9db3a1f58
+  Original File Name: d3155592491a8f9c
 **/
 .actionContainer_bc4513 {
     background-color: var(--background-secondary-alt);
@@ -168,6 +168,10 @@
 
 .expand__43dab .expandForeground__43dab {
     transition: d .2s ease,stroke .2s ease
+}
+
+.colorsHook__43dab {
+    font-weight: 500
 }
 
 .colorHook__43dab {
@@ -1411,4 +1415,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=93c91ce9db3a1f58.css.map*/
+/*# sourceMappingURL=d3155592491a8f9c.css.map*/

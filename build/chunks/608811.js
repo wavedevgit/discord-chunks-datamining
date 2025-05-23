@@ -1,2 +1,2 @@
 /** Chunk was on 54380 **/
-s.exports = JSON.parse('{"jfDsyM":"Sınırlı Paylaşım"}')
+i.exports = JSON.parse('{"MkgMBw":"Etkinlik paylaşmak i\xe7in \xe7evrim i\xe7i ol","Poezn5":"\xc7evrim İ\xe7i Ol","qKDqen":"Etkinlik paylaşmak i\xe7in \xe7evrim i\xe7i ol","jfDsyM":"Sınırlı Paylaşım","TvK8dH":[[1,"numTruncated"]," Tane Daha G\xf6ster"],"a3AofX":"Durumunu \xe7evrim i\xe7i yapar"}')

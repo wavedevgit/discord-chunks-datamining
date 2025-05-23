@@ -1,4 +1,4 @@
-/** Chunk was on 72704 **/
+/** Chunk was on 998 **/
 e.exports = {
   body: "body__968a4",
   invoiceTable: "invoiceTable__968a4",

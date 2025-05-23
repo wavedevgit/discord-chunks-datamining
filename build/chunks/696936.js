@@ -1,4 +1,4 @@
-/** Chunk was on 60564 **/
+/** Chunk was on 1236 **/
 "use strict";
 n.d(t, {
   W: () => l,
@@ -9,7 +9,7 @@ n(73800);
 var i = n(120356),
   s = n.n(i),
   o = n(481060),
-  a = n(956542);
+  a = n(971438);
 let l = {
   RED: a.redMessageBlock,
   YELLOW: a.yellowMessageBlock,

@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 22231 **/
 n.d(t, {
   k: () => p
 }), n(704826), n(35282);
@@ -9,7 +9,7 @@ var i = n(442837),
   a = n(430824),
   o = n(914010),
   s = n(388032),
-  c = n(502764);
+  c = n(824011);
 let u = () => (0, r.jsx)(r.Fragment, {
     children: s.intl.format(s.t.ymkBtr, {
       shareIcon: s.intl.string(s.t.VINpSE),

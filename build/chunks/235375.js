@@ -1,130 +1,130 @@
-/** Chunk was on 87427 **/
+/** Chunk was on 62134 **/
 "use strict";
-r.r(t), r.d(t, {
-  baseRules: () => x,
-  customRules: () => k
-}), r(35282), r(388685);
-var n = r(255367),
-  o = r(73800),
-  i = r(120356),
-  s = r.n(i),
-  a = r(159635),
-  l = r.n(a),
-  c = r(481060),
-  d = r(37234),
-  u = r(230711),
-  p = r(454585),
-  m = r(703656),
-  _ = r(626135),
-  b = r(981631),
-  h = r(596401);
+n.r(t), n.d(t, {
+  baseRules: () => v,
+  customRules: () => P
+}), n(35282), n(388685);
+var r = n(255367),
+  o = n(73800),
+  l = n(120356),
+  i = n.n(l),
+  s = n(159635),
+  a = n.n(s),
+  c = n(481060),
+  u = n(37234),
+  d = n(230711),
+  p = n(454585),
+  m = n(703656),
+  g = n(626135),
+  f = n(981631),
+  b = n(596401);
 
-function g(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
-let f = l().defaultRules.link,
+let O = a().defaultRules.link,
   y = {
-    section: b.jXE.SETTINGS_CHANGELOG
+    section: f.jXE.SETTINGS_CHANGELOG
   },
-  O = e => {
+  j = e => {
     let {
       level: t,
-      children: r,
-      className: n = null,
-      styleSheet: i = {}
-    } = e, a = (0, c.xSt)(), l = parseInt(t, 10), d = isNaN(l) ? 1 : l;
-    return o.createElement("h".concat(a + d - 1), {
-      className: s()(...null == n ? [] : n.split(" ").map(e => i[e]))
-    }, r)
+      children: n,
+      className: r = null,
+      styleSheet: l = {}
+    } = e, s = (0, c.xSt)(), a = parseInt(t, 10), u = isNaN(a) ? 1 : a;
+    return o.createElement("h".concat(s + u - 1), {
+      className: i()(...null == r ? [] : r.split(" ").map(e => l[e]))
+    }, n)
   },
-  x = null != p.Z ? p.Z.defaultRules : null,
-  k = {
+  v = null != p.Z ? p.Z.defaultRules : null,
+  P = {
     link: {
-      parse(e, t, r) {
-        var n, o;
-        let i, s = e[2],
-          a = s.startsWith("https://discordapp.com/nitro") || s.startsWith("https://discord.com/nitro"),
-          l = s.startsWith("https://discordapp.com/hypesquad") || s.startsWith("https://discord.com/hypesquad"),
-          p = s.startsWith("/shop/fullscreen?source=1") || s.startsWith("/activities");
-        return i = a || l ? e => {
-          _.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
+      parse(e, t, n) {
+        var r, o;
+        let l, i = e[2],
+          s = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
+          a = i.startsWith("https://discordapp.com/hypesquad") || i.startsWith("https://discord.com/hypesquad"),
+          p = i.startsWith("/shop/fullscreen?source=1") || i.startsWith("/activities");
+        return l = s || a ? e => {
+          g.default.track(f.rMx.PREMIUM_PROMOTION_OPENED, {
             location: y
-          }), a ? u.Z.open(b.oAB.PREMIUM) : l && u.Z.open(b.oAB.HYPESQUAD_ONLINE), r.changeLog.track(b.rMx.CHANGE_LOG_CTA_CLICKED, {
+          }), s ? d.Z.open(f.oAB.PREMIUM) : a && d.Z.open(f.oAB.HYPESQUAD_ONLINE), n.changeLog.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
             cta_type: "nitro"
-          }), (0, c.Mr3)(h.Xd), e.preventDefault()
+          }), (0, c.Mr3)(b.Xd), e.preventDefault()
         } : p ? e => {
-          (0, m.uL)(s), r.changeLog.track(b.rMx.CHANGE_LOG_CTA_CLICKED, g({}, _.default.getCampaignParams(s))), (0, d.Ou)(), (0, c.Mr3)(h.Xd), e.preventDefault()
+          (0, m.uL)(i), n.changeLog.track(f.rMx.CHANGE_LOG_CTA_CLICKED, h({}, g.default.getCampaignParams(i))), (0, u.Ou)(), (0, c.Mr3)(b.Xd), e.preventDefault()
         } : () => {
-          r && "function" == typeof r.onLinkClick && r.onLinkClick(s), r.changeLog.track(b.rMx.CHANGE_LOG_CTA_CLICKED, g({
-            target: s,
+          n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(f.rMx.CHANGE_LOG_CTA_CLICKED, h({
+            target: i,
             cta_type: "inline_link"
-          }, _.default.getCampaignParams(s)))
-        }, n = g({}, f.parse(e, t, r)), o = o = {
-          callToAction: i
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-          var r = Object.keys(e);
+          }, g.default.getCampaignParams(i)))
+        }, r = h({}, O.parse(e, t, n)), o = o = {
+          callToAction: l
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
-          return r
+          return n
         })(Object(o)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
-        }), n
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
+        }), r
       },
-      react: (e, t, r) => (0, n.jsx)(c.eee, {
-        href: l().sanitizeUrl(e.target),
+      react: (e, t, n) => (0, r.jsx)(c.eee, {
+        href: a().sanitizeUrl(e.target),
         title: e.title,
         onClick: e.callToAction,
         target: "_blank",
         className: e.callToAction ? "cta" : void 0,
-        children: t(e.content, r)
-      }, r.key)
+        children: t(e.content, n)
+      }, n.key)
     },
     lheading: e => ({
-      react: (t, r, o) => (0, n.jsx)(O, {
+      react: (t, n, o) => (0, r.jsx)(j, {
         level: t.level,
         className: t.className,
         styleSheet: e,
-        children: r(t.content, o)
+        children: n(t.content, o)
       }, o.key)
     }),
     heading: {
-      react: (e, t, r) => (0, n.jsx)(O, {
+      react: (e, t, n) => (0, r.jsx)(j, {
         level: e.level,
-        children: t(e.content, r)
-      }, r.key)
+        children: t(e.content, n)
+      }, n.key)
     },
     image: {
       react(e, t, o) {
-        let i = r(595173)("./".concat(e.target));
-        return (0, n.jsx)("img", {
+        let l = n(595173)("./".concat(e.target));
+        return (0, r.jsx)("img", {
           alt: e.alt,
-          src: i
+          src: l
         }, o.key)
       }
     },
     blockQuote: {
-      react: null == x ? void 0 : x.blockQuote.react
+      react: null == v ? void 0 : v.blockQuote.react
     },
     paragraph: {
-      react: (e, t, r) => (0, n.jsx)("p", {
-        children: t(e.content, r)
-      }, r.key)
+      react: (e, t, n) => (0, r.jsx)("p", {
+        children: t(e.content, n)
+      }, n.key)
     }
   }

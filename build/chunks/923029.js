@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 22231 **/
 n.d(t, {
   Z: () => m
 });
@@ -13,7 +13,7 @@ var r = n(255367),
   d = n(914010),
   p = n(981631),
   h = n(388032),
-  f = n(487153);
+  f = n(512134);
 
 function m(e) {
   let t, {
@@ -39,7 +39,7 @@ function m(e) {
     }), (0, r.jsxs)(o.ubH, {
       theme: b,
       children: [(0, r.jsx)(o.oxh, {
-        darkSrc: g ? n(691270) : n(625065),
+        darkSrc: g ? n(995439) : n(625065),
         lightSrc: g ? n(704139) : n(875184),
         width: 272,
         height: 222

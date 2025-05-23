@@ -18,7 +18,7 @@ function u(e) {
   (0, l.ZDy)(async () => {
     let {
       default: t
-    } = await n.e("40897").then(n.bind(n, 507294));
+    } = await n.e("40897").then(n.bind(n, 598729));
     return n => {
       var o, l;
       return (0, r.jsx)(t, (o = function(e) {

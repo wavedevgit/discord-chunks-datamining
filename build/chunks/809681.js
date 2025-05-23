@@ -1,4 +1,4 @@
-/** Chunk was on 16318 **/
+/** Chunk was on 22231 **/
 e.exports = {
   iconBackground: "iconBackground__0b34e",
   icon: "icon__0b34e",

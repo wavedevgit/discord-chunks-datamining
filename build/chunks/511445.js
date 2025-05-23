@@ -1,2 +1,2 @@
 /** Chunk was on 10008 **/
-p.exports = JSON.parse('{"jfDsyM":"Compartir limitado"}')
+a.exports = JSON.parse('{"MkgMBw":"Ponte en l\xednea para compartir actividad","Poezn5":"Ponerte en l\xednea","qKDqen":"Ponte en l\xednea para compartir actividad","jfDsyM":"Compartir limitado","TvK8dH":["Mostrar ",[1,"numTruncated"]," m\xe1s"],"a3AofX":"Establece el estado en l\xednea"}')

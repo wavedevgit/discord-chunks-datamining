@@ -1,5 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 45791 **/
 e.exports = {
   right: "right__89d2b",
   down: "down__89d2b",

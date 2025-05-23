@@ -1,4 +1,4 @@
-/** Chunk was on 79695 **/
+/** Chunk was on 26881 **/
 i.d(e, {
   Z: () => M
 }), i(388685), i(539854);
@@ -111,7 +111,7 @@ function M(t, e) {
         if (null != t && t.type === F.d4z.GUILD_VOICE) return (0, a.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([i.e("7654"), i.e("49049"), i.e("47888")]).then(i.bind(i, 560114));
+          } = await Promise.all([i.e("7654"), i.e("49049"), i.e("13350")]).then(i.bind(i, 560114));
           return i => {
             var l, a;
             return (0, n.jsx)(e, (l = function(t) {

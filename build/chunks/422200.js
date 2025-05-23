@@ -1,54 +1,54 @@
-/** Chunk was on 66950 **/
+/** Chunk was on 40157 **/
 t.d(n, {
-  default: () => C
+  default: () => x
 });
-var i = t(255367);
+var r = t(255367);
 t(73800);
-var r = t(481060),
-  a = t(239091),
-  l = t(108843),
+var i = t(481060),
+  l = t(239091),
+  a = t(108843),
   o = t(100527),
-  d = t(299206),
-  u = t(895563),
-  s = t(32750),
-  c = t(109764),
+  c = t(299206),
+  s = t(895563),
+  u = t(32750),
+  d = t(109764),
   f = t(323597),
   h = t(461535),
-  v = t(438536),
-  g = t(251746),
-  p = t(193987),
-  b = t(933793),
+  b = t(438536),
+  p = t(251746),
+  O = t(193987),
+  j = t(933793),
   Z = t(13736),
-  _ = t(732393),
-  O = t(214906),
-  m = t(612856),
-  E = t(137591),
-  y = t(388032);
-let C = (0, l.Z)(function(e) {
+  y = t(732393),
+  g = t(214906),
+  v = t(612856),
+  P = t(137591),
+  m = t(388032);
+let x = (0, a.Z)(function(e) {
   let {
     channel: n,
     onSelect: t
-  } = e, l = (0, c.Z)(n), o = (0, h.Z)(n), C = (0, O.Z)(n), j = (0, s.Z)(n), P = (0, p.Z)(n), A = (0, f.Z)(n), R = (0, d.Z)({
+  } = e, a = (0, d.Z)(n), o = (0, h.Z)(n), x = (0, g.Z)(n), w = (0, u.Z)(n), k = (0, O.Z)(n), S = (0, f.Z)(n), _ = (0, c.Z)({
     id: n.id,
-    label: y.intl.string(y.t.DQ797u)
-  }), N = (0, v.Z)(n, "Context Menu"), U = (0, b.Z)(n), S = (0, m.Z)(n), T = (0, Z.Z)(n), k = (0, _.Z)(n.id), I = (0, g.Z)(n), x = (0, E.Z)(n), D = (0, u.l)(n), M = (0, u.P)(n);
-  return (0, i.jsxs)(r.v2r, {
+    label: m.intl.string(m.t.DQ797u)
+  }), C = (0, b.Z)(n, "Context Menu"), E = (0, j.Z)(n), D = (0, v.Z)(n), N = (0, Z.Z)(n), G = (0, y.Z)(n.id), U = (0, p.Z)(n), M = (0, P.Z)(n), Q = (0, s.l)(n), T = (0, s.P)(n);
+  return (0, r.jsxs)(i.v2r, {
     navId: "thread-context",
-    onClose: a.Zy,
-    "aria-label": y.intl.string(y.t["1NBjqa"]),
+    onClose: l.Zy,
+    "aria-label": m.intl.string(m.t["1NBjqa"]),
     onSelect: t,
-    children: [(0, i.jsxs)(r.kSQ, {
-      children: [o, D]
-    }, "mark-as-read-or-favorite"), (0, i.jsxs)(r.kSQ, {
-      children: [N, I, j, P, T, k, l]
-    }, "thread-actions"), (0, i.jsxs)(r.kSQ, {
-      children: [C, S]
-    }, "notifications"), (0, i.jsx)(r.kSQ, {
-      children: M
-    }), (0, i.jsxs)(r.kSQ, {
-      children: [x, U, A]
-    }, "admin-actions"), (0, i.jsx)(r.kSQ, {
-      children: R
+    children: [(0, r.jsxs)(i.kSQ, {
+      children: [o, Q]
+    }, "mark-as-read-or-favorite"), (0, r.jsxs)(i.kSQ, {
+      children: [C, U, w, k, N, G, a]
+    }, "thread-actions"), (0, r.jsxs)(i.kSQ, {
+      children: [x, D]
+    }, "notifications"), (0, r.jsx)(i.kSQ, {
+      children: T
+    }), (0, r.jsxs)(i.kSQ, {
+      children: [M, E, S]
+    }, "admin-actions"), (0, r.jsx)(i.kSQ, {
+      children: _
     }, "developer-actions")]
   })
 }, [o.Z.CONTEXT_MENU, o.Z.CHANNEL_LIST_THREAD_MENU])

@@ -1,4 +1,4 @@
-/** Chunk was on 72704 **/
-e.exports = {
+/** Chunk was on 42242 **/
+t.exports = {
   wrapper: "wrapper__87c70"
 }

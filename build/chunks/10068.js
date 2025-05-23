@@ -1,2 +1,2 @@
 /** Chunk was on 45297 **/
-s.exports = JSON.parse('{"jfDsyM":"Begrenset deling"}')
+e.exports = JSON.parse('{"MkgMBw":"Logg p\xe5 for \xe5 dele aktivitet","Poezn5":"Logg p\xe5","qKDqen":"Logg p\xe5 for \xe5 dele aktivitet","jfDsyM":"Begrenset deling","TvK8dH":["Vis ",[1,"numTruncated"]," flere"],"a3AofX":"Setter status til p\xe5logget"}')

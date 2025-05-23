@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 22231 **/
 n.d(t, {
   Y: () => C
 }), n(388685);
@@ -14,7 +14,7 @@ var r, i = n(255367),
   h = n(513202),
   f = n(981631),
   m = n(388032),
-  g = n(968216);
+  g = n(854670);
 let b = ["embedded_cover"],
   _ = {
     tension: 800,

@@ -48,7 +48,7 @@ var r = n(255367),
   H = n(981631),
   Y = n(474936),
   W = n(388032),
-  K = n(316443);
+  K = n(357326);
 
 function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -328,7 +328,7 @@ function ef(e) {
     return eV && n ? (0, r.jsx)("div", {
       className: K.sectionFooter
     }) : null
-  }, [eB, eV]), e2 = i.useCallback(e => ej((0, U.cK)(e, Array.from(ex.values()).flat(), eA, o, ey)), [o, eA, ex, ey]), e3 = i.useCallback(e => {
+  }, [eB, eV]), e3 = i.useCallback(e => ej((0, U.cK)(e, Array.from(ex.values()).flat(), eA, o, ey)), [o, eA, ex, ey]), e2 = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -350,14 +350,14 @@ function ef(e) {
   }) : (0, r.jsx)(c.P3F, {
     tabIndex: 0,
     className: K.settingsClickArea,
-    onClick: e3,
+    onClick: e2,
     "aria-label": W.intl.string(W.t.kbFsAA),
     children: (0, r.jsx)(c.gj8, {
       size: "md",
       color: "currentColor",
       className: K.settingsIcon
     })
-  }), [em, e3]), e5 = i.useCallback(e => (0, r.jsx)(B.Z, {
+  }), [em, e2]), e5 = i.useCallback(e => (0, r.jsx)(B.Z, {
     soundboardListRef: e,
     categories: eL,
     shouldUpsellLockedCategories: eV,
@@ -432,7 +432,7 @@ function ef(e) {
       containerWidth: d,
       store: E.Wq,
       onSelectItem: eq,
-      onSearchExpressions: e2,
+      onSearchExpressions: e3,
       hasSearchResults: eM.length > 0,
       defaultSearchPlaceholder: W.intl.string(W.t.sKt3xc),
       renderRow: eQ,

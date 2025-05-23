@@ -1,18 +1,18 @@
-/** Chunk was on 95626 **/
-t.d(n, {
-  Z: () => c
-}), t(388685);
-var i = t(73800),
-  a = t(460181),
-  o = t(974180);
+/** Chunk was on 53912 **/
+n.d(t, {
+  Z: () => a
+}), n(388685);
+var r = n(73800),
+  i = n(460181),
+  l = n(974180);
 
-function c() {
-  let [e, n] = i.useState(), t = i.useRef(-1);
+function a() {
+  let [e, t] = r.useState(), n = r.useRef(-1);
   return {
-    playSound: i.useCallback(e => {
-      n(e), a.GN(o.Ay, o.yk, () => {
-        clearTimeout(t.current), t.current = setTimeout(() => {
-          n(void 0)
+    playSound: r.useCallback(e => {
+      t(e), i.GN(l.Ay, l.yk, () => {
+        clearTimeout(n.current), n.current = setTimeout(() => {
+          t(void 0)
         }, 500)
       }, e)
     }, []),

@@ -1,6 +1,6 @@
 /**
   Module ID: 89373
-  Original File Name: b03865febfa89629
+  Original File Name: e42002a083fdd5ec
 **/
 .actionButton__5d9ef {
     margin-left: auto
@@ -57,7 +57,30 @@
     display: flex;
     gap: var(--spacing-16);
     margin: 0 var(--spacing-16);
-    padding: var(--spacing-16) 0
+    padding: var(--spacing-16) 0;
+    position: relative
+}
+
+.user-profile-modal-v2 .row__19fd1 {
+    border: none
+}
+
+.user-profile-modal-v2 .row__19fd1:not(:last-child) {
+    margin-bottom: 1px
+}
+
+.user-profile-modal-v2 .row__19fd1:not(:last-child):after {
+    background-color: var(--border-subtle);
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: calc(var(--spacing-16) + var(--spacing-24));
+    position: absolute;
+    right: calc(var(--spacing-16)*-1)
+}
+
+.visual-refresh & .safetyRow__19fd1 {
+    border: none
 }
 
 .row__19fd1:last-child {
@@ -2071,4 +2094,4 @@
     }
 }
 
-/*# sourceMappingURL=b03865febfa89629.css.map*/
+/*# sourceMappingURL=e42002a083fdd5ec.css.map*/

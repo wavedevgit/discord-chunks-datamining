@@ -1,4 +1,5 @@
-/** Chunk was on 72704 **/
+/** Chunk was on 59787 **/
+"use strict";
 e.exports = {
   phoneVerificationModal: "phoneVerificationModal_db41ea",
   animationContainer: "animationContainer_db41ea",

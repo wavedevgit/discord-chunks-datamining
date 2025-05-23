@@ -1,4 +1,4 @@
-/** Chunk was on 24225 **/
+/** Chunk was on 13368 **/
 e.exports = {
   text: "text_c8b06d",
   textLeft: "textLeft_c8b06d text_c8b06d",

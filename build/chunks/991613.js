@@ -1,11 +1,11 @@
-/** Chunk was on 72704 **/
+/** Chunk was on 28292 **/
 n.r(t), n.d(t, {
-  default: () => l,
-  messagesLoader: () => r
+  default: () => b,
+  messagesLoader: () => i
 });
 let {
-  createLoader: i
-} = n(66685), r = i({
+  createLoader: h
+} = n(66685), i = h({
   bg: () => n.e("87827").then(n.t.bind(n, 590637, 19)),
   cs: () => n.e("95001").then(n.t.bind(n, 629194, 19)),
   da: () => n.e("7936").then(n.t.bind(n, 28488, 19)),
@@ -38,5 +38,5 @@ let {
   "zh-TW": () => n.e("141").then(n.t.bind(n, 391396, 19)),
   "en-US": () => n.e("22083").then(n.bind(n, 300394))
 }, "en-US"), {
-  makeMessagesProxy: s
-} = n(66685), l = s(r)
+  makeMessagesProxy: d
+} = n(66685), b = d(i)

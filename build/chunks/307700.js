@@ -1,4 +1,4 @@
-/** Chunk was on 24225 **/
+/** Chunk was on 10234 **/
 e.exports = {
   floaterWrapper: "floaterWrapper__1836e",
   visibleFloater: "visibleFloater__1836e",

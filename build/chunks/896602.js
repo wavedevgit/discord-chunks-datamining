@@ -1,4 +1,4 @@
-/** Chunk was on 39360 **/
+/** Chunk was on 30974 **/
 e.exports = {
   interactionInfoMenuItem: "interactionInfoMenuItem_e1195d"
 }

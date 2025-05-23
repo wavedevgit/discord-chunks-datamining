@@ -1,6 +1,6 @@
 /**
   Module ID: 40417
-  Original File Name: 9ccea705faf97833
+  Original File Name: 80e5dc6411b7f933
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -5992,6 +5992,40 @@ html .progress__61462 {
     width: 16px
 }
 
+.container_b36ae7 {
+    gap: var(--spacing-8);
+    margin-top: var(--spacing-8)
+}
+
+.actionButton_b36ae7,.container_b36ae7 {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.actionButton_b36ae7 {
+    gap: var(--spacing-4)
+}
+
+.spacing__89466 {
+    margin-bottom: 20px
+}
+
+.spacingTop__89466 {
+    margin-top: 20px
+}
+
+.message__89466 {
+    background-color: var(--background-primary);
+    border-radius: 3px;
+    box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high);
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    pointer-events: none;
+    position: relative
+}
+
 .safetyPolicyNoticeContainer_e80b85 {
     background: var(--background-secondary);
     border-radius: var(--radius-sm);
@@ -11675,4 +11709,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=9ccea705faf97833.css.map*/
+/*# sourceMappingURL=80e5dc6411b7f933.css.map*/

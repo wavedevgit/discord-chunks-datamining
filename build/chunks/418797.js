@@ -11,6 +11,7 @@ n.r(e.exports = {
   avatar: "avatar__43dab",
   expand: "expand__43dab",
   expandForeground: "expandForeground__43dab",
+  colorsHook: "colorsHook__43dab",
   colorHook: "colorHook__43dab",
   userHook: "userHook__43dab",
   changeDetails: "changeDetails__43dab",

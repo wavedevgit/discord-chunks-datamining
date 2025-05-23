@@ -1,7 +1,8 @@
-/** Chunk was on 56385 **/
+/** Chunk was on 65564 **/
 e.exports = {
   memberSinceWrapper: "memberSinceWrapper_c4eb81",
   memberSince: "memberSince_c4eb81",
+  guildIcon: "guildIcon_c4eb81",
   discordIcon: "discordIcon_c4eb81",
   divider: "divider_c4eb81"
 }

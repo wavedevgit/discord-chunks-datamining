@@ -1,4 +1,4 @@
-/** Chunk was on 72704 **/
+/** Chunk was on 23532 **/
 e.exports = {
   modal: "modal__0f8ce",
   selectContent: "selectContent__0f8ce",

@@ -1,1 +1,1 @@
-{"id":"319828","type":"experiment","data":{"kind":"user","id":"2024-11_hypesquad_removal","label":"HypeSquad Removal","defaultConfig":{"hypeSquadRemoved":false},"treatments":[{"id":1,"label":"HypeSquad Removed","config":{"hypeSquadRemoved":false}}]},"fromModule":{"id":"8787"}}
+{"id":"319828","type":"experiment","data":{"kind":"user","id":"2024-11_hypesquad_removal","label":"HypeSquad Removal","defaultConfig":{"hypeSquadRemoved":false},"treatments":[{"id":1,"label":"HypeSquad Removed","config":{"hypeSquadRemoved":false}}]},"fromModule":{"id":"998"}}

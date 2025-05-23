@@ -1,5 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 59694 **/
 e.exports = {
   promotionalGiftMessage: "promotionalGiftMessage__6fbbd",
   promotionalGiftMessageText: "promotionalGiftMessageText__6fbbd",

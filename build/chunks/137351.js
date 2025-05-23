@@ -1,4 +1,4 @@
-/** Chunk was on 39690 **/
+/** Chunk was on 1236 **/
 "use strict";
 e.exports = {
   emojiIcon: "emojiIcon_ff168a"

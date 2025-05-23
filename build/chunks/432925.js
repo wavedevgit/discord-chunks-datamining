@@ -1,4 +1,4 @@
-/** Chunk was on 81767 **/
+/** Chunk was on 59694 **/
 e.exports = {
   legacyPricingNotice: "legacyPricingNotice_e50a4d",
   skuSelectModalHeader: "skuSelectModalHeader_e50a4d",
@@ -6,5 +6,7 @@ e.exports = {
   modalPadding: "modalPadding_e50a4d",
   modalSize: "modalSize_e50a4d",
   close: "close_e50a4d",
-  closeInner: "closeInner_e50a4d"
+  closeInner: "closeInner_e50a4d",
+  premiumRebrandHeader: "premiumRebrandHeader_e50a4d",
+  premiumRebrandContent: "premiumRebrandContent_e50a4d"
 }

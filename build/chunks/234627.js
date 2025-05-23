@@ -1,4 +1,4 @@
-/** Chunk was on 72704 **/
+/** Chunk was on 23532 **/
 e.exports = {
   subscription: "subscription_d970da",
   subscriptionInfo: "subscriptionInfo_d970da",

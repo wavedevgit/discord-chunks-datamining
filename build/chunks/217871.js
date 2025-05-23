@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 22231 **/
 n.d(t, {
   Z: () => E
 }), n(388685), n(358797);
@@ -21,7 +21,7 @@ var r = n(255367),
   x = n(641033),
   C = n(989830),
   y = n(388032),
-  v = n(837265);
+  v = n(345358);
 let j = i.memo(function(e) {
     let {
       channelId: t,

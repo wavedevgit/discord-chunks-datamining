@@ -15,7 +15,7 @@ var a = n(255367),
   u = n(981631),
   x = n(921944),
   p = n(388032),
-  h = n(74891);
+  h = n(372246);
 let f = () => [{
   id: 0,
   name: p.intl.string(p.t.HTA519)
@@ -89,7 +89,7 @@ function j(t) {
             (0, s.ZDy)(async () => {
               let {
                 default: t
-              } = await Promise.all([n.e("45094"), n.e("63228")]).then(n.bind(n, 218613));
+              } = await Promise.all([n.e("45094"), n.e("37670")]).then(n.bind(n, 218613));
               return n => {
                 var r, i;
                 return (0, a.jsx)(t, (r = function(t) {
