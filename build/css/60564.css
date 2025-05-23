@@ -1,6 +1,6 @@
 /**
   Module ID: 60564
-  Original File Name: a5c826cd122cc311
+  Original File Name: 64c807ac487f7c68
 **/
 .badgeContainer__98c7b {
     display: flex;
@@ -510,9 +510,9 @@
 
 .message_fcf29c {
     color: var(--text-normal);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.25rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -2045,4 +2045,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=a5c826cd122cc311.css.map*/
+/*# sourceMappingURL=64c807ac487f7c68.css.map*/

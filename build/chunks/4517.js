@@ -130,9 +130,7 @@ function ee(e) {
     analyticsLocations: s
   } = (0, h.ZP)(), {
     trackUserProfileAction: l
-  } = (0, A.KZ)(), [c, f] = i.useState(!1), [_, p] = i.useState(!1), g = i.useRef(null), E = i.useRef(!1), b = i.useRef(null), {
-    isEligibleForCustomStatusLabels: y
-  } = (0, m.Z)({
+  } = (0, A.KZ)(), [c, f] = i.useState(!1), [_, p] = i.useState(!1), g = i.useRef(null), E = i.useRef(!1), b = i.useRef(null), y = (0, m.Z)({
     location: "AddCustomStatusBubble"
   });
   (0, d.ZP)(() => {

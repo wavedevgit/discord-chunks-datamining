@@ -49,9 +49,7 @@ function L(t) {
     location: "CustomStatusModalWithPreview"
   }), Y = (0, S.P)({
     location: "CustomStatusModalWithPreview"
-  }), {
-    isEligibleForCustomStatusLabels: F
-  } = (0, j.Z)({
+  }), F = (0, j.Z)({
     location: "CustomStatusModalWithPreview"
   }), W = (0, o.e7)([p.default], () => {
     var t;

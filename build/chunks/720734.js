@@ -848,9 +848,7 @@ function tg() {
       }
       return i.length > 1
     }),
-    {
-      isEligibleForCustomStatusLabels: eu
-    } = (0, Y.Z)({
+    eu = (0, Y.Z)({
       location: "AccountConnected"
     }),
     eh = {
