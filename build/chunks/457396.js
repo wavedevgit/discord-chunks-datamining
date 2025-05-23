@@ -47,7 +47,7 @@ let U = e => {
   },
   G = e => {
     let t, n, E, G;
-    var B, V, {
+    var V, B, {
         selected: H,
         route: F,
         locationState: z
@@ -126,7 +126,7 @@ let U = e => {
       trialOffer: Q,
       isTabSelected: H
     }), G = 4);
-    let eh = (0, r.jsx)(c.Qj, (B = function(e) {
+    let eh = (0, r.jsx)(c.Qj, (V = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -155,20 +155,20 @@ let U = e => {
           has_premium: q
         }), null != ed && ep(D.L.USER_DISMISS)
       }
-    }, W, X), V = V = {
+    }, W, X), B = B = {
       className: t,
       avatarWithTextClassName: n,
       children: E
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(B, Object.getOwnPropertyDescriptors(V)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(V, Object.getOwnPropertyDescriptors(B)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(V)).forEach(function(e) {
-      Object.defineProperty(B, e, Object.getOwnPropertyDescriptor(V, e))
-    }), B));
+    })(Object(B)).forEach(function(e) {
+      Object.defineProperty(V, e, Object.getOwnPropertyDescriptor(B, e))
+    }), V));
     return ei ? (0, r.jsx)(j.C, {
       children: eh
     }) : eh

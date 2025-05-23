@@ -31,8 +31,8 @@ let P = (0, i.memo)(function(e) {
   var t, n, l, P, j, A;
   let {
     quest: Z
-  } = e, [x, L] = (0, i.useState)(!1), [w, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(!1), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
-    ref: V,
+  } = e, [x, L] = (0, i.useState)(!1), [w, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(!1), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), V = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+    ref: B,
     height: H = 0
   } = (0, p.ZP)(), F = (0, h.ZP)(), z = (0, E.B6)(null == (t = Z.userStatus) ? void 0 : t.claimedAt, {
     month: "numeric",
@@ -113,7 +113,7 @@ let P = (0, i.memo)(function(e) {
       className: a()(T.container, {
         [T.hovered]: x
       }),
-      children: [null != B && q && null != J && (0, r.jsx)("div", {
+      children: [null != V && q && null != J && (0, r.jsx)("div", {
         ref: G,
         className: T.decoWrapper,
         style: {
@@ -121,7 +121,7 @@ let P = (0, i.memo)(function(e) {
         },
         children: (0, r.jsx)(f.Z, {
           avatarDecorationOverride: J,
-          user: B,
+          user: V,
           guildId: null
         })
       }), K ? (0, r.jsx)(I.Z, {
@@ -160,7 +160,7 @@ let P = (0, i.memo)(function(e) {
           withGameTile: !1
         })
       }), (0, r.jsxs)("div", {
-        ref: V,
+        ref: B,
         className: T.details,
         children: [(0, r.jsx)(d.X6q, {
           className: T.title,
