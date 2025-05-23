@@ -1,6 +1,6 @@
 /** Chunk was on 998 **/
 n.d(t, {
-  Z: () => O
+  Z: () => j
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -40,7 +40,7 @@ function C(e) {
   return e
 }
 
-function j(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,10 +53,10 @@ function j(e, t) {
   }), e
 }
 
-function O(e) {
+function j(e) {
   let {
     onLearnMore: t,
-    selectedBackgroundOption: O,
+    selectedBackgroundOption: j,
     onSelectBackgroundOption: S,
     currentDeviceId: v,
     smallerBackgroundOptions: T,
@@ -71,7 +71,7 @@ function O(e) {
     k = {
       isVideoBackgroundSupported: P,
       onSelectBackgroundOption: S,
-      selectedBackgroundOption: O
+      selectedBackgroundOption: j
     },
     L = r.useRef(k);
   r.useEffect(() => {
@@ -86,7 +86,7 @@ function O(e) {
       track: !1
     }).catch(() => t(null)) : null != n && t(null)
   }, [v]);
-  let M = e => {
+  let B = e => {
     S(e), (0, g.FU)(e, v, {
       location: w.location
     }).then(() => A(null)).catch(() => {
@@ -104,16 +104,16 @@ function O(e) {
     }) : null, (0, i.jsx)(h.Z, {
       canUseCustomBackgrounds: R,
       customBackgroundOptions: Z,
-      selectedOption: O,
-      onSelectOption: M,
+      selectedOption: j,
+      onSelectOption: B,
       onUpsellClick: () => {
         (0, l.ZDy)(async () => {
           let {
             default: e
           } = await n.e("87200").then(n.bind(n, 592163));
-          return n => (0, i.jsx)(e, j(C({}, n), {
+          return n => (0, i.jsx)(e, O(C({}, n), {
             onLearnMore: t,
-            analyticsSource: j(C({}, w.location), {
+            analyticsSource: O(C({}, w.location), {
               object: b.qAy.BUTTON_CTA
             })
           }))
@@ -124,7 +124,7 @@ function O(e) {
         return new Promise(async i => {
           try {
             let i = await (0, d.Ff)(e, f.xV.BACKGROUND);
-            M(i), (0, m.g5)(i, t.type === _.m.MP4, n), A(null)
+            B(i), (0, m.g5)(i, t.type === _.m.MP4, n), A(null)
           } catch (e) {
             A(e.message)
           }

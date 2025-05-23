@@ -51,25 +51,25 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = {
+let O = {
     [h.cq.THUMBNAIL]: null,
     [h.cq.STATIC]: null,
     [h.cq.REDUCED_MOTION]: null
   },
-  O = "debug",
+  j = "debug",
   S = e => {
     let {
       effect: t,
       back: n
     } = e, {
       upsertConfig: s
-    } = (0, p.n6)(), S = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [v, T] = r.useState(!0), N = r.useRef(null), [I, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(j), k = r.useRef([]), [L, M] = r.useState(t.name), B = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, p.n6)(), S = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [v, T] = r.useState(!0), N = r.useRef(null), [I, y] = r.useState(!1), [A, P] = r.useState(!1), [R, D] = r.useState([]), [Z, w] = r.useState(O), k = r.useRef([]), [L, B] = r.useState(t.name), M = L.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       type: a.Z.PROFILE_EFFECT,
-      id: O,
-      skuId: O,
-      title: O,
-      description: O,
-      accessibilityLabel: O,
+      id: j,
+      skuId: j,
+      title: j,
+      description: j,
+      accessibilityLabel: j,
       reducedMotionSrc: "",
       effects: R,
       animationType: 0
@@ -175,7 +175,7 @@ let j = {
               value: L,
               className: b.input,
               onChange: e => {
-                M(e.target.value)
+                B(e.target.value)
               }
             })]
           }), (0, i.jsxs)("div", {
@@ -276,7 +276,7 @@ let j = {
               children: [(0, i.jsx)(d.Z, {
                 fileContents: () => (0, h.yR)(R),
                 contentType: "text/plain",
-                fileName: "".concat(B, "_timing_config.txt"),
+                fileName: "".concat(M, "_timing_config.txt"),
                 children: (0, i.jsx)(c.zxk, {
                   size: c.PhG.SMALL,
                   color: c.Ttl.BRAND,
@@ -291,7 +291,7 @@ let j = {
                   })
                 })),
                 contentType: "text/plain",
-                fileName: "".concat(B, "_config.txt"),
+                fileName: "".concat(M, "_config.txt"),
                 children: (0, i.jsx)(c.zxk, {
                   size: c.PhG.SMALL,
                   color: c.Ttl.BRAND,
@@ -368,7 +368,7 @@ let j = {
               color: c.Ttl.RED,
               look: c.iLD.OUTLINED,
               onClick: () => {
-                D([]), w(j)
+                D([]), w(O)
               },
               children: "Clear Assets"
             })

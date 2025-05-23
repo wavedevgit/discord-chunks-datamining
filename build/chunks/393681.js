@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(346585),
   E = n(347649),
   C = n(332473),
-  j = n(303172),
-  O = n(518560),
+  O = n(303172),
+  j = n(518560),
   S = n(921801),
   v = n(484459),
   T = n(430824),
@@ -37,8 +37,8 @@ var i = n(255367),
   w = n(418632),
   k = n(10298),
   L = n(526156),
-  M = n(730820),
-  B = n(888256),
+  B = n(730820),
+  M = n(888256),
   U = n(2719),
   V = n(194530),
   G = n(726985),
@@ -150,7 +150,7 @@ class X extends r.PureComponent {
         date: (0, x.IE)(this.props.locale)
       }) : z.intl.format(z.t.pdYZys, {}), " ", "", (0, i.jsx)(_.Z, {
         className: W.noticeTextButton,
-        onClick: () => (0, j.Z)(H.Kq.USER_SETTINGS),
+        onClick: () => (0, O.Z)(H.Kq.USER_SETTINGS),
         children: z.intl.string(z.t.LhlgY2)
       })]
     }) : null
@@ -203,7 +203,7 @@ class X extends r.PureComponent {
           align: b.Z.Align.STRETCH,
           children: [(0, i.jsx)(b.Z.Child, {
             wrap: !0,
-            children: (0, i.jsx)(M.Z, {
+            children: (0, i.jsx)(B.Z, {
               backupCodes: e
             })
           }), t.mfaEnabled ? null : (0, i.jsx)(b.Z, {
@@ -285,7 +285,7 @@ class X extends r.PureComponent {
     let {
       currentUser: e
     } = this.props;
-    return (0, i.jsx)(B.Z, {
+    return (0, i.jsx)(M.Z, {
       className: Y.marginTop40,
       currentUser: e,
       handleDisableAccount: () => this.handleDisableAccount(!1),
@@ -328,7 +328,7 @@ class X extends r.PureComponent {
           setting: G.s6.ACCOUNT_SECURITY_TAB
         }, {
           title: z.intl.string(z.t["Vov/9v"]),
-          component: O.Z,
+          component: j.Z,
           setting: G.s6.PRIVACY_AND_SAFETY_STANDING
         }]
       })

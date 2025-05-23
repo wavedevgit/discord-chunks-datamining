@@ -1,7 +1,7 @@
 /** Chunk was on 998 **/
 n.d(t, {
   F: () => C,
-  I: () => j
+  I: () => O
 }), n(953529), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -71,7 +71,7 @@ function E(e) {
     hasButtonStyling: d
   } = a.Y.useExperiment({
     location: "UserProfileAccountPopout"
-  }), h = o && t !== p.Skl.ONLINE, [x, E] = r.useState(void 0), C = void 0 !== x && t === n, j = (0, i.jsx)(i.Fragment, {
+  }), h = o && t !== p.Skl.ONLINE, [x, E] = r.useState(void 0), C = void 0 !== x && t === n, O = (0, i.jsx)(i.Fragment, {
     children: b.map(e => {
       let {
         duration: r,
@@ -88,7 +88,7 @@ function E(e) {
         dontCloseOnAction: !0
       }, r)
     })
-  }), O = (0, i.jsx)("div", {
+  }), j = (0, i.jsx)("div", {
     className: f.durationButtons,
     children: _.map(e => {
       let {
@@ -134,7 +134,7 @@ function E(e) {
         }), null != s && (0, i.jsx)("div", {
           className: f.description,
           children: s
-        }), h && d && C ? O : void 0]
+        }), h && d && C ? j : void 0]
       })
     },
     action: () => {
@@ -145,7 +145,7 @@ function E(e) {
       })
     },
     dontCloseOnAction: !0,
-    children: h && !d ? j : void 0
+    children: h && !d ? O : void 0
   })
 }
 
@@ -172,7 +172,7 @@ function C(e) {
   })
 }
 
-function j(e) {
+function O(e) {
   let {
     hasNewStrings: t
   } = a.Y.useExperiment({
@@ -205,10 +205,10 @@ function j(e) {
         dontCloseOnAction: !0
       }, n)
     })
-  }), j = E({
+  }), O = E({
     status: p.Skl.ONLINE,
     currentStatus: e
-  }), O = E({
+  }), j = E({
     status: p.Skl.IDLE,
     currentStatus: e,
     description: _(p.Skl.IDLE)
@@ -222,7 +222,7 @@ function j(e) {
     description: _(p.Skl.INVISIBLE)
   });
   return (0, i.jsxs)(i.Fragment, {
-    children: [j, (0, i.jsx)(l.Clw, {}, "menu-separator-statuses"), O, S, v, u || r ? (0, i.jsxs)(i.Fragment, {
+    children: [O, (0, i.jsx)(l.Clw, {}, "menu-separator-statuses"), j, S, v, u || r ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(l.Clw, {}, "menu-separator-statuses"), (0, i.jsx)(l.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",

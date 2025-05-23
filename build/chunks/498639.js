@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(333867),
   E = n(963249),
   C = n(87484),
-  j = n(767714),
-  O = n(911367),
+  O = n(767714),
+  j = n(911367),
   S = n(43747),
   v = n(970815),
   T = n(430824),
@@ -78,13 +78,13 @@ function D(e) {
 }
 let Z = function() {
   let [e, t] = r.useState(y.Si.TIER_2), [n, b] = r.useState(null), [_] = (0, l.Wu)([T.Z], () => [T.Z.getGuilds()]), [Z] = (0, l.Wu)([N.ZP], () => [N.ZP.getPremiumSubscription()]);
-  (0, O.t)();
+  (0, j.t)();
   let w = Object.values(_).map(e => ({
       value: e,
       label: e.name
     })),
     [k, L] = r.useState(w.length > 0 ? w[0].value : null),
-    [M, B] = r.useState(""),
+    [B, M] = r.useState(""),
     [U, V] = r.useState({
       plan_id: y.Xh.PREMIUM_MONTH_TIER_2,
       gift: "true"
@@ -136,7 +136,7 @@ let Z = function() {
             label: "None"
           }],
           onChange: e => t(e)
-        }), (0, i.jsx)(j.Z, {
+        }), (0, i.jsx)(O.Z, {
           subscriptionTier: e,
           isGift: !0,
           premiumModalAnalyticsLocation: {}
@@ -199,22 +199,22 @@ let Z = function() {
         className: A.formItem,
         children: [(0, i.jsx)(a.oil, {
           placeholder: "Promotion Code",
-          value: M,
-          onChange: e => B(e)
+          value: B,
+          onChange: e => M(e)
         }), (0, i.jsx)(a.ua7, {
           text: "Need Promotion Code",
-          shouldShow: M.length < 1,
+          shouldShow: B.length < 1,
           children: e => {
             let {
               onMouseEnter: t,
               onMouseLeave: n
             } = e;
             return (0, i.jsx)(a.zxk, {
-              disabled: M.length < 1,
+              disabled: B.length < 1,
               onMouseEnter: t,
               onMouseLeave: n,
               onClick: () => {
-                window.open(I.Z5c.BILLING_PROMOTION_REDEMPTION(M))
+                window.open(I.Z5c.BILLING_PROMOTION_REDEMPTION(B))
               },
               children: "Open Link"
             })

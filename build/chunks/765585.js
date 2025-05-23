@@ -25,8 +25,8 @@ let p = r.forwardRef(function(e, t) {
     onTryFeature: x,
     onClose: E,
     className: C,
-    inlineArt: j = !1,
-    isPremiumFeature: O = !1,
+    inlineArt: O = !1,
+    isPremiumFeature: j = !1,
     shouldUseHorizontalButtons: S = !1,
     showGIFTag: v = !1,
     dismissibleContent: T,
@@ -41,7 +41,7 @@ let p = r.forwardRef(function(e, t) {
     dismissIcon: w,
     onDismissIconClick: k,
     tryItButtonColor: L
-  } = e, M = S ? a.zxk.Sizes.LARGE : a.zxk.Sizes.MAX, [B, U] = r.useState(!1), {
+  } = e, B = S ? a.zxk.Sizes.LARGE : a.zxk.Sizes.MAX, [M, U] = r.useState(!1), {
     ref: V,
     width: G
   } = (0, o.ZP)();
@@ -54,33 +54,33 @@ let p = r.forwardRef(function(e, t) {
   return r.useEffect(() => {
     var e, t;
     let n = (null != (t = null == (e = V.current) ? void 0 : e.scrollWidth) ? t : 0) + 64;
-    !B && n > P && U(!0)
-  }, [B, G, V, P]), r.useEffect(() => {
+    !M && n > P && U(!0)
+  }, [M, G, V, P]), r.useEffect(() => {
     (0, c.kk)(T)
   }, [T]), (0, i.jsx)("div", {
     className: C,
     ref: t,
     children: (0, i.jsxs)("div", {
       className: l()(g.content, f, {
-        [g.contentNoArt]: null == p || j,
-        [g.contentPremium]: O || A
+        [g.contentNoArt]: null == p || O,
+        [g.contentPremium]: j || A
       }),
       children: [null != w && (0, i.jsx)(a.P3F, {
         onClick: k,
         className: Z,
         children: w
       }), (0, i.jsxs)("div", {
-        className: l()(p, j ? g.artInline : g.artAbsolute),
+        className: l()(p, O ? g.artInline : g.artAbsolute),
         children: [v && (0, i.jsx)(d.Z, {
           className: g.gifTag
         }), y]
       }), (0, i.jsxs)("div", {
         className: g.body,
         children: [(0, i.jsxs)(a.X6q, {
-          className: l()(O ? g.headerWithPremiumIcon : g.header, h),
+          className: l()(j ? g.headerWithPremiumIcon : g.header, h),
           variant: "heading-md/bold",
           color: "always-white",
-          children: [O && !A ? (0, i.jsx)(a.SrA, {
+          children: [j && !A ? (0, i.jsx)(a.SrA, {
             size: "md",
             color: "currentColor",
             className: g.premiumIcon
@@ -104,24 +104,24 @@ let p = r.forwardRef(function(e, t) {
         }) : n]
       }), (0, i.jsx)("div", {
         ref: V,
-        className: B || !S ? g.buttonContainerVertical : g.buttonContainerHorizontal,
+        className: M || !S ? g.buttonContainerVertical : g.buttonContainerHorizontal,
         children: null != x ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(a.zxk, {
             className: g.button,
-            size: M,
+            size: B,
             onClick: e => {
               null == E || E(e), x(e), F(u.L.PRIMARY)
             },
-            color: null != L ? L : O || A ? a.zxk.Colors.BRAND_INVERTED : a.zxk.Colors.WHITE,
+            color: null != L ? L : j || A ? a.zxk.Colors.BRAND_INVERTED : a.zxk.Colors.WHITE,
             children: null != b ? b : m.intl.string(m.t.IHf1RE)
           }), !R && (0, i.jsx)(a.zxk, {
             className: g.button,
-            size: M,
+            size: B,
             onClick: e => {
               null == E || E(e), F(u.L.DISMISS)
             },
-            color: O || A ? a.zxk.Colors.WHITE : a.zxk.Colors.BRAND,
-            look: O || A ? a.zxk.Looks.LINK : a.zxk.Looks.FILLED,
+            color: j || A ? a.zxk.Colors.WHITE : a.zxk.Colors.BRAND,
+            look: j || A ? a.zxk.Looks.LINK : a.zxk.Looks.FILLED,
             children: null != _ ? _ : m.intl.string(m.t.om7Ovr)
           })]
         }) : (0, i.jsx)(a.zxk, {

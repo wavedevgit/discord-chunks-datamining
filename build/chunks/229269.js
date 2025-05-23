@@ -1,6 +1,6 @@
 /** Chunk was on 998 **/
 n.d(t, {
-  f: () => j
+  f: () => O
 }), n(388685), n(49124);
 var i = n(255367),
   r = n(73800),
@@ -52,7 +52,7 @@ function C(e, t) {
   }), e
 }
 
-function j() {
+function O() {
   return (0, i.jsx)(m.PaymentContextProvider, {
     stepConfigs: [],
     skuIDs: [],
@@ -63,12 +63,12 @@ function j() {
         color: "info-help-text",
         className: _.labelSpacing,
         children: "Payment-method-specific components and views may not appear for you unless your browser is supported for that payment method and they have been configured on your browser."
-      }), (0, i.jsx)(O, {}), (0, i.jsx)(I, {}), (0, i.jsx)(w, {})]
+      }), (0, i.jsx)(j, {}), (0, i.jsx)(I, {}), (0, i.jsx)(w, {})]
     })
   })
 }
 
-function O() {
+function j() {
   return (0, i.jsxs)(h.$0, {
     children: [(0, i.jsx)(o.X6q, {
       variant: "heading-xl/semibold",

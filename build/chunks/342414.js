@@ -22,8 +22,8 @@ var r = n(120356),
   x = n(249689),
   E = n(464670),
   C = n(520540),
-  j = n(104494),
-  O = n(639119),
+  O = n(104494),
+  j = n(639119),
   S = n(533525),
   v = n(784238),
   T = n(767714),
@@ -68,7 +68,7 @@ let L = () => (0, i.jsxs)("div", {
       })
     })]
   }),
-  M = e => {
+  B = e => {
     let {
       cohort: t
     } = e;
@@ -85,7 +85,7 @@ let L = () => (0, i.jsxs)("div", {
       })
     }) : t === E.XS.Variant1 ? (0, i.jsx)(L, {}) : void 0
   },
-  B = e => {
+  M = e => {
     var t, n;
     let {
       className: r,
@@ -93,7 +93,7 @@ let L = () => (0, i.jsxs)("div", {
     } = e, {
       headingText: c,
       headingTop: d
-    } = F(), m = g.default.getCurrentUser(), h = (0, l.e7)([p.ZP], () => p.ZP.getPremiumTypeSubscription()), f = (0, O.N)(), b = (0, j.Ng)(), _ = (0, j.Wp)(b, A.Si.TIER_2) ? A.Si.TIER_2 : void 0, E = null != h && h.status !== P.O0b.ACCOUNT_HOLD && h.hasAnyPremiumNitro, C = (0, u.Z)(), S = (0, x.C)("nitro-home", m) && C.isFractionalPremiumActive && !E;
+    } = F(), m = g.default.getCurrentUser(), h = (0, l.e7)([p.ZP], () => p.ZP.getPremiumTypeSubscription()), f = (0, j.N)(), b = (0, O.Ng)(), _ = (0, O.Wp)(b, A.Si.TIER_2) ? A.Si.TIER_2 : void 0, E = null != h && h.status !== P.O0b.ACCOUNT_HOLD && h.hasAnyPremiumNitro, C = (0, u.Z)(), S = (0, x.C)("nitro-home", m) && C.isFractionalPremiumActive && !E;
     return (0, i.jsxs)("div", {
       className: s()(D.container, r),
       "data-testid": "subscriber-nitro-home-hero-header",
@@ -113,7 +113,7 @@ let L = () => (0, i.jsxs)("div", {
             color: a.Ttl.BRAND,
             className: s()(D.button, D.subscribeButton),
             subscriptionTier: null != (n = null == f || null == (t = f.subscription_trial) ? void 0 : t.sku_id) ? n : _
-          }), M({
+          }), B({
             cohort: o
           })]
         })]
@@ -148,7 +148,7 @@ let L = () => (0, i.jsxs)("div", {
             variant: "display-lg",
             color: "always-white",
             children: l
-          }), s && M({
+          }), s && B({
             cohort: n
           }), (0, i.jsx)(y.Z, {})]
         })
@@ -176,7 +176,7 @@ let L = () => (0, i.jsxs)("div", {
             color: "always-white",
             children: n
           })
-        }), M({
+        }), B({
           cohort: t
         }), (0, i.jsx)(I.Z, {})]
       })]
@@ -191,21 +191,21 @@ let L = () => (0, i.jsxs)("div", {
       analyticsLocations: r
     } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), l = (0, _.W)(), g = (0, b._O)(), p = R.intl.string(R.t.qYKftb), h = E.PU.useExperiment({
       location: "HeroHeading"
-    }), x = (0, S.b)(n), C = (0, i.jsx)(B, {
+    }), x = (0, S.b)(n), C = (0, i.jsx)(M, {
       className: t,
       giftingExperimentCohort: h.cohort
-    }), j = R.intl.string(R.t.ifwQZW), {
-      fractionalState: O,
+    }), O = R.intl.string(R.t.ifwQZW), {
+      fractionalState: j,
       endsAt: v
     } = (0, u.Z)(), T = (0, d.ZP)(v, d.aj.CREDITS_ENDS_IN);
-    l ? (j = R.intl.string(R.t.ifwQZW), C = (0, i.jsx)(V, {
+    l ? (O = R.intl.string(R.t.ifwQZW), C = (0, i.jsx)(V, {
       giftingExperimentCohort: h.cohort
-    })) : x && (p = R.intl.string(R.t.qYKftb), j = R.intl.string(R.t.ifwQZW), C = (0, i.jsx)(U, {
+    })) : x && (p = R.intl.string(R.t.qYKftb), O = R.intl.string(R.t.ifwQZW), C = (0, i.jsx)(U, {
       location: n,
       giftingExperimentCohort: h.cohort
     }));
     let I = null;
-    if (O === A.a$.NONE || l) I = (0, i.jsx)(N.Cy, {
+    if (j === A.a$.NONE || l) I = (0, i.jsx)(N.Cy, {
       className: s()(D.trialPill, {
         [D.hidden]: !g
       }),
@@ -279,7 +279,7 @@ let L = () => (0, i.jsxs)("div", {
       value: r,
       children: (0, i.jsx)(G.Provider, {
         value: {
-          headingText: j,
+          headingText: O,
           headingTop: I
         },
         children: C

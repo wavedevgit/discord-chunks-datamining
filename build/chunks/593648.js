@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(890022),
   E = n(688907),
   C = n(487419),
-  j = n(197344),
-  O = n(476756),
+  O = n(197344),
+  j = n(476756),
   S = n(734934),
   v = n(223683),
   T = n(312400),
@@ -37,8 +37,8 @@ var i = n(255367),
   w = n(912101),
   k = n(358085),
   L = n(709054),
-  M = n(695346),
-  B = n(675478),
+  B = n(695346),
+  M = n(675478),
   U = n(33656),
   V = n(726985),
   G = n(981631),
@@ -200,7 +200,7 @@ function Q(e) {
       label: H.intl.string(H.t.CP3DCw),
       sound: "reconnect"
     }],
-    p = null != j.Z.useHolidaySoundpack();
+    p = null != O.Z.useHolidaySoundpack();
   return (0, i.jsx)(P.F, {
     setting: V.s6.NOTIFICATIONS_SOUNDS,
     children: (0, i.jsxs)(u.hjN, {
@@ -208,7 +208,7 @@ function Q(e) {
         children: [(0, i.jsx)(u.vwX, {
           className: W.marginBottom20,
           children: H.intl.string(H.t.fgSHf3)
-        }), (0, i.jsx)(O.Z, {})]
+        }), (0, i.jsx)(j.Z, {})]
       }) : null, (0, i.jsx)(u.vwX, {
         className: l()(W.marginBottom20, W.marginTop20),
         children: H.intl.string(H.t.MKWyKS)
@@ -279,9 +279,9 @@ function J() {
             note: H.intl.string(H.t["z8Td4+"]),
             value: !e[t].disableRaidAlertNag,
             onChange: () => {
-              (0, B.PS)(t, e => {
+              (0, M.PS)(t, e => {
                 e.disableRaidAlertNag = !e.disableRaidAlertNag
-              }, B.fy.INFREQUENT_USER_ACTION)
+              }, M.fy.INFREQUENT_USER_ACTION)
             },
             hideBorder: !0,
             children: H.intl.string(H.t.u6dc5O)
@@ -295,9 +295,9 @@ function J() {
             note: H.intl.string(H.t.PyxXs7),
             value: !e[t].disableRaidAlertPush,
             onChange: () => {
-              (0, B.PS)(t, e => {
+              (0, M.PS)(t, e => {
                 e.disableRaidAlertPush = !e.disableRaidAlertPush
-              }, B.fy.INFREQUENT_USER_ACTION)
+              }, M.fy.INFREQUENT_USER_ACTION)
             },
             hideBorder: !0,
             children: H.intl.string(H.t.P8MG6u)
@@ -378,7 +378,7 @@ class $ extends r.PureComponent {
           title: H.intl.string(H.t.TTvjd3),
           children: [(0, i.jsx)(u.q4e, {
             value: t,
-            onChange: M.CM.updateSetting,
+            onChange: B.CM.updateSetting,
             options: g
           }), (0, i.jsx)(u.R94, {
             type: u.geA.DESCRIPTION,
@@ -582,7 +582,7 @@ function es() {
     notifyMessagesInSelectedChannel: D.Z.getNotifyMessagesInSelectedChannel()
   }));
   return (0, i.jsx)(er, q(K({}, e), {
-    afkTimeout: M.CM.useSetting()
+    afkTimeout: B.CM.useSetting()
   }))
 }
 
@@ -614,7 +614,7 @@ function el() {
       }), (0, i.jsx)(u.FXm, {
         options: r,
         onChange: e => {
-          M.YT.updateSetting(e.value)
+          B.YT.updateSetting(e.value)
         },
         value: t
       })]
@@ -625,7 +625,7 @@ function el() {
 }
 
 function ea() {
-  let e = M.fz.useSetting(),
+  let e = B.fz.useSetting(),
     t = [{
       name: H.intl.string(H.t["9x/Rtb"]),
       value: d.Ns.NOTIFICATIONS_ENABLED

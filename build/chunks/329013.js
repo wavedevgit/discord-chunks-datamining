@@ -22,8 +22,8 @@ var i = n(255367),
   x = n(104494),
   E = n(639119),
   C = n(767714),
-  j = n(165583),
-  O = n(504983),
+  O = n(165583),
+  j = n(504983),
   S = n(626135),
   v = n(210887),
   T = n(981631),
@@ -52,10 +52,10 @@ let P = () => {
         type: f.yH.SETTINGS,
         children: [(0, i.jsx)(f.ZP.Basic, {
           className: A.basicThemeSelectors
-        }), u && (0, i.jsx)(D, {}), (0, i.jsxs)(O.Z, {
+        }), u && (0, i.jsx)(D, {}), (0, i.jsxs)(j.Z, {
           className: A.featureBorder,
           isShown: l,
-          type: O.Y.PREMIUM,
+          type: j.Y.PREMIUM,
           children: [(0, i.jsx)(f.ZP.Gradient, {
             disabled: l,
             renderCTAButtons: () => !l || a ? null : (0, i.jsxs)("div", {
@@ -84,7 +84,7 @@ let P = () => {
               children: y.intl.string(y.t["E+COuL"])
             }), (0, i.jsx)("div", {
               className: A.premiumTier2Divider
-            }), (0, i.jsx)(j.ZP, {
+            }), (0, i.jsx)(O.ZP, {
               type: I.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
               subscriptionTier: I.Si.TIER_2
             })]

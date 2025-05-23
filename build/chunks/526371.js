@@ -1,6 +1,6 @@
 /** Chunk was on 998 **/
 n.d(t, {
-  Z: () => O
+  Z: () => j
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -22,7 +22,7 @@ var i = n(255367),
   E = n(269819),
   C = n(394637);
 
-function j() {
+function O() {
   let e = (0, r.useRef)(null),
     [t, n] = (0, r.useState)(!1),
     {
@@ -101,12 +101,12 @@ function j() {
   })
 }
 
-function O() {
+function j() {
   let e = (0, g.wE)(o.z.CLICKER_COACHMARK),
     {
       enableGame: t
     } = h.C.getCurrentConfig({
       location: "Coachmark"
     });
-  return e || !t ? null : (0, i.jsx)(j, {})
+  return e || !t ? null : (0, i.jsx)(O, {})
 }

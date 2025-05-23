@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(600164),
   E = n(74299),
   C = n(577153),
-  j = n(365023),
-  O = n(131951),
+  O = n(365023),
+  j = n(131951),
   S = n(556296),
   v = n(808506),
   T = n(63063),
@@ -46,7 +46,7 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function B(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -59,7 +59,7 @@ function M(e) {
   return e
 }
 
-function B(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -153,7 +153,7 @@ class F extends r.PureComponent {
             className: Z.switch,
             children: (0, i.jsx)(u.ua7, {
               text: D.intl.string(D.t.uCD7qK),
-              children: e => (0, i.jsx)("div", B(M({}, e), {
+              children: e => (0, i.jsx)("div", M(B({}, e), {
                 children: (0, i.jsx)(u.rsf, {
                   checked: t,
                   onChange: this.handleEnableDisable
@@ -177,11 +177,11 @@ class F extends r.PureComponent {
   }
   constructor(...e) {
     super(...e), L(this, "handleActionChanged", e => {
-      m.Z.setKeybind(B(M({}, this.props.keybind), {
+      m.Z.setKeybind(M(B({}, this.props.keybind), {
         action: e
       }))
     }), L(this, "handleShortcutChange", e => {
-      m.Z.setKeybind(B(M({}, this.props.keybind), {
+      m.Z.setKeybind(M(B({}, this.props.keybind), {
         shortcut: e
       }))
     }), L(this, "handleDeleteKeybind", () => {
@@ -190,7 +190,7 @@ class F extends r.PureComponent {
       let {
         keybind: e
       } = this.props;
-      m.Z.setKeybind(B(M({}, this.props.keybind), {
+      m.Z.setKeybind(M(B({}, this.props.keybind), {
         enabled: !e.enabled
       }))
     })
@@ -241,7 +241,7 @@ class H extends r.PureComponent {
       value: P.kg4.TOGGLE_STREAMER_MODE,
       label: D.intl.string(D.t.BK0NcX)
     }];
-    return (0, j.l)() && s.push({
+    return (0, O.l)() && s.push({
       value: P.kg4.TOGGLE_CAMERA,
       label: D.intl.string(D.t.hf8JVV)
     }), e && (s.push({
@@ -250,7 +250,7 @@ class H extends r.PureComponent {
     }), s.push({
       value: P.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
       label: D.intl.string(D.t.hurHWl)
-    })), t && ((0, N.isWindows)() || O.Z.getUseSystemScreensharePicker()) && s.push({
+    })), t && ((0, N.isWindows)() || j.Z.getUseSystemScreensharePicker()) && s.push({
       value: P.kg4.TOGGLE_GO_LIVE_STREAMING,
       label: D.intl.string(D.t.ybdjJC)
     }), (0, N.isDesktop)() && (s.push({
@@ -295,7 +295,7 @@ class H extends r.PureComponent {
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: !1
-    }).separateKeybind && (i[P.kg4.VAD_PRIORITY] = D.intl.string(D.t.rSe8IS)), (0, j.l)() && (i[P.kg4.TOGGLE_CAMERA] = D.intl.string(D.t.v1JBtL)), e && (i[P.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = D.intl.string(D.t.IoP5vb)), t && (0, N.isWindows)() && (i[P.kg4.TOGGLE_GO_LIVE_STREAMING] = D.intl.string(D.t.s4C239)), (0, N.isDesktop)() && (i[P.kg4.NAVIGATE_BACK] = D.intl.string(D.t.nKDlEh), i[P.kg4.NAVIGATE_FORWARD] = D.intl.string(D.t.DK0FFh), i[P.kg4.SOUNDBOARD] = (0, N.isWindows)() ? D.intl.string(D.t["5wJefH"]) : D.intl.string(D.t.gzjsSE), i[P.kg4.SOUNDBOARD_HOLD] = (0, N.isWindows)() ? D.intl.string(D.t.RRkZc3) : D.intl.string(D.t.laNlTk), n && (i[P.kg4.SAVE_CLIP] = D.intl.string(D.t.z3Wbam))), i
+    }).separateKeybind && (i[P.kg4.VAD_PRIORITY] = D.intl.string(D.t.rSe8IS)), (0, O.l)() && (i[P.kg4.TOGGLE_CAMERA] = D.intl.string(D.t.v1JBtL)), e && (i[P.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = D.intl.string(D.t.IoP5vb)), t && (0, N.isWindows)() && (i[P.kg4.TOGGLE_GO_LIVE_STREAMING] = D.intl.string(D.t.s4C239)), (0, N.isDesktop)() && (i[P.kg4.NAVIGATE_BACK] = D.intl.string(D.t.nKDlEh), i[P.kg4.NAVIGATE_FORWARD] = D.intl.string(D.t.DK0FFh), i[P.kg4.SOUNDBOARD] = (0, N.isWindows)() ? D.intl.string(D.t["5wJefH"]) : D.intl.string(D.t.gzjsSE), i[P.kg4.SOUNDBOARD_HOLD] = (0, N.isWindows)() ? D.intl.string(D.t.RRkZc3) : D.intl.string(D.t.laNlTk), n && (i[P.kg4.SAVE_CLIP] = D.intl.string(D.t.z3Wbam))), i
   }
   renderKeybinds(e) {
     return e.map(e => (0, i.jsx)("div", {
@@ -420,7 +420,7 @@ class H extends r.PureComponent {
 
 function z() {
   let e = (0, c.e7)([S.ZP], () => S.ZP.getState()),
-    t = (0, c.e7)([O.Z], () => (0, E.Z)(O.Z)),
+    t = (0, c.e7)([j.Z], () => (0, E.Z)(j.Z)),
     n = (0, c.e7)([v.default], () => v.default.isSupported()),
     r = (0, _.Go)();
   return (0, i.jsx)(H, {

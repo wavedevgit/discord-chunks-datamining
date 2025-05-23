@@ -51,8 +51,8 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = Object.keys(d.zxk.Colors).filter(e => "CUSTOM" !== e),
-  O = Object.keys(d.zxk.Looks).filter(e => "BLANK" !== e),
+let O = Object.keys(d.zxk.Colors).filter(e => "CUSTOM" !== e),
+  j = Object.keys(d.zxk.Looks).filter(e => "BLANK" !== e),
   S = Object.keys(d.zxk.Sizes).filter(e => "NONE" !== e);
 
 function v() {
@@ -67,7 +67,7 @@ function v() {
       text: "Testing",
       iconPosition: "end",
       icon: d.XHJ
-    }), (0, i.jsx)(Z, {}), (0, i.jsx)(V, {}), (0, i.jsx)(G, {}), (0, i.jsx)(B, {}), (0, i.jsx)(M, {}), (0, i.jsx)(L, {}), (0, i.jsx)(k, {}), (0, i.jsx)(H, {}), (0, i.jsx)(T, {}), (0, i.jsx)(z, {})]
+    }), (0, i.jsx)(Z, {}), (0, i.jsx)(V, {}), (0, i.jsx)(G, {}), (0, i.jsx)(M, {}), (0, i.jsx)(B, {}), (0, i.jsx)(L, {}), (0, i.jsx)(k, {}), (0, i.jsx)(H, {}), (0, i.jsx)(T, {}), (0, i.jsx)(z, {})]
   })
 }
 
@@ -236,7 +236,7 @@ function D() {
 }
 
 function Z() {
-  let [e, t] = r.useState(!1), n = j.flatMap(e => [...O.map(t => (0, i.jsxs)(d.zxk, {
+  let [e, t] = r.useState(!1), n = O.flatMap(e => [...j.map(t => (0, i.jsxs)(d.zxk, {
     color: d.zxk.Colors[e],
     look: d.zxk.Looks[t],
     fullWidth: !0,
@@ -485,7 +485,7 @@ function L() {
   })
 }
 
-function M() {
+function B() {
   return (0, i.jsxs)("div", {
     className: x.section,
     children: [(0, i.jsx)(d.X6q, {
@@ -526,7 +526,7 @@ function M() {
   })
 }
 
-function B() {
+function M() {
   let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [l, a] = r.useState("auto");
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {

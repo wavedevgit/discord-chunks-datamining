@@ -58,9 +58,9 @@ function x(e) {
     voiceChannel: x,
     status: E,
     userTag: C,
-    customStatusHoverOnlyRTCEntrypointEnabled: j
+    customStatusHoverOnlyRTCEntrypointEnabled: O
   } = e, {
-    analyticsLocations: O
+    analyticsLocations: j
   } = (0, m.ZP)(u.Z.RTC_PANEL), S = (0, h.a)(), v = r.useCallback(() => {
     (0, a.ZDy)(async () => {
       let e = (0, p.Z)(),
@@ -87,7 +87,7 @@ function x(e) {
           }
           return e
         }({}, n), s = s = {
-          sourceAnalyticsLocations: O,
+          sourceAnalyticsLocations: j,
           location: "CustomStatusRTCEntrypoint",
           prompt: e
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
@@ -102,7 +102,7 @@ function x(e) {
         }), r))
       }
     })
-  }, [O]), T = r.useMemo(() => null != E && E !== a.Skl.UNKNOWN && null != l && l.isPomelo() ? (0, i.jsx)(c.Z, {
+  }, [j]), T = r.useMemo(() => null != E && E !== a.Skl.UNKNOWN && null != l && l.isPomelo() ? (0, i.jsx)(c.Z, {
     text: g.ZP.humanizeStatus(E)
   }) : C, [E, l, C]), N = null != S, [I, y] = r.useState(!1), A = r.useMemo(() => (0, i.jsx)(_, {
     openModal: v,
@@ -110,13 +110,13 @@ function x(e) {
     className: b.customStatusActionHoverText,
     onFocus: () => y(!0),
     onBlur: () => y(!1)
-  }), [v, N]), P = j ? (0, i.jsx)(d.Z, {
+  }), [v, N]), P = O ? (0, i.jsx)(d.Z, {
     hoverText: A,
     forceHover: t || I,
     children: T
   }) : A;
   return (0, i.jsx)(m.Gt, {
-    value: O,
+    value: j,
     children: null != s && s.length > 0 ? (0, i.jsx)(d.Z, {
       hoverText: P,
       forceHover: t || I,

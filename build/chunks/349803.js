@@ -23,14 +23,14 @@ let f = function(e) {
     isFullscreen: f,
     subscriptionTier: b,
     isMarketingPageV2: _
-  } = e, x = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, E = (0, c.Ng)(), C = (0, c.Wp)(E, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, j = (0, a.q_F)({
+  } = e, x = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, E = (0, c.Ng)(), C = (0, c.Wp)(E, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, O = (0, a.q_F)({
     transform: r ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!r,
     config: {
       tension: 120,
       friction: 12
     }
-  }), O = {
+  }), j = {
     section: p.jXE.MARKETING_FLOATING_CTA
   }, S = (0, o.ZP)(), v = (0, a.wjy)(S);
   return (0, i.jsx)(l.animated.div, {
@@ -38,7 +38,7 @@ let f = function(e) {
       [h.fullscreenWrapper]: f,
       [h.invisible]: !r
     }),
-    style: j,
+    style: O,
     children: (0, i.jsxs)("div", {
       className: _ ? h.innerWrapperV2 : h.innerWrapperV1,
       children: [(0, i.jsx)(m.Z, {
@@ -46,11 +46,11 @@ let f = function(e) {
           [h.subButton]: v
         }),
         subscriptionTier: null != (n = null != b ? b : null == x ? void 0 : x.sku_id) ? n : C,
-        premiumModalAnalyticsLocation: O,
+        premiumModalAnalyticsLocation: j,
         isPersistentCTA: !0
       }), (0, i.jsx)(u.Z, {
         className: h.button,
-        premiumModalAnalyticsLocation: O
+        premiumModalAnalyticsLocation: j
       })]
     })
   })

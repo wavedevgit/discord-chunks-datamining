@@ -22,8 +22,8 @@ var i = n(255367),
   x = n(605236),
   E = n(984370),
   C = n(797614),
-  j = n(108427),
-  O = n(210887),
+  O = n(108427),
+  j = n(210887),
   S = n(695346),
   v = n(594174),
   T = n(626135),
@@ -38,8 +38,8 @@ var i = n(255367),
   w = n(521450),
   k = n(292352),
   L = n(981631),
-  M = n(723359),
-  B = n(921944),
+  B = n(723359),
+  M = n(921944),
   U = n(127941),
   V = n(388032),
   G = n(628950);
@@ -142,10 +142,10 @@ function Y() {
     h = (0, _.Dt)(),
     f = v.default.getCurrentUser(),
     E = null != e,
-    O = s && null != f && !E;
+    j = s && null != f && !E;
   (0, g.ZP)(() => {
-    (0, j.e)("family-center"), N.ZP.initialPageLoad(), n || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
-      dismissAction: B.L.AUTO,
+    (0, O.e)("family-center"), N.ZP.initialPageLoad(), n || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
+      dismissAction: M.L.AUTO,
       forceTrack: !0
     })
   });
@@ -177,8 +177,8 @@ function Y() {
       })
     }
   }, [s, E]), r.useEffect(() => {
-    O && (0, p.mN)(M.L0.FAMILY_CENTER)
-  }, [O]), O) ? null : (0, i.jsxs)("main", {
+    j && (0, p.mN)(B.L0.FAMILY_CENTER)
+  }, [j]), j) ? null : (0, i.jsxs)("main", {
     className: G.container,
     "aria-label": V.intl.string(U.default.RZqaJi),
     children: [(0, i.jsx)(b.yY, {
@@ -202,13 +202,13 @@ function Y() {
 function K() {
   let {
     analyticsLocations: e
-  } = (0, f.ZP)(h.Z.FAMILY_CENTER), t = (0, P.Z)(), n = (0, R.M8)(), s = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE), a = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()), E = (0, A.M)(), D = (0, c.e7)([O.Z], () => O.Z.theme), {
+  } = (0, f.ZP)(h.Z.FAMILY_CENTER), t = (0, P.Z)(), n = (0, R.M8)(), s = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE), a = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()), E = (0, A.M)(), D = (0, c.e7)([j.Z], () => j.Z.theme), {
     selectedTab: Z,
     handleTabChange: w
   } = (0, y.Z)(), F = (0, _.Dt)(), z = v.default.getCurrentUser(), Y = null != t, K = a && null != z && !Y;
   (0, g.ZP)(() => {
-    m.Y(L.Z5c.FAMILY_CENTER), (0, j.e)("family-center"), !I.Z.isLoading() && I.Z.canRefetch() && N.ZP.initialPageLoad(), s || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
-      dismissAction: B.L.AUTO,
+    m.Y(L.Z5c.FAMILY_CENTER), (0, O.e)("family-center"), !I.Z.isLoading() && I.Z.canRefetch() && N.ZP.initialPageLoad(), s || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
+      dismissAction: M.L.AUTO,
       forceTrack: !0
     })
   });
@@ -243,7 +243,7 @@ function K() {
       let e = S.Ex.getSetting();
       a && t && void 0 === e && S.Ex.updateSetting(!0)
     }, [a, t]), r.useEffect(() => {
-      K && (0, p.mN)(M.L0.FAMILY_CENTER)
+      K && (0, p.mN)(B.L0.FAMILY_CENTER)
     }, [K]), K) return null;
   let Q = Z !== k.dG.SETTINGS ? Z : k.dG.ACTIVITY,
     J = H[Q];

@@ -1,6 +1,6 @@
 /** Chunk was on 998 **/
 n.d(t, {
-  Z: () => j
+  Z: () => O
 });
 var i = n(255367),
   r = n(608787),
@@ -26,7 +26,7 @@ let C = (0, r.Un)({
   name: "ClickerGamePopoutWindow"
 });
 
-function j() {
+function O() {
   let e = (0, l.e7)([m.Z], () => m.Z.lifetimePoints > 0),
     t = (0, l.e7)([c.Z], () => c.Z.getWindowOpen(h.KJ3.CLICKER_GAME)),
     r = () => {
@@ -37,7 +37,7 @@ function j() {
         defaultHeight: 768
       })
     },
-    j = () => {
+    O = () => {
       o.Z.useReducedMotion ? (0, a.ZDy)(async () => {
         let {
           ConfirmModal: e
@@ -98,7 +98,7 @@ function j() {
         className: _.playButton,
         color: "white",
         disabled: t,
-        onClick: j,
+        onClick: O,
         children: [(0, i.jsx)(p.Z, {
           color: "always-white",
           variant: "text-lg/bold",
@@ -114,7 +114,7 @@ function j() {
         color: "white",
         disabled: t || !e,
         onClick: () => {
-          (0, u.yW)(), j()
+          (0, u.yW)(), O()
         },
         children: (0, i.jsx)(p.Z, {
           color: "always-white",

@@ -24,8 +24,8 @@ var i = n(255367),
   x = n(600164),
   E = n(925329),
   C = n(963249),
-  j = n(301766),
-  O = n(594174),
+  O = n(301766),
+  j = n(594174),
   S = n(626135),
   v = n(63063),
   T = n(74538),
@@ -41,7 +41,7 @@ var i = n(255367),
   k = n(388032),
   L = n(515474);
 
-function M(e) {
+function B(e) {
   let t, {
       subscription: n,
       renewalInvoicePreview: r,
@@ -49,8 +49,8 @@ function M(e) {
       fromStandaloneBillingPage: a = !0,
       className: c
     } = e,
-    d = (0, u.e7)([O.default], () => {
-      let e = O.default.getCurrentUser();
+    d = (0, u.e7)([j.default], () => {
+      let e = j.default.getCurrentUser();
       return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
     });
   if (0 === (0, T.uV)(n.additionalPlans)) return null;
@@ -107,7 +107,7 @@ function M(e) {
   })
 }
 
-function B() {
+function M() {
   return r.useEffect(() => {
     S.default.track(Z.rMx.TOOLTIP_VIEWED, {
       type: "subscription_settings_missing_payment_method"
@@ -271,7 +271,7 @@ function H(e) {
         paymentSource: r,
         busy: s,
         analyticsLocation: n
-      }), (0, i.jsx)(M, {
+      }), (0, i.jsx)(B, {
         subscription: t,
         renewalInvoicePreview: b,
         fromStandaloneBillingPage: a,
@@ -363,14 +363,14 @@ function Y(e) {
     applyEntitlements: !0,
     analyticsLocations: m,
     analyticsLocation: c
-  }), x = null == l ? void 0 : l.invalid, E = (0, u.e7)([O.default], () => {
+  }), x = null == l ? void 0 : l.invalid, E = (0, u.e7)([j.default], () => {
     var e;
-    return null == (e = O.default.getCurrentUser()) ? void 0 : e.hasFreePremium()
+    return null == (e = j.default.getCurrentUser()) ? void 0 : e.hasFreePremium()
   }), C = d()(r.currentPeriodEnd), S = null != r.paymentSourceId, v = null != (t = null == _ ? void 0 : _.total) ? t : 0, T = !S && v > 0 && (7 >= C.diff(d()(), "days") || r.status === Z.O0b.PAST_DUE) && !E && !r.isPurchasedExternally, N = x && r.status === Z.O0b.PAST_DUE && !E && !r.isPurchasedExternally, A = (0, y.U)(), P = !E && A, R = (null == r ? void 0 : r.status) === Z.O0b.PAST_DUE ? d()().diff(d()(r.currentPeriodStart), "days") : 0, [w] = (0, I.Ox)({
     subscriptionId: r.id,
     preventFetch: !P
   });
-  return null == b || null == _ ? (0, i.jsx)(g.$jN, {}) : (null != r.renewalMutations && (r.renewalMutations.planId !== r.planId && !(0, j.Q0)(r.renewalMutations.planId) || r.hasExternalPlanChange) && (n = (0, i.jsx)(D.Z, {
+  return null == b || null == _ ? (0, i.jsx)(g.$jN, {}) : (null != r.renewalMutations && (r.renewalMutations.planId !== r.planId && !(0, O.Q0)(r.renewalMutations.planId) || r.hasExternalPlanChange) && (n = (0, i.jsx)(D.Z, {
     subscription: r,
     renewalMutations: r.renewalMutations,
     className: L.renewalMutationNotice,
@@ -382,7 +382,7 @@ function Y(e) {
         tag: "h1",
         children: k.intl.string(k.t["/gs+Pz"])
       }),
-      children: [T ? (0, i.jsx)(B, {}) : null, N ? (0, i.jsx)(U, {}) : null, P && null != w ? (0, i.jsx)(V, {
+      children: [T ? (0, i.jsx)(M, {}) : null, N ? (0, i.jsx)(U, {}) : null, P && null != w ? (0, i.jsx)(V, {
         daysPastDue: R,
         subscription: r,
         openInvoiceId: w.id

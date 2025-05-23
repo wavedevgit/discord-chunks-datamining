@@ -26,8 +26,8 @@ let d = r.forwardRef(function(e, t) {
     onMouseLeave: x,
     "aria-label": E,
     "aria-checked": C,
-    role: j,
-    tooltipColor: O,
+    role: O,
+    tooltipColor: j,
     tooltipForceOpen: S,
     tooltipContentClassName: v,
     plated: T
@@ -42,7 +42,7 @@ let d = r.forwardRef(function(e, t) {
     tooltipClassName: b,
     text: n,
     "aria-label": E,
-    color: O,
+    color: j,
     tooltipContentClassName: v,
     forceOpen: S,
     children: e => {
@@ -51,7 +51,7 @@ let d = r.forwardRef(function(e, t) {
           onMouseEnter: b,
           onMouseLeave: E
         } = e,
-        O = function(e, t) {
+        j = function(e, t) {
           if (null == e) return {};
           var n, i, r = function(e, t) {
             if (null == e) return {};
@@ -83,7 +83,7 @@ let d = r.forwardRef(function(e, t) {
           })
         }
         return e
-      }({}, O), m = m = {
+      }({}, j), m = m = {
         buttonRef: t,
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
@@ -107,7 +107,7 @@ let d = r.forwardRef(function(e, t) {
           null == E || E(), null == x || x()
         },
         onContextMenu: s,
-        role: j,
+        role: O,
         "aria-checked": C,
         focusProps: {
           offset: {

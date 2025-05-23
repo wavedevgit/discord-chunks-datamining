@@ -39,15 +39,15 @@ function _() {
       value: r.Q4.BLOCK,
       label: f.intl.string(f.t["D/157e"])
     }],
-    j = [{
+    O = [{
       value: r.Q4.BLUR,
       label: f.intl.string(f.t.S49UaW)
     }],
-    O = {
+    j = {
       value: r.Q4.SHOW,
       label: f.intl.string(f.t["5k5OFh"])
     };
-  return t && (C.unshift(O), j.unshift(O)), (0, i.jsxs)(m.U, {
+  return t && (C.unshift(j), O.unshift(j)), (0, i.jsxs)(m.U, {
     setting: p.s6.PRIVACY_SENSITIVE_MEDIA_V2,
     scrollPosition: g.FY.EXPLICIT_MEDIA_REDACTION_V2,
     children: [(0, i.jsx)(m.H, {
@@ -82,7 +82,7 @@ function _() {
       title: f.intl.string(f.t["FP+a4+"]),
       titleClassName: b.selectItemTitle,
       children: (0, i.jsx)(s.q4e, {
-        options: j,
+        options: O,
         value: n,
         onChange: e => E({
           explicitContentGuilds: e

@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(299206),
   E = n(295474),
   C = n(144114),
-  j = n(918505),
-  O = n(332473),
+  O = n(918505),
+  j = n(332473),
   S = n(921801),
   v = n(485341),
   T = n(687158),
@@ -37,8 +37,8 @@ var i = n(255367),
   w = n(695346),
   k = n(461877),
   L = n(726985),
-  M = n(981631),
-  B = n(815660),
+  B = n(981631),
+  M = n(815660),
   U = n(801461),
   V = n(388032),
   G = n(454032);
@@ -81,7 +81,7 @@ function W(e) {
   let {
     className: a,
     user: o
-  } = e, c = r.useRef(null), m = (0, j.o9)(), g = (0, O.b)(), p = (0, E.gS)(), h = null != (s = null == p || null == (t = p.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
+  } = e, c = r.useRef(null), m = (0, O.o9)(), g = (0, j.b)(), p = (0, E.gS)(), h = null != (s = null == p || null == (t = p.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
   r.useEffect(() => {
     b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);
@@ -356,7 +356,7 @@ function X(e) {
         onClick: function() {
           (0, u.h7j)(e => (0, i.jsx)(p.Z, H(F({}, e), {
             title: V.intl.string(V.t["3CTiKi"]),
-            children: s.hasFlag(M.xW$.MFA_SMS) ? V.intl.string(V.t.jrhJys) : void 0,
+            children: s.hasFlag(B.xW$.MFA_SMS) ? V.intl.string(V.t.jrhJys) : void 0,
             actionText: V.intl.string(V.t.N86XcH),
             handleSubmit: e => C.Z.removePhone(e, C.L.USER_SETTINGS_UPDATE)
           })))
@@ -376,7 +376,7 @@ function X(e) {
               reason: C.L.USER_SETTINGS_UPDATE
             }, t))
           }, {
-            modalKey: B.M
+            modalKey: M.M
           })
         },
         children: c ? V.intl.string(V.t.bt75u7) : V.intl.string(V.t.OYkgVl)
@@ -420,7 +420,7 @@ function Q(e) {
 }
 
 function J() {
-  m.Z.setSection(M.oAB.PROFILE_CUSTOMIZATION)
+  m.Z.setSection(B.oAB.PROFILE_CUSTOMIZATION)
 }
 
 function $(e) {

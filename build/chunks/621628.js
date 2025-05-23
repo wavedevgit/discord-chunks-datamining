@@ -1,6 +1,6 @@
 /** Chunk was on 998 **/
 n.d(t, {
-  Z: () => j,
+  Z: () => O,
   u: () => E
 }), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(290780), n(642613);
 var i = n(255367),
@@ -71,7 +71,7 @@ function C(e) {
   })
 }
 
-function j() {
+function O() {
   var e;
   let t = (0, f.ZP)(e => e.recentlyShown),
     {
@@ -83,8 +83,8 @@ function j() {
       dailyCapOverridden: h.Z.dailyCapOverridden,
       newUserMinAgeRequiredOverridden: h.Z.newUserMinAgeRequiredOverridden
     })),
-    [E, j] = r.useState(""),
-    O = null != (e = (0, a.e7)([g.Z], () => {
+    [E, O] = r.useState(""),
+    j = null != (e = (0, a.e7)([g.Z], () => {
       var e;
       return null == (e = g.Z.settings.userContent) ? void 0 : e.dismissedContents
     })) ? e : new Uint8Array,
@@ -142,8 +142,8 @@ function j() {
         className: x.marginBottom20,
         size: d.E1j.Sizes.LARGE,
         query: E,
-        onChange: j,
-        onClear: () => j("")
+        onChange: O,
+        onClear: () => O("")
       }), (0, i.jsxs)(d.xJW, {
         className: _.buttonsContainer,
         children: [(0, i.jsx)(d.zxk, {
@@ -162,7 +162,7 @@ function j() {
           })
         }), (0, i.jsx)(C, {
           items: N,
-          dismissedContents: O,
+          dismissedContents: j,
           handleChange: T
         })]
       }) : null, I.length > 0 ? (0, i.jsxs)(i.Fragment, {
@@ -173,7 +173,7 @@ function j() {
           })
         }), (0, i.jsx)(C, {
           items: I,
-          dismissedContents: O,
+          dismissedContents: j,
           handleChange: T
         })]
       }) : null, (0, i.jsx)(u.Z, {
@@ -183,7 +183,7 @@ function j() {
         })
       }), (0, i.jsx)(C, {
         items: y,
-        dismissedContents: O,
+        dismissedContents: j,
         handleChange: T
       })]
     })]

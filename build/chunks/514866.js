@@ -14,7 +14,7 @@ var r = n(120356),
   u = n(110478),
   m = n(423932),
   x = n(695346),
-  h = n(601948),
+  h = n(306052),
   p = n(594174),
   b = n(795611),
   f = n(971005);
@@ -47,7 +47,7 @@ function g() {
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)("div", {
       className: l()(b.buttonsContainer, f.marginBottom20),
-      children: (0, a.jsx)(h.S, {
+      children: (0, a.jsx)(h.g, {
         isDevTools: !0
       })
     }), (0, a.jsx)("div", {

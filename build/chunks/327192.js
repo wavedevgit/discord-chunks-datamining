@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(122021),
   E = n(275759),
   C = n(231757),
-  j = n(888496),
-  O = n(605236),
+  O = n(888496),
+  j = n(605236),
   S = n(565138),
   v = n(297700),
   T = n(553795),
@@ -37,8 +37,8 @@ var i = n(255367),
   w = n(205266),
   k = n(216153),
   L = n(981631),
-  M = n(856651),
-  B = n(921944),
+  B = n(856651),
+  M = n(921944),
   U = n(388032),
   V = n(879198),
   G = n(971005);
@@ -125,11 +125,11 @@ function z(e) {
       locale: p
     } = e,
     [h, b] = r.useState(o.friendSync),
-    [O, S] = r.useState(o.visibility),
+    [j, S] = r.useState(o.visibility),
     [T, N] = r.useState(o.metadataVisibility),
     [I, y] = r.useState(o.showActivity),
     [A, R] = r.useState(null),
-    [B, G] = r.useState(null),
+    [M, G] = r.useState(null),
     [z, W] = r.useState(!1),
     [Y, K] = r.useState([]),
     q = (0, x.rR)(o.type),
@@ -139,7 +139,7 @@ function z(e) {
   }, [o]);
   let Q = {
       inProgressVisibility: A,
-      inProgressMetadataVisibility: B
+      inProgressMetadataVisibility: M
     },
     J = r.useRef(Q);
   r.useEffect(() => {
@@ -179,7 +179,7 @@ function z(e) {
       var t;
       let n = _.Z.get(e.type),
         r = _.Z.get(q),
-        s = "1" === (null != (t = e.metadata) ? t : {})[M.PC.TWITTER_VERIFIED],
+        s = "1" === (null != (t = e.metadata) ? t : {})[B.PC.TWITTER_VERIFIED],
         l = null;
       return n.type === L.ABu.TWITTER && s && (l = (0, i.jsx)(u.ua7, {
         text: U.intl.string(U.t.Jebrw8),
@@ -253,27 +253,27 @@ function z(e) {
       var t;
       let n = null != (t = e.metadata) ? t : {},
         r = null,
-        s = (0, E.FI)(n[M.PC.CREATED_AT], p);
+        s = (0, E.FI)(n[B.PC.CREATED_AT], p);
       switch (e.type) {
         case L.ABu.REDDIT:
-          r = (0, j.oP)(n, V.metadataItem);
+          r = (0, O.oP)(n, V.metadataItem);
           break;
         case L.ABu.STEAM:
-          r = (0, j.Dq)(n, V.metadataItem);
+          r = (0, O.Dq)(n, V.metadataItem);
           break;
         case L.ABu.BLUESKY:
         case L.ABu.TWITTER:
         case L.ABu.MASTODON:
-          r = (0, j.rJ)(n, V.metadataItem);
+          r = (0, O.rJ)(n, V.metadataItem);
           break;
         case L.ABu.EBAY:
-          r = (0, j.ul)(n, V.metadataItem);
+          r = (0, O.ul)(n, V.metadataItem);
           break;
         case L.ABu.PAYPAL:
-          r = (0, j.li)(n, V.metadataItem);
+          r = (0, O.li)(n, V.metadataItem);
           break;
         case L.ABu.TIKTOK:
-          r = (0, j.hf)(n, V.metadataItem)
+          r = (0, O.hf)(n, V.metadataItem)
       }
       null !== s && (null == r && (r = []), null == r || r.push((0, i.jsx)(u.Text, {
         variant: "text-xs/normal",
@@ -357,7 +357,7 @@ function z(e) {
         }
         N(n), g.Z.setMetadataVisibility(o.type, o.id, n)
       },
-      disabled: 1 !== O || null == o.metadata,
+      disabled: 1 !== j || null == o.metadata,
       children: (0, i.jsx)(u.Text, {
         variant: "text-sm/semibold",
         children: U.intl.string(U.t.FYKGsL)
@@ -369,7 +369,7 @@ function z(e) {
         children: [(0, i.jsx)(u.j7V, {
           className: V.connectionOptionSwitch,
           hideBorder: !0,
-          value: 1 === O,
+          value: 1 === j,
           onChange: function(e) {
             let {
               verified: t
@@ -425,8 +425,8 @@ function z(e) {
 
 function W() {
   return r.useEffect(() => () => {
-    (0, O.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
-      dismissAction: B.L.AUTO
+    (0, j.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
+      dismissAction: M.L.AUTO
     })
   }, []), (0, i.jsxs)("div", {
     className: V.connectContainer,

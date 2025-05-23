@@ -1,8 +1,8 @@
 /** Chunk was on 998 **/
 n.d(t, {
   ED: () => x,
-  fO: () => j,
-  qp: () => O
+  fO: () => O,
+  qp: () => j
 });
 var i = n(255367),
   r = n(73800),
@@ -50,7 +50,7 @@ let x = e => (0, i.jsx)(g.M4, _({
     position: "right",
     align: "bottom"
   },
-  j = e => {
+  O = e => {
     var t, n, {
         onClose: a,
         onCtaClick: c,
@@ -73,27 +73,27 @@ let x = e => (0, i.jsx)(g.M4, _({
         }
         return r
       }(e, ["onClose", "onCtaClick", "targetElementRef", "isGuildBarScrolling", "children"]);
-    let O = r.useRef(null),
+    let j = r.useRef(null),
       S = (0, o.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"),
       v = r.useCallback(e => {
         if (S) {
-          let t = window.innerHeight - ((0, g.t4)() + j.COACHMARK_VERTICAL_OFFSET);
+          let t = window.innerHeight - ((0, g.t4)() + O.COACHMARK_VERTICAL_OFFSET);
           return e.top <= t
         }
         return !0
       }, [S]),
       T = (0, l.e7)([u.Z], () => u.Z.getExpandedFolders().size);
     r.useEffect(() => {
-      null !== O.current && O.current.updateElementPositionWithPolling()
+      null !== j.current && j.current.updateElementPositionWithPolling()
     }, [T]), r.useEffect(() => {
-      null !== O.current && O.current.updateElementPosition()
+      null !== j.current && j.current.updateElementPosition()
     }, [h]);
     let N = (0, s.TH)().pathname,
       I = r.useCallback(() => {
         E.includes(N) || (0, d.uL)(p.Z5c.ME), c()
       }, [N, c]);
     return (0, i.jsx)(g.WS, (t = _({
-      positionControlRef: O,
+      positionControlRef: j,
       targetElementRef: m,
       calculateVisibility: v,
       defaultCoachmarkAlign: C.align,
@@ -115,8 +115,8 @@ let x = e => (0, i.jsx)(g.M4, _({
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   };
-j.COACHMARK_VERTICAL_OFFSET = 10;
-let O = e => {
+O.COACHMARK_VERTICAL_OFFSET = 10;
+let j = e => {
   let {
     isVirtualCurrencyEnabled: t,
     discoveryButtonRef: n,

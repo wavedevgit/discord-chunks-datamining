@@ -58,9 +58,9 @@ let E = function() {
     {
       fractionalState: C
     } = (0, o.Z)(),
-    j = (0, u.y)("guild_boosting_boost_cta", E, C);
+    O = (0, u.y)("guild_boosting_boost_cta", E, C);
 
-  function O(n) {
+  function j(n) {
     null != e.current && (0, l.Mr3)(e.current), (0, d.u)({
       analyticsLocation: {
         page: h.ZY5.GUILD_BOOSTING_USER_SETTINGS,
@@ -78,7 +78,7 @@ let E = function() {
         default: e
       } = await Promise.resolve().then(n.bind(n, 719228));
       return t => (0, i.jsx)(e, x(_({}, t), {
-        onSelectGuild: O
+        onSelectGuild: j
       }))
     }, {
       onCloseRequest: () => {
@@ -87,7 +87,7 @@ let E = function() {
     })
   }
   let v = (0, p.aq)({
-    isBoostManagementDisabledForFractionalPremium: j
+    isBoostManagementDisabledForFractionalPremium: O
   });
   return (0, i.jsxs)("div", {
     className: b.wrapper,

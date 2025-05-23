@@ -22,8 +22,8 @@ var i = n(255367),
   x = n(634894),
   E = n(410030),
   C = n(607070),
-  j = n(100527),
-  O = n(906732),
+  O = n(100527),
+  j = n(906732),
   S = n(211242),
   v = n(975298),
   T = n(15640),
@@ -38,8 +38,8 @@ var i = n(255367),
   w = n(63063),
   k = n(74538),
   L = n(140465),
-  M = n(695349),
-  B = n(249689),
+  B = n(695349),
+  M = n(249689),
   U = n(717401),
   V = n(286961),
   G = n(91802),
@@ -110,7 +110,7 @@ function eo() {
     r = (0, E.ZP)(),
     s = (0, c.e7)([R.ZP], () => R.ZP.getPremiumTypeSubscription()),
     a = (0, v.Z)(),
-    o = (0, M.W)(),
+    o = (0, B.W)(),
     d = null !== s && null !== s.planIdFromItems;
   if (!d && !a.isFractionalPremiumActive) return null;
   let g = a.isFractionalPremiumActive,
@@ -156,7 +156,7 @@ function eo() {
         })]
       }) : null, (0, i.jsx)(Y.nT, {
         featureSet: g ? Y.uZ.FRACTIONAL_PREMIUM : Y.uZ.DEFAULT
-      }), g && !d && (0, B.C)("nitro-settings-hero", e) ? (0, i.jsxs)(i.Fragment, {
+      }), g && !d && (0, M.C)("nitro-settings-hero", e) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(z.Z, {
           textOptions: {
             textOverride: o ? $.intl.string($.t.YScQSE) : $.intl.string($.t["0b3YRk"]),
@@ -322,7 +322,7 @@ let eu = function() {
   let e = (0, S.Q)(),
     {
       analyticsLocations: t
-    } = (0, O.ZP)(j.Z.PREMIUM_SETTINGS),
+    } = (0, j.ZP)(O.Z.PREMIUM_SETTINGS),
     n = (0, c.e7)([R.ZP], () => R.ZP.getPremiumTypeSubscription()),
     s = (0, c.e7)([R.ZP], () => R.ZP.hasFetchedSubscriptions()),
     l = (0, T.V)(),
@@ -358,8 +358,8 @@ let eu = function() {
     note: null
   });
   if (!k && !L || a) return (0, i.jsx)(m.$jN, {});
-  let M = !!(null == n ? void 0 : n.hasActiveTrial);
-  return (0, i.jsx)(O.Gt, {
+  let B = !!(null == n ? void 0 : n.hasActiveTrial);
+  return (0, i.jsx)(j.Gt, {
     value: t,
     children: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)("div", {
@@ -370,7 +370,7 @@ let eu = function() {
           className: ee.__invalid_planComparisonTable,
           hideCTAs: !0,
           headingOverride: $.intl.string($.t.dnVvQU),
-          hidePill: !M,
+          hidePill: !B,
           selectedPlanColumnClassName: ee.tier2PlanComparisonTableBackground,
           selectedPlanTier: Q.p9.TIER_2
         })]

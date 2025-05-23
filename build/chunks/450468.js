@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(78839),
   E = n(74538),
   C = n(388032),
-  j = n(636174);
-async function O(e, t, n, i) {
+  O = n(636174);
+async function j(e, t, n, i) {
   let r = (0, E.MY)(e, t);
   await (0, u.bG)(n), await (0, d.Mg)(e, {
     items: r
@@ -51,9 +51,9 @@ function S(e) {
         onClick: d
       })]
     }), (0, i.jsxs)(c.hzk, {
-      className: j.body,
+      className: O.body,
       children: [null !== v && (0, i.jsx)(c.kzN, {
-        className: j.error,
+        className: O.error,
         children: v
       }), C.intl.string(C.t.DY2CXl)]
     }), (0, i.jsxs)(c.mzw, {
@@ -63,7 +63,7 @@ function S(e) {
           try {
             p(!0), T(null);
             let e = (0, b.g)(t, 1);
-            l()((0, E.uV)(e) <= (0, E.uV)(t.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(t, e, n, S), s()
+            l()((0, E.uV)(e) <= (0, E.uV)(t.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await j(t, e, n, S), s()
           } catch (t) {
             let e = t instanceof m.HF ? t : new m.HF(t, t.code);
             T(C.intl.string(e.code === g.SM.BILLING_PAUSE_INVALID_UPDATE ? C.t.dq4vq6 : C.t["5mlOCQ"])), p(!1)
@@ -96,9 +96,9 @@ function v(e) {
         onClick: t
       })]
     }), (0, i.jsxs)(c.hzk, {
-      className: j.body,
+      className: O.body,
       children: [(0, i.jsx)("div", {
-        className: j.uncancelImage
+        className: O.uncancelImage
       }), (0, i.jsx)("div", {
         children: C.intl.string(C.t.G27uHR)
       })]

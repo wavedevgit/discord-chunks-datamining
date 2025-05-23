@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(404615),
   E = n(238108),
   C = n(22189),
-  j = n(391110),
-  O = n(484239),
+  O = n(391110),
+  j = n(484239),
   S = n(658370),
   v = n(735825),
   T = n(981631),
@@ -73,16 +73,16 @@ let R = {
       canReveal: n = !0,
       dismissibleContentType: s,
       forceShadow: x,
-      cardType: O,
+      cardType: j,
       confettiCanvas: S
-    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [L, M] = r.useState(!1), [B, U] = r.useState(!1), V = (0, b.Er)(), G = (0, b.IB)(), [F, H] = r.useState(!1), [z, W] = r.useState(t === C.I.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE);
+    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [L, B] = r.useState(!1), [M, U] = r.useState(!1), V = (0, b.Er)(), G = (0, b.IB)(), [F, H] = r.useState(!1), [z, W] = r.useState(t === C.I.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE);
     r.useEffect(() => {
       t === C.I.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE && W(!0)
     }, [G, t, V]);
     let Y = r.useCallback(() => {
         H(!0)
       }, []),
-      K = O === j.gM.CARD_CAROUSEL_FIRST_ROW || O === j.gM.CARD_CAROUSEL_SECOND_ROW || O === j.gM.CARD_CAROUSEL_THIRD_ROW,
+      K = j === O.gM.CARD_CAROUSEL_FIRST_ROW || j === O.gM.CARD_CAROUSEL_SECOND_ROW || j === O.gM.CARD_CAROUSEL_THIRD_ROW,
       q = (0, C.Z)(),
       [X, Q] = (0, h.cv)(null != s && n || s === d.z.TENURE_REWARD_REDEEMABLE_CONFETTI ? [s] : []);
     r.useEffect(() => () => {
@@ -114,7 +114,7 @@ let R = {
         null == w || w(), ei()
       } : void 0
     });
-    let es = X !== s || null == s || B || s === d.z.TENURE_REWARD_REDEEMABLE_CONFETTI;
+    let es = X !== s || null == s || M || s === d.z.TENURE_REWARD_REDEEMABLE_CONFETTI;
     return (r.useEffect(() => {
       k && L && (U(!0), f.default.track(T.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
         card_type: t
@@ -199,10 +199,10 @@ let R = {
           [y.forceShadow]: x
         }),
         children: (0, i.jsxs)(u.P3F, {
-          onClick: () => M(!0),
+          onClick: () => B(!0),
           className: l()(y.flipCard, y.clickable, {
             [y.flipped]: L,
-            [y.partialFlipCard]: !B && !L,
+            [y.partialFlipCard]: !M && !L,
             [y.reducedMotion]: k
           }),
           onTransitionEnd: e => {
@@ -227,7 +227,7 @@ let R = {
           }), (0, i.jsx)("div", {
             className: y.flipCardButtonContainer,
             children: (0, i.jsx)(u.zxk, {
-              onClick: () => M(!0),
+              onClick: () => B(!0),
               children: I.intl.string(I.t.dcztdX)
             })
           })]
@@ -258,7 +258,7 @@ let Z = r.forwardRef((e, t) => {
     pillText: C,
     perkImage: v,
     imageOverlayText: T
-  } = e, N = b === j.gM.CARD_CAROUSEL_FIRST_ROW || b === j.gM.CARD_CAROUSEL_SECOND_ROW || b === j.gM.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== a && f === j.zW.REWARD, A = (0, x._)(f);
+  } = e, N = b === O.gM.CARD_CAROUSEL_FIRST_ROW || b === O.gM.CARD_CAROUSEL_SECOND_ROW || b === O.gM.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== a && f === O.zW.REWARD, A = (0, x._)(f);
   return (0, i.jsxs)(u.P3F, {
     className: l()(y.card, p, null == (n = A.cardContainer) ? void 0 : n.className, {
       [y.clickable]: null != _,
@@ -275,7 +275,7 @@ let Z = r.forwardRef((e, t) => {
       children: C
     }), (0, i.jsx)("div", {
       ref: t
-    }), (0, i.jsx)(O.Z, {
+    }), (0, i.jsx)(j.Z, {
       title: r,
       titleClassName: s,
       subtitle: a,

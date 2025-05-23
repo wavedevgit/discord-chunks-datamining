@@ -24,8 +24,8 @@ var i = n(255367),
   x = n(956221),
   E = n(771173),
   C = n(385499),
-  j = n(570908),
-  O = n(702321),
+  O = n(570908),
+  j = n(702321),
   S = n(201895),
   v = n(43267),
   T = n(933557),
@@ -40,8 +40,8 @@ var i = n(255367),
   w = n(379839),
   k = n(359135),
   L = n(516817),
-  M = n(273388),
-  B = n(878857),
+  B = n(273388),
+  M = n(878857),
   U = n(518950),
   V = n(199902),
   G = n(158776),
@@ -176,7 +176,7 @@ let en = q.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
       "aria-setsize": x,
       listItemRef: E
     } = e, C = et(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
-    let O = (0, y.Q3)("PrivateChannelLinkButton");
+    let j = (0, y.Q3)("PrivateChannelLinkButton");
     return (0, i.jsx)(N.Z, {
       className: l()(J.channel, {
         [J.fullWidth]: u.tq
@@ -202,10 +202,10 @@ let en = q.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
           },
           className: J.link
         }, C), {
-          children: [(0, i.jsx)(j.Z, {
+          children: [(0, i.jsx)(O.Z, {
             muted: !1,
             avatar: (0, i.jsx)(r, {
-              size: O ? "refresh_sm" : void 0,
+              size: j ? "refresh_sm" : void 0,
               className: l()(J.linkButtonIcon, s),
               color: "currentColor"
             }),
@@ -241,13 +241,13 @@ function ec(e) {
     user: u,
     size: g.EFr.SIZE_32,
     animateOnHover: !(a || K || eo)
-  }), ef = t.isMultiUserDM(), eb = t.isSystemDM(), e_ = (0, B.Q)(), ex = !ef && !eb && t.type === X.d4z.DM, eE = ex && (null == u ? void 0 : u.primaryGuild) != null, eC = (0, m.e7)([W.ZP], () => W.ZP.isChannelMuted(t.getGuildId(), t.id)), {
-    ignored: ej,
-    blocked: eO
+  }), ef = t.isMultiUserDM(), eb = t.isSystemDM(), e_ = (0, M.Q)(), ex = !ef && !eb && t.type === X.d4z.DM, eE = ex && (null == u ? void 0 : u.primaryGuild) != null, eC = (0, m.e7)([W.ZP], () => W.ZP.isChannelMuted(t.getGuildId(), t.id)), {
+    ignored: eO,
+    blocked: ej
   } = (0, m.cj)([H.Z], () => ({
     ignored: H.Z.isIgnored(t.getRecipientId()),
     blocked: H.Z.isBlocked(t.getRecipientId())
-  })), eS = ex && ej, ev = ex && eO, eT = (eC || eS || ev) && !(a || K), eN = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eI = (0, T.ZP)(t), ey = (0, m.e7)([A.Z], () => A.Z.isFavorite(t.id)), eA = (0, M.L)("PrivateChannel"), eP = null != V && (a || K), eR = () => {
+  })), eS = ex && eO, ev = ex && ej, eT = (eC || eS || ev) && !(a || K), eN = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eI = (0, T.ZP)(t), ey = (0, m.e7)([A.Z], () => A.Z.isFavorite(t.id)), eA = (0, B.L)("PrivateChannel"), eP = null != V && (a || K), eR = () => {
     q(!0)
   }, eD = () => {
     q(!1)
@@ -260,9 +260,9 @@ function ec(e) {
     null != e && (e.preventDefault(), e.stopPropagation()), p.Z.closePrivateChannel(t.id, a, n)
   }, eL = () => {
     p.Z.preload(X.ME, t.id)
-  }, eM = e => {
-    e.stopPropagation()
   }, eB = e => {
+    e.stopPropagation()
+  }, eM = e => {
     if (e.target === e.currentTarget) {
       var t;
       null == (t = ed.current) || t.click()
@@ -312,7 +312,7 @@ function ec(e) {
     })
   }, eG = () => t.isSystemDM() ? (0, i.jsx)("div", {
     className: J.subtext,
-    children: (0, O.Z)(t.id) ? Q.intl.string(Q.t.FL5T09) : Q.intl.string(Q.t.NnY5lZ)
+    children: (0, j.Z)(t.id) ? Q.intl.string(Q.t.FL5T09) : Q.intl.string(Q.t.NnY5lZ)
   }) : t.isMultiUserDM() ? (0, i.jsx)("div", {
     className: J.subtext,
     children: Q.intl.format(Q.t.CxSA5O, {
@@ -403,7 +403,7 @@ function ec(e) {
             [J.interactiveSelected]: a
           }),
           as: "div",
-          onClick: eB,
+          onClick: eM,
           muted: eT,
           selected: a,
           children: [(0, i.jsx)(L.Z, {
@@ -423,7 +423,7 @@ function ec(e) {
               unread: eN
             })
           }, r), {
-            children: (0, i.jsx)(j.Z, {
+            children: (0, i.jsx)(O.Z, {
               ref: ez,
               avatar: eF(),
               highlighted: eN && !(eA && eT),
@@ -442,7 +442,7 @@ function ec(e) {
           })), ey ? (0, i.jsx)(es, {}) : null, eS ? (0, i.jsx)(el, {}) : null, ev ? (0, i.jsx)(ea, {}) : null, (0, i.jsx)(er, {
             "aria-label": ef ? Q.intl.string(Q.t["26C4oq"]) : Q.intl.string(Q.t.jsvgc3),
             onClick: ef ? eV : ek,
-            onMouseDown: eM,
+            onMouseDown: eB,
             nameplate: V
           })]
         })]

@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(962100),
   E = n(65154),
   C = n(388032),
-  j = n(888647),
-  O = n(971005);
+  O = n(888647),
+  j = n(971005);
 let S = f.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
 function v() {
@@ -58,13 +58,13 @@ function v() {
     }, [y, A, N, I]);
   v || (e = (0, i.jsx)(c.R94, {
     type: c.R94.Types.DESCRIPTION,
-    className: O.marginTop8,
+    className: j.marginTop8,
     children: C.intl.format(C.t["1iK6UV"], {
       onDownloadClick: () => (0, x.y)("Help Text Input Devices")
     })
   })), T || (t = (0, i.jsx)(c.R94, {
     type: c.R94.Types.DESCRIPTION,
-    className: O.marginTop8,
+    className: j.marginTop8,
     children: C.intl.format(C.t.Ow0dbG, {
       onDownloadClick: () => (0, x.y)("Help Text Output Devices")
     })
@@ -84,13 +84,13 @@ function v() {
       t = (0, i.jsx)("img", {
         src: e,
         alt: "Certified",
-        className: j.deviceOptionCertified
+        className: O.deviceOptionCertified
       })
     }
     return (0, i.jsxs)("span", {
-      className: j.deviceOption,
+      className: O.deviceOption,
       children: [(0, i.jsx)("span", {
-        className: j.deviceOptionLabel,
+        className: O.deviceOptionLabel,
         children: p.Z.getCertifiedDeviceName(s, r)
       }), t]
     }, s)
@@ -100,11 +100,11 @@ function v() {
     return k(e[0])
   }
   return (0, i.jsxs)("div", {
-    className: j.devices,
+    className: O.devices,
     children: [(0, i.jsxs)("div", {
-      className: j.deviceColumns,
+      className: O.deviceColumns,
       children: [(0, i.jsx)("div", {
-        className: j.column,
+        className: O.column,
         children: (0, i.jsxs)(c.xJW, {
           title: C.intl.string(C.t.hHMYbW),
           children: [(0, i.jsx)(c.q4e, {
@@ -129,7 +129,7 @@ function v() {
           }), e]
         })
       }), (0, i.jsx)("div", {
-        className: j.column,
+        className: O.column,
         children: (0, i.jsxs)(c.xJW, {
           title: C.intl.string(C.t.dl18zc),
           children: [(0, i.jsx)(c.q4e, {

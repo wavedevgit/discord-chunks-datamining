@@ -1,6 +1,6 @@
 /** Chunk was on 998 **/
 n.d(t, {
-  Z: () => M
+  Z: () => B
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(433811),
   E = n(214852),
   C = n(621853),
-  j = n(484459),
-  O = n(246946),
+  O = n(484459),
+  j = n(246946),
   S = n(594174),
   v = n(78839),
   T = n(626135),
@@ -37,7 +37,7 @@ var i = n(255367),
   w = n(474936),
   k = n(981631),
   L = n(779468);
-let M = function(e) {
+let B = function(e) {
   let {
     entrypoint: t = w.EZ.UserSettings
   } = e;
@@ -45,9 +45,9 @@ let M = function(e) {
   let n = (0, f.Q)(),
     {
       sourceAnalyticsLocations: s,
-      analyticsLocations: M
+      analyticsLocations: B
     } = (0, h.ZP)(p.Z.PREMIUM_MARKETING),
-    B = (0, a.e7)([v.ZP], () => v.ZP.hasFetchedSubscriptions()),
+    M = (0, a.e7)([v.ZP], () => v.ZP.hasFetchedSubscriptions()),
     U = (0, a.e7)([S.default], () => S.default.getCurrentUser()),
     V = null == U ? void 0 : U.id,
     G = (0, R.N)(),
@@ -65,7 +65,7 @@ let M = function(e) {
   }, [J]), r.useEffect(() => {
     c.Z.wait(async () => {
       let e = Date.now();
-      await Promise.all([d.jg(), (0, u.X8)(), d.tZ(), (0, m.Y2)(X, null, k.JjL.DISCOVERY), null != V && K && (0, j.Z)(V)]), Y.current = Date.now() - e, W(!1)
+      await Promise.all([d.jg(), (0, u.X8)(), d.tZ(), (0, m.Y2)(X, null, k.JjL.DISCOVERY), null != V && K && (0, O.Z)(V)]), Y.current = Date.now() - e, W(!1)
     })
   }, [X, V, K]), r.useEffect(() => {
     n && (null != G || null != F) && (0, y.a)(G, F)
@@ -74,14 +74,14 @@ let M = function(e) {
       location_stack: s,
       load_duration_ms: Y.current
     })
-  }, [s, z]), (0, a.e7)([O.Z], () => O.Z.enabled)) ? (0, i.jsx)(g.Z, {}) : n ? (0, i.jsx)(_.c8, {}) : t === w.EZ.ApplicationStoreHome && K ? null == Q ? (0, i.jsx)("div", {
+  }, [s, z]), (0, a.e7)([j.Z], () => j.Z.enabled)) ? (0, i.jsx)(g.Z, {}) : n ? (0, i.jsx)(_.c8, {}) : t === w.EZ.ApplicationStoreHome && K ? null == Q ? (0, i.jsx)("div", {
     className: l()(L.container, L.loading),
     children: (0, i.jsx)(o.$jN, {})
   }) : (0, i.jsx)(h.Gt, {
-    value: M,
+    value: B,
     children: (0, i.jsx)(Z.Z, {})
-  }) : B && H && !z ? (0, i.jsx)(h.Gt, {
-    value: M,
+  }) : M && H && !z ? (0, i.jsx)(h.Gt, {
+    value: B,
     children: (0, i.jsx)(D.Z, {
       entrypoint: t
     })

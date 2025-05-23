@@ -77,18 +77,18 @@ function h(e) {
     } = x,
     C = p(x, ["onFocus"]),
     {
-      id: j
+      id: O
     } = (0, l.f$)(),
-    O = r.useRef(null),
+    j = r.useRef(null),
     [S, v] = r.useState(!1),
     T = null != b;
   r.useLayoutEffect(() => {
-    if (T) return (0, s.N)(j, e => {
+    if (T) return (0, s.N)(O, e => {
       v(e === t)
     })
-  }, [t, j, T]);
+  }, [t, O, T]);
   let N = e => (0, i.jsxs)(d.kF, g(m({}, e, C, _), {
-    ref: O,
+    ref: j,
     role: "button",
     look: o.zxk.Looks.BLANK,
     size: o.zxk.Sizes.NONE,
@@ -117,7 +117,7 @@ function h(e) {
     })]
   }));
   return T ? (0, i.jsx)(o.yRy, {
-    targetElementRef: O,
+    targetElementRef: j,
     spacing: 0,
     renderPopout: b,
     shouldShow: S,

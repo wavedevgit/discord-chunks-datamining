@@ -51,8 +51,8 @@ let E = e => {
       className: n,
       variant: s = f.gM.PERKS_DISCOVERABILITY,
       noBackground: C = !1,
-      leftAlignHeaders: j = !1,
-      showAllPerksButton: O,
+      leftAlignHeaders: O = !1,
+      showAllPerksButton: j,
       headerClassname: S,
       isFullScreen: v = !0,
       shouldAutoScroll: T = !1
@@ -74,17 +74,17 @@ let E = e => {
       k = (0, h.Z)(),
       L = (0, b.mN)(),
       {
-        fractionalState: M
+        fractionalState: B
       } = (0, c.Z)(),
-      B = (0, d.W)(),
+      M = (0, d.W)(),
       U = (0, b.ZM)({
         perksCards: k,
         variant: s,
         isFullScreen: v,
         showTenureCard: null == I ? void 0 : I.showCard,
         isPremiumSubscriber: L,
-        fractionalState: M,
-        isInReverseTrial: B
+        fractionalState: B,
+        isInReverseTrial: M
       }),
       V = U.some(e => null != e.pillText),
       [G, F] = r.useState(null),
@@ -97,29 +97,29 @@ let E = e => {
       }), (0, i.jsxs)("div", {
         ref: N,
         className: l()(x.section, {
-          [x.centerAlignSection]: !j,
-          [x.leftAlignSection]: j
+          [x.centerAlignSection]: !O,
+          [x.leftAlignSection]: O
         }, n),
         children: [(0, i.jsx)(E, {
-          showAllPerksButton: O,
-          leftAlignHeaders: j,
+          showAllPerksButton: j,
+          leftAlignHeaders: O,
           title: w.title,
           headerClassname: S
         }), (0, i.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
           className: l()(x.subtitle, {
-            [x.subtitle]: null == O || j,
-            [x.subtitleWithButton]: null != O && !j,
-            [x.fullWidth]: A || j,
+            [x.subtitle]: null == j || O,
+            [x.subtitleWithButton]: null != j && !O,
+            [x.fullWidth]: A || O,
             [x.moreSubtitleMargin]: V,
-            [x.leftAlignSubtitle]: j,
-            [x.centerAlignSubtitle]: !j
+            [x.leftAlignSubtitle]: O,
+            [x.centerAlignSubtitle]: !O
           }),
           children: w.subtitle
-        }), !j && null != O && (0, i.jsx)("div", {
+        }), !O && null != j && (0, i.jsx)("div", {
           className: x.showAllPerksButtonCenter,
-          children: O
+          children: j
         }), (0, i.jsx)("div", {
           className: l()({
             [x.cardContainer]: v,

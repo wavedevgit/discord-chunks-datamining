@@ -1,6 +1,6 @@
 /** Chunk was on 998 **/
 n.d(t, {
-  Z: () => O
+  Z: () => j
 }), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
 var i = n(255367),
   r = n(73800),
@@ -40,7 +40,7 @@ function C(e) {
   return e
 }
 
-function j(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,13 +53,13 @@ function j(e, t) {
   }), e
 }
 
-function O() {
+function j() {
   var e;
   let [t, n] = (0, r.useState)(!1), [s, l] = (0, r.useState)(!1), [a, c] = (0, r.useState)(null), m = (0, g.ZP)(e => e.toolsCache), {
     setToolsCache: f,
     removeToolsCache: _
   } = (0, g.L3)(), {
-    setImgCache: O
+    setImgCache: j
   } = (0, g.W_)(), A = (0, r.useCallback)(e => {
     let t = m[e];
     null != t && c({
@@ -70,12 +70,12 @@ function O() {
       src: e,
       palette: p.jD,
       preview: !0
-    } : j(C({}, t), {
+    } : O(C({}, t), {
       src: e,
       preview: !0
     }))
   }, [m]), P = (0, r.useCallback)(e => {
-    c(t => null == t ? null : j(C({}, t), {
+    c(t => null == t ? null : O(C({}, t), {
       palette: e,
       preview: !0
     }))
@@ -146,7 +146,7 @@ function O() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               i = await n.arrayBuffer();
-            O(t, t, (0, h.xh)(i)), f(t, t, p.jD)
+            j(t, t, (0, h.xh)(i)), f(t, t, p.jD)
           }
         }), (0, i.jsx)("div", {
           className: E.uploadedArea,

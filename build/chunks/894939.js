@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(63063),
   E = n(581883),
   C = n(738486),
-  j = n(918257),
-  O = n(970813),
+  O = n(918257),
+  j = n(970813),
   S = n(726985),
   v = n(981631),
   T = n(710111),
@@ -47,9 +47,9 @@ function P(e) {
   } = e, n = (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(g.F, {
       setting: S.s6.VOICE_AND_VIDEO_SOUNDBOARD,
-      children: [(0, i.jsx)(j.Z, {
+      children: [(0, i.jsx)(O.Z, {
         refreshStyles: t
-      }), (0, i.jsx)(O.Z, {
+      }), (0, i.jsx)(j.Z, {
         refreshStyles: t
       })]
     }), (0, i.jsxs)(g.F, {
@@ -75,12 +75,12 @@ function R(e) {
     refreshStyles: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(), [s, c] = r.useState(T.hY), g = (0, b.tT)(s), E = A(g), j = (null == g ? void 0 : g.type) === b.zx.GLOBAL, O = (0, a.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == E;
+  } = (0, d.ZP)(), [s, c] = r.useState(T.hY), g = (0, b.tT)(s), E = A(g), O = (null == g ? void 0 : g.type) === b.zx.GLOBAL, j = (0, a.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == E;
   r.useEffect(() => {
-    O && (0, f.tt)({
+    j && (0, f.tt)({
       location: n
     })
-  }, [O, n]), r.useEffect(() => {
+  }, [j, n]), r.useEffect(() => {
     (0, p.w)()
   }, []);
   let S = r.useCallback((e, t) => {
@@ -127,11 +127,11 @@ function R(e) {
         forcedDivider: !t,
         children: [(0, i.jsx)(_.Z, {
           sound: E,
-          isGlobal: j,
+          isGlobal: O,
           onSelect: e => {
             null == e ? (0, f.aC)(s, n) : (0, f.SZ)(s, e, n)
           }
-        }), O && (0, i.jsx)(o.Wn, {
+        }), j && (0, i.jsx)(o.Wn, {
           className: I.notice,
           messageType: o.QYI.WARNING,
           children: N.intl.string(N.t.WkPsFR)

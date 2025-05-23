@@ -1,7 +1,7 @@
 /** Chunk was on 998 **/
 n.d(t, {
   NA: () => L,
-  ZP: () => M,
+  ZP: () => B,
   y$: () => k
 });
 var i, r, s = n(230711),
@@ -21,8 +21,8 @@ var i, r, s = n(230711),
   x = n(612253),
   E = n(872532),
   C = n(91342),
-  j = n(181708),
-  O = n(290650),
+  O = n(181708),
+  j = n(290650),
   S = n(751125),
   v = n(357003),
   T = n(904505),
@@ -55,7 +55,7 @@ function w(e) {
 }
 var k = ((i = {}).SMALL = "small", i.MEDIUM = "medium", i.LARGE = "large", i),
   L = ((r = {}).NEW_APP_STYLES = "newAppStyles", r.REFERRAL_PROGRAM = "referralProgram", r.SERVER_PROFILES = "serverProfiles", r.SHOW_YOUR_STYLE = "showYourStyle", r.YOUR_SPACE = "yourSpace", r.EMOJIS = "emojis", r.NO_LIMITS = "noLimits", r.PERMADECOS = "permadecos", r);
-let M = () => {
+let B = () => {
   let {
     analyticsLocations: e
   } = (0, a.ZP)(l.Z.PREMIUM_MARKETING_BENTO_BOX), t = (0, o.Z)({
@@ -134,7 +134,7 @@ let M = () => {
         title: p.intl.string(p.t.zY5PPT),
         description: p.intl.string(p.t.R5Xag4),
         previewImage: f,
-        videoUrl: n ? C.ZP : j.ZP,
+        videoUrl: n ? C.ZP : O.ZP,
         size: "medium"
       },
       noLimits: {
@@ -142,7 +142,7 @@ let M = () => {
         title: p.intl.string(p.t["6b3ydH"]),
         description: p.intl.string(p.t["Y+IJys"]),
         previewImage: b,
-        videoUrl: n ? O.ZP : S.ZP,
+        videoUrl: n ? j.ZP : S.ZP,
         size: "medium"
       }
     }

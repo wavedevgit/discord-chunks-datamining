@@ -22,8 +22,8 @@ var i = n(255367),
   x = n(355467),
   E = n(239091),
   C = n(230711),
-  j = n(410575),
-  O = n(941129),
+  O = n(410575),
+  j = n(941129),
   S = n(634894),
   v = n(586902),
   T = n(980591),
@@ -38,8 +38,8 @@ var i = n(255367),
   w = n(1585),
   k = n(304761),
   L = n(865427),
-  M = n(358221),
-  B = n(571250),
+  B = n(358221),
+  M = n(571250),
   U = n(628581),
   V = n(55311),
   G = n(575175),
@@ -76,8 +76,8 @@ var i = n(255367),
   ex = n(212704),
   eE = n(14357),
   eC = n(763296),
-  ej = n(640806),
-  eO = n(768419),
+  eO = n(640806),
+  ej = n(768419),
   eS = n(184301),
   ev = n(52538),
   eT = n(670188),
@@ -92,8 +92,8 @@ var i = n(255367),
   ew = n(306609),
   ek = n(199902),
   eL = n(314897),
-  eM = n(592125),
-  eB = n(831506),
+  eB = n(592125),
+  eM = n(831506),
   eU = n(819640),
   eV = n(131951),
   eG = n(19780),
@@ -178,7 +178,7 @@ function td(e) {
     size: (0, w.y9)(_.EFr.SIZE_32)
   }), E = (0, _.dQu)(_.TVs.modules.guildbar.AVATAR_SIZE), {
     updateOpenPopoutRef: C,
-    highlightBadge: O,
+    highlightBadge: j,
     setHighlightBadge: S
   } = function() {
     let e = r.useRef(null),
@@ -206,7 +206,7 @@ function td(e) {
       setHighlightBadge: i
     }
   }(), v = (0, ec.A)(m);
-  return null == a ? null : (0, i.jsx)(j.Z, {
+  return null == a ? null : (0, i.jsx)(O.Z, {
     object: e7.qAy.AVATAR,
     children: (0, i.jsx)(eT.Z, {
       user: a,
@@ -224,7 +224,7 @@ function td(e) {
         } = e;
         return (0, i.jsx)(ea.Z, {
           currentUser: a,
-          highlightBadge: O,
+          highlightBadge: j,
           openedAt: t,
           onClose: () => {
             null == n || n()
@@ -684,13 +684,13 @@ function tm(e) {
     handleOpenSettingsContextMenu: x,
     dismissibleContents: E,
     nameplate: C,
-    accountContainerRef: j
-  } = e, O = (0, ec.A)(C);
+    accountContainerRef: O
+  } = e, j = (0, ec.A)(C);
   return (0, i.jsxs)("div", {
     className: tn.buttons,
-    style: O,
+    style: j,
     children: [(0, i.jsx)(th, {
-      accountContainerRef: j,
+      accountContainerRef: O,
       selfMute: n,
       serverMute: s,
       suppress: a,
@@ -753,9 +753,9 @@ function tg() {
       decoration: "never"
     }),
     p = (0, d.e7)([ez.Z], () => ez.Z.hidePersonalInformation),
-    h = (0, d.e7)([eG.Z, eM.Z], () => {
+    h = (0, d.e7)([eG.Z, eB.Z], () => {
       let e = eG.Z.getChannelId();
-      return null != e ? eM.Z.getChannel(e) : null
+      return null != e ? eB.Z.getChannel(e) : null
     }),
     {
       mute: f,
@@ -764,7 +764,7 @@ function tg() {
     } = (0, ey.Z)(h),
     {
       selfDeaf: C,
-      deaf: j
+      deaf: O
     } = (0, eI.Z)(h),
     T = (0, d.e7)([k.C], () => {
       var e;
@@ -772,14 +772,14 @@ function tg() {
     }),
     I = (0, d.e7)([eY.ZP], () => eY.ZP.getPremiumTypeSubscription()),
     y = (0, d.e7)([eV.Z], () => eV.Z.getSpeakingWhileMuted()),
-    A = (0, d.e7)([M.Z], () => M.Z.isFullscreenInContext()),
+    A = (0, d.e7)([B.Z], () => B.Z.isFullscreenInContext()),
     P = (0, d.e7)([eU.Z], () => eU.Z.hasLayers()),
     Z = (0, _.s9z)(_.JQI) || P || e1.s.isDisallowPopupsSet() || A,
     w = (0, em.b)(),
-    B = (0, d.e7)([et.Z], () => null != et.Z.getAwaitingRemoteSessionInfo()),
+    M = (0, d.e7)([et.Z], () => null != et.Z.getAwaitingRemoteSessionInfo()),
     U = (0, d.e7)([eF.Z], () => eF.Z.getGuildId()),
     V = (0, e_.D)(),
-    G = (0, O.u)(),
+    G = (0, j.u)(),
     F = e0.ZP.canUsePremiumGuildMemberProfile(t),
     H = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e4.rL,
     {
@@ -838,13 +838,13 @@ function tg() {
     ec = (0, eb.Ws)({
       location: te.dr.CONFLICT_CHECKS
     }),
-    ed = (0, d.e7)([eO.Z, eW.default, eB.Z], () => {
-      let e, t = eO.Z.getSyncingWith(),
-        n = eO.Z.getActivity(),
+    ed = (0, d.e7)([ej.Z, eW.default, eM.Z], () => {
+      let e, t = ej.Z.getSyncingWith(),
+        n = ej.Z.getActivity(),
         i = [];
       if (null != t ? e = t.partyId : null != n && null != n.party && null != n.party.id && (e = n.party.id), null != e) {
         var r;
-        i = o()(Array.from(null != (r = eB.Z.getParty(e)) ? r : [])).map(e => eW.default.getUser(e)).filter(e$.lm).value()
+        i = o()(Array.from(null != (r = eM.Z.getParty(e)) ? r : [])).map(e => eW.default.getUser(e)).filter(e$.lm).value()
       }
       return i.length > 1
     }),
@@ -871,7 +871,7 @@ function tg() {
       premiumSubscription: I,
       selfDeaf: C,
       selfMute: b,
-      serverDeaf: j,
+      serverDeaf: O,
       serverMute: f,
       speaking: m,
       speakingWhileMuted: y,
@@ -879,7 +879,7 @@ function tg() {
       streaming: l,
       suppress: E,
       webBuildOverride: T,
-      awaitingRemote: B,
+      awaitingRemote: M,
       isEligibleForPomelo: w,
       voiceActivityStatusEnabled: z,
       nameplate: ea,
@@ -913,7 +913,7 @@ function tp(e) {
       markAsDismissed: h
     }) : p === u.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE ? () => (0, i.jsx)(eE.Z, {
       markAsDismissed: h
-    }) : p === u.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, i.jsx)(ej.Z, {
+    }) : p === u.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, i.jsx)(eO.Z, {
       markAsDismissed: h
     }) : p === u.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, i.jsx)(ev.Z, {}) : () => (0, i.jsx)(i.Fragment, {}),
     children: () => (0, i.jsx)(e6.Z, ts(tr({
@@ -948,15 +948,15 @@ function th(e) {
     onMouseLeave: x,
     onClick: E,
     onContextMenu: C,
-    nameplate: j,
-    accountContainerRef: O
+    nameplate: O,
+    accountContainerRef: j
   } = e, S = t || s || n, v = r.useRef(null), T = r.useRef(null), N = (0, p.O)(S ? "unmute" : "mute"), I = (0, h.P)(S ? "unmute" : "mute"), {
     activeVoice: y
   } = (0, eR.o)(), A = null != y, P = (0, eP.z)(y), Z = (0, d.e7)([eG.Z], () => eG.Z.isConnected()), {
     Component: w,
     events: k,
     play: L
-  } = A ? I : N, M = n || s ? _.v0G : w, B = null != o ? o : (0, U.Z)(t, n, s, a), {
+  } = A ? I : N, B = n || s ? _.v0G : w, M = null != o ? o : (0, U.Z)(t, n, s, a), {
     analyticsLocations: V
   } = (0, D.ZP)(R.Z.AUDIO_INPUT_BUTTON), G = (0, eA.Hu)({
     location: R.Z.AUDIO_INPUT_BUTTON,
@@ -986,17 +986,17 @@ function th(e) {
       ref: v,
       className: tn.micButtonParent,
       children: [(0, i.jsx)(e6.Z, {
-        tooltipText: B,
+        tooltipText: M,
         tooltipColor: u,
         tooltipForceOpen: m,
-        plated: null != j,
+        plated: null != O,
         onMouseEnter: () => {
           f(), k.onMouseEnter()
         },
         onMouseLeave: () => {
           x(), k.onMouseLeave()
         },
-        icon: (0, i.jsx)(M, {
+        icon: (0, i.jsx)(B, {
           size: "custom",
           width: 20,
           height: 20,
@@ -1014,7 +1014,7 @@ function th(e) {
         "aria-checked": S,
         disabled: a
       }), G && (0, i.jsx)(_.yRy, {
-        targetElementRef: O,
+        targetElementRef: j,
         position: "top",
         align: "left",
         nudgeAlignIntoViewport: !1,
@@ -1060,7 +1060,7 @@ function th(e) {
               canBeShown: !s,
               children: (e, t) => (0, i.jsx)(e6.Z, tr({
                 ref: T,
-                plated: null != j,
+                plated: null != O,
                 tooltipForceOpen: Y,
                 tooltipColor: Y ? _.FGA.GREEN : void 0,
                 tooltipContentClassName: Y ? tn.voiceFilterWarning : void 0,
@@ -1128,7 +1128,7 @@ function tf(e) {
     value: x,
     children: (0, i.jsx)(e6.Z, {
       plated: null != d,
-      tooltipText: (0, B.Z)(t, n, s),
+      tooltipText: (0, M.Z)(t, n, s),
       onMouseEnter: h,
       onMouseLeave: f,
       icon: (0, i.jsx)(b, {
