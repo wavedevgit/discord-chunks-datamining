@@ -184,7 +184,7 @@ function et(e) {
                   nicknameIcons: (0, r.jsx)(U.Z, {
                     userId: n.id
                   }),
-                  nicknameVariant: "heading-xxl/semibold",
+                  nicknameVariant: "heading-xxl/medium",
                   pronouns: null == ej ? void 0 : ej.pronouns,
                   tagClassName: ee.profileUsernameTag,
                   tags: (0, r.jsx)(S.Z, {
