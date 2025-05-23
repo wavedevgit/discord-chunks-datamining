@@ -143,7 +143,7 @@ function Y(e) {
   let {
     message: t
   } = e;
-  null != t.nonce && x.add(t.nonce)
+  (null == t ? void 0 : t.nonce) != null && x.add(t.nonce)
 }
 
 function W(e) {

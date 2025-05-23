@@ -75,31 +75,32 @@ let O = new j(o.Z, {
     m = {}
   },
   UPLOAD_START: function(e) {
-    var t, n, i;
+    var t, n, i, r;
     let {
-      channelId: r,
-      file: o,
-      uploader: l,
-      message: a
+      channelId: o,
+      file: l,
+      uploader: a,
+      message: m
     } = e;
-    if (l._aborted || l._errored) return;
-    let m = null != (t = u[r]) ? t : c;
-    d[o.id] = l, u[r] = [...m, o], h[o.id] = a;
+    if (a._aborted || a._errored) return;
+    let f = null != (t = u[o]) ? t : c;
+    if (d[l.id] = a, u[o] = [...f, l], null == m) return;
+    h[l.id] = m;
     let {
-      items: f
-    } = o;
-    null != f && (p[a.id] = (n = s({}, o), i = i = {
-      items: f
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      items: g
+    } = l;
+    null != g && (p[m.id] = (i = s({}, l), r = r = {
+      items: g
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var i = Object.getOwnPropertySymbols(e);
         n.push.apply(n, i)
       }
       return n
-    })(Object(i)).forEach(function(e) {
-      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-    }), n)), a.nonce
+    })(Object(r)).forEach(function(e) {
+      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(r, e))
+    }), i)), null != (n = m.nonce) || m.id
   },
   UPLOAD_COMPRESSION_PROGRESS: function(e) {
     let {
@@ -152,7 +153,11 @@ let O = new j(o.Z, {
       channelId: t,
       file: n
     } = e, i = h[n.id];
-    null != i && i.nonce, b(t, n)
+    if (null != i) {
+      var r;
+      null != (r = i.nonce) || i.id
+    }
+    b(t, n)
   },
   UPLOAD_RESTORE_FAILED_UPLOAD: function(e) {
     let {
