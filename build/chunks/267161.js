@@ -42,7 +42,7 @@ var r = n(255367),
   U = n(127941),
   G = n(374815);
 
-function V(e) {
+function B(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function V(e) {
   return e
 }
 
-function B(e, t) {
+function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -166,7 +166,7 @@ let z = i.memo(function() {
       children: i => (0, r.jsx)(w.T, {
         className: i,
         leading: t && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(c.P3F, B(V({}, e), {
+          children: [(0, r.jsx)(c.P3F, V(B({}, e), {
             className: G.button,
             onClick: () => {
               H.setState({
@@ -192,7 +192,7 @@ let z = i.memo(function() {
           }), (0, r.jsx)(f.Z, {
             canShowReminder: !0,
             className: G.button
-          }), null === o && (0, r.jsx)(C.Z, B(V({}, t ? {} : e), {
+          }), null === o && (0, r.jsx)(C.Z, V(B({}, t ? {} : e), {
             className: G.button
           })), n ? (0, r.jsx)(O.Z, {
             className: G.button

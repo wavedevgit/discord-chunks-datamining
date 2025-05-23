@@ -62,10 +62,10 @@ function C() {
       })
     }),
     G = d.Z.useField("fetchedQuery"),
-    V = i.useCallback(e => {
+    B = i.useCallback(e => {
       T(e), w && x()
     }, [w, x, T]),
-    B = i.useMemo(() => w ? S.filter(e => {
+    V = i.useMemo(() => w ? S.filter(e => {
       let {
         id: t
       } = e;
@@ -100,9 +100,9 @@ function C() {
         icon: l.QTo
       }), !w && (0, r.jsx)(c.Z, {
         className: U,
-        tabs: B,
+        tabs: V,
         selectedTab: w ? null : N,
-        onTabSelect: V,
+        onTabSelect: B,
         onAvailableWidthChange: D
       }), w && (0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
