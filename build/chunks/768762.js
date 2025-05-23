@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r, o, i = n(255367),
   c = n(73800),
-  l = n(120356),
-  a = n.n(l),
+  a = n(120356),
+  l = n.n(a),
   s = n(481060),
   d = n(974393);
 let u = {
@@ -29,7 +29,7 @@ class p extends(o = c.PureComponent) {
     return (0, i.jsx)(s.wj7, {
       size: "md",
       color: "currentColor",
-      className: a()(d.__invalid_arrow, t, {
+      className: l()(d.__invalid_arrow, t, {
         [f[e]]: !0
       })
     })

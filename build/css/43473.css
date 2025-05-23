@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: fa46b822d37d778b
+  Original File Name: 0ff43a3683918cfe
 **/
 .scroller__95bea {
     display: flex;
@@ -845,6 +845,15 @@
     gap: 2px
 }
 
+.accountNameText__9bfb9 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
+    white-space: nowrap
+}
+
 .platformUrlAnchor__9bfb9:hover {
     -webkit-text-decoration: underline var(--text-default);
     text-decoration: underline var(--text-default)
@@ -1305,4 +1314,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=fa46b822d37d778b.css.map*/
+/*# sourceMappingURL=0ff43a3683918cfe.css.map*/

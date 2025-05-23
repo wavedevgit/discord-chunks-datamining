@@ -7,8 +7,8 @@ n(73800);
 var o = n(481060),
   i = n(572691),
   c = n(906732),
-  l = n(705556),
-  a = n(30556),
+  a = n(705556),
+  l = n(30556),
   s = n(664794),
   d = n(522182),
   u = n(821706),
@@ -25,14 +25,14 @@ function m(e) {
   } = e, {
     newestAnalyticsLocation: y
   } = (0, c.ZP)(), {
-    gameFriends: h,
-    hasOutgoingPendingGameFriends: x,
+    gameFriends: x,
+    hasOutgoingPendingGameFriends: h,
     hasIncomingPendingGameFriends: g
   } = (0, f.H)({
     userId: t.id
-  }), j = h.length > 0 || x || g;
+  }), j = x.length > 0 || h || g;
   return b === p.OGo.BLOCKED ? null : t.id === n.id ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.Z, {
+    children: [(0, r.jsx)(a.Z, {
       user: t,
       guildId: m,
       onClose: _
@@ -45,7 +45,7 @@ function m(e) {
       themeColor: "secondary"
     })]
   }) : t.bot ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Z, {
+    children: [(0, r.jsx)(l.Z, {
       type: "text",
       userId: t.id,
       onClose: i.Z.popAll,
@@ -57,7 +57,7 @@ function m(e) {
       themeColor: "secondary"
     })]
   }) : b === p.OGo.FRIEND || b === p.OGo.PENDING_OUTGOING || b === p.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Z, {
+    children: [(0, r.jsx)(l.Z, {
       type: "text",
       userId: t.id,
       color: o.zxk.Colors.BRAND,
@@ -77,7 +77,7 @@ function m(e) {
       themeColor: "secondary"
     })]
   }) : b === p.OGo.NONE && j ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Z, {
+    children: [(0, r.jsx)(l.Z, {
       type: "text",
       userId: t.id,
       onClose: i.Z.popAll,
@@ -87,12 +87,12 @@ function m(e) {
       user: t,
       analyticsLocation: y,
       themeColor: "secondary",
-      gameFriends: h,
+      gameFriends: x,
       tooltipPosition: "top",
       tooltipAlign: "center",
       shouldShowTooltip: !0,
       hasIncomingPendingGameFriends: g,
-      hasOutgoingPendingGameFriends: x
+      hasOutgoingPendingGameFriends: h
     }), (0, r.jsx)(s.Z, {
       type: "icon",
       user: t,
@@ -106,7 +106,7 @@ function m(e) {
       analyticsLocation: y,
       color: o.zxk.Colors.BRAND,
       autoFocus: !0
-    }), (0, r.jsx)(a.Z, {
+    }), (0, r.jsx)(l.Z, {
       type: "icon",
       userId: t.id,
       onClose: i.Z.popAll,

@@ -6,8 +6,8 @@ var r = n(255367),
   o = n(73800),
   i = n(481060),
   c = n(81897),
-  l = n(906732),
-  a = n(566898),
+  a = n(906732),
+  l = n(566898),
   s = n(785717),
   d = n(806729),
   u = n(857302),
@@ -23,9 +23,9 @@ function _(e) {
     channelId: _
   } = e, {
     analyticsLocations: y
-  } = (0, l.ZP)(), {
-    context: h,
-    trackUserProfileAction: x
+  } = (0, a.ZP)(), {
+    context: x,
+    trackUserProfileAction: h
   } = (0, s.KZ)(), {
     mutualFriends: g,
     mutualFriendsCount: j
@@ -39,10 +39,10 @@ function _(e) {
       length: null != j ? j : 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: b.loadingItem,
-      children: [(0, r.jsx)(a.ZT, {
+      children: [(0, r.jsx)(l.ZT, {
         width: 40,
         opacity: .08
-      }), (0, r.jsx)(a.ZT, {
+      }), (0, r.jsx)(l.ZT, {
         width: 135,
         opacity: .08
       })]
@@ -59,7 +59,7 @@ function _(e) {
         channelId: _,
         onSelect: () => {
           var e, t;
-          x({
+          h({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -78,7 +78,7 @@ function _(e) {
               })
             }
             return e
-          }({}, h), t = t = {
+          }({}, x), t = t = {
             userId: o.id,
             sourceAnalyticsLocations: y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

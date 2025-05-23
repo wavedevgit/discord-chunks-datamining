@@ -6,8 +6,8 @@ var r = n(255367),
   o = n(73800),
   i = n(120356),
   c = n.n(i),
-  l = n(366594),
-  a = n(442837),
+  a = n(366594),
+  l = n(442837),
   s = n(481060),
   d = n(666520),
   u = n(727637),
@@ -17,16 +17,16 @@ var r = n(255367),
   b = n(368326),
   _ = n(429467),
   y = n(320582),
-  h = n(246016),
-  x = n(680295),
+  x = n(246016),
+  h = n(680295),
   g = n(189156),
   j = n(430824),
   O = n(699516),
   I = n(246946),
   v = n(5192),
-  P = n(111361),
-  A = n(785717),
-  N = n(221292),
+  N = n(111361),
+  P = n(785717),
+  A = n(221292),
   T = n(687158),
   Z = n(771362),
   C = n(510659),
@@ -66,15 +66,15 @@ function et(e) {
     roleId: eo,
     sessionId: ei,
     initialSection: ec,
-    initialSubsection: el,
-    transitionState: ea,
+    initialSubsection: ea,
+    transitionState: el,
     customStatusPrompt: es,
     openedAt: ed,
     onClose: eu,
     sourceAnalyticsLocations: ef = []
   } = e, {
     analyticsLocations: ep
-  } = (0, m.ZP)([...ef, p.Z.USER_PROFILE_MODAL_V2]), em = (0, A.ZB)({
+  } = (0, m.ZP)([...ef, p.Z.USER_PROFILE_MODAL_V2]), em = (0, P.ZB)({
     layout: "MODAL_V2",
     userId: n.id,
     sourceSessionId: ei,
@@ -83,12 +83,12 @@ function et(e) {
     channelId: en,
     messageId: er,
     roleId: eo
-  }), eb = o.useRef(null), e_ = (0, u.Z)(eb), ey = (0, C.$m)(), eh = (0, s.q_F)({
+  }), eb = o.useRef(null), e_ = (0, u.Z)(eb), ey = (0, C.$m)(), ex = (0, s.q_F)({
     opacity: +(null != ey.interactionType),
     config: {
       duration: 150
     }
-  }), ex = (0, a.e7)([j.Z], () => null != et ? j.Z.getGuild(et) : null), eg = o.useMemo(() => null != et ? {
+  }), eh = (0, l.e7)([j.Z], () => null != et ? j.Z.getGuild(et) : null), eg = o.useMemo(() => null != et ? {
     [et]: [n.id]
   } : {}, [et, n.id]);
   (0, f.$)(eg);
@@ -96,31 +96,31 @@ function et(e) {
     {
       relationshipType: eO,
       originApplicationId: eI
-    } = (0, a.cj)([O.Z], () => ({
+    } = (0, l.cj)([O.Z], () => ({
       relationshipType: O.Z.getRelationshipType(n.id),
       originApplicationId: O.Z.getOriginApplicationId(n.id)
     })),
-    ev = (0, a.e7)([I.Z], () => I.Z.hidePersonalInformation),
-    eP = null == ej ? void 0 : ej.getBannerURL({
+    ev = (0, l.e7)([I.Z], () => I.Z.hidePersonalInformation),
+    eN = null == ej ? void 0 : ej.getBannerURL({
       canAnimate: !1,
       size: 1024
     }),
-    eA = (0, b.p)({
+    eP = (0, b.p)({
       location: "UserProfileModalV2"
     }),
-    eN = o.useMemo(() => null != es ? es : (0, _.Z)(), [es]),
+    eA = o.useMemo(() => null != es ? es : (0, _.Z)(), [es]),
     eT = (0, z.Z)({
       user: n,
       currentUser: i
     }),
-    eZ = (0, h.Y)({
+    eZ = (0, x.Y)({
       userId: n.id
     }),
     eC = (0, y.vh)(n.id),
     ew = (0, Z.Z)(n.id);
   return (0, r.jsx)(m.Gt, {
     value: ep,
-    children: (0, r.jsx)(A.Mt, {
+    children: (0, r.jsx)(P.Mt, {
       value: em,
       openedAt: ed,
       fetchStartedAt: null == ej ? void 0 : ej.fetchStartedAt,
@@ -131,20 +131,20 @@ function et(e) {
         children: (0, r.jsx)(s.Y0X, {
           hideShadow: !0,
           className: ee.root,
-          transitionState: ea,
+          transitionState: el,
           "aria-label": $.intl.string($.t["3N/J2t"]),
           children: (0, r.jsxs)(V.Z, {
             ref: eb,
             user: n,
             displayProfile: ej,
             themeType: J.lY.MODAL_V2,
-            children: [null != eP && (0, r.jsx)("div", {
+            children: [null != eN && (0, r.jsx)("div", {
               className: ee.backgroundImage,
               style: {
-                backgroundImage: "url(".concat(eP, ")")
+                backgroundImage: "url(".concat(eN, ")")
               }
-            }), null != ey.interactionType && (0, r.jsx)(l.animated.div, {
-              style: eh,
+            }), null != ey.interactionType && (0, r.jsx)(a.animated.div, {
+              style: ex,
               className: ee.backdrop
             }), (0, r.jsxs)("div", {
               className: ee.profile,
@@ -171,8 +171,8 @@ function et(e) {
                   guildId: et,
                   channelId: en,
                   themeType: J.lY.MODAL_V2,
-                  hasEntered: ea === s.Dvm.ENTERED,
-                  prompt: eA && n.id === i.id ? eN : null
+                  hasEntered: el === s.Dvm.ENTERED,
+                  prompt: eP && n.id === i.id ? eA : null
                 })]
               }), (0, r.jsxs)("div", {
                 className: ee.profileBody,
@@ -180,7 +180,7 @@ function et(e) {
                   user: n,
                   onClose: eu,
                   className: ee.profileSection,
-                  nickname: v.ZP.useName(null == ex ? void 0 : ex.id, en, n),
+                  nickname: v.ZP.useName(null == eh ? void 0 : eh.id, en, n),
                   nicknameIcons: (0, r.jsx)(U.Z, {
                     userId: n.id
                   }),
@@ -232,7 +232,7 @@ function et(e) {
                   })
                 }), n.id === i.id && (0, r.jsx)(D.Z, {
                   className: ee.profileSection,
-                  isPremiumUser: (0, P.I5)(i),
+                  isPremiumUser: (0, N.I5)(i),
                   onInteraction: eu
                 }), (0, r.jsx)(R.Z, {
                   user: n,
@@ -264,29 +264,29 @@ function et(e) {
                       guildId: null == ej ? void 0 : ej.guildId,
                       tooltipDelay: J.vB
                     })
-                  }), null != ex && (0, r.jsx)(Y.Z, {
+                  }), null != eh && (0, r.jsx)(Y.Z, {
                     user: n,
                     currentUser: i,
-                    guild: ex,
+                    guild: eh,
                     headingClassName: ee.profileHeading,
                     headingVariant: "text-xs/semibold",
                     headingColor: "none",
-                    scrollIntoView: el === J.Tb.ROLES
+                    scrollIntoView: ea === J.Tb.ROLES
                   }), ew.length > 0 && (0, r.jsx)(X.Z, {
                     heading: $.intl.string($.t.ZZ5jS0),
-                    scrollIntoView: el === J.Tb.CONNECTIONS,
+                    scrollIntoView: ea === J.Tb.CONNECTIONS,
                     children: (0, r.jsx)(K.Z, {
                       connections: ew,
                       userId: n.id
                     })
                   }), (0, r.jsx)(X.Z, {
                     heading: $.intl.string($.t["mQKv+v"]),
-                    scrollIntoView: el === J.Tb.NOTE,
+                    scrollIntoView: ea === J.Tb.NOTE,
                     children: (0, r.jsx)(d.Z, {
                       userId: n.id,
                       className: ee.profileNote,
-                      autoFocus: el === J.Tb.NOTE,
-                      onUpdate: () => (0, N.pQ)(function(e) {
+                      autoFocus: ea === J.Tb.NOTE,
+                      onUpdate: () => (0, A.pQ)(function(e) {
                         for (var t = 1; t < arguments.length; t++) {
                           var n = null != arguments[t] ? arguments[t] : {},
                             r = Object.keys(n);
@@ -309,7 +309,7 @@ function et(e) {
                     })
                   })]
                 })]
-              }), (null == ej ? void 0 : ej.profileEffectId) != null && (0, r.jsx)(x.Z, {
+              }), (null == ej ? void 0 : ej.profileEffectId) != null && (0, r.jsx)(h.Z, {
                 profileEffectId: null == ej ? void 0 : ej.profileEffectId,
                 isHovering: e_
               })]
@@ -321,7 +321,7 @@ function et(e) {
               channelId: en,
               items: eT,
               initialSection: ec,
-              initialSubsection: el,
+              initialSubsection: ea,
               onClose: eu
             })]
           })

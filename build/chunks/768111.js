@@ -6,8 +6,8 @@ var r = n(585305),
   o = n(806729),
   i = n(708108),
   c = n(146078),
-  l = n(228168),
-  a = n(388032);
+  a = n(228168),
+  l = n(388032);
 
 function s(e) {
   let {
@@ -17,17 +17,17 @@ function s(e) {
     mutualFriendsCount: s,
     mutualGuilds: d
   } = (0, o.Z)(t), u = null == d ? void 0 : d.length, f = (0, r.Z)(t), p = [{
-    text: a.intl.string(a.t.chq59f),
-    section: l.oh.ACTIVITY,
+    text: l.intl.string(l.t.chq59f),
+    section: a.oh.ACTIVITY,
     subsection: void 0
   }];
   return t.id !== (null == n ? void 0 : n.id) && f && (p.push({
     text: (0, i.Z)(s),
-    section: l.oh.MUTUAL_FRIENDS,
+    section: a.oh.MUTUAL_FRIENDS,
     subsection: void 0
   }), p.push({
     text: (0, c.Z)(u),
-    section: l.oh.MUTUAL_GUILDS,
+    section: a.oh.MUTUAL_GUILDS,
     subsection: void 0
   })), p
 }

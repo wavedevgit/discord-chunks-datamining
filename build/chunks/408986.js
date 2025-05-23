@@ -7,8 +7,8 @@ n(73800);
 var o = n(481060),
   i = n(37234),
   c = n(566898),
-  l = n(769654),
-  a = n(785717),
+  a = n(769654),
+  l = n(785717),
   s = n(806729),
   d = n(821179),
   u = n(264481),
@@ -20,7 +20,7 @@ function p(e) {
     onClose: n
   } = e, {
     trackUserProfileAction: p
-  } = (0, a.KZ)(), {
+  } = (0, l.KZ)(), {
     mutualGuilds: m,
     isFetching: b
   } = (0, s.Z)(t);
@@ -50,7 +50,7 @@ function p(e) {
         onSelect: () => {
           p({
             action: "PRESS_MUTUAL_GUILD"
-          }), (0, l.X)(o.id), n(), (0, i.xf)()
+          }), (0, a.X)(o.id), n(), (0, i.xf)()
         }
       }, o.id)
     }) : (0, r.jsx)(u.b0, {})
