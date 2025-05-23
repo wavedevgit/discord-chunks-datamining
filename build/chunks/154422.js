@@ -1,5 +1,4 @@
-/** Chunk was on 79826 **/
-"use strict";
+/** Chunk was on 68606 **/
 e.exports = {
   promotionalGiftMessage: "promotionalGiftMessage__6fbbd",
   promotionalGiftMessageText: "promotionalGiftMessageText__6fbbd",

@@ -1,4 +1,4 @@
-/** Chunk was on 79826 **/
+/** Chunk was on 60564 **/
 "use strict";
 n.r(e.exports = {
   standardSidebarView: "standardSidebarView__23e6b",
