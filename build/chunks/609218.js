@@ -98,7 +98,7 @@ function P(e) {
           }), U && (0, r.jsx)(O.Z, {
             affinities: M
           }), (0, r.jsx)(c.Text, {
-            variant: "text-sm/medium",
+            variant: "text-md/medium",
             color: "text-secondary",
             children: C
           })]
