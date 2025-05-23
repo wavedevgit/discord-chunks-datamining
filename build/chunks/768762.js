@@ -1,49 +1,43 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => p
+  Z: () => m
 });
-var r, i = n(255367),
-  o = n(73800),
-  a = n(120356),
-  s = n.n(a),
-  l = n(481060),
-  c = n(974393);
-
-function u(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: !0,
-    configurable: !0,
-    writable: !0
-  }) : e[t] = n, e
-}
-let d = {
+var r, o, i = n(255367),
+  c = n(73800),
+  l = n(120356),
+  a = n.n(l),
+  s = n(481060),
+  d = n(974393);
+let u = {
     UP: "up",
     RIGHT: "right",
     DOWN: "down",
     LEFT: "left"
   },
   f = {
-    [d.UP]: c.up,
-    [d.RIGHT]: c.right,
-    [d.DOWN]: c.down,
-    [d.LEFT]: c.left
+    [u.UP]: d.up,
+    [u.RIGHT]: d.right,
+    [u.DOWN]: d.down,
+    [u.LEFT]: d.left
   };
-class _ extends(r = o.PureComponent) {
+class p extends(o = c.PureComponent) {
   render() {
     let {
       direction: e,
       className: t
     } = this.props;
-    return (0, i.jsx)(l.wj7, {
+    return (0, i.jsx)(s.wj7, {
       size: "md",
       color: "currentColor",
-      className: s()(c.__invalid_arrow, t, {
+      className: a()(d.__invalid_arrow, t, {
         [f[e]]: !0
       })
     })
   }
-}
-u(_, "Directions", d);
-let p = _
+}(r = "Directions") in p ? Object.defineProperty(p, r, {
+  value: u,
+  enumerable: !0,
+  configurable: !0,
+  writable: !0
+}) : p[r] = u;
+let m = p

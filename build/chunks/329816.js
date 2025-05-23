@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => ey
+  Z: () => eE
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -46,29 +46,27 @@ var r = n(255367),
   Z = n(84615),
   H = n(429142),
   Y = n(813744),
-  W = n(311476),
-  K = n(746106),
-  z = n(210887),
-  q = n(978781),
-  Q = n(314897),
-  X = n(819640),
-  J = n(594174),
-  $ = n(451478),
-  ee = n(358085),
-  et = n(74538),
-  en = n(663993),
-  er = n(766127),
-  ei = n(823453),
-  eo = n(628123),
-  ea = n(436774),
-  es = n(686546),
-  el = n(950796),
-  ec = n(151851),
-  eu = n(981631),
-  ed = n(921944),
-  ef = n(325162);
+  W = n(746106),
+  K = n(210887),
+  z = n(314897),
+  q = n(819640),
+  Q = n(594174),
+  X = n(451478),
+  J = n(358085),
+  $ = n(74538),
+  ee = n(663993),
+  et = n(766127),
+  en = n(823453),
+  er = n(628123),
+  ei = n(436774),
+  eo = n(686546),
+  ea = n(950796),
+  es = n(151851),
+  el = n(981631),
+  ec = n(921944),
+  eu = n(325162);
 
-function e_(e, t, n) {
+function ed(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -77,20 +75,20 @@ function e_(e, t, n) {
   }) : e[t] = n, e
 }
 
-function ep(e) {
+function ef(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      e_(e, t, n[t])
+      ed(e, t, n[t])
     })
   }
   return e
 }
 
-function eh(e, t) {
+function e_(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -101,95 +99,86 @@ function eh(e, t) {
   return n
 }
 
-function em(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eh(Object(t)).forEach(function(n) {
+function ep(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : e_(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 n(167666), Promise.resolve().then(n.bind(n, 62883)).then(e => {
-  ee.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, !1) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, !1)
+  J.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, !1) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, !1)
 }), (0, f.E)({
   getDefaultLinkInterceptor: b.default
-}), (0, en.Un)({
+}), (0, ee.Un)({
   createPromise: () => Promise.all([n.e("50448"), n.e("80451"), n.e("30634"), n.e("33551")]).then(n.bind(n, 849493)),
   webpackId: 849493
-}), (0, en.Un)({
+}), (0, ee.Un)({
   createPromise: () => Promise.all([n.e("50448"), n.e("80451"), n.e("30634"), n.e("58493")]).then(n.bind(n, 80753)),
   webpackId: 80753
 });
-let eg = (0, en.Un)({
+let eh = (0, ee.Un)({
     createPromise: () => n.e("67110").then(n.bind(n, 177741)),
     webpackId: 177741
   }),
-  eE = (0, en.Un)({
+  em = (0, ee.Un)({
     createPromise: () => n.e("13474").then(n.bind(n, 420541)),
     webpackId: 420541
   }),
-  eb = i.memo(function(e) {
-    let t = (0, u.e7)([$.Z], () => $.Z.isFocused()),
-      n = (0, u.e7)([X.Z], () => X.Z.hasLayers()),
+  eg = i.memo(function(e) {
+    let t = (0, u.e7)([X.Z], () => X.Z.isFocused()),
+      n = (0, u.e7)([q.Z], () => q.Z.hasLayers()),
       i = (0, _.s9z)(_.$sL);
-    return (0, M.Q3)("ConnectedTitleBar") ? (0, r.jsx)(el.D, {
+    return (0, M.Q3)("ConnectedTitleBar") ? (0, r.jsx)(ea.D, {
       fixed: !0,
-      show: n || i || !Q.default.isAuthenticated()
-    }) : (0, r.jsx)(ec.Z, em(ep({}, e), {
+      show: n || i || !z.default.isAuthenticated()
+    }) : (0, r.jsx)(es.Z, ep(ef({}, e), {
       focused: t
     }))
   }),
-  ey = function(e) {
+  eE = function(e) {
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
     } = e, {
       pathname: o
-    } = (0, l.TH)(), f = (0, ee.getPlatform)(), b = c.tq || c.Em, Q = (0, u.e7)([z.Z], () => z.Z.darkSidebar ? eu.BRd.DARK : void 0), $ = (0, M.Q3)("AppSkeleton"), en = (0, u.e7)([O.Z], () => O.Z.useForcedColors ? "yes" : "no"), [el, ec, e_] = (0, u.Wu)([w.Z], () => [w.Z.isEditorOpen, w.Z.isCoachmark, w.Z.isPreview]), [ep, eh] = (0, u.Wu)([N.Z], () => [N.Z.isEditorOpen, N.Z.isUpsellPreview]), em = (0, u.e7)([X.Z], () => X.Z.getLayers().includes(eu.S9g.USER_SETTINGS)), ey = (0, u.e7)([J.default], () => et.ZP.canUseClientThemes(J.default.getCurrentUser())), eO = el && !em, ev = ep && !em, eI = [];
-    em || !ec || ey || eI.push(d.z.CLIENT_THEMES_COACHMARK);
-    let [eS, eT] = (0, B.US)(eI, ed.R.SIDEBAR, !0);
-    eI.push(d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
-    let eA = eS === d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
-      eN = eS === d.z.CLIENT_THEMES_COACHMARK;
+    } = (0, l.TH)(), f = (0, J.getPlatform)(), b = c.tq || c.Em, z = (0, u.e7)([K.Z], () => K.Z.darkSidebar ? el.BRd.DARK : void 0), X = (0, M.Q3)("AppSkeleton"), ee = (0, u.e7)([O.Z], () => O.Z.useForcedColors ? "yes" : "no"), [ea, es] = (0, u.Wu)([w.Z], () => [w.Z.isEditorOpen, w.Z.isCoachmark]), ed = (0, u.e7)([N.Z], () => N.Z.isEditorOpen), ef = (0, u.e7)([q.Z], () => q.Z.getLayers().includes(el.S9g.USER_SETTINGS)), e_ = (0, u.e7)([Q.default], () => $.ZP.canUseClientThemes(Q.default.getCurrentUser())), ep = ea && !ef, eE = ed && !ef, eb = [];
+    ef || !es || e_ || eb.push(d.z.CLIENT_THEMES_COACHMARK);
+    let [ey, eO] = (0, B.US)(eb, ec.R.SIDEBAR, !0);
+    eb.push(d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
+    let ev = ey === d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
+      eI = ey === d.z.CLIENT_THEMES_COACHMARK;
     i.useEffect(() => {
       null == (0, l.LX)(o, {
         path: "invite",
         exact: !1,
         strict: !1
-      }) && eA && !eN && ((0, A.nJ)(), p.Z.dispatch({
+      }) && ev && !eI && ((0, A.nJ)(), p.Z.dispatch({
         type: "APP_ICON_TRACK_IMPRESSION",
-        markAsDismissed: eT
+        markAsDismissed: eO
       }))
-    }, [eA, eN, eT, o]);
-    let eC = i.useRef(document.body),
-      eP = eO || eN,
-      eR = ev && !eN,
-      ew = e_ || eh,
-      {
-        enabled: eD
-      } = W.Z.useExperiment({
-        location: "AppSkeleton"
-      }, {
-        autoTrackExposure: ew && (eP || eR),
-        disable: !ew
-      }),
-      eL = "".concat($ ? "enabled" : "disabled").concat(en);
-    return (0, j.G)(), (0, F.G)("AppSkeleton"), (0, r.jsx)(K.w, {
+    }, [ev, eI, eO, o]);
+    let eS = i.useRef(document.body),
+      eT = ep || eI,
+      eA = eE && !eI,
+      eN = "".concat(X ? "enabled" : "disabled").concat(ee);
+    return (0, j.G)(), (0, F.G)("AppSkeleton"), (0, r.jsx)(W.w, {
       children: (0, r.jsxs)(v.Z, {
-        children: [(0, r.jsx)(ei.Z, {
+        children: [(0, r.jsx)(en.Z, {
           skipsSettingDefaultPageTitle: n
         }), (0, r.jsx)(E.T, {
-          children: (0, r.jsx)(eo.Z, {
+          children: (0, r.jsx)(er.Z, {
             children: (0, r.jsxs)(_.JcV, {
-              containerRef: eC,
-              children: [(0, r.jsx)(es.Co, {}), (0, r.jsx)(ea.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(y.Wu, {
-                appContext: eu.IlC.APP,
+              containerRef: eS,
+              children: [(0, r.jsx)(eo.Co, {}), (0, r.jsx)(ei.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(y.Wu, {
+                appContext: el.IlC.APP,
                 renderWindow: window,
                 children: (0, r.jsxs)(V.yP, {
-                  children: [null != f ? (0, r.jsx)(eb, {
+                  children: [null != f ? (0, r.jsx)(eg, {
                     type: f,
-                    themeOverride: Q
+                    themeOverride: z
                   }) : null, (0, r.jsxs)("div", {
-                    className: a()(ef.appAsidePanelWrapper, b && ef.mobileAppAsidePanelWrapper),
+                    className: a()(eu.appAsidePanelWrapper, b && eu.mobileAppAsidePanelWrapper),
                     children: [(0, r.jsx)(k.K, {}), (0, r.jsx)("div", {
-                      className: ef.notAppAsidePanel,
+                      className: eu.notAppAsidePanel,
                       "data-app-not-dev-tools": !0,
                       children: (0, r.jsx)(x.m, {
                         children: (0, r.jsx)(H.OR, {
@@ -197,29 +186,25 @@ let eg = (0, en.Un)({
                             value: S.Z,
                             children: (0, r.jsxs)(L.p, {
                               children: [(0, r.jsx)("div", {
-                                className: a()(b ? ef.mobileApp : ef.app),
+                                className: a()(b ? eu.mobileApp : eu.app),
                                 children: t
-                              }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(_.nKe, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(Z.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(H.ot, {}), (0, r.jsx)(_.Ixi, {}), (0, r.jsx)(T.Z, {}), (0, r.jsx)(Y.Z, {}), (0, r.jsx)(eg, {}), (0, r.jsx)(eE, {})]
+                              }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(_.nKe, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(Z.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(H.ot, {}), (0, r.jsx)(_.Ixi, {}), (0, r.jsx)(T.Z, {}), (0, r.jsx)(Y.Z, {}), (0, r.jsx)(eh, {}), (0, r.jsx)(em, {})]
                             })
                           })
                         })
                       })
-                    }), (0, r.jsx)(R.Z, {}), (0, r.jsx)(h.Z, {}), eP && !eD && (0, r.jsx)(D.Z, {
-                      markAsDismissed: eN ? eT : () => {
+                    }), (0, r.jsx)(R.Z, {}), (0, r.jsx)(h.Z, {}), eT && (0, r.jsx)(D.Z, {
+                      markAsDismissed: eI ? eO : () => {
                         (0, G.EW)(d.z.CLIENT_THEMES_COACHMARK, {
-                          dismissAction: ed.L.INDIRECT_ACTION,
+                          dismissAction: ec.L.INDIRECT_ACTION,
                           forceTrack: !0
                         })
                       },
-                      showClientThemesCoachmark: eN
-                    }), eR && !eD && (0, r.jsx)(C.Z, {
-                      isCoachmark: eA,
-                      markAsDismissed: eT
-                    }), (eP || eR) && eD && (0, r.jsx)(q.Z, {
-                      initialTab: eR ? q._.APP_ICONS : q._.CLIENT_THEMES,
-                      markAsDismissed: eT,
-                      isCoachmark: eN
-                    }), (0, r.jsx)(er.Z, {}), (0, r.jsx)(U.Z, {
+                      showClientThemesCoachmark: eI
+                    }), eA && (0, r.jsx)(C.Z, {
+                      isCoachmark: ev,
+                      markAsDismissed: eO
+                    }), (0, r.jsx)(et.Z, {}), (0, r.jsx)(U.Z, {
                       mobile: b
                     })]
                   }), !1]
@@ -229,5 +214,5 @@ let eg = (0, en.Un)({
           })
         })]
       })
-    }, eL)
+    }, eN)
   }

@@ -85,7 +85,8 @@ function _(e, t) {
   } = (0, c.Z)({
     paymentGateway: n,
     noOp: null == e ? void 0 : e.noOp,
-    logPerf: null == e ? void 0 : e.logPerf
+    logPerf: null == e ? void 0 : e.logPerf,
+    countryCode: null == e ? void 0 : e.countryCode
   }, t), {
     isClaiming: u,
     fetchPurchasesError: d,

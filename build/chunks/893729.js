@@ -1,4 +1,4 @@
-/** Chunk was on 99541 **/
+/** Chunk was on 79826 **/
 "use strict";
 n.d(t, {
   Z: () => v
@@ -27,7 +27,7 @@ function v(e) {
     theme: v,
     content: h = m.intl.string(m.t["6OSasb"]),
     className: O
-  } = e, j = (0, a.e7)([f.default], () => f.default.getCurrentUser()), y = g.ZP.useName(n, null, j), x = (0, c.Kz)(s), C = i.useMemo(() => {
+  } = e, j = (0, a.e7)([f.default], () => f.default.getCurrentUser()), x = g.ZP.useName(n, null, j), y = (0, c.Kz)(s), C = i.useMemo(() => {
     var e, t;
     return (0, u.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -68,7 +68,7 @@ function v(e) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
   }, [j, h]), S = {
-    nick: y,
+    nick: x,
     colorString: null != (t = s.colorString) ? t : void 0
   };
   return (0, r.jsx)(l.f6W, {
@@ -78,7 +78,7 @@ function v(e) {
       children: (0, r.jsx)(p.Z, {
         hideTimestamp: !0,
         author: S,
-        roleIcon: x,
+        roleIcon: y,
         message: C,
         isGroupStart: !0,
         disableInteraction: !0

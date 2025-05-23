@@ -1,4 +1,4 @@
-/** Chunk was on 99541 **/
+/** Chunk was on 79826 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -27,8 +27,8 @@ let b = i.memo(function(e) {
     disableInteraction: h,
     previewGuildId: O,
     preview: j,
-    author: y
-  } = e, x = null != O ? O : (0, c.k)(n), C = (0, l.Z)(y), S = (0, a.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
+    author: x
+  } = e, y = null != O ? O : (0, c.k)(n), C = (0, l.Z)(x), S = (0, a.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
     content: P
   } = (0, d.Z)(n, {
     hideSimpleEmbedContent: v,
@@ -57,7 +57,7 @@ let b = i.memo(function(e) {
       return e
     }({}, e), n = n = {
       channel: s,
-      guildId: x
+      guildId: y
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ let b = i.memo(function(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
-  }, [e, s, x]);
+  }, [e, s, y]);
   return (0, r.jsx)(u.Z, {
     compact: b,
     className: o()(m, {
@@ -80,7 +80,7 @@ let b = i.memo(function(e) {
     childrenMessageContent: (0, p.Z)(e, P),
     disableInteraction: h,
     authorHasGradientRole: C,
-    guildId: x,
+    guildId: y,
     preview: j
   })
 })

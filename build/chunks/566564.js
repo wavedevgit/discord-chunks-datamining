@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => E
 });
 var r = n(255367),
   l = n(73800),
@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(381585),
   u = n(139668),
   d = n(364111),
-  f = n(303952),
-  p = n(752053),
-  b = n(81136),
+  p = n(303952),
+  b = n(752053),
+  f = n(81136),
   g = n(953655),
   h = n(548685),
   m = n(580914),
@@ -34,11 +34,11 @@ let S = e => {
     } = e, {
       noCache: O,
       includeUnpublished: S
-    } = (0, b.Z)(), j = (0, c.sp)(), y = null != (t = null == j ? void 0 : j.sessionId) ? t : "";
+    } = (0, f.Z)(), E = (0, c.sp)(), j = null != (t = null == E ? void 0 : E.sessionId) ? t : "";
     l.useEffect(() => {
-      (0, f.n)({
-        sessionId: y,
-        checkpoint: f.a.SHOP_MOUNTED,
+      (0, p.n)({
+        sessionId: j,
+        checkpoint: p.a.SHOP_MOUNTED,
         tab: u,
         isFullScreen: v,
         unpublishedCategoriesShown: S,
@@ -46,8 +46,8 @@ let S = e => {
       })
     }, [u]);
     let {
-      isFetchingShopHome: E,
-      fetchShopHomeError: P,
+      isFetchingShopHome: P,
+      fetchShopHomeError: y,
       shopBlocks: k,
       refreshShopHome: T
     } = (0, d.E)(u, {
@@ -56,50 +56,50 @@ let S = e => {
       includeBundles: !0,
       logPerf: !0
     }, {
-      sessionId: y,
+      sessionId: j,
       tab: u,
       isFullScreen: v
     }), I = l.useCallback(() => {
       T()
     }, [T]);
     if (l.useEffect(() => {
-        null != P || E || 0 === k.length || (0, f.n)({
-          sessionId: y,
-          checkpoint: f.a.SHOP_RENDERED,
+        null != y || P || 0 === k.length || (0, p.n)({
+          sessionId: j,
+          checkpoint: p.a.SHOP_RENDERED,
           tab: u,
           isFullScreen: v,
           unpublishedCategoriesShown: S,
           cacheDisabled: O
         })
-      }, [P, E, k.length, S, O, y, u, v]), null != P) return (0, r.jsx)(p.Z, {
+      }, [y, P, k.length, S, O, j, u, v]), null != y) return (0, r.jsx)(b.Z, {
       onRetry: I,
-      errorOrigin: p.i.SHOP_PAGE,
-      errorMessage: P.message
+      errorOrigin: b.i.SHOP_PAGE,
+      errorMessage: y.message
     });
-    if (E || 0 === k.length) return (0, r.jsxs)("div", {
+    if (P || 0 === k.length) return (0, r.jsxs)("div", {
       className: x.loadingContainer,
       children: [(0, r.jsx)(m.Z, {
-        isLoading: E,
+        isLoading: P,
         handleTransition: n,
         tab: u
       }), (0, r.jsx)(g.Z, {
-        isLoading: E,
+        isLoading: P,
         handleTransition: n,
         categories: []
       }), (0, r.jsx)(h.Z, {
-        isLoading: E,
+        isLoading: P,
         handleTransition: n,
         numVisibleItems: a,
         tab: u
       })]
     });
-    let w = (e, t) => {
+    let L = (e, t) => {
       if (null == e) return null;
       let l = null;
       switch (e.type) {
         case o.z.HERO:
           l = (0, r.jsx)(m.Z, {
-            isLoading: E,
+            isLoading: P,
             handleTransition: n,
             heroBlock: e,
             tab: u
@@ -107,7 +107,7 @@ let S = e => {
           break;
         case o.z.FEATURED:
           l = (0, r.jsx)(g.Z, {
-            isLoading: E,
+            isLoading: P,
             handleTransition: n,
             featuredBlockRecord: e
           }, t);
@@ -115,7 +115,7 @@ let S = e => {
         case o.z.FEED:
           let c = e.sortedSkuIds;
           l = (0, r.jsx)(h.Z, {
-            isLoading: E || s,
+            isLoading: P || s,
             handleTransition: n,
             numVisibleItems: a,
             sortedSkuIds: c,
@@ -147,10 +147,10 @@ let S = e => {
       }, t)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: k.map((e, t) => w(e, t))
+      children: k.map((e, t) => L(e, t))
     })
   },
-  j = e => {
+  E = e => {
     let {
       isFullScreen: t,
       handleTransition: n,

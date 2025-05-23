@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 227c0d94f7e14f19
+  Original File Name: ad1bfb1f7cb36486
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -226,6 +226,13 @@
     margin-top: 40px
 }
 
+.products__6db1d {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(auto-fill,minmax(246px,1fr));
+    overflow: visible
+}
+
 .categories__6db1d>.categoryWrapper__6db1d~.categoryWrapper__6db1d {
     margin-top: 80px
 }
@@ -245,6 +252,16 @@
     margin-bottom: 0;
     margin-top: 40px;
     padding-top: 20px
+}
+
+.bannerContainer__6db1d {
+    background-position: 50%;
+    background-size: cover;
+    border: 1px solid var(--border-faint);
+    border-radius: var(--radius-lg);
+    margin-bottom: 24px;
+    margin-top: 24px;
+    padding: 32px
 }
 
 @keyframes placeholderPulse__72fa0 {
@@ -974,6 +991,18 @@
 .tab__80679.selected__80679 {
     border-bottom: 2px solid var(--icon-primary);
     margin-bottom: -2px
+}
+
+.tabWithMenuContainer__80679 {
+    height: 100%
+}
+
+.tabWithMenu__80679 {
+    align-items: center;
+    display: flex;
+    gap: 2px;
+    height: 100%;
+    justify-content: center
 }
 
 .discordLogoContainer__80679 {
@@ -1715,4 +1744,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=227c0d94f7e14f19.css.map*/
+/*# sourceMappingURL=ad1bfb1f7cb36486.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 11678
-  Original File Name: cfa2415e3b57354e
+  Original File Name: 9236872bfcf8a9f2
 **/
 .scroller__95bea {
     display: flex;
@@ -614,12 +614,12 @@
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 4
+    z-index: var(--custom-user-profile-hoist-z-index)
 }
 
 .toast__24502 {
     top: 24.5px;
-    z-index: 5
+    z-index: var(--custom-user-profile-toast-z-index)
 }
 
 .row__19fd1 {
@@ -775,8 +775,7 @@
     text-align: center;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 60%;
-    z-index: 1
+    width: 60%
 }
 
 .safetyTable__1f3e3 {
@@ -791,4 +790,4 @@
     gap: 8px
 }
 
-/*# sourceMappingURL=cfa2415e3b57354e.css.map*/
+/*# sourceMappingURL=9236872bfcf8a9f2.css.map*/

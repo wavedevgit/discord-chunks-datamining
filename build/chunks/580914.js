@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => A
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(607070),
-  f = n(70097),
-  p = n(688465),
-  b = n(341907),
+  p = n(70097),
+  b = n(688465),
+  f = n(341907),
   g = n(507808),
   h = n(594174),
   m = n(451478),
@@ -24,16 +24,16 @@ var r = n(255367),
   O = n(26931),
   x = n(370039),
   S = n(937510),
-  j = n(823941),
-  y = n(38900),
-  E = n(709999),
-  P = n(794324),
+  E = n(823941),
+  j = n(38900),
+  P = n(709999),
+  y = n(794324),
   k = n(619899),
   T = n(215023),
   I = n(981631),
-  w = n(388032),
+  L = n(388032),
   B = n(806734);
-let L = {
+let w = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: void 0,
@@ -47,12 +47,12 @@ let L = {
   },
   N = e => {
     var t, n, r, l;
-    return null == e ? L : {
+    return null == e ? w : {
       rankedSkuIds: null != (t = e.heroRanking) ? t : [],
       name: e.name,
       unpublishedAt: e.unpublishedAt,
       logoUrl: (0, v.uV)(null != (r = null != (n = e.heroLogo) ? n : e.logo) ? r : "", {
-        size: j.n
+        size: E.n
       }),
       categorySkuId: e.skuId,
       bannerAsset: e.heroBannerAsset,
@@ -65,24 +65,24 @@ let L = {
       categoryStoreListingId: e.storeListingId
     }
   },
-  R = e => {
+  A = e => {
     let {
       isLoading: t,
       handleTransition: n,
       category: a,
       heroBlock: s,
       tab: v
-    } = e, j = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), R = (0, c.e7)([m.Z], () => m.Z.isFocused()), A = (0, c.e7)([h.default], () => h.default.getCurrentUser()), Z = (0, O.u)(), F = l.useMemo(() => null != s ? s : N(a), [s, a]), {
-      isPreviewingStaticBanner: H,
-      bannerOverrides: D,
+    } = e, E = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), A = (0, c.e7)([m.Z], () => m.Z.isFocused()), R = (0, c.e7)([h.default], () => h.default.getCurrentUser()), Z = (0, O.u)(), F = l.useMemo(() => null != s ? s : N(a), [s, a]), {
+      isPreviewingStaticBanner: D,
+      bannerOverrides: H,
       bannerStyleOverrides: M,
       heroLogo: W,
       heroBannerStatic: V,
       heroBannerAnimated: U
-    } = (0, P.hr)(F), G = null == D ? void 0 : D.heroBanner, z = l.useMemo(() => Z(F.rankedSkuIds), [t, Z, F.rankedSkuIds]), q = (0, x.a)()(z), Y = (0, S.l)(q).slice(0, 4), K = (0, k.St)(Y), $ = v === T.AW.ORBS ? w.intl.string(w.t["1CdL8f"]) : w.intl.formatToPlainString(w.t.wvKYCg, {
+    } = (0, y.hr)(F), G = null == H ? void 0 : H.heroBanner, z = l.useMemo(() => Z(F.rankedSkuIds), [t, Z, F.rankedSkuIds]), q = (0, x.a)()(z), Y = (0, S.l)(q).slice(0, 4), $ = (0, k.St)(Y), K = v === T.AW.ORBS ? L.intl.string(L.t["1CdL8f"]) : L.intl.formatToPlainString(L.t.wvKYCg, {
       category_name: F.name
     });
-    return null != A && (t || F !== L) ? (0, r.jsxs)("div", {
+    return null != R && (t || F !== w) ? (0, r.jsxs)("div", {
       className: i()(B.heroBlock, {
         [B.responsiveHero]: null == M ? void 0 : M.responsive
       }),
@@ -91,12 +91,12 @@ let L = {
         style: (null == M ? void 0 : M.backgroundStyle) != null ? {
           background: M.backgroundStyle
         } : void 0,
-        children: [null == U || j || !R || H ? (0, r.jsx)("div", {
+        children: [null == U || E || !A || D ? (0, r.jsx)("div", {
           className: B.bannerImage,
           style: {
             backgroundImage: "url(".concat(V, ")")
           }
-        }) : (0, r.jsx)(f.Z, {
+        }) : (0, r.jsx)(p.Z, {
           className: B.bannerVideoBackground,
           src: U,
           autoPlay: !0,
@@ -128,7 +128,7 @@ let L = {
             className: B.heroHeaderBadgeLogoSummaryContainer,
             children: [null != F.unpublishedAt && (0, r.jsx)(u.IGR, {
               disableColor: !0,
-              text: w.intl.string(w.t["h/uBCQ"]),
+              text: L.intl.string(L.t["h/uBCQ"]),
               className: B.limitedTimeBadge
             }), (0, r.jsxs)("div", {
               className: B.heroLogoNameContainer,
@@ -140,10 +140,10 @@ let L = {
                 variant: "heading-xxl/bold",
                 className: B.title,
                 color: "header-primary",
-                children: [F.title, v === T.AW.ORBS && (0, r.jsx)(p.Z, {})]
+                children: [F.title, v === T.AW.ORBS && (0, r.jsx)(b.Z, {})]
               }), (0, r.jsx)(u.Text, {
                 variant: v === T.AW.ORBS ? "text-lg/medium" : "text-md/normal",
-                className: v === T.AW.ORBS ? B.orbsSubHeaderText : (null == D ? void 0 : D.showDarkBannerText) ? B.subHeaderTextDark : B.subHeaderText,
+                className: v === T.AW.ORBS ? B.orbsSubHeaderText : (null == H ? void 0 : H.showDarkBannerText) ? B.subHeaderTextDark : B.subHeaderText,
                 style: null != F.bannerTextColor ? {
                   color: F.bannerTextColor
                 } : void 0,
@@ -160,11 +160,11 @@ let L = {
                   pageType: I.ZY5.SHOP_ORBS_TAB,
                   sectionType: I.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: I.qAy.CTA_TO_QUEST_HOME
-                }), (0, b.navigateToQuestHome)({
+                }), (0, f.navigateToQuestHome)({
                   fromContent: o.j.ORBS_SHOP_HERO_CTA
                 })) : n("shop latest category hero", F.categorySkuId)
               },
-              children: $
+              children: K
             })
           })]
         }), (0, r.jsx)("div", {
@@ -172,9 +172,9 @@ let L = {
             [B.feedSingleRow]: v !== T.AW.ORBS
           }),
           children: t ? (0, r.jsx)(r.Fragment, {
-            children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(y.K, {}, t))
+            children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(j.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
-            children: K.map((e, t) => {
+            children: $.map((e, t) => {
               let n = C.Z.getCategoryForProduct(e.skuId);
               return null == e || null == n ? null : (0, r.jsx)(_.k0, {
                 newValue: {
@@ -182,10 +182,10 @@ let L = {
                   pageSection: "top 4",
                   categoryPosition: 0
                 },
-                children: (0, r.jsx)(E.Z, {
+                children: (0, r.jsx)(P.Z, {
                   product: e,
                   category: n,
-                  user: A,
+                  user: R,
                   tab: v
                 }, e.skuId)
               }, null == e ? void 0 : e.skuId)

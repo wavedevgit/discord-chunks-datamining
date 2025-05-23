@@ -1,4 +1,4 @@
-/** Chunk was on 99541 **/
+/** Chunk was on 79826 **/
 "use strict";
 n.d(t, {
   Z: () => _
@@ -29,12 +29,12 @@ function _(e) {
     h = (0, a.Ng)(),
     O = (0, d.Vi)(),
     j = (0, o.e7)([f.Z], () => f.Z.isLocalizedPromoEnabled) && null == v && null == n,
-    y = (null == v ? void 0 : v.trial_id) === b.a7;
+    x = (null == v ? void 0 : v.trial_id) === b.a7;
   return t = O ? (0, r.jsx)(c.Z, {}) : null != h ? (0, r.jsx)(p.GN, {
     isTabSelected: _,
     userDiscount: h,
     includesAmountOff: !1
-  }) : null == v || y ? null != n ? n : j ? (0, r.jsx)(u.k, {
+  }) : null == v || x ? null != n ? n : j ? (0, r.jsx)(u.k, {
     entryPoint: u.U.SettingsMenu
   }) : (0, r.jsx)(g.Z, {
     isSelected: _

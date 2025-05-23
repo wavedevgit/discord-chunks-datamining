@@ -1,6 +1,6 @@
 /**
   Module ID: 22274
-  Original File Name: d56f87132c5cb867
+  Original File Name: a57a6accebc6904a
 **/
 .container__2a3ed {
     color: var(--text-normal);
@@ -9,7 +9,7 @@
     overflow: hidden;
     position: absolute;
     transition: opacity .3s linear;
-    z-index: 100
+    z-index: var(--custom-user-profile-toast-z-index)
 }
 
 .container__2a3ed:not(.loaded__2a3ed) {
@@ -156,4 +156,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=d56f87132c5cb867.css.map*/
+/*# sourceMappingURL=a57a6accebc6904a.css.map*/

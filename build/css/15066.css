@@ -1,6 +1,6 @@
 /**
   Module ID: 15066
-  Original File Name: 2513e5c255a236f1
+  Original File Name: 2a3e8cb87019dd11
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -897,6 +897,18 @@
     color: ButtonText
 }
 
+.right__89d2b {
+    transform: rotate(90deg)
+}
+
+.down__89d2b {
+    transform: rotate(180deg)
+}
+
+.left__89d2b {
+    transform: rotate(-90deg)
+}
+
 .animator_d17ea2 {
     display: block;
     position: relative
@@ -1164,7 +1176,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -1313,4 +1325,4 @@ h1.title_feb59c,h2.title_feb59c {
     margin-right: var(--spacing-32)
 }
 
-/*# sourceMappingURL=2513e5c255a236f1.css.map*/
+/*# sourceMappingURL=2a3e8cb87019dd11.css.map*/

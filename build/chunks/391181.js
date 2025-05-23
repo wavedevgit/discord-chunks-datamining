@@ -1,4 +1,4 @@
-/** Chunk was on 27146 **/
+/** Chunk was on 19027 **/
 n.d(t, {
   Z: () => T,
   m: () => g
@@ -189,7 +189,7 @@ function T(e) {
     onCopyProductLink: b,
     onTestDownload: h,
     disabled: C = !1
-  } = e, y = (0, c.U)(t, 600), N = null !== t.price_tier ? (0, s.T4)(t.price_tier, E.pK.USD) : void 0, P = (0, d.C)(t);
+  } = e, y = (0, c.U)(t, 600), P = null !== t.price_tier ? (0, s.T4)(t.price_tier, E.pK.USD) : void 0, N = (0, d.C)(t);
   return (0, r.jsxs)(a.kL8, {
     tag: "article",
     className: o()(_.productCardClickable, _.productCard, {
@@ -238,14 +238,14 @@ function T(e) {
           children: [(0, r.jsx)(a.Text, {
             variant: "text-md/normal",
             color: "header-secondary",
-            children: N
-          }), null != P ? (0, r.jsxs)(r.Fragment, {
+            children: P
+          }), null != N ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
               className: _.dotSeparator
             }), (0, r.jsx)(a.Text, {
               variant: "text-md/normal",
               color: "header-secondary",
-              children: P
+              children: N
             })]
           }) : null]
         }), (0, r.jsx)(a.LZC, {
