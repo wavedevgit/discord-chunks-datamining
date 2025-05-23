@@ -31,8 +31,8 @@ function x(e) {
     available: v,
     purchased: h,
     isFetchingCategories: x,
-    isFetchingPurchases: _
-  } = (0, u.yV)("NameplateModal"), j = x || _ && 0 === h.length;
+    isFetchingPurchases: O
+  } = (0, u.yV)("NameplateModal"), y = x || O && 0 === h.length;
   return (0, i.useEffect)(() => {
     b.default.track(m.rMx.OPEN_MODAL, {
       type: m.jXE.NAMEPLATE_CUSTOMIZATION,
@@ -42,11 +42,11 @@ function x(e) {
     value: f,
     children: (0, n.jsx)(l.Y0X, {
       transitionState: t,
-      size: j ? l.CgR.DYNAMIC : l.CgR.MEDIUM,
-      children: j ? (0, n.jsx)(l.$jN, {
+      size: y ? l.CgR.DYNAMIC : l.CgR.MEDIUM,
+      children: y ? (0, n.jsx)(l.$jN, {
         className: g.spinner,
         type: l.$jN.Type.SPINNING_CIRCLE
-      }) : (0, n.jsx)(O, {
+      }) : (0, n.jsx)(_, {
         user: d,
         onClose: c,
         available: v,
@@ -57,7 +57,7 @@ function x(e) {
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     user: t,
     available: r,
@@ -69,7 +69,7 @@ function O(e) {
     return e.skuId === (null == t || null == (n = t.collectibles) || null == (r = n.nameplate) ? void 0 : r.skuId)
   }), {
     pendingNameplate: b
-  } = (0, d._A)(), [m, x] = (0, i.useState)(() => void 0 !== b ? b : null != p ? p : null), [O, _] = (0, i.useState)(null != m), j = (0, i.useCallback)(e => {
+  } = (0, d._A)(), [m, x] = (0, i.useState)(() => void 0 !== b ? b : null != p ? p : null), [_, O] = (0, i.useState)(null != m), y = (0, i.useCallback)(e => {
     u(), (0, c.mK)({
       analyticsLocations: s,
       analyticsSource: a.Z.EDIT_NAMEPLATE_MODAL,
@@ -93,18 +93,18 @@ function O(e) {
       children: [(0, n.jsx)(v.Z, {
         selected: m,
         onSelect: (e, t) => {
-          x(e), _(null != t && t)
+          x(e), O(null != t && t)
         },
-        onOpenShop: j,
+        onOpenShop: y,
         available: r,
         purchased: o
       }), (0, n.jsx)(f.Z, {
         user: t,
         selectedNameplate: m,
-        purchased: O
+        purchased: _
       })]
     }), (0, n.jsxs)(l.mzw, {
-      children: [O || null == m ? (0, n.jsx)(l.zxk, {
+      children: [_ || null == m ? (0, n.jsx)(l.zxk, {
         disabled: void 0 === m,
         onClick: () => {
           (0, d.Wh)(m), u()
@@ -113,7 +113,7 @@ function O(e) {
       }) : (0, n.jsx)(l.zxk, {
         className: g.goToShopButton,
         color: l.Ttl.CUSTOM,
-        onClick: () => j(null == m ? void 0 : m.skuId),
+        onClick: () => y(null == m ? void 0 : m.skuId),
         children: (0, n.jsx)(l.Text, {
           color: "always-white",
           variant: "text-sm/medium",

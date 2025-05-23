@@ -73,25 +73,25 @@ function m(e) {
       price: x
     })
   });
-  let O = (0, a.ql)(t, u.tuJ.PREMIUM_TIER_2),
-    _ = !r && !(0, a.x6)(t),
-    j = (0, a.x6)(t) && r ? v(f({}, x), {
+  let _ = (0, a.ql)(t, u.tuJ.PREMIUM_TIER_2),
+    O = !r && !(0, a.x6)(t),
+    y = (0, a.x6)(t) && r ? v(f({}, x), {
       amount: i.original
     }) : x,
-    y = g && r,
+    j = g && r,
     P = g && !r;
   return (0, n.jsxs)("div", {
     className: o()(p.priceTagsContainer, m),
-    children: [!y && (0, n.jsx)(s.F, {
-      price: j,
+    children: [!j && (0, n.jsx)(s.F, {
+      price: y,
       discount: r ? a.f_ : i,
       className: o()(p.price, {
         [p.striked]: r,
         [p.dimmed]: r,
-        [p.fullPrice]: _
+        [p.fullPrice]: O
       })
-    }), null != O && !P && (0, n.jsx)(s.F, {
-      price: O,
+    }), null != _ && !P && (0, n.jsx)(s.F, {
+      price: _,
       discount: r ? i : a.f_,
       renderPrice: h ? e => (0, n.jsx)(l.Text, {
         variant: "text-xs/medium",
@@ -101,12 +101,12 @@ function m(e) {
             text: e
           })
         })
-      }) : _ ? e => d.intl.formatToPlainString(d.t.W3gIWF, {
+      }) : O ? e => d.intl.formatToPlainString(d.t.W3gIWF, {
         price: e
       }) : void 0,
       className: o()(p.price, {
         [p.dimmed]: !r,
-        [p.fullPrice]: _
+        [p.fullPrice]: O
       }),
       variant: r ? void 0 : "text-xs/semibold",
       icon: (0, n.jsx)(l.ua7, {
@@ -122,7 +122,7 @@ function m(e) {
             color: "currentColor"
           }, t), {
             className: o()(p.premiumIcon, {
-              [p.fullPrice]: _
+              [p.fullPrice]: O
             })
           }))
         }

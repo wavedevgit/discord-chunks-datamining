@@ -6,7 +6,7 @@ r.d(t, {
 });
 var n = r(255367),
   i = r(73800);
-let o = 12633 == r.j ? i.createContext(null) : null;
+let o = i.createContext(null);
 
 function l() {
   return i.useContext(o)

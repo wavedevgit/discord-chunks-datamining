@@ -94,13 +94,13 @@ let d = [{
         tension: 800,
         friction: 24
       }
-    }), O = o ? g : 0, _ = (0, l.wj)(null != t ? t : u) ? c.dark[O] : c.light[O];
+    }), _ = o ? g : 0, O = (0, l.wj)(null != t ? t : u) ? c.dark[_] : c.light[_];
     return !r && o ? (0, n.jsx)(m, {}) : o && h ? (0, n.jsx)(v, {
       isDark: (0, l.wj)(u),
       style: x
     }) : (0, n.jsx)(f, {
-      boxColor: _.box,
-      ribbonColor: _.ribbon,
+      boxColor: O.box,
+      ribbonColor: O.ribbon,
       style: x
     })
   })
