@@ -1,4 +1,4 @@
-/** Chunk was on 40417 **/
+/** Chunk was on 36087 **/
 n.d(t, {
   Z: () => c
 }), n(953529);
@@ -8,7 +8,7 @@ var i = n(481060),
   l = n(600164),
   a = n(245315),
   o = n(388032),
-  s = n(184075);
+  s = n(49791);
 let c = () => (0, r.jsxs)(l.Z, {
   align: l.Z.Align.CENTER,
   justify: l.Z.Justify.CENTER,

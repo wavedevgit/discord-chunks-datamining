@@ -1,4 +1,4 @@
-/** Chunk was on 37485 **/
+/** Chunk was on 50629 **/
 "use strict";
 n.d(t, {
   Z: () => I
@@ -22,7 +22,7 @@ var i = n(442837),
   b = n(981631),
   j = n(611480),
   _ = n(388032),
-  v = n(925981);
+  v = n(776739);
 let O = {
     page: b.ZY5.GUILD_SETTINGS,
     section: b.jXE.GUILD_SETTINGS_STICKERS,

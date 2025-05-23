@@ -1,4 +1,4 @@
-/** Chunk was on 72019 **/
+/** Chunk was on 75293 **/
 n.d(t, {
   Z: () => d,
   x: () => u
@@ -8,7 +8,7 @@ var r, i = n(255367),
   o = n.n(l),
   s = n(481060),
   a = n(388032),
-  c = n(766030),
+  c = n(381231),
   u = ((r = {}).ANNOUNCEMENTS = "announcements", r.MENTIONS = "mentions", r);
 
 function d(e) {

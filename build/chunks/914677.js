@@ -1,4 +1,4 @@
-/** Chunk was on 998 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => g
 }), n(388685);
@@ -7,7 +7,7 @@ var i = n(255367),
   s = n(780384),
   l = n(410030),
   a = n(119269),
-  o = n(820136);
+  o = n(3504);
 let c = "url(#gradient)",
   d = (e, t) => {
     switch (e) {

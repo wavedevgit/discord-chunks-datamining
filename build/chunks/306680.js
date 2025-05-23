@@ -863,8 +863,8 @@ function e$(e) {
     null != o && (0, L.Q5)(o.type) && (null == e.last_message_id || 0 === e.last_message_id) ? i.ackMessageId = G.default.fromTimestamp(eW(o.guild_id, o.id)) : i.ackedWhileCached ? -1 === G.default.compare(i.ackMessageId, e.last_message_id) && (i.ackMessageId = e.last_message_id) : i.ackMessageId = e.last_message_id, i.ackedWhileCached = void 0, i.ackPinTimestamp = eN(e.last_pin_timestamp), eM._mentionChannels.delete(i.channelId), i._mentionCount > 0 && i.canHaveMentions() && eM._mentionChannels.add(i.channelId)
   }), eM.resetGuildSentinels();
   let s = null == (t = J.default.getCurrentUser()) ? void 0 : t.id;
-  for (let e of (null != s && (eM.get(s, ei.W.NOTIFICATION_CENTER).lastMessageId = G.default.fromTimestamp(Date.now())), eB(i), ej(o), r)) ej(null != (n = e.channels) ? n : []), e2(e), eG(e);
-  e0(), eE = setTimeout(() => e3(a.entries), 10 * k.Z.Millis.SECOND)
+  for (let e of (null != s && (eM.get(s, ei.W.NOTIFICATION_CENTER).lastMessageId = G.default.fromTimestamp(Date.now())), eB(i), ej(o), r)) ej(null != (n = e.channels) ? n : []), e3(e), eG(e);
+  e0(), eE = setTimeout(() => e2(a.entries), 10 * k.Z.Millis.SECOND)
 }
 
 function e0() {
@@ -875,7 +875,7 @@ let e1 = (0, o.throttle)(e => {
   e.delete()
 }, 100);
 
-function e3(e) {
+function e2(e) {
   let t = ev();
   for (let r of e) {
     var n;
@@ -885,7 +885,7 @@ function e3(e) {
   }
 }
 
-function e2(e) {
+function e3(e) {
   if (null != e.channelUpdates) {
     var t;
     ej(null == (t = e.channelUpdates) ? void 0 : t.writes)
@@ -922,7 +922,7 @@ function e6(e) {
   } = e, r = ev();
   eM.forEach(e => {
     e.guildId === n.id && e.shouldDeleteReadState(r) && e.delete(!1)
-  }), ej(null != (t = n.channels) ? t : []), e2(n), eG(n)
+  }), ej(null != (t = n.channels) ? t : []), e3(n), eG(n)
 }
 
 function e8(e) {

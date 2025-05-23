@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(293335),
-  o = n(361091);
+  o = n(422786);
 let a = e => {
   let {
     profileEffectConfig: t,

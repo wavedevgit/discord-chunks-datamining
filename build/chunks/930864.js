@@ -1,4 +1,4 @@
-/** Chunk was on 39871 **/
+/** Chunk was on 16967 **/
 n.d(t, {
   ForwardModal: () => x
 }), n(388685);
@@ -22,7 +22,7 @@ var l = n(255367),
   y = n(912332),
   I = n(819727),
   S = n(388032),
-  O = n(272393),
+  O = n(691176),
   A = n(621054);
 
 function v(e) {
@@ -93,30 +93,32 @@ function x(e) {
     originDestination: w,
     includeMissingDMs: !0
   }), Y = r.useCallback(e => {
-    q(e), X(e), H.current += 1, "" !== e && G(j, Z)
-  }, [j, Z, G, X]), J = r.useCallback(() => {
+    q(e), X(e)
+  }, [X]), J = r.useCallback(e => {
+    Y(e), H.current += 1, "" !== e && G(j, Z)
+  }, [j, Z, G, Y]), $ = r.useCallback(() => {
+    Y("")
+  }, [Y]), ee = r.useCallback(() => {
     (0, m.sF)({
       channelId: j,
       messageId: Z,
       numDestinationChanges: U.current,
       numQueryChanges: H.current
     }), L()
-  }, [j, Z, L]), $ = r.useCallback(() => {
-    q("")
-  }, [q]), ee = r.useRef(null);
+  }, [j, Z, L]), et = r.useRef(null);
   r.useEffect(() => {
     if ("" === B) {
       var e;
-      null == (e = ee.current) || e.focus()
+      null == (e = et.current) || e.focus()
     }
   }, [B]);
-  let et = r.useMemo(() => (0, i.throttle)(() => {
+  let en = r.useMemo(() => (0, i.throttle)(() => {
       (0, s.showToast)((0, s.createToast)(S.intl.string(S.t.kwmYkp), s.ToastType.FORWARD))
     }, 3e3, {
       leading: !0,
       trailing: !1
     }), []),
-    en = r.useCallback(e => {
+    el = r.useCallback(e => {
       M(j, Z, "" !== B), Q(t => {
         let n = t.findIndex(t => {
           let {
@@ -125,12 +127,12 @@ function x(e) {
           } = t;
           return n === e.type && l === e.id
         });
-        if (-1 === n) return V ? t : (q(""), X(""), U.current += 1, [e, ...t]);
+        if (-1 === n) return V ? t : (Y(""), U.current += 1, [e, ...t]);
         let l = [...t];
         return l.splice(n, 1), U.current += 1, l
       })
-    }, [j, V, Z, B, X, M]),
-    el = r.useCallback(async function(e) {
+    }, [j, V, Z, B, Y, M]),
+    er = r.useCallback(async function(e) {
       var r;
       let {
         withMessage: i,
@@ -178,7 +180,7 @@ function x(e) {
           numDestinationChanges: U.current,
           numQueryChanges: H.current,
           anyDestinationHasSlowmode: O
-        }), et();
+        }), en();
         return
       }(0, m.gP)({
         channelId: j,
@@ -196,23 +198,23 @@ function x(e) {
         failedDestinations: A,
         forwardOptions: P
       })
-    }, [j, P, Z, t, T, et]),
-    er = r.useCallback(e => {
-      el(W, {
+    }, [j, P, Z, t, T, en]),
+    ei = r.useCallback(e => {
+      er(W, {
         withMessage: e,
         transitionToDestination: 1 === W.length,
         closeAfterSend: !0
       })
-    }, [el, W]);
+    }, [er, W]);
   if (null == k || null == F) return null;
-  let ei = K.length > 0 ? (0, l.jsx)(E.F, {
+  let ea = K.length > 0 ? (0, l.jsx)(E.F, {
       paddingBottom: 16,
       paddingTop: 16,
       rowData: K,
       rowMode: E.G.TOGGLE,
       message: k,
       originChannel: F,
-      handleToggleDestination: en,
+      handleToggleDestination: el,
       selectedDestinations: W,
       disableSelection: V
     }) : (0, l.jsxs)(s.hzk, {
@@ -227,7 +229,7 @@ function x(e) {
         children: S.intl.string(S.t.V6nAfH)
       })]
     }),
-    ea = z <= 1 ? S.intl.string(S.t.TXNS7e) : S.intl.formatToPlainString(S.t.jWtYUl, {
+    es = z <= 1 ? S.intl.string(S.t.TXNS7e) : S.intl.formatToPlainString(S.t.jWtYUl, {
       count: z
     });
   return (0, l.jsxs)(s.Y0X, C(v({
@@ -259,26 +261,26 @@ function x(e) {
           })
         }), (0, l.jsx)(s.olH, {
           className: O.closeButton,
-          onClick: J
+          onClick: ee
         })]
       }), (0, l.jsx)(s.E1j, {
-        ref: ee,
+        ref: et,
         size: s.E1j.Sizes.MEDIUM,
         query: B,
-        onChange: Y,
+        onChange: J,
         onClear: $,
         placeholder: S.intl.string(S.t["5h0QOD"]),
         "aria-label": S.intl.string(S.t["5h0QOD"]),
         autoFocus: !0
       })]
-    }), ei, (0, l.jsx)(b.n, {
+    }), ea, (0, l.jsx)(b.n, {
       message: k,
       forwardOptions: P,
-      sendLabel: ea,
+      sendLabel: es,
       canSend: z > 0,
       selectedDestinations: W,
       isSending: D,
-      onSend: er
+      onSend: ei
     })]
   }))
 }

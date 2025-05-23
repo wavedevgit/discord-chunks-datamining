@@ -47,8 +47,8 @@ var r = n(255367),
   Z = n(981631),
   H = n(231338),
   Y = n(388032),
-  W = n(179173),
-  K = n(502367);
+  W = n(651427),
+  K = n(104327);
 
 function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -303,7 +303,7 @@ function et(e) {
       className: W.adjustedGiftMainAnimation,
       optionsContainerClassName: W.adjustedGiftBoxOptionContainer
     }) : (0, r.jsx)(j.q, {}) : null,
-    e3 = () => (0, r.jsx)("div", X(q({
+    e2 = () => (0, r.jsx)("div", X(q({
       ref: eF
     }, eV), {
       children: $.map(e => (0, r.jsx)(B.Z, {
@@ -318,7 +318,7 @@ function et(e) {
         isEligibleForTrial: ek
       }, e))
     })),
-    e2 = () => eQ(eN, ek, eM),
+    e3 = () => eQ(eN, ek, eM),
     e4 = () => eY ? (0, r.jsx)(d.Z, {
       message: Y.intl.formatToPlainString(Y.t["9hnZoK"], {
         kunaPriceWithCurrency: (0, I.T4)(7.5345 * eZ.amount, H.pK.HRK)
@@ -337,7 +337,7 @@ function et(e) {
       children: [(0, r.jsx)(L.Z, {
         fromBoostCancelModal: !1,
         className: K.legacyPricingNotice
-      }), e$ && e2(), e$ ? e3() : e1(), e$ && e4()]
+      }), e$ && e3(), e$ ? e2() : e1(), e$ && e4()]
     }), (0, r.jsxs)("div", {
       className: ev ? K.bodyColumnRight : void 0,
       children: [(0, r.jsx)(F.s, {
@@ -346,7 +346,7 @@ function et(e) {
       }), e$ && e1(), eX(), null != eT && !e_ && !e6 && (0, r.jsx)("div", {
         className: K.bodyText,
         children: ee(eT, b)
-      }), !e$ && e2(), !e$ && e3(), (0, r.jsx)("div", {
+      }), !e$ && e3(), !e$ && e2(), (0, r.jsx)("div", {
         children: eG && null != ew && null != eZ ? (0, r.jsxs)("div", {
           children: [(0, r.jsx)("div", {
             className: K.selectPlanDivider

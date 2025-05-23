@@ -1,4 +1,4 @@
-/** Chunk was on 1236 **/
+/** Chunk was on 60564 **/
 "use strict";
 n.d(t, {
   E: () => p,
@@ -13,7 +13,7 @@ var i = n(120356),
   l = n(410030),
   c = n(696936),
   u = n(903773),
-  d = n(232703);
+  d = n(734344);
 let p = {
   RIGHT: d.horizontalStatusWarningBlock,
   BOTTOM: d.verticalStatusWarningBlock

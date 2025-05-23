@@ -19,7 +19,7 @@ var r = n(255367),
   f = n(433355),
   p = n(384433),
   g = n(388032),
-  v = n(940471);
+  v = n(86931);
 let _ = e => [{
     id: p.e.ALL_MEMBERS,
     label: g.intl.string(g.t.NOOm1d)

@@ -1,4 +1,4 @@
-/** Chunk was on 998 **/
+/** Chunk was on 8787 **/
 n.d(t, {
   Z: () => g
 });
@@ -12,7 +12,7 @@ var r = n(481060),
   c = n(981631),
   d = n(474936),
   u = n(388032),
-  m = n(547571);
+  m = n(839058);
 let g = function(e) {
   let {
     hasAppliedGuildBoosts: t,

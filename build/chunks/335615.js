@@ -1,4 +1,4 @@
-/** Chunk was on 22231 **/
+/** Chunk was on 23445 **/
 n.d(t, {
   Z: () => eu
 }), n(388685);
@@ -50,7 +50,7 @@ var r = n(255367),
   q = n(998502),
   K = n(981631),
   X = n(388032),
-  Q = n(39985);
+  Q = n(11847);
 
 function J(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -139,7 +139,7 @@ let en = q.ZP.getEnableHardwareAcceleration(),
       (0, m.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("26881"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("97474")]).then(n.bind(n, 757387)), t = V.Z.isInChannel(G.Z.getVoiceChannelId(), u.id);
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387)), t = V.Z.isInChannel(G.Z.getVoiceChannelId(), u.id);
         return n => (0, r.jsx)(e, ee($({}, n), {
           user: u,
           guildId: C,

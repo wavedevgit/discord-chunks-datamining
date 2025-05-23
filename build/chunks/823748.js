@@ -1,4 +1,4 @@
-/** Chunk was on 22231 **/
+/** Chunk was on 23445 **/
 n.d(t, {
   Z: () => ts
 }), n(388685), n(539854);
@@ -77,7 +77,7 @@ var r = n(255367),
   ey = n(6025),
   ev = n(897473),
   ej = n(922482),
-  eO = n(504185),
+  eO = n(856393),
   eE = n(657218),
   eI = n(407908),
   eP = n(66556),
@@ -118,7 +118,7 @@ var r = n(255367),
   e6 = n(440493),
   e9 = n(157925),
   te = n(388032),
-  tt = n(22249);
+  tt = n(100658);
 
 function tn(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -202,7 +202,7 @@ class ta extends i.PureComponent {
     s()(null != i, "Missing user in Channel.openDMContextMenu"), (0, _.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("26881"), n.e("5639"), n.e("70205"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("3431")]).then(n.bind(n, 131404));
+      } = await Promise.all([n.e("79695"), n.e("5639"), n.e("70205"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("31084")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, ti(tr({}, n), {
         user: i,
         channelSelected: !0,
