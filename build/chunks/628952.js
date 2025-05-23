@@ -73,7 +73,18 @@ let I = e => {
     giftRecipientError: A
   } = (0, u.wD)(), N = (0, l.e7)([_.default], () => _.default.getCurrentUser()), C = (0, h.k)(S), P = i.useRef(null);
   if (null == S) return null;
-  let [R] = S.items, w = () => R.type === s.Z.AVATAR_DECORATION ? g.intl.string(g.t["7v0T9P"]) : R.type === s.Z.PROFILE_EFFECT ? g.intl.string(g.t.wR5wOj) : null, D = null != T && T.id !== (null == N ? void 0 : N.id), L = () => {
+  let [R] = S.items, w = () => {
+    switch (R.type) {
+      case s.Z.AVATAR_DECORATION:
+        return g.intl.string(g.t["7v0T9P"]);
+      case s.Z.PROFILE_EFFECT:
+        return g.intl.string(g.t.wR5wOj);
+      case s.Z.NAMEPLATE:
+        return g.intl.string(g.t.x5CoXV);
+      default:
+        return null
+    }
+  }, D = null != T && T.id !== (null == N ? void 0 : N.id) && R.type !== s.Z.NAMEPLATE, L = () => {
     null != t && null != b && b(t)
   };
   return (0, r.jsxs)("div", {

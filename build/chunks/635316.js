@@ -25,5 +25,5 @@ let o = (0, n.B)({
   l = e => o.useExperiment({
     location: e
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: !0
   }).canGiftNameplates
