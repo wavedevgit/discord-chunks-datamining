@@ -45,7 +45,7 @@ function T(e) {
   return e
 }
 
-function I(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = e => {
+let I = e => {
     let {
       userRecord: t,
       placement: n
@@ -81,7 +81,7 @@ let N = e => {
       text: O.intl.string(O.t.UnKHdn),
       shouldShow: !l,
       tooltipContentClassName: S.unsentTooltipContent,
-      children: e => (0, i.jsx)("div", I(T({
+      children: e => (0, i.jsx)("div", N(T({
         className: S.userAvatarProgressBarUnit
       }, e), {
         children: a
@@ -111,19 +111,19 @@ let N = e => {
     } = e, n = t.length, r = n < 1 ? null : t[0], s = n < 2 ? null : t[1], l = n < 3 ? null : t[2];
     return (0, i.jsxs)("div", {
       className: S.userAvatarProgressBarContainer,
-      children: [(0, i.jsx)(N, {
+      children: [(0, i.jsx)(I, {
         userRecord: r,
         placement: 1
       }), (0, i.jsx)(y, {
         numSentReferrals: n,
         placement: 1
-      }), (0, i.jsx)(N, {
+      }), (0, i.jsx)(I, {
         userRecord: s,
         placement: 2
       }), (0, i.jsx)(y, {
         numSentReferrals: n,
         placement: 2
-      }), (0, i.jsx)(N, {
+      }), (0, i.jsx)(I, {
         userRecord: l,
         placement: 3
       })]
@@ -139,7 +139,7 @@ let N = e => {
       let {
         default: e
       } = await n.e("47435").then(n.bind(n, 204387));
-      return n => (0, i.jsx)(e, I(T({}, n), {
+      return n => (0, i.jsx)(e, N(T({}, n), {
         sourceAnalyticsLocations: t
       }))
     })
@@ -155,21 +155,21 @@ let N = e => {
       location: "ReferralProgramProgressBar"
     }, {
       autoTrackExposure: !1
-    }), T = g === b.p.VARIANT_2, I = {
+    }), T = g === b.p.VARIANT_2, N = {
       redeemed: 0,
       converted: 0,
       sent: n.size
     };
     n.forEach(e => {
-      e === h.Fe.REDEEMED && I.redeemed++, e === h.Fe.CONVERTED && (I.redeemed++, I.converted++)
+      e === h.Fe.REDEEMED && N.redeemed++, e === h.Fe.CONVERTED && (N.redeemed++, N.converted++)
     });
-    let N = I.sent === _.Q,
+    let I = N.sent === _.Q,
       y = p.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: R
       } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       D = r.useRef(null),
-      Z = I.sent / _.Q * 100,
+      Z = N.sent / _.Q * 100,
       w = (0, i.jsxs)("div", {
         className: S.referralInfoContent,
         children: [(0, i.jsx)(E.ZP, {
@@ -185,7 +185,7 @@ let N = e => {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
             className: S.expandedProgressBarHeader,
             children: (0, C.$s)({
-              hasSentAll: N
+              hasSentAll: I
             })
           }), (0, i.jsx)(A, {
             userRecords: u
@@ -193,7 +193,7 @@ let N = e => {
             variant: t ? "text-sm/normal" : "text-lg/medium",
             children: (0, C.Hg)({
               helpdeskArticle: y,
-              referralsStatuses: I
+              referralsStatuses: N
             })
           }), (0, i.jsxs)("div", {
             className: l()(S.expandedProgressBarButtonContainer, {
@@ -222,13 +222,13 @@ let N = e => {
                   src: v,
                   alt: "",
                   className: S.expandedProgressBarSelectFriendsIcon
-                }), N ? O.intl.string(O.t.SY9tyM) : O.intl.string(O.t.Lm2nFR)]
+                }), I ? O.intl.string(O.t.SY9tyM) : O.intl.string(O.t.Lm2nFR)]
               })
             })]
           })]
         })]
       }),
-      k = I.redeemed === _.Q;
+      k = N.redeemed === _.Q;
     return (0, i.jsx)(d.Gt, {
       value: R,
       children: (0, i.jsx)("div", {

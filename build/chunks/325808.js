@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => I
+  Z: () => N
 });
 var i = n(255367),
   r = n(73800),
@@ -118,7 +118,7 @@ function T(e) {
   })
 }
 
-function I() {
+function N() {
   let {
     analyticsLocations: e
   } = (0, m.ZP)(), t = (0, a.e7)([p.Z], () => p.Z.getMode()), s = [{

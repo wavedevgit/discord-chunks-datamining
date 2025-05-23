@@ -27,8 +27,8 @@ var s = n(399606),
   S = n(74538),
   v = n(314684),
   T = n(687362),
-  I = n(943180),
-  N = n(229555),
+  N = n(943180),
+  I = n(229555),
   y = n(768865),
   A = n(119269),
   P = n(391110),
@@ -38,8 +38,8 @@ var s = n(399606),
   w = n(981631),
   k = n(215023),
   L = n(921944),
-  B = n(526761),
-  M = n(332325),
+  M = n(526761),
+  B = n(332325),
   U = n(388032),
   V = n(593595),
   G = n(660372),
@@ -80,13 +80,13 @@ let ex = () => {
     useKibibytes: !0
   }), i = (0, s.e7)([C.ZP], () => C.ZP.getPremiumTypeSubscription()), e_ = null != i ? S.ZP.getPremiumPlanItem(i) : null, ex = (null != e_ ? S.ZP.getSkuIdForPlan(e_.planId) : null) === D.Si.TIER_2, eE = E.default.getCurrentUser(), eC = (0, S.I5)(eE, D.p9.TIER_2), ej = (0, S.I5)(eE, D.p9.TIER_0), eO = (0, v.bq)({
     showAnimations: !0
-  }), eS = null != eO ? eO.initialPercentage : void 0, ev = null != eO ? eO.percentage : void 0, eT = (0, m.Z)(x.Z), eI = (0, h.H)("usePremiumPerksCards"), eN = (0, T.a)(), ey = (0, v.Kb)(Z.qY), {
+  }), eS = null != eO ? eO.initialPercentage : void 0, ev = null != eO ? eO.percentage : void 0, eT = (0, m.Z)(x.Z), eN = (0, h.H)("usePremiumPerksCards"), eI = (0, T.a)(), ey = (0, v.Kb)(Z.qY), {
     isFractionalPremiumActive: eA
   } = (0, u.Z)(), eP = null != i && i.hasPremiumAtLeast(D.p9.TIER_2), eR = (0, p.wE)(l.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eD = (0, f.Z)({
-    scrollPosition: B.Y_.TRY_IT_OUT,
+    scrollPosition: M.Y_.TRY_IT_OUT,
     analyticsLocations: e
   }), eZ = () => {
-    a.Z.open(w.oAB.VOICE, B.GA, {
+    a.Z.open(w.oAB.VOICE, M.GA, {
       openWithoutBackstack: !0,
       analyticsLocations: e
     })
@@ -94,7 +94,7 @@ let ex = () => {
     (0, b.uL)(w.Z5c.COLLECTIBLES_SHOP)
   }, ek = () => {
     a.Z.open(w.oAB.APPEARANCE, null, {
-      scrollPosition: B.h1.CUSTOM_APP_ICONS
+      scrollPosition: M.h1.CUSTOM_APP_ICONS
     })
   }, eL = {
     clientThemes: {
@@ -119,7 +119,7 @@ let ex = () => {
       descriptionCta: eT ? U.intl.string(U.t.jVcuVV) : U.intl.string(U.t.hvVgAQ),
       pillText: U.intl.string(U.t.EYxi0t),
       onCtaClick: eT ? () => {
-        (0, _.Z)(M.Z.CLIPS, {
+        (0, _.Z)(B.Z.CLIPS, {
           openWithoutBackstack: !0,
           analyticsLocations: e
         })
@@ -243,7 +243,7 @@ let ex = () => {
       perkImage: eh.Z,
       imageOverlayText: U.intl.string(U.t.lcYttb)
     },
-    specialMemberPricing: eI ? {
+    specialMemberPricing: eN ? {
       name: "specialMemberPricing",
       title: U.intl.string(U.t["0Mykgo"]),
       subtitle: U.intl.string(U.t.opgqDQ),
@@ -267,7 +267,7 @@ let ex = () => {
       isPremiumGetCta: !0,
       perkImage: eo
     },
-    specialMemberPricingSeeAllVariant: eI ? {
+    specialMemberPricingSeeAllVariant: eN ? {
       name: "specialMemberPricingSeeAllVariant",
       title: U.intl.string(U.t["0Mykgo"]),
       subtitle: U.intl.string(U.t.opgqDQ),
@@ -291,7 +291,7 @@ let ex = () => {
       isPremiumGetCta: !0,
       perkImage: ec
     },
-    specialShopPerks: eI ? {
+    specialShopPerks: eN ? {
       name: "specialShopPerks",
       title: U.intl.string(U.t.U68LpK),
       subtitle: U.intl.string(U.t.chRZiY),
@@ -464,7 +464,7 @@ let ex = () => {
       onCtaClick: ew
     }
   };
-  if (null != eN) {
+  if (null != eI) {
     let {
       title: t,
       subtitle: n,
@@ -472,7 +472,7 @@ let ex = () => {
       pillText: s,
       ctaDescription: l,
       dismissibleContentType: a
-    } = eN;
+    } = eI;
     eL.tenureRewardCollectible = {
       name: "tenureRewardCollectible",
       title: t,
@@ -505,13 +505,13 @@ let ex = () => {
     }
   }
   let {
-    enabled: eB
-  } = (0, I.D)();
-  return eB && eC && eP && (eL.tenureBadge = {
+    enabled: eM
+  } = (0, N.D)();
+  return eM && eC && eP && (eL.tenureBadge = {
     name: "tenureBadge",
     title: U.intl.string(U.t.rnsqpa),
     pillText: U.intl.string(U.t.jyYgZ2).toLocaleUpperCase(),
-    perkComponent: (0, r.jsx)(N.Z, {}),
+    perkComponent: (0, r.jsx)(I.Z, {}),
     cardVariant: P.zW.NITRO_GRADIENT_HOVER_BORDER,
     onClick: () => (0, y.k)({
       analyticsLocations: e

@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(556296),
   v = n(808506),
   T = n(63063),
-  I = n(358085),
-  N = n(13140),
+  N = n(358085),
+  I = n(13140),
   y = n(210887),
   A = n(659947),
   P = n(981631),
@@ -46,7 +46,7 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function B(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -59,7 +59,7 @@ function B(e) {
   return e
 }
 
-function M(e, t) {
+function B(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -86,7 +86,7 @@ class F extends r.PureComponent {
   renderMessage() {
     let {
       keybind: e
-    } = this.props, t = N.BB(e.shortcut);
+    } = this.props, t = I.BB(e.shortcut);
     return b.Z.hasBind(t) ? (0, i.jsx)(u.R94, {
       className: Z.keybindMessage,
       type: u.geA.DESCRIPTION,
@@ -153,7 +153,7 @@ class F extends r.PureComponent {
             className: Z.switch,
             children: (0, i.jsx)(u.ua7, {
               text: D.intl.string(D.t.uCD7qK),
-              children: e => (0, i.jsx)("div", M(B({}, e), {
+              children: e => (0, i.jsx)("div", B(M({}, e), {
                 children: (0, i.jsx)(u.rsf, {
                   checked: t,
                   onChange: this.handleEnableDisable
@@ -177,11 +177,11 @@ class F extends r.PureComponent {
   }
   constructor(...e) {
     super(...e), L(this, "handleActionChanged", e => {
-      m.Z.setKeybind(M(B({}, this.props.keybind), {
+      m.Z.setKeybind(B(M({}, this.props.keybind), {
         action: e
       }))
     }), L(this, "handleShortcutChange", e => {
-      m.Z.setKeybind(M(B({}, this.props.keybind), {
+      m.Z.setKeybind(B(M({}, this.props.keybind), {
         shortcut: e
       }))
     }), L(this, "handleDeleteKeybind", () => {
@@ -190,7 +190,7 @@ class F extends r.PureComponent {
       let {
         keybind: e
       } = this.props;
-      m.Z.setKeybind(M(B({}, this.props.keybind), {
+      m.Z.setKeybind(B(M({}, this.props.keybind), {
         enabled: !e.enabled
       }))
     })
@@ -250,10 +250,10 @@ class H extends r.PureComponent {
     }), s.push({
       value: P.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
       label: D.intl.string(D.t.hurHWl)
-    })), t && ((0, I.isWindows)() || O.Z.getUseSystemScreensharePicker()) && s.push({
+    })), t && ((0, N.isWindows)() || O.Z.getUseSystemScreensharePicker()) && s.push({
       value: P.kg4.TOGGLE_GO_LIVE_STREAMING,
       label: D.intl.string(D.t.ybdjJC)
-    }), (0, I.isDesktop)() && (s.push({
+    }), (0, N.isDesktop)() && (s.push({
       value: P.kg4.NAVIGATE_BACK,
       label: D.intl.string(D.t.gRSaOT)
     }, {
@@ -295,7 +295,7 @@ class H extends r.PureComponent {
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: !1
-    }).separateKeybind && (i[P.kg4.VAD_PRIORITY] = D.intl.string(D.t.rSe8IS)), (0, j.l)() && (i[P.kg4.TOGGLE_CAMERA] = D.intl.string(D.t.v1JBtL)), e && (i[P.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = D.intl.string(D.t.IoP5vb)), t && (0, I.isWindows)() && (i[P.kg4.TOGGLE_GO_LIVE_STREAMING] = D.intl.string(D.t.s4C239)), (0, I.isDesktop)() && (i[P.kg4.NAVIGATE_BACK] = D.intl.string(D.t.nKDlEh), i[P.kg4.NAVIGATE_FORWARD] = D.intl.string(D.t.DK0FFh), i[P.kg4.SOUNDBOARD] = (0, I.isWindows)() ? D.intl.string(D.t["5wJefH"]) : D.intl.string(D.t.gzjsSE), i[P.kg4.SOUNDBOARD_HOLD] = (0, I.isWindows)() ? D.intl.string(D.t.RRkZc3) : D.intl.string(D.t.laNlTk), n && (i[P.kg4.SAVE_CLIP] = D.intl.string(D.t.z3Wbam))), i
+    }).separateKeybind && (i[P.kg4.VAD_PRIORITY] = D.intl.string(D.t.rSe8IS)), (0, j.l)() && (i[P.kg4.TOGGLE_CAMERA] = D.intl.string(D.t.v1JBtL)), e && (i[P.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = D.intl.string(D.t.IoP5vb)), t && (0, N.isWindows)() && (i[P.kg4.TOGGLE_GO_LIVE_STREAMING] = D.intl.string(D.t.s4C239)), (0, N.isDesktop)() && (i[P.kg4.NAVIGATE_BACK] = D.intl.string(D.t.nKDlEh), i[P.kg4.NAVIGATE_FORWARD] = D.intl.string(D.t.DK0FFh), i[P.kg4.SOUNDBOARD] = (0, N.isWindows)() ? D.intl.string(D.t["5wJefH"]) : D.intl.string(D.t.gzjsSE), i[P.kg4.SOUNDBOARD_HOLD] = (0, N.isWindows)() ? D.intl.string(D.t.RRkZc3) : D.intl.string(D.t.laNlTk), n && (i[P.kg4.SAVE_CLIP] = D.intl.string(D.t.z3Wbam))), i
   }
   renderKeybinds(e) {
     return e.map(e => (0, i.jsx)("div", {
@@ -325,7 +325,7 @@ class H extends r.PureComponent {
       children: [(0, i.jsx)(u.hjN, {
         tag: u.RB0.H1,
         title: D.intl.string(D.t.T9DA2N),
-        children: I.isPlatformEmbedded ? (0, i.jsxs)(i.Fragment, {
+        children: N.isPlatformEmbedded ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsxs)(x.Z, {
             justify: x.Z.Justify.BETWEEN,
             className: k.marginBottom20,
@@ -427,7 +427,7 @@ function z() {
     keybinds: e,
     canGoLive: t,
     overlaySupported: n,
-    allowSoundboard: (0, I.isWindows)(),
+    allowSoundboard: (0, N.isWindows)(),
     enableClips: r
   })
 }

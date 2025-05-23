@@ -1,7 +1,7 @@
 /** Chunk was on 8787 **/
 n.d(t, {
   NA: () => L,
-  ZP: () => B,
+  ZP: () => M,
   y$: () => k
 });
 var i, r, s = n(230711),
@@ -26,8 +26,8 @@ var i, r, s = n(230711),
   S = n(751125),
   v = n(357003),
   T = n(904505),
-  I = n(712626),
-  N = n(386014),
+  N = n(712626),
+  I = n(386014),
   y = n(845571),
   A = n(220046),
   P = n(385874),
@@ -55,7 +55,7 @@ function w(e) {
 }
 var k = ((i = {}).SMALL = "small", i.MEDIUM = "medium", i.LARGE = "large", i),
   L = ((r = {}).NEW_APP_STYLES = "newAppStyles", r.REFERRAL_PROGRAM = "referralProgram", r.SERVER_PROFILES = "serverProfiles", r.SHOW_YOUR_STYLE = "showYourStyle", r.YOUR_SPACE = "yourSpace", r.EMOJIS = "emojis", r.NO_LIMITS = "noLimits", r.PERMADECOS = "permadecos", r);
-let B = () => {
+let M = () => {
   let {
     analyticsLocations: e
   } = (0, a.ZP)(l.Z.PREMIUM_MARKETING_BENTO_BOX), t = (0, o.Z)({
@@ -96,8 +96,8 @@ let B = () => {
         description: p.intl.format(p.t.jRPQUF, {
           learnMoreLink: i
         }),
-        previewImage: I.Z,
-        videoUrl: n ? T.ZP : N.ZP,
+        previewImage: N.Z,
+        videoUrl: n ? T.ZP : I.ZP,
         size: r === u.h.VARIANT_1 ? "medium" : r === u.h.VARIANT_2 ? "small" : "large"
       }, r === u.h.VARIANT_2 && {
         customVideoStyle: h.shareNitroVideo

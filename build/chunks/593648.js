@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(734934),
   v = n(223683),
   T = n(312400),
-  I = n(115345),
-  N = n(392888),
+  N = n(115345),
+  I = n(392888),
   y = n(106371),
   A = n(995774),
   P = n(921801),
@@ -37,8 +37,8 @@ var i = n(255367),
   w = n(912101),
   k = n(358085),
   L = n(709054),
-  B = n(695346),
-  M = n(675478),
+  M = n(695346),
+  B = n(675478),
   U = n(33656),
   V = n(726985),
   G = n(981631),
@@ -279,9 +279,9 @@ function J() {
             note: H.intl.string(H.t["z8Td4+"]),
             value: !e[t].disableRaidAlertNag,
             onChange: () => {
-              (0, M.PS)(t, e => {
+              (0, B.PS)(t, e => {
                 e.disableRaidAlertNag = !e.disableRaidAlertNag
-              }, M.fy.INFREQUENT_USER_ACTION)
+              }, B.fy.INFREQUENT_USER_ACTION)
             },
             hideBorder: !0,
             children: H.intl.string(H.t.u6dc5O)
@@ -295,9 +295,9 @@ function J() {
             note: H.intl.string(H.t.PyxXs7),
             value: !e[t].disableRaidAlertPush,
             onChange: () => {
-              (0, M.PS)(t, e => {
+              (0, B.PS)(t, e => {
                 e.disableRaidAlertPush = !e.disableRaidAlertPush
-              }, M.fy.INFREQUENT_USER_ACTION)
+              }, B.fy.INFREQUENT_USER_ACTION)
             },
             hideBorder: !0,
             children: H.intl.string(H.t.P8MG6u)
@@ -378,7 +378,7 @@ class $ extends r.PureComponent {
           title: H.intl.string(H.t.TTvjd3),
           children: [(0, i.jsx)(u.q4e, {
             value: t,
-            onChange: B.CM.updateSetting,
+            onChange: M.CM.updateSetting,
             options: g
           }), (0, i.jsx)(u.R94, {
             type: u.geA.DESCRIPTION,
@@ -528,7 +528,7 @@ function en() {
             setting: V.s6.NOTIFICATIONS_LAUNCH_MIGRATION,
             children: (0, i.jsx)(u.zxk, {
               onClick: () => {
-                (0, N.R)(!0)
+                (0, I.R)(!0)
               },
               children: "Launch Migration"
             })
@@ -553,14 +553,14 @@ function en() {
 async function ei(e) {
   e(!0);
   let t = await (0, v.Tn)();
-  0 === t.length ? await (0, I.oL)() : m.Z.show({
+  0 === t.length ? await (0, N.oL)() : m.Z.show({
     title: H.intl.string(H.t["cY+Ooa"]),
     body: H.intl.format(H.t["7zTJJS"], {
       date: new Date(t[t.length - 1].recorded_at)
     }),
     cancelText: H.intl.string(H.t["ETE/oK"]),
     confirmText: H.intl.string(H.t.Rm96T0),
-    onConfirm: I.oL
+    onConfirm: N.oL
   }), e(!1)
 }
 
@@ -582,7 +582,7 @@ function es() {
     notifyMessagesInSelectedChannel: D.Z.getNotifyMessagesInSelectedChannel()
   }));
   return (0, i.jsx)(er, q(K({}, e), {
-    afkTimeout: B.CM.useSetting()
+    afkTimeout: M.CM.useSetting()
   }))
 }
 
@@ -614,7 +614,7 @@ function el() {
       }), (0, i.jsx)(u.FXm, {
         options: r,
         onChange: e => {
-          B.YT.updateSetting(e.value)
+          M.YT.updateSetting(e.value)
         },
         value: t
       })]
@@ -625,7 +625,7 @@ function el() {
 }
 
 function ea() {
-  let e = B.fz.useSetting(),
+  let e = M.fz.useSetting(),
     t = [{
       name: H.intl.string(H.t["9x/Rtb"]),
       value: d.Ns.NOTIFICATIONS_ENABLED

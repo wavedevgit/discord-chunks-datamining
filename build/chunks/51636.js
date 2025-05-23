@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(658370),
   v = n(735825),
   T = n(981631),
-  I = n(921944),
-  N = n(388032),
+  N = n(921944),
+  I = n(388032),
   y = n(593595);
 
 function A(e) {
@@ -75,7 +75,7 @@ let R = {
       forceShadow: x,
       cardType: O,
       confettiCanvas: S
-    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [L, B] = r.useState(!1), [M, U] = r.useState(!1), V = (0, b.Er)(), G = (0, b.IB)(), [F, H] = r.useState(!1), [z, W] = r.useState(t === C.I.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE);
+    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [L, M] = r.useState(!1), [B, U] = r.useState(!1), V = (0, b.Er)(), G = (0, b.IB)(), [F, H] = r.useState(!1), [z, W] = r.useState(t === C.I.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE);
     r.useEffect(() => {
       t === C.I.TENURE_REWARD_COLLECTIBLE && G && (null == V ? void 0 : V.nitroTenureStatus) === v.EB.REDEEMABLE && W(!0)
     }, [G, t, V]);
@@ -114,11 +114,11 @@ let R = {
         null == w || w(), ei()
       } : void 0
     });
-    let es = X !== s || null == s || M || s === d.z.TENURE_REWARD_REDEEMABLE_CONFETTI;
+    let es = X !== s || null == s || B || s === d.z.TENURE_REWARD_REDEEMABLE_CONFETTI;
     return (r.useEffect(() => {
       k && L && (U(!0), f.default.track(T.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
         card_type: t
-      }), null != s && Q(I.L.TAKE_ACTION))
+      }), null != s && Q(N.L.TAKE_ACTION))
     }, [k, L, s, t, Q]), (0, g.Z)({
       type: o.ImpressionTypes.VIEW,
       name: o.ImpressionNames.PREMIUM_MARKETING_TENURE_REWARD_CARD,
@@ -199,16 +199,16 @@ let R = {
           [y.forceShadow]: x
         }),
         children: (0, i.jsxs)(u.P3F, {
-          onClick: () => B(!0),
+          onClick: () => M(!0),
           className: l()(y.flipCard, y.clickable, {
             [y.flipped]: L,
-            [y.partialFlipCard]: !M && !L,
+            [y.partialFlipCard]: !B && !L,
             [y.reducedMotion]: k
           }),
           onTransitionEnd: e => {
             L && "transform" === e.propertyName && e.target.classList.contains(y.flipCard) && (U(!0), f.default.track(T.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
               card_type: t
-            }), null != s && Q(I.L.TAKE_ACTION))
+            }), null != s && Q(N.L.TAKE_ACTION))
           },
           children: [(0, i.jsx)("div", {
             className: y.flipCardHidden,
@@ -227,8 +227,8 @@ let R = {
           }), (0, i.jsx)("div", {
             className: y.flipCardButtonContainer,
             children: (0, i.jsx)(u.zxk, {
-              onClick: () => B(!0),
-              children: N.intl.string(N.t.dcztdX)
+              onClick: () => M(!0),
+              children: I.intl.string(I.t.dcztdX)
             })
           })]
         })
@@ -258,11 +258,11 @@ let Z = r.forwardRef((e, t) => {
     pillText: C,
     perkImage: v,
     imageOverlayText: T
-  } = e, I = b === j.gM.CARD_CAROUSEL_FIRST_ROW || b === j.gM.CARD_CAROUSEL_SECOND_ROW || b === j.gM.CARD_CAROUSEL_THIRD_ROW, N = "" !== o || "" !== c || "" !== a && f === j.zW.REWARD, A = (0, x._)(f);
+  } = e, N = b === j.gM.CARD_CAROUSEL_FIRST_ROW || b === j.gM.CARD_CAROUSEL_SECOND_ROW || b === j.gM.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== a && f === j.zW.REWARD, A = (0, x._)(f);
   return (0, i.jsxs)(u.P3F, {
     className: l()(y.card, p, null == (n = A.cardContainer) ? void 0 : n.className, {
       [y.clickable]: null != _,
-      [y.hideOverflow]: I
+      [y.hideOverflow]: N
     }),
     onMouseEnter: g,
     style: {
@@ -280,14 +280,14 @@ let Z = r.forwardRef((e, t) => {
       titleClassName: s,
       subtitle: a,
       perkImage: v,
-      isCarousel: I,
+      isCarousel: N,
       descriptionCta: c,
       onCtaClick: m,
       perkComponent: h,
       subtitleClassName: y.cardSubtitle,
       cardVariant: f,
       imageOverlayText: T
-    }), N && (0, i.jsx)(S.Z, {
+    }), I && (0, i.jsx)(S.Z, {
       title: r,
       titleClassName: s,
       subtitle: a,

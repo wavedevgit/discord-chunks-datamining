@@ -24,8 +24,8 @@ var a = n(149765),
   S = n(218543),
   v = n(314897),
   T = n(944486),
-  I = n(914010),
-  N = n(449934),
+  N = n(914010),
+  I = n(449934),
   y = n(576376),
   A = n(38217),
   P = n(864631),
@@ -35,8 +35,8 @@ let D = new j.Z("CacheStore"),
   w = !1,
   k = "initializing",
   L = 0,
-  B = !1,
   M = !1,
+  B = !1,
   U = !1;
 
 function V(e) {
@@ -69,7 +69,7 @@ async function F(e, t, n) {
   D.verbose("loading early cache");
   let a = O.Z.getSocket();
   a.connect();
-  let c = null != (i = I.Z.getGuildId()) ? i : null,
+  let c = null != (i = N.Z.getGuildId()) ? i : null,
     u = null != (r = T.Z.getChannelId()) ? r : null,
     m = performance.now(),
     g = S.Z.loadCachedMessages.measureAsyncWithoutNesting(() => G(e, c, u)),
@@ -80,10 +80,10 @@ async function F(e, t, n) {
     j = null == e ? Promise.resolve([]) : l.Z.timeAsync("\uD83D\uDCBE", "cache: read_states", () => b.Z.getAll(e)),
     v = null == e ? Promise.resolve([]) : l.Z.timeAsync("\uD83D\uDCBE", "cache: user_guild_settings", () => _.Z.getAll(e)),
     [
-      [N, y], A, R, Z, w, k, L
+      [I, y], A, R, Z, w, k, L
     ] = await Promise.all([g, p, h, f, C, j, v]),
-    B = performance.now() - m;
-  if (D.verbose("cache loaded in ".concat(B, "ms (channel_history ").concat(N, "ms)")), null == y) return (0, P.Z)("database:history_cache_null"), D.verbose("finished without dispatching CACHE_LOADED"), [!1, null, 0];
+    M = performance.now() - m;
+  if (D.verbose("cache loaded in ".concat(M, "ms (channel_history ").concat(I, "ms)")), null == y) return (0, P.Z)("database:history_cache_null"), D.verbose("finished without dispatching CACHE_LOADED"), [!1, null, 0];
   {
     let i = Object.fromEntries(y.members.map(e => [e.userId, e])),
       r = null != R.guildId && null != R.channels,
@@ -186,7 +186,7 @@ async function Y(e, t, n, i) {
       });
       return
     }
-    if (M) {
+    if (B) {
       (0, P.Z)("already_connected"), D.log("Skipping lazy cache; already connected."), d.Z.dispatch({
         type: "CACHE_LOADED_LAZY_NO_CACHE"
       });
@@ -272,7 +272,7 @@ class q extends(i = o.ZP.Store) {
     Z || O.Z.getSocket().dispatcher.unpauseDispatchQueue()
   }
   hasCache() {
-    return !Z || B
+    return !Z || M
   }
   getLazyCacheStatus() {
     return Z ? k : "no-cache"
@@ -281,7 +281,7 @@ class q extends(i = o.ZP.Store) {
     return L
   }
   canWriteCaches(e) {
-    return (0, N.$8)() ? w ? (D.log("Not writing cache because caches cleared"), !1) : !!e || !!U || (D.log("Not writing cache because never connected"), !1) : (D.log("Not writing cache because not authenticated"), !1)
+    return (0, I.$8)() ? w ? (D.log("Not writing cache because caches cleared"), !1) : !!e || !!U || (D.log("Not writing cache because never connected"), !1) : (D.log("Not writing cache because not authenticated"), !1)
   }
   async loadCacheAsync(e, t) {
     let n = (0, y.h)(t);
@@ -317,23 +317,23 @@ s = "CacheStore", (r = "displayName") in q ? Object.defineProperty(q, r, {
   writable: !0
 }) : q[r] = s, new q(d.Z, Z ? {
   CONNECTION_OPEN: function() {
-    return M = !0, U = !0, !1
+    return B = !0, U = !0, !1
   },
   LOGOUT: V,
   CONNECTION_CLOSED: function() {
-    return M = !1, U = !0, !1
+    return B = !1, U = !0, !1
   },
   CACHE_LOADED: function() {
-    B = !0
+    M = !0
   },
   CACHE_LOADED_LAZY: function() {
-    B = !0, k = "cache-loaded"
+    M = !0, k = "cache-loaded"
   },
   CACHE_LOADED_LAZY_NO_CACHE: function() {
     k = "no-cache"
   },
   CLEAR_CACHES: V,
   WRITE_CACHES: function() {
-    D.verbose("Writing cache now"), L = Date.now(), B = !0, c.K.remove(R.FsG), c.K.remove(R.O42), c.K.remove(R.ihW)
+    D.verbose("Writing cache now"), L = Date.now(), M = !0, c.K.remove(R.FsG), c.K.remove(R.O42), c.K.remove(R.ihW)
   }
 } : {})

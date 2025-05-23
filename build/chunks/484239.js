@@ -31,10 +31,10 @@ let h = e => {
       subtitleClassName: v,
       imageOverlayText: T
     } = e,
-    I = (0, o._)(S),
-    N = (0, a.Er)(),
-    y = (null == N ? void 0 : N.nitroTenureStatus) === d.EB.REDEEMABLE;
-  switch (null == N ? void 0 : N.nitroTenureStatus) {
+    N = (0, o._)(S),
+    I = (0, a.Er)(),
+    y = (null == I ? void 0 : I.nitroTenureStatus) === d.EB.REDEEMABLE;
+  switch (null == I ? void 0 : I.nitroTenureStatus) {
     case d.EB.REDEEMABLE:
       n = p, r = "unlocked icon";
       break;
@@ -54,7 +54,7 @@ let h = e => {
     }), (0, i.jsx)(c.Z, {
       title: h,
       shouldShowElement: e => (null == e ? void 0 : e.onlyShowOnHover) !== !0,
-      cardVariantStyleInfo: I,
+      cardVariantStyleInfo: N,
       titleClassName: f,
       subtitle: j,
       subtitleClassName: v
@@ -82,7 +82,7 @@ let h = e => {
         fullWidth: !0,
         onClick: E,
         children: (0, i.jsxs)("div", {
-          className: null == I || null == (t = I.descriptionCta) ? void 0 : t.className,
+          className: null == N || null == (t = N.descriptionCta) ? void 0 : t.className,
           children: [(0, i.jsx)("img", {
             alt: r,
             src: n

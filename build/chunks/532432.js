@@ -35,22 +35,22 @@ function E(e) {
     disabled: S = !1,
     isTryItOutFlow: v = !1,
     forcedDivider: T,
-    withHighlight: I = !1
+    withHighlight: N = !1
   } = e, {
-    newestAnalyticsLocation: N
-  } = (0, c.ZP)(), y = I ? o.gtL : o.zxk, A = (0, u.T)({
+    newestAnalyticsLocation: I
+  } = (0, c.ZP)(), y = N ? o.gtL : o.zxk, A = (0, u.T)({
     location: "AvatarSection"
   }), P = [];
   A && P.push(a.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE);
   let [R, D] = (0, d.US)(P), Z = R === a.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE, w = r.useCallback(() => {
     D(p.L.TAKE_ACTION), (0, m.$r)({
       uploadType: h.pC.AVATAR,
-      analyticsSource: N,
+      analyticsSource: I,
       filters: v ? x : void 0,
       guildId: j,
       isTryItOutFlow: v
     })
-  }, [j, N, v, D]);
+  }, [j, I, v, D]);
   return (0, i.jsx)(g.Z, {
     className: O,
     title: E,
@@ -69,7 +69,7 @@ function E(e) {
       className: _.buttonsContainer,
       children: [(0, i.jsx)(y, {
         className: l()({
-          [_.buttonHighlighted]: I
+          [_.buttonHighlighted]: N
         }),
         size: o.zxk.Sizes.SMALL,
         onClick: w,

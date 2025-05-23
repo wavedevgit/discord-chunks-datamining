@@ -27,10 +27,10 @@ var r = n(442837),
   S = n(919539),
   v = n(726985),
   T = n(583139),
-  I = n(981631),
-  N = n(388032);
+  N = n(981631),
+  I = n(388032);
 let y = () => (0, i.jsx)(_.Z, {
-    title: N.intl.string(N.t["y62Z/f"]),
+    title: I.intl.string(I.t["y62Z/f"]),
     webSetting: v.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
     children: (0, i.jsxs)(b.Z, {
       children: [(0, i.jsx)(s.F, {
@@ -40,12 +40,12 @@ let y = () => (0, i.jsx)(_.Z, {
     })
   }),
   A = () => (0, i.jsxs)(_.Z, {
-    title: N.intl.string(N.t.xVRG4O),
+    title: I.intl.string(I.t.xVRG4O),
     webSetting: v.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
     children: [(0, i.jsx)(g.P, {}), (0, i.jsx)(m.Z, {}), (0, i.jsx)(h.Z, {}), (0, i.jsx)(u.Z, {}), (0, i.jsx)(c.Z, {}), (0, i.jsx)(E.Z, {})]
   }),
   P = () => (0, i.jsxs)(_.Z, {
-    title: N.intl.string(N.t["1Qn8iY"]),
+    title: I.intl.string(I.t["1Qn8iY"]),
     webSetting: v.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
     children: [(0, i.jsx)(p.Z, {}), (0, i.jsx)(x.ZP, {})]
   }),
@@ -56,19 +56,19 @@ let y = () => (0, i.jsx)(_.Z, {
 function D() {
   let e = (0, r.e7)([l.Z], () => l.Z.getSubsection()),
     t = [{
-      title: N.intl.string(N.t["/7xJCA"]),
+      title: I.intl.string(I.t["/7xJCA"]),
       component: R,
       setting: v.s6.CONTENT_SOCIAL_DISCORD_TAB
     }, {
-      title: N.intl.string(N.t.h1hqj4),
+      title: I.intl.string(I.t.h1hqj4),
       component: d.Z,
       setting: v.s6.CONTENT_SOCIAL_CONNECTED_GAMES
     }];
   return (0, i.jsx)(a.N, {
-    header: N.intl.string(N.t["+o1pDQ"]),
+    header: I.intl.string(I.t["+o1pDQ"]),
     children: (0, i.jsx)(o.Z, {
       parentSetting: v.s6.CONTENT_SOCIAL,
-      settingsSection: I.oAB.CONTENT_AND_SOCIAL,
+      settingsSection: N.oAB.CONTENT_AND_SOCIAL,
       tabs: t,
       defaultTabIndex: e === T.C ? 1 : void 0
     })

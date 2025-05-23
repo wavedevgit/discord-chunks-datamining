@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(140465),
   v = n(278605),
   T = n(585612),
-  I = n(286961),
-  N = n(91802),
+  N = n(286961),
+  I = n(91802),
   y = n(639119),
   A = n(8647),
   P = n(784238),
@@ -37,8 +37,8 @@ var i = n(255367),
   w = n(218390),
   k = n(823188),
   L = n(611116),
-  B = n(135785),
-  M = n(498765),
+  M = n(135785),
+  B = n(498765),
   U = n(635921),
   V = n(177839),
   G = n(349803),
@@ -77,7 +77,7 @@ let ed = e => {
       isFullscreen: t,
       inOfferExperience: n
     } = e;
-    return t || n ? (0, i.jsx)(M.Z, {
+    return t || n ? (0, i.jsx)(B.Z, {
       lifted: !t && n
     }) : null
   },
@@ -122,7 +122,7 @@ let ed = e => {
       entrypoint: L
     } = e;
     (0, _.z)(b.X);
-    let M = L === J.EZ.ApplicationStoreHome,
+    let B = L === J.EZ.ApplicationStoreHome,
       V = r.useRef(null),
       Y = r.useRef(null),
       K = r.useRef(null),
@@ -137,26 +137,26 @@ let ed = e => {
       eE = (0, O.I5)(ex),
       eC = (0, v.xP)("PremiumMarketingHome"),
       ej = (0, T.C)("PremiumMarketingHome"),
-      eO = (eC && !eE || eE && ej) && M,
+      eO = (eC && !eE || eE && ej) && B,
       [eS, ev] = r.useState(!1),
-      [eT, eI] = r.useState(!1),
-      [eN, ey] = r.useState(!1),
+      [eT, eN] = r.useState(!1),
+      [eI, ey] = r.useState(!1),
       [eA, eP] = r.useState(!1),
       eR = (0, j.rO)(),
       [eD, eZ] = r.useState(!1),
       ew = (0, a.e7)([E.ZP], () => E.ZP.getPremiumTypeSubscription()),
       ek = null != ew ? (0, O.Af)(ew) : null,
       eL = null != ek ? O.ZP.getSkuIdForPlan(ek.planId) : null,
-      eB = null !== eL && eL !== J.Si.TIER_2 ? J.Si.TIER_2 : null,
-      eM = (0, N.n)(),
-      eU = null != eM,
+      eM = null !== eL && eL !== J.Si.TIER_2 ? J.Si.TIER_2 : null,
+      eB = (0, I.n)(),
+      eU = null != eB,
       [eV, eG] = r.useState(!1),
       eF = (0, y.N)(),
       eH = null == eF || null == (t = eF.subscription_trial) ? void 0 : t.sku_id,
       ez = (0, S.Nx)(),
       eW = (0, Z.Vi)(),
       eY = null != eW && eW,
-      eK = null == (n = (0, I.Z)()) ? void 0 : n.billingSettingsMarketingBanner,
+      eK = null == (n = (0, N.Z)()) ? void 0 : n.billingSettingsMarketingBanner,
       {
         analyticsLocations: eq
       } = (0, h.ZP)(p.Z.PREMIUM_MARKETING),
@@ -237,7 +237,7 @@ let ed = e => {
           src: ei,
           className: en.heroHeaderBackgroundStars,
           alt: ""
-        }), !eO && (0, i.jsx)(B.Z, {
+        }), !eO && (0, i.jsx)(M.Z, {
           premiumSubscription: ew,
           className: l()(s ? en.fullscreenExistingSubscriberSpacing : en.existingSubscriberSpacing, {
             [en.zIndex1]: ez
@@ -247,7 +247,7 @@ let ed = e => {
           isFullscreen: s,
           inOfferExperience: ez
         }), !s && eU ? (0, i.jsx)(D.Z, {
-          localizedPricingPromo: eM,
+          localizedPricingPromo: eB,
           smallGap: !0
         }) : (0, i.jsxs)("div", {
           className: l()({
@@ -260,13 +260,13 @@ let ed = e => {
             active: !0,
             children: eO ? (0, i.jsx)(W.Z, {
               ref: Q,
-              subscriptionTier: eB,
+              subscriptionTier: eM,
               isFullscreen: s || ez,
               entrypoint: L,
               isDarkMode: e_
             }) : (0, i.jsx)(U.ZP, {
               ref: eg,
-              subscriptionTier: eB,
+              subscriptionTier: eM,
               isFullscreen: s || ez,
               isMarketingPageV2Enabled: eO,
               className: l()({
@@ -301,7 +301,7 @@ let ed = e => {
           children: [(0, i.jsx)(A.Z, {
             isFullScreen: s
           }), s && eU && (0, i.jsx)(R.Z, {
-            localizedPricingPromo: eM
+            localizedPricingPromo: eB
           })]
         }), !eO && eQ, L === J.EZ.UserSettings && null != eK && (0, i.jsx)(w.C, {
           className: en.giftPromoCard,
@@ -340,9 +340,9 @@ let ed = e => {
         }), !eO && (0, i.jsx)("div", {
           className: s ? en.footerSpacingFullscreen : en.footerSpacing
         }), (0, i.jsx)(G.Z, {
-          isVisible: !eS && !eN && !eT && eD,
+          isVisible: !eS && !eI && !eT && eD,
           isFullscreen: s,
-          subscriptionTier: eB,
+          subscriptionTier: eM,
           isMarketingPageV2: eO
         }), (0, i.jsx)(o.$, {
           innerRef: ep,
@@ -364,14 +364,14 @@ let ed = e => {
         }), eO && (0, i.jsx)(o.$, {
           innerRef: eh,
           onChange: e => {
-            eI(e)
+            eN(e)
           },
           children: (0, i.jsx)(z.Z, {
             ref: eh,
             isFooterVisible: eT,
             isDarkMode: e_,
             isReducedMotion: ef,
-            subscriptionTier: eB
+            subscriptionTier: eM
           })
         })]
       });

@@ -1,7 +1,7 @@
 /** Chunk was on 8787 **/
 n.d(t, {
   Z: () => ee
-});
+}), n(388685);
 var i = n(255367),
   r = n(73800),
   s = n(873546),
@@ -26,19 +26,19 @@ var i = n(255367),
   S = n(867176),
   v = n(537006),
   T = n(483517),
-  I = n(483424),
-  N = n(681837),
+  N = n(483424),
+  I = n(681837),
   y = n(638970),
   A = n(502762),
   P = n(530),
   R = n(309494),
   D = n(4517),
   Z = n(420654),
-  w = n(537428),
+  w = n(785184),
   k = n(695346),
   L = n(158776),
-  B = n(246946),
-  M = n(572004),
+  M = n(246946),
+  B = n(572004),
   U = n(5192),
   V = n(74538),
   G = n(7093),
@@ -104,7 +104,7 @@ function ee(e) {
     }, {
       autoTrackExposure: !1
     }),
-    eg = (0, l.e7)([B.Z], () => B.Z.hidePersonalInformation),
+    eg = (0, l.e7)([M.Z], () => M.Z.hidePersonalInformation),
     ep = (0, h.p)(),
     eh = k.Sb.useSetting(),
     ef = (0, W.I)(ec),
@@ -121,12 +121,19 @@ function ee(e) {
     }),
     ej = r.useRef((0, G.Z)(e => e.shouldRenderTenureLevelUp)),
     eO = r.useMemo(() => (0, g.Z)(), []),
-    eS = e => {
+    [eS, ev] = r.useState(!0);
+  r.useEffect(() => {
+    setTimeout(() => {
+      ev(!1)
+    }, 500)
+  }, []);
+  let eT = e => {
       null == n || n(), (0, C.openUserProfileModal)($({
         customStatusPrompt: eO,
         sourceAnalyticsLocations: es
       }, el, e))
-    };
+    },
+    eN = (null == er ? void 0 : er.profileEffectId) != null && !ej.current;
   return (0, i.jsx)(u.Gt, {
     value: es,
     children: (0, i.jsx)(_.Mt, {
@@ -153,7 +160,7 @@ function ee(e) {
               user: t,
               displayProfile: er,
               themeType: q.lY.POPOUT,
-              onOpenProfile: ei ? void 0 : eS
+              onOpenProfile: ei ? void 0 : eT
             }), (0, i.jsx)(D.Z, {
               location: "UserProfileAccountPopout",
               user: t,
@@ -161,16 +168,19 @@ function ee(e) {
               onCloseProfile: n,
               prompt: eE ? eO : null
             })]
-          }), (null == er ? void 0 : er.profileEffectId) != null && (0, i.jsx)(b.Z, {
+          }), eN && (0, i.jsx)(b.Z, {
             profileEffectId: null == er ? void 0 : er.profileEffectId,
             isHovering: eo
           }), (0, i.jsxs)(a.Ttm, {
             className: Q.body,
+            style: {
+              pointerEvents: eS ? "none" : void 0
+            },
             children: [(0, i.jsx)(P.Z, {
               user: t,
               className: Q.username,
               nickname: U.ZP.getName(null, null, t),
-              onOpenProfile: ei ? void 0 : eS,
+              onOpenProfile: ei ? void 0 : eT,
               pronouns: null == er ? void 0 : er.pronouns,
               tags: (0, i.jsx)(O.Z, {
                 displayProfile: er,
@@ -180,7 +190,7 @@ function ee(e) {
                 shouldGlowTenureBadge: ej.current
               }),
               nicknameIcons: (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(N.Z, {
+                children: [(0, i.jsx)(I.Z, {
                   userId: t.id
                 }), (0, i.jsx)(R.Z, {
                   user: t,
@@ -199,8 +209,8 @@ function ee(e) {
               user: t,
               currentUser: t,
               displayProfile: er,
-              onOpenUserProfileModal: eS
-            }) : (0, i.jsx)(I.Z, {
+              onOpenUserProfileModal: eT
+            }) : (0, i.jsx)(N.Z, {
               user: t,
               currentUser: t,
               displayProfile: er,
@@ -320,7 +330,7 @@ function ee(e) {
                         children: eb
                       })
                     }
-                  }), !__OVERLAY__ && M.wS && eh && (0, i.jsxs)(i.Fragment, {
+                  }), !__OVERLAY__ && B.wS && eh && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(T.Z, {
                       className: Q.menuDivider
                     }), (0, i.jsx)(H.V4, {
@@ -329,7 +339,7 @@ function ee(e) {
                       icon: a.VuL,
                       label: X.intl.string(X.t["/AXYnJ"]),
                       onClick: () => {
-                        (0, M.JG)(t.id), n()
+                        (0, B.JG)(t.id), n()
                       }
                     })]
                   })]

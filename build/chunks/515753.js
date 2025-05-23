@@ -29,8 +29,8 @@ var i = n(255367),
   S = n(201895),
   v = n(43267),
   T = n(933557),
-  I = n(163889),
-  N = n(111028),
+  N = n(163889),
+  I = n(111028),
   y = n(540059),
   A = n(853856),
   P = n(93687),
@@ -40,8 +40,8 @@ var i = n(255367),
   w = n(379839),
   k = n(359135),
   L = n(516817),
-  B = n(273388),
-  M = n(878857),
+  M = n(273388),
+  B = n(878857),
   U = n(518950),
   V = n(199902),
   G = n(158776),
@@ -177,7 +177,7 @@ let en = q.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
       listItemRef: E
     } = e, C = et(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
     let O = (0, y.Q3)("PrivateChannelLinkButton");
-    return (0, i.jsx)(I.Z, {
+    return (0, i.jsx)(N.Z, {
       className: l()(J.channel, {
         [J.fullWidth]: u.tq
       }, f),
@@ -241,13 +241,13 @@ function ec(e) {
     user: u,
     size: g.EFr.SIZE_32,
     animateOnHover: !(a || K || eo)
-  }), ef = t.isMultiUserDM(), eb = t.isSystemDM(), e_ = (0, M.Q)(), ex = !ef && !eb && t.type === X.d4z.DM, eE = ex && (null == u ? void 0 : u.primaryGuild) != null, eC = (0, m.e7)([W.ZP], () => W.ZP.isChannelMuted(t.getGuildId(), t.id)), {
+  }), ef = t.isMultiUserDM(), eb = t.isSystemDM(), e_ = (0, B.Q)(), ex = !ef && !eb && t.type === X.d4z.DM, eE = ex && (null == u ? void 0 : u.primaryGuild) != null, eC = (0, m.e7)([W.ZP], () => W.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: ej,
     blocked: eO
   } = (0, m.cj)([H.Z], () => ({
     ignored: H.Z.isIgnored(t.getRecipientId()),
     blocked: H.Z.isBlocked(t.getRecipientId())
-  })), eS = ex && ej, ev = ex && eO, eT = (eC || eS || ev) && !(a || K), eI = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eN = (0, T.ZP)(t), ey = (0, m.e7)([A.Z], () => A.Z.isFavorite(t.id)), eA = (0, B.L)("PrivateChannel"), eP = null != V && (a || K), eR = () => {
+  })), eS = ex && ej, ev = ex && eO, eT = (eC || eS || ev) && !(a || K), eN = (0, m.e7)([F.ZP], () => F.ZP.getMentionCount(t.id) > 0), eI = (0, T.ZP)(t), ey = (0, m.e7)([A.Z], () => A.Z.isFavorite(t.id)), eA = (0, M.L)("PrivateChannel"), eP = null != V && (a || K), eR = () => {
     q(!0)
   }, eD = () => {
     q(!1)
@@ -260,9 +260,9 @@ function ec(e) {
     null != e && (e.preventDefault(), e.stopPropagation()), p.Z.closePrivateChannel(t.id, a, n)
   }, eL = () => {
     p.Z.preload(X.ME, t.id)
-  }, eB = e => {
-    e.stopPropagation()
   }, eM = e => {
+    e.stopPropagation()
+  }, eB = e => {
     if (e.target === e.currentTarget) {
       var t;
       null == (t = ed.current) || t.click()
@@ -291,15 +291,15 @@ function ec(e) {
   }, eV = e => {
     e.preventDefault(), e.stopPropagation();
     let r = Q.intl.formatToPlainString(Q.t.hJ5Ap6, {
-        name: eN
+        name: eI
       }),
       s = Q.intl.format(Q.t.SSIVOj, {
-        name: eN
+        name: eI
       });
     t.isManaged() && (r = Q.intl.formatToPlainString(Q.t.hVGjER, {
-      name: eN
+      name: eI
     }), s = Q.intl.format(Q.t.IK1Qvr, {
-      name: eN
+      name: eI
     })), (0, g.ZDy)(async () => {
       let {
         default: e
@@ -363,21 +363,21 @@ function ec(e) {
       statusTooltip: !0
     }))
   }, eH = eE ? (0, i.jsxs)(i.Fragment, {
-    children: [eN, (0, i.jsx)(D.ZP, {
+    children: [eI, (0, i.jsx)(D.ZP, {
       primaryGuild: null == u ? void 0 : u.primaryGuild,
       userId: null == u ? void 0 : u.id,
       inline: !0,
       disableGuildProfile: !0,
       className: J.clanTag
     })]
-  }) : eN, ez = r.useRef(null);
+  }) : eI, ez = r.useRef(null);
   return (0, i.jsx)(d.mh, {
     id: t.id,
     children: e => {
       var {
         role: n
       } = e, r = et(e, ["role"]);
-      return (0, i.jsxs)(I.Z, {
+      return (0, i.jsxs)(N.Z, {
         className: l()(J.channel, J.dm),
         role: n,
         focusProps: ee($({}, ei), {
@@ -393,7 +393,7 @@ function ec(e) {
         onContextMenu: eU,
         "aria-setsize": Y,
         "aria-posinset": z,
-        children: [eA && eI ? (0, i.jsx)("div", {
+        children: [eA && eN ? (0, i.jsx)("div", {
           className: l()(J.unreadPill, {
             [J.muted]: eT
           })
@@ -403,7 +403,7 @@ function ec(e) {
             [J.interactiveSelected]: a
           }),
           as: "div",
-          onClick: eM,
+          onClick: eB,
           muted: eT,
           selected: a,
           children: [(0, i.jsx)(L.Z, {
@@ -420,16 +420,16 @@ function ec(e) {
             }),
             "aria-label": (0, S.ZP)({
               channel: t,
-              unread: eI
+              unread: eN
             })
           }, r), {
             children: (0, i.jsx)(j.Z, {
               ref: ez,
               avatar: eF(),
-              highlighted: eI && !(eA && eT),
+              highlighted: eN && !(eA && eT),
               muted: eT,
               subText: eG(),
-              name: (0, i.jsx)(N.Z, {
+              name: (0, i.jsx)(I.Z, {
                 tooltipClassName: J.overflowTooltip,
                 children: eH
               }),
@@ -442,7 +442,7 @@ function ec(e) {
           })), ey ? (0, i.jsx)(es, {}) : null, eS ? (0, i.jsx)(el, {}) : null, ev ? (0, i.jsx)(ea, {}) : null, (0, i.jsx)(er, {
             "aria-label": ef ? Q.intl.string(Q.t["26C4oq"]) : Q.intl.string(Q.t.jsvgc3),
             onClick: ef ? eV : ek,
-            onMouseDown: eB,
+            onMouseDown: eM,
             nameplate: V
           })]
         })]

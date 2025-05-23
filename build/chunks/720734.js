@@ -27,8 +27,8 @@ var i = n(255367),
   S = n(634894),
   v = n(586902),
   T = n(980591),
-  I = n(468363),
-  N = n(326255),
+  N = n(468363),
+  I = n(326255),
   y = n(771173),
   A = n(963056),
   P = n(570928),
@@ -38,8 +38,8 @@ var i = n(255367),
   w = n(1585),
   k = n(304761),
   L = n(865427),
-  B = n(358221),
-  M = n(571250),
+  M = n(358221),
+  B = n(571250),
   U = n(628581),
   V = n(55311),
   G = n(575175),
@@ -81,8 +81,8 @@ var i = n(255367),
   eS = n(184301),
   ev = n(52538),
   eT = n(670188),
-  eI = n(321614),
-  eN = n(879815),
+  eN = n(321614),
+  eI = n(879815),
   ey = n(294629),
   eA = n(875527),
   eP = n(56848),
@@ -92,8 +92,8 @@ var i = n(255367),
   ew = n(306609),
   ek = n(199902),
   eL = n(314897),
-  eB = n(592125),
-  eM = n(831506),
+  eM = n(592125),
+  eB = n(831506),
   eU = n(819640),
   eV = n(131951),
   eG = n(19780),
@@ -325,7 +325,7 @@ class tu extends r.PureComponent {
       userTag: l,
       customStatusHoverOnlyRTCEntrypointEnabled: d
     });
-    if ((0, N.Z)({
+    if ((0, I.Z)({
         activities: t,
         status: s,
         applicationStream: n,
@@ -541,7 +541,7 @@ class tu extends r.PureComponent {
         return () => {
           let {
             enabledInputProfiles: n
-          } = (0, eI.c)({
+          } = (0, eN.c)({
             location: "Account"
           });
           return (0, i.jsx)(D.Gt, {
@@ -753,9 +753,9 @@ function tg() {
       decoration: "never"
     }),
     p = (0, d.e7)([ez.Z], () => ez.Z.hidePersonalInformation),
-    h = (0, d.e7)([eG.Z, eB.Z], () => {
+    h = (0, d.e7)([eG.Z, eM.Z], () => {
       let e = eG.Z.getChannelId();
-      return null != e ? eB.Z.getChannel(e) : null
+      return null != e ? eM.Z.getChannel(e) : null
     }),
     {
       mute: f,
@@ -765,18 +765,18 @@ function tg() {
     {
       selfDeaf: C,
       deaf: j
-    } = (0, eN.Z)(h),
+    } = (0, eI.Z)(h),
     T = (0, d.e7)([k.C], () => {
       var e;
       return (0, L.fD)() ? null == (e = k.C.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
     }),
-    N = (0, d.e7)([eY.ZP], () => eY.ZP.getPremiumTypeSubscription()),
+    I = (0, d.e7)([eY.ZP], () => eY.ZP.getPremiumTypeSubscription()),
     y = (0, d.e7)([eV.Z], () => eV.Z.getSpeakingWhileMuted()),
-    A = (0, d.e7)([B.Z], () => B.Z.isFullscreenInContext()),
+    A = (0, d.e7)([M.Z], () => M.Z.isFullscreenInContext()),
     P = (0, d.e7)([eU.Z], () => eU.Z.hasLayers()),
     Z = (0, _.s9z)(_.JQI) || P || e1.s.isDisallowPopupsSet() || A,
     w = (0, em.b)(),
-    M = (0, d.e7)([et.Z], () => null != et.Z.getAwaitingRemoteSessionInfo()),
+    B = (0, d.e7)([et.Z], () => null != et.Z.getAwaitingRemoteSessionInfo()),
     U = (0, d.e7)([eF.Z], () => eF.Z.getGuildId()),
     V = (0, e_.D)(),
     G = (0, O.u)(),
@@ -784,7 +784,7 @@ function tg() {
     H = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e7.rL,
     {
       voiceActivityStatusEnabled: z
-    } = (0, I.U)({
+    } = (0, N.U)({
       location: "Account"
     }),
     W = (0, es.m)(),
@@ -838,13 +838,13 @@ function tg() {
     ec = (0, eb.Ws)({
       location: te.dr.CONFLICT_CHECKS
     }),
-    ed = (0, d.e7)([eO.Z, eW.default, eM.Z], () => {
+    ed = (0, d.e7)([eO.Z, eW.default, eB.Z], () => {
       let e, t = eO.Z.getSyncingWith(),
         n = eO.Z.getActivity(),
         i = [];
       if (null != t ? e = t.partyId : null != n && null != n.party && null != n.party.id && (e = n.party.id), null != e) {
         var r;
-        i = o()(Array.from(null != (r = eM.Z.getParty(e)) ? r : [])).map(e => eW.default.getUser(e)).filter(e$.lm).value()
+        i = o()(Array.from(null != (r = eB.Z.getParty(e)) ? r : [])).map(e => eW.default.getUser(e)).filter(e$.lm).value()
       }
       return i.length > 1
     }),
@@ -870,7 +870,7 @@ function tg() {
       userTag: g,
       hidePrivateData: p,
       occluded: Z,
-      premiumSubscription: N,
+      premiumSubscription: I,
       selfDeaf: C,
       selfMute: b,
       serverDeaf: j,
@@ -881,7 +881,7 @@ function tg() {
       streaming: l,
       suppress: E,
       webBuildOverride: T,
-      awaitingRemote: M,
+      awaitingRemote: B,
       isEligibleForPomelo: w,
       voiceActivityStatusEnabled: z,
       nameplate: ea,
@@ -952,13 +952,13 @@ function th(e) {
     onContextMenu: C,
     nameplate: j,
     accountContainerRef: O
-  } = e, S = t || s || n, v = r.useRef(null), T = r.useRef(null), I = (0, p.O)(S ? "unmute" : "mute"), N = (0, h.P)(S ? "unmute" : "mute"), {
+  } = e, S = t || s || n, v = r.useRef(null), T = r.useRef(null), N = (0, p.O)(S ? "unmute" : "mute"), I = (0, h.P)(S ? "unmute" : "mute"), {
     activeVoice: y
   } = (0, eR.o)(), A = null != y, P = (0, eP.z)(y), Z = (0, d.e7)([eG.Z], () => eG.Z.isConnected()), {
     Component: w,
     events: k,
     play: L
-  } = A ? N : I, B = n || s ? _.v0G : w, M = null != o ? o : (0, U.Z)(t, n, s, a), {
+  } = A ? I : N, M = n || s ? _.v0G : w, B = null != o ? o : (0, U.Z)(t, n, s, a), {
     analyticsLocations: V
   } = (0, D.ZP)(R.Z.AUDIO_INPUT_BUTTON), G = (0, eA.Hu)({
     location: R.Z.AUDIO_INPUT_BUTTON,
@@ -988,7 +988,7 @@ function th(e) {
       ref: v,
       className: tn.micButtonParent,
       children: [(0, i.jsx)(e2.Z, {
-        tooltipText: M,
+        tooltipText: B,
         tooltipColor: u,
         tooltipForceOpen: m,
         plated: null != j,
@@ -998,7 +998,7 @@ function th(e) {
         onMouseLeave: () => {
           x(), k.onMouseLeave()
         },
-        icon: (0, i.jsx)(B, {
+        icon: (0, i.jsx)(M, {
           size: "custom",
           width: 20,
           height: 20,
@@ -1130,7 +1130,7 @@ function tf(e) {
     value: x,
     children: (0, i.jsx)(e2.Z, {
       plated: null != d,
-      tooltipText: (0, M.Z)(t, n, s),
+      tooltipText: (0, B.Z)(t, n, s),
       onMouseEnter: h,
       onMouseLeave: f,
       icon: (0, i.jsx)(b, {
