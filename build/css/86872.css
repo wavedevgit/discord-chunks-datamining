@@ -1,6 +1,6 @@
 /**
   Module ID: 86872
-  Original File Name: 8fbad42dbf133cf5
+  Original File Name: 56a5d677dd592243
 **/
 .editProfileContainer__42179 {
     background-color: var(--background-secondary);
@@ -171,6 +171,7 @@
 .container__9b0f4 {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
     position: relative
 }
 
@@ -349,4 +350,4 @@
     min-width: 16px
 }
 
-/*# sourceMappingURL=8fbad42dbf133cf5.css.map*/
+/*# sourceMappingURL=56a5d677dd592243.css.map*/
