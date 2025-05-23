@@ -28,8 +28,8 @@ function x(e) {
     height: T
   } = (0, m.h)(), {
     expansionSpring: O,
-    isAnimating: E,
-    isExpanded: N,
+    isAnimating: N,
+    isExpanded: E,
     toggleExpanded: q
   } = (0, m.O)({
     initiallyExpanded: x || (0, c.iM)({
@@ -65,8 +65,8 @@ function x(e) {
           quest: t,
           size: y,
           expansionSpring: O,
-          isAnimating: E,
-          isExpanded: N,
+          isAnimating: N,
+          isExpanded: E,
           contentPosition: g,
           toggleExpanded: q
         }), (0, r.jsx)(u.Z, {
@@ -75,8 +75,8 @@ function x(e) {
           location: n,
           size: y,
           isFocused: h,
-          isExpanded: N,
-          isAnimating: E,
+          isExpanded: E,
+          isAnimating: N,
           contentPosition: g
         })]
       })

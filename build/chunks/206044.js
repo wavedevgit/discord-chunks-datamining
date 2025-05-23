@@ -24,8 +24,8 @@ var r = n(255367),
   y = n(475595),
   T = n(566078),
   O = n(685613),
-  E = n(611855),
-  N = n(644646),
+  N = n(611855),
+  E = n(644646),
   q = n(670638),
   S = n(87894),
   P = n(46140),
@@ -222,7 +222,7 @@ let M = (0, a.animated)(d.CJ0),
               className: _.headerCollapsedClickableContainer,
               children: [(0, r.jsx)("div", {
                 className: _.headerCollapsedContentRewardWrapper,
-                children: (0, r.jsx)(N.Z, {
+                children: (0, r.jsx)(E.Z, {
                   quest: h,
                   questContent: f,
                   className: _.headerCollapsedRewardTile,
@@ -232,7 +232,7 @@ let M = (0, a.animated)(d.CJ0),
                 className: _.headerCollapsedContentCopyWrapper,
                 children: [(0, r.jsxs)("div", {
                   className: _.headerCollapsedContentCopyLogos,
-                  children: [ec, (0, r.jsx)(E.Z, {
+                  children: [ec, (0, r.jsx)(N.Z, {
                     color: "always-white"
                   })]
                 }), (0, r.jsx)(d.Text, {
@@ -261,7 +261,7 @@ let M = (0, a.animated)(d.CJ0),
               className: _.headerExpandedWrapper,
               children: [(0, r.jsxs)("div", {
                 className: _.iconLogotypeContainer,
-                children: [ec, et ? null : (0, r.jsx)(E.Z, {
+                children: [ec, et ? null : (0, r.jsx)(N.Z, {
                   color: "always-white"
                 })]
               }), (0, r.jsxs)("div", {

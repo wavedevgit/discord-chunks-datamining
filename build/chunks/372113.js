@@ -24,8 +24,8 @@ var r = n(255367),
   y = n(65443),
   T = n(340100),
   O = n(644646),
-  E = n(667105),
-  N = n(341907),
+  N = n(667105),
+  E = n(341907),
   q = n(128535),
   S = n(87894),
   P = n(2660),
@@ -101,7 +101,7 @@ function Z(e) {
     location: i,
     questContentPosition: o,
     inGiftInventory: u
-  } = e, d = n >= x.OH.COMPLETED, m = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), p = (0, a.e7)([g.Z], () => g.Z.isEnrolling(t.id)), h = (0, f.q8)(t), j = (0, f.Vl)(t), b = (0, E.Ks)({
+  } = e, d = n >= x.OH.COMPLETED, m = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), p = (0, a.e7)([g.Z], () => g.Z.isEnrolling(t.id)), h = (0, f.q8)(t), j = (0, f.Vl)(t), b = (0, N.Ks)({
     progressState: n,
     quest: t,
     location: i,
@@ -136,7 +136,7 @@ let L = e => {
     quest: n,
     location: i,
     size: c,
-    isFocused: E,
+    isFocused: N,
     isQuestExpired: L,
     isExpanded: B,
     isAnimating: U,
@@ -155,7 +155,7 @@ let L = e => {
     location: w.dr.QUESTS_CARD,
     questContent: h.jn.QUESTS_EMBED
   }), eo = (0, a.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), ea = (0, a.e7)([u.default], () => u.default.locale), el = (0, x.z)(n), ec = Y && X, eu = L && !G, ed = ee.length > 0 && Y && (0, f.$J)(n) && F && !G && !el, em = (0, r.jsx)(O.Z, {
-    autoplay: E,
+    autoplay: N,
     className: o()(I.gridImg, {
       [I.questRewardGiftInventory]: Y && "lg" === c,
       [I.questRewardEmbed]: V && "lg" === c,
@@ -195,7 +195,7 @@ let L = e => {
           }), ec ? (0, r.jsx)(P.Z, {
             questConfig: n.config,
             fallback: em,
-            isFocused: E
+            isFocused: N
           }) : em]
         }))
       }), (0, r.jsxs)("div", {
@@ -225,7 +225,7 @@ let L = e => {
               formattedCompletionDate: x
             } = e, g = (null == (t = o.userStatus) ? void 0 : t.completedAt) != null, h = g && (null == (n = o.userStatus) ? void 0 : n.claimedAt) != null, j = (0, f.oo)({
               quest: o
-            }), C = c.defaultReward.messages.nameWithArticle, v = c.defaultReward.messages.nameWithArticle, y = u ? v : C, T = (0, f.Kr)(o.config), O = (0, f.b7)(o), E = (0, b.U)();
+            }), C = c.defaultReward.messages.nameWithArticle, v = c.defaultReward.messages.nameWithArticle, y = u ? v : C, T = (0, f.Kr)(o.config), O = (0, f.b7)(o), N = (0, b.U)();
             if (h) {
               let e = j ? (0, f.o9)({
                   quest: o,
@@ -246,17 +246,17 @@ let L = e => {
               reward: y,
               date: x
             });
-            let N = j ? (0, f.o9)({
+            let E = j ? (0, f.o9)({
               quest: o,
               idx: 0
             }) : null;
             return l ? _.intl.formatToPlainString(_.t.DT3aub, {
-              reward: null != (i = null == N ? void 0 : N.messages.nameWithArticle) ? i : y
-            }) : null != N && null != N.approximateCount ? _.intl.format(_.t["4bMK19"], {
-              maxReward: N.messages.nameWithArticle,
-              maxRewardCount: (0, m.Bs)(N.approximateCount, a),
+              reward: null != (i = null == E ? void 0 : E.messages.nameWithArticle) ? i : y
+            }) : null != E && null != E.approximateCount ? _.intl.format(_.t["4bMK19"], {
+              maxReward: E.messages.nameWithArticle,
+              maxRewardCount: (0, m.Bs)(E.approximateCount, a),
               helpCenterLink: d.Z.getArticleURL(R.BhN.QUESTS_LEARN_MORE)
-            }) : E ? p : null != T ? _.intl.formatToPlainString(_.t.Pu5eyM, {
+            }) : N ? p : null != T ? _.intl.formatToPlainString(_.t.Pu5eyM, {
               reward: y,
               duration: T
             }) : null != O ? O.description : _.intl.formatToPlainString(_.t.ttFsLi, {
@@ -281,7 +281,7 @@ let L = e => {
           children: _.intl.string(_.t.V293qq)
         }), (0, r.jsx)(l.zxk, {
           color: l.Ttl.BRAND,
-          onClick: () => (0, N.openQuestMinorEnrollmentBlockModal)(n, i),
+          onClick: () => (0, E.openQuestMinorEnrollmentBlockModal)(n, i),
           className: I.questEnrollmentBlockedButton,
           children: _.intl.string(_.t.vY9GgI)
         })]
@@ -290,7 +290,7 @@ let L = e => {
         children: [!Y && (0, r.jsx)(k, {
           containerSize: c,
           onClick: () => {
-            (0, N.navigateToQuestHome)({
+            (0, E.navigateToQuestHome)({
               fromContent: i,
               questId: n.id
             }), et({

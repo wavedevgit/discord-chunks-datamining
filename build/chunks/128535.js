@@ -86,7 +86,7 @@ let C = e => 0 === e.length ? b.warning : b.danger,
       {
         errorHints: T,
         startingConsoleQuest: O,
-        startConsoleQuest: E
+        startConsoleQuest: N
       } = (0, g.GI)({
         questId: e.quest.id,
         beforeRequest: () => {
@@ -129,7 +129,7 @@ let C = e => 0 === e.length ? b.warning : b.danger,
         className: b.cta,
         children: (0, r.jsx)(l.zxk, {
           color: l.Ttl.PRIMARY,
-          onClick: E,
+          onClick: N,
           disabled: O,
           children: (0, r.jsxs)("div", {
             className: b.ctaInner,
