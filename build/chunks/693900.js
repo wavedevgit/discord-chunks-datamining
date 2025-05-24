@@ -10,8 +10,8 @@ var r = n(255367),
   i = n(481060),
   l = n(393238),
   c = n(110924),
-  d = n(607070);
-let u = o.createContext({
+  u = n(607070);
+let d = o.createContext({
   springConfig: {},
   isExpanded: !1
 });
@@ -21,7 +21,7 @@ function p(e) {
     springConfig: e.springConfig,
     isExpanded: e.isExpanded
   }), [e.springConfig, e.isExpanded]);
-  return (0, r.jsx)(u.Provider, {
+  return (0, r.jsx)(d.Provider, {
     value: t,
     children: e.children
   })
@@ -34,7 +34,7 @@ function m(e) {
   } = e, {
     springConfig: p,
     isExpanded: m
-  } = o.useContext(u), f = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), {
+  } = o.useContext(d), f = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), {
     ref: g,
     height: x = null
   } = (0, l.ZP)(), h = null != (t = (0, c.Z)(x)) ? t : null, [{

@@ -1,6 +1,6 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(255367),
   o = n(73800),
@@ -9,12 +9,12 @@ var r = n(255367),
   i = n(366594),
   l = n(113434),
   c = n(95985),
-  d = n(667904);
-let u = o.forwardRef(function(e, t) {
+  u = n(667904);
+let d = o.forwardRef(function(e, t) {
   var n;
   let {
     className: s,
-    expansionSpring: u,
+    expansionSpring: d,
     isExpanded: p,
     isExpansionAnimationComplete: m,
     quest: f,
@@ -23,18 +23,18 @@ let u = o.forwardRef(function(e, t) {
   return (0, r.jsx)(i.animated.div, {
     ref: t,
     "aria-hidden": p && m,
-    className: a()(s, d.contentCollapsed, {
-      [d.contentCollapsedExpanded]: p,
-      [d.contentCollapsedAccepted]: b
+    className: a()(s, u.contentCollapsed, {
+      [u.contentCollapsedExpanded]: p,
+      [u.contentCollapsedAccepted]: b
     }),
     style: {
-      opacity: u.to({
+      opacity: d.to({
         range: [0, 1],
         output: [1, 0]
       })
     },
     children: (0, r.jsx)("div", {
-      className: d.contentCollapsedWrapper,
+      className: u.contentCollapsedWrapper,
       children: b ? (0, r.jsx)(c.Z, {
         contentLocation: "collapsed",
         quest: f,

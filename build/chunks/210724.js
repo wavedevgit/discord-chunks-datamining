@@ -10,8 +10,8 @@ var r = n(255367),
   i = n(366594),
   l = n(442837),
   c = n(481060),
-  d = n(110924),
-  u = n(607070),
+  u = n(110924),
+  d = n(607070),
   p = n(819640),
   m = n(617136),
   f = n(113434),
@@ -87,7 +87,7 @@ function k(e) {
   }), B = (0, l.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil), q = (0, _.qN)({
     quest: s,
     location: P.dr.QUESTS_BAR
-  }), D = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), I = (0, l.e7)([p.Z], () => p.Z.hasLayers()), M = o.useRef(null), L = o.useMemo(() => (0, h.q8)(s), [s]), W = (null == (t = s.userStatus) ? void 0 : t.enrolledAt) != null, Z = (0, d.Z)(W), V = (null == (n = s.userStatus) ? void 0 : n.completedAt) != null, Q = (0, d.Z)(V), {
+  }), I = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), D = (0, l.e7)([p.Z], () => p.Z.hasLayers()), M = o.useRef(null), L = o.useMemo(() => (0, h.q8)(s), [s]), W = (null == (t = s.userStatus) ? void 0 : t.enrolledAt) != null, Z = (0, u.Z)(W), V = (null == (n = s.userStatus) ? void 0 : n.completedAt) != null, Q = (0, u.Z)(V), {
     hasError: H,
     isLoading: U
   } = (0, y.d7)(), z = o.useContext(S.T) || k && q && !U && !B, F = o.useRef(z), K = (0, w.B)(s, z && !H), X = o.useRef(-1), Y = o.useRef(!1), [G, J] = o.useState(!1), [$, ee] = o.useState(!1), [et, en] = o.useState(!0), [er, eo] = o.useState(!0), [es, ea] = o.useState(K.preEnrollmentExpandedHeight), ei = o.useRef(null), el = o.useCallback(e => {
@@ -95,9 +95,9 @@ function k(e) {
   }, []), ec = o.useCallback(() => {
     var e, t;
     ea((null != (t = null == (e = ei.current) ? void 0 : e.offsetHeight) ? t : 84) + 2 * K.paddingVertical)
-  }, [K.paddingVertical]), ed = o.useCallback(() => {
+  }, [K.paddingVertical]), eu = o.useCallback(() => {
     ec(), el(!0)
-  }, [ec, el]), eu = o.useCallback(() => {
+  }, [ec, el]), ed = o.useCallback(() => {
     J(!0)
   }, []), ep = o.useCallback(() => {
     J(!1), Y.current || V || el(!1)
@@ -109,8 +109,8 @@ function k(e) {
     let {
       withDelay: t = !1
     } = e;
-    t ? X.current = window.setTimeout(ed, 75) : ed()
-  }, [ed, $]), eg = o.useCallback(() => {
+    t ? X.current = window.setTimeout(eu, 75) : eu()
+  }, [eu, $]), eg = o.useCallback(() => {
     ef()
   }, [ef]), ex = o.useCallback(() => {
     window.clearTimeout(X.current), K.canCollapseOnBlur && !G && (Y.current || el(!1))
@@ -137,10 +137,10 @@ function k(e) {
     }), Y.current = !1, ex()
   }, [ex, s]);
   o.useLayoutEffect(() => {
-    V && K.shouldExpandOnQuestComplete && ed()
-  }, [ed, V, K.shouldExpandOnQuestComplete]), o.useLayoutEffect(() => {
-    W && !Z && Y.current && ed()
-  }, [ed, W, Z]), o.useLayoutEffect(() => {
+    V && K.shouldExpandOnQuestComplete && eu()
+  }, [eu, V, K.shouldExpandOnQuestComplete]), o.useLayoutEffect(() => {
+    W && !Z && Y.current && eu()
+  }, [eu, W, Z]), o.useLayoutEffect(() => {
     V || !W || Z || Y.current || el(!1)
   }, [W, V, Z, el]), o.useLayoutEffect(() => {
     z !== F.current && eo(!1), F.current = z
@@ -163,9 +163,9 @@ function k(e) {
   o.useEffect(() => {
     ey({
       expansionSpring: +!!$,
-      immediate: D
+      immediate: I
     })
-  }, [$, ey, D]);
+  }, [$, ey, I]);
   let {
     visibilitySpring: e_
   } = (0, c.q_F)({
@@ -191,7 +191,7 @@ function k(e) {
     L && (0, O.loadVideoQuestModal)()
   }, [L]), o.useLayoutEffect(() => {
     V && !Q && K.canCollapseOnBlur && ec()
-  }, [V, ed, K.canCollapseOnBlur, ec, Q]), o.useEffect(() => {
+  }, [V, eu, K.canCollapseOnBlur, ec, Q]), o.useEffect(() => {
     var e, t;
     H && (0, m.dA)({
       questId: s.id,
@@ -211,7 +211,7 @@ function k(e) {
   }, [H, k, s.id]), k && (z || !er || U) && !H) ? (0, r.jsx)(v.A, {
     questOrQuests: s,
     questContent: K.trackingCtx.content,
-    overrideVisibility: !I && z,
+    overrideVisibility: !D && z,
     children: (e, t) => {
       let n = K.component;
       return M.current = t.current, (0, r.jsxs)("div", {
@@ -254,10 +254,10 @@ function k(e) {
                 isExpanded: $,
                 isExpansionAnimationComplete: et,
                 onCtxMenuClosed: ep,
-                onCtxMenuOpened: eu,
+                onCtxMenuOpened: ed,
                 onCtxMenuSelection: em,
                 quest: s,
-                useReducedMotion: D,
+                useReducedMotion: I,
                 collapsedHeight: 70
               })
             })

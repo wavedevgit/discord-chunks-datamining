@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(366594),
   l = n(278074),
   c = n(754700),
-  d = n(442837),
-  u = n(692547),
+  u = n(442837),
+  d = n(692547),
   p = n(481060),
   m = n(70097),
   f = n(617136),
@@ -35,8 +35,8 @@ var r = n(255367),
   k = n(759853),
   B = n(205511),
   q = n(710235),
-  D = n(694802),
-  I = n(95985),
+  I = n(694802),
+  D = n(95985),
   M = n(50476),
   L = n(46140),
   W = n(743294),
@@ -81,11 +81,11 @@ function U(e) {
     quest: s,
     onClick: i,
     reducedMotion: l,
-    isExpanded: d
+    isExpanded: u
   } = e, [f, g] = o.useState(!1), x = o.useRef(null), h = (0, O.fh)(s, O.eC.QUEST_BAR_HERO_VIDEO), b = (0, C.z0)(s, c.X.WATCH_VIDEO, C.n1.VIDEO, C.O.THUMBNAIL), j = (0, v.km)(e => e.getVideoProgressState);
   o.useEffect(() => {
-    null != x.current && (d && (!l || f) ? (x.current.currentTime = 0, x.current.play()) : x.current.pause())
-  }, [x, f, l, d]);
+    null != x.current && (u && (!l || f) ? (x.current.currentTime = 0, x.current.play()) : x.current.pause())
+  }, [x, f, l, u]);
   let y = j(s.id),
     _ = (null == (t = s.userStatus) ? void 0 : t.completedAt) != null && y === v.iw.COMPLETED,
     w = !_ && (!l || f);
@@ -120,10 +120,10 @@ function U(e) {
     }) : null, (0, r.jsx)("div", {
       className: V.previewPlayButtonCont,
       children: _ ? (0, r.jsx)(p.Oe7, {
-        color: u.Z.colors.WHITE,
+        color: d.Z.colors.WHITE,
         className: V.previewPlayButton
       }) : (0, r.jsx)(p.o1U, {
-        color: u.Z.colors.WHITE,
+        color: d.Z.colors.WHITE,
         className: V.previewPlayButton
       })
     })]
@@ -190,10 +190,10 @@ function X(e) {
     expansionSpring: s,
     isInteractable: l,
     reducedMotion: c,
-    containerRef: u,
+    containerRef: d,
     isExpanded: f,
     onAcceptQuest: g
-  } = e, x = (0, d.e7)([h.Z], () => h.Z.isEnrolling(t.id), [t]), b = o.useMemo(() => (0, O.fh)(t, O.eC.QUEST_BAR_HERO), [t]), v = o.useRef(null);
+  } = e, x = (0, u.e7)([h.Z], () => h.Z.isEnrolling(t.id), [t]), b = o.useMemo(() => (0, O.fh)(t, O.eC.QUEST_BAR_HERO), [t]), v = o.useRef(null);
   o.useEffect(() => {
     null == v.current || c || (f ? (v.current.currentTime = 0, v.current.play()) : v.current.pause())
   }, [c, f]);
@@ -212,7 +212,7 @@ function X(e) {
         className: a()(V.questPromoContent, {
           [V.questPromoContentWithCopySimplification]: C
         }),
-        ref: u,
+        ref: d,
         children: [(0, r.jsxs)("div", {
           className: V.details,
           children: [(0, r.jsx)(z, {
@@ -314,8 +314,8 @@ function Y(e) {
     quest: n,
     taskDetails: s,
     expansionSpring: c,
-    overlayRef: d,
-    isExpanded: u,
+    overlayRef: u,
+    isExpanded: d,
     reducedMotion: m,
     containerRef: f,
     onCtxMenuOpen: g,
@@ -371,11 +371,11 @@ function Y(e) {
         className: V.divider
       }), (0, r.jsx)(k.Z, {
         expansionSpring: c,
-        overlayRef: d,
+        overlayRef: u,
         progressBarRef: E,
         quest: n,
-        isExpanded: u
-      }), (0, r.jsx)(I.Z, {
+        isExpanded: d
+      }), (0, r.jsx)(D.Z, {
         contentLocation: "expanded",
         quest: n,
         progressBarRef: E,
@@ -390,7 +390,7 @@ function Y(e) {
           children: [G && (0, r.jsx)(q.Z, {
             quest: n,
             taskDetails: s
-          }), (0, r.jsx)(D.Z, {
+          }), (0, r.jsx)(I.Z, {
             quest: n
           })]
         })).with(b.LI.CONSOLE, () => (0, r.jsx)(B.Z, {
@@ -399,14 +399,14 @@ function Y(e) {
         })).exhaustive()
       }), (0, r.jsxs)(A.n, {
         children: [K && (0, r.jsx)(U, {
-          isExpanded: u,
+          isExpanded: d,
           quest: n,
           onClick: Y,
           reducedMotion: m
         }), (0, r.jsx)(R.yD, {
           quest: n,
           useReducedMotion: m,
-          isExpanded: u,
+          isExpanded: d,
           awaitingConsoleConnections: F,
           hasMadeProgress: O,
           isProgressing: C,
@@ -430,8 +430,8 @@ let G = o.forwardRef(function(e, t) {
     children: s,
     className: l,
     collapsedHeight: c,
-    isExpanded: d,
-    isExpansionAnimationComplete: u,
+    isExpanded: u,
+    isExpansionAnimationComplete: d,
     expansionSpring: p,
     onCtxMenuOpen: m,
     onCtxMenuClose: h,
@@ -449,7 +449,7 @@ let G = o.forwardRef(function(e, t) {
       questContent: b.jn.QUEST_BAR_V2,
       questContentCTA: t
     }), w && (0, N.openVideoQuestModal)(_), S && e && P()
-  }, [_, w, S, P]), T = (null == (n = _.userStatus) ? void 0 : n.enrolledAt) != null, A = d && u;
+  }, [_, w, S, P]), T = (null == (n = _.userStatus) ? void 0 : n.enrolledAt) != null, A = u && d;
   return (0, r.jsxs)(i.animated.div, {
     "aria-hidden": !A,
     className: a()(l, V.contentExpanded, {
@@ -474,7 +474,7 @@ let G = o.forwardRef(function(e, t) {
         taskDetails: C,
         expansionSpring: p,
         overlayRef: y,
-        isExpanded: d,
+        isExpanded: u,
         reducedMotion: O,
         onCtxMenuOpen: m,
         onCtxMenuClose: h,
@@ -487,7 +487,7 @@ let G = o.forwardRef(function(e, t) {
         isInteractable: A,
         reducedMotion: O,
         containerRef: t,
-        isExpanded: d,
+        isExpanded: u,
         onAcceptQuest: E
       })
     })]

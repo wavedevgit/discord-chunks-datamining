@@ -11,8 +11,8 @@ var r = n(255367),
   i = n(481060),
   l = n(918701),
   c = n(373370),
-  d = n(566078),
-  u = n(388032),
+  u = n(566078),
+  d = n(388032),
   p = n(141572);
 
 function m(e) {
@@ -63,7 +63,7 @@ function g(e) {
     rewardName: n,
     rewardDuration: s
   } = o.useMemo(() => ({
-    rewardName: d.r.build(t.config).defaultReward.messages.name,
+    rewardName: u.r.build(t.config).defaultReward.messages.name,
     rewardDuration: (0, l.Kr)(t.config)
   }), [t.config]), a = (0, c.mK)(t.config);
   return (0, r.jsxs)("div", {
@@ -71,7 +71,7 @@ function g(e) {
     children: [(0, r.jsx)(i.X6q, {
       color: "header-primary",
       variant: "text-xs/semibold",
-      children: null == s ? u.intl.string(u.t["7Rdjmp"]) : u.intl.formatToPlainString(u.t.coKAb2, {
+      children: null == s ? d.intl.string(d.t["7Rdjmp"]) : d.intl.formatToPlainString(d.t.coKAb2, {
         rewardsDuration: s
       })
     }), (0, r.jsx)("ul", {

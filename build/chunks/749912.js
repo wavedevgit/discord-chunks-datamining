@@ -1,6 +1,6 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -40,7 +40,7 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let d = [{
+let u = [{
     value: 1,
     label: "Stream Desktop"
   }, {
@@ -59,11 +59,11 @@ let d = [{
     value: 5,
     label: "Play Activity"
   }],
-  u = function(e) {
+  d = function(e) {
     let {
       onSelect: t,
       taskDuration: n = 10,
-      taskConfig: u
+      taskConfig: d
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.xJW, {
@@ -74,7 +74,7 @@ let d = [{
           children: (0, r.jsx)(s.PhF, {
             className: i.taskPresetSelect,
             placeholder: "Select Task Preset",
-            options: d,
+            options: u,
             renderOptionValue: e => e.map(e => (0, r.jsx)("div", {
               children: e.label
             }, e.value)),
@@ -88,9 +88,9 @@ let d = [{
                 s = o.X.WATCH_VIDEO in e,
                 a = o.X.PLAY_ACTIVITY in e;
               return t && n ? 4 : t ? 3 : n ? 0 : r ? 1 : s ? 2 : a ? 5 : void 0
-            }(u.tasks),
+            }(d.tasks),
             select: e => {
-              t(c(l({}, u), {
+              t(c(l({}, d), {
                 tasks: function(e, t) {
                   let n = [];
                   switch (e) {
@@ -136,11 +136,11 @@ let d = [{
               let n = Number(e);
               if (isNaN(n)) return;
               n *= a.Z.Seconds.MINUTE;
-              let r = l({}, u.tasks);
+              let r = l({}, d.tasks);
               for (let [e, t] of Object.entries(r)) r[e] = c(l({}, t), {
                 target: n
               });
-              t(c(l({}, u), {
+              t(c(l({}, d), {
                 tasks: r
               }))
             }

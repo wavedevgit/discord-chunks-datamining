@@ -1,6 +1,6 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  B$: () => u,
+  B$: () => d,
   l7: () => p,
   p: () => m
 }), n(388685), n(539854);
@@ -30,7 +30,7 @@ function c(e) {
   return e
 }
 
-function d(e, t) {
+function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -42,7 +42,7 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = o.createContext({
+let d = o.createContext({
     registerComponent: () => {},
     unregisterComponent: () => {},
     animatedComponents: {},
@@ -58,7 +58,7 @@ let u = o.createContext({
     let {
       children: l,
       id: c,
-      inState: d,
+      inState: u,
       isTextTransition: p = !1
     } = e, {
       recalculateAnimationPositions: m,
@@ -66,15 +66,15 @@ let u = o.createContext({
       unregisterComponent: g,
       expansionSpring: x,
       mountPoints: h
-    } = o.useContext(u), b = o.useRef(null), j = o.useRef(null), v = o.useRef(void 0);
+    } = o.useContext(d), b = o.useRef(null), j = o.useRef(null), v = o.useRef(void 0);
     o.useEffect(() => {
       m()
     }, [m]), o.useLayoutEffect(() => {
       let e = b.current;
-      return null != e && f(e, c, d), () => {
-        null != e && g(c, d)
+      return null != e && f(e, c, u), () => {
+        null != e && g(c, u)
       }
-    }, [c, d, f, g]);
+    }, [c, u, f, g]);
     let y = o.useCallback(e => {
       let {
         height: t
@@ -85,7 +85,7 @@ let u = o.createContext({
     let _ = null == (n = h.get(c)) ? void 0 : n.current,
       O = null;
     return null == _ ? O = null : p && null != x ? O = (0, r.jsxs)(r.Fragment, {
-      children: ["collapsed" === d && (0, s.createPortal)((0, r.jsx)(a.animated.div, {
+      children: ["collapsed" === u && (0, s.createPortal)((0, r.jsx)(a.animated.div, {
         style: {
           position: "absolute",
           opacity: x.to({
@@ -94,7 +94,7 @@ let u = o.createContext({
           })
         },
         children: l(j)
-      }), _), "expanded" === d && (0, s.createPortal)((0, r.jsx)(a.animated.div, {
+      }), _), "expanded" === u && (0, s.createPortal)((0, r.jsx)(a.animated.div, {
         style: {
           position: "absolute",
           opacity: x.to({
@@ -104,9 +104,9 @@ let u = o.createContext({
         },
         children: l(j)
       }), _)]
-    }) : "collapsed" === d && (O = (0, s.createPortal)(l(j), _)), (0, r.jsxs)("div", {
+    }) : "collapsed" === u && (O = (0, s.createPortal)(l(j), _)), (0, r.jsxs)("div", {
       style: {
-        opacity: +(null == O && "collapsed" === d || null == _)
+        opacity: +(null == O && "collapsed" === u || null == _)
       },
       ref: t,
       children: [l(b), O]
@@ -125,8 +125,8 @@ let u = o.createContext({
           expanded: null,
           collapsed: null
         };
-        return d(c({}, r), {
-          [t]: d(c({}, s), {
+        return u(c({}, r), {
+          [t]: u(c({}, s), {
             [n]: e
           })
         })
@@ -142,7 +142,7 @@ let u = o.createContext({
           expanded: null,
           collapsed: null
         };
-        return s[t] = null, n = null == s.expanded && null == s.collapsed, d(c({}, r), {
+        return s[t] = null, n = null == s.expanded && null == s.collapsed, u(c({}, r), {
           [e]: s
         })
       }), n && x(t => {
@@ -158,14 +158,14 @@ let u = o.createContext({
         if (null == r || null == o) continue;
         let a = o.getBoundingClientRect(),
           c = n.current.getBoundingClientRect(),
-          d = r.getBoundingClientRect(),
-          u = s.current.getBoundingClientRect(),
+          u = r.getBoundingClientRect(),
+          d = s.current.getBoundingClientRect(),
           p = a.top - c.top + l.Li,
-          m = d.top - u.top,
+          m = u.top - d.top,
           f = a.left - c.left + l.Li,
-          g = d.left - u.left,
+          g = u.left - d.left,
           x = -a.right + c.right + l.Li,
-          h = -d.right + u.right;
+          h = -u.right + d.right;
         e.push({
           id: t,
           collapsedLeft: g,
@@ -179,7 +179,7 @@ let u = o.createContext({
       }
       f(e)
     }, [i, n, s, f]);
-    return (0, r.jsx)(u.Provider, {
+    return (0, r.jsx)(d.Provider, {
       value: {
         registerComponent: h,
         unregisterComponent: b,

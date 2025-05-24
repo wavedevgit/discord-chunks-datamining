@@ -1,6 +1,6 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => b
+  Z: () => v
 }), n(388685);
 var r = n(255367),
   o = n(73800),
@@ -9,63 +9,83 @@ var r = n(255367),
   i = n(617136),
   l = n(113434),
   c = n(497505),
-  d = n(918701),
-  u = n(602667),
+  u = n(918701),
+  d = n(602667),
   p = n(341907),
-  m = n(439826),
-  f = n(43779),
-  g = n(981631),
-  x = n(168989);
+  m = n(672188),
+  f = n(466962),
+  g = n(439826),
+  x = n(43779),
+  h = n(981631),
+  b = n(168989);
 
-function h(e) {
+function j(e) {
+  var t, n;
   let {
-    quest: t,
-    className: n,
-    questContent: s,
-    contentPosition: c,
-    rowIndex: u,
-    impressionRef: h
-  } = e, [b, j] = o.useState(!1), [v, y] = o.useState([]), _ = (0, l.qb)(t), O = o.useMemo(() => (0, d.q8)(t), [t]), C = (0, i._F)(), w = o.useCallback(() => {
-    j(!0), C({
-      questId: t.id,
-      event: g.rMx.QUEST_HOVER,
-      properties: (0, i.mH)(s)
-    }), O && (0, p.loadVideoQuestModal)()
-  }, [C, t.id, s, O]), S = o.useCallback(() => {
-    j(!1), C({
-      questId: t.id,
-      event: g.rMx.QUEST_HOVER_OFF,
-      properties: (0, i.mH)(s)
+    quest: s,
+    className: c,
+    questContent: d,
+    contentPosition: j,
+    rowIndex: v,
+    impressionRef: y
+  } = e, [_, O] = o.useState(!1), [C, w] = o.useState([]), S = (0, l.qb)(s), P = o.useMemo(() => (0, u.q8)(s), [s]), E = (0, i._F)(), T = o.useCallback(() => {
+    O(!0), E({
+      questId: s.id,
+      event: h.rMx.QUEST_HOVER,
+      properties: (0, i.mH)(d)
+    }), P && (0, p.loadVideoQuestModal)()
+  }, [E, s.id, d, P]), N = o.useCallback(() => {
+    O(!1), E({
+      questId: s.id,
+      event: h.rMx.QUEST_HOVER_OFF,
+      properties: (0, i.mH)(d)
     })
-  }, [C, t.id, s]);
+  }, [E, s.id, d]), A = o.useContext(f.t), {
+    visibilityElementRef: R,
+    almostVisibleInViewport: k
+  } = function(e) {
+    let [t, n] = o.useState(!1), r = o.useCallback(e => {
+      e.isIntersecting && n(!0)
+    }, []);
+    return {
+      visibilityElementRef: (0, m.S)(r, {
+        root: null != e ? e : null,
+        threshold: 0,
+        rootMargin: "900px 0px 900px 0px"
+      }, !0),
+      almostVisibleInViewport: t
+    }
+  }(null != (n = null == A || null == (t = A.current) ? void 0 : t.getScrollerNode()) ? n : null);
   return (0, r.jsxs)("div", {
-    id: "quest-tile-".concat(t.id),
+    id: "quest-tile-".concat(s.id),
     ref: e => {
-      h.current = e
+      y.current = e, R.current = e
     },
-    className: a()(x.container, n),
-    onMouseEnter: w,
-    onMouseLeave: S,
-    onFocus: w,
-    onBlur: S,
-    children: [(0, r.jsx)(m.Z, {
-      quest: t,
-      isHovering: b,
-      errorHints: v,
-      warningHints: _
-    }), (0, r.jsx)(f.Z, {
-      quest: t,
-      questContent: s,
-      isHovering: b,
-      contentPosition: c,
-      rowIndex: u,
-      onReceiveErrorHints: y
+    className: a()(b.container, c),
+    onMouseEnter: T,
+    onMouseLeave: N,
+    onFocus: T,
+    onBlur: N,
+    children: [(0, r.jsx)(g.Z, {
+      quest: s,
+      isHovering: _,
+      errorHints: C,
+      warningHints: S,
+      isVisibleInViewport: k
+    }), (0, r.jsx)(x.Z, {
+      quest: s,
+      questContent: d,
+      isHovering: _,
+      contentPosition: j,
+      rowIndex: v,
+      onReceiveErrorHints: w,
+      isVisibleInViewport: k
     })]
   })
 }
 
-function b(e) {
-  return (0, r.jsx)(u.A, {
+function v(e) {
+  return (0, r.jsx)(d.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,
     questContentPosition: e.contentPosition,
@@ -73,7 +93,7 @@ function b(e) {
     trackGuildAndChannelMetadata: e.questContent === c.jn.QUESTS_EMBED,
     children: t => {
       var n, o;
-      return (0, r.jsx)(h, (n = function(e) {
+      return (0, r.jsx)(j, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
