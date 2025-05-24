@@ -18,7 +18,8 @@ function d(e) {
     onChange: n,
     subText: i,
     muted: d,
-    marginTopStyle: g
+    marginTopStyle: g,
+    subtextClassName: h
   } = e;
   return (0, r.jsx)(o.Z, {
     className: null != g ? g : u.marginTop20,
@@ -29,7 +30,7 @@ function d(e) {
       onChange: (e, t) => n(t),
       className: c.checkbox,
       children: (0, r.jsx)(s.i_, {
-        className: l()({
+        className: l()(h, {
           [c.subText]: !d
         }),
         children: i

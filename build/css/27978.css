@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 55bc3ea06dde149f
+  Original File Name: b01875bdd9cf9c60
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -3161,9 +3161,14 @@ html:not(.visual-refresh) .footer__7c901 {
     margin-top: 4px
 }
 
-.centeredSubText_d332d2 {
+.consentBox_d332d2 {
+    margin-bottom: 8px
+}
+
+.consentSubText_d332d2 {
     color: var(--text-secondary);
-    text-align: center
+    font-size: 14px;
+    line-height: 18px
 }
 
 .centeredButtonContainer_d332d2 {
@@ -3348,4 +3353,4 @@ html:not(.visual-refresh) .footer__7c901 {
     height: 100px
 }
 
-/*# sourceMappingURL=55bc3ea06dde149f.css.map*/
+/*# sourceMappingURL=b01875bdd9cf9c60.css.map*/

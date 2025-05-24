@@ -249,19 +249,19 @@ class eh extends(r = l.PureComponent) {
       subText: el.intl.format(el.t.qMDAPz, {
         termsURL: ee.EYA.TERMS,
         privacyURL: ee.EYA.PRIVACY
-      })
+      }),
+      marginTopStyle: ea.consentBox,
+      subtextClassName: ea.consentSubText
     }) : r = n ? (0, i.jsx)(h.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      className: o()(eo.marginTop8, ea.centeredSubText),
+      className: o()(eo.marginTop8, ea.consentSubText),
       children: el.intl.format(el.t.BvbzxM, {
         termsURL: ee.EYA.TERMS,
         privacyURL: ee.EYA.PRIVACY
       })
     }) : (0, i.jsx)(S.i_, {
-      className: o()(eo.marginTop8, {
-        [ea.centeredSubText]: n
-      }),
+      className: eo.marginTop8,
       children: el.intl.format(el.t["F+0zT0"], {
         termsURL: ee.EYA.TERMS,
         privacyURL: ee.EYA.PRIVACY
@@ -460,7 +460,11 @@ class eh extends(r = l.PureComponent) {
                 helpURL: Y.Z.getArticleURL(ee.BhN.AGE_GATE)
               })
             })]
-          }) : null, n && g, this.renderInviteButton(), !n && g, p, en.a ? null : (0, i.jsx)("div", {
+          }) : null, n && (0, i.jsxs)(i.Fragment, {
+            children: [g, p]
+          }), this.renderInviteButton(), !n && (0, i.jsxs)(i.Fragment, {
+            children: [g, p]
+          }), en.a ? null : (0, i.jsx)("div", {
             className: n ? ea.centeredButtonContainer : void 0,
             children: (0, i.jsx)(S.zx, {
               look: S.zx.Looks.LINK,
