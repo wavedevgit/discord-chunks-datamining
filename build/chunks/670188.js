@@ -116,7 +116,7 @@ function T(e) {
       guildId: s,
       channelId: l
     }), [O, o, n, E, s, l]),
-    D = i.useCallback(e => (null == R.current && (R.current = Date.now()), null != I) ? I(e) : (0, r.jsx)(f.Z, b(g({}, e), {
+    D = i.useCallback(e => (null == R.current && (R.current = Date.now()), null != I) ? I(e, R.current) : (0, r.jsx)(f.Z, b(g({}, e), {
       user: n,
       currentUser: o,
       guildId: s,
@@ -188,7 +188,7 @@ function A(e) {
       guildId: c,
       channelId: p
     }), [A, n, o, T, c, p]),
-    K = i.useCallback(e => (null == x.current && (x.current = Date.now()), j) ? (0, r.jsx)(a.xxz, {}) : null != N ? N(e) : (0, r.jsx)(f.Z, b(g({}, e), {
+    K = i.useCallback(e => (null == x.current && (x.current = Date.now()), j) ? (0, r.jsx)(a.xxz, {}) : null != N ? N(e, x.current) : (0, r.jsx)(f.Z, b(g({}, e), {
       user: n,
       currentUser: o,
       guildId: c,

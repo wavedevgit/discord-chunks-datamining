@@ -185,12 +185,9 @@ function x(e) {
       }, R)
     })
   }, [P, x]);
-  if ((0, c.zq)(() => {
-      null != z.current && window.clearTimeout(z.current)
-    }), B || 0 === et.length) return null;
-  let el = "en-US" === S.intl.currentLocale || "en-GB" === S.intl.currentLocale,
-    ec = S.intl.string(el ? S.t.J6STd3 : S.t.IC5Anp);
-  return (0, r.jsxs)(r.Fragment, {
+  return ((0, c.zq)(() => {
+    null != z.current && window.clearTimeout(z.current)
+  }), B || 0 === et.length) ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       ref: Y,
       className: T.activityContainer,
@@ -200,7 +197,7 @@ function x(e) {
       children: [(0, r.jsxs)("ul", {
         ref: W,
         className: T.cardsList,
-        "aria-label": ec,
+        "aria-label": S.intl.string(S.t.J6STd3),
         tabIndex: -1,
         children: [(0, r.jsxs)("li", {
           className: a()(T.firstCardContainer, !ee && ei.length > 0 && T.hasShowMoreButton, H && T.isInteracting),
@@ -215,9 +212,9 @@ function x(e) {
               children: (0, r.jsx)(l.Text, {
                 variant: "text-xs/medium",
                 color: "header-primary",
-                children: "+ ".concat(S.intl.format(S.t.O6PLYW, {
+                children: S.intl.format(S.t.wv8Q7u, {
                   activitiesCount: ei.length
-                }))
+                })
               })
             })
           })]
