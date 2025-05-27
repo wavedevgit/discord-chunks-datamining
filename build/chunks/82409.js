@@ -1,7 +1,7 @@
 /** Chunk was on 75293 **/
 n.d(t, {
-  Z: () => S
-}), n(388685), n(642613), n(415506);
+  Z: () => E
+}), n(388685), n(642613), n(361932), n(187205), n(415506);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
@@ -13,16 +13,17 @@ var r = n(255367),
   d = n(235820),
   h = n(315174),
   p = n(455199),
-  f = n(592125),
-  g = n(594174),
-  m = n(709054),
-  b = n(207913),
-  y = n(553984),
-  O = n(333834),
-  v = n(982183),
-  _ = n(981631),
-  C = n(21678);
-let j = {
+  f = n(768943),
+  g = n(592125),
+  m = n(594174),
+  b = n(709054),
+  y = n(207913),
+  O = n(553984),
+  v = n(333834),
+  _ = n(982183),
+  C = n(981631),
+  j = n(21678);
+let S = {
   controller: new a.Controller({
     value: 1,
     immediate: !0
@@ -31,12 +32,12 @@ let j = {
   bannerVisible: !1,
   communityInfoVisible: !1,
   shouldShowSubscribeTooltip: !1,
-  bannerVisibleHeight: v.$J,
+  bannerVisibleHeight: _.$J,
   hasGuildSubheader: !1,
   disableBannerAnimation: !0
 };
 
-function S(e) {
+function E(e) {
   let {
     includePanelSpacing: t
   } = e, {
@@ -52,24 +53,26 @@ function S(e) {
     guildFilter: p.Z.guildFilter,
     roleFilter: p.Z.roleFilter,
     everyoneFilter: p.Z.everyoneFilter
-  })), [d, b] = i.useState(v.V5.ALL);
+  })), [d, y] = i.useState(_.V5.ALL);
   (0, i.useEffect)(() => {
-    if (!u) return void E(null)
+    if (!u) return void x(null)
   }, [u]);
-  let S = (0, c.e7)([g.default], () => g.default.getCurrentUser()),
-    I = i.useMemo(() => {
-      let e = (0, s.uniqBy)([...null != n ? n : []].sort((e, t) => m.default.compare(t.id, e.id)), "id");
-      if (d === v.V5.ALL) return e;
-      if (d === v.V5.ANNOUNCEMENTS) return null == e ? void 0 : e.filter(e => {
-        let t = f.Z.getChannel(e.channel_id);
-        return (null == t ? void 0 : t.type) === _.d4z.GUILD_ANNOUNCEMENT
+  let E = (0, c.e7)([m.default], () => m.default.getCurrentUser()),
+    w = (0, c.e7)([f.Z], () => f.Z.getSavedMessages()),
+    N = i.useMemo(() => {
+      let e = (0, s.uniqBy)([...null != n ? n : []].sort((e, t) => b.default.compare(t.id, e.id)), "id");
+      if (d === _.V5.ALL) return e;
+      if (d === _.V5.ANNOUNCEMENTS) return null == e ? void 0 : e.filter(e => {
+        let t = g.Z.getChannel(e.channel_id);
+        return (null == t ? void 0 : t.type) === C.d4z.GUILD_ANNOUNCEMENT
       });
-      if (d === v.V5.MENTIONS) return null == e ? void 0 : e.filter(e => (null == S ? void 0 : S.id) != null && e.mentioned && e.mentions.includes(null == S ? void 0 : S.id));
+      if (d === _.V5.MENTIONS) return null == e ? void 0 : e.filter(e => (null == E ? void 0 : E.id) != null && e.mentioned && e.mentions.includes(null == E ? void 0 : E.id));
+      if (d === _.V5.BOOKMARKS) return w.flatMap(e => null != e.message ? [e.message] : []);
       throw Error("Unknown filter: ".concat(d))
-    }, [d, n, S]);
+    }, [d, n, E, w]);
   return (0, r.jsxs)("nav", {
-    className: o()(C.container, {
-      [C.panelSpacing]: t
+    className: o()(j.container, {
+      [j.panelSpacing]: t
     }),
     children: [(0, r.jsx)(h.ZP, function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -90,43 +93,43 @@ function S(e) {
       return e
     }({
       hasSubheader: !0,
-      guild: v.F7
-    }, j)), (0, r.jsx)(y.Z, {
+      guild: _.F7
+    }, S)), (0, r.jsx)(O.Z, {
       selectedFilter: d,
-      setSelectedFilter: b
-    }), (0, r.jsx)(O.ZP, {
-      className: C.messageList,
-      renderMessage: P,
-      messages: I,
+      setSelectedFilter: y
+    }), (0, r.jsx)(v.ZP, {
+      className: j.messageList,
+      renderMessage: I,
+      messages: N,
       loading: a,
       hasMore: l,
       analyticsName: "Notifications Inbox",
       channel: null,
       listName: "notifications-inbox",
       loadMore: function() {
-        E(null, null != n && n.length > 0 ? n[n.length - 1].id : null)
+        x(null, null != n && n.length > 0 ? n[n.length - 1].id : null)
       },
-      renderEmptyState: x
+      renderEmptyState: P
     })]
   })
 }
 
-function E(e, t) {
+function x(e, t) {
   let n = p.Z.guildFilter,
     r = p.Z.roleFilter,
     i = p.Z.everyoneFilter,
     l = null;
-  null != e && null != n && (l = n === _.NgX.ALL_SERVERS ? null : e.getGuildId()), d.Z.fetchRecentMentions(t, _.DJj, l, r, i)
+  null != e && null != n && (l = n === C.NgX.ALL_SERVERS ? null : e.getGuildId()), d.Z.fetchRecentMentions(t, C.DJj, l, r, i)
 }
 
-function x() {
+function P() {
   return (0, r.jsx)(u.LZC, {
     size: 16
   })
 }
 
-function P(e, t) {
-  return (0, r.jsx)(b.B, {
+function I(e, t) {
+  return (0, r.jsx)(y.B, {
     message: e,
     goToSidebar: t
   }, e.id)
