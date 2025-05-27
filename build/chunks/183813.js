@@ -7,8 +7,8 @@ var i = n(255367),
   s = n(512722),
   r = n.n(s),
   a = n(442837),
-  C = n(481060),
-  o = n(204418),
+  o = n(481060),
+  C = n(204418),
   d = n(628952),
   c = n(540059),
   u = n(314404),
@@ -18,8 +18,8 @@ var i = n(255367),
   f = n(563132),
   j = n(409813),
   m = n(614277),
-  L = n(981631),
-  _ = n(388032),
+  _ = n(981631),
+  L = n(388032),
   g = n(529190);
 
 function E(e) {
@@ -32,42 +32,42 @@ function E(e) {
     step: y
   } = (0, f.JL)(), {
     setSelectedGiftingPromotionReward: S,
-    selectedGiftingPromotionReward: M,
-    claimableRewards: Z
-  } = (0, h.wD)(), P = (0, a.e7)([p.default], () => p.default.getCurrentUser());
+    selectedGiftingPromotionReward: Z,
+    claimableRewards: M
+  } = (0, h.wD)(), v = (0, a.e7)([p.default], () => p.default.getCurrentUser());
   l.useEffect(() => {
-    let e = null != Z && Z.length > 0;
-    null == M && e && S(Z[0])
-  }, [Z, M, S]);
-  let v = e => {
+    let e = null != M && M.length > 0;
+    null == Z && e && S(M[0])
+  }, [M, Z, S]);
+  let P = e => {
       let t = e.skuId;
       return (0, i.jsx)(d.Z, {
         skuId: t,
-        price: _.intl.string(_.t.QQsaCQ),
-        isSelected: t === (null == M ? void 0 : M.skuId),
+        price: L.intl.string(L.t.QQsaCQ),
+        isSelected: t === (null == Z ? void 0 : Z.skuId),
         onSelect: () => S(e),
         className: g.giftSelectItem
       }, t)
     },
-    I = (0, c.Q3)("PremiumPaymentFreeSKUSelectStep");
+    b = (0, c.Q3)("PremiumPaymentFreeSKUSelectStep");
   r()(null != s, "Expected plan to selected"), r()(null != E, "Expected selectedSkuId"), r()(null != y, "Step should be set");
-  let b = null == Z ? void 0 : Z.map(e => v(e)),
-    T = null != M && null != P ? (0, i.jsx)(o.Z, {
+  let I = null == M ? void 0 : M.map(e => P(e)),
+    T = null != Z && null != v ? (0, i.jsx)(C.Z, {
       avatarDecorationOverride: {
-        asset: M.assetId
+        asset: Z.assetId
       },
-      user: P,
+      user: v,
       guildId: null,
-      avatarSize: C.EFr.SIZE_152
+      avatarSize: o.EFr.SIZE_152
     }) : null,
     N = (0, i.jsx)(m.O3, {
-      children: (0, i.jsx)(C.mzw, {
+      children: (0, i.jsx)(o.mzw, {
         className: g.modalFooter,
         children: (0, i.jsx)(u.y, {
           onStepChange: e => {
-            null != P && null != M && x.default.track(L.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: P.id,
-              reward_sku_id: M.skuId
+            null != v && null != Z && x.default.track(_.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: v.id,
+              reward_sku_id: Z.skuId
             }), t(e)
           },
           onBackClick: () => t(j.h8.PLAN_SELECT),
@@ -78,35 +78,35 @@ function E(e) {
         })
       })
     }),
-    O = (0, i.jsx)(C.X6q, {
+    O = (0, i.jsx)(o.X6q, {
       variant: "heading-lg/bold",
       color: "header-primary",
-      children: _.intl.string(_.t["Rp0+ZG"])
+      children: L.intl.string(L.t["Rp0+ZG"])
     });
-  return I ? (0, i.jsxs)("div", {
+  return b ? (0, i.jsxs)("div", {
     className: g.container,
-    children: [(0, i.jsx)(C.xBx, {
-      children: (0, i.jsxs)(C.Kqy, {
+    children: [(0, i.jsx)(o.xBx, {
+      children: (0, i.jsxs)(o.Kqy, {
         direction: "horizontal",
         justify: "space-between",
         align: "center",
-        children: [O, (0, i.jsx)(C.olH, {
+        children: [O, (0, i.jsx)(o.olH, {
           onClick: n
         })]
       })
-    }), (0, i.jsx)(C.hzk, {
-      children: (0, i.jsxs)(C.Kqy, {
+    }), (0, i.jsx)(o.hzk, {
+      children: (0, i.jsxs)(o.Kqy, {
         gap: 24,
         align: "center",
         padding: {
           top: 24
         },
-        children: [T, (0, i.jsx)(C.Kqy, {
+        children: [T, (0, i.jsx)(o.Kqy, {
           gap: 8,
           padding: {
             top: 12
           },
-          children: b
+          children: I
         })]
       })
     }), N]
@@ -117,8 +117,8 @@ function E(e) {
       children: [(0, i.jsx)("div", {
         className: g.header,
         children: O
-      }), b]
-    }), (0, i.jsx)(C.olH, {
+      }), I]
+    }), (0, i.jsx)(o.olH, {
       onClick: n,
       className: g.closeButton
     }), (0, i.jsx)("div", {

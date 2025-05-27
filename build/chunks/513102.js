@@ -1,6 +1,6 @@
 /** Chunk was on 42018 **/
 n.d(t, {
-  Z: () => d
+  Z: () => s
 });
 var i = n(255367);
 n(73800);
@@ -9,9 +9,9 @@ var r = n(481060),
   a = n(749681),
   o = n(258971),
   c = n(49898),
-  s = n(388032);
+  d = n(388032);
 
-function d(e) {
+function s(e) {
   let {
     enabled: t
   } = l.c.useExperiment({
@@ -22,7 +22,7 @@ function d(e) {
   return (0, i.jsx)(r.sNh, {
     id: "application-directory",
     label: (0, i.jsx)(i.Fragment, {
-      children: s.intl.string(s.t.AKcFUl)
+      children: d.intl.string(d.t.AKcFUl)
     }),
     icon: n,
     action: () => {

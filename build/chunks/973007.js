@@ -8,14 +8,14 @@ var l = n(481060),
   s = n(389973),
   r = n(823188),
   a = n(474936),
-  C = n(894838);
+  o = n(894838);
 
-function o(e) {
+function C(e) {
   let {
     onClick: t,
     isGift: n,
     priceOptions: a,
-    showPromotionalGiftBanner: o,
+    showPromotionalGiftBanner: C,
     enablePremiumRebrandDesign: d
   } = e;
   return d ? (0, i.jsx)(l.P3F, {
@@ -25,7 +25,7 @@ function o(e) {
     },
     children: (0, i.jsx)(s.P, {
       ctaButton: null,
-      showPromotionalGiftBanner: o,
+      showPromotionalGiftBanner: C,
       showYearlyPrice: !0,
       isGift: n,
       isModal: !0,
@@ -37,10 +37,10 @@ function o(e) {
       cursor: "pointer"
     },
     children: (0, i.jsx)(r.wp, {
-      className: C.tier2MarketingCard,
+      className: o.tier2MarketingCard,
       ctaButton: null,
-      showWumpus: !o,
-      showPromotionalGiftBanner: o,
+      showWumpus: !C,
+      showPromotionalGiftBanner: C,
       showYearlyPrice: !0,
       isGift: n,
       isModal: !0,
@@ -54,9 +54,9 @@ function d(e) {
     onClick: t,
     isGift: n,
     priceOptions: a,
-    enablePremiumRebrandDesign: o
+    enablePremiumRebrandDesign: C
   } = e;
-  return o ? (0, i.jsx)(l.P3F, {
+  return C ? (0, i.jsx)(l.P3F, {
     onClick: t,
     style: {
       cursor: "pointer"
@@ -73,7 +73,7 @@ function d(e) {
       cursor: "pointer"
     },
     children: (0, i.jsx)(r.Gq, {
-      className: C.tier0MarketingCard,
+      className: o.tier0MarketingCard,
       ctaButton: null,
       showWumpus: !0,
       showYearlyPrice: !0,
@@ -91,7 +91,7 @@ let c = function(e) {
     enablePremiumRebrandDesign: r
   } = e;
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(o, {
+    children: [(0, i.jsx)(C, {
       onClick: () => t(a.Si.TIER_2),
       isGift: n,
       priceOptions: l,

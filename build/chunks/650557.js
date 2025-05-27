@@ -809,7 +809,7 @@ var y = new WeakMap,
       a = r && (0, _.isKeyHotkey)(r);
     return e => !!(i && i(e) || es && o && o(e) || !es && a && a(e))
   },
-  e3 = {
+  e2 = {
     isBold: e1("bold"),
     isCompose: e1("compose"),
     isMoveBackward: e1("moveBackward"),
@@ -835,7 +835,7 @@ var y = new WeakMap,
     isTransposeCharacter: e1("transposeCharacter"),
     isUndo: e1("undo")
   },
-  e2 = (e, t) => {
+  e3 = (e, t) => {
     var n = [],
       r = () => {
         n = []
@@ -880,7 +880,7 @@ class e5 extends c.Component {
     var {
       receivedUserInput: e
     } = this.props, t = this.context;
-    this.manager = e2(t, e), this.mutationObserver = new MutationObserver(this.manager.registerMutations), this.observe()
+    this.manager = e3(t, e), this.mutationObserver = new MutationObserver(this.manager.registerMutations), this.observe()
   }
   getSnapshotBeforeUpdate() {
     var e, t, n, r, i = null == (e = this.mutationObserver) ? void 0 : e.takeRecords();
@@ -2126,32 +2126,32 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
             var {
               selection: n
             } = C, r = C.children[null !== n ? n.focus.path[0] : 0], o = "rtl" === i()(d.NB.string(r));
-            if (e3.isRedo(t)) {
+            if (e2.isRedo(t)) {
               e.preventDefault();
               var a = C;
               "function" == typeof a.redo && a.redo();
               return
             }
-            if (e3.isUndo(t)) {
+            if (e2.isUndo(t)) {
               e.preventDefault();
               var s = C;
               "function" == typeof s.undo && s.undo();
               return
             }
-            if (e3.isMoveLineBackward(t)) {
+            if (e2.isMoveLineBackward(t)) {
               e.preventDefault(), d.YR.move(C, {
                 unit: "line",
                 reverse: !0
               });
               return
             }
-            if (e3.isMoveLineForward(t)) {
+            if (e2.isMoveLineForward(t)) {
               e.preventDefault(), d.YR.move(C, {
                 unit: "line"
               });
               return
             }
-            if (e3.isExtendLineBackward(t)) {
+            if (e2.isExtendLineBackward(t)) {
               e.preventDefault(), d.YR.move(C, {
                 unit: "line",
                 edge: "focus",
@@ -2159,14 +2159,14 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
               });
               return
             }
-            if (e3.isExtendLineForward(t)) {
+            if (e2.isExtendLineForward(t)) {
               e.preventDefault(), d.YR.move(C, {
                 unit: "line",
                 edge: "focus"
               });
               return
             }
-            if (e3.isMoveBackward(t)) {
+            if (e2.isMoveBackward(t)) {
               e.preventDefault(), n && d.e6.isCollapsed(n) ? d.YR.move(C, {
                 reverse: !o
               }) : d.YR.collapse(C, {
@@ -2174,7 +2174,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
               });
               return
             }
-            if (e3.isMoveForward(t)) {
+            if (e2.isMoveForward(t)) {
               e.preventDefault(), n && d.e6.isCollapsed(n) ? d.YR.move(C, {
                 reverse: o
               }) : d.YR.collapse(C, {
@@ -2182,7 +2182,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
               });
               return
             }
-            if (e3.isMoveWordBackward(t)) {
+            if (e2.isMoveWordBackward(t)) {
               e.preventDefault(), n && d.e6.isExpanded(n) && d.YR.collapse(C, {
                 edge: "focus"
               }), d.YR.move(C, {
@@ -2191,7 +2191,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
               });
               return
             }
-            if (e3.isMoveWordForward(t)) {
+            if (e2.isMoveWordForward(t)) {
               e.preventDefault(), n && d.e6.isExpanded(n) && d.YR.collapse(C, {
                 edge: "focus"
               }), d.YR.move(C, {
@@ -2201,7 +2201,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
               return
             }
             if (eb) {
-              if ((ef || eu) && n && (e3.isDeleteBackward(t) || e3.isDeleteForward(t)) && d.e6.isCollapsed(n)) {
+              if ((ef || eu) && n && (e2.isDeleteBackward(t) || e2.isDeleteForward(t)) && d.e6.isCollapsed(n)) {
                 var l = d.NB.parent(C, n.anchor.path);
                 if (d.W_.isElement(l) && d.ML.isVoid(C, l) && (d.ML.isInline(C, l) || d.ML.isBlock(C, l))) {
                   e.preventDefault(), d.ML.deleteBackward(C, {
@@ -2211,28 +2211,28 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
                 }
               }
             } else {
-              if (e3.isBold(t) || e3.isItalic(t) || e3.isTransposeCharacter(t)) return void e.preventDefault();
-              if (e3.isSoftBreak(t)) {
+              if (e2.isBold(t) || e2.isItalic(t) || e2.isTransposeCharacter(t)) return void e.preventDefault();
+              if (e2.isSoftBreak(t)) {
                 e.preventDefault(), d.ML.insertSoftBreak(C);
                 return
               }
-              if (e3.isSplitBlock(t)) {
+              if (e2.isSplitBlock(t)) {
                 e.preventDefault(), d.ML.insertBreak(C);
                 return
               }
-              if (e3.isDeleteBackward(t)) {
+              if (e2.isDeleteBackward(t)) {
                 e.preventDefault(), n && d.e6.isExpanded(n) ? d.ML.deleteFragment(C, {
                   direction: "backward"
                 }) : d.ML.deleteBackward(C);
                 return
               }
-              if (e3.isDeleteForward(t)) {
+              if (e2.isDeleteForward(t)) {
                 e.preventDefault(), n && d.e6.isExpanded(n) ? d.ML.deleteFragment(C, {
                   direction: "forward"
                 }) : d.ML.deleteForward(C);
                 return
               }
-              if (e3.isDeleteLineBackward(t)) {
+              if (e2.isDeleteLineBackward(t)) {
                 e.preventDefault(), n && d.e6.isExpanded(n) ? d.ML.deleteFragment(C, {
                   direction: "backward"
                 }) : d.ML.deleteBackward(C, {
@@ -2240,7 +2240,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
                 });
                 return
               }
-              if (e3.isDeleteLineForward(t)) {
+              if (e2.isDeleteLineForward(t)) {
                 e.preventDefault(), n && d.e6.isExpanded(n) ? d.ML.deleteFragment(C, {
                   direction: "forward"
                 }) : d.ML.deleteForward(C, {
@@ -2248,7 +2248,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
                 });
                 return
               }
-              if (e3.isDeleteWordBackward(t)) {
+              if (e2.isDeleteWordBackward(t)) {
                 e.preventDefault(), n && d.e6.isExpanded(n) ? d.ML.deleteFragment(C, {
                   direction: "backward"
                 }) : d.ML.deleteBackward(C, {
@@ -2256,7 +2256,7 @@ var tC = e => c.createElement(c.Fragment, null, eW(e)),
                 });
                 return
               }
-              if (e3.isDeleteWordForward(t)) {
+              if (e2.isDeleteWordForward(t)) {
                 e.preventDefault(), n && d.e6.isExpanded(n) ? d.ML.deleteFragment(C, {
                   direction: "forward"
                 }) : d.ML.deleteForward(C, {
