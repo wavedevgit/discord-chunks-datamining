@@ -354,8 +354,8 @@ function eT(e) {
     setBillingAddressState: e$,
     setIsSubmittingCurrentStep: e0,
     hasRedirectURL: e1,
-    setHasRedirectURL: e2,
-    braintreeEmail: e3,
+    setHasRedirectURL: e3,
+    braintreeEmail: e2,
     braintreeNonce: e4,
     venmoUsername: e5,
     adyenPaymentData: e6,
@@ -606,7 +606,7 @@ function eT(e) {
       });
       break;
     case A.h8.PAYPAL_INFORMATION:
-      let tg = 0 !== e3.length && null != e4;
+      let tg = 0 !== e2.length && null != e4;
       n = (0, r.jsx)(eg, {}), a = (0, r.jsx)(eS, {
         onBack: () => eH(A.h8.PAYMENT_TYPE),
         primaryCTA: C.Z.CTAType.CONTINUE,
@@ -698,7 +698,7 @@ function eT(e) {
               let {
                 redirectConfirmation: t
               } = await (0, d.Dk)(eJ.info, e, j);
-              e2(t)
+              e3(t)
             } catch (e) {}
             break;
           case K.He.GIROPAY:

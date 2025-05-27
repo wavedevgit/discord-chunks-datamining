@@ -335,9 +335,9 @@ let V = i.forwardRef(function(e, t) {
     e0 = i.useRef(null),
     {
       focusPreviousItem: e1,
-      focusNextItem: e2
+      focusNextItem: e3
     } = Y(e0, eb, eL),
-    e3 = (0, N.Q3)("SearchableSelect");
+    e2 = (0, N.Q3)("SearchableSelect");
   return (0, r.jsxs)(u.bG, {
     navigator: eW,
     children: [(0, r.jsx)(b.y, {
@@ -493,7 +493,7 @@ let V = i.forwardRef(function(e, t) {
                 },
                 children: (0, r.jsx)(l, {
                   className: R.dropdownIcon,
-                  size: e3 ? "sm" : void 0
+                  size: e2 ? "sm" : void 0
                 })
               })]
             })
@@ -508,7 +508,7 @@ let V = i.forwardRef(function(e, t) {
           let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
           eq(e, t)
         },
-        focusNextItem: e2,
+        focusNextItem: e3,
         focusPreviousItem: e1,
         renderCustomPill: ec,
         customPillContainerClassName: eu
