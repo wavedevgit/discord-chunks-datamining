@@ -190,7 +190,8 @@ function M(e) {
       color: X,
       colors: el ? J : null,
       name: Q,
-      className: y.roleDot
+      className: y.roleDot,
+      hoverOverride: null == ei ? void 0 : ei.animate
     }) : null, eE, !D && !k && (0, i.jsx)(S.ZP, {
       primaryGuild: n.primaryGuild,
       userId: r.author.id,
