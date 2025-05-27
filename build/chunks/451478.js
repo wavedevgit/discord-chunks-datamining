@@ -122,6 +122,9 @@ class v extends(r = a.ZP.Store) {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, l.UU)();
     return h(e).focused
   }
+  isAppFocused() {
+    return null != this.getFocusedWindowId()
+  }
   isVisible() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, l.UU)();
     return h(e).visible
@@ -159,7 +162,7 @@ Promise.resolve().then(n.bind(n, 626135)).then(e => {
   } = e;
   t(e => {
     {
-      e.client_app_state = I.isFocused() ? "focused" : "unfocused";
+      e.client_app_state = I.isAppFocused() ? "focused" : "unfocused";
       let t = I.windowSize();
       e.client_viewport_width = t.width, e.client_viewport_height = t.height
     }
