@@ -377,7 +377,8 @@ class v extends a.Z {
       noiseSuppression: t.noiseSuppression,
       automaticGainControl: t.automaticGainControl,
       noiseCancellation: t.noiseCancellation,
-      voiceFilters: t.voiceFilters
+      voiceFilters: t.voiceFilters,
+      loopbackUseAudioMode: t.loopbackUseAudioMode
     }), null != (0, d.zS)().setEmitVADLevel2 ? (0, d.zS)().setEmitVADLevel2(e || this.listenerCount(s.aB.VoiceActivity) > 0) : (0, d.zS)().setEmitVADLevel(e || this.listenerCount(s.aB.VoiceActivity) > 0, e, {
       echoCancellation: t.echoCancellation,
       noiseSuppression: t.noiseSuppression,

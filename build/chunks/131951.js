@@ -1270,8 +1270,8 @@ function nb(e) {
   let {
     enabled: t,
     loopbackReason: n
-  } = e, r = t_.size > 0;
-  return t ? t_.add(n) : t_.delete(n), ny(), t_.size > 0 !== r && nO()
+  } = e;
+  return t ? t_.add(n) : t_.delete(n), ny(), nO()
 }
 
 function ny() {
@@ -1294,14 +1294,16 @@ function nO() {
     o = ei.Z.hasNoiseSuppression(n) || e.noiseSuppression,
     a = ei.Z.hasAutomaticGainControl(n) || e.automaticGainControl,
     s = e.noiseCancellation,
-    l = null !== tn;
+    l = null !== tn,
+    c = t_.has("voice_filter") && 1 === t_.size;
   eU.setLoopback(t, {
     echoCancellation: r,
     echoCancellationPreEcho: i,
     noiseSuppression: o,
     automaticGainControl: a,
     noiseCancellation: s,
-    voiceFilters: l
+    voiceFilters: l,
+    loopbackUseAudioMode: c
   })
 }
 
