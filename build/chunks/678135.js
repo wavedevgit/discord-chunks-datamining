@@ -121,7 +121,7 @@ function N(e) {
           location: "UserProfilePreview",
           user: t,
           themeType: S.lY.POPOUT,
-          disableEdit: U
+          disableToolbar: U
         })]
       }), (0, r.jsx)(O.Z, {
         user: t,

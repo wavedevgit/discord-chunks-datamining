@@ -9,8 +9,8 @@ var r = t(442837),
   o = t(666520),
   s = t(246016),
   c = t(189156),
-  u = t(706454),
-  a = t(430824),
+  a = t(706454),
+  u = t(430824),
   d = t(914010),
   f = t(246946),
   p = t(785717),
@@ -35,9 +35,9 @@ function P(e) {
     onClose: T
   } = e, {
     trackUserProfileAction: S
-  } = (0, p.KZ)(), N = null == P ? void 0 : P.guildId, A = (0, r.e7)([a.Z], () => null != N ? a.Z.getGuild(N) : null), C = (0, r.e7)([d.Z], () => d.Z.getGuildId()), _ = (0, s.Y)({
+  } = (0, p.KZ)(), N = null == P ? void 0 : P.guildId, A = (0, r.e7)([u.Z], () => null != N ? u.Z.getGuild(N) : null), C = (0, r.e7)([d.Z], () => d.Z.getGuildId()), _ = (0, s.Y)({
     userId: n.id
-  }), w = (0, r.e7)([f.Z], () => f.Z.hidePersonalInformation), R = (0, r.e7)([u.default], () => u.default.locale), M = (0, h.Z)(n.id), U = (0, g.Z)(n.id);
+  }), w = (0, r.e7)([f.Z], () => f.Z.hidePersonalInformation), R = (0, r.e7)([a.default], () => a.default.locale), M = (0, h.Z)(n.id), U = (0, g.Z)(n.id);
   return (0, l.jsxs)(i.zJl, {
     fade: !0,
     className: I.scroller,

@@ -14,7 +14,7 @@ function c(e) {
     type: n,
     userId: t,
     onClose: c
-  } = e, u = function(e, n) {
+  } = e, a = function(e, n) {
     if (null == e) return {};
     var t, l, r = function(e, n) {
       if (null == e) return {};
@@ -29,8 +29,8 @@ function c(e) {
     }
     return r
   }(e, ["type", "userId", "onClose"]);
-  let a = n === o.j8.TEXT ? o.tG : o.ef;
-  return (0, l.jsx)(a, function(e) {
+  let u = n === o.j8.TEXT ? o.tG : o.ef;
+  return (0, l.jsx)(u, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         l = Object.keys(t);
@@ -57,5 +57,5 @@ function c(e) {
         recipientIds: t
       }), null == c || c()
     }
-  }, u))
+  }, a))
 }

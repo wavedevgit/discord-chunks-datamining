@@ -8,8 +8,8 @@ var l = t(255367),
   o = t(81897),
   s = t(906732),
   c = t(785717),
-  u = t(806729),
-  a = t(857302),
+  a = t(806729),
+  u = t(857302),
   d = t(892001),
   f = t(252417),
   p = t(388032),
@@ -22,14 +22,14 @@ function h(e) {
     channelId: h
   } = e, {
     mutualFriends: v
-  } = (0, u.Z)(n), {
+  } = (0, a.Z)(n), {
     analyticsLocations: j
   } = (0, s.ZP)(), {
     context: m,
     trackUserProfileAction: b
   } = (0, c.KZ)(), x = (0, o.Z)();
   r.useEffect(() => {
-    (0, a.Z)(n.id, x)
+    (0, u.Z)(n.id, x)
   }, [n.id, x]);
   let Z = e => {
     var n, t;

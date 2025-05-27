@@ -894,11 +894,19 @@ function ex(e) {
   let o = (0, A.a)("PrivateChannelRecipientsInviteTextButton"),
     s = l.useRef(null),
     [c, u] = l.useState(!1),
-    d = l.useCallback(() => u(e => !e), []);
-  return l.useCallback(() => (0, h.ZDy)(() => Promise.resolve(e => (0, i.jsx)(eb, es(eo({}, e), {
-    channel: t,
-    inBornThisNamedExperiment: o
-  })))), [t, o]), o && (h.zxk, h.zxk.Looks.OUTLINED, h.PhG.MEDIUM, er.intl.string(er.t["6Qgren"])), (0, i.jsx)(h.yRy, {
+    d = l.useCallback(() => u(e => !e), []),
+    p = l.useCallback(() => (0, h.ZDy)(() => Promise.resolve(e => (0, i.jsx)(eb, es(eo({}, e), {
+      channel: t,
+      inBornThisNamedExperiment: o
+    })))), [t, o]);
+  return o ? (0, i.jsx)(h.zxk, {
+    onClick: p,
+    look: h.zxk.Looks.OUTLINED,
+    buttonRef: s,
+    size: h.PhG.MEDIUM,
+    className: n,
+    children: er.intl.string(er.t["6Qgren"])
+  }) : (0, i.jsx)(h.yRy, {
     targetElementRef: s,
     renderPopout: e => (0, i.jsx)(eb, es(eo({}, e), {
       onClose: e.closePopout,

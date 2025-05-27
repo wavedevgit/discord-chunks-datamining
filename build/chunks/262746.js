@@ -1,21 +1,22 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => s
+  Z: () => u
 });
 var r = n(255367),
-  i = n(481060),
-  l = n(796263),
-  a = n(776571),
-  o = n(388032);
+  i = n(442837),
+  l = n(481060),
+  a = n(999382),
+  o = n(796263),
+  s = n(776571),
+  c = n(388032);
 
-function s(e) {
+function u(e) {
   let {
     channel: t,
-    user: s,
-    member: c,
-    inline: u = !1
-  } = e, d = () => {
-    null != s && (0, i.ZDy)(async () => {
+    user: u,
+    inline: d = !1
+  } = e, p = (0, i.e7)([a.Z], () => null != u && a.Z.isUserBanned(u.id)), m = () => {
+    null != u && (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("9125").then(n.bind(n, 98746));
@@ -40,7 +41,7 @@ function s(e) {
           return e
         }({}, n), l = l = {
           guildId: t.guild_id,
-          user: s,
+          user: u,
           modReportId: t.id
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
@@ -54,18 +55,18 @@ function s(e) {
         }), i))
       }
     })
-  }, p = null == c ? o.intl.string(a.default.dpfwQ0) : o.intl.string(a.default.ASv23d), m = null == c, f = "ban-user-".concat(null == s ? void 0 : s.id);
-  return u ? (0, r.jsx)(l.Z, {
-    text: p,
-    icon: i.pgN,
-    onClick: d,
-    disabled: m,
-    color: i.zxk.Colors.RED
-  }, f) : (0, r.jsx)(i.sNh, {
+  }, f = p ? c.intl.string(s.default.dpfwQ0) : c.intl.string(s.default.ASv23d), h = "ban-user-".concat(null == u ? void 0 : u.id);
+  return d ? (0, r.jsx)(o.Z, {
+    text: f,
+    icon: l.pgN,
+    onClick: m,
+    disabled: p,
+    color: l.zxk.Colors.RED
+  }, h) : (0, r.jsx)(l.sNh, {
     id: "ban-user",
-    icon: i.pgN,
-    label: p,
-    action: d,
-    disabled: m
-  }, f)
+    icon: l.pgN,
+    label: f,
+    action: m,
+    disabled: p
+  }, h)
 }

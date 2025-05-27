@@ -133,7 +133,8 @@ function C(e) {
               location: "BotUserProfilePopout",
               user: t,
               themeType: I.lY.POPOUT,
-              onCloseProfile: D
+              onCloseProfile: D,
+              disableToolbar: !0
             })]
           }), (0, r.jsx)(O.Z, {
             user: t,

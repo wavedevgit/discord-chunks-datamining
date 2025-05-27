@@ -430,9 +430,9 @@ function Q(e) {
       previewLabel: u,
       placeholderText: d,
       prompt: f,
-      disableEdit: h = !1
+      disableToolbar: h = !1
     } = e,
-    g = M(e, ["location", "user", "onCloseProfile", "previewText", "previewEmoji", "previewLabel", "placeholderText", "prompt", "disableEdit"]);
+    g = M(e, ["location", "user", "onCloseProfile", "previewText", "previewEmoji", "previewLabel", "placeholderText", "prompt", "disableToolbar"]);
   let b = (0, E.Z)(o.id),
     {
       analyticsLocations: y
@@ -442,7 +442,7 @@ function Q(e) {
     T = (0, I.T)({
       location: i
     }),
-    A = !v && !o.bot && T;
+    A = !v && !o.bot && !h && T;
   if (null != s || null != c) {
     let e = null != c ? c : null,
       t = null != s && "" !== s ? s : null,

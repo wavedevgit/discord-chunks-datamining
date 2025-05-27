@@ -8,8 +8,8 @@ var l = t(255367),
   o = t(706898),
   s = t(481060),
   c = t(246946),
-  u = t(785717),
-  a = t(786366),
+  a = t(785717),
+  u = t(786366),
   d = t(323090),
   f = t(116906),
   p = t(384816),
@@ -29,22 +29,22 @@ function x(e) {
     displayProfile: o,
     guildId: s,
     channelId: c,
-    onClose: u
+    onClose: a
   } = e;
   return n === v.oh.ACTIVITY ? (0, l.jsx)(f.Z, {
     user: r,
     currentUser: i,
     displayProfile: o,
     guildId: s,
-    onClose: u
+    onClose: a
   }) : n === v.oh.MUTUAL_FRIENDS ? (0, l.jsx)(g.Z, {
     user: r,
     guildId: s,
     channelId: c
   }) : n === v.oh.MUTUAL_GUILDS ? (0, l.jsx)(h.Z, {
     user: r,
-    onClose: u
-  }) : n === v.oh.BOT_DATA_ACCESS ? (0, l.jsx)(a.Z, {
+    onClose: a
+  }) : n === v.oh.BOT_DATA_ACCESS ? (0, l.jsx)(u.Z, {
     user: r
   }) : n === v.oh.BOT_INFO ? (0, l.jsx)(d.Z, {
     user: r,
@@ -52,18 +52,18 @@ function x(e) {
     displayProfile: o,
     guildId: s,
     subsection: t,
-    onClose: u
+    onClose: a
   }) : (0, l.jsx)(p.Z, {
     user: r,
     currentUser: i,
     displayProfile: o,
     subsection: t,
-    onClose: u
+    onClose: a
   })
 }
 
 function Z(e) {
-  var n, t, a;
+  var n, t, u;
   let {
     user: d,
     currentUser: f,
@@ -75,16 +75,16 @@ function Z(e) {
     onClose: O
   } = e, {
     trackUserProfileAction: I
-  } = (0, u.KZ)(), P = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), [{
+  } = (0, a.KZ)(), P = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), [{
     section: E,
     subsection: T
   }, S] = r.useState({
-    section: null != (a = null == (n = h.find(e => {
+    section: null != (u = null == (n = h.find(e => {
       let {
         section: n
       } = e;
       return n === Z
-    })) ? void 0 : n.section) ? a : null == (t = h[0]) ? void 0 : t.section,
+    })) ? void 0 : n.section) ? u : null == (t = h[0]) ? void 0 : t.section,
     subsection: y
   });
   r.useEffect(() => {

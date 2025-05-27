@@ -8,8 +8,8 @@ var l = t(255367),
   o = t(924826),
   s = t(91192),
   c = t(442837),
-  u = t(749210),
-  a = t(434404),
+  a = t(749210),
+  u = t(434404),
   d = t(271383),
   f = t(430824),
   p = t(496675),
@@ -75,21 +75,21 @@ function P(e) {
     user: n,
     currentUser: t,
     guild: c,
-    guildMember: u,
-    roles: a,
+    guildMember: a,
+    roles: u,
     highestRole: d,
     canManageRoles: f,
     onAddRole: p,
     onRemoveRole: h
-  } = e, j = f && null != u, P = r.useRef(null), E = r.useMemo(() => "roles-".concat((0, i.Z)()), []), T = (0, o.ZP)({
+  } = e, j = f && null != a, P = r.useRef(null), E = r.useMemo(() => "roles-".concat((0, i.Z)()), []), T = (0, o.ZP)({
     id: E,
     isEnabled: !0,
     scrollToStart: b.Cyb,
     scrollToEnd: b.Cyb,
     wrap: !0
-  }), S = a.length, N = 0 === S ? x.intl.string(x.t["vR7M+/"]) : x.intl.formatToPlainString(x.t.PCs0oq, {
+  }), S = u.length, N = 0 === S ? x.intl.string(x.t["vR7M+/"]) : x.intl.formatToPlainString(x.t.PCs0oq, {
     numRoles: S
-  }), A = a.map(e => {
+  }), A = u.map(e => {
     var r;
     return (0, l.jsx)(v.Z, {
       role: e,
@@ -114,7 +114,7 @@ function P(e) {
           children: [A, j && (0, l.jsx)(m.Z, {
             buttonRef: P,
             guild: c,
-            guildMember: u,
+            guildMember: a,
             numRoles: S,
             highestRole: d,
             onAddRole: p
@@ -144,12 +144,12 @@ function E(e) {
       action: "REMOVE_ROLE"
     });
     let r = null != (l = null == Z ? void 0 : Z.filter(n => n !== e.id)) ? l : [];
-    (null == (t = e.tags) ? void 0 : t.guild_connections) === null ? u.Z.unassignGuildRoleConnection(i.id, e.id) : a.Z.updateMemberRoles(i.id, n.id, r, [], [e.id])
+    (null == (t = e.tags) ? void 0 : t.guild_connections) === null ? a.Z.unassignGuildRoleConnection(i.id, e.id) : u.Z.updateMemberRoles(i.id, n.id, r, [], [e.id])
   }, [Z, i.id, n.id, s]), A = r.useCallback(e => {
     s({
       action: "ADD_ROLE"
     });
-    let t = null != Z ? Z : []; - 1 === t.indexOf(e) && (t = t.concat([e])), a.Z.updateMemberRoles(i.id, n.id, t, [e], [])
+    let t = null != Z ? Z : []; - 1 === t.indexOf(e) && (t = t.concat([e])), u.Z.updateMemberRoles(i.id, n.id, t, [e], [])
   }, [Z, i.id, n.id, s]), C = S && null != v;
   return 0 !== E.length || C ? (0, l.jsx)(j.Z, O(y({
     heading: x.intl.string(x.t.LPJmLy)
