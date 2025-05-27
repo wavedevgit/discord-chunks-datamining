@@ -14,8 +14,8 @@ var a = n(255367),
   u = n(246992),
   m = n(232867),
   x = n(981631),
-  h = n(123393),
-  p = n(616257),
+  p = n(123393),
+  h = n(616257),
   b = n(173166);
 let f = {
     [x.kNB.QUEST_REWARD]: "Quest Reward",
@@ -32,7 +32,7 @@ let f = {
       onDelete: l
     } = e, s = e => null != e ? (0, d.vc)(e, "LLL") : "---";
     return (0, a.jsxs)("div", {
-      className: i()(h.card, r ? b.gradientWrapperTier2 : ""),
+      className: i()(p.card, r ? b.gradientWrapperTier2 : ""),
       children: [(0, a.jsxs)(o.Text, {
         variant: "text-md/normal",
         children: ["ID: ", n.id, " "]
@@ -54,7 +54,7 @@ let f = {
           return null != e && e in f ? f[e] : "Unknown source type ".concat(e)
         })()]
       }), r && null != l && (0, a.jsx)(o.zxk, {
-        className: h.deleteEntitlementButton,
+        className: p.deleteEntitlementButton,
         size: o.zxk.Sizes.TINY,
         color: o.zxk.Colors.RED,
         look: o.zxk.Looks.OUTLINED,
@@ -91,7 +91,7 @@ function j() {
   return r.useEffect(() => {
     f(S(E)), _(P(E))
   }, [E]), (0, a.jsx)(o.zJl, {
-    className: p.panel,
+    className: h.panel,
     children: (0, a.jsxs)("div", {
       className: b.panelInner,
       children: [(0, a.jsxs)("div", {
@@ -104,7 +104,7 @@ function j() {
           children: "Manage Fractional Nitro"
         }), (0, a.jsxs)(o.P3F, {
           onClick: () => t(!e),
-          className: h.clickableGroup,
+          className: p.clickableGroup,
           children: [(0, a.jsx)("div", {
             children: (0, a.jsx)(o.Text, {
               variant: "text-md/normal",
@@ -137,7 +137,7 @@ function j() {
         style: {
           marginBottom: "8px"
         },
-        className: i()([h.section, b.buttons]),
+        className: i()([p.section, b.buttons]),
         children: [(0, a.jsx)(o.Text, {
           variant: "text-md/normal",
           children: " Fractional Premium SKU "
@@ -153,7 +153,7 @@ function j() {
           children: "Grant Fractional Nitro"
         })]
       }), (0, a.jsxs)("section", {
-        className: h.section,
+        className: p.section,
         children: [(0, a.jsxs)("div", {
           style: {
             flexWrap: "wrap"
@@ -166,7 +166,7 @@ function j() {
             variant: "text-lg/semibold",
             children: "Entitlements"
           }), (0, a.jsxs)("div", {
-            className: h.buttonGroup,
+            className: p.buttonGroup,
             children: [(0, a.jsx)(o.zxk, {
               disabled: T,
               size: o.zxk.Sizes.TINY,

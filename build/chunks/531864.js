@@ -1,4 +1,5 @@
-/** Chunk was on 93886 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   themeSelector: "themeSelector__5a15d"
 }

@@ -13,8 +13,8 @@ var a = n(255367),
   u = n(129861),
   m = n(665149),
   x = n(886118),
-  h = n(301801),
-  p = n(594174),
+  p = n(301801),
+  h = n(594174),
   b = n(572004),
   f = n(55935),
   v = n(120816),
@@ -103,7 +103,7 @@ let I = [{
           fingerprint: l
         },
         onClose: s
-      } = e, c = p.default.getUser(l), x = o()(r);
+      } = e, c = h.default.getUser(l), x = o()(r);
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(m.ZP, {
@@ -198,10 +198,10 @@ let I = [{
       })
     }
   }],
-  k = {
+  w = {
     events: {
       label: "Events",
-      filter: e => Object.entries(k).filter(e => {
+      filter: e => Object.entries(w).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -224,7 +224,7 @@ let I = [{
       filter: e => e.event.startsWith("network_action")
     }
   },
-  w = {
+  k = {
     searchType: x.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -240,19 +240,19 @@ function R() {
   let e = r.useRef(null),
     [t, n] = r.useState(""),
     l = (0, c.e7)([v.Z], () => v.Z.loggedEventsVersion),
-    [s, o] = r.useState(() => Object.keys(k)),
+    [s, o] = r.useState(() => Object.keys(w)),
     [u, m] = r.useState(v.Z.loggedEvents),
     x = r.useCallback(e => {
       m(e)
     }, []);
-  (0, h.BO)(t, v.Z.loggedEvents, x, w, [l]);
-  let p = u.filter(e => {
+  (0, p.BO)(t, v.Z.loggedEvents, x, k, [l]);
+  let h = u.filter(e => {
       for (let t of s)
-        if (k[t].filter(e)) return !0;
+        if (w[t].filter(e)) return !0;
       return !1
     }),
     [b, f] = r.useState(void 0),
-    j = p.find(e => e.key === b),
+    j = h.find(e => e.key === b),
     {
       TabBar: S,
       renderSelectedTab: P
@@ -281,7 +281,7 @@ function R() {
         className: O.toolbarDivider
       }), (0, a.jsx)("div", {
         className: O.filters,
-        children: Object.entries(k).map(e => {
+        children: Object.entries(w).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(d.P3F, {
             className: i()(O.filter, s.includes(t) && O.activeFilter),
@@ -303,7 +303,7 @@ function R() {
       })
     }), (0, a.jsx)(y.Z, {
       columns: T,
-      data: p,
+      data: h,
       selectedRowKey: b,
       onClickRow: e => f(e.key)
     }), null != j && (0, a.jsxs)(_.Z, {

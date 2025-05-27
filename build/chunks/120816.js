@@ -10,8 +10,8 @@ var a, r, l, i = n(772848),
   u = n(906467);
 let m = 0,
   x = [],
-  h = 0,
-  p = [],
+  p = 0,
+  h = [],
   b = !1;
 class f extends(a = o.ZP.Store) {
   initialize() {
@@ -21,10 +21,10 @@ class f extends(a = o.ZP.Store) {
     return x
   }
   get loggedEventsVersion() {
-    return h
+    return p
   }
   get loggedTriggers() {
-    return p
+    return h
   }
   get trackTriggers() {
     return b
@@ -49,7 +49,7 @@ let v = new f(c.Z, {
       properties: n,
       fingerprint: null != a ? (0, s.s)(a) : d.default.getId(),
       timestamp: new Date
-    }), h++, x.length > 500 && (x = x.slice(-Math.floor(250))))
+    }), p++, x.length > 500 && (x = x.slice(-Math.floor(250))))
   },
   TRACK_TRIGGER: function(e) {
     let {
@@ -60,7 +60,7 @@ let v = new f(c.Z, {
       location: l,
       previouslyTracked: s
     } = e;
-    u.Z.isDeveloper && b && (p = [...p, {
+    u.Z.isDeveloper && b && (h = [...h, {
       key: (0, i.Z)(),
       experimentId: t,
       descriptor: n,
@@ -69,7 +69,7 @@ let v = new f(c.Z, {
       location: l,
       previouslyTracked: s,
       timestamp: new Date
-    }]).length > 500 && p.shift()
+    }]).length > 500 && h.shift()
   },
   SET_TRACK_TRIGGERS: function(e) {
     let {
@@ -78,6 +78,6 @@ let v = new f(c.Z, {
     b = t
   },
   ANALYTICS_LOG_CLEAR: function() {
-    x = [], h++, p = []
+    x = [], p++, h = []
   }
 })

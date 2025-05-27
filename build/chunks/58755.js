@@ -13,9 +13,9 @@ var a = n(255367),
   u = n(789654),
   m = n(246992),
   x = n(500949),
-  h = n(770378);
+  p = n(770378);
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -65,7 +65,7 @@ function g(e) {
   } = e, {
     scales: l
   } = t, [i, s] = r.useState(null), o = (0, a.jsxs)("div", {
-    className: h.section,
+    className: p.section,
     children: [(0, a.jsx)(d.VcW, {
       options: v,
       placeholder: "Select a scale to edit...",
@@ -83,13 +83,13 @@ function g(e) {
           easing: x.iw.LINEAR,
           easingStrength: 1,
           steps: 26
-        }, n(b(p({}, t), {
+        }, n(b(h({}, t), {
           scales: [...t.scales, a]
         })))
       },
       popoutLayerContext: m.O$
     }), (0, a.jsx)("ul", {
-      className: h.overrides,
+      className: p.overrides,
       children: l.map(e => (0, a.jsx)("li", {
         children: (0, a.jsx)(d.P3F, {
           onClick: () => s(e.name),
@@ -98,7 +98,7 @@ function g(e) {
           },
           children: (0, a.jsx)(_, {
             scale: e,
-            onRemove: () => n(b(p({}, t), {
+            onRemove: () => n(b(h({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
             }))
           })
@@ -122,7 +122,7 @@ function j(e) {
     onClose: r
   } = e, {
     name: c,
-    base: p,
+    base: h,
     darkness: b,
     lightness: v,
     showColumnarPalettePreview: g,
@@ -132,9 +132,9 @@ function j(e) {
     steps: N = 26
   } = t, O = (0, x.XM)(t), E = (0, x.W6)(O, c);
   return (0, a.jsxs)(d.hjN, {
-    className: h.paletteSettings,
+    className: p.paletteSettings,
     children: [(0, a.jsxs)("div", {
-      className: h.titleWithIcon,
+      className: p.titleWithIcon,
       children: [(0, a.jsx)(d.P3F, {
         onClick: r,
         style: {
@@ -166,7 +166,7 @@ function j(e) {
       })]
     }), (0, a.jsxs)(d.xJW, {
       title: "Base Color",
-      className: h.formItem,
+      className: p.formItem,
       children: [(0, a.jsxs)(d.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
@@ -175,7 +175,7 @@ function j(e) {
         }), " palette is generated from."]
       }), (0, a.jsx)("input", {
         type: "color",
-        value: p,
+        value: h,
         onChange: e => (0, x.Ib)(c, e.target.value, n)
       })]
     }), (0, a.jsxs)(d.xJW, {
@@ -272,10 +272,10 @@ function j(e) {
       }), (0, a.jsx)(d.xJW, {
         title: "Palette Preview",
         children: (0, a.jsx)("div", {
-          className: h.paletteOverrides,
+          className: p.paletteOverrides,
           "data-columnar": g,
           children: Object.entries(O).map((e, n) => {
-            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
+            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", p = E[r];
             return (0, a.jsxs)("div", {
               style: {
                 backgroundColor: u
@@ -285,8 +285,8 @@ function j(e) {
                 style: {
                   color: m
                 },
-                children: [t.name, ".", n + 1, g && null != h ? (0, a.jsx)("strong", {
-                  children: " - ".concat(h)
+                children: [t.name, ".", n + 1, g && null != p ? (0, a.jsx)("strong", {
+                  children: " - ".concat(p)
                 }) : ""]
               }), g && (0, a.jsxs)(d.Text, {
                 variant: "text-xxs/medium",
@@ -314,20 +314,20 @@ function _(e) {
     format: "hex"
   })), [t]);
   return (0, a.jsxs)("li", {
-    className: h.override,
+    className: p.override,
     children: [(0, a.jsxs)("div", {
-      className: h.overrideHeader,
+      className: p.overrideHeader,
       children: [(0, a.jsx)("div", {
-        className: h.title,
+        className: p.title,
         children: (0, a.jsx)(d.Text, {
           lineClamp: 1,
           variant: "text-md/medium",
-          className: h.overrideHeading,
+          className: p.overrideHeading,
           tabularNumbers: !0,
           children: t.name
         })
       }), (0, a.jsx)("span", {}), (0, a.jsx)("span", {}), (0, a.jsx)(d.P3F, {
-        className: h.removeOverride,
+        className: p.removeOverride,
         onClick: n,
         children: (0, a.jsx)(d.Dio, {
           size: "xs",
@@ -335,7 +335,7 @@ function _(e) {
         })
       })]
     }), (0, a.jsx)("div", {
-      className: h.palettePreview,
+      className: p.palettePreview,
       children: s.map(e => (0, a.jsx)("span", {
         style: {
           width: 16,

@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 756521d19484e677
+  Original File Name: d0d6342fb2555468
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1426,73 +1426,6 @@
 
 .secondaryInfoText_ef5082 {
     margin-left: 8px
-}
-
-.themeSelector__5a15d {
-    margin-right: var(--spacing-8);
-    min-width: 200px
-}
-
-.themeSelector__5a15d .pillContainer {
-    height: 32px
-}
-
-.header__1436a,.subheader__1436a {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content
-}
-
-.header__1436a {
-    margin: 16px 0
-}
-
-.subheader__1436a {
-    margin: 12px 0 8px
-}
-
-.slider__1436a {
-    margin: -8px 0;
-    width: 100%
-}
-
-.themeColorPicker__1436a {
-    border: none;
-    box-shadow: none;
-    box-sizing: border-box;
-    width: 100%
-}
-
-.themeControl__1436a {
-    margin-top: 16px
-}
-
-.themeControl__1436a:first-of-type {
-    margin-top: 0
-}
-
-.colorList__1436a {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 8px
-}
-
-.colorItem__1436a {
-    align-items: center;
-    display: flex;
-    gap: 8px
-}
-
-.colorPreview__1436a {
-    border: 1px solid var(--background-tertiary);
-    border-radius: 4px;
-    height: 24px;
-    width: 24px
-}
-
-.saveButton__1436a {
-    margin-top: 16px
 }
 
 .container_f1a68f {
@@ -3513,4 +3446,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=756521d19484e677.css.map*/
+/*# sourceMappingURL=d0d6342fb2555468.css.map*/

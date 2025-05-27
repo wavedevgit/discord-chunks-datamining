@@ -14,8 +14,8 @@ var a = n(255367),
   u = n(203165),
   m = n(481060),
   x = n(410030),
-  h = n(705262),
-  p = n(374794),
+  p = n(705262),
+  h = n(374794),
   b = n(58755),
   f = n(246992),
   v = n(500949),
@@ -155,9 +155,9 @@ function E() {
           id: v.H8.PALETTES,
           children: "Palettes"
         })]
-      }), (0, a.jsx)(h.ZP, {
-        type: h.yH.SETTINGS,
-        children: (0, a.jsx)(h.ZP.Basic, {
+      }), (0, a.jsx)(p.ZP, {
+        type: p.yH.SETTINGS,
+        children: (0, a.jsx)(p.ZP.Basic, {
           className: g.toolbarThemeSelector,
           hideSystemSelector: !0
         })
@@ -177,7 +177,7 @@ function E() {
           onClick: s,
           disabled: !u,
           children: (0, a.jsx)(m.zGS, {})
-        }), (0, a.jsx)(p.Z, {
+        }), (0, a.jsx)(h.Z, {
           "aria-label": "Import",
           filters: [{
             name: "JSON",
@@ -270,7 +270,7 @@ function T(e) {
         })
       }) : t
     })
-  }, [n]), h = r.useCallback(e => {
+  }, [n]), p = r.useCallback(e => {
     n(t => {
       let {
         semanticColorOverrides: n
@@ -279,7 +279,7 @@ function T(e) {
         semanticColorOverrides: a
       })
     })
-  }, [n]), p = r.useCallback(e => {
+  }, [n]), h = r.useCallback(e => {
     n(t => {
       let {
         semanticColorOverrides: n
@@ -340,8 +340,8 @@ function T(e) {
               })
             })
           },
-          onRemove: () => h(t),
-          onHighlightToggle: () => p(t),
+          onRemove: () => p(t),
+          onHighlightToggle: () => h(t),
           children: (0, a.jsxs)("div", {
             className: g.semanticOverride,
             children: [(0, a.jsx)(m.VcW, {

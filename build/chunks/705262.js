@@ -272,7 +272,9 @@ let W = Object.freeze({
     return (0, r.jsxs)(r.Fragment, {
       children: [S && (0, r.jsx)(P.Z, {
         onSelect: () => {
-          (0, m.XO)(m.wh.CLIENT_THEMES), (0, d.xf)()
+          (0, m.XO)(m.wh.CUSTOM_THEME, {
+            from: "SETTINGS" === o ? m.tE.SETTING : m.tE.CLIENT_THEMES_EDITOR
+          }), "SETTINGS" === o && (0, d.xf)()
         }
       }), w.XV.filter(e => {
         let {
