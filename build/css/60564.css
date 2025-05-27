@@ -1,6 +1,6 @@
 /**
   Module ID: 60564
-  Original File Name: a5c826cd122cc311
+  Original File Name: 86a46bbb240add75
 **/
 .badgeContainer__98c7b {
     display: flex;
@@ -1988,29 +1988,6 @@
     margin-bottom: 0
 }
 
-.pillContainer__61870 {
-    background: var(--background-primary);
-    border-radius: var(--radius-md);
-    left: 50%;
-    position: absolute;
-    top: 0;
-    transform: translate(-50%,-50%)
-}
-
-.pill__61870 {
-    align-items: center;
-    background: linear-gradient(90deg,rgba(155,29,165,.34),rgba(30,35,83,.34) 120%);
-    border: 1px solid var(--border-faint);
-    border-radius: inherit;
-    display: flex;
-    justify-content: center;
-    padding: var(--spacing-8) var(--spacing-12)
-}
-
-.pillText__61870 {
-    text-transform: uppercase
-}
-
 .promotionalBackgroundImage__61870 {
     position: absolute;
     right: 0;
@@ -2045,4 +2022,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=a5c826cd122cc311.css.map*/
+/*# sourceMappingURL=86a46bbb240add75.css.map*/

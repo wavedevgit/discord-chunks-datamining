@@ -18,12 +18,12 @@ function m(e) {
     maxRewardImageSrc: t,
     claimableRewards: n,
     size: m
-  } = e, C = (0, r.e7)([o.default], () => o.default.getCurrentUser()), g = (0, r.e7)([a.Z], () => a.Z.useReducedMotion), x = (0, l.pxk)(m);
+  } = e, C = (0, r.e7)([o.default], () => o.default.getCurrentUser()), g = (0, r.e7)([a.Z], () => a.Z.useReducedMotion), p = (0, l.pxk)(m);
   return n.length > 2 ? (0, i.jsx)("img", {
     alt: "",
     src: t,
     style: {
-      height: 1.2 * x
+      height: 1.2 * p
     }
   }) : (0, i.jsxs)("div", {
     className: c.container,
@@ -35,7 +35,7 @@ function m(e) {
       avatarDecoration: (0, s.Z)(n[0].assetId, m, !g)
     }), 2 === n.length && (0, i.jsx)("div", {
       style: {
-        marginRight: -Math.round(.321 * x)
+        marginRight: -Math.round(.321 * p)
       },
       children: (0, i.jsx)(l.Xo$, {
         "aria-label": null == C ? void 0 : C.username,

@@ -136,8 +136,8 @@ function _(e) {
     disabled: d = !1,
     customPickerPosition: _ = "bottom",
     secondaryValue: j,
-    onChangeGradientColors: O,
-    isGradient: y = !1
+    onChangeGradientColors: y,
+    isGradient: O = !1
   } = e, h = o.useCallback(e => 0 !== e && e !== t && !r.some(t => t === e), [r, t]), C = o.useRef(null), x = o.useRef(null), v = o.useRef(null), [P, w] = o.useState(() => h(a) ? a : null), [k, S] = o.useState({
     start: a,
     end: null != j ? j : c.p6O
@@ -161,8 +161,8 @@ function _(e) {
       S({
         start: e,
         end: t
-      }), null == O || O([e, t])
-    }, [O]),
+      }), null == y || y([e, t])
+    }, [y]),
     B = o.useCallback((e, t) => {
       E(r => b(f({}, r), {
         [e]: t
@@ -257,8 +257,8 @@ function _(e) {
     renderDefaultButton: A,
     renderCustomButton: G,
     renderGradientCustomButton: T,
-    isGradient: y,
+    isGradient: O,
     customColor: P,
-    onChange: y ? N : D
+    onChange: O ? N : D
   }))
 }

@@ -20,8 +20,8 @@ var s = n(120356),
   m = n(780384),
   C = n(481060),
   g = n(410030),
-  x = n(100527),
-  p = n(906732),
+  p = n(100527),
+  x = n(906732),
   h = n(535322),
   f = n(706454),
   v = n(594174),
@@ -30,8 +30,8 @@ var s = n(120356),
   j = n(599250),
   P = n(942659),
   E = n(74538),
-  b = n(357355),
-  N = n(140465),
+  N = n(357355),
+  b = n(140465),
   _ = n(286961),
   S = n(33052),
   y = n(104494),
@@ -68,7 +68,7 @@ function K(e) {
       [A.featureItem]: c
     }),
     children: [(0, a.jsx)(t, {
-      className: D.icon,
+      className: c ? D.smallIcon : D.icon,
       color: "currentColor"
     }), (0, a.jsx)(C.Text, {
       variant: null != l ? l : "text-md/normal",
@@ -104,18 +104,18 @@ function X(e) {
   let {
     isGift: m,
     premiumTier: g,
-    offerTierMatchesCard: x,
-    offerType: p,
+    offerTierMatchesCard: p,
+    offerType: x,
     showYearlyPrice: h,
     priceOptions: f,
     textVariant: I,
     className: j,
     isMarketingPageV2: P,
-    enablePremiumRebrandDesign: b,
+    enablePremiumRebrandDesign: N,
     headerClassName: _,
     headingVariant: S = "heading-md/normal",
     headingColor: Z
-  } = e, M = (0, d.e7)([T.ZP], () => T.ZP.getPremiumTypeSubscription()), L = (0, d.e7)([v.default], () => v.default.getCurrentUser()), O = (0, N.t7)(), H = (0, N.lr)(), V = g === k.p9.TIER_0 ? k.Si.TIER_0 : k.Si.TIER_2, G = (null == M ? void 0 : M.hasActiveTrial) ? null == L ? void 0 : L.premiumType : O ? k.p9.TIER_2 : null, A = (0, R.N)(), F = (0, y.Ng)(), W = null == A ? void 0 : A.subscription_trial;
+  } = e, M = (0, d.e7)([T.ZP], () => T.ZP.getPremiumTypeSubscription()), L = (0, d.e7)([v.default], () => v.default.getCurrentUser()), O = (0, b.t7)(), H = (0, b.lr)(), V = g === k.p9.TIER_0 ? k.Si.TIER_0 : k.Si.TIER_2, G = (null == M ? void 0 : M.hasActiveTrial) ? null == L ? void 0 : L.premiumType : O ? k.p9.TIER_2 : null, A = (0, R.N)(), F = (0, y.Ng)(), W = null == A ? void 0 : A.subscription_trial;
   if (!P && !m && null != G && g === G && null != M && null != M.planIdFromItems) {
     let e = null != M.trialEndsAt ? u()(null == M ? void 0 : M.trialEndsAt).diff(u()(), "d") : 0,
       r = k.GP[M.planIdFromItems],
@@ -124,7 +124,7 @@ function X(e) {
       variant: S,
       color: Z,
       className: o()(D.trialHeader, _),
-      children: 0 === p ? U.intl.format(U.t["2CGBrq"], {
+      children: 0 === x ? U.intl.format(U.t["2CGBrq"], {
         remainingTime: e,
         price: l
       }) : M.planIdFromItems === k.Xh.PREMIUM_YEAR_TIER_2 ? U.intl.format(U.t["+qqh6u"], {
@@ -137,9 +137,9 @@ function X(e) {
       })
     })
   }
-  if (!P && !m && x) {
+  if (!P && !m && p) {
     let e = E.ZP.formatPriceString(E.ZP.getDefaultPrice(g === k.p9.TIER_0 ? k.Xh.PREMIUM_MONTH_TIER_0 : k.Xh.PREMIUM_MONTH_TIER_2), k.rV.MONTH);
-    if (0 === p) return (0, a.jsx)(C.X6q, {
+    if (0 === x) return (0, a.jsx)(C.X6q, {
       variant: S,
       color: Z,
       className: o()(D.trialHeader, _),
@@ -172,7 +172,7 @@ function X(e) {
       priceOptions: f,
       variant: I,
       isMarketingPageV2: P,
-      enablePremiumRebrandDesign: b
+      enablePremiumRebrandDesign: N
     }), h && (0, a.jsx)(w.Z, {
       subscriptionTier: V,
       interval: k.rV.YEAR,
@@ -181,7 +181,7 @@ function X(e) {
       priceOptions: f,
       variant: I,
       isMarketingPageV2: P,
-      enablePremiumRebrandDesign: b
+      enablePremiumRebrandDesign: N
     })]
   })
 }
@@ -272,7 +272,7 @@ function $(e) {
     className: l,
     isGift: s = !1,
     priceOptions: c
-  } = e, u = (0, d.e7)([T.ZP], () => T.ZP.getPremiumTypeSubscription()), m = (0, d.e7)([v.default], () => v.default.getCurrentUser()), g = (0, R.N)(), x = null == g || null == (t = g.subscription_trial) ? void 0 : t.sku_id, p = !!(null == u ? void 0 : u.hasActiveTrial), h = p ? null == m ? void 0 : m.premiumType : null, f = null != x || p, I = (0, L.y_)(h, x);
+  } = e, u = (0, d.e7)([T.ZP], () => T.ZP.getPremiumTypeSubscription()), m = (0, d.e7)([v.default], () => v.default.getCurrentUser()), g = (0, R.N)(), p = null == g || null == (t = g.subscription_trial) ? void 0 : t.sku_id, x = !!(null == u ? void 0 : u.hasActiveTrial), h = x ? null == m ? void 0 : m.premiumType : null, f = null != p || x, I = (0, L.y_)(h, p);
   return (0, a.jsxs)("div", {
     className: o()(D.tier0, D.card, l, {
       [D.withTier0Rim]: !s && f,
@@ -304,7 +304,7 @@ function $(e) {
           isGift: s,
           premiumTier: k.p9.TIER_0,
           offerType: 0,
-          offerTierMatchesCard: x === k.Si.TIER_0,
+          offerTierMatchesCard: p === k.Si.TIER_0,
           showYearlyPrice: r,
           priceOptions: c,
           headingVariant: "heading-md/normal",
@@ -313,7 +313,7 @@ function $(e) {
       }), (0, a.jsx)("div", {
         children: (0, a.jsx)(Y, {})
       })]
-    }), s || x !== k.Si.TIER_0 ? null : (0, a.jsx)(O.t, {
+    }), s || p !== k.Si.TIER_0 ? null : (0, a.jsx)(O.t, {
       tier: k.p9.TIER_0
     }), i]
   })
@@ -326,7 +326,7 @@ function ee(e) {
     isModal: n = !1,
     isGift: i = !1,
     enablePremiumRebrandDesign: r = !1
-  } = e, l = (0, d.e7)([f.default], () => f.default.locale), s = (0, d.e7)([b.Z], () => b.Z.affinities), o = n && !i && s.length > 0;
+  } = e, l = (0, d.e7)([f.default], () => f.default.locale), s = (0, d.e7)([N.Z], () => N.Z.affinities), o = !r && n && !i && s.length > 0;
   switch (t) {
     case 3:
       return (0, a.jsxs)(a.Fragment, {
@@ -404,7 +404,7 @@ function et(e) {
     isModal: d = !1,
     priceOptions: m,
     showPromotionalGiftBanner: g = !1
-  } = e, x = (0, R.N)(), p = null == x || null == (t = x.subscription_trial) ? void 0 : t.sku_id, h = (0, N.Nx)(), f = (0, y.Ng)(), v = null != x ? 0 : null != f ? 1 : null, T = (0, M.Vi)(), j = !u && h, P = null == (n = (0, _.Z)()) ? void 0 : n.planSelection, E = null == P || null == (i = P.getBackgroundImageUrl) ? void 0 : i.call(P), b = (0, M.W1)();
+  } = e, p = (0, R.N)(), x = null == p || null == (t = p.subscription_trial) ? void 0 : t.sku_id, h = (0, b.Nx)(), f = (0, y.Ng)(), v = null != p ? 0 : null != f ? 1 : null, T = (0, M.Vi)(), j = !u && h, P = null == (n = (0, _.Z)()) ? void 0 : n.planSelection, E = null == P || null == (i = P.getBackgroundImageUrl) ? void 0 : i.call(P), N = (0, M.W1)();
   return (0, a.jsxs)("div", {
     className: o()(D.card, D.tier2, D.tier2V2Background, c, {
       [D.withTier2Rim]: j,
@@ -425,17 +425,17 @@ function et(e) {
       children: [(0, a.jsxs)("div", {
         children: [(0, a.jsx)(I.Z, {
           className: o()(D.title, D.tier2V2Title)
-        }), !u && p !== k.Si.TIER_2 && T && (0, a.jsx)("div", {
+        }), !u && x !== k.Si.TIER_2 && T && (0, a.jsx)("div", {
           children: (0, a.jsx)(C.Text, {
             variant: "text-xs/bold",
             className: D.freeTrialPillInline,
-            children: b
+            children: N
           })
         }), (0, a.jsx)(X, {
           isGift: u,
           premiumTier: k.p9.TIER_2,
           offerType: v,
-          offerTierMatchesCard: p === k.Si.TIER_2 || (0, y.Wp)(f, k.Si.TIER_2),
+          offerTierMatchesCard: x === k.Si.TIER_2 || (0, y.Wp)(f, k.Si.TIER_2),
           showYearlyPrice: l,
           priceOptions: m,
           textVariant: "heading-xl/normal",
@@ -462,11 +462,11 @@ function en(e) {
     showYearlyPrice: s,
     featureSet: c = 0,
     className: u,
-    isGift: x = !1,
-    isModal: p = !1,
+    isGift: p = !1,
+    isModal: x = !1,
     priceOptions: h,
     showPromotionalGiftBanner: f = !1
-  } = e, j = (0, d.e7)([T.ZP], () => T.ZP.getPremiumTypeSubscription()), P = (0, d.e7)([v.default], () => v.default.getCurrentUser()), E = (0, R.N)(), b = null == E || null == (t = E.subscription_trial) ? void 0 : t.sku_id, Z = (null == j ? void 0 : j.hasActiveTrial) ? null == P ? void 0 : P.premiumType : null, w = (0, N.Nx)(), H = (0, y.Ng)(), V = (0, N.t7)(), U = null != b || null != Z ? 0 : null != H || V ? 1 : null, A = (0, M.Vi)(), F = !x && w, W = null == (n = (0, _.Z)()) ? void 0 : n.planSelection, z = null == W || null == (i = W.getBackgroundImageUrl) ? void 0 : i.call(W), K = (0, M.W1)(), q = (0, m.ap)((0, g.ZP)()), Y = q ? L.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : L.VE.PREMIUM_TIER_2_WHITE_FILL, Q = (0, L.A1)(V, Z, H, E, b), $ = F && !q ? D.rimGlowTier2 : void 0;
+  } = e, j = (0, d.e7)([T.ZP], () => T.ZP.getPremiumTypeSubscription()), P = (0, d.e7)([v.default], () => v.default.getCurrentUser()), E = (0, R.N)(), N = null == E || null == (t = E.subscription_trial) ? void 0 : t.sku_id, Z = (null == j ? void 0 : j.hasActiveTrial) ? null == P ? void 0 : P.premiumType : null, w = (0, b.Nx)(), H = (0, y.Ng)(), V = (0, b.t7)(), U = null != N || null != Z ? 0 : null != H || V ? 1 : null, A = (0, M.Vi)(), F = !p && w, W = null == (n = (0, _.Z)()) ? void 0 : n.planSelection, z = null == W || null == (i = W.getBackgroundImageUrl) ? void 0 : i.call(W), K = (0, M.W1)(), q = (0, m.ap)((0, g.ZP)()), Y = q ? L.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : L.VE.PREMIUM_TIER_2_WHITE_FILL, Q = (0, L.A1)(V, Z, H, E, N), $ = F && !q ? D.rimGlowTier2 : void 0;
   return (0, a.jsxs)("div", {
     className: o()(D.card, D.tier2, u, {
       [D.withTier2Rim]: F,
@@ -477,7 +477,7 @@ function en(e) {
       className: D.promotionalBackgroundImage,
       alt: "",
       src: z
-    }), !x && null != Q && (0, a.jsxs)(a.Fragment, {
+    }), !p && null != Q && (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(L.Cy, {
         text: Q,
         className: D.topRimPill,
@@ -499,17 +499,17 @@ function en(e) {
       children: [(0, a.jsxs)("div", {
         children: [(0, a.jsx)(I.Z, {
           className: o()(D.title, D.tier2Title)
-        }), !x && b !== k.Si.TIER_2 && A && (0, a.jsx)("div", {
+        }), !p && N !== k.Si.TIER_2 && A && (0, a.jsx)("div", {
           children: (0, a.jsx)(C.Text, {
             variant: "text-xs/bold",
             className: D.freeTrialPillInline,
             children: K
           })
         }), (0, a.jsx)(X, {
-          isGift: x,
+          isGift: p,
           premiumTier: k.p9.TIER_2,
           offerType: U,
-          offerTierMatchesCard: b === k.Si.TIER_2 || (0, y.Wp)(H, k.Si.TIER_2),
+          offerTierMatchesCard: N === k.Si.TIER_2 || (0, y.Wp)(H, k.Si.TIER_2),
           showYearlyPrice: s,
           priceOptions: h,
           headingVariant: "heading-md/normal",
@@ -518,11 +518,11 @@ function en(e) {
       }), (0, a.jsx)("div", {
         children: (0, a.jsx)(ee, {
           featureSet: c,
-          isModal: p,
-          isGift: x
+          isModal: x,
+          isGift: p
         })
       })]
-    }), x || b !== k.Si.TIER_2 && null == H ? null : (0, a.jsx)(O.t, {
+    }), p || N !== k.Si.TIER_2 && null == H ? null : (0, a.jsx)(O.t, {
       tier: k.p9.TIER_2
     }), l, f && (0, a.jsx)(S.K, {})]
   })
@@ -539,10 +539,10 @@ function er(e) {
     className: s
   } = e, {
     analyticsLocations: c
-  } = (0, p.ZP)(x.Z.PREMIUM_MARKETING_TIER_CARD), u = 1 === n, d = e => {
+  } = (0, x.ZP)(p.Z.PREMIUM_MARKETING_TIER_CARD), u = 1 === n, d = e => {
     null != t && ("function" == typeof t ? t(e) : t.hasOwnProperty("current") && (t.current = e))
   };
-  return (0, a.jsxs)(p.Gt, {
+  return (0, a.jsxs)(x.Gt, {
     value: c,
     children: [u && (0, a.jsx)(C.X6q, {
       ref: d,

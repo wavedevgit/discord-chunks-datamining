@@ -27,7 +27,7 @@ function v(e) {
     theme: v,
     content: h = m.intl.string(m.t["6OSasb"]),
     className: O
-  } = e, x = (0, a.e7)([f.default], () => f.default.getCurrentUser()), j = g.ZP.useName(n, null, x), y = (0, c.Kz)(s), C = i.useMemo(() => {
+  } = e, j = (0, a.e7)([f.default], () => f.default.getCurrentUser()), x = g.ZP.useName(n, null, j), y = (0, c.Kz)(s), C = i.useMemo(() => {
     var e, t;
     return (0, u.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -53,7 +53,7 @@ function v(e) {
       type: void 0,
       messageReference: void 0,
       allowedMentions: void 0,
-      author: x
+      author: j
     })), t = t = {
       state: b.yb.SENT,
       id: "0"
@@ -67,8 +67,8 @@ function v(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [x, h]), S = {
-    nick: j,
+  }, [j, h]), S = {
+    nick: x,
     colorString: null != (t = s.colorString) ? t : void 0
   };
   return (0, r.jsx)(l.f6W, {

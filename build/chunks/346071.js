@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  n: () => c
+  n: () => u
 });
 var r = n(255367);
 n(73800);
@@ -9,14 +9,16 @@ var i = n(481060),
   o = n(886969),
   a = n(474936),
   s = n(388032),
-  l = n(429680);
+  l = n(429680),
+  c = n(357217);
 
-function c(e) {
+function u(e) {
   let {
     fractionalPremiumInfo: t,
     variant: n = "default",
-    style: c
-  } = e, u = t.fractionalState === a.a$.FP_SUB_PAUSED, d = (0, o.Z)(t.endsAt, u), f = "", _ = {
+    enablePremiumRebrandDesign: u = !1,
+    style: d
+  } = e, f = t.fractionalState === a.a$.FP_SUB_PAUSED, _ = (0, o.Z)(t.endsAt, f), p = "", h = {
     trial: {
       days_and_hours: s.t.SQyVVV,
       days: s.t["2ifAYG"],
@@ -28,16 +30,27 @@ function c(e) {
       hours: s.t["8Xm6uL"]
     }
   };
-  return (d.days > 0 && d.hours > 0 ? f = s.intl.format(_[n].days_and_hours, {
-    days: d.days,
-    hours: d.hours
-  }) : d.days > 0 ? f = s.intl.format(_[n].days, {
-    days: d.days
-  }) : d.hours > 0 && (f = s.intl.format(_[n].hours, {
-    hours: d.hours
-  })), "" === f) ? null : (0, r.jsxs)("div", {
+  return (_.days > 0 && _.hours > 0 ? p = s.intl.format(h[n].days_and_hours, {
+    days: _.days,
+    hours: _.hours
+  }) : _.days > 0 ? p = s.intl.format(h[n].days, {
+    days: _.days
+  }) : _.hours > 0 && (p = s.intl.format(h[n].hours, {
+    hours: _.hours
+  })), "" === p) ? null : u ? (0, r.jsxs)("div", {
+    className: l.premiumRebrandContainer,
+    style: d,
+    children: [(0, r.jsx)("img", {
+      src: c,
+      alt: "Nitro Icon",
+      className: l.premiumRebrandIcon
+    }), (0, r.jsx)(i.Text, {
+      variant: "text-sm/medium",
+      children: p
+    })]
+  }) : (0, r.jsxs)("div", {
     className: l.activeFractionalPremiumBannerContainer,
-    style: c,
+    style: d,
     children: [(0, r.jsxs)("div", {
       className: l.nitroIconContainer,
       children: [(0, r.jsx)(i.SrA, {
@@ -51,7 +64,7 @@ function c(e) {
       })]
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: f
+      children: p
     }), (0, r.jsx)("div", {
       className: l.activeFractionalPremiumBannerBackgroundImage
     })]

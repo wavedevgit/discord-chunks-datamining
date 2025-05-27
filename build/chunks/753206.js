@@ -26,9 +26,9 @@ let b = i.memo(function(e) {
     hideSimpleEmbedContent: v = !0,
     disableInteraction: h,
     previewGuildId: O,
-    preview: x,
-    author: j
-  } = e, y = null != O ? O : (0, c.k)(n), C = (0, l.Z)(j), S = (0, a.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
+    preview: j,
+    author: x
+  } = e, y = null != O ? O : (0, c.k)(n), C = (0, l.Z)(x), S = (0, a.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
     content: P
   } = (0, d.Z)(n, {
     hideSimpleEmbedContent: v,
@@ -81,6 +81,6 @@ let b = i.memo(function(e) {
     disableInteraction: h,
     authorHasGradientRole: C,
     guildId: y,
-    preview: x
+    preview: j
   })
 })
