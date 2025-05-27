@@ -1,4 +1,4 @@
-/** Chunk was on 96888 **/
+/** Chunk was on 96114 **/
 e.exports = {
   ratingSelector: "ratingSelector__5c58b",
   textLabels: "textLabels__5c58b",

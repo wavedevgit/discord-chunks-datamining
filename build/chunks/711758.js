@@ -1,11 +1,11 @@
-/** Chunk was on 87995 **/
+/** Chunk was on 46355 **/
 n.d(t, {
   Z: () => u
 });
 var r, o = n(442837),
-  l = n(570140);
+  i = n(570140);
 
-function a(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -13,14 +13,14 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let i = s();
+let a = c();
 
-function s() {
+function c() {
   return {
     ignoreTimestamps: {}
   }
 }
-class c extends(r = o.ZP.PersistedStore) {
+class s extends(r = o.ZP.PersistedStore) {
   initialize(e) {
     var t, n, r;
     let o = null != (t = null == e ? void 0 : e.ignoreTimestamps) ? t : {};
@@ -31,11 +31,11 @@ class c extends(r = o.ZP.PersistedStore) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          a(e, t, n[t])
+          l(e, t, n[t])
         })
       }
       return e
-    }({}, s()), r = r = {
+    }({}, c()), r = r = {
       ignoreTimestamps: o
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
@@ -46,22 +46,22 @@ class c extends(r = o.ZP.PersistedStore) {
       return n
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-    }), i = n
+    }), a = n
   }
   getState() {
-    return i
+    return a
   }
   getIgnoreTimestamps() {
-    return i.ignoreTimestamps
+    return a.ignoreTimestamps
   }
 }
-a(c, "displayName", "IgnoreNoticeStore"), a(c, "persistKey", "IgnoreNoticeStore");
-let u = new c(l.Z, {
+l(s, "displayName", "IgnoreNoticeStore"), l(s, "persistKey", "IgnoreNoticeStore");
+let u = new s(i.Z, {
   RELATIONSHIP_IGNORE_USER_SUCCESS: function(e) {
     let {
       userId: t,
       timestamp: n
     } = e;
-    i.ignoreTimestamps[t] = n
+    a.ignoreTimestamps[t] = n
   }
 })

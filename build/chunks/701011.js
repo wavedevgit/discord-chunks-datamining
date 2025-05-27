@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(554370),
   f = n(788983),
   m = n(546247),
-  b = n(214629),
-  v = n(317381),
+  b = n(317381),
+  v = n(426419),
   O = n(16609),
   j = n(781780),
   h = n(325749),
@@ -102,8 +102,8 @@ function Z() {
     embeddedActivity: e,
     channelId: t,
     guildId: n
-  } = (0, i.cj)([v.ZP], () => {
-    let e = v.ZP.getCurrentEmbeddedActivity(),
+  } = (0, i.cj)([b.ZP], () => {
+    let e = b.ZP.getCurrentEmbeddedActivity(),
       t = (0, O.pY)(null == e ? void 0 : e.location),
       n = (0, O.jS)(null == e ? void 0 : e.location);
     return {
@@ -121,7 +121,7 @@ function Z() {
       let t = null == e ? void 0 : e.applicationId;
       return null == t ? void 0 : s.Z.getApplication(t)
     }),
-    m = (0, b.PR)();
+    m = (0, v.P)();
   return (0, r.jsx)("div", {
     className: g.container,
     children: null == e || null == d ? (0, r.jsx)(a.$jN, {

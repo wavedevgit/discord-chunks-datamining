@@ -24,7 +24,7 @@ var a = n(255367),
   y = n(388032),
   C = n(145634);
 
-function O(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -43,7 +43,7 @@ function O(e) {
   return e
 }
 
-function N(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,24 +78,24 @@ function T() {
       P(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
     v = r.useCallback(e => {
-      w(null == l ? void 0 : l.wallpaperId, e.target.value)
-    }, [null == l ? void 0 : l.wallpaperId]),
-    g = r.useCallback(e => {
       k(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
+    g = r.useCallback(e => {
+      I(null == l ? void 0 : l.wallpaperId, e.target.value)
+    }, [null == l ? void 0 : l.wallpaperId]),
     _ = r.useCallback(() => P(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
-    E = r.useCallback(() => w(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
-    T = r.useCallback(() => k(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    E = r.useCallback(() => k(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    T = r.useCallback(() => I(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     S = r.useCallback(e => {
       null != s && (0, x.i)(s, {
         token_mix_amount: Math.round(e)
       })
     }, [s]),
-    I = r.useCallback(() => {
+    w = r.useCallback(() => {
       null != s && (0, x.i)(s, null)
     }, [s]),
     R = null != (e = null == d ? void 0 : d.opacity) ? e : 1,
-    Z = null != (t = null == d ? void 0 : d.token_mix_amount) ? t : 100;
+    A = null != (t = null == d ? void 0 : d.token_mix_amount) ? t : 100;
   return (0, a.jsxs)("div", {
     children: [(0, a.jsx)(o.X6, {
       className: C.header,
@@ -114,7 +114,7 @@ function T() {
         children: JSON.stringify(m.Z.getWallpaperById(s), null, 2)
       }), (0, a.jsx)(u.ua7, {
         text: "The opacity of the wallpaper.",
-        children: e => (0, a.jsx)(o.X6, N(O({
+        children: e => (0, a.jsx)(o.X6, O(N({
           className: i()(C.subheader, C.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
@@ -129,7 +129,7 @@ function T() {
         onValueChange: b
       }, "opacity-".concat(R)), (0, a.jsx)(u.ua7, {
         text: "The most prominent color in the wallpaper. This will be used to adjust the color tokens.",
-        children: e => (0, a.jsx)(o.X6, N(O({
+        children: e => (0, a.jsx)(o.X6, O(N({
           className: i()(C.subheader, C.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
@@ -153,7 +153,7 @@ function T() {
         })]
       }), (0, a.jsx)(u.ua7, {
         text: "The second most prominent color in the wallpaper. This will be used to adjust the color tokens.",
-        children: e => (0, a.jsx)(o.X6, N(O({
+        children: e => (0, a.jsx)(o.X6, O(N({
           className: i()(C.subheader, C.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
@@ -177,7 +177,7 @@ function T() {
         })]
       }), (0, a.jsx)(u.ua7, {
         text: "Controls how much the primary/secondary colors are mixed into the tokens.",
-        children: e => (0, a.jsx)(o.X6, N(O({
+        children: e => (0, a.jsx)(o.X6, O(N({
           className: i()(C.subheader, C.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
@@ -185,14 +185,14 @@ function T() {
         }))
       }), (0, a.jsx)(u.iRW, {
         className: C.slider,
-        initialValue: Z,
+        initialValue: A,
         defaultValue: 100,
         minValue: 0,
         maxValue: 100,
         onValueChange: S
-      }, "tokenMixAmount-".concat(Z)), (0, a.jsx)(u.ua7, {
+      }, "tokenMixAmount-".concat(A)), (0, a.jsx)(u.ua7, {
         text: "The color used for hyperlinks.",
-        children: e => (0, a.jsx)(o.X6, N(O({
+        children: e => (0, a.jsx)(o.X6, O(N({
           className: i()(C.subheader, C.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
@@ -216,7 +216,7 @@ function T() {
         })]
       }), (0, a.jsx)(u.zxk, {
         className: C.resetButton,
-        onClick: I,
+        onClick: w,
         children: "Reset"
       })]
     })]
@@ -258,12 +258,12 @@ let P = (0, s.debounce)(function(e, t) {
       primary_color: t
     })
   }, 200),
-  k = (0, s.debounce)(function(e, t) {
+  I = (0, s.debounce)(function(e, t) {
     null != e && (0, x.i)(e, {
       link_color: t
     })
   }, 200),
-  w = (0, s.debounce)(function(e, t) {
+  k = (0, s.debounce)(function(e, t) {
     null != e && (0, x.i)(e, {
       secondary_color: t
     })

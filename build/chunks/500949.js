@@ -42,18 +42,18 @@ var a, r, l = n(73800),
   _ = n(940172),
   y = n(81011),
   C = n(981613),
-  O = n(762399),
-  N = n(232112),
+  N = n(762399),
+  O = n(232112),
   E = n(53796),
   T = n(723757),
   S = n(375924),
   P = n(596136),
-  k = n(341901),
-  w = n(856308),
-  I = n(665352),
+  I = n(341901),
+  k = n(856308),
+  w = n(665352),
   R = n(394900),
-  Z = n(661105),
-  A = n(525169),
+  A = n(661105),
+  Z = n(525169),
   L = n(433517),
   D = n(190558),
   M = n(231338);
@@ -108,17 +108,17 @@ let U = {
     Lab_D65: _.Z,
     Luv: y.Z,
     OKLCH: C.Z,
-    OKLab: O.Z,
-    P3: N.Z,
+    OKLab: N.Z,
+    P3: O.Z,
     ProPhoto: E.Z,
     REC_2020: T.Z,
     REC_2100_HLG: S.Z,
     REC_2100_PQ: P.Z,
-    XYZ_D50: k.Z,
-    XYZ_D65: w.Z
+    XYZ_D50: I.Z,
+    XYZ_D65: k.Z
   },
   F = Object.fromEntries(Object.keys(U).map(e => [e, e]));
-Object.values(U).forEach(e => I.Z.register(e));
+Object.values(U).forEach(e => w.Z.register(e));
 let {
   SemanticColors: G
 } = D.V, V = G, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -165,7 +165,7 @@ function Y(e) {
 }
 
 function q(e) {
-  return (0, R.Z)((0, Z.Z)(e, i.Z), {
+  return (0, R.Z)((0, A.Z)(e, i.Z), {
     format: "hex"
   })
 }
@@ -216,18 +216,18 @@ function er(e) {
     darkness: r,
     lightness: l,
     easingStrength: s = 1
-  } = e, o = U[e.colorSpace], c = (0, Z.Z)(n, o), d = (0, A.CD)(c, "white", 1 - r, {
+  } = e, o = U[e.colorSpace], c = (0, A.Z)(n, o), d = (0, Z.CD)(c, "white", 1 - r, {
     space: o,
     outputSpace: i.Z
-  }), u = (0, A.CD)(c, "black", 1 - l, {
+  }), u = (0, Z.CD)(c, "black", 1 - l, {
     space: o,
     outputSpace: i.Z
-  }), m = Math.floor(a / 2), x = a - m, h = (0, A.w6)(d, c, {
+  }), m = Math.floor(a / 2), x = a - m, h = (0, Z.w6)(d, c, {
     steps: m,
     outputSpace: o,
     space: o,
     progression: e => e ** s
-  }), p = (0, A.w6)(u, c, {
+  }), p = (0, Z.w6)(u, c, {
     steps: x,
     outputSpace: o,
     space: o,

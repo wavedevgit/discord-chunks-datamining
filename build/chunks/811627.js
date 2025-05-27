@@ -1,8 +1,9 @@
-/** Chunk was on 5639 **/
-e.d(i, {
-  Z: () => n
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => r
 });
-let n = (0, e(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2025-03_desktop_communication_notifications",
   label: "Desktop Communication Notifications",

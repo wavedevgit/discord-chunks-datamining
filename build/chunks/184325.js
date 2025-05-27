@@ -156,7 +156,8 @@ function G(e) {
         },
         I = () => {
           e.id === T.i && y.default.track(C.rMx.QUEST_CONTENT_VIEWED, j(k({}, (0, _.mH)(h.jn.QUEST_BADGE)), {
-            google_advertising_id: p.Z.googleAdvertisingId
+            google_advertising_id: p.Z.googleAdvertisingId,
+            is_targeted: !1
           })), V({
             action: "HOVER_BADGE"
           }), (0, S.Qf)(k({

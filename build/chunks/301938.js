@@ -24,7 +24,7 @@ function x(e) {
     setSlide: l,
     ready: x,
     token: E
-  } = e, [b, v] = i.useState(!1), [O, I] = i.useState(null), [S, j] = i.useState(null), [y, N] = i.useState(""), C = i.useRef(null);
+  } = e, [b, v] = i.useState(!1), [I, O] = i.useState(null), [S, y] = i.useState(null), [j, N] = i.useState(""), C = i.useRef(null);
   return i.useEffect(() => {
     if (x) {
       var e;
@@ -48,9 +48,9 @@ function x(e) {
         label: m.intl.string(m.t["8dM4FB"]),
         setRef: C,
         className: _.marginBottom20,
-        value: y,
+        value: j,
         onChange: N,
-        error: O,
+        error: I,
         autoComplete: "new-password",
         maxLength: 72,
         placeholder: m.intl.string(m.t["yY/PXV"])
@@ -58,15 +58,15 @@ function x(e) {
         className: _.marginTop8,
         onClick: () => {
           if (!b) {
-            if (0 === y.length) {
-              I(m.intl.string(m.t.R98xDw)), d.S.dispatch(p.CkL.WAVE_EMPHASIZE);
+            if (0 === j.length) {
+              O(m.intl.string(m.t.R98xDw)), d.S.dispatch(p.CkL.WAVE_EMPHASIZE);
               return
             }
-            return null != S && j(null), null != O && I(null), t(""), v(!0), g.Z.post({
+            return null != S && y(null), null != I && O(null), t(""), v(!0), g.Z.post({
               url: p.ANM.ACCOUNT_REVERT,
               body: {
                 token: E,
-                password: y
+                password: j
               },
               trackedActionData: {
                 event: o.NetworkActionNames.ACCOUNT_REVERT
@@ -80,12 +80,12 @@ function x(e) {
               } = e;
               N(""), t(n), l(h.n.SUCCESS)
             }).catch(e => {
-              if (e instanceof Error) j(m.intl.formatToPlainString(m.t.aTVNen, {
+              if (e instanceof Error) y(m.intl.formatToPlainString(m.t.aTVNen, {
                 statusPageURL: p.yXt.STATUS
               }));
               else {
                 let t = new c.Z(e);
-                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : j((function(e) {
+                t.hasFieldErrors() ? O(t.getAnyErrorMessage()) : y((function(e) {
                   switch (e) {
                     case p.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
                       return m.intl.string(m.t["11zzGR"]);

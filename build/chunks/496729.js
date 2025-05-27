@@ -46,7 +46,7 @@ function f() {
   (0, r.ZDy)(async () => {
     let {
       default: e
-    } = await n.e("87995").then(n.bind(n, 180970));
+    } = await Promise.all([n.e("60137"), n.e("37332")]).then(n.bind(n, 180970));
     return t => (0, i.jsx)(e, c({}, t))
   })
 }
@@ -55,7 +55,7 @@ function g() {
   (0, r.ZDy)(async () => {
     let {
       default: e
-    } = await n.e("3980").then(n.bind(n, 746147));
+    } = await Promise.all([n.e("60137"), n.e("46355")]).then(n.bind(n, 746147));
     return t => (0, i.jsx)(e, c({}, t))
   })
 }

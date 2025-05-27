@@ -18,11 +18,11 @@ var r = n(255367),
   f = n(893354),
   _ = n(20493);
 let x = () => {
-  let [e, t] = i.useState(""), [l, x] = i.useState(""), [E, b] = i.useState(!1), [v, O] = i.useState(!1), [I, S] = i.useState(null), [j, y] = i.useState(null), N = (0, o.e7)([d.Z], () => d.Z.getCountryCode()), C = N.code.split(" ")[0], T = async () => {
+  let [e, t] = i.useState(""), [l, x] = i.useState(""), [E, b] = i.useState(!1), [v, I] = i.useState(!1), [O, S] = i.useState(null), [y, j] = i.useState(null), N = (0, o.e7)([d.Z], () => d.Z.getCountryCode()), C = N.code.split(" ")[0], T = async () => {
     try {
       await c.Z.resendCode(e)
     } catch (e) {
-      y(e.body.message)
+      j(e.body.message)
     }
   }, A = async () => {
     b(!0);
@@ -30,9 +30,9 @@ let x = () => {
       let {
         token: t
       } = await c.Z.verifyPhone(C + e, l);
-      S(null), y(null), O(!0), c.Z.validatePhoneForSupport(t)
+      S(null), j(null), I(!0), c.Z.validatePhoneForSupport(t)
     } catch (e) {
-      e.body.message ? (S(null), y(e.body.message)) : (S(e.body.phone), y(e.body.code))
+      e.body.message ? (S(null), j(e.body.message)) : (S(e.body.phone), j(e.body.code))
     } finally {
       b(!1)
     }
@@ -65,14 +65,14 @@ let x = () => {
         spellCheck: "false",
         onChange: t,
         forceMode: u.Nz.PHONE,
-        error: I
+        error: O
       }), (0, r.jsx)(h.II, {
         className: _.marginTop20,
         label: m.intl.string(m.t.OdzNbm),
         value: l,
         onChange: x,
         maxLength: p.z,
-        error: j
+        error: y
       }), (0, r.jsx)(h.zx, {
         size: h.zx.Sizes.SMALL,
         look: h.zx.Looks.LINK,

@@ -79,8 +79,8 @@ function f(e) {
     birthday: E,
     invite: b = null,
     giftCodeSKUId: v = null,
-    promoEmailConsent: O = null,
-    usedUsernameSuggestion: I = null
+    promoEmailConsent: I = null,
+    usedUsernameSuggestion: O = null
   } = e;
   if (a.Z.dispatch({
       type: "REGISTER"
@@ -108,15 +108,15 @@ function f(e) {
       date_of_birth: null == E ? void 0 : E.format("YYYY-MM-DD"),
       gift_code_sku_id: v,
       guild_template_code: x,
-      promotional_email_opt_in: null == O ? void 0 : O.checked
+      promotional_email_opt_in: null == I ? void 0 : I.checked
     },
     trackedActionData: {
       event: l.NetworkActionNames.USER_REGISTER,
       properties: {
         invite_code: b,
-        used_username_suggestion: I,
-        promotional_email_opt_in: null == O ? void 0 : O.checked,
-        promotional_email_pre_checked: null == O ? void 0 : O.preChecked,
+        used_username_suggestion: O,
+        promotional_email_opt_in: null == I ? void 0 : I.checked,
+        promotional_email_pre_checked: null == I ? void 0 : I.preChecked,
         was_unique_username: !0
       }
     },

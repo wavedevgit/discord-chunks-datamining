@@ -21,11 +21,11 @@ var r = n(255367),
   E = n(230224),
   b = n(617730),
   v = n(258356),
-  O = n(981631),
-  I = n(388032),
+  I = n(981631),
+  O = n(388032),
   S = n(534962);
 
-function j(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function j(e) {
   return e
 }
 
-function y(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,18 +68,18 @@ let C = e => {
   if (null == e || null == e.state || t) return 0;
   let n = e.state;
   switch (n) {
-    case O.r2o.RESOLVED:
-    case O.r2o.ACCEPTED:
-    case O.r2o.APP_NOT_OPENED:
-    case O.r2o.APP_OPENED:
-    case O.r2o.ACCEPTING:
-    case O.r2o.APP_OPENING:
+    case I.r2o.RESOLVED:
+    case I.r2o.ACCEPTED:
+    case I.r2o.APP_NOT_OPENED:
+    case I.r2o.APP_OPENED:
+    case I.r2o.ACCEPTING:
+    case I.r2o.APP_OPENING:
       return 1;
-    case O.r2o.EXPIRED:
-    case O.r2o.BANNED:
-    case O.r2o.ERROR:
+    case I.r2o.EXPIRED:
+    case I.r2o.BANNED:
+    case I.r2o.ERROR:
       return 2;
-    case O.r2o.RESOLVING:
+    case I.r2o.RESOLVING:
       return 0;
     default:
       (0, _.vE)(n)
@@ -91,13 +91,13 @@ function T(e) {
     invite: t,
     onAcceptInvite: n
   } = e;
-  return (null == t ? void 0 : t.state) === O.r2o.BANNED ? (0, r.jsx)(c.u, {
-    text: I.intl.string(I.t["5AkWAQ"]),
-    buttonCta: I.intl.string(I.t["8osdkp"]),
+  return (null == t ? void 0 : t.state) === I.r2o.BANNED ? (0, r.jsx)(c.u, {
+    text: O.intl.string(O.t["5AkWAQ"]),
+    buttonCta: O.intl.string(O.t["8osdkp"]),
     onClick: n
   }) : (0, r.jsx)(c.u, {
-    text: I.intl.string(I.t["usP+MT"]),
-    buttonCta: I.intl.string(I.t["8osdkp"]),
+    text: O.intl.string(O.t["usP+MT"]),
+    buttonCta: O.intl.string(O.t["8osdkp"]),
     onClick: n
   })
 }
@@ -158,7 +158,7 @@ function P(e) {
   let n = e => null == t ? null : 1 === e ? (0, r.jsx)(v.X, {
     invite: t
   }) : null;
-  return (0, r.jsx)(A, y(j({
+  return (0, r.jsx)(A, j(y({
     startAnimHeightPx: 0,
     innerStyle: () => S.guildInfoInner
   }, e), {
@@ -173,11 +173,11 @@ function Z(e) {
     if (null == t) return (0, r.jsx)(N, {});
     switch (n) {
       case 1:
-        return (0, r.jsx)(b.Z, y(j({}, e), {
+        return (0, r.jsx)(b.Z, j(y({}, e), {
           invite: t
         }));
       case 2:
-        return (0, r.jsx)(T, y(j({}, e), {
+        return (0, r.jsx)(T, j(y({}, e), {
           invite: t
         }));
       default:
@@ -188,7 +188,7 @@ function Z(e) {
     2: S.inviteCardInnerError,
     0: S.inviteCardInnerLoading
   };
-  return (0, r.jsx)(A, y(j({
+  return (0, r.jsx)(A, j(y({
     startAnimHeightPx: 200,
     innerStyle: e => i[e]
   }, e), {
@@ -211,13 +211,13 @@ function R(e) {
     null != e && (l.backgroundImage = "url(".concat(e, ")"), l.backgroundSize = "cover")
   }
   return (0, r.jsxs)(d.ZP, {
-    theme: O.BRd.DARK,
+    theme: I.BRd.DARK,
     className: S.splashBackground,
     style: l,
     contentClassName: S.centerAuthBoxContent,
-    children: [(0, r.jsx)(Z, y(j({}, e), {
+    children: [(0, r.jsx)(Z, j(y({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(P, j({}, e))]
+    })), (0, r.jsx)(P, y({}, e))]
   })
 }
 
@@ -229,7 +229,7 @@ function w(e) {
   return i.useEffect(() => {
     (0, g.e)("invite_mobile")
   }, []), i.useEffect(() => {
-    null != l && l.state === O.r2o.RESOLVED && m.default.track(O.rMx.INVITE_VIEWED, {
+    null != l && l.state === I.r2o.RESOLVED && m.default.track(I.rMx.INVITE_VIEWED, {
       invite_code: t,
       friends_count: null == l ? void 0 : l.friends_count
     }, {
@@ -240,13 +240,13 @@ function w(e) {
     onAcceptInvite: e => {
       ! function(e, t, n) {
         var r, i, l;
-        null == e || e.preventDefault(), m.default.track(O.rMx.INVITE_APP_OPENED, {
+        null == e || e.preventDefault(), m.default.track(I.rMx.INVITE_APP_OPENED, {
           invite_code: (0, x.jX)(t),
           guild_id: null == n || null == (r = n.guild) ? void 0 : r.id,
           channel_id: null == n || null == (i = n.channel) ? void 0 : i.id,
           inviter_id: null == n || null == (l = n.inviter) ? void 0 : l.id
         });
-        let a = null != n && n.state !== O.r2o.EXPIRED && n.state !== O.r2o.BANNED ? t : void 0,
+        let a = null != n && n.state !== I.r2o.EXPIRED && n.state !== I.r2o.BANNED ? t : void 0,
           o = h.default.getFingerprint(),
           c = null != o ? o : h.default.getId(),
           u = null != n && (null == n ? void 0 : n.type) != null ? Number(null == n ? void 0 : n.type) : void 0;

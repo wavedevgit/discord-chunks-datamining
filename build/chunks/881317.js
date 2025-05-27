@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => j
+  Z: () => y
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function O(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function O(e, t) {
   }), e
 }
 a.ZP.initialize();
-let I = {
+let O = {
     [g.BM.MESSAGE]: x.t.fuqnBA,
     [g.BM.USER]: x.t.F4jrRU,
     [g.BM.GUILD]: x.t.gH3aMj
@@ -67,7 +67,7 @@ let I = {
         let {
           default: e
         } = await n.e("93288").then(n.bind(n, 396410));
-        return t => (0, r.jsx)(e, O(v({}, t), {
+        return t => (0, r.jsx)(e, I(v({}, t), {
           onSuccess: s,
           headerText: x.intl.string(x.t.ZLRYGR),
           confirmButtonText: x.intl.string(x.t.PDTjLC),
@@ -86,7 +86,7 @@ let I = {
         let {
           default: e
         } = await n.e("94566").then(n.bind(n, 965072));
-        return n => (0, r.jsx)(e, O(v({}, n), {
+        return n => (0, r.jsx)(e, I(v({}, n), {
           onFormSubmit: a,
           onResend: t,
           onSuccess: s,
@@ -109,7 +109,7 @@ let I = {
       })]
     })
   },
-  j = () => {
+  y = () => {
     let [e, t] = i.useState(!0), [n, l] = i.useState([]), g = (0, a.e7)([m.default], () => m.default.isAuthenticated()), h = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), v = () => {
       (0, p.Jj)().then(e => {
         let {
@@ -143,8 +143,8 @@ let I = {
         })
       }), (0, r.jsx)("div", {
         className: E.container,
-        children: n.map(e => null == I[e] ? null : (0, r.jsx)(S, {
-          title: x.intl.string(I[e]),
+        children: n.map(e => null == O[e] ? null : (0, r.jsx)(S, {
+          title: x.intl.string(O[e]),
           menuType: e
         }, e))
       })]

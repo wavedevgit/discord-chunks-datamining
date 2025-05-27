@@ -23,9 +23,9 @@ var a = n(255367),
   _ = n(246992),
   y = n(894257),
   C = n(750540),
-  O = n(616257);
+  N = n(616257);
 
-function N() {
+function O() {
   var e;
   let t = (0, o.Wu)([f.Z], () => f.Z.getSortedChannels()[1]),
     [n, l] = r.useState(t.length > 0 ? t[0].channelId : void 0),
@@ -108,10 +108,10 @@ function T() {
     }, t)
   });
   return (0, a.jsxs)("div", {
-    className: i()(O.panel, C.panel),
+    className: i()(N.panel, C.panel),
     children: [e, (0, a.jsx)("div", {
       className: C.divider
-    }), (0, a.jsx)(N, {}), (0, a.jsx)("div", {
+    }), (0, a.jsx)(O, {}), (0, a.jsx)("div", {
       className: C.divider
     }), (0, a.jsx)(E, {})]
   })

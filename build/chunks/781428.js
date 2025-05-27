@@ -21,11 +21,11 @@ var r, i = n(255367),
   E = n(388905),
   b = n(379760),
   v = n(600164),
-  O = n(100159),
-  I = n(473855),
+  I = n(100159),
+  O = n(473855),
   S = n(124860),
-  j = n(86779),
-  y = n(726745),
+  y = n(86779),
+  j = n(726745),
   N = n(913583),
   C = n(144114),
   T = n(541692),
@@ -111,7 +111,7 @@ class $ extends(r = l.PureComponent) {
       location: null != r ? "Invite Login Page" : "Non-Invite Login Page",
       login_source: this.loginSource,
       authenticated: t
-    }, null != n ? (0, O.Z)(n, !1, !1) : {}), {
+    }, null != n ? (0, I.Z)(n, !1, !1) : {}), {
       source: (0, P.At)()
     }), {
       flush: !0
@@ -482,7 +482,7 @@ class $ extends(r = l.PureComponent) {
         className: e,
         expanded: !0,
         children: this.renderDefaultForm(!0)
-      }), t && (0, i.jsx)(j.Z, {})]
+      }), t && (0, i.jsx)(y.Z, {})]
     })
   }
   renderGuildTemplate(e) {
@@ -490,7 +490,7 @@ class $ extends(r = l.PureComponent) {
       onSubmit: this.handleLogin,
       tag: "form",
       className: s()(this.props.authBoxClassName, W.horizontalAuthBox),
-      children: () => [(0, i.jsx)(I.Z, {
+      children: () => [(0, i.jsx)(O.Z, {
         guildTemplate: e
       }, "template"), this.renderDefaultForm(!1)]
     })
@@ -796,7 +796,7 @@ Y($, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let ee = function(e) {
-  let t = (0, d.cj)([L.Z, D.Z, w.default, y.Z, T.Z], () => ({
+  let t = (0, d.cj)([L.Z, D.Z, w.default, j.Z, T.Z], () => ({
     authenticated: w.default.isAuthenticated(),
     handoffAvailable: L.Z.isHandoffAvailable(),
     user: L.Z.user,
@@ -805,7 +805,7 @@ let ee = function(e) {
     mfaMethods: w.default.getMFAMethods(),
     defaultRoute: D.Z.defaultRoute,
     country: T.Z.getCountryCode(),
-    hasLoggedInAccounts: y.Z.getHasLoggedInAccounts()
+    hasLoggedInAccounts: j.Z.getHasLoggedInAccounts()
   }));
   return (0, i.jsx)($, J({}, e, t))
 }

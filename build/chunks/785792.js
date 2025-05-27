@@ -1,33 +1,33 @@
-/** Chunk was on 97299 **/
+/** Chunk was on 94904 **/
 n.d(t, {
-  b: () => u
+  b: () => a
 });
 var r = n(255367),
-  l = n(73800),
-  i = n(120356),
-  o = n.n(i),
-  a = n(481060),
+  o = n(73800),
+  c = n(120356),
+  i = n.n(c),
+  l = n(481060),
   s = n(135169);
 
-function u(e) {
+function a(e) {
   let {
     chunks: t,
     columns: n,
-    className: i
-  } = e, u = l.useMemo(() => ({
+    className: c
+  } = e, a = o.useMemo(() => ({
     "--secure-frames-columns": n
   }), [n]);
   return null == t ? (0, r.jsx)("div", {
     className: s.loading,
-    children: (0, r.jsx)(a.$jN, {})
+    children: (0, r.jsx)(l.$jN, {})
   }) : (0, r.jsx)("div", {
-    style: u,
-    className: o()(s.code, i),
+    style: a,
+    className: i()(s.code, c),
     children: t.map((e, t) => (0, r.jsx)("div", {
-      className: o()(s.chunk, {
+      className: i()(s.chunk, {
         [s.divider]: t > n - 1
       }),
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(l.Text, {
         className: s.codeText,
         variant: "code",
         color: "text-normal",

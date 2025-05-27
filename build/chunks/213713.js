@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => A
 }), n(388685);
 var a = n(255367),
   r = n(73800),
@@ -23,17 +23,17 @@ var a = n(255367),
   _ = n(77498),
   y = n(823379),
   C = n(550532),
-  O = n(71585),
-  N = n(146282),
+  N = n(71585),
+  O = n(146282),
   E = n(780106),
   T = n(650613),
   S = n(789086),
   P = n(206583),
-  k = n(403542),
-  w = n(616257);
-let I = [{
+  I = n(403542),
+  k = n(616257);
+let w = [{
   key: "type",
-  cellClassName: i()(k.cell, k.cellType),
+  cellClassName: i()(I.cell, I.cellType),
   render(e) {
     let {
       type: t
@@ -45,7 +45,7 @@ let I = [{
   }
 }, {
   key: "count",
-  cellClassName: i()(k.cell, k.cellCount),
+  cellClassName: i()(I.cell, I.cellCount),
   render(e) {
     let {
       entries: t
@@ -59,7 +59,7 @@ let I = [{
   }
 }, {
   key: "only?",
-  cellClassName: k.cell,
+  cellClassName: I.cell,
   render(e) {
     let {
       type: t
@@ -74,7 +74,7 @@ function R(e) {
   var t, n;
   let {
     type: r
-  } = e, l = (0, u.e7)([N.Z], () => N.Z.getFilters()), i = null != (n = null == l || null == (t = l.types) ? void 0 : t.has(r)) && n;
+  } = e, l = (0, u.e7)([O.Z], () => O.Z.getFilters()), i = null != (n = null == l || null == (t = l.types) ? void 0 : t.has(r)) && n;
   return (0, a.jsx)(x.XZJ, {
     value: i,
     onClick: function() {
@@ -91,11 +91,11 @@ function R(e) {
   })
 }
 
-function Z() {
+function A() {
   var e, t;
-  let n = (0, u.e7)([N.Z], () => N.Z.getFeed(P.YN.GLOBAL_FEED)),
-    l = (0, u.e7)([N.Z], () => N.Z.getDebugImpressionCappingDisabled()),
-    i = (0, u.e7)([O.Z], () => O.Z.getDebugFastImpressionCappingEnabled()),
+  let n = (0, u.e7)([O.Z], () => O.Z.getFeed(P.YN.GLOBAL_FEED)),
+    l = (0, u.e7)([O.Z], () => O.Z.getDebugImpressionCappingDisabled()),
+    i = (0, u.e7)([N.Z], () => N.Z.getDebugFastImpressionCappingEnabled()),
     s = function(e) {
       let t = o().groupBy(e, e => e.content_type);
       return Object.keys(t).map(e => {
@@ -107,11 +107,11 @@ function Z() {
         }
       })
     }(null == n || null == (e = n.entries) ? void 0 : e.map(e => e.content)),
-    c = (0, u.e7)([N.Z], () => {
+    c = (0, u.e7)([O.Z], () => {
       var e;
-      return (null == (e = N.Z.getFeedState(P.YN.GLOBAL_FEED)) ? void 0 : e.loading) === !0
+      return (null == (e = O.Z.getFeedState(P.YN.GLOBAL_FEED)) ? void 0 : e.loading) === !0
     }),
-    [R, Z] = r.useState(""),
+    [R, A] = r.useState(""),
     L = (0, u.e7)([_.Z, p.Z], () => {
       var e, t, n;
       return parseInt(R) > 0 ? R : null != (n = null == (e = _.Z.getGameByName(R)) ? void 0 : e.id) ? n : null == (t = p.Z.getApplicationByName(R)) ? void 0 : t.id
@@ -131,14 +131,14 @@ function Z() {
     z = (0, b.Z)(M).filter(y.lm),
     B = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, a.jsx)("div", {
-    className: w.panel,
+    className: k.panel,
     children: (0, a.jsxs)(x.zJl, {
-      className: k.content,
+      className: I.content,
       children: [(0, a.jsxs)(x.hjN, {
         children: [(0, a.jsx)(x.vwX, {
           children: "Inventory"
         }), s.length > 0 && (0, a.jsx)(v.Z, {
-          columns: I,
+          columns: w,
           data: s
         }), (0, a.jsx)(x.LZC, {
           size: 8
@@ -201,9 +201,9 @@ function Z() {
           children: "Game Profile"
         }), (0, a.jsx)(x.oil, {
           placeholder: "App ID or full name",
-          onChange: e => (0 === e.length || e.length >= 18) && Z(e),
+          onChange: e => (0 === e.length || e.length >= 18) && A(e),
           onKeyDown: e => {
-            "Enter" === e.key && (R === e.currentTarget.value ? null == D || D(e) : Z(e.currentTarget.value))
+            "Enter" === e.key && (R === e.currentTarget.value ? null == D || D(e) : A(e.currentTarget.value))
           },
           error: R.length > 0 && null == D ? "No game profile for ".concat(null != L ? L : R + " - try by id", ".") : void 0,
           style: null != D ? {
@@ -211,7 +211,7 @@ function Z() {
           } : {}
         }), (0, a.jsx)("ul", {
           children: z.map(e => (0, a.jsx)("li", {
-            children: (0, a.jsx)(A, {
+            children: (0, a.jsx)(Z, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
@@ -241,7 +241,7 @@ function Z() {
     })
   })
 }
-let A = e => {
+let Z = e => {
   let {
     application: t
   } = e, n = (0, j.Z)({

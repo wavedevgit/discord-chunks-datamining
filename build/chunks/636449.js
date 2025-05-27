@@ -1,27 +1,20 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C: () => u,
-  R: () => c
+  C: () => l,
+  R: () => s
 });
 var r = n(570140),
   i = n(522474),
   o = n(788983),
-  a = n(214629),
-  s = n(422483),
-  l = n(981631);
+  a = n(981631);
 
-function c() {
-  var e;
-  return (null == (e = platform) ? void 0 : e.name) !== "Firefox" && (a.ZP.getCurrentConfig({
-    location: "shouldOpenActivityInPopoutWindow"
-  }).enabled || s.Z.getCurrentConfig({
-    location: "shouldOpenActivityInPopoutWindow"
-  }).enabled)
+function s() {
+  return !1
 }
-async function u(e, t) {
-  let n, a = i.Z.getWindowOpen(l.KJ3.ACTIVITY_POPOUT);
-  e && !a && r.Z.wait(() => {
+async function l(e, t) {
+  let n, s = i.Z.getWindowOpen(a.KJ3.ACTIVITY_POPOUT);
+  e && !s && r.Z.wait(() => {
     r.Z.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"
     })
@@ -31,5 +24,5 @@ async function u(e, t) {
   } catch (e) {
     n = !1
   }
-  return !n && e && o.xv(l.KJ3.ACTIVITY_POPOUT), n
+  return !n && e && o.xv(a.KJ3.ACTIVITY_POPOUT), n
 }

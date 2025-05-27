@@ -54,7 +54,7 @@ function u(e, t, u) {
   }) : u.isDM() ? (0, l.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([r.e("94342"), r.e("79695"), r.e("25292"), r.e("90508"), r.e("13351"), r.e("5639"), r.e("70205"), r.e("98783"), r.e("53912"), r.e("98254"), r.e("56826"), r.e("33177")]).then(r.bind(r, 131404));
+    } = await Promise.all([r.e("94342"), r.e("79695"), r.e("25292"), r.e("90508"), r.e("13351"), r.e("70205"), r.e("98783"), r.e("53912"), r.e("98254"), r.e("56826"), r.e("16410")]).then(r.bind(r, 131404));
     return r => (0, n.jsx)(e, i(o({}, r), {
       user: t,
       channel: u,

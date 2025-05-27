@@ -41,12 +41,12 @@ function b(e) {
       }
     })()
   });
-  let O = i.useCallback(() => {
+  let I = i.useCallback(() => {
       l(m.Z5c.LOGIN, {
         source: "verify_email"
       })
     }, [l]),
-    I = i.useCallback(() => {
+    O = i.useCallback(() => {
       p.default.track(m.rMx.VERIFY_ACCOUNT_APP_OPENED, {
         verifying_user_id: v.current
       }), (0, g.Z)("verify_email")
@@ -62,7 +62,7 @@ function b(e) {
       className: x.marginBottom40,
       children: f.intl.string(f.t.tQpeAw)
     }), (0, r.jsx)(d.zx, {
-      onClick: O,
+      onClick: I,
       children: f.intl.string(f.t.dKhVQE)
     })]
   }) : "succeeded" === o ? (0, r.jsxs)(d.ZP, {
@@ -73,7 +73,7 @@ function b(e) {
       className: x.marginBottom40,
       children: f.intl.string(f.t.dAfGb2)
     }), (0, r.jsx)(d.zx, {
-      onClick: I,
+      onClick: O,
       children: f.intl.string(f.t.uJWIj4)
     })]
   }) : (0, r.jsxs)(d.ZP, {

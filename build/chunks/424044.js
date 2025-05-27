@@ -22,7 +22,7 @@ l.ZP.initialize();
 let E = e => {
   let {
     location: t
-  } = e, n = (0, l.e7)([m.default], () => m.default.isAuthenticated()), E = (0, l.e7)([d.Z], () => d.Z.hasLoadedExperiments), b = (0, h.oK)("RSL - Landing Page"), [v, O] = i.useState(!1), [I, S] = i.useState(_.intl.string(_.t["9exy+f"])), [j, y] = i.useState(!0), N = e => {
+  } = e, n = (0, l.e7)([m.default], () => m.default.isAuthenticated()), E = (0, l.e7)([d.Z], () => d.Z.hasLoadedExperiments), b = (0, h.oK)("RSL - Landing Page"), [v, I] = i.useState(!1), [O, S] = i.useState(_.intl.string(_.t["9exy+f"])), [y, j] = i.useState(!0), N = e => {
     switch (e) {
       case f.evJ.INVALID_FORM_BODY:
       case f.evJ.DSA_RSL_REPORT_NOT_FOUND:
@@ -42,9 +42,9 @@ let E = e => {
     }
   };
   return i.useEffect(() => {
-    n ? (y(!0), s.k({
+    n ? (j(!0), s.k({
       withAnalyticsToken: !0
-    }).then(() => y(!1)).catch(() => y(!1))) : y(!1)
+    }).then(() => j(!1)).catch(() => j(!1))) : j(!1)
   }, [n]), i.useEffect(() => {
     E || b || o.Z.getExperiments()
   }, [E, b]), i.useEffect(() => {
@@ -56,14 +56,14 @@ let E = e => {
       } catch (e) {
         N(null == (n = e.body) ? void 0 : n.code)
       } finally {
-        O(!1)
+        I(!1)
       }
     };
-    O(!0), e((0, c.Z)(t)), (0, p.e)("report_second_look")
-  }, [t]), b && !j && (0, r.jsxs)(u.ZP, {
+    I(!0), e((0, c.Z)(t)), (0, p.e)("report_second_look")
+  }, [t]), b && !y && (0, r.jsxs)(u.ZP, {
     children: [(0, r.jsx)(u.Dx, {
       className: x.marginBottom8,
-      children: I
+      children: O
     }), v && (0, r.jsx)(a.$jN, {})]
   })
 }

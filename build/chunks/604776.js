@@ -78,8 +78,8 @@ function j() {
   let [e, t] = r.useState(!1), [n, l] = r.useState(s.a.PREMIUM_TIER_2_1_HOUR), [d, f] = r.useState([]), [j, _] = r.useState([]), {
     refreshEntitlementList: y,
     grantFractionalPremium: C,
-    deleteFractionalPremium: O,
-    triggerNextEntitlementFulfillment: N,
+    deleteFractionalPremium: N,
+    triggerNextEntitlementFulfillment: O,
     entitlements: E,
     loading: T
   } = (0, m.m)();
@@ -172,14 +172,14 @@ function j() {
               size: o.zxk.Sizes.TINY,
               color: o.zxk.Colors.PRIMARY,
               look: o.zxk.Looks.OUTLINED,
-              onClick: () => N(),
+              onClick: () => O(),
               children: "Run fulfillment"
             }), (0, a.jsx)(o.zxk, {
               disabled: T,
               size: o.zxk.Sizes.TINY,
               color: o.zxk.Colors.RED,
               look: o.zxk.Looks.OUTLINED,
-              onClick: () => O(),
+              onClick: () => N(),
               children: "Delete all"
             }), (0, a.jsx)(o.zxk, {
               disabled: T,
@@ -206,7 +206,7 @@ function j() {
             children: d.map(e => (0, a.jsx)(v, {
               entitlement: e,
               active: !0,
-              onDelete: () => O(e.id)
+              onDelete: () => N(e.id)
             }, e.id))
           })]
         }), j.length > 0 && (0, a.jsxs)("div", {

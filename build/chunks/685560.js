@@ -24,7 +24,7 @@ let _ = [o.z.GUILD_POWERUP_PERKS_COACHMARK, o.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_
   y = [o.C.GUILD_POWERUP_LEVEL_1_COACHMARK, o.C.GUILD_POWERUP_LEVEL_2_COACHMARK, o.C.GUILD_POWERUP_LEVEL_3_COACHMARK, o.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, o.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, o.C.GUILD_POWERUP_BOTH_SKU_PURCHASE_COACHMARK],
   C = [o.C.ADOPT_CLAN_IDENTITY_NOTICE];
 
-function O(e) {
+function N(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -42,7 +42,7 @@ function O(e) {
       return "ADOPT_CLAN_IDENTITY_NOTICE"
   }
 }
-async function N(e, t, n) {
+async function O(e, t, n) {
   await Promise.all(t.map(e => s.tn.patch({
     url: g.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
     body: n ? {} : {
@@ -96,12 +96,12 @@ function E() {
       }), (0, a.jsxs)("div", {
         children: [(0, a.jsx)(c.zxk, {
           onClick: () => {
-            N(t, s.slice(Math.floor(s.length / 2)), !1)
+            O(t, s.slice(Math.floor(s.length / 2)), !1)
           },
           children: "Set Half Boosts expiring in 1 day"
         }), (0, a.jsx)(c.zxk, {
           onClick: () => {
-            N(t, s, !0)
+            O(t, s, !0)
           },
           children: "Reset End Date"
         })]
@@ -132,7 +132,7 @@ function E() {
         value: r.includes(e),
         children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O(e)
+          children: N(e)
         })
       }, e))]
     }), (0, a.jsxs)("div", {
@@ -148,7 +148,7 @@ function E() {
         value: r.includes(e),
         children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O(e)
+          children: N(e)
         })
       }, e))]
     })]
