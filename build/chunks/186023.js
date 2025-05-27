@@ -28,7 +28,7 @@ let g = e => {
     root_node_id: C,
     success_node_id: y,
     fail_node_id: I
-  } = n, [O, T] = a.useState(C), [Z, N] = a.useState(void 0), [S, P] = a.useState(void 0), [k, E] = a.useState([]), [w, M] = a.useState(void 0), [A, D] = a.useState(void 0), R = e => {
+  } = n, [O, T] = a.useState(C), [Z, N] = a.useState(void 0), [S, P] = a.useState(void 0), [k, E] = a.useState([]), [M, w] = a.useState(void 0), [A, R] = a.useState(void 0), D = e => {
     var n, r, a;
     let {
       destination: l
@@ -36,7 +36,7 @@ let g = e => {
     if (void 0 === u) return void c.Z.increment({
       name: i.V.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
     });
-    if (u.elements.some(e => "skip" === e.type) && (null == (n = u.button) ? void 0 : n.type) === "next") return R((r = function(e) {
+    if (u.elements.some(e => "skip" === e.type) && (null == (n = u.button) ? void 0 : n.type) === "next") return D((r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -80,7 +80,7 @@ let g = e => {
     var r;
     let a = f ? await (0, u.ZD)(n, t, [...k, e]) : await (0, u.fw)(n, t, [...k, e], h),
       i = null == a || null == (r = a.body) ? void 0 : r.report_id;
-    null != i && M(i), D(j[e.nodeRef].report_type), null == b || b(i)
+    null != i && w(i), R(j[e.nodeRef].report_type), null == b || b(i)
   }, L = () => {
     var e, n;
     if (k.length < 1) return;
@@ -134,14 +134,14 @@ let g = e => {
             reportSubType: A,
             history: k,
             onModalClose: g.onClose,
-            onSelectChild: R,
+            onSelectChild: D,
             onNavigateBack: L,
             multiSelect: Z,
             textInput: S,
             successNodeId: y,
             failNodeId: I,
             onSubmit: B,
-            reportId: w
+            reportId: M
           })
         })
       }, e.id))
