@@ -1999,7 +1999,7 @@ var nK = function(e) {
     return e.PULL = "PULL", e.PUSH = "PUSH", e.CONFLICT = "CONFLICT", e.NONE = "NONE", e
   }({}),
   nQ = function(e) {
-    return e.DISCORD = "discord", e.STEAM = "steam", e.TWITCH = "twitch", e.UPLAY = "uplay", e.BATTLENET = "battlenet", e.ORIGIN = "origin", e.GOG = "gog", e.EPIC = "epic", e
+    return e.DISCORD = "discord", e.STEAM = "steam", e.TWITCH = "twitch", e.UPLAY = "uplay", e.BATTLENET = "battlenet", e.ORIGIN = "origin", e.GOG = "gog", e.EPIC = "epic", e.NVIDIA_GDN_APP = "nvidia_gdn_app", e
   }({});
 let nX = Object.freeze({
     discord: "Discord",
@@ -2009,7 +2009,8 @@ let nX = Object.freeze({
     origin: "Origin",
     gog: "GOG",
     twitch: "Twitch",
-    epic: "Epic"
+    epic: "Epic",
+    nvidia_gdn_app: "NVIDIA Cloud Gaming Application"
   }),
   nJ = 6016,
   n$ = 3384;

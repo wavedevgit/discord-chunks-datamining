@@ -97,14 +97,15 @@ class m extends i.Component {
         onControlsHide: L,
         onVolumeChange: x,
         onMute: k,
-        alt: M = c.intl.string(c.t.FlNoSU)
+        disableArrowKeySeek: M,
+        alt: j = c.intl.string(c.t.FlNoSU)
       } = e,
-      j = p(e, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "alt"]);
+      U = p(e, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "disableArrowKeySeek", "alt"]);
     return (0, r.jsx)(a.ZP, _(d({
-      alt: M,
+      alt: j,
       className: i,
       src: f
-    }, j), {
+    }, U), {
       minWidth: s.ZP.minWidth,
       minHeight: s.ZP.minHeight,
       shouldLink: !1,
@@ -147,7 +148,8 @@ class m extends i.Component {
           onControlsShow: D,
           onControlsHide: L,
           mimeType: T,
-          downloadable: b
+          downloadable: b,
+          disableArrowKeySeek: M
         })
       }
     }))

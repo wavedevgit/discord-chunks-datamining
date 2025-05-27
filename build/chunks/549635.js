@@ -142,7 +142,8 @@ function C(e) {
       renderLinkComponent: t,
       autoPlay: !i,
       alt: v,
-      onContextMenu: d
+      onContextMenu: d,
+      disableArrowKeySeek: !0
     }))
   }
   return "IMAGE" === T && (t = x ? (0, r.jsx)(l.ZP, I(O({}, P), {

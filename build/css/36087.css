@@ -1,6 +1,6 @@
 /**
   Module ID: 36087
-  Original File Name: a3e534516982f6ad
+  Original File Name: dc30c9dd6636fcb8
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -1896,7 +1896,30 @@ html .progress__61462 {
 }
 
 .alwaysWhiteText__98ba8 {
-    color: inherit!important
+    color: inherit!important;
+    justify-content: center
+}
+
+.alwaysWhiteText__98ba8,.alwaysWhiteText__98ba8>:first-child {
+    align-items: center;
+    display: flex
+}
+
+.alwaysWhiteText__98ba8 span {
+    margin-left: 4px
+}
+
+.primaryButton__98ba8 {
+    justify-content: center
+}
+
+.primaryButton__98ba8,.primaryButton__98ba8>:first-child {
+    align-items: center;
+    display: flex
+}
+
+.primaryButton__98ba8 span {
+    margin-left: 4px
 }
 
 .primaryButton__98ba8:hover {
@@ -11713,4 +11736,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=a3e534516982f6ad.css.map*/
+/*# sourceMappingURL=dc30c9dd6636fcb8.css.map*/

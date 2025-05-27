@@ -164,30 +164,35 @@ function O(e) {
         children: A.map((e, t) => {
           let {
             label: n,
-            onClick: r,
-            disabledReason: l,
-            submitting: a,
-            trackingArea: o
-          } = e, s = null != l, u = 0 === t, d = {
-            color: u ? c.zxk.Colors.WHITE : c.zxk.Colors.TRANSPARENT,
-            className: u ? E.primaryButton : E.alwaysWhiteText,
-            disabled: s,
-            submitting: a,
-            children: n,
+            icon: r,
+            onClick: l,
+            disabledReason: a,
+            submitting: o,
+            trackingArea: s
+          } = e, u = null != a, d = 0 === t, p = null != r ? (0, i.jsxs)(i.Fragment, {
+            children: [r, (0, i.jsx)("span", {
+              children: n
+            })]
+          }) : n, m = {
+            color: d ? c.zxk.Colors.WHITE : c.zxk.Colors.TRANSPARENT,
+            className: d ? E.primaryButton : E.alwaysWhiteText,
+            disabled: u,
+            submitting: o,
+            children: p,
             onClick(e) {
-              r(e), (0, g.KX)(w.id, w.linkType, o, w.referrerId, w.activityCustomId)
+              l(e), (0, g.KX)(w.id, w.linkType, s, w.referrerId, w.activityCustomId)
             }
           };
-          return s ? (0, i.jsx)(c.ua7, {
-            text: l,
+          return u ? (0, i.jsx)(c.ua7, {
+            text: a,
             children: e => {
               var t = x({}, function(e) {
                 if (null == e) throw TypeError("Cannot destructure " + e);
                 return e
               }(e));
-              return (0, i.jsx)(c.zxk, y({}, d, t))
+              return (0, i.jsx)(c.zxk, y({}, m, t))
             }
-          }, n) : (0, i.jsx)(c.zxk, y({}, d), n)
+          }, n) : (0, i.jsx)(c.zxk, y({}, m), n)
         })
       })]
     })]
