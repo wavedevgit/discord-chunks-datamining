@@ -14,9 +14,9 @@ var i = n(255367),
   u = n(607070),
   m = n(100527),
   g = n(906732),
-  p = n(238302),
-  h = n(514361),
-  f = n(705262),
+  p = n(514361),
+  h = n(705262),
+  f = n(550385),
   b = n(540059),
   _ = n(605236),
   x = n(104494),
@@ -35,28 +35,28 @@ let P = () => {
     (0, _.EW)(l.z.CLIENT_THEMES_SPARKLE_PREVIEW, {
       dismissAction: N.L.PRIMARY,
       forceTrack: !0
-    }), (0, p.Kq)(), (0, c.xf)()
+    }), (0, f.XO)(f.wh.CLIENT_THEMES), (0, c.xf)()
   },
   R = () => {
     var e, t;
     let {
       analyticsLocations: n
-    } = (0, g.ZP)(m.Z.USER_SETTINGS), l = (0, s.e7)([h.Z], () => h.Z.isPreview), a = (null == (t = (0, E.N)()) || null == (e = t.subscription_trial) ? void 0 : e.sku_id) === I.Si.TIER_2, c = (0, x.Ng)(), d = (0, x.Wp)(c, I.Si.TIER_2), u = (0, b.Q3)("UserSettingsAppearanceClientThemes");
+    } = (0, g.ZP)(m.Z.USER_SETTINGS), l = (0, s.e7)([p.Z], () => p.Z.isPreview), a = (null == (t = (0, E.N)()) || null == (e = t.subscription_trial) ? void 0 : e.sku_id) === I.Si.TIER_2, c = (0, x.Ng)(), d = (0, x.Wp)(c, I.Si.TIER_2), u = (0, b.Q3)("UserSettingsAppearanceClientThemes");
     return r.useEffect(() => {
       l && S.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
         type: I.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: n
       })
     }, [l, n]), (0, i.jsxs)("div", {
-      children: [(0, i.jsxs)(f.ZP, {
-        type: f.yH.SETTINGS,
-        children: [(0, i.jsx)(f.ZP.Basic, {
+      children: [(0, i.jsxs)(h.ZP, {
+        type: h.yH.SETTINGS,
+        children: [(0, i.jsx)(h.ZP.Basic, {
           className: A.basicThemeSelectors
         }), u && (0, i.jsx)(D, {}), (0, i.jsxs)(j.Z, {
           className: A.featureBorder,
           isShown: l,
           type: j.Y.PREMIUM,
-          children: [(0, i.jsx)(f.ZP.Gradient, {
+          children: [(0, i.jsx)(h.ZP.Gradient, {
             disabled: l,
             renderCTAButtons: () => !l || a ? null : (0, i.jsxs)("div", {
               className: A.tryItOutButtons,
@@ -102,11 +102,11 @@ function D() {
     useForcedColors: t,
     gradientPreset: n,
     darkSidebar: r
-  } = (0, s.cj)([v.Z, u.Z, h.Z], () => ({
+  } = (0, s.cj)([v.Z, u.Z, p.Z], () => ({
     theme: v.Z.theme,
     useForcedColors: u.Z.useForcedColors,
     darkSidebar: v.Z.darkSidebar,
-    gradientPreset: h.Z.gradientPreset
+    gradientPreset: p.Z.gradientPreset
   }));
   return e !== T.BRd.LIGHT ? null : (0, i.jsx)(o.j7V, {
     hideBorder: !0,
@@ -121,7 +121,7 @@ function D() {
   })
 }
 let Z = () => {
-  let e = (0, s.e7)([h.Z], () => h.Z.isPreview),
+  let e = (0, s.e7)([p.Z], () => p.Z.isPreview),
     t = (0, b.Q3)("ClientThemesSidebarButton");
   return e ? null : (0, i.jsx)(o.zxk, {
     size: t ? o.PhG.MEDIUM : o.PhG.SMALL,
