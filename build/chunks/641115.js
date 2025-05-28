@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(592125),
   v = n(944486),
   j = n(594174),
-  S = n(74538),
-  b = n(451467),
+  b = n(74538),
+  S = n(451467),
   C = n(122186),
   y = n(37113),
   O = n(981631),
@@ -159,7 +159,7 @@ function A(e) {
   } = e, L = (0, c.e7)([j.default], () => {
     let e = j.default.getCurrentUser();
     return a()(null != e, "StreamSettings: user cannot be undefined"), e
-  }), D = (0, c.e7)([v.Z, _.Z], () => _.Z.getChannel(v.Z.getVoiceChannelId())), B = S.ZP.canStreamQuality(S.U2.MID, L), {
+  }), D = (0, c.e7)([v.Z, _.Z], () => _.Z.getChannel(v.Z.getVoiceChannelId())), B = b.ZP.canStreamQuality(b.U2.MID, L), {
     location: U
   } = (0, f.O)(), G = (0, m.Zq)({
     autoTrackExposure: !1
@@ -169,7 +169,7 @@ function A(e) {
     buttons: J.map(e => k({
       type: e,
       selected: e.value === i,
-      needsPremium: !(0, b.Z)(n, e.value, s, L, A, D),
+      needsPremium: !(0, S.Z)(n, e.value, s, L, A, D),
       needsDemo: W && e.value !== y.LY.RESOLUTION_720,
       analyticsLocation: X,
       onClick: () => o(e.value),
@@ -180,7 +180,7 @@ function A(e) {
     buttons: y.k0.map(e => k({
       type: e,
       selected: e.value === s,
-      needsPremium: !(0, b.Z)(n, i, e.value, L, A, D),
+      needsPremium: !(0, S.Z)(n, i, e.value, L, A, D),
       needsDemo: W && e.value === y.ws.FPS_60,
       analyticsLocation: X,
       onClick: () => p(e.value),

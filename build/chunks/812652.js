@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  PG: () => b,
+  PG: () => S,
   Vf: () => C,
   YX: () => y,
   ZP: () => Z,
@@ -24,8 +24,8 @@ var r = n(255367),
   _ = n(37113),
   v = n(576202),
   j = n(388032),
-  S = n(864443);
-let b = [{
+  b = n(864443);
+let S = [{
     value: _.tI.PRESET_VIDEO,
     canUse: e => !0
   }, {
@@ -55,7 +55,7 @@ function O(e) {
     label: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: S.premiumOptionContainer,
+    className: b.premiumOptionContainer,
     children: [t, (0, r.jsx)(o.SrA, {
       size: "xs",
       color: o.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
@@ -66,7 +66,7 @@ function O(e) {
 function Z(e) {
   var t, n, l;
   let {
-    onClose: S,
+    onClose: b,
     onSelect: Z
   } = e, [{
     notifyFriends: I,
@@ -81,11 +81,11 @@ function Z(e) {
   return (0, r.jsxs)(o.v2r, {
     "aria-label": j.intl.string(j.t["+1H47u"]),
     navId: "stream-options",
-    onClose: S,
+    onClose: b,
     onSelect: Z,
     children: [(0, r.jsx)(o.kSQ, {
       label: j.intl.string(v.default.P2pjm5),
-      children: b.filter(e => {
+      children: S.filter(e => {
         let {
           canUse: t
         } = e;
@@ -144,7 +144,7 @@ function Z(e) {
               label: (0, m.M)(t)
             }) : (0, m.M)(t),
             action: () => (function(e) {
-              if (!(0, u.Z)(E, e, P, d.default.getCurrentUser(), L)) return S(), (0, x.E)({
+              if (!(0, u.Z)(E, e, P, d.default.getCurrentUser(), L)) return b(), (0, x.E)({
                 analyticsLocation: a.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
               });
               A({
@@ -165,7 +165,7 @@ function Z(e) {
             label: "".concat(e, "fps")
           }) : "".concat(e, "fps"),
           action: () => (function(e) {
-            if (!(0, u.Z)(E, T, e, d.default.getCurrentUser(), L)) return S(), (0, x.E)({
+            if (!(0, u.Z)(E, T, e, d.default.getCurrentUser(), L)) return b(), (0, x.E)({
               analyticsLocation: a.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
             });
             A({

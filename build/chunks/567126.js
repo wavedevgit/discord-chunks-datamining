@@ -22,8 +22,8 @@ var r = n(255367),
   _ = n(569984),
   v = n(918701),
   j = n(977156),
-  S = n(28798),
-  b = n(131951),
+  b = n(28798),
+  S = n(131951),
   C = n(449224),
   y = n(358085),
   O = n(463727),
@@ -76,7 +76,7 @@ function z(e) {
     enableGoLiveCaptureCard: i
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = b.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = l.useState(null), [C, y] = l.useState(null), [I, w] = l.useState(null), E = null != I && I.length > 0, [T, R] = l.useState(c.vA.WINDOW), [A, G] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
+  }), o = S.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = l.useState(null), [C, y] = l.useState(null), [I, w] = l.useState(null), E = null != I && I.length > 0, [T, R] = l.useState(c.vA.WINDOW), [A, G] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, j.Zy)({
       location: L.dr.STREAM_SOURCE_SELECT
     });
@@ -202,7 +202,7 @@ function z(e) {
         let e = z.current;
         null != e && G(!e.isScrolledToTop())
       },
-      children: [T === c.vA.WINDOW && null != V && (0, r.jsx)(S.Z, {
+      children: [T === c.vA.WINDOW && null != V && (0, r.jsx)(b.Z, {
         quest: V.quest
       }), (0, r.jsx)(p.Z, {
         layout: p.Z.Layout.WRAP,
@@ -283,7 +283,7 @@ function V(e) {
   l.useEffect(() => {
     let e = d.current,
       t = () => {
-        let e = Object.entries(b.Z.getVideoDevices()).filter(e => {
+        let e = Object.entries(S.Z.getVideoDevices()).filter(e => {
           let [t, n] = e;
           return !n.disabled
         });

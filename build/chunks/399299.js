@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(592125),
   v = n(650774),
   j = n(430824),
-  S = n(131951),
-  b = n(944486),
+  b = n(131951),
+  S = n(944486),
   C = n(594174),
   y = n(449224),
   O = n(626135),
@@ -226,12 +226,12 @@ function K(e) {
     onChangeGuild: L,
     onChangeSound: D,
     onChangePreviewDisabled: z
-  } = e, K = (0, o.e7)([b.Z, _.Z], () => _.Z.getChannel(b.Z.getVoiceChannelId())), q = (0, o.e7)([N.Z], () => N.Z.GPUDriversOutdated), Q = (0, o.e7)([N.Z], () => N.Z.problematicGPUDriver), $ = (0, o.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, T.Z)();
-  null != t && t.id.startsWith("screen") && !S.Z.supportsScreenSoundshare() && (ee = G.intl.string(G.t["1b0Gm5"]));
+  } = e, K = (0, o.e7)([S.Z, _.Z], () => _.Z.getChannel(S.Z.getVoiceChannelId())), q = (0, o.e7)([N.Z], () => N.Z.GPUDriversOutdated), Q = (0, o.e7)([N.Z], () => N.Z.problematicGPUDriver), $ = (0, o.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, T.Z)();
+  null != t && t.id.startsWith("screen") && !b.Z.supportsScreenSoundshare() && (ee = G.intl.string(G.t["1b0Gm5"]));
   let et = !!(null == t ? void 0 : t.id.startsWith("camera")),
     en = null != $ && $.verified && !$.bot,
     er = null != K && !(0, u.Yk)(K),
-    el = !(0, o.e7)([S.Z], () => S.Z.getHardwareEncoding());
+    el = !(0, o.e7)([b.Z], () => b.Z.getHardwareEncoding());
   return (0, r.jsxs)(l.Fragment, {
     children: [et ? (0, r.jsx)(P.Z, {
       selectedSource: t,
