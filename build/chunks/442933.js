@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  H: () => a,
-  e: () => o
+  H: () => o,
+  e: () => a
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
     kind: "user",
     id: "2025-02_nameplate_purchasing",
     label: "Nameplate Purchase Experiment",
@@ -22,10 +22,10 @@ let o = (0, r.B)({
       }
     }]
   }),
-  a = e => {
+  o = e => {
     let {
       canPurchase: t
-    } = o.useExperiment({
+    } = a.useExperiment({
       location: e
     }, {
       autoTrackExposure: !1

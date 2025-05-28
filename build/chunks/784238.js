@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(780384),
-  o = n(481060),
-  a = n(410030),
+  a = n(481060),
+  o = n(410030),
   s = n(74538),
   l = n(104494),
   c = n(639119),
@@ -42,8 +42,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -51,8 +51,8 @@ function m(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = e => {
@@ -61,12 +61,12 @@ let E = e => {
       subscriptionTier: n,
       trialDurationCopy: r,
       isPersistentCTA: i,
-      shouldShowReferralTrialCopy: o,
-      subscriptionTrial: a
+      shouldShowReferralTrialCopy: a,
+      subscriptionTrial: o
     } = e;
-    return t && o ? f.intl.string(f.t.bXTClZ) : t && (n === d.Si.TIER_2 || i) ? (0, s.Rt)({
-      intervalType: null == a ? void 0 : a.interval,
-      intervalCount: null == a ? void 0 : a.interval_count
+    return t && a ? f.intl.string(f.t.bXTClZ) : t && (n === d.Si.TIER_2 || i) ? (0, s.Rt)({
+      intervalType: null == o ? void 0 : o.interval,
+      intervalCount: null == o ? void 0 : o.interval_count
     }) : t ? f.intl.formatToPlainString(f.t.nTmm2t, {
       freeTrialText: r
     }) : void 0
@@ -86,7 +86,7 @@ let E = e => {
       confirmationFooter: I,
       paymentModalBanner: S
     } = e, T = m(e, ["textOptions", "forceInverted", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "paymentModalBanner"]);
-    let A = (0, a.ZP)(),
+    let A = (0, o.ZP)(),
       N = !v && ((0, i.wj)(A) || n),
       C = (0, c.N)(),
       P = null == C ? void 0 : C.subscription_trial,
@@ -106,7 +106,7 @@ let E = e => {
         subscriptionTrial: P
       });
     return (0, r.jsx)(u.Z, h({
-      color: N ? o.Ttl.BRAND_INVERTED : o.Ttl.BRAND,
+      color: N ? a.Ttl.BRAND_INVERTED : a.Ttl.BRAND,
       buttonShineClassName: "buttonShineClassName" in T ? T.buttonShineClassName : N ? _.brandShine : void 0,
       textOptions: h({
         textOverride: x,

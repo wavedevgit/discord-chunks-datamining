@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F: () => o
+  F: () => a
 }), n(415506);
 var r = n(153102);
 
@@ -13,7 +13,7 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class o {
+class a {
   attach(e) {
     let {
       stores: t

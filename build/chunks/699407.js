@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, o;
+let r, i, a;
 n.d(t, {
   X: () => F,
   l: () => Y
 }), n(358797), n(290780), n(388685), n(539854), n(17089);
-var a, s = n(756647),
+var o, s = n(756647),
   l = n(442837),
   c = n(544891),
   u = n(761609),
@@ -79,7 +79,7 @@ function U(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1;
   return e + t >= A ? 0 : e + t
 }
-let G = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e()),
+let G = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e()),
   B = new u.R,
   F = {
     handleConnectionOpen: () => {},
@@ -96,7 +96,7 @@ let G = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     var t;
     let {
       dispatcher: n,
-      actionHandler: a,
+      actionHandler: o,
       getFingerprint: u,
       getSessionId: p = H,
       TRACKING_URL: E,
@@ -107,13 +107,13 @@ let G = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
 
     function W(e) {
       var t;
-      if (null != o) return o;
+      if (null != a) return a;
       let n = null != (t = e.fingerprint) ? t : u();
       return null != n ? (0, s.s)(n) : null
     }
 
     function K() {
-      return 0 !== V.length && (null != o ? null != i : null != u())
+      return 0 !== V.length && (null != a ? null != i : null != u())
     }
 
     function z(e) {
@@ -228,11 +228,11 @@ let G = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         analyticsToken: t,
         user: n
       } = e;
-      return null != t && (i = t), null != n.id && (o = n.id), $(), z({
+      return null != t && (i = t), null != n.id && (a = n.id), $(), z({
         shouldFlushOnNextTick: !1
       }), !1
     }, F.handleConnectionClosed = function() {
-      return q(), ee(), i = null, o = null, !1
+      return q(), ee(), i = null, a = null, !1
     }, F.handleFingerprint = function() {
       return q(), !1
     }, F.handleTrack = function(e) {
@@ -240,8 +240,8 @@ let G = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         event: t,
         properties: n,
         flush: i,
-        fingerprint: o,
-        resolve: a
+        fingerprint: a,
+        resolve: o
       } = e;
       return p().then(e => {
         let {
@@ -250,13 +250,13 @@ let G = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         (s !== r || T >= A) && (T = 0, r = s, j());
         let l = {
             type: t,
-            fingerprint: o,
+            fingerprint: a,
             properties: _({
               client_track_timestamp: Date.now(),
               client_heartbeat_session_id: s,
               event_sequence_number: ++T
             }, n),
-            resolve: a
+            resolve: o
           },
           c = W(l);
         if (null != c && (l.properties.client_uuid = B.generate(c)), V.push(l), V.length > g) {
@@ -278,5 +278,5 @@ let G = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         super(...e), f(this, "submitEventsImmediately", Q)
       }
     }
-    return f(et, "displayName", "AnalyticsTrackingStore"), new et(n, a)
+    return f(et, "displayName", "AnalyticsTrackingStore"), new et(n, o)
   }

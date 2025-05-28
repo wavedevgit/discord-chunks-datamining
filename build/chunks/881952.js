@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Nd: () => o,
+  Nd: () => a,
   bk: () => i,
-  d3: () => a,
+  d3: () => o,
   oP: () => s
 });
 var r = n(246364);
@@ -12,11 +12,11 @@ function i(e) {
   return e === r.wB.APPROVED || e === r.wB.REJECTED
 }
 
-function o(e) {
+function a(e) {
   return e === r.wB.SUBMITTED
 }
 
-function a(e) {
+function o(e) {
   return e.applicationStatus === r.wB.APPROVED && null != e.lastSeen
 }
 

@@ -10,8 +10,8 @@ n.d(t, {
 }), n(467055), n(388685);
 var r = n(512722),
   i = n.n(r),
-  o = n(544891),
-  a = n(570140),
+  a = n(544891),
+  o = n(570140),
   s = n(911969),
   l = n(314897),
   c = n(709054),
@@ -24,7 +24,7 @@ function _(e) {
     channelId: t,
     command: n,
     section: r,
-    location: o,
+    location: a,
     initialValues: s,
     triggerSection: l,
     queryLength: c,
@@ -34,13 +34,13 @@ function _(e) {
     source: p,
     commandOrigin: h
   } = e;
-  null != n && i()(n.inputType !== d.iw.PLACEHOLDER, "command should not be placeholder"), a.Z.dispatch({
+  null != n && i()(n.inputType !== d.iw.PLACEHOLDER, "command should not be placeholder"), o.Z.dispatch({
     type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND",
     channelId: t,
     command: n,
     section: r,
     initialValues: s,
-    location: o,
+    location: a,
     triggerSection: l,
     queryLength: c,
     sectionName: u,
@@ -52,7 +52,7 @@ function _(e) {
 }
 
 function p(e, t) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "APPLICATION_COMMAND_SET_PREFERRED_COMMAND",
     channelId: e,
     commandId: t
@@ -60,7 +60,7 @@ function p(e, t) {
 }
 
 function h(e, t) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "APPLICATION_COMMAND_UPDATE_OPTIONS",
     channelId: e,
     changedOptionStates: t
@@ -77,7 +77,7 @@ function m(e, t) {
 }
 
 function g(e, t, n, r) {
-  return o.tn.put({
+  return a.tn.put({
     body: {
       permissions: r
     },
@@ -93,13 +93,13 @@ function E(e, t, n) {
     query: d,
     name: _
   } = t.autocomplete, p = c.default.fromTimestamp(Date.now());
-  null != t.channel && (a.Z.dispatch({
+  null != t.channel && (o.Z.dispatch({
     type: "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST",
     nonce: p,
     channelId: t.channel.id,
     query: d,
     name: _
-  }), null == u.Z.getAutocompleteChoices(t.channel.id, _, d) && o.tn.post({
+  }), null == u.Z.getAutocompleteChoices(t.channel.id, _, d) && a.tn.post({
     url: f.ANM.INTERACTIONS,
     body: {
       type: s.B8.APPLICATION_COMMAND_AUTOCOMPLETE,
@@ -113,7 +113,7 @@ function E(e, t, n) {
     timeout: 3e3,
     rejectWithError: !0
   }).catch(() => {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "INTERACTION_FAILURE",
       nonce: p
     })

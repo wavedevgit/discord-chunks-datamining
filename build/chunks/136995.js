@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(481060),
-  a = n(287734),
+  a = n(481060),
+  o = n(287734),
   s = n(906732),
   l = n(522651),
   c = n(585483),
@@ -57,8 +57,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,8 +66,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -80,12 +80,12 @@ function b(e) {
   let {
     parentAnalyticsLocation: E
   } = (0, s.ZP)(), b = n ? u.d : u.Z, y = t.isManaged() || !t.isPrivate() ? f.intl.string(f.t.S0W8Z2) : f.intl.string(f.t["0D/6R0"]), O = i.useCallback(() => {
-    null == _ || _(), (0, l.v)(E, l.d.JOIN_CALL), a.default.selectVoiceChannel(t.id)
+    null == _ || _(), (0, l.v)(E, l.d.JOIN_CALL), o.default.selectVoiceChannel(t.id)
   }, [t.id, _, E]);
   return i.useEffect(() => (c.S.subscribe(d.CkL.CALL_ACCEPT, O), () => {
     c.S.unsubscribe(d.CkL.CALL_ACCEPT, O)
   }), [O]), (0, r.jsx)(b, m(p({}, h), {
-    iconComponent: o.Csw,
+    iconComponent: a.Csw,
     label: y,
     onClick: O,
     isTrayButton: !1

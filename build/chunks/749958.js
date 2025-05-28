@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   iU: () => s,
-  n2: () => a
+  n2: () => o
 });
 var r = n(818083);
 let i = (0, r.B)({
@@ -20,7 +20,7 @@ let i = (0, r.B)({
       }
     }]
   }),
-  o = (0, r.B)({
+  a = (0, r.B)({
     kind: "user",
     id: "2025-05_guild_profile_invite_embed_iterations",
     label: "Enables iterations to guild profile invite embeds",
@@ -52,9 +52,9 @@ let i = (0, r.B)({
     }]
   });
 
-function a() {
+function o() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-  return o.useExperiment({
+  return a.useExperiment({
     location: "GuildProfileEmbedExperiment"
   }, {
     autoTrackExposure: e
@@ -73,7 +73,7 @@ function s() {
     {
       updateButton: n,
       updateCopy: r
-    } = o.useExperiment({
+    } = a.useExperiment({
       location: "GuildProfileEmbedExperiment"
     }, {
       autoTrackExposure: e

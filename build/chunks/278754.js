@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AW: () => o,
-  Ju: () => a,
+  AW: () => a,
+  Ju: () => o,
   pR: () => s
 });
 var r = n(695346),
   i = n(990266);
 
-function o(e) {
+function a(e) {
   r.up.updateSetting(e)
 }
 
-function a() {
+function o() {
   let {
     disabled: e
   } = i.i.useExperiment({
@@ -23,5 +23,5 @@ function a() {
 
 function s() {
   let e = r.up.useSetting();
-  return !a() && e
+  return !o() && e
 }

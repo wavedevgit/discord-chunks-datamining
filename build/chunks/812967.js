@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(663993),
   i = n(65856);
-let o = async () => {
+let a = async () => {
   let {
     default: e
   } = await (0, r.wE)({
@@ -13,4 +13,4 @@ let o = async () => {
     webpackId: 826753
   });
   return e
-}, a = new i.Z(o)
+}, o = new i.Z(a)

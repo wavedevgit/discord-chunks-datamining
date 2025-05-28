@@ -210,7 +210,7 @@ function z(e) {
             })
           })
         })]
-      }), (0, r.jsx)(P.l, {}), (0, r.jsx)(w.y, {}), (0, r.jsx)(S.R, {}), (0, r.jsxs)("div", {
+      }), (0, r.jsx)(P.l, {}), (0, r.jsx)(S.R, {}), (0, r.jsx)(w.y, {}), (0, r.jsxs)("div", {
         className: o()(F.voiceFiltersFooter, {
           [F.hasActiveVoice]: null != $
         }),

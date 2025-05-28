@@ -163,7 +163,7 @@ function T(e) {
     handleSeekForwardBtnClick: R,
     handleControlBarPendingInteraction: M,
     onVolumeChange: V
-  } = e, B = (0, p.Q3)("ListSectionItem"), F = (0, f.km)(e => e.volume), Z = (0, f.km)(e => e.setVolume), U = (0, f.km)(e => e.muted), q = (0, f.km)(e => e.setMuted), Q = (0, f.km)(e => e.transcriptEnabled), G = (0, f.km)(e => e.captionEnabled), H = (0, f.km)(e => e.fullScreenEnabled), Y = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), z = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [K, W] = l.useState(U ? 0 : F), [X, $] = l.useState(!1), [J, ee] = l.useState(!1), [{
+  } = e, B = (0, p.Q3)("ListSectionItem"), F = (0, f.km)(e => e.volume), Z = (0, f.km)(e => e.setVolume), q = (0, f.km)(e => e.muted), U = (0, f.km)(e => e.setMuted), Q = (0, f.km)(e => e.transcriptEnabled), G = (0, f.km)(e => e.captionEnabled), H = (0, f.km)(e => e.fullScreenEnabled), Y = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), z = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [K, W] = l.useState(q ? 0 : F), [X, $] = l.useState(!1), [J, ee] = l.useState(!1), [{
     volumeAnimSpring: et
   }, en] = (0, d.q_F)(() => ({
     from: {
@@ -177,8 +177,8 @@ function T(e) {
   })), er = l.useRef(null), el = l.useCallback(e => {
     null != o.current && (e !== o.current.volume && (o.current.volume = e), e !== K && W(e))
   }, [o, K]), eo = l.useCallback(() => {
-    null != o.current && (0 === K ? (el(F), q(!1), V(F)) : (Z(K), el(0), q(!0), V(0)))
-  }, [o, K, el, F, q, Z, V]), ei = () => {
+    null != o.current && (0 === K ? (el(F), U(!1), V(F)) : (Z(K), el(0), U(!0), V(0)))
+  }, [o, K, el, F, U, Z, V]), ei = () => {
     $(!0)
   }, ea = () => {
     $(!1)
@@ -307,7 +307,7 @@ function T(e) {
             minValue: 0,
             maxValue: 1,
             onValueChange: e => {
-              el(e), Z(e), V(e), J && (ee(!1), M(!1)), U && e > 0 && q(!1)
+              el(e), Z(e), V(e), J && (ee(!1), M(!1)), q && e > 0 && U(!1)
             },
             asValueChanges: e => {
               el(e), J || (ee(!0), M(!0))

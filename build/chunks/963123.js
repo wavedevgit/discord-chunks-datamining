@@ -41,8 +41,8 @@ var r = n(255367),
   B = n(223418),
   F = n(604162),
   Z = n(747717),
-  U = n(281055),
-  q = n(435585),
+  q = n(281055),
+  U = n(435585),
   Q = n(46140),
   G = n(981631),
   H = n(217702),
@@ -147,11 +147,11 @@ function ee(e) {
   } = e, ea = (0, x.km)(e => e.transcriptEnabled), es = (0, x.km)(e => e.setTranscriptEnabled), ec = (0, x.km)(e => e.captionEnabled), eu = (0, x.km)(e => e.setCaptionEnabled), ed = (0, x.km)(e => e.fullScreenEnabled), em = (0, x.km)(e => e.setFullScreenEnabled), {
     focused: ep,
     focusedChanged: ef
-  } = (0, U.xU)(), {
+  } = (0, q.xU)(), {
     visible: ev,
     visibleChanged: eg,
     targetRef: eb
-  } = (0, U.Yy)(), [eE, eO] = l.useState(!0 === er ? B.rq.PLAYING : B.rq.PAUSED), [eh, eC] = l.useState(!1), eS = (0, _.il)(ee), [ej, ey] = l.useState(eS.percentComplete), [e_, ex] = l.useState(!1), [eD, eT] = l.useState(!0), [eP, eN] = l.useState(!1), [ek, eI] = l.useState([]), [ew, eA] = l.useState(O.Z.getEffectiveConnectionSpeed()), [eL, eR] = l.useState(0), [eM, eV] = l.useState(0), [eB, eF] = l.useState(!1), [eZ, eU] = l.useState(!1), eq = l.useRef(!0), eQ = l.useRef(null), eG = l.useRef(null), eH = (0, x.km)(e => {
+  } = (0, q.Yy)(), [eE, eO] = l.useState(!0 === er ? B.rq.PLAYING : B.rq.PAUSED), [eh, eC] = l.useState(!1), eS = (0, _.il)(ee), [ej, ey] = l.useState(eS.percentComplete), [e_, ex] = l.useState(!1), [eD, eT] = l.useState(!0), [eP, eN] = l.useState(!1), [ek, eI] = l.useState([]), [ew, eA] = l.useState(O.Z.getEffectiveConnectionSpeed()), [eL, eR] = l.useState(0), [eM, eV] = l.useState(0), [eB, eF] = l.useState(!1), [eZ, eq] = l.useState(!1), eU = l.useRef(!0), eQ = l.useRef(null), eG = l.useRef(null), eH = (0, x.km)(e => {
     var t;
     return null != (t = e.videoProgress[ee.id]) ? t : {
       timestampSec: 0,
@@ -227,7 +227,7 @@ function ee(e) {
     trackQuestVideoFullscreenChanged: tS,
     trackQuestVideoError: tj,
     trackQuestVideoVolumeChanged: ty
-  } = (0, q.Z)(ee, eX, tc, et, tu), t_ = l.useCallback(() => {
+  } = (0, U.Z)(ee, eX, tc, et, tu), t_ = l.useCallback(() => {
     var e, t;
     return null != (t = null == (e = eX.current) ? void 0 : e.currentTime) ? t : null
   }, []), {
@@ -246,7 +246,7 @@ function ee(e) {
         eX.current.paused && tf(e6), e4(null), eX.current.play();
         break;
       case B.rq.PAUSED:
-        eX.current.paused || tx(), eX.current.pause(), eq.current = !1;
+        eX.current.paused || tx(), eX.current.pause(), eU.current = !1;
         break;
       case B.rq.ENDED:
         tx(), es(!1)
@@ -342,17 +342,17 @@ function ee(e) {
     return () => clearTimeout(e)
   }, [e_]);
   let [{
-    controlBarAnimSpring: tU
-  }, tq] = (0, f.q_F)(() => ({
+    controlBarAnimSpring: tq
+  }, tU] = (0, f.q_F)(() => ({
     from: {
       controlBarAnimSpring: 0
     },
     config: W,
     onStart: () => {
-      eU(!1)
+      eq(!1)
     },
     onRest: e => {
-      1 === e.value && eU(!0)
+      1 === e.value && eq(!0)
     }
   })), tQ = (0, l.useRef)(null), [{
     captionHeightSpring: tG
@@ -370,12 +370,12 @@ function ee(e) {
     }), () => {
       tG.stop()
     }
-  }, [ec, tH, eW, te, tG]), l.useEffect(() => (tq({
+  }, [ec, tH, eW, te, tG]), l.useEffect(() => (tU({
     controlBarAnimSpring: tk || eB ? 1 : 0,
     immediate: eW
   }), () => {
-    tU.stop()
-  }), [tk, tq, eW, eB, tU]);
+    tq.stop()
+  }), [tk, tU, eW, eB, tq]);
   let tY = eE === B.rq.ENDED,
     tz = l.useCallback(async e => {
       if (tb(e, S.jZ.LEARN_MORE), ee.id === Q.V6) return void window.open(h.Z.getArticleURL(G.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
@@ -464,9 +464,9 @@ function ee(e) {
           eQ.current = Date.now(), td(ew), tr.info("[QV] | handleLoadStart | loadingStartTime: ".concat(eQ.current))
         },
         onPlaying: () => {
-          if (!eq.current) return;
+          if (!eU.current) return;
           let e = performance.now() - eo;
-          tr.info("[QV] | ⏰ Video FCP: ".concat(e, "ms")), tC(e), eq.current = !1
+          tr.info("[QV] | ⏰ Video FCP: ".concat(e, "ms")), tC(e), eU.current = !1
         },
         onWaiting: e => {
           eG.current = Date.now(), tr.info("[QV] | handleWaitingForData: bufferingStartTime: ".concat(eG.current)), tE(ew), eN(!0)
@@ -523,7 +523,7 @@ function ee(e) {
         }), (0, r.jsx)(s.animated.div, {
           className: z.transcriptCont,
           style: {
-            marginBottom: (0, s.to)([tU, tG], (e, t) => "".concat(50 * e + t, "px"))
+            marginBottom: (0, s.to)([tq, tG], (e, t) => "".concat(50 * e + t, "px"))
           },
           children: (0, r.jsx)(V.K, {
             quest: ee,
@@ -535,7 +535,7 @@ function ee(e) {
       }), (0, r.jsx)(s.animated.div, {
         className: z.videoFooterContGradient,
         style: {
-          opacity: (0, s.to)([tU.to({
+          opacity: (0, s.to)([tq.to({
             range: [0, 1],
             output: [0, 1]
           })], e => "".concat(e))
@@ -554,7 +554,7 @@ function ee(e) {
         className: z.captionContainer,
         ref: tQ,
         style: {
-          translateY: (0, s.to)([tU.to({
+          translateY: (0, s.to)([tq.to({
             range: [0, 1],
             output: [0, -50]
           })], e => "".concat(e, "px"))
@@ -568,15 +568,15 @@ function ee(e) {
       }), (0, r.jsxs)(s.animated.div, {
         className: z.videoFooterCont,
         style: {
-          paddingLeft: (0, s.to)([tU.to({
+          paddingLeft: (0, s.to)([tq.to({
             range: [0, 1],
             output: [0, 25]
           })], e => "".concat(e, "px")),
-          paddingRight: (0, s.to)([tU.to({
+          paddingRight: (0, s.to)([tq.to({
             range: [0, 1],
             output: [0, 25]
           })], e => "".concat(e, "px")),
-          height: (0, s.to)([tU.to({
+          height: (0, s.to)([tq.to({
             range: [0, 1],
             output: [0, 50]
           })], e => "".concat(e, "px"))
@@ -601,15 +601,15 @@ function ee(e) {
         }), (0, r.jsx)(s.animated.div, {
           className: z.videoControlsCont,
           style: {
-            paddingTop: (0, s.to)([tU.to({
+            paddingTop: (0, s.to)([tq.to({
               range: [0, 1],
               output: [0, 1]
             })], e => "".concat(e * e * 12, "px")),
-            paddingBottom: (0, s.to)([tU.to({
+            paddingBottom: (0, s.to)([tq.to({
               range: [0, 1],
               output: [0, 1]
             })], e => "".concat(e * e * 12, "px")),
-            pointerEvents: (0, s.to)([tU.to({
+            pointerEvents: (0, s.to)([tq.to({
               range: [0, 1],
               output: [0, 1]
             })], e => e < .3 ? "none" : "auto")
@@ -618,7 +618,7 @@ function ee(e) {
             videoRef: eX,
             quest: ee,
             playerState: eE,
-            animSpring: tU,
+            animSpring: tq,
             visible: tk,
             seekForwardEnabled: tX,
             hideCaptionBtn: null == tW,

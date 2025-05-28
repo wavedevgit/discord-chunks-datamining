@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(392711),
   i = n.n(r);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,17 +14,17 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let a = [];
+let o = [];
 class s {
   static create() {
     let e = new s;
-    return a.push(e), e.record
+    return o.push(e), e.record
   }
   getTotalBytes() {
     return i().sum(Object.values(this.bytes))
   }
   constructor() {
-    o(this, "bytes", {}), o(this, "record", e => {
+    a(this, "bytes", {}), a(this, "record", e => {
       if (null != e) {
         for (let t in e.rtp.inbound)
           for (let n of e.rtp.inbound[t]) {

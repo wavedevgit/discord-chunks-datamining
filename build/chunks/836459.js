@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  QD: () => o.Q,
+  QD: () => a.Q,
   t7: () => i.t,
   zL: () => r.z
 });
 var r = n(327705),
   i = n(587825),
-  o = n(573365)
+  a = n(573365)

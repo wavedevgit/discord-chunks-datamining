@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(987209),
   i = n(599659);
 
-function o(e) {
+function a(e) {
   let {
     location: t
   } = e, {
@@ -16,8 +16,8 @@ function o(e) {
   }, {
     autoTrackExposure: !1
   }), {
-    alreadyHasHalloweenDeco: o,
-    isGift: a
+    alreadyHasHalloweenDeco: a,
+    isGift: o
   } = (0, r.wD)();
-  return n && a && !1 === o
+  return n && o && !1 === a
 }

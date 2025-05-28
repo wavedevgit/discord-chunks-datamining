@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(442837),
   i = n(570140),
-  o = n(710845),
-  a = n(70956),
+  a = n(710845),
+  o = n(70956),
   s = n(287328);
 
 function l(e, t, n) {
@@ -17,9 +17,9 @@ function l(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let c = new o.Z("FileSystemStore"),
+let c = new a.Z("FileSystemStore"),
   u = 1048576,
-  d = 10 * a.Z.Millis.MINUTE;
+  d = 10 * o.Z.Millis.MINUTE;
 class f extends r.ZP.Store {
   handlePostConnectionOpen() {
     return this.refresh(), !1

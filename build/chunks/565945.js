@@ -5,16 +5,16 @@ n.d(t, {
 });
 var r = n(44837),
   i = n(791819),
-  o = n(282253);
+  a = n(282253);
 n(476400);
-var a = n(898061),
+var o = n(898061),
   s = n(862127),
   l = n(73800),
   c = n(416620),
   u = n(941951),
   d = function(e, t) {
     return e && t && t.split(" ").forEach(function(t) {
-      return (0, a.Z)(e, t)
+      return (0, o.Z)(e, t)
     })
   },
   f = function(e, t) {
@@ -32,18 +32,18 @@ var a = n(898061),
       }, t.onEnter = function(e, n) {
         var r = t.resolveArguments(e, n),
           i = r[0],
-          o = r[1];
-        t.removeClasses(i, "exit"), t.addClass(i, o ? "appear" : "enter", "base"), t.props.onEnter && t.props.onEnter(e, n)
+          a = r[1];
+        t.removeClasses(i, "exit"), t.addClass(i, a ? "appear" : "enter", "base"), t.props.onEnter && t.props.onEnter(e, n)
       }, t.onEntering = function(e, n) {
         var r = t.resolveArguments(e, n),
           i = r[0],
-          o = r[1] ? "appear" : "enter";
-        t.addClass(i, o, "active"), t.props.onEntering && t.props.onEntering(e, n)
+          a = r[1] ? "appear" : "enter";
+        t.addClass(i, a, "active"), t.props.onEntering && t.props.onEntering(e, n)
       }, t.onEntered = function(e, n) {
         var r = t.resolveArguments(e, n),
           i = r[0],
-          o = r[1] ? "appear" : "enter";
-        t.removeClasses(i, o), t.addClass(i, o, "done"), t.props.onEntered && t.props.onEntered(e, n)
+          a = r[1] ? "appear" : "enter";
+        t.removeClasses(i, a), t.addClass(i, a, "done"), t.props.onEntered && t.props.onEntered(e, n)
       }, t.onExit = function(e) {
         var n = t.resolveArguments(e)[0];
         t.removeClasses(n, "appear"), t.removeClasses(n, "enter"), t.addClass(n, "exit", "base"), t.props.onExit && t.props.onExit(e)
@@ -59,16 +59,16 @@ var a = n(898061),
         var n = t.props.classNames,
           r = "string" == typeof n,
           i = r && n ? n + "-" : "",
-          o = r ? "" + i + e : n[e],
-          a = r ? o + "-active" : n[e + "Active"],
-          s = r ? o + "-done" : n[e + "Done"];
+          a = r ? "" + i + e : n[e],
+          o = r ? a + "-active" : n[e + "Active"],
+          s = r ? a + "-done" : n[e + "Done"];
         return {
-          baseClassName: o,
-          activeClassName: a,
+          baseClassName: a,
+          activeClassName: o,
           doneClassName: s
         }
       }, t
-    }(0, o.Z)(t, e);
+    }(0, a.Z)(t, e);
     var n = t.prototype;
     return n.addClass = function(e, t, n) {
       var r = this.getClassNames(t)[n + "ClassName"],
@@ -78,8 +78,8 @@ var a = n(898061),
       var n = this.appliedClasses[t],
         r = n.base,
         i = n.active,
-        o = n.done;
-      this.appliedClasses[t] = {}, r && f(e, r), i && f(e, i), o && f(e, o)
+        a = n.done;
+      this.appliedClasses[t] = {}, r && f(e, r), i && f(e, i), a && f(e, a)
     }, n.render = function() {
       var e = this.props,
         t = (e.classNames, (0, i.Z)(e, ["classNames"]));

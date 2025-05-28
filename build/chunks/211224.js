@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(959457),
   i = n(823379),
-  o = n(458725),
-  a = n(442741),
+  a = n(458725),
+  o = n(442741),
   s = n(981631);
 
 function l(e, t, n) {
@@ -32,7 +32,7 @@ function c(e) {
 }
 let u = {
   getActiveErrors: () => r.Z.getAllActiveStreamKeys().map(e => r.Z.getQuality(e) === s.IE4.BAD ? c({
-    type: o.u.STREAM_BAD_NETWORK_QUALITY
-  }, (0, a.rT)(e)) : null).filter(i.lm),
+    type: a.u.STREAM_BAD_NETWORK_QUALITY
+  }, (0, o.rT)(e)) : null).filter(i.lm),
   makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
 }

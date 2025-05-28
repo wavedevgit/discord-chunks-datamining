@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  o = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  o = n(481060),
   s = n(686546),
   l = n(813197),
   c = n(60034),
@@ -51,11 +51,11 @@ function b(e) {
   let {
     profile: t,
     className: n
-  } = e, i = E(t, (0, _.nv)().hex()), a = (0, _.dG)(i, t);
+  } = e, i = E(t, (0, _.nv)().hex()), o = (0, _.dG)(i, t);
   return (0, r.jsx)("div", {
-    className: o()(n, h.banner),
+    className: a()(n, h.banner),
     style: {
-      background: a
+      background: o
     }
   })
 }
@@ -84,11 +84,11 @@ function y(e) {
   });
 
   function u(e, t) {
-    null != i && (0, a.ZDy)(async () => {
+    null != i && (0, o.ZDy)(async () => {
       let {
-        default: o
+        default: a
       } = await Promise.all([n.e("91689"), n.e("59732"), n.e("48389")]).then(n.bind(n, 712451));
-      return n => (0, r.jsx)(o, g({
+      return n => (0, r.jsx)(a, g({
         uploadType: p.pC.GUILD_ICON,
         imageUri: e,
         file: t,
@@ -103,14 +103,14 @@ function y(e) {
   }
   return (0, r.jsx)("div", {
     className: h.avatarContainer,
-    children: (0, r.jsx)(a.tEY, {
+    children: (0, r.jsx)(o.tEY, {
       within: !0,
       children: (0, r.jsx)(s.ZP, {
         mask: s.QS.CLAN_ICON,
         width: 70,
         height: 70,
         children: (0, r.jsxs)("div", {
-          className: o()(h.avatarWrapper, h.clickable),
+          className: a()(h.avatarWrapper, h.clickable),
           children: [(0, r.jsx)(c.Ft, {
             guildId: t.id,
             guildName: t.name,
@@ -118,7 +118,7 @@ function y(e) {
             iconSize: 64
           }), (0, r.jsx)("div", {
             className: h.overlay
-          }), (0, r.jsx)(a.vdY, {
+          }), (0, r.jsx)(o.vdY, {
             size: "custom",
             className: h.overlayIcon,
             width: 20,
@@ -139,15 +139,15 @@ function O(e) {
     profile: t,
     onIconChange: n,
     className: i,
-    disableCTA: a,
+    disableCTA: o,
     CTAOverride: s,
     onClose: l
   } = e, c = null;
-  return null != s ? c = s : a || (c = (0, r.jsx)(d.Z, {
+  return null != s ? c = s : o || (c = (0, r.jsx)(d.Z, {
     profile: t,
     onComplete: l
   })), (0, r.jsxs)("div", {
-    className: o()(h.container, i),
+    className: a()(h.container, i),
     children: [(0, r.jsx)(b, {
       profile: t
     }), (0, r.jsx)(y, {

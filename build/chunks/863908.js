@@ -5,12 +5,12 @@ n.d(t, {
 });
 var r = n(458725),
   i = n(386146),
-  o = n(5192),
-  a = n(981631),
+  a = n(5192),
+  o = n(981631),
   s = n(388032);
 
 function l(e, t, n, l) {
-  if (e.state === a.jm8.RECONNECTING) {
+  if (e.state === o.jm8.RECONNECTING) {
     var c;
     let e = (0, i.tc)({
         location: "getScreenMessageForStream"
@@ -24,13 +24,13 @@ function l(e, t, n, l) {
       }) : void 0
     }
   }
-  return e.state === a.jm8.PAUSED ? n ? {
+  return e.state === o.jm8.PAUSED ? n ? {
     mainText: s.intl.string(s.t["5q17w8"]),
     supportingText: s.intl.string(s.t.LV1NSE)
   } : {
     mainText: s.intl.string(s.t["5q17w8"]),
     supportingText: s.intl.formatToPlainString(s.t.meVVlZ, {
-      username: o.ZP.getName(e.guildId, e.channelId, t)
+      username: a.ZP.getName(e.guildId, e.channelId, t)
     })
   } : l ? {
     mainText: s.intl.string(s.t.JmaKtL),

@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(31775),
   i = n.n(r);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,7 +14,7 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let a = 3;
+let o = 3;
 class s {
   reset() {
     this._subscriptions = {}
@@ -31,7 +31,7 @@ class s {
   _get(e) {
     var t;
     return null != (t = this._subscriptions[e]) ? t : new(i())({
-      max: a,
+      max: o,
       updateAgeOnGet: !0
     })
   }
@@ -48,6 +48,6 @@ class s {
     return !!n.has(t) && (n.del(t), this._onChange(e, n.keys()), !0)
   }
   constructor(e) {
-    o(this, "_subscriptions", {}), o(this, "_onChange", void 0), this._onChange = e
+    a(this, "_subscriptions", {}), a(this, "_onChange", void 0), this._onChange = e
   }
 }

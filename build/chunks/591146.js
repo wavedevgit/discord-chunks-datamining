@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  CL: () => o,
+  CL: () => a,
   Ml: () => i,
-  VM: () => a
+  VM: () => o
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -63,13 +63,13 @@ function i(e) {
   }).largerGuildIcons
 }
 
-function o(e) {
+function a(e) {
   return r.useExperiment({
     location: e
   }).darkerGuildListBackground
 }
 
-function a(e) {
+function o(e) {
   return r.useExperiment({
     location: e
   }).distinctBorders

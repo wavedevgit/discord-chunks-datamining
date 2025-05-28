@@ -1,6 +1,6 @@
 /**
   Module ID: 2794
-  Original File Name: 571c0fe6ef52a499
+  Original File Name: e159a44dec383ef9
 **/
 .confirmation__2db04 {
     align-items: center;
@@ -123,6 +123,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
+    margin-top: 24px;
     padding: 8px 16px
 }
 
@@ -266,7 +267,8 @@
 }
 
 .avatar__6fbbd {
-    margin-top: -40px
+    margin-right: -4px;
+    margin-top: -52px
 }
 
 .pricePerInterval_fd0764 {
@@ -830,4 +832,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=571c0fe6ef52a499.css.map*/
+/*# sourceMappingURL=e159a44dec383ef9.css.map*/

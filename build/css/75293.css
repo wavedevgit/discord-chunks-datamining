@@ -1,6 +1,6 @@
 /**
   Module ID: 75293
-  Original File Name: 55d53d7ee03b1dd4
+  Original File Name: 5068649196bad722
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1603,6 +1603,39 @@
 
 .filterBtn_c485a2.active_c485a2 {
     border-color: var(--interactive-active)
+}
+
+.filters_c485a2::-webkit-scrollbar {
+    display: none
+}
+
+.moreButton_c485a2 {
+    align-items: center;
+    border-radius: var(--radius-xs);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    padding: 4px 8px;
+    transition: background-color .3s ease
+}
+
+.moreButton_c485a2:hover {
+    background-color: var(--button-secondary-background-hover)
+}
+
+.full-motion .moreButtonIcon_c485a2 {
+    transition: all .3s ease
+}
+
+.tabBar_c485a2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-height: 34px;
+    overflow: hidden;
+    width: 100%
 }
 
 .messagesPopoutWrap__0aee3 {
@@ -6339,4 +6372,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=55d53d7ee03b1dd4.css.map*/
+/*# sourceMappingURL=5068649196bad722.css.map*/

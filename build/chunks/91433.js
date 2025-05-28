@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(906732),
   c = n(835473),
@@ -21,11 +21,11 @@ function m(e) {
   let {
     user: t,
     guildId: n,
-    channelId: o,
+    channelId: a,
     applicationId: m,
     isGameRelationship: g = !1,
     className: E
-  } = e, b = f.ZP.getName(n, o, t), {
+  } = e, b = f.ZP.getName(n, a, t), {
     trackUserProfileAction: y
   } = (0, _.KZ)(), {
     newestAnalyticsLocation: O
@@ -47,7 +47,7 @@ function m(e) {
     })
   }, [I, g, y]), A = null != m, N = (0, c.q)(m);
   return A && null == N ? null : (0, r.jsxs)("div", {
-    className: a()(h.container, E),
+    className: o()(h.container, E),
     children: [A ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: p.intl.format(g ? p.t.syHjLC : p.t.V15uUF, {
@@ -68,7 +68,7 @@ function m(e) {
       className: h.buttonContainer,
       children: [(0, r.jsx)(s.zxk, {
         look: s.zxk.Looks.FILLED,
-        color: a()(s.zxk.Colors.BRAND, h.color),
+        color: o()(s.zxk.Colors.BRAND, h.color),
         size: s.zxk.Sizes.SMALL,
         className: h.button,
         onClick: S,

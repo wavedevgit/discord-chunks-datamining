@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(481060),
-  a = n(907040),
+  a = n(481060),
+  o = n(907040),
   s = n(981631),
   l = n(185923);
 let c = {
@@ -31,7 +31,7 @@ function d(e) {
     } = e;
     null != t && (n(t), l())
   }, [l, n]);
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(a.yRy, {
     shouldShow: s,
     position: d,
     targetElementRef: _,
@@ -41,7 +41,7 @@ function d(e) {
       let {
         closePopout: n
       } = e;
-      return (0, r.jsx)(a.Z, {
+      return (0, r.jsx)(o.Z, {
         analyticsOverride: c,
         channel: t,
         closePopout: n,

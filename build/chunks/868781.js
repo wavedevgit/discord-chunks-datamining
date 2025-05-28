@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(657707),
-  a = n(456100),
+  a = n(657707),
+  o = n(456100),
   s = n(841784),
   l = n(906732),
   c = n(482798),
@@ -19,14 +19,14 @@ var r = n(255367),
   m = n(981631);
 let g = function(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  return (0, u.dS)(e) ? o.ewx : (0, s.Z)(e) ? t ? o.iWm : o.jje : e.type === m.IIU.PLAYING ? o.iWm : e.type === m.IIU.LISTENING ? o.RZG : e.type === m.IIU.WATCHING || e.type === m.IIU.STREAMING ? o.ARS : e.type === m.IIU.COMPETING ? o.iWm : null
+  return (0, u.dS)(e) ? a.ewx : (0, s.Z)(e) ? t ? a.iWm : a.jje : e.type === m.IIU.PLAYING ? a.iWm : e.type === m.IIU.LISTENING ? a.RZG : e.type === m.IIU.WATCHING || e.type === m.IIU.STREAMING ? a.ARS : e.type === m.IIU.COMPETING ? a.iWm : null
 };
 
 function E(e) {
   let {
     activity: t,
     textVariant: n,
-    textClassName: o,
+    textClassName: a,
     iconClassName: s,
     hideIcon: u = !1,
     hideText: m = !1,
@@ -34,7 +34,7 @@ function E(e) {
     canTruncate: b = !0
   } = e, {
     enabled: y
-  } = a.c.useExperiment({
+  } = o.c.useExperiment({
     location: "PresenceActivityStatus"
   }, {
     autoTrackExposure: !0
@@ -68,7 +68,7 @@ function E(e) {
       onTooltipShow: C ? S : void 0
     }), !m && (0, r.jsx)(h.Z, {
       variant: n,
-      className: o,
+      className: a,
       canTruncate: b,
       children: T
     })]

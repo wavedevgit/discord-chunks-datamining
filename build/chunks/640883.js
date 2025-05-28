@@ -2,8 +2,8 @@
 "use strict";
 var r = n(507604),
   i = n(88996),
-  o = TypeError,
-  a = Object.getOwnPropertyDescriptor;
+  a = TypeError,
+  o = Object.getOwnPropertyDescriptor;
 e.exports = r && ! function() {
   if (void 0 !== this) return !0;
   try {
@@ -14,7 +14,7 @@ e.exports = r && ! function() {
     return e instanceof TypeError
   }
 }() ? function(e, t) {
-  if (i(e) && !a(e, "length").writable) throw new o("Cannot set read only .length");
+  if (i(e) && !o(e, "length").writable) throw new a("Cannot set read only .length");
   return e.length = t
 } : function(e, t) {
   return e.length = t

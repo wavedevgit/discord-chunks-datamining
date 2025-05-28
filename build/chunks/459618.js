@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(259443),
   i = n(442837),
-  o = n(570140),
-  a = n(186102),
+  a = n(570140),
+  o = n(186102),
   s = n(873741),
   l = n(592125),
   c = n(650774),
@@ -65,7 +65,7 @@ function b(e) {
   let n = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     r = null == e.gatewaySeenTimestamp ? null : e.gatewaySeenTimestamp - e.initialSendTimestamp,
     i = (0, s.d)();
-  d.default.track(f.rMx.SEND_MESSAGE_ROUNDTRIP, p(m(p({}, (0, a.Z)()), {
+  d.default.track(f.rMx.SEND_MESSAGE_ROUNDTRIP, p(m(p({}, (0, o.Z)()), {
     api_latency_ms: n,
     gateway_latency_ms: r,
     channel_id: t.id,
@@ -120,7 +120,7 @@ class O extends i.ZP.Store {
     super(...e), _(this, "pendingMessages", new Map)
   }
 }
-let v = new O(o.Z, {
+let v = new O(a.Z, {
     MESSAGE_CREATE: y
   }),
   I = v

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(727429),
   i = n(982168),
-  o = n(703656),
-  a = n(769654),
+  a = n(703656),
+  o = n(769654),
   s = n(592125),
   l = n(754688),
   c = n(849027),
@@ -66,7 +66,7 @@ async function g(e, t) {
   if (null != n && !await (0, c.Z)(n)) return void(0, u.k)({
     kind: "channel"
   });
-  if (null == n) return void(0, o.uL)(e, t);
+  if (null == n) return void(0, a.uL)(e, t);
   let r = m(n);
-  return null == r.channelId ? void(0, a.X)(r.guildId) : (0, i.WF)(r.channelId) && (0, i.WF)(r.threadId) ? void(null != r.threadId ? (0, o.uL)(d.Z5c.CHANNEL_THREAD_VIEW(r.guildId, r.channelId, r.threadId, r.messageId), t) : (0, o.uL)(d.Z5c.CHANNEL(r.guildId, r.channelId, r.messageId), t)) : void(0, u.V)()
+  return null == r.channelId ? void(0, o.X)(r.guildId) : (0, i.WF)(r.channelId) && (0, i.WF)(r.threadId) ? void(null != r.threadId ? (0, a.uL)(d.Z5c.CHANNEL_THREAD_VIEW(r.guildId, r.channelId, r.threadId, r.messageId), t) : (0, a.uL)(d.Z5c.CHANNEL(r.guildId, r.channelId, r.messageId), t)) : void(0, u.V)()
 }

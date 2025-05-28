@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => O
 }), n(388685);
 var r, i = n(442837),
-  o = n(570140),
-  a = n(699516);
+  a = n(570140),
+  o = n(699516);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,7 +67,7 @@ function b() {
       let {
         user_id: t
       } = e;
-      return !a.Z.isBlockedOrIgnored(t)
+      return !o.Z.isBlockedOrIgnored(t)
     }).map(e => [e.user_id, e])),
     t = new Set(e.keys());
   p = {
@@ -77,7 +77,7 @@ function b() {
 }
 class y extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(a.Z), null != e && (_.userAffinities = e.userAffinities, _.lastFetched = e.lastFetched, b()), this.syncWith([a.Z], b)
+    this.waitFor(o.Z), null != e && (_.userAffinities = e.userAffinities, _.lastFetched = e.lastFetched, b()), this.syncWith([o.Z], b)
   }
   needsRefresh() {
     return !u && Date.now() - _.lastFetched > c
@@ -102,7 +102,7 @@ class y extends(r = i.ZP.PersistedStore) {
   }
 }
 s(y, "displayName", "UserAffinitiesStore"), s(y, "persistKey", "UserAffinitiesStore"), s(y, "migrations", [e => null]);
-let O = new y(o.Z, {
+let O = new y(a.Z, {
   LOAD_USER_AFFINITIES_SUCCESS: E,
   LOAD_USER_AFFINITIES: g,
   LOAD_USER_AFFINITIES_FAILURE: m,

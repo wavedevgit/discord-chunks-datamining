@@ -2,14 +2,14 @@
 "use strict";
 var r = n(46015),
   i = Error,
-  o = r("".replace),
-  a = function(e) {
+  a = r("".replace),
+  o = function(e) {
     return String(new i(e).stack)
   }("zxcasd"),
   s = /\n\s*at [^:]*:[^\n]*/,
-  l = s.test(a);
+  l = s.test(o);
 e.exports = function(e, t) {
   if (l && "string" == typeof e && !i.prepareStackTrace)
-    for (; t--;) e = o(e, s, "");
+    for (; t--;) e = a(e, s, "");
   return e
 }

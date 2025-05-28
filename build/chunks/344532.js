@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => g
 });
 var r, i = n(442837),
-  o = n(570140);
+  a = n(570140);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -76,8 +76,8 @@ class m extends(r = i.ZP.PersistedStore) {
     return s
   }
 }
-a(m, "displayName", "LoginRequiredActionStore"), a(m, "persistKey", "LoginRequiredActionStore");
-let g = new m(o.Z, {
+o(m, "displayName", "LoginRequiredActionStore"), o(m, "persistKey", "LoginRequiredActionStore");
+let g = new m(a.Z, {
   LOGIN_ATTEMPTED: d,
   CONNECTION_OPEN: f,
   CURRENT_USER_UPDATE: f,

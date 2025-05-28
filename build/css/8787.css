@@ -1,6 +1,6 @@
 /**
   Module ID: 8787
-  Original File Name: 9c25c8479ff1dc32
+  Original File Name: 4b56357b96441b42
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -336,7 +336,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -6313,7 +6313,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .giftImagePromotion_a45ed3 {
-    width: 136px
+    width: 200px
 }
 
 .giftImageAnimatedPromotion_a45ed3 {
@@ -6352,8 +6352,16 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 47.5%
 }
 
-.giftText_a45ed3,.giftTitle_a45ed3 {
+.giftTitle_a45ed3 {
     margin-bottom: 16px
+}
+
+.giftText_a45ed3 {
+    margin-bottom: var(--spacing-12)
+}
+
+.giftAdditionalTerm_a45ed3 {
+    font-style: italic
 }
 
 .giftCardButton_a45ed3 {
@@ -18629,4 +18637,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=9c25c8479ff1dc32.css.map*/
+/*# sourceMappingURL=4b56357b96441b42.css.map*/

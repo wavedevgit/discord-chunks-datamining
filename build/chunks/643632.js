@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(442837),
   i = n(427679);
 
-function o(e) {
+function a(e) {
   return (0, r.e7)([i.Z], () => i.Z.isLive(e), [e])
 }

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(415506);
 var r = n(255367),
   i = n(73800);
 
-function o() {
+function a() {
   let e = i.createContext(void 0);
 
   function t() {

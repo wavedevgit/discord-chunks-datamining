@@ -1,6 +1,6 @@
 /**
   Module ID: 71533
-  Original File Name: 8b3648a92a62ee80
+  Original File Name: 26799e1ff11c1f3c
 **/
 .confirmation__2db04 {
     align-items: center;
@@ -110,6 +110,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
+    margin-top: 24px;
     padding: 8px 16px
 }
 
@@ -662,4 +663,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=8b3648a92a62ee80.css.map*/
+/*# sourceMappingURL=26799e1ff11c1f3c.css.map*/

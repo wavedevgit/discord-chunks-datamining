@@ -75,7 +75,7 @@ function L(e) {
     videoSessionId: R,
     impressionRef: M,
     parentModalOpenStartClockTime: V
-  } = e, B = (0, b.il)(T), F = (0, f.tP)(T), Z = (0, a.e7)([d.Z], () => d.Z.getState().theme), U = (0, s.wj)(Z) ? N.BRd.DARK : N.BRd.LIGHT, q = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), Q = (0, p.aM)(), G = (0, E.up)(P.dr.VIDEO_MODAL), [H, Y] = l.useState(B.progressSeconds), [z, K] = l.useState(!1), {
+  } = e, B = (0, b.il)(T), F = (0, f.tP)(T), Z = (0, a.e7)([d.Z], () => d.Z.getState().theme), q = (0, s.wj)(Z) ? N.BRd.DARK : N.BRd.LIGHT, U = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), Q = (0, p.aM)(), G = (0, E.up)(P.dr.VIDEO_MODAL), [H, Y] = l.useState(B.progressSeconds), [z, K] = l.useState(!1), {
     completedRatio: W,
     completedRatioDisplay: X
   } = (0, f.I)(T), [$, J] = (0, _.G6)(k.intl.string(k.t.RDE0SU), k.intl.string(k.t["+5kSoa"]), 1700), ee = null != (0, b.LM)(T.config), et = (null == (t = T.userStatus) ? void 0 : t.claimedAt) != null ? ee ? k.intl.string(k.t.WYchdX) : k.intl.string(k.t.vTgCW1) : G, en = l.useCallback(() => {
@@ -84,8 +84,17 @@ function L(e) {
       ctaContent: m.jZ.COPY_QUEST_URL,
       impressionId: Q
     }), J()
-  }, [Q, T.id, J]), er = l.useMemo(() => h.r.build(T.config).defaultReward.messages.name, [T]), el = k.intl.formatToPlainString(k.t["12IWPz"], {
-    rewardName: er
+  }, [Q, T.id, J]), er = async () => {
+    if (null != j) {
+      let e = h.r.build(T.config).application.link;
+      await (0, _.qP)(e) && j()
+    }(0, b.FE)(T, {
+      content: g.jn.VIDEO_MODAL,
+      ctaContent: m.jZ.OPEN_GAME_LINK,
+      impressionId: Q
+    })
+  }, el = l.useMemo(() => h.r.build(T.config).defaultReward.messages.name, [T]), eo = k.intl.formatToPlainString(k.t["12IWPz"], {
+    rewardName: el
   });
   return (0, r.jsx)(c.Y0X, {
     transitionState: v,
@@ -104,17 +113,11 @@ function L(e) {
             className: I.contentHeader,
             children: [(0, r.jsxs)(c.P3F, {
               className: I.contentHeaderGameInfo,
-              onClick: () => {
-                (0, b.FE)(T, {
-                  content: g.jn.VIDEO_MODAL,
-                  ctaContent: m.jZ.OPEN_GAME_LINK,
-                  impressionId: Q
-                })
-              },
+              onClick: er,
               children: [(0, r.jsx)("img", {
                 alt: T.config.messages.gameTitle,
                 className: i()(I.contentHeaderLogotype, I.accentOnHover),
-                src: (0, O.fh)(T, O.eC.LOGO_TYPE, U).url
+                src: (0, O.fh)(T, O.eC.LOGO_TYPE, q).url
               }), (0, r.jsx)(x.Z, {}), (0, r.jsxs)("div", {
                 className: I.questHeading,
                 children: [(0, r.jsx)(c.X6q, {
@@ -131,7 +134,7 @@ function L(e) {
               })]
             }), !F && (0, r.jsx)(c.ua7, {
               position: "left",
-              text: el,
+              text: eo,
               onTooltipShow: () => {
                 K(!0)
               },
@@ -185,7 +188,7 @@ function L(e) {
                 className: I.claimBtn,
                 size: c.zxk.Sizes.MEDIUM,
                 quest: T,
-                useReducedMotion: q,
+                useReducedMotion: U,
                 isExpanded: (null == (n = T.userStatus) ? void 0 : n.completedAt) != null,
                 disabled: (null == (o = T.userStatus) ? void 0 : o.completedAt) == null,
                 ctaLabel: et,

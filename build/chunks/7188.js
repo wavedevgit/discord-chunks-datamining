@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(906732),
   l = n(522651),
   c = n(795318),
@@ -68,8 +68,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -77,8 +77,8 @@ function C(e, t) {
 function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -86,7 +86,7 @@ function R(e) {
   let {
     className: t
   } = e;
-  return (0, r.jsx)(a.ewm, {
+  return (0, r.jsx)(o.ewm, {
     size: "md",
     color: "currentColor",
     className: t
@@ -118,15 +118,15 @@ function D(e) {
     {
       parentAnalyticsLocation: S
     } = (0, s.ZP)(),
-    A = (0, o.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), O.p9.TIER_1)),
-    P = (0, o.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)),
+    A = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), O.p9.TIER_1)),
+    P = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)),
     D = i.useMemo(() => null != n ? [n] : [], [n]),
     L = i.useCallback(() => {
       null != P && (0, f.Z)(P.getGuildId(), P.id, b.jXE.STREAM_SETTINGS)
     }, [P]);
   if (null == n || null == P) return null;
   let x = R;
-  return t || A || (x = w), (0, r.jsx)(a.yRy, {
+  return t || A || (x = w), (0, r.jsx)(o.yRy, {
     targetElementRef: I,
     position: "top",
     renderPopout: e => {
@@ -147,7 +147,7 @@ function D(e) {
         })
       })
     },
-    animation: a.yRy.Animation.FADE,
+    animation: o.yRy.Animation.FADE,
     children: e => (0, r.jsx)(E.Z, T(N(T({}, e), {
       buttonRef: I,
       label: v.intl.string(v.t.tmiYpK),

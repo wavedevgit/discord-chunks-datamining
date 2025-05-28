@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => v
 });
 var r, i = n(442837),
-  o = n(570140);
+  a = n(570140);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,7 +22,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -103,10 +103,10 @@ function g(e, t) {
   r.forEach(e => {
     t ? i.unlockedPowerups[e.sku_id] = e : delete i.unlockedPowerups[e.sku_id]
   });
-  let o = _(i.unlockedPowerups);
+  let a = _(i.unlockedPowerups);
   f = c(s({}, f), {
     [n]: c(s({}, i), {
-      appliedBoosts: o
+      appliedBoosts: a
     })
   })
 }
@@ -151,8 +151,8 @@ class O extends(r = i.ZP.PersistedStore) {
     return null != e && (null == (t = f[e]) ? void 0 : t.hasFetchedUnlockedPowerups) === !0
   }
 }
-a(O, "displayName", "GuildPowerupsStore"), a(O, "persistKey", "GuildPowerupsStore");
-let v = new O(o.Z, {
+o(O, "displayName", "GuildPowerupsStore"), o(O, "persistKey", "GuildPowerupsStore");
+let v = new O(a.Z, {
   LOGOUT: y,
   GUILD_POWERUP_CATALOG_FETCH_SUCCESS: h,
   GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS: m,

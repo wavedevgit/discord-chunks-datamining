@@ -36,7 +36,7 @@ function x() {
     children: [(0, i.jsx)(u.Z, {
       claimableRewards: j,
       maxRewardImageSrc: f.getImageUrl(x, t),
-      size: r.EFr.SIZE_32
+      size: r.EFr.SIZE_40
     }), (0, i.jsx)(r.Text, {
       variant: "text-md/medium",
       className: p.bannerText,

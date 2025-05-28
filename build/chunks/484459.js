@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(570140),
   i = n(232567),
-  o = n(220082),
-  a = n(275759),
+  a = n(220082),
+  o = n(275759),
   s = n(365943),
   l = n(592125),
   c = n(271383),
@@ -42,7 +42,7 @@ function _(e, t) {
     k = null == v ? null == A : null == C,
     M = !k && (N || x);
   if (!k && !M) return Promise.resolve();
-  (0, s.z)(), null != t && (0, o.vM)(t);
+  (0, s.z)(), null != t && (0, a.vM)(t);
   let j = {
     type: m,
     withMutualGuilds: g,
@@ -51,7 +51,7 @@ function _(e, t) {
     guildId: v,
     joinRequestId: S,
     abortSignal: T,
-    connectionsRoleId: null == v || null == (p = (0, a.Ur)({
+    connectionsRoleId: null == v || null == (p = (0, o.Ur)({
       guildMember: c.ZP.getMember(v, e),
       channel: l.Z.getChannel(I)
     })) ? void 0 : p.id

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  o = n(866442),
-  a = n(442837),
+  a = n(866442),
+  o = n(442837),
   s = n(481060),
   l = n(153867),
   c = n(230711),
@@ -30,7 +30,7 @@ function m(e) {
     setColors: y,
     setChassisMixAmount: O,
     setGradientAngle: v
-  } = (0, f.I)(), [I, S] = i.useState(null != (t = g[0]) ? t : "#0000FF"), [T] = (0, a.Wu)([d.Z], () => [d.Z.theme]), A = () => {
+  } = (0, f.I)(), [I, S] = i.useState(null != (t = g[0]) ? t : "#0000FF"), [T] = (0, o.Wu)([d.Z], () => [d.Z.theme]), A = () => {
     (0, l.ZI)({
       theme: T,
       customUserThemeSettings: {
@@ -60,7 +60,7 @@ function m(e) {
         children: "Select Color"
       }), (0, r.jsx)(s.Z$W, {
         className: h.themeColorPicker,
-        onChange: e => S((0, o.Rf)(e)),
+        onChange: e => S((0, a.Rf)(e)),
         value: I
       }), (0, r.jsx)(s.zxk, {
         onClick: () => y([...g, I]),

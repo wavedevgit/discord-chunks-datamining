@@ -8,8 +8,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  o = n(97613),
-  a = n.n(o),
+  a = n(97613),
+  o = n.n(a),
   s = n(481328),
   l = n(565945),
   c = n(381814),
@@ -115,18 +115,18 @@ let T = {
 function N() {
   let {
     reducedMotion: e
-  } = i.useContext(f.Sfi), t = e.enabled ? A : T, n = I(e => e.fullScreenLayers), o = n.map(e => ({
+  } = i.useContext(f.Sfi), t = e.enabled ? A : T, n = I(e => e.fullScreenLayers), a = n.map(e => ({
     item: e,
     nodeRef: i.createRef()
   }));
   return (0, r.jsx)(s.Z, {
-    children: o.map(e => {
+    children: a.map(e => {
       let {
         item: i,
-        nodeRef: o
+        nodeRef: a
       } = e;
       return (0, r.jsx)(l.Z, {
-        nodeRef: o,
+        nodeRef: a,
         classNames: t,
         timeout: v,
         onEntered: () => {
@@ -140,7 +140,7 @@ function N() {
         },
         unmountOnExit: !0,
         children: (0, r.jsx)(S, {
-          containerRef: o,
+          containerRef: a,
           item: i
         })
       }, i.key)
@@ -154,7 +154,7 @@ function C(e) {
       layerKey: n,
       Layer: r
     } = t,
-    i = null != n ? n : a()();
+    i = null != n ? n : o()();
   return (0, u.j)(() => {
     I.setState(t => ({
       fullScreenLayers: [...t.fullScreenLayers, {

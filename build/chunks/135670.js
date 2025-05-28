@@ -5,9 +5,9 @@ n.d(t, {
 }), n(415506), n(388685);
 var r = n(47770),
   i = n(46973),
-  o = n(65154);
+  a = n(65154);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,7 +32,7 @@ class c extends r.Z {
     return __OVERLAY__
   }
   supports(e) {
-    return e === o.AN.AUTO_ENABLE && __OVERLAY__
+    return e === a.AN.AUTO_ENABLE && __OVERLAY__
   }
   connect(e, t, n) {
     throw Error("NOT_IMPLEMENTED")
@@ -65,7 +65,7 @@ class c extends r.Z {
     return Promise.reject(Error("getCodecSurvey is not implemented for MediaEngineDummy"))
   }
   getAudioSubsystem() {
-    return o.iA.STANDARD
+    return a.iA.STANDARD
   }
   getAudioLayer() {
     return ""
@@ -76,7 +76,7 @@ class c extends r.Z {
     return !1
   }
   setDesktopSource(e) {
-    arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o.Yn.DEFAULT
+    arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.Yn.DEFAULT
   }
   setSoundshareSource(e, t, n) {}
   getDesktopSource() {
@@ -156,6 +156,6 @@ class c extends r.Z {
   setMaybePreprocessMute(e) {}
   setAudioInputBypassSystemProcessing(e) {}
   constructor(...e) {
-    super(...e), a(this, "Video", s), a(this, "Camera", l)
+    super(...e), o(this, "Video", s), o(this, "Camera", l)
   }
 }
