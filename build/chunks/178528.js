@@ -36,7 +36,7 @@ var i = n(255367),
   k = n(388032),
   D = n(506098);
 
-function R(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -45,14 +45,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      R(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -175,7 +175,7 @@ class L extends r.PureComponent {
           targetElementRef: this.settingsIconRef,
           position: "right",
           renderPopout: this.renderSettings,
-          children: e => (0, i.jsx)(I.ZP.Icon, A({
+          children: e => (0, i.jsx)(I.ZP.Icon, R({
             ref: this.settingsIconRef,
             icon: l.ewm,
             label: k.intl.string(k.t["3D5yo6"])
@@ -184,7 +184,7 @@ class L extends r.PureComponent {
       }) : null,
       children: [(0, i.jsx)("div", {
         className: D.channelList,
-        children: null != o ? (0, i.jsx)(m, (e = A({}, s), t = t = {
+        children: null != o ? (0, i.jsx)(m, (e = R({}, s), t = t = {
           guild: o,
           disableManageChannels: !0,
           onScroll: null != o && null != o.banner ? this.handleScroll : null
@@ -210,7 +210,7 @@ class L extends r.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), R(this, "settingsIconRef", r.createRef()), R(this, "state", {
+    super(...e), A(this, "settingsIconRef", r.createRef()), A(this, "state", {
       controller: new s.Controller({
         value: 1,
         immediate: !0
@@ -218,7 +218,7 @@ class L extends r.PureComponent {
       renderBanner: !1,
       bannerVisible: !1,
       communityInfoVisible: !1
-    }), R(this, "handleScroll", e => {
+    }), A(this, "handleScroll", e => {
       let {
         scrollTop: t
       } = e;
@@ -244,7 +244,7 @@ function M(e) {
       channelId: t
     } = e;
     return t
-  }), N = (0, o.e7)([C.Z], () => C.Z.getVoiceChannelId()), T = (0, o.e7)([x.Z], () => x.Z.getGuildVersion(n)), k = (0, o.e7)([g.Z], () => g.Z.version), D = (0, o.e7)([O.default], () => O.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? void 0 : r.id), A = (0, c.gM)(null == r ? void 0 : r.id), M = null != (t = null == r ? void 0 : r.hasFeature(w.oNc.COMMUNITY)) && t, z = (0, o.e7)([S.Z], () => S.Z.getChannelId()), V = (0, o.e7)([E.Z], () => E.Z.desyncedVoiceStatesCount);
+  }), N = (0, o.e7)([C.Z], () => C.Z.getVoiceChannelId()), T = (0, o.e7)([x.Z], () => x.Z.getGuildVersion(n)), k = (0, o.e7)([g.Z], () => g.Z.version), D = (0, o.e7)([O.default], () => O.default.getGuildChangeSentinel(n)), A = (0, a.QN)(null == r ? void 0 : r.id), R = (0, c.gM)(null == r ? void 0 : r.id), M = null != (t = null == r ? void 0 : r.hasFeature(w.oNc.COMMUNITY)) && t, z = (0, o.e7)([S.Z], () => S.Z.getChannelId()), V = (0, o.e7)([E.Z], () => E.Z.desyncedVoiceStatesCount);
   return (0, i.jsx)(L, {
     guildId: n,
     guild: r,
@@ -262,8 +262,8 @@ function M(e) {
     guildReadStateSentinel: D,
     permissionVersion: T,
     categoryCollapseVersion: k,
-    embeddedAppsByChannel: R,
-    activeEventsByChannel: A,
+    embeddedAppsByChannel: A,
+    activeEventsByChannel: R,
     showNewUnreadsBar: M,
     optInEnabled: !1
   })

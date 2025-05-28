@@ -208,7 +208,8 @@ function G(e) {
             color: "disconnect",
             applyStyles: ed,
             className: D.contextlessLeaveActivityButton,
-            iconClassName: D.contextlessLeaveActivityButtonIcon
+            iconClassName: D.contextlessLeaveActivityButtonIcon,
+            isActivityInCall: !1
           })]
         }) : null, (0, r.jsx)("div", {
           className: a()(D.activityContainer, {
@@ -253,7 +254,8 @@ function G(e) {
                 applicationId: V.id,
                 location: F,
                 centerButton: !0,
-                color: "disconnect"
+                color: "disconnect",
+                isActivityInCall: !1
               })
             })]
           }), (0, r.jsx)("div", {

@@ -35,8 +35,8 @@ var i = n(255367),
   T = n(981631),
   k = n(701488),
   D = n(987650),
-  R = n(388032),
-  A = n(172519);
+  A = n(388032),
+  R = n(172519);
 
 function L(e) {
   let {
@@ -49,43 +49,43 @@ function L(e) {
   if (null == o) return null;
   let p = o.getIconURL(k.Si.LARGE);
   return (0, i.jsxs)("div", {
-    className: A.header,
+    className: R.header,
     children: [(0, i.jsxs)("div", {
-      className: A.headerLeft,
+      className: R.headerLeft,
       children: [(0, i.jsx)(f.f, {
         src: p,
         size: 16
       }), (0, i.jsx)(a.Text, {
-        className: A.gameInfo,
+        className: R.gameInfo,
         variant: "text-sm/semibold",
         color: "header-primary",
         children: o.name
       })]
     }), (0, i.jsxs)("div", {
-      className: A.headerRight,
+      className: R.headerRight,
       children: [(0, i.jsx)(a.zxk, {
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
-        className: A.muteButton,
+        className: R.muteButton,
         onClick: u,
         children: c ? (0, i.jsx)(a.Dkj, {
           size: "xs",
           color: a.TVs.colors.WHITE,
-          className: A.muteIcon
+          className: R.muteIcon
         }) : (0, i.jsx)(a.owu, {
           size: "xs",
           color: a.TVs.colors.WHITE,
-          className: A.muteIcon
+          className: R.muteIcon
         })
       }), (0, i.jsx)(a.zxk, {
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
         onClick: s,
-        className: A.dismissButton,
+        className: R.dismissButton,
         children: (0, i.jsx)(a.CTb, {
           size: "xs",
           color: a.TVs.colors.WHITE,
-          className: A.dismissIcon
+          className: R.dismissIcon
         })
       })]
     })]
@@ -122,7 +122,7 @@ function M(e) {
           r = null != (i = C.Z.getChannel(e)) ? i : null;
         o()(null != r, "Send channel must be defined"), (0, E.uL)(T.Z5c.CHANNEL(r.guild_id, r.id)), await (0, y.p)({
           channel: r,
-          content: null != N ? N : R.intl.string(R.t.DwAcMz),
+          content: null != N ? N : A.intl.string(A.t.DwAcMz),
           entry: t,
           whenReady: !0
         }), d.Z.track(T.rMx.OVERLAY_GAME_INVITE_SENT, {
@@ -143,18 +143,18 @@ function M(e) {
     o()(null != n, "Send channel must be defined"), (0, E.uL)(T.Z5c.CHANNEL(n.guild_id, n.id))
   };
   return null == s ? null : (0, i.jsxs)("div", {
-    className: A.userRow,
+    className: R.userRow,
     children: [(0, i.jsx)(u.Z, {
-      className: A.avatarContainer,
+      className: R.avatarContainer,
       user: s,
       isMobile: k,
       status: D
     }), (0, i.jsxs)("div", {
-      className: A.userInfo,
+      className: R.userInfo,
       children: [(0, i.jsxs)("div", {
-        className: A.usernameWrapper,
+        className: R.usernameWrapper,
         children: [(0, i.jsx)(a.Text, {
-          className: A.username,
+          className: R.username,
           variant: "text-md/medium",
           color: "header-primary",
           children: P.ZP.getName(void 0, void 0, s)
@@ -170,11 +170,11 @@ function M(e) {
         })]
       })]
     }), (0, i.jsx)("div", {
-      className: A.inviteButtonWrapper,
+      className: R.inviteButtonWrapper,
       children: (0, i.jsx)(a.zxk, {
         submitting: "sending" === _,
         onClick: b ? M : L,
-        className: A.inviteButton,
+        className: R.inviteButton,
         color: a.Ttl.PRIMARY,
         look: "sent" === _ ? a.iLD.OUTLINED : a.iLD.FILLED,
         size: a.PhG.MAX,
@@ -195,11 +195,11 @@ function z(e) {
   let {
     onCancel: t,
     onSave: n
-  } = e, s = (0, l.e7)([I.default], () => I.default.customInviteMessage), o = r.useRef(null), [c, u] = r.useState(null != s ? s : R.intl.string(R.t.DwAcMz)), [h, p] = r.useState(c.length), f = e => {
+  } = e, s = (0, l.e7)([I.default], () => I.default.customInviteMessage), o = r.useRef(null), [c, u] = r.useState(null != s ? s : A.intl.string(A.t.DwAcMz)), [h, p] = r.useState(c.length), f = e => {
     e.stopPropagation(), d.Z.setInviteMessage(c), n(e)
   };
   return (0, i.jsxs)("div", {
-    className: A.editMessageContainer,
+    className: R.editMessageContainer,
     children: [(0, i.jsx)(a.oil, {
       autoFocus: !0,
       inputRef: o,
@@ -223,24 +223,24 @@ function z(e) {
       },
       value: c
     }), (0, i.jsxs)("div", {
-      className: A.editMessageButtons,
+      className: R.editMessageButtons,
       children: [(0, i.jsxs)(a.Text, {
-        className: A.charCount,
+        className: R.charCount,
         variant: "text-xs/normal",
         color: "header-muted",
         children: [h, "/", 99]
       }), (0, i.jsx)(a.zxk, {
         onClick: t,
-        className: A.cancelButton,
+        className: R.cancelButton,
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.TINY,
-        children: R.intl.string(R.t["ETE/oK"])
+        children: A.intl.string(A.t["ETE/oK"])
       }), (0, i.jsx)(a.zxk, {
         onClick: f,
         color: a.zxk.Colors.PRIMARY,
         look: a.zxk.Looks.FILLED,
         size: a.zxk.Sizes.TINY,
-        children: R.intl.string(R.t.R3BPHx)
+        children: A.intl.string(A.t.R3BPHx)
       })]
     })]
   })
@@ -249,19 +249,19 @@ function z(e) {
 function V(e) {
   let {
     entries: t
-  } = e, n = t.slice(0, 5), s = (0, l.e7)([I.default], () => I.default.customInviteMessage), o = R.intl.formatToPlainString(R.t["5uzKGB"], {
-    inviteMessage: null != s ? s : R.intl.string(R.t.DwAcMz)
+  } = e, n = t.slice(0, 5), s = (0, l.e7)([I.default], () => I.default.customInviteMessage), o = A.intl.formatToPlainString(A.t["5uzKGB"], {
+    inviteMessage: null != s ? s : A.intl.string(A.t.DwAcMz)
   }), [c, u] = r.useState(!1);
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(_.iz, {}), (0, i.jsxs)(a.Text, {
-      className: A.helpText,
+      className: R.helpText,
       variant: "text-sm/medium",
       color: "header-secondary",
       children: [o, (0, i.jsx)(a.zxk, {
         onClick: e => {
           e.stopPropagation(), u(!c), d.Z.setInstanceLocked(c)
         },
-        className: A.editButton,
+        className: R.editButton,
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
         children: (0, i.jsx)(a.vdY, {
