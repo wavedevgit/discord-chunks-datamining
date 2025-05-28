@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: c2af1cf7417a8b19
+  Original File Name: 02b184281ac04965
 **/
 .scroller__95bea {
     display: flex;
@@ -880,7 +880,8 @@
 }
 
 :where(.section_be87fd) {
-    color: var(--text-default)
+    color: var(--text-secondary);
+    gap: 4px
 }
 
 .empty_e766f2 {
@@ -1270,13 +1271,14 @@
 .profileScroller__9c3be {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     margin-top: -4px;
     padding-top: 4px
 }
 
-.profileHeading__9c3be {
-    color: var(--text-default)
+.profileRolesSection__9c3be {
+    color: var(--text-default);
+    gap: 4px
 }
 
 .profileAppConnections__9c3be {
@@ -1316,4 +1318,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=c2af1cf7417a8b19.css.map*/
+/*# sourceMappingURL=02b184281ac04965.css.map*/

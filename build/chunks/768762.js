@@ -2,10 +2,10 @@
 n.d(t, {
   Z: () => m
 });
-var r, o, i = n(255367),
+var o, r, i = n(255367),
   c = n(73800),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   s = n(481060),
   d = n(974393);
 let u = {
@@ -20,7 +20,7 @@ let u = {
     [u.DOWN]: d.down,
     [u.LEFT]: d.left
   };
-class p extends(o = c.PureComponent) {
+class p extends(r = c.PureComponent) {
   render() {
     let {
       direction: e,
@@ -29,15 +29,15 @@ class p extends(o = c.PureComponent) {
     return (0, i.jsx)(s.wj7, {
       size: "md",
       color: "currentColor",
-      className: l()(d.__invalid_arrow, t, {
+      className: a()(d.__invalid_arrow, t, {
         [f[e]]: !0
       })
     })
   }
-}(r = "Directions") in p ? Object.defineProperty(p, r, {
+}(o = "Directions") in p ? Object.defineProperty(p, o, {
   value: u,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : p[r] = u;
+}) : p[o] = u;
 let m = p
