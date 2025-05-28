@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => g
+  Z: () => h
 });
 var r, i, l, a = n(442837),
   o = n(570140),
@@ -21,7 +21,7 @@ i = "CodedLinkNativeAppStateStore", (r = "displayName") in d ? Object.defineProp
   configurable: !0,
   writable: !0
 }) : d[r] = i;
-let g = new d(o.Z, {
+let h = new d(o.Z, {
   NATIVE_APP_MODAL_OPENING: function(e) {
     let {
       code: t

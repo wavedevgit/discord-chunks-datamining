@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => g
+  Z: () => h
 });
 var r, i, l, a = n(442837),
   o = n(570140);
@@ -22,7 +22,7 @@ i = "HubEmailVerificationStore", (r = "displayName") in d ? Object.definePropert
   configurable: !0,
   writable: !0
 }) : d[r] = i;
-let g = new d(o.Z, {
+let h = new d(o.Z, {
   HUB_VERIFY_EMAIL_SUCCESS: function(e) {
     let {
       guildId: t

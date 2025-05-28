@@ -1,8 +1,8 @@
 /** Chunk was on 85342 **/
-n.d(t, {
+r.d(t, {
   P: () => i
 });
-let r = (0, n(818083).B)({
+let n = (0, r(818083).B)({
     kind: "user",
     label: "Pomelo Suggestions",
     id: "2023-04_pomelo_suggestions",
@@ -17,7 +17,7 @@ let r = (0, n(818083).B)({
       }
     }]
   }),
-  i = () => r.getCurrentConfig({
+  i = () => n.getCurrentConfig({
     location: "1907ae_1"
   }, {
     autoTrackExposure: !1

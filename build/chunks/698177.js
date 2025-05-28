@@ -11,8 +11,8 @@ var r = n(255367),
   c = n(144114),
   u = n(742458),
   d = n(541692),
-  g = n(952802),
-  h = n(388905),
+  h = n(952802),
+  g = n(388905),
   p = n(815660),
   m = n(388032),
   f = n(893354),
@@ -36,10 +36,10 @@ let x = () => {
     } finally {
       b(!1)
     }
-  }, P = (0, r.jsxs)(h.ZP, {
-    children: [(0, r.jsx)(h.Ee, {
+  }, P = (0, r.jsxs)(g.ZP, {
+    children: [(0, r.jsx)(g.Ee, {
       src: n(292824)
-    }), (0, r.jsxs)(h.Dx, {
+    }), (0, r.jsxs)(g.Dx, {
       className: a()(_.marginTop20, f.flex, f.justifyCenter, f.alignCenter),
       children: [m.intl.string(m.t.WWzQtb), (0, r.jsx)(s.owK, {
         size: "md",
@@ -48,15 +48,15 @@ let x = () => {
       })]
     })]
   });
-  return v ? P : (0, r.jsxs)(h.ZP, {
-    children: [(0, r.jsx)(h.Dx, {
+  return v ? P : (0, r.jsxs)(g.ZP, {
+    children: [(0, r.jsx)(g.Dx, {
       children: m.intl.string(m.t.o4JNrK)
-    }), (0, r.jsx)(h.DK, {
+    }), (0, r.jsx)(g.DK, {
       className: _.marginTop8,
       children: m.intl.string(m.t.y0tVbm)
-    }), (0, r.jsxs)(h.gO, {
+    }), (0, r.jsxs)(g.gO, {
       className: _.marginTop20,
-      children: [(0, r.jsx)(g.Z, {
+      children: [(0, r.jsx)(h.Z, {
         label: m.intl.string(m.t.eJnn09),
         alpha2: N.alpha2,
         countryCode: C,
@@ -66,19 +66,19 @@ let x = () => {
         onChange: t,
         forceMode: u.Nz.PHONE,
         error: O
-      }), (0, r.jsx)(h.II, {
+      }), (0, r.jsx)(g.II, {
         className: _.marginTop20,
         label: m.intl.string(m.t.OdzNbm),
         value: l,
         onChange: x,
         maxLength: p.z,
         error: y
-      }), (0, r.jsx)(h.zx, {
-        size: h.zx.Sizes.SMALL,
-        look: h.zx.Looks.LINK,
+      }), (0, r.jsx)(g.zx, {
+        size: g.zx.Sizes.SMALL,
+        look: g.zx.Looks.LINK,
         onClick: T,
         children: m.intl.string(m.t["5b60go"])
-      }), (0, r.jsx)(h.zx, {
+      }), (0, r.jsx)(g.zx, {
         className: _.marginTop20,
         onClick: A,
         submitting: E,

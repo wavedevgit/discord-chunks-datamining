@@ -1,6 +1,6 @@
 /**
   Module ID: 22274
-  Original File Name: 0931d62c262bc906
+  Original File Name: 357cbd431a05163e
 **/
 .container__2a3ed {
     border-radius: 8px;
@@ -110,7 +110,7 @@
     background-image: var(--custom-old-badge-color)
 }
 
-.playing__2a3ed .badgeText__2a3ed.old__2a3ed {
+.started__2a3ed .badgeText__2a3ed.old__2a3ed {
     animation: oldBadgeText__2a3ed .5s linear .5s forwards
 }
 
@@ -119,7 +119,7 @@
     opacity: 0
 }
 
-.playing__2a3ed .badgeText__2a3ed.new__2a3ed {
+.started__2a3ed .badgeText__2a3ed.new__2a3ed {
     animation: newBadgeText__2a3ed .15s linear 1.5s forwards
 }
 
@@ -142,7 +142,7 @@
     width: 100%
 }
 
-.playing__2a3ed .subscribedText__2a3ed {
+.started__2a3ed .subscribedText__2a3ed {
     animation: reveal__2a3ed 1s linear 3s forwards
 }
 
@@ -157,7 +157,7 @@
     width: 100%
 }
 
-.playing__2a3ed .actionButtons__2a3ed {
+.started__2a3ed .actionButtons__2a3ed {
     animation: reveal__2a3ed .5s linear forwards
 }
 
@@ -165,4 +165,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=0931d62c262bc906.css.map*/
+/*# sourceMappingURL=357cbd431a05163e.css.map*/

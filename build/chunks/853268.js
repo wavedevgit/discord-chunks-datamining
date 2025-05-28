@@ -18,11 +18,11 @@ function d(e) {
     onChange: n,
     subText: i,
     muted: d,
-    marginTopStyle: g,
-    subtextClassName: h
+    marginTopStyle: h,
+    subtextClassName: g
   } = e;
   return (0, r.jsx)(o.Z, {
-    className: null != g ? g : u.marginTop20,
+    className: null != h ? h : u.marginTop20,
     align: o.Z.Align.CENTER,
     children: (0, r.jsx)(a.XZJ, {
       value: t,
@@ -30,7 +30,7 @@ function d(e) {
       onChange: (e, t) => n(t),
       className: c.checkbox,
       children: (0, r.jsx)(s.i_, {
-        className: l()(h, {
+        className: l()(g, {
           [c.subText]: !d
         }),
         children: i

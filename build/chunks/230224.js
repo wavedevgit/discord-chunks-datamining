@@ -18,8 +18,8 @@ var r = n(255367),
   c = n(118012),
   u = n(925329),
   d = n(372769),
-  g = n(768581),
-  h = n(51144),
+  h = n(768581),
+  g = n(51144),
   p = n(245335),
   m = n(981631),
   f = n(888592),
@@ -95,7 +95,7 @@ function A(e) {
   let {
     invite: t,
     showBigUserIcon: n
-  } = e, l = i.useMemo(() => n ? null : v(t) && null != t.target_user ? g.ZP.getUserAvatarURL(t.target_user) : N(t) && null != t.inviter ? g.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), a = _.intl.string(_.t["3rE1Pz"]);
+  } = e, l = i.useMemo(() => n ? null : v(t) && null != t.target_user ? h.ZP.getUserAvatarURL(t.target_user) : N(t) && null != t.inviter ? h.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), a = _.intl.string(_.t["3rE1Pz"]);
   if (I(t)) {
     var c, u;
     a = (null == (c = t.channel) ? void 0 : c.name) != null && (null == (u = t.inviter) ? void 0 : u.username) != null ? _.intl.format(_.t.Lu4h19, {
@@ -104,7 +104,7 @@ function A(e) {
   } else v(t) && null != t.target_user ? a = _.intl.formatToPlainString(_.t.x2L32d, {
     username: t.target_user.username
   }) : y(t) ? a = _.intl.string(_.t["FDsl+P"]) : N(t) && null != t.inviter && (a = _.intl.format(_.t.spU2mJ, {
-    username: h.ZP.getFormattedName(t.inviter)
+    username: g.ZP.getFormattedName(t.inviter)
   }));
   return (0, r.jsxs)("div", {
     className: x.inviteJoinContainer,
@@ -126,13 +126,13 @@ function P(e) {
     user: l,
     guild: a,
     channel: u,
-    application: g,
+    application: h,
     showBigUserIcon: p
   } = e;
-  if (null != a) p && null == g && (t = (0, r.jsx)(s.Vj, {
+  if (null != a) p && null == h && (t = (0, r.jsx)(s.Vj, {
     guild: a,
     size: s.Vj.Sizes.SMALL
-  })), n = a.name, null != g && (n = g.name, i = (0, r.jsxs)("div", {
+  })), n = a.name, null != h && (n = h.name, i = (0, r.jsxs)("div", {
     className: x.inviteJoinContainer,
     children: [(0, r.jsx)(s.DK, {
       className: x.appIn,
@@ -153,13 +153,13 @@ function P(e) {
   }));
   else if (null != u) {
     if (null == l) throw Error("no inviter in group DM invite");
-    let e = h.ZP.getFormattedName(l);
+    let e = g.ZP.getFormattedName(l);
     null != u.name && "" !== u.name ? (n = u.name, null != u.icon && (t = (0, r.jsx)(s.MC, {
       channel: u,
       size: o.EFr.SIZE_32
     }))) : n = e
   } else if (null != l) {
-    let e = h.ZP.getFormattedName(l);
+    let e = g.ZP.getFormattedName(l);
     n = _.intl.formatToPlainString(_.t["4aF92d"], {
       username: e
     }), i = (0, r.jsx)(s.DK, {

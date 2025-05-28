@@ -1,5 +1,5 @@
 /** Chunk was on 85342 **/
-n.d(t, {
+r.d(t, {
   A: () => i
 });
-var r, i = ((r = {})[r.INFO = 0] = "INFO", r[r.EDIT_SCREEN = 1] = "EDIT_SCREEN", r[r.FINISH_LATER = 2] = "FINISH_LATER", r[r.SUGGESTIONS = 3] = "SUGGESTIONS", r)
+var n, i = ((n = {})[n.INFO = 0] = "INFO", n[n.EDIT_SCREEN = 1] = "EDIT_SCREEN", n[n.FINISH_LATER = 2] = "FINISH_LATER", n[n.SUGGESTIONS = 3] = "SUGGESTIONS", n)

@@ -11,9 +11,9 @@ var r = n(255367),
   c = n(477690),
   u = n(481060),
   d = n(624138),
-  g = n(749047);
+  h = n(749047);
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -85,7 +85,7 @@ let m = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
       }
       render() {
         return (0, r.jsx)("div", {
-          className: g.wrapper,
+          className: h.wrapper,
           children: (0, r.jsx)(u.Sfi.Consumer, {
             children: t => {
               let {
@@ -100,14 +100,14 @@ let m = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         })
       }
       constructor(...e) {
-        super(...e), h(this, "timeout", void 0), h(this, "anim", new o.Z.Value(f.START)), h(this, "state", {
+        super(...e), g(this, "timeout", void 0), g(this, "anim", new o.Z.Value(f.START)), g(this, "state", {
           shouldAnimate: !s.tq
-        }), h(this, "handleResize", () => {
+        }), g(this, "handleResize", () => {
           let e = window.innerWidth > m;
           !this.state.shouldAnimate && e && this.anim.setValue(f.END), this.setState({
             shouldAnimate: e
           })
-        }), h(this, "handleResizeDebounced", a()(this.handleResize, 60))
+        }), g(this, "handleResizeDebounced", a()(this.handleResize, 60))
       }
     }
   }

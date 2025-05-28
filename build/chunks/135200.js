@@ -1,12 +1,12 @@
 /** Chunk was on 85342 **/
-n.d(t, {
+r.d(t, {
   Z: () => f
 });
-var r, i, s, o = n(31775),
-  l = n.n(o),
-  a = n(442837),
-  c = n(570140),
-  u = n(70956);
+var n, i, o, s = r(31775),
+  l = r.n(s),
+  a = r(442837),
+  c = r(570140),
+  u = r(70956);
 let d = {
     taken: null,
     error: void 0,
@@ -36,7 +36,7 @@ let d = {
       }
     }
   };
-class m extends(s = a.ZP.Store) {
+class m extends(o = a.ZP.Store) {
   isRateLimited() {
     return null != g.retryAfterTime && Date.now() < g.retryAfterTime
   }
@@ -63,36 +63,36 @@ class m extends(s = a.ZP.Store) {
     return g.suggestions.migration.fetched
   }
 }
-i = "PomeloStore", (r = "displayName") in m ? Object.defineProperty(m, r, {
+i = "PomeloStore", (n = "displayName") in m ? Object.defineProperty(m, n, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : m[r] = i;
+}) : m[n] = i;
 let f = new m(c.Z, {
   POMELO_ATTEMPT_SUCCESS: function(e) {
     let {
       username: t,
-      taken: n
+      taken: r
     } = e;
     g.validations.set(t, {
-      taken: n
+      taken: r
     })
   },
   POMELO_ATTEMPT_FAILURE: function(e) {
     let {
       username: t,
-      error: n,
-      statusCode: r,
+      error: r,
+      statusCode: n,
       retryAfter: i
     } = e;
-    429 === r ? g.validations.set(t, {
+    429 === n ? g.validations.set(t, {
       taken: null,
-      error: n,
+      error: r,
       rateLimited: !0
     }, (null != i ? i : 7) * u.Z.Millis.SECOND) : g.validations.set(t, {
       taken: null,
-      error: n
+      error: r
     }), null != i && (g.retryAfterTime = Date.now() + i * u.Z.Millis.SECOND)
   },
   POMELO_SUGGESTIONS_RESET: function() {
@@ -129,11 +129,11 @@ let f = new m(c.Z, {
   POMELO_REGISTRATION_SUGGESTIONS_SUCCESS: function(e) {
     let {
       suggestion: t,
-      source: n
+      source: r
     } = e;
     g.suggestions.registration = {
       suggestion: t,
-      source: n,
+      source: r,
       fetched: !0
     }, (null == t ? void 0 : t.username) != null && g.validations.set(t.username, {
       taken: !1

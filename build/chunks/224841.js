@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => h
+  Z: () => g
 });
 var r = n(255367);
 n(73800);
@@ -12,16 +12,16 @@ var i = n(481060),
   c = n(981631),
   u = n(388032),
   d = n(963650);
-let g = () => (0, a.uL)(c.Z5c.LOGIN, {
+let h = () => (0, a.uL)(c.Z5c.LOGIN, {
     source: "age_gate_underage"
   }),
-  h = e => {
+  g = e => {
     let {
       authBoxClassName: t,
       underageMessage: a,
-      inUnclaimedFlowExperiment: h
+      inUnclaimedFlowExperiment: g
     } = e;
-    return h ? (0, r.jsx)(l.ZP, {
+    return g ? (0, r.jsx)(l.ZP, {
       children: (0, r.jsxs)("div", {
         className: d.contentContainer,
         children: [(0, r.jsx)(l.Dx, {
@@ -63,7 +63,7 @@ let g = () => (0, a.uL)(c.Z5c.LOGIN, {
         })
       }), (0, r.jsx)(i.zxk, {
         fullWidth: !0,
-        onClick: g,
+        onClick: h,
         children: u.intl.string(u.t.szzQ6O)
       })]
     })

@@ -11,8 +11,8 @@ var r = n(255367),
   c = n(479531),
   u = n(388905),
   d = n(585483),
-  g = n(573261),
-  h = n(720196),
+  h = n(573261),
+  g = n(720196),
   p = n(981631),
   m = n(388032),
   f = n(578605),
@@ -62,7 +62,7 @@ function x(e) {
               O(m.intl.string(m.t.R98xDw)), d.S.dispatch(p.CkL.WAVE_EMPHASIZE);
               return
             }
-            return null != S && y(null), null != I && O(null), t(""), v(!0), g.Z.post({
+            return null != S && y(null), null != I && O(null), t(""), v(!0), h.Z.post({
               url: p.ANM.ACCOUNT_REVERT,
               body: {
                 token: E,
@@ -78,7 +78,7 @@ function x(e) {
                   email: n
                 }
               } = e;
-              N(""), t(n), l(h.n.SUCCESS)
+              N(""), t(n), l(g.n.SUCCESS)
             }).catch(e => {
               if (e instanceof Error) y(m.intl.formatToPlainString(m.t.aTVNen, {
                 statusPageURL: p.yXt.STATUS
@@ -115,7 +115,7 @@ function x(e) {
       children: (0, r.jsx)(u.zx, {
         color: u.zx.Colors.PRIMARY,
         onClick: () => {
-          N(""), l(h.n.START)
+          N(""), l(g.n.START)
         },
         children: m.intl.string(m.t.rzxnQ0)
       })

@@ -11,8 +11,8 @@ var r = n(255367),
   c = n(893776),
   u = n(533307),
   d = n(978085),
-  g = n(232567),
-  h = n(388905),
+  h = n(232567),
+  g = n(388905),
   p = n(362762),
   m = n(108427),
   f = n(314897),
@@ -90,10 +90,10 @@ class P extends i.PureComponent {
     }) : e.isClaimed || i === N.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? C.intl.string(C.t.ilcBeX) : i === N.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? C.intl.string(C.t.ypuSd3) : void 0
   }
   renderSpinner(e) {
-    return (0, r.jsxs)(h.ZP, {
-      children: [(0, r.jsx)(h.Dx, {
+    return (0, r.jsxs)(g.ZP, {
+      children: [(0, r.jsx)(g.Dx, {
         children: e
-      }), (0, r.jsx)(h.Hh, {})]
+      }), (0, r.jsx)(g.Hh, {})]
     })
   }
   renderExpiredInvite() {
@@ -101,35 +101,35 @@ class P extends i.PureComponent {
       defaultRoute: e,
       transitionTo: t
     } = this.props;
-    return (0, r.jsxs)(h.ZP, {
-      children: [(0, r.jsx)(h.Ee, {
+    return (0, r.jsxs)(g.ZP, {
+      children: [(0, r.jsx)(g.Ee, {
         src: n(167969),
         className: T.marginBottom8
-      }), (0, r.jsx)(h.Dx, {
+      }), (0, r.jsx)(g.Dx, {
         className: a()(T.marginTop8, T.marginBottom8),
         children: C.intl.string(C.t.KPowgo)
-      }), (0, r.jsx)(h.DK, {
+      }), (0, r.jsx)(g.DK, {
         children: C.intl.string(C.t.j8734e)
-      }), (0, r.jsx)(h.zx, {
+      }), (0, r.jsx)(g.zx, {
         className: a()(T.marginTop40, T.marginBottom8),
         onClick: () => t(e),
         children: C.intl.string(C.t.fIv16O)
-      }), (0, r.jsx)(h.zx, {
+      }), (0, r.jsx)(g.zx, {
         onClick: () => window.open(I.Z.getArticleURL(N.BhN.GIFTING), "_blank"),
-        look: h.zx.Looks.LINK,
-        color: h.zx.Colors.LINK,
+        look: g.zx.Looks.LINK,
+        color: g.zx.Colors.LINK,
         children: C.intl.string(C.t["/CjuXF"])
       })]
     })
   }
   renderAppOpened() {
-    return (0, r.jsxs)(h.ZP, {
-      children: [(0, r.jsx)(h.Dx, {
+    return (0, r.jsxs)(g.ZP, {
+      children: [(0, r.jsx)(g.Dx, {
         className: T.marginBottom8,
         children: C.intl.string(C.t.csrAMD)
-      }), (0, r.jsx)(h.DK, {
+      }), (0, r.jsx)(g.DK, {
         children: C.intl.string(C.t["m1+IBg"])
-      }), (0, r.jsx)(h.zx, {
+      }), (0, r.jsx)(g.zx, {
         className: T.marginTop40,
         onClick: () => this.setState({
           continueOnWeb: !0
@@ -142,25 +142,25 @@ class P extends i.PureComponent {
     let {
       sentVerification: t
     } = this.state;
-    return (0, r.jsxs)(h.ZP, {
-      children: [(0, r.jsx)(h.Ee, {
+    return (0, r.jsxs)(g.ZP, {
+      children: [(0, r.jsx)(g.Ee, {
         src: n(892235),
         className: T.marginBottom8
-      }), (0, r.jsx)(h.Dx, {
+      }), (0, r.jsx)(g.Dx, {
         children: C.intl.format(C.t.ivLUf3, {
           username: e.username
         })
-      }), (0, r.jsx)(h.DK, {
+      }), (0, r.jsx)(g.DK, {
         className: T.marginTop20,
         children: C.intl.string(C.t["8Su18/"])
-      }), (0, r.jsx)(h.zx, {
+      }), (0, r.jsx)(g.zx, {
         disabled: t,
         className: T.marginTop40,
         onClick: this.handleResendVerification,
         children: t ? C.intl.string(C.t.CMa9Rk) : C.intl.string(C.t.lm1UKi)
-      }), (0, r.jsx)(h.zx, {
-        look: h.zx.Looks.LINK,
-        color: h.zx.Colors.LINK,
+      }), (0, r.jsx)(g.zx, {
+        look: g.zx.Looks.LINK,
+        color: g.zx.Colors.LINK,
         onClick: this.refreshUser,
         className: T.marginTop8,
         children: C.intl.string(C.t.Po9eBQ)
@@ -169,18 +169,18 @@ class P extends i.PureComponent {
   }
   renderAuthenticated(e, t) {
     let n = this.getErrorMessage(e);
-    return (0, r.jsxs)(h.ZP, {
+    return (0, r.jsxs)(g.ZP, {
       children: [(0, r.jsx)(S.Z, {
         giftCode: e
-      }), (0, r.jsx)(h.zx, {
+      }), (0, r.jsx)(g.zx, {
         disabled: null != n,
         className: T.marginTop40,
         onClick: this.handleAccept,
         children: C.intl.string(C.t.n6I6k5)
-      }), null != n ? (0, r.jsx)(h.DK, {
+      }), null != n ? (0, r.jsx)(g.DK, {
         className: T.marginTop20,
         children: n
-      }) : (0, r.jsx)(h.i_, {
+      }) : (0, r.jsx)(g.i_, {
         className: T.marginTop20,
         children: C.intl.format(C.t.NYM08v, {
           userTag: O.ZP.getUserTag(t),
@@ -236,7 +236,7 @@ class P extends i.PureComponent {
     }), A(this, "refreshUser", () => {
       this.setState({
         fetchingUser: !0
-      }), g.k({
+      }), h.k({
         withAnalyticsToken: !0
       }).then(e => this.setState({
         currentUser: e,
