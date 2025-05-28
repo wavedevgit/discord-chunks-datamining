@@ -114,15 +114,15 @@ function k(e) {
     data: K
   } = (0, f.IX)(Z), q = s.useMemo(() => null != K ? (0, g.y)(K, 100) : null, [K]), X = null != (n = null == z ? void 0 : z.deleted) && n, Q = null != z && (0, T.OL)(z), J = p.status === A.O0b.PAST_DUE, {
     analyticsLocations: $
-  } = (0, m.ZP)(), [ee] = (0, _.ED)({
+  } = (0, m.ZP)(), [ee, et] = (0, _.ED)({
     subscriptionId: p.id,
     renewal: !0,
     analyticsLocations: $,
     analyticsLocation: u.Z.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE
-  }), et = (0, I.p)(p.currentPeriodEnd), en = 0 === E;
+  }), en = (null == et ? void 0 : et.code) === 100062 && null != N && null == H, ei = (0, I.p)(p.currentPeriodEnd), er = 0 === E;
   return (0, r.jsxs)(l.l, {
     headerClassName: R.headerWrapper,
-    header: !1 === en ? (0, r.jsxs)(r.Fragment, {
+    header: !1 === er ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: R.headerContent,
         children: [null != q && (0, r.jsx)(c.Eep, {
@@ -142,7 +142,7 @@ function k(e) {
         })]
       }), (0, r.jsx)("div", {
         className: R.headerButtons,
-        children: null != K && null != k && null != z && (0, r.jsx)(U, {
+        children: null != K && null != k && null != z && !1 === en && (0, r.jsx)(U, {
           subscription: p,
           app: K,
           sku: z,
@@ -158,9 +158,14 @@ function k(e) {
     children: [W && (0, r.jsx)(M, {
       type: "warning",
       title: Q ? P.intl.formatToPlainString(P.t.QOnM19, {
-        subscriptionPeriodEnd: et
+        subscriptionPeriodEnd: ei
       }) : P.intl.formatToPlainString(P.t.HOaZu7, {
-        subscriptionPeriodEnd: et
+        subscriptionPeriodEnd: ei
+      })
+    }), en && (0, r.jsx)(M, {
+      type: "warning",
+      title: P.intl.formatToPlainString(P.t.HOaZu7, {
+        subscriptionPeriodEnd: ei
       })
     }), J && (0, r.jsx)(M, {
       type: "danger",
@@ -202,14 +207,14 @@ function k(e) {
         content: (0, I.p)(null != (d = p.createdAt) ? d : p.currentPeriodStart)
       }), (0, r.jsx)(L, {
         isCancelled: W,
-        subscriptionPeriodEnd: et,
+        subscriptionPeriodEnd: ei,
         renewalPlan: Y
       })]
     }), (0, r.jsxs)("div", {
       className: R.payment,
       children: [(0, r.jsx)(c.vwX, {
         children: P.intl.string(P.t.azZaZW)
-      }), null != ee && !(en || 2 === E) && (0, r.jsx)(x.Z, {
+      }), null != ee && !(er || 2 === E) && (0, r.jsx)(x.Z, {
         subscription: p,
         currentInvoicePreview: ee,
         disabled: X || W

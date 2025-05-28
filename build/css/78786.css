@@ -1,13 +1,18 @@
 /**
   Module ID: 78786
-  Original File Name: bcd085cfcdf9cc2e
+  Original File Name: 47f8b25cdc23d4b2
 **/
 .headerDescription_ababa2 {
     margin-left: 14px
 }
 
+.modalRoot_ababa2 {
+    overflow: hidden
+}
+
 .modalBody_ababa2 {
-    background-color: var(--background-secondary)
+    background-color: var(--background-secondary);
+    padding-top: 16px
 }
 
 .modalFooter_ababa2 {
@@ -15,11 +20,12 @@
 }
 
 .modalHeader_ababa2 {
-    background-color: var(--background-secondary-alt)
+    background-color: var(--background-secondary-alt);
+    padding-bottom: 16px
 }
 
 .noItemsSelected_ababa2 {
     text-align: center
 }
 
-/*# sourceMappingURL=bcd085cfcdf9cc2e.css.map*/
+/*# sourceMappingURL=47f8b25cdc23d4b2.css.map*/

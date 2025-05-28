@@ -26,14 +26,14 @@ function j(e) {
     activeSubscription: j,
     selectedSkuId: m,
     setSelectedPlanId: _,
-    startedPaymentFlowWithPaymentSourcesRef: L
+    startedPaymentFlowWithPaymentSourcesRef: g
   } = (0, u.JL)(), {
-    isGift: g
-  } = (0, c.wD)(), E = null != j ? (0, d.Af)(j) : null, y = null != E ? (0, d.gq)(E.planId) : null, S = null != E ? (0, d.Rd)(E.planId) : null, Z = (0, x.Kp)({
+    isGift: L
+  } = (0, c.wD)(), E = null != j ? (0, d.Af)(j) : null, y = null != E ? (0, d.gq)(E.planId) : null, S = null != E ? (0, d.Rd)(E.planId) : null, v = (0, x.Kp)({
     isTrial: !1,
-    isGift: g,
+    isGift: L,
     selectedSkuId: m,
-    startedPaymentFlowWithPaymentSources: L.current
+    startedPaymentFlowWithPaymentSources: g.current
   });
   return s()(null != S, "Expected premium type"), (0, i.jsx)(C.Z, {
     premiumType: S,
@@ -45,7 +45,7 @@ function j(e) {
       className: f.whatYouLoseButtonContainer,
       children: [(0, i.jsx)(a.zxk, {
         onClick: () => {
-          Z ? (_((0, x.nA)(m, j)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
+          v ? (_((0, x.nA)(m, j)), t(p.h8.REVIEW)) : t(p.h8.PLAN_SELECT)
         },
         children: h.intl.string(h.t["3PatS0"])
       }), (0, i.jsx)(a.zxk, {

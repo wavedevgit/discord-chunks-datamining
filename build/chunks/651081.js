@@ -14,12 +14,12 @@ var l = n(255367),
   m = n(410030),
   h = n(111028),
   _ = n(566006),
-  x = n(222677),
-  v = n(592125),
+  v = n(222677),
+  x = n(592125),
   j = n(594174),
   p = n(768581),
-  g = n(176354),
-  f = n(5192),
+  f = n(176354),
+  g = n(5192),
   C = n(91047),
   N = n(79390),
   T = n(918088),
@@ -51,14 +51,14 @@ function P() {
   })
 }
 
-function I(e) {
+function y(e) {
   var t;
   let {
     emoji: n,
     emojiSize: a,
     imageClassNames: s,
     textClassNames: r
-  } = e, i = null == n.id ? g.ZP.getURL(n.name) : p.ZP.getEmojiURL({
+  } = e, i = null == n.id ? f.ZP.getURL(n.name) : p.ZP.getEmojiURL({
     id: n.id,
     animated: null != (t = n.animated) && t,
     size: a
@@ -73,7 +73,7 @@ function I(e) {
   })
 }
 
-function y(e) {
+function I(e) {
   let {
     poll: t,
     reactionVoteCounts: n,
@@ -107,7 +107,7 @@ function y(e) {
         }),
         "aria-label": u,
         selectedItem: a,
-        children: [null != c ? (0, l.jsx)(I, {
+        children: [null != c ? (0, l.jsx)(y, {
           emoji: c,
           emojiSize: 16,
           imageClassNames: M.emoji,
@@ -137,7 +137,7 @@ function E(e) {
   let {
     user: t,
     channel: n
-  } = e, a = (0, i.e7)([j.default], () => j.default.getUser(t.id), [t]), s = f.ZP.useName(n.guild_id, n.id, t);
+  } = e, a = (0, i.e7)([j.default], () => j.default.getUser(t.id), [t]), s = g.ZP.useName(n.guild_id, n.id, t);
   return (0, l.jsxs)("div", {
     className: M.voterDefault,
     onContextMenu: e => (0, C.Pv)(e, t, n),
@@ -183,7 +183,7 @@ function L(e) {
   }), c = a.useRef(null), d = a.useRef(null), [m, h] = a.useState(!1), _ = a.useCallback(async () => {
     let e = d.current;
     h(!0);
-    let l = await x.U0({
+    let l = await v.U0({
       channelId: s.id,
       messageId: t.id,
       emoji: n.emoji,
@@ -196,7 +196,7 @@ function L(e) {
   (0, u.ZP)(() => {
     _()
   });
-  let v = a.useCallback(() => {
+  let x = a.useCallback(() => {
       let {
         current: e
       } = c;
@@ -226,7 +226,7 @@ function L(e) {
         user: a
       }, a.id)
     }, [s, m, r]),
-    g = a.useMemo(() => {
+    f = a.useMemo(() => {
       let e = [];
       return 0 === r.length && m ? e.push(0) : (e.push(r.length), i && e.push(1)), e
     }, [i, m, r.length]);
@@ -236,11 +236,11 @@ function L(e) {
       className: M.voters,
       fade: !0,
       ref: c,
-      sections: g,
+      sections: f,
       sectionHeight: 0,
       rowHeight: j,
       renderRow: p,
-      onScroll: i ? v : void 0
+      onScroll: i ? x : void 0
     })
   })
 }
@@ -252,9 +252,9 @@ function R(e) {
     initialAnswerId: s,
     onClose: r,
     transitionState: c
-  } = e, d = (0, i.e7)([v.Z], () => v.Z.getChannel(n.getChannelId())), [u, m] = a.useState(s), h = a.useMemo(() => {
+  } = e, d = (0, i.e7)([x.Z], () => x.Z.getChannel(n.getChannelId())), [u, m] = a.useState(s), h = a.useMemo(() => {
     if (null != n.reactions) return (0, T.ef)(n.reactions, u)
-  }, [n.reactions, u]), _ = a.useMemo(() => (0, N.cZ)(n.reactions), [n.reactions]), x = a.useMemo(() => (function(e) {
+  }, [n.reactions, u]), _ = a.useMemo(() => (0, N.cZ)(n.reactions), [n.reactions]), v = a.useMemo(() => (function(e) {
     let t = {};
     for (let a of e) {
       var n, l;
@@ -263,14 +263,14 @@ function R(e) {
       null != s && (t[s] = e)
     }
     return t
-  })(n.reactions), [n.reactions]), j = x[u], p = a.useMemo(() => {
+  })(n.reactions), [n.reactions]), j = v[u], p = a.useMemo(() => {
     var e;
     let t = {};
     return null == (e = n.poll) || e.answers.forEach(e => {
       var n;
       (null == e ? void 0 : e.answer_id) != null && (null == (n = e.poll_media) ? void 0 : n.text) != null && (t[e.answer_id] = e.poll_media.text)
     }), t
-  }, [null == (t = n.poll) ? void 0 : t.answers]), g = b.intl.formatToPlainString(b.t.wqBc7O, {
+  }, [null == (t = n.poll) ? void 0 : t.answers]), f = b.intl.formatToPlainString(b.t.wqBc7O, {
     numVotes: j,
     option: p[u]
   });
@@ -304,15 +304,15 @@ function R(e) {
       children: [(0, l.jsx)(o.Ttm, {
         className: M.scroller,
         fade: !0,
-        children: (0, l.jsx)(y, {
+        children: (0, l.jsx)(I, {
           poll: n.poll,
           selectedAnswerId: u,
           onSelectAnswer: m,
-          reactionVoteCounts: x
+          reactionVoteCounts: v
         })
       }), (0, l.jsx)(o.njP.Panel, {
         id: u,
-        "aria-label": g,
+        "aria-label": f,
         className: M.panel,
         children: null != h && j > 0 ? (0, l.jsx)(L, {
           message: n,

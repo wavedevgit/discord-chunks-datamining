@@ -1,6 +1,6 @@
 /**
   Module ID: 49286
-  Original File Name: dcf781193c4fa81c
+  Original File Name: 255eae3482e0e069
 **/
 .imageUploader_e4d0bf {
     font-size: 12px;
@@ -341,7 +341,11 @@
 
 .card_b44011 {
     border-color: var(--background-secondary-alt);
-    margin-bottom: 16px
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+    padding: 8px 16px
 }
 
 .card_b44011.inModal_b44011 {
@@ -2024,4 +2028,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=dcf781193c4fa81c.css.map*/
+/*# sourceMappingURL=255eae3482e0e069.css.map*/

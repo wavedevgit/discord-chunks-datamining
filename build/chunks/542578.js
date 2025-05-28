@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => E
-});
+}), n(388685);
 var r, i = n(442837),
   a = n(570140),
   o = n(41776),
@@ -27,7 +27,7 @@ class _ {
     return f[a] = null != (i = f[a]) ? i : new _
   }
   constructor() {
-    d(this, "users", void 0), d(this, "fetched", void 0), this.fetched = !1, this.users = {}
+    d(this, "users", void 0), d(this, "fetched", void 0), this.fetched = !1, this.users = new Map
   }
 }
 
@@ -45,8 +45,8 @@ function h(e) {
   } = e, o = _.ensure(n, i, a);
   if ("MESSAGE_REACTION_ADD" === t) {
     let e = u.default.getUser(r);
-    null != e && (o.users[r] = e)
-  } else delete o.users[r]
+    null != e && o.users.set(r, e)
+  } else o.users.delete(r)
 }
 
 function m(e) {
@@ -56,7 +56,7 @@ function m(e) {
     emoji: r,
     reactionType: i
   } = e, a = _.ensure(t, r, i);
-  n.forEach(e => a.users[e.id] = new l.Z(e))
+  n.forEach(e => a.users.set(e.id, new l.Z(e)))
 }
 class g extends(r = i.ZP.Store) {
   getReactions(e, t, n, r, i) {

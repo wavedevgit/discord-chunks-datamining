@@ -1,10 +1,12 @@
-/** Chunk was on 1272 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  k: () => l
+  Z: () => o,
+  k: () => a
 });
 var r = n(818083),
   i = n(987338);
-let l = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2025-06_payment_modal_nitro_rebrand_experiment",
   label: "Payment Modal Nitro Rebrand Experiment",
@@ -25,4 +27,15 @@ let l = (0, r.B)({
       enabled: !0
     }
   }]
-})
+});
+
+function o(e) {
+  let {
+    location: t
+  } = e;
+  return a.useExperiment({
+    location: t
+  }, {
+    autoTrackExposure: !0
+  }).enabled
+}

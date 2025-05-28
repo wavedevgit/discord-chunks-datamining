@@ -1,6 +1,6 @@
 /** Chunk was on 54433 **/
 n.d(t, {
-  q: () => g
+  q: () => L
 });
 var i = n(255367);
 n(73800);
@@ -20,9 +20,9 @@ var l = n(120356),
   j = n(48175),
   m = n(474936),
   _ = n(388032),
-  L = n(677163);
+  g = n(677163);
 
-function g(e) {
+function L(e) {
   let {
     handleStepChange: t,
     handleClose: n,
@@ -34,9 +34,9 @@ function g(e) {
     setSelectedPlanId: c,
     priceOptions: _
   } = (0, x.JL)(), {
-    isGift: L,
-    claimableRewards: g
-  } = (0, p.wD)(), y = L && null != g && g.length > 0, S = (0, C.N)(l), Z = (0, a.Nx)(), M = (0, o.Z)({
+    isGift: g,
+    claimableRewards: L
+  } = (0, p.wD)(), y = g && null != L && L.length > 0, S = (0, C.N)(l), v = (0, a.Nx)(), P = (0, o.Z)({
     location: "PremiumPaymentSelect"
   });
   return (0, i.jsx)(E, {
@@ -76,17 +76,17 @@ function g(e) {
       newSkuId: e,
       setSelectedSkuId: s,
       handleStepChange: t,
-      isGift: L,
+      isGift: g,
       userTrialOffer: S,
       startedPaymentFlowWithPaymentSources: d.current,
       setSelectedPlanId: c
     }),
     onClose: n,
-    isGift: L,
-    inOfferExperience: Z,
+    isGift: g,
+    inOfferExperience: v,
     priceOptions: _,
     showPromotionalGiftBanner: y,
-    enablePremiumRebrandDesign: M
+    enablePremiumRebrandDesign: P
   })
 }
 
@@ -108,24 +108,24 @@ function E(e) {
   });
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(r.xBx, {
-      className: s()(L.skuSelectModalHeader, {
-        [L.premiumRebrandHeader]: p
+      className: s()(g.skuSelectModalHeader, {
+        [g.premiumRebrandHeader]: p
       }),
       separator: !1,
       children: [x, (0, i.jsx)(r.olH, {
-        className: L.close,
-        innerClassName: L.closeInner,
+        className: g.close,
+        innerClassName: g.closeInner,
         onClick: n
       })]
     }), (0, i.jsxs)(r.hzk, {
-      className: s()(L.skuSelectModalContent, {
-        [L.modalSize]: !p,
-        [L.modalPadding]: a && !p,
-        [L.premiumRebrandContent]: p
+      className: s()(g.skuSelectModalContent, {
+        [g.modalSize]: !p,
+        [g.modalPadding]: a && !p,
+        [g.premiumRebrandContent]: p
       }),
       children: [(0, i.jsx)(d.Z, {
         fromBoostCancelModal: !1,
-        className: L.legacyPricingNotice
+        className: g.legacyPricingNotice
       }), (0, i.jsx)(c.Z, {
         onSelectSku: e => t((0, u.Wz)(e)),
         isGift: l,

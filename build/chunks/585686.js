@@ -22,7 +22,8 @@ function i(e) {
       return null != e.key && (null == e || null == (t = e.options) ? void 0 : t.useBreadcrumbLabel) != null
     }).map(e => ({
       id: e.key,
-      useBreadcrumbLabel: e.options.useBreadcrumbLabel
+      useBreadcrumbLabel: e.options.useBreadcrumbLabel,
+      sectionHeaderText: e.options.sectionHeaderText
     })).sort((e, t) => null != i ? i.indexOf(e.id) - i.indexOf(t.id) : 0),
     previousStepRef: s
   }
