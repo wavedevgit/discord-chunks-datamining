@@ -97,6 +97,7 @@ class _ extends(r = a.PureComponent) {
       children: r
     } = this.props, a = [0, 1], s = ["0px", "1px"], l = o.Z.accelerate(u({
       pointerEvents: e ? "none" : "auto",
+      cursor: e ? "grabbing" : "grab",
       transform: [{
         translateX: t.x.interpolate({
           inputRange: a,

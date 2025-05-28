@@ -160,7 +160,8 @@ function R(e) {
             })
           }), (null == M ? void 0 : M.profileEffectId) != null && (0, r.jsx)(h.Z, {
             profileEffectId: null == M ? void 0 : M.profileEffectId,
-            isHovering: F
+            isHovering: F,
+            urlQueryString: "dmView"
           })]
         })
       })
