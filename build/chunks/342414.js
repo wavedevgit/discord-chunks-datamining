@@ -79,7 +79,7 @@ let M = () => {
       cohort: t
     } = e;
     return t === C.XS.Control ? (0, i.jsx)("div", {
-      className: Z.buttonContainer,
+      className: Z.premiumSubscribeButton,
       children: (0, i.jsx)(N.Z, {
         showGradient: !0,
         color: a.Ttl.BRAND,
@@ -112,9 +112,10 @@ let M = () => {
         children: [d, (0, i.jsx)(a.X6q, {
           variant: "display-lg",
           color: "always-white",
+          className: Z.header,
           children: c
         }), (0, i.jsxs)("div", {
-          className: Z.buttonContainer,
+          className: Z.heroHeadingOriginalButtonContainer,
           children: [O && (0, i.jsx)(T.Z, {
             color: a.Ttl.BRAND,
             className: s()(Z.button, Z.subscribeButton),
@@ -153,6 +154,7 @@ let M = () => {
           children: [o, (0, i.jsx)(a.X6q, {
             variant: "display-lg",
             color: "always-white",
+            className: Z.header,
             children: l
           }), s && U({
             cohort: n
@@ -180,6 +182,7 @@ let M = () => {
           children: (0, i.jsx)(a.X6q, {
             variant: "display-lg",
             color: "always-white",
+            className: Z.header,
             children: n
           })
         }), U({

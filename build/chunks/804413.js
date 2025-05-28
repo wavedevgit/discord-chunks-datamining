@@ -1,18 +1,24 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => s
-}), n(388685);
-var i = n(848572),
-  r = n(474936);
+  Z: () => l
+});
+var i = n(792481),
+  r = n(848572),
+  s = n(474936);
 
-function s() {
-  let e = (0, i.GG)();
+function l() {
+  let e = (0, r.GG)(),
+    t = i.X.useExperiment({
+      location: "useRecentlyLeveledTenureBadge"
+    }).bypassTimeLimit;
   if (null == e) return null;
-  let t = new Date().getTime();
-  for (let n of Object.values(r.vK)) {
-    let i = new Date(e);
-    if (i.setMonth(e.getMonth() + n.tenureReqNumMonths), i.setHours(i.getHours() + 30), t < i.getTime()) break;
-    if (t - i.getTime() < 6048e5) return n.id
+  let n = new Date().getTime();
+  for (let i = s.Qh.length - 1; i >= 0; i--) {
+    let r = s.vK[s.Qh[i]],
+      l = new Date(e);
+    if (l.setMonth(e.getMonth() + r.tenureReqNumMonths), l.setHours(l.getHours() + 30), n > l.getTime())
+      if (n - l.getTime() < 6048e5 || t) return r.id;
+      else break
   }
   return null
 }
