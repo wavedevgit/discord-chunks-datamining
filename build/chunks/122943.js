@@ -67,54 +67,46 @@ function I(e) {
     iconClassName: b,
     hideText: O = !1,
     hideTooltip: I = !1,
-    canTruncate: S = !0
-  } = e, T = (0, l.vjg)(l.Skl.ONLINE), A = (0, d.ZP)(t), N = t.isDM() || t.isGroupDM(), {
-    enableTopNavButton: C
+    canTruncate: S = !0,
+    showChannelName: T = !1
+  } = e, A = (0, l.vjg)(l.Skl.ONLINE), N = (0, d.ZP)(t), C = t.isDM() || t.isGroupDM(), {
+    enableTopNavButton: P
   } = (0, f.Cq)({
     location: "VoiceActivityStatus"
-  }), {
-    analyticsLocations: P
-  } = (0, c.ZP)(), R = i.useCallback(() => {
+  }), R = !P && T, {
+    analyticsLocations: w
+  } = (0, c.ZP)(), D = i.useCallback(() => {
     (0, p.A)({
-      analyticsLocations: P,
+      analyticsLocations: w,
       activityType: "VOICE",
       voiceChannelId: t.id
     })
-  }, [P, t.id]), w = () => I || N ? (0, r.jsx)(_.Z, {
+  }, [w, t.id]), L = () => I || C ? (0, r.jsx)(_.Z, {
     size: "custom",
-    color: T,
+    color: A,
     channel: t,
     className: o()(E.icon, b)
   }) : (0, r.jsx)(l.ua7, {
-    text: A,
+    text: N,
     "aria-label": (0, u.ZP)({
       channel: t
     }),
     delay: m.X,
-    onTooltipShow: R,
+    onTooltipShow: D,
     children: e => (0, r.jsx)(_.Z, v(y({}, e), {
       size: "custom",
       color: s.Z.colors.STATUS_POSITIVE,
       channel: t,
       className: o()(E.icon, b)
     }))
-  }), D = () => {
-    let e = {
+  }), x = () => P ? N : C ? g.intl.string(g.t["9FaEzs"]) : t.isGuildStageVoice() ? g.intl.string(g.t.QygGCA) : g.intl.string(g.t.msxteH);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [L(), !O && (0, r.jsxs)(h.Z, {
       variant: n,
       className: a,
-      canTruncate: S
-    };
-    return C ? (0, r.jsx)(h.Z, v(y({}, e), {
-      children: A
-    })) : N ? (0, r.jsx)(h.Z, v(y({}, e), {
-      children: g.intl.string(g.t["9FaEzs"])
-    })) : t.isGuildStageVoice() ? (0, r.jsx)(h.Z, v(y({}, e), {
-      children: g.intl.string(g.t.QygGCA)
-    })) : (0, r.jsx)(h.Z, v(y({}, e), {
-      children: g.intl.string(g.t.msxteH)
-    }))
-  };
-  return (0, r.jsxs)(r.Fragment, {
-    children: [w(), !O && D()]
+      canTruncate: S,
+      hideTooltip: I,
+      children: [x(), R && null != N && " (".concat(N, ")")]
+    })]
   })
 }

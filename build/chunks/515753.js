@@ -330,7 +330,6 @@ function ec(e) {
     voiceChannel: y,
     applicationStream: x,
     animateEmoji: K || eo,
-    animateText: K || eo,
     textClassName: J.activityStatusText,
     iconClassName: eT ? J.mutedIcon : void 0
   }) : null, eF = () => {

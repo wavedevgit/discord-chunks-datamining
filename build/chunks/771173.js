@@ -50,12 +50,9 @@ function u(e, t) {
 
 function d(e) {
   var {
-    location: t,
-    animateText: n
-  } = e, s = c(e, ["location", "animateText"]);
+    location: t
+  } = e, n = c(e, ["location"]);
   return (0, i.b)({
     location: t
-  }) ? (0, r.jsx)(o.Z, l({
-    animateText: n
-  }, s)) : (0, r.jsx)(a.Z, l({}, s))
+  }) ? (0, r.jsx)(o.Z, l({}, n)) : (0, r.jsx)(a.Z, l({}, n))
 }

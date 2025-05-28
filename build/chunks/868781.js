@@ -70,6 +70,7 @@ function E(e) {
       variant: n,
       className: a,
       canTruncate: b,
+      hideTooltip: E,
       children: T
     })]
   })

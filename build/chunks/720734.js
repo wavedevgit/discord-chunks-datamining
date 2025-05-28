@@ -340,8 +340,7 @@ class tu extends r.PureComponent {
         applicationStream: n,
         voiceChannel: a ? o : void 0,
         textClassName: tn.activityStatusText,
-        hideTooltip: !0,
-        disableTextScroll: !0
+        hideTooltip: !0
       })
     });
     let u = null == t ? void 0 : t.find(e => {

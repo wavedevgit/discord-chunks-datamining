@@ -80,11 +80,10 @@ function m(e) {
   return (0, r.jsx)(o.xv, _(d({
     variant: i,
     color: "none",
-    className: a()(f ? c.truncated : c.untruncated, n)
+    className: a()(f && c.truncated, n)
   }, h), {
-    children: f ? (0, r.jsx)(s.Z, {
+    children: f && !u ? (0, r.jsx)(s.Z, {
       delay: l.X,
-      shouldShow: !u,
       children: t
     }) : t
   }))

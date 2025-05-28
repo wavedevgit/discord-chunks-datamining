@@ -258,7 +258,6 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       applicationStream: s,
       voiceChannel: l,
       animateEmoji: d,
-      animateText: d,
       hideEmoji: m,
       hasQuest: null != _,
       hideTooltip: n

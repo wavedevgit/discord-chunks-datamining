@@ -223,7 +223,6 @@ function Z(e) {
     activities: l,
     applicationStream: a,
     voiceChannel: f,
-    disableTextScroll: !0,
     hideTooltip: !0
   }) : null
 }

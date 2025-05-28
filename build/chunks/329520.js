@@ -56,6 +56,7 @@ function m(e) {
       variant: m,
       className: g,
       canTruncate: v,
+      hideTooltip: O,
       children: C
     })]
   })
