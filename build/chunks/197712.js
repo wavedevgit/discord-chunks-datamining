@@ -43,7 +43,9 @@ async function o(e) {
             "string" == typeof n ? e(n) : e("")
           }, t.readAsDataURL(i)
         }))), p.terminate()
-      } else n.type === a.u.CROP_GIF_ERROR && (t(Error("Error cropping GIF")), p.terminate())
+      } else n.type === a.u.CROP_GIF_ERROR && (t(Error("Error cropping GIF", {
+        cause: null == n ? void 0 : n.error
+      })), p.terminate())
     }
   });
   return p.postMessage({

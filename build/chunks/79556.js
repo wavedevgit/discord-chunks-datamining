@@ -206,7 +206,7 @@ class k extends P.ZP {
       } = this.props, {
         shouldShowActivities: l
       } = this.state;
-      return null != i && i.length > 0 && l && !n ? (0, r.jsx)(N.Z, {
+      return t.isModeratorReportChannel() ? null : null != i && i.length > 0 && l && !n ? (0, r.jsx)(N.Z, {
         onAction: this.handleActivitiesPopoutClose,
         channel: t
       }) : (0, r.jsx)(x.Z, L(D({}, e), {
