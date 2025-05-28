@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => E
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(184301),
   _ = n(502762),
   x = n(271383),
-  C = n(594174),
-  y = n(189357),
+  y = n(594174),
+  C = n(189357),
   v = n(718617),
   j = n(327250),
   O = n(50767);
@@ -33,9 +33,9 @@ function E(e) {
     className: E,
     infoPanelClassName: I,
     style: P
-  } = e, S = (0, y.m)(n), Z = (0, o.e7)([C.default], () => C.default.getUser(t), [t]), N = (0, o.e7)([x.ZP], () => x.ZP.getMember(n, t), [n, t]), [T, A] = i.useState(null == Z || null == N), w = (0, u.Z)(N), R = i.useRef(null), {
-    analyticsLocations: M
-  } = (0, f.ZP)(h.Z.GUILD_MEMBER_MOD_VIEW), k = (0, g.ZP)(t, n), L = (0, d.ZP)();
+  } = e, S = (0, C.m)(n), Z = (0, o.e7)([y.default], () => y.default.getUser(t), [t]), N = (0, o.e7)([x.ZP], () => x.ZP.getMember(n, t), [n, t]), [T, A] = i.useState(null == Z || null == N), w = (0, u.Z)(N), R = i.useRef(null), {
+    analyticsLocations: k
+  } = (0, f.ZP)(h.Z.GUILD_MEMBER_MOD_VIEW), M = (0, g.ZP)(t, n), L = (0, d.ZP)();
   return (i.useEffect(() => {
     S || l()
   }, [S, l]), i.useEffect(() => {
@@ -65,13 +65,13 @@ function E(e) {
       type: T ? s.$jN.Type.SPINNING_CIRCLE : s.$jN.Type.CHASING_DOTS
     })
   }) : (0, r.jsx)(f.Gt, {
-    value: M,
+    value: k,
     children: (0, r.jsx)("div", {
       className: a()(O.sidebarContainer, E),
       style: P,
       children: (0, r.jsx)(_.Z, {
         user: Z,
-        displayProfile: k,
+        displayProfile: M,
         themeType: null,
         themeOverride: L,
         forceShowPremium: !0,

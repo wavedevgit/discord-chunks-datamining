@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   h: () => d
 }), n(388685);
@@ -19,16 +19,16 @@ function d(e) {
     renderComponent: p,
     nudgeAlignIntoViewport: h = !1,
     skipForceHide: f = !1
-  } = e, m = i.useContext(c.h9), [g, b] = i.useState(""), [_, x] = i.useState(!1), C = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), y = i.useRef(null), v = i.useRef(0);
+  } = e, m = i.useContext(c.h9), [g, b] = i.useState(""), [_, x] = i.useState(!1), y = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), C = i.useRef(null), v = i.useRef(0);
   i.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("click", d), () => e.removeEventListener("click", d)
   }), i.useEffect(() => {
     if (!f) {
       var e, t;
-      b(String(v.current)), x(void 0 !== C && C < (null != (t = null == (e = y.current) ? void 0 : e.clientHeight) ? t : 300) + 24), v.current += 1
+      b(String(v.current)), x(void 0 !== y && y < (null != (t = null == (e = C.current) ? void 0 : e.clientHeight) ? t : 300) + 24), v.current += 1
     }
-  }, [C, y, f]);
+  }, [y, C, f]);
   let {
     preventIdle: j,
     allowIdle: O
@@ -42,7 +42,7 @@ function d(e) {
       positionKey: g,
       nudgeAlignIntoViewport: h,
       children: () => (0, r.jsx)("div", {
-        ref: y,
+        ref: C,
         onMouseOver: j,
         onFocus: j,
         onBlur: O,

@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => I
 });
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(51144),
   _ = n(967128),
   x = n(981631),
-  C = n(388032),
-  y = n(128337);
+  y = n(388032),
+  C = n(128337);
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -60,7 +60,7 @@ function O(e) {
     userId: p,
     channel: _
   } = e, x = i.useRef(null), {
-    analyticsLocations: C
+    analyticsLocations: y
   } = (0, d.ZP)(u.Z.USERNAME), O = (0, o.e7)([g.default], () => g.default.getUser(p)), E = (0, o.e7)([m.ZP], () => null != p ? m.ZP.getMember(_.guild_id, p) : null), I = (0, h.X)(_.guild_id, null == E ? void 0 : E.colorStrings);
 
   function P(e) {
@@ -79,10 +79,10 @@ function O(e) {
   let S = null != (l = null != (t = null == E ? void 0 : E.nick) ? t : b.ZP.getName(O)) ? l : "???",
     Z = null == E ? void 0 : E.colorString;
   return null == O ? (0, r.jsx)("span", {
-    className: a()(y.threadCreatorName, y.unknownCreatorName),
+    className: a()(C.threadCreatorName, C.unknownCreatorName),
     children: S
   }) : (0, r.jsx)(d.Gt, {
-    value: C,
+    value: y,
     children: (0, r.jsx)(f.Z, {
       targetElementRef: x,
       user: O,
@@ -93,7 +93,7 @@ function O(e) {
       children: e => (0, r.jsx)(s.P3F, j(v({}, e), {
         innerRef: x,
         tag: "span",
-        className: y.threadCreatorName,
+        className: C.threadCreatorName,
         onContextMenu: P,
         children: (0, r.jsx)(s.PUh, {
           name: S,
@@ -120,8 +120,8 @@ function E(e) {
       variant: "text-md/normal",
       color: "header-secondary",
       children: (0, r.jsx)("div", {
-        className: y.subtitle,
-        children: C.intl.format(C.t.imPXd3, {
+        className: C.subtitle,
+        children: y.intl.format(y.t.imPXd3, {
           usernameHook: (e, n) => (0, r.jsx)(O, {
             userId: t.ownerId,
             channel: t
@@ -131,7 +131,7 @@ function E(e) {
     }), t.type === x.d4z.PRIVATE_THREAD ? (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: C.intl.string(C.t["1awbZG"])
+      children: y.intl.string(y.t["1awbZG"])
     }) : null]
   })
 }
@@ -144,9 +144,9 @@ function I(e) {
   return (0, r.jsxs)(_.ZP, {
     channelId: n.id,
     children: [(0, r.jsx)("div", {
-      className: y.iconWrapper,
+      className: C.iconWrapper,
       children: (0, r.jsx)(i, {
-        className: y.icon
+        className: C.icon
       })
     }), (0, r.jsx)(_.Ot, {
       children: n.name

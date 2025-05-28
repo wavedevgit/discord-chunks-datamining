@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => V
 }), n(388685);
@@ -20,8 +20,8 @@ var i = n(120356),
   b = n(854698),
   _ = n(897669),
   x = n(665149),
-  C = n(984370),
-  y = n(910611),
+  y = n(984370),
+  C = n(910611),
   v = n(454585),
   j = n(134483),
   O = n(210975),
@@ -35,8 +35,8 @@ var i = n(120356),
   A = n(339340),
   w = n(354459),
   R = n(981631),
-  M = n(231338),
-  k = n(388032),
+  k = n(231338),
+  M = n(388032),
   L = n(610633),
   D = n(73433);
 
@@ -176,13 +176,13 @@ function V(e) {
   } = (0, a.cj)([P.Z], () => ({
     focusedParticipant: P.Z.getSelectedParticipant(t.id),
     participantsOpen: P.Z.getParticipantsOpen(t.id)
-  }), [t.id]), b = (0, h.ZP)(t), _ = (0, f.KS)(t), [E] = (0, d.Z)((null == g ? void 0 : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), I = k.intl.string(k.t.BVZqJi);
-  t.isDM() ? I = k.intl.string(k.t.jN2DfX) : t.isGroupDM() && (I = k.intl.string(k.t["e5y+go"]));
+  }), [t.id]), b = (0, h.ZP)(t), _ = (0, f.KS)(t), [E] = (0, d.Z)((null == g ? void 0 : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), I = M.intl.string(M.t.BVZqJi);
+  t.isDM() ? I = M.intl.string(M.t.jN2DfX) : t.isGroupDM() && (I = M.intl.string(M.t["e5y+go"]));
   let Z = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     T = t.isGuildVoice() && c && null != Z && Z.length > 0,
     G = (0, S.ZP)(t),
     F = T ? (0, r.jsx)(o.ua7, {
-      text: k.intl.string(k.t.Mgpxi4),
+      text: M.intl.string(M.t.Mgpxi4),
       delay: 500,
       position: "bottom",
       shouldShow: G,
@@ -227,9 +227,9 @@ function V(e) {
   return (0, r.jsxs)("div", {
     className: L.subtitleContainer,
     children: [(0, r.jsx)(o.f6W, {
-      theme: M.BR.DARK,
+      theme: k.BR.DARK,
       children: e => (0, r.jsxs)(x.ZP, {
-        onDoubleClick: C.O,
+        onDoubleClick: y.O,
         transparent: !0,
         className: e,
         childrenBottom: F,
@@ -248,16 +248,16 @@ function V(e) {
         }) : null, (0, r.jsx)(x.ZP.Title, {
           children: (0, r.jsxs)(r.Fragment, {
             children: [b, z && (0, r.jsx)(o.ua7, {
-              text: k.intl.string(k.t.QyZ4TU),
+              text: M.intl.string(M.t.QyZ4TU),
               children: e => (0, r.jsx)(o.tQf, B(U({}, e), {
                 size: "xs",
-                "aria-label": k.intl.string(k.t.VHXh8f),
+                "aria-label": M.intl.string(M.t.VHXh8f),
                 color: o.TVs.colors.INTERACTIVE_NORMAL,
                 className: L.secureFramesIcon
               }))
             })]
           })
-        }), (0, r.jsx)(y.TS, {
+        }), (0, r.jsx)(C.TS, {
           channel: t,
           guild: i
         }), (0, r.jsx)(H, {

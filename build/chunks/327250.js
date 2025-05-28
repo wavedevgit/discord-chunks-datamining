@@ -1,6 +1,6 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
-  ZP: () => k
+  ZP: () => M
 });
 var r = n(255367);
 n(73800);
@@ -20,8 +20,8 @@ var i = n(120356),
   b = n(592125),
   _ = n(271383),
   x = n(430824),
-  C = n(496675),
-  y = n(158776),
+  y = n(496675),
+  C = n(158776),
   v = n(944486),
   j = n(885110),
   O = n(594174),
@@ -69,7 +69,7 @@ function w(e) {
     user: t,
     guildId: n,
     onClose: i
-  } = e, l = t.id, s = (0, a.e7)([j.Z, y.Z, g.default], () => l === g.default.getId() ? j.Z.getStatus() : y.Z.getStatus(l, n), [l, n]);
+  } = e, l = t.id, s = (0, a.e7)([j.Z, C.Z, g.default], () => l === g.default.getId() ? j.Z.getStatus() : C.Z.getStatus(l, n), [l, n]);
   return (0, r.jsxs)("div", {
     className: N.topRow,
     children: [(0, r.jsxs)("div", {
@@ -161,19 +161,19 @@ function R(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     user: t,
     member: i,
     guildId: l
   } = e, m = (0, a.e7)([x.Z], () => x.Z.getGuild(l)), {
     canKickUser: _,
-    canBanUser: y,
+    canBanUser: C,
     canModerateMembers: j
-  } = (0, a.cj)([C.Z, O.default, x.Z], () => ({
+  } = (0, a.cj)([y.Z, O.default, x.Z], () => ({
     canKickUser: (0, h.BK)(t, m),
     canBanUser: (0, h.mm)(t, m),
-    canModerateMembers: null != m && (0, p.F)(m.id, t.id, [O.default, x.Z, C.Z])
+    canModerateMembers: null != m && (0, p.F)(m.id, t.id, [O.default, x.Z, y.Z])
   }), [t, m]), I = (0, u.b)(i), {
     analyticsLocations: P,
     newestAnalyticsLocation: S
@@ -181,7 +181,7 @@ function M(e) {
     targetUserId: t.id,
     location: S,
     locations: P
-  }), M = (0, a.e7)([g.default], () => g.default.getId() === (null == t ? void 0 : t.id)), k = (0, a.e7)([v.Z, b.Z], () => {
+  }), k = (0, a.e7)([g.default], () => g.default.getId() === (null == t ? void 0 : t.id)), M = (0, a.e7)([v.Z, b.Z], () => {
     var e;
     let t = v.Z.getChannelId(l);
     return null != t && (null == (e = b.Z.getChannel(t)) ? void 0 : e.isModeratorReportChannel()) != null ? t : void 0
@@ -189,7 +189,7 @@ function M(e) {
   return (0, r.jsxs)("div", {
     className: N.bottomRow,
     children: [(0, r.jsx)(R, {
-      disabled: M,
+      disabled: k,
       text: Z.intl.string(Z.t["g33r/P"]),
       onClick: () => {
         s.Z.openPrivateChannel({
@@ -214,7 +214,7 @@ function M(e) {
             location: S,
             guildId: l,
             user: t,
-            modReportId: k
+            modReportId: M
           }))
         })
       },
@@ -225,7 +225,7 @@ function M(e) {
         color: o.TVs.colors.TEXT_NORMAL.css
       })
     }), (0, r.jsx)(R, {
-      disabled: !y,
+      disabled: !C,
       text: Z.intl.string(Z.t["5MBJ5O"]),
       onClick: () => {
         (0, o.ZDy)(async () => {
@@ -236,7 +236,7 @@ function M(e) {
             location: S,
             guildId: l,
             user: t,
-            modReportId: k
+            modReportId: M
           }))
         })
       },
@@ -258,7 +258,7 @@ function M(e) {
           guildId: i.guildId,
           userId: i.userId,
           anaylticsLocations: P,
-          modReportId: k
+          modReportId: M
         })
       },
       children: (0, r.jsx)(o.YlB, {
@@ -283,7 +283,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     userId: t,
     guildId: n,
@@ -295,7 +295,7 @@ function k(e) {
       user: l,
       guildId: n,
       onClose: i
-    }), (0, r.jsx)(M, {
+    }), (0, r.jsx)(k, {
       user: l,
       member: o,
       guildId: n

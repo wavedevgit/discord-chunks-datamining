@@ -1,19 +1,19 @@
-/** Chunk was on 98254 **/
+/** Chunk was on 36084 **/
 n.d(t, {
-  z: () => u
+  z: () => a
 });
-var i = n(359119),
-  r = n(897769),
+var r = n(359119),
+  i = n(897769),
   l = n(237292),
-  a = n(403485),
-  o = n(604849);
+  o = n(403485),
+  u = n(604849);
 
-function u(e, t) {
+function a(e, t) {
   let n = (0, l.y0)({
       location: t
     }),
-    u = (0, o.c)(),
-    d = (0, a.h)(e),
-    s = (0, r.S)(e, i.pj.INAPPROPRIATE_CONVERSATION_TIER_2);
-  if (n && u && 0 !== d.length && !d.some(e => e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_2 && null != e.dismiss_timestamp)) return s
+    a = (0, u.c)(),
+    c = (0, o.h)(e),
+    s = (0, i.S)(e, r.pj.INAPPROPRIATE_CONVERSATION_TIER_2);
+  if (n && a && 0 !== c.length && !c.some(e => e.type === r.pj.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === r.pj.INAPPROPRIATE_CONVERSATION_TIER_2 && null != e.dismiss_timestamp)) return s
 }

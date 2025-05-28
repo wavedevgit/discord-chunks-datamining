@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => N
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(727429),
   _ = n(665149),
   x = n(359110),
-  C = n(585483),
-  y = n(407908),
+  y = n(585483),
+  C = n(407908),
   v = n(739830),
   j = n(488131),
   O = n(981631),
@@ -101,7 +101,7 @@ function Z(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, b = (0, s.Z)(t, "Sidebar Overflow"), _ = (0, u.Z)(t), y = (0, h.Z)(t), v = (0, f.Z)(t), j = (0, a.Z)(t), I = (0, c.Z)(t), P = (0, p.Z)(t.id), S = (0, d.Z)(t), Z = (0, o.Z)(t), N = (0, g.Z)({
+  } = e, b = (0, s.Z)(t, "Sidebar Overflow"), _ = (0, u.Z)(t), C = (0, h.Z)(t), v = (0, f.Z)(t), j = (0, a.Z)(t), I = (0, c.Z)(t), P = (0, p.Z)(t.id), S = (0, d.Z)(t), Z = (0, o.Z)(t), N = (0, g.Z)({
     id: t.id,
     label: E.intl.string(E.t.DQ797u)
   }), T = (0, m.Z)(t);
@@ -121,7 +121,7 @@ function Z(e) {
         action: A
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [y, v]
+      children: [C, v]
     }), (0, r.jsxs)(l.kSQ, {
       children: [S, _, P]
     }), (0, r.jsxs)(l.kSQ, {
@@ -131,7 +131,7 @@ function Z(e) {
         icon: l.rgF,
         action: function() {
           A(), setTimeout(() => {
-            C.S.dispatch(O.CkL.FOCUS_SEARCH, {
+            y.S.dispatch(O.CkL.FOCUS_SEARCH, {
               prefillCurrentChannel: !1
             })
           }, 2e3)
@@ -141,7 +141,7 @@ function Z(e) {
         label: E.intl.string(E.t["2BSH7u"]),
         icon: l.rgF,
         action: function() {
-          A(), C.S.dispatch(O.CkL.TOGGLE_CHANNEL_PINS)
+          A(), y.S.dispatch(O.CkL.TOGGLE_CHANNEL_PINS)
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {
@@ -160,7 +160,7 @@ function N(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [t.isForumPost() ? null : (0, r.jsx)(v.Z, {
       channel: t
-    }), (0, r.jsx)(y.Z, {
+    }), (0, r.jsx)(C.Z, {
       channel: t
     }), (0, r.jsx)(S, {
       channel: t

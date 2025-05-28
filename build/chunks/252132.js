@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => o
 });
@@ -25,8 +25,8 @@ function o(e) {
     onDoubleClick: b,
     onVideoResize: _,
     paused: x,
-    pulseSpeakingIndicator: C,
-    participant: y,
+    pulseSpeakingIndicator: y,
+    participant: C,
     width: v
   } = e, j = function(e, t) {
     if (null == e) return {};
@@ -84,9 +84,9 @@ function o(e) {
         onContextMenu: g,
         onDoubleClick: b,
         onVideoResize: _,
-        participant: y,
+        participant: C,
         paused: x,
-        pulseSpeakingIndicator: C,
+        pulseSpeakingIndicator: y,
         videoComponent: O,
         width: v
       }, j)), d]

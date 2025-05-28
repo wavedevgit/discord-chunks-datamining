@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => j
 }), n(539854), n(388685);
@@ -27,12 +27,12 @@ function x(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let C = {
+let y = {
     STEPS: 23,
     FRAME_DURATION: 17,
     FRAME_SIZE: 26
   },
-  y = {
+  C = {
     SCALE_MIN: .7,
     SCALE_MAX: 1,
     DURATION_IN: 300,
@@ -58,8 +58,8 @@ class v extends i.PureComponent {
     } = this;
     t.setValue(0), n.setValue(0), o.Z.parallel([o.Z.timing(t, {
       toValue: 1,
-      duration: y.DURATION_IN,
-      easing: y.EASING_IN
+      duration: C.DURATION_IN,
+      easing: C.EASING_IN
     }), o.Z.timing(n, {
       toValue: 1,
       duration: 200
@@ -74,14 +74,14 @@ class v extends i.PureComponent {
     } = this;
     r.setValue(1), n.setValue(0);
     let l = [];
-    for (let e = 0; e < C.STEPS; e++) l.push(o.Z.timing(n, {
-      toValue: -C.FRAME_SIZE * e,
-      duration: C.FRAME_DURATION
+    for (let e = 0; e < y.STEPS; e++) l.push(o.Z.timing(n, {
+      toValue: -y.FRAME_SIZE * e,
+      duration: y.FRAME_DURATION
     }));
     o.Z.sequence([o.Z.timing(t, {
       toValue: 0,
-      duration: y.DURATION_OUT,
-      easing: y.EASING_OUT
+      duration: C.DURATION_OUT,
+      easing: C.EASING_OUT
     }), o.Z.sequence(l), o.Z.timing(i, {
       toValue: 0,
       duration: 125
@@ -95,7 +95,7 @@ class v extends i.PureComponent {
       transform: [{
         scale: e.interpolate({
           inputRange: [0, 1],
-          outputRange: [y.SCALE_MIN, y.SCALE_MAX]
+          outputRange: [C.SCALE_MIN, C.SCALE_MAX]
         })
       }],
       opacity: e
@@ -157,7 +157,7 @@ function j(e) {
     onClick: o,
     width: u,
     guildId: b
-  } = e, _ = (0, p.ZP)(), x = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), y = n.map(e => {
+  } = e, _ = (0, p.ZP)(), x = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), y = (0, s.e7)([h.Z], () => h.Z.isFocused()), C = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -172,7 +172,7 @@ function j(e) {
       theme: _,
       children: (0, r.jsx)(f.Z, {
         userId: l.id,
-        src: l.getAvatarURL(b, (0, d.pxk)(x), s && C),
+        src: l.getAvatarURL(b, (0, d.pxk)(x), s && y),
         size: x,
         muted: null != (t = null == a ? void 0 : a.isVoiceMuted()) && t,
         deafen: null != (n = null == a ? void 0 : a.isVoiceDeafened()) && n,
@@ -186,6 +186,6 @@ function j(e) {
   return (0, r.jsx)(c.W, {
     component: "div",
     className: a()(g.root, l),
-    children: y
+    children: C
   })
 }

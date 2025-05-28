@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   O: () => s
 });
@@ -39,9 +39,9 @@ function s(e) {
   let {
     Component: _,
     events: x,
-    play: C
+    play: y
   } = (0, l.P)(c ? "disable" : "enable");
-  return i.useEffect(() => () => C(), [c, C]), (0, r.jsx)(b, function(e) {
+  return i.useEffect(() => () => y(), [c, y]), (0, r.jsx)(b, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

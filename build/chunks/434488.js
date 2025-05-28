@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   h: () => T
 });
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(895924),
   _ = n(540059),
   x = n(605236),
-  C = n(340541),
-  y = n(448239),
+  y = n(340541),
+  C = n(448239),
   v = n(626135),
   j = n(607187),
   O = n(981631),
@@ -186,7 +186,7 @@ function w(e) {
     analyticsLocations: u
   } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_INVITE), p = (0, _.Q3)("SingleUserTile"), {
     entrypoints: h
-  } = (0, C._k)({
+  } = (0, y._k)({
     location: "single_user_tile"
   }), {
     enabled: b
@@ -211,7 +211,7 @@ function w(e) {
     })
   }
 
-  function y() {
+  function C() {
     (0, f.Z)({
       channel: t,
       openInPopout: o,
@@ -261,7 +261,7 @@ function w(e) {
               [I.button]: !p
             }),
             innerClassName: I.buttonContents,
-            onClick: y,
+            onClick: C,
             children: [(0, r.jsx)(T, {
               size: "xs",
               color: "currentColor"
@@ -287,7 +287,7 @@ function R(e) {
       n_participants: d
     })
   });
-  let C = (0, p.Z)({
+  let y = (0, p.Z)({
       guildId: n.id
     }).slice(0, 3),
     {
@@ -313,7 +313,7 @@ function R(e) {
         className: a()(I.activitiesContainer, {
           [I.activitiesContainerSmol]: s <= 300
         }),
-        children: C.map(e => (0, r.jsx)(h.Y, {
+        children: y.map(e => (0, r.jsx)(h.Y, {
           context: Z,
           activityItem: e,
           aspectRatio: h.Y.AspectRatio.SIXTEEN_BY_NINE,
@@ -329,7 +329,7 @@ function R(e) {
             n_participants: d
           }), (0, x.EW)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
-        children: [(0, r.jsx)(y.Z, {}), (0, r.jsx)(c.Text, {
+        children: [(0, r.jsx)(C.Z, {}), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           children: E.intl.string(E.t["5E9SBw"])
         })]

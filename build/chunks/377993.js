@@ -1,6 +1,6 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(670188),
   _ = n(158776),
   x = n(699516),
-  C = n(111583),
-  y = n(594174),
+  y = n(111583),
+  C = n(594174),
   v = n(626135),
   j = n(585483),
   O = n(233870),
@@ -58,7 +58,7 @@ function R(e) {
     channel: o,
     status: u,
     activities: d
-  } = e, p = (0, a.e7)([C.Z], () => null != C.Z.getTypingUsers(o.id)[t.id]), f = (0, a.e7)([y.default], () => y.default.getCurrentUser()), v = (0, a.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), O = (0, a.e7)([x.Z], () => x.Z.getNickname(t.id)), I = (0, h.Z)(t.id), N = i.useRef(null), A = e => {
+  } = e, p = (0, a.e7)([y.Z], () => null != y.Z.getTypingUsers(o.id)[t.id]), f = (0, a.e7)([C.default], () => C.default.getCurrentUser()), v = (0, a.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), O = (0, a.e7)([x.Z], () => x.Z.getNickname(t.id)), I = (0, h.Z)(t.id), N = i.useRef(null), A = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
@@ -91,10 +91,10 @@ function R(e) {
       plainText: e,
       rawText: n
     }), c.Z.startTyping(o.id)
-  }, M = (0, m.K)({
+  }, k = (0, m.K)({
     location: "PrivateChannelRecipients",
     user: t
-  }), [k, L] = i.useState(!1), D = (0, g.ic)({
+  }), [M, L] = i.useState(!1), D = (0, g.ic)({
     location: "PrivateChannelRecipients"
   });
   return (0, r.jsx)(b.Z, {
@@ -105,7 +105,7 @@ function R(e) {
     position: l.tq ? "window_center" : "left",
     spacing: 16,
     onShiftClick: R,
-    shouldShow: k,
+    shouldShow: M,
     onRequestClose: () => L(!1),
     children: e => {
       var {
@@ -139,23 +139,23 @@ function R(e) {
         applicationStream: I,
         channel: o,
         onContextMenu: A,
-        selected: k,
+        selected: M,
         isMobile: v,
         nick: O,
-        nameplate: M,
+        nameplate: k,
         hideTooltip: D,
         onClick: e => {
           e.shiftKey ? null == R || R() : L(e => !e)
         },
         onMouseDown: e => {
-          k ? e.stopPropagation() : null == i || i(e)
+          M ? e.stopPropagation() : null == i || i(e)
         }
       }, l), t.id)
     }
   })
 }
 
-function M(e, t) {
+function k(e, t) {
   if (e.listItems.length !== t.listItems.length) return !1;
   for (let n = 0; n < e.listItems.length; n++) {
     let r = e.listItems[n],
@@ -165,19 +165,19 @@ function M(e, t) {
   return !0
 }
 
-function k(e) {
+function M(e) {
   let {
     channel: t
-  } = e, n = y.default.getCurrentUser(), l = null == n ? void 0 : n.isStaff(), {
+  } = e, n = C.default.getCurrentUser(), l = null == n ? void 0 : n.isStaff(), {
     analyticsLocations: s
   } = (0, d.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
-  } = (0, a.e7)([x.Z, y.default, _.Z], () => {
-    let e = (0, O.T)(t.recipients, y.default),
+  } = (0, a.e7)([x.Z, C.default, _.Z], () => {
+    let e = (0, O.T)(t.recipients, C.default),
       n = {};
     for (let t of e) {
       var r, i, l;
-      x.Z.isFriend(t.id) || t.id === (null == (r = y.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
+      x.Z.isFriend(t.id) || t.id === (null == (r = C.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
         status: null != (i = _.Z.getStatus(t.id)) ? i : S.Skl.OFFLINE,
         activities: null != (l = _.Z.getActivities(t.id)) ? l : A
       } : n[t.id] = {
@@ -197,7 +197,7 @@ function k(e) {
     return {
       listItems: a
     }
-  }, [t], M);
+  }, [t], k);
   i.useEffect(() => {
     v.default.track(S.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,

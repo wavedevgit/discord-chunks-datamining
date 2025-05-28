@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => w
 });
@@ -20,8 +20,8 @@ var i = n(657707),
   b = n(280885),
   _ = n(483424),
   x = n(681837),
-  C = n(78806),
-  y = n(91433),
+  y = n(78806),
+  C = n(91433),
   v = n(900927),
   j = n(944043),
   O = n(678738),
@@ -40,8 +40,8 @@ function w(e) {
     currentUser: n,
     displayProfile: w,
     channel: R,
-    isHovering: M,
-    onOpenProfile: k
+    isHovering: k,
+    onOpenProfile: M
   } = e, {
     relationshipType: L,
     originApplicationId: D
@@ -62,7 +62,7 @@ function w(e) {
       user: t,
       nickname: p.ZP.getName(null, R.id, t),
       pronouns: null == w ? void 0 : w.pronouns,
-      onOpenProfile: k,
+      onOpenProfile: M,
       tags: (0, r.jsx)(g.Z, {
         displayProfile: w,
         themeType: Z.lY.SIDEBAR
@@ -72,18 +72,18 @@ function w(e) {
           userId: t.id
         }), !G && (0, r.jsx)(S.Z, {
           userId: t.id,
-          isHovering: M,
-          onOpenProfile: k
+          isHovering: k,
+          onOpenProfile: M
         })]
       })
     }), L === N.OGo.PENDING_INCOMING && (0, r.jsx)(I.Z.Overlay, {
-      children: (0, r.jsx)(y.Z, {
+      children: (0, r.jsx)(C.Z, {
         user: t,
         channelId: R.id,
         applicationId: D
       })
     }), U.map(e => (0, r.jsx)(I.Z.Overlay, {
-      children: (0, r.jsx)(y.Z, {
+      children: (0, r.jsx)(C.Z, {
         user: t,
         isGameRelationship: !0,
         applicationId: e.applicationId,
@@ -109,7 +109,7 @@ function w(e) {
       user: t,
       currentUser: n,
       displayProfile: w,
-      onOpenUserProfileModal: k
+      onOpenUserProfileModal: M
     }) : (0, r.jsx)(_.Z, {
       user: t,
       currentUser: n,
@@ -123,7 +123,7 @@ function w(e) {
         children: (0, r.jsx)(b.Z, {
           userBio: w.bio,
           animateOnHover: !0,
-          isHovering: M,
+          isHovering: k,
           userId: t.id
         })
       }), (null == F ? void 0 : F.popularApplicationCommandIds) != null && (0, r.jsx)(m.Z, {
@@ -133,7 +133,7 @@ function w(e) {
       }), B.length > 0 && (0, r.jsx)(O.Z, {
         heading: T.intl.string(T.t["Uv/eT0"]),
         headingColor: "header-primary",
-        children: (0, r.jsx)(C.Z, {
+        children: (0, r.jsx)(y.Z, {
           applicationIds: B
         })
       }), (0, r.jsx)(O.Z, {

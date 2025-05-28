@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => x
 }), n(388685);
@@ -54,8 +54,8 @@ let x = function(e) {
   } = e, n = (0, c.Q3)("ChannelPinsButton"), x = (0, l.e7)([u.Z, p.default], () => {
     let e = p.default.getCurrentUser();
     return null == e || t.isNSFW() && (!e.nsfwAllowed || !u.Z.didAgree(t.getGuildId()))
-  }, [t]), [C, y] = i.useState(!1), v = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), j = (0, s.Aq)(), O = i.useRef(null), E = i.useCallback(() => {
-    x || y(e => !e)
+  }, [t]), [y, C] = i.useState(!1), v = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), j = (0, s.Aq)(), O = i.useRef(null), E = i.useCallback(() => {
+    x || C(e => !e)
   }, [x]);
 
   function I(e) {
@@ -65,13 +65,13 @@ let x = function(e) {
     h.S.unsubscribe(m.CkL.TOGGLE_CHANNEL_PINS, E)
   }), [E]), (0, r.jsx)(a.yRy, {
     targetElementRef: O,
-    shouldShow: C,
+    shouldShow: y,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: !1,
     ignoreModalClicks: !0,
-    onRequestClose: () => y(!1),
+    onRequestClose: () => C(!1),
     renderPopout: function(e) {
       return (0, r.jsx)(o.Z, _(b({}, e), {
         onJump: I,

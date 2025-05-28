@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => b
 });
@@ -31,12 +31,12 @@ function b(e) {
       messages: n,
       loading: null == n || null != e && e.loading
     }
-  }), C = (0, l.e7)([p.ZP], () => p.ZP.hasUnreadPins(t.id));
+  }), y = (0, l.e7)([p.ZP], () => p.ZP.hasUnreadPins(t.id));
   return (0, c.ZP)(() => {
     _.some(u.k5) && s.Z.fetchPins(t.id, !0)
   }), i.useEffect(() => {
-    C && s.Z.ackPins(t.id)
-  }, [C, t.id]), (0, r.jsx)(o.VqE, {
+    y && s.Z.ackPins(t.id)
+  }, [y, t.id]), (0, r.jsx)(o.VqE, {
     "aria-label": m.intl.string(m.t["mp1N//"]),
     children: (0, r.jsx)(h.ZP, {
       onFetch: function() {

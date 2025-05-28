@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => D
 }), n(539854);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(540059),
   _ = n(517525),
   x = n(2818),
-  C = n(954551),
-  y = n(44136),
+  y = n(954551),
+  C = n(44136),
   v = n(651183),
   j = n(853476),
   O = n(390322),
@@ -35,7 +35,7 @@ var r = n(255367),
   w = n(388032),
   R = n(232989);
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -73,7 +73,7 @@ function L(e) {
     guildId: n
   } = e, i = (0, c.Wu)([S.Z, Z.Z], () => {
     let e = Date.now();
-    return s()(S.Z.getSpeakers()).map(e => Z.Z.getParticipant(t, e)).filter(e => null != e && e.type === A.fO.USER && e.speaking && !(0, y.ZP)(e)).sortBy(t => -S.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+    return s()(S.Z.getSpeakers()).map(e => Z.Z.getParticipant(t, e)).filter(e => null != e && e.type === A.fO.USER && e.speaking && !(0, C.ZP)(e)).sortBy(t => -S.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
   return 0 === i.length ? null : (0, r.jsx)(r.Fragment, {
     children: i.map((e, t) => (0, r.jsx)(u.ua7, {
@@ -82,7 +82,7 @@ function L(e) {
       text: w.intl.formatToPlainString(w.t.JjdizM, {
         username: e.user.username
       }),
-      children: l => (0, r.jsx)(P.ZP, k(M({}, l), {
+      children: l => (0, r.jsx)(P.ZP, M(k({}, l), {
         className: a()(R.speaker, {
           [R.last]: t === i.length - 1
         }),
@@ -102,17 +102,17 @@ function D(e) {
     isChatOpen: l
   } = e, o = i.useRef(null), {
     analyticsLocations: s
-  } = (0, h.ZP)(p.Z.VOICE_CHANNEL_HEADER), y = n.id, {
+  } = (0, h.ZP)(p.Z.VOICE_CHANNEL_HEADER), C = n.id, {
     voiceParticipantsHidden: P,
     selectedParticipant: S,
     userParticipantCount: w,
     participantsListOpen: D
   } = (0, c.cj)([Z.Z], () => ({
-    selectedParticipant: Z.Z.getSelectedParticipant(y),
-    voiceParticipantsHidden: Z.Z.getVoiceParticipantsHidden(y),
-    userParticipantCount: Z.Z.getUserParticipantCount(y),
-    participantsListOpen: Z.Z.getParticipantsListOpen(y)
-  }), [y]), U = n.isGuildVoice() && !l, {
+    selectedParticipant: Z.Z.getSelectedParticipant(C),
+    voiceParticipantsHidden: Z.Z.getVoiceParticipantsHidden(C),
+    userParticipantCount: Z.Z.getUserParticipantCount(C),
+    participantsListOpen: Z.Z.getParticipantsListOpen(C)
+  }), [C]), U = n.isGuildVoice() && !l, {
     hasParticipantsPanel: B
   } = (0, T.Z)({
     location: "ChannelCallHeaderToolbar"
@@ -123,11 +123,11 @@ function D(e) {
     location: "ChannelCallHeaderToolbar"
   }), V = (0, b.Q3)("ChannelCallHeaderToolbar"), z = [];
   return P && z.push((0, r.jsx)(L, {
-    channelId: y,
+    channelId: C,
     guildId: n.guild_id
   }, "current-speaker")), z.push((0, r.jsx)(g.Z, {
     className: R.button,
-    channelId: y
+    channelId: C
   }, "clips-enabled-indicator")), (null == S ? void 0 : S.type) === A.fO.STREAM && (z.push((0, r.jsx)(v.Z, {
     className: R.button,
     participant: S
@@ -152,7 +152,7 @@ function D(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.createElement)(I.Z, k(M({}, e), {
+      return (0, i.createElement)(I.Z, M(k({}, e), {
         buttonRef: o,
         isActive: n,
         count: w,
@@ -162,7 +162,7 @@ function D(e) {
     }
   }, "call-members-popout")), V || t || z.push((0, r.jsx)(m.Z, {
     className: R.button
-  }, "clips")), F && !H && z.push((0, r.jsx)(C.Z, {
+  }, "clips")), F && !H && z.push((0, r.jsx)(y.Z, {
     className: R.button
   }, "for-later")), G && z.push((0, r.jsx)(I.Z, {
     className: a()(R.button, {

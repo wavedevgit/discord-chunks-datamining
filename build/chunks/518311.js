@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => e_,
   l: () => ex
@@ -19,8 +19,8 @@ var r, i = n(255367),
   b = n(529103),
   _ = n(447543),
   x = n(708690),
-  C = n(194359),
-  y = n(425493),
+  y = n(194359),
+  C = n(425493),
   v = n(461745),
   j = n(493773),
   O = n(40851),
@@ -34,8 +34,8 @@ var r, i = n(255367),
   A = n(429090),
   w = n(912114),
   R = n(366980),
-  M = n(703656),
-  k = n(93127),
+  k = n(703656),
+  M = n(93127),
   L = n(752048),
   D = n(131704),
   U = n(592125),
@@ -139,7 +139,7 @@ let eh = e => {
     });
     return (0, i.jsx)(h.P3F, {
       onClick: () => {
-        (0, M.XU)(en.ME, n.id), r()
+        (0, k.XU)(en.ME, n.id), r()
       },
       children: (0, i.jsxs)("div", {
         className: ei.confirmChannelItemContainer,
@@ -526,7 +526,7 @@ class em extends(r = l.PureComponent) {
     })
   }
   handleAddFriend(e) {
-    this.props.onClose(), C.Z.sendRequest({
+    this.props.onClose(), y.Z.sendRequest({
       discordTag: J.ZP.getUserTag(e, {
         identifiable: "always"
       }),
@@ -566,7 +566,7 @@ class em extends(r = l.PureComponent) {
       children: (0, i.jsx)(h.JcV, {
         containerRef: this._mobileCloseRef,
         children: (0, i.jsx)("div", {
-          children: (0, i.jsx)(y.Z, {
+          children: (0, i.jsx)(C.Z, {
             className: ei.mobileToolsCloseIcon,
             closeAction: this.props.onClose,
             keybind: "ESC"
@@ -650,7 +650,7 @@ class em extends(r = l.PureComponent) {
       } = this.props;
       t.has(e) ? x.Z.removeUser(e) : (x.Z.addUser(e), n.length > 0 && x.Z.clear(null == r ? void 0 : r.id)), this.forceFocus()
     }), ea(this, "handleAddFriendNavigation", () => {
-      (0, M.uL)(en.Z5c.FRIENDS), b.Z.setSection(en.pJs.ADD_FRIEND), this.props.onClose()
+      (0, k.uL)(en.Z5c.FRIENDS), b.Z.setSection(en.pJs.ADD_FRIEND), this.props.onClose()
     }), ea(this, "handleScroll", () => {
       let e = this.scrollerRef.current;
       null != e && this.setState({
@@ -724,13 +724,13 @@ class em extends(r = l.PureComponent) {
         onClose: n
       } = this.props, r = Array.from(t);
       if (null != e) {
-        let t = eC(Array.from(new Set([...e.recipients, ...r])));
+        let t = ey(Array.from(new Set([...e.recipients, ...r])));
         t.size > 0 ? (0, h.h7j)(n => (0, i.jsx)(ef, es(eo({}, n), {
           onConfirm: () => this.pushToExistingDM(e, r),
           channelIds: t
         })), {}, (0, h.VnL)(this.context.appContext)) : this.pushToExistingDM(e, r)
       } else {
-        let e = eC(r);
+        let e = ey(r);
         r.length > 1 && e.size > 0 ? (0, h.h7j)(t => (0, i.jsx)(ef, es(eo({}, t), {
           onConfirm: () => this.createNewDM(r),
           channelIds: e
@@ -833,21 +833,21 @@ function e_(e) {
     popoutAlign: f = "right",
     subscribeToGlobalHotkey: m = !1,
     location: g
-  } = e, b = null != s ? s : null == r ? h.kL_ : h.ejJ, _ = (0, A.a)(g), x = "channel-invite-modal-".concat(null == r ? void 0 : r.id), C = (0, h.VXO)(x), y = l.useCallback(() => (0, h.ZDy)(() => Promise.resolve(e => (0, i.jsx)(eb, es(eo({}, e), {
+  } = e, b = null != s ? s : null == r ? h.kL_ : h.ejJ, _ = (0, A.a)(g), x = "channel-invite-modal-".concat(null == r ? void 0 : r.id), y = (0, h.VXO)(x), C = l.useCallback(() => (0, h.ZDy)(() => Promise.resolve(e => (0, i.jsx)(eb, es(eo({}, e), {
     channel: r,
     inBornThisNamedExperiment: _
   }))), {
     modalKey: x
-  }), [r, x, _]), v = l.useRef(null), [O, E] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), I = l.useCallback(() => _ ? C ? (0, h.Mr3)(x) : y() : E(e => !e), [_, C, x, y]);
+  }), [r, x, _]), v = l.useRef(null), [O, E] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), I = l.useCallback(() => _ ? y ? (0, h.Mr3)(x) : C() : E(e => !e), [_, y, x, C]);
   l.useEffect(() => (m && K.S.subscribe(en.CkL.TOGGLE_DM_CREATE, I), () => {
     K.S.unsubscribe(en.CkL.TOGGLE_DM_CREATE, I)
   }), [m, I, _]);
   let P = (0, p.e7)([W.default], () => W.default.getUser(null == r ? void 0 : r.getRecipientId()));
   return ((0, j.ZP)(() => {
-    (0, k._)()
+    (0, M._)()
   }), null != (t = null == P ? void 0 : P.bot) && t || null != (n = null == P ? void 0 : P.isProvisional) && n) ? null : _ ? (0, i.jsx)(ee.ZP.Icon, {
     ref: v,
-    onClick: y,
+    onClick: C,
     icon: b,
     className: o,
     iconClassName: a,
@@ -889,7 +889,7 @@ function ex(e) {
     popoutAlign: a = "right"
   } = e;
   (0, j.ZP)(() => {
-    (0, k._)()
+    (0, M._)()
   });
   let o = (0, A.a)("PrivateChannelRecipientsInviteTextButton"),
     s = l.useRef(null),
@@ -933,12 +933,12 @@ function ex(e) {
   })
 }
 
-function eC(e) {
-  let t = ey(e);
-  return new Set((0, s.chain)(U.Z.getMutablePrivateChannels()).values().filter(e => (0, D.bc)(e.type)).filter(e => ey(e.recipients) === t).map(e => e.id).value())
+function ey(e) {
+  let t = eC(e);
+  return new Set((0, s.chain)(U.Z.getMutablePrivateChannels()).values().filter(e => (0, D.bc)(e.type)).filter(e => eC(e.recipients) === t).map(e => e.id).value())
 }
 
-function ey(e) {
+function eC(e) {
   return JSON.stringify(e.sort())
 }
 ea(em, "contextType", O.ZP)

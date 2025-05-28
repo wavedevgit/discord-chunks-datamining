@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => u
 });
@@ -25,7 +25,7 @@ function u(e) {
     onMouseLeave: b
   } = e, _ = (0, o.Q)(t), x = (0, s.V)(n.id, t);
   if (!_ || null == x) return null;
-  let C = () => {
+  let y = () => {
     null == m || m(), l.Z.closePrivateChannel(n.id, h)
   };
   return (0, r.jsx)(i.zxk, {
@@ -34,7 +34,7 @@ function u(e) {
     color: i.zxk.Colors.RED,
     disabled: null == x,
     onClick: () => {
-      null == f || f(), (0, a.WL)(x, C)
+      null == f || f(), (0, a.WL)(x, y)
     },
     onMouseEnter: g,
     onMouseLeave: b,

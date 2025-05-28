@@ -1,6 +1,6 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => y
+  Z: () => C
 });
 var r = n(255367),
   i = n(73800),
@@ -19,12 +19,12 @@ var r = n(255367),
   b = n(981631),
   _ = n(921944),
   x = n(388032),
-  C = n(591837);
-let y = function(e) {
+  y = n(591837);
+let C = function(e) {
   let {
     channel: t,
     guild: n,
-    maxWidth: y
+    maxWidth: C
   } = e;
   i.useEffect(() => {
     (0, p.EW)(l.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
@@ -41,7 +41,7 @@ let y = function(e) {
     });
   return (0, r.jsxs)(u.Z, {
     sidebarType: u.y.CallChatSidebar,
-    maxWidth: y,
+    maxWidth: C,
     floatingLayer: g.ZP,
     children: [(0, r.jsx)(s.Z, {
       channel: t,
@@ -57,7 +57,7 @@ let y = function(e) {
         children: t.name
       })]
     }), (0, r.jsx)("div", {
-      className: C.chat,
+      className: y.chat,
       children: (0, r.jsx)(c.Z, {
         channel: t,
         guild: n,

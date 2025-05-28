@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => E
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(271383),
   _ = n(594174),
   x = n(189432),
-  C = n(356778),
-  y = n(370595),
+  y = n(356778),
+  C = n(370595),
   v = n(50493),
   j = n(12740),
   O = n(450355);
@@ -33,10 +33,10 @@ function E(e) {
     location: I,
     className: P,
     onNavigate: S
-  } = e, Z = i.useRef(null), N = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == N ? void 0 : N.details.additionalSearchQuery) ? t : {}), R = (0, C.z0)(l, E, {
+  } = e, Z = i.useRef(null), N = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == N ? void 0 : N.details.additionalSearchQuery) ? t : {}), R = (0, y.z0)(l, E, {
     addtionalQuery: A,
     shouldDispatch: !0
-  }), M = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), k = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
+  }), k = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), M = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
   (0, u.Ng)(() => {
     let e = null == N ? void 0 : N.details.scrollOffset;
     if (null != e) {
@@ -135,9 +135,9 @@ function E(e) {
         showNoResultsAlt: !1
       }
     }, [R.result, B]);
-  return null == M || null == k || null == F ? null : (0, r.jsxs)("div", {
+  return null == k || null == M || null == F ? null : (0, r.jsxs)("div", {
     className: a()(j.container, P),
-    children: [(0, r.jsx)(y.Z, {
+    children: [(0, r.jsx)(C.Z, {
       guildId: E,
       userId: l,
       onNavigate: S

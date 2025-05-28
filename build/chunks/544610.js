@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 let r;
 n.d(t, {
   Z: () => F
@@ -16,8 +16,8 @@ var i, l, a, o = n(392711),
   b = n(592125),
   _ = n(480294),
   x = n(580005),
-  C = n(699516),
-  y = n(594174),
+  y = n(699516),
+  C = n(594174),
   v = n(981631);
 let j = !1,
   O = "",
@@ -41,8 +41,8 @@ function A() {
   if (0 === O.trim().length) {
     var t;
     let n;
-    return null != r && r.clearQuery(), t = e, n = C.Z.getFriendIDs(), (null == t ? void 0 : t.isPrivate()) && (n = n.filter(e => !t.recipients.includes(e))), I = n.reduce((e, t) => {
-      let n = y.default.getUser(t);
+    return null != r && r.clearQuery(), t = e, n = y.Z.getFriendIDs(), (null == t ? void 0 : t.isPrivate()) && (n = n.filter(e => !t.recipients.includes(e))), I = n.reduce((e, t) => {
+      let n = C.default.getUser(t);
       return null == n || n.isProvisional || e.push({
         user: n,
         comparator: g.ZP.getName(n)
@@ -65,7 +65,7 @@ function A() {
     return e.forEach(e => {
       let r = x.Z.getScoreWithoutFetchingLatest(e.id),
         i = e.getRecipientId(),
-        l = .2 * !!C.Z.isFriend(i),
+        l = .2 * !!y.Z.isFriend(i),
         a = .1 * (null != b.Z.getDMFromUserId(i));
       n[i] = 1 + r / t + l + a
     }), n
@@ -75,7 +75,7 @@ function A() {
 function w() {
   if (!j) return !1;
   let e = P;
-  return (P = s().some(C.Z.getRelationships(), e => e === v.OGo.FRIEND)) !== e
+  return (P = s().some(y.Z.getRelationships(), e => e === v.OGo.FRIEND)) !== e
 }
 
 function R(e, t) {
@@ -88,7 +88,7 @@ function R(e, t) {
   return (0, m._I)(g.ZP.getName(e.user).toLocaleLowerCase()).localeCompare((0, m._I)(g.ZP.getName(t.user).toLocaleLowerCase()))
 }
 
-function M(e) {
+function k(e) {
   let {
     results: t
   } = e;
@@ -99,7 +99,7 @@ function M(e) {
       comparator: r
     }
     of t) {
-    let t = y.default.getUser(e);
+    let t = C.default.getUser(e);
     null != t && n.push({
       user: t,
       comparator: r
@@ -108,13 +108,13 @@ function M(e) {
   I = n, G.emitChange()
 }
 
-function k() {
-  return null != r && (r.destroy(), r = null), d.Z.getSearchContext(M, 1e3)
+function M() {
+  return null != r && (r.destroy(), r = null), d.Z.getSearchContext(k, 1e3)
 }
 
 function L(e) {
   if (e.key !== v.vTt) return !1;
-  j = !0, w(), r = k(), Z = null, T("")
+  j = !0, w(), r = M(), Z = null, T("")
 }
 
 function D(e) {
@@ -127,7 +127,7 @@ function U() {
 }
 class B extends(i = c.ZP.Store) {
   initialize() {
-    this.waitFor(y.default, b.Z, C.Z, p.Z, _.Z), this.syncWith([y.default, b.Z], A), this.syncWith([C.Z], w)
+    this.waitFor(C.default, b.Z, y.Z, p.Z, _.Z), this.syncWith([C.default, b.Z], A), this.syncWith([y.Z], w)
   }
   getResults() {
     return I
@@ -173,7 +173,7 @@ let G = new B(u.Z, {
     MODAL_PUSH: L,
     SHOW_ACTION_SHEET: L,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      j = !0, w(), r = k(), Z = e.channelId, T("")
+      j = !0, w(), r = M(), Z = e.channelId, T("")
     },
     MODAL_POP: D,
     HIDE_ACTION_SHEET: D,

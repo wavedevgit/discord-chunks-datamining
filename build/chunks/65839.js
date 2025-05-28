@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => j
 }), n(388685), n(642613);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(400816),
   _ = n(104402),
   x = n(584354),
-  C = n(725060);
-let y = e => {
+  y = n(725060);
+let C = e => {
   let {
     searchQuery: t,
     setSearchQuery: n,
@@ -36,7 +36,7 @@ let y = e => {
     children: [(0, r.jsx)("img", {
       alt: "",
       className: _.headerImage,
-      src: d ? C : x
+      src: d ? y : x
     }), (0, r.jsx)("div", {
       className: _.headerContentWrapper,
       children: (0, r.jsxs)("div", {
@@ -134,7 +134,7 @@ let j = e => {
     handleClearSearch: d,
     handleSearchKeyPress: p,
     currentCategoryId: x,
-    handleSelectCategory: C,
+    handleSelectCategory: y,
     categoryCounts: j,
     allEntriesCount: O,
     isLoading: E
@@ -148,7 +148,7 @@ let j = e => {
     className: b.pageContainer,
     children: (0, r.jsxs)(s.yWw, {
       className: b.scroller,
-      children: [(0, r.jsx)(y, {
+      children: [(0, r.jsx)(C, {
         searchQuery: a,
         setSearchQuery: c,
         handleClearSearch: d,
@@ -161,7 +161,7 @@ let j = e => {
           look: "brand",
           selectedItem: x,
           onItemSelect: e => {
-            C(e)
+            y(e)
           },
           children: [(0, r.jsx)(s.njP.Item, {
             className: _.tabBarItem,

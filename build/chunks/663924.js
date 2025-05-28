@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => I
 });
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(496977),
   _ = n(314734),
   x = n(981631),
-  C = n(149203),
-  y = n(388032),
+  y = n(149203),
+  C = n(388032),
   v = n(760420);
 let j = {
   height: _.lv
@@ -37,7 +37,7 @@ function E(e) {
     parentModalKey: u
   } = e, d = i.useRef(null), {
     renderWindow: f,
-    windowDispatch: y
+    windowDispatch: C
   } = i.useContext(s.ZP), v = null != u, j = (0, a.Jw)(null != u ? u : ""), E = i.useCallback(e => {
     var t;
     if (!v && (0, a.$s)() || v && !(j && n)) return;
@@ -50,7 +50,7 @@ function E(e) {
       if (r === d.current) return;
       if (r.classList.contains(_.t4) || r.classList.contains(_.Id)) return void e.preventDefault();
       if (r.classList.contains(_.NN)) return;
-      let t = [C.cZ, c.N];
+      let t = [y.cZ, c.N];
       if (r.classList.contains(_.I4) || t.includes(r.id)) return;
       r = r.parentNode
     }
@@ -58,9 +58,9 @@ function E(e) {
     let i = null == (t = (0, h.uB)(e)) ? void 0 : t.activeElement;
     (null == i || "BODY" === i.tagName) && p.S.dispatchToLastSubscribed(x.CkL.TEXTAREA_FOCUS)
   }, [n, j, v]);
-  i.useLayoutEffect(() => (f.addEventListener("mousedown", E), f.addEventListener("contextmenu", E), y.subscribe(x.CkL.POPOUT_CLOSE, O), () => {
-    f.removeEventListener("mousedown", E), f.removeEventListener("contextmenu", E), y.unsubscribe(x.CkL.POPOUT_CLOSE, O)
-  }), [E, f, y]), (0, o.Tbt)(d), i.useEffect(() => {
+  i.useLayoutEffect(() => (f.addEventListener("mousedown", E), f.addEventListener("contextmenu", E), C.subscribe(x.CkL.POPOUT_CLOSE, O), () => {
+    f.removeEventListener("mousedown", E), f.removeEventListener("contextmenu", E), C.unsubscribe(x.CkL.POPOUT_CLOSE, O)
+  }), [E, f, C]), (0, o.Tbt)(d), i.useEffect(() => {
     (!v && (0, a.$s)() || v && !j) && O()
   }, [j, v]);
   let I = (0, b.Z)();
@@ -111,7 +111,7 @@ let I = i.memo(function(e) {
           className: v.positionContainer,
           role: "dialog",
           style: j,
-          "aria-label": y.intl.string(y.t["3CNGLC"]),
+          "aria-label": C.intl.string(C.t["3CNGLC"]),
           children: t && (0, r.jsx)(E, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},

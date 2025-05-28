@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   m: () => b
 }), n(388685);
@@ -23,16 +23,16 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, _ = (0, f.Z)(), [x, C] = r.useState(!1), [y, v] = r.useState(!1), [j, O] = r.useState(!1), [E, I] = r.useState(!1), [P, S] = r.useState(!1), Z = x || y || j, N = r.useCallback(async e => {
+  } = e, _ = (0, f.Z)(), [x, y] = r.useState(!1), [C, v] = r.useState(!1), [j, O] = r.useState(!1), [E, I] = r.useState(!1), [P, S] = r.useState(!1), Z = x || C || j, N = r.useCallback(async e => {
     if (!Z) {
-      C(!0);
+      y(!0);
       try {
         await (0, p.e4)(e), I(!0), null == n || n()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
       } finally {
-        C(!1)
+        y(!1)
       }
     }
   }, [Z, n, b]), T = r.useCallback(async e => {
@@ -124,7 +124,7 @@ function b(e) {
     rejectAll: A,
     markAsNotSpam: R,
     isAcceptLoading: x,
-    isRejectLoading: y,
+    isRejectLoading: C,
     isUserProfileLoading: j,
     isOptimisticAccepted: E,
     isOptimisticRejected: P

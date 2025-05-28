@@ -281,7 +281,7 @@ function ec(e) {
     }) : (0, h.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("53912"), n.e("98254"), n.e("56826"), n.e("6589")]).then(n.bind(n, 131404));
+      } = await Promise.all([n.e("79695"), n.e("70205"), n.e("98783"), n.e("53912"), n.e("36084"), n.e("56826"), n.e("30215")]).then(n.bind(n, 131404));
       return n => (0, i.jsx)(e, ee($({}, n), {
         user: u,
         channel: t,

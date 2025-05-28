@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => T,
   m: () => Z
@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(601964),
   _ = n(430824),
   x = n(768581),
-  C = n(683818),
-  y = n(16853),
+  y = n(683818),
+  C = n(16853),
   v = n(981631),
   j = n(388032),
   O = n(901593),
@@ -98,7 +98,7 @@ function N(e) {
     entry: t
   } = e, [l, o] = i.useState(!1), c = i.useRef(null), {
     canEdit: u
-  } = (0, C.Z)(t);
+  } = (0, y.Z)(t);
   return (0, r.jsx)("div", {
     className: a()(O.actionButtonsContainer, {
       [O.forceButtonsShow]: l
@@ -130,7 +130,7 @@ function N(e) {
             })
           }))
         }
-      }) : null, (0, r.jsx)(y.Z, {
+      }) : null, (0, r.jsx)(C.Z, {
         targetElementRef: c,
         onRequestOpen: () => o(!0),
         onRequestClose: () => o(!1),
@@ -170,10 +170,10 @@ let T = e => {
   var t;
   let {
     entry: l
-  } = e, [a, p] = i.useState(!1), C = null != (0, o.e7)([_.Z], () => _.Z.getGuild(l.guildId)), y = async () => {
+  } = e, [a, p] = i.useState(!1), y = null != (0, o.e7)([_.Z], () => _.Z.getGuild(l.guildId)), C = async () => {
     p(!0);
     try {
-      C ? (0, g.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
+      y ? (0, g.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
         source: v.vtS.DIRECTORY_ENTRY
       })
     } finally {
@@ -188,7 +188,7 @@ let T = e => {
     icon: l.icon,
     size: 40
   })) ? t : void 0, Z = j.intl.string(j.t.VJlc0d);
-  return C && (Z = j.intl.string(j.t.cqWE2d)), (0, r.jsxs)("div", {
+  return y && (Z = j.intl.string(j.t.cqWE2d)), (0, r.jsxs)("div", {
     className: O.card,
     onContextMenu: e => {
       (0, c.jW)(e, async () => {
@@ -274,8 +274,8 @@ let T = e => {
       }), (0, r.jsx)(s.zxk, {
         submitting: a,
         className: O.joinButton,
-        color: C ? s.zxk.Colors.PRIMARY : s.zxk.Colors.GREEN,
-        onClick: y,
+        color: y ? s.zxk.Colors.PRIMARY : s.zxk.Colors.GREEN,
+        onClick: C,
         children: Z
       })]
     }), (0, r.jsx)(N, {

@@ -1,6 +1,6 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => y
+  Z: () => C
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -20,7 +20,7 @@ var r = n(255367),
   _ = n(388032),
   x = n(32709);
 
-function C(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,10 +39,10 @@ function C(e) {
   return e
 }
 
-function y(e) {
+function C(e) {
   let {
     channel: t
-  } = e, l = (0, o.e7)([f.default], () => f.default.getUser(t.hdStreamingBuyerId), [t.hdStreamingBuyerId]), [a, d] = (0, i.useState)(!1), [h, _] = (0, i.useState)(!1), x = (0, g.bK)(), [y, j] = (0, i.useState)(!1);
+  } = e, l = (0, o.e7)([f.default], () => f.default.getUser(t.hdStreamingBuyerId), [t.hdStreamingBuyerId]), [a, d] = (0, i.useState)(!1), [h, _] = (0, i.useState)(!1), x = (0, g.bK)(), [C, j] = (0, i.useState)(!1);
   (0, u.ZP)(() => {
     t.isHDStreamSplashed && j(!0)
   }), (0, g.Uu)(t),
@@ -56,7 +56,7 @@ function y(e) {
         let {
           default: t
         } = await n.e("88452").then(n.bind(n, 552394));
-        return n => (0, r.jsx)(t, C({
+        return n => (0, r.jsx)(t, y({
           markAsDismissed: u,
           channel: e
         }, n))
@@ -77,7 +77,7 @@ function y(e) {
     }, 25e3);
     return () => clearTimeout(e)
   });
-  let E = y ? [s.z.HD_STREAMING_POTION_BANNER] : [],
+  let E = C ? [s.z.HD_STREAMING_POTION_BANNER] : [],
     [I, P] = (0, p.US)(E);
   return null == l ? null : (0, r.jsxs)(r.Fragment, {
     children: [a && (0, r.jsx)(v, {
@@ -88,7 +88,7 @@ function y(e) {
       buyer: l,
       streaming: !0,
       onClose: () => {
-        _(!1), y && P(b.L.DISMISS)
+        _(!1), C && P(b.L.DISMISS)
       }
     })]
   })
@@ -137,7 +137,7 @@ function v(e) {
       className: a()(x.content, {
         [x.masked]: s
       }),
-      children: [(0, r.jsx)(c.qEK, C({
+      children: [(0, r.jsx)(c.qEK, y({
         src: m,
         "aria-label": n.username,
         size: c.EFr.SIZE_32

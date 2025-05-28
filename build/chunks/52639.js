@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => x
 });
@@ -27,8 +27,8 @@ function x(e) {
   } = e, {
     analyticsLocations: x
   } = (0, l.ZP)(), {
-    context: C
-  } = (0, s.KZ)(), y = (0, i.Z)(), {
+    context: y
+  } = (0, s.KZ)(), C = (0, i.Z)(), {
     mutualFriendsCount: v,
     mutualFriends: j,
     mutualGuilds: O
@@ -57,7 +57,7 @@ function x(e) {
       section: "MUTUAL_FRIENDS",
       header: b.intl.string(b.t["0mTJ3t"]),
       listClassName: _.list,
-      onExpand: () => (0, u.Z)(t.id, y),
+      onExpand: () => (0, u.Z)(t.id, C),
       items: null == j ? Array.from({
         length: v
       }).map((e, t) => (0, r.jsxs)("div", {
@@ -98,7 +98,7 @@ function x(e) {
                 })
               }
               return e
-            }({}, C), t = t = {
+            }({}, y), t = t = {
               userId: i.id,
               sourceAnalyticsLocations: x
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

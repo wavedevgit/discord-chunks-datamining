@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -25,11 +25,11 @@ let b = function(e) {
     closePicker: _
   } = (0, s.B)(), {
     canAccessPicker: x,
-    entryPoint: C
+    entryPoint: y
   } = (0, c.m)({
     location: "channel_header_toolbar",
     selectedChannelId: t.id
-  }), y = (0, u.wE)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = x && C === o.FN.TOOLBAR && y, [j, O] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = j === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, I = i.useCallback(() => {
+  }), C = (0, u.wE)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = x && y === o.FN.TOOLBAR && C, [j, O] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = j === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, I = i.useCallback(() => {
     E && O(m.L.TAKE_ACTION), n === t.id ? (_(), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
       action: "close"
     })) : (b(t.id), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {

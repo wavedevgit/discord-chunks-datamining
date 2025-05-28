@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => e_
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(407477),
   _ = n(633302),
   x = n(856985),
-  C = n(868643),
-  y = n(245216),
+  y = n(868643),
+  C = n(245216),
   v = n(223606),
   j = n(188597),
   O = n(41776),
@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(995774),
   w = n(931651),
   R = n(280845),
-  M = n(2818),
-  k = n(768943),
+  k = n(2818),
+  M = n(768943),
   L = n(665906),
   D = n(695346),
   U = n(314897),
@@ -208,7 +208,7 @@ function ef(e) {
       author: s
     } = n, u = (0, c.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), d = (0, c.e7)([U.default], () => U.default.getId()), p = (0, L.$R)(t), m = (0, L.Gu)(t), g = D.nc.useSetting(), b = D.Sb.useSetting(), _ = (0, c.e7)([H.Z], () => null == t.guild_id || H.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: x,
-      canAddNewReactions: y
+      canAddNewReactions: C
     } = (0, c.cj)([V.Z], () => ({
       canAddNewReactions: _ && V.Z.can(ei.Plq.ADD_REACTIONS, t),
       canManageMessages: V.Z.can(ei.Plq.MANAGE_MESSAGES, t)
@@ -223,7 +223,7 @@ function ef(e) {
         channel: t,
         canChat: _,
         renderReactions: g,
-        canAddNewReactions: y,
+        canAddNewReactions: C,
         isLurking: I,
         isGuest: P,
         isActiveChannelOrUnarchivableThread: p
@@ -233,13 +233,13 @@ function ef(e) {
       Y = null != z && (n.type === ei.uaV.USER_JOIN || n.type === ei.uaV.GUILD_INVITE_REMINDER) && V.Z.canWithPartialContext(ei.Plq.MANAGE_GUILD, {
         guildId: z
       }),
-      q = (0, C.a)(n),
+      q = (0, y.a)(n),
       {
         enabled: $
-      } = M.Z.useExperiment({
+      } = k.Z.useExperiment({
         location: "message_utilities"
       }),
-      ee = (0, c.e7)([k.Z], () => null != k.Z.getSavedMessage(t.id, n.id)),
+      ee = (0, c.e7)([M.Z], () => null != M.Z.getSavedMessage(t.id, n.id)),
       et = (0, er.Z)(),
       en = (0, c.e7)([h.Z], () => h.Z.keyboardModeEnabled);
     return {
@@ -279,13 +279,13 @@ function ef(e) {
     ea({
       emojiPicker: !Y
     })
-  }, [Y, ea]), e_ = (0, L.$R)(t), ex = n.hasFlag(ei.iLy.CROSSPOSTED), [eC, ey] = (0, m.cv)(A ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ev = eC === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(!1), eE = i.useCallback(() => {
+  }, [Y, ea]), e_ = (0, L.$R)(t), ex = n.hasFlag(ei.iLy.CROSSPOSTED), [ey, eC] = (0, m.cv)(A ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ev = ey === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(!1), eE = i.useCallback(() => {
     eO(!0)
   }, []), eI = i.useCallback(() => {
     eO(!1)
   }, []), eP = i.useCallback((e, t) => {
-    ey(el.L.TAKE_ACTION), (0, ee.ts)(e, t)
-  }, [ey]), {
+    eC(el.L.TAKE_ACTION), (0, ee.ts)(e, t)
+  }, [eC]), {
     canShowReactionsOnMessageHover: eS
   } = b.ZP.useExperiment({
     location: "ExpandingButtons"
@@ -380,7 +380,7 @@ function ef(e) {
       onClick: () => (0, ee.Hd)(t, n)
     }, "edit") : null, A ? (0, r.jsx)($.sF, {
       label: eo.intl.string(eo.t.I3ltXF),
-      icon: y.Z,
+      icon: C.Z,
       onClick: () => eP(t, n),
       onTooltipShow: eE,
       onTooltipHide: eI,

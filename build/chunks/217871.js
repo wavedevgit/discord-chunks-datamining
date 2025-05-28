@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => E
 }), n(388685), n(358797);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(351780),
   _ = n(843693),
   x = n(641033),
-  C = n(989830),
-  y = n(388032),
+  y = n(989830),
+  C = n(388032),
   v = n(837265);
 let j = i.memo(function(e) {
     let {
@@ -80,7 +80,7 @@ let j = i.memo(function(e) {
             color: u
           },
           variant: "text-sm/bold",
-          children: y.intl.format(y.t["6bgVlp"], {
+          children: C.intl.format(C.t["6bgVlp"], {
             multiplier: n
           })
         }), o && (0, r.jsxs)(r.Fragment, {
@@ -112,7 +112,7 @@ let j = i.memo(function(e) {
         }), 1 === n && (0, r.jsx)(c.Text, {
           className: v.tip,
           variant: "text-sm/bold",
-          children: y.intl.string(y.t.b5Cpoa)
+          children: C.intl.string(C.t.b5Cpoa)
         })]
       })]
     })
@@ -123,7 +123,7 @@ let j = i.memo(function(e) {
     } = e, n = (0, s.e7)([h.default], () => h.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), a = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([_.ZP], () => _.ZP.isComboing(n, t), [t, n]), {
       ref: p,
       width: m = 0
-    } = (0, u.ZP)(), [g, x] = i.useState(!1), y = (0, C.Z)(t), E = a && d && l;
+    } = (0, u.ZP)(), [g, x] = i.useState(!1), C = (0, y.Z)(t), E = a && d && l;
     i.useEffect(() => {
       E && x(!0);
       let e = setTimeout(() => x(E), 1e3);
@@ -135,10 +135,10 @@ let j = i.memo(function(e) {
         pointerEvents: "none",
         config: o.config.stiff
       }),
-      P = i.useMemo(() => null != y ? y : {
+      P = i.useMemo(() => null != C ? C : {
         value: 0,
         multiplier: 1
-      }, [y]),
+      }, [C]),
       S = i.useRef(P);
     i.useEffect(() => {
       (P.multiplier > 1 || P.value > 0) && (S.current = P)

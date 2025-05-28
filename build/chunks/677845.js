@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => I
 }), n(539854);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(470956),
   _ = n(430824),
   x = n(496675),
-  C = n(434488),
-  y = n(27457),
+  y = n(434488),
+  C = n(27457),
   v = n(251564),
   j = n(695492),
   O = n(981631),
@@ -38,7 +38,7 @@ function I(e) {
     totalNumberOfParticipants: T
   } = e, A = (0, c.bp)() === O.IlC.POPOUT, w = (0, o.e7)([_.Z], () => _.Z.getGuild(S.guild_id), [S.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
-  } = (0, v.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(S.id), [S]), k = (0, b.bt)(S.id, t), L = i.useCallback(() => {
+  } = (0, v.d)(), k = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(S.id), [S]), M = (0, b.bt)(S.id, t), L = i.useCallback(() => {
     (0, a.j)(() => {
       v.d.setState({
         dismissedActivityEntryPointTileChannel: S.id
@@ -59,7 +59,7 @@ function I(e) {
     F = (0, f.wE)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     H = (0, d.KF)(S.id) !== d.jy.CAN_LAUNCH,
     V = null != R && R === S.id,
-    z = k.map(e => t => (0, r.jsx)(y.ZP, {
+    z = M.map(e => t => (0, r.jsx)(C.ZP, {
       participant: e,
       channel: S,
       className: E.tile,
@@ -81,30 +81,30 @@ function I(e) {
     }
   }, {
     trackOnInitialLoad: !0
-  }, []), null != w && !U && (!(M >= 2) || !G || H || F || V ? B && 1 === M && D && (G && !H ? z.push(e => (0, r.jsx)(C.h, {
+  }, []), null != w && !U && (!(k >= 2) || !G || H || F || V ? B && 1 === k && D && (G && !H ? z.push(e => (0, r.jsx)(y.h, {
     channel: S,
     guild: w,
     width: e,
     inPopout: A,
     handleClose: L,
-    userParticipantCount: M
+    userParticipantCount: k
   })) : z.push(e => (0, r.jsx)(j.Z, {
     width: e,
     channel: S,
     guild: w,
     inPopout: A
-  }))) : z.push(e => (0, r.jsx)(C.h, {
+  }))) : z.push(e => (0, r.jsx)(y.h, {
     channel: S,
     guild: w,
     width: e,
     inPopout: A,
     handleClose: L,
-    userParticipantCount: M
+    userParticipantCount: k
   })));
   let W = i.useCallback(e => {
     var t, n;
-    return null != (n = null == (t = k[e]) ? void 0 : t.id) ? n : "empty-tile"
-  }, [k]);
+    return null != (n = null == (t = M[e]) ? void 0 : t.id) ? n : "empty-tile"
+  }, [M]);
   return (0, r.jsx)(g.Z, {
     className: Z,
     keyExtractor: W,

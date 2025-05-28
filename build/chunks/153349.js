@@ -1,6 +1,6 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(670188),
   _ = n(271383),
   x = n(496675),
-  C = n(158776),
-  y = n(471253),
+  y = n(158776),
+  C = n(471253),
   v = n(431328),
   j = n(145834),
   O = n(590415),
@@ -100,21 +100,21 @@ let A = i.memo(function(e) {
     let {
       isMobile: I,
       status: P
-    } = (0, c.cj)([C.Z], () => ({
-      isMobile: C.Z.isMobileOnline(l.user.id),
-      status: C.Z.getStatus(l.user.id, E)
+    } = (0, c.cj)([y.Z], () => ({
+      isMobile: y.Z.isMobileOnline(l.user.id),
+      status: y.Z.getStatus(l.user.id, E)
     })), A = (0, c.e7)([_.ZP], () => _.ZP.getMember(E, l.user.id)), w = (0, g.X)(t.guild_id, null == A ? void 0 : A.colorStrings), R = i.useMemo(() => ({
       [E]: [l.user.id]
     }), [E, l.user.id]);
     (0, f.$)(R);
-    let M = l.rtsState === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+    let k = l.rtsState === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 
-    function k() {
-      (0, y.DT)(t, l.user.id, !1)
+    function M() {
+      (0, C.DT)(t, l.user.id, !1)
     }
 
     function L() {
-      (0, y.DT)(t, l.user.id, !0)
+      (0, C.DT)(t, l.user.id, !0)
     }
     let D = e => {
       (0, d.jW)(e, async () => {
@@ -168,13 +168,13 @@ let A = i.memo(function(e) {
           }))
         }
       }), (0, r.jsx)(u.ua7, {
-        text: M ? S.intl.string(S.t.h9rsTU) : S.intl.string(S.t.f0T7hI),
+        text: k ? S.intl.string(S.t.h9rsTU) : S.intl.string(S.t.f0T7hI),
         children: e => (0, r.jsx)(u.zxk, T(N({}, e), {
           innerClassName: Z.buttonContainer,
           look: u.zxk.Looks.BLANK,
           size: u.zxk.Sizes.NONE,
-          onClick: k,
-          disabled: M || x,
+          onClick: M,
+          disabled: k || x,
           children: (0, r.jsx)(u.Lrb, {
             size: "xs",
             color: "currentColor"
@@ -206,7 +206,7 @@ let A = i.memo(function(e) {
       children: S.intl.string(S.t.GYCh0d)
     })
   }),
-  M = i.memo(function() {
+  k = i.memo(function() {
     return (0, r.jsxs)("div", {
       className: Z.emptyStateContainer,
       children: [(0, r.jsx)(I.Z, {}), (0, r.jsx)(u.Text, {
@@ -223,7 +223,7 @@ let A = i.memo(function(e) {
     })
   });
 
-function k(e) {
+function M(e) {
   let {
     channel: t,
     toggleRequestToSpeakSidebar: n,
@@ -263,7 +263,7 @@ function k(e) {
               channel: t
             }, "rts-toggle");
           case 1: {
-            if (0 === l.length) return (0, r.jsx)(M, {}, "participants-empty");
+            if (0 === l.length) return (0, r.jsx)(k, {}, "participants-empty");
             let e = l[i];
             return (0, r.jsx)(w, {
               channel: t,

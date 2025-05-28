@@ -2,9 +2,9 @@
 n.d(t, {
   Z: () => o
 });
-var r = n(255367);
+var i = n(255367);
 n(73800);
-var i = n(481060),
+var r = n(481060),
   l = n(247206),
   a = n(388032);
 
@@ -12,28 +12,28 @@ function o(e, t) {
   return null != t && (0, l.KP)({
     type: l.lJ.GenericMedia,
     media: t
-  }, (0, l.HH)(e)) ? (0, r.jsx)(i.sNh, {
+  }, (0, l.HH)(e)) ? (0, i.jsx)(r.sNh, {
     id: "report-image-false-positive",
     label: a.intl.string(a.t.ZH7P2t),
     action: () => {
-      (0, i.ZDy)(async () => {
+      (0, r.ZDy)(async () => {
         let {
-          default: i
+          default: r
         } = await n(788679);
-        return n => (0, r.jsx)(i, function(e) {
+        return n => (0, i.jsx)(r, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            }))), i.forEach(function(t) {
+              var i;
+              i = n[t], t in e ? Object.defineProperty(e, t, {
+                value: i,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = r
+              }) : e[t] = i
             })
           }
           return e
@@ -44,6 +44,6 @@ function o(e, t) {
         }, n))
       })
     },
-    icon: i.fFY
+    icon: r.fFY
   }, "report-image-false-positive") : null
 }

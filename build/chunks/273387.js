@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => x
 }), n(388685);
@@ -146,20 +146,20 @@ let x = new _(l.Z, {
     let {
       channelId: b,
       entry: _
-    } = e, x = (0, a.MQ)(_), C = null == (t = h[b]) ? void 0 : t[x.guildId];
+    } = e, x = (0, a.MQ)(_), y = null == (t = h[b]) ? void 0 : t[x.guildId];
     h[b] = u(c({}, h[b]), {
-      [x.guildId]: c({}, C, x)
+      [x.guildId]: c({}, y, x)
     });
-    let y = null != (i = null == C ? void 0 : C.primaryCategoryId) ? i : o.AR.UNCATEGORIZED,
+    let C = null != (i = null == y ? void 0 : y.primaryCategoryId) ? i : o.AR.UNCATEGORIZED,
       v = null != (l = x.primaryCategoryId) ? l : o.AR.UNCATEGORIZED,
-      j = Object.assign({}, null == (n = m[b]) ? void 0 : n[y]);
-    null != C && y !== v && delete j[x.guildId], m[b] = u(c({}, m[b]), {
-      [y]: j,
+      j = Object.assign({}, null == (n = m[b]) ? void 0 : n[C]);
+    null != y && C !== v && delete j[x.guildId], m[b] = u(c({}, m[b]), {
+      [C]: j,
       [v]: u(c({}, null == (r = m[b]) ? void 0 : r[v]), {
-        [x.guildId]: c({}, C, x)
+        [x.guildId]: c({}, y, x)
       })
-    }), v !== y && null != g[b] && (g[b] = u(c({}, g[b]), {
-      [y]: (null == (s = g[b]) ? void 0 : s[y]) > 0 ? (null == (d = g[b]) ? void 0 : d[y]) - 1 : 0,
+    }), v !== C && null != g[b] && (g[b] = u(c({}, g[b]), {
+      [C]: (null == (s = g[b]) ? void 0 : s[C]) > 0 ? (null == (d = g[b]) ? void 0 : d[C]) - 1 : 0,
       [v]: (null != (f = null == (p = g[b]) ? void 0 : p[v]) ? f : 0) + 1
     }))
   },

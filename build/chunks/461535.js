@@ -1,52 +1,52 @@
-/** Chunk was on 86715 **/
-t.d(e, {
-  Z: () => O
-}), t(388685);
-var r = t(255367);
-t(73800);
-var i = t(442837),
-  l = t(481060),
-  a = t(45114),
-  c = t(456269),
-  o = t(344185),
-  s = t(569471),
-  u = t(131704),
-  d = t(324067),
-  f = t(306680),
-  h = t(981631),
-  b = t(388032);
+/** Chunk was on 86797 **/
+n.d(e, {
+  Z: () => g
+}), n(388685);
+var i = n(255367);
+n(73800);
+var r = n(442837),
+  l = n(481060),
+  a = n(45114),
+  o = n(456269),
+  c = n(344185),
+  s = n(569471),
+  u = n(131704),
+  d = n(324067),
+  f = n(306680),
+  h = n(981631),
+  b = n(388032);
 
-function O(n) {
-  let e = function(n) {
-    let e = (0, c.n2)(n.guild_id, n.id),
-      t = (0, i.e7)([f.ZP, d.Z, o.Z, s.Z], () => {
-        if (n.isForumPost()) return f.ZP.isForumPostUnread(n.id);
-        if (n.type !== h.d4z.GUILD_CATEGORY) return f.ZP.hasUnreadOrMentions(n.id);
+function g(t) {
+  let e = function(t) {
+    let e = (0, o.n2)(t.guild_id, t.id),
+      n = (0, r.e7)([f.ZP, d.Z, c.Z, s.Z], () => {
+        if (t.isForumPost()) return f.ZP.isForumPostUnread(t.id);
+        if (t.type !== h.d4z.GUILD_CATEGORY) return f.ZP.hasUnreadOrMentions(t.id);
         {
-          let e = d.Z.getCategories(n.getGuildId());
-          if (null == e[n.id]) return !1;
-          if (e[n.id].some(n => {
+          let e = d.Z.getCategories(t.getGuildId());
+          if (null == e[t.id]) return !1;
+          if (e[t.id].some(t => {
               let {
                 channel: e
-              } = n;
+              } = t;
               return (0, u.Em)(e.type) && f.ZP.hasUnreadOrMentions(e.id)
             })) return !0;
-          let t = new Set(e[n.id].map(n => n.channel.id)),
-            r = o.Z.getThreadsForGuild(n.guild_id);
-          for (let n in r)
-            if (t.has(n)) {
-              for (let e in r[n])
+          let n = new Set(e[t.id].map(t => t.channel.id)),
+            i = c.Z.getThreadsForGuild(t.guild_id);
+          for (let t in i)
+            if (n.has(t)) {
+              for (let e in i[t])
                 if (s.Z.hasJoined(e) && !s.Z.isMuted(e) && f.ZP.hasUnreadOrMentions(e)) return !0
             } return !1
         }
-      }, [n]);
-    return n.isForumLikeChannel() ? e > 0 : t
-  }(n);
-  return (0, r.jsx)(l.sNh, {
+      }, [t]);
+    return t.isForumLikeChannel() ? e > 0 : n
+  }(t);
+  return (0, i.jsx)(l.sNh, {
     id: "mark-channel-read",
     label: b.intl.string(b.t.e6RscX),
     action: function() {
-      (0, a.U6)(n)
+      (0, a.U6)(t)
     },
     disabled: !e
   })

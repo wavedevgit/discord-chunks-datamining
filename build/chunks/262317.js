@@ -1,8 +1,8 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   XX: () => R,
-  ZP: () => k,
-  ul: () => M
+  ZP: () => M,
+  ul: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -21,8 +21,8 @@ var r = n(255367),
   b = n(569545),
   _ = n(102172),
   x = n(525925),
-  C = n(701362),
-  y = n(670188),
+  y = n(701362),
+  C = n(670188),
   v = n(597998),
   j = n(314897),
   O = n(430824),
@@ -80,7 +80,7 @@ function R(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     numAudience: t,
     collapsed: n
@@ -105,14 +105,14 @@ function M(e) {
     })]
   })
 }
-let k = (0, p.$)(function(e) {
+let M = (0, p.$)(function(e) {
   var t;
   let {
     collapsed: l,
     user: p,
     channel: R,
-    mute: M,
-    localMute: k,
+    mute: k,
+    localMute: M,
     localVideoDisabled: L,
     deaf: D,
     video: U,
@@ -169,7 +169,7 @@ let k = (0, p.$)(function(e) {
         })
       }))
     })
-  }, e_ = () => (0, r.jsx)(C.Z, {
+  }, e_ = () => (0, r.jsx)(y.Z, {
     user: p,
     channel: R,
     onWatch: eg,
@@ -181,8 +181,8 @@ let k = (0, p.$)(function(e) {
         user: p,
         speaking: z,
         disconnected: W,
-        mute: M,
-        localMute: k,
+        mute: k,
+        localMute: M,
         localVideoDisabled: L,
         isStreaming: K,
         isGuest: Q,
@@ -254,14 +254,14 @@ let k = (0, p.$)(function(e) {
         onKeyDown: e.onKeyDown
       }))
     })
-  }, eC = (0, r.jsx)("div", {
+  }, ey = (0, r.jsx)("div", {
     className: T.draggable,
     "data-dnd-name": R.name,
     onMouseEnter: el ? void 0 : () => {
       K && !ed && (null == $ || $(p.id))
     },
     onMouseLeave: el ? void 0 : ef,
-    children: (0, r.jsx)(y.Z, {
+    children: (0, r.jsx)(C.Z, {
       clickTrap: (null == p ? void 0 : p.id) === (null == (t = I.default.getCurrentUser()) ? void 0 : t.id) && ed,
       targetElementRef: eu,
       user: p,
@@ -273,5 +273,5 @@ let k = (0, p.$)(function(e) {
       children: e => ex(e)
     })
   });
-  return q ? Y(eC) : eC
+  return q ? Y(ey) : ey
 })

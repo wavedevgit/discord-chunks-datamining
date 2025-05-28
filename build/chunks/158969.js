@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => E
 });
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(930282),
   _ = n(318713),
   x = n(981631),
-  C = n(388032),
-  y = n(684525),
+  y = n(388032),
+  C = n(684525),
   v = n(848697),
   j = n(73433);
 let O = i.memo(function(e) {
@@ -32,18 +32,18 @@ let O = i.memo(function(e) {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: a()(y.blockedNoticeContainer, {
-          [y.compact]: i
+        className: a()(C.blockedNoticeContainer, {
+          [C.compact]: i
         }),
         children: [(0, r.jsx)("div", {
-          className: y.blockedNoticeIcon,
+          className: C.blockedNoticeIcon,
           children: (0, r.jsx)(u.b7C, {
             size: "xs",
             color: "currentColor",
-            className: y.shieldIcon
+            className: C.shieldIcon
           })
         }), (0, r.jsx)("div", {
-          className: y.blockedNotice,
+          className: C.blockedNotice,
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "interactive-normal",
@@ -51,8 +51,8 @@ let O = i.memo(function(e) {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: a()(y.ephemeralAccessories, {
-          [y.compact]: i
+        className: a()(C.ephemeralAccessories, {
+          [C.compact]: i
         }),
         children: (0, r.jsx)(m.Z, {
           message: t,
@@ -61,8 +61,8 @@ let O = i.memo(function(e) {
             variant: "text-xs/normal",
             color: "interactive-normal",
             tag: "span",
-            className: y.learnMore,
-            children: C.intl.format(C.t.Nd3Gh4, {
+            className: C.learnMore,
+            children: y.intl.format(y.t.Nd3Gh4, {
               helpUrl: f.Z.getArticleURL(x.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
           })
@@ -89,8 +89,8 @@ let O = i.memo(function(e) {
       className: a()(l, j.markup, {
         [v.messageContent]: !0,
         [v.markupRtl]: "rtl" === s()(u.content),
-        [y.blockedEdit]: null == P ? void 0 : P.isBlockedEdit,
-        [y.blockedSend]: !(null == P ? void 0 : P.isBlockedEdit)
+        [C.blockedEdit]: null == P ? void 0 : P.isBlockedEdit,
+        [C.blockedSend]: !(null == P ? void 0 : P.isBlockedEdit)
       }),
       children: [null != f ? f : (0, b.L5)(u, m), (null == P ? void 0 : P.isBlockedEdit) && null != u.timestamp && (0, r.jsxs)(r.Fragment, {
         children: [" ", (0, r.jsx)(_.Z, {
@@ -99,11 +99,11 @@ let O = i.memo(function(e) {
           isInline: !1,
           children: (0, r.jsxs)("span", {
             className: v.edited,
-            children: ["(", C.intl.string(C.t.Z7eEx8), ")"]
+            children: ["(", y.intl.string(y.t.Z7eEx8), ")"]
           })
         })]
       }), (0, r.jsx)(O, {
-        notice: null != (n = null == P ? void 0 : P.errorMessage) ? n : C.intl.string(C.t.zQ69pq),
+        notice: null != (n = null == P ? void 0 : P.errorMessage) ? n : y.intl.string(y.t.zQ69pq),
         message: u,
         compact: o,
         onDismiss: S

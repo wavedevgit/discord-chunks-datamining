@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => Z
 });
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(501801),
   _ = n(884902),
   x = n(271383),
-  C = n(430824),
-  y = n(5192),
+  y = n(430824),
+  C = n(5192),
   v = n(776767),
   j = n(981631),
   O = n(388032),
@@ -36,7 +36,7 @@ function S(e) {
     guild: o
   } = e, {
     analyticsLocations: d
-  } = (0, p.ZP)(), m = g.nm(n), C = g.QM(n), v = null == (t = g.V$(j.zUn.REASON, n)) ? void 0 : t.newValue, P = g.J5(n), S = (0, h.LJ)(n.id), Z = (0, c.e7)([x.ZP], () => null != n.userId ? x.ZP.getMember(l.guildId, n.userId) : null, [l.guildId, n.userId]), N = (0, _.X)(null == Z ? void 0 : Z.guildId, null == Z ? void 0 : Z.colorStrings), T = i.useCallback(e => t => {
+  } = (0, p.ZP)(), m = g.nm(n), y = g.QM(n), v = null == (t = g.V$(j.zUn.REASON, n)) ? void 0 : t.newValue, P = g.J5(n), S = (0, h.LJ)(n.id), Z = (0, c.e7)([x.ZP], () => null != n.userId ? x.ZP.getMember(l.guildId, n.userId) : null, [l.guildId, n.userId]), N = (0, _.X)(null == Z ? void 0 : Z.guildId, null == Z ? void 0 : Z.colorStrings), T = i.useCallback(e => t => {
     t.preventDefault(), t.stopPropagation(), null != e && (0, f.RE)(e, d)
   }, [d]), A = i.useCallback(() => null == n.user ? null : (0, r.jsx)(u.ua7, {
     text: O.intl.string(O.t.mvsi9v),
@@ -56,7 +56,7 @@ function S(e) {
           variant: "text-sm/medium",
           tag: "span",
           children: ["@", (0, r.jsx)(u.PUh, {
-            name: y.ZP.getName(l.guildId, null, n.user),
+            name: C.ZP.getName(l.guildId, null, n.user),
             color: null != (t = null == Z ? void 0 : Z.colorString) ? t : void 0,
             roleColors: N
           })]
@@ -74,10 +74,10 @@ function S(e) {
           variant: "text-sm/semibold",
           color: "header-primary",
           children: m
-        }), null != C && (0, r.jsxs)(u.Text, {
+        }), null != y && (0, r.jsxs)(u.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: ["(", "string" == typeof C ? C : s()(C).fromNow(), ")"]
+          children: ["(", "string" == typeof y ? y : s()(y).fromNow(), ")"]
         })]
       }), (0, r.jsx)("div", {
         className: E.auditLogItemDate,
@@ -132,7 +132,7 @@ function S(e) {
 function Z(e) {
   let {
     member: t
-  } = e, n = (0, c.e7)([C.Z], () => C.Z.getGuild(t.guildId), [t.guildId]), l = (0, c.e7)([m.Z], () => {
+  } = e, n = (0, c.e7)([y.Z], () => y.Z.getGuild(t.guildId), [t.guildId]), l = (0, c.e7)([m.Z], () => {
     let e = m.Z.logs;
     return null == e || null == n ? [] : g._$(e, n)
   }, [n]);

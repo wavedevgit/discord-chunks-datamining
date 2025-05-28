@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => B,
   i: () => U
@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(330010),
   _ = n(978946),
   x = n(314897),
-  C = n(430824),
-  y = n(594174),
+  y = n(430824),
+  C = n(594174),
   v = n(259580),
   j = n(585483),
   O = n(63063),
@@ -35,8 +35,8 @@ var r = n(255367),
   A = n(881454),
   w = n(435921),
   R = n(538548),
-  M = n(753033),
-  k = n(15717);
+  k = n(753033),
+  M = n(15717);
 
 function L(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -111,13 +111,13 @@ function U(e) {
 function B(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([C.Z], () => null != t ? C.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && I.default.extractTimestamp(l.id) < Date.now() - S._8R, v = (0, s.e7)([x.default], () => (null == l ? void 0 : l.ownerId) === x.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && I.default.extractTimestamp(l.id) < Date.now() - S._8R, v = (0, s.e7)([x.default], () => (null == l ? void 0 : l.ownerId) === x.default.getId(), [l]), {
     canInvite: B,
     canManageGuild: G,
     canMessage: F
-  } = (0, m.TE)(t, l), H = (0, s.e7)([y.default], () => {
+  } = (0, m.TE)(t, l), H = (0, s.e7)([C.default], () => {
     var e, t;
-    return (null == (e = y.default.getCurrentUser()) ? void 0 : e.desktop) === !0 || (null == (t = y.default.getCurrentUser()) ? void 0 : t.mobile) === !0
+    return (null == (e = C.default.getCurrentUser()) ? void 0 : e.desktop) === !0 || (null == (t = C.default.getCurrentUser()) ? void 0 : t.mobile) === !0
   }), {
     guildPopulated: V,
     guildMessaged: z,
@@ -266,7 +266,7 @@ function B(e) {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(U, {
-      iconUrl: ei ? u.$_T : M,
+      iconUrl: ei ? u.$_T : k,
       header: N.intl.string(N.t.c5kxPj),
       completed: W,
       onClick: K
@@ -277,7 +277,7 @@ function B(e) {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(U, {
-      iconUrl: ei ? u.qMX : k,
+      iconUrl: ei ? u.qMX : M,
       header: N.intl.string(N.t["SoP7+v"]),
       completed: z,
       onClick: q

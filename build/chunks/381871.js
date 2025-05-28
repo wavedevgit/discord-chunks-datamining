@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => U
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(594174),
   _ = n(176354),
   x = n(823379),
-  C = n(74538),
-  y = n(401062),
+  y = n(74538),
+  C = n(401062),
   v = n(696900),
   j = n(456631),
   O = n(963838),
@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(474936),
   w = n(526761),
   R = n(388032),
-  M = n(934680);
-let k = T.Hz.CHAT,
+  k = n(934680);
+let M = T.Hz.CHAT,
   L = {
     section: Z.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "voice_channel_effect_emoji_picker"
@@ -48,10 +48,10 @@ function U(e) {
     channel: n,
     closePopout: m,
     onFocus: x
-  } = e, T = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, a.e7)([b.default], () => b.default.getCurrentUser()), B = C.ZP.canUseFancyVoiceChannelReactions(U), G = (0, a.e7)([v.Z], () => v.Z.getState().animationType), F = i.useRef(!1), H = i.useRef(null), V = (0, f.wC)(n.guild_id), z = (0, l.uniqBy)([...V, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
+  } = e, T = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, a.e7)([b.default], () => b.default.getCurrentUser()), B = y.ZP.canUseFancyVoiceChannelReactions(U), G = (0, a.e7)([v.Z], () => v.Z.getState().animationType), F = i.useRef(!1), H = i.useRef(null), V = (0, f.wC)(n.guild_id), z = (0, l.uniqBy)([...V, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: n,
-    intention: k
+    intention: M
   })).slice(0, N.e5), W = (null != (t = j.Z.recentlyUsedEmojis) ? t : []).filter(e => !z.slice(0, N.e5 - 1).some(t => t.name === e.name));
   W.length > 0 && z.splice(z.length - 1, 1, W[0]);
   let Y = (0, O.Iu)(G),
@@ -59,10 +59,10 @@ function U(e) {
       c.Z.dispatch({
         type: "VOICE_CHANNEL_EFFECT_RECENT_EMOJI",
         emoji: e
-      }), (0, y.Lx)({
+      }), (0, C.Lx)({
         channel: n,
         emoji: e,
-        location: y.yX.EMOJI_PICKER,
+        location: C.yX.EMOJI_PICKER,
         animationType: G,
         animationId: Y,
         isPremium: B
@@ -110,7 +110,7 @@ function U(e) {
         renderPopout: () => (0, r.jsx)("div", {
           onMouseEnter: x,
           children: (0, r.jsx)(g.ZP, {
-            className: M.reducedMotionTooltip,
+            className: k.reducedMotionTooltip,
             header: R.intl.string(R.t["6gGHnZ"]),
             content: R.intl.string(R.t.S2RGUF),
             onClick: () => {

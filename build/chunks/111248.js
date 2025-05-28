@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => _
 }), n(388685);
@@ -25,8 +25,8 @@ function _(e) {
     height: l,
     channel: _,
     participants: x,
-    onSelectParticipant: C
-  } = e, [y, v] = function() {
+    onSelectParticipant: y
+  } = e, [C, v] = function() {
     let [e, t] = i.useState(() => s.K.get(b, h.VD2.BOTTOM_RIGHT));
     return [e, i.useCallback(e => {
       s.K.set(b, e), t(e)
@@ -49,7 +49,7 @@ function _(e) {
   return (0, r.jsx)("div", {
     className: m.container,
     children: (0, r.jsx)(u._, {
-      position: y,
+      position: C,
       id: 0,
       width: P,
       ref: j,
@@ -73,7 +73,7 @@ function _(e) {
           inCall: !0,
           inPopout: !1,
           width: 160,
-          onClick: C
+          onClick: y
         }, e.id))
       })
     })

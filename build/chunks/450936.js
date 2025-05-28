@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => b
 });
@@ -25,10 +25,10 @@ function b(e) {
     if (!0 !== _.isDM()) return null;
     let e = f.default.getUser(_.getRecipientId());
     return void 0 === e || !0 !== e.bot ? null : e
-  }, [_]), C = (0, i.e7)([d.Z], () => {
+  }, [_]), y = (0, i.e7)([d.Z], () => {
     var e;
     return d.Z.isFetchingProfile(null != (e = null == x ? void 0 : x.id) ? e : m.lds)
-  }), y = (0, o.Z)(C), v = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == x ? void 0 : x.id)), j = (0, i.e7)([d.Z], () => {
+  }), C = (0, o.Z)(y), v = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == x ? void 0 : x.id)), j = (0, i.e7)([d.Z], () => {
     var e;
     return null !== x ? null == (e = d.Z.getUserProfile(null == x ? void 0 : x.id)) ? void 0 : e.application : void 0
   }), O = null != v ? v : null == j ? void 0 : j.id;
@@ -70,8 +70,8 @@ function b(e) {
     application: A,
     isInitialLoading: w,
     primaryEntryPointCommand: I,
-    isProfileFetching: C,
-    wasProfileFetching: null != y ? y : null,
+    isProfileFetching: y,
+    wasProfileFetching: null != C ? C : null,
     applicationId: O,
     channelId: _.id,
     commands: P

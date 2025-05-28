@@ -1,11 +1,11 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Dr: () => _,
   Rq: () => g,
   So: () => b,
   Su: () => x,
   YZ: () => h,
-  _Q: () => C,
+  _Q: () => y,
   bF: () => f,
   c$: () => p,
   kx: () => m
@@ -155,7 +155,7 @@ let g = i()(async (e, t) => {
       channelId: e,
       categoryId: t
     })
-  }, C = async (e, t) => {
+  }, y = async (e, t) => {
     try {
       let n = await a.tn.get({
         url: d.ANM.DIRECTORY_CHANNEL_LIST_BY_ID(e),

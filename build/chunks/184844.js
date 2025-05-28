@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 e.exports = {
   container: "container__34c2c",
   header: "header__34c2c",
@@ -7,6 +7,7 @@ e.exports = {
   button: "button__34c2c",
   reactButtons: "reactButtons__34c2c",
   loading: "loading__34c2c",
+  reportedMessageActions: "reportedMessageActions__34c2c",
   hasNoReactions: "hasNoReactions__34c2c",
   reactions: "reactions__34c2c",
   buttons: "buttons__34c2c",

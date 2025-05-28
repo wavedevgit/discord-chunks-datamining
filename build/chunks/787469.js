@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => _
 }), n(642613);
@@ -24,7 +24,7 @@ function _(e) {
   } = e, n = (0, o.e7)([p.Z], () => p.Z.getGuild(t.guildId)), l = (0, o.e7)([p.Z], () => p.Z.getRoles(t.guildId)), _ = i.useMemo(() => null == n ? [] : null == t.highestRoleId ? t.roles : Object.values(l).filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)).sort((e, t) => {
     var n, r;
     return null != (r = null != (n = null == e ? void 0 : e.position) ? n : 0 - (null == t ? void 0 : t.position)) ? r : 0
-  }).map(e => e.id), [t.roles, t.highestRoleId, n, l]), x = (0, o.e7)([c.Z], () => c.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), C = (0, u.zq)(x), y = (0, u.vN)(t), v = (0, o.e7)([h.Z], () => h.Z.can(m.Plq.MANAGE_ROLES, n), [n]);
+  }).map(e => e.id), [t.roles, t.highestRoleId, n, l]), x = (0, o.e7)([c.Z], () => c.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), y = (0, u.zq)(x), C = (0, u.vN)(t), v = (0, o.e7)([h.Z], () => h.Z.can(m.Plq.MANAGE_ROLES, n), [n]);
   return null == n ? null : (0, r.jsx)(s.xJW, {
     title: g.intl.string(g.t.LPJmLy),
     titleClassName: b.infoTitle,
@@ -46,7 +46,7 @@ function _(e) {
                 onMouseLeave: i,
                 children: (0, r.jsx)(d.Z, {
                   className: a()(b.roleTooltipItem, b.highestRole),
-                  role: C,
+                  role: y,
                   guildId: t.guildId
                 })
               })
@@ -66,7 +66,7 @@ function _(e) {
               } = e;
               return (0, r.jsx)(s.P3F, {
                 className: b.addRoleContainer,
-                onClick: y,
+                onClick: C,
                 onMouseEnter: t,
                 onMouseLeave: n,
                 children: (0, r.jsx)(s.oFk, {

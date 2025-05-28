@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => x
 }), n(388685);
@@ -23,15 +23,15 @@ function _(e) {
     chatWallpaperState: t
   } = e, n = c.qM.useExperiment({
     location: "channel_chat_wallpaper"
-  }).enabled, d = (0, h.Z)(t.wallpaperId), f = null != d ? (0, a.I)(d.asset) : null, _ = (null == d ? void 0 : d.thumbhash) != null ? (0, l.xS)(b.from(d.thumbhash, "base64")) : void 0, [x, C] = i.useState(_);
+  }).enabled, d = (0, h.Z)(t.wallpaperId), f = null != d ? (0, a.I)(d.asset) : null, _ = (null == d ? void 0 : d.thumbhash) != null ? (0, l.xS)(b.from(d.thumbhash, "base64")) : void 0, [x, y] = i.useState(_);
   return (i.useEffect(() => {
     null == f && t.isViewable && u.Z.shouldFetchWallpapers && (0, p.k9)()
   }, [f, t.isViewable]), i.useEffect(() => {
-    if (null == f) return void C(void 0);
+    if (null == f) return void y(void 0);
     let e = performance.now();
-    C(_), (0, o.p)(f, t => {
+    y(_), (0, o.p)(f, t => {
       if (t === f) {
-        C(void 0);
+        y(void 0);
         let n = performance.now();
         s.default.track(m.rMx.CHAT_WALLPAPER_DOWNLOADED, {
           time_used_in_ms: n - e,

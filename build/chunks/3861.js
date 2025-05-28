@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => v
 });
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(236564),
   _ = n(45430),
   x = n(981631),
-  C = n(354459),
-  y = n(363987);
+  y = n(354459),
+  C = n(363987);
 let v = (0, o.Z)(e => {
   let {
     participants: t,
@@ -40,16 +40,16 @@ let v = (0, o.Z)(e => {
     height: A,
     idle: w,
     mode: R,
-    popoutWindow: M,
-    awaitingRemoteSessionInfo: k,
+    popoutWindow: k,
+    awaitingRemoteSessionInfo: M,
     callContainerDimensions: L
   } = e;
   i.useEffect(() => {
     p.S.dispatch(x.CkL.REMEASURE_TARGET)
   }, [T, A, L.width, L.height]);
   let D = (0, d.Q3)("ChannelCallContent"),
-    U = i.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, o]);
-  return (null == k ? void 0 : k.channelId) === I.id ? (0, r.jsx)(f.Z, {
+    U = i.useMemo(() => n.filter(e => e.type !== y.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, o]);
+  return (null == M ? void 0 : M.channelId) === I.id ? (0, r.jsx)(f.Z, {
     height: A
   }) : (null == I ? void 0 : I.isGuildVocal()) && !Z ? (0, r.jsx)(h.Z, {
     channel: I,
@@ -58,22 +58,22 @@ let v = (0, o.Z)(e => {
   }) : R === x.WtW.VOICE ? (0, r.jsx)(c.Z, {
     guildId: I.guild_id,
     width: T,
-    className: y.voiceCallWrapper,
+    className: C.voiceCallWrapper,
     participants: t,
     onContextMenu: O
   }) : (n = Z ? n : t, null == l) ? 0 === n.length ? D ? (0, r.jsx)(_.Z, {
     channelId: I.id
   }) : (0, r.jsx)(b.Z, {
-    className: a()(y.videoGrid, y.hiddenParticipants),
+    className: a()(C.videoGrid, C.hiddenParticipants),
     channelId: I.id,
     width: T
   }) : (0, r.jsx)(u.Z, {
-    className: y.videoGridWrapper,
+    className: C.videoGridWrapper,
     justify: u.Z.Justify.CENTER,
     align: u.Z.Align.CENTER,
     children: (0, r.jsx)(m.Z, {
       channel: I,
-      className: y.videoGrid,
+      className: C.videoGrid,
       participants: U,
       totalNumberOfParticipants: t.length,
       onClick: j,
@@ -88,7 +88,7 @@ let v = (0, o.Z)(e => {
     selectedParticipant: l,
     filteredParticipants: U,
     participants: t,
-    popoutWindow: M,
+    popoutWindow: k,
     className: S,
     idle: w,
     height: A,

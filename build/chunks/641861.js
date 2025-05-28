@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => v
 });
@@ -20,8 +20,8 @@ var i = n(120356),
   b = n(430824),
   _ = n(933557),
   x = n(354459),
-  C = n(388032),
-  y = n(249671);
+  y = n(388032),
+  C = n(249671);
 
 function v(e) {
   let {
@@ -47,30 +47,30 @@ function v(e) {
   }, {
     disableTrack: O
   }, [t.id]), O) ? null : (0, r.jsxs)("div", {
-    className: l()(y.themed, y.chatHeaderBar),
+    className: l()(C.themed, C.chatHeaderBar),
     children: [(0, r.jsxs)("div", {
-      className: y.chatHeaderBarInfo,
+      className: C.chatHeaderBarInfo,
       children: [(0, r.jsx)(f.ZP, {
-        className: y.mask,
+        className: C.mask,
         mask: f.QS.SQUIRCLE,
         width: 24,
         height: 24,
         children: null == v ? (0, r.jsx)("div", {
-          className: l()(y.guildIcon, y.guildIconWithoutImage),
+          className: l()(C.guildIcon, C.guildIconWithoutImage),
           children: (0, r.jsx)("div", {
-            className: y.guildAcronym,
+            className: C.guildAcronym,
             children: null == g ? void 0 : g.acronym
           })
         }) : (0, r.jsx)("img", {
           alt: null == g ? void 0 : g.toString(),
           src: v,
-          className: y.guildIcon
+          className: C.guildIcon
         })
       }), (0, r.jsx)(c.Text, {
-        className: y.chatHeaderBarText,
+        className: C.chatHeaderBarText,
         variant: "text-md/medium",
         color: "header-secondary",
-        children: C.intl.format(C.t.f2tNxM, {
+        children: y.intl.format(y.t.f2tNxM, {
           username: null == t ? void 0 : t.globalName,
           channelName: (0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
@@ -92,7 +92,7 @@ function j(e) {
     channelId: t,
     recipientUserId: n,
     isUserRinging: i
-  } = e, a = (0, m.Q3)("RingUserButton"), o = i ? C.intl.string(C.t.ygslb2) : C.intl.string(C.t["3Hv9qa"]), d = i ? () => u.Z.stopRinging(t, [n]) : () => {
+  } = e, a = (0, m.Q3)("RingUserButton"), o = i ? y.intl.string(y.t.ygslb2) : y.intl.string(y.t["3Hv9qa"]), d = i ? () => u.Z.stopRinging(t, [n]) : () => {
     u.Z.ring(t, [n], "dm_banner"), (0, g.Kh)(t)
   };
   return a ? (0, r.jsx)(s.z, {
@@ -104,14 +104,14 @@ function j(e) {
     onClick: d
   }) : (0, r.jsxs)(c.zxk, {
     size: c.zxk.Sizes.SMALL,
-    className: y.chatHeaderBarButton,
-    innerClassName: y.chatHeaderBarButtonInner,
+    className: C.chatHeaderBarButton,
+    innerClassName: C.chatHeaderBarButtonInner,
     color: "custom",
     onClick: d,
     children: [(0, r.jsx)(c.gj8, {
       size: "xs",
       color: "currentColor",
-      className: l()(i ? y.voiceIconRinging : y.voiceIcon)
+      className: l()(i ? C.voiceIconRinging : C.voiceIcon)
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/semibold",
       color: i ? "text-danger" : "text-primary",

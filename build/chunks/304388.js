@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -71,8 +71,8 @@ let p = i.forwardRef(function(e, t) {
     onPopoutOpen: g,
     onPopoutClose: b,
     onRequestClose: _
-  } = e, [x, C] = i.useState(!1), {
-    isHovered: y,
+  } = e, [x, y] = i.useState(!1), {
+    isHovered: C,
     setIsHovered: v,
     onMouseEnter: j,
     onMouseLeave: O,
@@ -88,14 +88,14 @@ let p = i.forwardRef(function(e, t) {
   }
 
   function S(e) {
-    E(), C(!x), x ? null == b || b() : null == g || g(), (!y || x) && e()
+    E(), y(!x), x ? null == b || b() : null == g || g(), (!C || x) && e()
   }
   i.useImperativeHandle(t, () => ({
     hidePopout() {
-      v(!1), C(!1)
+      v(!1), y(!1)
     }
-  }), [v, C]);
-  let Z = y && !m || x;
+  }), [v, y]);
+  let Z = C && !m || x;
   return (0, r.jsx)(a.yRy, {
     targetElementRef: p,
     animation: a.yRy.Animation.FADE,
@@ -106,11 +106,11 @@ let p = i.forwardRef(function(e, t) {
     spacing: 16,
     onRequestClose: () => {
       if ((null == _ ? void 0 : _()) === l.F) return l.F;
-      v(!1), C(!1), null == b || b()
+      v(!1), y(!1), null == b || b()
     },
     renderPopout: e => (0, r.jsx)(d, u({
       isHovered: Z,
-      onFocus: () => C(!0),
+      onFocus: () => y(!0),
       onMouseEnter: j,
       onMouseLeave: P,
       renderPopout: n

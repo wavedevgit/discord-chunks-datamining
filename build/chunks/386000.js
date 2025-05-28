@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => m
 });
@@ -24,8 +24,8 @@ function m(e) {
     awaitingRemote: b,
     onMouseEnter: _,
     onMouseLeave: x,
-    onClick: C
-  } = e, y = function(e, t) {
+    onClick: y
+  } = e, C = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -80,7 +80,7 @@ function m(e) {
       null == x || x(e), T.onMouseLeave()
     },
     onClick: e => {
-      null == C || C(e), (0, d.v)(v, d.d.MIC, t)
+      null == y || y(e), (0, d.v)(v, d.d.MIC, t)
     }
-  }, y))
+  }, C))
 }

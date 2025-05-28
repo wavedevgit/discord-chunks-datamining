@@ -1,4 +1,4 @@
-/** Chunk was on 23445 **/
+/** Chunk was on 62423 **/
 n.d(t, {
   Z: () => E
 });
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(502762),
   _ = n(848780),
   x = n(907179),
-  C = n(228168),
-  y = n(388032),
+  y = n(228168),
+  C = n(388032),
   v = n(443773),
   j = n(268293);
 
@@ -66,7 +66,7 @@ function E(e) {
         ref: T,
         user: t,
         displayProfile: I,
-        themeType: C.lY.SIDEBAR,
+        themeType: y.lY.SIDEBAR,
         themeOverride: P,
         children: (0, r.jsx)(l.u2, {
           children: (0, r.jsxs)("div", {
@@ -84,10 +84,10 @@ function E(e) {
                   user: t
                 }), (0, r.jsx)(o.X6q, {
                   variant: "heading-lg/bold",
-                  children: y.intl.string(y.t.b33pLC)
+                  children: C.intl.string(C.t.b33pLC)
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
-                  children: y.intl.format(S ? y.t["8F+WNz"] : y.t["/cZp5u"], {
+                  children: C.intl.format(S ? C.t["8F+WNz"] : C.t["/cZp5u"], {
                     username: p.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]
