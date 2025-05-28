@@ -1,17 +1,17 @@
 /** Chunk was on 2535 **/
-r.d(t, {
-  Z: () => c
+n.d(t, {
+  Z: () => o
 });
-var n = r(255367);
-r(73800);
-var i = r(481060),
-  o = r(547972),
-  l = r(326528);
+var r = n(255367);
+n(73800);
+var i = n(481060),
+  l = n(547972),
+  a = n(326528);
 
-function c() {
-  return (0, l.b)().map(e => (0, n.jsx)(i.sNh, {
+function o() {
+  return (0, a.b)().map(e => (0, r.jsx)(i.sNh, {
     id: e.id,
     label: e.title,
-    action: () => (0, o.Z)(e.id)
+    action: () => (0, l.Z)(e.id)
   }, e.id))
 }
