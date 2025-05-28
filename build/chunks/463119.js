@@ -149,7 +149,7 @@ let k = e => {
   G = e => (0, r.jsx)(U, R(w({}, e), {
     children: (0, r.jsx)(k, {})
   })),
-  B = i.memo(function(e) {
+  V = i.memo(function(e) {
     var t;
     let {
       displayOptions: n,
@@ -180,7 +180,7 @@ let k = e => {
       })]
     })
   }),
-  V = e => {
+  B = e => {
     let t, n;
     var l, c, u, h, f, g, m, b, _, O, y, I, {
         displayOptions: v
@@ -198,9 +198,9 @@ let k = e => {
       G = i.useCallback(e => {
         j(!1), null == e || e()
       }, []),
-      V = v.title();
+      B = v.title();
     return (0, r.jsx)(s.ua7, {
-      text: (0, r.jsx)(B, {
+      text: (0, r.jsx)(V, {
         displayOptions: v,
         assetId: v.assetIds[N],
         reducedMotion: S
@@ -210,7 +210,7 @@ let k = e => {
       delay: 100,
       allowOverflow: !0,
       hideOnClick: !1,
-      "aria-label": "string" == typeof V ? V : x.intl.string(x.t.rSXaxc),
+      "aria-label": "string" == typeof B ? B : x.intl.string(x.t.rSXaxc),
       children: e => (0, r.jsxs)(U, R(w(R(w({
         className: null != v.entryPointClassName ? (0, E.l)(L, v.entryPointClassName) : void 0
       }, C), {
@@ -353,7 +353,7 @@ let k = e => {
           displayOptions: s
         }));
       case P.k2.COACHTIP:
-        return (0, r.jsx)(V, R(w({}, p), {
+        return (0, r.jsx)(B, R(w({}, p), {
           displayOptions: s
         }));
       case P.k2.BADGE:

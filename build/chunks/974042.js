@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  ZP: () => B
+  ZP: () => V
 }), n(539854), n(388685);
 var r, i = n(392711),
   l = n.n(i),
@@ -231,7 +231,7 @@ class G extends(r = a.ZP.Store) {
   }
 }
 I(G, "displayName", "FriendsStore");
-let B = new G(o.Z, {
+let V = new G(o.Z, {
   CONNECTION_OPEN: function() {
     k()
   },
