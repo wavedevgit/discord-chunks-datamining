@@ -1,50 +1,50 @@
-/** Chunk was on 48007 **/
-s.d(e, {
-  RY: () => a,
-  Tb: () => r,
-  ec: () => h,
-  iD: () => i
-}), s(388685);
-var l = s(570140),
-  n = s(830168);
+/** Chunk was on 1272 **/
+n.d(t, {
+  RY: () => l,
+  Tb: () => o,
+  ec: () => s,
+  iD: () => a
+}), n(388685);
+var r = n(570140),
+  i = n(830168);
 
-function a(t) {
-  n.Z.queryDirectory(t, (e, s) => {
-    null == e && null != s && l.Z.dispatch({
+function l(e) {
+  i.Z.queryDirectory(e, (t, n) => {
+    null == t && null != n && r.Z.dispatch({
       type: "INSTALLATION_LOCATION_ADD",
-      path: t,
-      metadata: s
+      path: e,
+      metadata: n
     })
   })
 }
 
-function i(t) {
-  l.Z.dispatch({
+function a(e) {
+  r.Z.dispatch({
     type: "INSTALLATION_LOCATION_REMOVE",
-    path: t
+    path: e
   })
 }
 
-function r(t, e) {
+function o(e, t) {
   let {
-    label: s,
-    isDefault: n
-  } = e;
-  l.Z.dispatch({
+    label: n,
+    isDefault: i
+  } = t;
+  r.Z.dispatch({
     type: "INSTALLATION_LOCATION_UPDATE",
-    path: t,
-    label: s,
-    isDefault: n
+    path: e,
+    label: n,
+    isDefault: i
   })
 }
 
-function h(t) {
-  let e = {},
-    s = 0;
-  for (let a of t) null != a && "string" == typeof a && n.Z.queryDirectory(a, (n, i) => {
-    ++s, null == n && null != i && (e[a] = i), s === t.length && l.Z.dispatch({
+function s(e) {
+  let t = {},
+    n = 0;
+  for (let l of e) null != l && "string" == typeof l && i.Z.queryDirectory(l, (i, a) => {
+    ++n, null == i && null != a && (t[l] = a), n === e.length && r.Z.dispatch({
       type: "INSTALLATION_LOCATION_FETCH_METADATA",
-      metadataPayload: e
+      metadataPayload: t
     })
   })
 }

@@ -1,10 +1,2 @@
-/** Chunk was on web.js **/
-"use strict";
-var r = {
-  wrapper: "wrapper_eb1a4c",
-  base: "base_eb1a4c",
-  selectable: "selectable_eb1a4c",
-  muted: "muted_eb1a4c",
-  uppercase: "uppercase_eb1a4c"
-};
-e.exports = r
+/** Chunk was on 84159 **/
+s.exports = JSON.parse('{"cgdAs7":"(एक नए टैब में खुलेगा)"}')

@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => j
 }), n(388685);
 var r = n(255367),
-  o = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  s = n(73800),
+  o = n(120356),
+  a = n.n(o),
   i = n(505266),
   l = n(867309),
   c = n(240894),
@@ -22,22 +22,22 @@ let b = ["#51BC9D"],
     var t;
     let {
       expansionSpring: n,
-      overlayRef: s,
+      overlayRef: o,
       quest: j,
       progressBarRef: v,
       isExpanded: y
     } = e, {
       completionSpring: _,
       startCompletionAnimation: O
-    } = (0, f.G)(), C = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = o.useRef(!1), S = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), P = o.useRef(null), E = (0, u.e7)([m.Z], () => m.Z.hasLayers()), T = (0, d.Z)(E), [N, A] = o.useState(null), [R, k] = o.useState(null), B = o.useRef(new i.qA({
+    } = (0, f.G)(), C = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = s.useRef(!1), S = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), P = s.useRef(null), E = (0, u.e7)([m.Z], () => m.Z.hasLayers()), T = (0, d.Z)(E), [N, A] = s.useState(null), [R, k] = s.useState(null), B = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), q = (0, i.uR)(N, R), I = o.useCallback(() => {
+    })), q = (0, i.uR)(N, R), I = s.useCallback(() => {
       if (S) return;
       let e = v.current,
         t = P.current;
       if (null != t && null != e && q.isReady) {
-        var n, r, o, s, a, i;
+        var n, r, s, o, a, i;
         let {
           x: l,
           y: c
@@ -45,7 +45,7 @@ let b = ["#51BC9D"],
           x: u,
           y: d
         } = t.getBoundingClientRect();
-        q.createMultipleConfetti((n = l - u, r = c - d, o = e.clientHeight, s = e.clientWidth, a = function(e) {
+        q.createMultipleConfetti((n = l - u, r = c - d, s = e.clientHeight, o = e.clientWidth, a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -70,8 +70,8 @@ let b = ["#51BC9D"],
               y: r
             },
             maxValue: {
-              x: n + o,
-              y: r + s
+              x: n + s,
+              y: r + o
             }
           },
           velocity: {
@@ -111,13 +111,13 @@ let b = ["#51BC9D"],
         }), a), 100)
       }
     }, [v, P, q, S]), D = (0, d.Z)(y);
-    return (o.useEffect(() => {
+    return (s.useEffect(() => {
       C && y && !D && (O(), I())
-    }, [y, C, O, I, D]), o.useEffect(() => {
+    }, [y, C, O, I, D]), s.useEffect(() => {
       C && !E && T && setTimeout(() => {
         O(), I()
       }, 200)
-    }, [C, T, E, O, I]), o.useEffect(() => {
+    }, [C, T, E, O, I]), s.useEffect(() => {
       q.isReady && (!w.current && C && (O(), I()), w.current = C)
     }, [C, w, I, O, q]), S) ? null : (0, r.jsxs)("div", {
       className: x.wrapper,
@@ -151,12 +151,12 @@ let b = ["#51BC9D"],
           colors: b,
           spriteWidth: g.Ko,
           spriteHeight: g.Ko
-        }), null != s.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
+        }), null != o.current && (0, l.createPortal)((0, r.jsx)(c.animated.div, {
           className: a()(x.borders, x.bordersBottom),
           style: {
             opacity: _
           }
-        }), s.current)]
+        }), o.current)]
       })]
     })
   }

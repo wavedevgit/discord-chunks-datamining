@@ -1,0 +1,2 @@
+/** Chunk was on 33203 **/
+i.exports = JSON.parse('{"MkgMBw":"Vai online per condividere l\'attivit\xe0","Poezn5":"Vai online","qKDqen":"Vai online per condividere l\'attivit\xe0","jfDsyM":"Condivisione limitata","TvK8dH":["Mostra ancora ",[1,"numTruncated"]],"a3AofX":"Imposta lo stato online"}')

@@ -1,4 +1,4 @@
-/** Chunk was on 89515 **/
+/** Chunk was on 67127 **/
 e.exports = {
   verifyConnectedAccount: "verifyConnectedAccount_fb52a4",
   logos: "logos_fb52a4",

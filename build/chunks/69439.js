@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => C
 }), n(388685);
 var r = n(255367),
-  o = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  s = n(73800),
+  o = n(120356),
+  a = n.n(o),
   i = n(442837),
   l = n(481060),
   c = n(607070),
@@ -35,9 +35,9 @@ let _ = [{
 
 function O(e) {
   let t, n, {
-    value: o
+    value: s
   } = e;
-  switch (o) {
+  switch (s) {
     case j.cd.DESKTOP:
       n = (0, r.jsx)(l.pzj, {}), t = v.intl.string(v.t.QXc019);
       break;
@@ -54,7 +54,7 @@ function O(e) {
 }
 
 function C(e) {
-  var t, n, s, C;
+  var t, n, o, C;
   let {
     quest: w,
     location: S,
@@ -76,11 +76,11 @@ function C(e) {
     isClaiming: m.Z.isClaimingReward(w.id) || m.Z.isFetchingRewardCode(w.id),
     isEnrolling: m.Z.isEnrolling(w.id),
     isQuestEnrollmentBlocked: null != m.Z.questEnrollmentBlockedUntil
-  })), W = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, Z = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, V = Z && (null == (s = w.userStatus) ? void 0 : s.claimedAt) == null, Q = (0, g.iQ)(w), H = !(0, g.zi)(w), U = (0, p._Q)(w), z = (0, g.Xv)(w.config), F = (0, g.q8)(w), K = (0, g.Vl)(w), X = o.useRef(null), Y = (0, p.Rf)(w), [G, J, $] = (0, p.me)(w, Y), ee = H && U === p.OH.ACCEPTED, et = ee && G === f.LI.SELECT, en = ee && !et && J.length > 1, er = o.useCallback(e => {
+  })), Z = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, W = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, V = W && (null == (o = w.userStatus) ? void 0 : o.claimedAt) == null, Q = (0, g.iQ)(w), H = !(0, g.zi)(w), U = (0, p._Q)(w), z = (0, g.Xv)(w.config), F = (0, g.q8)(w), K = (0, g.Vl)(w), X = s.useRef(null), Y = (0, p.Rf)(w), [G, J, $] = (0, p.me)(w, Y), ee = H && U === p.OH.ACCEPTED, et = ee && G === f.LI.SELECT, en = ee && !et && J.length > 1, er = s.useCallback(e => {
     $(e), e === j.cd.DESKTOP && P([])
   }, [$, P]), {
-    text: eo,
-    onClick: es
+    text: es,
+    onClick: eo
   } = (0, x.Ks)({
     progressState: U,
     quest: w,
@@ -112,10 +112,10 @@ function C(e) {
   return (Q && V ? ec = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
     submitting: D,
-    onClick: null != es ? es : void 0,
+    onClick: null != eo ? eo : void 0,
     className: y.button,
-    children: eo
-  }) : Z ? ec = F ? (0, r.jsxs)(r.Fragment, {
+    children: es
+  }) : W ? ec = F ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zxk, {
       color: l.Ttl.PRIMARY,
       className: y.button,
@@ -137,21 +137,21 @@ function C(e) {
     }), (0, r.jsx)(l.zxk, {
       color: l.Ttl.BRAND,
       className: y.button,
-      onClick: null != es ? es : void 0,
-      children: eo
+      onClick: null != eo ? eo : void 0,
+      children: es
     })]
   }) : (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
     className: y.button,
-    onClick: null != es ? es : void 0,
-    children: eo
+    onClick: null != eo ? eo : void 0,
+    children: es
   }) : H ? H && V ? ec = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
     submitting: D,
-    onClick: null != es ? es : void 0,
+    onClick: null != eo ? eo : void 0,
     className: y.button,
-    children: eo
-  }) : H && W && !el ? ec = et ? (0, r.jsx)(l.PhF, {
+    children: es
+  }) : H && Z && !el ? ec = et ? (0, r.jsx)(l.PhF, {
     className: y.platformSelectorPrimary,
     isSelected: () => !1,
     options: _,
@@ -169,8 +169,8 @@ function C(e) {
   }) : (0, g.$J)(w) && !q && G !== f.LI.DESKTOP ? B ? (0, r.jsx)(l.zxk, {
     color: l.Ttl.PRIMARY,
     className: y.button,
-    onClick: null != es ? es : void 0,
-    children: eo
+    onClick: null != eo ? eo : void 0,
+    children: es
   }) : (0, r.jsx)(l.zxk, {
     color: l.Ttl.PRIMARY,
     onClick: ei,
@@ -182,15 +182,15 @@ function C(e) {
     })
   }) : F || K && w.config.features.includes(j.S7.START_QUEST_CTA) ? (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
-    onClick: null != es ? es : void 0,
+    onClick: null != eo ? eo : void 0,
     className: y.button,
-    children: eo
+    children: es
   }) : (0, r.jsx)(l.zxk, {
     color: l.Ttl.PRIMARY,
     disabled: !0,
     className: y.button,
     children: v.intl.string(v.t["9KoPyM"])
-  }) : H && !W && (ec = L ? (0, r.jsxs)(r.Fragment, {
+  }) : H && !Z && (ec = L ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zxk, {
       color: l.Ttl.PRIMARY,
       className: y.button,
@@ -205,9 +205,9 @@ function C(e) {
   }) : (0, r.jsx)(l.zxk, {
     submitting: M,
     color: l.Ttl.BRAND,
-    onClick: null != es ? es : void 0,
+    onClick: null != eo ? eo : void 0,
     className: y.button,
-    children: eo
+    children: es
   })) : ec = (0, r.jsx)(l.zxk, {
     color: l.Ttl.PRIMARY,
     disabled: !0,

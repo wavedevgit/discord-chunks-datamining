@@ -1,6 +1,6 @@
 /**
   Module ID: 88622
-  Original File Name: 36ab1ff41c4eb2e5
+  Original File Name: ec7447c437a3a92f
 **/
 .wrapper_b76891 {
     align-items: center;
@@ -134,6 +134,20 @@
 
 .submenuIcon_e9b191:active {
     color: var(--interactive-active)
+}
+
+.hidden__7d7b6 {
+    opacity: 0
+}
+
+.imageVideoOverlay__7d7b6 {
+    border-radius: inherit;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%
 }
 
 .modalRoot__5b400 {
@@ -358,7 +372,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    opacity: 1;
     transition: opacity .7s;
     width: auto;
     z-index: 0
@@ -368,7 +381,6 @@
     height: 100%;
     left: 0;
     object-fit: cover;
-    opacity: 0;
     position: absolute;
     top: 0;
     transition: opacity .4s;
@@ -2635,4 +2647,4 @@
     padding-top: 10px
 }
 
-/*# sourceMappingURL=36ab1ff41c4eb2e5.css.map*/
+/*# sourceMappingURL=ec7447c437a3a92f.css.map*/

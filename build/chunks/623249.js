@@ -4,9 +4,9 @@ n.d(t, {
   y: () => P
 }), n(388685);
 var r = n(255367),
-  o = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  s = n(73800),
+  o = n(120356),
+  a = n.n(o),
   i = n(442837),
   l = n(780384),
   c = n(481060),
@@ -48,17 +48,17 @@ function w(e) {
   var t;
   let {
     questId: n,
-    errorHints: s,
+    errorHints: o,
     transitionState: w,
     onClose: P
   } = e, E = (0, g.sf)(n);
   null == E && P();
-  let [T, N] = (0, o.useState)(s), A = (0, g.KX)(), R = (0, m.O5)(), k = null == (t = (0, f.WD)()) ? void 0 : t.getId(), B = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, j.g2)({
+  let [T, N] = (0, s.useState)(o), A = (0, g.KX)(), R = (0, m.O5)(), k = null == (t = (0, f.WD)()) ? void 0 : t.getId(), B = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, j.g2)({
     useReducedMotion: B,
     className: _.colorTransition
   }), I = T.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(E), M = (0, i.e7)([p.Z], () => p.Z.getState().theme), L = (0, l.wj)(M) ? v.BRd.DARK : v.BRd.LIGHT, {
-    startConsoleQuest: W,
-    startingConsoleQuest: Z
+    startConsoleQuest: Z,
+    startingConsoleQuest: W
   } = (0, g.GI)({
     questId: E.id,
     beforeRequest: () => {
@@ -112,9 +112,9 @@ function w(e) {
           children: y.intl.string(y.t["+/hZMz"])
         }), (0, r.jsxs)(c.P3F, {
           className: a()(_.refreshWrapper, {
-            [_.disabled]: Z
+            [_.disabled]: W
           }),
-          onClick: W,
+          onClick: Z,
           children: [q.render(), (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
@@ -197,9 +197,9 @@ function S(e) {
   let {
     icon: t,
     text: n,
-    errors: o = [],
-    gameTile: s
-  } = e, i = o.length > 0, l = i ? c._3e : c.B_b;
+    errors: s = [],
+    gameTile: o
+  } = e, i = s.length > 0, l = i ? c._3e : c.B_b;
   return (0, r.jsxs)("div", {
     className: _.connectionRow,
     children: [(0, r.jsxs)("div", {
@@ -215,7 +215,7 @@ function S(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: _.connectionRowHeaderContent,
-        children: [s, (0, r.jsx)(l, {
+        children: [o, (0, r.jsx)(l, {
           color: "currentColor",
           size: "sm",
           className: a()({
@@ -226,7 +226,7 @@ function S(e) {
       })]
     }), (0, r.jsx)("div", {
       className: _.errorsContainer,
-      children: o.map(e => (0, r.jsxs)("div", {
+      children: s.map(e => (0, r.jsxs)("div", {
         className: _.errorRow,
         children: [(0, r.jsx)(c.aNP, {
           size: "sm",

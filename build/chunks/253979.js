@@ -1,4 +1,2 @@
-/** Chunk was on 89373 **/
-e.exports = {
-  potionBadge: "potionBadge__18061"
-}
+/** Chunk was on 93683 **/
+s.exports = JSON.parse('{"cgdAs7":"(Откроется в новой вкладке)"}')

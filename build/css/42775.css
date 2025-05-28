@@ -1,6 +1,6 @@
 /**
   Module ID: 42775
-  Original File Name: c68886a2339e49c1
+  Original File Name: 50c69371a00a2206
 **/
 .emojiErrorItem__67954 {
     align-items: center;
@@ -226,6 +226,49 @@
     border-color: var(--interactive-active)
 }
 
+.guildSelector_f494f4 {
+    gap: 2px;
+    height: var(--custom-button-height);
+    min-height: var(--custom-button-height);
+    overflow: hidden;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content
+}
+
+.guildSelector_f494f4>div {
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content
+}
+
+.selectedIcon_f494f4 {
+    border-radius: 6px;
+    height: 24px;
+    width: 24px
+}
+
+.guildSelectOption_f494f4 {
+    align-items: center;
+    display: flex;
+    gap: var(--space-8);
+    overflow: hidden;
+    width: 100%
+}
+
+.guildSelectOption_f494f4 img {
+    border-radius: 10px;
+    height: 32px;
+    width: 32px
+}
+
+.guildSelectOptionLabel_f494f4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
+
 .imageEditor_ab2592 {
     display: flex;
     flex-direction: column;
@@ -322,44 +365,26 @@ footer {
 .grid_db78b7 {
     align-items: center;
     display: grid;
-    gap: var(--space-lg);
     grid-template-columns: 7fr auto 2fr
 }
 
-.grid_db78b7 img {
+.grid_db78b7,.preview_db78b7 {
+    gap: var(--space-lg)
+}
+
+.preview_db78b7 {
+    display: flex;
+    flex-direction: row
+}
+
+.preview_db78b7 img {
     background: var(--interactive-muted);
     height: 48px;
     width: 48px
 }
 
-.preview_db78b7 {
-    display: flex;
-    flex-direction: row;
-    gap: var(--space-lg)
-}
-
 .inputNote_db78b7 {
     white-space: nowrap
-}
-
-.select_db78b7 {
-    gap: 2px;
-    height: var(--custom-button-height);
-    min-height: var(--custom-button-height);
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content
-}
-
-.select_db78b7 img {
-    height: 24px;
-    width: 24px
-}
-
-.select_db78b7>div {
-    min-width: -webkit-min-content;
-    min-width: -moz-min-content;
-    min-width: min-content
 }
 
 .submit_db78b7 {
@@ -415,4 +440,4 @@ footer {
     filter: blur(10px)
 }
 
-/*# sourceMappingURL=c68886a2339e49c1.css.map*/
+/*# sourceMappingURL=50c69371a00a2206.css.map*/

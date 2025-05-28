@@ -1,6 +1,2 @@
-/** Chunk was on 45620 **/
-"use strict";
-n.d(t, {
-  Z: () => r
-});
-let r = "https://cdn.discordapp.com/assets/content/a892ebd2d42e6280e4db73ad66576388ec723c89b64542dc1a9a8a8b180d35e7.png"
+/** Chunk was on 12075 **/
+s.exports = JSON.parse('{"cgdAs7":"(Se abrir\xe1 en una nueva pesta\xf1a)"}')

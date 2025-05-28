@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => p
 });
 var r = n(255367),
-  o = n(73800),
-  s = n(113434),
+  s = n(73800),
+  o = n(113434),
   a = n(308069),
   i = n(613087),
   l = n(457153),
@@ -24,7 +24,7 @@ let p = function(e) {
     quest: b,
     useReducedMotion: j,
     collapsedHeight: v
-  } = e, y = o.useRef(null), _ = o.useRef(null), O = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, C = (0, s.Rf)(b);
+  } = e, y = s.useRef(null), _ = s.useRef(null), O = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, C = (0, o.Rf)(b);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: n,
     collapsedContentRef: y,

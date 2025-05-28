@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => v
 }), n(388685);
 var r = n(255367),
-  o = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  s = n(73800),
+  o = n(120356),
+  a = n.n(o),
   i = n(617136),
   l = n(113434),
   c = n(497505),
@@ -22,29 +22,29 @@ var r = n(255367),
 function j(e) {
   var t, n;
   let {
-    quest: s,
+    quest: o,
     className: c,
     questContent: d,
     contentPosition: j,
     rowIndex: v,
     impressionRef: y
-  } = e, [_, O] = o.useState(!1), [C, w] = o.useState([]), S = (0, l.qb)(s), P = o.useMemo(() => (0, u.q8)(s), [s]), E = (0, i._F)(), T = o.useCallback(() => {
+  } = e, [_, O] = s.useState(!1), [C, w] = s.useState([]), S = (0, l.qb)(o), P = s.useMemo(() => (0, u.q8)(o), [o]), E = (0, i._F)(), T = s.useCallback(() => {
     O(!0), E({
-      questId: s.id,
+      questId: o.id,
       event: h.rMx.QUEST_HOVER,
       properties: (0, i.mH)(d)
     }), P && (0, p.loadVideoQuestModal)()
-  }, [E, s.id, d, P]), N = o.useCallback(() => {
+  }, [E, o.id, d, P]), N = s.useCallback(() => {
     O(!1), E({
-      questId: s.id,
+      questId: o.id,
       event: h.rMx.QUEST_HOVER_OFF,
       properties: (0, i.mH)(d)
     })
-  }, [E, s.id, d]), A = o.useContext(f.t), {
+  }, [E, o.id, d]), A = s.useContext(f.t), {
     visibilityElementRef: R,
     almostVisibleInViewport: k
   } = function(e) {
-    let [t, n] = o.useState(!1), r = o.useCallback(e => {
+    let [t, n] = s.useState(!1), r = s.useCallback(e => {
       e.isIntersecting && n(!0)
     }, []);
     return {
@@ -57,7 +57,7 @@ function j(e) {
     }
   }(null != (n = null == A || null == (t = A.current) ? void 0 : t.getScrollerNode()) ? n : null);
   return (0, r.jsxs)("div", {
-    id: "quest-tile-".concat(s.id),
+    id: "quest-tile-".concat(o.id),
     ref: e => {
       y.current = e, R.current = e
     },
@@ -67,13 +67,13 @@ function j(e) {
     onFocus: T,
     onBlur: N,
     children: [(0, r.jsx)(g.Z, {
-      quest: s,
+      quest: o,
       isHovering: _,
       errorHints: C,
       warningHints: S,
       isVisibleInViewport: k
     }), (0, r.jsx)(x.Z, {
-      quest: s,
+      quest: o,
       questContent: d,
       isHovering: _,
       contentPosition: j,
@@ -92,7 +92,7 @@ function v(e) {
     questContentRowIndex: e.rowIndex,
     trackGuildAndChannelMetadata: e.questContent === c.jn.QUESTS_EMBED,
     children: t => {
-      var n, o;
+      var n, s;
       return (0, r.jsx)(j, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -110,17 +110,17 @@ function v(e) {
           })
         }
         return e
-      }({}, e), o = o = {
+      }({}, e), s = s = {
         impressionRef: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
+      })(Object(s)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(s, e))
       }), n))
     }
   })

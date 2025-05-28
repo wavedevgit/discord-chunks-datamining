@@ -1,18 +1,2 @@
-/** Chunk was on 81146 **/
-e.exports = {
-  container: "container__0800c",
-  slotsContainer: "slotsContainer__0800c",
-  slots: "slots__0800c",
-  slotsWide: "slotsWide__0800c",
-  slot: "slot__0800c",
-  emoji: "emoji__0800c",
-  tooltipContainer: "tooltipContainer__0800c",
-  emojiItemDisabled: "emojiItemDisabled__0800c",
-  animatedPicker: "animatedPicker__0800c",
-  animatedPickerTall: "animatedPickerTall__0800c",
-  emojiPickerHeader: "emojiPickerHeader__0800c",
-  emojiPickerHeaderExpanded: "emojiPickerHeaderExpanded__0800c",
-  dropDownContainer: "dropDownContainer__0800c",
-  dropDown: "dropDown__0800c",
-  dropDownOpen: "dropDownOpen__0800c"
-}
+/** Chunk was on 40951 **/
+t.exports = JSON.parse('{"MkgMBw":"G\xe5 online f\xf6r att dela aktivitet","Poezn5":"G\xe5 online","qKDqen":"G\xe5 online f\xf6r att dela aktivitet","jfDsyM":"Begr\xe4nsad delning","TvK8dH":["Visa ",[1,"numTruncated"]," mer"],"a3AofX":"St\xe4ller in status till online"}')

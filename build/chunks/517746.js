@@ -1,0 +1,2 @@
+/** Chunk was on 20294 **/
+e.exports = JSON.parse('{"MkgMBw":"Va en ligne pour partager ton Activit\xe9","Poezn5":"Va en ligne","qKDqen":"Va en ligne pour partager ton Activit\xe9","jfDsyM":"Partage limit\xe9","TvK8dH":["Afficher ",[1,"numTruncated"]," de plus"],"a3AofX":"D\xe9finit le statut sur \xab\xa0En ligne\xa0\xbb"}')

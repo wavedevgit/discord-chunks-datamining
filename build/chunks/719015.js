@@ -1,0 +1,2 @@
+/** Chunk was on 66432 **/
+a.exports = JSON.parse('{"MkgMBw":"Con\xe9ctate en l\xednea para compartir la actividad","Poezn5":"Con\xe9ctate en l\xednea","qKDqen":"Con\xe9ctate en l\xednea para compartir la actividad","jfDsyM":"Funci\xf3n de compartir limitada","TvK8dH":["Mostrar ",[1,"numTruncated"]," m\xe1s"],"a3AofX":"Configura el estado como en l\xednea"}')

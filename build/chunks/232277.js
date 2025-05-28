@@ -1,4 +1,4 @@
-/** Chunk was on 48007 **/
+/** Chunk was on 226 **/
 t.exports = {
   splash: "splash__15293",
   gameIcon: "gameIcon__15293",

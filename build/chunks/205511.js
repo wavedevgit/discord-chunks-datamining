@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => P
 });
 var r = n(255367),
-  o = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  s = n(73800),
+  o = n(120356),
+  a = n.n(o),
   i = n(959078),
   l = n(442837),
   c = n(481060),
@@ -38,7 +38,7 @@ function S(e) {
   let {
     quest: t,
     useReducedMotion: n
-  } = e, s = (0, f.n)(), l = (0, j.k3)(t.id, x.jn.QUEST_BAR_V2), u = (0, j.g2)({
+  } = e, o = (0, f.n)(), l = (0, j.k3)(t.id, x.jn.QUEST_BAR_V2), u = (0, j.g2)({
     useReducedMotion: n
   }), b = (0, p.O5)(), v = (0, m.aM)(), {
     errorHints: y,
@@ -57,7 +57,7 @@ function S(e) {
   }), {
     header: P,
     renderBody: E
-  } = o.useMemo(() => {
+  } = s.useMemo(() => {
     let e = y.length > 0,
       n = t.config.messages.gameTitle;
     return {
@@ -68,13 +68,13 @@ function S(e) {
       }),
       renderBody: e ? () => (0, r.jsx)(r.Fragment, {
         children: y.map((e, n) => {
-          if (e.type === i.K.EXPIRED_CREDENTIAL && s) {
-            let o = d.Z.getAccount(e.connected_account_id, e.connected_account_type),
-              s = (0, h.C9)(e),
+          if (e.type === i.K.EXPIRED_CREDENTIAL && o) {
+            let s = d.Z.getAccount(e.connected_account_id, e.connected_account_type),
+              o = (0, h.C9)(e),
               a = (0, h._j)(e);
             return (0, r.jsx)(w, {
-              children: O.intl.format(s, {
-                account_name: null == o ? void 0 : o.name,
+              children: O.intl.format(o, {
+                account_name: null == s ? void 0 : s.name,
                 onClick: () => {
                   (0, h.fY)({
                     quest: t,
@@ -101,7 +101,7 @@ function S(e) {
         })
       })
     }
-  }, [y, t, s, v]);
+  }, [y, t, o, v]);
   return (0, r.jsxs)("div", {
     className: C.microphoneUnit,
     children: [(0, r.jsxs)("div", {
@@ -136,17 +136,17 @@ let P = function(e) {
   let {
     quest: t,
     taskDetails: n
-  } = e, s = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), a = (0, g.z6)(), i = (0, b.j)({
+  } = e, o = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), a = (0, g.z6)(), i = (0, b.j)({
     location: _.dr.QUESTS_BAR
-  }), c = o.useMemo(() => (0, h.B3)(t).filter(e => a.xboxAndPlaystationAccounts.find(t => t.type === e)), [a.xboxAndPlaystationAccounts, t]), {
+  }), c = s.useMemo(() => (0, h.B3)(t).filter(e => a.xboxAndPlaystationAccounts.find(t => t.type === e)), [a.xboxAndPlaystationAccounts, t]), {
     steps: d,
     hasConnectedAccounts: p,
     isProgressingQuestForLaunchedGame: m,
     isQuestComplete: f
-  } = o.useMemo(() => {
+  } = s.useMemo(() => {
     var e;
-    let o = c.length > 0,
-      s = o && (0, h.Bz)(t),
+    let s = c.length > 0,
+      o = s && (0, h.Bz)(t),
       i = t.config.messages.gameTitle,
       l = (null == (e = t.userStatus) ? void 0 : e.completedAt) != null;
     return {
@@ -183,14 +183,14 @@ let P = function(e) {
             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
           }), e))
         },
-        isComplete: o || s || l
+        isComplete: s || o || l
       }, {
         renderContent: () => (0, r.jsx)(y.y3, {
           children: O.intl.formatToPlainString(O.t["+8JB6e"], {
             gameTitle: i
           })
         }),
-        isComplete: s || l
+        isComplete: o || l
       }, {
         renderContent: () => (0, r.jsx)(y.y3, {
           children: O.intl.formatToPlainString(O.t.HhfrYW, {
@@ -199,8 +199,8 @@ let P = function(e) {
         }),
         isComplete: l
       }],
-      hasConnectedAccounts: o,
-      isProgressingQuestForLaunchedGame: s,
+      hasConnectedAccounts: s,
+      isProgressingQuestForLaunchedGame: o,
       isQuestComplete: l
     }
   }, [a, c.length, t, n.targetMinutes]);
@@ -210,7 +210,7 @@ let P = function(e) {
     children: [i && (0, r.jsx)(y.Om, {
       quest: t
     }), p && !m && !f && (0, r.jsx)(S, {
-      useReducedMotion: s,
+      useReducedMotion: o,
       quest: t
     })]
   })

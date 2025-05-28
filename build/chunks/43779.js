@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => E
 }), n(953529);
 var r = n(255367),
-  o = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  s = n(73800),
+  o = n(120356),
+  a = n.n(o),
   i = n(240894),
   l = n(442837),
   c = n(481060),
@@ -29,7 +29,7 @@ var r = n(255367),
 let P = async () => await n.e("67963").then(n.t.bind(n, 145193, 19));
 
 function E(e) {
-  var t, n, s, E, N;
+  var t, n, o, E, N;
   let {
     quest: A,
     questContent: R,
@@ -40,12 +40,12 @@ function E(e) {
     onReceiveErrorHints: D
   } = e, M = (0, g.j)({
     location: O.dr.QUESTS_BAR_MOBILE
-  }), L = o.useMemo(() => x.r.build(A.config), [A.config]), W = L.defaultReward.messages.name, Z = L.defaultReward.messages.nameWithArticle, V = M ? W : Z, Q = (null == (t = A.userStatus) ? void 0 : t.enrolledAt) != null, {
+  }), L = s.useMemo(() => x.r.build(A.config), [A.config]), Z = L.defaultReward.messages.name, W = L.defaultReward.messages.nameWithArticle, V = M ? Z : W, Q = (null == (t = A.userStatus) ? void 0 : t.enrolledAt) != null, {
     ref: H,
     scrollHeight: U
   } = (0, u.kE)(), z = 104 !== U, {
     onAssetLoadComplete: F
-  } = o.useContext(j.k), {
+  } = s.useContext(j.k), {
     expansionSpring: K
   } = (0, c.q_F)({
     expansionSpring: +!!k,
@@ -78,10 +78,10 @@ function E(e) {
     })(Object(N)).forEach(function(e) {
       Object.defineProperty(E, e, Object.getOwnPropertyDescriptor(N, e))
     }), E)
-  }), X = (null == (n = A.userStatus) ? void 0 : n.completedAt) != null, Y = (null == (s = A.userStatus) ? void 0 : s.claimedAt) != null, G = (0, f.xN)(A.config), J = (0, f.LM)(A.config), {
+  }), X = (null == (n = A.userStatus) ? void 0 : n.completedAt) != null, Y = (null == (o = A.userStatus) ? void 0 : o.claimedAt) != null, G = (0, f.xN)(A.config), J = (0, f.LM)(A.config), {
     completedRatio: $,
     completedRatioDisplay: ee
-  } = (0, m.I)(A), et = (0, m.Bd)(A), en = o.useMemo(() => Y && G ? w.intl.format(w.t["8Op4c3"], {
+  } = (0, m.I)(A), et = (0, m.Bd)(A), en = s.useMemo(() => Y && G ? w.intl.format(w.t["8Op4c3"], {
     balanceHook: () => (0, r.jsxs)(T, {
       questId: A.id,
       children: [(0, r.jsx)(p.Z, {
@@ -91,7 +91,7 @@ function E(e) {
     })
   }) : Y ? (0, r.jsx)(T, {
     questId: A.id,
-    children: W
+    children: Z
   }) : G ? w.intl.format(w.t.ro1szc, {
     balanceHook: () => (0, r.jsxs)(T, {
       questId: A.id,
@@ -105,14 +105,14 @@ function E(e) {
       questId: A.id,
       children: V
     })
-  }), [W, Y, V, A.id, J, G]), er = o.useMemo(() => {
+  }), [Z, Y, V, A.id, J, G]), er = s.useMemo(() => {
     if (null != et) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
       className: S.description,
       children: et
     })
-  }, [et]), eo = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
+  }, [et]), es = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
     className: S.container,
     children: [(0, r.jsxs)(i.animated.div, {
@@ -135,7 +135,7 @@ function E(e) {
               className: S.confetti,
               loop: !1,
               autoplay: !1,
-              shouldAnimate: !eo
+              shouldAnimate: !es
             }), (0, r.jsx)(h.Z, {
               quest: A,
               size: 76,
@@ -200,7 +200,7 @@ function E(e) {
     })]
   })
 }
-let T = o.memo(function(e) {
+let T = s.memo(function(e) {
   let {
     questId: t,
     children: n

@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => j
 });
 var r = n(255367),
-  o = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  s = n(73800),
+  o = n(120356),
+  a = n.n(o),
   i = n(240894),
   l = n(481060),
   c = n(617136),
@@ -22,18 +22,18 @@ let j = e => {
   let {
     quest: t,
     expansionSpring: n,
-    onCtxMenuSelect: s,
+    onCtxMenuSelect: o,
     onCtxMenuOpen: j,
     onCtxMenuClose: v,
     useReducedMotion: y,
     isExpanded: _,
     isExpansionAnimationComplete: O
-  } = e, C = (0, u.aM)(), w = o.useCallback(() => {
+  } = e, C = (0, u.aM)(), w = s.useCallback(() => {
     (0, g.openDisclosureModal)(t, {
       content: d.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_DISCLOSURE
     })
-  }, [t]), S = o.useCallback(() => {
+  }, [t]), S = s.useCallback(() => {
     (0, p.FE)(t, {
       content: d.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_GAME_LINK,
@@ -96,7 +96,7 @@ let j = e => {
       }), (0, r.jsx)(f.r, {
         onOpen: j,
         onClose: v,
-        onSelect: s,
+        onSelect: o,
         questContent: d.jn.QUEST_BAR_V2,
         quest: t,
         shouldShowDisclosure: !0,

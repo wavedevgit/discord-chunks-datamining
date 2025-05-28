@@ -4,9 +4,9 @@ n.d(t, {
   yD: () => T
 });
 var r = n(255367),
-  o = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  s = n(73800),
+  o = n(120356),
+  a = n.n(o),
   i = n(481060),
   l = n(100527),
   c = n(335131),
@@ -77,7 +77,7 @@ let C = e => {
     var t;
     let {
       quest: n
-    } = e, o = null == (t = (0, d.WD)()) ? void 0 : t.getId();
+    } = e, s = null == (t = (0, d.WD)()) ? void 0 : t.getId();
     return (0, r.jsx)(i.zxk, {
       fullWidth: !0,
       className: y.cta,
@@ -86,7 +86,7 @@ let C = e => {
       }, {
         content: m.jn.QUEST_BAR_V2,
         ctaContent: u.jZ.CONNECT_CONSOLE,
-        impressionId: o
+        impressionId: s
       }),
       size: i.zxk.Sizes.SMALL,
       children: v.intl.string(v.t.csptqa)
@@ -95,23 +95,23 @@ let C = e => {
   S = e => {
     let {
       quest: t
-    } = e, n = (0, f.Vl)(t), o = t.config.features.includes(b.S7.START_QUEST_CTA), s = (0, g.CR)({
+    } = e, n = (0, f.Vl)(t), s = t.config.features.includes(b.S7.START_QUEST_CTA), o = (0, g.CR)({
       quest: t,
       location: b.dr.QUESTS_BAR
     }), {
       launchInGameActivity: a
     } = (0, p.zB)(t);
-    return n && o ? (0, r.jsx)(i.zxk, {
+    return n && s ? (0, r.jsx)(i.zxk, {
       className: y.cta,
       color: i.zxk.Colors.BRAND,
       fullWidth: !0,
       onClick: a,
       size: i.zxk.Sizes.SMALL,
-      children: s
+      children: o
     }) : null
   },
   P = e => {
-    var t, n, s, {
+    var t, n, o, {
         quest: u,
         useReducedMotion: d,
         isExpanded: p,
@@ -121,25 +121,25 @@ let C = e => {
       } = e,
       C = function(e, t) {
         if (null == e) return {};
-        var n, r, o = function(e, t) {
+        var n, r, s = function(e, t) {
           if (null == e) return {};
-          var n, r, o = {},
-            s = Object.keys(e);
-          for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-          return o
+          var n, r, s = {},
+            o = Object.keys(e);
+          for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
+          return s
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var s = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+          var o = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
         }
-        return o
+        return s
       }(e, ["quest", "useReducedMotion", "isExpanded", "className", "ctaLabel", "onClick"]);
     let w = (0, x.hf)({
         quest: u,
         location: m.jn.QUEST_BAR_V2
       }),
       S = (0, g.up)(b.dr.QUESTS_BAR),
-      P = o.useCallback(e => {
+      P = s.useCallback(e => {
         var t;
         null == O || O(e), (0, f.xN)(u.config) && (null == (t = u.userStatus) ? void 0 : t.claimedAt) != null ? (0, c.mK)({
           openInLayer: !1,
@@ -147,7 +147,7 @@ let C = e => {
           analyticsLocations: [],
           analyticsSource: l.Z.QUEST_HOME_PAGE
         }) : w()
-      }, [O, u.config, null == (s = u.userStatus) ? void 0 : s.claimedAt, w]);
+      }, [O, u.config, null == (o = u.userStatus) ? void 0 : o.claimedAt, w]);
     return (0, r.jsx)(i.gtL, (t = _({
       fullWidth: !0,
       size: i.zxk.Sizes.SMALL,
@@ -172,8 +172,8 @@ let C = e => {
     var t;
     let {
       quest: n,
-      useReducedMotion: o,
-      isExpanded: s,
+      useReducedMotion: s,
+      isExpanded: o,
       awaitingConsoleConnections: a,
       hasMadeProgress: i,
       isProgressing: l,
@@ -182,8 +182,8 @@ let C = e => {
     } = e, d = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, p = (0, f.q8)(n), g = (0, f.Vl)(n);
     if (d) return (0, r.jsx)(P, {
       quest: n,
-      useReducedMotion: o,
-      isExpanded: s
+      useReducedMotion: s,
+      isExpanded: o
     });
     if (p) return (0, r.jsx)(O, {
       quest: n,
