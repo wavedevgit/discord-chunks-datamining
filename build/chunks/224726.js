@@ -118,7 +118,8 @@ let E = function() {
             className: I.profilePreview,
             profile: T,
             disableCTA: !0,
-            onIconChange: P ? w : void 0
+            onIconChange: P ? w : void 0,
+            disableGuildNameClick: !0
           })
         })
       })]

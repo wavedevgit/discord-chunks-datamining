@@ -141,9 +141,10 @@ function O(e) {
     className: i,
     disableCTA: o,
     CTAOverride: s,
-    onClose: l
-  } = e, c = null;
-  return null != s ? c = s : o || (c = (0, r.jsx)(d.Z, {
+    onClose: l,
+    disableGuildNameClick: c
+  } = e, _ = null;
+  return null != s ? _ = s : o || (_ = (0, r.jsx)(d.Z, {
     profile: t,
     onComplete: l
   })), (0, r.jsxs)("div", {
@@ -154,12 +155,13 @@ function O(e) {
       onIconChange: n,
       profile: t
     }), (0, r.jsx)(f.Z, {
-      profile: t
+      profile: t,
+      disableGuildNameClick: c
     }), (0, r.jsx)(u.E, {
       profile: t
-    }), null != c && (0, r.jsx)("div", {
+    }), null != _ && (0, r.jsx)("div", {
       className: h.buttonContainer,
-      children: c
+      children: _
     })]
   })
 }

@@ -328,7 +328,8 @@ let R = e => {
           }), eN ? (0, r.jsx)(m.ZP, {
             profile: q,
             className: F.guildProfile,
-            disableCTA: !0
+            disableCTA: !0,
+            disableGuildNameClick: !0
           }) : (0, r.jsx)(f.Z, {
             className: F.guildProfile,
             guild: z,

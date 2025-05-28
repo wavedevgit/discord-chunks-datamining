@@ -1,6 +1,6 @@
 /** Chunk was on 12009 **/
 t.d(n, {
-  Z: () => N
+  Z: () => y
 });
 var l = t(255367),
   r = t(73800),
@@ -35,7 +35,7 @@ let Z = e => {
   }
 };
 
-function y(e) {
+function N(e) {
   let {
     guild: n
   } = e, t = () => {
@@ -63,7 +63,7 @@ function y(e) {
     }), C.intl.string(C.t["+7XY39"])]
   })
 }
-let N = r.memo(function(e) {
+let y = r.memo(function(e) {
   let {
     guild: n,
     titleClassName: r
@@ -82,7 +82,7 @@ let N = r.memo(function(e) {
         style: {
           backgroundImage: "url(".concat(c ? a : "dark" === b ? I : v, ")")
         }
-      }), f && (0, l.jsx)(y, {
+      }), f && (0, l.jsx)(N, {
         guild: n
       })]
     }), (0, l.jsx)("div", {
