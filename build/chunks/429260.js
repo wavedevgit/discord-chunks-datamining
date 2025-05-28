@@ -1,8 +1,8 @@
 /** Chunk was on 37220 **/
 n.d(t, {
   ZP: () => j,
-  eH: () => _,
-  wY: () => P
+  eH: () => P,
+  wY: () => _
 });
 var i = n(255367);
 n(73800);
@@ -21,8 +21,8 @@ var r = n(442837),
   b = n(914010),
   h = n(594174),
   O = n(970257),
-  y = n(921944),
-  E = n(388032),
+  E = n(921944),
+  y = n(388032),
   v = n(877021);
 
 function j(e) {
@@ -30,7 +30,7 @@ function j(e) {
     n = (0, p.Q_)(t);
   return (0, O.a4)(e) ? (0, i.jsx)(a.sNh, {
     id: "report",
-    label: n ? E.intl.string(E.t.n5EBAA) : E.intl.string(E.t.GwbdGR),
+    label: n ? y.intl.string(y.t.n5EBAA) : y.intl.string(y.t.GwbdGR),
     action: () => (0, f.ak)(e, "web_message_context_menu"),
     icon: n ? a.gw7 : a.U65,
     color: "danger"
@@ -46,7 +46,7 @@ function S() {
       } = e;
       return t === l.z.REPORT_TO_MOD_NEW_TAG ? (0, i.jsx)(a.IGR, {
         color: s.Z.BG_BRAND,
-        text: E.intl.string(E.t.y2b7CA)
+        text: y.intl.string(y.t.y2b7CA)
       }) : (0, i.jsx)(a.U65, {
         color: "currentColor",
         size: "refresh_sm"
@@ -55,19 +55,19 @@ function S() {
   })
 }
 
-function P(e) {
+function _(e) {
   let t = (0, r.e7)([g.Z], () => g.Z.hasReportedMessage(e.channel_id, e.id)),
     n = (0, m.sP)(e);
   return ((0, o.zq)(() => {
     n && (0, u.EW)(l.z.REPORT_TO_MOD_NEW_TAG, {
-      dismissAction: y.L.AUTO_DISMISS
+      dismissAction: E.L.AUTO_DISMISS
     })
   }), n) ? (0, i.jsx)(a.sNh, {
     id: "report-to-mod",
-    label: t ? E.intl.string(v.default["8wsdnp"]) : E.intl.string(v.default["1D+vq6"]),
+    label: t ? y.intl.string(v.default["8wsdnp"]) : y.intl.string(v.default["1D+vq6"]),
     action: () => {
       (0, u.EW)(l.z.REPORT_TO_MOD_NEW_TAG, {
-        dismissAction: y.L.USER_DISMISS
+        dismissAction: E.L.USER_DISMISS
       }), (0, f.tV)(e)
     },
     icon: (0, i.jsx)(S, {}),
@@ -75,7 +75,7 @@ function P(e) {
   }) : null
 }
 
-function _(e) {
+function P(e) {
   let t = (0, r.e7)([c.ZP], () => c.ZP.get("iar_testing")),
     n = (0, r.e7)([h.default], () => h.default.getCurrentUser());
   return (0, O.a4)(e) && null != n && n.isStaff() && t ? (0, i.jsx)(a.sNh, {

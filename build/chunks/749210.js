@@ -546,6 +546,7 @@ let G = {
       o.Z.dispatch({
         type: "GUILD_SETTINGS_LOADED_BANS_BATCH",
         bans: t.body,
+        userIds: n,
         guildId: e
       })
     })

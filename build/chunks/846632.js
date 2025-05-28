@@ -112,12 +112,11 @@ function m(e) {
               text: b.intl.string(p.default.WlENZm),
               tooltipContentClassName: C.tooltip,
               shouldShow: O,
-              children: e => (0, r.jsx)(l.zxk, h(_({
+              children: e => (0, r.jsx)(l.zxk, h(_({}, e), {
                 fullWidth: !0,
                 onClick: v,
                 submitting: y,
-                disabled: O
-              }, e), {
+                disabled: O,
                 children: b.intl.string(b.t.jwEaiY)
               }))
             }), (0, r.jsx)(l.zxk, {

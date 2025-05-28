@@ -1,6 +1,6 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  Z: () => P
+  Z: () => _
 }), n(290780);
 var i, r, l, a = n(392711),
   o = n.n(a),
@@ -15,9 +15,9 @@ var i, r, l, a = n(392711),
   b = n(375954),
   h = n(699516),
   O = n(594174);
-let y = {};
+let E = {};
 
-function E(e) {
+function y(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
@@ -36,11 +36,11 @@ function v(e) {
   let {
     channel: t
   } = e;
-  delete y[t.id]
+  delete E[t.id]
 }
 
 function j() {
-  o().forEach(y, e => {
+  o().forEach(E, e => {
     e.messages = e.messages.map(e => e.set("blocked", h.Z.isBlockedForMessage(e)).set("ignored", h.Z.isIgnoredForMessage(e)))
   })
 }
@@ -50,10 +50,10 @@ class S extends(i = s.ZP.Store) {
   }
   getPinnedMessages(e) {
     var t;
-    return null != (t = y[e]) ? t : void 0
+    return null != (t = E[e]) ? t : void 0
   }
   loaded(e) {
-    return null != y[e] && y[e].loaded
+    return null != E[e] && E[e].loaded
   }
 }
 l = "ChannelPinsStore", (r = "displayName") in S ? Object.defineProperty(S, r, {
@@ -62,21 +62,21 @@ l = "ChannelPinsStore", (r = "displayName") in S ? Object.defineProperty(S, r, {
   configurable: !0,
   writable: !0
 }) : S[r] = l;
-let P = new S(c.Z, {
+let _ = new S(c.Z, {
   CONNECTION_OPEN: function() {
-    y = {}
+    E = {}
   },
   GUILD_DELETE: function(e) {
     let {
       guild: t
     } = e;
-    y = o()(y).filter(e => e.guildId !== t.id).keyBy("id").value()
+    E = o()(E).filter(e => e.guildId !== t.id).keyBy("id").value()
   },
   MESSAGE_UPDATE: function(e) {
     let t = e.message.id,
       n = e.message.channel_id;
     if (null == n) return !1;
-    let i = y[n];
+    let i = E[n];
     if (null == i && !e.message.pinned) return !1;
     if (null == e.message.author) {
       if (null != i) {
@@ -86,7 +86,7 @@ let P = new S(c.Z, {
             l = (0, d.wi)(t, e.message);
           if (l !== t) {
             let e = i.messages.slice();
-            e[r] = l, y[n].messages = e
+            e[r] = l, E[n].messages = e
           }
         }
       }
@@ -94,51 +94,51 @@ let P = new S(c.Z, {
     }
     if (e.message.pinned) {
       if (null == i) {
-        i = E(n, [e.message], !1), y[n] = i;
+        i = y(n, [e.message], !1), E[n] = i;
         return
       }
       i.messages = i.messages.slice();
-      let r = o().findIndex(i.messages, e => e.id === t); - 1 === r ? i.messages.unshift((0, d.e5)(e.message)) : i.messages[r] = (0, d.wi)(i.messages[r], e.message), y[n] = i
+      let r = o().findIndex(i.messages, e => e.id === t); - 1 === r ? i.messages.unshift((0, d.e5)(e.message)) : i.messages[r] = (0, d.wi)(i.messages[r], e.message), E[n] = i
     } else {
       if (null == i) return;
       let e = o().findIndex(i.messages, e => e.id === t);
       if (-1 === e) return;
-      i.messages = i.messages.slice(), i.messages.splice(e, 1), y[n] = i
+      i.messages = i.messages.slice(), i.messages.splice(e, 1), E[n] = i
     }
   },
   MESSAGE_DELETE: function(e) {
     let {
       id: t,
       channelId: n
-    } = e, i = y[n];
+    } = e, i = E[n];
     if (null == i || 0 === o().remove(i.messages, e => e.id === t).length) return !1;
-    i.messages = i.messages.slice(), y[n] = i
+    i.messages = i.messages.slice(), E[n] = i
   },
   MESSAGE_DELETE_BULK: function(e) {
     let {
       ids: t,
       channelId: n
-    } = e, i = y[n];
+    } = e, i = E[n];
     null != i && (i.messages = i.messages.filter(e => -1 === t.indexOf(e.id)))
   },
   LOAD_PINNED_MESSAGES: function(e) {
     let {
       channelId: t
     } = e;
-    y[t] = E(t, [], !1, !0)
+    E[t] = y(t, [], !1, !0)
   },
   LOAD_PINNED_MESSAGES_SUCCESS: function(e) {
     let {
       channelId: t,
       messages: n
     } = e;
-    y[t] = E(t, n, !0)
+    E[t] = y(t, n, !0)
   },
   LOAD_PINNED_MESSAGES_FAILURE: function(e) {
     let {
       channelId: t
     } = e;
-    delete y[t]
+    delete E[t]
   },
   CHANNEL_DELETE: v,
   THREAD_DELETE: v,
@@ -149,8 +149,8 @@ let P = new S(c.Z, {
     let {
       messageId: t,
       channelId: n
-    } = e, i = y[n];
+    } = e, i = E[n];
     if (null == i) return;
-    let r = o().findIndex(i.messages, e => e.id === t); - 1 !== r && (i.messages = i.messages.slice(), i.messages[r] = (0, u.Cm)(i.messages[r]), y[n] = i)
+    let r = o().findIndex(i.messages, e => e.id === t); - 1 !== r && (i.messages = i.messages.slice(), i.messages[r] = (0, u.Cm)(i.messages[r]), E[n] = i)
   }
 })
