@@ -19,8 +19,8 @@ var n = r(255367),
   b = r(594174),
   x = r(626135),
   j = r(74538),
-  y = r(934261),
-  O = r(52268),
+  O = r(934261),
+  y = r(52268),
   P = r(981631),
   v = r(474936),
   _ = r(388032),
@@ -114,14 +114,14 @@ function w(e) {
       })]
     }), (0, n.jsxs)(o.hzk, {
       className: E.modalContent,
-      children: [(0, n.jsx)(O.Z, {
+      children: [(0, n.jsx)(y.Z, {
         user: t,
         guild: r,
         pendingProfileEffect: v,
         selectedProfileEffectRef: k,
         onSelect: T,
         onOpenShop: B
-      }), (0, n.jsx)(y.Z, {
+      }), (0, n.jsx)(O.Z, {
         user: t,
         canApplySelectedChange: S,
         pendingProfileEffectRecord: I,
@@ -159,15 +159,15 @@ function I(e) {
     categories: m,
     purchases: g
   } = (0, f.Z)("ProfileEffectModal"), j = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
-    analyticsLocations: y
-  } = (0, c.ZP)(r, s.Z.EDIT_PROFILE_EFFECT_MODAL), O = (0, h.Kg)(j, u);
+    analyticsLocations: O
+  } = (0, c.ZP)(r, s.Z.EDIT_PROFILE_EFFECT_MODAL), y = (0, h.Kg)(j, u);
   return i.useEffect(() => {
     x.default.track(P.rMx.OPEN_MODAL, {
       type: P.jXE.PROFILE_EFFECT_CUSTOMIZATION,
-      location_stack: y
+      location_stack: O
     })
-  }, [y]), (0, n.jsx)(c.Gt, {
-    value: y,
+  }, [O]), (0, n.jsx)(c.Gt, {
+    value: O,
     children: (0, n.jsx)(o.Y0X, {
       transitionState: t,
       className: E.modal,
@@ -181,9 +181,9 @@ function I(e) {
         categories: m,
         purchases: g,
         initialSelectedProfileEffectId: a,
-        currentSavedEffectId: O,
+        currentSavedEffectId: y,
         onClose: d,
-        analyticsLocations: y
+        analyticsLocations: O
       })
     })
   })
