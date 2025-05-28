@@ -142,7 +142,7 @@ function es(e, t) {
         name: e
       });
     case J.mFx.JOIN:
-      return ee.intl.string(ee.t["hC/Ze3"]);
+      return ee.intl.string(ee.t.pkq6Vl);
     case J.mFx.JOIN_REQUEST:
     default:
       return ee.intl.string(ee.t.Ckxb6u)
@@ -486,7 +486,7 @@ function ep(e) {
           case J.mFx.LISTEN:
           case J.mFx.WATCH:
           case J.mFx.JOIN:
-            return ee.intl.string(ee.t.cX9uLS);
+            return ee.intl.string(ee.t.x1UXGR);
           case J.mFx.JOIN_REQUEST:
           default:
             return ed(e, t, n, r, !0)
@@ -514,7 +514,8 @@ function ep(e) {
   let eZ = null != (v = null == R || null == (n = R.timestamps) ? void 0 : n.start) ? v : null == R ? void 0 : R.created_at,
     eR = null != eZ ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.iWm, {
-        size: "xxs"
+        size: "xxs",
+        color: "currentColor"
       }), (0, r.jsx)(x.x3, {
         entry: {
           start: eZ,
