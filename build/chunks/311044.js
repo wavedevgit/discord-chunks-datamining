@@ -20,23 +20,24 @@ function _(e) {
   let {
     user: t,
     guildId: n,
-    channelId: _
+    channelId: _,
+    onClose: y
   } = e, {
-    analyticsLocations: y
+    analyticsLocations: x
   } = (0, l.ZP)(), {
-    context: x,
-    trackUserProfileAction: h
+    context: h,
+    trackUserProfileAction: g
   } = (0, s.KZ)(), {
-    mutualFriends: g,
-    mutualFriendsCount: j
-  } = (0, d.Z)(t), O = (0, c.Z)();
+    mutualFriends: j,
+    mutualFriendsCount: O
+  } = (0, d.Z)(t), I = (0, c.Z)();
   return r.useEffect(() => {
-    (0, u.Z)(t.id, O)
-  }, [t.id, O]), (0, o.jsx)(i.Ttm, {
+    (0, u.Z)(t.id, I)
+  }, [t.id, I]), (0, o.jsx)(i.Ttm, {
     className: b.scroller,
     fade: !0,
-    children: null == g ? Array.from({
-      length: null != j ? j : 10
+    children: null == j ? Array.from({
+      length: null != O ? O : 10
     }).map((e, t) => (0, o.jsxs)("div", {
       className: b.loadingItem,
       children: [(0, o.jsx)(a.ZT, {
@@ -46,7 +47,7 @@ function _(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === g.length ? (0, o.jsx)(m.s_, {}) : g.map(e => {
+    }, t)) : 0 === j.length ? (0, o.jsx)(m.s_, {}) : j.map(e => {
       let {
         key: t,
         user: r,
@@ -59,7 +60,7 @@ function _(e) {
         channelId: _,
         onSelect: () => {
           var e, t;
-          h({
+          null == y || y(), g({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -78,9 +79,9 @@ function _(e) {
               })
             }
             return e
-          }({}, x), t = t = {
+          }({}, h), t = t = {
             userId: r.id,
-            sourceAnalyticsLocations: y
+            sourceAnalyticsLocations: x
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

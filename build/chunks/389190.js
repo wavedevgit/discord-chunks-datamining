@@ -19,19 +19,20 @@ function h(e) {
   let {
     user: n,
     guildId: t,
-    channelId: h
+    channelId: h,
+    onClose: v
   } = e, {
-    mutualFriends: v
+    mutualFriends: j
   } = (0, a.Z)(n), {
-    analyticsLocations: j
+    analyticsLocations: m
   } = (0, s.ZP)(), {
-    context: m,
-    trackUserProfileAction: b
-  } = (0, c.KZ)(), x = (0, o.Z)();
+    context: b,
+    trackUserProfileAction: x
+  } = (0, c.KZ)(), Z = (0, o.Z)();
   r.useEffect(() => {
-    (0, u.Z)(n.id, x)
-  }, [n.id, x]);
-  let Z = e => {
+    (0, u.Z)(n.id, Z)
+  }, [n.id, Z]);
+  let y = e => {
     var n, t;
     (0, d.openUserProfileModal)((n = function(e) {
       for (var n = 1; n < arguments.length; n++) {
@@ -50,9 +51,9 @@ function h(e) {
         })
       }
       return e
-    }({}, m), t = t = {
+    }({}, b), t = t = {
       userId: e,
-      sourceAnalyticsLocations: j
+      sourceAnalyticsLocations: m
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
       var t = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -67,10 +68,10 @@ function h(e) {
   return (0, l.jsx)(i.zJl, {
     className: g.listScroller,
     fade: !0,
-    children: null == v ? (0, l.jsx)("div", {
+    children: null == j ? (0, l.jsx)("div", {
       className: g.empty,
       children: (0, l.jsx)(i.$jN, {})
-    }) : 0 === v.length ? (0, l.jsxs)("div", {
+    }) : 0 === j.length ? (0, l.jsxs)("div", {
       className: g.empty,
       children: [(0, l.jsx)("div", {
         className: g.emptyIconFriends
@@ -78,7 +79,7 @@ function h(e) {
         className: g.emptyText,
         children: p.intl.string(p.t["/5p4g4"])
       })]
-    }) : v.map(e => {
+    }) : j.map(e => {
       let {
         key: n,
         user: r,
@@ -90,9 +91,9 @@ function h(e) {
         guildId: t,
         channelId: h,
         onSelect: () => {
-          b({
+          null == v || v(), x({
             action: "PRESS_MUTUAL_FRIEND"
-          }), Z(r.id)
+          }), y(r.id)
         }
       }, n)
     })

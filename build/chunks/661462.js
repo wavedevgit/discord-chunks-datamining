@@ -34,7 +34,8 @@ function f(e) {
   }) : r === d.oh.MUTUAL_FRIENDS ? (0, o.jsx)(a.Z, {
     user: t,
     guildId: u,
-    channelId: f
+    channelId: f,
+    onClose: p
   }) : r === d.oh.MUTUAL_GUILDS ? (0, o.jsx)(s.Z, {
     user: t,
     onClose: p

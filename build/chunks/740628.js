@@ -40,7 +40,8 @@ function x(e) {
   }) : n === v.oh.MUTUAL_FRIENDS ? (0, l.jsx)(g.Z, {
     user: r,
     guildId: s,
-    channelId: c
+    channelId: c,
+    onClose: a
   }) : n === v.oh.MUTUAL_GUILDS ? (0, l.jsx)(h.Z, {
     user: r,
     onClose: a
