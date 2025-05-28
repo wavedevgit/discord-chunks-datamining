@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => x,
+  Z: () => k,
   r: () => h
 }), n(642613), n(388685), n(825670), n(467055);
 var r, i = n(315008),
@@ -95,7 +95,7 @@ function b(e) {
 
 function y(e) {
   if (null == g.limitedTimeVoices) return void m.warn("No limited time voices available to update");
-  g.limitedTimeVoices.current_set_end = e.toISOString(), g.limitedTimeVoices.next_set_start = e.toISOString(), g.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), T()
+  g.limitedTimeVoices.current_set_end = e.toISOString(), g.limitedTimeVoices.next_set_start = e.toISOString(), g.limitedTimeVoices.next_set_end = (0, i.default)(e, 2).toISOString(), A()
 }
 
 function O(e) {
@@ -123,13 +123,20 @@ function v(e) {
     available: o,
     temporarilyAvailable: r.currentSet.includes(e)
   }));
-  return g.voiceFilters = n, g.sortedVoiceFilters = O(g.voiceFilters), g.catalogLastFetchTime = new Date, !0
+  g.voiceFilters = n, g.sortedVoiceFilters = O(g.voiceFilters), g.catalogLastFetchTime = new Date
 }
 
 function I() {
   g.catalogFetchFailed = !0
 }
-class S extends(r = s.ZP.Store) {
+
+function S(e) {
+  let {
+    modelState: t
+  } = e;
+  g.modelState = t
+}
+class T extends(r = s.ZP.Store) {
   getVoiceFilterModels() {
     return g.models
   }
@@ -149,6 +156,13 @@ class S extends(r = s.ZP.Store) {
       }] = e;
       return n === c.L.DOWNLOADING
     }))
+  }
+  isVoiceFilterDownloaded(e) {
+    var t, n;
+    return Object.values(null != (n = null == (t = g.voiceFilters[e]) ? void 0 : t.modelIds) ? n : {}).every(e => {
+      var t;
+      return (null == (t = g.modelState[e]) ? void 0 : t.status) === c.L.DOWNLOADED
+    })
   }
   isModelDownloaded(e) {
     var t;
@@ -183,14 +197,14 @@ class S extends(r = s.ZP.Store) {
   }
 }
 
-function T() {
+function A() {
   let e = b(g.limitedTimeVoices);
   g.catalogUpdateTime = e.catalogUpdateTime, Object.keys(g.voiceFilters).forEach(t => {
     g.voiceFilters[t].temporarilyAvailable = e.currentSet.includes(t)
   }), g.sortedVoiceFilters = O(g.voiceFilters)
 }
 
-function A(e) {
+function N(e) {
   let {
     modelId: t
   } = e;
@@ -200,7 +214,7 @@ function A(e) {
   })
 }
 
-function N(e) {
+function C(e) {
   let {
     modelId: t,
     downloadedBytes: n,
@@ -212,7 +226,7 @@ function N(e) {
   })
 }
 
-function C(e) {
+function P(e) {
   var t;
   let {
     modelId: n,
@@ -223,7 +237,7 @@ function C(e) {
   }), "USER_CANCELED_DOWNLOAD" in (null != r ? r : {}) || (g.error = "ERROR_DOWNLOADING_DEPENDENCY"))
 }
 
-function P(e) {
+function R(e) {
   let {
     modelId: t
   } = e;
@@ -233,35 +247,36 @@ function P(e) {
   })
 }
 
-function R(e) {
+function w(e) {
   let {
     timeInSeconds: t
   } = e;
   y((0, o.Z)(new Date, t))
 }
 
-function w(e) {
+function D(e) {
   g.nativeVoiceFilterModuleState = e.state
 }
 
-function D() {
+function L() {
   g.error = "ERROR_ACTIVATING_VOICE_FILTER"
 }
 
-function L() {
+function x() {
   g.error = null
 }
-d(S, "displayName", "VoiceFilterStore");
-let x = new S(l.Z, {
-  VOICE_FILTER_DOWNLOAD_STARTED: A,
-  VOICE_FILTER_DOWNLOAD_PROGRESS: N,
-  VOICE_FILTER_DOWNLOAD_FAILED: C,
-  VOICE_FILTER_FILE_READY: P,
+d(T, "displayName", "VoiceFilterStore");
+let k = new T(l.Z, {
+  VOICE_FILTER_DOWNLOAD_STARTED: N,
+  VOICE_FILTER_DOWNLOAD_PROGRESS: C,
+  VOICE_FILTER_DOWNLOAD_FAILED: P,
+  VOICE_FILTER_FILE_READY: R,
   VOICE_FILTER_CATALOG_FETCH_SUCCESS: v,
   VOICE_FILTER_CATALOG_FETCH_FAILED: I,
-  VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: T,
-  VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: R,
-  VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: w,
-  VOICE_FILTER_APPLY_FAILED: D,
-  VOICE_FILTER_REQUEST_SWITCH: L
+  VOICE_FILTER_SET_MODEL_STATE: S,
+  VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: A,
+  VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: w,
+  VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: D,
+  VOICE_FILTER_APPLY_FAILED: L,
+  VOICE_FILTER_REQUEST_SWITCH: x
 })

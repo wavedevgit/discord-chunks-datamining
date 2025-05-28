@@ -183,7 +183,7 @@ async function K(e, t, n, r, i) {
       var t;
       null == (t = i.onShown) || t.call(i), i.omitViewTracking || I.default.track(C.rMx.NOTIFICATION_VIEWED, r), x && setTimeout(() => e.close(), 5e3)
     };
-  if (null == i.sound || Y || W(i.sound, null != (s = i.volume) ? s : 1, i.soundpack), i.isUserAvatar && null != e && (e = await (0, _.D)(e)), U) {
+  if (null == i.sound || Y || W(i.sound, null != (s = i.volume) ? s : 1, i.soundpack), i.isUserAvatar && null != e && (e = await (0, _.D)(e)), R && b.Z.taskbarFlash && N.ZP.flashFrame(!0), U) {
     let o = {
       title: t,
       body: n
@@ -245,7 +245,6 @@ async function K(e, t, n, r, i) {
     tag: Z,
     silent: !0
   };
-  R && b.Z.taskbarFlash && N.ZP.flashFrame(!0);
   try {
     m = new F(t, z)
   } catch (e) {

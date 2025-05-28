@@ -1,6 +1,6 @@
 /**
   Module ID: 87040
-  Original File Name: 367f6f380fba2983
+  Original File Name: a13f6f11245229e0
 **/
 .menu__43313 {
     max-height: 70vh
@@ -333,6 +333,17 @@
 
 .filterName_ed0705 {
     width: 88px
+}
+
+.downloadRequiredContent_ed0705,.filterName_ed0705 {
+    align-items: center;
+    display: flex;
+    gap: 2px;
+    justify-content: center
+}
+
+.downloadRequiredContent_ed0705 {
+    flex-direction: column
 }
 
 .iconCircle_ed0705 {
@@ -2257,4 +2268,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=367f6f380fba2983.css.map*/
+/*# sourceMappingURL=a13f6f11245229e0.css.map*/

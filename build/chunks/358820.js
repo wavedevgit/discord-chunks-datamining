@@ -3,6 +3,7 @@
 n.d(t, {
   fz: () => T,
   ge: () => C,
+  gf: () => R,
   r5: () => P,
   rk: () => A,
   wV: () => N
@@ -73,6 +74,12 @@ function T(e) {
       fileName: i
     } = e,
     o = m.Z.getModelState(r);
+  if ((null == o ? void 0 : o.status) === g.L.DOWNLOADED) return void s.Z.dispatch(v(y({
+    type: "VOICE_FILTER_FILE_READY"
+  }, e), {
+    fetchedFromNetwork: !1,
+    analyticsContext: t
+  }));
   (null == o ? void 0 : o.status) !== g.L.DOWNLOADING && (s.Z.dispatch(y({
     type: "VOICE_FILTER_DOWNLOAD_STARTED"
   }, e)), p.ZP.downloadVoiceFilterFile(n, i, t => {
@@ -223,4 +230,11 @@ async function P() {
       })
     }
   }
+}
+
+function R(e) {
+  s.Z.dispatch({
+    type: "VOICE_FILTER_SET_MODEL_STATE",
+    modelState: e
+  })
 }

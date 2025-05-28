@@ -51,13 +51,13 @@ function y(e, t) {
   }), e
 }
 let j = e => 1 - Math.pow(1 - e, 4),
-  C = {
+  x = {
     mass: 1,
     friction: 64,
     tension: 1e3,
     clamp: !0
   },
-  x = {
+  C = {
     mass: 1,
     friction: 64,
     tension: 1e3
@@ -92,10 +92,10 @@ function O(e) {
     L.current = k
   }, [k]);
   let Z = null != n,
-    A = !Z,
-    D = Z && null != a,
-    F = null == n && null != a,
-    M = (0, c.q_F)({
+    D = !Z,
+    A = Z && null != a,
+    M = null == n && null != a,
+    F = (0, c.q_F)({
       opacity: +!!Z,
       height: 72 * !!Z,
       pointerEvents: Z ? "auto" : "none",
@@ -103,8 +103,8 @@ function O(e) {
       config: e => "backgroundColor" === e ? {
         easing: j,
         duration: 200
-      } : C,
-      delay: 100 * !!D
+      } : x,
+      delay: 100 * !!A
     }, "respect-motion-settings"),
     R = (0, c.Yzy)(null == O ? void 0 : O.id, {
       key: k,
@@ -114,19 +114,19 @@ function O(e) {
       },
       enter: {
         opacity: 1,
-        delay: D ? 100 : 50
+        delay: A ? 100 : 50
       },
       leave: {
         opacity: 0,
-        delay: D ? 100 : 150
+        delay: A ? 100 : 150
       },
       config: {
         easing: j,
-        duration: D ? 250 : 200
+        duration: A ? 250 : 200
       }
     }, "respect-motion-settings"),
     [B] = (0, c.bYB)(2, e => ({
-      from: D ? {
+      from: A ? {
         translateY: 0,
         opacity: 1
       } : {
@@ -136,22 +136,22 @@ function O(e) {
       to: null == n ? {
         translateY: 16,
         opacity: 0
-      } : D ? null : {
+      } : A ? null : {
         translateY: 0,
         opacity: 1
       },
       config: e => "opacity" === e ? {
         easing: j,
         duration: 200
-      } : x,
-      delay: F ? 50 - 50 * e : 200 + 50 * e
+      } : C,
+      delay: M ? 50 - 50 * e : 200 + 50 * e
     }), "respect-motion-settings", [n]),
     z = (0, c.Yzy)(null == O ? void 0 : O.iconURL, {
       key: k,
       from: {
         opacity: 0,
         scale: 80 / 88,
-        translateX: D ? -16 : 0
+        translateX: A ? -16 : 0
       },
       enter: {
         opacity: 1,
@@ -163,19 +163,19 @@ function O(e) {
         opacity: 0,
         scale: Z ? 80 / 88 : 1,
         translateX: 24 * !!Z,
-        delay: 150 * !D
+        delay: 150 * !A
       },
       config: e => "opacity" === e ? {
         easing: j,
         duration: 200
-      } : Z ? C : I
+      } : Z ? x : I
     }, "respect-motion-settings"),
     U = (0, c.Yzy)(null == O ? void 0 : O.name, {
       key: k,
       from: {
         opacity: 0,
-        scale: D ? .9 : 1,
-        translateY: 16 * !D
+        scale: A ? .9 : 1,
+        translateY: 16 * !A
       },
       enter: {
         opacity: 1,
@@ -186,24 +186,24 @@ function O(e) {
         config: e => "opacity" === e ? {
           easing: j,
           duration: 200
-        } : D ? C : x
+        } : A ? x : C
       },
       leave: {
         opacity: 0,
         translateX: 24 * (null != n),
         translateY: 16 * (null == n),
-        delay: F ? 100 : 50,
+        delay: M ? 100 : 50,
         config: e => "opacity" === e ? {
           easing: j,
           duration: 200
-        } : D ? C : x
+        } : A ? x : C
       }
     }, "respect-motion-settings"),
-    W = h.intl.string(N ? h.t.esVyo6 : h.t.UQqFCA);
+    V = h.intl.string(N ? h.t.esVyo6 : h.t.UQqFCA);
   return (0, r.jsxs)(l.animated.div, {
     className: v.voiceFilterHero,
-    "aria-hidden": A,
-    style: M,
+    "aria-hidden": D,
+    style: F,
     children: [(0, r.jsx)("div", {
       className: o()([v.bgGradient, v.bgGradientHighlight])
     }), R(e => (0, r.jsx)(l.animated.div, {
@@ -236,7 +236,7 @@ function O(e) {
     }), (0, r.jsxs)("div", {
       className: v.buttonWrapper,
       children: [(0, r.jsx)(c.ua7, {
-        "aria-label": W,
+        "aria-label": V,
         tooltipClassName: v.tooltip,
         tooltipContentClassName: v.tooltipContent,
         shouldShow: Z,
@@ -245,7 +245,7 @@ function O(e) {
             variant: "heading-sm/normal",
             color: "header-primary",
             className: v.tooltipHeader,
-            children: W
+            children: V
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-muted",
@@ -259,7 +259,7 @@ function O(e) {
             className: o()(v.button, {
               [v.loopbackEnabled]: N
             }),
-            "aria-hidden": A,
+            "aria-hidden": D,
             focusProps: {
               enabled: Z
             },
@@ -282,7 +282,7 @@ function O(e) {
           style: B[1],
           children: (0, r.jsx)(c.P3F, y(b({
             className: v.button,
-            "aria-hidden": A,
+            "aria-hidden": D,
             focusProps: {
               enabled: Z
             },

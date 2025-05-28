@@ -1,7 +1,7 @@
 /** Chunk was on 87040 **/
 n.d(t, {
   h: () => j,
-  x: () => C
+  x: () => x
 });
 var r = n(255367);
 n(73800);
@@ -67,7 +67,7 @@ let j = e => {
       })]
     })
   },
-  C = e => {
+  x = e => {
     let {
       onClose: t,
       listing: n,
