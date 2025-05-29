@@ -1,6 +1,6 @@
 /**
   Module ID: 66868
-  Original File Name: 571b6a44663f67e7
+  Original File Name: e395adac6c08ae93
 **/
 .container__11014 {
     background-color: var(--bg-base-secondary);
@@ -63,6 +63,11 @@
     margin-left: var(--spacing-4)
 }
 
+.modal__58ae6 {
+    margin: 0;
+    overflow: hidden
+}
+
 .modalContent__58ae6 {
     display: flex;
     flex-direction: row;
@@ -119,4 +124,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=571b6a44663f67e7.css.map*/
+/*# sourceMappingURL=e395adac6c08ae93.css.map*/
