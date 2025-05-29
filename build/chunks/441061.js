@@ -1,21 +1,21 @@
-/** Chunk was on 92643 **/
-t.d(n, {
+/** Chunk was on 36084 **/
+n.d(t, {
   Z: () => c
 });
-var r = t(255367);
-t(73800);
-var i = t(442837),
-  l = t(481060),
-  o = t(475179),
-  a = t(358221),
-  s = t(388032);
+var r = n(255367);
+n(73800);
+var i = n(442837),
+  l = n(481060),
+  o = n(475179),
+  u = n(358221),
+  a = n(388032);
 
 function c(e) {
-  let n = (0, i.e7)([a.Z], () => a.Z.getVoiceParticipantsHidden(e));
+  let t = (0, i.e7)([u.Z], () => u.Z.getVoiceParticipantsHidden(e));
   return (0, r.jsx)(l.S89, {
     id: "no-video-hide",
-    label: s.intl.string(s.t.BL8ss7),
-    checked: !n,
-    action: () => o.Z.toggleVoiceParticipantsHidden(e, !n)
+    label: a.intl.string(a.t.BL8ss7),
+    checked: !t,
+    action: () => o.Z.toggleVoiceParticipantsHidden(e, !t)
   })
 }

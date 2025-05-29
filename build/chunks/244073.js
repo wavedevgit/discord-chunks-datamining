@@ -1,12 +1,11 @@
 /** Chunk was on 63141 **/
-"use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => R
 }), n(388685);
 var i = n(255367),
   r = n(73800),
-  s = n(120356),
-  o = n.n(s),
+  o = n(120356),
+  s = n.n(o),
   l = n(688642),
   a = n(442837),
   c = n(481060),
@@ -18,12 +17,12 @@ var i = n(255367),
   g = n(77880),
   m = n(870569),
   y = n(345243),
-  v = n(873596),
-  _ = n(917405),
+  _ = n(873596),
+  v = n(917405),
   O = n(430824),
   b = n(131951),
-  x = n(699516),
-  E = n(594174),
+  E = n(699516),
+  x = n(594174),
   S = n(979651),
   C = n(362446),
   j = n(518084),
@@ -73,11 +72,11 @@ class D extends r.PureComponent {
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, p.F6)(e, E.default, x.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : Z.ME;
+    } = this.props, n = (0, p.F6)(e, x.default, E.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, o = null != t ? t.id : Z.ME;
     return (0, i.jsx)(l.rU, {
-      to: Z.Z5c.CHANNEL(s),
+      to: Z.Z5c.CHANNEL(o),
       onClick: t => {
-        t.stopPropagation(), u.Z.channelListScrollTo(s, e.id)
+        t.stopPropagation(), u.Z.channelListScrollTo(o, e.id)
       },
       children: (0, i.jsx)(y.Z, {
         className: N.channel,
@@ -91,7 +90,7 @@ class D extends r.PureComponent {
       contentClassName: t,
       pinned: n,
       lobbyId: r,
-      channel: s,
+      channel: o,
       quality: l,
       lastPing: a,
       hasVideo: d,
@@ -100,28 +99,28 @@ class D extends r.PureComponent {
       mute: p,
       changeLeaveCallAndActivityIcons: g
     } = this.props;
-    return null == s ? null : (0, i.jsx)(j.ZP.Bar, {
-      className: o()(e, P.controls, {
+    return null == o ? null : (0, i.jsx)(j.ZP.Bar, {
+      className: s()(e, P.controls, {
         [P.unpinned]: !n
       }),
       children: (0, i.jsxs)(j.ZP.Content, {
-        className: o()(t, P.content),
+        className: s()(t, P.content),
         dynamicSize: !0,
         children: [(0, i.jsx)("div", {
           className: N.inner,
           children: (0, i.jsx)(c.yRy, {
             targetElementRef: this.rtcConnectionStatusRef,
-            renderPopout: () => this.renderPopout(s.id),
+            renderPopout: () => this.renderPopout(o.id),
             position: "top",
             children: e => (0, i.jsx)(c.P3F, k(T({}, e), {
               innerRef: this.rtcConnectionStatusRef,
-              children: (0, i.jsx)(_.Z, {
-                channelId: s.id,
+              children: (0, i.jsx)(v.Z, {
+                channelId: o.id,
                 quality: l,
                 lastPing: a,
                 hasVideo: d,
                 state: u,
-                children: this.renderChannelLink(s)
+                children: this.renderChannelLink(o)
               })
             }))
           })
@@ -167,7 +166,7 @@ class D extends r.PureComponent {
       let {
         lobbyId: t
       } = this.props;
-      return (0, i.jsx)(v.Z, {
+      return (0, i.jsx)(_.Z, {
         channelId: e,
         lobbyId: t,
         isOverlay: !0
@@ -176,27 +175,27 @@ class D extends r.PureComponent {
   }
 }
 
-function A(e) {
+function R(e) {
   var {
     context: t,
     lobbyId: n,
     channel: r
-  } = e, s = function(e, t) {
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
       var n, i, r = {},
-        s = Object.keys(e);
-      for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        o = Object.keys(e);
+      for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
       return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var s = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
   }(e, ["context", "lobbyId", "channel"]);
-  let o = (0, a.e7)([O.Z], () => O.Z.getGuild(null == r ? void 0 : r.getGuildId())),
+  let s = (0, a.e7)([O.Z], () => O.Z.getGuild(null == r ? void 0 : r.getGuildId())),
     l = (0, a.e7)([S.Z], () => null != r && S.Z.hasVideo(r.id)),
     [c, d] = (0, a.Wu)([b.Z], () => [b.Z.isSelfMute(t) || b.Z.isSelfMutedTemporarily(t), b.Z.isSelfDeaf(t)]),
     [u, h, p] = (0, a.Wu)([C.Z], () => [C.Z.getConnectionState(n), C.Z.getLastPing(n), C.Z.getQuality(n)]),
@@ -205,11 +204,11 @@ function A(e) {
     } = (0, g.A)({
       location: "Controls"
     });
-  return (0, i.jsx)(D, k(T({}, s), {
+  return (0, i.jsx)(D, k(T({}, o), {
     context: t,
     lobbyId: n,
     channel: r,
-    guild: o,
+    guild: s,
     hasVideo: l,
     mute: c,
     deaf: d,

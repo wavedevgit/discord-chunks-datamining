@@ -1,5 +1,4 @@
 /** Chunk was on 63141 **/
-"use strict";
 e.exports = {
   sidebar: "sidebar__9835e",
   children: "children__9835e",

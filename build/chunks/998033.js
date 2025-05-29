@@ -1,13 +1,12 @@
 /** Chunk was on 63141 **/
-"use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => _
 });
 var i = n(255367);
 n(73800);
 var r = n(13245),
-  s = n(864060),
-  o = n(371651),
+  o = n(864060),
+  s = n(371651),
   l = n(703656),
   a = n(460181),
   c = n(974180),
@@ -20,18 +19,18 @@ var r = n(13245),
   m = n(987650),
   y = n(388032);
 
-function v(e, t, n, v) {
-  var _;
+function _(e, t, n, _) {
+  var v;
   let {
     icon: O,
     title: b,
-    body: x
-  } = (0, s.Xi)(e, t, n), {
-    trackView: E,
+    body: E
+  } = (0, o.Xi)(e, t, n), {
+    trackView: x,
     trackClick: S
   } = (0, f.R)(m.n0.TextChat, {
     notif_type: m.n0.TextChat,
-    notif_user_id: null == (_ = t.author) ? void 0 : _.id,
+    notif_user_id: null == (v = t.author) ? void 0 : v.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -41,7 +40,7 @@ function v(e, t, n, v) {
   return {
     icon: O,
     title: b,
-    body: x,
+    body: E,
     renderFooter: e => e ? (0, i.jsx)("div", {
       style: {
         textAlign: "center"
@@ -50,10 +49,10 @@ function v(e, t, n, v) {
     }) : null,
     maxBodyLines: 2,
     onNotificationShow: () => {
-      v && (0, a.GN)(c.Ay, c.yk), E()
+      _ && (0, a.GN)(c.Ay, c.yk), x()
     },
     onNotificationClick: () => {
-      if (o.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
+      if (s.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {
         let n = (0, p.getPID)();
         d.default.isInstanceLocked() ? (S("unlock"), r.Z.setInputLocked(!1, n)) : (S("jump"), (0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && h.ZP.focus())
       } else(0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), S("jump"), d.default.isInstanceLocked() && r.Z.setInstanceLocked(!1)

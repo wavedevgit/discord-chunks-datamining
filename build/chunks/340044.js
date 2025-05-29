@@ -1,23 +1,23 @@
-/** Chunk was on 75293 **/
+/** Chunk was on 90202 **/
 n.d(t, {
-  Z: () => h
+  Z: () => d
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(393903),
-  a = n(448986),
+  a = n(393903),
+  s = n(448986),
   c = n(731722),
   u = n(172751),
-  d = n(842747);
-let h = i.memo(function(e) {
+  E = n(842747);
+let d = i.memo(function(e) {
   var t, n, {
       children: l,
-      isOverlay: h,
-      contextGuildId: p
+      isOverlay: d,
+      contextGuildId: _
     } = e,
-    f = function(e, t) {
+    I = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -32,36 +32,36 @@ let h = i.memo(function(e) {
       }
       return i
     }(e, ["children", "isOverlay", "contextGuildId"]);
-  let [g, m] = i.useState({
+  let [O, T] = i.useState({
     maskImage: "none"
-  }), b = i.useRef(null), y = (0, a.Z)(() => {
+  }), N = i.useRef(null), S = (0, s.Z)(() => {
     var e, t, n, r;
-    let i = null != (n = null == (e = O.current) ? void 0 : e.getBoundingClientRect()) ? n : null,
-      l = null != (r = null == (t = b.current) ? void 0 : t.getBoundingClientRect()) ? r : null;
-    if (h || null == i || null == l) return void m({
+    let i = null != (n = null == (e = p.current) ? void 0 : e.getBoundingClientRect()) ? n : null,
+      l = null != (r = null == (t = N.current) ? void 0 : t.getBoundingClientRect()) ? r : null;
+    if (d || null == i || null == l) return void T({
       maskImage: "none"
     });
     let o = l.right - i.right,
-      s = l.width - o;
-    if (s > l.width) return void m({
+      a = l.width - o;
+    if (a > l.width) return void T({
       maskImage: "none"
     });
-    m({
-      maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(s, "px)")
+    T({
+      maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(a, "px)")
     })
-  }), O = (0, s.y)(y), v = (0, c.yF)(f.userId, p);
+  }), p = (0, a.y)(S), R = (0, c.yF)(I.userId, _);
   return (0, r.jsxs)("div", {
-    className: o()(d.container, h && d.isOverlayContainer),
-    ref: O,
+    className: o()(E.container, d && E.isOverlayContainer),
+    ref: p,
     children: [(0, r.jsx)("div", {
-      className: d.usernameContainer,
+      className: E.usernameContainer,
       children: l
     }), (0, r.jsx)("div", {
-      className: d.chipletParent,
+      className: E.chipletParent,
       children: (0, r.jsx)("span", {
-        className: o()(d.chipletContainer, !v && h && d.noPadding),
-        ref: b,
-        style: g,
+        className: o()(E.chipletContainer, !R && d && E.noPadding),
+        ref: N,
+        style: O,
         children: (0, r.jsx)(u.ZP, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -79,9 +79,9 @@ let h = i.memo(function(e) {
             })
           }
           return e
-        }({}, f), n = n = {
-          contextGuildId: p,
-          className: o()(f.className, h && d.isOverlayTag),
+        }({}, I), n = n = {
+          contextGuildId: _,
+          className: o()(I.className, d && E.isOverlayTag),
           disableGuildProfile: !0
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

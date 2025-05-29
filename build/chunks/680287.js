@@ -1,60 +1,60 @@
-/** Chunk was on 73628 **/
-r.d(t, {
-  Z: () => u
-}), r(539854), r(997841);
-var n = r(544891),
-  A = r(881052),
-  a = r(687294),
-  l = r(476326),
-  o = r(45251),
-  i = r(861990),
-  s = r(959517),
-  c = r(388032);
+/** Chunk was on 90202 **/
+n.d(t, {
+  Z: () => d
+}), n(539854), n(997841);
+var r = n(544891),
+  i = n(881052),
+  l = n(687294),
+  o = n(476326),
+  a = n(45251),
+  s = n(861990),
+  c = n(959517),
+  u = n(388032);
 
-function d(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
-class u extends a.Z {
+class d extends l.Z {
   async uploadFilesSimple(e) {
     super.upload({
-      name: c.intl.string(c.t.jfKTen)
+      name: u.intl.string(u.t.jfKTen)
     }, e);
     let t = new Promise((e, t) => {
-        this.once("error", (e, r, n, A) => {
+        this.once("error", (e, n, r, i) => {
           t({
             file: e,
-            code: r,
-            responseBody: n,
-            reason: A
+            code: n,
+            responseBody: r,
+            reason: i
           })
         }), this.once("complete", () => {
           this._errored || e(this.files)
         })
       }),
-      r = new AbortController;
+      n = new AbortController;
     try {
-      if (this.files = e, this._aborted || (this._handleStart(() => r.abort()), !await this.compressAndCheckFileSize())) return t;
-      this.setUploadingTextForUI(), await (0, a.$)(this.files, !0, this._recomputeProgress.bind(this))
+      if (this.files = e, this._aborted || (this._handleStart(() => n.abort()), !await this.compressAndCheckFileSize())) return t;
+      this.setUploadingTextForUI(), await (0, l.$)(this.files, !0, this._recomputeProgress.bind(this))
     } catch (e) {
       throw this._handleException(e), {
         file: this._file,
         reason: {
-          type: s.xi.ERROR_SOURCE_UNKNOWN,
+          type: c.xi.ERROR_SOURCE_UNKNOWN,
           msg: e.toString()
         }
       }
@@ -63,87 +63,87 @@ class u extends a.Z {
   }
   async uploadFiles(e, t) {
     let {
-      addFilesTo: r
+      addFilesTo: n
     } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
     super.upload({
-      name: c.intl.string(c.t.jfKTen)
+      name: u.intl.string(u.t.jfKTen)
     }, e);
-    let n = new AbortController;
+    let r = new AbortController;
     try {
-      if (this.files = e, this._aborted || (this._handleStart(() => n.abort()), !await this.compressAndCheckFileSize())) return;
-      this.setUploadingTextForUI(), await (0, a.$)(this.files, !0, this._recomputeProgress.bind(this))
+      if (this.files = e, this._aborted || (this._handleStart(() => r.abort()), !await this.compressAndCheckFileSize())) return;
+      this.setUploadingTextForUI(), await (0, l.$)(this.files, !0, this._recomputeProgress.bind(this))
     } catch (e) {
       this._handleException(e)
     }
     try {
-      return await this._createMessage(n.signal, t, r)
+      return await this._createMessage(r.signal, t, n)
     } catch (e) {
       if (this._raiseEndpointErrors) throw e;
       this._handleException(e)
     }
   }
-  async _createMessage(e, t, r) {
-    var a, s, c, u;
-    let g, f = [];
+  async _createMessage(e, t, n) {
+    var l, c, u, d;
+    let _, I = [];
     if ((this.files.forEach((e, t) => {
-        let r = (0, i.B)(e, t);
-        e.item.platform === l.ow.WEB && f.push(d({}, r))
-      }), null != r && null != t) ? g = this._addAttachmentsToPayload(t, r, f) : (c = d({}, t), u = u = {
-        attachments: f
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
-        var r = Object.keys(e);
+        let n = (0, s.B)(e, t);
+        e.item.platform === o.ow.WEB && I.push(E({}, n))
+      }), null != n && null != t) ? _ = this._addAttachmentsToPayload(t, n, I) : (u = E({}, t), d = d = {
+        attachments: I
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, n)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
-        return r
-      })(Object(u)).forEach(function(e) {
-        Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(u, e))
-      }), g = c), null != g.scheduled_timestamp) {
+        return n
+      })(Object(d)).forEach(function(e) {
+        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(d, e))
+      }), _ = u), null != _.scheduled_timestamp) {
       try {
-        let e = await (0, o.PV)({
-          channelId: g.channel_id,
-          scheduledTimestamp: g.scheduled_timestamp,
+        let e = await (0, a.PV)({
+          channelId: _.channel_id,
+          scheduledTimestamp: _.scheduled_timestamp,
           messageSendData: {
-            channelId: g.channel_id,
-            content: g.content,
-            flags: g.flags,
-            nonce: g.nonce,
-            message_reference: g.message_reference,
-            allowed_mentions: g.allowed_mentions,
+            channelId: _.channel_id,
+            content: _.content,
+            flags: _.flags,
+            nonce: _.nonce,
+            message_reference: _.message_reference,
+            allowed_mentions: _.allowed_mentions,
             tts: !1
           },
-          attachments: f
+          attachments: I
         });
         return this._handleComplete(e.body), e.body
       } catch (e) {
-        if (this._raiseEndpointErrors) throw new A.Hx(e);
+        if (this._raiseEndpointErrors) throw new i.Hx(e);
         this._handleError({
-          code: null == e || null == (a = e.body) ? void 0 : a.code,
+          code: null == e || null == (l = e.body) ? void 0 : l.code,
           body: null == e ? void 0 : e.body
         })
       }
       return
     }
-    let p = {
+    let O = {
         url: this._url,
-        body: g,
+        body: _,
         signal: e,
         rejectWithError: !1
       },
-      h = "POST" === this._method ? n.tn.post : n.tn.patch;
+      T = "POST" === this._method ? r.tn.post : r.tn.patch;
     try {
-      let e = await h(p);
+      let e = await T(O);
       return this._handleComplete(e.body), e.body
     } catch (e) {
-      if (this._raiseEndpointErrors) throw new A.Hx(e);
+      if (this._raiseEndpointErrors) throw new i.Hx(e);
       this._handleError({
-        code: null == e || null == (s = e.body) ? void 0 : s.code,
+        code: null == e || null == (c = e.body) ? void 0 : c.code,
         body: null == e ? void 0 : e.body
       })
     }
   }
-  constructor(e, t = "POST", r) {
-    super(e, t, r)
+  constructor(e, t = "POST", n) {
+    super(e, t, n)
   }
 }

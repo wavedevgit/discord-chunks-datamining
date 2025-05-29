@@ -1,24 +1,24 @@
-/** Chunk was on 50855 **/
-a.d(t, {
-  IE: () => y,
-  K9: () => R,
-  NX: () => h,
-  R_: () => C,
-  e$: () => m,
-  ti: () => I,
-  zV: () => c
-}), a(704826), a(35282), a(388685), a(314940);
-var n = a(913527),
-  i = a.n(n),
-  r = a(278074),
-  o = a(768581),
-  s = a(709054),
-  l = a(624138),
-  d = a(219496),
-  u = a(801461),
-  f = a(388032);
+/** Chunk was on 90202 **/
+n.d(t, {
+  IE: () => A,
+  K9: () => p,
+  NX: () => N,
+  R_: () => S,
+  e$: () => _,
+  ti: () => R,
+  zV: () => d
+}), n(704826), n(35282), n(388685), n(314940);
+var r = n(913527),
+  i = n.n(r),
+  l = n(278074),
+  o = n(768581),
+  a = n(709054),
+  s = n(624138),
+  c = n(219496),
+  u = n(801461),
+  E = n(388032);
 
-function c(e) {
+function d(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
   return o.ZP.getUserAvatarURL({
     id: e.id,
@@ -28,74 +28,74 @@ function c(e) {
   }, t, 80)
 }
 
-function m(e) {
-  let t = (0, l._I)(e.username).replace(u.RN, "").replace(u.iF, ".").toLowerCase();
+function _(e) {
+  let t = (0, s._I)(e.username).replace(u.RN, "").replace(u.iF, ".").toLowerCase();
   return "".concat(t).concat(e.discriminator).substring(0, 32)
 }
-let g = ["@", "#", ":"],
-  _ = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
-  p = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
+let I = ["@", "#", ":"],
+  O = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
+  T = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
 
-function h(e) {
+function N(e) {
   var t;
-  let a = e.username.toLowerCase();
-  if ((t = u.kt, a.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) return !0;
-  for (let e of g)
-    if (a.includes(e)) return !0;
-  for (let e of p)
-    if (a === e.toLowerCase()) return !0;
-  for (let e of _)
-    if (a.includes(e.toLowerCase())) return !0;
+  let n = e.username.toLowerCase();
+  if ((t = u.kt, n.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) return !0;
+  for (let e of I)
+    if (n.includes(e)) return !0;
+  for (let e of T)
+    if (n === e.toLowerCase()) return !0;
+  for (let e of O)
+    if (n.includes(e.toLowerCase())) return !0;
   return !1
 }
 
-function C(e) {
+function S(e) {
   return e.toLowerCase().replace(/\s/g, "").replace("@", "")
 }
 
-function R(e) {
-  let t = s.default.extractTimestamp(e);
+function p(e) {
+  let t = a.default.extractTimestamp(e);
   try {
     return i()(new Date(t)).format("MMM DD, YYYY")
   } catch (e) {}
   return null
 }
 
-function I(e) {
-  return (0, r.EQ)(e).with({
+function R(e) {
+  return (0, l.EQ)(e).with({
     rateLimited: !0
   }, () => ({
-    type: d.K.RATE_LIMIT,
-    message: f.intl.string(f.t.T15lqq)
+    type: c.K.RATE_LIMIT,
+    message: E.intl.string(E.t.T15lqq)
   })).with({
-    error: r.P.not(r.P.nullish)
+    error: l.P.not(l.P.nullish)
   }, e => {
     let {
       error: t
     } = e;
     return {
-      type: d.K.ERROR,
+      type: c.K.ERROR,
       message: t
     }
   }).with({
     taken: !1
   }, () => ({
-    type: d.K.AVAILABLE,
-    message: f.intl.string(f.t.PgfBS0)
+    type: c.K.AVAILABLE,
+    message: E.intl.string(E.t.PgfBS0)
   })).with({
     taken: !0
   }, () => ({
-    type: d.K.ERROR,
-    message: f.intl.string(f.t.mCrAUV)
+    type: c.K.ERROR,
+    message: E.intl.string(E.t.mCrAUV)
   })).with({
-    error: r.P.nullish
+    error: l.P.nullish
   }, () => ({
-    type: d.K.INTERNAL_ERROR,
+    type: c.K.INTERNAL_ERROR,
     message: ""
   })).otherwise(() => void 0)
 }
 
-function y(e) {
+function A(e) {
   return new Date(2024, 2, 4).toLocaleDateString(e, {
     month: "long",
     day: "numeric",

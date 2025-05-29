@@ -1,12 +1,11 @@
 /** Chunk was on 63141 **/
-"use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => E
 }), n(388685);
 var i, r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  l = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  l = n.n(s),
   a = n(442837),
   c = n(552062),
   d = n(416568),
@@ -17,9 +16,9 @@ var i, r = n(255367),
   g = n(483962),
   m = n(711553),
   y = n(388032),
-  v = n(708132);
+  _ = n(708132);
 
-function _(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,14 +35,14 @@ function O(e) {
     onClose: t
   })
 }
-class b extends(i = s.PureComponent) {
+class b extends(i = o.PureComponent) {
   render() {
     let {
       selectedGuildId: e,
       locked: t,
       contained: n,
       className: i
-    } = this.props, s = null != e ? (0, r.jsx)(p.Z, {
+    } = this.props, o = null != e ? (0, r.jsx)(p.Z, {
       guildId: e,
       onDragStart: this.onDragStart
     }, e) : (0, r.jsx)(m.Z, {
@@ -51,20 +50,20 @@ class b extends(i = s.PureComponent) {
       renderSettings: O,
       onDragStart: this.onDragStart,
       children: (0, r.jsx)(g.Z, {})
-    }), o = n ? "div" : h.ZP;
-    return (0, r.jsxs)(o, {
-      className: l()(v.base, {
-        [v.widget]: !n
+    }), s = n ? "div" : h.ZP;
+    return (0, r.jsxs)(s, {
+      className: l()(_.base, {
+        [_.widget]: !n
       }, i),
       children: [(0, r.jsx)(d.Z, {
         isOverlay: !0,
         disableAppDownload: !0,
         isVisible: !t
-      }), s]
+      }), o]
     })
   }
   constructor(...e) {
-    super(...e), _(this, "onDragStart", e => {
+    super(...e), v(this, "onDragStart", e => {
       let {
         dragStart: t
       } = this.props;
@@ -72,9 +71,9 @@ class b extends(i = s.PureComponent) {
     })
   }
 }
-_(b, "defaultProps", {
+v(b, "defaultProps", {
   contained: !1
 });
-let x = a.ZP.connectStores([u.Z], () => ({
+let E = a.ZP.connectStores([u.Z], () => ({
   selectedGuildId: u.Z.getGuildId()
 }))(b)

@@ -1,23 +1,23 @@
-/** Chunk was on 92643 **/
-t.d(n, {
-  J: () => a
-}), t(388685);
-var r = t(442837),
-  i = t(592125),
-  l = t(19780),
-  o = t(760373);
+/** Chunk was on 80125 **/
+n.d(t, {
+  J: () => c
+}), n(388685);
+var r = n(442837),
+  i = n(592125),
+  o = n(19780),
+  l = n(760373);
 
-function a(e) {
+function c(e) {
   let {
-    channelId: n
+    channelId: t
   } = e;
-  return (0, r.e7)([l.Z, i.Z], () => (function(e) {
-    var n;
-    let [t, r] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.Z, i.Z];
-    if (null == e || t.getChannelId() !== e) return !1;
-    let a = r.getChannel(e);
-    if (null == a || a.isGuildStageVoice()) return !1;
-    let s = null == (n = t.getSecureFramesState()) ? void 0 : n.version;
-    return null != s && s !== o.Eg
-  })(n, [l.Z, i.Z]), [n])
+  return (0, r.e7)([o.Z, i.Z], () => (function(e) {
+    var t;
+    let [n, r] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.Z, i.Z];
+    if (null == e || n.getChannelId() !== e) return !1;
+    let c = r.getChannel(e);
+    if (null == c || c.isGuildStageVoice()) return !1;
+    let a = null == (t = n.getSecureFramesState()) ? void 0 : t.version;
+    return null != a && a !== l.Eg
+  })(t, [o.Z, i.Z]), [t])
 }

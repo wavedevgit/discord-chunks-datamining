@@ -1,6 +1,6 @@
-/** Chunk was on 44247 **/
+/** Chunk was on 90202 **/
 n.d(t, {
-  q: () => E
+  q: () => _
 }), n(953529);
 var r = n(255367);
 n(73800);
@@ -8,22 +8,22 @@ var i = n(704215),
   l = n(481060),
   o = n(906732),
   a = n(963249),
-  c = n(286961),
-  s = n(644916),
+  s = n(286961),
+  c = n(644916),
   u = n(243778),
-  d = n(921944),
-  _ = n(131715);
-let E = e => {
+  E = n(921944),
+  d = n(131715);
+let _ = e => {
   let {
     dismissibleContent: t,
     noticeType: n
   } = e, {
-    analyticsLocations: E
-  } = (0, o.ZP)(), O = (0, c.Z)();
+    analyticsLocations: _
+  } = (0, o.ZP)(), I = (0, s.Z)();
   return (0, r.jsx)(u.Xf, {
     contentType: t,
-    latestVersion: (0, s.t)(t),
-    groupName: d.R.NOTICE_BAR,
+    latestVersion: (0, c.t)(t),
+    groupName: E.R.NOTICE_BAR,
     bypassAutoDismiss: !0,
     children: e => {
       let {
@@ -31,24 +31,24 @@ let E = e => {
         markAsDismissed: o
       } = e;
       if (t === i.z.GIFTING_PROMOTION_REMINDER) {
-        let e = null == O ? void 0 : O.reminderNagbar;
+        let e = null == I ? void 0 : I.reminderNagbar;
         return (0, r.jsxs)(l.qXd, {
           color: l.DM8.PREMIUM_TIER_2,
           children: [(0, r.jsx)(l.RyX, {
-            onClick: () => o(d.L.USER_DISMISS),
+            onClick: () => o(E.L.USER_DISMISS),
             noticeType: n
           }), (0, r.jsx)(l.OgN, {
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
-            className: _.giftIcon
+            className: d.giftIcon
           }), null == e ? void 0 : e.description(), (0, r.jsx)(l.NoS, {
             onClick: () => {
               (0, a.Z)({
                 isGift: !0,
                 initialPlanId: null,
-                analyticsLocations: E,
+                analyticsLocations: _,
                 analyticsLocation: null == e ? void 0 : e.analyticsLocation,
                 analyticsObject: {
                   page: null == e ? void 0 : e.analyticsPage

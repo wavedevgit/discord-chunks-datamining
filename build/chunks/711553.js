@@ -1,12 +1,11 @@
 /** Chunk was on 63141 **/
-"use strict";
 n.d(t, {
   Z: () => h
 });
 var i = n(255367),
   r = n(73800),
-  s = n(120356),
-  o = n.n(s),
+  o = n(120356),
+  s = n.n(o),
   l = n(481060),
   a = n(518084),
   c = n(981631),
@@ -15,17 +14,17 @@ var i = n(255367),
 let h = function(e) {
   let t, {
       title: n,
-      header: s,
+      header: o,
       children: h,
       renderSettings: p,
       onDragStart: f
     } = e,
     g = r.useRef(null);
   return t = null != n ? (0, i.jsxs)(a.ZP.Bar, {
-    className: o()(u.header, u.draggableStartArea),
+    className: s()(u.header, u.draggableStartArea),
     onMouseDown: f,
     children: [(0, i.jsx)(a.ZP.Content, {
-      className: o()(u.headerTitle, u.draggableStartArea),
+      className: s()(u.headerTitle, u.draggableStartArea),
       dynamicSize: !0,
       children: n
     }), (0, i.jsx)(a.ZP.Content, {
@@ -70,7 +69,7 @@ let h = function(e) {
         }
       })
     })]
-  }) : s, (0, i.jsxs)("div", {
+  }) : o, (0, i.jsxs)("div", {
     className: u.sidebar,
     children: [t, (0, i.jsx)("div", {
       className: u.children,

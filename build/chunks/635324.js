@@ -1,12 +1,11 @@
 /** Chunk was on 63141 **/
-"use strict";
 n(388685);
 var i = n(255367),
   r = n(149765),
-  s = n(481060),
-  o = n(570140),
+  o = n(481060),
+  s = n(570140),
   l = n(700785);
-__OVERLAY__ && o.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) {
+__OVERLAY__ && s.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) {
   var {
     clientId: t,
     authorizeProps: {
@@ -18,13 +17,13 @@ __OVERLAY__ && o.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
     var n, i, r = function(e, t) {
       if (null == e) return {};
       var n, i, r = {},
-        s = Object.keys(e);
-      for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        o = Object.keys(e);
+      for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
       return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var s = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
   }(e.authorizeProps, ["authorizations", "permissions"]);
@@ -34,7 +33,7 @@ __OVERLAY__ && o.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
     let {
       location: n
     } = e;
-    o.Z.dispatch({
+    s.Z.dispatch({
       type: "OVERLAY_OAUTH2_AUTHORIZE_MODAL_CLOSE",
       clientId: t,
       location: n
@@ -43,7 +42,7 @@ __OVERLAY__ && o.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
   let p = l.Hn;
   try {
     p = r.vB(null != c ? c : 0)
-  } catch (e) {}(0, s.ZDy)(async () => {
+  } catch (e) {}(0, o.ZDy)(async () => {
     let {
       OAuth2AuthorizeModal: e
     } = await Promise.resolve().then(n.bind(n, 69580));
@@ -84,7 +83,7 @@ __OVERLAY__ && o.Z.subscribe("OVERLAY_OAUTH2_AUTHORIZE_MODAL_OPEN", function(e) 
   }, {
     modalKey: u,
     onCloseRequest: () => {
-      (0, s.Mr3)(u), h({})
+      (0, o.Mr3)(u), h({})
     }
   })
 })

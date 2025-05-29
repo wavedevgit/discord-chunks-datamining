@@ -1,5 +1,4 @@
 /** Chunk was on 63141 **/
-"use strict";
 n.r(e.exports = {
   container: "container__5c50b",
   topLeft: "topLeft__5c50b",

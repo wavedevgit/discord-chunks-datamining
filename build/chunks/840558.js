@@ -1,4 +1,4 @@
-/** Chunk was on 75293 **/
+/** Chunk was on 21522 **/
 e.exports = {
   soundButton: "soundButton_d9cf5f"
 }

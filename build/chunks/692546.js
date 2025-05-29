@@ -1,11 +1,10 @@
 /** Chunk was on 63141 **/
-"use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => E
 }), n(388685);
 var i, r = n(73800),
-  s = n(392711),
-  o = n.n(s),
+  o = n(392711),
+  s = n.n(o),
   l = n(374470),
   a = n(902704),
   c = n(846519),
@@ -29,25 +28,25 @@ let m = {
   },
   y = !1;
 
-function v(e) {
+function _(e) {
   let {
     clientX: t,
     clientY: n
   } = e;
   y = !0, m.x = t, m.y = n
 }
-let _ = new Map;
+let v = new Map;
 
 function O(e, t) {
-  if (null == t) _.delete(e), 0 === _.size && (window.removeEventListener("mousemove", v), y = !1);
+  if (null == t) v.delete(e), 0 === v.size && (window.removeEventListener("mousemove", _), y = !1);
   else {
-    let n = _.get(e);
+    let n = v.get(e);
     if (null != n && (0, a.Z)(n.zone, t.zone)) return;
-    0 === _.size && window.addEventListener("mousemove", v), _.set(e, t)
+    0 === v.size && window.addEventListener("mousemove", _), v.set(e, t)
   }
   if (f.isPlatformEmbedded)
     if (u.default.isCurrentPidOutOfProcess()) {
-      let e = Array.from(_.values()).map(e => {
+      let e = Array.from(v.values()).map(e => {
         let {
           zone: t
         } = e;
@@ -66,20 +65,20 @@ function O(e, t) {
       if (null == e) return;
       e.broadcastCommand({
         message: "set_click_zones",
-        zones: Array.from(_.values()).map(e => {
+        zones: Array.from(v.values()).map(e => {
           let {
             zone: t
           } = e;
           return t
         })
       }), n = e, b || (n.setClickZoneCallback((e, t, n) => {
-        let i = _.get(e);
+        let i = v.get(e);
         null != i && (y || (m.x = t, m.y = n), i.instance.click())
       }), b = !0)
     }
 }
 let b = !1;
-class x extends(i = r.PureComponent) {
+class E extends(i = r.PureComponent) {
   componentDidMount() {
     this.props.observe ? this.observeZone() : this.updateZone()
   }
@@ -103,7 +102,7 @@ class x extends(i = r.PureComponent) {
     (0, p.J)(e, m.x, m.y)
   }
   constructor(...e) {
-    super(...e), g(this, "zone", o().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {
+    super(...e), g(this, "zone", s().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {
       let e = this.props.contentDomRef.current;
       if ((0, l.k)(e)) {
         let {
@@ -126,7 +125,7 @@ class x extends(i = r.PureComponent) {
     })
   }
 }
-g(x, "defaultProps", {
+g(E, "defaultProps", {
   observe: !0,
   observeInterval: 1e3
 })
