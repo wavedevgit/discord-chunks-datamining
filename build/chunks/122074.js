@@ -59,9 +59,9 @@ function T(e, t, a, N) {
   let T = (0, g.OR)(e),
     S = (0, g._c)(e, t),
     E = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
-    w = (0, l.e7)([u.ZP], () => u.ZP.isMuted(e), [e]),
-    A = f.ZP.canUseCustomNotificationSounds(E),
-    D = A ? null != S ? S : T : v.YC.CLASSIC,
+    A = (0, l.e7)([u.ZP], () => u.ZP.isMuted(e), [e]),
+    D = f.ZP.canUseCustomNotificationSounds(E),
+    w = D ? null != S ? S : T : v.YC.CLASSIC,
     U = b.Y.useExperiment({
       location: "guild_context_menu"
     }, {
@@ -77,15 +77,15 @@ function T(e, t, a, N) {
       M && G(m.L.TAKE_ACTION)
     }, [M, G]), !U) return null;
   let F = n => {
-      if (k(n), G(m.L.TAKE_ACTION), !A && n !== v.YC.CLASSIC) {
+      if (k(n), G(m.L.TAKE_ACTION), !D && n !== v.YC.CLASSIC) {
         (0, h.Z)(n, "contextMenu"), (0, y.Z)();
         return
       }
-      null != t ? (0, p.M)(e, t, D, n, "contextMenu") : (0, p.t)(e, D, n, "contextMenu")
+      null != t ? (0, p.M)(e, t, w, n, "contextMenu") : (0, p.t)(e, w, n, "contextMenu")
     },
-    Y = A ? o.Text : O.Z,
+    Y = D ? o.Text : O.Z,
     z = (0, v.LB)(),
-    B = null != (P = null == (I = z.find(e => e.value === D)) ? void 0 : I.label) ? P : x.intl.string(x.t.p3Hg5e),
+    B = null != (P = null == (I = z.find(e => e.value === w)) ? void 0 : I.label) ? P : x.intl.string(x.t.p3Hg5e),
     V = (0, r.jsx)(o.IGR, {
       className: C.newBadge,
       text: x.intl.string(x.t.y2b7CA)
@@ -103,17 +103,15 @@ function T(e, t, a, N) {
             className: C.headerContainer,
             children: [(0, r.jsx)(Y, {
               className: C.text,
-              color: t ? "always-white" : void 0,
               variant: "text-sm/medium",
               children: x.intl.string(x.t.mrqSOj)
             }), (0, r.jsx)(o.SrA, {
               size: "xs",
               className: C.nitroWheel,
-              color: t ? "white" : A ? void 0 : c.JX.PREMIUM_TIER_2
+              color: D ? void 0 : c.JX.PREMIUM_TIER_2
             })]
           }), null != B && (0, r.jsx)(Y, {
             className: C.text,
-            color: t ? "always-white" : void 0,
             variant: "text-xs/normal",
             children: B
           })]
@@ -160,10 +158,10 @@ function T(e, t, a, N) {
     hasSubmenu: !0,
     children: (0, r.jsxs)(o.kSQ, {
       children: [z.map((e, t) => (0, r.jsxs)(i.Fragment, {
-        children: [A || e.value === v.YC.CLASSIC ? (0, r.jsx)(o.k5B, {
+        children: [D || e.value === v.YC.CLASSIC ? (0, r.jsx)(o.k5B, {
           id: e.label,
           group: "notification-preset",
-          checked: (null != D ? D : v.YC.CLASSIC) === e.value,
+          checked: (null != w ? w : v.YC.CLASSIC) === e.value,
           label: e.label,
           action: () => F(e.value)
         }) : (0, r.jsx)(o.sNh, {
@@ -186,7 +184,7 @@ function T(e, t, a, N) {
           },
           action: () => F(e.value)
         }), e.value === v.YC.CLASSIC ? (0, r.jsx)(o.Clw, {}) : null]
-      }, t)), w && (0, r.jsxs)(r.Fragment, {
+      }, t)), A && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.sNh, {
           id: "label",
           label: (0, r.jsx)(o.Text, {

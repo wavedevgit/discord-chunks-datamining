@@ -42,9 +42,9 @@ function p(e) {
         mobilePush: c.ZP.isMobilePushEnabled(e.id),
         messageNotifications: c.ZP.getMessageNotifications(e.id),
         notifyHighlights: c.ZP.getNotifyHighlights(e.id)
-      }), [e.id]), O = S === d.gLR.DISABLED, h = (0, o.Z)(e.id);
+      }), [e.id]), O = S === d.gLR.DISABLED, E = (0, o.Z)(e.id);
 
-      function E(t, n) {
+      function h(t, n) {
         s.Z.updateGuildNotificationSettings(e.id, t, n)
       }
       let y = (0, a.ng)(e.id, !0);
@@ -59,7 +59,7 @@ function p(e) {
               group: "guild-notifications",
               id: "".concat(t),
               label: n,
-              action: () => E({
+              action: () => h({
                 message_notifications: t
               }, u.UE.notifications(t)),
               checked: t === f
@@ -71,14 +71,14 @@ function p(e) {
           children: [(0, i.jsx)(l.S89, {
             id: "suppress-everyone",
             label: g.intl.format(g.t.OWiWAg, {}),
-            action: () => E({
+            action: () => h({
               suppress_everyone: !t
             }, u.UE.suppressEveryone(!t)),
             checked: t
           }), (0, i.jsx)(l.S89, {
             id: "suppress-roles",
             label: g.intl.string(g.t["O/QdoK"]),
-            action: () => E({
+            action: () => h({
               suppress_roles: !n
             }, u.UE.suppressRoles(!n)),
             checked: n
@@ -86,17 +86,17 @@ function p(e) {
             id: "suppress-highlights",
             label: g.intl.string(g.t.gPuteH),
             action: () => {
-              E({
+              h({
                 notify_highlights: O ? d.gLR.ENABLED : d.gLR.DISABLED
               }, u.UE.highlights(O))
             },
             checked: O
-          }), h]
+          }), E]
         }), (0, i.jsx)(l.kSQ, {
           children: (0, i.jsx)(l.S89, {
             id: "mobile-push",
             label: g.intl.string(g.t["h1DL6+"]),
-            action: () => E({
+            action: () => h({
               mobile_push: !p
             }, u.UE.mobilePush(!p)),
             checked: p
@@ -111,11 +111,11 @@ function p(e) {
       } = e;
       return t === S
     })) ? void 0 : t.label,
-    h = (0, a.U)();
+    E = (0, a.U)();
   return null != f ? (0, i.jsx)(l.sNh, {
     id: "guild-notifications",
     label: (0, i.jsxs)(i.Fragment, {
-      children: [h, g.intl.string(g.t.h850Sk)]
+      children: [E, g.intl.string(g.t.h850Sk)]
     }),
     subtext: O,
     action: () => (0, l.ZDy)(async () => {

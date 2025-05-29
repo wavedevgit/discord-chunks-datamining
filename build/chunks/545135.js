@@ -1,6 +1,6 @@
 /** Chunk was on 33213 **/
 n.d(t, {
-  default: () => k
+  default: () => G
 });
 var i = n(255367);
 n(73800);
@@ -18,8 +18,8 @@ var r = n(512722),
   f = n(837949),
   S = n(122074),
   O = n(314897),
-  h = n(984933),
-  E = n(594174),
+  E = n(984933),
+  h = n(594174),
   y = n(976192),
   j = n(904483),
   _ = n(429824),
@@ -66,22 +66,22 @@ function T(e, t) {
   }), e
 }
 
-function w(e) {
+function k(e) {
   let {
     guild: t,
     onSelect: r,
     hideSettings: c
-  } = e, u = t.id, w = h.ZP.getDefaultChannel(u), {
-    entrypoints: k
+  } = e, u = t.id, k = E.ZP.getDefaultChannel(u), {
+    entrypoints: G
   } = (0, b._k)({
     location: "guild_context_menu"
-  }), G = (0, s.e7)([E.default], () => {
-    let e = E.default.getCurrentUser();
+  }), w = (0, s.e7)([h.default], () => {
+    let e = h.default.getCurrentUser();
     return l()(null != e, "GuildContextMenu: user cannot be undefined"), t.isOwner(e)
   }, [t]), U = (0, I.Z)({
     guild: t,
     source: Z.t4x.GUILD_CONTEXT_MENU,
-    channel: k ? null : w
+    channel: G ? null : k
   }), C = (0, L.Z)(u), R = (0, P.Z)(t), B = (0, v.Z)(t), Y = (0, A.Z)(t), Q = (0, y.Z)({
     guildId: t.id,
     userId: O.default.getId(),
@@ -125,7 +125,7 @@ function w(e) {
           }))
         })
       }), Q]
-    }), G ? null : (0, i.jsx)(o.kSQ, {
+    }), w ? null : (0, i.jsx)(o.kSQ, {
       children: (0, i.jsx)(o.sNh, {
         id: "leave-guild",
         label: D.intl.string(D.t.Dv8gFR),
@@ -162,7 +162,7 @@ function w(e) {
     }), (0, i.jsxs)(o.kSQ, {
       children: [F, H]
     }), (0, i.jsxs)(o.kSQ, {
-      children: [z, !G && (0, i.jsx)(o.sNh, {
+      children: [z, !w && (0, i.jsx)(o.sNh, {
         id: "leave-guild",
         label: D.intl.string(D.t.J2TBi4),
         action: ee,
@@ -176,12 +176,12 @@ function w(e) {
   })
 }
 
-function k(e) {
+function G(e) {
   let {
     analyticsLocations: t
   } = (0, u.ZP)(c.Z.CONTEXT_MENU);
   return (0, i.jsx)(u.Gt, {
     value: t,
-    children: (0, i.jsx)(w, M({}, e))
+    children: (0, i.jsx)(k, M({}, e))
   })
 }
