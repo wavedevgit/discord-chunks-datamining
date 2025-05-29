@@ -1,6 +1,6 @@
 /**
   Module ID: 78715
-  Original File Name: 5068649196bad722
+  Original File Name: 92e5bdd91c6a32e8
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1827,7 +1827,7 @@
 }
 
 div:has(>.positionLayer_fc71d3) {
-    translate: 0 1.5rem
+    translate: 0 1.25rem
 }
 
 .container_fc71d3 {
@@ -1841,7 +1841,7 @@ div:has(>.positionLayer_fc71d3) {
     max-height: 640px;
     min-height: 0;
     min-width: 0;
-    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 8px)
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 38px)
 }
 
 .backgroundContainer_fc71d3,.container_fc71d3 {
@@ -6372,4 +6372,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=5068649196bad722.css.map*/
+/*# sourceMappingURL=92e5bdd91c6a32e8.css.map*/

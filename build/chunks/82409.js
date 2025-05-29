@@ -113,7 +113,8 @@ function P(e) {
         I(null, null != n && n.length > 0 ? n[n.length - 1].id : null)
       },
       renderEmptyState: w,
-      setInboxReadState: S
+      setInboxReadState: S,
+      ignoreGrouping: d !== C.V5.ALL
     })]
   })
 }
