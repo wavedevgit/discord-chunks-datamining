@@ -1,0 +1,2 @@
+/** Chunk was on 44285 **/
+s.exports = JSON.parse('{"xRdYAQ":"Les th\xe8mes personnalis\xe9s [b\xeata] ne sont pas disponibles sur mobile.","2hAz8f":"Personnalise ton th\xe8me","23QUzs":"Nouveau\xa0: les th\xe8mes personnalis\xe9s\xa0!","TRCE4u":"Exprime ton humeur avec une infinit\xe9 de combinaisons de couleurs. Essaie \xe7a d\xe8s maintenant, uniquement avec Nitro."}')

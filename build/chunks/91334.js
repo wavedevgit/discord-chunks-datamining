@@ -1,0 +1,2 @@
+/** Chunk was on 70840 **/
+i.exports = JSON.parse('{"xRdYAQ":"Tinkintos temos [beta versija] mobiliojoje versijoje nepasiekiamos.","2hAz8f":"Tinkink savo temą","23QUzs":"Nauja! Tinkintos temos","TRCE4u":"Pasirink iš begalės spalvų derinių pagal nuotaiką. Išbandyk dabar – tik su Nitro."}')

@@ -1,0 +1,2 @@
+/** Chunk was on 80495 **/
+o.exports = JSON.parse('{"xRdYAQ":"Niestandardowe motywy [beta] nie są dostępne w wersji mobilnej.","2hAz8f":"Spersonalizuj sw\xf3j motyw","23QUzs":"Nowość! Niestandardowe motywy","TRCE4u":"Dopasuj motyw do nastroju dzięki niekończącym się kombinacjom kolor\xf3w. Wypr\xf3buj teraz, tylko z Nitro."}')

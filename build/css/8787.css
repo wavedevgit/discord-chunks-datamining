@@ -1,6 +1,6 @@
 /**
   Module ID: 8787
-  Original File Name: b135407ba96e4d31
+  Original File Name: 2fae87fc416d26b3
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -3400,6 +3400,13 @@ html:not(.visual-refresh).theme-dark .container_a3e8db.selected_a3e8db {
     margin-left: -8px;
     position: absolute;
     top: 100%
+}
+
+.closeIcon_ff5cbf {
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 8px
 }
 
 .content_ff5cbf {
@@ -18756,4 +18763,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=b135407ba96e4d31.css.map*/
+/*# sourceMappingURL=2fae87fc416d26b3.css.map*/

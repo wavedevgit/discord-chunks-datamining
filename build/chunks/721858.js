@@ -1,0 +1,2 @@
+/** Chunk was on 49224 **/
+e.exports = JSON.parse('{"xRdYAQ":"Brugerdefinerede temaer i [beta] er ikke tilg\xe6ngelige p\xe5 mobil.","2hAz8f":"Tilpas dit tema","23QUzs":"Nyhed! Brugerdefinerede temaer","TRCE4u":"Match dit hum\xf8r med endel\xf8se farvekombinationer. Pr\xf8v det nu – kun med Nitro."}')

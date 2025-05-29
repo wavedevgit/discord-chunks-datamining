@@ -32,12 +32,19 @@ function d(e) {
           className: c.popup,
           children: (0, i.jsxs)("div", {
             className: c.content,
-            children: [(0, i.jsx)(s.Text, {
+            children: [(0, i.jsx)(s.P3F, {
+              className: c.closeIcon,
+              onClick: () => l(a.L.USER_DISMISS),
+              children: (0, i.jsx)(s.Dio, {
+                size: "xs"
+              })
+            }), (0, i.jsx)(s.Text, {
               variant: "text-md/normal",
               children: o.intl.string(o.t["Ny/0ur"])
             }), (0, i.jsx)(s.zxk, {
               color: s.zxk.Colors.BRAND,
               look: s.zxk.Looks.FILLED,
+              size: s.zxk.Sizes.SMALL,
               fullWidth: !0,
               onClick: () => {
                 l(a.L.TAKE_ACTION), d()

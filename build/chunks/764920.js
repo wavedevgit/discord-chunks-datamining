@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(255367),
   a = n(120356),
-  r = n.n(a),
-  i = n(481060),
+  i = n.n(a),
+  r = n(481060),
   s = n(572539),
   u = n(531578),
   c = n(722771);
@@ -29,7 +29,7 @@ function d(e) {
     emojiKind: n = "face",
     textLabels: a,
     selectedRating: d,
-    onChangeRating: O
+    onChangeRating: b
   } = e;
   return null != a ? (0, l.jsx)("div", {
     className: c.textLabels,
@@ -42,18 +42,18 @@ function d(e) {
           }), a[e]]
         }),
         value: e,
-        className: r()(c.emojiContainer, d === e ? c.selected : null)
+        className: i()(c.emojiContainer, d === e ? c.selected : null)
       })),
-      onClick: e => O(e.value)
+      onClick: e => b(e.value)
     })
   }) : (0, l.jsx)("div", {
-    className: r()(c.ratingSelector, c.emojis),
-    children: t.map(e => (0, l.jsx)(i.P3F, {
-      onClick: () => O(e),
+    className: i()(c.ratingSelector, c.emojis),
+    children: t.map(e => (0, l.jsx)(r.P3F, {
+      onClick: () => b(e),
       "aria-label": e,
       className: c.emojiContainer,
       children: (0, l.jsx)("div", {
-        className: r()(o[e][n], d === e ? c.selected : null)
+        className: i()(o[e][n], d === e ? c.selected : null)
       })
     }, e))
   })

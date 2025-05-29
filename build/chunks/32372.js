@@ -1,0 +1,2 @@
+/** Chunk was on 62937 **/
+i.exports = JSON.parse('{"xRdYAQ":"I temi personalizzati [Beta] non sono disponibili su dispositivi mobili.","2hAz8f":"Personalizza il tuo tema","23QUzs":"Novit\xe0! Temi personalizzati","TRCE4u":"Abbina il tuo umore a combinazioni di colori infinite. Provalo ora, solo con Nitro."}')
