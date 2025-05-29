@@ -25,8 +25,8 @@ var l = i(442837),
   N = i(158776),
   g = i(699516),
   S = i(944486),
-  E = i(885110),
-  m = i(594174),
+  m = i(885110),
+  E = i(594174),
   _ = i(979651),
   P = i(181106),
   C = i(5192),
@@ -48,7 +48,7 @@ var l = i(442837),
 function M(t, e) {
   let {
     analyticsLocations: M
-  } = (0, c.ZP)(), W = (0, l.e7)([m.default], () => m.default.getCurrentUser()), X = (0, l.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivities()), q = (0, l.Wu)([E.Z], () => E.Z.getActivities().filter(t => null == t.application_id || !(null == X ? void 0 : X.has(t.application_id)))), $ = (0, l.Wu)([N.Z], () => null != e ? N.Z.getActivities(e.id, null == t ? void 0 : t.getGuildId()) : [], [e, t]), z = (0, l.Wu)([T.ZP], () => {
+  } = (0, c.ZP)(), W = (0, l.e7)([E.default], () => E.default.getCurrentUser()), X = (0, l.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivities()), q = (0, l.Wu)([m.Z], () => m.Z.getActivities().filter(t => null == t.application_id || !(null == X ? void 0 : X.has(t.application_id)))), $ = (0, l.Wu)([N.Z], () => null != e ? N.Z.getActivities(e.id, null == t ? void 0 : t.getGuildId()) : [], [e, t]), z = (0, l.Wu)([T.ZP], () => {
     let i = (null == t ? void 0 : t.id) != null ? T.ZP.getEmbeddedActivitiesForChannel(t.id) : T.i6;
     return null != e ? i.filter(t => {
       let {
@@ -219,7 +219,7 @@ function M(t, e) {
       subtext: t.name,
       action: () => tn(F.mFx.LISTEN, t)
     }, "self".concat(i))))
-  }), td.length > 0 && td.push((0, n.jsx)(a.Clw, {})), $.forEach((i, l) => {
+  }), td.length > 0 && td.push((0, n.jsx)(a.Clw, {}, "menu-separator")), $.forEach((i, l) => {
     let o = (0, D.Z)(i, F.xjy.EMBEDDED),
       d = (0, D.Z)(i, F.xjy.CONTEXTLESS);
     if (i.type === F.IIU.PLAYING && (0, D.Z)(i, F.xjy.JOIN) && (!o || d) && null != i.session_id && null != i.application_id)
