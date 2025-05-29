@@ -4,8 +4,8 @@ n.d(t, {
 });
 var o = n(255367),
   r = n(73800),
-  i = n(481060),
-  c = n(81897),
+  c = n(481060),
+  i = n(81897),
   l = n(906732),
   a = n(566898),
   s = n(785717),
@@ -30,10 +30,10 @@ function _(e) {
   } = (0, s.KZ)(), {
     mutualFriends: g,
     mutualFriendsCount: O
-  } = (0, d.Z)(t), I = (0, c.Z)();
+  } = (0, d.Z)(t), I = (0, i.Z)();
   return r.useEffect(() => {
     (0, u.Z)(t.id, I)
-  }, [t.id, I]), (0, o.jsx)(i.Ttm, {
+  }, [t.id, I]), (0, o.jsx)(c.Ttm, {
     className: b.scroller,
     fade: !0,
     children: null == g ? Array.from({
@@ -51,11 +51,11 @@ function _(e) {
       let {
         key: t,
         user: r,
-        status: i
+        status: c
       } = e;
       return (0, o.jsx)(p.Z, {
         user: r,
-        status: i,
+        status: c,
         guildId: n,
         channelId: _,
         onSelect: () => {

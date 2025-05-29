@@ -4,8 +4,8 @@ n.d(t, {
 }), n(539854);
 var o = n(585305),
   r = n(806729),
-  i = n(708108),
-  c = n(146078),
+  c = n(708108),
+  i = n(146078),
   l = n(228168),
   a = n(388032);
 
@@ -22,11 +22,11 @@ function s(e) {
     subsection: void 0
   }];
   return t.id !== (null == n ? void 0 : n.id) && f && (p.push({
-    text: (0, i.Z)(s),
+    text: (0, c.Z)(s),
     section: l.oh.MUTUAL_FRIENDS,
     subsection: void 0
   }), p.push({
-    text: (0, c.Z)(u),
+    text: (0, i.Z)(u),
     section: l.oh.MUTUAL_GUILDS,
     subsection: void 0
   })), p

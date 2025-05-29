@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: fae3fa961f668934
+  Original File Name: 8f2db0ed174590c6
 **/
 .scroller__95bea {
     display: flex;
@@ -952,6 +952,12 @@
     margin: 0 auto
 }
 
+.cards__764cd {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
 .wrapper_fc8177 {
     box-sizing: border-box;
     position: relative;
@@ -1210,11 +1216,24 @@
     filter: saturate(.5);
     -webkit-mask-image: linear-gradient(180deg,#000 0,transparent 280px);
     mask-image: linear-gradient(180deg,#000 0,transparent 280px);
-    opacity: .2
+    opacity: .3
 }
 
 .custom-user-profile-theme.theme-light .backgroundImage__9c3be {
-    opacity: .3
+    opacity: .4
+}
+
+.backgroundImage__9c3be:after {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    bottom: 0;
+    content: "";
+    left: 0;
+    -webkit-mask-image: linear-gradient(180deg,rgba(0,0,0,.5) 0,#000 280px);
+    mask-image: linear-gradient(180deg,rgba(0,0,0,.5) 0,#000 280px);
+    position: absolute;
+    right: 0;
+    top: 0
 }
 
 .profile__9c3be {
@@ -1244,7 +1263,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     overflow: hidden
 }
 
@@ -1329,4 +1348,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=fae3fa961f668934.css.map*/
+/*# sourceMappingURL=8f2db0ed174590c6.css.map*/

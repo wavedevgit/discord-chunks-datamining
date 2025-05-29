@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var o = n(255367),
   r = n(73800),
-  i = n(481060),
-  c = n(785717),
+  c = n(481060),
+  i = n(785717),
   l = n(128156),
   a = n(311044),
   s = n(408986),
@@ -17,8 +17,8 @@ function f(e) {
     user: t,
     currentUser: n,
     section: r,
-    subsection: i,
-    displayProfile: c,
+    subsection: c,
+    displayProfile: i,
     guildId: u,
     channelId: f,
     onClose: p
@@ -26,10 +26,10 @@ function f(e) {
   return r === d.oh.ACTIVITY ? (0, o.jsx)(l.Z, {
     user: t,
     currentUser: n,
-    displayProfile: c,
+    displayProfile: i,
     guildId: u,
     channelId: f,
-    subsection: i,
+    subsection: c,
     onClose: p
   }) : r === d.oh.MUTUAL_FRIENDS ? (0, o.jsx)(a.Z, {
     user: t,
@@ -56,7 +56,7 @@ function p(e) {
     onClose: x
   } = e, {
     trackUserProfileAction: h
-  } = (0, c.KZ)(), [{
+  } = (0, i.KZ)(), [{
     section: j,
     subsection: g,
     text: O
@@ -96,7 +96,7 @@ function p(e) {
   }), n));
   return (0, o.jsxs)("div", {
     className: u.container,
-    children: [(0, o.jsx)(i.njP, {
+    children: [(0, o.jsx)(c.njP, {
       type: "top",
       className: u.tabBar,
       selectedItem: j,
@@ -109,17 +109,17 @@ function p(e) {
           return null != (n = b.find(t => t.section === e)) ? n : t
         })
       },
-      children: b.map(e => (0, o.jsx)(i.njP.Item, {
+      children: b.map(e => (0, o.jsx)(c.njP.Item, {
         className: u.tabBarItem,
         id: e.section,
         "aria-label": e.text,
-        children: (0, o.jsx)(i.Text, {
+        children: (0, o.jsx)(c.Text, {
           variant: "heading-md/normal",
           tag: "span",
           children: e.text
         })
       }, e.section))
-    }), (0, o.jsx)(i.njP.Panel, {
+    }), (0, o.jsx)(c.njP.Panel, {
       id: j,
       "aria-label": O,
       className: u.tabBarPanel,

@@ -5,8 +5,8 @@ n.d(t, {
 var o = n(255367);
 n(73800);
 var r = n(120356),
-  i = n.n(r),
-  c = n(442837),
+  c = n.n(r),
+  i = n(442837),
   l = n(481060),
   a = n(410030),
   s = n(726542),
@@ -59,9 +59,9 @@ function I(e) {
   let {
     account: n,
     theme: r,
-    locale: i,
-    userId: c
-  } = e, a = null != (t = n.metadata) ? t : {}, b = (0, f.FI)(a[x.PC.CREATED_AT], i), I = s.Z.get((0, u.rR)(n.type));
+    locale: c,
+    userId: i
+  } = e, a = null != (t = n.metadata) ? t : {}, b = (0, f.FI)(a[x.PC.CREATED_AT], c), I = s.Z.get((0, u.rR)(n.type));
   return (0, o.jsxs)("div", {
     className: j.connection,
     children: [(0, o.jsx)(l.ua7, {
@@ -94,7 +94,7 @@ function I(e) {
             onClick: e => {
               (0, d.yw)(y.rMx.CONNECTED_ACCOUNT_VIEWED, {
                 platform_type: n.type,
-                other_user_id: c
+                other_user_id: i
               }), (0, _.q)({
                 href: t,
                 trusted: (null == I ? void 0 : I.type) !== y.ABu.DOMAIN
@@ -135,9 +135,9 @@ function v(e) {
     connections: t,
     userId: n,
     className: r
-  } = e, l = (0, a.ZP)(), s = (0, c.e7)([b.default], () => b.default.locale);
+  } = e, l = (0, a.ZP)(), s = (0, i.e7)([b.default], () => b.default.locale);
   return 0 === t.length ? null : (0, o.jsx)("div", {
-    className: i()(j.container, r),
+    className: c()(j.container, r),
     children: t.map(e => (0, o.jsx)(I, {
       account: e,
       userId: n,

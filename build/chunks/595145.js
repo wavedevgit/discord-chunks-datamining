@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var o = n(255367),
   r = n(73800),
-  i = n(120356),
-  c = n.n(i),
+  c = n(120356),
+  i = n.n(c),
   l = n(240894),
   a = n(442837),
   s = n(481060),
@@ -24,8 +24,8 @@ var o = n(255367),
   O = n(699516),
   I = n(246946),
   v = n(5192),
-  P = n(111361),
-  N = n(785717),
+  N = n(111361),
+  P = n(785717),
   A = n(221292),
   T = n(687158),
   Z = n(771362),
@@ -59,13 +59,13 @@ function et(e) {
   var t;
   let {
     user: n,
-    currentUser: i,
+    currentUser: c,
     guildId: et,
     channelId: en,
     messageId: eo,
     roleId: er,
-    sessionId: ei,
-    initialSection: ec,
+    sessionId: ec,
+    initialSection: ei,
     initialSubsection: el,
     transitionState: ea,
     customStatusPrompt: es,
@@ -74,10 +74,10 @@ function et(e) {
     sourceAnalyticsLocations: ef = []
   } = e, {
     analyticsLocations: ep
-  } = (0, m.ZP)([...ef, p.Z.USER_PROFILE_MODAL_V2]), em = (0, N.ZB)({
+  } = (0, m.ZP)([...ef, p.Z.USER_PROFILE_MODAL_V2]), em = (0, P.ZB)({
     layout: "MODAL_V2",
     userId: n.id,
-    sourceSessionId: ei,
+    sourceSessionId: ec,
     showGuildProfile: !0,
     guildId: et,
     channelId: en,
@@ -101,17 +101,17 @@ function et(e) {
       originApplicationId: O.Z.getOriginApplicationId(n.id)
     })),
     ev = (0, a.e7)([I.Z], () => I.Z.hidePersonalInformation),
-    eP = null == eg ? void 0 : eg.getBannerURL({
+    eN = null == eg ? void 0 : eg.getBannerURL({
       canAnimate: !1,
       size: 1024
     }),
-    eN = (0, b.p)({
+    eP = (0, b.p)({
       location: "UserProfileModalV2"
     }),
     eA = r.useMemo(() => null != es ? es : (0, _.Z)(), [es]),
     eT = (0, z.Z)({
       user: n,
-      currentUser: i
+      currentUser: c
     }),
     eZ = (0, x.Y)({
       userId: n.id
@@ -120,7 +120,7 @@ function et(e) {
     ew = (0, Z.Z)(n.id);
   return (0, o.jsx)(m.Gt, {
     value: ep,
-    children: (0, o.jsx)(N.Mt, {
+    children: (0, o.jsx)(P.Mt, {
       value: em,
       openedAt: ed,
       fetchStartedAt: null == eg ? void 0 : eg.fetchStartedAt,
@@ -138,10 +138,10 @@ function et(e) {
             user: n,
             displayProfile: eg,
             themeType: J.lY.MODAL_V2,
-            children: [null != eP && (0, o.jsx)("div", {
+            children: [null != eN && (0, o.jsx)("div", {
               className: ee.backgroundImage,
               style: {
-                backgroundImage: "url(".concat(eP, ")")
+                backgroundImage: "url(".concat(eN, ")")
               }
             }), null != ey.interactionType && (0, o.jsx)(l.animated.div, {
               style: ex,
@@ -172,7 +172,7 @@ function et(e) {
                   channelId: en,
                   themeType: J.lY.MODAL_V2,
                   hasEntered: ea === s.Dvm.ENTERED,
-                  prompt: eN && n.id === i.id ? eA : null
+                  prompt: eP && n.id === c.id ? eA : null
                 })]
               }), (0, o.jsxs)("div", {
                 className: ee.profileBody,
@@ -230,25 +230,25 @@ function et(e) {
                       variant: "text-sm/normal"
                     })
                   })
-                }), n.id === i.id && (0, o.jsx)(D.Z, {
+                }), n.id === c.id && (0, o.jsx)(D.Z, {
                   className: ee.profileSection,
-                  isPremiumUser: (0, P.I5)(i),
+                  isPremiumUser: (0, N.I5)(c),
                   onInteraction: eu
                 }), (0, o.jsx)(G.Z, {
                   user: n,
                   className: ee.profileBanner
                 }), (0, o.jsx)("div", {
-                  className: c()(ee.profileSection, ee.profileButtons),
+                  className: i()(ee.profileSection, ee.profileButtons),
                   children: (0, o.jsx)(W.Z, {
                     user: n,
-                    currentUser: i,
+                    currentUser: c,
                     guildId: et,
                     relationshipType: eO,
                     onClose: eu
                   })
                 }), (0, o.jsxs)(s.Ttm, {
                   fade: !0,
-                  className: c()(ee.profileSection, ee.profileScroller),
+                  className: i()(ee.profileSection, ee.profileScroller),
                   children: [(null == eg ? void 0 : eg.bio) != null && (null == eg ? void 0 : eg.bio) !== "" && !ev && (0, o.jsx)(B.Z, {
                     userBio: eg.bio,
                     setLineClamp: !1
@@ -266,7 +266,7 @@ function et(e) {
                     })
                   }), null != eh && (0, o.jsx)(Y.Z, {
                     user: n,
-                    currentUser: i,
+                    currentUser: c,
                     guild: eh,
                     className: ee.profileRolesSection,
                     headingVariant: "text-xs/medium",
@@ -315,12 +315,12 @@ function et(e) {
               })]
             }), (0, o.jsx)(q.Z, {
               user: n,
-              currentUser: i,
+              currentUser: c,
               displayProfile: eg,
               guildId: et,
               channelId: en,
               items: eT,
-              initialSection: ec,
+              initialSection: ei,
               initialSubsection: el,
               onClose: eu
             })]

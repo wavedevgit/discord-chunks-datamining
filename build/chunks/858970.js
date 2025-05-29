@@ -5,8 +5,8 @@ n.d(t, {
 var o = n(255367);
 n(73800);
 var r = n(442837),
-  i = n(481060),
-  c = n(100527),
+  c = n(481060),
+  i = n(100527),
   l = n(906732),
   a = n(138201),
   s = n(699516),
@@ -48,26 +48,26 @@ function I(e) {
     guildId: n,
     channelId: I,
     messageId: v,
-    roleId: P,
-    transitionState: N,
+    roleId: N,
+    transitionState: P,
     openedAt: A,
     onHide: T,
     sourceAnalyticsLocations: Z = []
   } = e, C = n === h.ME ? void 0 : n, w = (0, r.e7)([s.Z], () => s.Z.isBlocked(t.id)), {
     analyticsLocations: S
-  } = (0, l.ZP)([...Z, w ? c.Z.BLOCKED_PROFILE_MODAL : c.Z.IGNORED_PROFILE_MODAL]), E = (0, u.ZB)({
+  } = (0, l.ZP)([...Z, w ? i.Z.BLOCKED_PROFILE_MODAL : i.Z.IGNORED_PROFILE_MODAL]), E = (0, u.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     showGuildProfile: !0,
     guildId: C,
     channelId: I,
     messageId: v,
-    roleId: P
+    roleId: N
   }), B = [{
-    icon: i.owK,
+    icon: c.owK,
     description: j.intl.string(j.t.kcuWvb)
   }, {
-    icon: i.owK,
+    icon: c.owK,
     description: j.intl.string(w ? j.t.QxrDY2 : j.t.W6fjkZ)
   }], D = (0, p.ZP)(t.id, C);
   return (0, o.jsx)(l.Gt, {
@@ -78,8 +78,8 @@ function I(e) {
       fetchStartedAt: null == D ? void 0 : D.fetchStartedAt,
       fetchEndedAt: null == D ? void 0 : D.fetchEndedAt,
       isLoaded: null == D ? void 0 : D.isLoaded,
-      children: (0, o.jsx)(i.Y0X, {
-        transitionState: N,
+      children: (0, o.jsx)(c.Y0X, {
+        transitionState: P,
         className: g.root,
         "aria-label": j.intl.string(j.t["3N/J2t"]),
         children: (0, o.jsxs)(b.Z, {
@@ -93,14 +93,14 @@ function I(e) {
             children: [(0, o.jsx)(m.Z, {
               user: t,
               guildId: C,
-              iconColor: i.TVs.colors.TEXT_NORMAL
+              iconColor: c.TVs.colors.TEXT_NORMAL
             }), (0, o.jsxs)("div", {
               className: g.textContainer,
-              children: [(0, o.jsx)(i.X6q, {
+              children: [(0, o.jsx)(c.X6q, {
                 variant: "heading-xl/bold",
                 color: "text-normal",
                 children: j.intl.string(j.t.b33pLC)
-              }), (0, o.jsx)(i.Text, {
+              }), (0, o.jsx)(c.Text, {
                 variant: "text-md/medium",
                 color: "text-normal",
                 children: j.intl.format(w ? j.t.T7QiLi : j.t.MnEow8, {
@@ -118,13 +118,13 @@ function I(e) {
                   icon: n,
                   title: r,
                   titleVariant: "text-md/normal",
-                  color: i.TVs.colors.TEXT_NORMAL.css
+                  color: c.TVs.colors.TEXT_NORMAL.css
                 }, t)
               })
-            }), (0, o.jsxs)(i.Kqy, {
+            }), (0, o.jsxs)(c.Kqy, {
               align: "center",
               children: [(0, o.jsx)(y.Z, {
-                size: i.PhG.MEDIUM,
+                size: c.PhG.MEDIUM,
                 isBlocked: w,
                 onClick: () => {
                   T(), (0, f.pQ)(O({
