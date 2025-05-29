@@ -1,4 +1,5 @@
-/** Chunk was on 66868 **/
+/** Chunk was on 92754 **/
+"use strict";
 e.exports = {
   container: "container__11014",
   unfocusedMessage: "unfocusedMessage__11014",
@@ -7,6 +8,7 @@ e.exports = {
   badgePreview: "badgePreview__11014",
   messageContainer: "messageContainer__11014",
   avatarContainer: "avatarContainer__11014",
+  avatar: "avatar__11014",
   contentContainer: "contentContainer__11014",
   usernameContainer: "usernameContainer__11014",
   decorationsContainer: "decorationsContainer__11014"

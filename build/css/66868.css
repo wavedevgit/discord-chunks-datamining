@@ -1,9 +1,9 @@
 /**
   Module ID: 66868
-  Original File Name: e395adac6c08ae93
+  Original File Name: 868919f3d3f53a5a
 **/
 .container__11014 {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-tertiary);
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: column;
@@ -41,11 +41,17 @@
 
 .avatarContainer__11014 {
     background-color: var(--bg-brand);
-    border-radius: var(--radius-round);
     height: 40px;
     margin-right: var(--spacing-12);
-    overflow: hidden;
     width: 40px
+}
+
+.avatar__11014,.avatarContainer__11014 {
+    border-radius: var(--radius-round)
+}
+
+.avatar__11014 {
+    overflow: hidden
 }
 
 .contentContainer__11014 {
@@ -124,4 +130,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=e395adac6c08ae93.css.map*/
+/*# sourceMappingURL=868919f3d3f53a5a.css.map*/

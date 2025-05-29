@@ -22,8 +22,8 @@ var t = g(25960),
   P = g(214067),
   H = g(803193),
   l = g(900689),
-  I = g(498103),
-  a = g(931512),
+  a = g(498103),
+  I = g(931512),
   c = g(350136),
   b = g(131085);
 
@@ -72,7 +72,7 @@ let p = A => {
         secondaryTintColor: p
       }, Z));
     case b.x_.WATER_DROP:
-      return (0, B.jsx)(a.q, d({
+      return (0, B.jsx)(I.q, d({
         primaryTintColor: g
       }, Z));
     case b.x_.SKULL:
@@ -80,7 +80,7 @@ let p = A => {
         primaryTintColor: g
       }, Z));
     case b.x_.TOADSTOOL:
-      return (0, B.jsx)(I.T, d({
+      return (0, B.jsx)(a.T, d({
         primaryTintColor: g,
         secondaryTintColor: p
       }, Z));

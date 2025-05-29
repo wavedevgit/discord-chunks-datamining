@@ -22,12 +22,13 @@ function M(A) {
     className: f()(o.messageContainer, A.className),
     children: [(0, B.jsx)("div", {
       className: o.avatarContainer,
-      children: (0, B.jsx)("img", {
+      children: "string" == typeof A.avatar ? (0, B.jsx)("img", {
+        className: o.avatar,
         src: A.avatar,
         alt: "".concat(A.username, " avatar"),
         width: 40,
         height: 40
-      })
+      }) : A.avatar
     }), (0, B.jsxs)("div", {
       className: o.contentContainer,
       children: [(0, B.jsxs)("div", {

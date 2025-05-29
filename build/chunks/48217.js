@@ -1,74 +1,75 @@
-/** Chunk was on 72891 **/
+/** Chunk was on 92754 **/
+"use strict";
 n.d(t, {
-  c: () => g
+  c: () => p
 });
-var i = n(255367);
+var r = n(255367);
 n(73800);
-var a = n(481060),
-  o = n(269128),
-  l = n(358555),
-  r = n(267642),
-  c = n(26323),
-  s = n(30513),
-  d = n(981631),
-  u = n(388032),
-  _ = n(309818);
+var i = n(481060),
+  l = n(269128),
+  s = n(358555),
+  a = n(267642),
+  o = n(26323),
+  c = n(30513),
+  u = n(981631),
+  d = n(388032),
+  m = n(309818);
 
-function f(e) {
+function g(e) {
   let {
     guild: t,
     banner: n
   } = e;
-  return (0, i.jsx)("div", {
-    className: _.guildBanner,
+  return (0, r.jsx)("div", {
+    className: m.guildBanner,
     style: {
       backgroundImage: "url(".concat(n)
     },
-    children: (0, i.jsxs)("div", {
-      className: _.guildHeader,
-      children: [(0, i.jsx)(l.Z, {
+    children: (0, r.jsxs)("div", {
+      className: m.guildHeader,
+      children: [(0, r.jsx)(s.Z, {
         guild: t,
         isBannerVisible: !0
-      }), (0, i.jsx)(a.X6q, {
-        className: _.guildName,
+      }), (0, r.jsx)(i.X6q, {
+        className: m.guildName,
         variant: "heading-md/semibold",
         children: t.toString()
-      }), (0, i.jsx)(o.Z, {
-        className: _.dropdown,
+      }), (0, r.jsx)(l.Z, {
+        className: m.dropdown,
         open: !1
       })]
     })
   })
 }
 
-function g(e) {
+function p(e) {
   let {
     analyticsLocations: t,
     analyticsLocation: n,
-    guild: a,
-    isGIF: o,
-    banner: l
-  } = e, _ = o ? (0, r._p)(d.oNc.ANIMATED_BANNER) : (0, r._p)(d.oNc.BANNER);
-  null != _ && (0, c.Z)({
+    guild: i,
+    isGIF: l,
+    banner: s
+  } = e, m = l ? (0, a._p)(u.oNc.ANIMATED_BANNER) : (0, a._p)(u.oNc.BANNER);
+  null != m && (0, o.Z)({
     analyticsLocations: t,
     analyticsSourceLocation: n,
-    guild: a,
+    guild: i,
     headerProps: {
-      title: u.intl.string(u.t["rv2H+/"]),
+      title: d.intl.string(d.t["rv2H+/"]),
       subtitle: function(e, t) {
-        let n = (0, r.nW)(e);
-        return t ? u.intl.formatToPlainString(u.t["TR/Uys"], {
+        let n = (0, a.nW)(e);
+        return t ? d.intl.formatToPlainString(d.t["TR/Uys"], {
           targetLevelOrPlan: n
-        }) : u.intl.formatToPlainString(u.t.B253V1, {
+        }) : d.intl.formatToPlainString(d.t.B253V1, {
           targetLevelOrPlan: n
         })
-      }(_, o),
-      image: (0, i.jsx)(f, {
-        guild: a,
-        banner: l
+      }(m, l),
+      image: (0, r.jsx)(g, {
+        guild: i,
+        banner: s
       })
     },
-    perkIntro: u.intl.string(u.t.ZuItcH),
-    perks: o ? (0, s.zC)() : (0, s.XO)()
+    perkIntro: d.intl.string(d.t.ZuItcH),
+    perks: l ? (0, c.zC)() : (0, c.XO)()
   })
 }

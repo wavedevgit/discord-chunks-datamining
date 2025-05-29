@@ -1,4 +1,4 @@
-/** Chunk was on 50629 **/
+/** Chunk was on 92754 **/
 "use strict";
 e.exports = {
   spinnerContainer: "spinnerContainer__69ef9",
@@ -20,5 +20,6 @@ e.exports = {
   pickerGrid: "pickerGrid__69ef9",
   pickerItem: "pickerItem__69ef9",
   pickerItemSelected: "pickerItemSelected__69ef9",
-  disabledForm: "disabledForm__69ef9"
+  disabledForm: "disabledForm__69ef9",
+  sidebarContainer: "sidebarContainer__69ef9"
 }

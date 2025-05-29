@@ -1,34 +1,34 @@
 /** Chunk was on 32652 **/
-r.d(n, {
-  Z: () => m
+t.d(n, {
+  Z: () => u
 });
-var t = r(255367),
-  a = r(73800),
-  i = r(481060),
-  s = r(434404),
-  l = r(755641),
-  o = r(941469),
-  d = r(388032),
-  c = r(602268);
+var r = t(255367),
+  i = t(73800),
+  a = t(481060),
+  l = t(434404),
+  s = t(755641),
+  d = t(941469),
+  o = t(388032),
+  c = t(602268);
 
-function m(e) {
+function u(e) {
   let {
     className: n,
-    guildId: r,
-    selectedBadge: m
-  } = e, f = a.useCallback(e => {
-    s.Z.updateGuildProfile(r, {
+    guildId: t,
+    selectedBadge: u
+  } = e, m = i.useCallback(e => {
+    l.Z.updateGuildProfile(t, {
       badge: e
     })
-  }, [r]);
-  return (0, t.jsxs)("div", {
+  }, [t]);
+  return (0, r.jsxs)("div", {
     className: n,
-    children: [(0, t.jsx)(i.vwX, {
+    children: [(0, r.jsx)(a.vwX, {
       className: c.sectionTitle,
-      children: d.intl.string(o.default.pb7lpK)
-    }), (0, t.jsx)(l.g, {
-      onBadgeClicked: f,
-      selectedBadge: m
+      children: o.intl.string(d.default.pb7lpK)
+    }), (0, r.jsx)(s.g, {
+      onBadgeClicked: m,
+      selectedBadge: u
     })]
   })
 }

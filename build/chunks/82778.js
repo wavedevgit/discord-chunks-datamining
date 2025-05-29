@@ -1,4 +1,5 @@
-/** Chunk was on 72132 **/
+/** Chunk was on 92754 **/
+"use strict";
 e.exports = {
   welcomeMessageContainer: "welcomeMessageContainer__6f212",
   avatar: "avatar__6f212",

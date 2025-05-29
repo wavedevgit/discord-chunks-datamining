@@ -1,4 +1,4 @@
-/** Chunk was on 21487 **/
+/** Chunk was on 52370 **/
 r.d(t, {
   default: () => p
 }), r(388685), r(953529);
@@ -32,7 +32,7 @@ function p(e) {
       }
       return o
     }(e, ["guildId", "powerup"]);
-  let [g, m] = o.useState(void 0), _ = o.useMemo(() => {
+  let [g, _] = o.useState(void 0), m = o.useMemo(() => {
     switch (f.skuId) {
       case u.IN:
         return (0, n.jsx)(c.E, {
@@ -91,12 +91,12 @@ function p(e) {
             className: d.footer,
             guildId: p,
             powerup: f,
-            onError: m
+            onError: _
           })]
         })]
-      }), null != _ && (0, n.jsx)("div", {
+      }), null != m && (0, n.jsx)("div", {
         className: d.exampleImage,
-        children: _
+        children: m
       })]
     }), (0, n.jsx)(a.olH, {
       className: d.close,

@@ -1,4 +1,5 @@
-/** Chunk was on 85449 **/
+/** Chunk was on 92754 **/
+"use strict";
 e.exports = {
   availabilityIndicator: "availabilityIndicator__40463",
   icon: "icon__40463",
