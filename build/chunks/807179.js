@@ -8,6 +8,5 @@ e.exports = {
   editor: "editor_db78b7",
   closeButton: "closeButton_db78b7",
   backButton: "backButton_db78b7",
-  backButtonInnner: "backButtonInnner_db78b7",
-  loading: "loading_db78b7"
+  backButtonInnner: "backButtonInnner_db78b7"
 }

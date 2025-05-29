@@ -4,8 +4,8 @@ r.d(t, {
 }), r(388685);
 var n = r(255367),
   a = r(73800),
-  l = r(36793),
-  s = r(481060),
+  s = r(36793),
+  l = r(481060),
   i = r(710845),
   o = r(197712),
   c = r(511004),
@@ -49,10 +49,10 @@ let g = new i.Z("ImageEditor"),
       bottom: 0,
       left: 0,
       right: 0
-    }), [y, C] = a.useState(0), [S, w] = a.useState({
+    }), [y, C] = a.useState(0), [w, S] = a.useState({
       x: 0,
       y: 0
-    }), [A, k] = a.useState(!1), [T, M] = a.useState(0), R = "image/gif" === t.type;
+    }), [A, k] = a.useState(!1), [M, T] = a.useState(0), R = "image/gif" === t.type;
     a.useEffect(() => {
       (0, c.Z)()
     }, []);
@@ -77,7 +77,7 @@ let g = new i.Z("ImageEditor"),
         f.current = {
           x: t,
           y: r
-        }, _.current.style.transform = "translate3d(".concat(t, "px, ").concat(r, "px, 0) rotate(").concat(y, "deg)"), M(new Date().getTime())
+        }, _.current.style.transform = "translate3d(".concat(t, "px, ").concat(r, "px, 0) rotate(").concat(y, "deg)"), T(new Date().getTime())
       }, [_, y, D]),
       z = a.useCallback(e => {
         if (null == E) return;
@@ -98,7 +98,7 @@ let g = new i.Z("ImageEditor"),
           r = f.current.y,
           n = E.height,
           a = E.width,
-          l = x({
+          s = x({
             width: n,
             height: a
           }, j);
@@ -108,7 +108,7 @@ let g = new i.Z("ImageEditor"),
         }), C(e), N({
           width: n,
           height: a
-        }), I(l)
+        }), I(s)
       }, [E, y, P, j]),
       Z = a.useCallback(() => {
         if (null == E) return {};
@@ -124,7 +124,7 @@ let g = new i.Z("ImageEditor"),
         }
       }, [E, y, j]),
       U = a.useCallback(e => {
-        w({
+        S({
           x: e.clientX - f.current.x,
           y: e.clientY - f.current.y
         }), k(!0)
@@ -139,10 +139,10 @@ let g = new i.Z("ImageEditor"),
         y: r
       } = f.current;
       A && (e.clientX !== t || e.clientY !== r) && P({
-        x: t = e.clientX - S.x,
-        y: r = e.clientY - S.y
+        x: t = e.clientX - w.x,
+        y: r = e.clientY - w.y
       })
-    }, [A, S, P]);
+    }, [A, w, P]);
     a.useEffect(() => {
       if (A) return window.addEventListener("mousemove", B), () => window.removeEventListener("mousemove", B)
     }, [B, A]);
@@ -156,11 +156,11 @@ let g = new i.Z("ImageEditor"),
             height: u.eT,
             width: u.eT
           },
-          s = null;
+          l = null;
         if (null != W.current && (W.current(), W.current = null), R) try {
           let {
             result: r,
-            cancelFn: l
+            cancelFn: s
           } = await (0, o.$p)({
             file: t,
             image: n,
@@ -169,13 +169,13 @@ let g = new i.Z("ImageEditor"),
             maxDimensions: a,
             imageRotation: y
           });
-          W.current = l, e = await r
+          W.current = s, e = await r
         } catch (e) {
-          g.error("Error cropping GIF", e), s = u.ze.GIF_CROPPING
+          g.error("Error cropping GIF", e), l = u.ze.GIF_CROPPING
         } finally {
           var c;
           null == (c = W.current) || c.call(W), W.current = null
-        } else e = (0, l.PT)({
+        } else e = (0, s.PT)({
           image: n,
           cropDimensions: m,
           cropOriginCoordinates: f.current,
@@ -185,7 +185,7 @@ let g = new i.Z("ImageEditor"),
         return i({
           imageData: e,
           imageDataTimestamp: r,
-          error: s,
+          error: l,
           loading: !1
         }), () => {
           var e;
@@ -193,13 +193,8 @@ let g = new i.Z("ImageEditor"),
         }
       }, [t, y, R, i]);
     return a.useEffect(() => {
-      i({
-        error: null,
-        loading: !0
-      });
-      let e = setTimeout(F, 1e3);
-      return () => clearTimeout(e)
-    }, [j, F, i, T]), (0, n.jsxs)("div", {
+      F()
+    }, [F, M, y, j]), (0, n.jsxs)("div", {
       className: p.imageEditor,
       children: [(0, n.jsxs)("div", {
         className: p.editingContainer,
@@ -234,11 +229,11 @@ let g = new i.Z("ImageEditor"),
         className: p.toolsContainer,
         children: [(0, n.jsxs)("div", {
           className: p.zoomControls,
-          children: [(0, n.jsx)(s.XBm, {
+          children: [(0, n.jsx)(l.XBm, {
             size: "xxs",
             color: "currentColor",
             className: p.zoomIcon
-          }), (0, n.jsx)(s.iRW, {
+          }), (0, n.jsx)(l.iRW, {
             className: p.slider,
             initialValue: 1,
             minValue: 1,
@@ -248,42 +243,42 @@ let g = new i.Z("ImageEditor"),
             equidistant: !0,
             hideBubble: !0,
             "aria-label": d.intl.string(d.t.dnvZSk)
-          }), (0, n.jsx)(s.XBm, {
+          }), (0, n.jsx)(l.XBm, {
             size: "md",
             color: "currentColor",
             className: p.zoomIcon
           })]
-        }), (0, n.jsx)(s.ua7, {
+        }), (0, n.jsx)(l.ua7, {
           text: d.intl.string(d.t.E36Wd3),
           "aria-label": d.intl.string(d.t.LzFiKC),
           children: e => {
             var t, r, {
                 onClick: a
               } = e,
-              l = function(e, t) {
+              s = function(e, t) {
                 if (null == e) return {};
                 var r, n, a = function(e, t) {
                   if (null == e) return {};
                   var r, n, a = {},
-                    l = Object.keys(e);
-                  for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
+                    s = Object.keys(e);
+                  for (n = 0; n < s.length; n++) r = s[n], t.indexOf(r) >= 0 || (a[r] = e[r]);
                   return a
                 }(e, t);
                 if (Object.getOwnPropertySymbols) {
-                  var l = Object.getOwnPropertySymbols(e);
-                  for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
+                  var s = Object.getOwnPropertySymbols(e);
+                  for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r])
                 }
                 return a
               }(e, ["onClick"]);
-            return (0, n.jsx)(s.zxk, (t = h({
+            return (0, n.jsx)(l.zxk, (t = h({
               className: p.rotateButton,
-              look: s.zxk.Looks.BLANK,
-              size: s.PhG.NONE,
-              color: s.zxk.Colors.TRANSPARENT,
+              look: l.zxk.Looks.BLANK,
+              size: l.PhG.NONE,
+              color: l.zxk.Colors.TRANSPARENT,
               grow: !1
-            }, l), r = r = {
+            }, s), r = r = {
               onClick: G,
-              children: (0, n.jsx)(s.Vk2, {
+              children: (0, n.jsx)(l.Vk2, {
                 size: "md",
                 color: "currentColor"
               })
@@ -319,8 +314,8 @@ let g = new i.Z("ImageEditor"),
     let {
       width: r,
       height: n
-    } = e, a = 400 * t, l = r / n;
-    return r > n ? n = (r = a) / l : r = (n = a) * l, {
+    } = e, a = 400 * t, s = r / n;
+    return r > n ? n = (r = a) / s : r = (n = a) * s, {
       width: r,
       height: n
     }
@@ -330,10 +325,10 @@ function x(e, t) {
   let {
     width: r,
     height: n
-  } = v(e, t), a = Math.abs(400 - r) / 2, l = Math.abs(400 - n) / 2;
+  } = v(e, t), a = Math.abs(400 - r) / 2, s = Math.abs(400 - n) / 2;
   return {
-    top: l,
-    bottom: -l,
+    top: s,
+    bottom: -s,
     left: -a,
     right: a
   }

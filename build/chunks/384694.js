@@ -4,8 +4,8 @@ r.d(t, {
 }), r(388685);
 var n = r(255367),
   a = r(73800),
-  l = r(442837),
-  s = r(481060),
+  s = r(442837),
+  l = r(481060),
   i = r(430824),
   o = r(496675),
   c = r(768581),
@@ -20,7 +20,7 @@ let p = e => ({
     let {
       onChange: t,
       selected: r
-    } = e, o = (0, l.e7)([i.Z], () => i.Z.getGuilds()), u = a.useMemo(() => Object.values(o).filter(h).map(p), [o]), g = a.useCallback(e => {
+    } = e, o = (0, s.e7)([i.Z], () => i.Z.getGuilds()), u = a.useMemo(() => Object.values(o).filter(h).map(p), [o]), g = a.useCallback(e => {
       let [t] = e;
       if (null == t || null == t.value) return null;
       let r = o[t.value];
@@ -51,7 +51,7 @@ let p = e => ({
         children: [(0, n.jsx)("img", {
           src: r,
           alt: e.label
-        }), (0, n.jsx)(s.Text, {
+        }), (0, n.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "header-muted",
           className: d.guildSelectOptionLabel,
@@ -59,7 +59,7 @@ let p = e => ({
         })]
       }) : e.label
     }, [o]);
-    return (0, n.jsx)(s.q4e, {
+    return (0, n.jsx)(l.q4e, {
       className: d.guildSelector,
       onChange: t,
       options: u,
