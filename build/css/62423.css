@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 8025d311abb38f4e
+  Original File Name: 6228a47c979ecd0a
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -7156,6 +7156,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     overflow: hidden
 }
 
+.scrollerInner__36d07.scrollerAllowSticky__36d07 {
+    overflow: unset
+}
+
 .scrollerInner__36d07:focus {
     outline: none
 }
@@ -13278,4 +13282,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=8025d311abb38f4e.css.map*/
+/*# sourceMappingURL=6228a47c979ecd0a.css.map*/

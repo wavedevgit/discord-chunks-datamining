@@ -224,7 +224,9 @@ let V = i.memo(function(e) {
           tabIndex: -1,
           role: "group",
           children: [Q, (0, r.jsxs)("ol", F(G({
-            className: B.scrollerInner,
+            className: a()(B.scrollerInner, {
+              [B.scrollerAllowSticky]: f.isModeratorReportChannel()
+            }),
             "aria-label": U.intl.formatToPlainString(U.t.XarRiI, {
               channelName: f.name
             })
