@@ -5,15 +5,15 @@ r.d(t, {
 var n = r(255367),
   a = r(73800),
   l = r(36793),
-  i = r(481060),
-  s = r(710845),
+  s = r(481060),
+  i = r(710845),
   o = r(197712),
   c = r(511004),
   u = r(598117),
   d = r(388032),
   p = r(917093);
 
-function g(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -31,7 +31,7 @@ function g(e) {
   }
   return e
 }
-let h = new s.Z("ImageEditor"),
+let g = new i.Z("ImageEditor"),
   m = {
     width: 400,
     height: 400
@@ -40,11 +40,11 @@ let h = new s.Z("ImageEditor"),
     let {
       file: t,
       imageUri: r,
-      onUpdate: s
+      onUpdate: i
     } = e, f = a.useRef({
       x: 0,
       y: 0
-    }), _ = a.useRef(null), [O, j] = a.useState(1), [E, D] = a.useState(null), [N, I] = a.useState({
+    }), _ = a.useRef(null), [j, O] = a.useState(1), [E, N] = a.useState(null), [D, I] = a.useState({
       top: 0,
       bottom: 0,
       left: 0,
@@ -52,15 +52,15 @@ let h = new s.Z("ImageEditor"),
     }), [y, C] = a.useState(0), [S, w] = a.useState({
       x: 0,
       y: 0
-    }), [A, k] = a.useState(!1), [M, L] = a.useState(0), T = "image/gif" === t.type;
+    }), [A, k] = a.useState(!1), [T, M] = a.useState(0), R = "image/gif" === t.type;
     a.useEffect(() => {
       (0, c.Z)()
     }, []);
-    let R = a.useCallback(() => {
+    let L = a.useCallback(() => {
         if (null == _.current) return;
         let e = _.current.naturalWidth,
           t = _.current.naturalHeight;
-        D({
+        N({
           width: e,
           height: t
         }), I(x({
@@ -73,12 +73,12 @@ let h = new s.Z("ImageEditor"),
         let {
           x: t,
           y: r
-        } = (0, o.U$)(e.x, e.y, N);
+        } = (0, o.U$)(e.x, e.y, D);
         f.current = {
           x: t,
           y: r
-        }, _.current.style.transform = "translate3d(".concat(t, "px, ").concat(r, "px, 0) rotate(").concat(y, "deg)"), L(new Date().getTime())
-      }, [_, y, N]),
+        }, _.current.style.transform = "translate3d(".concat(t, "px, ").concat(r, "px, 0) rotate(").concat(y, "deg)"), M(new Date().getTime())
+      }, [_, y, D]),
       z = a.useCallback(e => {
         if (null == E) return;
         let t = x(E, e),
@@ -86,7 +86,7 @@ let h = new s.Z("ImageEditor"),
             x: r,
             y: n
           } = f.current;
-        j(e), I(t), P({
+        O(e), I(t), P({
           x: r,
           y: n
         })
@@ -101,28 +101,28 @@ let h = new s.Z("ImageEditor"),
           l = x({
             width: n,
             height: a
-          }, O);
+          }, j);
         P({
           x: r,
           y: t
-        }), C(e), D({
+        }), C(e), N({
           width: n,
           height: a
         }), I(l)
-      }, [E, y, P, O]),
+      }, [E, y, P, j]),
       Z = a.useCallback(() => {
         if (null == E) return {};
         let {
           height: e,
           width: t
-        } = v(b(E, y), O);
+        } = v(b(E, y), j);
         return {
           height: e,
           width: t,
           minHeight: e,
           minWidth: t
         }
-      }, [E, y, O]),
+      }, [E, y, j]),
       U = a.useCallback(e => {
         w({
           x: e.clientX - f.current.x,
@@ -156,8 +156,8 @@ let h = new s.Z("ImageEditor"),
             height: u.eT,
             width: u.eT
           },
-          i = null;
-        if (null != W.current && (W.current(), W.current = null), T) try {
+          s = null;
+        if (null != W.current && (W.current(), W.current = null), R) try {
           let {
             result: r,
             cancelFn: l
@@ -171,7 +171,7 @@ let h = new s.Z("ImageEditor"),
           });
           W.current = l, e = await r
         } catch (e) {
-          h.error("Error cropping GIF", e), i = u.ze.GIF_CROPPING
+          g.error("Error cropping GIF", e), s = u.ze.GIF_CROPPING
         } finally {
           var c;
           null == (c = W.current) || c.call(W), W.current = null
@@ -182,36 +182,36 @@ let h = new s.Z("ImageEditor"),
           maxDimensions: a,
           imageRotation: y
         });
-        return s({
+        return i({
           imageData: e,
           imageDataTimestamp: r,
-          error: i,
+          error: s,
           loading: !1
         }), () => {
           var e;
           null == (e = W.current) || e.call(W), W.current = null
         }
-      }, [t, y, T, s]);
+      }, [t, y, R, i]);
     return a.useEffect(() => {
-      s({
+      i({
         error: null,
         loading: !0
       });
       let e = setTimeout(F, 1e3);
       return () => clearTimeout(e)
-    }, [O, F, s, M]), (0, n.jsxs)("div", {
+    }, [j, F, i, T]), (0, n.jsxs)("div", {
       className: p.imageEditor,
       children: [(0, n.jsxs)("div", {
         className: p.editingContainer,
         children: [(0, n.jsx)("img", {
-          onLoad: R,
+          onLoad: L,
           onError: () => {
-            s({
+            i({
               error: u.ze.IMAGE_LOAD,
               loading: !1
             })
           },
-          style: g({
+          style: h({
             opacity: +(null != E),
             transform: "translate3d(".concat(f.current.x, "px, ").concat(f.current.y, "px, 0) rotate(").concat(y, "deg)")
           }, Z()),
@@ -234,11 +234,11 @@ let h = new s.Z("ImageEditor"),
         className: p.toolsContainer,
         children: [(0, n.jsxs)("div", {
           className: p.zoomControls,
-          children: [(0, n.jsx)(i.XBm, {
+          children: [(0, n.jsx)(s.XBm, {
             size: "xxs",
             color: "currentColor",
             className: p.zoomIcon
-          }), (0, n.jsx)(i.iRW, {
+          }), (0, n.jsx)(s.iRW, {
             className: p.slider,
             initialValue: 1,
             minValue: 1,
@@ -248,12 +248,12 @@ let h = new s.Z("ImageEditor"),
             equidistant: !0,
             hideBubble: !0,
             "aria-label": d.intl.string(d.t.dnvZSk)
-          }), (0, n.jsx)(i.XBm, {
+          }), (0, n.jsx)(s.XBm, {
             size: "md",
             color: "currentColor",
             className: p.zoomIcon
           })]
-        }), (0, n.jsx)(i.ua7, {
+        }), (0, n.jsx)(s.ua7, {
           text: d.intl.string(d.t.E36Wd3),
           "aria-label": d.intl.string(d.t.LzFiKC),
           children: e => {
@@ -275,15 +275,15 @@ let h = new s.Z("ImageEditor"),
                 }
                 return a
               }(e, ["onClick"]);
-            return (0, n.jsx)(i.zxk, (t = g({
+            return (0, n.jsx)(s.zxk, (t = h({
               className: p.rotateButton,
-              look: i.zxk.Looks.BLANK,
-              size: i.PhG.NONE,
-              color: i.zxk.Colors.TRANSPARENT,
+              look: s.zxk.Looks.BLANK,
+              size: s.PhG.NONE,
+              color: s.zxk.Colors.TRANSPARENT,
               grow: !1
             }, l), r = r = {
               onClick: G,
-              children: (0, n.jsx)(i.Vk2, {
+              children: (0, n.jsx)(s.Vk2, {
                 size: "md",
                 color: "currentColor"
               })
