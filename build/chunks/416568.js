@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   Z: () => ef
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(925549),
   y = n(493773),
   O = n(209613),
-  v = n(100527),
-  _ = n(906732),
+  _ = n(100527),
+  v = n(906732),
   C = n(358221),
   j = n(540059),
   S = n(706590),
@@ -32,8 +32,8 @@ var r = n(255367),
   N = n(822857),
   Z = n(931928),
   T = n(431286),
-  A = n(796974),
-  R = n(271383),
+  R = n(796974),
+  A = n(271383),
   D = n(430824),
   L = n(771845),
   k = n(358085),
@@ -189,7 +189,7 @@ function ed(e) {
     lurkingGuildIds: i
   } = e, l = (0, S.Z)(), {
     pathname: o
-  } = (0, c.TH)(), s = o.startsWith(en.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), a = (0, h.Wu)([D.Z, R.ZP], () => M.default.keys(D.Z.getGuilds()).filter(e => R.ZP.isCurrentUserGuest(e))), u = i.concat(a), {
+  } = (0, c.TH)(), s = o.startsWith(en.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), a = (0, h.Wu)([D.Z, A.ZP], () => M.default.keys(D.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), u = i.concat(a), {
     notificationCenterVariant: d
   } = P.L.useExperiment({
     location: "GuildsBar"
@@ -242,7 +242,7 @@ function ep(e) {
   } = e, a = (0, j.Q3)("GuildsBar"), [d] = (0, h.Wu)([L.ZP], () => {
     let e = L.ZP.getGuildsTree();
     return [e, e.version]
-  }), p = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), O = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, E] = i.useState(!1), P = i.useCallback(() => E(!0), []), I = i.useCallback(() => E(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), M = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
+  }), p = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), O = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, E] = i.useState(!1), P = i.useCallback(() => E(!0), []), I = i.useCallback(() => E(!1), []), A = i.useRef(!1), [D] = i.useState(() => new f.V7), M = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
     ref: W
   } = z, K = ea(z, ["ref"]), q = (0, m.mFp)(), [X, ee] = i.useState(!1), [et, el] = i.useState(!1), ep = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), ef = (0, m.dQu)(g.Z.space.SPACE_XS), eg = i.useMemo(() => new eu(d, ee, el, () => {
     var e, t;
@@ -264,25 +264,25 @@ function ep(e) {
   }), [eg]);
   let {
     analyticsLocations: em
-  } = (0, _.ZP)(v.Z.GUILDS_LIST), {
+  } = (0, v.ZP)(_.Z.GUILDS_LIST), {
     pathname: eb
   } = (0, c.TH)(), ey = eb.startsWith(en.Z5c.GUILD_DISCOVERY) || eb.startsWith(en.Z5c.GLOBAL_DISCOVERY);
   (0, y.Ng)(() => {
-    if (!R.current && 0 !== d.size) {
+    if (!A.current && 0 !== d.size) {
       if (ey) eg.scrollToGuild(null, !1);
       else {
         let {
           scrollTop: e
-        } = A.Z.getGuildListDimensions();
+        } = R.Z.getGuildListDimensions();
         eg.scrollTo({
           to: e,
           animate: !1
         })
       }
-      return R.current = !0, () => D.stop()
+      return A.current = !0, () => D.stop()
     }
   }), i.useEffect(() => {
-    if (eg.setGuildsTree(d), R.current || 0 === d.size) return;
+    if (eg.setGuildsTree(d), A.current || 0 === d.size) return;
     let e = w.Z.getState().guildId;
     eg.scrollToGuild(e, !1);
     let t = null;
@@ -300,7 +300,7 @@ function ep(e) {
     })
   }, [eg]);
   (0, G.Z)(eg.scrollToGuild);
-  let ev = i.useCallback(function e(t, n, i) {
+  let e_ = i.useCallback(function e(t, n, i) {
       switch (t.type) {
         case U.eD.FOLDER:
           return (0, r.jsx)(J.Z, {
@@ -330,14 +330,14 @@ function ep(e) {
       }
     }, [P, I, S, eg.setNodeRef]),
     {
-      enabled: e_
+      enabled: ev
     } = (0, N.WX)({
       location: "GuildsBar"
     });
   (0, T.t)();
   let eC = i.useRef(null),
     ej = (0, Z.qp)({
-      isVirtualCurrencyEnabled: e_,
+      isVirtualCurrencyEnabled: ev,
       discoveryButtonRef: eC,
       scrollToBottom: eg.scrollToBottom
     }),
@@ -347,7 +347,7 @@ function ep(e) {
       onDiscoveryButtonClick: ex
     } = ej,
     eP = ea(ej, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
-    eI = e_ && eS,
+    eI = ev && eS,
     ew = (0, r.jsx)(Y.Z, {
       ref: eC,
       questId: eI ? eE : void 0,
@@ -371,7 +371,7 @@ function ep(e) {
     {
       pinnedSectionEnabled: eT
     } = (0, B.U)("GuildsBar");
-  return (0, r.jsx)(_.Gt, {
+  return (0, r.jsx)(v.Gt, {
     value: em,
     children: (0, r.jsx)(m.f6W, {
       theme: s,
@@ -412,7 +412,7 @@ function ep(e) {
                     guildDiscoveryButton: eN,
                     disableAppDownload: t,
                     isOverlay: n,
-                    renderTreeNode: ev,
+                    renderTreeNode: e_,
                     lurkingGuildIds: b
                   })]
                 })]
@@ -434,7 +434,7 @@ function ep(e) {
                 guildDiscoveryButton: eN,
                 disableAppDownload: t,
                 isOverlay: n,
-                renderTreeNode: ev,
+                renderTreeNode: e_,
                 lurkingGuildIds: b
               })]
             })

@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -19,9 +19,9 @@ var r = n(255367),
   b = n(921944),
   y = n(348189),
   O = n(388032),
-  v = n(388298);
+  _ = n(388298);
 
-function _(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,15 +60,15 @@ let C = {
       var e;
       switch (null == j || null == (e = j.popout) ? void 0 : e.type) {
         case p.J.LEVEL_REACHED:
-          return (0, r.jsx)(g.jG, _({
+          return (0, r.jsx)(g.jG, v({
             guildId: t
           }, j.popout));
         case p.J.PERKS_AVAILABLE:
-          return (0, r.jsx)(g.$h, _({
+          return (0, r.jsx)(g.$h, v({
             guildId: t
           }, j.popout));
         case p.J.PERKS_PURCHASABLE:
-          return (0, r.jsx)(g.yI, _({
+          return (0, r.jsx)(g.yI, v({
             guildId: t
           }, j.popout));
         default:
@@ -91,9 +91,9 @@ let C = {
       renderPopout: E,
       children: e => {
         var i, s;
-        return (0, r.jsx)(u.m, (i = _({}, e), s = s = {
+        return (0, r.jsx)(u.m, (i = v({}, e), s = s = {
           ref: T,
-          className: v.container,
+          className: _.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(a.$Eu, {
             size: "md",
@@ -101,10 +101,10 @@ let C = {
             color: "currentColor"
           }),
           background: (null == j ? void 0 : j.popout) != null && (0, r.jsx)("div", {
-            className: v.lottieContainer,
+            className: _.lottieContainer,
             children: (0, r.jsx)(a.kci, {
               nextScene: N,
-              className: v.lottie,
+              className: _.lottie,
               sceneSegments: C,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
               onScenePlay: Z,
@@ -115,7 +115,7 @@ let C = {
           }),
           text: (0, r.jsx)("span", {
             className: o()({
-              [v.textImportant]: (null == j ? void 0 : j.showUnread) === !0
+              [_.textImportant]: (null == j ? void 0 : j.showUnread) === !0
             }),
             children: O.intl.string(y.default.yv3DJC)
           }),

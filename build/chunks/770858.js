@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   Z: () => O
 }), n(388685);
@@ -24,8 +24,8 @@ function y(e) {
     onClick: f,
     selectedOverride: y = !1,
     popoutProps: O,
-    ref: v
-  } = e, _ = (0, l.Ie)("notifications-inbox"), [C, j] = i.useState(!1), S = y || window.location.pathname.startsWith(m.Z5c.NOTIFICATIONS_INBOX()), E = (0, o.e7)([p.Z], () => p.Z.unreadMessageIds), x = E.size > 0 ? (0, u.N)(E.size) : null, {
+    ref: _
+  } = e, v = (0, l.Ie)("notifications-inbox"), [C, j] = i.useState(!1), S = y || window.location.pathname.startsWith(m.Z5c.NOTIFICATIONS_INBOX()), E = (0, o.e7)([p.Z], () => p.Z.unreadMessageIds), x = E.size > 0 ? (0, u.N)(E.size) : null, {
     notificationCenterVariant: P
   } = h.L.useExperiment({
     location: "NotificationsInboxButtonInner"
@@ -33,7 +33,7 @@ function y(e) {
     if ("sidebar" === P) return m.Z5c.NOTIFICATIONS_INBOX(null != I ? I : void 0)
   }, [P, I]);
   return (0, r.jsxs)(c.H, {
-    ref: v,
+    ref: _,
     children: ["sidebar" === P && (0, r.jsx)(a.Z, {
       selected: S,
       hovered: C,
@@ -60,7 +60,7 @@ function y(e) {
             })
           }
           return e
-        }({}, _, O), n = n = {
+        }({}, v, O), n = n = {
           onClick: f,
           to: w,
           selected: S || C,

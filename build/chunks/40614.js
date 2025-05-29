@@ -1,6 +1,6 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
-  V: () => v
+  V: () => _
 });
 var r = n(255367),
   i = n(512722),
@@ -66,7 +66,7 @@ function O(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     onClick: t
   } = e, {

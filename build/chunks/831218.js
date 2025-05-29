@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   Z: () => H
 }), n(388685);
@@ -18,8 +18,8 @@ var r, i = n(255367),
   b = n(906732),
   y = n(453542),
   O = n(702321),
-  v = n(46148),
-  _ = n(82295),
+  _ = n(46148),
+  v = n(82295),
   C = n(313201),
   j = n(540059),
   S = n(860144),
@@ -31,8 +31,8 @@ var r, i = n(255367),
   N = n(210887),
   Z = n(592125),
   T = n(158776),
-  A = n(55589),
-  R = n(515753),
+  R = n(55589),
+  A = n(515753),
   D = n(981631),
   L = n(388032),
   k = n(555614);
@@ -352,10 +352,10 @@ class V extends(r = l.Component) {
         totalRowCount: o,
         preRenderedChildren: s
       } = this.state, a = r[n[t]];
-      return null == a ? null : (0, i.jsx)(v.s, {
+      return null == a ? null : (0, i.jsx)(_.s, {
         channelId: a.id,
         selectedChannelId: l,
-        children: (0, i.jsx)(R.ZP, {
+        children: (0, i.jsx)(A.ZP, {
           channel: a,
           selected: a.id === l,
           "aria-posinset": s + t + 1,
@@ -386,7 +386,7 @@ class V extends(r = l.Component) {
         showDMHeader: n,
         isVisualRefreshEnabled: r
       } = this.props;
-      return 0 !== t && n ? (0, i.jsxs)(_.Z, {
+      return 0 !== t && n ? (0, i.jsxs)(v.Z, {
         className: k.privateChannelsHeaderContainer,
         children: [(0, i.jsx)("span", {
           className: k.headerText,
@@ -444,19 +444,19 @@ let H = e => {
     m = l.Children.count(d),
     y = Z.Z.getMutablePrivateChannels(),
     O = (0, I.k1)(y),
-    v = (0, u.Wu)([A.Z, P.Z, w.Z], () => {
-      let e = A.Z.getPrivateChannelIds();
+    _ = (0, u.Wu)([R.Z, P.Z, w.Z], () => {
+      let e = R.Z.getPrivateChannelIds();
       return (0, I.tU)(e, [P.Z, w.Z])
     }, []);
   (0, E.z)(S.R);
   let {
-    analyticsLocations: _
+    analyticsLocations: v
   } = (0, b.ZP)(g.Z.CONTACTS_LIST), x = (0, u.cj)([f.Z, N.Z, Z.Z], () => ({
     theme: N.Z.darkSidebar ? D.BRd.DARK : s,
     keyboardModeEnabled: f.Z.keyboardModeEnabled,
     version: null != o ? "".concat(o, ":").concat(Z.Z.getPrivateChannelsVersion()) : Z.Z.getPrivateChannelsVersion()
-  })), T = l.useRef(null), R = null != (t = e.listScrollerRef) ? t : T, L = l.useCallback(e => {
-    let t = R.current,
+  })), T = l.useRef(null), A = null != (t = e.listScrollerRef) ? t : T, L = l.useCallback(e => {
+    let t = A.current,
       n = document.querySelector(e);
     null != t && null != n && t.scrollIntoViewNode({
       node: n,
@@ -469,21 +469,21 @@ let H = e => {
         })
       }
     })
-  }, [R]), k = l.useCallback(() => new Promise(e => {
-    let t = R.current;
+  }, [A]), k = l.useCallback(() => new Promise(e => {
+    let t = A.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), [R]), M = l.useCallback(() => new Promise(e => {
-    let t = R.current;
+  }), [A]), M = l.useCallback(() => new Promise(e => {
+    let t = A.current;
     if (null == t) return e();
     t.scrollToBottom({
       callback() {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [R]), B = (0, C.Dt)(), H = (0, c.ZP)({
+  }), [A]), B = (0, C.Dt)(), H = (0, c.ZP)({
     id: "private-channels-".concat(B),
     isEnabled: x.keyboardModeEnabled,
     scrollToStart: k,
@@ -492,15 +492,15 @@ let H = e => {
     setFocus: L
   });
   return (0, i.jsx)(b.Gt, {
-    value: _,
+    value: v,
     children: (0, i.jsx)(a.bG, {
       navigator: H,
       children: (0, i.jsx)(V, U(G(U({
         density: r,
         isVisualRefreshEnabled: n,
         channels: O,
-        privateChannelIds: v,
-        listRef: R,
+        privateChannelIds: _,
+        listRef: A,
         theme: s,
         version: o
       }, e), {

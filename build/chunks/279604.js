@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   KE: () => b,
   KT: () => m,
@@ -72,16 +72,16 @@ function y(e, t) {
   var m;
   let {
     analyticsLocations: y
-  } = (0, s.ZP)(), [O, v] = i.useState(!1), [_, C] = i.useState(void 0), j = (0, l.e7)([h.Z], () => {
+  } = (0, s.ZP)(), [O, _] = i.useState(!1), [v, C] = i.useState(void 0), j = (0, l.e7)([h.Z], () => {
     var t, n;
     return null != (n = null == (t = h.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts) ? n : 0
   }), S = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), E = Math.max((null != (m = null == S ? void 0 : S.premiumSubscriberCount) ? m : 0) - j, 0), x = i.useCallback(n => {
     let r = n ? d.H6 : d.Th;
-    return v(!0), C(void 0), r(e, t.skuId).catch(e => {
+    return _(!0), C(void 0), r(e, t.skuId).catch(e => {
       var t;
       throw C(null != (t = e.body.message) ? t : void 0), e
     }).finally(() => {
-      v(!1)
+      _(!1)
     })
   }, [e, t.skuId]), P = i.useCallback(e => {
     if (e.stopPropagation(), null != S) return E < t.cost ? void(0, a.u)({
@@ -118,7 +118,7 @@ function y(e, t) {
   }, [x, t, E, y, S]), I = i.useCallback(e => (e.stopPropagation(), x(!1)), [x]);
   return {
     isLoading: O,
-    error: _,
+    error: v,
     onActivate: P,
     onDeactivate: I,
     onShowDeactivate: i.useCallback(i => {

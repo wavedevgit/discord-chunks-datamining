@@ -1,6 +1,6 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
-  Z: () => _
+  Z: () => v
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -27,10 +27,10 @@ function O(e) {
   let n = a.default.getMutableGuildStates();
   return e === f.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(f.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? void 0 : t.highImportanceMentionCount) > 0
 }
-let v = (0, p.oH)((e, t, n) => ["null", ...t, ...e, b, f.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
-  _ = i.forwardRef(function(e, t) {
+let _ = (0, p.oH)((e, t, n) => ["null", ...t, ...e, b, f.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
+  v = i.forwardRef(function(e, t) {
     var n, i;
-    let d = (0, l.Wu)([u.ZP, c.Z, a.default], () => v(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), a.default.getStoreChangeSentinel())),
+    let d = (0, l.Wu)([u.ZP, c.Z, a.default], () => _(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), a.default.getStoreChangeSentinel())),
       p = (0, l.e7)([h.Z], () => h.Z.isFocused()),
       f = (0, l.e7)([s.Z], () => s.Z.getExpandedFolders());
     return (0, r.jsx)(o.Z, (n = function(e) {

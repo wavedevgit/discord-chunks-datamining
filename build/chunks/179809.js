@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   Z: () => N
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(727258),
   y = n(276952),
   O = n(199540),
-  v = n(40153),
-  _ = n(252686),
+  _ = n(40153),
+  v = n(252686),
   C = n(682662),
   j = n(662146),
   S = n(981631),
@@ -40,8 +40,8 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       isMentionLowImportance: N,
       unread: Z = !1,
       defaultFolderName: T,
-      draggable: A = !1,
-      sorting: R = !1,
+      draggable: R = !1,
+      sorting: A = !1,
       onDragStart: D,
       onDragEnd: L,
       onExpandCollapse: k,
@@ -57,8 +57,8 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       children: W
     } = t, [Y, K] = i.useState(!1), [q, Q] = i.useState(!1), X = Y || q, J = (0, f.Ml)("FolderItem");
     i.useEffect(() => {
-      R && K(!1)
-    }, [R]);
+      A && K(!1)
+    }, [A]);
     let [{
       dragging: $
     }, ee] = (0, s.c)({
@@ -104,11 +104,11 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
         className: P.pill
       }), (0, r.jsx)(j.Z, {
         text: er,
-        disabled: R,
+        disabled: A,
         selected: l,
         disableWrapper: !0,
         children: (0, r.jsx)("div", {
-          ref: A ? e => {
+          ref: R ? e => {
             ee(e)
           } : void 0,
           className: o()(x.folderHeader, {
@@ -116,12 +116,12 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             [P.wobble]: !$ && q && !a
           }),
           "data-dnd-name": er,
-          children: $ ? (0, r.jsx)(_.Z, {
+          children: $ ? (0, r.jsx)(v.Z, {
             isFolder: !0
           }) : (0, r.jsx)(O.Z, {
             folderNode: t,
             expanded: a,
-            sorting: R,
+            sorting: A,
             mediaState: d,
             mentionCount: m,
             isMentionLowImportance: N,
@@ -137,7 +137,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             "aria-posinset": H
           })
         })
-      }), A ? (0, r.jsx)(v.ZP, {
+      }), R ? (0, r.jsx)(_.ZP, {
         name: er,
         targetNode: t,
         onDragOverChanged: et
@@ -171,7 +171,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
           "aria-label": t.name,
           children: W.map((t, n) => U(t, n, W.length, e.height))
         }, l)
-      }), A && a ? (0, r.jsx)(v.Zu, {
+      }), R && a ? (0, r.jsx)(_.Zu, {
         name: er,
         targetNode: t
       }) : null]

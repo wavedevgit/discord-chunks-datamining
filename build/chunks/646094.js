@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 e.exports = {
   iconBase: "iconBase__933a1",
   mentionsBadge: "mentionsBadge__933a1 iconBase__933a1"

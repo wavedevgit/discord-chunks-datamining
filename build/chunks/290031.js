@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 93886 **/
 n.d(t, {
-  H: () => r
+  H: () => a
 });
-let r = (0, n(818083).B)({
+let a = (0, n(818083).B)({
   kind: "user",
   id: "2024-11_nitro_tenure_rewards_collectible",
   label: "Nitro Tenure Reward Collectible",

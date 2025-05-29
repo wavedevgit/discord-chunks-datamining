@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   u: () => L
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(944486),
   y = n(594174),
   O = n(431),
-  v = n(774343),
-  _ = n(417363),
+  _ = n(774343),
+  v = n(417363),
   C = n(941128),
   j = n(780570),
   S = n(278464),
@@ -32,8 +32,8 @@ var r = n(255367),
   N = n(474936),
   Z = n(871465),
   T = n(388032),
-  A = n(823306);
-let R = {
+  R = n(823306);
+let A = {
   origin: {
     x: -16,
     y: 0
@@ -54,15 +54,15 @@ function D(e) {
     badge: f,
     link: b,
     showProgressBadge: y
-  } = e, [O, v] = i.useState(!1), [_, C] = i.useState(!1), [j, S] = i.useState(null), [N, D] = i.useState(0), L = (0, l.Ie)("home"), k = (0, h.Q3)("DefaultHomeButton"), M = (0, d.oq)().activePanel === d.wh.APP_ICON, U = () => {
+  } = e, [O, _] = i.useState(!1), [v, C] = i.useState(!1), [j, S] = i.useState(null), [N, D] = i.useState(0), L = (0, l.Ie)("home"), k = (0, h.Q3)("DefaultHomeButton"), M = (0, d.oq)().activePanel === d.wh.APP_ICON, U = () => {
     S(null), D(0), clearTimeout(j)
   };
   if (null == p) return null;
   let G = T.intl.string(T.t.YUU0RE);
-  _ && (G = s.K.get(w.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
+  v && (G = s.K.get(w.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
   let B = null;
   !o && y && (B = (0, r.jsx)(c.Z, {
-    className: A.downloadProgress,
+    className: R.downloadProgress,
     determineOwnVisibility: !1
   }));
   let V = o || O || M,
@@ -91,8 +91,8 @@ function D(e) {
         }
         return e
       }({
-        onMouseEnter: () => v(!0),
-        onMouseLeave: () => v(!1),
+        onMouseEnter: () => _(!0),
+        onMouseLeave: () => _(!1),
         onClick: () => {
           if (!__OVERLAY__ && (null != j && clearTimeout(j), S(setTimeout(U, 500)), D(N + 1), 15 === N)) {
             U();
@@ -130,16 +130,16 @@ function D(e) {
       }), t))
     });
   return (0, r.jsx)("div", {
-    className: A.tutorialContainer,
+    className: R.tutorialContainer,
     children: (0, r.jsx)(m.Z, {
-      inlineSpecs: R,
+      inlineSpecs: A,
       tutorialId: "friends-list",
       position: "right",
       children: (0, r.jsxs)(x.H, {
         children: [(0, r.jsx)(E.Z, {
           selected: o,
           hovered: O,
-          className: A.pill
+          className: R.pill
         }), (0, r.jsx)(P.Z, {
           color: a.ua7.Colors.PRIMARY,
           hideOnClick: !0,
@@ -154,8 +154,8 @@ function D(e) {
 
 function L() {
   let e = (0, S.n)(),
-    t = (0, o.e7)([C.Z, _.Z], () => {
-      let e = (0, c.E)(C.Z.activeItems, _.Z),
+    t = (0, o.e7)([C.Z, v.Z], () => {
+      let e = (0, c.E)(C.Z.activeItems, v.Z),
         {
           total: t,
           progress: n
@@ -177,7 +177,7 @@ function L() {
     d = (0, p.q)(),
     h = n + a + d,
     g = h === a && a > 0 && n + d === 0,
-    m = v.Z.getHomeLink();
+    m = _.Z.getHomeLink();
   return g && (m = w.Z5c.APPLICATION_STORE), (0, r.jsx)(D, {
     selected: e,
     user: u,

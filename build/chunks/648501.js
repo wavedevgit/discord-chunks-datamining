@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   Z: () => P
 });
@@ -20,8 +20,8 @@ var i = n(442837),
   b = n(790901),
   y = n(714794),
   O = n(355363),
-  v = n(687352),
-  _ = n(876548),
+  _ = n(687352),
+  v = n(876548),
   C = n(25601),
   j = n(981631),
   S = n(490897),
@@ -38,8 +38,8 @@ function P(e) {
     enableConnectedUserLimit: N,
     enableActivities: Z,
     isSubscriptionGated: T,
-    needSubscriptionToAccess: A,
-    isNewChannel: R,
+    needSubscriptionToAccess: R,
+    isNewChannel: A,
     muted: D,
     resolvedUnreadSetting: L
   } = e, k = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), M = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), U = (0, s.ZP)(n), G = (0, i.e7)([p.Z], () => !p.Z.can(j.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), V = (0, u.PK)(n.id) && n.isGuildStageVoice(), H = (0, O.ZP)({
@@ -56,9 +56,9 @@ function P(e) {
     isMentionLowImportance: M
   });
   if ((0, c.O)(T)) return (0, r.jsx)(c.Z, {
-    locked: A
+    locked: R
   });
-  if (R) return (0, r.jsx)(o.IGR, {
+  if (A) return (0, r.jsx)(o.IGR, {
     text: E.intl.string(E.t.y2b7CA),
     color: l.Z.unsafe_rawColors.BRAND_260.css,
     className: x.newChannel
@@ -76,14 +76,14 @@ function P(e) {
     children: (0, o.NGo)(z)
   });
   let Y = null != (t = null == w ? void 0 : w.length) ? t : 0;
-  return null != N && N && H ? (0, r.jsx)(_.Z, {
+  return null != N && N && H ? (0, r.jsx)(v.Z, {
     userCount: Y,
     video: B || V,
     channel: n
   }) : I && (0, m.a)(w) && W ? (0, r.jsx)(o.IGR, {
     text: E.intl.string(E.t.dI3q4u),
     color: l.Z.unsafe_rawColors.RED_400.css
-  }) : null != Z && Z && (0, b.u)(U) ? (0, r.jsx)(v.Z, {
+  }) : null != Z && Z && (0, b.u)(U) ? (0, r.jsx)(_.Z, {
     embeddedApps: U,
     muted: D
   }) : null

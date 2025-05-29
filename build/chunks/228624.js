@@ -1,10 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ed: () => c,
+  ed: () => l,
   hv: () => s,
-  k: () => o,
-  oj: () => l
+  k: () => o
 });
 var r = n(311570),
   i = n(818083),
@@ -28,9 +27,4 @@ let o = (0, i.B)({
   s = e => o.useExperiment({
     location: e
   }).variantsReturnStyle,
-  l = e => o.getCurrentConfig({
-    location: e
-  }, {
-    autoTrackExposure: !1
-  }).variantsReturnStyle,
-  c = e => s(e) === r.v.VARIANTS_GROUP
+  l = e => s(e) === r.v.VARIANTS_GROUP

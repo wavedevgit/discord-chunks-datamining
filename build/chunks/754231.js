@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   Z: () => x
 }), n(388685);
@@ -19,9 +19,9 @@ var r = n(255367),
   b = n(823379),
   y = n(51144),
   O = n(291798);
-let v = d.u.SIZE_24;
+let _ = d.u.SIZE_24;
 
-function _(e) {
+function v(e) {
   var t, n;
   let {
     activity: l,
@@ -186,7 +186,7 @@ function x(e) {
     className: O.flexColumn,
     children: [(0, r.jsxs)("div", {
       className: O.flexRow,
-      children: [(0, r.jsx)(_, {
+      children: [(0, r.jsx)(v, {
         activity: t,
         user: l,
         embeddedApp: n,
@@ -207,7 +207,7 @@ function x(e) {
           className: O.usersSummary,
           guildId: o.guild_id,
           users: x,
-          size: v,
+          size: _,
           max: 7,
           renderUser: e => {
             var t;
@@ -218,7 +218,7 @@ function x(e) {
               text: i,
               position: "bottom",
               children: (0, r.jsx)("img", {
-                src: e.getAvatarURL(o.guild_id, v),
+                src: e.getAvatarURL(o.guild_id, _),
                 alt: i,
                 className: O.avatar
               }, e.id)

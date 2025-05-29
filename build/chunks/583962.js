@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   PD: () => D,
   ZP: () => M,
@@ -21,8 +21,8 @@ var r = n(255367),
   b = n(434404),
   y = n(151494),
   O = n(496675),
-  v = n(259580),
-  _ = n(267642),
+  _ = n(259580),
+  v = n(267642),
   C = n(624138),
   j = n(667815),
   S = n(531572),
@@ -64,8 +64,8 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
-  R = e => {
+let R = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
+  A = e => {
     let {
       guild: t,
       onSelect: n
@@ -89,7 +89,7 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     })
   },
   D = 57,
-  L = 57 + A,
+  L = 57 + R,
   k = {
     tension: 180,
     friction: 80
@@ -100,7 +100,7 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
       withMargin: n
     } = e, l = (0, m.Q3)("GuildBoostingSidebarDisplay"), {
       analyticsLocations: u
-    } = (0, g.ZP)(p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), b = (0, _.Jh)(t.id), C = (0, y.Z)(t.id), A = (0, _.FZ)(b), D = null == A, L = null != A ? A : b, M = (0, c.e7)([S.Z], () => {
+    } = (0, g.ZP)(p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), b = (0, v.Jh)(t.id), C = (0, y.Z)(t.id), R = (0, v.FZ)(b), D = null == R, L = null != R ? R : b, M = (0, c.e7)([S.Z], () => {
       var e;
       return null != (e = S.Z.getCountForGuild(t.id)) ? e : 0
     }), U = (0, c.e7)([O.Z], () => O.Z.can(P.Plq.MANAGE_GUILD, t));
@@ -141,22 +141,22 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
         })
       },
       z = I.intl.formatToPlainString(I.t["2oNfMT"], {
-        levelName: (0, _.e9)(L)
+        levelName: (0, v.e9)(L)
       }),
       W = I.intl.format(I.t.dhKnYm, {
         numBoosts: C,
         numTotal: P.oCV[L]
       });
-    D && (z = (0, _.e9)(L), W = I.intl.format(I.t.B2byER, {
+    D && (z = (0, v.e9)(L), W = I.intl.format(I.t.B2byER, {
       numBoosts: C
     })), l && (z = z.toLocaleLowerCase());
     let Y = (0, a.JA)("boosts-".concat(t.id));
     return (0, r.jsx)("li", {
       children: (0, r.jsx)(d.ua7, {
         text: H ? I.intl.formatToPlainString(w.default["9CtPjo"], {
-          perk: (0, _.nW)(L)
+          perk: (0, v.nW)(L)
         }) : D ? I.intl.string(I.t["Y+V9go"]) : I.intl.formatToPlainString(I.t.UyDKl5, {
-          levelName: (0, _.nW)(L)
+          levelName: (0, v.nW)(L)
         }),
         color: d.ua7.Colors.BLACK,
         position: "top",
@@ -176,7 +176,7 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
             [N.containerWithMargin]: n
           }),
           onContextMenu: e => {
-            U && (0, h.vq)(e, e => (0, r.jsx)(R, T(Z({}, e), {
+            U && (0, h.vq)(e, e => (0, r.jsx)(A, T(Z({}, e), {
               guild: t
             })))
           },
@@ -201,11 +201,11 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
                 className: N.progressText,
                 lineClamp: 1,
                 children: W
-              }), (0, r.jsx)(v.Z, {
+              }), (0, r.jsx)(_.Z, {
                 className: N.count,
                 height: 16,
                 width: 16,
-                direction: v.Z.Directions.RIGHT
+                direction: _.Z.Directions.RIGHT
               })]
             })]
           }), (0, r.jsxs)("div", {

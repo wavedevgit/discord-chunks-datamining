@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   Z: () => C
 }), n(388685);
@@ -53,7 +53,7 @@ let m = {
     MESSAGE: ["SETTINGS"]
   },
   b = (e, t) => (0, i.useMemo)(() => {
-    let n = m[_(e)];
+    let n = m[v(e)];
     return t ? ["ACK", ...n] : n
   }, [e, t]);
 
@@ -126,7 +126,7 @@ function O(e) {
     })
   })
 }
-let v = {
+let _ = {
     ACK: {
       type: "standard",
       Icon: o.dz2,
@@ -192,7 +192,7 @@ let v = {
       }
     }
   },
-  _ = e => "MENTION";
+  v = e => "MENTION";
 
 function C(e) {
   let {
@@ -207,7 +207,7 @@ function C(e) {
     justify: "center",
     className: p.actions,
     children: l.map(e => {
-      let i = v[e];
+      let i = _[e];
       switch (i.type) {
         case "standard":
           return (0, r.jsx)(y, g(f({}, i), {

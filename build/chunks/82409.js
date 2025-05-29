@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   Z: () => P
 }), n(388685), n(642613), n(361932), n(187205), n(415506);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(594174),
   y = n(709054),
   O = n(207913),
-  v = n(553984),
-  _ = n(333834),
+  _ = n(553984),
+  v = n(333834),
   C = n(982183),
   j = n(981631),
   S = n(388032),
@@ -61,7 +61,7 @@ function P(e) {
   }, [u]);
   let P = (0, c.e7)([b.default], () => b.default.getCurrentUser()),
     T = (0, c.e7)([g.Z], () => g.Z.getSavedMessages()),
-    A = i.useMemo(() => {
+    R = i.useMemo(() => {
       let e = (0, s.uniqBy)([...null != n ? n : []].sort((e, t) => y.default.compare(t.id, e.id)), "id");
       if (d === C.V5.ALL) return e;
       if (d === C.V5.ANNOUNCEMENTS) return null == e ? void 0 : e.filter(e => {
@@ -72,7 +72,7 @@ function P(e) {
       if (d === C.V5.BOOKMARKS) return T.flatMap(e => null != e.message ? [e.message] : []);
       throw Error("Unknown filter: ".concat(d))
     }, [d, n, P, T]),
-    R = O === C.xM.READ && d === C.V5.ALL;
+    A = O === C.xM.READ && d === C.V5.ALL;
   return (0, r.jsxs)("nav", {
     className: o()(E.container, {
       [E.panelSpacing]: t
@@ -97,13 +97,13 @@ function P(e) {
     }({
       hasSubheader: !0,
       guild: C.F7
-    }, x)), (0, r.jsx)(v.Z, {
+    }, x)), (0, r.jsx)(_.Z, {
       selectedFilter: d,
       setSelectedFilter: h
-    }), R && (0, r.jsx)(Z, {}), (0, r.jsx)(_.Z, {
+    }), A && (0, r.jsx)(Z, {}), (0, r.jsx)(v.Z, {
       className: E.messageList,
       renderMessageGroup: N,
-      messages: A,
+      messages: R,
       loading: a,
       hasMore: l,
       analyticsName: "Notifications Inbox",

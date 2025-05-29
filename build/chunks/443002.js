@@ -122,7 +122,9 @@ let A = function(e) {
           children: [(0, r.jsx)(y.Z, {
             className: T.tierComparisonTable,
             guild: n
-          }), (0, r.jsx)(p.Z, {}), (0, r.jsx)(m.Z, {})]
+          }), (0, r.jsx)(p.Z, {}), (0, r.jsx)(m.Z, {
+            isGuildPowerupsExperimentEnabled: M
+          })]
         }), (0, r.jsx)(v.A, {}), (0, r.jsx)("div", {
           className: T.lowerBodyBackgroundImage
         })]

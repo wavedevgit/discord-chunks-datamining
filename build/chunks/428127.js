@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   Z: () => O
 });
@@ -70,16 +70,16 @@ function O(e) {
   } = e, {
     bottomBar: p,
     topBar: O
-  } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), v = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
-    mode: _,
+  } = (0, a.cj)([f.Z], () => f.Z.getUnreadStateForGuildId(n.id)), _ = (0, a.e7)([h.Z], () => h.Z.isFocused()), {
+    mode: v,
     mentionCount: C,
     targetChannelId: j
-  } = "bottom" === t ? p : O, S = _ === f.x.HIDDEN, E = (0, c.q_F)({
+  } = "bottom" === t ? p : O, S = v === f.x.HIDDEN, E = (0, c.q_F)({
     to: {
       transform: S ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, v ? "respect-motion-settings" : "animate-never"), x = i.useCallback(e => {
+  }, _ ? "respect-motion-settings" : "animate-never"), x = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), null != j && d(j)
   }, [d, j]);
   return (0, r.jsx)("div", {
@@ -91,9 +91,9 @@ function O(e) {
       className: m.containerPadding,
       style: E,
       "aria-hidden": S,
-      children: _ === f.x.HIDDEN ? (0, r.jsx)("div", {
+      children: v === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : _ === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : v === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
         onClick: x,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
@@ -114,7 +114,7 @@ function O(e) {
           className: m.barText,
           children: g.intl.string(g.t.FCRiT0)
         })]
-      }) : _ === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : v === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
         onClick: x,
         children: (0, r.jsx)(c.Text, {
@@ -125,7 +125,7 @@ function O(e) {
             count: C
           })
         })
-      }) : _ === f.x.VOICE_CHANNELS ? (0, r.jsx)(y, {
+      }) : v === f.x.VOICE_CHANNELS ? (0, r.jsx)(y, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

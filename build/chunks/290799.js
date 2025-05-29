@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -27,10 +27,27 @@ let f = [{
     getQuestion: () => u.intl.string(u.t.kYmXWF),
     getAnswer: () => u.intl.string(u.t["+OURPj"])
   }],
-  _ = function(e) {
+  _ = [...f, {
+    getQuestion: () => u.intl.string(u.t["LsX/vb"]),
+    getAnswer: () => u.intl.string(u.t["3TeauL"])
+  }, {
+    getQuestion: () => u.intl.string(u.t.fRlnXV),
+    getAnswer: () => u.intl.string(u.t.bTRacn)
+  }, {
+    getQuestion: () => u.intl.string(u.t["8Mu5Q0"]),
+    getAnswer: () => u.intl.string(u.t["2T5iPj"])
+  }, {
+    getQuestion: () => u.intl.string(u.t["6EN+TU"]),
+    getAnswer: () => u.intl.string(u.t.NZax1t)
+  }, {
+    getQuestion: () => u.intl.string(u.t.f5B4ER),
+    getAnswer: () => u.intl.string(u.t.Aje8PT)
+  }],
+  p = function(e) {
     let {
-      className: t
-    } = e, [n, a] = i.useState(null);
+      className: t,
+      isGuildPowerupsExperimentEnabled: n
+    } = e, [a, l] = i.useState(null), c = n ? _ : f;
     return (0, r.jsxs)("div", {
       className: o()(d.wrapper, t),
       children: [(0, r.jsx)(s.X6q, {
@@ -39,21 +56,21 @@ let f = [{
         children: u.intl.string(u.t.HPJ6Nj)
       }), (0, r.jsx)("ul", {
         className: d.list,
-        children: f.map((e, t) => {
-          let i = n === t;
+        children: c.map((e, t) => {
+          let n = a === t;
           return (0, r.jsxs)("div", {
             className: d.listItem,
             children: [(0, r.jsxs)(s.P3F, {
               className: o()(d.questionWrapper, {
-                [d.questionWrapperExpanded]: i
+                [d.questionWrapperExpanded]: n
               }),
-              onClick: () => a(e => e === t ? null : t),
+              onClick: () => l(e => e === t ? null : t),
               tag: "li",
               children: [(0, r.jsx)(s.Text, {
                 className: d.question,
                 variant: "text-lg/normal",
                 children: e.getQuestion()
-              }), i ? (0, r.jsx)(s.V_R, {
+              }), n ? (0, r.jsx)(s.V_R, {
                 size: "md",
                 color: "currentColor",
                 className: d.questionIcon
@@ -62,7 +79,7 @@ let f = [{
                 color: "currentColor",
                 className: d.questionIcon
               })]
-            }), i && (0, r.jsx)(s.Text, {
+            }), n && (0, r.jsx)(s.Text, {
               className: d.answer,
               color: "text-normal",
               variant: "text-md/normal",

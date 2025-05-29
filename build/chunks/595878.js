@@ -1,40 +1,27 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 93886 **/
 n.d(t, {
-  cG: () => i,
-  dR: () => a,
-  oY: () => o
+  cG: () => r,
+  oY: () => l
 });
-var r = n(290031);
+var a = n(290031);
 
-function i(e) {
+function r(e) {
   let {
     location: t
   } = e, {
     enabled: n
-  } = r.H.useExperiment({
+  } = a.H.useExperiment({
     location: t
   });
   return n
 }
 
-function a(e) {
+function l(e) {
   let {
     location: t
   } = e, {
     enabled: n
-  } = r.H.getCurrentConfig({
-    location: t
-  });
-  return n
-}
-
-function o(e) {
-  let {
-    location: t
-  } = e, {
-    enabled: n
-  } = r.H.useExperiment({
+  } = a.H.useExperiment({
     location: t
   });
   return n

@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   Z: () => M
 }), n(388685);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(540059),
   y = n(35225),
   O = n(703656),
-  v = n(769654),
-  _ = n(271383),
+  _ = n(769654),
+  v = n(271383),
   C = n(771845),
   j = n(727258),
   S = n(276952),
@@ -32,9 +32,9 @@ var r = n(255367),
   N = n(674552),
   Z = n(981631),
   T = n(388032),
-  A = n(335426);
+  R = n(335426);
 
-function R(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -78,7 +78,7 @@ function k(e, t) {
     let {
       default: e
     } = await Promise.all([n.e("7654"), n.e("44156"), n.e("55616"), n.e("49286"), n.e("6850"), n.e("58227"), n.e("32652"), n.e("54408"), n.e("20087"), n.e("50629"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("40407")]).then(n.bind(n, 545135));
-    return n => (0, r.jsx)(e, D(R({}, n), {
+    return n => (0, r.jsx)(e, D(A({}, n), {
       guild: t
     }))
   })
@@ -138,14 +138,14 @@ let M = i.memo(function(e) {
     [eg, em] = i.useState(!1),
     eb = !ee && eg,
     [ey, eO] = i.useState(!1),
-    [ev, e_] = i.useState(!1),
-    [eC] = i.useState(() => new d.sW(70, () => e_(!0)));
+    [e_, ev] = i.useState(!1),
+    [eC] = i.useState(() => new d.sW(70, () => ev(!0)));
   i.useEffect(() => () => eC.cancel(), [eC]);
   let ej = i.useCallback(() => {
       if (null != H) return void(0, O.uL)(H, {
         state: L
       });
-      (0, v.X)(eo, {
+      (0, _.X)(eo, {
         state: L
       })
     }, [eo, H]),
@@ -154,7 +154,7 @@ let M = i.memo(function(e) {
       let e = (0, y.V)(F.id);
       null != e && p.Z.preload(F.id, e)
     }, [H, F, q, et]),
-    eE = (0, u.e7)([_.ZP], () => _.ZP.isCurrentUserGuest(eo)),
+    eE = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
     ex = i.useCallback(e => {
       null == F || eE || J(e, F)
     }, [F, J, eE]),
@@ -166,24 +166,24 @@ let M = i.memo(function(e) {
     }, [es]),
     eI = i.useCallback(e => {
       if (e) return void eC.delay();
-      eC.cancel(), e_(!1)
+      eC.cancel(), ev(!1)
     }, [eC]),
     ew = i.useCallback(e => {
       null == G || G(eo, e)
     }, [eo, G]),
     eN = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == F) return null;
-  let eZ = ev || ey ? (0, r.jsx)(E.Z, {
+  let eZ = e_ || ey ? (0, r.jsx)(E.Z, {
       guild: F,
-      show: ev,
+      show: e_,
       active: W,
       onAnimationStart: function() {
-        eO(ev)
+        eO(e_)
       },
       onAnimationRest: function() {
-        ev || eO(!1)
+        e_ || eO(!1)
       }
-    }) : (0, r.jsx)(h.LYs, D(R({
+    }) : (0, r.jsx)(h.LYs, D(A({
       ariaLabel: T.intl.formatToPlainString(T.t["/uzRsr"], {
         guildName: F.toString(),
         mentions: Q
@@ -216,14 +216,14 @@ let M = i.memo(function(e) {
       style: {
         scale: null == er ? 1 : er
       },
-      "data-drop-hovering": ev,
-      className: o()(A.blobContainer, {
-        [A.sorting]: ee,
-        [A.wobble]: ev,
-        [A.selected]: ev || W
+      "data-drop-hovering": e_,
+      className: o()(R.blobContainer, {
+        [R.sorting]: ee,
+        [R.wobble]: e_,
+        [R.selected]: e_ || W
       }),
       children: (0, r.jsx)(h.aRk, {
-        selected: !!ea || ev || W || eb,
+        selected: !!ea || e_ || W || eb,
         upperBadge: ec,
         lowerBadge: eu,
         lowerBadgeSize: ed,
@@ -236,7 +236,7 @@ let M = i.memo(function(e) {
       hovered: !eh && eb,
       selected: !eh && W,
       unread: !eh && Y,
-      className: A.pill
+      className: R.pill
     }), (0, r.jsx)(P.Z, {
       guild: F,
       disabled: ee,

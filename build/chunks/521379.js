@@ -4,8 +4,8 @@ n.d(t, {
 }), n(35282);
 var r, i = n(255367),
   l = n(73800),
-  a = n(442837),
-  o = n(388905),
+  o = n(442837),
+  a = n(388905),
   s = n(703656),
   c = n(108427),
   u = n(559786);
@@ -18,7 +18,7 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-a.ZP.initialize();
+o.ZP.initialize();
 class h extends(r = l.PureComponent) {
   componentDidMount() {
     (0, c.e)("account_revert")
@@ -27,7 +27,7 @@ class h extends(r = l.PureComponent) {
     let {
       token: e
     } = this.props.match.params;
-    return (0, i.jsx)(o.ZP, {
+    return (0, i.jsx)(a.ZP, {
       style: {
         padding: 0
       },

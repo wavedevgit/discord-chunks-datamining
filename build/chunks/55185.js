@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   I: () => I,
   N: () => P
@@ -26,7 +26,7 @@ async function O(e) {
   }, d.fy.INFREQUENT_USER_ACTION)
 }
 
-function v(e) {
+function _(e) {
   let {
     showCurrentGame: t,
     shouldShowStatus: n = !1
@@ -59,7 +59,7 @@ function v(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     children: t,
     closePopout: n
@@ -101,7 +101,7 @@ function C(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(_, {
+  return (0, i.jsxs)(v, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -112,7 +112,7 @@ function C(e) {
       })
     }), (0, i.jsx)("div", {
       className: b.toggleContainerWrapper,
-      children: (0, i.jsx)(v, {
+      children: (0, i.jsx)(_, {
         showCurrentGame: n
       })
     })]
@@ -123,7 +123,7 @@ function j(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(_, {
+  return (0, i.jsxs)(v, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -134,7 +134,7 @@ function j(e) {
       })
     }), (0, i.jsx)("div", {
       className: b.toggleContainerWrapper,
-      children: (0, i.jsx)(v, {
+      children: (0, i.jsx)(_, {
         showCurrentGame: n,
         shouldShowStatus: !0
       })
@@ -144,8 +144,8 @@ function j(e) {
 
 function S() {
   let e = u.G6.useSetting();
-  return (0, i.jsxs)(_, {
-    children: [(0, i.jsx)(v, {
+  return (0, i.jsxs)(v, {
+    children: [(0, i.jsx)(_, {
       showCurrentGame: e
     }), (0, i.jsx)(c.$i$, {
       className: b.divider
@@ -163,7 +163,7 @@ function E(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(_, {
+  return (0, i.jsxs)(v, {
     children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
@@ -191,8 +191,8 @@ function E(e) {
 
 function x() {
   let e = u.G6.useSetting();
-  return (0, i.jsxs)(_, {
-    children: [(0, i.jsx)(v, {
+  return (0, i.jsxs)(v, {
+    children: [(0, i.jsx)(_, {
       showCurrentGame: e,
       shouldShowStatus: !0
     }), (0, i.jsx)(c.$i$, {

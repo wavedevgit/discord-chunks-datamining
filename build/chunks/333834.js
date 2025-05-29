@@ -1,4 +1,4 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   Z: () => P
 }), n(388685), n(539854);
@@ -19,9 +19,9 @@ var r = n(255367),
   b = n(982183),
   y = n(981631),
   O = n(388032),
-  v = n(709701);
+  _ = n(709701);
 
-function _(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,8 +65,8 @@ function S(e) {
   } = e;
   return (0, r.jsx)(u.P3F, {
     onClick: i,
-    className: o()(v.messagesGroupHeaderWrap, {
-      [v.collapsed]: !n
+    className: o()(_.messagesGroupHeaderWrap, {
+      [_.collapsed]: !n
     }),
     children: (0, r.jsxs)(u.Kqy, {
       gap: 4,
@@ -75,11 +75,11 @@ function S(e) {
       children: [(0, r.jsx)(u.X6q, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: v.messagesGroupHeader,
+        className: _.messagesGroupHeader,
         children: (0, s.capitalize)(O.intl.string(b.Ty[t]).toLowerCase())
       }), (0, r.jsx)(u.CJ0, {
         size: "xxs",
-        className: v.chevron
+        className: _.chevron
       })]
     })
   })
@@ -105,8 +105,8 @@ function P(e) {
     scrollerClassName: N,
     className: Z,
     listName: T,
-    ignoreGrouping: A = !1
-  } = e, R = i.useRef(null), D = (0, d.Z)(T, R), {
+    ignoreGrouping: R = !1
+  } = e, A = i.useRef(null), D = (0, d.Z)(T, A), {
     notificationCenterVariant: L
   } = g.L.useExperiment({
     location: "NotificationsInboxSidebarList"
@@ -118,14 +118,14 @@ function P(e) {
   }, [t]), i.useEffect(() => {
     function e() {
       var e;
-      null == (e = R.current) || e.scrollPageUp({
+      null == (e = A.current) || e.scrollPageUp({
         animate: !0
       })
     }
 
     function t() {
       var e;
-      null == (e = R.current) || e.scrollPageDown({
+      null == (e = A.current) || e.scrollPageDown({
         animate: !0
       })
     }
@@ -135,7 +135,7 @@ function P(e) {
   }, []);
   let U = i.useCallback(() => {
       var e;
-      let t = null == (e = R.current) ? void 0 : e.getScrollerState();
+      let t = null == (e = A.current) ? void 0 : e.getScrollerState();
       null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && l && !s && (null == O || O())
     }, [l, O, s]),
     G = i.useMemo(() => {
@@ -163,40 +163,40 @@ function P(e) {
     B = i.useMemo(() => {
       let e = [];
       return null == n ? e.push((0, r.jsx)("div", {
-        className: o()(v.emptyPlaceholder, v.loadingPlaceholder),
+        className: o()(_.emptyPlaceholder, _.loadingPlaceholder),
         children: (0, r.jsx)(u.$jN, {})
       }, "spinner")) : 0 === n.length ? e.push((0, r.jsx)(i.Fragment, {
         children: P(h.Z.theme)
-      }, "empty-state")) : A ? e.push(...n.map(e => I([e], "sidebar" === L))) : a().each(x, t => {
+      }, "empty-state")) : R ? e.push(...n.map(e => I([e], "sidebar" === L))) : a().each(x, t => {
         0 !== G[t].length && (e.push((0, r.jsx)(S, {
           group: t,
           isOpen: k[t],
-          toggleOpenedState: () => M(e => C(_({}, e), {
+          toggleOpenedState: () => M(e => C(v({}, e), {
             [t]: !e[t]
           }))
         })), k[t] && e.push(...G[t].map(e => I(e, "sidebar" === L))))
       }), e.push((0, r.jsx)(u.LZC, {
         size: 8
       }, "spacer")), e
-    }, [n, P, k, G, A, I, L]);
+    }, [n, P, k, G, R, I, L]);
   i.useEffect(() => {
     0 === G.UNREAD.length ? w(b.xM.READ) : w(b.xM.UNREAD)
   }, [G, w]);
   let V = null;
   null != n && n.length > 0 && null != O && s && (V = (0, r.jsx)("div", {
-    className: v.loadingMore,
+    className: _.loadingMore,
     children: (0, r.jsx)(u.$jN, {})
   }, "loading-more-after"));
   let H = null != O && l;
   return (0, r.jsx)("div", {
-    className: o()(Z, v.messagesPopoutWrap),
+    className: o()(Z, _.messagesPopoutWrap),
     onClick: j,
     onDoubleClick: j,
     "aria-label": e["aria-label"],
     children: (0, r.jsxs)(u.Den, {
-      className: o()(v.messagesPopout, N),
+      className: o()(_.messagesPopout, N),
       onScroll: H ? U : void 0,
-      ref: R,
+      ref: A,
       children: [(0, r.jsx)(c.bG, {
         navigator: D,
         children: (0, r.jsx)(c.SJ, {
@@ -218,7 +218,7 @@ function P(e) {
               }
               return i
             }(e, ["ref"]);
-            return (0, r.jsx)("div", C(_({
+            return (0, r.jsx)("div", C(v({
               ref: t
             }, n), {
               children: B

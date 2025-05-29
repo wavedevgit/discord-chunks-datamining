@@ -1,6 +1,6 @@
 /**
   Module ID: 8787
-  Original File Name: b70b701699081cae
+  Original File Name: abf2a805575fd5d1
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -336,7 +336,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -5085,14 +5085,14 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .expandedProgressBarContainer_a61c56 {
-    border-radius: 8px;
+    border-radius: var(--radius-lg);
     max-width: 989px;
     min-height: 260px
 }
 
 .expandedProgressBarContainerSettingsPage_a61c56 {
     background: var(--background-secondary-alt);
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     margin-bottom: -40px;
     margin-top: 40px;
     max-width: 660px;
@@ -5112,7 +5112,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .containerWithGlowWithoutBanner_a61c56,.containerWithoutGlow_a61c56 {
-    border-radius: 8px;
+    border-radius: var(--radius-lg);
     max-width: 989px;
     min-height: 260px
 }
@@ -18727,4 +18727,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=b70b701699081cae.css.map*/
+/*# sourceMappingURL=abf2a805575fd5d1.css.map*/

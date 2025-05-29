@@ -1,6 +1,6 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
-  Z: () => R
+  Z: () => A
 });
 var r = n(255367),
   i = n(73800),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(306680),
   y = n(979651),
   O = n(938475),
-  v = n(714794),
-  _ = n(876548),
+  _ = n(714794),
+  v = n(876548),
   C = n(25601),
   j = n(207055),
   S = n(981631),
@@ -126,7 +126,7 @@ function T(e) {
   }
 }
 
-function A(e) {
+function R(e) {
   let {
     style: t,
     withGuildIcon: n
@@ -147,12 +147,12 @@ function A(e) {
     })
   })
 }
-let R = i.memo(function(e) {
+let A = i.memo(function(e) {
   let {
     thread: t,
     isSelectedChannel: l,
     isSelectedVoice: w,
-    isLast: R,
+    isLast: A,
     withGuildIcon: D
   } = e, L = (0, a.e7)([O.ZP], () => O.ZP.getVoiceStatesForChannel(t), [t]), k = (0, a.e7)([y.Z], () => y.Z.hasVideo(t.id)), {
     unread: M,
@@ -199,7 +199,7 @@ let R = i.memo(function(e) {
     channelName: t.name
   }) : x.intl.formatToPlainString(x.t["0nZpiI"], {
     channelName: t.name
-  }), X = (0, p.Q3)("GuildSidebarThreadListEntry") ? T : A;
+  }), X = (0, p.Q3)("GuildSidebarThreadListEntry") ? T : R;
   return (0, r.jsxs)("li", {
     role: Y,
     className: o()(P.containerDefault, {
@@ -207,7 +207,7 @@ let R = i.memo(function(e) {
     }),
     children: [(0, r.jsx)(X, {
       withGuildIcon: D
-    }), R ? null : (0, r.jsx)(X, {
+    }), A ? null : (0, r.jsx)(X, {
       withGuildIcon: D,
       inverted: !0,
       style: {
@@ -248,11 +248,11 @@ let R = i.memo(function(e) {
               children: t.name
             }), (0, r.jsxs)("div", {
               className: I.children,
-              children: [z > 0 && t.userLimit > 0 ? (0, r.jsx)(_.Z, {
+              children: [z > 0 && t.userLimit > 0 ? (0, r.jsx)(v.Z, {
                 userCount: z,
                 video: k,
                 channel: t
-              }) : null, (0, v.Z)(U) ? (0, r.jsx)(C.Z, {
+              }) : null, (0, _.Z)(U) ? (0, r.jsx)(C.Z, {
                 mentionsCount: U,
                 isMentionLowImportance: G
               }) : null]

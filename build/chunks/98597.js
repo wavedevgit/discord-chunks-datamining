@@ -1,8 +1,8 @@
-/** Chunk was on 21522 **/
+/** Chunk was on 78715 **/
 n.d(t, {
   CN: () => w,
   ZP: () => L,
-  eP: () => A,
+  eP: () => R,
   hR: () => T,
   jo: () => N
 });
@@ -22,8 +22,8 @@ var r, i = n(255367),
   b = n(131704),
   y = n(199902),
   O = n(430824),
-  v = n(496675),
-  _ = n(914010),
+  _ = n(496675),
+  v = n(914010),
   C = n(281029),
   j = n(981631),
   S = n(388032),
@@ -115,7 +115,7 @@ function T(e) {
     forceShowButtons: l,
     hasChannelInfo: o = !1
   } = e;
-  if ((0, a.e7)([v.Z, _.Z], () => n || _.Z.getGuildId() === j.I_8 || !v.Z.can(j.Plq.MANAGE_CHANNELS, t) && !v.Z.can(j.Plq.MANAGE_ROLES, t) && !v.Z.can(j.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !v.Z.can(j.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !v.Z.can(j.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel())) return null;
+  if ((0, a.e7)([_.Z, v.Z], () => n || v.Z.getGuildId() === j.I_8 || !_.Z.can(j.Plq.MANAGE_CHANNELS, t) && !_.Z.can(j.Plq.MANAGE_ROLES, t) && !_.Z.can(j.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !_.Z.can(j.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !_.Z.can(j.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel())) return null;
 
   function d() {
     u.ZP.open(t.id)
@@ -148,7 +148,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function R(e) {
   let {
     channel: t,
     isDefaultChannel: r = !1,
@@ -157,13 +157,13 @@ function A(e) {
     forceShowButtons: f,
     hasChannelInfo: b = !1
   } = e, {
-    entrypoints: _
+    entrypoints: v
   } = (0, h._k)({
     location: "channel_base"
-  }), C = (0, a.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), x = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), w = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), N = (0, a.e7)([v.Z], () => (0, p.b)(v.Z, C, t, x)), Z = (0, a.e7)([v.Z], () => v.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? S.intl.string(S.t.zJrgTE) : S.intl.string(S.t.Sd8Ix8)), T = _ ? S.intl.string(S.t["EE+P0N"]) : Z, A = l.useRef(null);
+  }), C = (0, a.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), x = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), w = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), N = (0, a.e7)([_.Z], () => (0, p.b)(_.Z, C, t, x)), Z = (0, a.e7)([_.Z], () => _.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? S.intl.string(S.t.zJrgTE) : S.intl.string(S.t.Sd8Ix8)), T = v ? S.intl.string(S.t["EE+P0N"]) : Z, R = l.useRef(null);
   if (o || !N || t.isModeratorReportChannel()) return null;
 
-  function R() {
+  function A() {
     if (null != C) {
       let e = y.Z.getAllActiveStreams().filter(e => e.state !== j.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
@@ -180,7 +180,7 @@ function A(e) {
       })
     }
   }
-  let D = _ ? c.oLu : c.ejJ,
+  let D = v ? c.oLu : c.ejJ,
     L = (0, i.jsx)(D, {
       size: "xs",
       className: E.actionIcon,
@@ -188,11 +188,11 @@ function A(e) {
       color: "currentColor"
     });
   return r && (L = (0, i.jsx)(m.Z, {
-    childRef: A,
+    childRef: R,
     tutorialId: "instant-invite",
     position: "left",
     children: (0, i.jsx)("div", {
-      ref: A,
+      ref: R,
       children: L
     })
   })), (0, i.jsx)(c.ua7, {
@@ -200,7 +200,7 @@ function A(e) {
     children: e => (0, i.jsx)(c.P3F, I(P({
       className: s()(E.iconItem, f ? E.alwaysShown : void 0, b ? E.iconWithChannelInfo : E.iconNoChannelInfo)
     }, e), {
-      onClick: R,
+      onClick: A,
       tabIndex: u,
       "aria-label": T,
       children: L
@@ -208,7 +208,7 @@ function A(e) {
   })
 }
 
-function R(e) {
+function A(e) {
   let {
     channel: t
   } = e, n = () => {
@@ -266,10 +266,10 @@ class L extends(r = l.PureComponent) {
     return (0, i.jsx)(T, P({}, this.props))
   }
   renderInviteButton() {
-    return (0, i.jsx)(A, P({}, this.props))
+    return (0, i.jsx)(R, P({}, this.props))
   }
   renderRemoveSuggestionButton() {
-    return (0, i.jsx)(R, P({}, this.props))
+    return (0, i.jsx)(A, P({}, this.props))
   }
   renderAcceptSuggestionButton() {
     return (0, i.jsx)(D, P({}, this.props))
