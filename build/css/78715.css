@@ -1,6 +1,6 @@
 /**
   Module ID: 78715
-  Original File Name: d297f259a2a65c7f
+  Original File Name: 87a27f46e703d805
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -4613,6 +4613,63 @@ div:has(>.positionLayer_fc71d3) {
     border-radius: 8px
 }
 
+.facepile_aaa08b {
+    display: flex
+}
+
+.facepileItemContainer_aaa08b>foreignObject {
+    background-color: var(--background-surface-high);
+    padding: 2.5px
+}
+
+.facepileItem_aaa08b {
+    align-items: center;
+    color: var(--text-normal);
+    display: flex;
+    justify-content: center
+}
+
+.facepileItem_aaa08b>foreignObject {
+    background: linear-gradient(0deg,var(--background-mod-strong,hsla(240,4%,61%,.24)) 0,var(--background-mod-strong,hsla(240,4%,61%,.24)) 100%),var(--background-surface-high)
+}
+
+.facepileItemContainer_aaa08b:not(:first-child) {
+    margin-left: -4px
+}
+
+.facepileItemContainer_aaa08b:not(:last-child) {
+    margin-right: -4px
+}
+
+.textItem_aaa08b {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transform: scale(.42)
+}
+
+.chevronButton__5ae61 {
+    cursor: pointer;
+    margin-top: 8px;
+    padding: 4px 0;
+    width: 100%
+}
+
+.chevronButton__5ae61,.chevronButtonContent__5ae61 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.chevronButtonContent__5ae61 {
+    flex: 1;
+    height: 20px
+}
+
+.customizeLink__5ae61 {
+    cursor: pointer
+}
+
 .wrapper_fa8995 {
     background-color: var(--modal-background);
     border-radius: 8px;
@@ -6380,4 +6437,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=d297f259a2a65c7f.css.map*/
+/*# sourceMappingURL=87a27f46e703d805.css.map*/

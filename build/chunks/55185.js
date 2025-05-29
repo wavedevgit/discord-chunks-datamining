@@ -1,7 +1,7 @@
 /** Chunk was on 78715 **/
 n.d(t, {
-  I: () => N,
-  N: () => w
+  I: () => Z,
+  N: () => N
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
@@ -13,12 +13,13 @@ var r, i = n(255367),
   d = n(675478),
   h = n(885110),
   p = n(63063),
-  f = n(981631),
-  g = n(797910),
-  m = n(388032),
-  b = n(22275),
-  y = n(354810);
-async function O(e) {
+  f = n(223730),
+  g = n(981631),
+  m = n(797910),
+  b = n(388032),
+  y = n(22275),
+  O = n(354810);
+async function v(e) {
   await d.hW.updateAsync("status", t => {
     t.status = a.Gm.create({
       value: e
@@ -26,57 +27,58 @@ async function O(e) {
   }, d.fy.INFREQUENT_USER_ACTION)
 }
 
-function v(e) {
+function _(e) {
   let {
     closePopout: t
   } = e;
   return (0, i.jsx)(c.zxk, {
-    className: b.goOnlineButton,
+    className: y.goOnlineButton,
     look: c.zxk.Looks.FILLED,
     size: c.zxk.Sizes.SMALL,
     color: c.zxk.Colors.BRAND,
     onClick: () => {
-      t(), O(c.Skl.ONLINE)
+      t(), v(c.Skl.ONLINE)
     },
     fullWidth: !0,
-    children: m.intl.string(g.default.Poezn5)
+    children: b.intl.string(m.default.Poezn5)
   })
 }
 
-function _(e) {
+function C(e) {
   let {
     showCurrentGame: t,
-    shouldShowStatus: n = !1
-  } = e, r = (0, s.e7)([h.Z], () => h.Z.getStatus());
+    shouldShowStatus: n = !1,
+    shouldShowCustomizeLink: r = !1
+  } = e, l = (0, s.e7)([h.Z], () => h.Z.getStatus());
   return (0, i.jsxs)("div", {
-    className: b.toggleContainer,
+    className: y.toggleContainer,
     children: [(0, i.jsxs)("div", {
-      className: b.toggleContainerText,
+      className: y.toggleContainerText,
       children: [(0, i.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-primary",
-        children: m.intl.string(m.t.KY0ilp)
+        children: b.intl.string(b.t.KY0ilp)
       }), n && (0, i.jsxs)("div", {
-        className: b.toggleContainerOnlineRow,
+        className: y.toggleContainerOnlineRow,
         children: [(0, i.jsx)(c.qbd, {
           status: c.Skl.ONLINE,
           size: 8
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
-          children: r === c.Skl.INVISIBLE ? m.intl.string(g.default.a3AofX) : m.intl.string(m.t.WbGtnJ)
+          children: l === c.Skl.INVISIBLE ? b.intl.string(m.default.a3AofX) : b.intl.string(b.t.WbGtnJ)
         })]
-      })]
+      }), r && (0, i.jsx)(f.K, {})]
     }), (0, i.jsx)(c.rsf, {
       onChange: e => {
-        u.G6.updateSetting(e), n && O(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
+        u.G6.updateSetting(e), n && v(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
       },
       checked: t
     })]
   })
 }
 
-function C(e) {
+function j(e) {
   let {
     children: t,
     closePopout: n
@@ -85,16 +87,16 @@ function C(e) {
   let a = u.G6.useSetting(),
     d = (0, s.e7)([h.Z], () => h.Z.getStatus()) === c.Skl.INVISIBLE && a;
   return (0, i.jsxs)("div", {
-    className: b.wrapper,
+    className: y.wrapper,
     ref: r,
     children: [null != n && (0, i.jsx)("div", {
-      className: b.gradient
+      className: y.gradient
     }), (0, i.jsxs)("div", {
-      className: b.content,
+      className: y.content,
       children: [null != n && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.zxk, {
-          className: b.closeButton,
-          "aria-label": m.intl.string(m.t.cpT0Cg),
+          className: y.closeButton,
+          "aria-label": b.intl.string(b.t.cpT0Cg),
           look: c.zxk.Looks.BLANK,
           size: c.zxk.Sizes.NONE,
           onClick: n,
@@ -104,37 +106,15 @@ function C(e) {
           })
         }), (0, i.jsx)("img", {
           alt: "",
-          src: y.Z,
-          className: b.controllerImage
+          src: O.Z,
+          className: y.controllerImage
         }), (0, i.jsx)(o.X6, {
           variant: "heading-md/bold",
           color: "header-primary",
-          className: b.nuxTitle,
-          children: m.intl.string(d ? g.default.MkgMBw : m.t.PRjSRk)
+          className: y.nuxTitle,
+          children: b.intl.string(d ? m.default.MkgMBw : b.t.PRjSRk)
         })]
       }), t]
-    })]
-  })
-}
-
-function j(e) {
-  let {
-    closePopout: t
-  } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(C, {
-    closePopout: t,
-    children: [(0, i.jsx)(c.Text, {
-      variant: "text-xs/normal",
-      color: "text-secondary",
-      className: b.nuxContent,
-      children: m.intl.format(m.t.fF2TbW, {
-        helpDeskUrl: p.Z.getArticleURL(f.BhN.ACTIVITY_STATUS_SETTINGS)
-      })
-    }), (0, i.jsx)("div", {
-      className: b.toggleContainerWrapper,
-      children: (0, i.jsx)(_, {
-        showCurrentGame: n
-      })
     })]
   })
 }
@@ -142,18 +122,22 @@ function j(e) {
 function S(e) {
   let {
     closePopout: t
-  } = e;
-  return (0, i.jsxs)(C, {
+  } = e, n = u.G6.useSetting();
+  return (0, i.jsxs)(j, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      className: b.nuxContent,
-      children: m.intl.format(g.default.ZMYkIS, {
-        learnMoreLink: p.Z.getArticleURL(f.BhN.ACTIVITY_STATUS_SETTINGS)
+      className: y.nuxContent,
+      children: b.intl.format(b.t.fF2TbW, {
+        helpDeskUrl: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(v, {
-      closePopout: t
+    }), (0, i.jsx)("div", {
+      className: y.toggleContainerWrapper,
+      children: (0, i.jsx)(C, {
+        showCurrentGame: n,
+        shouldShowCustomizeLink: !0
+      })
     })]
   })
 }
@@ -161,19 +145,38 @@ function S(e) {
 function E(e) {
   let {
     closePopout: t
-  } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(C, {
+  } = e;
+  return (0, i.jsxs)(j, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      className: b.nuxContent,
-      children: m.intl.format(m.t.fF2TbW, {
-        helpDeskUrl: p.Z.getArticleURL(f.BhN.ACTIVITY_STATUS_SETTINGS)
+      className: y.nuxContent,
+      children: b.intl.format(m.default.ZMYkIS, {
+        learnMoreLink: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
+      })
+    }), (0, i.jsx)(_, {
+      closePopout: t
+    })]
+  })
+}
+
+function x(e) {
+  let {
+    closePopout: t
+  } = e, n = u.G6.useSetting();
+  return (0, i.jsxs)(j, {
+    closePopout: t,
+    children: [(0, i.jsx)(c.Text, {
+      variant: "text-xs/normal",
+      color: "text-secondary",
+      className: y.nuxContent,
+      children: b.intl.format(b.t.fF2TbW, {
+        helpDeskUrl: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)("div", {
-      className: b.toggleContainerWrapper,
-      children: (0, i.jsx)(_, {
+      className: y.toggleContainerWrapper,
+      children: (0, i.jsx)(C, {
         showCurrentGame: n,
         shouldShowStatus: !0
       })
@@ -181,65 +184,65 @@ function E(e) {
   })
 }
 
-function x() {
+function P() {
   let e = u.G6.useSetting();
-  return (0, i.jsxs)(C, {
-    children: [(0, i.jsx)(_, {
+  return (0, i.jsxs)(j, {
+    children: [(0, i.jsx)(C, {
       showCurrentGame: e
     }), (0, i.jsx)(c.$i$, {
-      className: b.divider
+      className: y.divider
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: m.intl.format(m.t.fF2TbW, {
-        helpDeskUrl: p.Z.getArticleURL(f.BhN.ACTIVITY_STATUS_SETTINGS)
+      children: b.intl.format(b.t.fF2TbW, {
+        helpDeskUrl: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    })]
+    }), (0, i.jsx)(f.y, {})]
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(C, {
+  return (0, i.jsxs)(j, {
     children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
-      className: b.controlTitle,
-      children: m.intl.string(g.default.MkgMBw)
+      className: y.controlTitle,
+      children: b.intl.string(m.default.MkgMBw)
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: m.intl.format(m.t.fF2TbW, {
-        helpDeskUrl: p.Z.getArticleURL(f.BhN.ACTIVITY_STATUS_SETTINGS)
+      children: b.intl.format(b.t.fF2TbW, {
+        helpDeskUrl: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(_, {
       closePopout: t
     })]
   })
 }
 
-function I() {
+function w() {
   let e = u.G6.useSetting();
-  return (0, i.jsxs)(C, {
-    children: [(0, i.jsx)(_, {
+  return (0, i.jsxs)(j, {
+    children: [(0, i.jsx)(C, {
       showCurrentGame: e,
       shouldShowStatus: !0
     }), (0, i.jsx)(c.$i$, {
-      className: b.divider
+      className: y.divider
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: m.intl.format(m.t.fF2TbW, {
-        helpDeskUrl: p.Z.getArticleURL(f.BhN.ACTIVITY_STATUS_SETTINGS)
+      children: b.intl.format(b.t.fF2TbW, {
+        helpDeskUrl: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    })]
+    }), (0, i.jsx)(f.y, {})]
   })
 }
-var w = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
+var N = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
 
-function N(e) {
+function Z(e) {
   let {
     popoutState: t,
     closePopout: n,
@@ -249,25 +252,25 @@ function N(e) {
       r()
     }, [r]), o) {
     case 0:
-      return (0, i.jsx)(j, {
-        closePopout: n
-      });
-    case 1:
       return (0, i.jsx)(S, {
         closePopout: n
       });
-    case 2:
+    case 1:
       return (0, i.jsx)(E, {
         closePopout: n
       });
+    case 2:
+      return (0, i.jsx)(x, {
+        closePopout: n
+      });
     case 3:
-      return (0, i.jsx)(x, {});
+      return (0, i.jsx)(P, {});
     case 4:
-      return (0, i.jsx)(P, {
+      return (0, i.jsx)(I, {
         closePopout: n
       });
     case 5:
-      return (0, i.jsx)(I, {});
+      return (0, i.jsx)(w, {});
     default:
       return null
   }
