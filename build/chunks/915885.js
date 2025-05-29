@@ -22,7 +22,7 @@ function y(e) {
   let {
     guild: t,
     selected: n
-  } = e, y = (0, l.e7)([f.Z], () => f.Z.can(m.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), _ = y && null != O ? O : 0;
+  } = e, y = (0, l.e7)([f.Z], () => f.Z.can(m.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), v = y && null != O ? O : 0;
   i.useEffect(() => {
     y && t.hasFeature(m.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.hasFeature(m.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
@@ -30,7 +30,7 @@ function y(e) {
       limit: h.p
     })
   }, [y, t]);
-  let v = i.useCallback(() => {
+  let _ = i.useCallback(() => {
       (0, g._X)(t.id)
     }, [t.id]),
     C = (0, a.XL)(t.id, o.z.MEMBERS_LAUNCH_UPSELL);
@@ -45,9 +45,9 @@ function y(e) {
       }),
       text: b.intl.string(b.t.oclz3d),
       selected: n,
-      onClick: v,
-      trailing: _ > 0 ? (0, r.jsx)(s.mAB, {
-        count: _
+      onClick: _,
+      trailing: v > 0 ? (0, r.jsx)(s.mAB, {
+        count: v
       }) : null
     })
   })

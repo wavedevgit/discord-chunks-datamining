@@ -33,7 +33,7 @@ function f(e) {
       backgroundColor: f,
       borderColor: f
     }
-  }), "animate-never"), _ = {
+  }), "animate-never"), v = {
     startColor: f,
     handleRest: e => {
       e.finished && (null == l || l())
@@ -42,9 +42,9 @@ function f(e) {
     targetBorderColor: b,
     targetColor: g,
     animationDelay: u
-  }, v = i.useRef(_);
+  }, _ = i.useRef(v);
   return i.useEffect(() => {
-    v.current = _
+    _.current = v
   }), i.useEffect(() => {
     let {
       startColor: e,
@@ -53,7 +53,7 @@ function f(e) {
       targetBorderColor: r,
       targetColor: i,
       animationDelay: l
-    } = v.current, {
+    } = _.current, {
       useReducedMotion: o
     } = d.Z, s = 200 * !o;
     O({

@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(66999),
   y = n(378844),
   O = n(359110),
-  _ = n(922482),
-  v = n(431328),
+  v = n(922482),
+  _ = n(431328),
   C = n(501655),
   j = n(427679),
   S = n(368442),
@@ -142,9 +142,9 @@ class Y extends D.ZP {
       unread: b,
       resolvedUnreadSetting: y,
       mentionCount: O,
-      isFavoriteSuggestion: _
+      isFavoriteSuggestion: v
     } = this.props, {
-      shouldShowGuildVerificationPopout: v
+      shouldShowGuildVerificationPopout: _
     } = this.state, C = this.getVoiceStatesCount(), j = (0, r.jsxs)("li", {
       className: o()(this.getModeClass(), {
         [V.disabled]: this.isDisabled()
@@ -156,7 +156,7 @@ class Y extends D.ZP {
         renderPopout: this.renderPopout,
         spacing: 0,
         onRequestClose: this.closeGuildVerificationPopout,
-        shouldShow: v,
+        shouldShow: _,
         children: () => (0, r.jsx)(a.ua7, {
           text: this.getTooltipText(),
           children: l => {
@@ -185,7 +185,7 @@ class Y extends D.ZP {
                 [H.iconLive]: null != f
               }),
               channel: e,
-              selected: !_ && t,
+              selected: !v && t,
               connected: n,
               unread: n ? b : void 0,
               resolvedUnreadSetting: y,
@@ -199,7 +199,7 @@ class Y extends D.ZP {
               },
               connectDragPreview: u,
               subtitle: this.renderSubtitle(),
-              isFavoriteSuggestion: _,
+              isFavoriteSuggestion: v,
               "aria-label": (0, p.ZP)({
                 channel: e,
                 unread: b,
@@ -209,7 +209,7 @@ class Y extends D.ZP {
                 needSubscriptionToAccess: m
               })
             }, c), {
-              children: [_ && this.renderAcceptSuggestionButton(), _ && this.renderRemoveSuggestionButton(), !_ && this.renderOpenChatButton(), !_ && this.renderInviteButton(), !_ && this.renderEditButton(), !_ && this.renderChannelInfo()]
+              children: [v && this.renderAcceptSuggestionButton(), v && this.renderRemoveSuggestionButton(), !v && this.renderOpenChatButton(), !v && this.renderInviteButton(), !v && this.renderEditButton(), !v && this.renderChannelInfo()]
             }))
           }
         })
@@ -233,7 +233,7 @@ class Y extends D.ZP {
       } = this.props, i = e.getGuildId();
       null != i && (0, m.n)(i) && (0, g.hk)(i), r && this.setState({
         shouldShowGuildVerificationPopout: !0
-      }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, _.Cq)(e), __OVERLAY__ || (0, O.Kh)(e.id)
+      }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, v.Cq)(e), __OVERLAY__ || (0, O.Kh)(e.id)
     }), F(this, "handleClickChat", () => {
       let {
         channel: e,
@@ -336,17 +336,17 @@ function q(e) {
       bypassLimit: N.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, s.e7)([x.Z], () => x.Z.isCollapsed(n.parent_id)), p = (0, E.ZP)(n.id), f = (0, s.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, C.pV.AUDIENCE), {
+  }), h = (0, s.e7)([x.Z], () => x.Z.isCollapsed(n.parent_id)), p = (0, E.ZP)(n.id), f = (0, s.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, _.Rk)(n.id, C.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: y
-  } = (0, b.Z)(n.id), O = (0, s.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), _ = (0, S.xJ)(n.id), I = (0, L.Z)({
+  } = (0, b.Z)(n.id), O = (0, s.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), v = (0, S.xJ)(n.id), I = (0, L.Z)({
     channel: n,
     isChannelSelected: !1,
     isChannelCollapsed: o,
     voiceStates: a,
     isSubscriptionGated: m,
     needSubscriptionToAccess: y,
-    enableConnectedUserLimit: _ || n.userLimit > 0 && n.userLimit < U.xGv
+    enableConnectedUserLimit: v || n.userLimit > 0 && n.userLimit < U.xGv
   }), R = e.connected && null == I;
   return (0, r.jsx)(K, W(z({
     categoryCollapsed: h,

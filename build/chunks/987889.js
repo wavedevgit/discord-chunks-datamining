@@ -53,7 +53,7 @@ let m = {
     MESSAGE: ["SETTINGS"]
   },
   b = (e, t) => (0, i.useMemo)(() => {
-    let n = m[v(e)];
+    let n = m[_(e)];
     return t ? ["ACK", ...n] : n
   }, [e, t]);
 
@@ -126,7 +126,7 @@ function O(e) {
     })
   })
 }
-let _ = {
+let v = {
     ACK: {
       type: "standard",
       Icon: o.dz2,
@@ -192,7 +192,7 @@ let _ = {
       }
     }
   },
-  v = e => "MENTION";
+  _ = e => "MENTION";
 
 function C(e) {
   let {
@@ -207,7 +207,7 @@ function C(e) {
     justify: "center",
     className: p.actions,
     children: l.map(e => {
-      let i = _[e];
+      let i = v[e];
       switch (i.type) {
         case "standard":
           return (0, r.jsx)(y, g(f({}, i), {

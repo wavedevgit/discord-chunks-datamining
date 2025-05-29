@@ -16,8 +16,8 @@ var r, i, l, o, s = n(392711),
   b = n(306680),
   y = n(914010),
   O = n(9156),
-  _ = n(938475),
-  v = n(823379),
+  v = n(938475),
+  _ = n(823379),
   C = n(734307),
   j = n(981631),
   S = ((i = {}).HIDDEN = "hidden", i.UNREAD = "unread", i.MENTIONS = "mentions", i.VOICE_CHANNELS = "voice-channels", i);
@@ -49,7 +49,7 @@ function N(e) {
 }
 
 function Z(e) {
-  return !O.ZP.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? h.Z.getMutableParticipants(e.id, p.pV.SPEAKER).length > 0 : _.ZP.getVoiceStatesForChannel(e).length > 0)
+  return !O.ZP.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? h.Z.getMutableParticipants(e.id, p.pV.SPEAKER).length > 0 : v.ZP.getVoiceStatesForChannel(e).length > 0)
 }
 
 function T(e) {
@@ -72,14 +72,14 @@ function T(e) {
     let t = y[e];
     if ((w(t.id) || a().some(t.threadIds, w)) && (h = !1), (N(t.id) || a().some(t.threadIds, N)) && (d = !1), g.includes(t.id) && (p = !0), !h && !d && p) break
   }
-  let _ = 0,
-    v = !1,
+  let v = 0,
+    _ = !1,
     j = 0,
     S = !1;
   if (h || d)
     for (let e = m.length - 1; e >= 0; e--) {
       let t = m[e];
-      (w(t.id) || a().some(t.threadIds, w)) && (null == s && (s = t.id), v = !0), (N(t.id) || a().some(t.threadIds, N)) && (null == o && (o = t.id), _ += b.ZP.getMentionCount(t.id), _ += a().sumBy(t.threadIds, b.ZP.getMentionCount))
+      (w(t.id) || a().some(t.threadIds, w)) && (null == s && (s = t.id), _ = !0), (N(t.id) || a().some(t.threadIds, N)) && (null == o && (o = t.id), v += b.ZP.getMentionCount(t.id), v += a().sumBy(t.threadIds, b.ZP.getMentionCount))
     }
   if (h || d)
     for (let e = 0; e < O.length; e++) {
@@ -102,11 +102,11 @@ function T(e) {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: u
-  }), d && _ > 0 ? T = {
+  }), d && v > 0 ? T = {
     mode: "mentions",
-    mentionCount: _,
+    mentionCount: v,
     targetChannelId: o
-  } : h && v && (T = {
+  } : h && _ && (T = {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: s
@@ -162,7 +162,7 @@ function M(e) {
 }
 class U extends(r = c.ZP.Store) {
   initialize() {
-    this.waitFor(C.Z, b.ZP, O.ZP, f.Z, _.ZP, y.Z, m.Z)
+    this.waitFor(C.Z, b.ZP, O.ZP, f.Z, v.ZP, y.Z, m.Z)
   }
   getUnreadStateForGuildId(e) {
     var t;
@@ -193,7 +193,7 @@ let G = new U(u.Z, {
         channelId: n
       } = e;
       return null == (t = g.Z.getChannel(n)) ? void 0 : t.guild_id
-    }).filter(v.lm).uniq().forEach(e => {
+    }).filter(_.lm).uniq().forEach(e => {
       let t = m.Z.getGuild(e);
       null != t && t.hasFeature(j.oNc.COMMUNITY) && R(e) && (n = !0)
     }), n

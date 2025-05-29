@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(210887),
   y = n(695346),
   O = n(496675),
-  _ = n(768581),
-  v = n(358555),
+  v = n(768581),
+  _ = n(358555),
   C = n(981631),
   j = n(647086),
   S = n(982183),
@@ -88,7 +88,7 @@ function w(e) {
         className: o()(x.bannerImg, {
           [x.bannerImgFullWidth]: a.tq
         }),
-        src: null != (t = _.ZP.getGuildBannerURL({
+        src: null != (t = v.ZP.getGuildBannerURL({
           id: i.id,
           banner: c
         }, u)) ? t : "",
@@ -197,10 +197,10 @@ function D(e) {
     children: d
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(_.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === j._ && (0, r.jsx)(Z, {}), (0, r.jsx)(A, {
+    }), i.id === j._ && (0, r.jsx)(Z, {}), i.id === S.yG && (0, r.jsx)(T, {}), (0, r.jsx)(A, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
       className: x.headerButton,
@@ -249,7 +249,7 @@ function k(e) {
         })
       })
     }
-  }, [l, p]), y = (0, c.e7)([O.Z], () => (0, m.b)(O.Z, l)), _ = i.useCallback(() => {
+  }, [l, p]), y = (0, c.e7)([O.Z], () => (0, m.b)(O.Z, l)), v = i.useCallback(() => {
     y ? (0, u.ZDy)(async () => {
       let {
         default: e
@@ -289,7 +289,7 @@ function k(e) {
           },
           children: [(0, r.jsxs)("div", {
             className: x.guildBadgeAndName,
-            children: [(0, r.jsx)(v.Z, {
+            children: [(0, r.jsx)(_.Z, {
               guild: l,
               isBannerVisible: t
             }), l.id === j._ && (0, r.jsx)(Z, {}), l.id === S.yG && (0, r.jsx)(T, {}), (0, r.jsx)(A, {
@@ -309,7 +309,7 @@ function k(e) {
       }, e), {
         onClick: () => {
           var t;
-          null == (t = e.onClick) || t.call(e), _()
+          null == (t = e.onClick) || t.call(e), v()
         },
         children: (0, r.jsx)(u.ejJ, {
           size: "refresh_sm",
@@ -338,14 +338,14 @@ let M = i.memo(function(e) {
     disableBannerAnimation: m,
     "aria-expanded": b,
     "aria-controls": O,
-    guild: v,
+    guild: _,
     guildBanner: j,
     animationOverlayHeight: S,
     children: E,
     headerClassName: Z,
     communityInfoVisible: T,
     hasSubheader: R
-  } = e, A = v.hasFeature(C.oNc.ANIMATED_BANNER), L = (0, p.Z)(v), M = !L && v.hasCommunityInfoSubheader(), G = !L && T, B = (0, _.xR)(j) && A && !m, [V, H] = i.useState(!1), F = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, Y = i.useRef(void 0), K = y.QK.getSetting();
+  } = e, A = _.hasFeature(C.oNc.ANIMATED_BANNER), L = (0, p.Z)(_), M = !L && _.hasCommunityInfoSubheader(), G = !L && T, B = (0, v.xR)(j) && A && !m, [V, H] = i.useState(!1), F = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, Y = i.useRef(void 0), K = y.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !F.current && K) return H(!0), Y.current = setTimeout(() => {
       H(!1)
@@ -370,7 +370,7 @@ let M = i.memo(function(e) {
     }),
     J = {
       bannerVisible: n,
-      guild: v,
+      guild: _,
       onClick: c,
       onContextMenu: d,
       ariaControls: O,
@@ -407,13 +407,13 @@ let M = i.memo(function(e) {
               children: E
             }))
           }), M && (0, r.jsx)(N, {
-            guild: v,
+            guild: _,
             controller: l,
             hasBanner: null != j,
             hasSubheader: null != R && R
           })]
         }), null != j ? (0, r.jsx)(w, {
-          guild: v,
+          guild: _,
           controller: l,
           guildBanner: j,
           animate: V,

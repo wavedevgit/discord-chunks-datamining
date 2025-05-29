@@ -26,7 +26,7 @@ async function O(e) {
   }, d.fy.INFREQUENT_USER_ACTION)
 }
 
-function _(e) {
+function v(e) {
   let {
     showCurrentGame: t,
     shouldShowStatus: n = !1
@@ -59,7 +59,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     children: t,
     closePopout: n
@@ -101,7 +101,7 @@ function C(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(v, {
+  return (0, i.jsxs)(_, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -112,7 +112,7 @@ function C(e) {
       })
     }), (0, i.jsx)("div", {
       className: b.toggleContainerWrapper,
-      children: (0, i.jsx)(_, {
+      children: (0, i.jsx)(v, {
         showCurrentGame: n
       })
     })]
@@ -123,7 +123,7 @@ function j(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(v, {
+  return (0, i.jsxs)(_, {
     closePopout: t,
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
@@ -134,7 +134,7 @@ function j(e) {
       })
     }), (0, i.jsx)("div", {
       className: b.toggleContainerWrapper,
-      children: (0, i.jsx)(_, {
+      children: (0, i.jsx)(v, {
         showCurrentGame: n,
         shouldShowStatus: !0
       })
@@ -144,8 +144,8 @@ function j(e) {
 
 function S() {
   let e = u.G6.useSetting();
-  return (0, i.jsxs)(v, {
-    children: [(0, i.jsx)(_, {
+  return (0, i.jsxs)(_, {
+    children: [(0, i.jsx)(v, {
       showCurrentGame: e
     }), (0, i.jsx)(c.$i$, {
       className: b.divider
@@ -163,7 +163,7 @@ function E(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(v, {
+  return (0, i.jsxs)(_, {
     children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
@@ -191,8 +191,8 @@ function E(e) {
 
 function x() {
   let e = u.G6.useSetting();
-  return (0, i.jsxs)(v, {
-    children: [(0, i.jsx)(_, {
+  return (0, i.jsxs)(_, {
+    children: [(0, i.jsx)(v, {
       showCurrentGame: e,
       shouldShowStatus: !0
     }), (0, i.jsx)(c.$i$, {

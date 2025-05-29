@@ -23,8 +23,8 @@ var r = n(255367),
   b = n(430824),
   y = n(496675),
   O = n(9156),
-  _ = n(203818),
-  v = n(438144),
+  v = n(203818),
+  _ = n(438144),
   C = n(981631),
   j = n(388032),
   S = n(585523);
@@ -68,8 +68,8 @@ let I = i.memo(function(e) {
     let t, {
         channel: l,
         connectChannelDragSource: h,
-        connectChannelDropTarget: _,
-        disableManageChannels: v,
+        connectChannelDropTarget: v,
+        disableManageChannels: _,
         position: I,
         sortingPosition: w,
         hideIcon: N,
@@ -181,7 +181,7 @@ let I = i.memo(function(e) {
             })), (0, r.jsx)("div", {
               onClick: P,
               className: S.children,
-              children: D && !v ? (0, r.jsx)(c.ua7, {
+              children: D && !_ ? (0, r.jsx)(c.ua7, {
                 text: j.intl.string(j.t["fUYU+v"]),
                 children: e => {
                   let {
@@ -221,7 +221,7 @@ let I = i.memo(function(e) {
           })
         }), Z]
       });
-    return null != _ && null != h ? _(h(z)) : z
+    return null != v && null != h ? v(h(z)) : z
   }),
   w = (0, h.B)(I),
   N = i.memo(function(e) {
@@ -261,8 +261,8 @@ let I = i.memo(function(e) {
   Z = i.memo(function(e) {
     let {
       category: t
-    } = e, n = (0, a.e7)([_.Z], () => _.Z.isVoiceCategoryCollapsed(t.guild.id)), l = (0, g.Q3)("VoiceChannelCategoryButton"), o = i.useCallback(() => {
-      n ? (0, v.s)(t.guild.id) : (0, v.M)(t.guild.id)
+    } = e, n = (0, a.e7)([v.Z], () => v.Z.isVoiceCategoryCollapsed(t.guild.id)), l = (0, g.Q3)("VoiceChannelCategoryButton"), o = i.useCallback(() => {
+      n ? (0, _.s)(t.guild.id) : (0, _.M)(t.guild.id)
     }, [t.guild.id, n]);
     return l ? (0, r.jsxs)(c.zxk, {
       look: c.zxk.Looks.FILLED,
@@ -295,7 +295,7 @@ let I = i.memo(function(e) {
     let {
       category: t,
       channel: n
-    } = e, i = (0, a.e7)([_.Z], () => _.Z.isVoiceCategoryCollapsed(t.guild.id));
+    } = e, i = (0, a.e7)([v.Z], () => v.Z.isVoiceCategoryCollapsed(t.guild.id));
     return i || null == n || n.record.type === C.d4z.GUILD_CATEGORY ? i ? (0, r.jsx)("li", {
       className: S.containerDefault,
       children: (0, r.jsx)("div", {

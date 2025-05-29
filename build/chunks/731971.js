@@ -10,7 +10,7 @@ n.d(t, {
   oE: () => h,
   pB: () => d,
   y: () => y,
-  yS: () => _
+  yS: () => v
 });
 var r = n(381814),
   i = n(524437),
@@ -124,4 +124,4 @@ let u = (0, r.U)(e => ({
   b = () => u.getState().dmsAllowed,
   y = () => u.getState().nickname,
   O = () => u.getState().showActivity,
-  _ = () => u.getState().mutedServer
+  v = () => u.getState().mutedServer

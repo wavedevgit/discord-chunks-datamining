@@ -27,7 +27,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function _(e) {
   }
   return e
 }
-let v = b.IlC.APP,
+let _ = b.IlC.APP,
   C = !1,
   j = !1,
   S = [];
@@ -53,7 +53,7 @@ class x extends(i = l.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? b.IlC.OVERLAY : b.IlC.APP;
-    return !!(C && S.length > 0 && v === e)
+    return !!(C && S.length > 0 && _ === e)
   }
   getProps() {
     return {
@@ -103,7 +103,7 @@ let P = new x(o.Z, {
         let [n] = e;
         return n.code === t.code
       })) return !1;
-    v = e.context, j = !1;
+    _ = e.context, j = !1;
     let n = function(e) {
       let {
         approximate_member_count: t,
@@ -130,7 +130,7 @@ let P = new x(o.Z, {
         type: c,
         is_nickname_changeable: p
       };
-      return null != d && (f.channel = _({}, d)), null != h && (f.guild = new u.ZP(h)), null != e.inviter && (f.inviter = _({}, e.inviter)), f
+      return null != d && (f.channel = v({}, d)), null != h && (f.guild = new u.ZP(h)), null != e.inviter && (f.inviter = v({}, e.inviter)), f
     }(t);
     S.push([n, e.resolve])
   },

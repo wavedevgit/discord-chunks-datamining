@@ -1,7 +1,7 @@
 /** Chunk was on 78715 **/
 n.d(t, {
-  Z: () => P
-}), n(388685), n(539854);
+  Z: () => E
+}), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
@@ -15,49 +15,18 @@ var r = n(255367),
   p = n(626135),
   f = n(585483),
   g = n(821020),
-  m = n(370774),
-  b = n(982183),
-  y = n(981631),
-  O = n(388032),
+  m = n(389160),
+  b = n(370774),
+  y = n(982183),
+  O = n(981631),
+  v = n(388032),
   _ = n(709701);
 
-function v(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-      }) : e[t] = r
-    })
-  }
-  return e
-}
-
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function j(e) {
+function C(e) {
   e.stopPropagation()
 }
 
-function S(e) {
+function j(e) {
   let {
     group: t,
     isOpen: n,
@@ -76,7 +45,7 @@ function S(e) {
         variant: "text-sm/medium",
         color: "text-secondary",
         className: _.messagesGroupHeader,
-        children: (0, s.capitalize)(O.intl.string(b.Ty[t]).toLowerCase())
+        children: (0, s.capitalize)(v.intl.string(y.Ty[t]).toLowerCase())
       }), (0, r.jsx)(u.CJ0, {
         size: "xxs",
         className: _.chevron
@@ -84,148 +53,170 @@ function S(e) {
     })
   })
 }
-let E = {
-    [b.dm.UNREAD]: !0,
-    [b.dm.TODAY]: !1,
-    [b.dm.YESTERDAY]: !1,
-    [b.dm.OLDER]: !1
-  },
-  x = [b.dm.UNREAD, b.dm.TODAY, b.dm.YESTERDAY, b.dm.OLDER];
+let S = [y.dm.UNREAD, y.dm.TODAY, y.dm.YESTERDAY, y.dm.OLDER];
 
-function P(e) {
+function E(e) {
   let {
     analyticsName: t,
     messages: n,
     hasMore: l,
     loading: s,
-    loadMore: O,
-    renderEmptyState: P,
-    renderMessageGroup: I,
-    setInboxReadState: w,
-    scrollerClassName: N,
-    className: Z,
-    listName: T,
-    ignoreGrouping: R = !1
-  } = e, A = i.useRef(null), D = (0, d.Z)(T, A), {
-    notificationCenterVariant: L
+    loadMore: v,
+    renderEmptyState: E,
+    renderMessageGroup: x,
+    setInboxReadState: P,
+    scrollerClassName: I,
+    className: w,
+    listName: N,
+    ignoreGrouping: Z = !1
+  } = e, T = i.useRef(null), R = (0, d.Z)(N, T), {
+    notificationCenterVariant: A
   } = g.L.useExperiment({
     location: "NotificationsInboxSidebarList"
-  }), [k, M] = i.useState(E);
+  }), {
+    messageGroupOpenStates: D,
+    toggleOpenState: L
+  } = (0, m.Z)();
   i.useEffect(() => {
-    p.default.track(y.rMx.OPEN_POPOUT, {
+    p.default.track(O.rMx.OPEN_POPOUT, {
       type: t
     })
   }, [t]), i.useEffect(() => {
     function e() {
       var e;
-      null == (e = A.current) || e.scrollPageUp({
+      null == (e = T.current) || e.scrollPageUp({
         animate: !0
       })
     }
 
     function t() {
       var e;
-      null == (e = A.current) || e.scrollPageDown({
+      null == (e = T.current) || e.scrollPageDown({
         animate: !0
       })
     }
-    return f.S.subscribe(y.CkL.SCROLL_PAGE_DOWN, t), f.S.subscribe(y.CkL.SCROLL_PAGE_UP, e), () => {
-      f.S.unsubscribe(y.CkL.SCROLL_PAGE_DOWN, t), f.S.unsubscribe(y.CkL.SCROLL_PAGE_UP, e)
+    return f.S.subscribe(O.CkL.SCROLL_PAGE_DOWN, t), f.S.subscribe(O.CkL.SCROLL_PAGE_UP, e), () => {
+      f.S.unsubscribe(O.CkL.SCROLL_PAGE_DOWN, t), f.S.unsubscribe(O.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
-  let U = i.useCallback(() => {
+  let k = i.useCallback(() => {
       var e;
-      let t = null == (e = A.current) ? void 0 : e.getScrollerState();
-      null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && l && !s && (null == O || O())
-    }, [l, O, s]),
-    G = i.useMemo(() => {
+      let t = null == (e = T.current) ? void 0 : e.getScrollerState();
+      null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && l && !s && (null == v || v())
+    }, [l, v, s]),
+    M = i.useMemo(() => {
       let e = {
-          [b.dm.UNREAD]: {},
-          [b.dm.TODAY]: {},
-          [b.dm.YESTERDAY]: {},
-          [b.dm.OLDER]: {}
+          [y.dm.UNREAD]: {},
+          [y.dm.TODAY]: {},
+          [y.dm.YESTERDAY]: {},
+          [y.dm.OLDER]: {}
         },
         t = {
-          [b.dm.UNREAD]: [],
-          [b.dm.TODAY]: [],
-          [b.dm.YESTERDAY]: [],
-          [b.dm.OLDER]: []
+          [y.dm.UNREAD]: [],
+          [y.dm.TODAY]: [],
+          [y.dm.YESTERDAY]: [],
+          [y.dm.OLDER]: []
         };
       return null != n && n.length > 0 && (a().each(n, t => {
-        let n = (0, m.Q)(t);
+        let n = (0, b.Q)(t);
         t.channel_id in e[n] ? e[n][t.channel_id].push(t) : e[n][t.channel_id] = [t]
-      }), a().each(x, n => {
+      }), a().each(S, n => {
         Object.values(e[n]).forEach(e => {
           t[n].push(e)
         })
       })), t
     }, [n]),
-    B = i.useMemo(() => {
+    U = i.useMemo(() => {
       let e = [];
       return null == n ? e.push((0, r.jsx)("div", {
         className: o()(_.emptyPlaceholder, _.loadingPlaceholder),
         children: (0, r.jsx)(u.$jN, {})
       }, "spinner")) : 0 === n.length ? e.push((0, r.jsx)(i.Fragment, {
-        children: P(h.Z.theme)
-      }, "empty-state")) : R ? e.push(...n.map(e => I([e], "sidebar" === L))) : a().each(x, t => {
-        0 !== G[t].length && (e.push((0, r.jsx)(S, {
+        children: E(h.Z.theme)
+      }, "empty-state")) : Z ? e.push(...n.map(e => x([e], "sidebar" === A))) : a().each(S, t => {
+        0 !== M[t].length && (e.push((0, r.jsx)(j, {
           group: t,
-          isOpen: k[t],
-          toggleOpenedState: () => M(e => C(v({}, e), {
-            [t]: !e[t]
-          }))
-        })), k[t] && e.push(...G[t].map(e => I(e, "sidebar" === L))))
+          isOpen: D[t],
+          toggleOpenedState: () => L(t)
+        })), D[t] && e.push(...M[t].map(e => x(e, "sidebar" === A))))
       }), e.push((0, r.jsx)(u.LZC, {
         size: 8
       }, "spacer")), e
-    }, [n, P, k, G, R, I, L]);
+    }, [n, E, D, L, M, Z, x, A]);
   i.useEffect(() => {
-    0 === G.UNREAD.length ? w(b.xM.READ) : w(b.xM.UNREAD)
-  }, [G, w]);
-  let V = null;
-  null != n && n.length > 0 && null != O && s && (V = (0, r.jsx)("div", {
+    0 === M.UNREAD.length ? P(y.xM.READ) : P(y.xM.UNREAD)
+  }, [M, P]);
+  let G = null;
+  null != n && n.length > 0 && null != v && s && (G = (0, r.jsx)("div", {
     className: _.loadingMore,
     children: (0, r.jsx)(u.$jN, {})
   }, "loading-more-after"));
-  let H = null != O && l;
+  let B = null != v && l;
   return (0, r.jsx)("div", {
-    className: o()(Z, _.messagesPopoutWrap),
-    onClick: j,
-    onDoubleClick: j,
+    className: o()(w, _.messagesPopoutWrap),
+    onClick: C,
+    onDoubleClick: C,
     "aria-label": e["aria-label"],
     children: (0, r.jsxs)(u.Den, {
-      className: o()(_.messagesPopout, N),
-      onScroll: H ? U : void 0,
-      ref: A,
+      className: o()(_.messagesPopout, I),
+      onScroll: B ? k : void 0,
+      ref: T,
       children: [(0, r.jsx)(c.bG, {
-        navigator: D,
+        navigator: R,
         children: (0, r.jsx)(c.SJ, {
           children: e => {
-            var {
-              ref: t
-            } = e, n = function(e, t) {
-              if (null == e) return {};
-              var n, r, i = function(e, t) {
+            var t, n, {
+                ref: i
+              } = e,
+              l = function(e, t) {
                 if (null == e) return {};
-                var n, r, i = {},
-                  l = Object.keys(e);
-                for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+                var n, r, i = function(e, t) {
+                  if (null == e) return {};
+                  var n, r, i = {},
+                    l = Object.keys(e);
+                  for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+                  return i
+                }(e, t);
+                if (Object.getOwnPropertySymbols) {
+                  var l = Object.getOwnPropertySymbols(e);
+                  for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+                }
                 return i
-              }(e, t);
-              if (Object.getOwnPropertySymbols) {
-                var l = Object.getOwnPropertySymbols(e);
-                for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+              }(e, ["ref"]);
+            return (0, r.jsx)("div", (t = function(e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {},
+                  r = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), r.forEach(function(t) {
+                  var r;
+                  r = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: r,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                  }) : e[t] = r
+                })
               }
-              return i
-            }(e, ["ref"]);
-            return (0, r.jsx)("div", C(v({
-              ref: t
-            }, n), {
-              children: B
-            }))
+              return e
+            }({
+              ref: i
+            }, l), n = n = {
+              children: U
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+              var n = Object.keys(e);
+              if (Object.getOwnPropertySymbols) {
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
+              }
+              return n
+            })(Object(n)).forEach(function(e) {
+              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+            }), t))
           }
         })
-      }), V]
+      }), G]
     })
   })
 }

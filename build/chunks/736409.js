@@ -1,6 +1,6 @@
 /** Chunk was on 78715 **/
 n.d(t, {
-  j: () => _
+  j: () => v
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,12 +19,12 @@ var r = n(255367),
   b = n(981631),
   y = n(921944),
   O = n(46140);
-let _ = e => {
+let v = e => {
   let {
     children: t,
     isForceShowSharingPopout: n,
-    setIsForceShowSharingPopout: _
-  } = e, [v, C] = (0, i.useState)(!1), j = function(e) {
+    setIsForceShowSharingPopout: v
+  } = e, [_, C] = (0, i.useState)(!1), j = function(e) {
     let {
       isForceShowSharingPopout: t
     } = e, {
@@ -47,7 +47,7 @@ let _ = e => {
     n && f.default.track(b.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
-  }, [n]), null != j || v) ? (0, r.jsx)(c.ZP, {
+  }, [n]), null != j || _) ? (0, r.jsx)(c.ZP, {
     contentTypes: n ? [] : [o.z.SHARE_ACTIVITY_COACHMARK_V2],
     children: e => {
       let {
@@ -57,7 +57,7 @@ let _ = e => {
         let e = () => {
           (0, a.EW)(o.z.SHARE_ACTIVITY_COACHMARK_V2, {
             dismissAction: y.L.USER_DISMISS
-          }), _(!1), C(!1)
+          }), v(!1), C(!1)
         };
         return (0, r.jsx)(s.yRy, {
           targetElementRef: S,

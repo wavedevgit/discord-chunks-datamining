@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(803647),
   y = n(131704),
   O = n(944486),
-  _ = n(626135),
-  v = n(77880),
+  v = n(626135),
+  _ = n(77880),
   C = n(870569),
   j = n(981631),
   S = n(388032),
@@ -56,12 +56,12 @@ let P = i.memo(function(e) {
     } = (0, h.ZP)(),
     {
       changeLeaveCallAndActivityIcons: V
-    } = (0, v.A)({
+    } = (0, _.A)({
       location: "Activity Actions"
     }),
     H = x(k, L, D),
     F = i.useCallback(() => {
-      o()(null != L, "Received null activity"), (0, p.v)(B, p.d.INVITE), _.default.track(j.rMx.OPEN_MODAL, {
+      o()(null != L, "Received null activity"), (0, p.v)(B, p.d.INVITE), v.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: L.application_id,
         location: M.location

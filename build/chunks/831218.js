@@ -18,8 +18,8 @@ var r, i = n(255367),
   b = n(906732),
   y = n(453542),
   O = n(702321),
-  _ = n(46148),
-  v = n(82295),
+  v = n(46148),
+  _ = n(82295),
   C = n(313201),
   j = n(540059),
   S = n(860144),
@@ -352,7 +352,7 @@ class V extends(r = l.Component) {
         totalRowCount: o,
         preRenderedChildren: s
       } = this.state, a = r[n[t]];
-      return null == a ? null : (0, i.jsx)(_.s, {
+      return null == a ? null : (0, i.jsx)(v.s, {
         channelId: a.id,
         selectedChannelId: l,
         children: (0, i.jsx)(A.ZP, {
@@ -386,7 +386,7 @@ class V extends(r = l.Component) {
         showDMHeader: n,
         isVisualRefreshEnabled: r
       } = this.props;
-      return 0 !== t && n ? (0, i.jsxs)(v.Z, {
+      return 0 !== t && n ? (0, i.jsxs)(_.Z, {
         className: k.privateChannelsHeaderContainer,
         children: [(0, i.jsx)("span", {
           className: k.headerText,
@@ -444,13 +444,13 @@ let H = e => {
     m = l.Children.count(d),
     y = Z.Z.getMutablePrivateChannels(),
     O = (0, I.k1)(y),
-    _ = (0, u.Wu)([R.Z, P.Z, w.Z], () => {
+    v = (0, u.Wu)([R.Z, P.Z, w.Z], () => {
       let e = R.Z.getPrivateChannelIds();
       return (0, I.tU)(e, [P.Z, w.Z])
     }, []);
   (0, E.z)(S.R);
   let {
-    analyticsLocations: v
+    analyticsLocations: _
   } = (0, b.ZP)(g.Z.CONTACTS_LIST), x = (0, u.cj)([f.Z, N.Z, Z.Z], () => ({
     theme: N.Z.darkSidebar ? D.BRd.DARK : s,
     keyboardModeEnabled: f.Z.keyboardModeEnabled,
@@ -492,14 +492,14 @@ let H = e => {
     setFocus: L
   });
   return (0, i.jsx)(b.Gt, {
-    value: v,
+    value: _,
     children: (0, i.jsx)(a.bG, {
       navigator: H,
       children: (0, i.jsx)(V, U(G(U({
         density: r,
         isVisualRefreshEnabled: n,
         channels: O,
-        privateChannelIds: _,
+        privateChannelIds: v,
         listRef: A,
         theme: s,
         version: o
