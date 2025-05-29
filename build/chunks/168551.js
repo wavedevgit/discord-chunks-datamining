@@ -62,9 +62,8 @@ let p = "data-client-themes",
         d = "linear-gradient(".concat(o, "deg, ").concat(r.join(", "), ")"),
         _ = (0, l.wj)(t),
         p = a()(u).set("hsl.s", 1).set("hsl.l", .9),
-        m = a()(c).set("hsl.s", 1).set("hsl.l", .05),
-        g = 30 + .7 * i;
-      return ".".concat(h, " {\n      --custom-theme-background: ").concat(d, ";\n      --theme-bg-overlay-opacity-mix-amount: ").concat((g / 100).toFixed(2), ";\n      ").concat(f.LN, ": ").concat(_ ? (100 - .4 * g).toFixed(1) : (100 - .5 * g).toFixed(1), "%;\n      ").concat(f.Po, ": ").concat(p.css(), ";\n      ").concat(f.ej, ": ").concat((0, f.dw)(p), ";\n      ").concat(f.jX, ": ").concat(m.css(), ";\n      ").concat(f.i4, ": ").concat((0, f.dw)(m), ";\n      --theme-border-color-amount: 15%;\n      ").concat(f.uv, ": ").concat(a()(c).set("hsl.l", ((4 + .16 * g) / 100).toFixed(2)).css(), ";\n      ").concat(f.Xg, ": ").concat(a()(u).set("hsl.l", ((85 - .25 * g) / 100).toFixed(2)).css(), ";\n      ").concat(f.ld, ": ").concat(_ ? 30 : 40, "%\n    }")
+        m = a()(c).set("hsl.s", 1).set("hsl.l", .05);
+      return ".".concat(h, " {\n      --custom-theme-background: ").concat(d, ";\n      --theme-bg-overlay-opacity-mix-amount: ").concat(((30 + .7 * i) / 100).toFixed(2), ";\n      ").concat(f.LN, ": ").concat(_ ? (25 + .35 * i).toFixed(1) : (30 - .2 * i).toFixed(1), "%;\n      ").concat(f.Po, ": ").concat(p.css(), ";\n      ").concat(f.ej, ": ").concat((0, f.dw)(p), ";\n      ").concat(f.jX, ": ").concat(m.css(), ";\n      ").concat(f.i4, ": ").concat((0, f.dw)(m), ";\n      --theme-border-color-amount: 15%;\n      ").concat(f.uv, ": ").concat(a()(u).set("hsl.l", (.05 * i / 100).toFixed(2)).css(), ";\n      ").concat(f.Xg, ": ").concat(a()(c).set("hsl.l", ((100 - .1 * i) / 100).toFixed(2)).css(), ";\n      ").concat(f.ld, ": ").concat(_ ? 30 : 40, "%\n    }")
     }, [n, i, o, e, t])
   },
   E = () => {
