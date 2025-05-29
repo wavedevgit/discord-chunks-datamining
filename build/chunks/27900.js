@@ -10,8 +10,8 @@ var r = n(481060),
   a = n(108843),
   u = n(947440),
   c = n(100527),
-  s = n(299206),
-  d = n(819403),
+  d = n(299206),
+  s = n(819403),
   f = n(777658),
   g = n(858488),
   b = n(933409),
@@ -20,10 +20,10 @@ var r = n(481060),
   _ = n(158508),
   y = n(710631),
   v = n(494439),
-  h = n(991307),
-  p = n(700994),
-  Z = n(332031),
-  m = n(981631),
+  Z = n(991307),
+  h = n(700994),
+  m = n(332031),
+  p = n(981631),
   S = n(388032);
 
 function j(e) {
@@ -65,12 +65,12 @@ function A(e) {
     channelId: o,
     mediaEngineContext: a,
     onSelect: c,
-    onShowProfile: m,
+    onShowProfile: p,
     onWatchStream: j,
     appContext: P
   } = e, A = (0, v.Z)({
     onAction: () => {
-      null == m || m()
+      null == p || p()
     }
   }), I = (0, E.Z)({
     user: t,
@@ -78,7 +78,7 @@ function A(e) {
   }), T = (0, g.Z)({
     user: t,
     appContext: P
-  }), M = (0, Z.Z)(t.id, j), N = (0, p.Z)(t.id), C = (0, h.Z)(t.id, a), D = (0, y.Z)({
+  }), M = (0, m.Z)(t.id, j), N = (0, h.Z)(t.id), C = (0, Z.Z)(t.id, a), D = (0, y.Z)({
     user: t
   }), w = (0, u.Z)(null, t), x = (0, f.Z)({
     user: t,
@@ -89,10 +89,10 @@ function A(e) {
   }), k = (0, _.Z)({
     user: t,
     appContext: P
-  }), R = (0, s.Z)({
+  }), R = (0, d.Z)({
     id: t.id,
     label: S.intl.string(S.t["/AXYnJ"])
-  }), L = (0, d.Z)(t), B = (0, b.Z)(t, n, o), V = t.isNonUserBot();
+  }), L = (0, s.Z)(t), B = (0, b.Z)(t, n, o), V = t.isNonUserBot();
   return (0, l.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: i.Zy,
@@ -126,7 +126,7 @@ function I(e) {
     onShowProfile: a,
     onWatchStream: c,
     appContext: b
-  } = e, m = (0, v.Z)({
+  } = e, p = (0, v.Z)({
     onAction: () => {
       null == a || a()
     }
@@ -136,7 +136,7 @@ function I(e) {
   }), P = (0, g.Z)({
     user: t,
     appContext: b
-  }), A = (0, Z.Z)(t.id, c), I = (0, p.Z)(t.id), T = (0, h.Z)(t.id, n), M = (0, y.Z)({
+  }), A = (0, m.Z)(t.id, c), I = (0, h.Z)(t.id), T = (0, Z.Z)(t.id, n), M = (0, y.Z)({
     user: t
   }), N = (0, u.Z)(null, t), C = (0, f.Z)({
     user: t,
@@ -147,10 +147,10 @@ function I(e) {
   }), w = (0, _.Z)({
     user: t,
     appContext: b
-  }), x = (0, s.Z)({
+  }), x = (0, d.Z)({
     id: t.id,
     label: S.intl.string(S.t["/AXYnJ"])
-  }), U = (0, d.Z)(t), k = t.isNonUserBot();
+  }), U = (0, s.Z)(t), k = t.isNonUserBot();
   return (0, l.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: i.Zy,
@@ -160,7 +160,7 @@ function I(e) {
       children: [(0, l.jsx)(r.kSQ, {
         children: U
       }), (0, l.jsxs)(r.kSQ, {
-        children: [m, j, P, A]
+        children: [p, j, P, A]
       }), (0, l.jsx)(r.kSQ, {
         children: I
       }), (0, l.jsx)(r.kSQ, {
@@ -200,5 +200,5 @@ let T = (0, a.Z)((0, o.Z)(function(e) {
     channelId: n
   }))
 }, {
-  object: m.qAy.CONTEXT_MENU
+  object: p.qAy.CONTEXT_MENU
 }), [c.Z.CONTEXT_MENU, c.Z.USER_OVERLAY_CONTEXT_MENU])

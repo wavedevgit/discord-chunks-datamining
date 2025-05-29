@@ -25,8 +25,8 @@ let h = (0, a.Z)((0, u.Z)(function(e) {
     onSelect: a,
     onInteraction: o,
     context: g
-  } = e, h = t.id, v = n.isNonUserBot(), T = n.id === _.default.getId(), b = (0, c.Z)(n), O = (0, s.Z)(n, u, h), S = (0, E.Y)({
-    isOwnSettings: T,
+  } = e, h = t.id, v = n.isNonUserBot(), b = n.id === _.default.getId(), T = (0, c.Z)(n), O = (0, s.Z)(n, u, h), S = (0, E.Y)({
+    isOwnSettings: b,
     userId: n.id,
     channelId: h,
     guildId: u,
@@ -44,8 +44,8 @@ let h = (0, a.Z)((0, u.Z)(function(e) {
     variant: "fixed",
     children: !v && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
-        children: [b, O]
-      }), S, !T && (0, l.jsx)(i.kSQ, {
+        children: [T, O]
+      }), S, !b && (0, l.jsx)(i.kSQ, {
         children: (0, l.jsxs)(i.sNh, {
           id: "more-options",
           label: A.intl.string(A.t.PdRCRk),
@@ -53,7 +53,7 @@ let h = (0, a.Z)((0, u.Z)(function(e) {
             children: p
           }), y]
         })
-      }), T && (0, l.jsx)(i.kSQ, {
+      }), b && (0, l.jsx)(i.kSQ, {
         children: M
       })]
     })
