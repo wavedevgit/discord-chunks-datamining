@@ -1,6 +1,6 @@
 /** Chunk was on 85831 **/
 t.d(n, {
-  HY: () => o,
+  HY: () => u,
   nv: () => i,
   xv: () => l
 });
@@ -15,14 +15,16 @@ function l(e) {
 
 function i(e) {
   let {
-    children: n
+    siblings: n,
+    index: t,
+    children: l
   } = e;
   return (0, r.jsxs)("span", {
-    children: [n, (0, r.jsx)("br", {})]
+    children: [l, t < n.length - 1 ? (0, r.jsx)("br", {}) : null]
   })
 }
 
-function o() {
+function u() {
   return (0, r.jsx)("p", {})
 }
 t(73800)
