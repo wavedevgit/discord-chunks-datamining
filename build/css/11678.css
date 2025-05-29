@@ -1,6 +1,6 @@
 /**
   Module ID: 11678
-  Original File Name: 9236872bfcf8a9f2
+  Original File Name: a35347951ddc6561
 **/
 .scroller__95bea {
     display: flex;
@@ -124,6 +124,14 @@
     font-size: 14px;
     line-height: 18px;
     padding: 4px
+}
+
+.note_fcb628 textarea::-moz-placeholder {
+    color: var(--text-tertiary)
+}
+
+.note_fcb628 textarea::placeholder {
+    color: var(--text-tertiary)
 }
 
 .note_fcb628 textarea:hover {
@@ -790,4 +798,4 @@
     gap: 8px
 }
 
-/*# sourceMappingURL=9236872bfcf8a9f2.css.map*/
+/*# sourceMappingURL=a35347951ddc6561.css.map*/

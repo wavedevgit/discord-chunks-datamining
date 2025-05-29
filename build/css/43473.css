@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 099d9d00fbde6e83
+  Original File Name: fae3fa961f668934
 **/
 .scroller__95bea {
     display: flex;
@@ -124,6 +124,14 @@
     font-size: 14px;
     line-height: 18px;
     padding: 4px
+}
+
+.note_fcb628 textarea::-moz-placeholder {
+    color: var(--text-tertiary)
+}
+
+.note_fcb628 textarea::placeholder {
+    color: var(--text-tertiary)
 }
 
 .note_fcb628 textarea:hover {
@@ -1292,6 +1300,14 @@
     padding: 4px
 }
 
+.profileNote__9c3be textarea::-moz-placeholder {
+    color: var(--text-tertiary)
+}
+
+.profileNote__9c3be textarea::placeholder {
+    color: var(--text-tertiary)
+}
+
 .profileNote__9c3be textarea:hover {
     border-color: var(--input-border)
 }
@@ -1313,4 +1329,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=099d9d00fbde6e83.css.map*/
+/*# sourceMappingURL=fae3fa961f668934.css.map*/

@@ -1,6 +1,6 @@
 /** Chunk was on 78715 **/
 n.d(t, {
-  j: () => v
+  j: () => _
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -9,45 +9,48 @@ var r = n(255367),
   s = n(481060),
   a = n(605236),
   c = n(243778),
-  u = n(667105),
-  d = n(695346),
-  h = n(819640),
-  p = n(885110),
-  f = n(626135),
-  g = n(316496),
-  m = n(55185),
-  b = n(981631),
-  y = n(921944),
-  O = n(46140);
-let v = e => {
+  u = n(7093),
+  d = n(667105),
+  h = n(695346),
+  p = n(819640),
+  f = n(885110),
+  g = n(626135),
+  m = n(316496),
+  b = n(55185),
+  y = n(981631),
+  O = n(921944),
+  v = n(46140);
+let _ = e => {
   let {
     children: t,
     isForceShowSharingPopout: n,
-    setIsForceShowSharingPopout: v
-  } = e, [_, C] = (0, i.useState)(!1), j = function(e) {
+    setIsForceShowSharingPopout: _
+  } = e, [C, j] = (0, i.useState)(!1), S = function(e) {
     let {
       isForceShowSharingPopout: t
     } = e, {
       isEnabled: n,
       showActivitySharingIndicatorWhenSharing: r
-    } = (0, g.D)("SharingPrivacyPopout"), i = (0, u.Ws)({
-      location: O.dr.CONFLICT_CHECKS
-    }), o = d.G6.useSetting(), s = (0, l.e7)([h.Z], () => h.Z.getLayers().includes(b.S9g.USER_SETTINGS)), a = (0, l.e7)([p.Z], () => p.Z.getStatus());
-    if ((i || !i && t) && !s && n) {
-      if (r && o && a !== b.Skl.INVISIBLE) return t ? m.N.Activity : null;
-      if (!o && a === b.Skl.INVISIBLE) return t ? m.N.ActivityAndStatus : m.N.ActivityAndStatusNux;
-      if (!o) return t ? m.N.Activity : m.N.ActivityNux;
-      if (a === b.Skl.INVISIBLE) return t ? m.N.Status : null
+    } = (0, m.D)("SharingPrivacyPopout"), i = (0, d.Ws)({
+      location: v.dr.CONFLICT_CHECKS
+    }), o = h.G6.useSetting(), s = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(y.S9g.USER_SETTINGS)), a = (0, l.e7)([f.Z], () => f.Z.getStatus()), {
+      isOpen: c
+    } = (0, u.Z)();
+    if ((i || !i && t) && !s && !c && n) {
+      if (r && o && a !== y.Skl.INVISIBLE) return t ? b.N.Activity : null;
+      if (!o && a === y.Skl.INVISIBLE) return t ? b.N.ActivityAndStatus : b.N.ActivityAndStatusNux;
+      if (!o) return t ? b.N.Activity : b.N.ActivityNux;
+      if (a === y.Skl.INVISIBLE) return t ? b.N.Status : b.N.StatusNux
     }
     return null
   }({
     isForceShowSharingPopout: n
-  }), S = (0, i.useRef)(null);
+  }), E = (0, i.useRef)(null);
   return ((0, i.useEffect)(() => {
-    n && f.default.track(b.rMx.OPEN_POPOUT, {
+    n && g.default.track(y.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
-  }, [n]), null != j || _) ? (0, r.jsx)(c.ZP, {
+  }, [n]), null != S || C) ? (0, r.jsx)(c.ZP, {
     contentTypes: n ? [] : [o.z.SHARE_ACTIVITY_COACHMARK_V2],
     children: e => {
       let {
@@ -56,11 +59,11 @@ let v = e => {
       if (i === o.z.SHARE_ACTIVITY_COACHMARK_V2 || n) {
         let e = () => {
           (0, a.EW)(o.z.SHARE_ACTIVITY_COACHMARK_V2, {
-            dismissAction: y.L.USER_DISMISS
-          }), v(!1), C(!1)
+            dismissAction: O.L.USER_DISMISS
+          }), _(!1), j(!1)
         };
         return (0, r.jsx)(s.yRy, {
-          targetElementRef: S,
+          targetElementRef: E,
           shouldShow: !0,
           spacing: 10,
           position: "top",
@@ -70,14 +73,14 @@ let v = e => {
             let {
               closePopout: t
             } = e;
-            return (0, r.jsx)(m.I, {
+            return (0, r.jsx)(b.I, {
               closePopout: t,
-              onOpen: () => C(!0),
-              popoutState: j
+              onOpen: () => j(!0),
+              popoutState: S
             })
           },
           children: () => (0, r.jsx)(s.P3F, {
-            innerRef: S,
+            innerRef: E,
             onClick: e,
             children: t
           })
