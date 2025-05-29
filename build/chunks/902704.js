@@ -29,5 +29,5 @@ function a(e, t) {
     logCallback: n,
     shouldWarnLargeObjects: i
   } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : r;
-  return null != t && e.length === t.length && !e.some((e, n) => t[n] !== e)
+  return null != t && e.length === t.length && e.every((e, n) => t[n] === e)
 }

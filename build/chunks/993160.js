@@ -27,10 +27,10 @@ function m(e) {
   } = (0, c.ZP)(), {
     gameFriends: x,
     hasOutgoingPendingGameFriends: h,
-    hasIncomingPendingGameFriends: g
+    hasIncomingPendingGameFriends: j
   } = (0, f.H)({
     userId: t.id
-  }), j = x.length > 0 || h || g;
+  }), g = x.length > 0 || h || j;
   return b === p.OGo.BLOCKED ? null : t.id === n.id ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(l.Z, {
       user: t,
@@ -76,7 +76,7 @@ function m(e) {
       guildId: m,
       themeColor: "secondary"
     })]
-  }) : b === p.OGo.NONE && j ? (0, o.jsxs)(o.Fragment, {
+  }) : b === p.OGo.NONE && g ? (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(a.Z, {
       type: "text",
       userId: t.id,
@@ -91,7 +91,7 @@ function m(e) {
       tooltipPosition: "top",
       tooltipAlign: "center",
       shouldShowTooltip: !0,
-      hasIncomingPendingGameFriends: g,
+      hasIncomingPendingGameFriends: j,
       hasOutgoingPendingGameFriends: h
     }), (0, o.jsx)(s.Z, {
       type: "icon",

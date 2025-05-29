@@ -841,6 +841,8 @@ class et extends(i = o.PureComponent) {
           width: t,
           height: e
         },
+        onKeyDown: this.handleKeyDown,
+        tabIndex: 0,
         children: [this.renderMetadata(), this.renderVideo(), (0, a.jsx)("div", {
           className: k.playCenter,
           children: (0, a.jsx)(R.Z, {
@@ -860,6 +862,7 @@ class et extends(i = o.PureComponent) {
       onMouseLeave: this.handleMouseLeave,
       onMouseMove: _ ? this.handleMouseMove : void 0,
       onKeyDown: this.handleKeyDown,
+      tabIndex: 0,
       style: this.getMediaStyle(),
       children: [this.renderMetadata(), t === Y.AUDIO ? this.renderAudio() : this.renderVideo(), this.renderControls(), t === Y.VIDEO ? this.renderPlayPausePop() : null, null != u ? (0, a.jsx)("div", {
         className: l()({
@@ -1052,7 +1055,7 @@ class et extends(i = o.PureComponent) {
       else if (e.which !== D.yXg.ARROW_LEFT || null == t || n)
         if (e.which !== D.yXg.ARROW_RIGHT || null == t || n) {
           if (e.which >= D.yXg.DIGIT_0 && e.which <= D.yXg.DIGIT_9 && null != t) {
-            e.preventDefault();
+            e.preventDefault(), e.stopPropagation();
             let n = (e.which - D.yXg.DIGIT_0) / 10;
             t.currentTime = t.duration * n, this.setPlay(!0)
           }

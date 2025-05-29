@@ -27,7 +27,8 @@ let E = {
       messageId: i,
       jumpType: a,
       preserveDrawerState: o,
-      source: s
+      source: s,
+      isInitialSetup: l
     } = e;
     r.Z.dispatch({
       type: "CHANNEL_SELECT",
@@ -36,7 +37,8 @@ let E = {
       messageId: i,
       jumpType: a,
       preserveDrawerState: o,
-      source: s
+      source: s,
+      isInitialSetup: l
     })
   },
   selectPrivateChannel(e) {

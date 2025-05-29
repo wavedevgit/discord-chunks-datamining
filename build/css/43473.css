@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 11a334e6c6b07e1c
+  Original File Name: 099d9d00fbde6e83
 **/
 .scroller__95bea {
     display: flex;
@@ -1253,13 +1253,6 @@
     padding: 12px
 }
 
-.profileUsernameTag__9c3be {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px
-}
-
 .profileButtons__9c3be {
     align-items: center;
     display: flex;
@@ -1320,4 +1313,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=11a334e6c6b07e1c.css.map*/
+/*# sourceMappingURL=099d9d00fbde6e83.css.map*/

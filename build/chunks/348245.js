@@ -123,32 +123,34 @@ function L(e) {
 }
 
 function x() {
-  let e = O.Z.getChannelId();
-  if (null != e) {
-    let n = E.Z.getChannel(e);
-    if (null != n) {
-      var t;
-      let e = (0, i.LX)(location.pathname, {
-        path: T.Z5c.CHANNEL(":guild", ":channel", ":message"),
-        exact: !0
-      });
-      R({
-        guildId: n.getGuildId(),
-        channelId: n.id,
-        messageId: null == e || null == (t = e.params) ? void 0 : t.message
-      }), G(n.getGuildId(), n.id)
-    }
-  }
+  var e;
+  let t = O.Z.getChannelId();
+  if (null == t) return;
+  let n = E.Z.getChannel(t);
+  if (null == n) return;
+  let r = (0, i.LX)(location.pathname, {
+    path: T.Z5c.CHANNEL(":guild", ":channel", ":message"),
+    exact: !0
+  });
+  R({
+    guildId: n.getGuildId(),
+    channelId: n.id,
+    messageId: null == r || null == (e = r.params) ? void 0 : e.message
+  }), G(n.getGuildId(), n.id)
 }
 
 function k() {
   let e = O.Z.getChannelId();
   if (null == e) return;
   let t = E.Z.getChannel(e);
-  null != t && ((0, m.Qm)(t.type) && R({
+  if (null == t) return;
+  if (!(0, m.Qm)(t.type)) return void G(t.getGuildId(), t.id);
+  let n = f.Z.getOrCreate(e);
+  if (n.ready && n.hasFetched) return void G(t.getGuildId(), t.id);
+  R({
     guildId: t.getGuildId(),
     channelId: t.id
-  }), G(t.getGuildId(), t.id))
+  }), G(t.getGuildId(), t.id)
 }
 
 function M(e) {
@@ -156,8 +158,10 @@ function M(e) {
     guildId: t,
     channelId: n,
     messageId: r,
-    jumpType: i
+    jumpType: i,
+    isInitialSetup: a
   } = e;
+  if (a) return !1;
   R({
     guildId: t,
     channelId: n,

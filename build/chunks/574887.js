@@ -20,9 +20,9 @@ var r = n(120356),
   y = n(981631),
   x = n(856651),
   h = n(388032),
-  g = n(738873);
+  j = n(738873);
 
-function j(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       o = Object.keys(n);
@@ -63,18 +63,18 @@ function I(e) {
     userId: c
   } = e, a = null != (t = n.metadata) ? t : {}, b = (0, f.FI)(a[x.PC.CREATED_AT], i), I = s.Z.get((0, u.rR)(n.type));
   return (0, o.jsxs)("div", {
-    className: g.connection,
+    className: j.connection,
     children: [(0, o.jsx)(l.ua7, {
       text: null == I ? void 0 : I.name,
-      children: e => (0, o.jsx)("img", O(j({}, e), {
+      children: e => (0, o.jsx)("img", O(g({}, e), {
         alt: h.intl.formatToPlainString(h.t.rtm15O, {
           name: null == I ? void 0 : I.name
         }),
-        className: g.platformIcon,
+        className: j.platformIcon,
         src: (0, l.wjy)(r) ? null == I ? void 0 : I.icon.darkSVG : null == I ? void 0 : I.icon.lightSVG
       }))
     }), (0, o.jsxs)("div", {
-      className: g.connectionInfo,
+      className: j.connectionInfo,
       children: [(0, o.jsxs)("div", {
         children: [(() => {
           var e;
@@ -82,14 +82,14 @@ function I(e) {
           return null == t ? (0, o.jsx)(l.ua7, {
             overflowOnly: !0,
             text: n.name,
-            children: e => (0, o.jsx)(l.Text, O(j({}, e), {
+            children: e => (0, o.jsx)(l.Text, O(g({}, e), {
               variant: "text-sm/normal",
-              className: g.accountNameText,
+              className: j.accountNameText,
               children: n.name
             }))
           }) : (0, o.jsx)(l.eee, {
             href: t,
-            className: g.platformUrlAnchor,
+            className: j.platformUrlAnchor,
             useDefaultUnderlineStyles: !1,
             onClick: e => {
               (0, d.yw)(y.rMx.CONNECTED_ACCOUNT_VIEWED, {
@@ -101,17 +101,17 @@ function I(e) {
               }, e)
             },
             children: (0, o.jsxs)("div", {
-              className: g.accountName,
+              className: j.accountName,
               children: [(0, o.jsx)(l.ua7, {
                 overflowOnly: !0,
                 text: n.name,
-                children: e => (0, o.jsx)(l.Text, O(j({}, e), {
+                children: e => (0, o.jsx)(l.Text, O(g({}, e), {
                   variant: "text-sm/normal",
-                  className: g.accountNameText,
+                  className: j.accountNameText,
                   children: n.name
                 }))
               }), (0, o.jsx)(m.Z, {
-                className: g.platformUrlIcon,
+                className: j.platformUrlIcon,
                 direction: m.Z.Directions.RIGHT
               })]
             })
@@ -123,7 +123,7 @@ function I(e) {
           })
         })]
       }), (0, o.jsx)("div", {
-        className: g.metadata,
+        className: j.metadata,
         children: n.type === y.ABu.REDDIT ? (0, p.oP)(a) : n.type === y.ABu.STEAM ? (0, p.Dq)(a) : n.type === y.ABu.BLUESKY || n.type === y.ABu.MASTODON || n.type === y.ABu.TWITTER ? (0, p.rJ)(a) : n.type === y.ABu.PAYPAL ? (0, p.li)(a) : n.type === y.ABu.EBAY ? (0, p.ul)(a) : n.type === y.ABu.TIKTOK ? (0, p.hf)(a) : null
       })]
     })]
@@ -137,7 +137,7 @@ function v(e) {
     className: r
   } = e, l = (0, a.ZP)(), s = (0, c.e7)([b.default], () => b.default.locale);
   return 0 === t.length ? null : (0, o.jsx)("div", {
-    className: i()(g.container, r),
+    className: i()(j.container, r),
     children: t.map(e => (0, o.jsx)(I, {
       account: e,
       userId: n,

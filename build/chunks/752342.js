@@ -128,6 +128,7 @@ function N(e) {
               pronouns: null == G ? void 0 : G.pronouns,
               nicknameVariant: "heading-xl/bold",
               nicknameIcons: (0, l.jsx)(g.Z, {
+                size: "sm",
                 userId: n.id
               }),
               tags: (0, l.jsx)(f.Z, {

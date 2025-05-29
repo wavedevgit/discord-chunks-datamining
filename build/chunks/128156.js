@@ -20,8 +20,8 @@ var r = n(442837),
   y = n(864141),
   x = n(264481),
   h = n(693408),
-  g = n(228168),
-  j = n(981631),
+  j = n(228168),
+  g = n(981631),
   O = n(388032),
   I = n(514656);
 
@@ -30,8 +30,8 @@ function v(e) {
     user: t,
     currentUser: n,
     displayProfile: v,
-    guildId: N,
-    channelId: P,
+    guildId: P,
+    channelId: N,
     subsection: A,
     onClose: T
   } = e, {
@@ -49,12 +49,12 @@ function v(e) {
     voiceActivity: D
   } = (0, p.Z)({
     userId: t.id,
-    guildId: N
-  }), U = (0, r.e7)([l.Z], () => l.Z.isFetchingUserOutbox(t.id)), k = t.id === n.id, L = (0, r.e7)([s.Z, a.Z], () => {
-    let e = k ? s.Z.getStatus() : a.Z.getStatus(t.id);
+    guildId: P
+  }), k = (0, r.e7)([l.Z], () => l.Z.isFetchingUserOutbox(t.id)), U = t.id === n.id, L = (0, r.e7)([s.Z, a.Z], () => {
+    let e = U ? s.Z.getStatus() : a.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
   }), M = w.length > 0 || null != E, R = Z && null == E && null == D && null != B, G = !L && (M || R), V = S.length > 0;
-  return G || V || !U ? G || V || U ? (0, o.jsxs)(i.Ttm, {
+  return G || V || !k ? G || V || k ? (0, o.jsxs)(i.Ttm, {
     className: I.scroller,
     fade: !0,
     children: [G ? (0, o.jsxs)(h.Z, {
@@ -85,13 +85,13 @@ function v(e) {
       })]
     }) : null, V ? (0, o.jsx)(h.Z, {
       heading: O.intl.string(O.t.jzgEoK),
-      subheading: k ? O.intl.format(O.t["4bk9Ag"], {
+      subheading: U ? O.intl.format(O.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, o.jsx)(i.eee, {
-          href: d.Z.getArticleURL(j.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : void 0,
-      scrollIntoView: A === g.Tb.RECENT_ACTIVITY,
+      scrollIntoView: A === j.Tb.RECENT_ACTIVITY,
       children: S.map(e => (0, o.jsx)(b.Z, {
         location: "UserProfileModalV2Activity",
         user: t,
@@ -101,12 +101,12 @@ function v(e) {
         onClose: T
       }, e.id))
     }) : null]
-  }) : k ? (0, o.jsx)(x.Uf, {
+  }) : U ? (0, o.jsx)(x.Uf, {
     onClose: T
   }) : (0, o.jsx)(x.P9, {
     user: t,
-    guildId: N,
-    channelId: P,
+    guildId: P,
+    channelId: N,
     onClose: T
   }) : (0, o.jsx)("div", {
     className: I.spinner,

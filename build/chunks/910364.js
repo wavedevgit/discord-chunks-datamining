@@ -83,8 +83,8 @@ function B(e) {
     transitionState: q,
     customStatusPrompt: H,
     openedAt: K,
-    onClose: Q,
-    showGuildProfile: z = !0,
+    onClose: z,
+    showGuildProfile: Q = !0,
     sourceAnalyticsLocations: J = []
   } = e, {
     analyticsLocations: X
@@ -96,13 +96,13 @@ function B(e) {
     channelId: k,
     messageId: V,
     roleId: F,
-    showGuildProfile: z
+    showGuildProfile: Q
   }), ee = (0, g.$m)(), en = (0, a.q_F)({
     opacity: +(null != ee.interactionType),
     config: {
       duration: 150
     }
-  }), et = (0, x.ZP)(n.id, z ? B : void 0), eo = (0, x.ZP)(n.id, B), ei = (0, r.e7)([m.Z], () => m.Z.getRelationshipType(n.id)), ec = n.id === t.id, er = (0, f.p)({
+  }), et = (0, x.ZP)(n.id, Q ? B : void 0), eo = (0, x.ZP)(n.id, B), ei = (0, r.e7)([m.Z], () => m.Z.getRelationshipType(n.id)), ec = n.id === t.id, er = (0, f.p)({
     location: "UserProfileModal"
   }), {
     viewMainProfileEnabled: ea
@@ -140,7 +140,7 @@ function B(e) {
                 user: n,
                 guildId: B,
                 channelId: k,
-                onClose: Q
+                onClose: z
               }), (0, o.jsx)(N.Z, {
                 shouldShowTooltip: null === ee.interactionType,
                 themeType: M.lY.MODAL,
@@ -156,7 +156,7 @@ function B(e) {
                     displayName: b.ZP.getName(void 0, void 0, n)
                   }),
                   action: () => {
-                    Q(), (0, j.openUserProfileModal)(G(R({}, $), {
+                    z(), (0, j.openUserProfileModal)(G(R({}, $), {
                       showGuildProfile: !1,
                       sourceAnalyticsLocations: J
                     })), (0, h.pQ)(R({
@@ -171,7 +171,7 @@ function B(e) {
                     displayName: b.ZP.getName(B, k, n)
                   }),
                   action: () => {
-                    Q(), (0, j.openUserProfileModal)(G(R({}, $), {
+                    z(), (0, j.openUserProfileModal)(G(R({}, $), {
                       showGuildProfile: !0,
                       sourceAnalyticsLocations: J
                     })), (0, h.pQ)(R({
@@ -188,7 +188,7 @@ function B(e) {
                 themeType: M.lY.MODAL
               }), (0, o.jsx)(Z.Z, {
                 userId: n.id,
-                onClose: Q,
+                onClose: z,
                 className: L.toast
               }), null != ee.interactionType && (0, o.jsx)(c.animated.div, {
                 style: en,
@@ -217,7 +217,7 @@ function B(e) {
                     currentUser: t,
                     guildId: B,
                     relationshipType: ei,
-                    onClose: Q
+                    onClose: z
                   })
                 })]
               })]
@@ -229,7 +229,7 @@ function B(e) {
               displayProfile: et,
               initialSection: W,
               initialSubsection: Y,
-              onClose: Q
+              onClose: z
             })]
           }), (null == et ? void 0 : et.profileEffectId) != null && (0, o.jsx)(_.Z, {
             profileEffectId: null == et ? void 0 : et.profileEffectId,
