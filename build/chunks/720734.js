@@ -1065,7 +1065,7 @@ function tb(e) {
               children: (e, t) => (0, i.jsx)(ew.v, {
                 targetElementRef: T,
                 onCTA: () => W(!0),
-                canBeShown: F && Z && !e && !s,
+                canBeShown: F && Z && !A && !e && !s,
                 children: (e, s) => (0, i.jsx)(e5.Z, tl({
                   ref: T,
                   plated: null != O,
