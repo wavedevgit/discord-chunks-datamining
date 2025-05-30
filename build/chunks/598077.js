@@ -201,6 +201,7 @@ class b extends i.Z {
       hasFlag: {
         writable: !1,
         configurable: !1,
+        enumerable: !1,
         value: e => {
           if (e <= 0x40000000) return ((this.flags | this.publicFlags) & e) === e;
           let t = r.vB(this.flags),
@@ -212,16 +213,19 @@ class b extends i.Z {
       isStaff: {
         writable: !1,
         configurable: !1,
+        enumerable: !1,
         value: () => this.hasFlag(f.xW$.STAFF)
       },
       isStaffPersonal: {
         writable: !1,
         configurable: !1,
+        enumerable: !1,
         value: () => !this.hasFlag(f.xW$.STAFF) && null != this.personalConnectionId
       },
       hasAnyStaffLevel: {
         writable: !1,
         configurable: !1,
+        enumerable: !1,
         value: () => this.hasFlag(f.xW$.STAFF) || this.hasFlag(f.xW$.COLLABORATOR) || this.hasFlag(f.xW$.RESTRICTED_COLLABORATOR)
       }
     }), (null == (t = this.globalName) ? void 0 : t.length) === 0 && (this.globalName = null)

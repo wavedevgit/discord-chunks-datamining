@@ -5,15 +5,15 @@ r.d(t, {
 var n = r(255367),
   a = r(73800),
   s = r(481060),
-  i = r(327802),
-  l = r(372129),
+  l = r(327802),
+  i = r(372129),
   o = r(598117),
   c = r(746622),
   u = r(162337);
 let d = e => {
     let {
       setUserImage: t
-    } = e, [r, l] = a.useState(null);
+    } = e, [r, i] = a.useState(null);
     return (0, n.jsxs)("div", {
       className: u.emptyState,
       children: [(0, n.jsxs)("header", {
@@ -38,9 +38,9 @@ let d = e => {
           })]
         }), null !== r && (0, n.jsx)(c.H, {
           error: o.ze.IMAGE_LOAD
-        }), (0, n.jsx)(i.X, {
+        }), (0, n.jsx)(l.X, {
           onSuccess: t,
-          onError: l
+          onError: i
         })]
       })]
     })
@@ -54,7 +54,7 @@ let d = e => {
         within: !0
       },
       tag: "a",
-      children: ["Select an image", (0, n.jsx)(l.ZP, {
+      children: ["Select an image", (0, n.jsx)(i.ZP, {
         tabIndex: 0,
         onChange: (e, r, n) => (t({
           data: e,
