@@ -59,23 +59,22 @@ function E(e) {
   let {
     analyticsName: t,
     messages: n,
-    hasMore: l,
-    loading: s,
-    loadMore: v,
-    renderEmptyState: E,
-    renderMessageGroup: x,
-    setInboxReadState: P,
-    scrollerClassName: I,
-    className: w,
-    listName: N,
-    ignoreGrouping: Z = !1
-  } = e, T = i.useRef(null), R = (0, d.Z)(N, T), {
-    notificationCenterVariant: A
+    loading: l,
+    loadMore: s,
+    renderEmptyState: v,
+    renderMessageGroup: E,
+    setInboxReadState: x,
+    scrollerClassName: P,
+    className: I,
+    listName: w,
+    ignoreGrouping: N = !1
+  } = e, Z = i.useRef(null), T = (0, d.Z)(w, Z), {
+    notificationCenterVariant: R
   } = g.L.useExperiment({
     location: "NotificationsInboxSidebarList"
   }), {
-    messageGroupOpenStates: D,
-    toggleOpenState: L
+    messageGroupOpenStates: A,
+    toggleOpenState: D
   } = (0, m.Z)();
   i.useEffect(() => {
     p.default.track(O.rMx.OPEN_POPOUT, {
@@ -84,14 +83,14 @@ function E(e) {
   }, [t]), i.useEffect(() => {
     function e() {
       var e;
-      null == (e = T.current) || e.scrollPageUp({
+      null == (e = Z.current) || e.scrollPageUp({
         animate: !0
       })
     }
 
     function t() {
       var e;
-      null == (e = T.current) || e.scrollPageDown({
+      null == (e = Z.current) || e.scrollPageDown({
         animate: !0
       })
     }
@@ -99,12 +98,13 @@ function E(e) {
       f.S.unsubscribe(O.CkL.SCROLL_PAGE_DOWN, t), f.S.unsubscribe(O.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
-  let k = i.useCallback(() => {
+  let L = i.useCallback(() => {
       var e;
-      let t = null == (e = T.current) ? void 0 : e.getScrollerState();
-      null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && l && !s && (null == v || v())
-    }, [l, v, s]),
-    M = i.useMemo(() => {
+      let t = null == (e = Z.current) ? void 0 : e.getScrollerState(),
+        n = (0, b.s)(A);
+      null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && (null == s || s(n))
+    }, [s, A]),
+    k = i.useMemo(() => {
       let e = {
           [y.dm.UNREAD]: {},
           [y.dm.TODAY]: {},
@@ -126,43 +126,41 @@ function E(e) {
         })
       })), t
     }, [n]),
-    U = i.useMemo(() => {
+    M = i.useMemo(() => {
       let e = [];
       return null == n ? e.push((0, r.jsx)("div", {
         className: o()(_.emptyPlaceholder, _.loadingPlaceholder),
         children: (0, r.jsx)(u.$jN, {})
       }, "spinner")) : 0 === n.length ? e.push((0, r.jsx)(i.Fragment, {
-        children: E(h.Z.theme)
-      }, "empty-state")) : Z ? e.push(...n.map(e => x([e], "sidebar" === A))) : a().each(S, t => {
-        0 !== M[t].length && (e.push((0, r.jsx)(j, {
+        children: v(h.Z.theme)
+      }, "empty-state")) : N ? e.push(...n.map(e => E([e], "sidebar" === R))) : a().each(S, t => {
+        0 !== k[t].length && (e.push((0, r.jsx)(j, {
           group: t,
-          isOpen: D[t],
-          toggleOpenedState: () => L(t)
-        })), D[t] && e.push(...M[t].map(e => x(e, "sidebar" === A))))
+          isOpen: A[t],
+          toggleOpenedState: () => D(t)
+        })), A[t] && e.push(...k[t].map(e => E(e, "sidebar" === R))))
       }), e.push((0, r.jsx)(u.LZC, {
         size: 8
       }, "spacer")), e
-    }, [n, E, D, L, M, Z, x, A]);
+    }, [n, v, A, D, k, N, E, R]);
   i.useEffect(() => {
-    0 === M.UNREAD.length ? P(y.xM.READ) : P(y.xM.UNREAD)
-  }, [M, P]);
-  let G = null;
-  null != n && n.length > 0 && null != v && s && (G = (0, r.jsx)("div", {
+    0 === k.UNREAD.length ? x(y.xM.READ) : x(y.xM.UNREAD)
+  }, [k, x]);
+  let U = null;
+  return null != n && n.length > 0 && null != s && l && (U = (0, r.jsx)("div", {
     className: _.loadingMore,
     children: (0, r.jsx)(u.$jN, {})
-  }, "loading-more-after"));
-  let B = null != v && l;
-  return (0, r.jsx)("div", {
-    className: o()(w, _.messagesPopoutWrap),
+  }, "loading-more-after")), (0, r.jsx)("div", {
+    className: o()(I, _.messagesPopoutWrap),
     onClick: C,
     onDoubleClick: C,
     "aria-label": e["aria-label"],
     children: (0, r.jsxs)(u.Den, {
-      className: o()(_.messagesPopout, I),
-      onScroll: B ? k : void 0,
-      ref: T,
+      className: o()(_.messagesPopout, P),
+      onScroll: L,
+      ref: Z,
       children: [(0, r.jsx)(c.bG, {
-        navigator: R,
+        navigator: T,
         children: (0, r.jsx)(c.SJ, {
           children: e => {
             var t, n, {
@@ -203,7 +201,7 @@ function E(e) {
             }({
               ref: i
             }, l), n = n = {
-              children: U
+              children: M
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -216,7 +214,7 @@ function E(e) {
             }), t))
           }
         })
-      }), G]
+      }), U]
     })
   })
 }

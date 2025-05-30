@@ -1,6 +1,7 @@
 /** Chunk was on 78715 **/
 n.d(t, {
-  Q: () => c
+  Q: () => c,
+  s: () => u
 });
 var r = n(995638),
   i = n(592125),
@@ -25,4 +26,9 @@ function c(e) {
     }(e)) return a.dm.UNREAD;
   let t = (0, r.default)(new Date, e.timestamp);
   return 0 === t ? a.dm.TODAY : 1 === t ? a.dm.YESTERDAY : a.dm.OLDER
+}
+
+function u(e) {
+  let t = new Date(new Date().setHours(0, 0, 0, 0));
+  return e.OLDER ? null : e.YESTERDAY ? s.default.fromTimestamp(new Date(t.setDate(t.getDate() - 1)).getTime()) : e.TODAY ? s.default.fromTimestamp(t.getTime()) : null
 }
