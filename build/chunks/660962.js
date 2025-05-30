@@ -319,43 +319,49 @@ function es(e) {
   let {
     role: a,
     guildId: o,
-    disableInteraction: c
-  } = e, u = el(H.intl.string(H.t.Mi9KbW)), d = {
-    nick: u.author.username,
+    selectedStyle: c,
+    disableInteraction: u
+  } = e, d = el(H.intl.string(H.t.Mi9KbW)), p = {
+    nick: d.author.username,
     colorStrings: {
       primaryColor: null == (t = a.colorStrings) ? void 0 : t.primaryColor,
       secondaryColor: null == (n = a.colorStrings) ? void 0 : n.secondaryColor,
       tertiaryColor: null == (i = a.colorStrings) ? void 0 : i.tertiaryColor
     },
     colorString: null != (l = a.colorString) ? l : void 0
-  }, p = {
+  }, f = {
     src: K,
     name: a.name
-  }, f = {
+  }, h = {
     src: X,
     name: a.name
-  }, h = (0, O.oC)(o, a), x = (0, _.Q3)("RolePreview") ? [F.BRd.LIGHT, F.BRd.DARK, F.BRd.DARKER, F.BRd.MIDNIGHT] : [F.BRd.LIGHT, F.BRd.DARK];
+  }, x = (0, O.oC)(o, a), b = (0, _.Q3)("RolePreview") ? [F.BRd.DARK, F.BRd.DARKER, F.BRd.MIDNIGHT, F.BRd.LIGHT] : [F.BRd.DARK, F.BRd.LIGHT];
   return (0, r.jsx)(g.Rny, {
     children: (0, r.jsx)("div", {
       className: s()(V.previewContainer, {
-        [V.disableInteraction]: c
+        [V.disableInteraction]: u
       }),
       "aria-hidden": !0,
-      children: x.map(e => (0, r.jsx)(g.f6W, {
+      children: b.map(e => (0, r.jsx)(g.f6W, {
         theme: e,
         disableAdaptiveTheme: !0,
-        children: t => (0, r.jsx)("div", {
-          className: t,
-          children: (0, r.jsx)("div", {
+        children: t => (0, r.jsxs)("div", {
+          className: s()(t, V.messageWrapper),
+          children: [(0, r.jsx)("div", {
             className: V.messageContainer,
             children: (0, r.jsx)(N.Z, {
-              author: d,
-              message: u,
-              roleIcon: null != h ? h : (0, m.ap)(e) ? f : p,
+              author: p,
+              message: d,
+              roleIcon: null != x ? x : (0, m.ap)(e) ? h : f,
               previewGuildId: o,
               isGroupStart: !0
             })
-          })
+          }), e === F.BRd.LIGHT && c !== k.g.SOLID && (0, r.jsx)(g.Text, {
+            variant: "text-xs/medium",
+            color: "text-secondary",
+            className: V.lightThemeNotice,
+            children: H.intl.string(H.t.nxwm3N)
+          })]
         })
       }, e))
     })
@@ -453,6 +459,7 @@ function eo(e) {
       }), (0, r.jsx)(es, {
         role: n,
         guildId: t.id,
+        selectedStyle: c,
         disableInteraction: !a
       }), (0, r.jsx)(g.$i$, {
         className: V.divider
