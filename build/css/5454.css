@@ -1,9 +1,17 @@
 /**
   Module ID: 5454
-  Original File Name: 6d645a2f6b81b085
+  Original File Name: ade1337b2bb7cc88
 **/
 .spacing__7d739 {
-    margin-bottom: 20px
+    margin-bottom: var(--space-16)
 }
 
-/*# sourceMappingURL=6d645a2f6b81b085.css.map*/
+.title__7d739 {
+    text-transform: none
+}
+
+.closeButton__7d739 {
+    justify-content: flex-end
+}
+
+/*# sourceMappingURL=ade1337b2bb7cc88.css.map*/

@@ -195,7 +195,7 @@ function N(e, t, N, U, A) {
     action: () => (0, a.ZDy)(async () => {
       let {
         default: i
-      } = await n.e("5454").then(n.bind(n, 854360));
+      } = await n.e("36760").then(n.bind(n, 854360));
       return n => (0, l.jsx)(i, T(I({}, n), {
         location: U,
         guildId: t,
