@@ -86,9 +86,14 @@ function s(e, t) {
 
   function _(e) {
     let {
-      messages: n
+      pins: n
     } = e;
-    null == r || r(), n.forEach(e => t(e))
+    null == r || r(), n.forEach(e => {
+      let {
+        message: n
+      } = e;
+      return t(n)
+    })
   }
 
   function p(e) {

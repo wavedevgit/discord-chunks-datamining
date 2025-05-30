@@ -1,6 +1,6 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  ZP: () => j,
+  ZP: () => S,
   eH: () => P,
   wY: () => _
 });
@@ -25,7 +25,7 @@ var r = n(442837),
   y = n(388032),
   v = n(877021);
 
-function j(e) {
+function S(e) {
   let t = (0, r.e7)([b.Z], () => b.Z.getGuildId()),
     n = (0, p.Q_)(t);
   return (0, O.a4)(e) ? (0, i.jsx)(a.sNh, {
@@ -37,7 +37,7 @@ function j(e) {
   }) : null
 }
 
-function S() {
+function j() {
   return (0, i.jsx)(d.ZP, {
     contentTypes: [l.z.REPORT_TO_MOD_NEW_TAG],
     children: e => {
@@ -70,7 +70,7 @@ function _(e) {
         dismissAction: E.L.USER_DISMISS
       }), (0, f.tV)(e)
     },
-    icon: (0, i.jsx)(S, {}),
+    icon: (0, i.jsx)(j, {}),
     disabled: t
   }) : null
 }

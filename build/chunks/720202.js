@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => v
 }), n(388685);
 var r, i = n(392711),
   a = n.n(i),
@@ -69,12 +69,25 @@ function E(e) {
 
 function b(e) {
   let {
+    pins: t,
+    channelId: n
+  } = e, r = c.Z.getChannel(n);
+  return null != r && null != r.guild_id && g(r.guild_id, t.map(e => {
+    let {
+      message: t
+    } = e;
+    return t
+  }))
+}
+
+function y(e) {
+  let {
     guildId: t,
     messages: n
   } = e;
   return null != t && g(t, a().flatten(n))
 }
-class y extends(r = o.ZP.Store) {
+class O extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(c.Z, u.ZP)
   }
@@ -82,17 +95,17 @@ class y extends(r = o.ZP.Store) {
     m(e, t)
   }
 }
-d(y, "displayName", "GuildMemberRequesterStore");
-let O = new y(s.Z, {
+d(O, "displayName", "GuildMemberRequesterStore");
+let v = new O(s.Z, {
   CONNECTION_CLOSED: _,
   CONNECTION_OPEN: _,
   CONNECTION_RESUMED: h,
   GUILD_MEMBERS_CHUNK_BATCH: p,
-  SEARCH_FINISH: b,
-  MOD_VIEW_SEARCH_FINISH: b,
+  SEARCH_FINISH: y,
+  MOD_VIEW_SEARCH_FINISH: y,
   LOCAL_MESSAGES_LOADED: E,
   LOAD_MESSAGES_SUCCESS: E,
   LOAD_MESSAGES_AROUND_SUCCESS: E,
-  LOAD_PINNED_MESSAGES_SUCCESS: E,
-  LOAD_RECENT_MENTIONS_SUCCESS: E
+  LOAD_RECENT_MENTIONS_SUCCESS: E,
+  LOAD_PINNED_MESSAGES_SUCCESS: b
 })

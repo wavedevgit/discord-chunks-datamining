@@ -230,9 +230,14 @@ let A = new P(u.Z, {
     },
     LOAD_PINNED_MESSAGES_SUCCESS: function(e) {
       let {
-        messages: t
+        pins: t
       } = e;
-      t.forEach(e => C(e))
+      t.forEach(e => {
+        let {
+          message: t
+        } = e;
+        return C(t)
+      })
     },
     SEARCH_FINISH: function(e) {
       e.messages.forEach(e => {

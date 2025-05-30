@@ -1,6 +1,6 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  Z: () => N
+  Z: () => I
 }), n(997841), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -22,7 +22,7 @@ var i = n(255367),
   y = n(388032),
   v = n(739788);
 
-function j(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,14 +31,14 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      j(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -94,7 +94,7 @@ class P extends r.PureComponent {
       children: y.intl.string(y.t.x0jzo6)
     })), (0, i.jsx)(f.Z.Provider, {
       value: l.guild_id,
-      children: (0, i.jsxs)(o.ConfirmModal, _(S({
+      children: (0, i.jsxs)(o.ConfirmModal, _(j({
         header: u ? y.intl.string(y.t.aIz1oa) : y.intl.string(y.t.MWMcg4),
         confirmText: y.intl.string(y.t.oyYWHB),
         cancelText: y.intl.string(y.t["ETE/oK"]),
@@ -116,9 +116,9 @@ class P extends r.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), j(this, "state", {
+    super(...e), S(this, "state", {
       report: !1
-    }), j(this, "handleDelete", () => {
+    }), S(this, "handleDelete", () => {
       let {
         report: e
       } = this.state, {
@@ -126,14 +126,14 @@ class P extends r.PureComponent {
         message: n
       } = this.props;
       e ? (0, g.ak)(n, "message_delete_alert", () => c.Z.deleteMessage(t.id, n.id)) : c.Z.deleteMessage(t.id, n.id)
-    }), j(this, "handleToggleReport", e => {
+    }), S(this, "handleToggleReport", e => {
       this.setState({
         report: e
       })
     })
   }
 }
-let N = {
+let I = {
   confirmPin: function(e, t) {
     (0, o.h7j)(n => {
       let r, l = (0, u.F6)(e, b.default, p.Z);
@@ -141,7 +141,7 @@ let N = {
         channelName: l
       }), (0, i.jsx)(f.Z.Provider, {
         value: e.guild_id,
-        children: (0, i.jsxs)(o.ConfirmModal, _(S({
+        children: (0, i.jsxs)(o.ConfirmModal, _(j({
           header: y.intl.string(y.t.bKMaZW),
           confirmText: y.intl.string(y.t.rOQ5BQ),
           cancelText: y.intl.string(y.t["ETE/oK"]),
@@ -168,7 +168,7 @@ let N = {
   confirmUnpin: function(e, t) {
     (0, o.h7j)(n => (0, i.jsx)(f.Z.Provider, {
       value: e.guild_id,
-      children: (0, i.jsxs)(o.ConfirmModal, _(S({
+      children: (0, i.jsxs)(o.ConfirmModal, _(j({
         header: y.intl.string(y.t.CFF2vL),
         confirmText: y.intl.string(y.t.lAU5jI),
         cancelText: y.intl.string(y.t["ETE/oK"]),
@@ -193,14 +193,14 @@ let N = {
   },
   confirmDelete: function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-    (0, o.h7j)(r => (0, i.jsx)(P, S({
+    (0, o.h7j)(r => (0, i.jsx)(P, j({
       channel: e,
       message: t,
       showContextMenuHint: n
     }, r)))
   },
   confirmEdit: function(e, t, n) {
-    (0, o.h7j)(r => (0, i.jsx)(o.ConfirmModal, _(S({
+    (0, o.h7j)(r => (0, i.jsx)(o.ConfirmModal, _(j({
       header: y.intl.string(y.t.aIz1oa),
       confirmText: y.intl.string(y.t["cY+Ooa"]),
       cancelText: y.intl.string(y.t["ETE/oK"]),
