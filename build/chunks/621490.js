@@ -117,7 +117,8 @@ let E = e => {
       applicationId: (0, g.N)(n),
       skuIDs: [n],
       isGift: !1,
-      currentPaymentSourceId: null
+      currentPaymentSourceId: null,
+      excludeSKUPurchasePreviews: !0
     }), l = s[n];
     return void 0 === l ? (0, i.jsx)(m.aO, {
       children: (0, i.jsx)(r.$jN, {

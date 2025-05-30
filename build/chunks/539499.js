@@ -17,7 +17,5 @@ e.exports = {
   unreadDot: "unreadDot_cb862a",
   actionIcon: "actionIcon_cb862a",
   action: "action_cb862a",
-  groupedMessageUsername: "groupedMessageUsername_cb862a",
-  groupedMessageContent: "groupedMessageContent_cb862a",
   overflowText: "overflowText_cb862a"
 }

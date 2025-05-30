@@ -1,6 +1,6 @@
 /**
   Module ID: 78715
-  Original File Name: 810b59056848d3ad
+  Original File Name: 974d1332107f313b
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1581,7 +1581,12 @@
 }
 
 .overflowText_cb862a {
-    color: var(--text-tertiary)
+    color: var(--text-muted);
+    line-height: 20px;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .filters_c485a2 {
@@ -6438,4 +6443,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=810b59056848d3ad.css.map*/
+/*# sourceMappingURL=974d1332107f313b.css.map*/
