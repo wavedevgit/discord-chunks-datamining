@@ -48,8 +48,9 @@ function C(e) {
   let {
     showCurrentGame: t,
     shouldShowStatus: n = !1,
-    shouldShowCustomizeLink: r = !1
-  } = e, l = (0, s.e7)([h.Z], () => h.Z.getStatus());
+    shouldShowCustomizeLink: r = !1,
+    closePopout: l
+  } = e, o = (0, s.e7)([h.Z], () => h.Z.getStatus());
   return (0, i.jsxs)("div", {
     className: y.toggleContainer,
     children: [(0, i.jsxs)("div", {
@@ -66,9 +67,11 @@ function C(e) {
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
-          children: l === c.Skl.INVISIBLE ? b.intl.string(m.default.a3AofX) : b.intl.string(b.t.WbGtnJ)
+          children: o === c.Skl.INVISIBLE ? b.intl.string(m.default.a3AofX) : b.intl.string(b.t.WbGtnJ)
         })]
-      }), r && (0, i.jsx)(f.K, {})]
+      }), r && (0, i.jsx)(f.K, {
+        onClosePopout: l
+      })]
     }), (0, i.jsx)(c.rsf, {
       onChange: e => {
         u.G6.updateSetting(e), n && v(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
@@ -136,7 +139,8 @@ function S(e) {
       className: y.toggleContainerWrapper,
       children: (0, i.jsx)(C, {
         showCurrentGame: n,
-        shouldShowCustomizeLink: !0
+        shouldShowCustomizeLink: !0,
+        closePopout: t
       })
     })]
   })
@@ -178,17 +182,21 @@ function x(e) {
       className: y.toggleContainerWrapper,
       children: (0, i.jsx)(C, {
         showCurrentGame: n,
-        shouldShowStatus: !0
+        shouldShowStatus: !0,
+        closePopout: t
       })
     })]
   })
 }
 
-function P() {
-  let e = u.G6.useSetting();
+function P(e) {
+  let {
+    closePopout: t
+  } = e, n = u.G6.useSetting();
   return (0, i.jsxs)(j, {
     children: [(0, i.jsx)(C, {
-      showCurrentGame: e
+      showCurrentGame: n,
+      closePopout: t
     }), (0, i.jsx)(c.$i$, {
       className: y.divider
     }), (0, i.jsx)(c.Text, {
@@ -197,7 +205,9 @@ function P() {
       children: b.intl.format(b.t.fF2TbW, {
         helpDeskUrl: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(f.y, {})]
+    }), (0, i.jsx)(f.y, {
+      onClosePopout: t
+    })]
   })
 }
 
@@ -223,12 +233,15 @@ function I(e) {
   })
 }
 
-function w() {
-  let e = u.G6.useSetting();
+function w(e) {
+  let {
+    closePopout: t
+  } = e, n = u.G6.useSetting();
   return (0, i.jsxs)(j, {
     children: [(0, i.jsx)(C, {
-      showCurrentGame: e,
-      shouldShowStatus: !0
+      showCurrentGame: n,
+      shouldShowStatus: !0,
+      closePopout: t
     }), (0, i.jsx)(c.$i$, {
       className: y.divider
     }), (0, i.jsx)(c.Text, {
@@ -237,7 +250,9 @@ function w() {
       children: b.intl.format(b.t.fF2TbW, {
         helpDeskUrl: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
-    }), (0, i.jsx)(f.y, {})]
+    }), (0, i.jsx)(f.y, {
+      onClosePopout: t
+    })]
   })
 }
 var N = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
@@ -264,13 +279,17 @@ function Z(e) {
         closePopout: n
       });
     case 3:
-      return (0, i.jsx)(P, {});
+      return (0, i.jsx)(P, {
+        closePopout: n
+      });
     case 4:
       return (0, i.jsx)(I, {
         closePopout: n
       });
     case 5:
-      return (0, i.jsx)(w, {});
+      return (0, i.jsx)(w, {
+        closePopout: n
+      });
     default:
       return null
   }

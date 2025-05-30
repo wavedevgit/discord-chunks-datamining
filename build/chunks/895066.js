@@ -177,8 +177,10 @@ class f {
       output_device_restart_count: null == (t = this.outputDeviceStats.restartCount) ? void 0 : t.accumulated,
       input_device_time_to_first_audio: this.inputDeviceStats.timeToFirstCallbackMs,
       output_device_time_to_first_audio: this.outputDeviceStats.timeToFirstCallbackMs,
-      output_device_buffer_underrun_count: null == (n = this.outputDeviceStats.bufferViolations) ? void 0 : n.accumulated,
-      input_device_buffer_overfull_count: null == (r = this.inputDeviceStats.bufferViolations) ? void 0 : r.accumulated
+      input_device_buffer_overfull_count: null == (n = this.inputDeviceStats.bufferViolations) ? void 0 : n.accumulated,
+      output_device_buffer_underrun_count: null == (r = this.outputDeviceStats.bufferViolations) ? void 0 : r.accumulated,
+      input_device_session_sample_rate: this.inputDeviceStats.sessionSampleRate,
+      output_device_session_sample_rate: this.outputDeviceStats.sessionSampleRate
     }
   }
   getPeriodicStats() {
@@ -224,8 +226,8 @@ class f {
   }
   constructor(e) {
     c(this, "connection", void 0), c(this, "inboundStats", void 0), c(this, "outboundStats", void 0), c(this, "networkQuality", void 0), c(this, "systemResources", void 0), c(this, "duration", void 0), c(this, "decryptionFailures", void 0), c(this, "routingFailures", void 0), c(this, "periodicInboundStats", void 0), c(this, "inputDeviceStats", void 0), c(this, "outputDeviceStats", void 0), c(this, "sampleAudioDevice", void 0), c(this, "sampleStats", void 0), this.connection = e, this.sampleAudioDevice = (e, t) => {
-      var n;
-      void 0 !== e && (void 0 !== e.restartCount && (t.restartCount = _(e.restartCount, t.restartCount)), void 0 !== e.bufferViolations && (t.bufferViolations = _(e.bufferViolations, t.bufferViolations)), (null != (n = e.timeToFirstCallbackMs) ? n : 0) !== 0 && void 0 === t.timeToFirstCallbackMs && (t.timeToFirstCallbackMs = e.timeToFirstCallbackMs))
+      var n, r;
+      void 0 !== e && (void 0 !== e.restartCount && (t.restartCount = _(e.restartCount, t.restartCount)), void 0 !== e.bufferViolations && (t.bufferViolations = _(e.bufferViolations, t.bufferViolations)), (null != (n = e.timeToFirstCallbackMs) ? n : 0) !== 0 && void 0 === t.timeToFirstCallbackMs && (t.timeToFirstCallbackMs = e.timeToFirstCallbackMs), (null != (r = e.sessionSampleRate) ? r : 0) !== 0 && (t.sessionSampleRate = e.sessionSampleRate))
     }, this.sampleStats = e => {
       if (null == e) return;
       this.networkQuality.incrementNetworkStats((0, o.zO)()), this.systemResources.takeSample(), this.decryptionFailures = e.transport.decryptionFailures, this.routingFailures = e.transport.routingFailures, this.duration.connected++;
