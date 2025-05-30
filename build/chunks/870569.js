@@ -21,17 +21,18 @@ let d = r.forwardRef(function(e, t) {
     innerClassName: p,
     className: h,
     redGlow: f,
-    tooltipClassName: b,
-    onMouseEnter: _,
-    onMouseLeave: x,
-    "aria-label": E,
-    "aria-checked": C,
-    role: O,
-    tooltipColor: j,
-    tooltipForceOpen: S,
-    tooltipContentClassName: v,
-    plated: T
-  } = e, N = "function" == typeof m ? (0, i.jsx)(m, {
+    orangeGlow: b,
+    tooltipClassName: _,
+    onMouseEnter: x,
+    onMouseLeave: E,
+    "aria-label": C,
+    "aria-checked": O,
+    role: j,
+    tooltipColor: S,
+    tooltipForceOpen: v,
+    tooltipContentClassName: T,
+    plated: N
+  } = e, I = "function" == typeof m ? (0, i.jsx)(m, {
     width: 20,
     height: 20,
     size: "custom",
@@ -39,19 +40,19 @@ let d = r.forwardRef(function(e, t) {
     color: "currentColor"
   }) : m;
   return (0, i.jsx)(a.ua7, {
-    tooltipClassName: b,
+    tooltipClassName: _,
     text: n,
-    "aria-label": E,
-    color: j,
-    tooltipContentClassName: v,
-    forceOpen: S,
+    "aria-label": C,
+    color: S,
+    tooltipContentClassName: T,
+    forceOpen: v,
     children: e => {
       var n, m, {
           onClick: g,
-          onMouseEnter: b,
-          onMouseLeave: E
+          onMouseEnter: _,
+          onMouseLeave: C
         } = e,
-        j = function(e, t) {
+        S = function(e, t) {
           if (null == e) return {};
           var n, i, r = function(e, t) {
             if (null == e) return {};
@@ -83,7 +84,7 @@ let d = r.forwardRef(function(e, t) {
           })
         }
         return e
-      }({}, j), m = m = {
+      }({}, S), m = m = {
         buttonRef: t,
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
@@ -92,23 +93,24 @@ let d = r.forwardRef(function(e, t) {
         wrapperClassName: l()(c.button, h),
         className: l()(c.button, h, {
           [c.redGlow]: f,
+          [c.orangeGlow]: b,
           [c.disabled]: u,
           [c.enabled]: !u,
-          [c.plated]: T,
-          [c.plateMuted]: f && T
+          [c.plated]: N,
+          [c.plateMuted]: f && N
         }),
         onClick: e => {
           null != g && g(), null != d && d(e)
         },
         onMouseEnter: () => {
-          null == b || b(), null == _ || _()
+          null == _ || _(), null == x || x()
         },
         onMouseLeave: () => {
-          null == E || E(), null == x || x()
+          null == C || C(), null == E || E()
         },
         onContextMenu: s,
-        role: O,
-        "aria-checked": C,
+        role: j,
+        "aria-checked": O,
         focusProps: {
           offset: {
             left: -1,
@@ -121,8 +123,8 @@ let d = r.forwardRef(function(e, t) {
           width: 20,
           height: 20,
           mask: o.ZP.Masks.PANEL_BUTTON,
-          children: N
-        }) : N, r]
+          children: I
+        }) : I, r]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(m)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

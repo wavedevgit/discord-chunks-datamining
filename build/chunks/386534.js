@@ -1,8 +1,3 @@
-/** Chunk was on 8655 **/
-e.exports = {
-  draftBadgeContainer: "draftBadgeContainer_ea81a9",
-  tierName: "tierName_ea81a9",
-  tierImage: "tierImage_ea81a9",
-  tierPrice: "tierPrice_ea81a9",
-  tierPeriod: "tierPeriod_ea81a9"
-}
+/** Chunk was on web.js **/
+"use strict";
+e.exports = "/assets/0a8e4bcb7439abca.svg"

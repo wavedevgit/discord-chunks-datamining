@@ -1,0 +1,3 @@
+/** Chunk was on web.js **/
+"use strict";
+e.exports = "/assets/9b0a13eaf67dacb1.svg"

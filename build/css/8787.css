@@ -1,6 +1,6 @@
 /**
   Module ID: 8787
-  Original File Name: 91baf8dddaad4f55
+  Original File Name: 53bf38ea7b33a4ab
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -3540,11 +3540,19 @@ button.button__67645,span.button__67645 {
     width: 32px
 }
 
+button.button__67645.orangeGlow__67645,span.button__67645.orangeGlow__67645 {
+    background-color: hsl(var(--orange-400-hsl)/.1)
+}
+
+button.button__67645.orangeGlow__67645:hover,span.button__67645.orangeGlow__67645:hover {
+    background-color: hsl(var(--orange-400-hsl)/.2)
+}
+
 button.button__67645.redGlow__67645,span.button__67645.redGlow__67645 {
     background-color: hsl(var(--red-400-hsl)/.1)
 }
 
-button.button__67645.redGlow__67645.hover__67645,span.button__67645.redGlow__67645.hover__67645 {
+button.button__67645.redGlow__67645:hover,span.button__67645.redGlow__67645:hover {
     background-color: hsl(var(--red-400-hsl)/.2)
 }
 
@@ -3553,7 +3561,11 @@ button.button__67645.enabled__67645:hover,span.button__67645.enabled__67645:hove
     color: var(--interactive-hover)
 }
 
-button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enabled__67645.redGlow__67645:hover {
+button.button__67645.enabled__67645:hover.orangeGlow__67645,span.button__67645.enabled__67645:hover.orangeGlow__67645 {
+    background-color: hsl(var(--orange-400-hsl)/.2)
+}
+
+button.button__67645.enabled__67645:hover.redGlow__67645,span.button__67645.enabled__67645:hover.redGlow__67645 {
     background-color: hsl(var(--red-400-hsl)/.2)
 }
 
@@ -3572,6 +3584,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .visual-refresh button.button__67645.enabled__67645:hover,.visual-refresh span.button__67645.enabled__67645:hover {
     background-color: var(--button-secondary-background-hover)
+}
+
+.visual-refresh button.button__67645.enabled__67645.orangeGlow__67645:hover,.visual-refresh span.button__67645.enabled__67645.orangeGlow__67645:hover {
+    background-color: hsl(var(--orange-400-hsl)/.2)
 }
 
 .visual-refresh button.button__67645.enabled__67645.redGlow__67645:hover,.visual-refresh span.button__67645.enabled__67645.redGlow__67645:hover {
@@ -3779,17 +3795,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     border-top-right-radius: 0
 }
 
-.micButtonParent__37e49:hover>button {
+.micButtonParent__37e49:not(.hasColorGlow__37e49):hover .buttonChevron__37e49,.micButtonParent__37e49:not(.hasColorGlow__37e49):hover .micButtonWithMenu__37e49 {
     background-color: var(--bg-mod-faint)
 }
 
-.micButtonParent__37e49:hover>button:hover {
+.micButtonParent__37e49:not(.hasColorGlow__37e49):hover .buttonChevron__37e49:hover,.micButtonParent__37e49:not(.hasColorGlow__37e49):hover .micButtonWithMenu__37e49:hover {
     background-color: var(--background-modifier-selected);
     color: var(--interactive-hover)
-}
-
-.micButtonParent__37e49:hover .buttonChevron__37e49:not(.redGlow__37e49) {
-    background-color: var(--bg-mod-faint)
 }
 
 .voiceFilterWarning__37e49 {
@@ -3819,6 +3831,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .buttons__37e49 {
     display: flex
+}
+
+.tooltipWithSubtext__37e49 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: center
 }
 
 .visual-refresh {
@@ -18767,4 +18786,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=91baf8dddaad4f55.css.map*/
+/*# sourceMappingURL=53bf38ea7b33a4ab.css.map*/

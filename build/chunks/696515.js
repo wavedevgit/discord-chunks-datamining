@@ -19,14 +19,14 @@ var i = n(120356),
   h = n(573702),
   m = n(474936),
   g = n(262531),
-  E = n(926550),
-  b = n(996136),
-  y = n(493017),
-  O = n(254991),
-  v = n(486287),
-  I = n(29752),
-  S = n(375500),
-  T = n(546882);
+  E = n(441368),
+  b = n(243680),
+  y = n(386534),
+  O = n(32846),
+  v = n(823930),
+  I = n(530454),
+  S = n(997892),
+  T = n(234286);
 
 function A(e) {
   let {
@@ -58,7 +58,7 @@ function A(e) {
 function N(e) {
   let {
     isTier2: t
-  } = e, n = t ? v : E, i = t ? S : y, a = t ? T : O;
+  } = e, n = t ? O : E, i = t ? v : b, a = t ? I : y;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       src: n,
@@ -81,11 +81,11 @@ let C = function(e) {
     hideCloseButton: i = !1,
     hideCloseOnFullScreen: d,
     onClose: E,
-    upgradeToPremiumType: y,
-    isEligibleForTrial: O = !1,
-    showTrialBadge: v = !1,
-    showDiscountBadge: S = !1
-  } = e, T = (0, o.apv)((0, s.ZP)()), C = y === m.p9.TIER_2, P = (0, u.Fv)(O), R = (0, p.Ng)(), w = null == R || null == (t = R.discount) ? void 0 : t.amount, D = C ? I : b, L = C ? _.Z : f.Z, {
+    upgradeToPremiumType: b,
+    isEligibleForTrial: y = !1,
+    showTrialBadge: O = !1,
+    showDiscountBadge: v = !1
+  } = e, I = (0, o.apv)((0, s.ZP)()), C = b === m.p9.TIER_2, P = (0, u.Fv)(y), R = (0, p.Ng)(), w = null == R || null == (t = R.discount) ? void 0 : t.amount, D = C ? T : S, L = C ? _.Z : f.Z, {
     step: x,
     breadcrumbs: k,
     startedPaymentFlowWithPaymentSourcesRef: M,
@@ -93,7 +93,7 @@ let C = function(e) {
   } = (0, l.JL)();
   if (null == k || 0 === k.length) return null;
   let U = k.flatMap(e => {
-    let t = e.useBreadcrumbLabel(O),
+    let t = e.useBreadcrumbLabel(y),
       n = e.sectionHeaderText;
     return null != t ? {
       id: e.id,
@@ -105,7 +105,7 @@ let C = function(e) {
   let G = (U = U.filter(e => {
       let t = e.id !== c.h8.ADD_PAYMENT_STEPS,
         n = e.id === c.h8.ADD_PAYMENT_STEPS && !M.current;
-      return !O || O && (t || n)
+      return !y || y && (t || n)
     })).find(e => e.id === x),
     B = null != j ? m.y7[j] : null,
     F = null;
@@ -129,11 +129,11 @@ let C = function(e) {
       }), (0, r.jsx)("div", {
         className: g.textContainer,
         children: (0, r.jsx)(L, {
-          color: T ? "black" : "white",
+          color: I ? "black" : "white",
           className: g.wordmark
         })
       })]
-    }), (v || S) && (0, r.jsx)(h.Z, {
+    }), (O || v) && (0, r.jsx)(h.Z, {
       isTier2: !!C,
       discountAmount: w
     }), V && (0, r.jsx)(A, {
