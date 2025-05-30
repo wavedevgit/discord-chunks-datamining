@@ -13,9 +13,9 @@ var r = n(255367),
   u = n(481060),
   d = n(607070),
   p = n(70097),
-  g = n(688465),
-  b = n(341907),
-  f = n(507808),
+  f = n(688465),
+  g = n(341907),
+  b = n(507808),
   h = n(594174),
   m = n(451478),
   _ = n(626135),
@@ -25,8 +25,8 @@ var r = n(255367),
   S = n(26931),
   x = n(370039),
   E = n(937510),
-  j = n(823941),
-  y = n(38900),
+  y = n(823941),
+  j = n(38900),
   P = n(709999),
   k = n(794324),
   T = n(619899),
@@ -53,7 +53,7 @@ let N = {
       name: e.name,
       unpublishedAt: e.unpublishedAt,
       logoUrl: (0, O.uV)(null != (r = null != (n = e.heroLogo) ? n : e.logo) ? r : "", {
-        size: j.n
+        size: y.n
       }),
       categorySkuId: e.skuId,
       bannerAsset: e.heroBannerAsset,
@@ -73,7 +73,7 @@ let N = {
       category: a,
       heroBlock: s,
       tab: O
-    } = e, j = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), R = (0, c.e7)([m.Z], () => m.Z.isFocused()), Z = (0, c.e7)([h.default], () => h.default.getCurrentUser()), F = (0, S.u)(), D = (0, C.sp)(), H = l.useMemo(() => null != s ? s : A(a), [s, a]), {
+    } = e, y = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), R = (0, c.e7)([m.Z], () => m.Z.isFocused()), Z = (0, c.e7)([h.default], () => h.default.getCurrentUser()), F = (0, S.u)(), D = (0, C.sp)(), H = l.useMemo(() => null != s ? s : A(a), [s, a]), {
       isPreviewingStaticBanner: M,
       bannerOverrides: W,
       bannerStyleOverrides: V,
@@ -92,7 +92,7 @@ let N = {
         style: (null == V ? void 0 : V.backgroundStyle) != null ? {
           background: V.backgroundStyle
         } : void 0,
-        children: [null == z || j || !R || M ? (0, r.jsx)("div", {
+        children: [null == z || y || !R || M ? (0, r.jsx)("div", {
           className: w.bannerImage,
           style: {
             backgroundImage: "url(".concat(G, ")")
@@ -141,7 +141,7 @@ let N = {
                 variant: "heading-xxl/bold",
                 className: w.title,
                 color: "header-primary",
-                children: [H.title, O === I.AW.ORBS && (0, r.jsx)(g.Z, {})]
+                children: [H.title, O === I.AW.ORBS && (0, r.jsx)(f.Z, {})]
               }), (0, r.jsx)(u.Text, {
                 variant: O === I.AW.ORBS ? "text-lg/medium" : "text-md/normal",
                 className: O === I.AW.ORBS ? w.orbsSubHeaderText : (null == W ? void 0 : W.showDarkBannerText) ? w.subHeaderTextDark : w.subHeaderText,
@@ -157,11 +157,11 @@ let N = {
               className: w.heroHeaderButton,
               color: u.Ttl.WHITE,
               onClick: () => {
-                O === I.AW.ORBS ? ((0, f.Y)({
+                O === I.AW.ORBS ? ((0, b.Y)({
                   pageType: L.ZY5.SHOP_ORBS_TAB,
                   sectionType: L.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: L.qAy.CTA_TO_QUEST_HOME
-                }), (0, b.navigateToQuestHome)({
+                }), (0, g.navigateToQuestHome)({
                   fromContent: o.j.ORBS_SHOP_HERO_CTA
                 })) : (n("shop latest category hero", H.categorySkuId), _.default.track(L.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == D ? void 0 : D.sessionId,
@@ -180,7 +180,7 @@ let N = {
             [w.feedSingleRow]: O !== I.AW.ORBS
           }),
           children: t ? (0, r.jsx)(r.Fragment, {
-            children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(y.K, {}, t))
+            children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(j.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: X.map((e, t) => {
               let n = v.Z.getCategoryForProduct(e.skuId);

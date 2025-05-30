@@ -9,7 +9,7 @@ var r = n(255367),
   a = n.n(i),
   s = n(196434),
   o = n.n(s),
-  c = n(760907),
+  c = n(94171),
   d = n(91192),
   u = n(924826),
   m = n(536895),
@@ -477,8 +477,8 @@ function eS(e) {
     getItemKey: e$,
     renderGridSection: e0,
     renderGridItem: e3,
-    getGridSectionHeight: e6,
-    getSectionProps: e8,
+    getGridSectionHeight: e8,
+    getSectionProps: e6,
     handleGridFocus: e1
   } = function(e) {
     let {
@@ -688,11 +688,11 @@ function eS(e) {
             columns: ek,
             sections: eL,
             getItemKey: e$,
-            getSectionHeight: e6,
+            getSectionHeight: e8,
             getItemHeight: eC,
             renderSection: e0,
             renderItem: e3,
-            getSectionProps: e8,
+            getSectionProps: e6,
             onScroll: v ? e9 : void 0,
             chunkSize: 350
           }, tt, e), F)

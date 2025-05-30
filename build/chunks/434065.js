@@ -2,7 +2,7 @@
 l.d(n, {
   r: () => a
 });
-var t = l(381814),
+var t = l(97519),
   i = l(731965);
 let a = (0, t.U)(e => ({
   favoriteAdded: !1,

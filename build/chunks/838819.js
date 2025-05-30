@@ -13,9 +13,9 @@ var r = n(255367),
   u = n(952265),
   d = n(4738),
   p = n(481060),
-  g = n(150063),
-  b = n(100527),
-  f = n(906732),
+  f = n(150063),
+  g = n(100527),
+  b = n(906732),
   h = n(702486),
   m = n(605236),
   _ = n(977395),
@@ -25,8 +25,8 @@ var r = n(255367),
   S = n(819640),
   x = n(594174),
   E = n(626135),
-  j = n(74538),
-  y = n(960048),
+  y = n(74538),
+  j = n(960048),
   P = n(381585),
   k = n(597688),
   T = n(328347),
@@ -87,24 +87,24 @@ let Q = e => {
     } = (0, s.cj)([T.Z], () => T.Z.getAnalytics()), et = l.useMemo(() => {
       switch (a) {
         case q.AW.ORBS:
-          return b.Z.COLLECTIBLES_SHOP_ORBS_TAB;
+          return g.Z.COLLECTIBLES_SHOP_ORBS_TAB;
         case q.AW.HOME:
-          return b.Z.COLLECTIBLES_SHOP_HOME_SCREEN;
+          return g.Z.COLLECTIBLES_SHOP_HOME_SCREEN;
         case q.AW.BUNDLES:
-          return b.Z.COLLECTIBLES_SHOP_BUNDLES_TAB;
+          return g.Z.COLLECTIBLES_SHOP_BUNDLES_TAB;
         case q.AW.AVATAR_DECORATIONS:
-          return b.Z.COLLECTIBLES_SHOP_AVATAR_DECORATIONS_TAB;
+          return g.Z.COLLECTIBLES_SHOP_AVATAR_DECORATIONS_TAB;
         case q.AW.PROFILE_EFFECTS:
-          return b.Z.COLLECTIBLES_SHOP_PROFILE_EFFECTS_TAB;
+          return g.Z.COLLECTIBLES_SHOP_PROFILE_EFFECTS_TAB;
         case q.AW.NAMEPLATES:
-          return b.Z.COLLECTIBLES_SHOP_NAMEPLATES_TAB;
+          return g.Z.COLLECTIBLES_SHOP_NAMEPLATES_TAB;
         case q.AW.CATALOG:
-          return b.Z.COLLECTIBLES_SHOP_FULLSCREEN
+          return g.Z.COLLECTIBLES_SHOP_FULLSCREEN
       }
     }, [a]), {
       analyticsLocations: en,
       newestAnalyticsLocation: er
-    } = (0, f.ZP)([...$, b.Z.COLLECTIBLES_SHOP, et]), {
+    } = (0, b.ZP)([...$, g.Z.COLLECTIBLES_SHOP, et]), {
       sessionId: el,
       scrollerRef: ea,
       scrollHandler: ei
@@ -112,7 +112,7 @@ let Q = e => {
       selectedTab: eo,
       transitionState: es,
       transitionToTab: ec
-    } = (0, A.B)(ea, a, n), [eu, ed] = l.useState(!1), ep = (0, B.R)("CollectiblesShop"), [eg, eb] = l.useState(q.IV), [ef, eh] = l.useState(), [em, e_] = l.useState(), {
+    } = (0, A.B)(ea, a, n), [eu, ed] = l.useState(!1), ep = (0, B.R)("CollectiblesShop"), [ef, eg] = l.useState(q.IV), [eb, eh] = l.useState(), [em, e_] = l.useState(), {
       noCache: eC,
       includeUnpublished: ev
     } = (0, V.Z)(), {
@@ -128,9 +128,9 @@ let Q = e => {
         onClose: ex
       } = (0, H.Db)(),
       eE = (0, s.e7)([x.default], () => x.default.getCurrentUser()),
-      ej = j.ZP.canUseCollectibles(eE),
+      ey = y.ZP.canUseCollectibles(eE),
       {
-        categories: ey,
+        categories: ej,
         isFetchingCategories: eP,
         fetchCategoriesError: ek,
         fetchPurchasesError: eT,
@@ -146,7 +146,7 @@ let Q = e => {
       }),
       eB = null != (t = null != ek ? ek : eT) ? t : eI;
     (0, v.P)();
-    let ew = (0, N.O)(ey),
+    let ew = (0, N.O)(ej),
       eN = l.useRef(null),
       [eA, eR] = l.useState(!1);
     (0, Z.Kp)({
@@ -162,15 +162,15 @@ let Q = e => {
           source: t,
           page_session_id: el,
           page_type: eo === q.AW.CATALOG ? "full" : eo,
-          category: eo === q.AW.HOME || null == (e = k.Z.getCategory(ef)) ? void 0 : e.name
+          category: eo === q.AW.HOME || null == (e = k.Z.getCategory(eb)) ? void 0 : e.name
         })
       }
-    }, [en, u, el, ef, eh, em, es, eo, et, er]), l.useEffect(() => {
-      null == eE || ej || E.default.track(K.rMx.PREMIUM_UPSELL_VIEWED, {
+    }, [en, u, el, eb, eh, em, es, eo, et, er]), l.useEffect(() => {
+      null == eE || ey || E.default.track(K.rMx.PREMIUM_UPSELL_VIEWED, {
         type: X.cd.COLLECTIBLES_SHOP,
         location_stack: en
       })
-    }, [ej, en, eE]);
+    }, [ey, en, eE]);
     let {
       dismissShopButtonDC: eZ
     } = (0, W.Z)();
@@ -180,7 +180,7 @@ let Q = e => {
         forceTrack: !0
       })
     }, [eZ]), l.useEffect(() => {
-      n || (0, g.Y)(K.Z5c.COLLECTIBLES_SHOP)
+      n || (0, f.Y)(K.Z5c.COLLECTIBLES_SHOP)
     }, [n]);
     let eF = l.useCallback(() => {
         eL()
@@ -229,9 +229,9 @@ let Q = e => {
       })
     }, [ea, eG]), e0 = (0, s.e7)([k.Z], () => {
       var e;
-      return null == (e = k.Z.getCategory(ef)) ? void 0 : e.name
+      return null == (e = k.Z.getCategory(eb)) ? void 0 : e.name
     });
-    return (0, r.jsx)(f.Gt, {
+    return (0, r.jsx)(b.Gt, {
       value: en,
       children: (0, r.jsx)(P.k0, {
         newValue: {
@@ -253,7 +253,7 @@ let Q = e => {
               onScroll: () => {
                 if (ei(), null != ea.current) {
                   let e = ea.current.getDistanceFromBottom();
-                  eg >= ep ? ed(e < 20) : e <= 200 && eb(eg + q.IV)
+                  ef >= ep ? ed(e < 20) : e <= 200 && eg(ef + q.IV)
                 }
               },
               children: (0, r.jsxs)("div", {
@@ -272,7 +272,7 @@ let Q = e => {
                   if (null != eB) {
                     var t, l;
                     let e = [];
-                    return null != ek ? e.push("shop load fetch categories error: ".concat(eB.message)) : null != eT ? e.push("shop load fetch purchase error: ".concat(eB.message)) : e.push("shop load claim error: ".concat(eB.message)), y.Z.captureMessage(e.join("\n"), {
+                    return null != ek ? e.push("shop load fetch categories error: ".concat(eB.message)) : null != eT ? e.push("shop load fetch purchase error: ".concat(eB.message)) : e.push("shop load claim error: ".concat(eB.message)), j.Z.captureMessage(e.join("\n"), {
                       tags: {
                         isStaff: null != (l = null == eE || null == (t = eE.isStaff()) ? void 0 : t.toString()) ? l : "unknown",
                         preloadEnabled: e$.toString(),
@@ -291,7 +291,7 @@ let Q = e => {
                       return (0, r.jsx)(U.Z, {
                         isFullScreen: n,
                         handleTransition: eY,
-                        numVisibleItems: eg,
+                        numVisibleItems: ef,
                         tab: e,
                         isFetchingCategories: eP
                       });
@@ -325,7 +325,7 @@ let Q = e => {
                             isFetchingCategories: eP,
                             sortedCategories: eX,
                             setCategoryRef: eD,
-                            isPremiumUser: ej,
+                            isPremiumUser: ey,
                             initialItemCardRef: eN,
                             setIsGiftEasterEggEnabled: eR,
                             isGiftEasterEggEnabled: eA,

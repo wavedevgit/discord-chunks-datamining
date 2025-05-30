@@ -60,7 +60,9 @@ function h(e) {
     hideCloseButton: b,
     upgradeToPremiumType: m,
     onClose: E,
-    isEligibleForTrial: S
+    isEligibleForTrial: S,
+    showTrialBadge: y,
+    showDiscountBadge: O
   }) : (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)(c.Z, {
