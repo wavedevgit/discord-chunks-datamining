@@ -1,6 +1,6 @@
 /**
   Module ID: 22274
-  Original File Name: 357cbd431a05163e
+  Original File Name: dc08576605c92d9d
 **/
 .container__2a3ed {
     border-radius: 8px;
@@ -29,7 +29,7 @@
 }
 
 .loaded__2a3ed .closeButton__2a3ed.closeButton__2a3ed {
-    animation: reveal__2a3ed 1s linear 3s forwards;
+    animation: reveal__2a3ed 1s linear .5s forwards;
     display: block
 }
 
@@ -165,4 +165,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=357cbd431a05163e.css.map*/
+/*# sourceMappingURL=dc08576605c92d9d.css.map*/
