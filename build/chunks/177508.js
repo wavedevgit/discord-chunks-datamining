@@ -888,7 +888,7 @@ function H() {
     className: x.section,
     children: [(0, i.jsx)(d.X6q, {
       variant: "heading-xl/semibold",
-      children: "Modals"
+      children: "Modals (Void)"
     }), (0, i.jsx)(d.zxk, {
       onClick: () => {
         (0, d.h7j)(e => (0, i.jsx)(F, E({}, e)))

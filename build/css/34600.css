@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: 2968167f68fb9a72
+  Original File Name: 810520c2ccde7202
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3628,6 +3628,8 @@
     --redesign-image-button-pressed-background: rgba(0,0,0,.08);
     --redesign-input-control-active-bg: #29292e;
     --redesign-input-control-selected: #5966f2;
+    --scrim-default: rgba(0,0,0,.72);
+    --scrim-lightbox: rgba(0,0,0,.92);
     --scrollbar-auto-scrollbar-color-thumb: #1a1c1f;
     --scrollbar-auto-scrollbar-color-track: #2b2e30;
     --scrollbar-auto-thumb: #1a1c1f;
@@ -3997,6 +3999,8 @@
     --redesign-image-button-pressed-background: rgba(0,0,0,.08);
     --redesign-input-control-active-bg: #fff;
     --redesign-input-control-selected: #5966f2;
+    --scrim-default: rgba(0,0,0,.52);
+    --scrim-lightbox: rgba(0,0,0,.92);
     --scrollbar-auto-scrollbar-color-thumb: #dbdee0;
     --scrollbar-auto-scrollbar-color-track: #f2f2f5;
     --scrollbar-auto-thumb: #c4c9cf;
@@ -4366,6 +4370,8 @@
     --redesign-image-button-pressed-background: rgba(0,0,0,.08);
     --redesign-input-control-active-bg: #2b2e36;
     --redesign-input-control-selected: #5966f2;
+    --scrim-default: rgba(0,0,0,.72);
+    --scrim-lightbox: rgba(0,0,0,.92);
     --scrollbar-auto-scrollbar-color-thumb: #1c1c24;
     --scrollbar-auto-scrollbar-color-track: #2b2e36;
     --scrollbar-auto-thumb: #30333b;
@@ -4735,6 +4741,8 @@
     --redesign-image-button-pressed-background: rgba(0,0,0,.08);
     --redesign-input-control-active-bg: #30333b;
     --redesign-input-control-selected: #5966f2;
+    --scrim-default: rgba(0,0,0,.72);
+    --scrim-lightbox: rgba(0,0,0,.92);
     --scrollbar-auto-scrollbar-color-thumb: #18191f;
     --scrollbar-auto-scrollbar-color-track: #2b2e36;
     --scrollbar-auto-thumb: #18191f;
@@ -4789,4 +4797,4 @@
     --white: #fff
 }
 
-/*# sourceMappingURL=2968167f68fb9a72.css.map*/
+/*# sourceMappingURL=810520c2ccde7202.css.map*/

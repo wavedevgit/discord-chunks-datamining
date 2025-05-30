@@ -9,8 +9,8 @@ var i = n(442837),
   a = n(704215),
   o = n(907459),
   s = n(514361),
-  l = n(553049),
-  c = n(724145),
+  l = n(724145),
+  c = n(726034),
   u = n(605236),
   d = n(243778),
   f = n(819640),
@@ -31,7 +31,7 @@ let E = function() {
   t || !e || n || null != E || y.push(a.z.CLIENT_THEMES_COACHMARK);
   let [O, v] = (0, d.US)(y, g.R.SIDEBAR, !0), I = O === a.z.CLIENT_THEMES_COACHMARK;
   return t ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(E === h.wh.CLIENT_THEMES || I) && (0, r.jsx)(c.Z, {
+    children: [(E === h.wh.CLIENT_THEMES || I) && (0, r.jsx)(l.Z, {
       markAsDismissed: I ? v : () => {
         (0, u.EW)(a.z.CLIENT_THEMES_COACHMARK, {
           dismissAction: g.L.INDIRECT_ACTION,
@@ -42,7 +42,7 @@ let E = function() {
     }), E === h.wh.APP_ICON && (0, r.jsx)(o.Z, {
       isCoachmark: !1,
       markAsDismissed: v
-    }), E === h.wh.CUSTOM_THEME && (0, r.jsx)(l.Z, {
+    }), E === h.wh.CUSTOM_THEME && (0, r.jsx)(c.Z, {
       metadata: b
     })]
   })
