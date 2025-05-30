@@ -26,8 +26,8 @@ let _ = e => {
     previewImage: x,
     videoUrl: E,
     shouldLoadVideo: C,
-    index: O,
-    size: j,
+    index: j,
+    size: O,
     customVideoStyle: S,
     isReducedMotion: v,
     onClick: T
@@ -69,17 +69,17 @@ let _ = e => {
     null == I.current || v || (y.current = I.current.currentTime, I.current.pause())
   }, L = () => (0, i.jsxs)("div", {
     className: l()({
-      [b.largeTextBox]: j === p.y$.LARGE,
-      [b.mediumTextBox]: j === p.y$.MEDIUM,
-      [b.smallTextBox]: j === p.y$.SMALL
+      [b.largeTextBox]: O === p.y$.LARGE,
+      [b.mediumTextBox]: O === p.y$.MEDIUM,
+      [b.smallTextBox]: O === p.y$.SMALL
     }),
     children: [(0, i.jsx)(c.X6q, {
-      variant: j === p.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold",
+      variant: O === p.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold",
       color: "header-primary",
       className: l()({
-        [b.largeBoxHeader]: j === p.y$.LARGE,
-        [b.mediumBoxHeader]: j === p.y$.MEDIUM,
-        [b.smallBoxHeader]: j === p.y$.SMALL
+        [b.largeBoxHeader]: O === p.y$.LARGE,
+        [b.mediumBoxHeader]: O === p.y$.MEDIUM,
+        [b.smallBoxHeader]: O === p.y$.SMALL
       }),
       children: n
     }), (0, i.jsx)(c.Text, {
@@ -97,9 +97,9 @@ let _ = e => {
     })]
   }), B = () => (0, i.jsx)("div", {
     className: l()({
-      [b.largeBoxArtContainer]: j === p.y$.LARGE,
-      [b.mediumBoxArtContainer]: j === p.y$.MEDIUM,
-      [b.smallBoxArtContainer]: j === p.y$.SMALL
+      [b.largeBoxArtContainer]: O === p.y$.LARGE,
+      [b.mediumBoxArtContainer]: O === p.y$.MEDIUM,
+      [b.smallBoxArtContainer]: O === p.y$.SMALL
     }),
     children: (0, i.jsx)(u.Z, {
       playsInline: !0,
@@ -108,9 +108,9 @@ let _ = e => {
       poster: x,
       loop: !0,
       className: l()({
-        [b.largeBoxVideo]: j === p.y$.LARGE,
-        [b.mediumBoxVideo]: j === p.y$.MEDIUM,
-        [b.smallBoxVideo]: j === p.y$.SMALL,
+        [b.largeBoxVideo]: O === p.y$.LARGE,
+        [b.mediumBoxVideo]: O === p.y$.MEDIUM,
+        [b.smallBoxVideo]: O === p.y$.SMALL,
         [S]: null != S
       }),
       ref: I,
@@ -122,15 +122,15 @@ let _ = e => {
   });
   return (0, i.jsx)("div", {
     className: l()(A, {
-      [b.largeBoxContainer]: j === p.y$.LARGE,
-      [b.mediumBoxContainer]: j === p.y$.MEDIUM,
-      [b.smallBoxContainer]: j === p.y$.SMALL
+      [b.largeBoxContainer]: O === p.y$.LARGE,
+      [b.mediumBoxContainer]: O === p.y$.MEDIUM,
+      [b.smallBoxContainer]: O === p.y$.SMALL
     }),
     onMouseEnter: w,
     onFocus: w,
     onBlur: k,
     onMouseLeave: k,
-    children: O % 2 != 0 ? (0, i.jsxs)(i.Fragment, {
+    children: j % 2 != 0 ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(L, {}), (0, i.jsx)(B, {})]
     }) : (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(B, {}), (0, i.jsx)(L, {})]

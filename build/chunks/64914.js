@@ -40,7 +40,7 @@ function E(e) {
 }
 
 function C() {
-  let [e] = r.useState(() => g.ZP.getEnableHardwareAcceleration()), t = h.bm.useSetting(), n = h.Sb.useSetting(), C = (0, s.e7)([m.Z], () => m.Z.testModeApplicationId), O = (0, s.e7)([p.ZP], () => p.ZP.showPlayAgain), j = r.useCallback(e => {
+  let [e] = r.useState(() => g.ZP.getEnableHardwareAcceleration()), t = h.bm.useSetting(), n = h.Sb.useSetting(), C = (0, s.e7)([m.Z], () => m.Z.testModeApplicationId), j = (0, s.e7)([p.ZP], () => p.ZP.showPlayAgain), O = r.useCallback(e => {
     h.bm.updateSetting(!e)
   }, []), S = r.useCallback(e => {
     e ? (0, l.h7j)(e => (0, i.jsx)(f.Z, E({}, e))) : a.mc()
@@ -106,7 +106,7 @@ function C() {
       setting: b.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
       children: (0, i.jsx)(l.j7V, {
         value: !t,
-        onChange: j,
+        onChange: O,
         note: x.intl.string(x.t["8mYp39"]),
         children: x.intl.string(x.t.fi3UQE)
       })
@@ -121,7 +121,7 @@ function C() {
     }), (0, i.jsx)(u.F, {
       setting: b.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN,
       children: (0, i.jsx)(l.j7V, {
-        value: O,
+        value: j,
         note: x.intl.string(x.t["B/qU4O"]),
         onChange: v,
         children: x.intl.string(x.t.qDZryM)

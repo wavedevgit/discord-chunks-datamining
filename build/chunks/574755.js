@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(233685),
   E = n(388032),
   C = n(922284),
-  O = n(802454),
-  j = n(20493);
+  j = n(802454),
+  O = n(20493);
 
 function S(e) {
   let {
@@ -55,10 +55,10 @@ function S(e) {
         children: [(0, i.jsx)(_.Z, {}), (0, i.jsx)(x.Z, {})]
       })
     }), N && (0, i.jsx)(a.$i$, {}), (0, i.jsxs)(a.hjN, {
-      className: n || N ? j.marginTop20 : t,
+      className: n || N ? O.marginTop20 : t,
       children: [(0, i.jsx)(a.j7V, {
         hideBorder: !0,
-        className: O.formItem,
+        className: j.formItem,
         value: S,
         note: E.intl.string(E.t["wW9/zc"]),
         onChange: e => f.yg({
@@ -67,7 +67,7 @@ function S(e) {
         children: E.intl.string(E.t.AGDDkJ)
       }), v && y && (0, i.jsx)(a.j7V, {
         hideBorder: !0,
-        className: O.formItem,
+        className: j.formItem,
         value: I,
         note: E.intl.string(E.t["0vjy8P"]),
         onChange: e => f.yl({

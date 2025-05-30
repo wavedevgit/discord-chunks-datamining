@@ -51,8 +51,8 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = Object.keys(d.zxk.Colors).filter(e => "CUSTOM" !== e),
-  j = Object.keys(d.zxk.Looks).filter(e => "BLANK" !== e),
+let j = Object.keys(d.zxk.Colors).filter(e => "CUSTOM" !== e),
+  O = Object.keys(d.zxk.Looks).filter(e => "BLANK" !== e),
   S = Object.keys(d.zxk.Sizes).filter(e => "NONE" !== e);
 
 function v() {
@@ -236,7 +236,7 @@ function D() {
 }
 
 function Z() {
-  let [e, t] = r.useState(!1), n = O.flatMap(e => [...j.map(t => (0, i.jsxs)(d.zxk, {
+  let [e, t] = r.useState(!1), n = j.flatMap(e => [...O.map(t => (0, i.jsxs)(d.zxk, {
     color: d.zxk.Colors[e],
     look: d.zxk.Looks[t],
     fullWidth: !0,

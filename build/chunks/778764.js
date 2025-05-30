@@ -40,7 +40,7 @@ function C(e) {
   return e
 }
 
-function O(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,13 +53,13 @@ function O(e, t) {
   }), e
 }
 
-function j(e) {
+function O(e) {
   let {
     transitionState: t,
     onClose: l,
     ticket: o,
     challenge: u
-  } = e, f = (0, c.Dt)(), [C, O] = r.useState(""), [j, S] = r.useState(!0), [v, T] = r.useState(b.x.INIT), [N, I] = r.useState(""), [y, A] = r.useState(null), P = async () => {
+  } = e, f = (0, c.Dt)(), [C, j] = r.useState(""), [O, S] = r.useState(!0), [v, T] = r.useState(b.x.INIT), [N, I] = r.useState(""), [y, A] = r.useState(null), P = async () => {
     let e;
     T(b.x.REGISTER);
     let t = m.isPlatformEmbedded && p.ZP.supportsFeature(_.eRX.WEBAUTHN) ? p.ZP.webAuthnRegister(u) : s.Ue(JSON.parse(u)).then(e => JSON.stringify(e));
@@ -163,7 +163,7 @@ function j(e) {
                 className: E.input,
                 value: C,
                 onChange: e => {
-                  O(e), S(0 === e.length)
+                  j(e), S(0 === e.length)
                 },
                 autoFocus: !0,
                 minLength: 1
@@ -173,7 +173,7 @@ function j(e) {
             className: E.footer,
             children: [(0, i.jsx)(a.zxk, {
               type: "submit",
-              disabled: j,
+              disabled: O,
               children: x.intl.string(x.t["5dyZ1d"])
             }), (0, i.jsx)(a.zxk, {
               look: a.zxk.Looks.LINK,
@@ -255,7 +255,7 @@ function v() {
           color: a.zxk.Colors.TRANSPARENT,
           size: a.zxk.Sizes.ICON,
           onClick: t => {
-            (0, o.vq)(t, t => (0, i.jsx)(S, O(C({}, t), {
+            (0, o.vq)(t, t => (0, i.jsx)(S, j(C({}, t), {
               credential: e
             })))
           },
@@ -277,7 +277,7 @@ function v() {
               ticket: t,
               challenge: n
             } = e;
-            (0, a.h7j)(e => (0, i.jsx)(j, O(C({}, e), {
+            (0, a.h7j)(e => (0, i.jsx)(O, j(C({}, e), {
               ticket: t,
               challenge: n
             })))

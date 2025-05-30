@@ -28,8 +28,8 @@ var i = n(73800),
   x = n(595878),
   E = n(513785),
   C = n(106255),
-  O = n(474936),
-  j = n(735825),
+  j = n(474936),
+  O = n(735825),
   S = n(981631);
 
 function v(e) {
@@ -68,17 +68,17 @@ function N() {
   var e;
   let t = function() {
       let e = (0, r.cj)([E.Z], () => E.Z.getState());
-      if (null != e) return e.userTenureRewardStatusByRewardId[j.Ft.FREE_AVATAR_DECO_1_MONTH]
+      if (null != e) return e.userTenureRewardStatusByRewardId[O.Ft.FREE_AVATAR_DECO_1_MONTH]
     }(),
     n = function() {
-      var e = [j.Ft.FREE_AVATAR_DECO_1_MONTH];
+      var e = [O.Ft.FREE_AVATAR_DECO_1_MONTH];
       let t = (0, r.e7)([h.Z], () => {
           var e;
-          return null != (e = h.Z.getForApplication(O.CL)) ? e : y
+          return null != (e = h.Z.getForApplication(j.CL)) ? e : y
         }, [], b.OL),
         n = (0, r.e7)([p.default], () => {
           let e = p.default.getCurrentUser();
-          return null != e && (0, _.M5)(e, O.p9.TIER_2)
+          return null != e && (0, _.M5)(e, j.p9.TIER_2)
         });
       if (null != (0, C.kG)(t) || n) return (0, C.MR)(e, t)
     }(),
@@ -89,7 +89,7 @@ function N() {
         var e;
         return null != (e = h.Z.getForApplication(S.XAJ)) ? e : y
       }, [], b.OL);
-      return (0, C.Cl)(j.qY, e)
+      return (0, C.Cl)(O.qY, e)
     }(),
     o = l && null != a && (0, C.C3)(a.skuId, s),
     c = null != (e = null == t ? void 0 : t.next_tenure_reward_id) ? e : null == n ? void 0 : n.skuId;
@@ -100,12 +100,12 @@ function N() {
       tenureRewardType: (0, C.Xs)(c)
     };
     return o ? T(v({}, e), {
-      nitroTenureStatus: j.EB.REDEEMED,
+      nitroTenureStatus: O.EB.REDEEMED,
       tenureRewardSkuId: n.skuId,
       showNotification: !0,
       showCard: !0
     }) : l ? T(v({}, e), {
-      nitroTenureStatus: j.EB.REDEEMABLE,
+      nitroTenureStatus: O.EB.REDEEMABLE,
       tenureRewardSkuId: n.skuId,
       showNotification: !0,
       showCard: !0
@@ -121,7 +121,7 @@ function I(e) {
   let {
     redeemableInDays: s = 0,
     tenureRewardSkuId: l
-  } = i, o = j.Ft.FREE_AVATAR_DECO_1_MONTH === l ? j.jW : null;
+  } = i, o = O.Ft.FREE_AVATAR_DECO_1_MONTH === l ? O.jW : null;
   if (null == o) return;
   let c = Math.min(o, Math.max(o - s, 0)),
     d = 100 * c / o;
@@ -134,9 +134,9 @@ let y = new Set,
   A = e => {
     if (null == e || (null == e ? void 0 : e.showNotification) === !1) return [];
     switch (e.nitroTenureStatus) {
-      case j.EB.PENDING:
+      case O.EB.PENDING:
         return [s.z.TENURE_REWARD_PENDING];
-      case j.EB.REDEEMABLE:
+      case O.EB.REDEEMABLE:
         return [s.z.TENURE_REWARD_REDEEMABLE];
       default:
         return []
@@ -159,7 +159,7 @@ let y = new Set,
     let t = null == (e = N()) ? void 0 : e.nitroTenureStatus,
       n = (0, x.cG)({
         location: "Home"
-      }) && null != t && t === j.EB.REDEEMABLE,
+      }) && null != t && t === O.EB.REDEEMABLE,
       [i] = (0, g.US)(n ? [s.z.TENURE_REWARD_REDEEMABLE_CONFETTI] : []);
     return !!n && i === s.z.TENURE_REWARD_REDEEMABLE_CONFETTI
   },
@@ -179,12 +179,12 @@ let y = new Set,
   };
 
 function Z() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : O.CL,
+  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : j.CL,
     t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     n = (0, r.e7)([h.Z], () => h.Z.isFetchingForApplication(e)),
     s = (0, r.e7)([p.default], () => {
       let e = p.default.getCurrentUser();
-      return null != e && (0, _.M5)(e, O.p9.TIER_2)
+      return null != e && (0, _.M5)(e, j.p9.TIER_2)
     }),
     a = i.useRef(!1);
   i.useEffect(() => {
@@ -196,7 +196,7 @@ function w() {
   let e = (0, x.oY)({
     location: "Home"
   });
-  Z(O.CL), Z(S.XAJ, e), k(j.qY)
+  Z(j.CL), Z(S.XAJ, e), k(O.qY)
 }
 
 function k(e) {

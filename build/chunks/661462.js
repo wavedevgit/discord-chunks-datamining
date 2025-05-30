@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => p
 }), n(388685);
-var o = n(255367),
-  r = n(73800),
+var r = n(255367),
+  o = n(73800),
   c = n(481060),
   i = n(785717),
   l = n(128156),
@@ -16,14 +16,14 @@ function f(e) {
   let {
     user: t,
     currentUser: n,
-    section: r,
+    section: o,
     subsection: c,
     displayProfile: i,
     guildId: u,
     channelId: f,
     onClose: p
   } = e;
-  return r === d.oh.ACTIVITY ? (0, o.jsx)(l.Z, {
+  return o === d.oh.ACTIVITY ? (0, r.jsx)(l.Z, {
     user: t,
     currentUser: n,
     displayProfile: i,
@@ -31,12 +31,12 @@ function f(e) {
     channelId: f,
     subsection: c,
     onClose: p
-  }) : r === d.oh.MUTUAL_FRIENDS ? (0, o.jsx)(a.Z, {
+  }) : o === d.oh.MUTUAL_FRIENDS ? (0, r.jsx)(a.Z, {
     user: t,
     guildId: u,
     channelId: f,
     onClose: p
-  }) : r === d.oh.MUTUAL_GUILDS ? (0, o.jsx)(s.Z, {
+  }) : o === d.oh.MUTUAL_GUILDS ? (0, r.jsx)(s.Z, {
     user: t,
     onClose: p
   }) : null
@@ -60,20 +60,20 @@ function p(e) {
     section: j,
     subsection: g,
     text: O
-  }, I] = r.useState((n = function(e) {
+  }, I] = o.useState((n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        o = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), o.forEach(function(t) {
-        var o;
-        o = n[t], t in e ? Object.defineProperty(e, t, {
-          value: o,
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = o
+        }) : e[t] = r
       })
     }
     return e
@@ -87,16 +87,16 @@ function p(e) {
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, o)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(l)).forEach(function(e) {
     Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
   }), n));
-  return (0, o.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: u.container,
-    children: [(0, o.jsx)(c.njP, {
+    children: [(0, r.jsx)(c.njP, {
       type: "top",
       className: u.tabBar,
       selectedItem: j,
@@ -109,21 +109,21 @@ function p(e) {
           return null != (n = b.find(t => t.section === e)) ? n : t
         })
       },
-      children: b.map(e => (0, o.jsx)(c.njP.Item, {
+      children: b.map(e => (0, r.jsx)(c.njP.Item, {
         className: u.tabBarItem,
         id: e.section,
         "aria-label": e.text,
-        children: (0, o.jsx)(c.Text, {
+        children: (0, r.jsx)(c.Text, {
           variant: "heading-md/normal",
           tag: "span",
           children: e.text
         })
       }, e.section))
-    }), (0, o.jsx)(c.njP.Panel, {
+    }), (0, r.jsx)(c.njP.Panel, {
       id: j,
       "aria-label": O,
       className: u.tabBarPanel,
-      children: (0, o.jsx)(f, {
+      children: (0, r.jsx)(f, {
         user: a,
         currentUser: s,
         displayProfile: d,

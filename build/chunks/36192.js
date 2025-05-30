@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(460562),
   E = n(823379),
   C = n(981631),
-  O = n(921944),
-  j = n(388032),
+  j = n(921944),
+  O = n(388032),
   S = n(232696);
 
 function v() {
@@ -35,7 +35,7 @@ function v() {
     [u, g] = r.useState(!1);
   r.useEffect(() => {
     (0, f.EW)(c.z.AUTH_SESSIONS_NEW, {
-      dismissAction: O.L.AUTO
+      dismissAction: j.L.AUTO
     }), (0, p.fw)();
     let e = setTimeout(() => g(!0), 500);
     return () => {
@@ -57,7 +57,7 @@ function v() {
       className: S.sessions,
       children: [(0, i.jsx)(d.hjN, {
         tag: d.RB0.H5,
-        title: j.intl.string(j.t.LLS19v),
+        title: O.intl.string(O.t.LLS19v),
         titleClassName: S.groupTitle,
         children: null != t ? (0, i.jsx)(T, {
           session: t,
@@ -65,7 +65,7 @@ function v() {
         }) : null
       }), !(n.length > 0) && (null == l ? void 0 : l.mfaEnabled) ? null : (0, i.jsxs)(d.hjN, {
         tag: d.RB0.H5,
-        title: j.intl.string(j.t.xx1MWV),
+        title: O.intl.string(O.t.xx1MWV),
         titleClassName: S.groupTitle,
         className: S.otherSessions,
         children: [n.map(e => (0, i.jsx)(T, {
@@ -80,10 +80,10 @@ function v() {
       })]
     }), n.length > 0 ? (0, i.jsxs)(d.hjN, {
       tag: d.RB0.H5,
-      title: E.size > 0 ? j.intl.string(j.t.mMEmRE) : j.intl.string(j.t.Vij32N),
+      title: E.size > 0 ? O.intl.string(O.t.mMEmRE) : O.intl.string(O.t.Vij32N),
       children: [(0, i.jsx)(d.R94, {
         type: d.geA.DESCRIPTION,
-        children: j.intl.string(j.t.OTXyaW)
+        children: O.intl.string(O.t.OTXyaW)
       }), (0, i.jsx)(d.zxk, {
         look: d.zxk.Looks.OUTLINED,
         color: d.zxk.Colors.RED,
@@ -92,18 +92,18 @@ function v() {
         onClick: () => {
           E.size > 0 ? (0, p.L$)(Array.from(E)) : (0, p.L$)(n.map(e => e.id_hash))
         },
-        children: E.size > 0 ? j.intl.formatToPlainString(j.t["83CPLi"], {
+        children: E.size > 0 ? O.intl.formatToPlainString(O.t["83CPLi"], {
           count: E.size
-        }) : j.intl.string(j.t.cLmmeX)
+        }) : O.intl.string(O.t.cLmmeX)
       })]
     }) : null]
   }), (0, i.jsxs)(d.hjN, {
     tag: d.RB0.H1,
-    title: j.intl.string(j.t["+1h0k5"]),
+    title: O.intl.string(O.t["+1h0k5"]),
     children: [(0, i.jsx)(d.R94, {
       type: d.geA.DESCRIPTION,
       className: S.description,
-      children: j.intl.string(j.t.zZp619)
+      children: O.intl.string(O.t.zZp619)
     }), (null == l ? void 0 : l.isStaff()) ? (0, i.jsxs)("div", {
       className: S.tools,
       children: [(0, i.jsx)(d.Text, {
@@ -153,7 +153,7 @@ function T(e) {
       case void 0:
       case "":
         return {
-          text: j.intl.string(j.t.cDHCNT), icon: d.pzj
+          text: O.intl.string(O.t.cDHCNT), icon: d.pzj
         };
       case "ios":
       case "android":
@@ -165,7 +165,7 @@ function T(e) {
           text: e, icon: d.pzj
         }
     }
-  }(null == (s = o.client_info) ? void 0 : s.os), C = c ? null : (0, h.p)(o.approx_last_used_time), O = [_, b].filter(E.lm), v = [f, C].filter(E.lm);
+  }(null == (s = o.client_info) ? void 0 : s.os), C = c ? null : (0, h.p)(o.approx_last_used_time), j = [_, b].filter(E.lm), v = [f, C].filter(E.lm);
   return (0, i.jsxs)("div", {
     className: l()(S.session, c ? S.currentSession : null),
     children: [(0, i.jsx)("div", {
@@ -180,12 +180,12 @@ function T(e) {
         variant: "eyebrow",
         className: S.sessionInfoRow,
         children: [(0, i.jsx)("span", {
-          children: O[0]
-        }), O.length > 1 && (0, i.jsxs)(i.Fragment, {
+          children: j[0]
+        }), j.length > 1 && (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)("span", {
             children: "\xb7"
           }), (0, i.jsx)("span", {
-            children: O[1]
+            children: j[1]
           })]
         })]
       }), (0, i.jsxs)(d.Text, {
@@ -214,7 +214,7 @@ function T(e) {
       onClick: e => {
         e.shiftKey ? null == u || u(!0) : (0, p.L$)(o.id_hash)
       },
-      "aria-label": j.intl.string(j.t.E4MJNj),
+      "aria-label": O.intl.string(O.t.E4MJNj),
       children: (0, i.jsx)(d.Dio, {
         size: "md",
         color: "currentColor"
@@ -239,14 +239,14 @@ function N() {
         className: S.sessionInfoRow,
         color: "text-muted",
         children: (0, i.jsx)("span", {
-          children: j.intl.string(j.t.iUa0sr)
+          children: O.intl.string(O.t.iUa0sr)
         })
       }), (0, i.jsx)(d.Text, {
         variant: "text-sm/medium",
         className: S.sessionInfoRow,
         color: "text-muted",
         children: (0, i.jsx)("span", {
-          children: j.intl.format(j.t["044+8v"], {
+          children: O.intl.format(O.t["044+8v"], {
             onClick: () => u.Z.setSection(C.oAB.ACCOUNT, null, {
               analyticsLocations: [g.Z.USER_SETTINGS_SESSIONS]
             })

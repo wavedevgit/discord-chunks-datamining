@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(785145),
   E = n(981631),
   C = n(526761),
-  O = n(726985),
-  j = n(388032),
+  j = n(726985),
+  O = n(388032),
   S = n(545784);
 
 function v() {
@@ -62,10 +62,10 @@ function v() {
   }, [null == v ? void 0 : v.id, T]);
   let R = !0,
     D = !0;
-  return y && 1 === A.length && (A.includes(O.s6.PROFILE_SERVER_PROFILES) ? (P(C.NB.GUILD), D = !1) : A.includes(O.s6.PROFILE_USER_PROFILE) && (P(C.NB.USER_PROFILE), R = !1)), (0, i.jsxs)(l.y5t, {
+  return y && 1 === A.length && (A.includes(j.s6.PROFILE_SERVER_PROFILES) ? (P(C.NB.GUILD), D = !1) : A.includes(j.s6.PROFILE_USER_PROFILE) && (P(C.NB.USER_PROFILE), R = !1)), (0, i.jsxs)(l.y5t, {
     component: (0, i.jsx)(l.X6q, {
       variant: "heading-lg/semibold",
-      children: j.intl.string(j.t["vi7f+v"])
+      children: O.intl.string(O.t["vi7f+v"])
     }),
     children: [(0, i.jsxs)(l.njP, {
       className: S.tabBar,
@@ -76,11 +76,11 @@ function v() {
       children: [D ? (0, i.jsx)(l.njP.Item, {
         className: S.tabBarItem,
         id: C.NB.USER_PROFILE,
-        children: j.intl.string(j.t["2p07FR"])
+        children: O.intl.string(O.t["2p07FR"])
       }, C.NB.USER_PROFILE) : null, R ? (0, i.jsx)(l.njP.Item, {
         className: S.tabBarItem,
         id: C.NB.GUILD,
-        children: j.intl.string(j.t.kPHroa)
+        children: O.intl.string(O.t.kPHroa)
       }, C.NB.GUILD) : null]
     }), N === C.NB.GUILD ? (0, i.jsx)(u.Z, {
       selectedGuild: v

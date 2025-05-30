@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(209698),
   E = n(687158),
   C = n(892001),
-  O = n(899007),
-  j = n(648052),
+  j = n(899007),
+  O = n(648052),
   S = n(867176),
   v = n(537006),
   T = n(483517),
@@ -119,8 +119,8 @@ function ee(e) {
     eC = (0, x.b)({
       location: "UserProfileAccountPopout"
     }),
-    eO = r.useRef((0, G.Z)(e => e.shouldRenderTenureLevelUp)),
-    ej = r.useMemo(() => (0, g.Z)(), []),
+    ej = r.useRef((0, G.Z)(e => e.shouldRenderTenureLevelUp)),
+    eO = r.useMemo(() => (0, g.Z)(), []),
     [eS, ev] = r.useState(!0);
   r.useEffect(() => {
     setTimeout(() => {
@@ -129,11 +129,11 @@ function ee(e) {
   }, []);
   let eT = e => {
       null == n || n(), (0, C.openUserProfileModal)($({
-        customStatusPrompt: ej,
+        customStatusPrompt: eO,
         sourceAnalyticsLocations: es
       }, el, e))
     },
-    eN = (null == er ? void 0 : er.profileEffectId) != null && !eO.current;
+    eN = (null == er ? void 0 : er.profileEffectId) != null && !ej.current;
   return (0, i.jsx)(u.Gt, {
     value: es,
     children: (0, i.jsx)(_.Mt, {
@@ -156,7 +156,7 @@ function ee(e) {
               user: t,
               displayProfile: er,
               themeType: q.lY.POPOUT
-            }), (0, i.jsx)(O.Z, {
+            }), (0, i.jsx)(j.Z, {
               user: t,
               displayProfile: er,
               themeType: q.lY.POPOUT,
@@ -166,7 +166,7 @@ function ee(e) {
               user: t,
               themeType: q.lY.POPOUT,
               onCloseProfile: n,
-              prompt: eE ? ej : null
+              prompt: eE ? eO : null
             })]
           }), eN && (0, i.jsx)(b.Z, {
             profileEffectId: null == er ? void 0 : er.profileEffectId,
@@ -182,12 +182,12 @@ function ee(e) {
               nickname: U.ZP.getName(null, null, t),
               onOpenProfile: ei ? void 0 : eT,
               pronouns: null == er ? void 0 : er.pronouns,
-              tags: (0, i.jsx)(j.Z, {
+              tags: (0, i.jsx)(O.Z, {
                 displayProfile: er,
                 themeType: q.lY.POPOUT,
                 onClose: n,
                 shouldOpenBadgeTooltip: null != et ? e => e === et : void 0,
-                shouldGlowTenureBadge: eO.current
+                shouldGlowTenureBadge: ej.current
               }),
               nicknameIcons: (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(I.Z, {

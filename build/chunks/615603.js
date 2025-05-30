@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(78839),
   E = n(267642),
   C = n(63063),
-  O = n(74538),
-  j = n(283029),
+  j = n(74538),
+  O = n(283029),
   S = n(357956),
   v = n(275909),
   T = n(981631),
@@ -177,14 +177,14 @@ let w = function(e) {
         allGuildBoostsAreOnCooldown: r
       }
     }, [s]),
-    H = null != p ? O.ZP.getNumIncludedPremiumGuildSubscriptionSlots(p.planId) : 0,
+    H = null != p ? j.ZP.getNumIncludedPremiumGuildSubscriptionSlots(p.planId) : 0,
     z = Math.max(0, H - M.length),
     W = V > H,
     Y = H === s.length,
     K = Y ? z : 1,
     q = r.useMemo(() => {
       let e = [];
-      for (let t = 0; t < K; t++) e.push((0, i.jsx)(j.Z, {
+      for (let t = 0; t < K; t++) e.push((0, i.jsx)(O.Z, {
         className: y.headerBoostGem,
         useReducedMotion: v
       }, t));
@@ -197,7 +197,7 @@ let w = function(e) {
       numUnappliedGuildBoostSlots: Q
     }) : I.intl.formatToPlainString(F ? I.t["3DW6DQ"] : I.t.BPadnJ, {
       numUnappliedGuildBoostSlots: Q
-    }), O.ZP.isPremium(w)) {
+    }), j.ZP.isPremium(w)) {
     let e = (e, t) => (0, i.jsx)(c.P3F, {
       className: y.headerLearnMoreLink,
       tag: "span",

@@ -23,8 +23,8 @@ var i = n(255367),
   x = n(784238),
   E = n(346497),
   C = n(422034),
-  O = n(206127),
-  j = n(710220),
+  j = n(206127),
+  O = n(710220),
   S = n(474936),
   v = n(388032),
   T = n(909176);
@@ -74,7 +74,7 @@ function y(e) {
     variant: t = "text-lg/normal",
     withBottomMargin: n = !0,
     isMarketingPageV2Enabled: r
-  } = e, s = (0, O.$)();
+  } = e, s = (0, j.$)();
   return (0, i.jsx)(o.Text, {
     variant: t,
     color: r ? "header-secondary" : "always-white",
@@ -93,7 +93,7 @@ let A = r.forwardRef((e, t) => {
     isFullscreen: s,
     className: u,
     buttonClassName: x,
-    subscriptionTier: O,
+    subscriptionTier: j,
     entrypoint: A,
     isDarkMode: P
   } = e, {
@@ -114,7 +114,7 @@ let A = r.forwardRef((e, t) => {
           variant: s ? "display-lg" : "display-md",
           color: "always-white",
           children: v.intl.string(v.t.YCZldH)
-        }), V ? (0, i.jsx)(j.Z, {
+        }), V ? (0, i.jsx)(O.Z, {
           referrer: U
         }) : G ? (0, i.jsx)("div", {
           className: T.affinityDescription,
@@ -129,7 +129,7 @@ let A = r.forwardRef((e, t) => {
             forceWhite: !0
           })
         }) : (0, i.jsx)(N, {
-          subscriptionTier: null != (r = null != O ? O : null == k || null == (n = k.subscription_trial) ? void 0 : n.sku_id) ? r : w,
+          subscriptionTier: null != (r = null != j ? j : null == k || null == (n = k.subscription_trial) ? void 0 : n.sku_id) ? r : w,
           inOfferExperience: L,
           buttonClassName: x,
           isDarkMode: P

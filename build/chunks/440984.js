@@ -26,17 +26,17 @@ function E(e) {
     premiumType: n,
     onClose: E,
     confettiCanvas: C,
-    userWasChurned: O = !1,
-    userDiscountOffer: j
-  } = e, S = (0, o.ZP)(), v = (0, l.wj)(S) ? _ : x, T = r.useRef(null), [N, I] = r.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, j), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+    userWasChurned: j = !1,
+    userDiscountOffer: O
+  } = e, S = (0, o.ZP)(), v = (0, l.wj)(S) ? _ : x, T = r.useRef(null), [N, I] = r.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), P = (0, m.T4)(A.amount, A.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   if (r.useEffect(() => {
       null != T.current && null != y && I(!0)
-    }, [T, N, y]), null == j || null == y) return null;
+    }, [T, N, y]), null == O || null == y) return null;
   let D = f.intl.format(f.t.gPzMHR, {
-      numMonths: j.discount.user_usage_limit,
+      numMonths: O.discount.user_usage_limit,
       discountedPrice: y,
       regularPrice: P
     }),
@@ -66,7 +66,7 @@ function E(e) {
               className: b.nitroIcon
             }), (0, i.jsx)(a.X6q, {
               variant: "heading-xl/bold",
-              children: O ? f.intl.string(f.t.gOOPaG) : f.intl.string(f.t.PZSyRk)
+              children: j ? f.intl.string(f.t.gOOPaG) : f.intl.string(f.t.PZSyRk)
             })]
           }), (0, i.jsx)("div", {
             className: b.bodyString,

@@ -20,8 +20,8 @@ var i, r = n(255367),
   x = n(925329),
   E = n(267101),
   C = n(240864),
-  O = n(942833),
-  j = n(400916),
+  j = n(942833),
+  O = n(400916),
   S = n(916001),
   v = n(539290),
   T = n(336197),
@@ -175,7 +175,7 @@ function er(e) {
     guildProductListingId: n
   } = e, i = (0, E.hO)(t, n, {
     requireCurrentGuild: !1
-  }), l = (0, O.C)(i), a = (0, m.e7)([R.Z], () => R.Z.getGuild(t)), o = (null == i ? void 0 : i.role_id) != null && (null == i ? void 0 : i.attachments_count) === 0 ? W.intl.string(W.t.H11qcX) : l, c = s.useCallback(async () => {
+  }), l = (0, j.C)(i), a = (0, m.e7)([R.Z], () => R.Z.getGuild(t)), o = (null == i ? void 0 : i.role_id) != null && (null == i ? void 0 : i.attachments_count) === 0 ? W.intl.string(W.t.H11qcX) : l, c = s.useCallback(async () => {
     (null == a ? void 0 : a.hasFeature(F.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0 ? await (0, T.Z)(F.Z5c.GUILD_PRODUCT(t, n)) : await (0, T.Z)(F.Z5c.CHANNEL(t)), (0, p.xf)()
   }, [a, t, n]);
   return (0, r.jsxs)(r.Fragment, {
@@ -211,7 +211,7 @@ function es(e) {
         color: "header-secondary",
         className: Y.guildProductBenefitLabel,
         children: W.intl.string(W.t.hxawo6)
-      }), (0, r.jsx)(j.Z, {
+      }), (0, r.jsx)(O.Z, {
         guildId: i,
         productId: l.id
       })]
@@ -733,7 +733,7 @@ function ea(e) {
   let x = (0, m.e7)([R.Z], () => R.Z.getGuild(null == h ? void 0 : h.guildId)),
     E = c ? h : void 0,
     C = i.subscription,
-    O = (0, m.e7)([Z.Z], () => null != C && C.type !== F.NYc.PREMIUM ? Z.Z.get(C.items[0].planId) : null);
+    j = (0, m.e7)([Z.Z], () => null != C && C.type !== F.NYc.PREMIUM ? Z.Z.get(C.items[0].planId) : null);
   return (0, r.jsx)(el, {
     applicationStatistics: p,
     application: g ? _ : E,
@@ -744,7 +744,7 @@ function ea(e) {
     compactMode: a,
     className: o,
     payment: i,
-    plan: O
+    plan: j
   })
 }
 K(el, "defaultProps", {

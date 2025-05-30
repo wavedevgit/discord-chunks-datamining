@@ -1,8 +1,8 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 8787 **/
 n.d(t, {
-  D: () => i
+  D: () => r
 });
-let r = (0, n(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2025-05_activity_sharing_popout_per_server",
   label: "Activity Sharing Popout Per Server",
@@ -27,8 +27,8 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i(e) {
-  return r.useExperiment({
+function r(e) {
+  return i.useExperiment({
     location: e
   }, {
     autoTrackExposure: !0

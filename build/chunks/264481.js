@@ -5,8 +5,8 @@ n.d(t, {
   b0: () => O,
   s_: () => g
 }), n(388685);
-var o = n(255367),
-  r = n(73800),
+var r = n(255367),
+  o = n(73800),
   c = n(392711),
   i = n(481060),
   l = n(493683),
@@ -29,32 +29,32 @@ function j(e) {
   let {
     heading: t,
     bodyText: n,
-    children: r
+    children: o
   } = e;
-  return (0, o.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: b.empty,
-    children: [(0, o.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: b.textContainer,
-      children: [(0, o.jsx)(i.X6q, {
+      children: [(0, r.jsx)(i.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
         children: t
-      }), (0, o.jsx)(i.Text, {
+      }), (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: n
       })]
-    }), r]
+    }), o]
   })
 }
 
 function g() {
   let e = m.intl.string(m.t.RnD2yc),
-    [t] = r.useState(() => {
+    [t] = o.useState(() => {
       var e;
       return (null != (e = (0, c.sample)(_)) ? e : _[0])()
     });
-  return (0, o.jsx)(j, {
+  return (0, r.jsx)(j, {
     heading: e,
     bodyText: t
   })
@@ -62,11 +62,11 @@ function g() {
 
 function O() {
   let e = m.intl.string(m.t.bFgqYG),
-    [t] = r.useState(() => {
+    [t] = o.useState(() => {
       var e;
       return (null != (e = (0, c.sample)(y)) ? e : y[0])()
     });
-  return (0, o.jsx)(j, {
+  return (0, r.jsx)(j, {
     heading: e,
     bodyText: t
   })
@@ -80,30 +80,30 @@ function I(e) {
     onClose: s
   } = e, d = u.ZP.getName(n, a, t), p = m.intl.formatToPlainString(m.t.sjSitL, {
     name: d
-  }), [_] = r.useState(() => {
+  }), [_] = o.useState(() => {
     var e;
     return (null != (e = (0, c.sample)(x)) ? e : x[0])(d)
-  }), y = r.useCallback(() => {
+  }), y = o.useCallback(() => {
     l.Z.openPrivateChannel({
       recipientIds: t.id
     }), null == s || s()
-  }, [t.id, s]), h = r.useCallback(() => {
+  }, [t.id, s]), h = o.useCallback(() => {
     l.Z.openPrivateChannel({
       recipientIds: t.id,
       joinCall: !0
     }), null == s || s()
   }, [t.id, s]);
-  return (0, o.jsx)(j, {
+  return (0, r.jsx)(j, {
     heading: p,
     bodyText: _,
-    children: (0, o.jsxs)("div", {
+    children: (0, r.jsxs)("div", {
       className: b.buttonRow,
-      children: [(0, o.jsx)(f.tG, {
+      children: [(0, r.jsx)(f.tG, {
         icon: i.kBi,
         text: m.intl.string(m.t["g33r/P"]),
         onClick: y,
         themeColor: "secondary"
-      }), (0, o.jsx)(f.tG, {
+      }), (0, r.jsx)(f.tG, {
         icon: i.qWc,
         text: m.intl.string(m.t.JJogjo),
         onClick: h,
@@ -115,15 +115,15 @@ function I(e) {
 
 function v() {
   let e = (0, s.ZP)();
-  return (0, o.jsx)("div", {
+  return (0, r.jsx)("div", {
     className: b.connectionPlatforms,
     children: h.map((t, n) => {
-      let r = d.Z.get(t);
-      if (null == r) return null;
-      let c = (0, i.wjy)(e) ? r.icon.darkPNG : r.icon.lightPNG;
-      return (0, o.jsx)("img", {
+      let o = d.Z.get(t);
+      if (null == o) return null;
+      let c = (0, i.wjy)(e) ? o.icon.darkPNG : o.icon.lightPNG;
+      return (0, r.jsx)("img", {
         src: c,
-        alt: r.name,
+        alt: o.name,
         className: b.connectionIcon
       }, n)
     })
@@ -133,21 +133,21 @@ function v() {
 function N(e) {
   let {
     onClose: t
-  } = e, n = r.useCallback(() => {
+  } = e, n = o.useCallback(() => {
     null == t || t(), a.Z.open(p.oAB.CONNECTIONS)
-  }, [t]), c = r.useCallback(() => {
+  }, [t]), c = o.useCallback(() => {
     null == t || t(), a.Z.open(p.oAB.CONTENT_AND_SOCIAL, "CONNECTED_GAMES")
   }, [t]);
-  return (0, o.jsxs)(j, {
-    heading: m.intl.string(m.t.Sc0oWF),
-    bodyText: m.intl.string(m.t.m8UJqa),
-    children: [(0, o.jsx)(v, {}), (0, o.jsxs)("div", {
+  return (0, r.jsxs)(j, {
+    heading: m.intl.string(m.t.VB6LWV),
+    bodyText: m.intl.string(m.t.KpjsU1),
+    children: [(0, r.jsx)(v, {}), (0, r.jsxs)("div", {
       className: b.buttonRow,
-      children: [(0, o.jsx)(f.tG, {
+      children: [(0, r.jsx)(f.tG, {
         text: m.intl.string(m.t["/Hl24e"]),
         onClick: n,
         themeColor: "secondary"
-      }), (0, o.jsx)(f.tG, {
+      }), (0, r.jsx)(f.tG, {
         text: m.intl.string(m.t.GTCx0t),
         onClick: c,
         themeColor: "secondary"

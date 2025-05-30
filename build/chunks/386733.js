@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(767714),
   E = n(119269),
   C = n(938736),
-  O = n(981631),
-  j = n(388032),
+  j = n(981631),
+  O = n(388032),
   S = n(357885),
   v = n(691766);
 
@@ -78,7 +78,7 @@ let I = e => {
       children: n
     });
     return (0, i.jsx)(o.ua7, {
-      text: j.intl.string(j.t.UnKHdn),
+      text: O.intl.string(O.t.UnKHdn),
       shouldShow: !l,
       tooltipContentClassName: S.unsentTooltipContent,
       children: e => (0, i.jsx)("div", N(T({
@@ -133,7 +133,7 @@ let I = e => {
     let {
       analyticsLocations: t
     } = e;
-    g.default.track(O.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+    g.default.track(j.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
       location_stack: t
     }), (0, o.ZDy)(async () => {
       let {
@@ -164,7 +164,7 @@ let I = e => {
       e === h.Fe.REDEEMED && N.redeemed++, e === h.Fe.CONVERTED && (N.redeemed++, N.converted++)
     });
     let I = N.sent === _.Q,
-      y = p.Z.getArticleURL(O.BhN.REFERRAL_PROGRAM),
+      y = p.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: R
       } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
@@ -202,7 +202,7 @@ let I = e => {
             children: [!t && !T && (0, i.jsx)(x.Z, {
               color: o.Ttl.CUSTOM,
               textOptions: {
-                textOverride: j.intl.string(j.t.Ve9Ge3)
+                textOverride: O.intl.string(O.t.Ve9Ge3)
               },
               className: l()(S.expandedProgressBarGiftingCTA, {
                 [S.expandedProgressBarGiftingCTALayout]: !t
@@ -222,7 +222,7 @@ let I = e => {
                   src: v,
                   alt: "",
                   className: S.expandedProgressBarSelectFriendsIcon
-                }), I ? j.intl.string(j.t.SY9tyM) : j.intl.string(j.t.Lm2nFR)]
+                }), I ? O.intl.string(O.t.SY9tyM) : O.intl.string(O.t.Lm2nFR)]
               })
             })]
           })]

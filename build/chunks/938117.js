@@ -1,6 +1,6 @@
 /** Chunk was on 8787 **/
 n.d(t, {
-  Z: () => j
+  Z: () => O
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -40,7 +40,7 @@ function C(e) {
   return e
 }
 
-function O(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,10 +53,10 @@ function O(e, t) {
   }), e
 }
 
-function j(e) {
+function O(e) {
   let {
     onLearnMore: t,
-    selectedBackgroundOption: j,
+    selectedBackgroundOption: O,
     onSelectBackgroundOption: S,
     currentDeviceId: v,
     smallerBackgroundOptions: T,
@@ -71,7 +71,7 @@ function j(e) {
     k = {
       isVideoBackgroundSupported: P,
       onSelectBackgroundOption: S,
-      selectedBackgroundOption: j
+      selectedBackgroundOption: O
     },
     L = r.useRef(k);
   r.useEffect(() => {
@@ -104,16 +104,16 @@ function j(e) {
     }) : null, (0, i.jsx)(h.Z, {
       canUseCustomBackgrounds: R,
       customBackgroundOptions: Z,
-      selectedOption: j,
+      selectedOption: O,
       onSelectOption: B,
       onUpsellClick: () => {
         (0, l.ZDy)(async () => {
           let {
             default: e
           } = await n.e("87200").then(n.bind(n, 592163));
-          return n => (0, i.jsx)(e, O(C({}, n), {
+          return n => (0, i.jsx)(e, j(C({}, n), {
             onLearnMore: t,
-            analyticsSource: O(C({}, w.location), {
+            analyticsSource: j(C({}, w.location), {
               object: b.qAy.BUTTON_CTA
             })
           }))

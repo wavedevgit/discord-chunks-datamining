@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(367515),
   E = n(250285),
   C = n(292352),
-  O = n(134612),
-  j = n(941839),
+  j = n(134612),
+  O = n(941839),
   S = n(388032),
   v = n(589608),
   T = n(34997),
@@ -71,32 +71,32 @@ function A() {
           className: N.marginBottom8,
           variant: "heading-xl/medium",
           children: (0, i.jsx)(c.y5t, {
-            children: S.intl.string(j.default.pHEnV1)
+            children: S.intl.string(O.default.pHEnV1)
           })
         }), (0, i.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
           className: N.marginBottom20,
-          children: S.intl.string(j.default["1J/gZ2"])
+          children: S.intl.string(O.default["1J/gZ2"])
         })]
       }), (0, i.jsx)("img", {
         className: T.bannerArt,
         src: I,
-        alt: S.intl.string(j.default["r+PDmp"])
+        alt: S.intl.string(O.default["r+PDmp"])
       })]
     }), (0, i.jsxs)("div", {
       className: T.steps,
       children: [(0, i.jsx)(y, {
-        header: S.intl.string(j.default["7xxAnp"]),
-        description: S.intl.string(j.default["1M9So6"]),
+        header: S.intl.string(O.default["7xxAnp"]),
+        description: S.intl.string(O.default["1M9So6"]),
         stepNumber: 1
       }), (0, i.jsx)(y, {
-        header: S.intl.string(j.default["AXgx+f"]),
-        description: S.intl.string(j.default.GzMFnZ),
+        header: S.intl.string(O.default["AXgx+f"]),
+        description: S.intl.string(O.default.GzMFnZ),
         stepNumber: 2
       }), (0, i.jsx)(y, {
-        header: S.intl.string(j.default.MZn1tL),
-        description: S.intl.string(j.default["8rLBxM"]),
+        header: S.intl.string(O.default.MZn1tL),
+        description: S.intl.string(O.default["8rLBxM"]),
         stepNumber: 3
       })]
     })]
@@ -112,20 +112,20 @@ function P() {
         className: N.marginBottom8,
         variant: "heading-xl/medium",
         children: (0, i.jsx)(c.y5t, {
-          children: S.intl.string(j.default.zUCWEB)
+          children: S.intl.string(O.default.zUCWEB)
         })
       }), (0, i.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
         className: N.marginBottom20,
-        children: S.intl.format(j.default.yMnoDg, {
+        children: S.intl.format(O.default.yMnoDg, {
           link: "https://support.discord.com/hc/articles/14155060633623"
         })
       }), e ? null : (0, i.jsx)(b.Z, {})]
     }), (0, i.jsx)("img", {
       className: T.bannerArt,
       src: I,
-      alt: S.intl.string(j.default["r+PDmp"])
+      alt: S.intl.string(O.default["r+PDmp"])
     })]
   })
 }
@@ -226,7 +226,7 @@ let D = () => {
         count: t.length,
         max: n
       },
-      s = (0, m.o)(S.intl.formatToPlainString(j.default["+tnO39"], r), S.intl.formatToPlainString(j.default["pu6/U1"], r));
+      s = (0, m.o)(S.intl.formatToPlainString(O.default["+tnO39"], r), S.intl.formatToPlainString(O.default["pu6/U1"], r));
     return t.length > 0 ? (0, i.jsx)(R, {
       sectionType: C.ne.ACTIVE,
       sectionTitle: s,
@@ -241,7 +241,7 @@ let D = () => {
       }), (0, i.jsx)("div", {
         className: T.box,
         children: (0, i.jsx)(f.Z, {
-          text: S.intl.string(j.default.C4ScLC)
+          text: S.intl.string(O.default.C4ScLC)
         })
       })]
     })
@@ -249,9 +249,9 @@ let D = () => {
   Z = () => {
     let e = (0, h.VM)(),
       t = (0, p.Z)() ? C.AG : C.i0,
-      n = (0, m.o)(S.intl.formatToPlainString(j.default["1/PzIi"], {
+      n = (0, m.o)(S.intl.formatToPlainString(O.default["1/PzIi"], {
         maxConnections: t
-      }), S.intl.formatToPlainString(j.default.RcTgiI, {
+      }), S.intl.formatToPlainString(O.default.RcTgiI, {
         maxConnections: t
       }));
     return e ? (0, i.jsx)("div", {
@@ -271,12 +271,12 @@ let D = () => {
         throughline: t
       }).with({
         helpline: !0
-      }, () => S.intl.format(j.default.KOwsf3, {
+      }, () => S.intl.format(O.default.KOwsf3, {
         helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line"
       })).with({
         throughline: !0
-      }, () => S.intl.format(j.default["6tsC8v"], {
-        helpLink: O.$l
+      }, () => S.intl.format(O.default["6tsC8v"], {
+        helpLink: j.$l
       })).otherwise(() => null);
     return null == n ? null : (0, i.jsxs)("div", {
       className: l()(T.__invalid_helpLineInfo, N.marginTop20),
@@ -284,7 +284,7 @@ let D = () => {
         className: T.supportHeader,
         variant: "heading-sm/semibold",
         children: (0, i.jsx)(c.y5t, {
-          children: S.intl.string(j.default["7/tVho"])
+          children: S.intl.string(O.default["7/tVho"])
         })
       }), (0, i.jsx)(c.Text, {
         variant: "text-xs/medium",
@@ -295,9 +295,9 @@ let D = () => {
   },
   k = () => {
     let e = (0, h.mq)(C.ne.PENDING),
-      t = (0, m.o)(S.intl.formatToPlainString(j.default.IkAgkJ, {
+      t = (0, m.o)(S.intl.formatToPlainString(O.default.IkAgkJ, {
         count: e.length
-      }), S.intl.formatToPlainString(j.default.Q8XnAQ, {
+      }), S.intl.formatToPlainString(O.default.Q8XnAQ, {
         count: e.length
       }));
     return 0 === e.length ? null : (0, i.jsx)(R, {

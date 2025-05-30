@@ -22,8 +22,8 @@ var i = n(255367),
   x = n(355467),
   E = n(239091),
   C = n(230711),
-  O = n(410575),
-  j = n(941129),
+  j = n(410575),
+  O = n(941129),
   S = n(634894),
   v = n(586902),
   T = n(980591),
@@ -76,8 +76,8 @@ var i = n(255367),
   ex = n(212704),
   eE = n(14357),
   eC = n(763296),
-  eO = n(640806),
-  ej = n(768419),
+  ej = n(640806),
+  eO = n(768419),
   eS = n(184301),
   ev = n(52538),
   eT = n(670188),
@@ -181,7 +181,7 @@ function tg(e) {
     size: (0, w.y9)(_.EFr.SIZE_32)
   }), E = (0, _.dQu)(_.TVs.modules.guildbar.AVATAR_SIZE), {
     updateOpenPopoutRef: C,
-    highlightBadge: j,
+    highlightBadge: O,
     setHighlightBadge: S
   } = function() {
     let e = r.useRef(null),
@@ -209,7 +209,7 @@ function tg(e) {
       setHighlightBadge: i
     }
   }(), v = (0, ec.A)(m);
-  return null == a ? null : (0, i.jsx)(O.Z, {
+  return null == a ? null : (0, i.jsx)(j.Z, {
     object: te.qAy.AVATAR,
     children: (0, i.jsx)(eT.Z, {
       user: a,
@@ -227,7 +227,7 @@ function tg(e) {
         } = e;
         return (0, i.jsx)(ea.Z, {
           currentUser: a,
-          highlightBadge: j,
+          highlightBadge: O,
           openedAt: t,
           onClose: () => {
             null == n || n()
@@ -686,13 +686,13 @@ function th(e) {
     handleOpenSettingsContextMenu: x,
     dismissibleContents: E,
     nameplate: C,
-    accountContainerRef: O
-  } = e, j = (0, ec.A)(C);
+    accountContainerRef: j
+  } = e, O = (0, ec.A)(C);
   return (0, i.jsxs)("div", {
     className: ts.buttons,
-    style: j,
+    style: O,
     children: [(0, i.jsx)(t_, {
-      accountContainerRef: O,
+      accountContainerRef: j,
       selfMute: n,
       serverMute: s,
       suppress: a,
@@ -766,7 +766,7 @@ function tf() {
     } = (0, ey.Z)(h),
     {
       selfDeaf: C,
-      deaf: O
+      deaf: j
     } = (0, eI.Z)(h),
     T = (0, d.e7)([k.C], () => {
       var e;
@@ -781,7 +781,7 @@ function tf() {
     M = (0, d.e7)([et.Z], () => null != et.Z.getAwaitingRemoteSessionInfo()),
     U = (0, d.e7)([eW.Z], () => eW.Z.getGuildId()),
     V = (0, e_.D)(),
-    G = (0, j.u)(),
+    G = (0, O.u)(),
     F = e8.ZP.canUsePremiumGuildMemberProfile(t),
     H = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === tt.rL,
     {
@@ -840,9 +840,9 @@ function tf() {
     ec = (0, eb.Ws)({
       location: ti.dr.CONFLICT_CHECKS
     }),
-    ed = (0, d.e7)([ej.Z, eq.default, eG.Z], () => {
-      let e, t = ej.Z.getSyncingWith(),
-        n = ej.Z.getActivity(),
+    ed = (0, d.e7)([eO.Z, eq.default, eG.Z], () => {
+      let e, t = eO.Z.getSyncingWith(),
+        n = eO.Z.getActivity(),
         i = [];
       if (null != t ? e = t.partyId : null != n && null != n.party && null != n.party.id && (e = n.party.id), null != e) {
         var r;
@@ -873,7 +873,7 @@ function tf() {
       premiumSubscription: I,
       selfDeaf: C,
       selfMute: b,
-      serverDeaf: O,
+      serverDeaf: j,
       serverMute: f,
       speaking: m,
       speakingWhileMuted: y,
@@ -915,7 +915,7 @@ function tb(e) {
       markAsDismissed: h
     }) : p === u.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE ? () => (0, i.jsx)(eE.Z, {
       markAsDismissed: h
-    }) : p === u.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, i.jsx)(eO.Z, {
+    }) : p === u.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, i.jsx)(ej.Z, {
       markAsDismissed: h
     }) : p === u.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, i.jsx)(ev.Z, {}) : () => (0, i.jsx)(i.Fragment, {}),
     children: () => (0, i.jsx)(e4.Z, to(ta({
@@ -950,8 +950,8 @@ function t_(e) {
     onMouseLeave: x,
     onClick: E,
     onContextMenu: C,
-    nameplate: O,
-    accountContainerRef: j
+    nameplate: j,
+    accountContainerRef: O
   } = e, S = t || s || n, v = r.useRef(null), T = r.useRef(null), N = (0, p.O)(S ? "unmute" : "mute"), I = (0, h.P)(S ? "unmute" : "mute"), {
     activeVoice: y
   } = (0, eZ.o)(), {
@@ -1012,7 +1012,7 @@ function t_(e) {
         tooltipText: F,
         tooltipColor: u,
         tooltipForceOpen: m,
-        plated: null != O,
+        plated: null != j,
         onMouseEnter: () => {
           f(), L.onMouseEnter()
         },
@@ -1038,7 +1038,7 @@ function t_(e) {
         "aria-checked": S,
         disabled: a
       }), z && (0, i.jsx)(_.yRy, {
-        targetElementRef: j,
+        targetElementRef: O,
         position: "top",
         align: "left",
         nudgeAlignIntoViewport: !1,
@@ -1088,7 +1088,7 @@ function t_(e) {
                 canBeShown: W && w && !P && !e && !s,
                 children: (e, s) => (0, i.jsx)(e4.Z, ta({
                   ref: T,
-                  plated: null != O,
+                  plated: null != j,
                   tooltipForceOpen: Q,
                   tooltipColor: Q ? _.FGA.GREEN : void 0,
                   tooltipContentClassName: Q ? ts.voiceFilterWarning : void 0,

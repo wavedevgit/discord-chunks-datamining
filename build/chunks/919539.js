@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(922628),
   E = n(703115),
   C = n(526761),
-  O = n(726985),
-  j = n(736530),
+  j = n(726985),
+  O = n(736530),
   S = n(981631),
   v = n(388032);
 
@@ -64,9 +64,9 @@ function T(e) {
     }))
   }
   return (0, i.jsx)(b.U, {
-    setting: O.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
+    setting: j.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: C.FY.MESSAGE_REQUESTS_V2,
-    children: n === j.T ? (0, i.jsx)(_.Z, {
+    children: n === O.T ? (0, i.jsx)(_.Z, {
       title: v.intl.string(v.t["3o2ojo"]),
       value: !N && !y,
       onChange: e => D(e, !1),

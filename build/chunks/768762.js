@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => m
 });
-var o, r, c = n(255367),
+var r, o, c = n(255367),
   i = n(73800),
   l = n(120356),
   a = n.n(l),
@@ -20,7 +20,7 @@ let u = {
     [u.DOWN]: d.down,
     [u.LEFT]: d.left
   };
-class p extends(r = i.PureComponent) {
+class p extends(o = i.PureComponent) {
   render() {
     let {
       direction: e,
@@ -34,10 +34,10 @@ class p extends(r = i.PureComponent) {
       })
     })
   }
-}(o = "Directions") in p ? Object.defineProperty(p, o, {
+}(r = "Directions") in p ? Object.defineProperty(p, r, {
   value: u,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : p[o] = u;
+}) : p[r] = u;
 let m = p

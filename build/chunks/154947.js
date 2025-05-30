@@ -1,9 +1,11 @@
 /** Chunk was on 8787 **/
 e.exports = {
-  allActivitySharingTitle: "allActivitySharingTitle_eda416",
   divider: "divider_eda416",
   defaultSetting: "defaultSetting_eda416",
-  description: "description_eda416",
-  title: "title_eda416",
-  privacyAndTerms: "privacyAndTerms_eda416"
+  formTitle: "formTitle_eda416",
+  formDescription: "formDescription_eda416",
+  switchContainer: "switchContainer_eda416",
+  activitySharingSwitch: "activitySharingSwitch_eda416",
+  formSection: "formSection_eda416",
+  joinRequestSwitch: "joinRequestSwitch_eda416"
 }

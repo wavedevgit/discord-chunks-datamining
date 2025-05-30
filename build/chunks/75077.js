@@ -85,7 +85,7 @@ let b = (e, t, n) => (0, r.wj)(e) ? t : n,
       o({
         card: n.specialShopPerks
       })
-    }, d = O();
+    }, d = j();
     return a && o({
       card: n.nameplates
     }), null != n.tenureBadge && o({
@@ -162,7 +162,7 @@ let b = (e, t, n) => (0, r.wj)(e) ? t : n,
     let e = (0, i.e7)([l.default], () => l.default.getCurrentUser());
     return (0, o.I5)(e)
   },
-  O = () => {
+  j = () => {
     let e = l.default.getCurrentUser();
     return (0, o.M5)(e, d.p9.TIER_2)
   }
