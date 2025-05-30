@@ -1,6 +1,6 @@
 /**
   Module ID: 7549
-  Original File Name: e35c20c969ee8eac
+  Original File Name: 5ab8c1a7673ed1ed
 **/
 .container__270b2 {
     flex-direction: row;
@@ -130,7 +130,7 @@
 }
 
 .showScroller__4fb8c {
-    max-height: 140px
+    height: 140px
 }
 
 .button__4fb8c {
@@ -492,8 +492,13 @@
     border-color: ButtonText
 }
 
-:where(.visual-refresh) .header_d0b769 {
-    background-color: unset
+:where(.visual-refresh) .content_d0b769 {
+    padding-top: 8px
 }
 
-/*# sourceMappingURL=e35c20c969ee8eac.css.map*/
+:where(.visual-refresh) .header_d0b769 {
+    background-color: unset;
+    padding-bottom: 8px
+}
+
+/*# sourceMappingURL=5ab8c1a7673ed1ed.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 79010
-  Original File Name: e2a540b23802ab7b
+  Original File Name: e3538ae98ab398a4
 **/
 .container__270b2 {
     flex-direction: row;
@@ -130,7 +130,7 @@
 }
 
 .showScroller__4fb8c {
-    max-height: 140px
+    height: 140px
 }
 
 .button__4fb8c {
@@ -473,8 +473,13 @@
     border-color: ButtonText
 }
 
-:where(.visual-refresh) .header_d0b769 {
-    background-color: unset
+:where(.visual-refresh) .content_d0b769 {
+    padding-top: 8px
 }
 
-/*# sourceMappingURL=e2a540b23802ab7b.css.map*/
+:where(.visual-refresh) .header_d0b769 {
+    background-color: unset;
+    padding-bottom: 8px
+}
+
+/*# sourceMappingURL=e3538ae98ab398a4.css.map*/

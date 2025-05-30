@@ -25,14 +25,14 @@ function p(e) {
     recurrenceStartTimes: x,
     canViewMoreRecurrences: f,
     updateRecurrenceStartTimes: j
-  } = (0, c.Z)(l, t, n);
+  } = (0, c.Z)(l, t, n), m = b ? "div" : s.Ttm;
   return (0, r.jsxs)("div", {
     className: d.recurrences,
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-sm/medium",
       className: d.heading,
       children: a.intl.string(a.t["D/jjoa"])
-    }), (0, r.jsxs)(s.Ttm, {
+    }), (0, r.jsxs)(m, {
       className: i()(d.scroller, {
         [d.showScroller]: !b
       }),

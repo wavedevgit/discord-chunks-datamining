@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 7e3b8488266be105
+  Original File Name: a6110ada46d04fef
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -385,7 +385,7 @@
     height: 1px;
     margin-left: 16px;
     margin-right: 16px;
-    margin-top: calc(var(--custom-event-detail-info-tab-base-spacing)*-3)
+    margin-top: calc(var(--custom-event-detail-info-tab-base-spacing)*-1)
 }
 
 .guildInfoCard__50dcd {
@@ -3357,4 +3357,4 @@ html:not(.visual-refresh) .footer__7c901 {
     height: 100px
 }
 
-/*# sourceMappingURL=7e3b8488266be105.css.map*/
+/*# sourceMappingURL=a6110ada46d04fef.css.map*/
