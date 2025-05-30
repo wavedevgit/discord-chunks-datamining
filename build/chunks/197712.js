@@ -16,20 +16,22 @@ async function o(e) {
     cropDimensions: o,
     cropOriginCoordinates: s,
     maxDimensions: l,
-    imageRotation: c = 0
+    imageRotation: c = 0,
+    resizeWidth: u = null,
+    resizeHeight: d = null
   } = e, {
-    sourceX: u,
-    sourceY: d,
-    sourceWidth: m,
-    sourceHeight: g
+    sourceX: m,
+    sourceY: g,
+    sourceWidth: h,
+    sourceHeight: p
   } = (0, i.GS)({
     image: n,
     cropDimensions: o,
     cropOriginCoordinates: s,
     maxDimensions: l,
     imageRotation: c
-  }), h = await t.arrayBuffer(), p = new Worker(new URL("/assets/" + r.u("86047"), r.b)), E = new Promise((e, t) => {
-    p.onmessage = r => {
+  }), E = await t.arrayBuffer(), C = new Worker(new URL("/assets/" + r.u("86047"), r.b)), f = new Promise((e, t) => {
+    C.onmessage = r => {
       let {
         data: n
       } = r;
@@ -42,23 +44,25 @@ async function o(e) {
             let n = null == (r = t.target) ? void 0 : r.result;
             "string" == typeof n ? e(n) : e("")
           }, t.readAsDataURL(i)
-        }))), p.terminate()
+        }))), C.terminate()
       } else n.type === a.u.CROP_GIF_ERROR && (t(Error("Error cropping GIF", {
         cause: null == n ? void 0 : n.error
-      })), p.terminate())
+      })), C.terminate())
     }
   });
-  return p.postMessage({
+  return C.postMessage({
     type: a.u.CROP_GIF_START,
-    gif: new Uint8Array(h),
-    x: 0 | u,
-    y: 0 | d,
-    width: 0 | m,
-    height: 0 | g,
-    imageRotation: 0 | c
+    gif: new Uint8Array(E),
+    x: 0 | m,
+    y: 0 | g,
+    width: 0 | h,
+    height: 0 | p,
+    imageRotation: 0 | c,
+    resizeWidth: u,
+    resizeHeight: d
   }), {
-    result: E,
-    cancelFn: () => p.terminate()
+    result: f,
+    cancelFn: () => C.terminate()
   }
 }
 
