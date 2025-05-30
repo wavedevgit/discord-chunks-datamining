@@ -513,8 +513,7 @@ function eN(e) {
 }
 
 function eC(e) {
-  var t;
-  return (null == (t = e.taskConfigV2) ? void 0 : t.tasks[o.X.PLAY_ON_DESKTOP]) != null
+  return null != e.taskConfigV2.tasks[o.X.PLAY_ON_DESKTOP]
 }
 
 function eP(e) {
@@ -525,16 +524,14 @@ function eP(e) {
 }
 
 function eR(e) {
-  var t;
   let {
-    quest: n
+    quest: t
   } = e;
-  return (null == (t = n.config.taskConfigV2) ? void 0 : t.tasks[o.X.STREAM_ON_DESKTOP]) != null
+  return null != t.config.taskConfigV2.tasks[o.X.STREAM_ON_DESKTOP]
 }
 
 function ew(e) {
-  var t;
-  return (null == (t = e.config.taskConfigV2) ? void 0 : t.tasks[o.X.PLAY_ACTIVITY]) != null
+  return null != e.config.taskConfigV2.tasks[o.X.PLAY_ACTIVITY]
 }
 
 function eD(e) {
@@ -633,10 +630,7 @@ let eU = (e, t) => {
       quest: r,
       taskType: i,
       includeTaskTypes: a = o.T.ALL
-    } = e, s = r.config.taskConfigV2;
-    if (null == s) throw Error("Cannot retrieve task details for quest ".concat(r.id, "!"));
-    let l = null != i ? i : null == (t = Object.values(s.tasks).filter(e => a.has(e.type))[0]) ? void 0 : t.type,
-      c = null != (n = s.tasks[l]) ? n : s.tasks[o.X.STREAM_ON_DESKTOP];
+    } = e, s = r.config.taskConfigV2, l = null != i ? i : null == (t = Object.values(s.tasks).filter(e => a.has(e.type))[0]) ? void 0 : t.type, c = null != (n = s.tasks[l]) ? n : s.tasks[o.X.STREAM_ON_DESKTOP];
     if (null == c) throw Error("No task with type ".concat(i, " found for quest ").concat(r.id, "!"));
     let u = c.target,
       d = eH(r, c);
@@ -720,16 +714,10 @@ function eq(e) {
     percentComplete: s
   }
 }
-let eQ = e => t => e.some(e => {
-  var n;
-  return (null == (n = t.config.taskConfigV2) ? void 0 : n.tasks[e]) != null
-});
+let eQ = e => t => e.some(e => null != t.config.taskConfigV2.tasks[e]);
 
 function eX(e) {
-  return Array.from(o.T.IN_GAME).some(t => {
-    var n;
-    return (null == (n = e.config.taskConfigV2) ? void 0 : n.tasks[t]) != null
-  })
+  return Array.from(o.T.IN_GAME).some(t => null != e.config.taskConfigV2.tasks[t])
 }
 
 function eJ(e) {
@@ -909,17 +897,16 @@ function td(e) {
 }
 
 function tf(e) {
-  var t, n;
-  let r = Object.keys(null != (n = null == (t = e.config.taskConfigV2) ? void 0 : t.tasks) ? n : {}),
-    i = [];
-  for (let e of r) switch (e) {
+  let t = Object.keys(e.config.taskConfigV2.tasks),
+    n = [];
+  for (let e of t) switch (e) {
     case o.X.PLAY_ON_XBOX:
-      i.push(D.ABu.XBOX);
+      n.push(D.ABu.XBOX);
       break;
     case o.X.PLAY_ON_PLAYSTATION:
-      i.push(D.ABu.PLAYSTATION)
+      n.push(D.ABu.PLAYSTATION)
   }
-  return i
+  return n
 }
 
 function t_(e) {
@@ -980,8 +967,7 @@ function tv(e) {
 }
 
 function tI(e) {
-  var t, n;
-  return new Set(Object.keys(null != (n = null == (t = e.config.taskConfigV2) ? void 0 : t.tasks) ? n : {}))
+  return new Set(Object.keys(e.config.taskConfigV2.tasks))
 }
 
 function tS(e, t) {
