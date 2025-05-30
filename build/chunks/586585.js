@@ -1,18 +1,19 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => h,
-  g: () => _
+  Z: () => m,
+  g: () => p
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   a = n(600164),
-  o = n(612853),
-  s = n(388032),
-  l = n(240150);
+  o = n(563132),
+  s = n(612853),
+  l = n(388032),
+  c = n(240150);
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,20 +22,20 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,70 +46,73 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var _ = function(e) {
+var p = function(e) {
   return e[e.CONTINUE = 0] = "CONTINUE", e[e.UPGRADE = 1] = "UPGRADE", e[e.PURCHASE = 2] = "PURCHASE", e
 }({});
-let p = e => {
+let h = e => {
   let {
     onBack: t,
     backText: n,
-    primaryIcon: c,
-    primaryCTA: d,
-    primaryType: _,
-    primaryText: p,
-    primaryTooltip: h,
-    primaryDisabled: m,
-    primarySubmitting: g,
-    onPrimary: E,
-    secondaryText: b,
-    onSecondary: y
-  } = e, O = () => {
-    if (null == d || null == p) return null;
-    let e = 2 === d ? i.gtL : i.zxk,
+    primaryIcon: u,
+    primaryCTA: f,
+    primaryType: p,
+    primaryText: h,
+    primaryTooltip: m,
+    primaryDisabled: g,
+    primarySubmitting: E,
+    onPrimary: b,
+    secondaryText: y,
+    onSecondary: O
+  } = e, {
+    premiumRebrandBackgroundClassName: v
+  } = (0, o.JL)(), I = () => {
+    if (null == f || null == h) return null;
+    let e = 2 === f ? i.gtL : i.zxk,
       t = {
-        innerClassName: l.button,
-        type: _,
-        disabled: m,
-        submitting: g,
-        color: 0 === d ? i.zxk.Colors.BRAND : i.zxk.Colors.GREEN,
-        onClick: E
+        innerClassName: c.button,
+        type: p,
+        disabled: g,
+        submitting: E,
+        color: 0 === f ? i.zxk.Colors.BRAND : i.zxk.Colors.GREEN,
+        onClick: b
       };
-    return null != h ? (0, r.jsx)(i.ua7, {
-      text: h,
-      children: n => (0, r.jsxs)(e, f(u({}, n, t), {
-        children: [null == c ? null : (0, r.jsx)(c, {
+    return null != m ? (0, r.jsx)(i.ua7, {
+      text: m,
+      children: n => (0, r.jsxs)(e, _(d({}, n, t), {
+        children: [null == u ? null : (0, r.jsx)(u, {
           color: "currentColor",
-          className: l.primaryIcon
-        }), p]
+          className: c.primaryIcon
+        }), h]
       }))
-    }) : (0, r.jsxs)(e, f(u({}, t), {
-      children: [null == c ? null : (0, r.jsx)(c, {
+    }) : (0, r.jsxs)(e, _(d({}, t), {
+      children: [null == u ? null : (0, r.jsx)(u, {
         color: "currentColor",
-        className: l.primaryIcon
-      }), p]
+        className: c.primaryIcon
+      }), h]
     }))
-  }, v = () => null == b ? null : (0, r.jsx)(i.zxk, {
+  }, S = () => null == y ? null : (0, r.jsx)(i.zxk, {
     color: i.zxk.Colors.PRIMARY,
     look: i.zxk.Looks.LINK,
-    onClick: y,
-    children: b
-  }), I = () => null == t ? null : (0, r.jsx)(i.zxk, {
-    className: l.back,
+    onClick: O,
+    children: y
+  }), T = () => null == t ? null : (0, r.jsx)(i.zxk, {
+    className: c.back,
     color: i.zxk.Colors.PRIMARY,
     look: i.zxk.Looks.LINK,
     onClick: t,
-    children: null != n ? n : s.intl.string(s.t["13/7kZ"])
+    children: null != n ? n : l.intl.string(l.t["13/7kZ"])
   });
   return (0, r.jsxs)(i.mzw, {
     justify: a.Z.Justify.BETWEEN,
     align: a.Z.Align.CENTER,
-    children: [O(), v(), (0, r.jsx)(o.Z, {}), I()]
+    className: v,
+    children: [I(), S(), (0, r.jsx)(s.Z, {}), T()]
   })
 };
-p.CTAType = _;
-let h = p
+h.CTAType = p;
+let m = h

@@ -59,18 +59,19 @@ function g(e) {
     setBodyNode: O,
     setFooterNode: v,
     setModalOverlayNode: I,
-    setReadySlideId: S
-  } = (0, d.JL)(), T = y.find(e => e.key === b);
+    setReadySlideId: S,
+    premiumRebrandBackgroundClassName: T
+  } = (0, d.JL)(), A = y.find(e => e.key === b);
   i.useEffect(() => {
     I(null)
-  }, [b, I]), l()(null != T, "Unknown step for current payment flow.");
-  let A = null != (c = null == T || null == (t = T.options) ? void 0 : t.hideSlider) && c,
-    N = null == T || null == (n = T.options) ? void 0 : n.bodyClassName,
-    C = null == T || null == (a = T.options) ? void 0 : a.sliderBodyClassName;
-  return void 0 !== g && g && (C = _.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
-    children: [null == (p = null == T || null == (s = T.options) ? void 0 : s.renderHeader) || p ? h : null, T.renderStep(E), null == b || A ? null : (0, r.jsxs)(r.Fragment, {
+  }, [b, I]), l()(null != A, "Unknown step for current payment flow.");
+  let N = null != (c = null == A || null == (t = A.options) ? void 0 : t.hideSlider) && c,
+    C = null == A || null == (n = A.options) ? void 0 : n.bodyClassName,
+    P = null == A || null == (a = A.options) ? void 0 : a.sliderBodyClassName;
+  return void 0 !== g && g && (P = _.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
+    children: [null == (p = null == A || null == (s = A.options) ? void 0 : s.renderHeader) || p ? h : null, A.renderStep(E), null == b || N ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
-        className: o()(N, _.body, _.noRoundedCorners, {
+        className: o()(C, _.body, _.noRoundedCorners, T, {
           [_.reviewStep]: b === f.h8.REVIEW
         }),
         children: (0, r.jsx)(u.MyZ, {
@@ -81,7 +82,7 @@ function g(e) {
           children: y.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
             id: e.key,
             children: (0, r.jsx)("form", {
-              className: o()(_.sliderBody, C),
+              className: o()(_.sliderBody, P),
               ref: e => {
                 O(e)
               },
