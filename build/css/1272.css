@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: f8e8623e1b334919
+  Original File Name: 0689be86145bb9db
 **/
 .container__74da2 {
     align-items: center;
@@ -4810,6 +4810,10 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width))
 }
 
+.visual-refresh .sidebarList_c48ade:has([data-has-banner=true][data-banner-visible=true]) {
+    border-top: none
+}
+
 .visual-refresh .sidebarListRounded_c48ade {
     -webkit-backdrop-filter: blur(0);
     backdrop-filter: blur(0);
@@ -8609,4 +8613,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=f8e8623e1b334919.css.map*/
+/*# sourceMappingURL=0689be86145bb9db.css.map*/

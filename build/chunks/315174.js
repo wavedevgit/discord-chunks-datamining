@@ -381,6 +381,8 @@ let M = i.memo(function(e) {
     theme: n ? C.BRd.DARK : void 0,
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
+        "data-has-banner": q(),
+        "data-banner-visible": n,
         ref: W,
         className: o()(s, {
           [x.container]: !0,

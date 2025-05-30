@@ -1,6 +1,6 @@
 /**
   Module ID: 78715
-  Original File Name: 87a27f46e703d805
+  Original File Name: 5f70450b43b8365e
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1203,7 +1203,7 @@
 }
 
 .visual-refresh .communityInfoVisible_f37cb1 .header_f37cb1,.visual-refresh .communityInfoVisible_f37cb1 .header_f37cb1:hover,.visual-refresh .hasBanner_f37cb1 .header_f37cb1,.visual-refresh .hasBanner_f37cb1 .header_f37cb1:hover {
-    border-bottom: 1px solid transparent
+    border-bottom: none
 }
 
 .bannerVisible_f37cb1 .dropdown_f37cb1 {
@@ -1298,7 +1298,7 @@
     backdrop-filter: blur(30px);
     border-bottom: 1px solid var(--border-subtle);
     box-sizing: border-box;
-    height: var(--custom-channel-header-height);
+    height: calc(1px + var(--custom-channel-header-height));
     left: 1px;
     opacity: 1;
     position: absolute;
@@ -1312,7 +1312,9 @@
 }
 
 :where(.visual-refresh) .bannerVisible_f37cb1 .header_f37cb1 {
-    border-bottom-color: transparent
+    border-bottom: none;
+    border-top: 1px solid var(--app-border-frame);
+    border-top-left-radius: 12px
 }
 
 .invitesRefresh_f37cb1 .header_f37cb1 {
@@ -6437,4 +6439,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=87a27f46e703d805.css.map*/
+/*# sourceMappingURL=5f70450b43b8365e.css.map*/
