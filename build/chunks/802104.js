@@ -88,7 +88,7 @@ class y extends o.Z {
         oldFormErrors: !0,
         rejectWithError: !0
       }).then(e => {
-        if (null == e.body || "dd931b2e6dfd2f1d5f0387eb191b45e708cc67b7" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "c4b123e9a70ef15d5fd3c4072490705a1c5d2028" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, s.fD)()) return this._handleUpdateDownloaded(!1);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? m : g;
         if (Date.now() - E > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(!1)
