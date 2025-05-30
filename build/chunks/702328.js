@@ -185,7 +185,7 @@ let ed = e => {
             variant: ej ? k.NN.MARKETING_PAGE_V2 : k.NN.DEFAULT,
             showWumpus: !ej,
             tier0CTAButton: ej ? (0, i.jsx)(P.Z, {
-              forceInverted: e_ && !ej,
+              color: e_ && !ej ? d.Ttl.BRAND_INVERTED : void 0,
               showIcon: !1,
               subscriptionTier: J.Si.TIER_0,
               className: en.marginTopForButtons,
@@ -194,7 +194,6 @@ let ed = e => {
               },
               buttonShineClassName: en.buttonShine
             }) : (0, i.jsx)(P.Z, {
-              forceInverted: !0,
               showIcon: !1,
               subscriptionTier: J.Si.TIER_0,
               className: en.marginTopForButtons,
@@ -203,7 +202,7 @@ let ed = e => {
               buttonShineClassName: en.buttonShine
             }),
             tier2CTAButton: eH !== J.Si.TIER_0 || ej ? (0, i.jsx)(P.Z, {
-              forceInverted: !ej,
+              color: ej ? void 0 : d.Ttl.BRAND_INVERTED,
               showIcon: !1,
               subscriptionTier: J.Si.TIER_2,
               className: en.marginTopForButtons,
@@ -213,7 +212,6 @@ let ed = e => {
               },
               buttonShineClassName: en.buttonShine
             }) : (0, i.jsx)(P.Z, {
-              forceInverted: !0,
               showIcon: !1,
               subscriptionTier: J.Si.TIER_2,
               className: en.marginTopForButtons,

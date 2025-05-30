@@ -71,7 +71,7 @@ let C = function(e) {
           subscriptionTier: b.Si.TIER_2,
           showIcon: !1,
           className: null != r ? r : E.subscribeButton,
-          forceInverted: !0
+          color: a.Ttl.BRAND_INVERTED
         })]
       }), (0, i.jsx)("div", {
         className: E.bannerRightImageContainer,

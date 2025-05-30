@@ -35,21 +35,21 @@ let N = e => {
       containerClassName: r,
       buttonClassName: s,
       isMarketingPageV2Enabled: a,
-      isDarkMode: o
-    } = e, c = (0, i.jsx)(x.Z, {
-      forceInverted: o || !a,
+      isDarkMode: c
+    } = e, d = (0, i.jsx)(x.Z, {
+      color: c || !a ? o.Ttl.BRAND_INVERTED : void 0,
       className: l()(T.button, T.subButton, s, {
         [T.extendedButton]: t && a,
-        [T.whiteSubButton]: a && !o
+        [T.whiteSubButton]: a && !c
       }),
       subscriptionTier: n
-    }), d = t && a ? null : (0, i.jsx)(_.Z, {
+    }), u = t && a ? null : (0, i.jsx)(_.Z, {
       className: l()(T.button, s),
       forceWhite: !a
     });
     return (0, i.jsxs)("div", {
       className: l()(T.buttonContainer, r),
-      children: [c, " ", d]
+      children: [d, " ", u]
     })
   },
   I = e => {

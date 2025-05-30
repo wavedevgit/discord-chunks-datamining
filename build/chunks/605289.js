@@ -55,7 +55,7 @@ let b = function(e) {
     }), (0, i.jsxs)("div", {
       className: f.ctaButtonContainer,
       children: [(0, i.jsx)(g.Z, {
-        forceInverted: !0,
+        color: a.Ttl.BRAND_INVERTED,
         className: f.ctaButton,
         subscriptionTier: p.Si.TIER_2
       }), (0, i.jsx)(m.Z, {
