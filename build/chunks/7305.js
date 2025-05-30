@@ -191,7 +191,7 @@ let w = [{
   options: {
     renderHeader: !0,
     useBreadcrumbLabel: e => (0, v.Fv)(e) ? null : N.intl.string(N.t["r+SebW"]),
-    sectionHeaderText: e => e ? N.intl.string(N.t.H6nk1t) : N.intl.string(N.t.ovf4EB)
+    sectionHeaderText: () => N.intl.string(N.t.UKbp1N)
   }
 }, {
   key: f.h8.ADD_PAYMENT_STEPS,

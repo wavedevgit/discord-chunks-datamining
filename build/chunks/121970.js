@@ -30,7 +30,7 @@ function c() {
     }), (0, i.jsxs)("div", {
       className: d.textSection,
       children: [(0, i.jsx)(s.Text, {
-        variant: "text-md/bold",
+        variant: "text-md/medium",
         color: "text-primary",
         children: c.heading()
       }), null != c.subheading && t.length > 1 && (0, i.jsx)(s.Text, {
