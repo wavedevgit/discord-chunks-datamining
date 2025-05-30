@@ -1,6 +1,6 @@
 /**
   Module ID: 78715
-  Original File Name: 5f70450b43b8365e
+  Original File Name: 810b59056848d3ad
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -4893,7 +4893,7 @@ div:has(>.positionLayer_fc71d3) {
     display: flex
 }
 
-.container__2ee44:hover>.text__2ee44 {
+.container__2ee44:hover>.textContent__2ee44 {
     text-decoration: underline
 }
 
@@ -4901,9 +4901,8 @@ div:has(>.positionLayer_fc71d3) {
     margin-right: 4px
 }
 
-.text__2ee44 {
-    align-items: center;
-    display: flex
+.textContent__2ee44 {
+    white-space: normal
 }
 
 .gameName__8c6c2 {
@@ -6439,4 +6438,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=5f70450b43b8365e.css.map*/
+/*# sourceMappingURL=810b59056848d3ad.css.map*/
