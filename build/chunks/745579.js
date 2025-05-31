@@ -11,10 +11,7 @@ let s = t => {
   let e = Date.now() + t;
   return (0, l.KC)(new Date, new Date(e)) ? o.intl.data.formatTime(e, {
     format: "short"
-  }) : o.intl.formatToPlainString(o.t["sdRx+P"], {
-    date: o.intl.data.formatRelativeTime(1, "day", {
-      numeric: "auto"
-    }),
+  }) : o.intl.formatToPlainString(o.t.DN91Jy, {
     time: o.intl.data.formatTime(e, {
       format: "short"
     })

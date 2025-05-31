@@ -458,7 +458,8 @@ let eM = {
         isPreload: s,
         returnMessageId: l,
         skipLocalFetch: c,
-        jumpType: u
+        jumpType: u,
+        avoidInitialScroll: d
       } = e;
       return "string" == typeof a && ej.trackJump(t, n, a, o), ej.fetchMessages({
         channelId: t,
@@ -471,7 +472,8 @@ let eM = {
           jumpType: u
         },
         isPreload: s,
-        skipLocalFetch: c
+        skipLocalFetch: c,
+        avoidInitialScroll: d
       })
     },
     focusMessage(e) {
@@ -516,9 +518,10 @@ let eM = {
         isPreload: u,
         skipLocalFetch: d,
         truncate: f,
-        forICYMI: _
-      } = e, p = ei.Z.getChannel(t), h = O.Z.isConnectedOrOverlay(), g = Date.now();
-      if (null != p && p.type === ey.d4z.GUILD_STORE) return !1;
+        forICYMI: _,
+        avoidInitialScroll: p
+      } = e, h = ei.Z.getChannel(t), g = O.Z.isConnectedOrOverlay(), E = Date.now();
+      if (null != h && h.type === ey.d4z.GUILD_STORE) return !1;
       if (t === m.V || (eC.log("Fetching messages for ".concat(t, " between ").concat(n, " and ").concat(r, ". jump=").concat(JSON.stringify(l))), ej._tryFetchMessagesCached({
           channelId: t,
           before: n,
@@ -529,21 +532,21 @@ let eM = {
           truncate: f
         }))) return;
       et.Z.fetchMessages.recordStart();
-      let E = null != l ? l : void 0;
-      null == E && null != c && (E = eT({}, c));
-      let b = s.Z.getOrCreate(t).loadStart(E);
-      s.Z.commit(b), o.Z.dispatch({
+      let b = null != l ? l : void 0;
+      null == b && null != c && (b = eT({}, c));
+      let y = s.Z.getOrCreate(t).loadStart(b);
+      s.Z.commit(y), o.Z.dispatch({
         type: "LOAD_MESSAGES"
       });
-      let y = null == E ? void 0 : E.messageId,
-        v = new ew;
-      return d || this.fetchLocalMessages(t, n, r, a, v), i.tn.get({
+      let v = null == b ? void 0 : b.messageId,
+        I = new ew;
+      return d || this.fetchLocalMessages(t, n, r, a, I), i.tn.get({
         url: ey.ANM.MESSAGES(t),
         query: {
           before: n,
           after: r,
           limit: a,
-          around: y,
+          around: v,
           preload: u
         },
         retries: 2,
@@ -554,35 +557,36 @@ let eM = {
           s = null != n,
           c = null != r,
           u = null == n && null == r,
-          d = null != y || i.length === a && (s || u),
-          p = null != y || c && i.length === a;
-        if (null != y) {
+          d = null != v || i.length === a && (s || u),
+          h = null != v || c && i.length === a;
+        if (null != v) {
           let e = Math.floor(a / 2),
             n = e + a % 2,
-            r = [y, ...i.map(e => {
+            r = [v, ...i.map(e => {
               let {
                 id: t
               } = e;
               return t
-            })].filter((e, t, n) => n.indexOf(e) === t).sort(eg.default.compare).indexOf(y);
-          if (r < n - 1 && (d = !1), i.length - r < e && (p = !1), p && i.length > 0) {
+            })].filter((e, t, n) => n.indexOf(e) === t).sort(eg.default.compare).indexOf(v);
+          if (r < n - 1 && (d = !1), i.length - r < e && (h = !1), h && i.length > 0) {
             let e = ec.ZP.lastMessageId(t);
-            i[0].id === e && (p = !1)
+            i[0].id === e && (h = !1)
           }
         }
-        eC.log("Fetched ".concat(i.length, " messages for ").concat(t, " isBefore:").concat(s, " isAfter:").concat(c)), v.markComplete(), o.Z.dispatch({
+        eC.log("Fetched ".concat(i.length, " messages for ").concat(t, " isBefore:").concat(s, " isAfter:").concat(c)), I.markComplete(), o.Z.dispatch({
           type: "LOAD_MESSAGES_SUCCESS",
           channelId: t,
           messages: i,
           isBefore: s,
           isAfter: c,
           hasMoreBefore: d,
-          hasMoreAfter: p,
+          hasMoreAfter: h,
           limit: a,
           jump: l,
           forICYMI: _,
-          isStale: !h || O.Z.lastTimeConnectedChanged() >= g,
-          truncate: f
+          isStale: !g || O.Z.lastTimeConnectedChanged() >= E,
+          truncate: f,
+          avoidInitialScroll: p
         })
       }), !0), () => (eC.log("Failed to fetch messages for ".concat(t)), o.Z.dispatch({
         type: "LOAD_MESSAGES_FAILURE",

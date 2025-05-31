@@ -115,9 +115,10 @@ function Z(e) {
     hasMoreAfter: o,
     messages: s,
     isStale: l,
-    truncate: u
-  } = e, d = c.Z.getOrCreate(t);
-  d = d.loadComplete({
+    truncate: u,
+    avoidInitialScroll: d
+  } = e, f = c.Z.getOrCreate(t);
+  f = f.loadComplete({
     newMessages: s,
     isBefore: n,
     isAfter: r,
@@ -125,8 +126,9 @@ function Z(e) {
     hasMoreBefore: a,
     hasMoreAfter: o,
     cached: l,
-    hasFetched: !0
-  }), null != u && (n || r) && (!n || !r) && (d = d.truncate(n, r)), c.Z.commit(d)
+    hasFetched: !0,
+    avoidInitialScroll: d
+  }), null != u && (n || r) && (!n || !r) && (f = f.truncate(n, r)), c.Z.commit(f)
 }
 
 function H(e) {
