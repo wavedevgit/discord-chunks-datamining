@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(373370),
   v = n(566078),
   y = n(65443),
-  T = n(340100),
-  O = n(644646),
+  O = n(340100),
+  T = n(644646),
   N = n(667105),
   E = n(341907),
   q = n(128535),
@@ -141,11 +141,11 @@ let L = e => {
     isExpanded: B,
     isAnimating: U,
     contentPosition: Q
-  } = e, W = (0, x._Q)(n), z = (0, x.B6)(null == (t = n.userStatus) ? void 0 : t.completedAt, {
+  } = e, W = (0, x._Q)(n), F = (0, x.B6)(null == (t = n.userStatus) ? void 0 : t.completedAt, {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), F = W >= x.OH.ACCEPTED, G = W >= x.OH.COMPLETED, H = W >= x.OH.CLAIMED, X = (0, f.Xv)(n.config), Y = (0, S.uq)(i), V = i === h.jn.QUESTS_EMBED, K = B || U, J = F && !H && Y, $ = (0, x.t5)(n, w.dr.QUESTS_CARD, i), {
+  }), z = W >= x.OH.ACCEPTED, G = W >= x.OH.COMPLETED, H = W >= x.OH.CLAIMED, X = (0, f.Xv)(n.config), Y = (0, S.uq)(i), V = i === h.jn.QUESTS_EMBED, K = B || U, J = z && !H && Y, $ = (0, x.t5)(n, w.dr.QUESTS_CARD, i), {
     xboxAndPlaystationAccounts: ee
   } = (0, x.z6)(), et = (0, p.O5)(), en = (0, j.j)({
     location: w.dr.QUESTS_BAR_MOBILE
@@ -154,7 +154,7 @@ let L = e => {
     taskDetails: es,
     location: w.dr.QUESTS_CARD,
     questContent: h.jn.QUESTS_EMBED
-  }), eo = (0, a.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), ea = (0, a.e7)([u.default], () => u.default.locale), el = (0, x.z)(n), ec = Y && X, eu = L && !G, ed = ee.length > 0 && Y && (0, f.$J)(n) && F && !G && !el, em = (0, r.jsx)(O.Z, {
+  }), eo = (0, a.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), ea = (0, a.e7)([u.default], () => u.default.locale), el = (0, x.z)(n), ec = Y && X, eu = L && !G, ed = ee.length > 0 && Y && (0, f.$J)(n) && z && !G && !el, em = (0, r.jsx)(T.Z, {
     autoplay: N,
     className: o()(I.gridImg, {
       [I.questRewardGiftInventory]: Y && "lg" === c,
@@ -201,7 +201,7 @@ let L = e => {
       }), (0, r.jsxs)("div", {
         className: o()(I.gridText, I.taskDetails),
         children: [(0, r.jsx)(l.Text, {
-          variant: A(i, c, F),
+          variant: A(i, c, z),
           className: I.taskInstructions,
           children: L ? _.intl.formatToPlainString(_.t["ge+AJi"], {
             questName: n.config.messages.questName
@@ -225,7 +225,7 @@ let L = e => {
               formattedCompletionDate: x
             } = e, g = (null == (t = o.userStatus) ? void 0 : t.completedAt) != null, h = g && (null == (n = o.userStatus) ? void 0 : n.claimedAt) != null, j = (0, f.oo)({
               quest: o
-            }), C = c.defaultReward.messages.nameWithArticle, v = c.defaultReward.messages.nameWithArticle, y = u ? v : C, T = (0, f.Kr)(o.config), O = (0, f.b7)(o), N = (0, b.U)();
+            }), C = c.defaultReward.messages.nameWithArticle, v = c.defaultReward.messages.nameWithArticle, y = u ? v : C, O = (0, f.Kr)(o.config), T = (0, f.b7)(o), N = (0, b.U)();
             if (h) {
               let e = j ? (0, f.o9)({
                   quest: o,
@@ -256,10 +256,10 @@ let L = e => {
               maxReward: E.messages.nameWithArticle,
               maxRewardCount: (0, m.Bs)(E.approximateCount, a),
               helpCenterLink: d.Z.getArticleURL(R.BhN.QUESTS_LEARN_MORE)
-            }) : N ? p : null != T ? _.intl.formatToPlainString(_.t.Pu5eyM, {
+            }) : N ? p : null != O ? _.intl.formatToPlainString(_.t.Pu5eyM, {
               reward: y,
-              duration: T
-            }) : null != O ? O.description : _.intl.formatToPlainString(_.t.ttFsLi, {
+              duration: O
+            }) : null != T ? T.description : _.intl.formatToPlainString(_.t.ttFsLi, {
               reward: y
             })
           }({
@@ -269,7 +269,7 @@ let L = e => {
             sharedQuestFields: er,
             withCopySimplification: en,
             collectibleQuestRewardDescription: ei,
-            formattedCompletionDate: z
+            formattedCompletionDate: F
           })
         })]
       }), eo ? (0, r.jsxs)("div", {
@@ -308,7 +308,7 @@ let L = e => {
           location: i,
           inGiftInventory: Y
         })]
-      }), J && (0, r.jsx)(T.Z, {
+      }), J && (0, r.jsx)(O.Z, {
         className: I.gridProgressBar,
         color: G ? l.TVs.colors.TEXT_POSITIVE : l.TVs.colors.BG_BRAND,
         quest: n,

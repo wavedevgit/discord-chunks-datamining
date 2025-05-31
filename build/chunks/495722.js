@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(240894),
   l = n(278074),
   c = n(754700),
-  u = n(442837),
-  d = n(692547),
+  d = n(442837),
+  u = n(692547),
   p = n(481060),
   m = n(70097),
   f = n(617136),
@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(50476),
   L = n(46140),
   Z = n(743294),
-  W = n(388032),
-  V = n(921183);
+  V = n(388032),
+  W = n(921183);
 
 function Q(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -81,16 +81,16 @@ function U(e) {
     quest: o,
     onClick: i,
     reducedMotion: l,
-    isExpanded: u
+    isExpanded: d
   } = e, [f, g] = s.useState(!1), x = s.useRef(null), h = (0, O.fh)(o, O.eC.QUEST_BAR_HERO_VIDEO), b = (0, C.z0)(o, c.X.WATCH_VIDEO, C.n1.VIDEO, C.O.THUMBNAIL), j = (0, v.km)(e => e.getVideoProgressState);
   s.useEffect(() => {
-    null != x.current && (u && (!l || f) ? (x.current.currentTime = 0, x.current.play()) : x.current.pause())
-  }, [x, f, l, u]);
+    null != x.current && (d && (!l || f) ? (x.current.currentTime = 0, x.current.play()) : x.current.pause())
+  }, [x, f, l, d]);
   let y = j(o.id),
     _ = (null == (t = o.userStatus) ? void 0 : t.completedAt) != null && y === v.iw.COMPLETED,
     w = !_ && (!l || f);
   return (0, r.jsxs)(p.P3F, {
-    className: V.videoQuestPreviewCont,
+    className: W.videoQuestPreviewCont,
     onClick: i,
     onMouseEnter: () => {
       l && !f && g(!0)
@@ -101,7 +101,7 @@ function U(e) {
     children: [null != b && (0, r.jsx)("img", {
       alt: "",
       src: b.url,
-      className: V.assetBodyVideoPreviewMedia
+      className: W.assetBodyVideoPreviewMedia
     }), null != h ? (0, r.jsx)(m.Z, {
       ref: x,
       autoPlay: !1,
@@ -109,8 +109,8 @@ function U(e) {
       loop: !0,
       muted: !0,
       playsInline: !0,
-      className: a()(V.assetBodyVideoPreviewVideo, {
-        [V.assetBodyVideoPreviewVisible]: w
+      className: a()(W.assetBodyVideoPreviewVideo, {
+        [W.assetBodyVideoPreviewVisible]: w
       }),
       controls: !1,
       children: (0, r.jsx)("source", {
@@ -118,13 +118,13 @@ function U(e) {
         type: null != (n = h.mimetype) ? n : void 0
       })
     }) : null, (0, r.jsx)("div", {
-      className: V.previewPlayButtonCont,
+      className: W.previewPlayButtonCont,
       children: _ ? (0, r.jsx)(p.Oe7, {
-        color: d.Z.colors.WHITE,
-        className: V.previewPlayButton
+        color: u.Z.colors.WHITE,
+        className: W.previewPlayButton
       }) : (0, r.jsx)(p.o1U, {
-        color: d.Z.colors.WHITE,
-        className: V.previewPlayButton
+        color: u.Z.colors.WHITE,
+        className: W.previewPlayButton
       })
     })]
   })
@@ -135,7 +135,7 @@ function z(e) {
     quest: t
   } = e;
   return (0, r.jsx)(P.Z, {
-    className: a()(V.rewardTile, V.hiddenRewardTile),
+    className: a()(W.rewardTile, W.hiddenRewardTile),
     learnMoreStyle: "text",
     quest: t,
     questContent: b.jn.QUEST_BAR_V2,
@@ -150,7 +150,7 @@ function F(e) {
   } = e, o = s.useMemo(() => w.r.build(t.config), [t.config]);
   return (0, r.jsxs)("ul", {
     children: [(0, r.jsx)(p.Text, {
-      className: V.description,
+      className: W.description,
       tag: "li",
       variant: "text-xs/normal",
       children: (0, _.DD)({
@@ -160,10 +160,10 @@ function F(e) {
         taskDetails: n
       })
     }), (0, r.jsx)(p.Text, {
-      className: V.description,
+      className: W.description,
       tag: "li",
       variant: "text-xs/normal",
-      children: W.intl.formatToPlainString(W.t["W8/b3d"], {
+      children: V.intl.formatToPlainString(V.t["W8/b3d"], {
         rewardName: o.defaultReward.messages.name
       })
     })]
@@ -172,7 +172,7 @@ function F(e) {
 
 function K(e) {
   return (0, r.jsx)(p.Text, {
-    className: V.description,
+    className: W.description,
     variant: "text-xs/normal",
     children: (0, _.DD)({
       quest: e.quest,
@@ -190,10 +190,10 @@ function X(e) {
     expansionSpring: o,
     isInteractable: l,
     reducedMotion: c,
-    containerRef: d,
+    containerRef: u,
     isExpanded: f,
     onAcceptQuest: g
-  } = e, x = (0, u.e7)([h.Z], () => h.Z.isEnrolling(t.id), [t]), b = s.useMemo(() => (0, O.fh)(t, O.eC.QUEST_BAR_HERO), [t]), v = s.useRef(null);
+  } = e, x = (0, d.e7)([h.Z], () => h.Z.isEnrolling(t.id), [t]), b = s.useMemo(() => (0, O.fh)(t, O.eC.QUEST_BAR_HERO), [t]), v = s.useRef(null);
   s.useEffect(() => {
     null == v.current || c || (f ? (v.current.currentTime = 0, v.current.play()) : v.current.pause())
   }, [c, f]);
@@ -209,19 +209,19 @@ function X(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
-        className: a()(V.questPromoContent, {
-          [V.questPromoContentWithCopySimplification]: C
+        className: a()(W.questPromoContent, {
+          [W.questPromoContentWithCopySimplification]: C
         }),
-        ref: d,
+        ref: u,
         children: [(0, r.jsxs)("div", {
-          className: V.details,
+          className: W.details,
           children: [(0, r.jsx)(z, {
             quest: t
           }), (0, r.jsx)(p.X6q, {
-            className: V.title,
+            className: W.title,
             color: "header-primary",
             variant: "heading-md/medium",
-            children: W.intl.format(W.t.EQa7oq, {
+            children: V.intl.format(V.t.EQa7oq, {
               questName: t.config.messages.questName
             })
           }), C ? (0, r.jsx)(F, {
@@ -232,7 +232,7 @@ function X(e) {
             taskDetails: n
           })]
         }), (0, r.jsx)(p.ua7, {
-          "aria-label": "".concat(W.intl.formatToPlainString(W.t.coKAb2, {
+          "aria-label": "".concat(V.intl.formatToPlainString(V.t.coKAb2, {
             rewardsDuration: w
           })).concat(null != P ? " • ".concat(P) : ""),
           text: null != w && C && (0, r.jsx)(S.Z, {
@@ -242,7 +242,7 @@ function X(e) {
           }),
           shouldShow: null != w && C,
           children: e => (0, r.jsx)(p.zxk, H(Q({}, e), {
-            wrapperClassName: V.cta,
+            wrapperClassName: W.cta,
             color: p.zxk.Colors.BRAND,
             fullWidth: !0,
             onClick: l ? g : void 0,
@@ -253,18 +253,18 @@ function X(e) {
         })]
       })
     }), (0, r.jsxs)(i.animated.div, {
-      className: V.heroAssetWrapper,
+      className: W.heroAssetWrapper,
       style: {
         backdropFilter: o.to([0, 1], [5, 0]).to(e => "blur(".concat(e, "px)")),
         filter: o.to([0, 1], [.8, 1]).to(e => "brightness(".concat(e, ")"))
       },
       children: [(0, r.jsx)(i.animated.div, {
-        className: V.heroAssetDarken,
+        className: W.heroAssetDarken,
         style: {
           opacity: o.to([0, 1], [1, 0])
         }
       }), (0, r.jsx)(i.animated.div, {
-        className: V.heroAssetTint,
+        className: W.heroAssetTint,
         style: {
           backgroundColor: t.config.colors.primary,
           opacity: o.to([0, 1], [1, 0])
@@ -279,7 +279,7 @@ function X(e) {
             loop: !0,
             muted: !0,
             playsInline: !0,
-            className: V.heroAsset,
+            className: W.heroAsset,
             controls: !1,
             children: (0, r.jsx)("source", {
               src: b.url,
@@ -292,11 +292,11 @@ function X(e) {
         children: e => (0, r.jsx)("img", {
           ref: e,
           alt: "",
-          className: V.heroAsset,
+          className: W.heroAsset,
           src: b.url
         })
       }), (0, r.jsx)(i.animated.div, {
-        className: V.legibilityGradient,
+        className: W.legibilityGradient,
         style: {
           opacity: o.to({
             range: [0, 1],
@@ -314,8 +314,8 @@ function Y(e) {
     quest: n,
     taskDetails: o,
     expansionSpring: c,
-    overlayRef: u,
-    isExpanded: d,
+    overlayRef: d,
+    isExpanded: u,
     reducedMotion: m,
     containerRef: f,
     onCtxMenuOpen: g,
@@ -330,7 +330,7 @@ function Y(e) {
   }), J = null != X ? X.percentComplete : o.percentComplete;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.animated.div, {
-      className: a()(V.postEnrollmentBackground, V.postEnrollmentBackgroundCollapsed),
+      className: a()(W.postEnrollmentBackground, W.postEnrollmentBackgroundCollapsed),
       style: {
         backgroundImage: "linear-gradient(90deg, ".concat(Z.aY, ", ").concat(Z.v6, ")"),
         opacity: c.to({
@@ -339,14 +339,14 @@ function Y(e) {
         })
       }
     }), (0, r.jsxs)("div", {
-      className: V.questAcceptedContent,
+      className: W.questAcceptedContent,
       ref: f,
       children: [(0, r.jsxs)("div", {
-        className: V.questAcceptedHeader,
+        className: W.questAcceptedHeader,
         children: [(0, r.jsx)(p.Text, {
           variant: "text-xxs/medium",
-          className: a()(V.flex, V.headerText),
-          children: W.intl.format(W.t["pX+fmp"], {
+          className: a()(W.flex, W.headerText),
+          children: V.intl.format(V.t["pX+fmp"], {
             expirationDate: z
           })
         }), (0, r.jsx)(T.r, {
@@ -358,23 +358,23 @@ function Y(e) {
           shouldShowDisclosure: !1,
           showShareLink: !0,
           children: e => (0, r.jsx)(p.P3F, H(Q({}, e), {
-            className: V.submenuWrapper,
-            "aria-label": W.intl.string(W.t.DEoVWV),
+            className: W.submenuWrapper,
+            "aria-label": V.intl.string(V.t.DEoVWV),
             children: (0, r.jsx)(p.xhG, {
               size: "md",
               color: "currentColor",
-              className: a()(V.submenuIcon, V.interactiveNormal)
+              className: a()(W.submenuIcon, W.interactiveNormal)
             })
           }))
         })]
       }), (0, r.jsx)("div", {
-        className: V.divider
+        className: W.divider
       }), (0, r.jsx)(k.Z, {
         expansionSpring: c,
-        overlayRef: u,
+        overlayRef: d,
         progressBarRef: E,
         quest: n,
-        isExpanded: d
+        isExpanded: u
       }), (0, r.jsx)(D.Z, {
         contentLocation: "expanded",
         quest: n,
@@ -399,14 +399,14 @@ function Y(e) {
         })).exhaustive()
       }), (0, r.jsxs)(A.n, {
         children: [K && (0, r.jsx)(U, {
-          isExpanded: d,
+          isExpanded: u,
           quest: n,
           onClick: Y,
           reducedMotion: m
         }), (0, r.jsx)(R.yD, {
           quest: n,
           useReducedMotion: m,
-          isExpanded: d,
+          isExpanded: u,
           awaitingConsoleConnections: F,
           hasMadeProgress: O,
           isProgressing: C,
@@ -417,7 +417,7 @@ function Y(e) {
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: a()(V.postEnrollmentBackground, V.postEnrollmentBackgroundExpanded),
+      className: a()(W.postEnrollmentBackground, W.postEnrollmentBackgroundExpanded),
       style: {
         backgroundImage: "linear-gradient(90deg, ".concat(Z.aY, ", ").concat(Z.v6, ")")
       }
@@ -430,8 +430,8 @@ let G = s.forwardRef(function(e, t) {
     children: o,
     className: l,
     collapsedHeight: c,
-    isExpanded: u,
-    isExpansionAnimationComplete: d,
+    isExpanded: d,
+    isExpansionAnimationComplete: u,
     expansionSpring: p,
     onCtxMenuOpen: m,
     onCtxMenuClose: h,
@@ -449,12 +449,12 @@ let G = s.forwardRef(function(e, t) {
       questContent: b.jn.QUEST_BAR_V2,
       questContentCTA: t
     }), w && (0, N.openVideoQuestModal)(_), S && e && P()
-  }, [_, w, S, P]), T = (null == (n = _.userStatus) ? void 0 : n.enrolledAt) != null, A = u && d;
+  }, [_, w, S, P]), T = (null == (n = _.userStatus) ? void 0 : n.enrolledAt) != null, A = d && u;
   return (0, r.jsxs)(i.animated.div, {
     "aria-hidden": !A,
-    className: a()(l, V.contentExpanded, {
-      [V.contentInteractable]: A,
-      [V.contentExpandedAccepted]: T
+    className: a()(l, W.contentExpanded, {
+      [W.contentInteractable]: A,
+      [W.contentExpandedAccepted]: T
     }),
     style: {
       transform: (0, i.to)([p.to({
@@ -474,7 +474,7 @@ let G = s.forwardRef(function(e, t) {
         taskDetails: C,
         expansionSpring: p,
         overlayRef: y,
-        isExpanded: u,
+        isExpanded: d,
         reducedMotion: O,
         onCtxMenuOpen: m,
         onCtxMenuClose: h,
@@ -487,7 +487,7 @@ let G = s.forwardRef(function(e, t) {
         isInteractable: A,
         reducedMotion: O,
         containerRef: t,
-        isExpanded: u,
+        isExpanded: d,
         onAcceptQuest: E
       })
     })]

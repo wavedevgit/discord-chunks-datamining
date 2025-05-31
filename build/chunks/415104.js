@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(617136),
   l = n(113434),
   c = n(497505),
-  u = n(918701),
-  d = n(602667),
+  d = n(918701),
+  u = n(602667),
   p = n(341907),
   m = n(672188),
   f = n(466962),
@@ -24,23 +24,23 @@ function j(e) {
   let {
     quest: o,
     className: c,
-    questContent: d,
+    questContent: u,
     contentPosition: j,
     rowIndex: v,
     impressionRef: y
-  } = e, [_, O] = s.useState(!1), [C, w] = s.useState([]), S = (0, l.qb)(o), P = s.useMemo(() => (0, u.q8)(o), [o]), E = (0, i._F)(), T = s.useCallback(() => {
+  } = e, [_, O] = s.useState(!1), [C, w] = s.useState([]), S = (0, l.qb)(o), P = s.useMemo(() => (0, d.q8)(o), [o]), E = (0, i._F)(), T = s.useCallback(() => {
     O(!0), E({
       questId: o.id,
       event: h.rMx.QUEST_HOVER,
-      properties: (0, i.mH)(d)
+      properties: (0, i.mH)(u)
     }), P && (0, p.loadVideoQuestModal)()
-  }, [E, o.id, d, P]), N = s.useCallback(() => {
+  }, [E, o.id, u, P]), N = s.useCallback(() => {
     O(!1), E({
       questId: o.id,
       event: h.rMx.QUEST_HOVER_OFF,
-      properties: (0, i.mH)(d)
+      properties: (0, i.mH)(u)
     })
-  }, [E, o.id, d]), A = s.useContext(f.t), {
+  }, [E, o.id, u]), A = s.useContext(f.t), {
     visibilityElementRef: R,
     almostVisibleInViewport: k
   } = function(e) {
@@ -74,7 +74,7 @@ function j(e) {
       isVisibleInViewport: k
     }), (0, r.jsx)(x.Z, {
       quest: o,
-      questContent: d,
+      questContent: u,
       isHovering: _,
       contentPosition: j,
       rowIndex: v,
@@ -85,7 +85,7 @@ function j(e) {
 }
 
 function v(e) {
-  return (0, r.jsx)(d.A, {
+  return (0, r.jsx)(u.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,
     questContentPosition: e.contentPosition,

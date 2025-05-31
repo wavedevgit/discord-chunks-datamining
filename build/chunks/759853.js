@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(505266),
   l = n(867309),
   c = n(240894),
-  u = n(442837),
-  d = n(110924),
+  d = n(442837),
+  u = n(110924),
   p = n(607070),
   m = n(819640),
   f = n(569379),
@@ -29,7 +29,7 @@ let b = ["#51BC9D"],
     } = e, {
       completionSpring: _,
       startCompletionAnimation: O
-    } = (0, f.G)(), C = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = s.useRef(!1), S = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), P = s.useRef(null), E = (0, u.e7)([m.Z], () => m.Z.hasLayers()), T = (0, d.Z)(E), [N, A] = s.useState(null), [R, k] = s.useState(null), B = s.useRef(new i.qA({
+    } = (0, f.G)(), C = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = s.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = s.useRef(null), E = (0, d.e7)([m.Z], () => m.Z.hasLayers()), T = (0, u.Z)(E), [N, A] = s.useState(null), [R, k] = s.useState(null), B = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
     })), q = (0, i.uR)(N, R), I = s.useCallback(() => {
@@ -42,10 +42,10 @@ let b = ["#51BC9D"],
           x: l,
           y: c
         } = e.getBoundingClientRect(), {
-          x: u,
-          y: d
+          x: d,
+          y: u
         } = t.getBoundingClientRect();
-        q.createMultipleConfetti((n = l - u, r = c - d, s = e.clientHeight, o = e.clientWidth, a = function(e) {
+        q.createMultipleConfetti((n = l - d, r = c - u, s = e.clientHeight, o = e.clientWidth, a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -110,7 +110,7 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [v, P, q, S]), D = (0, d.Z)(y);
+    }, [v, P, q, S]), D = (0, u.Z)(y);
     return (s.useEffect(() => {
       C && y && !D && (O(), I())
     }, [y, C, O, I, D]), s.useEffect(() => {

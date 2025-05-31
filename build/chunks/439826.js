@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(240894),
   l = n(780384),
   c = n(481060),
-  u = n(393238),
-  d = n(410030),
+  d = n(393238),
+  u = n(410030),
   p = n(44315),
   m = n(617136),
   f = n(272008),
@@ -72,9 +72,9 @@ function B(e) {
     warningHints: a,
     isDarkTheme: l
   } = e, {
-    ref: d,
+    ref: u,
     height: m = 0
-  } = (0, u.ZP)([o]), f = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, x = (0, g.z)(n), {
+  } = (0, d.ZP)([o]), f = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, x = (0, g.z)(n), {
     type: h,
     hints: b
   } = s.useMemo(() => f || x ? {
@@ -97,7 +97,7 @@ function B(e) {
   return (0, r.jsx)(i.animated.div, {
     style: v,
     children: (0, r.jsxs)("div", {
-      ref: d,
+      ref: u,
       className: A.hints,
       children: [(0, r.jsxs)("div", {
         className: A.hintsContainer,
@@ -154,7 +154,7 @@ function q(e) {
 }
 
 function I(e) {
-  var t, n, o, i, u;
+  var t, n, o, i, d;
   let {
     quest: p,
     isHovering: b,
@@ -164,7 +164,7 @@ function I(e) {
     onCtxMenuClose: P,
     onCtxMenuOpen: E,
     onCtxMenuSelect: I
-  } = e, D = (0, h.q8)(p), M = (0, d.ZP)(), L = ((0, l.wj)(M) ? T.BRd.DARK : T.BRd.LIGHT) === T.BRd.DARK, Z = (0, g.tP)(p), W = (null == (t = p.userStatus) ? void 0 : t.claimedAt) != null, V = (0, g.B6)(p.config.expiresAt, {
+  } = e, D = (0, h.PB)(p), M = (0, u.ZP)(), L = ((0, l.wj)(M) ? T.BRd.DARK : T.BRd.LIGHT) === T.BRd.DARK, Z = (0, g.tP)(p), V = (null == (t = p.userStatus) ? void 0 : t.claimedAt) != null, W = (0, g.B6)(p.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), Q = (null == (n = p.userStatus) ? void 0 : n.enrolledAt) != null, H = (null == (o = p.userStatus) ? void 0 : o.completedAt) != null, {
@@ -252,13 +252,13 @@ function I(e) {
             variant: "text-sm/medium",
             color: L ? "text-muted" : "always-white",
             children: N.intl.format(N.t.buEvBw, {
-              brandName: null != (u = null == (i = p.config.cosponsorMetadata) ? void 0 : i.name) ? u : p.config.messages.gamePublisher
+              brandName: null != (d = null == (i = p.config.cosponsorMetadata) ? void 0 : i.name) ? d : p.config.messages.gamePublisher
             })
-          }), Z || W ? null : (0, r.jsx)(c.Text, {
+          }), Z || V ? null : (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: L ? "text-muted" : "always-white",
             children: N.intl.format(N.t["7D8r4O"], {
-              expiryDate: V
+              expiryDate: W
             })
           })]
         })]

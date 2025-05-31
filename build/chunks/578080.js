@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(240894),
   l = n(442837),
   c = n(950104),
-  u = n(780384),
-  d = n(481060),
+  d = n(780384),
+  u = n(481060),
   p = n(70097),
   m = n(703656),
   f = n(358085),
@@ -77,13 +77,13 @@ function L(e) {
   return (0, _.O)({
     location: R.dr.QUESTS_BAR,
     autoTrackExposure: !0
-  }) ? (0, r.jsx)(d.zxk, {
+  }) ? (0, r.jsx)(u.zxk, {
     className: I.cta,
     style: t,
-    color: d.zxk.Colors.CUSTOM,
+    color: u.zxk.Colors.CUSTOM,
     fullWidth: !0,
     onClick: n,
-    size: d.zxk.Sizes.NONE,
+    size: u.zxk.Sizes.NONE,
     children: q.intl.string(q.t.lwQdjI)
   }) : null
 }
@@ -92,8 +92,8 @@ let Z = s.forwardRef(function(e, t) {
   let {
     children: _,
     className: Z,
-    collapsedHeight: W,
-    expansionSpring: V,
+    collapsedHeight: V,
+    expansionSpring: W,
     isExpanded: Q,
     isExpansionAnimationComplete: H,
     onCtxMenuOpen: U,
@@ -115,16 +115,16 @@ let Z = s.forwardRef(function(e, t) {
       ctaContent: g.jZ.OPEN_GAME_LINK,
       impressionId: G
     })
-  }, [G, K]), el = $.features.has(R.S7.POST_ENROLLMENT_CTA), ec = (0, b.Rf)(K), eu = (0, b.Jf)(K), ed = null != eu ? eu.progress > 0 : ec.progressSeconds > 0, ep = (null == (n = K.userStatus) ? void 0 : n.enrolledAt) != null, em = (null == (o = K.userStatus) ? void 0 : o.completedAt) != null, ef = s.useMemo(() => (0, y.Xv)(K.config), [K.config]), eg = Q && H, ex = (0, O.DD)({
+  }, [G, K]), el = $.features.has(R.S7.POST_ENROLLMENT_CTA), ec = (0, b.Rf)(K), ed = (0, b.Jf)(K), eu = null != ed ? ed.progress > 0 : ec.progressSeconds > 0, ep = (null == (n = K.userStatus) ? void 0 : n.enrolledAt) != null, em = (null == (o = K.userStatus) ? void 0 : o.completedAt) != null, ef = s.useMemo(() => (0, y.Xv)(K.config), [K.config]), eg = Q && H, ex = (0, O.DD)({
     quest: K,
     taskDetails: ec,
     location: R.dr.QUESTS_BAR,
     questContent: v.jn.QUEST_BAR,
-    thirdPartyTaskDetails: null != eu ? eu : void 0
+    thirdPartyTaskDetails: null != ed ? ed : void 0
   }), eh = (0, f.isWeb)(), eb = s.useMemo(() => {
-    let e = (0, u.Qg)(K.config.colors.primary, {
+    let e = (0, d.Qg)(K.config.colors.primary, {
       base: "#ffffff",
-      contrastRatio: u.S3.Text
+      contrastRatio: d.S3.Text
     });
     return {
       "--custom-cta-color": e,
@@ -138,12 +138,12 @@ let Z = s.forwardRef(function(e, t) {
     }),
     style: {
       backgroundColor: K.config.colors.secondary,
-      transform: em ? void 0 : (0, i.to)([V.to({
+      transform: em ? void 0 : (0, i.to)([W.to({
         range: [0, 1],
         output: [0, -100]
-      }), V.to({
+      }), W.to({
         range: [0, 1],
-        output: [0, W]
+        output: [0, V]
       })], (e, t) => "translateY(calc(".concat(e, "% + ").concat(t, "px))"))
     },
     children: [_, (0, r.jsx)("div", {
@@ -162,15 +162,15 @@ let Z = s.forwardRef(function(e, t) {
               questContent: v.jn.QUEST_BAR,
               location: R.dr.QUESTS_BAR
             }), (0, r.jsxs)("div", {
-              children: [(0, r.jsx)(d.X6q, {
+              children: [(0, r.jsx)(u.X6q, {
                 color: "always-white",
                 variant: "heading-sm/semibold",
                 children: (0, y.AV)({
                   quest: K,
                   taskDetails: ec,
-                  thirdPartyTaskDetails: null != eu ? eu : void 0
+                  thirdPartyTaskDetails: null != ed ? ed : void 0
                 })
-              }), (0, r.jsx)(d.Text, {
+              }), (0, r.jsx)(u.Text, {
                 className: I.questAcceptedContentCopySubheading,
                 color: "always-white",
                 variant: "text-xxs/normal",
@@ -189,32 +189,32 @@ let Z = s.forwardRef(function(e, t) {
             quest: K,
             shouldShowDisclosure: !1,
             showShareLink: !0,
-            children: e => (0, r.jsx)(d.P3F, M(D({}, e), {
+            children: e => (0, r.jsx)(u.P3F, M(D({}, e), {
               className: I.submenuWrapper,
               "aria-label": q.intl.string(q.t.DEoVWV),
-              children: (0, r.jsx)(d.xhG, {
+              children: (0, r.jsx)(u.xhG, {
                 size: "md",
                 color: "currentColor",
                 className: I.submenuIcon
               })
             }))
           })]
-        }), em ? (0, r.jsx)(d.zxk, {
+        }), em ? (0, r.jsx)(u.zxk, {
           className: a()(I.cta, I.ctaClaimReward),
           style: ef ? eb : void 0,
-          color: d.zxk.Colors.CUSTOM,
+          color: u.zxk.Colors.CUSTOM,
           fullWidth: !0,
           onClick: ea,
-          size: d.zxk.Sizes.NONE,
+          size: u.zxk.Sizes.NONE,
           children: q.intl.string(q.t.cfY4PD)
-        }) : (0, r.jsx)(d.Text, {
+        }) : (0, r.jsx)(u.Text, {
           className: I.description,
           color: "always-white",
           variant: "text-xs/normal",
           children: ex
         }), (0, r.jsx)(S.Z, {
           quest: K
-        }), !eh && !ed && !en && el && (0, r.jsx)(L, {
+        }), !eh && !eu && !en && el && (0, r.jsx)(L, {
           onClick: eg ? ei : void 0
         })]
       }) : (0, r.jsxs)("div", {
@@ -233,10 +233,10 @@ let Z = s.forwardRef(function(e, t) {
               quest: K,
               shouldShowDisclosure: !0,
               showShareLink: !0,
-              children: e => (0, r.jsx)(d.P3F, M(D({}, e), {
+              children: e => (0, r.jsx)(u.P3F, M(D({}, e), {
                 className: I.submenuWrapper,
                 "aria-label": q.intl.string(q.t.DEoVWV),
-                children: (0, r.jsx)(d.xhG, {
+                children: (0, r.jsx)(u.xhG, {
                   size: "md",
                   color: "currentColor",
                   className: I.submenuIcon
@@ -251,26 +251,26 @@ let Z = s.forwardRef(function(e, t) {
               quest: K,
               questContent: v.jn.QUEST_BAR,
               location: R.dr.QUESTS_BAR
-            }), (0, r.jsx)(d.X6q, {
+            }), (0, r.jsx)(u.X6q, {
               className: I.title,
               color: "always-white",
               variant: "heading-md/medium",
               children: q.intl.format(q.t.EQa7oq, {
                 questName: K.config.messages.questName
               })
-            }), (0, r.jsx)(d.Text, {
+            }), (0, r.jsx)(u.Text, {
               className: I.description,
               color: "always-white",
               variant: "text-sm/normal",
               children: ex
             })]
-          }), (0, r.jsx)(d.zxk, {
+          }), (0, r.jsx)(u.zxk, {
             className: I.cta,
             style: "1232852290197655573" !== K.id ? eb : void 0,
-            color: d.zxk.Colors.CUSTOM,
+            color: u.zxk.Colors.CUSTOM,
             fullWidth: !0,
             onClick: eg ? eo : void 0,
-            size: d.zxk.Sizes.NONE,
+            size: u.zxk.Sizes.NONE,
             submitting: Y,
             children: es
           })]

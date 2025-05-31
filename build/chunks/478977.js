@@ -1,6 +1,6 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(255367),
   s = n(73800),
@@ -39,22 +39,22 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = function(e) {
+let d = function(e) {
   let {
     colorKey: t,
     value: n,
-    onChange: u,
-    title: d
+    onChange: d,
+    title: u
   } = e, p = s.useRef(null);
   return (0, r.jsxs)(a.xJW, {
     children: [(0, r.jsx)(a.vwX, {
       tag: a.RB0.H5,
-      children: d
+      children: u
     }), (0, r.jsx)(a.yRy, {
       targetElementRef: p,
       renderPopout: e => (0, r.jsx)(a.Z$W, c(l({}, e), {
         value: n,
-        onChange: e => u(t, (0, o.Rf)(e))
+        onChange: e => d(t, (0, o.Rf)(e))
       })),
       children: e => (0, r.jsx)(a.P3F, c(l({}, e), {
         innerRef: p,

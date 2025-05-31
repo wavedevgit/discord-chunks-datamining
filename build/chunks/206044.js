@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(497505),
   v = n(918701),
   y = n(475595),
-  T = n(566078),
-  O = n(685613),
+  O = n(566078),
+  T = n(685613),
   N = n(611855),
   E = n(644646),
   q = n(670638),
@@ -132,15 +132,15 @@ let M = (0, a.animated)(d.CJ0),
       toggleExpanded: Q
     } = e, {
       ref: W,
-      height: z
-    } = (0, m.ZP)(), [F, G] = s.useState(null), [H, X] = s.useState(null), Y = (0, x.Z)(e => {
+      height: F
+    } = (0, m.ZP)(), [z, G] = s.useState(null), [H, X] = s.useState(null), Y = (0, x.Z)(e => {
       let t = e.target;
       G(t.offsetWidth), X(t.scrollWidth)
     }), V = (0, p.y)(Y), K = (0, c.e7)([g.Z], () => g.Z.useReducedMotion), J = s.useMemo(() => (0, y.fh)(h, y.eC.HERO), [h]), $ = s.useRef(null), ee = (0, S.uq)(f), et = f === C.jn.QUESTS_EMBED, en = (0, b.t5)(h, P.dr.QUESTS_CARD, f), er = (null == (t = h.userStatus) ? void 0 : t.completedAt) != null, es = (0, j.O5)(), ei = (0, b.B6)(h.config.expiresAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
-    }), eo = (0, b.B6)(T.r.build(h.config).rewardsExpireAt, {
+    }), eo = (0, b.B6)(O.r.build(h.config).rewardsExpireAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
@@ -155,12 +155,12 @@ let M = (0, a.animated)(d.CJ0),
     s.useEffect(() => {
       J.isAnimated && null != $.current && (i && !K ? $.current.play() : i || ($.current.pause(), $.current.currentTime = 0))
     }, [i, K, J]);
-    let ec = (0, r.jsx)(O.ZP, {
+    let ec = (0, r.jsx)(T.ZP, {
       className: _.partnerBranding,
       logotypeClassName: ea ? _.partnerBrandingLogotypes : void 0,
-      gameTileSize: O.fF.MEDIUM,
+      gameTileSize: T.fF.MEDIUM,
       quest: h,
-      separatorSpacing: O.US.MEDIUM,
+      separatorSpacing: T.US.MEDIUM,
       theme: w.BR.DARK,
       withGameTile: !et || null == h.config.cosponsorMetadata
     });
@@ -172,7 +172,7 @@ let M = (0, a.animated)(d.CJ0),
       }),
       "aria-label": R.intl.string(R.t.dcl9MT),
       style: {
-        height: ee ? z : void 0
+        height: ee ? F : void 0
       },
       children: [(0, r.jsx)(A, {
         style: {
@@ -268,7 +268,7 @@ let M = (0, a.animated)(d.CJ0),
                 className: _.questInfo,
                 children: [(0, r.jsx)(d.ua7, {
                   text: h.config.messages.questName,
-                  shouldShow: null != F && null != H && F < H,
+                  shouldShow: null != z && null != H && z < H,
                   children: e => (0, r.jsx)(d.X6q, D(I({
                     ref: V,
                     variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",

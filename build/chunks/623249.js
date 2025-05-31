@@ -10,8 +10,8 @@ var r = n(255367),
   i = n(442837),
   l = n(780384),
   c = n(481060),
-  u = n(607070),
-  d = n(600164),
+  d = n(607070),
+  u = n(600164),
   p = n(210887),
   m = n(617136),
   f = n(915750),
@@ -53,12 +53,12 @@ function w(e) {
     onClose: P
   } = e, E = (0, g.sf)(n);
   null == E && P();
-  let [T, N] = (0, s.useState)(o), A = (0, g.KX)(), R = (0, m.O5)(), k = null == (t = (0, f.WD)()) ? void 0 : t.getId(), B = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, j.g2)({
+  let [T, N] = (0, s.useState)(o), A = (0, g.KX)(), R = (0, m.O5)(), k = null == (t = (0, f.WD)()) ? void 0 : t.getId(), B = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), q = (0, j.g2)({
     useReducedMotion: B,
     className: _.colorTransition
   }), I = T.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(E), M = (0, i.e7)([p.Z], () => p.Z.getState().theme), L = (0, l.wj)(M) ? v.BRd.DARK : v.BRd.LIGHT, {
     startConsoleQuest: Z,
-    startingConsoleQuest: W
+    startingConsoleQuest: V
   } = (0, g.GI)({
     questId: E.id,
     beforeRequest: () => {
@@ -77,7 +77,7 @@ function w(e) {
     size: c.CgR.DYNAMIC,
     className: _.modalRoot,
     children: [(0, r.jsxs)(c.xBx, {
-      direction: d.Z.Direction.VERTICAL,
+      direction: u.Z.Direction.VERTICAL,
       separator: !1,
       className: _.modalHeader,
       children: [(0, r.jsxs)("div", {
@@ -112,7 +112,7 @@ function w(e) {
           children: y.intl.string(y.t["+/hZMz"])
         }), (0, r.jsxs)(c.P3F, {
           className: a()(_.refreshWrapper, {
-            [_.disabled]: W
+            [_.disabled]: V
           }),
           onClick: Z,
           children: [q.render(), (0, r.jsx)(c.Text, {

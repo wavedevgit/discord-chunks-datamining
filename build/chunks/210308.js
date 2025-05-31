@@ -28,12 +28,12 @@ function S(e) {
   let {
     groupName: t,
     targetElementRef: n
-  } = e, r = (0, f.Z)(), d = (0, h.Z)({
+  } = e, r = (0, f.Z)(), g = (0, h.Z)({
     location: "TenureLevelUpCoachmark"
-  }), g = (0, l.e7)([m.Z], () => m.Z.isOpen()), p = (0, u.Ws)({
+  }), p = (0, d.Z)(e => e.isOpen), b = (0, l.e7)([m.Z], () => m.Z.isOpen()), _ = (0, u.Ws)({
     location: C.dr.CONFLICT_CHECKS
   });
-  return d && null != r && !g && p ? (0, i.jsx)(c.Nq, {
+  return !g || null == r || p || b || !_ ? null : (0, i.jsx)(c.Nq, {
     contentType: a.z.NITRO_TENURE_BADGE_LEVEL_UP,
     timeRecurringConfig: {
       cooldownDurationMs: 12096e5
@@ -62,7 +62,7 @@ function S(e) {
         children: () => null
       })
     }
-  }) : null
+  })
 }
 
 function v(e) {

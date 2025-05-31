@@ -1,38 +1,38 @@
-/** Chunk was on 41071 **/
+/** Chunk was on 37048 **/
 t.d(n, {
-  Z: () => h
+  Z: () => v
 });
 var l = t(255367),
   r = t(73800),
   i = t(481060),
   o = t(81897),
   s = t(906732),
-  c = t(785717),
-  a = t(806729),
+  a = t(785717),
+  c = t(806729),
   u = t(857302),
   d = t(892001),
   f = t(252417),
   p = t(388032),
   g = t(301150);
 
-function h(e) {
+function v(e) {
   let {
     user: n,
     guildId: t,
-    channelId: h,
-    onClose: v
+    channelId: v,
+    onClose: j
   } = e, {
-    mutualFriends: j
-  } = (0, a.Z)(n), {
-    analyticsLocations: m
+    mutualFriends: b
+  } = (0, c.Z)(n), {
+    analyticsLocations: h
   } = (0, s.ZP)(), {
-    context: b,
+    context: m,
     trackUserProfileAction: x
-  } = (0, c.KZ)(), Z = (0, o.Z)();
+  } = (0, a.KZ)(), O = (0, o.Z)();
   r.useEffect(() => {
-    (0, u.Z)(n.id, Z)
-  }, [n.id, Z]);
-  let y = e => {
+    (0, u.Z)(n.id, O)
+  }, [n.id, O]);
+  let Z = e => {
     var n, t;
     (0, d.openUserProfileModal)((n = function(e) {
       for (var n = 1; n < arguments.length; n++) {
@@ -51,9 +51,9 @@ function h(e) {
         })
       }
       return e
-    }({}, b), t = t = {
+    }({}, m), t = t = {
       userId: e,
-      sourceAnalyticsLocations: m
+      sourceAnalyticsLocations: h
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
       var t = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -68,10 +68,10 @@ function h(e) {
   return (0, l.jsx)(i.zJl, {
     className: g.listScroller,
     fade: !0,
-    children: null == j ? (0, l.jsx)("div", {
+    children: null == b ? (0, l.jsx)("div", {
       className: g.empty,
       children: (0, l.jsx)(i.$jN, {})
-    }) : 0 === j.length ? (0, l.jsxs)("div", {
+    }) : 0 === b.length ? (0, l.jsxs)("div", {
       className: g.empty,
       children: [(0, l.jsx)("div", {
         className: g.emptyIconFriends
@@ -79,7 +79,7 @@ function h(e) {
         className: g.emptyText,
         children: p.intl.string(p.t["/5p4g4"])
       })]
-    }) : j.map(e => {
+    }) : b.map(e => {
       let {
         key: n,
         user: r,
@@ -89,11 +89,11 @@ function h(e) {
         user: r,
         status: i,
         guildId: t,
-        channelId: h,
+        channelId: v,
         onSelect: () => {
-          null == v || v(), x({
+          null == j || j(), x({
             action: "PRESS_MUTUAL_FRIEND"
-          }), y(r.id)
+          }), Z(r.id)
         }
       }, n)
     })

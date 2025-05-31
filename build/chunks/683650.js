@@ -1,70 +1,73 @@
 /** Chunk was on 37447 **/
 n.d(t, {
-  o: () => h
+  X: () => f,
+  o: () => j
 });
-var r = n(255367);
+var r, s = n(255367);
 n(73800);
-var s = n(120356),
-  i = n.n(s),
-  o = n(481060),
-  a = n(617136),
-  l = n(497505),
-  c = n(266843),
-  u = n(341907),
-  d = n(46140),
-  m = n(388032),
-  p = n(444879),
-  x = n(87181);
+var i = n(120356),
+  o = n.n(i),
+  a = n(481060),
+  l = n(617136),
+  c = n(497505),
+  u = n(266843),
+  d = n(341907),
+  m = n(46140),
+  p = n(388032),
+  x = n(444879),
+  g = n(87181);
 
-function g() {
-  return (0, r.jsx)("div", {
-    className: p.buttonContainer,
-    children: (0, r.jsx)(o.zxk, {
-      className: p.button,
-      color: o.Ttl.BRAND,
+function h() {
+  return (0, s.jsx)("div", {
+    className: x.buttonContainer,
+    children: (0, s.jsx)(a.zxk, {
+      className: x.button,
+      color: a.Ttl.BRAND,
       onClick: () => {
-        (0, u.navigateToQuestHome)({
-          fromContent: l.jn.QUESTS_EMBED
+        (0, d.navigateToQuestHome)({
+          fromContent: c.jn.QUESTS_EMBED
         })
       },
-      children: m.intl.string(m.t.GURBQk)
+      children: p.intl.string(p.t.GURBQk)
     })
   })
 }
+var f = ((r = {}).NOT_FOUND = "not_found", r.MOBILE_ONLY = "mobile_only", r);
 
-function h(e) {
+function j(e) {
   let {
-    questId: t
+    questId: t,
+    reason: n = "not_found"
   } = e, {
-    containerRef: n,
-    size: s
-  } = (0, c.h)();
-  return (0, a.Zk)(d.V_.UNKNOWN_QUEST, t), (0, r.jsxs)("div", {
+    containerRef: r,
+    size: i
+  } = (0, u.h)();
+  return (0, l.Zk)(m.V_.UNKNOWN_QUEST, t), (0, s.jsxs)("div", {
     ref: e => {
-      n.current = e
+      r.current = e
     },
-    className: i()(p.container, {
-      [p.wide]: "lg" === s,
-      [p.tall]: "lg" !== s
+    className: o()(x.container, {
+      [x.wide]: "lg" === i,
+      [x.tall]: "lg" !== i
     }),
-    children: [(0, r.jsxs)("div", {
-      className: p.contentContainer,
-      children: [(0, r.jsx)(o.X6q, {
-        variant: "lg" === s ? "heading-xl/bold" : "heading-lg/bold",
+    children: [(0, s.jsxs)("div", {
+      className: x.contentContainer,
+      children: [(0, s.jsx)(a.X6q, {
+        variant: "lg" === i ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
-        children: m.intl.string(m.t.vnP31d)
-      }), (0, r.jsx)(o.Text, {
-        variant: "lg" === s ? "text-sm/medium" : "text-xs/medium",
+        children: p.intl.string(p.t.vnP31d)
+      }), (0, s.jsx)(a.Text, {
+        variant: "lg" === i ? "text-sm/medium" : "text-xs/medium",
         color: "text-normal",
-        className: p.__invalid_mobileWebCopy,
-        children: m.intl.string(m.t.CTn0yc)
-      }), (0, r.jsx)(g, {})]
-    }), (0, r.jsx)("div", {
-      className: p.imgContainer,
-      children: (0, r.jsx)("img", {
-        src: x,
+        className: x.__invalid_mobileWebCopy,
+        children: p.intl.string("mobile_only" === n ? p.t.Pag1gY : p.t.CTn0yc)
+      }), (0, s.jsx)(h, {})]
+    }), (0, s.jsx)("div", {
+      className: x.imgContainer,
+      children: (0, s.jsx)("img", {
+        src: g,
         alt: "",
-        className: p.missingQuestImage
+        className: x.missingQuestImage
       })
     })]
   })

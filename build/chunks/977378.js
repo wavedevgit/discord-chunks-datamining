@@ -1,8 +1,8 @@
-/** Chunk was on 11678 **/
+/** Chunk was on 37048 **/
 t.d(n, {
-  E: () => i
+  E: () => r
 });
-let o = (0, t(818083).B)({
+let l = (0, t(818083).B)({
     kind: "user",
     id: "2025-05_user_profile_view_main_profile_negative_experiment",
     label: "User Profile View Main Profile Negative Experiment",
@@ -17,12 +17,12 @@ let o = (0, t(818083).B)({
       }
     }]
   }),
-  i = e => {
+  r = e => {
     let {
       location: n,
       autoTrackExposure: t = !0
     } = e;
-    return o.useExperiment({
+    return l.useExperiment({
       location: n
     }, {
       autoTrackExposure: t

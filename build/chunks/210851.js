@@ -12,8 +12,8 @@ let l = function(e) {
   let {
     assetKey: l,
     filters: c,
-    initialValue: u,
-    onFileChange: d,
+    initialValue: d,
+    onFileChange: u,
     title: p
   } = e, [m, f] = s.useState(null), g = s.useRef(null);
   return s.useEffect(() => () => {
@@ -48,7 +48,7 @@ let l = function(e) {
         })]
       })
     }), (0, r.jsx)(a.Z, {
-      filename: null != (n = null != (t = null == m ? void 0 : m.name) ? t : u) ? n : "",
+      filename: null != (n = null != (t = null == m ? void 0 : m.name) ? t : d) ? n : "",
       filters: [{
         name: p,
         extensions: c
@@ -60,7 +60,7 @@ let l = function(e) {
         let t = URL.createObjectURL(e);
         g.current = t;
         let n = new URL(t);
-        n.searchParams.append("mimetype", e.type), n.searchParams.append("name", e.name), d(l, n.toString())
+        n.searchParams.append("mimetype", e.type), n.searchParams.append("name", e.name), u(l, n.toString())
       }
     })]
   })

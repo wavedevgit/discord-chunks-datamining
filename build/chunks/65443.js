@@ -25,7 +25,7 @@ function g(e) {
     quest: f
   } = e, j = (0, c.j)({
     location: m.dr.QUESTS_BAR_MOBILE
-  }), b = s.useMemo(() => d.r.build(f.config), [f.config]), C = b.defaultReward.messages.name, v = b.defaultReward.messages.nameWithArticle, y = (0, l.Kr)(f.config), T = (0, u.mK)(f.config);
+  }), b = s.useMemo(() => d.r.build(f.config), [f.config]), C = b.defaultReward.messages.name, v = b.defaultReward.messages.nameWithArticle, y = (0, l.Kr)(f.config), O = (0, u.mK)(f.config);
   return (0, r.jsxs)("div", {
     children: [g && (0, r.jsx)(a.Text, {
       color: n,
@@ -40,7 +40,7 @@ function g(e) {
       }),
       children: [(0, r.jsx)(a.Text, {
         className: o()({
-          [x.rewardsDisclosuresDurationPremiumExtendable]: null != T
+          [x.rewardsDisclosuresDurationPremiumExtendable]: null != O
         }),
         color: i,
         tag: "li",
@@ -48,14 +48,14 @@ function g(e) {
         children: p.intl.formatToPlainString(p.t.coKAb2, {
           rewardsDuration: y
         })
-      }), null != T && (0, r.jsx)(a.Text, {
+      }), null != O && (0, r.jsx)(a.Text, {
         className: o()({
           [x.rewardsDisclosuresItemPremiumHighlight]: h
         }),
         tag: "li",
         color: h ? void 0 : i,
         variant: "text-xs/medium",
-        children: T
+        children: O
       })]
     })]
   })

@@ -10,8 +10,8 @@ var s = n(120356),
   i = n(481060),
   l = n(113434),
   c = n(497505),
-  u = n(685613),
-  d = n(340100),
+  d = n(685613),
+  u = n(340100),
   p = n(644646),
   m = n(788284),
   f = n(46140),
@@ -54,7 +54,7 @@ let h = function(e) {
           questContent: c.jn.QUEST_BAR,
           autoplay: !1,
           location: f.dr.QUESTS_BAR
-        }), C ? (0, r.jsx)(d.Z, {
+        }), C ? (0, r.jsx)(u.Z, {
           className: x.questProgressBar,
           quest: j
         }) : (0, r.jsx)(i.Text, {
@@ -65,7 +65,7 @@ let h = function(e) {
         })]
       }) : (0, r.jsxs)("div", {
         className: x.brandingWrapper,
-        children: [(0, r.jsx)(u.ZP, {
+        children: [(0, r.jsx)(d.ZP, {
           className: x.partnerBranding,
           quest: j
         }), (0, r.jsx)(i.X6q, {

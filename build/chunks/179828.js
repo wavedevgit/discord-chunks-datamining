@@ -1,4 +1,4 @@
-/** Chunk was on 41071 **/
+/** Chunk was on 37048 **/
 t.d(n, {
   Z: () => E
 }), t(642613), t(388685);
@@ -7,22 +7,22 @@ var l = t(255367),
   i = t(772848),
   o = t(924826),
   s = t(91192),
-  c = t(442837),
-  a = t(749210),
+  a = t(442837),
+  c = t(749210),
   u = t(434404),
   d = t(271383),
   f = t(430824),
   p = t(496675),
   g = t(700785),
-  h = t(785717),
-  v = t(256226),
-  j = t(678738),
-  m = t(314172),
-  b = t(981631),
+  v = t(785717),
+  j = t(256226),
+  b = t(678738),
+  h = t(314172),
+  m = t(981631),
   x = t(388032),
-  Z = t(217919);
+  O = t(217919);
 
-function y(e) {
+function Z(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       l = Object.keys(t);
@@ -41,7 +41,7 @@ function y(e) {
   return e
 }
 
-function O(e, n) {
+function y(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function O(e, n) {
   }), e
 }
 
-function I(e, n) {
+function P(e, n) {
   if (null == e) return {};
   var t, l, r = function(e, n) {
     if (null == e) return {};
@@ -70,33 +70,33 @@ function I(e, n) {
   return r
 }
 
-function P(e) {
+function I(e) {
   let {
     user: n,
     currentUser: t,
-    guild: c,
-    guildMember: a,
+    guild: a,
+    guildMember: c,
     roles: u,
     highestRole: d,
     canManageRoles: f,
     onAddRole: p,
-    onRemoveRole: h
-  } = e, j = f && null != a, P = r.useRef(null), E = r.useMemo(() => "roles-".concat((0, i.Z)()), []), T = (0, o.ZP)({
+    onRemoveRole: v
+  } = e, b = f && null != c, I = r.useRef(null), E = r.useMemo(() => "roles-".concat((0, i.Z)()), []), T = (0, o.ZP)({
     id: E,
     isEnabled: !0,
-    scrollToStart: b.Cyb,
-    scrollToEnd: b.Cyb,
+    scrollToStart: m.Cyb,
+    scrollToEnd: m.Cyb,
     wrap: !0
   }), S = u.length, N = 0 === S ? x.intl.string(x.t["vR7M+/"]) : x.intl.formatToPlainString(x.t.PCs0oq, {
     numRoles: S
   }), A = u.map(e => {
     var r;
-    return (0, l.jsx)(v.Z, {
+    return (0, l.jsx)(j.Z, {
       role: e,
-      guildId: c.id,
+      guildId: a.id,
       disableBorderColor: !0,
-      onRemove: () => h(e),
-      canRemove: f ? g.r6(c, t.id, d, e) : (null == (r = e.tags) ? void 0 : r.guild_connections) === null && n.id === t.id
+      onRemove: () => v(e),
+      canRemove: f ? g.r6(a, t.id, d, e) : (null == (r = e.tags) ? void 0 : r.guild_connections) === null && n.id === t.id
     }, e.id)
   });
   return (0, l.jsx)(s.bG, {
@@ -105,16 +105,16 @@ function P(e) {
       children: e => {
         var {
           ref: n
-        } = e, t = I(e, ["ref"]);
-        return (0, l.jsxs)("div", O(y({
-          className: Z.root,
+        } = e, t = P(e, ["ref"]);
+        return (0, l.jsxs)("div", y(Z({
+          className: O.root,
           "aria-label": N,
           ref: n
         }, t), {
-          children: [A, j && (0, l.jsx)(m.Z, {
-            buttonRef: P,
-            guild: c,
-            guildMember: a,
+          children: [A, b && (0, l.jsx)(h.Z, {
+            buttonRef: I,
+            guild: a,
+            guildMember: c,
             numRoles: S,
             highestRole: d,
             onAddRole: p
@@ -130,35 +130,35 @@ function E(e) {
     user: n,
     currentUser: t,
     guild: i
-  } = e, o = I(e, ["user", "currentUser", "guild"]);
+  } = e, o = P(e, ["user", "currentUser", "guild"]);
   let {
     trackUserProfileAction: s
-  } = (0, h.KZ)(), v = (0, c.e7)([d.ZP], () => d.ZP.getMember(i.id, n.id)), m = (0, c.e7)([f.Z], () => f.Z.getRoles(i.id)), Z = null == v ? void 0 : v.roles, E = r.useMemo(() => null == Z || 0 === Z.length ? [] : Object.values(m).filter(e => Z.includes(e.id)).sort((e, n) => {
+  } = (0, v.KZ)(), j = (0, a.e7)([d.ZP], () => d.ZP.getMember(i.id, n.id)), h = (0, a.e7)([f.Z], () => f.Z.getRoles(i.id)), O = null == j ? void 0 : j.roles, E = r.useMemo(() => null == O || 0 === O.length ? [] : Object.values(h).filter(e => O.includes(e.id)).sort((e, n) => {
     var t, l;
     let r = (null == (t = e.tags) ? void 0 : t.guild_connections) !== null,
       i = (null == (l = n.tags) ? void 0 : l.guild_connections) !== null;
     return r && !i ? 1 : !r && i ? -1 : 0
-  }), [m, Z]), T = g.e9(i, t.id), [S] = (0, c.Wu)([p.Z], () => [p.Z.can(b.Plq.MANAGE_ROLES, i), null != i ? p.Z.getGuildVersion(i.id) : null]), N = r.useCallback(e => {
+  }), [h, O]), T = g.e9(i, t.id), [S] = (0, a.Wu)([p.Z], () => [p.Z.can(m.Plq.MANAGE_ROLES, i), null != i ? p.Z.getGuildVersion(i.id) : null]), N = r.useCallback(e => {
     var t, l;
     s({
       action: "REMOVE_ROLE"
     });
-    let r = null != (l = null == Z ? void 0 : Z.filter(n => n !== e.id)) ? l : [];
-    (null == (t = e.tags) ? void 0 : t.guild_connections) === null ? a.Z.unassignGuildRoleConnection(i.id, e.id) : u.Z.updateMemberRoles(i.id, n.id, r, [], [e.id])
-  }, [Z, i.id, n.id, s]), A = r.useCallback(e => {
+    let r = null != (l = null == O ? void 0 : O.filter(n => n !== e.id)) ? l : [];
+    (null == (t = e.tags) ? void 0 : t.guild_connections) === null ? c.Z.unassignGuildRoleConnection(i.id, e.id) : u.Z.updateMemberRoles(i.id, n.id, r, [], [e.id])
+  }, [O, i.id, n.id, s]), A = r.useCallback(e => {
     s({
       action: "ADD_ROLE"
     });
-    let t = null != Z ? Z : []; - 1 === t.indexOf(e) && (t = t.concat([e])), u.Z.updateMemberRoles(i.id, n.id, t, [e], [])
-  }, [Z, i.id, n.id, s]), C = S && null != v;
-  return 0 !== E.length || C ? (0, l.jsx)(j.Z, O(y({
+    let t = null != O ? O : []; - 1 === t.indexOf(e) && (t = t.concat([e])), u.Z.updateMemberRoles(i.id, n.id, t, [e], [])
+  }, [O, i.id, n.id, s]), C = S && null != j;
+  return 0 !== E.length || C ? (0, l.jsx)(b.Z, y(Z({
     heading: x.intl.string(x.t.LPJmLy)
   }, o), {
-    children: (0, l.jsx)(P, {
+    children: (0, l.jsx)(I, {
       user: n,
       currentUser: t,
       guild: i,
-      guildMember: v,
+      guildMember: j,
       roles: E,
       highestRole: T,
       canManageRoles: S,

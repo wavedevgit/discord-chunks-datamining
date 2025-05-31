@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(240894),
   l = n(442837),
   c = n(481060),
-  u = n(393238),
-  d = n(607070),
+  d = n(393238),
+  u = n(607070),
   p = n(960919),
   m = n(113434),
   f = n(918701),
@@ -40,10 +40,10 @@ function E(e) {
     onReceiveErrorHints: D
   } = e, M = (0, g.j)({
     location: O.dr.QUESTS_BAR_MOBILE
-  }), L = s.useMemo(() => x.r.build(A.config), [A.config]), Z = L.defaultReward.messages.name, W = L.defaultReward.messages.nameWithArticle, V = M ? Z : W, Q = (null == (t = A.userStatus) ? void 0 : t.enrolledAt) != null, {
+  }), L = s.useMemo(() => x.r.build(A.config), [A.config]), Z = L.defaultReward.messages.name, V = L.defaultReward.messages.nameWithArticle, W = M ? Z : V, Q = (null == (t = A.userStatus) ? void 0 : t.enrolledAt) != null, {
     ref: H,
     scrollHeight: U
-  } = (0, u.kE)(), z = 104 !== U, {
+  } = (0, d.kE)(), z = 104 !== U, {
     onAssetLoadComplete: F
   } = s.useContext(j.k), {
     expansionSpring: K
@@ -103,16 +103,16 @@ function E(e) {
   }) : w.intl.format(w.t["0IUT4e"], {
     rewardWithArticleHook: () => (0, r.jsx)(T, {
       questId: A.id,
-      children: V
+      children: W
     })
-  }), [Z, Y, V, A.id, J, G]), er = s.useMemo(() => {
+  }), [Z, Y, W, A.id, J, G]), er = s.useMemo(() => {
     if (null != et) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
       className: S.description,
       children: et
     })
-  }, [et]), es = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
+  }, [et]), es = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
     className: S.container,
     children: [(0, r.jsxs)(i.animated.div, {
