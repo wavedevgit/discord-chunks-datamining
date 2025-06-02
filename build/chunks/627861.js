@@ -204,7 +204,8 @@ function ea(e) {
         artist: _.state
       }) : c.name,
       t = null != (a = null == _ || null == (n = _.timestamps) ? void 0 : n.start) ? a : null == _ ? void 0 : _.created_at,
-      i = null != t ? (0, r.jsxs)(r.Fragment, {
+      i = null != t ? (0, r.jsxs)("div", {
+        className: J.timestampContainer,
         children: [(0, r.jsx)(o.RZG, {
           size: "xxs"
         }), (0, r.jsx)(x.x3, {
@@ -493,7 +494,8 @@ function ec(e) {
     })
   }
   let eN = null != (v = null == R || null == (n = R.timestamps) ? void 0 : n.start) ? v : null == R ? void 0 : R.created_at,
-    eT = null != eN ? (0, r.jsxs)(r.Fragment, {
+    eT = null != eN ? (0, r.jsxs)("div", {
+      className: J.timestampContainer,
       children: [(0, r.jsx)(o.iWm, {
         size: "xxs",
         color: "currentColor"

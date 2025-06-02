@@ -1,6 +1,6 @@
 /**
   Module ID: 36087
-  Original File Name: a1878d9c966c6bdc
+  Original File Name: 556726a30ec445bd
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -7294,10 +7294,17 @@ html .progress__61462 {
 }
 
 .tagline_c8f246 {
+    padding: 2px
+}
+
+.tagline_c8f246,.timestampContainer_c8f246 {
     align-items: center;
     display: flex;
-    gap: 4px;
-    padding: 2px
+    gap: 4px
+}
+
+.timestampContainer_c8f246 {
+    min-width: 54px
 }
 
 .tag_c8f246:not(:first-of-type):before {
@@ -11702,4 +11709,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=a1878d9c966c6bdc.css.map*/
+/*# sourceMappingURL=556726a30ec445bd.css.map*/
