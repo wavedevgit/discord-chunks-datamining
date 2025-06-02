@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => s
 }), n(539854);
-var r = n(585305),
-  o = n(806729),
+var o = n(585305),
+  r = n(806729),
   i = n(708108),
   c = n(146078),
   l = n(228168),
@@ -16,7 +16,7 @@ function s(e) {
   } = e, {
     mutualFriendsCount: s,
     mutualGuilds: d
-  } = (0, o.Z)(t), u = null == d ? void 0 : d.length, f = (0, r.Z)(t), p = [{
+  } = (0, r.Z)(t), u = null == d ? void 0 : d.length, f = (0, o.Z)(t), p = [{
     text: a.intl.string(a.t.chq59f),
     section: l.oh.ACTIVITY,
     subsection: void 0
