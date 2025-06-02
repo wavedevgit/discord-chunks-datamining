@@ -7328,6 +7328,25 @@ let {
         opacity: .3
       }
     },
+    USER_PROFILE_TOOLBAR_BORDER: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "WHITE",
+        opacity: .03
+      },
+      [r.LIGHT]: {
+        raw: "BLACK",
+        opacity: .04
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_11",
+        opacity: .08
+      },
+      [r.DARKER]: {
+        raw: "PLUM_11",
+        opacity: .06
+      }
+    },
     VOICE_VIDEO_VIDEO_TILE_BACKGROUND: {
       category: "generic",
       [r.DARK]: {

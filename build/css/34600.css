@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: 810520c2ccde7202
+  Original File Name: 462b19fa61a08f24
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3679,6 +3679,7 @@
     --user-profile-note-background-focus: #1f1f21;
     --user-profile-overlay-background: #111214;
     --user-profile-overlay-background-hover: rgba(79,79,89,.3);
+    --user-profile-toolbar-border: hsla(0,0%,100%,.03);
     --voice-video-video-tile-background: rgba(43,46,54,.4);
     --voice-video-video-tile-blur-fallback: rgba(31,31,33,.48);
     --white: #fff
@@ -4050,6 +4051,7 @@
     --user-profile-note-background-focus: #e3e6e8;
     --user-profile-overlay-background: #fff;
     --user-profile-overlay-background-hover: hsla(220,6%,53%,.16);
+    --user-profile-toolbar-border: rgba(0,0,0,.04);
     --voice-video-video-tile-background: rgba(43,46,54,.4);
     --voice-video-video-tile-blur-fallback: rgba(31,31,33,.48);
     --white: #fff
@@ -4421,6 +4423,7 @@
     --user-profile-note-background-focus: #212129;
     --user-profile-overlay-background: #131318;
     --user-profile-overlay-background-hover: rgba(77,79,92,.3);
+    --user-profile-toolbar-border: hsla(223,8%,46%,.08);
     --voice-video-video-tile-background: rgba(43,46,54,.4);
     --voice-video-video-tile-blur-fallback: rgba(31,31,33,.48);
     --white: #fff
@@ -4792,9 +4795,10 @@
     --user-profile-note-background-focus: #30333b;
     --user-profile-overlay-background: #26262e;
     --user-profile-overlay-background-hover: rgba(77,79,92,.3);
+    --user-profile-toolbar-border: hsla(223,8%,46%,.06);
     --voice-video-video-tile-background: rgba(43,46,54,.4);
     --voice-video-video-tile-blur-fallback: rgba(31,31,33,.48);
     --white: #fff
 }
 
-/*# sourceMappingURL=810520c2ccde7202.css.map*/
+/*# sourceMappingURL=462b19fa61a08f24.css.map*/
