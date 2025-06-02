@@ -6,12 +6,12 @@ var r = n(255367);
 n(73800);
 var i = n(617735),
   l = n(230826),
-  o = n(433517),
-  s = n(481060),
-  a = n(749210),
-  c = n(170509),
-  u = n(740504),
-  d = n(117984),
+  o = n(481060),
+  s = n(749210),
+  a = n(170509),
+  c = n(740504),
+  u = n(117984),
+  d = n(437152),
   h = n(398758),
   p = n(680089),
   f = n(592125),
@@ -58,16 +58,16 @@ function x(e) {
     drop(e, t) {
       let n, i = O.Z.getGuildId(),
         l = t.getItem(),
-        o = (0, v.if)(E(i, l.id), l.position, e.channel, e.position, l.channelList);
-      if (null == o) return;
-      let u = E(i, l.id);
-      if (null == u) return;
+        c = (0, v.if)(E(i, l.id), l.position, e.channel, e.position, l.channelList);
+      if (null == c) return;
+      let d = E(i, l.id);
+      if (null == d) return;
       let h = g.Z.getCategories(i),
         p = b.Z.getGuild(i);
       if (null == p) return;
-      let m = (0, v.Dn)(u, E(i, o.referenceId), o.parentId, h);
+      let m = (0, v.Dn)(d, E(i, c.referenceId), c.parentId, h);
       if (0 !== m.length) {
-        if (i === C.I_8) return void(0, d.s3)(m);
+        if (i === C.I_8) return void(0, u.s3)(m);
         if (m = m.filter(e => {
             let {
               id: t
@@ -75,25 +75,25 @@ function x(e) {
             if (null == n) return !1;
             let r = f.Z.getChannel(n.parent_id);
             return n.type === C.d4z.GUILD_CATEGORY || null == r ? y.Z.can(C.Plq.MANAGE_CHANNELS, p) : y.Z.can(C.Plq.MANAGE_CHANNELS, r)
-          }), u.parent_id !== o.parentId && m.find(e => {
-            if (e.id !== u.id) return !1;
+          }), d.parent_id !== c.parentId && m.find(e => {
+            if (e.id !== d.id) return !1;
             let t = f.Z.getChannel(e.parent_id);
-            if (!(null != t && y.Z.can(C.Plq.MANAGE_ROLES, u) && y.Z.can(C.Plq.MANAGE_ROLES, t))) return !0;
-            let r = _.o4(u, t),
-              i = _.o4(u, f.Z.getChannel(u.parent_id));
-            return (null != u.parent_id || r) && (!i || r) || (n = e), !0
+            if (!(null != t && y.Z.can(C.Plq.MANAGE_ROLES, d) && y.Z.can(C.Plq.MANAGE_ROLES, t))) return !0;
+            let r = _.o4(d, t),
+              i = _.o4(d, f.Z.getChannel(d.parent_id));
+            return (null != d.parent_id || r) && (!i || r) || (n = e), !0
           }), null != n) {
           let e = f.Z.getChannel(n.parent_id);
-          null != e && (0, s.h7j)(t => {
+          null != e && (0, o.h7j)(t => {
             var l, o;
-            return (0, r.jsx)(c.default, (l = j({}, t), o = o = {
-              channel: u,
+            return (0, r.jsx)(a.default, (l = j({}, t), o = o = {
+              channel: d,
               category: e,
               onConfirm: () => {
-                null != n && (n.lock_permissions = !0, a.Z.batchChannelUpdate(i, m))
+                null != n && (n.lock_permissions = !0, s.Z.batchChannelUpdate(i, m))
               },
               onCancel: () => {
-                null != n && a.Z.batchChannelUpdate(i, m)
+                null != n && s.Z.batchChannelUpdate(i, m)
               }
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
               var n = Object.keys(e);
@@ -106,7 +106,7 @@ function x(e) {
               Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
             }), l))
           })
-        } else a.Z.batchChannelUpdate(i, m)
+        } else s.Z.batchChannelUpdate(i, m)
       }
     },
     canDrop(e, t) {
@@ -148,7 +148,7 @@ function x(e) {
       if (O.Z.getGuildId() === C.I_8) return !0;
       let i = b.Z.getGuild(t.getGuildId());
       if (null == i) return !1;
-      if ((0, h.r1)(i.id) && y.Z.can(C.Plq.MANAGE_CHANNELS, i)) return "true" !== o.K.get("doNotShowReorderModal") && (0, s.ZDy)(async () => {
+      if ((0, h.r1)(i.id) && y.Z.can(C.Plq.MANAGE_CHANNELS, i)) return (0, d.N)() && (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("82560").then(n.bind(n, 391312));
@@ -174,7 +174,7 @@ function x(e) {
         position: l,
         parentId: n,
         type: i,
-        channelList: (0, u.Z)(s._categories, s, e => {
+        channelList: (0, c.Z)(s._categories, s, e => {
           let {
             channel: t
           } = e;
