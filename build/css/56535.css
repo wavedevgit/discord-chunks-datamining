@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: 586895e81b0ab7bc
+  Original File Name: b11fbd05dbff0951
 **/
 .errorBanner__3405b {
     color: var(--status-danger-text)
@@ -921,13 +921,14 @@ footer {
 
 .preview__4d307 {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    min-height: 48px
 }
 
 .preview__4d307 img {
     background: var(--interactive-muted);
-    height: 48px;
-    width: 48px
+    max-height: 48px;
+    max-width: 48px
 }
 
 .submit__4d307 {
@@ -964,12 +965,6 @@ footer {
     align-items: center;
     display: flex;
     gap: var(--space-4)
-}
-
-.editedImage__4d307 img {
-    height: 48px;
-    transition: filter .2s ease-in-out;
-    width: 48px
 }
 
 .emojiErrorItem__67954 {
@@ -1199,4 +1194,4 @@ footer {
     top: var(--space-lg)
 }
 
-/*# sourceMappingURL=586895e81b0ab7bc.css.map*/
+/*# sourceMappingURL=b11fbd05dbff0951.css.map*/

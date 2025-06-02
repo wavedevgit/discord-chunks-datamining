@@ -4,38 +4,38 @@ r.d(t, {
 });
 var n = r(255367),
   a = r(692547),
-  s = r(481060),
-  l = r(192360),
-  i = r(954292);
+  l = r(481060),
+  i = r(192360),
+  s = r(954292);
 let o = e => {
     let {
       onChange: t,
       value: r
     } = e;
     return (0, n.jsxs)("div", {
-      className: l.nameInput,
+      className: i.nameInput,
       children: [(0, n.jsxs)("div", {
-        className: l.wrapInput,
+        className: i.wrapInput,
         children: [(0, n.jsx)(c, {}), (0, n.jsx)("input", {
           value: r,
           onChange: e => {
             t(e.currentTarget.value)
           },
           placeholder: "emoji_name",
-          className: i["text-md/semibold"]
+          className: s["text-md/semibold"]
         }), (0, n.jsx)(u, {
           value: r
         })]
-      }), (0, n.jsx)(s.Text, {
+      }), (0, n.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "header-muted",
-        className: l.inputNote,
+        className: i.inputNote,
         children: "Min. 2 characters (letters, numbers & underscores only)."
       })]
     })
   },
   c = () => (0, n.jsx)("span", {
-    className: l.bookend,
+    className: i.bookend,
     "arria-hidden": !0,
     children: ":"
   }),
@@ -43,15 +43,15 @@ let o = e => {
     let {
       value: t
     } = e;
-    return (0, n.jsxs)(s.Text, {
+    return (0, n.jsxs)(l.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
-      className: l.ghost,
+      className: i.ghost,
       "aria-hidden": !0,
       children: [(0, n.jsx)(c, {}), (0, n.jsx)("span", {
-        className: l.spacer,
+        className: i.spacer,
         children: "" === t ? "emoji_name" : t
-      }), (0, n.jsx)(c, {}), "" === t && (0, n.jsx)(s.vdY, {
+      }), (0, n.jsx)(c, {}), "" === t && (0, n.jsx)(l.vdY, {
         color: a.Z.colors.INTERACTIVE_MUTED,
         size: "xs"
       })]

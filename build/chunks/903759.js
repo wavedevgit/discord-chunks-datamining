@@ -4,43 +4,43 @@ r.d(t, {
 }), r(388685);
 var n = r(255367),
   a = r(73800),
-  s = r(481060),
-  l = r(327802),
-  i = r(372129),
+  l = r(481060),
+  i = r(327802),
+  s = r(372129),
   o = r(598117),
   c = r(746622),
   u = r(162337);
 let d = e => {
     let {
       setUserImage: t
-    } = e, [r, i] = a.useState(null);
+    } = e, [r, s] = a.useState(null);
     return (0, n.jsxs)("div", {
       className: u.emptyState,
       children: [(0, n.jsxs)("header", {
-        children: [(0, n.jsx)(s.X6q, {
+        children: [(0, n.jsx)(l.X6q, {
           variant: "heading-lg/medium",
           color: "header-primary",
           children: "Add Emoji"
-        }), (0, n.jsx)(s.Text, {
+        }), (0, n.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "header-muted",
           children: "Select an image or GIF. You'll be able to edit & preview."
         })]
       }), (0, n.jsxs)("div", {
         className: u.dropZone,
-        children: [(0, n.jsx)(s.dZu, {
+        children: [(0, n.jsx)(l.dZu, {
           size: "lg",
-          color: s.TVs.colors.HEADER_MUTED
-        }), (0, n.jsxs)(s.Text, {
+          color: l.TVs.colors.HEADER_MUTED
+        }), (0, n.jsxs)(l.Text, {
           variant: "text-md/medium",
           children: ["Drag & drop or ", (0, n.jsx)(p, {
             setUserImage: t
           })]
         }), null !== r && (0, n.jsx)(c.H, {
           error: o.ze.IMAGE_LOAD
-        }), (0, n.jsx)(l.X, {
+        }), (0, n.jsx)(i.X, {
           onSuccess: t,
-          onError: i
+          onError: s
         })]
       })]
     })
@@ -49,12 +49,12 @@ let d = e => {
     let {
       setUserImage: t
     } = e;
-    return (0, n.jsxs)(s.P3F, {
+    return (0, n.jsxs)(l.P3F, {
       focusProps: {
         within: !0
       },
       tag: "a",
-      children: ["Select an image", (0, n.jsx)(i.ZP, {
+      children: ["Select an image", (0, n.jsx)(s.ZP, {
         tabIndex: 0,
         onChange: (e, r, n) => (t({
           data: e,
