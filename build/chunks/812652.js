@@ -1,14 +1,14 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  PG: () => S,
+  PG: () => b,
   Vf: () => C,
   YX: () => y,
   ZP: () => Z,
   l9: () => I
 }), n(388685), n(415506);
 var r = n(255367),
-  l = n(392711),
-  i = n.n(l),
+  i = n(392711),
+  l = n.n(i),
   s = n(268146),
   o = n(481060),
   a = n(100527),
@@ -24,8 +24,8 @@ var r = n(255367),
   _ = n(37113),
   v = n(825107),
   j = n(388032),
-  b = n(864443);
-let S = [{
+  S = n(864443);
+let b = [{
     value: _.tI.PRESET_VIDEO,
     canUse: e => !0
   }, {
@@ -55,7 +55,7 @@ function O(e) {
     label: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: b.premiumOptionContainer,
+    className: S.premiumOptionContainer,
     children: [t, (0, r.jsx)(o.SrA, {
       size: "xs",
       color: o.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
@@ -64,28 +64,28 @@ function O(e) {
 }
 
 function Z(e) {
-  var t, n, l;
+  var t, n, i;
   let {
-    onClose: b,
+    onClose: S,
     onSelect: Z
   } = e, [{
     notifyFriends: I,
     hidePreview: w,
     muteStreamAudio: N,
-    preset: E,
-    resolution: T,
+    preset: T,
+    resolution: E,
     fps: P,
     sourceType: R,
     audioSourceId: k
-  }, A] = (0, p.E_)(), M = (0, c.Z)(), L = (0, h.Z)(), [D, B] = null != (n = (0, g.Z)(_.tI.PRESET_VIDEO)) ? n : [_.LY.RESOLUTION_720, _.ws.FPS_30], [U, G] = null != (l = (0, g.Z)(_.tI.PRESET_DOCUMENTS)) ? l : [_.LY.RESOLUTION_SOURCE, _.ws.FPS_15];
+  }, A] = (0, p.E_)(), M = (0, c.Z)(), L = (0, h.Z)(), [D, B] = null != (n = (0, g.Z)(_.tI.PRESET_VIDEO)) ? n : [_.LY.RESOLUTION_720, _.ws.FPS_30], [U, G] = null != (i = (0, g.Z)(_.tI.PRESET_DOCUMENTS)) ? i : [_.LY.RESOLUTION_SOURCE, _.ws.FPS_15];
   return (0, r.jsxs)(o.v2r, {
     "aria-label": j.intl.string(j.t["+1H47u"]),
     navId: "stream-options",
-    onClose: b,
+    onClose: S,
     onSelect: Z,
     children: [(0, r.jsx)(o.kSQ, {
       label: j.intl.string(v.default.P2pjm5),
-      children: S.filter(e => {
+      children: b.filter(e => {
         let {
           canUse: t
         } = e;
@@ -97,7 +97,7 @@ function Z(e) {
         return (0, r.jsx)(o.k5B, {
           group: "preset",
           id: "stream-preset-".concat(t),
-          checked: E === t,
+          checked: T === t,
           label: (0, f.L)(t),
           subtext: function(e) {
             switch (e) {
@@ -123,7 +123,7 @@ function Z(e) {
           })
         }, t)
       })
-    }), E === _.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
+    }), T === _.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.sNh, {
         id: "resolution",
         label: j.intl.string(v.default.IG5n0d),
@@ -139,12 +139,12 @@ function Z(e) {
           return (0, r.jsx)(o.k5B, {
             group: "resolution",
             id: "stream-option-resolution-".concat(t),
-            checked: T === t,
+            checked: E === t,
             label: t !== _.LY.RESOLUTION_720 ? (0, r.jsx)(O, {
               label: (0, m.M)(t)
             }) : (0, m.M)(t),
             action: () => (function(e) {
-              if (!(0, u.Z)(E, e, P, d.default.getCurrentUser(), L)) return b(), (0, x.E)({
+              if (!(0, u.Z)(T, e, P, d.default.getCurrentUser(), L)) return S(), (0, x.E)({
                 analyticsLocation: a.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
               });
               A({
@@ -165,7 +165,7 @@ function Z(e) {
             label: "".concat(e, "fps")
           }) : "".concat(e, "fps"),
           action: () => (function(e) {
-            if (!(0, u.Z)(E, T, e, d.default.getCurrentUser(), L)) return b(), (0, x.E)({
+            if (!(0, u.Z)(T, E, e, d.default.getCurrentUser(), L)) return S(), (0, x.E)({
               analyticsLocation: a.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
             });
             A({
@@ -188,7 +188,7 @@ function Z(e) {
       label: j.intl.string(v.default.YSdHV1),
       subtext: null == (t = M[null != k ? k : ""]) ? void 0 : t.name,
       subtextLineClamp: 1,
-      children: i().map(M, e => {
+      children: l().map(M, e => {
         let {
           id: t,
           name: n
@@ -232,7 +232,7 @@ function I(e) {
   var t;
   let {
     onClose: n,
-    onSelect: l
+    onSelect: i
   } = e, [{
     notifyFriends: a,
     hidePreview: d,
@@ -244,7 +244,7 @@ function I(e) {
     "aria-label": j.intl.string(j.t["+1H47u"]),
     navId: "stream-options",
     onClose: n,
-    onSelect: l,
+    onSelect: i,
     children: [(0, r.jsx)(o.S89, {
       id: "stream-option-mute",
       checked: u,
@@ -274,7 +274,7 @@ function I(e) {
       label: j.intl.string(v.default.YSdHV1),
       subtext: null == (t = x[null != m ? m : ""]) ? void 0 : t.name,
       subtextLineClamp: 1,
-      children: i().map(x, e => {
+      children: l().map(x, e => {
         let {
           id: t,
           name: n

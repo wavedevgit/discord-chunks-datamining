@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var l = n(442837),
-  i = n(481060),
+var i = n(442837),
+  l = n(481060),
   s = n(984933),
   o = n(430824),
   a = n(496675),
@@ -22,7 +22,7 @@ function x(e) {
     selectedChannelId: t,
     guildId: n,
     onChangeSelectedChannelId: x
-  } = e, g = (0, l.e7)([c.default], () => c.default.getCurrentUser()), _ = (0, l.e7)([o.Z, s.ZP, a.Z], () => (0, u.h_)(s.ZP.getChannels(n), o.Z, a.Z)), v = (0, l.e7)([d.ZP], () => d.ZP.getVoiceStates(n)), j = _.map(e => {
+  } = e, g = (0, i.e7)([c.default], () => c.default.getCurrentUser()), _ = (0, i.e7)([o.Z, s.ZP, a.Z], () => (0, u.h_)(s.ZP.getChannels(n), o.Z, a.Z)), v = (0, i.e7)([d.ZP], () => d.ZP.getVoiceStates(n)), j = _.map(e => {
     var n;
     return {
       name: (0, r.jsx)(f.Z, {
@@ -46,7 +46,7 @@ function x(e) {
   return (0, r.jsx)(m.Z, {
     title: h.intl.string(h.t["eg7R/v"]),
     scrollerInnerClassName: p.channelSelectScrollerInner,
-    children: (0, r.jsx)(i.FXm, {
+    children: (0, r.jsx)(l.FXm, {
       options: j,
       value: t,
       itemInfoClassName: p.channelInfoWrapper,

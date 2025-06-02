@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var l = n(481060),
-  i = n(100527),
+var i = n(481060),
+  l = n(100527),
   s = n(906732),
   o = n(156582),
   a = n(522965);
@@ -15,8 +15,8 @@ function c(e) {
     onClose: t
   } = e, {
     analyticsLocations: n
-  } = (0, s.ZP)(i.Z.GO_LIVE_MODAL_V2);
-  return (0, r.jsx)(l.sY7, {
+  } = (0, s.ZP)(l.Z.GO_LIVE_MODAL_V2);
+  return (0, r.jsx)(i.sY7, {
     options: [{
       name: "SD",
       value: "sd"

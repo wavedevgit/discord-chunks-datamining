@@ -4,9 +4,9 @@ n.d(t, {
   c: () => v
 });
 var r = n(255367),
-  l = n(73800),
-  i = n(120356),
-  s = n.n(i),
+  i = n(73800),
+  l = n(120356),
+  s = n.n(l),
   o = n(442837),
   a = n(481060),
   c = n(607070),
@@ -24,27 +24,27 @@ function _(e) {
     location: t
   } = e, n = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return l
+    return i
   }(e, ["location"]);
-  let i = (0, u.N)(),
-    o = l.useCallback(() => {
-      if (null != i) {
+  let l = (0, u.N)(),
+    o = i.useCallback(() => {
+      if (null != l) {
         var e;
-        return null != (e = (0, m.fr)(i)) ? e : x.intl.string(x.t.Y2WKTk)
+        return null != (e = (0, m.fr)(l)) ? e : x.intl.string(x.t.Y2WKTk)
       }
       return x.intl.string(x.t.Y2WKTk)
-    }, [i]);
+    }, [l]);
   return (0, r.jsx)(f.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -100,8 +100,8 @@ function j(e) {
   let {
     message: t,
     onClose: n,
-    openStreamUpsellModal: l,
-    glow: i = !1
+    openStreamUpsellModal: i,
+    glow: l = !1
   } = e, o = {
     section: h.jXE.STREAM_SETTINGS,
     object: h.qAy.PREMIUM_UPSELL_BANNER,
@@ -109,7 +109,7 @@ function j(e) {
   };
   return (0, r.jsxs)("div", {
     className: s()(g.upsellBanner, g.enhancedBanner, {
-      [g.gradientGlow]: i
+      [g.gradientGlow]: l
     }),
     children: [(0, r.jsxs)("div", {
       className: g.iconTextContainer,
@@ -120,7 +120,7 @@ function j(e) {
         variant: "text-sm/medium",
         className: s()(g.upsellText, g.enhancedUpsellText),
         children: null != t ? t : x.intl.format(x.t["L/zCtr"], {
-          onClick: () => l({
+          onClick: () => i({
             analyticsLocation: o,
             onClose: n
           })

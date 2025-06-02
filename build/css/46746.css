@@ -1,6 +1,6 @@
 /**
   Module ID: 46746
-  Original File Name: 2a6c9b5dafc4d9f6
+  Original File Name: bf598bc4fc2a7595
 **/
 .card__4bb93 {
     align-items: center;
@@ -2112,6 +2112,60 @@
     margin-bottom: var(--spacing-24)
 }
 
+.sourceTypeButtons__0b85a {
+    display: flex;
+    gap: var(--spacing-16);
+    margin-top: var(--spacing-32)
+}
+
+.nativePickerRadioItem__0b85a {
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px
+}
+
+.nativePickerRadioItem__0b85a.selected__0b85a {
+    border-color: var(--brand-500)
+}
+
+.nativeSourceTypeButton__0b85a {
+    align-items: center;
+    background-color: var(--background-secondary);
+    color: var(--interactive-normal);
+    cursor: pointer;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: center;
+    padding: var(--spacing-32);
+    text-align: center
+}
+
+.nativeSourceTypeButton__0b85a:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--interactive-hover)
+}
+
+.nativeSourceTypeButton__0b85a.selected__0b85a,.nativeSourceTypeButton__0b85a:active {
+    background-color: var(--background-modifier-active);
+    color: var(--interactive-active)
+}
+
+.nativeSourceTypeButtonInner__0b85a {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: var(--spacing-16)
+}
+
+.nativeSourceTypeButtonInner__0b85a>* {
+    align-content: center;
+    flex-basis: 32px;
+    flex-grow: 0;
+    flex-shrink: 0
+}
+
 .root_febe19 {
     display: grid;
     gap: 24px 16px;
@@ -2441,4 +2495,4 @@
     margin-bottom: 0
 }
 
-/*# sourceMappingURL=2a6c9b5dafc4d9f6.css.map*/
+/*# sourceMappingURL=bf598bc4fc2a7595.css.map*/

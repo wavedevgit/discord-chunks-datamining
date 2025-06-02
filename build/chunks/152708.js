@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => h
 });
-var r, l, i = n(255367),
+var r, i, l = n(255367),
   s = n(73800),
   o = n(120356),
   a = n.n(o),
@@ -18,7 +18,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 var f = ((r = f || {}).WRAP = "wrap", r.STACK = "stack", r);
-class m extends(l = s.PureComponent) {
+class m extends(i = s.PureComponent) {
   renderChildren() {
     let e, {
       children: t,
@@ -32,7 +32,7 @@ class m extends(l = s.PureComponent) {
       case "wrap":
         e = "".concat(1 / r * 100, "%")
     }
-    return t.map((t, n) => (0, i.jsx)(c.Z.Child, {
+    return t.map((t, n) => (0, l.jsx)(c.Z.Child, {
       className: d.tile,
       basis: e,
       grow: 0,
@@ -43,7 +43,7 @@ class m extends(l = s.PureComponent) {
     let {
       className: e
     } = this.props;
-    return (0, i.jsx)(c.Z, {
+    return (0, l.jsx)(c.Z, {
       className: a()(e, d.grid),
       wrap: c.Z.Wrap.WRAP,
       children: this.renderChildren()

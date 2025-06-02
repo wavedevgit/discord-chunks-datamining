@@ -1,22 +1,22 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  E: () => i
+  E: () => l
 });
 var r = n(255367);
 n(73800);
-var l = n(481060);
-let i = e => {
+var i = n(481060);
+let l = e => {
   let {
     analyticsLocation: t,
-    onClose: i
+    onClose: l
   } = e;
-  (0, l.ZDy)(async () => {
+  (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("28479").then(n.bind(n, 78865));
     return n => {
-      var l, s;
-      return (0, r.jsx)(e, (l = function(e) {
+      var i, s;
+      return (0, r.jsx)(e, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -37,9 +37,9 @@ let i = e => {
         analyticsSource: t,
         onClose: () => {
           var e;
-          return null == i || i(), null == (e = n.onClose) ? void 0 : e.call(n)
+          return null == l || l(), null == (e = n.onClose) ? void 0 : e.call(n)
         }
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ let i = e => {
         }
         return n
       })(Object(s)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
-      }), l))
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+      }), i))
     }
   })
 }
