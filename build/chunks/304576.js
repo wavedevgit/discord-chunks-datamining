@@ -84,7 +84,7 @@ let v = e => {
             }),
             children: (0, i.jsx)(b.Z, {
               className: l()(S.button, N),
-              forceWhite: !0
+              color: o.Ttl.WHITE
             })
           }) : (0, i.jsx)(C.PK, {
             subscriptionTier: null != (r = null != I ? I : null == w || null == (n = w.subscription_trial) ? void 0 : n.sku_id) ? r : Z,
