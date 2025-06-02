@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A2: () => eW,
+  A2: () => eK,
   AY: () => en,
   CM: () => ei,
   CW: () => ew,
@@ -24,7 +24,7 @@ n.d(t, {
   R$: () => b,
   RS: () => eE,
   R_: () => eM,
-  Rt: () => eH,
+  Rt: () => eY,
   SE: () => eR,
   Sb: () => eS,
   Sh: () => eB,
@@ -35,7 +35,7 @@ n.d(t, {
   Xc: () => B,
   Xk: () => x,
   Xr: () => eu,
-  YC: () => eY,
+  YC: () => eW,
   YT: () => A,
   Yk: () => eN,
   _O: () => w,
@@ -55,15 +55,16 @@ n.d(t, {
   fv: () => C,
   fz: () => T,
   gR: () => q,
-  gw: () => eF,
+  gw: () => eV,
   h2: () => Q,
-  hg: () => eV,
+  hg: () => eZ,
   iG: () => z,
   iH: () => eL,
+  j7: () => eF,
   jU: () => ee,
   kJ: () => K,
   kU: () => et,
-  l4: () => eZ,
+  l4: () => eH,
   mX: () => W,
   nc: () => ey,
   qF: () => k,
@@ -508,7 +509,30 @@ let eS = (0, d.KM)((0, d.Zc)("appearance", "developerMode", e => null != e && e,
       explicitContentNonFriendDm: null != r ? r : void 0
     }
   }),
-  eF = (0, d.Zc)("textAndImages", "keywordFilterSettings", e => {
+  eF = (0, d.Zc)("textAndImages", "goreContentSettings", e => {
+    let {
+      goreContentGuilds: t,
+      goreContentFriendDm: n,
+      goreContentNonFriendDm: r
+    } = null != e ? e : {};
+    return {
+      goreContentGuilds: null != t ? t : a.Q4.UNSET_EXPLICIT_CONTENT_REDACTION,
+      goreContentFriendDm: null != n ? n : a.Q4.UNSET_EXPLICIT_CONTENT_REDACTION,
+      goreContentNonFriendDm: null != r ? r : a.Q4.UNSET_EXPLICIT_CONTENT_REDACTION
+    }
+  }, e => {
+    let {
+      goreContentGuilds: t,
+      goreContentFriendDm: n,
+      goreContentNonFriendDm: r
+    } = e;
+    return {
+      goreContentGuilds: null != t ? t : void 0,
+      goreContentFriendDm: null != n ? n : void 0,
+      goreContentNonFriendDm: null != r ? r : void 0
+    }
+  }),
+  eV = (0, d.Zc)("textAndImages", "keywordFilterSettings", e => {
     let {
       profanity: t,
       sexualContent: n,
@@ -548,11 +572,11 @@ let eS = (0, d.KM)((0, d.Zc)("appearance", "developerMode", e => null != e && e,
 }, e => o.D5.create({
   value: e
 }));
-let eV = (0, d.Zc)("appearance", "timestampHourCycle", e => null != e ? e : a.hg.AUTO, e => e);
+let eZ = (0, d.Zc)("appearance", "timestampHourCycle", e => null != e ? e : a.hg.AUTO, e => e);
 (0, d.Zc)("appearance", "launchPadMode", e => null != e ? e : a.l1.LAUNCH_PAD_DISABLED, e => e), (0, d.Zc)("appearance", "swipeRightToLeftMode", e => null != e ? e : a.n9.SWIPE_RIGHT_TO_LEFT_UNSET, e => e);
-let eZ = (0, d.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
-  eH = (0, d.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
-  eY = (0, d.Zc)("appearance", "uiDensity", e => e === a.Pi.UNSET_UI_DENSITY ? a.Pi.DEFAULT : null != e ? e : a.Pi.DEFAULT, e => e),
-  eW = (0, d.Zc)("inAppFeedbackSettings", "inAppFeedbackStates", e => (0, r.mapValues)(null != e ? e : {}, e => (0, r.mapValues)(e, e => (null == e ? void 0 : e.value) != null ? Number(e.value) : void 0)), e => (0, r.mapValues)(e, e => (0, r.mapValues)(e, e => o.wA.create({
+let eH = (0, d.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
+  eY = (0, d.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
+  eW = (0, d.Zc)("appearance", "uiDensity", e => e === a.Pi.UNSET_UI_DENSITY ? a.Pi.DEFAULT : null != e ? e : a.Pi.DEFAULT, e => e),
+  eK = (0, d.Zc)("inAppFeedbackSettings", "inAppFeedbackStates", e => (0, r.mapValues)(null != e ? e : {}, e => (0, r.mapValues)(e, e => (null == e ? void 0 : e.value) != null ? Number(e.value) : void 0)), e => (0, r.mapValues)(e, e => (0, r.mapValues)(e, e => o.wA.create({
     value: null != e ? String(e) : void 0
   }))), p.fy.AUTOMATED)

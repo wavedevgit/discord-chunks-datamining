@@ -24,7 +24,7 @@ let C = e => {
     messageId: C,
     transitionState: g,
     onClose: R
-  } = e, L = (0, _.Z)(), b = (0, c.Jm)(), x = (0, E.m8)(), v = l.useMemo(() => b && x, [b, x]), N = l.useCallback(e => {
+  } = e, L = (0, _.Z)(), P = (0, c.Jm)(), b = (0, E.m8)(), x = l.useMemo(() => P && b, [P, b]), v = l.useCallback(e => {
     (0, E.aP)({
       action: e,
       channelId: t,
@@ -57,20 +57,20 @@ let C = e => {
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: v ? h.intl.string(h.t.H2kKw8) : L ? h.intl.string(h.t.XW3vjo) : h.intl.string(h.t.i4daNj)
+        children: x ? h.intl.string(h.t.H2kKw8) : L ? h.intl.string(h.t.XW3vjo) : h.intl.string(h.t.i4daNj)
       }), (0, r.jsxs)("div", {
         className: m.buttonContainer,
-        children: [v ? (0, r.jsx)(o.zxk, {
+        children: [x ? (0, r.jsx)(o.zxk, {
           color: o.zxk.Colors.BRAND,
           onClick: function() {
-            R(), N(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), s.Z.showAgeVerificationGetStartedModal(d.cU.SENSITIVE_MEDIA_LEARN_MORE)
+            R(), v(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), s.Z.showAgeVerificationGetStartedModal(d.cU.SENSITIVE_MEDIA_LEARN_MORE)
           },
           fullWidth: !0,
           children: h.intl.string(h.t["+2/AhI"])
         }) : L ? (0, r.jsx)(o.zxk, {
           color: o.zxk.Colors.BRAND,
           onClick: function() {
-            N(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS), i.Z.open(u.oAB.CONTENT_AND_SOCIAL, null, {
+            v(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS), i.Z.open(u.oAB.CONTENT_AND_SOCIAL, null, {
               scrollPosition: f.FY.EXPLICIT_MEDIA_REDACTION_V2
             }), R()
           },
@@ -86,20 +86,20 @@ let C = e => {
         }), (0, r.jsx)(o.zxk, {
           color: o.zxk.Colors.PRIMARY,
           onClick: function() {
-            R(), N(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS)
+            R(), v(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS)
           },
           fullWidth: !0,
           children: h.intl.string(h.t.bmbHPD)
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: v ? h.intl.format(h.t["3HvI8P"], {
+          children: x ? h.intl.format(h.t["3HvI8P"], {
             handleOnHelpUrlHook: () => {
-              s.Z.openUrl(I.Z.getArticleURL(u.BhN.TIGGER_PAWTECT_UK_AND_AUS_ONLY_LEARN_MORE)), N(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
+              s.Z.openUrl(I.Z.getArticleURL(u.BhN.TIGGER_PAWTECT_UK_AND_AUS_ONLY_LEARN_MORE)), v(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
             }
           }) : h.intl.format(h.t.Ge0HUl, {
             handleFalsePositiveHook: () => {
-              R(), N(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.ZDy)(async () => {
+              R(), v(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.ZDy)(async () => {
                 let {
                   default: e
                 } = await n(788679);
@@ -124,7 +124,7 @@ let C = e => {
                   channelId: t,
                   messageId: C
                 }, n))
-              }), N(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE)
+              }), v(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE)
             }
           })
         })]

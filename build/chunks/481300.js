@@ -12,7 +12,7 @@ function o(e, t) {
   return null != t && (0, l.KP)({
     type: l.lJ.GenericMedia,
     media: t
-  }, (0, l.HH)(e)) ? (0, i.jsx)(r.sNh, {
+  }, (0, l.PZ)(e)) ? (0, i.jsx)(r.sNh, {
     id: "report-image-false-positive",
     label: a.intl.string(a.t.ZH7P2t),
     action: () => {
