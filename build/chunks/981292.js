@@ -22,7 +22,9 @@ function s(e) {
     wrapChildren: s = o,
     lazyCleanUpDelay: l
   } = e, c = r.useRef(-1);
-  r.useLayoutEffect(() => () => clearTimeout(c.current));
+  r.useLayoutEffect(() => {
+    -1 !== c.current && clearTimeout(c.current)
+  }, []);
   let [, u] = r.useState(a), d = r.useRef(null), f = r.useMemo(() => {
     var e;
     let r = new Set(null == (e = d.current) ? void 0 : e.keys()),

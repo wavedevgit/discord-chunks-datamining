@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: b11fbd05dbff0951
+  Original File Name: f99493ea74a7d398
 **/
 .errorBanner__3405b {
     color: var(--status-danger-text)
@@ -909,19 +909,29 @@ footer {
 }
 
 .grid__4d307 {
+    align-items: center;
     display: grid;
-    grid-template-columns: 7fr auto 2fr;
+    gap: var(--space-lg);
+    grid-template-areas: "prev select submit";
+    grid-template-columns: auto -webkit-min-content auto;
+    grid-template-columns: auto min-content auto;
     vertical-align: middle
 }
 
-.grid__4d307,.preview__4d307 {
-    align-items: center;
-    gap: var(--space-lg)
+@media (max-width:800px) {
+    .grid__4d307 {
+        grid-template-areas: "prev select" "submit submit";
+        grid-template-columns: auto -webkit-min-content;
+        grid-template-columns: auto min-content
+    }
 }
 
 .preview__4d307 {
+    align-items: center;
     display: flex;
     flex-direction: row;
+    gap: var(--space-lg);
+    grid-area: prev;
     min-height: 48px
 }
 
@@ -931,7 +941,12 @@ footer {
     max-width: 48px
 }
 
+.selector__4d307 {
+    grid-area: select
+}
+
 .submit__4d307 {
+    grid-area: submit;
     height: var(--custom-button-height);
     min-height: var(--custom-button-height)
 }
@@ -1153,15 +1168,27 @@ footer {
 }
 
 .emptyState__43278 {
-    gap: var(--space-md);
-    height: 100%;
-    padding: var(--space-xl)
-}
-
-.dropZone__43278,.emptyState__43278 {
     box-sizing: border-box;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    gap: var(--space-md);
+    height: 50vh;
+    padding: var(--space-xl);
+    width: 50vw
+}
+
+@media (max-width:800px) {
+    .emptyState__43278 {
+        height: 50vh;
+        width: 60vw
+    }
+}
+
+@media (max-width:485px) {
+    .emptyState__43278 {
+        height: 100%;
+        width: 100%
+    }
 }
 
 .dropZone__43278 {
@@ -1169,6 +1196,9 @@ footer {
     background: var(--background-secondary);
     border: 1px dashed var(--interactive-muted);
     border-radius: var(--radius-md);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     gap: var(--space-lg);
     justify-content: center;
@@ -1194,4 +1224,4 @@ footer {
     top: var(--space-lg)
 }
 
-/*# sourceMappingURL=b11fbd05dbff0951.css.map*/
+/*# sourceMappingURL=f99493ea74a7d398.css.map*/

@@ -5,8 +5,8 @@ r.d(t, {
 var n = r(255367),
   a = r(73800),
   l = r(36793),
-  i = r(481060),
-  s = r(710845),
+  s = r(481060),
+  i = r(710845),
   o = r(197712),
   c = r(511004),
   u = r(598117),
@@ -44,7 +44,7 @@ function g(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let m = new s.Z("ImageEditor"),
+let m = new i.Z("ImageEditor"),
   f = {
     width: 400,
     height: 400
@@ -53,11 +53,11 @@ let m = new s.Z("ImageEditor"),
     let {
       file: t,
       imageUri: r,
-      onUpdate: s
+      onUpdate: i
     } = e, v = a.useRef({
       x: 0,
       y: 0
-    }), O = a.useRef(null), [E, N] = a.useState(1), [I, D] = a.useState(null), [y, C] = a.useState({
+    }), O = a.useRef(null), [N, E] = a.useState(1), [I, D] = a.useState(null), [y, C] = a.useState({
       top: 0,
       bottom: 0,
       left: 0,
@@ -99,7 +99,7 @@ let m = new s.Z("ImageEditor"),
             x: r,
             y: n
           } = v.current;
-        N(e), C(t), P({
+        E(e), C(t), P({
           x: r,
           y: n
         })
@@ -114,7 +114,7 @@ let m = new s.Z("ImageEditor"),
           l = _({
             width: n,
             height: a
-          }, E, R);
+          }, N, R);
         P({
           x: r,
           y: t
@@ -122,20 +122,20 @@ let m = new s.Z("ImageEditor"),
           width: n,
           height: a
         }), C(l)
-      }, [I, w, P, E, R]),
+      }, [I, w, P, N, R]),
       Z = a.useCallback(() => {
         if (null == I) return {};
         let {
           height: e,
           width: t
-        } = x(b(I, w), E);
+        } = x(b(I, w), N);
         return {
           height: e,
           width: t,
           minHeight: e,
           minWidth: t
         }
-      }, [I, w, E]),
+      }, [I, w, N]),
       U = a.useCallback(e => {
         k({
           x: e.clientX - v.current.x,
@@ -169,7 +169,7 @@ let m = new s.Z("ImageEditor"),
             height: u.eT,
             width: u.eT
           },
-          i = null;
+          s = null;
         if (null != W.current && (W.current(), W.current = null), R) try {
           let r = j({
               file: t,
@@ -180,14 +180,14 @@ let m = new s.Z("ImageEditor"),
               imageRotation: w,
               resizeWidth: u.eT,
               resizeHeight: u.eT
-            }, I, E),
+            }, I, N),
             {
               result: l,
-              cancelFn: i
+              cancelFn: s
             } = await (0, o.$p)(r);
-          W.current = i, e = await l
+          W.current = s, e = await l
         } catch (e) {
-          m.error("Error cropping GIF", e), i = u.ze.GIF_CROPPING
+          m.error("Error cropping GIF", e), s = u.ze.GIF_CROPPING
         } finally {
           var c;
           null == (c = W.current) || c.call(W), W.current = null
@@ -198,26 +198,26 @@ let m = new s.Z("ImageEditor"),
           maxDimensions: a,
           imageRotation: w
         });
-        return s({
+        return i({
           imageData: e,
           imageDataTimestamp: r,
-          error: i,
+          error: s,
           loading: !1
         }), () => {
           var e;
           null == (e = W.current) || e.call(W), W.current = null
         }
-      }, [t, w, R, s, I, E]);
+      }, [t, w, R, i, I, N]);
     return a.useEffect(() => {
       F()
-    }, [F, w, I, T, E]), (0, n.jsxs)("div", {
+    }, [F, w, I, T, N]), (0, n.jsxs)("div", {
       className: p.imageEditor,
       children: [(0, n.jsxs)("div", {
         className: p.editingContainer,
         children: [(0, n.jsx)("img", {
           onLoad: L,
           onError: () => {
-            s({
+            i({
               error: u.ze.IMAGE_LOAD,
               loading: !1
             })
@@ -245,11 +245,11 @@ let m = new s.Z("ImageEditor"),
         className: p.toolsContainer,
         children: [(0, n.jsxs)("div", {
           className: p.zoomControls,
-          children: [(0, n.jsx)(i.XBm, {
+          children: [(0, n.jsx)(s.XBm, {
             size: "xxs",
             color: "currentColor",
             className: p.zoomIcon
-          }), (0, n.jsx)(i.iRW, {
+          }), (0, n.jsx)(s.iRW, {
             className: p.slider,
             initialValue: 1,
             minValue: 1,
@@ -259,12 +259,12 @@ let m = new s.Z("ImageEditor"),
             equidistant: !0,
             hideBubble: !0,
             "aria-label": d.intl.string(d.t.dnvZSk)
-          }), (0, n.jsx)(i.XBm, {
+          }), (0, n.jsx)(s.XBm, {
             size: "md",
             color: "currentColor",
             className: p.zoomIcon
           })]
-        }), (0, n.jsx)(i.ua7, {
+        }), (0, n.jsx)(s.ua7, {
           text: d.intl.string(d.t.E36Wd3),
           "aria-label": d.intl.string(d.t.LzFiKC),
           children: e => {
@@ -285,15 +285,15 @@ let m = new s.Z("ImageEditor"),
               }
               return a
             }(e, ["onClick"]);
-            return (0, n.jsx)(i.zxk, g(h({
+            return (0, n.jsx)(s.zxk, g(h({
               className: p.rotateButton,
-              look: i.zxk.Looks.BLANK,
-              size: i.PhG.NONE,
-              color: i.zxk.Colors.TRANSPARENT,
+              look: s.zxk.Looks.BLANK,
+              size: s.PhG.NONE,
+              color: s.zxk.Colors.TRANSPARENT,
               grow: !1
             }, r), {
               onClick: G,
-              children: (0, n.jsx)(i.Vk2, {
+              children: (0, n.jsx)(s.Vk2, {
                 size: "md",
                 color: "currentColor"
               })
@@ -331,15 +331,15 @@ function _(e, t, r) {
   let {
     width: n,
     height: a
-  } = x(e, t), l = Math.abs(400 - n) / 2, i = Math.abs(400 - a) / 2;
+  } = x(e, t), l = Math.abs(400 - n) / 2, s = Math.abs(400 - a) / 2;
   return r && (n < 400 || a < 400) ? {
     top: 0,
     bottom: 0,
     left: 0,
     right: 0
   } : {
-    top: i,
-    bottom: -i,
+    top: s,
+    bottom: -s,
     left: -l,
     right: l
   }
@@ -348,12 +348,12 @@ let j = (e, t, r) => {
   let {
     height: n,
     width: a
-  } = x(t, r), l = (n = Math.min(n, 400)) / (a = Math.min(a, 400)), i = {
+  } = x(t, r), l = (n = Math.min(n, 400)) / (a = Math.min(a, 400)), s = {
     height: n,
     width: a
-  }, s = Math.floor(l < 1 ? u.eT * l : u.eT / l), o = l < 1 ? s : u.eT, c = l > 1 ? s : u.eT;
+  }, i = Math.floor(l < 1 ? u.eT * l : u.eT / l), o = l < 1 ? i : u.eT, c = l > 1 ? i : u.eT;
   return g(h({}, e), {
-    cropDimensions: i,
+    cropDimensions: s,
     resizeHeight: o,
     resizeWidth: c
   })

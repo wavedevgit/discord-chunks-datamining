@@ -5,8 +5,8 @@ r.d(t, {
 var n = r(255367),
   a = r(73800),
   l = r(481060),
-  i = r(598117),
-  s = r(375727),
+  s = r(598117),
+  i = r(375727),
   o = r(903759),
   c = r(205721);
 let u = e => {
@@ -14,21 +14,21 @@ let u = e => {
     transitionState: t,
     userImage: r,
     guildId: u
-  } = e, [d, p] = a.useState(r), h = a.useCallback(() => p(null), [p]), g = null == d ? l.CgR.MEDIUM : l.CgR.LARGE;
+  } = e, [d, p] = a.useState(r), h = a.useCallback(() => p(null), [p]);
   return (0, n.jsx)(l.Y0X, {
     transitionState: t,
-    size: g,
+    size: l.CgR.DYNAMIC,
     children: (0, n.jsxs)(l.hzk, {
       scrollbarType: "none",
       className: c.modalContent,
       children: [null == d ? (0, n.jsx)(o.u, {
         setUserImage: p
-      }) : (0, n.jsx)(s.I, {
+      }) : (0, n.jsx)(i.I, {
         userImage: d,
         guildId: u,
         back: h
       }), (0, n.jsx)(l.olH, {
-        onClick: () => (0, l.Mr3)(i.Hj),
+        onClick: () => (0, l.Mr3)(s.Hj),
         className: c.closeButton
       })]
     })
