@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(255367),
   r = n(73800),
-  i = n(120356),
-  o = n.n(i),
+  o = n(120356),
+  i = n.n(o),
   c = n(442837),
   l = n(481060),
   s = n(700582),
@@ -15,9 +15,9 @@ var a = n(255367),
   m = n(592125),
   g = n(73249),
   f = n(369171),
-  b = n(545093),
-  O = n(388032),
-  y = n(114047);
+  y = n(545093),
+  b = n(388032),
+  O = n(114047);
 let _ = r.memo(function(e) {
   let {
     message: t
@@ -28,21 +28,21 @@ let _ = r.memo(function(e) {
       children: [(0, a.jsx)(s.Z, {
         user: t.author,
         size: l.EFr.SIZE_40,
-        className: o()(y.authorAvatar, e)
+        className: i()(O.authorAvatar, e)
       }), (0, a.jsxs)("div", {
-        className: o()(y.author, e),
+        className: i()(O.author, e),
         children: [(0, a.jsx)(l.Rny, {
           children: (0, a.jsx)("div", {
-            className: y.authorNameWrapper,
+            className: O.authorNameWrapper,
             children: (0, a.jsx)(p.Z, {
-              className: y.authorName,
+              className: O.authorName,
               message: t,
               channel: n
             })
           })
         }), (0, a.jsx)(d.Z, {
           timestamp: t.timestamp,
-          className: y.timestamp,
+          className: O.timestamp,
           tooltipPosition: "bottom"
         })]
       })]
@@ -55,10 +55,10 @@ function h(e) {
   let {
     item: n,
     hideMediaOptions: r,
-    onClose: i
+    onClose: o
   } = e, c = null == (t = n.sourceMetadata) ? void 0 : t.message;
   return (0, a.jsxs)("div", {
-    className: y.topBar,
+    className: O.topBar,
     children: [null != c && (0, a.jsx)(_, {
       message: c
     }), (0, a.jsx)(g.Z, {
@@ -66,11 +66,11 @@ function h(e) {
       hideMediaOptions: r
     }), (0, a.jsx)(f.ZP, {
       mode: f.lx.PINNED,
-      children: e => (0, a.jsx)(b.Z, {
-        onClick: i,
+      children: e => (0, a.jsx)(y.Z, {
+        onClick: o,
         icon: l.Dio,
-        tooltip: O.intl.string(O.t.cpT0Cg),
-        className: o()(y.closeButton, e)
+        tooltip: b.intl.string(b.t.cpT0Cg),
+        className: i()(O.closeButton, e)
       })
     })]
   })

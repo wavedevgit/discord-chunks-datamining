@@ -50,7 +50,8 @@ function O(e) {
     placeholder: a,
     placeholder_version: o,
     description: s,
-    flags: c
+    flags: c,
+    content_type: d
   } = e;
   return {
     url: t,
@@ -61,7 +62,8 @@ function O(e) {
     placeholderVersion: o,
     description: s,
     srcIsAnimated: (0, l.yE)(null != c ? c : 0, u.FoC.IS_ANIMATED),
-    flags: null != c ? c : 0
+    flags: null != c ? c : 0,
+    contentType: null != d ? d : void 0
   }
 }
 

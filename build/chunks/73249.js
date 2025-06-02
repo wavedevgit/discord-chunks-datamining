@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var a = n(255367),
   r = n(73800),
-  i = n(120356),
-  o = n.n(i),
+  o = n(120356),
+  i = n.n(o),
   c = n(442837),
   l = n(481060),
   s = n(607070),
@@ -15,9 +15,9 @@ var a = n(255367),
   m = n(296182),
   g = n(850908),
   f = n(695346),
-  b = n(572004),
-  O = n(424218),
-  y = n(49012),
+  y = n(572004),
+  b = n(424218),
+  O = n(49012),
   _ = n(358085),
   h = n(998502),
   S = n(254109),
@@ -76,20 +76,20 @@ let D = r.forwardRef(function(e, t) {
   var {
     onClick: n,
     tooltipText: r,
-    selected: i,
+    selected: o,
     icon: c
   } = e, s = function(e, t) {
     if (null == e) return {};
     var n, a, r = function(e, t) {
       if (null == e) return {};
       var n, a, r = {},
-        i = Object.keys(e);
-      for (a = 0; a < i.length; a++) n = i[a], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        o = Object.keys(e);
+      for (a = 0; a < o.length; a++) n = o[a], t.indexOf(n) >= 0 || (r[n] = e[n]);
       return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (a = 0; a < i.length; a++) n = i[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (a = 0; a < o.length; a++) n = o[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
   }(e, ["onClick", "tooltipText", "selected", "icon"]);
@@ -107,8 +107,8 @@ let D = r.forwardRef(function(e, t) {
         look: l.iLD.BLANK,
         size: l.PhG.ICON,
         color: l.Ttl.TRANSPARENT,
-        className: o()(T.actionButton, {
-          [T.selected]: i
+        className: i()(T.actionButton, {
+          [T.selected]: o
         }),
         wrapperClassName: T.actionButtonWrapper,
         innerClassName: T.actionButtonInner,
@@ -140,11 +140,11 @@ function I() {
 function A(e) {
   var t, n;
   let {
-    item: i
-  } = e, o = null == (t = i.sourceMetadata) ? void 0 : t.message, c = null == (n = i.sourceMetadata) ? void 0 : n.identifier, s = r.useCallback(() => {
-    if (null != o && null != c) {
+    item: o
+  } = e, i = null == (t = o.sourceMetadata) ? void 0 : t.message, c = null == (n = o.sourceMetadata) ? void 0 : n.identifier, s = r.useCallback(() => {
+    if (null != i && null != c) {
       if ((0, S.yg)(S.uG.FORWARD_PRESSED), "embed" === c.type) return void(0, p.l8)({
-        message: o,
+        message: i,
         source: "media-viewer",
         forwardOptions: {
           onlyEmbedIndices: [c.embedIndex]
@@ -152,7 +152,7 @@ function A(e) {
         onRequestSent: w
       });
       (0, p.l8)({
-        message: o,
+        message: i,
         source: "media-viewer",
         forwardOptions: {
           onlyAttachmentIds: [c.attachmentId]
@@ -160,8 +160,8 @@ function A(e) {
         onRequestSent: w
       })
     }
-  }, [o, c]);
-  return null != o && null != c && (0, d.h)(o) ? (0, a.jsx)(D, {
+  }, [i, c]);
+  return null != i && null != c && (0, d.h)(i) ? (0, a.jsx)(D, {
     onClick: s,
     tooltipText: E.intl.string(E.t.I3ltXF),
     icon: l.WZu
@@ -171,20 +171,20 @@ function A(e) {
 function L(e) {
   let {
     item: t
-  } = e, [n, i] = r.useState(!1);
-  if (!("VIDEO" === t.type || _.isPlatformEmbedded && null == t.children && "IMAGE" === t.type && (0, m.gS)(t.url))) return null;
-  let o = (0, m.s$)(t.url, m.wV);
+  } = e, [n, o] = r.useState(!1);
+  if (!("VIDEO" === t.type || _.isPlatformEmbedded && null == t.children && "IMAGE" === t.type && (0, m.gS)(t.url, t.contentType))) return null;
+  let i = (0, m.s$)(t.url, t.contentType, m.wV);
   async function c() {
-    if ((0, S.yg)(S.uG.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, y.q)({
-        href: o
+    if ((0, S.yg)(S.uG.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, O.q)({
+        href: i
       }), "IMAGE" === t.type) {
-      i(!0);
+      o(!0);
       try {
-        await h.ZP.saveImage(o), (0, l.showToast)((0, l.createToast)(E.intl.string(E.t.cqpdJS), l.ToastType.SUCCESS))
+        await h.ZP.saveImage(i, t.contentType, m.wV), (0, l.showToast)((0, l.createToast)(E.intl.string(E.t.cqpdJS), l.ToastType.SUCCESS))
       } catch (e) {
         (0, l.showToast)((0, l.createToast)(E.intl.string(E.t["8Ve/S0"]), l.ToastType.FAILURE))
       } finally {
-        i(!1)
+        o(!1)
       }
     }
   }
@@ -202,10 +202,10 @@ function N(e) {
     item: n
   } = e;
   if (!(0, m.Jj)(n.url)) return null;
-  let r = (0, m.s$)(null != (t = n.original) ? t : n.url);
+  let r = (0, m.s$)(null != (t = n.original) ? t : n.url, n.contentType);
   return (0, a.jsx)(D, {
     onClick: () => {
-      (0, S.yg)(S.uG.OPEN_LINK_PRESSED), (0, y.q)({
+      (0, S.yg)(S.uG.OPEN_LINK_PRESSED), (0, O.q)({
         href: r
       })
     },
@@ -218,8 +218,8 @@ function R(e) {
   var t, n;
   let {
     item: r,
-    canCopyImage: i,
-    canCopyLink: o,
+    canCopyImage: o,
+    canCopyLink: i,
     onClose: c,
     onSelect: s
   } = e, d = (null == (n = r.sourceMetadata) || null == (t = n.identifier) ? void 0 : t.type) === "attachment" ? r.sourceMetadata.identifier.attachmentId : null, p = (0, u.Z)({
@@ -230,8 +230,8 @@ function R(e) {
     let {
       alt: n,
       sourceMetadata: r,
-      width: i,
-      height: o
+      width: o,
+      height: i
     } = e, c = k(E.intl.string(E.t.ILJuBg), "name", {
       subtextLineClamp: 1
     }), s = k(E.intl.string(E.t["3Nf9u7"]), "size"), u = k(E.intl.string(E.t.eOB2eX), "alt", {
@@ -239,22 +239,22 @@ function R(e) {
     });
     if ((null == r || null == (t = r.identifier) ? void 0 : t.type) !== "attachment") return null;
     let d = (0, g.Z)(r.identifier),
-      p = (0, O.BU)(r.identifier.size / 1e3);
+      p = (0, b.BU)(r.identifier.size / 1e3);
     return (0, a.jsxs)(l.sNh, {
       id: "media-viewer-details",
       label: E.intl.string(E.t.sqBLa2),
       children: [c(d), s(E.intl.formatToPlainString(E.t.DTdonJ, {
-        width: i,
-        height: o,
+        width: o,
+        height: i,
         fileSize: p
       })), u(n)]
     }, "media-viewer-details")
   }(r);
-  async function y() {
+  async function O() {
     (0, S.yg)(S.uG.COPY_IMAGE_PRESSED);
-    let e = (0, m.s$)(r.url, m.wV);
+    let e = (0, m.s$)(r.url, r.contentType, m.wV);
     try {
-      await h.ZP.copyImage(e), (0, l.showToast)((0, l.createToast)(E.intl.string(E.t.bhUpvL), l.ToastType.SUCCESS))
+      await h.ZP.copyImage(e, r.contentType), (0, l.showToast)((0, l.createToast)(E.intl.string(E.t.bhUpvL), l.ToastType.SUCCESS))
     } catch (e) {
       (0, l.showToast)((0, l.createToast)(E.intl.string(E.t.PTPbj4), l.ToastType.FAILURE))
     }
@@ -265,20 +265,20 @@ function R(e) {
     onClose: c,
     onSelect: s,
     children: [(0, a.jsxs)(l.kSQ, {
-      children: [i && (0, a.jsx)(l.sNh, {
+      children: [o && (0, a.jsx)(l.sNh, {
         label: E.intl.string(E.t.tvUqWl),
         id: "media-viewer-copy-image",
         icon: l.TIy,
-        action: y
-      }, "media-viewer-copy-image"), o && (0, a.jsx)(l.sNh, {
+        action: O
+      }, "media-viewer-copy-image"), i && (0, a.jsx)(l.sNh, {
         id: "media-viewer-copy-link",
         label: E.intl.string(E.t.WqhZsr),
         icon: l.xPt,
         action: function() {
           var e;
           (0, S.yg)(S.uG.COPY_LINK_PRESSED);
-          let t = (0, m.s$)(null != (e = r.original) ? e : r.url);
-          (0, b.JG)(t, () => (0, l.showToast)((0, l.createToast)(E.intl.string(E.t["L/PwZW"]), l.ToastType.SUCCESS)))
+          let t = (0, m.s$)(null != (e = r.original) ? e : r.url, r.contentType);
+          (0, y.JG)(t, () => (0, l.showToast)((0, l.createToast)(E.intl.string(E.t["L/PwZW"]), l.ToastType.SUCCESS)))
         }
       }, "media-viewer-copy-link")]
     }), f, p]
@@ -286,15 +286,15 @@ function R(e) {
 }
 
 function k(e, t, n) {
-  let i = r.useCallback(e => {
-    (0, b.JG)(e, () => (0, l.showToast)({
+  let o = r.useCallback(e => {
+    (0, y.JG)(e, () => (0, l.showToast)({
       message: E.intl.string(E.t.mGZ66O),
       type: l.ToastType.SUCCESS,
       id: "media-viewer-detail-copied"
     }))
   }, []);
   return r => null != r ? (0, a.jsx)(l.sNh, P({
-    action: () => i(r),
+    action: () => o(r),
     label: e,
     subtext: r,
     id: t
@@ -304,10 +304,10 @@ function k(e, t, n) {
 function Z(e) {
   var t, n;
   let {
-    item: i
-  } = e, o = r.useRef(null), [c, s] = r.useState(!1), u = f.Sb.useSetting(), d = "IMAGE" === i.type && null == i.children && !i.animated && (0, m.Lz)(i.url), p = (0, m.Jj)(i.url);
-  return u || d || p || (null == (n = i.sourceMetadata) || null == (t = n.identifier) ? void 0 : t.type) === "attachment" ? (0, a.jsx)(l.yRy, {
-    targetElementRef: o,
+    item: o
+  } = e, i = r.useRef(null), [c, s] = r.useState(!1), u = f.Sb.useSetting(), d = "IMAGE" === o.type && null == o.children && !o.animated && (0, m.Lz)(o.url, o.contentType), p = (0, m.Jj)(o.url);
+  return u || d || p || (null == (n = o.sourceMetadata) || null == (t = n.identifier) ? void 0 : t.type) === "attachment" ? (0, a.jsx)(l.yRy, {
+    targetElementRef: i,
     shouldShow: c,
     align: "left",
     position: "top",
@@ -315,7 +315,7 @@ function Z(e) {
     onRequestClose: () => s(!1),
     animation: l.yRy.Animation.NONE,
     renderPopout: () => (0, a.jsx)(R, {
-      item: i,
+      item: o,
       canCopyImage: d,
       canCopyLink: p,
       onClose: () => s(!1)
@@ -325,7 +325,7 @@ function Z(e) {
         onClick: t
       } = e;
       return (0, a.jsx)(D, {
-        ref: o,
+        ref: i,
         tooltipText: E.intl.string(E.t.UKOtz8),
         onClick: () => {
           (0, S.yg)(S.uG.MORE_BUTTON_PRESSED), s(!c)
@@ -340,15 +340,15 @@ let B = r.memo(function(e) {
   let {
     item: t,
     hideMediaOptions: n
-  } = e, i = (0, c.e7)([s.Z], () => s.Z.keyboardModeEnabled), l = r.useRef(null), u = r.useCallback(() => {
+  } = e, o = (0, c.e7)([s.Z], () => s.Z.keyboardModeEnabled), l = r.useRef(null), u = r.useCallback(() => {
     var e;
-    !i && (null == (e = l.current) ? void 0 : e.contains(document.activeElement)) && document.activeElement.blur()
-  }, [i]);
+    !o && (null == (e = l.current) ? void 0 : e.contains(document.activeElement)) && document.activeElement.blur()
+  }, [o]);
   return ("IMAGE" === t.type || !n) && (0, a.jsx)(j.ZP, {
     mode: j.lx.FOCUS_SENSITIVE,
     children: e => (0, a.jsxs)("div", {
       ref: l,
-      className: o()(T.actionButtons, e),
+      className: i()(T.actionButtons, e),
       onClick: e => e.stopPropagation(),
       onMouseLeave: u,
       children: ["IMAGE" === t.type && (0, a.jsx)(I, {}), !n && (0, a.jsxs)(a.Fragment, {
