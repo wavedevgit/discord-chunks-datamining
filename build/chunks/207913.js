@@ -285,14 +285,13 @@ function z(e) {
 function W(e) {
   let {
     overflowMessages: t
-  } = e, n = (0, s.uniqBy)(t.map(e => e.author), e => e.id);
+  } = e, n = (0, s.uniqBy)(t.map(e => e.author), e => e.id).slice(0, 3);
   return (0, r.jsxs)(u.Kqy, {
     direction: "horizontal",
     gap: 4,
     children: [(0, r.jsx)(f.Z, {
       users: n,
       useFallbackUserForPopout: !0,
-      max: 3,
       size: f.u.SIZE_16
     }), (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
