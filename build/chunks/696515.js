@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => A
 }), n(361932), n(187205);
 var r = n(255367);
 n(73800);
@@ -19,16 +19,14 @@ var i = n(120356),
   h = n(573702),
   m = n(474936),
   g = n(262531),
-  E = n(441368),
-  b = n(243680),
-  y = n(386534),
-  O = n(32846),
-  v = n(823930),
-  I = n(530454),
-  S = n(997892),
-  T = n(234286);
+  E = n(236078),
+  b = n(278345),
+  y = n(895601),
+  O = n(381126),
+  v = n(997892),
+  I = n(234286);
 
-function A(e) {
+function S(e) {
   let {
     isOneStepCheckout: t,
     headerText: n,
@@ -55,11 +53,11 @@ function A(e) {
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     isTier2: t
-  } = e, n = t ? O : E, i = t ? v : b, a = t ? I : y;
-  return (0, r.jsxs)(r.Fragment, {
+  } = e, n = t ? y : E, i = t ? O : b;
+  return (0, r.jsxs)("div", {
     children: [(0, r.jsx)("img", {
       src: n,
       alt: "",
@@ -69,13 +67,13 @@ function N(e) {
       alt: "",
       className: g.mediumCloud
     }), (0, r.jsx)("img", {
-      src: a,
+      src: i,
       alt: "",
       className: g.smallCloud
     })]
   })
 }
-let C = function(e) {
+let A = function(e) {
   var t, n;
   let {
     hideCloseButton: i = !1,
@@ -84,8 +82,8 @@ let C = function(e) {
     upgradeToPremiumType: b,
     isEligibleForTrial: y = !1,
     showTrialBadge: O = !1,
-    showDiscountBadge: v = !1
-  } = e, I = (0, o.apv)((0, s.ZP)()), C = b === m.p9.TIER_2, P = (0, u.Fv)(y), R = (0, p.Ng)(), w = null == R || null == (t = R.discount) ? void 0 : t.amount, D = C ? T : S, L = C ? _.Z : f.Z, {
+    showDiscountBadge: A = !1
+  } = e, N = (0, o.apv)((0, s.ZP)()), C = b === m.p9.TIER_2, P = (0, u.Fv)(y), R = (0, p.Ng)(), w = null == R || null == (t = R.discount) ? void 0 : t.amount, D = C ? I : v, L = C ? _.Z : f.Z, {
     step: x,
     breadcrumbs: k,
     startedPaymentFlowWithPaymentSourcesRef: M,
@@ -116,7 +114,7 @@ let C = function(e) {
       className: a()(g.container, C ? g.tier2Background : g.tier0Background, {
         [g.containerBottomPadding]: !V
       }),
-      children: [(0, r.jsx)(N, {
+      children: [(0, r.jsx)(T, {
         isTier2: C
       }), !i && (0, r.jsx)(o.olH, {
         hideOnFullscreen: d,
@@ -129,14 +127,14 @@ let C = function(e) {
       }), (0, r.jsx)("div", {
         className: g.textContainer,
         children: (0, r.jsx)(L, {
-          color: I ? "black" : "white",
+          color: N ? "black" : "white",
           className: g.wordmark
         })
       })]
-    }), (O || v) && (0, r.jsx)(h.Z, {
+    }), (O || A) && (0, r.jsx)(h.Z, {
       isTier2: !!C,
       discountAmount: w
-    }), V && (0, r.jsx)(A, {
+    }), V && (0, r.jsx)(S, {
       isOneStepCheckout: P,
       headerText: F,
       step: x,

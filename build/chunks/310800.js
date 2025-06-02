@@ -35,7 +35,7 @@ function x(e) {
     (0, i.ZDy)(async () => {
       let {
         default: i
-      } = await n.e("95925").then(n.bind(n, 673078));
+      } = await n.e("61860").then(n.bind(n, 673078));
       return n => (0, r.jsx)(i, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

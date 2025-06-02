@@ -1,0 +1,2 @@
+/** Chunk was on 64908 **/
+e.exports = JSON.parse('{"xRdYAQ":"Temele personalizate [Beta] nu sunt disponibile pe mobil.","2hAz8f":"Personalizează-ți tema","23QUzs":"Nou! Teme personalizate","TRCE4u":"Ai combinații nesf\xe2rșite de culori pe care să le folosești cum simți tu. \xcencearcă-le cu Nitro."}')

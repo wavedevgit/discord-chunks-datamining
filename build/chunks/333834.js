@@ -139,7 +139,7 @@ function E(e) {
           isOpen: A[t],
           toggleOpenedState: () => D(t)
         })), A[t] && e.push(...k[t].map(e => E(e, "sidebar" === R))))
-      }), e.push((0, r.jsx)(u.LZC, {
+      }), (null == n ? void 0 : n.length) !== 0 && e.push((0, r.jsx)(u.LZC, {
         size: 8
       }, "spacer")), e
     }, [n, v, A, D, k, N, E, R]);
@@ -199,7 +199,10 @@ function E(e) {
               }
               return e
             }({
-              ref: i
+              ref: i,
+              style: {
+                height: "100%"
+              }
             }, l), n = n = {
               children: M
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

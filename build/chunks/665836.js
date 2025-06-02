@@ -1,0 +1,2 @@
+/** Chunk was on 29401 **/
+e.exports = JSON.parse('{"xRdYAQ":"A [b\xe9ta-verzi\xf3j\xfa] egyedi t\xe9m\xe1k nem \xe9rhetők el mobileszk\xf6z\xf6n.","2hAz8f":"A t\xe9m\xe1d szem\xe9lyre szab\xe1sa","23QUzs":"\xdajdons\xe1g! Egyedi t\xe9m\xe1k","TRCE4u":"V\xe9gtelen sz\xednkombin\xe1ci\xf3kkal fejezheted ki a hangulatodat. Csak Nitr\xf3val tudod kipr\xf3b\xe1lni!"}')

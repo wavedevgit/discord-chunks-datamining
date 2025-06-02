@@ -1,6 +1,6 @@
 /**
   Module ID: 2794
-  Original File Name: e159a44dec383ef9
+  Original File Name: 08f2c3cbeb023d53
 **/
 .confirmation__2db04 {
     align-items: center;
@@ -357,15 +357,19 @@
 }
 
 .bigCloud__61870 {
+    opacity: .62;
     position: absolute;
     right: 8px;
-    top: 12px
+    top: 12px;
+    width: 86px
 }
 
 .smallCloud__61870 {
+    opacity: .42;
     position: absolute;
     right: 172px;
-    top: 40px
+    top: 40px;
+    width: 47px
 }
 
 .divider__61870 {
@@ -832,4 +836,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=e159a44dec383ef9.css.map*/
+/*# sourceMappingURL=08f2c3cbeb023d53.css.map*/

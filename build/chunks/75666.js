@@ -2,7 +2,7 @@
 e.d(n, {
   AR: () => I,
   C2: () => p,
-  Pp: () => E,
+  Pp: () => T,
   VX: () => o,
   b7: () => c,
   sE: () => g
@@ -46,7 +46,7 @@ function c(t) {
   }]
 }
 
-function E() {
+function T() {
   return {
     CREATE: {
       id: "CREATE",

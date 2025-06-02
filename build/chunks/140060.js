@@ -1,0 +1,2 @@
+/** Chunk was on 22337 **/
+s.exports = JSON.parse('{"cgdAs7":"(Strona otworzy się w nowej karcie)"}')

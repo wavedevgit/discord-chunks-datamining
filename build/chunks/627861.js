@@ -449,14 +449,12 @@ function ec(e) {
   }, [ey, V, ex, eO]), eC = el(C.name, null == (t = P.activity) ? void 0 : t.type), eS = k ? (0, f.H)({
     applicationId: C.id,
     referrerId: I
-  }) : void 0;
-  (0, O.Ns)(C.id).some(e => (0, y.ig)(e) === l.o.GLOBAL);
-  let eI = (0, r.jsxs)(r.Fragment, {
+  }) : void 0, eI = (0, O.Ns)(C.id).some(e => (0, y.ig)(e) === l.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.YqE, {
       size: "xxs",
       color: "currentColor"
     }), Q.intl.string(Q.t.TsWCdX)]
-  });
+  }) : null;
   if (V) {
     let e = (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",

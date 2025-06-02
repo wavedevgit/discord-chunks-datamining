@@ -29,12 +29,12 @@ function E(e) {
       onSubscriptionConfirmation: E,
       renderPurchaseConfirmation: y,
       postSuccessGuild: S,
-      followupSKUInfo: v,
-      continueSessionToInitialStep: P
+      followupSKUInfo: P,
+      continueSessionToInitialStep: v
     } = e,
     {
-      activeSubscription: b,
-      paymentSources: I,
+      activeSubscription: I,
+      paymentSources: b,
       paymentSourceId: T,
       selectedPlan: M,
       selectedSkuId: Z,
@@ -61,7 +61,7 @@ function E(e) {
     V = (0, d.Z)(),
     X = (0, C.a5)(M),
     z = (0, C.tK)(null == D ? void 0 : D.skuId),
-    q = (0, _.$)(I, T),
+    q = (0, _.$)(b, T),
     Q = U && null != D && X;
   r()(null != M, "Expected plan to selected"), r()(null != Z, "Expected selectedSkuId"), r()(null != N, "Step should be set");
   let J = l.useCallback(() => {
@@ -75,7 +75,7 @@ function E(e) {
     null != V && null != V.reminderNotice && K && (0, o.wH)(a.z.GIFTING_PROMOTION_REMINDER, V.dismissibleContentVersion, {
       dismissAction: L.L.INDIRECT_ACTION
     })
-  }, [V, K]), t = null != y ? y(M, J, O) : null != P ? (0, i.jsx)(c.VY, {}) : U ? (0, i.jsx)(c.TB, {
+  }, [V, K]), t = null != y ? y(M, J, O) : null != v ? (0, i.jsx)(c.VY, {}) : U ? (0, i.jsx)(c.TB, {
     planId: M.id,
     onClose: J
   }) : R.current === M.id ? (0, i.jsx)(c.ZP, {
@@ -86,11 +86,11 @@ function E(e) {
     hideClose: Y,
     startingFractionalPremiumEndsAt: k.current
   }) : (0, i.jsx)(c.ZP, {
-    followupSKUInfo: v,
+    followupSKUInfo: P,
     startingPremiumSubscriptionPlanId: R.current,
     planId: M.id,
     onClose: J,
-    isDowngrade: null != b && (0, p.GY)(b, M.id, s),
+    isDowngrade: null != I && (0, p.GY)(I, M.id, s),
     paymentSourceType: q,
     hideClose: Y,
     startingFractionalPremiumEndsAt: k.current

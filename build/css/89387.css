@@ -1,6 +1,6 @@
 /**
   Module ID: 89387
-  Original File Name: fcf506b253ca3883
+  Original File Name: 6c4e73cfeaa57e1a
 **/
 .badgeContainer__98c7b {
     display: flex;
@@ -1960,15 +1960,19 @@
 }
 
 .bigCloud__61870 {
+    opacity: .62;
     position: absolute;
     right: 8px;
-    top: 12px
+    top: 12px;
+    width: 86px
 }
 
 .smallCloud__61870 {
+    opacity: .42;
     position: absolute;
     right: 172px;
-    top: 40px
+    top: 40px;
+    width: 47px
 }
 
 .divider__61870 {
@@ -2023,4 +2027,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=fcf506b253ca3883.css.map*/
+/*# sourceMappingURL=6c4e73cfeaa57e1a.css.map*/

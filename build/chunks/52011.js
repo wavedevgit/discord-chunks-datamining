@@ -1,5 +1,25 @@
-/** Chunk was on 22547 **/
-a.r(e), a.d(e, {
-  default: () => p
+/** Chunk was on 42018 **/
+n.d(t, {
+  F: () => i
 });
-let p = JSON.parse('{"swfLzc":"This message comes from a separate file"}')
+let i = (0, n(818083).B)({
+  kind: "guild",
+  id: "2023-09_gaming_stats_prompt_guild",
+  label: "Gaming stats prompt",
+  defaultConfig: {
+    triggerGamingStats: !1
+  },
+  treatments: [{
+    id: 1,
+    label: "ability to trigger gaming stats prompt",
+    config: {
+      triggerGamingStats: !0
+    }
+  }, {
+    id: 2,
+    label: "ability to trigger gaming stats prompt (leaderboard)",
+    config: {
+      triggerGamingStats: !0
+    }
+  }]
+})

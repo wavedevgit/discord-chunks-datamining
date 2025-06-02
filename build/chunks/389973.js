@@ -1,7 +1,7 @@
 /** Chunk was on 54433 **/
 n.d(t, {
-  F: () => b,
-  P: () => I
+  F: () => I,
+  P: () => b
 });
 var i = n(255367);
 n(73800);
@@ -25,11 +25,11 @@ var l = n(120356),
   L = n(474936),
   E = n(388032),
   y = n(195078),
-  S = n(865520),
-  v = n(27252),
-  P = n(234286);
+  S = n(895601),
+  P = n(381126),
+  v = n(234286);
 
-function b(e) {
+function I(e) {
   var t;
   let {
     ctaButton: n,
@@ -37,16 +37,16 @@ function b(e) {
     className: u,
     isGift: p = !1,
     priceOptions: x
-  } = e, h = (0, r.e7)([d.ZP], () => d.ZP.getPremiumTypeSubscription()), f = (0, r.e7)([C.default], () => C.default.getCurrentUser()), E = (0, j.N)(), S = null == E || null == (t = E.subscription_trial) ? void 0 : t.sku_id, v = (null == h ? void 0 : h.hasActiveTrial) ? null == f ? void 0 : f.premiumType : null, P = (0, m.y_)(v, S), b = null != P, I = (0, a.ap)((0, o.ZP)());
+  } = e, h = (0, r.e7)([d.ZP], () => d.ZP.getPremiumTypeSubscription()), f = (0, r.e7)([C.default], () => C.default.getCurrentUser()), E = (0, j.N)(), S = null == E || null == (t = E.subscription_trial) ? void 0 : t.sku_id, P = (null == h ? void 0 : h.hasActiveTrial) ? null == f ? void 0 : f.premiumType : null, v = (0, m.y_)(P, S), I = null != v, b = (0, a.ap)((0, o.ZP)());
   return (0, i.jsxs)("div", {
     className: s()(y.card, y.tier0, u, {
-      [y.pillMargin]: b
+      [y.pillMargin]: I
     }),
-    children: [b && (0, i.jsx)(_.F, {
-      text: P
+    children: [I && (0, i.jsx)(_.F, {
+      text: v
     }), (0, i.jsx)(c.Z, {
       className: y.wordmark,
-      color: I ? "black" : "white"
+      color: b ? "black" : "white"
     }), (0, i.jsx)(g.ko, {
       isGift: p,
       premiumTier: L.p9.TIER_0,
@@ -66,12 +66,12 @@ function b(e) {
   })
 }
 
-function I(e) {
+function b(e) {
   var t, n, l;
   let {
     ctaButton: c,
-    showYearlyPrice: b,
-    featureSet: I = g.uZ.DEFAULT,
+    showYearlyPrice: I,
+    featureSet: b = g.uZ.DEFAULT,
     className: T,
     isGift: M = !1,
     isModal: Z = !1,
@@ -82,15 +82,15 @@ function I(e) {
     className: s()(y.card, y.tier2, T),
     children: [(0, i.jsx)(() => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("img", {
-        src: S,
+        src: P,
         alt: "",
         className: y.bigCloud
       }), (0, i.jsx)("img", {
-        src: v,
+        src: S,
         alt: "",
         className: y.smallCloud
       }), (0, i.jsx)("img", {
-        src: P,
+        src: v,
         alt: "",
         className: y.wumpus
       })]
@@ -108,7 +108,7 @@ function I(e) {
       premiumTier: L.p9.TIER_2,
       offerType: B,
       offerTierMatchesCard: A === L.Si.TIER_2 || (0, f.Wp)(H, L.Si.TIER_2),
-      showYearlyPrice: b,
+      showYearlyPrice: I,
       priceOptions: N,
       enablePremiumRebrandDesign: !0,
       headingVariant: "text-md/medium",
@@ -117,7 +117,7 @@ function I(e) {
     }), (0, i.jsx)("hr", {
       className: y.divider
     }), (0, i.jsx)(g.nT, {
-      featureSet: I,
+      featureSet: b,
       isModal: Z,
       isGift: M,
       enablePremiumRebrandDesign: !0

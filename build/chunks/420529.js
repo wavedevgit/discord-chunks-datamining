@@ -17,7 +17,7 @@ var l = e(399606),
   I = e(981631),
   c = e(388032);
 
-function E(t) {
+function T(t) {
   for (var n = 1; n < arguments.length; n++) {
     var e = null != arguments[n] ? arguments[n] : {},
       i = Object.keys(e);
@@ -36,7 +36,7 @@ function E(t) {
   return t
 }
 
-function T(t, n) {
+function E(t, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(t, n) {
     var e = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -67,14 +67,14 @@ function U(t) {
       let {
         default: n
       } = await Promise.all([e.e("45270"), e.e("522")]).then(e.bind(e, 200623));
-      return e => (0, i.jsx)(n, T(E({}, e), {
+      return e => (0, i.jsx)(n, E(T({}, e), {
         channel: t
       }))
     }) : (n.type === I.ABu.PLAYSTATION || n.type === I.ABu.PLAYSTATION_STAGING) && (0, r.ZDy)(async () => {
       let {
         default: l
       } = await e.e("638").then(e.bind(e, 543974));
-      return e => (0, i.jsx)(l, T(E({}, e), {
+      return e => (0, i.jsx)(l, E(T({}, e), {
         platform: n.type,
         channel: t
       }))

@@ -136,7 +136,7 @@ function P(e) {
     return (0, c.ZDy)(async () => {
       let {
         default: t
-      } = await n.e("64908").then(n.bind(n, 557944));
+      } = await n.e("44900").then(n.bind(n, 557944));
       return n => (0, r.jsx)(t, S({
         editPermissions: H,
         guildId: x,
@@ -153,7 +153,7 @@ function P(e) {
     return (0, c.ZDy)(async () => {
       let {
         default: t
-      } = await n.e("64908").then(n.bind(n, 557944));
+      } = await n.e("44900").then(n.bind(n, 557944));
       return n => (0, r.jsx)(t, S({
         editPermissions: H,
         guildId: x,

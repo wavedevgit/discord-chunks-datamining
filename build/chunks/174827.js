@@ -24,10 +24,10 @@ var i = n(255367),
   E = n(509545),
   y = n(669079),
   S = n(63063),
-  v = n(74538),
-  P = n(987209),
-  b = n(563132),
-  I = n(409813),
+  P = n(74538),
+  v = n(987209),
+  I = n(563132),
+  b = n(409813),
   T = n(107998),
   M = n(51499),
   Z = n(456251),
@@ -63,12 +63,12 @@ function B(e) {
     priceOptions: ei,
     isPremium: el,
     premiumRebrandBackgroundClassName: es
-  } = (0, b.JL)(), {
+  } = (0, I.JL)(), {
     isGift: er,
     giftRecipient: ea,
     giftMessage: eo,
     claimableRewards: eC
-  } = (0, P.wD)(), {
+  } = (0, v.wD)(), {
     paymentModalBanner: ed
   } = (0, T.zb)(), ec = (0, p.a5)(ee), eu = (null == (t = (0, x.Z)()) ? void 0 : t.planSelectionBanner) != null, ep = er && ec && null != eC && eC.length > 0 && eu, ex = (0, O.m)(J, Q), {
     newPlans: eh
@@ -76,17 +76,17 @@ function B(e) {
     location: "d17fd6_3"
   }, {
     autoTrackExposure: !1
-  }), ef = (0, a.e7)([L.default], () => L.default.getCurrentUser()), ej = !er && null != $ && $ === w.Si.TIER_2 && null != ef && ef.hasHadPremium() && q && null == z && (0, c.aQ)(ex), em = (0, j.N)(V), e_ = !er && null != em && null != $ && w.nG[em.trial_id].skus.includes($), eg = (0, f.Ng)(), eL = null == eg || null == (n = eg.discount) ? void 0 : n.plan_ids.some(e => w.GP[e].skuId === $), eE = !er && null != eg && null != $ && eL, ey = null != (s = e_ || eE) && s, eS = l.useMemo(() => (0, v.V7)({
+  }), ef = (0, a.e7)([L.default], () => L.default.getCurrentUser()), ej = !er && null != $ && $ === w.Si.TIER_2 && null != ef && ef.hasHadPremium() && q && null == z && (0, c.aQ)(ex), em = (0, j.N)(V), e_ = !er && null != em && null != $ && w.nG[em.trial_id].skus.includes($), eg = (0, f.Ng)(), eL = null == eg || null == (n = eg.discount) ? void 0 : n.plan_ids.some(e => w.GP[e].skuId === $), eE = !er && null != eg && null != $ && eL, ey = null != (s = e_ || eE) && s, eS = l.useMemo(() => (0, P.V7)({
     skuId: $,
     isPremium: el,
     multiMonthPlans: ej ? eh : [],
     currentSubscription: z,
     defaultPlanId: en
-  }), [$, el, eh, z, ej, en]), ev = eE && eS.includes(w.Xh.PREMIUM_MONTH_TIER_2) ? w.Xh.PREMIUM_MONTH_TIER_2 : eS[0], eP = (0, a.e7)([E.Z], () => E.Z.get(ev)), eb = [{
-    planId: null == eP ? void 0 : eP.id,
+  }), [$, el, eh, z, ej, en]), eP = eE && eS.includes(w.Xh.PREMIUM_MONTH_TIER_2) ? w.Xh.PREMIUM_MONTH_TIER_2 : eS[0], ev = (0, a.e7)([E.Z], () => E.Z.get(eP)), eI = [{
+    planId: null == ev ? void 0 : ev.id,
     quantity: 1
-  }], [eI, eT] = l.useState(ey), [eM, eZ] = (0, u.ED)({
-    items: eb,
+  }], [eb, eT] = l.useState(ey), [eM, eZ] = (0, u.ED)({
+    items: eI,
     renewal: !1,
     preventFetch: !ey,
     applyEntitlements: !0,
@@ -96,7 +96,7 @@ function B(e) {
   });
   l.useEffect(() => {
     ey && eT((null == eM ? void 0 : eM.subscriptionPeriodEnd) == null)
-  }, [eM, ey]), (0, C.Z)("Payment Modal Plan Select Step", eI, 5, {
+  }, [eM, ey]), (0, C.Z)("Payment Modal Plan Select Step", eb, 5, {
     proratedInvoicePreview: eM,
     proratedInvoiceError: eZ,
     isEligibleForOffer: ey
@@ -109,7 +109,7 @@ function B(e) {
     eO = ey && null == eZ,
     eR = ey && null != eZ,
     ek = eO && null == z && !!ey && (null == eM ? void 0 : eM.subscriptionPeriodEnd) == null,
-    eU = !er && (null == eP ? void 0 : eP.skuId) === w.Si.TIER_2 && (null == em ? void 0 : em.referrer_id) != null,
+    eU = !er && (null == ev ? void 0 : ev.skuId) === w.Si.TIER_2 && (null == em ? void 0 : em.referrer_id) != null,
     eA = null;
   return (eA = null != ed ? ed : eU ? (0, i.jsx)(_.Z, {}) : (0, i.jsx)(m.Z, {}), ek) ? (0, i.jsx)(Z.Z, {}) : (r()(null != et, "Step should be set"), r()(eS.length > 0, "Premium plan options should be set"), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(R.P, {
@@ -148,7 +148,7 @@ function B(e) {
         className: es,
         children: (0, i.jsx)(g.y, {
           onStepChange: G,
-          onBackClick: () => G(I.h8.SKU_SELECT),
+          onBackClick: () => G(b.h8.SKU_SELECT),
           showBackButton: null == D && null == Y,
           planOptions: eS,
           shouldRenderUpdatedPaymentModal: eO,

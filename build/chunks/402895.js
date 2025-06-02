@@ -1,4 +1,4 @@
-/** Chunk was on 72132 **/
+/** Chunk was on 58121 **/
 e.exports = {
   container: "container_bc0d35",
   nuxContent: "nuxContent_bc0d35",

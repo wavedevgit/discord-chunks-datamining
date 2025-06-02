@@ -1,10 +1,2 @@
-/** Chunk was on 65564 **/
-e.exports = {
-  row: "row__0a95c",
-  icon: "icon__0a95c",
-  noIcon: "noIcon__0a95c",
-  details: "details__0a95c",
-  name: "name__0a95c",
-  avatar: "avatar__0a95c",
-  nick: "nick__0a95c"
-}
+/** Chunk was on 12630 **/
+e.exports = JSON.parse('{"cgdAs7":"(Wird in einem neuen Tab ge\xf6ffnet)"}')

@@ -1,0 +1,2 @@
+/** Chunk was on 71014 **/
+e.exports = JSON.parse('{"xRdYAQ":"\xd6zel temalar [Beta], mobilde mevcut değil.","2hAz8f":"Temanı \xf6zelleştir","23QUzs":"Yeni! \xd6zel Temalar","TRCE4u":"Ruh h\xe2line uygun sonsuz renk kombinasyonları seni bekliyor. Nitro ile şimdi dene."}')

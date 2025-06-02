@@ -1,6 +1,6 @@
 /**
   Module ID: 78715
-  Original File Name: 93fe67134f0d4343
+  Original File Name: 8f5eb105390aeb8b
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1811,7 +1811,7 @@
     width: 100%
 }
 
-.emptyStateContainer_ea5470 {
+.caughtUpContainer_ea5470 {
     background-color: var(--background-feedback-positive);
     cursor: pointer;
     display: flex;
@@ -1822,12 +1822,12 @@
     position: relative
 }
 
-.emptyStateText_ea5470 {
+.caughtUpText_ea5470 {
     flex: 1 0 auto;
     text-align: center
 }
 
-.emptyStateIcon_ea5470 {
+.caughtUpIcon_ea5470 {
     position: absolute;
     right: 12px;
     top: 4px
@@ -1839,6 +1839,13 @@
 
 .settingsButtonIcon_ea5470 {
     --chat-input-icon-size: 18px
+}
+
+.emptyStateContainer_ea5470 {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%
 }
 
 div:has(>.positionLayer_fc71d3) {
@@ -6374,4 +6381,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=93fe67134f0d4343.css.map*/
+/*# sourceMappingURL=8f5eb105390aeb8b.css.map*/
