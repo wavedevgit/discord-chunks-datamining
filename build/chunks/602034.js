@@ -72,6 +72,6 @@ function h(e) {
     parentChannel: t,
     name: n,
     appliedTags: r,
-    uploadSimple: p
+    upload: p
   })
 }

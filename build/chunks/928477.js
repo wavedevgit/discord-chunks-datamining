@@ -8,7 +8,7 @@ n.d(t, {
   gK: () => j,
   oD: () => L,
   vH: () => D
-}), n(35282), n(704826), n(539854), n(388685), n(415506);
+}), n(35282), n(704826), n(539854), n(388685);
 var r = n(73800),
   i = n(544891),
   a = n(570140),
@@ -144,61 +144,52 @@ function U(e) {
     appliedTags: a,
     analyticsLocations: o,
     onThreadCreated: l,
-    upload: u,
-    uploadSimple: d
+    upload: u
   } = e;
-  return r.useCallback(async (e, r, p) => {
-    let h, g = 0,
-      [b, y] = (0, m.Z)(e);
-    b && (e = y, g = (0, v.pj)(g, P.iLy.SUPPRESS_NOTIFICATIONS));
-    let O = (0, T.WD)(t, null),
-      I = P.ANM.CHANNEL_THREADS(t.id) + "?use_nested_fields=true",
-      A = {
+  return r.useCallback(async (e, r, d) => {
+    let p, h = 0,
+      [g, b] = (0, m.Z)(e);
+    g && (e = b, h = (0, v.pj)(h, P.iLy.SUPPRESS_NOTIFICATIONS));
+    let y = (0, T.WD)(t, null),
+      O = P.ANM.CHANNEL_THREADS(t.id) + "?use_nested_fields=true",
+      I = {
         name: n,
-        auto_archive_duration: O,
+        auto_archive_duration: y,
         applied_tags: a,
         message: {
           content: e,
           sticker_ids: r,
-          flags: 0 !== g ? g : void 0
+          flags: 0 !== h ? h : void 0
         }
       };
-    if (null != d) {
-      let e;
-      if (null != p && p.length > 0) try {
-        let t = await d(p);
-        e = t.uploaderFile, A.message.attachments = t.files.map((e, t) => (0, S.B)(e, t))
-      } catch (i) {
-        let {
-          file: e,
-          code: n,
-          reason: r
-        } = i;
-        throw (0, _.A)({
-          file: e,
-          guildId: t.getGuildId(),
-          analyticsLocations: null != o ? o : [],
-          code: n,
-          reason: r
-        }), i
-      }
-      h = await B(t, o, e, () => i.tn.post({
-        url: I,
-        body: A,
-        rejectWithError: !1
-      }))
-    } else if (null != u) h = await B(t, o, void 0, () => null != p && p.length > 0 ? u(I, A, p) : i.tn.post({
-      url: I,
-      body: A,
+    if (null != d && d.length > 0) try {
+      let e = await u(d);
+      p = e.uploaderFile, I.message.attachments = e.files.map((e, t) => (0, S.B)(e, t))
+    } catch (i) {
+      let {
+        file: e,
+        code: n,
+        reason: r
+      } = i;
+      throw (0, _.A)({
+        file: e,
+        guildId: t.getGuildId(),
+        analyticsLocations: null != o ? o : [],
+        code: n,
+        reason: r
+      }), i
+    }
+    let A = await B(t, o, p, () => i.tn.post({
+      url: O,
+      body: I,
       rejectWithError: !1
     }));
-    else throw Error("No upload handler provided");
     return s.Z.clearDraft(t.id, E.d.ThreadSettings), s.Z.clearDraft(t.id, E.d.FirstThreadMessage), c.Z.clearAll(t.id, E.d.FirstThreadMessage), (0, f.Je)({
       guildId: t.guild_id,
       channelId: t.id,
-      postId: h.id
-    }), null == l || l(h), h
-  }, [t, n, a, l, o, d, u])
+      postId: A.id
+    }), null == l || l(A), A
+  }, [t, n, a, l, o, u])
 }
 
 function G(e, t, n, r, i) {
