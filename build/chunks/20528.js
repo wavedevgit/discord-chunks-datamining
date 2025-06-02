@@ -81,9 +81,10 @@ function k(e, t) {
 }
 
 function M(e, t) {
+  var n;
   if (g.Z.getAllActiveStreamKeys().includes(e)) return;
-  let n = new i.V7;
-  N[e] = n, n.start(t ? R : P, () => {
+  let r = null != (n = N[e]) ? n : new i.V7;
+  N[e] = r, r.start(t ? R : P, () => {
     a.Z.dispatch({
       type: "STREAM_TIMED_OUT",
       streamKey: e
