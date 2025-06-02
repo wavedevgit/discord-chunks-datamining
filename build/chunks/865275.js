@@ -69,7 +69,7 @@ class p extends r.EventEmitter {
     if (null != this._cancel) throw Error("Uploader.upload(...): An upload is already in progress.");
     this._lastUpdate = Date.now(), this._loaded = 0, this._file = {
       id: this.id,
-      name: e.name,
+      name: e,
       currentSize: 0,
       totalPreCompressionSize: 0,
       compressionProgress: 0,
