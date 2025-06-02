@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(258609),
   U = n(446226),
   G = n(935261),
-  V = n(74299),
-  B = n(803647),
+  B = n(74299),
+  V = n(803647),
   H = n(142497),
   F = n(810788),
   z = n(160404),
@@ -115,7 +115,7 @@ function eG(e) {
   return e
 }
 
-function eV(e, t) {
+function eB(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -128,7 +128,7 @@ function eV(e, t) {
   }), e
 }
 
-function eB(e, t) {
+function eV(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -254,7 +254,7 @@ function eY(e) {
     play: T,
     events: P
   } = (0, p.o)(d.enabled ? "disable" : "enable");
-  return i.useEffect(() => () => T(), [d.enabled, T]), (0, r.jsx)(ep.Z, eV(eG({
+  return i.useEffect(() => () => T(), [d.enabled, T]), (0, r.jsx)(ep.Z, eB(eG({
     onChange: C,
     onCameraUnavailable: O,
     hasPermission: h,
@@ -269,7 +269,7 @@ function eY(e) {
         label: i,
         iconComponent: l,
         iconColor: u
-      } = e, d = eB(e, ["unavailable", "isActive", "label", "iconComponent", "iconColor"]);
+      } = e, d = eV(e, ["unavailable", "isActive", "label", "iconComponent", "iconColor"]);
       let p = (0, r.jsx)(N, {
         size: c ? "md" : "sm",
         className: a()(ek.buttonIcon, {
@@ -295,12 +295,12 @@ function eY(e) {
         children: (e, l) => {
           var {
             onClick: s
-          } = e, u = eB(e, ["onClick"]), {
+          } = e, u = eV(e, ["onClick"]), {
             isShown: h
           } = l;
           return (0, r.jsx)(f.ua7, {
             text: i,
-            children: e => (0, r.jsx)(f.zxk, eV(eG({
+            children: e => (0, r.jsx)(f.zxk, eB(eG({
               buttonRef: o
             }, d, e, u), {
               onClick: t => {
@@ -361,7 +361,7 @@ function eK(e) {
   } = (0, Z.Z)("RTCConnection");
   return n ? (0, r.jsx)(f.ua7, {
     text: p,
-    children: e => (0, r.jsxs)(f.zxk, eV(eG(eV(eG({}, e), {
+    children: e => (0, r.jsxs)(f.zxk, eB(eG(eB(eG({}, e), {
       fullWidth: !0,
       size: i ? f.zxk.Sizes.MEDIUM : f.zxk.Sizes.SMALL
     }), _), {
@@ -424,7 +424,7 @@ function eq(e) {
     }, [_, n.id]),
     v = m.find(e => e.ownerId === (null == g ? void 0 : g.id)),
     C = (0, eo.E)(n, g, m);
-  t = null == v ? l ? y : ec.Z : () => (0, B.Z)(v);
+  t = null == v ? l ? y : ec.Z : () => (0, V.Z)(v);
   let S = null != v || C.length > 0,
     N = b ? eD.intl.string(eD.t.fjBNo6) : eD.intl.string(eD.t.uQn9Bw),
     T = E || o || O,
@@ -466,10 +466,10 @@ function eq(e) {
       var {
         onClick: n,
         onMouseEnter: i
-      } = e, l = eB(e, ["onClick", "onMouseEnter"]);
+      } = e, l = eV(e, ["onClick", "onMouseEnter"]);
       return (0, r.jsx)(f.ua7, {
         text: N,
-        children: e => (0, r.jsx)(f.zxk, eV(eG(eV(eG({}, e), {
+        children: e => (0, r.jsx)(f.zxk, eB(eG(eB(eG({}, e), {
           buttonRef: c,
           size: h ? f.zxk.Sizes.MEDIUM : f.zxk.Sizes.SMALL,
           onClick: r => {
@@ -689,7 +689,7 @@ class eX extends i.PureComponent {
         } = await n.e("56944").then(n.bind(n, 600830));
         return n => (0, r.jsx)(A.Gt, {
           value: i,
-          children: (0, r.jsx)(e, eV(eG({}, n), {
+          children: (0, r.jsx)(e, eB(eG({}, n), {
             channel: t,
             onInteraction: (0, w.u)("RTCConnectionMenu", j.Z.RTC_PANEL)
           }))
@@ -731,7 +731,7 @@ function eQ(e) {
     Component: c,
     events: u
   } = (0, h.P)(l ? "disable" : "enable");
-  return i.useEffect(() => () => s(), [l, s]), (0, r.jsx)(ej.Z, eV(eG({}, t), {
+  return i.useEffect(() => () => s(), [l, s]), (0, r.jsx)(ej.Z, eB(eG({}, t), {
     ref: a,
     onClick: e => {
       (0, L.v)(o, L.d.KRISP, !l), t.onClick(e)
@@ -775,7 +775,7 @@ let eJ = (0, E.Z)(function(e) {
     {
       channelId: d
     } = c,
-    p = eB(c, ["channelId"]),
+    p = eV(c, ["channelId"]),
     h = (0, u.e7)([eg.Z], () => eg.Z.getChannel(d), [d]),
     g = null == h ? void 0 : h.getGuildId(),
     m = (0, u.e7)([em.Z], () => em.Z.getGuild(g), [g]),
@@ -783,7 +783,7 @@ let eJ = (0, E.Z)(function(e) {
       noiseCancellationSupported: e_.Z.isNoiseCancellationSupported(),
       noiseCancellationActive: e_.Z.getNoiseCancellation(),
       noiseCancellationError: e_.Z.isNoiseCancellationError(),
-      canGoLive: (0, V.Z)(e_.Z)
+      canGoLive: (0, B.Z)(e_.Z)
     })),
     _ = (0, u.e7)([e_.Z, F.Z], () => F.Z.hasHotspot(eR.v.VOICE_PANEL_INTRODUCTION) && (0, eT.EO)(s) && !e_.Z.isInteractionRequired() && !(null == h ? void 0 : h.isGuildStageVoice())),
     E = (0, u.e7)([ev.Z], () => null != d && ev.Z.hasVideo(d), [d]),
@@ -814,7 +814,7 @@ let eJ = (0, E.Z)(function(e) {
   }, [I, C, w]);
   let {
     analyticsLocations: R
-  } = (0, A.ZP)(j.Z.RTC_PANEL), D = (0, v.Z)(null != g ? g : eL.lds, null == h ? void 0 : h.id), B = (0, N.Z)(null == h ? void 0 : h.id);
+  } = (0, A.ZP)(j.Z.RTC_PANEL), D = (0, v.Z)(null != g ? g : eL.lds, null == h ? void 0 : h.id), V = (0, N.Z)(null == h ? void 0 : h.id);
   return (0, r.jsx)(A.Gt, {
     value: R,
     children: (0, r.jsxs)("div", {
@@ -822,7 +822,7 @@ let eJ = (0, E.Z)(function(e) {
       children: [null != a || null != o ? (0, r.jsx)(G.Z, {
         voiceState: a,
         awaitingRemoteSessionInfo: o
-      }) : null, (0, r.jsx)(eX, eV(eG({}, e, b, p), {
+      }) : null, (0, r.jsx)(eX, eB(eG({}, e, b, p), {
         enableActivities: D,
         remoteVoiceState: a,
         guild: m,
@@ -833,7 +833,7 @@ let eJ = (0, E.Z)(function(e) {
         voiceStates: x,
         showVoiceStates: S,
         shouldShowVoicePanelIntroduction: _,
-        isPrivateChannelWithEnabledActivities: B,
+        isPrivateChannelWithEnabledActivities: V,
         analyticsLocations: R,
         isVisualRefreshEnabled: t,
         isSoundboardButtonHidden: l,

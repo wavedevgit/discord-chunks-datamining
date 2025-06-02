@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(637853),
   U = n(326145),
   G = n(269675),
-  V = n(242601),
-  B = n(416568),
+  B = n(242601),
+  V = n(416568),
   H = n(613609),
   F = n(160404),
   z = n(225675),
@@ -160,7 +160,7 @@ let eL = (0, u.Un)({
     name: "GuildPowerupsPage",
     renderLoader: ew
   }),
-  eV = e => {
+  eB = e => {
     let {
       match: t
     } = e, n = (0, O.l)(), i = (0, h.e7)([es.Z, ep.Z], () => {
@@ -248,7 +248,7 @@ let eL = (0, u.Un)({
     }
     return (0, r.jsx)(T.Z, {})
   },
-  eB = i.memo(function() {
+  eV = i.memo(function() {
     let {
       guildId: e,
       channelId: t
@@ -259,12 +259,12 @@ let eL = (0, u.Un)({
     }), i = (0, h.e7)([ep.Z], () => null != t ? t : ep.Z.getChannelId(e));
     return window.location.pathname.startsWith(eS.Z5c.NOTIFICATIONS_INBOX()) ? ("sidebar" !== n && (0, ea.dL)(ec.Z.defaultRoute), (0, r.jsx)(J.Z, {
       includePanelSpacing: !0
-    })) : window.location.pathname.startsWith(eS.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(eS.Z5c.GUILD_DISCOVERY) || (0, et.OG)() ? (0, r.jsx)(R.Z, {}) : null != e ? (0, r.jsx)(V.Z, {
+    })) : window.location.pathname.startsWith(eS.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(eS.Z5c.GUILD_DISCOVERY) || (0, et.OG)() ? (0, r.jsx)(R.Z, {}) : null != e ? (0, r.jsx)(B.Z, {
       selectedChannelId: i,
       guildId: e
     }, e) : (0, r.jsx)(ey.Z, {})
   }),
-  eH = e => (0, r.jsx)(eV, eZ({}, e)),
+  eH = e => (0, r.jsx)(eB, eZ({}, e)),
   eF = () => (0, r.jsx)(w.Z, {}),
   ez = e => null != e.match.params.channelId ? eH(e) : (0, r.jsx)(Q.Z, {}),
   eW = e => {
@@ -482,12 +482,12 @@ function e5(e) {
         [eA.hidden]: p,
         [eA.channelListHidden]: o
       }),
-      children: [O && s && !c && (0, r.jsx)(B.Z, {
+      children: [O && s && !c && (0, r.jsx)(V.Z, {
         className: eA.guilds,
         themeOverride: n
       }), !o && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(j, ex(eZ({}, Z), {
-          children: (0, r.jsx)(eB, {})
+          children: (0, r.jsx)(eV, {})
         })), O ? (0, r.jsx)(g.P3F, {
           onClick: P,
           "aria-label": "Resize Sidebar",
@@ -552,7 +552,7 @@ function e4() {
     });
   return (0, r.jsxs)("div", {
     className: eA.container,
-    children: [f && !u && !O && (0, r.jsx)(B.Z, {
+    children: [f && !u && !O && (0, r.jsx)(V.Z, {
       className: eA.guilds,
       themeOverride: n
     }), (0, r.jsx)(D.Z.Provider, {

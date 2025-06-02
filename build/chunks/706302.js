@@ -1,23 +1,21 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
-var i = n(774226),
-  r = n(783097),
-  l = n(812236),
-  o = n(989573);
+var i = n(812236),
+  r = n(989573);
 
-function a(e) {
+function l(e) {
   let {
     context: t,
     application: n,
-    botUserId: a
-  } = e, c = (0, l.ms)({
+    botUserId: l
+  } = e, o = (0, i.ms)({
     context: t,
     applicationId: n.id,
-    botUserId: a
-  }), s = (0, r.BQ)(n) && (0, i.Kb)(n), u = (0, o.Z)({
+    botUserId: l
+  }), a = (0, r.Z)({
     context: t
   });
-  return c && null != a && !u && !s
+  return o && null != l && !a
 }
