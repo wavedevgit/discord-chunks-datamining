@@ -1,6 +1,6 @@
 /**
   Module ID: 8787
-  Original File Name: d8ee716682b27a55
+  Original File Name: 5f866af63965d203
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -336,7 +336,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -4627,10 +4627,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .giftButton__82222 {
     --button-outline-brand-text: var(--brand-500)
-}
-
-.giftButton__82222:hover {
-    background-color: var(--brand-500)
 }
 
 .innerGiftButton__82222 {
@@ -18784,4 +18780,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=d8ee716682b27a55.css.map*/
+/*# sourceMappingURL=5f866af63965d203.css.map*/
