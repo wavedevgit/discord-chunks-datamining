@@ -25,7 +25,7 @@ function h(e) {
   } = e, {
     emoji: h,
     sentAt: v
-  } = n, S = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [b, O] = l.useState(!0), y = !S, Z = (0, o.Yzy)(b, {
+  } = n, S = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [b, y] = l.useState(!0), O = !S, Z = (0, o.Yzy)(b, {
     from: {
       rotate: -120
     },
@@ -46,11 +46,11 @@ function h(e) {
   return (l.useEffect(() => {
     let e;
     return Date.now() - v >= g ? (0, d.H)(t) : e = setTimeout(() => {
-      O(!1), y && (0, d.H)(t)
-    }, y ? m : p), () => {
+      y(!1), O && (0, d.H)(t)
+    }, O ? m : p), () => {
       null != e && clearTimeout(e)
     }
-  }, [v, t, y]), y) ? null : Z((e, t) => {
+  }, [v, t, O]), O) ? null : Z((e, t) => {
     var n;
     let {
       rotate: l

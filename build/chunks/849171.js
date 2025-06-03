@@ -21,8 +21,8 @@ var r = n(255367),
   v = n(318891),
   S = n(884338),
   b = n(719296),
-  O = n(958185),
-  y = n(100527),
+  y = n(958185),
+  O = n(100527),
   Z = n(906732),
   j = n(890280),
   _ = n(835473),
@@ -75,8 +75,8 @@ function M(e) {
     var e;
     return null != (e = c.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => e.applicationId === p.id)) ? e : c.ZP.getEmbeddedActivitiesForStartingChannel(g.id).find(e => e.applicationId === p.id)
   }), {
-    analyticsLocations: O
-  } = (0, Z.ZP)(), y = (0, s.O)(), _ = R.ZP.getName(g.getGuildId(), g.id, null == S ? void 0 : S[0]), I = (0, m.s5)({
+    analyticsLocations: y
+  } = (0, Z.ZP)(), O = (0, s.O)(), _ = R.ZP.getName(g.getGuildId(), g.id, null == S ? void 0 : S[0]), I = (0, m.s5)({
     userId: null == (t = A.default.getCurrentUser()) ? void 0 : t.id,
     channelId: g.id,
     application: p
@@ -123,8 +123,8 @@ function M(e) {
           e.stopPropagation(), null != b && (0, d.Z)({
             applicationId: b.applicationId,
             activityChannelId: g.id,
-            locationObject: y.location,
-            analyticsLocations: O,
+            locationObject: O.location,
+            analyticsLocations: y,
             componentId: T
           })
         },
@@ -157,7 +157,7 @@ function L(e) {
     channel: u
   } = e, {
     analyticsLocations: s
-  } = (0, Z.ZP)(y.Z.ACTIVITY_TILE), {
+  } = (0, Z.ZP)(O.Z.ACTIVITY_TILE), {
     applicationId: c
   } = t, d = (0, g.Z)(), f = null != d && (0, p.pY)(d.location) === u.id && d.applicationId === c, [m] = (0, _.Z)([c]), {
     url: S
@@ -165,7 +165,7 @@ function L(e) {
     applicationId: c,
     names: T,
     size: 1024
-  }), j = !i && f, w = !f, A = !f && !i, x = (0, o.e7)([P.Z, I.Z], () => (0, O.Z)({
+  }), j = !i && f, w = !f, A = !f && !i, x = (0, o.e7)([P.Z, I.Z], () => (0, y.Z)({
     LayerStore: P.Z,
     PopoutWindowStore: I.Z
   }));

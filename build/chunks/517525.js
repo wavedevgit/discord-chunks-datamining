@@ -20,8 +20,8 @@ var r = n(255367),
   v = n(626135),
   S = n(74538),
   b = n(557457),
-  O = n(475674),
-  y = n(981631),
+  y = n(475674),
+  O = n(981631),
   Z = n(474936),
   j = n(388032),
   _ = n(374336);
@@ -93,13 +93,13 @@ let P = (0, u.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         didTrackUpsellViewed: P,
         setDidTrackUpsellViewed: A,
         className: x,
-        premiumIndicator: R
+        premiumIndicator: R,
+        quality: N
       } = e,
-      N = (0, b.Wc)(o),
       {
         analyticsLocations: C
       } = (0, m.ZP)(),
-      T = null != (0, O.Z)(o);
+      T = null != (0, y.Z)(o);
     try {
       t = (0, b.nG)(N)
     } catch (e) {
@@ -127,7 +127,7 @@ let P = (0, u.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         })
       }, [k, D, M]);
     if (l.useEffect(() => {
-        !P && D && (v.default.track(y.rMx.PREMIUM_UPSELL_VIEWED, {
+        !P && D && (v.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: Z.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: i,
@@ -172,7 +172,7 @@ let P = (0, u.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       size: u,
       className: s,
       premiumIndicator: c
-    } = e, [d, p] = l.useState(!1), m = (0, b.Wc)(t), {
+    } = e, [d, p] = l.useState(!1), m = (0, b.W3)(t), {
       reducedMotion: h
     } = l.useContext(f.Sfi), v = n && null != m;
     l.useEffect(() => {
@@ -188,7 +188,7 @@ let P = (0, u.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         leave: h.enabled ? R : A,
         config: D
       }, "animate-always"),
-      O = (0, f.q_F)({
+      y = (0, f.q_F)({
         to: v ? T : C,
         config: D
       }, "animate-always");
@@ -210,10 +210,11 @@ let P = (0, u.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
             isUpsellEnabled: i,
             didTrackUpsellViewed: d,
             setDidTrackUpsellViewed: p,
-            premiumIndicator: c
+            premiumIndicator: c,
+            quality: m
           })
         }) : null), (0, r.jsx)(o.animated.div, {
-          style: O,
+          style: y,
           className: _.liveIndicator,
           children: (0, r.jsx)(g.ZP, {
             look: g.jZ.RED,

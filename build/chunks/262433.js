@@ -44,8 +44,8 @@ function h(e) {
     canvasWidth: v,
     canvasHeight: S,
     fallbackColor: b,
-    outlineColorDark: O,
-    outlineColorLight: y,
+    outlineColorDark: y,
+    outlineColorLight: O,
     streamerId: Z,
     deadDrawables: j
   } = e;
@@ -55,7 +55,7 @@ function h(e) {
     w = (0, d.np)(a.y, S),
     {
       outlineColor: P
-    } = (0, d.bg)(a.userId, O, y, b);
+    } = (0, d.bg)(a.userId, y, O, b);
   E(a, e => {
       e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, o.j)(() => {
         g.setState(t => (delete t.particles[a.id][e.id], 0 === Object.keys(t.particles[a.id]).length && delete t.particles[a.id], t))

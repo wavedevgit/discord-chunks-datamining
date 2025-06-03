@@ -27,13 +27,13 @@ let m = i.memo(function(e) {
     videoSpinnerContext: v,
     userId: S,
     streamKey: b
-  } = e, [O, y] = i.useState(!0);
+  } = e, [y, O] = i.useState(!0);
   (0, c.Z)({
     location: "VideoStream",
     videoSpinnerContext: v,
     userId: S,
     streamId: t,
-    loading: O,
+    loading: y,
     paused: E
   });
   let {
@@ -41,12 +41,12 @@ let m = i.memo(function(e) {
   } = (0, s.Z)({
     streamId: t,
     userId: S,
-    loading: O,
+    loading: y,
     videoSpinnerContext: v,
     streamKey: b,
     paused: E
   }), j = i.useCallback(() => {
-    y(!1), Z()
+    O(!1), Z()
   }, [Z]);
   return (0, l.jsxs)("div", {
     className: o()(f.wrapper, r),
@@ -60,9 +60,9 @@ let m = i.memo(function(e) {
       paused: E
     }), E ? null : (0, l.jsx)("div", {
       className: o()(f.previewWrapper, {
-        [f.loading]: O
+        [f.loading]: y
       }),
-      children: O && (0, l.jsxs)(i.Fragment, {
+      children: y && (0, l.jsxs)(i.Fragment, {
         children: [null != h ? (0, l.jsx)("img", {
           src: h,
           alt: "",

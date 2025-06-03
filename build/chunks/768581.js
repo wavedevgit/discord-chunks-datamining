@@ -93,12 +93,12 @@ function N(e) {
     canWebP: _ = v
   } = e;
   if (null == i || null == a) return;
-  let p = null != f ? f : u && X(a) ? "gif" : "jpg";
+  let p = null != f ? f : u && X(a) ? ei(_) : "jpg";
   u && J(a) && (p = "mp4");
   let h = window.GLOBAL_ENV.CDN_HOST;
   if (null != h ? ("jpg" === p && (p = _ ? "webp" : "png"), t = "".concat(location.protocol, "//").concat(h, "/").concat(r, "/").concat(i, "/").concat(a, ".").concat(p)) : t = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + n(i, a, p), "mp4" === p) return t;
   let m = {};
-  return null != s && (m.size = (0, l.oO)(s * (0, l.x_)())), null != d && (m.keep_aspect_ratio = d), c && (m.quality = "lossless"), t + "?".concat(o.stringify(m))
+  return null != s && (m.size = (0, l.oO)(s * (0, l.x_)())), null != d && (m.keep_aspect_ratio = d), c && (m.quality = "lossless"), "webp" === p && u && X(a) && (m.animated = !0), t + "?".concat(o.stringify(m))
 }
 
 function C(e) {
@@ -161,13 +161,15 @@ function D(e) {
       size: s = f.IXf,
       canWebP: c = v
     } = e,
-    u = a && X(i) ? "gif" : "jpg",
+    u = a && X(i) ? ei(c) : "jpg",
     {
       CDN_HOST: d
     } = window.GLOBAL_ENV;
-  return null != d ? ("jpg" === u && (u = c ? "webp" : "png"), t = "".concat(location.protocol, "//").concat(d).concat(f.ANM.GUILD_MEMBER_AVATAR(n, r, i, u))) : t = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_MEMBER_AVATAR(n, r, i, u), t + "?".concat(o.stringify({
+  null != d ? ("jpg" === u && (u = c ? "webp" : "png"), t = "".concat(location.protocol, "//").concat(d).concat(f.ANM.GUILD_MEMBER_AVATAR(n, r, i, u))) : t = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_MEMBER_AVATAR(n, r, i, u);
+  let _ = {
     size: (0, l.oO)(s * (0, l.x_)())
-  }))
+  };
+  return "webp" === u && a && X(i) && (_.animated = !0), t += "?".concat(o.stringify(_))
 }
 
 function L(e) {
@@ -198,9 +200,13 @@ function k(e) {
     size: a
   } = e;
   if (null == r) return;
-  let o = window.GLOBAL_ENV.CDN_HOST,
-    s = i && X(r) ? "gif" : "png";
-  return (null != o ? "".concat(location.protocol, "//").concat(o, "/banners/").concat(n, "/").concat(r, ".").concat(s) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.USER_BANNER(n, r, s)) + "?size=".concat((0, l.oO)(a * (0, l.x_)()))
+  let s = window.GLOBAL_ENV.CDN_HOST,
+    c = i && X(r) ? ei(v) : "png";
+  t = null != s ? "".concat(location.protocol, "//").concat(s, "/banners/").concat(n, "/").concat(r, ".").concat(c) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.USER_BANNER(n, r, c);
+  let u = {
+    size: (0, l.oO)(a * (0, l.x_)())
+  };
+  return "webp" === c && i && X(r) && (u.animated = !0), t += "?".concat(o.stringify(u))
 }
 
 function M(e) {
@@ -228,13 +234,17 @@ function j(e) {
     guildId: r,
     banner: i,
     canAnimate: a,
-    size: o
+    size: s
   } = e;
   if (null == i || null == r) return;
-  let s = window.GLOBAL_ENV.CDN_HOST,
-    c = a && X(i) ? "gif" : "png",
-    u = f.ANM.GUILD_MEMBER_BANNER(r, n, i, c);
-  return (null != s ? "".concat(location.protocol, "//").concat(s).concat(u) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + u) + "?size=".concat((0, l.oO)(o * (0, l.x_)()))
+  let c = window.GLOBAL_ENV.CDN_HOST,
+    u = a && X(i) ? ei(v) : "png",
+    d = f.ANM.GUILD_MEMBER_BANNER(r, n, i, u);
+  t = null != c ? "".concat(location.protocol, "//").concat(c).concat(d) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + d;
+  let _ = {
+    size: (0, l.oO)(s * (0, l.x_)())
+  };
+  return "webp" === u && a && X(i) && (_.animated = !0), t += "?".concat(o.stringify(_))
 }
 
 function U(e) {
@@ -261,10 +271,14 @@ function B(e) {
     i = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (null == r) return null;
   let a = (0, l.oO)(S * (0, l.x_)()),
-    o = v ? "webp" : "jpg",
-    s = i && X(r) ? "gif" : o,
-    c = window.GLOBAL_ENV.CDN_HOST;
-  return t = (null != c ? "".concat(location.protocol, "//").concat(c, "/banners/").concat(n, "/").concat(r, ".").concat(s) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_BANNER(n, r, s)) + "?size=".concat(a), "jpg" === s && (t += "&quality=lossless"), t
+    s = v ? "webp" : "jpg",
+    c = i && X(r) ? ei(v) : s,
+    u = window.GLOBAL_ENV.CDN_HOST;
+  t = null != u ? "".concat(location.protocol, "//").concat(u, "/banners/").concat(n, "/").concat(r, ".").concat(c) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_BANNER(n, r, c);
+  let d = {
+    size: a
+  };
+  return "jpg" === c && (d.quality = "lossless"), "webp" === c && i && X(r) && (d.animated = !0), t += "?".concat(o.stringify(d))
 }
 
 function F(e) {
@@ -309,7 +323,8 @@ function H(e) {
     hash: n,
     size: r,
     canAnimate: i,
-    lossless: a
+    lossless: a,
+    canWebP: !1
   })
 }
 
@@ -326,7 +341,8 @@ function Y(e) {
     id: t,
     hash: n,
     size: r,
-    canAnimate: i
+    canAnimate: i,
+    canWebP: !1
   })
 }
 
@@ -349,7 +365,8 @@ function W(e) {
     id: t,
     hash: n,
     size: r,
-    canAnimate: !1
+    canAnimate: !1,
+    canWebP: !1
   });
   if (null != i) {
     let e = R(i, !1, r);
@@ -374,7 +391,8 @@ function K(e) {
     size: r,
     canAnimate: !1,
     keepAspectRatio: i,
-    format: a
+    format: a,
+    canWebP: !1
   })
 }
 
@@ -392,7 +410,8 @@ function z(e) {
     id: n,
     hash: r,
     size: i,
-    canAnimate: a
+    canAnimate: a,
+    canWebP: !1
   })
 }
 
@@ -418,7 +437,8 @@ function Q(e) {
     id: i,
     hash: a,
     canAnimate: !1,
-    size: s
+    size: s,
+    canWebP: !1
   })) ? n : q(i)
 }
 
@@ -480,7 +500,8 @@ let en = {
       id: t,
       hash: n,
       size: f.IXf,
-      canAnimate: !0
+      canAnimate: !0,
+      canWebP: !1
     })
   },
   getNewMemberActionIconURL: function e(e) {
@@ -494,7 +515,8 @@ let en = {
       id: t,
       hash: n,
       size: f.IXf,
-      canAnimate: !0
+      canAnimate: !0,
+      canWebP: !1
     })
   },
   getGuildTemplateIconURL: Y,
@@ -528,4 +550,8 @@ let en = {
 
 function er(e) {
   return null != e && b.test(e)
+}
+
+function ei(e) {
+  return e ? "webp" : "gif"
 }
