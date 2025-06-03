@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(38900),
   O = n(709999),
   S = n(328626),
-  x = n(619899),
-  E = n(215023),
+  E = n(619899),
+  x = n(215023),
   y = n(981631),
   j = n(388032),
   P = n(806734);
@@ -36,14 +36,14 @@ let k = e => {
     handleTransition: k,
     numVisibleItems: T,
     tab: I
-  } = e, L = (0, o.e7)([d.default], () => d.default.getCurrentUser()), B = b.ZP.canUseCollectibles(L), w = (0, _.s)("useShopHomeSorting") && I === E.AW.HOME, {
+  } = e, L = (0, o.e7)([d.default], () => d.default.getCurrentUser()), B = b.ZP.canUseCollectibles(L), w = (0, _.s)("useShopHomeSorting") && I === x.AW.HOME, {
     sortType: N,
     setSortType: A,
     sortedItems: R,
     sortOptions: Z,
     shuffleProducts: F,
     showRecommendationOption: D
-  } = (0, C.N)(a, B), H = (0, x.St)(R), M = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, o.e7)([p.Z], () => p.Z.isFocused()), V = !M && W, {
+  } = (0, C.N)(a, B), H = (0, E.St)(R), M = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, o.e7)([p.Z], () => p.Z.isFocused()), V = !M && W, {
     animationPhase: U,
     startAnimation: G
   } = (0, S.y)(), z = (0, h.sp)(), q = null != (t = null == z ? void 0 : z.sessionId) ? t : "", K = l.useRef(null), Y = l.useCallback(e => {
@@ -63,7 +63,7 @@ let k = e => {
         className: P.headerLeft,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
-          children: I === E.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS)
+          children: I === x.AW.ORBS ? j.intl.string(j.t.dFgeub) : j.intl.string(j.t.NSv5KS)
         }), D && (0, r.jsx)(s.ua7, {
           text: j.intl.string(j.t["3taPdn"]),
           position: "top",
@@ -118,7 +118,7 @@ let k = e => {
             isSelected: e => e === N,
             serialize: e => e
           })]
-        }), I === E.AW.HOME && (w ? (0, r.jsx)(s.zxk, {
+        }), I === x.AW.HOME && (w ? (0, r.jsx)(s.zxk, {
           color: s.Ttl.PRIMARY,
           buttonRef: K,
           onClick: () => {

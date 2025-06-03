@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(38900),
   O = n(709999),
   S = n(81136),
-  x = n(619899),
-  E = n(302800),
+  E = n(619899),
+  x = n(302800),
   y = n(215023),
   j = n(474936),
   P = n(484920);
@@ -37,7 +37,7 @@ function k(e) {
     category: a,
     isPremiumUser: i,
     isGiftEasterEggEnabled: c
-  } = e, u = (0, o.e7)([p.default], () => p.default.getCurrentUser()), d = (0, x.St)(t);
+  } = e, u = (0, o.e7)([p.default], () => p.default.getCurrentUser()), d = (0, E.St)(t);
   return null == u || 0 === t.length ? null : (0, r.jsxs)("div", {
     children: [null != l ? (0, r.jsx)(s.Text, {
       className: P.itemTypeTitle,
@@ -125,7 +125,7 @@ function I(e) {
     setIsGiftEasterEggEnabled: p,
     showEasterEggToggle: f,
     isFullScreen: g
-  } = e, b = l.useRef(10 + 70 * Math.random()), [h, m] = l.useState(!1), v = (0, E.M7)(t.skuId), O = (0, c.O)(e => {
+  } = e, b = l.useRef(10 + 70 * Math.random()), [h, m] = l.useState(!1), v = (0, x.M7)(t.skuId), O = (0, c.O)(e => {
     m(e && null != v)
   }, g ? .13 : .15);
   return (0, r.jsxs)("div", {

@@ -27,20 +27,20 @@ let _ = e => {
     handleTransition: S
   } = e;
   null != v && (_ = null == (t = p.Z.getCategoryByStoreListingId(null == v ? void 0 : v.categoryStoreListingId)) ? void 0 : t.skuId);
-  let x = null != (n = null != _ ? _ : null == C ? void 0 : C.skuId) ? n : "",
+  let E = null != (n = null != _ ? _ : null == C ? void 0 : C.skuId) ? n : "",
     {
-      handleCardVisibilityChange: E
-    } = (0, f.E)(x, "home", "marketing featured block"),
+      handleCardVisibilityChange: x
+    } = (0, f.E)(E, "home", "marketing featured block"),
     {
       featuredBlockBanner: y
     } = (0, g.YG)(C, v),
     j = l.useRef(null),
-    P = x === o.T.NAMEPLATE,
+    P = E === o.T.NAMEPLATE,
     k = P ? h.intl.string(h.t["/Rk1dn"]) : null == v ? void 0 : v.bodyText,
     T = (0, d.sp)();
   return (0, r.jsx)(s.$, {
     innerRef: j,
-    onChange: E,
+    onChange: x,
     threshold: 0,
     children: (0, r.jsxs)(c.P3F, {
       className: m.featuredBlock,
@@ -49,9 +49,9 @@ let _ = e => {
         backgroundImage: "url(".concat(y, ")")
       },
       onClick: () => {
-        S("shop marketing tile", x), u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        S("shop marketing tile", E), u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == T ? void 0 : T.sessionId,
-          sku_id: x,
+          sku_id: E,
           page_type: "home",
           page_section: null == T ? void 0 : T.pageSection,
           page_category: null == T ? void 0 : T.pageCategory,
@@ -78,9 +78,9 @@ let _ = e => {
         className: m.featuredBlockButton,
         color: c.Ttl.WHITE,
         onClick: e => {
-          S("shop marketing take me there button", x), e.stopPropagation(), u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          S("shop marketing take me there button", E), e.stopPropagation(), u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: null == T ? void 0 : T.sessionId,
-            sku_id: x,
+            sku_id: E,
             page_type: "home",
             page_section: null == T ? void 0 : T.pageSection,
             page_category: null == T ? void 0 : T.pageCategory,

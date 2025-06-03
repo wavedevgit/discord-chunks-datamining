@@ -22,21 +22,21 @@ let h = e => {
     wideBannerBlock: h,
     handleTransition: m,
     tab: _
-  } = e, C = null == (t = u.Z.getCategoryByStoreListingId(h.categoryStoreListingId)) ? void 0 : t.skuId, v = l.useRef(null), O = l.useRef(null), [S, x] = l.useState();
+  } = e, C = null == (t = u.Z.getCategoryByStoreListingId(h.categoryStoreListingId)) ? void 0 : t.skuId, v = l.useRef(null), O = l.useRef(null), [S, E] = l.useState();
   l.useEffect(() => {
     let e = O.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && x(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && E(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
     }
   }, []);
-  let E = null != C ? C : "",
+  let x = null != C ? C : "",
     {
       handleCardVisibilityChange: y
-    } = (0, d.E)(E, "home", "marketing wide banner"),
+    } = (0, d.E)(x, "home", "marketing wide banner"),
     j = h.bannerUrl;
   if (null == j) return null;
   let P = _ === p.AW.ORBS;
@@ -92,7 +92,7 @@ let h = e => {
       }), !0 !== h.disableCta && (0, r.jsx)(s.zxk, {
         className: b.wideBannerBlockButton,
         color: s.Ttl.PRIMARY,
-        onClick: () => m("shop wide banner", E),
+        onClick: () => m("shop wide banner", x),
         children: g.intl.string(g.t.jVcuVV)
       })]
     })
