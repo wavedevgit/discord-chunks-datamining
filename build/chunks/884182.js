@@ -1,6 +1,6 @@
 /** Chunk was on 46097 **/
 n.d(t, {
-  Z: () => M
+  Z: () => E
 }), n(388685);
 var i = n(255367),
   o = n(73800),
@@ -57,13 +57,13 @@ function I(e) {
   } = e;
   null != o && s()(1 === t.length, "footer only gets applied to single items");
   let r = t.length;
-  if (1 === r) return (0, i.jsx)(O, {
+  if (1 === r) return (0, i.jsx)(j, {
     itemsForLayout: t,
     isSingleImage: !0,
     footer: o,
     maxWidth: n
   });
-  if (2 === r) return (0, i.jsx)(j, {
+  if (2 === r) return (0, i.jsx)(O, {
     itemsForLayout: t,
     maxWidth: n
   });
@@ -71,29 +71,29 @@ function I(e) {
     itemsForLayout: t,
     maxWidth: n
   });
-  if (4 === r) return (0, i.jsx)(C, {
+  if (4 === r) return (0, i.jsx)(v, {
     itemsForLayout: t,
     maxWidth: n
   });
   let l = r % 3;
   return (0, i.jsxs)(i.Fragment, {
-    children: [1 === l && (0, i.jsx)(O, {
+    children: [1 === l && (0, i.jsx)(j, {
       itemsForLayout: t.slice(0, l),
       maxWidth: n
-    }), 2 === l && (0, i.jsx)(j, {
+    }), 2 === l && (0, i.jsx)(O, {
       itemsForLayout: t.slice(0, l),
       maxWidth: n
-    }), 0 === l ? (0, i.jsx)(v, {
+    }), 0 === l ? (0, i.jsx)(C, {
       itemsForLayout: t,
       maxWidth: n
-    }) : (0, i.jsx)(v, {
+    }) : (0, i.jsx)(C, {
       itemsForLayout: t.slice(l),
       maxWidth: n
     })]
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     itemsForLayout: t,
     maxWidth: n,
@@ -116,7 +116,7 @@ function O(e) {
   })
 }
 
-function j(e) {
+function O(e) {
   let {
     itemsForLayout: t,
     maxWidth: n
@@ -164,7 +164,7 @@ function b(e) {
   })
 }
 
-function C(e) {
+function v(e) {
   let {
     itemsForLayout: t,
     maxWidth: n
@@ -179,7 +179,7 @@ function C(e) {
   })
 }
 
-function v(e) {
+function C(e) {
   let {
     itemsForLayout: t,
     maxWidth: n
@@ -198,7 +198,7 @@ let w = e => ({
     imgContainerClassName: g.lazyImgContainer,
     imgClassName: g.lazyImg
   }),
-  E = e => ({
+  M = e => ({
     className: l()(e, g.lazyImg)
   });
 
@@ -210,7 +210,7 @@ function P(e) {
     useFullWidth: r = !0,
     isSingleItem: l = !1,
     footer: a
-  } = e, s = t.item.type, u = x(f({}, t, "IMAGE" === s && w(t.className), "VIDEO" === s && E(t.className)), {
+  } = e, s = t.item.type, u = x(f({}, t, "IMAGE" === s && w(t.className), "VIDEO" === s && M(t.className)), {
     mediaLayoutType: p.hV.MOSAIC,
     maxWidth: n,
     maxHeight: o,
@@ -224,7 +224,7 @@ function P(e) {
     }))
   })
 }
-let M = function(e) {
+let E = function(e) {
   var t;
   let {
     items: n,

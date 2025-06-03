@@ -578,7 +578,7 @@ function eb(e) {
   } = e, [l, i] = (0, L.hL)({
     media: n,
     channel: t
-  }), s = (0, y.m8)() && i === L.wk.EXPLICIT_CONTENT;
+  }), s = (0, y.m8)() && null != i && L.eq.has(i);
   return (0, r.jsx)(g.Rny, {
     enabled: !0,
     children: (0, r.jsxs)("div", {
