@@ -33,8 +33,8 @@ var r = n(255367),
   A = n(497334),
   Z = n(119850),
   x = n(938736),
-  L = n(227140),
-  w = n(474936),
+  w = n(227140),
+  L = n(474936),
   R = n(981631),
   D = n(921944),
   k = n(388032),
@@ -86,18 +86,18 @@ let U = e => {
       } = (0, d.Z)({
         forceFetch: !0
       }),
-      [es, ec] = (0, h.bf)(el !== w.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
+      [es, ec] = (0, h.bf)(el !== L.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
         showAfterTimestamp: ea.valueOf(),
         cooldownDurationMs: 0
       }),
-      eu = (null == Q ? void 0 : Q.trial_id) === w.a7,
+      eu = (null == Q ? void 0 : Q.trial_id) === L.a7,
       [ed, ep] = (0, h.US)($ ? [o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2] : [], void 0, !0);
     if (i.useEffect(() => {
         !0 === H && null != ed && ep(D.L.AUTO_DISMISS)
       }, [ep, H, ed]), !U({
         selected: H
       })) return null;
-    el === w.a$.NONE || $ || (G = 7, E = (0, r.jsx)(y.Z, {
+    el === L.a$.NONE || $ || (G = 7, E = (0, r.jsx)(y.Z, {
       className: "",
       startsAt: ea,
       endsAt: eo,
@@ -105,10 +105,10 @@ let U = e => {
       upperCase: !0
     })), et ? (E = (0, r.jsx)(C.Z, {}), G = 0) : $ ? (E = (0, r.jsx)(A.S, {
       expiresAt: eo
-    }), G = 4) : null != en ? (E = (0, r.jsx)(L.Z, {
+    }), G = 4) : null != en ? (E = (0, r.jsx)(w.Z, {
       copy: en,
       showStars: !1
-    }), G = 1) : null != er ? (E = (0, r.jsx)(L.Z, {
+    }), G = 1) : null != er ? (E = (0, r.jsx)(w.Z, {
       copy: er,
       showStars: !1
     }), G = 1) : null != J ? (E = (0, r.jsx)(P.GN, {

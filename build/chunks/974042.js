@@ -194,8 +194,8 @@ class j {
 let A = !0,
   Z = !1,
   x = O.pJs.ONLINE,
-  L = new j,
-  w = !0,
+  w = new j,
+  L = !0,
   R = !1;
 
 function D() {
@@ -204,18 +204,18 @@ function D() {
 }
 
 function k() {
-  if (A = !0, w ? Z = !1 : D(), L = L.reset(), R) return;
-  let e = L.getRelationshipCounts();
+  if (A = !0, L ? Z = !1 : D(), w = w.reset(), R) return;
+  let e = w.getRelationshipCounts();
   x = 0 === e[O.OGo.FRIEND] ? 0 !== e[O.OGo.PENDING_INCOMING] ? O.pJs.PENDING : O.pJs.ADD_FRIEND : O.pJs.ONLINE
 }
 
 function M() {
-  L = w ? new j : L.reset()
+  w = L ? new j : w.reset()
 }
 
 function U(e) {
   return function() {
-    return !w && !!L.update(e) && (L = L.clone(), !0)
+    return !L && !!w.update(e) && (w = w.clone(), !0)
   }
 }
 class G extends(r = a.ZP.Store) {
@@ -226,7 +226,7 @@ class G extends(r = a.ZP.Store) {
     return {
       fetching: Z,
       section: x,
-      rows: L
+      rows: w
     }
   }
 }
@@ -242,7 +242,7 @@ let V = new G(o.Z, {
     let {
       channelId: t
     } = e;
-    return w = null != t, M(), !w
+    return L = null != t, M(), !L
   },
   LOAD_RELATIONSHIPS_SUCCESS: function() {
     Z = !1

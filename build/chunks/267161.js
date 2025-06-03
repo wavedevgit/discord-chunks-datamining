@@ -33,8 +33,8 @@ var r = n(255367),
   A = n(451478),
   Z = n(768581),
   x = n(998502),
-  L = n(228488),
-  w = n(950796),
+  w = n(228488),
+  L = n(950796),
   R = n(981631),
   D = n(918559),
   k = n(741764),
@@ -154,7 +154,7 @@ let z = i.memo(function() {
     x.ZP.setMinimumSize(k.J, k.N)
   }, []);
   let l = (0, s.e7)([S.Z], () => S.Z.darkSidebar ? R.BRd.DARK : void 0),
-    a = (0, s.e7)([A.Z, v.Z], () => (0, L.rB)()),
+    a = (0, s.e7)([A.Z, v.Z], () => (0, w.rB)()),
     {
       notificationCenterVariant: o
     } = I.L.useExperiment({
@@ -163,7 +163,7 @@ let z = i.memo(function() {
   return a ? null : (0, r.jsx)(c.Wdt, {
     children: e => (0, r.jsx)(c.f6W, {
       theme: l,
-      children: i => (0, r.jsx)(w.T, {
+      children: i => (0, r.jsx)(L.T, {
         className: i,
         leading: t && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.P3F, B(V({}, e), {

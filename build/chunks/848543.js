@@ -82,10 +82,10 @@ function A(e) {
     Z = (0, m.Q3)("SoundBoardRTCPanelButton"),
     {
       mute: x,
-      suppress: L
+      suppress: w
     } = (0, _.Z)(t),
-    w = (0, o.e7)([E.Z], () => E.Z.isDeaf()),
-    R = x || L || w,
+    L = (0, o.e7)([E.Z], () => E.Z.isDeaf()),
+    R = x || w || L,
     [D, k] = i.useState(!1),
     M = t.getGuildId(),
     U = (0, y.sR)({
@@ -181,7 +181,7 @@ function A(e) {
     value: B,
     children: (0, r.jsx)(u.ua7, {
       targetElementRef: A,
-      text: x ? N.intl.string(N.t["Ox4/zc"]) : L ? N.intl.string(N.t["+YBKYG"]) : w ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),
+      text: x ? N.intl.string(N.t["Ox4/zc"]) : w ? N.intl.string(N.t["+YBKYG"]) : L ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),
       children: e => q(e)
     })
   })

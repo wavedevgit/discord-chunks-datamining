@@ -1,8 +1,8 @@
 /** Chunk was on 94784 **/
-n.d(t, {
+t.d(n, {
   Z: () => a
 });
-let r = (0, n(818083).B)({
+let r = (0, t(818083).B)({
     kind: "user",
     id: "2025-05_virtual_currency_onboarding_experience",
     label: "Virtual Currency Onboarding Experience",
@@ -17,4 +17,4 @@ let r = (0, n(818083).B)({
       }
     }]
   }),
-  a = 12633 == n.j ? r : null
+  a = 12633 == t.j ? r : null

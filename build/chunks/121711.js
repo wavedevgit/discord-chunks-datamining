@@ -32,8 +32,8 @@ var r = n(255367),
   A = n(833435),
   Z = n(918701),
   x = n(150560),
-  L = n(558652),
-  w = n(736683),
+  w = n(558652),
+  L = n(736683),
   R = n(879438),
   D = n(251360),
   k = n(466962),
@@ -91,7 +91,7 @@ let K = function() {
     scrollPosition: s
   } = (0, m.M)(), u = x.Z.getState().getUtmCurrentContext(), g = (0, A._)({
     location: U.dr.QUEST_HOME_DESKTOP
-  }) ? w.Z : w.j, j = (0, R.z)(e => e.registerAssetLoad), Z = i.useRef(u);
+  }) ? L.Z : L.j, j = (0, R.z)(e => e.registerAssetLoad), Z = i.useRef(u);
   i.useEffect(() => {
     Z.current = u
   }), i.useEffect(() => {
@@ -115,7 +115,7 @@ let K = function() {
   } = (0, S.WX)({
     location: U.dr.QUEST_HOME_DESKTOP
   }), z = W(), K = i.useCallback(() => {
-    if (z) return void window.open(T.Z.getArticleURL(G.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
+    if (z) return void window.open(G.EYA.PAID_TERMS_ORBS);
     window.open(T.Z.getArticleURL(G.BhN.QUESTS_LEARN_MORE))
   }, [z]);
   (0, f.Tt)({
@@ -195,7 +195,7 @@ let K = function() {
           }), (0, r.jsx)(E.Z, {
             children: e === P.e5.CLAIMED ? (0, r.jsx)(g, {
               onSelectTab: t
-            }) : (0, r.jsx)(L.Z, {})
+            }) : (0, r.jsx)(w.Z, {})
           })]
         })
       }) : (0, r.jsxs)(r.Fragment, {
@@ -240,7 +240,7 @@ let K = function() {
                 })
               }), e === P.e5.CLAIMED ? (0, r.jsx)(g, {
                 onSelectTab: t
-              }) : (0, r.jsx)(L.Z, {})]
+              }) : (0, r.jsx)(w.Z, {})]
             })]
           })
         })]
