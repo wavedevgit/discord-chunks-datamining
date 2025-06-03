@@ -69,7 +69,7 @@ function g(e) {
       className: f.body,
       children: [(0, r.jsx)(s.X6q, {
         className: f.text,
-        variant: "heading-sm/semibold",
+        variant: "heading-md/extrabold",
         children: i.title()
       }), (0, r.jsx)(s.Text, {
         className: f.text,

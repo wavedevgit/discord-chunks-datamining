@@ -2,6 +2,7 @@
 "use strict";
 e.exports = {
   container: "container_c7bb69",
+  headerContainer: "headerContainer_c7bb69",
   containerBottomPadding: "containerBottomPadding_c7bb69",
   tier0Background: "tier0Background_c7bb69",
   tier2Background: "tier2Background_c7bb69",
@@ -14,5 +15,7 @@ e.exports = {
   textContainer: "textContainer_c7bb69",
   headerTextWrapper: "headerTextWrapper_c7bb69",
   oneStepCheckoutTextWrapper: "oneStepCheckoutTextWrapper_c7bb69",
-  wordmark: "wordmark_c7bb69"
+  wordmark: "wordmark_c7bb69",
+  bodyGradientContainer: "bodyGradientContainer_c7bb69",
+  bodyGradient: "bodyGradient_c7bb69"
 }
