@@ -1,6 +1,6 @@
 /**
   Module ID: 78715
-  Original File Name: 9585e1a406c25009
+  Original File Name: 422713d6b523f410
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1470,6 +1470,11 @@
 .message_cb862a .emoji {
     height: 18px;
     width: 18px
+}
+
+.message_cb862a .obscured {
+    background-color: var(--__spoiler-background-color--revealed);
+    margin-right: 4px
 }
 
 .message_cb862a em,.message_cb862a h1,.message_cb862a h2,.message_cb862a h3,.message_cb862a h4,.message_cb862a h5,.message_cb862a h6,.message_cb862a span,.message_cb862a strong {
@@ -6377,4 +6382,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=9585e1a406c25009.css.map*/
+/*# sourceMappingURL=422713d6b523f410.css.map*/

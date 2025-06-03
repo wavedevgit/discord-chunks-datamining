@@ -302,7 +302,7 @@ class N extends i.PureComponent {
           "aria-expanded": c,
           tabIndex: c ? -1 : 0,
           role: c ? "presentation" : "button",
-          className: o()(n, m.spoilerContent, m.spoilerMarkdownContent, {
+          className: o()("obscured", n, m.spoilerContent, m.spoilerMarkdownContent, {
             [m.hidden]: !c
           }),
           children: (0, r.jsx)("span", {
