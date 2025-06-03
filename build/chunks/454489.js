@@ -1,8 +1,6 @@
 /** Chunk was on 72920 **/
 e.exports = {
-  header: "header__0907c",
   closeButton: "closeButton__0907c",
-  closeIcon: "closeIcon__0907c",
   selectorHeader: "selectorHeader__0907c",
   selectorText: "selectorText__0907c",
   selectorTextSelected: "selectorTextSelected__0907c",

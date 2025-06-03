@@ -147,7 +147,7 @@ class b extends n.EventEmitter {
   }
   constructor(e, t = "POST", r) {
     var n;
-    super(), g(this, "id", void 0), g(this, "_file", void 0), g(this, "_aborted", !1), g(this, "_errored", !1), g(this, "_url", void 0), g(this, "_token", ""), g(this, "_method", void 0), g(this, "_raiseEndpointErrors", !1), g(this, "processingMessageChangeInterval", void 0), g(this, "files", []), g(this, "_lastUpdate", 0), g(this, "_loaded", 0), g(this, "alreadyStarted", !1), g(this, "_cancel", void 0), g(this, "_handleStart", e => {
+    super(), g(this, "id", void 0), g(this, "_file", void 0), g(this, "_aborted", !1), g(this, "_errored", !1), g(this, "_url", void 0), g(this, "_method", void 0), g(this, "_raiseEndpointErrors", !1), g(this, "processingMessageChangeInterval", void 0), g(this, "files", []), g(this, "_lastUpdate", 0), g(this, "_loaded", 0), g(this, "alreadyStarted", !1), g(this, "_cancel", void 0), g(this, "_handleStart", e => {
       this._cancel = e, this.alreadyStarted || this.emit("start", this._file), this.alreadyStarted = !0
     }), g(this, "_handleProgress", (e, t, r) => {
       let n = Date.now(),

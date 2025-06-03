@@ -1,11 +1,7 @@
 /**
   Module ID: 72920
-  Original File Name: d6de4d8a1a4c3bf5
+  Original File Name: 37168304215df833
 **/
-.header__0907c {
-    justify-content: space-between
-}
-
 .closeButton__0907c:hover {
     cursor: pointer
 }
@@ -32,10 +28,27 @@
 }
 
 .selectorButton__0907c {
-    background: var(--background-secondary);
     flex: 1 1 auto;
     min-width: 36px;
     padding: 6px 0
+}
+
+.selectorButton__0907c:first-child {
+    border-bottom-left-radius: var(--radius-sm);
+    border-top-left-radius: var(--radius-sm)
+}
+
+.selectorButton__0907c:last-child {
+    border-bottom-right-radius: var(--radius-sm);
+    border-top-right-radius: var(--radius-sm)
+}
+
+.theme-light .selectorButton__0907c {
+    border-color: var(--border-subtle)
+}
+
+.theme-dark .selectorButton__0907c {
+    border-color: var(--border-subtle)
 }
 
 .selectorButtonSelected__0907c {
@@ -48,7 +61,11 @@
 }
 
 .contentContainer__0907c {
-    padding-bottom: 20px
+    padding-bottom: var(--space-16)
 }
 
-/*# sourceMappingURL=d6de4d8a1a4c3bf5.css.map*/
+.closeButton__0907c {
+    justify-content: flex-end
+}
+
+/*# sourceMappingURL=37168304215df833.css.map*/
