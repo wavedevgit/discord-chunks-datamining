@@ -23,11 +23,11 @@ var r = n(255367),
   R = n(978227),
   A = n(236373),
   P = n(854698),
-  f = n(405613),
-  C = n(95291),
+  C = n(405613),
+  f = n(95291),
   D = n(742593),
-  m = n(217804),
-  h = n(139712),
+  h = n(217804),
+  m = n(139712),
   y = n(765305),
   g = n(388032),
   U = n(690606);
@@ -58,7 +58,7 @@ let b = (e, t) => n => {
     } = e, _ = (0, a.e7)([T.Z], () => {
       var e;
       return null == n ? null : null != (e = T.Z.getGuild(n.id)) ? e : new I.ZP(n)
-    }, [n]), O = (0, m.u)(l, o), N = i.useCallback(e => {
+    }, [n]), O = (0, h.u)(l, o), N = i.useCallback(e => {
       u && null != l && (e.stopPropagation(), (0, c.Bk)(l))
     }, [u, l]), S = i.useCallback(e => {
       k(l)(e)
@@ -147,7 +147,7 @@ let b = (e, t) => n => {
       color: s.zxk.Colors.PRIMARY,
       look: _ ? s.zxk.Looks.OUTLINED : s.zxk.Looks.FILLED,
       onClick: e => {
-        e.stopPropagation(), (0, h.Z)(n, i, t)
+        e.stopPropagation(), (0, m.Z)(n, i, t)
       },
       children: [_ ? (0, r.jsx)(s.dz2, {
         size: "xs",
@@ -183,8 +183,8 @@ let b = (e, t) => n => {
       })
     }, [c, n, I]);
     if (null == n || !O) return null;
-    let m = (0, S.xt)(n),
-      h = (0, S.Z2)(n),
+    let h = (0, S.xt)(n),
+      m = (0, S.Z2)(n),
       g = n.entity_type === y.WX.EXTERNAL;
     return (0, r.jsx)(d.Z, {
       className: o()({
@@ -192,8 +192,8 @@ let b = (e, t) => n => {
       }),
       children: (0, r.jsxs)(s.P3F, {
         onClick: p,
-        children: [null != n.image && (0, r.jsx)(C.Z, {
-          source: (0, f.Z)(n),
+        children: [null != n.image && (0, r.jsx)(f.Z, {
+          source: (0, C.Z)(n),
           className: U.banner
         }), (0, r.jsx)(D.ZP, {
           name: n.name,
@@ -212,8 +212,8 @@ let b = (e, t) => n => {
             guildScheduledEvent: n,
             isMember: c
           }), (0, r.jsx)(v, {
-            isActive: m,
-            isEnded: h,
+            isActive: h,
+            isEnded: m,
             isMember: c,
             guildId: n.guild_id,
             guildScheduledEventId: n.id,

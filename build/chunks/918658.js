@@ -23,11 +23,11 @@ var r = n(255367),
   R = n(358085),
   A = n(962086),
   P = n(160404),
-  f = n(889695),
-  C = n(981631),
+  C = n(889695),
+  f = n(981631),
   D = n(176505),
-  m = n(302463),
-  h = n(293810),
+  h = n(302463),
+  m = n(293810),
   y = n(388032),
   g = n(800515);
 
@@ -78,23 +78,23 @@ function M() {
   if (null == l || null == t) return null;
   let k = function(e) {
       switch (e) {
-        case C.pNK.INTEGRATIONS:
+        case f.pNK.INTEGRATIONS:
           return y.intl.string(y.t.k7LGdn);
-        case C.pNK.ROLE_SUBSCRIPTIONS:
+        case f.pNK.ROLE_SUBSCRIPTIONS:
           return y.intl.string(y.t.bRqiqa);
-        case C.pNK.ONBOARDING:
+        case f.pNK.ONBOARDING:
           return y.intl.string(y.t.qZpU3d);
         default:
           return y.intl.string(y.t.MTIXho)
       }
     }(o),
-    Z = o === C.pNK.ROLE_SUBSCRIPTIONS ? y.intl.string(y.t.hZUCzc) : y.intl.string(y.t["/djIh4"]),
+    Z = o === f.pNK.ROLE_SUBSCRIPTIONS ? y.intl.string(y.t.hZUCzc) : y.intl.string(y.t["/djIh4"]),
     j = n === D.oC.GUILD_ONBOARDING,
     v = e => {
       let {
         backToSettings: n
       } = e;
-      null != t && (P.Z.isFullServerPreview(t) && (0, O.uL)(C.Z5c.CHANNEL(t)), E.ZP.shouldShowOnboarding(t) && (u.Z.finishOnboarding(t), (0, d.EI)(t)), (0, A.mL)(t), n && I.Z.open(t, o), o === C.pNK.ROLE_SUBSCRIPTIONS && (0, _.GN)(t))
+      null != t && (P.Z.isFullServerPreview(t) && (0, O.uL)(f.Z5c.CHANNEL(t)), E.ZP.shouldShowOnboarding(t) && (u.Z.finishOnboarding(t), (0, d.EI)(t)), (0, A.mL)(t), n && I.Z.open(t, o), o === f.pNK.ROLE_SUBSCRIPTIONS && (0, _.GN)(t))
     };
   return (0, r.jsxs)(c.qXd, {
     color: c.DM8.BRAND,
@@ -128,7 +128,7 @@ function M() {
       }), (0, r.jsx)(c.yRy, {
         targetElementRef: e,
         position: "bottom",
-        renderPopout: () => (0, r.jsx)(f.Z, {
+        renderPopout: () => (0, r.jsx)(C.Z, {
           guildId: t
         }),
         children: t => {
@@ -156,15 +156,15 @@ function M() {
       }), M && (0, r.jsx)(c.DY3, {
         className: g.previewWarning,
         text: y.intl.formatToPlainString(y.t.eummvb, {
-          maxTiers: h.fF,
-          maxProducts: m.dD
+          maxTiers: m.fF,
+          maxProducts: h.dD
         }),
         children: (0, r.jsx)(c.P4T, {
           size: "xs",
           color: s.Z.unsafe_rawColors.YELLOW_300.css
         })
       })]
-    }), R || o === C.pNK.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(b, {
+    }), R || o === f.pNK.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(b, {
       onClick: () => v({
         backToSettings: !1
       })

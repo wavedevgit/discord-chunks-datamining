@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 41f6e5df0e043669
+  Original File Name: 8d0d58fce1ff3824
 **/
 .scroller__95bea {
     display: flex;
@@ -919,9 +919,7 @@
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
-    -webkit-mask-image: linear-gradient(180deg,#000 0,#000 32px,transparent 92px);
-    mask-image: linear-gradient(180deg,#000 0,#000 32px,transparent 92px);
-    max-width: 372px;
+    max-width: 324px;
     padding: 8px 0
 }
 
@@ -1348,4 +1346,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=41f6e5df0e043669.css.map*/
+/*# sourceMappingURL=8d0d58fce1ff3824.css.map*/

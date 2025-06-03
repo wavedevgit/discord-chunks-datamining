@@ -158,6 +158,8 @@ class v extends i.Z {
     }
     null !== t && ((0, o.EW)(r.z.VOICE_FILTER_IN_CALL_COACHMARK, {
       dismissAction: m.L.INDIRECT_ACTION
+    }), (0, o.EW)(r.z.VOICE_FILTER_FIRST_USE_COACHMARK, {
+      dismissAction: m.L.INDIRECT_ACTION
     }), l.default.track(h.rMx.VOICE_FILTER_ENABLED, y(E({
       active_voice_filter_id: t,
       previous_filter_id: a

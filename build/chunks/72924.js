@@ -24,15 +24,15 @@ async function S(e) {
     applicationId: R,
     skuId: A,
     initialPlanId: P,
-    analyticsLocations: f,
-    analyticsLocationObject: C
+    analyticsLocations: C,
+    analyticsLocationObject: f
   } = e, D = T.Z.get(A);
   if (null == D) {
     let e = (await (0, a.oJ)(R)).find(e => e.sku.id === A);
     l()(null != e, "Could not find store listing for sku"), e.sku.type === N.epS.SUBSCRIPTION_GROUP && await (0, I.rx)(R, e.id)
   }
   D = null != D ? D : T.Z.get(A), l()(null != D && D.applicationId === R, "SKU must belong to application"), D.type !== N.epS.SUBSCRIPTION || (0, u.a)([D.id]) || await (0, s.GZ)(D.id);
-  let m = function(e) {
+  let h = function(e) {
     let t = (0, c.jA)({
         applicationId: e
       }),
@@ -43,9 +43,9 @@ async function S(e) {
     (0, d.Z)({
       applicationId: R,
       skuId: A,
-      analyticsLocationObject: C,
-      analyticsLocations: f,
-      contextKey: m,
+      analyticsLocationObject: f,
+      analyticsLocations: C,
+      contextKey: h,
       onComplete: t => {
         var n;
         e(null != (n = null == t ? void 0 : t.entitlements) ? n : [])
@@ -55,7 +55,7 @@ async function S(e) {
       }
     })
   });
-  await (t = R, n = A, i = P, S = C, p = f, (0, E.m)({
+  await (t = R, n = A, i = P, S = f, p = C, (0, E.m)({
     applicationId: t,
     skuId: n,
     initialPlanId: i,

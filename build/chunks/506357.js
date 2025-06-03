@@ -25,16 +25,16 @@ function A(e) {
   var t, A;
   let {
     onDismiss: P
-  } = e, f = (0, l.e7)([d.Z], () => d.Z.getGuildId()), C = (0, l.e7)([E.Z], () => null != f ? E.Z.getChannelId(f) : null, [f]), D = null != f ? f : null, m = (0, l.e7)([u.Z], () => null != D ? u.Z.getGuild(D) : null, [D]), {
-    shouldShowIncidentActions: h,
+  } = e, C = (0, l.e7)([d.Z], () => d.Z.getGuildId()), f = (0, l.e7)([E.Z], () => null != C ? E.Z.getChannelId(C) : null, [C]), D = null != C ? C : null, h = (0, l.e7)([u.Z], () => null != D ? u.Z.getGuild(D) : null, [D]), {
+    shouldShowIncidentActions: m,
     incidentData: y,
     isUnderLockdown: g
-  } = (0, I.mI)(D), U = (0, s.n2)(null != (t = null == m ? void 0 : m.id) ? t : N.lds), b = i.useCallback(() => null != m && (0, c._X)(m.id), [m]);
-  if (null == m || null == y || !h) return null;
+  } = (0, I.mI)(D), U = (0, s.n2)(null != (t = null == h ? void 0 : h.id) ? t : N.lds), b = i.useCallback(() => null != h && (0, c._X)(h.id), [h]);
+  if (null == h || null == y || !m) return null;
   let M = e => {
-      if (e && U && C !== S.oC.MEMBER_SAFETY && b()) return void _.default.track(N.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
+      if (e && U && f !== S.oC.MEMBER_SAFETY && b()) return void _.default.track(N.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: N.kVF.GUILD_RAID_NOTIFICATION,
-        guild_id: m.id
+        guild_id: h.id
       });
       (0, o.ZDy)(async () => {
         let e = {
@@ -64,7 +64,7 @@ function A(e) {
             }
             return e
           }({}, n), l = l = {
-            guildId: m.id,
+            guildId: h.id,
             analyticsData: e
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -81,10 +81,10 @@ function A(e) {
     },
     k = (0, r.jsx)(a.Z, {
       className: R.guildIcon,
-      guild: m,
+      guild: h,
       size: a.Z.Sizes.MINI
     }),
-    Z = (0, T.OY)(y, m.name);
+    Z = (0, T.OY)(y, h.name);
   if (null != (null != (A = y.dmsDisabledUntil) ? A : y.invitesDisabledUntil) && g) return (0, r.jsxs)(o.qXd, {
     className: R.notice,
     color: o.DM8.NEUTRAL,
@@ -106,13 +106,13 @@ function A(e) {
     })]
   });
   let j = (0, T.CG)(y) ? p.intl.formatToPlainString(p.t.tZTx2N, {
-      guildName: m.name
+      guildName: h.name
     }) : (0, T.kk)(y) ? p.intl.formatToPlainString(p.t["1bSmxs"], {
-      guildName: m.name
+      guildName: h.name
     }) : p.intl.formatToPlainString(p.t.W87xDA, {
-      guildName: m.name
+      guildName: h.name
     }),
-    v = U && C === S.oC.MEMBER_SAFETY;
+    v = U && f === S.oC.MEMBER_SAFETY;
   return (0, r.jsxs)(o.qXd, {
     className: R.notice,
     color: o.DM8.WARNING,

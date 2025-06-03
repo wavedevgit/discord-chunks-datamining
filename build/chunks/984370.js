@@ -24,11 +24,11 @@ var i = n(120356),
   R = n(975146),
   A = n(979651),
   P = n(358085),
-  f = n(998502),
-  C = n(665149),
+  C = n(998502),
+  f = n(665149),
   D = n(300986),
-  m = n(314451),
-  h = n(35583),
+  h = n(314451),
+  m = n(35583),
   y = n(981631),
   g = n(176505),
   U = n(220705);
@@ -68,7 +68,7 @@ async function k() {
   if ((0, P.isMac)() && P.isPlatformEmbedded) {
     var e, t, n;
     let r = null != (n = await (null == (e = (t = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) ? void 0 : e.call(t))) ? n : "Maximize";
-    "Minimize" === r ? f.ZP.minimize() : "Maximize" === r && f.ZP.maximize()
+    "Minimize" === r ? C.ZP.minimize() : "Maximize" === r && C.ZP.maximize()
   }
 }
 
@@ -81,7 +81,7 @@ function Z(e) {
     guildId: c,
     innerClassname: u,
     transparent: P = !1,
-    toolbar: f,
+    toolbar: C,
     mobileToolbar: b,
     "aria-label": M,
     "aria-labelledby": Z,
@@ -105,20 +105,20 @@ function Z(e) {
   } = (0, _.Z)({
     location: "HeaderBar"
   }), Y = (0, O.Q3)("HeaderBar");
-  return (0, r.jsx)(C.ZP, {
+  return (0, r.jsx)(f.ZP, {
     className: n,
     innerClassName: u,
     toolbar: function() {
-      if (null == f) return null;
+      if (null == C) return null;
       let e = null != i && !L;
       return o.tq ? b : (0, r.jsxs)(r.Fragment, {
-        children: [f, e ? (0, r.jsx)(p.Z, {
+        children: [C, e ? (0, r.jsx)(p.Z, {
           className: U.search
-        }, null != c ? c : i) : null, F && (0, r.jsx)(C.ZP.Divider, {}), !Y && (0, r.jsx)(h.Z, {}), !Y && (0, r.jsx)(I.Z, {
+        }, null != c ? c : i) : null, F && (0, r.jsx)(f.ZP.Divider, {}), !Y && (0, r.jsx)(m.Z, {}), !Y && (0, r.jsx)(I.Z, {
           canShowReminder: !0
-        }), !Y && (0, r.jsx)(T.Z, {}), B && !z ? (0, r.jsx)(S.Z, {}) : null, !Y && (w ? (0, r.jsx)(m.Z, {}) : (0, r.jsx)(D.Z, {})), W && V && null != x && !G && l === y.d4z.GROUP_DM && (0, r.jsxs)("div", {
+        }), !Y && (0, r.jsx)(T.Z, {}), B && !z ? (0, r.jsx)(S.Z, {}) : null, !Y && (w ? (0, r.jsx)(h.Z, {}) : (0, r.jsx)(D.Z, {})), W && V && null != x && !G && l === y.d4z.GROUP_DM && (0, r.jsxs)("div", {
           className: U.controlButtonWrapper,
-          children: [(0, r.jsx)(C.ZP.Divider, {}), (0, r.jsx)(R.Z, {
+          children: [(0, r.jsx)(f.ZP.Divider, {}), (0, r.jsx)(R.Z, {
             onClick: () => s.Z.toggleParticipantsList(x, !G)
           })]
         })]
@@ -142,7 +142,7 @@ function j(e) {
     "aria-labelledby": l,
     role: o
   } = e;
-  return (0, r.jsx)(C.ZP, {
+  return (0, r.jsx)(f.ZP, {
     className: n,
     onDoubleClick: k,
     "aria-label": i,
@@ -184,5 +184,5 @@ function v(e) {
     }))
   })
 }
-v.Title = C.ZP.Title, v.Icon = C.ZP.Icon, v.Divider = C.ZP.Divider, v.Caret = C.ZP.Caret;
+v.Title = f.ZP.Title, v.Icon = f.ZP.Icon, v.Divider = f.ZP.Divider, v.Caret = f.ZP.Caret;
 let L = v

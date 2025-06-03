@@ -44,18 +44,18 @@ let P = 12633 == n.j ? () => {
   var e, t;
   let i = (0, a.e7)([u.Z], () => u.Z.getGuildId(), []),
     P = (0, a.e7)([c.Z], () => c.Z.getGuild(i), [i]),
-    f = (0, a.e7)([O.Z], () => null != i ? O.Z.getRequest(i) : null, [i]),
-    C = (0, o.TH)(),
-    D = (null == (e = (0, o.LX)(C.pathname, T.Z5c.CHANNEL(null == P ? void 0 : P.id, N.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
+    C = (0, a.e7)([O.Z], () => null != i ? O.Z.getRequest(i) : null, [i]),
+    f = (0, o.TH)(),
+    D = (null == (e = (0, o.LX)(f.pathname, T.Z5c.CHANNEL(null == P ? void 0 : P.id, N.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
   if (null == P || !(0, I.Dc)(P) || D) return null;
-  let m = null != (t = null == f ? void 0 : f.applicationStatus) ? t : _.wB.STARTED,
-    h = null,
+  let h = null != (t = null == C ? void 0 : C.applicationStatus) ? t : _.wB.STARTED,
+    m = null,
     y = null,
     g = null,
     U = [p.notice, R.notice];
-  switch (m) {
+  switch (h) {
     case _.wB.SUBMITTED:
-      h = S.intl.string(S.t["5iLvS0"]), y = S.intl.string(S.t.mqtdmZ), g = () => {
+      m = S.intl.string(S.t["5iLvS0"]), y = S.intl.string(S.t.mqtdmZ), g = () => {
         (0, s.h7j)(e => {
           var t, n;
           return (0, r.jsx)(s.ConfirmModal, (t = A({
@@ -83,7 +83,7 @@ let P = 12633 == n.j ? () => {
       };
       break;
     case _.wB.REJECTED:
-      h = S.intl.string(S.t.lk30cX), y = S.intl.string(S.t["8RrsHh"]), g = () => {
+      m = S.intl.string(S.t.lk30cX), y = S.intl.string(S.t["8RrsHh"]), g = () => {
         (0, s.ZDy)(async () => {
           let {
             default: e
@@ -95,7 +95,7 @@ let P = 12633 == n.j ? () => {
       }, U.push(p.error);
       break;
     default:
-      h = S.intl.string(S.t.G5YKXF), y = S.intl.string(S.t["r8/DT0"]), g = () => {
+      m = S.intl.string(S.t.G5YKXF), y = S.intl.string(S.t["r8/DT0"]), g = () => {
         (0, d.hk)(P.id)
       }
   }
@@ -104,7 +104,7 @@ let P = 12633 == n.j ? () => {
     children: [(0, r.jsx)(s.Text, {
       className: p.header,
       variant: "text-sm/normal",
-      children: h
+      children: m
     }), (0, r.jsx)(s.zxk, {
       className: p.button,
       look: s.zxk.Looks.OUTLINED,

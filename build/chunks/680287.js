@@ -57,7 +57,7 @@ class d extends l.Z {
         }
       }
     }
-    return this.files
+    return this._handleComplete(), this.files
   }
   async uploadFiles(e, t) {
     let {

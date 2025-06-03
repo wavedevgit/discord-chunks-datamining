@@ -59,8 +59,8 @@ function p(e) {
   } = (0, c.KZ)(), [{
     section: j,
     subsection: g,
-    text: I
-  }, v] = r.useState((n = function(e) {
+    text: v
+  }, I] = r.useState((n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         o = Object.keys(n);
@@ -104,7 +104,7 @@ function p(e) {
         h({
           action: "PRESS_SECTION",
           section: e
-        }), v(t => {
+        }), I(t => {
           var n;
           return null != (n = b.find(t => t.section === e)) ? n : t
         })
@@ -121,7 +121,7 @@ function p(e) {
       }, e.section))
     }), (0, o.jsx)(i.njP.Panel, {
       id: j,
-      "aria-label": I,
+      "aria-label": v,
       className: u.tabBarPanel,
       children: (0, o.jsx)(f, {
         user: a,

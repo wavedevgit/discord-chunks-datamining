@@ -1,6 +1,6 @@
 /** Chunk was on 90202 **/
 n.d(t, {
-  c: () => m
+  c: () => h
 });
 var r = n(255367),
   i = n(73800),
@@ -22,20 +22,20 @@ var r = n(255367),
   R = n(243778),
   A = n(921944),
   P = n(981631),
-  f = n(474936),
-  C = n(388032),
+  C = n(474936),
+  f = n(388032),
   D = n(134772);
-let m = e => {
+let h = e => {
   let {
     dismissibleContent: t
-  } = e, n = (0, O.a0)(), m = (0, o.e7)([N.default], () => p.ZP.isPremiumExactly(N.default.getCurrentUser(), f.p9.TIER_2)), {
-    enabled: h,
+  } = e, n = (0, O.a0)(), h = (0, o.e7)([N.default], () => p.ZP.isPremiumExactly(N.default.getCurrentUser(), C.p9.TIER_2)), {
+    enabled: m,
     getNitroCTA: y
   } = I.g.useExperiment({
     location: "OutboundPromotionNotice"
   }, {
     autoTrackExposure: !1,
-    disable: m
+    disable: h
   }), {
     enabled: g
   } = _.ru.useExperiment({
@@ -49,7 +49,7 @@ let m = e => {
   } = (0, E.ZP)(), M = i.useCallback(() => {
     var e, t;
     (0, d.Z)({
-      subscriptionTier: p.ZP.getSkuIdForPremiumType(f.p9.TIER_2),
+      subscriptionTier: p.ZP.getSkuIdForPremiumType(C.p9.TIER_2),
       analyticsLocations: b,
       analyticsObject: (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -99,18 +99,18 @@ let m = e => {
       size: "md",
       color: "currentColor",
       className: D.premiumIcon
-    }), h ? y ? (0, r.jsxs)(l.xv, {
+    }), m ? y ? (0, r.jsxs)(l.xv, {
       variant: "text-sm/normal",
       className: D.text,
-      children: [C.intl.string(C.t["5JMiOj"]), " ", C.intl.format(C.t.fjSvsL, {
+      children: [f.intl.string(f.t["5JMiOj"]), " ", f.intl.format(f.t.fjSvsL, {
         onClick: k
       })]
-    }) : C.intl.string(C.t["5JMiOj"]) : C.intl.string(C.t["Pzh+Gx"]), (0, r.jsx)(s.NoS, {
+    }) : f.intl.string(f.t["5JMiOj"]) : f.intl.string(f.t["Pzh+Gx"]), (0, r.jsx)(s.NoS, {
       noticeType: P.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
         Z(), null !== e && e(A.L.TAKE_ACTION)
       },
-      children: y ? C.intl.string(C.t.pj0XBA) : C.intl.string(C.t.jVcuVV)
+      children: y ? f.intl.string(f.t.pj0XBA) : f.intl.string(f.t.jVcuVV)
     })]
   });
   return g ? (0, r.jsx)(R.O1, {

@@ -1,14 +1,14 @@
 /** Chunk was on 90202 **/
 n.d(t, {
-  DT: () => f,
-  Ef: () => h,
-  HO: () => m,
+  DT: () => C,
+  Ef: () => m,
+  HO: () => h,
   NZ: () => y,
   Pq: () => D,
   Q1: () => p,
   RK: () => A,
   _0: () => R,
-  hz: () => C,
+  hz: () => f,
   yi: () => P
 });
 var r = n(512722),
@@ -104,7 +104,7 @@ function P(e) {
   })
 }
 
-function f(e, t, n) {
+function C(e, t, n) {
   let r = e.getGuildId();
   return i()(null != r, "This channel cannot be guildless."), o.tn.patch({
     url: N.ANM.UPDATE_VOICE_STATE(r, t),
@@ -116,10 +116,10 @@ function f(e, t, n) {
   })
 }
 
-function C(e, t) {
+function f(e, t) {
   if (null == t || null == e) return;
   let n = t.getGuildId();
-  return i()(null != n, "This channel cannot be guildless."), f(t, e.id, !0), o.tn.patch({
+  return i()(null != n, "This channel cannot be guildless."), C(t, e.id, !0), o.tn.patch({
     url: N.ANM.UPDATE_VOICE_STATE(n, e.id),
     body: {
       suppress: !0,
@@ -143,13 +143,13 @@ function D(e, t, n) {
     }, o);
   n ? (c.allow = l.IH(c.allow, t), c.deny = l.Od(c.deny, t)) : (c.allow = l.Od(c.allow, t), c.deny = l.IH(c.deny, t)), a.Z.updatePermissionOverwrite(e.id, c)
 }
-async function m(e, t, n, r) {
+async function h(e, t, n, r) {
   if ("" === t) return;
   u.Z.getVoiceChannelId() !== e.id && (0, _.TM)(e);
   let i = await (0, O.me)(e.id, t, n, r);
   return A(e, !1, !0), i
 }
-async function h(e, t, n) {
+async function m(e, t, n) {
   if ("" !== t) return await (0, O.Dk)(e.id, t, n)
 }
 async function y(e) {
