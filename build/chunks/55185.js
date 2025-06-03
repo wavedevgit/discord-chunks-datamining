@@ -146,7 +146,7 @@ function S(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     closePopout: t
   } = e;
@@ -165,7 +165,7 @@ function E(e) {
   })
 }
 
-function x(e) {
+function E(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
@@ -271,11 +271,11 @@ function Z(e) {
         closePopout: n
       });
     case 1:
-      return (0, i.jsx)(E, {
+      return (0, i.jsx)(x, {
         closePopout: n
       });
     case 2:
-      return (0, i.jsx)(x, {
+      return (0, i.jsx)(E, {
         closePopout: n
       });
     case 3:

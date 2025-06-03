@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(739340),
   j = n(207913),
   S = n(553984),
-  E = n(333834),
-  x = n(982183),
+  x = n(333834),
+  E = n(982183),
   P = n(981631),
   I = n(388032),
   w = n(21678);
@@ -38,7 +38,7 @@ let N = {
   bannerVisible: !1,
   communityInfoVisible: !1,
   shouldShowSubscribeTooltip: !1,
-  bannerVisibleHeight: x.$J,
+  bannerVisibleHeight: E.$J,
   hasGuildSubheader: !1,
   disableBannerAnimation: !0
 };
@@ -60,7 +60,7 @@ function Z(e) {
     guildFilter: g.Z.guildFilter,
     roleFilter: g.Z.roleFilter,
     everyoneFilter: g.Z.everyoneFilter
-  })), [_, j] = i.useState(x.V5.ALL), [I, Z] = i.useState(x.xM.UNREAD), {
+  })), [_, j] = i.useState(E.V5.ALL), [I, Z] = i.useState(E.xM.UNREAD), {
     messages: M,
     loadState: k,
     loadMore: U,
@@ -74,21 +74,21 @@ function Z(e) {
     H = i.useMemo(() => {
       var e;
       if (!G) return null;
-      if (_ === x.V5.BOOKMARKS) return V.flatMap(e => {
+      if (_ === E.V5.BOOKMARKS) return V.flatMap(e => {
         let {
           message: t
         } = e;
         return null != t ? [{
-          kind: x.fL.BOOKMARK,
+          kind: E.fL.BOOKMARK,
           message: t
         }] : []
       });
       let t = (0, s.uniqBy)([...null != (e = null == a ? void 0 : a.map(e => ({
-        kind: x.fL.MENTION,
+        kind: E.fL.MENTION,
         message: e
       }))) ? e : [], ...M.filter(e => e.author.id !== (null == B ? void 0 : B.id)).map(e => ({
         message: e,
-        kind: x.fL.ALL_MESSAGES_CHANNEL
+        kind: E.fL.ALL_MESSAGES_CHANNEL
       }))], e => {
         let {
           message: t
@@ -98,16 +98,16 @@ function Z(e) {
         let {
           message: t
         } = e;
-        return t.author.id !== (null == B ? void 0 : B.id) && O.default.age(t.id) < x.ib
+        return t.author.id !== (null == B ? void 0 : B.id) && O.default.age(t.id) < E.ib
       });
-      if (_ === x.V5.ALL) return t;
-      if (_ === x.V5.ANNOUNCEMENTS) return null == t ? void 0 : t.filter(e => {
+      if (_ === E.V5.ALL) return t;
+      if (_ === E.V5.ANNOUNCEMENTS) return null == t ? void 0 : t.filter(e => {
         let {
           message: t
         } = e, n = b.Z.getChannel(t.channel_id);
         return (null == n ? void 0 : n.type) === P.d4z.GUILD_ANNOUNCEMENT
       });
-      if (_ === x.V5.MENTIONS) return null == t ? void 0 : t.filter(e => {
+      if (_ === E.V5.MENTIONS) return null == t ? void 0 : t.filter(e => {
         let {
           message: t
         } = e;
@@ -115,7 +115,7 @@ function Z(e) {
       });
       throw Error("Unknown filter: ".concat(_))
     }, [_, a, B, V, M, G]),
-    F = I === x.xM.READ && _ === x.V5.ALL,
+    F = I === E.xM.READ && _ === E.V5.ALL,
     {
       notificationCenterVariant: z
     } = v.L.useExperiment({
@@ -144,7 +144,7 @@ function Z(e) {
       return e
     }({
       hasSubheader: !0,
-      guild: x.F7
+      guild: E.F7
     }, N), n = n = {
       children: (0, r.jsxs)(u.Kqy, {
         direction: "horizontal",
@@ -167,7 +167,7 @@ function Z(e) {
     }), t)), "popout" === z && (0, r.jsx)(S.Z, {
       selectedFilter: _,
       setSelectedFilter: j
-    }), F && (0, r.jsx)(D, {}), (0, r.jsx)(E.Z, {
+    }), F && (0, r.jsx)(D, {}), (0, r.jsx)(x.Z, {
       className: w.messageList,
       renderMessageGroup: R,
       messages: H,
@@ -180,7 +180,7 @@ function Z(e) {
       },
       renderEmptyState: A,
       setInboxReadState: Z,
-      ignoreGrouping: _ !== x.V5.ALL
+      ignoreGrouping: _ !== E.V5.ALL
     })]
   })
 }

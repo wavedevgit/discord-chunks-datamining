@@ -25,8 +25,8 @@ var r = n(255367),
   C = n(936847),
   j = n(512384),
   S = n(33316),
-  E = n(576645),
-  x = n(210975),
+  x = n(576645),
+  E = n(210975),
   P = n(695346),
   I = n(937995),
   w = n(456631),
@@ -114,8 +114,8 @@ let el = [X.fO.ACTIVITY],
       blocked: eC = !1,
       ignored: ej = !1,
       fit: eS = _.L.CONTAIN,
-      paused: eE = !1,
-      pulseSpeakingIndicator: ex = !1,
+      paused: ex = !1,
+      pulseSpeakingIndicator: eE = !1,
       forceIdle: eP = !1,
       inOverlayPopout: eI = !1
     } = e, ew = i.useContext(I.h9) || eP, [eN, eZ] = i.useState(!1), eT = P.Sb.useSetting(), eA = (0, s.e7)([T.default], () => T.default.isStreamInfoOverlayEnabled), [eR, eD] = i.useState(!1), eL = (0, s.e7)([Z.default], () => Z.default.getId()), eM = (0, s.e7)([L.default], () => L.default.getCurrentUser()), ek = U.type === X.fO.ACTIVITY ? null : null == (t = U.user) ? void 0 : t.id, [eU] = (0, f.Z)(U.type === X.fO.ACTIVITY ? [U.applicationId] : []), eG = (0, s.e7)([O.Z], () => O.Z.getEnabled()), eB = (0, s.e7)([R.Z], () => null != ek && R.Z.isLocalVideoDisabled(ek, (0, g.Z)(U.type)), [ek, U.type]), eV = (0, s.e7)([R.Z], () => null != ek ? R.Z.getVideoToggleState(ek, (0, g.Z)(U.type)) : Q.ZUi.NONE, [ek, U.type]), eH = eV === Q.ZUi.AUTO_PROBING, {
@@ -177,11 +177,11 @@ let el = [X.fO.ACTIVITY],
       e$ = (0, s.e7)([D.Z], () => eJ && null != ek ? D.Z.findActivity(ek, e => null != e.application_id && e.type === Q.IIU.PLAYING) : null, [eJ, ek]),
       e0 = (0, s.e7)([A.Z], () => (null == e$ ? void 0 : e$.application_id) != null ? A.Z.getDetectableGame(e$.application_id) : null),
       e1 = (0, s.e7)([p.Z], () => null != e0 && (null == e$ ? void 0 : e$.application_id) != null ? p.Z.getApplication(null == e$ ? void 0 : e$.application_id) : void 0),
-      e3 = (0, x.wV)({
+      e3 = (0, E.wV)({
         userId: ek,
         channelId: ep.id
       }),
-      e4 = (0, x.zU)({
+      e4 = (0, E.zU)({
         streamKey: U.type === X.fO.STREAM ? U.id : null,
         channelId: ep.id
       }),
@@ -192,7 +192,7 @@ let el = [X.fO.ACTIVITY],
     let [e5, e8] = i.useState(!1), e7 = i.useCallback(() => {
       h.Z.useReducedMotion || e8(!0)
     }, []);
-    (0, E.J)(ep, e7);
+    (0, x.J)(ep, e7);
     let e2 = i.useCallback(() => {
         null != ek && u.Z.toggleLocalMute(ek, ee.Yn.STREAM)
       }, [ek]),
@@ -216,7 +216,7 @@ let el = [X.fO.ACTIVITY],
           width: ef,
           fit: eS,
           onVideoResize: em,
-          paused: eE,
+          paused: ex,
           inPopout: eg,
           focused: e_,
           inOverlayPopout: eI
@@ -238,13 +238,13 @@ let el = [X.fO.ACTIVITY],
           participant: U,
           fit: eS,
           onVideoResize: em,
-          paused: eE,
+          paused: ex,
           selected: ey,
           width: ef,
           blocked: eC,
           ignored: ej,
           noVideoRender: ev || eH,
-          pulseSpeakingIndicator: ex,
+          pulseSpeakingIndicator: eE,
           inOverlayPopout: eI
         }), tr = (0, r.jsx)(Y.T, {
           participant: U,
@@ -271,7 +271,7 @@ let el = [X.fO.ACTIVITY],
           width: ef,
           fit: eS,
           onVideoResize: em,
-          paused: eE,
+          paused: ex,
           inPopout: eg,
           focused: e_,
           inOverlayPopout: eI
@@ -489,8 +489,8 @@ let ec = i.memo(e => {
     localMuted: C,
     serverMuted: j,
     serverDeafened: S,
-    hasVideo: E,
-    hideAudioIcon: x,
+    hasVideo: x,
+    hideAudioIcon: E,
     onToggleMute: P
   } = e, I = (0, s.e7)([R.Z], () => null != m && R.Z.isLocalVideoAutoDisabled(m, (0, g.Z)(f)), [m, f]), w = (0, K.N)(l), N = (0, K.K)(l), [Z, T] = i.useState(!1);
   i.useEffect(() => {
@@ -500,7 +500,7 @@ let ec = i.memo(e => {
       };
     return k.Z.addChangeListener(t), () => k.Z.removeChangeListener(t)
   }, []);
-  let A = !x && f === X.fO.STREAM && E && (!N || C),
+  let A = !E && f === X.fO.STREAM && x && (!N || C),
     D = function(e) {
       let {
         localMuted: t,

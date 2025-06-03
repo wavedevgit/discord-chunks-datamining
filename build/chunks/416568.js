@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(358221),
   j = n(540059),
   S = n(706590),
-  E = n(940777),
-  x = n(41776),
+  x = n(940777),
+  E = n(41776),
   P = n(821020),
   I = n(770858),
   w = n(905423),
@@ -195,7 +195,7 @@ function ed(e) {
     location: "GuildsBar"
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(K.u, {}), null !== d && (0, r.jsx)(I.Z, {}), l ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsx)(q.Z, {
+    children: [(0, r.jsx)(K.u, {}), null !== d && (0, r.jsx)(I.Z, {}), l ? (0, r.jsx)(x.Z, {}) : null, (0, r.jsx)(q.Z, {
       isOnHubVerificationRoute: s
     }), !t && (0, r.jsx)(H.Z, {}), u.map(e => (0, r.jsx)(et.Z, {
       guildId: e
@@ -242,7 +242,7 @@ function ep(e) {
   } = e, a = (0, j.Q3)("GuildsBar"), [d] = (0, h.Wu)([L.ZP], () => {
     let e = L.ZP.getGuildsTree();
     return [e, e.version]
-  }), p = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), O = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, E] = i.useState(!1), P = i.useCallback(() => E(!0), []), I = i.useCallback(() => E(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), k = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
+  }), p = (0, h.e7)([E.Z], () => E.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), O = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, x] = i.useState(!1), P = i.useCallback(() => x(!0), []), I = i.useCallback(() => x(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), k = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
     ref: W
   } = z, K = ea(z, ["ref"]), q = (0, m.mFp)(), [X, ee] = i.useState(!1), [et, el] = i.useState(!1), ep = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), ef = (0, m.dQu)(g.Z.space.SPACE_XS), eg = i.useMemo(() => new eu(d, ee, el, () => {
     var e, t;
@@ -343,17 +343,17 @@ function ep(e) {
     }),
     {
       shouldShow: eS,
-      questId: eE,
-      onDiscoveryButtonClick: ex
+      questId: ex,
+      onDiscoveryButtonClick: eE
     } = ej,
     eP = ea(ej, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
     eI = e_ && eS,
     ew = (0, r.jsx)(Y.Z, {
       ref: eC,
-      questId: eI ? eE : void 0,
+      questId: eI ? ex : void 0,
       selected: ey,
       className: ei.discoveryIcon,
-      onClick: eI ? ex : void 0
+      onClick: eI ? eE : void 0
     }),
     eN = eI ? (0, r.jsx)(Z.fO, es(eo({
       targetElementRef: eC,

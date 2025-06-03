@@ -1,6 +1,6 @@
 /** Chunk was on 61717 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 }), n(415506), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -120,8 +120,8 @@ class S extends m.ZP {
     })
   }
 }
-let E = (0, u.B)(S),
-  x = i.memo(function(e) {
+let x = (0, u.B)(S),
+  E = i.memo(function(e) {
     let {
       channel: t,
       guild: n,
@@ -133,5 +133,5 @@ let E = (0, u.B)(S),
         canReorderChannel: !0 !== i && null != e ? g.Z.can(y.Plq.MANAGE_CHANNELS, e) : g.Z.can(y.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(E, C({}, l, e))
+    return (0, r.jsx)(x, C({}, l, e))
   })

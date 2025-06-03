@@ -23,8 +23,8 @@ var r, i = n(255367),
   C = n(451478),
   j = n(276952),
   S = n(682662),
-  E = n(662146),
-  x = n(674552),
+  x = n(662146),
+  E = n(674552),
   P = n(981631),
   I = n(388032),
   w = n(223203);
@@ -173,14 +173,14 @@ class D extends(r = l.PureComponent) {
           selected: !b && n,
           unread: !b && d,
           className: w.pill
-        }), (0, i.jsx)(E.Z, {
+        }), (0, i.jsx)(x.Z, {
           text: null != t ? t : "",
           selected: n,
           children: (0, i.jsx)(c.aRk, {
             rounded: p,
             selected: !p && (n || g),
-            lowerBadge: r > 0 ? (0, x.Ne)(r, void 0, !0) : null,
-            upperBadge: (0, x.Or)({
+            lowerBadge: r > 0 ? (0, E.Ne)(r, void 0, !0) : null,
+            upperBadge: (0, E.Or)({
               audio: l,
               video: s,
               screenshare: a,
@@ -276,9 +276,9 @@ let L = l.forwardRef(function(e, t) {
     }),
     j = o === n,
     S = !1,
-    E = !1;
-  j && (S = u === P.WtW.VOICE, E = u === P.WtW.VIDEO);
-  let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
+    x = !1;
+  j && (S = u === P.WtW.VOICE, x = u === P.WtW.VIDEO);
+  let E = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
     I = (0, f.Q3)("DirectMessage");
   return (0, i.jsx)(D, T(Z({}, e), {
     ref: t,
@@ -287,11 +287,11 @@ let L = l.forwardRef(function(e, t) {
     selected: m === n,
     badge: _,
     audio: S,
-    video: E,
+    video: x,
     stream: h,
     isCurrentUserInThisDMCall: j,
     isGDMFacepileEnabled: C,
-    size: I ? x : 56,
+    size: I ? E : 56,
     isVisualRefreshEnabled: I,
     treeItemProps: l
   }))

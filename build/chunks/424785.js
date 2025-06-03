@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(501655),
   j = n(427679),
   S = n(368442),
-  E = n(201469),
-  x = n(680089),
+  x = n(201469),
+  E = n(680089),
   P = n(592125),
   I = n(430824),
   w = n(607744),
@@ -336,7 +336,7 @@ function q(e) {
       bypassLimit: N.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, s.e7)([x.Z], () => x.Z.isCollapsed(n.parent_id)), p = (0, E.ZP)(n.id), f = (0, s.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, _.Rk)(n.id, C.pV.AUDIENCE), {
+  }), h = (0, s.e7)([E.Z], () => E.Z.isCollapsed(n.parent_id)), p = (0, x.ZP)(n.id), f = (0, s.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, _.Rk)(n.id, C.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: y
   } = (0, b.Z)(n.id), O = (0, s.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), v = (0, S.xJ)(n.id), I = (0, L.Z)({

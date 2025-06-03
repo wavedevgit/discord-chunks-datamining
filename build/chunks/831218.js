@@ -23,8 +23,8 @@ var r, i = n(255367),
   C = n(313201),
   j = n(540059),
   S = n(860144),
-  E = n(214852),
-  x = n(518311),
+  x = n(214852),
+  E = n(518311),
   P = n(355298),
   I = n(869404),
   w = n(333984),
@@ -391,7 +391,7 @@ class V extends(r = l.Component) {
         children: [(0, i.jsx)("span", {
           className: M.headerText,
           children: L.intl.string(L.t.YUU0RE)
-        }), (0, i.jsx)(x.Z, {
+        }), (0, i.jsx)(E.Z, {
           location: "PrivateChannelsList-CreateDMButton",
           tooltip: L.intl.string(L.t["6Urw1t"]),
           tooltipPosition: "top",
@@ -448,10 +448,10 @@ let H = e => {
       let e = A.Z.getPrivateChannelIds();
       return (0, I.tU)(e, [P.Z, w.Z])
     }, []);
-  (0, E.z)(S.R);
+  (0, x.z)(S.R);
   let {
     analyticsLocations: _
-  } = (0, b.ZP)(g.Z.CONTACTS_LIST), x = (0, u.cj)([f.Z, N.Z, Z.Z], () => ({
+  } = (0, b.ZP)(g.Z.CONTACTS_LIST), E = (0, u.cj)([f.Z, N.Z, Z.Z], () => ({
     theme: N.Z.darkSidebar ? D.BRd.DARK : s,
     keyboardModeEnabled: f.Z.keyboardModeEnabled,
     version: null != o ? "".concat(o, ":").concat(Z.Z.getPrivateChannelsVersion()) : Z.Z.getPrivateChannelsVersion()
@@ -485,7 +485,7 @@ let H = e => {
     })
   }), [R]), B = (0, C.Dt)(), H = (0, c.ZP)({
     id: "private-channels-".concat(B),
-    isEnabled: x.keyboardModeEnabled,
+    isEnabled: E.keyboardModeEnabled,
     scrollToStart: M,
     scrollToEnd: k,
     defaultFocused: (m + +!!p).toString(),
@@ -505,7 +505,7 @@ let H = e => {
         version: o
       }, e), {
         children: d
-      }), x))
+      }), E))
     })
   })
 }

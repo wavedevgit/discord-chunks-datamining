@@ -1,6 +1,6 @@
 /**
   Module ID: 61717
-  Original File Name: 422713d6b523f410
+  Original File Name: beba21b2cc78cf83
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -4663,6 +4663,19 @@ div:has(>.positionLayer_fc71d3) {
     transform: scale(.42)
 }
 
+.guildIconList_aaa08b {
+    flex-direction: column
+}
+
+.guildIconItem_aaa08b,.guildIconList_aaa08b {
+    display: flex;
+    gap: 8px
+}
+
+.guildIconItemText_aaa08b {
+    padding-top: 2px
+}
+
 .chevronButton__5ae61 {
     cursor: pointer;
     margin-top: 8px;
@@ -6382,4 +6395,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=422713d6b523f410.css.map*/
+/*# sourceMappingURL=beba21b2cc78cf83.css.map*/
