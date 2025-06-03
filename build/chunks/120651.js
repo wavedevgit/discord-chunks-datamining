@@ -4,10 +4,10 @@ r.d(t, {
 });
 var n = r(255367);
 r(73800);
-var A = r(952265);
+var i = r(952265);
 
 function a(e) {
-  (0, A.ZD)(async () => {
+  (0, i.ZD)(async () => {
     let {
       default: t
     } = await Promise.resolve().then(r.bind(r, 776045));

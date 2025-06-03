@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => b
 });
 var r = n(255367);
 n(73800);
@@ -15,13 +15,13 @@ var l = n(120356),
   d = n(709999),
   p = n(388032),
   f = n(806734);
-let g = e => {
+let b = e => {
   let {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, g = (0, i.e7)([s.default], () => s.default.getCurrentUser());
-  return null == g ? null : (0, r.jsxs)("div", {
+  } = e, b = (0, i.e7)([s.default], () => s.default.getCurrentUser());
+  return null == b ? null : (0, r.jsxs)("div", {
     className: a()(f.shelfBlockContainer, f.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: f.blockHeader,
@@ -51,7 +51,7 @@ let g = e => {
             children: (0, r.jsx)(d.Z, {
               product: i,
               category: a,
-              user: g,
+              user: b,
               tab: l
             }, e)
           }, e)

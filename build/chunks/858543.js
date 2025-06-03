@@ -1,6 +1,6 @@
-/** Chunk was on 18895 **/
+/** Chunk was on 28767 **/
 n.d(t, {
-  DM: () => f,
+  DM: () => m,
   ZP: () => g
 });
 var i = n(255367);
@@ -8,26 +8,26 @@ n(73800);
 var r = n(120356),
   o = n.n(r),
   l = n(692547),
-  a = n(481060),
-  s = n(109434),
+  s = n(481060),
+  a = n(109434),
   c = n(456269),
   u = n(479099),
   d = n(176505),
   h = n(388032),
   p = n(602512),
-  m = n(520069);
+  f = n(520069);
 
-function f(e) {
+function m(e) {
   let {
     channel: t,
     isNew: n
-  } = e, i = (0, c.eV)(t), r = i.slice(void 0, 3), o = i.slice(3), l = i.length > 3 ? i.length - 3 : 0, a = t.hasFlag(d.zZ.PINNED), s = r.length > 0 || a || n;
+  } = e, i = (0, c.eV)(t), r = i.slice(void 0, 3), o = i.slice(3), l = i.length > 3 ? i.length - 3 : 0, s = t.hasFlag(d.zZ.PINNED), a = r.length > 0 || s || n;
   return {
     shownTags: r,
     remainingTags: o,
     moreTagsCount: l,
-    isPinned: a,
-    shouldRenderTagsRow: s,
+    isPinned: s,
+    shouldRenderTagsRow: a,
     forumPostContainsTags: i.length > 0
   }
 }
@@ -43,26 +43,26 @@ function g(e) {
     remainingTags: g,
     moreTagsCount: b,
     isPinned: O,
-    shouldRenderTagsRow: j
-  } = f({
+    shouldRenderTagsRow: v
+  } = m({
     channel: t,
     isNew: n
   }), {
-    tagFilter: v
-  } = (0, s.H)(t.id);
-  return j ? (0, i.jsxs)("div", {
-    className: o()(m.tags, c),
-    children: [n ? (0, i.jsx)(a.IGR, {
+    tagFilter: j
+  } = (0, a.H)(t.id);
+  return v ? (0, i.jsxs)("div", {
+    className: o()(f.tags, c),
+    children: [n ? (0, i.jsx)(s.IGR, {
       className: o()(p.newBadge, p.inTagsRow),
       color: l.Z.unsafe_rawColors.BRAND_260.css,
       text: h.intl.string(h.t.y2b7CA)
     }) : null, O && (0, i.jsx)("div", {
-      className: m.pinIcon,
-      children: (0, i.jsx)(a.ua7, {
+      className: f.pinIcon,
+      children: (0, i.jsx)(s.ua7, {
         text: h.intl.string(h.t["1QLRYW"]),
         children: e => {
           var t, n;
-          return (0, i.jsx)(a.qQX, (t = function(e) {
+          return (0, i.jsx)(s.qQX, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 i = Object.keys(n);
@@ -101,7 +101,7 @@ function g(e) {
       tag: e,
       size: u.Z.Sizes.SMALL,
       className: o()(r, {
-        [m.tagFiltered]: v.has(e.id)
+        [f.tagFiltered]: j.has(e.id)
       })
     }, e.id)), b > 0 ? (0, i.jsx)(u.f, {
       tags: g,

@@ -1,17 +1,18 @@
 /** Chunk was on 90202 **/
 n.d(t, {
-  Z: () => d
+  Z: () => _
 }), n(539854), n(997841);
 var r = n(544891),
   i = n(881052),
-  l = n(687294),
-  o = n(476326),
-  a = n(45251),
-  s = n(861990),
-  c = n(959517),
-  u = n(388032);
+  l = n(476326),
+  o = n(865275),
+  a = n(237992),
+  s = n(45251),
+  c = n(861990),
+  u = n(959517),
+  E = n(388032);
 
-function E(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,9 +30,9 @@ function E(e) {
   }
   return e
 }
-class d extends l.Z {
+class _ extends o.Z {
   async uploadFilesSimple(e) {
-    super.upload(u.intl.string(u.t.jfKTen), e);
+    super.upload(E.intl.string(E.t.jfKTen), e);
     let t = new Promise((e, t) => {
         this.once("error", (e, n, r, i) => {
           t({
@@ -47,12 +48,12 @@ class d extends l.Z {
       n = new AbortController;
     try {
       if (this.files = e, this._aborted || (this._handleStart(() => n.abort()), !await this.compressAndCheckFileSize())) return t;
-      this.setUploadingTextForUI(), await (0, l.$)(this.files, !0, this._recomputeProgress.bind(this))
+      this.setUploadingTextForUI(), await (0, a.Z)(this.files, !0, this._recomputeProgress.bind(this))
     } catch (e) {
       throw this._handleException(e), {
         file: this._file,
         reason: {
-          type: c.xi.ERROR_SOURCE_UNKNOWN,
+          type: u.xi.ERROR_SOURCE_UNKNOWN,
           msg: e.toString()
         }
       }
@@ -63,11 +64,11 @@ class d extends l.Z {
     let {
       addFilesTo: n
     } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-    super.upload(u.intl.string(u.t.jfKTen), e);
+    super.upload(E.intl.string(E.t.jfKTen), e);
     let r = new AbortController;
     try {
       if (this.files = e, this._aborted || (this._handleStart(() => r.abort()), !await this.compressAndCheckFileSize())) return;
-      this.setUploadingTextForUI(), await (0, l.$)(this.files, !0, this._recomputeProgress.bind(this))
+      this.setUploadingTextForUI(), await (0, a.Z)(this.files, !0, this._recomputeProgress.bind(this))
     } catch (e) {
       this._handleException(e)
     }
@@ -79,25 +80,25 @@ class d extends l.Z {
     }
   }
   async _createMessage(e, t, n) {
-    var l, c, u, d;
+    var o, a, u, E;
     let _, I = [];
     if ((this.files.forEach((e, t) => {
-        let n = (0, s.B)(e, t);
-        e.item.platform === o.ow.WEB && I.push(E({}, n))
-      }), null != n && null != t) ? _ = this._addAttachmentsToPayload(t, n, I) : (u = E({}, t), d = d = {
+        let n = (0, c.B)(e, t);
+        e.item.platform === l.ow.WEB && I.push(d({}, n))
+      }), null != n && null != t) ? _ = this._addAttachmentsToPayload(t, n, I) : (u = d({}, t), E = E = {
         attachments: I
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(d)).forEach(function(e) {
-        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(d, e))
+      })(Object(E)).forEach(function(e) {
+        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(E, e))
       }), _ = u), null != _.scheduled_timestamp) {
       try {
-        let e = await (0, a.PV)({
+        let e = await (0, s.PV)({
           channelId: _.channel_id,
           scheduledTimestamp: _.scheduled_timestamp,
           messageSendData: {
@@ -115,7 +116,7 @@ class d extends l.Z {
       } catch (e) {
         if (this._raiseEndpointErrors) throw new i.Hx(e);
         this._handleError({
-          code: null == e || null == (l = e.body) ? void 0 : l.code,
+          code: null == e || null == (o = e.body) ? void 0 : o.code,
           body: null == e ? void 0 : e.body
         })
       }
@@ -134,7 +135,7 @@ class d extends l.Z {
     } catch (e) {
       if (this._raiseEndpointErrors) throw new i.Hx(e);
       this._handleError({
-        code: null == e || null == (c = e.body) ? void 0 : c.code,
+        code: null == e || null == (a = e.body) ? void 0 : a.code,
         body: null == e ? void 0 : e.body
       })
     }

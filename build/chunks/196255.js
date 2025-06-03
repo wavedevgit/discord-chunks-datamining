@@ -1,4 +1,4 @@
-/** Chunk was on 18895 **/
+/** Chunk was on 28767 **/
 n.d(t, {
   Z: () => d
 });
@@ -7,8 +7,8 @@ n(73800);
 var r = n(120356),
   o = n.n(r),
   l = n(481060),
-  a = n(942951),
-  s = n(456269),
+  s = n(942951),
+  a = n(456269),
   c = n(388032),
   u = n(794168);
 let d = e => {
@@ -19,9 +19,9 @@ let d = e => {
     renderColon: h,
     hasUnreads: p
   } = e, {
-    user: m,
-    author: f
-  } = (0, s.AJ)(d), g = null != (n = null != (t = null == f ? void 0 : f.nick) ? t : null == m ? void 0 : m.username) ? n : "", b = (0, a.l)({
+    user: f,
+    author: m
+  } = (0, a.AJ)(d), g = null != (n = null != (t = null == m ? void 0 : m.nick) ? t : null == f ? void 0 : f.username) ? n : "", b = (0, s.l)({
     user: null == r ? void 0 : r.author,
     channelId: d.id,
     guildId: d.guild_id,
@@ -30,7 +30,7 @@ let d = e => {
     ariaLabel: c.intl.formatToPlainString(c.t.CSIeU1, {
       name: g
     })
-  })(null != f ? f : void 0)(g, d.id);
+  })(null != m ? m : void 0)(g, d.id);
   return (0, i.jsxs)(l.Text, {
     tag: "span",
     className: o()(u.author, {

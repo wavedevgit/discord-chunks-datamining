@@ -14,8 +14,8 @@ var r = n(255367),
   d = n(594174),
   p = n(451478),
   f = n(626135),
-  g = n(63063),
-  b = n(74538),
+  b = n(63063),
+  g = n(74538),
   h = n(381585),
   m = n(597688),
   _ = n(315066),
@@ -36,7 +36,7 @@ let k = e => {
     handleTransition: k,
     numVisibleItems: T,
     tab: I
-  } = e, L = (0, o.e7)([d.default], () => d.default.getCurrentUser()), B = b.ZP.canUseCollectibles(L), w = (0, _.s)("useShopHomeSorting") && I === x.AW.HOME, {
+  } = e, L = (0, o.e7)([d.default], () => d.default.getCurrentUser()), B = g.ZP.canUseCollectibles(L), w = (0, _.s)("useShopHomeSorting") && I === x.AW.HOME, {
     sortType: N,
     setSortType: A,
     sortedItems: R,
@@ -88,7 +88,7 @@ let k = e => {
               }
               return e
             }({}, e), n = n = {
-              onClick: () => (0, c.Z)(g.Z.getArticleURL(y.BhN.DATA_USED_FOR_RECOMMENDED)),
+              onClick: () => (0, c.Z)(b.Z.getArticleURL(y.BhN.DATA_USED_FOR_RECOMMENDED)),
               className: P.informationIcon,
               children: (0, r.jsx)(s.d3s, {
                 size: "sm"

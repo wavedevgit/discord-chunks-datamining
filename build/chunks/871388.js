@@ -4,7 +4,7 @@ r.d(t, {
 });
 var n = r(255367);
 r(73800);
-var A = r(481060),
+var i = r(481060),
   a = r(120651),
   l = r(388032);
 
@@ -30,7 +30,7 @@ function o(e, t, r) {
       }
       return e
     }({
-      highlightHook: e => (0, n.jsx)(A.Text, {
+      highlightHook: e => (0, n.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "text-normal",
         style: {

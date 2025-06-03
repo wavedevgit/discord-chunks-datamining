@@ -14,9 +14,9 @@ var r = n(255367),
   d = n(388032),
   p = n(894948),
   f = n(781385),
-  g = n(585616);
+  b = n(585616);
 
-function b(e) {
+function g(e) {
   let {
     endDate: t
   } = e, {
@@ -84,7 +84,7 @@ let h = l.memo(function(e) {
       className: p.countdownIcon,
       alt: "",
       "aria-hidden": !0
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(g, {
       endDate: t
     }), (0, r.jsx)("img", {
       src: f.Z,
@@ -92,7 +92,7 @@ let h = l.memo(function(e) {
       alt: "",
       "aria-hidden": !0
     }), (0, r.jsx)("img", {
-      src: g.Z,
+      src: b.Z,
       className: i()(p.sparkles, p.right),
       alt: "",
       "aria-hidden": !0

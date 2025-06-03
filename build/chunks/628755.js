@@ -1,4 +1,4 @@
-/** Chunk was on 18895 **/
+/** Chunk was on 28767 **/
 e.exports = {
   artContainer: "artContainer_ade26d",
   modalContainer: "modalContainer_ade26d",

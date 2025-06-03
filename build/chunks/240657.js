@@ -3,11 +3,11 @@ r.d(t, {
   Z: () => d
 });
 var n = r(255367),
-  A = r(73800),
+  i = r(73800),
   a = r(120356),
   l = r.n(a),
   o = r(481060),
-  i = r(741914),
+  A = r(741914),
   s = r(497646),
   c = r(73433);
 
@@ -18,11 +18,11 @@ function d(e) {
     variant: a,
     text: d,
     lineClamp: u
-  } = e, g = (0, o.xSt)(), f = A.useMemo(() => null == d ? null : (0, i.Z)(d, !0, {
+  } = e, f = (0, o.xSt)(), g = i.useMemo(() => null == d ? null : (0, A.Z)(d, !0, {
     allowHeading: null == u,
     allowList: null == u,
-    initialHeaderLevel: g
-  }), [d, u, g]);
+    initialHeaderLevel: f
+  }), [d, u, f]);
   return (0, n.jsx)(o.Text, {
     className: l()(r, c.markup, {
       [s.lineClamp2Plus]: null != u && u > 1,
@@ -31,6 +31,6 @@ function d(e) {
     color: t,
     variant: a,
     lineClamp: u,
-    children: f
+    children: g
   })
 }

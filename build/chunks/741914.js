@@ -1,14 +1,14 @@
 /** Chunk was on 73628 **/
 r.d(t, {
-  Z: () => g
+  Z: () => f
 });
 var n = r(392711),
-  A = r.n(n),
+  i = r.n(n),
   a = r(723454),
   l = r(428595),
   o = r(454585);
 
-function i(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -39,13 +39,13 @@ function s(e, t) {
     Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
-let c = A().omit(l.Z.RULES, ["codeBlock", "heading"]),
-  d = s(i({}, a.Z), {
+let c = i().omit(l.Z.RULES, ["codeBlock", "heading"]),
+  d = s(A({}, a.Z), {
     parse: function(e, t, r) {
       var n;
-      let A = a.Z.parse(e, t, r),
-        l = Math.min(6, (null != (n = r.initialHeaderLevel) ? n : 3) + A.level);
-      return s(i({}, A), {
+      let i = a.Z.parse(e, t, r),
+        l = Math.min(6, (null != (n = r.initialHeaderLevel) ? n : 3) + i.level);
+      return s(A({}, i), {
         level: l
       })
     }
@@ -53,4 +53,4 @@ let c = A().omit(l.Z.RULES, ["codeBlock", "heading"]),
   u = o.Z.combineAndInjectMentionRule(c, [o.Z.createReactRules(o.Z.defaultReactRuleOptions), {
     header: d
   }]),
-  g = o.Z.reactParserFor(u)
+  f = o.Z.reactParserFor(u)

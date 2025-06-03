@@ -3,11 +3,11 @@ r.d(t, {
   Z: () => d
 }), r(388685);
 var n = r(255367),
-  A = r(73800),
+  i = r(73800),
   a = r(120356),
   l = r.n(a),
   o = r(481060),
-  i = r(313201),
+  A = r(313201),
   s = r(388032),
   c = r(815669);
 
@@ -18,13 +18,13 @@ function d(e) {
     published: a,
     submitting: d = !1,
     onClick: u
-  } = e, g = (0, i.Dt)(), [f, p] = A.useState(a);
-  return A.useEffect(() => {
-    p(e => e || a)
+  } = e, f = (0, A.Dt)(), [g, h] = i.useState(a);
+  return i.useEffect(() => {
+    h(e => e || a)
   }, [a]), (0, n.jsxs)("div", {
     className: l()({
       [c.publishable]: !t && !a,
-      [c.wasEverPublished]: f
+      [c.wasEverPublished]: g
     }, c.container),
     children: [(0, n.jsxs)("div", {
       className: c.explanationColumn,
@@ -33,7 +33,7 @@ function d(e) {
         color: "header-primary",
         children: a ? s.intl.string(s.t.VaaagY) : s.intl.string(s.t.oI8aQU)
       }), (0, n.jsx)(o.Text, {
-        id: g,
+        id: f,
         variant: "text-sm/normal",
         color: "text-normal",
         children: a ? s.intl.string(s.t["0r6pbG"]) : s.intl.string(s.t["8MMHYG"])
@@ -41,7 +41,7 @@ function d(e) {
     }), (0, n.jsx)(o.ua7, {
       text: t ? r : void 0,
       children: e => {
-        var r, A;
+        var r, i;
         return (0, n.jsxs)(o.zxk, (r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
@@ -59,15 +59,15 @@ function d(e) {
             })
           }
           return e
-        }({}, e), A = A = {
+        }({}, e), i = i = {
           className: l()(c.button, {
-            [c.wasEverPublished]: f,
+            [c.wasEverPublished]: g,
             [c.publishButton]: !a,
             [c.disabledPublishButton]: t
           }),
           innerClassName: c.buttonContents,
           color: a ? o.zxk.Colors.RED : o.zxk.Colors.CUSTOM,
-          "aria-describedby": g,
+          "aria-describedby": f,
           "aria-disabled": t,
           grow: !1,
           onClick: t ? void 0 : u,
@@ -81,15 +81,15 @@ function d(e) {
             color: "currentColor",
             className: c.buttonIcon
           })]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(A)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
             r.push.apply(r, n)
           }
           return r
-        })(Object(A)).forEach(function(e) {
-          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(A, e))
+        })(Object(i)).forEach(function(e) {
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
         }), r))
       }
     })]

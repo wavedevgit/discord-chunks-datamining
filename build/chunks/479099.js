@@ -66,7 +66,7 @@ function x(e) {
     name: P,
     emojiId: S,
     emojiName: w
-  } = t, E = null != v, [I, M] = r.useState(!1), A = (0, c.e7)([g.ZP], () => null != S ? g.ZP.getUsableCustomEmojiById(S) : null), D = E || null != x, N = (!E || !I) && (null != S || null != w), L = 0 === a, k = r.useRef(null), z = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), R = e => {
+  } = t, E = null != v, [I, M] = r.useState(!1), A = (0, c.e7)([g.ZP], () => null != S ? g.ZP.getUsableCustomEmojiById(S) : null), D = E || null != x, N = (!E || !I) && (null != S || null != w), L = 0 === a, k = r.useRef(null), Z = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), z = e => {
     let a = h.Sb.getSetting();
     f.wS && a && (0, u.jW)(e, async () => {
       let {
@@ -76,7 +76,7 @@ function x(e) {
         tag: t
       }))
     })
-  }, Z = (0, i.jsxs)(i.Fragment, {
+  }, R = (0, i.jsxs)(i.Fragment, {
     children: [N ? (0, i.jsx)(m.Z, {
       className: l()(_.emoji, {
         [_.small]: L
@@ -108,9 +108,9 @@ function x(e) {
       [_[t.color]]: null != t.color && !D
     }, j),
     onClick: e => {
-      null == x || x(e), null == v || v(t), z || null == k.current || k.current.blur()
+      null == x || x(e), null == v || v(t), Z || null == k.current || k.current.blur()
     },
-    onContextMenu: e => R(e),
+    onContextMenu: e => z(e),
     onMouseEnter: () => E && M(!0),
     onMouseLeave: () => E && M(!1)
   }, F = (0, s.JA)("forum-tag-".concat(t.id));
@@ -125,9 +125,9 @@ function x(e) {
     role: "button",
     "aria-pressed": C
   }), U), {
-    children: Z
+    children: R
   })) : (0, i.jsx)("div", O(y({}, U), {
-    children: Z
+    children: R
   }))
 }
 

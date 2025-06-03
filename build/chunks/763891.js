@@ -14,8 +14,8 @@ var r = n(255367),
   d = n(381585),
   p = n(597688),
   f = n(370039),
-  g = n(937510),
-  b = n(303952),
+  b = n(937510),
+  g = n(303952),
   h = n(38900),
   m = n(709999),
   _ = n(81136),
@@ -60,20 +60,20 @@ function I(e) {
   }, [B, V]), q = (0, f.a)(), K = l.useMemo(() => q(F.filter(e => {
     var t;
     return e.type === z || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? void 0 : t.some(e => e.type === z)) === !0
-  })), [F, z, q]), Y = (0, g.l)(K);
+  })), [F, z, q]), Y = (0, b.l)(K);
   return (l.useEffect(() => {
-    (0, b.n)({
+    (0, g.n)({
       sessionId: N,
-      checkpoint: b.a.SHOP_MOUNTED,
+      checkpoint: g.a.SHOP_MOUNTED,
       tab: B,
       isFullScreen: I,
       unpublishedCategoriesShown: R,
       cacheDisabled: A
     })
   }, []), l.useEffect(() => {
-    n || (0, b.n)({
+    n || (0, g.n)({
       sessionId: N,
-      checkpoint: b.a.SHOP_RENDERED,
+      checkpoint: g.a.SHOP_RENDERED,
       tab: B,
       isFullScreen: I,
       unpublishedCategoriesShown: R,

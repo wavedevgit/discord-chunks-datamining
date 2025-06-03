@@ -14,8 +14,8 @@ var r = n(255367),
   d = n(139668),
   p = n(364111),
   f = n(303952),
-  g = n(752053),
-  b = n(81136),
+  b = n(752053),
+  g = n(81136),
   h = n(953655),
   m = n(548685),
   _ = n(580914),
@@ -36,7 +36,7 @@ let y = e => {
     } = e, {
       noCache: O,
       includeUnpublished: S
-    } = (0, b.Z)(), E = (0, u.sp)(), y = null != (t = null == E ? void 0 : E.sessionId) ? t : "";
+    } = (0, g.Z)(), E = (0, u.sp)(), y = null != (t = null == E ? void 0 : E.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
         sessionId: y,
@@ -73,9 +73,9 @@ let y = e => {
           unpublishedCategoriesShown: S,
           cacheDisabled: O
         })
-      }, [P, j, k.length, S, O, y, c, d]), null != P) return (0, r.jsx)(g.Z, {
+      }, [P, j, k.length, S, O, y, c, d]), null != P) return (0, r.jsx)(b.Z, {
       onRetry: I,
-      errorOrigin: g.i.SHOP_PAGE,
+      errorOrigin: b.i.SHOP_PAGE,
       errorMessage: P.message
     });
     if (j || 0 === k.length) return (0, r.jsxs)("div", {

@@ -1,20 +1,20 @@
-/** Chunk was on 18895 **/
+/** Chunk was on 28767 **/
 n.d(t, {
-  Z: () => v
+  Z: () => j
 }), n(388685);
 var i = n(255367),
   r = n(73800),
   o = n(505266),
   l = n(240894),
-  a = n(748780),
-  s = n(481060),
+  s = n(748780),
+  a = n(481060),
   c = n(596454),
   u = n(745510),
   d = n(314910),
   h = n(912893),
   p = n(768581),
-  m = n(176354),
-  f = n(675654),
+  f = n(176354),
+  m = n(675654),
   g = n(403122);
 
 function b(e) {
@@ -48,43 +48,43 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = [];
+let v = [];
 
-function v(e) {
+function j(e) {
   let {
     messageId: t,
     emoji: n,
-    startPosition: v,
+    startPosition: j,
     targetPosition: y
-  } = e, [T, S] = r.useState(0), [x, _] = r.useState(0), [P, E] = r.useState(null), {
+  } = e, [_, S] = r.useState(0), [T, x] = r.useState(0), [P, E] = r.useState(null), {
     confettiCanvas: C
   } = r.useContext(u.h), R = (0, o.uR)(C, P), I = r.useMemo(() => [{
-    src: null == n.id ? m.ZP.getURL(n.name) : p.ZP.getEmojiURL({
+    src: null == n.id ? f.ZP.getURL(n.name) : p.ZP.getEmojiURL({
       id: n.id,
       animated: !1,
       size: 22
     }),
     colorize: !1
-  }], [n.name, n.id]), w = y.x - y.width / 2 * .5, N = y.y - y.height / 2 * .5, Z = (0, s.q_F)({
+  }], [n.name, n.id]), w = y.x - y.width / 2 * .5, N = y.y - y.height / 2 * .5, Z = (0, a.q_F)({
     from: {
-      y: v.y
+      y: j.y
     },
     to: {
       y: N
     },
     config: {
       duration: 450,
-      easing: a.Z.Easing.in(a.Z.Easing.exp)
+      easing: s.Z.Easing.in(s.Z.Easing.exp)
     },
     onChange: e => {
       let {
         y: t
       } = e;
-      _(t)
+      x(t)
     }
-  }), A = (0, s.q_F)({
+  }), A = (0, a.q_F)({
     from: {
-      x: v.x,
+      x: j.x,
       scale: 1,
       opacity: 1
     },
@@ -95,7 +95,7 @@ function v(e) {
     },
     config: {
       duration: 450,
-      easing: a.Z.Easing.in(a.Z.Easing.ease)
+      easing: s.Z.Easing.in(s.Z.Easing.ease)
     },
     onRest: () => {
       (0, h.G)(t, n.name, n.id)
@@ -108,22 +108,22 @@ function v(e) {
     }
   });
   return r.useEffect(() => {
-    T > 0 && x > 0 && R.createConfetti(O(b({}, f.We), {
+    _ > 0 && T > 0 && R.createConfetti(O(b({}, m.We), {
       position: {
         type: "static",
         value: {
-          x: T,
-          y: x
+          x: _,
+          y: T
         }
       }
     }))
-  }, [R, T, x]), (0, i.jsxs)(i.Fragment, {
+  }, [R, _, T]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(o.Ji, {
       ref: E,
       sprites: I,
-      colors: j,
-      spriteWidth: f.Ko,
-      spriteHeight: f.Ko
+      colors: v,
+      spriteWidth: m.Ko,
+      spriteHeight: m.Ko
     }), (0, i.jsx)(d.ZP, {
       children: (0, i.jsx)(l.animated.div, {
         style: b({}, Z),

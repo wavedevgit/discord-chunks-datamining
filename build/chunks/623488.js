@@ -1,28 +1,28 @@
 /** Chunk was on 73628 **/
 r.d(t, {
-  Z: () => p
+  Z: () => h
 }), r(953529);
 var n = r(255367);
 r(73800);
-var A = r(120356),
-  a = r.n(A),
+var i = r(120356),
+  a = r.n(i),
   l = r(481060),
   o = r(313201),
-  i = r(240657),
+  A = r(240657),
   s = r(765400),
   c = r(916001),
   d = r(388032),
   u = r(940792);
 
-function g(e) {
+function f(e) {
   let {
     hidePurchaseToUnlockBadge: t,
     showDraftBadge: r,
-    className: A,
+    className: i,
     children: o
   } = e;
   return (0, n.jsxs)("div", {
-    className: a()(u.productThumbnailContainer, A),
+    className: a()(u.productThumbnailContainer, i),
     children: [o, !t && (0, n.jsxs)("div", {
       className: u.purchaseToUnlockBadge,
       children: [(0, n.jsx)(l.mBM, {
@@ -43,11 +43,11 @@ function g(e) {
   })
 }
 
-function f(e) {
+function g(e) {
   let {
     onShowFullDescription: t,
     variant: r
-  } = e, A = (0, n.jsxs)(n.Fragment, {
+  } = e, i = (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)(l.Text, {
       variant: r,
       color: null != t ? "text-link" : "interactive-hover",
@@ -60,24 +60,24 @@ function f(e) {
   });
   return null == t ? (0, n.jsx)("div", {
     className: u.showMoreButton,
-    children: A
+    children: i
   }) : (0, n.jsx)(l.P3F, {
     className: a()(u.showMoreButton, u.hasAction),
     onClick: e => {
       e.stopPropagation(), null != t && t()
     },
-    children: A
+    children: i
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     imageUrl: t,
     name: r,
-    description: A,
+    description: i,
     formattedPrice: s,
-    role: p,
-    ctaComponent: h,
+    role: h,
+    ctaComponent: p,
     shouldShowFullDescriptionButton: m = !0,
     onShowFullDescription: b,
     productType: v,
@@ -86,13 +86,13 @@ function p(e) {
     showOpaqueBackground: q = !1,
     hideRoleTag: j = !1,
     lineClamp: O = 1,
-    cardWidth: U = 332,
-    cardHeight: P,
-    thumbnailHeight: y = 187,
+    cardWidth: P = 332,
+    cardHeight: y,
+    thumbnailHeight: U = 187,
     descriptionTextVariant: V = "text-sm/normal",
     isDraft: N = !1
   } = e, I = (0, o.hQ)(), T = (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(g, {
+    children: [(0, n.jsx)(f, {
       showDraftBadge: N,
       hidePurchaseToUnlockBadge: !0,
       children: (0, n.jsx)("img", {
@@ -100,7 +100,7 @@ function p(e) {
         src: t,
         className: u.productThumbnail,
         style: {
-          height: y
+          height: U
         }
       })
     }), (0, n.jsxs)("div", {
@@ -114,20 +114,20 @@ function p(e) {
           id: I,
           children: r
         }), (0, n.jsx)(l.Rny, {
-          children: (0, n.jsx)(i.Z, {
+          children: (0, n.jsx)(A.Z, {
             variant: V,
             color: "text-muted",
             lineClamp: O,
-            text: A
+            text: i
           })
-        }), m && (0, n.jsx)(f, {
+        }), m && (0, n.jsx)(g, {
           onShowFullDescription: b,
           variant: V
-        }), j || null == p || "" === p.name ? null : (0, n.jsxs)(n.Fragment, {
+        }), j || null == h || "" === h.name ? null : (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)(l.LZC, {
             size: 16
           }), (0, n.jsx)(c.Z, {
-            role: p
+            role: h
           })]
         })]
       }), x]
@@ -148,7 +148,7 @@ function p(e) {
         onClick: e => {
           e.stopPropagation()
         },
-        children: h
+        children: p
       })]
     })]
   });
@@ -158,8 +158,8 @@ function p(e) {
     children: T
   }) : (0, n.jsx)("div", {
     style: {
-      width: U,
-      height: P
+      width: P,
+      height: y
     },
     children: (0, n.jsx)(l.kL8, {
       tag: "article",
