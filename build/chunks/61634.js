@@ -100,8 +100,8 @@ function E(e) {
         }
         return !1
       })(),
-      k = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return f ? (m = !0, y = (null == r ? void 0 : r.channel_id) === c, v = T, _ = D, S = R, E = k) : (m = P, y = null != r, v = Z, _ = I, S = A, E = L), {
+      M = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
+    return f ? (m = !0, y = (null == r ? void 0 : r.channel_id) === c, v = T, _ = D, S = R, E = M) : (m = P, y = null != r, v = Z, _ = I, S = A, E = L), {
       audio: m,
       video: _,
       screenshare: S,

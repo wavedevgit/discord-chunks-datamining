@@ -36,8 +36,8 @@ var r = n(255367),
   A = n(271383),
   D = n(430824),
   L = n(771845),
-  k = n(358085),
-  M = n(709054),
+  M = n(358085),
+  k = n(709054),
   U = n(727258),
   G = n(605951),
   B = n(257351),
@@ -109,7 +109,7 @@ function ea(e, t) {
   }
   return i
 }
-let ec = (0, k.isWindows)() ? 4 : 12 * !(0, k.isMac)();
+let ec = (0, M.isWindows)() ? 4 : 12 * !(0, M.isMac)();
 class eu {
   setGuildsTree(e) {
     this.guildsTree = e
@@ -189,7 +189,7 @@ function ed(e) {
     lurkingGuildIds: i
   } = e, l = (0, S.Z)(), {
     pathname: o
-  } = (0, c.TH)(), s = o.startsWith(en.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), a = (0, h.Wu)([D.Z, A.ZP], () => M.default.keys(D.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), u = i.concat(a), {
+  } = (0, c.TH)(), s = o.startsWith(en.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), a = (0, h.Wu)([D.Z, A.ZP], () => k.default.keys(D.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), u = i.concat(a), {
     notificationCenterVariant: d
   } = P.L.useExperiment({
     location: "GuildsBar"
@@ -235,18 +235,18 @@ function eh(e) {
 
 function ep(e) {
   let {
-    disableAppDownload: t = k.isPlatformEmbedded,
+    disableAppDownload: t = M.isPlatformEmbedded,
     isOverlay: n = !1,
     className: l,
     themeOverride: s
   } = e, a = (0, j.Q3)("GuildsBar"), [d] = (0, h.Wu)([L.ZP], () => {
     let e = L.ZP.getGuildsTree();
     return [e, e.version]
-  }), p = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), O = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, E] = i.useState(!1), P = i.useCallback(() => E(!0), []), I = i.useCallback(() => E(!1), []), A = i.useRef(!1), [D] = i.useState(() => new f.V7), M = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
+  }), p = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), O = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, E] = i.useState(!1), P = i.useCallback(() => E(!0), []), I = i.useCallback(() => E(!1), []), A = i.useRef(!1), [D] = i.useState(() => new f.V7), k = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
     ref: W
   } = z, K = ea(z, ["ref"]), q = (0, m.mFp)(), [X, ee] = i.useState(!1), [et, el] = i.useState(!1), ep = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), ef = (0, m.dQu)(g.Z.space.SPACE_XS), eg = i.useMemo(() => new eu(d, ee, el, () => {
     var e, t;
-    null == (e = M.current) || e.calculateState(), null == (t = F.current) || t.calculateState()
+    null == (e = k.current) || e.calculateState(), null == (t = F.current) || t.calculateState()
   }, function(e, t, n) {
     let r = t ? n : 8,
       i = e + r,
@@ -362,7 +362,7 @@ function ep(e) {
       children: ew
     })) : ew,
     eZ = (0, r.jsx)(V.Z, {
-      ref: M,
+      ref: k,
       isVisible: eg.isItemVisible,
       onJumpTo: eg.handleJumpToGuild,
       className: ei.unreadMentionsIndicatorTop,

@@ -1,6 +1,6 @@
 /** Chunk was on 78715 **/
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -73,7 +73,7 @@ let L = {
   }
 };
 
-function k(e, t) {
+function M(e, t) {
   (0, f.jW)(e, async () => {
     let {
       default: e
@@ -83,8 +83,8 @@ function k(e, t) {
     }))
   })
 }
-let M = i.memo(function(e) {
-  var t, n, l, f, M;
+let k = i.memo(function(e) {
+  var t, n, l, f, k;
   let {
     guildNode: U,
     setRef: G,
@@ -99,7 +99,7 @@ let M = i.memo(function(e) {
     unavailable: q = !1,
     badge: Q = 0,
     isMentionLowImportance: X,
-    contextMenu: J = k,
+    contextMenu: J = M,
     draggable: $ = !1,
     sorting: ee = !1,
     preloadOnClick: et = !0,
@@ -114,7 +114,7 @@ let M = i.memo(function(e) {
   null == eu && Q > 0 ? eu = null != (l = (0, N.Ne)(Q, X ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : void 0 : null == eu && null != en && (eu = null != (f = (0, N.jt)({
     guildJoinRequestStatus: en
   })) ? f : void 0);
-  let ed = null != (M = e.lowerBadgeSize) ? M : {
+  let ed = null != (k = e.lowerBadgeSize) ? k : {
       width: (0, h.OVM)(Q)
     },
     [{

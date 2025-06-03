@@ -1,6 +1,6 @@
 /** Chunk was on 78715 **/
 n.d(t, {
-  ZP: () => k,
+  ZP: () => M,
   wD: () => T
 }), n(388685);
 var r = n(255367),
@@ -316,7 +316,7 @@ function L(e) {
     })]
   })
 }
-let k = i.memo(function(e) {
+let M = i.memo(function(e) {
   let {
     ref: t,
     bannerVisible: n,
@@ -335,7 +335,7 @@ let k = i.memo(function(e) {
     headerClassName: Z,
     communityInfoVisible: T,
     hasSubheader: R
-  } = e, D = _.hasFeature(C.oNc.ANIMATED_BANNER), k = (0, p.Z)(_), U = !k && _.hasCommunityInfoSubheader(), G = !k && T, B = (0, v.xR)(j) && D && !m, [V, H] = i.useState(!1), F = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, Y = i.useRef(void 0), K = y.QK.getSetting();
+  } = e, D = _.hasFeature(C.oNc.ANIMATED_BANNER), M = (0, p.Z)(_), U = !M && _.hasCommunityInfoSubheader(), G = !M && T, B = (0, v.xR)(j) && D && !m, [V, H] = i.useState(!1), F = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, Y = i.useRef(void 0), K = y.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !F.current && K) return H(!0), Y.current = setTimeout(() => {
       H(!1)
@@ -410,7 +410,7 @@ let k = i.memo(function(e) {
           guildBanner: j,
           animate: V,
           isRefreshEnabled: Q
-        }) : null, (0, r.jsx)(M, {
+        }) : null, (0, r.jsx)(k, {
           controller: l
         })]
       }), B && q() ? (0, r.jsx)("div", {
@@ -427,7 +427,7 @@ let k = i.memo(function(e) {
   })
 });
 
-function M(e) {
+function k(e) {
   let {
     controller: t
   } = e, n = (0, h.Q3)("GuildHeaderOverlay"), {

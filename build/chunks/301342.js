@@ -83,7 +83,7 @@ let I = i.memo(function(e) {
     let L = i.useCallback(() => {
         A ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
       }, [l.id, A]),
-      k = i.useCallback(e => {
+      M = i.useCallback(e => {
         if ("null" !== l.id) {
           let t = b.Z.getGuild(l.getGuildId());
           null != t && (0, d.jW)(e, async () => {
@@ -97,7 +97,7 @@ let I = i.memo(function(e) {
           })
         }
       }, [l]),
-      M = i.useCallback(() => {
+      k = i.useCallback(() => {
         let e = l.type === C.d4z.GUILD_CATEGORY ? null : l.type,
           t = l.getGuildId();
         null != t && (0, c.ZDy)(async () => {
@@ -150,7 +150,7 @@ let I = i.memo(function(e) {
               [S.muted]: R,
               [S.clickable]: !0
             }),
-            onContextMenu: k,
+            onContextMenu: M,
             children: [(0, r.jsxs)(c.P3F, x(E({
               innerRef: H,
               className: S.mainContent,
@@ -193,7 +193,7 @@ let I = i.memo(function(e) {
                     look: c.zxk.Looks.BLANK,
                     size: c.zxk.Sizes.NONE,
                     className: o()(S.addButton, S.forceVisible),
-                    onClick: M,
+                    onClick: k,
                     onMouseEnter: t,
                     onMouseLeave: n,
                     tabIndex: B,
