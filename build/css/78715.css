@@ -1,6 +1,6 @@
 /**
   Module ID: 78715
-  Original File Name: 8f5eb105390aeb8b
+  Original File Name: 9585e1a406c25009
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1595,40 +1595,26 @@
     padding: 8px 12px
 }
 
-.filterBtn_c485a2 {
-    border: 1px solid var(--border-strong);
-    border-radius: 8px;
-    color: var(--text-secondary);
-    cursor: pointer;
-    font-size: 14px;
-    padding: 6px 12px
-}
-
-.filterBtn_c485a2.active_c485a2,.filterBtn_c485a2:hover {
-    color: var(--interactive-active)
-}
-
-.filterBtn_c485a2.active_c485a2 {
-    border-color: var(--interactive-active)
-}
-
 .filters_c485a2::-webkit-scrollbar {
     display: none
 }
 
-.moreButton_c485a2 {
+.filterButton_c485a2 {
     align-items: center;
     border-radius: var(--radius-xs);
+    color: var(--text-tertiary);
     cursor: pointer;
     display: flex;
+    font-size: 14px;
+    font-weight: 500;
     justify-content: center;
-    margin-bottom: 2px;
     padding: 4px 8px;
     transition: background-color .3s ease
 }
 
-.moreButton_c485a2:hover {
-    background-color: var(--button-secondary-background-hover)
+.filterButton_c485a2.selected_c485a2,.filterButton_c485a2:hover {
+    background-color: var(--button-secondary-background-hover);
+    color: var(--text-primary)
 }
 
 .full-motion .moreButtonIcon_c485a2 {
@@ -1639,8 +1625,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 8px;
-    max-height: 34px;
+    gap: 4px;
+    max-height: 22px;
     overflow: hidden;
     width: 100%
 }
@@ -1833,12 +1819,22 @@
     top: 4px
 }
 
-.settingsButton_ea5470:hover .settingsButtonIcon_ea5470 {
-    color: var(--interactive-hover)
+.full-motion .headerButton_ea5470 {
+    transition: all .3s ease
 }
 
-.settingsButtonIcon_ea5470 {
-    --chat-input-icon-size: 18px
+.headerButton_ea5470 {
+    align-items: center;
+    border-radius: var(--radius-xs);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 4px
+}
+
+.headerButton_ea5470:hover {
+    background-color: var(--button-secondary-background-hover);
+    color: var(--text-primary)
 }
 
 .emptyStateContainer_ea5470 {
@@ -6381,4 +6377,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=8f5eb105390aeb8b.css.map*/
+/*# sourceMappingURL=9585e1a406c25009.css.map*/

@@ -1,7 +1,7 @@
 /** Chunk was on 78715 **/
 n.d(t, {
-  ZP: () => M,
-  wD: () => R
+  ZP: () => k,
+  wD: () => T
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -152,17 +152,7 @@ function Z() {
     width: 20
   })
 }
-
-function T() {
-  return (0, r.jsx)(u.Dkj, {
-    size: "custom",
-    color: "currentColor",
-    className: x.favoritesIcon,
-    height: 20,
-    width: 20
-  })
-}
-let R = e => {
+let T = e => {
   let {
     open: t
   } = e, n = t ? u.u04 : u.CJ0;
@@ -172,7 +162,7 @@ let R = e => {
   })
 };
 
-function A(e) {
+function R(e) {
   let {
     guild: t
   } = e;
@@ -184,7 +174,7 @@ function A(e) {
   })
 }
 
-function D(e) {
+function A(e) {
   var t;
   let {
     bannerVisible: n,
@@ -200,7 +190,7 @@ function D(e) {
     children: [(0, r.jsx)(_.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === j._ && (0, r.jsx)(Z, {}), i.id === S.yG && (0, r.jsx)(T, {}), (0, r.jsx)(A, {
+    }), i.id === j._ && (0, r.jsx)(Z, {}), (0, r.jsx)(R, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
       className: x.headerButton,
@@ -221,9 +211,9 @@ function D(e) {
     })]
   })
 }
-let L = [j._, S.yG];
+let D = [j._, S.yG];
 
-function k(e) {
+function L(e) {
   let {
     bannerVisible: t,
     guild: l,
@@ -292,7 +282,7 @@ function k(e) {
             children: [(0, r.jsx)(_.Z, {
               guild: l,
               isBannerVisible: t
-            }), l.id === j._ && (0, r.jsx)(Z, {}), l.id === S.yG && (0, r.jsx)(T, {}), (0, r.jsx)(A, {
+            }), l.id === j._ && (0, r.jsx)(Z, {}), (0, r.jsx)(R, {
               guild: l
             })]
           }), (0, r.jsx)("div", {
@@ -301,7 +291,7 @@ function k(e) {
           })]
         }))
       }
-    }), !L.includes(l.id) && (0, r.jsx)(u.ua7, {
+    }), !D.includes(l.id) && (0, r.jsx)(u.ua7, {
       text: E.intl.string(E.t.Sd8Ix8),
       position: "bottom",
       children: e => (0, r.jsx)(u.P3F, I(P({
@@ -326,7 +316,7 @@ function k(e) {
     })]
   })
 }
-let M = i.memo(function(e) {
+let k = i.memo(function(e) {
   let {
     ref: t,
     bannerVisible: n,
@@ -345,7 +335,7 @@ let M = i.memo(function(e) {
     headerClassName: Z,
     communityInfoVisible: T,
     hasSubheader: R
-  } = e, A = _.hasFeature(C.oNc.ANIMATED_BANNER), L = (0, p.Z)(_), M = !L && _.hasCommunityInfoSubheader(), G = !L && T, B = (0, v.xR)(j) && A && !m, [V, H] = i.useState(!1), F = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, Y = i.useRef(void 0), K = y.QK.getSetting();
+  } = e, D = _.hasFeature(C.oNc.ANIMATED_BANNER), k = (0, p.Z)(_), U = !k && _.hasCommunityInfoSubheader(), G = !k && T, B = (0, v.xR)(j) && D && !m, [V, H] = i.useState(!1), F = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, Y = i.useRef(void 0), K = y.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !F.current && K) return H(!0), Y.current = setTimeout(() => {
       H(!1)
@@ -391,7 +381,7 @@ let M = i.memo(function(e) {
           [x.hasBanner]: q(),
           [x.bannerVisible]: n,
           [e]: !Q && n,
-          [x.communityInfoVisible]: G || R && M,
+          [x.communityInfoVisible]: G || R && U,
           [x.invitesRefresh]: X
         }),
         onMouseDown: f,
@@ -403,12 +393,12 @@ let M = i.memo(function(e) {
           }),
           children: [(0, r.jsx)("div", {
             className: o()(x.headerContent, x.primaryInfo),
-            children: X ? (0, r.jsx)(k, I(P({}, J), {
+            children: X ? (0, r.jsx)(L, I(P({}, J), {
               children: E
-            })) : (0, r.jsx)(D, I(P({}, J), {
+            })) : (0, r.jsx)(A, I(P({}, J), {
               children: E
             }))
-          }), M && (0, r.jsx)(N, {
+          }), U && (0, r.jsx)(N, {
             guild: _,
             controller: l,
             hasBanner: null != j,
@@ -420,7 +410,7 @@ let M = i.memo(function(e) {
           guildBanner: j,
           animate: V,
           isRefreshEnabled: Q
-        }) : null, (0, r.jsx)(U, {
+        }) : null, (0, r.jsx)(M, {
           controller: l
         })]
       }), B && q() ? (0, r.jsx)("div", {
@@ -437,7 +427,7 @@ let M = i.memo(function(e) {
   })
 });
 
-function U(e) {
+function M(e) {
   let {
     controller: t
   } = e, n = (0, h.Q3)("GuildHeaderOverlay"), {
