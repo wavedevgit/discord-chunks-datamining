@@ -18,35 +18,46 @@ let d = e => {
     parentSetting: d,
     panelClassName: u,
     defaultTabIndex: m,
-    onTabChange: g
+    onTabChange: g,
+    orientation: p = "horizontal"
   } = e, {
-    viewableTabs: p,
-    filteredTab: h
-  } = (0, o.a)(n, d), f = null != m ? n[m] : null, b = null != (t = null != f ? f : h) ? t : p[0];
-  return (0, i.jsxs)(i.Fragment, {
+    viewableTabs: h,
+    filteredTab: f
+  } = (0, o.a)(n, d), b = null != m ? n[m] : null, _ = null != (t = null != b ? b : f) ? t : h[0];
+  return (0, i.jsxs)("div", {
+    className: s()(c.tabbedSettingsContainer, {
+      [c.vertical]: "vertical" === p
+    }),
     children: [(0, i.jsx)(l.njP, {
-      className: c.tabBar,
-      selectedItem: b.setting,
+      className: s()(c.tabBar, {
+        [c.vertical]: "vertical" === p
+      }),
+      selectedItem: _.setting,
       onItemSelect: e => {
         a.Z.setSection(r, e), null == g || g(e)
       },
-      orientation: "horizontal",
-      type: "top",
+      orientation: p,
+      type: "vertical" === p ? "side" : "top",
       look: "brand",
-      children: p.map(e => (0, i.jsx)(l.njP.Item, {
-        className: c.tab,
+      children: h.map(e => (0, i.jsx)(l.njP.Item, {
+        className: s()(c.tab, {
+          [c.vertical]: "vertical" === p,
+          [c.selected]: e.setting === _.setting
+        }),
         id: e.setting,
         "aria-label": e.title,
         children: e.title
       }, e.setting))
     }), (0, i.jsx)(l.njP.Panel, {
-      id: b.setting,
-      "aria-labelledby": b.title,
-      className: s()(c.tabBarPanel, u),
+      id: _.setting,
+      "aria-labelledby": _.title,
+      className: s()(c.tabBarPanel, u, {
+        [c.vertical]: "vertical" === p
+      }),
       children: (e => {
         let t = e.component;
         return "function" == typeof t ? (0, i.jsx)(t, {}) : t
-      })(b)
+      })(_)
     })]
   })
 }

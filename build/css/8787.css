@@ -1,6 +1,6 @@
 /**
   Module ID: 8787
-  Original File Name: fdef7078fd0a2f4f
+  Original File Name: b703de17eaefdd57
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -12310,8 +12310,18 @@ div.nagbar_d74ef8 {
     max-width: calc(100% - 60px)
 }
 
+.tabBar_f8303a.vertical_f8303a {
+    border-bottom: none;
+    gap: var(--spacing-16)
+}
+
 .tabBarPanel_f8303a {
     margin-top: var(--spacing-24)
+}
+
+.tabBarPanel_f8303a.vertical_f8303a {
+    flex-grow: 1;
+    margin-top: 0
 }
 
 .tab_f8303a {
@@ -12320,6 +12330,28 @@ div.nagbar_d74ef8 {
     flex-shrink: 1;
     gap: var(--spacing-8);
     padding-bottom: var(--spacing-12)
+}
+
+.tab_f8303a.vertical_f8303a {
+    border-left: 1px solid var(--background-modifier-accent);
+    border-radius: 0
+}
+
+.tab_f8303a.vertical_f8303a.selected_f8303a {
+    border-left: 2px solid var(--text-brand);
+    color: var(--text-brand);
+    margin-left: -1px
+}
+
+.tabbedSettingsContainer_f8303a {
+    display: flex;
+    flex-direction: column
+}
+
+.tabbedSettingsContainer_f8303a.vertical_f8303a {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: var(--spacing-48)
 }
 
 .phoneField_a0c54f {
@@ -14067,6 +14099,15 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
 
 .selectItemTitle_d81ffd {
     margin-bottom: var(--spacing-4)
+}
+
+.selectItemRow_d81ffd {
+    align-items: center;
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-8);
+    justify-content: space-between
 }
 
 .guildSelectOptionIcon_b476ba {
@@ -18780,4 +18821,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=fdef7078fd0a2f4f.css.map*/
+/*# sourceMappingURL=b703de17eaefdd57.css.map*/
