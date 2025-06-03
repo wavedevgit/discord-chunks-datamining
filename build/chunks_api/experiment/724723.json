@@ -1,0 +1,1 @@
+{"id":"724723","type":"experiment","data":{"kind":"user","id":"2025-06_mana_desktop_modals","label":"Mana Desktop Modals","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"New modal components","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => p
 }), n(388685), n(539854);
 var r = n(392711),
   i = n.n(r),
@@ -32,7 +32,24 @@ function u(e) {
   return e
 }
 
-function d(e) {
+function d(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function _(e) {
   let t = {};
   for (let n in e) {
     let r = e[n];
@@ -40,7 +57,7 @@ function d(e) {
   }
   return t
 }
-class f {
+class p {
   start() {
     this.connection.on(a.Sh.Stats, this.sampleStats)
   }
@@ -84,10 +101,12 @@ class f {
     }
   }
   getBytesStats() {
-    let e = i().reduce(this.inboundStats, (e, t) => e + t.bytesReceived, 0);
+    let e = i().reduce(this.inboundStats, (e, t) => e + t.bytesReceived, 0),
+      t = this.outboundStats.aggregationDurationMs / 1e3;
     return {
       bytes_sent: this.outboundStats.bytesSent,
-      bytes_received: e
+      bytes_received: e,
+      outbound_bandwidth_estimate: t > 0 ? Math.round(8 * this.outboundStats.bytesAvailable / t) : 0
     }
   }
   getNetworkStats() {
@@ -98,7 +117,7 @@ class f {
   }
   getBufferStats() {
     let e = i().reduce(this.inboundStats, (e, t) => ((null == e || null != t.bufferStats.audioJitterBuffer && null != e.audioJitterBuffer && t.bufferStats.audioJitterBuffer.p75 > e.audioJitterBuffer.p75) && (e = t.bufferStats), e), null);
-    return u({}, d({
+    return u({}, _({
       audio_jitter_buffer: null != e ? e.audioJitterBuffer : null,
       audio_jitter_target: null != e ? e.audioJitterTarget : null,
       audio_jitter_delay: null != e ? e.audioJitterDelay : null,
@@ -225,9 +244,19 @@ class f {
     return 93.4 - (.024 * e + (e > 177.3 ? .11 * (e - 177.3) : 0)) - (10 + 122 * t / (t + 10))
   }
   constructor(e) {
-    c(this, "connection", void 0), c(this, "inboundStats", void 0), c(this, "outboundStats", void 0), c(this, "networkQuality", void 0), c(this, "systemResources", void 0), c(this, "duration", void 0), c(this, "decryptionFailures", void 0), c(this, "routingFailures", void 0), c(this, "periodicInboundStats", void 0), c(this, "inputDeviceStats", void 0), c(this, "outputDeviceStats", void 0), c(this, "sampleAudioDevice", void 0), c(this, "sampleStats", void 0), this.connection = e, this.sampleAudioDevice = (e, t) => {
+    c(this, "connection", void 0), c(this, "inboundStats", void 0), c(this, "outboundStats", void 0), c(this, "networkQuality", void 0), c(this, "systemResources", void 0), c(this, "duration", void 0), c(this, "decryptionFailures", void 0), c(this, "routingFailures", void 0), c(this, "periodicInboundStats", void 0), c(this, "inputDeviceStats", void 0), c(this, "outputDeviceStats", void 0), c(this, "sampleAudioDevice", void 0), c(this, "appendTargetRates", void 0), c(this, "sampleStats", void 0), this.connection = e, this.sampleAudioDevice = (e, t) => {
       var n, r;
-      void 0 !== e && (void 0 !== e.restartCount && (t.restartCount = _(e.restartCount, t.restartCount)), void 0 !== e.bufferViolations && (t.bufferViolations = _(e.bufferViolations, t.bufferViolations)), (null != (n = e.timeToFirstCallbackMs) ? n : 0) !== 0 && void 0 === t.timeToFirstCallbackMs && (t.timeToFirstCallbackMs = e.timeToFirstCallbackMs), (null != (r = e.sessionSampleRate) ? r : 0) !== 0 && (t.sessionSampleRate = e.sessionSampleRate))
+      void 0 !== e && (void 0 !== e.restartCount && (t.restartCount = h(e.restartCount, t.restartCount)), void 0 !== e.bufferViolations && (t.bufferViolations = h(e.bufferViolations, t.bufferViolations)), (null != (n = e.timeToFirstCallbackMs) ? n : 0) !== 0 && void 0 === t.timeToFirstCallbackMs && (t.timeToFirstCallbackMs = e.timeToFirstCallbackMs), (null != (r = e.sessionSampleRate) ? r : 0) !== 0 && (t.sessionSampleRate = e.sessionSampleRate))
+    }, this.appendTargetRates = function(e) {
+      let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
+      if (0 === e.previousTimestampMs) {
+        e.previousTimestampMs = performance.now();
+        return
+      }
+      let n = performance.now();
+      e.aggregationDurationMs += n - e.previousTimestampMs;
+      let r = (n - e.previousTimestampMs) / 1e3;
+      e.bytesAvailable += t / 8 * r, e.previousTimestampMs = n
     }, this.sampleStats = e => {
       if (null == e) return;
       this.networkQuality.incrementNetworkStats((0, o.zO)()), this.systemResources.takeSample(), this.decryptionFailures = e.transport.decryptionFailures, this.routingFailures = e.transport.routingFailures, this.duration.connected++;
@@ -235,10 +264,10 @@ class f {
         n = i().reduce(this.inboundStats, (e, t) => (e.packetsReceived += t.packetsReceived, e), {
           packetsReceived: 0
         });
-      i().forEach(e.rtp.outbound, e => {
+      this.appendTargetRates(this.outboundStats, e.transport.availableOutgoingBitrate), i().forEach(e.rtp.outbound, e => {
         if ("audio" === e.type) {
           var t, n, r, i, a, o, s, l;
-          this.outboundStats = {
+          this.outboundStats = f(u({}, this.outboundStats), {
             packetsSent: e.packetsSent,
             bytesSent: e.bytesSent,
             packetsLost: null != (t = e.packetsLost) ? t : 0,
@@ -249,7 +278,7 @@ class f {
             encryptAttempts: null != (o = e.encryptAttempts) ? o : 0,
             encryptMaxAttempts: null != (s = e.encryptMaxAttempts) ? s : 0,
             encryptMissingKeyCount: null != (l = e.encryptMissingKeyCount) ? l : 0
-          }
+          })
         }
       }), i().forEach(e.rtp.inbound, (t, n) => {
         i().forEach(t, t => {
@@ -309,7 +338,7 @@ class f {
               }, x), this.periodicInboundStats[n] = {
                 previousTimestampMs: this.periodicInboundStats[n].previousTimestampMs,
                 previous: this.periodicInboundStats[n].previous,
-                currentTimestampMs: Date.now(),
+                currentTimestampMs: performance.now(),
                 current: L,
                 accelerateRateSum: this.periodicInboundStats[n].accelerateRateSum + (null != (m = t.accelerateRate) ? m : 0),
                 expandRateSum: this.periodicInboundStats[n].expandRateSum + (null != (g = t.expandRate) ? g : 0),
@@ -331,9 +360,9 @@ class f {
               bufferStats: D,
               frameOpStats: L
             }, x), this.periodicInboundStats[n] = {
-              previousTimestampMs: Date.now(),
+              previousTimestampMs: performance.now(),
               previous: L,
-              currentTimestampMs: Date.now(),
+              currentTimestampMs: performance.now(),
               current: L,
               accelerateRateSum: null != (y = t.accelerateRate) ? y : 0,
               expandRateSum: null != (O = t.expandRate) ? O : 0,
@@ -359,7 +388,10 @@ class f {
       encryptDuration: 0,
       encryptAttempts: 0,
       encryptMaxAttempts: 0,
-      encryptMissingKeyCount: 0
+      encryptMissingKeyCount: 0,
+      bytesAvailable: 0,
+      previousTimestampMs: 0,
+      aggregationDurationMs: 0
     }, this.duration = {
       listening: 0,
       speaking: 0,
@@ -368,7 +400,7 @@ class f {
     }, this.periodicInboundStats = {}, this.inputDeviceStats = {}, this.outputDeviceStats = {}
   }
 }
-let _ = (e, t) => {
+let h = (e, t) => {
   let {
     accumulated: n,
     lastValue: r

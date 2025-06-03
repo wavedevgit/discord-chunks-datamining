@@ -70,10 +70,8 @@ function P(e) {
       location: "PremiumUpsellPickerOverlay"
     }) && k;
   return H ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.YMn, {
-      backdropStyle: c.fCB.DARK,
-      onClose: D,
-      "aria-label": S.intl.string(S.t.cpT0Cg),
+    children: [(0, r.jsx)(c.ZMr, {
+      onClick: D,
       isVisible: !0
     }), (0, r.jsxs)("div", {
       className: o()(T.container, G()),
@@ -134,10 +132,8 @@ function P(e) {
       })]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.YMn, {
-      backdropStyle: c.fCB.DARK,
-      onClose: D,
-      "aria-label": S.intl.string(S.t.cpT0Cg),
+    children: [(0, r.jsx)(c.ZMr, {
+      onClick: D,
       isVisible: !0
     }), (0, r.jsxs)("div", {
       className: o()(A.container, G()),

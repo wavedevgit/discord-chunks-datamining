@@ -36,7 +36,7 @@ function f(e) {
 }
 let _ = 8;
 var p = function(e) {
-  return e.SUBTLE = "SUBTLE", e.DARK = "DARK", e.BLUR = "BLUR", e.IMMERSIVE = "IMMERSIVE", e.LIGHTBOX = "LIGHTBOX", e.TOP_RADIAL = "TOP_RADIAL", e
+  return e.DARK = "DARK", e.LIGHTBOX = "LIGHTBOX", e.IMMERSIVE = "IMMERSIVE", e.SUBTLE = "SUBTLE", e.BLUR = "BLUR", e.TOP_RADIAL = "TOP_RADIAL", e
 }({});
 
 function h() {
