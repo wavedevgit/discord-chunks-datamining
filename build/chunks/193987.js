@@ -12,7 +12,7 @@ var r = t(481060),
 function s(n) {
   let e = (0, l.Xb)(n),
     t = n.isLockedThread();
-  if (e) return t ? (0, i.jsx)(r.sNh, {
+  if (!(!e || n.isModeratorReportChannel())) return t ? (0, i.jsx)(r.sNh, {
     id: "unlock-thread",
     label: n.isForumPost() ? o.intl.string(o.t["/OKSxs"]) : o.intl.string(o.t["jeyb/f"]),
     action: () => a.Z.unlockThread(n)
