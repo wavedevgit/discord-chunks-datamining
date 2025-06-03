@@ -36,7 +36,7 @@ let P = s.ZP.connectStores([I.default], () => ({
     user: n
   } = e, {
     analyticsLocations: i
-  } = (0, m.ZP)(g.Z.HOME_PAGE_PREMIUM_TAB), s = (0, E.xP)("ApplicationStoreHome"), p = (0, O.C)("ApplicationStoreHome"), h = (0, v.I5)(n), I = s && !h || p, P = (0, f.ZP)();
+  } = (0, m.ZP)(g.Z.HOME_PAGE_PREMIUM_TAB), s = (0, E.xP)("ApplicationStoreHome"), p = (0, O.C)("ApplicationStoreHome"), h = (0, v.I5)(n, S.p9.TIER_2), I = (s || p) && !h, P = (0, f.ZP)();
   return t ? (0, r.jsxs)("div", {
     className: T.homeWrapperNormal,
     children: [(0, r.jsx)(d.Z, {

@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 8d0d58fce1ff3824
+  Original File Name: 135b8807cd070931
 **/
 .scroller__95bea {
     display: flex;
@@ -1187,7 +1187,7 @@
 
 .visual-refresh .root__9c3be {
     background: none;
-    border: none;
+    border: 1px solid var(--border-normal);
     border-radius: var(--radius-lg)
 }
 
@@ -1346,4 +1346,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=8d0d58fce1ff3824.css.map*/
+/*# sourceMappingURL=135b8807cd070931.css.map*/
