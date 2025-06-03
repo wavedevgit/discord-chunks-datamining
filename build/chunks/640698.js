@@ -1,25 +1,25 @@
 /** Chunk was on 54433 **/
-n.d(t, {
-  F: () => r
+t.d(n, {
+  F: () => s
 });
-var i = n(255367);
-n(73800);
-var l = n(481060),
-  s = n(487292);
+var l = t(255367);
+t(73800);
+var i = t(481060),
+  r = t(487292);
 
-function r(e) {
+function s(e) {
   let {
-    text: t
+    text: n
   } = e;
-  return (0, i.jsx)("div", {
-    className: s.pillContainer,
-    children: (0, i.jsx)("div", {
-      className: s.pill,
-      children: (0, i.jsx)(l.Text, {
+  return (0, l.jsx)("div", {
+    className: r.pillContainer,
+    children: (0, l.jsx)("div", {
+      className: r.pill,
+      children: (0, l.jsx)(i.Text, {
         variant: "text-xxs/bold",
         color: "text-primary",
-        className: s.pillText,
-        children: t
+        className: r.pillText,
+        children: n
       })
     })
   })

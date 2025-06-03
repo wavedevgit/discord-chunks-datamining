@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   N3: () => y,
-  Z7: () => b,
+  Z7: () => E,
   ZP: () => O
 });
 var r = n(255367);
@@ -42,20 +42,36 @@ function g(e) {
   return e
 }
 
-function E(e, t) {
-  let n = (0, _.qw)(e, t);
-  return null != e.brandColorPrimary ? e.brandColorPrimary : n
-}
-
-function b(e) {
+function E(e) {
   let {
     profile: t,
     className: n
-  } = e, i = E(t, (0, _.nv)().hex()), o = (0, _.dG)(i, t);
-  return (0, r.jsx)("div", {
+  } = e, i = (0, _.TK)(t);
+  return null != i ? (0, r.jsx)("div", {
     className: a()(n, h.banner),
     style: {
-      background: o
+      background: i
+    }
+  }) : (0, r.jsx)(b, {
+    profile: t,
+    className: n
+  })
+}
+
+function b(e) {
+  var t;
+  let {
+    profile: n,
+    className: i
+  } = e, o = (0, _.nv)(), s = (0, _.qw)({
+    profile: n,
+    defaultColor: o.hex(),
+    forceDefaultColor: null != n.brandColorPrimary
+  }), l = null != (t = n.brandColorPrimary) ? t : s;
+  return (0, r.jsx)("div", {
+    className: a()(i, h.banner),
+    style: {
+      background: (0, _.dG)(l)
     }
   })
 }
@@ -149,7 +165,7 @@ function O(e) {
     onComplete: l
   })), (0, r.jsxs)("div", {
     className: a()(h.container, i),
-    children: [(0, r.jsx)(b, {
+    children: [(0, r.jsx)(E, {
       profile: t
     }), (0, r.jsx)(y, {
       onIconChange: n,

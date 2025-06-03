@@ -90,10 +90,7 @@ let C = () => (0, g.Lk)(document.body.style.getPropertyValue("--custom-app-panel
     return (0, i.jsx)(m.Z, {
       dismissibleContent: l.z.COLLECTIBLES_NAMEPLATE_SHOP_COACHMARK,
       inlineArt: !0,
-      tryItText: (0, i.jsx)(a.Text, {
-        variant: "text-sm/medium",
-        children: r
-      }),
+      tryItText: r,
       onTryFeature: s,
       header: (0, i.jsx)(a.X6q, {
         className: _.title,

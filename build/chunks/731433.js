@@ -1,6 +1,6 @@
 /** Chunk was on 18327 **/
 e.d(t, {
-  default: () => j
+  default: () => N
 });
 var r = e(255367);
 e(73800);
@@ -21,41 +21,41 @@ var s = e(990547),
   I = e(741245),
   k = e(474936),
   T = e(388032),
-  C = e(991405);
+  h = e(991405);
 
-function h(a) {
+function j(a) {
   let {
     user: t,
     deco: e
   } = a, s = (0, o.e7)([p.Z], () => p.Z.getStatus(t.id));
   return (0, r.jsxs)("div", {
-    className: C.avatarBackground,
+    className: h.avatarBackground,
     children: [(0, r.jsx)(_.Z, {
       user: t,
       guildId: void 0,
       avatarDecorationOverride: e,
       status: s,
-      className: C.avatar
+      className: h.avatar
     }), (0, r.jsx)("div", {
-      className: C.rect
+      className: h.rect
     }), (0, r.jsx)("div", {
-      className: C.rect
+      className: h.rect
     }), (0, r.jsx)("div", {
-      className: C.bottomOverlay
+      className: h.bottomOverlay
     })]
   })
 }
 
-function j(a) {
+function N(a) {
   var t;
   let {
     transitionState: e,
     onClose: _
   } = a, p = (0, v.Dt)(), {
-    theme: j
-  } = (0, i.TCT)(), N = (0, o.e7)([f.default], () => f.default.getCurrentUser()), {
-    purchases: y
-  } = (0, m.c7)(), A = null == (t = y.get("1225876188074082374")) ? void 0 : t.items, M = void 0 !== A ? A[0] : void 0, {
+    theme: N
+  } = (0, i.TCT)(), y = (0, o.e7)([f.default], () => f.default.getCurrentUser()), {
+    purchases: A
+  } = (0, m.c7)(), C = null == (t = A.get("1225876188074082374")) ? void 0 : t.items, M = void 0 !== C ? C[0] : void 0, {
     analyticsLocations: D
   } = (0, l.ZP)(c.Z.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL), b = (0, x.Z)({
     analyticsLocations: D
@@ -69,20 +69,20 @@ function j(a) {
   }), (0, r.jsxs)(i.Y0X, {
     transitionState: e,
     "aria-labelledby": p,
-    className: C.container,
-    children: [void 0 !== N && (0, r.jsx)(h, {
-      user: N,
+    className: h.container,
+    children: [void 0 !== y && (0, r.jsx)(j, {
+      user: y,
       deco: M
     }), (0, r.jsxs)(i.hzk, {
-      className: C.content,
-      children: [(0, r.jsx)(I.C, {
-        theme: j,
+      className: h.content,
+      children: [(0, r.jsx)(I.ZP, {
+        theme: N,
         premiumType: k.p9.TIER_2,
-        type: I.C.Types.PREMIUM_ACTIVATED
+        type: I.ZP.Types.PREMIUM_ACTIVATED
       }), (0, r.jsx)(i.Text, {
         variant: "text-md/medium",
         color: "text-normal",
-        className: C.bodyText,
+        className: h.bodyText,
         children: T.intl.format(T.t["9juoTE"], {})
       })]
     }), (0, r.jsx)(i.mzw, {
