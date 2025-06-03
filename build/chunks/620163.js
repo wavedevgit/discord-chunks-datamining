@@ -154,7 +154,8 @@ let e$ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       inputMode: tg,
       activeInputProfile: tp,
       isInputProfileCustom: th,
-      isActivitySharingExperimentEnabled: tf
+      isActivitySharingExperimentEnabled: tf,
+      isGoreContentFilteringEnabled: tb
     } = e;
     return Object.freeze({
       [eH.s6.SEARCH_NO_RESULTS]: {
@@ -428,17 +429,20 @@ let e$ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [eH.s6.SENSITIVE_CONTENT_FILTERS]: {
         section: eW.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eq.intl.string(eq.t["Hj/Bur"]), eq.intl.string(eq.t["N/oRIy"]), eq.intl.string(eq.t.QVdYsL), eq.intl.string(eq.t["aWD+tr"]), eq.intl.string(eq.t["5mnTa2"]), eq.intl.string(eq.t.K0OWPz)],
-        parent: eH.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY
+        parent: eH.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+        predicate: () => tb
       },
       [eH.s6.SEXUALLY_EXPLICIT_MEDIA_REDACTION]: {
         section: eW.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eq.intl.string(eq.t["Hj/Bur"]), eq.intl.string(eq.t["N/oRIy"]), eq.intl.string(eq.t.QVdYsL), eq.intl.string(eq.t["aWD+tr"]), eq.intl.string(eq.t["5mnTa2"])],
-        parent: eH.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY
+        parent: eH.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+        predicate: () => tb
       },
       [eH.s6.GORE_MEDIA_REDACTION]: {
         section: eW.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eq.intl.string(eq.t["Hj/Bur"]), eq.intl.string(eq.t["N/oRIy"]), eq.intl.string(eq.t.QVdYsL), eq.intl.string(eq.t["aWD+tr"]), eq.intl.string(eq.t.K0OWPz)],
-        parent: eH.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY
+        parent: eH.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+        predicate: () => tb
       },
       [eH.s6.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2]: {
         section: eW.oAB.CONTENT_AND_SOCIAL,
