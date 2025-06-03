@@ -1,6 +1,6 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
-  Z: () => A
+  Z: () => R
 });
 var r = n(255367),
   i = n(73800),
@@ -126,7 +126,7 @@ function T(e) {
   }
 }
 
-function R(e) {
+function A(e) {
   let {
     style: t,
     withGuildIcon: n
@@ -147,12 +147,12 @@ function R(e) {
     })
   })
 }
-let A = i.memo(function(e) {
+let R = i.memo(function(e) {
   let {
     thread: t,
     isSelectedChannel: l,
     isSelectedVoice: w,
-    isLast: A,
+    isLast: R,
     withGuildIcon: D
   } = e, L = (0, a.e7)([O.ZP], () => O.ZP.getVoiceStatesForChannel(t), [t]), M = (0, a.e7)([y.Z], () => y.Z.hasVideo(t.id)), {
     unread: k,
@@ -199,7 +199,7 @@ let A = i.memo(function(e) {
     channelName: t.name
   }) : x.intl.formatToPlainString(x.t["0nZpiI"], {
     channelName: t.name
-  }), X = (0, p.Q3)("GuildSidebarThreadListEntry") ? T : R;
+  }), X = (0, p.Q3)("GuildSidebarThreadListEntry") ? T : A;
   return (0, r.jsxs)("li", {
     role: Y,
     className: o()(P.containerDefault, {
@@ -207,7 +207,7 @@ let A = i.memo(function(e) {
     }),
     children: [(0, r.jsx)(X, {
       withGuildIcon: D
-    }), A ? null : (0, r.jsx)(X, {
+    }), R ? null : (0, r.jsx)(X, {
       withGuildIcon: D,
       inverted: !0,
       style: {

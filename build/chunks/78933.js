@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(867176),
   v = n(537006),
   T = n(483517),
-  N = n(483424),
-  I = n(681837),
+  I = n(483424),
+  N = n(681837),
   y = n(638970),
   A = n(502762),
   P = n(530),
@@ -45,8 +45,8 @@ var i = n(255367),
   F = n(474376),
   H = n(431282),
   z = n(213928),
-  W = n(587243),
-  Y = n(383832),
+  Y = n(587243),
+  W = n(383832),
   K = n(981631),
   q = n(228168),
   X = n(388032),
@@ -96,7 +96,7 @@ function ee(e) {
   })), []);
   let ec = (0, l.e7)([L.Z], () => L.Z.getStatus(t.id)),
     ed = k.Cr.useSetting(),
-    eu = (0, W.F)(ed),
+    eu = (0, Y.F)(ed),
     {
       expiringStatusProfileFeedback: em
     } = p.Y.useExperiment({
@@ -107,7 +107,7 @@ function ee(e) {
     eg = (0, l.e7)([B.Z], () => B.Z.hidePersonalInformation),
     ep = (0, h.p)(),
     eh = k.Sb.useSetting(),
-    ef = (0, W.I)(ec),
+    ef = (0, Y.I)(ec),
     eb = (0, F.g)(n),
     e_ = (0, f.Z)({
       analyticsLocations: es
@@ -133,7 +133,7 @@ function ee(e) {
         sourceAnalyticsLocations: es
       }, el, e))
     },
-    eN = (null == er ? void 0 : er.profileEffectId) != null && !ej.current;
+    eI = (null == er ? void 0 : er.profileEffectId) != null && !ej.current;
   return (0, i.jsx)(u.Gt, {
     value: es,
     children: (0, i.jsx)(_.Mt, {
@@ -168,7 +168,7 @@ function ee(e) {
               onCloseProfile: n,
               prompt: eE ? eO : null
             })]
-          }), eN && (0, i.jsx)(b.Z, {
+          }), eI && (0, i.jsx)(b.Z, {
             profileEffectId: null == er ? void 0 : er.profileEffectId,
             isHovering: eo
           }), (0, i.jsxs)(a.Ttm, {
@@ -190,7 +190,7 @@ function ee(e) {
                 shouldGlowTenureBadge: ej.current
               }),
               nicknameIcons: (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(I.Z, {
+                children: [(0, i.jsx)(N.Z, {
                   userId: t.id
                 }), (0, i.jsx)(R.Z, {
                   user: t,
@@ -210,7 +210,7 @@ function ee(e) {
               currentUser: t,
               displayProfile: er,
               onOpenUserProfileModal: eT
-            }) : (0, i.jsx)(N.Z, {
+            }) : (0, i.jsx)(I.Z, {
               user: t,
               currentUser: t,
               displayProfile: er,
@@ -317,7 +317,7 @@ function ee(e) {
                     icon: a.lMe,
                     label: X.intl.string(X.t.oMNyYG),
                     onClick: () => {
-                      n(), (0, Y.Z)()
+                      n(), (0, W.Z)()
                     },
                     renderSubmenu: e => {
                       let {

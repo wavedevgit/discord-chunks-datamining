@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => Z
 }), n(388685), n(361932), n(187205), n(415506);
@@ -169,7 +169,7 @@ function Z(e) {
       setSelectedFilter: j
     }), F && (0, r.jsx)(D, {}), (0, r.jsx)(E.Z, {
       className: w.messageList,
-      renderMessageGroup: A,
+      renderMessageGroup: R,
       messages: H,
       loading: h || k === C.jd.Loading,
       analyticsName: "Notifications Inbox",
@@ -178,7 +178,7 @@ function Z(e) {
         let t = null != a && a.length > 0 ? a[a.length - 1].id : null;
         d && !h && T(null, t), k !== C.jd.Done && k !== C.jd.Loading && U(e)
       },
-      renderEmptyState: R,
+      renderEmptyState: A,
       setInboxReadState: Z,
       ignoreGrouping: _ !== x.V5.ALL
     })]
@@ -193,7 +193,7 @@ function T(e, t) {
   null != e && null != n && (l = n === P.NgX.ALL_SERVERS ? null : e.getGuildId()), d.Z.fetchRecentMentions(t, P.DJj, l, r, i)
 }
 
-function R() {
+function A() {
   return (0, r.jsx)("div", {
     className: w.emptyStateContainer,
     children: (0, r.jsxs)(u.Kqy, {
@@ -227,7 +227,7 @@ function R() {
   })
 }
 
-function A(e, t) {
+function R(e, t) {
   return (0, r.jsx)(j.B, {
     message: e[0],
     goToSidebar: t,

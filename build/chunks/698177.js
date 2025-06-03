@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(481060),
   c = n(144114),
   u = n(742458),
@@ -18,7 +18,7 @@ var r = n(255367),
   f = n(893354),
   _ = n(20493);
 let x = () => {
-  let [e, t] = i.useState(""), [l, x] = i.useState(""), [E, b] = i.useState(!1), [v, I] = i.useState(!1), [O, S] = i.useState(null), [y, j] = i.useState(null), N = (0, a.e7)([d.Z], () => d.Z.getCountryCode()), C = N.code.split(" ")[0], T = async () => {
+  let [e, t] = i.useState(""), [l, x] = i.useState(""), [E, b] = i.useState(!1), [v, I] = i.useState(!1), [O, S] = i.useState(null), [y, j] = i.useState(null), N = (0, o.e7)([d.Z], () => d.Z.getCountryCode()), C = N.code.split(" ")[0], T = async () => {
     try {
       await c.Z.resendCode(e)
     } catch (e) {
@@ -40,7 +40,7 @@ let x = () => {
     children: [(0, r.jsx)(g.Ee, {
       src: n(292824)
     }), (0, r.jsxs)(g.Dx, {
-      className: o()(_.marginTop20, f.flex, f.justifyCenter, f.alignCenter),
+      className: a()(_.marginTop20, f.flex, f.justifyCenter, f.alignCenter),
       children: [m.intl.string(m.t.WWzQtb), (0, r.jsx)(s.owK, {
         size: "md",
         color: "currentColor",

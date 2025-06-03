@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => E
 }), n(388685);
@@ -89,8 +89,8 @@ function E(e) {
         return null != t && b.Z.can(u.gl, t)
       }),
       T = f && null != (l = null == (i = g.Z.getChannel(c)) ? void 0 : i.isGuildStageVoice()) && l,
-      R = !!f && null != p.Z.getActiveStreamForUser(N, e),
-      A = (0, a.aK)(p.Z.getAllApplicationStreams()).some(t => t.guildId === e),
+      A = !!f && null != p.Z.getActiveStreamForUser(N, e),
+      R = (0, a.aK)(p.Z.getAllApplicationStreams()).some(t => t.guildId === e),
       D = f && w,
       L = (() => {
         if (x) return j.length > 0;
@@ -101,7 +101,7 @@ function E(e) {
         return !1
       })(),
       M = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return f ? (m = !0, y = (null == r ? void 0 : r.channel_id) === c, v = T, _ = D, S = R, E = M) : (m = P, y = null != r, v = Z, _ = I, S = A, E = L), {
+    return f ? (m = !0, y = (null == r ? void 0 : r.channel_id) === c, v = T, _ = D, S = A, E = M) : (m = P, y = null != r, v = Z, _ = I, S = R, E = L), {
       audio: m,
       video: _,
       screenshare: S,

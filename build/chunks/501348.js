@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(786761),
   v = n(3148),
   T = n(739566),
-  N = n(753206),
-  I = n(921801),
+  I = n(753206),
+  N = n(921801),
   y = n(594174),
   A = n(358085),
   P = n(210887),
@@ -77,11 +77,11 @@ function z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let W = {
+let Y = {
     COZY: "cozy",
     COMPACT: "compact"
   },
-  Y = (0, C.hQ)(),
+  W = (0, C.hQ)(),
   K = (0, C.hQ)(),
   q = (0, C.hQ)(),
   X = "1337",
@@ -144,7 +144,7 @@ class $ extends r.Component {
     return A.isPlatformEmbedded ? (0, i.jsxs)(u.xJW, {
       className: G.marginTop20,
       children: [(0, i.jsx)(u.vwX, {
-        id: Y,
+        id: W,
         tag: u.RB0.H5,
         className: l()(V.title, G.marginBottom8),
         children: U.intl.string(U.t.i19n5O)
@@ -160,7 +160,7 @@ class $ extends r.Component {
         stickToMarkers: !0,
         onValueChange: this.handleZoomChange,
         onValueRender: this.handleSliderRender,
-        "aria-labelledby": Y
+        "aria-labelledby": W
       }), (0, i.jsx)(u.R94, {
         type: u.R94.Types.DESCRIPTION,
         children: U.intl.format(U.t.OMkSUl, {
@@ -250,7 +250,7 @@ class $ extends r.Component {
         className: l()(V.preview, G.marginBottom40, e ? V.compactPreview : void 0, "group-spacing-".concat(null != n ? n : e ? M.c8 : M.pq)),
         outline: !0,
         "aria-hidden": !0,
-        children: s.map((t, n) => (0, i.jsx)(N.Z, {
+        children: s.map((t, n) => (0, i.jsx)(I.Z, {
           author: (0, T.ZH)(t),
           message: t,
           compact: e,
@@ -300,7 +300,7 @@ class $ extends r.Component {
     }) : (0, i.jsxs)(u.xJW, {
       className: G.marginTop8,
       title: (0, i.jsx)(J, {}),
-      children: [(0, i.jsx)(Z.i, {}), (0, i.jsx)(I.F, {
+      children: [(0, i.jsx)(Z.i, {}), (0, i.jsx)(N.F, {
         setting: k.s6.APPEARANCE_ICON,
         children: (0, i.jsx)(w.c, {})
       }), (0, i.jsx)(u.j7V, {
@@ -319,13 +319,13 @@ class $ extends r.Component {
       children: [(0, i.jsx)(u.FXm, {
         options: [{
           name: U.intl.string(U.t.KZIadn),
-          value: W.COZY
+          value: Y.COZY
         }, {
           name: U.intl.string(U.t["6+nTjY"]),
-          value: W.COMPACT
+          value: Y.COMPACT
         }],
         onChange: this.handleMessageDisplayModeChange,
-        value: this.props.messageDisplayCompact ? W.COMPACT : W.COZY
+        value: this.props.messageDisplayCompact ? Y.COMPACT : Y.COZY
       }), (0, i.jsx)(u.j7V, {
         value: this.props.messageDisplayCompact && this.props.displayCompactAvatars,
         disabled: !this.props.messageDisplayCompact,
@@ -340,7 +340,7 @@ class $ extends r.Component {
       isRefreshEnabled: e,
       density: t
     } = this.props;
-    return e ? (0, i.jsxs)(I.F, {
+    return e ? (0, i.jsxs)(N.F, {
       setting: k.s6.APPEARANCE_LIST_SPACING,
       children: [(0, i.jsxs)(u.xJW, {
         title: (0, i.jsx)("div", {
@@ -418,16 +418,16 @@ class $ extends r.Component {
     return (0, i.jsxs)(u.hjN, {
       tag: u.RB0.H1,
       title: U.intl.string(U.t["iHH+k5"]),
-      children: [(0, i.jsxs)(I.F, {
+      children: [(0, i.jsxs)(N.F, {
         setting: k.s6.APPEARANCE_THEME,
         children: [this.renderPreview(), this.renderTheme()]
-      }), (0, i.jsx)(I.F, {
+      }), (0, i.jsx)(N.F, {
         setting: k.s6.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
         children: this.renderDisplayMode()
-      }), this.renderListSpacing(), (0, i.jsx)(I.F, {
+      }), this.renderListSpacing(), (0, i.jsx)(N.F, {
         setting: k.s6.APPEARANCE_SCALING_SPACING,
         children: this.renderScalingAndSpacing()
-      }), (0, i.jsxs)(I.F, {
+      }), (0, i.jsxs)(N.F, {
         setting: k.s6.APPEARANCE_TIMESTAMP_HOUR_CYCLE,
         children: [this.renderTimestampHourCycle(), (0, i.jsx)(u.$i$, {
           className: G.marginTop8
@@ -483,7 +483,7 @@ class $ extends r.Component {
       let {
         value: t
       } = e;
-      D.jU.updateSetting(t === W.COMPACT), (0, f.ZZ)()
+      D.jU.updateSetting(t === Y.COMPACT), (0, f.ZZ)()
     }), F(this, "handleUIDensityChange", e => {
       let {
         value: t
@@ -496,10 +496,10 @@ class ee extends $ {
   render() {
     let {
       density: e
-    } = this.props, t = (0, i.jsxs)(I.F, {
+    } = this.props, t = (0, i.jsxs)(N.F, {
       setting: k.s6.APPEARANCE_THEME,
       children: [this.renderPreview(), this.renderTheme()]
-    }), n = (0, i.jsx)(I.F, {
+    }), n = (0, i.jsx)(N.F, {
       setting: k.s6.APPEARANCE_ICON,
       children: (0, i.jsx)(w.c, {})
     }), r = [{
@@ -511,7 +511,7 @@ class ee extends $ {
     }, {
       name: U.intl.string(U.t["4cuYHx"]),
       value: c.Pi.COZY
-    }], s = (0, i.jsxs)(I.F, {
+    }], s = (0, i.jsxs)(N.F, {
       setting: k.s6.APPEARANCE_LIST_SPACING,
       children: [(0, i.jsxs)(u.xJW, {
         title: (0, i.jsx)(u.Text, {
@@ -531,7 +531,7 @@ class ee extends $ {
       }), (0, i.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), l = (0, i.jsxs)(I.F, {
+    }), l = (0, i.jsxs)(N.F, {
       setting: k.s6.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
       children: [(0, i.jsxs)(u.Kqy, {
         gap: 8,
@@ -557,13 +557,13 @@ class ee extends $ {
         }), (0, i.jsx)(u.FXm, {
           options: [{
             name: U.intl.string(U.t.Jqj4cX),
-            value: W.COZY
+            value: Y.COZY
           }, {
             name: U.intl.string(U.t["1JNcPT"]),
-            value: W.COMPACT
+            value: Y.COMPACT
           }],
           onChange: this.handleMessageDisplayModeChange,
-          value: this.props.messageDisplayCompact ? W.COMPACT : W.COZY
+          value: this.props.messageDisplayCompact ? Y.COMPACT : Y.COZY
         }), this.props.messageDisplayCompact && (0, i.jsx)(u.j7V, {
           className: V.compactModeToggle,
           hideBorder: !0,
@@ -577,7 +577,7 @@ class ee extends $ {
       }), this.renderMessageGroupSpacingSlider(), (0, i.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), a = (0, i.jsxs)(I.F, {
+    }), a = (0, i.jsxs)(N.F, {
       setting: k.s6.APPEARANCE_SCALING_SPACING,
       children: [(0, i.jsx)(u.Text, {
         variant: "text-lg/medium",
@@ -586,7 +586,7 @@ class ee extends $ {
       }), this.renderFontScaleSlider(), this.renderZoomSlider(), (0, i.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), o = (0, i.jsx)(I.F, {
+    }), o = (0, i.jsx)(N.F, {
       setting: k.s6.APPEARANCE_TIMESTAMP_HOUR_CYCLE,
       children: this.renderTimestampHourCycle()
     }), d = (0, i.jsx)(u.Text, {

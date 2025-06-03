@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   B: () => F
 });
@@ -32,8 +32,8 @@ var r = n(255367),
   N = n(592125),
   Z = n(720202),
   T = n(430824),
-  R = n(375954),
-  A = n(306680),
+  A = n(375954),
+  R = n(306680),
   D = n(594174),
   L = n(709054),
   M = n(987889),
@@ -81,9 +81,9 @@ function F(e) {
     groupedMessages: l
   } = e, {
     params: s
-  } = (0, a.$B)(), f = (0, c.e7)([N.Z], () => N.Z.getChannel(t.channel_id)), g = (0, c.e7)([A.ZP], () => {
+  } = (0, a.$B)(), f = (0, c.e7)([N.Z], () => N.Z.getChannel(t.channel_id)), g = (0, c.e7)([R.ZP], () => {
     if (null == f) return !1;
-    let e = A.ZP.getTrackedAckMessageId(null == f ? void 0 : f.id);
+    let e = R.ZP.getTrackedAckMessageId(null == f ? void 0 : f.id);
     return L.default.compare(t.id, e) > 0
   }, [f, t.id]);
   return null == t || null == f ? null : (0, r.jsx)(u.P3F, {
@@ -147,7 +147,7 @@ function z(e) {
     user: t.author,
     compact: !0,
     isRepliedMessage: !0
-  }), R = (0, r.jsxs)("div", {
+  }), A = (0, r.jsxs)("div", {
     className: B.usernameTagContainer,
     children: [(0, r.jsx)(E.Z, {
       channel: n,
@@ -215,7 +215,7 @@ function z(e) {
                 color: O
               },
               children: (0, r.jsx)(b.Z, {
-                children: R
+                children: A
               })
             }), N]
           }) : (0, r.jsx)(b.Z, {
@@ -339,9 +339,9 @@ function K(e) {
       formatInline: !0,
       noStyleAndInteraction: !0
     }), a = function(e) {
-      let t = (0, c.e7)([R.Z], () => {
+      let t = (0, c.e7)([A.Z], () => {
           var t, n;
-          return (null == (t = e.messageReference) ? void 0 : t.message_id) == null ? null : R.Z.getMessage(e.channel_id, null == (n = e.messageReference) ? void 0 : n.message_id)
+          return (null == (t = e.messageReference) ? void 0 : t.message_id) == null ? null : A.Z.getMessage(e.channel_id, null == (n = e.messageReference) ? void 0 : n.message_id)
         }),
         n = (0, c.e7)([D.default], () => D.default.getCurrentUser());
       return e.type === U.uaV.REPLY && null != t && t.author.id === (null == n ? void 0 : n.id)

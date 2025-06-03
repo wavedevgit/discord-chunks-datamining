@@ -1,4 +1,4 @@
-/** Chunk was on 79365 **/
+/** Chunk was on 86258 **/
 "use strict";
 r.d(t, {
   Z: () => y
@@ -78,7 +78,7 @@ let O = {
       color: w = l.Ttl.BRAND
     } = e, {
       analyticsLocations: E
-    } = (0, s.ZP)(), k = i.useRef(null), N = (0, a.Z)(k), S = (0, f.hv)("CollectiblesShopGiftButton"), I = (0, p.sp)();
+    } = (0, s.ZP)(), k = i.useRef(null), S = (0, a.Z)(k), N = (0, f.hv)("CollectiblesShopGiftButton"), I = (0, p.sp)();
     return (0, b.x6)(t) ? null : (0, n.jsx)(l.ua7, {
       text: x.intl.string(x.t["JCFN//"]),
       delay: P,
@@ -127,14 +127,14 @@ let O = {
               giftingOrigin: h.Wt.SHOP_PAGE,
               analyticsLocations: E,
               returnRef: y,
-              variantsReturnStyle: S,
+              variantsReturnStyle: N,
               onClose: null != j ? e => {
                 e && j()
               } : void 0
             })
           },
           children: C ? (0, n.jsx)(u.Z, {
-            hovered: N,
+            hovered: S,
             isContentDismissed: !0,
             themeOverride: g.BR.DARK,
             boxColors: O

@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => q
 }), n(388685), n(415506);
@@ -32,8 +32,8 @@ var r = n(255367),
   N = n(496675),
   Z = n(306680),
   T = n(9156),
-  R = n(979651),
-  A = n(934415),
+  A = n(979651),
+  R = n(934415),
   D = n(98597),
   L = n(648501),
   M = n(473403),
@@ -90,7 +90,7 @@ class Y extends D.ZP {
     let {
       channel: e
     } = this.props;
-    return (0, A.rY)(e, R.Z, I.Z)
+    return (0, R.rY)(e, A.Z, I.Z)
   }
   getModeClass() {
     let {
@@ -347,7 +347,7 @@ function q(e) {
     isSubscriptionGated: m,
     needSubscriptionToAccess: y,
     enableConnectedUserLimit: v || n.userLimit > 0 && n.userLimit < U.xGv
-  }), R = e.connected && null == I;
+  }), A = e.connected && null == I;
   return (0, r.jsx)(K, W(z({
     categoryCollapsed: h,
     connectAction: p,
@@ -357,7 +357,7 @@ function q(e) {
     needSubscriptionToAccess: y
   }, c, d, e), {
     isFavoriteSuggestion: l && !O,
-    forceShowButtons: R,
+    forceShowButtons: A,
     channelInfo: I,
     resolvedUnreadSetting: u
   }))

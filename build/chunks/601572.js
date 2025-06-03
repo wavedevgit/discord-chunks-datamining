@@ -1,4 +1,4 @@
-/** Chunk was on 22237 **/
+/** Chunk was on 48192 **/
 n.d(t, {
   default: () => v
 }), n(388685);
@@ -31,8 +31,8 @@ function v(e) {
     videoEnabled: n,
     onEnable: v,
     onClose: A
-  } = e, E = y.Z.getCameraComponent(), P = (0, _.Dt)(), x = (0, m.Z)(), w = p.qF.useSetting(), [N, L] = r.useState((0, g.P)(S.default.getCurrentUser())), R = (0, l.O)(), {
-    analyticsLocations: D
+  } = e, E = y.Z.getCameraComponent(), P = (0, _.Dt)(), x = (0, m.Z)(), w = p.qF.useSetting(), [N, L] = r.useState((0, g.P)(S.default.getCurrentUser())), D = (0, l.O)(), {
+    analyticsLocations: R
   } = (0, u.ZP)(s.Z.CAMERA_PREVIEW), k = r.useRef(null);
   r.useEffect(() => {
     O.default.track(T.rMx.OPEN_MODAL, {
@@ -66,13 +66,13 @@ function v(e) {
           return e
         }({
           page: T.ZY5.PREVIEW_CAMERA_MODAL
-        }, R.location)
+        }, D.location)
       })
     } catch (e) {}
     await A(), (0, b.Up)(N)
   };
   return (0, a.jsx)(u.Gt, {
-    value: D,
+    value: R,
     children: (0, a.jsx)(c.Z, {
       page: T.ZY5.PREVIEW_CAMERA_MODAL,
       children: (0, a.jsxs)(o.Y0X, {

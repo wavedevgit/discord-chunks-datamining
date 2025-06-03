@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => N
 }), n(388685), n(361932), n(187205), n(539854);
@@ -102,15 +102,15 @@ function I() {
     }),
     T = P(c.hGI, w.filter(e => null != e && !x.includes(e.id))),
     {
-      enabled: R
+      enabled: A
     } = u.c.useExperiment({
       location: "FavoritesTooltip"
     }, {
       autoTrackExposure: !0
     }),
-    A = P(R ? c.iWm : c.nG3, I);
+    R = P(A ? c.iWm : c.nG3, I);
   return (0, r.jsxs)(r.Fragment, {
-    children: [Z, N, T, A]
+    children: [Z, N, T, R]
   })
 }
 

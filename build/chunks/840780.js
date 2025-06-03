@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => eO
 }), n(388685), n(539854);
@@ -32,8 +32,8 @@ var r = n(255367),
   N = n(436774),
   Z = n(605236),
   T = n(243778),
-  R = n(594190),
-  A = n(925329),
+  A = n(594190),
+  R = n(925329),
   D = n(102172),
   L = n(74299),
   M = n(914923),
@@ -224,10 +224,10 @@ class ey extends i.PureComponent {
       })
     });
     let v = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(A.Z, {
+      children: [(0, r.jsx)(R.Z, {
         className: ep.gameIcon,
         game: n,
-        size: A.Z.Sizes.SMALL
+        size: R.Z.Sizes.SMALL
       }), (0, r.jsx)(j.j, {
         isForceShowSharingPopout: d,
         setIsForceShowSharingPopout: f,
@@ -333,7 +333,7 @@ let eO = (0, b.Z)(function(e) {
       return i
     }(e, ["guildId"]);
   let o = (0, u.e7)([W.default], () => W.default.getId()),
-    s = (0, u.e7)([R.ZP, en.Z], () => (0, U.Z)(R.ZP, en.Z)),
+    s = (0, u.e7)([A.ZP, en.Z], () => (0, U.Z)(A.ZP, en.Z)),
     a = (0, u.e7)([ee.Z, Y.Z], () => Y.Z.getChannel(ee.Z.getVoiceChannelId())),
     c = (0, u.e7)([_.ZP], () => _.ZP.getConnectedActivityChannelId()),
     h = (0, u.e7)([Y.Z], () => Y.Z.getChannel(c)),
@@ -347,7 +347,7 @@ let eO = (0, b.Z)(function(e) {
     x = (0, u.e7)([_.ZP], () => _.ZP.getCurrentEmbeddedActivity()),
     I = (0, C.Z)() && null != x && (0, O.R)(),
     N = (0, u.e7)([Q.Z], () => (0, L.Z)(Q.Z) && (0, ei.isWindows)()),
-    A = (0, u.e7)([J.Z], () => null != o ? J.Z.findActivity(o, e => e.type === ec.IIU.PLAYING) : null),
+    R = (0, u.e7)([J.Z], () => null != o ? J.Z.findActivity(o, e => e.type === ec.IIU.PLAYING) : null),
     M = null != f && f.ownerId === o && f.state !== ec.jm8.ENDED,
     k = (0, u.e7)([et.default, $.Z], () => null != h ? (0, P.F6)(h, et.default, $.Z) : void 0),
     G = (0, B.Z)(),
@@ -369,7 +369,7 @@ let eO = (0, b.Z)(function(e) {
   return (0, r.jsx)(ey, em(eg({}, l), {
     guildId: n,
     canGoLive: N || I || void 0 !== S,
-    activity: A,
+    activity: R,
     embeddedActivity: b,
     userId: o,
     runningGame: null != S ? S : s,

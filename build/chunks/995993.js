@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   m: () => S
 });
@@ -74,8 +74,8 @@ function S(e) {
         }), i))
       }
     })
-  }, [t]), R = null;
-  return x && !I && !w || S || N || (R = (0, r.jsx)(a.IGR, {
+  }, [t]), A = null;
+  return x && !I && !w || S || N || (A = (0, r.jsx)(a.IGR, {
     color: s.Z.colors.BADGE_BRAND_BG.css,
     text: C.intl.string(C.t.y2b7CA),
     className: j.newChannel
@@ -90,6 +90,6 @@ function S(e) {
     selected: S,
     onClick: Z,
     onContextMenu: T,
-    trailing: R
+    trailing: A
   })
 }

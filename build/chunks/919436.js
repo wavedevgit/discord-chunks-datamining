@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => L
 }), n(415506), n(388685);
@@ -63,20 +63,20 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = {
+let A = {
   friction: 28,
   tension: 600
 };
 
-function A(e) {
+function R(e) {
   switch (e) {
     case "height":
     case "opacity":
       return Z({
         duration: 150
-      }, R);
+      }, A);
     case "scale":
-      return Z({}, R);
+      return Z({}, A);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
@@ -91,7 +91,7 @@ class D extends(r = l.PureComponent) {
       height: 1,
       opacity: 1,
       scale: 1,
-      config: A
+      config: R
     }).start().then(() => this.setState({
       animating: !1
     }))
@@ -105,7 +105,7 @@ class D extends(r = l.PureComponent) {
       scale: 1,
       opacity: 1,
       height: 1,
-      config: A
+      config: R
     }).start().then(e)
   }
   componentWillLeave(e) {
@@ -119,7 +119,7 @@ class D extends(r = l.PureComponent) {
       height: 0,
       opacity: 0,
       scale: 0,
-      config: A
+      config: R
     }).start().then(e))
   }
   componentWillUnmount() {
@@ -226,7 +226,7 @@ class D extends(r = l.PureComponent) {
         scale: 0,
         height: 0,
         opacity: 0,
-        config: A
+        config: R
       })
     }), N(this, "handleContextMenu", e => {
       let {

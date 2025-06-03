@@ -47,8 +47,8 @@ let _ = e => {
     } = (0, d.ZP)(c.Z.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
       cancelSubscription: v,
       error: T,
-      submitting: N
-    } = _(S), I = async () => {
+      submitting: I
+    } = _(S), N = async () => {
       await v(x.id) && E()
     }, y = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.CHANNEL), A = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.INTANGIBLE), P = l()(x.currentPeriodEnd).format("MMMM Do, YYYY"), R = f.intl.formatToPlainString(f.t.KsMRPz, {
       numChannels: y.length,
@@ -91,8 +91,8 @@ let _ = e => {
         className: b.footer,
         children: [(0, i.jsx)(a.zxk, {
           color: a.zxk.Colors.RED,
-          onClick: I,
-          submitting: N,
+          onClick: N,
+          submitting: I,
           children: f.intl.string(f.t.F6lUDA)
         }), (0, i.jsx)(a.zxk, {
           look: a.zxk.Looks.LINK,

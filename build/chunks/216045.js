@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(296810),
   v = n(678135),
   T = n(610794),
-  N = n(935147),
-  I = n(643879),
+  I = n(935147),
+  N = n(643879),
   y = n(373230),
   A = n(246946),
   P = n(25990),
@@ -55,7 +55,7 @@ function F() {
       pendingBio: H,
       pendingAvatar: z
     } = F,
-    W = function(e, t) {
+    Y = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -70,7 +70,7 @@ function F() {
       }
       return r
     }(F, ["pendingBio", "pendingAvatar"]),
-    Y = (0, I.SD)({
+    W = (0, N.SD)({
       userId: n.id,
       image: z
     }),
@@ -135,8 +135,8 @@ function F() {
         canUsePremiumCustomization: X,
         onUpsellClick: L.Z,
         pendingBio: q
-      }, W), t = t = {
-        pendingAvatar: Y,
+      }, Y), t = t = {
+        pendingAvatar: W,
         showNameplatePreview: !0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
@@ -156,7 +156,7 @@ function F() {
       active: ed,
       children: (0, i.jsx)("div", {
         ref: eu,
-        children: (0, i.jsx)(N.Z, {
+        children: (0, i.jsx)(I.Z, {
           user: n,
           shouldShow: ed,
           isVisible: ea

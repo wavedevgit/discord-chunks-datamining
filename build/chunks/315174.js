@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   ZP: () => M,
   wD: () => T
@@ -162,7 +162,7 @@ let T = e => {
   })
 };
 
-function R(e) {
+function A(e) {
   let {
     guild: t
   } = e;
@@ -174,7 +174,7 @@ function R(e) {
   })
 }
 
-function A(e) {
+function R(e) {
   var t;
   let {
     bannerVisible: n,
@@ -190,7 +190,7 @@ function A(e) {
     children: [(0, r.jsx)(_.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === j._ && (0, r.jsx)(Z, {}), (0, r.jsx)(R, {
+    }), i.id === j._ && (0, r.jsx)(Z, {}), (0, r.jsx)(A, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
       className: x.headerButton,
@@ -282,7 +282,7 @@ function L(e) {
             children: [(0, r.jsx)(_.Z, {
               guild: l,
               isBannerVisible: t
-            }), l.id === j._ && (0, r.jsx)(Z, {}), (0, r.jsx)(R, {
+            }), l.id === j._ && (0, r.jsx)(Z, {}), (0, r.jsx)(A, {
               guild: l
             })]
           }), (0, r.jsx)("div", {
@@ -334,7 +334,7 @@ let M = i.memo(function(e) {
     children: E,
     headerClassName: Z,
     communityInfoVisible: T,
-    hasSubheader: R
+    hasSubheader: A
   } = e, D = _.hasFeature(C.oNc.ANIMATED_BANNER), M = (0, p.Z)(_), U = !M && _.hasCommunityInfoSubheader(), G = !M && T, B = (0, v.xR)(j) && D && !m, [V, H] = i.useState(!1), F = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, Y = i.useRef(void 0), K = y.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !F.current && K) return H(!0), Y.current = setTimeout(() => {
@@ -381,7 +381,7 @@ let M = i.memo(function(e) {
           [x.hasBanner]: q(),
           [x.bannerVisible]: n,
           [e]: !Q && n,
-          [x.communityInfoVisible]: G || R && U,
+          [x.communityInfoVisible]: G || A && U,
           [x.invitesRefresh]: X
         }),
         onMouseDown: f,
@@ -395,14 +395,14 @@ let M = i.memo(function(e) {
             className: o()(x.headerContent, x.primaryInfo),
             children: X ? (0, r.jsx)(L, I(P({}, J), {
               children: E
-            })) : (0, r.jsx)(A, I(P({}, J), {
+            })) : (0, r.jsx)(R, I(P({}, J), {
               children: E
             }))
           }), U && (0, r.jsx)(N, {
             guild: _,
             controller: l,
             hasBanner: null != j,
-            hasSubheader: null != R && R
+            hasSubheader: null != A && A
           })]
         }), null != j ? (0, r.jsx)(w, {
           guild: _,

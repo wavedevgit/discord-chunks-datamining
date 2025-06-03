@@ -1,9 +1,9 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   P: () => N,
   Qo: () => Z,
   ZP: () => w,
-  kw: () => R,
+  kw: () => A,
   rj: () => T
 });
 var r = n(255367),
@@ -76,13 +76,13 @@ let I = i.memo(function(e) {
         children: Z
       } = e,
       T = (0, g.Q3)("CategoryChannel"),
-      R = (0, a.e7)([O.ZP], () => O.ZP.isChannelMuted(l.getGuildId(), l.id)),
-      A = (0, a.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
+      A = (0, a.e7)([O.ZP], () => O.ZP.isChannelMuted(l.getGuildId(), l.id)),
+      R = (0, a.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
       D = (0, a.e7)([y.Z], () => y.Z.can(C.Plq.MANAGE_CHANNELS, l));
     t = null != w ? I > w ? S.containerDragAfter : S.containerDragBefore : S.containerDefault;
     let L = i.useCallback(() => {
-        A ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
-      }, [l.id, A]),
+        R ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
+      }, [l.id, R]),
       M = i.useCallback(e => {
         if ("null" !== l.id) {
           let t = b.Z.getGuild(l.getGuildId());
@@ -146,8 +146,8 @@ let I = i.memo(function(e) {
           children: (0, r.jsxs)("div", {
             ref: F,
             className: o()(S.iconVisibility, S.wrapper, {
-              [S.collapsed]: A,
-              [S.muted]: R,
+              [S.collapsed]: R,
+              [S.muted]: A,
               [S.clickable]: !0
             }),
             onContextMenu: M,
@@ -160,7 +160,7 @@ let I = i.memo(function(e) {
               "aria-label": j.intl.formatToPlainString(j.t.y5l3Jy, {
                 categoryName: l.name
               }),
-              "aria-expanded": !A,
+              "aria-expanded": !R,
               focusProps: {
                 enabled: !1
               },
@@ -313,7 +313,7 @@ let I = i.memo(function(e) {
       }
     })
   }),
-  R = i.memo(function(e) {
+  A = i.memo(function(e) {
     let {
       channel: t
     } = e;

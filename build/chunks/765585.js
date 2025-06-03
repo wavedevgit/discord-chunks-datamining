@@ -30,8 +30,8 @@ let h = r.forwardRef(function(e, t) {
     isPremiumFeature: S = !1,
     shouldUseHorizontalButtons: v = !1,
     showGIFTag: T = !1,
-    dismissibleContent: N,
-    position: I = "top",
+    dismissibleContent: I,
+    position: N = "top",
     align: y = "center",
     art: A,
     isPremiumEarlyAccess: P = !1,
@@ -48,10 +48,10 @@ let h = r.forwardRef(function(e, t) {
   } = (0, o.ZP)();
 
   function H(e) {
-    if ((0, c.lg)(N)) return void(0, d.bj)(N, {
+    if ((0, c.lg)(I)) return void(0, d.bj)(I, {
       dismissAction: e
     });
-    (0, d.EW)(N, {
+    (0, d.EW)(I, {
       dismissAction: e
     })
   }
@@ -60,8 +60,8 @@ let h = r.forwardRef(function(e, t) {
     let n = (null != (t = null == (e = G.current) ? void 0 : e.scrollWidth) ? t : 0) + 64;
     !U && n > R && V(!0)
   }, [U, F, G, R]), r.useEffect(() => {
-    (0, d.kk)(N)
-  }, [N]), (0, i.jsx)("div", {
+    (0, d.kk)(I)
+  }, [I]), (0, i.jsx)("div", {
     className: j,
     ref: t,
     children: (0, i.jsxs)("div", {
@@ -139,10 +139,10 @@ let h = r.forwardRef(function(e, t) {
         })
       }), (0, i.jsx)("div", {
         className: l()(p.pointer, Z, {
-          [p.bottomPointer]: "top" === I,
-          [p.centerLeftPointer]: "right" === I && "center" === y,
-          [p.topLeftPointer]: "right" === I && "top" === y,
-          [p.bottomLeftPointer]: "right" === I && "bottom" === y
+          [p.bottomPointer]: "top" === N,
+          [p.centerLeftPointer]: "right" === N && "center" === y,
+          [p.topLeftPointer]: "right" === N && "top" === y,
+          [p.bottomLeftPointer]: "right" === N && "bottom" === y
         })
       })]
     })

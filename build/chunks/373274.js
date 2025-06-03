@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   E: () => em,
   j: () => eg
@@ -32,8 +32,8 @@ var r, i = n(255367),
   N = n(131704),
   Z = n(592125),
   T = n(796974),
-  R = n(984933),
-  A = n(914010),
+  A = n(984933),
+  R = n(914010),
   D = n(540126),
   L = n(734307),
   M = n(854444),
@@ -575,7 +575,7 @@ class ep extends(r = l.PureComponent) {
           case en.z.GUILD_HUB_HEADER_OPTIONS:
             return (0, i.jsx)(j.Z, {
               guild: r,
-              channel: R.ZP.getDefaultChannel(r.id)
+              channel: A.ZP.getDefaultChannel(r.id)
             }, en.z.GUILD_HUB_HEADER_OPTIONS);
           case en.z.GUILD_PREMIUM_PROGRESS_BAR:
             let l = e.getRows();
@@ -782,7 +782,7 @@ let ef = e => {
     selectedVoiceChannelId: r
   } = e, o = (0, u.e7)([g.Z], () => g.Z.keyboardModeEnabled), {
     analyticsLocations: s
-  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([Z.Z], () => Z.Z.getChannel(n)), h = (0, u.e7)([Z.Z], () => Z.Z.getChannel(r)), p = (0, u.e7)([A.Z], () => A.Z.getGuildId()), y = (0, E.DM)(t), v = l.useRef(null), _ = l.useCallback((e, t) => {
+  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([Z.Z], () => Z.Z.getChannel(n)), h = (0, u.e7)([Z.Z], () => Z.Z.getChannel(r)), p = (0, u.e7)([R.Z], () => R.Z.getGuildId()), y = (0, E.DM)(t), v = l.useRef(null), _ = l.useCallback((e, t) => {
     let n = v.current;
     if (null != n)
       if (ei.Xyh.test(t) || (0, el.AB)(t)) n.scrollToChannel(t, !1, 2 * er.yE, () => {

@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => P
 });
@@ -38,8 +38,8 @@ function P(e) {
     enableConnectedUserLimit: N,
     enableActivities: Z,
     isSubscriptionGated: T,
-    needSubscriptionToAccess: R,
-    isNewChannel: A,
+    needSubscriptionToAccess: A,
+    isNewChannel: R,
     muted: D,
     resolvedUnreadSetting: L
   } = e, M = (0, i.e7)([f.ZP], () => f.ZP.getMentionCount(n.id)), k = (0, i.e7)([f.ZP], () => f.ZP.getIsMentionLowImportance(n.id)), U = (0, s.ZP)(n), G = (0, i.e7)([p.Z], () => !p.Z.can(j.Plq.CONNECT, n)), B = (0, i.e7)([g.Z], () => g.Z.hasVideo(n.id)), V = (0, u.PK)(n.id) && n.isGuildStageVoice(), H = (0, O.ZP)({
@@ -56,9 +56,9 @@ function P(e) {
     isMentionLowImportance: k
   });
   if ((0, c.O)(T)) return (0, r.jsx)(c.Z, {
-    locked: R
+    locked: A
   });
-  if (A) return (0, r.jsx)(o.IGR, {
+  if (R) return (0, r.jsx)(o.IGR, {
     text: E.intl.string(E.t.y2b7CA),
     color: l.Z.unsafe_rawColors.BRAND_260.css,
     className: x.newChannel

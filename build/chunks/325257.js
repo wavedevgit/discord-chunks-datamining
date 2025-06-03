@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => k
 }), n(388685);
@@ -32,9 +32,9 @@ var r = n(255367),
   N = n(674552),
   Z = n(981631),
   T = n(388032),
-  R = n(335426);
+  A = n(335426);
 
-function A(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -78,7 +78,7 @@ function M(e, t) {
     let {
       default: e
     } = await Promise.all([n.e("7654"), n.e("44156"), n.e("55616"), n.e("49286"), n.e("6850"), n.e("58227"), n.e("32652"), n.e("54408"), n.e("20087"), n.e("92754"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("40407")]).then(n.bind(n, 545135));
-    return n => (0, r.jsx)(e, D(A({}, n), {
+    return n => (0, r.jsx)(e, D(R({}, n), {
       guild: t
     }))
   })
@@ -183,7 +183,7 @@ let k = i.memo(function(e) {
       onAnimationRest: function() {
         ev || eO(!1)
       }
-    }) : (0, r.jsx)(h.LYs, D(A({
+    }) : (0, r.jsx)(h.LYs, D(R({
       ariaLabel: T.intl.formatToPlainString(T.t["/uzRsr"], {
         guildName: F.toString(),
         mentions: Q
@@ -217,10 +217,10 @@ let k = i.memo(function(e) {
         scale: null == er ? 1 : er
       },
       "data-drop-hovering": ev,
-      className: o()(R.blobContainer, {
-        [R.sorting]: ee,
-        [R.wobble]: ev,
-        [R.selected]: ev || W
+      className: o()(A.blobContainer, {
+        [A.sorting]: ee,
+        [A.wobble]: ev,
+        [A.selected]: ev || W
       }),
       children: (0, r.jsx)(h.aRk, {
         selected: !!ea || ev || W || eb,
@@ -236,7 +236,7 @@ let k = i.memo(function(e) {
       hovered: !eh && eb,
       selected: !eh && W,
       unread: !eh && Y,
-      className: R.pill
+      className: A.pill
     }), (0, r.jsx)(P.Z, {
       guild: F,
       disabled: ee,

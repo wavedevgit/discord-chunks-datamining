@@ -28,13 +28,13 @@ function E(e) {
     confettiCanvas: C,
     userWasChurned: j = !1,
     userDiscountOffer: O
-  } = e, S = (0, o.ZP)(), v = (0, l.wj)(S) ? _ : x, T = r.useRef(null), [N, I] = r.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+  } = e, S = (0, o.ZP)(), v = (0, l.wj)(S) ? _ : x, T = r.useRef(null), [I, N] = r.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, O), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), P = (0, m.T4)(A.amount, A.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   if (r.useEffect(() => {
-      null != T.current && null != y && I(!0)
-    }, [T, N, y]), null == O || null == y) return null;
+      null != T.current && null != y && N(!0)
+    }, [T, I, y]), null == O || null == y) return null;
   let D = f.intl.format(f.t.gPzMHR, {
       numMonths: O.discount.user_usage_limit,
       discountedPrice: y,
@@ -74,7 +74,7 @@ function E(e) {
           }), Z]
         }) : (0, i.jsx)(a.$jN, {})
       })
-    }), !R && N && (0, i.jsx)(d.Z, {
+    }), !R && I && (0, i.jsx)(d.Z, {
       confettiTarget: T.current,
       confettiCanvas: C,
       confettiVelocityMultiplier: .75

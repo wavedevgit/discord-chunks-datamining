@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => Q
 }), n(415506), n(388685), n(35282), n(290780);
@@ -31,8 +31,8 @@ var r, i = n(255367),
   N = n(823385),
   Z = n(415795),
   T = n(670512),
-  R = n(558631),
-  A = n(981631),
+  A = n(558631),
+  R = n(981631),
   D = n(388032),
   L = n(298746);
 
@@ -81,7 +81,7 @@ let G = {
     }), (0, i.jsx)("div", {
       className: L.emptyStateCTA,
       children: (0, i.jsx)(u.eee, {
-        href: I.Z.getArticleURL(A.BhN.QUICK_SWITCHER_TUTORIAL),
+        href: I.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL),
         children: D.intl.string(D.t["4iPfEB"])
       })
     })]
@@ -237,7 +237,7 @@ class q extends l.PureComponent {
     })
   }
   focusNode(e) {
-    P.S.dispatch(A.CkL.QUICKSWITCHER_RESULT_FOCUS, {
+    P.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
       node: e
     })
   }
@@ -255,7 +255,7 @@ class q extends l.PureComponent {
         textChannelSymbolHook: (e, t) => K(t, f.xQ.TEXT_CHANNEL, D.intl.string(D.t.wrwhub)),
         voiceChannelSymbolHook: (e, t) => K(t, f.xQ.VOICE_CHANNEL, D.intl.string(D.t["jz+hJi"])),
         guildSymbolHook: (e, t) => K(t, f.xQ.GUILD, D.intl.string(D.t.WuwCWl)),
-        helpdeskArticle: I.Z.getArticleURL(A.BhN.QUICK_SWITCHER_TUTORIAL)
+        helpdeskArticle: I.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL)
       })
     })
   }
@@ -324,10 +324,10 @@ class q extends l.PureComponent {
             l = C.Z.getGuild(r.getGuildId());
           if (null == l) return;
           switch (r.type) {
-            case A.d4z.GUILD_TEXT:
-            case A.d4z.GUILD_ANNOUNCEMENT:
-            case A.d4z.GUILD_FORUM:
-            case A.d4z.GUILD_MEDIA:
+            case R.d4z.GUILD_TEXT:
+            case R.d4z.GUILD_ANNOUNCEMENT:
+            case R.d4z.GUILD_FORUM:
+            case R.d4z.GUILD_MEDIA:
               return (0, d.jW)(e, async () => {
                 let {
                   default: e
@@ -338,8 +338,8 @@ class q extends l.PureComponent {
                   onSelect: w.Cp
                 }))
               });
-            case A.d4z.GUILD_VOICE:
-            case A.d4z.GUILD_STAGE_VOICE:
+            case R.d4z.GUILD_VOICE:
+            case R.d4z.GUILD_STAGE_VOICE:
               return (0, d.jW)(e, async () => {
                 let {
                   default: e
@@ -350,9 +350,9 @@ class q extends l.PureComponent {
                   onSelect: w.Cp
                 }))
               });
-            case A.d4z.ANNOUNCEMENT_THREAD:
-            case A.d4z.PUBLIC_THREAD:
-            case A.d4z.PRIVATE_THREAD:
+            case R.d4z.ANNOUNCEMENT_THREAD:
+            case R.d4z.PUBLIC_THREAD:
+            case R.d4z.PRIVATE_THREAD:
               return (0, d.jW)(e, async () => {
                 let {
                   default: e
@@ -362,7 +362,7 @@ class q extends l.PureComponent {
                   onSelect: w.Cp
                 }))
               });
-            case A.d4z.GUILD_STORE:
+            case R.d4z.GUILD_STORE:
               return (0, d.jW)(e, async () => {
                 let {
                   default: e
@@ -373,7 +373,7 @@ class q extends l.PureComponent {
                   onSelect: w.Cp
                 }))
               });
-            case A.d4z.GUILD_DIRECTORY:
+            case R.d4z.GUILD_DIRECTORY:
               return (0, d.jW)(e, async () => {
                 let {
                   default: e
@@ -570,7 +570,7 @@ class q extends l.PureComponent {
 function Q(e) {
   let t = (0, c.cj)([N.Z], () => N.Z.getProps()),
     n = (0, O.Pt)(),
-    r = R.Z.useExperiment({
+    r = A.Z.useExperiment({
       location: "QuickSwitcher"
     }).enabled,
     o = l.useMemo(() => r ? Object.values(n).filter(e => null != e.url).filter(e => null == e.predicate || e.predicate()) : [], [n, r]);
@@ -587,7 +587,7 @@ function Q(e) {
     e.unshift({
       title: D.intl.string(D.t["3D5yo6"]),
       searchableTitles: [D.intl.string(D.t["3D5yo6"])],
-      path: A.Z5c.SETTINGS("account")
+      path: R.Z5c.SETTINGS("account")
     }), (0, x.gF)(e)
   }, [o, r]), (0, i.jsx)(q, k({}, t, e))
 }

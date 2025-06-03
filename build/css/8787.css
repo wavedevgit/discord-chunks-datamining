@@ -1,6 +1,6 @@
 /**
   Module ID: 8787
-  Original File Name: 30f0f9d7296369c4
+  Original File Name: ec4e7177514bcb23
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -336,7 +336,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -6801,6 +6801,65 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     filter: drop-shadow(0 0 34px var(--custom-badge-glow-color))
 }
 
+.cardDescriptionTenureReward__1f069 {
+    background-image: linear-gradient(to bottom,var(--background-secondary-alt) 20%,hsl(var(--primary-660-hsl)/.3) 80%,hsl(var(--primary-660-hsl)/0) 95%);
+    pointer-events: none
+}
+
+.descriptionCTATenureReward__1f069 {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center
+}
+
+.descriptionCTATenureReward__1f069>img {
+    margin-right: 4px
+}
+
+.cardDescription__1f069 {
+    background-image: linear-gradient(to bottom,var(--background-secondary-alt) 50%,hsl(var(--primary-660-hsl)/.75) 80%)
+}
+
+.theme-light .cardDescription__1f069 {
+    background-image: linear-gradient(to bottom,var(--background-secondary-alt) 50%,hsl(var(--primary-160-hsl)/.5) 80%)
+}
+
+@keyframes glowEffect__1f069 {
+    0% {
+        box-shadow: var(--elevation-medium)
+    }
+
+    50% {
+        box-shadow: 0 0 16px 16px hsl(var(--premium-tier-2-pink-for-gradients-2-hsl)/.3)
+    }
+
+    to {
+        box-shadow: var(--elevation-medium)
+    }
+}
+
+.nitroGradientBorderHover__1f069 {
+    position: relative
+}
+
+.nitroGradientBorderHover__1f069:before {
+    background: linear-gradient(95.07deg,var(--premium-tier-2-purple-for-gradients) 0,var(--premium-tier-2-purple-for-gradients-2) 49.96%,var(--premium-tier-2-pink-for-gradients) 95.93%),var(--premium-tier-2-purple-for-gradients);
+    border-radius: inherit;
+    content: "";
+    inset: -2px;
+    opacity: 0;
+    position: absolute;
+    z-index: -10
+}
+
+.full-motion .nitroGradientBorderHover__1f069:before {
+    transition: opacity .2s ease-in-out
+}
+
+.nitroGradientBorderHover__1f069:hover:before {
+    opacity: 1
+}
+
 .hoverWrapper_b5493b {
     display: flex
 }
@@ -7265,65 +7324,6 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .relative_b5493b {
     position: relative
-}
-
-.cardDescriptionTenureReward__1f069 {
-    background-image: linear-gradient(to bottom,var(--background-secondary-alt) 20%,hsl(var(--primary-660-hsl)/.3) 80%,hsl(var(--primary-660-hsl)/0) 95%);
-    pointer-events: none
-}
-
-.descriptionCTATenureReward__1f069 {
-    align-items: flex-end;
-    display: flex;
-    justify-content: center
-}
-
-.descriptionCTATenureReward__1f069>img {
-    margin-right: 4px
-}
-
-.cardDescription__1f069 {
-    background-image: linear-gradient(to bottom,var(--background-secondary-alt) 50%,hsl(var(--primary-660-hsl)/.75) 80%)
-}
-
-.theme-light .cardDescription__1f069 {
-    background-image: linear-gradient(to bottom,var(--background-secondary-alt) 50%,hsl(var(--primary-160-hsl)/.5) 80%)
-}
-
-@keyframes glowEffect__1f069 {
-    0% {
-        box-shadow: var(--elevation-medium)
-    }
-
-    50% {
-        box-shadow: 0 0 16px 16px hsl(var(--premium-tier-2-pink-for-gradients-2-hsl)/.3)
-    }
-
-    to {
-        box-shadow: var(--elevation-medium)
-    }
-}
-
-.nitroGradientBorderHover__1f069 {
-    position: relative
-}
-
-.nitroGradientBorderHover__1f069:before {
-    background: linear-gradient(95.07deg,var(--premium-tier-2-purple-for-gradients) 0,var(--premium-tier-2-purple-for-gradients-2) 49.96%,var(--premium-tier-2-pink-for-gradients) 95.93%),var(--premium-tier-2-purple-for-gradients);
-    border-radius: inherit;
-    content: "";
-    inset: -2px;
-    opacity: 0;
-    position: absolute;
-    z-index: -10
-}
-
-.full-motion .nitroGradientBorderHover__1f069:before {
-    transition: opacity .2s ease-in-out
-}
-
-.nitroGradientBorderHover__1f069:hover:before {
-    opacity: 1
 }
 
 .section_efc71f {
@@ -18821,4 +18821,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=30f0f9d7296369c4.css.map*/
+/*# sourceMappingURL=ec4e7177514bcb23.css.map*/

@@ -31,7 +31,7 @@ let O = n(775322),
     section: E.jXE.SETTINGS_VOICE_AND_VIDEO
   };
 
-function N(e) {
+function I(e) {
   let t = e.currentTarget;
   h.default.track(E.rMx.NOISE_CANCELLATION_LINK_CLICKED, {
     text: t.text,
@@ -43,7 +43,7 @@ function N(e) {
   })
 }
 
-function I(e) {
+function N(e) {
   let {
     refreshStyles: t = !1
   } = e, n = (0, l.e7)([b.Z], () => b.Z.theme), {
@@ -96,7 +96,7 @@ function I(e) {
       align: d.Z.Align.CENTER,
       body: (0, i.jsx)(o.eee, {
         href: f.Z.getArticleURL(E.BhN.NOISE_SUPPRESSION),
-        onClick: N,
+        onClick: I,
         children: C.intl.string(C.t.hvVgAQ)
       })
     }), t ? null : (0, i.jsx)(o.$i$, {})]
@@ -150,7 +150,7 @@ function y(e) {
       })
     }), (0, i.jsx)(m.F, {
       setting: x.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
-      children: (0, i.jsx)(I, {
+      children: (0, i.jsx)(N, {
         refreshStyles: t
       })
     }), (0, i.jsx)(m.F, {

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(533126),
-  o = n(261470),
-  a = n(399606),
+  a = n(261470),
+  o = n(399606),
   s = n(544891),
   c = n(481060),
   u = n(893776),
@@ -83,8 +83,8 @@ function Z(e) {
     state: t,
     cancel: n,
     errorMessage: i,
-    conditionalMediationAbortController: o,
-    isPasswordlessActive: a
+    conditionalMediationAbortController: a,
+    isPasswordlessActive: o
   } = e;
   switch (t.step) {
     case 0:
@@ -103,7 +103,7 @@ function Z(e) {
           size: c.PhG.LARGE,
           look: c.iLD.LINK,
           color: c.Ttl.LINK,
-          disabled: a,
+          disabled: o,
           onClick: () => (function(e) {
             let t = E.isPlatformEmbedded && I.ZP.supportsFeature(O.eRX.WEBAUTHN) ? I.ZP.webAuthnAuthenticate : e => {
               let t = (0, l.wz)(JSON.parse(e));
@@ -113,7 +113,7 @@ function Z(e) {
               authenticateFunc: t,
               conditionalMediationAbortController: e
             }).catch(() => {})
-          })(o),
+          })(a),
           children: y.intl.string(y.t["/kpMDg"])
         })]
       });
@@ -158,15 +158,15 @@ function R(e) {
   let {
     authTokenCallback: t,
     conditionalMediationAbortController: n
-  } = e, l = (0, a.e7)([_.default], () => _.default.getIsPasswordlessActive()), {
+  } = e, l = (0, o.e7)([_.default], () => _.default.getIsPasswordlessActive()), {
     state: u,
     rsaKeyPair: d,
     cancel: p,
     handleFailure: m
   } = function(e) {
-    let [t, n] = i.useState(0), [r, l] = i.useState(!1), [a, s] = i.useState({
+    let [t, n] = i.useState(0), [r, l] = i.useState(!1), [o, s] = i.useState({
       step: 0
-    }), [c, u] = i.useState(null), d = (0, h.Z)(), p = i.useMemo(() => new o.Z(1500, 3e4), []), m = (0, g.Z)(() => {
+    }), [c, u] = i.useState(null), d = (0, h.Z)(), p = i.useMemo(() => new a.Z(1500, 3e4), []), m = (0, g.Z)(() => {
       s({
         step: 0
       }), d ? n(e => e + 1) : (T.info("document is not visible, will defer reconnection when document becomes visible."), l(!0))
@@ -176,22 +176,22 @@ function R(e) {
       }), p.pending || p.fail(m)
     }, [m, p]);
     return i.useEffect(() => {
-      d && r && 0 === a.step && (T.info("reconnecting, now that document is visible"), l(!1), n(e => e + 1))
-    }, [a, d, r, l]), i.useEffect(() => {
+      d && r && 0 === o.step && (T.info("reconnecting, now that document is visible"), l(!1), n(e => e + 1))
+    }, [o, d, r, l]), i.useEffect(() => {
       let t = Date.now(),
         n = () => "".concat(Date.now() - t, "ms"),
         r = "wss:".concat(window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT, "/?v=2"),
         i = new WebSocket(r);
       T.info("[0ms] connecting to ".concat(r));
       let l = e => T.info("[".concat(n(), "] ").concat(e)),
-        o = null,
         a = null,
+        o = null,
         c = null,
         d = null,
         h = !0;
 
       function g() {
-        if (null != o) return o;
+        if (null != a) return a;
         throw Error("No key pair set")
       }
       let _ = () => {
@@ -272,12 +272,12 @@ function R(e) {
             h = !0
         }
       }, i.onopen = async () => {
-        o = await (0, b.W_)(), a = await (0, b.dK)(o);
-        let e = await (0, b.Pk)(o);
+        a = await (0, b.W_)(), o = await (0, b.dK)(a);
+        let e = await (0, b.Pk)(a);
         l("connected, handshaking with fingerprint: ".concat(e)), i.send(JSON.stringify({
           op: "init",
-          encoded_public_key: a
-        })), u(o)
+          encoded_public_key: o
+        })), u(a)
       }, i.onclose = e => {
         l("disconnected, code: ".concat(e.code, " ").concat(e.reason)), f()
       }, i.onerror = e => {
@@ -286,7 +286,7 @@ function R(e) {
         l("cleaning up"), i.onopen = () => null, i.onmessage = () => null, i.onclose = () => null, i.onerror = () => null, i.close(1e3), p.cancel(), null != d && clearTimeout(d), null != c && clearInterval(c)
       }
     }, [m, e, t, p, f]), {
-      state: a,
+      state: o,
       rsaKeyPair: c,
       cancel: m,
       handleFailure: f

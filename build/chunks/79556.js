@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => U
 }), n(388685);
@@ -32,9 +32,9 @@ var r = n(255367),
   N = n(304471),
   Z = n(981631),
   T = n(647086),
-  R = n(915887);
+  A = n(915887);
 
-function A(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -50,7 +50,7 @@ function D(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -80,7 +80,7 @@ class M extends P.ZP {
       channelInfo: e
     } = this.props;
     return null == e ? null : (0, r.jsx)("div", {
-      className: R.channelInfo,
+      className: A.channelInfo,
       children: e
     })
   }
@@ -110,8 +110,8 @@ class M extends P.ZP {
       location: "text_channel"
     }).entrypoints, P = E && null != C && C.length > 0, I = (0, g.D)(v), N = (0, r.jsx)("li", {
       className: o()(this.getClassName(), {
-        [R.disabled]: this.isDisabled(),
-        [R.selected]: n
+        [A.disabled]: this.isDisabled(),
+        [A.selected]: n
       }),
       "data-dnd-name": e.name,
       onMouseEnter: c || P ? this.handleMouseEnter : void 0,
@@ -125,7 +125,7 @@ class M extends P.ZP {
         shouldShow: c && this.state.shouldShowThreadsPopout || P && this.state.shouldShowActivities,
         children: () => (0, r.jsxs)(w.ZP, {
           ref: this.channelItemRef,
-          className: R.iconVisibility,
+          className: A.iconVisibility,
           channel: e,
           guild: t,
           selected: !O && n,
@@ -163,10 +163,10 @@ class M extends P.ZP {
     return m ? d(h(N)) : N
   }
   constructor(...e) {
-    super(...e), A(this, "state", {
+    super(...e), R(this, "state", {
       shouldShowThreadsPopout: !1,
       shouldShowActivities: !1
-    }), A(this, "channelItemRef", i.createRef()), A(this, "enterTimer", 0), A(this, "exitTimer", 0), A(this, "handleMouseEnter", () => {
+    }), R(this, "channelItemRef", i.createRef()), R(this, "enterTimer", 0), R(this, "exitTimer", 0), R(this, "handleMouseEnter", () => {
       (this.props.canShowThreadPreviewForUser || null != this.props.embeddedApps) && (this.resetTextChannelPopoutTimers(), this.enterTimer = setTimeout(() => {
         null != this.props.embeddedApps && this.props.embeddedApps.length > 0 ? this.setState({
           shouldShowActivities: !0
@@ -174,7 +174,7 @@ class M extends P.ZP {
           shouldShowThreadsPopout: !0
         })
       }, 200))
-    }), A(this, "handleMouseLeave", () => {
+    }), R(this, "handleMouseLeave", () => {
       this.resetTextChannelPopoutTimers(), this.exitTimer = setTimeout(() => {
         this.state.shouldShowActivities && this.setState({
           shouldShowActivities: !1
@@ -182,23 +182,23 @@ class M extends P.ZP {
           shouldShowThreadsPopout: !1
         })
       }, 250)
-    }), A(this, "handleThreadsPopoutClose", () => {
+    }), R(this, "handleThreadsPopoutClose", () => {
       this.resetTextChannelPopoutTimers(), this.setState({
         shouldShowThreadsPopout: !1
       })
-    }), A(this, "handleActivitiesPopoutClose", () => {
+    }), R(this, "handleActivitiesPopoutClose", () => {
       this.resetTextChannelPopoutTimers(), this.setState({
         shouldShowActivities: !1
       })
-    }), A(this, "handleClosePopout", () => {
+    }), R(this, "handleClosePopout", () => {
       this.state.shouldShowActivities && this.handleActivitiesPopoutClose(), this.state.shouldShowThreadsPopout && this.handleThreadsPopoutClose()
-    }), A(this, "handleMouseDown", () => {
+    }), R(this, "handleMouseDown", () => {
       this.handleActivitiesPopoutClose(), this.handleThreadsPopoutClose();
       let {
         channel: e
       } = this.props, t = e.getGuildId();
       c.Z.preload(null != t ? t : Z.ME, e.id)
-    }), A(this, "renderPopout", e => {
+    }), R(this, "renderPopout", e => {
       let {
         channel: t,
         sorting: n,
@@ -212,7 +212,7 @@ class M extends P.ZP {
       }) : (0, r.jsx)(x.Z, L(D({}, e), {
         channel: this.props.channel
       }))
-    }), A(this, "handleContextMenu", e => {
+    }), R(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props;
@@ -289,7 +289,7 @@ function U(e) {
   } = (0, m.Z)(t.id), P = (0, s.e7)([S.ZP], () => S.ZP.isFavorite(n.id, t.id)), w = (0, s.e7)([E.default], () => {
     let e = E.default.getCurrentUser();
     return null != e && (!t.isNSFW() || e.nsfwAllowed)
-  }, [t]), N = (0, h.NX)(t.id), R = (0, I.Z)({
+  }, [t]), N = (0, h.NX)(t.id), A = (0, I.Z)({
     channel: t,
     isChannelCollapsed: !1,
     isChannelSelected: a,
@@ -299,7 +299,7 @@ function U(e) {
     muted: o,
     enableActivities: N,
     resolvedUnreadSetting: f
-  }), A = (0, p.ZP)(t);
+  }), R = (0, p.ZP)(t);
   return (0, r.jsx)(k, L(D({}, d, g, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
@@ -308,10 +308,10 @@ function U(e) {
     isNewChannel: b && e.canBeNewChannel,
     isFavoriteSuggestion: l && !P,
     canShowThreadPreviewForUser: w,
-    channelInfo: R,
-    embeddedApps: A,
+    channelInfo: A,
+    embeddedApps: R,
     resolvedUnreadSetting: f,
-    hasChannelInfo: null != R,
+    hasChannelInfo: null != A,
     enableActivities: N
   }))
 }

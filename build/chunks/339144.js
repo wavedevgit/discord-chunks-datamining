@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   J: () => P,
   y: () => x
@@ -37,8 +37,8 @@ let P = i.memo(function(e) {
       guildId: N,
       isStreaming: Z,
       channel: T,
-      canStream: R,
-      runningGame: A,
+      canStream: A,
+      runningGame: R,
       embeddedActivity: D,
       activity: L,
       application: M,
@@ -80,8 +80,8 @@ let P = i.memo(function(e) {
     Y = i.useCallback(() => {
       let e = null != T && (0, y.vd)(T.type) ? T : null,
         t = null != e ? e.getGuildId() : N;
-      if (U && null != A && null != O.Z.getVoiceChannelId()) {
-        (0, g.s)("Activity Panel"), (0, m.Z)(A.pid);
+      if (U && null != R && null != O.Z.getVoiceChannelId()) {
+        (0, g.s)("Activity Panel"), (0, m.Z)(R.pid);
         return
       }(0, s.ZDy)(async () => {
         let {
@@ -107,7 +107,7 @@ let P = i.memo(function(e) {
             }
             return e
           }({}, n), l = l = {
-            sourcePID: null == A ? void 0 : A.pid,
+            sourcePID: null == R ? void 0 : R.pid,
             selectSource: !!G && null != O.Z.getVoiceChannelId(),
             guildId: t,
             analyticsLocation: j.Sbl.ACTIVITY_PANEL
@@ -123,13 +123,13 @@ let P = i.memo(function(e) {
           }), i))
         }
       })
-    }, [T, N, A, G, U]),
-    K = (null != A || null == D || (0, c.R)()) && (Z || w) ? (Z ? (t = !1, l = () => {
+    }, [T, N, R, G, U]),
+    K = (null != R || null == D || (0, c.R)()) && (Z || w) ? (Z ? (t = !1, l = () => {
       W(), (0, p.v)(B, p.d.STREAM, !1)
-    }, u = s.g5r, P = S.intl.string(S.t.S5anIS)) : R ? (t = !1, l = () => {
+    }, u = s.g5r, P = S.intl.string(S.t.S5anIS)) : A ? (t = !1, l = () => {
       Y(), (0, p.v)(B, p.d.STREAM, !0)
-    }, u = s.hGI, P = null != A ? S.intl.formatToPlainString(S.t.AB5gT0, {
-      game: A.name
+    }, u = s.hGI, P = null != R ? S.intl.formatToPlainString(S.t.AB5gT0, {
+      game: R.name
     }) : S.intl.string(S.t.FeUKeH)) : (t = !0, l = null, u = s.hGI, P = null != T && (0, y.vd)(T.type) ? S.intl.string(S.t.uQn9Bw) : null != N ? S.intl.string(S.t.fBXEoK) : S.intl.string(S.t.n3feND)), (0, r.jsx)("div", {
       className: E.panelButtonContainer,
       children: (0, r.jsx)(C.Z, {

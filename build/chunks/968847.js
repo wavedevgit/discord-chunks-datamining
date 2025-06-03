@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => G,
   x: () => S
@@ -89,12 +89,12 @@ function T(e) {
     }
   let x = null,
     T = null,
-    R = null != (r = null == f ? void 0 : f.getChannelRecords()) ? r : [];
+    A = null != (r = null == f ? void 0 : f.getChannelRecords()) ? r : [];
   d && j > 0 ? x = {
     mode: "mentions",
     mentionCount: j,
     targetChannelId: c
-  } : !p && a().some(R, Z) ? x = {
+  } : !p && a().some(A, Z) ? x = {
     mode: "voice-channels",
     mentionCount: 0,
     targetChannelId: null
@@ -111,20 +111,20 @@ function T(e) {
     mentionCount: 0,
     targetChannelId: s
   });
-  let A = null != T && (null == x || "mentions" !== x.mode && "mentions" === T.mode),
-    D = null != x && ("mentions" === x.mode || !A);
+  let R = null != T && (null == x || "mentions" !== x.mode && "mentions" === T.mode),
+    D = null != x && ("mentions" === x.mode || !R);
   return P[e] = {
-    topBar: A && null != T ? T : E,
+    topBar: R && null != T ? T : E,
     bottomBar: D && null != x ? x : E
   }, !0
 }
-let R = a().throttle(T, 200);
+let A = a().throttle(T, 200);
 
-function A(e) {
+function R(e) {
   let {
     guildId: t
   } = e, n = m.Z.getGuild(t);
-  return null != n && !!n.hasFeature(j.oNc.COMMUNITY) && R(t)
+  return null != n && !!n.hasFeature(j.oNc.COMMUNITY) && A(t)
 }
 
 function D(e) {
@@ -133,7 +133,7 @@ function D(e) {
   } = e, n = g.Z.getChannel(t);
   if (null == n) return !1;
   let r = m.Z.getGuild(n.guild_id);
-  return null != r && !!r.hasFeature(j.oNc.COMMUNITY) && R(n.guild_id)
+  return null != r && !!r.hasFeature(j.oNc.COMMUNITY) && A(n.guild_id)
 }
 
 function L(e) {
@@ -142,7 +142,7 @@ function L(e) {
   } = e, n = g.Z.getChannel(t.id);
   if (null == n) return !1;
   let r = m.Z.getGuild(t.guild_id);
-  return null != r && !!r.hasFeature(j.oNc.COMMUNITY) && R(n.guild_id)
+  return null != r && !!r.hasFeature(j.oNc.COMMUNITY) && A(n.guild_id)
 }
 
 function M(e) {
@@ -151,14 +151,14 @@ function M(e) {
   } = e, n = g.Z.getChannel(t);
   if (null == n) return !1;
   let r = m.Z.getGuild(n.guild_id);
-  return null != r && !!r.hasFeature(j.oNc.COMMUNITY) && y.Z.getGuildId() === n.guild_id && R(n.guild_id)
+  return null != r && !!r.hasFeature(j.oNc.COMMUNITY) && y.Z.getGuildId() === n.guild_id && A(n.guild_id)
 }
 
 function k(e) {
   let {
     guildId: t
   } = e;
-  return null != t && R(t)
+  return null != t && A(t)
 }
 class U extends(r = c.ZP.Store) {
   initialize() {
@@ -195,7 +195,7 @@ let G = new U(u.Z, {
       return null == (t = g.Z.getChannel(n)) ? void 0 : t.guild_id
     }).filter(_.lm).uniq().forEach(e => {
       let t = m.Z.getGuild(e);
-      null != t && t.hasFeature(j.oNc.COMMUNITY) && R(e) && (n = !0)
+      null != t && t.hasFeature(j.oNc.COMMUNITY) && A(e) && (n = !0)
     }), n
   },
   CHANNEL_ACK: M,
@@ -207,25 +207,25 @@ let G = new U(u.Z, {
   MESSAGE_DELETE: M,
   PASSIVE_UPDATE_V2: function(e) {
     let t = m.Z.getGuild(e.guildId);
-    return !!(e.channels.length > 0 && null != t && t.hasFeature(j.oNc.COMMUNITY)) && R(e.guildId)
+    return !!(e.channels.length > 0 && null != t && t.hasFeature(j.oNc.COMMUNITY)) && A(e.guildId)
   },
   RESORT_THREADS: M,
   THREAD_CREATE: L,
   THREAD_DELETE: L,
-  THREAD_LIST_SYNC: A,
+  THREAD_LIST_SYNC: R,
   THREAD_MEMBER_UPDATE: D,
   THREAD_MEMBERS_UPDATE: D,
   THREAD_UPDATE: L,
-  BULK_CLEAR_RECENTS: A,
-  CATEGORY_COLLAPSE_ALL: A,
-  CATEGORY_EXPAND_ALL: A,
+  BULK_CLEAR_RECENTS: R,
+  CATEGORY_COLLAPSE_ALL: R,
+  CATEGORY_EXPAND_ALL: R,
   VOICE_STATE_UPDATES: function(e) {
     let {
       voiceStates: t
     } = e, n = y.Z.getGuildId();
     if (null == n || !new Set(t.map(e => e.guildId)).has(n)) return !1;
     let r = P[n];
-    return null != r && "voice-channels" === r.bottomBar.mode && R(n)
+    return null != r && "voice-channels" === r.bottomBar.mode && A(n)
   },
   USER_GUILD_SETTINGS_CHANNEL_UPDATE: k,
   USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: k,
@@ -233,7 +233,7 @@ let G = new U(u.Z, {
     let {
       userGuildSettings: t
     } = e;
-    for (let e of t) null != e.guild_id && R(e.guild_id)
+    for (let e of t) null != e.guild_id && A(e.guild_id)
   },
   USER_GUILD_SETTINGS_GUILD_UPDATE: k,
   USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: k

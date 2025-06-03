@@ -89,8 +89,8 @@ function T() {
     })]
   })
 }
-let N = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
-  I = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
+let I = ["neutral", "blue_new", "blurple", "green_new", "red_new", "teal_new", "yellow_new", "orange_new", "pink", "purple"],
+  N = ["background-surface-highest", "background-surface-higher", "background-surface-high", "background-base-low", "background-base-lower", "background-base-lowest"],
   y = ["", "background-mod-subtle", "background-mod-normal", "background-mod-strong"],
   A = ["critical", "warning", "positive", "info"],
   P = ["text-default", "text-primary", "text-secondary", "text-tertiary", "text-feedback-critical", "text-feedback-warning", "text-feedback-positive", "text-feedback-info", "premium-nitro-pink-text"];
@@ -101,7 +101,7 @@ function R() {
       variant: "heading-xl/semibold",
       className: x.heading,
       children: "Background Colors"
-    }), I.map(e => (0, i.jsxs)("div", {
+    }), N.map(e => (0, i.jsxs)("div", {
       className: x.palette,
       style: {
         backgroundColor: "var(--".concat(e, ")"),
@@ -177,7 +177,7 @@ function R() {
       variant: "heading-xl/semibold",
       className: x.heading,
       children: "Scales"
-    }), N.map(e => (0, i.jsxs)("div", {
+    }), I.map(e => (0, i.jsxs)("div", {
       className: x.palette,
       children: [(0, i.jsx)(d.Text, {
         variant: "text-lg/semibold",

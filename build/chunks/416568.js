@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => ef
 }), n(388685);
@@ -32,8 +32,8 @@ var r = n(255367),
   N = n(822857),
   Z = n(931928),
   T = n(431286),
-  R = n(796974),
-  A = n(271383),
+  A = n(796974),
+  R = n(271383),
   D = n(430824),
   L = n(771845),
   M = n(358085),
@@ -189,7 +189,7 @@ function ed(e) {
     lurkingGuildIds: i
   } = e, l = (0, S.Z)(), {
     pathname: o
-  } = (0, c.TH)(), s = o.startsWith(en.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), a = (0, h.Wu)([D.Z, A.ZP], () => k.default.keys(D.Z.getGuilds()).filter(e => A.ZP.isCurrentUserGuest(e))), u = i.concat(a), {
+  } = (0, c.TH)(), s = o.startsWith(en.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), a = (0, h.Wu)([D.Z, R.ZP], () => k.default.keys(D.Z.getGuilds()).filter(e => R.ZP.isCurrentUserGuest(e))), u = i.concat(a), {
     notificationCenterVariant: d
   } = P.L.useExperiment({
     location: "GuildsBar"
@@ -242,7 +242,7 @@ function ep(e) {
   } = e, a = (0, j.Q3)("GuildsBar"), [d] = (0, h.Wu)([L.ZP], () => {
     let e = L.ZP.getGuildsTree();
     return [e, e.version]
-  }), p = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), O = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, E] = i.useState(!1), P = i.useCallback(() => E(!0), []), I = i.useCallback(() => E(!1), []), A = i.useRef(!1), [D] = i.useState(() => new f.V7), k = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
+  }), p = (0, h.e7)([x.Z], () => x.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), O = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, E] = i.useState(!1), P = i.useCallback(() => E(!0), []), I = i.useCallback(() => E(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), k = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
     ref: W
   } = z, K = ea(z, ["ref"]), q = (0, m.mFp)(), [X, ee] = i.useState(!1), [et, el] = i.useState(!1), ep = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), ef = (0, m.dQu)(g.Z.space.SPACE_XS), eg = i.useMemo(() => new eu(d, ee, el, () => {
     var e, t;
@@ -268,21 +268,21 @@ function ep(e) {
     pathname: eb
   } = (0, c.TH)(), ey = eb.startsWith(en.Z5c.GUILD_DISCOVERY) || eb.startsWith(en.Z5c.GLOBAL_DISCOVERY);
   (0, y.Ng)(() => {
-    if (!A.current && 0 !== d.size) {
+    if (!R.current && 0 !== d.size) {
       if (ey) eg.scrollToGuild(null, !1);
       else {
         let {
           scrollTop: e
-        } = R.Z.getGuildListDimensions();
+        } = A.Z.getGuildListDimensions();
         eg.scrollTo({
           to: e,
           animate: !1
         })
       }
-      return A.current = !0, () => D.stop()
+      return R.current = !0, () => D.stop()
     }
   }), i.useEffect(() => {
-    if (eg.setGuildsTree(d), A.current || 0 === d.size) return;
+    if (eg.setGuildsTree(d), R.current || 0 === d.size) return;
     let e = w.Z.getState().guildId;
     eg.scrollToGuild(e, !1);
     let t = null;

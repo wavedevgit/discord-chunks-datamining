@@ -1,8 +1,8 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   CN: () => w,
   ZP: () => L,
-  eP: () => R,
+  eP: () => A,
   hR: () => T,
   jo: () => N
 });
@@ -148,7 +148,7 @@ function T(e) {
   })
 }
 
-function R(e) {
+function A(e) {
   let {
     channel: t,
     isDefaultChannel: r = !1,
@@ -160,10 +160,10 @@ function R(e) {
     entrypoints: _
   } = (0, h._k)({
     location: "channel_base"
-  }), C = (0, a.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), x = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), w = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), N = (0, a.e7)([v.Z], () => (0, p.b)(v.Z, C, t, x)), Z = (0, a.e7)([v.Z], () => v.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? S.intl.string(S.t.zJrgTE) : S.intl.string(S.t.Sd8Ix8)), T = _ ? S.intl.string(S.t["EE+P0N"]) : Z, R = l.useRef(null);
+  }), C = (0, a.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), x = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), w = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), N = (0, a.e7)([v.Z], () => (0, p.b)(v.Z, C, t, x)), Z = (0, a.e7)([v.Z], () => v.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? S.intl.string(S.t.zJrgTE) : S.intl.string(S.t.Sd8Ix8)), T = _ ? S.intl.string(S.t["EE+P0N"]) : Z, A = l.useRef(null);
   if (o || !N || t.isModeratorReportChannel()) return null;
 
-  function A() {
+  function R() {
     if (null != C) {
       let e = y.Z.getAllActiveStreams().filter(e => e.state !== j.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
@@ -188,11 +188,11 @@ function R(e) {
       color: "currentColor"
     });
   return r && (L = (0, i.jsx)(m.Z, {
-    childRef: R,
+    childRef: A,
     tutorialId: "instant-invite",
     position: "left",
     children: (0, i.jsx)("div", {
-      ref: R,
+      ref: A,
       children: L
     })
   })), (0, i.jsx)(c.ua7, {
@@ -200,7 +200,7 @@ function R(e) {
     children: e => (0, i.jsx)(c.P3F, I(P({
       className: s()(E.iconItem, f ? E.alwaysShown : void 0, b ? E.iconWithChannelInfo : E.iconNoChannelInfo)
     }, e), {
-      onClick: A,
+      onClick: R,
       tabIndex: u,
       "aria-label": T,
       children: L
@@ -208,7 +208,7 @@ function R(e) {
   })
 }
 
-function A(e) {
+function R(e) {
   let {
     channel: t
   } = e, n = () => {
@@ -266,10 +266,10 @@ class L extends(r = l.PureComponent) {
     return (0, i.jsx)(T, P({}, this.props))
   }
   renderInviteButton() {
-    return (0, i.jsx)(R, P({}, this.props))
+    return (0, i.jsx)(A, P({}, this.props))
   }
   renderRemoveSuggestionButton() {
-    return (0, i.jsx)(A, P({}, this.props))
+    return (0, i.jsx)(R, P({}, this.props))
   }
   renderAcceptSuggestionButton() {
     return (0, i.jsx)(D, P({}, this.props))

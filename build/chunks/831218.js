@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => H
 }), n(388685);
@@ -31,8 +31,8 @@ var r, i = n(255367),
   N = n(210887),
   Z = n(592125),
   T = n(158776),
-  R = n(55589),
-  A = n(515753),
+  A = n(55589),
+  R = n(515753),
   D = n(981631),
   L = n(388032),
   M = n(555614);
@@ -355,7 +355,7 @@ class V extends(r = l.Component) {
       return null == a ? null : (0, i.jsx)(v.s, {
         channelId: a.id,
         selectedChannelId: l,
-        children: (0, i.jsx)(A.ZP, {
+        children: (0, i.jsx)(R.ZP, {
           channel: a,
           selected: a.id === l,
           "aria-posinset": s + t + 1,
@@ -444,8 +444,8 @@ let H = e => {
     m = l.Children.count(d),
     y = Z.Z.getMutablePrivateChannels(),
     O = (0, I.k1)(y),
-    v = (0, u.Wu)([R.Z, P.Z, w.Z], () => {
-      let e = R.Z.getPrivateChannelIds();
+    v = (0, u.Wu)([A.Z, P.Z, w.Z], () => {
+      let e = A.Z.getPrivateChannelIds();
       return (0, I.tU)(e, [P.Z, w.Z])
     }, []);
   (0, E.z)(S.R);
@@ -455,8 +455,8 @@ let H = e => {
     theme: N.Z.darkSidebar ? D.BRd.DARK : s,
     keyboardModeEnabled: f.Z.keyboardModeEnabled,
     version: null != o ? "".concat(o, ":").concat(Z.Z.getPrivateChannelsVersion()) : Z.Z.getPrivateChannelsVersion()
-  })), T = l.useRef(null), A = null != (t = e.listScrollerRef) ? t : T, L = l.useCallback(e => {
-    let t = A.current,
+  })), T = l.useRef(null), R = null != (t = e.listScrollerRef) ? t : T, L = l.useCallback(e => {
+    let t = R.current,
       n = document.querySelector(e);
     null != t && null != n && t.scrollIntoViewNode({
       node: n,
@@ -469,21 +469,21 @@ let H = e => {
         })
       }
     })
-  }, [A]), M = l.useCallback(() => new Promise(e => {
-    let t = A.current;
+  }, [R]), M = l.useCallback(() => new Promise(e => {
+    let t = R.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), [A]), k = l.useCallback(() => new Promise(e => {
-    let t = A.current;
+  }), [R]), k = l.useCallback(() => new Promise(e => {
+    let t = R.current;
     if (null == t) return e();
     t.scrollToBottom({
       callback() {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [A]), B = (0, C.Dt)(), H = (0, c.ZP)({
+  }), [R]), B = (0, C.Dt)(), H = (0, c.ZP)({
     id: "private-channels-".concat(B),
     isEnabled: x.keyboardModeEnabled,
     scrollToStart: M,
@@ -500,7 +500,7 @@ let H = e => {
         isVisualRefreshEnabled: n,
         channels: O,
         privateChannelIds: v,
-        listRef: A,
+        listRef: R,
         theme: s,
         version: o
       }, e), {

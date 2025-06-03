@@ -1,5 +1,5 @@
-/** Chunk was on 43310 **/
-t.exports = {
+/** Chunk was on 47016 **/
+e.exports = {
   avatarDecorationPreview: "avatarDecorationPreview__9baf3",
   profileEffectPreview: "profileEffectPreview__9baf3"
 }

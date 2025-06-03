@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => ei
 }), n(388685), n(415506);
@@ -32,8 +32,8 @@ var r = n(255367),
   N = n(359110),
   Z = n(155409),
   T = n(695346),
-  R = n(447564),
-  A = n(592125),
+  A = n(447564),
+  R = n(592125),
   D = n(430824),
   L = n(607744),
   M = n(496675),
@@ -176,7 +176,7 @@ class en extends H.ZP {
         return (0, r.jsx)(c.P3F, {
           className: o()(J.iconItem, J.alwaysShown),
           onClick: () => {
-            (0, w.X)("VoiceChannel") ? (0, R.k)(e, "VoiceChannel") : window.open(V.Z.getArticleURL(q.BhN.HD_STREAMING_POTION), "_blank")
+            (0, w.X)("VoiceChannel") ? (0, A.k)(e, "VoiceChannel") : window.open(V.Z.getArticleURL(q.BhN.HD_STREAMING_POTION), "_blank")
           },
           "aria-label": X.intl.string(X.t.gpF6QU),
           onMouseEnter: n,
@@ -220,7 +220,7 @@ class en extends H.ZP {
       shouldShowGuildVerificationPopout: w
     } = this.state, N = (0, P.jW)({
       location: "voice_channel"
-    }).entrypoints, T = this.getVoiceStatesCount(), R = (0, r.jsxs)("li", {
+    }).entrypoints, T = this.getVoiceStatesCount(), A = (0, r.jsxs)("li", {
       ref: this.ref,
       className: o()(this.getModeClass(), {
         [J.disabled]: this.isDisabled()
@@ -310,13 +310,13 @@ class en extends H.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return O && (R = f(R)), y && (R = h(p(R))), v && (R = (0, r.jsx)(Z.Z, {
+    return O && (A = f(A)), y && (A = h(p(A))), v && (A = (0, r.jsx)(Z.Z, {
       childRef: this.ref,
       tutorialId: "voice-conversations",
       position: "right",
       offsetX: -20,
-      children: R
-    })), R
+      children: A
+    })), A
   }
   constructor(...e) {
     super(...e), $(this, "state", {
@@ -467,8 +467,8 @@ function ei(e) {
   } = e, u = (0, s.cj)([k.ZP], () => ({
     unread: k.ZP.hasUnread(n.id),
     mentionCount: k.ZP.getMentionCount(n.id)
-  })), d = (0, s.e7)([U.ZP], () => U.ZP.resolveUnreadSetting(n)), h = (0, s.cj)([A.Z, L.Z, M.Z], () => {
-    let e = A.Z.getChannel(n.parent_id),
+  })), d = (0, s.e7)([U.ZP], () => U.ZP.resolveUnreadSetting(n)), h = (0, s.cj)([R.Z, L.Z, M.Z], () => {
+    let e = R.Z.getChannel(n.parent_id),
       r = L.Z.getCheck(n.guild_id);
     return {
       canManageChannel: M.Z.can(q.Plq.MANAGE_CHANNELS, n),

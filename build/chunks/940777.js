@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => D
 }), n(388685), n(539854);
@@ -33,7 +33,7 @@ var r = n(255367),
   Z = n(388032),
   T = n(940751);
 
-function R(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function R(e) {
   }
   return e
 }
-let A = {
+let R = {
   analyticsSource: {
     page: N.ZY5.GUILD_CHANNEL,
     section: N.jXE.CHANNEL_LIST,
@@ -130,7 +130,7 @@ function D() {
           selected: K || H || M,
           upperBadge: W,
           lowerBadge: Y,
-          children: (0, r.jsx)(c.LYs, (e = R({}, l), t = t = {
+          children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
             ariaLabel: Z.intl.formatToPlainString(Z.t["/uzRsr"], {
               guildName: Z.intl.string(Z.t.wMWycn),
               mentions: F
@@ -138,7 +138,7 @@ function D() {
             "aria-selected": H,
             to: {
               pathname: N.Z5c.CHANNEL(N.I_8, B),
-              state: A
+              state: R
             },
             selected: H || M,
             onMouseEnter: () => k(!0),
@@ -151,7 +151,7 @@ function D() {
                 let {
                   default: e
                 } = await n.e("3190").then(n.bind(n, 631981));
-                return t => (0, r.jsx)(e, R({}, t))
+                return t => (0, r.jsx)(e, A({}, t))
               })
             },
             children: (0, r.jsx)("div", {

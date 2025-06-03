@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => N
 }), n(388685);
@@ -40,8 +40,8 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       isMentionLowImportance: N,
       unread: Z = !1,
       defaultFolderName: T,
-      draggable: R = !1,
-      sorting: A = !1,
+      draggable: A = !1,
+      sorting: R = !1,
       onDragStart: D,
       onDragEnd: L,
       onExpandCollapse: M,
@@ -57,8 +57,8 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       children: W
     } = t, [Y, K] = i.useState(!1), [q, Q] = i.useState(!1), X = Y || q, J = (0, f.Ml)("FolderItem");
     i.useEffect(() => {
-      A && K(!1)
-    }, [A]);
+      R && K(!1)
+    }, [R]);
     let [{
       dragging: $
     }, ee] = (0, s.c)({
@@ -104,11 +104,11 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
         className: P.pill
       }), (0, r.jsx)(j.Z, {
         text: er,
-        disabled: A,
+        disabled: R,
         selected: l,
         disableWrapper: !0,
         children: (0, r.jsx)("div", {
-          ref: R ? e => {
+          ref: A ? e => {
             ee(e)
           } : void 0,
           className: o()(x.folderHeader, {
@@ -121,7 +121,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
           }) : (0, r.jsx)(O.Z, {
             folderNode: t,
             expanded: a,
-            sorting: A,
+            sorting: R,
             mediaState: d,
             mentionCount: m,
             isMentionLowImportance: N,
@@ -137,7 +137,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             "aria-posinset": H
           })
         })
-      }), R ? (0, r.jsx)(v.ZP, {
+      }), A ? (0, r.jsx)(v.ZP, {
         name: er,
         targetNode: t,
         onDragOverChanged: et
@@ -171,7 +171,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
           "aria-label": t.name,
           children: W.map((t, n) => U(t, n, W.length, e.height))
         }, l)
-      }), R && a ? (0, r.jsx)(v.Zu, {
+      }), A && a ? (0, r.jsx)(v.Zu, {
         name: er,
         targetNode: t
       }) : null]

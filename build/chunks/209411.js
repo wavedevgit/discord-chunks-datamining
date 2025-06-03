@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(593473),
-  o = n(114858),
-  a = n(442837),
+  a = n(114858),
+  o = n(442837),
   s = n(893776),
   c = n(899742),
   u = n(493773),
@@ -23,7 +23,7 @@ function x(e) {
   let x = i.useCallback(t => {
       if (function(e) {
           var t;
-          let n = (0, o.LX)(e, {
+          let n = (0, a.LX)(e, {
             path: f.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
           });
           return (null == n || null == (t = n.params) ? void 0 : t.channelId) === _.oC.ROLE_SUBSCRIPTIONS
@@ -36,7 +36,7 @@ function x(e) {
     {
       isAuthenticated: E,
       loginStatus: b
-    } = (0, a.cj)([p.default], () => ({
+    } = (0, o.cj)([p.default], () => ({
       isAuthenticated: p.default.isAuthenticated(),
       loginStatus: p.default.getLoginStatus()
     })),

@@ -104,22 +104,22 @@ function x(e) {
     })
   }, [O]), T = r.useMemo(() => null != E && E !== a.Skl.UNKNOWN && null != l && l.isPomelo() ? (0, i.jsx)(c.Z, {
     text: g.ZP.humanizeStatus(E)
-  }) : C, [E, l, C]), N = null != S, [I, y] = r.useState(!1), A = r.useMemo(() => (0, i.jsx)(_, {
+  }) : C, [E, l, C]), I = null != S, [N, y] = r.useState(!1), A = r.useMemo(() => (0, i.jsx)(_, {
     openModal: v,
-    hasCustomStatus: N,
+    hasCustomStatus: I,
     className: b.customStatusActionHoverText,
     onFocus: () => y(!0),
     onBlur: () => y(!1)
-  }), [v, N]), P = j ? (0, i.jsx)(d.Z, {
+  }), [v, I]), P = j ? (0, i.jsx)(d.Z, {
     hoverText: A,
-    forceHover: t || I,
+    forceHover: t || N,
     children: T
   }) : A;
   return (0, i.jsx)(m.Gt, {
     value: O,
     children: null != s && s.length > 0 ? (0, i.jsx)(d.Z, {
       hoverText: P,
-      forceHover: t || I,
+      forceHover: t || N,
       children: (0, i.jsx)(o.Z, {
         location: "CustomStatusRTCEntrypoint",
         user: l,

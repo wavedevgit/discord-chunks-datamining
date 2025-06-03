@@ -27,8 +27,8 @@ var i = n(255367),
   S = n(634894),
   v = n(586902),
   T = n(980591),
-  N = n(468363),
-  I = n(326255),
+  I = n(468363),
+  N = n(326255),
   y = n(771173),
   A = n(963056),
   P = n(570928),
@@ -46,8 +46,8 @@ var i = n(255367),
   F = n(522651),
   H = n(795318),
   z = n(526371),
-  W = n(64220),
-  Y = n(359588),
+  Y = n(64220),
+  W = n(359588),
   K = n(459115),
   q = n(427217),
   X = n(132750),
@@ -81,8 +81,8 @@ var i = n(255367),
   eS = n(184301),
   ev = n(52538),
   eT = n(670188),
-  eN = n(321614),
-  eI = n(879815),
+  eI = n(321614),
+  eN = n(879815),
   ey = n(294629),
   eA = n(875527),
   eP = n(702977),
@@ -100,8 +100,8 @@ var i = n(255367),
   eF = n(819640),
   eH = n(131951),
   ez = n(19780),
-  eW = n(914010),
-  eY = n(885110),
+  eY = n(914010),
+  eW = n(885110),
   eK = n(246946),
   eq = n(594174),
   eX = n(78839),
@@ -328,7 +328,7 @@ class tp extends r.PureComponent {
       userTag: l,
       customStatusHoverOnlyRTCEntrypointEnabled: d
     });
-    if ((0, I.Z)({
+    if ((0, N.Z)({
         activities: t,
         status: s,
         applicationStream: n,
@@ -416,7 +416,7 @@ class tp extends r.PureComponent {
           } = t;
           switch (n) {
             case u.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP:
-              return (0, i.jsx)(W.Z, {
+              return (0, i.jsx)(Y.Z, {
                 markAsDismissed: r,
                 targetElementRef: this.avatarWithPopoutRef,
                 children: () => this.renderAvatarWithPopout({
@@ -543,7 +543,7 @@ class tp extends r.PureComponent {
         return () => {
           let {
             enabledInputProfiles: n
-          } = (0, eN.c)({
+          } = (0, eI.c)({
             location: "Account"
           });
           return (0, i.jsx)(D.Gt, {
@@ -734,8 +734,8 @@ function tf() {
       activities: s,
       streaming: l,
       status: a
-    } = (0, d.cj)([eY.Z], () => {
-      let e = eY.Z.getActivities();
+    } = (0, d.cj)([eW.Z], () => {
+      let e = eW.Z.getActivities();
       return {
         activities: e,
         streaming: null != e.find(e => {
@@ -744,7 +744,7 @@ function tf() {
           } = e;
           return t === te.IIU.STREAMING
         }),
-        status: eY.Z.getStatus()
+        status: eW.Z.getStatus()
       }
     }),
     c = (0, d.e7)([eM.Z], () => eM.Z.getAnyStreamForUser(n)),
@@ -767,29 +767,29 @@ function tf() {
     {
       selfDeaf: C,
       deaf: j
-    } = (0, eI.Z)(h),
+    } = (0, eN.Z)(h),
     T = (0, d.e7)([k.C], () => {
       var e;
       return (0, L.fD)() ? null == (e = k.C.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
     }),
-    I = (0, d.e7)([eX.ZP], () => eX.ZP.getPremiumTypeSubscription()),
+    N = (0, d.e7)([eX.ZP], () => eX.ZP.getPremiumTypeSubscription()),
     y = (0, d.e7)([eH.Z], () => eH.Z.getSpeakingWhileMuted()),
     A = (0, d.e7)([B.Z], () => B.Z.isFullscreenInContext()),
     P = (0, d.e7)([eF.Z], () => eF.Z.hasLayers()),
     Z = (0, _.s9z)(_.JQI) || P || e2.s.isDisallowPopupsSet() || A,
     w = (0, em.b)(),
     M = (0, d.e7)([et.Z], () => null != et.Z.getAwaitingRemoteSessionInfo()),
-    U = (0, d.e7)([eW.Z], () => eW.Z.getGuildId()),
+    U = (0, d.e7)([eY.Z], () => eY.Z.getGuildId()),
     V = (0, e_.D)(),
     G = (0, O.u)(),
     F = e8.ZP.canUsePremiumGuildMemberProfile(t),
     H = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === tt.rL,
     {
       voiceActivityStatusEnabled: z
-    } = (0, N.U)({
+    } = (0, I.U)({
       location: "Account"
     }),
-    W = (0, es.m)(),
+    Y = (0, es.m)(),
     [q, X] = (0, ei.G)(null != U ? U : null),
     {
       customStatusRTCEntrypointEnabled: Q,
@@ -850,14 +850,14 @@ function tf() {
       }
       return i.length > 1
     }),
-    eu = (0, Y.Z)({
+    eu = (0, W.Z)({
       location: "AccountConnected"
     }),
     eh = {
       avatar: [],
       settings: []
     };
-  return !Z && (er && eh.settings.push(u.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2), V && (1 === G ? eh.settings.push(u.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE) : eh.settings.push(u.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK)), en && eh.settings.push(u.z.SOUNDBOARD_VOLUME_EDUCATION), F && eh.settings.push(u.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK), H && eh.avatar.push(u.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), W && eh.avatar.push(u.z.EXPIRING_STATUS_COACHMARK), eu && eh.avatar.push(u.z.CUSTOM_STATUS_PROMPTS_COACHMARK)), (0, i.jsx)(D.Gt, {
+  return !Z && (er && eh.settings.push(u.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2), V && (1 === G ? eh.settings.push(u.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE) : eh.settings.push(u.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK)), en && eh.settings.push(u.z.SOUNDBOARD_VOLUME_EDUCATION), F && eh.settings.push(u.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK), H && eh.avatar.push(u.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), Y && eh.avatar.push(u.z.EXPIRING_STATUS_COACHMARK), eu && eh.avatar.push(u.z.CUSTOM_STATUS_PROMPTS_COACHMARK)), (0, i.jsx)(D.Gt, {
     value: el,
     children: (0, i.jsx)(tp, {
       currentUser: t,
@@ -870,7 +870,7 @@ function tf() {
       userTag: g,
       hidePrivateData: p,
       occluded: Z,
-      premiumSubscription: I,
+      premiumSubscription: N,
       selfDeaf: C,
       selfMute: b,
       serverDeaf: j,
@@ -952,7 +952,7 @@ function t_(e) {
     onContextMenu: C,
     nameplate: j,
     accountContainerRef: O
-  } = e, S = t || s || n, v = r.useRef(null), T = r.useRef(null), N = (0, p.O)(S ? "unmute" : "mute"), I = (0, h.P)(S ? "unmute" : "mute"), {
+  } = e, S = t || s || n, v = r.useRef(null), T = r.useRef(null), I = (0, p.O)(S ? "unmute" : "mute"), N = (0, h.P)(S ? "unmute" : "mute"), {
     activeVoice: y
   } = (0, eZ.o)(), {
     showSilentLagWarning: A
@@ -960,7 +960,7 @@ function t_(e) {
     Component: k,
     events: L,
     play: B
-  } = P ? I : N, M = n || s ? _.v0G : k, V = A ? tr.intl.string(tr.t.ARRV6u) : null, G = (0, U.Z)(t, n, s, a), F = null != o ? o : null != V ? (0, i.jsxs)("div", {
+  } = P ? N : I, M = n || s ? _.v0G : k, V = A ? tr.intl.string(tr.t.ARRV6u) : null, G = (0, U.Z)(t, n, s, a), F = null != o ? o : null != V ? (0, i.jsxs)("div", {
     className: ts.tooltipWithSubtext,
     children: [(0, i.jsx)(_.Text, {
       variant: "text-sm/medium",
@@ -976,12 +976,12 @@ function t_(e) {
   } = (0, D.ZP)(R.Z.AUDIO_INPUT_BUTTON), z = (0, eA.Hu)({
     location: R.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: !0
-  }), W = (0, eP.av)({
+  }), Y = (0, eP.av)({
     location: R.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: !0
   });
   r.useEffect(() => () => B(), [S, B]);
-  let Y = r.useCallback(e => {
+  let W = r.useCallback(e => {
       C(e, H)
     }, [C, H]),
     [K, q] = r.useState(!1),
@@ -1027,7 +1027,7 @@ function t_(e) {
           className: g
         }),
         onClick: E,
-        onContextMenu: Y,
+        onContextMenu: W,
         role: "switch",
         className: l()({
           [ts.micButtonWithMenu]: z
@@ -1085,7 +1085,7 @@ function t_(e) {
               children: (e, t) => (0, i.jsx)(ek.v, {
                 targetElementRef: T,
                 onCTA: () => q(!0),
-                canBeShown: W && w && !P && !e && !s,
+                canBeShown: Y && w && !P && !e && !s,
                 children: (e, s) => (0, i.jsx)(e4.Z, ta({
                   ref: T,
                   plated: null != j,

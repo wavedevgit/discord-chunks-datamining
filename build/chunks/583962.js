@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   PD: () => D,
   ZP: () => k,
@@ -64,8 +64,8 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
-  A = e => {
+let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
+  R = e => {
     let {
       guild: t,
       onSelect: n
@@ -89,7 +89,7 @@ let R = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     })
   },
   D = 57,
-  L = 57 + R,
+  L = 57 + A,
   M = {
     tension: 180,
     friction: 80
@@ -100,7 +100,7 @@ let R = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
       withMargin: n
     } = e, l = (0, m.Q3)("GuildBoostingSidebarDisplay"), {
       analyticsLocations: u
-    } = (0, g.ZP)(p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), b = (0, _.Jh)(t.id), C = (0, y.Z)(t.id), R = (0, _.FZ)(b), D = null == R, L = null != R ? R : b, k = (0, c.e7)([S.Z], () => {
+    } = (0, g.ZP)(p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), b = (0, _.Jh)(t.id), C = (0, y.Z)(t.id), A = (0, _.FZ)(b), D = null == A, L = null != A ? A : b, k = (0, c.e7)([S.Z], () => {
       var e;
       return null != (e = S.Z.getCountForGuild(t.id)) ? e : 0
     }), U = (0, c.e7)([O.Z], () => O.Z.can(P.Plq.MANAGE_GUILD, t));
@@ -176,7 +176,7 @@ let R = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
             [N.containerWithMargin]: n
           }),
           onContextMenu: e => {
-            U && (0, h.vq)(e, e => (0, r.jsx)(A, T(Z({}, e), {
+            U && (0, h.vq)(e, e => (0, r.jsx)(R, T(Z({}, e), {
               guild: t
             })))
           },

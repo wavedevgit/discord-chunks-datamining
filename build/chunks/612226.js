@@ -1,10 +1,10 @@
 /** Chunk was on 8787 **/
 n.d(t, {
   Q2: () => V,
-  Rv: () => W,
+  Rv: () => Y,
   U6: () => F,
   UD: () => G,
-  ZP: () => Y,
+  ZP: () => W,
   oT: () => z
 }), n(415506), n(539854);
 var i, r = n(2818),
@@ -30,8 +30,8 @@ var i, r = n(2818),
   S = n(908552),
   v = n(189509),
   T = n(673553),
-  N = n(280492),
-  I = n(746887),
+  I = n(280492),
+  N = n(746887),
   y = n(861007),
   A = n(89028),
   P = n(300644),
@@ -106,9 +106,9 @@ let z = {
   [M.EkH.TOGGLE_USERS]: Z.r,
   [M.EkH.TOGGLE_HELP]: P.O,
   [M.EkH.VIBE_WITH_WUMPUS]: L.w,
-  [M.EkH.TOGGLE_MUTE]: N.iN,
-  [M.EkH.TOGGLE_DEAFEN]: N.oV,
-  [M.EkH.TOGGLE_CATEGORY_COLLAPSED]: I.u,
+  [M.EkH.TOGGLE_MUTE]: I.iN,
+  [M.EkH.TOGGLE_DEAFEN]: I.oV,
+  [M.EkH.TOGGLE_CATEGORY_COLLAPSED]: N.u,
   [M.EkH.SEARCH_SOUNDBOARD]: j.Z,
   [M.EkH.SCROLL_UP]: x.B2,
   [M.EkH.SCROLL_DOWN]: x.gN,
@@ -133,7 +133,7 @@ let z = {
   [M.EkH.BROWSER_DEVTOOLS]: c.p
 };
 
-function W() {
+function Y() {
   let e = [{
       description: U.intl.string(U.t.bx4Uy8),
       binds: H(M.EkH.SERVER_PREV, M.EkH.SERVER_NEXT),
@@ -339,4 +339,4 @@ function W() {
     group: "CHAT"
   }), e
 }
-let Y = 12633 == n.j ? z : null
+let W = 12633 == n.j ? z : null

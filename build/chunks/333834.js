@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => x
 }), n(539854), n(388685), n(642613);
@@ -69,8 +69,8 @@ function x(e) {
     className: w,
     listName: N,
     ignoreGrouping: Z = !1
-  } = e, T = i.useRef(null), R = (0, d.Z)(N, T), {
-    notificationCenterVariant: A
+  } = e, T = i.useRef(null), A = (0, d.Z)(N, T), {
+    notificationCenterVariant: R
   } = m.L.useExperiment({
     location: "NotificationsInboxSidebarList"
   }), {
@@ -147,17 +147,17 @@ function x(e) {
         let {
           message: t
         } = e;
-        return x([t], "sidebar" === A)
+        return x([t], "sidebar" === R)
       })) : a().each(E, t => {
         0 !== k[t].length && (e.push((0, r.jsx)(S, {
           group: t,
           isOpen: D[t],
           toggleOpenedState: () => L(t)
-        })), D[t] && e.push(...k[t].map(e => x(e, "sidebar" === A))))
+        })), D[t] && e.push(...k[t].map(e => x(e, "sidebar" === R))))
       }), (null == n ? void 0 : n.length) !== 0 && e.push((0, r.jsx)(u.LZC, {
         size: 8
       }, "spacer")), e
-    }, [n, _, D, L, k, Z, x, A]);
+    }, [n, _, D, L, k, Z, x, R]);
   i.useEffect(() => {
     0 === k.UNREAD.length ? P(O.xM.READ) : P(O.xM.UNREAD)
   }, [k, P]);
@@ -175,7 +175,7 @@ function x(e) {
       onScroll: M,
       ref: T,
       children: [(0, r.jsx)(c.bG, {
-        navigator: R,
+        navigator: A,
         children: (0, r.jsx)(c.SJ, {
           children: e => {
             var t, n, {

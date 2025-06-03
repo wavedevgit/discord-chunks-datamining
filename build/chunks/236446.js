@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(512722),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(512722),
+  s = n.n(o),
   c = n(442837),
   u = n(388905),
   d = n(362762),
@@ -72,7 +72,7 @@ class L extends i.PureComponent {
         src: n(167969),
         className: R.marginBottom8
       }), (0, r.jsx)(u.Dx, {
-        className: o()(R.marginTop8, R.marginBottom8),
+        className: a()(R.marginTop8, R.marginBottom8),
         children: P.intl.string(P.t.C7ZRNz)
       }), (0, r.jsx)(u.DK, {
         children: P.intl.string(P.t.A6MwXF)

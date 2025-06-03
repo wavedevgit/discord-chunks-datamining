@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(565138),
   v = n(297700),
   T = n(553795),
-  N = n(430824),
-  I = n(771845),
+  I = n(430824),
+  N = n(771845),
   y = n(246946),
   A = n(626135),
   P = n(63063),
@@ -75,7 +75,7 @@ let H = e => {
       joinErrorMessage: "" === T.Z.joinErrorMessage(s.id) ? U.intl.string(U.t.j2d6Ki) : T.Z.joinErrorMessage(s.id),
       showJoinErrorMessage: void 0 !== T.Z.joinErrorMessage(s.id)
     }), [s.id]);
-  return null != (0, a.e7)([N.Z], () => N.Z.getGuild(s.guild.id), [s.guild.id]) || (r = (0, i.jsx)(u.zxk, {
+  return null != (0, a.e7)([I.Z], () => I.Z.getGuild(s.guild.id), [s.guild.id]) || (r = (0, i.jsx)(u.zxk, {
     size: u.PhG.SMALL,
     onClick: function() {
       g.Z.joinServer(s.id, () => {})
@@ -126,16 +126,16 @@ function z(e) {
     } = e,
     [h, b] = r.useState(o.friendSync),
     [O, S] = r.useState(o.visibility),
-    [T, N] = r.useState(o.metadataVisibility),
-    [I, y] = r.useState(o.showActivity),
+    [T, I] = r.useState(o.metadataVisibility),
+    [N, y] = r.useState(o.showActivity),
     [A, R] = r.useState(null),
     [M, G] = r.useState(null),
-    [z, W] = r.useState(!1),
-    [Y, K] = r.useState([]),
+    [z, Y] = r.useState(!1),
+    [W, K] = r.useState([]),
     q = (0, x.rR)(o.type),
     X = _.Z.get(q);
   r.useEffect(() => {
-    b(o.friendSync), S(o.visibility), N(o.metadataVisibility), y(o.showActivity)
+    b(o.friendSync), S(o.visibility), I(o.metadataVisibility), y(o.showActivity)
   }, [o]);
   let Q = {
       inProgressVisibility: A,
@@ -150,7 +150,7 @@ function z(e) {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
     } = J.current;
-    null != e && (S(e), g.Z.setVisibility(o.type, o.id, e), R(null)), null != t && (N(t), g.Z.setMetadataVisibility(o.type, o.id, t), G(null))
+    null != e && (S(e), g.Z.setVisibility(o.type, o.id, e), R(null)), null != t && (I(t), g.Z.setMetadataVisibility(o.type, o.id, t), G(null))
   }, [o]);
 
   function $() {
@@ -285,7 +285,7 @@ function z(e) {
           date: s
         })
       }, "member-since")));
-      let l = Y.includes(e.id),
+      let l = W.includes(e.id),
         a = U.intl.string(U.t.wzzjk5);
       if (null == r || 0 === r.length)
         if (!0 !== _.Z.get(e.type).hasMetadata) return null;
@@ -307,9 +307,9 @@ function z(e) {
         disabled: l,
         "aria-label": U.intl.string(U.t.sCkLYG),
         onClick: l ? void 0 : () => {
-          W(!0), g.Z.refresh(e.type, e.id).finally(() => {
+          Y(!0), g.Z.refresh(e.type, e.id).finally(() => {
             setTimeout(() => {
-              Y.push(e.id), K(Y), W(!1)
+              W.push(e.id), K(W), Y(!1)
             }, 2e3)
           })
         },
@@ -332,7 +332,7 @@ function z(e) {
     })), L.vbS.has(o.type) && (s = (0, i.jsx)(u.j7V, {
       className: V.connectionOptionSwitch,
       hideBorder: !0,
-      value: I,
+      value: N,
       onChange: function(e) {
         y(e), g.Z.setShowActivity(o.type, o.id, e)
       },
@@ -357,7 +357,7 @@ function z(e) {
           });
           return
         }
-        N(n), g.Z.setMetadataVisibility(o.type, o.id, n)
+        I(n), g.Z.setMetadataVisibility(o.type, o.id, n)
       },
       disabled: 1 !== O || null == o.metadata,
       children: (0, i.jsx)(u.Text, {
@@ -425,7 +425,7 @@ function z(e) {
   })
 }
 
-function W() {
+function Y() {
   return r.useEffect(() => () => {
     (0, O.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: M.L.AUTO
@@ -447,7 +447,7 @@ function W() {
   })
 }
 
-function Y(e) {
+function W(e) {
   let t = _.Z.get(e);
   (0, C.Z)({
     platformType: t.type
@@ -462,7 +462,7 @@ function K() {
   function e() {
     m.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
-      onComplete: Y
+      onComplete: W
     })
   }
   let t = (0, x.fq)();
@@ -545,7 +545,7 @@ let X = () => {
     t = (0, a.e7)([T.Z], () => T.Z.isFetching()),
     n = (0, a.e7)([T.Z], () => T.Z.getAccounts()),
     s = (0, b.ZP)();
-  (0, a.e7)([I.ZP], () => I.ZP.getFlattenedGuildIds());
+  (0, a.e7)([N.ZP], () => N.ZP.getFlattenedGuildIds());
   let l = (0, a.e7)([R.default], () => R.default.locale);
   return (r.useEffect(() => {
     g.Z.fetch()
@@ -553,7 +553,7 @@ let X = () => {
     className: V.__invalid_connections,
     tag: u.RB0.H1,
     title: U.intl.string(U.t["3fe7U1"]),
-    children: [(0, i.jsx)(W, {}), (0, i.jsx)(q, {
+    children: [(0, i.jsx)(Y, {}), (0, i.jsx)(q, {
       fetching: t,
       accounts: n,
       theme: s,

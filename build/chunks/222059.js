@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   u: () => L
 }), n(388685);
@@ -32,8 +32,8 @@ var r = n(255367),
   N = n(474936),
   Z = n(871465),
   T = n(388032),
-  R = n(823306);
-let A = {
+  A = n(823306);
+let R = {
   origin: {
     x: -16,
     y: 0
@@ -62,7 +62,7 @@ function D(e) {
   _ && (G = s.K.get(w.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
   let B = null;
   !o && y && (B = (0, r.jsx)(c.Z, {
-    className: R.downloadProgress,
+    className: A.downloadProgress,
     determineOwnVisibility: !1
   }));
   let V = o || O || k,
@@ -130,16 +130,16 @@ function D(e) {
       }), t))
     });
   return (0, r.jsx)("div", {
-    className: R.tutorialContainer,
+    className: A.tutorialContainer,
     children: (0, r.jsx)(m.Z, {
-      inlineSpecs: A,
+      inlineSpecs: R,
       tutorialId: "friends-list",
       position: "right",
       children: (0, r.jsxs)(x.H, {
         children: [(0, r.jsx)(E.Z, {
           selected: o,
           hovered: O,
-          className: R.pill
+          className: A.pill
         }), (0, r.jsx)(P.Z, {
           color: a.ua7.Colors.PRIMARY,
           hideOnClick: !0,

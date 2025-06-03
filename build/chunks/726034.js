@@ -133,7 +133,9 @@ function S(e) {
     }), (0, r.jsx)(o.zxk, {
       className: E.applyButton,
       size: o.zxk.Sizes.NONE,
-      onClick: t,
+      onClick: () => {
+        t(), (0, c.Ll)()
+      },
       disabled: 0 === n.length,
       children: g.intl.string(g.t["1Qm829"])
     })]
@@ -176,12 +178,14 @@ function T(e) {
         value: C,
         colors: c,
         setColors: T
-      }), (0, r.jsx)(y, {
+      }), c.length > 1 && (0, r.jsx)(y, {
         gradientAngle: m,
         setGradientAngle: N
       }), (0, r.jsx)(O, {
         chassisMixAmount: d,
-        setChassisMixAmount: A
+        setChassisMixAmount: e => {
+          A(e), 0 === c.length && T([C])
+        }
       }), (0, r.jsxs)(o.zxk, {
         className: E.resetButton,
         innerClassName: E.resetButtonContent,

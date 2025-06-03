@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(921801),
   v = n(485341),
   T = n(687158),
-  N = n(518950),
-  I = n(184325),
+  I = n(518950),
+  N = n(184325),
   y = n(867176),
   A = n(25990),
   P = n(594174),
@@ -76,7 +76,7 @@ function H(e, t) {
 }
 let z = Z.ZP.getEnableHardwareAcceleration() ? u.Xo$ : u.qEK;
 
-function W(e) {
+function Y(e) {
   var t, s;
   let {
     className: a,
@@ -167,7 +167,7 @@ function W(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   var t, n;
   let {
     user: s,
@@ -469,7 +469,7 @@ function ee() {
     {
       avatarSrc: d,
       avatarDecorationSrc: m
-    } = (0, N.Z)({
+    } = (0, I.Z)({
       user: t,
       size: u.EFr.SIZE_80
     });
@@ -503,7 +503,7 @@ function ee() {
           }), (0, i.jsx)(Q, {
             user: t
           })]
-        }), (0, i.jsx)(I.Z, {
+        }), (0, i.jsx)(N.Z, {
           badges: r,
           className: G.badgeList,
           badgeClassName: G.badge
@@ -524,13 +524,13 @@ function ee() {
         className: G.fieldList,
         children: [(0, i.jsx)(S.F, {
           setting: L.s6.ACCOUNT_DISPLAY_NAME,
-          children: (0, i.jsx)(Y, {
+          children: (0, i.jsx)(W, {
             className: G.fieldSpacerBottom,
             user: t
           })
         }), (0, i.jsx)(S.F, {
           setting: L.s6.ACCOUNT_USERNAME,
-          children: (0, i.jsx)(W, {
+          children: (0, i.jsx)(Y, {
             user: t
           })
         }), (0, i.jsx)(S.F, {

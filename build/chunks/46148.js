@@ -1,4 +1,4 @@
-/** Chunk was on 78715 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   s: () => E
 }), n(388685);
@@ -47,7 +47,7 @@ let C = (e, t) => {
     } = (0, p.m)({
       location: "ChatWallpaperDMListCoachmark",
       selectedChannelId: E
-    }), Z = N === h.FN.CONTEXT_MENU, [T, R] = (0, c.US)(x && Z && I && w && !P ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []), A = (0, u.m)(y.p9.TIER_2), D = (0, f.Z)(n), L = T === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, M = (0, i.useRef)(null), k = (0, i.useRef)(null), U = (0, i.useRef)(null), [G, B] = (0, i.useState)(g.U.TOP);
+    }), Z = N === h.FN.CONTEXT_MENU, [T, A] = (0, c.US)(x && Z && I && w && !P ? [o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK] : []), R = (0, u.m)(y.p9.TIER_2), D = (0, f.Z)(n), L = T === o.z.CHAT_WALLPAPERS_DM_LIST_COACHMARK, M = (0, i.useRef)(null), k = (0, i.useRef)(null), U = (0, i.useRef)(null), [G, B] = (0, i.useState)(g.U.TOP);
     if ((0, i.useLayoutEffect)(() => {
         if (null === M.current) return;
         let e = () => {
@@ -60,9 +60,9 @@ let C = (e, t) => {
         return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
       }, [L]), !L) return t;
     let V = () => {
-        R(b.L.USER_DISMISS)
+        A(b.L.USER_DISMISS)
       },
-      H = C(A, null != D ? D : null),
+      H = C(R, null != D ? D : null),
       F = j(H),
       z = S(H);
     return (0, r.jsx)("div", {
