@@ -935,17 +935,18 @@ let eM = {
         let r = t.attachments;
         if (s = t.uploader, G && (null == r || 0 === r.length)) return;
         null != r && (en.message.attachments = r.map((e, t) => (0, eE.B)(e, t)))
-      } catch (r) {
+      } catch (i) {
         let {
           file: e,
           code: t,
-          reason: n
-        } = r;
+          reason: n,
+          responseBody: r
+        } = i;
         (0, U.x)({
           fileItems: e.items,
           failureCode: t,
           errorMessage: null == n ? void 0 : n.msg
-        }), null == P || P(e, t, n);
+        }), null == P || P(e, t, n, r);
         return
       }
       return new Promise((t, r) => {
