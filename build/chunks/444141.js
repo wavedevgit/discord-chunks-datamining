@@ -8,8 +8,8 @@ var l = t(255367),
   o = t(5192),
   s = t(785717),
   a = t(977378),
-  c = t(892001),
-  u = t(687158),
+  u = t(892001),
+  c = t(687158),
   d = t(388032);
 
 function f(e) {
@@ -50,32 +50,32 @@ function g(e) {
     guildId: t,
     channelId: g,
     displayProfile: v,
-    onClose: j
+    onClose: h
   } = e, {
-    analyticsLocations: b,
-    sourceAnalyticsLocations: h
+    analyticsLocations: j,
+    sourceAnalyticsLocations: m
   } = (0, i.ZP)(), {
-    context: m,
+    context: b,
     trackUserProfileAction: x
-  } = (0, s.KZ)(), O = (0, u.ZP)(n.id, t), {
+  } = (0, s.KZ)(), O = (0, c.ZP)(n.id, t), {
     viewMainProfileEnabled: Z
   } = (0, a.E)({
     location: "useViewUserProfileModalItem"
   });
-  return Z && (null == O ? void 0 : O.guildId) != null && null != m ? (null == v ? void 0 : v.guildId) != null ? (0, l.jsx)(r.sNh, {
+  return Z && (null == O ? void 0 : O.guildId) != null && null != b ? (null == v ? void 0 : v.guildId) != null ? (0, l.jsx)(r.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
       displayName: o.ZP.getName(void 0, void 0, n)
     }),
     action: () => {
-      null == j || j(), (0, c.openUserProfileModal)(p(f({}, m), {
+      null == h || h(), (0, u.openUserProfileModal)(p(f({}, b), {
         showGuildProfile: !1,
-        sourceAnalyticsLocations: h
+        sourceAnalyticsLocations: m
       })), x(f({
         action: "PRESS_VIEW_MAIN_PROFILE",
-        analyticsLocations: b
-      }, m))
+        analyticsLocations: j
+      }, b))
     }
   }) : (0, l.jsx)(r.sNh, {
     id: "view-server-profile",
@@ -84,13 +84,13 @@ function g(e) {
       displayName: o.ZP.getName(t, g, n)
     }),
     action: () => {
-      null == j || j(), (0, c.openUserProfileModal)(p(f({}, m), {
+      null == h || h(), (0, u.openUserProfileModal)(p(f({}, b), {
         showGuildProfile: !0,
-        sourceAnalyticsLocations: h
+        sourceAnalyticsLocations: m
       })), x(f({
         action: "PRESS_VIEW_SERVER_PROFILE",
-        analyticsLocations: b
-      }, m))
+        analyticsLocations: j
+      }, b))
     }
   }) : null
 }

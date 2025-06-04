@@ -26,9 +26,9 @@ function _(e) {
     analyticsLocations: x
   } = (0, l.ZP)(), {
     context: h,
-    trackUserProfileAction: j
+    trackUserProfileAction: g
   } = (0, s.KZ)(), {
-    mutualFriends: g,
+    mutualFriends: j,
     mutualFriendsCount: v
   } = (0, d.Z)(t), I = (0, c.Z)();
   return r.useEffect(() => {
@@ -36,7 +36,7 @@ function _(e) {
   }, [t.id, I]), (0, o.jsx)(i.Ttm, {
     className: b.scroller,
     fade: !0,
-    children: null == g ? Array.from({
+    children: null == j ? Array.from({
       length: null != v ? v : 10
     }).map((e, t) => (0, o.jsxs)("div", {
       className: b.loadingItem,
@@ -47,7 +47,7 @@ function _(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === g.length ? (0, o.jsx)(m.s_, {}) : g.map(e => {
+    }, t)) : 0 === j.length ? (0, o.jsx)(m.s_, {}) : j.map(e => {
       let {
         key: t,
         user: r,
@@ -60,7 +60,7 @@ function _(e) {
         channelId: _,
         onSelect: () => {
           var e, t;
-          null == y || y(), j({
+          null == y || y(), g({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
