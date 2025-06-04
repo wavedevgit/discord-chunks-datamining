@@ -87,7 +87,7 @@ function k(e) {
   }), B = (0, l.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil), q = (0, _.qN)({
     quest: o,
     location: P.dr.QUESTS_BAR
-  }), I = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), D = (0, l.e7)([p.Z], () => p.Z.hasLayers()), M = s.useRef(null), L = s.useMemo(() => (0, h.q8)(o), [o]), Z = (null == (t = o.userStatus) ? void 0 : t.enrolledAt) != null, V = (0, d.Z)(Z), W = (null == (n = o.userStatus) ? void 0 : n.completedAt) != null, Q = (0, d.Z)(W), {
+  }), I = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), D = (0, l.e7)([p.Z], () => p.Z.hasLayers()), M = s.useRef(null), L = s.useMemo(() => (0, h.q8)(o), [o]), V = (null == (t = o.userStatus) ? void 0 : t.enrolledAt) != null, Z = (0, d.Z)(V), W = (null == (n = o.userStatus) ? void 0 : n.completedAt) != null, Q = (0, d.Z)(W), {
     hasError: H,
     isLoading: U
   } = (0, y.d7)(), z = s.useContext(S.T) || k && q && !U && !B, F = s.useRef(z), K = (0, w.B)(o, z && !H), X = s.useRef(-1), Y = s.useRef(!1), [G, J] = s.useState(!1), [$, ee] = s.useState(!1), [et, en] = s.useState(!0), [er, es] = s.useState(!0), [eo, ea] = s.useState(K.preEnrollmentExpandedHeight), ei = s.useRef(null), el = s.useCallback(e => {
@@ -139,13 +139,13 @@ function k(e) {
   s.useLayoutEffect(() => {
     W && K.shouldExpandOnQuestComplete && ed()
   }, [ed, W, K.shouldExpandOnQuestComplete]), s.useLayoutEffect(() => {
-    Z && !V && Y.current && ed()
-  }, [ed, Z, V]), s.useLayoutEffect(() => {
-    W || !Z || V || Y.current || el(!1)
-  }, [Z, W, V, el]), s.useLayoutEffect(() => {
+    V && !Z && Y.current && ed()
+  }, [ed, V, Z]), s.useLayoutEffect(() => {
+    W || !V || Z || Y.current || el(!1)
+  }, [V, W, Z, el]), s.useLayoutEffect(() => {
     z !== F.current && es(!1), F.current = z
   }, [z]);
-  let ej = Z ? P.XZ : P.R4,
+  let ej = V ? P.XZ : P.R4,
     [{
       expansionSpring: ev
     }, ey] = (0, c.q_F)(() => ({
@@ -239,11 +239,11 @@ function k(e) {
           children: (0, r.jsx)(i.animated.div, {
             className: a()(T.contentWrapper, {
               [T.contentWrapperExpanded]: $,
-              [T.contentWrapperAccepted]: Z
+              [T.contentWrapperAccepted]: V
             }),
             style: {
               backgroundColor: K.preEnrollmentBackgroundColor,
-              backgroundImage: Z ? K.postEnrollmentBackgroundImage : void 0
+              backgroundImage: V ? K.postEnrollmentBackgroundImage : void 0
             },
             children: (0, r.jsx)(C.t, {
               springConfig: ej,

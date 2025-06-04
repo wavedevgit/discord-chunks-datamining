@@ -39,8 +39,8 @@ var r = n(255367),
   D = n(95985),
   M = n(50476),
   L = n(46140),
-  Z = n(743294),
-  V = n(388032),
+  V = n(743294),
+  Z = n(388032),
   W = n(921183);
 
 function Q(e) {
@@ -163,7 +163,7 @@ function F(e) {
       className: W.description,
       tag: "li",
       variant: "text-xs/normal",
-      children: V.intl.formatToPlainString(V.t["W8/b3d"], {
+      children: Z.intl.formatToPlainString(Z.t["W8/b3d"], {
         rewardName: o.defaultReward.messages.name
       })
     })]
@@ -221,7 +221,7 @@ function X(e) {
             className: W.title,
             color: "header-primary",
             variant: "heading-md/medium",
-            children: V.intl.format(V.t.EQa7oq, {
+            children: Z.intl.format(Z.t.EQa7oq, {
               questName: t.config.messages.questName
             })
           }), C ? (0, r.jsx)(F, {
@@ -232,7 +232,7 @@ function X(e) {
             taskDetails: n
           })]
         }), (0, r.jsx)(p.ua7, {
-          "aria-label": "".concat(V.intl.formatToPlainString(V.t.coKAb2, {
+          "aria-label": "".concat(Z.intl.formatToPlainString(Z.t.coKAb2, {
             rewardsDuration: w
           })).concat(null != P ? " • ".concat(P) : ""),
           text: null != w && C && (0, r.jsx)(S.Z, {
@@ -332,7 +332,7 @@ function Y(e) {
     children: [(0, r.jsx)(i.animated.div, {
       className: a()(W.postEnrollmentBackground, W.postEnrollmentBackgroundCollapsed),
       style: {
-        backgroundImage: "linear-gradient(90deg, ".concat(Z.aY, ", ").concat(Z.v6, ")"),
+        backgroundImage: "linear-gradient(90deg, ".concat(V.aY, ", ").concat(V.v6, ")"),
         opacity: c.to({
           range: [0, 1],
           output: [1, 0]
@@ -346,7 +346,7 @@ function Y(e) {
         children: [(0, r.jsx)(p.Text, {
           variant: "text-xxs/medium",
           className: a()(W.flex, W.headerText),
-          children: V.intl.format(V.t["pX+fmp"], {
+          children: Z.intl.format(Z.t["pX+fmp"], {
             expirationDate: z
           })
         }), (0, r.jsx)(T.r, {
@@ -359,7 +359,7 @@ function Y(e) {
           showShareLink: !0,
           children: e => (0, r.jsx)(p.P3F, H(Q({}, e), {
             className: W.submenuWrapper,
-            "aria-label": V.intl.string(V.t.DEoVWV),
+            "aria-label": Z.intl.string(Z.t.DEoVWV),
             children: (0, r.jsx)(p.xhG, {
               size: "md",
               color: "currentColor",
@@ -419,7 +419,7 @@ function Y(e) {
     }), (0, r.jsx)("div", {
       className: a()(W.postEnrollmentBackground, W.postEnrollmentBackgroundExpanded),
       style: {
-        backgroundImage: "linear-gradient(90deg, ".concat(Z.aY, ", ").concat(Z.v6, ")")
+        backgroundImage: "linear-gradient(90deg, ".concat(V.aY, ", ").concat(V.v6, ")")
       }
     })]
   })

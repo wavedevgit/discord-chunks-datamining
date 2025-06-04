@@ -76,7 +76,7 @@ function C(e) {
     isClaiming: m.Z.isClaimingReward(w.id) || m.Z.isFetchingRewardCode(w.id),
     isEnrolling: m.Z.isEnrolling(w.id),
     isQuestEnrollmentBlocked: null != m.Z.questEnrollmentBlockedUntil
-  })), Z = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, V = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, W = V && (null == (o = w.userStatus) ? void 0 : o.claimedAt) == null, Q = (0, g.iQ)(w), H = !(0, g.zi)(w), U = (0, p._Q)(w), z = (0, g.Xv)(w.config), F = (0, g.PB)(w), K = (0, g.HJ)(w), X = (0, g.Vl)(w), Y = s.useRef(null), G = (0, p.Rf)(w), [J, $, ee] = (0, p.me)(w, G), et = H && U === p.OH.ACCEPTED, en = et && J === f.LI.SELECT, er = et && !en && $.length > 1, es = s.useCallback(e => {
+  })), V = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, Z = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, W = Z && (null == (o = w.userStatus) ? void 0 : o.claimedAt) == null, Q = (0, g.iQ)(w), H = !(0, g.zi)(w), U = (0, p._Q)(w), z = (0, g.Xv)(w.config), F = (0, g.PB)(w), K = (0, g.HJ)(w), X = (0, g.Vl)(w), Y = s.useRef(null), G = (0, p.Rf)(w), [J, $, ee] = (0, p.me)(w, G), et = H && U === p.OH.ACCEPTED, en = et && J === f.LI.SELECT, er = et && !en && $.length > 1, es = s.useCallback(e => {
     ee(e), e === j.cd.DESKTOP && P([])
   }, [ee, P]), {
     text: eo,
@@ -115,7 +115,7 @@ function C(e) {
     onClick: null != ea ? ea : void 0,
     className: y.button,
     children: eo
-  }) : V ? ed = F ? (0, r.jsxs)(r.Fragment, {
+  }) : Z ? ed = F ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zxk, {
       color: l.Ttl.PRIMARY,
       className: y.button,
@@ -156,7 +156,7 @@ function C(e) {
     disabled: !0,
     className: y.button,
     children: v.intl.string(v.t.BkZhUF)
-  }) : H && Z && !ec ? ed = en ? (0, r.jsx)(l.PhF, {
+  }) : H && V && !ec ? ed = en ? (0, r.jsx)(l.PhF, {
     className: y.platformSelectorPrimary,
     isSelected: () => !1,
     options: _,
@@ -195,7 +195,7 @@ function C(e) {
     disabled: !0,
     className: y.button,
     children: v.intl.string(v.t["9KoPyM"])
-  }) : H && !Z && (ed = L ? (0, r.jsxs)(r.Fragment, {
+  }) : H && !V && (ed = L ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zxk, {
       color: l.Ttl.PRIMARY,
       className: y.button,

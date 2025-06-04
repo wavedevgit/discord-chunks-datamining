@@ -1,6 +1,6 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => V
 }), n(953529);
 var r = n(255367),
   s = n(73800),
@@ -87,12 +87,12 @@ function L(e) {
     children: q.intl.string(q.t.lwQdjI)
   }) : null
 }
-let Z = s.forwardRef(function(e, t) {
+let V = s.forwardRef(function(e, t) {
   var n, o;
   let {
     children: _,
-    className: Z,
-    collapsedHeight: V,
+    className: V,
+    collapsedHeight: Z,
     expansionSpring: W,
     isExpanded: Q,
     isExpansionAnimationComplete: H,
@@ -133,7 +133,7 @@ let Z = s.forwardRef(function(e, t) {
     }
   }, [K.config.colors.primary]);
   return (0, r.jsxs)(i.animated.div, {
-    className: a()(Z, I.contentExpanded, {
+    className: a()(V, I.contentExpanded, {
       [I.contentInteractable]: eg
     }),
     style: {
@@ -143,7 +143,7 @@ let Z = s.forwardRef(function(e, t) {
         output: [0, -100]
       }), W.to({
         range: [0, 1],
-        output: [0, V]
+        output: [0, Z]
       })], (e, t) => "translateY(calc(".concat(e, "% + ").concat(t, "px))"))
     },
     children: [_, (0, r.jsx)("div", {

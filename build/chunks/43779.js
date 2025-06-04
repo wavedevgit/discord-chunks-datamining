@@ -40,7 +40,7 @@ function E(e) {
     onReceiveErrorHints: D
   } = e, M = (0, g.j)({
     location: O.dr.QUESTS_BAR_MOBILE
-  }), L = s.useMemo(() => x.r.build(A.config), [A.config]), Z = L.defaultReward.messages.name, V = L.defaultReward.messages.nameWithArticle, W = M ? Z : V, Q = (null == (t = A.userStatus) ? void 0 : t.enrolledAt) != null, {
+  }), L = s.useMemo(() => x.r.build(A.config), [A.config]), V = L.defaultReward.messages.name, Z = L.defaultReward.messages.nameWithArticle, W = M ? V : Z, Q = (null == (t = A.userStatus) ? void 0 : t.enrolledAt) != null, {
     ref: H,
     scrollHeight: U
   } = (0, d.kE)(), z = 104 !== U, {
@@ -91,7 +91,7 @@ function E(e) {
     })
   }) : Y ? (0, r.jsx)(T, {
     questId: A.id,
-    children: Z
+    children: V
   }) : G ? w.intl.format(w.t.ro1szc, {
     balanceHook: () => (0, r.jsxs)(T, {
       questId: A.id,
@@ -105,7 +105,7 @@ function E(e) {
       questId: A.id,
       children: W
     })
-  }), [Z, Y, W, A.id, J, G]), er = s.useMemo(() => {
+  }), [V, Y, W, A.id, J, G]), er = s.useMemo(() => {
     if (null != et) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
