@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(746728),
   E = n(140700),
   O = n(665807),
-  y = n(188493),
-  I = n(294330),
+  I = n(188493),
+  y = n(294330),
   v = n(981631),
   C = n(984503);
 let S = Object.freeze({
@@ -59,7 +59,7 @@ function j(e) {
     searchCategoryId: A
   } = (0, b.f)({
     loadId: t
-  }), Z = 0 === s.length && !h, x = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), V = i.useCallback(e => {
+  }), Z = 0 === s.length && !h, x = i.useContext(d.AnalyticsContext), [L, w] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), V = i.useCallback(e => {
     if (null != e && !Z && !h) 336 * (s.length / M) <= e.height && j()
   }, [Z, h, s.length, M, j]), H = i.useCallback(e => {
     let t = e.contentRect;
@@ -71,17 +71,17 @@ function j(e) {
     r !== G.current && (G.current = r, U(r)), V(t)
   }, [R, V]), F = (0, u.y)(H, [R, V]);
   i.useEffect(() => {
-    L((0, m.PM)())
+    w((0, m.PM)())
   }, [v]), i.useEffect(() => {
     P({
       loadId: t,
-      searchId: w,
+      searchId: L,
       query: v,
       guildResults: s.map(f.Z.getGuild).filter(p.lm),
       analyticsContext: x,
       categoryId: A
     })
-  }, [x, s, t, A, w, v]);
+  }, [x, s, t, A, L, v]);
   let z = i.useCallback(e => n(e, A), [n, A]),
     W = i.useMemo(() => h ? [s.length, 0] : [s.length], [s.length, h]),
     Y = i.useCallback((e, n, i) => {
@@ -99,7 +99,7 @@ function j(e) {
               className: C.headingFilters,
               children: [(0, r.jsx)(E.Z, {
                 loadId: t
-              }), (0, r.jsx)(y.Z, {
+              }), (0, r.jsx)(I.Z, {
                 loadId: t
               })]
             }), Z && (0, r.jsx)(O.Z, {
@@ -135,7 +135,7 @@ function j(e) {
           throw Error("[getItemKey] Failed for section: ".concat(e))
       }
     }, [s]),
-    Q = i.useCallback(e => {
+    X = i.useCallback(e => {
       switch (e) {
         case 0:
           return 320;
@@ -145,7 +145,7 @@ function j(e) {
           throw Error("[getItemHeight] Failed for section: ".concat(e))
       }
     }, []),
-    X = i.useCallback(async (e, t, n, r) => {
+    Q = i.useCallback(async (e, t, n, r) => {
       var i, a;
       await l(e, t, n, r);
       let o = null == (a = B.current) || null == (i = a.getScrollerState()) ? void 0 : i.scrollTop;
@@ -159,14 +159,14 @@ function j(e) {
         let e = s[t];
         return (0, r.jsx)("div", {
           style: n,
-          children: (0, r.jsx)(I.ZP, {
+          children: (0, r.jsx)(y.ZP, {
             guildId: e,
-            onClick: async e => await X(e, t, A, T),
+            onClick: async e => await Q(e, t, A, T),
             onView: e => z(e)
           })
         }, i)
       }
-    }, [s, X, z, A]);
+    }, [s, Q, z, A]);
   i.useEffect(() => {
     let e = B.current;
     return () => {
@@ -215,7 +215,7 @@ function j(e) {
       renderSection: Y,
       getSectionHeight: K,
       getItemKey: q,
-      getItemHeight: Q,
+      getItemHeight: X,
       chunkSize: 24,
       onScroll: $,
       renderAccessory: e => R ? (0, r.jsx)("div", {
@@ -227,7 +227,7 @@ function j(e) {
           className: C.sidebarContent,
           children: [(0, r.jsx)("div", {
             className: C.sidebarLanguageSelect,
-            children: (0, r.jsx)(y.Z, {
+            children: (0, r.jsx)(I.Z, {
               loadId: t
             })
           }), (0, r.jsx)(_.Z, {

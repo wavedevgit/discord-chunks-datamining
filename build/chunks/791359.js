@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => L
+  Z: () => w
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(626135),
   E = n(70956),
   O = n(225559),
-  y = n(910436),
-  I = n(203028),
+  I = n(910436),
+  y = n(203028),
   v = n(358924),
   C = n(292140),
   S = n(525296),
@@ -37,10 +37,10 @@ let Z = 15 * E.Z.Millis.MINUTE,
       onUserContextMenu: n,
       onChannelContextMenu: l,
       quest: a
-    } = e, o = i.useRef(null), c = (0, r.jsx)(I.Z, {
+    } = e, o = i.useRef(null), c = (0, r.jsx)(y.Z, {
       party: t,
       onUserContextMenu: n
-    }), d = (0, r.jsx)(y.Z, {
+    }), d = (0, r.jsx)(I.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a
@@ -119,9 +119,9 @@ let Z = 15 * E.Z.Millis.MINUTE,
       }
     }) : null
   }),
-  w = a().throttle(() => f.W(!1), 3e5);
+  L = a().throttle(() => f.W(!1), 3e5);
 
-function L() {
+function w() {
   let {
     nowPlayingCards: e,
     loaded: t,
@@ -136,7 +136,7 @@ function L() {
     currentUser: m.default.getCurrentUser()
   })), o = (0, c.e7)([p.Z], () => p.Z.quests);
   i.useEffect(() => (d.Z.wait(() => O.L()), () => d.Z.wait(() => O.v())), [null == a ? void 0 : a.id]), i.useEffect(() => {
-    n && !l && w()
+    n && !l && L()
   }, [n, l]);
   let s = i.useMemo(() => {
       let t = new Map,

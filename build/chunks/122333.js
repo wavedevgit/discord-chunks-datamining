@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 let r;
 n.d(t, {
-  Z: () => w
+  Z: () => L
 }), n(388685), n(583741);
 var i = n(255367);
 n(73800);
@@ -21,8 +21,8 @@ var l = n(481060),
   _ = n(914010),
   E = n(594174),
   O = n(823379),
-  y = n(358085),
-  I = n(929809),
+  I = n(358085),
+  y = n(929809),
   v = n(179645),
   C = n(701476),
   S = n(785997),
@@ -92,8 +92,8 @@ class x extends o.Z {
       let e = b.Z.getGuild(Z);
       null != e && (0, d.Dc)(e) && (o = !0, (0, f.RM)(e.id))
     }
-    let x = () => 0 === m.Z.totalGuilds && !y.isPlatformEmbedded,
-      w = s.bN();
+    let x = () => 0 === m.Z.totalGuilds && !I.isPlatformEmbedded,
+      L = s.bN();
     e = [{
       key: "Unified NUF Modal",
       open: async function(e) {
@@ -143,10 +143,10 @@ class x extends o.Z {
     }, {
       key: "New User Age Gate",
       open: c.i,
-      predicate: () => w && !x() && !T.a
+      predicate: () => L && !x() && !T.a
     }, {
       key: "Claim Account Modal",
-      open: e => c.j(y.isPlatformEmbedded, e),
+      open: e => c.j(I.isPlatformEmbedded, e),
       predicate: () => {
         var e;
         return !o && null != E.default.getCurrentUser() && !(null == (e = E.default.getCurrentUser()) ? void 0 : e.isClaimed()) && !T.a && !(0, p.g)("new_user_manager")
@@ -172,7 +172,7 @@ class x extends o.Z {
       }),
       predicate: () => null != Z && null != g.Z.get(Z) && g.Z.get(Z) !== g.a
     }], t = () => {
-      I.H(), h.Z.flowStep(P.MK.ANY, P.EW.NUF_COMPLETE, !0)
+      y.H(), h.Z.flowStep(P.MK.ANY, P.EW.NUF_COMPLETE, !0)
     }, [...e].reverse().forEach(e => {
       let n = t;
       t = () => {
@@ -181,4 +181,4 @@ class x extends o.Z {
     }), t()
   }
 }
-let w = new x
+let L = new x

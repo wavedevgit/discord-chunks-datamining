@@ -58,7 +58,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     max: 25e4,
     warn: 5e4
   },
-  p = {
+  h = {
     [r.aB.PROFILE_EFFECT]: c,
     [r.aB.AVATAR_DECORATION]: d,
     [r.jE.HERO_BANNER_ANIMATED]: c,
@@ -80,7 +80,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     [r.jE.COLLECTED_MODAL_BG]: x,
     [r.jE.COACHTIP_AVATAR]: x
   },
-  h = async e => {
+  p = async e => {
     let t = Object.values(r.CM),
       n = new Set,
       a = e.createReader();
@@ -107,13 +107,13 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       n("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(i, " (max: ").concat(t, ")")])
     } else r > e.warn && a("Files are a tad chonky - are you sure they're optimized?", ["".concat(i)])
   }, g = (e, t, n, a) => {
-    let r = p[e];
+    let r = h[e];
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || v(r, e, n, a)
   }, j = (e, t, n) => {
     for (let a of e) {
       let e = (0, r.BU)(a),
-        l = null != e ? p[e] : null;
+        l = null != e ? h[e] : null;
       null != l && v(l, a, t, n)
     }
   }, _ = e => {
@@ -214,7 +214,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           if (e.length > 1) return void d("Uploaded multiple files. Expected 1 directory.");
           let t = e[0];
           if (!t.isDirectory) return void d("Uploaded a file. Expected a directory.");
-          let n = await h(t);
+          let n = await p(t);
           if (n.length > 0) return void d("Missing required directories", n);
           let a = await (0, r.LY)([t]);
           N(a, u, d)

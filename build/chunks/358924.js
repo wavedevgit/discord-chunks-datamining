@@ -19,8 +19,8 @@ var r, i = n(255367),
   _ = n(833664),
   E = n(503438),
   O = n(420660),
-  y = n(74433),
-  I = n(906732),
+  I = n(74433),
+  y = n(906732),
   v = n(812206),
   C = n(933557),
   S = n(194082),
@@ -31,8 +31,8 @@ var r, i = n(255367),
   A = n(871118),
   Z = n(707409),
   x = n(359110),
-  w = n(769654),
-  L = n(849171),
+  L = n(769654),
+  w = n(849171),
   R = n(314897),
   D = n(592125),
   k = n(594174),
@@ -58,7 +58,7 @@ let Y = {
       children: e
     })
   },
-  Q = function(e) {
+  X = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
     return (0, i.jsx)(u.Text, {
       className: o()(W.textContent, t),
@@ -66,7 +66,7 @@ let Y = {
       children: e
     })
   },
-  X = (0, p.Z)(e => {
+  Q = (0, p.Z)(e => {
     let {
       message: t
     } = e;
@@ -92,7 +92,7 @@ class $ extends l.Component {
       {
         timestamps: n
       } = t;
-    return null == n || !(0, _.Z)(t) || (0, E.Z)(t) ? null : Q((0, b.Z)(t) ? (0, i.jsx)(X, {
+    return null == n || !(0, _.Z)(t) || (0, E.Z)(t) ? null : X((0, b.Z)(t) ? (0, i.jsx)(Q, {
       timestamps: n
     }) : (0, i.jsx)(Z.ZP, {
       start: n.start,
@@ -136,7 +136,7 @@ class $ extends l.Component {
             className: W.largeImage
           })
         }), (0, i.jsxs)("div", {
-          children: [q(null != l && "" !== l ? l : z.intl.string(z.t["2TbM/P"])), null != a ? Q(a) : null, this.renderTimePlayed()]
+          children: [q(null != l && "" !== l ? l : z.intl.string(z.t["2TbM/P"])), null != a ? X(a) : null, this.renderTimePlayed()]
         })]
       })
     })
@@ -321,7 +321,7 @@ er.Header = en, er.Body = e => {
       ref: h,
       onContextMenu: e => p(e, a),
       children: [(0, i.jsx)(u.P3F, {
-        onClick: () => (0, w.X)(r.id),
+        onClick: () => (0, L.X)(r.id),
         "aria-hidden": !0,
         tabIndex: -1,
         children: (0, i.jsxs)("div", {
@@ -357,7 +357,7 @@ er.Header = en, er.Body = e => {
         },
         children: (0, i.jsxs)("div", {
           className: W.voiceSectionDetails,
-          children: [q(r.toString(), W.voiceSectionText), Q(f, W.voiceSectionText)]
+          children: [q(r.toString(), W.voiceSectionText), X(f, W.voiceSectionText)]
         })
       }), (0, i.jsx)(H.Z, {
         partySize: s,
@@ -381,7 +381,7 @@ er.Header = en, er.Body = e => {
         src: t,
         className: W.gameSectionIcon
       }) : null, (0, i.jsxs)("div", {
-        children: [q(n), Q(z.intl.formatToPlainString(z.t.C4WXvb, {
+        children: [q(n), X(z.intl.formatToPlainString(z.t.C4WXvb, {
           memberCount: r.totalSize
         }))]
       }), (0, i.jsx)(H.Z, {
@@ -401,7 +401,7 @@ er.Header = en, er.Body = e => {
         className: W.xboxSectionIcon
       }), (0, i.jsxs)("div", {
         className: W.__invalid_xboxSectionDetails,
-        children: [q(t), Q(z.intl.string(z.t["JG9r+/"]))]
+        children: [q(t), X(z.intl.string(z.t["JG9r+/"]))]
       })]
     })
   })
@@ -435,7 +435,7 @@ er.Header = en, er.Body = e => {
           color: c.Z.unsafe_rawColors.SPOTIFY.css
         })]
       }) : (0, i.jsx)("div", {}), (0, i.jsxs)("div", {
-        children: [null != r ? q(r) : null, null != l ? Q(l) : null]
+        children: [null != r ? q(r) : null, null != l ? X(l) : null]
       }), (0, i.jsx)(H.Z, {
         minAvatarsShown: d ? 2 : 1,
         partySize: s,
@@ -488,7 +488,7 @@ er.Header = en, er.Body = e => {
         src: f.Z.get(F.ABu.TWITCH).icon.lightSVG,
         className: W.twitchSectionIcon
       }), (0, i.jsxs)("div", {
-        children: [q(c), null != d ? Q(d) : null]
+        children: [q(c), null != d ? X(d) : null]
       }), null != l ? (0, i.jsx)(u.qEK, {
         src: l.getAvatarURL(s, 24),
         "aria-label": l.username,
@@ -517,7 +517,7 @@ er.Header = en, er.Body = e => {
       color: "always-white",
       children: (0, j.P9)(h)
     })]
-  }), g = null != (n = null == (t = (0, y.Z)(r, a)) ? void 0 : t.activityText) ? n : z.intl.string(z.t.eXan7O);
+  }), g = null != (n = null == (t = (0, I.Z)(r, a)) ? void 0 : t.activityText) ? n : z.intl.string(z.t.eXan7O);
   return (0, i.jsxs)(J, {
     children: [(0, i.jsxs)("div", {
       className: W.applicationStreamingSection,
@@ -527,7 +527,7 @@ er.Header = en, er.Body = e => {
         "aria-label": l.username,
         className: W.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
-        children: [q(V.ZP.getName(l)), Q(g)]
+        children: [q(V.ZP.getName(l)), X(g)]
       }), (0, i.jsx)(S.ZP, {
         size: S.ZP.Sizes.SMALL
       })]
@@ -550,7 +550,7 @@ er.Header = en, er.Body = e => {
     f = (0, h.O)(),
     {
       analyticsLocations: m
-    } = (0, I.ZP)();
+    } = (0, y.ZP)();
   if (null == d) return null;
   let b = v.Z.getApplication(d);
   if (null == b) return null;
@@ -576,7 +576,7 @@ er.Header = en, er.Body = e => {
         children: (0, i.jsx)(u.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: (0, i.jsx)(X, {
+          children: (0, i.jsx)(Q, {
             timestamps: _
           })
         })
@@ -589,7 +589,7 @@ er.Header = en, er.Body = e => {
         className: W.embeddedActivityImage
       }) : null, (0, i.jsxs)("div", {
         className: W.embeddedActivityImageOverlay,
-        children: [(0, i.jsx)(L.OV, {
+        children: [(0, i.jsx)(w.OV, {
           users: p,
           guildId: r,
           channelId: n.id

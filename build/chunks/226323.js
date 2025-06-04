@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(670188),
   E = n(314897),
   O = n(131951),
-  y = n(51144),
-  I = n(524484),
+  I = n(51144),
+  y = n(524484),
   v = n(388032),
   C = n(795243);
 
@@ -99,8 +99,8 @@ function j(e) {
       nick: A,
       mute: Z,
       deaf: x,
-      serverMute: w,
-      serverDeaf: L
+      serverMute: L,
+      serverDeaf: w
     } = e,
     R = (0, o.e7)([O.Z], () => O.Z.isLocalMute(j.id)),
     D = (0, u.Z)({
@@ -109,7 +109,7 @@ function j(e) {
     }),
     k = null != (t = E.getGuildId()) ? t : void 0,
     M = j.getAvatarURL(E.guild_id, 24),
-    U = null != A ? A : y.ZP.getName(j),
+    U = null != A ? A : I.ZP.getName(j),
     {
       icon: G,
       colorize: B,
@@ -128,9 +128,9 @@ function j(e) {
       if (l) return P.localMute;
       if (i) return P.mute
     }({
-      serverDeaf: L,
+      serverDeaf: w,
       deaf: x,
-      serverMute: w,
+      serverMute: L,
       mute: Z,
       localMute: R
     })) ? l : {},
@@ -184,7 +184,7 @@ function j(e) {
         onContextMenu: F,
         focusProps: T,
         children: (0, r.jsx)(b.Z, {
-          shakeLocation: I.oZ.VOICE_USER,
+          shakeLocation: y.oZ.VOICE_USER,
           isShaking: D,
           children: (0, r.jsx)("div", {
             className: a()(C.avatar, {
@@ -246,8 +246,8 @@ function A(e) {
       color: "currentColor"
     }),
     focusProps: T
-  }), y = b && c ? t : m;
-  return y.length <= 0 ? null : (0, r.jsx)(s.zJl, {
+  }), I = b && c ? t : m;
+  return I.length <= 0 ? null : (0, r.jsx)(s.zJl, {
     className: a()(C.scroller, l),
     fade: !0,
     children: (0, r.jsxs)("div", {
@@ -255,7 +255,7 @@ function A(e) {
       className: a()(C.voiceUsers, !c && C.collapsed),
       role: "group",
       "aria-label": v.intl.string(v.t["/ZgaVV"]),
-      children: [y.map(e => {
+      children: [I.map(e => {
         let {
           user: t,
           nick: i,

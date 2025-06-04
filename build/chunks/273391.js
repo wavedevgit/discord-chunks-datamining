@@ -65,23 +65,11 @@ let m = new i.Z("ImageEditor"),
     }), [C, w] = a.useState(0), [A, k] = a.useState({
       x: 0,
       y: 0
-    }), [M, R] = a.useState(!1), T = "image/gif" === t.type;
+    }), [M, R] = a.useState(!1), T = "image/gif" === t.type, [L, z] = a.useState(null);
     a.useEffect(() => {
       (0, c.Z)()
     }, []);
-    let L = a.useCallback(() => {
-        if (null == O.current) return;
-        let e = O.current.naturalWidth,
-          t = O.current.naturalHeight;
-        D({
-          width: e,
-          height: t
-        }), S(_({
-          width: e,
-          height: t
-        }, 1, T))
-      }, [T]),
-      z = a.useCallback(e => {
+    let P = a.useCallback(e => {
         if (null == O.current) return;
         let {
           x: t,
@@ -92,19 +80,19 @@ let m = new i.Z("ImageEditor"),
           y: r
         }, O.current.style.transform = "translate3d(".concat(t, "px, ").concat(r, "px, 0) rotate(").concat(C, "deg)")
       }, [O, C, y]),
-      P = a.useCallback(e => {
+      Z = a.useCallback(e => {
         if (null == I) return;
         let t = _(I, e, T),
           {
             x: r,
             y: n
           } = v.current;
-        N(e), S(t), z({
+        N(e), S(t), P({
           x: r,
           y: n
         })
-      }, [I, z, T]),
-      Z = a.useCallback(() => {
+      }, [I, P, T]),
+      G = a.useCallback(() => {
         if (null == O.current || null == I) return;
         let e = (C + 90) % 360,
           t = -v.current.x,
@@ -115,15 +103,15 @@ let m = new i.Z("ImageEditor"),
             width: n,
             height: a
           }, E, T);
-        z({
+        P({
           x: r,
           y: t
         }), w(e), D({
           width: n,
           height: a
         }), S(l)
-      }, [I, C, z, E, T]),
-      G = a.useCallback(() => {
+      }, [I, C, P, E, T]),
+      B = a.useCallback(() => {
         if (null == I) return {};
         let {
           height: e,
@@ -136,7 +124,7 @@ let m = new i.Z("ImageEditor"),
           minWidth: t
         }
       }, [I, C, E]),
-      B = a.useCallback(e => {
+      U = a.useCallback(e => {
         k({
           x: e.clientX - v.current.x,
           y: e.clientY - v.current.y
@@ -146,21 +134,21 @@ let m = new i.Z("ImageEditor"),
       let e = () => R(!1);
       return window.addEventListener("mouseup", e), () => window.removeEventListener("mouseup", e)
     }, []);
-    let U = a.useCallback(e => {
+    let W = a.useCallback(e => {
       let {
         x: t,
         y: r
       } = v.current;
-      M && (e.clientX !== t || e.clientY !== r) && z({
+      M && (e.clientX !== t || e.clientY !== r) && P({
         x: t = e.clientX - A.x,
         y: r = e.clientY - A.y
       })
-    }, [M, A, z]);
+    }, [M, A, P]);
     a.useEffect(() => {
-      if (M) return window.addEventListener("mousemove", U), () => window.removeEventListener("mousemove", U)
-    }, [U, M]);
-    let W = a.useRef(null),
-      F = a.useCallback(async () => {
+      if (M) return window.addEventListener("mousemove", W), () => window.removeEventListener("mousemove", W)
+    }, [W, M]);
+    let F = a.useRef(null),
+      V = a.useCallback(async () => {
         let e;
         if (null == O.current || null == I) return;
         let r = Date.now(),
@@ -170,7 +158,7 @@ let m = new i.Z("ImageEditor"),
             width: u.eT
           },
           s = null;
-        if (null != W.current && (W.current(), W.current = null), T) try {
+        if (null != F.current && (F.current(), F.current = null), T) try {
           let r = j({
               file: t,
               image: n,
@@ -185,12 +173,12 @@ let m = new i.Z("ImageEditor"),
               result: l,
               cancelFn: s
             } = await (0, o.$p)(r);
-          W.current = s, e = await l
+          F.current = s, e = await l
         } catch (e) {
           m.error("Error cropping GIF", e), s = u.ze.GIF_CROPPING
         } finally {
           var c;
-          null == (c = W.current) || c.call(W), W.current = null
+          null == (c = F.current) || c.call(F), F.current = null
         } else e = (0, l.PT)({
           image: n,
           cropDimensions: f,
@@ -205,17 +193,32 @@ let m = new i.Z("ImageEditor"),
           loading: !1
         }), () => {
           var e;
-          null == (e = W.current) || e.call(W), W.current = null
+          null == (e = F.current) || e.call(F), F.current = null
         }
       }, [t, C, T, i, I, E]);
-    return a.useEffect(() => {
-      F()
-    }, [F, C, I, M, E]), (0, n.jsxs)("div", {
+    a.useEffect(() => {
+      V()
+    }, [V, C, I, M, E, L]);
+    let H = a.useCallback(() => {
+      if (null == O.current) return;
+      let e = O.current.naturalWidth,
+        t = O.current.naturalHeight;
+      D({
+        width: e,
+        height: t
+      });
+      let r = Math.min(Math.max(e, t) / Math.min(e, t), 4);
+      z(r), N(r), S(_({
+        width: e,
+        height: t
+      }, r, T))
+    }, [T]);
+    return (0, n.jsxs)("div", {
       className: p.imageEditor,
       children: [(0, n.jsxs)("div", {
         className: p.editingContainer,
         children: [(0, n.jsx)("img", {
-          onLoad: L,
+          onLoad: H,
           onError: () => {
             i({
               error: u.ze.IMAGE_LOAD,
@@ -225,13 +228,13 @@ let m = new i.Z("ImageEditor"),
           style: h({
             opacity: +(null != I),
             transform: "translate3d(".concat(v.current.x, "px, ").concat(v.current.y, "px, 0) rotate(").concat(C, "deg)")
-          }, G()),
+          }, B()),
           className: p.image,
           src: r,
           crossOrigin: "anonymous",
           alt: "avatar",
           ref: O,
-          onMouseDown: B,
+          onMouseDown: U,
           draggable: !1
         }), (0, n.jsx)("div", {
           className: p.overlay,
@@ -249,13 +252,13 @@ let m = new i.Z("ImageEditor"),
             size: "xxs",
             color: "currentColor",
             className: p.zoomIcon
-          }), (0, n.jsx)(s.iRW, {
+          }), null != L && (0, n.jsx)(s.iRW, {
             className: p.slider,
-            initialValue: 1,
+            initialValue: L,
             minValue: 1,
             maxValue: 4,
             keyboardStep: .025,
-            asValueChanges: P,
+            asValueChanges: Z,
             equidistant: !0,
             hideBubble: !0,
             "aria-label": d.intl.string(d.t.dnvZSk)
@@ -292,7 +295,7 @@ let m = new i.Z("ImageEditor"),
               color: s.zxk.Colors.TRANSPARENT,
               grow: !1
             }, r), {
-              onClick: Z,
+              onClick: G,
               children: (0, n.jsx)(s.Vk2, {
                 size: "md",
                 color: "currentColor"

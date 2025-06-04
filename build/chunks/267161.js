@@ -21,8 +21,8 @@ var r = n(255367),
   _ = n(565138),
   E = n(300986),
   O = n(314451),
-  y = n(35583),
-  I = n(821020),
+  I = n(35583),
+  y = n(821020),
   v = n(370774),
   C = n(522474),
   S = n(141321),
@@ -33,8 +33,8 @@ var r = n(255367),
   A = n(914010),
   Z = n(451478),
   x = n(768581),
-  w = n(998502),
-  L = n(228488),
+  L = n(998502),
+  w = n(228488),
   R = n(950796),
   D = n(981631),
   k = n(918559),
@@ -99,42 +99,42 @@ function z() {
         isActivityPanelMode: d.ZP.getActivityPanelMode() === k.Ez.PANEL
       }
     }),
-    y = null != b ? x.ZP.getApplicationIconURL({
+    I = null != b ? x.ZP.getApplicationIconURL({
       id: b.id,
       icon: b.icon,
       bot: b.bot
     }) : void 0,
-    I = null;
-  return null != b && E && O ? (e = b.name, I = (0, r.jsx)("img", {
+    y = null;
+  return null != b && E && O ? (e = b.name, y = (0, r.jsx)("img", {
     className: B.appIcon,
     alt: U.intl.string(U.t.X4IxWF),
-    src: y,
+    src: I,
     "aria-hidden": !0,
     draggable: !1
-  })) : g ? (e = U.intl.string(U.t.HcoRu7), I = (0, r.jsx)(c.Dkj, {
+  })) : g ? (e = U.intl.string(U.t.HcoRu7), y = (0, r.jsx)(c.Dkj, {
     size: "xs"
-  })) : null != h ? (I = f ? (0, r.jsx)(c.r7p, {
+  })) : null != h ? (y = f ? (0, r.jsx)(c.r7p, {
     size: "xs"
   }) : (0, r.jsx)(_.Z, {
     guild: h,
     size: _.Z.Sizes.MINI,
     active: !0,
     className: B.guildIcon
-  }), e = h.name) : null != a && (a.isDM() || a.isGroupDM()) ? (e = U.intl.string(U.t.YUU0RE), I = (0, r.jsx)(c.gw7, {
+  }), e = h.name) : null != a && (a.isDM() || a.isGroupDM()) ? (e = U.intl.string(U.t.YUU0RE), y = (0, r.jsx)(c.gw7, {
     size: "xs"
-  })) : t.pathname.startsWith(D.Z5c.GLOBAL_DISCOVERY) ? (e = U.intl.string(U.t["4nEZLi"]), I = (0, r.jsx)(c.Jmo, {
+  })) : t.pathname.startsWith(D.Z5c.GLOBAL_DISCOVERY) ? (e = U.intl.string(U.t["4nEZLi"]), y = (0, r.jsx)(c.Jmo, {
     size: "xs"
-  })) : t.pathname.startsWith(D.Z5c.NITRO_HOME) ? (e = U.intl.string(U.t.Ipxkoq), I = (0, r.jsx)(c.SrA, {
+  })) : t.pathname.startsWith(D.Z5c.NITRO_HOME) ? (e = U.intl.string(U.t.Ipxkoq), y = (0, r.jsx)(c.SrA, {
     size: "xs"
-  })) : t.pathname.startsWith(D.Z5c.COLLECTIBLES_SHOP) ? (e = U.intl.string(U.t.pWG4zc), I = (0, r.jsx)(c.EOn, {
+  })) : t.pathname.startsWith(D.Z5c.COLLECTIBLES_SHOP) ? (e = U.intl.string(U.t.pWG4zc), y = (0, r.jsx)(c.EOn, {
     size: "xs"
-  })) : t.pathname.startsWith(D.Z5c.FRIENDS) ? (e = U.intl.string(U.t.TdEu5e), I = (0, r.jsx)(c.iFz, {
+  })) : t.pathname.startsWith(D.Z5c.FRIENDS) ? (e = U.intl.string(U.t.TdEu5e), y = (0, r.jsx)(c.iFz, {
     size: "xs"
-  })) : t.pathname.startsWith(D.Z5c.FAMILY_CENTER) && (e = U.intl.string(G.default.RZqaJi), I = (0, r.jsx)(c.BFJ, {
+  })) : t.pathname.startsWith(D.Z5c.FAMILY_CENTER) && (e = U.intl.string(G.default.RZqaJi), y = (0, r.jsx)(c.BFJ, {
     size: "xs"
   })), null != e && "" !== e && (0, r.jsxs)("div", {
     className: B.title,
-    children: [I, (0, r.jsx)(c.Text, {
+    children: [y, (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       lineClamp: 1,
       children: e
@@ -143,7 +143,7 @@ function z() {
 }
 let W = i.memo(function() {
   i.useLayoutEffect(() => {
-    w.ZP.setMinimumSize(M.J, M.N)
+    L.ZP.setMinimumSize(M.J, M.N)
   }, []);
   let e = (0, g.TH)("AppTitleBar"),
     t = !F(e => e.isOpen) && e,
@@ -155,13 +155,13 @@ let W = i.memo(function() {
       autoTrackExposure: !1
     });
   i.useLayoutEffect(() => {
-    w.ZP.setMinimumSize(M.J, M.N)
+    L.ZP.setMinimumSize(M.J, M.N)
   }, []);
   let l = (0, s.e7)([N.Z], () => N.Z.darkSidebar ? D.BRd.DARK : void 0),
-    a = (0, s.e7)([Z.Z, C.Z], () => (0, L.rB)()),
+    a = (0, s.e7)([Z.Z, C.Z], () => (0, w.rB)()),
     {
       notificationCenterVariant: o
-    } = I.L.useExperiment({
+    } = y.L.useExperiment({
       location: "AppTitleBar"
     });
   return a ? null : (0, r.jsx)(c.Wdt, {
@@ -202,7 +202,7 @@ let W = i.memo(function() {
             className: B.button
           }) : (0, r.jsx)(E.Z, {
             className: B.button
-          }), (0, r.jsx)(y.Z, {
+          }), (0, r.jsx)(I.Z, {
             className: B.button
           })]
         })

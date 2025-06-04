@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => y
+  Z: () => I
 });
 var r = n(255367),
   i = n(73800),
@@ -71,7 +71,7 @@ class O extends i.Component {
     })
   }
 }
-let y = o.ZP.connectStores([h.Z, d.default, f.Z, c.Z, p.Z, u.Z], e => {
+let I = o.ZP.connectStores([h.Z, d.default, f.Z, c.Z, p.Z, u.Z], e => {
   let {
     sku: t
   } = e;

@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => p
+  Z: () => h
 }), n(642613), n(388685);
 var a = n(255367),
   r = n(73800),
@@ -45,7 +45,7 @@ let x = {
   }
 };
 
-function p() {
+function h() {
   let e = r.useMemo(() => Object.keys(x).map(e => ({
       label: e,
       value: e

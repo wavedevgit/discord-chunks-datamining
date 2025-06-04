@@ -19,9 +19,9 @@ var r, i = n(255367),
   _ = n(819640),
   E = n(585483),
   O = n(981631),
-  y = n(400709);
+  I = n(400709);
 
-function I(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,7 +37,7 @@ function v(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -88,10 +88,10 @@ let S = (0, g.Un)({
     tension: 100
   };
 
-function w() {
+function L() {
   return l.useEffect(() => (f.Z.enable(), f.Z.enableTemp(h.u), () => f.Z.disableTemp()), []), null
 }
-class L extends(r = l.PureComponent) {
+class w extends(r = l.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.mode ? {
       animating: !0,
@@ -190,9 +190,9 @@ class L extends(r = l.PureComponent) {
     }(t, ["mode", "children", "baseLayer"]), c = e || n === Z ? this.getAnimatedStyle() : null, u = (0, i.jsx)(s.Z.div, C(v({
       ref: e => this.containerRef.current = null != e ? e.componentRef : void 0,
       "aria-hidden": n === Z,
-      className: o()(y.layer, {
-        [y.baseLayer]: l,
-        [y.animating]: e,
+      className: o()(I.layer, {
+        [I.baseLayer]: l,
+        [I.animating]: e,
         "stop-animations": n === Z
       }),
       style: c
@@ -221,7 +221,7 @@ class L extends(r = l.PureComponent) {
     }
   }
   constructor(e) {
-    super(e), I(this, "containerRef", l.createRef());
+    super(e), y(this, "containerRef", l.createRef());
     let t = 1,
       n = 1;
     e.mode === Z && (t = .93, n = 0), this.state = {
@@ -232,9 +232,9 @@ class L extends(r = l.PureComponent) {
     }
   }
 }
-I(L, "defaultProps", {
+y(w, "defaultProps", {
   baseLayer: !1
-}), I(L, "contextType", d.Sfi);
+}), y(w, "contextType", d.Sfi);
 class R extends l.PureComponent {
   componentDidMount() {
     E.S.subscribe(O.CkL.LAYER_POP_ESCAPE_KEY, p.xf)
@@ -250,7 +250,7 @@ class R extends l.PureComponent {
     } = this.props, {
       length: r
     } = t, l = [];
-    return l.push((0, i.jsx)(L, {
+    return l.push((0, i.jsx)(w, {
       mode: 0 !== r || n ? Z : A,
       baseLayer: !0,
       children: e
@@ -258,16 +258,16 @@ class R extends l.PureComponent {
   }
   renderComponent(e, t, n) {
     let r;
-    return r = "string" == typeof e ? j[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(L, {
+    return r = "string" == typeof e ? j[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(w, {
       mode: t === n - 1 ? A : Z,
-      children: [(0, i.jsx)(w, {}), r]
+      children: [(0, i.jsx)(L, {}), r]
     }, "layer-".concat(t))
   }
   renderArtisanalHack() {
     return (0, i.jsx)(d.f6W, {
       theme: this.props.sidebarTheme,
       children: e => (0, i.jsx)("div", {
-        className: o()(y.bg, e)
+        className: o()(I.bg, e)
       })
     })
   }
@@ -275,7 +275,7 @@ class R extends l.PureComponent {
     return (0, i.jsxs)(i.Fragment, {
       children: [this.renderArtisanalHack(), (0, i.jsx)(u.W, {
         component: "div",
-        className: o()(y.layers, this.props.className),
+        className: o()(I.layers, this.props.className),
         children: this.renderLayers()
       })]
     })

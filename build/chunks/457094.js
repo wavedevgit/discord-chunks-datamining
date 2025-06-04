@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(627845),
   E = n(185666),
   O = n(503737),
-  y = n(513202),
-  I = n(318891),
+  I = n(513202),
+  y = n(318891),
   v = n(687751),
   C = n(64514),
   S = n(912471),
@@ -32,8 +32,8 @@ var r = n(255367),
   A = n(954709),
   Z = n(644679),
   x = n(403763),
-  w = n(314533),
-  L = n(9029),
+  L = n(314533),
+  w = n(9029),
   R = n(935347),
   D = n(560067),
   k = n(823169),
@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(531551),
   K = n(38618),
   q = n(972830),
-  Q = n(684572),
-  X = n(584233),
+  X = n(684572),
+  Q = n(584233),
   J = n(15274),
   $ = n(434404),
   ee = n(543842),
@@ -74,8 +74,8 @@ var r = n(255367),
   e_ = n(329557),
   eE = n(304445),
   eO = n(893607),
-  ey = n(703656),
-  eI = n(298969),
+  eI = n(703656),
+  ey = n(298969),
   ev = n(719256),
   eC = n(6025),
   eS = n(897473),
@@ -86,8 +86,8 @@ var r = n(255367),
   eA = n(911560),
   eZ = n(703016),
   ex = n(892001),
-  ew = n(497805),
-  eL = n(332754),
+  eL = n(497805),
+  ew = n(332754),
   eR = n(507468),
   eD = n(722589),
   ek = n(282506),
@@ -103,8 +103,8 @@ var r = n(255367),
   eY = n(914010),
   eK = n(695103),
   eq = n(241890),
-  eQ = n(417363),
-  eX = n(900974),
+  eX = n(417363),
+  eQ = n(900974),
   eJ = n(358085),
   e$ = n(998502),
   e0 = n(346329),
@@ -136,7 +136,7 @@ function e2(e) {
 }
 n(117240), n(801077), n(967368), n(272053), n(974180), n(574254), n(551428), n(55563), n(882029), n(959457), n(653255), n(663389), n(25990), n(778825), n(999382), n(388610), n(533947), n(277053), n(371398), n(141233), n(471073), n(606206);
 let e7 = !1;
-(0, S.DL)(), o.ZP.initialize(), eI.Z.loadServer(), eJ.isPlatformEmbedded && (e$.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
+(0, S.DL)(), o.ZP.initialize(), ey.Z.loadServer(), eJ.isPlatformEmbedded && (e$.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
   eF.Z.getLayers().includes(e1.S9g.USER_SETTINGS) || f.Z.open(null != t ? t : e1.oAB.ACCOUNT)
 }), e$.ZP.on("LAUNCH_APPLICATION", (e, t) => {
   let n = ez.Z.getActiveLibraryApplication(t);
@@ -183,7 +183,7 @@ let e6 = (0, m.l)(e => {
       let {
         match: e
       } = this.props;
-      null != e && null != e.params.inviteCode && (0, X.x)({
+      null != e && null != e.params.inviteCode && (0, Q.x)({
         code: e.params.inviteCode
       })
     }
@@ -211,7 +211,7 @@ let e6 = (0, m.l)(e => {
   te = (0, m.l)((0, T.e)(j.Z, null, {
     passProps: !1
   })),
-  tt = (0, T.e)(Q.default, null, {
+  tt = (0, T.e)(X.default, null, {
     passProps: !1
   }),
   tn = [e1.Z5c.GUILD_BOOSTING_MARKETING(eO.Hw.guildId()), ...Array.from(e3.Vg).map(e => e1.Z5c.CHANNEL(eO.Hw.guildId(), e))];
@@ -269,7 +269,7 @@ let ti = [{
       gameId: n,
       action: i
     } = t.params;
-    return eQ.Z.whenInitialized(() => {
+    return eX.Z.whenInitialized(() => {
       ez.Z.whenInitialized(() => {
         switch (i) {
           case "launch": {
@@ -469,12 +469,12 @@ function ta(e) {
   if (!K.Z.isConnected()) return;
   let {
     location: i
-  } = (0, ey.s1)();
-  i.pathname === r && (null == eB.Z.getChannel(t) ? (0, ey.dL)(e1.Z5c.CHANNEL(n)) : (0, ey.dL)(r))
+  } = (0, eI.s1)();
+  i.pathname === r && (null == eB.Z.getChannel(t) ? (0, eI.dL)(e1.Z5c.CHANNEL(n)) : (0, eI.dL)(r))
 }
 class to extends i.PureComponent {
   componentDidMount() {
-    e$.ZP.setZoomFactor(b.Z.zoom), eI.Z.init(), P.Z.initialize(), ef.Z.initialize(), F.Z.initialize(), eM.Z.initialize(), z.Z.initialize(), em.Z.initialize(), M.Z.initialize(), ei.Z.initialize(), _.Z.init(), Y.Z.init(), W.Z.init(), ec.Z.initialize(), v.Z.initialize(), B.Z.initialize(), eb.Z.initialize(), I.ZP.initialize(), ek.Z.initialize(), eh.Z.initialize(), y.Z.initialize(), en.Z.init(), x.Z.init(), eX.Z.init(), O.Z.initialize(), eZ.Z.init(), eq.Z.init(), eL.Z.init(), eT.Z.initialize(), eP.Z.initialize(), ew.Z.initialize(), eR.Z.init(), G.Z.initialize(), E.Z.initialize(), ev.Z.initialize(), eN.Z.initialize(), ed.Z.initialize(), eu.Z.initialize(), ep.Z.initialize(), w.Z.initialize(), L.Z.initialize(), H.Z.initialize(), er.Z.init({
+    e$.ZP.setZoomFactor(b.Z.zoom), ey.Z.init(), P.Z.initialize(), ef.Z.initialize(), F.Z.initialize(), eM.Z.initialize(), z.Z.initialize(), em.Z.initialize(), M.Z.initialize(), ei.Z.initialize(), _.Z.init(), Y.Z.init(), W.Z.init(), ec.Z.initialize(), v.Z.initialize(), B.Z.initialize(), eb.Z.initialize(), y.ZP.initialize(), ek.Z.initialize(), eh.Z.initialize(), I.Z.initialize(), en.Z.init(), x.Z.init(), eQ.Z.init(), O.Z.initialize(), eZ.Z.init(), eq.Z.init(), ew.Z.init(), eT.Z.initialize(), eP.Z.initialize(), eL.Z.initialize(), eR.Z.init(), G.Z.initialize(), E.Z.initialize(), ev.Z.initialize(), eN.Z.initialize(), ed.Z.initialize(), eu.Z.initialize(), ep.Z.initialize(), L.Z.initialize(), w.Z.initialize(), H.Z.initialize(), er.Z.init({
       hasModalOpen: s.$sL,
       openModal: () => (0, s.ZDy)(async () => {
         let {
@@ -485,7 +485,7 @@ class to extends i.PureComponent {
     }), U.Z.init(), el.Z.initialize(), e_.Z.initialize(), eg.Z.initialize(), k.Z.initialize(), A.Z.initialize(), Z.Z.initialize(), C.Z.initialize(), this.rewriterUnlisten = eE.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eE.Z.addRouteChangeListener(this.handleHistoryChange)
   }
   componentWillUnmount() {
-    eI.Z.terminate(), eM.Z.terminate(), em.Z.terminate(), ef.Z.terminate(), P.Z.terminate(), I.ZP.terminate(), ek.Z.terminate(), y.Z.terminate(), eb.Z.terminate(), eh.Z.terminate(), ew.Z.terminate(), O.Z.terminate(), G.Z.terminate(), el.Z.terminate(), E.Z.terminate(), e_.Z.terminate(), ev.Z.terminate(), eN.Z.terminate(), ed.Z.terminate(), eu.Z.terminate(), ep.Z.terminate(), w.Z.terminate(), L.Z.terminate(), eg.Z.terminate(), k.Z.terminate(), V.Z.terminate(), A.Z.terminate(), Z.Z.terminate(), C.Z.terminate(), H.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+    ey.Z.terminate(), eM.Z.terminate(), em.Z.terminate(), ef.Z.terminate(), P.Z.terminate(), y.ZP.terminate(), ek.Z.terminate(), I.Z.terminate(), eb.Z.terminate(), eh.Z.terminate(), eL.Z.terminate(), O.Z.terminate(), G.Z.terminate(), el.Z.terminate(), E.Z.terminate(), e_.Z.terminate(), ev.Z.terminate(), eN.Z.terminate(), ed.Z.terminate(), eu.Z.terminate(), ep.Z.terminate(), L.Z.terminate(), w.Z.terminate(), eg.Z.terminate(), k.Z.terminate(), V.Z.terminate(), A.Z.terminate(), Z.Z.terminate(), C.Z.terminate(), H.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
   }
   handleHistoryChange(e) {
     let {
@@ -537,7 +537,7 @@ class to extends i.PureComponent {
           let e = eG.ZP.getCurrentSidebarChannelId(n) !== s,
             t = null != eG.ZP.getGuildSidebarState(r);
           if (null != i && null != s && e)
-            if (t)(0, ey.dL)(e1.Z5c.CHANNEL(r, s, o));
+            if (t)(0, eI.dL)(e1.Z5c.CHANNEL(r, s, o));
             else {
               let e = {
                 type: eS.Ff.THREAD
@@ -560,7 +560,7 @@ class to extends i.PureComponent {
       } else tn.some(t => {
         var n;
         return (null == (n = (0, a.LX)(e, t)) ? void 0 : n.isExact) === !0
-      }) || (0, ey.dL)(eV.Z.fallbackRoute)
+      }) || (0, eI.dL)(eV.Z.fallbackRoute)
     }(t, n)
   }
   ensureChannelMatchesGuild(e) {

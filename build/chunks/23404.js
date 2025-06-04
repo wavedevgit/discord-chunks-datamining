@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => L
+  Z: () => w
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(475595),
   E = n(566078),
   O = n(602667),
-  y = n(65443),
-  I = n(611855),
+  I = n(65443),
+  y = n(611855),
   v = n(670638),
   C = n(667105),
   S = n(860151),
@@ -82,12 +82,12 @@ function x(e) {
   })
 }
 
-function w(e) {
+function L(e) {
   var t, n, l, c;
   let {
     nodeRef: _,
     quest: E
-  } = e, O = (0, u.O5)(), P = (0, o.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), w = (0, o.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), [L, R] = i.useState(!1), D = i.useCallback(() => R(!0), []), k = i.useCallback(() => R(!1), []), M = (0, b.up)(T.dr.ACTIVITY_PANEL), U = i.useCallback(e => {
+  } = e, O = (0, u.O5)(), P = (0, o.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), L = (0, o.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), [w, R] = i.useState(!1), D = i.useCallback(() => R(!0), []), k = i.useCallback(() => R(!1), []), M = (0, b.up)(T.dr.ACTIVITY_PANEL), U = i.useCallback(e => {
     e.stopPropagation()
   }, []), G = i.useCallback(() => {
     (0, d.AH)(E.id, {
@@ -115,15 +115,15 @@ function w(e) {
   }, [E.id, O]), H = (0, C.hf)({
     quest: E,
     location: f.jn.ACTIVITY_PANEL
-  }), F = (0, p.tP)(E), z = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, W = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, Y = (null == (l = E.userStatus) ? void 0 : l.claimedAt) != null, K = (null == E ? void 0 : E.userStatus) != null && (0, g.zE)(E.userStatus, f.jn.ACTIVITY_PANEL), q = (0, p.Rf)(E), Q = (0, b.DD)({
+  }), F = (0, p.tP)(E), z = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, W = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, Y = (null == (l = E.userStatus) ? void 0 : l.claimedAt) != null, K = (null == E ? void 0 : E.userStatus) != null && (0, g.zE)(E.userStatus, f.jn.ACTIVITY_PANEL), q = (0, p.Rf)(E), X = (0, b.DD)({
     quest: E,
     taskDetails: q,
     location: T.dr.ACTIVITY_PANEL,
     questContent: f.jn.ACTIVITY_PANEL
-  }), X = (0, m.j)({
+  }), Q = (0, m.j)({
     location: T.dr.QUESTS_BAR_MOBILE
   });
-  return K || F || Y || w ? null : (0, r.jsxs)("div", {
+  return K || F || Y || L ? null : (0, r.jsxs)("div", {
     ref: e => {
       _.current = e
     },
@@ -140,7 +140,7 @@ function w(e) {
       className: A.utils,
       children: [z ? (0, r.jsx)(x, {
         quest: E
-      }) : (0, r.jsx)(I.Z, {}), (0, r.jsx)(v.r, {
+      }) : (0, r.jsx)(y.Z, {}), (0, r.jsx)(v.r, {
         quest: E,
         questContent: f.jn.ACTIVITY_PANEL,
         shouldShowDisclosure: (null == (c = E.userStatus) ? void 0 : c.enrolledAt) == null,
@@ -174,15 +174,15 @@ function w(e) {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-normal",
-          children: Q
-        }), X && (0, r.jsx)(y.Z, {
+          children: X
+        }), Q && (0, r.jsx)(I.Z, {
           quest: E,
           textColor: "text-muted",
           withRewardName: !0
         })]
       })]
     }), z && !W && (0, r.jsx)(S.Z, {
-      autoplay: L,
+      autoplay: w,
       className: A.rewardTileWithInstructions,
       quest: E,
       questContent: f.jn.ACTIVITY_PANEL,
@@ -225,11 +225,11 @@ function w(e) {
     })]
   })
 }
-let L = function(e) {
+let w = function(e) {
   return (0, r.jsx)(O.A, {
     questOrQuests: e.quest,
     questContent: f.jn.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(w, Z({
+    children: t => (0, r.jsx)(L, Z({
       nodeRef: t
     }, e))
   })

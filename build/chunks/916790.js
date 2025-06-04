@@ -13,8 +13,8 @@ var a = n(255367),
   u = n(570140),
   m = n(665149),
   x = n(886118),
-  p = n(301801),
-  h = n(4912),
+  h = n(301801),
+  p = n(4912),
   b = n(572004),
   f = n(55935),
   v = n(428530),
@@ -115,7 +115,7 @@ function I(e) {
   } = e, l = r.useMemo(() => t.error ? [...P, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(h.Z, {
+      children: [(0, a.jsx)(p.Z, {
         className: N.errorIcon
       }), "Error"]
     }),
@@ -184,7 +184,7 @@ function I(e) {
     })]
   })
 }
-let w = [{
+let k = [{
     key: "action",
     cellClassName: N.actionColumn,
     render(e) {
@@ -192,7 +192,7 @@ let w = [{
         actionLog: t
       } = e;
       return (0, a.jsxs)(a.Fragment, {
-        children: [t.error && (0, a.jsx)(h.Z, {
+        children: [t.error && (0, a.jsx)(p.Z, {
           className: N.errorIcon
         }), t.name]
       })
@@ -207,7 +207,7 @@ let w = [{
       return "".concat(E(t.totalTime), " ms")
     }
   }],
-  k = {
+  w = {
     searchType: x.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -236,13 +236,13 @@ function R() {
       actionLog: e
     })), [l]),
     [c, m] = r.useState(o),
-    [x, h] = r.useState(o),
+    [x, p] = r.useState(o),
     [b, f] = r.useState(!1),
     [v, g] = r.useState(),
     j = r.useCallback(e => {
-      h(e)
+      p(e)
     }, []);
-  (0, p.BO)(t, b ? c : o, j, k);
+  (0, h.BO)(t, b ? c : o, j, w);
   let y = r.useCallback(e => {
       m(o), f(e)
     }, [o]),
@@ -268,7 +268,7 @@ function R() {
         placeholder: "Search by action name"
       })]
     }), (0, a.jsx)(_.Z, {
-      columns: w,
+      columns: k,
       data: E,
       selectedRowKey: null == v ? void 0 : v.id.toString(),
       onClickRow: e => g(e.actionLog)

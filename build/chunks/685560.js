@@ -13,8 +13,8 @@ var a = n(255367),
   u = n(621628),
   m = n(645041),
   x = n(713081),
-  p = n(675478),
-  h = n(581883),
+  h = n(675478),
+  p = n(581883),
   b = n(899667),
   f = n(430824),
   v = n(914010),
@@ -59,10 +59,10 @@ function E() {
       var e;
       return null == (e = f.Z.getGuild(t)) ? void 0 : e.name
     }),
-    r = (0, i.Wu)([h.Z], () => [...y, ...C].filter(e => null != t && (0, m.OY)(e, t))),
-    l = null != (e = (0, i.e7)([h.Z], () => {
+    r = (0, i.Wu)([p.Z], () => [...y, ...C].filter(e => null != t && (0, m.OY)(e, t))),
+    l = null != (e = (0, i.e7)([p.Z], () => {
       var e;
-      return null == (e = h.Z.settings.userContent) ? void 0 : e.dismissedContents
+      return null == (e = p.Z.settings.userContent) ? void 0 : e.dismissedContents
     })) ? e : new Uint8Array,
     s = (0, i.Wu)([b.Z], () => {
       var e;
@@ -127,7 +127,7 @@ function E() {
       }), y.map(e => (0, a.jsx)(c.j7V, {
         className: j.formSwitch,
         onChange: n => {
-          n ? (0, m.Qd)(e, t, !1) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, m.c7)(e, t))
+          n ? (0, m.Qd)(e, t, !1) : ((0, h.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, m.c7)(e, t))
         },
         value: r.includes(e),
         children: (0, a.jsx)(c.Text, {
@@ -143,7 +143,7 @@ function E() {
       }), C.map(e => (0, a.jsx)(c.j7V, {
         className: j.formSwitch,
         onChange: n => {
-          n ? (0, m.Qd)(e, t, !1) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, m.c7)(e, t))
+          n ? (0, m.Qd)(e, t, !1) : ((0, h.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, m.c7)(e, t))
         },
         value: r.includes(e),
         children: (0, a.jsx)(c.Text, {
