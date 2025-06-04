@@ -151,14 +151,13 @@ function Y(e) {
 function W(e) {
   let {
     channelId: t,
-    messageRecord: n
-  } = e, r = null == n ? void 0 : n.nonce;
-  if (null != r && x.has(r)) {
-    let e = c.Z.getOrCreate(t),
-      n = e.get(r);
-    if (null == n) return;
-    e = (e = e.remove(r)).merge([n]), x.delete(r), c.Z.commit(e)
-  }
+    messageId: n
+  } = e;
+  if (null == n || !x.has(n)) return !1;
+  let r = c.Z.getOrCreate(t),
+    i = r.get(n);
+  if (null == i) return !1;
+  r = (r = r.remove(n)).merge([i]), x.delete(n), c.Z.commit(r)
 }
 
 function K(e) {

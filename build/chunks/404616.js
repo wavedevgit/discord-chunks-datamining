@@ -35,8 +35,8 @@ var i = n(255367),
   P = n(406432),
   E = n(169525),
   C = n(566006),
-  R = n(255269),
-  I = n(937889),
+  I = n(255269),
+  R = n(937889),
   w = n(443877),
   N = n(524444),
   Z = n(287151),
@@ -151,8 +151,8 @@ let el = 72,
       }),
       C = (0, h.JA)(t),
       {
-        role: R,
-        onFocus: I
+        role: I,
+        onFocus: R
       } = C,
       w = function(e, t) {
         if (null == e) return {};
@@ -173,7 +173,7 @@ let el = 72,
         isFocused: N,
         handleFocus: Z,
         handleBlur: A
-      } = (0, q.Z)(I);
+      } = (0, q.Z)(R);
     return (0, i.jsxs)("div", {
       ref: _,
       "data-item-id": t,
@@ -283,7 +283,7 @@ function eu(e) {
   let t = (0, p.e7)([W.Z], () => W.Z.getHasSearchResults(e.parent_id)),
     n = (0, p.e7)([W.Z], () => W.Z.getSearchQuery(e.parent_id)),
     i = r.useMemo(() => (0, O.nC)(t && null != n ? n : ""), [t, n]);
-  return r.useMemo(() => (0, I.ZP)({
+  return r.useMemo(() => (0, R.ZP)({
     content: e.name,
     embeds: []
   }, {
@@ -341,7 +341,7 @@ let ed = r.memo(function(e) {
     })
   }
   return (0, i.jsxs)(T.aQ.Provider, {
-    value: (0, R.Z)(h, d),
+    value: (0, I.Z)(h, d),
     children: [!a && (0, i.jsx)(X.Z, {
       channel: n,
       message: t,

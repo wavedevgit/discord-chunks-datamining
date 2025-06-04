@@ -456,7 +456,10 @@ class eO extends d.Z {
           automatic_audio_subsystem: i.automaticAudioSubsystem,
           participant_type: this.getVoiceParticipantType(),
           audio_capture_sample_rate_mismatch_percent: o,
-          krisp_sdk_version: L.Z.getState().krispVersion
+          krisp_sdk_version: L.Z.getState().krispVersion,
+          secure_frames_max_concurrent_transitions: this._secureFramesMaxConcurrentTransitions,
+          secure_frames_transition_prepare_count: this._secureFramesTransitionPrepareCount,
+          secure_frames_transition_execute_count: this._secureFramesTransitionExecuteCount
         });
       (async () => {
         var e, t;
@@ -470,9 +473,9 @@ class eO extends d.Z {
         U.default.track(ea.rMx.VOICE_DISCONNECT, eu(el({}, s), {
           battery_usage: t
         }))
-      })
+      }), this._trackRemainingSecureFrameTransitions()
     }
-    if (this._pingTimeouts = [], this._pings = [], this._connectCompletedTime = 0, this._pingBadCount = 0, this._inputDetected = !1, this._mediaSessionId = null, null == (i = this._voiceQuality) || i.stop(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, null == (a = this._voiceDuration) || a.stop(), this._voiceDuration = null, null == (o = this._videoQuality) || o.stop(), this._videoQuality = null, this._videoHealthManager = null, null == (s = this._localMediaSinkWantsManager) || s.reset(), this._secureFramesState = null, this._userIds = new Set([this.userId]), this._secureFramesRosterMap.clear(), null != this._connection) {
+    if (this._pingTimeouts = [], this._pings = [], this._connectCompletedTime = 0, this._pingBadCount = 0, this._inputDetected = !1, this._mediaSessionId = null, null == (i = this._voiceQuality) || i.stop(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, null == (a = this._voiceDuration) || a.stop(), this._voiceDuration = null, null == (o = this._videoQuality) || o.stop(), this._videoQuality = null, this._videoHealthManager = null, null == (s = this._localMediaSinkWantsManager) || s.reset(), this._secureFramesState = null, this._userIds = new Set([this.userId]), this._secureFramesRosterMap.clear(), this._secureFramesTransitionStates.clear(), this._secureFramesNextTransitionState = void 0, this._secureFramesMaxConcurrentTransitions = 0, this._secureFramesTransitionPrepareCount = 0, this._secureFramesTransitionExecuteCount = 0, null != this._connection) {
       let e = this._connection;
       this._connection = null, e.destroy()
     }
@@ -821,25 +824,74 @@ class eO extends d.Z {
       null == (n = this._connection) || n.setBandwidthEstimationExperiments(t)
     }
   }
-  _trackSecureFrameTransition(e, t) {
+  _trackSecureFrameTransition(e) {
+    var t;
+    let n = null != (t = this._secureFramesTransitionStates.get(e)) ? t : {},
+      r = this._secureFramesTransitionStates.size;
+    this._secureFramesTransitionStates.delete(e);
+    let i = (e, t) => null != e && null != t ? e - t : void 0;
     U.default.track(ea.rMx.SECURE_FRAMES_TRANSITION, eu(el({}, this._getAnalyticsProperties()), {
       media_session_id: this.getMediaSessionId(),
       parent_media_session_id: this.parentMediaSessionId,
       sender_user_id: this.userId,
       transition_id: e,
-      protocol_version: t
+      protocol_version: n.protocolVersion,
+      start_to_init_duration: i(n.initReceivedTime, this._connectStartTime),
+      init_duration: i(n.initFinishedTime, n.initReceivedTime),
+      first_proposals_duration: i(n.firstProposalsFinishedTime, n.firstProposalsReceivedTime),
+      last_proposals_duration: i(n.lastProposalsFinishedTime, n.lastProposalsReceivedTime),
+      duration_between_proposals: i(n.lastProposalsReceivedTime, n.firstProposalsReceivedTime),
+      total_proposals_size: n.totalProposalsSize,
+      total_commit_welcome_size: n.totalCommitWelcomeSize,
+      welcome_duration: i(n.welcomeFinishedTime, n.welcomeReceivedTime),
+      welcome_size: n.welcomeSize,
+      welcome_error: n.welcomeError,
+      welcome_wait_duration: i(n.welcomeReceivedTime, n.lastProposalsFinishedTime),
+      commit_duration: i(n.commitFinishedTime, n.commitReceivedTime),
+      commit_size: n.commitSize,
+      commit_error: n.commitError,
+      commit_wait_duration: i(n.commitReceivedTime, n.lastProposalsFinishedTime),
+      prepare_duration: i(n.prepareFinishedTime, n.prepareReceivedTime),
+      prepare_wait_duration: i(n.prepareReceivedTime, n.lastProposalsFinishedTime),
+      execute_duration: i(n.executeFinishedTime, n.executeReceivedTime),
+      execute_wait_duration: i(n.executeReceivedTime, n.readyTime),
+      execute_error: n.executeError,
+      incomplete: n.incomplete,
+      active_transition_count: r
     }))
+  }
+  _trackRemainingSecureFrameTransitions() {
+    this._secureFramesTransitionStates.forEach((e, t) => {
+      e.incomplete = !0, this._trackSecureFrameTransition(t)
+    })
+  }
+  _storeSecureFrameTransitionData(e, t) {
+    let n = this._secureFramesTransitionStates.get(e);
+    if (null == n) {
+      var r;
+      n = null != (r = this._secureFramesNextTransitionState) ? r : {}, this._secureFramesNextTransitionState = void 0
+    }
+    this._secureFramesTransitionStates.set(e, el({}, n, t)), this._secureFramesMaxConcurrentTransitions = Math.max(this._secureFramesMaxConcurrentTransitions, this._secureFramesTransitionStates.size)
   }
   _handleSecureFramesInit(e) {
     var t, n;
+    let r = (0, _.zO)();
     e > 0 ? (this.logger.info("DAVE protocol init with protocol version: ".concat(e)), null == (t = this._connection) || t.prepareSecureFramesEpoch(eE, e, this.trueChannelId), this._sendMLSKeyPackage()) : null == (n = this._connection) || n.prepareSecureFramesTransition(eb, e, () => {
-      e > 0 && this._trackSecureFrameTransition(eb, e);
+      let t = (0, _.zO)(),
+        n = !1;
       try {
-        var t;
-        null == (t = this._connection) || t.executeSecureFramesTransition(eb)
+        var i;
+        null == (i = this._connection) || i.executeSecureFramesTransition(eb)
       } catch (e) {
-        Z.Z.captureException(e)
+        n = !0, Z.Z.captureException(e)
       }
+      e > 0 && (this._storeSecureFrameTransitionData(eb, {
+        initReceivedTime: r,
+        initFinishedTime: t,
+        protocolVersion: e,
+        executeFinishedTime: (0, _.zO)(),
+        executeError: n
+      }), this._trackSecureFrameTransition(eb))
     })
   }
   _handleSecureFramesRosterChange(e) {
@@ -851,8 +903,14 @@ class eO extends d.Z {
   }
   _handleSecureFramesPrepareTransition(e, t) {
     var n;
-    this.logger.info("Preparing DAVE protocol transition: ".concat(e, ", protocol version: ").concat(t)), null == (n = this._connection) || n.prepareSecureFramesTransition(e, t, () => {
-      this._maybeSendSecureFramesTransitionReady(e), this._trackSecureFrameTransition(e, t)
+    this.logger.info("Preparing DAVE protocol transition: ".concat(e, ", protocol version: ").concat(t)), this._secureFramesTransitionPrepareCount++;
+    let r = (0, _.zO)();
+    null == (n = this._connection) || n.prepareSecureFramesTransition(e, t, () => {
+      this._maybeSendSecureFramesTransitionReady(e), this._storeSecureFrameTransitionData(e, {
+        protocolVersion: t,
+        prepareReceivedTime: r,
+        prepareFinishedTime: (0, _.zO)()
+      })
     })
   }
   _handleSecureFramesPrepareEpoch(e, t) {
@@ -871,17 +929,26 @@ class eO extends d.Z {
   _maybeSendSecureFramesTransitionReady(e) {
     if (e !== eb) {
       var t;
-      this.logger.info("Sending DAVE protocol ready for transition ID ".concat(e)), null == (t = this._socket) || t.secureFramesReadyForTransition(e)
+      this.logger.info("Sending DAVE protocol ready for transition ID ".concat(e)), null == (t = this._socket) || t.secureFramesReadyForTransition(e), this._storeSecureFrameTransitionData(e, {
+        readyTime: (0, _.zO)()
+      })
     }
   }
   _handleSecureFramesExecuteTransition(e) {
-    this.logger.info("Executing DAVE protocol transition: ".concat(e));
+    this.logger.info("Executing DAVE protocol transition: ".concat(e)), this._secureFramesTransitionExecuteCount++;
+    let t = (0, _.zO)(),
+      n = !1;
     try {
-      var t;
-      null == (t = this._connection) || t.executeSecureFramesTransition(e)
+      var r;
+      null == (r = this._connection) || r.executeSecureFramesTransition(e)
     } catch (e) {
-      Z.Z.captureException(e)
+      n = !0, Z.Z.captureException(e)
     }
+    this._storeSecureFrameTransitionData(e, {
+      executeReceivedTime: t,
+      executeFinishedTime: (0, _.zO)(),
+      executeError: n
+    }), this._trackSecureFrameTransition(e)
   }
   _handleMLSExternalSenderPackage(e) {
     var t;
@@ -889,20 +956,42 @@ class eO extends d.Z {
   }
   _handleMLSProposals(e, t) {
     var n;
-    this.logger.info("Received MLS proposals"), null == (n = this._connection) || n.processMLSProposals(t, t => {
-      this.logger.info("Sending MLS commit welcome message"), e.sendMLSCommitWelcome(t)
+    let r = (0, _.zO)();
+    this.logger.info("Received MLS proposals"), null == (n = this._connection) || n.processMLSProposals(t, n => {
+      var i, a;
+      let o = (0, _.zO)();
+      this.logger.info("Sending MLS commit welcome message"), e.sendMLSCommitWelcome(n), null == this._secureFramesNextTransitionState && (this._secureFramesNextTransitionState = {
+        firstProposalsReceivedTime: r,
+        firstProposalsFinishedTime: o
+      }), this._secureFramesNextTransitionState.lastProposalsReceivedTime = r, this._secureFramesNextTransitionState.lastProposalsFinishedTime = o, this._secureFramesNextTransitionState.totalProposalsSize = (null != (i = this._secureFramesNextTransitionState.totalProposalsSize) ? i : 0) + t.byteLength, this._secureFramesNextTransitionState.totalCommitWelcomeSize = (null != (a = this._secureFramesNextTransitionState.totalCommitWelcomeSize) ? a : 0) + n.byteLength
     })
   }
   _handleMLSPrepareCommitTransition(e, t) {
     var n;
-    this.logger.info("Received MLS commit for transition ID ".concat(e)), null == (n = this._connection) || n.prepareMLSCommitTransition(e, t, (t, n, r) => {
-      t ? (this._handleSecureFramesRosterChange(r), this._maybeSendSecureFramesTransitionReady(e), this._trackSecureFrameTransition(e, n), this._recoverMLSFailures()) : (this.logger.warn("Failed to process MLS commit for transition ID ".concat(e)), this._flagMLSInvalidCommitWelcome(e), this._handleSecureFramesInit(n))
+    this.logger.info("Received MLS commit for transition ID ".concat(e));
+    let r = (0, _.zO)();
+    null == (n = this._connection) || n.prepareMLSCommitTransition(e, t, (n, i, a) => {
+      n ? (this._handleSecureFramesRosterChange(a), this._maybeSendSecureFramesTransitionReady(e), this._recoverMLSFailures()) : (this.logger.warn("Failed to process MLS commit for transition ID ".concat(e)), this._flagMLSInvalidCommitWelcome(e), this._handleSecureFramesInit(i)), this._storeSecureFrameTransitionData(e, {
+        protocolVersion: i,
+        commitReceivedTime: r,
+        commitFinishedTime: (0, _.zO)(),
+        commitSize: t.byteLength,
+        commitError: !n
+      }), e === eb && this._trackSecureFrameTransition(e)
     })
   }
   _handleMLSWelcome(e, t) {
     var n;
-    this.logger.info("Received MLS welcome for transition ID ".concat(e)), null == (n = this._connection) || n.processMLSWelcome(e, t, (t, n, r) => {
-      t ? (this._handleSecureFramesRosterChange(r), this._maybeSendSecureFramesTransitionReady(e), this._trackSecureFrameTransition(e, n), this._recoverMLSFailures()) : (this._flagMLSInvalidCommitWelcome(e), this._sendMLSKeyPackage())
+    this.logger.info("Received MLS welcome for transition ID ".concat(e));
+    let r = (0, _.zO)();
+    null == (n = this._connection) || n.processMLSWelcome(e, t, (n, i, a) => {
+      n ? (this._handleSecureFramesRosterChange(a), this._maybeSendSecureFramesTransitionReady(e), this._recoverMLSFailures()) : (this._flagMLSInvalidCommitWelcome(e), this._sendMLSKeyPackage()), this._storeSecureFrameTransitionData(e, {
+        protocolVersion: i,
+        welcomeReceivedTime: r,
+        welcomeFinishedTime: (0, _.zO)(),
+        welcomeSize: t.byteLength,
+        welcomeError: !n
+      }), e === eb && this._trackSecureFrameTransition(e)
     })
   }
   getMLSPairwiseFingerprint(e, t, n) {
@@ -985,7 +1074,7 @@ class eO extends d.Z {
     parentMediaSessionId: s
   }) {
     var l, d;
-    super(), es(this, "context", void 0), es(this, "userId", void 0), es(this, "sessionId", void 0), es(this, "guildId", void 0), es(this, "parentMediaSessionId", void 0), es(this, "hostname", void 0), es(this, "state", void 0), es(this, "_videoQuality", void 0), es(this, "_soundshareStats", void 0), es(this, "logger", void 0), es(this, "rtcServerId", void 0), es(this, "_channelId", void 0), es(this, "channelIds", void 0), es(this, "_endpoint", void 0), es(this, "port", void 0), es(this, "token", void 0), es(this, "protocol", void 0), es(this, "voiceVersion", void 0), es(this, "rtcWorkerVersion", void 0), es(this, "_socket", void 0), es(this, "_backoff", void 0), es(this, "_destroyed", void 0), es(this, "_pings", void 0), es(this, "_pingBadCount", void 0), es(this, "_pingTimeouts", void 0), es(this, "_mediaSessionId", void 0), es(this, "_voiceQuality", void 0), es(this, "_voiceQualityPeriodicStatsInterval", void 0), es(this, "_voiceQualityPeriodicStatsSequenceId", void 0), es(this, "_systemResponsiveness", void 0), es(this, "_systemResources", void 0), es(this, "_noiseCancellationError", void 0), es(this, "_voiceDuration", void 0), es(this, "_videoHealthManager", void 0), es(this, "_sentVideo", void 0), es(this, "_outboundLossRate", void 0), es(this, "_recordingEnabled", void 0), es(this, "_selectedExperiments", void 0), es(this, "_localMediaSinkWantsManager", void 0), es(this, "_goLiveQualityManager", void 0), es(this, "_remoteVideoSinkWants", void 0), es(this, "_connection", void 0), es(this, "_mediaEngineConnectionId", void 0), es(this, "_createdTime", void 0), es(this, "_connectStartTime", void 0), es(this, "_connectCompletedTime", void 0), es(this, "_rtcConnectionId", void 0), es(this, "_connectCount", void 0), es(this, "_connected", void 0), es(this, "_connecting", void 0), es(this, "_encountered_socket_failure", void 0), es(this, "_inputDetected", void 0), es(this, "_encryptionMode", void 0), es(this, "stateHistory", void 0), es(this, "_supportedBandwidthEstimationExperiments", void 0), es(this, "_bandwidthEstimationExperiment", void 0), es(this, "_secureFramesState", void 0), es(this, "_userIds", void 0), es(this, "_secureFramesRosterMap", new Map), es(this, "_mlsFailuresRecovered", void 0), es(this, "_mlsFailures", void 0), es(this, "_lastSentSpeakingStatus", void 0), es(this, "_lastSentSSRC", void 0), es(this, "powerMonitorListener", void 0), es(this, "reconnect", () => {
+    super(), es(this, "context", void 0), es(this, "userId", void 0), es(this, "sessionId", void 0), es(this, "guildId", void 0), es(this, "parentMediaSessionId", void 0), es(this, "hostname", void 0), es(this, "state", void 0), es(this, "_videoQuality", void 0), es(this, "_soundshareStats", void 0), es(this, "logger", void 0), es(this, "rtcServerId", void 0), es(this, "_channelId", void 0), es(this, "channelIds", void 0), es(this, "_endpoint", void 0), es(this, "port", void 0), es(this, "token", void 0), es(this, "protocol", void 0), es(this, "voiceVersion", void 0), es(this, "rtcWorkerVersion", void 0), es(this, "_socket", void 0), es(this, "_backoff", void 0), es(this, "_destroyed", void 0), es(this, "_pings", void 0), es(this, "_pingBadCount", void 0), es(this, "_pingTimeouts", void 0), es(this, "_mediaSessionId", void 0), es(this, "_voiceQuality", void 0), es(this, "_voiceQualityPeriodicStatsInterval", void 0), es(this, "_voiceQualityPeriodicStatsSequenceId", void 0), es(this, "_systemResponsiveness", void 0), es(this, "_systemResources", void 0), es(this, "_noiseCancellationError", void 0), es(this, "_voiceDuration", void 0), es(this, "_videoHealthManager", void 0), es(this, "_sentVideo", void 0), es(this, "_outboundLossRate", void 0), es(this, "_recordingEnabled", void 0), es(this, "_selectedExperiments", void 0), es(this, "_localMediaSinkWantsManager", void 0), es(this, "_goLiveQualityManager", void 0), es(this, "_remoteVideoSinkWants", void 0), es(this, "_connection", void 0), es(this, "_mediaEngineConnectionId", void 0), es(this, "_createdTime", void 0), es(this, "_connectStartTime", void 0), es(this, "_connectCompletedTime", void 0), es(this, "_rtcConnectionId", void 0), es(this, "_connectCount", void 0), es(this, "_connected", void 0), es(this, "_connecting", void 0), es(this, "_encountered_socket_failure", void 0), es(this, "_inputDetected", void 0), es(this, "_encryptionMode", void 0), es(this, "stateHistory", void 0), es(this, "_supportedBandwidthEstimationExperiments", void 0), es(this, "_bandwidthEstimationExperiment", void 0), es(this, "_secureFramesState", void 0), es(this, "_userIds", void 0), es(this, "_secureFramesRosterMap", new Map), es(this, "_mlsFailuresRecovered", void 0), es(this, "_mlsFailures", void 0), es(this, "_secureFramesTransitionStates", new Map), es(this, "_secureFramesNextTransitionState", void 0), es(this, "_secureFramesMaxConcurrentTransitions", 0), es(this, "_secureFramesTransitionPrepareCount", 0), es(this, "_secureFramesTransitionExecuteCount", 0), es(this, "_lastSentSpeakingStatus", void 0), es(this, "_lastSentSSRC", void 0), es(this, "powerMonitorListener", void 0), es(this, "reconnect", () => {
       let e = this._socket;
       null != e && (this._connected && (this._connectStartTime = (0, _.zO)()), this._connecting || (this._trackVoiceConnectionConnecting(), this._connecting = !0, this._encountered_socket_failure = !1), this._connectCount++, e.close(), e.connect())
     }), es(this, "_alertMLSFailureDebouced", o()(this._alertMLSFailure, 100)), es(this, "_handleNetworkOnline", () => {

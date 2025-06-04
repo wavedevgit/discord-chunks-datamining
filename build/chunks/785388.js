@@ -28,8 +28,8 @@ var i = n(255367),
   P = n(995774),
   E = n(665906),
   C = n(210887),
-  R = n(314897),
-  I = n(592125),
+  I = n(314897),
+  R = n(592125),
   w = n(271383),
   N = n(542578),
   Z = n(375954),
@@ -215,7 +215,7 @@ function $(e) {
     reactionType: s,
     onRemoveReactor: a,
     disableManage: c = !1
-  } = e, d = (0, u.e7)([R.default], () => R.default.getId()), p = (0, u.e7)([L.default], () => L.default.getUser(n.id), [n]), g = (0, E.$R)(o), O = (0, u.e7)([A.Z], () => A.Z.can(V.Plq.MANAGE_MESSAGES, o) && g) || d === n.id, v = (0, u.e7)([w.ZP, I.Z, M.Z], () => U.ZP.getName(l, o.id, n));
+  } = e, d = (0, u.e7)([I.default], () => I.default.getId()), p = (0, u.e7)([L.default], () => L.default.getUser(n.id), [n]), g = (0, E.$R)(o), O = (0, u.e7)([A.Z], () => A.Z.can(V.Plq.MANAGE_MESSAGES, o) && g) || d === n.id, v = (0, u.e7)([w.ZP, R.Z, M.Z], () => U.ZP.getName(l, o.id, n));
   return (0, i.jsxs)(b.Z, {
     className: z.reactorDefault,
     onContextMenu: e => (0, B.Pv)(e, n, o),
@@ -409,7 +409,7 @@ function et(e) {
     onClose: s,
     transitionState: a,
     "aria-label": c = G.intl.string(G.t.gHp0Cw)
-  } = e, p = (0, u.e7)([I.Z], () => I.Z.getChannel(t.getChannelId())), f = null == p ? void 0 : p.getGuildId(), m = (0, u.e7)([Z.Z, j.Z], () => {
+  } = e, p = (0, u.e7)([R.Z], () => R.Z.getChannel(t.getChannelId())), f = null == p ? void 0 : p.getGuildId(), m = (0, u.e7)([Z.Z, j.Z], () => {
     var e, n;
     let i = null != (n = Z.Z.getMessage(t.getChannelId(), t.id)) ? n : null == (e = j.Z.getMessage(F.default.castMessageIdAsChannelId(t.id))) ? void 0 : e.firstMessage;
     return null != i ? i.reactions : []
@@ -441,7 +441,7 @@ function et(e) {
   } : null, b), x = r.useMemo(() => {
     var e;
     return null == S ? null : null != (e = m.find(e => (0, P.ir)(e.emoji, S.emoji))) ? e : null
-  }, [m, S]), E = (0, u.e7)([g.Z], () => g.Z.saturation), R = (0, u.e7)([C.Z], () => (0, d.wj)(C.Z.theme));
+  }, [m, S]), E = (0, u.e7)([g.Z], () => g.Z.saturation), I = (0, u.e7)([C.Z], () => (0, d.wj)(C.Z.theme));
   if (r.useEffect(() => {
       (0 === m.length || null == S && null == x) && setImmediate(s)
     }, [s, m.length, x, S]), null == S || null == x) return (0, i.jsx)(h.$jN, {});
@@ -465,7 +465,7 @@ function et(e) {
             reactionType: n ? _.O.BURST : _.O.NORMAL,
             emoji: e.emoji,
             count: n ? e.burst_count : e.count,
-            colors: null != e.burst_colors ? (0, v.Z)(e.burst_colors, E, R) : void 0
+            colors: null != e.burst_colors ? (0, v.Z)(e.burst_colors, E, I) : void 0
           }, "".concat(n ? "burst-" : "normal-").concat(null != (t = e.emoji.id) ? t : "", ":").concat(e.emoji.name))
         })
       }), (0, i.jsx)(ee, {

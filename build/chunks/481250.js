@@ -17,8 +17,8 @@ var a = r(120356),
   p = r(513547),
   h = r(65154),
   y = r(442122),
-  g = r(20493);
-let f = {
+  f = r(20493);
+let g = {
   [h.Z.NO_OVERRIDE]: "None",
   [h.Z.LOW]: "Low Quality Stream",
   [h.Z.HIGH]: "High Quality Stream"
@@ -43,28 +43,28 @@ let D = {
 };
 
 function b(e, t, r, a, b) {
-  return e.map((E, j) => {
-    let C = [];
+  return e.map((E, C) => {
+    let j = [];
     for (let e of Object.keys(E).sort((e, t) => {
         let r = D[e],
           n = D[t];
         return r !== n ? void 0 === r ? 1 : void 0 === n ? -1 : r - n : m.Pz[e] !== m.Pz[t] ? m.Pz[e] ? 1 : -1 : e > t ? 1 : -1
       })) {
       let t = E[e];
-      p.al[e] || void 0 === t || C.push((0, n.jsx)(p.ck, {
+      p.al[e] || void 0 === t || j.push((0, n.jsx)(p.ck, {
         section: a,
         label: e,
         value: t
       }, e))
     }
     return (0, n.jsxs)(l.hjN, {
-      className: g.marginBottom40,
+      className: f.marginBottom40,
       title: E.type,
       titleClassName: y.sectionHeader,
       children: ["video" === E.type && null != r && null != a && null != b && function(e, t, r, a) {
         let l = a.get(t, r, e.ssrc);
         return null != l ? (0, n.jsx)("div", {
-          className: i()(y.videoWrapper, g.marginBottom40),
+          className: i()(y.videoWrapper, f.marginBottom40),
           children: (0, n.jsx)(d.Z, {
             streamId: l,
             videoComponent: u.Z.getMediaEngine().Video,
@@ -73,13 +73,13 @@ function b(e, t, r, a, b) {
             userId: r
           })
         }) : null
-      }(E, r, a, b), v(C), "video" === E.type && j === e.length - 1 && null != r && null != a && null != b && (0, n.jsx)(c.Z, {
-        className: g.marginBottom20,
+      }(E, r, a, b), v(j), "video" === E.type && C === e.length - 1 && null != r && null != a && null != b && (0, n.jsx)(c.Z, {
+        className: f.marginBottom20,
         children: (0, n.jsxs)(c.Z.Child, {
           basis: "100%",
           children: [(0, n.jsx)(l.vwX, {
             tag: l.RB0.H5,
-            className: g.marginBottom8,
+            className: f.marginBottom8,
             children: "Simulcast Override"
           }), (0, n.jsx)(l.q4e, {
             value: m.ZP.getSimulcastDebugOverride(a, t),
@@ -88,7 +88,7 @@ function b(e, t, r, a, b) {
             },
             options: Object.values(h.Z).map(e => ({
               value: e,
-              label: f[e]
+              label: g[e]
             }))
           })]
         })

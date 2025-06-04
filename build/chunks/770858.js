@@ -10,9 +10,9 @@ var r = n(255367),
   a = n(276952),
   c = n(682662),
   u = n(593364),
-  d = n(944486),
-  h = n(821020),
-  p = n(846355),
+  d = n(888369),
+  h = n(944486),
+  p = n(821020),
   f = n(370774),
   g = n(961040),
   m = n(932711),
@@ -26,11 +26,11 @@ function O(e) {
     selectedOverride: O = !1,
     popoutProps: v,
     ref: _
-  } = e, C = (0, l.Ie)("notifications-inbox"), [j, S] = i.useState(!1), x = (0, f.D)(), E = O || x, P = (0, o.e7)([p.Z], () => p.Z.unreadMessageIds), I = P.size > 0 ? (0, u.N)(P.size) : null, {
+  } = e, C = (0, l.Ie)("notifications-inbox"), [j, S] = i.useState(!1), x = (0, f.D)(), E = O || x, P = (0, o.e7)([d.default], () => d.default.getTotalMentionCount(!0)), I = P > 0 ? (0, u.N)(P) : null, {
     notificationCenterVariant: w
-  } = h.L.useExperiment({
+  } = p.L.useExperiment({
     location: "NotificationsInboxButtonInner"
-  }), N = (0, o.e7)([d.Z], () => d.Z.getChannelId()), Z = i.useMemo(() => {
+  }), N = (0, o.e7)([h.Z], () => h.Z.getChannelId()), Z = i.useMemo(() => {
     if ("sidebar" === w) return b.Z5c.NOTIFICATIONS_INBOX(null != N ? N : void 0)
   }, [w, N]);
   return (0, r.jsxs)(c.H, {
@@ -38,7 +38,7 @@ function O(e) {
     children: ["sidebar" === w && (0, r.jsx)(a.Z, {
       selected: E,
       hovered: j,
-      unread: P.size > 0,
+      unread: P > 0,
       className: y.pill
     }), (0, r.jsx)(m.Z, {
       children: (0, r.jsx)(s.aRk, {
@@ -93,7 +93,7 @@ function v() {
   let e = i.useRef(null),
     {
       notificationCenterVariant: t
-    } = h.L.useExperiment({
+    } = p.L.useExperiment({
       location: "NotificationsInboxButton"
     });
   return "sidebar" === t ? (0, r.jsx)(O, {}) : "popout" === t ? (0, r.jsx)(g.Z, {

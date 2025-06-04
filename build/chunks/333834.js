@@ -99,13 +99,13 @@ function E(e) {
       f.S.unsubscribe(v.CkL.SCROLL_PAGE_DOWN, t), f.S.unsubscribe(v.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
-  let M = i.useCallback(() => {
+  let k = i.useCallback(() => {
       var e;
       let t = null == (e = T.current) ? void 0 : e.getScrollerState(),
         n = (0, y.s)(D);
       null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && (null == s || s(n))
     }, [s, D]),
-    k = i.useMemo(() => {
+    M = i.useMemo(() => {
       let e = {
           [O.KZ.UNREAD]: [],
           [O.KZ.TODAY]: [],
@@ -149,18 +149,18 @@ function E(e) {
         } = e;
         return E([t], "sidebar" === R)
       })) : a().each(x, t => {
-        0 !== k[t].length && (e.push((0, r.jsx)(S, {
+        0 !== M[t].length && (e.push((0, r.jsx)(S, {
           group: t,
           isOpen: D[t],
           toggleOpenedState: () => L(t)
-        })), D[t] && e.push(...k[t].map(e => E(e, "sidebar" === R))))
+        })), D[t] && e.push(...M[t].map(e => E(e, "sidebar" === R))))
       }), (null == n ? void 0 : n.length) !== 0 && e.push((0, r.jsx)(u.LZC, {
         size: 8
       }, "spacer")), e
-    }, [n, _, D, L, k, Z, E, R]);
+    }, [n, _, D, L, M, Z, E, R]);
   i.useEffect(() => {
-    0 === k.UNREAD.length ? P(O.xM.READ) : P(O.xM.UNREAD)
-  }, [k, P]);
+    0 === M.UNREAD.length ? P(O.xM.READ) : P(O.xM.UNREAD)
+  }, [M, P]);
   let G = null;
   return null != n && n.length > 0 && null != s && l && (G = (0, r.jsx)("div", {
     className: C.loadingMore,
@@ -172,7 +172,7 @@ function E(e) {
     "aria-label": e["aria-label"],
     children: (0, r.jsxs)(u.Den, {
       className: o()(C.messagesPopout, I),
-      onScroll: M,
+      onScroll: k,
       ref: T,
       children: [(0, r.jsx)(c.bG, {
         navigator: A,

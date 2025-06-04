@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(934415),
   D = n(98597),
   L = n(648501),
-  M = n(473403),
-  k = n(207055),
+  k = n(473403),
+  M = n(207055),
   U = n(981631),
   G = n(647086),
   B = n(388032),
@@ -112,7 +112,7 @@ class Y extends D.ZP {
       speakerVoiceStates: i,
       numAudience: l
     } = this.props;
-    return (0, r.jsx)(k.Z, {
+    return (0, r.jsx)(M.Z, {
       channel: e,
       voiceStates: i,
       collapsed: t,
@@ -178,7 +178,7 @@ class Y extends D.ZP {
               }
               return i
             }(l, ["onClick", "onContextMenu"]);
-            return (0, r.jsxs)(M.ZP, W(z({
+            return (0, r.jsxs)(k.ZP, W(z({
               ref: this.channelItemRef,
               className: V.iconVisibility,
               iconClassName: o()({

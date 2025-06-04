@@ -15,17 +15,17 @@ var n = r(255367),
   p = r(210887),
   h = r(592125),
   y = r(271383),
-  g = r(19780),
-  f = r(226961),
+  f = r(19780),
+  g = r(226961),
   v = r(594174),
   D = r(51144),
   b = r(189648),
   E = r(775194),
-  j = r(499848),
-  C = r(724392),
+  C = r(499848),
+  j = r(724392),
   P = r(442580),
-  Z = r(770800),
-  R = r(981631),
+  R = r(770800),
+  Z = r(981631),
   N = r(65154),
   x = r(388032),
   F = r(442122);
@@ -76,23 +76,23 @@ function k(e, t, r, n, a) {
         context: e
       })
     }), null != s && i.push({
-      section: (0, f.J$)(e, R._s_.TRANSPORT, r),
+      section: (0, g.J$)(e, Z._s_.TRANSPORT, r),
       label: x.intl.string(x.t.wU9INz),
-      element: Z.Z,
+      element: R.Z,
       elementProps: {
         context: e,
         index: r
       }
     }), null == d || l().isEmpty(d) || i.push({
-      section: (0, f.J$)(e, R._s_.OUTBOUND, r),
+      section: (0, g.J$)(e, Z._s_.OUTBOUND, r),
       label: x.intl.string(x.t["3u0gIC"]),
-      element: C.Z,
+      element: j.Z,
       elementProps: {
         context: e,
         index: r
       }
     }), null != m && i.push({
-      section: (0, f.J$)(e, R._s_.CAMERA, r),
+      section: (0, g.J$)(e, Z._s_.CAMERA, r),
       label: x.intl.string(x.t["2AGBWF"]),
       element: b.Z,
       elementProps: {
@@ -105,7 +105,7 @@ function k(e, t, r, n, a) {
     Object.keys(o).forEach(i => {
       let l = v.default.getUser(i),
         s = y.ZP.getNick(a, i),
-        d = (0, f.J$)(e, i, r);
+        d = (0, g.J$)(e, i, r);
       null != o[i] && o[i].length > 0 && t.push({
         section: d,
         label: null != l ? S(l, s, a) : I(null != s ? s : i),
@@ -113,7 +113,7 @@ function k(e, t, r, n, a) {
         onClick: () => {
           c.zc(d)
         },
-        element: j.Z,
+        element: C.Z,
         elementProps: {
           context: e,
           index: r,
@@ -133,10 +133,10 @@ function B() {
   let {
     defaultStats: r,
     streamStats: i
-  } = (0, s.e7)([f.ZP], () => ({
-    defaultStats: f.ZP.getAllStats(N.Yn.DEFAULT),
-    streamStats: f.ZP.getAllStats(N.Yn.STREAM)
-  }), [], s.pF), l = (0, s.e7)([g.Z, h.Z], () => h.Z.getChannel(g.Z.getChannelId())), m = null == (e = r.concat(i).find(e => null != e.screenshare)) ? void 0 : e.screenshare, y = null == (t = i.find(e => null != e.clips)) ? void 0 : t.clips, v = (0, s.e7)([p.Z], () => p.Z.theme), D = (0, s.e7)([p.Z], () => p.Z.darkSidebar ? R.BRd.DARK : void 0), b = (0, s.e7)([f.ZP], () => f.ZP.getSection()), j = function(e) {
+  } = (0, s.e7)([g.ZP], () => ({
+    defaultStats: g.ZP.getAllStats(N.Yn.DEFAULT),
+    streamStats: g.ZP.getAllStats(N.Yn.STREAM)
+  }), [], s.pF), l = (0, s.e7)([f.Z, h.Z], () => h.Z.getChannel(f.Z.getChannelId())), m = null == (e = r.concat(i).find(e => null != e.screenshare)) ? void 0 : e.screenshare, y = null == (t = i.find(e => null != e.clips)) ? void 0 : t.clips, v = (0, s.e7)([p.Z], () => p.Z.theme), D = (0, s.e7)([p.Z], () => p.Z.darkSidebar ? Z.BRd.DARK : void 0), b = (0, s.e7)([g.ZP], () => g.ZP.getSection()), C = function(e) {
     let {
       defaultStats: t,
       streamStats: r,
@@ -149,14 +149,14 @@ function B() {
       section: u.ID.DIVIDER
     };
     return null != i && (p.push(y), p.push({
-      section: R._s_.SCREENSHARE,
+      section: Z._s_.SCREENSHARE,
       label: x.intl.string(x.t["gWbr/f"]),
       element: P.Z,
       elementProps: {
         screenshare: i
       }
     })), null != l && (h.push(y), h.push({
-      section: R._s_.CLIPS,
+      section: Z._s_.CLIPS,
       label: x.intl.string(x.t.MKrFKC),
       element: E.Z,
       elementProps: {
@@ -176,17 +176,17 @@ function B() {
       element: () => (0, n.jsx)(o.X6q, {
         className: F.channelName,
         variant: "heading-md/normal",
-        children: c === R.hes.RTC_CONNECTED ? "Connected" : "Disconnected"
+        children: c === Z.hes.RTC_CONNECTED ? "Connected" : "Disconnected"
       })
     }, ...d, ...m, ...p, ...h]
   }({
     defaultStats: r,
     streamStats: i,
-    videoStreams: (0, s.e7)([f.ZP], () => f.ZP.getVideoStreams()),
+    videoStreams: (0, s.e7)([g.ZP], () => g.ZP.getVideoStreams()),
     screenshare: m,
     clips: y,
     channel: l,
-    connectionState: (0, s.e7)([g.Z], () => g.Z.getState())
+    connectionState: (0, s.e7)([f.Z], () => f.Z.getState())
   });
   return a.useEffect(() => () => {
     c.xv()
@@ -195,6 +195,6 @@ function B() {
     sidebarTheme: D,
     section: b,
     onSetSection: c.zc,
-    sections: j
+    sections: C
   })
 }

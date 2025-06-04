@@ -36,7 +36,7 @@ var r, i = n(255367),
   D = n(388032),
   L = n(298746);
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -45,14 +45,14 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -89,7 +89,7 @@ let G = {
 class V extends(r = l.Component) {
   render() {
     let e = C.Z.getGuild(this.props.channel.guild_id);
-    return (0, i.jsx)(Z.$W, U(k({}, this.props), {
+    return (0, i.jsx)(Z.$W, U(M({}, this.props), {
       children: (0, i.jsx)("div", {
         className: L.miscContainer,
         children: null != e ? e.name : null
@@ -97,7 +97,7 @@ class V extends(r = l.Component) {
     }))
   }
 }
-M(V, "defaultProps", {
+k(V, "defaultProps", {
   unread: !1
 });
 let H = c.ZP.connectStores([j.ZP, v.Z], e => {
@@ -148,7 +148,7 @@ let H = c.ZP.connectStores([j.ZP, v.Z], e => {
 function K(e, t, n) {
   return (0, i.jsx)(u.ua7, {
     text: n,
-    children: e => (0, i.jsx)("span", U(k({}, e), {
+    children: e => (0, i.jsx)("span", U(M({}, e), {
       className: L.autocompleteQuerySymbol,
       children: t
     }))
@@ -285,26 +285,26 @@ class q extends l.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "scrollerRef", l.createRef()), M(this, "inputRef", l.createRef()), M(this, "_listId", (0, y.hQ)()), M(this, "state", {
+    super(...e), k(this, "scrollerRef", l.createRef()), k(this, "inputRef", l.createRef()), k(this, "_listId", (0, y.hQ)()), k(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: !0
-    }), M(this, "handleInputChange", () => {
+    }), k(this, "handleInputChange", () => {
       let {
         current: e
       } = this.inputRef;
       null != e && this.search(e.value)
-    }), M(this, "handleMouseMove", () => {
+    }), k(this, "handleMouseMove", () => {
       let {
         mouseFocusDisabled: e
       } = this.state;
       !1 !== e && this.setState({
         mouseFocusDisabled: !1
       })
-    }), M(this, "focusResult", e => {
+    }), k(this, "focusResult", e => {
       this.state.mouseFocusDisabled || (0, w.tF)(this.props.results.indexOf(e))
-    }), M(this, "selectResult", e => {
+    }), k(this, "selectResult", e => {
       (0, w.Se)(e, this.props.queryMode === f.h8.TEXT_CHANNEL)
-    }), M(this, "handleContextMenu", e => {
+    }), k(this, "handleContextMenu", e => {
       let t = this.props.results[this.props.selectedIndex];
       switch (t.type) {
         case f.h8.GUILD:
@@ -312,7 +312,7 @@ class q extends l.PureComponent {
             let {
               default: e
             } = await Promise.all([n.e("7654"), n.e("44156"), n.e("55616"), n.e("49286"), n.e("6850"), n.e("58227"), n.e("32652"), n.e("54408"), n.e("20087"), n.e("92754"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("40407")]).then(n.bind(n, 545135));
-            return n => (0, i.jsx)(e, U(k({}, n), {
+            return n => (0, i.jsx)(e, U(M({}, n), {
               guild: t.record,
               onSelect: w.Cp,
               hideSettings: !0
@@ -332,7 +332,7 @@ class q extends l.PureComponent {
                 let {
                   default: e
                 } = await Promise.all([n.e("79695"), n.e("18320"), n.e("44011")]).then(n.bind(n, 373651));
-                return t => (0, i.jsx)(e, U(k({}, t), {
+                return t => (0, i.jsx)(e, U(M({}, t), {
                   channel: r,
                   guild: l,
                   onSelect: w.Cp
@@ -344,7 +344,7 @@ class q extends l.PureComponent {
                 let {
                   default: e
                 } = await Promise.all([n.e("79695"), n.e("18320"), n.e("83331"), n.e("81070")]).then(n.bind(n, 213202));
-                return t => (0, i.jsx)(e, U(k({}, t), {
+                return t => (0, i.jsx)(e, U(M({}, t), {
                   channel: r,
                   guild: l,
                   onSelect: w.Cp
@@ -357,7 +357,7 @@ class q extends l.PureComponent {
                 let {
                   default: e
                 } = await n.e("40157").then(n.bind(n, 422200));
-                return t => (0, i.jsx)(e, U(k({}, t), {
+                return t => (0, i.jsx)(e, U(M({}, t), {
                   channel: r,
                   onSelect: w.Cp
                 }))
@@ -367,7 +367,7 @@ class q extends l.PureComponent {
                 let {
                   default: e
                 } = await n.e("99905").then(n.bind(n, 649400));
-                return t => (0, i.jsx)(e, U(k({}, t), {
+                return t => (0, i.jsx)(e, U(M({}, t), {
                   channel: r,
                   guild: l,
                   onSelect: w.Cp
@@ -378,7 +378,7 @@ class q extends l.PureComponent {
                 let {
                   default: e
                 } = await n.e("70623").then(n.bind(n, 99334));
-                return t => (0, i.jsx)(e, U(k({}, t), {
+                return t => (0, i.jsx)(e, U(M({}, t), {
                   channel: r
                 }))
               })
@@ -389,7 +389,7 @@ class q extends l.PureComponent {
             let {
               default: e
             } = await Promise.all([n.e("79695"), n.e("53912"), n.e("2016")]).then(n.bind(n, 354741));
-            return n => (0, i.jsx)(e, U(k({}, n), {
+            return n => (0, i.jsx)(e, U(M({}, n), {
               channel: t.record,
               selected: S.Z.getChannelId() === t.record.id,
               onSelect: w.Cp
@@ -400,13 +400,13 @@ class q extends l.PureComponent {
             let {
               default: e
             } = await Promise.all([n.e("79695"), n.e("69220"), n.e("86423")]).then(n.bind(n, 881351));
-            return n => (0, i.jsx)(e, U(k({}, n), {
+            return n => (0, i.jsx)(e, U(M({}, n), {
               user: t.record,
               onSelect: w.Cp
             }))
           })
       }
-    }), M(this, "handleKeyDown", e => {
+    }), k(this, "handleKeyDown", e => {
       let {
         mouseFocusDisabled: t,
         query: n
@@ -452,7 +452,7 @@ class q extends l.PureComponent {
           return
       }
       e.preventDefault(), (0, w.tF)(l)
-    }), M(this, "renderRow", e => {
+    }), k(this, "renderRow", e => {
       let {
         row: t
       } = e, n = this.props.results[t], {
@@ -589,5 +589,5 @@ function Q(e) {
       searchableTitles: [D.intl.string(D.t["3D5yo6"])],
       path: R.Z5c.SETTINGS("account")
     }), (0, E.gF)(e)
-  }, [o, r]), (0, i.jsx)(q, k({}, t, e))
+  }, [o, r]), (0, i.jsx)(q, M({}, t, e))
 }

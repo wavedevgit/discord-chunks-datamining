@@ -299,7 +299,7 @@ function K(e) {
 function z(e) {
   let {
     channelId: t,
-    messageRecord: n,
+    messageId: n,
     reason: r,
     noSendFailed: i,
     shouldSendNotification: a
@@ -307,7 +307,7 @@ function z(e) {
   null != n && !0 !== i && l.Z.dispatch({
     type: "MESSAGE_SEND_FAILED",
     channelId: t,
-    messageId: n.id,
+    messageId: n,
     reason: null != r ? r : null,
     shouldNotify: !1
   })

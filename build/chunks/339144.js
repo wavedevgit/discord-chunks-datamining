@@ -41,8 +41,8 @@ let P = i.memo(function(e) {
       runningGame: R,
       embeddedActivity: D,
       activity: L,
-      application: M,
-      analyticsContext: k
+      application: k,
+      analyticsContext: M
     } = e,
     {
       skipModalForGame: U,
@@ -59,14 +59,14 @@ let P = i.memo(function(e) {
     } = (0, _.A)({
       location: "Activity Actions"
     }),
-    H = E(M, L, D),
+    H = E(k, L, D),
     F = i.useCallback(() => {
       o()(null != L, "Received null activity"), (0, p.v)(B, p.d.INVITE), v.default.track(j.rMx.OPEN_MODAL, {
         type: "Send Join Invite",
         application_id: L.application_id,
-        location: k.location
+        location: M.location
       }), (0, a.h7)(L, !1)
-    }, [L, k, B]),
+    }, [L, M, B]),
     z = i.useCallback((e, t) => () => {
       (0, p.v)(B, p.d.LEAVE_ACTIVITY), d.Z.leaveActivity({
         location: t,

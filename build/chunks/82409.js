@@ -61,8 +61,8 @@ function Z(e) {
     roleFilter: g.Z.roleFilter,
     everyoneFilter: g.Z.everyoneFilter
   })), [_, j] = i.useState(E.V5.ALL), [I, Z] = i.useState(E.xM.UNREAD), {
-    messages: M,
-    loadState: k,
+    messages: k,
+    loadState: M,
     loadMore: U,
     hasLoadedEver: G
   } = (0, C.ZP)();
@@ -86,7 +86,7 @@ function Z(e) {
       let t = (0, s.uniqBy)([...null != (e = null == a ? void 0 : a.map(e => ({
         kind: E.fL.MENTION,
         message: e
-      }))) ? e : [], ...M.filter(e => e.author.id !== (null == B ? void 0 : B.id)).map(e => ({
+      }))) ? e : [], ...k.filter(e => e.author.id !== (null == B ? void 0 : B.id)).map(e => ({
         message: e,
         kind: E.fL.ALL_MESSAGES_CHANNEL
       }))], e => {
@@ -114,7 +114,7 @@ function Z(e) {
         return (null == B ? void 0 : B.id) != null && t.mentioned && t.mentions.includes(null == B ? void 0 : B.id)
       });
       throw Error("Unknown filter: ".concat(_))
-    }, [_, a, B, V, M, G]),
+    }, [_, a, B, V, k, G]),
     F = I === E.xM.READ && _ === E.V5.ALL,
     {
       notificationCenterVariant: z
@@ -171,12 +171,12 @@ function Z(e) {
       className: w.messageList,
       renderMessageGroup: R,
       messages: H,
-      loading: h || k === C.jd.Loading,
+      loading: h || M === C.jd.Loading,
       analyticsName: "Notifications Inbox",
       listName: "notifications-inbox",
       loadMore: function(e) {
         let t = null != a && a.length > 0 ? a[a.length - 1].id : null;
-        d && !h && T(null, t), k !== C.jd.Done && k !== C.jd.Loading && U(e)
+        d && !h && T(null, t), M !== C.jd.Done && M !== C.jd.Loading && U(e)
       },
       renderEmptyState: A,
       setInboxReadState: Z,

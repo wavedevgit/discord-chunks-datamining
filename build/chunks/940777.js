@@ -66,7 +66,7 @@ function D() {
       favoriteAdded: D,
       clearFavoriteAdded: L
     } = (0, E.up)(),
-    [M, k] = i.useState(!1),
+    [k, M] = i.useState(!1),
     {
       favoriteServerMuted: U,
       favoriteChannels: G
@@ -120,14 +120,14 @@ function D() {
   return (0, r.jsxs)(m.H, {
     children: [(0, r.jsx)(g.Z, {
       selected: H,
-      hovered: M,
+      hovered: k,
       unread: z && !U,
       className: T.pill
     }), (0, r.jsx)(w.Z, {
       onShow: q,
       children: (0, r.jsx)(I.S, {
         children: (0, r.jsx)(c.aRk, {
-          selected: K || H || M,
+          selected: K || H || k,
           upperBadge: W,
           lowerBadge: Y,
           children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
@@ -140,9 +140,9 @@ function D() {
               pathname: N.Z5c.CHANNEL(N.I_8, B),
               state: R
             },
-            selected: H || M,
-            onMouseEnter: () => k(!0),
-            onMouseLeave: () => k(!1),
+            selected: H || k,
+            onMouseEnter: () => M(!0),
+            onMouseLeave: () => M(!1),
             onMouseDown: function() {
               null != V && u.Z.preload(V.guild_id, V.id)
             },

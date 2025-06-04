@@ -1,7 +1,7 @@
 /** Chunk was on 61717 **/
 n.d(t, {
   PD: () => D,
-  ZP: () => k,
+  ZP: () => M,
   aR: () => L
 }), n(388685);
 var r = n(255367),
@@ -90,37 +90,37 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
   },
   D = 57,
   L = 57 + A,
-  M = {
+  k = {
     tension: 180,
     friction: 80
   },
-  k = e => {
+  M = e => {
     let {
       guild: t,
       withMargin: n
     } = e, l = (0, m.Q3)("GuildBoostingSidebarDisplay"), {
       analyticsLocations: u
-    } = (0, g.ZP)(p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), b = (0, _.Jh)(t.id), C = (0, y.Z)(t.id), A = (0, _.FZ)(b), D = null == A, L = null != A ? A : b, k = (0, c.e7)([S.Z], () => {
+    } = (0, g.ZP)(p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY), b = (0, _.Jh)(t.id), C = (0, y.Z)(t.id), A = (0, _.FZ)(b), D = null == A, L = null != A ? A : b, M = (0, c.e7)([S.Z], () => {
       var e;
       return null != (e = S.Z.getCountForGuild(t.id)) ? e : 0
     }), U = (0, c.e7)([O.Z], () => O.Z.can(P.Plq.MANAGE_GUILD, t));
     i.useEffect(() => {
-      k !== C && (0, j.v)(t.id, C)
-    }, [t.id, k, C]);
+      M !== C && (0, j.v)(t.id, C)
+    }, [t.id, M, C]);
     let G = D ? "100%" : "".concat(Math.min(100, C / P.oCV[L] * 100), "%"),
       {
         current: B
       } = i.useRef(G),
       [V] = (0, d.q_F)(() => ({
         from: {
-          width: k === C ? B : "0%"
+          width: M === C ? B : "0%"
         },
         to: {
           width: G
         },
-        config: M
-      }), "respect-motion-settings", [k, C, B, G]),
-      H = t.premiumTier < L && k >= P.oCV[L],
+        config: k
+      }), "respect-motion-settings", [M, C, B, G]),
+      H = t.premiumTier < L && M >= P.oCV[L],
       F = () => {
         (0, f.yw)(P.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
           location: {

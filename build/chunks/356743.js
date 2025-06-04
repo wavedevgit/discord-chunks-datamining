@@ -1,2 +1,2 @@
 /** Chunk was on 65266 **/
-i.exports = JSON.parse('{"xRdYAQ":"I temi personalizzati [Beta] non sono disponibili su dispositivi mobili.","2hAz8f":"Personalizza il tuo tema","23QUzs":"Novit\xe0! Temi personalizzati","TRCE4u":"Abbina il tuo umore a combinazioni di colori infinite. Provalo ora, solo con Nitro."}')
+i.exports = JSON.parse('{"8ZcEfn":"Colori","AsmU8/":"Personalizza il tuo tema","xRdYAQ":"I temi personalizzati [Beta] non sono disponibili su dispositivi mobili.","2hAz8f":"Personalizza il tuo tema","23QUzs":"Novit\xe0! Temi personalizzati","TRCE4u":"Abbina il tuo umore a combinazioni di colori infinite. Provalo ora, solo con Nitro."}')

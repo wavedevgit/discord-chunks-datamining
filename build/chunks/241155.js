@@ -7,58 +7,58 @@ var i, l, r, d = e(392711),
   _ = e(442837),
   s = e(570140),
   u = e(924301),
-  p = e(601964),
-  o = e(75666);
-let g = !1,
+  o = e(601964),
+  p = e(75666);
+let E = !1,
+  g = {},
   I = {},
   c = {},
-  T = {},
-  E = t => (T[t.guild_scheduled_event.id] = new p.ZP(t.guild_scheduled_event.guild), c[t.guild_scheduled_event.id] = t.guild_scheduled_event, {
+  T = t => (c[t.guild_scheduled_event.id] = new o.ZP(t.guild_scheduled_event.guild), I[t.guild_scheduled_event.id] = t.guild_scheduled_event, {
     channelId: t.directory_channel_id,
     scheduledEventId: t.entity_id,
-    type: o.C2.GUILD_SCHEDULED_EVENT,
+    type: p.C2.GUILD_SCHEDULED_EVENT,
     authorId: t.author_id,
     createdAt: t.created_at
   });
-class U extends(i = _.ZP.Store) {
+class O extends(i = _.ZP.Store) {
   isFetching() {
-    return g
+    return E
   }
   getEventDirectoryEntries(t) {
-    if (null != t) return I[t]
+    if (null != t) return g[t]
   }
   getCachedGuildByEventId(t) {
     var n;
-    return null != (n = T[t]) ? n : void 0
+    return null != (n = c[t]) ? n : void 0
   }
   getCachedGuildScheduledEventById(t) {
     var n;
-    return null != (n = c[t]) ? n : void 0
+    return null != (n = I[t]) ? n : void 0
   }
 }
-r = "EventDirectoryStore", (l = "displayName") in U ? Object.defineProperty(U, l, {
+r = "EventDirectoryStore", (l = "displayName") in O ? Object.defineProperty(O, l, {
   value: r,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : U[l] = r;
-let D = new U(s.Z, {
+}) : O[l] = r;
+let D = new O(s.Z, {
   EVENT_DIRECTORY_FETCH_START: function() {
-    g = !0
+    E = !0
   },
   EVENT_DIRECTORY_FETCH_SUCCESS: function(t) {
     let {
       channelId: n,
       entries: e
     } = t;
-    g = !1;
+    E = !1;
     let i = a().sortBy([...e], [function(t) {
         return (0, u.CQ)(t.guild_scheduled_event)
       }]),
-      l = a().map(i, E);
-    I[n] = l
+      l = a().map(i, T);
+    g[n] = l
   },
   EVENT_DIRECTORY_FETCH_FAILURE: function() {
-    g = !1
+    E = !1
   }
 })

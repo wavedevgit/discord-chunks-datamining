@@ -44,8 +44,8 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       sorting: R = !1,
       onDragStart: D,
       onDragEnd: L,
-      onExpandCollapse: M,
-      onContextMenu: k,
+      onExpandCollapse: k,
+      onContextMenu: M,
       renderChildNode: U,
       folderButtonSize: G,
       folderButtonContent: B,
@@ -76,8 +76,8 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }), et = i.useCallback(e => {
       Q(e)
     }, []), en = i.useCallback(e => {
-      ("ArrowRight" === e.key && !a || "ArrowLeft" === e.key && a) && M()
-    }, [M, a]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : x.intl.string(x.t.xV9hVl), ei = (0, c.Ie)("".concat(F)), el = "folder-items-".concat(F), eo = function(e) {
+      ("ArrowRight" === e.key && !a || "ArrowLeft" === e.key && a) && k()
+    }, [k, a]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : x.intl.string(x.t.xV9hVl), ei = (0, c.Ie)("".concat(F)), el = "folder-items-".concat(F), eo = function(e) {
       let t = (0, h.dQu)(h.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, h.dQu)(h.TVs.space.SPACE_XS);
@@ -127,8 +127,8 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             isMentionLowImportance: N,
             tooltipName: er,
             folderGroupId: el,
-            onClick: M,
-            onContextMenu: k,
+            onClick: k,
+            onContextMenu: M,
             onHoverChange: K,
             onKeyDown: en,
             treeItemProps: ei,
