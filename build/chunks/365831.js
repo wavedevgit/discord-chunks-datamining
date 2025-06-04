@@ -87,15 +87,15 @@ function O(e) {
       isLoopbackEnabled: t,
       toggleLoopback: n
     }
-  }(), S = N ? c.Iy5 : c.X_q, P = i.useCallback(() => (0, f.v6)(null), []), w = (0, c.dQu)(c.TVs.colors.BACKGROUND_SECONDARY).hex(), T = (0, c.dQu)(c.TVs.colors.WHITE).hex(), L = i.useRef(0), k = n !== a ? L.current + 1 : L.current;
+  }(), P = N ? c.Iy5 : c.X_q, S = i.useCallback(() => (0, f.v6)(null), []), w = (0, c.dQu)(c.TVs.colors.BACKGROUND_SECONDARY).hex(), T = (0, c.dQu)(c.TVs.colors.WHITE).hex(), L = i.useRef(0), k = n !== a ? L.current + 1 : L.current;
   i.useEffect(() => {
     L.current = k
   }, [k]);
   let Z = null != n,
     D = !Z,
     A = Z && null != a,
-    M = null == n && null != a,
-    F = (0, c.q_F)({
+    F = null == n && null != a,
+    M = (0, c.q_F)({
       opacity: +!!Z,
       height: 72 * !!Z,
       pointerEvents: Z ? "auto" : "none",
@@ -144,7 +144,7 @@ function O(e) {
         easing: j,
         duration: 200
       } : C,
-      delay: M ? 50 - 50 * e : 200 + 50 * e
+      delay: F ? 50 - 50 * e : 200 + 50 * e
     }), "respect-motion-settings", [n]),
     z = (0, c.Yzy)(null == O ? void 0 : O.iconURL, {
       key: k,
@@ -192,7 +192,7 @@ function O(e) {
         opacity: 0,
         translateX: 24 * (null != n),
         translateY: 16 * (null == n),
-        delay: M ? 100 : 50,
+        delay: F ? 100 : 50,
         config: e => "opacity" === e ? {
           easing: j,
           duration: 200
@@ -203,7 +203,7 @@ function O(e) {
   return (0, r.jsxs)(l.animated.div, {
     className: v.voiceFilterHero,
     "aria-hidden": D,
-    style: F,
+    style: M,
     children: [(0, r.jsx)("div", {
       className: o()([v.bgGradient, v.bgGradientHighlight])
     }), R(e => (0, r.jsx)(l.animated.div, {
@@ -266,7 +266,7 @@ function O(e) {
             tabIndex: Z ? 0 : -1
           }, e), {
             onClick: () => E(),
-            children: (0, r.jsx)(S, {
+            children: (0, r.jsx)(P, {
               size: "custom",
               width: 20,
               height: 20,
@@ -288,7 +288,7 @@ function O(e) {
             },
             tabIndex: Z ? 0 : -1
           }, e), {
-            onClick: P,
+            onClick: S,
             children: (0, r.jsx)(c.k$p, {
               size: "custom",
               width: 20,

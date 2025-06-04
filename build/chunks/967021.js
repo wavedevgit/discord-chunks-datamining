@@ -46,14 +46,15 @@ function i(e) {
 function a(e) {
   let {
     location: t,
-    autoTrackExposure: n
+    autoTrackExposure: n,
+    disable: i
   } = e, {
-    isDownloadIconEnabled: i
+    isDownloadIconEnabled: a
   } = r.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
-    disable: __OVERLAY__
+    disable: __OVERLAY__ || i
   });
-  return i
+  return a
 }

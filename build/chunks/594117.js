@@ -30,12 +30,12 @@ function m(e) {
   } = (0, h.A)({
     location: "RTCConnectionDisconnectButton"
   }), {
-    events: g,
-    Component: m
-  } = (0, i.K)(), b = d ? (0, r.jsx)(l.PBZ, {
+    events: m,
+    Component: b
+  } = (0, i.K)(), _ = d ? (0, r.jsx)(l.PBZ, {
     color: p ? l.TVs.colors.STATUS_DANGER : void 0,
     size: "refresh_sm"
-  }) : (0, r.jsx)(m, {
+  }) : (0, r.jsx)(b, {
     size: "refresh_sm"
   });
   return (0, r.jsx)(f.Z, (t = function(e) {
@@ -56,12 +56,12 @@ function m(e) {
     }
     return e
   }({
-    tooltipText: a,
+    tooltipText: d ? g.intl.string(g.t["Hi1/aW"]) : a,
     onClick: () => {
       (0, s.v)(u, s.d.DISCONNECT), c()
     }
-  }, g), n = n = {
-    icon: b
+  }, m), n = n = {
+    icon: _
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

@@ -27,8 +27,8 @@ var r = n(255367),
   O = n(934826),
   E = n(896083),
   N = n(939872),
-  S = n(265985),
-  P = n(293810),
+  P = n(265985),
+  S = n(293810),
   w = n(981631),
   T = n(388032);
 let L = (e, t, n, a) => {
@@ -37,10 +37,10 @@ let L = (e, t, n, a) => {
     Z = (0, c.e7)([g.Z], () => null != t ? g.Z.getRequest(t) : null),
     D = (null == Z ? void 0 : Z.applicationStatus) === p.wB.SUBMITTED,
     A = null == e ? void 0 : e.subscription_plans[0],
-    M = null == A ? void 0 : A.id,
-    F = (null == e ? void 0 : e.published) === !0,
+    F = null == A ? void 0 : A.id,
+    M = (null == e ? void 0 : e.published) === !0,
     R = null == A ? void 0 : A.sku_id,
-    B = (0, c.e7)([y.Z], () => null != M ? y.Z.get(M) : null),
+    B = (0, c.e7)([y.Z], () => null != F ? y.Z.get(F) : null),
     {
       activeSubscription: z,
       activeSubscriptionPlanFromStore: U
@@ -62,18 +62,18 @@ let L = (e, t, n, a) => {
     } = (0, m.ZP)(),
     Q = (null == z ? void 0 : z.paymentGateway) === w.gg$.APPLE_PARTNER,
     $ = !L && null != B && V && !D && !G && !Y && !Q;
-  D || L && !k ? l = T.intl.string(T.t.pQK5ho) : H === M ? l = T.intl.formatToPlainString(T.t.UlBRTk, {
+  D || L && !k ? l = T.intl.string(T.t.pQK5ho) : H === F ? l = T.intl.formatToPlainString(T.t.UlBRTk, {
     changeDate: null != z ? s()(z.currentPeriodEnd).format("MMM DD, YYYY") : ""
   }) : G ? l = T.intl.string(T.t.ePFYOT) : Y ? l = T.intl.string(T.t["0lPoT0"]) : Q && (l = T.intl.string(T.t.cEMaCg));
-  let ee = (0, _.Z)(P.iP);
+  let ee = (0, _.Z)(S.iP);
   i.useEffect(() => {
-    F && null != R && d.Z.wait(() => {
+    M && null != R && d.Z.wait(() => {
       (0, u.GZ)(R)
     })
-  }, [F, R]);
+  }, [M, R]);
   let et = i.useCallback(async () => {
       let n, i;
-      if (o()(null != e, "No subscription listing"), o()(null != A, "No subscription plan"), o()(F, "Cannot purchase this unpublished plan"), (null == K ? void 0 : K.active_trial) != null) {
+      if (o()(null != e, "No subscription listing"), o()(null != A, "No subscription plan"), o()(M, "Cannot purchase this unpublished plan"), (null == K ? void 0 : K.active_trial) != null) {
         let r = await X(t, e.id, K.active_trial.id);
         if ((null == r ? void 0 : r.is_eligible) === !0) {
           var l;
@@ -95,7 +95,7 @@ let L = (e, t, n, a) => {
         }) : void 0,
         analyticsLocations: J,
         analyticsLocation: a,
-        renderHeader: (n, i, a) => (0, r.jsx)(S.h, {
+        renderHeader: (n, i, a) => (0, r.jsx)(P.h, {
           onClose: i,
           listing: e,
           step: a,
@@ -108,14 +108,14 @@ let L = (e, t, n, a) => {
           listing: e,
           onClose: i,
           guildId: t
-        }) : (0, r.jsx)(S.x, {
+        }) : (0, r.jsx)(P.x, {
           listing: e,
           onClose: i,
           guildId: t
         }),
         reviewWarningMessage: i
       })
-    }, [F, e, A, z, W, t, J, a, X, K, ee]),
+    }, [M, e, A, z, W, t, J, a, X, K, ee]),
     en = i.useCallback(() => {
       (0, f.hk)(t)
     }, [t]);

@@ -31,8 +31,8 @@ function I(e) {
     voiceListRef: i,
     showSectionHeaders: a = !1,
     query: l
-  } = e, s = E(), c = (0, d.e7)([f.default], () => (0, p.I5)(f.default.getCurrentUser())), I = S(l, c), N = Math.ceil(I.length / t), {
-    isNativeModuleLoaded: P,
+  } = e, s = E(), c = (0, d.e7)([f.default], () => (0, p.I5)(f.default.getCurrentUser())), I = P(l, c), N = Math.ceil(I.length / t), {
+    isNativeModuleLoaded: S,
     isNativeModuleLoading: w,
     catalogLastFetchTime: T
   } = (0, d.cj)([h.Z], () => ({
@@ -67,7 +67,7 @@ function I(e) {
       variant: "text-sm/normal",
       color: "header-muted",
       children: y.intl.format(y.t["5afO9f"], {
-        onClick: P ? v.wV : v.r5
+        onClick: S ? v.wV : v.r5
       })
     })]
   }) : w || null == T ? (0, r.jsx)("div", {
@@ -139,7 +139,7 @@ let E = () => (0, d.e7)([h.Z], () => {
       return s()(n, r)
     })
   },
-  S = (e, t) => (0, d.Wu)([h.Z], () => {
+  P = (e, t) => (0, d.Wu)([h.Z], () => {
     let n = h.Z.getVoiceFilters(),
       r = h.Z.getSortedVoiceFilters();
     return N(t ? Object.values(n) : r, e)

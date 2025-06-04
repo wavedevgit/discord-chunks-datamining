@@ -85,7 +85,7 @@ function m(e) {
     E = () => {
       null == n || n(), o.default.disconnect()
     },
-    b = () => c.intl.string(c.t["6vrfgo"]),
+    b = () => g ? c.intl.string(c.t["Hi1/aW"]) : c.intl.string(c.t["6vrfgo"]),
     {
       Component: y,
       events: O
