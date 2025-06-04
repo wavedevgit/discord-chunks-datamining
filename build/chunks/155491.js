@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  x8: () => a
+  x8: () => o
 }), n(388685);
 var r = n(73800),
   i = n(223143);
-let o = "1157412779335090267";
+let a = "1157412779335090267";
 
-function a() {
+function o() {
   let [e, t] = r.useState(), {
     purchases: n,
-    hasPreviouslyFetched: a
+    hasPreviouslyFetched: o
   } = (0, i.c7)(), s = r.useRef(!1);
   return r.useEffect(() => {
-    a && !s.current && (t(null != n.get(o)), s.current = !0)
-  }, [n, a]), e
+    o && !s.current && (t(null != n.get(a)), s.current = !0)
+  }, [n, o]), e
 }

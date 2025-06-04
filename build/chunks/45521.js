@@ -6,13 +6,13 @@ n.d(t, {
 });
 var r = n(97519),
   i = n(731965);
-let o = Object.freeze({
+let a = Object.freeze({
     showPremiumUpsell: !1
   }),
-  a = (0, r.U)(e => o),
+  o = (0, r.U)(e => a),
   s = e => {
-    (0, i.j)(() => a.setState({
+    (0, i.j)(() => o.setState({
       showPremiumUpsell: e
     }))
   },
-  l = a
+  l = o

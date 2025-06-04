@@ -5,8 +5,8 @@ n.d(t, {
   h: () => c
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(906467);
+  a = n(570140),
+  o = n(906467);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,11 +43,11 @@ let c = 360,
   };
 
 function d(e) {
-  a.Z.isDeveloper && (u = l({}, u, e.settings))
+  o.Z.isDeveloper && (u = l({}, u, e.settings))
 }
 class f extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    u = null != e ? e : u, o.Z.actionLogger.persist = a.Z.isDeveloper
+    u = null != e ? e : u, a.Z.actionLogger.persist = o.Z.isDeveloper
   }
   getUserAgnosticState() {
     return u
@@ -60,10 +60,10 @@ class f extends(r = i.ZP.DeviceSettingsStore) {
     return null != (e = u.lastOpenTabId) ? e : null
   }
   get displayTools() {
-    return a.Z.isDeveloper && u.displayTools
+    return o.Z.isDeveloper && u.displayTools
   }
   get showDevWidget() {
-    return a.Z.isDeveloper && u.showDevWidget
+    return o.Z.isDeveloper && u.showDevWidget
   }
   get devWidgetPosition() {
     return u.devWidgetPosition
@@ -73,6 +73,6 @@ class f extends(r = i.ZP.DeviceSettingsStore) {
   }
 }
 s(f, "displayName", "DevToolsSettingsStore"), s(f, "persistKey", "DevToolsSettingsStore");
-let _ = new f(o.Z, {
+let _ = new f(a.Z, {
   DEV_TOOLS_SETTINGS_UPDATE: d
 })

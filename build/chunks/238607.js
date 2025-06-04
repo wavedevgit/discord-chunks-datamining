@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  o = n(456100),
-  a = n(841784),
+  a = n(456100),
+  o = n(841784),
   s = n(103450),
   l = n(652853),
   c = n(475413),
@@ -72,12 +72,12 @@ function g(e) {
     onClose: h
   }), {
     enabled: y
-  } = o.c.useExperiment({
+  } = a.c.useExperiment({
     location: "ActivityButton"
   }, {
     autoTrackExposure: !0
   }), O = y ? i.iWm : i.jje;
-  if (null == b && null != n && (0, a.Z)(n)) return (0, r.jsx)(c.tG, {
+  if (null == b && null != n && (0, o.Z)(n)) return (0, r.jsx)(c.tG, {
     icon: O,
     text: f.intl.string(f.t.RscU7O),
     size: g === d.lY.MODAL_V2 ? i.PhG.TINY : void 0,

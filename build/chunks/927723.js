@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  o = n(63063),
-  a = n(981631),
+  a = n(63063),
+  o = n(981631),
   s = n(388032),
   l = n(463959);
 
@@ -77,7 +77,7 @@ function p() {
       children: (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         children: s.intl.format(l.default.EZfHRk, {
-          helpURL: o.Z.getArticleURL(a.BhN.NSFW_AGE_GATING)
+          helpURL: a.Z.getArticleURL(o.BhN.NSFW_AGE_GATING)
         })
       })
     }))

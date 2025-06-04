@@ -5,8 +5,8 @@ n.d(t, {
 }), n(361932), n(187205), n(388685), n(539854);
 var r = n(392711),
   i = n.n(r),
-  o = n(45114),
-  a = n(45966),
+  a = n(45114),
+  o = n(45966),
   s = n(601070),
   l = n(984933),
   c = n(306680),
@@ -39,10 +39,10 @@ function p(e, t, n) {
     }), r.push({
       channelId: d.default.cast(e),
       readStateType: _.W.GUILD_ONBOARDING_QUESTION,
-      messageId: a.Z.ackIdForGuild(e)
+      messageId: o.Z.ackIdForGuild(e)
     })
   }), u.default.track(f.rMx.MARK_AS_READ, {
     source: t,
     type: "guild"
-  }), (0, o.y5)(r, n)
+  }), (0, a.y5)(r, n)
 }

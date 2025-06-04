@@ -5,9 +5,9 @@ n.r(t), n.d(t, {
 });
 var r = n(570140),
   i = n(626135),
-  o = n(981631);
+  a = n(981631);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -47,15 +47,15 @@ function c(e, t) {
 }
 let u = {
   setDesktopType(e) {
-    i.default.track(o.rMx.LOCAL_SETTINGS_UPDATED, {
-      notifications_enabled: e === o.qrD.ALL
+    i.default.track(a.rMx.LOCAL_SETTINGS_UPDATED, {
+      notifications_enabled: e === a.qrD.ALL
     }), r.Z.dispatch({
       type: "NOTIFICATIONS_SET_DESKTOP_TYPE",
       desktopType: e
     })
   },
   setTTSType(e) {
-    i.default.track(o.rMx.LOCAL_SETTINGS_UPDATED, {
+    i.default.track(a.rMx.LOCAL_SETTINGS_UPDATED, {
       tts_type: e.toString()
     }), r.Z.dispatch({
       type: "NOTIFICATIONS_SET_TTS_TYPE",
@@ -63,7 +63,7 @@ let u = {
     })
   },
   setDisabledSounds(e) {
-    i.default.track(o.rMx.LOCAL_SETTINGS_UPDATED, {
+    i.default.track(a.rMx.LOCAL_SETTINGS_UPDATED, {
       disabled_sounds: e
     }), r.Z.dispatch({
       type: "NOTIFICATIONS_SET_DISABLED_SOUNDS",
@@ -71,14 +71,14 @@ let u = {
     })
   },
   toggleDisableAllSounds(e) {
-    i.default.track(o.rMx.LOCAL_SETTINGS_UPDATED, {
+    i.default.track(a.rMx.LOCAL_SETTINGS_UPDATED, {
       all_sounds_enabled: !e
     }), r.Z.dispatch({
       type: "NOTIFICATIONS_TOGGLE_ALL_DISABLED"
     })
   },
   setDisableUnreadBadge(e) {
-    i.default.track(o.rMx.LOCAL_SETTINGS_UPDATED, {
+    i.default.track(a.rMx.LOCAL_SETTINGS_UPDATED, {
       unread_badge_enabled: !e
     }), r.Z.dispatch({
       type: "NOTIFICATIONS_SET_DISABLE_UNREAD_BADGE",
@@ -86,7 +86,7 @@ let u = {
     })
   },
   setTaskbarFlash(e) {
-    i.default.track(o.rMx.LOCAL_SETTINGS_UPDATED, {
+    i.default.track(a.rMx.LOCAL_SETTINGS_UPDATED, {
       show_taskbar_flash: e
     }), r.Z.dispatch({
       type: "NOTIFICATIONS_SET_TASKBAR_FLASH",
@@ -94,7 +94,7 @@ let u = {
     })
   },
   setNotifyMessagesInSelectedChannel(e) {
-    i.default.track(o.rMx.LOCAL_SETTINGS_UPDATED, {
+    i.default.track(a.rMx.LOCAL_SETTINGS_UPDATED, {
       notify_messages_in_selected_channel: e
     }), r.Z.dispatch({
       type: "NOTIFICATIONS_SET_NOTIFY_MESSAGES_IN_SELECTED_CHANNEL",
@@ -102,8 +102,8 @@ let u = {
     })
   },
   setPermissionsState(e, t) {
-    i.default.track(o.rMx.ENABLE_NOTIFICATIONS, {
-      enabled: e === o.$Ab.ENABLED,
+    i.default.track(a.rMx.ENABLE_NOTIFICATIONS, {
+      enabled: e === a.$Ab.ENABLED,
       source: t
     }), r.Z.dispatch({
       type: "NOTIFICATIONS_SET_PERMISSION_STATE",
@@ -111,17 +111,17 @@ let u = {
       source: t
     })
   },
-  showNotification(e, t, n, i, o) {
+  showNotification(e, t, n, i, a) {
     r.Z.dispatch({
       type: "NOTIFICATION_CREATE",
       icon: e,
       title: t,
       body: n,
       trackingProps: i,
-      options: c(s({}, o), {
+      options: c(s({}, a), {
         onClick() {
           var e;
-          null == (e = o.onClick) || e.call(o), r.Z.dispatch({
+          null == (e = a.onClick) || e.call(a), r.Z.dispatch({
             type: "NOTIFICATION_CLICK"
           })
         }

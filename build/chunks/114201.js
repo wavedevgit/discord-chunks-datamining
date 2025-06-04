@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(99815),
-  a = n(442837),
+  a = n(99815),
+  o = n(442837),
   s = n(481060),
   l = n(239091),
   c = n(314897),
@@ -113,7 +113,7 @@ function P(e) {
   let {
     guildId: t,
     leaderboardId: p
-  } = e, I = (0, a.e7)([c.default], () => c.default.getId()), T = (0, a.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.RIOT_GAMES)), N = (0, a.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.LEAGUE_OF_LEGENDS)), P = (0, g.Z)({
+  } = e, I = (0, o.e7)([c.default], () => c.default.getId()), T = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.RIOT_GAMES)), N = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.LEAGUE_OF_LEGENDS)), P = (0, g.Z)({
     guildId: t,
     leaderboardId: p
   }), {
@@ -133,11 +133,11 @@ function P(e) {
     userId: I,
     guildId: t,
     leaderboardId: p,
-    statisticId: o.E.LOL_TOTAL_KILLS
+    statisticId: a.E.LOL_TOTAL_KILLS
   }), {
     disabled: k,
     subtext: M
-  } = C(L, x), j = (0, a.e7)([f.Z, d.Z], () => {
+  } = C(L, x), j = (0, o.e7)([f.Z, d.Z], () => {
     let e = d.Z.getGuild(t);
     return f.Z.can(y.Plq.ADMINISTRATOR, e)
   }, [t]), U = i.useRef(null);

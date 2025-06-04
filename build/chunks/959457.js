@@ -4,8 +4,8 @@ let r;
 n.d(t, {
   Z: () => z
 });
-var i, o = n(512722),
-  a = n.n(o),
+var i, a = n(512722),
+  o = n.n(a),
   s = n(392711),
   l = n.n(s),
   c = n(442837),
@@ -39,7 +39,7 @@ let I = {},
   P = {};
 
 function R(e, t, n) {
-  return a()(null != r, "Creating RTCConnection without session."), new f.Z({
+  return o()(null != r, "Creating RTCConnection without session."), new f.Z({
     sessionId: r,
     streamKey: e,
     serverId: t,
@@ -70,8 +70,8 @@ function x(e) {
     guildId: n,
     channelId: r,
     appContext: i,
-    pid: o,
-    sourceId: a,
+    pid: a,
+    sourceId: o,
     nativePickerStyleUsed: s,
     goLiveModalDurationMs: c
   } = e, u = (0, _.V9)({
@@ -86,8 +86,8 @@ function x(e) {
         isOwner: n
       } = e;
       t.setActionContext(i), t.setNativePickerStyleUsed(s), n && t.trackStart()
-    }), A[u] = a, T[u] = o, null != o) {
-    let e = d.ZP.getGameForPID(o);
+    }), A[u] = o, T[u] = a, null != a) {
+    let e = d.ZP.getGameForPID(a);
     null != e && (S[u] = {
       name: e.name,
       id: e.id,
@@ -118,12 +118,12 @@ function M(e) {
     rtcServerId: n,
     region: r,
     viewerIds: i
-  } = e, o = P[t];
-  if (null == o && null != n) {
+  } = e, a = P[t];
+  if (null == a && null != n) {
     null == T[t] && (S[t] = null);
     let e = (0, _.my)(t);
     null == S[t] && null == A[t] && (S[t] = (0, p.L2)(e, b.Z));
-    let a = new f.A({
+    let o = new f.A({
       streamRegion: r,
       streamApplication: S[t],
       streamSourceType: W(A[t]),
@@ -131,11 +131,11 @@ function M(e) {
       numViewers: null != i ? i.length : 0,
       goLiveModalDurationMs: N[t]
     });
-    o = R(t, n, a), P[t] = o
+    a = R(t, n, o), P[t] = a
   }
   u.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
-    mediaEngineConnectionId: o.getMediaEngineConnectionId()
+    mediaEngineConnectionId: a.getMediaEngineConnectionId()
   })
 }
 

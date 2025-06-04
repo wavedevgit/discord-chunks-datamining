@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(394821),
   i = n(841784),
-  o = n(833664),
-  a = n(810568),
+  a = n(833664),
+  o = n(810568),
   s = n(168524),
   l = n(103479),
   c = n(553375),
@@ -45,7 +45,7 @@ function _(e) {
     onClose: m
   } = e, g = (0, s.Z)(f({
     location: t,
-    source: a.m1.UserProfile,
+    source: o.m1.UserProfile,
     trackEntryPointImpression: !0
   }, (0, c.nK)({
     user: n,
@@ -55,7 +55,7 @@ function _(e) {
     applicationId: null == p ? void 0 : p.id,
     onClose: m
   }), b = (0, i.Z)(_);
-  return b && null != p ? E : !b && (0, o.Z)(_) ? g : (0, r.Z)(_) && n.id !== d.id ? () => (0, l.s)({
+  return b && null != p ? E : !b && (0, a.Z)(_) ? g : (0, r.Z)(_) && n.id !== d.id ? () => (0, l.s)({
     activity: _,
     user: n,
     index: 0

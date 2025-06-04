@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(415506);
 var r = n(259443),
   i = n(668757),
-  o = n(511495),
-  a = n(626135),
+  a = n(511495),
+  o = n(626135),
   s = n(894276),
   l = n(981631);
 let c = new r.Yd("libdiscore"),
@@ -14,7 +14,7 @@ let c = new r.Yd("libdiscore"),
 async function d() {
   if (!u) {
     try {
-      await (0, o.e)();
+      await (0, a.e)();
       let e = (0, i.rs)(6, 7);
       c.info("The answer for life the universe and everything is:", e), f()
     } catch (e) {
@@ -28,7 +28,7 @@ function f() {
   let e = [];
   s.o.forEach(t => {
     t.cachedIsEnabled() && e.push(t.feature)
-  }), a.default.track(l.rMx.LIBDISCORE_LOADED, {
+  }), o.default.track(l.rMx.LIBDISCORE_LOADED, {
     success: !0,
     experimental_features: e
   })
@@ -43,7 +43,7 @@ function _(e) {
 function p(e) {
   c.error("Failed to execute smoke test:", e);
   let t = _(e);
-  a.default.track(l.rMx.LIBDISCORE_LOADED, {
+  o.default.track(l.rMx.LIBDISCORE_LOADED, {
     success: !1,
     error: t
   })

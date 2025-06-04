@@ -1,28 +1,29 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => A
+  O: () => N
 }), n(388685), n(314940);
 var r = n(255367),
-  i = n(512722),
-  o = n.n(i),
-  a = n(278074),
-  s = n(979554),
-  l = n(442837),
-  c = n(481060),
-  u = n(1585),
-  d = n(125988),
-  f = n(359135),
-  _ = n(516817),
-  p = n(731896),
-  h = n(594174),
-  m = n(597688),
-  g = n(579407),
-  E = n(755419),
-  b = n(643158),
-  y = n(223223);
+  i = n(73800),
+  a = n(512722),
+  o = n.n(a),
+  s = n(278074),
+  l = n(979554),
+  c = n(442837),
+  u = n(481060),
+  d = n(1585),
+  f = n(125988),
+  _ = n(359135),
+  p = n(516817),
+  h = n(731896),
+  m = n(594174),
+  g = n(597688),
+  E = n(579407),
+  b = n(755419),
+  y = n(643158),
+  O = n(223223);
 
-function O(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,94 +32,96 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
-let I = e => {
+let S = e => {
     let {
       avatarDecoration: t,
       fallbackLabel: n
-    } = e, i = (0, l.e7)([h.default], () => h.default.getCurrentUser()), {
-      avatarDecorationSrc: o,
-      eventHandlers: a
-    } = (0, d.Z)({
+    } = e, i = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+      avatarDecorationSrc: a,
+      eventHandlers: o
+    } = (0, f.Z)({
       user: i,
       onlyAnimateOnHover: !0,
       avatarDecorationOverride: t,
-      size: (0, u.y9)(c.EFr.SIZE_40)
+      size: (0, d.y9)(u.EFr.SIZE_40)
     });
-    return null == t ? n : (0, r.jsx)("img", v({
-      src: o,
+    return null == t ? n : (0, r.jsx)("img", I({
+      src: a,
       alt: t.label,
-      className: b.avatarDecoration
-    }, a))
+      className: y.avatarDecoration
+    }, o))
   },
-  S = e => {
+  T = e => {
     var t;
     let {
       profileEffect: n,
       fallbackLabel: i
-    } = e, o = (0, p.V)(null == n ? void 0 : n.id);
-    if (null == o) return i;
+    } = e, a = (0, h.V)(null == n ? void 0 : n.id);
+    if (null == a) return i;
     let {
-      accessibilityLabel: a,
+      accessibilityLabel: o,
       thumbnailPreviewSrc: s,
       title: l
-    } = null != (t = null == o ? void 0 : o.config) ? t : {};
+    } = null != (t = null == a ? void 0 : a.config) ? t : {};
     return (0, r.jsxs)("div", {
-      className: b.profileEffectContainer,
+      className: y.profileEffectContainer,
       children: [(0, r.jsx)("img", {
-        src: y,
-        alt: a,
-        className: b.profileEffectBackground
+        src: O,
+        alt: o,
+        className: y.profileEffectBackground
       }), (0, r.jsx)("img", {
-        className: b.profileEffect,
+        className: y.profileEffect,
         src: s,
         alt: l
       })]
     })
   },
-  T = e => {
+  A = e => {
     let {
       nameplate: t,
       fallbackLabel: n
-    } = e;
+    } = e, [a, o] = i.useState(!1), s = i.useCallback(() => o(!0), []), l = i.useCallback(() => o(!1), []);
     return null == t ? n : (0, r.jsx)("div", {
-      className: b.nameplateContainer,
-      children: (0, r.jsx)(_.Z, {
-        nameplate: (0, g.EU)(t),
-        selected: !0,
-        placement: f.i.MINI_PREVIEW
+      className: y.nameplateContainer,
+      onMouseEnter: s,
+      onMouseLeave: l,
+      children: (0, r.jsx)(p.Z, {
+        nameplate: (0, E.EU)(t),
+        hovered: a,
+        placement: _.i.MINI_PREVIEW
       })
     })
   },
-  A = e => {
+  N = e => {
     var t;
     let {
       product: n,
       sku: i,
-      fallbackLabel: c
-    } = e, u = null == i ? void 0 : i.id, d = (0, l.e7)([m.Z], () => m.Z.getProduct(null == i ? void 0 : i.id)), f = null != n ? n : d, [_] = null != (t = null == f ? void 0 : f.items) ? t : [];
-    return void 0 !== u && u in E.K ? E.K[u].render({
+      fallbackLabel: a
+    } = e, u = null == i ? void 0 : i.id, d = (0, c.e7)([g.Z], () => g.Z.getProduct(null == i ? void 0 : i.id)), f = null != n ? n : d, [_] = null != (t = null == f ? void 0 : f.items) ? t : [];
+    return void 0 !== u && u in b.K ? b.K[u].render({
       animationState: "on_hover",
-      className: b.externalProductAsset
-    }) : (0, a.EQ)(null == _ ? void 0 : _.type).with(s.Z.AVATAR_DECORATION, () => (o()(_.type === s.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(I, {
+      className: y.externalProductAsset
+    }) : (0, s.EQ)(null == _ ? void 0 : _.type).with(l.Z.AVATAR_DECORATION, () => (o()(_.type === l.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(S, {
       avatarDecoration: _,
-      fallbackLabel: c
-    }))).with(s.Z.PROFILE_EFFECT, () => (o()(_.type === s.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(S, {
+      fallbackLabel: a
+    }))).with(l.Z.PROFILE_EFFECT, () => (o()(_.type === l.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(T, {
       profileEffect: _,
-      fallbackLabel: c
-    }))).with(s.Z.NAMEPLATE, () => (o()(_.type === s.Z.NAMEPLATE, "ts-match checked the type"), (0, r.jsx)(T, {
+      fallbackLabel: a
+    }))).with(l.Z.NAMEPLATE, () => (o()(_.type === l.Z.NAMEPLATE, "ts-match checked the type"), (0, r.jsx)(A, {
       nameplate: _,
-      fallbackLabel: c
-    }))).otherwise(() => c)
+      fallbackLabel: a
+    }))).otherwise(() => a)
   }

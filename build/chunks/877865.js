@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  o = n(688619),
-  a = n.n(o),
+  a = n(688619),
+  o = n.n(a),
   s = n(120356),
   l = n.n(s),
   c = n(866442),
@@ -67,8 +67,8 @@ function S(e) {
   let {
     colors: t,
     selectedIndex: n,
-    onColorSelect: o
-  } = e, [a, s] = i.useMemo(() => {
+    onColorSelect: a
+  } = e, [o, s] = i.useMemo(() => {
     let e = t.map((e, n) => I(t, n)),
       n = t.map((t, n) => "".concat(t, " ").concat(e[n], "%")).join(", ");
     return [e, {
@@ -79,7 +79,7 @@ function S(e) {
     className: m.gradientBar,
     style: s,
     children: t.map((e, t) => {
-      let i = a[t],
+      let i = o[t],
         s = t === n;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(f.P3F, {
@@ -88,7 +88,7 @@ function S(e) {
             left: "".concat(i, "%"),
             backgroundColor: e
           },
-          onClick: () => o(t),
+          onClick: () => a(t),
           children: (0, r.jsx)("div", {
             className: m.colorCircleInner
           })
@@ -105,7 +105,7 @@ function S(e) {
 
 function T(e) {
   if (!(0, c.FX)(e)) return e;
-  let t = a()(e);
+  let t = o()(e);
   return t.set("hsl.h", (t.get("hsl.h") + 15) % 360).hex()
 }
 
@@ -113,19 +113,19 @@ function A(e) {
   let {
     value: t,
     onChange: n,
-    className: o,
-    colors: a,
+    className: a,
+    colors: o,
     setColors: s
   } = e, g = (0, _.Z)(), [b, I] = i.useState(0), [A, N] = i.useState(t);
   i.useEffect(() => {
-    if (a.length > 0 && b < a.length) {
-      let e = a[b];
+    if (o.length > 0 && b < o.length) {
+      let e = o[b];
       (0, c.FX)(e) && (N(e), n(e))
     }
-  }, [b, a, n]);
+  }, [b, o, n]);
   let C = e => {
-      if (N(e), (0, c.FX)(e) && (n(e), a.length > 0)) {
-        let t = [...a];
+      if (N(e), (0, c.FX)(e) && (n(e), o.length > 0)) {
+        let t = [...o];
         t[b] = e, s(t)
       }
     },
@@ -133,8 +133,8 @@ function A(e) {
       N(e.hex)
     }, []),
     R = e => {
-      if (n(e.hex), a.length > 0) {
-        let t = [...a];
+      if (n(e.hex), o.length > 0) {
+        let t = [...o];
         t[b] = e.hex, s(t)
       }
     },
@@ -146,21 +146,21 @@ function A(e) {
         C(e)
       } catch (e) {}
     }, D = () => {
-      if (a.length === v) return;
-      let e = a.length > 0 ? a[a.length - 1] : A,
-        t = a.length > 0 ? T(e) : e,
-        n = [...a, t];
+      if (o.length === v) return;
+      let e = o.length > 0 ? o[o.length - 1] : A,
+        t = o.length > 0 ? T(e) : e,
+        n = [...o, t];
       s(n), I(n.length - 1)
     }, L = e => {
-      if (a.length > 1) {
-        let t = a.filter((t, n) => n !== e);
+      if (o.length > 1) {
+        let t = o.filter((t, n) => n !== e);
         s(t), b >= t.length ? I(t.length - 1) : b > e && I(b - 1)
       }
     }, x = e => {
       I(e)
-    }, k = a.length > 1;
+    }, k = o.length > 1;
   return (0, r.jsxs)("div", {
-    className: l()(m.container, o),
+    className: l()(m.container, a),
     children: [(0, r.jsxs)("div", {
       className: m.headerContainer,
       children: [(0, r.jsx)(f.Text, {
@@ -168,11 +168,11 @@ function A(e) {
         children: h.intl.string(p.default["8ZcEfn"])
       }), (0, r.jsx)(f.ua7, {
         text: h.intl.string(p.default["61KGaW"]),
-        shouldShow: a.length === v,
+        shouldShow: o.length === v,
         children: e => (0, r.jsx)(f.zxk, y(E({}, e), {
           size: f.zxk.Sizes.ICON,
           look: f.zxk.Looks.BLANK,
-          disabled: a.length === v,
+          disabled: o.length === v,
           onClick: D,
           children: (0, r.jsx)(f.Text, {
             variant: "text-sm/medium",
@@ -182,7 +182,7 @@ function A(e) {
         }))
       })]
     }), k && (0, r.jsx)(S, {
-      colors: a,
+      colors: o,
       selectedIndex: b,
       onColorSelect: x
     }), (0, r.jsx)(i.Suspense, {

@@ -1,6 +1,6 @@
 /**
   Module ID: 86258
-  Original File Name: d64c6b62b6152ff6
+  Original File Name: af8c5ae77cbce4db
 **/
 .partialOwnStateContainer__0d2da {
     align-items: center;
@@ -527,6 +527,10 @@
     width: 100%
 }
 
+.nameplatePlaceholderAvatar_c3d04b {
+    background-color: var(--background-modifier-accent)
+}
+
 .placeholderItem_c3d04b {
     align-items: center;
     display: flex;
@@ -746,4 +750,4 @@
     background-clip: padding-box
 }
 
-/*# sourceMappingURL=d64c6b62b6152ff6.css.map*/
+/*# sourceMappingURL=af8c5ae77cbce4db.css.map*/

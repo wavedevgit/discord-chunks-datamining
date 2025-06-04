@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F: () => a
+  F: () => o
 }), n(415506);
 var r = n(153102),
   i = n(52165);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,7 +14,7 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class a {
+class o {
   attach(e) {
     let {
       stores: t,
@@ -33,7 +33,7 @@ class a {
     e.forEach(e => e.removeReactChangeListener(this.handleStoreChange)), void 0 !== t && (0, i.iB)(t)
   }
   constructor(e, t, n) {
-    o(this, "stores", void 0), o(this, "libDiscoreContextId", void 0), o(this, "changeCallback", void 0), o(this, "storeVersionHandled", void 0), o(this, "handleStoreChange", () => {
+    a(this, "stores", void 0), a(this, "libDiscoreContextId", void 0), a(this, "changeCallback", void 0), a(this, "storeVersionHandled", void 0), a(this, "handleStoreChange", () => {
       let e = r.Z.getChangeSentinel();
       this.storeVersionHandled !== e && (this.changeCallback(), this.storeVersionHandled = e)
     }), this.stores = e, this.libDiscoreContextId = n, this.changeCallback = t

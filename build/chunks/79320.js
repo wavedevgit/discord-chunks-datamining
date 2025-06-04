@@ -2,25 +2,25 @@
 "use strict";
 n.d(t, {
   Vb: () => l,
-  Yk: () => a,
+  Yk: () => o,
   zP: () => s
 });
 var r = n(97519),
   i = n(731965);
-let o = (0, r.U)(e => ({
+let a = (0, r.U)(e => ({
   inDndMode: !1
 }));
 
-function a(e) {
-  (0, i.j)(() => o.setState({
+function o(e) {
+  (0, i.j)(() => a.setState({
     inDndMode: e
   }))
 }
 
 function s() {
-  return o(e => e.inDndMode)
+  return a(e => e.inDndMode)
 }
 
 function l() {
-  return o.getState().inDndMode
+  return a.getState().inDndMode
 }

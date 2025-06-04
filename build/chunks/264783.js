@@ -5,9 +5,9 @@ n.d(t, {
 }), n(388685);
 var r = n(73800),
   i = n(524437),
-  o = n(695346);
+  a = n(695346);
 
-function a() {
+function o() {
   let [e, t] = r.useState("cozy");
   return r.useEffect(() => {
     let e = window.matchMedia("(min-width: 1024px) and (min-height: 820px)"),
@@ -21,8 +21,8 @@ function a() {
 }
 
 function s() {
-  let e = o.YC.useSetting(),
-    t = a();
+  let e = a.YC.useSetting(),
+    t = o();
   switch (e) {
     case i.Pi.RESPONSIVE:
       return t;

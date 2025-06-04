@@ -29,7 +29,7 @@ let f = e => {
       children: [(0, n.jsx)(c.Z, {
         nameplate: t,
         user: f,
-        showWumpus: !0,
+        showPlaceholderUser: !0,
         isHighlighted: v
       }), (0, n.jsx)("div", {
         className: l()(b.nameplateItemOverlay, {

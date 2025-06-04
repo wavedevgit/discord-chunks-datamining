@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: c58e1b9bca712593
+  Original File Name: 354977a0dc47722a
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -618,6 +618,10 @@
     display: flex;
     height: 42px;
     width: 100%
+}
+
+.nameplatePlaceholderAvatar_c3d04b {
+    background-color: var(--background-modifier-accent)
 }
 
 .placeholderItem_c3d04b {
@@ -1745,4 +1749,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=c58e1b9bca712593.css.map*/
+/*# sourceMappingURL=354977a0dc47722a.css.map*/

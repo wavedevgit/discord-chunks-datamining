@@ -1,22 +1,22 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(442837),
   i = n(311687),
-  o = n(873128);
+  a = n(873128);
 
-function a(e) {
+function o(e) {
   let {
     userId: t,
     guildId: n,
-    leaderboardId: a,
+    leaderboardId: o,
     intervalOffset: s = 0,
     statisticId: l
-  } = e, c = (0, r.e7)([i.Z], () => i.Z.getLastUpdateRequested(a)), u = null != c ? new Date(1e3 * c) : void 0, d = (0, o.Z)({
+  } = e, c = (0, r.e7)([i.Z], () => i.Z.getLastUpdateRequested(o)), u = null != c ? new Date(1e3 * c) : void 0, d = (0, a.Z)({
     guildId: n,
-    leaderboardId: a,
+    leaderboardId: o,
     intervalOffset: s
   }), f = null == d ? void 0 : d.users.find(e => e.user_id === t), _ = null == f ? void 0 : f.statistics[l];
   return {

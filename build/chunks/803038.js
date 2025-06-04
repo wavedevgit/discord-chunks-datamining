@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  M: () => o
+  M: () => a
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
   id: "2025-05_client_theme_color_picker",
   kind: "user",
   label: "Client Theme Color Picker",

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(592125),
   i = n(594174),
-  o = n(5192),
-  a = n(51144),
+  a = n(5192),
+  o = n(51144),
   s = n(484710),
   l = n(388032),
   c = n(463959);
@@ -15,7 +15,7 @@ function u(e, t, n) {
   var u;
   let d = i.default.getUser(t),
     f = r.Z.getChannel(n),
-    _ = null != (u = o.ZP.getName(null == f ? void 0 : f.guild_id, null == f ? void 0 : f.id, d)) ? u : a.ZP.getGlobalName(d);
+    _ = null != (u = a.ZP.getName(null == f ? void 0 : f.guild_id, null == f ? void 0 : f.id, d)) ? u : o.ZP.getGlobalName(d);
   switch (e) {
     case s.w.IGNORE_SUCCESS:
       return l.intl.formatToPlainString(l.t["+joqrK"], {

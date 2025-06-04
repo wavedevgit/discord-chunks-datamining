@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(354459),
   i = n(65154);
-let o = Object.freeze({
+let a = Object.freeze({
   [r.fO.STREAM]: i.Yn.STREAM,
   [r.fO.HIDDEN_STREAM]: i.Yn.STREAM,
   [r.fO.USER]: i.Yn.DEFAULT,
   [r.fO.ACTIVITY]: i.Yn.DEFAULT
 });
 
-function a(e) {
-  return o[e]
+function o(e) {
+  return a[e]
 }

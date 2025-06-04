@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(391997),
   i = n(644977),
-  o = n(446315),
-  a = n(312413),
+  a = n(446315),
+  o = n(312413),
   s = new WeakMap,
   l = function(e, t) {
     for (var n = 0; n < e.length; n += 1)
@@ -16,17 +16,17 @@ var r = n(391997),
   c = function() {
     function e() {}
     return e.connect = function(e, t) {
-      var n = new o.r(e, t);
+      var n = new a.r(e, t);
       s.set(e, n)
     }, e.observe = function(e, t, n) {
-      var o = s.get(e),
-        c = 0 === o.observationTargets.length;
-      0 > l(o.observationTargets, t) && (c && a.C.push(o), o.observationTargets.push(new i.Q(t, n && n.box)), (0, r.t)(1), r.p.schedule())
+      var a = s.get(e),
+        c = 0 === a.observationTargets.length;
+      0 > l(a.observationTargets, t) && (c && o.C.push(a), a.observationTargets.push(new i.Q(t, n && n.box)), (0, r.t)(1), r.p.schedule())
     }, e.unobserve = function(e, t) {
       var n = s.get(e),
         i = l(n.observationTargets, t),
-        o = 1 === n.observationTargets.length;
-      i >= 0 && (o && a.C.splice(a.C.indexOf(n), 1), n.observationTargets.splice(i, 1), (0, r.t)(-1))
+        a = 1 === n.observationTargets.length;
+      i >= 0 && (a && o.C.splice(o.C.indexOf(n), 1), n.observationTargets.splice(i, 1), (0, r.t)(-1))
     }, e.disconnect = function(e) {
       var t = this,
         n = s.get(e);

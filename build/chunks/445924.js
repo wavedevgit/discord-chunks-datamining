@@ -1,33 +1,33 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  o = n(388032);
-let a = e => {
+  a = n(388032);
+let o = e => {
   let {
     onChangeAvatar: t,
     onChangeAvatarDecoration: n,
-    onClose: a,
+    onClose: o,
     className: s
   } = e;
   return (0, r.jsxs)(i.v2r, {
     className: s,
-    onClose: a,
+    onClose: o,
     onSelect: void 0,
     navId: "user-settings-change-avatar",
-    "aria-label": o.intl.string(o.t.ldIeAQ),
+    "aria-label": a.intl.string(a.t.ldIeAQ),
     children: [(0, r.jsx)(i.sNh, {
       id: "change-avatar",
       action: t,
-      label: o.intl.string(o.t["4OynCA"])
+      label: a.intl.string(a.t["4OynCA"])
     }), (0, r.jsx)(i.sNh, {
       id: "change-avatar-decoration",
       action: n,
-      label: o.intl.string(o.t.BVcYCw)
+      label: a.intl.string(a.t.BVcYCw)
     })]
   })
 }

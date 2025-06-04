@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A: () => a,
-  u: () => o
+  A: () => o,
+  u: () => a
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2025-05_change_disconnect_icon_experiment",
   label: "Change Disconnect Icon",
@@ -32,8 +32,8 @@ let o = (0, r.B)({
   }]
 });
 
-function a(e) {
-  return o.useExperiment(e, {
+function o(e) {
+  return a.useExperiment(e, {
     autoTrackExposure: !1
   })
 }

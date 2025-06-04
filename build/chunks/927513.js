@@ -5,8 +5,8 @@ n.d(t, {
 }), n(953529);
 var r = n(255367),
   i = n(120356),
-  o = n.n(i),
-  a = n(793030),
+  a = n.n(i),
+  o = n(793030),
   s = n(958783),
   l = n(483444),
   c = n(586502),
@@ -24,7 +24,7 @@ let _ = e => {
     assetComponent: (0, r.jsx)("img", {
       src: _,
       alt: "",
-      className: o()(f.badgeImage, {
+      className: a()(f.badgeImage, {
         [f.ambient]: i
       }),
       height: i ? 80 : void 0
@@ -33,10 +33,10 @@ let _ = e => {
       width: 56,
       className: f.tooltipWordmark
     }),
-    children: [(0, r.jsx)(a.X6, {
+    children: [(0, r.jsx)(o.X6, {
       variant: "heading-xl/extrabold",
       children: d.intl.string(n.nameUnformatted)
-    }), (0, r.jsx)(a.xv, {
+    }), (0, r.jsx)(o.xv, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: f.tooltipDescription,

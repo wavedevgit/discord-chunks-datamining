@@ -20,7 +20,7 @@ n.d(t, {
 var r = n(70956),
   i = n(388032);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,14 +29,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -82,7 +82,7 @@ let I = [1, 2, 3, 5, 6],
   S = ["en-GB"];
 
 function T() {
-  return (0, i.getLanguages)().filter(e => !S.includes(e.code)).map(e => "en-US" === e.code ? l(a({}, e), {
+  return (0, i.getLanguages)().filter(e => !S.includes(e.code)).map(e => "en-US" === e.code ? l(o({}, e), {
     name: i.intl.string(i.t.LQLMGB)
   }) : e)
 }

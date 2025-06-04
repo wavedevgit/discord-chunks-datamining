@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(512722),
   i = n.n(r),
-  o = n(493683),
-  a = n(475179),
+  a = n(493683),
+  o = n(475179),
   s = n(727429),
   l = n(592125),
   c = n(703656),
@@ -39,9 +39,9 @@ function _(e, t) {
   let n = l.Z.getChannel(e);
   if (null == n) return;
   let r = (0, s.e)(n);
-  o.Z.preload(n.guild_id, n.id), (0, c.uL)(u.Z5c.CHANNEL(r, n.id), f({
+  a.Z.preload(n.guild_id, n.id), (0, c.uL)(u.Z5c.CHANNEL(r, n.id), f({
     openChannel: !0
-  }, t)), (null == t ? void 0 : t.openTextInVoiceIfVoiceChannel) && n.isGuildVocal() && a.Z.updateChatOpen(n.id, !0)
+  }, t)), (null == t ? void 0 : t.openTextInVoiceIfVoiceChannel) && n.isGuildVocal() && o.Z.updateChatOpen(n.id, !0)
 }
 
 function p(e, t) {
