@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 135b8807cd070931
+  Original File Name: 25cb9bc3b158d14b
 **/
 .scroller__95bea {
     display: flex;
@@ -1246,9 +1246,17 @@
 }
 
 .custom-user-profile-theme .profile__9c3be {
-    --profile-gradient-start: color-mix(in oklab,var(--profile-gradient-overlay-color) 60%,var(--profile-gradient-primary-color));
-    --profile-gradient-end: color-mix(in oklab,var(--profile-gradient-overlay-color) 60%,var(--profile-gradient-secondary-color));
-    background: linear-gradient(var(--profile-gradient-start),var(--profile-gradient-start) var(--custom-user-profile-banner-height),var(--profile-gradient-end))
+    --profile-gradient-start: color-mix(in oklab,var(--profile-gradient-overlay-color) 100%,var(--profile-gradient-primary-color));
+    --profile-gradient-end: color-mix(in oklab,var(--profile-gradient-overlay-color) 100%,var(--profile-gradient-secondary-color));
+    background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-primary-color) var(--custom-user-profile-banner-height),var(--profile-gradient-secondary-color))
+}
+
+.custom-user-profile-theme .profile__9c3be:before {
+    background: linear-gradient(var(--profile-gradient-start),var(--profile-gradient-start) var(--custom-user-profile-banner-height),var(--profile-gradient-end));
+    border-radius: inherit;
+    content: "";
+    inset: 0;
+    position: absolute
 }
 
 .profileHeader__9c3be {
@@ -1262,7 +1270,8 @@
     flex: 1;
     flex-direction: column;
     gap: 24px;
-    overflow: hidden
+    overflow: hidden;
+    position: relative
 }
 
 .profileSection__9c3be {
@@ -1346,4 +1355,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=135b8807cd070931.css.map*/
+/*# sourceMappingURL=25cb9bc3b158d14b.css.map*/
