@@ -21,6 +21,6 @@ function u(e) {
     color: l.zxk.Colors.BRAND,
     onClick: d,
     disabled: !u,
-    children: n ? c.intl.string(c.t["+2/AhI"]) : c.intl.string(c.t.WiSJBA)
+    children: n ? c.intl.string(c.t.KPGVWl) : c.intl.string(c.t["/nicWl"])
   })
 }

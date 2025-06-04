@@ -57,7 +57,7 @@ let S = Object.keys(m.zxk.Colors).filter(e => "CUSTOM" !== e),
   v = Object.keys(m.zxk.Looks).filter(e => "BLANK" !== e),
   T = Object.keys(m.zxk.Sizes).filter(e => "NONE" !== e);
 
-function I() {
+function N() {
   return (0, i.jsxs)("div", {
     className: C.root,
     children: [(0, i.jsx)(m.Qjf, {
@@ -69,11 +69,11 @@ function I() {
       text: "Testing",
       iconPosition: "end",
       icon: m.XHJ
-    }), (0, i.jsx)(k, {}), (0, i.jsx)(F, {}), (0, i.jsx)(H, {}), (0, i.jsx)(V, {}), (0, i.jsx)(U, {}), (0, i.jsx)(M, {}), (0, i.jsx)(B, {}), (0, i.jsx)(W, {}), (0, i.jsx)(N, {}), (0, i.jsx)(K, {})]
+    }), (0, i.jsx)(k, {}), (0, i.jsx)(F, {}), (0, i.jsx)(H, {}), (0, i.jsx)(V, {}), (0, i.jsx)(U, {}), (0, i.jsx)(M, {}), (0, i.jsx)(B, {}), (0, i.jsx)(W, {}), (0, i.jsx)(I, {}), (0, i.jsx)(K, {})]
   })
 }
 
-function N() {
+function I() {
   let e = Object.keys(m.DM8);
   return (0, i.jsxs)("div", {
     className: C.section,
@@ -214,7 +214,7 @@ function w() {
       settingsSection: x.oAB.DESIGN_SYSTEMS,
       tabs: [{
         title: "Components",
-        component: () => (0, i.jsx)(I, {}),
+        component: () => (0, i.jsx)(N, {}),
         setting: _.s6.DESIGN_SYSTEMS_COMPONENTS
       }, {
         title: "Colors",

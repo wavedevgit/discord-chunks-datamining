@@ -30,8 +30,8 @@ var i = n(73800),
   S = n(667172),
   v = n(237292),
   T = n(314897),
-  I = n(906467),
-  N = n(283595),
+  N = n(906467),
+  I = n(283595),
   y = n(131951),
   A = n(699516),
   P = n(663389),
@@ -51,7 +51,7 @@ function F(e) {
   let {
     shouldMergeGameSettings: t,
     showRedesignedThirdPartyAccessSettings: n
-  } = e, i = I.Z.isDeveloper, r = [{
+  } = e, i = N.Z.isDeveloper, r = [{
     header: G.intl.string(G.t.cduTBA),
     settings: n ? [U.s6.ACCOUNT, U.s6.GAMES, U.s6.PROFILE_CUSTOMIZATION, U.s6.CONTENT_SOCIAL, U.s6.DATA_PRIVACY, U.s6.PRIVACY_FAMILY_CENTER, U.s6.THIRD_PARTY_ACCESS, U.s6.SESSIONS, U.s6.CLIPS] : [U.s6.ACCOUNT, U.s6.GAMES, U.s6.PROFILE_CUSTOMIZATION, U.s6.CONTENT_SOCIAL, U.s6.DATA_PRIVACY, U.s6.PRIVACY_FAMILY_CENTER, U.s6.AUTHORIZED_APPS, U.s6.SESSIONS, U.s6.CONNECTIONS, U.s6.CLIPS]
   }, {
@@ -85,7 +85,7 @@ function F(e) {
 
 function H() {
   var e, t, n, l;
-  let I = (0, C.YO)().length,
+  let N = (0, C.YO)().length,
     Z = (0, E.U)(),
     M = (0, r.e7)([P.Z], () => P.Z.getProps().impressionSource),
     U = (0, _.gU)(),
@@ -118,7 +118,7 @@ function H() {
     location: "UserSettingsInventory"
   }, {
     autoTrackExposure: !0
-  }), ee = (0, r.e7)([N.Z], () => N.Z.hasLibraryApplication()), et = (0, r.e7)([T.default], () => T.default.hasTOTPEnabled()), en = w.Sb.useSetting(), ei = (0, f.Z)(), {
+  }), ee = (0, r.e7)([I.Z], () => I.Z.hasLibraryApplication()), et = (0, r.e7)([T.default], () => T.default.hasTOTPEnabled()), en = w.Sb.useSetting(), ei = (0, f.Z)(), {
     hypeSquadRemoved: er
   } = p.Z.useExperiment({
     location: "settings"
@@ -145,7 +145,7 @@ function H() {
     isEnabled: ep
   } = (0, o.D)("SettingRendererUtils"), eh = (0, g.pn)("useGenerateUserSettingsSections");
   return i.useMemo(() => (0, k.i)({
-    unseenGiftCount: I,
+    unseenGiftCount: N,
     showPrepaidPaymentPastDueWarning: Z,
     impressionSource: M,
     numOfPendingFamilyRequests: U,
@@ -175,7 +175,7 @@ function H() {
     isInputProfileCustom: eg,
     isActivitySharingExperimentEnabled: ep,
     isGoreContentFilteringEnabled: eh
-  }), [en, H, ea, eo, ee, el, et, er, M, es, J, X, q, W, G, K, ei, U, Q, Y, $, Z, I, ec, ed, eu, em, eg, ep, eh])
+  }), [en, H, ea, eo, ee, el, et, er, M, es, J, X, q, W, G, K, ei, U, Q, Y, $, Z, N, ec, ed, eu, em, eg, ep, eh])
 }
 
 function z(e) {

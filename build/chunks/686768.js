@@ -21,34 +21,34 @@ let m = function(t) {
     entryPoint: n,
     onClose: m
   } = t, {
-    loading: T,
-    initiateAgeVerification: L
+    loading: L,
+    initiateAgeVerification: T
   } = (0, d.WD)(m), S = i.useMemo(() => (0, s.Z)(), []);
   i.useEffect(() => {
     (0, _.lA)(S, _.d_.RETRY, n)
   }, [S, n]);
-  let A = i.useMemo(() => [{
-    title: I.intl.string(I.t.lx3Owc),
-    description: I.intl.string(I.t["N5+M3d"]),
-    buttonText: I.intl.string(I.t.JrEDy8),
+  let C = i.useMemo(() => [{
+    title: I.intl.string(I.t.FYkioq),
+    description: I.intl.string(I.t.xMfbR0),
+    buttonText: I.intl.string(I.t.RtOE1t),
     buttonColor: r.zxk.Colors.BRAND,
     buttonIcon: r.Gr1,
     buttonIconColor: r.TVs.colors.WHITE,
-    buttonLoading: T,
+    buttonLoading: L,
     onPress: () => {
-      L(), (0, _.x3)(S, _.d_.RETRY, _.sU.GET_STARTED)
+      T(), (0, _.x3)(S, _.d_.RETRY, _.sU.GET_STARTED)
     }
   }, {
-    title: I.intl.string(I.t.NpmOHx),
-    description: I.intl.string(I.t.FevsfH),
-    buttonText: I.intl.string(I.t.NpmOHx),
+    title: I.intl.string(I.t["LZO+HR"]),
+    description: I.intl.string(I.t.N2mHaG),
+    buttonText: I.intl.string(I.t["LZO+HR"]),
     buttonColor: r.zxk.Colors.PRIMARY,
     buttonIcon: r.Gr1,
     buttonIconColor: r.TVs.colors.TEXT_PRIMARY,
     onPress: () => {
       a.Z.openUrl(u.sQ.APPEALS_LINK), (0, _.x3)(S, _.d_.RETRY, _.sU.MANUAL_REVIEW_REQUEST)
     }
-  }], [L, S, T]);
+  }], [T, S, L]);
   return (0, o.jsx)(r.Y0X, {
     transitionState: e,
     className: N.root,
@@ -58,16 +58,16 @@ let m = function(t) {
         className: N.headersContainer,
         children: [(0, o.jsx)(r.X6q, {
           variant: "heading-xl/bold",
-          children: I.intl.string(I.t.Bx15q6)
+          children: I.intl.string(I.t["5l3R/v"])
         }), (0, o.jsx)(r.X6q, {
           variant: "heading-md/medium",
           color: "text-normal",
-          children: I.intl.string(I.t["bG+/SE"])
+          children: I.intl.string(I.t.O7SO0N)
         }), (0, o.jsx)(r.olH, {
           className: N.modalClose,
           onClick: m
         })]
-      }), A.map((t, e) => {
+      }), C.map((t, e) => {
         let {
           title: n,
           description: i,
@@ -92,9 +92,9 @@ let m = function(t) {
         variant: "text-xs/medium",
         color: "text-muted",
         className: N.learnMore,
-        children: I.intl.format(I.t.RV75dn, {
+        children: I.intl.format(I.t["L+FgkZ"], {
           handleOnHelpUrlHook: () => {
-            a.Z.openUrl(c.Z.getArticleURL(E.BhN.TIGGER_PAWTECT_UK_AND_AUS_ONLY_LEARN_MORE)), (0, _.x3)(S, _.d_.RETRY, _.sU.LEARN_MORE)
+            a.Z.openUrl(c.Z.getArticleURL(E.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, _.x3)(S, _.d_.RETRY, _.sU.LEARN_MORE)
           }
         })
       })]

@@ -48,7 +48,7 @@ function u(e, t, n) {
     case s.w.TIGGER_PAWTECT_ERROR:
       return l.intl.string(l.t.c6kn6O);
     case s.w.TIGGER_PAWTECT_VERIFIED:
-      return l.intl.string(l.t.EnTLDg);
+      return l.intl.string(l.t.XwKo1t);
     case s.w.GENERIC_ERROR:
       return l.intl.string(l.t.zBpoc3);
     case s.w.REPORT_TO_MOD_SUCCESS:

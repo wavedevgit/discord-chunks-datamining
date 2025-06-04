@@ -131,12 +131,13 @@ function R(e) {
     questContentRowIndex: a,
     impressionId: s,
     trackGuildAndChannelMetadata: l = !1
-  } = e, c = (0, _.qe)(n);
+  } = e, c = (0, _.qe)(n), u = d.Z.getQuest(t);
   C({
     questId: t,
     event: g.rMx.QUEST_CONTENT_CLICKED,
     properties: O(b({}, c, N(n, o, a)), {
       cta_name: r,
+      quest_status: null != u ? T(u) : null,
       impression_id: s,
       google_advertising_id: d.Z.googleAdvertisingId,
       click_id: (0, i.Z)()
@@ -197,12 +198,13 @@ function L() {
       questContentPosition: a,
       questContentRowIndex: s,
       trackGuildAndChannelMetadata: l = !1
-    } = t;
+    } = t, c = d.Z.getQuest(n);
     e({
       questId: n,
       event: g.rMx.QUEST_CONTENT_CLICKED,
       properties: O(b({}, (0, _.qe)(r), N(r, a, s)), {
         cta_name: o,
+        quest_status: null != c ? T(c) : null,
         click_id: (0, i.Z)(),
         google_advertising_id: d.Z.googleAdvertisingId
       }),

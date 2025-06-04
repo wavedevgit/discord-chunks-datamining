@@ -16,7 +16,7 @@ function a(e) {
     submitting: s
   } = e;
   return (0, r.jsx)(i.ua7, {
-    text: t,
+    text: null != t ? t : void 0,
     children: e => {
       var t, c;
       return (0, r.jsx)(i.zxk, (t = function(e) {

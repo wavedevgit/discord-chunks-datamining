@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(374649),
   v = n(981631),
   T = n(388032),
-  I = n(628654),
-  N = n(893354);
+  N = n(628654),
+  I = n(893354);
 
 function y(e) {
   let {
@@ -119,7 +119,7 @@ function y(e) {
     return (0, i.jsx)(d.eee, {
       href: e,
       useDefaultUnderlineStyles: !1,
-      className: I.externalLink,
+      className: N.externalLink,
       children: (0, i.jsx)(d.zxk, {
         fullWidth: !0,
         look: d.zxk.Looks.FILLED,
@@ -161,11 +161,11 @@ function y(e) {
       })(), null != t.paymentSourceId ? (0, i.jsx)(p.b, {
         currencies: n,
         children: (0, i.jsxs)("div", {
-          className: l()(I.currency, N.flex, N.alignCenter),
+          className: l()(N.currency, I.flex, I.alignCenter),
           children: [(0, i.jsx)("div", {
             children: T.intl.string(T.t["0YjaXV"])
           }), (0, i.jsx)(p.Z, {
-            className: I.currencyDropdown,
+            className: N.currencyDropdown,
             selectedCurrency: V,
             currencies: n,
             onChange: e => {

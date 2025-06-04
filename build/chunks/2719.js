@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(921801),
   v = n(485341),
   T = n(687158),
-  I = n(518950),
-  N = n(184325),
+  N = n(518950),
+  I = n(184325),
   y = n(867176),
   A = n(25990),
   P = n(594174),
@@ -426,7 +426,7 @@ function J() {
 function $(e) {
   let {
     className: t
-  } = e, n = (0, b.l6)(), s = (0, b.Jm)(), a = !n || s, o = r.useMemo(() => n ? s ? V.intl.string(V.t.dJOmCw) : V.intl.string(V.t["Y0A/1N"]) : V.intl.string(V.t.Qdv3DA), [n, s]);
+  } = e, n = (0, b.l6)(), s = (0, b.Jm)(), a = !n || s, o = r.useMemo(() => n ? s ? V.intl.string(V.t.sK0dmJ) : V.intl.string(V.t.XxRj7e) : V.intl.string(V.t.UX0OdX), [n, s]);
   return (0, i.jsxs)("div", {
     className: l()(G.field, t),
     children: [(0, i.jsx)("div", {
@@ -434,7 +434,7 @@ function $(e) {
       children: (0, i.jsxs)("div", {
         children: [(0, i.jsx)(u.vwX, {
           className: G.fieldTitle,
-          children: V.intl.string(V.t["2UzQiY"])
+          children: V.intl.string(V.t["/52UY2"])
         }), (0, i.jsx)("div", {
           children: (0, i.jsx)(u.Text, {
             tag: "span",
@@ -448,9 +448,9 @@ function $(e) {
       className: G.fieldButton,
       size: u.zxk.Sizes.SMALL,
       color: u.zxk.Colors.PRIMARY,
-      "aria-label": s ? V.intl.string(V.t["+2/AhI"]) : V.intl.string(V.t.wRpUfX),
+      "aria-label": s ? V.intl.string(V.t.KPGVWl) : V.intl.string(V.t.yNGjyM),
       onClick: () => h.Z.showAgeVerificationGetStartedModal(f.cU.ACCOUNT_AGE_GROUP),
-      children: s ? V.intl.string(V.t["+2/AhI"]) : V.intl.string(V.t.wRpUfX)
+      children: s ? V.intl.string(V.t.KPGVWl) : V.intl.string(V.t.yNGjyM)
     })]
   })
 }
@@ -469,7 +469,7 @@ function ee() {
     {
       avatarSrc: d,
       avatarDecorationSrc: m
-    } = (0, I.Z)({
+    } = (0, N.Z)({
       user: t,
       size: u.EFr.SIZE_80
     });
@@ -503,7 +503,7 @@ function ee() {
           }), (0, i.jsx)(Q, {
             user: t
           })]
-        }), (0, i.jsx)(N.Z, {
+        }), (0, i.jsx)(I.Z, {
           badges: r,
           className: G.badgeList,
           badgeClassName: G.badge

@@ -64,7 +64,7 @@ let j = {
       skipStore: s = !1
     } = e, {
       upsertConfig: S
-    } = (0, p.n6)(), v = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [T, I] = r.useState(!0), N = r.useRef(null), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState([]), [w, k] = r.useState(j), L = r.useRef([]), [B, M] = r.useState(t.name), U = B.toLowerCase().replace(/\s+/g, "_"), V = r.useMemo(() => ({
+    } = (0, p.n6)(), v = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [T, N] = r.useState(!0), I = r.useRef(null), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState([]), [w, k] = r.useState(j), L = r.useRef([]), [B, M] = r.useState(t.name), U = B.toLowerCase().replace(/\s+/g, "_"), V = r.useMemo(() => ({
       type: a.Z.PROFILE_EFFECT,
       id: O,
       skuId: O,
@@ -217,7 +217,7 @@ let j = {
             children: [(0, i.jsxs)(c.zxk, {
               color: c.Ttl.GREEN,
               children: ["Upload Animated Layer", (0, i.jsx)(u.Z, {
-                ref: N,
+                ref: I,
                 onChange: e => {
                   let t = G(e);
                   null != t && (0, h.i0)(t, async e => {
@@ -236,21 +236,21 @@ let j = {
             children: [(0, i.jsxs)(c.zxk, {
               color: c.Ttl.GREEN,
               children: ["Upload thumbnail.png", (0, i.jsx)(u.Z, {
-                ref: N,
+                ref: I,
                 onChange: e => F(h.cq.THUMBNAIL, e),
                 multiple: !1
               })]
             }), (0, i.jsxs)(c.zxk, {
               color: c.Ttl.GREEN,
               children: ["Upload static.png", (0, i.jsx)(u.Z, {
-                ref: N,
+                ref: I,
                 onChange: e => F(h.cq.STATIC, e),
                 multiple: !1
               })]
             }), (0, i.jsxs)(c.zxk, {
               color: c.Ttl.GREEN,
               children: ["Upload reduced_motion.png", (0, i.jsx)(u.Z, {
-                ref: N,
+                ref: I,
                 onChange: e => F(h.cq.REDUCED_MOTION, e),
                 multiple: !1
               })]
@@ -262,7 +262,7 @@ let j = {
               children: (0, i.jsx)(c.zxk, {
                 color: c.Ttl.BRAND,
                 onClick: () => {
-                  I(!1), setTimeout(() => I(!0), 100)
+                  N(!1), setTimeout(() => N(!0), 100)
                 },
                 children: "Replay Animation"
               })
@@ -494,7 +494,7 @@ let j = {
                   color: "always-white",
                   children: "Add Alternative"
                 }), (0, i.jsx)(u.Z, {
-                  ref: N,
+                  ref: I,
                   onChange: e => H(e, t),
                   multiple: !1
                 })]

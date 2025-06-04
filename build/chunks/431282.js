@@ -87,7 +87,7 @@ function h(e) {
       v(e === t)
     })
   }, [t, j, T]);
-  let I = e => (0, i.jsxs)(d.kF, g(m({}, e, C, _), {
+  let N = e => (0, i.jsxs)(d.kF, g(m({}, e, C, _), {
     ref: O,
     role: "button",
     look: o.zxk.Looks.BLANK,
@@ -122,8 +122,8 @@ function h(e) {
     renderPopout: b,
     shouldShow: S,
     onRequestClose: () => v(!0),
-    children: I
-  }) : I()
+    children: N
+  }) : N()
 }
 
 function f(e) {

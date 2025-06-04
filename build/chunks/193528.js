@@ -60,7 +60,7 @@ function x(e) {
     colorPickerMiddle: j,
     colorPickerFooter: O,
     showEyeDropper: S
-  } = e, v = r.useRef(null), T = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), I = c.Z.colors.BACKGROUND_ACCENT.css, N = (0, g.DP)(s), y = (0, o.Rf)(s), A = y === T ? I : y, P = (0, m.Lq)(N ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(O), [Z, w] = r.useState((0, a.Z)());
+  } = e, v = r.useRef(null), T = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), N = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, g.DP)(s), y = (0, o.Rf)(s), A = y === T ? N : y, P = (0, m.Lq)(I ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(O), [Z, w] = r.useState((0, a.Z)());
   return r.useEffect(() => {
     (R !== j || D !== O) && w((0, a.Z)())
   }, [O, j, D, R]), (0, i.jsx)(d.yRy, {

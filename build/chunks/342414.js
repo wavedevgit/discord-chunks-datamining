@@ -27,8 +27,8 @@ var r = n(120356),
   S = n(639119),
   v = n(533525),
   T = n(784238),
-  I = n(767714),
-  N = n(382791),
+  N = n(767714),
+  I = n(382791),
   y = n(184176),
   A = n(386733),
   P = n(474936),
@@ -61,7 +61,7 @@ let M = () => {
         })]
       }), (0, i.jsx)("div", {
         className: Z.giftingContainerHighVisButtonContainer,
-        children: (0, i.jsx)(I.Z, {
+        children: (0, i.jsx)(N.Z, {
           color: a.Ttl.WHITE,
           textOptions: {
             textOverride: D.intl.string(D.t.GyAbk5),
@@ -80,7 +80,7 @@ let M = () => {
     } = e;
     return t === C.XS.Control ? (0, i.jsx)("div", {
       className: Z.premiumSubscribeButton,
-      children: (0, i.jsx)(I.Z, {
+      children: (0, i.jsx)(N.Z, {
         showGradient: !0,
         color: a.Ttl.BRAND,
         textOptions: {
@@ -213,13 +213,13 @@ let M = () => {
       location: n,
       giftingExperimentCohort: h.cohort
     }));
-    let I = null;
-    if (O === P.a$.NONE || l) I = (0, i.jsx)(N.Cy, {
+    let N = null;
+    if (O === P.a$.NONE || l) N = (0, i.jsx)(I.Cy, {
       className: s()(Z.trialPill, {
         [Z.hidden]: !o
       }),
       text: p,
-      colorOptions: N.VE.PREMIUM_TIER_2_WHITE_FILL
+      colorOptions: I.VE.PREMIUM_TIER_2_WHITE_FILL
     });
     else {
       o = !0;
@@ -233,7 +233,7 @@ let M = () => {
         t = D.intl.format(D.t["yR+oDA"], {
           helpCenterLink: b.Z.getArticleURL(R.BhN.FRACTIONAL_PREMIUM_ABOUT)
         });
-      I = (0, i.jsx)(g.Z, {
+      N = (0, i.jsx)(g.Z, {
         text: t,
         "aria-label": t.toString(),
         tooltipClassName: Z.tooltip,
@@ -261,12 +261,12 @@ let M = () => {
             className: Z.pillContainer,
             children: (0, i.jsx)("div", {
               className: Z.flexCentered,
-              children: (0, i.jsx)(N.mn, {
+              children: (0, i.jsx)(I.mn, {
                 className: s()(Z.trialPill, {
                   [Z.hidden]: !o
                 }),
                 text: T,
-                colorOptions: N.VE.PREMIUM_TIER_2_WHITE_FILL,
+                colorOptions: I.VE.PREMIUM_TIER_2_WHITE_FILL,
                 icon: e,
                 gap: !1
               })
@@ -289,7 +289,7 @@ let M = () => {
       children: (0, i.jsx)(H.Provider, {
         value: {
           headingText: j,
-          headingTop: I
+          headingTop: N
         },
         children: E
       })
