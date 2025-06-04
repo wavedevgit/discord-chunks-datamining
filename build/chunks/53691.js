@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(386230),
+  o = n.n(i),
+  a = n(386230),
   s = n(481060),
   l = n(436774),
   c = n(767714),
@@ -58,9 +58,9 @@ function p(e) {
       friction: 14
     }
   });
-  return (0, r.jsxs)(o.animated.div, {
+  return (0, r.jsxs)(a.animated.div, {
     style: _({}, v),
-    className: a()(d.upsellContainer, {
+    className: o()(d.upsellContainer, {
       [d.upsellContainerShadow]: E,
       [d.upsellContainerFloating]: "floating" === b,
       [d.upsellContainerInline]: "inline" === b

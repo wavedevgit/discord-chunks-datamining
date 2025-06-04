@@ -5,8 +5,8 @@ n.d(t, {
 }), n(467055), n(388685), n(314940);
 var r = n(278074),
   i = n(264181),
-  a = n(178185),
-  o = n(272280),
+  o = n(178185),
+  a = n(272280),
   s = n(751485),
   l = n(806185);
 
@@ -27,9 +27,9 @@ class u {
         type: i.Z.COACHTIP
       }, e => l.Z.fromServer(e)).with({
         type: i.Z.BADGE
-      }, e => a.E.fromServer(e)).with({
+      }, e => o.E.fromServer(e)).with({
         type: i.Z.BANNER
-      }, e => o.I.fromServer(e)).with({
+      }, e => a.I.fromServer(e)).with({
         type: i.Z.COACHMARK
       }, e => s.F.fromServer(e)).otherwise(() => void 0)]
     })))

@@ -1,0 +1,45 @@
+/**
+  Module ID: 11298
+  Original File Name: b466144afd744018
+**/
+.content__7ca6b {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.header__7ca6b {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px
+}
+
+.radioBar__7ca6b {
+    padding-bottom: 8px!important;
+    padding-left: 4px!important;
+    padding-top: 8px!important
+}
+
+.footer__7ca6b {
+    gap: 12px
+}
+
+.freeformTextArea__7ca6b {
+    margin-top: 4px
+}
+
+.freeformTextAreaDisabled__7ca6b {
+    opacity: .5
+}
+
+.question__7ca6b {
+    display: flex;
+    flex-direction: column
+}
+
+.questionTitle__7ca6b {
+    margin-bottom: 8px
+}
+
+/*# sourceMappingURL=b466144afd744018.css.map*/

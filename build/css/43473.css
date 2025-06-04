@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 25cb9bc3b158d14b
+  Original File Name: cb8fae3c52bb8920
 **/
 .scroller__95bea {
     display: flex;
@@ -1134,42 +1134,31 @@
 }
 
 .container__37bfc {
+    display: flex;
     flex-direction: column;
+    gap: 24px;
     height: calc(100% - 24px);
     overflow: hidden;
     padding-top: 20px;
     width: 100%
 }
 
-.container__37bfc,.tabBar__37bfc {
-    display: flex;
-    gap: 24px
+.visual-refresh .tabBarItem__37bfc {
+    --selected-tab-item-color: var(--text-brand);
+    color: var(--text-secondary)
 }
 
-.tabBar__37bfc {
-    border: none
+.visual-refresh .tabBarItem__37bfc:hover {
+    color: var(--text-primary)
 }
 
-.tabBar__37bfc .tabBarItem__37bfc {
-    padding-bottom: 11px
+.custom-user-profile-theme .tabBarItem__37bfc {
+    --selected-tab-item-color: var(--text-primary);
+    color: var(--text-secondary)
 }
 
-.visual-refresh .tabBar__37bfc .tabBarItem__37bfc {
-    margin-left: 0
-}
-
-.visual-refresh .tabBar__37bfc .tabBarItem__37bfc:after {
-    background: var(--brand-500);
-    border-radius: 1px;
-    height: 3px;
-    left: 50%;
-    margin-left: -20px;
-    margin-top: -3px;
-    width: 40px
-}
-
-.custom-user-profile-theme .tabBar__37bfc .tabBarItem__37bfc:after {
-    background: var(--header-primary)
+.custom-user-profile-theme .tabBarItem__37bfc:hover {
+    color: var(--text-primary)
 }
 
 .tabBarPanel__37bfc {
@@ -1355,4 +1344,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=25cb9bc3b158d14b.css.map*/
+/*# sourceMappingURL=cb8fae3c52bb8920.css.map*/

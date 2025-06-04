@@ -4,7 +4,7 @@ e.exports = function(e) {
     n = "[eE][-+]?" + t,
     r = t + "(\\." + t + ")?(" + n + ")?",
     i = "\\w+",
-    a = "\\b(" + (t + "#" + i + "(\\." + i + ")?#(" + n) + ")?|" + r + ")";
+    o = "\\b(" + (t + "#" + i + "(\\." + i + ")?#(" + n) + ")?|" + r + ")";
   return {
     name: "VHDL",
     case_insensitive: !0,
@@ -16,7 +16,7 @@ e.exports = function(e) {
     illegal: /\{/,
     contains: [e.C_BLOCK_COMMENT_MODE, e.COMMENT("--", "$"), e.QUOTE_STRING_MODE, {
       className: "number",
-      begin: a,
+      begin: o,
       relevance: 0
     }, {
       className: "string",

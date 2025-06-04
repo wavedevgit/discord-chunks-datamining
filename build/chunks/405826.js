@@ -5,8 +5,8 @@ n.d(t, {
 }), n(704826), n(35282), n(388685);
 var r = n(623279),
   i = n(392711),
-  a = n.n(i),
-  o = n(374470),
+  o = n.n(i),
+  a = n(374470),
   s = n(579806),
   l = n(710845),
   c = n(706454),
@@ -33,9 +33,9 @@ function g(e) {
   if (null == n || null == n.langtag.language || null == n.langtag.region) return void h.error("".concat(e, " is not a valid locale."));
   let {
     language: i,
-    region: a
+    region: o
   } = n.langtag;
-  return "".concat(i.language.toLowerCase(), "-").concat(a.toUpperCase())
+  return "".concat(i.language.toLowerCase(), "-").concat(o.toUpperCase())
 }
 class E {
   get enabled() {
@@ -85,8 +85,8 @@ class E {
       let i = "".concat(n, "-").concat(this.regionPreference);
       if (-1 !== e.indexOf(i)) this.setLocale(i);
       else {
-        var a;
-        let e = null != (a = r[n]) ? a : f.Z[t];
+        var o;
+        let e = null != (o = r[n]) ? o : f.Z[t];
         null != e && this.setLocale(e)
       }
     }), m.on("spellcheck-result", (e, t) => {
@@ -94,7 +94,7 @@ class E {
     })
   }
 }
-let b = a().debounce((e, t) => {
+let b = o().debounce((e, t) => {
   let n = O(t);
   null != n && e.detectLanguage(n)
 }, p);
@@ -104,7 +104,7 @@ function y(e) {
 }
 
 function O(e) {
-  return null == e ? null : (0, o.k)(e, HTMLInputElement) || (0, o.k)(e, HTMLTextAreaElement) ? e.value : (0, o.k)(e) && e.hasAttribute("contenteditable") ? e.textContent : void 0
+  return null == e ? null : (0, a.k)(e, HTMLInputElement) || (0, a.k)(e, HTMLTextAreaElement) ? e.value : (0, a.k)(e) && e.hasAttribute("contenteditable") ? e.textContent : void 0
 }
 async function v() {
   var e;

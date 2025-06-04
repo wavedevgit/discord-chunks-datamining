@@ -4,16 +4,16 @@ e.exports = function(e) {
     n = "(_?f(32|64))?",
     r = "[a-zA-Z_]\\w*[!?=]?|[-+~]@|<<|>>|[=!]~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~|]|//|//=|&[-+*]=?|&\\*\\*|\\[\\][=?]?",
     i = "[A-Za-z_]\\w*(::\\w+)*(\\?|!)?",
-    a = {
+    o = {
       $pattern: "[a-zA-Z_]\\w*[!?=]?",
       keyword: "abstract alias annotation as as? asm begin break case class def do else elsif end ensure enum extend for fun if include instance_sizeof is_a? lib macro module next nil? of out pointerof private protected rescue responds_to? return require select self sizeof struct super then type typeof union uninitialized unless until verbatim when while with yield __DIR__ __END_LINE__ __FILE__ __LINE__",
       literal: "false nil true"
     },
-    o = {
+    a = {
       className: "subst",
       begin: /#\{/,
       end: /\}/,
-      keywords: a
+      keywords: o
     },
     s = {
       className: "variable",
@@ -28,7 +28,7 @@ e.exports = function(e) {
         begin: "\\{%",
         end: "%\\}"
       }],
-      keywords: a
+      keywords: o
     };
 
   function c(e, t) {
@@ -40,7 +40,7 @@ e.exports = function(e) {
   }
   let u = {
       className: "string",
-      contains: [e.BACKSLASH_ESCAPE, o],
+      contains: [e.BACKSLASH_ESCAPE, a],
       variants: [{
         begin: /'/,
         end: /'/
@@ -107,7 +107,7 @@ e.exports = function(e) {
       keywords: "case if select unless until when while",
       contains: [{
         className: "regexp",
-        contains: [e.BACKSLASH_ESCAPE, o],
+        contains: [e.BACKSLASH_ESCAPE, a],
         variants: [{
           begin: "//[a-z]*",
           relevance: 0
@@ -120,7 +120,7 @@ e.exports = function(e) {
     },
     _ = [l, u, d, {
       className: "regexp",
-      contains: [e.BACKSLASH_ESCAPE, o],
+      contains: [e.BACKSLASH_ESCAPE, a],
       variants: [{
         begin: "%r\\(",
         end: "\\)",
@@ -218,10 +218,10 @@ e.exports = function(e) {
       }],
       relevance: 0
     }];
-  return o.contains = _, l.contains = _.slice(1), {
+  return a.contains = _, l.contains = _.slice(1), {
     name: "Crystal",
     aliases: ["cr"],
-    keywords: a,
+    keywords: o,
     contains: _
   }
 }

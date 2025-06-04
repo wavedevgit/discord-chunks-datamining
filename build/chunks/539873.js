@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(570140),
@@ -65,8 +65,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -74,8 +74,8 @@ function T(e, t) {
 function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -83,7 +83,7 @@ function N(e) {
   let {
     className: t,
     disabled: n,
-    isEditor: a,
+    isEditor: o,
     renderCTAButtons: O
   } = e, [I] = (0, s.Wu)([p.Z], () => [p.Z.getCurrentDesktopIcon()]), A = i.useRef(null);
   (0, _.Z)(A, g.h1.CUSTOM_APP_ICONS);
@@ -114,7 +114,7 @@ function N(e) {
           className: b.header,
           children: [(0, r.jsxs)("div", {
             className: b.headings,
-            children: [!a && (0, r.jsxs)("div", {
+            children: [!o && (0, r.jsxs)("div", {
               className: b.title,
               children: [(0, r.jsx)(l.X6q, {
                 className: b.titleText,
@@ -125,7 +125,7 @@ function N(e) {
               })]
             }), (0, r.jsx)(l.X6q, {
               variant: "text-sm/normal",
-              className: o()({
+              className: a()({
                 [y.subtext]: w
               }),
               children: E.intl.string(E.t.IgENJi)

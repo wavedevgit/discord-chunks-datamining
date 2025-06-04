@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(693789),
   l = n(481060),
   c = n(540059),
@@ -38,7 +38,7 @@ function _(e) {
 
 function p(e) {
   let t, n, {
-      header: a,
+      header: o,
       children: f,
       confirmText: _,
       cancelText: p,
@@ -92,14 +92,14 @@ function p(e) {
     className: h,
     transitionState: O,
     impression: T,
-    children: [null != a ? (0, r.jsx)(u.xB, {
+    children: [null != o ? (0, r.jsx)(u.xB, {
       separator: !1,
       children: (0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
-        children: a
+        children: o
       })
     }) : null, (0, r.jsx)(u.hz, {
-      className: o()(d.content, y),
+      className: a()(d.content, y),
       children: f
     }), (0, r.jsxs)(u.mz, {
       children: [n, t]

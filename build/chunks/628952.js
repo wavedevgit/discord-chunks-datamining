@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(979554),
   l = n(442837),
   c = n(481060),
@@ -62,7 +62,7 @@ let I = e => {
   let {
     skuId: t,
     isSelected: n,
-    price: a,
+    price: o,
     onSelect: b,
     shouldDisplayHeader: O = !1,
     className: I
@@ -120,7 +120,7 @@ let I = e => {
     }), (0, r.jsxs)(c.P3F, {
       tag: "div",
       onClick: L,
-      className: o()(E.previewContainer, {
+      className: a()(E.previewContainer, {
         [E.previewContainerSelected]: n && null == A,
         [E.previewContainerError]: n && null != A
       }),
@@ -141,7 +141,7 @@ let I = e => {
           })]
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/semibold",
-          children: a
+          children: o
         })]
       }), n && null != A && (0, r.jsx)("div", {
         className: E.recipientError,

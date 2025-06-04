@@ -1,27 +1,27 @@
 /** Chunk was on 73628 **/
-r.d(t, {
-  Z: () => f
+n.d(t, {
+  Z: () => g
 });
-var n = r(392711),
-  i = r.n(n),
-  a = r(723454),
-  l = r(428595),
-  o = r(454585);
+var r = n(392711),
+  A = n.n(r),
+  a = n(723454),
+  l = n(428595),
+  o = n(454585);
 
-function A(e) {
+function i(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -29,23 +29,23 @@ function A(e) {
 
 function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = i().omit(l.Z.RULES, ["codeBlock", "heading"]),
-  d = s(A({}, a.Z), {
-    parse: function(e, t, r) {
-      var n;
-      let i = a.Z.parse(e, t, r),
-        l = Math.min(6, (null != (n = r.initialHeaderLevel) ? n : 3) + i.level);
-      return s(A({}, i), {
+let c = A().omit(l.Z.RULES, ["codeBlock", "heading"]),
+  d = s(i({}, a.Z), {
+    parse: function(e, t, n) {
+      var r;
+      let A = a.Z.parse(e, t, n),
+        l = Math.min(6, (null != (r = n.initialHeaderLevel) ? r : 3) + A.level);
+      return s(i({}, A), {
         level: l
       })
     }
@@ -53,4 +53,4 @@ let c = i().omit(l.Z.RULES, ["codeBlock", "heading"]),
   u = o.Z.combineAndInjectMentionRule(c, [o.Z.createReactRules(o.Z.defaultReactRuleOptions), {
     header: d
   }]),
-  f = o.Z.reactParserFor(u)
+  g = o.Z.reactParserFor(u)

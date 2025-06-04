@@ -5,8 +5,8 @@ n.d(t, {
 }), n(290780), n(388685);
 var r = n(106351),
   i = n(212819),
-  a = n(588468),
-  o = n(933557),
+  o = n(588468),
+  a = n(933557),
   s = n(592125),
   l = n(984933),
   c = n(483360),
@@ -24,7 +24,7 @@ function h(e) {
     case r.d.GUILD_VOICE:
     case r.d.GUILD_STAGE_VOICE:
     case r.d.GUILD_CATEGORY:
-      return '#"'.concat((0, o.le)(e.name), '"');
+      return '#"'.concat((0, a.le)(e.name), '"');
     default:
       let t = l.ZP.getTextChannelNameDisambiguations(e.guild_id)[e.id];
       return "#".concat(null != t ? t.name : e.name)
@@ -37,21 +37,21 @@ function m(e) {
 let g = {
   sentinel: f.zy,
   matches: (e, t, n, r, i) => i.mentions.channel !== d.nS.DENY && !e.isPrivate(),
-  queryResults(e, t, n, r, a) {
-    let o, s, u = l.sH;
-    return n.charAt(0) === i.xQ.VOICE_CHANNEL && (u = l.Zb, n = n.substring(1)), r.forNonStringCommandOption ? o = c.ZP.queryApplicationCommandChannelResults({
+  queryResults(e, t, n, r, o) {
+    let a, s, u = l.sH;
+    return n.charAt(0) === i.xQ.VOICE_CHANNEL && (u = l.Zb, n = n.substring(1)), r.forNonStringCommandOption ? a = c.ZP.queryApplicationCommandChannelResults({
       query: n,
       channel: e,
       channelTypes: r.allowedChannelTypes
-    }) : (o = c.ZP.queryChannelResults({
+    }) : (a = c.ZP.queryChannelResults({
       query: n,
       channel: e,
       type: u
     }), null != t && (s = c.ZP.queryStaticRouteChannels({
       query: n,
       guild: t
-    }), o.channels.unshift(...s))), {
-      results: o,
+    }), a.channels.unshift(...s))), {
+      results: a,
       staticRouteChannels: s
     }
   },
@@ -60,7 +60,7 @@ let g = {
         results: {
           channels: r
         },
-        selectedIndex: o,
+        selectedIndex: a,
         query: l,
         options: c,
         onHover: d,
@@ -69,13 +69,13 @@ let g = {
       h = l.charAt(0) === i.xQ.VOICE_CHANNEL;
     return h ? (t = p.t.rMUL39, n = p.intl.string(p.t.CYnO4u), l = l.substring(1)) : c.forNonStringCommandOption ? (t = p.t.upNFT0, n = p.intl.string(p.t.OGiMXF)) : (t = p.t.UhnmJC, n = p.intl.string(p.t.nIfr0d)), (0, u.HI)({
       query: l,
-      selectedIndex: o,
+      selectedIndex: a,
       autocompletes: r,
       onHover: d,
       onClick: _,
       titleWithQuery: t,
       titleWithoutQuery: n,
-      Component: a.ZP.Channel,
+      Component: o.ZP.Channel,
       getProps: e => ({
         channel: e,
         key: e.id,

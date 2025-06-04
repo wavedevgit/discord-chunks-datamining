@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(442837),
-  a = n(906732),
-  o = n(314897),
+  o = n(906732),
+  a = n(314897),
   s = n(699516),
   l = n(821706),
   c = n(562831),
@@ -21,7 +21,7 @@ function f(e) {
     shouldShowTooltip: f = !1
   } = e, {
     newestAnalyticsLocation: _
-  } = (0, a.ZP)(), p = (0, i.e7)([o.default], () => o.default.getId() === t.id), h = (0, i.e7)([s.Z], () => s.Z.getRelationshipType(t.id)), {
+  } = (0, o.ZP)(), p = (0, i.e7)([a.default], () => a.default.getId() === t.id), h = (0, i.e7)([s.Z], () => s.Z.getRelationshipType(t.id)), {
     gameFriends: m,
     hasOutgoingPendingGameFriends: g,
     hasIncomingPendingGameFriends: E

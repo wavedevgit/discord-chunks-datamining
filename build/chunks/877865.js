@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(688619),
-  o = n.n(a),
+  o = n(688619),
+  a = n.n(o),
   s = n(120356),
   l = n.n(s),
   c = n(866442),
@@ -67,8 +67,8 @@ function S(e) {
   let {
     colors: t,
     selectedIndex: n,
-    onColorSelect: a
-  } = e, [o, s] = i.useMemo(() => {
+    onColorSelect: o
+  } = e, [a, s] = i.useMemo(() => {
     let e = t.map((e, n) => I(t, n)),
       n = t.map((t, n) => "".concat(t, " ").concat(e[n], "%")).join(", ");
     return [e, {
@@ -79,7 +79,7 @@ function S(e) {
     className: g.gradientBar,
     style: s,
     children: t.map((e, t) => {
-      let i = o[t],
+      let i = a[t],
         s = t === n;
       return (0, r.jsx)(_.P3F, {
         className: l()(g.colorCircle, {
@@ -89,7 +89,7 @@ function S(e) {
           left: "".concat(i, "%"),
           backgroundColor: e
         },
-        onClick: () => a(t),
+        onClick: () => o(t),
         children: (0, r.jsx)("div", {
           className: g.colorCircleInner
         })
@@ -100,7 +100,7 @@ function S(e) {
 
 function T(e) {
   if (!(0, c.FX)(e)) return e;
-  let t = o()(e);
+  let t = a()(e);
   return t.set("hsl.h", (t.get("hsl.h") + 15) % 360).hex()
 }
 
@@ -108,20 +108,20 @@ function A(e) {
   let {
     value: t,
     onChange: n,
-    className: a,
-    colors: o,
+    className: o,
+    colors: a,
     setColors: s
   } = e, E = (0, p.Z)(), [y, I] = i.useState(0), [A, N] = i.useState(t);
   i.useEffect(() => {
-    if (o.length > 0 && y < o.length) {
-      let e = o[y];
+    if (a.length > 0 && y < a.length) {
+      let e = a[y];
       (0, c.FX)(e) && (N(e), n(e))
     }
-  }, [y, o, n]);
+  }, [y, a, n]);
   let C = e => {
       let t = e.startsWith("#") ? e : "#".concat(e);
-      if (N(t), (0, c.FX)(t) && (n(t), o.length > 0)) {
-        let e = [...o];
+      if (N(t), (0, c.FX)(t) && (n(t), a.length > 0)) {
+        let e = [...a];
         e[y] = t, s(e)
       }
     },
@@ -129,8 +129,8 @@ function A(e) {
       N(e.hex)
     }, []),
     R = e => {
-      if (n(e.hex), o.length > 0) {
-        let t = [...o];
+      if (n(e.hex), a.length > 0) {
+        let t = [...a];
         t[y] = e.hex, s(t)
       }
     },
@@ -142,21 +142,21 @@ function A(e) {
         C(e)
       } catch (e) {}
     }, D = () => {
-      if (5 === o.length) return;
-      let e = o.length > 0 ? o[o.length - 1] : A,
-        t = o.length > 0 ? T(e) : e,
-        n = [...o, t];
+      if (5 === a.length) return;
+      let e = a.length > 0 ? a[a.length - 1] : A,
+        t = a.length > 0 ? T(e) : e,
+        n = [...a, t];
       s(n), I(n.length - 1)
     }, L = e => {
-      if (o.length > 1) {
-        let t = o.filter((t, n) => n !== e);
+      if (a.length > 1) {
+        let t = a.filter((t, n) => n !== e);
         s(t), y >= t.length ? I(t.length - 1) : y > e && I(y - 1)
       }
     }, x = e => {
       I(e)
-    }, k = o.length > 1;
+    }, k = a.length > 1;
   return (0, r.jsxs)("div", {
-    className: l()(g.container, a),
+    className: l()(g.container, o),
     children: [(0, r.jsxs)("div", {
       className: g.headerContainer,
       children: [(0, r.jsx)(_.Text, {
@@ -173,7 +173,7 @@ function A(e) {
         })
       })]
     }), k && (0, r.jsx)(S, {
-      colors: o,
+      colors: a,
       selectedIndex: y,
       onColorSelect: x
     }), (0, r.jsx)(i.Suspense, {

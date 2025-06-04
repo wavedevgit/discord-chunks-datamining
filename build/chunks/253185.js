@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  k: () => o
+  k: () => a
 });
 var r = n(249288),
   i = n(603382),
-  a = n(484378);
-let o = (0, r.chainMessagesObjects)(i.Z, a.Z)
+  o = n(484378);
+let a = (0, r.chainMessagesObjects)(i.Z, o.Z)

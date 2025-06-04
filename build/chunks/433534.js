@@ -2,14 +2,14 @@
 "use strict";
 n.d(t, {
   Dz: () => s,
-  Eb: () => o,
+  Eb: () => a,
   x$: () => l
 });
 var r = n(373793),
   i = n(213459),
-  a = n(689079);
+  o = n(689079);
 
-function o(e) {
+function a(e) {
   let {
     customInstallUrl: t,
     installParams: n,
@@ -24,7 +24,7 @@ function s(e) {
     installParams: n,
     integrationTypesConfig: i
   } = e;
-  return o({
+  return a({
     customInstallUrl: t,
     installParams: n,
     integrationTypesConfig: i
@@ -35,9 +35,9 @@ function l(e) {
   let {
     applicationId: t,
     channel: n,
-    commandIntegrationTypes: o
+    commandIntegrationTypes: a
   } = e;
-  return !(null != o && !o.includes(r.Y.USER_INSTALL) || t === a.bi.BUILT_IN || i.ZP.hasUserStateApplication(t) || null != n && i.ZP.hasContextStateApplication({
+  return !(null != a && !a.includes(r.Y.USER_INSTALL) || t === o.bi.BUILT_IN || i.ZP.hasUserStateApplication(t) || null != n && i.ZP.hasContextStateApplication({
     applicationId: t,
     channelId: n.id,
     guildId: n.guild_id

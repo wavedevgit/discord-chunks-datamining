@@ -2,8 +2,8 @@
 "use strict";
 var r = n(614767),
   i = String,
-  a = TypeError;
+  o = TypeError;
 e.exports = function(e) {
   if (r(e)) return e;
-  throw new a("Can't set " + i(e) + " as a prototype")
+  throw new o("Can't set " + i(e) + " as a prototype")
 }

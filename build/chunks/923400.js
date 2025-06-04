@@ -1,15 +1,15 @@
 /** Chunk was on 73628 **/
-r.d(t, {
+n.d(t, {
   M: () => a
 });
-var n = r(83439),
-  i = r(100781);
+var r = n(83439),
+  A = n(100781);
 let a = [{
   name: "cool-frog",
   alt: "A cool frog",
-  data: n.Z
+  data: r.Z
 }, {
   name: "cute-bunny",
   alt: "A cute bunny",
-  data: i.Z
+  data: A.Z
 }]

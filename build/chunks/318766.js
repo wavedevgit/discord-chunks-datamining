@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(386230),
   l = n(442837),
   c = n(704215),
@@ -78,7 +78,7 @@ let P = 20,
     return (0, r.jsxs)("div", {
       className: S.premiumTooltipContainer,
       children: [(0, r.jsx)(u.Fmz, {
-        className: o()(S.premiumUnlockAnimation, {
+        className: a()(S.premiumUnlockAnimation, {
           [S.reducedMotion]: e
         }),
         loop: !1,
@@ -104,7 +104,7 @@ let M = function(e) {
   let {
     tabIndex: t,
     className: n,
-    renderButtonContents: a,
+    renderButtonContents: o,
     active: T,
     onClick: N,
     "aria-controls": P,
@@ -119,15 +119,15 @@ let M = function(e) {
     U(!1)
   }, [U]), W = i.useCallback(() => (0, p.x)(v.qR.EmojiButtonFocused), []), K = (0, h.B4)(), [z, q] = (0, _.US)(K ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), Q = z === c.z.TRIAL_NUX_EMOJI_BUTTON, X = !T && Q, J = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [$, ee] = i.useState(!1), [et, en] = i.useState(!1), er = (0, m.V2)({
     location: "EmojiButton"
-  }), [ei, ea] = (0, _.US)(w && er ? [c.z.SOUNDMOJI_COACHMARK] : []), eo = !$ && ei === c.z.SOUNDMOJI_COACHMARK && !et, es = i.useRef(null), el = null != M ? M : es;
+  }), [ei, eo] = (0, _.US)(w && er ? [c.z.SOUNDMOJI_COACHMARK] : []), ea = !$ && ei === c.z.SOUNDMOJI_COACHMARK && !et, es = i.useRef(null), el = null != M ? M : es;
   return (0, r.jsx)(u.yRy, {
     targetElementRef: el,
     renderPopout: () => (0, r.jsx)(g.Z, {
-      markAsDismissed: ea
+      markAsDismissed: eo
     }),
     position: "top",
     align: "right",
-    shouldShow: eo,
+    shouldShow: ea,
     animationPosition: "bottom",
     onRequestClose: () => en(!0),
     children: e => (0, r.jsx)(u.ua7, {
@@ -145,7 +145,7 @@ let M = function(e) {
         look: u.zxk.Looks.BLANK,
         size: u.zxk.Sizes.NONE,
         tabIndex: t,
-        className: o()(V, n),
+        className: a()(V, n),
         onMouseEnter: () => {
           var e;
           H(), null == (e = i.onMouseEnter) || e.call(i), E.default.track(y.rMx.EMOJI_PICKER_BUTTON_HOVERED)
@@ -166,7 +166,7 @@ let M = function(e) {
         "aria-haspopup": "dialog",
         focusProps: R,
         onContextMenu: i.onContextMenu,
-        children: null != a ? a() : (0, r.jsx)(u.AMe, {
+        children: null != o ? o() : (0, r.jsx)(u.AMe, {
           config: L,
           to: {
             value: +!!F
@@ -181,9 +181,9 @@ let M = function(e) {
                 transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
               }),
               children: [(0, r.jsx)("div", {
-                className: o()(S.sprite, S.spriteColored, F ? S.active : S.inactive)
+                className: a()(S.sprite, S.spriteColored, F ? S.active : S.inactive)
               }), (0, r.jsx)("div", {
-                className: o()(S.sprite, Q ? S.spritePremiumColored : S.spriteGreyscale, F ? S.inactive : S.active, {
+                className: a()(S.sprite, Q ? S.spritePremiumColored : S.spriteGreyscale, F ? S.inactive : S.active, {
                   [S.reducedMotion]: J
                 })
               })]

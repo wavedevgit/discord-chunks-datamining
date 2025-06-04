@@ -16,8 +16,8 @@ var r = n(120356),
   p = n(888496),
   m = n(768762),
   b = n(706454),
-  _ = n(49012),
-  y = n(981631),
+  y = n(49012),
+  _ = n(981631),
   x = n(856651),
   h = n(388032),
   g = n(738873);
@@ -41,7 +41,7 @@ function j(e) {
   return e
 }
 
-function v(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,35 +54,35 @@ function v(e, t) {
   }), e
 }
 
-function I(e) {
+function v(e) {
   var t;
   let {
     account: n,
     theme: r,
     locale: i,
     userId: c
-  } = e, a = null != (t = n.metadata) ? t : {}, b = (0, f.FI)(a[x.PC.CREATED_AT], i), I = s.Z.get((0, u.rR)(n.type));
+  } = e, a = null != (t = n.metadata) ? t : {}, b = (0, f.FI)(a[x.PC.CREATED_AT], i), v = s.Z.get((0, u.rR)(n.type));
   return (0, o.jsxs)("div", {
     className: g.connection,
     children: [(0, o.jsx)(l.ua7, {
-      text: null == I ? void 0 : I.name,
-      children: e => (0, o.jsx)("img", v(j({}, e), {
+      text: null == v ? void 0 : v.name,
+      children: e => (0, o.jsx)("img", I(j({}, e), {
         alt: h.intl.formatToPlainString(h.t.rtm15O, {
-          name: null == I ? void 0 : I.name
+          name: null == v ? void 0 : v.name
         }),
         className: g.platformIcon,
-        src: (0, l.wjy)(r) ? null == I ? void 0 : I.icon.darkSVG : null == I ? void 0 : I.icon.lightSVG
+        src: (0, l.wjy)(r) ? null == v ? void 0 : v.icon.darkSVG : null == v ? void 0 : v.icon.lightSVG
       }))
     }), (0, o.jsxs)("div", {
       className: g.connectionInfo,
       children: [(0, o.jsxs)("div", {
         children: [(() => {
           var e;
-          let t = null == I || null == (e = I.getPlatformUserUrl) ? void 0 : e.call(I, n);
+          let t = null == v || null == (e = v.getPlatformUserUrl) ? void 0 : e.call(v, n);
           return null == t ? (0, o.jsx)(l.ua7, {
             overflowOnly: !0,
             text: n.name,
-            children: e => (0, o.jsx)(l.Text, v(j({}, e), {
+            children: e => (0, o.jsx)(l.Text, I(j({}, e), {
               variant: "text-sm/normal",
               className: g.accountNameText,
               children: n.name
@@ -92,12 +92,12 @@ function I(e) {
             className: g.platformUrlAnchor,
             useDefaultUnderlineStyles: !1,
             onClick: e => {
-              (0, d.yw)(y.rMx.CONNECTED_ACCOUNT_VIEWED, {
+              (0, d.yw)(_.rMx.CONNECTED_ACCOUNT_VIEWED, {
                 platform_type: n.type,
                 other_user_id: c
-              }), (0, _.q)({
+              }), (0, y.q)({
                 href: t,
-                trusted: (null == I ? void 0 : I.type) !== y.ABu.DOMAIN
+                trusted: (null == v ? void 0 : v.type) !== _.ABu.DOMAIN
               }, e)
             },
             children: (0, o.jsxs)("div", {
@@ -105,7 +105,7 @@ function I(e) {
               children: [(0, o.jsx)(l.ua7, {
                 overflowOnly: !0,
                 text: n.name,
-                children: e => (0, o.jsx)(l.Text, v(j({}, e), {
+                children: e => (0, o.jsx)(l.Text, I(j({}, e), {
                   variant: "text-sm/normal",
                   className: g.accountNameText,
                   children: n.name
@@ -124,7 +124,7 @@ function I(e) {
         })]
       }), (0, o.jsx)("div", {
         className: g.metadata,
-        children: n.type === y.ABu.REDDIT ? (0, p.oP)(a) : n.type === y.ABu.STEAM ? (0, p.Dq)(a) : n.type === y.ABu.BLUESKY || n.type === y.ABu.MASTODON || n.type === y.ABu.TWITTER ? (0, p.rJ)(a) : n.type === y.ABu.PAYPAL ? (0, p.li)(a) : n.type === y.ABu.EBAY ? (0, p.ul)(a) : n.type === y.ABu.TIKTOK ? (0, p.hf)(a) : null
+        children: n.type === _.ABu.REDDIT ? (0, p.oP)(a) : n.type === _.ABu.STEAM ? (0, p.Dq)(a) : n.type === _.ABu.BLUESKY || n.type === _.ABu.MASTODON || n.type === _.ABu.TWITTER ? (0, p.rJ)(a) : n.type === _.ABu.PAYPAL ? (0, p.li)(a) : n.type === _.ABu.EBAY ? (0, p.ul)(a) : n.type === _.ABu.TIKTOK ? (0, p.hf)(a) : null
       })]
     })]
   })
@@ -138,7 +138,7 @@ function O(e) {
   } = e, l = (0, a.ZP)(), s = (0, c.e7)([b.default], () => b.default.locale);
   return 0 === t.length ? null : (0, o.jsx)("div", {
     className: i()(g.container, r),
-    children: t.map(e => (0, o.jsx)(I, {
+    children: t.map(e => (0, o.jsx)(v, {
       account: e,
       userId: n,
       theme: l,

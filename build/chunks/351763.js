@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  S: () => o,
-  i: () => a
+  S: () => a,
+  i: () => o
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let o = (0, r.B)({
   kind: "user",
   id: "2025-05_hide_rtc_buttons_experiment",
   label: "RTC Buttons Negative Test",
@@ -32,8 +32,8 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
-  return a.useExperiment(e, {
+function a(e) {
+  return o.useExperiment(e, {
     autoTrackExposure: !1
   })
 }

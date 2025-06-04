@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => _
 }), n(388685);
 var r, i = n(255367),
-  a = n(73800),
-  o = n(120356),
-  s = n.n(o),
+  o = n(73800),
+  a = n(120356),
+  s = n.n(a),
   l = n(481060),
   c = n(388032),
   u = n(573855);
@@ -19,14 +19,14 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class f extends(r = a.PureComponent) {
+class f extends(r = o.PureComponent) {
   render() {
     var e;
     let {
       title: t,
       actionText: n,
       children: r,
-      error: o,
+      error: a,
       isLoading: d,
       maxLength: f,
       transitionState: _,
@@ -37,7 +37,7 @@ class f extends(r = a.PureComponent) {
       code: g,
       errorMessage: E,
       retrySuccess: b
-    } = this.state, y = a.Children.count(r) > 0 ? (0, i.jsx)(l.Zbd, {
+    } = this.state, y = o.Children.count(r) > 0 ? (0, i.jsx)(l.Zbd, {
       type: l.Zbd.Types.WARNING,
       className: u.card,
       children: (0, i.jsx)(l.Text, {
@@ -93,7 +93,7 @@ class f extends(r = a.PureComponent) {
               color: "text-danger",
               variant: "text-xs/normal",
               className: u.error,
-              children: null != o ? o : E
+              children: null != a ? a : E
             }) : null, O]
           })]
         }), (0, i.jsxs)(l.mzw, {

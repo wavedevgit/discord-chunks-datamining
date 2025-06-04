@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 6228a47c979ecd0a
+  Original File Name: 302a444319fea9d3
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -11343,6 +11343,26 @@ div.profileThemedContainer__656be {
     stroke: var(--text-normal)
 }
 
+.container__3379f {
+    align-items: center;
+    background-color: var(--background-base-lowest);
+    border: 1px solid var(--border-subtle);
+    display: flex;
+    gap: 8px;
+    padding: 12px 16px
+}
+
+.icons__3379f {
+    display: flex;
+    flex: 1;
+    gap: 16px;
+    justify-content: flex-end
+}
+
+.icon__3379f {
+    cursor: pointer
+}
+
 .searchResultsWrap_a9e706 {
     background: var(--bg-overlay-1,var(--background-secondary));
     display: flex;
@@ -13282,4 +13302,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=6228a47c979ecd0a.css.map*/
+/*# sourceMappingURL=302a444319fea9d3.css.map*/

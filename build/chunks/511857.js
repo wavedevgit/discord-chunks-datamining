@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   a: () => i,
-  w: () => a
+  w: () => o
 });
 var r = n(231338);
 
@@ -10,7 +10,7 @@ function i(e) {
   return e === r.BR.LIGHT
 }
 
-function a(e) {
+function o(e) {
   switch (e) {
     case r.BR.DARK:
     case r.BR.MIDNIGHT:

@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  VK: () => a
+  VK: () => o
 }), n(388685);
 var r = n(44315),
   i = n(469115);
 n(231338);
 
-function a(e) {
+function o(e) {
   let {
     angle: t,
     colors: n

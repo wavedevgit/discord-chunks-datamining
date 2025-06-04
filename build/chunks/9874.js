@@ -1,9 +1,9 @@
 /** Chunk was on 73628 **/
-r.d(t, {
-  F: () => i
+n.d(t, {
+  F: () => A
 });
-var n = r(680287);
+var r = n(680287);
 
-function i() {
-  return new n.Z("unused")
+function A() {
+  return new r.Z("unused")
 }

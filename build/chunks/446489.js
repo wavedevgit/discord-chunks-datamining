@@ -1,12 +1,12 @@
-/** Chunk was on 28767 **/
+/** Chunk was on 18895 **/
 n.d(t, {
   Z: () => b,
   y: () => g
 });
 var i, r, o = n(255367),
   l = n(73800),
-  s = n(392711),
-  a = n.n(s),
+  a = n(392711),
+  s = n.n(a),
   c = n(748780),
   u = n(451478);
 
@@ -44,9 +44,9 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var f = ((i = f || {})[i.ABOVE = 0] = "ABOVE", i[i.VISIBLE = 1] = "VISIBLE", i[i.BELOW = 2] = "BELOW", i);
+var m = ((i = m || {})[i.ABOVE = 0] = "ABOVE", i[i.VISIBLE = 1] = "VISIBLE", i[i.BELOW = 2] = "BELOW", i);
 
-function m(e, t) {
+function f(e, t) {
   return {
     toValue: e,
     duration: null != t ? t : 300,
@@ -86,7 +86,7 @@ class b extends(r = l.PureComponent) {
       forcePosition: i,
       animationSpeed: r
     } = this.props;
-    this.prevAnimate.setValue(1), null != i ? 0 === i ? (this.currAnimate.setValue(0), n = 2) : 2 === i && (this.currAnimate.setValue(2), n = 0) : e > t ? (this.currAnimate.setValue(0), n = 2) : (this.currAnimate.setValue(2), n = 0), c.Z.parallel([c.Z.timing(this.prevAnimate, m(n, r)), c.Z.timing(this.currAnimate, m(1, r))]).start(this.animateNext)
+    this.prevAnimate.setValue(1), null != i ? 0 === i ? (this.currAnimate.setValue(0), n = 2) : 2 === i && (this.currAnimate.setValue(2), n = 0) : e > t ? (this.currAnimate.setValue(0), n = 2) : (this.currAnimate.setValue(2), n = 0), c.Z.parallel([c.Z.timing(this.prevAnimate, f(n, r)), c.Z.timing(this.currAnimate, f(1, r))]).start(this.animateNext)
   }
   getAnimatedStyle(e) {
     let {
@@ -128,7 +128,7 @@ class b extends(r = l.PureComponent) {
     } = this.state, {
       color: n,
       formatString: i
-    } = this.props, r = a().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
+    } = this.props, r = s().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
     if (null == e) return (0, o.jsx)("div", p(h({}, r), {
       style: {
         color: n,
@@ -182,4 +182,4 @@ class b extends(r = l.PureComponent) {
     }, this.prevAnimate = new c.Z.Value(0), this.currAnimate = new c.Z.Value(1)
   }
 }
-d(b, "Positions", f)
+d(b, "Positions", m)

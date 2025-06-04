@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 }), n(388685);
 let r = [
     ["position", "absolute"],
@@ -16,16 +16,16 @@ let r = [
     ["height", "200px"]
   ];
 
-function a() {
+function o() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
     t = document.createElement("div"),
     n = document.createElement("div");
   for (let [e, n] of r) t.style[e] = n;
   for (let [e, t] of i) n.style[e] = t;
   t.appendChild(n), document.body.appendChild(t), t.className = e;
-  let a = {
+  let o = {
     width: t.offsetWidth - t.clientWidth,
     height: t.offsetHeight - t.clientHeight
   };
-  return document.body.removeChild(t), a
+  return document.body.removeChild(t), o
 }

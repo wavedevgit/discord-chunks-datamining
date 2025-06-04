@@ -7,16 +7,16 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(97519),
-  a = n(731965);
-let o = Object.freeze({
+  o = n(731965);
+let a = Object.freeze({
     id: null,
     activeDescendant: null
   }),
-  s = (0, i.U)(() => o);
+  s = (0, i.U)(() => a);
 
 function l(e, t, n) {
   (0, r.useEffect)(() => {
-    (0, a.j)(() => {
+    (0, o.j)(() => {
       t ? s.setState({
         id: e,
         activeDescendant: n
@@ -29,5 +29,5 @@ function l(e, t, n) {
 }
 
 function c() {
-  (0, a.j)(() => s.setState(() => o))
+  (0, o.j)(() => s.setState(() => a))
 }

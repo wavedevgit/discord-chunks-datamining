@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(218867),
-  o = n(74538),
+  o = n(218867),
+  a = n(74538),
   s = n(28546),
   l = n(98528),
   c = n(204922);
@@ -30,7 +30,7 @@ let u = 20,
       sectionFooterHeight: S,
       renderUpsell: T,
       setShowUpsell: A
-    } = e, N = i.useRef(!1), C = i.useRef(null), P = (0, s.Iu)(e => e.searchQuery), R = d.useStore(e => e.activeCategoryIndex), w = n.map(e => (0, o._O)(e.categoryInfo) ? {
+    } = e, N = i.useRef(!1), C = i.useRef(null), P = (0, s.Iu)(e => e.searchQuery), R = d.useStore(e => e.activeCategoryIndex), w = n.map(e => (0, a._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: !1
@@ -91,7 +91,7 @@ let u = 20,
       }
     }), []), (0, r.jsxs)("div", {
       className: c.wrapper,
-      children: [P.length > 0 && !f && null != b ? b() : (0, r.jsx)(a.Z, {
+      children: [P.length > 0 && !f && null != b ? b() : (0, r.jsx)(o.Z, {
         role: "none presentation",
         listPadding: _,
         onScroll: x,

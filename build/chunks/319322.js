@@ -4,9 +4,9 @@ n(980754), n(388685), n(368063);
 var r = n(328865);
 n(2831);
 var i = n(264344),
-  a = n.n(i);
+  o = n.n(i);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,7 +14,7 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-window.platform = a(), null == window.ResizeObserver && (window.ResizeObserver = r.d), "object" != typeof globalThis && (window.globalThis = window), Map.prototype.toJSON = function() {
+window.platform = o(), null == window.ResizeObserver && (window.ResizeObserver = r.d), "object" != typeof globalThis && (window.globalThis = window), Map.prototype.toJSON = function() {
   return Array.from(this)
 }, Set.prototype.toJSON = function() {
   return Array.from(this)
@@ -36,7 +36,7 @@ window.platform = a(), null == window.ResizeObserver && (window.ResizeObserver =
       }
     }
     constructor(e = 0, t = 0, n = 0, r = 1) {
-      o(this, "x", void 0), o(this, "y", void 0), o(this, "z", void 0), o(this, "w", void 0), this.x = e, this.y = t, this.z = n, this.w = r
+      a(this, "x", void 0), a(this, "y", void 0), a(this, "z", void 0), a(this, "w", void 0), this.x = e, this.y = t, this.z = n, this.w = r
     }
   }
   null == window.DOMPoint && (window.DOMPoint = e)
@@ -70,7 +70,7 @@ window.platform = a(), null == window.ResizeObserver && (window.ResizeObserver =
       }
     }
     constructor(e = 0, t = 0, n = 0, r = 0) {
-      o(this, "x", void 0), o(this, "y", void 0), o(this, "width", void 0), o(this, "height", void 0), this.x = e, this.y = t, this.width = n, this.height = r
+      a(this, "x", void 0), a(this, "y", void 0), a(this, "width", void 0), a(this, "height", void 0), this.x = e, this.y = t, this.width = n, this.height = r
     }
   }
   null == window.DOMRect && (window.DOMRect = e)

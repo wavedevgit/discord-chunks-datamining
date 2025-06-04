@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  s: () => a
+  s: () => o
 });
 let r = (e, t) => ({
     x: e.x - t.x,
@@ -15,13 +15,13 @@ let r = (e, t) => ({
       y: 0
     } : r(t, n)
   },
-  a = (e, t) => {
+  o = (e, t) => {
     let n = e.getClientOffset();
     if (null === n) return null;
     if (!t.current || !t.current.getBoundingClientRect) return r(n, i(e));
-    let a = t.current.getBoundingClientRect();
+    let o = t.current.getBoundingClientRect();
     return r(n, {
-      x: a.width / 2,
-      y: a.height / 2
+      x: o.width / 2,
+      y: o.height / 2
     })
   }

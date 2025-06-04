@@ -1,14 +1,14 @@
-/** Chunk was on 28767 **/
+/** Chunk was on 18895 **/
 n.d(t, {
-  H: () => v,
-  v: () => j
+  H: () => j,
+  v: () => v
 }), n(388685);
 var i = n(512722),
   r = n.n(i),
   o = n(97519),
   l = n(313361),
-  s = n(697988),
-  a = n(683860),
+  a = n(697988),
+  s = n(683860),
   c = n(731965),
   u = n(442837),
   d = n(592125),
@@ -23,7 +23,7 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -35,21 +35,21 @@ function f(e) {
   }
   return e
 }
-let m = new Set,
+let f = new Set,
   g = {
     layoutType: l.X.LIST,
-    sortOrder: a.z.CREATION_DATE,
-    tagFilter: m,
+    sortOrder: s.z.CREATION_DATE,
+    tagFilter: f,
     scrollPosition: 0,
-    tagSetting: s.z.MATCH_SOME
+    tagSetting: a.z.MATCH_SOME
   };
 class b {
   constructor(e, t) {
     p(this, "set", void 0), p(this, "get", void 0), p(this, "channelStates", void 0), p(this, "setChannelState", void 0), p(this, "getChannelState", void 0), p(this, "toggleTagFilter", void 0), p(this, "setTagFilter", void 0), p(this, "setSortOrder", void 0), p(this, "setLayoutType", void 0), p(this, "setTagSetting", void 0), p(this, "setScrollPosition", void 0), this.set = e, this.get = t, this.channelStates = {}, this.setChannelState = (e, t) => {
       let n = this.get(),
         i = this.getChannelState(e),
-        r = f({}, n.channelStates);
-      r[e] = f({}, i, t), (0, c.j)(() => this.set({
+        r = m({}, n.channelStates);
+      r[e] = m({}, i, t), (0, c.j)(() => this.set({
         channelStates: r
       }))
     }, this.getChannelState = e => {
@@ -62,7 +62,7 @@ class b {
         r()(null != t, "[Forum Channel Store] The channel should not be missing."), n = {
           layoutType: t.getDefaultLayout(),
           sortOrder: t.getDefaultSortOrder(),
-          tagFilter: m,
+          tagFilter: f,
           scrollPosition: 0,
           tagSetting: t.getDefaultTagSetting()
         }
@@ -95,8 +95,8 @@ class b {
   }
 }
 let O = (0, o.U)((e, t) => new b(e, t)),
-  v = e => {
+  j = e => {
     let t = O();
     return null == (0, u.e7)([d.Z], () => d.Z.getChannel(e)) ? g : t.getChannelState(e)
   },
-  j = () => O
+  v = () => O

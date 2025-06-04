@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(481060),
   i = n(281956),
-  a = n(271383),
-  o = n(430824),
+  o = n(271383),
+  a = n(430824),
   s = n(594174),
   l = n(447003),
   c = n(176505),
@@ -73,8 +73,8 @@ function _(e, t) {
       textFocused: h = !1
     } = n;
   if (null == e) return null;
-  null == t && (t = o.Z.getGuild(e.getGuildId()));
-  let m = (0, i.n)(null == t ? void 0 : t.id, [o.Z, s.default, a.ZP]);
+  null == t && (t = a.Z.getGuild(e.getGuildId()));
+  let m = (0, i.n)(null == t ? void 0 : t.id, [a.Z, s.default, o.ZP]);
   if (e.isModeratorReportChannel()) return r.U65;
   if ((null == e ? void 0 : e.id) === (null == t ? void 0 : t.rulesChannelId)) return r.snC;
   switch (e.type) {

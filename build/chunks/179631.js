@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  getDeviceState: () => o,
-  logger: () => a
+  getDeviceState: () => a,
+  logger: () => o
 });
 var r = n(259443),
   i = n(342825);
-let a = new r.Yd("native/DeviceState.tsx");
+let o = new r.Yd("native/DeviceState.tsx");
 
-function o() {
+function a() {
   let {
     fallback: e
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {

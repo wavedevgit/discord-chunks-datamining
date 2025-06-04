@@ -8,19 +8,19 @@ n.d(t, {
 }), n(388685), n(642613), n(570833), n(626135), n(981631);
 let r = ["COLD_START"],
   i = "NO_REASONS",
-  a = !0,
-  o = new Map;
+  o = !0,
+  a = new Map;
 
 function s(e) {
   var t;
-  let n = null != (t = o.get(e)) ? t : 0;
-  o.set(e, n + 1)
+  let n = null != (t = a.get(e)) ? t : 0;
+  a.set(e, n + 1)
 }
 
 function l(e) {
   var t;
-  let n = (null != (t = o.get(e)) ? t : 0) - 1;
-  n <= 0 ? o.delete(e) : o.set(e, n)
+  let n = (null != (t = a.get(e)) ? t : 0) - 1;
+  n <= 0 ? a.delete(e) : a.set(e, n)
 }
 
 function c(e) {
@@ -28,11 +28,11 @@ function c(e) {
 }
 
 function u() {
-  return o.size > 0 || a
+  return a.size > 0 || o
 }
 
 function d() {
-  let e = [...a ? r : [], ...o.keys()].sort();
+  let e = [...o ? r : [], ...a.keys()].sort();
   return e.length > 0 ? e.join(",") : i
 }
 
@@ -47,5 +47,5 @@ function _(e) {
 }
 
 function p(e) {
-  u(), a = !1, e(), u()
+  u(), o = !1, e(), u()
 }

@@ -4,8 +4,8 @@ let r;
 n.d(t, {
   Z: () => y
 }), n(388685);
-var i, a = n(392711),
-  o = n.n(a),
+var i, o = n(392711),
+  a = n.n(o),
   s = n(442837),
   l = n(570140),
   c = n(308063);
@@ -34,12 +34,12 @@ function h(e) {
     guildId: t,
     channelId: n,
     webhooks: i,
-    error: a
+    error: o
   } = e;
-  if (null == i) return void(null != a ? (r = a, delete f[_(t, n)]) : null != n && null != d[t] && (r = null, c.Z.fetchForChannel(t, n)));
+  if (null == i) return void(null != o ? (r = o, delete f[_(t, n)]) : null != n && null != d[t] && (r = null, c.Z.fetchForChannel(t, n)));
   r = null;
   let s = [];
-  null != n && (s = o()(p(t)).values().filter(e => e.channel_id !== n).value());
+  null != n && (s = a()(p(t)).values().filter(e => e.channel_id !== n).value());
   let l = d[t] = {};
   s.concat(i).forEach(e => l[e.id] = e), delete f[_(t, n)]
 }
@@ -72,10 +72,10 @@ class b extends(i = s.ZP.Store) {
     return null != f[_(e, t)]
   }
   getWebhooksForGuild(e) {
-    return o().values(p(e))
+    return a().values(p(e))
   }
   getWebhooksForChannel(e, t) {
-    return o()(p(e)).values().filter(e => e.channel_id === t).value()
+    return a()(p(e)).values().filter(e => e.channel_id === t).value()
   }
   get error() {
     return r

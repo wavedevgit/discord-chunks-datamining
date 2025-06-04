@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(394821),
   l = n(841784),
   c = n(833664),
@@ -141,9 +141,9 @@ function F(e) {
     var e;
     return (0, u.Z)(i) && null != F ? (0, r.jsxs)("div", {
       className: M.voiceChannelText,
-      children: [(0, r.jsx)(o.gj8, {
+      children: [(0, r.jsx)(a.gj8, {
         size: "xxs",
-        color: o.TVs.colors.TEXT_NORMAL,
+        color: a.TVs.colors.TEXT_NORMAL,
         className: M.voiceIcon
       }), (0, r.jsx)(N.Z, {
         variant: "heading-sm/semibold",
@@ -184,13 +184,13 @@ function F(e) {
       text: i.state
     })
   }, er = () => {
-    var e, t, n, a, o, s;
+    var e, t, n, o, a, s;
     if (i.type === L.IIU.WATCHING) return null;
     if ((0, c.Z)(i)) return ei();
     if ((0, g.dS)(i) && (null == (e = i.party) ? void 0 : e.size) != null && (null == (t = i.party) ? void 0 : t.size.length) >= 2) {
       let e = k.intl.formatToPlainString(k.t["JC/3x8"], {
-        numSpeakers: null == (a = i.party) ? void 0 : a.size[0],
-        numListeners: (null == (o = i.party) ? void 0 : o.size[1]) - (null == (s = i.party) ? void 0 : s.size[0])
+        numSpeakers: null == (o = i.party) ? void 0 : o.size[0],
+        numListeners: (null == (a = i.party) ? void 0 : a.size[1]) - (null == (s = i.party) ? void 0 : s.size[0])
       });
       return (0, r.jsx)(N.Z, {
         variant: "text-xs/normal",
@@ -202,7 +202,7 @@ function F(e) {
       variant: "text-xs/normal"
     })
   }, ei = () => {
-    var e, t, n, a;
+    var e, t, n, o;
     return (null == (e = i.party) ? void 0 : e.size) == null && i.application_id === x.Zc ? (0, r.jsxs)("div", {
       className: M.gameState,
       children: [(0, r.jsx)(N.Z, {
@@ -212,7 +212,7 @@ function F(e) {
         variant: "text-xs/normal",
         text: k.intl.formatToPlainString(k.t["u//9Bw"], {
           count: "0",
-          max: null != (a = null == j ? void 0 : j.getMaxParticipants()) ? a : 0
+          max: null != (o = null == j ? void 0 : j.getMaxParticipants()) ? o : 0
         })
       })]
     }) : (0, l.Z)(i) && (null == (t = i.party) ? void 0 : t.size) != null && (null == (n = i.party) ? void 0 : n.size.length) >= 2 ? (0, r.jsxs)("div", {
@@ -233,7 +233,7 @@ function F(e) {
       variant: "text-xs/normal",
       text: i.state
     }) : null
-  }, ea = () => {
+  }, eo = () => {
     if (!(0, O.Z)(i)) return null;
     let {
       start: e,
@@ -243,9 +243,9 @@ function F(e) {
       start: e,
       end: t
     })
-  }, eo = () => null == $ ? (0, r.jsxs)("div", {
+  }, ea = () => null == $ ? (0, r.jsxs)("div", {
     children: [et(), en(), er()]
-  }) : (0, r.jsxs)(o.P3F, {
+  }) : (0, r.jsxs)(a.P3F, {
     className: M.clickableText,
     onClick: e => {
       z({
@@ -272,7 +272,7 @@ function F(e) {
     value: Y,
     children: (0, r.jsxs)(T.Z, {
       ref: q,
-      className: a()(M.card, V),
+      className: o()(M.card, V),
       onAction: z,
       onClose: Z,
       children: [(0, r.jsx)(A.Z, B(U({}, Q), {
@@ -290,11 +290,11 @@ function F(e) {
           className: M.content,
           children: [!t.bot && ee(), (0, r.jsxs)("div", {
             className: M.details,
-            children: [eo(), !t.bot && (0, r.jsx)(S.Z, {
+            children: [ea(), !t.bot && (0, r.jsx)(S.Z, {
               user: t,
               activity: i,
               className: M.badges
-            }), ea(), W === D.lY.MODAL_V2 && el()]
+            }), eo(), W === D.lY.MODAL_V2 && el()]
           }), W === D.lY.MODAL && el()]
         }), es()]
       }), W !== D.lY.MODAL && W !== D.lY.MODAL_V2 && el()]

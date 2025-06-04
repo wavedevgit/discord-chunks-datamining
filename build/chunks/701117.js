@@ -12,7 +12,7 @@ try {
   delete window.sessionStorage
 } catch (e) {}
 
-function a() {
+function o() {
   let e = "test";
   try {
     return r.setItem(e, e), r.removeItem(e), !0
@@ -20,7 +20,7 @@ function a() {
     return !1
   }
 }
-class o {
+class a {
   get(e, t) {
     let n = r.getItem(e);
     if (null != n) try {
@@ -40,4 +40,4 @@ class o {
     r.clear()
   }
 }
-let s = a() ? new o : new i.R
+let s = o() ? new a : new i.R

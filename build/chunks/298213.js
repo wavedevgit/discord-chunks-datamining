@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(570140),
   i = n(194359),
-  a = n(855796),
-  o = n(497060),
+  o = n(855796),
+  a = n(497060),
   s = n(699516),
   l = n(885149),
   c = n(981631);
@@ -55,14 +55,14 @@ function p(e) {
     userId: t,
     applicationId: n,
     location: r,
-    confirmStrangerRequest: o = !1
+    confirmStrangerRequest: a = !1
   } = e;
-  return null != n ? a.Z.acceptGameFriendRequest({
+  return null != n ? o.Z.acceptGameFriendRequest({
     userId: t,
     applicationId: n
   }) : i.Z.acceptFriendRequest({
     userId: t,
-    confirmStrangerRequest: o,
+    confirmStrangerRequest: a,
     context: {
       location: r
     }
@@ -75,8 +75,8 @@ function h(e) {
     applicationId: n,
     location: r,
     onConfirm: i,
-    onCancel: a
-  } = e, c = (0, o.pB)("useFriendRequestActions"), u = s.Z.isStranger(t);
+    onCancel: o
+  } = e, c = (0, a.pB)("useFriendRequestActions"), u = s.Z.isStranger(t);
   return null == n && c && !1 !== u ? u && c ? void(0, l.c)({
     onConfirm: () => {
       p({
@@ -87,7 +87,7 @@ function h(e) {
       }), null == i || i()
     },
     onCancel: () => {
-      null == a || a()
+      null == o || o()
     }
   }) : c ? void p({
     userId: t,
@@ -99,7 +99,7 @@ function h(e) {
       applicationId: n,
       location: r,
       onConfirm: i,
-      onCancel: a
+      onCancel: o
     }) || null == i || i()
   }).catch(e => {
     m(e, {
@@ -107,7 +107,7 @@ function h(e) {
       applicationId: n,
       location: r,
       onConfirm: i,
-      onCancel: a
+      onCancel: o
     })
   }) : void 0 : p({
     userId: t,
@@ -149,7 +149,7 @@ let g = {
       applicationId: n,
       location: r
     } = e;
-    null != n ? a.Z.removeGameFriend({
+    null != n ? o.Z.removeGameFriend({
       userId: t,
       applicationId: n
     }) : i.Z.removeFriend(t, {
@@ -162,7 +162,7 @@ let g = {
       applicationId: n,
       location: r
     } = e;
-    return null != n ? a.Z.cancelGameFriendRequest({
+    return null != n ? o.Z.cancelGameFriendRequest({
       userId: t,
       applicationId: n
     }) : i.Z.cancelFriendRequest(t, {

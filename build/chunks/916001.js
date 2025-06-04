@@ -1,43 +1,43 @@
 /** Chunk was on 73628 **/
-r.d(t, {
-  Z: () => A
+n.d(t, {
+  Z: () => i
 });
-var n = r(255367);
-r(73800);
-var i = r(866442),
-  a = r(481060),
-  l = r(388032),
-  o = r(838997);
+var r = n(255367);
+n(73800);
+var A = n(866442),
+  a = n(481060),
+  l = n(388032),
+  o = n(838997);
 
-function A(e) {
+function i(e) {
   let {
     locked: t,
-    role: r,
-    textVariant: A = "text-xs/medium"
+    role: n,
+    textVariant: i = "text-xs/medium"
   } = e, s = (0, a.dQu)(a.TVs.colors.INTERACTIVE_NORMAL).hex();
-  return (0, n.jsx)("div", {
+  return (0, r.jsx)("div", {
     className: o.roleTagContainer,
-    children: (0, n.jsxs)("div", {
+    children: (0, r.jsxs)("div", {
       className: o.roleTag,
-      children: [(0, n.jsx)("div", {
+      children: [(0, r.jsx)("div", {
         className: o.roleColor,
         style: {
-          backgroundColor: (0, i.Rf)(r.color)
+          backgroundColor: (0, A.Rf)(n.color)
         }
-      }), (0, n.jsx)(a.LZC, {
+      }), (0, r.jsx)(a.LZC, {
         size: 8,
         horizontal: !0
-      }), (0, n.jsxs)(a.Text, {
-        variant: A,
+      }), (0, r.jsxs)(a.Text, {
+        variant: i,
         color: "text-normal",
-        children: [(0, n.jsx)(a.nn4, {
+        children: [(0, r.jsx)(a.nn4, {
           children: l.intl.string(l.t.RnyseH)
-        }), r.name]
-      }), !0 === t && (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsx)(a.LZC, {
+        }), n.name]
+      }), !0 === t && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(a.LZC, {
           size: 8,
           horizontal: !0
-        }), (0, n.jsx)(a.mBM, {
+        }), (0, r.jsx)(a.mBM, {
           size: "md",
           color: s
         })]

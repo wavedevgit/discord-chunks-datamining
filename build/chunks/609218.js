@@ -6,8 +6,8 @@ n.d(t, {
 }), n(953529);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(780384),
   c = n(481060),
@@ -37,7 +37,7 @@ function P(e) {
   let {
     containerContext: t,
     image: n,
-    title: a,
+    title: o,
     description: C,
     enableSocialProof: P,
     analyticsLocationSection: R,
@@ -74,7 +74,7 @@ function P(e) {
       onClick: D,
       isVisible: !0
     }), (0, r.jsxs)("div", {
-      className: o()(T.container, G()),
+      className: a()(T.container, G()),
       children: [(0, r.jsxs)("div", {
         className: T.content,
         children: [(0, r.jsx)(c.olH, {
@@ -90,7 +90,7 @@ function P(e) {
             className: T.title,
             variant: "heading-xl/bold",
             color: "header-primary",
-            children: a
+            children: o
           }), (0, r.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "text-secondary",
@@ -136,7 +136,7 @@ function P(e) {
       onClick: D,
       isVisible: !0
     }), (0, r.jsxs)("div", {
-      className: o()(A.container, G()),
+      className: a()(A.container, G()),
       children: [(0, r.jsx)(c.olH, {
         onClick: D,
         className: A.closeButton
@@ -149,11 +149,11 @@ function P(e) {
           src: n.url,
           alt: "Nitro Perk"
         }), (0, r.jsx)(c.X6q, {
-          className: o()(A.title, {
+          className: a()(A.title, {
             [A.titleNoSocialProof]: !U
           }),
           variant: "heading-xl/bold",
-          children: a
+          children: o
         }), U && (0, r.jsx)(O.Z, {
           affinities: M
         }), (0, r.jsx)(c.Text, {

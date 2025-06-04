@@ -1,4 +1,4 @@
-/** Chunk was on 28767 **/
+/** Chunk was on 18895 **/
 n.d(t, {
   Vz: () => c,
   Zn: () => d,
@@ -8,15 +8,15 @@ var i = n(392711),
   r = n(772848),
   o = n(134432),
   l = n(963838),
-  s = n(302221),
-  a = n(347904);
+  a = n(302221),
+  s = n(347904);
 let c = 7.5,
   u = (0, i.memoize)((e, t, n, i) => new Promise(e => {
     let r = new Image;
     r.src = t, r.crossOrigin = "Anonymous", r.onload = () => {
       let t = 32 * (0, o.x_)(),
         l = JSON.stringify(n);
-      if (null != i && (l = (0, a.s4)(l, (0, s.oo)(i))), r.width === t && r.height === t || 0 === r.width && 0 === r.height) e(JSON.parse(l));
+      if (null != i && (l = (0, s.s4)(l, (0, a.oo)(i))), r.width === t && r.height === t || 0 === r.width && 0 === r.height) e(JSON.parse(l));
       else {
         let t = 128 / r.width * r.height;
         e(JSON.parse(l = (l = l.replace(/"w":128,"h":128/, '"w":128,"h":'.concat(t))).replace(/"a":{"a":0,"k":\[64,64/, '"a":{"a":0,"k":[64,'.concat(t / 2))))
@@ -27,16 +27,16 @@ let c = 7.5,
 function d(e, t, n, i) {
   let {
     emojiSize: o,
-    key: s,
-    messageId: a
+    key: a,
+    messageId: s
   } = null != i ? i : {}, c = (0, l._r)(e, null != o ? 2 * o : void 0);
   return {
     channelId: n,
-    messageId: a,
+    messageId: s,
     emoji: e,
     animationId: (0, r.Z)(),
     url: c,
-    key: s,
+    key: a,
     color: t
   }
 }

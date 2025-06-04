@@ -4,16 +4,16 @@ n.d(t, {
   Mt: () => d,
   Sh: () => r.S,
   TO: () => l,
-  W$: () => o,
-  Yn: () => a.Yn,
+  W$: () => a,
+  Yn: () => o.Yn,
   aB: () => i.a,
   jj: () => u,
   zZ: () => s
 });
 var r = n(839548),
   i = n(946695),
-  a = n(65154),
-  o = function(e) {
+  o = n(65154),
+  a = function(e) {
     return e.INPUT_DEVICE = "input_device", e.STREAM = "stream", e
   }({}),
   s = function(e) {
@@ -25,11 +25,11 @@ var r = n(839548),
 
 function c(e) {
   switch (e) {
-    case a.AS.NATIVE:
+    case o.AS.NATIVE:
       return n(743426).Z;
-    case a.AS.WEBRTC:
+    case o.AS.WEBRTC:
       return n(959856).Z;
-    case a.AS.DUMMY:
+    case o.AS.DUMMY:
     default:
       return n(135670).Z
   }
@@ -37,7 +37,7 @@ function c(e) {
 
 function u() {
   var e;
-  return null != (e = [a.AS.NATIVE, a.AS.WEBRTC].find(e => c(e).supported())) ? e : a.AS.DUMMY
+  return null != (e = [o.AS.NATIVE, o.AS.WEBRTC].find(e => c(e).supported())) ? e : o.AS.DUMMY
 }
 
 function d(e) {

@@ -6,10 +6,10 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(944060),
-  a = n(53625);
+  o = n(53625);
 
-function o() {
-  return (o = Object.assign || function(e) {
+function a() {
+  return (a = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -46,16 +46,16 @@ function d(e, t) {
     var n = [],
       r = !0,
       i = !1,
-      a = void 0;
+      o = void 0;
     try {
-      for (var o, s = e[Symbol.iterator](); !(r = (o = s.next()).done) && (n.push(o.value), !t || n.length !== t); r = !0);
+      for (var a, s = e[Symbol.iterator](); !(r = (a = s.next()).done) && (n.push(a.value), !t || n.length !== t); r = !0);
     } catch (e) {
-      i = !0, a = e
+      i = !0, o = e
     } finally {
       try {
         r || null == s.return || s.return()
       } finally {
-        if (i) throw a
+        if (i) throw o
       }
     }
     return n
@@ -70,8 +70,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -79,8 +79,8 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var h = (0, r.createContext)(null),
@@ -92,8 +92,8 @@ var h = (0, r.createContext)(null),
       u = l[1];
     return r.createElement(h.Provider, {
       value: null != t ? t : c
-    }, r.createElement(i.W, o({
-      backend: a.Q
+    }, r.createElement(i.W, a({
+      backend: o.Q
     }, n)), t ? null : r.createElement("div", {
       ref: u
     }))

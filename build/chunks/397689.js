@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(906732),
@@ -62,7 +62,7 @@ function v(e) {
   let {
     user: t,
     guild: n,
-    displayProfile: a,
+    displayProfile: o,
     canUsePremiumCustomization: f,
     previewAvatar: g,
     previewAvatarDecoration: b,
@@ -75,10 +75,10 @@ function v(e) {
   } = e, C = i.useRef(null), {
     analyticsLocations: P,
     newestAnalyticsLocation: R
-  } = (0, c.ZP)(), w = (0, s.e7)([d.Z], () => d.Z.getStatus(t.id)), D = null == n || (null == a ? void 0 : a.canUsePremiumProfileCustomization) || f, L = (0, r.jsx)(O, {
+  } = (0, c.ZP)(), w = (0, s.e7)([d.Z], () => d.Z.getStatus(t.id)), D = null == n || (null == o ? void 0 : o.canUsePremiumProfileCustomization) || f, L = (0, r.jsx)(O, {
     src: g,
     avatarDecoration: b,
-    imageClassName: o()(S, {
+    imageClassName: a()(S, {
       [m.overlay]: !T
     }),
     size: l.EFr.SIZE_80,
@@ -116,7 +116,7 @@ function v(e) {
     },
     children: e => (0, r.jsxs)(l.P3F, y(E({}, e), {
       innerRef: C,
-      className: o()(m.avatar, m.clickable),
+      className: a()(m.avatar, m.clickable),
       children: [L, (0, r.jsx)(l.vdY, {
         size: "custom",
         className: m.overlayIcon,
@@ -127,7 +127,7 @@ function v(e) {
     }))
   }) : (0, r.jsxs)(l.P3F, {
     onClick: N,
-    className: o()(m.avatar, m.clickable),
+    className: a()(m.avatar, m.clickable),
     children: [L, (0, r.jsx)(l.SrA, {
       size: "custom",
       className: m.overlayIcon,

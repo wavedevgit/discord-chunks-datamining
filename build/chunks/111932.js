@@ -1,4 +1,4 @@
-/** Chunk was on 28767 **/
+/** Chunk was on 18895 **/
 e.exports = {
   container: "container_cc2dff",
   scroller: "scroller_cc2dff",

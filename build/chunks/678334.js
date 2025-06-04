@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(512722),
-  o = n.n(a),
+  o = n(512722),
+  a = n.n(o),
   s = n(481060),
   l = n(906732),
   c = n(600164),
@@ -31,7 +31,7 @@ function A(e) {
   let {
     premiumSubscription: t,
     setPurchaseState: n,
-    onBack: a,
+    onBack: o,
     onNext: A,
     legalTermsNodeRef: N,
     flashLegalTerms: C,
@@ -67,15 +67,15 @@ function A(e) {
     inReverseTrial: er,
     premiumRebrandBackgroundClassName: ei
   } = (0, b.JL)(), {
-    isGift: ea,
-    selectedGiftStyle: eo,
+    isGift: eo,
+    selectedGiftStyle: ea,
     customGiftMessage: es,
     emojiConfetti: el,
     soundEffect: ec,
     giftRecipient: eu,
     selectedGiftingPromotionReward: ed
   } = (0, E.wD)(), ef = (0, u.a5)(H), e_ = (0, m.MY)(eu), ep = {};
-  ep.gift_style = eo, ep.reward_sku_ids = ef && (null == ed ? void 0 : ed.skuId) != null ? [null == ed ? void 0 : ed.skuId] : [], e_ === m.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (o()(null != eu, "Gift recipient must be set at purchase review step for these gift options."), ep.recipient_id = eu.id, ep.custom_message = es, ep.emoji_id = null == el ? void 0 : el.id, ep.emoji_name = (null == el ? void 0 : el.id) == null ? null == el ? void 0 : el.surrogates : void 0, ep.sound_id = null == ec ? void 0 : ec.soundId);
+  ep.gift_style = ea, ep.reward_sku_ids = ef && (null == ed ? void 0 : ed.skuId) != null ? [null == ed ? void 0 : ed.skuId] : [], e_ === m.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && (a()(null != eu, "Gift recipient must be set at purchase review step for these gift options."), ep.recipient_id = eu.id, ep.custom_message = es, ep.emoji_id = null == el ? void 0 : el.id, ep.emoji_name = (null == el ? void 0 : el.id) == null ? null == el ? void 0 : el.surrogates : void 0, ep.sound_id = null == ec ? void 0 : ec.soundId);
   let eh = null == H ? void 0 : H.id,
     em = (0, O.sE)(x, Y.paymentSourceId, eh),
     {
@@ -86,7 +86,7 @@ function A(e) {
     [eO, ev] = i.useState(!1),
     {
       hasEntitlements: eI
-    } = (0, _.H)(eh, ea),
+    } = (0, _.H)(eh, eo),
     eS = (0, g.Ap)(Y.paymentSourceId),
     eT = eI || em,
     eA = (0, d.U)(),
@@ -94,7 +94,7 @@ function A(e) {
     eC = null;
   if (z === S.GZQ.ONE_TIME) {
     var eP;
-    o()(null != X, "SKU must be selected for one-time purchases"), eN = null != (eP = J[X]) ? eP : null, o()(null != eN, "SKU must exist and be fetched.");
+    a()(null != X, "SKU must be selected for one-time purchases"), eN = null != (eP = J[X]) ? eP : null, a()(null != eN, "SKU must exist and be fetched.");
     let e = $[X],
       t = null != q ? q : h.c;
     eC = null != e ? e[t] : null
@@ -107,7 +107,7 @@ function A(e) {
       setPurchaseError: K,
       hasRedirectURL: eO,
       setHasRedirectURL: ev,
-      isGift: ea,
+      isGift: eo,
       baseAnalyticsData: D,
       analyticsLocation: M,
       analyticsLocations: eg,
@@ -147,9 +147,9 @@ function A(e) {
     let {
       makePurchase: e
     } = eD.current;
-    em && !ea && null == t && e()
-  }, [em, ea, t]);
-  let eL = null != U || z === S.GZQ.ONE_TIME && !ea;
+    em && !eo && null == t && e()
+  }, [em, eo, t]);
+  let eL = null != U || z === S.GZQ.ONE_TIME && !eo;
   return em ? null : (0, r.jsxs)(s.mzw, {
     align: c.Z.Align.CENTER,
     className: ei,
@@ -161,7 +161,7 @@ function A(e) {
       flashLegalTerms: C,
       isSubmitting: eb,
       premiumSubscription: t,
-      isGift: ea,
+      isGift: eo,
       planGroup: k,
       isPrepaid: eS,
       isTrial: V,
@@ -173,7 +173,7 @@ function A(e) {
     }), (0, r.jsx)(I.Z, {}), B && !eL ? (0, r.jsx)("div", {
       className: T.back,
       children: (0, r.jsx)(f.Z, {
-        onClick: a
+        onClick: o
       })
     }) : null]
   })

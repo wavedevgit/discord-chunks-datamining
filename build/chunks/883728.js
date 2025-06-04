@@ -1,4 +1,4 @@
-/** Chunk was on 28767 **/
+/** Chunk was on 18895 **/
 n.d(t, {
   Z: () => l
 });
@@ -10,12 +10,12 @@ let l = e => {
   let {
     facepileRef: t,
     goToThread: l,
-    channel: s
+    channel: a
   } = e;
   return {
     handleLeftClick: e => {
       var n;
-      (0, r.k)(e.target) && (null == (n = t.current) ? void 0 : n.contains(e.target)) || l(s, e.shiftKey)
+      (0, r.k)(e.target) && (null == (n = t.current) ? void 0 : n.contains(e.target)) || l(a, e.shiftKey)
     },
     handleRightClick: e => (0, o.jW)(e, async () => {
       let {
@@ -41,7 +41,7 @@ let l = e => {
           }
           return e
         }({}, t), r = r = {
-          channel: s
+          channel: a
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(120356),
-  a = n.n(i),
-  o = n(112360);
+  o = n.n(i),
+  a = n(112360);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,8 +56,8 @@ function d(e) {
     text: s
   } = e;
   if (i.commandName) {
-    let e = a()(o.commandName, {
-      [o.emptyText]: "" === s.text
+    let e = o()(a.commandName, {
+      [a.emptyText]: "" === s.text
     });
     return (0, r.jsx)("span", u(l({}, t), {
       className: e,

@@ -1,4 +1,4 @@
-/** Chunk was on 90202 **/
+/** Chunk was on 72791 **/
 n.d(t, {
   Z: () => P
 }), n(539854), n(388685);
@@ -19,8 +19,8 @@ var a = n(442837),
   T = n(981631),
   N = n(176505),
   S = n(388032),
-  p = n(246752),
-  R = n(240211);
+  R = n(246752),
+  p = n(240211);
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -48,14 +48,14 @@ let P = 12633 == n.j ? () => {
     f = (0, o.TH)(),
     D = (null == (e = (0, o.LX)(f.pathname, T.Z5c.CHANNEL(null == P ? void 0 : P.id, N.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
   if (null == P || !(0, I.Dc)(P) || D) return null;
-  let h = null != (t = null == C ? void 0 : C.applicationStatus) ? t : _.wB.STARTED,
-    m = null,
-    y = null,
+  let m = null != (t = null == C ? void 0 : C.applicationStatus) ? t : _.wB.STARTED,
     g = null,
-    U = [p.notice, R.notice];
-  switch (h) {
+    y = null,
+    h = null,
+    U = [R.notice, p.notice];
+  switch (m) {
     case _.wB.SUBMITTED:
-      m = S.intl.string(S.t["5iLvS0"]), y = S.intl.string(S.t.mqtdmZ), g = () => {
+      g = S.intl.string(S.t["5iLvS0"]), y = S.intl.string(S.t.mqtdmZ), h = () => {
         (0, s.h7j)(e => {
           var t, n;
           return (0, r.jsx)(s.ConfirmModal, (t = A({
@@ -83,7 +83,7 @@ let P = 12633 == n.j ? () => {
       };
       break;
     case _.wB.REJECTED:
-      m = S.intl.string(S.t.lk30cX), y = S.intl.string(S.t["8RrsHh"]), g = () => {
+      g = S.intl.string(S.t.lk30cX), y = S.intl.string(S.t["8RrsHh"]), h = () => {
         (0, s.ZDy)(async () => {
           let {
             default: e
@@ -92,25 +92,25 @@ let P = 12633 == n.j ? () => {
             guildId: P.id
           }, t))
         })
-      }, U.push(p.error);
+      }, U.push(R.error);
       break;
     default:
-      m = S.intl.string(S.t.G5YKXF), y = S.intl.string(S.t["r8/DT0"]), g = () => {
+      g = S.intl.string(S.t.G5YKXF), y = S.intl.string(S.t["r8/DT0"]), h = () => {
         (0, d.hk)(P.id)
       }
   }
   return (0, r.jsxs)("div", {
     className: l()(...U),
     children: [(0, r.jsx)(s.Text, {
-      className: p.header,
+      className: R.header,
       variant: "text-sm/normal",
-      children: m
+      children: g
     }), (0, r.jsx)(s.zxk, {
-      className: p.button,
+      className: R.button,
       look: s.zxk.Looks.OUTLINED,
       color: s.zxk.Colors.WHITE,
       size: s.zxk.Sizes.NONE,
-      onClick: g,
+      onClick: h,
       children: y
     })]
   })
