@@ -105,9 +105,8 @@ function A(e) {
     giftRecipient: V,
     returnRef: Z,
     subscription: H,
-    skipConfirm: Y,
-    repeatPurchase: W
-  } = null != e ? e : {}, K = !1, z = (0, o.Z)(), q = p.default.getCurrentUser(), Q = (0, g.M5)(q, b.p9.TIER_2), X = a()("payment-modal"), J = (0, g.Wz)(M);
+    skipConfirm: Y
+  } = null != e ? e : {}, W = !1, K = (0, o.Z)(), z = p.default.getCurrentUser(), q = (0, g.M5)(z, b.p9.TIER_2), Q = a()("payment-modal"), X = (0, g.Wz)(M);
   return (0, s.ZDy)(async () => {
     let {
       default: e
@@ -117,9 +116,9 @@ function A(e) {
         onClose: a
       } = n, o = S(n, ["onClose"]);
       return (0, r.jsx)(e, I(O({}, o), {
-        loadId: z,
+        loadId: K,
         subscriptionTier: M,
-        skuId: J,
+        skuId: X,
         isGift: D,
         giftMessage: L,
         giftStyle: x,
@@ -128,13 +127,13 @@ function A(e) {
         initialPlanId: t,
         followupSKUInfo: i,
         onClose: (e, t) => {
-          a(), null == y || y(e), e && (null == T || T(), (0, _.I)(D, Q, t) && m.S.dispatch(E.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
+          a(), null == y || y(e), e && (null == T || T(), (0, _.I)(D, q, t) && m.S.dispatch(E.CkL.PREMIUM_SUBSCRIPTION_CREATED)), l.Z.dispatch({
             type: "PREMIUM_PAYMENT_MODAL_CLOSE",
             didSucceed: e
           })
         },
         onComplete: e => {
-          K = !0, null == v || v(), (0, _.I)(D, Q, (0, g.k5)(null == e ? void 0 : e.subscription)) && (0, f.H)(!0)
+          W = !0, null == v || v(), (0, _.I)(D, q, (0, g.k5)(null == e ? void 0 : e.subscription)) && (0, f.H)(!0)
         },
         onSubscriptionConfirmation: T,
         analyticsLocations: A,
@@ -151,25 +150,24 @@ function A(e) {
         referralTrialOfferId: F,
         returnRef: Z,
         subscription: H,
-        skipConfirm: !!Y,
-        repeatPurchase: W
+        skipConfirm: !!Y
       }))
     }
   }, {
-    modalKey: X,
+    modalKey: Q,
     onCloseCallback: () => {
-      K || h.default.track(E.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: z,
+      W || h.default.track(E.rMx.PAYMENT_FLOW_CANCELED, {
+        load_id: K,
         payment_type: E.Zuq[E.GZQ.SUBSCRIPTION],
         location: null != C ? C : N,
         source: P,
         subscription_type: E.NYc.PREMIUM,
         is_gift: D,
-        sku_id: J,
+        sku_id: X,
         eligible_for_trial: null != j,
         application_id: B,
         location_stack: A
-      }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == y || y(K), K && (null == T || T())
+      }), (0, u.fw)(), (0, c.fw)(), (0, d.p)(), null == y || y(W), W && (null == T || T())
     }
   })
 }

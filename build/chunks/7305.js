@@ -241,10 +241,9 @@ function F(e) {
       loadId: m,
       paymentModalBanner: _,
       referralCode: L,
-      repeatPurchase: g,
-      subscriptionTier: y
+      subscriptionTier: g
     } = e;
-  if (null != y && !Object.values(w.Si).includes(y)) throw Error("subscriptionTier must be a premium subscription");
+  if (null != g && !Object.values(w.Si).includes(g)) throw Error("subscriptionTier must be a premium subscription");
   return (0, l.jsx)(C.Gt, {
     value: t,
     children: (0, l.jsx)(h.PaymentContextProvider, {
@@ -255,7 +254,6 @@ function F(e) {
       isGift: j,
       defaultPlanId: s,
       referralCode: L,
-      repeatPurchase: g,
       children: (0, l.jsx)(f.c1, {
         confirmationFooter: i,
         paymentModalBanner: _,
