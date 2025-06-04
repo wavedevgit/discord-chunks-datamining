@@ -33,8 +33,8 @@ var r = n(255367),
   A = n(119850),
   Z = n(938736),
   x = n(227140),
-  L = n(474936),
-  w = n(981631),
+  w = n(474936),
+  L = n(981631),
   R = n(921944),
   D = n(388032),
   k = n(419720);
@@ -46,8 +46,8 @@ let M = e => {
   },
   U = e => {
     let t, n, E, U;
-    var G, V, {
-        selected: B,
+    var G, B, {
+        selected: V,
         route: H,
         locationState: F
       } = e,
@@ -70,10 +70,10 @@ let M = e => {
       Y = (0, a.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()),
       K = (0, _.Qo)(W, Y),
       q = (0, l.JA)("nitro"),
-      X = (0, v.N)(),
-      Q = (0, I.Ng)(),
+      Q = (0, v.N)(),
+      X = (0, I.Ng)(),
       J = (0, O.W)(),
-      $ = (0, a.e7)([g.Z], () => g.Z.isLocalizedPromoEnabled) && null == X,
+      $ = (0, a.e7)([g.Z], () => g.Z.isLocalizedPromoEnabled) && null == Q,
       ee = (0, N.Vi)(),
       et = (0, A.V)(),
       en = (0, Z.Kn)("NitroTabButton"),
@@ -84,18 +84,18 @@ let M = e => {
       } = (0, d.Z)({
         forceFetch: !0
       }),
-      [ea, eo] = (0, h.bf)(er !== L.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
+      [ea, eo] = (0, h.bf)(er !== w.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
         showAfterTimestamp: ei.valueOf(),
         cooldownDurationMs: 0
       }),
-      es = (null == X ? void 0 : X.trial_id) === L.a7,
+      es = (null == Q ? void 0 : Q.trial_id) === w.a7,
       [ec, eu] = (0, h.US)(J ? [o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2] : [], void 0, !0);
     if (i.useEffect(() => {
-        !0 === B && null != ec && eu(R.L.AUTO_DISMISS)
-      }, [eu, B, ec]), !M({
-        selected: B
+        !0 === V && null != ec && eu(R.L.AUTO_DISMISS)
+      }, [eu, V, ec]), !M({
+        selected: V
       })) return null;
-    er === L.a$.NONE || J || (U = 7, E = (0, r.jsx)(y.Z, {
+    er === w.a$.NONE || J || (U = 7, E = (0, r.jsx)(y.Z, {
       className: "",
       startsAt: ei,
       endsAt: el,
@@ -106,20 +106,20 @@ let M = e => {
     }), U = 4) : null != et ? (E = (0, r.jsx)(x.Z, {
       copy: et,
       showStars: !1
-    }), U = 1) : null != Q ? (E = (0, r.jsx)(T.GN, {
-      userDiscount: Q,
-      isTabSelected: B,
+    }), U = 1) : null != X ? (E = (0, r.jsx)(T.GN, {
+      userDiscount: X,
+      isTabSelected: V,
       includesAmountOff: !1
-    }), U = 3) : null == X || es ? en ? (E = (0, r.jsx)(P.l, {
-      isSelected: B,
+    }), U = 3) : null == Q || es ? en ? (E = (0, r.jsx)(P.l, {
+      isSelected: V,
       onSelect: () => (0, p.EW)(o.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: R.L.TAKE_ACTION
       })
     }), U = 6) : $ && (E = (0, r.jsx)(S.k, {
       entryPoint: S.U.PrivateMessages
-    }), B || (t = k.localizeBadge), U = 5) : (E = (0, r.jsx)(T.$H, {
-      trialOffer: X,
-      isTabSelected: B
+    }), V || (t = k.localizeBadge), U = 5) : (E = (0, r.jsx)(T.$H, {
+      trialOffer: Q,
+      isTabSelected: V
     }), U = 4);
     let ed = (0, r.jsx)(c.Qj, (G = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -139,30 +139,30 @@ let M = e => {
       }
       return e
     }({
-      selected: B,
+      selected: V,
       route: H,
       icon: s.SrA,
       text: D.intl.string(D.t.Ipxkoq),
       locationState: F,
       onClick: () => {
-        ea === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eo(R.L.TAKE_ACTION), b.default.track(w.rMx.NITRO_TAB_VISITED, {
+        ea === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eo(R.L.TAKE_ACTION), b.default.track(L.rMx.NITRO_TAB_VISITED, {
           badge_decorator: U,
           has_premium: K
         }), null != ec && eu(R.L.USER_DISMISS)
       }
-    }, z, q), V = V = {
+    }, z, q), B = B = {
       className: t,
       avatarWithTextClassName: n,
       children: E
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(G, Object.getOwnPropertyDescriptors(V)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(G, Object.getOwnPropertyDescriptors(B)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(V)).forEach(function(e) {
-      Object.defineProperty(G, e, Object.getOwnPropertyDescriptor(V, e))
+    })(Object(B)).forEach(function(e) {
+      Object.defineProperty(G, e, Object.getOwnPropertyDescriptor(B, e))
     }), G));
     return en ? (0, r.jsx)(P.C, {
       children: ed

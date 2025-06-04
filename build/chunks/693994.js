@@ -1,11 +1,12 @@
-/** Chunk was on 31823 **/
-e.exports = {
-  confirmModal: "confirmModal__1b38b",
-  discordTag: "discordTag__1b38b",
-  avatarIcon: "avatarIcon__1b38b",
-  username: "username__1b38b",
-  discriminator: "discriminator__1b38b",
-  fromToWrapper: "fromToWrapper__1b38b",
-  from: "from__1b38b",
-  to: "to__1b38b"
-}
+/** Chunk was on 44727 **/
+d.r(s), d.d(s, {
+  default: () => i,
+  messagesLoader: () => t
+});
+let {
+  createLoader: n
+} = d(249288), t = n({
+  "en-US": () => d.e("78531").then(d.bind(d, 469665))
+}, "en-US"), {
+  makeMessagesProxy: a
+} = d(249288), i = a(t)

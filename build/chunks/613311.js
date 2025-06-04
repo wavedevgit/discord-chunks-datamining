@@ -32,16 +32,16 @@ var r = n(255367),
   A = n(430824),
   Z = n(496675),
   x = n(525395),
-  L = n(558314),
-  w = n(580130),
+  w = n(558314),
+  L = n(580130),
   R = n(55563),
   D = n(551428),
   k = n(695103),
   M = n(451478),
   U = n(626135),
   G = n(572004),
-  V = n(630388),
-  B = n(937615),
+  B = n(630388),
+  V = n(937615),
   H = n(73346),
   F = n(3570),
   z = n(689796),
@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(506648),
   K = n(449275),
   q = n(445986),
-  X = n(119520),
-  Q = n(450233),
+  Q = n(119520),
+  X = n(450233),
   J = n(726581),
   $ = n(74153),
   ee = n(125930),
@@ -348,7 +348,7 @@ class ed extends i.PureComponent {
       } = o;
       a.offers = v.Z.Offer({
         priceCurrency: t.toUpperCase(),
-        price: (0, B.T4)(e, t, {
+        price: (0, V.T4)(e, t, {
           style: "decimal"
         })
       })
@@ -409,7 +409,7 @@ class ed extends i.PureComponent {
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(C.yY, {
           location: e.name
-        }), this.renderJsonLD(), this.renderHeader(e, t), (0, r.jsx)(X.Z, {
+        }), this.renderJsonLD(), this.renderHeader(e, t), (0, r.jsx)(Q.Z, {
           game: e
         }), n]
       })
@@ -561,8 +561,8 @@ class ed extends i.PureComponent {
             }),
             children: [null != t ? (0, N.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
               children: "deprecated!"
-            }) : null, (0, r.jsx)(Q.Z, {
-              messageStyle: Q.G.SHORT,
+            }) : null, (0, r.jsx)(X.Z, {
+              messageStyle: X.G.SHORT,
               className: eo.purchaseError
             })]
           })
@@ -599,7 +599,7 @@ class ed extends i.PureComponent {
     })
   }
 }
-let ep = (0, b.Z)((0, _.Z)(o.ZP.connectStores([L.Z, j.Z, P.default, M.Z, D.Z, R.Z, k.Z, E.Z, O.Z, x.Z, A.Z, w.Z], e => {
+let ep = (0, b.Z)((0, _.Z)(o.ZP.connectStores([w.Z, j.Z, P.default, M.Z, D.Z, R.Z, k.Z, E.Z, O.Z, x.Z, A.Z, L.Z], e => {
   let t, n, r, {
     inputSkuId: i,
     applicationId: l,
@@ -613,13 +613,13 @@ let ep = (0, b.Z)((0, _.Z)(o.ZP.connectStores([L.Z, j.Z, P.default, M.Z, D.Z, R.
   } else if (null == i) {
     if (null == l) throw Error("Needs applicationId or skuId");
     null != (r = O.Z.getApplication(l)) && (t = r.destinationSkuId), n = null != t ? R.Z.get(t) : null
-  }(null == n ? void 0 : n.flags) != null && (0, V.yE)(n.flags, ei.l4R.STICKER_PACK) && (n = null);
+  }(null == n ? void 0 : n.flags) != null && (0, B.yE)(n.flags, ei.l4R.STICKER_PACK) && (n = null);
   let c = null != l && (k.Z.inTestModeForApplication(l) || E.Z.inDevModeForApplication(l));
   return {
     skuId: t,
     application: null != l ? O.Z.getApplication(l) : null,
-    isFetchingEntitlements: null != l && w.Z.applicationIdsFetching.has(l),
-    didFetchEntitlements: null != l && w.Z.applicationIdsFetched.has(l),
+    isFetchingEntitlements: null != l && L.Z.applicationIdsFetching.has(l),
+    didFetchEntitlements: null != l && L.Z.applicationIdsFetched.has(l),
     shouldFetchStatistics: o && null != l && x.Z.shouldFetchStatisticsForApplication(l),
     sku: n,
     isFocused: M.Z.isFocused(),
@@ -630,7 +630,7 @@ let ep = (0, b.Z)((0, _.Z)(o.ZP.connectStores([L.Z, j.Z, P.default, M.Z, D.Z, R.
       isTestMode: c
     }),
     isInTestMode: null != l && c,
-    matureAgree: L.Z.didMatureAgree,
+    matureAgree: w.Z.didMatureAgree,
     theme: j.Z.theme,
     locale: P.default.locale,
     guild: null != s ? A.Z.getGuild(s.getGuildId()) : null

@@ -32,16 +32,16 @@ var r = n(255367),
   A = n(108427),
   Z = n(970731),
   x = n(210887),
-  L = n(433355),
-  w = n(592125),
+  w = n(433355),
+  L = n(592125),
   R = n(819640),
   D = n(626135),
   k = n(647090),
   M = n(385956),
   U = n(610697),
   G = n(26373),
-  V = n(486622),
-  B = n(488634),
+  B = n(486622),
+  V = n(488634),
   H = n(899740),
   F = n(177033),
   z = n(355350),
@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(96479),
   K = n(480874),
   q = n(687683),
-  X = n(981631),
-  Q = n(921944),
+  Q = n(981631),
+  X = n(921944),
   J = n(526761),
   $ = n(388032),
   ee = n(596576),
@@ -67,13 +67,13 @@ function en() {
     }, []),
     {
       rejectAll: p
-    } = (0, V.m)({
+    } = (0, B.m)({
       onError: u
     }),
     h = (0, _.Z)("message-requests-list"),
     {
       channelId: f
-    } = (0, B._)(),
+    } = (0, V._)(),
     m = i.useCallback(() => {
       p(n.map(e => e.channel.id))
     }, [n, p]),
@@ -185,16 +185,16 @@ function er(e) {
   let {
     pageWidth: t,
     onSidebarResize: n
-  } = e, i = (0, c.e7)([L.ZP], () => L.ZP.getSidebarState(L.uZ)), l = (0, c.e7)([w.Z], () => w.Z.getChannel(null == i ? void 0 : i.channelId));
+  } = e, i = (0, c.e7)([w.ZP], () => w.ZP.getSidebarState(w.uZ)), l = (0, c.e7)([L.Z], () => L.Z.getChannel(null == i ? void 0 : i.channelId));
   if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
-  let a = t - X.R7I;
+  let a = t - Q.R7I;
   return (0, r.jsx)(E.Z, {
     sidebarType: E.y.MessageRequestSidebar,
     maxWidth: a,
     onWidthChange: n,
     children: (0, r.jsx)(O.Z, {
       channel: l,
-      baseChannelId: L.uZ
+      baseChannelId: w.uZ
     })
   })
 }
@@ -207,7 +207,7 @@ let ei = function(e) {
       content: $.intl.string($.t.apPgJC),
       buttonCTA: $.intl.string($.t.LNoAQU),
       className: ee.messageRequestCoachmark,
-      onClick: () => t(Q.L.UNKNOWN),
+      onClick: () => t(X.L.UNKNOWN),
       markAsDismissed: t,
       caretPosition: Z.DF.TOP_CENTER,
       headerClassName: ee.__invalid_header
@@ -237,7 +237,7 @@ let ei = function(e) {
             secondaryButtonCTA: $.intl.string($.t.LNoAQU),
             className: ee.messageRequestCoachmark,
             onClick: e => {
-              e.stopPropagation(), h.Z.open(X.oAB.CONTENT_AND_SOCIAL, null, {
+              e.stopPropagation(), h.Z.open(Q.oAB.CONTENT_AND_SOCIAL, null, {
                 scrollPosition: J.FY.MESSAGE_REQUESTS_V2
               })
             },
@@ -267,7 +267,7 @@ let eo = (0, f.Z)(function(e) {
     width: t
   } = e, n = (0, H.q)();
   (0, m.ZP)(() => {
-    p.Y(X.Z5c.MESSAGE_REQUESTS), (0, A.e)("message-requests"), D.default.track(X.rMx.MESSAGE_REQUESTS_VIEWED, {
+    p.Y(Q.Z5c.MESSAGE_REQUESTS), (0, A.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), N.Z.increment({
       name: s.V.MESSAGE_REQUEST_VIEW
@@ -276,8 +276,8 @@ let eo = (0, f.Z)(function(e) {
   let l = (0, c.e7)([x.Z], () => x.Z.theme),
     o = (0, z.w)(),
     [u, h] = i.useState(!1),
-    f = (0, c.e7)([L.ZP], () => {
-      let e = L.ZP.getSidebarState(L.uZ);
+    f = (0, c.e7)([w.ZP], () => {
+      let e = w.ZP.getSidebarState(w.uZ);
       return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
     g = null == f ? void 0 : f.channelId,
@@ -286,7 +286,7 @@ let eo = (0, f.Z)(function(e) {
     E = (0, k.J)(g),
     O = i.useRef(null);
   i.useEffect(() => {
-    null != g && !_ && E && b && ((0, T.Kh)(g), P.Z.closeChannelSidebar(L.uZ))
+    null != g && !_ && E && b && ((0, T.Kh)(g), P.Z.closeChannelSidebar(w.uZ))
   }, [g, E, b, _]);
   let [y, v] = i.useState(q.pS.REQUESTS), C = e => {
     v(e)

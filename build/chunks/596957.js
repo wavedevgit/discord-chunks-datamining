@@ -63,11 +63,11 @@ function Z(e, t) {
 }
 let x = [];
 
-function L() {
+function w() {
   c.Z.setSection(T.pJs.ADD_FRIEND)
 }
 
-function w() {
+function L() {
   (0, s.ZDy)(async () => {
     let {
       default: e
@@ -80,7 +80,7 @@ function R(e) {
   let {
     section: t,
     showSpamCta: n
-  } = e, l = i.useMemo(() => n ? w : t !== T.pJs.PENDING ? L : void 0, [n, t]);
+  } = e, l = i.useMemo(() => n ? L : t !== T.pJs.PENDING ? w : void 0, [n, t]);
   return (0, r.jsx)("div", {
     className: j.emptyStateContainer,
     children: (0, r.jsx)(O.Z, {
@@ -97,7 +97,7 @@ let D = function(e) {
   } = (0, h.ZP)(p.Z.FRIENDS_LIST), {
     rows: l,
     section: c
-  } = (0, o.cj)([b.ZP], () => b.ZP.getState()), L = (0, o.e7)([_.Z], () => _.Z.isFocused()), {
+  } = (0, o.cj)([b.ZP], () => b.ZP.getState()), w = (0, o.e7)([_.Z], () => _.Z.isFocused()), {
     relationshipCount: D,
     hasBlockedOrIgnored: k
   } = (0, o.cj)([m.Z], () => ({
@@ -128,24 +128,24 @@ let D = function(e) {
     switch (c) {
       case T.pJs.PENDING:
         return (0, r.jsx)(y.Z, Z(A({}, n), {
-          isFocused: L
+          isFocused: w
         }), t);
       case T.pJs.SUGGESTIONS:
         return (0, r.jsx)(S.Z, Z(A({}, n), {
-          isFocused: L
+          isFocused: w
         }), t);
       case T.pJs.ONLINE:
       case T.pJs.ALL:
       default:
         return (0, r.jsx)(E.Z, Z(A({}, n), {
-          isFocused: L
+          isFocused: w
         }), t)
     }
-  }, [L, c]), V = i.useCallback(e => {
+  }, [w, c]), B = i.useCallback(e => {
     U(Z(A({}, M), {
       [c]: e
     }))
-  }, [M, c]), B = i.useCallback(() => {
+  }, [M, c]), V = i.useCallback(() => {
     U(Z(A({}, M), {
       [c]: ""
     }))
@@ -172,10 +172,10 @@ let D = function(e) {
     }, [F, c]),
     K = i.useMemo(() => F.filter(e => e.type === T.OGo.PENDING_INCOMING).length, [F]),
     q = c === T.pJs.PENDING && K > 0 && K >= N.yf,
-    X = i.useCallback(e => {
+    Q = i.useCallback(e => {
       e.stopPropagation(), u.Z.confirmClearPendingRelationships(K)
     }, [K]),
-    Q = i.useCallback(e => {
+    X = i.useCallback(e => {
       let n = function(e, t, n) {
         switch (e) {
           case T.pJs.ONLINE:
@@ -210,7 +210,7 @@ let D = function(e) {
           color: s.Ttl.LINK,
           className: j.clearButton,
           size: s.zxk.Sizes.TINY,
-          onClick: X,
+          onClick: Q,
           "aria-label": P.intl.string(P.t.O8k7Oz),
           children: P.intl.string(P.t.O8k7Oz)
         })]
@@ -221,7 +221,7 @@ let D = function(e) {
           title: n
         })
       }, n)
-    }, [Y, c, t, q, X]);
+    }, [Y, c, t, q, Q]);
   if (i.useEffect(() => {
       c === T.pJs.ALL && (0, g.d$)()
     }, [c]), 0 === F.length && "" === M[c]) return (0, r.jsx)(R, {
@@ -237,13 +237,13 @@ let D = function(e) {
       children: [k && (0, r.jsx)(v.R, {}), (0, r.jsx)(s.E1j, {
         className: a()(j.searchBar, $ ? j.searchEmptyState : null),
         query: M[c],
-        onChange: V,
-        onClear: B,
+        onChange: B,
+        onClear: V,
         size: s.E1j.Sizes.MEDIUM
       }), (0, r.jsx)(I.Z, {
         rows: Y,
         renderRow: G,
-        renderSection: Q,
+        renderSection: X,
         sectionFilter: c,
         isVirtualizedList: D >= N.nG,
         hasSearchQuery: J,
@@ -251,7 +251,7 @@ let D = function(e) {
           look: s.zxk.Looks.LINK,
           color: j.viewSpamButtonColor,
           className: j.viewSpamButton,
-          onClick: w,
+          onClick: L,
           size: s.PhG.TINY,
           children: (0, r.jsx)(s.Text, {
             variant: "text-xs/medium",

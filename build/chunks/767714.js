@@ -176,6 +176,7 @@ let O = function(e) {
             [p.tier2Gradient]: P && t === f.Si.TIER_2,
             [p.tier1Gradient]: P && t === f.Si.TIER_1
           }, h),
+          buttonShineClassName: "buttonShineClassName" in j ? j.buttonShineClassName : n === l.Ttl.BRAND_INVERTED ? p.brandShine : void 0,
           pauseAnimation: !U || T
         }, j, e), {
           children: [S && (0, r.jsx)(l.SrA, {

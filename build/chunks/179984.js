@@ -212,8 +212,7 @@ let k = () => {
           subscriptionTier: N.Si.TIER_0,
           showIcon: !1,
           look: c.iLD.OUTLINED,
-          color: W ? c.Ttl.BRAND : c.Ttl.WHITE,
-          buttonShineClassName: void 0
+          color: W ? c.Ttl.BRAND : c.Ttl.WHITE
         }) : (0, i.jsx)(O.Z, {
           className: A.button,
           subscriptionTier: N.Si.TIER_0,
@@ -229,8 +228,7 @@ let k = () => {
           subscriptionTier: N.Si.TIER_2,
           showIcon: !1,
           look: c.iLD.OUTLINED,
-          color: W ? c.Ttl.BRAND : c.Ttl.WHITE,
-          buttonShineClassName: void 0
+          color: W ? c.Ttl.BRAND : c.Ttl.WHITE
         }) : (0, i.jsx)(O.Z, {
           className: A.button,
           subscriptionTier: N.Si.TIER_2,

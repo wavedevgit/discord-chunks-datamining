@@ -96,7 +96,7 @@ function O(e) {
       activity: A,
       game: Z,
       playingMembers: x,
-      activityUser: L
+      activityUser: w
     } = e;
     if (null == A || null == A.type) return null;
     if (v.length > 1 && A.type === E.IIU.PLAYING && !(0, a.Z)(A) && null != Z) P((0, r.jsx)(m.Z.GameSection, {
@@ -121,14 +121,14 @@ function O(e) {
     } else if ((null != A.assets || (0, a.Z)(A)) && A.type === E.IIU.PLAYING) P((0, r.jsx)(m.Z.RichPresenceSection, {
       activity: A,
       getAssetImage: f.xF
-    }, "rich-presence-".concat(null != (g = A.session_id) ? g : t, "-").concat(L.id)));
+    }, "rich-presence-".concat(null != (g = A.session_id) ? g : t, "-").concat(w.id)));
     else if ((0, u.Z)(A)) {
       let e = I.length > 0 && I[0].members.length > 1,
         n = x.length > 1;
       P((0, r.jsx)(m.Z.TwitchSection, {
         guildId: null == N ? void 0 : N.id,
         activity: A,
-        user: e || n ? L : null,
+        user: e || n ? w : null,
         getAssetImage: f.xF
       }, "streaming-".concat(null != (b = A.session_id) ? b : t)))
     } else(0, s.Z)(A) ? P((0, r.jsx)(m.Z.SpotifySection, {
@@ -141,10 +141,10 @@ function O(e) {
       },
       getAssetImage: f.xF,
       members: x
-    }, "spotify-".concat(null != (y = A.session_id) ? y : t, "-").concat(L.id))) : (null != A.assets || (0, a.Z)(A)) && A.type === E.IIU.LISTENING ? P((0, r.jsx)(m.Z.RichPresenceSection, {
+    }, "spotify-".concat(null != (y = A.session_id) ? y : t, "-").concat(w.id))) : (null != A.assets || (0, a.Z)(A)) && A.type === E.IIU.LISTENING ? P((0, r.jsx)(m.Z.RichPresenceSection, {
       activity: A,
       getAssetImage: f.xF
-    }, "rich-presence-".concat(null != (S = A.session_id) ? S : t, "-").concat(L.id))) : (0, c.Z)(A) && P((0, r.jsx)(m.Z.XboxSection, {
+    }, "rich-presence-".concat(null != (S = A.session_id) ? S : t, "-").concat(w.id))) : (0, c.Z)(A) && P((0, r.jsx)(m.Z.XboxSection, {
       title: Z.name
     }, "xbox-".concat(null != (T = A.session_id) ? T : t)));
     null != O && null != Z && (0, p._D)(A, O) && (null == O.userStatus || !(0, p.zE)(O.userStatus, d.jn.ACTIVITY_PANEL)) && P((0, r.jsx)(h.Z, {

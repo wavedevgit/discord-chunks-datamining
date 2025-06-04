@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => w
+  Z: () => L
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -82,19 +82,19 @@ function x(e) {
   })
 }
 
-function L(e) {
+function w(e) {
   var t, n, l, c;
   let {
     nodeRef: _,
     quest: E
-  } = e, O = (0, u.O5)(), P = (0, o.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), L = (0, o.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), [w, R] = i.useState(!1), D = i.useCallback(() => R(!0), []), k = i.useCallback(() => R(!1), []), M = (0, b.up)(T.dr.ACTIVITY_PANEL), U = i.useCallback(e => {
+  } = e, O = (0, u.O5)(), P = (0, o.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), w = (0, o.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), [L, R] = i.useState(!1), D = i.useCallback(() => R(!0), []), k = i.useCallback(() => R(!1), []), M = (0, b.up)(T.dr.ACTIVITY_PANEL), U = i.useCallback(e => {
     e.stopPropagation()
   }, []), G = i.useCallback(() => {
     (0, d.AH)(E.id, {
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: u.jZ.ACCEPT_QUEST
     })
-  }, [E]), V = i.useCallback(() => {
+  }, [E]), B = i.useCallback(() => {
     null != E && (O({
       questId: E.id,
       questContent: f.jn.ACTIVITY_PANEL,
@@ -103,7 +103,7 @@ function L(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: E.id
     }))
-  }, [E, O]), B = i.useCallback(() => {
+  }, [E, O]), V = i.useCallback(() => {
     O({
       questId: E.id,
       questContent: f.jn.ACTIVITY_PANEL,
@@ -115,15 +115,15 @@ function L(e) {
   }, [E.id, O]), H = (0, C.hf)({
     quest: E,
     location: f.jn.ACTIVITY_PANEL
-  }), F = (0, p.tP)(E), z = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, W = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, Y = (null == (l = E.userStatus) ? void 0 : l.claimedAt) != null, K = (null == E ? void 0 : E.userStatus) != null && (0, g.zE)(E.userStatus, f.jn.ACTIVITY_PANEL), q = (0, p.Rf)(E), X = (0, b.DD)({
+  }), F = (0, p.tP)(E), z = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, W = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, Y = (null == (l = E.userStatus) ? void 0 : l.claimedAt) != null, K = (null == E ? void 0 : E.userStatus) != null && (0, g.zE)(E.userStatus, f.jn.ACTIVITY_PANEL), q = (0, p.Rf)(E), Q = (0, b.DD)({
     quest: E,
     taskDetails: q,
     location: T.dr.ACTIVITY_PANEL,
     questContent: f.jn.ACTIVITY_PANEL
-  }), Q = (0, m.j)({
+  }), X = (0, m.j)({
     location: T.dr.QUESTS_BAR_MOBILE
   });
-  return K || F || Y || L ? null : (0, r.jsxs)("div", {
+  return K || F || Y || w ? null : (0, r.jsxs)("div", {
     ref: e => {
       _.current = e
     },
@@ -174,15 +174,15 @@ function L(e) {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-normal",
-          children: X
-        }), Q && (0, r.jsx)(y.Z, {
+          children: Q
+        }), X && (0, r.jsx)(y.Z, {
           quest: E,
           textColor: "text-muted",
           withRewardName: !0
         })]
       })]
     }), z && !W && (0, r.jsx)(S.Z, {
-      autoplay: w,
+      autoplay: L,
       className: A.rewardTileWithInstructions,
       quest: E,
       questContent: f.jn.ACTIVITY_PANEL,
@@ -196,7 +196,7 @@ function L(e) {
           color: s.zxk.Colors.PRIMARY,
           fullWidth: !0,
           size: s.zxk.Sizes.SMALL,
-          onClick: B,
+          onClick: V,
           children: j.intl.string(j.t.LLLLPD)
         }), (0, r.jsx)(s.zxk, {
           className: A.cta,
@@ -211,7 +211,7 @@ function L(e) {
         className: A.cta,
         color: s.zxk.Colors.BRAND,
         fullWidth: !0,
-        onClick: V,
+        onClick: B,
         size: s.zxk.Sizes.SMALL,
         children: j.intl.string(j.t.VN1Ajo)
       }), W && (0, r.jsx)(s.zxk, {
@@ -225,11 +225,11 @@ function L(e) {
     })]
   })
 }
-let w = function(e) {
+let L = function(e) {
   return (0, r.jsx)(O.A, {
     questOrQuests: e.quest,
     questContent: f.jn.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(L, Z({
+    children: t => (0, r.jsx)(w, Z({
       nodeRef: t
     }, e))
   })

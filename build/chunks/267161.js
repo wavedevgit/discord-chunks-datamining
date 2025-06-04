@@ -33,17 +33,17 @@ var r = n(255367),
   A = n(914010),
   Z = n(451478),
   x = n(768581),
-  L = n(998502),
-  w = n(228488),
+  w = n(998502),
+  L = n(228488),
   R = n(950796),
   D = n(981631),
   k = n(918559),
   M = n(741764),
   U = n(388032),
   G = n(524499),
-  V = n(103609);
+  B = n(103609);
 
-function B(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -106,7 +106,7 @@ function z() {
     }) : void 0,
     I = null;
   return null != b && E && O ? (e = b.name, I = (0, r.jsx)("img", {
-    className: V.appIcon,
+    className: B.appIcon,
     alt: U.intl.string(U.t.X4IxWF),
     src: y,
     "aria-hidden": !0,
@@ -119,7 +119,7 @@ function z() {
     guild: h,
     size: _.Z.Sizes.MINI,
     active: !0,
-    className: V.guildIcon
+    className: B.guildIcon
   }), e = h.name) : null != a && (a.isDM() || a.isGroupDM()) ? (e = U.intl.string(U.t.YUU0RE), I = (0, r.jsx)(c.gw7, {
     size: "xs"
   })) : t.pathname.startsWith(D.Z5c.GLOBAL_DISCOVERY) ? (e = U.intl.string(U.t["4nEZLi"]), I = (0, r.jsx)(c.Jmo, {
@@ -133,7 +133,7 @@ function z() {
   })) : t.pathname.startsWith(D.Z5c.FAMILY_CENTER) && (e = U.intl.string(G.default.RZqaJi), I = (0, r.jsx)(c.BFJ, {
     size: "xs"
   })), null != e && "" !== e && (0, r.jsxs)("div", {
-    className: V.title,
+    className: B.title,
     children: [I, (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       lineClamp: 1,
@@ -143,7 +143,7 @@ function z() {
 }
 let W = i.memo(function() {
   i.useLayoutEffect(() => {
-    L.ZP.setMinimumSize(M.J, M.N)
+    w.ZP.setMinimumSize(M.J, M.N)
   }, []);
   let e = (0, g.TH)("AppTitleBar"),
     t = !F(e => e.isOpen) && e,
@@ -155,10 +155,10 @@ let W = i.memo(function() {
       autoTrackExposure: !1
     });
   i.useLayoutEffect(() => {
-    L.ZP.setMinimumSize(M.J, M.N)
+    w.ZP.setMinimumSize(M.J, M.N)
   }, []);
   let l = (0, s.e7)([N.Z], () => N.Z.darkSidebar ? D.BRd.DARK : void 0),
-    a = (0, s.e7)([Z.Z, C.Z], () => (0, w.rB)()),
+    a = (0, s.e7)([Z.Z, C.Z], () => (0, L.rB)()),
     {
       notificationCenterVariant: o
     } = I.L.useExperiment({
@@ -170,8 +170,8 @@ let W = i.memo(function() {
       children: i => (0, r.jsx)(R.T, {
         className: i,
         leading: t && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(c.P3F, H(B({}, e), {
-            className: V.button,
+          children: [(0, r.jsx)(c.P3F, H(V({}, e), {
+            className: B.button,
             onClick: () => {
               F.setState({
                 isOpen: !F.getState().isOpen
@@ -179,7 +179,7 @@ let W = i.memo(function() {
             },
             children: (0, r.jsx)(Y, {})
           })), (0, r.jsx)(c.P3F, {
-            className: V.button,
+            className: B.button,
             onClick: () => {
               u.Z.open(D.oAB.ACCOUNT)
             },
@@ -192,18 +192,18 @@ let W = i.memo(function() {
         title: (0, r.jsx)(z, {}),
         trailing: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(b.Z, {
-            className: V.button
+            className: B.button
           }), (0, r.jsx)(f.Z, {
             canShowReminder: !0,
-            className: V.button
-          }), null === o && (0, r.jsx)(S.Z, H(B({}, t ? {} : e), {
-            className: V.button
+            className: B.button
+          }), null === o && (0, r.jsx)(S.Z, H(V({}, t ? {} : e), {
+            className: B.button
           })), n ? (0, r.jsx)(O.Z, {
-            className: V.button
+            className: B.button
           }) : (0, r.jsx)(E.Z, {
-            className: V.button
+            className: B.button
           }), (0, r.jsx)(y.Z, {
-            className: V.button
+            className: B.button
           })]
         })
       })
@@ -214,7 +214,7 @@ let W = i.memo(function() {
 function Y() {
   return (0, r.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
-    className: V.icon,
+    className: B.icon,
     width: "24",
     height: "24",
     viewBox: "0 0 24 24",

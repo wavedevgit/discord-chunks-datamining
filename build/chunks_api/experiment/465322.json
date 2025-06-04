@@ -1,0 +1,1 @@
+{"id":"465322","type":"experiment","data":{"kind":"user","id":"2025-05_per_device_detection_modal","label":"Per-device detection modal experiment","defaultConfig":{"optOutPerDevice":false},"treatments":[{"id":1,"label":"Opt-out of the detection modal on a per-device basis","config":{"optOutPerDevice":false}}]},"fromModule":{"id":"30042"}}
