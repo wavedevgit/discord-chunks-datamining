@@ -306,6 +306,7 @@ function k(e) {
     value: b,
     children: (0, i.jsx)(o.Y0X, {
       transitionState: s,
+      parentComponent: "GuildBoostSlotCancellationModal",
       children: t
     })
   })

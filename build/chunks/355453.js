@@ -6,8 +6,8 @@ var i = n(255367),
   r = n(73800),
   s = n(442837),
   o = n(481060),
-  l = n(660216),
-  a = n(825209),
+  a = n(660216),
+  l = n(825209),
   c = n(714338),
   d = n(556296),
   u = n(13140),
@@ -26,6 +26,7 @@ function f(e) {
     c.Z.enable()
   }), []), (0, i.jsxs)(o.Y0X, {
     transitionState: n,
+    parentComponent: "SoundboardKeybindEditModal",
     children: [(0, i.jsxs)(o.xBx, {
       separator: !1,
       children: [(0, i.jsx)(o.X6q, {
@@ -60,7 +61,7 @@ function f(e) {
         variant: "eyebrow",
         color: "header-secondary",
         children: b.intl.string(b.t["1La4tL"])
-      }), (0, i.jsx)(a.Z, {
+      }), (0, i.jsx)(l.Z, {
         defaultValue: _,
         onChange: E
       }), (0, i.jsx)(o.eee, {
@@ -71,8 +72,8 @@ function f(e) {
     }), (0, i.jsxs)(o.mzw, {
       children: [(0, i.jsx)(o.zxk, {
         onClick: function() {
-          if (0 === _.length) return null != g && l.Z.deleteKeybind(g.id), f();
-          if (null == g) l.Z.addKeybind({
+          if (0 === _.length) return null != g && a.Z.deleteKeybind(g.id), f();
+          if (null == g) a.Z.addKeybind({
             action: p.kg4.SOUNDBOARD_HOLD,
             shortcut: _,
             enabled: !0,
@@ -80,7 +81,7 @@ function f(e) {
           });
           else {
             var e, t;
-            l.Z.setKeybind((e = function(e) {
+            a.Z.setKeybind((e = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   i = Object.keys(n);

@@ -1,79 +1,80 @@
 /** Chunk was on 2045 **/
-r.d(t, {
+n.d(t, {
   default: () => d
 });
-var n = r(255367);
-r(73800);
-var o = r(481060),
-  c = r(313201),
-  l = r(430824),
-  s = r(614812),
-  a = r(388032),
-  i = r(318350);
+var r = n(255367);
+n(73800);
+var o = n(481060),
+  c = n(313201),
+  l = n(430824),
+  s = n(614812),
+  a = n(388032),
+  i = n(318350);
 let d = e => {
-  var t, r;
+  var t, n;
   let {
     onClose: d,
-    guildId: u
-  } = e, p = (0, c.Dt)(), b = a.intl.format(a.t.ZqkXsL, {
+    guildId: p
+  } = e, u = (0, c.Dt)(), b = a.intl.format(a.t.ZqkXsL, {
     helpdeskArticle: s.z
-  }), m = l.Z.getGuild(u);
+  }), m = l.Z.getGuild(p);
   return null != m && (b = a.intl.format(a.t.jn0Xy8, {
     guildName: m.name,
     helpdeskArticle: s.z
-  })), (0, n.jsxs)(o.Y0X, (t = function(e) {
+  })), (0, r.jsxs)(o.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), n.forEach(function(t) {
-        var n;
-        n = r[t], t in e ? Object.defineProperty(e, t, {
-          value: n,
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = n
+        }) : e[t] = r
       })
     }
     return e
-  }({}, e), r = r = {
-    "aria-labelledby": p,
-    children: [(0, n.jsxs)(o.xBx, {
+  }({}, e), n = n = {
+    "aria-labelledby": u,
+    parentComponent: "GuildLimitedAccessInfoModal",
+    children: [(0, r.jsxs)(o.xBx, {
       separator: !1,
       className: i.modalHeader,
-      children: [(0, n.jsx)(o.X6q, {
-        id: p,
+      children: [(0, r.jsx)(o.X6q, {
+        id: u,
         variant: "heading-xl/extrabold",
         children: a.intl.string(a.t.kJwpBQ)
-      }), (0, n.jsx)(o.olH, {
+      }), (0, r.jsx)(o.olH, {
         className: i.closeButton,
         onClick: d
       })]
-    }), (0, n.jsx)(o.hzk, {
+    }), (0, r.jsx)(o.hzk, {
       className: i.modalContent,
-      children: (0, n.jsx)(o.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         className: i.contentText,
         children: b
       })
-    }), (0, n.jsx)(o.mzw, {
-      children: (0, n.jsx)(o.zxk, {
+    }), (0, r.jsx)(o.mzw, {
+      children: (0, r.jsx)(o.zxk, {
         className: i.button,
         size: o.zxk.Sizes.MIN,
         onClick: d,
         children: a.intl.string(a.t.BddRzc)
       })
     })]
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-    var r = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(r)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }

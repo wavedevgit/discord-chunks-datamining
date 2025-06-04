@@ -71,6 +71,7 @@ function g(e) {
     className: h.root,
     "aria-label": p.intl.string(p.t.NQkK4u)
   }, b), n = n = {
+    parentComponent: "ActivityHardwareAccelerationModal",
     children: [(0, r.jsxs)(l.xBx, {
       separator: !1,
       children: [(0, r.jsx)(l.Text, {

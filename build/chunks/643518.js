@@ -41,9 +41,9 @@ function I(e) {
     let e = A ? a.Z.getStatus() : i.Z.getStatus(n.id);
     return e === p.Skl.OFFLINE || e === p.Skl.INVISIBLE
   }), O = null != g || x.length > 0, C = y.length > 0, {
-    mutualFriendsCount: T,
-    mutualGuilds: P
-  } = (0, l.Z)(n), w = null == P ? void 0 : P.length, S = (0, r.Z)(n), E = [{
+    mutualFriendsCount: P,
+    mutualGuilds: T
+  } = (0, l.Z)(n), w = null == T ? void 0 : T.length, S = (0, r.Z)(n), E = [{
     section: _.oh.USER_INFO,
     text: m.intl.string(m.t.jGoPJS)
   }];
@@ -55,7 +55,7 @@ function I(e) {
     text: m.intl.string(m.t.chq59f)
   }), !A && S && (E.push({
     section: _.oh.MUTUAL_FRIENDS,
-    text: (0, u.Z)(T)
+    text: (0, u.Z)(P)
   }), E.push({
     section: _.oh.MUTUAL_GUILDS,
     text: (0, f.Z)(w)

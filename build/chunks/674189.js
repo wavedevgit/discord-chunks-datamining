@@ -1,6 +1,6 @@
 /** Chunk was on 8102 **/
 i.d(t, {
-  default: () => m
+  default: () => b
 }), i(953529), i(388685);
 var n = i(255367),
   l = i(73800),
@@ -16,7 +16,7 @@ var n = i(255367),
   C = i(388032),
   G = i(352897);
 
-function b(e) {
+function m(e) {
   let {
     className: t,
     guildId: i,
@@ -36,14 +36,14 @@ function b(e) {
   })
 }
 
-function m(e) {
+function b(e) {
   let {
     transitionState: t,
     onClose: i,
     feature: r,
     section: g,
     subsection: C
-  } = e, m = (0, a.Dt)(), {
+  } = e, b = (0, a.Dt)(), {
     canCreateGuild: h,
     createGuildCta: S,
     createGuildDescription: Z,
@@ -66,12 +66,13 @@ function m(e) {
   };
   return (0, n.jsxs)(u.Y0X, {
     transitionState: t,
-    "aria-labelledby": m,
+    "aria-labelledby": b,
+    parentComponent: "GuildSettingsPickerModal",
     children: [(0, n.jsxs)(u.xBx, {
       className: G.modalHeader,
       separator: !1,
       children: [(0, n.jsx)(u.X6q, {
-        id: m,
+        id: b,
         variant: "heading-lg/medium",
         children: f
       }), (0, n.jsx)(u.olH, {
@@ -88,7 +89,7 @@ function m(e) {
         className: G.guildSelection,
         children: [(0, n.jsx)("div", {
           className: G.guildSelectorContainer,
-          children: (0, n.jsx)(b, {
+          children: (0, n.jsx)(m, {
             guildId: O,
             onChange: I,
             isGuildIncluded: j

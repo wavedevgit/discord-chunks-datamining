@@ -1,6 +1,6 @@
 /** Chunk was on 6284 **/
 i.d(t, {
-  default: () => S
+  default: () => I
 }), i(388685);
 var n = i(255367),
   a = i(73800),
@@ -17,7 +17,7 @@ var n = i(255367),
   x = i(981631),
   m = i(388032),
   h = i(650764);
-let I = e => {
+let S = e => {
   let [t, i] = a.useState(!1), [n, s] = a.useState(null);
   return {
     cancelSubscription: async t => {
@@ -34,12 +34,12 @@ let I = e => {
   }
 };
 
-function S(e) {
+function I(e) {
   let {
     transitionState: t,
     application: i,
     storeListing: l,
-    subscription: S,
+    subscription: I,
     guild: T,
     onClose: A
   } = e, E = (0, d.Dt)(), {
@@ -48,8 +48,8 @@ function S(e) {
     cancelSubscription: p,
     error: g,
     submitting: j
-  } = I(O), [P, L] = a.useState(0), f = async () => {
-    await p(S.id) && (c.ZP.disableApplicationSubscriptionCancellationSurvey ? A() : L(1))
+  } = S(O), [P, L] = a.useState(0), f = async () => {
+    await p(I.id) && (c.ZP.disableApplicationSubscriptionCancellationSurvey ? A() : L(1))
   };
   a.useEffect(() => {
     _.default.track(x.rMx.CANCELLATION_FLOW_STARTED, {
@@ -61,6 +61,7 @@ function S(e) {
     transitionState: t,
     className: h.modal,
     "aria-labelledby": E,
+    parentComponent: "CancelSubscriptionModal",
     children: (0, n.jsxs)(s.MyZ, {
       activeSlide: P,
       width: 440,
@@ -85,9 +86,9 @@ function S(e) {
               }), (0, n.jsx)(u.s$, {}), (0, n.jsx)(u.K9, {
                 title: m.intl.string(m.t.LZunzc),
                 description: k ? m.intl.formatToPlainString(m.t["+HdfBw"], {
-                  timestamp: S.currentPeriodEnd.getTime()
+                  timestamp: I.currentPeriodEnd.getTime()
                 }) : m.intl.formatToPlainString(m.t.qxiBnZ, {
-                  timestamp: S.currentPeriodEnd.getTime(),
+                  timestamp: I.currentPeriodEnd.getTime(),
                   guildName: null == T ? void 0 : T.name
                 })
               }), (0, n.jsx)(u.G9, {
@@ -117,7 +118,7 @@ function S(e) {
           className: h.slideContainer,
           children: (0, n.jsx)(N.Z, {
             application: i,
-            subscriptionId: S.id,
+            subscriptionId: I.id,
             onClose: A
           })
         })

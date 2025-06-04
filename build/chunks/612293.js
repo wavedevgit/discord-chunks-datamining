@@ -43,6 +43,7 @@ function x(e) {
     children: (0, n.jsx)(l.Y0X, {
       transitionState: t,
       size: y ? l.CgR.DYNAMIC : l.CgR.MEDIUM,
+      parentComponent: "NameplateModal",
       children: y ? (0, n.jsx)(l.$jN, {
         className: g.spinner,
         type: l.$jN.Type.SPINNING_CIRCLE

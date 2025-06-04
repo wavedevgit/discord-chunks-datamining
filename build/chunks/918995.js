@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   s = n(73800),
   i = n(481060),
-  c = n(233787),
-  o = n(388032);
+  o = n(233787),
+  c = n(388032);
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,22 +21,22 @@ class l extends s.Component {
     let {
       transitionState: e
     } = this.props;
-    return (0, r.jsxs)(c.Z, {
+    return (0, r.jsxs)(o.Z, {
       transitionState: e,
-      "aria-label": o.intl.string(o.t.Nn0Px8),
-      children: [(0, r.jsx)(c.Z.Header, {
-        children: o.intl.string(o.t.Nn0Px8)
-      }), (0, r.jsx)(c.Z.Content, {
-        type: c.Z.Types.UNCLAIMED,
-        children: o.intl.string(o.t["7btfmJ"])
-      }), (0, r.jsx)(c.Z.Footer, {
+      "aria-label": c.intl.string(c.t.Nn0Px8),
+      children: [(0, r.jsx)(o.Z.Header, {
+        children: c.intl.string(c.t.Nn0Px8)
+      }), (0, r.jsx)(o.Z.Content, {
+        type: o.Z.Types.UNCLAIMED,
+        children: c.intl.string(c.t["7btfmJ"])
+      }), (0, r.jsx)(o.Z.Footer, {
         secondary: {
           onClick: this.cancel,
-          label: o.intl.string(o.t.oEAioK)
+          label: c.intl.string(c.t.oEAioK)
         },
         primary: {
           onClick: this.claimAccount,
-          label: o.intl.string(o.t.fiNVio)
+          label: c.intl.string(c.t.fiNVio)
         }
       })]
     })

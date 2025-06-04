@@ -454,6 +454,7 @@ function ef(e) {
       transitionState: ep,
       size: p.CgR.DYNAMIC,
       className: s()(eo.modalSize, eo.border),
+      parentComponent: "GoLiveModal",
       children: [tn ? (0, r.jsxs)("div", {
         className: eo.container,
         children: [(0, r.jsx)(p.olH, {

@@ -1,6 +1,6 @@
 /** Chunk was on 18417 **/
 n.d(e, {
-  Z: () => x
+  Z: () => p
 }), n(388685);
 var a = n(255367),
   r = n(73800),
@@ -53,7 +53,7 @@ function m(t) {
     attachment: g
   } = t, {
     name: u,
-    avatarSrc: x
+    avatarSrc: p
   } = e;
   return (0, a.jsxs)("div", {
     className: l.post,
@@ -65,7 +65,7 @@ function m(t) {
           variant: "text-xs/medium",
           className: l.inline,
           children: [(0, a.jsx)("img", {
-            src: x,
+            src: p,
             alt: o.intl.string(o.t.lqaIxM),
             width: 16,
             height: 16
@@ -234,12 +234,12 @@ function u(t) {
   })
 }
 
-function x(t) {
+function p(t) {
   let {
     id: e
   } = t, [n, o] = r.useState(0), g = r.useRef(null), {
-    tags: x,
-    posts: p,
+    tags: p,
+    posts: x,
     postPreview: h,
     ariaLabel: f
   } = (0, s.Z)(e);
@@ -258,7 +258,7 @@ function x(t) {
       "aria-hidden": !0,
       children: [(0, a.jsx)("div", {
         className: l.tags,
-        children: x.map((t, e) => (0, a.jsx)(i.Text, {
+        children: p.map((t, e) => (0, a.jsx)(i.Text, {
           color: "header-primary",
           variant: "text-xs/medium",
           className: l.tag,
@@ -266,8 +266,8 @@ function x(t) {
         }, e))
       }), (0, a.jsx)("div", {
         className: l.posts,
-        children: p.map((t, e) => (0, a.jsx)(m, d(c({}, t), {
-          tags: x
+        children: x.map((t, e) => (0, a.jsx)(m, d(c({}, t), {
+          tags: p
         }), e))
       })]
     }), (0, a.jsx)(u, d(c({}, h), {

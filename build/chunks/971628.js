@@ -125,12 +125,12 @@ function T(e) {
     guilds: k = [],
     placeholderText: C,
     disabledText: L,
-    hintText: N,
-    searchTitleText: M,
+    hintText: M,
+    searchTitleText: N,
     renderEmptyText: P,
-    focusSearchAfterReady: Z,
-    isReady: z,
-    maxCount: A,
+    focusSearchAfterReady: A,
+    isReady: Z,
+    maxCount: z,
     hideRowLabel: I = !1
   } = e, B = l.useRef(null), D = l.useRef(null), $ = [w.length, R.length, O.length, k.length], [U, _] = l.useState(!1), [q, F] = l.useState(0), [G, Q] = l.useState(-1);
   l.useEffect(() => {
@@ -172,9 +172,9 @@ function T(e) {
       className: a()(p.searchBox, {
         [p.scrollSeparator]: U
       }),
-      children: [null != M && (0, r.jsx)(o.vwX, {
+      children: [null != N && (0, r.jsx)(o.vwX, {
         tag: o.RB0.H5,
-        children: M
+        children: N
       }), (0, r.jsx)(b.Z, {
         ref: B,
         query: i,
@@ -189,13 +189,13 @@ function T(e) {
           T(X[e])
         },
         placeholder: C,
-        focusAfterReady: Z,
-        isReady: z,
+        focusAfterReady: A,
+        isReady: Z,
         "aria-labelledby": g,
         "aria-controls": j
-      }), null != N ? (0, r.jsx)(o.Text, {
+      }), null != M ? (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
-        children: N
+        children: M
       }) : null]
     }), H ? (0, r.jsx)(o.aVo, {
       ref: D,
@@ -210,7 +210,7 @@ function T(e) {
           u = !1,
           x = !1,
           b = !1,
-          f = null != A && Object.keys(n).length >= A;
+          f = null != z && Object.keys(n).length >= z;
         switch (i) {
           case y.m$.ROLES:
             u = (l = v(d = w[s])) in n || d.disabled, x = d.disabled || !u && f, b = q === y.m$.ROLES && G === s, t = (0, r.jsxs)("div", {

@@ -41,8 +41,8 @@ function C(e) {
     channel_id: D,
     creator_id: G,
     name: L,
-    description: R,
-    entity_type: M,
+    description: M,
+    entity_type: R,
     image: U,
     recurrence_rule: H
   } = E, A = (0, y.DK)(E), z = (0, r.e7)([h.ZP], () => h.ZP.isInterestedInEventRecurrence(T, A), [T, A]), B = (0, r.e7)([o.Z], () => o.Z.isLurking(_), [_]), X = (0, r.e7)([a.Z], () => a.Z.getStageInstanceByChannel(D), [D]), J = (0, r.e7)([s.Z], () => s.Z.getChannel(D), [D]), V = (0, r.e7)([g.default], () => g.default.getUser(G), [G]), {
@@ -96,8 +96,8 @@ function C(e) {
     channel: J,
     creator: V,
     name: L,
-    entityType: M,
-    description: null != R ? R : void 0,
+    entityType: R,
+    description: null != M ? M : void 0,
     location: null != (n = (0, b.cS)(E)) ? n : void 0,
     imageSource: null != U ? (0, x.Z)(E) : void 0,
     imageLocation: Z.Q.THUMBNAIL,

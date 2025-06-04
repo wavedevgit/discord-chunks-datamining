@@ -40,11 +40,11 @@ function j(e) {
   let v = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
     x = o.useRef(null),
     _ = o.useRef(new l.qA),
-    [C, h] = o.useState(null),
-    w = p.uc.has(g.skuId);
+    [C, w] = o.useState(null),
+    P = p.uc.has(g.skuId);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.O_, {
-      ref: h,
+      ref: w,
       className: O.confettiCanvas,
       environment: _.current
     }), (0, r.jsxs)(a.Y0X, (t = function(e) {
@@ -68,6 +68,7 @@ function j(e) {
       className: O.modal,
       size: a.CgR.DYNAMIC
     }, y), n = n = {
+      parentComponent: "GuildPowerupActivateModal",
       children: [(0, r.jsx)(a.hzk, {
         className: O.modalContentContainer,
         scrollbarType: "none",
@@ -90,7 +91,7 @@ function j(e) {
               children: m.intl.formatToPlainString(b.default.y3wHoq, {
                 perkName: g.title
               })
-            }), w ? (0, r.jsx)(d.ms, {
+            }), P ? (0, r.jsx)(d.ms, {
               className: O.button,
               guildId: j,
               powerup: g,

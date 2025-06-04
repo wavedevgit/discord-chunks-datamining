@@ -1,22 +1,22 @@
 /** Chunk was on 84686 **/
 n.d(t, {
-  default: () => _
+  default: () => h
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  l = n(313201),
-  o = n(471253),
+  o = n(313201),
+  l = n(471253),
   s = n(930180),
   c = n(320596),
   a = n(939863),
   u = n(388032),
   d = n(22946);
 
-function _(e) {
+function h(e) {
   var t, n, {
-      channel: _,
-      transitionState: h,
+      channel: h,
+      transitionState: _,
       onClose: b
     } = e,
     p = function(e, t) {
@@ -24,23 +24,23 @@ function _(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          o = Object.keys(e);
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["channel", "transitionState", "onClose"]);
-  let g = (0, l.Dt)(),
-    f = (0, s._d)(_.id),
-    m = (0, s.K3)(_.id),
+  let g = (0, o.Dt)(),
+    m = (0, s._d)(h.id),
+    f = (0, s.K3)(h.id),
     j = async () => {
-      await (0, o.yi)(_), b()
+      await (0, l.yi)(h), b()
     }, O = async () => {
-      await (0, o.RK)(_, !1), b()
+      await (0, l.RK)(h, !1), b()
     };
   return (0, r.jsx)(i.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -60,10 +60,11 @@ function _(e) {
     }
     return e
   }({
-    transitionState: h,
+    transitionState: _,
     "aria-labelledby": g
   }, p), n = n = {
     size: i.CgR.SMALL,
+    parentComponent: "StageChannelModeratorJoinModal",
     children: (0, r.jsxs)(i.hzk, {
       className: d.content,
       children: [(0, r.jsx)(a.Z, {
@@ -88,8 +89,8 @@ function _(e) {
         color: "header-secondary",
         className: d.headerSubtitle,
         children: u.intl.string(u.t.LQY4JS)
-      }), (f > 0 || m > 0) && (0, r.jsx)(c.mv, {
-        channelId: _.id
+      }), (m > 0 || f > 0) && (0, r.jsx)(c.mv, {
+        channelId: h.id
       }), (0, r.jsxs)("div", {
         className: d.buttonsContainer,
         children: [(0, r.jsxs)(i.zxk, {

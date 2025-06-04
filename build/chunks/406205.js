@@ -41,7 +41,7 @@ function b(e) {
   return e
 }
 
-function O(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = () => [{
+let O = () => [{
   value: x.s8.ALL_MESSAGES,
   name: S.intl.string(S.t.hZrr6u)
 }, {
@@ -83,7 +83,7 @@ function E(e) {
       className: N.segmentedControlsContainer,
       children: (0, i.jsx)(o.sY7, {
         value: T,
-        options: C(),
+        options: O(),
         onChange: e => {
           let {
             value: t
@@ -151,7 +151,7 @@ function E(e) {
                 })
               }), t && (0, i.jsx)(o.ua7, {
                 text: S.intl.string(S.t.eP8yWV),
-                children: e => (0, i.jsx)(o.t6m, O(b({
+                children: e => (0, i.jsx)(o.t6m, C(b({
                   size: "custom"
                 }, e), {
                   width: 20,
@@ -182,7 +182,7 @@ function E(e) {
                 children: e.label
               }), t && (0, i.jsx)(o.ua7, {
                 text: S.intl.string(S.t.idXSbG),
-                children: e => (0, i.jsx)(o.d3s, O(b({
+                children: e => (0, i.jsx)(o.d3s, C(b({
                   size: "custom"
                 }, e), {
                   width: 20,

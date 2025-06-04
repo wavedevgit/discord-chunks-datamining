@@ -17,8 +17,8 @@ var i = n(255367),
   g = n(297781),
   m = n(371991),
   y = n(656709),
-  _ = n(561308),
-  v = n(593481),
+  v = n(561308),
+  _ = n(593481),
   O = n(486016),
   b = n(371651),
   E = n(624864),
@@ -95,7 +95,7 @@ function M(e) {
   let {
     entry: t,
     idx: n
-  } = e, o = (0, l.e7)([Z.default], () => Z.default.getUser(t.author_id)), h = (0, _.kr)(t), f = h ? a.TVs.colors.TEXT_POSITIVE : a.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY, [v, O] = r.useState("unsent"), [b, E] = r.useState(!1), N = (0, l.e7)([I.default], () => I.default.customInviteMessage), w = (0, l.e7)([S.Z], () => null != o ? S.Z.getAnyStreamForUser(o.id) : null, [o]), {
+  } = e, o = (0, l.e7)([Z.default], () => Z.default.getUser(t.author_id)), h = (0, v.kr)(t), f = h ? a.TVs.colors.TEXT_POSITIVE : a.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY, [_, O] = r.useState("unsent"), [b, E] = r.useState(!1), N = (0, l.e7)([I.default], () => I.default.customInviteMessage), w = (0, l.e7)([S.Z], () => null != o ? S.Z.getAnyStreamForUser(o.id) : null, [o]), {
     isMobileOnline: k,
     status: D
   } = (0, l.cj)([j.Z], () => null == o ? {
@@ -106,13 +106,13 @@ function M(e) {
     status: j.Z.getStatus(o.id)
   }, [o]);
   r.useEffect(() => {
-    if ("sent" === v) {
+    if ("sent" === _) {
       let e = setTimeout(() => E(!0), 2e3);
       return () => clearTimeout(e)
     }
-  }, [v]);
+  }, [_]);
   let L = async e => {
-    if (null != o && "unsent" === v) {
+    if (null != o && "unsent" === _) {
       e.stopPropagation();
       try {
         var i;
@@ -171,13 +171,13 @@ function M(e) {
     }), (0, i.jsx)("div", {
       className: A.inviteButtonWrapper,
       children: (0, i.jsx)(a.zxk, {
-        submitting: "sending" === v,
+        submitting: "sending" === _,
         onClick: b ? M : L,
         className: A.inviteButton,
         color: a.Ttl.PRIMARY,
-        look: "sent" === v ? a.iLD.OUTLINED : a.iLD.FILLED,
+        look: "sent" === _ ? a.iLD.OUTLINED : a.iLD.FILLED,
         size: a.PhG.MAX,
-        children: "sent" === v ? b ? (0, i.jsx)(a.kBi, {
+        children: "sent" === _ ? b ? (0, i.jsx)(a.kBi, {
           size: "sm"
         }) : (0, i.jsx)(a.kSu, {
           size: "sm",
@@ -252,7 +252,7 @@ function V(e) {
     inviteMessage: null != o ? o : R.intl.string(R.t.DwAcMz)
   }), [c, u] = r.useState(!1);
   return (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(v.iz, {}), (0, i.jsxs)(a.Text, {
+    children: [(0, i.jsx)(_.iz, {}), (0, i.jsxs)(a.Text, {
       className: A.helpText,
       variant: "text-sm/medium",
       color: "header-secondary",

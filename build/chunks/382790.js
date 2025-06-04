@@ -16,9 +16,9 @@ var i, r = n(255367),
   g = n(483962),
   m = n(711553),
   y = n(388032),
-  _ = n(708132);
+  v = n(708132);
 
-function v(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -52,8 +52,8 @@ class b extends(i = o.PureComponent) {
       children: (0, r.jsx)(g.Z, {})
     }), s = n ? "div" : h.ZP;
     return (0, r.jsxs)(s, {
-      className: l()(_.base, {
-        [_.widget]: !n
+      className: l()(v.base, {
+        [v.widget]: !n
       }, i),
       children: [(0, r.jsx)(d.Z, {
         isOverlay: !0,
@@ -63,7 +63,7 @@ class b extends(i = o.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), v(this, "onDragStart", e => {
+    super(...e), _(this, "onDragStart", e => {
       let {
         dragStart: t
       } = this.props;
@@ -71,7 +71,7 @@ class b extends(i = o.PureComponent) {
     })
   }
 }
-v(b, "defaultProps", {
+_(b, "defaultProps", {
   contained: !1
 });
 let E = a.ZP.connectStores([u.Z], () => ({

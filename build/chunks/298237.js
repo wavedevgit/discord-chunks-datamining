@@ -23,7 +23,7 @@ function S(e) {
   let {
     transitionState: t,
     onClose: r
-  } = e, [S, A] = l.useState(null), [E, N] = l.useState(null), [O, v] = l.useState(!1), w = l.useRef(null), T = (0, i.e7)([u.default], () => u.default.getCurrentUser()), h = l.useRef(null);
+  } = e, [S, A] = l.useState(null), [N, E] = l.useState(null), [O, v] = l.useState(!1), w = l.useRef(null), T = (0, i.e7)([u.default], () => u.default.getCurrentUser()), C = l.useRef(null);
   l.useEffect(() => {
     c.Z.flowStep(b.MK.ANY, b.FF.AGE_GATE), s.default.track(_.rMx.OPEN_MODAL, {
       type: "Claim Age Gate"
@@ -31,7 +31,7 @@ function S(e) {
   }, []), l.useEffect(() => {
     (null == T ? void 0 : T.nsfwAllowed) != null && r()
   }, [T, r]);
-  let C = async e => {
+  let h = async e => {
     if (e.preventDefault(), null != S) {
       v(!0);
       try {
@@ -40,15 +40,15 @@ function S(e) {
         if (null != e.body && null != e.body.date_of_birth) c.Z.flowStep(b.MK.ANY, b.FF.AGE_GATE_UNDERAGE), p.wE(d.L0.CLAIM_ACCOUNT), p.hp(d.L0.CLAIM_ACCOUNT), r();
         else {
           var t;
-          (null == e || null == (t = e.body) ? void 0 : t.username) != null ? N(g.intl.string(g.t["TGg/2t"])) : N(null == e ? void 0 : e.body.message)
+          (null == e || null == (t = e.body) ? void 0 : t.username) != null ? E(g.intl.string(g.t["TGg/2t"])) : E(null == e ? void 0 : e.body.message)
         }
       }
       v(!1)
     }
   }, j = l.useCallback(() => {
     var e;
-    null == (e = h.current) || e.focus()
-  }, [h]);
+    null == (e = C.current) || e.focus()
+  }, [C]);
   return (0, n.jsx)(a.Y0X, {
     transitionState: t,
     size: a.CgR.DYNAMIC,
@@ -60,12 +60,13 @@ function S(e) {
         existing_user: !1
       }
     },
+    parentComponent: "NewUserAgeGate",
     children: (0, n.jsxs)(a.hzk, {
       className: y.content,
       children: [(0, n.jsx)("div", {
         className: y.image
       }), (0, n.jsxs)("form", {
-        onSubmit: C,
+        onSubmit: h,
         children: [(0, n.jsx)(a.X6q, {
           className: y.title,
           variant: "heading-xl/semibold",
@@ -85,11 +86,11 @@ function S(e) {
           name: "birthday",
           onChange: e => A(e),
           onPopulated: j,
-          error: E,
+          error: N,
           value: S,
           ref: w
         }), (0, n.jsx)(a.zxk, {
-          buttonRef: h,
+          buttonRef: C,
           type: "submit",
           size: a.zxk.Sizes.LARGE,
           submitting: O,

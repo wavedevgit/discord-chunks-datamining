@@ -16,13 +16,13 @@ let d = () => (0, n.jsx)(c.Z, {
     height: 13,
     backgroundColor: l.Z.colors.TEXT_POSITIVE.css
   }),
-  g = () => (0, n.jsx)(a.k$p, {
+  m = () => (0, n.jsx)(a.k$p, {
     size: "custom",
     width: 13,
     height: 13,
     color: l.Z.colors.TEXT_DANGER.css
   }),
-  m = () => (0, n.jsx)(a.k$p, {
+  g = () => (0, n.jsx)(a.k$p, {
     size: "custom",
     width: 13,
     height: 13,
@@ -30,7 +30,7 @@ let d = () => (0, n.jsx)(c.Z, {
   });
 
 function f(e) {
-  let t = (0, s.EQ)(e.type).with("info", () => (0, n.jsx)(m, {})).with("error", () => (0, n.jsx)(g, {})).with("success", () => (0, n.jsx)(d, {})).otherwise(() => null);
+  let t = (0, s.EQ)(e.type).with("info", () => (0, n.jsx)(g, {})).with("error", () => (0, n.jsx)(m, {})).with("success", () => (0, n.jsx)(d, {})).otherwise(() => null);
   return (0, n.jsxs)(n.Fragment, {
     children: [t, (0, n.jsx)(a.Text, {
       variant: "text-sm/medium",

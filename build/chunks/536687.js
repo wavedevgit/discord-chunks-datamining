@@ -20,8 +20,8 @@ var r = n(255367),
   E = n(373370),
   O = n(475595),
   h = n(566078),
-  S = n(164495),
-  C = n(472144),
+  C = n(164495),
+  S = n(472144),
   j = n(602667),
   y = n(644646),
   _ = n(604162),
@@ -100,6 +100,7 @@ function L(e) {
     transitionState: v,
     size: c.CgR.DYNAMIC,
     className: I.modalRoot,
+    parentComponent: "Modal",
     children: (0, r.jsx)("div", {
       ref: e => {
         M.current = e
@@ -144,7 +145,7 @@ function L(e) {
               children: e => (0, r.jsx)(c.P3F, A(w({
                 className: I.progressCont
               }, e), {
-                children: (0, r.jsx)(C.Z, {
+                children: (0, r.jsx)(S.Z, {
                   quest: T,
                   size: 48,
                   percentComplete: X,
@@ -184,7 +185,7 @@ function L(e) {
                 size: c.zxk.Sizes.NONE,
                 className: i()(I.copyLinkBtn, I.footerBtn),
                 children: $
-              }), (0, r.jsx)(S.i0, {
+              }), (0, r.jsx)(C.i0, {
                 className: I.claimBtn,
                 size: c.zxk.Sizes.MEDIUM,
                 quest: T,

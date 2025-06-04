@@ -31,9 +31,9 @@ function x(e) {
   } = (0, i.cj)([c.default, d.Z], () => ({
     currentUser: c.default.getCurrentUser(),
     multiAccountUsers: d.Z.getUsers()
-  })), [w, k] = r.useState(!1), [R, P] = r.useState(f.lds), [y, A] = r.useState(null);
+  })), [w, k] = r.useState(!1), [R, P] = r.useState(f.lds), [A, y] = r.useState(null);
   r.useEffect(() => {
-    if (w) A((0, n.jsx)(a.Wn, {
+    if (w) y((0, n.jsx)(a.Wn, {
       messageType: a.QYI.ERROR,
       className: g.infoMessage,
       children: m.intl.format(m.t.HAuRSE, {
@@ -42,7 +42,7 @@ function x(e) {
     })), P(f.lds);
     else if (null != R) {
       let e = c.default.getUser(R);
-      null != e && A((0, n.jsx)(a.Wn, {
+      null != e && y((0, n.jsx)(a.Wn, {
         messageType: a.QYI.POSITIVE,
         className: g.infoMessage,
         children: m.intl.format(m.t["09qidX"], {
@@ -74,7 +74,7 @@ function x(e) {
         })]
       })
     }), (0, n.jsxs)(a.hzk, {
-      children: [y, (0, n.jsx)(h.Z, {
+      children: [A, (0, n.jsx)(h.Z, {
         actionText: m.intl.string(m.t.Wf421N),
         onAction: (e, t) => {
           switch (e) {
@@ -114,6 +114,7 @@ function x(e) {
     transitionState: t,
     size: _[x],
     "aria-label": m.intl.string(m.t.WbFpq6),
+    parentComponent: "SwitchAccountsModal",
     children: (0, n.jsx)(a.qBt, {
       step: x,
       steps: [0, 1],

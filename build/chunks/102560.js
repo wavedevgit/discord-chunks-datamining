@@ -40,6 +40,7 @@ let p = e => {
   }, [t]);
   return (0, r.jsxs)(s.Y0X, {
     transitionState: n,
+    parentComponent: "PruneGuild",
     children: [(0, r.jsx)(s.xBx, {
       separator: !1,
       children: (0, r.jsxs)(s.X6q, {

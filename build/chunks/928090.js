@@ -1,6 +1,6 @@
 /** Chunk was on 8653 **/
 r.d(t, {
-  default: () => g
+  default: () => O
 }), r(388685);
 var n = r(255367),
   s = r(73800),
@@ -56,31 +56,31 @@ let T = function() {
   return "https://".concat(x.xr4, "/hc/").concat(e.toLowerCase(), "/requests/new?ticket_form_id=360000168511")
 };
 
-function g(e) {
+function O(e) {
   let {
     guild: t,
     toUser: m,
-    fromUser: g,
-    onClose: O,
+    fromUser: O,
+    onClose: g,
     transitionState: R
   } = e, [I, y] = s.useState(!1), k = t.hasFeature(x.oNc.VERIFIED) || t.hasFeature(x.oNc.PARTNERED), v = k ? b.intl.string(b.t.wDkfrK) : null, S = k ? b.intl.format(b.t.A37vwM, {
     ticketUrl: T()
-  }) : null, P = t.hasFeature(x.oNc.CREATOR_MONETIZABLE) || t.hasFeature(x.oNc.CREATOR_MONETIZABLE_PROVISIONAL);
-  async function w(e) {
+  }) : null, w = t.hasFeature(x.oNc.CREATOR_MONETIZABLE) || t.hasFeature(x.oNc.CREATOR_MONETIZABLE_PROVISIONAL);
+  async function P(e) {
     await u.Z.transferOwnership(t.id, m.id, h.X.EMAIL, e)
   }
   async function A() {
     await u.Z.sendTransferOwnershipPincode(t.id, !0)
   }
   async function C(e) {
-    e.preventDefault(), O();
+    e.preventDefault(), g();
     try {
-      g.mfaEnabled || null == g.email ? (await u.Z.transferOwnership(t.id, m.id, g.mfaEnabled ? h.X.MFA : null), (0, o.xf)()) : (await u.Z.sendTransferOwnershipPincode(t.id), (0, a.ZDy)(async () => {
+      O.mfaEnabled || null == O.email ? (await u.Z.transferOwnership(t.id, m.id, O.mfaEnabled ? h.X.MFA : null), (0, o.xf)()) : (await u.Z.sendTransferOwnershipPincode(t.id), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await r.e("94566").then(r.bind(r, 965072));
         return t => (0, n.jsx)(e, j(N({}, t), {
-          onFormSubmit: w,
+          onFormSubmit: P,
           onResend: A,
           onSuccess: o.xf,
           headerText: b.intl.string(b.t.Z5s7PD),
@@ -127,6 +127,7 @@ function g(e) {
     });
   return (0, n.jsx)(a.Y0X, {
     transitionState: R,
+    parentComponent: "TransferOwnership",
     children: (0, n.jsxs)("form", {
       onSubmit: C,
       children: [(0, n.jsx)(a.xBx, {
@@ -172,7 +173,7 @@ function g(e) {
           children: [(0, n.jsx)("div", {
             className: E.from,
             children: (0, n.jsx)(l.Z, {
-              user: g,
+              user: O,
               size: a.EFr.SIZE_80
             })
           }), (0, n.jsx)("div", {
@@ -182,7 +183,7 @@ function g(e) {
               size: a.EFr.SIZE_80
             })
           })]
-        }), P && (0, n.jsx)(a.R94, {
+        }), w && (0, n.jsx)(a.R94, {
           type: a.R94.Types.DESCRIPTION,
           className: E.roleSubscriptionText,
           children: b.intl.format(b.t.LAlucX, {
@@ -216,7 +217,7 @@ function g(e) {
         }), (0, n.jsx)(a.zxk, {
           look: a.zxk.Looks.LINK,
           color: a.zxk.Colors.PRIMARY,
-          onClick: O,
+          onClick: g,
           children: b.intl.string(b.t["ETE/oK"])
         })]
       })]

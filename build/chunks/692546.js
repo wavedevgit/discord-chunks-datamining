@@ -28,25 +28,25 @@ let m = {
   },
   y = !1;
 
-function _(e) {
+function v(e) {
   let {
     clientX: t,
     clientY: n
   } = e;
   y = !0, m.x = t, m.y = n
 }
-let v = new Map;
+let _ = new Map;
 
 function O(e, t) {
-  if (null == t) v.delete(e), 0 === v.size && (window.removeEventListener("mousemove", _), y = !1);
+  if (null == t) _.delete(e), 0 === _.size && (window.removeEventListener("mousemove", v), y = !1);
   else {
-    let n = v.get(e);
+    let n = _.get(e);
     if (null != n && (0, a.Z)(n.zone, t.zone)) return;
-    0 === v.size && window.addEventListener("mousemove", _), v.set(e, t)
+    0 === _.size && window.addEventListener("mousemove", v), _.set(e, t)
   }
   if (f.isPlatformEmbedded)
     if (u.default.isCurrentPidOutOfProcess()) {
-      let e = Array.from(v.values()).map(e => {
+      let e = Array.from(_.values()).map(e => {
         let {
           zone: t
         } = e;
@@ -65,14 +65,14 @@ function O(e, t) {
       if (null == e) return;
       e.broadcastCommand({
         message: "set_click_zones",
-        zones: Array.from(v.values()).map(e => {
+        zones: Array.from(_.values()).map(e => {
           let {
             zone: t
           } = e;
           return t
         })
       }), n = e, b || (n.setClickZoneCallback((e, t, n) => {
-        let i = v.get(e);
+        let i = _.get(e);
         null != i && (y || (m.x = t, m.y = n), i.instance.click())
       }), b = !0)
     }

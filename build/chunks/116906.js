@@ -16,9 +16,9 @@ var r = t(442837),
   p = t(29899),
   g = t(678738),
   v = t(151545),
-  h = t(744802),
-  j = t(493043),
-  m = t(864141),
+  m = t(744802),
+  h = t(493043),
+  j = t(864141),
   b = t(228168),
   x = t(981631),
   O = t(388032),
@@ -52,17 +52,17 @@ function P(e) {
   }), R = (0, r.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), U = n.id === t.id, D = (0, r.e7)([u.Z, a.Z], () => {
     let e = U ? u.Z.getStatus() : a.Z.getStatus(n.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), L = A.length > 0 || null != _, G = T && null == _ && null == M && null != w, B = !D && (L || G), k = C.length > 0;
-  return B || k || !R ? (0, l.jsxs)(i.zJl, {
+  }), L = A.length > 0 || null != _, B = T && null == _ && null == M && null != w, G = !D && (L || B), k = C.length > 0;
+  return G || k || !R ? (0, l.jsxs)(i.zJl, {
     className: Z.scroller,
     fade: !0,
-    children: [B ? (0, l.jsxs)(g.Z, {
-      children: [!N && G && (0, l.jsx)(m.Z, {
+    children: [G ? (0, l.jsxs)(g.Z, {
+      children: [!N && B && (0, l.jsx)(j.Z, {
         user: n,
         currentUser: t,
         voiceChannel: w,
         onClose: S
-      }), null != _ && (0, l.jsx)(j.Z, {
+      }), null != _ && (0, l.jsx)(h.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,
@@ -75,7 +75,7 @@ function P(e) {
         activity: e,
         onClose: S,
         profileGuildId: null == P ? void 0 : P.guildId
-      }, "live-".concat(r))), N && G && (0, l.jsx)(m.Z, {
+      }, "live-".concat(r))), N && B && (0, l.jsx)(j.Z, {
         user: n,
         currentUser: t,
         voiceChannel: w,
@@ -90,7 +90,7 @@ function P(e) {
         }, n)
       }) : void 0,
       scrollIntoView: E === b.Tb.RECENT_ACTIVITY,
-      children: C.map(e => (0, l.jsx)(h.Z, {
+      children: C.map(e => (0, l.jsx)(m.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,

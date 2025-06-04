@@ -16,7 +16,7 @@ var r = n(255367),
   f = n(981631),
   E = n(388032),
   I = n(193728);
-let h = e => {
+let m = e => {
     let {
       numOfBlockedUsers: t,
       numOfIgnoredUsers: n
@@ -33,7 +33,7 @@ let h = e => {
       }), (0, r.jsx)("br", {}), E.intl.string(E.t["6AKLRk"])]
     }) : null
   },
-  m = e => {
+  h = e => {
     let {
       channelId: t,
       blockedUserIds: n,
@@ -99,11 +99,11 @@ function g(e) {
     })
   }, [t, n, i]), (0, r.jsx)(d.Z, {
     headerText: E.intl.string(E.t["mwJJ+f"]),
-    descriptionText: (0, r.jsx)(h, {
+    descriptionText: (0, r.jsx)(m, {
       numOfBlockedUsers: n.length,
       numOfIgnoredUsers: i.length
     }),
-    infoRows: m({
+    infoRows: h({
       channelId: t,
       blockedUserIds: n,
       ignoredUserIds: i

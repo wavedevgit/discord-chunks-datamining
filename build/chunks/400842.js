@@ -1,22 +1,22 @@
 /** Chunk was on 21863 **/
-i.d(t, {
+t.d(i, {
   d: () => d
-}), i(953529);
-var n = i(255367);
-i(73800);
-var r = i(120356),
-  l = i.n(r),
-  c = i(692547),
-  o = i(481060);
-i(651711);
-var a = i(551556);
-i(388032);
-var s = i(719677);
-i(347157), i(177266);
+}), t(953529);
+var n = t(255367);
+t(73800);
+var r = t(120356),
+  l = t.n(r),
+  c = t(692547),
+  o = t(481060);
+t(651711);
+var a = t(551556);
+t(388032);
+var s = t(719677);
+t(347157), t(177266);
 let d = e => {
   let {
-    name: t,
-    description: i,
+    name: i,
+    description: t,
     checked: r,
     actionLabel: d,
     actionHandler: b
@@ -39,11 +39,11 @@ let d = e => {
       children: [(0, n.jsx)(o.X6q, {
         variant: "heading-md/semibold",
         className: s.checklistItemName,
-        children: t
+        children: i
       }), (0, n.jsx)(o.Text, {
         color: "interactive-normal",
         variant: "text-sm/normal",
-        children: i
+        children: t
       })]
     }), null != d && (0, n.jsx)("div", {
       className: s.eligibilityActionContainer,

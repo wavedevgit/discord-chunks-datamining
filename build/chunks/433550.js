@@ -191,6 +191,7 @@ function D(e) {
       return e
     }({}, c), r = r = {
       "aria-labelledby": "sticker-pack-sku-preview-modal",
+      parentComponent: "StickerPackViewAllModal",
       children: (0, n.jsx)(m.Z, {
         hideBreadcrumbs: !0,
         body: (0, n.jsx)("div", {

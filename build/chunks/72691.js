@@ -13,22 +13,22 @@ var o = n(255367),
   u = n(821849),
   f = n(15640),
   d = n(563132),
-  b = n(409813),
-  m = n(104494),
+  m = n(409813),
+  b = n(104494),
   j = n(639119),
   _ = n(767714),
   O = n(165583),
   h = n(185139),
   x = n(263954),
-  g = n(706454),
-  k = n(853872),
+  k = n(706454),
+  g = n(853872),
   P = n(930153),
   y = n(74538),
   C = n(937615),
   I = n(981631),
-  v = n(474936),
-  w = n(388032),
-  S = n(719547);
+  S = n(474936),
+  v = n(388032),
+  w = n(719547);
 let N = e => {
     let {
       locale: r
@@ -36,19 +36,19 @@ let N = e => {
     return (0, o.jsxs)(o.Fragment, {
       children: [(0, o.jsx)(x.Z, {
         icon: s.SlE,
-        iconClassName: S.iconColorPurple,
-        description: w.intl.string(w.t.uAfKTU)
+        iconClassName: w.iconColorPurple,
+        description: v.intl.string(v.t.uAfKTU)
       }), (0, o.jsx)(x.Z, {
         icon: s.$zw,
-        iconClassName: S.iconColorPink,
-        description: w.intl.formatToPlainString(w.t.sWnv5O, {
-          numGuildSubscriptions: v.cb,
-          discountPercent: (0, P.T3)(r, v.Rr / 100)
+        iconClassName: w.iconColorPink,
+        description: v.intl.formatToPlainString(v.t.sWnv5O, {
+          numGuildSubscriptions: S.cb,
+          discountPercent: (0, P.T3)(r, S.Rr / 100)
         })
       }), (0, o.jsx)(x.Z, {
         icon: s.EO4,
-        iconClassName: S.iconColorYellow,
-        description: w.intl.string(w.t.pqHIf3)
+        iconClassName: w.iconColorYellow,
+        description: v.intl.string(v.t.pqHIf3)
       })]
     })
   },
@@ -59,31 +59,31 @@ let N = e => {
       isLoading: i,
       price: a,
       onClose: p
-    } = e, u = (0, l.e7)([g.default], () => g.default.locale), f = null != r || null != t;
+    } = e, u = (0, l.e7)([k.default], () => k.default.locale), f = null != r || null != t;
     return (0, o.jsxs)("div", {
-      className: S.wrapper,
+      className: w.wrapper,
       children: [(0, o.jsx)(s.olH, {
         onClick: p,
-        className: S.closeButton
+        className: w.closeButton
       }), f && (0, o.jsx)(O.dz, {
-        className: S.premiumTrialBadge
+        className: w.premiumTrialBadge
       }), (0, o.jsx)("img", {
-        className: c()(S.heroImage, {
-          [S.heroImageWithTrialOffer]: f
+        className: c()(w.heroImage, {
+          [w.heroImageWithTrialOffer]: f
         }),
         src: n(178632),
         alt: ""
       }), i ? (0, o.jsx)(s.$jN, {}) : (0, o.jsxs)(o.Fragment, {
         children: [(0, o.jsx)(s.Text, {
           variant: "text-md/normal",
-          className: S.heading,
+          className: w.heading,
           children: null == a ? (0, o.jsx)(s.$jN, {
             type: s.$jN.Type.PULSING_ELLIPSIS
-          }) : w.intl.format(w.t.TBsJfX, {
+          }) : v.intl.format(v.t.TBsJfX, {
             monthlyPrice: (0, C.T4)(a.amount, a.currency)
           })
         }), (0, o.jsx)("div", {
-          className: S.perks,
+          className: w.perks,
           children: (0, o.jsx)(N, {
             locale: u
           })
@@ -100,19 +100,19 @@ let N = e => {
       section: I.jXE.STICKER_PREMIUM_TIER_2_UPSELL_MODAL
     };
     return (0, o.jsxs)(s.mzw, {
-      className: S.footer,
+      className: w.footer,
       children: [(0, o.jsx)(s.zxk, {
         onClick: t,
         size: s.zxk.Sizes.SMALL,
         color: s.zxk.Colors.PRIMARY,
         look: s.zxk.Looks.LINK,
-        children: w.intl.string(w.t.cpT0Cg)
+        children: v.intl.string(v.t.cpT0Cg)
       }), (0, o.jsx)(_.Z, {
         textOptions: {
-          textOverride: null != r || null != n ? w.intl.string(w.t["Gd/XHB"]) : void 0
+          textOverride: null != r || null != n ? v.intl.string(v.t["Gd/XHB"]) : void 0
         },
         premiumModalAnalyticsLocation: i,
-        subscriptionTier: v.Si.TIER_2,
+        subscriptionTier: S.Si.TIER_2,
         size: s.zxk.Sizes.SMALL,
         color: s.zxk.Colors.GREEN,
         onClick: () => {
@@ -142,16 +142,16 @@ function L(e) {
       return t
     }(e, ["onClose"]);
   let _ = (0, f.V)(),
-    O = (0, l.e7)([k.Z], () => k.Z.hasFetchedPaymentSources),
+    O = (0, l.e7)([g.Z], () => g.Z.hasFetchedPaymentSources),
     x = _ && O,
-    g = (0, j.N)(),
-    P = (0, m.Ng)();
+    k = (0, j.N)(),
+    P = (0, b.Ng)();
   t.useEffect(() => {
     a.Z.wait(() => {
       (0, p.tZ)(), (0, u.Y2)(null, null, I.JjL.DISCOVERY)
     })
   }, []);
-  let C = x ? y.ZP.getDefaultPrice(v.Xh.PREMIUM_MONTH_TIER_2) : null;
+  let C = x ? y.ZP.getDefaultPrice(S.Xh.PREMIUM_MONTH_TIER_2) : null;
   return (0, o.jsx)(d.PaymentContextProvider, {
     activeSubscription: null,
     stepConfigs: [],
@@ -175,22 +175,23 @@ function L(e) {
       return e
     }({}, c), n = n = {
       "aria-labelledby": "sticker-pack-premium-upsell-modal-header",
+      parentComponent: "StickerPackPremiumUpsellModal",
       children: (0, o.jsx)(h.Z, {
         hideBreadcrumbs: !0,
         body: (0, o.jsx)(E, {
-          trialOffer: g,
+          trialOffer: k,
           discountOffer: P,
           isLoading: !x,
           price: C,
           onClose: i
         }),
         footer: (0, o.jsx)(T, {
-          trialOffer: g,
+          trialOffer: k,
           discountOffer: P,
           onClose: i
         }),
-        steps: [b.h8.PREMIUM_UPSELL],
-        currentStep: b.h8.PREMIUM_UPSELL
+        steps: [m.h8.PREMIUM_UPSELL],
+        currentStep: m.h8.PREMIUM_UPSELL
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(n)) : (function(e, r) {
       var n = Object.keys(e);

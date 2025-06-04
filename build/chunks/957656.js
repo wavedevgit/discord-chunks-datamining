@@ -50,6 +50,7 @@ let d = e => {
   }({
     className: l
   }, c), t = t = {
+    parentComponent: "FamilyCenterCommonModal",
     children: s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(t)) : (function(e, r) {
     var t = Object.keys(e);

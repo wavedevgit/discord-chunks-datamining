@@ -25,8 +25,8 @@ function O(e) {
   var t, n, {
       applicationId: h,
       customId: O,
-      linkId: _,
-      message: S,
+      linkId: S,
+      message: _,
       onClose: E,
       onCopyLink: P,
       onShare: Z,
@@ -53,9 +53,9 @@ function O(e) {
       applicationId: h,
       referrerId: null == w ? void 0 : w.id,
       customId: O,
-      linkId: _
+      linkId: S
     }))
-  }, [h, w, O, _, I]);
+  }, [h, w, O, S, I]);
   let A = l.useRef(0),
     [U, z] = l.useState([]),
     H = U.length,
@@ -100,14 +100,14 @@ function O(e) {
           applicationName: N.name,
           link: M
         }),
-        n = "".concat(S, "\n\n").concat(t);
+        n = "".concat(_, "\n\n").concat(t);
       T(!0), (await Promise.all(e.map(d.qx))).filter(m.lm).forEach(async e => {
         let t = b.Z.getChannel(e);
         null != t && await a.Z.sendMessage(e, c.ZP.parse(t, n), !1)
       }), (0, i.showToast)((0, i.createToast)(g.intl.formatToPlainString(g.t.jQULqK, {
         applicationName: N.name
       }), i.ToastType.SUCCESS)), Z(!0), E()
-    }, [S, M, E, Z, N]),
+    }, [_, M, E, Z, N]),
     K = W.length > 0 ? (0, r.jsx)(y.Q, {
       paddingBottom: 16,
       paddingTop: 16,
@@ -148,6 +148,7 @@ function O(e) {
     transitionState: L
   }, C), n = n = {
     className: j.modalRoot,
+    parentComponent: "ActivityShareLinkModal",
     children: [(0, r.jsxs)(i.xBx, {
       className: j.header,
       children: [(0, r.jsxs)("div", {
@@ -164,7 +165,7 @@ function O(e) {
               lineClamp: 1,
               variant: "text-sm/medium",
               color: "text-secondary",
-              children: S
+              children: _
             })
           })
         }), (0, r.jsx)(i.olH, {

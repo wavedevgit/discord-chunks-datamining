@@ -1,6 +1,6 @@
 /** Chunk was on 36760 **/
 r.d(t, {
-  default: () => b
+  default: () => O
 }), r(388685);
 var n = r(255367),
   l = r(73800),
@@ -35,7 +35,7 @@ function h(e) {
   return e
 }
 
-function O(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,12 +48,12 @@ function O(e, t) {
   }), e
 }
 
-function b(e) {
+function O(e) {
   var {
     guildId: t,
     user: r,
-    location: b,
-    modReportId: m
+    location: O,
+    modReportId: b
   } = e, x = function(e, t) {
     if (null == e) return {};
     var r, n, l = function(e, t) {
@@ -70,22 +70,23 @@ function b(e) {
     return l
   }(e, ["guildId", "user", "location", "modReportId"]);
   let [y, v] = l.useState(""), [P, C] = l.useState(!1), k = (0, a.sE)(t, {
-    location: b,
+    location: O,
     targetUserId: r.id
   }), w = (0, i.e7)([u.Z], () => {
     var e;
-    return null == (e = u.Z.getChannel(m)) ? void 0 : e.isArchivedThread()
+    return null == (e = u.Z.getChannel(b)) ? void 0 : e.isArchivedThread()
   }), E = l.useCallback(() => {
-    if (s.Z.kickUser(t, r.id, y, m).then(() => {
-        P && null != m && c.Z.resolveFlag(m)
-      }), k(a.jQ.KICK), null != m) {
+    if (s.Z.kickUser(t, r.id, y, b).then(() => {
+        P && null != b && c.Z.resolveFlag(b)
+      }), k(a.jQ.KICK), null != b) {
       var e;
       null == (e = x.onClose) || e.call(x)
     }
-  }, [t, r.id, y, k, m, P, x]), T = l.useCallback(e => {
+  }, [t, r.id, y, k, b, P, x]), T = l.useCallback(e => {
     v(e)
   }, []);
-  return null != m ? (0, n.jsxs)(o.Y0X, O(h({}, x), {
+  return null != b ? (0, n.jsxs)(o.Y0X, m(h({}, x), {
+    parentComponent: "KickConfirm",
     children: [(0, n.jsx)(o.xBx, {
       separator: !1,
       children: (0, n.jsxs)(o.Kqy, {
@@ -110,7 +111,7 @@ function b(e) {
         })
       }), (0, n.jsx)(o.xJW, {
         titleClassName: j.title,
-        title: g.intl.string(null != m ? g.t.hmKy8P : g.t["+2QEPj"]),
+        title: g.intl.string(null != b ? g.t.hmKy8P : g.t["+2QEPj"]),
         className: j.spacing,
         children: (0, n.jsx)(o.Kx8, {
           maxLength: p.GNZ,
@@ -134,7 +135,7 @@ function b(e) {
         children: g.intl.string(f.default["8yIKen"])
       })]
     })]
-  })) : (0, n.jsxs)(o.ConfirmModal, O(h({
+  })) : (0, n.jsxs)(o.ConfirmModal, m(h({
     header: g.intl.formatToPlainString(g.t["1Ie87u"], {
       user: r.username
     }),

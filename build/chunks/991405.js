@@ -1,5 +1,5 @@
 /** Chunk was on 18327 **/
-a.exports = {
+e.exports = {
   container: "container__71af4",
   content: "content__71af4",
   avatarBackground: "avatarBackground__71af4",

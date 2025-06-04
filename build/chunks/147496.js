@@ -28,11 +28,11 @@ function v(e) {
     onHeaderTitleClick: N
   } = e, S = (0, a.e7)([s.Z], () => s.Z.getForSKU(k), [k]), I = (0, a.e7)([i.Z], () => i.Z.get(k), [k]), O = (0, u.M)(k);
   if (null == I) return null;
-  let y = null != (t = I.name) ? t : "",
-    R = null != (v = null == S || null == (n = S.description) ? void 0 : n.trim()) ? v : void 0,
-    T = (null == S ? void 0 : S.headerBackground) != null && null != (j = d.Z.toURLSafe((0, c._W)(b, S.headerBackground, 256))) ? j : void 0,
-    C = I.type === h.epS.DURABLE && O,
-    B = I.type === h.epS.DURABLE ? C ? p.intl.string(p.t.bm82mp) : p.intl.string(p.t["6gprwc"]) : void 0,
+  let C = null != (t = I.name) ? t : "",
+    y = null != (v = null == S || null == (n = S.description) ? void 0 : n.trim()) ? v : void 0,
+    R = (null == S ? void 0 : S.headerBackground) != null && null != (j = d.Z.toURLSafe((0, c._W)(b, S.headerBackground, 256))) ? j : void 0,
+    T = I.type === h.epS.DURABLE && O,
+    B = I.type === h.epS.DURABLE ? T ? p.intl.string(p.t.bm82mp) : p.intl.string(p.t["6gprwc"]) : void 0,
     {
       price: E
     } = I;
@@ -49,9 +49,9 @@ function v(e) {
     children: (0, l.jsx)(_.i, {
       appId: b,
       skuId: I.id,
-      title: y,
-      description: R,
-      imgSrc: T,
+      title: C,
+      description: y,
+      imgSrc: R,
       tag: null != B ? (0, l.jsx)(r.V, {
         text: B
       }) : void 0,

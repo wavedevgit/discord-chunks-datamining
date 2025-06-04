@@ -35,6 +35,7 @@ function u(e) {
     transitionState: u,
     "aria-labelledby": g,
     size: i.CgR.SMALL,
+    parentComponent: "FormFieldEditModal",
     children: [(0, l.jsxs)(i.hzk, {
       className: d.modalContent,
       children: [(0, l.jsx)(i.X6q, {

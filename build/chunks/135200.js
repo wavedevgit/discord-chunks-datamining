@@ -12,7 +12,7 @@ let d = {
     error: void 0,
     rateLimited: !0
   },
-  g = {
+  m = {
     validations: new(l())({
       max: 100,
       maxAge: 6e4
@@ -36,46 +36,46 @@ let d = {
       }
     }
   };
-class m extends(o = a.ZP.Store) {
+class g extends(o = a.ZP.Store) {
   isRateLimited() {
-    return null != g.retryAfterTime && Date.now() < g.retryAfterTime
+    return null != m.retryAfterTime && Date.now() < m.retryAfterTime
   }
   validate(e) {
-    let t = g.validations.get(e);
+    let t = m.validations.get(e);
     return this.isRateLimited() && (null == t || t.rateLimited) ? d : this.isRateLimited() || null == t || !t.rateLimited ? t : void 0
   }
   registrationUsernameSuggestion() {
-    return g.suggestions.registration.suggestion.username
+    return m.suggestions.registration.suggestion.username
   }
   usernameSuggestion() {
-    return g.suggestions.migration.suggestion.username
+    return m.suggestions.migration.suggestion.username
   }
   usernameSuggestionLoading() {
-    return g.suggestions.migration.usernameSuggestionLoading
+    return m.suggestions.migration.usernameSuggestionLoading
   }
   isCurrentUsernameInvalid() {
-    return g.currentUsernameInvalid
+    return m.currentUsernameInvalid
   }
   wasRegistrationSuggestionFetched(e) {
-    return g.suggestions.registration.source === e && g.suggestions.registration.fetched
+    return m.suggestions.registration.source === e && m.suggestions.registration.fetched
   }
   wasSuggestionsFetched() {
-    return g.suggestions.migration.fetched
+    return m.suggestions.migration.fetched
   }
 }
-i = "PomeloStore", (n = "displayName") in m ? Object.defineProperty(m, n, {
+i = "PomeloStore", (n = "displayName") in g ? Object.defineProperty(g, n, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : m[n] = i;
-let f = new m(c.Z, {
+}) : g[n] = i;
+let f = new g(c.Z, {
   POMELO_ATTEMPT_SUCCESS: function(e) {
     let {
       username: t,
       taken: r
     } = e;
-    g.validations.set(t, {
+    m.validations.set(t, {
       taken: r
     })
   },
@@ -86,23 +86,23 @@ let f = new m(c.Z, {
       statusCode: n,
       retryAfter: i
     } = e;
-    429 === n ? g.validations.set(t, {
+    429 === n ? m.validations.set(t, {
       taken: null,
       error: r,
       rateLimited: !0
-    }, (null != i ? i : 7) * u.Z.Millis.SECOND) : g.validations.set(t, {
+    }, (null != i ? i : 7) * u.Z.Millis.SECOND) : m.validations.set(t, {
       taken: null,
       error: r
-    }), null != i && (g.retryAfterTime = Date.now() + i * u.Z.Millis.SECOND)
+    }), null != i && (m.retryAfterTime = Date.now() + i * u.Z.Millis.SECOND)
   },
   POMELO_SUGGESTIONS_RESET: function() {
-    g.suggestions.migration = {
+    m.suggestions.migration = {
       suggestion: {
         username: void 0
       },
       fetched: !1,
       usernameSuggestionLoading: !1
-    }, g.suggestions.registration = {
+    }, m.suggestions.registration = {
       suggestion: {
         username: void 0
       },
@@ -114,28 +114,28 @@ let f = new m(c.Z, {
     let {
       suggestion: t
     } = e;
-    g.suggestions.migration = {
+    m.suggestions.migration = {
       suggestion: t,
       fetched: !0,
       usernameSuggestionLoading: !1
-    }, (null == t ? void 0 : t.invalid_current_username) === !0 && (g.currentUsernameInvalid = !0)
+    }, (null == t ? void 0 : t.invalid_current_username) === !0 && (m.currentUsernameInvalid = !0)
   },
   POMELO_SUGGESTIONS_FETCH: function(e) {
     let {
       usernameSuggestionLoading: t
     } = e;
-    g.suggestions.migration.usernameSuggestionLoading = t
+    m.suggestions.migration.usernameSuggestionLoading = t
   },
   POMELO_REGISTRATION_SUGGESTIONS_SUCCESS: function(e) {
     let {
       suggestion: t,
       source: r
     } = e;
-    g.suggestions.registration = {
+    m.suggestions.registration = {
       suggestion: t,
       source: r,
       fetched: !0
-    }, (null == t ? void 0 : t.username) != null && g.validations.set(t.username, {
+    }, (null == t ? void 0 : t.username) != null && m.validations.set(t.username, {
       taken: !1
     })
   }

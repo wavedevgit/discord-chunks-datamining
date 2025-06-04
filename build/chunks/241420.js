@@ -51,6 +51,7 @@ function b(e) {
     transitionState: t,
     size: o.CgR.SMALL,
     "aria-label": a,
+    parentComponent: "PrivacySettings",
     children: [(0, i.jsx)(o.xBx, {
       children: (0, i.jsx)(o.X6q, {
         variant: "heading-lg/semibold",

@@ -93,6 +93,7 @@ function x(e) {
       className: e,
       transitionState: t,
       size: o.CgR.MEDIUM,
+      parentComponent: "ClickerAchievements",
       children: [(0, r.jsxs)(o.xBx, {
         separator: !1,
         className: m.header,

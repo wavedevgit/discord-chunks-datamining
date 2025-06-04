@@ -7,8 +7,8 @@ var o = n(255367),
   i = n(442837),
   l = n(481060),
   a = n(693546),
-  s = n(937111),
-  c = n(388032),
+  c = n(937111),
+  s = n(388032),
   u = n(568410);
 let d = e => {
   let {
@@ -19,9 +19,9 @@ let d = e => {
     onWithdrawApplication: p,
     rejectionReason: m = null,
     guild: b = null
-  } = e, g = (0, i.e7)([s.Z], () => {
+  } = e, g = (0, i.e7)([c.Z], () => {
     var e;
-    return s.Z.getCooldown(null != (e = null == b ? void 0 : b.id) ? e : "0")
+    return c.Z.getCooldown(null != (e = null == b ? void 0 : b.id) ? e : "0")
   });
   r.useEffect(() => {
     null == g && null != b && a.Z.fetchJoinRequestCooldown(b.id)
@@ -42,15 +42,15 @@ let d = e => {
         id: t,
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: (null == b ? void 0 : b.name) != null ? c.intl.formatToPlainString(c.t["P+/gzM"], {
+        children: (null == b ? void 0 : b.name) != null ? s.intl.formatToPlainString(s.t["P+/gzM"], {
           guildName: b.name
-        }) : c.intl.string(c.t.gBPcuL)
+        }) : s.intl.string(s.t.gBPcuL)
       }), null != m && "" !== m ? (0, o.jsxs)(l.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
         children: [(0, o.jsx)("span", {
           className: u.rejectionReasonLabel,
-          children: c.intl.string(c.t.cf1psb)
+          children: s.intl.string(s.t.cf1psb)
         }), (0, o.jsx)("span", {
           children: m
         })]
@@ -59,10 +59,10 @@ let d = e => {
       className: u.confirmationButtonRow,
       children: [(0, o.jsx)(l.DY3, {
         className: u.confirmationButton,
-        text: j ? c.intl.formatToPlainString(c.t.A0f0Pz, {
+        text: j ? s.intl.formatToPlainString(s.t.A0f0Pz, {
           days: h
         }) : null,
-        "aria-label": j ? c.intl.formatToPlainString(c.t.A0f0Pz, {
+        "aria-label": j ? s.intl.formatToPlainString(s.t.A0f0Pz, {
           days: h
         }) : void 0,
         children: (0, o.jsx)(l.zxk, {

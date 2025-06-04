@@ -23,7 +23,7 @@ function g(e) {
       guildId: g,
       powerup: j
     } = e,
-    _ = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var n, r, o = function(e, t) {
         if (null == e) return {};
@@ -39,16 +39,16 @@ function g(e) {
       return o
     }(e, ["guildId", "powerup"]);
   let {
-    onDeactivate: v,
+    onDeactivate: _,
     error: I,
     isLoading: O
   } = (0, f.ZP)(g, j), {
     onClose: h
-  } = _, C = o.useCallback(e => {
-    v(e).then(() => {
+  } = v, C = o.useCallback(e => {
+    _(e).then(() => {
       null == h || h()
     })
-  }, [h, v]), T = function(e, t) {
+  }, [h, _]), T = function(e, t) {
     let n = (0, a.e7)([c.Z], () => c.Z.getMemberCount(e)),
       u = (0, s.Z)(e),
       d = (0, a.e7)([l.Z], () => {
@@ -101,7 +101,8 @@ function g(e) {
   }({
     className: k.modal,
     size: j.type === b.Us.LEVEL ? i.CgR.MEDIUM : i.CgR.SMALL
-  }, _), n = n = {
+  }, v), n = n = {
+    parentComponent: "GuildPowerupDeactivateModal",
     children: [(0, r.jsxs)(i.hzk, {
       className: k.modalContentContainer,
       scrollbarType: "none",
@@ -121,7 +122,7 @@ function g(e) {
             })
           })]
         }), (0, r.jsx)(i.olH, {
-          onClick: _.onClose
+          onClick: v.onClose
         })]
       }), (() => {
         switch (j.type) {
@@ -164,7 +165,7 @@ function g(e) {
       }), (0, r.jsx)(i.zxk, {
         color: i.Ttl.PRIMARY,
         className: k.button,
-        onClick: _.onClose,
+        onClick: v.onClose,
         children: x.intl.string(x.t["ETE/oK"])
       })]
     })]

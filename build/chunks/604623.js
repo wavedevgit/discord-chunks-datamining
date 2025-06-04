@@ -1,6 +1,6 @@
 /** Chunk was on 9007 **/
 r.d(t, {
-  CreateEmojiWithRolesModal: () => C,
+  CreateEmojiWithRolesModal: () => k,
   UpdateEmojiRolesModal: () => S
 }), r(388685), r(642613);
 var n = r(255367),
@@ -16,8 +16,8 @@ var n = r(255367),
   b = r(313201),
   m = r(730089),
   j = r(626135),
-  f = r(768581),
-  p = r(584825),
+  p = r(768581),
+  f = r(584825),
   x = r(46887),
   g = r(981631),
   v = r(388032),
@@ -85,7 +85,7 @@ let w = e => {
   })
 };
 
-function k(e) {
+function C(e) {
   let {
     transitionState: t,
     onClose: r,
@@ -94,12 +94,12 @@ function k(e) {
     emojiUrl: a,
     saving: c,
     onSave: u
-  } = e, h = (0, b.Dt)(), [m, j] = i.useState(() => new Set(l)), f = i.useMemo(() => o().isEqual(m, new Set(s.map(e => {
+  } = e, h = (0, b.Dt)(), [m, j] = i.useState(() => new Set(l)), p = i.useMemo(() => o().isEqual(m, new Set(s.map(e => {
     let {
       role_id: t
     } = e;
     return t
-  }))), [s, m]), p = m.size > 0, x = e => j(t => {
+  }))), [s, m]), f = m.size > 0, x = e => j(t => {
     let r = new Set(t);
     return t.has(e) ? r.delete(e) : r.add(e), r
   }), g = () => {
@@ -108,6 +108,7 @@ function k(e) {
   return (0, n.jsxs)(d.Y0X, {
     transitionState: t,
     "aria-labelledby": h,
+    parentComponent: "CreateOrUpdateEmojiWithRolesModal",
     children: [(0, n.jsxs)(d.xBx, {
       separator: !1,
       children: [(0, n.jsxs)("div", {
@@ -148,9 +149,9 @@ function k(e) {
           className: y.selectAllCheckbox,
           label: v.intl.string(v.t["Ve/y5+"]),
           textVariant: "text-md/semibold",
-          value: f,
+          value: p,
           onChange: () => {
-            f ? j(new Set) : j(new Set(s.map(e => {
+            p ? j(new Set) : j(new Set(s.map(e => {
               let {
                 role_id: t
               } = e;
@@ -170,13 +171,13 @@ function k(e) {
       })
     }), (0, n.jsx)(d.mzw, {
       children: (0, n.jsx)(d.ua7, {
-        shouldShow: !p,
+        shouldShow: !f,
         text: v.intl.string(v.t["8aYImJ"]),
         children: e => {
           var t, r;
           return (0, n.jsx)(d.zxk, (t = O({}, e), r = r = {
             "aria-label": v.intl.string(v.t.R3BPHx),
-            disabled: !p,
+            disabled: !f,
             submitting: c,
             onClick: g,
             children: v.intl.string(v.t.R3BPHx)
@@ -196,7 +197,7 @@ function k(e) {
   })
 }
 
-function C(e) {
+function k(e) {
   var {
     guildId: t,
     data: r,
@@ -219,11 +220,11 @@ function C(e) {
     } catch (e) {} finally {
       o(!1)
     }
-  }, u = (0, p.qi)(t, {
+  }, u = (0, f.qi)(t, {
     includeSoftDeleted: !0,
     sortDeletedListingsLast: !0
   });
-  return (0, n.jsx)(k, O({
+  return (0, n.jsx)(C, O({
     emojiUrl: r,
     onSave: d,
     saving: a,
@@ -236,7 +237,7 @@ function S(e) {
     emoji: t,
     guildId: r
   } = e, l = _(e, ["emoji", "guildId"]);
-  let s = f.ZP.getEmojiURL({
+  let s = p.ZP.getEmojiURL({
       id: t.id,
       animated: t.animated,
       size: 40
@@ -250,7 +251,7 @@ function S(e) {
         emojiId: t.id,
         roles: e
       }) && n()
-    }, d = (0, p.qi)(r, {
+    }, d = (0, f.qi)(r, {
       includeSoftDeleted: !0
     });
   d.sort((e, t) => Number(e.soft_deleted) - Number(t.soft_deleted));
@@ -264,7 +265,7 @@ function S(e) {
       }));
       return t.roles.filter(t => e.has(t))
     }, [t.roles, b]);
-  return (0, n.jsx)(k, O({
+  return (0, n.jsx)(C, O({
     emojiUrl: s,
     onSave: c,
     initialRoleIds: m,

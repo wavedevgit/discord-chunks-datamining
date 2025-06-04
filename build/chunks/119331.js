@@ -1,6 +1,6 @@
 /** Chunk was on 99014 **/
 n.d(t, {
-  t: () => c
+  t: () => l
 }), n(415506);
 var r = n(120356),
   o = n.n(r),
@@ -8,7 +8,7 @@ var r = n(120356),
   i = n(267642),
   s = n(462820);
 
-function c(e, t) {
+function l(e, t) {
   if (t) return {
     Icon: a.dz2,
     className: s.unlocked

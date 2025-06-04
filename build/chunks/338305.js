@@ -53,6 +53,7 @@ function f(e) {
   return (0, r.jsx)(a.Y0, d(c({}, e), {
     "aria-label": o.intl.string(o.t.ZTNur6),
     size: a.Cg.SMALL,
+    parentComponent: "renderModalSpinner",
     children: (0, r.jsx)("div", {
       className: s.spinnerContainer,
       children: (0, r.jsx)(i.$, {})

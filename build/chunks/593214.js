@@ -2,9 +2,9 @@
 l.d(n, {
   Mt: () => m,
   li: () => h,
-  s4: () => f,
+  s4: () => v,
   up: () => x,
-  zv: () => v
+  zv: () => f
 }), l(388685), l(539854);
 var t = l(73800),
   i = l(106351),
@@ -26,11 +26,11 @@ function h(e) {
   return n && !__OVERLAY__ && !t && (!i || l)
 }
 
-function f(e) {
+function v(e) {
   return (0, a.e7)([r.Z], () => r.Z.getFavorite(e))
 }
 
-function v() {
+function f() {
   return (0, a.e7)([d.ZP], () => d.ZP.getChannels(u.I_8))[i.d.GUILD_CATEGORY].map(e => ({
     id: "null" === e.channel.id ? null : e.channel.id,
     name: e.channel.name

@@ -61,24 +61,24 @@ function y(e) {
     isRequiredField: E = !0,
     shouldUpdateBothEmojiFields: I = !1,
     setEmojiId: O,
-    setEmojiName: w
-  } = e, S = (0, p.Z)({
+    setEmojiName: S
+  } = e, k = (0, p.Z)({
     emojiId: y,
     emojiName: N
-  }), k = (0, r.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), C = i.useRef(null), D = (0, d.Z)(C), P = () => {
-    w(void 0), O(void 0)
+  }), w = (0, r.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), C = i.useRef(null), D = (0, d.Z)(C), P = () => {
+    S(void 0), O(void 0)
   }, Z = e => t => {
     let {
       emoji: l,
       willClose: n
     } = t, i = (null == l ? void 0 : l.id) == null;
-    P(), i ? w(null == l ? void 0 : l.optionallyDiverseSequence) : (I && w(null == l ? void 0 : l.name), O(null == l ? void 0 : l.id)), n && e()
+    P(), i ? S(null == l ? void 0 : l.optionallyDiverseSequence) : (I && S(null == l ? void 0 : l.name), O(null == l ? void 0 : l.id)), n && e()
   }, R = e => {
     e.stopPropagation(), P()
   }, T = i.useMemo(() => {
     let e = null != y && "" !== y,
       t = null != N && "" !== N,
-      l = null != S && "" !== S,
+      l = null != k && "" !== k,
       n = t && !Number.isNaN(parseInt(N)) && !l && !e;
     return {
       hasEmojiId: e,
@@ -86,7 +86,7 @@ function y(e) {
       hasEmojiDisplayName: l,
       isDeletedCustomEmoji: n
     }
-  }, [y, N, S]);
+  }, [y, N, k]);
   return (0, n.jsx)(o.xJW, {
     required: E,
     title: x.intl.string(x.t["3BQmiI"]),
@@ -106,7 +106,7 @@ function y(e) {
           onNavigateAway: t,
           onSelectEmoji: Z(t),
           guildId: l,
-          channel: k
+          channel: w
         })
       },
       children: (e, t) => {
@@ -127,7 +127,7 @@ function y(e) {
           }), (0, n.jsx)(o.oil, {
             inputClassName: v.emojiText,
             placeholder: x.intl.string(x.t.QTK0TE),
-            value: !T.isDeletedCustomEmoji && T.hasEmojiDisplayName ? ":".concat(S, ":") : "",
+            value: !T.isDeletedCustomEmoji && T.hasEmojiDisplayName ? ":".concat(k, ":") : "",
             readOnly: !0
           }), !T.isDeletedCustomEmoji && T.hasEmojiDisplayName && D && (0, n.jsx)(c.Z, b(h({}, e), {
             onClick: R,

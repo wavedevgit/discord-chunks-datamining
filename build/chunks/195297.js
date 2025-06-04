@@ -29,7 +29,7 @@ function P(e) {
     uploadType: b,
     showUpsellHeader: E,
     analyticsPage: R
-  } = e, [j, Z] = a.useState(!1), v = (0, r.vRw)(), C = (0, d.Dt)(), {
+  } = e, [j, C] = a.useState(!1), Z = (0, r.vRw)(), v = (0, d.Dt)(), {
     analyticsLocations: y,
     newestAnalyticsLocation: I
   } = (0, s.ZP)(c.Z.GIF_PICKER);
@@ -38,7 +38,7 @@ function P(e) {
       gifSrc: t
     } = e;
     if (null == t || j) return;
-    Z(!0);
+    C(!0);
     let a = (0, N.Q)(t),
       l = await fetch(a),
       c = await l.blob();
@@ -73,7 +73,7 @@ function P(e) {
         showUpsellHeader: E
       }, t))
     }, {
-      contextKey: v
+      contextKey: Z
     })
   }
   a.useEffect(() => {
@@ -90,9 +90,10 @@ function P(e) {
   return (0, i.jsx)(s.Gt, {
     value: y,
     children: (0, i.jsxs)(r.Y0X, {
-      "aria-labelledby": C,
+      "aria-labelledby": v,
       transitionState: t,
       size: r.CgR.SMALL,
+      parentComponent: "GIFPickerCroppingModal",
       children: [E && !L && (0, i.jsx)(p.Z, {
         type: b,
         analyticsPage: R,

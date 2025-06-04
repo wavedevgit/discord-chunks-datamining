@@ -93,6 +93,7 @@ class f extends i.PureComponent {
       transitionState: t,
       size: s.CgR.DYNAMIC,
       className: h.customWidth,
+      parentComponent: "MFAEnable",
       children: [(0, n.jsxs)(s.xBx, {
         separator: !1,
         children: [(0, n.jsxs)(c.Z.Child, {

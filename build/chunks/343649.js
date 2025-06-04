@@ -502,6 +502,7 @@ function ec(e) {
     className: o()({
       [ee.planSelectStep]: eq === M.h8.PLAN_SELECT
     }),
+    parentComponent: "GuildBoostPurchaseModal",
     children: [td, t]
   })
 }

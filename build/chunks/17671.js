@@ -38,7 +38,7 @@ function T(e) {
     transitionState: n,
     onClose: l,
     guildId: T
-  } = e, _ = (0, d.Dt)(), D = (0, c.e7)([v.Z], () => v.Z.getGuild(T)), G = (0, Z.Z)(null == D ? void 0 : D.id), L = (0, O.ZP)(T), R = r.useRef(m.ZP.ackMessageId(T, w.W.GUILD_EVENT)), M = (0, E.Z)();
+  } = e, _ = (0, d.Dt)(), D = (0, c.e7)([v.Z], () => v.Z.getGuild(T)), G = (0, Z.Z)(null == D ? void 0 : D.id), L = (0, O.ZP)(T), M = r.useRef(m.ZP.ackMessageId(T, w.W.GUILD_EVENT)), R = (0, E.Z)();
   return r.useEffect(() => {
     L.forEach(e => x.Z.getGuildEventUserCounts(T, e.id, [])), x.Z.getGuildEventsForCurrentUser(T)
   }, [L, T]), r.useEffect(() => {
@@ -69,6 +69,7 @@ function T(e) {
     size: a.CgR.MEDIUM,
     transitionState: n,
     "aria-labelledby": _,
+    parentComponent: "GuildEventsModal",
     children: [(0, i.jsxs)(a.xBx, {
       className: S.header,
       children: [(0, i.jsx)(a.Que, {
@@ -124,7 +125,7 @@ function T(e) {
                   Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
                 }), t))
               }
-            }, M)
+            }, R)
           },
           innerClassName: S.button,
           children: I.intl.string(I.t["60lJ0N"])
@@ -145,7 +146,7 @@ function T(e) {
         guildEvent: e,
         guildId: T,
         onActionTaken: l,
-        isNew: null != R.current && y.default.compare(e.id, R.current) > 0
+        isNew: null != M.current && y.default.compare(e.id, M.current) > 0
       }, e.id)) : (0, i.jsx)(C.Z, {
         guildId: T,
         onClose: l

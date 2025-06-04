@@ -5,19 +5,19 @@ n.d(e, {
 var a = n(255367);
 n(73800);
 var i = n(481060),
-  s = n(240872),
+  o = n(240872),
   r = n(923500),
-  o = n(247206),
+  s = n(247206),
   l = n(774863),
   c = n(388032);
 
 function d(t, e) {
-  if ((0, o.aP)({
-      action: o.Yy.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED,
+  if ((0, s.aP)({
+      action: s.Yy.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED,
       messageId: e,
       channelId: t
     }), !l.Z.canSubmitFpReport(e)) {
-    s.Z.show({
+    o.Z.show({
       title: c.intl.string(c.t["iS/eFB"]),
       body: c.intl.string(c.t.YrjcgY),
       confirmText: c.intl.string(c.t.BddRzc)

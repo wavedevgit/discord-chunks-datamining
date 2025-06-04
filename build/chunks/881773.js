@@ -20,9 +20,9 @@ var r = n(255367),
   E = n(223418),
   O = n(604162),
   h = n(388032),
-  S = n(844136);
+  C = n(844136);
 
-function C(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -75,18 +75,18 @@ function x(e) {
     duration: n
   } = e, l = null != t ? (0, O.yv)(t) : y, o = null != n ? (0, O.yv)(n) : y;
   return l = l.padStart(o.length, "0"), (0, r.jsxs)("div", {
-    className: i()(S.durationTimeWrapper, S.controlsBarItem),
+    className: i()(C.durationTimeWrapper, C.controlsBarItem),
     children: [(0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
-      className: S.durationTimeDisplay,
+      className: C.durationTimeDisplay,
       children: l
     }), (0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
-      className: S.durationTimeSeparator,
+      className: C.durationTimeSeparator,
       children: "/"
     }), (0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
-      className: S.durationTimeDisplay,
+      className: C.durationTimeDisplay,
       children: o
     })]
   })
@@ -103,16 +103,16 @@ let D = l.forwardRef(function(e, t) {
     tooltipDelayMs: f = 1500,
     shortcut: v,
     onClick: g
-  } = e, b = e => (0, r.jsx)(d.P3F, j(C({}, e), {
+  } = e, b = e => (0, r.jsx)(d.P3F, j(S({}, e), {
     onClick: !0 === m ? void 0 : g,
-    className: i()(S.videoControlsBtnCont, {
-      [S.videoControlsBtnContDisabled]: m
+    className: i()(C.videoControlsBtnCont, {
+      [C.videoControlsBtnContDisabled]: m
     }),
     "aria-label": s,
     "aria-disabled": m,
     innerRef: t,
     children: (0, r.jsx)(a.animated.div, {
-      className: S.videoControlsBtnCont,
+      className: C.videoControlsBtnCont,
       style: {
         opacity: (0, a.to)([l.to({
           range: [0, 1],
@@ -121,9 +121,9 @@ let D = l.forwardRef(function(e, t) {
       },
       children: (0, r.jsx)(n, {
         color: !0 !== m ? c.Z.colors.WHITE : c.Z.colors.TEXT_MUTED,
-        className: i()(S.controlsBarItem, {
-          [S.controlsBarItemActive]: u,
-          [S.videoControlsBtn]: !m
+        className: i()(C.controlsBarItem, {
+          [C.controlsBarItemActive]: u,
+          [C.videoControlsBtn]: !m
         })
       })
     })
@@ -133,13 +133,13 @@ let D = l.forwardRef(function(e, t) {
     let e = (0, r.jsxs)(r.Fragment, {
       children: [p, "" !== (null != v ? v : "").trim() && (0, r.jsx)(d.M2$, {
         shortcut: null != v ? v : "",
-        className: S.videoControlsBtnTooltipKeyCombo
+        className: C.videoControlsBtnTooltipKeyCombo
       })]
     });
     return (0, r.jsx)(d.ua7, {
       text: e,
       "aria-label": p,
-      tooltipContentClassName: S.videoControlsBtnTooltip,
+      tooltipContentClassName: C.videoControlsBtnTooltip,
       delay: f,
       children: e => b(e)
     })
@@ -223,7 +223,7 @@ function T(e) {
     } = _[O];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: S.videoControlsGroup,
+      className: C.videoControlsGroup,
       children: [(0, r.jsx)(D, {
         iconComponent: eu,
         animationTime: y,
@@ -253,7 +253,7 @@ function T(e) {
         shortcut: E.Y1.SEEK_FORWARD
       })]
     }), (0, r.jsxs)(a.animated.div, {
-      className: i()(S.videoControlsGroup, S.videoControlsGroupMid),
+      className: i()(C.videoControlsGroup, C.videoControlsGroupMid),
       style: {
         opacity: (0, a.to)([y.to({
           range: [0, 1],
@@ -265,7 +265,7 @@ function T(e) {
         onMouseLeave: ea,
         onFocus: ei,
         onBlur: ea,
-        className: S.volumeControlGroup,
+        className: C.volumeControlGroup,
         children: [(0, r.jsx)(D, {
           iconComponent: ec,
           animationTime: y,
@@ -275,7 +275,7 @@ function T(e) {
           tooltipLabel: h.intl.string(h.t["eIl+AA"]),
           shortcut: E.Y1.MUTE
         }), (0, r.jsx)(a.animated.div, {
-          className: S.volumeSlider,
+          className: C.volumeSlider,
           style: {
             opacity: (0, a.to)([et.to({
               range: [0, 1],
@@ -286,7 +286,7 @@ function T(e) {
               output: [0, 100]
             })], e => "".concat(e, "px"))
           },
-          children: (0, r.jsx)(u.i, j(C({
+          children: (0, r.jsx)(u.i, j(S({
             mini: !0
           }, B ? {} : {
             barStyles: {
@@ -324,7 +324,7 @@ function T(e) {
         duration: null == o || null == (n = o.current) ? void 0 : n.duration
       })]
     }), (0, r.jsxs)("div", {
-      className: i()(S.videoControlsGroup, S.videoControlsGroupEnd),
+      className: i()(C.videoControlsGroup, C.videoControlsGroupEnd),
       children: [(0, r.jsx)(D, {
         iconComponent: d.hH0,
         animationTime: y,

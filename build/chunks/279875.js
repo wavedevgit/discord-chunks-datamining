@@ -1,121 +1,122 @@
 /** Chunk was on 43889 **/
-n.d(t, {
+t.d(n, {
   GuildSubscriptionSelectionModal: () => x
-}), n(388685), n(290780), n(539854);
-var s = n(255367),
-  i = n(73800),
-  l = n(481060),
-  r = n(565138),
-  a = n(430824),
-  o = n(270144),
-  d = n(689011),
-  c = n(388032),
-  u = n(251216);
+}), t(388685), t(290780), t(539854);
+var i = t(255367),
+  l = t(73800),
+  s = t(481060),
+  r = t(565138),
+  a = t(430824),
+  o = t(270144),
+  d = t(689011),
+  c = t(388032),
+  u = t(251216);
 
 function x(e) {
   let {
-    transitionState: t,
-    onClose: n,
+    transitionState: n,
+    onClose: t,
     sku: x,
     onSelect: m,
     currentGuildId: h
-  } = e, [p, j] = i.useState(), {
+  } = e, [p, j] = l.useState(), {
     guilds: _,
-    isFetching: g
-  } = (0, o.CR)(x.applicationId, x.id, !0), b = i.useMemo(() => {
-    if (!g && null != h) return _.findIndex(e => {
+    isFetching: b
+  } = (0, o.CR)(x.applicationId, x.id, !0), g = l.useMemo(() => {
+    if (!b && null != h) return _.findIndex(e => {
       let {
-        id: t
+        id: n
       } = e;
-      return t === h
+      return n === h
     }) >= 0
-  }, [h, _, g]);
-  i.useLayoutEffect(() => {
-    b && j(h)
-  }, [h, b]);
-  let f = i.useMemo(() => {
+  }, [h, _, b]);
+  l.useLayoutEffect(() => {
+    g && j(h)
+  }, [h, g]);
+  let f = l.useMemo(() => {
     let e = [];
-    for (let t of _) {
-      let n = {
-        value: t.id,
-        label: t.name
+    for (let n of _) {
+      let t = {
+        value: n.id,
+        label: n.name
       };
-      b && t.id === h ? e.unshift(n) : e.push(n)
+      g && n.id === h ? e.unshift(t) : e.push(t)
     }
     return e
-  }, [h, _, b]);
-  return (0, s.jsxs)(l.Y0X, {
-    transitionState: t,
-    size: l.CgR.SMALL,
+  }, [h, _, g]);
+  return (0, i.jsxs)(s.Y0X, {
+    transitionState: n,
+    size: s.CgR.SMALL,
     className: u.modal,
-    children: [(0, s.jsx)(d.t, {
-      onClose: n
-    }), (0, s.jsxs)(l.hzk, {
+    parentComponent: "GuildSubscriptionSelectionModal",
+    children: [(0, i.jsx)(d.t, {
+      onClose: t
+    }), (0, i.jsxs)(s.hzk, {
       className: u.content,
-      children: [(0, s.jsx)(l.Text, {
+      children: [(0, i.jsx)(s.Text, {
         variant: "text-sm/medium",
         className: u.breadCrumb,
         children: c.intl.string(c.t["xgtI/P"])
-      }), (0, s.jsxs)("div", {
+      }), (0, i.jsxs)("div", {
         className: u.selectionBody,
-        children: [(0, s.jsx)(l.Text, {
+        children: [(0, i.jsx)(s.Text, {
           variant: "text-md/medium",
           children: c.intl.string(c.t.rAXXxM)
-        }), (0, s.jsx)(l.Text, {
+        }), (0, i.jsx)(s.Text, {
           variant: "eyebrow",
           children: c.intl.string(c.t["5qyruL"])
-        }), g ? (0, s.jsx)(l.$jN, {
-          type: l.$jN.Type.PULSING_ELLIPSIS,
+        }), b ? (0, i.jsx)(s.$jN, {
+          type: s.$jN.Type.PULSING_ELLIPSIS,
           className: u.spinner
-        }) : f.length > 0 ? (0, s.jsx)(l.VcW, {
+        }) : f.length > 0 ? (0, i.jsx)(s.VcW, {
           options: f,
           value: p,
           onChange: j,
           renderOptionPrefix: e => {
-            let t = null == e ? void 0 : e.value,
-              n = null != t ? a.Z.getGuild(t) : null;
-            return null == n ? null : (0, s.jsx)(r.Z, {
-              guild: n,
+            let n = null == e ? void 0 : e.value,
+              t = null != n ? a.Z.getGuild(n) : null;
+            return null == t ? null : (0, i.jsx)(r.Z, {
+              guild: t,
               size: r.Z.Sizes.MINI
             })
           },
           renderOptionLabel: e => {
             let {
-              label: t,
-              value: n
+              label: n,
+              value: t
             } = e;
-            return (0, s.jsxs)("div", {
-              children: [(0, s.jsx)(l.Text, {
+            return (0, i.jsxs)("div", {
+              children: [(0, i.jsx)(s.Text, {
                 variant: "text-md/normal",
-                children: t
-              }), n === h && (0, s.jsx)(l.Text, {
+                children: n
+              }), t === h && (0, i.jsx)(s.Text, {
                 variant: "text-xs/normal",
                 color: "header-secondary",
                 children: c.intl.string(c.t.RjtuAA)
               })]
             })
           }
-        }) : (0, s.jsx)(l.Wn, {
-          messageType: l.QYI.WARNING,
-          children: (0, s.jsx)(l.Text, {
+        }) : (0, i.jsx)(s.Wn, {
+          messageType: s.QYI.WARNING,
+          children: (0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: c.intl.string(c.t.M2TbbG)
           })
         })]
       })]
-    }), (0, s.jsxs)(l.mzw, {
+    }), (0, i.jsxs)(s.mzw, {
       className: u.footer,
-      children: [(0, s.jsx)(l.zxk, {
-        look: l.zxk.Looks.BLANK,
-        size: l.zxk.Sizes.MIN,
+      children: [(0, i.jsx)(s.zxk, {
+        look: s.zxk.Looks.BLANK,
+        size: s.zxk.Sizes.MIN,
         className: u.closeBtn,
-        onClick: n,
+        onClick: t,
         children: c.intl.string(c.t.cpT0Cg)
-      }), (0, s.jsx)(l.zxk, {
-        size: l.zxk.Sizes.SMALL,
+      }), (0, i.jsx)(s.zxk, {
+        size: s.zxk.Sizes.SMALL,
         disabled: null == p,
         onClick: function() {
-          null != p && (m(p), n())
+          null != p && (m(p), t())
         },
         children: c.intl.string(c.t["cY+Ooa"])
       })]

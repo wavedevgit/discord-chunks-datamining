@@ -1,12 +1,12 @@
 /** Chunk was on 74300 **/
 n.d(e, {
-  default: () => k
+  default: () => m
 }), n(388685);
 var l = n(255367),
   i = n(73800),
   s = n(481060),
-  r = n(923928),
-  o = n(600164),
+  o = n(923928),
+  r = n(600164),
   a = n(594190),
   d = n(626135),
   u = n(981631),
@@ -37,8 +37,9 @@ class x extends i.Component {
     return (0, l.jsxs)(s.Y0X, {
       transitionState: this.props.transitionState,
       "aria-label": h.intl.string(h.t["4xSkEB"]),
+      parentComponent: "ElevatedPermissionsSound",
       children: [(0, l.jsxs)(s.xBx, {
-        justify: o.Z.Justify.BETWEEN,
+        justify: r.Z.Justify.BETWEEN,
         separator: !1,
         children: [(0, l.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
@@ -78,15 +79,15 @@ class x extends i.Component {
         onClose: e,
         pid: n
       } = this.props;
-      r.Z.continueNonelevatedProcess(n), t(), e()
+      o.Z.continueNonelevatedProcess(n), t(), e()
     }), p(this, "handleRequestElevated", () => {
       let {
         handleStream: t,
         onClose: e,
         pid: n
       } = this.props;
-      r.Z.requestElevatedProcess(n), t(), e()
+      o.Z.requestElevatedProcess(n), t(), e()
     })
   }
 }
-let k = x
+let m = x

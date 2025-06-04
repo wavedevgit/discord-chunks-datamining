@@ -33,11 +33,11 @@ function C(e) {
   return e
 }
 var m = ((n = {}).SIZE_40 = "SIZE_40", n.SIZE_60 = "SIZE_60", n);
-let x = Object.freeze({
+let p = Object.freeze({
     SIZE_40: "size-40",
     SIZE_60: "size-60"
   }),
-  p = t(515695);
+  x = t(515695);
 class b extends(o = l.PureComponent) {
   render() {
     let e = this.props,
@@ -83,14 +83,14 @@ class g extends(s = l.PureComponent) {
   render() {
     let {
       overlaySize: e
-    } = this.props, r = x[null != e ? e : "SIZE_40"];
+    } = this.props, r = p[null != e ? e : "SIZE_40"];
     return (0, a.jsxs)("div", {
       className: u.qrCodeOverlayContainer,
       children: [(0, a.jsx)(b, C({}, this.props)), (0, a.jsx)("div", {
         className: u.qrCodeOverlay,
         children: (0, a.jsx)("img", {
           className: u[r],
-          src: p,
+          src: x,
           alt: ""
         })
       })]

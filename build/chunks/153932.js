@@ -10,8 +10,8 @@ var s = n(255367),
   l = n(194359),
   c = n(906732),
   d = n(321488),
-  m = n(417183),
-  p = n(170245),
+  p = n(417183),
+  m = n(170245),
   u = n(892001),
   b = n(974042),
   h = n(981631),
@@ -72,7 +72,7 @@ function j(e) {
   }, f = n === h.Skl.OFFLINE ? h.Skl.UNKNOWN : n, _ = o ? g.intl.string(g.t.pO68Oz) : g.intl.string(g.t["gp+Yt7"]);
   return (0, s.jsx)("div", {
     className: O.spamRequest,
-    children: (0, s.jsx)(m.Z, {
+    children: (0, s.jsx)(p.Z, {
       isFocused: !1,
       user: t,
       className: O.listItem,
@@ -83,7 +83,7 @@ function j(e) {
       }),
       children: e => (0, s.jsxs)("div", {
         className: O.listItemContents,
-        children: [(0, s.jsx)(p.Z, {
+        children: [(0, s.jsx)(m.Z, {
           user: t,
           hovered: e,
           status: f,
@@ -116,15 +116,16 @@ function y(e) {
     onClose: n
   } = e, {
     rows: c
-  } = (0, a.cj)([b.ZP], () => b.ZP.getState()), d = c.filter(h.pJs.PENDING_IGNORED), m = c.filter(h.pJs.SPAM), p = m.length + d.length;
+  } = (0, a.cj)([b.ZP], () => b.ZP.getState()), d = c.filter(h.pJs.PENDING_IGNORED), p = c.filter(h.pJs.SPAM), m = p.length + d.length;
   return o.useEffect(() => {
-    0 === p && n()
-  }, [p, n]), (0, s.jsxs)(r.Y0X, {
+    0 === m && n()
+  }, [m, n]), (0, s.jsxs)(r.Y0X, {
     transitionState: t,
     className: O.modal,
     impression: {
       impressionName: i.ImpressionNames.FRIEND_REQUESTS_SPAM_INBOX
     },
+    parentComponent: "OtherFriendRequestsModal",
     children: [(0, s.jsxs)(r.xBx, {
       separator: !1,
       className: O.modalHeader,
@@ -143,11 +144,11 @@ function y(e) {
         isFocused: !1,
         key: e.key,
         ignoredUser: !0
-      }))), m.map(e => (0, o.createElement)(j, _(f({}, e), {
+      }))), p.map(e => (0, o.createElement)(j, _(f({}, e), {
         isFocused: !1,
         key: e.key
       })))]
-    }), p > 1 && (0, s.jsx)("div", {
+    }), m > 1 && (0, s.jsx)("div", {
       className: O.modalFooter,
       children: (0, s.jsx)(r.zxk, {
         className: O.clearAllButton,

@@ -26,13 +26,13 @@ function E(e) {
     onSuccess: l,
     onClose: E,
     onSlideChange: S,
-    hasJoinButton: O
-  } = e, [C, b] = i.useState(n), g = (0, c.Z)(C), [L, D] = i.useState(null), [h, A] = i.useState(null), [x, v] = i.useState(null), [w, U] = i.useState(!1);
+    hasJoinButton: C
+  } = e, [O, b] = i.useState(n), g = (0, c.Z)(O), [L, D] = i.useState(null), [h, A] = i.useState(null), [x, v] = i.useState(null), [w, U] = i.useState(!1);
   i.useEffect(() => {
     b(n)
   }, [b, n]), i.useEffect(() => {
-    C !== g && S(C)
-  }, [S, C, g]);
+    O !== g && S(O)
+  }, [S, O, g]);
   let y = i.useCallback(e => {
       b(I._m.CREATION_INTENT), A(e), u.default.track(N.rMx.GUILD_TEMPLATE_SELECTED, {
         template_name: e.id,
@@ -44,9 +44,9 @@ function E(e) {
     }, []),
     j = i.useCallback(() => b(I._m.JOIN_GUILD), [b]),
     P = i.useCallback(() => {
-      if (C === I._m.CUSTOMIZE_GUILD) return void b(I._m.CREATION_INTENT);
+      if (O === I._m.CUSTOMIZE_GUILD) return void b(I._m.CREATION_INTENT);
       b(I._m.GUILD_TEMPLATES), A(null)
-    }, [C]),
+    }, [O]),
     M = i.useCallback(e => {
       v(e), l(e)
     }, [l, v]),
@@ -61,10 +61,11 @@ function E(e) {
     children: (0, r.jsx)(s.Y0X, {
       transitionState: t,
       disableTrack: !0,
+      parentComponent: "CreateGuildModal",
       children: (0, r.jsx)("div", {
         className: T.container,
         children: (0, r.jsxs)(s.MyZ, {
-          activeSlide: C,
+          activeSlide: O,
           width: Z,
           onSlideReady: e => D(e),
           children: [(0, r.jsx)(s.Mi4, {
@@ -73,7 +74,7 @@ function E(e) {
             impressionProperties: R,
             children: (0, r.jsx)(m.Z, {
               isNewUser: !1,
-              onJoin: O ? j : void 0,
+              onJoin: C ? j : void 0,
               onChooseTemplate: y,
               onClose: E
             })

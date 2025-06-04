@@ -5,8 +5,8 @@ i.d(t, {
 var n, s = i(255367),
   a = i(73800),
   l = i(120356),
-  r = i.n(l),
-  o = i(772848),
+  o = i.n(l),
+  r = i(772848),
   h = i(846519),
   d = i(481060),
   c = i(981631),
@@ -118,22 +118,23 @@ class C extends(n = a.PureComponent) {
     }) : n ? m.intl.string(m.t.tSXg8P) : m.intl.string(m.t.KW5DEh), (0, s.jsxs)(d.Y0X, {
       transitionState: a,
       "aria-labelledby": this._headerId,
-      className: r()(u.emailVerificationModal, g.vertical, g.alignCenter, g.justifyCenter, p.marginTop60),
+      className: o()(u.emailVerificationModal, g.vertical, g.alignCenter, g.justifyCenter, p.marginTop60),
+      parentComponent: "EmailVerificationModal",
       children: [(0, s.jsx)("div", {
         className: u.animationContainer,
         ref: this.setLottieRef
       }), (0, s.jsx)("div", {
         id: this._headerId,
-        className: r()(u.title, p.marginBottom8),
+        className: o()(u.title, p.marginBottom8),
         children: m.intl.string(m.t["1MPz29"])
       }), (0, s.jsx)("div", {
-        className: r()(u.body, p.marginBottom20),
+        className: o()(u.body, p.marginBottom20),
         children: e
       }), n ? this.renderActions() : this.renderInputs()]
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_lottieRef", void 0), f(this, "_animItem", null), f(this, "_timeout", new h.V7), f(this, "_headerId", (0, o.Z)()), f(this, "state", {
+    super(...e), f(this, "_lottieRef", void 0), f(this, "_animItem", null), f(this, "_timeout", new h.V7), f(this, "_headerId", (0, r.Z)()), f(this, "state", {
       resent: !1,
       shouldClose: !1,
       email: "",

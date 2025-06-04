@@ -28,8 +28,8 @@ let g = u.t_t.DEFAULT,
     type: g,
     opacity: m
   }),
-  _ = o.createContext(void 0),
-  v = e => {
+  v = o.createContext(void 0),
+  _ = e => {
     var {
       children: t,
       className: n
@@ -53,7 +53,7 @@ let g = u.t_t.DEFAULT,
         let {
           type: o
         } = e;
-        return (0, r.jsx)(_.Consumer, {
+        return (0, r.jsx)(v.Consumer, {
           children: e => {
             var s, a;
             return (0, r.jsx)("div", (s = function(e) {
@@ -94,7 +94,7 @@ class O extends(i = o.PureComponent) {
       children: t,
       className: n
     } = this.props;
-    return (0, r.jsx)(_.Consumer, {
+    return (0, r.jsx)(v.Consumer, {
       children: i => (0, r.jsx)(y.Consumer, {
         children: o => {
           let s = l()(h.body, h[c()(o.type)], n);
@@ -147,7 +147,7 @@ let b = e => {
       className: n,
       dynamicSize: i = !1
     } = e;
-    return (0, r.jsx)(_.Consumer, {
+    return (0, r.jsx)(v.Consumer, {
       children: e => (0, r.jsx)("div", {
         className: l()(h.content, {
           [h.staticSize]: !i
@@ -163,7 +163,7 @@ b.Background = e => {
     opacityOverride: n
   } = e;
   if (null == t) return null;
-  let i = [v, O, E];
+  let i = [_, O, E];
   return (0, r.jsx)(y.Consumer, {
     children: e => {
       let {
@@ -175,7 +175,7 @@ b.Background = e => {
         style: l
       });
       {
-        if (i.includes(t.type)) return (0, r.jsx)(_.Provider, {
+        if (i.includes(t.type)) return (0, r.jsx)(v.Provider, {
           value: l,
           children: t
         });
@@ -231,5 +231,5 @@ b.Background = e => {
       })
     }
   })
-}, b.Bar = v;
+}, b.Bar = _;
 let x = b

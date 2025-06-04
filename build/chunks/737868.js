@@ -18,8 +18,8 @@ var l = t(255367),
   x = t(273039),
   p = t(339085),
   b = t(592125),
-  v = t(984933),
-  C = t(699516),
+  C = t(984933),
+  v = t(699516),
   g = t(594174),
   _ = t(700785),
   N = t(995532),
@@ -37,10 +37,10 @@ let T = e => {
     transitionState: w,
     onSave: z,
     onClose: B
-  } = e, I = i.useRef(null), D = (0, f.Dt)(), [L, R] = i.useState(null != Z ? Z.channel_id : null), [A, H] = i.useState(null != Z ? Z.description : ""), [M, K] = i.useState(null != Z ? {
+  } = e, I = i.useRef(null), D = (0, f.Dt)(), [L, R] = i.useState(null != Z ? Z.channel_id : null), [A, H] = i.useState(null != Z ? Z.description : ""), [M, W] = i.useState(null != Z ? {
     id: Z.emoji_id,
     name: Z.emoji_name
-  } : null), [W, Y] = i.useState(!1), q = (0, o.e7)([p.ZP], () => (null == M ? void 0 : M.id) != null ? p.ZP.getUsableCustomEmojiById(M.id) : null), G = (0, o.e7)([v.ZP], () => v.ZP.getChannels(T)[v.sH], [T]), V = (0, o.e7)([N.Z], () => N.Z.get(T)), X = null != (t = null == V || null == (n = V.welcome_channels) ? void 0 : n.map(e => e.channel_id)) ? t : [], [$, U] = i.useState(!1);
+  } : null), [K, Y] = i.useState(!1), q = (0, o.e7)([p.ZP], () => (null == M ? void 0 : M.id) != null ? p.ZP.getUsableCustomEmojiById(M.id) : null), G = (0, o.e7)([C.ZP], () => C.ZP.getChannels(T)[C.sH], [T]), V = (0, o.e7)([N.Z], () => N.Z.get(T)), X = null != (t = null == V || null == (n = V.welcome_channels) ? void 0 : n.map(e => e.channel_id)) ? t : [], [$, U] = i.useState(!1);
   i.useEffect(() => {
     r.K.get(O.S) || setTimeout(() => U(!0), 300)
   }, []);
@@ -51,7 +51,7 @@ let T = e => {
     } = e;
     _.Uu(y.Plq.VIEW_CHANNEL, n) && ((null == Z ? void 0 : Z.channel_id) === n.id || !X.includes(n.id)) && F.push({
       value: n.id,
-      label: (0, u.F6)(n, g.default, C.Z)
+      label: (0, u.F6)(n, g.default, v.Z)
     })
   });
   let J = () => {
@@ -60,8 +60,8 @@ let T = e => {
     Q = i.useCallback(e => H(e), []),
     ee = e => {
       var n, t, l;
-      if (null == e) return void K(null);
-      K(null != e.id ? {
+      if (null == e) return void W(null);
+      W(null != e.id ? {
         id: null != (n = e.id) ? n : null,
         name: null != (t = e.name) ? t : null
       } : {
@@ -77,6 +77,7 @@ let T = e => {
     children: (0, l.jsxs)(a.Y0X, {
       transitionState: w,
       "aria-labelledby": D,
+      parentComponent: "CreateWelcomeChannelModal",
       children: [(0, l.jsxs)("div", {
         className: P.modalContents,
         children: [(0, l.jsx)(a.olH, {
@@ -146,7 +147,7 @@ let T = e => {
                 renderPopout: e => {
                   let {
                     closePopout: n
-                  } = e, t = v.ZP.getDefaultChannel(T);
+                  } = e, t = C.ZP.getDefaultChannel(T);
                   return (0, l.jsx)(h.Z, {
                     guildId: T,
                     closePopout: n,
@@ -257,7 +258,7 @@ let T = e => {
           color: a.zxk.Colors.RED,
           children: S.intl.string(S.t.N86XcH)
         })]
-      }), W && (0, l.jsx)(k.Z, {
+      }), K && (0, l.jsx)(k.Z, {
         onConfirm: () => {
           z(), J()
         },

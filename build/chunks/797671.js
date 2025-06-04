@@ -20,10 +20,10 @@ var a = n(255367),
   x = n(324067),
   g = n(430824),
   I = n(259580),
-  j = n(934415),
-  E = n(700785),
-  N = n(573261),
-  C = n(981631),
+  C = n(934415),
+  j = n(700785),
+  E = n(573261),
+  N = n(981631),
   v = n(231338),
   B = n(388032),
   k = n(720848);
@@ -33,9 +33,9 @@ function w(e) {
   let {
     guildId: w,
     transitionState: L,
-    onSubmit: y,
-    onClose: S
-  } = e, T = (0, _.Dt)(), D = (0, _.Dt)(), W = (0, _.Dt)(), P = (0, _.Dt)(), [R, M] = i.useState(C.Sc2), [G, U] = i.useState(C.d4z.GUILD_TEXT), [z, H] = i.useState(""), [O, Z] = i.useState(!1), A = (0, o.e7)([g.Z], () => g.Z.getGuild(w), [w]), F = (0, h.m)(w), V = (0, p.W3)(w), X = (0, m.Ui)(A), q = i.useMemo(() => (function(e) {
+    onSubmit: S,
+    onClose: y
+  } = e, T = (0, _.Dt)(), D = (0, _.Dt)(), W = (0, _.Dt)(), P = (0, _.Dt)(), [R, M] = i.useState(N.Sc2), [G, U] = i.useState(N.d4z.GUILD_TEXT), [z, H] = i.useState(""), [O, Z] = i.useState(!1), A = (0, o.e7)([g.Z], () => g.Z.getGuild(w), [w]), F = (0, h.m)(w), V = (0, p.W3)(w), X = (0, m.Ui)(A), q = i.useMemo(() => (function(e) {
     let {
       canCreateStageChannel: t,
       canCreateForumChannel: n,
@@ -43,28 +43,28 @@ function w(e) {
     } = e, r = [{
       icon: c.VL1,
       label: B.intl.string(B.t.pnuRXF),
-      value: C.d4z.GUILD_TEXT,
+      value: N.d4z.GUILD_TEXT,
       description: B.intl.string(B.t.Hf5Lb2)
     }, {
       icon: c.gj8,
       label: B.intl.string(B.t.Sx55Oj),
-      value: C.d4z.GUILD_VOICE,
+      value: N.d4z.GUILD_VOICE,
       description: B.intl.string(B.t.pqfkoK)
     }];
     return t && r.push({
       icon: c.ewx,
       label: B.intl.string(B.t.pNWst7),
-      value: C.d4z.GUILD_STAGE_VOICE,
+      value: N.d4z.GUILD_STAGE_VOICE,
       description: B.intl.string(B.t.VPAwgo)
     }), n && (r.push({
       icon: c.Mmi,
       label: B.intl.string(B.t.eAVIDw),
-      value: C.d4z.GUILD_FORUM,
+      value: N.d4z.GUILD_FORUM,
       description: B.intl.string(B.t.iZ5pgo)
     }), i && r.push({
       icon: c.XBm,
       label: B.intl.string(B.t["6x6fVl"]),
-      value: C.d4z.GUILD_MEDIA,
+      value: N.d4z.GUILD_MEDIA,
       description: B.intl.string(B.t.JyCrwc),
       isBeta: !0
     })), r.map(e => {
@@ -122,12 +122,12 @@ function w(e) {
         permission_overwrites: [{
           id: w,
           type: s.BN.ROLE,
-          allow: E.Hn,
-          deny: C.Plq.VIEW_CHANNEL
+          allow: j.Hn,
+          deny: N.Plq.VIEW_CHANNEL
         }]
       };
-      N.Z.post({
-        url: C.ANM.GUILD_CHANNELS(w),
+      E.Z.post({
+        url: N.ANM.GUILD_CHANNELS(w),
         body: t,
         oldFormErrors: !0,
         trackedActionData: {
@@ -143,7 +143,7 @@ function w(e) {
         },
         rejectWithError: !0
       }).then(e => {
-        b.Z.checkGuildTemplateDirty(w), y(e.body.id), S()
+        b.Z.checkGuildTemplateDirty(w), S(e.body.id), y()
       }, e => {}).finally(() => {
         Z(!1)
       })
@@ -151,6 +151,7 @@ function w(e) {
     children: (0, a.jsxs)(c.Y0X, {
       transitionState: L,
       "aria-labelledby": T,
+      parentComponent: "ChannelSelectorCreateChannelModal",
       children: [(0, a.jsxs)(c.xBx, {
         children: [(0, a.jsx)(c.X6q, {
           id: T,
@@ -158,7 +159,7 @@ function w(e) {
           children: B.intl.string(B.t["fUYU+v"])
         }), (0, a.jsx)(c.olH, {
           className: k.closeButton,
-          onClick: S
+          onClick: y
         })]
       }), (0, a.jsxs)(c.hzk, {
         className: k.modalContent,
@@ -196,9 +197,9 @@ function w(e) {
           children: (0, a.jsx)(c.oil, {
             value: z,
             onChange: function(e) {
-              (0, f.zi)(G) && (e = (0, j.Nj)(e)), H(e)
+              (0, f.zi)(G) && (e = (0, C.Nj)(e)), H(e)
             },
-            maxLength: C.HN8,
+            maxLength: N.HN8,
             placeholder: B.intl.string(B.t["bw/b8P"]),
             className: k.inputWrapper,
             inputClassName: k.inputInner,
@@ -223,7 +224,7 @@ function w(e) {
           color: c.zxk.Colors.PRIMARY,
           className: k.backButton,
           innerClassName: k.backButtonInner,
-          onClick: S,
+          onClick: y,
           children: [(0, a.jsx)(I.Z, {
             direction: I.Z.Directions.LEFT
           }), B.intl.string(B.t["13/7kZ"])]

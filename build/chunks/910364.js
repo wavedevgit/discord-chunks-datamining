@@ -28,8 +28,8 @@ var o = t(255367),
   N = t(314386),
   O = t(62154),
   C = t(277094),
-  T = t(228168),
-  P = t(388032),
+  P = t(228168),
+  T = t(388032),
   w = t(405666);
 
 function S(e) {
@@ -41,8 +41,8 @@ function S(e) {
     messageId: M,
     roleId: L,
     sessionId: D,
-    initialSection: B,
-    initialSubsection: R,
+    initialSection: R,
+    initialSubsection: B,
     transitionState: G,
     customStatusPrompt: k,
     openedAt: F,
@@ -73,9 +73,9 @@ function S(e) {
   (0, l.$)(en);
   let et = c.useRef(null),
     eo = (0, d.Z)(et),
-    ec = (0, a.e7)([m.default], () => ["en-US", "en-GB"].includes(m.default.locale)) ? P.intl.formatToPlainString(P.t.KRe1Fh, {
+    ec = (0, a.e7)([m.default], () => ["en-US", "en-GB"].includes(m.default.locale)) ? T.intl.formatToPlainString(T.t.KRe1Fh, {
       name: J
-    }) : P.intl.string(P.t["3N/J2t"]);
+    }) : T.intl.string(T.t["3N/J2t"]);
   return (0, o.jsx)(u.Gt, {
     value: W,
     children: (0, o.jsx)(b.Mt, {
@@ -91,10 +91,11 @@ function S(e) {
           className: w.root,
           hideShadow: !0,
           "aria-label": ec,
+          parentComponent: "UserProfileModal",
           children: [(0, o.jsxs)(j.Z, {
             user: n,
             displayProfile: z,
-            themeType: T.lY.MODAL,
+            themeType: P.lY.MODAL,
             ref: et,
             children: [(0, o.jsx)(N.Z, {
               user: n,
@@ -106,7 +107,7 @@ function S(e) {
               children: [(0, o.jsx)(Z.Z, {
                 user: n,
                 displayProfile: z,
-                themeType: T.lY.MODAL
+                themeType: P.lY.MODAL
               }), (0, o.jsx)(v.Z, {
                 userId: n.id,
                 onClose: U,
@@ -122,13 +123,13 @@ function S(e) {
                   displayProfile: z,
                   guildId: S,
                   channelId: E,
-                  themeType: T.lY.MODAL
+                  themeType: P.lY.MODAL
                 }), (0, o.jsx)(A.Z, {
                   location: "UserProfileModal",
                   user: n,
                   guildId: S,
                   channelId: E,
-                  themeType: T.lY.MODAL,
+                  themeType: P.lY.MODAL,
                   hasEntered: G === r.Dvm.ENTERED,
                   prompt: $ && Q ? ee : null
                 }), (0, o.jsx)("div", {
@@ -148,8 +149,8 @@ function S(e) {
               guildId: S,
               channelId: E,
               displayProfile: z,
-              initialSection: B,
-              initialSubsection: R,
+              initialSection: R,
+              initialSubsection: B,
               onClose: U
             })]
           }), (null == z ? void 0 : z.profileEffectId) != null && (0, o.jsx)(p.Z, {

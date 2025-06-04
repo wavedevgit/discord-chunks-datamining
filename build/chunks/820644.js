@@ -5,9 +5,9 @@ n.d(e, {
 var a = n(255367);
 n(73800);
 var i = n(120356),
-  s = n.n(i),
+  o = n.n(i),
   r = n(481060),
-  o = n(774599),
+  s = n(774599),
   l = n(986449);
 
 function c(t) {
@@ -15,7 +15,7 @@ function c(t) {
     text: e
   } = t;
   return (0, a.jsxs)("div", {
-    className: s()(l.toast, o.toast),
+    className: o()(l.toast, s.toast),
     children: [(0, a.jsx)(r.b7C, {
       color: r.TVs.colors.TEXT_BRAND
     }), (0, a.jsx)(r.Text, {

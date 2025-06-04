@@ -12,11 +12,11 @@ let u = !1,
   p = [],
   h = "",
   _ = !1,
-  f = {
+  E = {
     viewNonce: "",
     regenerateNonce: ""
   };
-class E extends(i = c.ZP.Store) {
+class f extends(i = c.ZP.Store) {
   getVerificationKey() {
     return h
   }
@@ -27,19 +27,19 @@ class E extends(i = c.ZP.Store) {
     return u
   }
   getNonces() {
-    return f
+    return E
   }
   get hasSeenBackupPrompt() {
     return _
   }
 }
-o = "MFAStore", (r = "displayName") in E ? Object.defineProperty(E, r, {
+o = "MFAStore", (r = "displayName") in f ? Object.defineProperty(f, r, {
   value: o,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : E[r] = o;
-let S = new E(d.Z, {
+}) : f[r] = o;
+let S = new f(d.Z, {
   MFA_ENABLE_SUCCESS: function(e) {
     let {
       token: t,
@@ -73,7 +73,7 @@ let S = new E(d.Z, {
     let {
       nonces: t
     } = e;
-    f = t
+    E = t
   },
   MFA_SEEN_BACKUP_CODE_PROMPT: function() {
     _ = !0

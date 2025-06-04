@@ -513,6 +513,7 @@ let eu = 880,
         transitionState: t,
         size: _.CgR.DYNAMIC,
         className: ea.modalRoot,
+        parentComponent: "CollectiblesCollectedModal",
         children: (0, r.jsx)(_.hzk, {
           className: ea.modalContent,
           scrollbarType: "none",

@@ -67,7 +67,7 @@ function y(e) {
         voiceGuild: p
       } = e, {
         trackView: y,
-        trackClick: _
+        trackClick: v
       } = (0, c.R)(u.n0.GoLiveNudge, {
         notif_type: u.n0.GoLiveNudge
       });
@@ -84,7 +84,7 @@ function y(e) {
           y()
         },
         onNotificationClick: (e, t) => {
-          _("unlock"), o.Z.updateNotificationStatus(t);
+          v("unlock"), o.Z.updateNotificationStatus(t);
           let c = s.default.isOverlayOOPEnabledForPid((0, a.getPID)());
           if (c ? o.Z.setInputLocked(!1, (0, a.getPID)()) : o.Z.setInstanceLocked(!1), null == l.default.getCurrentUser()) return;
           let u = c ? {
@@ -103,7 +103,7 @@ function y(e) {
           }, u)
         },
         onDismissClick: () => {
-          _("dismiss")
+          v("dismiss")
         }
       }
     }

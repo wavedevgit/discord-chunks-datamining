@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var i = n(255367),
   r = n(73800),
-  s = n(120356),
-  o = n.n(s),
+  o = n(120356),
+  s = n.n(o),
   a = n(831209),
   l = n(481060),
   c = n(367907),
@@ -18,8 +18,8 @@ function p(e) {
   let {
     guildId: t,
     transitionState: n,
-    onClose: s
-  } = e, [p, j] = r.useState([]), [m, _] = r.useState(), C = [{
+    onClose: o
+  } = e, [p, m] = r.useState([]), [j, C] = r.useState(), _ = [{
     text: u.intl.string(u.t["//3pvr"]),
     value: d.C2.DM_SPAM
   }, {
@@ -40,11 +40,12 @@ function p(e) {
   }];
 
   function g(e) {
-    p.includes(e) ? j(t => t.filter(t => t !== e)) : j(t => [...t, e])
+    p.includes(e) ? m(t => t.filter(t => t !== e)) : m(t => [...t, e])
   }
-  return null == t ? (s(), null) : (0, i.jsxs)(l.Y0X, {
+  return null == t ? (o(), null) : (0, i.jsxs)(l.Y0X, {
     transitionState: n,
     size: l.CgR.MEDIUM,
+    parentComponent: "GuildRaidLockdownFeedbackModal",
     children: [(0, i.jsx)(l.xBx, {
       separator: !0,
       children: (0, i.jsxs)("div", {
@@ -60,7 +61,7 @@ function p(e) {
             children: u.intl.string(u.t.f5hd9P)
           })]
         }), (0, i.jsx)(l.P3F, {
-          onClick: s,
+          onClick: o,
           children: (0, i.jsx)(l.Dio, {
             size: "xs",
             color: "currentColor",
@@ -71,13 +72,13 @@ function p(e) {
     }), (0, i.jsx)(l.hzk, {
       children: (0, i.jsx)("div", {
         className: h.options,
-        children: C.map(e => {
+        children: _.map(e => {
           let {
             text: t,
             value: n
           } = e;
           return (0, i.jsxs)("div", {
-            className: o()(h.optionContainer, {
+            className: s()(h.optionContainer, {
               [h.optionContainerOther]: n === d.C2.OTHER
             }),
             children: [(0, i.jsxs)(l.P3F, {
@@ -100,8 +101,8 @@ function p(e) {
               children: (0, i.jsx)(l.Kx8, {
                 className: h.serverLockdownReasonText,
                 placeholder: u.intl.string(u.t["PAM+JS"]),
-                onChange: e => _(e),
-                value: m,
+                onChange: e => C(e),
+                value: j,
                 rows: 2,
                 autoFocus: !0,
                 flex: !0
@@ -115,9 +116,9 @@ function p(e) {
         onClick: function() {
           (0, c.yw)(x.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
             raid_lockdown_feedback_type: p,
-            raid_lockdown_feedback_other_reason: m,
+            raid_lockdown_feedback_other_reason: j,
             guild_id: t
-          }), s()
+          }), o()
         },
         color: l.zxk.Colors.BRAND,
         look: l.zxk.Looks.FILLED,

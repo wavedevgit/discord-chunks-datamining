@@ -30,6 +30,7 @@ function h(e) {
     impression: {
       impressionName: r.ImpressionNames.HUB_EMAIL_SIGNUP
     },
+    parentComponent: "HubEmailConnectionModal",
     children: (0, l.jsx)(s.hzk, {
       style: {
         overflow: "hidden",

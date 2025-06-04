@@ -1,71 +1,72 @@
 /** Chunk was on 98137 **/
-r.d(t, {
+n.d(t, {
   default: () => l
 });
-var n = r(255367);
-r(73800);
-var c = r(481060),
-  o = r(313201),
-  a = r(388032),
-  s = r(281373);
+var r = n(255367);
+n(73800);
+var o = n(481060),
+  c = n(313201),
+  a = n(388032),
+  s = n(281373);
 let l = e => {
-  var t, r;
+  var t, n;
   let {
     onClose: l
-  } = e, i = (0, o.Dt)();
-  return (0, n.jsxs)(c.Y0X, (t = function(e) {
+  } = e, i = (0, c.Dt)();
+  return (0, r.jsxs)(o.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), n.forEach(function(t) {
-        var n;
-        n = r[t], t in e ? Object.defineProperty(e, t, {
-          value: n,
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = n
+        }) : e[t] = r
       })
     }
     return e
-  }({}, e), r = r = {
+  }({}, e), n = n = {
     "aria-labelledby": i,
-    children: [(0, n.jsxs)(c.xBx, {
+    parentComponent: "QuarantineModeInfoModal",
+    children: [(0, r.jsxs)(o.xBx, {
       separator: !1,
       className: s.modalHeader,
-      children: [(0, n.jsx)(c.X6q, {
+      children: [(0, r.jsx)(o.X6q, {
         id: i,
         variant: "heading-xl/extrabold",
         children: a.intl.string(a.t.EouHws)
-      }), (0, n.jsx)(c.olH, {
+      }), (0, r.jsx)(o.olH, {
         className: s.closeButton,
         onClick: l
       })]
-    }), (0, n.jsx)(c.hzk, {
+    }), (0, r.jsx)(o.hzk, {
       className: s.modalContent,
-      children: (0, n.jsx)(c.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         className: s.contentText,
         children: a.intl.string(a.t.zNPBMD)
       })
-    }), (0, n.jsx)(c.mzw, {
-      children: (0, n.jsx)(c.zxk, {
+    }), (0, r.jsx)(o.mzw, {
+      children: (0, r.jsx)(o.zxk, {
         className: s.button,
-        size: c.zxk.Sizes.MIN,
+        size: o.zxk.Sizes.MIN,
         onClick: l,
         children: a.intl.string(a.t.BddRzc)
       })
     })]
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-    var r = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(r)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }

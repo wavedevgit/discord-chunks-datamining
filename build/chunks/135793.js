@@ -121,6 +121,7 @@ function G(e) {
         source: d
       }
     },
+    parentComponent: "MessageConfettiConsumableModal",
     children: (0, r.jsx)(B, {
       channel: n,
       message: o,

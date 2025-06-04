@@ -35,6 +35,7 @@ function c(e) {
     role: "alertdialog",
     transitionState: b.transitionState,
     className: s.modalRoot,
+    parentComponent: "ExternalAppLaunchAlert",
     children: [(0, a.jsx)("div", {
       className: s.birbContainer,
       children: (0, a.jsx)("img", {

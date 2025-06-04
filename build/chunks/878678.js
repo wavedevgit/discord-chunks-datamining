@@ -92,6 +92,7 @@ function p(e) {
     className: h,
     transitionState: O,
     impression: T,
+    parentComponent: "ConfirmModal",
     children: [null != a ? (0, r.jsx)(u.xB, {
       separator: !1,
       children: (0, r.jsx)(l.X6q, {

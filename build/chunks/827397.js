@@ -1,6 +1,6 @@
 /** Chunk was on 99014 **/
 n.d(t, {
-  Z: () => c
+  Z: () => l
 });
 var r = n(73800),
   o = n(481060),
@@ -8,7 +8,7 @@ var r = n(73800),
   i = n(535396),
   s = n(981631);
 
-function c(e, t) {
+function l(e, t) {
   let n = r.useCallback(n => {
     if (n.stopPropagation(), t.type !== i.Us.LEVEL) switch ((0, o.Mr3)(i.H2), t.skuId) {
       case i.IN:

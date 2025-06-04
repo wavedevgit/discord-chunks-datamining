@@ -157,6 +157,7 @@ function P(e) {
       transitionState: t,
       className: N.modal,
       size: T ? o.CgR.DYNAMIC : o.CgR.MEDIUM,
+      parentComponent: "AvatarDecorationModal",
       children: T ? (0, r.jsx)(o.$jN, {
         className: N.spinner,
         type: o.$jN.Type.SPINNING_CIRCLE

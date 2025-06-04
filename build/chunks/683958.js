@@ -87,8 +87,8 @@ function w(e) {
       channel: a,
       command: g,
       onClose: w,
-      requireLaunchChannel: E,
-      onShareResult: C,
+      requireLaunchChannel: C,
+      onShareResult: E,
       previewMessage: N
     } = e,
     Z = function(e, t) {
@@ -107,7 +107,7 @@ function w(e) {
       return l
     }(e, ["applicationId", "channel", "command", "onClose", "requireLaunchChannel", "onShareResult", "previewMessage"]);
   let L = l.useMemo(() => null == a ? null : (0, o.dL)(a.id), [a]),
-    [D, M] = l.useState(!1),
+    [M, D] = l.useState(!1),
     {
       commands: T,
       loading: k
@@ -124,7 +124,7 @@ function w(e) {
       allowApplicationState: !0
     })),
     A = l.useRef(0),
-    [R, I] = l.useState(E && null != L ? [L] : []),
+    [R, I] = l.useState(C && null != L ? [L] : []),
     F = R.length,
     q = F >= 5,
     [U, z] = l.useState(""),
@@ -140,8 +140,8 @@ function w(e) {
       z(e), W(e)
     }, [W]),
     X = l.useCallback(() => {
-      C(!1), w()
-    }, [C, w]),
+      E(!1), w()
+    }, [E, w]),
     [B] = (0, s.Z)([n]),
     V = l.useCallback(() => {
       z("")
@@ -177,9 +177,9 @@ function w(e) {
         closeAfterSend: t
       } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
       if (null === Q) return;
-      M(!0);
+      D(!0);
       let n = (await Promise.all(e.map(o.qx))).filter(f.lm);
-      t && (C(!0), S()), n.forEach(async e => {
+      t && (E(!0), S()), n.forEach(async e => {
         var t, n;
         let r = c.Z.getChannel(e);
         if (null == r) return;
@@ -196,8 +196,8 @@ function w(e) {
             guild: a
           }
         }) && (0, i.showToast)((0, i.createToast)(y.intl.string(y.t["5WjJcn"]), i.ToastType.MESSAGE))
-      }), C(!0), S()
-    }, [C, Q, g.options]),
+      }), E(!0), S()
+    }, [E, Q, g.options]),
     ee = l.useCallback(() => {
       $(R, {
         closeAfterSend: !0
@@ -207,6 +207,7 @@ function w(e) {
     className: v.modal,
     "aria-label": y.intl.string(y.t.fuFvw8)
   }, Z), {
+    parentComponent: "ApplicationCommandShareModal",
     children: (0, r.jsx)(i.$jN, {
       className: v.spinnerContainer
     })
@@ -215,6 +216,7 @@ function w(e) {
     className: v.modal,
     "aria-label": y.intl.string(y.t.fuFvw8)
   }, Z), {
+    parentComponent: "ApplicationCommandShareModal",
     children: (0, r.jsx)(i.hzk, {
       children: y.intl.string(y.t.yAk8ZW)
     })
@@ -243,6 +245,7 @@ function w(e) {
     className: v.modal,
     "aria-label": y.intl.string(y.t.fuFvw8)
   }, Z), {
+    parentComponent: "ApplicationCommandShareModal",
     children: [(0, r.jsxs)(i.xBx, {
       className: v.header,
       children: [(0, r.jsxs)("div", {
@@ -286,7 +289,7 @@ function w(e) {
     }), et, (0, r.jsx)(P, {
       sendLabel: y.intl.string(y.t.TXNS7e),
       canSend: F > 0,
-      isSending: D,
+      isSending: M,
       onSend: ee
     })]
   }))

@@ -1,7 +1,7 @@
 /** Chunk was on 63141 **/
 n.d(t, {
   QR: () => y,
-  Yj: () => _,
+  Yj: () => v,
   ZP: () => O,
   iz: () => m
 });
@@ -43,11 +43,11 @@ let f = e => e.stopPropagation(),
       }, n)
     })
   }),
-  _ = (e, t) => (0, r.jsx)("div", {
+  v = (e, t) => (0, r.jsx)("div", {
     className: u.hintSubtleText,
     children: t
   });
-class v extends(i = o.PureComponent) {
+class _ extends(i = o.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       expand: n
@@ -248,9 +248,9 @@ class v extends(i = o.PureComponent) {
     }
   }
 }
-p(v, "defaultProps", {
+p(_, "defaultProps", {
   maxBodyLines: void 0,
   expand: !1,
   disabled: !1
 });
-let O = v
+let O = _

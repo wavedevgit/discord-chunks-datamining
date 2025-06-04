@@ -6,8 +6,8 @@ var s = a(255367);
 a(73800);
 var t = a(386230),
   n = a(692547),
-  i = a(481060),
-  l = a(118012),
+  l = a(481060),
+  i = a(118012),
   o = a(313201),
   d = a(388032),
   c = a(388145);
@@ -21,13 +21,13 @@ let m = e => {
       count: r
     }), u = null != a ? d.intl.formatToPlainString(d.t.YMor7u, {
       count: a
-    }) : "--", g = (0, i.dQu)(n.Z.unsafe_rawColors.RED_400).hex(), p = (0, i.dQu)(n.Z.unsafe_rawColors.YELLOW_300).hex();
+    }) : "--", g = (0, l.dQu)(n.Z.unsafe_rawColors.RED_400).hex(), p = (0, l.dQu)(n.Z.unsafe_rawColors.YELLOW_300).hex();
     return (0, s.jsxs)(s.Fragment, {
       children: [(0, s.jsxs)("div", {
         className: c.progressWrapper,
         children: [(0, s.jsx)("div", {
           className: c.progressBackground
-        }), (0, s.jsx)(i.AMe, {
+        }), (0, s.jsx)(l.AMe, {
           from: {
             width: 0
           },
@@ -58,11 +58,11 @@ let m = e => {
         className: c.labelWrapper,
         children: [(0, s.jsxs)("div", {
           className: c.__invalid_current,
-          children: [(0, s.jsx)(l.Z, {
-            color: h < 33 ? l.Z.Colors.ERROR : l.Z.Colors.STATUS_YELLOW,
+          children: [(0, s.jsx)(i.Z, {
+            color: h < 33 ? i.Z.Colors.ERROR : i.Z.Colors.STATUS_YELLOW,
             className: c.bold,
             children: m ? "".concat(x, "%") : x
-          }), (0, s.jsxs)(i.Text, {
+          }), (0, s.jsxs)(l.Text, {
             "aria-describedby": "health-score-details-score-explain",
             variant: "text-xs/normal",
             color: "header-secondary",
@@ -73,11 +73,11 @@ let m = e => {
           })]
         }), (0, s.jsxs)("div", {
           className: c.requirement,
-          children: [(0, s.jsx)(i.Text, {
+          children: [(0, s.jsx)(l.Text, {
             className: c.bold,
             variant: "text-sm/semibold",
             children: m ? "".concat(u, "%") : u
-          }), (0, s.jsx)(i.Text, {
+          }), (0, s.jsx)(l.Text, {
             "aria-describedby": "health-score-details-requirement-explain",
             variant: "text-xs/normal",
             color: "header-secondary",
@@ -90,7 +90,7 @@ let m = e => {
   h = e => {
     let r, a, t, {
         guildChecklist: n,
-        transitionState: l,
+        transitionState: i,
         onClose: h
       } = e,
       x = (0, o.Dt)(),
@@ -106,11 +106,11 @@ let m = e => {
       } = p;
     if (!g && null != _ && _ < 40 && (a = (0, s.jsxs)("div", {
         className: c.failingBlock,
-        children: [(0, s.jsx)(i.X6q, {
+        children: [(0, s.jsx)(l.X6q, {
           className: c.marginAfter,
           variant: "heading-md/semibold",
           children: d.intl.string(d.t.sEzDIS)
-        }), (0, s.jsx)(i.Text, {
+        }), (0, s.jsx)(l.Text, {
           variant: "text-sm/normal",
           children: d.intl.string(d.t.zNp3Ki)
         }), (0, s.jsx)(m, {
@@ -120,11 +120,11 @@ let m = e => {
         })]
       })), !g && null != j && j < 20 && (t = (0, s.jsxs)("div", {
         className: c.failingBlock,
-        children: [(0, s.jsx)(i.X6q, {
+        children: [(0, s.jsx)(l.X6q, {
           className: c.marginAfter,
           variant: "heading-md/semibold",
           children: d.intl.string(d.t.fWQTbm)
-        }), (0, s.jsx)(i.Text, {
+        }), (0, s.jsx)(l.Text, {
           variant: "text-sm/normal",
           children: d.intl.string(d.t.Tl8MR0)
         }), (0, s.jsx)(m, {
@@ -136,11 +136,11 @@ let m = e => {
       let e = Math.floor(100 * b);
       r = (0, s.jsxs)("div", {
         className: c.failingBlock,
-        children: [(0, s.jsx)(i.X6q, {
+        children: [(0, s.jsx)(l.X6q, {
           className: c.marginAfter,
           variant: "heading-md/semibold",
           children: d.intl.string(d.t.YF6x29)
-        }), (0, s.jsx)(i.Text, {
+        }), (0, s.jsx)(l.Text, {
           variant: "text-sm/normal",
           children: d.intl.format(d.t.kMBzFh, {})
         }), (0, s.jsx)(m, {
@@ -151,19 +151,20 @@ let m = e => {
         })]
       })
     }
-    return (0, s.jsxs)(i.Y0X, {
-      transitionState: l,
-      size: i.CgR.MEDIUM,
+    return (0, s.jsxs)(l.Y0X, {
+      transitionState: i,
+      size: l.CgR.MEDIUM,
       className: c.__invalid_modal,
       "aria-labelledby": x,
-      children: [(0, s.jsxs)(i.hzk, {
+      parentComponent: "HealthScoreDetailsModal",
+      children: [(0, s.jsxs)(l.hzk, {
         className: c.content,
-        children: [(0, s.jsx)(i.X6q, {
+        children: [(0, s.jsx)(l.X6q, {
           variant: "heading-xl/semibold",
           className: c.modalHeader,
           id: x,
           children: d.intl.string(d.t["+GHxPz"])
-        }), (0, s.jsx)(i.Text, {
+        }), (0, s.jsx)(l.Text, {
           className: c.marginAfter,
           variant: "text-sm/normal",
           children: d.intl.string(d.t.QOs3XF)
@@ -171,7 +172,7 @@ let m = e => {
           className: c.separator
         }), a, t, r, (0, s.jsx)("div", {
           className: c.separator
-        }), (0, s.jsxs)(i.Text, {
+        }), (0, s.jsxs)(l.Text, {
           className: c.marginAfter,
           color: "header-secondary",
           id: "health-score-details-score-explain",
@@ -181,7 +182,7 @@ let m = e => {
             children: "1 "
           }), d.intl.string(d.t.tN5kb2)]
         })]
-      }), (0, s.jsx)(i.olH, {
+      }), (0, s.jsx)(l.olH, {
         onClick: h,
         className: c.closeButton
       })]

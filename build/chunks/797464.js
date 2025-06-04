@@ -1,29 +1,30 @@
 /** Chunk was on 7649 **/
 e.d(n, {
-  default: () => u
+  default: () => m
 }), e(388685);
 var a = e(255367),
-  l = e(73800),
-  o = e(120356),
-  s = e.n(o),
+  o = e(73800),
+  l = e(120356),
+  s = e.n(l),
   i = e(481060),
   r = e(313201),
   d = e(388032),
   c = e(957684);
 
-function u(t) {
+function m(t) {
   let {
     transitionState: n,
     onConfirm: e,
-    onClose: o,
-    onDismiss: u
-  } = t, [m, h] = l.useState(!1), [g, x] = l.useState(!0), [b, p] = l.useState(!0), C = (0, r.Dt)(), k = () => {
-    u(), o()
+    onClose: l,
+    onDismiss: m
+  } = t, [u, h] = o.useState(!1), [g, x] = o.useState(!0), [p, b] = o.useState(!0), C = (0, r.Dt)(), k = () => {
+    m(), l()
   };
   return (0, a.jsxs)(i.Y0X, {
     transitionState: n,
     "aria-labelledby": C,
     size: i.CgR.SMALL,
+    parentComponent: "HamModal",
     children: [(0, a.jsxs)(i.hzk, {
       className: c.modalContent,
       children: [(0, a.jsx)(i.olH, {
@@ -54,9 +55,9 @@ function u(t) {
         type: "submit",
         color: i.zxk.Colors.BRAND,
         onClick: () => {
-          m || (h(!0), e(g, b), h(!1), o())
+          u || (h(!0), e(g, p), h(!1), l())
         },
-        submitting: m,
+        submitting: u,
         children: d.intl.string(d.t["cY+Ooa"])
       }), (0, a.jsx)(i.zxk, {
         type: "submit",
@@ -64,14 +65,14 @@ function u(t) {
         grow: !0,
         look: i.iLD.LINK,
         onClick: k,
-        submitting: m,
+        submitting: u,
         className: c.cancelButton,
         children: d.intl.string(d.t["ETE/oK"])
       }), (0, a.jsx)(i.XZJ, {
-        value: b,
+        value: p,
         type: i.XZJ.Types.INVERTED,
         onChange: (t, n) => {
-          p(n)
+          b(n)
         },
         children: (0, a.jsx)(i.Text, {
           tag: "span",

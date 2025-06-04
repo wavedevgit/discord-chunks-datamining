@@ -6,8 +6,8 @@ var i = e(255367),
   r = e(73800),
   l = e(442837),
   s = e(481060),
-  d = e(230711),
-  o = e(485267),
+  o = e(230711),
+  d = e(485267),
   c = e(564990),
   a = e(353647),
   E = e(527790),
@@ -24,13 +24,14 @@ function x(t) {
     onAction: N,
     onClose: R,
     onOpenGameSettings: f
-  } = t, [L, p] = (0, l.Wu)([a.Z], () => [a.Z.isDeletingEntryHistory, a.Z.deleteOutboxEntryError]);
-  return r.useEffect(() => o.Bt, []), (0, i.jsxs)(s.Y0X, {
+  } = t, [p, L] = (0, l.Wu)([a.Z], () => [a.Z.isDeletingEntryHistory, a.Z.deleteOutboxEntryError]);
+  return r.useEffect(() => d.Bt, []), (0, i.jsxs)(s.Y0X, {
     size: s.CgR.SMALL,
     transitionState: x,
+    parentComponent: "UserProfileActivityDeleteHistoryModal",
     children: [(0, i.jsxs)(s.hzk, {
       className: T.content,
-      children: [null != p ? (0, i.jsxs)("div", {
+      children: [null != L ? (0, i.jsxs)("div", {
         className: T.error,
         children: [(0, i.jsx)(s.k$p, {
           color: s.TVs.colors.STATUS_DANGER
@@ -54,7 +55,7 @@ function x(t) {
               onClick: () => {
                 null == N || N({
                   action: "PRESS_CLEAR_HISTORY_DISCLAIMER"
-                }), null != r ? r() : d.Z.open(), R()
+                }), null != r ? r() : o.Z.open(), R()
               },
               children: t
             }, n)
@@ -69,7 +70,7 @@ function x(t) {
     }), (0, i.jsxs)(s.mzw, {
       className: T.footer,
       children: [(0, i.jsx)(s.zxk, {
-        disabled: L,
+        disabled: p,
         color: s.Ttl.RED,
         size: s.PhG.SMALL,
         onClick: () => {
@@ -77,7 +78,7 @@ function x(t) {
             action: "PRESS_CLEAR_HISTORY_BUTTON"
           }), (0, c.CV)(e, n.id, R)
         },
-        children: null != p ? h.intl.string(h.t["5911LS"]) : h.intl.string(h.t.VkKicX)
+        children: null != L ? h.intl.string(h.t["5911LS"]) : h.intl.string(h.t.VkKicX)
       }), (0, i.jsx)(s.zxk, {
         onClick: R,
         size: s.PhG.SMALL,

@@ -1,6 +1,6 @@
 /** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => P
+  Z: () => w
 }), n(35282), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -70,7 +70,7 @@ function E(e, t) {
   })
 }
 
-function P(e) {
+function w(e) {
   let {
     id: t,
     webhook: n,
@@ -78,16 +78,16 @@ function P(e) {
     channelOptions: g,
     isExpanded: h,
     isNew: O,
-    errors: P,
-    onToggleExpand: w
+    errors: w,
+    onToggleExpand: P
   } = e, [T, Z] = i.useState(!1), [k] = i.useState(new s.V7);
   i.useEffect(() => () => k.stop(), [k]);
   let A = i.useMemo(() => E(n, n.avatar), [n]),
-    D = i.useCallback(() => {
+    R = i.useCallback(() => {
       let e = "".concat((0, a.K0)(!1)).concat(v.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
     }, [n]),
-    R = i.useCallback(() => {
+    D = i.useCallback(() => {
       (0, c.h7j)(e => (0, r.jsx)(c.ConfirmModal, I(N({}, e), {
         header: _.intl.formatToPlainString(_.t.QVFjHh, {
           name: n.name
@@ -151,10 +151,10 @@ function P(e) {
             makeURL: e => E(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: !0
-          }), null != P.avatar && "" !== P.avatar ? (0, r.jsx)(c.Text, {
+          }), null != w.avatar && "" !== w.avatar ? (0, r.jsx)(c.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
-            children: P.avatar
+            children: w.avatar
           }) : null]
         })
       }), (0, r.jsxs)(m.Z, {
@@ -172,7 +172,7 @@ function P(e) {
                   })
                 },
                 maxLength: 80,
-                error: P.name
+                error: w.name
               })
             })
           }), (0, r.jsx)(m.Z.Child, {
@@ -224,7 +224,7 @@ function P(e) {
               return (0, r.jsx)(c.zxk, I(N({}, s), {
                 "aria-label": "",
                 onClick: () => {
-                  null == t || t(), Z(!0), c.uvj.announce(_.intl.string(_.t.wwdb3t)), k.start(1e3, () => Z(!1)), D()
+                  null == t || t(), Z(!0), c.uvj.announce(_.intl.string(_.t.wwdb3t)), k.start(1e3, () => Z(!1)), R()
                 },
                 size: c.zxk.Sizes.SMALL,
                 color: c.zxk.Colors.PRIMARY,
@@ -235,7 +235,7 @@ function P(e) {
               }))
             }
           }), (0, r.jsx)(c.zxk, {
-            onClick: R,
+            onClick: D,
             size: c.zxk.Sizes.SMALL,
             color: c.zxk.Colors.RED,
             look: c.zxk.Looks.LINK,
@@ -253,7 +253,7 @@ function P(e) {
       children: [(0, r.jsx)(c.P3F, {
         className: C.header,
         "aria-expanded": h,
-        onClick: w,
+        onClick: P,
         children: (0, r.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
           children: [(0, r.jsx)(y.Z, {

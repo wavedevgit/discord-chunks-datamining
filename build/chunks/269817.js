@@ -6,8 +6,8 @@ var i = s(255367);
 s(73800);
 var n = s(481060),
   a = s(782568),
-  l = s(313201),
-  o = s(388032),
+  o = s(313201),
+  l = s(388032),
   r = s(275209);
 
 function c(t) {
@@ -15,10 +15,11 @@ function c(t) {
     url: e,
     onClose: c,
     transitionState: d
-  } = t, x = (0, l.Dt)();
+  } = t, x = (0, o.Dt)();
   return (0, i.jsxs)(n.Y0X, {
     transitionState: d,
     "aria-labelledby": x,
+    parentComponent: "LinkNotDiscordModal",
     children: [(0, i.jsx)("img", {
       className: r.art,
       src: s(902623),
@@ -30,11 +31,11 @@ function c(t) {
           id: x,
           variant: "heading-lg/semibold",
           className: r.title,
-          children: o.intl.string(o.t.biy1X1)
+          children: l.intl.string(l.t.biy1X1)
         }), (0, i.jsx)(n.Text, {
           variant: "text-md/normal",
           className: r.body,
-          children: o.intl.format(o.t.J86cyc, {
+          children: l.intl.format(l.t.J86cyc, {
             url: e
           })
         })]
@@ -45,7 +46,7 @@ function c(t) {
         size: n.zxk.Sizes.MEDIUM,
         color: n.zxk.Colors.BRAND,
         onClick: c,
-        children: o.intl.string(o.t["xl8R+/"])
+        children: l.intl.string(l.t["xl8R+/"])
       }), (0, i.jsx)(n.zxk, {
         type: "button",
         size: n.zxk.Sizes.MEDIUM,
@@ -54,7 +55,7 @@ function c(t) {
         onClick: () => {
           (0, a.Z)(e, !0)
         },
-        children: o.intl.string(o.t.gQrLtr)
+        children: l.intl.string(l.t.gQrLtr)
       })]
     })]
   })

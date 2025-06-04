@@ -19,18 +19,18 @@ let h = e => {
     otherUser: t,
     transitionState: s,
     onClose: h
-  } = e, [j, p] = o.useState(!1), x = o.useCallback(() => {
-    p(!0)
+  } = e, [p, j] = o.useState(!1), m = o.useCallback(() => {
+    j(!0)
+  }, []), x = o.useCallback(() => {
+    j(!1)
   }, []), y = o.useCallback(() => {
-    p(!1)
-  }, []), m = o.useCallback(() => {
     h()
   }, [h]), O = (0, a.Z)(), {
     cancelLinkRequest: g,
     isCancelLoading: v
   } = (0, i.G)({
-    onError: x,
-    onSuccess: m
+    onError: m,
+    onSuccess: y
   });
   return l()(O, "FamilyCenterDeclineLinkModal should only be rendered for parents."), (0, n.jsx)(d.Z, {
     transitionState: s,
@@ -39,8 +39,8 @@ let h = e => {
         e.preventDefault(), g(t)
       },
       children: [(0, n.jsx)(d.Z.Error, {
-        error: j ? b.intl.string(u.default["6gyAQU"]) : void 0,
-        onDismiss: y
+        error: p ? b.intl.string(u.default["6gyAQU"]) : void 0,
+        onDismiss: x
       }), (0, n.jsx)(c.hzk, {
         children: (0, n.jsx)(d.Z.Header, {
           currentUser: r,
@@ -64,7 +64,7 @@ let h = e => {
             children: b.intl.string(u.default.czincX)
           }), (0, n.jsx)(c.zxk, {
             type: "submit",
-            disabled: v || j,
+            disabled: v || p,
             submitting: v,
             color: c.Ttl.RED,
             size: c.zxk.Sizes.SMALL,

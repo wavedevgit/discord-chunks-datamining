@@ -39,6 +39,7 @@ let s = () => n.e("49812").then(n.t.bind(n, 48603, 19)).then(e => {
       transitionState: e.transitionState,
       "aria-labelledby": c,
       className: o.modal,
+      parentComponent: "MemberVerificationSuccessModal",
       children: [(0, r.jsx)("div", {
         className: o.animationContainer,
         children: (0, r.jsx)(i.Fmz, {

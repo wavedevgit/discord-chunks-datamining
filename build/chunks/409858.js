@@ -266,6 +266,7 @@ class J extends r.Component {
         size: c.CgR.SMALL,
         className: B.modal,
         "aria-labelledby": s,
+        parentComponent: "GiftCodeModal",
         children: [null != r.giftStyle && !g && !y && (0, i.jsx)(U.Z, {
           defaultAnimationState: this.getDefaultAnimationStatus(),
           idleAnimationState: this.getIdleAnimationStatus(),

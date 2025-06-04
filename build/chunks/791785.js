@@ -286,6 +286,7 @@ function $(e) {
       hideShadow: eh,
       returnRef: em,
       size: eV,
+      parentComponent: "PaymentModal",
       children: (0, r.jsx)(V.ZP, z({
         header: e5,
         isLargeModal: e_ || (null == eF ? void 0 : eF.isLargeModal),

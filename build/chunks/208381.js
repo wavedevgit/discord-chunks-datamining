@@ -25,6 +25,7 @@ function u(e) {
         existing_user: !0
       }
     },
+    parentComponent: "ExistingUserAgeGateVerified",
     children: [(0, r.jsx)(l.hzk, {
       children: (0, r.jsxs)("div", {
         className: c.container,

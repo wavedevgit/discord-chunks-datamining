@@ -23,8 +23,8 @@ let h = () => {
     nickname: h,
     dmsAllowed: E,
     showActivity: I,
-    mutedServer: f,
-    setNickname: v,
+    mutedServer: v,
+    setNickname: f,
     setDmsAllowed: j,
     setShowActivity: S,
     setMutedServer: C,
@@ -85,7 +85,7 @@ let h = () => {
           placeholder: g.intl.string(g.t["09Q8ys"]),
           maxLength: x.l$U,
           value: h,
-          onChange: v
+          onChange: f
         })]
       }), (0, i.jsx)(u.Z, {
         title: g.intl.string(g.t["/2ed39"]),
@@ -97,7 +97,7 @@ let h = () => {
         onChange: S
       }), P && (0, i.jsx)(u.Z, {
         title: g.intl.string(g.t["0nZCqK"]),
-        value: f,
+        value: v,
         onChange: C
       })]
     })]

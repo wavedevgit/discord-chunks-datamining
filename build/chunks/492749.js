@@ -15,9 +15,9 @@ var i = n(255367),
   x = n(388032),
   C = n(275017),
   h = n(36705),
-  g = n(216019);
+  p = n(216019);
 
-function p(e) {
+function g(e) {
   let {
     guild: t,
     onClick: n
@@ -36,7 +36,7 @@ function p(e) {
     }), (0, i.jsx)("img", {
       className: C.__invalid_arrow,
       alt: "",
-      src: g
+      src: p
     })]
   })
 }
@@ -105,7 +105,7 @@ function _(e) {
       handleChooseCreate: d,
       directoryGuildName: u,
       availableGuilds: m,
-      addedGuilds: g,
+      addedGuilds: p,
       loading: _
     } = e,
     [j, b] = s.useState(0);
@@ -124,10 +124,10 @@ function _(e) {
       variant: "text-md/normal",
       children: x.intl.string(x.t.liuEhY)
     })]
-  }) : m.map(e => (0, i.jsx)(p, {
+  }) : m.map(e => (0, i.jsx)(g, {
     guild: e,
     onClick: () => a(e)
-  }, e.id)) : 0 === g.length ? (0, i.jsxs)("div", {
+  }, e.id)) : 0 === p.length ? (0, i.jsxs)("div", {
     className: C.emptyContainer,
     children: [(0, i.jsx)("img", {
       src: h,
@@ -139,7 +139,7 @@ function _(e) {
       variant: "text-md/normal",
       children: x.intl.string(x.t.WJLuKC)
     })]
-  }) : g.map(e => (0, i.jsx)(f, {
+  }) : p.map(e => (0, i.jsx)(f, {
     directoryChannelId: n,
     guild: e
   }, e.id)), (0, i.jsxs)(i.Fragment, {

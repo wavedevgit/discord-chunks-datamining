@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   a = n(512722),
   l = n.n(a),
-  s = n(990547),
-  o = n(442837),
+  o = n(990547),
+  s = n(442837),
   c = n(481060),
   d = n(668781),
   m = n(494620),
@@ -44,7 +44,7 @@ function C(e) {
     selectedDeviceId: i,
     onSelectDeviceId: a,
     transferring: l
-  } = e, s = t.map(e => {
+  } = e, o = t.map(e => {
     let {
       id: t,
       name: n,
@@ -79,7 +79,7 @@ function C(e) {
         radioItemClassName: v.deviceItem,
         size: c.FXm.Sizes.NOT_SET,
         value: i,
-        options: s,
+        options: o,
         onChange: e => {
           let {
             value: t
@@ -134,11 +134,11 @@ function b(e) {
       transitionState: m,
       onClose: u
     } = e,
-    j = (0, o.e7)([h.Z], () => h.Z.getDevicesForPlatform(a), [a]),
-    x = (0, o.e7)([h.Z], () => h.Z.getLastSelectedDeviceByPlatform(a)),
+    j = (0, s.e7)([h.Z], () => h.Z.getDevicesForPlatform(a), [a]),
+    x = (0, s.e7)([h.Z], () => h.Z.getLastSelectedDeviceByPlatform(a)),
     b = i.useMemo(() => Object.values(j), [j]),
-    y = (0, o.e7)([h.Z], () => h.Z.getFetchingDevices(a)),
-    O = (0, o.e7)([h.Z], () => {
+    y = (0, s.e7)([h.Z], () => h.Z.getFetchingDevices(a)),
+    O = (0, s.e7)([h.Z], () => {
       var e;
       return null == (e = h.Z.getAwaitingRemoteSessionInfo()) ? void 0 : e.deviceId
     }),
@@ -182,8 +182,9 @@ function b(e) {
     className: v.modalRoot,
     transitionState: m,
     impression: {
-      impressionName: s.ImpressionNames.GAME_CONSOLE_DEVICE_LIST
+      impressionName: o.ImpressionNames.GAME_CONSOLE_DEVICE_LIST
     },
+    parentComponent: "PlayStationModal",
     children: [t, (0, r.jsx)(c.olH, {
       className: v.closeButton,
       onClick: u

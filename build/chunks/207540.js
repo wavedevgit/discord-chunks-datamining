@@ -1,6 +1,6 @@
 /** Chunk was on 30557 **/
 e.d(n, {
-  default: () => G
+  default: () => D
 }), e(388685);
 var i = e(255367),
   l = e(73800),
@@ -9,41 +9,42 @@ var i = e(255367),
   a = e(933557),
   s = e(156699),
   _ = e(734893),
-  p = e(693196),
-  o = e(66999),
+  o = e(693196),
+  p = e(66999),
   T = e(575830),
   I = e(554747),
   E = e(434404),
-  u = e(144140),
-  g = e(314897),
-  m = e(430824),
+  m = e(144140),
+  u = e(314897),
+  g = e(430824),
   c = e(496675),
   U = e(981631),
   C = e(388032),
   L = e(356407);
-let G = t => {
+let D = t => {
   let {
     channel: n,
     onClose: e,
-    onConfirm: G,
-    transitionState: D
-  } = t, y = (0, a.ZP)(n, !0), O = n.id, z = n.isForumPost(), S = (0, d.e7)([m.Z], () => m.Z.getGuild(n.getGuildId())), A = (0, I.u1)(O), {
+    onConfirm: D,
+    transitionState: G
+  } = t, y = (0, a.ZP)(n, !0), O = n.id, z = n.isForumPost(), S = (0, d.e7)([g.Z], () => g.Z.getGuild(n.getGuildId())), A = (0, I.u1)(O), {
     isSubscriptionGated: h
-  } = (0, o.Z)(n.id), v = (0, T.Z)(S, n), [x, f] = l.useState(), R = (0, d.e7)([g.default], () => n.isOwner(g.default.getId()), [n]), N = (0, d.e7)([c.Z], () => c.Z.can(n.isThread() ? U.Plq.MANAGE_THREADS : U.Plq.MANAGE_CHANNELS, n), [n]), H = (0, d.e7)([u.Z], () => {
+  } = (0, p.Z)(n.id), f = (0, T.Z)(S, n), [v, x] = l.useState(), R = (0, d.e7)([u.default], () => n.isOwner(u.default.getId()), [n]), N = (0, d.e7)([c.Z], () => c.Z.can(n.isThread() ? U.Plq.MANAGE_THREADS : U.Plq.MANAGE_CHANNELS, n), [n]), H = (0, d.e7)([m.Z], () => {
     var t;
-    return null != (t = u.Z.getCount(n.id)) ? t : 0
+    return null != (t = m.Z.getCount(n.id)) ? t : 0
   }, [n.id]), B = z && (N || R && H < 1), M = A.length > 0 && (n.type === U.d4z.GUILD_VOICE || n.type === U.d4z.GUILD_STAGE_VOICE);
   if (l.useEffect(() => {
       (async () => {
-        if (!await (0, s.C)(n.getGuildId(), O)) return f(_.j.DEFAULT);
-        let t = await (0, p.T)(n.getGuildId(), O);
-        if (null != t) return f(t)
+        if (!await (0, s.C)(n.getGuildId(), O)) return x(_.j.DEFAULT);
+        let t = await (0, o.T)(n.getGuildId(), O);
+        if (null != t) return x(t)
       })()
-    }, [n, O]), null != x) {
+    }, [n, O]), null != v) {
     let t, n = C.intl.string(C.t.iWlB6u);
-    return t = x === _.j.TODO ? C.t["/rjozM"] : x === _.j.RESOURCE ? C.t.Nf5pt7 : C.t.ajiBwM, (0, i.jsxs)(r.Y0X, {
-      transitionState: D,
+    return t = v === _.j.TODO ? C.t["/rjozM"] : v === _.j.RESOURCE ? C.t.Nf5pt7 : C.t.ajiBwM, (0, i.jsxs)(r.Y0X, {
+      transitionState: G,
       "aria-label": C.intl.string(C.t["TY/V+P"]),
+      parentComponent: "DeleteChannelConfirm",
       children: [(0, i.jsx)(r.xBx, {
         separator: !1,
         children: (0, i.jsx)(r.X6q, {
@@ -75,8 +76,9 @@ let G = t => {
   if (S.hasFeature(U.oNc.COMMUNITY) && (S.rulesChannelId === O || S.publicUpdatesChannelId === O)) {
     let t = S.rulesChannelId === O ? C.intl.string(C.t.yjrZPj) : C.intl.string(C.t["1B1/ND"]);
     return (0, i.jsxs)(r.Y0X, {
-      transitionState: D,
+      transitionState: G,
       "aria-label": C.intl.string(C.t["TY/V+P"]),
+      parentComponent: "DeleteChannelConfirm",
       children: [(0, i.jsx)(r.xBx, {
         separator: !1,
         children: (0, i.jsx)(r.X6q, {
@@ -125,11 +127,11 @@ let G = t => {
       deleteBody: C.intl.format(C.t.a6Gz9P, {
         channelName: y
       })
-    } : h && v > 0 ? {
+    } : h && f > 0 ? {
       deleteText: C.intl.string(C.t["8D8Rsb"]),
       deleteBody: C.intl.format(C.t["+qkiT0"], {
         channelName: y,
-        numGuildRoleSubscriptionMembers: v
+        numGuildRoleSubscriptionMembers: f
       })
     } : {
       deleteText: C.intl.string(C.t["8D8Rsb"]),
@@ -138,8 +140,9 @@ let G = t => {
       })
     };
     return (0, i.jsxs)(r.Y0X, {
-      transitionState: D,
+      transitionState: G,
       "aria-label": t,
+      parentComponent: "DeleteChannelConfirm",
       children: [(0, i.jsx)(r.xBx, {
         separator: !1,
         children: (0, i.jsx)(r.X6q, {
@@ -162,7 +165,7 @@ let G = t => {
         }) : null]
       }), (0, i.jsxs)(r.mzw, {
         children: [(0, i.jsx)(r.zxk, {
-          onClick: G,
+          onClick: D,
           color: r.zxk.Colors.RED,
           children: t
         }), (0, i.jsx)(r.zxk, {

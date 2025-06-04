@@ -822,6 +822,7 @@ function z(e) {
   return (0, i.jsxs)(m.Y0X, {
     transitionState: t,
     size: l,
+    parentComponent: "UserSettingsDesignSystem",
     children: [(0, i.jsx)(m.xBx, {
       className: d,
       children: (0, i.jsx)(m.X6q, {

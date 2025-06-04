@@ -1,17 +1,17 @@
 /** Chunk was on 72920 **/
 l.d(t, {
-  Z: () => s
+  Z: () => r
 });
 var n = l(544891),
-  r = l(981631);
-let s = {
+  o = l(981631);
+let r = {
   resolveFlag: e => n.tn.post({
-    url: r.ANM.MODERATOR_REPORT_CLOSE(e),
+    url: o.ANM.MODERATOR_REPORT_CLOSE(e),
     body: {},
     rejectWithError: !0
   }),
   reopenModReport: e => n.tn.put({
-    url: r.ANM.REPORT_TO_MOD_REOPEN(e),
+    url: o.ANM.REPORT_TO_MOD_REOPEN(e),
     rejectWithError: !0
   })
 }

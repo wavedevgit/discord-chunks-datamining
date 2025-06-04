@@ -5,7 +5,7 @@ n.d(e, {
 var a = n(255367);
 n(73800);
 var i = n(481060),
-  s = n(820644);
+  o = n(820644);
 
 function r(t) {
   let {
@@ -13,7 +13,7 @@ function r(t) {
     id: n
   } = t;
   (0, i.showToast)((0, i.createToast)(e, i.ToastType.CUSTOM, {
-    component: (0, a.jsx)(s.o, {
+    component: (0, a.jsx)(o.o, {
       text: e
     }, n)
   }))

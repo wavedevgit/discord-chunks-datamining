@@ -151,6 +151,7 @@ function P(e) {
       }, e), {
         size: l.CgR.DYNAMIC,
         "aria-label": O.intl.string(O.t.X4IxWF),
+        parentComponent: "ChannelAttachmentUpload",
         children: h(!1, !0)
       })))
     }, [u, h]);

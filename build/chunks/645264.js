@@ -49,6 +49,7 @@ let b = () => (0, r.jsx)(s.Z, {
         size: o.CgR.DYNAMIC,
         className: p.container,
         hideShadow: !0,
+        parentComponent: "MemberVerificationModal",
         children: [(0, r.jsx)("div", {
           className: p.closeButton,
           children: (0, r.jsx)(o.olH, {

@@ -99,6 +99,7 @@ function N(e) {
       transitionState: n,
       size: c.CgR.SMALL,
       className: o()(S.modal, S.gradientBorder),
+      parentComponent: "VoiceChannelStatusModal",
       children: [(0, r.jsxs)(c.hzk, {
         className: S.container,
         children: [(0, r.jsxs)(c.xBx, {

@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => d
 }), n(388685), n(457542);
 var s, i = n(255367),
-  l = n(73800),
-  r = n(481060),
+  r = n(73800),
+  l = n(481060),
   o = n(388032),
   a = n(460268);
 
@@ -16,7 +16,7 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class c extends(s = l.PureComponent) {
+class c extends(s = r.PureComponent) {
   render() {
     let {
       title: e,
@@ -27,51 +27,52 @@ class c extends(s = l.PureComponent) {
       error: h,
       isLoading: c,
       value: d
-    } = this.state, u = l.Children.count(n) > 0 ? (0, i.jsx)(r.Zbd, {
-      type: r.Zbd.Types.WARNING,
+    } = this.state, u = r.Children.count(n) > 0 ? (0, i.jsx)(l.Zbd, {
+      type: l.Zbd.Types.WARNING,
       className: a.card,
-      children: (0, i.jsx)(r.Text, {
+      children: (0, i.jsx)(l.Text, {
         className: a.warning,
         variant: "text-md/normal",
         children: n
       })
     }) : null;
-    return (0, i.jsx)(r.Y0X, {
+    return (0, i.jsx)(l.Y0X, {
       transitionState: s,
+      parentComponent: "PasswordConfirm",
       children: (0, i.jsxs)("form", {
         onSubmit: this.handleSubmit,
-        children: [(0, i.jsx)(r.xBx, {
+        children: [(0, i.jsx)(l.xBx, {
           separator: !1,
-          children: (0, i.jsx)(r.X6q, {
+          children: (0, i.jsx)(l.X6q, {
             variant: "heading-lg/semibold",
             children: e
           })
-        }), (0, i.jsxs)(r.hzk, {
-          children: [u, (0, i.jsxs)(r.xJW, {
+        }), (0, i.jsxs)(l.hzk, {
+          children: [u, (0, i.jsxs)(l.xJW, {
             title: o.intl.string(o.t["CIGa+/"]),
             className: a.spacing,
-            children: [(0, i.jsx)(r.oil, {
+            children: [(0, i.jsx)(l.oil, {
               type: "password",
               autoComplete: "off",
               autoFocus: !0,
               value: d,
               onChange: this.handlePasswordChange
-            }), null != h && "" !== h ? (0, i.jsxs)(r.Text, {
+            }), null != h && "" !== h ? (0, i.jsxs)(l.Text, {
               variant: "text-xs/normal",
               color: "text-danger",
               className: a.error,
               children: [" ", h, " "]
             }) : null]
           })]
-        }), (0, i.jsxs)(r.mzw, {
-          children: [(0, i.jsx)(r.zxk, {
+        }), (0, i.jsxs)(l.mzw, {
+          children: [(0, i.jsx)(l.zxk, {
             type: "submit",
             disabled: c || 0 === d.length,
             children: null != t ? t : o.intl.string(o.t["cY+Ooa"])
-          }), (0, i.jsx)(r.zxk, {
+          }), (0, i.jsx)(l.zxk, {
             onClick: this.handleCancel,
-            look: r.zxk.Looks.LINK,
-            color: r.zxk.Colors.PRIMARY,
+            look: l.zxk.Looks.LINK,
+            color: l.zxk.Colors.PRIMARY,
             children: o.intl.string(o.t["ETE/oK"])
           })]
         })]

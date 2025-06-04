@@ -19,7 +19,7 @@ function f(e) {
     setSlide: f,
     onClose: h,
     isSlideReady: m
-  } = e, [p, g] = l.useState(!1), [b, j] = l.useState(null), [y, x] = l.useState(!1), [S, v] = l.useState(null), [O, C] = l.useState(""), w = l.useRef(null);
+  } = e, [p, g] = l.useState(!1), [b, j] = l.useState(null), [y, x] = l.useState(!1), [S, v] = l.useState(null), [C, O] = l.useState(""), w = l.useRef(null);
   l.useEffect(() => {
     g(!0), s.tn.post({
       url: c.ANM.LOGIN_SMS_SEND,
@@ -49,7 +49,7 @@ function f(e) {
     onSubmit: e => {
       e.preventDefault(), x(!0), n({
         mfaType: "sms",
-        data: O
+        data: C
       }).catch(e => {
         var t, n;
         v(null != (n = e.message) ? n : null == (t = e.body) ? void 0 : t.message)
@@ -68,10 +68,10 @@ function f(e) {
           children: [(0, r.jsx)(o.oil, {
             className: d.smsInput,
             inputRef: w,
-            onChange: C,
+            onChange: O,
             placeholder: u.intl.string(u.t.tARzgo),
             maxLength: 10,
-            value: O,
+            value: C,
             autoComplete: "one-time-code",
             spellCheck: "false",
             disabled: y
@@ -103,7 +103,7 @@ function f(e) {
       mfaChallenge: t,
       setSlide: f,
       showConfirm: !0,
-      disabled: O.length !== i.Gz,
+      disabled: C.length !== i.Gz,
       submitting: y
     })]
   })

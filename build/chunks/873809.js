@@ -1,6 +1,6 @@
 /** Chunk was on 67753 **/
 n.d(s, {
-  default: () => h
+  default: () => d
 }), n(388685);
 var t = n(255367),
   i = n(73800),
@@ -27,6 +27,7 @@ class c extends i.PureComponent {
     return (0, t.jsxs)(r.Y0X, {
       transitionState: e,
       "aria-label": s,
+      parentComponent: "VideoDevicesWarningModal",
       children: [(0, t.jsxs)(r.hzk, {
         className: l.content,
         children: [(0, t.jsx)("img", {
@@ -72,4 +73,4 @@ class c extends i.PureComponent {
     })
   }
 }
-let h = c
+let d = c

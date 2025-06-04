@@ -34,6 +34,7 @@ class f extends r.PureComponent {
       transitionState: e,
       size: i.CgR.SMALL,
       "aria-label": u.intl.string(u.t.qnJ9W1),
+      parentComponent: "ReportProblem",
       children: [(0, l.jsx)(c.Z, {}), (0, l.jsxs)(i.xBx, {
         separator: !1,
         className: d.modalHeader,

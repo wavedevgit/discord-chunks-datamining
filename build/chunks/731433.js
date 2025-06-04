@@ -1,63 +1,63 @@
 /** Chunk was on 18327 **/
-e.d(t, {
-  default: () => N
+a.d(t, {
+  default: () => j
 });
-var r = e(255367);
-e(73800);
-var s = e(990547),
-  o = e(442837),
-  i = e(481060),
-  n = e(37234),
-  c = e(100527),
-  l = e(906732),
-  d = e(213609),
-  _ = e(204418),
-  u = e(1585),
-  m = e(223143),
-  v = e(313201),
-  x = e(300284),
-  p = e(158776),
-  f = e(594174),
-  I = e(741245),
-  k = e(474936),
-  T = e(388032),
-  h = e(991405);
+var r = a(255367);
+a(73800);
+var s = a(990547),
+  o = a(442837),
+  i = a(481060),
+  n = a(37234),
+  c = a(100527),
+  l = a(906732),
+  d = a(213609),
+  m = a(204418),
+  u = a(1585),
+  _ = a(223143),
+  p = a(313201),
+  v = a(300284),
+  x = a(158776),
+  f = a(594174),
+  k = a(741245),
+  I = a(474936),
+  T = a(388032),
+  M = a(991405);
 
-function j(a) {
+function h(e) {
   let {
     user: t,
-    deco: e
-  } = a, s = (0, o.e7)([p.Z], () => p.Z.getStatus(t.id));
+    deco: a
+  } = e, s = (0, o.e7)([x.Z], () => x.Z.getStatus(t.id));
   return (0, r.jsxs)("div", {
-    className: h.avatarBackground,
-    children: [(0, r.jsx)(_.Z, {
+    className: M.avatarBackground,
+    children: [(0, r.jsx)(m.Z, {
       user: t,
       guildId: void 0,
-      avatarDecorationOverride: e,
+      avatarDecorationOverride: a,
       status: s,
-      className: h.avatar
+      className: M.avatar
     }), (0, r.jsx)("div", {
-      className: h.rect
+      className: M.rect
     }), (0, r.jsx)("div", {
-      className: h.rect
+      className: M.rect
     }), (0, r.jsx)("div", {
-      className: h.bottomOverlay
+      className: M.bottomOverlay
     })]
   })
 }
 
-function N(a) {
+function j(e) {
   var t;
   let {
-    transitionState: e,
-    onClose: _
-  } = a, p = (0, v.Dt)(), {
-    theme: N
-  } = (0, i.TCT)(), y = (0, o.e7)([f.default], () => f.default.getCurrentUser()), {
-    purchases: A
-  } = (0, m.c7)(), C = null == (t = A.get("1225876188074082374")) ? void 0 : t.items, M = void 0 !== C ? C[0] : void 0, {
+    transitionState: a,
+    onClose: m
+  } = e, x = (0, p.Dt)(), {
+    theme: j
+  } = (0, i.TCT)(), A = (0, o.e7)([f.default], () => f.default.getCurrentUser()), {
+    purchases: C
+  } = (0, _.c7)(), N = null == (t = C.get("1225876188074082374")) ? void 0 : t.items, y = void 0 !== N ? N[0] : void 0, {
     analyticsLocations: D
-  } = (0, l.ZP)(c.Z.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL), b = (0, x.Z)({
+  } = (0, l.ZP)(c.Z.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL), b = (0, v.Z)({
     analyticsLocations: D
   });
   return (0, d.Z)({
@@ -67,22 +67,23 @@ function N(a) {
       location_stack: D
     }
   }), (0, r.jsxs)(i.Y0X, {
-    transitionState: e,
-    "aria-labelledby": p,
-    className: h.container,
-    children: [void 0 !== y && (0, r.jsx)(j, {
-      user: y,
-      deco: M
+    transitionState: a,
+    "aria-labelledby": x,
+    className: M.container,
+    parentComponent: "PremiumSubscriptionAprilMarketingDecoModal",
+    children: [void 0 !== A && (0, r.jsx)(h, {
+      user: A,
+      deco: y
     }), (0, r.jsxs)(i.hzk, {
-      className: h.content,
-      children: [(0, r.jsx)(I.ZP, {
-        theme: N,
-        premiumType: k.p9.TIER_2,
-        type: I.ZP.Types.PREMIUM_ACTIVATED
+      className: M.content,
+      children: [(0, r.jsx)(k.ZP, {
+        theme: j,
+        premiumType: I.p9.TIER_2,
+        type: k.ZP.Types.PREMIUM_ACTIVATED
       }), (0, r.jsx)(i.Text, {
         variant: "text-md/medium",
         color: "text-normal",
-        className: h.bodyText,
+        className: M.bodyText,
         children: T.intl.format(T.t["9juoTE"], {})
       })]
     }), (0, r.jsx)(i.mzw, {
@@ -90,8 +91,8 @@ function N(a) {
         look: i.zxk.Looks.FILLED,
         color: i.zxk.Colors.BRAND,
         onClick: () => {
-          _(), (0, n.xf)(), b(), (0, u.ps)({
-            initialSelectedDecoration: M,
+          m(), (0, n.xf)(), b(), (0, u.ps)({
+            initialSelectedDecoration: y,
             analyticsLocations: D
           })
         },

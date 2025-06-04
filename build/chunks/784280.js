@@ -20,8 +20,8 @@ var n = a(255367),
 function g(e) {
   let {
     guildId: t
-  } = e, a = (0, o.e7)([u.Z], () => u.Z.getGuild(t)), [g, _] = r.useState(null), [k, p] = r.useState(""), {
-    createMultipleConfettiAt: C
+  } = e, a = (0, o.e7)([u.Z], () => u.Z.getGuild(t)), [g, _] = r.useState(null), [p, C] = r.useState(""), {
+    createMultipleConfettiAt: k
   } = r.useContext(d.h), v = (0, o.e7)([s.Z], () => s.Z.useReducedMotion, []), H = async t => {
     let {
       onClose: a,
@@ -30,7 +30,7 @@ function g(e) {
     t.preventDefault(), _(null);
     try {
       await (0, m.e)(n, {
-        nick: k
+        nick: p
       }), null == a || a()
     } catch (e) {
       _(new l.Hx(e))
@@ -39,13 +39,14 @@ function g(e) {
     transitionState: N
   } = e, j = Object.values(u.Z.getGuilds()).filter(e => e.id !== t && e.hasFeature(b.oNc.HUB)).length > 0, S = !v && !j && (null == a ? void 0 : a.hasFeature(b.oNc.HUB)) && (0, f.b)();
   return r.useEffect(() => {
-    S && C(window.innerWidth / 2, window.innerHeight / 2)
-  }, [C, S]), (0, n.jsxs)(i.Y0X, {
+    S && k(window.innerWidth / 2, window.innerHeight / 2)
+  }, [k, S]), (0, n.jsxs)(i.Y0X, {
     className: x.__invalid_modalRoot,
     transitionState: N,
     "aria-label": h.intl.formatToPlainString(h.t["d+6kzs"], {
       guildName: null == a ? void 0 : a.name
     }),
+    parentComponent: "HubRealNameModal",
     children: [(0, n.jsxs)(i.xBx, {
       separator: !1,
       className: x.formHeaderContainer,
@@ -73,10 +74,10 @@ function g(e) {
           children: (0, n.jsx)(i.oil, {
             placeholder: h.intl.string(h.t.RfWvWF),
             onChange: e => {
-              p(e)
+              C(e)
             },
             error: null == g ? void 0 : g.getFirstFieldErrorMessage("name"),
-            value: k
+            value: p
           })
         })
       }), (0, n.jsx)(i.mzw, {

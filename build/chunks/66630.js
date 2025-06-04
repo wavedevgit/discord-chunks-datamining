@@ -14,8 +14,8 @@ var l = n(255367),
   m = n(100527),
   f = n(906732),
   h = n(318766),
-  b = n(907040),
-  p = n(594174),
+  p = n(907040),
+  b = n(594174),
   S = n(626135),
   j = n(644540),
   g = n(359588),
@@ -53,9 +53,9 @@ function Z(t) {
     location: "CustomStatusModalWithPreview"
   }), {
     analyticsLocations: W
-  } = (0, f.ZP)(B, m.Z.CUSTOM_STATUS_MODAL), H = (0, o.e7)([p.default], () => {
+  } = (0, f.ZP)(B, m.Z.CUSTOM_STATUS_MODAL), H = (0, o.e7)([b.default], () => {
     var t;
-    return null != (t = p.default.getCurrentUser()) ? t : null
+    return null != (t = b.default.getCurrentUser()) ? t : null
   }), K = (0, N.a)(), [V, G] = r.useState(null != (e = null == K ? void 0 : K.state) ? e : ""), [q, X] = r.useState(null != (n = null == K ? void 0 : K.emoji) ? n : null), [Q, $] = r.useState((0, v.Z)()), J = r.useRef(null), tt = r.useRef(null), te = r.useRef(null), [tn, tl] = r.useState(null != K && F ? (0, T.Z)(K) : null), [tr, ta] = r.useState(U), [ti, to] = r.useState(() => z && null != M ? M.label() : A.intl.string(A.t["xod36+"])), [ts, tu] = r.useState(ti), {
     ref: tc,
     width: td
@@ -109,10 +109,11 @@ function Z(t) {
       emojiName: q.name,
       animated: !!q.animated
     }),
-    tb = z ? A.intl.string(A.t.rp0aho) : A.intl.string(A.t.UcdRn5),
-    tp = "custom-status-placeholder-text";
+    tp = z ? A.intl.string(A.t.rp0aho) : A.intl.string(A.t.UcdRn5),
+    tb = "custom-status-placeholder-text";
   return (0, l.jsxs)(s.Y0X, {
     transitionState: a,
+    parentComponent: "CustomStatusModalWithPreview",
     children: [(0, l.jsxs)(s.xBx, {
       separator: !1,
       className: L.header,
@@ -142,7 +143,7 @@ function Z(t) {
       }), (0, l.jsxs)(s.hjN, {
         className: L.formGroup,
         titleClassName: L.customStatusInputTitle,
-        title: tb,
+        title: tp,
         children: [F && (0, l.jsx)("div", {
           className: L.labelSelectorContainer,
           children: (0, l.jsx)(s.DY3, {
@@ -180,7 +181,7 @@ function Z(t) {
                 let {
                   closePopout: e
                 } = t;
-                return (0, l.jsx)(b.Z, {
+                return (0, l.jsx)(p.Z, {
                   closePopout: e,
                   onSelectEmoji: t => {
                     let {
@@ -238,7 +239,7 @@ function Z(t) {
             })
           }), (0, l.jsx)(s.Kx8, {
             autosize: !0,
-            "aria-describedby": tp,
+            "aria-describedby": tb,
             value: V,
             maxLength: I.s0,
             rows: 1,
@@ -258,7 +259,7 @@ function Z(t) {
               label: tn
             })
           }), (0, l.jsx)(s.nn4, {
-            id: tp,
+            id: tb,
             children: "".concat(A.intl.string(A.t.EVV6ub), ": ").concat(ti)
           }), (V.length > 0 || null != q) && (0, l.jsx)("div", {
             className: i()(L.clearButtonWrapper, null != tn && L.buttonContainerWithLabel),

@@ -5,8 +5,8 @@ t.d(e, {
 var r = t(255367),
   i = t(73800),
   s = t(481060),
-  c = t(369994),
-  o = t(781208),
+  o = t(369994),
+  c = t(781208),
   l = t(388032),
   a = t(122238);
 
@@ -16,15 +16,16 @@ function d(n) {
     transitionState: t,
     onClose: d
   } = n, [x, h] = i.useState([]), k = i.useCallback(() => {
-    (0, c.KK)(e, x), (0, c.C4)(e), d()
+    (0, o.KK)(e, x), (0, o.C4)(e), d()
   }, [e, d, x]), u = i.useCallback(n => () => {
     h(e => e.includes(n) ? e.filter(e => e !== n) : [...e, n])
   }, []), S = i.useCallback(() => {
-    open(o.RI)
+    open(c.RI)
   }, []);
   return (0, r.jsxs)(s.Y0X, {
     transitionState: t,
     size: s.CgR.SMALL,
+    parentComponent: "GuildAntiRaidReportModal",
     children: [(0, r.jsx)(s.xBx, {
       separator: !1,
       children: (0, r.jsx)(s.X6q, {
@@ -41,7 +42,7 @@ function d(n) {
         })
       }), (0, r.jsx)("div", {
         className: a.mainCheckboxContainer,
-        children: o.Ud.map(n => (0, r.jsxs)(s.P3F, {
+        children: c.Ud.map(n => (0, r.jsxs)(s.P3F, {
           className: a.checkboxContainer,
           onClick: u(n),
           children: [(0, r.jsx)(s.XZJ, {
@@ -51,7 +52,7 @@ function d(n) {
             displayOnly: !0
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
-            children: (0, o.$l)(n)
+            children: (0, c.$l)(n)
           })]
         }, n))
       })]

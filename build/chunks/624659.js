@@ -43,12 +43,12 @@ function T(e) {
     transitionState: T,
     feedbackProblems: y = {},
     otherKey: x,
-    hasCloseButton: I,
-    onSubmit: C,
+    hasCloseButton: C,
+    onSubmit: I,
     onClose: k,
     canDismissForever: j = !0,
     showHelpdeskLink: A = !0
-  } = e, R = (0, d.Z)(E), [L, D] = a.useState(!1), [P, B] = a.useState(null), [F, M] = a.useState(s().shuffle(E)), [U, w] = a.useState(""), [H, Z] = a.useState(!1), $ = (0, _.Dt)(), G = (0, f.Z)(L), Y = (0, f.Z)(P), z = (0, f.Z)(C), K = (0, f.Z)(U), W = (0, f.Z)(H), V = null != P ? y[P] : null, X = null != V;
+  } = e, R = (0, d.Z)(E), [L, D] = a.useState(!1), [P, B] = a.useState(null), [F, M] = a.useState(s().shuffle(E)), [U, w] = a.useState(""), [H, Z] = a.useState(!1), $ = (0, _.Dt)(), G = (0, f.Z)(L), Y = (0, f.Z)(P), z = (0, f.Z)(I), K = (0, f.Z)(U), W = (0, f.Z)(H), V = null != P ? y[P] : null, X = null != V;
   return a.useEffect(() => {
     s().isEqual(R, E) || M((0, v.Bi)(E, x))
   }, [E, R, x]), (0, c.ZP)(() => () => {
@@ -61,6 +61,7 @@ function T(e) {
   }), (0, l.jsxs)(u.Y0X, {
     transitionState: T,
     "aria-labelledby": $,
+    parentComponent: "SimpleFeedbackModal",
     children: [(0, l.jsx)(h.Z, {}), (0, l.jsxs)(u.xBx, {
       separator: !1,
       className: i()(p.headerContainer, S.headerContainer),
@@ -75,7 +76,7 @@ function T(e) {
         color: "header-secondary",
         className: i()(p.ratingBody, S.headerBody),
         children: null != (t = null == V ? void 0 : V.subheader) ? t : o
-      }), I ? (0, l.jsx)(u.olH, {
+      }), C ? (0, l.jsx)(u.olH, {
         className: p.modalCloseButton,
         onClick: function() {
           Z(!0), k()

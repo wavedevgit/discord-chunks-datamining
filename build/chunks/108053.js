@@ -32,7 +32,7 @@ function j(e) {
     } = e,
     I = (0, d.ZP)(),
     [S, E] = i.useState(null),
-    [P, w] = i.useState(null);
+    [w, P] = i.useState(null);
   if (null != j) t = j;
   else {
     let e = Object.values(v);
@@ -56,7 +56,7 @@ function j(e) {
           body: g.intl.string(g.t["/4TwKS"])
         }), null
       });
-      null != e && (w(e.id), E(e))
+      null != e && (P(e.id), E(e))
     }
   }, [N, t, n]);
   (0, c.ZP)(() => {

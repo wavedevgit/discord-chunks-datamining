@@ -108,6 +108,7 @@ function w(e) {
     size: o.CgR.SMALL,
     className: E.modalRoot,
     "aria-labelledby": m,
+    parentComponent: "AddMediaToOriginalForumPostModal",
     children: [(0, a.jsxs)(o.hzk, {
       className: E.modal,
       children: [(0, a.jsx)(o.X6q, {

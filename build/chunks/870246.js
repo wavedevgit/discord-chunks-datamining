@@ -1,6 +1,6 @@
 /** Chunk was on 99014 **/
 n.d(t, {
-  $: () => c,
+  $: () => l,
   w: () => s
 });
 var r, o = n(73800),
@@ -8,7 +8,7 @@ var r, o = n(73800),
   i = n(981631),
   s = ((r = {}).DETAIL = "Boost Perk Shop Details", r.DEACTIVATE = "Boost Perk Shop Disable", r);
 
-function c(e, t, n) {
+function l(e, t, n) {
   o.useEffect(() => {
     a.default.track(i.rMx.OPEN_MODAL, {
       type: n,

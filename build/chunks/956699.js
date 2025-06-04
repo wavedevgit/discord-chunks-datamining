@@ -351,6 +351,7 @@ class ei extends r.Component {
           };
           return (0, i.jsxs)(g.Y0X, J(Q({}, n), {
             "aria-label": "Choose A Project to Override",
+            parentComponent: "UserSettingsDeveloperOptions",
             children: [(0, i.jsx)(g.xBx, {
               separator: !1,
               children: (0, i.jsx)(g.X6q, {
@@ -629,6 +630,7 @@ class er extends r.Component {
       size: g.CgR.LARGE,
       transitionState: t,
       "aria-label": "Generate Public Build Override Link",
+      parentComponent: "UserSettingsDeveloperOptions",
       children: [(0, i.jsxs)(g.xBx, {
         justify: v.Z.Justify.BETWEEN,
         separator: !1,

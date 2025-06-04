@@ -1,11 +1,11 @@
 /** Chunk was on 22942 **/
 n.d(a, {
-  default: () => k
+  default: () => I
 }), n(388685);
 var o = n(255367),
   t = n(73800),
-  i = n(120356),
-  l = n.n(i),
+  l = n(120356),
+  i = n.n(l),
   d = n(481060),
   r = n(211266),
   s = n(313201),
@@ -26,7 +26,7 @@ function N() {
     extensions: ["jpg", "jpeg", "png"]
   }]
 }
-async function I(e) {
+async function C(e) {
   let a = (0, m.gT)({
       id: e.id,
       animated: !1,
@@ -37,25 +37,26 @@ async function I(e) {
     o = await n.blob();
   return await (0, x.fD)(o)
 }
-let k = function(e) {
+let I = function(e) {
   let {
     guildId: a,
     onUploadIcon: n,
-    onSelectUnicodeEmoji: i,
+    onSelectUnicodeEmoji: l,
     onClose: m,
     transitionState: x
-  } = e, k = (0, s.Dt)(), C = v.ZP.getDefaultChannel(a), [g, z] = t.useState("tab-id-role-icon-file-upload"), [_, S] = t.useState(!1), B = (0, r.Z)(N);
+  } = e, I = (0, s.Dt)(), k = v.ZP.getDefaultChannel(a), [g, z] = t.useState("tab-id-role-icon-file-upload"), [_, S] = t.useState(!1), B = (0, r.Z)(N);
   return t.useEffect(() => {
     S(!1)
   }, [g]), (0, o.jsx)(d.Y0X, {
     transitionState: x,
-    "aria-labelledby": k,
+    "aria-labelledby": I,
     size: d.CgR.MEDIUM,
     className: h.modalRoot,
+    parentComponent: "CustomRoleIconUploadModal",
     children: (0, o.jsxs)("div", {
       className: h.contentWrapper,
       children: [(0, o.jsx)("nav", {
-        className: l()(h.nav, {
+        className: i()(h.nav, {
           [h.navUploadSelected]: "tab-id-role-icon-file-upload" === g
         }),
         children: (0, o.jsxs)("div", {
@@ -72,7 +73,7 @@ let k = function(e) {
                 z("tab-id-role-icon-file-upload")
               },
               "aria-current": "page",
-              className: l()(h.navButton, {
+              className: i()(h.navButton, {
                 [h.navButtonActive]: "tab-id-role-icon-file-upload" === g
               }),
               look: d.zxk.Looks.BLANK,
@@ -89,7 +90,7 @@ let k = function(e) {
                 z("tab-id-role-icon-emoji")
               },
               "aria-current": "page",
-              className: l()(h.navButton, {
+              className: i()(h.navButton, {
                 [h.navButtonActive]: "tab-id-role-icon-emoji" === g
               }),
               look: d.zxk.Looks.BLANK,
@@ -142,15 +143,15 @@ let k = function(e) {
           let {
             emoji: a
           } = e;
-          if ((null == a ? void 0 : a.id) != null)(null == a ? void 0 : a.type) === u.B.GUILD && n(await I(a));
+          if ((null == a ? void 0 : a.id) != null)(null == a ? void 0 : a.type) === u.B.GUILD && n(await C(a));
           else if ((null == a ? void 0 : a.surrogates) != null) {
             var o, t;
-            i(null != (t = null == (o = a.defaultDiversityChild) ? void 0 : o.surrogates) ? t : a.surrogates)
+            l(null != (t = null == (o = a.defaultDiversityChild) ? void 0 : o.surrogates) ? t : a.surrogates)
           }
           m()
         },
         pickerIntention: b.Hz.COMMUNITY_CONTENT,
-        channel: C
+        channel: k
       }) : null]
     })
   })

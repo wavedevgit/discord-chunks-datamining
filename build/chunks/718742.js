@@ -58,6 +58,7 @@ function O(e) {
     transitionState: O,
     "aria-label": "CAPTCHA",
     className: c()(y.modal, y.gradientBorder),
+    parentComponent: "CaptchaModal",
     children: (0, n.jsxs)(o.hzk, {
       className: y.container,
       children: [(0, n.jsx)(o.olH, {

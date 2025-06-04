@@ -141,6 +141,7 @@ function K(e) {
           [G.rootContainerLoading]: x
         }),
         hideShadow: !0,
+        parentComponent: "QuestsRewardCollectibleModal",
         children: "error" === A ? (0, r.jsx)(L.Z, {
           onClose: a
         }) : x ? (0, r.jsx)("div", {

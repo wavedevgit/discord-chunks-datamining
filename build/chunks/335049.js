@@ -1,6 +1,6 @@
 /** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => P
+  Z: () => w
 });
 var r = n(255367),
   i = n(73800),
@@ -59,7 +59,7 @@ function E(e, t) {
   }), e
 }
 
-function P(e) {
+function w(e) {
   let {
     guild: t,
     id: l,
@@ -81,7 +81,7 @@ function P(e) {
   }, [l]);
   switch (o) {
     case m.Kw.CHANNEL:
-      return (0, r.jsx)(w, {
+      return (0, r.jsx)(P, {
         guild: t,
         id: l,
         isLocked: a,
@@ -107,7 +107,7 @@ function P(e) {
   }
 }
 
-function w(e) {
+function P(e) {
   let {
     guild: t,
     id: n,

@@ -51,7 +51,7 @@ function x(e) {
         return e
       }({}, t))
     })
-  }, [f, l, t, O, h]), g = [{
+  }, [f, l, t, O, h]), m = [{
     text: _.intl.string(_.t.yeaXw8),
     value: u.$l.LEGITIMATE_ACTIVITY
   }, {
@@ -65,12 +65,13 @@ function x(e) {
     value: u.$l.OTHER
   }];
 
-  function I(e) {
+  function g(e) {
     h.includes(e) ? b(t => t.filter(t => t !== e)) : b(t => [...t, e])
   }
   return (0, r.jsxs)(a.Y0X, {
     transitionState: x,
     size: a.CgR.SMALL,
+    parentComponent: "AutomodRaidResolveModal",
     children: [(0, r.jsx)(a.xBx, {
       separator: !1,
       className: p.center,
@@ -88,7 +89,7 @@ function x(e) {
         children: _.intl.string(_.t.nF79oK)
       }), (0, r.jsx)("div", {
         className: p.options,
-        children: g.map(e => {
+        children: m.map(e => {
           let {
             text: t,
             value: n
@@ -99,13 +100,13 @@ function x(e) {
             }),
             children: [(0, r.jsxs)(a.P3F, {
               className: p.optionText,
-              onClick: () => I(n),
+              onClick: () => g(n),
               children: [(0, r.jsx)("div", {
                 children: (0, r.jsx)(a.XZJ, {
                   type: a.XZJ.Types.INVERTED,
                   size: 20,
                   value: h.includes(n),
-                  onChange: () => I(n)
+                  onChange: () => g(n)
                 })
               }), (0, r.jsx)(a.Text, {
                 variant: "text-md/semibold",

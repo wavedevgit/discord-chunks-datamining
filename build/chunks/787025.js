@@ -104,6 +104,7 @@ function b(e) {
     transitionState: i,
     className: d.oauth2ModalWrapper
   }, s), {
+    parentComponent: "OAuth2Page",
     children: [(0, r.jsx)(o.hz, {
       paddingFix: !1,
       className: d.oauth2ModalContent,

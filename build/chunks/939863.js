@@ -6,8 +6,8 @@ var i = e(255367);
 e(73800);
 var r = e(120356),
   l = e.n(r),
-  c = e(388032),
-  a = e(650011),
+  a = e(388032),
+  c = e(650011),
   o = e(296507),
   s = e(866402);
 
@@ -17,15 +17,15 @@ function d(t) {
     children: e
   } = t;
   return (0, i.jsxs)("div", {
-    className: l()(a.container, n),
+    className: l()(c.container, n),
     children: [(0, i.jsx)("img", {
-      alt: c.intl.string(c.t.VoB8OT),
+      alt: a.intl.string(a.t.VoB8OT),
       src: s,
-      className: l()(a.sparkleIcon, a.sparkleBottom)
+      className: l()(c.sparkleIcon, c.sparkleBottom)
     }), e, (0, i.jsx)("img", {
-      alt: c.intl.string(c.t.VoB8OT),
+      alt: a.intl.string(a.t.VoB8OT),
       src: o,
-      className: l()(a.sparkleIcon, a.sparkleTop)
+      className: l()(c.sparkleIcon, c.sparkleTop)
     })]
   })
 }

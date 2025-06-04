@@ -19,8 +19,8 @@ var l = t(255367),
   N = t(944486),
   g = t(585483),
   k = t(5192),
-  C = t(51144),
-  v = t(981631),
+  v = t(51144),
+  C = t(981631),
   S = t(388032),
   E = t(944801),
   j = t(20493);
@@ -84,7 +84,7 @@ let b = e => {
       var e;
       let s = null != (e = N.Z.getVoiceChannelId()) ? e : N.Z.getChannelId();
       return null == s ? null : p.Z.getChannel(s)
-    }), a = null == r ? void 0 : r.guild_id, n = null == r ? void 0 : r.id, i = k.ZP.useName(a, n, s), o = C.ZP.useName(s);
+    }), a = null == r ? void 0 : r.guild_id, n = null == r ? void 0 : r.id, i = k.ZP.useName(a, n, s), o = v.ZP.useName(s);
     return (0, l.jsxs)("div", {
       className: E.result,
       children: [(0, l.jsx)(c.qEK, {
@@ -196,7 +196,7 @@ function A(e) {
     results: x.Z.getResults(),
     query: x.Z.getQuery(),
     activity: x.Z.getActivity()
-  }), []), [m, _] = r.useState(n), [p, N] = r.useState(0), [k, C] = r.useState([]), [L, b] = r.useState(!1), f = r.useRef(null), R = r.useCallback(() => {
+  }), []), [m, _] = r.useState(n), [p, N] = r.useState(0), [k, v] = r.useState([]), [L, b] = r.useState(!1), f = r.useRef(null), R = r.useCallback(() => {
     var e;
     null == (e = f.current) || e.scrollPageUp({
       animate: !0
@@ -207,10 +207,10 @@ function A(e) {
       animate: !0
     })
   }, [f]);
-  r.useEffect(() => (g.S.subscribe(v.CkL.SCROLL_PAGE_UP, R), () => {
-    g.S.unsubscribe(v.CkL.SCROLL_PAGE_UP, R)
-  }), [R]), r.useEffect(() => (g.S.subscribe(v.CkL.SCROLL_PAGE_DOWN, A), () => {
-    g.S.unsubscribe(v.CkL.SCROLL_PAGE_DOWN, A)
+  r.useEffect(() => (g.S.subscribe(C.CkL.SCROLL_PAGE_UP, R), () => {
+    g.S.unsubscribe(C.CkL.SCROLL_PAGE_UP, R)
+  }), [R]), r.useEffect(() => (g.S.subscribe(C.CkL.SCROLL_PAGE_DOWN, A), () => {
+    g.S.unsubscribe(C.CkL.SCROLL_PAGE_DOWN, A)
   }), [A]), r.useEffect(() => {
     null == h && t()
   }, [t, h]), r.useEffect(() => {
@@ -226,7 +226,7 @@ function A(e) {
           }
         }
       } = a[e];
-      if (!(null == t || k.includes(t))) switch (C([...k, t]), s.type) {
+      if (!(null == t || k.includes(t))) switch (v([...k, t]), s.type) {
         case d.h8.GROUP_DM:
         case d.h8.TEXT_CHANNEL:
           (0, i.GG)(s.record.id);
@@ -250,6 +250,7 @@ function A(e) {
     "aria-label": S.intl.formatToPlainString(S.t["2tN7io"], {
       name: h.name
     }),
+    parentComponent: "ActivityInviteModal",
     children: [(0, l.jsxs)(c.xBx, {
       separator: L,
       className: E.modalHeader,
@@ -293,7 +294,7 @@ function A(e) {
       paddingBottom: 12,
       sections: [a.length],
       sectionHeight: 0,
-      renderSection: v.VqG,
+      renderSection: C.VqG,
       rowHeight: (e, s) => e > 0 ? 0 : 48 * (null != a[s]),
       renderRow: e => {
         let {

@@ -19,7 +19,7 @@ var i = n(255367),
   O = n(50611),
   g = n(20493);
 
-function b(t, e, n) {
+function m(t, e, n) {
   return e in t ? Object.defineProperty(t, e, {
     value: n,
     enumerable: !0,
@@ -28,14 +28,14 @@ function b(t, e, n) {
   }) : t[e] = n, t
 }
 
-function m(t) {
+function b(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
       return Object.getOwnPropertyDescriptor(n, t).enumerable
     }))), i.forEach(function(e) {
-      b(t, e, n[e])
+      m(t, e, n[e])
     })
   }
   return t
@@ -143,6 +143,7 @@ class N extends r.PureComponent {
       transitionState: e,
       className: O.modal,
       "aria-label": n,
+      parentComponent: "CloudSyncResolutionModal",
       children: [(0, i.jsxs)(s.xBx, {
         separator: !1,
         children: [(0, i.jsx)(s.olH, {
@@ -158,9 +159,9 @@ class N extends r.PureComponent {
   }
   constructor(...t) {
     var e;
-    super(...t), e = this, b(this, "onClose", () => {
+    super(...t), e = this, m(this, "onClose", () => {
       this.props.onClose()
-    }), b(this, "handlePlay", function() {
+    }), m(this, "handlePlay", function() {
       let t = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
         n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
         {
@@ -172,12 +173,12 @@ class N extends r.PureComponent {
         cloudSync: t,
         cloudSyncForceHash: n
       })
-    }), b(this, "handleChooseDownload", () => {
+    }), m(this, "handleChooseDownload", () => {
       let {
         cloudSyncState: t
       } = this.props;
       t.type === y.TzF.CONFLICT && this.handlePlay(!0, t.remote.hash)
-    }), b(this, "handleChooseUpload", () => {
+    }), m(this, "handleChooseUpload", () => {
       let {
         cloudSyncState: t
       } = this.props;
@@ -208,7 +209,7 @@ async function T(t, e, n) {
     try {
       await c.Z(e.id, t, o)
     } catch (n) {
-      (0, s.h7j)(n => (0, i.jsx)(A, m({
+      (0, s.h7j)(n => (0, i.jsx)(A, b({
         libraryApplication: e,
         analyticsParams: a,
         branchId: t
@@ -216,7 +217,7 @@ async function T(t, e, n) {
       return
     }
   }
-  return f.default.track(y.rMx.APPLICATION_OPENED, m({
+  return f.default.track(y.rMx.APPLICATION_OPENED, b({
     application_id: r.id,
     application_name: r.name,
     type: y.q5t.LAUNCH,

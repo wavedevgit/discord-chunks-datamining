@@ -65,6 +65,7 @@ function p(e) {
     className: d.modal,
     size: a.CgR.DYNAMIC
   }, b), r = r = {
+    parentComponent: "GuildPowerupPerkModal",
     children: [(0, n.jsxs)(a.hzk, {
       className: d.modalContentContainer,
       scrollbarType: "none",

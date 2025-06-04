@@ -30,33 +30,33 @@ function j(e) {
   } = e, {
     data: O
   } = (0, c.H)(N), I = O[0], {
-    data: y
-  } = (0, o.Z)(N), T = r.useMemo(() => {
+    data: C
+  } = (0, o.Z)(N), y = r.useMemo(() => {
     var e;
-    return (null == y ? void 0 : y.thumbnail) != null && null != (e = x.Z.toURLSafe((0, m._W)(j, y.thumbnail, 256))) ? e : void 0
-  }, [j, null == y ? void 0 : y.thumbnail]), R = r.useMemo(() => {
-    let e = null == y ? void 0 : y.benefits;
+    return (null == C ? void 0 : C.thumbnail) != null && null != (e = x.Z.toURLSafe((0, m._W)(j, C.thumbnail, 256))) ? e : void 0
+  }, [j, null == C ? void 0 : C.thumbnail]), T = r.useMemo(() => {
+    let e = null == C ? void 0 : C.benefits;
     if (null != e && 0 !== e.length) return e.map(e => ({
       id: e.id,
       title: e.name,
       description: e.description,
       icon: (0, d.n)(j, e.icon)
     }))
-  }, [j, null == y ? void 0 : y.benefits]), {
-    openModal: C,
+  }, [j, null == C ? void 0 : C.benefits]), {
+    openModal: R,
     subscriptionPurchaseButtonState: E
   } = (0, u.Z)({
     skuId: N,
     initialSubscribeForGuild: null != S ? S : void 0
   });
-  return null == y ? null : (0, t.jsx)(h.A, {
+  return null == C ? null : (0, t.jsx)(h.A, {
     appId: j,
     skuId: N,
     transitionState: g,
     onHeaderTitleClick: null != k ? k : b,
     onClose: b,
     footer: (0, t.jsx)(p.pV, {
-      onClick: C,
+      onClick: R,
       appId: j,
       subscriptionType: f,
       skuId: N,
@@ -66,14 +66,14 @@ function j(e) {
     children: (0, t.jsx)(v.i, {
       appId: j,
       skuId: N,
-      benefits: null != R ? R.map(e => (0, t.jsx)(i.Gm, {
+      benefits: null != T ? T.map(e => (0, t.jsx)(i.Gm, {
         header: e.title,
         icon: e.icon,
         description: e.description
       }, e.id)) : void 0,
-      description: null != (n = y.description) ? n : void 0,
-      imgSrc: T,
-      title: null != (l = null == I ? void 0 : I.name) ? l : y.summary,
+      description: null != (n = C.description) ? n : void 0,
+      imgSrc: y,
+      title: null != (l = null == I ? void 0 : I.name) ? l : C.summary,
       tag: (0, t.jsx)(s.Z, {
         type: f
       }),

@@ -181,6 +181,7 @@ function P(e) {
       skuIDs: [],
       children: (0, n.jsx)(s.Y0X, (r = f({}, x), t = t = {
         "aria-labelledby": g,
+        parentComponent: "GuildBoostingUpsellModal",
         children: (0, n.jsx)(p.Z, {
           hideBreadcrumbs: !0,
           body: (0, n.jsx)(y, {

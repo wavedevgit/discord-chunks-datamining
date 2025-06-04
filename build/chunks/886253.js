@@ -37,11 +37,12 @@ function j(e) {
   let O = (0, d.y)(g, 25),
     {
       termsOfServiceUrl: I,
-      privacyPolicyUrl: y
+      privacyPolicyUrl: C
     } = g;
   return (null == k ? void 0 : k.applicationId) !== n ? (0, t.jsxs)(i.Y0X, {
     transitionState: j,
     size: i.CgR.SMALL,
+    parentComponent: "CardDetailsModal",
     children: [(0, t.jsxs)(i.hzk, {
       className: v.content,
       children: [(0, t.jsx)(i.olH, {
@@ -71,6 +72,7 @@ function j(e) {
     transitionState: j,
     size: i.CgR.DYNAMIC,
     className: v.modal,
+    parentComponent: "CardDetailsModal",
     children: [(0, t.jsxs)(i.xBx, {
       className: p.modalHeader,
       children: [(0, t.jsxs)(i.P3F, {
@@ -90,12 +92,12 @@ function j(e) {
       })]
     }), N, (0, t.jsxs)(i.mzw, {
       className: v.footer,
-      children: [null != I || null != y ? (0, t.jsx)(i.Text, {
+      children: [null != I || null != C ? (0, t.jsx)(i.Text, {
         color: "header-primary",
         variant: "text-sm/normal",
         children: (0, t.jsx)(m.Z, {
           termsOfServiceUrl: I,
-          privacyPolicyUrl: y
+          privacyPolicyUrl: C
         })
       }) : (0, t.jsx)(i.Text, {
         color: "header-primary",

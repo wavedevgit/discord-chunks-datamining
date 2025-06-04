@@ -1,25 +1,25 @@
 /** Chunk was on 10667 **/
 e.d(n, {
-  A: () => a
+  A: () => c
 });
 var o = e(255367);
 e(73800);
 var i = e(212598),
   r = e(388032),
   s = e(436200),
-  c = e(757685);
+  a = e(757685);
 
-function a(t) {
+function c(t) {
   let {
     platformType: n,
     isWaitingForConnection: e,
-    onWaitingForConnection: a,
+    onWaitingForConnection: c,
     expectedCallbackState: l,
     onAuthToken: d,
     onError: u,
     onClose: p
   } = t, _ = e ? (0, o.jsx)("img", {
-    src: c.Z,
+    src: a.Z,
     width: "231",
     height: "172",
     alt: ""
@@ -32,7 +32,7 @@ function a(t) {
   return (0, o.jsx)(i.t, {
     platformType: n,
     isWaitingForConnection: e,
-    onWaitingForConnection: a,
+    onWaitingForConnection: c,
     expectedCallbackState: l,
     onAuthToken: d,
     onError: u,

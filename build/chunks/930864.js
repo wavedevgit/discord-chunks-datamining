@@ -236,6 +236,7 @@ function x(e) {
     className: O.modal,
     "aria-label": S.intl.string(S.t["+SkRRk"])
   }, N), {
+    parentComponent: "ForwardModal",
     children: [(0, l.jsxs)(s.xBx, {
       className: O.header,
       children: [(0, l.jsxs)("div", {

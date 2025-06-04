@@ -21,7 +21,7 @@ function d(e, t, n, d, u) {
     body: m
   } = (0, o.Xi)(e, t, n), {
     trackView: y,
-    trackClick: _
+    trackClick: v
   } = (0, l.R)(a.n0.ActivityInvite, {
     notif_type: a.n0.ActivityInvite,
     notif_user_id: n.id,
@@ -49,10 +49,10 @@ function d(e, t, n, d, u) {
         applicationId: d.id,
         channelId: e.id,
         messageId: t.id
-      }), r.Z.updateNotificationStatus(s), _("join")
+      }), r.Z.updateNotificationStatus(s), v("join")
     },
     onDismissClick: () => {
-      _("dismiss")
+      v("dismiss")
     }
   }
 }

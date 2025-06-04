@@ -19,10 +19,10 @@ var l = n(255367),
   T = n(400024),
   E = n(216019),
   S = n(286359);
-let O = "hTKzmak",
-  C = (0, p.hQ)(),
+let C = "hTKzmak",
+  O = (0, p.hQ)(),
   b = (r = window.GLOBAL_ENV.INVITE_HOST, i = "", null == r && (r = location.host, i = I.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(i, "/")),
-  g = [O, "".concat(b).concat(O), "".concat(b).concat("wumpus-friends")],
+  g = [C, "".concat(b).concat(C), "".concat(b).concat("wumpus-friends")],
   L = e => {
     let {
       onClick: t
@@ -122,7 +122,7 @@ function D(e) {
         className: T.inputForm,
         children: (0, l.jsxs)(c.xJW, {
           children: [(0, l.jsx)(c.vwX, {
-            id: C,
+            id: O,
             error: I,
             className: s()(T.formTitle, {
               [T.error]: null != I
@@ -134,10 +134,10 @@ function D(e) {
             onChange: a,
             className: T.input,
             inputClassName: T.inputInner,
-            placeholder: "".concat(b).concat(O),
+            placeholder: "".concat(b).concat(C),
             inputRef: S,
             required: !0,
-            "aria-labelledby": C
+            "aria-labelledby": O
           })]
         })
       }), (0, l.jsx)(c.xJW, {

@@ -2,8 +2,8 @@
 e.d(n, {
   default: () => b
 }), e(953529);
-var i = e(255367),
-  o = e(73800),
+var o = e(255367),
+  i = e(73800),
   r = e(442837),
   l = e(481060),
   s = e(168107),
@@ -29,60 +29,61 @@ let h = [{
       onClose: n,
       transitionState: e,
       classificationId: b
-    } = t, _ = (0, r.e7)([x.Z], () => x.Z.getAgeVerificationWebviewUrl()), j = (0, r.e7)([x.Z], () => x.Z.getIsLoadingAgeVerification()), N = o.useCallback(() => {
+    } = t, _ = (0, r.e7)([x.Z], () => x.Z.getAgeVerificationWebviewUrl()), p = (0, r.e7)([x.Z], () => x.Z.getIsLoadingAgeVerification()), j = i.useCallback(() => {
       n(), c.Z.close()
-    }, [n]), p = o.useCallback(() => {
-      c.Z.success(), N(), c.Z.start_verification_check()
-    }, [N]);
-    return o.useEffect(() => {
+    }, [n]), N = i.useCallback(() => {
+      c.Z.success(), j(), c.Z.start_verification_check()
+    }, [j]);
+    return i.useEffect(() => {
       "" !== _ && s.Z.showAgeVerification({
         webviewUrl: _,
-        onComplete: p,
+        onComplete: N,
         useV1: !0
       })
-    }, [_, p]), (0, i.jsxs)(l.Y0X, {
+    }, [_, N]), (0, o.jsxs)(l.Y0X, {
       transitionState: e,
       className: f.root,
-      children: [(0, i.jsxs)(l.hzk, {
+      parentComponent: "AutomatedUnderageAppealModal",
+      children: [(0, o.jsxs)(l.hzk, {
         className: f.content,
-        children: [(0, i.jsxs)("div", {
+        children: [(0, o.jsxs)("div", {
           className: f.header,
-          children: [(0, i.jsx)(l.X6q, {
+          children: [(0, o.jsx)(l.X6q, {
             variant: "heading-xl/bold",
             children: m.intl.string(m.t["9SDLnp"])
-          }), (0, i.jsx)(l.X6q, {
+          }), (0, o.jsx)(l.X6q, {
             variant: "heading-md/normal",
             color: "header-secondary",
             children: m.intl.string(m.t["yvx///"])
           })]
-        }), (0, i.jsx)("div", {
+        }), (0, o.jsx)("div", {
           className: f.listContent,
-          children: (0, i.jsx)("div", {
+          children: (0, o.jsx)("div", {
             className: f.table,
             children: h.map((t, n) => {
               let {
                 title: e,
-                description: o
+                description: i
               } = t;
-              return (0, i.jsx)(a.ZP, {
+              return (0, o.jsx)(a.ZP, {
                 title: e,
-                description: o,
+                description: i,
                 index: n,
                 listType: "numbered",
                 titleVariant: "text-md/medium"
               }, n)
             })
           })
-        }), (0, i.jsxs)("div", {
+        }), (0, o.jsxs)("div", {
           className: f.anotherOption,
-          children: [(0, i.jsx)(l.Text, {
+          children: [(0, o.jsx)(l.Text, {
             variant: "text-sm/semibold",
             className: f.optionEyebrow,
             color: "header-secondary",
             children: m.intl.string(m.t.WPwp1d)
-          }), (0, i.jsx)("div", {
+          }), (0, o.jsx)("div", {
             className: f.table,
-            children: (0, i.jsx)(a.ZP, {
+            children: (0, o.jsx)(a.ZP, {
               title: m.intl.string(m.t.N9WJMD),
               description: m.intl.string(m.t["NHq38/"]),
               buttonText: m.intl.string(m.t["9iy4lJ"]),
@@ -90,9 +91,9 @@ let h = [{
               titleVariant: "text-md/medium",
               onButtonPress: () => window.open(u.sQ.AGE_VERIFICATION_LINK, "_blank")
             })
-          }), (0, i.jsx)("div", {
+          }), (0, o.jsx)("div", {
             className: f.learnMore,
-            children: (0, i.jsx)(l.X6q, {
+            children: (0, o.jsx)(l.X6q, {
               variant: "heading-sm/medium",
               color: "text-secondary",
               children: m.intl.format(m.t.ZbWsOD, {
@@ -101,16 +102,16 @@ let h = [{
             })
           })]
         })]
-      }), (0, i.jsxs)(l.mzw, {
+      }), (0, o.jsxs)(l.mzw, {
         className: f.footer,
-        children: [(0, i.jsx)(l.zxk, {
+        children: [(0, o.jsx)(l.zxk, {
           onClick: () => (0, d.FN)(b),
-          submitting: j,
+          submitting: p,
           children: m.intl.string(m.t["54b8V1"])
-        }), (0, i.jsx)(l.zxk, {
+        }), (0, o.jsx)(l.zxk, {
           color: l.zxk.Colors.TRANSPARENT,
           look: l.zxk.Looks.BLANK,
-          onClick: N,
+          onClick: j,
           className: f.cancelButton,
           children: m.intl.string(m.t.dKacJy)
         })]

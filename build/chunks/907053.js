@@ -1,6 +1,6 @@
 /** Chunk was on 64941 **/
 e.d(n, {
-  default: () => m
+  default: () => u
 }), e(388685), e(457542), e(953529);
 var s = e(255367),
   i = e(73800),
@@ -13,7 +13,7 @@ var s = e(255367),
   x = e(388032),
   h = e(149388);
 
-function u(t) {
+function m(t) {
   let {
     name: n,
     value: e
@@ -33,12 +33,12 @@ function u(t) {
   })
 }
 
-function m(t) {
+function u(t) {
   let {
     onClose: n,
     transitionState: e
-  } = t, [a, m] = i.useState(""), [j, k] = i.useState(""), [N, _] = i.useState(null), [g, p] = i.useState(!1), [C, v] = i.useState("DOMAIN"), R = () => {
-    p(!0), _(null), l.tn.post({
+  } = t, [a, u] = i.useState(""), [j, k] = i.useState(""), [N, _] = i.useState(null), [p, g] = i.useState(!1), [C, v] = i.useState("DOMAIN"), R = () => {
+    g(!0), _(null), l.tn.post({
       url: d.ANM.CONNECTION(d.ABu.DOMAIN, a),
       body: {},
       rejectWithError: !1
@@ -48,12 +48,13 @@ function m(t) {
       var n, e, s, i, l, o, r;
       (null == (n = t.body) ? void 0 : n.proof) && "DOMAIN" === C ? (k(t.body.proof), v("PROOF_DNS")) : _((null == (o = t.body) || null == (l = o.errors) || null == (i = l.domain) || null == (s = i._errors) || null == (e = s[0]) ? void 0 : e.message) || (null == (r = t.body) ? void 0 : r.message) || t.message)
     }).finally(() => {
-      p(!1)
+      g(!1)
     })
   };
   return (0, s.jsxs)(o.Y0X, {
     transitionState: e,
     className: h.__invalid_modal,
+    parentComponent: "DomainVerifyModal",
     children: [(0, s.jsxs)(o.xBx, {
       direction: r.Z.Direction.VERTICAL,
       className: h.header,
@@ -85,11 +86,11 @@ function m(t) {
               title: x.intl.string(x.t["4jIAa2"]),
               error: N,
               children: (0, s.jsx)(o.oil, {
-                onChange: m,
+                onChange: u,
                 placeholder: c.pL,
                 maxLength: 253,
                 value: a,
-                disabled: g,
+                disabled: p,
                 autoFocus: !0
               })
             })]
@@ -97,7 +98,7 @@ function m(t) {
             className: h.footer,
             children: [(0, s.jsx)(o.zxk, {
               type: "submit",
-              submitting: g,
+              submitting: p,
               disabled: "" === a,
               children: x.intl.string(x.t.PDTjLC)
             }), (0, s.jsx)(o.zxk, {
@@ -127,13 +128,13 @@ function m(t) {
                 children: x.intl.string(x.t.cSURbm)
               }), (0, s.jsxs)("div", {
                 className: h.dnsRecordContainer,
-                children: [(0, s.jsx)(u, {
+                children: [(0, s.jsx)(m, {
                   name: x.intl.string(x.t.GL3q7u),
                   value: (0, c.Qv)(a)
-                }), (0, s.jsx)(u, {
+                }), (0, s.jsx)(m, {
                   name: x.intl.string(x.t.Ccmixs),
                   value: "TXT"
-                }), (0, s.jsx)(u, {
+                }), (0, s.jsx)(m, {
                   name: x.intl.string(x.t.PVLriY),
                   value: j
                 })]
@@ -170,7 +171,7 @@ function m(t) {
               className: h.__invalid_switchButton,
               children: x.intl.string(x.t.CkfdNz)
             }), (0, s.jsx)(o.zxk, {
-              submitting: g,
+              submitting: p,
               onClick: R,
               children: x.intl.string(x.t["13ofGh"])
             })]
@@ -186,10 +187,10 @@ function m(t) {
             children: x.intl.string(x.t["p4ql7+"])
           }), (0, s.jsxs)("div", {
             className: h.httpFileContainer,
-            children: [(0, s.jsx)(u, {
+            children: [(0, s.jsx)(m, {
               name: x.intl.string(x.t.GL3q7u),
               value: (0, c.F9)(a)
-            }), (0, s.jsx)(u, {
+            }), (0, s.jsx)(m, {
               name: x.intl.string(x.t.PVLriY),
               value: j
             })]
@@ -220,7 +221,7 @@ function m(t) {
               className: h.__invalid_switchButton,
               children: x.intl.string(x.t.RhJMVV)
             }), (0, s.jsx)(o.zxk, {
-              submitting: g,
+              submitting: p,
               onClick: R,
               children: x.intl.string(x.t["13ofGh"])
             })]

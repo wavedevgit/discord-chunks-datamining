@@ -64,7 +64,7 @@ function I(e) {
   }) : null
 }
 
-function h(e) {
+function m(e) {
   let {
     src: t,
     size: n
@@ -77,7 +77,7 @@ function h(e) {
     height: n
   })
 }
-let m = {
+let h = {
     [c.EFr.SIZE_16]: {
       default: u.QS.DIAGONAL_FACEPILE_16,
       typing: u.QS.DIAGONAL_FACEPILE_TYPING_16,
@@ -173,7 +173,7 @@ let m = {
           };
         return A[n] = o, o
       }(o, f, t)
-    }, [N, f, o]), b = (t = null != E, f ? m[o].typing : t ? m[o].status : m[o].default);
+    }, [N, f, o]), b = (t = null != E, f ? h[o].typing : t ? h[o].status : h[o].default);
     return (0, r.jsxs)("div", {
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -214,7 +214,7 @@ let m = {
             top: L,
             left: L
           },
-          children: (0, r.jsx)(h, {
+          children: (0, r.jsx)(m, {
             src: i,
             size: O,
             isTyping: f,

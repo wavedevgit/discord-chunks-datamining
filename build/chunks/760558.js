@@ -14,9 +14,9 @@ var n = l(255367),
   m = l(314884),
   x = l(626135),
   h = l(267642),
-  g = l(395199),
-  f = l(719228),
-  p = l(4434),
+  p = l(395199),
+  g = l(719228),
+  f = l(4434),
   j = l(981631),
   C = l(388032),
   v = l(671593);
@@ -37,13 +37,13 @@ let b = e => {
     [k, M] = r.useState(!1),
     [G, D] = r.useState(b),
     [U, z] = r.useState(null != s ? s : P.slice(0, 1)),
-    R = r.useMemo(() => null == U ? [] : U.map(e => {
+    B = r.useMemo(() => null == U ? [] : U.map(e => {
       let {
         premiumGuildSubscription: t
       } = e;
       return u.Z.getGuild(null == t ? void 0 : t.guildId)
     }).filter(e => null != e), [U]),
-    B = r.useMemo(() => {
+    R = r.useMemo(() => {
       var e;
       return (null == U || null == (e = U[0]) ? void 0 : e.premiumGuildSubscription) != null
     }, [U]),
@@ -92,19 +92,19 @@ let b = e => {
         })
       },
       GUILD_SELECT: {
-        header: () => (0, n.jsx)(f.g, {
-          isTransfer: B,
+        header: () => (0, n.jsx)(g.g, {
+          isTransfer: R,
           query: L,
           setQuery: Z
         }),
         bodyClass: v.selectContent,
-        body: () => (0, n.jsx)(f.e, {
+        body: () => (0, n.jsx)(g.e, {
           onClose: F,
           onSelectGuild: e => {
             D(e), I("CONFIRM")
           },
-          isTransfer: B,
-          selectedSlotGuilds: R,
+          isTransfer: R,
+          selectedSlotGuilds: B,
           query: L
         })
       },
@@ -113,9 +113,9 @@ let b = e => {
           if (null == G) return null;
           let e = U.filter(e => (0, h.tl)(e)).length,
             t = U.length,
-            l = R.length;
-          return B ? (0, n.jsx)(g.Z.TransferBody, {
-            fromGuilds: R,
+            l = B.length;
+          return R ? (0, n.jsx)(p.Z.TransferBody, {
+            fromGuilds: B,
             toGuild: G,
             blurb: C.intl.formatToPlainString(C.t.SSA2lp, {
               slotCount: t,
@@ -126,7 +126,7 @@ let b = e => {
             onDismissError: () => M(!1),
             slotCount: t,
             canceledCount: e
-          }) : (0, n.jsx)(g.Z.ApplyBody, {
+          }) : (0, n.jsx)(p.Z.ApplyBody, {
             guild: G,
             blurb: C.intl.string(C.t.yTlZV1),
             warning: C.intl.formatToPlainString(C.t.KPnDlp, {
@@ -163,13 +163,13 @@ let b = e => {
                 }
               }
             };
-          return (0, n.jsx)(g.Z.Footer, {
-            confirmation: B ? C.intl.formatToPlainString(C.t.Oh6mxc, {
+          return (0, n.jsx)(p.Z.Footer, {
+            confirmation: R ? C.intl.formatToPlainString(C.t.Oh6mxc, {
               slotCount: e
             }) : C.intl.formatToPlainString(C.t["ZU5x5+"], {
               slotCount: e
             }),
-            confirmationLabel: B ? C.intl.formatToPlainString(C.t.fnZRmZ, {
+            confirmationLabel: R ? C.intl.formatToPlainString(C.t.fnZRmZ, {
               slotCount: e
             }) : C.intl.formatToPlainString(C.t.d0vwWV, {
               slotCount: e
@@ -181,9 +181,9 @@ let b = e => {
         }
       },
       SUCCESS: {
-        body: () => (0, n.jsx)(p.R7, {
+        body: () => (0, n.jsx)(f.R7, {
           guild: G,
-          isTransfer: B,
+          isTransfer: R,
           guildBoostQuantity: U.length,
           onClose: F,
           didPurchaseOnFractionalPremium: !1
@@ -201,6 +201,7 @@ let b = e => {
     transitionState: S,
     className: v.modal,
     size: a.CgR.SMALL,
+    parentComponent: "ApplyGuildBoostModal",
     children: [null == (t = A.header) ? void 0 : t.call(A), (0, n.jsx)(a.hzk, {
       className: A.bodyClass,
       children: (0, n.jsx)(a.qBt, {

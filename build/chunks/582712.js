@@ -4,16 +4,16 @@ n.d(t, {
 });
 var r = n(255367),
   l = n(73800),
-  i = n(286379),
-  a = n(442837),
+  a = n(286379),
+  i = n(442837),
   s = n(481060),
   o = n(565138),
   c = n(797614),
   u = n(769654),
   d = n(695346),
   b = n(430824),
-  f = n(88658),
-  m = n(401416),
+  m = n(88658),
+  f = n(401416),
   g = n(920133),
   S = n(388032),
   h = n(227267),
@@ -24,18 +24,19 @@ function x(e) {
     transitionState: t,
     guildId: x,
     onClose: j
-  } = e, _ = (0, a.e7)([b.Z], () => b.Z.getGuild(x));
+  } = e, D = (0, i.e7)([b.Z], () => b.Z.getGuild(x));
   return (l.useEffect(() => {
-    (0, m.Y)(x), (0, g.L)(g.Q.MODAL_VIEWED, x), c.Z.increment({
-      name: i.V.DM_SETTINGS_UPSELL_VIEW
+    (0, f.Y)(x), (0, g.L)(g.Q.MODAL_VIEWED, x), c.Z.increment({
+      name: a.V.DM_SETTINGS_UPSELL_VIEW
     })
-  }, [x]), null == _) ? null : (0, r.jsx)(s.Y0X, {
+  }, [x]), null == D) ? null : (0, r.jsx)(s.Y0X, {
     transitionState: t,
     className: h.modal,
+    parentComponent: "DmSettingsUpsellModal",
     children: (0, r.jsxs)("form", {
       onSubmit: e => {
         e.preventDefault();
-        let t = (0, f.YK)();
+        let t = (0, m.YK)();
         t.add(x), d.h2.updateSetting(Array.from(t)).then(() => (0, s.showToast)((0, s.createToast)(S.intl.string(S.t.rlYD1d), s.ToastType.SUCCESS))), j(), (0, g.L)(g.Q.MODAL_DISABLED_DMS, x)
       },
       children: [(0, r.jsx)("img", {
@@ -54,7 +55,7 @@ function x(e) {
           color: "header-secondary",
           className: h.body,
           children: S.intl.format(S.t.Depjkp, {
-            guild_name: _.name
+            guild_name: D.name
           })
         })]
       }), (0, r.jsxs)(s.hzk, {
@@ -68,12 +69,12 @@ function x(e) {
           children: (0, r.jsxs)("div", {
             className: h.guildInfo,
             children: [(0, r.jsx)(o.Z, {
-              guild: _,
+              guild: D,
               size: o.Z.Sizes.SMALL
             }), (0, r.jsx)(s.Text, {
               className: h.guildName,
               variant: "text-md/semibold",
-              children: _.name
+              children: D.name
             })]
           })
         }), (0, r.jsxs)("div", {
@@ -121,7 +122,7 @@ function x(e) {
                       }
                       return e
                     }({}, t), l = l = {
-                      guild: _
+                      guild: D
                     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                       var n = Object.keys(e);
                       if (Object.getOwnPropertySymbols) {

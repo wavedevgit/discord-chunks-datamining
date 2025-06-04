@@ -83,22 +83,23 @@ let h = function(e) {
     getOptions: c.bM
   }), p = (0, d.e)({
     getOptions: c.cc
-  }), x = t === O.aZ.BAD, T = i.useMemo(() => {
+  }), x = t === O.aZ.BAD, S = i.useMemo(() => {
     let e = [];
     return x && e.push(h), e.push(p), e.every(c.cp)
-  }, [x, p, h]), S = i.useCallback(() => {
-    T && (s.ZP.trackWithMetadata(f.rMx.SEARCH_RESULTS_FEEDBACK_SUBMITTED, {
+  }, [x, p, h]), T = i.useCallback(() => {
+    S && (s.ZP.trackWithMetadata(f.rMx.SEARCH_RESULTS_FEEDBACK_SUBMITTED, {
       rating: t,
       unsatisfied_question_option: x ? (0, c.HO)(h) : null,
       unsatisfied_question_text: x ? (0, c.sG)(h) : null,
       describe_search_question_option: (0, c.HO)(p),
       describe_search_question_text: (0, c.sG)(p)
     }), r())
-  }, [h, x, T, r, t, p]);
+  }, [h, x, S, r, t, p]);
   return (0, l.jsxs)(u.Y0X, {
     size: u.CgR.MEDIUM,
     transitionState: n,
     "aria-labelledby": a,
+    parentComponent: "SearchResultsFeedbackModal",
     children: [(0, l.jsxs)(u.xBx, {
       separator: !1,
       className: _.header,
@@ -130,8 +131,8 @@ let h = function(e) {
         children: v.intl.string(v.t["13/7kZ"])
       }), (0, l.jsx)(u.zxk, {
         size: u.zxk.Sizes.MEDIUM,
-        onClick: S,
-        disabled: !T,
+        onClick: T,
+        disabled: !S,
         children: v.intl.string(v.t["4Zpxtr"])
       })]
     })]

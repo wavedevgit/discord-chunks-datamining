@@ -22,11 +22,11 @@ function _(e) {
     classification: s,
     isDsaEligible: _ = !1,
     isSpam: C = !1,
-    isCoppa: N = !1,
-    className: p,
+    isCoppa: p = !1,
+    className: N,
     onClose: g,
     onNext: j
-  } = e, I = (0, c.n)(), k = null != (n = null == s ? void 0 : s.explainer_link) ? n : "", E = null != s && null != s.flagged_content && s.flagged_content.length > 0, T = (0, o.c7)(null == s ? void 0 : s.description), f = !C && !N, S = null != s && ((0, o.FB)(s) || E);
+  } = e, I = (0, c.n)(), k = null != (n = null == s ? void 0 : s.explainer_link) ? n : "", E = null != s && null != s.flagged_content && s.flagged_content.length > 0, T = (0, o.c7)(null == s ? void 0 : s.description), f = !C && !p, S = null != s && ((0, o.FB)(s) || E);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(a.xBx, {
       direction: r.Z.Direction.VERTICAL,
@@ -46,7 +46,7 @@ function _(e) {
         onClick: g
       })]
     }), (0, i.jsxs)(a.hzk, {
-      className: l()(h.modalContent, !S && h.evidenceOffset, p),
+      className: l()(h.modalContent, !S && h.evidenceOffset, N),
       paddingFix: !1,
       children: [S && (0, i.jsx)(x.s, {
         flaggedContent: null != (t = s.flagged_content) ? t : []
@@ -61,15 +61,15 @@ function _(e) {
           variant: "text-md/semibold",
           children: T
         })
-      }), N && (0, i.jsx)(d.Z, {
+      }), p && (0, i.jsx)(d.Z, {
         url: m.sQ.AGE_VERIFICATION_LINK,
         text: u.intl.string(u.t["gJs+kZ"]),
         onClick: () => I(m.n0.ClickAgeVerificationLink)
-      }), C && !N && (0, i.jsx)(d.Z, {
+      }), C && !p && (0, i.jsx)(d.Z, {
         url: m.sQ.SPAM_LINK,
         text: u.intl.string(u.t["PaNS+P"]),
         onClick: () => I(m.n0.ClickSpamWebformLink)
-      }), !N && (0, i.jsx)(d.Z, {
+      }), !p && (0, i.jsx)(d.Z, {
         text: u.intl.string(u.t["Vtyn//"]),
         url: k,
         onClick: () => I(m.n0.ClickLearnMoreLink)

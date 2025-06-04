@@ -1,8 +1,8 @@
 /** Chunk was on 7590 **/
 n.d(t, {
   U: () => L,
-  default: () => M,
-  t: () => N
+  default: () => N,
+  t: () => M
 }), n(953529), n(388685), n(781311), n(413496), n(433524), n(35282), n(539854);
 var r = n(255367),
   l = n(73800),
@@ -73,9 +73,9 @@ function L(e) {
   b ? t = [] : u ? t = g.Wx(n, w, a, s, O) : 0 !== (t = g.ik(n, w, a, s, O)).length || "" !== E.trim() || g.RD(n, w) || (t = g.aq());
   let L = g.iI(k, a, n, s, O),
     {
-      placeholderText: M,
+      placeholderText: N,
       hintText: P,
-      renderEmptyText: Z
+      renderEmptyText: A
     } = {
       placeholderText: T.intl.string(T.t.iezLLi),
       hintText: T.intl.string(T.t["rwFx8/"]),
@@ -83,7 +83,7 @@ function L(e) {
         query: e
       })
     };
-  return (0, r.jsx)(N, {
+  return (0, r.jsx)(M, {
     pendingAdditions: c,
     query: E,
     onQueryChange: function(e) {
@@ -155,15 +155,15 @@ function L(e) {
     },
     roles: t,
     members: L,
-    placeholderText: M,
+    placeholderText: N,
     hintText: P,
-    renderEmptyText: Z,
+    renderEmptyText: A,
     isStageChannel: u,
     description: m
   })
 }
 
-function N(e) {
+function M(e) {
   let t, {
     listClassName: n,
     pendingAdditions: l,
@@ -208,7 +208,7 @@ function N(e) {
   })
 }
 
-function M(e) {
+function N(e) {
   let {
     transitionState: t,
     onClose: n,
@@ -240,12 +240,13 @@ function M(e) {
       p(!1)
     }
   }
-  let N = (0, u.zi)(S.type) ? a.W4G : a.gjC;
+  let M = (0, u.zi)(S.type) ? a.W4G : a.gjC;
   return (0, r.jsxs)(a.Y0X, {
     transitionState: t,
     size: a.CgR.SMALL,
     "aria-labelledby": k,
     className: w.modalRoot,
+    parentComponent: "AddMembersModal",
     children: [(0, r.jsxs)(a.xBx, {
       separator: !1,
       direction: c.Z.Direction.VERTICAL,
@@ -259,7 +260,7 @@ function M(e) {
         variant: "text-md/normal",
         color: "header-secondary",
         className: w.headerSubtitle,
-        children: [(0, r.jsx)(N, {
+        children: [(0, r.jsx)(M, {
           size: "xs",
           color: "currentColor",
           className: w.headerSubtitleIcon

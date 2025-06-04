@@ -1,7 +1,7 @@
 /** Chunk was on 6380 **/
 let i, r, l;
 n.d(e, {
-  Z: () => b
+  Z: () => m
 }), n(388685);
 var o, a, s, c = n(442837),
   d = n(570140),
@@ -30,7 +30,7 @@ s = "CloudSyncStore", (a = "displayName") in g ? Object.defineProperty(g, a, {
   configurable: !0,
   writable: !0
 }) : g[a] = s;
-let b = new g(d.Z, {
+let m = new g(d.Z, {
   GAME_CLOUD_SYNC_START: function(t) {
     let {
       applicationId: e,

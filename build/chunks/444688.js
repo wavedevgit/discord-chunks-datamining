@@ -70,6 +70,7 @@ let f = function(e) {
   } = e;
   return (0, r.jsxs)(o.Y0X, {
     transitionState: n,
+    parentComponent: "UnverifiedEmailModal",
     children: [(0, r.jsx)(o.xBx, {
       children: (0, r.jsx)(o.vwX, {
         tag: o.RB0.H4,

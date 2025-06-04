@@ -1,6 +1,6 @@
 /** Chunk was on 18879 **/
 i.d(e, {
-  default: () => o
+  default: () => c
 });
 var n = i(255367);
 i(73800);
@@ -8,22 +8,23 @@ var r = i(481060),
   a = i(313201),
   s = i(388032),
   l = i(708121),
-  c = i(365627);
+  o = i(365627);
 
-function o(t) {
+function c(t) {
   let {
     transitionState: e,
     onClose: i,
-    storeListing: o,
+    storeListing: c,
     subscription: d
   } = t, u = (0, a.Dt)();
   return (0, n.jsxs)(r.Y0X, {
     transitionState: e,
     "aria-labelledby": u,
+    parentComponent: "SubscriptionRestartedModal",
     children: [(0, n.jsxs)(r.hzk, {
       className: l.contentContainer,
       children: [(0, n.jsx)("img", {
-        src: c,
+        src: o,
         alt: ""
       }), (0, n.jsx)(r.X6q, {
         className: l.title,
@@ -31,7 +32,7 @@ function o(t) {
         color: "header-primary",
         id: u,
         children: s.intl.format(s.t["wLFT6+"], {
-          tier: o.summary
+          tier: c.summary
         })
       }), (0, n.jsx)(r.Text, {
         className: l.subtitle,

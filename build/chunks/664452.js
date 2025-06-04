@@ -1,11 +1,11 @@
 /** Chunk was on 61536 **/
 n.d(t, {
-  default: () => f
+  default: () => k
 }), n(388685);
 var i = n(255367),
   r = n(73800),
-  s = n(831209),
-  o = n(442837),
+  o = n(831209),
+  s = n(442837),
   a = n(481060),
   l = n(688465),
   c = n(430824),
@@ -14,10 +14,10 @@ var i = n(255367),
   u = n(162157),
   h = n(533244),
   p = n(487419),
-  j = n(821312),
-  m = n(676770),
-  _ = n(981631),
-  C = n(388032),
+  m = n(821312),
+  j = n(676770),
+  C = n(981631),
+  _ = n(388032),
   g = n(613915);
 
 function v(e) {
@@ -52,40 +52,41 @@ function b(e, t) {
   }), e
 }
 
-function f(e) {
+function k(e) {
   let {
     guildId: t,
     transitionState: n,
-    onClose: f,
-    analyticsData: k
-  } = e, N = (0, o.e7)([c.Z], () => c.Z.getGuild(t), [t]), T = !!(null == N ? void 0 : N.hasFeature(_.oNc.INVITES_DISABLED)), [O] = r.useState(!1), [y, E] = r.useState(m.Fl), S = (0, o.e7)([p.Z], () => p.Z.getGuildIncident(t)), I = (0, u.BT)(N), w = (0, h.SG)(S) || T, A = (0, h.sN)(S), [P, z] = r.useState(w), [D, R] = r.useState(A), [M, L] = r.useState(!1), Z = P !== w || D !== A || M, G = T && !I;
-  if (null == N) return f(), null;
+    onClose: k,
+    analyticsData: f
+  } = e, N = (0, s.e7)([c.Z], () => c.Z.getGuild(t), [t]), T = !!(null == N ? void 0 : N.hasFeature(C.oNc.INVITES_DISABLED)), [O] = r.useState(!1), [y, E] = r.useState(j.Fl), S = (0, s.e7)([p.Z], () => p.Z.getGuildIncident(t)), I = (0, u.BT)(N), w = (0, h.SG)(S) || T, A = (0, h.sN)(S), [P, R] = r.useState(w), [z, D] = r.useState(A), [M, L] = r.useState(!1), Z = P !== w || z !== A || M, G = T && !I;
+  if (null == N) return k(), null;
 
-  function B() {
-    z(e => !e)
+  function F() {
+    R(e => !e)
   }
   return (0, i.jsxs)(a.Y0X, {
     transitionState: n,
     size: a.CgR.MEDIUM,
+    parentComponent: "GuildRaidServerLockdownModal",
     children: [(0, i.jsx)(a.xBx, {
       separator: !0,
       children: (0, i.jsxs)("div", {
         className: g.headerContainer,
         children: [(0, i.jsx)(a.mBM, {
           size: "xs",
-          color: s.Z.INTERACTIVE_NORMAL
+          color: o.Z.INTERACTIVE_NORMAL
         }), (0, i.jsx)(a.X6q, {
           color: "header-primary",
           variant: "heading-md/semibold",
-          children: C.intl.string(C.t.oCYAc3)
+          children: _.intl.string(_.t.oCYAc3)
         }), (0, i.jsx)(l.Z, {})]
       })
     }), (0, i.jsx)(a.hzk, {
       children: (0, i.jsxs)("div", {
         className: g.mainContainer,
         children: [(0, i.jsx)(a.PhF, {
-          placeholder: C.intl.string(C.t.vKYZzc),
-          options: (0, m.c1)(),
+          placeholder: _.intl.string(_.t.vKYZzc),
+          options: (0, j.c1)(),
           select: e => {
             E(e), L(!0)
           },
@@ -98,19 +99,19 @@ function f(e) {
             children: [(0, i.jsx)(a.Text, {
               variant: "text-md/semibold",
               color: "header-primary",
-              children: C.intl.string(C.t.Uwsjn5)
+              children: _.intl.string(_.t.Uwsjn5)
             }), (0, i.jsx)(a.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
-              children: C.intl.string(C.t.qPJkZm)
+              children: _.intl.string(_.t.qPJkZm)
             })]
           }), (0, i.jsx)(a.ua7, {
-            text: C.intl.string(C.t["9GPbsb"]),
+            text: _.intl.string(_.t["9GPbsb"]),
             shouldShow: T,
             children: e => (0, i.jsx)("div", b(v({}, e), {
               children: (0, i.jsx)(a.rsf, {
                 className: g.toggle,
-                onChange: B,
+                onChange: F,
                 checked: P,
                 disabled: G
               })
@@ -123,53 +124,53 @@ function f(e) {
             children: [(0, i.jsx)(a.Text, {
               variant: "text-md/semibold",
               color: "header-primary",
-              children: C.intl.string(C.t.wrDmAw)
+              children: _.intl.string(_.t.wrDmAw)
             }), (0, i.jsx)(a.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
-              children: C.intl.string(C.t.UQbJW1)
+              children: _.intl.string(_.t.UQbJW1)
             })]
           }), (0, i.jsx)(a.rsf, {
             className: g.toggle,
             onChange: function() {
-              R(e => !e)
+              D(e => !e)
             },
-            checked: D
+            checked: z
           })]
         })]
       })
     }), (0, i.jsxs)(a.mzw, {
       children: [(0, i.jsx)(a.zxk, {
         onClick: () => {
-          (w || A) && !P && !D ? ((0, x.n)(N.id, !1, !1), (0, a.ZDy)(() => Promise.resolve(e => (0, i.jsx)(j.Z, b(v({}, e), {
+          (w || A) && !P && !z ? ((0, x.n)(N.id, !1, !1), (0, a.ZDy)(() => Promise.resolve(e => (0, i.jsx)(m.Z, b(v({}, e), {
             guildId: t
-          }))))) : (0, x.n)(N.id, P, D, y);
+          }))))) : (0, x.n)(N.id, P, z, y);
           let {
             source: e,
             alertType: n,
             messageId: r
-          } = k;
-          d.default.track(_.rMx.GUILD_RAID_INTERVENTION_STATE_CHANGE, {
+          } = f;
+          d.default.track(C.rMx.GUILD_RAID_INTERVENTION_STATE_CHANGE, {
             guild_id: t,
             source: e,
             raid_alert_id: r,
             raid_alert_type: n,
-            intervention_type_enabled: (0, h.sO)(P, D),
-            intervention_type_disabled: (0, h.lk)(P, D),
+            intervention_type_enabled: (0, h.sO)(P, z),
+            intervention_type_disabled: (0, h.lk)(P, z),
             duration: 60 * y
-          }), f()
+          }), k()
         },
         color: a.zxk.Colors.BRAND,
         look: a.zxk.Looks.FILLED,
         submitting: O,
         disabled: !Z,
-        children: C.intl.string(C.t["pwm/z8"])
+        children: _.intl.string(_.t["pwm/z8"])
       }), (0, i.jsx)(a.zxk, {
-        onClick: f,
+        onClick: k,
         color: a.zxk.Colors.PRIMARY,
         look: a.zxk.Looks.LINK,
         disabled: O,
-        children: C.intl.string(C.t["ETE/oK"])
+        children: _.intl.string(_.t["ETE/oK"])
       })]
     })]
   })

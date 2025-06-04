@@ -454,6 +454,7 @@ function v(e) {
     children: (0, n.jsxs)(c.Y0X, {
       transitionState: f,
       size: c.CgR.MEDIUM,
+      parentComponent: "ImageEditingModal",
       children: [S && !eR && (0, n.jsx)(g.Z, {
         type: v,
         analyticsPage: j,

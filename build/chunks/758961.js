@@ -16,8 +16,8 @@ var l = n(255367),
   h = n(626135),
   g = n(208049),
   p = n(671895),
-  y = n(586826),
-  b = n(812613),
+  b = n(586826),
+  y = n(812613),
   v = n(203437),
   x = n(710111),
   j = n(981631),
@@ -36,13 +36,13 @@ function S(e) {
     existingSound: P,
     onClose: E,
     transitionState: k,
-    showGuildPicker: Z = !1
-  } = e, [M, I] = a.useState(null != (n = null != (t = null == O ? void 0 : O.name) ? t : null == P ? void 0 : P.name) ? n : ""), [T, R] = a.useState(null != (i = null == P ? void 0 : P.volume) ? i : 1), [D, _] = a.useState(null == P ? void 0 : P.emojiId), [F, z] = a.useState(null == P ? void 0 : P.emojiName), {
+    showGuildPicker: M = !1
+  } = e, [Z, I] = a.useState(null != (n = null != (t = null == O ? void 0 : O.name) ? t : null == P ? void 0 : P.name) ? n : ""), [T, R] = a.useState(null != (i = null == P ? void 0 : P.volume) ? i : 1), [D, _] = a.useState(null == P ? void 0 : P.emojiId), [F, z] = a.useState(null == P ? void 0 : P.emojiName), {
     file: A,
     loadAudioFromFile: B,
     maxVolume: L,
     setMaxVolume: U
-  } = (0, y.p)(), [G, H] = a.useState(!1), [W, q] = a.useState(null), [V, Y] = a.useState(null), [J, X] = a.useState("ready"), [K, Q] = a.useState(S);
+  } = (0, b.p)(), [G, H] = a.useState(!1), [W, q] = a.useState(null), [V, Y] = a.useState(null), [J, X] = a.useState("ready"), [K, Q] = a.useState(S);
   async function $(e) {
     try {
       await B(null != e ? e : null), X("ready"), q(null)
@@ -86,7 +86,7 @@ function S(e) {
     }(J),
     en = "uploading" === J || "encoding" === J,
     el = null != P,
-    ea = M.length >= 2 && (el || null != A) && null != K && function(e) {
+    ea = Z.length >= 2 && (el || null != A) && null != K && function(e) {
       if (null == e) return !0;
       let t = (e.endMs - e.startMs) / 1e3;
       return t > 0 && t <= x.YW
@@ -94,7 +94,7 @@ function S(e) {
     ei = a.useCallback(async (e, t) => {
       X("encoding");
       try {
-        let n = await (0, b.kV)(e, t);
+        let n = await (0, y.kV)(e, t);
         return X("ready"), n
       } catch (e) {
         throw X("encoding-failed"), e
@@ -109,13 +109,13 @@ function S(e) {
         if (null == t) return;
         e = t
       }
-      let t = (0, b.Zk)(e);
+      let t = (0, y.Zk)(e);
       X("uploading");
       try {
-        await (0, b.bb)({
+        await (0, y.bb)({
           readPromise: t,
           guildId: K,
-          name: M,
+          name: Z,
           volume: T,
           emojiId: D,
           emojiName: F
@@ -123,14 +123,14 @@ function S(e) {
       } catch (e) {
         throw new c.Z(e)
       }
-    }, [A, K, M, ei, V, T, D, F]),
+    }, [A, K, Z, ei, V, T, D, F]),
     es = a.useCallback(async () => {
       o()(null != K, "Cannot submit soundboard sound with no guildId"), H(!0), q(null);
       try {
         el ? await (0, g.$d)({
           guildId: K,
           soundId: P.soundId,
-          name: M,
+          name: Z,
           volume: T,
           emojiId: D,
           emojiName: F
@@ -140,7 +140,7 @@ function S(e) {
       } finally {
         X("ready"), H(!1), R(1), U(1)
       }
-    }, [el, E, K, P, M, T, D, F, er, U]);
+    }, [el, E, K, P, Z, T, D, F, er, U]);
   (0, d.ZP)(() => {
     B(null), h.default.track(j.rMx.OPEN_MODAL, {
       type: "Soundboard Upload Sound",
@@ -160,6 +160,7 @@ function S(e) {
   });
   return (0, l.jsxs)(u.Y0X, {
     transitionState: k,
+    parentComponent: "SoundboardSoundUploadModal",
     children: [(0, l.jsx)(u.olH, {
       onClick: E,
       className: N.modalClose
@@ -175,7 +176,7 @@ function S(e) {
       children: [null != W && !W.hasFieldErrors() && (0, l.jsx)(u.kzN, {
         className: N.section,
         children: W.message
-      }), Z ? (0, l.jsx)(u.xJW, {
+      }), M ? (0, l.jsx)(u.xJW, {
         required: !0,
         className: N.section,
         title: w.intl.string(w.t.UYt7iY),
@@ -209,7 +210,7 @@ function S(e) {
           title: w.intl.string(w.t.NpJGaG),
           children: (0, l.jsx)(u.oil, {
             placeholder: w.intl.string(w.t.NpJGaG),
-            value: M,
+            value: Z,
             onChange: I,
             maxLength: x.Ek
           })

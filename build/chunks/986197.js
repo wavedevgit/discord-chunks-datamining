@@ -1,6 +1,6 @@
 /** Chunk was on 85342 **/
 r.d(t, {
-  Z: () => g
+  Z: () => m
 }), r(35282);
 var n = r(990547),
   i = r(544891),
@@ -12,7 +12,7 @@ var n = r(990547),
   u = r(981631);
 r(135200);
 var d = r(388032);
-let g = {
+let m = {
   resetSuggestions: () => o.Z.dispatch({
     type: "POMELO_SUGGESTIONS_RESET"
   }),
@@ -65,19 +65,19 @@ let g = {
     let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "modal",
       i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
       c = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-      g = !1 === /^[A-Za-z0-9_.]*$/.test(e) ? d.intl.string(d.t.z7c4bG) : e.includes("..") ? d.intl.string(d.t["C7G+go"]) : e.length < 2 || e.length > 32 ? d.intl.formatToPlainString(d.t.IpijXF, {
+      m = !1 === /^[A-Za-z0-9_.]*$/.test(e) ? d.intl.string(d.t.z7c4bG) : e.includes("..") ? d.intl.string(d.t["C7G+go"]) : e.length < 2 || e.length > 32 ? d.intl.formatToPlainString(d.t.IpijXF, {
         maxNum: 32,
         minNum: 2
       }) : void 0;
-    if (null != g) return l.default.track(u.rMx.POMELO_ERRORS, {
-      reason: g,
+    if (null != m) return l.default.track(u.rMx.POMELO_ERRORS, {
+      reason: m,
       username_error: !0,
       location: r,
       one_click_flow: c
     }), o.Z.dispatch({
       type: "POMELO_ATTEMPT_FAILURE",
       username: e,
-      error: g
+      error: m
     });
     try {
       let t = await a.Z.post({

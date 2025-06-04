@@ -26,15 +26,15 @@ function g(e) {
     onClose: g,
     channelId: f,
     guildId: k,
-    tag: y
-  } = e, C = o.useRef(null), N = (0, u.Dt)(), O = null != y, [_, P] = o.useState(null != (n = null == y ? void 0 : y.name) ? n : ""), [z, I] = o.useState(null != y ? {
-    id: y.emojiId,
-    name: y.emojiName
-  } : null), [E, w] = o.useState(null == y ? void 0 : y.moderated), B = (0, i.e7)([m.ZP], () => (null == z ? void 0 : z.id) != null ? m.ZP.getUsableCustomEmojiById(z.id) : null), R = (null == y ? void 0 : y.name) !== _ || (null == y ? void 0 : y.emojiId) !== (null == z ? void 0 : z.id) || (null == y ? void 0 : y.emojiName) !== (null == z ? void 0 : z.name) || E !== (null == y ? void 0 : y.moderated), Z = () => {
+    tag: C
+  } = e, y = o.useRef(null), N = (0, u.Dt)(), O = null != C, [_, P] = o.useState(null != (n = null == C ? void 0 : C.name) ? n : ""), [z, I] = o.useState(null != C ? {
+    id: C.emojiId,
+    name: C.emojiName
+  } : null), [E, w] = o.useState(null == C ? void 0 : C.moderated), B = (0, i.e7)([m.ZP], () => (null == z ? void 0 : z.id) != null ? m.ZP.getUsableCustomEmojiById(z.id) : null), R = (null == C ? void 0 : C.name) !== _ || (null == C ? void 0 : C.emojiId) !== (null == z ? void 0 : z.id) || (null == C ? void 0 : C.emojiName) !== (null == z ? void 0 : z.name) || E !== (null == C ? void 0 : C.moderated), T = () => {
     if (null != _ && R) {
       if (O) {
         p.Z.updateForumTag({
-          id: y.id,
+          id: C.id,
           name: _,
           emojiId: null == z ? void 0 : z.id,
           emojiName: null == z ? void 0 : z.name,
@@ -49,7 +49,7 @@ function g(e) {
         moderated: E
       }, f), g()
     }
-  }, S = e => {
+  }, Z = e => {
     null != e && I(null != e.id ? {
       id: e.id,
       name: e.name
@@ -57,12 +57,13 @@ function g(e) {
       id: void 0,
       name: e.optionallyDiverseSequence
     })
-  }, T = o.useCallback(e => P(e), []), D = o.useRef(null);
+  }, S = o.useCallback(e => P(e), []), D = o.useRef(null);
   return (0, c.ZP)(() => {
     null != D.current && D.current.focus()
   }), (0, l.jsxs)(r.Y0X, {
     transitionState: t,
     "aria-labelledby": N,
+    parentComponent: "CreateTagModal",
     children: [(0, l.jsx)(r.xBx, {
       separator: !1,
       children: (0, l.jsx)(r.X6q, {
@@ -79,7 +80,7 @@ function g(e) {
         children: [(0, l.jsx)("div", {
           className: h.emojiButtonContainer,
           children: (0, l.jsx)(r.yRy, {
-            targetElementRef: C,
+            targetElementRef: y,
             renderPopout: e => {
               let {
                 closePopout: n
@@ -92,7 +93,7 @@ function g(e) {
                     emoji: t,
                     willClose: l
                   } = e;
-                  S(t), l && n()
+                  Z(t), l && n()
                 },
                 pickerIntention: v.Hz.COMMUNITY_CONTENT,
                 onNavigateAway: g,
@@ -125,7 +126,7 @@ function g(e) {
                 }
                 return e
               }({}, e), o = o = {
-                ref: C,
+                ref: y,
                 onClick: n => {
                   var t;
                   null == (t = e.onClick) || t.call(e, n)
@@ -157,10 +158,10 @@ function g(e) {
           value: _,
           inputClassName: h.input,
           placeholder: b.intl.string(b.t["5vpeb2"]),
-          onChange: T,
+          onChange: S,
           autoFocus: !0,
           onKeyDown: e => {
-            e.keyCode === x.yXg.ENTER && _.length > 0 && (_.length > 0 && Z(), e.preventDefault())
+            e.keyCode === x.yXg.ENTER && _.length > 0 && (_.length > 0 && T(), e.preventDefault())
           }
         }), _.length > 0 || null != z ? (0, l.jsx)(r.zxk, {
           "aria-label": b.intl.string(b.t.o8lsHR),
@@ -181,7 +182,7 @@ function g(e) {
       type: r.XZJ.Types.INVERTED,
       size: 18,
       value: null != E && E,
-      onChange: (e, n) => w(n || (null == y ? void 0 : y.moderated) == null && void 0),
+      onChange: (e, n) => w(n || (null == C ? void 0 : C.moderated) == null && void 0),
       className: h.moderatedCheckbox,
       children: (0, l.jsx)(r.Text, {
         variant: "text-sm/normal",
@@ -198,7 +199,7 @@ function g(e) {
           },
           children: b.intl.string(b.t["ETE/oK"])
         }), (0, l.jsx)(r.zxk, {
-          onClick: Z,
+          onClick: T,
           disabled: 0 === _.length || !R,
           autoFocus: !0,
           children: b.intl.string(b.t.R3BPHx)
@@ -207,7 +208,7 @@ function g(e) {
         color: r.zxk.Colors.RED,
         look: r.zxk.Looks.LINK,
         onClick: () => {
-          O && (p.Z.deleteForumTag(f, y.id), g())
+          O && (p.Z.deleteForumTag(f, C.id), g())
         },
         children: b.intl.string(b.t.huYSMj)
       })]

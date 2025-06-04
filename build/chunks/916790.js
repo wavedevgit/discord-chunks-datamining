@@ -184,7 +184,7 @@ function I(e) {
     })]
   })
 }
-let k = [{
+let w = [{
     key: "action",
     cellClassName: N.actionColumn,
     render(e) {
@@ -207,7 +207,7 @@ let k = [{
       return "".concat(E(t.totalTime), " ms")
     }
   }],
-  w = {
+  k = {
     searchType: x.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -242,7 +242,7 @@ function R() {
     j = r.useCallback(e => {
       p(e)
     }, []);
-  (0, h.BO)(t, b ? c : o, j, w);
+  (0, h.BO)(t, b ? c : o, j, k);
   let y = r.useCallback(e => {
       m(o), f(e)
     }, [o]),
@@ -268,7 +268,7 @@ function R() {
         placeholder: "Search by action name"
       })]
     }), (0, a.jsx)(_.Z, {
-      columns: k,
+      columns: w,
       data: E,
       selectedRowKey: null == v ? void 0 : v.id.toString(),
       onClickRow: e => g(e.actionLog)

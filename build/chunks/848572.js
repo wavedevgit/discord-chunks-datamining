@@ -1,11 +1,11 @@
 /** Chunk was on 89839 **/
 n.d(t, {
   GG: () => E,
-  Rw: () => T,
+  Rw: () => P,
   SI: () => O,
   Vq: () => v,
-  a1: () => p,
-  kG: () => _,
+  a1: () => _,
+  kG: () => p,
   y3: () => N
 });
 var l, r = n(913527),
@@ -52,12 +52,12 @@ function f(e, t) {
 }
 var v = ((l = {}).UPCOMING = "upcoming", l.EARNED = "earned", l);
 
-function _() {
+function p() {
   let e = (0, i.e7)([d.default], () => d.default.getCurrentUser()),
     t = (0, m.l)(null == e ? void 0 : e.id);
   return null != t ? t : null
 }
-let p = e => (0, i.e7)([s.Z], () => {
+let _ = e => (0, i.e7)([s.Z], () => {
   if (null == e) return null;
   let t = s.Z.getUserProfile(e);
   return null == t ? void 0 : t.premiumSince
@@ -70,7 +70,7 @@ function E() {
       let e = c.ZP.getPremiumSubscription();
       return null != e && t ? e.premiumSince : null
     }, [t]),
-    l = p(null == e ? void 0 : e.id);
+    l = _(null == e ? void 0 : e.id);
   return null != n ? n : l
 }
 let N = () => {
@@ -90,11 +90,11 @@ let N = () => {
     }, null)
   },
   x = () => {
-    let e = _(),
+    let e = p(),
       t = (0, i.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription());
     return null == e || null == t || null == t.premiumSince ? null : (0, u.RZ)(e, t.premiumSince)
   },
-  P = () => {
+  T = () => {
     let e = E(),
       t = Object.values(g.vK);
     if (null == e || null == t) return null;
@@ -106,11 +106,11 @@ let N = () => {
       status: "upcoming"
     })
   },
-  T = () => {
+  P = () => {
     let e = (0, i.e7)([d.default], () => d.default.getCurrentUser()),
       t = O(null == e ? void 0 : e.id),
       n = x(),
-      l = P();
+      l = T();
     return null != t ? f(b({}, t), {
       earnedOnDate: n,
       status: "earned"

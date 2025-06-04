@@ -1,6 +1,6 @@
 /** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => P
+  Z: () => w
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -59,17 +59,17 @@ function E(e, t) {
   }), e
 }
 
-function P(e) {
+function w(e) {
   let {
     applicationId: t,
     commandId: l,
     guildId: x,
     inModal: j,
-    editedTargetPermissions: P,
+    editedTargetPermissions: w,
     originalApplicationPermissions: Z,
     originalCommandPermissions: k,
     selectedPermissionCount: A
-  } = e, D = (0, s.e7)([h.Z], () => null == l ? null : h.Z.getCommand(l), [l]), R = (null == D ? void 0 : D.defaultMemberPermissions) != null, L = (0, s.e7)([b.Z, m.ZP, g.Z], () => {
+  } = e, R = (0, s.e7)([h.Z], () => null == l ? null : h.Z.getCommand(l), [l]), D = (null == R ? void 0 : R.defaultMemberPermissions) != null, L = (0, s.e7)([b.Z, m.ZP, g.Z], () => {
     let e = b.Z.getGuild(x),
       t = m.ZP.getSelfMember(x);
     return null != e && null != t && (0, u.Ft)({
@@ -78,14 +78,14 @@ function P(e) {
       selfMember: t,
       applicationLevelPermissions: Z,
       commandLevelPermissions: k,
-      defaultMemberPermissions: null == D ? void 0 : D.defaultMemberPermissions
+      defaultMemberPermissions: null == R ? void 0 : R.defaultMemberPermissions
     })
-  }, [x, D, Z, k]), M = null != l ? l : t, [B, U] = i.useMemo(() => {
+  }, [x, R, Z, k]), M = null != l ? l : t, [B, U] = i.useMemo(() => {
     let e = {},
       t = {};
-    for (let [n, r] of Object.entries(P)) r.type === d.Kw.CHANNEL ? e[n] = r : t[n] = r;
+    for (let [n, r] of Object.entries(w)) r.type === d.Kw.CHANNEL ? e[n] = r : t[n] = r;
     return [e, t]
-  }, [P]), W = i.useCallback(e => {
+  }, [w]), W = i.useCallback(e => {
     let t = b.Z.getGuild(x),
       n = m.ZP.getSelfMember(x);
     return null != t && null != n && (null != l ? (0, u.Ft)({
@@ -94,17 +94,17 @@ function P(e) {
       selfMember: n,
       applicationLevelPermissions: Z,
       commandLevelPermissions: e,
-      defaultMemberPermissions: null == D ? void 0 : D.defaultMemberPermissions
+      defaultMemberPermissions: null == R ? void 0 : R.defaultMemberPermissions
     }) : (0, u.Ft)({
       PermissionStore: g.Z,
       guild: t,
       selfMember: n,
       applicationLevelPermissions: e
     }))
-  }, [x, D, l, Z]), z = i.useCallback((e, t) => {
+  }, [x, R, l, Z]), z = i.useCallback((e, t) => {
     let n, r = null;
     if (0 !== t.length) {
-      let e = P[t[0]];
+      let e = w[t[0]];
       if (e.type === d.Kw.USER) n = y.s.REMOVE_SELF;
       else {
         let t = e.id;
@@ -122,16 +122,16 @@ function P(e) {
         r = null != e ? e.name : "role"
       }
     }(0, y._)(n, r)
-  }, [x, P]), H = i.useCallback((e, n) => {
+  }, [x, w]), H = i.useCallback((e, n) => {
     let r = {};
-    for (let [e, t] of Object.entries(P)) r[e] = {
+    for (let [e, t] of Object.entries(w)) r[e] = {
       id: t.id,
       permission: t.permission,
       type: t.type
     };
     if (r = Object.assign(r, e), n.length > 0 && (r = o().omit(r, n)), !W(r)) return void z(e, n);
     f.W4(t, M, r)
-  }, [t, P, M, W, z]), G = i.useCallback(() => {
+  }, [t, w, M, W, z]), G = i.useCallback(() => {
     let e = Object.keys(B);
     return (0, c.ZDy)(async () => {
       let {
@@ -143,7 +143,7 @@ function P(e) {
         headerText: N.intl.string(N.t["i1c+kZ"]),
         hasMemberSearch: !1,
         overwrittenKeys: e,
-        search: w,
+        search: P,
         searchPlaceholderText: N.intl.string(N.t["TLQo/v"]),
         selectedPermissionCount: A
       }, n))
@@ -168,11 +168,11 @@ function P(e) {
   }, [H, x, U, A]), V = i.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
-    } = await n.e("21897").then(n.bind(n, 303313)), t = D.defaultMemberPermissions;
+    } = await n.e("21897").then(n.bind(n, 303313)), t = R.defaultMemberPermissions;
     return a.fS(t, u.BO) && (t = _.Plq.ADMINISTRATOR), n => (0, r.jsx)(e, E(S({}, n), {
       defaultMemberPermissions: t
     }))
-  }), [D]), K = A - C._n, q = K >= 0, Y = [{
+  }), [R]), K = A - C._n, q = K >= 0, Y = [{
     buttonClick: F,
     buttonText: N.intl.string(N.t["56jRn5"]),
     noneSelectedText: N.intl.string(N.t.C0rYfn),
@@ -191,7 +191,7 @@ function P(e) {
       children: N.intl.format(N.t["B/dFBA"], {
         removeCount: K
       })
-    }) : null, R ? (0, r.jsxs)("div", {
+    }) : null, D ? (0, r.jsxs)("div", {
       className: I.requiredPermissionsBanner,
       children: [(0, r.jsx)(c.d3s, {
         size: "sm",
@@ -242,7 +242,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function P(e) {
   let t = (0, x.w)(e);
   return E(S({}, t), {
     results: t.results.map(e => E(S({}, e), {

@@ -19,7 +19,7 @@ function d(n) {
     onAuthToken: u,
     onError: C,
     onClose: h
-  } = n, _ = t ? (0, o.jsx)("img", {
+  } = n, p = t ? (0, o.jsx)("img", {
     src: c,
     width: "168",
     height: "124",
@@ -29,7 +29,7 @@ function d(n) {
     width: "152",
     height: "123",
     alt: ""
-  }), p = t ? l.intl.string(l.t.tZ6ze3) : l.intl.string(l.t.siPkNj), x = t ? l.intl.string(l.t.VgWnwM) : l.intl.string(l.t.oS4NEB);
+  }), _ = t ? l.intl.string(l.t.tZ6ze3) : l.intl.string(l.t.siPkNj), x = t ? l.intl.string(l.t.VgWnwM) : l.intl.string(l.t.oS4NEB);
   return (0, o.jsx)(i.t, {
     platformType: s.ABu.CRUNCHYROLL,
     isWaitingForConnection: t,
@@ -38,8 +38,8 @@ function d(n) {
     onAuthToken: u,
     onError: C,
     onClose: h,
-    img: _,
-    title: p,
+    img: p,
+    title: _,
     body: x,
     redirectDestination: r.pY
   })

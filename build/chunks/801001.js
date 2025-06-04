@@ -15,8 +15,8 @@ var r = n(255367),
   h = n(984933),
   j = n(430824),
   x = n(823379),
-  v = n(402148),
-  p = n(570961),
+  p = n(402148),
+  v = n(570961),
   g = n(208665),
   f = n(460117),
   b = n(290511),
@@ -30,10 +30,10 @@ function y(e) {
     onSave: l,
     onDelete: j,
     option: x,
-    guild: v,
+    guild: p,
     prompt: y,
-    index: O
-  } = e, C = (0, u.Dt)(), S = (0, s.e7)([h.ZP], () => h.ZP.getDefaultChannel(v.id)), [P, _] = i.useState(() => {
+    index: k
+  } = e, C = (0, u.Dt)(), P = (0, s.e7)([h.ZP], () => h.ZP.getDefaultChannel(p.id)), [S, _] = i.useState(() => {
     var e;
     return null != (e = null == x ? void 0 : x.emoji) ? e : null
   }), [z, B] = i.useState(() => {
@@ -45,16 +45,17 @@ function y(e) {
   }), [Z, T] = i.useState(() => {
     var e;
     return new Set(null != (e = null == x ? void 0 : x.channelIds) ? e : [])
-  }), [R, L] = i.useState(() => {
+  }), [R, M] = i.useState(() => {
     var e;
     return new Set(null != (e = null == x ? void 0 : x.roleIds) ? e : [])
-  }), [M, H] = i.useState({}), D = i.useRef(null);
+  }), [L, H] = i.useState({}), D = i.useRef(null);
   return i.useLayoutEffect(() => {
     var e;
     return null == (e = D.current) ? void 0 : e.focus()
   }, []), (0, r.jsxs)(a.Y0X, {
     transitionState: t,
     "aria-labelledby": C,
+    parentComponent: "EditOnboardingPromptOptionModal",
     children: [(0, r.jsxs)("div", {
       className: I.container,
       children: [(0, r.jsx)(a.olH, {
@@ -65,7 +66,7 @@ function y(e) {
         variant: "text-xs/semibold",
         color: "text-muted",
         children: N.intl.format(N.t.yjS3zs, {
-          index: O + 1
+          index: k + 1
         })
       }), (0, r.jsx)(a.X6q, {
         id: C,
@@ -84,7 +85,7 @@ function y(e) {
         maxLength: b.NE,
         autoFocus: !0
       }), (0, r.jsx)(a.pdY, {
-        error: M.title
+        error: L.title
       }), (0, r.jsx)(a.oil, {
         className: I.descriptionInput,
         placeholder: N.intl.string(N.t.mIjgJC),
@@ -98,25 +99,25 @@ function y(e) {
         variant: "heading-md/semibold",
         children: N.intl.string(N.t.TtIbPD)
       }), (0, r.jsx)(c.Z, {
-        guildId: v.id,
+        guildId: p.id,
         selectedChannelIds: Z,
         placeholder: N.intl.string(N.t.vephiI),
         onChange: T,
         helperText: N.intl.string(N.t.SoT6wc),
         className: I.searchInput
       }), (0, r.jsx)(d.Z, {
-        guildId: v.id,
+        guildId: p.id,
         selectedRoleIds: R,
         disableEveryoneRole: !0,
         placeholder: N.intl.string(N.t.aFO1Iy),
-        onChange: L,
+        onChange: M,
         helperText: N.intl.string(N.t.Mbvpv7),
         className: I.searchInput,
         selectableRoleFilter: e => !e.managed
-      }), null == M.roles ? null : (0, r.jsx)(a.pdY, {
-        error: M.roles
-      }), (0, r.jsx)(k, {
-        guild: v,
+      }), null == L.roles ? null : (0, r.jsx)(a.pdY, {
+        error: L.roles
+      }), (0, r.jsx)(O, {
+        guild: p,
         roleIds: R
       }), (0, r.jsx)(m.Z, {
         className: I.divider
@@ -133,9 +134,9 @@ function y(e) {
             children: N.intl.string(N.t.Iv9RGh)
           })]
         }), (0, r.jsx)(f.Z, {
-          emoji: P,
+          emoji: S,
           setEmoji: _,
-          channel: S
+          channel: P
         })]
       })]
     }), (0, r.jsx)(a.mzw, {
@@ -169,14 +170,14 @@ function y(e) {
                   description: w,
                   channelIds: Array.from(Z).sort(),
                   roleIds: Array.from(R).sort(),
-                  emoji: null == P ? void 0 : P
+                  emoji: null == S ? void 0 : S
                 },
                 r = function(e, t, n, r) {
                   let i = {};
                   r.title.length <= 0 && (i.title = N.intl.string(N.t.p3PKzM));
-                  let l = (0, p.en)(e, t, n, r);
+                  let l = (0, v.en)(e, t, n, r);
                   return null != l && (i.roles = l), i
-                }(v, g.Z.editedOnboardingPrompts, y, t);
+                }(p, g.Z.editedOnboardingPrompts, y, t);
               H(r), o().isEmpty(r) && (l(t), n())
             },
             children: N.intl.string(N.t.R3BPHx)
@@ -187,11 +188,11 @@ function y(e) {
   })
 }
 
-function k(e) {
+function O(e) {
   let {
     guild: t,
     roleIds: n
-  } = e, i = (0, s.e7)([j.Z], () => j.Z.getRoles(t.id)), l = Array.from(n).map(e => i[e]).filter(x.lm).find(v.F);
+  } = e, i = (0, s.e7)([j.Z], () => j.Z.getRoles(t.id)), l = Array.from(n).map(e => i[e]).filter(x.lm).find(p.F);
   return null == l ? null : (0, r.jsx)("div", {
     className: I.notice,
     children: (0, r.jsxs)("div", {
@@ -205,7 +206,7 @@ function k(e) {
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: N.intl.format(N.t["5zPJER"], {
-          permissions: (0, v.i)(t, l).join(", ")
+          permissions: (0, p.i)(t, l).join(", ")
         })
       })]
     })

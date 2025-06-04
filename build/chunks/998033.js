@@ -1,6 +1,6 @@
 /** Chunk was on 63141 **/
 n.d(t, {
-  Z: () => _
+  Z: () => v
 });
 var i = n(255367);
 n(73800);
@@ -19,8 +19,8 @@ var r = n(13245),
   m = n(987650),
   y = n(388032);
 
-function _(e, t, n, _) {
-  var v;
+function v(e, t, n, v) {
+  var _;
   let {
     icon: O,
     title: b,
@@ -30,7 +30,7 @@ function _(e, t, n, _) {
     trackClick: S
   } = (0, f.R)(m.n0.TextChat, {
     notif_type: m.n0.TextChat,
-    notif_user_id: null == (v = t.author) ? void 0 : v.id,
+    notif_user_id: null == (_ = t.author) ? void 0 : _.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -49,7 +49,7 @@ function _(e, t, n, _) {
     }) : null,
     maxBodyLines: 2,
     onNotificationShow: () => {
-      _ && (0, a.GN)(c.Ay, c.yk), x()
+      v && (0, a.GN)(c.Ay, c.yk), x()
     },
     onNotificationClick: () => {
       if (s.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {

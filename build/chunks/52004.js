@@ -1,41 +1,42 @@
 /** Chunk was on 48748 **/
-n.d(i, {
+i.d(n, {
   default: () => d
 });
-var e = n(255367);
-n(73800);
-var l = n(442837),
-  s = n(481060),
-  a = n(812206),
-  r = n(600164),
-  c = n(63063),
-  o = n(981631),
-  m = n(388032),
-  p = n(981860);
+var e = i(255367);
+i(73800);
+var l = i(442837),
+  s = i(481060),
+  a = i(812206),
+  r = i(600164),
+  c = i(63063),
+  o = i(981631),
+  m = i(388032),
+  p = i(981860);
 let x = c.Z.getArticleURL(o.BhN.MISSING_ENTITLEMENT),
   d = l.ZP.connectStores([a.Z], t => {
     let {
-      applicationId: i
+      applicationId: n
     } = t;
     return {
-      application: a.Z.getApplication(i)
+      application: a.Z.getApplication(n)
     }
   })(function(t) {
     let {
-      application: i,
-      transitionState: n,
+      application: n,
+      transitionState: i,
       onClose: l
     } = t;
     return (0, e.jsxs)(s.Y0X, {
-      transitionState: n,
+      transitionState: i,
       size: s.CgR.MEDIUM,
+      parentComponent: "MissingEntitlementModal",
       children: [(0, e.jsxs)(s.xBx, {
         align: r.Z.Align.CENTER,
         justify: r.Z.Justify.BETWEEN,
         children: [(0, e.jsx)(s.vwX, {
           tag: s.RB0.H4,
-          children: null != i ? m.intl.formatToPlainString(m.t.N2mILi, {
-            applicationName: i.name
+          children: null != n ? m.intl.formatToPlainString(m.t.N2mILi, {
+            applicationName: n.name
           }) : m.intl.string(m.t.nS8PUV)
         }), (0, e.jsx)(s.olH, {
           onClick: l
@@ -46,8 +47,8 @@ let x = c.Z.getArticleURL(o.BhN.MISSING_ENTITLEMENT),
         }), (0, e.jsx)(s.Text, {
           className: p.text,
           variant: "text-md/normal",
-          children: null != i ? m.intl.format(m.t["MM/7q6"], {
-            applicationName: i.name,
+          children: null != n ? m.intl.format(m.t["MM/7q6"], {
+            applicationName: n.name,
             supportArticleURL: x
           }) : m.intl.format(m.t.IfQUx8, {
             supportArticleURL: x

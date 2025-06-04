@@ -137,6 +137,7 @@ function p(e) {
     "aria-labelledby": v
   }, p), n = n = {
     size: a.CgR.SMALL,
+    parentComponent: "StageChannelSettingsModal",
     children: (0, r.jsxs)(a.MyZ, {
       activeSlide: C,
       width: 440,

@@ -17,8 +17,8 @@ function c(e) {
     expectedCallbackState: c,
     onAuthToken: d,
     onError: u,
-    onClose: f
-  } = e, p = t ? (0, o.jsx)("img", {
+    onClose: p
+  } = e, f = t ? (0, o.jsx)("img", {
     src: l.Z,
     width: "231",
     height: "172",
@@ -36,8 +36,8 @@ function c(e) {
     expectedCallbackState: c,
     onAuthToken: d,
     onError: u,
-    onClose: f,
-    img: p,
+    onClose: p,
+    img: f,
     title: b,
     body: x
   })

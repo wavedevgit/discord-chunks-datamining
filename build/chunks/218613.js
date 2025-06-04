@@ -795,6 +795,7 @@ class eo extends s.PureComponent {
       className: et.modal,
       "aria-labelledby": this.headerId,
       size: m.CgR.DYNAMIC,
+      parentComponent: "CreateChannel",
       children: (0, i.jsx)("form", {
         onSubmit: this.handleSubmit,
         children: this.renderSlides()

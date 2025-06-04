@@ -1,6 +1,6 @@
 /** Chunk was on 65652 **/
 t.d(n, {
-  Z: () => N
+  Z: () => p
 }), t(953529), t(388685);
 var i = t(255367),
   s = t(73800),
@@ -17,28 +17,28 @@ var i = t(255367),
   _ = t(67164),
   C = t(91463);
 
-function N(e) {
+function p(e) {
   let {
     className: n,
     isDsaEligible: t,
-    onClose: N,
-    onNext: p,
+    onClose: p,
+    onNext: N,
     onBack: g
   } = e, j = (0, l.e7)([d.Z], () => d.Z.getAppealClassificationId()), {
     classification: I
-  } = (0, m.YG)(null != j ? j : u.lds), k = (0, x.c7)(null == I ? void 0 : I.description), E = (0, l.e7)([d.Z], () => d.Z.getIsSubmitting()), T = (0, l.e7)([d.Z], () => d.Z.getAppealSignal()), f = (0, l.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [S, v] = s.useState(!1), [A, L] = s.useState(""), Z = s.useCallback(e => {
+  } = (0, m.YG)(null != j ? j : u.lds), k = (0, x.c7)(null == I ? void 0 : I.description), E = (0, l.e7)([d.Z], () => d.Z.getIsSubmitting()), T = (0, l.e7)([d.Z], () => d.Z.getAppealSignal()), f = (0, l.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [S, A] = s.useState(!1), [v, L] = s.useState(""), Z = s.useCallback(e => {
     r.Z.dispatch({
       type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
       userInput: e
     })
   }, []), b = s.useCallback(async () => {
     if (null !== j) try {
-      L(""), await c.uR(j, T, f), null == p || p()
+      L(""), await c.uR(j, T, f), null == N || N()
     } catch (n) {
       var e;
       L((0, x.Zs)(null == (e = n.body) ? void 0 : e.code))
     }
-  }, [j, T, f, p]);
+  }, [j, T, f, N]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(a.xBx, {
       direction: o.Z.Direction.VERTICAL,
@@ -53,9 +53,9 @@ function N(e) {
         color: "header-secondary",
         variant: "text-md/normal",
         children: h.intl.string(h.t["G2g/g4"])
-      }), null != N && (0, i.jsx)(a.olH, {
+      }), null != p && (0, i.jsx)(a.olH, {
         className: C.closeButton,
-        onClick: N
+        onClick: p
       })]
     }), (0, i.jsxs)(a.hzk, {
       className: n,
@@ -73,7 +73,7 @@ function N(e) {
       }), t && (0, i.jsx)("div", {
         className: _.anchorContainer,
         children: (0, i.jsx)(a.eee, {
-          onClick: () => v(e => !e),
+          onClick: () => A(e => !e),
           children: (0, i.jsx)(a.X6q, {
             variant: "heading-md/normal",
             color: "text-link",
@@ -100,11 +100,11 @@ function N(e) {
       })]
     }), (0, i.jsxs)(a.mzw, {
       direction: o.Z.Direction.VERTICAL,
-      children: ["" !== A && (0, i.jsx)(a.Text, {
+      children: ["" !== v && (0, i.jsx)(a.Text, {
         className: _.errorText,
         variant: "text-lg/normal",
         color: "text-danger",
-        children: A
+        children: v
       }), (0, i.jsxs)("div", {
         className: _.buttonContainer,
         children: [(0, i.jsx)(a.zxk, {

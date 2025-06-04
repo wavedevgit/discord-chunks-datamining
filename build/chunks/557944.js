@@ -1,29 +1,29 @@
 /** Chunk was on 44900 **/
-l.d(t, {
+n.d(t, {
   default: () => j
-}), l(35282), l(388685);
-var n = l(255367),
-  r = l(73800),
-  i = l(120356),
-  s = l.n(i),
-  a = l(512722),
-  o = l.n(a),
-  c = l(442837),
-  d = l(481060),
-  u = l(749210),
-  h = l(600164),
-  b = l(218867),
-  m = l(430824),
-  x = l(399860),
-  p = l(335049),
-  f = l(689079),
-  k = l(388032),
-  g = l(969957);
+}), n(35282), n(388685);
+var r = n(255367),
+  l = n(73800),
+  i = n(120356),
+  s = n.n(i),
+  a = n(512722),
+  o = n.n(a),
+  c = n(442837),
+  d = n(481060),
+  u = n(749210),
+  h = n(600164),
+  m = n(218867),
+  b = n(430824),
+  p = n(399860),
+  x = n(335049),
+  f = n(689079),
+  k = n(388032),
+  g = n(969957);
 
 function j(e) {
   let {
     editPermissions: t,
-    guildId: l,
+    guildId: n,
     hasMemberSearch: i,
     headerText: a,
     onClose: j,
@@ -32,103 +32,104 @@ function j(e) {
     searchPlaceholderText: _,
     selectedPermissionCount: E,
     transitionState: w
-  } = e, v = (0, c.e7)([m.Z], () => m.Z.getGuild(l), [l]);
+  } = e, v = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]);
   o()(null != v, "");
-  let [O, I] = r.useState(null), {
+  let [O, I] = l.useState(null), {
     query: N,
     results: Z,
     setQuery: z
-  } = C(l), [T, D] = r.useState({}), M = r.useMemo(() => Object.keys(T).length, [T]), S = M + E >= f._n, B = r.useMemo(() => Z.filter(e => {
-    let t = (0, x.rE)(e.id, e.type);
+  } = C(n), [M, T] = l.useState({}), D = l.useMemo(() => Object.keys(M).length, [M]), S = D + E >= f._n, B = l.useMemo(() => Z.filter(e => {
+    let t = (0, p.rE)(e.id, e.type);
     return !y.includes(t)
-  }), [y, Z]), X = r.useCallback((e, t) => {
-    D(l => {
-      let n = (0, x.rE)(e, t),
-        r = function(e) {
+  }), [y, Z]), P = l.useCallback((e, t) => {
+    T(n => {
+      let r = (0, p.rE)(e, t),
+        l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var l = null != arguments[t] ? arguments[t] : {},
-              n = Object.keys(l);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(l, e).enumerable
-            }))), n.forEach(function(t) {
-              var n;
-              n = l[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = n
+              }) : e[t] = r
             })
           }
           return e
-        }({}, l);
-      return n in l ? delete r[n] : S || (r[n] = {
+        }({}, n);
+      return r in n ? delete l[r] : S || (l[r] = {
         id: e,
         permission: !0,
         type: t
-      }), r
+      }), l
     })
-  }, [S, D]), q = r.useCallback(() => {
-    t(T, []), j()
-  }, [t, j, T]);
-  r.useEffect(() => () => clearTimeout(O), [O]);
-  let P = r.useCallback(e => {
+  }, [S, T]), X = l.useCallback(() => {
+    t(M, []), j()
+  }, [t, j, M]);
+  l.useEffect(() => () => clearTimeout(O), [O]);
+  let q = l.useCallback(e => {
       z(e), i && I(t => (clearTimeout(t), 0 === e.length) ? null : setTimeout(() => {
-        u.Z.requestMembers(l, e, 200, !1)
+        u.Z.requestMembers(n, e, 200, !1)
       }, 500))
-    }, [l, i, z, I]),
-    R = r.useCallback(e => {
+    }, [n, i, z, I]),
+    R = l.useCallback(e => {
       let t = B[e],
-        l = (0, x.rE)(t.id, t.type),
-        r = l in T,
-        i = S && !r;
-      return (0, n.jsx)("div", {
+        n = (0, p.rE)(t.id, t.type),
+        l = n in M,
+        i = S && !l;
+      return (0, r.jsx)("div", {
         className: g.item,
-        children: (0, n.jsx)(d.XZJ, {
+        children: (0, r.jsx)(d.XZJ, {
           type: d.XZJ.Types.INVERTED,
           className: s()({
             [g.checkboxItemDisabled]: i
           }),
           disabled: i,
-          value: r,
-          onChange: () => X(t.id, t.type),
-          children: (0, n.jsx)(p.Z, {
+          value: l,
+          onChange: () => P(t.id, t.type),
+          children: (0, r.jsx)(x.Z, {
             guild: v,
             id: t.id,
             type: t.type,
             isLocked: !1
           })
         })
-      }, l)
-    }, [B, v, S, X, T]);
-  return r.useEffect(() => {
-    u.Z.requestMembers(l, void 0, 200, !1)
-  }, [l]), (0, n.jsxs)(d.Y0X, {
+      }, n)
+    }, [B, v, S, P, M]);
+  return l.useEffect(() => {
+    u.Z.requestMembers(n, void 0, 200, !1)
+  }, [n]), (0, r.jsxs)(d.Y0X, {
     "aria-label": k.intl.string(k.t["N+InBQ"]),
     transitionState: w,
-    children: [(0, n.jsxs)(d.xBx, {
+    parentComponent: "AddPermissionsModal",
+    children: [(0, r.jsxs)(d.xBx, {
       separator: !1,
       direction: h.Z.Direction.VERTICAL,
-      children: [(0, n.jsx)(d.X6q, {
+      children: [(0, r.jsx)(d.X6q, {
         variant: "heading-xl/semibold",
         className: g.header,
         children: a
-      }), S ? (0, n.jsx)(d.X6q, {
+      }), S ? (0, r.jsx)(d.X6q, {
         variant: "heading-sm/medium",
         color: "text-danger",
         children: k.intl.string(k.t.XTwtW1)
       }) : null]
-    }), (0, n.jsxs)(d.hzk, {
+    }), (0, r.jsxs)(d.hzk, {
       className: g.modalContent,
-      children: [(0, n.jsx)(d.E1j, {
+      children: [(0, r.jsx)(d.E1j, {
         className: g.searchBar,
         query: N,
         placeholder: _,
         "aria-label": _,
-        onChange: P,
+        onChange: q,
         onClear: () => z(""),
         size: d.E1j.Sizes.MEDIUM
-      }), (0, n.jsx)(b.Z, {
+      }), (0, r.jsx)(m.Z, {
         role: "listbox",
         renderRow: R,
         rowCount: B.length,
@@ -136,13 +137,13 @@ function j(e) {
         rowHeight: 36,
         className: g.__invalid_list
       })]
-    }), (0, n.jsxs)(d.mzw, {
-      children: [(0, n.jsx)(d.zxk, {
+    }), (0, r.jsxs)(d.mzw, {
+      children: [(0, r.jsx)(d.zxk, {
         type: "submit",
-        onClick: q,
-        disabled: 0 === M,
+        onClick: X,
+        disabled: 0 === D,
         children: k.intl.string(k.t.OYkgVl)
-      }), (0, n.jsx)(d.zxk, {
+      }), (0, r.jsx)(d.zxk, {
         onClick: j,
         look: d.zxk.Looks.LINK,
         color: d.zxk.Colors.PRIMARY,

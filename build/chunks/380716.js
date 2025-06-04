@@ -104,11 +104,11 @@ function w(e) {
   var n, l, a, b, y;
   let {
     transitionState: w,
-    onClose: Z,
-    guildId: M,
+    onClose: M,
+    guildId: Z,
     action: L,
-    onSave: D,
-    onDelete: A
+    onSave: A,
+    onDelete: D
   } = e, G = (0, m.Dt)(), R = i.useRef(null), U = i.useRef(null), [B] = i.useState(function(e) {
     if (null == e) return null;
     let n = x.Z.getChannel(e.channelId);
@@ -144,10 +144,10 @@ function w(e) {
         icon: null != et ? et : null
       },
       n = ei !== er || en !== eo;
-    D(e, null != ei ? ei : null, n), Z()
-  }, [D, Z, K, $, H, en, et, ei, er, eo]), ed = i.useCallback(() => {
-    null == A || A(), Z()
-  }, [A, Z]), em = i.useCallback(e => {
+    A(e, null != ei ? ei : null, n), M()
+  }, [A, M, K, $, H, en, et, ei, er, eo]), ed = i.useCallback(() => {
+    null == D || D(), M()
+  }, [D, M]), em = i.useCallback(e => {
     Q(e), V(z({
       channelId: null == H ? void 0 : H.value,
       title: e,
@@ -171,13 +171,13 @@ function w(e) {
       actionType: null == e ? void 0 : e.value,
       emoji: null != en ? en : void 0
     }))
-  }, [ee, V, H, K, en]), ev = i.useCallback(e => Promise.resolve(g.ZP.getSelectableChannels(M).filter(n => !J.has(n.channel.id) && (0, p.kb)(n.channel) && r()(e, n.channel.name)).map(e => ({
+  }, [ee, V, H, K, en]), ev = i.useCallback(e => Promise.resolve(g.ZP.getSelectableChannels(Z).filter(n => !J.has(n.channel.id) && (0, p.kb)(n.channel) && r()(e, n.channel.name)).map(e => ({
     value: e.channel.id,
     label: e.channel.name
-  }))), [M, J]), ex = i.useCallback(e => {
-    if (null == e || null == M) return null;
+  }))), [Z, J]), ex = i.useCallback(e => {
+    if (null == e || null == Z) return null;
     let n = x.Z.getChannel(e.value),
-      l = j.Z.getGuild(M);
+      l = j.Z.getGuild(Z);
     if (null == n || null == l) return null;
     let i = (0, d.KS)(n, l);
     return null == i ? null : (0, t.jsx)(i, {
@@ -185,7 +185,7 @@ function w(e) {
       color: "customColor",
       className: O.channelIcon
     })
-  }, [M]), eg = i.useCallback(function(e) {
+  }, [Z]), eg = i.useCallback(function(e) {
     let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
     el(n), ea(e)
   }, []), ej = i.useCallback(() => null != ei ? ei : null, [ei, en])(), ef = i.useCallback(e => {
@@ -241,11 +241,12 @@ function w(e) {
   }), (0, t.jsxs)(s.Y0X, {
     transitionState: w,
     "aria-labelledby": G,
+    parentComponent: "NewMemberActionModal",
     children: [(0, t.jsxs)("div", {
       className: O.container,
       children: [(0, t.jsx)(s.olH, {
         className: O.closeButton,
-        onClick: Z
+        onClick: M
       }), (0, t.jsxs)("div", {
         className: O.formGroup,
         children: [(0, t.jsxs)(s.X6q, {
@@ -404,7 +405,7 @@ function w(e) {
         }) : (0, t.jsx)("div", {}), (0, t.jsxs)("div", {
           className: O.rightButtons,
           children: [(0, t.jsx)(s.zxk, {
-            onClick: Z,
+            onClick: M,
             size: s.zxk.Sizes.SMALL,
             look: s.zxk.Looks.LINK,
             color: s.zxk.Colors.PRIMARY,

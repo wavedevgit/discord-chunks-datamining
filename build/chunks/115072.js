@@ -8,8 +8,8 @@ var i = n(255367),
   a = n(442837),
   o = n(544891),
   s = n(481060),
-  c = n(53281),
-  u = n(476326),
+  u = n(53281),
+  c = n(476326),
   d = n(304761),
   m = n(273031),
   h = n(859235),
@@ -33,7 +33,7 @@ function w(e) {
   let {
     transitionState: E,
     onClose: k
-  } = e, D = r.useRef(null), T = r.useRef(null), [W, N] = r.useState(""), [A, R] = r.useState(""), [L, I] = r.useState(), [Z, z] = r.useState(""), [J, M] = r.useState([]), [q, V] = r.useState(), [B, G] = r.useState(), [H, X] = r.useState(!1), [U, Y] = r.useState(""), [K, F] = r.useState(function(e) {
+  } = e, D = r.useRef(null), T = r.useRef(null), [W, N] = r.useState(""), [A, R] = r.useState(""), [L, I] = r.useState(), [Z, z] = r.useState(""), [M, J] = r.useState([]), [q, B] = r.useState(), [V, G] = r.useState(), [H, X] = r.useState(!1), [U, Y] = r.useState(""), [K, F] = r.useState(function(e) {
     switch (e) {
       case "windows":
         return "Windows";
@@ -43,7 +43,7 @@ function w(e) {
         return "Linux"
     }
     return ""
-  }((0, j.getOS)())), [Q, $] = r.useState(""), [ee, et] = r.useState(""), [en, ei] = r.useState(""), [er, el] = r.useState(""), [ea, eo] = r.useState(!1), [es, ec] = r.useState(!1), [eu, ed] = r.useState(!1), [em, eh] = r.useState(null);
+  }((0, j.getOS)())), [Q, $] = r.useState(""), [ee, et] = r.useState(""), [en, ei] = r.useState(""), [er, el] = r.useState(""), [ea, eo] = r.useState(!1), [es, eu] = r.useState(!1), [ec, ed] = r.useState(!1), [em, eh] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -53,8 +53,8 @@ function w(e) {
       },
       rejectWithError: !0
     }).then(e => {
-      if (null != e.body && "354db65bcbfaf1bb1310caeeccf0baea1ef5a948" !== e.body.hash) {
-        let e = new Date("1749077310514"),
+      if (null != e.body && "daba8e218f06187f82181c0d48f9a7e05806d811" !== e.body.hash) {
+        let e = new Date("1749078911161"),
           t = new Date,
           n = (0, g.TD)(t, e);
         n.hours > 6 && eh(n.hours)
@@ -73,14 +73,14 @@ function w(e) {
       null == k || k()
     },
     ev = e => {
-      M(J.filter(t => t.id !== e))
+      J(M.filter(t => t.id !== e))
     };
   async function eg() {
     var e, t;
     if (ed(!1), "" === W || "" === A || null == L) return void eo(!0);
-    let r = null == q || null == (e = q.features) ? void 0 : e.find(e => (0, y.pD)(e) === B);
-    ec(!0), eo(!1);
-    let l = (0, b.D)(J.map(e => {
+    let r = null == q || null == (e = q.features) ? void 0 : e.find(e => (0, y.pD)(e) === V);
+    eu(!0), eo(!1);
+    let l = (0, b.D)(M.map(e => {
         let {
           item: t
         } = e;
@@ -104,7 +104,7 @@ function w(e) {
       } : {
         overridePlatformInformation: H
       }, l).catch(() => ed(!0));
-    ec(!1), null != a && a.ok ? (ef && window.open(a.body.permalink_url, "_blank"), ex(), (0, s.ZDy)(async () => {
+    eu(!1), null != a && a.ok ? (ef && window.open(a.body.permalink_url, "_blank"), ex(), (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
@@ -144,33 +144,34 @@ function w(e) {
   }
   r.useEffect(() => {
     async function e() {
-      V(await (0, y.WG)())
+      B(await (0, y.WG)())
     }
     ef && e()
   }, [ef]), r.useEffect(() => {
-    if (J.length > 0) {
+    if (M.length > 0) {
       var e;
       null == (e = T.current) || e.scrollIntoView({
         behavior: "smooth",
         block: "end"
       })
     }
-  }, [J]);
+  }, [M]);
   let ej = r.useCallback(e => {
     let t = Array.from(e.clipboardData.files).filter(e => e.type.startsWith("image/")).at(0);
-    void 0 === t || J.some(e => {
+    void 0 === t || M.some(e => {
       var n;
       return e.filename === t.name && (null == (n = e.item.file) ? void 0 : n.size) === t.size
-    }) || M([...J, new u.ZP({
+    }) || J([...M, new c.ZP({
       id: (0, l.Z)(),
       file: t,
-      platform: u.ow.WEB
+      platform: c.ow.WEB
     })])
-  }, [J]);
+  }, [M]);
   return (0, i.jsxs)(s.Y0X, {
     transitionState: E,
     "aria-label": O.intl.string(O.t.mCCdws),
     size: s.CgR.MEDIUM,
+    parentComponent: "BugReporterModal",
     children: [(0, i.jsx)(s.xBx, {
       children: (0, i.jsx)(s.X6q, {
         variant: "heading-lg/semibold",
@@ -268,7 +269,7 @@ function w(e) {
           }), ef && (0, i.jsx)(s.xJW, {
             title: O.intl.string(O.t["77VVd3"]),
             children: (0, i.jsx)(s.VcW, {
-              value: B,
+              value: V,
               options: null != (C = null == q || null == (P = q.features) || null == (w = P.filter(e => "" !== (0, y.pD)(e))) || null == (t = w.map(e => {
                 var t;
                 return {
@@ -340,25 +341,25 @@ function w(e) {
             })]
           }) : null, (0, i.jsxs)(s.zxk, {
             color: s.zxk.Colors.PRIMARY,
-            children: [O.intl.string(O.t.HVxmOD), (0, i.jsx)(c.Z, {
+            children: [O.intl.string(O.t.HVxmOD), (0, i.jsx)(u.Z, {
               ref: D,
               onChange: e => {
                 var t, n;
-                (null == (n = e.currentTarget) || null == (t = n.files) ? void 0 : t[0]) != null && M([...J, ...Array.from(e.currentTarget.files).map(e => new u.ZP({
+                (null == (n = e.currentTarget) || null == (t = n.files) ? void 0 : t[0]) != null && J([...M, ...Array.from(e.currentTarget.files).map(e => new c.ZP({
                   id: (0, l.Z)(),
                   file: e,
-                  platform: u.ow.WEB
+                  platform: c.ow.WEB
                 }))])
               },
               multiple: !0
             })]
-          }), J.length > 0 ? (0, i.jsxs)(s.hjN, {
+          }), M.length > 0 ? (0, i.jsxs)(s.hjN, {
             children: [(0, i.jsx)(s.vwX, {
               children: "Preview"
             }), (0, i.jsx)("div", {
               ref: T,
               className: S.attachments,
-              children: J.length > 0 && J.map(e => (0, i.jsxs)("div", {
+              children: M.length > 0 && M.map(e => (0, i.jsxs)("div", {
                 className: S.attachment,
                 children: [(0, i.jsxs)("div", {
                   children: [(0, i.jsx)(f.r, {
@@ -385,7 +386,7 @@ function w(e) {
                 })]
               }, e.id))
             })]
-          }) : null, eu ? (0, i.jsx)(s.Text, {
+          }) : null, ec ? (0, i.jsx)(s.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
             children: "Something went wrong, try again!"

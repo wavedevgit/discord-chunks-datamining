@@ -16,8 +16,8 @@ var i, r = n(255367),
   g = n(872810),
   m = n(586902),
   y = n(835473),
-  _ = n(933557),
-  v = n(600164),
+  v = n(933557),
+  _ = n(600164),
   O = n(118012),
   b = n(594190),
   E = n(925329),
@@ -105,9 +105,9 @@ function es(e) {
     context: f,
     guildId: g,
     voiceState: y
-  } = e, _ = (0, Q.Z)({
+  } = e, v = (0, Q.Z)({
     location: "overlay_voice_widget"
-  }), v = (0, a.e7)([G.default], () => G.default.showKeybindIndicators), O = (0, a.e7)([A.default], () => A.default.getId()), b = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), S = (0, m.Z)({
+  }), _ = (0, a.e7)([G.default], () => G.default.showKeybindIndicators), O = (0, a.e7)([A.default], () => A.default.getId()), b = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), S = (0, m.Z)({
     userId: i.id,
     context: f
   }), C = (0, a.e7)([W.Z], () => W.Z.isPrioritySpeaker(i.id, f)), j = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), Z = o.useMemo(() => null != E && E.ownerId !== i.id && x.includes(i.id), [E, i.id, x]);
@@ -120,7 +120,7 @@ function es(e) {
       deaf: T,
       selfDeaf: k
     } = y,
-    L = _ && v,
+    L = v && _,
     M = N && (!I || !L);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(D.ZP, {
@@ -286,9 +286,9 @@ class el extends(i = o.PureComponent) {
             game: s
           }) : (0, r.jsx)(C.Z, {
             title: h
-          }), (0, r.jsxs)(v.Z, {
-            direction: v.Z.Direction.VERTICAL,
-            justify: v.Z.Justify.BETWEEN,
+          }), (0, r.jsxs)(_.Z, {
+            direction: _.Z.Direction.VERTICAL,
+            justify: _.Z.Justify.BETWEEN,
             className: en.streamerInfo,
             children: [(0, r.jsx)(u.Text, {
               className: en.streaming,
@@ -298,7 +298,7 @@ class el extends(i = o.PureComponent) {
               children: null != (e = null == c ? void 0 : c.name) ? e : p
             })]
           })]
-        }), (0, r.jsxs)(v.Z, {
+        }), (0, r.jsxs)(_.Z, {
           grow: 0,
           children: [(0, r.jsx)("div", {
             className: en.streamerIconWrapper,
@@ -436,7 +436,7 @@ class el extends(i = o.PureComponent) {
 function ea(e) {
   var t;
   let n = (0, a.e7)([V.Z, L.Z], () => L.Z.getChannel(V.Z.getVoiceChannelId())),
-    i = (0, _.ZP)(n),
+    i = (0, v.ZP)(n),
     s = function() {
       let [e] = (0, a.e7)([U.ZP, N.Z, V.Z, L.Z], () => {
         let e = L.Z.getChannel(V.Z.getVoiceChannelId());

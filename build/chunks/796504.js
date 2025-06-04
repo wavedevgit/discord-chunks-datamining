@@ -34,6 +34,7 @@ function f(e) {
     transitionState: f,
     size: o.CgR.SMALL,
     "aria-label": b,
+    parentComponent: "EULA",
     children: [(0, n.jsxs)(o.xBx, {
       justify: i.Z.Justify.BETWEEN,
       children: [(0, n.jsx)(o.X6q, {

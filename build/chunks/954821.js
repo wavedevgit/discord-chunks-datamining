@@ -59,6 +59,7 @@ let _ = e => {
       transitionState: n,
       className: b.__invalid_modal,
       "aria-labelledby": C,
+      parentComponent: "CancelSubscriptionModal",
       children: [(0, i.jsxs)("div", {
         children: [(0, i.jsx)("img", {
           src: O,

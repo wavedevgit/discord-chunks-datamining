@@ -116,11 +116,11 @@ let _ = "MULTIPLE_CHOICE",
       let l = C.indexOf(e),
         r = [...C];
       null != t && t !== l && (r.splice(l, 1), r.splice(t, 0, e), y(r)), n ? null !== t && k(null) : t !== O && k(t)
-    }, w = e => {
+    }, E = e => {
       null != v && I(null);
       let t = [...C.slice(0, e), ...C.slice(e + 1)];
       y(0 === t.length ? [""] : t)
-    }, E = async () => {
+    }, w = async () => {
       null != v && I(null);
       let e = _.trim();
       if ("" === e) return void I(h.intl.string(h.t["G+TI4+"]));
@@ -157,7 +157,7 @@ let _ = "MULTIPLE_CHOICE",
     }({}, e), a = a = {
       errorText: v,
       title: h.intl.string(h.t.ooKh3t),
-      onConfirm: E,
+      onConfirm: w,
       onCancel: m,
       children: [(0, l.jsx)(d.oil, {
         autoFocus: !0,
@@ -175,7 +175,7 @@ let _ = "MULTIPLE_CHOICE",
         choice: e,
         index: t,
         onChange: e => N(e, t),
-        onClear: () => w(t),
+        onClear: () => E(t),
         onReorder: z,
         isDropHovered: t === O
       }, "choice-".concat(t))), C.length !== g.mb && (0, l.jsx)("div", {

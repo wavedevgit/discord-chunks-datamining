@@ -6,8 +6,8 @@ var i = n(255367),
   r = n(73800),
   s = n(921738),
   o = n.n(s),
-  l = n(213005),
-  a = n(455279),
+  a = n(213005),
+  l = n(455279),
   c = n(358085),
   d = n(998502),
   u = n(981631);
@@ -42,7 +42,7 @@ class b extends r.PureComponent {
     } = this.state, {
       onChange: n
     } = this.props;
-    t === a.c.RECORDING && (null != n && n(e), this.setState({
+    t === l.c.RECORDING && (null != n && n(e), this.setState({
       codes: e
     }))
   }
@@ -54,7 +54,7 @@ class b extends r.PureComponent {
       {
         disabled: s
       } = this.props;
-    return p ? (t = d.ZP.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : c.isPlatformEmbedded || (e = this.handleComboKeys), (0, i.jsx)(a.Z, {
+    return p ? (t = d.ZP.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : c.isPlatformEmbedded || (e = this.handleComboKeys), (0, i.jsx)(l.Z, {
       disabled: s,
       value: n,
       mode: r,
@@ -66,15 +66,15 @@ class b extends r.PureComponent {
   }
   constructor(e) {
     super(e), h(this, "_input", void 0), h(this, "gs", void 0), h(this, "_mounted", !1), h(this, "recordStart", () => {
-      c.isPlatformEmbedded && !p && (this.gs = new l.Z, this.gs.on("change", this.handleGSChange)), this.setState({
-        mode: a.c.RECORDING
+      c.isPlatformEmbedded && !p && (this.gs = new a.Z, this.gs.on("change", this.handleGSChange)), this.setState({
+        mode: l.c.RECORDING
       })
     }), h(this, "recordEnd", () => {
       this.cleanUp(), this.setState({
-        mode: a.c.DEFAULT
+        mode: l.c.DEFAULT
       })
     }), h(this, "toggleRecordMode", () => {
-      this.state.mode === a.c.DEFAULT ? this.recordStart() : this.recordEnd()
+      this.state.mode === l.c.DEFAULT ? this.recordStart() : this.recordEnd()
     }), h(this, "handleComboKeys", (e, t, n) => {
       if (n.preventDefault(), "keydown" === n.type) {
         let e = t.map(e => [u.MoX.KEYBOARD_KEY, o()(e), u.CgE.BROWSER]),
@@ -98,7 +98,7 @@ class b extends r.PureComponent {
     } = e;
     this.state = {
       codes: t,
-      mode: a.c.DEFAULT
+      mode: l.c.DEFAULT
     }
   }
 }

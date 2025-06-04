@@ -1,6 +1,6 @@
 /** Chunk was on 63141 **/
 n.d(t, {
-  Z: () => _
+  Z: () => v
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -63,6 +63,6 @@ class y extends r.PureComponent {
     }) : this[t] = n
   }
 }
-let _ = o.ZP.connectStores([c.default], () => ({
+let v = o.ZP.connectStores([c.default], () => ({
   opacity: c.default.getTextWidgetOpacity()
 }))(y)

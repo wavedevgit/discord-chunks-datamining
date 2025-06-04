@@ -18,13 +18,14 @@ let p = e => {
     transitionState: t,
     onClose: n,
     classificationId: p,
-    source: h
-  } = e, f = (0, r.Z)(), g = () => {
+    source: f
+  } = e, h = (0, r.Z)(), g = () => {
     n(), l.Z.open(s.oAB.ACCOUNT, c.s6.PRIVACY_AND_SAFETY_STANDING)
   };
   return (0, i.jsxs)(a.Y0X, {
     className: u.modalRoot,
     transitionState: t,
+    parentComponent: "ClassificationDetailModal",
     children: [(0, i.jsxs)("div", {
       className: u.modalHeader,
       children: [(0, i.jsx)("img", {
@@ -37,9 +38,9 @@ let p = e => {
       })]
     }), (0, i.jsx)(a.hzk, {
       className: u.modalContent,
-      children: f ? (0, i.jsx)(a.$jN, {}) : (0, i.jsx)(o.Z, {
+      children: h ? (0, i.jsx)(a.$jN, {}) : (0, i.jsx)(o.Z, {
         classificationId: p,
-        source: h,
+        source: f,
         onError: g,
         onClose: g
       })

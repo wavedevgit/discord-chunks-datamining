@@ -153,6 +153,7 @@ function S(e) {
     transitionState: t,
     size: d.CgR.DYNAMIC,
     className: y.modalRoot,
+    parentComponent: "GuildRoleSubscriptionsTierTemplateModal",
     children: [(0, a.jsx)(d.P3F, {
       onClick: L,
       className: y.closeButton,

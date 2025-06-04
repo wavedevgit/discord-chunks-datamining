@@ -1,6 +1,6 @@
 /** Chunk was on 83264 **/
 r.d(t, {
-  default: () => z
+  default: () => C
 }), r(388685);
 var n = r(255367),
   s = r(73800),
@@ -197,6 +197,7 @@ class S extends s.Component {
     return (0, n.jsxs)(a.Y0X, {
       size: null == e ? a.CgR.MEDIUM : a.CgR.SMALL,
       transitionState: t,
+      parentComponent: "HouseSelectionModal",
       children: [(0, n.jsx)(a.xBx, {
         separator: !1,
         children: (0, n.jsx)(a.X6q, {
@@ -283,4 +284,4 @@ class S extends s.Component {
     })
   }
 }
-let z = S
+let C = S

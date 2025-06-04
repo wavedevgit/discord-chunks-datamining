@@ -23,8 +23,8 @@ function y(e) {
     keybind: n
   } = e, o = r.useRef(null), p = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), y = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
   if ((0, a.e7)([f.Z], () => f.Z.isNotificationDisabled(u.OverlayNotificationDisabledSetting.TEXT_CHAT)) || y === g._vf.DISABLED) return null;
-  let v = p.filter(e => !t || e.status !== g._1z.TIMED_OUT),
-    O = (0, l.groupBy)(v, e => e.type);
+  let _ = p.filter(e => !t || e.status !== g._1z.TIMED_OUT),
+    O = (0, l.groupBy)(_, e => e.type);
   return (0, i.jsx)(h.Z, {
     contentDomRef: o,
     observeInterval: 200,
@@ -33,7 +33,7 @@ function y(e) {
       className: s()(m.container, m[y]),
       children: Object.entries(O).map(e => {
         let [r, o] = e;
-        return 0 === o.length ? null : (0, i.jsx)(_, {
+        return 0 === o.length ? null : (0, i.jsx)(v, {
           locked: t,
           keybind: n,
           position: y,
@@ -44,7 +44,7 @@ function y(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     notification: t,
     position: n,

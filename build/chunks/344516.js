@@ -121,11 +121,11 @@ function D(e) {
       vadAutoThreshold: p.Z.getModeOptions(n).autoThreshold,
       delay: p.Z.getModeOptions(n).delay
     })),
-    W = (0, g.Z)(),
-    I = (0, m.Z)(),
-    S = a().first(W),
-    F = null != S && S.disabled,
-    k = a().first(I),
+    S = (0, g.Z)(),
+    W = (0, m.Z)(),
+    I = a().first(S),
+    F = null != I && I.disabled,
+    k = a().first(W),
     R = null != k && k.disabled,
     w = [{
       value: V.pM4.VOICE_ACTIVITY,
@@ -177,7 +177,7 @@ function D(e) {
         onChange: e => d.Z.setInputDevice(e, {
           location: "Voice Settings"
         }),
-        options: a().map(W, e => {
+        options: a().map(S, e => {
           let {
             id: t,
             name: n
@@ -207,7 +207,7 @@ function D(e) {
         onChange: e => d.Z.setOutputDevice(e, {
           location: "Voice Settings"
         }),
-        options: a().map(I, e => {
+        options: a().map(W, e => {
           let {
             id: t,
             name: n
@@ -254,6 +254,7 @@ function O(e) {
   }), (0, i.jsxs)(o.Y0X, {
     transitionState: e.transitionState,
     "aria-label": v.intl.string(v.t.NiTd0d),
+    parentComponent: "VoiceSettingsModal",
     children: [(0, i.jsxs)(o.xBx, {
       children: [(0, i.jsxs)(u.Z.Child, {
         children: [(0, i.jsx)(o.vwX, {

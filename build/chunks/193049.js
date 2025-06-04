@@ -11,8 +11,8 @@ var n = r(255367),
   c = r(481060),
   u = r(232567),
   d = r(809206),
-  g = r(479531),
-  m = r(484459),
+  m = r(479531),
+  g = r(484459),
   f = r(594174),
   E = r(626135),
   O = r(51144),
@@ -136,7 +136,7 @@ function A(e) {
         global_name: J.globalName
       }), W(v.Wq.EDIT_USERNAME)
     } catch (t) {
-      let e = new g.Z(t).getAnyErrorMessage();
+      let e = new m.Z(t).getAnyErrorMessage();
       E.default.track(P.rMx.POMELO_ERRORS, {
         reason: e,
         display_name_error: !0,
@@ -151,7 +151,7 @@ function A(e) {
         username: (0, y.R_)(J.username)
       }, M), await (0, u.In)(X.id), W(v.Wq.PREVIEW)
     } catch (r) {
-      let e = new g.Z(r),
+      let e = new m.Z(r),
         t = (null == e ? void 0 : e.status) != null && e.status >= 400 && e.status < 500 ? e.getAnyErrorMessage() : I.intl.string(I.t.R0RpRU);
       U(t), E.default.track(P.rMx.POMELO_ERRORS, {
         reason: t,
@@ -178,10 +178,10 @@ function A(e) {
       handleRemindMeLater: ea,
       onClose: A
     }, R, Q, z)
-  }, [el, ea, eu, A, et, L, R, Q, z]), eg = i.useMemo(() => (0, y.zV)(X), [X]);
+  }, [el, ea, eu, A, et, L, R, Q, z]), em = i.useMemo(() => (0, y.zV)(X), [X]);
   return i.useLayoutEffect(() => {
-    (0, m.Z)(X.id, eg)
-  }, [X, eg]), i.useEffect(() => {
+    (0, g.Z)(X.id, em)
+  }, [X, em]), i.useEffect(() => {
     var e, t;
     switch (G) {
       case v.Wq.EDIT_DISPLAY_NAME:
@@ -205,6 +205,7 @@ function A(e) {
     },
     transitionState: o,
     size: c.CgR.DYNAMIC,
+    parentComponent: "PomeloModal",
     children: [(0, n.jsx)(c.zxk, {
       onClick: () => {
         Y && (L === T.A.SUGGESTIONS || L === T.A.EDIT_SCREEN) ? k(T.A.FINISH_LATER) : A()

@@ -1,7 +1,7 @@
 /** Chunk was on 79764 **/
 n.d(t, {
-  G: () => g,
-  Z: () => p
+  G: () => p,
+  Z: () => g
 }), n(388685);
 var i = n(255367),
   s = n(73800),
@@ -17,12 +17,12 @@ var i = n(255367),
   C = n(388032),
   h = n(685554);
 
-function g(e) {
+function p(e) {
   var t;
   let {
     guildTemplate: n,
-    onClose: g,
-    onBack: p,
+    onClose: p,
+    onBack: g,
     onHubGuildInfoSet: f,
     onGuildCreated: _,
     isSlideReady: j,
@@ -48,7 +48,7 @@ function g(e) {
         S(!1)
       }
     }, [n, f, N, y, L, O, _]),
-    w = (0, i.jsxs)(i.Fragment, {
+    G = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(l.zxk, {
         color: l.zxk.Colors.BRAND,
         onClick: D,
@@ -59,7 +59,7 @@ function g(e) {
         className: h.backButton,
         look: l.zxk.Looks.BLANK,
         size: l.zxk.Sizes.MIN,
-        onClick: p,
+        onClick: g,
         children: C.intl.string(C.t["13/7kZ"])
       })]
     });
@@ -78,9 +78,9 @@ function g(e) {
           color: "header-secondary",
           variant: "text-md/normal",
           children: C.intl.string(C.t.AAfVqa)
-        }), null != g && (0, i.jsx)(l.olH, {
+        }), null != p && (0, i.jsx)(l.olH, {
           className: h.closeButton,
-          onClick: g
+          onClick: p
         })]
       }), (0, i.jsxs)(l.hzk, {
         className: h.createGuild,
@@ -132,16 +132,16 @@ function g(e) {
         })]
       }), b && (0, i.jsx)(l.mzw, {
         justify: o.Z.Justify.BETWEEN,
-        children: w
+        children: G
       })]
     }),
-    footer: w
+    footer: G
   }
 }
 
-function p(e) {
+function g(e) {
   let {
     content: t
-  } = g(e);
+  } = p(e);
   return t
 }

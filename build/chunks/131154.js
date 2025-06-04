@@ -1,33 +1,33 @@
 /** Chunk was on 84722 **/
-i.d(n, {
+t.d(n, {
   Z: () => o
 });
-var t = i(255367);
-i(73800);
-var l = i(120356),
-  a = i.n(l),
-  r = i(481060),
-  s = i(388032),
-  c = i(449774);
+var i = t(255367);
+t(73800);
+var l = t(120356),
+  a = t.n(l),
+  r = t(481060),
+  s = t(388032),
+  c = t(449774);
 
 function o(e) {
   let {
     guild: n,
-    speakers: i,
+    speakers: t,
     speakerCount: l,
     className: o
-  } = e, u = i.slice(0, 5), d = u.map(e => {
-    var i, l;
-    return (0, t.jsxs)("div", {
+  } = e, u = t.slice(0, 5), d = u.map(e => {
+    var t, l;
+    return (0, i.jsxs)("div", {
       className: c.speakerContainer,
-      children: [(0, t.jsx)(r.qEK, {
-        src: null == e || null == (i = e.user) ? void 0 : i.getAvatarURL(n.id, 20),
+      children: [(0, i.jsx)(r.qEK, {
+        src: null == e || null == (t = e.user) ? void 0 : t.getAvatarURL(n.id, 20),
         size: r.EFr.SIZE_20,
         className: c.avatar,
         "aria-label": "".concat(null == e ? void 0 : e.userNick, "-avatar")
-      }), (0, t.jsx)("div", {
+      }), (0, i.jsx)("div", {
         className: c.textInGridContainer,
-        children: (0, t.jsx)(r.Text, {
+        children: (0, i.jsx)(r.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
           className: c.textInGrid,
@@ -36,18 +36,18 @@ function o(e) {
       })]
     }, null == e || null == (l = e.user) ? void 0 : l.id)
   }), h = l - u.length;
-  return (0, t.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: a()(c.grid, o),
-    children: [d, h > 0 && (0, t.jsxs)("div", {
+    children: [d, h > 0 && (0, i.jsxs)("div", {
       className: c.speakerContainer,
-      children: [(0, t.jsx)("div", {
+      children: [(0, i.jsx)("div", {
         className: c.iconMicrophone,
-        children: (0, t.jsx)(r.S6n, {
+        children: (0, i.jsx)(r.S6n, {
           size: "custom",
           color: "currentColor",
           height: 12
         })
-      }), (0, t.jsx)(r.Text, {
+      }), (0, i.jsx)(r.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         className: c.textInGrid,

@@ -331,6 +331,7 @@ function U(e) {
     transitionState: t,
     size: o.CgR.DYNAMIC,
     className: R.modal,
+    parentComponent: "SelectImageModal",
     children: [(0, r.jsxs)(o.xBx, {
       className: R.modalHeader,
       separator: !1,

@@ -57,6 +57,7 @@ let m = function(e) {
   }, [m, g.id, n]), (0, i.jsx)(s.Y0X, {
     transitionState: p,
     "aria-labelledby": b,
+    parentComponent: "OutboundPromotionRedemptionModal",
     children: null != h ? (0, i.jsx)(u, {
       onClose: t
     }) : null == m ? (0, i.jsx)(s.hzk, {

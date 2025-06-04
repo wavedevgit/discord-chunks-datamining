@@ -15,8 +15,8 @@ var r = n(255367),
   f = n(657682),
   h = n(981631),
   b = n(420212),
-  g = n(388032),
-  m = n(28898),
+  m = n(388032),
+  g = n(28898),
   y = n(20493);
 
 function x(e) {
@@ -84,13 +84,13 @@ function E(e, t) {
 
 function w(e) {
   let {
-    placeholder: t = g.intl.string(g.t["Rn/sLi"])
+    placeholder: t = m.intl.string(m.t["Rn/sLi"])
   } = e, n = i.useRef(null), s = i.useRef(null), [l, o] = i.useReducer(E, v), {
     canSend: x,
     hint: R,
     success: w,
     error: T
-  } = l, k = (0, p.Q3)("AddFriendInput");
+  } = l, C = (0, p.Q3)("AddFriendInput");
   return i.useEffect(() => {
     null != w && (u()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
   }, [w, n]), (0, r.jsxs)("form", {
@@ -110,7 +110,7 @@ function w(e) {
         }
       }).then(() => o({
         type: "SUCCESS",
-        text: g.intl.format(g.t.Rtl1Eh, {
+        text: m.intl.format(m.t.Rtl1Eh, {
           discordTag: t
         })
       }), e => {
@@ -123,34 +123,34 @@ function w(e) {
     },
     autoComplete: "off",
     children: [(0, r.jsxs)("div", {
-      className: m.addFriendWumpusWrapper,
+      className: g.addFriendWumpusWrapper,
       children: [(0, r.jsx)(c.R94, {
         id: _,
         type: c.R94.Types.DESCRIPTION,
         children: (0, r.jsx)(c.Text, {
           tag: "div",
           variant: "heading-md/normal",
-          children: g.intl.string(g.t["Rn/sLi"])
+          children: m.intl.string(m.t["Rn/sLi"])
         })
-      }), k ? (0, r.jsx)("img", {
+      }), C ? (0, r.jsx)("img", {
         src: j,
         alt: "Wumpus Waving"
       }) : null]
     }), (0, r.jsx)(c.tEY, {
       focusTarget: n,
       ringTarget: s,
-      ringClassName: m.ring,
+      ringClassName: g.ring,
       children: (0, r.jsxs)("div", {
         ref: s,
-        className: a()(m.addFriendInputWrapper, {
-          [m.success]: w,
-          [m.error]: T
+        className: a()(g.addFriendInputWrapper, {
+          [g.success]: w,
+          [g.error]: T
         }),
         children: [(0, r.jsx)(c.oil, {
           id: O,
           inputRef: n,
-          className: m.addFriendInput,
-          inputClassName: m.input,
+          className: g.addFriendInput,
+          inputClassName: g.input,
           onKeyPress: e => {
             let t = e.currentTarget.value;
             if (e.key !== b.mR.Enter && t.includes("#")) {
@@ -185,14 +185,14 @@ function w(e) {
           "aria-invalid": null != T || void 0,
           "aria-describedby": null != T ? S : _
         }), null != R && (0, r.jsx)("div", {
-          className: m.addFriendHint,
+          className: g.addFriendHint,
           "aria-hidden": !0,
           children: R
         }), (0, r.jsx)(c.zxk, {
           size: c.zxk.Sizes.SMALL,
           disabled: !x,
           type: "submit",
-          children: g.intl.string(g.t["PMsq/f"])
+          children: m.intl.string(m.t["PMsq/f"])
         })]
       })
     }), null != T && (0, r.jsx)(c.R94, {

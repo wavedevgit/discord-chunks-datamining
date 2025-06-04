@@ -15,9 +15,9 @@ function u(e) {
   let {
     onContinue: t,
     onClose: n
-  } = e, u = s.Z.getArticleURL(l.BhN.XBOX_CONNECTION), f = c.intl.format(c.t.CIc3IC, {
+  } = e, u = s.Z.getArticleURL(l.BhN.XBOX_CONNECTION), p = c.intl.format(c.t.CIc3IC, {
     helpdeskArticleUrl: u
-  }), p = r.useMemo(() => [{
+  }), f = r.useMemo(() => [{
     label: c.intl.string(c.t.ihQXsb),
     icon: i.gj8
   }, {
@@ -34,7 +34,7 @@ function u(e) {
     platformType: l.ABu.XBOX,
     headerConnect: c.intl.string(c.t.m8aaho),
     headerReconnect: c.intl.string(c.t.z3rAho),
-    body: f,
+    body: p,
     onClose: n,
     onContinue: t,
     img: (0, o.jsx)("img", {
@@ -43,6 +43,6 @@ function u(e) {
       height: 160,
       alt: ""
     }),
-    valueProps: p
+    valueProps: f
   })
 }

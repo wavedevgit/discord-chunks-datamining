@@ -33,6 +33,7 @@ function C(t) {
   }, [e, N]), (0, s.jsxs)(l.Y0X, {
     transitionState: C,
     size: l.CgR.DYNAMIC,
+    parentComponent: "AppDirectoryUpsellModal",
     children: [(0, s.jsxs)(l.hzk, {
       className: _.modalContent,
       children: [(0, s.jsx)(l.Fmz, {

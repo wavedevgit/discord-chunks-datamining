@@ -5,8 +5,8 @@ n.d(t, {
 var r, s = n(255367);
 n(73800);
 var i = n(481060),
-  c = n(600164),
-  o = n(390668),
+  o = n(600164),
+  c = n(390668),
   a = ((r = a || {}).UPGRADE = "UPGRADE", r.CANCEL = "CANCEL", r.UNVERIFIED = "UNVERIFIED", r.UNCLAIMED = "UNCLAIMED", r.GRANDFATHERED = "GRANDFATHERED", r);
 let l = {
     UPGRADE: "imageUpgrade",
@@ -19,7 +19,7 @@ let l = {
     var t, n, {
         children: r
       } = e,
-      c = function(e, t) {
+      o = function(e, t) {
         if (null == e) return {};
         var n, r, s = function(e, t) {
           if (null == e) return {};
@@ -51,7 +51,8 @@ let l = {
         })
       }
       return e
-    }({}, c), n = n = {
+    }({}, o), n = n = {
+      parentComponent: "PremiumModal",
       children: r
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -70,13 +71,13 @@ u.Header = e => {
     onClose: n
   } = e;
   return (0, s.jsxs)(i.xBx, {
-    justify: c.Z.Justify.BETWEEN,
+    justify: o.Z.Justify.BETWEEN,
     separator: !1,
     children: [(0, s.jsx)(i.vwX, {
       tag: i.RB0.H4,
       children: t
     }), null != n ? (0, s.jsx)(i.olH, {
-      className: o.__invalid_closeIcon,
+      className: c.__invalid_closeIcon,
       onClick: n
     }) : null]
   })
@@ -87,9 +88,9 @@ u.Header = e => {
   } = e;
   return (0, s.jsxs)(i.hzk, {
     children: [(0, s.jsx)("div", {
-      className: o[l[n]]
+      className: c[l[n]]
     }), (0, s.jsx)("div", {
-      className: o.message,
+      className: c.message,
       children: t
     })]
   })
@@ -100,12 +101,12 @@ u.Header = e => {
     secondary: r
   } = e;
   return (0, s.jsx)(i.mzw, {
-    children: (0, s.jsxs)(c.Z, {
-      justify: c.Z.Justify.END,
+    children: (0, s.jsxs)(o.Z, {
+      justify: o.Z.Justify.END,
       children: [null != r ? (0, s.jsx)(i.zxk, {
         onClick: r.onClick,
         look: i.zxk.Looks.LINK,
-        innerClassName: o.secondaryButton,
+        innerClassName: c.secondaryButton,
         children: r.label
       }) : null, null != t ? (0, s.jsx)(i.zxk, {
         onClick: t.onClick,

@@ -11,8 +11,8 @@ var r = n(255367),
   a = n(630759),
   d = n(301107),
   u = n(785792),
-  h = n(190054),
-  f = n(245581),
+  f = n(190054),
+  h = n(245581),
   p = n(760373),
   m = n(388032),
   b = n(268999);
@@ -33,7 +33,7 @@ let j = function(e) {
       channelId: j
     })
   }, [j]);
-  return (0, r.jsxs)(f.Z, {
+  return (0, r.jsxs)(h.Z, {
     transitionState: t,
     title: m.intl.string(m.t.QogHlZ),
     subtitle: m.intl.string(m.t.qODBkZ),
@@ -45,7 +45,7 @@ let j = function(e) {
           variant: "text-sm/bold",
           color: "header-primary",
           children: m.intl.string(m.t.cgBTyM)
-        }), null != y && (0, r.jsx)(h.H, {
+        }), null != y && (0, r.jsx)(f.H, {
           className: b.copyIcon,
           chunks: y,
           color: i.TVs.colors.INTERACTIVE_NORMAL,

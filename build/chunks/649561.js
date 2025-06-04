@@ -17,8 +17,8 @@ var i = n(255367),
   g = n(797614),
   m = n(593481),
   y = n(703656),
-  _ = n(254761),
-  v = n(70956),
+  v = n(254761),
+  _ = n(70956),
   O = n(960048),
   b = n(145597),
   E = n(692546),
@@ -36,7 +36,7 @@ function I(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let P = 10 * v.Z.Millis.SECOND;
+let P = 10 * _.Z.Millis.SECOND;
 
 function N() {
   let e = (0, b.getPID)(),
@@ -84,7 +84,7 @@ class w extends r.PureComponent {
           onClick: e => e.stopPropagation(),
           children: [(0, i.jsx)(m.ZP, {
             expand: !0,
-            icon: (0, i.jsx)(_.Z, {
+            icon: (0, i.jsx)(v.Z, {
               width: 40,
               height: 40,
               className: Z.notificationIcon

@@ -33,8 +33,8 @@ let x = e => {
   var o, r, x, A, F, N, {
       daysLeft: E,
       premiumType: k,
-      premiumSubscription: Z,
-      analyticsSource: U
+      premiumSubscription: U,
+      analyticsSource: Z
     } = e,
     M = function(e, o) {
       if (null == e) return {};
@@ -56,25 +56,25 @@ let x = e => {
     {
       analyticsLocations: D
     } = (0, d.ZP)(_.Z.PREMIUM_UNCANCEL_MODAL),
-    Y = (0, i.e7)([m.Z], () => (null == Z ? void 0 : Z.paymentSourceId) != null ? m.Z.getPaymentSource(Z.paymentSourceId) : null, [Z]),
-    G = Z.items[0].planId,
+    Y = (0, i.e7)([m.Z], () => (null == U ? void 0 : U.paymentSourceId) != null ? m.Z.getPaymentSource(U.paymentSourceId) : null, [U]),
+    G = U.items[0].planId,
     W = (0, y.Wz)(T.GP[G].skuId),
     {
       priceOptions: K
     } = (0, p.Z)({
       activeSubscription: null,
       skuIDs: [W],
-      paymentSourceId: null == Z ? void 0 : Z.paymentSourceId,
+      paymentSourceId: null == U ? void 0 : U.paymentSourceId,
       isGift: !1
     }),
     [V] = (0, P.ED)({
-      subscriptionId: Z.id,
+      subscriptionId: U.id,
       items: [{
         planId: G,
         quantity: 1
       }],
       renewal: !0,
-      paymentSourceId: null == Z ? void 0 : Z.paymentSourceId,
+      paymentSourceId: null == U ? void 0 : U.paymentSourceId,
       currency: K.currency,
       analyticsLocations: (0, d.ZP)(_.Z.PREMIUM_UNCANCEL_MODAL),
       analyticsLocation: _.Z.PREMIUM_UNCANCEL_MODAL
@@ -93,9 +93,9 @@ let x = e => {
   return n.useEffect(() => {
     b.default.track(j.rMx.OPEN_MODAL, {
       type: "Premium Uncancel Winback",
-      source: U
+      source: Z
     })
-  }, [U]), (0, t.jsx)(a.Y0X, (o = function(e) {
+  }, [Z]), (0, t.jsx)(a.Y0X, (o = function(e) {
     for (var o = 1; o < arguments.length; o++) {
       var r = null != arguments[o] ? arguments[o] : {},
         t = Object.keys(r);
@@ -114,6 +114,7 @@ let x = e => {
     return e
   }({}, M), r = r = {
     className: w.modal,
+    parentComponent: "UncancelModalWhatYouLose",
     children: z ? (0, t.jsxs)(t.Fragment, {
       children: [(0, t.jsx)(L.Z, {
         premiumType: k,
@@ -168,9 +169,9 @@ let x = e => {
           children: [(0, t.jsx)(a.zxk, {
             disabled: H,
             onClick: () => {
-              if (null != Z) {
-                let e = (0, h.tD)(G, Z.currency, null == Y ? void 0 : Y.id);
-                null != Y && Y.id === Z.paymentSourceId && e ? (c.O5(Z, D, j.Sbl.UNCANCEL_WINBACK_MODAL), R(!0)) : (M.onClose(), (0, f.Z)({
+              if (null != U) {
+                let e = (0, h.tD)(G, U.currency, null == Y ? void 0 : Y.id);
+                null != Y && Y.id === U.paymentSourceId && e ? (c.O5(U, D, j.Sbl.UNCANCEL_WINBACK_MODAL), R(!0)) : (M.onClose(), (0, f.Z)({
                   initialPlanId: G,
                   analyticsLocations: D,
                   analyticsLocation: j.Sbl.UNCANCEL_WINBACK_MODAL

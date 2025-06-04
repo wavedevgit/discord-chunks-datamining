@@ -2,8 +2,8 @@
 n.d(t, {
   default: () => p
 }), n(388685), n(953529);
-var r = n(255367),
-  a = n(73800),
+var a = n(255367),
+  r = n(73800),
   i = n(442837),
   s = n(379649),
   o = n(481060),
@@ -23,15 +23,15 @@ function p(e) {
     transitionState: n,
     clientSettingType: p,
     gameId: v
-  } = e, [k, j] = a.useState("unreported"), [C, b] = a.useState(""), [N, f] = a.useState(!1), [y, R] = a.useState(!1), [S, z] = a.useState(!1), [I, w] = a.useState(!1), A = (0, i.e7)([u.Z, d.ZP], () => {
+  } = e, [k, C] = r.useState("unreported"), [j, b] = r.useState(""), [y, N] = r.useState(!1), [f, R] = r.useState(!1), [S, z] = r.useState(!1), [I, w] = r.useState(!1), M = (0, i.e7)([u.Z, d.ZP], () => {
     var e;
     let t = null != v ? v : null == (e = d.ZP.getCurrentGameForAnalytics()) ? void 0 : e.id;
     return null == t ? null : u.Z.getDetectableGame(t)
-  }), M = (0, i.e7)([_.default], () => {
+  }), A = (0, i.e7)([_.default], () => {
     var e;
     let t = null != (e = null === _.default || void 0 === _.default ? void 0 : _.default.getMostRecentOverlayRenderMethod()) ? e : void 0;
     return null != t ? l.gl[t] : void 0
-  }), P = a.useMemo(() => {
+  }), P = r.useMemo(() => {
     let e = {
       not_working: h.t.CHXHFR,
       not_useful: h.t.a95skZ,
@@ -47,59 +47,60 @@ function p(e) {
       value: t
     }))
   }, []), B = async () => {
-    if ("unreported" === k && 0 === C.length) {
+    if ("unreported" === k && 0 === j.length) {
       z(!0), await (0, s._v)(100), z(!1), w(!0);
       return
     }
-    f(!0), await m.default.track(x.rMx.OVERLAY_DISABLED_SURVEY, {
+    N(!0), await m.default.track(x.rMx.OVERLAY_DISABLED_SURVEY, {
       reason: k,
-      comment: C,
+      comment: j,
       client_setting_type: p,
-      application_id: null == A ? void 0 : A.id,
-      application_name: null == A ? void 0 : A.name,
-      most_recent_overlay_render_method: M
-    }), await (0, s._v)(1e3), f(!1), R(!0), await (0, s._v)(1500), t()
+      application_id: null == M ? void 0 : M.id,
+      application_name: null == M ? void 0 : M.name,
+      most_recent_overlay_render_method: A
+    }), await (0, s._v)(1e3), N(!1), R(!0), await (0, s._v)(1500), t()
   };
   return (0, c.ZP)(() => {
     m.default.track(x.rMx.OPEN_MODAL, {
       type: "overlay_disabled_questionnaire_modal"
     })
-  }), (0, r.jsxs)(o.Y0X, {
+  }), (0, a.jsxs)(o.Y0X, {
     transitionState: n,
     "aria-label": h.intl.string(h.t.bomhnZ),
     size: o.CgR.DYNAMIC,
     className: g.root,
-    children: [(0, r.jsxs)(o.xBx, {
-      children: [(0, r.jsxs)("div", {
+    parentComponent: "OverlayDisabledSurveyModal",
+    children: [(0, a.jsxs)(o.xBx, {
+      children: [(0, a.jsxs)("div", {
         className: g.header,
-        children: [(0, r.jsx)(o.X6q, {
+        children: [(0, a.jsx)(o.X6q, {
           variant: "heading-lg/semibold",
           color: "header-primary",
           children: h.intl.string(h.t["9JKzxc"])
-        }), (0, r.jsx)(o.Text, {
+        }), (0, a.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
           className: g.description,
           children: h.intl.string(h.t["2yjnmZ"])
         })]
-      }), (0, r.jsx)(o.olH, {
+      }), (0, a.jsx)(o.olH, {
         onClick: t,
         className: g.closeButton
       })]
-    }), (0, r.jsx)(o.hzk, {
+    }), (0, a.jsx)(o.hzk, {
       className: g.reasonContainer,
-      children: (0, r.jsxs)(o.Ttm, {
-        children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsx)(o.UkV, {
+      children: (0, a.jsxs)(o.Ttm, {
+        children: [(0, a.jsxs)("div", {
+          children: [(0, a.jsx)(o.UkV, {
             isShaking: S,
             intensity: 1,
             className: g.radioHeader,
-            children: (0, r.jsx)(o.Text, {
+            children: (0, a.jsx)(o.Text, {
               variant: "text-sm/semibold",
               color: I ? "text-danger" : "text-muted",
               children: h.intl.string(h.t.yhUvdX)
             })
-          }), (0, r.jsx)(o.FXm, {
+          }), (0, a.jsx)(o.FXm, {
             value: k,
             radioItemClassName: g.radioItem,
             className: g.radioGroup,
@@ -109,19 +110,19 @@ function p(e) {
               let {
                 value: t
               } = e;
-              j(t), w(!1), z(!1)
+              C(t), w(!1), z(!1)
             }
           })]
-        }), (0, r.jsxs)("div", {
+        }), (0, a.jsxs)("div", {
           className: g.commentContainer,
-          children: [(0, r.jsx)(o.Text, {
+          children: [(0, a.jsx)(o.Text, {
             variant: "text-sm/semibold",
             color: "text-muted",
             className: g.commentHeader,
             children: h.intl.string(h.t.LYnrhY)
-          }), (0, r.jsx)(o.Kx8, {
+          }), (0, a.jsx)(o.Kx8, {
             autosize: !0,
-            value: C,
+            value: j,
             maxLength: 1e3,
             showRemainingCharacterCount: !1,
             placeholder: h.intl.string(h.t["gU+bVF"]),
@@ -129,25 +130,25 @@ function p(e) {
           })]
         })]
       })
-    }), (0, r.jsxs)(o.mzw, {
+    }), (0, a.jsxs)(o.mzw, {
       className: g.buttons,
-      children: [(0, r.jsx)(o.zxk, {
-        disabled: N,
+      children: [(0, a.jsx)(o.zxk, {
+        disabled: y,
         onClick: () => {
           t()
         },
         color: o.zxk.Colors.PRIMARY,
         children: h.intl.string(h.t["5WxrcX"])
-      }), (0, r.jsx)(o.UkV, {
+      }), (0, a.jsx)(o.UkV, {
         isShaking: S,
         intensity: 1,
-        children: (0, r.jsx)(o.zxk, {
-          disabled: N,
-          submitting: N,
+        children: (0, a.jsx)(o.zxk, {
+          disabled: y,
+          submitting: y,
           onClick: B,
           color: (() => {
             switch (!0) {
-              case y:
+              case f:
                 return o.zxk.Colors.GREEN;
               case S:
                 return o.zxk.Colors.PRIMARY;
@@ -157,10 +158,10 @@ function p(e) {
           })(),
           children: (() => {
             switch (!0) {
+              case f:
+                return (0, a.jsx)(o.kmB, {});
               case y:
-                return (0, r.jsx)(o.kmB, {});
-              case N:
-                return (0, r.jsx)(o.$jN, {
+                return (0, a.jsx)(o.$jN, {
                   type: o.RAz.PULSING_ELLIPSIS
                 });
               default:

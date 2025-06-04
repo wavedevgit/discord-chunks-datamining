@@ -7,8 +7,8 @@ var r = n(255367),
   a = n(481060),
   i = n(870246),
   s = n(604857),
-  c = n(17622),
-  l = n(418630),
+  l = n(17622),
+  c = n(418630),
   u = n(942570);
 
 function d(e) {
@@ -51,29 +51,30 @@ function d(e) {
     }
     return e
   }({
-    className: l.modal,
+    className: c.modal,
     size: a.CgR.DYNAMIC
   }, b), n = n = {
+    parentComponent: "GuildPowerupLevelModal",
     children: [(0, r.jsxs)(a.hzk, {
-      className: l.modalContentContainer,
+      className: c.modalContentContainer,
       scrollbarType: "none",
       children: [(0, r.jsx)("img", {
         alt: "",
         src: u,
-        className: l.boostImage
+        className: c.boostImage
       }), (0, r.jsxs)("div", {
-        className: l.contentContainer,
+        className: c.contentContainer,
         children: [(0, r.jsx)(a.X6q, {
           variant: "heading-xl/extrabold",
           children: p.title
-        }), (0, r.jsx)(c.Z, {
+        }), (0, r.jsx)(l.Z, {
           powerup: p
         }), null != m && (0, r.jsx)(a.Text, {
           color: "status-danger",
           variant: "text-sm/semibold",
           children: m
         }), (0, r.jsx)(s.Z, {
-          className: l.footer,
+          className: c.footer,
           guildId: d,
           powerup: p,
           onError: O,
@@ -81,7 +82,7 @@ function d(e) {
         })]
       })]
     }), (0, r.jsx)(a.olH, {
-      className: l.close,
+      className: c.close,
       onClick: f
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

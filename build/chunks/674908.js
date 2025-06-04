@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => N
 }), n(388685);
-var r = n(255367),
-  a = n(73800),
+var a = n(255367),
+  r = n(73800),
   l = n(120356),
   i = n.n(l),
   o = n(952265),
@@ -30,17 +30,17 @@ var r = n(255367),
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), a.forEach(function(t) {
+      var a;
+      a = n[t], t in e ? Object.defineProperty(e, t, {
+        value: a,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = r
+      }) : e[t] = a
     })
   }
   return e
@@ -50,8 +50,8 @@ function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var a = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, a)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -73,7 +73,7 @@ function N(e) {
     setVoiceAudioEnabled: D,
     applicationAudioEnabled: I,
     setApplicationAudioEnabled: A
-  } = (0, y.S)(), [Z, B] = a.useState(null), {
+  } = (0, y.S)(), [Z, B] = r.useState(null), {
     onShareClick: M
   } = (0, x.Z)({
     channelId: l,
@@ -81,7 +81,7 @@ function N(e) {
   });
   async function z() {
     var e;
-    let a = m.Z.getChannel(l);
+    let r = m.Z.getChannel(l);
     B("export"), null == (e = L.current) || e.pause();
     try {
       let e = await (0, g.rO)(t, S(O({}, T), {
@@ -91,10 +91,10 @@ function N(e) {
       (0, s.ZDy)(async () => {
         let {
           default: l
-        } = await Promise.all([n.e("56035"), n.e("34057")]).then(n.bind(n, 758961)), i = (null == a ? void 0 : a.guild_id) != null ? p.Z.getGuild(a.guild_id) : null, o = null != i && (0, d.Gw)(i, f.Z, v.default).canCreateExpressions, s = null == N || "" === N ? (0, _.yl)(h.default.extractTimestamp(t.id)) : N, u = s.slice(0, w.Ek);
-        return t => (0, r.jsx)(l, S(O({}, t), {
+        } = await Promise.all([n.e("56035"), n.e("34057")]).then(n.bind(n, 758961)), i = (null == r ? void 0 : r.guild_id) != null ? p.Z.getGuild(r.guild_id) : null, o = null != i && (0, d.Gw)(i, f.Z, v.default).canCreateExpressions, s = null == N || "" === N ? (0, _.yl)(h.default.extractTimestamp(t.id)) : N, u = s.slice(0, w.Ek);
+        return t => (0, a.jsx)(l, S(O({}, t), {
           showGuildPicker: !0,
-          guildId: o ? null == a ? void 0 : a.guild_id : void 0,
+          guildId: o ? null == r ? void 0 : r.guild_id : void 0,
           sourceFile: {
             file: new File([e], "".concat(s, ".mp4"), {
               type: "video/mp4"
@@ -128,7 +128,7 @@ function N(e) {
       let {
         default: e
       } = await n.e("15915").then(n.bind(n, 799677));
-      return n => (0, r.jsx)(e, S(O({
+      return n => (0, a.jsx)(e, S(O({
         clip: t
       }, n), {
         onClose: async () => {
@@ -140,14 +140,14 @@ function N(e) {
       }))
     })
   }
-  return (0, r.jsxs)("div", {
+  return (0, a.jsxs)("div", {
     className: k.clipForm,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, a.jsxs)("div", {
       className: i()(k.clipFormSection, k.editSection),
-      children: [(0, r.jsx)(s.xJW, {
+      children: [(0, a.jsx)(s.xJW, {
         className: k.clipFormItem,
         title: C.intl.string(C.t.SJKc5u),
-        children: (0, r.jsx)(s.oil, {
+        children: (0, a.jsx)(s.oil, {
           onChange: e => {
             "" === e ? E(void 0) : E(e)
           },
@@ -156,31 +156,31 @@ function N(e) {
           maxLength: _.MG,
           placeholder: C.intl.string(C.t.Cyxddn)
         })
-      }), (0, r.jsxs)("div", {
+      }), (0, a.jsxs)("div", {
         className: k.clipFormSwitches,
-        children: [(0, r.jsx)(s.j7V, {
+        children: [(0, a.jsx)(s.j7V, {
           onChange: A,
           value: I,
           hideBorder: !0,
           children: C.intl.string(C.t.GnQui4)
-        }), (0, r.jsx)(s.j7V, {
+        }), (0, a.jsx)(s.j7V, {
           onChange: D,
           value: F,
           hideBorder: !0,
           children: C.intl.string(C.t["5mVOCQ"])
         })]
       })]
-    }), (0, r.jsxs)("div", {
+    }), (0, a.jsxs)("div", {
       className: i()(k.clipFormSection, k.metadataSection),
-      children: [(0, r.jsx)(b.Z, {
+      children: [(0, a.jsx)(b.Z, {
         clip: t
-      }), (0, r.jsx)(j.Z, {
+      }), (0, a.jsx)(j.Z, {
         className: k.userList,
         clip: t
       })]
-    }), (0, r.jsxs)("div", {
+    }), (0, a.jsxs)("div", {
       className: k.clipFormFooter,
-      children: [(0, r.jsx)(s.zxk, {
+      children: [(0, a.jsx)(s.zxk, {
         submitting: "share" === Z,
         disabled: null != Z && "share" !== Z,
         color: s.zxk.Colors.BRAND,
@@ -197,7 +197,7 @@ function N(e) {
           }
         }),
         children: C.intl.string(C.t.I8lglZ)
-      }), (0, r.jsx)(s.zxk, {
+      }), (0, a.jsx)(s.zxk, {
         size: s.zxk.Sizes.ICON,
         className: k.clipFormFooterButton,
         disabled: null != Z,
@@ -207,7 +207,7 @@ function N(e) {
         color: s.zxk.Colors.PRIMARY,
         onClick: R,
         children: C.intl.string(C.t.K344S0)
-      }), (0, r.jsx)(s.zxk, {
+      }), (0, a.jsx)(s.zxk, {
         "aria-label": C.intl.string(C.t.PdRCRk),
         size: s.zxk.Sizes.ICON,
         wrapperClassName: i()(k.clipFormFooterButton, {
@@ -221,7 +221,7 @@ function N(e) {
             let {
               default: e
             } = await n.e("32157").then(n.bind(n, 151090));
-            return t => (0, r.jsx)(e, S(O({}, t), {
+            return t => (0, a.jsx)(e, S(O({}, t), {
               onExportToSoundboard: z,
               onExportToFile: H,
               onDelete: W,
@@ -229,7 +229,7 @@ function N(e) {
             }))
           })
         },
-        children: (0, r.jsx)(s.xhG, {
+        children: (0, a.jsx)(s.xhG, {
           size: "md",
           color: "currentColor"
         })

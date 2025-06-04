@@ -1,6 +1,6 @@
 /** Chunk was on 4419 **/
 e.d(t, {
-  default: () => _
+  default: () => p
 });
 var o = e(255367);
 e(73800);
@@ -15,26 +15,27 @@ var i = e(481060),
   C = e(981631),
   h = e(475286);
 
-function _(n) {
+function p(n) {
   let {
     transitionState: t,
     onClose: e,
-    analyticsLocation: _
+    analyticsLocation: p
   } = n, {
-    slide: p,
+    slide: _,
     gotoNext: x,
     gotoError: g,
     handleWaitingForConnection: b,
     handleAuthToken: f,
     expectedCallbackState: v,
     callbackData: j
-  } = (0, r.k)(_, C.ABu.CRUNCHYROLL);
+  } = (0, r.k)(p, C.ABu.CRUNCHYROLL);
   return (0, o.jsx)(i.Y0X, {
     className: h.modal,
     transitionState: t,
     disableTrack: !0,
+    parentComponent: "CrunchyrollLinkModal",
     children: (0, o.jsxs)(i.MyZ, {
-      activeSlide: p,
+      activeSlide: _,
       width: 408,
       children: [(0, o.jsx)(i.Mi4, {
         id: u.O.LANDING,

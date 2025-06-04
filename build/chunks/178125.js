@@ -12,8 +12,8 @@ var t = l(255367),
   s = l(324067),
   u = l(771845),
   h = l(9156),
-  f = l(117984),
-  v = l(593214),
+  v = l(117984),
+  f = l(593214),
   m = l(378337),
   x = l(388032),
   g = l(918492);
@@ -23,9 +23,10 @@ function j(e) {
     transitionState: n,
     onClose: l,
     parentId: a
-  } = e, r = (0, d.e7)([u.ZP], () => u.ZP.getFlattenedGuildIds()[0]), [s, h] = i.useState(r), [f, v] = i.useState(!1);
+  } = e, r = (0, d.e7)([u.ZP], () => u.ZP.getFlattenedGuildIds()[0]), [s, h] = i.useState(r), [v, f] = i.useState(!1);
   return (0, t.jsxs)(o.Y0X, {
     transitionState: n,
+    parentComponent: "AddFavoriteChannelModal",
     children: [(0, t.jsxs)(o.xBx, {
       className: g.modalHeader,
       children: [(0, t.jsxs)("div", {
@@ -49,7 +50,7 @@ function j(e) {
       className: g.modalContent,
       children: (0, t.jsx)(p, {
         guildId: s,
-        hideMutedChannels: f,
+        hideMutedChannels: v,
         parentId: a
       })
     }), (0, t.jsxs)(o.mzw, {
@@ -64,8 +65,8 @@ function j(e) {
       }), (0, t.jsx)("div", {
         children: (0, t.jsx)(o.XZJ, {
           type: o.XZJ.Types.INVERTED,
-          value: f,
-          onChange: (e, n) => v(n),
+          value: v,
+          onChange: (e, n) => f(n),
           children: (0, t.jsx)(o.Text, {
             variant: "text-sm/medium",
             color: "interactive-normal",
@@ -117,7 +118,7 @@ function I(e) {
     channel: n,
     hideMutedChannels: l,
     parentId: i
-  } = e, a = (0, v.s4)(n.id);
+  } = e, a = (0, f.s4)(n.id);
   if ((0, d.e7)([h.ZP], () => h.ZP.isChannelMuted(n.guild_id, n.id)) && l) return null;
   let c = (0, r.KS)(n);
   return (0, t.jsxs)("div", {
@@ -157,7 +158,7 @@ function Z(e) {
     size: o.PhG.SMALL,
     color: o.Ttl.BRAND,
     onClick: function() {
-      (0, f.kj)(n, l)
+      (0, v.kj)(n, l)
     },
     children: x.intl.string(x.t.OYkgVl)
   })
@@ -172,7 +173,7 @@ function _(e) {
     size: o.PhG.SMALL,
     color: o.Ttl.PRIMARY,
     onClick: function() {
-      (0, f.oC)(n)
+      (0, v.oC)(n)
     },
     children: x.intl.string(x.t.N86XcH)
   })

@@ -1,6 +1,6 @@
 /** Chunk was on 78712 **/
 a.d(n, {
-  default: () => _
+  default: () => C
 });
 var t = a(255367),
   s = a(73800),
@@ -15,20 +15,21 @@ var t = a(255367),
   x = a(44534),
   p = a(73433);
 
-function _(e) {
+function C(e) {
   let {
     channel: n,
     isFromComposer: a,
     transitionState: r,
-    onClose: _
-  } = e, C = (0, l.Dt)();
+    onClose: C
+  } = e, m = (0, l.Dt)();
   return s.useEffect(() => () => {
     a && d.S.dispatch(h.CkL.FOCUS_COMPOSER_TITLE)
   }, [a]), (0, t.jsxs)(c.Y0X, {
     transitionState: r,
-    "aria-labelledby": C,
+    "aria-labelledby": m,
     size: c.CgR.DYNAMIC,
     className: x.container,
+    parentComponent: "ForumChannelGuidelinesModal",
     children: [(0, t.jsxs)(c.xBx, {
       className: x.header,
       separator: !1,
@@ -57,7 +58,7 @@ function _(e) {
       })
     }), (0, t.jsx)(c.mzw, {
       children: (0, t.jsx)(c.zxk, {
-        onClick: _,
+        onClick: C,
         children: u.intl.string(u.t["NX+WJC"])
       })
     })]

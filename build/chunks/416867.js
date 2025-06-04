@@ -23,6 +23,7 @@ function c(e) {
     className: l.container,
     transitionState: t,
     "aria-labelledby": p,
+    parentComponent: "ActionCompletedSuccessModal",
     children: [(0, r.jsxs)(i.hzk, {
       children: [(0, r.jsx)(o.Z, {
         Icon: n

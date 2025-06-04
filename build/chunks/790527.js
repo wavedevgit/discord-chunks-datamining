@@ -192,6 +192,7 @@ function R(e) {
     className: o()(T.root, !eg && j),
     "aria-label": C,
     transitionState: Z,
+    parentComponent: "PremiumUpsellModal",
     children: [null != eA && (0, r.jsxs)("div", {
       className: eT,
       children: [eA, X ? (0, r.jsx)("img", {

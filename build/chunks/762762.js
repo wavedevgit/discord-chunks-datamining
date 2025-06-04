@@ -1,6 +1,6 @@
 /** Chunk was on 99014 **/
 n.d(t, {
-  Z: () => c
+  Z: () => l
 });
 var r = n(73800),
   o = n(442837),
@@ -8,26 +8,26 @@ var r = n(73800),
   i = n(905128),
   s = n(155457);
 
-function c(e, t, n) {
-  let c = (0, o.e7)([i.Z], () => i.Z.getStateForGuild(e));
+function l(e, t, n) {
+  let l = (0, o.e7)([i.Z], () => i.Z.getStateForGuild(e));
   return r.useMemo(() => {
     var e, r;
-    if (null == c) return {
+    if (null == l) return {
       disabled: !0,
       reason: void 0
     };
     let {
       allPowerups: o,
       unlockedPowerups: i
-    } = c, l = n ? null == (e = Object.values(i).find(e => {
+    } = l, c = n ? null == (e = Object.values(i).find(e => {
       var n;
       return (null == (n = e.sku) ? void 0 : n.dependent_sku_id) === t.skuId
     })) ? void 0 : e.sku_id : t.dependencies.find(e => null == i[e]);
     return {
-      disabled: null != l,
-      reason: null != l && null != o[l] ? a.intl.formatToPlainString(n ? s.default.vCEBiY : s.default["1B8AZm"], {
-        perk: null == (r = o[l]) ? void 0 : r.title
+      disabled: null != c,
+      reason: null != c && null != o[c] ? a.intl.formatToPlainString(n ? s.default.vCEBiY : s.default["1B8AZm"], {
+        perk: null == (r = o[c]) ? void 0 : r.title
       }) : void 0
     }
-  }, [c, t.skuId, t.dependencies, n])
+  }, [l, t.skuId, t.dependencies, n])
 }

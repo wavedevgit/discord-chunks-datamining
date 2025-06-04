@@ -1,57 +1,57 @@
 /** Chunk was on 21863 **/
-i.d(t, {
+t.d(i, {
   Yn: () => a,
   ZP: () => s
-}), i(415506);
-var n = i(255367);
-i(73800);
-var r = i(481060),
-  l = i(981631);
+}), t(415506);
+var n = t(255367);
+t(73800);
+var r = t(481060),
+  l = t(981631);
 
 function c(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var i = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(i);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(i, e).enumerable
-    }))), n.forEach(function(t) {
+  for (var i = 1; i < arguments.length; i++) {
+    var t = null != arguments[i] ? arguments[i] : {},
+      n = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(t, e).enumerable
+    }))), n.forEach(function(i) {
       var n;
-      n = i[t], t in e ? Object.defineProperty(e, t, {
+      n = t[i], i in e ? Object.defineProperty(e, i, {
         value: n,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = n
+      }) : e[i] = n
     })
   }
   return e
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var i = Object.keys(e);
+function o(e, i) {
+  return i = null != i ? i : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i)) : (function(e, i) {
+    var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var n = Object.getOwnPropertySymbols(e);
-      i.push.apply(i, n)
+      t.push.apply(t, n)
     }
-    return i
-  })(Object(t)).forEach(function(i) {
-    Object.defineProperty(e, i, Object.getOwnPropertyDescriptor(t, i))
+    return t
+  })(Object(i)).forEach(function(t) {
+    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(i, t))
   }), e
 }
 
 function a() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-  return new Promise(t => {
+  return new Promise(i => {
     (0, r.ZDy)(async () => {
       let {
-        default: t
-      } = await Promise.all([i.e("76540"), i.e("69422")]).then(i.bind(i, 628908));
-      return i => (0, n.jsx)(t, o(c({}, i), {
+        default: i
+      } = await Promise.all([t.e("76540"), t.e("69422")]).then(t.bind(t, 628908));
+      return t => (0, n.jsx)(i, o(c({}, t), {
         isTotp: e
       }))
     }, {
-      onCloseCallback: t,
+      onCloseCallback: i,
       onCloseRequest: l.VqG
     })
   })
@@ -61,9 +61,9 @@ let s = {
     await new Promise(e => {
       (0, r.ZDy)(async () => {
         let {
-          default: t
-        } = await Promise.all([i.e("58994"), i.e("23746")]).then(i.bind(i, 837651));
-        return i => (0, n.jsx)(t, o(c({}, i), {
+          default: i
+        } = await Promise.all([t.e("58994"), t.e("23746")]).then(t.bind(t, 837651));
+        return t => (0, n.jsx)(i, o(c({}, t), {
           handleEnableMFASuccess: e
         }))
       })

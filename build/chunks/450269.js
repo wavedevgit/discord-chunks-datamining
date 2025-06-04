@@ -1,14 +1,14 @@
 /** Chunk was on 67376 **/
 n.d(t, {
-  V: () => s
+  V: () => o
 }), n(388685);
 var c = n(73800),
   i = n(259674),
   r = n(981631),
   l = n(388032);
 
-function s(e) {
-  let [t, n] = c.useState(!1), [s, o] = c.useState(!1), [a, d] = c.useState(!1);
+function o(e) {
+  let [t, n] = c.useState(!1), [o, s] = c.useState(!1), [a, d] = c.useState(!1);
   return {
     rules: c.useMemo(() => {
       let c = l.intl.format(l.t.S2lVJS, {
@@ -33,8 +33,8 @@ function s(e) {
         key: "nonNSFW",
         title: l.intl.string(l.t.iwnCh4),
         body: l.intl.string(l.t.UKFzER),
-        onCheck: () => o(!s),
-        checked: s
+        onCheck: () => s(!o),
+        checked: o
       }, {
         key: "guidelines",
         title: c,
@@ -42,7 +42,7 @@ function s(e) {
         onCheck: () => d(!a),
         checked: a
       }]
-    }, [a, e, t, s]),
-    rulesAccepted: t && s && a
+    }, [a, e, t, o]),
+    rulesAccepted: t && o && a
   }
 }

@@ -15,8 +15,8 @@ var r = n(255367),
   I = n(247206),
   u = n(981631),
   f = n(526761),
-  h = n(388032),
-  m = n(618386),
+  m = n(388032),
+  h = n(618386),
   C = n(444812);
 let A = e => {
   let {
@@ -39,34 +39,35 @@ let A = e => {
     })
   }, [t, A]), (0, r.jsxs)(o.Y0X, {
     transitionState: R,
-    "aria-label": h.intl.string(h.t.xdm3XF),
+    "aria-label": m.intl.string(m.t.xdm3XF),
+    parentComponent: "ExplicitMediaLearnMoreModal",
     children: [(0, r.jsx)(o.xBx, {
       separator: !1,
-      className: m.modalHeader,
+      className: h.modalHeader,
       children: (0, r.jsx)("img", {
         src: C,
-        alt: h.intl.string(h.t.id3fND),
-        className: m.headerImg
+        alt: m.intl.string(m.t.id3fND),
+        className: h.headerImg
       })
     }), (0, r.jsxs)(o.hzk, {
-      className: m.modalBody,
+      className: h.modalBody,
       children: [(0, r.jsx)(o.X6q, {
         variant: "heading-lg/bold",
-        className: m.modalInteriorHeader,
-        children: h.intl.string(h.t.sGW77u)
+        className: h.modalInteriorHeader,
+        children: m.intl.string(m.t.sGW77u)
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: b ? h.intl.string(h.t.f3ARDQ) : L ? h.intl.string(h.t.XW3vjo) : h.intl.string(h.t.i4daNj)
+        children: b ? m.intl.string(m.t.f3ARDQ) : L ? m.intl.string(m.t.XW3vjo) : m.intl.string(m.t.i4daNj)
       }), (0, r.jsxs)("div", {
-        className: m.buttonContainer,
+        className: h.buttonContainer,
         children: [b ? (0, r.jsx)(o.zxk, {
           color: o.zxk.Colors.BRAND,
           onClick: function() {
             g(), v(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), s.Z.showAgeVerificationGetStartedModal(d.cU.SENSITIVE_MEDIA_LEARN_MORE)
           },
           fullWidth: !0,
-          children: h.intl.string(h.t.KPGVWl)
+          children: m.intl.string(m.t.KPGVWl)
         }) : L ? (0, r.jsx)(o.zxk, {
           color: o.zxk.Colors.BRAND,
           onClick: function() {
@@ -75,29 +76,29 @@ let A = e => {
             }), g()
           },
           fullWidth: !0,
-          children: h.intl.string(h.t["9D+zGR"])
+          children: m.intl.string(m.t["9D+zGR"])
         }) : (0, r.jsx)(o.zxk, {
           color: o.zxk.Colors.BRAND,
           onClick: () => {
             (0, a.Z)(E.Z.getArticleURL(u.BhN.EXPLICIT_MEDIA_REDACTION))
           },
           fullWidth: !0,
-          children: h.intl.string(h.t.hvVgAQ)
+          children: m.intl.string(m.t.hvVgAQ)
         }), (0, r.jsx)(o.zxk, {
           color: o.zxk.Colors.PRIMARY,
           onClick: function() {
             g(), v(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS)
           },
           fullWidth: !0,
-          children: h.intl.string(h.t.bmbHPD)
+          children: m.intl.string(m.t.bmbHPD)
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: b ? h.intl.format(h.t["TGqx+v"], {
+          children: b ? m.intl.format(m.t["TGqx+v"], {
             handleOnHelpUrlHook: () => {
               s.Z.openUrl(E.Z.getArticleURL(u.BhN.TIGGER_PAWTECT_LEARN_MORE)), v(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
             }
-          }) : h.intl.format(h.t.Ge0HUl, {
+          }) : m.intl.format(m.t.Ge0HUl, {
             handleFalsePositiveHook: () => {
               g(), v(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.ZDy)(async () => {
                 let {

@@ -1,6 +1,6 @@
 /** Chunk was on 18417 **/
 n.d(e, {
-  Z: () => x
+  Z: () => p
 });
 var a = n(388032),
   r = n(918298),
@@ -14,7 +14,7 @@ var a = n(388032),
   g = n(140574),
   u = n(765434);
 
-function x(t) {
+function p(t) {
   return [{
     tags: [a.intl.string(a.t["/XjSo6"]), a.intl.string(a.t["Af/56e"]), a.intl.string(a.t.LNsW0N)],
     posts: [{

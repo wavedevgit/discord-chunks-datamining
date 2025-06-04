@@ -19,8 +19,8 @@ var l = s(255367),
   f = s(173747),
   P = s(850840),
   _ = s(391690),
-  T = s(424218),
-  A = s(94692),
+  A = s(424218),
+  T = s(94692),
   C = s(981631),
   Z = s(388032),
   S = s(232277);
@@ -88,6 +88,7 @@ class b extends n.Component {
       transitionState: s,
       size: i.CgR.SMALL,
       "aria-label": Z.intl.string(Z.t.PphjtL),
+      parentComponent: "ApplicationInstallationModal",
       children: [null != r ? (0, l.jsx)("div", {
         className: S.splash,
         style: {
@@ -119,13 +120,13 @@ class b extends n.Component {
             children: null != t && t.name
           }), null != e ? (0, l.jsx)("div", {
             className: S.installSize,
-            children: (0, T.BU)(e, {
+            children: (0, A.BU)(e, {
               useKibibytes: !0
             })
           }) : null]
         }), (0, l.jsx)("div", {
           className: S.divider
-        }), (0, l.jsx)(A.Z, {
+        }), (0, l.jsx)(T.Z, {
           autoFocus: !0,
           className: S.selector,
           value: n,

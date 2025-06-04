@@ -74,6 +74,7 @@ function O(e) {
   return (0, i.jsxs)(a.Y0X, {
     transitionState: t,
     "aria-labelledby": f,
+    parentComponent: "UserSettingsWebAuthn",
     children: [(0, i.jsxs)(a.xBx, {
       className: E.header,
       separator: !1,

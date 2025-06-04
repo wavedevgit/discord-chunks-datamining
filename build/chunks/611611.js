@@ -229,6 +229,7 @@ function k(e) {
     className: _.container,
     transitionState: n,
     "aria-labelledby": P,
+    parentComponent: "PollCreationModal",
     children: [(0, r.jsxs)(c.xBx, {
       className: _.header,
       separator: !1,

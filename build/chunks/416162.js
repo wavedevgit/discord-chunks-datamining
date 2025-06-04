@@ -47,8 +47,8 @@ let u = e => {
       initialStep: N = 0,
       forceStep: j,
       submitting: C = !1,
-      autoCloseOnComplete: _ = !0
-    } = e, [S, I] = n.useState([]), [E, O] = n.useState(N), T = (0, o.Dt)();
+      autoCloseOnComplete: S = !0
+    } = e, [_, I] = n.useState([]), [E, O] = n.useState(N), T = (0, o.Dt)();
     n.useEffect(() => {
       I([...Array(l.length).keys()])
     }, [l.length]);
@@ -65,6 +65,7 @@ let u = e => {
       className: a()(d.container, t),
       transitionState: m,
       "aria-labelledby": T,
+      parentComponent: "MultiStepModal",
       children: [(0, s.jsxs)("div", {
         className: d.overviewSidebar,
         children: [(0, s.jsx)(r.X6q, {
@@ -95,7 +96,7 @@ let u = e => {
             className: d.closeButton
           }), (0, s.jsx)(r.qBt, {
             step: w,
-            steps: S,
+            steps: _,
             sideMargin: 24,
             verticalMargin: 24,
             className: a()(d.sequencer, g),
@@ -108,7 +109,7 @@ let u = e => {
             type: "submit",
             submitting: C,
             onClick: () => {
-              L ? (v(), _ && x()) : (null == h || h(), O(w + 1))
+              L ? (v(), S && x()) : (null == h || h(), O(w + 1))
             },
             color: r.zxk.Colors.GREEN,
             disabled: y.disableNextStep,

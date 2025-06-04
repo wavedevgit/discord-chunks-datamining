@@ -16,9 +16,9 @@ var r = t(442837),
   p = t(899007),
   g = t(648052),
   v = t(867176),
-  h = t(681837),
-  j = t(502762),
-  m = t(530),
+  m = t(681837),
+  h = t(502762),
+  j = t(530),
   b = t(871604),
   x = t(952124),
   O = t(53558),
@@ -44,8 +44,8 @@ function C(e) {
     initialSection: U,
     initialSubsection: D,
     transitionState: L,
-    openedAt: G,
-    onClose: B,
+    openedAt: B,
+    onClose: G,
     sourceAnalyticsLocations: k = []
   } = e, V = C === T.ME ? void 0 : C, Y = (0, f.ZP)(n.id, V), F = c.ZP.getName(V, _, n), {
     analyticsLocations: z
@@ -64,7 +64,7 @@ function C(e) {
     value: z,
     children: (0, l.jsx)(d.Mt, {
       value: W,
-      openedAt: G,
+      openedAt: B,
       fetchStartedAt: null == Y ? void 0 : Y.fetchStartedAt,
       fetchEndedAt: null == Y ? void 0 : Y.fetchEndedAt,
       isLoaded: null == Y ? void 0 : Y.isLoaded,
@@ -73,7 +73,8 @@ function C(e) {
         className: A.root,
         hideShadow: !0,
         "aria-label": J,
-        children: (0, l.jsxs)(j.Z, {
+        parentComponent: "BotUserProfileModal",
+        children: (0, l.jsxs)(h.Z, {
           user: n,
           displayProfile: Y,
           themeType: S.lY.MODAL,
@@ -81,7 +82,7 @@ function C(e) {
             children: (0, l.jsx)(x.Z, {
               user: n,
               guildId: V,
-              onCloseProfile: B
+              onCloseProfile: G
             })
           }), (0, l.jsxs)("header", {
             children: [(0, l.jsx)(v.Z, {
@@ -101,7 +102,7 @@ function C(e) {
                 user: n,
                 themeType: S.lY.MODAL,
                 hasEntered: L === i.Dvm.ENTERED,
-                onCloseProfile: B,
+                onCloseProfile: G,
                 disableToolbar: !0
               }), (0, l.jsxs)("div", {
                 className: A.headerButtons,
@@ -125,20 +126,20 @@ function C(e) {
             })]
           }), (0, l.jsxs)("div", {
             className: A.body,
-            children: [(0, l.jsx)(m.Z, {
+            children: [(0, l.jsx)(j.Z, {
               className: A.username,
               user: n,
               nickname: F,
               pronouns: null == Y ? void 0 : Y.pronouns,
               nicknameVariant: "heading-xl/bold",
-              nicknameIcons: (0, l.jsx)(h.Z, {
+              nicknameIcons: (0, l.jsx)(m.Z, {
                 size: "sm",
                 userId: n.id
               }),
               tags: (0, l.jsx)(g.Z, {
                 displayProfile: Y,
                 themeType: S.lY.MODAL,
-                onClose: B
+                onClose: G
               })
             }), (0, l.jsx)(I.Z, {
               user: n,
@@ -148,7 +149,7 @@ function C(e) {
               items: K,
               initialSection: null != U ? U : S.oh.BOT_INFO,
               initialSubsection: D,
-              onClose: B
+              onClose: G
             })]
           })]
         })

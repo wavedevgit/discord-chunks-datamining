@@ -54,7 +54,7 @@ function p(e) {
     onEarlyClose: g,
     onClose: b,
     width: j = 440
-  } = e, [y, x] = l.useState(null != (n = null == (t = f.methods[0]) ? void 0 : t.type) ? n : "select"), [S, v] = l.useState(y), O = async e => {
+  } = e, [y, x] = l.useState(null != (n = null == (t = f.methods[0]) ? void 0 : t.type) ? n : "select"), [S, v] = l.useState(y), C = async e => {
     let {
       mfaType: t,
       data: n
@@ -64,9 +64,9 @@ function p(e) {
       data: n,
       ticket: f.ticket
     }), null != b && b()
-  }, C = {
+  }, O = {
     mfaChallenge: f,
-    finish: O,
+    finish: C,
     setSlide: x,
     onClose: g
   };
@@ -76,28 +76,28 @@ function p(e) {
     onSlideReady: v,
     children: [(0, r.jsx)(i.Mi4, {
       id: "select",
-      children: (0, r.jsx)(a.Z, h({}, C))
+      children: (0, r.jsx)(a.Z, h({}, O))
     }), (0, r.jsx)(i.Mi4, {
       id: "webauthn",
-      children: (0, r.jsx)(d.Z, h({}, C))
+      children: (0, r.jsx)(d.Z, h({}, O))
     }), (0, r.jsx)(i.Mi4, {
       id: "totp",
-      children: (0, r.jsx)(u.Z, m(h({}, C), {
+      children: (0, r.jsx)(u.Z, m(h({}, O), {
         isSlideReady: "totp" === S
       }))
     }), (0, r.jsx)(i.Mi4, {
       id: "sms",
-      children: (0, r.jsx)(c.Z, m(h({}, C), {
+      children: (0, r.jsx)(c.Z, m(h({}, O), {
         isSlideReady: "sms" === S
       }))
     }), (0, r.jsx)(i.Mi4, {
       id: "backup",
-      children: (0, r.jsx)(s.Z, m(h({}, C), {
+      children: (0, r.jsx)(s.Z, m(h({}, O), {
         isSlideReady: "backup" === S
       }))
     }), (0, r.jsx)(i.Mi4, {
       id: "password",
-      children: (0, r.jsx)(o.Z, m(h({}, C), {
+      children: (0, r.jsx)(o.Z, m(h({}, O), {
         isSlideReady: "password" === S
       }))
     })]
@@ -115,6 +115,7 @@ function g(e) {
     transitionState: l,
     size: i.CgR.SMALL,
     "aria-label": f.intl.string(f.t.saHocH),
+    parentComponent: "MFAModal",
     children: (0, r.jsx)(p, {
       mfaChallenge: t,
       mfaFinish: n,

@@ -18,6 +18,7 @@ function c(e) {
   return (0, r.jsxs)(s.Y0X, {
     size: s.CgR.SMALL,
     transitionState: t,
+    parentComponent: "AddFriendModal",
     children: [(0, r.jsxs)(s.xBx, {
       justify: i.k.Justify.BETWEEN,
       children: [(0, r.jsx)(s.X6q, {

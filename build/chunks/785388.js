@@ -453,6 +453,7 @@ function et(e) {
       transitionState: s,
       size: h.CgR.DYNAMIC,
       className: H.container,
+      parentComponent: "MessageReactions",
       children: [l ? null : (0, i.jsx)(h.Ttm, {
         className: H.scroller,
         fade: !0,

@@ -20,11 +20,11 @@ function v(e) {
     user: n,
     guildId: t,
     channelId: v,
-    onClose: h
+    onClose: m
   } = e, {
-    mutualFriends: j
+    mutualFriends: h
   } = (0, u.Z)(n), {
-    analyticsLocations: m
+    analyticsLocations: j
   } = (0, s.ZP)(), {
     context: b,
     trackUserProfileAction: x
@@ -53,7 +53,7 @@ function v(e) {
       return e
     }({}, b), t = t = {
       userId: e,
-      sourceAnalyticsLocations: m
+      sourceAnalyticsLocations: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
       var t = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -68,10 +68,10 @@ function v(e) {
   return (0, l.jsx)(i.zJl, {
     className: g.listScroller,
     fade: !0,
-    children: null == j ? (0, l.jsx)("div", {
+    children: null == h ? (0, l.jsx)("div", {
       className: g.empty,
       children: (0, l.jsx)(i.$jN, {})
-    }) : 0 === j.length ? (0, l.jsxs)("div", {
+    }) : 0 === h.length ? (0, l.jsxs)("div", {
       className: g.empty,
       children: [(0, l.jsx)("div", {
         className: g.emptyIconFriends
@@ -79,7 +79,7 @@ function v(e) {
         className: g.emptyText,
         children: p.intl.string(p.t["/5p4g4"])
       })]
-    }) : j.map(e => {
+    }) : h.map(e => {
       let {
         key: n,
         user: r,
@@ -91,7 +91,7 @@ function v(e) {
         guildId: t,
         channelId: v,
         onSelect: () => {
-          null == h || h(), x({
+          null == m || m(), x({
             action: "PRESS_MUTUAL_FRIEND"
           }), Z(r.id)
         }

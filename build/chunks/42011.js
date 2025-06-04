@@ -1,6 +1,6 @@
 /** Chunk was on 10667 **/
 e.d(n, {
-  W: () => c
+  W: () => a
 });
 var o = e(255367);
 e(73800);
@@ -8,7 +8,7 @@ var i = e(376340),
   r = e(388032),
   s = e(629582);
 
-function c(t) {
+function a(t) {
   let {
     onClose: n
   } = t;

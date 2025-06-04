@@ -110,6 +110,7 @@ class b extends a.Component {
         size: i.CgR.DYNAMIC,
         "aria-label": u.intl.string(u.t.X4IxWF)
       }, e), {
+        parentComponent: "ApplicationStoreListingCarousel",
         children: (0, r.jsx)(f, h(m({}, e), {
           index: t,
           items: this.props.items

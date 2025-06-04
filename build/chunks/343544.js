@@ -22,11 +22,12 @@ function d(e) {
     leaveButtonText: f,
     stayButtonText: E,
     transitionState: I,
-    impression: h
+    impression: m
   } = e;
   return (0, r.jsxs)(l.Y0X, {
     transitionState: I,
-    impression: h,
+    impression: m,
+    parentComponent: "BlockedUserWarningModal",
     children: [(0, r.jsx)("img", {
       alt: "",
       className: c.headerImage,

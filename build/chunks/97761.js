@@ -74,6 +74,7 @@ let s = function(t) {
     size: o.CgR.SMALL
   }, a), n = n = {
     className: l.modalRoot,
+    parentComponent: "ActivityPopoutNewUserExperienceModal",
     children: [(0, r.jsx)(o.xBx, {
       children: (0, r.jsx)(o.X6q, {
         variant: "heading-xl/semibold",

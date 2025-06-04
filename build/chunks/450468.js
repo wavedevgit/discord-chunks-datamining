@@ -149,6 +149,7 @@ function T(e) {
     value: o,
     children: (0, i.jsx)(c.Y0X, {
       transitionState: s,
+      parentComponent: "GuildBoostSlotUncancellationModal",
       children: t
     })
   })

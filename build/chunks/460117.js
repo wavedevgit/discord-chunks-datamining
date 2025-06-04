@@ -31,7 +31,7 @@ function u(e) {
       name: null != (r = i.originalName) ? r : i.name,
       animated: i.animated
     }), l && e())
-  }, v = null == u || null == u.name ? null : () => {
+  }, p = null == u || null == u.name ? null : () => {
     var e;
     return (0, r.jsx)(o.Z, {
       className: n,
@@ -86,7 +86,7 @@ function u(e) {
           tabIndex: 0,
           active: o,
           className: t,
-          renderButtonContents: v
+          renderButtonContents: p
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

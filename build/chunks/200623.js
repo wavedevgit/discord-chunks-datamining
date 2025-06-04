@@ -45,17 +45,18 @@ function C(e) {
     channel: t,
     transitionState: r,
     onClose: C
-  } = e, g = (0, s.e7)([d.Z], () => null != d.Z.getRemoteSessionId()), j = (0, u.Z)(t, {
+  } = e, b = (0, s.e7)([d.Z], () => null != d.Z.getRemoteSessionId()), g = (0, u.Z)(t, {
     forQRCode: !0
   });
   return a.useEffect(() => {
-    g && C()
-  }, [g, C]), a.useEffect(() => {
+    b && C()
+  }, [b, C]), a.useEffect(() => {
     (0, m.Z)(t.id, f.YE.XBOX)
   }, [t.id]), (0, n.jsxs)(o.Y0X, {
     size: o.CgR.DYNAMIC,
     className: _.modalRoot,
     transitionState: r,
+    parentComponent: "XboxModal",
     children: [(0, n.jsxs)(o.xBx, {
       separator: !1,
       className: _.modalHeaderContainer,
@@ -98,7 +99,7 @@ function C(e) {
         }), (0, n.jsx)(c.ZP, {
           className: _.qrCode,
           size: 120,
-          text: j
+          text: g
         })]
       })
     }), (0, n.jsx)(o.olH, {

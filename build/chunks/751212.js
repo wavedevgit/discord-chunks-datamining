@@ -22,8 +22,8 @@ var i = n(255367),
   N = n(74888),
   f = n(444899),
   b = n(11352),
-  O = n(610617),
-  C = n(777861),
+  C = n(610617),
+  O = n(777861),
   E = n(131704),
   Z = n(592125),
   _ = n(324067),
@@ -199,7 +199,7 @@ class B extends s.PureComponent {
             tag: "h3",
             className: U.muteUntilTitle,
             children: D.intl.string(D.t.Ztu2Ym)
-          }), (0, i.jsx)(C.Z, {
+          }), (0, i.jsx)(O.Z, {
             className: U.muteUntilText,
             muteConfig: n
           })]
@@ -304,7 +304,7 @@ class B extends s.PureComponent {
       onClose: n
     } = this.props;
     if (e) return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(O.Z, {
+      children: [(0, i.jsx)(C.Z, {
         guildId: t,
         onClose: n
       }), (0, i.jsx)(h.$i$, {
@@ -420,6 +420,7 @@ class B extends s.PureComponent {
       "aria-label": D.intl.string(D.t.h850Sk),
       size: h.CgR.MEDIUM,
       transitionState: this.props.transitionState,
+      parentComponent: "NotificationSettings",
       children: [this.renderHeader(), (0, i.jsxs)(h.hzk, {
         scrollerRef: this.setScrollerRef,
         children: [this.renderMute(), this.renderServerSettings(), this.renderCustomNotificationSoundOptions(), this.renderNotificationOptions(), this.renderOverrideSelect(), this.renderChannelNotifications()]

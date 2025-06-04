@@ -119,6 +119,7 @@ class x extends i.Component {
       className: g.modal,
       size: c.CgR.SMALL,
       "aria-label": this.getTitle(),
+      parentComponent: "PaymentAuthenticationModal",
       children: [(0, n.jsxs)(c.xBx, {
         children: [(0, n.jsx)(c.X6q, {
           variant: "heading-lg/semibold",
