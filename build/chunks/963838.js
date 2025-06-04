@@ -10,8 +10,8 @@ n.d(t, {
 });
 var r = n(392711),
   i = n.n(r),
-  o = n(490757),
-  a = n(429827),
+  a = n(490757),
+  o = n(429827),
   s = n(353928),
   l = n(336892),
   c = n(624833),
@@ -43,8 +43,8 @@ let x = {
     start: 10,
     end: 15
   },
-  k = [o],
-  M = [a, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, S, T, A],
+  k = [a],
+  M = [o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, S, T, A],
   j = {
     [D.q.BASIC]: k,
     [D.q.PREMIUM]: M
@@ -93,7 +93,7 @@ function F(e, t) {
 }
 
 function V(e) {
-  var t, n, r, i, o, a;
+  var t, n, r, i, a, o;
   if (e.length < 1) return "";
   let s = F(e, "userId"),
     l = F(e, "emojiName"),
@@ -106,8 +106,8 @@ function V(e) {
     secondUsername: null == (i = P.default.getUser(s[1])) ? void 0 : i.username,
     emojiNames: c
   }) : L.intl.formatToPlainString(L.t["/okjv7"], {
-    firstUsername: null == (o = P.default.getUser(s[0])) ? void 0 : o.username,
-    secondUsername: null == (a = P.default.getUser(s[1])) ? void 0 : a.username,
+    firstUsername: null == (a = P.default.getUser(s[0])) ? void 0 : a.username,
+    secondUsername: null == (o = P.default.getUser(s[1])) ? void 0 : o.username,
     count: s.length - 2,
     emojiNames: c
   })

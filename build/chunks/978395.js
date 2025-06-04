@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(442837),
-  o = n(481060),
-  a = n(320582),
+  a = n(481060),
+  o = n(320582),
   s = n(189156),
   l = n(699516),
   c = n(246946),
@@ -49,10 +49,10 @@ function D(e) {
   } = (0, i.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), F = (0, a.vh)(t.id), V = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), Z = (0, f.b)({
+  })), F = (0, o.vh)(t.id), V = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), Z = (0, f.b)({
     location: "UserProfilePopoutBody"
   }), H = t.id === n.id, Y = (0, d.I5)(n);
-  return (0, r.jsxs)(o.Ttm, {
+  return (0, r.jsxs)(a.Ttm, {
     fade: !0,
     className: w.body,
     children: [(0, r.jsx)(v.Z, {
@@ -104,9 +104,9 @@ function D(e) {
       className: w.card,
       children: (0, r.jsx)(b.Z, {
         heading: R.intl.string(R.t.Iyka0d),
-        headingIcon: (0, r.jsx)(o.P4T, {
+        headingIcon: (0, r.jsx)(a.P4T, {
           size: "xxs",
-          color: o.TVs.colors.HEADER_PRIMARY
+          color: a.TVs.colors.HEADER_PRIMARY
         }),
         headingColor: "header-primary",
         children: (0, r.jsx)(s.n, {

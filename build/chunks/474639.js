@@ -5,8 +5,8 @@ n.d(t, {
 }), n(35282), n(388685);
 var r = n(46973),
   i = n(570140),
-  o = n(147913),
-  a = n(579806),
+  a = n(147913),
+  o = n(579806),
   s = n(569545),
   l = n(441167),
   c = n(695346),
@@ -33,7 +33,7 @@ function S(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class T extends o.Z {
+class T extends a.Z {
   handleRTCConnectionState(e) {
     let {
       context: t,
@@ -41,16 +41,16 @@ class T extends o.Z {
       streamKey: i
     } = e;
     if (!(0, g.ln)() || n !== v.hes.RTC_CONNECTED) return;
-    let o = u.default.getId();
-    if (t === r.Yn.DEFAULT) return this.applyUserVoiceRecording(o);
+    let a = u.default.getId();
+    if (t === r.Yn.DEFAULT) return this.applyUserVoiceRecording(a);
     if (t === r.Yn.STREAM && null != i) {
       let {
         ownerId: e
       } = (0, s.my)(i);
-      if (e !== o) return;
+      if (e !== a) return;
       let t = _.Z.getRTCConnection(i);
       if (null == t) return;
-      this.applyStreamRecording(o, t)
+      this.applyStreamRecording(a, t)
     }
   }
   handleRTCUserCreate(e) {
@@ -114,16 +114,16 @@ class T extends o.Z {
       userId: t,
       context: n,
       channelId: i,
-      guildId: o
+      guildId: a
     } = e;
     if (n !== r.Yn.STREAM || !(0, y.Z)(d.Z)) return;
-    let a = _.Z.getRTCConnection(s.V9({
-      streamType: null != o ? I.lo.GUILD : I.lo.CALL,
+    let o = _.Z.getRTCConnection(s.V9({
+      streamType: null != a ? I.lo.GUILD : I.lo.CALL,
       ownerId: t,
       channelId: i,
-      guildId: o
+      guildId: a
     }));
-    null != a && this.applyStreamRecording(t, a)
+    null != o && this.applyStreamRecording(t, o)
   }
   async classifyHardwareAndTrack() {
     try {
@@ -140,7 +140,7 @@ class T extends o.Z {
             classification: n
           }
         } {
-          let e = (await a.Z.processUtils.getSystemInfo()).gpus.map(e => {
+          let e = (await o.Z.processUtils.getSystemInfo()).gpus.map(e => {
               let {
                 model: t
               } = e;
@@ -168,7 +168,7 @@ class T extends o.Z {
         n = e.some(e => O.nU.test(e));
       return t ? b.x.MEETS_AUTO_ENABLE : n ? b.x.MEETS_MINIMUM : b.x.BELOW_MINIMUM
     }
-    return (0, m.isMac)() ? "arm64" === a.Z.remoteApp.getAppArch() ? b.x.MEETS_AUTO_ENABLE : b.x.MEETS_MINIMUM : b.x.UNKNOWN
+    return (0, m.isMac)() ? "arm64" === o.Z.remoteApp.getAppArch() ? b.x.MEETS_AUTO_ENABLE : b.x.MEETS_MINIMUM : b.x.UNKNOWN
   }
   applyUserVoiceRecording(e) {
     if (!(0, y.Z)(d.Z)) return;

@@ -13,13 +13,13 @@ let r = (0, n(97519).U)(e => ({
         utmSourceCurrent: n,
         utmMediumCurrent: r,
         utmCampaignCurrent: i,
-        utmContentCurrent: o
+        utmContentCurrent: a
       } = t;
       return e({
         utmSourceCurrent: n,
         utmMediumCurrent: r,
         utmCampaignCurrent: i,
-        utmContentCurrent: o
+        utmContentCurrent: a
       })
     },
     getUtmCurrentContext: () => r.getState()

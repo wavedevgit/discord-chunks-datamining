@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   CC: () => i,
-  ov: () => o
+  ov: () => a
 });
 let r = (0, n(818083).B)({
     kind: "user",
@@ -29,7 +29,7 @@ let r = (0, n(818083).B)({
     });
     return e
   },
-  o = () => {
+  a = () => {
     let {
       enabled: e
     } = r.getCurrentConfig({

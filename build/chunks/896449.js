@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(481060),
-  a = n(239091),
+  a = n(481060),
+  o = n(239091),
   s = n(299206),
   l = n(810568),
   c = n(168524),
@@ -84,7 +84,7 @@ function y(e) {
     trackEntryPointImpression: !0,
     sourceUserId: y.author_id
   });
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: I,
     align: "top",
     position: "right",
@@ -93,36 +93,36 @@ function y(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(o.v2r, {
+      return (0, r.jsx)(a.v2r, {
         navId: b,
         onClose: () => {
-          (0, a.Zy)(), t()
+          (0, o.Zy)(), t()
         },
         "aria-label": _.intl.string(_.t.liqwPD),
         onSelect: O,
         children: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsxs)(o.kSQ, {
-            children: [T, null != R && (0, r.jsx)(o.sNh, {
+          children: [(0, r.jsxs)(a.kSQ, {
+            children: [T, null != R && (0, r.jsx)(a.sNh, {
               id: "game-profile",
               label: _.intl.string(_.t.f7aVGh),
               action: e => {
                 R(e), null == S || S()
               }
             })]
-          }), (0, r.jsxs)(o.kSQ, {
+          }), (0, r.jsxs)(a.kSQ, {
             children: [A, C]
           })]
         })
       })
     },
-    children: e => (0, r.jsx)(o.ua7, {
+    children: e => (0, r.jsx)(a.ua7, {
       text: _.intl.string(_.t.UKOtz8),
-      children: t => (0, r.jsx)(o.P3F, E(m(E(m({
+      children: t => (0, r.jsx)(a.P3F, E(m(E(m({
         innerRef: I
       }, t), {
         className: p.menuIcon
       }), e), {
-        children: (0, r.jsx)(o.xhG, {
+        children: (0, r.jsx)(a.xhG, {
           color: "currentColor",
           size: "custom",
           width: 16,

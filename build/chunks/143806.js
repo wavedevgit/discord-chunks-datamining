@@ -10,10 +10,10 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 n.d(t, {
-  S: () => o
+  S: () => a
 }), n(953529), n(388685), n(583741);
 let i = Symbol.iterator;
-class o {
+class a {
   get length() {
     return this.items.size
   }

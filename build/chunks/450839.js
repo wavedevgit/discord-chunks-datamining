@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A7: () => a,
-  ru: () => o
+  A7: () => o,
+  ru: () => a
 });
 var r = n(818083),
   i = n(987338);
-let o = (0, r.B)({
+let a = (0, r.B)({
   kind: "user",
   id: "2025-04_dcf3p_integration_experiment",
   label: "DCF3P Integration Experiment",
@@ -29,10 +29,10 @@ let o = (0, r.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     enabled: t
-  } = o.getCurrentConfig({
+  } = a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1

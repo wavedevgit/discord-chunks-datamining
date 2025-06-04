@@ -5,8 +5,8 @@ n.d(t, {
   j: () => h
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(601964),
+  a = n(570140),
+  o = n(601964),
   s = n(594174),
   l = n(881952);
 
@@ -108,15 +108,15 @@ function v(e) {
     let {
       id: t,
       name: i,
-      icon: o,
-      features: a,
+      icon: a,
+      features: o,
       splash: s
     } = n;
     _[t] = {
       id: t,
       name: i,
-      icon: o,
-      features: null != a ? a : [],
+      icon: a,
+      features: null != o ? o : [],
       splash: s
     }
   }
@@ -132,14 +132,14 @@ function I(e) {
       name: n,
       features: r,
       icon: i,
-      splash: o
+      splash: a
     } = e;
     _[t] = {
       id: t,
       name: n,
       features: r,
       icon: i,
-      splash: o
+      splash: a
     }
   })
 }
@@ -162,15 +162,15 @@ function T(e) {
       id: e,
       name: r,
       icon: i,
-      features: o,
-      splash: a
+      features: a,
+      splash: o
     } = t.guild;
     _[n] = {
       id: e,
       name: r,
       icon: i,
-      features: null != o ? o : [],
-      splash: a
+      features: null != a ? a : [],
+      splash: o
     }
   }
 }
@@ -200,7 +200,7 @@ class P extends(r = i.ZP.Store) {
     return Object.values(d).map(e => null == e ? void 0 : e.guildId).filter(e => null != e)
   }
   getJoinRequestGuild(e) {
-    return null != _[e] ? new a.ZP(_[e]) : null
+    return null != _[e] ? new o.ZP(_[e]) : null
   }
   get hasFetchedRequestToJoinGuilds() {
     return f
@@ -213,7 +213,7 @@ class P extends(r = i.ZP.Store) {
   }
 }
 c(P, "displayName", "UserGuildJoinRequestStore");
-let R = new P(o.Z, {
+let R = new P(a.Z, {
   CONNECTION_OPEN: g,
   GUILD_JOIN_REQUEST_UPDATE: b,
   GUILD_JOIN_REQUEST_CREATE: b,

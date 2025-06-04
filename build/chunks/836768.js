@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(972959);
 let i = {
     selectedTab: n(49898).GlobalDiscoveryTab.SERVERS
   },
-  o = (0, r.H)(() => i)
+  a = (0, r.H)(() => i)

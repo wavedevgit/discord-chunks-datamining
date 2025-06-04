@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   l = n(906732),
   c = n(835473),
@@ -23,13 +23,13 @@ function E(e) {
   let {
     user: t,
     guildId: n,
-    channelId: o,
+    channelId: a,
     applicationId: E,
     isGameRelationship: b = !1,
     className: y
   } = e, {
     themeType: O
-  } = (0, p.z)(), v = O === h.lY.MODAL_V2, I = f.ZP.getName(n, o, t), {
+  } = (0, p.z)(), v = O === h.lY.MODAL_V2, I = f.ZP.getName(n, a, t), {
     trackUserProfileAction: S
   } = (0, _.KZ)(), {
     newestAnalyticsLocation: T
@@ -51,7 +51,7 @@ function E(e) {
     })
   }, [N, b, S]), R = null != E, w = (0, c.q)(E);
   return R && null == w ? null : (0, r.jsxs)("div", {
-    className: a()(g.container, y),
+    className: o()(g.container, y),
     children: [R ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: m.intl.format(b ? m.t.syHjLC : m.t.V15uUF, {
@@ -72,7 +72,7 @@ function E(e) {
       className: g.buttonContainer,
       children: [(0, r.jsx)(s.zxk, {
         look: s.zxk.Looks.FILLED,
-        color: v ? s.zxk.Colors.PRIMARY : a()(s.zxk.Colors.BRAND, g.color),
+        color: v ? s.zxk.Colors.PRIMARY : o()(s.zxk.Colors.BRAND, g.color),
         size: s.zxk.Sizes.SMALL,
         className: g.button,
         onClick: C,

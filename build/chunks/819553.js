@@ -6,8 +6,8 @@ n.d(t, {
   uX: () => l
 });
 var r, i = n(442837),
-  o = n(570140),
-  a = n(981631);
+  a = n(570140),
+  o = n(981631);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,7 +81,7 @@ function b() {
 }
 class y extends(r = i.ZP.Store) {
   shouldShowOnboarding(e) {
-    return e !== a.ME && e !== a.I_8 && !!c(u[e])
+    return e !== o.ME && e !== o.I_8 && !!c(u[e])
   }
   getOnboardingStatus(e) {
     return u[e]
@@ -95,7 +95,7 @@ class y extends(r = i.ZP.Store) {
   }
 }
 s(y, "displayName", "GuildOnboardingStore");
-let O = new y(o.Z, {
+let O = new y(a.Z, {
   LOGOUT: f,
   GUILD_DELETE: g,
   GUILD_ONBOARDING_START: _,

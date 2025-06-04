@@ -5,8 +5,8 @@ n.d(t, {
 }), n(415506), n(539854), n(388685);
 var r = n(956067),
   i = n(930145),
-  o = n(350167),
-  a = n(503461);
+  a = n(350167),
+  o = n(503461);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,10 +58,10 @@ class d {
   }
   close() {
     var e;
-    this.lastState = a.hi.Closed, null == (e = this.raw) || e.close(), this.raw = null, o.r.removeCompletionCallback(this.databaseStateCallback)
+    this.lastState = o.hi.Closed, null == (e = this.raw) || e.close(), this.raw = null, a.r.removeCompletionCallback(this.databaseStateCallback)
   }
   disable(e) {
-    return null == this.raw ? Promise.resolve() : (this.lastState = a.hi.Disabled, this.execute({
+    return null == this.raw ? Promise.resolve() : (this.lastState = o.hi.Disabled, this.execute({
       type: "db.disable",
       handle: 0,
       reason: e
@@ -70,7 +70,7 @@ class d {
   execute(e, t) {
     if (null == this.raw) throw Error("database is no longer open (database: ".concat(this));
     let n = "key" in e ? e.key[0] : e.table,
-      i = () => o.r.executeAsync(null != t ? t : e.type, t => {
+      i = () => a.r.executeAsync(null != t ? t : e.type, t => {
         this.raw.execute(t, u(l({}, e), {
           handle: 0
         }))
@@ -107,12 +107,12 @@ class d {
     })
   }
   instantaneousState() {
-    return null == this.raw ? a.hi.Closed : this.lastState = this.executeSync({
+    return null == this.raw ? o.hi.Closed : this.lastState = this.executeSync({
       type: "db.state"
     })
   }
   async instantaneousStateAsync() {
-    return null == this.raw ? a.hi.Closed : this.lastState = await this.execute({
+    return null == this.raw ? o.hi.Closed : this.lastState = await this.execute({
       type: "db.state"
     })
   }
@@ -127,7 +127,7 @@ class d {
     }, t) : Promise.resolve())
   }
   constructor(e) {
-    s(this, "name", void 0), s(this, "handle", void 0), s(this, "raw", void 0), s(this, "lastState", void 0), s(this, "databaseStateCallback", void 0), this.raw = e, this.name = e.name, this.lastState = a.hi.Open, this.handle = e.handle, this.databaseStateCallback = o.r.addDatabaseStateCallback((e, t) => {
+    s(this, "name", void 0), s(this, "handle", void 0), s(this, "raw", void 0), s(this, "lastState", void 0), s(this, "databaseStateCallback", void 0), this.raw = e, this.name = e.name, this.lastState = o.hi.Open, this.handle = e.handle, this.databaseStateCallback = a.r.addDatabaseStateCallback((e, t) => {
       this.handle === e && (this.lastState = t)
     })
   }

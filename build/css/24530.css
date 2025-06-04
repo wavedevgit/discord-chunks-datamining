@@ -1,11 +1,11 @@
 /**
   Module ID: 24530
-  Original File Name: 3276ae4bc230d584
+  Original File Name: 3d591203a5f2820e
 **/
 .pickerWrapper_a32ef3 {
     display: flex;
-    gap: 8px;
-    height: 120px
+    gap: 12px;
+    height: 160px
 }
 
 .saturation_a32ef3 {
@@ -29,14 +29,14 @@
     border-radius: 50%;
     box-shadow: 0 3px 13.2px 0 rgba(0,0,0,.15),0 1px 2px 0 rgba(0,0,0,.05);
     display: flex;
-    height: 6px;
+    height: 8px;
     justify-content: center;
     transform: translate(-8px,-8px);
-    width: 6px
+    width: 8px
 }
 
 .huePointer_a32ef3 {
-    transform: translate(3px,-8px)
+    transform: translate(2px,-8px)
 }
 
-/*# sourceMappingURL=3276ae4bc230d584.css.map*/
+/*# sourceMappingURL=3d591203a5f2820e.css.map*/

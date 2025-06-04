@@ -5,9 +5,9 @@ n.d(t, {
 }), n(539854), n(953529), n(512722);
 var r = n(913527),
   i = n.n(r),
-  o = n(705512);
+  a = n(705512);
 n(812206);
-var a = n(55e3);
+var o = n(55e3);
 n(220082);
 var s = n(693824),
   l = n(690725);
@@ -71,14 +71,14 @@ let g = (e, t) => m({
           days: t
         })
       })
-    }(0, d.ig)(e) === o.o.GLOBAL && n.push({
+    }(0, d.ig)(e) === a.o.GLOBAL && n.push({
       iconPath: _.Op,
       text: p.intl.string(p.t.kAlUs7)
     });
-    let a = (0, d.dw)(e);
-    if (null != a && n.push({
+    let o = (0, d.dw)(e);
+    if (null != o && n.push({
         iconPath: _.Z,
-        text: (0, d.GE)(a)
+        text: (0, d.GE)(o)
       }), (0, d.V5)(e)) {
       let {
         text: t
@@ -107,7 +107,7 @@ let g = (e, t) => m({
       timestamp: n,
       colors: r,
       description: i,
-      entry: o,
+      entry: a,
       numAvatars: l
     } = t, c = r.map((e, t) => ({
       color: e,
@@ -133,7 +133,7 @@ let g = (e, t) => m({
     }, {
       w: _.Pu,
       h: _.Pu
-    }, 8) === s.vP.Failure && e.drawPath(a.C, {
+    }, 8) === s.vP.Failure && e.drawPath(o.C, {
       x: _.sB,
       y: _.sB
     }, !0, 2 + 2 / 3);
@@ -157,7 +157,7 @@ let g = (e, t) => m({
       h: 32,
       w: _.kC
     }, !0);
-    let d = E(o, n);
+    let d = E(a, n);
     (0, f.J)({
       canvas: e,
       badges: d,
@@ -171,15 +171,15 @@ let g = (e, t) => m({
       entry: n,
       avatarSrcs: r,
       description: i,
-      timestamp: o,
-      colors: a,
+      timestamp: a,
+      colors: o,
       channelId: c
     } = e, u = n.extra.game_name, d = g(r, t);
     return await (0, l.f)({
       assetsToLoad: d,
       drawImage: e => b(e, {
-        timestamp: o,
-        colors: a,
+        timestamp: a,
+        colors: o,
         description: i,
         entry: n,
         numAvatars: r.length

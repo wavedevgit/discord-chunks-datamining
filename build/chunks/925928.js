@@ -7,25 +7,25 @@ n.d(t, {
 });
 var r = n(913527),
   i = n.n(r),
-  o = n(388032);
-let a = 60,
+  a = n(388032);
+let o = 60,
   s = 3600,
   l = 86400,
   c = 2592e3,
   u = 31104e3,
   d = () => ({
-    minutes: o.t["XIGt+f"],
-    hours: o.t.rhY1Rk,
-    days: o.t.GBLpQ0,
-    months: o.t.XzBNbW,
-    years: o.t.I1E8p6
+    minutes: a.t["XIGt+f"],
+    hours: a.t.rhY1Rk,
+    days: a.t.GBLpQ0,
+    months: a.t.XzBNbW,
+    years: a.t.I1E8p6
   }),
   f = () => ({
-    minutes: o.t["GqQ/Y2"],
-    hours: o.t.c5zfWV,
-    days: o.t.amjnaG,
-    months: o.t.SoON3d,
-    years: o.t["12B3RU"]
+    minutes: a.t["GqQ/Y2"],
+    hours: a.t.c5zfWV,
+    days: a.t.amjnaG,
+    months: a.t.SoON3d,
+    years: a.t["12B3RU"]
   });
 
 function _(e) {
@@ -33,17 +33,17 @@ function _(e) {
     seconds: t,
     getFormatter: n
   } = e, r = n(), i = "";
-  return t < a ? o.intl.formatToPlainString(r.minutes, {
+  return t < o ? a.intl.formatToPlainString(r.minutes, {
     minutes: 1
-  }) : t < s ? o.intl.formatToPlainString(r.minutes, {
-    minutes: Math.floor(t / a)
-  }) : t < l ? o.intl.formatToPlainString(r.hours, {
+  }) : t < s ? a.intl.formatToPlainString(r.minutes, {
+    minutes: Math.floor(t / o)
+  }) : t < l ? a.intl.formatToPlainString(r.hours, {
     hours: Math.floor(t / s)
-  }) : t < c ? o.intl.formatToPlainString(r.days, {
+  }) : t < c ? a.intl.formatToPlainString(r.days, {
     days: Math.floor(t / l)
-  }) : t < u ? o.intl.formatToPlainString(r.months, {
+  }) : t < u ? a.intl.formatToPlainString(r.months, {
     months: Math.floor(t / c)
-  }) : o.intl.formatToPlainString(r.years, {
+  }) : a.intl.formatToPlainString(r.years, {
     years: Math.floor(t / u)
   })
 }

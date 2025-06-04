@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(442837),
   i = n(496929),
-  o = n(493773),
-  a = n(594174),
+  a = n(493773),
+  o = n(594174),
   s = n(78839),
   l = n(431),
   c = n(580130),
@@ -17,7 +17,7 @@ var r = n(442837),
   _ = n(981631);
 let p = 2592e5;
 async function h(e) {
-  let t = a.default.getCurrentUser(),
+  let t = o.default.getCurrentUser(),
     n = (0, u.I5)(t);
   null == t || n || c.Z.fetchedEndedEntitlements || await (0, i.p0)({
     entitlementType: _.qc2.FRACTIONAL_REDEMPTION,
@@ -28,11 +28,11 @@ async function h(e) {
 }
 
 function m() {
-  let e = (0, r.e7)([a.default], () => a.default.getCurrentUser()),
+  let e = (0, r.e7)([o.default], () => o.default.getCurrentUser()),
     t = s.ZP.getPremiumTypeSubscription(),
     n = null != t && !t.isBoostOnly,
     l = (0, r.e7)([c.Z], () => c.Z.getReverseTrialEntitlement(!1));
-  return (0, o.ZP)(() => {
+  return (0, a.ZP)(() => {
     null != e && (0, u.I5)(e) && !n && (c.Z.fetchedAllEntitlements || c.Z.fetchingAllEntitlements || (0, i.p0)({
       entitlementType: _.qc2.FRACTIONAL_REDEMPTION
     }))

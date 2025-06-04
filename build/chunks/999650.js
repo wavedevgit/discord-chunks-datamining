@@ -10,8 +10,8 @@ n.d(t, {
 }), n(388685), n(413496), n(433524), n(35282), n(781311), n(704826), n(290780);
 var r = n(658722),
   i = n.n(r),
-  o = n(392711),
-  a = n.n(o),
+  a = n(392711),
+  o = n.n(a),
   s = n(913527),
   l = n.n(s),
   c = n(984933),
@@ -76,7 +76,7 @@ function A() {
 
 function N() {
   let e = new Date().getFullYear();
-  return new Set(a().range(2015, e + 1).map(e => e.toString()))
+  return new Set(o().range(2015, e + 1).map(e => e.toString()))
 }
 
 function C(e, t) {
@@ -124,8 +124,8 @@ function B(e) {
 
 function F(e, t) {
   let n, r, i = e.getFullMatch().trim().toLowerCase(),
-    o = w()[i];
-  return null != o ? [n, r] = o() : T().has(i) ? [n, r] = R(i, "MMMM", "month") : A().has(i) ? [n, r] = R(i, "dddd", "day") : N().has(i) ? [n, r] = R(i, "YYYY", "year") : [n, r] = R(i, b.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
+    a = w()[i];
+  return null != a ? [n, r] = a() : T().has(i) ? [n, r] = R(i, "MMMM", "month") : A().has(i) ? [n, r] = R(i, "dddd", "day") : N().has(i) ? [n, r] = R(i, "YYYY", "year") : [n, r] = R(i, b.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), !0)
 }
 
 function V(e) {
@@ -133,7 +133,7 @@ function V(e) {
     n = _.Z.getGuildId(),
     r = c.ZP.getChannels(n)[c.sH].concat(c.ZP.getChannels(n)[c.Zb]),
     i = c.ZP.getTextChannelNameDisambiguations(n),
-    o = a().chain(r).map(e => {
+    a = o().chain(r).map(e => {
       let {
         channel: t
       } = e;
@@ -142,7 +142,7 @@ function V(e) {
       var n, r;
       return t === (null != (r = null == (n = i[e.id]) ? void 0 : n.name) ? r : e.name)
     }).value();
-  return null != o && (e.setData("channel", o), !0)
+  return null != a && (e.setData("channel", a), !0)
 }
 
 function Z(e) {
@@ -165,7 +165,7 @@ function H() {
 }
 
 function Y() {
-  return a().sample(H())
+  return o().sample(H())
 }
 
 function W(e, t, n) {
@@ -177,7 +177,7 @@ function W(e, t, n) {
 
 function K(e, t, n) {
   let r = e.toLocaleLowerCase();
-  return a()(n).filter(e => i()(r, e.toLocaleLowerCase())).take(t).map(e => ({
+  return o()(n).filter(e => i()(r, e.toLocaleLowerCase())).take(t).map(e => ({
     text: e
   })).value()
 }
@@ -185,20 +185,20 @@ function K(e, t, n) {
 function z(e, t) {
   let n, r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 10,
     i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-    o = d.Z.getSearchType(t),
-    a = {
+    a = d.Z.getSearchType(t),
+    o = {
       query: e = e.split("#")[0],
       limit: r,
       request: i
     };
-  switch (o) {
+  switch (a) {
     case b.aib.GUILD:
-      n = m.ZP.queryGuildUsers(S(v({}, a), {
+      n = m.ZP.queryGuildUsers(S(v({}, o), {
         guildId: t
       }));
       break;
     case b.aib.CHANNEL:
-      n = m.ZP.queryChannelUsers(S(v({}, a), {
+      n = m.ZP.queryChannelUsers(S(v({}, o), {
         channelId: t
       }));
       break;
@@ -390,7 +390,7 @@ function $() {
           null != n && (r.splice(r.indexOf(n), 1), r.unshift(n))
         }
         let i = c.ZP.getTextChannelNameDisambiguations(t);
-        return a()(r).take(n).map(e => {
+        return o()(r).take(n).map(e => {
           var t, n;
           return {
             text: "".concat(null != (n = null == (t = i[e.id]) ? void 0 : t.name) ? n : e.name),
@@ -438,7 +438,7 @@ function et() {
 
 function en(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(ee).length;
-  return a()(ee).keys().filter(e => b.TNx.test(e)).filter(e => null != ee[e].key).map(e => ({
+  return o()(ee).keys().filter(e => b.TNx.test(e)).filter(e => null != ee[e].key).map(e => ({
     token: e,
     text: ee[e].key
   })).filter(t => {

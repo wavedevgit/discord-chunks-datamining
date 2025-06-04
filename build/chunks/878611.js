@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(239091),
-  o = n(644956),
-  a = n(819366),
+  a = n(644956),
+  o = n(819366),
   s = n(592125);
 
 function l(e, t, n) {
@@ -49,16 +49,16 @@ function d(e, t) {
   }), e
 }
 let f = {
-  handleUserContextMenu(e, t, o, a) {
+  handleUserContextMenu(e, t, a, o) {
     let l = s.Z.getChannel(t);
-    null != l && (0, i.jW)(a, async () => {
+    null != l && (0, i.jW)(o, async () => {
       let {
         default: t
       } = await Promise.all([n.e("14006"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("32152")]).then(n.bind(n, 757387));
       return n => (0, r.jsx)(t, d(c({}, n), {
         user: e,
         channel: l,
-        guildId: o
+        guildId: a
       }))
     })
   },
@@ -71,11 +71,11 @@ let f = {
       roleName: f,
       viewingChannelId: _
     } = e;
-    return null == i && (null != u || "@everyone" === f || "@here" === f) ? (0, r.jsx)(o.Z, d(c({
+    return null == i && (null != u || "@everyone" === f || "@here" === f) ? (0, r.jsx)(a.Z, d(c({
       inlinePreview: n.formatInline
     }, e), {
       children: t(e.content, n)
-    }), n.key) : (0, r.jsx)(a.Z, {
+    }), n.key) : (0, r.jsx)(o.Z, {
       className: "mention",
       userId: i,
       channelId: s,

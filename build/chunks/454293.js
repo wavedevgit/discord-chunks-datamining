@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  M: () => o
+  M: () => a
 });
 var r = n(960048),
   i = n(536150);
-async function o(e, t) {
+async function a(e, t) {
   try {
     await (0, i.i)(e, {
       is_sharing: t

@@ -6,8 +6,8 @@ n.d(t, {
   ZP: () => v
 });
 var r, i = n(31775),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(570140);
 
 function l(e, t, n) {
@@ -53,8 +53,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,8 +62,8 @@ function f(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var p = function(e) {
@@ -75,7 +75,7 @@ let h = (e, t) => "".concat(e, "-").concat(t),
     rates: {
       voice_message: 1
     },
-    positions: new(o())({
+    positions: new(a())({
       max: m
     })
   },
@@ -101,7 +101,7 @@ function y(e) {
   } = e;
   n > .5 && n < .95 * r ? E.positions.set(t, n) : E.positions.del(t)
 }
-class O extends(r = a.ZP.DeviceSettingsStore) {
+class O extends(r = o.ZP.DeviceSettingsStore) {
   initialize(e) {
     let t = null != e ? e : {},
       {

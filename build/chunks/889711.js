@@ -8,8 +8,8 @@ n.d(t, {
 }), n(388685);
 var r = n(731965);
 let i = new WeakMap,
-  o = new Map,
-  a = new WeakMap;
+  a = new Map,
+  o = new WeakMap;
 
 function s(e) {
   return new e.ResizeObserver(e => {
@@ -18,7 +18,7 @@ function s(e) {
         let e = t.target,
           n = i.get(e);
         if (null == n) continue;
-        let r = o.get(n);
+        let r = a.get(n);
         null != r && r(t)
       }
     })
@@ -27,10 +27,10 @@ function s(e) {
 
 function l(e, t, n) {
   var r, l;
-  i.set(t, e), o.set(e, n);
+  i.set(t, e), a.set(e, n);
   let c = null != (l = null == (r = t.ownerDocument) ? void 0 : r.defaultView) ? l : window,
-    u = a.get(c);
-  return null == u && (u = s(c), a.set(c, u)), u
+    u = o.get(c);
+  return null == u && (u = s(c), o.set(c, u)), u
 }
 
 function c(e, t) {
@@ -42,5 +42,5 @@ function u(e, t) {
 }
 
 function d(e, t) {
-  o.delete(e), null != t && i.delete(t)
+  a.delete(e), null != t && i.delete(t)
 }

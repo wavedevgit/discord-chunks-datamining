@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(818083),
   i = n(984134);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,14 +15,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -56,7 +56,7 @@ let c = {
     treatments: [{
       id: 1,
       label: "Persist impression times and opt-outs to backend; show mobile opt-outs",
-      config: l(a({}, c), {
+      config: l(o({}, c), {
         persistToBackend: !0,
         showMobileOptOuts: !0
       })

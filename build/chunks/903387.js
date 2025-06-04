@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(58406);
 class i extends r.g {
@@ -17,4 +17,4 @@ class i extends r.g {
   }
   openAlertModal(e) {}
 }
-let o = new i
+let a = new i

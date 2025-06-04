@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => D
 });
 var r, i = n(392711),
-  o = n.n(i),
-  a = n(442837),
+  a = n.n(i),
+  o = n(442837),
   s = n(544891),
   l = n(570140),
   c = n(592125),
@@ -138,7 +138,7 @@ function N(e) {
     channelId: n,
     recipients: r
   } = e;
-  E[n] = o().union(null != (t = E[n]) ? t : [], null != r ? r : ["all"])
+  E[n] = a().union(null != (t = E[n]) ? t : [], null != r ? r : ["all"])
 }
 
 function C(e) {
@@ -147,12 +147,12 @@ function C(e) {
     messageId: n,
     region: r,
     ringing: i
-  } = e, o = g[t], a = null != o && (o.regionUpdated || o.region !== r);
+  } = e, a = g[t], o = null != a && (a.regionUpdated || a.region !== r);
   g[t] = m(p({}, g[t]), {
     messageId: n,
     region: r,
     ringing: i,
-    regionUpdated: a
+    regionUpdated: o
   })
 }
 
@@ -179,7 +179,7 @@ function R(e) {
   } = e;
   null == t && (E = {})
 }
-class w extends(r = a.ZP.Store) {
+class w extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(d.Z, u.Z)
   }

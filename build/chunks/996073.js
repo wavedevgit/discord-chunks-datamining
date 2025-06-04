@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(73800),
   i = n(442837),
-  o = n(230711),
-  a = n(607070),
+  a = n(230711),
+  o = n(607070),
   s = n(663389),
   l = n(526761),
   c = n(981631);
@@ -47,7 +47,7 @@ let f = Object.freeze({
   }),
   _ = function(e, t, n) {
     let l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0,
-      c = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
+      c = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
       u = (0, i.e7)([s.Z], () => s.Z.getScrollPosition());
     (0, r.useEffect)(() => {
       let r = e.current;
@@ -55,7 +55,7 @@ let f = Object.freeze({
         let e = requestAnimationFrame(() => {
           r.scrollIntoView(d({
             behavior: c ? "auto" : "smooth"
-          }, n)), o.Z.clearScrollPosition(f[t])
+          }, n)), a.Z.clearScrollPosition(f[t])
         });
         return () => cancelAnimationFrame(e)
       }, l)

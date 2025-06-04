@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(685072),
-  o = n(481060),
-  a = n(77880),
+  a = n(481060),
+  o = n(77880),
   s = n(871499);
 
 function l(e, t, n) {
@@ -36,8 +36,8 @@ function u(e, t) {
   if (null == e) return {};
   var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -45,8 +45,8 @@ function u(e, t) {
 function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let f = function(e) {
@@ -55,7 +55,7 @@ let f = function(e) {
   } = e, n = u(e, ["iconComponent"]);
   let {
     changeLeaveCallAndActivityIcons: l
-  } = (0, a.A)({
+  } = (0, o.A)({
     location: "DisconnectButton"
   }), {
     Component: d,
@@ -63,7 +63,7 @@ let f = function(e) {
   } = (0, i.K)();
 
   function _() {
-    return null != t ? t : l ? o.PBZ : d
+    return null != t ? t : l ? a.PBZ : d
   }
   return (0, r.jsx)(s.d, c({
     isTrayButton: !1,

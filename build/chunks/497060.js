@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  k6: () => a,
+  k6: () => o,
   kH: () => l,
   pB: () => s
 });
@@ -30,7 +30,7 @@ let i = (0, r.B)({
       }
     }]
   }),
-  o = (0, r.B)({
+  a = (0, r.B)({
     kind: "user",
     id: "2025-01_friend_requests_alerts_new_users",
     label: "Friend Request Setting Defaults",
@@ -54,11 +54,11 @@ let i = (0, r.B)({
       }
     }]
   }),
-  a = e => 2 === i.getCurrentConfig({
+  o = e => 2 === i.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
-  }).bucket || 2 === o.getCurrentConfig({
+  }).bucket || 2 === a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
@@ -67,7 +67,7 @@ let i = (0, r.B)({
     location: e
   }, {
     autoTrackExposure: !1
-  }).bucket || 1 === o.getCurrentConfig({
+  }).bucket || 1 === a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
@@ -78,7 +78,7 @@ let i = (0, r.B)({
       }, {
         autoTrackExposure: !1
       }).bucket,
-      n = o.useExperiment({
+      n = a.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1

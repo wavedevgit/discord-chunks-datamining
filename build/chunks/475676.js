@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(835473),
   l = n(297781),
   c = n(443487),
@@ -35,7 +35,7 @@ function I(e) {
   });
   return (0, r.jsxs)("div", {
     className: v.gameTitleContainer,
-    children: [i, (0, r.jsx)(a.Text, {
+    children: [i, (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       className: v.gameTitle,
       children: t.name
@@ -76,7 +76,7 @@ function T(e) {
       leaderboardId: N.extra.leaderboard_id,
       intervalStart: null != (E = null == P ? void 0 : P.interval_start) ? E : ""
     }),
-    w = (0, o.e7)([u.default], () => u.default.getId()),
+    w = (0, a.e7)([u.default], () => u.default.getId()),
     [D, L] = i.useMemo(() => {
       let e = R.find(e => e.userId === w),
         t = R[0],
@@ -84,7 +84,7 @@ function T(e) {
         r = null == P ? void 0 : P.users.find(e => e.user_id === (null == n ? void 0 : n.userId));
       return [n, r]
     }, [P, R, w]),
-    x = (0, o.e7)([d.default], () => d.default.getUser(null == D ? void 0 : D.userId)),
+    x = (0, a.e7)([d.default], () => d.default.getUser(null == D ? void 0 : D.userId)),
     k = _.ZP.getName(C, void 0, x);
   S({
     leaderboard: P,
@@ -111,7 +111,7 @@ function T(e) {
     children: [(0, r.jsxs)(c.e$, {
       children: [(0, r.jsx)(I, {
         application: M
-      }), (0, r.jsx)(a.LZC, {
+      }), (0, r.jsx)(o.LZC, {
         size: 2
       }), (0, r.jsx)(c.ll, {
         children: y
@@ -139,7 +139,7 @@ function A(e) {
     children: [(0, r.jsxs)(c.e$, {
       children: [(0, r.jsx)(I, {
         application: n
-      }), (0, r.jsx)(a.LZC, {
+      }), (0, r.jsx)(o.LZC, {
         size: 2
       }), (0, r.jsx)(c.ll, {
         children: O.intl.string(O.t["t+b0DA"])
