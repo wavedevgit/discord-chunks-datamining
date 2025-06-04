@@ -33,8 +33,8 @@ var r = n(255367),
   A = n(119850),
   Z = n(938736),
   x = n(227140),
-  w = n(474936),
-  L = n(981631),
+  L = n(474936),
+  w = n(981631),
   R = n(921944),
   D = n(388032),
   k = n(419720);
@@ -84,18 +84,18 @@ let M = e => {
       } = (0, d.Z)({
         forceFetch: !0
       }),
-      [ea, eo] = (0, h.bf)(er !== w.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
+      [ea, eo] = (0, h.bf)(er !== L.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
         showAfterTimestamp: ei.valueOf(),
         cooldownDurationMs: 0
       }),
-      es = (null == X ? void 0 : X.trial_id) === w.a7,
+      es = (null == X ? void 0 : X.trial_id) === L.a7,
       [ec, eu] = (0, h.US)(J ? [o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2] : [], void 0, !0);
     if (i.useEffect(() => {
         !0 === B && null != ec && eu(R.L.AUTO_DISMISS)
       }, [eu, B, ec]), !M({
         selected: B
       })) return null;
-    er === w.a$.NONE || J || (U = 7, E = (0, r.jsx)(y.Z, {
+    er === L.a$.NONE || J || (U = 7, E = (0, r.jsx)(y.Z, {
       className: "",
       startsAt: ei,
       endsAt: el,
@@ -145,7 +145,7 @@ let M = e => {
       text: D.intl.string(D.t.Ipxkoq),
       locationState: F,
       onClick: () => {
-        ea === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eo(R.L.TAKE_ACTION), b.default.track(L.rMx.NITRO_TAB_VISITED, {
+        ea === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eo(R.L.TAKE_ACTION), b.default.track(w.rMx.NITRO_TAB_VISITED, {
           badge_decorator: U,
           has_premium: K
         }), null != ec && eu(R.L.USER_DISMISS)
