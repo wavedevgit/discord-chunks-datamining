@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(73800),
   i = n(960048);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,14 +15,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -44,12 +44,12 @@ function l(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = (e, t, n, a, s) => {
+let c = (e, t, n, o, s) => {
   let c = (0, r.useRef)(!1),
     u = {
       componentName: e,
       sentryErrorOptions: s,
-      stateToCapture: a
+      stateToCapture: o
     },
     d = (0, r.useRef)(u);
   (0, r.useEffect)(() => {
@@ -58,17 +58,17 @@ let c = (e, t, n, a, s) => {
     let {
       componentName: e,
       sentryErrorOptions: r,
-      stateToCapture: a
+      stateToCapture: o
     } = d.current;
     if (t && !c.current) {
       c.current = !0;
       let t = setTimeout(() => {
         let t = Error("".concat(e, " is taking too long to load."));
         i.Z.setExtra({
-          loadingState: a,
+          loadingState: o,
           loadingTimeSeconds: n
-        }), i.Z.captureException(t, l(o({}, r), {
-          tags: o({}, null == r ? void 0 : r.tags)
+        }), i.Z.captureException(t, l(a({}, r), {
+          tags: a({}, null == r ? void 0 : r.tags)
         }))
       }, 1e3 * n);
       return () => {

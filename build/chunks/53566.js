@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  n: () => o
+  n: () => a
 }), n(388685), n(642613), n(539854);
 var r = n(372817);
 
@@ -14,7 +14,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   if (null == e) return {
     x: 0,
     y: 0
@@ -33,7 +33,7 @@ function a(e) {
     y: n
   }
 }
-class o {
+class a {
   disconnect() {
     window.removeEventListener("keydown", this.handleDraggedElementKeyDown, {
       capture: !0
@@ -46,7 +46,7 @@ class o {
       return e === r
     })) ? void 0 : t[0];
     null != n && (this.actions.hover([n], {
-      clientOffset: a(e)
+      clientOffset: o(e)
     }), this.currentHoveredNode = e, this.previewer.render(this.monitor), this.announcer.announceHover(e, n), null == e || e.focus())
   }
   getNextDropTarget() {
@@ -76,8 +76,8 @@ class o {
       return this.manager.getMonitor().canDropOnTarget(n) && e.push(r), e
     }, [])
   }
-  constructor(e, t, n, a, o) {
-    i(this, "targetNodes", void 0), i(this, "manager", void 0), i(this, "previewer", void 0), i(this, "announcer", void 0), i(this, "currentHoveredNode", void 0), i(this, "focusManager", void 0), i(this, "actions", void 0), i(this, "monitor", void 0), i(this, "handleDraggedElementKeyDown", void 0), this.targetNodes = t, this.manager = n, this.previewer = a, this.announcer = o, this.handleDraggedElementKeyDown = async e => {
+  constructor(e, t, n, o, a) {
+    i(this, "targetNodes", void 0), i(this, "manager", void 0), i(this, "previewer", void 0), i(this, "announcer", void 0), i(this, "currentHoveredNode", void 0), i(this, "focusManager", void 0), i(this, "actions", void 0), i(this, "monitor", void 0), i(this, "handleDraggedElementKeyDown", void 0), this.targetNodes = t, this.manager = n, this.previewer = o, this.announcer = a, this.handleDraggedElementKeyDown = async e => {
       switch (e.key) {
         case "ArrowUp":
           e.preventDefault(), e.stopPropagation(), this.hoverNode(await this.getPreviousDropTarget());

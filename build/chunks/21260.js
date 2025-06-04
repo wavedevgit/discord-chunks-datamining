@@ -8,8 +8,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(393238),
   c = n(388032),
@@ -58,8 +58,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -67,8 +67,8 @@ function h(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -78,15 +78,15 @@ function g(e) {
     maxLines: n,
     itemWidths: r,
     itemGapPx: i,
-    containerWidth: a,
-    overflowWidth: o
+    containerWidth: o,
+    overflowWidth: a
   } = e, s = 0, l = 0, c = 0;
   for (let e = 0; e < t.length; e++) {
     let u = r[e];
-    if (isNaN(u) || u > a) continue;
+    if (isNaN(u) || u > o) continue;
     let d = s === n - 1,
       f = e === t.length - 1;
-    if (!(Math.round(l + u + (d && !f ? o + i : 0)) < Math.round(a))) {
+    if (!(Math.round(l + u + (d && !f ? a + i : 0)) < Math.round(o))) {
       if (d) break;
       s++, l = 0
     }
@@ -100,8 +100,8 @@ function E(e) {
     itemGapPx: t,
     items: n,
     maxLines: r,
-    containerWidth: a
-  } = e, [o, s] = i.useState(0), l = i.useRef([]), c = i.useRef(0), u = i.useRef(0), d = i.useRef(null), f = i.useCallback((e, t) => {
+    containerWidth: o
+  } = e, [a, s] = i.useState(0), l = i.useRef([]), c = i.useRef(0), u = i.useRef(0), d = i.useRef(null), f = i.useCallback((e, t) => {
     l.current[e] = t
   }, []);
   return i.useLayoutEffect(() => {
@@ -112,18 +112,18 @@ function E(e) {
       items: n,
       maxLines: r,
       itemGapPx: t,
-      containerWidth: a,
+      containerWidth: o,
       itemWidths: l.current,
       overflowWidth: c.current
     });
     i !== u.current && (u.current = i, s(e => e + 1))
-  }, [a, t, n, r]), i.useMemo(() => ({
+  }, [o, t, n, r]), i.useMemo(() => ({
     lastVisibleIndex: u.current,
     onItemLayout: f,
     overflowItemsRef: d,
     itemWidthsRef: l,
-    version: o
-  }), [f, o])
+    version: a
+  }), [f, a])
 }
 
 function b(e) {
@@ -149,13 +149,13 @@ function y(e) {
   let {
     onItemLayout: t,
     index: n,
-    children: a
-  } = e, o = i.useRef(null);
+    children: o
+  } = e, a = i.useRef(null);
   return i.useLayoutEffect(() => {
-    null != o.current && t(n, o.current.getBoundingClientRect().width)
+    null != a.current && t(n, a.current.getBoundingClientRect().width)
   }), (0, r.jsx)("div", {
-    ref: o,
-    children: a
+    ref: a,
+    children: o
   })
 }
 
@@ -167,7 +167,7 @@ function v(e) {
   let {
     className: t,
     items: n,
-    renderItem: a,
+    renderItem: o,
     itemGapPx: s = 0,
     maxLines: d,
     renderOverflow: f
@@ -185,10 +185,10 @@ function v(e) {
     containerWidth: p
   }), v = i.useCallback(e => (0, r.jsx)(b, {
     items: e,
-    renderItem: a
-  }), [a]), I = null != f ? f : v, S = i.useMemo(() => n.slice(0, h + 1), [n, h]), T = i.useMemo(() => n.slice(h + 1), [n, h]);
+    renderItem: o
+  }), [o]), I = null != f ? f : v, S = i.useMemo(() => n.slice(0, h + 1), [n, h]), T = i.useMemo(() => n.slice(h + 1), [n, h]);
   return (0, r.jsxs)("div", {
-    className: o()(t, u.items),
+    className: a()(t, u.items),
     ref: _,
     children: [(0, r.jsxs)("div", {
       "aria-hidden": !0,
@@ -198,15 +198,15 @@ function v(e) {
         children: n.map((e, t) => (0, r.jsx)(y, {
           index: t,
           onItemLayout: m,
-          children: a(e)
+          children: o(e)
         }, O(e)))
       }), (0, r.jsx)("div", {
         className: u.overflowMeasurement,
         ref: g,
-        children: a(c.intl.formatToPlainString(c.t.vGclWl, {
+        children: o(c.intl.formatToPlainString(c.t.vGclWl, {
           count: Number("1".concat(n.length))
         }))
       })]
-    }), S.map(a), T.length > 0 && I(T)]
+    }), S.map(o), T.length > 0 && I(T)]
   })
 }

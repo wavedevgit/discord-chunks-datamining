@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  xs: () => a,
+  xs: () => o,
   zO: () => i
 });
 var r = n(570140);
@@ -11,7 +11,7 @@ let i = e => {
       presetId: e
     })
   },
-  a = () => {
+  o = () => {
     r.Z.dispatch({
       type: "UPDATE_BACKGROUND_GRADIENT_PRESET",
       presetId: null

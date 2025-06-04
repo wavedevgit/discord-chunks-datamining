@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(953529);
 var r = n(55e3),
   i = n(693824),
-  a = n(690725),
-  o = n(737583),
+  o = n(690725),
+  a = n(737583),
   s = n(169040);
 
 function l(e, t, n) {
@@ -112,15 +112,15 @@ let u = (e, t, n) => c({
         h: 32,
         w: s.kC
       }, !0);
-      let a = d(f, _);
-      (0, o.J)({
+      let o = d(f, _);
+      (0, a.J)({
         canvas: e,
-        badges: a,
+        badges: o,
         startPosition: s.Iq,
         maxWidth: s.kC
       })
     };
-    return await (0, a.f)({
+    return await (0, o.f)({
       assetsToLoad: g,
       drawImage: E,
       exportConfigs: {

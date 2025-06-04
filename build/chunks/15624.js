@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(451478);
 
@@ -9,13 +9,13 @@ function i() {
   return !0
 }
 
-function a() {
+function o() {
   return i()
 }
-let o = {
+let a = {
   canUIRequestGatewaySocket: i,
   getState: function() {
     return r.Z.isAppFocused() ? "focused" : "unfocused"
   },
-  useCanUIRequestGatewaySocket: a
+  useCanUIRequestGatewaySocket: o
 }

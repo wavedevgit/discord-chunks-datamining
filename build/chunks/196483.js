@@ -1,17 +1,17 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(53529),
   i = n(887490);
-let a = 4e3;
+let o = 4e3;
 
-function o(e, t) {
+function a(e, t) {
   let {
     apply: n,
-    deleteBackward: a,
-    deleteForward: o,
+    deleteBackward: o,
+    deleteForward: a,
     deleteFragment: l,
     insertData: u,
     insertText: d,
@@ -22,10 +22,10 @@ function o(e, t) {
     let i = r.T.currentEntry(e);
     if (null != i && (i.mergeable = !1), n >= e.history.stack.length) return;
     e.history.index = n;
-    let a = r.T.currentEntry(e);
+    let o = r.T.currentEntry(e);
     t({
-      newValue: a.value,
-      newSelection: a.selection
+      newValue: o.value,
+      newSelection: o.selection
     })
   }
   e.history = {
@@ -46,15 +46,15 @@ function o(e, t) {
     m = null;
   return e.apply = t => {
     let {
-      history: a
+      history: o
     } = e;
     n(t);
-    let o = i.bN.richValue(e);
-    o !== m && (0 === a.stack.length && (a.stack = [c(e)], a.index = 0), r.T.isSaving(e) && (s(e, t, p), p = t), h = t, m = o)
+    let a = i.bN.richValue(e);
+    a !== m && (0 === o.stack.length && (o.stack = [c(e)], o.index = 0), r.T.isSaving(e) && (s(e, t, p), p = t), h = t, m = a)
   }, e.deleteBackward = t => {
-    r.T.withSingleEntry(e, () => a(t))
-  }, e.deleteForward = t => {
     r.T.withSingleEntry(e, () => o(t))
+  }, e.deleteForward = t => {
+    r.T.withSingleEntry(e, () => a(t))
   }, e.deleteFragment = t => {
     r.T.withSingleEntry(e, () => l(t))
   }, e.insertText = t => {
@@ -66,20 +66,20 @@ function o(e, t) {
 
 function s(e, t, n) {
   let i, {
-      selection: a
+      selection: o
     } = e,
-    o = r.T.currentEntry(e),
+    a = r.T.currentEntry(e),
     s = !0,
     c = !0;
-  if ("insert_text" === t.type && 1 === t.text.length ? (i = "insert", c = !(("" === t.text || t.text.endsWith(" ")) && (null == n ? void 0 : n.type) === "insert_text" && !("" === n.text && n.text.endsWith(" ")))) : "split_node" === t.type ? i = "insert" : "remove_text" === t.type && 1 === t.text.length ? i = "delete" : (i = "other", s = !1, c = !1), "set_selection" === t.type && null != o) {
-    o.selection = a;
+  if ("insert_text" === t.type && 1 === t.text.length ? (i = "insert", c = !(("" === t.text || t.text.endsWith(" ")) && (null == n ? void 0 : n.type) === "insert_text" && !("" === n.text && n.text.endsWith(" ")))) : "split_node" === t.type ? i = "insert" : "remove_text" === t.type && 1 === t.text.length ? i = "delete" : (i = "other", s = !1, c = !1), "set_selection" === t.type && null != a) {
+    a.selection = o;
     return
   }
-  s && l(o, i) ? r.T.insertOrMergeEntry(e, i, c) : r.T.insertEntry(e, i, c)
+  s && l(a, i) ? r.T.insertOrMergeEntry(e, i, c) : r.T.insertEntry(e, i, c)
 }
 
 function l(e, t) {
-  return !((null == e ? void 0 : e.type) !== t || Date.now() - e.createdAt >= a)
+  return !((null == e ? void 0 : e.type) !== t || Date.now() - e.createdAt >= o)
 }
 
 function c(e) {

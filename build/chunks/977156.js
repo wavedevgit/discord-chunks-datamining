@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   X7: () => l,
-  Zy: () => o,
-  cB: () => a
+  Zy: () => a,
+  cB: () => o
 });
 var r = n(818083);
 let i = (0, r.B)({
@@ -27,7 +27,7 @@ let i = (0, r.B)({
       }
     }]
   }),
-  a = e => {
+  o = e => {
     let {
       location: t
     } = e;
@@ -37,7 +37,7 @@ let i = (0, r.B)({
       autoTrackExposure: !1
     }).enabled
   },
-  o = e => {
+  a = e => {
     let {
       location: t
     } = e;

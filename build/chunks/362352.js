@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Yd: () => s,
-  o0: () => o
+  o0: () => a
 });
 var r = n(818083);
 let i = (0, r.B)({
@@ -20,7 +20,7 @@ let i = (0, r.B)({
       }
     }]
   }),
-  a = (0, r.B)({
+  o = (0, r.B)({
     kind: "user",
     id: "2025-01_default_activity_status_new_users",
     label: "Guild activity status defaults",
@@ -35,11 +35,11 @@ let i = (0, r.B)({
       }
     }]
   }),
-  o = e => i.getCurrentConfig({
+  a = e => i.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
-  }).enabled || a.getCurrentConfig({
+  }).enabled || o.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1
@@ -50,7 +50,7 @@ let i = (0, r.B)({
       }, {
         autoTrackExposure: !1
       }).enabled,
-      n = a.useExperiment({
+      n = o.useExperiment({
         location: e
       }, {
         autoTrackExposure: !1

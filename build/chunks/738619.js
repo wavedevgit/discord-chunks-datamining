@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n.n(s),
   c = n(442837),
@@ -78,8 +78,8 @@ function U(e, t) {
   if (null == e) return {};
   var n, r, i = G(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -87,8 +87,8 @@ function U(e, t) {
 function G(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let B = [];
@@ -119,7 +119,7 @@ class F extends i.PureComponent {
       isRefreshChatInputEnabled: t
     } = this.props;
     return (0, r.jsxs)("div", {
-      className: o()(L.activityInviteEducation, {
+      className: a()(L.activityInviteEducation, {
         [L.activityInviteEducationFadeIn]: this.state.fadeIn
       }),
       children: [t ? (0, r.jsx)(d.whL, {
@@ -169,7 +169,7 @@ function Z(e) {
     guildId: t,
     activity: n,
     showInviteEducation: i,
-    isFocused: a,
+    isFocused: o,
     typingUsers: s,
     className: c,
     channel: u,
@@ -182,7 +182,7 @@ function Z(e) {
   } = u, y = A.default.getCurrentUser(), O = v.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == y ? void 0 : y.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => A.default.getUser(e)).filter(P.lm).map(e => R.ZP.getName(t, u.id, e)).value(), N = (0, m.R6)("TypingUsers");
   if (0 === T.length && !S && !g) return i && null != n ? (0, r.jsx)(F, {
     activity: n,
-    isFocused: a,
+    isFocused: o,
     isRefreshChatInputEnabled: N
   }) : (0, r.jsx)(V, {
     channel: u,
@@ -199,8 +199,8 @@ function Z(e) {
     b: w,
     c: x
   }) : T.length > 3 && (k = D.intl.string(D.t.uVDhqa)), (0, r.jsxs)("div", {
-    className: o()(L.typing, {
-      "stop-animation": !a,
+    className: a()(L.typing, {
+      "stop-animation": !o,
       [L.isComboing]: p && g
     }, c),
     children: [(0, r.jsxs)("div", {
@@ -229,18 +229,18 @@ function H(e) {
     channel: t,
     isThreadCreation: n = !1
   } = e, i = U(e, ["channel", "isThreadCreation"]);
-  let a = (0, c.e7)([S.Z], () => S.Z.findActivity(e => null != e.application_id)),
-    o = (0, c.e7)([E.ZP, O.default], () => E.ZP.getUserCombo(O.default.getId(), t.id)),
-    s = (0, c.e7)([y.Z, p.Z, I.Z], () => (0, _.Z)(t, a, y.Z, p.Z, I.Z)),
+  let o = (0, c.e7)([S.Z], () => S.Z.findActivity(e => null != e.application_id)),
+    a = (0, c.e7)([E.ZP, O.default], () => E.ZP.getUserCombo(O.default.getId(), t.id)),
+    s = (0, c.e7)([y.Z, p.Z, I.Z], () => (0, _.Z)(t, o, y.Z, p.Z, I.Z)),
     l = j(k({}, i), {
       baseTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
       activeTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
       showInviteEducation: s,
-      activity: a,
+      activity: o,
       typingUsers: (0, c.e7)([T.Z], () => T.Z.getTypingUsers(t.id)),
       isFocused: (0, c.e7)([N.Z], () => N.Z.isFocused()),
       guildId: t.guild_id,
-      isComboing: null != o,
+      isComboing: null != a,
       channel: t,
       isThreadCreation: n
     });

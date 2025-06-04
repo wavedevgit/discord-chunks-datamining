@@ -60,7 +60,8 @@ let d = e => {
           data: e,
           file: r,
           image: n
-        }), Promise.resolve(void 0))
+        }), Promise.resolve(void 0)),
+        title: ""
       })]
     })
   }

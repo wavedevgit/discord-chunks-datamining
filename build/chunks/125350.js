@@ -5,16 +5,16 @@ Object.defineProperty(t, "__esModule", {
 }), t.IntlManager = t.DEFAULT_LOCALE = void 0;
 let r = n(122801),
   i = n(152724),
-  a = n(731690);
+  o = n(731690);
 t.DEFAULT_LOCALE = "en-US";
-class o {
+class a {
   constructor({
     initialLocale: e = t.DEFAULT_LOCALE,
     defaultLocale: n = t.DEFAULT_LOCALE,
     formatConfig: i = r.DEFAULT_FORMAT_CONFIG,
-    forceLookupMatcher: o = !1
+    forceLookupMatcher: a = !1
   }) {
-    this.onLocaleChange = e => (this._localeSubscriptions.add(e), () => this._localeSubscriptions.delete(e)), this.currentLocale = e, this.defaultLocale = n, this.formatConfig = i, this._forceLookupMatcher = o, this.data = (0, a.makeDataFormatters)([this.currentLocale, this.defaultLocale], this.formatConfig, this._forceLookupMatcher), this._localeSubscriptions = new Set
+    this.onLocaleChange = e => (this._localeSubscriptions.add(e), () => this._localeSubscriptions.delete(e)), this.currentLocale = e, this.defaultLocale = n, this.formatConfig = i, this._forceLookupMatcher = a, this.data = (0, o.makeDataFormatters)([this.currentLocale, this.defaultLocale], this.formatConfig, this._forceLookupMatcher), this._localeSubscriptions = new Set
   }
   withFormatters(e) {
     for (let [t, n] of Object.entries(e)) this[t] = this.makeFormatFunction(n);
@@ -28,7 +28,7 @@ class o {
     return (e, r) => null == e ? null : n(e(this.currentLocale), r, t)
   }
   setLocale(e) {
-    this.currentLocale = e, this.data = (0, a.makeDataFormatters)([this.currentLocale, this.defaultLocale], this.formatConfig, this._forceLookupMatcher), this.emitLocaleChange(e)
+    this.currentLocale = e, this.data = (0, o.makeDataFormatters)([this.currentLocale, this.defaultLocale], this.formatConfig, this._forceLookupMatcher), this.emitLocaleChange(e)
   }
   emitLocaleChange(e) {
     for (let t of this._localeSubscriptions) t(e)
@@ -45,4 +45,4 @@ class o {
     return (0, i.bindFormatValues)(e, t.ast, [this.currentLocale, this.defaultLocale], this.data, this.formatConfig, n)
   }
 }
-t.IntlManager = o
+t.IntlManager = a

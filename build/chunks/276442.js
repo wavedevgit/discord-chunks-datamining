@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(512722),
   i = n.n(r),
-  a = n(554908),
-  o = n(639119),
+  o = n(554908),
+  a = n(639119),
   s = n(3409),
   l = n(626135),
   c = n(358085),
@@ -91,13 +91,13 @@ function y(e) {
     paymentAuthenticationState: R,
     selectedSkuId: w,
     isGift: k
-  }), j = (0, o.N)(m), U = !k && null != j && null != w && h.nG[j.trial_id].skus.includes(w), G = () => {
+  }), j = (0, a.N)(m), U = !k && null != j && null != w && h.nG[j.trial_id].skus.includes(w), G = () => {
     c(Object.values(S).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: f.h8.PAYMENT_TYPE
     })
   }, B = null != E ? E : G;
   i()(I, "Step should be set here");
-  let F = (0, a.Z)(() => Date.now(), [I]),
+  let F = (0, o.Z)(() => Date.now(), [I]),
     V = null != y && null == L.current ? y : f.h8.PAYMENT_TYPE;
   return (0, s.vP)({
     paymentModalArgs: M,

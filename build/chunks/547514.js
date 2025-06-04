@@ -3,20 +3,20 @@
 var r = n(751736)("iterator"),
   i = !1;
 try {
-  var a = 0,
-    o = {
+  var o = 0,
+    a = {
       next: function() {
         return {
-          done: !!a++
+          done: !!o++
         }
       },
       return: function() {
         i = !0
       }
     };
-  o[r] = function() {
+  a[r] = function() {
     return this
-  }, Array.from(o, function() {
+  }, Array.from(a, function() {
     throw 2
   })
 } catch (e) {}
@@ -28,8 +28,8 @@ e.exports = function(e, t) {
   }
   var n = !1;
   try {
-    var a = {};
-    a[r] = function() {
+    var o = {};
+    o[r] = function() {
       return {
         next: function() {
           return {
@@ -37,7 +37,7 @@ e.exports = function(e, t) {
           }
         }
       }
-    }, e(a)
+    }, e(o)
   } catch (e) {}
   return n
 }

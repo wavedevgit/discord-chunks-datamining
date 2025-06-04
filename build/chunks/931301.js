@@ -1,20 +1,20 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(981631);
 let i = !1;
 
-function a() {
+function o() {
   let {
     default: e
   } = n(808506), {
     default: t
   } = n(237997), {
-    DEV_PID: a,
-    getPID: o
-  } = n(145597), s = i ? o() === a : e.isFocusedPidOutOfProcess(), l = t.isPinned(r.Odu.TEXT);
+    DEV_PID: o,
+    getPID: a
+  } = n(145597), s = i ? a() === o : e.isFocusedPidOutOfProcess(), l = t.isPinned(r.Odu.TEXT);
   switch (!0) {
     case __OVERLAY__ && t.isInstanceLocked():
       return r.ADE.OVERLAY_LOCKED_ACTIVATED;

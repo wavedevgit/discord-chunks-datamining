@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => m
 });
 var r, i = n(442837),
-  a = n(570140),
-  o = n(37113),
+  o = n(570140),
+  a = n(37113),
   s = n(65154);
 
 function l(e, t, n) {
@@ -16,9 +16,9 @@ function l(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let c = o.tI.PRESET_VIDEO,
-  u = o.LY.RESOLUTION_720,
-  d = o.ws.FPS_30,
+let c = a.tI.PRESET_VIDEO,
+  u = a.LY.RESOLUTION_720,
+  d = a.ws.FPS_30,
   f = !0;
 
 function _(e) {
@@ -37,14 +37,14 @@ function p(e) {
     resolution: n,
     frameRate: r,
     soundshareEnabled: i
-  } = e, a = !1;
-  return null != t && (c = t, a = !0), null != n && (u = n, a = !0), null != r && (d = r, a = !0), null != i && (f = i, a = !0), a
+  } = e, o = !1;
+  return null != t && (c = t, o = !0), null != n && (u = n, o = !0), null != r && (d = r, o = !0), null != i && (f = i, o = !0), o
 }
 class h extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n;
-      c = null != (t = e.preset) ? t : o.tI.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
+      c = null != (t = e.preset) ? t : a.tI.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
     }
   }
   getState() {
@@ -57,7 +57,7 @@ class h extends(r = i.ZP.PersistedStore) {
   }
 }
 l(h, "displayName", "ApplicationStreamingSettingsStore"), l(h, "persistKey", "ApplicationStreamingSettingStore");
-let m = new h(a.Z, {
+let m = new h(o.Z, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: _,
   STREAM_UPDATE_SETTINGS: p
 })

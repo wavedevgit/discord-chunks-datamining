@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   D: () => i,
-  f: () => a
+  f: () => o
 });
 var r = n(866442);
 
@@ -14,7 +14,7 @@ function i(e) {
   }
 }
 
-function a(e) {
+function o(e) {
   return {
     primaryColor: null == e.primaryColor ? void 0 : (0, r.Rf)(e.primaryColor),
     secondaryColor: null == e.secondaryColor ? void 0 : (0, r.Rf)(e.secondaryColor),

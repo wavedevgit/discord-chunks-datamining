@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685), n(704826), n(35282);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(399606),
   l = n(343817),
   c = n(481060),
@@ -33,16 +33,16 @@ function N(e) {
   let {
     channel: t,
     transitionState: n,
-    sourceAnalyticsLocations: a,
+    sourceAnalyticsLocations: o,
     onClose: N
   } = e, C = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), P = (0, s.e7)([b.Z], () => b.Z.getMediaSessionId()), [R, w] = i.useState(null != C ? C : ""), [D, L] = i.useState(!1), [x, k] = i.useState(null), M = (0, s.e7)([y.default], () => y.default.getCurrentUser()), j = R.length > A, U = (0, g.Q3)("VoiceChannelStatusModal");
   i.useEffect(() => {
     O.default.track(v.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
       guild_id: t.guild_id,
-      location_stack: a
+      location_stack: o
     })
-  }, [t.guild_id, a]);
+  }, [t.guild_id, o]);
   let G = e => {
       k(new l.Hx(e, e.status).getAnyErrorMessage())
     },
@@ -68,9 +68,9 @@ function N(e) {
         r = R.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = E.ZP.parse(void 0, R),
         {
-          hasErrors: o
+          hasErrors: a
         } = B(i);
-      if (!o) {
+      if (!a) {
         try {
           let e = await u.ZP.updateVoiceChannelStatus(t.id, i.content);
           204 === e.status ? (O.default.track(v.rMx.VOICE_CHANNEL_TOPIC_SET, {
@@ -79,7 +79,7 @@ function N(e) {
             media_session_id: P,
             raw_length: n,
             text_length: r,
-            location_stack: a
+            location_stack: o
           }), N()) : G(e)
         } catch (e) {
           G(e)
@@ -98,7 +98,7 @@ function N(e) {
     children: (0, r.jsxs)(c.Y0X, {
       transitionState: n,
       size: c.CgR.SMALL,
-      className: o()(S.modal, S.gradientBorder),
+      className: a()(S.modal, S.gradientBorder),
       children: [(0, r.jsxs)(c.hzk, {
         className: S.container,
         children: [(0, r.jsxs)(c.xBx, {

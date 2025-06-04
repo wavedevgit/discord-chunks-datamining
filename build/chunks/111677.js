@@ -25,12 +25,12 @@ function i(e) {
     autoTrackExposure: n,
     disable: i = !1
   } = e, {
-    enabled: a
+    enabled: o
   } = r.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
     disable: i
   });
-  return a
+  return o
 }

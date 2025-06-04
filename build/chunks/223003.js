@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  default: () => o
+  default: () => a
 });
 var r = n(217224),
   i = n(599582),
-  a = n(951516);
+  o = n(951516);
 
-function o(e, t) {
-  (0, a.Z)(2, arguments);
+function a(e, t) {
+  (0, o.Z)(2, arguments);
   var n = 7 * (0, r.Z)(t);
   return (0, i.default)(e, n)
 }

@@ -4,8 +4,8 @@ n.d(t, {
   BC: () => s,
   gb: () => u,
   iB: () => l,
-  kK: () => o,
-  kr: () => a
+  kK: () => a,
+  kr: () => o
 }), n(415506), n(388685);
 let r = !1,
   i = {
@@ -17,11 +17,11 @@ let r = !1,
     destroyContext(e) {}
   };
 
-function a() {
+function o() {
   return i.createContext()
 }
 
-function o(e) {
+function a(e) {
   return i.enterContext(e)
 }
 

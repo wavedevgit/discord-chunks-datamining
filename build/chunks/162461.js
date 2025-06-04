@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  DG: () => o,
+  DG: () => a,
   iC: () => _,
   me: () => s,
   nP: () => f,
@@ -11,8 +11,8 @@ n.d(t, {
 });
 var r = n(818083),
   i = n(109911),
-  a = n(987338);
-let o = (0, r.B)({
+  o = n(987338);
+let a = (0, r.B)({
     kind: "user",
     id: "2024-03_content_inventory_memberlist_and_ranker",
     label: "Enables the memberlist content feed",
@@ -38,7 +38,7 @@ let o = (0, r.B)({
     kind: "user",
     id: "2025-04_hotwheels_holdout_the_sequel",
     label: "Tracking a holdout hashed to member list experiment for data readouts",
-    commonTriggerPoint: a.$P.CONNECTION_OPEN,
+    commonTriggerPoint: o.$P.CONNECTION_OPEN,
     defaultConfig: {},
     treatments: [{
       id: 0,
@@ -54,7 +54,7 @@ let o = (0, r.B)({
     kind: "user",
     id: "2025-05_hotwheels_user_affinity_v2",
     label: "Next iteration of the activity feed ranking model.",
-    commonTriggerPoint: a.$P.CONNECTION_OPEN,
+    commonTriggerPoint: o.$P.CONNECTION_OPEN,
     defaultConfig: {},
     treatments: [{
       id: 14,
@@ -66,7 +66,7 @@ let o = (0, r.B)({
 function c(e) {
   let {
     enabled: t
-  } = o.getCurrentConfig({
+  } = a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !0
@@ -78,7 +78,7 @@ function u(e) {
   let {
     enabled: t,
     impressionCappingEnabled: n
-  } = o.getCurrentConfig({
+  } = a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(781311);
 var r = n(456007),
   i = n(895924),
-  a = n(351133),
-  o = n(689079),
+  o = n(351133),
+  a = n(689079),
   s = n(388032);
 
 function l(e) {
@@ -33,12 +33,12 @@ function l(e) {
     error: s.intl.string(s.t.JZJQLy)
   } : {
     success: !1,
-    error: (0, o.al)(t)
+    error: (0, a.al)(t)
   };
   let h = n.length > 1 ? {
       type: "text",
       text: f
     } : n[0],
-    m = a.Z[t.type](h, t, c, l, d);
-  return m.success || null != m.error || (m.error = (0, o.al)(t)), m
+    m = o.Z[t.type](h, t, c, l, d);
+  return m.success || null != m.error || (m.error = (0, a.al)(t)), m
 }

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(153867),
@@ -54,7 +54,7 @@ function I(e) {
     setGradientAngle: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(O.sliderContainer, O.gradientDirectionSliderContainer),
+    className: a()(O.sliderContainer, O.gradientDirectionSliderContainer),
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       children: y.intl.string(b.default.dZkwg4)
@@ -125,7 +125,7 @@ function N(e) {
     handleSaveTheme: t,
     colors: n,
     metadata: i,
-    markAsDismissed: a
+    markAsDismissed: o
   } = e;
   return (0, r.jsxs)("div", {
     className: O.footerContainer,
@@ -143,7 +143,7 @@ function N(e) {
       className: O.applyButton,
       size: l.zxk.Sizes.NONE,
       onClick: () => {
-        t(), null == a || a(E.L.TAKE_ACTION), (0, d.Ll)()
+        t(), null == o || o(E.L.TAKE_ACTION), (0, d.Ll)()
       },
       disabled: 0 === n.length,
       children: y.intl.string(y.t["1Qm829"])
@@ -155,8 +155,8 @@ function C(e) {
   var t;
   let {
     metadata: n,
-    markAsDismissed: a
-  } = e, o = h.M.useExperiment({
+    markAsDismissed: o
+  } = e, a = h.M.useExperiment({
     location: "ClientThemeColorPickerTools"
   }).enabled, {
     colors: u,
@@ -176,7 +176,7 @@ function C(e) {
       }
     })
   };
-  return (i.useEffect(() => A, []), o) ? (0, r.jsx)("div", {
+  return (i.useEffect(() => A, []), a) ? (0, r.jsx)("div", {
     className: O.container,
     "data-app-right-panel": !0,
     children: (0, r.jsxs)("div", {
@@ -184,7 +184,7 @@ function C(e) {
       children: [(0, r.jsxs)(l.Ttm, {
         className: O.editorBody,
         children: [(0, r.jsx)(v, {
-          markAsDismissed: a
+          markAsDismissed: o
         }), (0, r.jsx)(g.o, {}), (0, r.jsx)(m.U, {
           onChange: e => {
             R(e), 0 === u.length && E([e])
@@ -216,7 +216,7 @@ function C(e) {
         handleSaveTheme: D,
         colors: u,
         metadata: n,
-        markAsDismissed: a
+        markAsDismissed: o
       })]
     })
   }) : null

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(781311);
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   l = n(793030),
   c = n(442837),
@@ -89,14 +89,14 @@ function U(e) {
     otherActivities: n,
     voiceActivityChannel: r
   } = e, i = [], {
-    descriptiveTextEnabled: a
+    descriptiveTextEnabled: o
   } = (0, y.f)({
     location: "StackedActivityStatus"
   }), {
-    enableTopNavButton: o
+    enableTopNavButton: a
   } = (0, g.Cq)({
     location: "StackedActivityStatus"
-  }), s = (0, _.ZP)(r), l = a || o;
+  }), s = (0, _.ZP)(r), l = o || a;
   return null != t && i.push(M(t)), n.forEach(e => {
     let {
       tooltip: t
@@ -110,11 +110,11 @@ function G(e) {
     textVariant: t,
     className: n,
     hasCustomStatusText: i,
-    totalActivityCount: a
-  } = e, s = a - 1;
+    totalActivityCount: o
+  } = e, s = o - 1;
   return (0, r.jsx)(l.xv, {
     variant: t,
-    className: o()(n, w.activityCounter),
+    className: a()(n, w.activityCounter),
     color: i ? "text-positive" : "none",
     children: i ? "+".concat(s) : "(+".concat(s, ")")
   })
@@ -127,7 +127,7 @@ function B(e) {
   } = e;
   return (0, r.jsx)(l.xv, {
     variant: t,
-    className: o()(w.dot, n),
+    className: a()(w.dot, n),
     children: C.l
   })
 }
@@ -136,7 +136,7 @@ function F(e) {
   let {
     user: t,
     activities: n,
-    applicationStream: a,
+    applicationStream: o,
     voiceChannel: _,
     textClassName: g,
     iconClassName: y,
@@ -147,7 +147,7 @@ function F(e) {
     hideTooltip: M = !1
   } = e;
   (0, f.Z)(null == t ? void 0 : t.id);
-  let j = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
+  let j = (null == o ? void 0 : o.discoverable) !== !1 ? o : null,
     F = (0, E.Cf)(j),
     V = i.useMemo(() => {
       var e, t;
@@ -254,7 +254,7 @@ function F(e) {
       className: w.activityContainer,
       children: [et(), er()]
     }) : (0, r.jsx)(u.ua7, {
-      tooltipContentClassName: o()(w.container, w.activitiesTooltip),
+      tooltipContentClassName: a()(w.container, w.activitiesTooltip),
       delay: C.X,
       text: en(),
       "aria-label": ee,
@@ -264,7 +264,7 @@ function F(e) {
         children: [et(!0), er()]
       }))
     }) : et(),
-    ea = () => {
+    eo = () => {
       if (null == V) return null;
       let e = V.emoji,
         t = V.state,
@@ -272,7 +272,7 @@ function F(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [null != n && (0, r.jsx)(l.xv, {
           variant: "text-".concat(O, "/medium"),
-          className: o()(g, w.customStatusLabel),
+          className: a()(g, w.customStatusLabel),
           color: "none",
           children: "".concat(n, ": ")
         }), null != e && !x && (0, r.jsx)(v.Z, {
@@ -289,13 +289,13 @@ function F(e) {
       })
     };
   return (0, r.jsxs)("div", {
-    className: o()(w.container, {
+    className: a()(w.container, {
       [w.textXs]: "xs" === O,
       [w.textSm]: "sm" === O
     }),
     children: [ei(), null != V && X > 0 && (0, r.jsx)(B, {
       textVariant: "text-".concat(O, "/normal"),
       className: g
-    }), ea(), D && (0, r.jsx)(I.Z, {})]
+    }), eo(), D && (0, r.jsx)(I.Z, {})]
   })
 }

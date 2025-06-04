@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(481060),
-  o = n(299206),
+  o = n(481060),
+  a = n(299206),
   s = n(726521),
   l = n(389052),
   c = n(388032),
@@ -58,16 +58,16 @@ let h = e => {
       selectedGuildId: l,
       selectedChannelId: u,
       children: d = null
-    } = e, f = (0, o.Z)({
+    } = e, f = (0, a.Z)({
       id: t.id,
       label: c.intl.string(c.t["+NP/b2"])
     });
-    return (0, r.jsxs)(a.v2r, {
+    return (0, r.jsxs)(o.v2r, {
       navId: "authorized-app-action-menu",
       onClose: n,
       "aria-label": c.intl.string(c.t.tKobzc),
       onSelect: void 0,
-      children: [i ? (0, r.jsx)(a.sNh, {
+      children: [i ? (0, r.jsx)(o.sNh, {
         id: "report",
         label: c.intl.string(c.t["+78Pfn"]),
         color: "danger",
@@ -85,15 +85,15 @@ let h = e => {
       appRecord: t,
       botUser: n,
       closePopout: i,
-      showAppReportingOption: a,
-      selectedGuildId: o,
+      showAppReportingOption: o,
+      selectedGuildId: a,
       selectedChannelId: s
     } = e;
     return (0, r.jsx)(h, {
       appRecord: t,
       closePopout: i,
-      showAppReportingOption: a,
-      selectedGuildId: o,
+      showAppReportingOption: o,
+      selectedGuildId: a,
       selectedChannelId: s,
       children: (0, l.Z)({
         user: n,
@@ -106,10 +106,10 @@ let h = e => {
     let {
       appRecord: t,
       showAppReportingOption: n,
-      selectedGuildId: o,
+      selectedGuildId: a,
       selectedChannelId: s
     } = e, l = i.useRef(null);
-    return (0, r.jsx)(a.yRy, {
+    return (0, r.jsx)(o.yRy, {
       targetElementRef: l,
       renderPopout: e => {
         let {
@@ -119,27 +119,27 @@ let h = e => {
           appRecord: t,
           closePopout: i,
           showAppReportingOption: n,
-          selectedGuildId: o,
+          selectedGuildId: a,
           selectedChannelId: s
         }) : (0, r.jsx)(m, {
           appRecord: t,
           botUser: t.bot,
           closePopout: i,
           showAppReportingOption: n,
-          selectedGuildId: o,
+          selectedGuildId: a,
           selectedChannelId: s
         })
       },
       align: "right",
       position: "bottom",
-      children: e => (0, r.jsx)(a.P3F, p(f({
+      children: e => (0, r.jsx)(o.P3F, p(f({
         innerRef: l,
         className: u.actionMenuButton,
         "aria-label": c.intl.string(c.t.UKOtz8)
       }, e), {
-        children: (0, r.jsx)(a.xhG, {
+        children: (0, r.jsx)(o.xhG, {
           size: "xs",
-          color: a.TVs.colors.INTERACTIVE_NORMAL
+          color: o.TVs.colors.INTERACTIVE_NORMAL
         })
       }))
     })

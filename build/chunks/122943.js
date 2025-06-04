@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(692547),
   l = n(481060),
   c = n(906732),
@@ -65,7 +65,7 @@ function T(e) {
   let {
     channel: t,
     textVariant: n,
-    textClassName: a,
+    textClassName: o,
     iconClassName: _,
     hideText: g = !1,
     hideTooltip: O = !1,
@@ -87,7 +87,7 @@ function T(e) {
     size: "custom",
     color: A,
     channel: t,
-    className: o()(y.icon, _)
+    className: a()(y.icon, _)
   }) : (0, r.jsx)(l.ua7, {
     text: N,
     "aria-label": (0, u.ZP)({
@@ -99,13 +99,13 @@ function T(e) {
       size: "custom",
       color: s.Z.colors.STATUS_POSITIVE,
       channel: t,
-      className: o()(y.icon, _)
+      className: a()(y.icon, _)
     }))
   }), x = () => P ? N : C ? b.intl.string(b.t["9FaEzs"]) : t.isGuildStageVoice() ? b.intl.string(b.t.QygGCA) : b.intl.string(b.t.msxteH);
   return (0, r.jsxs)(r.Fragment, {
     children: [L(), !g && (0, r.jsxs)(m.Z, {
       variant: n,
-      className: a,
+      className: o,
       canTruncate: I,
       hideTooltip: O,
       children: [x(), R && null != N && " (".concat(N, ")")]
@@ -118,7 +118,7 @@ function A(e) {
     channel: t,
     textVariant: n,
     textClassName: i,
-    iconClassName: a,
+    iconClassName: o,
     hideText: s = !1,
     hideTooltip: c = !1,
     canTruncate: u = !0,
@@ -133,7 +133,7 @@ function A(e) {
       size: "custom",
       color: h,
       channel: t,
-      className: o()(y.icon, a)
+      className: a()(y.icon, o)
     }),
     text: S,
     tooltipText: c ? void 0 : I,

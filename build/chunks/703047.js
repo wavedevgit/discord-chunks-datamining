@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => f
 });
 var r, i = n(442837),
-  a = n(570140),
-  o = n(731725);
+  o = n(570140),
+  a = n(731725);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,8 +23,8 @@ function c(e) {
     link: n
   } = e;
   null == l[t] ? l[t] = {
-    [n.link_id]: new o.Z(n)
-  } : l[t][n.link_id] = new o.Z(n)
+    [n.link_id]: new a.Z(n)
+  } : l[t][n.link_id] = new a.Z(n)
 }
 
 function u() {
@@ -36,7 +36,7 @@ class d extends(r = i.ZP.Store) {
   }
 }
 s(d, "displayName", "CustomActivityLinksStore");
-let f = new d(a.Z, {
+let f = new d(o.Z, {
   CUSTOM_ACTIVITY_LINK_FETCH_SUCCESS: c,
   LOGOUT: u
 })

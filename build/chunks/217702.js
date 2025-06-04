@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Jj: () => a,
-  OF: () => o,
+  Jj: () => o,
+  OF: () => a,
   WW: () => l,
   Y9: () => i,
   hV: () => s,
@@ -10,8 +10,8 @@ n.d(t, {
 });
 let r = 550,
   i = 600,
-  a = 350,
-  o = 40;
+  o = 350,
+  a = 40;
 var s = function(e) {
   return e.STATIC = "STATIC", e.RESPONSIVE = "RESPONSIVE", e.MOSAIC = "MOSAIC", e
 }({});

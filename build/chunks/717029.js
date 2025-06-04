@@ -9,27 +9,27 @@ function i(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
-function a(e, t) {
+function o(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
     r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r)
   }
 }
 
-function o(e, t, n) {
-  return t && a(e.prototype, t), n && a(e, n), e
+function a(e, t, n) {
+  return t && o(e.prototype, t), n && o(e, n), e
 }
 var s = function() {
   function e() {
     i(this, e)
   }
-  return o(e, [{
+  return a(e, [{
     key: "run",
     value: function(e, t, n, i) {
-      var a = this.parse(e, t, n, i);
-      return a ? {
-        setter: new r.gr(a.value, this.validate, this.set, this.priority, this.subPriority),
-        rest: a.rest
+      var o = this.parse(e, t, n, i);
+      return o ? {
+        setter: new r.gr(o.value, this.validate, this.set, this.priority, this.subPriority),
+        rest: o.rest
       } : null
     }
   }, {

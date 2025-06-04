@@ -12,7 +12,7 @@ e.exports = function(e) {
       keywords: t,
       relevance: 10
     },
-    a = [{
+    o = [{
       className: "string",
       begin: '"""',
       end: '"""',
@@ -31,7 +31,7 @@ e.exports = function(e) {
       begin: "#[0-9a-fA-F_]+|\\$[01_]+|[0-9_]+(?:\\.[0-9_](?:[eE][+-]?\\d+)?)?[kMGTPmunpf]?",
       relevance: 0
     }];
-  return i.contains = a, {
+  return i.contains = o, {
     name: "Ceylon",
     keywords: {
       keyword: t.concat(n),
@@ -43,6 +43,6 @@ e.exports = function(e) {
     }), {
       className: "meta",
       begin: '@[a-z]\\w*(?::"[^"]*")?'
-    }].concat(a)
+    }].concat(o)
   }
 }

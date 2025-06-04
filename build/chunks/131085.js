@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ER: () => a,
-  Gg: () => o,
+  ER: () => o,
+  Gg: () => a,
   oC: () => s,
   x_: () => r
 });
@@ -50,7 +50,7 @@ let i = [{
   secondary: "#cccccc"
 }];
 i[0].primary, i[0].secondary;
-let a = {
+let o = {
   0: 2,
   1: 1,
   2: 1,
@@ -73,7 +73,7 @@ let a = {
   19: 2,
   20: 2
 };
-var o = function(e) {
+var a = function(e) {
   return e[e.SIZE_12 = 12] = "SIZE_12", e[e.SIZE_16 = 16] = "SIZE_16", e[e.SIZE_24 = 24] = "SIZE_24", e[e.SIZE_32 = 32] = "SIZE_32", e[e.SIZE_36 = 36] = "SIZE_36", e
 }({});
 let s = {

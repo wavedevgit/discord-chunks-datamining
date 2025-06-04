@@ -10,7 +10,7 @@ n.d(t, {
 var r = n(271383),
   i = n(588215);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -19,14 +19,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -92,7 +92,7 @@ class h {
     return this._paginationState
   }
   updatePaginationToken(e) {
-    return e !== this._paginationState.continuationToken && (this._paginationState = l(o({}, this._paginationState), {
+    return e !== this._paginationState.continuationToken && (this._paginationState = l(a({}, this._paginationState), {
       continuationToken: e
     }), !0)
   }
@@ -109,7 +109,7 @@ class h {
       var n;
       t = !0, e.currentPage = this._calculateNewPageFromPageSizeChange(null != (n = e.pageSize) ? n : this._paginationState.pageSize, e.currentPage)
     }
-    return this._paginationState = o({}, this._paginationState, e), t && this._rebuildPaginationChunksFromStoredMembers(), [!0, t]
+    return this._paginationState = a({}, this._paginationState, e), t && this._rebuildPaginationChunksFromStoredMembers(), [!0, t]
   }
   updateSortedMembers(e) {
     let [t, n] = this._initPaginationFromRawMembers(e);
@@ -123,9 +123,9 @@ class h {
       n = e;
     n < this._sortedMemberIds.length && (n = this._sortedMemberIds.length - 1), n < 0 && (n = 0);
     let i = this._sortedMemberIds[e],
-      a = r.ZP.getMember(this.guildId, i);
-    for (; null == a && !((e += t) < 0) && !(e >= this._sortedMemberIds.length);) i = this._sortedMemberIds[e], (null == (a = r.ZP.getMember(this.guildId, i)) ? void 0 : a.joinedAt) == null && (a = null);
-    return a
+      o = r.ZP.getMember(this.guildId, i);
+    for (; null == o && !((e += t) < 0) && !(e >= this._sortedMemberIds.length);) i = this._sortedMemberIds[e], (null == (o = r.ZP.getMember(this.guildId, i)) ? void 0 : o.joinedAt) == null && (o = null);
+    return o
   }
   getElasticSearchPagination() {
     return this.getPaginationState().elasticSearchCursor
@@ -137,7 +137,7 @@ class h {
     return this._version
   }
   constructor(e, t) {
-    a(this, "guildId", void 0), a(this, "_sortedMemberIds", void 0), a(this, "_paginationState", void 0), a(this, "_version", void 0), a(this, "_cachedPaginationChunks", void 0), a(this, "_reduceMemberIdsToPaginationChunks", (e, t, n) => {
+    o(this, "guildId", void 0), o(this, "_sortedMemberIds", void 0), o(this, "_paginationState", void 0), o(this, "_version", void 0), o(this, "_cachedPaginationChunks", void 0), o(this, "_reduceMemberIdsToPaginationChunks", (e, t, n) => {
       let r = Math.floor(n / this._paginationState.pageSize) + 1;
       return null == e[r] && (e[r] = []), e[r].push(t), e
     }), this.guildId = e, this._paginationState = _(), this._version = 0;

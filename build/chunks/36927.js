@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  J: () => a
+  J: () => o
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let o = (0, r.B)({
   id: "2025-05_tenure_ambient_badges",
   kind: "user",
   label: "Tenure Ambient Badges",

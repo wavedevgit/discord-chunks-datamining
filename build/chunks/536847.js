@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(657707),
-  o = n(442837),
+  o = n(657707),
+  a = n(442837),
   s = n(481060),
   l = n(153867),
   c = n(210887),
@@ -22,12 +22,12 @@ function g() {
   let [e, t] = i.useState(p.BR.LIGHT), n = [{
     name: h.intl.string(h.t.b8Cei4),
     value: p.BR.DARK,
-    icon: a.Z6G
+    icon: o.Z6G
   }, {
     name: h.intl.string(h.t.K2sFfn),
     value: p.BR.LIGHT,
-    icon: a.chG
-  }], [g, E, b] = (0, o.Wu)([c.Z, u.ZP, f.Z], () => [c.Z.theme, null == f.Z.gradientPreset, u.ZP.useSystemTheme === _.KW.ON]);
+    icon: o.chG
+  }], [g, E, b] = (0, a.Wu)([c.Z, u.ZP, f.Z], () => [c.Z.theme, null == f.Z.gradientPreset, u.ZP.useSystemTheme === _.KW.ON]);
   return (0, r.jsx)(s.sY7, {
     className: m.themeSelector,
     options: n,

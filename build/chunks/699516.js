@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => B
 }), n(388685);
 var r, i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(570140),
   l = n(23750),
   c = n(709054),
@@ -70,7 +70,7 @@ function w() {
   C = Object.values(g).length;
   let {
     [d.OGo.PENDING_INCOMING]: e = 0, [d.OGo.PENDING_OUTGOING]: t = 0, [d.OGo.FRIEND]: n = 0
-  } = a().countBy(Object.values(g), e => e);
+  } = o().countBy(Object.values(g), e => e);
   A = t, N = n, P = y.size, R = v.size, T = Math.max(e - P - R, 0)
 }
 
@@ -125,7 +125,7 @@ function U(e) {
     isStranger: e.isStranger
   }
 }
-class G extends(r = o.ZP.Store) {
+class G extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(u.default)
   }

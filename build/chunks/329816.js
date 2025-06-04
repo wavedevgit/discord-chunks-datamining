@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => eo
+  Z: () => ea
 });
 var r = n(255367),
   i = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(670481),
   l = n(873546),
   c = n(442837),
@@ -111,7 +111,7 @@ let er = (0, V.Un)({
     createPromise: () => n.e("13474").then(n.bind(n, 420541)),
     webpackId: 420541
   }),
-  ea = i.memo(function(e) {
+  eo = i.memo(function(e) {
     let t = (0, c.e7)([B.Z], () => B.Z.isFocused()),
       n = (0, c.e7)([G.Z], () => G.Z.hasLayers()),
       i = (0, d.s9z)(d.$sL);
@@ -122,11 +122,11 @@ let er = (0, V.Un)({
       focused: t
     }))
   }),
-  eo = function(e) {
+  ea = function(e) {
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, F.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([j.Z], () => j.Z.darkSidebar ? X.BRd.DARK : void 0), U = (0, C.Q3)("AppSkeleton"), G = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), B = i.useRef(document.body), V = "".concat(U ? "enabled" : "disabled").concat(G);
+    } = e, o = (0, F.getPlatform)(), u = l.tq || l.Em, m = (0, c.e7)([j.Z], () => j.Z.darkSidebar ? X.BRd.DARK : void 0), U = (0, C.Q3)("AppSkeleton"), G = (0, c.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), B = i.useRef(document.body), V = "".concat(U ? "enabled" : "disabled").concat(G);
     return (0, P.G)(), (0, w.G)("AppSkeleton"), (0, r.jsx)(M.w, {
       children: (0, r.jsxs)(b.Z, {
         children: [(0, r.jsx)(H.Z, {
@@ -139,11 +139,11 @@ let er = (0, V.Un)({
                 appContext: X.IlC.APP,
                 renderWindow: window,
                 children: (0, r.jsxs)(D.yP, {
-                  children: [null != a ? (0, r.jsx)(ea, {
-                    type: a,
+                  children: [null != o ? (0, r.jsx)(eo, {
+                    type: o,
                     themeOverride: m
                   }) : null, (0, r.jsxs)("div", {
-                    className: o()(J.appAsidePanelWrapper, u && J.mobileAppAsidePanelWrapper),
+                    className: a()(J.appAsidePanelWrapper, u && J.mobileAppAsidePanelWrapper),
                     children: [(0, r.jsx)(N.K, {}), (0, r.jsx)("div", {
                       className: J.notAppAsidePanel,
                       "data-app-not-dev-tools": !0,
@@ -153,7 +153,7 @@ let er = (0, V.Un)({
                             value: O.Z,
                             children: (0, r.jsxs)(T.p, {
                               children: [(0, r.jsx)("div", {
-                                className: o()(u ? J.mobileApp : J.app),
+                                className: a()(u ? J.mobileApp : J.app),
                                 children: t
                               }), (0, r.jsx)(I.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(L.Ox, {}), (0, r.jsx)(D.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(d.Ixi, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(k.Z, {}), (0, r.jsx)(er, {}), (0, r.jsx)(ei, {})]
                             })

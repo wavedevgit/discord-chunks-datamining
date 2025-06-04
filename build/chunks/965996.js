@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   f: () => i,
-  j: () => a
+  j: () => o
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -35,7 +35,7 @@ function i(e) {
     autoTrackExposure: n = !0
   } = e, {
     enabled: i,
-    force: a
+    force: o
   } = r.getCurrentConfig({
     location: t
   }, {
@@ -43,11 +43,11 @@ function i(e) {
   });
   return {
     enabled: i,
-    force: a
+    force: o
   }
 }
 
-function a(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = !0

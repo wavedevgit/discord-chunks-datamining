@@ -5,12 +5,12 @@ n.d(t, {
   DY: () => p,
   yQ: () => h
 }), n(539854), n(290780);
-var r, i, a, o, s, l, c = n(553813),
+var r, i, o, a, s, l, c = n(553813),
   u = n.n(c),
   d = n(65154);
 let f = [{
   name: "H265",
-  encode: "undefined" == typeof window || (null == (i = window) || null == (r = i.DiscordNative) ? void 0 : r.process.platform) !== "darwin" || (null == (o = window) || null == (a = o.DiscordNative) ? void 0 : a.os.arch) === "arm64" && u().satisfies(null == (l = window) || null == (s = l.DiscordNative) ? void 0 : s.os.release, d.n4),
+  encode: "undefined" == typeof window || (null == (i = window) || null == (r = i.DiscordNative) ? void 0 : r.process.platform) !== "darwin" || (null == (a = window) || null == (o = a.DiscordNative) ? void 0 : o.os.arch) === "arm64" && u().satisfies(null == (l = window) || null == (s = l.DiscordNative) ? void 0 : s.os.release, d.n4),
   decode: !0
 }, {
   name: "H264",
