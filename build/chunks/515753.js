@@ -164,54 +164,53 @@ let en = q.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
       selected: n,
       icon: r,
       iconClassName: s,
-      avatarWithTextClassName: a,
-      interactiveClassName: o,
-      text: d,
-      children: m,
-      locationState: p,
-      onClick: h,
-      className: f,
-      role: b,
-      "aria-posinset": _,
-      "aria-setsize": x,
-      listItemRef: E
-    } = e, C = et(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
-    let O = (0, y.Q3)("PrivateChannelLinkButton");
+      interactiveClassName: a,
+      text: o,
+      children: d,
+      locationState: m,
+      onClick: p,
+      className: h,
+      role: f,
+      "aria-posinset": b,
+      "aria-setsize": _,
+      listItemRef: x
+    } = e, E = et(e, ["route", "selected", "icon", "iconClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
+    let C = (0, y.Q3)("PrivateChannelLinkButton");
     return (0, i.jsx)(N.Z, {
       className: l()(J.channel, {
         [J.fullWidth]: u.tq
-      }, f),
-      onClick: h,
-      role: b,
+      }, h),
+      onClick: p,
+      role: f,
       focusProps: $({
         within: !0
       }, ei),
-      "aria-posinset": _,
-      "aria-setsize": x,
-      ref: E,
+      "aria-posinset": b,
+      "aria-setsize": _,
+      ref: x,
       children: (0, i.jsx)(g.vjx, {
         as: "div",
         selected: n,
-        className: l()(o, J.interactive, J.linkButton, {
+        className: l()(a, J.interactive, J.linkButton, {
           [J.interactiveSelected]: n
         }),
         children: (0, i.jsxs)(c.rU, ee($({
           to: {
             pathname: t,
-            state: p
+            state: m
           },
           className: J.link
-        }, C), {
+        }, E), {
           children: [(0, i.jsx)(j.Z, {
             muted: !1,
             avatar: (0, i.jsx)(r, {
-              size: O ? "refresh_sm" : void 0,
+              size: C ? "refresh_sm" : void 0,
               className: l()(J.linkButtonIcon, s),
               color: "currentColor"
             }),
-            name: d,
-            innerClassName: l()(J.avatarWithText, a)
-          }), m]
+            name: o,
+            innerClassName: J.avatarWithText
+          }), d]
         }))
       })
     })

@@ -32,48 +32,53 @@ let v = e => {
     isHighlighted: S,
     showStatus: T,
     showPlaceholderUser: A,
-    isPurchased: N = !1
-  } = e, C = (0, s.e7)([p.Z], () => (0, l.wj)(p.Z.theme)), P = null != n ? (0, g.EU)(n) : a, R = (0, s.e7)([h.Z], () => null != t ? h.Z.getStatus(t.id) : c.Skl.ONLINE), w = C ? "#706F74" : "#aaaab2", D = i.useRef(null);
+    nameplatePreviewSize: N = "normal",
+    isPurchased: C = !1
+  } = e, P = (0, s.e7)([p.Z], () => (0, l.wj)(p.Z.theme)), R = null != n ? (0, g.EU)(n) : a, w = (0, s.e7)([h.Z], () => null != t ? h.Z.getStatus(t.id) : c.Skl.ONLINE), D = P ? "#706F74" : "#aaaab2", L = i.useRef(null), x = "large" === N, k = x ? c.EFr.SIZE_48 : c.EFr.SIZE_32;
   return (0, r.jsxs)("div", {
     className: o()(v, b.nameplatePreview, {
-      [b.nameplatePurchased]: N && !S
+      [b.nameplatePurchased]: C && !S,
+      [b.large]: x
     }),
     style: {
-      color: C ? "white" : "black"
+      color: P ? "white" : "black"
     },
-    children: [null != P && (0, r.jsx)(_.Z, {
-      nameplate: P,
+    children: [null != R && (0, r.jsx)(_.Z, {
+      nameplate: R,
       hovered: S,
       placement: f.i.PREVIEW,
-      content: A ? void 0 : D
+      content: A ? void 0 : L
     }, null == n ? void 0 : n.id), (0, r.jsxs)("div", {
       className: b.overlayContainer,
       children: [null != t ? (0, r.jsx)("div", {
         className: o()(b.avatarContainer, !A && b.avatarVisible),
         children: (0, r.jsx)(u.Z, {
-          ref: D,
+          ref: L,
           avatar: (0, r.jsx)(d.Z, {
             user: t,
             guildId: null,
-            avatarSize: c.EFr.SIZE_32,
-            status: T ? R : void 0,
+            avatarSize: k,
+            status: T ? w : void 0,
             "aria-hidden": !0
           }),
           name: m.ZP.getName(null, null, t),
-          innerClassName: I
+          innerClassName: o()(I, b.avatarWithText)
         })
       }) : null, (0, r.jsx)("div", {
         className: o()(b.avatarContainer, A && b.avatarVisible),
         children: (0, r.jsx)(u.Z, {
           avatar: (0, r.jsx)(c.qEK, {
-            src: C ? y : O,
-            size: c.EFr.SIZE_32,
+            src: P ? y : O,
+            size: k,
             "aria-label": E.intl.string(E.t.cqpybG),
             status: c.Skl.ONLINE,
-            statusColor: w
+            statusColor: D
           }),
+          innerClassName: o()(I, b.avatarWithText),
           name: (0, r.jsx)("div", {
-            className: o()(b.placeholderUsername, b.placeholderUsernameColor)
+            className: o()(b.placeholderUsername, b.placeholderUsernameColor, {
+              [b.large]: x
+            })
           })
         })
       })]

@@ -6,10 +6,10 @@ var i = n(255367),
   r = n(73800),
   s = n(120356),
   l = n.n(s),
-  o = n(979554),
-  a = n(442837),
-  u = n(780384),
-  c = n(481060),
+  a = n(979554),
+  o = n(442837),
+  c = n(780384),
+  u = n(481060),
   d = n(533307),
   p = n(410030),
   f = n(607070),
@@ -27,17 +27,17 @@ var i = n(255367),
   w = n(703656),
   Z = n(146779),
   C = n(763296),
-  I = n(82142),
-  T = n(283595),
-  A = n(594174),
-  R = n(509545),
-  E = n(55563),
-  k = n(626135),
-  N = n(176354),
+  T = n(82142),
+  A = n(283595),
+  I = n(594174),
+  E = n(509545),
+  R = n(55563),
+  N = n(626135),
+  k = n(176354),
   D = n(669079),
   _ = n(296848),
-  G = n(51144),
-  L = n(479446),
+  L = n(51144),
+  G = n(479446),
   M = n(715627),
   U = n(981632),
   F = n(474936),
@@ -90,11 +90,11 @@ class J extends r.Component {
     null == t && null != e && g.ZP.fetchApplication(e.applicationId);
     let s = null != n || null != i.giftStyle,
       l = (0, O.mO)(i),
-      o = null != r ? N.ZP.getURL(r) : void 0;
+      a = null != r ? k.ZP.getURL(r) : void 0;
     this.setState({
       isCustomGift: s,
       isCollectiblesGift: l,
-      emojiURL: o,
+      emojiURL: a,
       opened: l
     }), this.trackStepAnalytics()
   }
@@ -127,18 +127,22 @@ class J extends r.Component {
     if (t && this.step === H.wZ8.ERROR) return V.intl.formatToMarkdownString(V.t.JUvC0t, {});
     if (t && !n)
       if (!e) return V.intl.formatToPlainString(V.t.xHzRub, {
-        recipientDisplayName: G.ZP.getName(A.default.getCurrentUser())
+        recipientDisplayName: L.ZP.getName(I.default.getCurrentUser())
       });
       else {
-        let t = A.default.getUser(i.userId),
-          e = G.ZP.getName(t);
+        let t = I.default.getUser(i.userId),
+          e = L.ZP.getName(t);
         if (null != s) switch (s) {
-          case o.Z.AVATAR_DECORATION:
+          case a.Z.AVATAR_DECORATION:
             return V.intl.formatToPlainString(V.t.SKduys, {
               sender: e
             });
-          case o.Z.PROFILE_EFFECT:
+          case a.Z.PROFILE_EFFECT:
             return V.intl.formatToPlainString(V.t["1w42T0"], {
+              sender: e
+            });
+          case a.Z.NAMEPLATE:
+            return V.intl.formatToPlainString(V.t.vFiQlZ, {
               sender: e
             });
           default:
@@ -154,9 +158,9 @@ class J extends r.Component {
   }
   get secondHeaderText() {
     if (!this.state.isCustomGift || this.state.opened || this.state.accepted) return null;
-    let t = A.default.getUser(this.props.giftCode.userId);
+    let t = I.default.getUser(this.props.giftCode.userId);
     return V.intl.formatToPlainString(V.t.DDO4W1, {
-      sender: G.ZP.getName(t)
+      sender: L.ZP.getName(t)
     })
   }
   get bodyText() {
@@ -171,9 +175,9 @@ class J extends r.Component {
       error: r,
       accepted: s,
       isCustomGift: l,
-      opened: o
+      opened: a
     } = this.state;
-    return !o && l ? null : (0, D.iM)({
+    return !a && l ? null : (0, D.iM)({
       step: this.step,
       sku: t,
       libraryApplication: n,
@@ -221,7 +225,7 @@ class J extends r.Component {
     } = this.props, {
       isCustomGift: r
     } = this.state;
-    k.default.track(H.rMx.GIFT_ACCEPT_STEP, {
+    N.default.track(H.rMx.GIFT_ACCEPT_STEP, {
       to_step: this.step,
       has_custom_message: r,
       is_custom_message_edited: r && e !== V.intl.string(V.t.ZkOo1d),
@@ -238,32 +242,32 @@ class J extends r.Component {
       onClose: n,
       giftCode: r,
       headerId: s,
-      transitionState: o,
-      useReducedMotion: a,
-      onComplete: u,
+      transitionState: a,
+      useReducedMotion: o,
+      onComplete: c,
       customGiftMessage: d,
       emojiName: p,
       soundId: f,
       isThemeDark: h
-    } = this.props, m = A.default.getUser(r.userId), {
+    } = this.props, m = I.default.getUser(r.userId), {
       isCustomGift: g,
       isCollectiblesGift: y,
       accepted: O,
       opened: b,
       emojiURL: S
-    } = this.state, P = A.default.getCurrentUser(), v = this.step === H.wZ8.ERROR, w = (null == r ? void 0 : r.userId) != null && null != P && (null == P ? void 0 : P.id) != null && r.userId === P.id;
+    } = this.state, P = I.default.getCurrentUser(), v = this.step === H.wZ8.ERROR, w = (null == r ? void 0 : r.userId) != null && null != P && (null == P ? void 0 : P.id) != null && r.userId === P.id;
     switch (this.step) {
       case H.wZ8.ERROR:
-        null == u || u(r, !1);
+        null == c || c(r, !1);
         break;
       case H.wZ8.SUCCESS:
-        null == u || u(r, !0)
+        null == c || c(r, !0)
     }
     return (0, i.jsxs)("div", {
       ref: this.modalRef,
-      children: [(0, i.jsxs)(c.Y0X, {
-        transitionState: o,
-        size: c.CgR.SMALL,
+      children: [(0, i.jsxs)(u.Y0X, {
+        transitionState: a,
+        size: u.CgR.SMALL,
         className: B.modal,
         "aria-labelledby": s,
         parentComponent: "GiftCodeModal",
@@ -274,10 +278,10 @@ class J extends r.Component {
           className: B.seasonalGiftIcon
         }), !g && (0, i.jsx)("div", {
           className: B.backSplash
-        }), !y && (0, i.jsx)(c.olH, {
+        }), !y && (0, i.jsx)(u.olH, {
           onClick: n,
           className: B.closeButton
-        }), (0, i.jsxs)(c.hzk, {
+        }), (0, i.jsxs)(u.hzk, {
           className: l()({
             [B.content]: !g,
             [B.contentCustomGift]: g
@@ -289,7 +293,7 @@ class J extends r.Component {
           }), v && (0, i.jsx)("img", {
             alt: "",
             src: h ? K : W
-          }), (0, i.jsxs)(c.X6q, {
+          }), (0, i.jsxs)(u.X6q, {
             id: s,
             className: l()({
               [B.customGiftHeader]: g && !O,
@@ -304,7 +308,7 @@ class J extends r.Component {
             }), (0, i.jsx)("div", {
               children: this.secondHeaderText
             })]
-          }), !(g && !O) && (0, i.jsx)(c.Text, {
+          }), !(g && !O) && (0, i.jsx)(u.Text, {
             className: B.body,
             variant: "text-sm/normal",
             children: this.bodyText
@@ -315,22 +319,22 @@ class J extends r.Component {
             giftStyle: r.giftStyle
           }), this.state.opened && !v && y && (0, i.jsx)(j.Z, {
             giftCode: r
-          }), v && (0, i.jsx)(c.Text, {
+          }), v && (0, i.jsx)(u.Text, {
             className: B.body,
             variant: "text-md/normal",
             children: this.errorMessage
           }), g && this.state.opened && !this.state.accepted && !v && null != d && "" !== d && !w && (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(c.vwX, {
+            children: [(0, i.jsx)(u.vwX, {
               children: V.intl.format(V.t.DDO4W1, {
-                sender: G.ZP.getName(m)
+                sender: L.ZP.getName(m)
               })
-            }), (0, i.jsx)(c.X6q, {
+            }), (0, i.jsx)(u.X6q, {
               id: s,
               className: B.customMessage,
               variant: "heading-sm/bold",
               children: d
             })]
-          }), (0, i.jsx)(c.zxk, {
+          }), (0, i.jsx)(u.zxk, {
             submitting: e,
             onClick: () => {
               this.trackStepAnalytics(), this.handleClick()
@@ -338,7 +342,7 @@ class J extends r.Component {
             children: this.buttonText
           })]
         })]
-      }), null != r.giftStyle && !a && this.step !== H.wZ8.ERROR && !O && !e && b && (null == p || null == S ? (0, i.jsx)(X, {
+      }), null != r.giftStyle && !o && this.step !== H.wZ8.ERROR && !O && !e && b && (null == p || null == S ? (0, i.jsx)(X, {
         openedGift: b && !O && !e
       }) : (0, i.jsx)(M.Z, {
         confettiTarget: this.modalRef.current,
@@ -393,21 +397,21 @@ class J extends r.Component {
           applicationId: null != e ? e.id : void 0
         }
       }), t()
-    }), q(this, "getDefaultAnimationStatus", () => this.step === H.wZ8.OPEN ? L.SR.IDLE : L.SR.ACTION), q(this, "getIdleAnimationStatus", () => {
-      if (this.step !== H.wZ8.OPEN) return L.SR.LOOP
+    }), q(this, "getDefaultAnimationStatus", () => this.step === H.wZ8.OPEN ? G.SR.IDLE : G.SR.ACTION), q(this, "getIdleAnimationStatus", () => {
+      if (this.step !== H.wZ8.OPEN) return G.SR.LOOP
     })
   }
 }
-let Q = a.ZP.connectStores([T.Z, E.Z, y.Z, I.Z, R.Z, f.Z], t => {
+let Q = o.ZP.connectStores([A.Z, R.Z, y.Z, T.Z, E.Z, f.Z], t => {
     let {
       giftCode: e
-    } = t, n = E.Z.get(e.skuId), i = null != n ? y.Z.getApplication(n.applicationId) : null, r = f.Z.useReducedMotion;
+    } = t, n = R.Z.get(e.skuId), i = null != n ? y.Z.getApplication(n.applicationId) : null, r = f.Z.useReducedMotion;
     return {
       sku: n,
-      libraryApplication: null != n && (null == e ? void 0 : e.entitlementBranches) != null ? (0, D.z2)(e.entitlementBranches, n, T.Z) : null,
+      libraryApplication: null != n && (null == e ? void 0 : e.entitlementBranches) != null ? (0, D.z2)(e.entitlementBranches, n, A.Z) : null,
       application: i,
       subscriptionPlan: null != e.subscriptionPlanId ? (0, _.oE)(e.subscriptionPlanId) : null,
-      accepting: I.Z.getIsAccepting(e.code),
+      accepting: T.Z.getIsAccepting(e.code),
       useReducedMotion: r
     }
   })(J),
@@ -415,8 +419,8 @@ let Q = a.ZP.connectStores([T.Z, E.Z, y.Z, I.Z, R.Z, f.Z], t => {
     var e, n, r, {
         channelContext: s,
         code: l,
-        customGiftMessage: o,
-        emojiName: c,
+        customGiftMessage: a,
+        emojiName: u,
         soundId: d,
         onClose: f
       } = t,
@@ -436,7 +440,7 @@ let Q = a.ZP.connectStores([T.Z, E.Z, y.Z, I.Z, R.Z, f.Z], t => {
         return r
       }(t, ["channelContext", "code", "customGiftMessage", "emojiName", "soundId", "onClose"]);
     let y = (0, v.Dt)(),
-      O = (0, a.e7)([I.Z], () => I.Z.get(l)),
+      O = (0, o.e7)([T.Z], () => T.Z.get(l)),
       j = (0, p.ZP)(),
       {
         analyticsLocations: P
@@ -456,14 +460,14 @@ let Q = a.ZP.connectStores([T.Z, E.Z, y.Z, I.Z, R.Z, f.Z], t => {
       }
       return t
     }({}, g), n = n = {
-      customGiftMessage: o,
+      customGiftMessage: a,
       channelContext: s,
       giftCode: O,
       headerId: y,
-      emojiName: c,
+      emojiName: u,
       soundId: d,
       analyticsLocations: P,
-      isThemeDark: (0, u.wj)(j),
+      isThemeDark: (0, c.wj)(j),
       onClose: f,
       collectiblesItemType: null == x || null == (r = x.items[0]) ? void 0 : r.type,
       onAccept: null != x ? () => {

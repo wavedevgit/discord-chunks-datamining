@@ -1,14 +1,24 @@
 /**
   Module ID: 47016
-  Original File Name: fdb9fc899058004c
+  Original File Name: 0d59808634c39023
 **/
 .avatarDecorationPreview__9baf3 {
-    padding: 16px 0 32px
+    padding: var(--spacing-16) 0 var(--spacing-32)
 }
 
 .profileEffectPreview__9baf3 {
     position: relative;
     scale: .9
+}
+
+.nameplatePreview__9baf3 {
+    padding: var(--spacing-16) 0 var(--spacing-32);
+    position: relative;
+    width: 326px
+}
+
+.nameplate__9baf3 {
+    width: 100%
 }
 
 .giftAnimation__9baf3 {
@@ -114,4 +124,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=fdb9fc899058004c.css.map*/
+/*# sourceMappingURL=0d59808634c39023.css.map*/

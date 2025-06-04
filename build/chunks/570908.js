@@ -21,7 +21,7 @@ let l = i.forwardRef((e, t) => {
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
-    className: o()(f, s.layout, {
+    className: o()(s.layout, f, {
       [s.muted]: n,
       [s.highlighted]: i
     }),
