@@ -132,8 +132,8 @@ let M = (0, a.animated)(d.CJ0),
       toggleExpanded: Q
     } = e, {
       ref: W,
-      height: F
-    } = (0, m.ZP)(), [z, G] = s.useState(null), [H, X] = s.useState(null), Y = (0, x.Z)(e => {
+      height: z
+    } = (0, m.ZP)(), [F, G] = s.useState(null), [H, X] = s.useState(null), Y = (0, x.Z)(e => {
       let t = e.target;
       G(t.offsetWidth), X(t.scrollWidth)
     }), V = (0, p.y)(Y), K = (0, c.e7)([g.Z], () => g.Z.useReducedMotion), J = s.useMemo(() => (0, y.fh)(h, y.eC.HERO), [h]), $ = s.useRef(null), ee = (0, S.uq)(f), et = f === C.jn.QUESTS_EMBED, en = (0, b.t5)(h, P.dr.QUESTS_CARD, f), er = (null == (t = h.userStatus) ? void 0 : t.completedAt) != null, es = (0, j.O5)(), ei = (0, b.B6)(h.config.expiresAt, {
@@ -172,7 +172,7 @@ let M = (0, a.animated)(d.CJ0),
       }),
       "aria-label": R.intl.string(R.t.dcl9MT),
       style: {
-        height: ee ? F : void 0
+        height: ee ? z : void 0
       },
       children: [(0, r.jsx)(A, {
         style: {
@@ -268,7 +268,7 @@ let M = (0, a.animated)(d.CJ0),
                 className: _.questInfo,
                 children: [(0, r.jsx)(d.ua7, {
                   text: h.config.messages.questName,
-                  shouldShow: null != z && null != H && z < H,
+                  shouldShow: null != F && null != H && F < H,
                   children: e => (0, r.jsx)(d.X6q, D(I({
                     ref: V,
                     variant: "lg" === v ? "heading-xxl/bold" : "sm" === v ? "heading-xl/bold" : "heading-lg/bold",

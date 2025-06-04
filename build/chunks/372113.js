@@ -141,11 +141,11 @@ let L = e => {
     isExpanded: B,
     isAnimating: U,
     contentPosition: Q
-  } = e, W = (0, x._Q)(n), F = (0, x.B6)(null == (t = n.userStatus) ? void 0 : t.completedAt, {
+  } = e, W = (0, x._Q)(n), z = (0, x.B6)(null == (t = n.userStatus) ? void 0 : t.completedAt, {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), z = W >= x.OH.ACCEPTED, G = W >= x.OH.COMPLETED, H = W >= x.OH.CLAIMED, X = (0, f.Xv)(n.config), Y = (0, S.uq)(i), V = i === h.jn.QUESTS_EMBED, K = B || U, J = z && !H && Y, $ = (0, x.t5)(n, w.dr.QUESTS_CARD, i), {
+  }), F = W >= x.OH.ACCEPTED, G = W >= x.OH.COMPLETED, H = W >= x.OH.CLAIMED, X = (0, f.Xv)(n.config), Y = (0, S.uq)(i), V = i === h.jn.QUESTS_EMBED, K = B || U, J = F && !H && Y, $ = (0, x.t5)(n, w.dr.QUESTS_CARD, i), {
     xboxAndPlaystationAccounts: ee
   } = (0, x.z6)(), et = (0, p.O5)(), en = (0, j.j)({
     location: w.dr.QUESTS_BAR_MOBILE
@@ -154,7 +154,7 @@ let L = e => {
     taskDetails: es,
     location: w.dr.QUESTS_CARD,
     questContent: h.jn.QUESTS_EMBED
-  }), eo = (0, a.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), ea = (0, a.e7)([u.default], () => u.default.locale), el = (0, x.z)(n), ec = Y && X, eu = L && !G, ed = ee.length > 0 && Y && (0, f.$J)(n) && z && !G && !el, em = (0, r.jsx)(T.Z, {
+  }), eo = (0, a.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil, []), ea = (0, a.e7)([u.default], () => u.default.locale), el = (0, x.z)(n), ec = Y && X, eu = L && !G, ed = ee.length > 0 && Y && (0, f.$J)(n) && F && !G && !el, em = (0, r.jsx)(T.Z, {
     autoplay: N,
     className: o()(I.gridImg, {
       [I.questRewardGiftInventory]: Y && "lg" === c,
@@ -201,7 +201,7 @@ let L = e => {
       }), (0, r.jsxs)("div", {
         className: o()(I.gridText, I.taskDetails),
         children: [(0, r.jsx)(l.Text, {
-          variant: A(i, c, z),
+          variant: A(i, c, F),
           className: I.taskInstructions,
           children: L ? _.intl.formatToPlainString(_.t["ge+AJi"], {
             questName: n.config.messages.questName
@@ -269,7 +269,7 @@ let L = e => {
             sharedQuestFields: er,
             withCopySimplification: en,
             collectibleQuestRewardDescription: ei,
-            formattedCompletionDate: F
+            formattedCompletionDate: z
           })
         })]
       }), eo ? (0, r.jsxs)("div", {
