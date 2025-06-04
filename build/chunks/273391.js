@@ -46,8 +46,8 @@ function g(e, t) {
 }
 let m = new i.Z("ImageEditor"),
   f = {
-    width: 400,
-    height: 400
+    width: 256,
+    height: 256
   },
   v = e => {
     let {
@@ -57,7 +57,7 @@ let m = new i.Z("ImageEditor"),
     } = e, v = a.useRef({
       x: 0,
       y: 0
-    }), O = a.useRef(null), [N, E] = a.useState(1), [I, D] = a.useState(null), [y, C] = a.useState({
+    }), O = a.useRef(null), [E, N] = a.useState(1), [I, D] = a.useState(null), [y, C] = a.useState({
       top: 0,
       bottom: 0,
       left: 0,
@@ -65,7 +65,7 @@ let m = new i.Z("ImageEditor"),
     }), [w, S] = a.useState(0), [A, k] = a.useState({
       x: 0,
       y: 0
-    }), [T, M] = a.useState(!1), R = "image/gif" === t.type;
+    }), [T, R] = a.useState(!1), M = "image/gif" === t.type;
     a.useEffect(() => {
       (0, c.Z)()
     }, []);
@@ -79,8 +79,8 @@ let m = new i.Z("ImageEditor"),
         }), C(_({
           width: e,
           height: t
-        }, 1, R))
-      }, [R]),
+        }, 1, M))
+      }, [M]),
       P = a.useCallback(e => {
         if (null == O.current) return;
         let {
@@ -94,16 +94,16 @@ let m = new i.Z("ImageEditor"),
       }, [O, w, y]),
       z = a.useCallback(e => {
         if (null == I) return;
-        let t = _(I, e, R),
+        let t = _(I, e, M),
           {
             x: r,
             y: n
           } = v.current;
-        E(e), C(t), P({
+        N(e), C(t), P({
           x: r,
           y: n
         })
-      }, [I, P, R]),
+      }, [I, P, M]),
       G = a.useCallback(() => {
         if (null == O.current || null == I) return;
         let e = (w + 90) % 360,
@@ -114,7 +114,7 @@ let m = new i.Z("ImageEditor"),
           l = _({
             width: n,
             height: a
-          }, N, R);
+          }, E, M);
         P({
           x: r,
           y: t
@@ -122,28 +122,28 @@ let m = new i.Z("ImageEditor"),
           width: n,
           height: a
         }), C(l)
-      }, [I, w, P, N, R]),
+      }, [I, w, P, E, M]),
       Z = a.useCallback(() => {
         if (null == I) return {};
         let {
           height: e,
           width: t
-        } = x(b(I, w), N);
+        } = x(b(I, w), E);
         return {
           height: e,
           width: t,
           minHeight: e,
           minWidth: t
         }
-      }, [I, w, N]),
+      }, [I, w, E]),
       U = a.useCallback(e => {
         k({
           x: e.clientX - v.current.x,
           y: e.clientY - v.current.y
-        }), M(!0)
+        }), R(!0)
       }, []);
     a.useEffect(() => {
-      let e = () => M(!1);
+      let e = () => R(!1);
       return window.addEventListener("mouseup", e), () => window.removeEventListener("mouseup", e)
     }, []);
     let B = a.useCallback(e => {
@@ -170,7 +170,7 @@ let m = new i.Z("ImageEditor"),
             width: u.eT
           },
           s = null;
-        if (null != W.current && (W.current(), W.current = null), R) try {
+        if (null != W.current && (W.current(), W.current = null), M) try {
           let r = j({
               file: t,
               image: n,
@@ -180,7 +180,7 @@ let m = new i.Z("ImageEditor"),
               imageRotation: w,
               resizeWidth: u.eT,
               resizeHeight: u.eT
-            }, I, N),
+            }, I, E),
             {
               result: l,
               cancelFn: s
@@ -207,10 +207,10 @@ let m = new i.Z("ImageEditor"),
           var e;
           null == (e = W.current) || e.call(W), W.current = null
         }
-      }, [t, w, R, i, I, N]);
+      }, [t, w, M, i, I, E]);
     return a.useEffect(() => {
       F()
-    }, [F, w, I, T, N]), (0, n.jsxs)("div", {
+    }, [F, w, I, T, E]), (0, n.jsxs)("div", {
       className: p.imageEditor,
       children: [(0, n.jsxs)("div", {
         className: p.editingContainer,
@@ -320,7 +320,7 @@ let m = new i.Z("ImageEditor"),
     let {
       width: r,
       height: n
-    } = e, a = 400 * t, l = r / n;
+    } = e, a = 256 * t, l = r / n;
     return r > n ? n = (r = a) / l : r = (n = a) * l, {
       width: r,
       height: n
@@ -331,8 +331,8 @@ function _(e, t, r) {
   let {
     width: n,
     height: a
-  } = x(e, t), l = Math.abs(400 - n) / 2, s = Math.abs(400 - a) / 2;
-  return r && (n < 400 || a < 400) ? {
+  } = x(e, t), l = Math.abs(256 - n) / 2, s = Math.abs(256 - a) / 2;
+  return r && (n < 256 || a < 256) ? {
     top: 0,
     bottom: 0,
     left: 0,
@@ -348,7 +348,7 @@ let j = (e, t, r) => {
   let {
     height: n,
     width: a
-  } = x(t, r), l = (n = Math.min(n, 400)) / (a = Math.min(a, 400)), s = {
+  } = x(t, r), l = (n = Math.min(n, 256)) / (a = Math.min(a, 256)), s = {
     height: n,
     width: a
   }, i = Math.floor(l < 1 ? u.eT * l : u.eT / l), o = l < 1 ? i : u.eT, c = l > 1 ? i : u.eT;

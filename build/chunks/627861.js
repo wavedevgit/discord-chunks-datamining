@@ -445,7 +445,7 @@ function ec(e) {
     onClick: e => {
       ec(e)
     }
-  } : null != ev ? ev : void 0, [ev, $, ec]), ej = i.useMemo(() => {
+  } : null != ev && k ? ev : void 0, [k, $, ec, ev]), ej = i.useMemo(() => {
     let e = [];
     return V || null == ex ? V && null != ey && e.push(ey) : e.push(ex), null != eO && e.push(eO), e
   }, [ey, V, ex, eO]), eC = el(C.name, null == (t = P.activity) ? void 0 : t.type), eS = k ? (0, f.H)({

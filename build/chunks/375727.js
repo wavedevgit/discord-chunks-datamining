@@ -30,20 +30,20 @@ let j = new o.Z("EmojiStudio"),
       let e = d.Z.getGuildId(),
         t = c.Z.getGuild(e);
       return u.Z.can(b.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
-    }), [E, I] = a.useState(null != r ? r : O), [D, y] = a.useState(null), [C, w] = a.useState(""), [S, A] = a.useState(null), k = async () => {
-      if (y(null), null == E) return void y(h.ze.MISSING_GUILD);
+    }), [N, I] = a.useState(null != r ? r : O), [D, y] = a.useState(null), [C, w] = a.useState(""), [S, A] = a.useState(null), k = async () => {
+      if (y(null), null == N) return void y(h.ze.MISSING_GUILD);
       if (null == t || (null == t ? void 0 : t.file) == null || null == S) return void y(h.ze.MISSING_IMAGE_DATA);
       try {
         await (0, i.rS)({
           image: S,
-          guildId: E,
+          guildId: N,
           name: C
         })
       } catch (e) {
         y((0, g.z)(e)), j.error("Failed to upload emoji.", e);
         return
       }(0, s.Mr3)(h.Hj)
-    }, T = a.useRef(0), M = a.useCallback(e => {
+    }, T = a.useRef(0), R = a.useCallback(e => {
       let {
         imageData: t,
         imageDataTimestamp: r = 0,
@@ -61,7 +61,7 @@ let j = new o.Z("EmojiStudio"),
         children: (0, n.jsx)(f.v, {
           file: t.file,
           imageUri: t.data,
-          onUpdate: M
+          onUpdate: R
         })
       }), (0, n.jsxs)("footer", {
         children: [null != D && (0, n.jsx)(g.H, {
@@ -83,22 +83,22 @@ let j = new o.Z("EmojiStudio"),
             className: _.selector,
             children: (0, n.jsx)(m.q, {
               onChange: I,
-              selected: E
+              selected: N
             })
           }), (0, n.jsx)(s.zxk, {
             className: _.submit,
             onClick: k,
             fullWidth: !0,
-            disabled: null == t || null == E || C.length < 2,
+            disabled: null == t || null == N || C.length < 2,
             children: x.intl.string(x.t.DU0dy8)
           })]
         })]
-      }), (0, n.jsx)(N, {
+      }), (0, n.jsx)(E, {
         back: o
       })]
     })
   },
-  N = e => {
+  E = e => {
     let {
       back: t
     } = e;

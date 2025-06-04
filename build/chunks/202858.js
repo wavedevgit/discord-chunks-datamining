@@ -62,7 +62,7 @@ let s = {
       (0, r.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([i.e("45270"), i.e("23746")]).then(i.bind(i, 837651));
+        } = await Promise.all([i.e("58994"), i.e("23746")]).then(i.bind(i, 837651));
         return i => (0, n.jsx)(t, o(c({}, i), {
           handleEnableMFASuccess: e
         }))
