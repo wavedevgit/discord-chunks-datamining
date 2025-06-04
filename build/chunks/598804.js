@@ -55,7 +55,6 @@ let v = i.memo(function(e) {
     children: _.map((e, t) => (0, r.jsx)(d.ZP, {
       suppressPlaySound: !0,
       enableSecondaryActions: !0,
-      refreshEnabled: !0,
       isSoundmoji: !0,
       sound: e,
       channel: o,

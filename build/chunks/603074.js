@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => E
+  Z: () => g
 });
 var r = n(255367),
   i = n(73800),
@@ -14,64 +14,55 @@ var r = n(255367),
   d = n(28546),
   f = n(675478),
   _ = n(208049),
-  p = n(522811),
-  h = n(763296),
-  m = n(526617),
-  g = n(268365);
+  p = n(763296),
+  h = n(526617),
+  m = n(268365);
 
-function E(e) {
+function g(e) {
   let {
     guildId: t,
     channel: n,
     containerWidth: a,
-    onClose: E,
-    onSelect: b,
-    analyticsSource: y,
-    suppressPlaySound: O,
-    shouldValidateSelectedSound: v,
-    shouldShowUpsell: I = !0,
-    gridNotice: S,
-    inExpressionPicker: T,
-    soundButtonOverlay: A,
-    listPadding: N,
-    renderHeader: C,
-    defaultSoundsOnly: P
-  } = e, R = (0, s.e7)([h.Z], () => h.Z.isFetchingSounds() || h.Z.isFetchingDefaultSounds()), {
-    analyticsLocations: w
+    onClose: g,
+    onSelect: E,
+    analyticsSource: b,
+    suppressPlaySound: y,
+    shouldValidateSelectedSound: O,
+    shouldShowUpsell: v = !0,
+    gridNotice: I,
+    inExpressionPicker: S,
+    soundButtonOverlay: T,
+    listPadding: A,
+    renderHeader: N,
+    defaultSoundsOnly: C
+  } = e, P = (0, s.e7)([p.Z], () => p.Z.isFetchingSounds() || p.Z.isFetchingDefaultSounds()), {
+    analyticsLocations: R
   } = (0, u.ZP)(c.Z.SOUNDBOARD_POPOUT);
-  i.useEffect(() => {
-    _.w(), f.DZ.loadIfNecessary(), T || (0, d.ql)("")
-  }, [T]);
-  let {
-    refreshEnabled: D
-  } = (0, p.Z)({
-    location: "SoundboardSoundPicker"
-  });
-  return (0, r.jsx)(u.Gt, {
-    value: w,
+  return i.useEffect(() => {
+    _.w(), f.DZ.loadIfNecessary(), S || (0, d.ql)("")
+  }, [S]), (0, r.jsx)(u.Gt, {
+    value: R,
     children: (0, r.jsx)(l.VqE, {
-      className: o()(g.picker, {
-        [g.fetching]: R,
-        [g.inExpressionPicker]: T,
-        [g.refresh]: D
+      className: o()(m.picker, {
+        [m.fetching]: P,
+        [m.inExpressionPicker]: S
       }),
-      children: R ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(m.Z, {
+      children: P ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(h.Z, {
         guildId: t,
         channel: n,
-        onClose: E,
-        onSelect: b,
-        shouldValidateSelectedSound: v,
+        onClose: g,
+        onSelect: E,
+        shouldValidateSelectedSound: O,
         containerWidth: a,
-        suppressPlaySound: O,
-        shouldShowUpsell: I,
-        gridNotice: S,
-        soundButtonOverlay: A,
-        listPadding: N,
-        renderHeader: C,
-        defaultSoundsOnly: P,
-        inExpressionPicker: T,
-        refreshEnabled: D,
-        analyticsSource: y
+        suppressPlaySound: y,
+        shouldShowUpsell: v,
+        gridNotice: I,
+        soundButtonOverlay: T,
+        listPadding: A,
+        renderHeader: N,
+        defaultSoundsOnly: C,
+        inExpressionPicker: S,
+        analyticsSource: b
       })
     })
   })
