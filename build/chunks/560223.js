@@ -58,16 +58,16 @@ let f = e => {
       v = (0, u.Z)(),
       T = (0, g.mN)(),
       {
-        fractionalState: N
+        fractionalState: I
       } = (0, o.Z)(),
-      I = (0, c.W)(),
+      N = (0, c.W)(),
       y = (0, g.ZM)({
         perksCards: v,
         variant: n,
         isFullScreen: E,
         isPremiumSubscriber: T,
-        fractionalState: N,
-        isInReverseTrial: I
+        fractionalState: I,
+        isInReverseTrial: N
       }),
       A = y.some(e => null != e.pillText);
     return (0, i.jsxs)("div", {

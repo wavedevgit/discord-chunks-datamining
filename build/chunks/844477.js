@@ -89,65 +89,68 @@ function v(e) {
     role: t = "button",
     variant: n = "primary",
     size: a = "md",
-    text: c,
-    icon: p,
-    iconPosition: m = "start",
-    iconOpticalOffsetMargin: b = 0,
-    focusProps: v
-  } = e, S = E(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "focusProps"]);
+    fullWidth: c = !1,
+    text: p,
+    icon: m,
+    iconPosition: b = "start",
+    iconOpticalOffsetMargin: v = 0,
+    focusProps: S
+  } = e, T = E(e, ["role", "variant", "size", "fullWidth", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "focusProps"]);
 
-  function T() {
-    if (0 === b) return {};
-    switch (m) {
+  function A() {
+    if (0 === v) return {};
+    switch (b) {
       case "start":
         return {
-          marginLeft: b
+          marginLeft: v
         };
       case "end":
         return {
-          marginRight: b
+          marginRight: v
         }
     }
     return {}
   }
 
-  function A() {
-    if (null == p) return;
-    let e = T();
-    return (0, r.jsx)(p, {
+  function N() {
+    if (null == m) return;
+    let e = A();
+    return (0, r.jsx)(m, {
       color: "currentColor",
       style: e,
       size: O[a]
     })
   }
-  let N = i.useRef(null),
-    C = "expressive" === n,
-    P = i.useContext(s.S),
-    R = (0, d.a)((0, f.ZP)()),
-    w = (0, r.jsx)(l.t, g(h({}, v), {
+  let C = i.useRef(null),
+    P = "expressive" === n,
+    R = i.useContext(s.S),
+    w = (0, d.a)((0, f.ZP)()),
+    D = (0, r.jsx)(l.t, g(h({}, S), {
       children: (0, r.jsxs)("button", g(h({
         role: t,
-        className: o()(_.button, _[a], _[n]),
-        ref: N
-      }, S), {
-        children: [C && (0, r.jsx)(I, {
-          hasReducedMotion: P.reducedMotion.enabled,
-          buttonRef: N,
-          isLightMode: R
-        }), null != p && "start" === m && (0, r.jsx)(A, {}), (0, r.jsx)(u.x, {
+        className: o()(_.button, _[a], _[n], {
+          [_.fullWidth]: c
+        }),
+        ref: C
+      }, T), {
+        children: [P && (0, r.jsx)(I, {
+          hasReducedMotion: R.reducedMotion.enabled,
+          buttonRef: C,
+          isLightMode: w
+        }), null != m && "start" === b && (0, r.jsx)(N, {}), (0, r.jsx)(u.x, {
           tag: "span",
           variant: y[a],
           color: "none",
           className: _.text,
           lineClamp: 1,
-          children: c
-        }), null != p && "end" === m && (0, r.jsx)(A, {})]
+          children: p
+        }), null != m && "end" === b && (0, r.jsx)(N, {})]
       }))
     }));
-  return C ? (0, r.jsx)("div", {
+  return P ? (0, r.jsx)("div", {
     className: _.expressiveWrapper,
-    children: w
-  }) : w
+    children: D
+  }) : D
 }
 
 function I(e) {

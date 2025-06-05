@@ -104,7 +104,7 @@ let h = [{
       })]
     })
   },
-  j = () => {
+  _ = () => {
     let {
       previewAvatarDecorationId: e,
       setPreviewAvatarDecorationId: t
@@ -129,7 +129,7 @@ let h = [{
       })]
     })
   },
-  _ = e => {
+  j = e => {
     let {
       clearAssets: t,
       clearIgnoredFiles: n
@@ -337,7 +337,7 @@ let h = [{
             color: l.TVs.colors.BG_BRAND
           })
         })]
-      }), (0, a.jsx)(g, {}), (0, a.jsx)(j, {}), (0, a.jsx)(_, {
+      }), (0, a.jsx)(g, {}), (0, a.jsx)(_, {}), (0, a.jsx)(j, {
         clearAssets: s,
         clearIgnoredFiles: u
       }), (0, a.jsx)(y, {

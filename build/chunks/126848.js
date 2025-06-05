@@ -1,4 +1,4 @@
-/** Chunk was on 89387 **/
+/** Chunk was on 57931 **/
 "use strict";
 n.d(t, {
   Z: () => _
@@ -15,8 +15,8 @@ var i = n(120356),
   d = n(346497),
   p = n(924540),
   f = n(351402),
-  g = n(170671),
-  b = n(474936),
+  b = n(170671),
+  g = n(474936),
   m = n(374594);
 
 function _(e) {
@@ -29,14 +29,14 @@ function _(e) {
     h = (0, a.Ng)(),
     O = (0, d.Vi)(),
     y = (0, o.e7)([f.Z], () => f.Z.isLocalizedPromoEnabled) && null == v && null == n,
-    j = (null == v ? void 0 : v.trial_id) === b.a7;
+    j = (null == v ? void 0 : v.trial_id) === g.a7;
   return t = O ? (0, r.jsx)(c.Z, {}) : null != h ? (0, r.jsx)(p.GN, {
     isTabSelected: _,
     userDiscount: h,
     includesAmountOff: !1
   }) : null == v || j ? null != n ? n : y ? (0, r.jsx)(u.k, {
     entryPoint: u.U.SettingsMenu
-  }) : (0, r.jsx)(g.Z, {
+  }) : (0, r.jsx)(b.Z, {
     isSelected: _
   }) : (0, r.jsx)(p.$H, {
     isTabSelected: _,

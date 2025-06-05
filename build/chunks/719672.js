@@ -64,7 +64,7 @@ function v() {
         dismissibleContent: n
       }
     }),
-    j = Array.from(t.keys()).map(e => ({
+    _ = Array.from(t.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
@@ -96,7 +96,7 @@ function v() {
       children: (0, a.jsx)(x.Z, {
         className: h.candidatesTable,
         columns: f,
-        data: j
+        data: _
       })
     }), (0, a.jsx)("br", {}), (0, a.jsx)(x.Z, {
       columns: b,

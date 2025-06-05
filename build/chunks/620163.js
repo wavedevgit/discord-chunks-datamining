@@ -27,8 +27,8 @@ var r = n(990547),
   S = n(377171),
   v = n(540059),
   T = n(621628),
-  N = n(243778),
-  I = n(890022),
+  I = n(243778),
+  N = n(890022),
   y = n(18438),
   A = n(778825),
   P = n(665166),
@@ -81,8 +81,8 @@ var r = n(990547),
   eS = n(649157),
   ev = n(593648),
   eT = n(327885),
-  eN = n(595242),
-  eI = n(463153),
+  eI = n(595242),
+  eN = n(463153),
   ey = n(36192),
   eA = n(889029),
   eP = n(400287),
@@ -118,7 +118,7 @@ let e$ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
   },
   e1 = () => {
     let e = e0(),
-      [t] = (0, N.US)(e);
+      [t] = (0, I.US)(e);
     return t === s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, i.jsx)(D.Z, {}) : t === s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE ? (0, i.jsx)(a.IGR, {
       text: eq.intl.string(eq.t.y2b7CA)
     }) : null
@@ -127,7 +127,7 @@ let e$ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
   e8 = e => {
     let {
       unseenGiftCount: t,
-      showPrepaidPaymentPastDueWarning: N,
+      showPrepaidPaymentPastDueWarning: I,
       impressionSource: R,
       numOfPendingFamilyRequests: D,
       isOverlaySupported: G,
@@ -160,7 +160,7 @@ let e$ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
     return Object.freeze({
       [eH.s6.SEARCH_NO_RESULTS]: {
         section: g.ID.CUSTOM,
-        element: eI.Z
+        element: eN.Z
       },
       [eH.s6.ACCOUNT_SECURITY_TAB]: {
         section: eY.oAB.ACCOUNT,
@@ -636,7 +636,7 @@ let e$ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eY.oAB.GUILD_BOOSTING,
         searchableTitles: [eq.intl.string(eq.t["+CbP2t"])],
         label: eq.intl.string(eq.t["+CbP2t"]),
-        element: eN.Z
+        element: eI.Z
       },
       [eH.s6.SUBSCRIPTIONS]: {
         section: eY.oAB.SUBSCRIPTIONS,
@@ -644,7 +644,7 @@ let e$ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [eq.intl.string(eq.t.trSpHR)],
         label: eq.intl.string(eq.t.trSpHR),
         element: k.Z,
-        icon: N ? (0, i.jsx)(a.P4T, {
+        icon: I ? (0, i.jsx)(a.P4T, {
           size: "xs",
           color: l.Z.unsafe_rawColors.YELLOW_300.css
         }) : null
@@ -1439,7 +1439,7 @@ let e$ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eY.oAB.NOTIFICATIONS,
         searchableTitles: [eq.intl.string(eq.t.omtoJy)],
         parent: eH.s6.NOTIFICATIONS,
-        predicate: () => (0, I.uw)("SettingsRendererConfig")
+        predicate: () => (0, N.uw)("SettingsRendererConfig")
       },
       [eH.s6.KEYBINDS]: {
         section: eY.oAB.KEYBINDS,

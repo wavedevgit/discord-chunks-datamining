@@ -396,13 +396,13 @@ function ec(e) {
     }
   } : e_ ? {
     label: Q.intl.string(Q.t.VJlc0d),
-    trackingArea: g.j_.PLAY,
+    trackingArea: g.j_.SYNC,
     onClick: () => {
       null != R && u.Z_(R, P.author.id)
     }
   } : eE ? {
     label: Q.intl.string(Q.t["hC/Ze3"]),
-    trackingArea: g.j_.PLAY,
+    trackingArea: g.j_.INVITE,
     onClick: () => {
       null != R && s.Z.sendActivityInvite({
         type: X.mFx.JOIN,

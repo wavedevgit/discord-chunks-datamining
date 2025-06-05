@@ -1,10 +1,10 @@
-/** Chunk was on 89387 **/
+/** Chunk was on 57931 **/
 "use strict";
 n.d(t, {
-  $x: () => C,
-  ZP: () => T,
+  $x: () => S,
+  ZP: () => N,
   d7: () => P,
-  w6: () => S
+  w6: () => C
 }), n(539854), n(361932), n(187205), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -17,8 +17,8 @@ var r = n(255367),
   d = n(126848),
   p = n(207874),
   f = n(585483),
-  g = n(960048),
-  b = n(410575),
+  b = n(960048),
+  g = n(410575),
   m = n(493544),
   _ = n(981631),
   v = n(388032),
@@ -63,11 +63,11 @@ let x = Object.freeze({
     onPreventNavigation: null,
     sidebarOpen: !0
   }),
-  C = 1.4,
-  S = 15,
+  S = 1.4,
+  C = 15,
   P = 2;
 
-function E(e) {
+function w(e) {
   var t, n;
   let {
     section: i,
@@ -81,7 +81,7 @@ function E(e) {
   });
   let c = null != (t = null == i ? void 0 : i.element) ? t : _.VqG,
     u = null != (n = null == i ? void 0 : i.elementProps) ? n : {};
-  return (0, r.jsx)(b.Z, {
+  return (0, r.jsx)(g.Z, {
     section: i.section,
     children: (0, r.jsx)(c, j(y({}, u), {
       setPreventNavigation: o,
@@ -89,7 +89,7 @@ function E(e) {
     }))
   })
 }
-class w extends i.PureComponent {
+class E extends i.PureComponent {
   componentDidMount() {
     this.getPredicateSections().forEach(e => {
       let {
@@ -108,7 +108,7 @@ class w extends i.PureComponent {
     let {
       section: t
     } = e;
-    t !== this.props.section && (this._intensity = C)
+    t !== this.props.section && (this._intensity = S)
   }
   componentWillUnmount() {
     this._unmounted = !0, this._subscribedStores.forEach(e => e.removeChangeListener(this.handleNoticeStoreUpdate)), this.props.sections.forEach(e => {
@@ -129,7 +129,7 @@ class w extends i.PureComponent {
     return null != n && n.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (f.S.dispatch(_.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + P, S), f.S.dispatch(_.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = C, !0)
+    }), this._intensity = Math.min(this._intensity + P, C), f.S.dispatch(_.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = S, !0)
   }
   renderSidebar(e) {
     let {
@@ -204,7 +204,7 @@ class w extends i.PureComponent {
         scrollerRef: this.scrollerRef,
         section: n,
         sidebar: this.renderSidebar(a),
-        content: (0, r.jsx)(E, {
+        content: (0, r.jsx)(w, {
           section: l,
           setPreventNavigation: this.setPreventNavigation,
           scrollerRef: this.scrollerRef
@@ -221,7 +221,7 @@ class w extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), O(this, "_unmounted", !1), O(this, "_intensity", C), O(this, "_subscribedStores", []), O(this, "scrollerRef", i.createRef()), O(this, "state", j(y({}, x), {
+    super(...e), O(this, "_unmounted", !1), O(this, "_intensity", S), O(this, "_subscribedStores", []), O(this, "scrollerRef", i.createRef()), O(this, "state", j(y({}, x), {
       sidebarOpen: this.props.section !== _.oAB.SUBSCRIPTIONS && this.props.section !== _.oAB.PROFILE_CUSTOMIZATION
     })), O(this, "setPreventNavigation", (e, t) => {
       this.setState({
@@ -247,7 +247,7 @@ class w extends i.PureComponent {
           sidebarOpen: !1
         }))
       };
-      this.validNavigation() && !r && (s(), g.Z.addBreadcrumb({
+      this.validNavigation() && !r && (s(), b.Z.addBreadcrumb({
         category: "settings",
         message: "Set section: ".concat(e)
       })), r && null != i && i(s)
@@ -259,7 +259,7 @@ class w extends i.PureComponent {
         null == e || e()
       }
     }), O(this, "handleNoticeStoreUpdate", () => {
-      this._unmounted || (this._intensity = C, this.forceUpdate())
+      this._unmounted || (this._intensity = S, this.forceUpdate())
     }), O(this, "renderSettingsSectionTabBarItem", (e, t, n) => {
       let {
         section: i,
@@ -269,8 +269,8 @@ class w extends i.PureComponent {
         variant: u,
         icon: p,
         className: f,
-        newIndicator: g,
-        newIndicatorDismissibleContentTypes: b,
+        newIndicator: b,
+        newIndicatorDismissibleContentTypes: g,
         badgeCount: m
       } = e, O = null;
       i === _.oAB.ACCOUNT && this.props.isEligibleForPomelo ? O = (0, r.jsx)(a.P4T, {
@@ -282,7 +282,7 @@ class w extends i.PureComponent {
         variant: "text-md/normal",
         color: "text-muted",
         children: e.decoration
-      }) : null != n && (null == b ? void 0 : b.includes(n)) && !t ? O = null != g ? g : (0, r.jsx)(a.IGR, {
+      }) : null != n && (null == g ? void 0 : g.includes(n)) && !t ? O = null != b ? b : (0, r.jsx)(a.IGR, {
         text: v.intl.string(v.t.y2b7CA)
       }) : null != p ? O = p : null != m && m > 0 && (O = (0, r.jsx)(a.mAB, {
         count: m
@@ -306,4 +306,4 @@ class w extends i.PureComponent {
     })
   }
 }
-let T = w
+let N = E

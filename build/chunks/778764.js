@@ -59,7 +59,7 @@ function O(e) {
     onClose: l,
     ticket: o,
     challenge: u
-  } = e, f = (0, c.Dt)(), [C, j] = r.useState(""), [O, S] = r.useState(!0), [v, T] = r.useState(b.x.INIT), [N, I] = r.useState(""), [y, A] = r.useState(null), P = async () => {
+  } = e, f = (0, c.Dt)(), [C, j] = r.useState(""), [O, S] = r.useState(!0), [v, T] = r.useState(b.x.INIT), [I, N] = r.useState(""), [y, A] = r.useState(null), P = async () => {
     let e;
     T(b.x.REGISTER);
     let t = m.isPlatformEmbedded && p.ZP.supportsFeature(_.eRX.WEBAUTHN) ? p.ZP.webAuthnRegister(u) : s.Ue(JSON.parse(u)).then(e => JSON.stringify(e));
@@ -69,7 +69,7 @@ function O(e) {
       g.Z.captureException(e), A(x.intl.string(x.t.xSCvBQ)), T(b.x.INIT);
       return
     }
-    I(e), T(b.x.NAME)
+    N(e), T(b.x.NAME)
   };
   return (0, i.jsxs)(a.Y0X, {
     transitionState: t,
@@ -142,7 +142,7 @@ function O(e) {
         id: b.x.NAME,
         children: (0, i.jsxs)("form", {
           onSubmit: e => {
-            e.preventDefault(), (0, h.Sr)(C, o, N).then(async () => {
+            e.preventDefault(), (0, h.Sr)(C, o, I).then(async () => {
               await (0, d.Yn)(!1)
             }).then(() => l()).catch(() => {
               A(x.intl.string(x.t.fEptJC)), T(b.x.INIT)

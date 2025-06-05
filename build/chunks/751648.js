@@ -37,34 +37,38 @@ async function o() {
 async function u(e) {
   let {
     skuId: t,
-    onRedeemStart: r,
-    onRedeemSucceed: u,
-    onRedeemFail: c,
-    shouldRefetchBalance: s = !0
+    loadId: r,
+    onRedeemStart: u,
+    onRedeemSucceed: c,
+    onRedeemFail: s,
+    shouldRefetchBalance: d = !0
   } = e;
   a.Z.wait(() => {
     a.Z.dispatch({
       type: "VIRTUAL_CURRENCY_REDEEM_START",
       skuId: t
     })
-  }), null == r || r();
+  }), null == u || u();
   try {
     let e = (await n.tn.post({
       url: i.ANM.VIRTUAL_CURRENCY_SKU_REDEEM(t),
+      body: {
+        checkout_session_id: r
+      },
       rejectWithError: !1
     })).body;
     return a.Z.dispatch({
       type: "VIRTUAL_CURRENCY_REDEEM_SUCCESS",
       skuId: t,
       entitlements: e
-    }), s && o(), null == u || u(e), e
+    }), d && o(), null == c || c(e), e
   } catch (r) {
     let e = r instanceof l.HF ? r : new l.HF(r);
     a.Z.dispatch({
       type: "VIRTUAL_CURRENCY_REDEEM_FAIL",
       skuId: t,
       error: e
-    }), s && o(), null == c || c(e)
+    }), d && o(), null == s || s(e)
   }
 }
 

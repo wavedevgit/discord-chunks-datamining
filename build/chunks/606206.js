@@ -1,23 +1,23 @@
 /** Chunk was on 40814 **/
 let r;
 n.d(t, {
-  Z: () => P
+  Z: () => j
 }), n(388685), n(539854), n(781311), n(35282);
 var l, i = n(442837),
   o = n(570140),
   a = n(278323),
   s = n(212819),
-  c = n(933557),
-  u = n(592125),
+  u = n(933557),
+  c = n(592125),
   d = n(430824),
   f = n(293273),
   h = n(158776),
   p = n(699516),
   g = n(594174),
-  y = n(55589),
-  O = n(981631);
+  O = n(55589),
+  y = n(981631);
 
-function b(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,14 +25,14 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let N = [s.h8.TEXT_CHANNEL, s.h8.GROUP_DM, s.h8.USER],
+let b = [s.h8.TEXT_CHANNEL, s.h8.GROUP_DM, s.h8.USER],
   v = null,
   m = null,
-  x = [],
-  E = [];
+  E = [],
+  C = [];
 
-function C(e) {
-  x = [...x, e], E = E.map(e => {
+function x(e) {
+  E = [...E, e], C = C.map(e => {
     var t, n;
     return t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -41,12 +41,12 @@ function C(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          b(e, t, n[t])
+          N(e, t, n[t])
         })
       }
       return e
     }({}, e), n = n = {
-      sent: x.includes(e.data.record.id)
+      sent: E.includes(e.data.record.id)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function C(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t
-  }), S.emitChange()
+  }), P.emitChange()
 }
 
 function I() {
@@ -68,7 +68,7 @@ function T() {
   let e = null != v && null != v.application_id ? f.Z.getApplicationActivity(v.application_id) : null;
   if (null != v && (null == e || null == e.party || null == e.party.id)) return I()
 }
-class j extends(l = i.ZP.Store) {
+class S extends(l = i.ZP.Store) {
   initialize() {
     this.waitFor(f.Z)
   }
@@ -80,19 +80,19 @@ class j extends(l = i.ZP.Store) {
     return null != (e = null == r ? void 0 : r.query) ? e : ""
   }
   getResults() {
-    return E
+    return C
   }
 }
-b(j, "displayName", "ActivityInviteModalStore");
-let S = new j(o.Z, {
+N(S, "displayName", "ActivityInviteModalStore");
+let P = new S(o.Z, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
-      v = e.activity, m = e.resolve, x = [], null == r && (r = new s.ZP((e, t) => {
-        E = ("" === t.trim() ? function() {
+      v = e.activity, m = e.resolve, E = [], null == r && (r = new s.ZP((e, t) => {
+        C = ("" === t.trim() ? function() {
           let e = [];
-          return y.Z.getPrivateChannelIds().forEach(t => {
-            let n = u.Z.getChannel(t);
+          return O.Z.getPrivateChannelIds().forEach(t => {
+            let n = c.Z.getChannel(t);
             if (null != n)
-              if (n.type === O.d4z.DM) {
+              if (n.type === y.d4z.DM) {
                 let t = n.getRecipientId(),
                   r = null != t ? g.default.getUser(t) : null;
                 null != r && e.push({
@@ -114,7 +114,7 @@ let S = new j(o.Z, {
               } = e;
               return {
                 type: s.h8.USER,
-                sent: x.includes(t.id),
+                sent: E.includes(t.id),
                 status: h.Z.getStatus(t.id),
                 data: e
               }
@@ -122,11 +122,11 @@ let S = new j(o.Z, {
             case s.h8.TEXT_CHANNEL: {
               let {
                 record: t
-              } = e, n = u.Z.getChannel(t.parent_id), r = d.Z.getGuild(t.guild_id);
+              } = e, n = c.Z.getChannel(t.parent_id), r = d.Z.getGuild(t.guild_id);
               return {
                 type: s.h8.TEXT_CHANNEL,
-                sent: x.includes(t.id),
-                categoryName: null != n ? (0, c.F6)(n, g.default, p.Z) : "",
+                sent: E.includes(t.id),
+                categoryName: null != n ? (0, u.F6)(n, g.default, p.Z) : "",
                 guildName: null != r ? r.toString() : "",
                 data: e
               }
@@ -137,15 +137,15 @@ let S = new j(o.Z, {
               } = e;
               return {
                 type: s.h8.GROUP_DM,
-                sent: x.includes(t.id),
+                sent: E.includes(t.id),
                 data: e
               }
             }
             default:
               return null
           }
-        }).filter(e => null != e), S.emitChange()
-      }, N, 100)), r.search("")
+        }).filter(e => null != e), P.emitChange()
+      }, b, 100)), r.search("")
     },
     ACTIVITY_INVITE_MODAL_QUERY: function(e) {
       let {
@@ -159,15 +159,15 @@ let S = new j(o.Z, {
         n = e.userId;
       null != t ? a.Z.sendActivityInvite({
         channelId: t,
-        type: O.mFx.JOIN,
+        type: y.mFx.JOIN,
         activity: v,
         location: "Channel Text Area - Invite to Join Modal"
-      }).then(() => C(t)) : null != n && a.Z.sendActivityInviteUser({
+      }).then(() => x(t)) : null != n && a.Z.sendActivityInviteUser({
         userId: n,
-        type: O.mFx.JOIN,
+        type: y.mFx.JOIN,
         activity: v,
         location: "Channel Text Area - Invite to Join Modal"
-      }).then(() => C(n))
+      }).then(() => x(n))
     },
     ACTIVITY_INVITE_MODAL_CLOSE: I,
     OVERLAY_SET_INPUT_LOCKED: function(e) {
@@ -179,4 +179,4 @@ let S = new j(o.Z, {
     LOCAL_ACTIVITY_UPDATE: T,
     RPC_APP_DISCONNECTED: T
   }),
-  P = 12633 == n.j ? S : null
+  j = 12633 == n.j ? P : null

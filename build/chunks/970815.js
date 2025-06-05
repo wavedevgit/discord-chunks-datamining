@@ -37,8 +37,8 @@ let b = () => (0, n.jsx)("img", {
     }, [L, v, j]), (0, a.useEffect)(() => {
       P && !L && v(!1)
     }, [L, P]);
-    let D = L || j,
-      k = j ? null : l,
+    let k = L || j,
+      D = j ? null : l,
       [N, U] = (0, a.useState)(null),
       I = (0, a.useRef)(null),
       T = (0, a.useCallback)(() => {
@@ -49,7 +49,7 @@ let b = () => (0, n.jsx)("img", {
         e > 0 && ("earn" !== N || !t) && U("earn")
       }, [U, N]);
     return (0, n.jsx)(o.P3F, {
-      onClick: D ? void 0 : y,
+      onClick: k ? void 0 : y,
       className: i()(d.clickable, {
         [d.disabled]: m
       }),
@@ -60,12 +60,12 @@ let b = () => (0, n.jsx)("img", {
         onMouseLeave: m ? void 0 : () => E(!1),
         ref: t,
         className: i()(d.container, R, g, {
-          [d.containerLoading]: D,
+          [d.containerLoading]: k,
           [d.inModalOverlay]: C,
           [d.disabled]: m
         }),
         children: [(0, n.jsx)("div", {
-          className: i()(d.orbsLottieContainer, D ? d.orbIconloading : void 0),
+          className: i()(d.orbsLottieContainer, k ? d.orbIconloading : void 0),
           children: (0, n.jsx)(s.ZP, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
@@ -89,11 +89,11 @@ let b = () => (0, n.jsx)("img", {
             onSetAnimationDurationMS: A
           }))
         }), (0, n.jsx)(c.Z, {
-          value: k,
+          value: D,
           onValueChange: V,
           onValueReached: T,
           targetTotalCounterTime: w,
-          className: D ? d.counterLoading : void 0
+          className: k ? d.counterLoading : void 0
         }), O && (0, n.jsx)(b, {})]
       })
     })

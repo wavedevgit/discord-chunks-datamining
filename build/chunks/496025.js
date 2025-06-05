@@ -19,8 +19,8 @@ var a = n(255367),
   f = n(55589),
   v = n(630388),
   g = n(98357),
-  j = n(432877),
-  _ = n(246992),
+  _ = n(432877),
+  j = n(246992),
   y = n(894257),
   C = n(750540),
   N = n(616257);
@@ -48,7 +48,7 @@ function O() {
       let t = (0, v.x9)(null != (e = i.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
       x.Z.updatePrivateChannelRecipientFlags(i.id, t)
     }, [i]),
-    j = null != i && !!i.isPrivate() && (0, v.yE)(null != (e = i.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+    _ = null != i && !!i.isPrivate() && (0, v.yE)(null != (e = i.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(c.Text, {
       variant: "text-md/semibold",
@@ -70,12 +70,12 @@ function O() {
             size: c.EFr.SIZE_16
           })
         },
-        popoutLayerContext: _.O$
+        popoutLayerContext: j.O$
       }), (0, a.jsx)(c.zxk, {
         size: c.zxk.Sizes.SMALL,
         onClick: g,
         disabled: null == n,
-        children: j ? "Clear NUX Flag" : "Set NUX Flag"
+        children: _ ? "Clear NUX Flag" : "Set NUX Flag"
       })]
     })]
   })
@@ -95,7 +95,7 @@ function E() {
 }
 
 function T() {
-  let e = j.ZP.allByCategory(j.zU.MESSAGING).map(e => {
+  let e = _.ZP.allByCategory(_.zU.MESSAGING).map(e => {
     let [t, n, {
       label: r
     }] = e;

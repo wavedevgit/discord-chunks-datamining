@@ -320,7 +320,8 @@ class eO extends d.Z {
     if (L.Z.supports(eo.AN.FIXED_KEYFRAME_INTERVAL) && t.push("fixed_keyframe_interval"), 0 !== this._supportedBandwidthEstimationExperiments.length) {
       let e = T.Z.workerExperimentString();
       null != e && t.push(e)
-    }(0, I.f)("RtcConnection").enabled && t.push("audio_transport_cc"), A.Z.getCurrentConfig({
+    }
+    this.context === eo.Yn.DEFAULT && (0, I.f)("RtcConnection").enabled && t.push("audio_transport_cc"), A.Z.getCurrentConfig({
       location: "_chooseExperiments"
     }, {
       autoTrackExposure: !0

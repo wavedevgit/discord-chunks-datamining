@@ -22,7 +22,7 @@ let f = function(e) {
     isVisible: r,
     isFullscreen: f,
     subscriptionTier: b,
-    isMarketingPageV2: _
+    isApplicationHome: _
   } = e, x = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, E = (0, c.Ng)(), C = (0, c.Wp)(E, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, j = (0, a.q_F)({
     transform: r ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!r,
@@ -40,7 +40,7 @@ let f = function(e) {
     }),
     style: j,
     children: (0, i.jsxs)("div", {
-      className: _ ? h.innerWrapperV2 : h.innerWrapperV1,
+      className: _ ? h.innerWrapperApplicationHome : h.innerWrapper,
       children: [(0, i.jsx)(m.Z, {
         className: s()(h.button, {
           [h.subButton]: v

@@ -9,8 +9,8 @@ var r = n(255367),
   a = n(120356),
   o = n.n(a),
   s = n(386230),
-  l = n(770278),
-  c = n(481060),
+  l = n(558452),
+  c = n(770278),
   u = n(724723),
   d = n(574697);
 
@@ -37,7 +37,7 @@ function _(e) {
 }
 
 function p(e) {
-  return e !== l.f.TOP_RADIAL && e !== l.f.SUBTLE && e !== l.f.BLUR
+  return e !== c.f.TOP_RADIAL && e !== c.f.SUBTLE && e !== c.f.BLUR
 }
 
 function h(e) {
@@ -46,10 +46,10 @@ function h(e) {
     animationVariant: n = "default",
     onClick: i,
     isVisible: a,
-    disabled: l = !1,
+    disabled: c = !1,
     disablePointerEvents: u = !1
   } = e;
-  return (0, c.Yzy)(a, {
+  return (0, l.Y)(a, {
     keys: e => e ? "scrim" : "empty",
     config: {
       duration: 250
@@ -70,12 +70,12 @@ function h(e) {
       [d.pointerEventsNone]: u
     }),
     style: e,
-    onClick: l ? void 0 : i
+    onClick: c ? void 0 : i
   }) : null)
 }
 let m = i.forwardRef(function(e) {
-  return (0, u.q)("Scrim") ? (0, r.jsx)(h, _({}, e)) : (0, r.jsx)(l.Z, {
-    backdropStyle: "lightbox" === e.variant ? l.f.LIGHTBOX : l.f.DARK,
+  return (0, u.q)("Scrim") ? (0, r.jsx)(h, _({}, e)) : (0, r.jsx)(c.Z, {
+    backdropStyle: "lightbox" === e.variant ? c.f.LIGHTBOX : c.f.DARK,
     onClose: e.onClick,
     isVisible: e.isVisible,
     backdropInstant: "instant" === e.animationVariant

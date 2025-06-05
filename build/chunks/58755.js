@@ -96,7 +96,7 @@ function g(e) {
           style: {
             cursor: "pointer"
           },
-          children: (0, a.jsx)(_, {
+          children: (0, a.jsx)(j, {
             scale: e,
             onRemove: () => n(b(p({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
@@ -105,7 +105,7 @@ function g(e) {
         })
       }, e.name))
     })]
-  }), u = l.find(e => e.name === i), f = null != u ? (0, a.jsx)(j, {
+  }), u = l.find(e => e.name === i), f = null != u ? (0, a.jsx)(_, {
     onClose: () => s(null),
     scale: u,
     setState: n
@@ -115,7 +115,7 @@ function g(e) {
   })
 }
 
-function j(e) {
+function _(e) {
   let {
     scale: t,
     setState: n,
@@ -126,8 +126,8 @@ function j(e) {
     darkness: b,
     lightness: v,
     showColumnarPalettePreview: g,
-    colorSpace: j,
-    easingStrength: _ = 1,
+    colorSpace: _,
+    easingStrength: j = 1,
     useP3ColorSpace: C,
     steps: N = 26
   } = t, O = (0, x.XM)(t), E = (0, x.W6)(O, c);
@@ -185,7 +185,7 @@ function j(e) {
         children: "The color space used to generate the palette. Different color spaces will produce different results."
       }), (0, a.jsx)(d.q4e, {
         options: f,
-        value: j,
+        value: _,
         onChange: e => (0, x.t4)(c, e, n),
         popoutLayerContext: m.O$
       })]
@@ -229,13 +229,13 @@ function j(e) {
     }), (0, a.jsx)(d.hjN, {
       title: "Easing",
       children: (0, a.jsxs)(d.xJW, {
-        title: "Easing Strength (".concat(_.toFixed(2), ")"),
+        title: "Easing Strength (".concat(j.toFixed(2), ")"),
         children: [(0, a.jsx)(d.R94, {
           type: d.geA.DESCRIPTION,
           children: "Adjust the strength of the easing function."
         }), (0, a.jsx)(d.iRW, {
           onValueRender: () => null,
-          initialValue: _,
+          initialValue: j,
           minValue: 1,
           maxValue: 5,
           onValueChange: e => (0, x.rd)(c, e, n),
@@ -306,7 +306,7 @@ function j(e) {
   })
 }
 
-function _(e) {
+function j(e) {
   let {
     scale: t,
     onRemove: n

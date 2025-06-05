@@ -19,8 +19,8 @@ var a = n(255367),
   f = n(246992),
   v = n(681619),
   g = n(810568),
-  j = n(168524),
-  _ = n(77498),
+  _ = n(168524),
+  j = n(77498),
   y = n(823379),
   C = n(550532),
   N = n(71585),
@@ -112,11 +112,11 @@ function A() {
       return (null == (e = O.Z.getFeedState(P.YN.GLOBAL_FEED)) ? void 0 : e.loading) === !0
     }),
     [R, A] = r.useState(""),
-    L = (0, u.e7)([_.Z, p.Z], () => {
+    L = (0, u.e7)([j.Z, p.Z], () => {
       var e, t, n;
-      return parseInt(R) > 0 ? R : null != (n = null == (e = _.Z.getGameByName(R)) ? void 0 : e.id) ? n : null == (t = p.Z.getApplicationByName(R)) ? void 0 : t.id
+      return parseInt(R) > 0 ? R : null != (n = null == (e = j.Z.getGameByName(R)) ? void 0 : e.id) ? n : null == (t = p.Z.getApplicationByName(R)) ? void 0 : t.id
     }, [R]),
-    D = (0, j.Z)({
+    D = (0, _.Z)({
       applicationId: L,
       location: "DevToolsContentInventory",
       source: g.m1.DevTools
@@ -244,7 +244,7 @@ function A() {
 let Z = e => {
   let {
     application: t
-  } = e, n = (0, j.Z)({
+  } = e, n = (0, _.Z)({
     applicationId: t.id,
     location: "DevToolsContentInventory",
     source: g.m1.DevTools

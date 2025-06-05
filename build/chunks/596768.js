@@ -19,8 +19,8 @@ var a = n(255367),
   f = n(31336),
   v = n(257785),
   g = n(484036),
-  j = n(681619),
-  _ = n(621060),
+  _ = n(681619),
+  j = n(621060),
   y = n(388032),
   C = n(459100),
   N = n(616257);
@@ -55,7 +55,7 @@ let O = [{
   E = [{
     id: "details",
     name: "Details",
-    group: _.v0.NONE,
+    group: j.v0.NONE,
     render: e => {
       let {
         loggedTrigger: {
@@ -136,7 +136,7 @@ function T() {
   let [e, t] = r.useState(""), n = r.useRef(null), l = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), s = r.useMemo(() => l.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = r.useState(void 0), h = s.find(e => e.key === c), {
     TabBar: p,
     renderSelectedTab: v
-  } = (0, _.ZP)({
+  } = (0, j.ZP)({
     tabs: E
   }, []), T = (0, u.e7)([b.Z], () => b.Z.trackTriggers), S = r.useCallback(e => {
     x.Z.dispatch({
@@ -177,7 +177,7 @@ function T() {
         onClear: () => t(""),
         placeholder: "Search by experiment id"
       })]
-    }), (0, a.jsx)(j.Z, {
+    }), (0, a.jsx)(_.Z, {
       columns: O,
       data: s,
       selectedRowKey: c,

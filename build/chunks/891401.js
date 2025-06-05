@@ -19,9 +19,9 @@ var a = n(255367),
   f = n(675478),
   v = n(944486),
   g = n(388032),
-  j = n(145634);
+  _ = n(145634);
 
-function _(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -55,7 +55,7 @@ function y(e, t) {
 
 function C() {
   return (0, a.jsxs)(u.Ttm, {
-    className: j.container,
+    className: _.container,
     children: [(0, a.jsx)(N, {}), (0, a.jsx)(O, {})]
   })
 }
@@ -95,30 +95,30 @@ function N() {
     A = null != (t = null == d ? void 0 : d.token_mix_amount) ? t : 100;
   return (0, a.jsxs)("div", {
     children: [(0, a.jsx)(o.X6, {
-      className: j.header,
+      className: _.header,
       variant: "heading-lg/semibold",
       children: "DM Wallpapers"
     }), null == d && (0, a.jsx)("p", {
-      className: j.explanation,
+      className: _.explanation,
       children: "Open a DM with a wallpaper to customize."
     }), null != d && (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(o.X6, {
-        className: j.subheader,
+        className: _.subheader,
         variant: "heading-md/semibold",
         children: "ChatWallpaperMetadataRecord"
       }), (0, a.jsx)("pre", {
-        className: j.code,
+        className: _.code,
         children: JSON.stringify(m.Z.getWallpaperById(s), null, 2)
       }), (0, a.jsx)(u.ua7, {
         text: "The opacity of the wallpaper.",
-        children: e => (0, a.jsx)(o.X6, y(_({
-          className: i()(j.subheader, j.hasTooltip),
+        children: e => (0, a.jsx)(o.X6, y(j({
+          className: i()(_.subheader, _.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
           children: "Opacity"
         }))
       }), (0, a.jsx)(u.iRW, {
-        className: j.slider,
+        className: _.slider,
         initialValue: R,
         defaultValue: 1,
         minValue: 0,
@@ -126,14 +126,14 @@ function N() {
         onValueChange: b
       }, "opacity-".concat(R)), (0, a.jsx)(u.ua7, {
         text: "The most prominent color in the wallpaper. This will be used to adjust the color tokens.",
-        children: e => (0, a.jsx)(o.X6, y(_({
-          className: i()(j.subheader, j.hasTooltip),
+        children: e => (0, a.jsx)(o.X6, y(j({
+          className: i()(_.subheader, _.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
           children: "Primary Color"
         }))
       }), (0, a.jsxs)("div", {
-        className: j.colorInputContainer,
+        className: _.colorInputContainer,
         children: [(0, a.jsx)("input", {
           type: "color",
           value: d.primary_color,
@@ -146,18 +146,18 @@ function N() {
             color: "currentColor"
           }),
           onClick: O,
-          className: j.removeButton
+          className: _.removeButton
         })]
       }), (0, a.jsx)(u.ua7, {
         text: "The second most prominent color in the wallpaper. This will be used to adjust the color tokens.",
-        children: e => (0, a.jsx)(o.X6, y(_({
-          className: i()(j.subheader, j.hasTooltip),
+        children: e => (0, a.jsx)(o.X6, y(j({
+          className: i()(_.subheader, _.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
           children: "Secondary Color"
         }))
       }), (0, a.jsxs)("div", {
-        className: j.colorInputContainer,
+        className: _.colorInputContainer,
         children: [(0, a.jsx)("input", {
           type: "color",
           value: d.secondary_color,
@@ -170,18 +170,18 @@ function N() {
             color: "currentColor"
           }),
           onClick: P,
-          className: j.removeButton
+          className: _.removeButton
         })]
       }), (0, a.jsx)(u.ua7, {
         text: "Controls how much the primary/secondary colors are mixed into the tokens.",
-        children: e => (0, a.jsx)(o.X6, y(_({
-          className: i()(j.subheader, j.hasTooltip),
+        children: e => (0, a.jsx)(o.X6, y(j({
+          className: i()(_.subheader, _.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
           children: "Token Mix Amount"
         }))
       }), (0, a.jsx)(u.iRW, {
-        className: j.slider,
+        className: _.slider,
         initialValue: A,
         defaultValue: 100,
         minValue: 0,
@@ -189,14 +189,14 @@ function N() {
         onValueChange: w
       }, "tokenMixAmount-".concat(A)), (0, a.jsx)(u.ua7, {
         text: "The color used for hyperlinks.",
-        children: e => (0, a.jsx)(o.X6, y(_({
-          className: i()(j.subheader, j.hasTooltip),
+        children: e => (0, a.jsx)(o.X6, y(j({
+          className: i()(_.subheader, _.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
           children: "Link Color"
         }))
       }), (0, a.jsxs)("div", {
-        className: j.colorInputContainer,
+        className: _.colorInputContainer,
         children: [(0, a.jsx)("input", {
           type: "color",
           value: d.link_color,
@@ -209,10 +209,10 @@ function N() {
             color: "currentColor"
           }),
           onClick: I,
-          className: j.removeButton
+          className: _.removeButton
         })]
       }), (0, a.jsx)(u.zxk, {
-        className: j.resetButton,
+        className: _.resetButton,
         onClick: k,
         children: "Reset"
       })]
@@ -230,7 +230,7 @@ function O() {
     n = null != t ? new Date(t) : null;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(o.X6, {
-      className: j.header,
+      className: _.header,
       variant: "heading-lg/semibold",
       children: "Tenure Badges"
     }), (0, a.jsxs)("p", {
@@ -240,7 +240,7 @@ function O() {
         children: "Not Dismissed"
       })]
     }), (0, a.jsx)("div", {
-      className: j.tenureBadgeControls,
+      className: _.tenureBadgeControls,
       children: (0, a.jsx)(u.zxk, {
         onClick: e,
         children: "Reset Level Up DC"

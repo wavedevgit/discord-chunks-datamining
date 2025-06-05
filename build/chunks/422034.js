@@ -43,7 +43,7 @@ function m(e) {
     smallerText: t,
     className: n,
     textColor: a,
-    isMarketingPageV2Enabled: c
+    isApplicationHome: c
   } = e, p = (0, s.e7)([u.Z], () => u.Z.affinities.slice(0, 3).reverse()), h = p.map((e, t) => (0, r.jsx)(g, {
     affinity: e,
     applyMask: t !== p.length - 1,

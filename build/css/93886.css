@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 9f185f7c70b007c1
+  Original File Name: 21a0975e3ebe9a91
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2747,6 +2747,21 @@
     overflow: hidden
 }
 
+.badge__436c9 {
+    align-items: center;
+    border-radius: 4px;
+    color: var(--white-500);
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    padding: 4px 8px
+}
+
+.badgeIcon__436c9 {
+    height: 16px;
+    width: 16px
+}
+
 .container__06f11 {
     border-radius: 12px;
     box-sizing: border-box;
@@ -3605,4 +3620,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=9f185f7c70b007c1.css.map*/
+/*# sourceMappingURL=21a0975e3ebe9a91.css.map*/

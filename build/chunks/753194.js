@@ -24,7 +24,7 @@ function u(e) {
     [b, f] = (0, l.Wu)([o.Z], () => [o.Z.desaturateUserColors, o.Z.saturation]),
     v = (0, s.dQu)(i.Z.unsafe_rawColors.PRIMARY_300).hex(),
     g = (0, r._i)(null != n ? n : v),
-    j = (0, r.ho)(g, !1, b ? f : null);
+    _ = (0, r.ho)(g, !1, b ? f : null);
   return t = null != m ? m : .3 > (0, r.Bd)(g) ? i.Z.unsafe_rawColors.PRIMARY_630.css : i.Z.unsafe_rawColors.WHITE_500.css, (0, a.jsx)(s.ua7, {
     text: null != p ? p : d.intl.string(d.t.T3PvV1),
     children: e => {
@@ -48,7 +48,7 @@ function u(e) {
         return e
       }({}, e), r = r = {
         className: x,
-        color: j,
+        color: _,
         size: u,
         children: (0, a.jsx)(s.kmB, {
           size: "custom",

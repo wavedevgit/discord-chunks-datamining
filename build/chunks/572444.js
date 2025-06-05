@@ -82,8 +82,8 @@ function v() {
     [t, n] = r.useState(!1),
     [l, b] = r.useState([]),
     [v, g] = r.useState(null),
-    j = r.useRef(null),
     _ = r.useRef(null),
+    j = r.useRef(null),
     [y, C] = r.useState(5e-6),
     N = (0, s.e7)([m.Z], () => m.Z.getInputDeviceId()),
     O = (0, s.e7)([m.Z], () => m.Z.getEchoCancellation()),
@@ -102,7 +102,7 @@ function v() {
     w = (0, d.N)(),
     k = r.useCallback(() => {
       var e;
-      null == (e = j.current) || e.stop(), j.current = null, g(null)
+      null == (e = _.current) || e.stop(), _.current = null, g(null)
     }, []);
 
   function R() {
@@ -112,7 +112,7 @@ function v() {
   function A(e) {
     if (t && R(), k(), null == w) return;
     let n = w.createBufferSource();
-    n.buffer = e.audioBuffer, _.current = w.createGain(), _.current.gain.value = y, n.connect(_.current), _.current.connect(w.destination), n.loop = !0, n.start(), j.current = n, g(e)
+    n.buffer = e.audioBuffer, j.current = w.createGain(), j.current.gain.value = y, n.connect(j.current), j.current.connect(w.destination), n.loop = !0, n.start(), _.current = n, g(e)
   }
   r.useEffect(() => {
     k()
@@ -208,7 +208,7 @@ function v() {
         children: (0, a.jsx)(o.iRW, {
           initialValue: y,
           asValueChanges: function(e) {
-            null != _.current && (_.current.gain.value = e, C(e))
+            null != j.current && (j.current.gain.value = e, C(e))
           },
           minValue: 0,
           maxValue: 1e-5

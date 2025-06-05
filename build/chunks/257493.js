@@ -47,13 +47,13 @@ let m = (0, r.createContext)({
       isSubmitting: x,
       error: E
     } = (0, u.f)(), C = (0, r.useCallback)(e => {
-      _(t, n => {
+      _(t, n, n => {
         g({
           entitlements: n,
           skuId: t
         }), e()
       })
-    }, [t, _, g]);
+    }, [t, n, _, g]);
     return (0, i.jsx)(m.Provider, {
       value: {
         skuId: t,

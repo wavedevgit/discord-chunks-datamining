@@ -19,8 +19,8 @@ var a = n(255367),
   f = n(55935),
   v = n(120816),
   g = n(31336),
-  j = n(257785),
-  _ = n(484036),
+  _ = n(257785),
+  j = n(484036),
   y = n(681619),
   C = n(621060),
   N = n(388032),
@@ -155,9 +155,9 @@ let I = [{
             tooltip: "Close",
             onClick: s
           })]
-        }), (0, a.jsxs)(j.E, {
+        }), (0, a.jsxs)(_.E, {
           className: O.commonProperties,
-          children: [(0, a.jsx)(j.Z9, {
+          children: [(0, a.jsx)(_.Z9, {
             name: "Timestamp (local)",
             copyValue: r.toISOString(),
             children: (0, a.jsxs)("time", {
@@ -165,13 +165,13 @@ let I = [{
               title: (0, f.vc)(x, "LLLL"),
               children: ["(", o().locale(), ") ", (0, f.Y4)(x)]
             })
-          }), null != c && (0, a.jsx)(j.Z9, {
+          }), null != c && (0, a.jsx)(_.Z9, {
             name: "User",
             copyValue: c.id,
             children: (0, a.jsx)(u.Z, {
               user: c
             })
-          }), (0, a.jsx)(j.Z9, {
+          }), (0, a.jsx)(_.Z9, {
             name: "Fingerprint",
             copyValue: l,
             children: (0, a.jsx)("code", {
@@ -252,7 +252,7 @@ function R() {
       return !1
     }),
     [b, f] = r.useState(void 0),
-    j = p.find(e => e.key === b),
+    _ = p.find(e => e.key === b),
     {
       TabBar: S,
       renderSelectedTab: P
@@ -306,12 +306,12 @@ function R() {
       data: p,
       selectedRowKey: b,
       onClickRow: e => f(e.key)
-    }), null != j && (0, a.jsxs)(_.Z, {
+    }), null != _ && (0, a.jsxs)(j.Z, {
       className: O.subPanel,
       minHeight: 100,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
       children: [(0, a.jsx)(S, {}), P({
-        loggedEvent: j,
+        loggedEvent: _,
         onClose: () => f(void 0)
       })]
     })]

@@ -8,8 +8,8 @@ var r = n(255367),
   o = n(481060),
   a = n(592125),
   s = n(922482),
-  c = n(750154),
-  u = n(427679),
+  u = n(750154),
+  c = n(427679),
   d = n(388032);
 
 function f(e) {
@@ -18,29 +18,29 @@ function f(e) {
     activity: f
   } = e, {
     channelId: h
-  } = null != (t = (0, c.rq)(f)) ? t : {}, p = (0, i.e7)([u.Z], () => u.Z.getStageInstanceByChannel(h), [h]), g = l.useRef(null), y = l.useCallback(() => {
+  } = null != (t = (0, u.rq)(f)) ? t : {}, p = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(h), [h]), g = l.useRef(null), O = l.useCallback(() => {
     let e = a.Z.getChannel(h);
     null != e && s.Cq(e)
-  }, [h]), O = null != (n = null == p ? void 0 : p.topic) ? n : f.name, b = d.intl.formatToPlainString(d.t["T+DNAA"], {
-    channel: O
+  }, [h]), y = null != (n = null == p ? void 0 : p.topic) ? n : f.name, N = d.intl.formatToPlainString(d.t["T+DNAA"], {
+    channel: y
   });
   return (0, r.jsx)("div", {
     ref: g,
     children: (0, r.jsx)(o.P3F, {
-      onClick: y,
+      onClick: O,
       focusProps: {
         ringTarget: g
       },
       children: (0, r.jsx)(o.X6q, {
         variant: "heading-sm/semibold",
-        children: b
+        children: N
       })
     })
   })
 }
 class h {
   shouldShow(e) {
-    return (0, c.JE)(e)
+    return (0, u.JE)(e)
   }
   createHeader(e) {
     return {

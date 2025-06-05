@@ -110,19 +110,19 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     let r = h[e];
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || v(r, e, n, a)
-  }, j = (e, t, n) => {
+  }, _ = (e, t, n) => {
     for (let a of e) {
       let e = (0, r.BU)(a),
         l = null != e ? h[e] : null;
       null != l && v(l, a, t, n)
     }
-  }, _ = e => {
+  }, j = e => {
     let {
       files: t,
       addError: n,
       addWarning: a
     } = e;
-    j(t.collectionFiles, n, a), f({
+    _(t.collectionFiles, n, a), f({
       names: t.collectionFiles.map(e => e.name),
       addError: n
     });
@@ -165,7 +165,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: n
     }), g(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)
   }, N = (e, t, n) => {
-    _({
+    j({
       files: e,
       addError: n,
       addWarning: t

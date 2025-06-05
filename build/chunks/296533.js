@@ -1,7 +1,7 @@
 /** Chunk was on 8787 **/
 n.d(t, {
   Z: () => y,
-  r: () => I
+  r: () => N
 }), n(539854), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -104,7 +104,7 @@ function v(e) {
     hasCancelableGuildBoostSlot: u,
     showAltText: m,
     isLastGuildBoostSlot: h
-  } = e, f = (0, l.e7)([o.Z], () => o.Z.useReducedMotion), x = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = r.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), C = r.useMemo(() => null != E && E > new Date, [E]), v = (0, p.tl)(n), T = (0, c.Z)(), N = r.useRef(null);
+  } = e, f = (0, l.e7)([o.Z], () => o.Z.useReducedMotion), x = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = r.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), C = r.useMemo(() => null != E && E > new Date, [E]), v = (0, p.tl)(n), T = (0, c.Z)(), I = r.useRef(null);
   return (0, i.jsxs)("div", {
     className: O.boostContainer,
     children: [(0, i.jsxs)("div", {
@@ -127,7 +127,7 @@ function v(e) {
           fractionalPremiumInfo: T
         })
       }), (0, i.jsx)(a.yRy, {
-        targetElementRef: N,
+        targetElementRef: I,
         renderPopout: function(e) {
           let {
             closePopout: t
@@ -163,7 +163,7 @@ function v(e) {
             }
             return e
           }({}, e), n = n = {
-            innerRef: N,
+            innerRef: I,
             "aria-label": j.intl.string(j.t.PdRCRk),
             className: O.boostSlotMenuIcon,
             children: (0, i.jsx)(a.Huf, {
@@ -212,7 +212,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function I(e) {
   let {
     guildId: t,
     appliedGuildBoosts: n,
@@ -247,7 +247,7 @@ function N(e) {
   })
 }
 
-function I(e) {
+function N(e) {
   let {
     appliedGuildBoosts: t,
     premiumSubscription: n
@@ -262,7 +262,7 @@ function I(e) {
     className: O.wrapper,
     children: [(0, i.jsx)("div", {
       className: O.container,
-      children: f.default.keys(s).map(e => (0, i.jsx)(N, {
+      children: f.default.keys(s).map(e => (0, i.jsx)(I, {
         guildId: e,
         premiumSubscription: n,
         appliedGuildBoosts: s[e]

@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 n.d(t, {
   D: () => v,
-  Z: () => j
+  Z: () => _
 }), n(388685);
 var a = n(255367),
   r = n(73800),
@@ -74,8 +74,8 @@ let f = {
     value: s.a.PREMIUM_TIER_2_3_DAY
   }];
 
-function j() {
-  let [e, t] = r.useState(!1), [n, l] = r.useState(s.a.PREMIUM_TIER_2_1_HOUR), [d, f] = r.useState([]), [j, _] = r.useState([]), {
+function _() {
+  let [e, t] = r.useState(!1), [n, l] = r.useState(s.a.PREMIUM_TIER_2_1_HOUR), [d, f] = r.useState([]), [_, j] = r.useState([]), {
     refreshEntitlementList: y,
     grantFractionalPremium: C,
     deleteFractionalPremium: N,
@@ -89,7 +89,7 @@ function j() {
   let S = e => e.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === x.qc2.FRACTIONAL_REDEMPTION),
     P = e => e.filter(e => Object.values(s.a).includes(e.skuId) && null == e.startsAt);
   return r.useEffect(() => {
-    f(S(E)), _(P(E))
+    f(S(E)), j(P(E))
   }, [E]), (0, a.jsx)(o.zJl, {
     className: p.panel,
     children: (0, a.jsxs)("div", {
@@ -209,7 +209,7 @@ function j() {
               onDelete: () => N(e.id)
             }, e.id))
           })]
-        }), j.length > 0 && (0, a.jsxs)("div", {
+        }), _.length > 0 && (0, a.jsxs)("div", {
           children: [(0, a.jsx)(o.Text, {
             style: {
               marginTop: "15px"
@@ -217,7 +217,7 @@ function j() {
             variant: "text-md/bold",
             children: "Unconsumed Fractional Premium"
           }), (0, a.jsx)("div", {
-            children: j.map(e => (0, a.jsx)(v, {
+            children: _.map(e => (0, a.jsx)(v, {
               entitlement: e
             }, e.id))
           })]

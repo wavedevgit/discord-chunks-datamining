@@ -33,7 +33,7 @@ function b(e) {
     guildAvatarDecoration: S,
     pendingAvatarDecoration: v,
     pendingErrors: T
-  } = (0, g.$U)(t, n), N = (0, u.Z)("enable_avatar_decoration_uploads"), I = r.useCallback(() => (0, d.ps)({
+  } = (0, g.$U)(t, n), I = (0, u.Z)("enable_avatar_decoration_uploads"), N = r.useCallback(() => (0, d.ps)({
     analyticsLocations: C,
     isTryItOutFlow: E,
     guild: n
@@ -48,7 +48,7 @@ function b(e) {
       className: f.buttonsContainer,
       children: [(0, i.jsx)(A, {
         size: a.zxk.Sizes.SMALL,
-        onClick: I,
+        onClick: N,
         className: l()({
           [f.buttonHighlighted]: x
         }),
@@ -63,7 +63,7 @@ function b(e) {
         },
         children: (0, c.ad)(t, n) ? h.intl.string(h.t.CHf9iI) : h.intl.string(h.t.OrokWl)
       })]
-    }), t.isStaff() && N && (0, i.jsx)(_, {
+    }), t.isStaff() && I && (0, i.jsx)(_, {
       user: t
     })]
   })

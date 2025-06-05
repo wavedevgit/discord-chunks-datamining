@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(663993),
   v = n(600164),
   T = n(118012),
-  N = n(482215),
-  I = n(38618),
+  I = n(482215),
+  N = n(38618),
   y = n(32300),
   A = n(371651),
   P = n(398269),
@@ -768,7 +768,7 @@ function es() {
     verticalSpacing: t,
     maxHorizontalSpacing: n,
     maxVerticalSpacing: s
-  } = (0, N.i)(), l = r.useMemo(() => Array.from({
+  } = (0, I.i)(), l = r.useMemo(() => Array.from({
     length: n + 1
   }, (e, t) => t), [n]), a = r.useMemo(() => Array.from({
     length: s + 1
@@ -819,7 +819,7 @@ function es() {
           minValue: 0,
           maxValue: n,
           markers: l,
-          onValueChange: e => N.i.getState().setHorizontalSpacing(e),
+          onValueChange: e => I.i.getState().setHorizontalSpacing(e),
           onValueRender: e => "".concat(Math.round(e), "px"),
           onMarkerRender: e => e % 4 == 0 ? "".concat(e) : void 0,
           equidistant: !0
@@ -837,7 +837,7 @@ function es() {
           minValue: 0,
           maxValue: s,
           markers: a,
-          onValueChange: e => N.i.getState().setVerticalSpacing(e),
+          onValueChange: e => I.i.getState().setVerticalSpacing(e),
           onValueRender: e => "".concat(Math.round(e), "px"),
           onMarkerRender: e => e % 4 == 0 ? "".concat(e) : void 0,
           equidistant: !0
@@ -1049,7 +1049,7 @@ function ec() {
         setting: F.s6.DEVELOPER_OPTIONS_RESET_SOCKET,
         children: (0, i.jsx)(g.zxk, {
           onClick: () => {
-            I.Z.getSocket().close(), I.Z.getSocket().connect()
+            N.Z.getSocket().close(), N.Z.getSocket().connect()
           },
           children: "Reset Socket"
         })

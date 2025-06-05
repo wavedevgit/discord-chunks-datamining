@@ -14,7 +14,7 @@ var r = n(481060),
 function d(e) {
   let {
     referrer: t,
-    isMarketingPageV2Enabled: n
+    isApplicationHome: n
   } = e, d = e => null != e.globalName ? e.globalName : e.username, {
     avatarSrc: u,
     eventHandlers: m
@@ -26,9 +26,9 @@ function d(e) {
   return (0, i.jsx)("div", {
     className: o.attributionBannerContainer,
     children: (0, i.jsxs)("div", {
-      className: n ? o.attributionBannerContentV2 : o.attributionBannerContent,
+      className: n ? o.attributionBannerContentApplicationHome : o.attributionBannerContent,
       children: [(0, i.jsx)("div", {
-        className: n ? o.iconContainerV2 : o.iconContainer,
+        className: n ? o.iconContainerApplicationHome : o.iconContainer,
         children: (0, i.jsx)(r.qEK, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

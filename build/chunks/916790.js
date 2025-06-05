@@ -19,8 +19,8 @@ var a = n(255367),
   f = n(55935),
   v = n(428530),
   g = n(257785),
-  j = n(484036),
-  _ = n(681619),
+  _ = n(484036),
+  j = n(681619),
   y = n(621060),
   C = n(981631),
   N = n(248520),
@@ -57,7 +57,7 @@ function S(e) {
     trace: e
   })), [t]);
   return (0, a.jsx)(d.zJl, {
-    children: (0, a.jsx)(_.Z, {
+    children: (0, a.jsx)(j.Z, {
       columns: T,
       data: n
     })
@@ -150,7 +150,7 @@ function I(e) {
   } = (0, y.ZP)({
     tabs: l
   }, [l]);
-  return (0, a.jsxs)(j.Z, {
+  return (0, a.jsxs)(_.Z, {
     className: N.subPanel,
     minHeight: 100,
     initialHeight: n,
@@ -239,10 +239,10 @@ function R() {
     [x, p] = r.useState(o),
     [b, f] = r.useState(!1),
     [v, g] = r.useState(),
-    j = r.useCallback(e => {
+    _ = r.useCallback(e => {
       p(e)
     }, []);
-  (0, h.BO)(t, b ? c : o, j, k);
+  (0, h.BO)(t, b ? c : o, _, k);
   let y = r.useCallback(e => {
       m(o), f(e)
     }, [o]),
@@ -267,7 +267,7 @@ function R() {
         onClear: () => n(""),
         placeholder: "Search by action name"
       })]
-    }), (0, a.jsx)(_.Z, {
+    }), (0, a.jsx)(j.Z, {
       columns: w,
       data: E,
       selectedRowKey: null == v ? void 0 : v.id.toString(),

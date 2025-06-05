@@ -1,4 +1,4 @@
-/** Chunk was on 89387 **/
+/** Chunk was on 57931 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -19,7 +19,7 @@ function d(e) {
     t.stopPropagation(), t.preventDefault(), (0, c.QH)(e)
   }, []), p = i.useCallback(() => {
     (0, c.QH)(!1), (0, c.yN)("")
-  }, []), f = i.useRef(null), g = (0, s.e7)([a.Z], () => a.Z.getSection());
+  }, []), f = i.useRef(null), b = (0, s.e7)([a.Z], () => a.Z.getSection());
   return i.useEffect(() => {
     let e = e => {
       var t;
@@ -27,7 +27,7 @@ function d(e) {
       (null == (t = (0, l.uB)(e)) ? void 0 : t.activeElement) === document.body && (null == n || n.focus())
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-  }, [g]), (0, r.jsx)("div", {
+  }, [b]), (0, r.jsx)("div", {
     style: {
       marginBottom: "8px"
     },

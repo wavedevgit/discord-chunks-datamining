@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => j
+  Z: () => _
 });
 var a = n(255367);
 n(73800);
@@ -42,13 +42,13 @@ function g(e) {
   })
 }
 
-function j() {
+function _() {
   let e = (0, s.e7)([x.Z], () => x.Z.getChannelId()),
     t = (0, s.e7)([h.Z], () => h.Z.getGuildId()),
     n = (0, s.e7)([d.Z], () => d.Z.getChannel(e)),
     r = (0, s.e7)([u.Z], () => u.Z.getGuild(t)),
-    j = (0, s.e7)([m.Z], () => m.Z.computePermissions(n)),
-    _ = (0, s.e7)([m.Z], () => m.Z.computePermissions(r)),
+    _ = (0, s.e7)([m.Z], () => m.Z.computePermissions(n)),
+    j = (0, s.e7)([m.Z], () => m.Z.computePermissions(r)),
     y = (0, c.ZP)(n, !0),
     C = null != n ? (0, b.IG)(n, !1, !0) : null,
     N = null != r ? p.Z.getGuildPermissionSpecMap(r) : null,
@@ -56,7 +56,7 @@ function j() {
       let {
         title: t,
         flag: n
-      } = e, r = i.e$(j, n);
+      } = e, r = i.e$(_, n);
       return (0, a.jsx)(g, {
         title: t,
         can: r
@@ -66,7 +66,7 @@ function j() {
       let {
         title: t,
         flag: n
-      } = e, r = i.e$(_, n);
+      } = e, r = i.e$(j, n);
       return (0, a.jsx)(g, {
         title: t,
         can: r

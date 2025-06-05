@@ -1,7 +1,7 @@
 /** Chunk was on 40814 **/
 n.d(t, {
-  JE: () => u,
-  ct: () => c,
+  JE: () => c,
+  ct: () => u,
   dc: () => s
 });
 var r = n(255367);
@@ -21,7 +21,7 @@ function s(e) {
   if (null != r && (null == (t = r.shouldShow) ? void 0 : t.call(r, e)) !== !1) return r.createHeader(e)
 }
 
-function c(e) {
+function u(e) {
   var t;
   let n = e.application_id;
   if (null == n) return;
@@ -37,7 +37,7 @@ function c(e) {
   }
 }
 
-function u(e) {
+function c(e) {
   var t;
   let n = e.application_id;
   if (null == n) return !0;

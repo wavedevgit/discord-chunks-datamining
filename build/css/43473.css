@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 21b21762644d4f8e
+  Original File Name: eb237086ada983b7
 **/
 .scroller__95bea {
     display: flex;
@@ -899,7 +899,7 @@
 }
 
 :where(.section_be87fd) {
-    color: var(--text-secondary);
+    color: var(--text-default);
     gap: 4px
 }
 
@@ -1355,4 +1355,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=21b21762644d4f8e.css.map*/
+/*# sourceMappingURL=eb237086ada983b7.css.map*/

@@ -19,8 +19,8 @@ var a = n(255367),
   f = n(610394),
   v = n(352527),
   g = n(355863),
-  j = n(449224),
-  _ = n(808506),
+  _ = n(449224),
+  j = n(808506),
   y = n(572004),
   C = n(70956),
   N = n(145597),
@@ -123,7 +123,7 @@ function Z(e) {
 function L(e) {
   let {
     trackedGame: t
-  } = e, n = (0, o.e7)([x.ZP], () => x.ZP.getGameForPID(t.pid)), r = (0, o.e7)([j.Z], () => j.Z.getGameForPID(t.pid));
+  } = e, n = (0, o.e7)([x.ZP], () => x.ZP.getGameForPID(t.pid)), r = (0, o.e7)([_.Z], () => _.Z.getGameForPID(t.pid));
   return (0, a.jsxs)("div", {
     className: P.panelGroup,
     children: [(0, a.jsx)(c.Text, {
@@ -199,7 +199,7 @@ function L(e) {
 function D(e) {
   let {
     pid: t
-  } = e, n = (0, o.cj)([_.default], () => _.default.getOverlayPIDStatuses()), r = (0, o.cj)([p.default], () => p.default.getTrackedGames()), l = (0, o.e7)([_.default], () => _.default.isInputLocked(t), [t]), i = (0, o.e7)([_.default], () => _.default.DEV_isInputLockedV3(t), [t]), s = (0, o.e7)([_.default], () => _.default.DEV_isInputLocked(t), [t]), d = (0, o.e7)([_.default], () => _.default.isReady(t), [t]);
+  } = e, n = (0, o.cj)([j.default], () => j.default.getOverlayPIDStatuses()), r = (0, o.cj)([p.default], () => p.default.getTrackedGames()), l = (0, o.e7)([j.default], () => j.default.isInputLocked(t), [t]), i = (0, o.e7)([j.default], () => j.default.DEV_isInputLockedV3(t), [t]), s = (0, o.e7)([j.default], () => j.default.DEV_isInputLocked(t), [t]), d = (0, o.e7)([j.default], () => j.default.isReady(t), [t]);
   return (0, a.jsxs)("div", {
     children: [(0, a.jsx)(c.Text, {
       variant: "text-md/semibold",
@@ -274,7 +274,7 @@ function M(e) {
 
 function z() {
   var e, t;
-  let [n, l] = M(E.Odu.CLICK_ZONE_DEBUG), [s, d] = M(E.Odu.PERFORMANCE_DEBUG), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), j = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), S = (0, o.e7)([p.default], () => p.default.getForcedRenderMode()), [R, A] = r.useState({}), [Z, z] = r.useState(S), B = e => {
+  let [n, l] = M(E.Odu.CLICK_ZONE_DEBUG), [s, d] = M(E.Odu.PERFORMANCE_DEBUG), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), _ = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), S = (0, o.e7)([p.default], () => p.default.getForcedRenderMode()), [R, A] = r.useState({}), [Z, z] = r.useState(S), B = e => {
     z(e), u.Z.forceRenderMode(e)
   }, U = [{
     label: m.R5.UNSET,
@@ -290,7 +290,7 @@ function z() {
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => k(w({}, e), {
     label: "".concat(e.label, " ").concat(S === e.value ? "(current)" : "")
-  })), F = (0, o.cj)([p.default], () => p.default.getTrackedGames()), G = (0, o.e7)([_.default], () => _.default.getFocusedPID()), V = (0, o.e7)([_.default], () => _.default.isFocusedPidOutOfProcess()), H = (0, N.getPID)(), W = (0, o.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, K] = (0, o.Wu)([v.Z], () => [v.Z.enabled, v.Z.keepOpen]), Y = (0, o.e7)([x.ZP], () => x.ZP.getRunningGames());
+  })), F = (0, o.cj)([p.default], () => p.default.getTrackedGames()), G = (0, o.e7)([j.default], () => j.default.getFocusedPID()), V = (0, o.e7)([j.default], () => j.default.isFocusedPidOutOfProcess()), H = (0, N.getPID)(), W = (0, o.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, K] = (0, o.Wu)([v.Z], () => [v.Z.enabled, v.Z.keepOpen]), Y = (0, o.e7)([x.ZP], () => x.ZP.getRunningGames());
   r.useEffect(() => {
     A(e => {
       for (let t of Object.keys(F)) e[Number(t)] = F[Number(t)];
@@ -368,7 +368,7 @@ function z() {
           text: "Enables a border around any widgets that are rendered on screen that are pinned (even if they are hidden). Blue = pinned widgets, Gray = unpinned widgets",
           children: e => (0, a.jsx)("div", k(w({}, e), {
             children: (0, a.jsx)(c.XZJ, {
-              value: j,
+              value: _,
               onChange: () => et(),
               size: 18,
               type: c.XZJ.Types.INVERTED,

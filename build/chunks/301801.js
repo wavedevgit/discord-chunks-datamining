@@ -47,7 +47,7 @@ function u(e, t, n, a) {
   r.useEffect(() => {
     f.current = n
   }, [n]);
-  let v = r.useMemo(() => {
+  let b = r.useMemo(() => {
     let {
       throttleMs: e = 200,
       throttleLeading: t = !0,
@@ -111,8 +111,8 @@ function u(e, t, n, a) {
     }), d.current
   }, [a]);
   return r.useEffect(() => {
-    v(e, g, p)
-  }, [v, e, g, p, ...u]), r.useEffect(() => () => {
+    b(e, g, p)
+  }, [b, e, g, p, ...u]), r.useEffect(() => () => {
     null != d.current && d.current.cancel(), d.current = null, _.current = null
-  }, [p, n, a]), v
+  }, [p, n, a]), b
 }
