@@ -1,6 +1,6 @@
-/** Chunk was on 61717 **/
+/** Chunk was on 2771 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 }), n(388685);
 var r = n(106351),
   i = n(442837),
@@ -29,13 +29,13 @@ function S(e, t) {
   return null != e && e.type !== r.d.GUILD_STAGE_VOICE && t !== e.id && n.canBasicChannel(j.S7T.VIEW_CHANNEL, e)
 }
 
-function x(e) {
+function E(e) {
   var t;
   let n = (0, i.e7)([v.ZP], () => v.ZP.isMuted(e)),
     r = (0, c.k5)(e),
     j = (0, i.Wu)([o.ZP, y.Z], () => o.ZP.getEmbeddedActivitiesForGuild(e).filter(e => !(0, a.BA)([...e.userIds], y.Z.getBlockedOrIgnoredIDs()))),
-    x = (0, s.pY)(null == (t = j[0]) ? void 0 : t.location),
-    E = (0, l.NX)(x),
+    E = (0, s.pY)(null == (t = j[0]) ? void 0 : t.location),
+    x = (0, l.NX)(E),
     {
       guildHasVoice: P,
       guildHasVideo: I,
@@ -74,14 +74,14 @@ function x(e) {
       v = !1,
       _ = !1,
       S = !1,
-      x = !1;
+      E = !1;
     if (!f && n) return {
       audio: m,
       video: _,
       screenshare: S,
       liveStage: v,
       activeEvent: y,
-      activity: x,
+      activity: E,
       isCurrentUserConnected: !1
     };
     let Z = C.default.keys(d.Z.getStageInstancesByGuild(e)).some(e => {
@@ -93,7 +93,7 @@ function x(e) {
       R = (0, a.aK)(p.Z.getAllApplicationStreams()).some(t => t.guildId === e),
       D = f && w,
       L = (() => {
-        if (E) return j.length > 0;
+        if (x) return j.length > 0;
         for (let e of j) {
           let t = g.Z.getChannel((0, s.pY)(e.location));
           if (null != t && (0, h.vd)(t.type)) return !0
@@ -101,14 +101,14 @@ function x(e) {
         return !1
       })(),
       M = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return f ? (m = !0, y = (null == r ? void 0 : r.channel_id) === c, v = T, _ = D, S = A, x = M) : (m = P, y = null != r, v = Z, _ = I, S = R, x = L), {
+    return f ? (m = !0, y = (null == r ? void 0 : r.channel_id) === c, v = T, _ = D, S = A, E = M) : (m = P, y = null != r, v = Z, _ = I, S = R, E = L), {
       audio: m,
       video: _,
       screenshare: S,
       liveStage: v,
       activeEvent: y,
-      activity: x,
+      activity: E,
       isCurrentUserConnected: f || T
     }
-  }, [e, n, w, N, E, j, r, P, I])
+  }, [e, n, w, N, x, j, r, P, I])
 }

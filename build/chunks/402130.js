@@ -37,7 +37,7 @@ function m(e) {
 function g(e) {
   let {
     channel: t
-  } = e, [n] = t.recipients, g = (0, l.e7)([o.default], () => o.default.getUser(n)), b = (0, l.e7)([o.default], () => o.default.getCurrentUser()), _ = (0, u.Z)(), [x, y] = (0, c.Z)(n);
+  } = e, [n] = t.recipients, g = (0, l.e7)([o.default], () => o.default.getUser(n)), b = (0, l.e7)([o.default], () => o.default.getCurrentUser()), _ = (0, u.Z)(), [y, x] = (0, c.Z)(n);
   (0, a.t)();
   let {
     withMutualFriendsCount: C
@@ -52,10 +52,10 @@ function g(e) {
       withMutualGuilds: !0,
       channelId: t.id
     })
-  }, [g, n, t.id, C]), null != g && null != b && _) ? x ? (0, r.jsx)(h.Z, m({
+  }, [g, n, t.id, C]), null != g && null != b && _) ? y ? (0, r.jsx)(h.Z, m({
     user: g,
     currentUser: b,
-    onHide: y
+    onHide: x
   }, e)) : g.isNonUserBot() ? (0, r.jsx)(p.Z, m({
     user: g,
     currentUser: b

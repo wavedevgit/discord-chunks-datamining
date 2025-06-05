@@ -1,6 +1,6 @@
 /**
   Module ID: 6310
-  Original File Name: c608755b495f756b
+  Original File Name: 811bf0aac6776e03
 **/
 .spacing__89466 {
     margin-bottom: 20px
@@ -21,4 +21,8 @@
     position: relative
 }
 
-/*# sourceMappingURL=c608755b495f756b.css.map*/
+.closeButton__89466 {
+    justify-content: flex-end
+}
+
+/*# sourceMappingURL=811bf0aac6776e03.css.map*/

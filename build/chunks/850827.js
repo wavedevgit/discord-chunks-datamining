@@ -16,8 +16,8 @@ var i = n(120356),
   p = n(600164),
   m = n(750154),
   g = n(892001),
-  b = n(594174),
-  _ = n(374129),
+  _ = n(594174),
+  b = n(374129),
   h = n(639351),
   v = n(503438),
   y = n(802856),
@@ -68,10 +68,10 @@ let k = e => {
       look: F = c.zxk.Looks.OUTLINED,
       type: U,
       onAction: V
-    } = e, B = (0, s.e7)([b.default], () => {
-      let e = b.default.getCurrentUser();
+    } = e, B = (0, s.e7)([_.default], () => {
+      let e = _.default.getCurrentUser();
       return o()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), W = U === O.Y.STREAM_PREVIEW || null != a, Y = (0, v.Z)(t), z = Y || W ? p.Z.Direction.HORIZONTAL : p.Z.Direction.VERTICAL;
+    }), Y = U === O.Y.STREAM_PREVIEW || null != a, W = (0, v.Z)(t), z = W || Y ? p.Z.Direction.HORIZONTAL : p.Z.Direction.VERTICAL;
     if ((null == t ? void 0 : t.application_id) === Z.bO) {
       var G, H;
       return G = function(e) {
@@ -133,9 +133,9 @@ let k = e => {
           color: R,
           platform: d.Z.get(N.ABu.PLAYSTATION),
           onAction: V,
-          Icon: _.Z
+          Icon: b.Z
         }, "ConnectPlatformActivityButton");
-        if (Y) {
+        if (W) {
           let e = (0, r.jsx)(E.Z, {
               activity: t,
               user: i,
@@ -168,7 +168,7 @@ let k = e => {
             onAction: V
           }, e.channelId)
         }
-        return W ? (0, r.jsx)(T.Z, {
+        return Y ? (0, r.jsx)(T.Z, {
           isCurrentUser: B.id === i.id,
           color: R,
           look: F,

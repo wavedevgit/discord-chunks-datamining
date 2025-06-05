@@ -1,4 +1,4 @@
-/** Chunk was on 61717 **/
+/** Chunk was on 2771 **/
 n.d(t, {
   Z: () => U
 }), n(388685);
@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(496675),
   j = n(306680),
   S = n(9156),
-  x = n(594174),
-  E = n(109446),
+  E = n(594174),
+  x = n(109446),
   P = n(98597),
   I = n(648501),
   w = n(473403),
@@ -105,10 +105,10 @@ class M extends P.ZP {
       embeddedApps: C,
       resolvedUnreadSetting: j,
       withGuildIcon: S,
-      enableActivities: x
-    } = this.props, E = (0, b.jW)({
+      enableActivities: E
+    } = this.props, x = (0, b.jW)({
       location: "text_channel"
-    }).entrypoints, P = x && null != C && C.length > 0, I = (0, g.D)(v), N = (0, r.jsx)("li", {
+    }).entrypoints, P = E && null != C && C.length > 0, I = (0, g.D)(v), N = (0, r.jsx)("li", {
       className: o()(this.getClassName(), {
         [A.disabled]: this.isDisabled(),
         [A.selected]: n
@@ -151,9 +151,9 @@ class M extends P.ZP {
           children: [O && (0, r.jsxs)(r.Fragment, {
             children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
           }), !O && (0, r.jsxs)(r.Fragment, {
-            children: [this.renderChannelInfo(), E && this.renderOptionsButton({
+            children: [this.renderChannelInfo(), x && this.renderOptionsButton({
               onContextMenu: this.handleContextMenu
-            }), !E && (0, r.jsxs)(r.Fragment, {
+            }), !x && (0, r.jsxs)(r.Fragment, {
               children: [this.renderInviteButton(), this.renderEditButton()]
             })]
           })]
@@ -209,7 +209,7 @@ class M extends P.ZP {
       return t.isModeratorReportChannel() ? null : null != i && i.length > 0 && l && !n ? (0, r.jsx)(N.Z, {
         onAction: this.handleActivitiesPopoutClose,
         channel: t
-      }) : (0, r.jsx)(E.Z, L(D({}, e), {
+      }) : (0, r.jsx)(x.Z, L(D({}, e), {
         channel: this.props.channel
       }))
     }), R(this, "handleContextMenu", e => {
@@ -226,7 +226,7 @@ class M extends P.ZP {
         }))
       });
       if (t.type === Z.d4z.DM) {
-        let i = x.default.getUser(t.getRecipientId());
+        let i = E.default.getUser(t.getRecipientId());
         null != i && (0, u.jW)(e, async () => {
           let {
             default: e
@@ -285,15 +285,15 @@ function U(e) {
     }
   }), b = (0, s.e7)([y.Z], () => y.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: _,
-    isSubscriptionGated: E
-  } = (0, m.Z)(t.id), P = (0, s.e7)([S.ZP], () => S.ZP.isFavorite(n.id, t.id)), w = (0, s.e7)([x.default], () => {
-    let e = x.default.getCurrentUser();
+    isSubscriptionGated: x
+  } = (0, m.Z)(t.id), P = (0, s.e7)([S.ZP], () => S.ZP.isFavorite(n.id, t.id)), w = (0, s.e7)([E.default], () => {
+    let e = E.default.getCurrentUser();
     return null != e && (!t.isNSFW() || e.nsfwAllowed)
   }, [t]), N = (0, h.NX)(t.id), A = (0, I.Z)({
     channel: t,
     isChannelCollapsed: !1,
     isChannelSelected: a,
-    isSubscriptionGated: E,
+    isSubscriptionGated: x,
     needSubscriptionToAccess: _,
     isNewChannel: b,
     muted: o,
@@ -303,7 +303,7 @@ function U(e) {
   return (0, r.jsx)(k, L(D({}, d, g, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
-    isSubscriptionGated: E,
+    isSubscriptionGated: x,
     needSubscriptionToAccess: _,
     isNewChannel: b && e.canBeNewChannel,
     isFavoriteSuggestion: l && !P,

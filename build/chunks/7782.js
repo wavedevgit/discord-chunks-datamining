@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(6025),
   b = n(621853),
   _ = n(892001),
-  x = n(433355),
-  y = n(699516),
+  y = n(433355),
+  x = n(699516),
   C = n(594174),
   v = n(768581),
   j = n(525541),
@@ -188,9 +188,9 @@ let Z = e => {
     } = e, l = i.useCallback(() => {
       (0, o.showToast)((0, o.createToast)(P.intl.string(P.t.a2j0ho), o.ToastType.FAILURE))
     }, []), a = i.useCallback(() => {
-      g.Z.closeChannelSidebar(x.uZ)
+      g.Z.closeChannelSidebar(y.uZ)
     }, []), s = i.useCallback(() => {
-      g.Z.closeChannelSidebar(x.uZ)
+      g.Z.closeChannelSidebar(y.uZ)
     }, []), {
       acceptMessageRequest: c,
       rejectMessageRequest: u,
@@ -230,7 +230,7 @@ let Z = e => {
       showingBanner: i
     } = e, {
       channelId: o
-    } = (0, f._)(), s = (0, a.e7)([p.Z], () => null != o && p.Z.isSpam(o), [o]), c = (0, a.e7)([y.Z], () => y.Z.getRelationshipType(t), [t]), u = n.id === o, d = !l.tq && !u, h = !!l.tq || u || s;
+    } = (0, f._)(), s = (0, a.e7)([p.Z], () => null != o && p.Z.isSpam(o), [o]), c = (0, a.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), u = n.id === o, d = !l.tq && !u, h = !!l.tq || u || s;
     if (t === E.fL) return null;
     let g = s || u ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(T, {

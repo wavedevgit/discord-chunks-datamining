@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => M
+  Z: () => L
 }), n(388685), n(35282), n(49124);
 var r = n(255367),
   i = n(73800),
@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(592125),
   b = n(768119),
   _ = n(944486),
-  x = n(585483),
-  y = n(72006),
+  y = n(585483),
+  x = n(72006),
   C = n(965996),
   v = n(652399),
   j = n(251285),
@@ -40,7 +40,12 @@ function A(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class w extends i.Component {
+
+function w(e) {
+  let t = null != e ? b.Z.getEditorState(e) : null;
+  return null != t ? x.Sq(t) : null
+}
+class R extends i.Component {
   componentDidMount() {
     this.autoAnalytics()
   }
@@ -64,7 +69,9 @@ class w extends i.Component {
       }), 0 === n ? (0, v.Qb)({
         searchId: t.props.searchId,
         searchType: t.props.searchType,
-        searchAnalyticsId: t.props.searchAnalyticsId
+        searchAnalyticsId: t.props.searchAnalyticsId,
+        searchQueryString: w(t.props.searchId),
+        searchQuery: b.Z.getQuery(t.props.searchId)
       }) : (0, v.hM)({
         searchType: t.props.searchType,
         searchId: t.props.searchId,
@@ -80,12 +87,14 @@ class w extends i.Component {
         pageNumMessages: n,
         pageNumLinks: l,
         pageNumEmbeds: i,
-        pageNumAttachments: r
+        pageNumAttachments: r,
+        searchQueryString: w(t.props.searchId),
+        searchQuery: b.Z.getQuery(t.props.searchId)
       })
     })
   }
 }
-let R = e => {
+let k = e => {
   let {
     children: t
   } = e;
@@ -97,12 +106,12 @@ let R = e => {
     })
   })
 };
-class k extends i.PureComponent {
+class M extends i.PureComponent {
   componentDidMount() {
-    x.S.subscribe(S.CkL.SEARCH_RESULTS_CLOSE, this.handleSearchResultsClose)
+    y.S.subscribe(S.CkL.SEARCH_RESULTS_CLOSE, this.handleSearchResultsClose)
   }
   componentWillUnmount() {
-    x.S.unsubscribe(S.CkL.SEARCH_RESULTS_CLOSE, this.handleSearchResultsClose)
+    y.S.unsubscribe(S.CkL.SEARCH_RESULTS_CLOSE, this.handleSearchResultsClose)
   }
   componentDidUpdate(e) {
     let {
@@ -142,7 +151,7 @@ class k extends i.PureComponent {
         ref: this.scrollerRef,
         className: T.scroller,
         children: this.renderContent()
-      }), this.renderFooter(), (0, r.jsx)(w, {
+      }), this.renderFooter(), (0, r.jsx)(R, {
         searchId: i,
         searchType: t,
         searchAnalyticsId: e,
@@ -179,9 +188,8 @@ class k extends i.PureComponent {
         }
       } = this.props;
       if (!t) {
-        let t = null != e ? b.Z.getEditorState(e) : null,
-          n = null != t ? y.Sq(t) : null;
-        p.jn(e, S.vpv, n)
+        let t = w(e);
+        p.jn(e, S.vpv, t)
       }
     }), A(this, "searchNext", () => {
       let {
@@ -191,9 +199,8 @@ class k extends i.PureComponent {
         }
       } = this.props;
       if (!t) {
-        let t = null != e ? b.Z.getEditorState(e) : null,
-          n = null != t ? y.Sq(t) : null;
-        p.m$(e, S.vpv, n)
+        let t = w(e);
+        p.m$(e, S.vpv, t)
       }
     }), A(this, "handleSearchResultsClose", () => {
       let {
@@ -219,7 +226,7 @@ class k extends i.PureComponent {
           mode: e
         });
         let r = null != t ? b.Z.getEditorState(t) : null,
-          l = null != r ? y.Sq(r) : null;
+          l = null != r ? x.Sq(r) : null;
         p.Nz(t, e, l), this.setState({
           searchMode: e
         })
@@ -251,7 +258,7 @@ class k extends i.PureComponent {
       })
     }), A(this, "renderIndexing", () => {
       let e = b.Z.getSearchType(this.props.searchId) === S.aib.GUILD ? N.intl.string(N.t.AXPbZm) : N.intl.string(N.t.Q0JJjo);
-      return (0, r.jsxs)(R, {
+      return (0, r.jsxs)(k, {
         children: [(0, r.jsx)(E.Z, {}), (0, r.jsx)("div", {
           className: (T.emptyResultsText, T.stillIndexing),
           children: e
@@ -261,7 +268,7 @@ class k extends i.PureComponent {
       let {
         showNoResultsAlt: e
       } = this.props.search, t = e ? N.intl.string(N.t["VrK/2d"]) : N.intl.string(N.t.V6nAfH);
-      return (0, r.jsxs)(R, {
+      return (0, r.jsxs)(k, {
         children: [(0, r.jsx)("div", {
           className: a()(T.noResultsImage, {
             [T.alt]: e
@@ -273,7 +280,7 @@ class k extends i.PureComponent {
           children: t
         })]
       })
-    }), A(this, "renderError", () => (0, r.jsxs)(R, {
+    }), A(this, "renderError", () => (0, r.jsxs)(k, {
       children: [(0, r.jsx)("div", {
         className: T.errorImage
       }), (0, r.jsx)("div", {
@@ -303,7 +310,9 @@ class k extends i.PureComponent {
         limit: S.vpv,
         page: Math.floor(o / S.vpv) + 1,
         offset: o,
-        index: t
+        index: t,
+        searchQueryString: w(i),
+        searchQuery: b.Z.getQuery(i)
       })
     }), A(this, "renderContent", () => {
       let {
@@ -330,7 +339,7 @@ class k extends i.PureComponent {
   }
 }
 
-function M(e) {
+function L(e) {
   let {
     searchId: t
   } = e, n = (0, c.cj)([b.Z], () => b.Z.getResultsState(t), [t]), {
@@ -344,16 +353,16 @@ function M(e) {
     ignoreCount: u,
     blockCount: d
   } = (0, j.Z)(t), p = i.useRef(null), [g, _] = i.useState(!1), {
-    enabled: x,
-    force: y
+    enabled: y,
+    force: x
   } = (0, C.f)({
     location: "SearchResults"
   });
   return i.useEffect(() => {
-    x && y && _(!0)
-  }, [y, x]), i.useEffect(() => {
-    x && (y || t !== p.current && (p.current = t, f.Z.possiblyShowFeedbackModal(Z.nw.SEARCH_RESULTS, () => _(!0), () => _(!1))))
-  }, [x, y, t]), (0, r.jsx)(k, {
+    y && x && _(!0)
+  }, [x, y]), i.useEffect(() => {
+    y && (x || t !== p.current && (p.current = t, f.Z.possiblyShowFeedbackModal(Z.nw.SEARCH_RESULTS, () => _(!0), () => _(!1))))
+  }, [y, x, t]), (0, r.jsx)(M, {
     searchId: t,
     search: n,
     searchAnalyticsId: l,

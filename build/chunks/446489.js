@@ -1,12 +1,12 @@
-/** Chunk was on 18895 **/
+/** Chunk was on 22173 **/
 n.d(t, {
   Z: () => b,
   y: () => g
 });
 var i, r, o = n(255367),
-  l = n(73800),
-  a = n(392711),
-  s = n.n(a),
+  a = n(73800),
+  s = n(392711),
+  l = n.n(s),
   c = n(748780),
   u = n(451478);
 
@@ -60,7 +60,7 @@ function g(e, t, n) {
     return null != n && n > 0 ? Math.min(i, n) * t : i * t
   }
 }
-class b extends(r = l.PureComponent) {
+class b extends(r = a.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       prevValue: n,
@@ -128,7 +128,7 @@ class b extends(r = l.PureComponent) {
     } = this.state, {
       color: n,
       formatString: i
-    } = this.props, r = s().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
+    } = this.props, r = l().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
     if (null == e) return (0, o.jsx)("div", p(h({}, r), {
       style: {
         color: n,
@@ -136,7 +136,7 @@ class b extends(r = l.PureComponent) {
       },
       children: null != i ? i(this.padValue(t)) : this.padValue(t)
     }));
-    let l = Math.max(e, t);
+    let a = Math.max(e, t);
     return (0, o.jsxs)("div", p(h({}, r), {
       style: {
         color: n,
@@ -146,9 +146,9 @@ class b extends(r = l.PureComponent) {
       children: [(0, o.jsx)("div", {
         style: {
           visibility: "hidden",
-          minWidth: this.getMinWidth(l)
+          minWidth: this.getMinWidth(a)
         },
-        children: this.padValue(l)
+        children: this.padValue(a)
       }), (0, o.jsx)(c.Z.div, {
         style: h({
           color: n

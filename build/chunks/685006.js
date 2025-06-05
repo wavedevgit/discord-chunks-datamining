@@ -19,8 +19,8 @@ var r = n(255367),
   g = n(827498),
   b = n(213459),
   _ = n(541716),
-  x = n(540059),
-  y = n(61356),
+  y = n(540059),
+  x = n(61356),
   C = n(981631),
   v = n(314734),
   j = n(522271);
@@ -47,10 +47,10 @@ function P(e) {
     primaryEntryPointCommand: s
   } = (0, h.Z)({
     context: t
-  }), c = null == o ? void 0 : o.id, f = (0, y.Z)({
+  }), c = null == o ? void 0 : o.id, f = (0, x.Z)({
     type: l
   }), {
-    sectionCommands: x
+    sectionCommands: y
   } = (0, b.If)(t, null != c ? c : ""), v = i.useCallback(() => {
     f ? m.yT(g.ti.DISMISSED) : (m.__(g._b.TEXT, _.Ie.NORMAL, {
       applicationId: c
@@ -59,7 +59,7 @@ function P(e) {
       location: d.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON,
       source: g._b.TEXT
     }))
-  }, [c, f]), j = null != x && x.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, O = !a && null != o && !0 === j;
+  }, [c, f]), j = null != y && y.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, O = !a && null != o && !0 === j;
   return (i.useEffect(() => (E(O), () => {
     E(!1)
   }), [O]), O) ? (0, r.jsx)(S, {
@@ -80,7 +80,7 @@ function S(e) {
     onOpenButtonPress: l,
     entryPointCommandButtonRef: o,
     type: s
-  } = e, u = (0, y.Z)({
+  } = e, u = (0, x.Z)({
     type: s
   }), {
     isExecutingLaunchInteraction: d,
@@ -106,7 +106,7 @@ function S(e) {
     channelRecipientUserId: b,
     setIsExecutingLaunchInteraction: _,
     analyticsLocations: C
-  }), E = h ? c.zxk.Colors.RED : c.zxk.Colors.BRAND, I = (0, x.Q3)("LoadedEntryPointCommandButton");
+  }), E = h ? c.zxk.Colors.RED : c.zxk.Colors.BRAND, I = (0, y.Q3)("LoadedEntryPointCommandButton");
   return (0, r.jsx)(c.zxk, {
     className: a()(j.entryPointAppCommandButton, v.Id),
     size: I ? c.zxk.Sizes.SMALL : c.zxk.Sizes.LARGE,

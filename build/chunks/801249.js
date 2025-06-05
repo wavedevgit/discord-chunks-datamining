@@ -1,4 +1,4 @@
-/** Chunk was on 72791 **/
+/** Chunk was on 78965 **/
 let r;
 n.d(t, {
   Z: () => u
@@ -14,12 +14,12 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let s = {
+let c = {
   lastGuildDismissedTime: {}
 };
-class c extends(i = l.ZP.DeviceSettingsStore) {
+class s extends(i = l.ZP.DeviceSettingsStore) {
   initialize() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s;
+    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : c;
     r = e
   }
   getUserAgnosticState() {
@@ -29,8 +29,8 @@ class c extends(i = l.ZP.DeviceSettingsStore) {
     return r.lastGuildDismissedTime[e]
   }
 }
-a(c, "displayName", "ApplicationSubscriptionChannelNoticeStore"), a(c, "persistKey", "ApplicationSubscriptionChannelNoticeStore");
-let u = new c(o.Z, {
+a(s, "displayName", "ApplicationSubscriptionChannelNoticeStore"), a(s, "persistKey", "ApplicationSubscriptionChannelNoticeStore");
+let u = new s(o.Z, {
   APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED: function(e) {
     let {
       guildId: t

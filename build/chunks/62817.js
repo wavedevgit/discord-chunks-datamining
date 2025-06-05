@@ -1,12 +1,12 @@
-/** Chunk was on 18895 **/
+/** Chunk was on 89129 **/
 n.d(t, {
-  Z: () => j
+  Z: () => E
 }), n(35282), n(388685), n(358797);
-var i, r = n(442837),
-  o = n(570140),
-  l = n(375954);
+var i, l = n(442837),
+  r = n(570140),
+  o = n(375954);
 
-function a(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,125 +15,125 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      a(e, t, n[t])
+      c(e, t, n[t])
     })
   }
   return e
 }
-let c = Object.freeze([]),
+let d = Object.freeze([]),
   u = {},
-  d = {},
-  h = {},
+  s = {},
   p = {},
-  m = {};
+  _ = {},
+  f = {};
 
-function f(e, t) {}
+function g(e, t) {}
 
-function g(e, t) {
+function m(e, t) {
   let n = u[e];
-  return null != n && (u[e] = n.filter(e => e.id !== t), delete d[t], delete h[t], n.length !== u[e].length)
+  return null != n && (u[e] = n.filter(e => e.id !== t), delete s[t], delete p[t], n.length !== u[e].length)
 }
 
-function b(e, t) {
+function O(e, t) {
   let n = u[e];
   if (null == n) return !1;
-  u[e] = n.map(e => e.id === t.id ? s({}, e, t) : e);
-  let i = h[t.id];
-  null != i && null != p[i.id] && (p[i.id] = s({}, p[i.id], t))
+  u[e] = n.map(e => e.id === t.id ? a({}, e, t) : e);
+  let i = p[t.id];
+  null != i && null != _[i.id] && (_[i.id] = a({}, _[i.id], t))
 }
-class O extends(i = r.ZP.Store) {
+class b extends(i = l.ZP.Store) {
   initialize() {
-    this.waitFor(l.Z)
+    this.waitFor(o.Z)
   }
   getFiles(e) {
     var t;
-    return null != (t = u[e]) ? t : c
+    return null != (t = u[e]) ? t : d
   }
   getMessageForFile(e) {
-    return h[e]
-  }
-  getUploaderFileForMessageId(e) {
     return p[e]
   }
+  getUploaderFileForMessageId(e) {
+    return _[e]
+  }
   getUploadAttachments(e) {
-    if (null != e) return m[e]
+    if (null != e) return f[e]
   }
 }
-a(O, "displayName", "UploadStore");
-let j = new O(o.Z, {
+c(b, "displayName", "UploadStore");
+let E = new b(r.Z, {
   CONNECTION_OPEN: function() {
-    m = {}
+    f = {}
   },
   LOGOUT: function() {
-    m = {}
+    f = {}
   },
   UPLOAD_START: function(e) {
-    var t, n, i, r;
+    var t, n, i, l;
     let {
-      channelId: o,
-      file: l,
-      uploader: a,
-      message: m
+      channelId: r,
+      file: o,
+      uploader: c,
+      message: f
     } = e;
-    if (a._aborted || a._errored) return;
-    let f = null != (t = u[o]) ? t : c;
-    if (d[l.id] = a, u[o] = [...f, l], null == m) return;
-    h[l.id] = m;
+    if (c._aborted || c._errored) return;
+    let g = null != (t = u[r]) ? t : d;
+    if (s[o.id] = c, u[r] = [...g, o], null == f) return;
+    p[o.id] = f;
     let {
-      items: g
-    } = l;
-    null != g && (p[m.id] = (i = s({}, l), r = r = {
-      items: g
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      items: m
+    } = o;
+    null != m && (_[f.id] = (i = a({}, o), l = l = {
+      items: m
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var i = Object.getOwnPropertySymbols(e);
         n.push.apply(n, i)
       }
       return n
-    })(Object(r)).forEach(function(e) {
-      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(r, e))
-    }), i)), null != (n = m.nonce) || m.id
+    })(Object(l)).forEach(function(e) {
+      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+    }), i)), null != (n = f.nonce) || f.id
   },
   UPLOAD_COMPRESSION_PROGRESS: function(e) {
     let {
       channelId: t,
       file: n
     } = e;
-    b(t, n)
+    O(t, n)
   },
   UPLOAD_PROGRESS: function(e) {
     let {
       channelId: t,
       file: n
     } = e;
-    b(t, n)
+    O(t, n)
   },
   UPLOAD_COMPLETE: function(e) {
     let {
       channelId: t,
       file: n
     } = e;
-    return g(t, n.id)
+    return m(t, n.id)
   },
   UPLOAD_FAIL: function(e) {
     let {
       channelId: t,
       file: n
     } = e;
-    return g(t, n.id)
+    return m(t, n.id)
   },
   UPLOAD_CANCEL_REQUEST: function(e) {
     let {
       file: t
-    } = e, n = d[t.id];
+    } = e, n = s[t.id];
     if (null == n) return !1;
     setImmediate(() => {
       var e;
@@ -144,7 +144,7 @@ let j = new O(o.Z, {
     let {
       file: t,
       itemId: n
-    } = e, i = d[t.id];
+    } = e, i = s[t.id];
     if (null == i) return !1;
     setImmediate(() => i.cancelItem(n))
   },
@@ -152,18 +152,18 @@ let j = new O(o.Z, {
     let {
       channelId: t,
       file: n
-    } = e, i = h[n.id];
+    } = e, i = p[n.id];
     if (null != i) {
-      var r;
-      null != (r = i.nonce) || i.id
+      var l;
+      null != (l = i.nonce) || i.id
     }
-    b(t, n)
+    O(t, n)
   },
   UPLOAD_RESTORE_FAILED_UPLOAD: function(e) {
     let {
       file: t,
       messageId: n
     } = e;
-    p[n] = t
+    _[n] = t
   }
 })

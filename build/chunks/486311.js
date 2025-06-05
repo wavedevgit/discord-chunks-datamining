@@ -1,4 +1,4 @@
-/** Chunk was on 61717 **/
+/** Chunk was on 2771 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -56,7 +56,7 @@ let C = {
     } = e, j = (0, m.ZP)(t), S = i.useCallback(() => {
       var e;
       (0, h.jd)(t), (0, f.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == j || null == (e = j.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
-    }, [t, j]), x = i.useCallback(() => {
+    }, [t, j]), E = i.useCallback(() => {
       var e;
       switch (null == j || null == (e = j.popout) ? void 0 : e.type) {
         case p.J.LEVEL_REACHED:
@@ -74,7 +74,7 @@ let C = {
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == j ? void 0 : j.popout]), E = (0, a.s9z)(a.JQI), P = (0, s.e7)([d.Z], () => d.Z.hasLayers()), [I, w] = i.useState(null), N = null == I ? "animation" : "LOOP";
+    }, [t, null == j ? void 0 : j.popout]), x = (0, a.s9z)(a.JQI), P = (0, s.e7)([d.Z], () => d.Z.hasLayers()), [I, w] = i.useState(null), N = null == I ? "animation" : "LOOP";
     i.useEffect(() => {
       (null == j ? void 0 : j.popout) == null && w(null)
     }, [null == j ? void 0 : j.popout]);
@@ -84,11 +84,11 @@ let C = {
       T = i.useRef(null);
     return (0, r.jsx)(a.yRy, {
       targetElementRef: T,
-      shouldShow: (null == j ? void 0 : j.popout) != null && !(E || P),
+      shouldShow: (null == j ? void 0 : j.popout) != null && !(x || P),
       nudgeAlignIntoViewport: !0,
       animationPosition: "bottom",
       position: "right",
-      renderPopout: x,
+      renderPopout: E,
       children: e => {
         var i, s;
         return (0, r.jsx)(u.m, (i = _({}, e), s = s = {

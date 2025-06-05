@@ -31,7 +31,7 @@ function d(e, t) {
   } = window.GLOBAL_ENV;
   if (null == r) return;
   let i = s.oC[n];
-  return "".concat(location.protocol, "//").concat(r, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(i)
+  return "https://".concat(r, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(i)
 }
 
 function f(e) {

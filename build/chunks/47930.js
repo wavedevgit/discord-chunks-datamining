@@ -1,48 +1,48 @@
-/** Chunk was on 40694 **/
-n.d(r, {
-  b: () => a,
-  x: () => c
+/** Chunk was on 78965 **/
+n.d(t, {
+  b: () => c,
+  x: () => s
 });
-var t = n(255367);
+var r = n(255367);
 n(73800);
-var l = n(385499),
-  o = n(245315),
-  i = n(368859),
-  u = n(848697);
-
-function a(e) {
-  let r, {
-    message: n,
-    channel: t,
-    user: u,
-    isRepliedMessage: a
-  } = e;
-  return (null == n ? void 0 : n.isSystemDM()) ? r = l.Z.Types.SYSTEM_DM : null != n && (0, i.Z)(n) ? r = (0, o.cp)(n) ? l.Z.Types.OFFICIAL : l.Z.Types.SERVER : (null == u ? void 0 : u.bot) ? r = l.Z.Types.BOT : null != t && t.isForumPost() && t.ownerId === (null == u ? void 0 : u.id) && !a && (r = l.Z.Types.ORIGINAL_POSTER), r
-}
+var i = n(385499),
+  l = n(245315),
+  o = n(368859),
+  a = n(848697);
 
 function c(e) {
+  let t, {
+    message: n,
+    channel: r,
+    user: a,
+    isRepliedMessage: c
+  } = e;
+  return (null == n ? void 0 : n.isSystemDM()) ? t = i.Z.Types.SYSTEM_DM : null != n && (0, o.Z)(n) ? t = (0, l.cp)(n) ? i.Z.Types.OFFICIAL : i.Z.Types.SERVER : (null == a ? void 0 : a.bot) ? t = i.Z.Types.BOT : null != r && r.isForumPost() && r.ownerId === (null == a ? void 0 : a.id) && !c && (t = i.Z.Types.ORIGINAL_POSTER), t
+}
+
+function s(e) {
   let {
-    message: r,
+    message: t,
     channel: n,
-    user: o,
-    compact: i,
-    isRepliedMessage: c,
-    hideIcon: s = !1,
+    user: l,
+    compact: o,
+    isRepliedMessage: s,
+    hideIcon: u = !1,
     children: d
-  } = e, f = a({
-    message: r,
+  } = e, _ = c({
+    message: t,
     channel: n,
-    user: o,
-    compact: i,
-    isRepliedMessage: c,
-    hideIcon: s,
+    user: l,
+    compact: o,
+    isRepliedMessage: s,
+    hideIcon: u,
     children: d
   });
-  return null == f ? null : (0, t.jsx)(l.Z, {
-    className: i ? u.botTagCompact : u.botTagCozy,
-    type: f,
-    verified: null == o ? void 0 : o.isVerifiedBot(),
-    hideIcon: s,
+  return null == _ ? null : (0, r.jsx)(i.Z, {
+    className: o ? a.botTagCompact : a.botTagCozy,
+    type: _,
+    verified: null == l ? void 0 : l.isVerifiedBot(),
+    hideIcon: u,
     useRemSizes: !0,
     children: d
   })

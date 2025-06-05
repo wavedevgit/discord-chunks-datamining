@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  b: () => x
+  b: () => y
 }), n(49124);
 var r, i, l = n(255367),
   a = n(73800),
@@ -50,7 +50,7 @@ function _(e) {
     className: s()(m.trinkets, t)
   })
 }
-let x = e => {
+let y = e => {
   let {
     children: t,
     animationContainerClassName: n,

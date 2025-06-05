@@ -16,8 +16,8 @@ var i = n(442837),
   p = n(585483),
   m = n(915863),
   g = n(981631),
-  b = n(388032),
-  _ = n(128746);
+  _ = n(388032),
+  b = n(128746);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -76,7 +76,7 @@ function y(e) {
   };
   if (null == O) return null;
   let N = (0, u.P9)(C);
-  t ? N = b.intl.string(b.t.XvBdeX) : w && (N = b.intl.string(b.t.JH1SJy));
+  t ? N = _.intl.string(_.t.XvBdeX) : w && (N = _.intl.string(_.t.JH1SJy));
   let Z = {
     color: n,
     look: y
@@ -90,22 +90,22 @@ function y(e) {
       children: [(0, r.jsx)(l.hGI, {
         size: "md",
         color: "currentColor",
-        className: _.streamIcon
+        className: b.streamIcon
       }), N]
     }), "play"), x && !w ? (0, r.jsx)(l.ua7, {
-      text: b.intl.string(b.t.wCrzur),
+      text: _.intl.string(_.t.wCrzur),
       children: e => (0, r.jsx)(m.Z, v(h(v(h({}, e), {
         onClick: () => {
           var t;
           null == (t = e.onClick) || t.call(e), T(!0)
         }
       }), Z), {
-        className: _.iconButton,
-        size: _.iconButtonSize,
+        className: b.iconButton,
+        size: b.iconButtonSize,
         children: (0, r.jsx)(l.OgY, {
           size: "xs",
           color: "currentColor",
-          className: _.iconSize
+          className: b.iconSize
         })
       }))
     }) : null]

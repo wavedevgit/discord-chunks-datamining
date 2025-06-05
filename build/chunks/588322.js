@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(703558),
   b = n(430824),
   _ = n(228392),
-  x = n(388032),
-  y = n(43200);
+  y = n(388032),
+  x = n(43200);
 
 function C(e) {
   let {
@@ -37,7 +37,7 @@ function C(e) {
       draftType: g.d.ChannelMessage
     }), (0, r.jsx)(d.ZP, {
       toolbar: I,
-      "aria-label": x.intl.string(x.t.Pwe8tL),
+      "aria-label": y.intl.string(y.t.Pwe8tL),
       children: (0, p.ud)({
         channel: C,
         parentChannel: v,
@@ -88,7 +88,7 @@ function C(e) {
         }
       })
     }), (0, r.jsx)("div", {
-      className: y.chat,
+      className: x.chat,
       children: (0, r.jsx)(c.Z, {
         channel: C,
         guild: j,

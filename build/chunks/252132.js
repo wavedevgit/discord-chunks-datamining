@@ -24,8 +24,8 @@ function o(e) {
     onContextMenu: g,
     onDoubleClick: b,
     onVideoResize: _,
-    paused: x,
-    pulseSpeakingIndicator: y,
+    paused: y,
+    pulseSpeakingIndicator: x,
     participant: C,
     width: v
   } = e, j = function(e, t) {
@@ -85,8 +85,8 @@ function o(e) {
         onDoubleClick: b,
         onVideoResize: _,
         participant: C,
-        paused: x,
-        pulseSpeakingIndicator: y,
+        paused: y,
+        pulseSpeakingIndicator: x,
         videoComponent: O,
         width: v
       }, j)), d]

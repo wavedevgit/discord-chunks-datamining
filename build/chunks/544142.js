@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(594174),
   b = n(51144),
   _ = n(967128),
-  x = n(981631),
-  y = n(388032),
+  y = n(981631),
+  x = n(388032),
   C = n(128337);
 
 function v(e) {
@@ -59,8 +59,8 @@ function O(e) {
   let {
     userId: p,
     channel: _
-  } = e, x = i.useRef(null), {
-    analyticsLocations: y
+  } = e, y = i.useRef(null), {
+    analyticsLocations: x
   } = (0, d.ZP)(u.Z.USERNAME), O = (0, o.e7)([g.default], () => g.default.getUser(p)), E = (0, o.e7)([m.ZP], () => null != p ? m.ZP.getMember(_.guild_id, p) : null), I = (0, h.X)(_.guild_id, null == E ? void 0 : E.colorStrings);
 
   function P(e) {
@@ -82,16 +82,16 @@ function O(e) {
     className: a()(C.threadCreatorName, C.unknownCreatorName),
     children: S
   }) : (0, r.jsx)(d.Gt, {
-    value: y,
+    value: x,
     children: (0, r.jsx)(f.Z, {
-      targetElementRef: x,
+      targetElementRef: y,
       user: O,
       guildId: _.guild_id,
       channelId: _.id,
       roleId: null == E ? void 0 : E.colorRoleId,
       clickTrap: !0,
       children: e => (0, r.jsx)(s.P3F, j(v({}, e), {
-        innerRef: x,
+        innerRef: y,
         tag: "span",
         className: C.threadCreatorName,
         onContextMenu: P,
@@ -121,17 +121,17 @@ function E(e) {
       color: "header-secondary",
       children: (0, r.jsx)("div", {
         className: C.subtitle,
-        children: y.intl.format(y.t.imPXd3, {
+        children: x.intl.format(x.t.imPXd3, {
           usernameHook: (e, n) => (0, r.jsx)(O, {
             userId: t.ownerId,
             channel: t
           }, n)
         })
       })
-    }), t.type === x.d4z.PRIVATE_THREAD ? (0, r.jsx)(s.Text, {
+    }), t.type === y.d4z.PRIVATE_THREAD ? (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: y.intl.string(y.t["1awbZG"])
+      children: x.intl.string(x.t["1awbZG"])
     }) : null]
   })
 }

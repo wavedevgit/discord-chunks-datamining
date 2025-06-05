@@ -25,8 +25,8 @@ function c(e) {
       groupId: f,
       compact: m = !1
     }
-  } = e, g = p.state === o.yb.SENDING, b = p.id === f, _ = (0, i.yE)(p.flags, o.iLy.EPHEMERAL), x = p.state === o.yb.SEND_FAILED;
-  return g || _ && !x ? null : (0, r.jsx)(a.Z, {
+  } = e, g = p.state === o.yb.SENDING, b = p.id === f, _ = (0, i.yE)(p.flags, o.iLy.EPHEMERAL), y = p.state === o.yb.SEND_FAILED;
+  return g || _ && !y ? null : (0, r.jsx)(a.Z, {
     className: s.buttons,
     innerClassName: s.buttonsInner,
     isHeader: !m && b && !(0, l.Z)(p),

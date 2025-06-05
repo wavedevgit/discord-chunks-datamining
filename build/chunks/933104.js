@@ -1,8 +1,8 @@
-/** Chunk was on 61717 **/
+/** Chunk was on 2771 **/
 n.d(t, {
   $h: () => S,
   jG: () => j,
-  yI: () => x
+  yI: () => E
 });
 var r = n(255367);
 n(73800);
@@ -32,7 +32,7 @@ function j(e) {
     powerup: n,
     markAsDismissed: i
   } = e;
-  return (0, r.jsx)(E, {
+  return (0, r.jsx)(x, {
     asset: (0, r.jsx)(g.g, {
       className: _.image
     }),
@@ -53,7 +53,7 @@ function S(e) {
     guildId: t,
     markAsDismissed: n
   } = e, i = (0, p.Z)(t);
-  return (0, r.jsx)(E, {
+  return (0, r.jsx)(x, {
     asset: (0, r.jsx)("img", {
       alt: "",
       src: C.Z,
@@ -73,7 +73,7 @@ function S(e) {
   })
 }
 
-function x(e) {
+function E(e) {
   let {
     guildId: t,
     powerups: n,
@@ -87,7 +87,7 @@ function x(e) {
   if (0 === n.length) return;
   let a = n.length > 1 ? "".concat(n[0].title, " & ").concat(n[1].title) : "".concat(n[0].title),
     u = 1 === n.length;
-  return (0, r.jsx)(E, {
+  return (0, r.jsx)(x, {
     asset: 1 === n.length ? (0, r.jsx)(g.m, {
       className: _.image,
       powerup: n[0]
@@ -108,7 +108,7 @@ function x(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   var {
     asset: t,
     header: n,

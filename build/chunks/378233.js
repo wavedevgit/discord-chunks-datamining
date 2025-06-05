@@ -89,7 +89,7 @@ let {
   let n, r = e.banner_asset_id;
   if (null == r) return null;
   let a = l.$k ? "webp" : "png";
-  return n = null != E ? "".concat(location.protocol, "//").concat(E, "/app-assets/").concat(f.Ks, "/store/").concat(r, ".").concat(a) : "".concat(location.protocol).concat(p).concat(_.ANM.STORE_ASSET(f.Ks, r, a)), null != t && (n += "?size=".concat((0, i.oO)(t))), n
+  return n = null != E ? "https://".concat(E, "/app-assets/").concat(f.Ks, "/store/").concat(r, ".").concat(a) : "".concat(location.protocol).concat(p).concat(_.ANM.STORE_ASSET(f.Ks, r, a)), null != t && (n += "?size=".concat((0, i.oO)(t))), n
 }, P = e => null != e.match("development" !== m ? O : v), R = e => e.stickers.some(e => {
   let {
     format_type: t

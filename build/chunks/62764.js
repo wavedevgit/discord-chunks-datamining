@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(566006),
   b = n(443877),
   _ = n(60174),
-  x = n(216337),
-  y = n(920888),
+  y = n(216337),
+  x = n(920888),
   C = n(287151),
   v = n(799903),
   j = n(501517),
@@ -208,7 +208,7 @@ function H(e) {
             me_burst: !1,
             emojiSize: "reaction"
           })
-        }), (0, r.jsx)(y.Z, {
+        }), (0, r.jsx)(x.Z, {
           message: q,
           channel: Y,
           disableReactionCreates: !0,
@@ -290,7 +290,7 @@ function H(e) {
       })]
     }), ei && (0, r.jsx)(m.Z, {
       threadId: t
-    }), (0, r.jsx)(x.Z, {
+    }), (0, r.jsx)(y.Z, {
       channel: Y,
       isLastItem: l
     })]

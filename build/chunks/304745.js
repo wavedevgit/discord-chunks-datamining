@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(403404),
   b = n(906732),
   _ = n(522651),
-  x = n(243778),
-  y = n(579185),
+  y = n(243778),
+  x = n(579185),
   C = n(301076),
   v = n(127379),
   j = n(981631),
@@ -37,7 +37,7 @@ function I(e) {
     setIsHovered: w,
     onMouseEnter: R,
     onMouseLeave: k
-  } = (0, y.Z)(200, 300), M = (0, d.a)({
+  } = (0, x.Z)(200, 300), M = (0, d.a)({
     surface: s.eR.VOICE_LAUNCHER
   }), L = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), D = !T, U = i.useCallback(e => {
     "focus" !== e.type && R()
@@ -54,7 +54,7 @@ function I(e) {
   T || V.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !T && V.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), T || V.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = i.useRef(!1),
     W = i.useRef(null);
-  return (0, r.jsx)(x.ZP, {
+  return (0, r.jsx)(y.ZP, {
     contentTypes: V,
     children: e => {
       let {

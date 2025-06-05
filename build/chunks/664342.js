@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(299206),
   b = n(727429),
   _ = n(665149),
-  x = n(359110),
-  y = n(585483),
+  y = n(359110),
+  x = n(585483),
   C = n(407908),
   v = n(739830),
   j = n(488131),
@@ -107,7 +107,7 @@ function Z(e) {
   }), T = (0, m.Z)(t);
 
   function A() {
-    (0, x.Kh)(t.id)
+    (0, y.Kh)(t.id)
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "thread-context",
@@ -131,7 +131,7 @@ function Z(e) {
         icon: l.rgF,
         action: function() {
           A(), setTimeout(() => {
-            y.S.dispatch(O.CkL.FOCUS_SEARCH, {
+            x.S.dispatch(O.CkL.FOCUS_SEARCH, {
               prefillCurrentChannel: !1
             })
           }, 2e3)
@@ -141,7 +141,7 @@ function Z(e) {
         label: E.intl.string(E.t["2BSH7u"]),
         icon: l.rgF,
         action: function() {
-          A(), y.S.dispatch(O.CkL.TOGGLE_CHANNEL_PINS)
+          A(), x.S.dispatch(O.CkL.TOGGLE_CHANNEL_PINS)
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {

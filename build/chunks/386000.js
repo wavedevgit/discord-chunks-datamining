@@ -23,8 +23,8 @@ function m(e) {
     centerButton: g = !1,
     awaitingRemote: b,
     onMouseEnter: _,
-    onMouseLeave: x,
-    onClick: y
+    onMouseLeave: y,
+    onClick: x
   } = e, C = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -77,10 +77,10 @@ function m(e) {
       null == _ || _(e), T.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == x || x(e), T.onMouseLeave()
+      null == y || y(e), T.onMouseLeave()
     },
     onClick: e => {
-      null == y || y(e), (0, d.v)(v, d.d.MIC, t)
+      null == x || x(e), (0, d.v)(v, d.d.MIC, t)
     }
   }, C))
 }

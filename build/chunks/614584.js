@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(937889),
   b = n(739566),
   _ = n(267128),
-  x = n(507418),
-  y = n(348238),
+  y = n(507418),
+  x = n(348238),
   C = n(981631),
   v = n(388032);
 
@@ -115,7 +115,7 @@ let E = i.memo(function(e) {
   } = (0, l.cj)([f.Z], () => ({
     isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
     isReplyAuthorIgnored: null != w && f.Z.isIgnoredForMessage(w)
-  }), [w]), B = (0, y.wq)(null == w ? void 0 : w.author.id, I.id), G = (0, y.$3)(n, w), F = (0, y.Wl)(w, I, S, N), H = (0, y.rY)(Z, N), V = i.useCallback(() => {
+  }), [w]), B = (0, x.wq)(null == w ? void 0 : w.author.id, I.id), G = (0, x.$3)(n, w), F = (0, x.Wl)(w, I, S, N), H = (0, x.rY)(Z, N), V = i.useCallback(() => {
     N({
       referencedUsernameProfile: !1,
       referencedAvatarProfile: !1
@@ -133,7 +133,7 @@ let E = i.memo(function(e) {
     isReplyAuthorIgnored: U,
     showAvatarPopout: Z,
     showUsernamePopout: S,
-    renderPopout: x.Z,
+    renderPopout: y.Z,
     onClickAvatar: H,
     onClickUsername: F,
     onClickReply: G,

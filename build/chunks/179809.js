@@ -1,4 +1,4 @@
-/** Chunk was on 61717 **/
+/** Chunk was on 2771 **/
 n.d(t, {
   Z: () => N
 }), n(388685);
@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(682662),
   j = n(662146),
   S = n(981631),
-  x = n(388032),
-  E = n(728492),
+  E = n(388032),
+  x = n(728492),
   P = n(335426);
 let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
   w = (0, a.animated)(h.Kqy),
@@ -77,7 +77,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       Q(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !a || "ArrowLeft" === e.key && a) && M()
-    }, [M, a]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : x.intl.string(x.t.xV9hVl), ei = (0, c.Ie)("".concat(F)), el = "folder-items-".concat(F), eo = function(e) {
+    }, [M, a]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVl), ei = (0, c.Ie)("".concat(F)), el = "folder-items-".concat(F), eo = function(e) {
       let t = (0, h.dQu)(h.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, h.dQu)(h.TVs.space.SPACE_XS);
@@ -111,8 +111,8 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
           ref: A ? e => {
             ee(e)
           } : void 0,
-          className: o()(E.folderHeader, {
-            [E.folderHeaderSmall]: "icon" === G || J,
+          className: o()(x.folderHeader, {
+            [x.folderHeaderSmall]: "icon" === G || J,
             [P.wobble]: !$ && q && !a
           }),
           "data-dnd-name": er,
@@ -145,16 +145,16 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }), eu = null != t.color ? t.color : S.Wyy, ed = eu === S.Wyy ? void 0 : (0, u.Rf)(eu);
     return (0, r.jsxs)("div", {
       ref: ea,
-      className: o()(E.folderGroup, {
-        [E.isExpanded]: a,
-        [E.isHovering]: X
+      className: o()(x.folderGroup, {
+        [x.isExpanded]: a,
+        [x.isHovering]: X
       }),
       style: {
         "--custom-folder-color": null != ed ? ed : ""
       },
       "data-drop-hovering": q,
       children: [!$ && a && (0, r.jsx)("span", {
-        className: E.folderGroupBackground
+        className: x.folderGroupBackground
       }), ec, es((e, n, i) => {
         let {
           key: l
@@ -164,7 +164,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
           role: "group",
           as: "ul",
           gap: "xs",
-          className: E.folderGuildsList,
+          className: x.folderGuildsList,
           style: {
             height: e.height.to(e => e * eo)
           },

@@ -1,4 +1,4 @@
-/** Chunk was on 61717 **/
+/** Chunk was on 2771 **/
 n.d(t, {
   u: () => L
 }), n(388685);
@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(941128),
   j = n(780570),
   S = n(278464),
-  x = n(276952),
-  E = n(682662),
+  E = n(276952),
+  x = n(682662),
   P = n(662146),
   I = n(674552),
   w = n(981631),
@@ -135,8 +135,8 @@ function D(e) {
       inlineSpecs: R,
       tutorialId: "friends-list",
       position: "right",
-      children: (0, r.jsxs)(E.H, {
-        children: [(0, r.jsx)(x.Z, {
+      children: (0, r.jsxs)(x.H, {
+        children: [(0, r.jsx)(E.Z, {
           selected: o,
           hovered: O,
           className: A.pill

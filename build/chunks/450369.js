@@ -19,8 +19,8 @@ var r = n(255367),
   g = n(213609),
   b = n(358221),
   _ = n(795318),
-  x = n(258609),
-  y = n(569545),
+  y = n(258609),
+  x = n(569545),
   C = n(102172),
   v = n(352978),
   j = n(880395),
@@ -136,9 +136,9 @@ let D = 16 / 9,
       selectedParticipant: null != l ? b.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
     })), N = i.useCallback((e, t) => {
-      if (e.type === R.fO.STREAM && 0 === j.filter(t => (0, y.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
-        if (!(0, C.p9)(l, Z.Z, P.Z, S.Z, x.Z)[0]) return;
-        (0, p.rn)((0, y.my)(e.id), {
+      if (e.type === R.fO.STREAM && 0 === j.filter(t => (0, x.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
+        if (!(0, C.p9)(l, Z.Z, P.Z, S.Z, y.Z)[0]) return;
+        (0, p.rn)((0, x.my)(e.id), {
           forceMultiple: t.shiftKey
         })
       }(null == O ? void 0 : O.id) === e.id ? I ? (u.Z.selectParticipant(l.id, null), u.Z.updateStageStreamSize(l.id, !1)) : u.Z.updateStageStreamSize(l.id, !0) : (u.Z.updateStageStreamSize(l.id, !1), u.Z.selectParticipant(l.id, e.id))
@@ -168,8 +168,8 @@ let D = 16 / 9,
       width: c
     } = e, {
       newestAnalyticsLocation: u
-    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), x = l.getGuildId(), y = I.default.getId();
-    a()(null != x, "Channel cannot be guildless");
+    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), y = l.getGuildId(), x = I.default.getId();
+    a()(null != y, "Channel cannot be guildless");
     let {
       user: C
     } = i, v = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), O = (0, s.e7)([N.ZP], () => N.ZP.isModerator(C.id, l.id), [l.id, C.id]);
@@ -180,7 +180,7 @@ let D = 16 / 9,
           name: o.ImpressionNames.CALL_TILE_CONTEXT_MENU,
           properties: {
             location: "StageTile",
-            is_tile_owner: C.id === y,
+            is_tile_owner: C.id === x,
             tile_type: e
           }
         })
@@ -225,7 +225,7 @@ let D = 16 / 9,
               } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
               return t => (0, r.jsx)(e, L(M({}, t), {
                 user: C,
-                guildId: x,
+                guildId: y,
                 channel: l,
                 showMediaItems: !0,
                 showStageChannelItems: !0,
@@ -244,7 +244,7 @@ let D = 16 / 9,
       stageParticipant: i,
       rtcParticipant: v,
       channel: l,
-      guildId: x,
+      guildId: y,
       user: C,
       width: c,
       isModerator: O,
@@ -254,7 +254,7 @@ let D = 16 / 9,
       stageParticipant: i,
       rtcParticipant: v,
       channel: l,
-      guildId: x,
+      guildId: y,
       user: C,
       width: c,
       isModerator: O,

@@ -1,4 +1,4 @@
-/** Chunk was on 61717 **/
+/** Chunk was on 2771 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -91,8 +91,8 @@ function b(e) {
     treeItemProps: {
       onFocus: S
     },
-    "aria-setsize": x,
-    "aria-posinset": E
+    "aria-setsize": E,
+    "aria-posinset": x
   } = e, P = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -143,8 +143,8 @@ function b(e) {
       }
     }, P), n = n = {
       role: "treeitem",
-      "aria-setsize": x,
-      "aria-posinset": E,
+      "aria-setsize": E,
+      "aria-posinset": x,
       "aria-expanded": o,
       "aria-owns": y,
       children: (0, r.jsxs)(a.aRk, {

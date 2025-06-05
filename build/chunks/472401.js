@@ -19,5 +19,5 @@ function l(e) {
   } = e, c = new URLSearchParams({
     size: (0, r.oO)(l * (0, r.x_)()).toString()
   }).toString(), u = i.$k ? "webp" : "png";
-  return null != s ? "".concat(location.protocol, "//").concat(s, "/app-assets/application-directory/collection-items/").concat(t, "/").concat(n, ".").concat(u, "?").concat(c) : "".concat(location.protocol).concat(o).concat(a.ANM.APPLICATION_DIRECTORY_COLLECTION_ITEM_IMAGE(t, n, u), "?").concat(c)
+  return null != s ? "https://".concat(s, "/app-assets/application-directory/collection-items/").concat(t, "/").concat(n, ".").concat(u, "?").concat(c) : "".concat(location.protocol).concat(o).concat(a.ANM.APPLICATION_DIRECTORY_COLLECTION_ITEM_IMAGE(t, n, u), "?").concat(c)
 }

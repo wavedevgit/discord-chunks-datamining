@@ -18,8 +18,8 @@ var i = n(255367),
 function p(e, t) {
   let n = (0, d.Z)(t, e),
     p = e.hasPotions(),
-    b = (0, u.Nt)(),
-    h = r.useCallback(n => {
+    h = (0, u.Nt)(),
+    b = r.useCallback(n => {
       try {
         (0, a.qc)(t.id, e.id, n)
       } catch (e) {
@@ -32,12 +32,12 @@ function p(e, t) {
       }), (0, c.s)({
         channelId: t.id,
         message: e,
-        onRedeem: h,
+        onRedeem: b,
         onClose: o.Qy,
         source: s.YD.MessageContextMenu
       })
-    }, [t.id, e, h]);
-  return n && !p && b ? (0, i.jsx)(l.sNh, {
+    }, [t.id, e, b]);
+  return n && !p && h ? (0, i.jsx)(l.sNh, {
     id: "add-confetti-potion",
     label: m.intl.string(m.t.icaJW1),
     icon: l.l22,

@@ -1,6 +1,6 @@
 /**
   Module ID: 80767
-  Original File Name: 5ea46a583aa1fb1b
+  Original File Name: 6fdca78f0ad25d38
 **/
 .menu__43313 {
     max-height: 70vh
@@ -29,7 +29,7 @@
 }
 
 .visibleFloater__1836e {
-    background: var(--brand-500);
+    background: var(--background-surface-highest);
     border: 1px solid var(--border-faint);
     border-radius: 8px;
     box-shadow: 0 12px 32px 0 rgba(0,0,0,.24);
@@ -269,7 +269,7 @@
 }
 
 .profile_ed0705 {
-    border-radius: 50%;
+    border-radius: 16px;
     display: flex;
     height: 80px;
     overflow: hidden;
@@ -283,7 +283,7 @@
 
 .insetBorder_ed0705 {
     border: 1px solid var(--border-subtle);
-    border-radius: 50%;
+    border-radius: 16px;
     box-sizing: border-box;
     left: 0;
     pointer-events: none;
@@ -313,15 +313,15 @@
 
 .iconCircle_ed0705 {
     background: var(--background-tertiary);
-    border-radius: 50%;
-    bottom: -3px;
+    border-radius: 20px;
+    bottom: -7px;
     display: flex;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding: 2px;
     position: absolute;
-    right: -3px;
+    right: -7px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
@@ -330,7 +330,7 @@
 .lockedCircle_ed0705 {
     background: linear-gradient(0deg,var(--bg-mod-subtle) 0,var(--bg-mod-subtle) 100%),var(--background-secondary-alt);
     border: 3px solid var(--background-tertiary);
-    border-radius: 50%;
+    border-radius: 20px;
     height: 18px;
     width: 18px
 }
@@ -344,7 +344,7 @@
 
 .clockCircle_ed0705 {
     background: var(--brand-500);
-    border-radius: 50%;
+    border-radius: 20px;
     height: 24px;
     width: 24px
 }
@@ -364,7 +364,7 @@
 .hoverButtonCircle_ed0705 {
     align-items: center;
     background: var(--opacity-black-48);
-    border-radius: 50%;
+    border-radius: 20px;
     display: flex;
     height: 24px;
     justify-content: center;
@@ -377,9 +377,9 @@
 }
 
 .previewButton_ed0705 {
-    left: 8px;
+    left: 12px;
     position: absolute;
-    top: 8px
+    top: 12px
 }
 
 .filter_ed0705,.selector_ed0705 {
@@ -1783,4 +1783,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=5ea46a583aa1fb1b.css.map*/
+/*# sourceMappingURL=6fdca78f0ad25d38.css.map*/

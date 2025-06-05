@@ -1,4 +1,4 @@
-/** Chunk was on 61717 **/
+/** Chunk was on 2771 **/
 n.d(t, {
   Z: () => D
 }), n(388685), n(539854);
@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(944486),
   j = n(979651),
   S = n(709054),
-  x = n(853856),
-  E = n(593214),
+  E = n(853856),
+  x = n(593214),
   P = n(919755),
   I = n(110977),
   w = n(603274),
@@ -65,14 +65,14 @@ function D() {
     {
       favoriteAdded: D,
       clearFavoriteAdded: L
-    } = (0, E.up)(),
+    } = (0, x.up)(),
     [M, k] = i.useState(!1),
     {
       favoriteServerMuted: U,
       favoriteChannels: G
-    } = (0, a.cj)([x.Z], () => ({
-      favoriteChannels: x.Z.getFavoriteChannels(),
-      favoriteServerMuted: x.Z.favoriteServerMuted
+    } = (0, a.cj)([E.Z], () => ({
+      favoriteChannels: E.Z.getFavoriteChannels(),
+      favoriteServerMuted: E.Z.favoriteServerMuted
     })),
     B = (0, a.e7)([C.Z], () => C.Z.getChannelId(N.I_8)),
     V = (0, a.e7)([_.Z], () => _.Z.getChannel(B)),

@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(941028),
   b = n(144144),
   _ = n(276264),
-  x = n(607070),
-  y = n(100527),
+  y = n(607070),
+  x = n(100527),
   C = n(367907),
   v = n(906732),
   j = n(493324),
@@ -127,8 +127,8 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
       activities: h,
       applicationStream: f,
       status: g,
-      channel: x,
-      guildId: y,
+      channel: y,
+      guildId: x,
       isTyping: C,
       isMobileOnline: v,
       premiumSince: j,
@@ -140,36 +140,36 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387)), t = H.Z.isInChannel(B.Z.getVoiceChannelId(), u.id);
         return n => (0, r.jsx)(e, $(J({}, n), {
           user: u,
-          guildId: y,
-          channel: x,
+          guildId: x,
+          channel: y,
           showMediaItems: t
         }))
       })
-    }, [u, y, x]), A = i.useCallback(() => {
+    }, [u, x, y]), A = i.useCallback(() => {
       let e = "@".concat(W.ZP.getUserTag(u, {
           decoration: "never"
         })),
         t = "<@".concat(u.id, ">");
       V.S.dispatch(q.CkL.TEXTAREA_FOCUS, {
-        channelId: x.id
+        channelId: y.id
       }), V.S.dispatchToLastSubscribed(q.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: t
-      }), b.Z.startTyping(x.id)
-    }, [u, x.id]), w = i.useCallback(e => {
-      null != y && (e.stopPropagation(), (0, T.f)({
-        guildId: y,
+      }), b.Z.startTyping(y.id)
+    }, [u, y.id]), w = i.useCallback(e => {
+      null != x && (e.stopPropagation(), (0, T.f)({
+        guildId: x,
         location: {
           section: q.jXE.MEMBER_LIST,
           object: q.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [y]);
+    }, [x]);
     return (0, r.jsx)(M.Z, {
       targetElementRef: I,
       user: u,
-      guildId: y,
-      channelId: x.id,
+      guildId: x,
+      channelId: y.id,
       roleId: o,
       position: d.tq ? "window_center" : "left",
       spacing: 16,
@@ -200,8 +200,8 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
           colorStrings: l,
           colorRoleName: a,
           isTyping: C,
-          channel: x,
-          guildId: y,
+          channel: y,
+          guildId: x,
           isMobile: v,
           onClickPremiumGuildIcon: w,
           selected: P,
@@ -555,7 +555,7 @@ function es(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, v.ZP)(y.Z.MEMBER_LIST), o = (0, h.e7)([x.Z], () => x.Z.keyboardModeEnabled), s = (0, h.cj)([D.ZP], () => D.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, v.ZP)(x.Z.MEMBER_LIST), o = (0, h.e7)([y.Z], () => y.Z.keyboardModeEnabled), s = (0, h.cj)([D.ZP], () => D.ZP.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: p,
     version: m,

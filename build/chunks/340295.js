@@ -22,9 +22,9 @@ let _ = function(e) {
     participants: t,
     channel: n,
     hasConnectPermission: l
-  } = e, _ = t.filter(m.Io), x = (0, d.J)(n.guild_id), y = i.useCallback(() => {
-    x ? (0, u.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
-  }, [n.id, n.guild_id, x]), C = (0, c.Q3)("ChannelCallEmpty"), v = (0, o._q$)("ChannelCallEmpty"), j = 4 === _.length ? 2 : 3;
+  } = e, _ = t.filter(m.Io), y = (0, d.J)(n.guild_id), x = i.useCallback(() => {
+    y ? (0, u.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
+  }, [n.id, n.guild_id, y]), C = (0, c.Q3)("ChannelCallEmpty"), v = (0, o._q$)("ChannelCallEmpty"), j = 4 === _.length ? 2 : 3;
   return (0, r.jsxs)("div", {
     className: a()(b.container, {
       [b.withRive]: v
@@ -69,7 +69,7 @@ let _ = function(e) {
         [b.roundButton]: !C
       }),
       color: l ? C ? o.zxk.Colors.WHITE : o.zxk.Colors.GREEN : o.zxk.Colors.PRIMARY,
-      onClick: y,
+      onClick: x,
       size: o.zxk.Sizes.MEDIUM,
       children: l ? g.intl.string(g.t["96ANUF"]) : g.intl.string(g.t.TVBCKS)
     })]

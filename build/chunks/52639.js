@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 });
 var r = n(255367);
 n(73800);
@@ -20,14 +20,14 @@ var i = n(81897),
   b = n(388032),
   _ = n(954767);
 
-function x(e) {
+function y(e) {
   let {
     user: t,
     channelId: n
   } = e, {
-    analyticsLocations: x
+    analyticsLocations: y
   } = (0, l.ZP)(), {
-    context: y
+    context: x
   } = (0, s.KZ)(), C = (0, i.Z)(), {
     mutualFriendsCount: v,
     mutualFriends: j,
@@ -98,9 +98,9 @@ function x(e) {
                 })
               }
               return e
-            }({}, y), t = t = {
+            }({}, x), t = t = {
               userId: i.id,
-              sourceAnalyticsLocations: x
+              sourceAnalyticsLocations: y
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

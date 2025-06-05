@@ -20,8 +20,8 @@ var r = n(255367),
   g = n(370774),
   b = n(703656),
   _ = n(699516),
-  x = n(914010),
-  y = n(594174),
+  y = n(914010),
+  x = n(594174),
   C = n(768581),
   v = n(63063),
   j = n(946734),
@@ -133,7 +133,7 @@ function w(e) {
     handleParentContextMenu: m,
     renderFollowButton: g
   } = e, b = (0, h.KS)(t, o), {
-    prefix: x,
+    prefix: y,
     level: C
   } = function(e, t) {
     var n, r;
@@ -171,8 +171,8 @@ function w(e) {
         }
     }
   }(t.type, o), v = (0, r.jsxs)(r.Fragment, {
-    children: [null != x ? (0, r.jsxs)(c.nn4, {
-      children: [x, ":"]
+    children: [null != y ? (0, r.jsxs)(c.nn4, {
+      children: [y, ":"]
     }) : null, " ", n]
   });
   switch (t.type) {
@@ -243,7 +243,7 @@ function w(e) {
             onContextMenu: m,
             onClick: f,
             className: a()(T.parentChannelName, T.cursorPointer),
-            children: (0, p.F6)(l, y.default, _.Z)
+            children: (0, p.F6)(l, x.default, _.Z)
           }), (0, r.jsx)(I.Z.Caret, {})]
         })
       }
@@ -273,8 +273,8 @@ function w(e) {
           level: C,
           onContextMenu: d,
           onClick: u,
-          children: [null != x ? (0, r.jsxs)(c.nn4, {
-            children: [x, ":"]
+          children: [null != y ? (0, r.jsxs)(c.nn4, {
+            children: [y, ":"]
           }) : null, " ", Z]
         })]
       });
@@ -285,7 +285,7 @@ function w(e) {
 let R = e => {
   let {
     channel: t
-  } = e, n = (0, o.e7)([y.default], () => y.default.getCurrentUser()), i = (0, o.e7)([y.default], () => y.default.getUser(t.getRecipientId()));
+  } = e, n = (0, o.e7)([x.default], () => x.default.getCurrentUser()), i = (0, o.e7)([x.default], () => x.default.getUser(t.getRecipientId()));
   return t.isDM() && (null == n ? void 0 : n.isStaff()) && (null == i ? void 0 : i.isStaff()) ? (0, r.jsx)(d.Z, {
     type: d.Z.Types.STAFF_ONLY_DM
   }) : null
@@ -332,7 +332,7 @@ function L(e) {
     guild: t,
     channel: n,
     caretPosition: i = "left"
-  } = e, l = (0, o.e7)([x.Z], () => x.Z.getGuildId()), s = (0, g.D)();
+  } = e, l = (0, o.e7)([y.Z], () => y.Z.getGuildId()), s = (0, g.D)();
   return (l === S.I_8 || s) && null != t ? (0, r.jsxs)("div", {
     className: T.guildBreadcrumbContainer,
     children: ["left" === i && (0, r.jsx)(I.Z.Caret, {

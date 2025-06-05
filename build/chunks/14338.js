@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 });
 var r = n(255367),
   i = n(73800),
@@ -49,13 +49,13 @@ function _(e, t) {
   }), e
 }
 
-function x(e) {
+function y(e) {
   let {
     channel: t,
     speaker: l,
     className: f
-  } = e, x = i.useRef(null), {
-    newestAnalyticsLocation: y
+  } = e, y = i.useRef(null), {
+    newestAnalyticsLocation: x
   } = (0, d.ZP)(), C = (0, u.bp)(), {
     reducedMotion: v
   } = i.useContext(o.Sfi), j = (0, c.Z)({
@@ -72,24 +72,24 @@ function x(e) {
         showMediaItems: !0,
         showStageChannelItems: !0,
         showChatItems: !1,
-        onInteraction: (0, p.u)("GuildChannelUserContextMenu", y)
+        onInteraction: (0, p.u)("GuildChannelUserContextMenu", x)
       }))
     }, {
       context: C
     })
   };
   return (0, r.jsx)(h.Z, {
-    targetElementRef: x,
+    targetElementRef: y,
     user: l.user,
     guildId: t.guild_id,
     channelId: t.id,
     clickTrap: !0,
     children: e => (0, r.jsx)(o.ua7, {
-      targetElementRef: x,
+      targetElementRef: y,
       text: l.userNick,
       position: "bottom",
       children: n => (0, r.jsx)(o.P3F, _(b({}, n, e), {
-        innerRef: x,
+        innerRef: y,
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
@@ -106,7 +106,7 @@ function x(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     speakers: t,
     channel: n
@@ -116,7 +116,7 @@ function y(e) {
     guildId: n.guild_id,
     users: t,
     max: 10,
-    renderUser: (e, t, i) => (0, r.jsx)(x, {
+    renderUser: (e, t, i) => (0, r.jsx)(y, {
       channel: n,
       speaker: e,
       className: t

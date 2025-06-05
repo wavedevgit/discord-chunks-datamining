@@ -45,7 +45,7 @@ function m() {
     }
   }(), {
     activeVoice: n
-  } = (0, u.o)(), m = (0, s.dQu)(s.TVs.colors.WHITE);
+  } = (0, u.o)();
   return (0, s.Yzy)(e ? null != n ? "voice-on" : "voice-off" : null, {
     from: {
       opacity: 0,
@@ -68,7 +68,7 @@ function m() {
         className: p.progressText,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
-          color: "always-white",
+          color: "text-primary",
           children: f.intl.format(f.t["r+uZYW"], {
             progress: t
           })
@@ -78,15 +78,13 @@ function m() {
           onClick: d.ge,
           children: (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
-            color: "always-white",
+            color: "text-primary",
             children: f.intl.string(f.t["ETE/oK"])
           })
         })]
       }), (0, r.jsx)(s.Exd, {
         percent: t,
-        foregroundColor: m.hex(),
-        backgroundColor: "rgba(255,255,255,0.10)",
-        size: s.Exd.Sizes.LARGE
+        size: s.Exd.Sizes.XSMALL
       })]
     })
   }) : null)

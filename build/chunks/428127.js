@@ -1,4 +1,4 @@
-/** Chunk was on 61717 **/
+/** Chunk was on 2771 **/
 n.d(t, {
   Z: () => O
 });
@@ -74,12 +74,12 @@ function O(e) {
     mode: _,
     mentionCount: C,
     targetChannelId: j
-  } = "bottom" === t ? p : O, S = _ === f.x.HIDDEN, x = (0, c.q_F)({
+  } = "bottom" === t ? p : O, S = _ === f.x.HIDDEN, E = (0, c.q_F)({
     to: {
       transform: S ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
-  }, v ? "respect-motion-settings" : "animate-never"), E = i.useCallback(e => {
+  }, v ? "respect-motion-settings" : "animate-never"), x = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), null != j && d(j)
   }, [d, j]);
   return (0, r.jsx)("div", {
@@ -89,13 +89,13 @@ function O(e) {
     }),
     children: (0, r.jsx)(s.animated.div, {
       className: m.containerPadding,
-      style: x,
+      style: E,
       "aria-hidden": S,
       children: _ === f.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
       }) : _ === f.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
-        onClick: E,
+        onClick: x,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
           size: "custom",
           color: "currentColor",
@@ -116,7 +116,7 @@ function O(e) {
         })]
       }) : _ === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
-        onClick: E,
+        onClick: x,
         children: (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "status-danger-text",

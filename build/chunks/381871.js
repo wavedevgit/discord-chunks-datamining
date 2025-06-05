@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(970731),
   b = n(594174),
   _ = n(176354),
-  x = n(823379),
-  y = n(74538),
+  y = n(823379),
+  x = n(74538),
   C = n(401062),
   v = n(696900),
   j = n(456631),
@@ -40,15 +40,15 @@ let M = T.Hz.CHAT,
     section: Z.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "voice_channel_effect_emoji_picker"
   },
-  D = [m.ZP.getByName("thumbsup"), m.ZP.getByName("eyes"), m.ZP.getByName("laughing"), m.ZP.getByName("watermelon"), m.ZP.getByName("fork_and_knife"), m.ZP.getByName("yum")].filter(x.lm);
+  D = [m.ZP.getByName("thumbsup"), m.ZP.getByName("eyes"), m.ZP.getByName("laughing"), m.ZP.getByName("watermelon"), m.ZP.getByName("fork_and_knife"), m.ZP.getByName("yum")].filter(y.lm);
 
 function U(e) {
   var t;
   let {
     channel: n,
     closePopout: m,
-    onFocus: x
-  } = e, T = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, a.e7)([b.default], () => b.default.getCurrentUser()), B = y.ZP.canUseFancyVoiceChannelReactions(U), G = (0, a.e7)([v.Z], () => v.Z.getState().animationType), F = i.useRef(!1), H = i.useRef(null), V = (0, f.wC)(n.guild_id), z = (0, l.uniqBy)([...V, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
+    onFocus: y
+  } = e, T = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, a.e7)([b.default], () => b.default.getCurrentUser()), B = x.ZP.canUseFancyVoiceChannelReactions(U), G = (0, a.e7)([v.Z], () => v.Z.getState().animationType), F = i.useRef(!1), H = i.useRef(null), V = (0, f.wC)(n.guild_id), z = (0, l.uniqBy)([...V, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: n,
     intention: M
@@ -108,7 +108,7 @@ function U(e) {
         "aria-label": R.intl.string(R.t.RLHsHx),
         shouldShow: l,
         renderPopout: () => (0, r.jsx)("div", {
-          onMouseEnter: x,
+          onMouseEnter: y,
           children: (0, r.jsx)(g.ZP, {
             className: k.reducedMotionTooltip,
             header: R.intl.string(R.t["6gGHnZ"]),
@@ -131,7 +131,7 @@ function U(e) {
           closePopout: m,
           onSelectEmoji: q,
           onSelectDisabledEmoji: K,
-          onFocus: x,
+          onFocus: y,
           onExpandedToggle: X,
           analyticsOverride: L,
           emojiSearchProps: {

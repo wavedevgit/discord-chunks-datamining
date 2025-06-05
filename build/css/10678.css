@@ -1,6 +1,6 @@
 /**
   Module ID: 10678
-  Original File Name: 7d26515879b70e10
+  Original File Name: 301573b4d35896bb
 **/
 .list_c47777 {
     max-height: 500px
@@ -60,6 +60,10 @@
     padding-top: 10px;
     pointer-events: none;
     position: relative
+}
+
+.closeButton__89466 {
+    justify-content: flex-end
 }
 
 .wrapper_f563df {
@@ -128,4 +132,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=7d26515879b70e10.css.map*/
+/*# sourceMappingURL=301573b4d35896bb.css.map*/

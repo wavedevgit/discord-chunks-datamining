@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Y: () => y
+  Y: () => x
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
@@ -20,16 +20,16 @@ let b = ["embedded_cover"],
     tension: 800,
     friction: 24
   };
-var x = ((r = x || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
+var y = ((r = y || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
 
-function y(e) {
+function x(e) {
   var t;
   let {
     context: n,
     activityItem: r,
     onClick: a,
-    aspectRatio: x = 0,
-    animatedDivClass: y,
+    aspectRatio: y = 0,
+    animatedDivClass: x,
     commandOrigin: C
   } = e, {
     onActivityItemSelected: v,
@@ -113,9 +113,9 @@ function y(e) {
         return (0, i.jsx)(c.f6W, {
           theme: f.BRd.DARK,
           children: e => (0, i.jsxs)(s.animated.div, {
-            className: o()(e, g.activityItem, y, {
-              [g.activityItem_13_11]: 0 === x,
-              [g.activityItem_16_9]: 1 === x
+            className: o()(e, g.activityItem, x, {
+              [g.activityItem_13_11]: 0 === y,
+              [g.activityItem_16_9]: 1 === y
             }),
             style: {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
@@ -132,4 +132,4 @@ function y(e) {
     })
   })
 }
-y.AspectRatio = x
+x.AspectRatio = y

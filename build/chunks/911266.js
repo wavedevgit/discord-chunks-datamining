@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -18,18 +18,18 @@ var r = n(255367),
   g = n(287941),
   b = n(235894),
   _ = n(675479);
-let x = e => {
+let y = e => {
   let {
     message: t,
     hovering: n,
     compact: l
-  } = e, x = i.useRef((0, o.random)(-6, 24)).current, y = (0, s.e7)([h.Z], () => h.Z.confettiMode), C = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, I] = i.useState(!1), P = i.useMemo(() => !n && !y && !C, [y, n, C]);
+  } = e, y = i.useRef((0, o.random)(-6, 24)).current, x = (0, s.e7)([h.Z], () => h.Z.confettiMode), C = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, I] = i.useState(!1), P = i.useMemo(() => !n && !x && !C, [x, n, C]);
   if (i.useEffect(() => {
-      n || I(!1), n && y && I(!0)
-    }, [n, y]), i.useEffect(() => {
+      n || I(!1), n && x && I(!0)
+    }, [n, x]), i.useEffect(() => {
       !C && (E || (!1 === n && (v.current = 0, null != j.current && (clearTimeout(j.current), j.current = null)), v.current = Date.now(), j.current = setTimeout(() => {
         let e = v.current;
-        if (0 !== e && !1 !== n && !(Date.now() - e < 1e3) && !y) {
+        if (0 !== e && !1 !== n && !(Date.now() - e < 1e3) && !x) {
           if (null != O.current) {
             var r;
             let {
@@ -51,7 +51,7 @@ let x = e => {
           })
         }
       }, 1100)))
-    }, [y, E, n, t, C]), !(0, m.p7)("Message Confetti Peak") || !(0, b.Uw)(t)) return null;
+    }, [x, E, n, t, C]), !(0, m.p7)("Message Confetti Peak") || !(0, b.Uw)(t)) return null;
   let S = (0, b.Eq)(t);
   if (null == S) return null;
   if (l) return (0, r.jsx)("span", {
@@ -69,22 +69,22 @@ let x = e => {
     ref: O,
     className: _.emojiWrapper,
     style: {
-      right: "".concat(256 + x, "px")
+      right: "".concat(256 + y, "px")
     },
     children: [(0, r.jsx)("img", {
       alt: "",
       src: N,
-      className: a()([_.emoji, _.left, P && _.shy, y && _.confettiMode]),
+      className: a()([_.emoji, _.left, P && _.shy, x && _.confettiMode]),
       width: 28
     }), (0, r.jsx)("img", {
       alt: "",
       src: N,
-      className: a()([_.emoji, _.right, P && _.shy, y && _.confettiMode]),
+      className: a()([_.emoji, _.right, P && _.shy, x && _.confettiMode]),
       width: 26
     }), (0, r.jsx)("img", {
       alt: "",
       src: N,
-      className: a()([_.emoji, _.center, P && _.shy, y && _.confettiMode]),
+      className: a()([_.emoji, _.center, P && _.shy, x && _.confettiMode]),
       width: 32
     })]
   })

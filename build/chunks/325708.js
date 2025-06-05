@@ -61,14 +61,14 @@ function _(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [x, y] = l.useState(h.ZP[_]), C = l.useCallback(e => {
+  }(t), [y, x] = l.useState(h.ZP[_]), C = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
       [_]: e
     })
   }, [_]), v = 5 === t ? f.at : f.Co, j = (0, f.WL)({
     maxWidth: n,
     minWidth: v
-  }), O = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(x, v, n), I = j ? E : E + O;
+  }), O = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(y, v, n), I = j ? E : E + O;
   l.useEffect(() => {
     null == r || r(E, j)
   }, [E, r, j]);
@@ -95,7 +95,7 @@ function _(e) {
           minWidth: v,
           maxWidth: n,
           resizableNode: g,
-          onResize: y,
+          onResize: x,
           onResizeEnd: C
         }), (0, i.jsx)("div", {
           ref: g,

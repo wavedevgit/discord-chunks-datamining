@@ -23,18 +23,18 @@ function u(e) {
     onReportSubmit: m,
     onMouseEnter: g,
     onMouseLeave: b
-  } = e, _ = (0, o.Q)(t), x = (0, s.V)(n.id, t);
-  if (!_ || null == x) return null;
-  let y = () => {
+  } = e, _ = (0, o.Q)(t), y = (0, s.V)(n.id, t);
+  if (!_ || null == y) return null;
+  let x = () => {
     null == m || m(), l.Z.closePrivateChannel(n.id, h)
   };
   return (0, r.jsx)(i.zxk, {
     className: d,
     size: u,
     color: i.zxk.Colors.RED,
-    disabled: null == x,
+    disabled: null == y,
     onClick: () => {
-      null == f || f(), (0, a.WL)(x, y)
+      null == f || f(), (0, a.WL)(y, x)
     },
     onMouseEnter: g,
     onMouseLeave: b,

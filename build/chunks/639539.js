@@ -135,7 +135,7 @@ let m = e => {
       })]
     })
   },
-  b = e => {
+  _ = e => {
     let {
       digits: t
     } = e;
@@ -153,17 +153,17 @@ let m = e => {
       })]
     })
   },
-  _ = e => {
+  b = e => {
     let {
       countdown: t
     } = e;
     return (0, r.jsxs)("div", {
       className: f.digitsContainer,
-      children: [(0, r.jsx)(b, {
+      children: [(0, r.jsx)(_, {
         digits: t.hours
-      }), (0, r.jsx)(g, {}), (0, r.jsx)(b, {
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(_, {
         digits: t.minutes
-      }), (0, r.jsx)(g, {}), (0, r.jsx)(b, {
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(_, {
         digits: t.seconds
       })]
     })
@@ -204,7 +204,7 @@ function h(e) {
       })]
     }), (0, r.jsx)("div", {
       className: f.digitsContainer,
-      children: (0, r.jsx)(_, {
+      children: (0, r.jsx)(b, {
         countdown: s
       })
     })]

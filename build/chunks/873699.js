@@ -1,6 +1,6 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  Z: () => b
+  Z: () => h
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -16,10 +16,10 @@ var i = n(255367),
   m = n(981631),
   p = n(388032);
 
-function b(e, t) {
+function h(e, t) {
   let {
     reducedMotion: n
-  } = r.useContext(a.Sfi), f = (0, u.$R)(t), g = (0, l.e7)([d.Z], () => d.Z.can(m.Plq.MANAGE_MESSAGES, t) && f, [t, f]), b = e.reactions.reduce((e, t) => {
+  } = r.useContext(a.Sfi), f = (0, u.$R)(t), g = (0, l.e7)([d.Z], () => d.Z.can(m.Plq.MANAGE_MESSAGES, t) && f, [t, f]), h = e.reactions.reduce((e, t) => {
     var n;
     return (null == (n = t.count_details) ? void 0 : n.vote) != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji]
   }, []), O = (n, i) => {
@@ -37,7 +37,7 @@ function b(e, t) {
     id: "remove-emoji-reactions",
     label: p.intl.string(p.t["zx/e4O"]),
     color: "danger",
-    children: b.map(e => {
+    children: h.map(e => {
       var t, r;
       return (0, i.jsx)(a.sNh, {
         id: "remove-emoji-reactions-".concat(null != (t = e.name) ? t : e.id),
@@ -45,7 +45,7 @@ function b(e, t) {
         action: t => O(t, e),
         icon: t => {
           var r, l;
-          return (0, i.jsx)(h, (r = function(e) {
+          return (0, i.jsx)(b, (r = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 i = Object.keys(n);
@@ -82,7 +82,7 @@ function b(e, t) {
   })
 }
 
-function h(e) {
+function b(e) {
   var t;
   let {
     emoji: n,

@@ -38,7 +38,7 @@ function p(e) {
   }), {
     width: b,
     height: _
-  } = m, x = null != (t = null == l ? void 0 : l.length) ? t : 0, y = b - 16, C = _ - (h + f), {
+  } = m, y = null != (t = null == l ? void 0 : l.length) ? t : 0, x = b - 16, C = _ - (h + f), {
     tileStyle: v,
     tileWidth: j,
     rows: O,
@@ -79,7 +79,7 @@ function p(e) {
       rows: r,
       columns: i
     }
-  })(x, y, C), [x, y, C]), I = E + 1, P = I * j + (I - 1) * 8 <= b, S = Math.floor(j / c) + 8, Z = Math.max(0, C - S * O) / 2;
+  })(y, x, C), [y, x, C]), I = E + 1, P = I * j + (I - 1) * 8 <= b, S = Math.floor(j / c) + 8, Z = Math.max(0, C - S * O) / 2;
   return (0, r.jsx)(o.Z, {
     fade: !0,
     className: n,
@@ -97,7 +97,7 @@ function p(e) {
             className: a()(s.tile, {
               [s.padColumn]: P,
               [s.noVerticalMargin]: l >= (O - 1) * E,
-              [s.noHorizontalMargin]: (l + 1) % E == 0 || l === x - 1
+              [s.noHorizontalMargin]: (l + 1) % E == 0 || l === y - 1
             }),
             children: (0, r.jsx)("div", {
               className: s.tileSizer,

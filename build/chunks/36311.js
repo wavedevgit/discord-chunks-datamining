@@ -18,9 +18,9 @@ var r = n(255367),
   g = n(981631),
   b = n(723359),
   _ = n(388032),
-  x = n(857651);
+  y = n(857651);
 
-function y(e) {
+function x(e) {
   let {
     guild: t,
     channelId: n
@@ -28,7 +28,7 @@ function y(e) {
     var e;
     return (null == (e = f.default.getCurrentUser()) ? void 0 : e.nsfwAllowed) === !1
   }), a = (0, p.Kt)(), {
-    verifyAgreementButtonText: y,
+    verifyAgreementButtonText: x,
     verifyGateDescription: C
   } = (0, p.a1)(b.L0.NSFW_CHANNEL), v = i.useCallback(() => {
     null != t && c.Z.nsfwReturnToSafety(t.id)
@@ -45,10 +45,10 @@ function y(e) {
     onDisagree: v,
     title: _.intl.string(_.t.ZmwvDQ),
     description: C,
-    agreement: y,
+    agreement: x,
     agreementButtonColor: s.zxk.Colors.BRAND,
     disagreement: _.intl.string(_.t["/g10LC"]),
-    imageClassName: x.ageGatedImage
+    imageClassName: y.ageGatedImage
   }) : l ? (0, r.jsx)(h.Z, {
     guildId: null == t ? void 0 : t.id,
     channelId: n,
@@ -61,7 +61,7 @@ function y(e) {
     }),
     agreement: null,
     disagreement: _.intl.string(_.t["/g10LC"]),
-    imageClassName: x.ageGatedImage
+    imageClassName: y.ageGatedImage
   }) : (0, r.jsx)(h.Z, {
     guildId: null == t ? void 0 : t.id,
     channelId: n,
@@ -87,10 +87,10 @@ let C = function(e) {
     null == e || e.scrollToBottom()
   }, []), (0, r.jsx)(s.Den, {
     ref: o,
-    className: x.scroller,
+    className: y.scroller,
     children: (0, r.jsx)("div", {
-      className: a()(l, x.wrapper),
-      children: (0, r.jsx)(y, {
+      className: a()(l, y.wrapper),
+      children: (0, r.jsx)(x, {
         guild: t,
         channelId: n
       })

@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 });
 var r = n(255367);
 n(73800);
@@ -20,7 +20,7 @@ var i = n(120356),
   b = n(388032),
   _ = n(12740);
 
-function x() {
+function y() {
   return (0, r.jsxs)("div", {
     className: _.header,
     children: [(0, r.jsxs)("div", {
@@ -42,17 +42,17 @@ function x() {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     userId: t,
     guildId: n,
     location: i,
     className: u,
     onNavigate: b
-  } = e, y = (0, a.e7)([c.default], () => c.default.getUser(t), [t]), C = (0, a.e7)([s.ZP], () => s.ZP.getMember(n, t), [n, t]);
-  return null == y || null == C ? null : (0, r.jsxs)("div", {
+  } = e, x = (0, a.e7)([c.default], () => c.default.getUser(t), [t]), C = (0, a.e7)([s.ZP], () => s.ZP.getMember(n, t), [n, t]);
+  return null == x || null == C ? null : (0, r.jsxs)("div", {
     className: l()(_.container, u),
-    children: [(0, r.jsx)(x, {}), (0, r.jsxs)(o.Ttm, {
+    children: [(0, r.jsx)(y, {}), (0, r.jsxs)(o.Ttm, {
       className: _.innerContainer,
       children: [(0, r.jsx)(m.Z, {
         member: C

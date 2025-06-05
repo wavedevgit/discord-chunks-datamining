@@ -1,4 +1,4 @@
-/** Chunk was on 61717 **/
+/** Chunk was on 2771 **/
 n.d(t, {
   Z: () => W
 });
@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(930282),
   j = n(318713),
   S = n(47930),
-  x = n(123145),
-  E = n(25015),
+  E = n(123145),
+  x = n(25015),
   P = n(178480),
   I = n(703656),
   w = n(518950),
@@ -86,7 +86,7 @@ function V(e) {
     primaryGuild: C
   } = (0, _.ZP)(t), {
     avatarDecorationSrc: j,
-    avatarSrc: E,
+    avatarSrc: x,
     eventHandlers: P
   } = (0, w.Z)({
     user: t.author,
@@ -101,7 +101,7 @@ function V(e) {
     isRepliedMessage: !0
   }), A = (0, r.jsxs)("div", {
     className: U.usernameTagContainer,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(E.Z, {
       channel: n,
       message: t,
       hideGuildTag: !0,
@@ -132,7 +132,7 @@ function V(e) {
         },
         children: I ? (0, r.jsx)(L.q, {
           "aria-label": "User Avatar",
-          src: E,
+          src: x,
           size: u.EFr.SIZE_32,
           cornerIconUrl: null != f ? f.getIconURL(24) : void 0,
           cornerIconOffsetX: 4,
@@ -282,7 +282,7 @@ function z(e) {
       isSelected: l
     } = e, {
       content: s
-    } = (0, E.Z)(t, {
+    } = (0, x.Z)(t, {
       hideSimpleEmbedContent: !0,
       allowList: !1,
       allowHeading: !0,

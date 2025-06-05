@@ -23,8 +23,8 @@ let g = e => {
     setWhichPopoutIsOpen: b
   } = e, {
     isHovered: _,
-    setIsHovered: x,
-    onMouseEnter: y,
+    setIsHovered: y,
+    onMouseEnter: x,
     onMouseLeave: C,
     cancelTimers: v
   } = (0, u.Z)(200, 300), [j, O] = i.useState(!1), E = (0, l.e7)([p.Z], () => p.Z.effectCooldownEndTime), I = i.useMemo(() => null != E ? (E.getTime() - Date.now()) / 1e3 : 0, [E]), {
@@ -32,8 +32,8 @@ let g = e => {
   } = (0, o.Z)(null != E ? E : new Date), S = P > 0, {
     parentAnalyticsLocation: Z
   } = (0, s.ZP)(), N = i.useCallback(e => {
-    "focus" !== e.type && (j || S || y())
-  }, [j, S, y]), T = i.useCallback(() => {
+    "focus" !== e.type && (j || S || x())
+  }, [j, S, x]), T = i.useCallback(() => {
     j || C()
   }, [C, j]), A = i.useCallback((e, t) => {
     v(), O(!j), g === f.D.EMOJI ? null == b || b(void 0) : null == b || b(f.D.EMOJI), (!_ || j) && (null == t || t(e))
@@ -47,7 +47,7 @@ let g = e => {
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      x(!1), O(!1), null == b || b(void 0)
+      y(!1), O(!1), null == b || b(void 0)
     },
     renderPopout: e => {
       let {
@@ -57,7 +57,7 @@ let g = e => {
         isHovered: w,
         channel: t,
         closePopout: n,
-        onMouseEnter: y,
+        onMouseEnter: x,
         onMouseLeave: T,
         onFocus: () => O(!0)
       })

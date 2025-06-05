@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 });
 var r = n(255367);
 n(73800);
@@ -20,7 +20,7 @@ var i = n(442837),
   b = n(388032),
   _ = n(906667);
 
-function x(e) {
+function y(e) {
   let {
     channel: t
   } = e;
@@ -38,13 +38,13 @@ function x(e) {
   }) : null
 }
 
-function y(e) {
+function x(e) {
   var t, n, u;
   let {
     channel: h,
     children: f,
     user: b
-  } = e, _ = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), y = null != (t = (0, c.ZP)(h)) ? t : "", {
+  } = e, _ = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), x = null != (t = (0, c.ZP)(h)) ? t : "", {
     avatarDecorationSrc: C,
     eventHandlers: v,
     isAnimating: j
@@ -84,19 +84,19 @@ function y(e) {
           size: l.EFr.SIZE_80,
           experimentLocation: "empty_messages",
           animated: e,
-          "aria-label": y
+          "aria-label": x
         })
       }) : (0, r.jsx)(l.qEK, {
-        "aria-label": y,
+        "aria-label": x,
         size: l.EFr.SIZE_80,
         src: (0, s.x)(h, 80, e),
         avatarDecoration: C
       })
     })(), (0, r.jsx)(g.Ot, {
-      children: y
+      children: x
     }), (0, r.jsx)(g.jz, {
       children: f
-    }), h.isMultiUserDM() && (0, r.jsx)(x, {
+    }), h.isMultiUserDM() && (0, r.jsx)(y, {
       channel: h
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {

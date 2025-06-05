@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 });
 var r = n(255367),
   i = n(73800),
@@ -18,10 +18,10 @@ var r = n(255367),
   g = n(665149),
   b = n(981631),
   _ = n(388032);
-let x = i.memo(function(e) {
+let y = i.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, u.Z)(), l = (0, o.e7)([f.Z], () => f.Z.isInChannel(t.id)), x = (0, o.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), y = (0, o.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
+  } = e, n = (0, u.Z)(), l = (0, o.e7)([f.Z], () => f.Z.isInChannel(t.id)), y = (0, o.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), x = (0, o.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
     needSubscriptionToAccess: C
   } = (0, d.Z)(t.id), v = (0, p.$R)(t), j = i.useCallback(() => {
     c.Z.handleVoiceConnect({
@@ -38,9 +38,9 @@ let x = i.memo(function(e) {
     location: "63250c_1"
   }, {
     autoTrackExposure: !1
-  }).enabled && !n && !l && y && v && t.isVocalThread()) ? (0, r.jsx)(g.ZP.Icon, {
+  }).enabled && !n && !l && x && v && t.isVocalThread()) ? (0, r.jsx)(g.ZP.Icon, {
     icon: s.Csw,
     onClick: j,
-    tooltip: x ? _.intl.string(_.t.fdEeb2) : _.intl.string(_.t.focH1t)
+    tooltip: y ? _.intl.string(_.t.fdEeb2) : _.intl.string(_.t.focH1t)
   }) : null
 })

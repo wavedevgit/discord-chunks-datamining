@@ -18,12 +18,12 @@ var r = n(255367),
   g = n(450369),
   b = n(388032),
   _ = n(816395);
-let x = {
+let y = {
     singleSpeaker: 424,
     twoSpeakers: 624,
     threeSpeakers: 824
   },
-  y = (e, t) => {
+  x = (e, t) => {
     let n = Math.floor(e / t - 8),
       r = Math.floor(n / g.Q);
     return {
@@ -31,7 +31,7 @@ let x = {
       speakerTileHeight: r
     }
   },
-  C = (e, t) => e < x.singleSpeaker ? 1 : e < x.twoSpeakers ? 2 : e < x.threeSpeakers || t ? 3 : 4,
+  C = (e, t) => e < y.singleSpeaker ? 1 : e < y.twoSpeakers ? 2 : e < y.threeSpeakers || t ? 3 : 4,
   v = e => Math.floor((e - 32) / 102);
 
 function j(e) {
@@ -41,7 +41,7 @@ let O = (0, a.Z)(e => {
   var t, n;
   let {
     channel: a,
-    width: x,
+    width: y,
     onScroll: O
   } = e, {
     selectedParticipantId: E,
@@ -51,14 +51,14 @@ let O = (0, a.Z)(e => {
     selectedParticipantId: o.Z.getSelectedParticipantId(a.id),
     largeStream: o.Z.getStageStreamSize(a.id),
     chatOpen: o.Z.getChatOpen(a.id)
-  }), [a.id]), S = (0, c.Io)(a.id), Z = (0, c.Rk)(a.id, u.pV.AUDIENCE), N = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(a.id, E) : null), T = (0, c.w8)(a.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(x), k = C(x, P), M = {
+  }), [a.id]), S = (0, c.Io)(a.id), Z = (0, c.Rk)(a.id, u.pV.AUDIENCE), N = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(a.id, E) : null), T = (0, c.w8)(a.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(y), k = C(y, P), M = {
     [u.pV.SPEAKER]: k,
     [u.pV.AUDIENCE]: R,
     [u.pV.SELECTED]: 1
   }, L = (0, d.Dx)(a.id), [D, U] = (0, d.aP)(a.id, M, L), B = [Math.max(null != (t = D[0]) ? t : 1, 1), Math.max(null != (n = D[1]) ? n : 1, 1), D[2]], {
     speakerTileWidth: G,
     speakerTileHeight: F
-  } = y(x, k), H = I ? x - 32 : Math.min(x - 64, 3 * G + 8), V = e => e === D.length - 1 || 0 === Z && 1 === e, [z, W] = i.useState(!1), [Y, q] = i.useState(!1);
+  } = x(y, k), H = I ? y - 32 : Math.min(y - 64, 3 * G + 8), V = e => e === D.length - 1 || 0 === Z && 1 === e, [z, W] = i.useState(!1), [Y, q] = i.useState(!1);
   return (0, r.jsx)(h.Z, {
     sections: B,
     renderSection: e => {

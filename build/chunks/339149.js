@@ -1,4 +1,4 @@
-/** Chunk was on 61717 **/
+/** Chunk was on 2771 **/
 n.d(t, {
   E: () => I,
   Z: () => w
@@ -44,7 +44,7 @@ function S(e) {
   }
   return e
 }
-let x = {
+let E = {
   [v.vxO.INSTALLING]: {
     [f.J6.NONE]: (e, t) => _.intl.formatToPlainString(_.t["p+2sEx"], {
       name: e
@@ -97,7 +97,7 @@ let x = {
     })
   }
 };
-class E extends l.PureComponent {
+class x extends l.PureComponent {
   renderText() {
     let {
       state: e,
@@ -131,7 +131,7 @@ class E extends l.PureComponent {
       if (null == l || null == o || null == i) return null;
       let a = e[e.length - 1] / t * 1e3,
         c = 0 !== a ? Math.max(1, (o - l) / a) : null,
-        u = x[s],
+        u = E[s],
         d = null != u ? Object.keys(u) : [],
         {
           unit: h,
@@ -167,7 +167,7 @@ class P extends(r = l.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? _.intl.string(_.t.cw57am) : (0, i.jsx)(E, {
+    return null == e || null == t ? _.intl.string(_.t.cw57am) : (0, i.jsx)(x, {
       application: e,
       state: t,
       isPaused: n

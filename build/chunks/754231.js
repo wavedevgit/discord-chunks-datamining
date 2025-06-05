@@ -1,6 +1,6 @@
-/** Chunk was on 61717 **/
+/** Chunk was on 2771 **/
 n.d(t, {
-  Z: () => E
+  Z: () => x
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -139,7 +139,7 @@ function S(e) {
   })
 }
 
-function x(e) {
+function E(e) {
   let {
     activity: t
   } = e;
@@ -161,7 +161,7 @@ function x(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -173,7 +173,7 @@ function E(e) {
     onOpenSpotifyAlbum: g
   } = e, m = [];
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (m = u.map(e => e.user.id));
-  let E = (0, s.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
+  let x = (0, s.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
     P = null != n || (0, c.Z)(t),
     I = i.useMemo(() => {
       let e = new Map;
@@ -206,7 +206,7 @@ function E(e) {
         }), m.length > 0 && (0, r.jsx)(d.Z, {
           className: O.usersSummary,
           guildId: o.guild_id,
-          users: E,
+          users: x,
           size: v,
           max: 7,
           renderUser: e => {
@@ -226,7 +226,7 @@ function E(e) {
           }
         })]
       })]
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(E, {
       activity: t
     })]
   }) : null

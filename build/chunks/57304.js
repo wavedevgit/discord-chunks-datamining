@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -48,15 +48,15 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = function(e) {
+let y = function(e) {
   let {
     channel: t
-  } = e, n = (0, c.Q3)("ChannelPinsButton"), x = (0, l.e7)([u.Z, p.default], () => {
+  } = e, n = (0, c.Q3)("ChannelPinsButton"), y = (0, l.e7)([u.Z, p.default], () => {
     let e = p.default.getCurrentUser();
     return null == e || t.isNSFW() && (!e.nsfwAllowed || !u.Z.didAgree(t.getGuildId()))
-  }, [t]), [y, C] = i.useState(!1), v = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), j = (0, s.Aq)(), O = i.useRef(null), E = i.useCallback(() => {
-    x || C(e => !e)
-  }, [x]);
+  }, [t]), [x, C] = i.useState(!1), v = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), j = (0, s.Aq)(), O = i.useRef(null), E = i.useCallback(() => {
+    y || C(e => !e)
+  }, [y]);
 
   function I(e) {
     (null == e ? void 0 : e.shiftKey) || j.dispatch(m.CkL.POPOUT_CLOSE)
@@ -65,7 +65,7 @@ let x = function(e) {
     h.S.unsubscribe(m.CkL.TOGGLE_CHANNEL_PINS, E)
   }), [E]), (0, r.jsx)(a.yRy, {
     targetElementRef: O,
-    shouldShow: y,
+    shouldShow: x,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
@@ -90,7 +90,7 @@ let x = function(e) {
         icon: a.qQX,
         iconSize: n ? 20 : void 0,
         "aria-label": g.intl.string(g.t["mp1N//"]),
-        disabled: x,
+        disabled: y,
         showBadge: v,
         selected: i
       }))
