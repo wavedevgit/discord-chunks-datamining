@@ -217,10 +217,13 @@ class S extends(r = a.PureComponent) {
             alt: "",
             className: p.avatar
           })
-        } let u = (0, i.jsx)("img", {
-        src: e.getAvatarURL(a, o),
-        alt: e.username,
-        className: p.avatar
+        } let u = (0, i.jsx)("div", {
+        className: p.avatarWithBackground,
+        children: (0, i.jsx)("img", {
+          src: e.getAvatarURL(a, o),
+          alt: e.username,
+          className: p.avatar
+        })
       }, e.id);
       return r ? (0, i.jsx)(l.P3F, {
         className: p.clickableAvatar,
