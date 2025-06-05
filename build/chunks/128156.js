@@ -22,8 +22,8 @@ var r = n(442837),
   h = n(693408),
   j = n(228168),
   g = n(981631),
-  I = n(388032),
-  v = n(514656);
+  v = n(388032),
+  I = n(514656);
 
 function O(e) {
   let {
@@ -55,7 +55,7 @@ function O(e) {
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
   }), M = w.length > 0 || null != E, R = T && null == E && null == D && null != B, G = !k && (M || R), V = S.length > 0;
   if (!G && !V && L) return (0, o.jsx)("div", {
-    className: v.spinner,
+    className: I.spinner,
     children: (0, o.jsx)(i.$jN, {})
   });
   if (!G && !V && !L) {
@@ -70,12 +70,12 @@ function O(e) {
     })
   }
   return (0, o.jsxs)(i.Ttm, {
-    className: v.scroller,
+    className: I.scroller,
     fade: !0,
     children: [G ? (0, o.jsx)(h.Z, {
-      heading: I.intl.string(I.t.J6STd3),
+      heading: v.intl.string(v.t.J6STd3),
       children: (0, o.jsxs)("ul", {
-        className: v.cards,
+        className: I.cards,
         children: [!C && R && (0, o.jsx)("li", {
           children: (0, o.jsx)(_.Z, {
             user: t,
@@ -110,8 +110,8 @@ function O(e) {
         })]
       })
     }) : null, V ? (0, o.jsx)(h.Z, {
-      heading: I.intl.string(I.t.jzgEoK),
-      introText: U ? I.intl.format(I.t["4bk9Ag"], {
+      heading: v.intl.string(v.t.jzgEoK),
+      introText: U ? v.intl.format(v.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, o.jsx)(i.eee, {
           href: d.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -119,7 +119,7 @@ function O(e) {
       }) : void 0,
       scrollIntoView: A === j.Tb.RECENT_ACTIVITY,
       children: (0, o.jsx)("ul", {
-        className: v.cards,
+        className: I.cards,
         children: S.map(e => (0, o.jsx)("li", {
           children: (0, o.jsx)(b.Z, {
             location: "UserProfileModalV2Activity",

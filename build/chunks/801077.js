@@ -18,7 +18,7 @@ var r, l = n(392711),
   y = n(38618),
   N = n(656063),
   b = n(761282),
-  v = n(814443),
+  v = n(752048),
   m = n(789407),
   E = n(630186),
   C = n(250889),
@@ -81,7 +81,7 @@ let B = !1,
 
 function Q() {
   let e = _.Z.getFriendIDs();
-  return new Set(T.Z.hasConsented(U.pjP.PERSONALIZATION) ? [...v.Z.getUserAffinitiesUserIds(), ...e] : e)
+  return new Set(T.Z.hasConsented(U.pjP.PERSONALIZATION) ? [...v.Z.getUserAffinities().map(e => e.otherUserId), ...e] : e)
 }
 
 function z(e) {
