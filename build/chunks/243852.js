@@ -55,7 +55,7 @@ function A(e) {
   null == u && (u = T[e.applicationId] = new c.Xp).start(C, () => A(e)), t || (N[e.applicationId] = e, s.K.set(v, N))
 }
 
-function Z() {
+function x() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
     t = h.ZP.getVisibleRunningGames(),
     n = new Set;
@@ -76,13 +76,13 @@ function Z() {
   for (let t of Object.keys(N)) n.has(t) || j(N[t], e)
 }
 
-function x() {
+function Z() {
   for (let e of Object.keys(N)) j(N[e]);
   P = !1
 }
 class L extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(h.ZP, f.Z, E.Z), this.syncWith([f.Z], Z)
+    this.waitFor(h.ZP, f.Z, E.Z), this.syncWith([f.Z], x)
   }
   getActivities() {
     return N
@@ -94,19 +94,19 @@ a = "ActivityTrackingStore", (l = "displayName") in L ? Object.defineProperty(L,
   configurable: !0,
   writable: !0
 }) : L[l] = a, new L(u.Z, {
-  RUNNING_GAMES_CHANGE: () => Z(),
+  RUNNING_GAMES_CHANGE: () => x(),
   CONNECTION_OPEN: function() {
     if (P) return !1;
     for (let e of Object.keys(N)) A(N[e]);
-    Z(!1), P = !0
+    x(!1), P = !0
   },
   CONNECTION_CLOSED: function(e) {
     let {
       code: t
     } = e;
-    4004 === t && x()
+    4004 === t && Z()
   },
-  LOGOUT: x,
+  LOGOUT: Z,
   ACTIVITY_UPDATE_SUCCESS: function(e) {
     let {
       applicationId: t,

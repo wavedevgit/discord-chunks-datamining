@@ -32,20 +32,20 @@ function v(e) {
   }, [t.id, T, S, N, C]), A = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(O.intl.string(O.t.pIQ3h4), a.ToastType.FAILURE))
   }, []), {
-    markAsNotSpam: Z
+    markAsNotSpam: x
   } = (0, h.m)({
     onAcceptSuccess: j,
     onError: A
   });
   if (null == t || !t.isDM()) return null;
-  let x = [(0, r.jsx)(s.ZP.Icon, {
+  let Z = [(0, r.jsx)(s.ZP.Icon, {
     icon: a.Dio,
     tooltip: O.intl.string(O.t.cpT0Cg),
     onClick: () => m.Z.closeChannelSidebar(n)
   }, "close")];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.ZP, {
-      toolbar: x,
+      toolbar: Z,
       "aria-label": O.intl.string(O.t.BIYAqa),
       children: (0, c.ud)({
         channel: t,
@@ -61,7 +61,7 @@ function v(e) {
       }), (0, r.jsx)(a.zxk, {
         className: y.hamBannerButton,
         size: a.PhG.SMALL,
-        onClick: () => Z(t, P),
+        onClick: () => x(t, P),
         children: O.intl.string(O.t.koqL3d)
       })]
     }), (0, r.jsx)("div", {

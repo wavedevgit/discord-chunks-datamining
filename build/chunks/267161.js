@@ -31,8 +31,8 @@ var r = n(255367),
   P = n(430824),
   j = n(944486),
   A = n(914010),
-  Z = n(451478),
-  x = n(768581),
+  x = n(451478),
+  Z = n(768581),
   L = n(998502),
   w = n(228488),
   R = n(950796),
@@ -99,7 +99,7 @@ function z() {
         isActivityPanelMode: d.ZP.getActivityPanelMode() === k.Ez.PANEL
       }
     }),
-    I = null != b ? x.ZP.getApplicationIconURL({
+    I = null != b ? Z.ZP.getApplicationIconURL({
       id: b.id,
       icon: b.icon,
       bot: b.bot
@@ -158,7 +158,7 @@ let W = i.memo(function() {
     L.ZP.setMinimumSize(M.J, M.N)
   }, []);
   let l = (0, s.e7)([N.Z], () => N.Z.darkSidebar ? D.BRd.DARK : void 0),
-    a = (0, s.e7)([Z.Z, C.Z], () => (0, w.rB)()),
+    a = (0, s.e7)([x.Z, C.Z], () => (0, w.rB)()),
     {
       notificationCenterVariant: o
     } = y.L.useExperiment({

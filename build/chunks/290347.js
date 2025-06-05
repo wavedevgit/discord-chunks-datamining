@@ -109,8 +109,8 @@ function T(e) {
     modalTopExtra: P,
     header: j,
     headerClassName: A,
-    subHeader: Z,
-    subHeaderExtra: x,
+    subHeader: x,
+    subHeaderExtra: Z,
     featureCards: L,
     changeLogId: w,
     button: R,
@@ -253,7 +253,7 @@ function T(e) {
         variant: "text-md/normal",
         color: "text-secondary",
         className: I.subHeader,
-        children: [Z, null == x ? void 0 : x()]
+        children: [x, null == Z ? void 0 : Z()]
       }), null != D && (0, r.jsx)(s.X6q, {
         variant: "heading-md/medium",
         className: I.bodyText,

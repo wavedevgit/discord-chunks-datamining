@@ -55,9 +55,9 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
       id: F,
       name: z,
       children: W
-    } = t, [Y, K] = i.useState(!1), [q, Q] = i.useState(!1), X = Y || q, J = (0, f.Ml)("FolderItem");
+    } = t, [K, Y] = i.useState(!1), [q, Q] = i.useState(!1), X = K || q, J = (0, f.Ml)("FolderItem");
     i.useEffect(() => {
-      R && K(!1)
+      R && Y(!1)
     }, [R]);
     let [{
       dragging: $
@@ -98,7 +98,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }), ea = i.useCallback(e => null == n ? void 0 : n(F, e), [n, F]), ec = (0, r.jsxs)(C.H, {
       children: [(0, r.jsx)(y.Z, {
         disabled: $ || a,
-        hovered: Y,
+        hovered: K,
         selected: l,
         unread: Z,
         className: P.pill
@@ -129,7 +129,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             folderGroupId: el,
             onClick: M,
             onContextMenu: k,
-            onHoverChange: K,
+            onHoverChange: Y,
             onKeyDown: en,
             treeItemProps: ei,
             folderButtonContent: B,

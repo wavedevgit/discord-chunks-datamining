@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(941128),
   j = n(451478),
   A = n(424218),
-  Z = n(780570),
-  x = n(353042),
+  x = n(780570),
+  Z = n(353042),
   L = n(86826),
   w = n(981631),
   R = n(388032),
@@ -327,7 +327,7 @@ class z extends i.PureComponent {
       if (null != r && null != i) {
         let n = B(i, l),
           a = B(r, l),
-          o = Math.floor(t = Z.xI(r, i));
+          o = Math.floor(t = x.xI(r, i));
         e = l === w.f07.PAUSING ? R.intl.formatToPlainString(R.t.vjxhWl, {
           percent: o,
           progress: a,
@@ -358,7 +358,7 @@ class z extends i.PureComponent {
       total: r
     } = e;
     if (null == n || null == r) return null;
-    let i = Z.xI(n, r),
+    let i = x.xI(n, r),
       l = Math.floor(i),
       a = 0 === n && 1 === r ? R.intl.string(R.t["+pfsFR"]) : R.intl.formatToPlainString(R.t["+feX8f"], {
         percent: l,
@@ -372,7 +372,7 @@ class z extends i.PureComponent {
     })
   }
   renderProgressPatching() {
-    return (0, r.jsx)(x.Z, {
+    return (0, r.jsx)(Z.Z, {
       getHistoricalTotalBytes: T.Z.getHistoricalTotalBytesWritten,
       updateInterval: 5e3,
       children: this.renderProgressPatchingBody
@@ -390,7 +390,7 @@ class z extends i.PureComponent {
       type: i
     } = e;
     if (null == t || null == n || null == r) return null;
-    let l = Z.xI(n, t),
+    let l = x.xI(n, t),
       a = Math.floor(l);
     return this.renderBody({
       percent: l,
@@ -444,8 +444,8 @@ class z extends i.PureComponent {
         readerProgress: o
       } = n;
       if (null == i || null == l || null == r) return null;
-      let s = Z.xI(i, l),
-        c = Z.xI(null != o ? o : 0, l),
+      let s = x.xI(i, l),
+        c = x.xI(null != o ? o : 0, l),
         u = e[e.length - 1] / t * 1e3,
         d = l - i,
         p = F({

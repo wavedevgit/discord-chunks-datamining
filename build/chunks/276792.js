@@ -99,22 +99,22 @@ function E(e) {
         }
       })
   }
-  let Z = "" !== y.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+  let x = "" !== y.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
       children: ["\xa0", (0, r.jsx)(a.eee, {
         className: g.termsApplyAnchor,
         href: u.Z.getArticleURL(y.helpArticleId),
         children: f.intl.string(f.t.hvVgAQ)
       })]
     }) : void 0,
-    x = {
+    Z = {
       type: "video",
       src: N ? y.heroArtVideoLinkLightTheme : y.videoLink
     };
-  null != y.heroArtVideoSubtitles && (x.subtitles = y.heroArtVideoSubtitles.map(e => ({
+  null != y.heroArtVideoSubtitles && (Z.subtitles = y.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
     src: e.link,
     isDefault: !1
-  }))), ("" !== y.heroArtImageLinkDarkTheme || "" !== y.heroArtImageLinkLightTheme) && (x = {
+  }))), ("" !== y.heroArtImageLinkDarkTheme || "" !== y.heroArtImageLinkLightTheme) && (Z = {
     type: "image",
     src: N ? y.heroArtImageLinkLightTheme : y.heroArtImageLinkDarkTheme
   });
@@ -127,9 +127,9 @@ function E(e) {
     header: y.header,
     modalTopExtra: L,
     subHeader: y.subheader,
-    subHeaderExtra: Z,
+    subHeaderExtra: x,
     body: y.body,
-    heroArt: x,
+    heroArt: Z,
     featureCards: y.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,

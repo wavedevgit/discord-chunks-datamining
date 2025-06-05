@@ -1,7 +1,7 @@
 /** Chunk was on 61717 **/
 n.d(t, {
   Z: () => E
-}), n(539854), n(388685), n(642613);
+}), n(539854), n(583741), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
@@ -105,7 +105,8 @@ function E(e) {
         n = (0, y.s)(D);
       null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && (null == s || s(n))
     }, [s, D]),
-    k = i.useMemo(() => {
+    k = (0, y.fW)(null != n ? n : []),
+    U = i.useMemo(() => {
       let e = {
           [O.KZ.UNREAD]: [],
           [O.KZ.TODAY]: [],
@@ -128,15 +129,15 @@ function E(e) {
         let {
           message: r,
           kind: i
-        } = n, l = (0, y.bl)(r);
+        } = n, l = k(r.id);
         i === O.fL.MENTION ? e[l].push(r) : r.channel_id in t[l] ? t[l][r.channel_id].push(r) : t[l][r.channel_id] = [r]
       }), a().each(x, n => {
-        [...Object.values(t[n]), ...e[n].map(e => [e])].sort((e, t) => g.default.compare(t[0].id, e[0].id)).forEach(e => {
+        [...Object.values(t[n]).map(e => e.reverse()), ...e[n].map(e => [e])].sort((e, t) => g.default.compare(t[0].id, e[0].id)).forEach(e => {
           r[n].push(e)
         })
       })), r
-    }, [n]),
-    U = i.useMemo(() => {
+    }, [n, k]),
+    G = i.useMemo(() => {
       let e = [];
       return null == n ? e.push((0, r.jsx)("div", {
         className: o()(C.emptyPlaceholder, C.loadingPlaceholder),
@@ -147,22 +148,22 @@ function E(e) {
         let {
           message: t
         } = e;
-        return E([t], "sidebar" === R)
+        return E([t], "sidebar" === R, k(t.id) === O.KZ.UNREAD)
       })) : a().each(x, t => {
-        0 !== k[t].length && (e.push((0, r.jsx)(S, {
+        0 !== U[t].length && (e.push((0, r.jsx)(S, {
           group: t,
           isOpen: D[t],
           toggleOpenedState: () => L(t)
-        })), D[t] && e.push(...k[t].map(e => E(e, "sidebar" === R))))
+        })), D[t] && e.push(...U[t].map(e => E(e, "sidebar" === R, k(e[0].id) === O.KZ.UNREAD))))
       }), (null == n ? void 0 : n.length) !== 0 && e.push((0, r.jsx)(u.LZC, {
         size: 8
       }, "spacer")), e
-    }, [n, _, D, L, k, Z, E, R]);
+    }, [n, _, D, L, U, Z, E, R, k]);
   i.useEffect(() => {
-    0 === k.UNREAD.length ? P(O.xM.READ) : P(O.xM.UNREAD)
-  }, [k, P]);
-  let G = null;
-  return null != n && n.length > 0 && null != s && l && (G = (0, r.jsx)("div", {
+    0 === U.UNREAD.length ? P(O.xM.READ) : P(O.xM.UNREAD)
+  }, [U, P]);
+  let B = null;
+  return null != n && n.length > 0 && null != s && l && (B = (0, r.jsx)("div", {
     className: C.loadingMore,
     children: (0, r.jsx)(u.$jN, {})
   }, "loading-more-after")), (0, r.jsx)("div", {
@@ -219,7 +220,7 @@ function E(e) {
                 height: "100%"
               }
             }, l), n = n = {
-              children: U
+              children: G
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -232,7 +233,7 @@ function E(e) {
             }), t))
           }
         })
-      }), G]
+      }), B]
     })
   })
 }

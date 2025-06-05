@@ -31,8 +31,8 @@ var r = n(255367),
   P = n(474486),
   j = n(497334),
   A = n(119850),
-  Z = n(938736),
-  x = n(227140),
+  x = n(938736),
+  Z = n(227140),
   L = n(474936),
   w = n(981631),
   R = n(921944),
@@ -76,7 +76,7 @@ let M = e => {
       J = (0, a.e7)([g.Z], () => g.Z.isLocalizedPromoEnabled) && null == q,
       $ = (0, N.Vi)(),
       ee = (0, A.V)(),
-      et = (0, Z.Kn)("NitroTabButton"),
+      et = (0, x.Kn)("NitroTabButton"),
       {
         fractionalState: en,
         startsAt: er,
@@ -103,7 +103,7 @@ let M = e => {
       upperCase: !0
     })), $ ? (n = (0, r.jsx)(C.Z, {}), E = 0) : Q ? (n = (0, r.jsx)(j.S, {
       expiresAt: ei
-    }), E = 4) : null != ee ? (n = (0, r.jsx)(x.Z, {
+    }), E = 4) : null != ee ? (n = (0, r.jsx)(Z.Z, {
       copy: ee,
       showStars: !1
     }), E = 1) : null != X ? (n = (0, r.jsx)(T.GN, {

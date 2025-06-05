@@ -136,7 +136,7 @@ let H = c.ZP.connectStores([j.ZP, v.Z], e => {
       mentions: j.ZP.getMentionCount(t.id)
     }
   })(Z.PZ),
-  Y = c.ZP.connectStores([v.Z, j.ZP], e => {
+  K = c.ZP.connectStores([v.Z, j.ZP], e => {
     let {
       user: t
     } = e, n = v.Z.getDMFromUserId(t.id);
@@ -145,7 +145,7 @@ let H = c.ZP.connectStores([j.ZP, v.Z], e => {
     }
   })(Z.n5);
 
-function K(e, t, n) {
+function Y(e, t, n) {
   return (0, i.jsx)(u.ua7, {
     text: n,
     children: e => (0, i.jsx)("span", U(k({}, e), {
@@ -251,10 +251,10 @@ class q extends l.PureComponent {
       }),
       type: b.Z.Types.INLINE,
       children: D.intl.format(D.t.wukqXV, {
-        userSymbolHook: (e, t) => K(t, f.xQ.USER, D.intl.string(D.t.GQRCGh)),
-        textChannelSymbolHook: (e, t) => K(t, f.xQ.TEXT_CHANNEL, D.intl.string(D.t.wrwhub)),
-        voiceChannelSymbolHook: (e, t) => K(t, f.xQ.VOICE_CHANNEL, D.intl.string(D.t["jz+hJi"])),
-        guildSymbolHook: (e, t) => K(t, f.xQ.GUILD, D.intl.string(D.t.WuwCWl)),
+        userSymbolHook: (e, t) => Y(t, f.xQ.USER, D.intl.string(D.t.GQRCGh)),
+        textChannelSymbolHook: (e, t) => Y(t, f.xQ.TEXT_CHANNEL, D.intl.string(D.t.wrwhub)),
+        voiceChannelSymbolHook: (e, t) => Y(t, f.xQ.VOICE_CHANNEL, D.intl.string(D.t["jz+hJi"])),
+        guildSymbolHook: (e, t) => Y(t, f.xQ.GUILD, D.intl.string(D.t.WuwCWl)),
         helpdeskArticle: I.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL)
       })
     })
@@ -504,7 +504,7 @@ class q extends l.PureComponent {
             score: l ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.USER:
-          return (0, i.jsx)(Y, {
+          return (0, i.jsx)(K, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),

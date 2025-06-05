@@ -47,8 +47,8 @@ var r = n(255367),
   F = n(849171),
   z = n(607187),
   W = n(833519),
-  Y = n(462061),
-  K = n(623825),
+  K = n(462061),
+  Y = n(623825),
   q = n(839662),
   Q = n(981631),
   X = n(354459),
@@ -95,7 +95,7 @@ let el = [X.fO.ACTIVITY],
     let {
       participant: U,
       onDoubleClick: G,
-      onContextMenu: K,
+      onContextMenu: Y,
       onClick: eo,
       onMouseDown: es,
       onKeyDown: ea,
@@ -122,7 +122,7 @@ let el = [X.fO.ACTIVITY],
       speaking: eF,
       ringing: ez,
       hasVideo: eW
-    } = (0, q.Z)(U, eL), eY = function(e, t, n) {
+    } = (0, q.Z)(U, eL), eK = function(e, t, n) {
       var r, i, l, o;
       let a = t.type !== X.fO.ACTIVITY ? t.user.id : t.applicationId,
         c = (0, s.cj)([M.Z], () => {
@@ -154,9 +154,9 @@ let el = [X.fO.ACTIVITY],
         muted: null != (l = t.type === X.fO.USER && (null == (r = t.voiceState) ? void 0 : r.isVoiceMuted())) && l,
         deafened: null != (o = t.type === X.fO.USER && (null == (i = t.voiceState) ? void 0 : i.isVoiceDeafened())) && o
       }
-    }(eL, U, ep.getGuildId()), eK = U.type === X.fO.STREAM && ek === eL, eq = B.ZP.isPremium(eM);
+    }(eL, U, ep.getGuildId()), eY = U.type === X.fO.STREAM && ek === eL, eq = B.ZP.isPremium(eM);
     i.useEffect(() => {
-      if (eK && !eq && null != ep.hdStreamingUntil && new Date(ep.hdStreamingUntil) > new Date) {
+      if (eY && !eq && null != ep.hdStreamingUntil && new Date(ep.hdStreamingUntil) > new Date) {
         let e = setTimeout(() => {
           let e = R.Z.getGoLiveSource(),
             t = (0, b.s_)(J.LY.RESOLUTION_720, J.ws.FPS_30, e);
@@ -164,7 +164,7 @@ let el = [X.fO.ACTIVITY],
         }, new Date(ep.hdStreamingUntil).getTime() - Date.now());
         return () => clearTimeout(e)
       }
-    }, [eK, eq, ep.hdStreamingUntil]);
+    }, [eY, eq, ep.hdStreamingUntil]);
     let eQ = (0, s.e7)([w.Z], () => U.type === X.fO.USER && null != ek ? w.Z.getEffectForUserId(ek) : null),
       eX = (0, s.e7)([M.Z], () => M.Z.getVoicePlatformForChannel(ep.id, null != ek ? ek : Q.lds)),
       {
@@ -203,8 +203,8 @@ let el = [X.fO.ACTIVITY],
         null == G || G(U, e)
       }, [G, U]),
       tt = i.useCallback((e, t, n) => {
-        null == K || K(U, e, t, n)
-      }, [K, U]),
+        null == Y || Y(U, e, t, n)
+      }, [Y, U]),
       tn = null,
       tr = null,
       ti = "";
@@ -232,7 +232,7 @@ let el = [X.fO.ACTIVITY],
         });
         break;
       case X.fO.USER:
-        tn = (0, r.jsx)(Y.Z, {
+        tn = (0, r.jsx)(K.Z, {
           channel: ep,
           inCall: eb,
           participant: U,
@@ -246,7 +246,7 @@ let el = [X.fO.ACTIVITY],
           noVideoRender: ev || eH,
           pulseSpeakingIndicator: eE,
           inOverlayPopout: eI
-        }), tr = (0, r.jsx)(Y.T, {
+        }), tr = (0, r.jsx)(K.T, {
           participant: U,
           channelId: ep.id
         }), ti = et.intl.formatToPlainString(et.t["iC/x/f"], {
@@ -351,7 +351,7 @@ let el = [X.fO.ACTIVITY],
                 inCall: eb,
                 participantType: U.type,
                 hasVideo: null != eW && eW
-              }, eY), {
+              }, eK), {
                 idle: ew,
                 platform: eX,
                 title: (0, V.Z)(ep, U),
@@ -359,7 +359,7 @@ let el = [X.fO.ACTIVITY],
                 ignored: ej,
                 localVideoDisabled: eB,
                 videoToggleState: eV,
-                hideAudioIcon: eK,
+                hideAudioIcon: eY,
                 onContextMenu: tt,
                 onToggleMute: e2,
                 participantUserId: ek,
@@ -492,7 +492,7 @@ let ec = i.memo(e => {
     hasVideo: x,
     hideAudioIcon: E,
     onToggleMute: P
-  } = e, I = (0, s.e7)([R.Z], () => null != m && R.Z.isLocalVideoAutoDisabled(m, (0, g.Z)(f)), [m, f]), w = (0, K.N)(l), N = (0, K.K)(l), [Z, T] = i.useState(!1);
+  } = e, I = (0, s.e7)([R.Z], () => null != m && R.Z.isLocalVideoAutoDisabled(m, (0, g.Z)(f)), [m, f]), w = (0, Y.N)(l), N = (0, Y.K)(l), [Z, T] = i.useState(!1);
   i.useEffect(() => {
     let e = !1,
       t = () => {

@@ -49,7 +49,7 @@ function A(e) {
   return e
 }
 
-function Z(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,7 +61,7 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = [];
+let Z = [];
 
 function L() {
   c.Z.setSection(T.pJs.ADD_FRIEND)
@@ -127,30 +127,30 @@ let D = function(e) {
     }(e, ["key"]);
     switch (c) {
       case T.pJs.PENDING:
-        return (0, r.jsx)(I.Z, Z(A({}, n), {
+        return (0, r.jsx)(I.Z, x(A({}, n), {
           isFocused: L
         }), t);
       case T.pJs.SUGGESTIONS:
-        return (0, r.jsx)(S.Z, Z(A({}, n), {
+        return (0, r.jsx)(S.Z, x(A({}, n), {
           isFocused: L
         }), t);
       case T.pJs.ONLINE:
       case T.pJs.ALL:
       default:
-        return (0, r.jsx)(E.Z, Z(A({}, n), {
+        return (0, r.jsx)(E.Z, x(A({}, n), {
           isFocused: L
         }), t)
     }
   }, [L, c]), B = i.useCallback(e => {
-    U(Z(A({}, M), {
+    U(x(A({}, M), {
       [c]: e
     }))
   }, [M, c]), V = i.useCallback(() => {
-    U(Z(A({}, M), {
+    U(x(A({}, M), {
       [c]: ""
     }))
   }, [M, c]), H = i.useMemo(() => c === T.pJs.PENDING && (l.filter(T.pJs.SPAM).length > 0 || l.filter(T.pJs.PENDING_IGNORED).length > 0), [l, c]), F = i.useMemo(() => l.filter(c, M[c]), [l, M, c]), z = c === T.pJs.PENDING, W = i.useMemo(() => {
-    if (!z) return x;
+    if (!z) return Z;
     let e = [];
     return F.forEach(t => {
       let {

@@ -121,7 +121,7 @@ function Z(e) {
     } = v.L.useExperiment({
       location: "NotificationsInboxSidebar"
     }),
-    Y = "sidebar" === W && _ !== E.V5.ALL;
+    K = "sidebar" === W && _ !== E.V5.ALL;
   return (0, r.jsxs)("nav", {
     className: o()(w.container, {
       [w.panelSpacing]: l
@@ -168,7 +168,7 @@ function Z(e) {
     }), t)), "popout" === W && (0, r.jsx)(S.Z, {
       selectedFilter: _,
       setSelectedFilter: j
-    }), z && (0, r.jsx)(D, {}), Y && (0, r.jsx)(L, {
+    }), z && (0, r.jsx)(D, {}), K && (0, r.jsx)(L, {
       filter: _
     }), (0, r.jsx)(x.Z, {
       className: w.messageList,
@@ -230,11 +230,12 @@ function A() {
   })
 }
 
-function R(e, t) {
-  return (0, r.jsx)(j.B, {
+function R(e, t, n) {
+  return (0, r.jsx)(j.Z, {
     message: e[0],
     goToSidebar: t,
-    groupedMessages: e.slice(1)
+    groupedMessages: e.slice(1),
+    isUnread: n
   }, e[0].id)
 }
 

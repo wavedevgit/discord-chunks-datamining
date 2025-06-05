@@ -177,8 +177,8 @@ let R = i.memo(function(e) {
       }))
     })
   }, [t.id]), z = null == L ? 0 : L.length, W = (0, s.JA)(t.id), {
-    role: Y
-  } = W, K = function(e, t) {
+    role: K
+  } = W, Y = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -201,7 +201,7 @@ let R = i.memo(function(e) {
     channelName: t.name
   }), X = (0, p.Q3)("GuildSidebarThreadListEntry") ? T : A;
   return (0, r.jsxs)("li", {
-    role: Y,
+    role: K,
     className: o()(P.containerDefault, {
       [P.selected]: l
     }),
@@ -232,7 +232,7 @@ let R = i.memo(function(e) {
         onContextMenu: F,
         children: [!k || B || l ? null : (0, r.jsx)("div", {
           className: o()(I.unread, I.unreadImportant)
-        }), (0, r.jsx)(c.P3F, Z(N({}, K), {
+        }), (0, r.jsx)(c.P3F, Z(N({}, Y), {
           innerRef: q,
           className: I.link,
           onClick: V,

@@ -18,6 +18,12 @@ let a = (0, r.B)({
     config: {
       enabled: !0
     }
+  }, {
+    id: 2,
+    label: "Enable new API features (copy for holdout)",
+    config: {
+      enabled: !0
+    }
   }]
 });
 

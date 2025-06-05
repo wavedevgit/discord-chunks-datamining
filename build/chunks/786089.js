@@ -30,14 +30,14 @@ var r = n(255367),
 let P = (0, i.memo)(function(e) {
   var t, n, l, P, j, A;
   let {
-    quest: Z
-  } = e, [x, L] = (0, i.useState)(!1), [w, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(!1), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+    quest: x
+  } = e, [Z, L] = (0, i.useState)(!1), [w, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(!1), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: V,
     height: H = 0
-  } = (0, p.ZP)(), F = (0, h.ZP)(), z = (0, E.B6)(null == (t = Z.userStatus) ? void 0 : t.claimedAt, {
+  } = (0, p.ZP)(), F = (0, h.ZP)(), z = (0, E.B6)(null == (t = x.userStatus) ? void 0 : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), W = null != (j = null == (n = Z.userStatus) ? void 0 : n.claimedTier) ? j : 0, Y = Z.config.rewards[W], K = (null == Y ? void 0 : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? void 0 : Y.type) === s.w.COLLECTIBLE, X = (null == Y ? void 0 : Y.type) === s.w.VIRTUAL_CURRENCY, Q = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? void 0 : l[0], J = (null == Q ? void 0 : Q.type) === o.Z.AVATAR_DECORATION ? Q : null;
+  }), W = null != (j = null == (n = x.userStatus) ? void 0 : n.claimedTier) ? j : 0, Y = x.config.rewards[W], K = (null == Y ? void 0 : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? void 0 : Y.type) === s.w.COLLECTIBLE, X = (null == Y ? void 0 : Y.type) === s.w.VIRTUAL_CURRENCY, Q = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? void 0 : l[0], J = (null == Q ? void 0 : Q.type) === o.Z.AVATAR_DECORATION ? Q : null;
   (0, p.PM)(M, e => {
     let {
       height: t
@@ -49,9 +49,9 @@ let P = (0, i.memo)(function(e) {
     R((r.top - n.top - i.height) / 2)
   });
   let $ = (0, u.wj)(F),
-    ee = (0, i.useMemo)(() => null != Z.config.cosponsorMetadata, [Z]),
-    et = (0, i.useMemo)(() => (0, I.fh)(Z, I.eC.REWARD), [Z]),
-    en = x ? H + 8 : 0,
+    ee = (0, i.useMemo)(() => null != x.config.cosponsorMetadata, [x]),
+    et = (0, i.useMemo)(() => (0, I.fh)(x, I.eC.REWARD), [x]),
+    en = Z ? H + 8 : 0,
     er = (0, _.mH)(O.jn.TROPHY_CASE_CARD),
     {
       content_position: ei,
@@ -91,7 +91,7 @@ let P = (0, i.memo)(function(e) {
         }
         return e
       }({
-        quest_id: Z.id
+        quest_id: x.id
       }, ea))
     },
     es = () => L(!1),
@@ -99,7 +99,7 @@ let P = (0, i.memo)(function(e) {
       k(!0), b.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
         asset_id: e,
-        quest_id: Z.id
+        quest_id: x.id
       })
     };
   return null == Y || D ? null : (0, r.jsx)(d.tEY, {
@@ -111,7 +111,7 @@ let P = (0, i.memo)(function(e) {
       onMouseEnter: eo,
       onMouseLeave: es,
       className: a()(T.container, {
-        [T.hovered]: x
+        [T.hovered]: Z
       }),
       children: [null != B && q && null != J && (0, r.jsx)("div", {
         ref: G,
@@ -139,7 +139,7 @@ let P = (0, i.memo)(function(e) {
       }) : (0, r.jsx)("img", {
         className: T.image,
         src: et.url,
-        alt: Z.config.messages.questName,
+        alt: x.config.messages.questName,
         onError: () => ec(et.url)
       }), (0, r.jsx)("div", {
         className: a()(T.overlay, {
@@ -156,7 +156,7 @@ let P = (0, i.memo)(function(e) {
           logotypeClassName: a()(T.logo, {
             [T.logoWithCosponsor]: ee
           }),
-          quest: Z,
+          quest: x,
           withGameTile: !1
         })
       }), (0, r.jsxs)("div", {
@@ -167,7 +167,7 @@ let P = (0, i.memo)(function(e) {
           variant: "heading-md/semibold",
           color: "always-white",
           children: N.intl.format(N.t.EAYZAg, {
-            questName: Z.config.messages.questName
+            questName: x.config.messages.questName
           })
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",

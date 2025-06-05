@@ -31,8 +31,8 @@ var i = n(243814),
   P = n(591759),
   j = n(228488),
   A = n(996106),
-  Z = n(914946),
-  x = n(452426),
+  x = n(914946),
+  Z = n(452426),
   L = n(561205),
   w = n(600027),
   R = n(852926),
@@ -42,7 +42,7 @@ var i = n(243814),
 async function U(e, t, n, r) {
   let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "",
     l = y.Z.getApplicationActivity(t);
-  if (null == l || null == l.secrets || !(0, Z.t9)(r, l.party, l.secrets)) throw new A.Z({
+  if (null == l || null == l.secrets || !(0, x.t9)(r, l.party, l.secrets)) throw new A.Z({
     errorCode: k.lTL.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
   let a = (0, m.Z)(l, v.Z);
@@ -100,7 +100,7 @@ let G = {
     scope: {
       [D.Gp.ANY]: [i.x.RPC, D.lH]
     },
-    validation: e => (0, x.Z)(e).required().keys({
+    validation: e => (0, Z.Z)(e).required().keys({
       user_id: e.string().required(),
       type: e.number().required().valid([k.mFx.JOIN]),
       content: e.string().min(0).max(1024),
@@ -126,7 +126,7 @@ let G = {
     scope: {
       [D.Gp.ANY]: [i.x.RPC, D.lH]
     },
-    validation: e => (0, x.Z)(e).required().keys({
+    validation: e => (0, Z.Z)(e).required().keys({
       type: e.number().required().valid([k.mFx.JOIN]),
       user_id: e.string().required(),
       session_id: e.string().required(),
@@ -292,7 +292,7 @@ let G = {
           mediaUrl: r
         }
       } = e;
-      (0, Z.bu)(n.transport);
+      (0, x.bu)(n.transport);
       let i = n.application.id;
       if (null == i) throw new A.Z({
         errorCode: k.lTL.INVALID_COMMAND

@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(113434),
   j = n(833435),
   A = n(150560),
-  Z = n(558652),
-  x = n(736683),
+  x = n(558652),
+  Z = n(736683),
   L = n(879438),
   w = n(251360),
   R = n(466962),
@@ -86,7 +86,7 @@ let z = function() {
     scrollPosition: s
   } = (0, m.M)(), u = A.Z.getState().getUtmCurrentContext(), g = (0, j._)({
     location: k.dr.QUEST_HOME_DESKTOP
-  }) ? x.Z : x.j, V = (0, L.z)(e => e.registerAssetLoad), H = i.useRef(u);
+  }) ? Z.Z : Z.j, V = (0, L.z)(e => e.registerAssetLoad), H = i.useRef(u);
   i.useEffect(() => {
     H.current = u
   }), i.useEffect(() => {
@@ -190,7 +190,7 @@ let z = function() {
           }), (0, r.jsx)(E.Z, {
             children: e === P.e5.CLAIMED ? (0, r.jsx)(g, {
               onSelectTab: t
-            }) : (0, r.jsx)(Z.Z, {})
+            }) : (0, r.jsx)(x.Z, {})
           })]
         })
       }) : (0, r.jsxs)(r.Fragment, {
@@ -235,7 +235,7 @@ let z = function() {
                 })
               }), e === P.e5.CLAIMED ? (0, r.jsx)(g, {
                 onSelectTab: t
-              }) : (0, r.jsx)(Z.Z, {})]
+              }) : (0, r.jsx)(x.Z, {})]
             })]
           })
         })]

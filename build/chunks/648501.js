@@ -75,9 +75,9 @@ function P(e) {
     color: "text-muted",
     children: (0, o.NGo)(z)
   });
-  let Y = null != (t = null == w ? void 0 : w.length) ? t : 0;
+  let K = null != (t = null == w ? void 0 : w.length) ? t : 0;
   return null != N && N && H ? (0, r.jsx)(_.Z, {
-    userCount: Y,
+    userCount: K,
     video: B || V,
     channel: n
   }) : I && (0, m.a)(w) && W ? (0, r.jsx)(o.IGR, {

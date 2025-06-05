@@ -46,8 +46,8 @@ var r = n(255367),
   F = n(118122),
   z = n(193154),
   W = n(602147),
-  Y = n(222059),
-  K = n(751277),
+  K = n(222059),
+  Y = n(751277),
   q = n(65721),
   Q = n(843343),
   X = n(654142),
@@ -194,7 +194,7 @@ function eu(e) {
     location: "GuildsBar"
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(Y.u, {}), null !== d && (0, r.jsx)(I.Z, {}), l ? (0, r.jsx)(x.Z, {}) : null, (0, r.jsx)(K.Z, {
+    children: [(0, r.jsx)(K.u, {}), null !== d && (0, r.jsx)(I.Z, {}), l ? (0, r.jsx)(x.Z, {}) : null, (0, r.jsx)(Y.Z, {
       isOnHubVerificationRoute: s
     }), !t && (0, r.jsx)(V.Z, {}), u.map(e => (0, r.jsx)(ee.Z, {
       guildId: e
@@ -243,7 +243,7 @@ function eh(e) {
     return [e, e.version]
   }), p = (0, h.e7)([E.Z], () => E.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), O = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, x] = i.useState(!1), P = i.useCallback(() => x(!0), []), I = i.useCallback(() => x(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), k = i.useRef(null), V = i.useRef(null), H = (0, u.OP)(), {
     ref: F
-  } = H, z = es(H, ["ref"]), Y = (0, m.mFp)(), [K, Q] = i.useState(!1), [$, ee] = i.useState(!1), ei = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eh = (0, m.dQu)(g.Z.space.SPACE_XS), ep = i.useMemo(() => new ec(d, Q, ee, () => {
+  } = H, z = es(H, ["ref"]), K = (0, m.mFp)(), [Y, Q] = i.useState(!1), [$, ee] = i.useState(!1), ei = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eh = (0, m.dQu)(g.Z.space.SPACE_XS), ep = i.useMemo(() => new ec(d, Q, ee, () => {
     var e, t;
     null == (e = k.current) || e.calculateState(), null == (t = V.current) || t.calculateState()
   }, function(e, t, n) {
@@ -356,7 +356,7 @@ function eh(e) {
     }),
     eI = eE ? (0, r.jsx)(Z.fO, eo(el({
       targetElementRef: ev,
-      isGuildBarScrolling: K
+      isGuildBarScrolling: Y
     }, ex), {
       children: eP
     })) : eP;
@@ -377,7 +377,7 @@ function eh(e) {
           barClassName: er.unreadMentionsBar
         }), (0, r.jsx)("ul", eo(el({
           ref: F
-        }, z, Y), {
+        }, z, K), {
           role: "tree",
           className: er.tree,
           children: (0, r.jsx)("div", {
@@ -385,7 +385,7 @@ function eh(e) {
             children: (0, r.jsxs)(m.xVE, {
               className: o()({
                 [er.scroller]: !0,
-                [er.scrolling]: K,
+                [er.scrolling]: Y,
                 [er.isScrolledToBottom]: $
               }),
               experimental_useStack: !0,

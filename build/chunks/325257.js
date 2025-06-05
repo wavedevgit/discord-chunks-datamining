@@ -94,8 +94,8 @@ let k = i.memo(function(e) {
     guild: F,
     animatable: z,
     selected: W = !1,
-    unread: Y = !1,
-    mediaState: K,
+    unread: K = !1,
+    mediaState: Y,
     unavailable: q = !1,
     badge: Q = 0,
     isMentionLowImportance: X,
@@ -110,7 +110,7 @@ let k = i.memo(function(e) {
   } = e, {
     id: eo,
     parentId: es
-  } = U, ea = (0, b.Q3)("GuildItem"), ec = null != (t = e.upperBadge) ? t : q ? (0, N.Ny)() : null != K ? (0, N.Or)(K) : void 0, eu = null != (n = e.lowerBadge) ? n : void 0;
+  } = U, ea = (0, b.Q3)("GuildItem"), ec = null != (t = e.upperBadge) ? t : q ? (0, N.Ny)() : null != Y ? (0, N.Or)(Y) : void 0, eu = null != (n = e.lowerBadge) ? n : void 0;
   null == eu && Q > 0 ? eu = null != (l = (0, N.Ne)(Q, X ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : void 0 : null == eu && null != en && (eu = null != (f = (0, N.jt)({
     guildJoinRequestStatus: en
   })) ? f : void 0);
@@ -235,7 +235,7 @@ let k = i.memo(function(e) {
     children: [(0, r.jsx)(S.Z, {
       hovered: !eh && eb,
       selected: !eh && W,
-      unread: !eh && Y,
+      unread: !eh && K,
       className: A.pill
     }), (0, r.jsx)(P.Z, {
       guild: F,

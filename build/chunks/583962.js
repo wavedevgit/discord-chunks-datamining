@@ -150,7 +150,7 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     D && (z = (0, _.e9)(L), W = I.intl.format(I.t.B2byER, {
       numBoosts: C
     })), l && (z = z.toLocaleLowerCase());
-    let Y = (0, a.JA)("boosts-".concat(t.id));
+    let K = (0, a.JA)("boosts-".concat(t.id));
     return (0, r.jsx)("li", {
       children: (0, r.jsx)(d.ua7, {
         text: H ? I.intl.formatToPlainString(w.default["9CtPjo"], {
@@ -162,7 +162,7 @@ let A = (0, C.Mg)(u.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
         position: "top",
         delay: 200,
         hideOnClick: !0,
-        children: e => (0, r.jsxs)(d.P3F, T(Z({}, Y, e), {
+        children: e => (0, r.jsxs)(d.P3F, T(Z({}, K, e), {
           "aria-label": void 0,
           role: "button",
           focusProps: {

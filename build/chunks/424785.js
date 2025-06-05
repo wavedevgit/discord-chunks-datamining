@@ -78,7 +78,7 @@ function W(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class Y extends D.ZP {
+class K extends D.ZP {
   getVoiceStatesCount() {
     var e;
     let {
@@ -312,7 +312,7 @@ class Y extends D.ZP {
     })
   }
 }
-let K = (0, d.B)((0, h.Q)(Y));
+let Y = (0, d.B)((0, h.Q)(K));
 
 function q(e) {
   let {
@@ -348,7 +348,7 @@ function q(e) {
     needSubscriptionToAccess: y,
     enableConnectedUserLimit: v || n.userLimit > 0 && n.userLimit < U.xGv
   }), A = e.connected && null == I;
-  return (0, r.jsx)(K, W(z({
+  return (0, r.jsx)(Y, W(z({
     categoryCollapsed: h,
     connectAction: p,
     numAudience: g,

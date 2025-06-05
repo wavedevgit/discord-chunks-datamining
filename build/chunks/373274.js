@@ -46,8 +46,8 @@ var r, i = n(255367),
   F = n(910595),
   z = n(120818),
   W = n(61642),
-  Y = n(848442),
-  K = n(53425),
+  K = n(848442),
+  Y = n(53425),
   q = n(424785),
   Q = n(770202),
   X = n(79556),
@@ -599,7 +599,7 @@ class ep extends(r = l.PureComponent) {
               selected: s === el.oC.ROLE_SUBSCRIPTIONS
             }, en.z.GUILD_ROLE_SUBSCRIPTIONS);
           case en.z.GUILD_SHOP:
-            return (0, i.jsx)(Y.Z, {
+            return (0, i.jsx)(K.Z, {
               guild: r,
               selected: s === el.oC.GUILD_SHOP
             }, en.z.GUILD_SHOP);
@@ -658,7 +658,7 @@ class ep extends(r = l.PureComponent) {
               canBeNewChannel: f && t === u.recentsSectionNumber,
               isFavoriteCategory: O,
               withGuildIcon: g
-            }), y.threadCount > 0 ? (0, i.jsx)(K.Z, {
+            }), y.threadCount > 0 ? (0, i.jsx)(Y.Z, {
               withGuildIcon: g,
               channel: v,
               sortedThreadIds: y.threadIds,

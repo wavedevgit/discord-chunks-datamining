@@ -46,8 +46,8 @@ function C(e) {
     P = (0, l.e7)([m.Z], () => m.Z.can(y.Plq.ADMINISTRATOR, e)),
     j = null != v && Date.now() - v <= y.Dge,
     A = (0, I.Jh)(n) !== y.Eu4.NONE,
-    Z = !(null != r && Date.now() - r <= 432e5) && !j && P && A,
-    x = (0, s.m)(n),
+    x = !(null != r && Date.now() - r <= 432e5) && !j && P && A,
+    Z = (0, s.m)(n),
     L = (0, l.e7)([_.Z], () => _.Z.isVisible(e)),
     w = d.Z.useShouldShowChannelNotice(n),
     R = (0, h.h6)(e),
@@ -61,15 +61,15 @@ function C(e) {
       o.Z.getGuildEventsForCurrentUser(n)
     }, [n]), i.useEffect(() => {
       let e = -1;
-      return Z && (e = window.setTimeout(() => {
+      return x && (e = window.setTimeout(() => {
         null != n && (0, a.C0)(n)
       }, 30 * Math.random() * O.Z.Millis.SECOND)), () => {
         window.clearTimeout(e)
       }
-    }, [n, Z]), N) return 0;
+    }, [n, x]), N) return 0;
   if (C && !S) return 1;
   if (T) return 2;
-  if (x || null != U) return 3;
+  if (Z || null != U) return 3;
   if (L) return 4;
   else if (w) return 5;
   else if (k) return 6;

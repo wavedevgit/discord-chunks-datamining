@@ -30,8 +30,8 @@ var r = n(255367),
   P = n(626421),
   j = n(118379),
   A = n(267161),
-  Z = n(652515),
-  x = n(544978),
+  x = n(652515),
+  Z = n(544978),
   L = n(540059),
   w = n(724383),
   R = n(135864),
@@ -85,7 +85,7 @@ var r = n(255367),
   ej = n(186901),
   eA = n(128654);
 
-function eZ(e) {
+function ex(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -104,7 +104,7 @@ function eZ(e) {
   return e
 }
 
-function ex(e, t) {
+function eZ(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -176,20 +176,20 @@ let eL = (0, u.Un)({
       let e = F.Z.getData(l);
       if ((null == e ? void 0 : e.type) === z.z.SERVER_SHOP) switch (e.initialTab) {
         case "role_subscriptions":
-          return x.y.GUILD_ROLE_SUBSCRIPTIONS;
+          return Z.y.GUILD_ROLE_SUBSCRIPTIONS;
         case "guild_products":
-          return x.y.GUILD_PRODUCTS;
+          return Z.y.GUILD_PRODUCTS;
         default:
           return
       }
     });
     (0, en.WF)(a) && (0, en.WF)(c) || ((0, ea.uL)(eS.Z5c.CHANNEL(null == u ? void 0 : u.id, null == u ? void 0 : u.getModeratorReportChannelId())), (0, W.V)());
-    let f = (0, Z.C4)(l, "channel_renderer");
+    let f = (0, x.C4)(l, "channel_renderer");
     if (null != l && null != a && (0, eN.AB)(a)) switch (a) {
       case eN.oC.ROLE_SUBSCRIPTIONS:
         return f ? (0, r.jsx)(eR, {
           guildId: l,
-          initialTab: x.y.GUILD_ROLE_SUBSCRIPTIONS
+          initialTab: Z.y.GUILD_ROLE_SUBSCRIPTIONS
         }) : (0, r.jsx)(G.Z, {
           guildId: l
         });
@@ -264,7 +264,7 @@ let eL = (0, u.Un)({
       guildId: e
     }, e) : (0, r.jsx)(eI.Z, {})
   }),
-  eH = e => (0, r.jsx)(eB, eZ({}, e)),
+  eH = e => (0, r.jsx)(eB, ex({}, e)),
   eF = () => (0, r.jsx)(w.Z, {}),
   ez = e => null != e.match.params.channelId ? eH(e) : (0, r.jsx)(Q.Z, {}),
   eW = e => {
@@ -292,15 +292,15 @@ let eL = (0, u.Un)({
       let {
         tab: n
       } = (0, o.parse)(t.location.search);
-      return Object.values(eT.AW).includes(n) ? (0, r.jsx)(j.Z, eZ({
+      return Object.values(eT.AW).includes(n) ? (0, r.jsx)(j.Z, ex({
         isFullScreen: e,
         tab: n
-      }, t)) : (0, r.jsx)(j.Z, eZ({
+      }, t)) : (0, r.jsx)(j.Z, ex({
         isFullScreen: e
       }, t))
     }
   },
-  eQ = e => (0, r.jsx)(C.Z, eZ({}, e)),
+  eQ = e => (0, r.jsx)(C.Z, ex({}, e)),
   eJ = () => (0, r.jsx)(ee.Z, {}),
   e$ = () => (0, r.jsx)(Y.Z, {}),
   e0 = () => (0, r.jsx)($.Z, {}),
@@ -467,7 +467,7 @@ function e5(e) {
       I && e8(ey.p8)
     }, [I]), l || !O && o) return null;
   let j = O ? "div" : i.Fragment,
-    Z = O ? {
+    x = O ? {
       className: a()(eA.sidebarList, {
         [eA.sidebarListRounded]: !t
       })
@@ -486,7 +486,7 @@ function e5(e) {
         className: eA.guilds,
         themeOverride: n
       }), !o && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(j, ex(eZ({}, Z), {
+        children: [(0, r.jsx)(j, eZ(ex({}, x), {
           children: (0, r.jsx)(eV, {})
         })), O ? (0, r.jsx)(g.P3F, {
           onClick: P,
@@ -541,8 +541,8 @@ function e4() {
     C = (0, L.TH)("AppView"),
     T = O ? "div" : i.Fragment,
     j = (0, A.useAppSidebarState)(e => !e.isOpen),
-    Z = (0, h.e7)([N.Z], () => N.Z.isFullscreenInContext()),
-    x = O ? {
+    x = (0, h.e7)([N.Z], () => N.Z.isFullscreenInContext()),
+    Z = O ? {
       className: eA.page,
       "data-collapsed": !!C && j
     } : {},
@@ -559,8 +559,8 @@ function e4() {
       value: (null == m ? void 0 : m.params.guildId) === eS.ME || null == m ? void 0 : m.params.guildId,
       children: (0, r.jsxs)("div", {
         className: eA.base,
-        "data-fullscreen": Z,
-        children: [O && !Z && (0, r.jsx)(eL, {}), d.tq ? null : (0, r.jsx)(eO.Z, {}), (0, r.jsxs)("div", {
+        "data-fullscreen": x,
+        children: [O && !x && (0, r.jsx)(eL, {}), d.tq ? null : (0, r.jsx)(eO.Z, {}), (0, r.jsxs)("div", {
           className: eA.content,
           children: [(0, r.jsx)(P.Z, {}), (0, r.jsx)(e5, {
             isOnFullScreenCollectiblesShopRoute: u,
@@ -569,7 +569,7 @@ function e4() {
             sidebarTheme: n,
             hideChannelList: _,
             hideSidebar: !f || u
-          }), (0, r.jsx)(T, ex(eZ({}, x), {
+          }), (0, r.jsx)(T, eZ(ex({}, Z), {
             children: (0, r.jsxs)(I.Z.Provider, {
               value: E,
               children: [(0, r.jsxs)(s.rs, {

@@ -41,13 +41,13 @@ function T() {
       (0, c.showToast)((0, c.createToast)(S.intl.string(S.t.EDYbS0), c.ToastType.FAILURE))
     }, []),
     {
-      rejectAll: Z
+      rejectAll: x
     } = (0, b.m)({
       onError: A
     }),
-    x = i.useCallback(() => {
-      Z(t.map(e => e.channel.id))
-    }, [t, Z]);
+    Z = i.useCallback(() => {
+      x(t.map(e => e.channel.id))
+    }, [t, x]);
   (0, d.ZP)(() => {
     g.default.track(C.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: n
@@ -83,7 +83,7 @@ function T() {
           tag: "span",
           children: "•"
         }), (0, r.jsx)(c.zxk, {
-          onClick: x,
+          onClick: Z,
           look: c.iLD.LINK,
           color: c.Ttl.LINK,
           size: c.PhG.SMALL,
@@ -92,7 +92,7 @@ function T() {
           children: S.intl.string(S.t.p6t7RE)
         })]
       }) : null]
-    }, "message-requests-spam-title"), [n, x, T]);
+    }, "message-requests-spam-title"), [n, Z, T]);
   return 0 === t.length ? (0, r.jsx)(I.Z, {
     section: v.pS.SPAM
   }) : (0, r.jsx)(o.bG, {

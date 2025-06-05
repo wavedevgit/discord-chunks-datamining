@@ -46,8 +46,8 @@ var r = n(255367),
   F = n(648501),
   z = n(473403),
   W = n(830993),
-  Y = n(653577),
-  K = n(207055),
+  K = n(653577),
+  Y = n(207055),
   q = n(981631),
   Q = n(647086),
   X = n(388032),
@@ -124,7 +124,7 @@ class en extends H.ZP {
     } = this.props, i = null == (e = (0, v.D)(this.props.subtitle)) ? void 0 : e.subtitle, {
       hovered: l
     } = this.state;
-    return (0, r.jsx)(Y.Z, {
+    return (0, r.jsx)(K.Z, {
       onClick: this.handleVoiceStatusClick,
       channel: t,
       connected: n,
@@ -140,7 +140,7 @@ class en extends H.ZP {
       withGuildIcon: i,
       tabIndex: l
     } = this.props;
-    return (0, r.jsx)(K.Z, {
+    return (0, r.jsx)(Y.Z, {
       channel: e,
       collapsed: n,
       collapsedMax: 6,

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 let r, i;
 n.d(t, {
-  Z: () => x
+  Z: () => Z
 }), n(388685);
 var l, a = n(392711),
   o = n.n(a),
@@ -70,7 +70,7 @@ function A() {
   let e = C.getGuildId();
   v = y = j(C), null == y[N] && (N = e), i = null != S, r = d.o4(C, S), T = null, I = !1, O = f.QZA.CLOSED, E.clear()
 }
-class Z extends(l = s.ZP.Store) {
+class x extends(l = s.ZP.Store) {
   initialize() {
     this.waitFor(p.Z, h.Z)
   }
@@ -111,8 +111,8 @@ class Z extends(l = s.ZP.Store) {
     return P
   }
 }
-m(Z, "displayName", "ChannelSettingsPermissionsStore");
-let x = new Z(u.Z, {
+m(x, "displayName", "ChannelSettingsPermissionsStore");
+let Z = new x(u.Z, {
   CHANNEL_SETTINGS_SET_SECTION: function(e) {
     let {
       section: t

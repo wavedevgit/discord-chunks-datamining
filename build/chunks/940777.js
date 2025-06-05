@@ -112,8 +112,8 @@ function D() {
         activity: g
       })
     }(G),
-    Y = F > 0 ? (0, y.N)(F) : null,
-    K = (0, f.Q3)("FavoritesButton"),
+    K = F > 0 ? (0, y.N)(F) : null,
+    Y = (0, f.Q3)("FavoritesButton"),
     q = i.useCallback(() => {
       L()
     }, [L]);
@@ -127,9 +127,9 @@ function D() {
       onShow: q,
       children: (0, r.jsx)(I.S, {
         children: (0, r.jsx)(c.aRk, {
-          selected: K || H || M,
+          selected: Y || H || M,
           upperBadge: W,
-          lowerBadge: Y,
+          lowerBadge: K,
           children: (0, r.jsx)(c.LYs, (e = A({}, l), t = t = {
             ariaLabel: Z.intl.formatToPlainString(Z.t["/uzRsr"], {
               guildName: Z.intl.string(Z.t.wMWycn),
