@@ -6,13 +6,13 @@ var n = o(255367);
 o(73800);
 var i = o(990547),
   a = o(957115),
-  l = o(332664),
-  c = o(445102),
+  c = o(332664),
+  l = o(445102),
   r = o(981631),
   _ = o(531578),
   s = o(388032);
-let u = [_.aZ.BAD, _.aZ.GOOD],
-  d = {
+let d = [_.aZ.BAD, _.aZ.GOOD],
+  u = {
     [_.aZ.BAD]: s.intl.string(s.t.zGnUBQ),
     [_.aZ.GOOD]: s.intl.string(s.t.SqprKS)
   },
@@ -61,7 +61,7 @@ function p(e) {
     transitionState: o,
     analyticsData: p
   } = e;
-  return (0, n.jsx)(l.Z, {
+  return (0, n.jsx)(c.Z, {
     modalType: "voice_filter",
     header: s.intl.string(s.t.zZAORE),
     impression: {
@@ -71,8 +71,8 @@ function p(e) {
         media_session_id: p.media_session_id
       }
     },
-    ratingOptions: u,
-    ratingTextLabels: d,
+    ratingOptions: d,
+    ratingTextLabels: u,
     problemTitle: s.intl.string(s.t.FJmoxM),
     problems: m,
     freeformNeededProblems: b,
@@ -81,13 +81,13 @@ function p(e) {
       let {
         rating: n,
         problem: i,
-        dontShowAgain: l,
+        dontShowAgain: c,
         feedback: s
       } = e;
-      l && (0, a.Uv)({
+      c && (0, a.Uv)({
         feedbackType: _.nw.VOICE_FILTER,
         location: "VoiceFilterFeedbackModal"
-      }), null != n && (0, c.Z)(r.rMx.VOICE_FILTER_FEEDBACK, {
+      }), null != n && (0, l.Z)(r.rMx.VOICE_FILTER_FEEDBACK, {
         rating: n,
         reasonCode: null != (t = null == i ? void 0 : i.code) ? t : null,
         reasonDescription: null != (o = null == i ? void 0 : i.value) ? o : null,
