@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(111248),
   _ = n(312703),
   y = n(796638),
-  x = n(981631),
-  C = n(354459),
+  C = n(981631),
+  x = n(354459),
   v = n(363987),
   j = n(999976);
 
@@ -69,31 +69,31 @@ function S(e) {
       popoutWindow: A,
       inCall: w,
       channel: R,
-      selectedParticipant: k,
-      showParticipants: M = !0,
+      selectedParticipant: M,
+      showParticipants: k = !0,
       className: L,
       width: D,
       height: U,
       layout: B,
-      idle: G
+      idle: F
     } = e,
-    F = null != A,
+    G = null != A,
     H = h.Z.getVideoComponent(),
     V = p.default.getId(),
     [z, W] = i.useState(null),
     Y = (0, c.Z)(z),
     [q, K] = i.useState(!0),
     [X, Q] = i.useState(!1),
-    J = k.type === C.fO.ACTIVITY,
-    $ = (0, u.Z)(J ? k.applicationId : void 0),
-    ee = !J && null != k.streamId,
+    J = M.type === x.fO.ACTIVITY,
+    $ = (0, u.Z)(J ? M.applicationId : void 0),
+    ee = !J && null != M.streamId,
     et = U <= 2 * P + 144,
-    en = M && !et,
+    en = k && !et,
     er = (0, c.Z)(en),
-    ei = B === x.AEg.MINIMUM || B === x.AEg.NORMAL,
+    ei = B === C.AEg.MINIMUM || B === C.AEg.NORMAL,
     el = !et && (!ei || J),
     ea = (0, m.Z)(el, 100),
-    eo = (null != (t = (0, c.Z)(k.id)) ? t : k.id) !== k.id,
+    eo = (null != (t = (0, c.Z)(M.id)) ? t : M.id) !== M.id,
     es = 0;
   (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * P + 8);
   let ec = i.useMemo(() => J && $ ? D / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : I, [ee, z, J, D, U, es, $]),
@@ -118,9 +118,9 @@ function S(e) {
         clamp: !0
       }),
       onStart: () => Q(!0),
-      onChange: () => f.S.dispatch(x.CkL.REMEASURE_TARGET),
+      onChange: () => f.S.dispatch(C.CkL.REMEASURE_TARGET),
       onRest: () => {
-        Q(!1), f.S.dispatch(x.CkL.REMEASURE_TARGET)
+        Q(!1), f.S.dispatch(C.CkL.REMEASURE_TARGET)
       }
     }, em),
     eb = (0, s.q_F)({
@@ -141,7 +141,7 @@ function S(e) {
         clamp: !0
       })
     }, em),
-    ex = (0, s.Yzy)(k, {
+    eC = (0, s.Yzy)(M, {
       keys: e => null == e ? void 0 : e.id,
       config: E(O({}, o.config.stiff), {
         clamp: !0
@@ -157,10 +157,10 @@ function S(e) {
         opacity: 0
       }
     }, em),
-    eC = i.useCallback(e => {
+    ex = i.useCallback(e => {
       W(e), K(!1)
     }, []),
-    ev = en ? [] : (0, _.n3)(N, k, V),
+    ev = en ? [] : (0, _.n3)(N, M, V),
     {
       visibleParticipants: ej,
       participantTileWidth: eO
@@ -187,7 +187,7 @@ function S(e) {
             style: {
               aspectRatio: ec
             },
-            children: ex((e, t, n) => {
+            children: eC((e, t, n) => {
               let {
                 key: i
               } = n;
@@ -205,23 +205,23 @@ function S(e) {
                   onClick: l,
                   onDoubleClick: Z,
                   onContextMenu: S,
-                  onVideoResize: eC,
+                  onVideoResize: ex,
                   inCall: w,
-                  inPopout: F
+                  inPopout: G
                 })
               }, i) : null
             })
           })
         }), el ? (0, r.jsx)(o.animated.div, {
           className: a()(j.actionRow, {
-            [j.idle]: G
+            [j.idle]: F
           }),
           style: {
             bottom: ey.value
           },
           children: (0, r.jsx)(d.Z, {
             channelId: R.id,
-            isParticipantsOpen: M,
+            isParticipantsOpen: k,
             isVertical: !0
           })
         }) : null]
@@ -239,10 +239,10 @@ function S(e) {
           onDoubleClick: Z,
           participants: ej,
           participantTileWidth: eO,
-          selectedParticipantId: k.id,
+          selectedParticipantId: M.id,
           inCall: w,
           popoutWindow: A,
-          paused: X || !M
+          paused: X || !k
         })
       })]
     }), ev.length > 0 ? (0, r.jsx)(b.Z, {

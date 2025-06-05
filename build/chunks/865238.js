@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(131951),
   _ = n(594174),
   y = n(63063),
-  x = n(5192),
-  C = n(823961),
+  C = n(5192),
+  x = n(823961),
   v = n(981631),
   j = n(37113),
   O = n(388032),
@@ -53,13 +53,13 @@ function Z(e) {
     buyer: l,
     onClose: o,
     dismissibleContent: Z
-  } = e, N = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([_.default], () => _.default.getCurrentUser()), A = null != N.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([C.Z], () => C.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [k, M] = (0, i.useState)(!1);
+  } = e, N = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([_.default], () => _.default.getCurrentUser()), A = null != N.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([x.Z], () => x.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [M, k] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
-    M(!0)
+    k(!0)
   }, []);
   let L = (0, i.useContext)(m.h9),
     D = (0, d.q_F)({
-      from: k ? {
+      from: M ? {
         opacity: 0,
         transform: "translateX(-50%) translateY(30px) scale(0.9)"
       } : {},
@@ -70,7 +70,7 @@ function Z(e) {
       config: {
         duration: 250,
         easing: S,
-        immediate: !k
+        immediate: !M
       }
     }),
     {
@@ -81,22 +81,22 @@ function Z(e) {
       size: d.EFr.SIZE_48,
       animateOnHover: !0
     }),
-    G = x.ZP.getName(t.guild_id, t.id, l),
-    F = A && !R,
+    F = C.ZP.getName(t.guild_id, t.id, l),
+    G = A && !R,
     H = t.hdStreamingUntil;
   if (null == H || null == l || null == T) return null;
   let V = s()(H).diff(s()(), "hours"),
     z = Z ? O.intl.format(O.t["6LrV9f"], {
-      username: G,
+      username: F,
       num: V,
       helpCenterLink: y.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
     }) : l.id === T.id ? O.intl.string(O.t.IjKvNT) : !0 === A ? O.intl.format(O.t.JkWoqK, {
-      username: G,
+      username: F,
       helpCenterLink: y.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
     }) : O.intl.formatToPlainString(O.t.vNbVXF, {
-      username: G
+      username: F
     }),
-    W = R ? O.intl.string(O.t.o7NIjY) : F ? O.intl.string(O.t.r6xhBw) : O.intl.string(O.t.yKw8Dg);
+    W = R ? O.intl.string(O.t.o7NIjY) : G ? O.intl.string(O.t.r6xhBw) : O.intl.string(O.t.yKw8Dg);
   return null == l || null == T ? null : (0, r.jsxs)(c.animated.div, {
     style: D,
     className: E.banner,
@@ -118,13 +118,13 @@ function Z(e) {
       children: [(0, r.jsx)(d.zxk, {
         onClick: () => {
           if (R) {
-            let e = C.Z.getPreviousGoLiveSettings(),
+            let e = x.Z.getPreviousGoLiveSettings(),
               t = b.Z.getGoLiveSource();
             if (null == e) return void o();
             let n = (0, h.s_)(e.resolution, e.frameRate, t);
             return p.Z.setGoLiveSource(n), void o()
           }
-          if (F) return void o();
+          if (G) return void o();
           (0, d.ZDy)(async () => {
             let {
               default: e
@@ -138,7 +138,7 @@ function Z(e) {
           [E.actionButton]: !0 !== A
         }),
         children: W
-      }), !F && (0, r.jsx)(d.P3F, {
+      }), !G && (0, r.jsx)(d.P3F, {
         className: E.x,
         onClick: o,
         children: (0, r.jsx)(d.Dio, {

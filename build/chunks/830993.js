@@ -1,4 +1,4 @@
-/** Chunk was on 2771 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => I
 }), n(388685), n(539854);
@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(876548),
   j = n(543432),
   S = n(981631),
-  E = n(388032),
-  x = n(642317),
+  x = n(388032),
+  E = n(642317),
   P = n(656855);
 
 function I(e) {
@@ -69,13 +69,13 @@ function I(e) {
       }), Object.values(e)
     }, [P], s.pF);
   return N.length + j.length === 0 ? null : (0, r.jsxs)(a.Ttm, {
-    className: x.container,
+    className: E.container,
     children: [(0, r.jsx)(w, {
       channel: o,
       isChannelSelected: b,
       voiceStatesCount: null != (l = null == g ? void 0 : g.length) ? l : 0
     }), (0, r.jsx)("div", {
-      className: x.headerDivider
+      className: E.headerDivider
     }), j.map((e, t) => {
       var n;
       return (0, r.jsx)(v.Z, {
@@ -97,13 +97,13 @@ function I(e) {
       }, t)
     }), O && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: x.headerDivider
+        className: E.headerDivider
       }), (0, r.jsx)("div", {
-        className: x.settingNudgeText,
+        className: E.settingNudgeText,
         children: (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           tag: "span",
-          children: E.intl.format(E.t.ePyoY2, {
+          children: x.intl.format(x.t.ePyoY2, {
             onClick: () => {
               (0, a.ZDy)(async () => {
                 let {
@@ -162,7 +162,7 @@ function w(e) {
     selected: n
   }), u = (0, s.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
   return null == (0, p.KS)(t, u) ? null : (0, r.jsxs)("div", {
-    className: o()(x.popoutHeaderContainer, P.popoutHeaderContainer),
+    className: o()(E.popoutHeaderContainer, P.popoutHeaderContainer),
     children: [(0, r.jsx)(_.Z, {
       channel: t
     }), c ? (0, r.jsx)(C.Z, {

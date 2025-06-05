@@ -1,4 +1,4 @@
-/** Chunk was on 2771 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => k
 }), n(388685);
@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(771845),
   j = n(727258),
   S = n(276952),
-  E = n(249792),
-  x = n(40153),
+  x = n(249792),
+  E = n(40153),
   P = n(593618),
   I = n(252686),
   w = n(682662),
@@ -154,10 +154,10 @@ let k = i.memo(function(e) {
       let e = (0, y.V)(F.id);
       null != e && p.Z.preload(F.id, e)
     }, [H, F, q, et]),
-    eE = (0, u.e7)([_.ZP], () => _.ZP.isCurrentUserGuest(eo)),
-    ex = i.useCallback(e => {
-      null == F || eE || J(e, F)
-    }, [F, J, eE]),
+    ex = (0, u.e7)([_.ZP], () => _.ZP.isCurrentUserGuest(eo)),
+    eE = i.useCallback(e => {
+      null == F || ex || J(e, F)
+    }, [F, J, ex]),
     eP = i.useCallback(e => {
       if ("ArrowLeft" === e.key && null != es) {
         var t;
@@ -173,7 +173,7 @@ let k = i.memo(function(e) {
     }, [eo, G]),
     eN = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == F) return null;
-  let eZ = ev || ey ? (0, r.jsx)(E.Z, {
+  let eZ = ev || ey ? (0, r.jsx)(x.Z, {
       guild: F,
       show: ev,
       active: W,
@@ -197,7 +197,7 @@ let k = i.memo(function(e) {
         ee || em(!1)
       },
       onMouseDown: eS,
-      onContextMenu: ex,
+      onContextMenu: eE,
       onKeyDown: eP,
       icon: F.getIconURL(2 * eN, eb && z, ea),
       selected: W || eb
@@ -206,7 +206,7 @@ let k = i.memo(function(e) {
       "aria-posinset": el,
       "aria-selected": W
     })),
-    eT = eh ? (0, r.jsx)(x.OG, {
+    eT = eh ? (0, r.jsx)(E.OG, {
       children: (0, r.jsx)(I.Z, {})
     }) : (0, r.jsx)(a.animated.div, {
       ref: $ ? e => {
@@ -242,7 +242,7 @@ let k = i.memo(function(e) {
       disabled: ee,
       isDragging: eh,
       children: eT
-    }), $ ? (0, r.jsx)(x.ZP, {
+    }), $ ? (0, r.jsx)(E.ZP, {
       name: F.name,
       targetNode: U,
       onDragOverChanged: eI

@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(100527),
   _ = n(906732),
   y = n(82295),
-  x = n(91218),
-  C = n(623624),
+  C = n(91218),
+  x = n(623624),
   v = n(518738),
   j = n(850020),
   O = n(965376),
@@ -34,14 +34,14 @@ var r = n(255367),
   A = n(111583),
   w = n(594174),
   R = n(499033),
-  k = n(626135),
-  M = n(585483),
+  M = n(626135),
+  k = n(585483),
   L = n(700785),
   D = n(51144),
   U = n(998502),
   B = n(276264),
-  G = n(981631),
-  F = n(388032),
+  F = n(981631),
+  G = n(388032),
   H = n(688826),
   V = n(11847);
 
@@ -74,7 +74,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
     } = e, s = i.useRef(null), u = (0, p.e7)([A.Z], () => A.Z.isTyping(t.id, a)), h = (0, p.e7)([S.ZP], () => S.ZP.getMember(t.guild_id, a)), g = (0, p.e7)([Z.Z], () => {
       var e;
       return (null == h ? void 0 : h.colorRoleId) != null ? null == (e = Z.Z.getRole(t.guild_id, h.colorRoleId)) ? void 0 : e.name : void 0
-    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), y = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), x = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getStatus() : N.Z.getStatus(a, t.guild_id)), v = (0, p.e7)([N.Z], () => N.Z.isMobileOnline(a)), O = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getActivities() : N.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(a)), k = (0, c.JA)(a), L = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? void 0 : b.id) != null && b.id === o, H = i.useCallback(e => {
+    }, [t.guild_id, h]), b = (0, p.e7)([w.default], () => w.default.getUser(a)), _ = (0, p.e7)([w.default], () => w.default.getCurrentUser()), y = (null == b ? void 0 : b.id) === (null == _ ? void 0 : _.id), C = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getStatus() : N.Z.getStatus(a, t.guild_id)), v = (0, p.e7)([N.Z], () => N.Z.isMobileOnline(a)), O = (0, p.e7)([N.Z, T.Z], () => y ? T.Z.getActivities() : N.Z.getActivities(a, t.guild_id)), R = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(a)), M = (0, c.JA)(a), L = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, a)), U = (null == b ? void 0 : b.id) != null && b.id === o, H = i.useCallback(e => {
       null != b && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -103,18 +103,18 @@ let W = U.ZP.getEnableHardwareAcceleration(),
           decoration: "never"
         })),
         n = "<@".concat(b.id, ">");
-      M.S.dispatch(G.CkL.TEXTAREA_FOCUS, {
+      k.S.dispatch(F.CkL.TEXTAREA_FOCUS, {
         channelId: t.id
-      }), M.S.dispatchToLastSubscribed(G.CkL.INSERT_TEXT, {
+      }), k.S.dispatchToLastSubscribed(F.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: n
       }), m.Z.startTyping(t.id)
     }, [b, t]), Y = i.useCallback(e => {
-      e.stopPropagation(), (0, C.f)({
+      e.stopPropagation(), (0, x.f)({
         guildId: t.guild_id,
         location: {
-          section: G.jXE.THREAD_MEMBER_LIST,
-          object: G.qAy.BOOST_GEM_ICON
+          section: F.jXE.THREAD_MEMBER_LIST,
+          object: F.qAy.BOOST_GEM_ICON
         }
       })
     }, [t.guild_id]), q = (0, j.K)({
@@ -159,7 +159,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
           user: b,
           currentUser: _,
           nick: null == h ? void 0 : h.nick,
-          status: x,
+          status: C,
           activities: O,
           colorString: null == h ? void 0 : h.colorString,
           colorStrings: null == h ? void 0 : h.colorStrings,
@@ -172,8 +172,8 @@ let W = U.ZP.getEnableHardwareAcceleration(),
           applicationStream: R,
           premiumSince: null == Q ? null : new Date(Q),
           onClickPremiumGuildIcon: Y,
-          itemProps: k,
-          lostPermissionTooltipText: L ? void 0 : F.intl.string(F.t["/QcoT0"]),
+          itemProps: M,
+          lostPermissionTooltipText: L ? void 0 : G.intl.string(G.t["/QcoT0"]),
           isOwner: U,
           nameplate: q,
           onClick: e => {
@@ -197,18 +197,18 @@ let W = U.ZP.getEnableHardwareAcceleration(),
       guildId: l,
       size: 16
     });
-    return t === G.Skl.UNKNOWN ? (0, r.jsx)("div", {
+    return t === F.Skl.UNKNOWN ? (0, r.jsx)("div", {
       className: V.membersGroup,
       children: (0, r.jsx)("div", {
         className: V.memberGroupsPlaceholder
       })
     }) : (0, r.jsxs)(y.Z, {
       className: V.membersGroup,
-      "aria-label": F.intl.formatToPlainString(F.t.UaqbkZ, {
+      "aria-label": G.intl.formatToPlainString(G.t.UaqbkZ, {
         title: n,
         count: i
       }),
-      children: [null != a ? (0, r.jsx)(x.Z, z({
+      children: [null != a ? (0, r.jsx)(C.Z, z({
         className: V.roleIcon
       }, a)) : null, (0, r.jsxs)("span", {
         "aria-hidden": !0,
@@ -220,7 +220,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
     let {
       channel: t
     } = e;
-    return t.type === G.d4z.PRIVATE_THREAD ? (0, r.jsxs)(r.Fragment, {
+    return t.type === F.d4z.PRIVATE_THREAD ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: H.divider
       }), (0, r.jsxs)(h.Text, {
@@ -230,12 +230,12 @@ let W = U.ZP.getEnableHardwareAcceleration(),
         children: [(0, r.jsx)(h.mBM, {
           size: "xxs",
           color: "currentColor"
-        }), "\xa0", F.intl.string(F.t.BTLTAg)]
+        }), "\xa0", G.intl.string(G.t.BTLTAg)]
       }), (0, r.jsx)(h.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: H.instructions,
-        children: F.intl.string(F.t.Hsd8hI)
+        children: G.intl.string(G.t.Hsd8hI)
       })]
     }) : null
   });
@@ -298,17 +298,17 @@ function Q(e) {
       }),
       listRef: r
     }
-  }(l, Y), x = 0 === d.length || d.every(e => 0 === e.userIds.length);
+  }(l, Y), C = 0 === d.length || d.every(e => 0 === e.userIds.length);
   if (i.useEffect(() => {
-      k.default.track(G.rMx.MEMBER_LIST_VIEWED, {
+      M.default.track(F.rMx.MEMBER_LIST_VIEWED, {
         channel_id: t.id,
         channel_type: t.type,
         guild_id: t.guild_id
       })
-    }, [t.guild_id, t.id, t.type]), x) return (0, r.jsx)(J, {
+    }, [t.guild_id, t.id, t.type]), C) return (0, r.jsx)(J, {
     channel: t
   });
-  let C = s().omit(m.containerProps, ["ref"]),
+  let x = s().omit(m.containerProps, ["ref"]),
     v = L.iJ(n);
   return (0, r.jsx)(_.Gt, {
     value: o,
@@ -349,15 +349,15 @@ function Q(e) {
                 guildOwnerId: v
               }, l[i])
             },
-            footerHeight: e => 80 * (d[e] === f && t.type === G.d4z.PRIVATE_THREAD),
+            footerHeight: e => 80 * (d[e] === f && t.type === F.d4z.PRIVATE_THREAD),
             renderFooter: e => d[e.section] === f ? (0, r.jsx)(X, {
               channel: t
             }, "footer") : null,
-            innerAriaLabel: F.intl.string(F.t["9Oq93t"]),
+            innerAriaLabel: G.intl.string(G.t["9Oq93t"]),
             innerTag: "ul",
             sections: d.map(e => e.userIds.length),
             fade: !0
-          }, C, e), l)
+          }, x, e), l)
         })
       })
     })
@@ -374,7 +374,7 @@ function J(e) {
       className: H.emptyStateHeader,
       variant: "text-xs/bold",
       color: "interactive-normal",
-      children: F.intl.string(F.t["9Oq93t"])
+      children: G.intl.string(G.t["9Oq93t"])
     }), (0, r.jsxs)("div", {
       className: H.emptyStateIconContainer,
       children: [(0, r.jsx)("div", {
@@ -388,12 +388,12 @@ function J(e) {
       })]
     }), (0, r.jsx)(h.X6q, {
       variant: "heading-md/semibold",
-      children: t.isForumPost() ? F.intl.string(F.t.p0UgNT) : F.intl.string(F.t["9/n5v7"])
+      children: t.isForumPost() ? G.intl.string(G.t.p0UgNT) : G.intl.string(G.t["9/n5v7"])
     }), (0, r.jsx)(h.Text, {
       className: H.emptyStateSubtext,
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: F.intl.string(F.t.emw8UF)
+      children: G.intl.string(G.t.emw8UF)
     })]
   })
 }

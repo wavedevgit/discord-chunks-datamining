@@ -1,4 +1,4 @@
-/** Chunk was on 2771 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   EM: () => y,
   WW: () => O,
@@ -75,19 +75,19 @@ let v = i.memo(function(e) {
     null != O && r.includes(O) && (t = (0, c.KY)(b)), (0, c.Uo)(n.id, r, t)
   }, [n.id, O, b, y]), j = (0, s.Q3)("ChannelListSection"), {
     density: S
-  } = (0, l.TCT)(), E = j && "compact" === S ? 8 : p.$k;
+  } = (0, l.TCT)(), x = j && "compact" === S ? 8 : p.$k;
   switch (t) {
     case d.wZ:
       return (0, r.jsx)("div", {
         style: {
-          height: E
+          height: x
         }
       });
     case d.wd:
       if (n.hasFeature(f.oNc.HUB)) return null;
       return (0, r.jsx)("div", {
         style: {
-          height: E
+          height: x
         }
       });
     case d.p2:
@@ -100,10 +100,10 @@ let v = i.memo(function(e) {
         onDismiss: C
       });
     case b.voiceChannelsSectionNumber: {
-      var x;
+      var E;
       let e = b.getCategoryFromSection(b.voiceChannelsSectionNumber);
       if (null == e || e.isEmpty()) return null;
-      let n = null == (x = b.getChannelFromSectionRow(t, 0)) ? void 0 : x.channel;
+      let n = null == (E = b.getChannelFromSectionRow(t, 0)) ? void 0 : E.channel;
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("div", {
           className: m.sectionDivider

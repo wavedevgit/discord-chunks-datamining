@@ -39,9 +39,9 @@ function s(e) {
   let {
     Component: _,
     events: y,
-    play: x
+    play: C
   } = (0, l.P)(c ? "disable" : "enable");
-  return i.useEffect(() => () => x(), [c, x]), (0, r.jsx)(b, function(e) {
+  return i.useEffect(() => () => C(), [c, C]), (0, r.jsx)(b, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

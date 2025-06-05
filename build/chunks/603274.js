@@ -1,4 +1,4 @@
-/** Chunk was on 2771 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => N
 }), n(388685), n(361932), n(187205), n(539854);
@@ -25,14 +25,14 @@ var i = n(120356),
   C = n(853856),
   j = n(981631),
   S = n(388032),
-  E = n(714509),
-  x = n(375613);
+  x = n(714509),
+  E = n(375613);
 
 function P(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: E.row,
+    className: x.row,
     children: [(0, r.jsx)(e, {
-      className: E.activityIcon,
+      className: x.activityIcon,
       color: "currentColor"
     }), (0, r.jsx)(h.Z, {
       guildId: void 0,
@@ -65,7 +65,7 @@ function I() {
       return e
     }),
     S = (0, a.Wu)([m.Z], () => m.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
-    x = (0, a.Wu)([d.ZP], () => {
+    E = (0, a.Wu)([d.ZP], () => {
       let e = d.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
       for (let l of t) {
@@ -74,33 +74,33 @@ function I() {
       }
       return n
     }, [t]),
-    I = (0, a.Wu)([y.default], () => x.map(e => y.default.getUser(e)), [x]),
+    I = (0, a.Wu)([y.default], () => E.map(e => y.default.getUser(e)), [E]),
     w = (0, a.Wu)([y.default], () => S.map(e => y.default.getUser(e)), [S]),
-    N = P(c.gj8, l.filter(e => !S.includes(e.id) && !x.includes(e.id))),
+    N = P(c.gj8, l.filter(e => !S.includes(e.id) && !E.includes(e.id))),
     Z = 0 === o.length ? null : (0, r.jsxs)("div", {
-      className: E.row,
+      className: x.row,
       children: [(0, r.jsx)(c.ewx, {
         size: "lg",
         color: "currentColor",
-        className: E.activityIcon
+        className: x.activityIcon
       }), (0, r.jsx)(h.Z, {
         guildId: void 0,
         users: o,
         max: 3
       }), (0, r.jsxs)("div", {
-        className: E.stageListenerPill,
+        className: x.stageListenerPill,
         children: [(0, r.jsx)(c.VWR, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)(c.Text, {
-          className: E.stageListenerCount,
+          className: x.stageListenerCount,
           color: "text-normal",
           variant: "text-xs/medium",
           children: p
         })]
       })]
     }),
-    T = P(c.hGI, w.filter(e => null != e && !x.includes(e.id))),
+    T = P(c.hGI, w.filter(e => null != e && !E.includes(e.id))),
     {
       enabled: A
     } = u.c.useExperiment({
@@ -117,9 +117,9 @@ function I() {
 function w() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: l()(E.row, E.rowGuildName),
+      className: l()(x.row, x.rowGuildName),
       children: (0, r.jsx)("span", {
-        className: l()(E.guildNameText, E.guildNameTextLimitedSize),
+        className: l()(x.guildNameText, x.guildNameTextLimitedSize),
         children: S.intl.string(S.t.wMWycn)
       })
     }), (0, r.jsx)(I, {})]
@@ -138,7 +138,7 @@ function N(e) {
     position: "right",
     text: (0, r.jsx)(w, {}),
     "aria-label": t,
-    tooltipClassName: x.listItemTooltip,
+    tooltipClassName: E.listItemTooltip,
     onTooltipShow: n,
     children: e => {
       var t, n;

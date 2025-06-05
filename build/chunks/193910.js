@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(488131),
   _ = n(375954),
   y = n(626135),
-  x = n(585483),
-  C = n(403182),
+  C = n(585483),
+  x = n(403182),
   v = n(127654),
   j = n(752305),
   O = n(951211),
@@ -64,9 +64,9 @@ function A(e) {
     draftType: A,
     editorTextContent: w,
     setValue: R,
-    openClips: k
+    openClips: M
   } = e, {
-    analyticsLocations: M
+    analyticsLocations: k
   } = (0, p.ZP)(), L = (0, g.Dt)({
     channel: t
   });
@@ -80,10 +80,10 @@ function A(e) {
   }
 
   function B() {
-    k()
+    M()
   }
 
-  function G() {
+  function F() {
     (0, h.EW)(o.z.POLLS_CHAT_INPUT_COACHMARK, {
       dismissAction: I.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
@@ -127,7 +127,7 @@ function A(e) {
     })
   }
 
-  function F() {
+  function G() {
     y.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
@@ -135,7 +135,7 @@ function A(e) {
     }), (0, d.Z)({
       channel: t,
       openInPopout: !1,
-      analyticsLocations: M
+      analyticsLocations: k
     }), (0, u.w1)({
       guildId: t.guild_id
     })
@@ -146,9 +146,9 @@ function A(e) {
       n = "txt",
       r = "",
       i = w.match(N);
-    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, v.d)([(0, C.dp)(new Blob([e], {
+    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, v.d)([(0, x.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, A), x.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && x.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, A), C.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && C.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: r
     })
   }
@@ -204,7 +204,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "poll",
             label: i,
-            action: G
+            action: F
           }, "poll");
         case O.r.INVITE_TO_PLAY_GAME:
           return (0, r.jsx)(s.sNh, {
@@ -216,7 +216,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.JOIN,
                 activity: n,
-                location: M[M.length - 1]
+                location: k[k.length - 1]
               })
             }
           }, "play");
@@ -230,7 +230,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.LISTEN,
                 activity: n,
-                location: M[M.length - 1]
+                location: k[k.length - 1]
               })
             }
           }, "listen");
@@ -244,7 +244,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.WATCH,
                 activity: n,
-                location: M[M.length - 1]
+                location: k[k.length - 1]
               })
             }
           }, "watch");
@@ -264,7 +264,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
-            action: F,
+            action: G,
             hint: (0, r.jsx)(T, {})
           }, "activity");
         case O.r.SCHEDULED_MESSAGE:

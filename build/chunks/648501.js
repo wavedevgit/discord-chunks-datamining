@@ -1,4 +1,4 @@
-/** Chunk was on 2771 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => P
 });
@@ -25,8 +25,8 @@ var i = n(442837),
   C = n(25601),
   j = n(981631),
   S = n(490897),
-  E = n(388032),
-  x = n(990252);
+  x = n(388032),
+  E = n(990252);
 
 function P(e) {
   var t;
@@ -59,14 +59,14 @@ function P(e) {
     locked: A
   });
   if (R) return (0, r.jsx)(o.IGR, {
-    text: E.intl.string(E.t.y2b7CA),
+    text: x.intl.string(x.t.y2b7CA),
     color: l.Z.unsafe_rawColors.BRAND_260.css,
-    className: x.newChannel
+    className: E.newChannel
   });
   if (!D && L === S.i.ALL_MESSAGES && n.isForumLikeChannel() && null != F && F > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
-    children: E.intl.format(E.t.GkAbqa, {
+    children: x.intl.format(x.t.GkAbqa, {
       count: (0, o.NGo)(F)
     })
   });
@@ -81,7 +81,7 @@ function P(e) {
     video: B || V,
     channel: n
   }) : I && (0, m.a)(w) && W ? (0, r.jsx)(o.IGR, {
-    text: E.intl.string(E.t.dI3q4u),
+    text: x.intl.string(x.t.dI3q4u),
     color: l.Z.unsafe_rawColors.RED_400.css
   }) : null != Z && Z && (0, b.u)(U) ? (0, r.jsx)(v.Z, {
     embeddedApps: U,

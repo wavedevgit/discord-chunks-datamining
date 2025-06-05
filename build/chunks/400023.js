@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(580747),
   _ = n(135938),
   y = n(160404),
-  x = n(765104),
-  C = n(695346),
+  C = n(765104),
+  x = n(695346),
   v = n(314897),
   j = n(323873),
   O = n(607744),
@@ -34,14 +34,14 @@ var r = n(255367),
   A = n(47481),
   w = n(977391),
   R = n(959258),
-  k = n(73274),
-  M = n(419388),
+  M = n(73274),
+  k = n(419388),
   L = n(406534),
   D = n(981631),
   U = n(388032),
   B = n(977659);
 
-function G(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function G(e) {
   return e
 }
 
-function F(e, t) {
+function G(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -99,8 +99,8 @@ let V = i.memo(function(e) {
       unreadCount: g,
       showNewMessagesBar: b,
       messageDisplayCompact: _,
-      channelStream: x,
-      uploads: C,
+      channelStream: C,
+      uploads: x,
       hasUnreads: v,
       editingMessageId: j,
       fontSize: O,
@@ -123,7 +123,7 @@ let V = i.memo(function(e) {
       attachments: 8,
       fontSize: O,
       groupSpacing: l
-    }), [_, O, l]), z = (0, M.ZP)({
+    }), [_, O, l]), z = (0, k.ZP)({
       messages: m,
       channel: f,
       compact: _,
@@ -133,7 +133,7 @@ let V = i.memo(function(e) {
       canLoadMore: null == P,
       handleScrollToBottom: i.useCallback(() => R(!0), [R]),
       handleScrollFromBottom: i.useCallback(() => R(!1), [R])
-    }), W = (0, k.Z)({
+    }), W = (0, M.Z)({
       scrollerRef: z.ref,
       isEditing: null != j,
       keyboardModeEnabled: E,
@@ -150,8 +150,8 @@ let V = i.memo(function(e) {
       unreadCount: g,
       showNewMessagesBar: b,
       messageDisplayCompact: _,
-      channelStream: x,
-      uploads: C,
+      channelStream: C,
+      uploads: x,
       loadMore: z.loadMore,
       scrollManager: z,
       specs: V,
@@ -211,7 +211,7 @@ let V = i.memo(function(e) {
       navigator: W,
       children: [null != J && J, (0, r.jsxs)("div", {
         className: a()(B.messagesWrapper, n, "group-spacing-".concat(l)),
-        children: [null == J && K, (0, r.jsxs)(c.eTT, F(G({
+        children: [null == J && K, (0, r.jsxs)(c.eTT, G(F({
           ref: er,
           customTheme: !0,
           className: a()(d, B.scroller),
@@ -223,7 +223,7 @@ let V = i.memo(function(e) {
         }, $), {
           tabIndex: -1,
           role: "group",
-          children: [Q, (0, r.jsxs)("ol", F(G({
+          children: [Q, (0, r.jsxs)("ol", G(F({
             className: a()(B.scrollerInner, {
               [B.scrollerAllowSticky]: f.isModeratorReportChannel()
             }),
@@ -278,12 +278,12 @@ let V = i.memo(function(e) {
     }(t), {
       messageGroupSpacing: N,
       fontSize: w,
-      messageDisplayCompact: k,
-      renderSpoilers: M,
+      messageDisplayCompact: M,
+      renderSpoilers: k,
       keyboardModeEnabled: L
     } = function() {
-      let e = C.jU.useSetting(),
-        t = C.cC.useSetting(),
+      let e = x.jU.useSetting(),
+        t = x.cC.useSetting(),
         {
           messageGroupSpacing: n,
           fontSize: r,
@@ -329,11 +329,11 @@ let V = i.memo(function(e) {
         o = null != (n = null == (t = Z.default.getUser(v.default.getId())) ? void 0 : t.hasFlag(D.xW$.SPAMMER)) && n,
         c = (0, d.ts)(e),
         u = (0, b.Z)("use_topic_dividers_in_chat"),
-        p = (0, s.Wu)([x.Z], () => {
+        p = (0, s.Wu)([C.Z], () => {
           var t;
-          return c && u && null != (t = x.Z.summaries(e.id)) ? t : []
+          return c && u && null != (t = C.Z.summaries(e.id)) ? t : []
         }, [c, e.id, u]),
-        h = (0, s.e7)([x.Z], () => c ? x.Z.selectedSummary(e.id) : null, [c, e.id]),
+        h = (0, s.e7)([C.Z], () => c ? C.Z.selectedSummary(e.id) : null, [c, e.id]),
         g = function(e) {
           let t = i.useMemo(() => {
             let t = new Set;
@@ -363,13 +363,13 @@ let V = i.memo(function(e) {
       }
     }(t);
     return (0, r.jsx)(g.aQ.Provider, {
-      value: (0, T.Z)(M, u),
+      value: (0, T.Z)(k, u),
       children: (0, r.jsx)(R.v, {
-        children: (0, r.jsx)(V, F(G({}, c), {
+        children: (0, r.jsx)(V, G(F({}, c), {
           messageGroupSpacing: N,
           showNewMessagesBar: !0,
           channel: t,
-          messageDisplayCompact: !o && (a || k),
+          messageDisplayCompact: !o && (a || M),
           messages: U,
           channelStream: B,
           permissionVersion: p,

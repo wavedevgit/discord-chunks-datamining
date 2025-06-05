@@ -1,4 +1,4 @@
-/** Chunk was on 2771 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   KE: () => b,
   KT: () => m,
@@ -75,7 +75,7 @@ function y(e, t) {
   } = (0, s.ZP)(), [O, v] = i.useState(!1), [_, C] = i.useState(void 0), j = (0, l.e7)([h.Z], () => {
     var t, n;
     return null != (n = null == (t = h.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts) ? n : 0
-  }), S = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), E = Math.max((null != (m = null == S ? void 0 : S.premiumSubscriberCount) ? m : 0) - j, 0), x = i.useCallback(n => {
+  }), S = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), x = Math.max((null != (m = null == S ? void 0 : S.premiumSubscriberCount) ? m : 0) - j, 0), E = i.useCallback(n => {
     let r = n ? d.H6 : d.Th;
     return v(!0), C(void 0), r(e, t.skuId).catch(e => {
       var t;
@@ -84,16 +84,16 @@ function y(e, t) {
       v(!1)
     })
   }, [e, t.skuId]), P = i.useCallback(e => {
-    if (e.stopPropagation(), null != S) return E < t.cost ? void(0, a.u)({
+    if (e.stopPropagation(), null != S) return x < t.cost ? void(0, a.u)({
       analyticsLocation: {
         page: f.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: f.jXE.GUILD_POWERUPS_OVERVIEW_CARD
       },
-      numberOfBoostsToAdd: t.cost - E,
+      numberOfBoostsToAdd: t.cost - x,
       analyticsLocations: y,
       guild: S,
       intent: t.type === p.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
-      onSubscribeComplete: () => x(!0).then(() => {
+      onSubscribeComplete: () => E(!0).then(() => {
         (0, o.ZDy)(async () => {
           let {
             default: e
@@ -104,7 +104,7 @@ function y(e, t) {
           }, n))
         })
       })
-    }) : x(!0).then(() => {
+    }) : E(!0).then(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
@@ -115,7 +115,7 @@ function y(e, t) {
         }, n))
       })
     })
-  }, [x, t, E, y, S]), I = i.useCallback(e => (e.stopPropagation(), x(!1)), [x]);
+  }, [E, t, x, y, S]), I = i.useCallback(e => (e.stopPropagation(), E(!1)), [E]);
   return {
     isLoading: O,
     error: _,

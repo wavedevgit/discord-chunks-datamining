@@ -1,4 +1,4 @@
-/** Chunk was on 2771 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => ei
 }), n(388685), n(415506);
@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(305325),
   j = n(281956),
   S = n(66999),
-  E = n(554747),
-  x = n(378844),
+  x = n(554747),
+  E = n(378844),
   P = n(340541),
   I = n(335353),
   w = n(896835),
@@ -214,9 +214,9 @@ class en extends H.ZP {
       embeddedApps: C,
       isSubscriptionGated: j,
       isFavoriteSuggestion: S,
-      withGuildIcon: E
+      withGuildIcon: x
     } = this.props, {
-      shouldShowActivities: x,
+      shouldShowActivities: E,
       shouldShowGuildVerificationPopout: w
     } = this.state, N = (0, P.jW)({
       location: "voice_channel"
@@ -235,7 +235,7 @@ class en extends H.ZP {
           renderPopout: this.renderPopout,
           spacing: 0,
           onRequestClose: this.closeGuildVerificationPopout,
-          shouldShow: x && !u && !d && !w || w,
+          shouldShow: E && !u && !d && !w || w,
           children: () => (0, r.jsx)(c.ua7, {
             text: this.getTooltipText(),
             children: c => {
@@ -294,7 +294,7 @@ class en extends H.ZP {
                     channel: e,
                     embeddedApps: C
                   }),
-                  withGuildIcon: E
+                  withGuildIcon: x
                 }, h), {
                   children: [S && (0, r.jsxs)(r.Fragment, {
                     children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
@@ -406,8 +406,8 @@ class en extends H.ZP {
           shouldShowSettingNudge: n
         })
       }
-      if (a) return (0, r.jsx)(x.Z, {
-        type: x.R.VOICE,
+      if (a) return (0, r.jsx)(E.Z, {
+        type: E.R.VOICE,
         guildId: e.guild_id,
         closePopout: this.closeGuildVerificationPopout
       });
@@ -478,10 +478,10 @@ function ei(e) {
       bypassLimit: M.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, y.ZP)(n), b = (0, E.qY)(n.id), {
+  }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, y.ZP)(n), b = (0, x.qY)(n.id), {
     isSubscriptionGated: O,
     needSubscriptionToAccess: v
-  } = (0, S.Z)(n.id), C = (0, _.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), x = e.connected || (null == C ? void 0 : C.channelId) === n.id, P = (0, F.Z)({
+  } = (0, S.Z)(n.id), C = (0, _.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), E = e.connected || (null == C ? void 0 : C.channelId) === n.id, P = (0, F.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: a,
@@ -490,7 +490,7 @@ function ei(e) {
     needSubscriptionToAccess: v,
     enableConnectedUserLimit: !0,
     enableActivities: !0
-  }), I = x && null == P;
+  }), I = E && null == P;
   return (0, r.jsx)(er, et(ee({
     channelName: m,
     embeddedApps: g,
@@ -500,7 +500,7 @@ function ei(e) {
     isSubscriptionGated: O,
     needSubscriptionToAccess: v
   }, u, h, e), {
-    connected: x,
+    connected: E,
     isFavoriteSuggestion: l && !j,
     forceShowButtons: I,
     channelInfo: P,

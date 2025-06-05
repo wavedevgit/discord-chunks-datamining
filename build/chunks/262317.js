@@ -1,8 +1,8 @@
 /** Chunk was on 62423 **/
 n.d(t, {
   XX: () => R,
-  ZP: () => M,
-  ul: () => k
+  ZP: () => k,
+  ul: () => M
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -21,8 +21,8 @@ var r = n(255367),
   b = n(569545),
   _ = n(102172),
   y = n(525925),
-  x = n(701362),
-  C = n(670188),
+  C = n(701362),
+  x = n(670188),
   v = n(597998),
   j = n(314897),
   O = n(430824),
@@ -80,7 +80,7 @@ function R(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     numAudience: t,
     collapsed: n
@@ -105,20 +105,20 @@ function k(e) {
     })]
   })
 }
-let M = (0, p.$)(function(e) {
+let k = (0, p.$)(function(e) {
   var t;
   let {
     collapsed: l,
     user: p,
     channel: R,
-    mute: k,
-    localMute: M,
+    mute: M,
+    localMute: k,
     localVideoDisabled: L,
     deaf: D,
     video: U,
     embeddedApplication: B,
-    serverMute: G,
-    serverDeaf: F,
+    serverMute: F,
+    serverDeaf: G,
     nick: H,
     ringing: V,
     speaking: z,
@@ -169,7 +169,7 @@ let M = (0, p.$)(function(e) {
         })
       }))
     })
-  }, e_ = () => (0, r.jsx)(x.Z, {
+  }, e_ = () => (0, r.jsx)(C.Z, {
     user: p,
     channel: R,
     onWatch: eg,
@@ -181,8 +181,8 @@ let M = (0, p.$)(function(e) {
         user: p,
         speaking: z,
         disconnected: W,
-        mute: k,
-        localMute: M,
+        mute: M,
+        localMute: k,
         localVideoDisabled: L,
         isStreaming: K,
         isGuest: Q,
@@ -193,8 +193,8 @@ let M = (0, p.$)(function(e) {
         nick: H,
         collapsed: l,
         overlap: l,
-        serverMute: G,
-        serverDeaf: F,
+        serverMute: F,
+        serverDeaf: G,
         tabIndex: ea,
         otherClientSessionType: er,
         voicePlatform: ei,
@@ -254,14 +254,14 @@ let M = (0, p.$)(function(e) {
         onKeyDown: e.onKeyDown
       }))
     })
-  }, ex = (0, r.jsx)("div", {
+  }, eC = (0, r.jsx)("div", {
     className: T.draggable,
     "data-dnd-name": R.name,
     onMouseEnter: el ? void 0 : () => {
       K && !ed && (null == $ || $(p.id))
     },
     onMouseLeave: el ? void 0 : ef,
-    children: (0, r.jsx)(C.Z, {
+    children: (0, r.jsx)(x.Z, {
       clickTrap: (null == p ? void 0 : p.id) === (null == (t = I.default.getCurrentUser()) ? void 0 : t.id) && ed,
       targetElementRef: eu,
       user: p,
@@ -273,5 +273,5 @@ let M = (0, p.$)(function(e) {
       children: e => ey(e)
     })
   });
-  return q ? Y(ex) : ex
+  return q ? Y(eC) : eC
 })

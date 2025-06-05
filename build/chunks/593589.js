@@ -1,52 +1,52 @@
-/** Chunk was on 68546 **/
-t.d(n, {
-  Z: () => b
+/** Chunk was on 44011 **/
+t.d(e, {
+  Z: () => p
 });
-var i = t(255367),
-  o = t(73800),
+var l = t(255367),
+  i = t(73800),
   r = t(481060),
-  a = t(372900),
+  o = t(372900),
   c = t(238246),
-  l = t(788983),
-  d = t(207035),
-  _ = t(823748),
+  a = t(788983),
+  s = t(207035),
+  d = t(823748),
   u = t(981631),
-  s = t(683146);
+  h = t(683146);
 
-function p(e) {
+function Z(n) {
   let {
-    windowKey: n,
+    windowKey: e,
     channel: t
-  } = e;
-  return (0, i.jsx)(c.Z, {
+  } = n;
+  return (0, l.jsx)(c.Z, {
     withTitleBar: !0,
-    windowKey: n,
+    windowKey: e,
     title: t.name,
     channelId: t.id,
-    contentClassName: s.popoutContent,
-    children: (0, i.jsx)(a.Z.Provider, {
+    contentClassName: h.popoutContent,
+    children: (0, l.jsx)(o.Z.Provider, {
       value: t.guild_id,
-      children: (0, i.jsx)(_.Z, {
+      children: (0, l.jsx)(d.Z, {
         providedChannel: t
       })
     })
   })
 }
 
-function b(e, n) {
-  let t = (0, d.P)(n),
-    a = o.useCallback(() => {
-      l.bA("".concat(u.KJ3.CHANNEL_POPOUT, "-").concat(e.id), n => (0, i.jsx)(p, {
-        windowKey: n,
-        channel: e
+function p(n, e) {
+  let t = (0, s.P)(e),
+    o = i.useCallback(() => {
+      a.bA("".concat(u.KJ3.CHANNEL_POPOUT, "-").concat(n.id), e => (0, l.jsx)(Z, {
+        windowKey: e,
+        channel: n
       }), {
         defaultWidth: 854,
         defaultHeight: 480
       })
-    }, [e]);
-  return t ? (0, i.jsx)(r.sNh, {
+    }, [n]);
+  return t ? (0, l.jsx)(r.sNh, {
     id: "channel-pop-out",
     label: "Open in Popout",
-    action: () => a()
+    action: () => o()
   }) : null
 }

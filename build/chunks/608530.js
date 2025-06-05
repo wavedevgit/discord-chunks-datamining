@@ -1,10 +1,8 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  L: () => a
+  L: () => i
 });
-var r = n(818083),
-  i = n(740492);
-let l = (0, r.B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2025-05_upload_refactor",
   label: "Aligns attachment and non-attachment message sending",
@@ -29,12 +27,8 @@ let l = (0, r.B)({
   }]
 });
 
-function a(e) {
-  let {
-    enabled: t,
-    showSetting: n
-  } = l.getCurrentConfig({
+function i(e) {
+  return r.getCurrentConfig({
     location: e
-  });
-  return (!n || !!i.ZP.uploadRefactorEnabled) && t
+  }).enabled
 }

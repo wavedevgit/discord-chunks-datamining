@@ -1,4 +1,4 @@
-/** Chunk was on 2771 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => R
 });
@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(25601),
   j = n(207055),
   S = n(981631),
-  E = n(124368),
-  x = n(388032),
+  x = n(124368),
+  E = n(388032),
   P = n(915887),
   I = n(768107),
   w = n(995453);
@@ -163,7 +163,7 @@ let R = i.memo(function(e) {
     mentionCount: b.ZP.getMentionCount(t.id),
     isMentionLowImportance: b.ZP.getIsMentionLowImportance(t.id)
   })), B = (0, a.e7)([f.Z], () => f.Z.isMuted(t.id)), V = i.useCallback(e => {
-    (0, g.ok)(t, !e.shiftKey, E.on.CHANNEL_LIST)
+    (0, g.ok)(t, !e.shiftKey, x.on.CHANNEL_LIST)
   }, [t]), H = i.useCallback(() => {
     u.Z.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), F = i.useCallback(e => {
@@ -192,12 +192,12 @@ let R = i.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(W, ["role"]), q = i.useRef(null), Q = U > 0 ? x.intl.formatToPlainString(x.t["ZL7+Iy"], {
+  }(W, ["role"]), q = i.useRef(null), Q = U > 0 ? E.intl.formatToPlainString(E.t["ZL7+Iy"], {
     channelName: t.name,
     mentionCount: U
-  }) : k ? x.intl.formatToPlainString(x.t.YlVvmZ, {
+  }) : k ? E.intl.formatToPlainString(E.t.YlVvmZ, {
     channelName: t.name
-  }) : x.intl.formatToPlainString(x.t["0nZpiI"], {
+  }) : E.intl.formatToPlainString(E.t["0nZpiI"], {
     channelName: t.name
   }), X = (0, p.Q3)("GuildSidebarThreadListEntry") ? T : A;
   return (0, r.jsxs)("li", {

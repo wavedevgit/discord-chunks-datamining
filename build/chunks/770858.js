@@ -1,4 +1,4 @@
-/** Chunk was on 2771 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => v
 }), n(388685);
@@ -26,7 +26,7 @@ function O(e) {
     selectedOverride: O = !1,
     popoutProps: v,
     ref: _
-  } = e, C = (0, l.Ie)("notifications-inbox"), [j, S] = i.useState(!1), E = (0, f.D)(), x = O || E, P = (0, o.e7)([d.default], () => d.default.getTotalMentionCount(!0)), I = P > 0 ? (0, u.N)(P) : null, {
+  } = e, C = (0, l.Ie)("notifications-inbox"), [j, S] = i.useState(!1), x = (0, f.D)(), E = O || x, P = (0, o.e7)([d.default], () => d.default.getTotalMentionCount(!0)), I = P > 0 ? (0, u.N)(P) : null, {
     notificationCenterVariant: w
   } = p.L.useExperiment({
     location: "NotificationsInboxButtonInner"
@@ -36,13 +36,13 @@ function O(e) {
   return (0, r.jsxs)(c.H, {
     ref: _,
     children: ["sidebar" === w && (0, r.jsx)(a.Z, {
-      selected: x,
+      selected: E,
       hovered: j,
       unread: P > 0,
       className: y.pill
     }), (0, r.jsx)(m.Z, {
       children: (0, r.jsx)(s.aRk, {
-        selected: x || j,
+        selected: E || j,
         lowerBadge: I,
         children: (0, r.jsx)(s.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -64,7 +64,7 @@ function O(e) {
         }({}, C, v), n = n = {
           onClick: g,
           to: Z,
-          selected: x || j,
+          selected: E || j,
           onMouseEnter: () => S(!0),
           onMouseLeave: () => S(!1),
           children: (0, r.jsx)(s.Dkj, {

@@ -1,4 +1,4 @@
-/** Chunk was on 2771 **/
+/** Chunk was on 61717 **/
 n.d(t, {
   Z: () => Z
 }), n(388685), n(361932), n(187205), n(415506);
@@ -24,8 +24,8 @@ var r = n(255367),
   C = n(739340),
   j = n(207913),
   S = n(553984),
-  E = n(333834),
-  x = n(982183),
+  x = n(333834),
+  E = n(982183),
   P = n(981631),
   I = n(388032),
   w = n(21678);
@@ -38,7 +38,7 @@ let N = {
   bannerVisible: !1,
   communityInfoVisible: !1,
   shouldShowSubscribeTooltip: !1,
-  bannerVisibleHeight: x.$J,
+  bannerVisibleHeight: E.$J,
   hasGuildSubheader: !1,
   disableBannerAnimation: !0
 };
@@ -60,7 +60,7 @@ function Z(e) {
     guildFilter: g.Z.guildFilter,
     roleFilter: g.Z.roleFilter,
     everyoneFilter: g.Z.everyoneFilter
-  })), [_, j] = i.useState(x.V5.ALL), [I, Z] = i.useState(x.xM.UNREAD), {
+  })), [_, j] = i.useState(E.V5.ALL), [I, Z] = i.useState(E.xM.UNREAD), {
     messages: k,
     loadState: U,
     loadMore: G,
@@ -74,21 +74,21 @@ function Z(e) {
     F = i.useMemo(() => {
       var e;
       if (!B) return null;
-      if (_ === x.V5.BOOKMARKS) return H.flatMap(e => {
+      if (_ === E.V5.BOOKMARKS) return H.flatMap(e => {
         let {
           message: t
         } = e;
         return null != t ? [{
-          kind: x.fL.BOOKMARK,
+          kind: E.fL.BOOKMARK,
           message: t
         }] : []
       });
       let t = (0, s.uniqBy)([...null != (e = null == a ? void 0 : a.map(e => ({
-        kind: x.fL.MENTION,
+        kind: E.fL.MENTION,
         message: e
       }))) ? e : [], ...k.filter(e => e.author.id !== (null == V ? void 0 : V.id)).map(e => ({
         message: e,
-        kind: x.fL.ALL_MESSAGES_CHANNEL
+        kind: E.fL.ALL_MESSAGES_CHANNEL
       }))], e => {
         let {
           message: t
@@ -98,16 +98,16 @@ function Z(e) {
         let {
           message: t
         } = e;
-        return t.author.id !== (null == V ? void 0 : V.id) && O.default.age(t.id) < x.ib
+        return t.author.id !== (null == V ? void 0 : V.id) && O.default.age(t.id) < E.ib
       });
-      if (_ === x.V5.ALL) return t;
-      if (_ === x.V5.ANNOUNCEMENTS) return null == t ? void 0 : t.filter(e => {
+      if (_ === E.V5.ALL) return t;
+      if (_ === E.V5.ANNOUNCEMENTS) return null == t ? void 0 : t.filter(e => {
         let {
           message: t
         } = e, n = b.Z.getChannel(t.channel_id);
         return (null == n ? void 0 : n.type) === P.d4z.GUILD_ANNOUNCEMENT
       });
-      if (_ === x.V5.MENTIONS) return null == t ? void 0 : t.filter(e => {
+      if (_ === E.V5.MENTIONS) return null == t ? void 0 : t.filter(e => {
         let {
           message: t
         } = e;
@@ -115,13 +115,13 @@ function Z(e) {
       });
       throw Error("Unknown filter: ".concat(_))
     }, [_, a, V, H, k, B]),
-    z = I === x.xM.READ && _ === x.V5.ALL && !h && B,
+    z = I === E.xM.READ && _ === E.V5.ALL && !h && B,
     {
       notificationCenterVariant: W
     } = v.L.useExperiment({
       location: "NotificationsInboxSidebar"
     }),
-    K = "sidebar" === W && _ !== x.V5.ALL;
+    K = "sidebar" === W && _ !== E.V5.ALL;
   return (0, r.jsxs)("nav", {
     className: o()(w.container, {
       [w.panelSpacing]: l
@@ -145,7 +145,7 @@ function Z(e) {
       return e
     }({
       hasSubheader: !0,
-      guild: x.F7
+      guild: E.F7
     }, N), n = n = {
       children: (0, r.jsxs)(u.Kqy, {
         direction: "horizontal",
@@ -170,7 +170,7 @@ function Z(e) {
       setSelectedFilter: j
     }), z && (0, r.jsx)(D, {}), K && (0, r.jsx)(L, {
       filter: _
-    }), (0, r.jsx)(E.Z, {
+    }), (0, r.jsx)(x.Z, {
       className: w.messageList,
       renderMessageGroup: R,
       messages: F,
@@ -183,7 +183,7 @@ function Z(e) {
       },
       renderEmptyState: A,
       setInboxReadState: Z,
-      ignoreGrouping: _ !== x.V5.ALL
+      ignoreGrouping: _ !== E.V5.ALL
     })]
   })
 }
@@ -267,7 +267,7 @@ function L(e) {
     color: "text-primary",
     variant: "text-sm/semibold",
     className: w.filterHeaderWrap,
-    children: x.by[t]
+    children: E.by[t]
   }, "filter-header")
 }
 

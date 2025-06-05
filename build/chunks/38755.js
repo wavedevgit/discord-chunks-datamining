@@ -1,20 +1,20 @@
-/** Chunk was on 47218 **/
+/** Chunk was on 61717 **/
 n.d(t, {
-  Z: () => r
+  Z: () => l
 }), n(388685);
-var l = n(73800),
+var r = n(73800),
   i = n(763520);
 
-function r(e) {
+function l(e) {
   let {
     location: t,
     videoSpinnerContext: n,
-    userId: r,
-    streamId: a,
-    loading: o,
-    paused: s = !1
-  } = e, [c] = l.useState(() => new i.o(t));
-  l.useEffect(() => {
-    s || (o ? c.onSpinnerStarted() : null != a && c.trackSpinnerDuration(n, r, a))
-  }, [o, s, a, c, n, r])
+    userId: l,
+    streamId: o,
+    loading: s,
+    paused: a = !1
+  } = e, [c] = r.useState(() => new i.o(t));
+  r.useEffect(() => {
+    a || (s ? c.onSpinnerStarted() : null != o && c.trackSpinnerDuration(n, l, o))
+  }, [s, a, o, c, n, l])
 }

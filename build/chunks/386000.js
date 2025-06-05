@@ -24,8 +24,8 @@ function m(e) {
     awaitingRemote: b,
     onMouseEnter: _,
     onMouseLeave: y,
-    onClick: x
-  } = e, C = function(e, t) {
+    onClick: C
+  } = e, x = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -80,7 +80,7 @@ function m(e) {
       null == y || y(e), T.onMouseLeave()
     },
     onClick: e => {
-      null == x || x(e), (0, d.v)(v, d.d.MIC, t)
+      null == C || C(e), (0, d.v)(v, d.d.MIC, t)
     }
-  }, C))
+  }, x))
 }

@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(906732),
   _ = n(522651),
   y = n(243778),
-  x = n(579185),
-  C = n(301076),
+  C = n(579185),
+  x = n(301076),
   v = n(127379),
   j = n(981631),
   O = n(921944),
@@ -36,21 +36,21 @@ function I(e) {
     isHovered: A,
     setIsHovered: w,
     onMouseEnter: R,
-    onMouseLeave: k
-  } = (0, x.Z)(200, 300), M = (0, d.a)({
+    onMouseLeave: M
+  } = (0, C.Z)(200, 300), k = (0, d.a)({
     surface: s.eR.VOICE_LAUNCHER
   }), L = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), D = !T, U = i.useCallback(e => {
     "focus" !== e.type && R()
   }, [R]), B = (0, c.bp)() === j.IlC.POPOUT, {
-    analyticsLocations: G,
-    parentAnalyticsLocation: F
+    analyticsLocations: F,
+    parentAnalyticsLocation: G
   } = (0, b.ZP)(), H = i.useCallback(() => {
-    (0, _.v)(F, _.d.ACTIVITY), (0, g.Z)({
+    (0, _.v)(G, _.d.ACTIVITY), (0, g.Z)({
       channel: t,
       openInPopout: B,
-      analyticsLocations: G
+      analyticsLocations: F
     })
-  }, [G, t, B, F]), V = [];
+  }, [F, t, B, G]), V = [];
   T || V.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !T && V.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), T || V.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = i.useRef(!1),
     W = i.useRef(null);
@@ -85,7 +85,7 @@ function I(e) {
             channel: t,
             closePopout: n,
             onMouseEnter: R,
-            onMouseLeave: k,
+            onMouseLeave: M,
             isHovered: A,
             onClick: () => l(O.L.UNKNOWN)
           }) : (0, r.jsx)(r.Fragment, {})
@@ -118,7 +118,7 @@ function I(e) {
               }({
                 ref: W
               }, e), n = n = {
-                children: (0, r.jsx)(C.Z, {
+                children: (0, r.jsx)(x.Z, {
                   disabled: T,
                   "aria-label": N,
                   label: D ? void 0 : N,
@@ -127,7 +127,7 @@ function I(e) {
                     H(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(O.L.TAKE_ACTION)
                   },
                   onMouseEnter: U,
-                  onMouseLeave: k
+                  onMouseLeave: M
                 })
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
@@ -140,7 +140,7 @@ function I(e) {
                 Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
               }), t))
             }
-          }), M ? (0, r.jsx)(m.r, {
+          }), k ? (0, r.jsx)(m.r, {
             top: 2,
             right: 2,
             size: 6
