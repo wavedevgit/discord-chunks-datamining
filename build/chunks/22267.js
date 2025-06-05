@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => I
 });
 var r = n(255367),
   i = n(73800),
@@ -12,72 +12,77 @@ var r = n(255367),
   c = n(481060),
   u = n(570908),
   d = n(204418),
-  f = n(359135),
-  _ = n(516817),
-  p = n(210887),
-  h = n(158776),
-  m = n(5192),
-  g = n(579407),
-  E = n(388032),
-  b = n(538566),
-  y = n(326578),
-  O = n(85662);
-let v = e => {
+  f = n(172751),
+  _ = n(359135),
+  p = n(516817),
+  h = n(210887),
+  m = n(158776),
+  g = n(5192),
+  E = n(579407),
+  b = n(388032),
+  y = n(538566),
+  O = n(326578),
+  v = n(85662);
+let I = e => {
   let {
     user: t,
     nameplate: n,
     nameplateData: a,
-    className: v,
-    innerClassName: I,
-    isHighlighted: S,
-    showStatus: T,
-    showPlaceholderUser: A,
-    nameplatePreviewSize: N = "normal",
-    isPurchased: C = !1
-  } = e, P = (0, s.e7)([p.Z], () => (0, l.wj)(p.Z.theme)), R = null != n ? (0, g.EU)(n) : a, w = (0, s.e7)([h.Z], () => null != t ? h.Z.getStatus(t.id) : c.Skl.ONLINE), D = P ? "#706F74" : "#aaaab2", L = i.useRef(null), x = "large" === N, k = x ? c.EFr.SIZE_48 : c.EFr.SIZE_32;
+    className: I,
+    innerClassName: S,
+    isHighlighted: T,
+    showStatus: A,
+    showPlaceholderUser: N,
+    nameplatePreviewSize: C = "normal",
+    isPurchased: P = !1
+  } = e, R = (0, s.e7)([h.Z], () => (0, l.wj)(h.Z.theme)), w = null != n ? (0, E.EU)(n) : a, D = (0, s.e7)([m.Z], () => null != t ? m.Z.getStatus(t.id) : c.Skl.ONLINE), L = R ? "#706F74" : "#aaaab2", x = i.useRef(null), k = "large" === C, M = k ? c.EFr.SIZE_48 : c.EFr.SIZE_32;
   return (0, r.jsxs)("div", {
-    className: o()(v, b.nameplatePreview, {
-      [b.nameplatePurchased]: C && !S,
-      [b.large]: x
+    className: o()(I, y.nameplatePreview, {
+      [y.nameplatePurchased]: P && !T,
+      [y.large]: k
     }),
     style: {
-      color: P ? "white" : "black"
+      color: R ? "white" : "black"
     },
-    children: [null != R && (0, r.jsx)(_.Z, {
-      nameplate: R,
-      hovered: S,
-      placement: f.i.PREVIEW,
-      content: A ? void 0 : L
+    children: [null != w && (0, r.jsx)(p.Z, {
+      nameplate: w,
+      hovered: T,
+      placement: _.i.PREVIEW,
+      content: N ? void 0 : x
     }, null == n ? void 0 : n.id), (0, r.jsxs)("div", {
-      className: b.overlayContainer,
+      className: y.overlayContainer,
       children: [null != t ? (0, r.jsx)("div", {
-        className: o()(b.avatarContainer, !A && b.avatarVisible),
+        className: o()(y.avatarContainer, !N && y.avatarVisible),
         children: (0, r.jsx)(u.Z, {
-          ref: L,
+          ref: x,
           avatar: (0, r.jsx)(d.Z, {
             user: t,
             guildId: null,
-            avatarSize: k,
-            status: T ? w : void 0,
+            avatarSize: M,
+            status: A ? D : void 0,
             "aria-hidden": !0
           }),
-          name: m.ZP.getName(null, null, t),
-          innerClassName: o()(I, b.avatarWithText)
+          decorators: (0, r.jsx)(f.ZP, {
+            userId: t.id,
+            className: y.tagChiplet
+          }),
+          name: g.ZP.getName(null, null, t),
+          innerClassName: o()(S, y.avatarWithText)
         })
       }) : null, (0, r.jsx)("div", {
-        className: o()(b.avatarContainer, A && b.avatarVisible),
+        className: o()(y.avatarContainer, N && y.avatarVisible),
         children: (0, r.jsx)(u.Z, {
           avatar: (0, r.jsx)(c.qEK, {
-            src: P ? y : O,
-            size: k,
-            "aria-label": E.intl.string(E.t.cqpybG),
+            src: R ? O : v,
+            size: M,
+            "aria-label": b.intl.string(b.t.cqpybG),
             status: c.Skl.ONLINE,
-            statusColor: D
+            statusColor: L
           }),
-          innerClassName: o()(I, b.avatarWithText),
+          innerClassName: o()(S, y.avatarWithText),
           name: (0, r.jsx)("div", {
-            className: o()(b.placeholderUsername, b.placeholderUsernameColor, {
-              [b.large]: x
+            className: o()(y.placeholderUsername, y.placeholderUsernameColor, {
+              [y.large]: k
             })
           })
         })

@@ -14,7 +14,7 @@ function s(e) {
     onAction: n
   } = e, [s, l] = (0, r.useState)(!1), c = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t)), u = (0, r.useCallback)(e => {
     e && (n({
-      action: "VIEW"
+      action: "VIEW_ACTIVITY_CARD"
     }), l(!0))
   }, [n]);
   return (0, a.O)(u, void 0, !c && !s)

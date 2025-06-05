@@ -9,5 +9,6 @@ e.exports = {
   avatarWithText: "avatarWithText_fdeafc",
   nameplatePurchased: "nameplatePurchased_fdeafc",
   placeholderUsername: "placeholderUsername_fdeafc",
-  placeholderUsernameColor: "placeholderUsernameColor_fdeafc"
+  placeholderUsernameColor: "placeholderUsernameColor_fdeafc",
+  tagChiplet: "tagChiplet_fdeafc"
 }
