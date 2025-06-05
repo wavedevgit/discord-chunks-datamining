@@ -1,6 +1,6 @@
 /** Chunk was on 37048 **/
 t.d(n, {
-  Z: () => u
+  Z: () => c
 });
 var l = t(73800),
   r = t(442837),
@@ -9,7 +9,7 @@ var l = t(73800),
   s = t(621853);
 let a = [];
 
-function u(e) {
+function c(e) {
   let n = (0, o.Xj)({
       forUserProfile: !0
     }),

@@ -8,8 +8,8 @@ var l = t(255367),
   o = t(5192),
   s = t(785717),
   a = t(977378),
-  u = t(892001),
-  c = t(687158),
+  c = t(892001),
+  u = t(687158),
   d = t(388032);
 
 function f(e) {
@@ -50,28 +50,28 @@ function g(e) {
     guildId: t,
     channelId: g,
     displayProfile: v,
-    onClose: m
+    onClose: j
   } = e, {
     analyticsLocations: h,
-    sourceAnalyticsLocations: j
+    sourceAnalyticsLocations: m
   } = (0, i.ZP)(), {
     context: b,
     trackUserProfileAction: x
-  } = (0, s.KZ)(), O = (0, c.ZP)(n.id, t), {
-    viewMainProfileEnabled: Z
+  } = (0, s.KZ)(), O = (0, u.ZP)(n.id, t), {
+    viewMainProfileEnabled: y
   } = (0, a.E)({
     location: "useViewUserProfileModalItem"
   });
-  return Z && (null == O ? void 0 : O.guildId) != null && null != b ? (null == v ? void 0 : v.guildId) != null ? (0, l.jsx)(r.sNh, {
+  return y && (null == O ? void 0 : O.guildId) != null && null != b ? (null == v ? void 0 : v.guildId) != null ? (0, l.jsx)(r.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
       displayName: o.ZP.getName(void 0, void 0, n)
     }),
     action: () => {
-      null == m || m(), (0, u.openUserProfileModal)(p(f({}, b), {
+      null == j || j(), (0, c.openUserProfileModal)(p(f({}, b), {
         showGuildProfile: !1,
-        sourceAnalyticsLocations: j
+        sourceAnalyticsLocations: m
       })), x(f({
         action: "PRESS_VIEW_MAIN_PROFILE",
         analyticsLocations: h
@@ -84,9 +84,9 @@ function g(e) {
       displayName: o.ZP.getName(t, g, n)
     }),
     action: () => {
-      null == m || m(), (0, u.openUserProfileModal)(p(f({}, b), {
+      null == j || j(), (0, c.openUserProfileModal)(p(f({}, b), {
         showGuildProfile: !0,
-        sourceAnalyticsLocations: j
+        sourceAnalyticsLocations: m
       })), x(f({
         action: "PRESS_VIEW_SERVER_PROFILE",
         analyticsLocations: h

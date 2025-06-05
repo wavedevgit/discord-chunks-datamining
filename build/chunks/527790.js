@@ -1,8 +1,8 @@
 /** Chunk was on 62880 **/
-t.d(s, {
+t.d(a, {
   Z: () => d
 });
-var a = t(255367);
+var s = t(255367);
 t(73800);
 var n = t(100527),
   i = t(906732),
@@ -13,7 +13,7 @@ var n = t(100527),
 
 function d(e) {
   let {
-    user: s,
+    user: a,
     entry: t,
     className: d,
     onClose: x,
@@ -22,18 +22,18 @@ function d(e) {
   } = e, {
     analyticsLocations: u
   } = (0, i.ZP)(n.Z.USER_PROFILE_RECENT_ACTIVITY_CARD);
-  return (0, l.Rh)(t) ? (0, a.jsx)(i.Gt, {
+  return (0, l.Rh)(t) ? (0, s.jsx)(i.Gt, {
     value: u,
-    children: (0, a.jsx)(c.Z, {
+    children: (0, s.jsx)(c.Z, {
       entry: t,
-      user: s,
+      user: a,
       className: d,
       onClose: x,
-      header: (0, a.jsx)(r.Z, {
-        contextMenu: m ? null : (0, a.jsx)(o.Z, {
+      header: (0, s.jsx)(r.Z, {
+        contextMenu: m ? null : (0, s.jsx)(o.Z, {
           display: "recent",
           entry: t,
-          user: s,
+          user: a,
           onClose: x,
           appContext: j
         })

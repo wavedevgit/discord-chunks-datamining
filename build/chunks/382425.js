@@ -212,6 +212,7 @@ function Y(e) {
             }),
             onAction: ei,
             onClose: W,
+            "aria-label": eb,
             children: [(0, r.jsx)(L.Z, {
               text: eb,
               tags: (0, r.jsx)(m.ZP, {

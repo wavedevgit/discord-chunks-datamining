@@ -1,6 +1,6 @@
 /**
   Module ID: 11678
-  Original File Name: a35347951ddc6561
+  Original File Name: 6a49e5f68e23feb7
 **/
 .scroller__95bea {
     display: flex;
@@ -156,11 +156,22 @@
 }
 
 .scroller_ac477d {
-    display: flex;
-    flex-direction: column;
     gap: 24px;
     height: 100%;
     padding: 16px
+}
+
+.activityList_ac477d,.scroller_ac477d {
+    display: flex;
+    flex-direction: column
+}
+
+.activityList_ac477d {
+    gap: 8px
+}
+
+.activityList_ac477d:empty {
+    display: none
 }
 
 .tooltipContent_ac477d {
@@ -798,4 +809,4 @@
     gap: 8px
 }
 
-/*# sourceMappingURL=a35347951ddc6561.css.map*/
+/*# sourceMappingURL=6a49e5f68e23feb7.css.map*/

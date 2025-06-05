@@ -20,11 +20,11 @@ var r = n(442837),
   _ = n(848780),
   x = n(907179),
   h = n(228168),
-  g = n(981631),
-  j = n(388032),
-  I = n(247787);
+  j = n(981631),
+  g = n(388032),
+  v = n(247787);
 
-function v(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       o = Object.keys(n);
@@ -54,7 +54,7 @@ function O(e) {
     openedAt: Z,
     onHide: T,
     sourceAnalyticsLocations: C = []
-  } = e, w = n === g.ME ? void 0 : n, S = (0, r.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
+  } = e, w = n === j.ME ? void 0 : n, S = (0, r.e7)([d.Z], () => d.Z.isBlocked(t.id)), {
     analyticsLocations: E
   } = (0, l.ZP)([...C, S ? c.Z.BLOCKED_PROFILE_MODAL : c.Z.IGNORED_PROFILE_MODAL]), B = (0, f.ZB)({
     layout: "MODAL_V2",
@@ -66,53 +66,53 @@ function O(e) {
     roleId: N
   }), D = [{
     icon: i.owK,
-    description: j.intl.string(j.t.kcuWvb)
+    description: g.intl.string(g.t.kcuWvb)
   }, {
     icon: i.owK,
-    description: j.intl.string(S ? j.t.QxrDY2 : j.t.W6fjkZ)
-  }], U = (0, m.ZP)(t.id, w), k = u.ZP.getName(null == U ? void 0 : U.guildId, O, t), L = (0, r.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)) ? j.intl.formatToPlainString(j.t.KRe1Fh, {
-    name: k
-  }) : j.intl.string(j.t["3N/J2t"]);
+    description: g.intl.string(S ? g.t.QxrDY2 : g.t.W6fjkZ)
+  }], L = (0, m.ZP)(t.id, w), U = u.ZP.getName(null == L ? void 0 : L.guildId, O, t), k = (0, r.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)) ? g.intl.formatToPlainString(g.t.KRe1Fh, {
+    name: U
+  }) : g.intl.string(g.t["3N/J2t"]);
   return (0, o.jsx)(l.Gt, {
     value: E,
     children: (0, o.jsx)(f.Mt, {
       value: B,
       openedAt: Z,
-      fetchStartedAt: null == U ? void 0 : U.fetchStartedAt,
-      fetchEndedAt: null == U ? void 0 : U.fetchEndedAt,
-      isLoaded: null == U ? void 0 : U.isLoaded,
+      fetchStartedAt: null == L ? void 0 : L.fetchStartedAt,
+      fetchEndedAt: null == L ? void 0 : L.fetchEndedAt,
+      isLoaded: null == L ? void 0 : L.isLoaded,
       children: (0, o.jsx)(i.Y0X, {
         transitionState: A,
-        className: I.root,
-        "aria-label": L,
+        className: v.root,
+        "aria-label": k,
         parentComponent: "RestrictedUserProfileModalV2",
         children: (0, o.jsxs)(y.Z, {
           user: t,
-          displayProfile: U,
+          displayProfile: L,
           themeType: h.lY.MODAL_V2,
           children: [(0, o.jsx)("div", {
-            className: I.background
+            className: v.background
           }), (0, o.jsxs)("div", {
-            className: I.content,
+            className: v.content,
             children: [(0, o.jsx)(b.Z, {
               user: t,
               guildId: w,
               iconColor: i.TVs.colors.TEXT_NORMAL
             }), (0, o.jsxs)("div", {
-              className: I.textContainer,
+              className: v.textContainer,
               children: [(0, o.jsx)(i.X6q, {
                 variant: "heading-xl/bold",
                 color: "text-normal",
-                children: j.intl.string(j.t.b33pLC)
+                children: g.intl.string(g.t.b33pLC)
               }), (0, o.jsx)(i.Text, {
                 variant: "text-md/medium",
                 color: "text-normal",
-                children: j.intl.format(S ? j.t.T7QiLi : j.t.MnEow8, {
-                  username: k
+                children: g.intl.format(S ? g.t.T7QiLi : g.t.MnEow8, {
+                  username: U
                 })
               })]
             }), (0, o.jsx)("div", {
-              className: I.safetyTable,
+              className: v.safetyTable,
               children: D.map((e, t) => {
                 let {
                   icon: n,
@@ -131,7 +131,7 @@ function O(e) {
                 size: i.PhG.MEDIUM,
                 isBlocked: S,
                 onClick: () => {
-                  T(), (0, p.pQ)(v({
+                  T(), (0, p.pQ)(I({
                     action: S ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: E
                   }, B))
@@ -139,7 +139,7 @@ function O(e) {
               }), (0, o.jsx)(_.Z, {
                 userId: t.id,
                 onClick: () => {
-                  T(), (0, p.pQ)(v({
+                  T(), (0, p.pQ)(I({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: E
                   }, B))

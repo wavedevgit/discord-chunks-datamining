@@ -30,9 +30,9 @@ function I(e) {
     live: x,
     recent: y,
     stream: g,
-    outbox: Z
+    outbox: v
   } = (0, d.Z)(n.id), {
-    voiceChannel: v,
+    voiceChannel: Z,
     voiceActivity: j
   } = (0, s.Z)({
     userId: n.id,
@@ -47,10 +47,10 @@ function I(e) {
     section: _.oh.USER_INFO,
     text: m.intl.string(m.t.jGoPJS)
   }];
-  return !N && (O || b && null == g && null == j && null != v) ? E.push({
+  return !N && (O || b && null == g && null == j && null != Z) ? E.push({
     section: _.oh.ACTIVITY,
     text: m.intl.string(m.t.chq59f)
-  }) : (C || null == Z && h === _.Tb.RECENT_ACTIVITY) && E.push({
+  }) : (C || null == v && h === _.Tb.RECENT_ACTIVITY) && E.push({
     section: _.oh.ACTIVITY,
     text: m.intl.string(m.t.chq59f)
   }), !A && S && (E.push({

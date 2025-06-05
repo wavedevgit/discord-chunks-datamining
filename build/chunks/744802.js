@@ -32,7 +32,7 @@ function a(e) {
     location: n,
     user: t,
     currentUser: a
-  } = e, u = function(e, n) {
+  } = e, c = function(e, n) {
     if (null == e) return {};
     var t, l, r = function(e, n) {
       if (null == e) return {};
@@ -51,7 +51,7 @@ function a(e) {
     location: n
   }) && t.id !== a.id && !t.bot ? (0, l.jsx)(o.Z, s({
     user: t
-  }, u)) : (0, l.jsx)(i.Z, s({
+  }, c)) : (0, l.jsx)(i.Z, s({
     user: t
-  }, u))
+  }, c))
 }

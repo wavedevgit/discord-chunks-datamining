@@ -27,8 +27,8 @@ function g(e) {
   let {
     user: t,
     currentUser: g,
-    guildId: Z,
-    channelId: v,
+    guildId: v,
+    channelId: Z,
     displayProfile: j,
     initialSection: A,
     initialSubsection: N,
@@ -39,10 +39,10 @@ function g(e) {
   } = (0, c.cj)([a.Z], () => ({
     relationshipType: a.Z.getRelationshipType(t.id),
     originApplicationId: a.Z.getOriginApplicationId(t.id)
-  })), T = (0, i.vh)(t.id), w = t.id === g.id, S = (0, d.I5)(g), E = r.ZP.useName(null == j ? void 0 : j.guildId, v, t), M = (0, h.Z)({
+  })), T = (0, i.vh)(t.id), w = t.id === g.id, S = (0, d.I5)(g), E = r.ZP.useName(null == j ? void 0 : j.guildId, Z, t), M = (0, h.Z)({
     user: t,
     currentUser: g,
-    guildId: Z,
+    guildId: v,
     initialSubsection: N
   });
   return (0, o.jsxs)("div", {
@@ -68,7 +68,7 @@ function g(e) {
         user: t,
         applicationId: P,
         guildId: null != (n = null == j ? void 0 : j.guildId) ? n : void 0,
-        channelId: v,
+        channelId: Z,
         className: y.friendRequestBanner
       })
     }), T.map(e => {
@@ -78,7 +78,7 @@ function g(e) {
         children: (0, o.jsx)(f.Z, {
           user: t,
           guildId: null != (n = null == j ? void 0 : j.guildId) ? n : void 0,
-          channelId: v,
+          channelId: Z,
           isGameRelationship: !0,
           applicationId: e.applicationId,
           className: y.friendRequestBanner
@@ -95,8 +95,8 @@ function g(e) {
       user: t,
       currentUser: g,
       displayProfile: j,
-      guildId: Z,
-      channelId: v,
+      guildId: v,
+      channelId: Z,
       items: M,
       initialSection: A,
       initialSubsection: N,

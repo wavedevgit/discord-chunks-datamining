@@ -57,10 +57,10 @@ function p(e) {
   } = e, {
     trackUserProfileAction: h
   } = (0, c.KZ)(), [{
-    section: g,
-    subsection: j,
-    text: I
-  }, v] = r.useState((n = function(e) {
+    section: j,
+    subsection: g,
+    text: v
+  }, I] = r.useState((n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         o = Object.keys(n);
@@ -99,12 +99,12 @@ function p(e) {
     children: [(0, o.jsx)(i.njP, {
       type: "top",
       look: "custom",
-      selectedItem: g,
+      selectedItem: j,
       onItemSelect: e => {
         h({
           action: "PRESS_SECTION",
           section: e
-        }), v(t => {
+        }), I(t => {
           var n;
           return null != (n = b.find(t => t.section === e)) ? n : t
         })
@@ -116,8 +116,8 @@ function p(e) {
         children: e.text
       }, e.section))
     }), (0, o.jsx)(i.njP.Panel, {
-      id: g,
-      "aria-label": I,
+      id: j,
+      "aria-label": v,
       className: u.tabBarPanel,
       children: (0, o.jsx)(f, {
         user: a,
@@ -125,8 +125,8 @@ function p(e) {
         displayProfile: d,
         guildId: p,
         channelId: m,
-        section: g,
-        subsection: j,
+        section: j,
+        subsection: g,
         onClose: x
       })
     })]

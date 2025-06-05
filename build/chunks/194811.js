@@ -16,33 +16,35 @@ var i = n(120356),
 function d(e) {
   let {
     text: t,
-    tags: n,
-    platformIcon: i,
-    contextMenu: d
+    textId: n,
+    tags: i,
+    platformIcon: d,
+    contextMenu: f
   } = e, {
-    themeType: f
+    themeType: _
   } = (0, l.z)();
-  return (null == t || "" === t) && null == d ? null : null == t || "" === t ? (0, r.jsx)("div", {
+  return (null == t || "" === t) && null == f ? null : null == t || "" === t ? (0, r.jsx)("div", {
     className: a()(u.headerContextMenu, u.absolute),
-    children: d
-  }) : (0, r.jsxs)("header", {
+    children: f
+  }) : (0, r.jsxs)("div", {
     className: u.header,
-    children: [(0, r.jsxs)(o.X6q, {
+    children: [(0, r.jsxs)(o.Text, {
       className: u.headerText,
-      variant: f === c.lY.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
+      variant: _ === c.lY.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
       color: "header-primary",
+      id: n,
       children: [(0, r.jsx)(s.Z, {
         children: t
-      }), null != i && (0, r.jsx)("div", {
+      }), null != d && (0, r.jsx)("div", {
         className: u.platformIcon,
         style: {
-          maskImage: "url(".concat(i.whiteSVG, ")"),
-          WebkitMaskImage: "url(".concat(i.whiteSVG, ")")
+          maskImage: "url(".concat(d.whiteSVG, ")"),
+          WebkitMaskImage: "url(".concat(d.whiteSVG, ")")
         }
-      }), n]
-    }), null != d && (0, r.jsx)("div", {
+      }), i]
+    }), null != f && (0, r.jsx)("div", {
       className: u.headerContextMenu,
-      children: d
+      children: f
     })]
   })
 }

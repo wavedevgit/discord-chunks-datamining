@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: cb8fae3c52bb8920
+  Original File Name: 21b21762644d4f8e
 **/
 .scroller__95bea {
     display: flex;
@@ -156,11 +156,22 @@
 }
 
 .scroller_ac477d {
-    display: flex;
-    flex-direction: column;
     gap: 24px;
     height: 100%;
     padding: 16px
+}
+
+.activityList_ac477d,.scroller_ac477d {
+    display: flex;
+    flex-direction: column
+}
+
+.activityList_ac477d {
+    gap: 8px
+}
+
+.activityList_ac477d:empty {
+    display: none
 }
 
 .tooltipContent_ac477d {
@@ -1344,4 +1355,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=cb8fae3c52bb8920.css.map*/
+/*# sourceMappingURL=21b21762644d4f8e.css.map*/
