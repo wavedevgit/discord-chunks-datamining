@@ -1,17 +1,18 @@
-/** Chunk was on 8787 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  C: () => l
+  C: () => o
 });
-var i = n(818083),
-  r = n(987338);
-let s = (0, i.B)({
+var r = n(818083),
+  i = n(987338);
+let a = (0, r.B)({
   kind: "user",
   id: "2025-05_core_product_illustration_migration",
   label: "Core Product Illustration Migration",
   defaultConfig: {
     enabled: !1
   },
-  commonTriggerPoint: r.$P.CONNECTION_OPEN,
+  commonTriggerPoint: i.$P.CONNECTION_OPEN,
   treatments: [{
     id: 0,
     label: "Control",
@@ -27,10 +28,10 @@ let s = (0, i.B)({
   }]
 });
 
-function l(e) {
+function o(e) {
   let {
     enabled: t
-  } = s.useExperiment({
+  } = a.useExperiment({
     location: e
   });
   return t

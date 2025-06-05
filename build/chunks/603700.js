@@ -1,29 +1,29 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 66349 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
-var a = n(255367);
+var r = n(255367);
 n(73800);
-let r = {
+let i = {
     refresh_app: n(286813).Z
   },
-  l = e => {
+  a = e => {
     let {
       task: t,
       onSubmit: n,
-      disabled: l
+      disabled: a
     } = e;
-    return (0, a.jsx)(a.Fragment, {
-      children: t.components.map((e, i) => {
-        let s = r[e.type];
-        return void 0 === s ? null : (0, a.jsx)(s, {
+    return (0, r.jsx)(r.Fragment, {
+      children: t.components.map((e, l) => {
+        let c = i[e.type];
+        return void 0 === c ? null : (0, r.jsx)(c, {
           configData: e.data,
           onSubmit: n,
           taskId: t.task_id,
           flowId: t.flow_id,
           assignmentId: t.assignment_id,
-          disabled: l
-        }, i)
+          disabled: a
+        }, l)
       })
     })
   }

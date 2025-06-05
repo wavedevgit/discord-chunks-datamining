@@ -31,14 +31,14 @@ function x(e) {
   }
   return e
 }
-let h = [{
+let p = [{
     name: "Preview",
     value: "preview"
   }, {
     name: "Validate",
     value: "validate"
   }],
-  p = {
+  h = {
     label: "[none selected]",
     value: null
   },
@@ -74,7 +74,7 @@ let h = [{
         previewProfileEffectId: t,
         setPreviewProfileEffectId: n
       } = (0, o.N9)(),
-      s = r.useMemo(() => [p, ...e.map(e => ({
+      s = r.useMemo(() => [h, ...e.map(e => ({
         label: e.name,
         value: e.id
       }))], [e]);
@@ -104,7 +104,7 @@ let h = [{
       })]
     })
   },
-  _ = () => {
+  j = () => {
     let {
       previewAvatarDecorationId: e,
       setPreviewAvatarDecorationId: t
@@ -129,7 +129,7 @@ let h = [{
       })]
     })
   },
-  j = e => {
+  _ = e => {
     let {
       clearAssets: t,
       clearIgnoredFiles: n
@@ -214,12 +214,12 @@ let h = [{
       validationComplete: n,
       warnings: i,
       errors: s
-    } = (0, u.g)(), o = Object.entries(s), d = Object.entries(i), x = o.length > 0, h = d.length > 0, p = r.useCallback(n => {
+    } = (0, u.g)(), o = Object.entries(s), d = Object.entries(i), x = o.length > 0, p = d.length > 0, h = r.useCallback(n => {
       t(), e(n)
     }, [e, t]);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(c.L, {
-        onDrop: p
+        onDrop: h
       }), n ? (0, a.jsxs)("div", {
         className: m.validationSummary,
         children: [(0, a.jsx)(l.Text, {
@@ -228,7 +228,7 @@ let h = [{
           children: "".concat(o.length, " errors")
         }), (0, a.jsx)(l.Text, {
           variant: "text-md/normal",
-          color: h ? "text-warning" : "text-normal",
+          color: p ? "text-warning" : "text-normal",
           children: "".concat(d.length, " warnings")
         }), (0, a.jsx)(l.zxk, {
           color: l.zxk.Colors.RED,
@@ -270,7 +270,7 @@ let h = [{
             }, "".concat(n, "-").concat(t))
           })
         })]
-      }), h && (0, a.jsxs)(a.Fragment, {
+      }), p && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Warnings"
@@ -311,12 +311,12 @@ let h = [{
       clearAssets: s,
       clearIgnoredFilenames: u,
       processAndUpsertAssets: x
-    } = (0, d.hm)(), h = r.useCallback(e => {
+    } = (0, d.hm)(), p = r.useCallback(e => {
       n(), x(e)
     }, [x, n]);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(c.L, {
-        onDrop: h
+        onDrop: p
       }), (0, a.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Drop files in this panel to begin preview."
@@ -337,7 +337,7 @@ let h = [{
             color: l.TVs.colors.BG_BRAND
           })
         })]
-      }), (0, a.jsx)(g, {}), (0, a.jsx)(_, {}), (0, a.jsx)(j, {
+      }), (0, a.jsx)(g, {}), (0, a.jsx)(j, {}), (0, a.jsx)(_, {
         clearAssets: s,
         clearIgnoredFiles: u
       }), (0, a.jsx)(y, {
@@ -351,7 +351,7 @@ let h = [{
     return (0, a.jsxs)("div", {
       className: m.container,
       children: [(0, a.jsx)(l.sY7, {
-        options: h,
+        options: p,
         value: e,
         onChange: e => {
           let {

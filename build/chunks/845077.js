@@ -1,26 +1,26 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 66349 **/
 n.d(t, {
-  P: () => i,
-  W: () => s
+  P: () => l,
+  W: () => c
 });
-var a = n(990547),
-  r = n(573261),
-  l = n(981631);
-async function i() {
-  return (await r.Z.get({
-    url: l.ANM.SAFETY_FLOWS_TASK,
+var r = n(990547),
+  i = n(573261),
+  a = n(981631);
+async function l() {
+  return (await i.Z.get({
+    url: a.ANM.SAFETY_FLOWS_TASK,
     trackedActionData: {
-      event: a.NetworkActionNames.USER_VERIFY
+      event: r.NetworkActionNames.USER_VERIFY
     },
     rejectWithError: !1
   })).body
 }
-async function s(e) {
-  return (await r.Z.post({
-    url: l.ANM.SAFETY_FLOWS_TASK,
+async function c(e) {
+  return (await i.Z.post({
+    url: a.ANM.SAFETY_FLOWS_TASK,
     body: e,
     trackedActionData: {
-      event: a.NetworkActionNames.USER_VERIFY
+      event: r.NetworkActionNames.USER_VERIFY
     },
     rejectWithError: !0
   })).body

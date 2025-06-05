@@ -13,15 +13,15 @@ var a = n(255367),
   u = n(481060),
   m = n(411149),
   x = n(151480),
-  h = n(461762),
-  p = n(680783),
+  p = n(461762),
+  h = n(680783),
   b = n(605236),
   f = n(675478),
   v = n(944486),
   g = n(388032),
-  _ = n(145634);
+  j = n(145634);
 
-function j(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -55,7 +55,7 @@ function y(e, t) {
 
 function C() {
   return (0, a.jsxs)(u.Ttm, {
-    className: _.container,
+    className: j.container,
     children: [(0, a.jsx)(N, {}), (0, a.jsx)(O, {})]
   })
 }
@@ -63,9 +63,9 @@ function C() {
 function N() {
   var e, t;
   let n = (0, c.e7)([v.Z], () => v.Z.getChannelId()),
-    l = (0, p.Z)(n),
+    l = (0, h.Z)(n),
     s = null == l ? void 0 : l.wallpaperId,
-    d = (0, h.Z)(s),
+    d = (0, p.Z)(s),
     b = r.useCallback(e => {
       null != s && (0, x.i)(s, {
         opacity: e
@@ -95,30 +95,30 @@ function N() {
     A = null != (t = null == d ? void 0 : d.token_mix_amount) ? t : 100;
   return (0, a.jsxs)("div", {
     children: [(0, a.jsx)(o.X6, {
-      className: _.header,
+      className: j.header,
       variant: "heading-lg/semibold",
       children: "DM Wallpapers"
     }), null == d && (0, a.jsx)("p", {
-      className: _.explanation,
+      className: j.explanation,
       children: "Open a DM with a wallpaper to customize."
     }), null != d && (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(o.X6, {
-        className: _.subheader,
+        className: j.subheader,
         variant: "heading-md/semibold",
         children: "ChatWallpaperMetadataRecord"
       }), (0, a.jsx)("pre", {
-        className: _.code,
+        className: j.code,
         children: JSON.stringify(m.Z.getWallpaperById(s), null, 2)
       }), (0, a.jsx)(u.ua7, {
         text: "The opacity of the wallpaper.",
-        children: e => (0, a.jsx)(o.X6, y(j({
-          className: i()(_.subheader, _.hasTooltip),
+        children: e => (0, a.jsx)(o.X6, y(_({
+          className: i()(j.subheader, j.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
           children: "Opacity"
         }))
       }), (0, a.jsx)(u.iRW, {
-        className: _.slider,
+        className: j.slider,
         initialValue: R,
         defaultValue: 1,
         minValue: 0,
@@ -126,14 +126,14 @@ function N() {
         onValueChange: b
       }, "opacity-".concat(R)), (0, a.jsx)(u.ua7, {
         text: "The most prominent color in the wallpaper. This will be used to adjust the color tokens.",
-        children: e => (0, a.jsx)(o.X6, y(j({
-          className: i()(_.subheader, _.hasTooltip),
+        children: e => (0, a.jsx)(o.X6, y(_({
+          className: i()(j.subheader, j.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
           children: "Primary Color"
         }))
       }), (0, a.jsxs)("div", {
-        className: _.colorInputContainer,
+        className: j.colorInputContainer,
         children: [(0, a.jsx)("input", {
           type: "color",
           value: d.primary_color,
@@ -146,18 +146,18 @@ function N() {
             color: "currentColor"
           }),
           onClick: O,
-          className: _.removeButton
+          className: j.removeButton
         })]
       }), (0, a.jsx)(u.ua7, {
         text: "The second most prominent color in the wallpaper. This will be used to adjust the color tokens.",
-        children: e => (0, a.jsx)(o.X6, y(j({
-          className: i()(_.subheader, _.hasTooltip),
+        children: e => (0, a.jsx)(o.X6, y(_({
+          className: i()(j.subheader, j.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
           children: "Secondary Color"
         }))
       }), (0, a.jsxs)("div", {
-        className: _.colorInputContainer,
+        className: j.colorInputContainer,
         children: [(0, a.jsx)("input", {
           type: "color",
           value: d.secondary_color,
@@ -170,18 +170,18 @@ function N() {
             color: "currentColor"
           }),
           onClick: P,
-          className: _.removeButton
+          className: j.removeButton
         })]
       }), (0, a.jsx)(u.ua7, {
         text: "Controls how much the primary/secondary colors are mixed into the tokens.",
-        children: e => (0, a.jsx)(o.X6, y(j({
-          className: i()(_.subheader, _.hasTooltip),
+        children: e => (0, a.jsx)(o.X6, y(_({
+          className: i()(j.subheader, j.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
           children: "Token Mix Amount"
         }))
       }), (0, a.jsx)(u.iRW, {
-        className: _.slider,
+        className: j.slider,
         initialValue: A,
         defaultValue: 100,
         minValue: 0,
@@ -189,14 +189,14 @@ function N() {
         onValueChange: w
       }, "tokenMixAmount-".concat(A)), (0, a.jsx)(u.ua7, {
         text: "The color used for hyperlinks.",
-        children: e => (0, a.jsx)(o.X6, y(j({
-          className: i()(_.subheader, _.hasTooltip),
+        children: e => (0, a.jsx)(o.X6, y(_({
+          className: i()(j.subheader, j.hasTooltip),
           variant: "heading-md/semibold"
         }, e), {
           children: "Link Color"
         }))
       }), (0, a.jsxs)("div", {
-        className: _.colorInputContainer,
+        className: j.colorInputContainer,
         children: [(0, a.jsx)("input", {
           type: "color",
           value: d.link_color,
@@ -209,10 +209,10 @@ function N() {
             color: "currentColor"
           }),
           onClick: I,
-          className: _.removeButton
+          className: j.removeButton
         })]
       }), (0, a.jsx)(u.zxk, {
-        className: _.resetButton,
+        className: j.resetButton,
         onClick: k,
         children: "Reset"
       })]
@@ -230,7 +230,7 @@ function O() {
     n = null != t ? new Date(t) : null;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(o.X6, {
-      className: _.header,
+      className: j.header,
       variant: "heading-lg/semibold",
       children: "Tenure Badges"
     }), (0, a.jsxs)("p", {
@@ -240,7 +240,7 @@ function O() {
         children: "Not Dismissed"
       })]
     }), (0, a.jsx)("div", {
-      className: _.tenureBadgeControls,
+      className: j.tenureBadgeControls,
       children: (0, a.jsx)(u.zxk, {
         onClick: e,
         children: "Reset Level Up DC"

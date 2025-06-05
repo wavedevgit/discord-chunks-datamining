@@ -1,6 +1,6 @@
 /**
   Module ID: 61717
-  Original File Name: beba21b2cc78cf83
+  Original File Name: c031b55bfb040e47
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1849,6 +1849,11 @@
     width: 100%
 }
 
+.filterHeaderWrap_ea5470 {
+    height: 24px;
+    padding: 8px 16px 6px
+}
+
 div:has(>.positionLayer_fc71d3) {
     translate: 0 1.25rem
 }
@@ -2538,10 +2543,6 @@ div:has(>.positionLayer_fc71d3) {
     width: 32px
 }
 
-.fullWidth__252b6 {
-    width: 100%
-}
-
 .visual-refresh .guildSeparator__252b6 {
     background-color: var(--app-border-frame);
     height: 1px
@@ -2699,22 +2700,9 @@ div:has(>.positionLayer_fc71d3) {
 }
 
 .itemsContainer_ef3116,.tree_ef3116 {
-    height: 100%
-}
-
-.itemsContainer_ef3116,.topSection_ef3116,.tree_ef3116 {
     display: flex;
-    flex-direction: column
-}
-
-.topSection_ef3116 {
-    gap: 8px;
-    padding-bottom: 8px
-}
-
-.bottomSection_ef3116 {
-    overflow: hidden;
-    position: relative
+    flex-direction: column;
+    height: 100%
 }
 
 .scroller_ef3116 {
@@ -2811,11 +2799,6 @@ div:has(>.positionLayer_fc71d3) {
 .visual-refresh .scroller_ef3116 {
     padding-bottom: var(--space-xs);
     padding-top: 0
-}
-
-.visual-refresh .scrollerBottomSection_ef3116 {
-    height: 100%;
-    padding-top: var(--space-xs)
 }
 
 .visual-refresh .unreadMentionsFixedFooter_ef3116 {
@@ -6395,4 +6378,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=beba21b2cc78cf83.css.map*/
+/*# sourceMappingURL=c031b55bfb040e47.css.map*/

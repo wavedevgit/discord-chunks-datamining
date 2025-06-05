@@ -58,7 +58,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     max: 25e4,
     warn: 5e4
   },
-  h = {
+  p = {
     [r.aB.PROFILE_EFFECT]: c,
     [r.aB.AVATAR_DECORATION]: d,
     [r.jE.HERO_BANNER_ANIMATED]: c,
@@ -80,7 +80,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     [r.jE.COLLECTED_MODAL_BG]: x,
     [r.jE.COACHTIP_AVATAR]: x
   },
-  p = async e => {
+  h = async e => {
     let t = Object.values(r.CM),
       n = new Set,
       a = e.createReader();
@@ -107,22 +107,22 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       n("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(i, " (max: ").concat(t, ")")])
     } else r > e.warn && a("Files are a tad chonky - are you sure they're optimized?", ["".concat(i)])
   }, g = (e, t, n, a) => {
-    let r = h[e];
+    let r = p[e];
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || v(r, e, n, a)
-  }, _ = (e, t, n) => {
+  }, j = (e, t, n) => {
     for (let a of e) {
       let e = (0, r.BU)(a),
-        l = null != e ? h[e] : null;
+        l = null != e ? p[e] : null;
       null != l && v(l, a, t, n)
     }
-  }, j = e => {
+  }, _ = e => {
     let {
       files: t,
       addError: n,
       addWarning: a
     } = e;
-    _(t.collectionFiles, n, a), f({
+    j(t.collectionFiles, n, a), f({
       names: t.collectionFiles.map(e => e.name),
       addError: n
     });
@@ -165,7 +165,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: n
     }), g(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)
   }, N = (e, t, n) => {
-    j({
+    _({
       files: e,
       addError: n,
       addWarning: t
@@ -214,7 +214,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           if (e.length > 1) return void d("Uploaded multiple files. Expected 1 directory.");
           let t = e[0];
           if (!t.isDirectory) return void d("Uploaded a file. Expected a directory.");
-          let n = await p(t);
+          let n = await h(t);
           if (n.length > 0) return void d("Missing required directories", n);
           let a = await (0, r.LY)([t]);
           N(a, u, d)

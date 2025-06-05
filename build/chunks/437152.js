@@ -21,7 +21,7 @@ function u() {
   let {
     isDismissed: e
   } = (0, l.Fo)(r.z.CHANNEL_REORDER_MODAL_DISMISS_SETTING, {
-    cooldownDurationMs: 10 * o.Z.Millis.SECOND
+    cooldownDurationMs: o.Z.Millis.WEEK
   });
   return !e
 }

@@ -19,7 +19,7 @@ let d = e => {
       className: m,
       title: x
     } = e,
-    h = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var n, a, r = function(e, t) {
         if (null == e) return {};
@@ -51,7 +51,7 @@ let d = e => {
       })
     }
     return e
-  }({}, (0, s.Z)(h)), n = n = {
+  }({}, (0, s.Z)(p)), n = n = {
     width: a,
     height: l,
     className: i()(m, function(e) {

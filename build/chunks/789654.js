@@ -14,14 +14,14 @@ var a = n(255367),
   u = n(203165),
   m = n(481060),
   x = n(410030),
-  h = n(705262),
-  p = n(374794),
+  p = n(705262),
+  h = n(374794),
   b = n(58755),
   f = n(246992),
   v = n(500949),
   g = n(770378);
 
-function _(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -40,7 +40,7 @@ function _(e) {
   return e
 }
 
-function j(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -144,7 +144,7 @@ function E() {
         look: "brand",
         selectedItem: N,
         onItemSelect: e => {
-          n(t => j(_({}, t), {
+          n(t => _(j({}, t), {
             tab: e
           }))
         },
@@ -155,9 +155,9 @@ function E() {
           id: v.H8.PALETTES,
           children: "Palettes"
         })]
-      }), (0, a.jsx)(h.ZP, {
-        type: h.yH.SETTINGS,
-        children: (0, a.jsx)(h.ZP.Basic, {
+      }), (0, a.jsx)(p.ZP, {
+        type: p.yH.SETTINGS,
+        children: (0, a.jsx)(p.ZP.Basic, {
           className: g.toolbarThemeSelector,
           hideSystemSelector: !0
         })
@@ -177,7 +177,7 @@ function E() {
           onClick: s,
           disabled: !u,
           children: (0, a.jsx)(m.zGS, {})
-        }), (0, a.jsx)(p.Z, {
+        }), (0, a.jsx)(h.Z, {
           "aria-label": "Import",
           filters: [{
             name: "JSON",
@@ -206,7 +206,7 @@ function E() {
           color: m.zxk.Colors.TRANSPARENT,
           look: m.zxk.Looks.BLANK,
           onClick: () => {
-            O("color-overrides", JSON.stringify(_({}, t), null, 2))
+            O("color-overrides", JSON.stringify(j({}, t), null, 2))
           },
           children: (0, a.jsx)(m._8t, {})
         })]
@@ -250,8 +250,8 @@ function T(e) {
       let {
         semanticColorOverrides: a
       } = t, r = null != (n = a[e]) ? n : (0, v.$R)(e);
-      return j(_({}, t), {
-        semanticColorOverrides: j(_({}, a), {
+      return _(j({}, t), {
+        semanticColorOverrides: _(j({}, a), {
           [e]: r
         })
       })
@@ -261,8 +261,8 @@ function T(e) {
       let {
         rawColorOverrides: n
       } = t;
-      return null == n[e] ? j(_({}, t), {
-        rawColorOverrides: j(_({}, n), {
+      return null == n[e] ? _(j({}, t), {
+        rawColorOverrides: _(j({}, n), {
           [e]: {
             color: u.b[e].hex,
             highlight: !1
@@ -270,23 +270,23 @@ function T(e) {
         })
       }) : t
     })
-  }, [n]), h = r.useCallback(e => {
+  }, [n]), p = r.useCallback(e => {
     n(t => {
       let {
         semanticColorOverrides: n
-      } = t, a = _({}, n);
-      return delete a[e], j(_({}, t), {
+      } = t, a = j({}, n);
+      return delete a[e], _(j({}, t), {
         semanticColorOverrides: a
       })
     })
-  }, [n]), p = r.useCallback(e => {
+  }, [n]), h = r.useCallback(e => {
     n(t => {
       let {
         semanticColorOverrides: n
       } = t, a = n[e];
       if (null == a) return t;
-      let r = _({}, n);
-      return r[e] = (0, v.GU)(a), j(_({}, t), {
+      let r = j({}, n);
+      return r[e] = (0, v.GU)(a), _(j({}, t), {
         semanticColorOverrides: r
       })
     })
@@ -333,15 +333,15 @@ function T(e) {
               } = e;
               if (null == n[t]) return e;
               let a = (0, v.$R)(t);
-              return j(_({}, e), {
-                semanticColorOverrides: j(_({}, n), {
+              return _(j({}, e), {
+                semanticColorOverrides: _(j({}, n), {
                   [t]: a
                 })
               })
             })
           },
-          onRemove: () => h(t),
-          onHighlightToggle: () => p(t),
+          onRemove: () => p(t),
+          onHighlightToggle: () => h(t),
           children: (0, a.jsxs)("div", {
             className: g.semanticOverride,
             children: [(0, a.jsx)(m.VcW, {
@@ -356,8 +356,8 @@ function T(e) {
                   let i = r.colors[l];
                   if (null == i) return n;
                   let s = (0, v.lT)(r, t, e, i.opacity, l);
-                  return j(_({}, n), {
-                    semanticColorOverrides: j(_({}, a), {
+                  return _(j({}, n), {
+                    semanticColorOverrides: _(j({}, a), {
                       [t]: s
                     })
                   })
@@ -392,8 +392,8 @@ function T(e) {
                   let i = r.colors[l];
                   if (null == i) return e;
                   let s = (0, v.lT)(r, t, i.color, a, l);
-                  return j(_({}, e), {
-                    semanticColorOverrides: j(_({}, n), {
+                  return _(j({}, e), {
+                    semanticColorOverrides: _(j({}, n), {
                       [t]: s
                     })
                   })
@@ -437,11 +437,11 @@ function T(e) {
             n(e => {
               let {
                 rawColorOverrides: n
-              } = e, a = _({}, n);
+              } = e, a = j({}, n);
               return a[t] = {
                 color: u.b[t].hex,
                 highlight: !1
-              }, j(_({}, e), {
+              }, _(j({}, e), {
                 rawColorOverrides: a
               })
             })
@@ -450,8 +450,8 @@ function T(e) {
             n(e => {
               let {
                 rawColorOverrides: n
-              } = e, a = _({}, n);
-              return delete a[t], j(_({}, e), {
+              } = e, a = j({}, n);
+              return delete a[t], _(j({}, e), {
                 rawColorOverrides: a
               })
             })
@@ -462,10 +462,10 @@ function T(e) {
                 rawColorOverrides: n
               } = e, a = n[t];
               if (null == a) return e;
-              let r = _({}, n);
-              return r[t] = j(_({}, a), {
+              let r = j({}, n);
+              return r[t] = _(j({}, a), {
                 highlight: !a.highlight
-              }), j(_({}, e), {
+              }), _(j({}, e), {
                 rawColorOverrides: r
               })
             })
@@ -480,8 +480,8 @@ function T(e) {
                 let {
                   rawColorOverrides: n
                 } = e;
-                return j(_({}, e), {
-                  rawColorOverrides: j(_({}, n), {
+                return _(j({}, e), {
+                  rawColorOverrides: _(j({}, n), {
                     [t]: {
                       color: a,
                       highlight: !1

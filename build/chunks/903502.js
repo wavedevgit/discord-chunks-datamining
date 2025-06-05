@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => p
+  Z: () => h
 }), n(388685);
 var a = n(255367),
   r = n(73800),
@@ -13,7 +13,7 @@ var a = n(255367),
   u = n(246992),
   m = n(531578),
   x = n(521981);
-let h = [{
+let p = [{
   label: "second(s)",
   value: 1e3
 }, {
@@ -27,11 +27,11 @@ let h = [{
   value: 864e5
 }];
 
-function p() {
-  let [e, t] = r.useState(null), [n, p] = r.useState(0), [b, f] = r.useState(1e3), [v, g] = r.useState(0), _ = (0, l.e7)([c.Z], () => {
+function h() {
+  let [e, t] = r.useState(null), [n, h] = r.useState(0), [b, f] = r.useState(1e3), [v, g] = r.useState(0), j = (0, l.e7)([c.Z], () => {
     var t;
     return null === e ? null : null != (t = c.Z.getFeedbackConfig(m.nw[e])) ? t : o.R[m.nw[e]]
-  }), j = Object.entries(m.nw), y = j.slice(j.length / 2).map(e => {
+  }), _ = Object.entries(m.nw), y = _.slice(_.length / 2).map(e => {
     let [t] = e;
     return {
       label: t,
@@ -57,7 +57,7 @@ function p() {
       title: "Override Survey Cooldown",
       className: x.formElement,
       tag: i.RB0.H3,
-      children: [null != _ && (0, a.jsxs)(a.Fragment, {
+      children: [null != j && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(d.Z, {
           className: x.formDividerTitle,
           children: (0, a.jsx)(i.Text, {
@@ -66,16 +66,16 @@ function p() {
           })
         }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(_.cooldown / 1e3, " second(s) or")
+          children: "".concat(j.cooldown / 1e3, " second(s) or")
         }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(_.cooldown / 6e4, " minute(s) or")
+          children: "".concat(j.cooldown / 6e4, " minute(s) or")
         }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(_.cooldown / 36e5, " hour(s) or")
+          children: "".concat(j.cooldown / 36e5, " hour(s) or")
         }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(_.cooldown / 864e5, " day(s)")
+          children: "".concat(j.cooldown / 864e5, " day(s)")
         })]
       }), (0, a.jsx)(d.Z, {
         className: x.formDividerTitle,
@@ -90,9 +90,9 @@ function p() {
           value: n.toString(),
           type: "number",
           placeholder: "Duration length",
-          onChange: e => p(parseFloat(e))
+          onChange: e => h(parseFloat(e))
         }), (0, a.jsx)(i.q4e, {
-          options: h,
+          options: p,
           value: b,
           onChange: e => {
             f(e)
@@ -104,7 +104,7 @@ function p() {
       title: "Override Survey Chance",
       className: x.formElement,
       tag: i.RB0.H3,
-      children: [null != _ && (0, a.jsxs)(a.Fragment, {
+      children: [null != j && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(d.Z, {
           className: x.formDividerTitle,
           children: (0, a.jsx)(i.Text, {
@@ -113,7 +113,7 @@ function p() {
           })
         }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(100 * _.chance, "%")
+          children: "".concat(100 * j.chance, "%")
         })]
       }), (0, a.jsx)(d.Z, {
         className: x.formDividerTitle,
@@ -137,18 +137,18 @@ function p() {
     }), (0, a.jsxs)("div", {
       className: x.formRow,
       children: [(0, a.jsx)(i.zxk, {
-        onClick: () => void(null != _ && s.Z.dispatch({
+        onClick: () => void(null != j && s.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_SET",
-          feedbackType: _.feedbackType,
+          feedbackType: j.feedbackType,
           cooldown: n * b,
           chance: v / 100
         })),
         disabled: !C,
         children: "Update"
       }), (0, a.jsx)(i.zxk, {
-        onClick: () => void(null != _ && s.Z.dispatch({
+        onClick: () => void(null != j && s.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_CLEAR",
-          feedbackType: _.feedbackType
+          feedbackType: j.feedbackType
         })),
         disabled: !C,
         children: "Clear Override"

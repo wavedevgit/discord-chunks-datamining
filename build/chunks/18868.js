@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  L: () => h
+  L: () => p
 }), n(388685);
 var a = n(255367),
   r = n(73800),
@@ -44,16 +44,16 @@ let m = () => {
   x = e => {
     e.stopPropagation(), e.preventDefault()
   },
-  h = e => {
+  p = e => {
     let {
       className: t,
       onDrop: n
-    } = e, [l, h] = r.useState(!1), p = r.useRef(null), b = r.useCallback(e => {
-      x(e), h(!0), (0, s.Mr3)(c.A)
+    } = e, [l, p] = r.useState(!1), h = r.useRef(null), b = r.useCallback(e => {
+      x(e), p(!0), (0, s.Mr3)(c.A)
     }, []), f = r.useCallback(e => {
-      x(e), h(!1)
+      x(e), p(!1)
     }, []), v = r.useCallback(async e => {
-      x(e), h(!1);
+      x(e), p(!1);
       let t = e.dataTransfer;
       if (null == t) return void m();
       let a = await Promise.all(Array.from(t.items).map(e => {
@@ -63,7 +63,7 @@ let m = () => {
       a.length > 0 ? n(a) : m()
     }, [n]);
     return (0, a.jsx)("div", {
-      ref: p,
+      ref: h,
       className: i()(t, u.uploadArea),
       onDragEnter: b,
       onDragLeave: f,

@@ -13,14 +13,14 @@ var a = n(255367),
   u = n(442837),
   m = n(433517),
   x = n(481060),
-  h = n(570140),
-  p = n(812206),
+  p = n(570140),
+  h = n(812206),
   b = n(835473),
   f = n(246992),
   v = n(681619),
   g = n(810568),
-  _ = n(168524),
-  j = n(77498),
+  j = n(168524),
+  _ = n(77498),
   y = n(823379),
   C = n(550532),
   N = n(71585),
@@ -78,10 +78,10 @@ function R(e) {
   return (0, a.jsx)(x.XZJ, {
     value: i,
     onClick: function() {
-      i ? h.Z.dispatch({
+      i ? p.Z.dispatch({
         type: "CONTENT_INVENTORY_SET_FILTERS",
         filters: void 0
-      }) : h.Z.dispatch({
+      }) : p.Z.dispatch({
         type: "CONTENT_INVENTORY_SET_FILTERS",
         filters: {
           types: new Set([r])
@@ -112,11 +112,11 @@ function A() {
       return (null == (e = O.Z.getFeedState(P.YN.GLOBAL_FEED)) ? void 0 : e.loading) === !0
     }),
     [R, A] = r.useState(""),
-    L = (0, u.e7)([j.Z, p.Z], () => {
+    L = (0, u.e7)([_.Z, h.Z], () => {
       var e, t, n;
-      return parseInt(R) > 0 ? R : null != (n = null == (e = j.Z.getGameByName(R)) ? void 0 : e.id) ? n : null == (t = p.Z.getApplicationByName(R)) ? void 0 : t.id
+      return parseInt(R) > 0 ? R : null != (n = null == (e = _.Z.getGameByName(R)) ? void 0 : e.id) ? n : null == (t = h.Z.getApplicationByName(R)) ? void 0 : t.id
     }, [R]),
-    D = (0, _.Z)({
+    D = (0, j.Z)({
       applicationId: L,
       location: "DevToolsContentInventory",
       source: g.m1.DevTools
@@ -145,7 +145,7 @@ function A() {
         }), (0, a.jsx)(S.Z, {}), (0, a.jsx)(x.zxk, {
           fullWidth: !0,
           onClick: function() {
-            h.Z.dispatch({
+            p.Z.dispatch({
               type: "CONTENT_INVENTORY_MANUAL_REFRESH",
               feedId: P.YN.GLOBAL_FEED,
               feature: d.L.INBOX
@@ -160,7 +160,7 @@ function A() {
         }), (0, a.jsx)(x.zxk, {
           fullWidth: !0,
           onClick: function() {
-            h.Z.dispatch({
+            p.Z.dispatch({
               type: "CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS"
             })
           },
@@ -170,7 +170,7 @@ function A() {
         }), (0, a.jsx)(x.zxk, {
           fullWidth: !0,
           onClick: function() {
-            h.Z.dispatch({
+            p.Z.dispatch({
               type: "CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS"
             })
           },
@@ -180,7 +180,7 @@ function A() {
         }), (0, a.jsx)(x.zxk, {
           fullWidth: !0,
           onClick: function() {
-            h.Z.dispatch({
+            p.Z.dispatch({
               type: "CONTENT_INVENTORY_DEBUG_TOGGLE_IMPRESSION_CAPPING"
             })
           },
@@ -190,7 +190,7 @@ function A() {
         }), (0, a.jsx)(x.zxk, {
           fullWidth: !0,
           onClick: function() {
-            h.Z.dispatch({
+            p.Z.dispatch({
               type: "CONTENT_INVENTORY_DEBUG_TOGGLE_FAST_IMPRESSION_CAPPING"
             })
           },
@@ -229,7 +229,7 @@ function A() {
           })),
           isSelected: e => e === B,
           select: function(e) {
-            h.Z.dispatch({
+            p.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",
               gameToShow: e
             })
@@ -244,7 +244,7 @@ function A() {
 let Z = e => {
   let {
     application: t
-  } = e, n = (0, _.Z)({
+  } = e, n = (0, j.Z)({
     applicationId: t.id,
     location: "DevToolsContentInventory",
     source: g.m1.DevTools

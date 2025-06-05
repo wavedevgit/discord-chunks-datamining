@@ -32,14 +32,14 @@ var a, r, l = n(73800),
   u = n(855930),
   m = n(385787),
   x = n(566162),
-  h = n(567027),
-  p = n(461195),
+  p = n(567027),
+  h = n(461195),
   b = n(857702),
   f = n(20450),
   v = n(312976),
   g = n(147591),
-  _ = n(135164),
-  j = n(940172),
+  j = n(135164),
+  _ = n(940172),
   y = n(81011),
   C = n(981613),
   N = n(762399),
@@ -98,14 +98,14 @@ let U = {
     HSL: u.Z,
     HSLuv: m.Z,
     HSV: x.Z,
-    HWB: h.Z,
-    ICTCP: p.Z,
+    HWB: p.Z,
+    ICTCP: h.Z,
     JzCzHz: b.Z,
     Jzazbz: f.Z,
     LCH: v.Z,
     LCHuv: g.Z,
-    Lab: _.Z,
-    Lab_D65: j.Z,
+    Lab: j.Z,
+    Lab_D65: _.Z,
     Luv: y.Z,
     OKLCH: C.Z,
     OKLab: N.Z,
@@ -222,24 +222,24 @@ function er(e) {
   }), u = (0, Z.CD)(c, "black", 1 - l, {
     space: o,
     outputSpace: i.Z
-  }), m = Math.floor(a / 2), x = a - m, h = (0, Z.w6)(d, c, {
+  }), m = Math.floor(a / 2), x = a - m, p = (0, Z.w6)(d, c, {
     steps: m,
     outputSpace: o,
     space: o,
     progression: e => e ** s
-  }), p = (0, Z.w6)(u, c, {
+  }), h = (0, Z.w6)(u, c, {
     steps: x,
     outputSpace: o,
     space: o,
     progression: e => e ** s
   }), b = [];
   for (let e = 0; e < m; e++) {
-    let t = h(e / m);
+    let t = p(e / m);
     b.push(t)
   }
   b.push(c);
   for (let e = 1; e < x; e++) {
-    let t = p(1 - e / x);
+    let t = h(1 - e / x);
     b.push(t)
   }
   return Object.fromEntries(b.map((e, n) => ["".concat(t, "-").concat(n), e]))

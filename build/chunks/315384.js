@@ -18,7 +18,7 @@ let d = "/users/@me/debug/consumables/",
 function m() {
   let e, [t, n] = (0, r.useState)([]),
     [m, x] = (0, r.useState)(null),
-    [h, p] = (0, r.useState)(!1);
+    [p, h] = (0, r.useState)(!1);
   return (0, r.useEffect)(() => ((async () => {
     try {
       let e = (await l.tn.get(d)).body.entitlements.map(e => o.Z.createFromServer(e));
@@ -39,7 +39,7 @@ function m() {
         children: "Create Entitlements"
       }), (0, a.jsx)(i.zxk, {
         onClick: (e = s.D1, async () => {
-          p(!0);
+          h(!0);
           try {
             let a = await l.tn.post({
                 url: d,
@@ -53,14 +53,14 @@ function m() {
           } catch (e) {
             x("Failed to create entitlement")
           } finally {
-            p(!1)
+            h(!1)
           }
         }),
         className: c.button,
         look: i.iLD.OUTLINED,
         color: i.Ttl.PRIMARY,
         children: "Create Confetti Entitlement"
-      }), h && (0, a.jsx)(i.$jN, {})]
+      }), p && (0, a.jsx)(i.$jN, {})]
     }) : (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)("div", {
         className: c.title,

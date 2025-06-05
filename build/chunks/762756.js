@@ -1,94 +1,94 @@
-/** Chunk was on 12494 **/
-r.d(t, {
+/** Chunk was on 66349 **/
+n.d(t, {
   Z: () => E
-}), r(388685);
-var n, i = r(255367),
-  c = r(73800),
-  o = r(120356),
-  l = r.n(o),
-  a = r(873546),
-  s = r(481060),
-  u = r(599857),
-  f = r(600164),
-  p = r(63063),
-  d = r(1964),
-  y = r(981631),
-  g = r(388032),
-  m = r(816676),
-  b = r(20493);
+}), n(388685);
+var r, i = n(255367),
+  a = n(73800),
+  l = n(120356),
+  c = n.n(l),
+  o = n(873546),
+  s = n(481060),
+  u = n(599857),
+  d = n(600164),
+  f = n(63063),
+  p = n(1964),
+  m = n(981631),
+  g = n(388032),
+  h = n(816676),
+  y = n(20493);
 
-function h(e, t, r) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
-    value: r,
+    value: n,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = r, e
+  }) : e[t] = n, e
 }
-let O = p.Z.getArticleURL(y.BhN.VERIFICATION_FAQ);
-class j extends(n = c.PureComponent) {
+let j = f.Z.getArticleURL(m.BhN.VERIFICATION_FAQ);
+class v extends(r = a.PureComponent) {
   renderFields() {
     let {
       types: e,
       captchaKey: t,
-      theme: r,
-      onCaptchaVerify: n
+      theme: n,
+      onCaptchaVerify: r
     } = this.props;
     return (0, i.jsx)(i.Fragment, {
-      children: e.map(e => e === y.PUi.CAPTCHA ? (0, i.jsx)(u.Z, {
-        onVerify: n,
-        theme: r
+      children: e.map(e => e === m.PUi.CAPTCHA ? (0, i.jsx)(u.Z, {
+        onVerify: r,
+        theme: n
       }, t) : (0, i.jsx)(s.zxk, {
-        className: b.marginBottom20,
+        className: y.marginBottom20,
         onClick: () => this.handleClick(e),
-        children: d.Z.getButtonTitle(e)
+        children: p.Z.getButtonTitle(e)
       }, e))
     })
   }
   render() {
-    return (0, i.jsxs)(f.Z, {
-      className: m.verification,
-      align: f.Z.Align.CENTER,
-      direction: f.Z.Direction.VERTICAL,
-      children: [(0, i.jsxs)(f.Z, {
-        className: l()(m.container, {
-          [m.isMobile]: a.tq
+    return (0, i.jsxs)(d.Z, {
+      className: h.verification,
+      align: d.Z.Align.CENTER,
+      direction: d.Z.Direction.VERTICAL,
+      children: [(0, i.jsxs)(d.Z, {
+        className: c()(h.container, {
+          [h.isMobile]: o.tq
         }),
-        direction: f.Z.Direction.VERTICAL,
-        align: f.Z.Align.CENTER,
-        justify: f.Z.Justify.CENTER,
+        direction: d.Z.Direction.VERTICAL,
+        align: d.Z.Align.CENTER,
+        justify: d.Z.Justify.CENTER,
         children: [(0, i.jsx)("div", {
-          className: m.image
+          className: h.image
         }), (0, i.jsx)("div", {
-          className: l()(m.title, b.marginTop20),
+          className: c()(h.title, y.marginTop20),
           children: g.intl.string(g.t.Iz0kDg)
         }), (0, i.jsx)("div", {
-          className: l()(m.body, b.marginTop4, b.marginBottom20),
+          className: c()(h.body, y.marginTop4, y.marginBottom20),
           children: g.intl.format(g.t["0rqMV1"], {
-            helpCenterURL: O
+            helpCenterURL: j
           })
-        }), (0, i.jsx)(f.Z, {
+        }), (0, i.jsx)(d.Z, {
           grow: 0,
-          direction: f.Z.Direction.VERTICAL,
-          justify: f.Z.Justify.CENTER,
+          direction: d.Z.Direction.VERTICAL,
+          justify: d.Z.Justify.CENTER,
           children: this.renderFields()
         })]
       }), (0, i.jsx)("div", {
-        className: l()(m.footer, b.marginTop20),
+        className: c()(h.footer, y.marginTop20),
         children: g.intl.string(g.t.qqYun5)
-      }), (0, i.jsxs)(f.Z, {
-        className: l()(b.marginTop4, b.marginBottom20),
+      }), (0, i.jsxs)(d.Z, {
+        className: c()(y.marginTop4, y.marginBottom20),
         grow: 0,
         children: [(0, i.jsx)("div", {
-          className: l()(m.footer, m.footerAction),
+          className: c()(h.footer, h.footerAction),
           children: g.intl.format(g.t.WL51ZW, {
-            supportURL: p.Z.getSubmitRequestURL()
+            supportURL: f.Z.getSubmitRequestURL()
           })
         }), (0, i.jsx)("div", {
-          className: l()(m.footer, m.footerBullet),
+          className: c()(h.footer, h.footerBullet),
           children: "•"
         }), (0, i.jsx)("div", {
-          className: l()(m.footer, m.footerAction),
+          className: c()(h.footer, h.footerAction),
           children: g.intl.format(g.t.Hv7ztb, {
             logoutOnClick: this.props.onLogout
           })
@@ -97,7 +97,7 @@ class j extends(n = c.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "handleClick", e => {
+    super(...e), b(this, "handleClick", e => {
       let {
         onClick: t
       } = this.props;
@@ -105,9 +105,9 @@ class j extends(n = c.PureComponent) {
     })
   }
 }
-h(j, "defaultProps", {
-  types: [y.PUi.CAPTCHA],
-  onCaptchaVerify: y.dG4,
-  onLogout: y.dG4
+b(v, "defaultProps", {
+  types: [m.PUi.CAPTCHA],
+  onCaptchaVerify: m.dG4,
+  onLogout: m.dG4
 });
-let E = j
+let E = v

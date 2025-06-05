@@ -13,14 +13,14 @@ var a = n(255367),
   u = n(621628),
   m = n(645041),
   x = n(713081),
-  h = n(675478),
-  p = n(581883),
+  p = n(675478),
+  h = n(581883),
   b = n(899667),
   f = n(430824),
   v = n(914010),
   g = n(981631),
-  _ = n(444048);
-let j = [o.z.GUILD_POWERUP_PERKS_COACHMARK, o.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, o.z.GUILD_POWERUP_NOTIFICATION, o.z.GUILD_TAG_AVAILABLE_COACHMARK],
+  j = n(444048);
+let _ = [o.z.GUILD_POWERUP_PERKS_COACHMARK, o.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, o.z.GUILD_POWERUP_NOTIFICATION, o.z.GUILD_TAG_AVAILABLE_COACHMARK],
   y = [o.C.GUILD_POWERUP_LEVEL_1_COACHMARK, o.C.GUILD_POWERUP_LEVEL_2_COACHMARK, o.C.GUILD_POWERUP_LEVEL_3_COACHMARK, o.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, o.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, o.C.GUILD_POWERUP_BOTH_SKU_PURCHASE_COACHMARK],
   C = [o.C.ADOPT_CLAN_IDENTITY_NOTICE];
 
@@ -59,28 +59,28 @@ function E() {
       var e;
       return null == (e = f.Z.getGuild(t)) ? void 0 : e.name
     }),
-    r = (0, i.Wu)([p.Z], () => [...y, ...C].filter(e => null != t && (0, m.OY)(e, t))),
-    l = null != (e = (0, i.e7)([p.Z], () => {
+    r = (0, i.Wu)([h.Z], () => [...y, ...C].filter(e => null != t && (0, m.OY)(e, t))),
+    l = null != (e = (0, i.e7)([h.Z], () => {
       var e;
-      return null == (e = p.Z.settings.userContent) ? void 0 : e.dismissedContents
+      return null == (e = h.Z.settings.userContent) ? void 0 : e.dismissedContents
     })) ? e : new Uint8Array,
     s = (0, i.Wu)([b.Z], () => {
       var e;
       return null != t && null != (e = b.Z.getAppliedGuildBoostsForGuild(t)) ? e : []
     });
   if (null != t) return (0, a.jsxs)(c.zJl, {
-    className: _.container,
+    className: j.container,
     children: [(0, a.jsx)("div", {
-      className: _.section,
+      className: j.section,
       children: (0, a.jsx)(c.X6q, {
         variant: "heading-md/normal",
         children: "Current guild: ".concat(n)
       })
     }), (0, a.jsxs)("div", {
-      className: _.section,
+      className: j.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
-        className: _.header,
+        className: j.header,
         children: "Reset Notification Indicators"
       }), (0, a.jsx)(c.zxk, {
         onClick: () => {
@@ -89,7 +89,7 @@ function E() {
         children: "Reset"
       })]
     }), (0, a.jsxs)("div", {
-      className: _.section,
+      className: j.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
         children: "Set Warning State"
@@ -107,27 +107,27 @@ function E() {
         })]
       })]
     }), (0, a.jsxs)("div", {
-      className: _.section,
+      className: j.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
-        className: _.header,
+        className: j.header,
         children: "Reset User Level DCs"
-      }), j.map(e => (0, a.jsx)(u.u, {
-        className: _.formSwitch,
+      }), _.map(e => (0, a.jsx)(u.u, {
+        className: j.formSwitch,
         contents: l,
         content: o.z[e],
         onChange: () => {}
       }, o.z[e]))]
     }), (0, a.jsxs)("div", {
-      className: _.section,
+      className: j.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
-        className: _.header,
+        className: j.header,
         children: "Reset Guild Level DCs"
       }), y.map(e => (0, a.jsx)(c.j7V, {
-        className: _.formSwitch,
+        className: j.formSwitch,
         onChange: n => {
-          n ? (0, m.Qd)(e, t, !1) : ((0, h.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, m.c7)(e, t))
+          n ? (0, m.Qd)(e, t, !1) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, m.c7)(e, t))
         },
         value: r.includes(e),
         children: (0, a.jsx)(c.Text, {
@@ -136,14 +136,14 @@ function E() {
         })
       }, e))]
     }), (0, a.jsxs)("div", {
-      className: _.section,
+      className: j.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
         children: "Reset Server Tag Guild Level DCs"
       }), C.map(e => (0, a.jsx)(c.j7V, {
-        className: _.formSwitch,
+        className: j.formSwitch,
         onChange: n => {
-          n ? (0, m.Qd)(e, t, !1) : ((0, h.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, m.c7)(e, t))
+          n ? (0, m.Qd)(e, t, !1) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, m.c7)(e, t))
         },
         value: r.includes(e),
         children: (0, a.jsx)(c.Text, {
