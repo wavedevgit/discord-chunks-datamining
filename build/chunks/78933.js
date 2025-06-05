@@ -209,7 +209,8 @@ function ee(e) {
               user: t,
               currentUser: t,
               displayProfile: er,
-              onOpenUserProfileModal: eT
+              onOpenUserProfileModal: eT,
+              onClose: n
             }) : (0, i.jsx)(I.Z, {
               user: t,
               currentUser: t,
