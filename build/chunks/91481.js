@@ -1,4 +1,4 @@
-/** Chunk was on 8787 **/
+/** Chunk was on 22472 **/
 e.exports = {
   collapseable: "collapseable__9d98d",
   notificationSettingsContainer: "notificationSettingsContainer__9d98d",

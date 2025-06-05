@@ -1,4 +1,4 @@
-/** Chunk was on 8787 **/
+/** Chunk was on 22472 **/
 e.exports = {
   picker: "picker__7f2be",
   themes: "themes__7f2be"

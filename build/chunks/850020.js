@@ -1,16 +1,16 @@
-/** Chunk was on 93602 **/
+/** Chunk was on 80767 **/
 n.d(t, {
-  K: () => i
+  K: () => l
 });
 var r = n(73800),
-  l = n(598062);
+  i = n(598062);
 
-function i(e) {
+function l(e) {
   let {
     location: t,
     user: n
-  } = e, i = (0, l.X)(t);
+  } = e, l = (0, i.X)(t);
   return (0, r.useMemo)(() => {
-    if ((null == n ? void 0 : n.nameplate) != null && i) return n.nameplate
-  }, [n, i])
+    if ((null == n ? void 0 : n.nameplate) != null && l) return n.nameplate
+  }, [n, l])
 }

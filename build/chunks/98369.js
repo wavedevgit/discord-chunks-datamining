@@ -1,4 +1,4 @@
-/** Chunk was on 93727 **/
+/** Chunk was on 83976 **/
 n.d(t, {
   Z: () => I
 }), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
@@ -18,7 +18,7 @@ let h = new Map,
   S = !1,
   b = null;
 
-function y() {
+function O() {
   return f.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: n
@@ -27,7 +27,7 @@ function y() {
   }, !1)
 }
 
-function O() {
+function y() {
   var e;
   let t = null != (e = d.Z.getUserIds()) ? e : new Set,
     n = c.default.getId(),
@@ -55,8 +55,8 @@ function Z(e) {
         a = i !== h.get(e);
       return h.set(e, i), a
     }(t),
-    r = y(),
-    l = O();
+    r = O(),
+    l = y();
   return n || r || l
 }
 
@@ -102,7 +102,7 @@ let I = new _(u.Z, {
     switch (r) {
       case o.Yn.STREAM:
         if (null == t) return !1;
-        return v.delete(t), O();
+        return v.delete(t), y();
       case o.Yn.DEFAULT:
         j()
     }
@@ -112,7 +112,7 @@ let I = new _(u.Z, {
       userIds: t
     } = e, n = c.default.getId(), r = t.reduce((e, t) => n === t ? e : !!Z({
       userId: t
-    }) || e, !1), l = y(), i = O();
+    }) || e, !1), l = O(), i = y();
     return r || l || i
   },
   SECURE_FRAMES_TRANSIENT_KEY_CREATE: Z,

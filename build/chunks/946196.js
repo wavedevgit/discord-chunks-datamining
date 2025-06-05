@@ -1,26 +1,26 @@
-/** Chunk was on 87040 **/
+/** Chunk was on 80767 **/
 n.d(t, {
-  l: () => u
+  l: () => d
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(386230),
-  o = n(442837),
-  l = n(481060),
+  l = n(386230),
+  a = n(442837),
+  o = n(481060),
   s = n(709706),
   c = n(388032),
-  d = n(791422);
+  u = n(791422);
 
-function u() {
-  let e = (0, o.e7)([s.Z], () => s.Z.getError());
-  return e ? (0, r.jsx)(_, {
+function d() {
+  let e = (0, a.e7)([s.Z], () => s.Z.getError());
+  return e ? (0, r.jsx)(f, {
     error: e
   }) : null
 }
-let _ = e => {
+let f = e => {
   let {
     error: t
-  } = e, [n, o] = (0, i.useState)(!1), u = (0, l.Yzy)(!n, {
+  } = e, [n, a] = (0, i.useState)(!1), d = (0, o.Yzy)(!n, {
     from: {
       opacity: 0,
       translateY: 20
@@ -33,7 +33,7 @@ let _ = e => {
       opacity: 0,
       translateY: 80
     }
-  }, "respect-motion-settings"), _ = (() => {
+  }, "respect-motion-settings"), f = (() => {
     switch (t) {
       case s.r.ERROR_DOWNLOADING_DEPENDENCY:
         return c.intl.string(c.t.D9neaG);
@@ -43,17 +43,17 @@ let _ = e => {
         return c.intl.string(c.t.F8FvU1)
     }
   })();
-  return u(e => n ? null : (0, r.jsx)(a.animated.div, {
+  return d(e => n ? null : (0, r.jsx)(l.animated.div, {
     style: e,
-    className: d.floaterWrapper,
+    className: u.floaterWrapper,
     children: (0, r.jsxs)("div", {
-      className: d.visibleFloater,
-      children: [(0, r.jsx)(l.Text, {
+      className: u.visibleFloater,
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
-        children: _
-      }), (0, r.jsx)(l.RyX, {
-        onClick: () => o(!0)
+        children: f
+      }), (0, r.jsx)(o.RyX, {
+        onClick: () => a(!0)
       })]
     })
   }))

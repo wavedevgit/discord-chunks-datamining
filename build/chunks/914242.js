@@ -1,4 +1,4 @@
-/** Chunk was on 8787 **/
+/** Chunk was on 22472 **/
 e.exports = {
   nitroGemAnimation: "nitroGemAnimation__7d30a",
   gemGlow: "gemGlow__7d30a",

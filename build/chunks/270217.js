@@ -1,4 +1,4 @@
-/** Chunk was on 87040 **/
+/** Chunk was on 80767 **/
 e.exports = {
   voiceFilterHero: "voiceFilterHero_cb3698",
   bgGradient: "bgGradient_cb3698",

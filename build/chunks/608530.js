@@ -1,9 +1,10 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 62423 **/
 n.d(t, {
-  L: () => i
+  L: () => a
 });
-let r = (0, n(818083).B)({
+var r = n(818083),
+  i = n(740492);
+let l = (0, r.B)({
   kind: "user",
   id: "2025-05_upload_refactor",
   label: "Aligns attachment and non-attachment message sending",
@@ -20,7 +21,7 @@ let r = (0, n(818083).B)({
     }
   }, {
     id: 2,
-    label: "Disabled",
+    label: "Enabled with Debug Setting",
     config: {
       enabled: !0,
       showSetting: !0
@@ -28,8 +29,12 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i(e) {
-  return r.getCurrentConfig({
+function a(e) {
+  let {
+    enabled: t,
+    showSetting: n
+  } = l.getCurrentConfig({
     location: e
-  }).enabled
+  });
+  return (!n || !!i.ZP.uploadRefactorEnabled) && t
 }

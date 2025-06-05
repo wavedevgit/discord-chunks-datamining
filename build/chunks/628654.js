@@ -1,4 +1,4 @@
-/** Chunk was on 8787 **/
+/** Chunk was on 22472 **/
 e.exports = {
   externalLink: "externalLink__900c6",
   currency: "currency__900c6",

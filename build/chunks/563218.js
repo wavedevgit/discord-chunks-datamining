@@ -1,4 +1,4 @@
-/** Chunk was on 93727 **/
+/** Chunk was on 83976 **/
 n.d(t, {
   Z: () => h
 });
@@ -34,30 +34,30 @@ function h(e) {
     var b;
     t = null != (b = null == h ? void 0 : h.window) ? b : window
   } else t = window;
-  let y = l.useRef(null),
-    O = l.useMemo(() => {
+  let O = l.useRef(null),
+    y = l.useMemo(() => {
       let e = null;
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
           var t, r;
-          E(n, null != (r = null == (t = y.current) ? void 0 : t.getBoundingClientRect()) ? r : null), e = null
+          E(n, null != (r = null == (t = O.current) ? void 0 : t.getBoundingClientRect()) ? r : null), e = null
         }))
       }
     }, [n, t]);
-  return l.useEffect(() => (t.addEventListener("resize", O), s.S.subscribe(g.CkL.REMEASURE_TARGET, O), () => {
-    t.removeEventListener("resize", O), s.S.unsubscribe(g.CkL.REMEASURE_TARGET, O)
-  }), [O, t]), l.useLayoutEffect(() => {
-    let e = y.current;
+  return l.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(g.CkL.REMEASURE_TARGET, y), () => {
+    t.removeEventListener("resize", y), s.S.unsubscribe(g.CkL.REMEASURE_TARGET, y)
+  }), [y, t]), l.useLayoutEffect(() => {
+    let e = O.current;
     if (null == e) return;
     let t = e.ownerDocument.defaultView;
     if (null == t) return;
-    O();
-    let r = new t.ResizeObserver(O);
+    y();
+    let r = new t.ResizeObserver(y);
     return r.observe(e), () => {
       r.disconnect(), E(n, null)
     }
-  }, [n, O]), (0, r.jsx)("div", {
-    ref: y,
+  }, [n, y]), (0, r.jsx)("div", {
+    ref: O,
     style: o,
     className: a
   })

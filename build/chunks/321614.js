@@ -1,12 +1,12 @@
-/** Chunk was on 93602 **/
+/** Chunk was on 80767 **/
 n.d(t, {
-  R: () => a,
+  R: () => o,
   c: () => s
 });
 var r = n(818083),
-  l = n(984134),
-  i = n(345655);
-let o = (0, r.B)({
+  i = n(984134),
+  l = n(345655);
+let a = (0, r.B)({
   kind: "user",
   id: "2025-05_input_profiles_experiment_web",
   label: "Audio input profiles (studio mode)",
@@ -17,23 +17,23 @@ let o = (0, r.B)({
     id: 1,
     label: "Show Voice Isolation, Studio, and Custom",
     config: {
-      enabledInputProfiles: [i._.VOICE_ISOLATION, i._.STUDIO, i._.CUSTOM]
+      enabledInputProfiles: [l._.VOICE_ISOLATION, l._.STUDIO, l._.CUSTOM]
     }
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
   } = e, {
     isInHoldout: r
-  } = l.h.getCurrentConfig({
+  } = i.h.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return o.getCurrentConfig({
+  return a.getCurrentConfig({
     location: t
   }, {
     disable: r,
@@ -47,12 +47,12 @@ function s(e) {
     autoTrackExposure: n = !0
   } = e, {
     isInHoldout: r
-  } = l.h.useExperiment({
+  } = i.h.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return o.useExperiment({
+  return a.useExperiment({
     location: t
   }, {
     disable: r,

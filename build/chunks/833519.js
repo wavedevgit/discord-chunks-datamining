@@ -1,4 +1,4 @@
-/** Chunk was on 93727 **/
+/** Chunk was on 83976 **/
 n.d(t, {
   Z: () => z,
   _: () => Y
@@ -21,8 +21,8 @@ var r = n(255367),
   v = n(871118),
   S = n(517525),
   b = n(352978),
-  y = n(576645),
-  O = n(590076),
+  O = n(576645),
+  y = n(590076),
   Z = n(507675),
   j = n(199902),
   _ = n(314897),
@@ -37,8 +37,8 @@ var r = n(255367),
   T = n(792517),
   D = (n(351483), n(979425)),
   M = n(651183),
-  L = n(623825),
-  k = n(981631),
+  k = n(623825),
+  L = n(981631),
   U = n(354459),
   F = n(65154),
   V = n(388032),
@@ -53,8 +53,8 @@ function Y(e) {
     idle: a,
     width: u,
     premiumIndicator: s
-  } = e, c = (0, o.e7)([j.Z], () => j.Z.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, L.K)(u), [f, m] = l.useState(!1), g = (0, o.e7)([I.Z], () => I.Z.getChannel(null == c ? void 0 : c.channelId));
-  return (0, y.J)(g, () => {
+  } = e, c = (0, o.e7)([j.Z], () => j.Z.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, k.K)(u), [f, m] = l.useState(!1), g = (0, o.e7)([I.Z], () => I.Z.getChannel(null == c ? void 0 : c.channelId));
+  return (0, O.J)(g, () => {
     let e = setTimeout(() => {
         m(!0)
       }, 5e3),
@@ -67,7 +67,7 @@ function Y(e) {
   }), (0, r.jsxs)(r.Fragment, {
     children: [n || i ? null : (0, r.jsx)(M.Z, {
       participant: t
-    }), i || null == c || c.state === k.jm8.ENDED || c.state === k.jm8.FAILED ? null : (0, r.jsx)(S.Z, {
+    }), i || null == c || c.state === L.jm8.ENDED || c.state === L.jm8.FAILED ? null : (0, r.jsx)(S.Z, {
       size: p.ZP.Sizes.SMALL,
       className: W.liveIndicator,
       participant: t,
@@ -86,15 +86,15 @@ function z(e) {
     fit: p,
     inPopout: m,
     inOverlayPopout: S = !1,
-    width: y,
+    width: O,
     focused: M,
-    wrapperClassName: L,
+    wrapperClassName: k,
     paused: Y = !1
   } = e, z = w.Z.getVideoComponent(), G = (0, o.e7)([_.default], () => _.default.getId()), K = (0, E.Z)(), {
     stream: B,
     user: q,
     streamId: J
-  } = t, X = (0, o.e7)([I.Z], () => I.Z.getChannel(B.channelId)), Q = (0, o.e7)([j.Z], () => j.Z.getActiveStreamForUser(q.id, B.guildId), [q.id, B.guildId]), $ = (0, o.e7)([j.Z], () => j.Z.getAllActiveStreams().length > 0), ee = (0, o.e7)([P.Z], () => P.Z.isFocused()), et = (null == Q ? void 0 : Q.ownerId) === G, en = et && !ee && !m, er = null != Q ? (0, h.Z)(Q, q, q.id === G, en) : null, el = y < 195;
+  } = t, X = (0, o.e7)([I.Z], () => I.Z.getChannel(B.channelId)), Q = (0, o.e7)([j.Z], () => j.Z.getActiveStreamForUser(q.id, B.guildId), [q.id, B.guildId]), $ = (0, o.e7)([j.Z], () => j.Z.getAllActiveStreams().length > 0), ee = (0, o.e7)([P.Z], () => P.Z.isFocused()), et = (null == Q ? void 0 : Q.ownerId) === G, en = et && !ee && !m, er = null != Q ? (0, h.Z)(Q, q, q.id === G, en) : null, el = O < 195;
   (0, d.ZP)(() => {
     !$ && (null == X ? void 0 : X.isGuildStageVoice()) && !et && ((0, c.rn)(B), s.Z.updateStageStreamSize(B.channelId, !1))
   });
@@ -107,21 +107,21 @@ function z(e) {
     selected: n,
     isSelfStream: q.id === G
   });
-  if ((null == Q ? void 0 : Q.state) === k.jm8.ENDED) return (0, r.jsx)(N.Z, {
+  if ((null == Q ? void 0 : Q.state) === L.jm8.ENDED) return (0, r.jsx)(N.Z, {
     selected: n,
     stream: Q,
-    width: y
+    width: O
   });
-  if (null != ei || (null == Q ? void 0 : Q.state) === k.jm8.FAILED) return (0, r.jsx)(C.Z, {
+  if (null != ei || (null == Q ? void 0 : Q.state) === L.jm8.FAILED) return (0, r.jsx)(C.Z, {
     avError: ei,
     selected: n,
     stream: t.stream,
-    width: y
+    width: O
   });
   if (t.type === U.fO.HIDDEN_STREAM) return (0, r.jsx)(T.Z, {
     selected: n,
     participant: t,
-    width: y
+    width: O
   });
   if (!(null != Q && !n && null != z && w.Z.supports(F.AN.VIDEO))) return (0, r.jsxs)("div", {
     className: a()(W.content, W.streamPreview, {
@@ -140,7 +140,7 @@ function z(e) {
         children: (0, r.jsx)(u.Text, {
           variant: el ? "text-sm/semibold" : "text-md/semibold",
           color: "none",
-          children: y < 175 ? V.intl.string(V.t["I6JG4+"]) : V.intl.string(V.t["7Xq/nZ"])
+          children: O < 175 ? V.intl.string(V.t["I6JG4+"]) : V.intl.string(V.t["7Xq/nZ"])
         })
       }), $ ? (0, r.jsx)(A.a, {
         className: W.addCTA,
@@ -160,7 +160,7 @@ function z(e) {
     })]
   });
   else return (0, r.jsxs)(r.Fragment, {
-    children: [null != X ? (0, r.jsx)(O.Z, {
+    children: [null != X ? (0, r.jsx)(y.Z, {
       focused: M,
       channelId: X.id,
       guildId: X.guild_id,
@@ -169,12 +169,12 @@ function z(e) {
       stream: B
     }) : null, (0, r.jsx)(b.Z, {
       onResize: i,
-      wrapperClassName: a()(W.videoWrapper, L),
+      wrapperClassName: a()(W.videoWrapper, k),
       className: W.content,
       streamId: J,
       videoComponent: z,
       fit: p,
-      paused: Y || (null == Q ? void 0 : Q.state) === k.jm8.PAUSED || en,
+      paused: Y || (null == Q ? void 0 : Q.state) === L.jm8.PAUSED || en,
       videoSpinnerContext: et ? f.m.SELF_STREAM : f.m.REMOTE_STREAM,
       userId: q.id,
       streamKey: t.id
@@ -196,7 +196,7 @@ function z(e) {
       }
       return e
     }({
-      size: (0, x.L)(y)
+      size: (0, x.L)(O)
     }, er)) : null, (0, r.jsx)(R.Z, {
       stream: B,
       inPopout: m

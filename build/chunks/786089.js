@@ -31,7 +31,7 @@ let P = (0, i.memo)(function(e) {
   var t, n, l, P, j, A;
   let {
     quest: x
-  } = e, [Z, L] = (0, i.useState)(!1), [w, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(!1), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+  } = e, [Z, w] = (0, i.useState)(!1), [L, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(!1), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: V,
     height: H = 0
   } = (0, p.ZP)(), F = (0, h.ZP)(), z = (0, E.B6)(null == (t = x.userStatus) ? void 0 : t.claimedAt, {
@@ -73,7 +73,7 @@ let P = (0, i.memo)(function(e) {
       return i
     }(er, ["content_position", "row_index"]),
     eo = () => {
-      L(!0), b.default.track(S.rMx.QUEST_HOVER, function(e) {
+      w(!0), b.default.track(S.rMx.QUEST_HOVER, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -94,7 +94,7 @@ let P = (0, i.memo)(function(e) {
         quest_id: x.id
       }, ea))
     },
-    es = () => L(!1),
+    es = () => w(!1),
     ec = e => {
       k(!0), b.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
@@ -117,7 +117,7 @@ let P = (0, i.memo)(function(e) {
         ref: G,
         className: T.decoWrapper,
         style: {
-          top: w
+          top: L
         },
         children: (0, r.jsx)(f.Z, {
           avatarDecorationOverride: J,

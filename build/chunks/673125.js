@@ -1,6 +1,6 @@
-/** Chunk was on 93727 **/
+/** Chunk was on 83976 **/
 n.d(t, {
-  Z: () => y
+  Z: () => O
 }), n(539854), n(388685);
 var r, l = n(442837),
   i = n(570140),
@@ -65,7 +65,7 @@ class b extends(r = l.ZP.Store) {
   }
 }
 f(b, "displayName", "SharedCanvasStore");
-let y = new b(i.Z, {
+let O = new b(i.Z, {
   SHARED_CANVAS_UPDATE_LINE_POINTS: function(e) {
     let {
       lineId: t,

@@ -1,4 +1,4 @@
-/** Chunk was on 8787 **/
+/** Chunk was on 22472 **/
 e.exports = {
   popup: "popup_ff5cbf",
   closeIcon: "closeIcon_ff5cbf",

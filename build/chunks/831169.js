@@ -1,4 +1,4 @@
-/** Chunk was on 8787 **/
+/** Chunk was on 22472 **/
 e.exports = {
   header: "header_b87308",
   appIcon: "appIcon_b87308",

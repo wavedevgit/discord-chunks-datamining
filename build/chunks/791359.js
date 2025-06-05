@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => w
+  Z: () => L
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -119,9 +119,9 @@ let x = 15 * E.Z.Millis.MINUTE,
       }
     }) : null
   }),
-  L = a().throttle(() => f.W(!1), 3e5);
+  w = a().throttle(() => f.W(!1), 3e5);
 
-function w() {
+function L() {
   let {
     nowPlayingCards: e,
     loaded: t,
@@ -136,7 +136,7 @@ function w() {
     currentUser: m.default.getCurrentUser()
   })), o = (0, c.e7)([p.Z], () => p.Z.quests);
   i.useEffect(() => (d.Z.wait(() => O.L()), () => d.Z.wait(() => O.v())), [null == a ? void 0 : a.id]), i.useEffect(() => {
-    n && !l && L()
+    n && !l && w()
   }, [n, l]);
   let s = i.useMemo(() => {
       let t = new Map,

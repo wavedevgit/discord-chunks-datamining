@@ -63,11 +63,11 @@ function x(e, t) {
 }
 let Z = [];
 
-function L() {
+function w() {
   c.Z.setSection(T.pJs.ADD_FRIEND)
 }
 
-function w() {
+function L() {
   (0, s.ZDy)(async () => {
     let {
       default: e
@@ -80,7 +80,7 @@ function R(e) {
   let {
     section: t,
     showSpamCta: n
-  } = e, l = i.useMemo(() => n ? w : t !== T.pJs.PENDING ? L : void 0, [n, t]);
+  } = e, l = i.useMemo(() => n ? L : t !== T.pJs.PENDING ? w : void 0, [n, t]);
   return (0, r.jsx)("div", {
     className: j.emptyStateContainer,
     children: (0, r.jsx)(O.Z, {
@@ -97,7 +97,7 @@ let D = function(e) {
   } = (0, h.ZP)(p.Z.FRIENDS_LIST), {
     rows: l,
     section: c
-  } = (0, o.cj)([b.ZP], () => b.ZP.getState()), L = (0, o.e7)([_.Z], () => _.Z.isFocused()), {
+  } = (0, o.cj)([b.ZP], () => b.ZP.getState()), w = (0, o.e7)([_.Z], () => _.Z.isFocused()), {
     relationshipCount: D,
     hasBlockedOrIgnored: k
   } = (0, o.cj)([m.Z], () => ({
@@ -128,20 +128,20 @@ let D = function(e) {
     switch (c) {
       case T.pJs.PENDING:
         return (0, r.jsx)(I.Z, x(A({}, n), {
-          isFocused: L
+          isFocused: w
         }), t);
       case T.pJs.SUGGESTIONS:
         return (0, r.jsx)(S.Z, x(A({}, n), {
-          isFocused: L
+          isFocused: w
         }), t);
       case T.pJs.ONLINE:
       case T.pJs.ALL:
       default:
         return (0, r.jsx)(E.Z, x(A({}, n), {
-          isFocused: L
+          isFocused: w
         }), t)
     }
-  }, [L, c]), B = i.useCallback(e => {
+  }, [w, c]), B = i.useCallback(e => {
     U(x(A({}, M), {
       [c]: e
     }))
@@ -251,7 +251,7 @@ let D = function(e) {
           look: s.zxk.Looks.LINK,
           color: j.viewSpamButtonColor,
           className: j.viewSpamButton,
-          onClick: w,
+          onClick: L,
           size: s.PhG.TINY,
           children: (0, r.jsx)(s.Text, {
             variant: "text-xs/medium",

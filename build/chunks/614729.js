@@ -1,4 +1,4 @@
-/** Chunk was on 8787 **/
+/** Chunk was on 22472 **/
 e.exports = {
   container: "container_ca1a02",
   perksDiscoverability: "perksDiscoverability_ca1a02",

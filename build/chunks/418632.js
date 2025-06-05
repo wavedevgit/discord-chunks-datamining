@@ -1,17 +1,17 @@
-/** Chunk was on 20102 **/
+/** Chunk was on 22472 **/
 n.d(t, {
-  Z: () => g
+  Z: () => b
 }), n(388685);
-var r, i = n(255367),
-  o = n(73800),
-  s = n(512722),
-  l = n.n(s),
-  c = n(442837),
-  a = n(481060),
-  u = n(893776),
-  d = n(468026),
-  f = n(594174),
-  m = n(388032);
+var i, r = n(255367),
+  s = n(73800),
+  l = n(512722),
+  a = n.n(l),
+  o = n(442837),
+  c = n(481060),
+  d = n(893776),
+  u = n(468026),
+  m = n(594174),
+  g = n(388032);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -22,32 +22,32 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
+    }))), i.forEach(function(t) {
       p(e, t, n[t])
     })
   }
   return e
 }
-class h extends(r = o.Component) {
+class f extends(i = s.Component) {
   render() {
     let {
       color: e,
       look: t,
       size: n
     } = this.props;
-    return (0, i.jsx)(a.zxk, {
+    return (0, r.jsx)(c.zxk, {
       look: t,
       size: n,
       color: e,
       disabled: this.state.isSendingVerificationEmail,
       onClick: this.handleResendVerification,
-      children: m.intl.string(m.t.lm1UKi)
+      children: g.intl.string(g.t.lm1UKi)
     })
   }
   constructor(...e) {
@@ -61,35 +61,35 @@ class h extends(r = o.Component) {
       null == t || t(), this.setState({
         isSendingVerificationEmail: !0
       }, () => {
-        u.Z.verifyResend().then(() => (0, a.h7j)(t => {
-          var n, r;
-          return (0, i.jsx)(a.ConfirmModal, (n = b({
-            header: m.intl.string(m.t.LykQYm),
-            confirmText: m.intl.string(m.t.BddRzc),
-            confirmButtonColor: a.zxk.Colors.BRAND
-          }, t), r = r = {
-            children: (0, i.jsx)(a.Text, {
+        d.Z.verifyResend().then(() => (0, c.h7j)(t => {
+          var n, i;
+          return (0, r.jsx)(c.ConfirmModal, (n = h({
+            header: g.intl.string(g.t.LykQYm),
+            confirmText: g.intl.string(g.t.BddRzc),
+            confirmButtonColor: c.zxk.Colors.BRAND
+          }, t), i = i = {
+            children: (0, r.jsx)(c.Text, {
               variant: "text-md/normal",
-              children: m.intl.format(m.t.azKEPz, {
+              children: g.intl.format(g.t.azKEPz, {
                 email: e.email
               })
             })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var r = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, r)
+              var i = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, i)
             }
             return n
-          })(Object(r)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
+          })(Object(i)).forEach(function(e) {
+            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
           }), n))
         })).catch(e => {
           let {
             body: t
-          } = e, n = m.intl.string(m.t.XcrQNz);
-          null != t && t.email && (n = t.email), (0, a.h7j)(e => (0, i.jsx)(d.default, b({
-            title: m.intl.string(m.t.VbTh0N),
+          } = e, n = g.intl.string(g.t.XcrQNz);
+          null != t && t.email && (n = t.email), (0, c.h7j)(e => (0, r.jsx)(u.default, h({
+            title: g.intl.string(g.t.VbTh0N),
             body: n
           }, e)))
         }).then(() => this.setState({
@@ -99,13 +99,13 @@ class h extends(r = o.Component) {
     })
   }
 }
-p(h, "defaultProps", {
-  size: a.zxk.Sizes.MEDIUM,
-  color: a.zxk.Colors.BRAND
+p(f, "defaultProps", {
+  size: c.zxk.Sizes.MEDIUM,
+  color: c.zxk.Colors.BRAND
 });
-let g = c.ZP.connectStores([f.default], () => {
-  let e = f.default.getCurrentUser();
-  return l()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
+let b = o.ZP.connectStores([m.default], () => {
+  let e = m.default.getCurrentUser();
+  return a()(null != e, "ResendEmailVerificationButton: currentUser cannot be undefined"), {
     currentUser: e
   }
-})(h)
+})(f)

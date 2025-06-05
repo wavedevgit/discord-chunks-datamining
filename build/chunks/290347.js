@@ -111,14 +111,14 @@ function T(e) {
     headerClassName: A,
     subHeader: x,
     subHeaderExtra: Z,
-    featureCards: L,
-    changeLogId: w,
+    featureCards: w,
+    changeLogId: L,
     button: R,
     body: D
   } = e, {
     onClose: k,
     transitionState: M
-  } = n, U = (0, p.Dt)(), G = L.length % 2 == 0, B = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [V, H] = i.useState(Date.now()), [F, z] = i.useState(0), [W, Y] = i.useState(0), [K, q] = i.useState(!1), [X, Q] = i.useState(!0), J = i.useRef(V), $ = i.useRef(F), ee = i.useRef(W), et = i.useRef(K), en = i.useRef(X), [er, ei] = i.useState(C), el = i.useRef(!1);
+  } = n, U = (0, p.Dt)(), G = w.length % 2 == 0, B = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [V, H] = i.useState(Date.now()), [F, z] = i.useState(0), [W, Y] = i.useState(0), [K, q] = i.useState(!1), [X, Q] = i.useState(!0), J = i.useRef(V), $ = i.useRef(F), ee = i.useRef(W), et = i.useRef(K), en = i.useRef(X), [er, ei] = i.useState(C), el = i.useRef(!1);
 
   function ea() {
     let e = Date.now(),
@@ -160,27 +160,27 @@ function T(e) {
     if ("video" === l.type || "embed" === l.type) {
       let [e, t] = ea();
       m.default.track(_.rMx.CHANGE_LOG_VIDEO_PLAYED, {
-        change_log_id: w,
+        change_log_id: L,
         seconds_played: Math.round(e / 1e3)
       }), m.default.track(_.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
-        change_log_id: w,
+        change_log_id: L,
         seconds_unmuted: Math.round(t / 1e3)
       })
     }
-  }, [w, l.type]), i.useEffect(() => {
+  }, [L, l.type]), i.useEffect(() => {
     null != T && (0, f.kk)(T);
     let e = Date.now();
     return m.default.track(_.rMx.CHANGE_LOG_OPENED, {
-      change_log_id: w
+      change_log_id: L
     }), () => {
       m.default.track(_.rMx.CHANGE_LOG_CLOSED, {
-        change_log_id: w,
+        change_log_id: L,
         seconds_open: Math.round((Date.now() - e) / 1e3)
       }), null != T && (0, f.EW)(T, {
         dismissAction: E.L.DISMISS
       })
     }
-  }, [T, w]), (0, r.jsxs)(s.Y0X, {
+  }, [T, L]), (0, r.jsxs)(s.Y0X, {
     className: a()(I.root, t),
     transitionState: M,
     "aria-labelledby": U,
@@ -205,7 +205,7 @@ function T(e) {
         poster: l.poster,
         onPlay: e => {
           m.default.track(_.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
-            change_log_id: w
+            change_log_id: L
           }), H(Date.now()), q(!0), Q(e.currentTarget.muted)
         },
         onEnded: e => {
@@ -242,7 +242,7 @@ function T(e) {
         renderLinkComponent: g.iT,
         onPlay: () => {
           m.default.track(_.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
-            change_log_id: w
+            change_log_id: L
           })
         }
       }) : "image" === l.type ? (0, r.jsx)("img", {
@@ -258,11 +258,11 @@ function T(e) {
         variant: "heading-md/medium",
         className: I.bodyText,
         children: D
-      }), L.length > 0 && (0, r.jsx)("div", {
+      }), w.length > 0 && (0, r.jsx)("div", {
         className: a()(I.featureCardGroup, {
           [I.wideStyle]: G
         }),
-        children: L.map((e, t) => (0, r.jsx)(N, v(y({}, e), {
+        children: w.map((e, t) => (0, r.jsx)(N, v(y({}, e), {
           wideStyle: G
         }), "".concat(e.header, "_").concat(t)))
       }), R()]

@@ -1,4 +1,4 @@
-/** Chunk was on 8787 **/
+/** Chunk was on 22472 **/
 e.exports = {
   giftButton: "giftButton__82222",
   innerGiftButton: "innerGiftButton__82222",

@@ -1,13 +1,13 @@
-/** Chunk was on 87040 **/
+/** Chunk was on 80767 **/
 n.d(t, {
-  i: () => o
+  i: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
-  a = n(981631);
+  l = n(981631);
 
-function o() {
+function a() {
   (0, i.ZDy)(async () => {
     let {
       default: e
@@ -30,10 +30,10 @@ function o() {
       }
       return e
     }({
-      analyticsSource: a.Sbl.VOICE_FILTERS,
+      analyticsSource: l.Sbl.VOICE_FILTERS,
       analyticsLocation: {
-        section: a.jXE.VOICE_FILTERS_UPSELL_MODAL,
-        object: a.qAy.BUTTON_CTA
+        section: l.jXE.VOICE_FILTERS_UPSELL_MODAL,
+        object: l.qAy.BUTTON_CTA
       }
     }, t))
   })

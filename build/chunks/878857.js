@@ -1,6 +1,6 @@
-/** Chunk was on 87040 **/
+/** Chunk was on 25026 **/
 n.d(t, {
-  Q: () => a,
+  Q: () => l,
   Z: () => i
 });
 let r = (0, n(818083).B)({
@@ -26,7 +26,7 @@ let r = (0, n(818083).B)({
   }),
   i = r;
 
-function a() {
+function l() {
   return r.getCurrentConfig({
     location: "0a5674_1"
   }, {

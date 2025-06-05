@@ -1,4 +1,4 @@
-/** Chunk was on 93727 **/
+/** Chunk was on 83976 **/
 n.d(t, {
   ZB: () => h,
   ZP: () => v,
@@ -52,7 +52,7 @@ function h(e, t) {
   let S = l.useRef({}),
     {
       visibleParticipants: b,
-      participantTileWidth: y
+      participantTileWidth: O
     } = l.useMemo(() => {
       let n = Date.now(),
         l = (0, i.sortBy)(t, e => (function(e) {
@@ -76,10 +76,10 @@ function h(e, t) {
         h = p.findIndex(E),
         v = null; - 1 !== h && (v = p[h], p.splice(h, 1));
       let b = null == v || f ? e : e - r - u,
-        y = Math.max(0, Math.min(Math.floor((b - u) / (o + u)), c, t.length)),
-        O = Math.min((b - u) / y - u, r),
-        Z = Math.max(0, y - m.length),
-        j = m.slice(0, y),
+        O = Math.max(0, Math.min(Math.floor((b - u) / (o + u)), c, t.length)),
+        y = Math.min((b - u) / O - u, r),
+        Z = Math.max(0, O - m.length),
+        j = m.slice(0, O),
         _ = p.slice(0, Z),
         I = Array(Z);
       if (Z > 0) {
@@ -98,14 +98,14 @@ function h(e, t) {
       let w = I.filter(s.lm);
       S.current = (0, i.keyBy)((0, i.range)(w.length), e => w[e].id);
       let P = [...j, ...w];
-      return null != v && (f && P.length >= y ? P[Math.max(0, P.length - 1)] = v : P.push(v)), {
+      return null != v && (f && P.length >= O ? P[Math.max(0, P.length - 1)] = v : P.push(v)), {
         visibleParticipants: P,
-        participantTileWidth: O
+        participantTileWidth: y
       }
     }, [e, t, h, p, f, c, u, o, r]);
   return {
     visibleParticipants: b,
-    participantTileWidth: y
+    participantTileWidth: O
   }
 }
 

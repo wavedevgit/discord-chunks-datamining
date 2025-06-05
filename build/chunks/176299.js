@@ -32,8 +32,8 @@ var r = n(255367),
   A = n(267161),
   x = n(652515),
   Z = n(544978),
-  L = n(540059),
-  w = n(724383),
+  w = n(540059),
+  L = n(724383),
   R = n(135864),
   D = n(372900),
   k = n(6039),
@@ -116,11 +116,11 @@ function eZ(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let eL = (0, u.Un)({
+let ew = (0, u.Un)({
     createPromise: () => Promise.resolve().then(n.bind(n, 267161)),
     webpackId: 267161
   }),
-  ew = () => (0, r.jsx)("div", {
+  eL = () => (0, r.jsx)("div", {
     className: eA.loader,
     children: (0, r.jsx)(g.$jN, {})
   }),
@@ -128,37 +128,37 @@ let eL = (0, u.Un)({
     createPromise: () => n.e("78431").then(n.bind(n, 650788)),
     webpackId: 650788,
     name: "GuildShopPage",
-    renderLoader: ew
+    renderLoader: eL
   }),
   eD = (0, u.Un)({
     createPromise: () => n.e("12009").then(n.bind(n, 231588)),
     webpackId: 231588,
     name: "GuildHomePage",
-    renderLoader: ew
+    renderLoader: eL
   }),
   ek = (0, u.Un)({
     createPromise: () => Promise.all([n.e("6850"), n.e("9924")]).then(n.bind(n, 545918)),
     webpackId: 545918,
     name: "MemberSafetyPage",
-    renderLoader: ew
+    renderLoader: eL
   }),
   eM = (0, u.Un)({
     createPromise: () => Promise.all([n.e("44156"), n.e("58227"), n.e("58121")]).then(n.bind(n, 603072)),
     webpackId: 603072,
     name: "ChannelsAndRolesPage",
-    renderLoader: ew
+    renderLoader: eL
   }),
   eU = (0, u.Un)({
     createPromise: () => Promise.all([n.e("44156"), n.e("19878"), n.e("37709")]).then(n.bind(n, 599263)),
     webpackId: 599263,
     name: "GuildOnboardingPage",
-    renderLoader: ew
+    renderLoader: eL
   }),
   eG = (0, u.Un)({
     createPromise: () => n.e("44799").then(n.bind(n, 393357)),
     webpackId: 393357,
     name: "GuildPowerupsPage",
-    renderLoader: ew
+    renderLoader: eL
   }),
   eB = e => {
     let {
@@ -265,7 +265,7 @@ let eL = (0, u.Un)({
     }, e) : (0, r.jsx)(eI.Z, {})
   }),
   eH = e => (0, r.jsx)(eB, ex({}, e)),
-  eF = () => (0, r.jsx)(w.Z, {}),
+  eF = () => (0, r.jsx)(L.Z, {}),
   ez = e => null != e.match.params.channelId ? eH(e) : (0, r.jsx)(Q.Z, {}),
   eW = e => {
     let {
@@ -403,8 +403,8 @@ function e5(e) {
     location: u
   });
   let p = (0, h.e7)([N.Z], () => N.Z.isFullscreenInContext()),
-    m = (0, L.TH)("ChannelSidebar"),
-    O = (0, L.Q3)("ChannelSidebar"),
+    m = (0, w.TH)("ChannelSidebar"),
+    O = (0, w.Q3)("ChannelSidebar"),
     I = (0, A.useAppSidebarState)(e => !e.isOpen) && m;
   i.useLayoutEffect(() => {
     if (m) {
@@ -537,8 +537,8 @@ function e4() {
     b = (null == m || null == (e = m.params) ? void 0 : e.channelId) === eN.oC.GUILD_ONBOARDING,
     _ = l || a || o || u || b,
     E = i.useCallback(() => K.Z.openSidebar(), []),
-    O = (0, L.Q3)("AppView"),
-    C = (0, L.TH)("AppView"),
+    O = (0, w.Q3)("AppView"),
+    C = (0, w.TH)("AppView"),
     T = O ? "div" : i.Fragment,
     j = (0, A.useAppSidebarState)(e => !e.isOpen),
     x = (0, h.e7)([N.Z], () => N.Z.isFullscreenInContext()),
@@ -546,7 +546,7 @@ function e4() {
       className: eA.page,
       "data-collapsed": !!C && j
     } : {},
-    w = (0, h.e7)([y.ZP], () => {
+    L = (0, h.e7)([y.ZP], () => {
       var e;
       return (null == (e = y.ZP.getCurrentEmbeddedActivity()) ? void 0 : e.location.kind) === p.E.CONTEXTLESS
     });
@@ -560,7 +560,7 @@ function e4() {
       children: (0, r.jsxs)("div", {
         className: eA.base,
         "data-fullscreen": x,
-        children: [O && !x && (0, r.jsx)(eL, {}), d.tq ? null : (0, r.jsx)(eO.Z, {}), (0, r.jsxs)("div", {
+        children: [O && !x && (0, r.jsx)(ew, {}), d.tq ? null : (0, r.jsx)(eO.Z, {}), (0, r.jsxs)("div", {
           className: eA.content,
           children: [(0, r.jsx)(P.Z, {}), (0, r.jsx)(e5, {
             isOnFullScreenCollectiblesShopRoute: u,
@@ -693,7 +693,7 @@ function e4() {
                   render: e3,
                   disableTrack: !0
                 })]
-              }), w && (0, r.jsx)(v.Z, {})]
+              }), L && (0, r.jsx)(v.Z, {})]
             })
           }))]
         })]

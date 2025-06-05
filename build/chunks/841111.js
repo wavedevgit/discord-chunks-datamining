@@ -1,4 +1,4 @@
-/** Chunk was on 8787 **/
+/** Chunk was on 22472 **/
 e.exports = {
   feature: "feature__4626b",
   featureBorder: "featureBorder__4626b",

@@ -32,8 +32,8 @@ var r = n(255367),
   A = n(150560),
   x = n(558652),
   Z = n(736683),
-  L = n(879438),
-  w = n(251360),
+  w = n(879438),
+  L = n(251360),
   R = n(466962),
   D = n(452081),
   k = n(46140),
@@ -86,7 +86,7 @@ let z = function() {
     scrollPosition: s
   } = (0, m.M)(), u = A.Z.getState().getUtmCurrentContext(), g = (0, j._)({
     location: k.dr.QUEST_HOME_DESKTOP
-  }) ? Z.Z : Z.j, V = (0, L.z)(e => e.registerAssetLoad), H = i.useRef(u);
+  }) ? Z.Z : Z.j, V = (0, w.z)(e => e.registerAssetLoad), H = i.useRef(u);
   i.useEffect(() => {
     H.current = u
   }), i.useEffect(() => {
@@ -119,7 +119,7 @@ let z = function() {
   let Y = z ? G.intl.format(G.t.BCBIlp, {}) : G.intl.format(G.t.lmMBf3, {}),
     K = z ? G.intl.format(G.t.U9FY0N, {}) : G.intl.string(G.t.oWCrBg),
     q = i.useRef(null);
-  return (0, r.jsx)(w.k.Provider, {
+  return (0, r.jsx)(L.k.Provider, {
     value: {
       onAssetLoadComplete: V
     },

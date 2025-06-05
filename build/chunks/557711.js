@@ -1,13 +1,13 @@
-/** Chunk was on 93602 **/
+/** Chunk was on 80767 **/
 n.d(t, {
   Z: () => u
 });
 var r = n(255367);
 n(73800);
-var l = n(120356),
-  i = n.n(l),
-  o = n(481060),
-  a = n(5192),
+var i = n(120356),
+  l = n.n(i),
+  a = n(481060),
+  o = n(5192),
   s = n(829820),
   c = n(862863);
 
@@ -15,42 +15,42 @@ function u(e) {
   let {
     activity: t,
     user: n,
-    channelId: l,
+    channelId: i,
     guildId: u,
     source: d,
-    size: p,
-    look: f,
+    size: f,
+    look: p,
     color: m,
     className: g,
     onAction: b
   } = e, {
-    tooltip: O,
+    tooltip: _,
     loading: h,
-    disabled: y,
-    onClick: v
-  } = (0, s.Fe)(t, n, d, a.ZP.getNickname(u, l, n)), S = () => {
-    null == b || b(), v()
+    disabled: v,
+    onClick: y
+  } = (0, s.Fe)(t, n, d, o.ZP.getNickname(u, i, n)), O = () => {
+    null == b || b(), y()
   };
-  return (0, r.jsx)(o.ua7, {
-    text: O,
+  return (0, r.jsx)(a.ua7, {
+    text: _,
     children: e => {
       let {
         onMouseEnter: n,
-        onMouseLeave: l
+        onMouseLeave: i
       } = e;
-      return (0, r.jsx)(o.zxk, {
-        size: p,
-        className: i()(c.syncButton, g),
+      return (0, r.jsx)(a.zxk, {
+        size: f,
+        className: l()(c.syncButton, g),
         innerClassName: c.syncButtonInner,
-        look: f,
+        look: p,
         color: m,
-        onClick: S,
+        onClick: O,
         onMouseEnter: n,
-        onMouseLeave: l,
-        disabled: y,
+        onMouseLeave: i,
+        disabled: v,
         submitting: h,
-        "aria-label": null != O ? O : t.name,
-        children: (0, r.jsx)(o.iOO, {
+        "aria-label": null != _ ? _ : t.name,
+        children: (0, r.jsx)(a.iOO, {
           size: "xs",
           color: "currentColor"
         })

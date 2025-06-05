@@ -1,4 +1,4 @@
-/** Chunk was on 8787 **/
+/** Chunk was on 22472 **/
 e.exports = {
   guildContainer: "guildContainer__5dba5",
   guildInfoContainer: "guildInfoContainer__5dba5",

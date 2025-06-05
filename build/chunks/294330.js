@@ -35,14 +35,14 @@ function P(e) {
     guild: t,
     onClick: l,
     onView: o
-  } = e, g = (0, h.Q3)("BaseGlobalDiscoveryServersCard"), [m, O] = i.useState(!1), [P, j] = i.useState(!1), [A, x] = i.useState(!1), Z = i.useRef(null), L = i.useCallback(async () => {
+  } = e, g = (0, h.Q3)("BaseGlobalDiscoveryServersCard"), [m, O] = i.useState(!1), [P, j] = i.useState(!1), [A, x] = i.useState(!1), Z = i.useRef(null), w = i.useCallback(async () => {
     j(!0);
     try {
       await l(t.id)
     } finally {
       j(!1)
     }
-  }, [t.id, l]), w = i.useCallback(e => {
+  }, [t.id, l]), L = i.useCallback(e => {
     e && !m && (O(!0), null == o || o(t.id))
   }, [t.id, m, o]), R = i.useCallback(e => {
     (0, u.jW)(e, async () => {
@@ -111,13 +111,13 @@ function P(e) {
       })
     }), (0, r.jsx)(s.$, {
       innerRef: Z,
-      onChange: w,
+      onChange: L,
       active: !m,
       threshold: .55,
       children: (0, r.jsxs)(f.Z, {
         ref: Z,
         className: C.card,
-        onClick: L,
+        onClick: w,
         disabled: P,
         onContextMenu: R,
         "aria-label": v.intl.string(v.t["M9wQ+f"]),

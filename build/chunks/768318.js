@@ -1,11 +1,11 @@
-/** Chunk was on 87040 **/
+/** Chunk was on 25026 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(73800),
   i = n(584825);
 
-function a(e, t) {
+function l(e, t) {
   let n = (0, i.oC)(t);
   return r.useMemo(() => {
     var e;

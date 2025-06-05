@@ -1,31 +1,31 @@
-/** Chunk was on 87040 **/
+/** Chunk was on 25026 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(442837),
   i = n(201895),
-  a = n(557135),
-  o = n(703656),
-  l = n(592125),
+  l = n(557135),
+  a = n(703656),
+  o = n(592125),
   s = n(979651),
   c = n(66999),
-  d = n(981631);
+  u = n(981631);
 
-function u(e, t) {
-  let n = (0, r.e7)([l.Z], () => l.Z.getChannel(t)),
+function d(e, t) {
+  let n = (0, r.e7)([o.Z], () => o.Z.getChannel(t)),
     {
-      needSubscriptionToAccess: u
+      needSubscriptionToAccess: d
     } = (0, c.Z)(null == n ? void 0 : n.id);
-  if (null == n || u) return null;
-  let _ = n.isGuildVocal();
+  if (null == n || d) return null;
+  let m = n.isGuildVocal();
   return {
     navigateToChannel: () => {
-      _ ? a.Z.handleVoiceConnect({
+      m ? l.Z.handleVoiceConnect({
         channel: n,
         connected: s.Z.isInChannel(n.id),
         needSubscriptionToAccess: !1,
         routeDirectlyToChannel: !0
-      }) : (0, o.uL)(d.Z5c.CHANNEL(e, n.id))
+      }) : (0, a.uL)(u.Z5c.CHANNEL(e, n.id))
     },
     ariaLabel: (0, i.ZP)({
       channel: n

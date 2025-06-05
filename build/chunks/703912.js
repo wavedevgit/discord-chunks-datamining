@@ -69,8 +69,8 @@ async function N(e, t, n) {
     guild_id: A,
     channel_id: x,
     prompt: Z,
-    disable_guild_select: L,
-    integration_type: w,
+    disable_guild_select: w,
+    integration_type: L,
     pid: R,
     signal: D
   } = e;
@@ -87,7 +87,7 @@ async function N(e, t, n) {
   if ("string" == typeof P ? k = P.split(" ").filter(e => e.length > 0) : Array.isArray(P) && (k = P), null == b.default.getCurrentUser()) throw new O.Z({
     errorCode: y.lTL.OAUTH2_ERROR
   }, "Client is not logged in");
-  if (null != w) l = Number(w);
+  if (null != L) l = Number(L);
   else {
     let e = e => {
         var t;
@@ -158,7 +158,7 @@ async function N(e, t, n) {
     guildId: A,
     channelId: x,
     prompt: Z,
-    disableGuildSelect: L,
+    disableGuildSelect: w,
     disclosures: s,
     integrationType: l,
     pid: R

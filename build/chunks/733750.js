@@ -1,4 +1,4 @@
-/** Chunk was on 8787 **/
+/** Chunk was on 22472 **/
 e.exports = {
   category: "category__41c03",
   categoryDivider: "categoryDivider__41c03",

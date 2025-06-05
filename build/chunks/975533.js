@@ -33,7 +33,7 @@ var i = n(570140),
   x = n(65154);
 let Z = !1;
 
-function L(e, t) {
+function w(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : x.Yn.DEFAULT,
     i = performance.now();
   if (!Z && e) r = i;
@@ -53,7 +53,7 @@ function L(e, t) {
   }
   y.Z.getMediaEngine().eachConnection(n => n.setForceAudioInput(e, t), n)
 }
-let w = {
+let L = {
   [j.kg4.TOGGLE_PRIORITY_SPEAKER]: {
     onTrigger() {},
     keyEvents: {}
@@ -64,7 +64,7 @@ let w = {
   },
   [j.kg4.PUSH_TO_TALK]: {
     onTrigger(e, t) {
-      y.Z.getMode(t.context) === j.pM4.PUSH_TO_TALK && (w[j.kg4.PUSH_TO_TALK].isPressed = e, L(e, !1, t.context))
+      y.Z.getMode(t.context) === j.pM4.PUSH_TO_TALK && (L[j.kg4.PUSH_TO_TALK].isPressed = e, w(e, !1, t.context))
     },
     keyEvents: {
       keyup: !0,
@@ -76,7 +76,7 @@ let w = {
     onTrigger(e) {
       (y.Z.getMode() === j.pM4.PUSH_TO_TALK || P.Z.getCurrentConfig({
         location: "keybinds"
-      }).onPTTKeybind) && (w[j.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, L(e, !0))
+      }).onPTTKeybind) && (L[j.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, w(e, !0))
     },
     keyEvents: {
       keyup: !0,
@@ -88,7 +88,7 @@ let w = {
     onTrigger(e) {
       y.Z.getMode() === j.pM4.VOICE_ACTIVITY && P.Z.getCurrentConfig({
         location: "keybinds"
-      }).separateKeybind && (w[j.kg4.VAD_PRIORITY].isPressed = e, L(e, !0))
+      }).separateKeybind && (L[j.kg4.VAD_PRIORITY].isPressed = e, w(e, !0))
     },
     keyEvents: {
       keyup: !0,
@@ -98,7 +98,7 @@ let w = {
   },
   [j.kg4.PUSH_TO_MUTE]: {
     onTrigger(e) {
-      y.Z.getMode() === j.pM4.VOICE_ACTIVITY && (w[j.kg4.PUSH_TO_MUTE].isPressed = e, l.Z.setTemporarySelfMute(e))
+      y.Z.getMode() === j.pM4.VOICE_ACTIVITY && (L[j.kg4.PUSH_TO_MUTE].isPressed = e, l.Z.setTemporarySelfMute(e))
     },
     keyEvents: {
       keyup: !0,
@@ -281,7 +281,7 @@ class R extends d.Z {
   _initialize() {
     i.Z.wait(() => i.Z.dispatch({
       type: "KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS",
-      keybinds: w
+      keybinds: L
     }))
   }
   _terminate() {}
