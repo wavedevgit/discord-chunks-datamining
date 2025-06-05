@@ -128,7 +128,7 @@ let D = l.forwardRef(function(e, t) {
       })
     })
   }));
-  if (null == p) return b();
+  if (null == p || !o) return b();
   {
     let e = (0, r.jsxs)(r.Fragment, {
       children: [p, "" !== (null != v ? v : "").trim() && (0, r.jsx)(d.M2$, {
@@ -163,7 +163,7 @@ function T(e) {
     handleSeekForwardBtnClick: R,
     handleControlBarPendingInteraction: M,
     onVolumeChange: V
-  } = e, B = (0, p.Q3)("ListSectionItem"), F = (0, f.km)(e => e.volume), Z = (0, f.km)(e => e.setVolume), q = (0, f.km)(e => e.muted), U = (0, f.km)(e => e.setMuted), Q = (0, f.km)(e => e.transcriptEnabled), G = (0, f.km)(e => e.captionEnabled), Y = (0, f.km)(e => e.fullScreenEnabled), z = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), H = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [W, X] = l.useState(q ? 0 : F), [K, $] = l.useState(!1), [J, ee] = l.useState(!1), [{
+  } = e, B = (0, p.Q3)("ListSectionItem"), F = (0, f.km)(e => e.volume), Z = (0, f.km)(e => e.setVolume), q = (0, f.km)(e => e.muted), U = (0, f.km)(e => e.setMuted), Q = (0, f.km)(e => e.transcriptEnabled), G = (0, f.km)(e => e.captionEnabled), Y = (0, f.km)(e => e.fullScreenEnabled), z = (0, s.e7)([m.Z], () => m.Z.useReducedMotion), H = (0, s.e7)([m.Z], () => m.Z.keyboardModeEnabled), [W, K] = l.useState(q ? 0 : F), [X, $] = l.useState(!1), [J, ee] = l.useState(!1), [{
     volumeAnimSpring: et
   }, en] = (0, d.q_F)(() => ({
     from: {
@@ -175,7 +175,7 @@ function T(e) {
       clamp: !0
     }
   })), er = l.useRef(null), el = l.useCallback(e => {
-    null != o.current && (e !== o.current.volume && (o.current.volume = e), e !== W && X(e))
+    null != o.current && (e !== o.current.volume && (o.current.volume = e), e !== W && K(e))
   }, [o, W]), eo = l.useCallback(() => {
     null != o.current && (0 === W ? (el(F), U(!1), V(F)) : (Z(W), el(0), U(!0), V(0)))
   }, [o, W, el, F, U, Z, V]), ei = () => {
@@ -209,11 +209,11 @@ function T(e) {
   l.useEffect(() => {
     null != er.current && er.current.focus()
   }, []), l.useEffect(() => (en({
-    volumeAnimSpring: J || K ? 1 : 0,
+    volumeAnimSpring: J || X ? 1 : 0,
     immediate: z
   }), () => {
     et.stop()
-  }), [J, K, en, z, et]), l.useEffect(() => (window.addEventListener("keydown", es), () => {
+  }), [J, X, en, z, et]), l.useEffect(() => (window.addEventListener("keydown", es), () => {
     window.removeEventListener("keydown", es)
   }), [es]);
   let ec = 0 === W ? d.OyP : W < .5 ? d.X2j : d.gj8,
