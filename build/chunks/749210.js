@@ -249,6 +249,12 @@ let G = {
     },
     oldFormErrors: !0,
     rejectWithError: !1
+  }).then(() => {
+    o.Z.dispatch({
+      type: "GUILD_MEMBER_REMOVE_LOCAL",
+      guildId: e,
+      userId: t
+    })
   }),
   setCommunicationDisabledUntil(e) {
     let {
