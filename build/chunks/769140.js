@@ -75,18 +75,18 @@ function B(e) {
   if (null == H || null == Y || !1 === i.discoverable) return null;
   let ei = () => {
       let e = e => {
-        e.stopPropagation(), q({
+        e.stopPropagation(), $ && (q({
           action: "PRESS_IMAGE"
-        }), l.default.selectVoiceChannel(i.channelId), (0, c.iV)(i), null == F || F()
+        }), l.default.selectVoiceChannel(i.channelId), (0, c.iV)(i), null == F || F())
       };
       return null == er && J ? (0, r.jsx)("div", {
         className: j.preview,
         children: (0, r.jsx)(s.$jN, {})
       }) : null == er ? (0, r.jsxs)(s.P3F, {
-        className: a()(j.preview, j.overlay, {
-          [j.clickable]: $
-        }),
-        onClick: $ ? e : void 0,
+        className: a()(j.preview, j.overlay, $ ? j.clickable : j.disabled),
+        onClick: e,
+        "aria-label": (0, E.gR)(ee),
+        "aria-disabled": !$,
         children: [(0, r.jsx)("img", {
           alt: "",
           src: Z === x.BRd.LIGHT ? G : U
@@ -102,10 +102,10 @@ function B(e) {
           })]
         })]
       }) : (0, r.jsxs)(s.P3F, {
-        className: a()(j.preview, j.overlay, {
-          [j.clickable]: $
-        }),
-        onClick: $ ? e : void 0,
+        className: a()(j.preview, j.overlay, $ ? j.clickable : j.disabled),
+        onClick: e,
+        "aria-label": (0, E.gR)(ee),
+        "aria-disabled": !$,
         children: [(0, r.jsx)("img", {
           alt: "",
           src: er,
