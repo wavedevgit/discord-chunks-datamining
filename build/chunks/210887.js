@@ -62,7 +62,7 @@ let v = 0,
   T = I[S];
 
 function A() {
-  return (0, d.Z)(S, I)
+  return (0, d.Z)(S, I, T)
 }
 
 function N() {

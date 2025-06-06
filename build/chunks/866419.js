@@ -1,7 +1,9 @@
-/** Chunk was on 48566 **/
-e.exports = {
-  content: "content_ea12e5",
-  header: "header_ea12e5",
-  headerShortcut: "headerShortcut_ea12e5",
-  tips: "tips_ea12e5"
+/** Chunk was on web.js **/
+"use strict";
+
+function r() {
+  return !1
 }
+n.d(t, {
+  z: () => r
+}), n(581883)

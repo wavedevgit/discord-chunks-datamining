@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => M
+  Z: () => j
 }), n(388685);
 var a, o = n(442837),
   s = n(704215),
@@ -20,10 +20,11 @@ var a, o = n(442837),
   b = n(74538),
   y = n(51144),
   O = n(47760),
-  v = n(469115),
-  I = n(874893);
+  v = n(866419),
+  I = n(469115),
+  S = n(874893);
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,9 +32,9 @@ function S(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let T = !0,
-  A = !1,
-  N = e => {
+let A = !0,
+  N = !1,
+  C = e => {
     let {
       presetId: t
     } = e;
@@ -41,9 +42,9 @@ let T = !0,
       r = void 0;
       return
     }
-    r = v.qt[t]
+    r = I.qt[t]
   },
-  C = e => {
+  P = e => {
     let {
       mobileThemesIndex: t
     } = e;
@@ -53,56 +54,56 @@ let T = !0,
     }
     i = t
   },
-  P = e => {
+  R = e => {
     r = void 0
   },
-  R = e => {
+  w = e => {
     let {
       channelId: t,
       guildId: n
     } = e, r = E.default.getCurrentUser();
     if (null == t || null == n || (0, c.un)(s.z.CLIENT_THEMES_COACHMARK) || !(0, y.Fc)(r)) return;
     let i = g.Z.getChannel(t);
-    null != i && (0, m.zi)(i.type) && (A = !0)
+    null != i && (0, m.zi)(i.type) && (N = !0)
   };
 
-function w() {
-  T && (r = void 0), A = !1
+function D() {
+  A && (r = void 0), N = !1
 }
-let D = () => {
+let L = () => {
     let e = !b.ZP.canUseClientThemes(E.default.getCurrentUser());
-    if (e === T) return !1;
-    T = e
+    if (e === A) return !1;
+    A = e
   },
-  L = () => {
+  x = () => {
     if (!u.Z.shouldSync("appearance")) return !1;
     let e = p.L1.getSetting().backgroundGradientPresetId;
     if (null == e) {
       if (null == r) return !1;
       r = void 0
     } else {
-      let t = v.qt[e];
+      let t = I.qt[e];
       if (t === r) return !1;
       r = t
     }
   },
-  x = () => {
-    if (!u.Z.shouldSync("appearance")) return !1;
+  k = () => {
+    if (!u.Z.shouldSync("appearance") || (0, v.z)()) return !1;
     let e = p.L1.getSetting().backgroundGradientPresetId;
-    if (_.ZP.useSystemTheme === I.KW.ON && null != e && (0, d.hi)(I.KW.OFF), null == e) {
+    if (_.ZP.useSystemTheme === S.KW.ON && null != e && (0, d.hi)(S.KW.OFF), null == e) {
       null != r && (r = void 0);
       return
     }
-    let t = v.qt[e],
+    let t = I.qt[e],
       n = (null == r ? void 0 : r.id) === (null == t ? void 0 : t.id);
     null == t || n || (r = t)
   };
-class k extends(a = o.ZP.PersistedStore) {
+class M extends(a = o.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? v.qt[e.gradientPresetId] : void 0), this.waitFor(E.default, f.Z, g.Z, u.Z, h.Z), this.syncWith([E.default], D), this.syncWith([u.Z], L), this.syncWith([h.Z], x)
+    null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? I.qt[e.gradientPresetId] : void 0), this.waitFor(E.default, f.Z, g.Z, u.Z, h.Z), this.syncWith([E.default], L), this.syncWith([u.Z], x), this.syncWith([h.Z], k)
   }
   getState() {
-    return T ? {} : {
+    return A ? {} : {
       gradientPresetId: null == r ? void 0 : r.id
     }
   }
@@ -113,16 +114,16 @@ class k extends(a = o.ZP.PersistedStore) {
     return null == this.gradientPreset ? null : (0, O.VK)(this.gradientPreset)
   }
   get isPreview() {
-    return T
+    return A
   }
   get isCoachmark() {
-    return A
+    return N
   }
   get mobilePendingThemeIndex() {
     return i
   }
   constructor(...e) {
-    super(...e), S(this, "migrations", [e => {
+    super(...e), T(this, "migrations", [e => {
       var t;
       return {
         gradientPresetId: null == e || null == (t = e.gradientPreset) ? void 0 : t.id
@@ -130,12 +131,12 @@ class k extends(a = o.ZP.PersistedStore) {
     }])
   }
 }
-S(k, "displayName", "ClientThemesBackgroundStore"), S(k, "persistKey", "ClientThemesBackgroundStore");
-let M = new k(l.Z, {
-  UPDATE_BACKGROUND_GRADIENT_PRESET: N,
-  UPDATE_MOBILE_PENDING_THEME_INDEX: C,
-  RESET_PREVIEW_CLIENT_THEME: P,
-  CLIENT_THEMES_EDITOR_CLOSE: w,
-  CHANNEL_SELECT: R,
-  LOGOUT: w
+T(M, "displayName", "ClientThemesBackgroundStore"), T(M, "persistKey", "ClientThemesBackgroundStore");
+let j = new M(l.Z, {
+  UPDATE_BACKGROUND_GRADIENT_PRESET: C,
+  UPDATE_MOBILE_PENDING_THEME_INDEX: P,
+  RESET_PREVIEW_CLIENT_THEME: R,
+  CLIENT_THEMES_EDITOR_CLOSE: D,
+  CHANNEL_SELECT: w,
+  LOGOUT: D
 })
