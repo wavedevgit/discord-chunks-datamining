@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(594190),
   E = n(38618),
   O = n(501640),
-  I = n(924301),
-  y = n(734307),
+  y = n(924301),
+  I = n(734307),
   v = n(355298),
   C = n(454991),
   S = n(32300),
@@ -111,7 +111,7 @@ class Q extends i.PureComponent {
       let t = _.ZP.getCurrentGameForAnalytics(),
         n = null != t ? t.name : "",
         r = P.Z.getStageInstanceByChannel(e.voiceChannelId),
-        i = I.ZP.getActiveEventByChannel(e.voiceChannelId);
+        i = y.ZP.getActiveEventByChannel(e.voiceChannelId);
       z.default.track(K.rMx.LEAVE_VOICE_CHANNEL, X({
         channel_id: e.voiceChannelId,
         channel_type: e.voiceChannelType,
@@ -131,7 +131,7 @@ class Q extends i.PureComponent {
       let e = _.ZP.getCurrentGameForAnalytics(),
         t = null != e ? e.name : "",
         n = P.Z.getStageInstanceByChannel(E),
-        r = I.ZP.getActiveEventByChannel(E);
+        r = y.ZP.getActiveEventByChannel(E);
       (0, u.yw)(K.rMx.CHANNEL_OPENED, X({}, (0, u.$H)(E))), (0, p.a)(K.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: E
       });
@@ -223,7 +223,7 @@ class Q extends i.PureComponent {
         postable_channels: er,
         premium_progress_bar_enabled: null != (r = null == (n = w.Z.getGuild(M.Z.getGuildId())) ? void 0 : n.premiumProgressBarEnabled) && r,
         viewing_all_channels: !G.ZP.isOptInEnabled(q),
-        num_recent_channels: y.Z.recentsChannelCount(q)
+        num_recent_channels: I.Z.recentsChannelCount(q)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -286,7 +286,7 @@ function J() {
   let [e, t] = (0, l.Wu)([k.Z], () => [k.Z.getVoiceChannelId(), k.Z.getChannelId()], []), n = (0, l.e7)([A.Z], () => A.Z.getChannel(t), [t]), i = (0, l.e7)([g.Z], () => (null == n ? void 0 : n.id) != null && g.Z.getChatOpen(n.id), [n]), a = null == n ? void 0 : n.nsfw, o = (0, l.e7)([A.Z], () => A.Z.getChannel(e), [e]), s = (0, l.e7)([M.Z], () => M.Z.getGuildId(), []), u = (0, l.e7)([w.Z], () => w.Z.getGuild(s), [s]), d = (0, l.e7)([B.default], () => B.default.getCurrentUser(), []), p = (0, l.e7)([Z.ZP], () => {
     var e, t;
     return null != d && null != s && null != (t = null == (e = Z.ZP.getMember(s, d.id)) ? void 0 : e.isPending) && t
-  }, [d, s]), h = (0, l.e7)([H.ZP], () => H.ZP.getState().section, []), f = (0, l.e7)([V.Z], () => V.Z.getHomeLink(), []), m = (0, l.e7)([E.Z], () => E.Z.isConnected(), []), [b, I] = (0, l.Wu)([L.Z], () => [L.Z.isVideoEnabled(), L.Z.isScreenSharing()], []), y = (0, l.e7)([U.Z], () => U.Z.getPrimaryActivity(), []), C = (0, l.e7)([_.ZP], () => _.ZP.getCurrentGameForAnalytics(), []), S = (0, O.Z)(s), N = (0, l.e7)([v.Z], () => v.Z.getMessageRequestsCount(), []), T = {
+  }, [d, s]), h = (0, l.e7)([H.ZP], () => H.ZP.getState().section, []), f = (0, l.e7)([V.Z], () => V.Z.getHomeLink(), []), m = (0, l.e7)([E.Z], () => E.Z.isConnected(), []), [b, y] = (0, l.Wu)([L.Z], () => [L.Z.isVideoEnabled(), L.Z.isScreenSharing()], []), I = (0, l.e7)([U.Z], () => U.Z.getPrimaryActivity(), []), C = (0, l.e7)([_.ZP], () => _.ZP.getCurrentGameForAnalytics(), []), S = (0, O.Z)(s), N = (0, l.e7)([v.Z], () => v.Z.getMessageRequestsCount(), []), T = {
     selectedChannelId: t,
     isNSFWChannel: a,
     selectedGuildId: s,
@@ -294,16 +294,16 @@ function J() {
     homeLink: f,
     connected: m,
     videoEnabled: b,
-    isScreenSharing: I,
+    isScreenSharing: y,
     voiceChannelId: null == o ? void 0 : o.id,
     voiceChannelGuildId: null == o ? void 0 : o.getGuildId(),
     voiceChannelType: null == o ? void 0 : o.type,
     voiceChannelBitrate: null == o ? void 0 : o.bitrate,
     runningGame: C,
     runningGamePid: null != C ? C.pid : null,
-    gamePlatform: (0, c.Z)(y),
-    gameName: null != y ? y.name : null,
-    gameId: null != y ? y.application_id : null,
+    gamePlatform: (0, c.Z)(I),
+    gameName: null != I ? I.name : null,
+    gameId: null != I ? I.application_id : null,
     gameExeName: null != C ? C.exeName : null,
     hasPreviewEnabled: null == u ? void 0 : u.features.has(K.oNc.PREVIEW_ENABLED),
     isMemberPending: p,

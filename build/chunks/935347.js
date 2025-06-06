@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(706454),
   E = n(215427),
   O = n(820254),
-  I = n(358085),
-  y = n(998502),
+  y = n(358085),
+  I = n(998502),
   v = n(905656),
   C = n(981631),
   S = n(388032),
@@ -205,7 +205,7 @@ class P extends i.PureComponent {
     }()), T(this, "handleReady", () => {
       this.setState({
         ready: !0
-      }), (0, I.isDesktop)() && (y.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), y.ZP.send("UPDATE_OPEN_ON_STARTUP"))
+      }), (0, y.isDesktop)() && (I.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), I.ZP.send("UPDATE_OPEN_ON_STARTUP"))
     }), T(this, "setVideoRef", e => {
       this.videoRef = e
     }), T(this, "setProblemsTimeout", () => {

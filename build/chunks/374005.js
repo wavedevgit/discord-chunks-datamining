@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  b: () => y
+  b: () => I
 });
 var r = n(255367),
   i = n(73800),
@@ -21,7 +21,7 @@ var r = n(255367),
   E = n(388032),
   O = n(128654);
 
-function I(e) {
+function y(e) {
   var t, n;
   let {
     analyticsLocations: i
@@ -64,7 +64,7 @@ function I(e) {
     }), t))
   })
 }
-let y = i.memo(function() {
+let I = i.memo(function() {
   let e = (0, c.Q3)("AppPanels"),
     t = i.useRef(null);
   return (0, a.PM)(t, e => {
@@ -80,7 +80,7 @@ let y = i.memo(function() {
       containerRef: t,
       children: [e && (0, r.jsx)(m.Z, {}), (0, r.jsx)(f.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(b.Z, {
         section: _.jXE.ACTIVITY_PANEL,
-        children: (0, r.jsx)(I, {
+        children: (0, r.jsx)(y, {
           className: O.activityPanel
         })
       }), (0, r.jsx)(b.Z, {

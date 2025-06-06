@@ -22,8 +22,8 @@ var r = n(255367),
   _ = n(134432),
   E = n(768581),
   O = n(356164),
-  I = n(826946),
-  y = n(981631),
+  y = n(826946),
+  I = n(981631),
   v = n(388032),
   C = n(727615),
   S = n(129512),
@@ -82,7 +82,7 @@ function P(e) {
         }), i))
       }
     })
-  }, [t]), D = (0, d.ZP)(), k = t.features.has(y.oNc.HUB), M = i.useMemo(() => {
+  }, [t]), D = (0, d.ZP)(), k = t.features.has(I.oNc.HUB), M = i.useMemo(() => {
     let e = E.ZP.getGuildDiscoverySplashURL({
       id: t.id,
       splash: t.discoverySplash,
@@ -91,9 +91,9 @@ function P(e) {
     if (null != e) return e;
     if (k) return T;
     switch (D) {
-      case y.BRd.DARK:
+      case I.BRd.DARK:
         return S;
-      case y.BRd.LIGHT:
+      case I.BRd.LIGHT:
         return N
     }
   }, [t.discoverySplash, t.id, k, D]), U = g ? 48 : 40, G = i.useMemo(() => E.ZP.getGuildIconURL({
@@ -133,7 +133,7 @@ function P(e) {
               className: C.bannerImage,
               onLoad: () => x(!0)
             })
-          }), (0, r.jsx)(I.Z, {
+          }), (0, r.jsx)(y.Z, {
             className: C.maximizeIcon,
             guildId: t.id
           }), (0, r.jsx)("div", {

@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(769654),
   E = n(601964),
   O = n(430824),
-  I = n(843445),
-  y = n(981631),
+  y = n(843445),
+  I = n(981631),
   v = n(388032),
   C = n(629811);
 
@@ -85,7 +85,7 @@ class N extends i.PureComponent {
         className: C.joinedCheckmark
       })]
     })) : i && t && (d = v.intl.string(v.t.XpeFYm)) : (d = v.intl.string(v.t.dKhVQE), p = this.handleLogin), (0, r.jsxs)("div", {
-      className: a()(o, s === I.b.SMALL ? C.inviteSmall : C.inviteLarge),
+      className: a()(o, s === y.b.SMALL ? C.inviteSmall : C.inviteLarge),
       children: [(0, r.jsx)(h.Z, {
         children: v.intl.string(v.t.s1KcLi)
       }), (0, r.jsxs)("div", {
@@ -129,14 +129,14 @@ class N extends i.PureComponent {
       else try {
         await u.Z.joinGuild(e.id, {
           lurker: !0,
-          source: y.vtS.APPLICATION_STORE
+          source: I.vtS.APPLICATION_STORE
         }), i()
       } catch (e) {}
     }), S(this, "handleLogin", () => {
       let e = {
-        redirect_to: y.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
+        redirect_to: I.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
-      (0, b.uL)(y.Z5c.LOGIN, {
+      (0, b.uL)(I.Z5c.LOGIN, {
         search: (0, o.stringify)(e),
         source: "verified_guild_invite"
       })

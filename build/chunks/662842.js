@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(497656),
   E = n(554747),
   O = n(230900),
-  I = n(854698),
-  y = n(703656),
+  y = n(854698),
+  I = n(703656),
   v = n(922482),
   C = n(565799),
   S = n(501655),
@@ -77,7 +77,7 @@ function D(e) {
       isEventNoticeHidden: d,
       isStageNoticeHidden: h,
       isStudyRoomNotice: m
-    } = e, _ = null != n && null != i && !h, E = null != t ? (0, I.DK)(t) : null;
+    } = e, _ = null != n && null != i && !h, E = null != t ? (0, y.DK)(t) : null;
     if (m && null != i) {
       let e = (0, p.KS)(i);
       return {
@@ -302,7 +302,7 @@ function D(e) {
       size: c.zxk.Sizes.SMALL,
       color: c.zxk.Colors.GREEN,
       onClick: () => {
-        if (X) null != l && null != l.getGuildId() && ((0, v.Cq)(l), (0, y.XU)(l.getGuildId(), l.id));
+        if (X) null != l && null != l.getGuildId() && ((0, v.Cq)(l), (0, I.XU)(l.getGuildId(), l.id));
         else {
           if (null == d) return;
           (0, h.bO)({

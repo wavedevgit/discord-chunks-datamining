@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(283595),
   E = n(417363),
   O = n(626135),
-  I = n(804739),
-  y = n(346329),
+  y = n(804739),
+  I = n(346329),
   v = n(981631),
   C = n(388032);
 
@@ -89,7 +89,7 @@ function P(e) {
       return N(S({}, e), {
         libraryApplication: i,
         canJoin: null != t && (0, d.Z)(t, v.xjy.JOIN) && t.type === v.IIU.PLAYING,
-        canPlay: (0, I.t)({
+        canPlay: (0, y.t)({
           LibraryApplicationStore: _.Z,
           LaunchableGameStore: g.Z,
           DispatchApplicationStore: E.Z,
@@ -150,7 +150,7 @@ function P(e) {
       return (0, r.jsx)(a.sNh, {
         id: "play-".concat(n.session_id),
         action: function() {
-          (0, y.playApplication)(i.id, l, {
+          (0, I.playApplication)(i.id, l, {
             analyticsParams: {
               location: N(S({}, o), {
                 object: v.qAy.LIST_ITEM

@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(711237),
   E = n(110924),
   O = n(100527),
-  I = n(906732),
-  y = n(211242),
+  y = n(906732),
+  I = n(211242),
   v = n(785203),
   C = n(745837),
   S = n(13228),
@@ -83,7 +83,7 @@ function eO(e, t, n) {
   }) : e[t] = n, e
 }
 
-function eI(e) {
+function ey(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -96,7 +96,7 @@ function eI(e) {
   return e
 }
 
-function ey(e, t) {
+function eI(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -228,7 +228,7 @@ class eN extends i.PureComponent {
     } = this.state, g = i || l || a;
     return null == t ? null : (0, U.jW)({
       location: "guild_sidebar"
-    }).entrypoints ? (0, r.jsx)(I.Gt, {
+    }).entrypoints ? (0, r.jsx)(y.Gt, {
       value: o,
       children: (0, r.jsx)(eu.ZP, {
         guild: t,
@@ -243,7 +243,7 @@ class eN extends i.PureComponent {
         animationOverlayHeight: p,
         children: this.renderGuildHeaderNotices(n)
       })
-    }) : (0, r.jsx)(I.Gt, {
+    }) : (0, r.jsx)(y.Gt, {
       value: o,
       children: (0, r.jsx)(f.KeG, {
         targetElementRef: this.guildHeaderRef,
@@ -260,7 +260,7 @@ class eN extends i.PureComponent {
           var {
             onClick: l
           } = i, a = ev(i, ["onClick"]);
-          return (0, r.jsx)(eu.ZP, ey(eI({
+          return (0, r.jsx)(eu.ZP, eI(ey({
             ref: this.guildHeaderRef,
             guild: t,
             controller: c,
@@ -319,7 +319,7 @@ class eN extends i.PureComponent {
         })
       });
       let e = n.id === eb._ ? ec.j : ec.E;
-      return (0, r.jsx)(e, ey(eI({
+      return (0, r.jsx)(e, eI(ey({
         guild: n
       }, a), {
         guildBanner: this.getGuildBannerHash(),
@@ -358,7 +358,7 @@ class eN extends i.PureComponent {
         setHasSubheader: e => this.setState({
           hasGuildSubheader: e
         })
-      }), this.renderChannelList(), (0, r.jsx)(I.Gt, {
+      }), this.renderChannelList(), (0, r.jsx)(y.Gt, {
         value: t,
         children: this.renderFooter()
       })]
@@ -393,7 +393,7 @@ class eN extends i.PureComponent {
         let {
           default: e
         } = await n.e("92795").then(n.bind(n, 652171));
-        return n => (0, r.jsx)(e, ey(eI({}, n), {
+        return n => (0, r.jsx)(e, eI(ey({}, n), {
           guild: t
         }))
       })
@@ -405,7 +405,7 @@ class eN extends i.PureComponent {
         let {
           default: e
         } = await Promise.all([n.e("7654"), n.e("44156"), n.e("55616"), n.e("49286"), n.e("6850"), n.e("58227"), n.e("32652"), n.e("54408"), n.e("20087"), n.e("92754"), n.e("87154"), n.e("33213"), n.e("15875")]).then(n.bind(n, 545135));
-        return n => (0, r.jsx)(e, ey(eI({}, n), {
+        return n => (0, r.jsx)(e, eI(ey({}, n), {
           guild: t
         }))
       })
@@ -529,14 +529,14 @@ function eT(e) {
     $ = (0, E.Z)(n),
     {
       analyticsLocations: ec
-    } = (0, I.ZP)(O.Z.GUILD_HEADER),
+    } = (0, y.ZP)(O.Z.GUILD_HEADER),
     {
       analyticsLocations: eu
-    } = (0, I.ZP)(O.Z.GUILD_CHANNEL_LIST_FOOTER);
+    } = (0, y.ZP)(O.Z.GUILD_CHANNEL_LIST_FOOTER);
   i.useEffect(() => {
     n !== $ && K(!F)
   }, [n, $, F]);
-  let [ed, ep] = (0, T.ZP)(e => [eg.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(em.R.GUILD_HEADER_TOOLTIPS)], u.X), eh = (0, v.Z)(o), eb = (0, f.s9z)(f.JQI), e_ = (0, d.e7)([en.Z], () => en.Z.hasLayers()), eE = (0, d.e7)([Y.Z], () => Y.Z.shouldShow(eC)), eO = m && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !es.s.isDisallowPopupsSet(), eI = (0, d.e7)([ee.Z], () => ee.Z.getMemberCount(n)), ey = m && null != eI && eI >= 30 && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !es.s.isDisallowPopupsSet(), ev = b && null != o && (o.hasFeature(ef.oNc.COMMUNITY) || null != eI && eI > 50), eS = (0, L.Z)(n), eT = (null == o ? void 0 : o.hasFeature(ef.oNc.HUB)) === !0, eP = m && (null == o ? void 0 : o.hasFeature(ef.oNc.DISCOVERABLE)) === !0, ej = (0, y.Q)(), eA = (m || (null == o ? void 0 : o.premiumTier) === ef.Eu4.NONE) && !es.s.isDisallowPopupsSet() && !ej, ex = (0, d.e7)([D.Z, en.Z], () => null != o && null != R && m && !en.Z.hasLayers() && D.Z.shouldShowGuildTemplateDirtyTooltip(n)), eZ = (0, d.e7)([X.Z], () => X.Z.getChannel(a)), {
+  let [ed, ep] = (0, T.ZP)(e => [eg.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(em.R.GUILD_HEADER_TOOLTIPS)], u.X), eh = (0, v.Z)(o), eb = (0, f.s9z)(f.JQI), e_ = (0, d.e7)([en.Z], () => en.Z.hasLayers()), eE = (0, d.e7)([Y.Z], () => Y.Z.shouldShow(eC)), eO = m && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !es.s.isDisallowPopupsSet(), ey = (0, d.e7)([ee.Z], () => ee.Z.getMemberCount(n)), eI = m && null != ey && ey >= 30 && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !es.s.isDisallowPopupsSet(), ev = b && null != o && (o.hasFeature(ef.oNc.COMMUNITY) || null != ey && ey > 50), eS = (0, L.Z)(n), eT = (null == o ? void 0 : o.hasFeature(ef.oNc.HUB)) === !0, eP = m && (null == o ? void 0 : o.hasFeature(ef.oNc.DISCOVERABLE)) === !0, ej = (0, I.Q)(), eA = (m || (null == o ? void 0 : o.premiumTier) === ef.Eu4.NONE) && !es.s.isDisallowPopupsSet() && !ej, ex = (0, d.e7)([D.Z, en.Z], () => null != o && null != R && m && !en.Z.hasLayers() && D.Z.shouldShowGuildTemplateDirtyTooltip(n)), eZ = (0, d.e7)([X.Z], () => X.Z.getChannel(a)), {
     isPopoutOpen: ew
   } = (0, x.y)(), eL = null != (t = null == o ? void 0 : o.hasFeature(ef.oNc.COMMUNITY)) && t, eR = (0, d.e7)([z.Z], () => !s().isEmpty(z.Z.getThreadsForGuild(n))), eD = eo.ZP.isNewUser(R), ek = W && !eD, eM = (0, S.Z)(R);
   (0, Z.Z)(o);
@@ -570,7 +570,7 @@ function eT(e) {
     hasChannelNotice: null != eh || ed,
     anyLayerOpen: eb || e_,
     showGuildBoostingProgressBarUpsell: eO,
-    showGuildBoostingProgressBarSizeUpsell: ey,
+    showGuildBoostingProgressBarSizeUpsell: eI,
     showInviteSplashUpsell: eA,
     showDiscoveryLandingPageSettingsUpsell: eP,
     showGuildHeaderTutorial: eE,
@@ -578,7 +578,7 @@ function eT(e) {
     showRoleSubscriptionUpsell: eS,
     showHubPrivacySettingsTooltip: eT,
     showNewUnreadsBar: eL,
-    showActiveThreadsNotice: C && null != eI && eI >= 200 && eR,
+    showActiveThreadsNotice: C && null != ey && ey >= 200 && eR,
     showGuildSoundboardPermissionUpsell: ev,
     showMediaChannelUpsell: eG,
     showTierTemplatesUpsell: eB,

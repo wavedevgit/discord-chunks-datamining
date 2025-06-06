@@ -28,8 +28,8 @@ function f(e) {
   }, [f.id, g]), {
     acceptMessageRequest: E,
     rejectMessageRequest: O,
-    isAcceptLoading: I,
-    isRejectLoading: y,
+    isAcceptLoading: y,
+    isRejectLoading: I,
     isUserProfileLoading: v,
     isOptimisticAccepted: C,
     isOptimisticRejected: S
@@ -38,7 +38,7 @@ function f(e) {
     onAcceptSuccess: _,
     onRejectSuccess: b,
     onError: m
-  }), N = I || y || v || C || S;
+  }), N = y || I || v || C || S;
   return (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)(d.Z, {
@@ -55,7 +55,7 @@ function f(e) {
           e.stopPropagation(), O(f.id)
         },
         disabled: N,
-        submitting: y || S,
+        submitting: I || S,
         children: p.intl.string(p.t.B2nygY)
       }), (0, r.jsx)(l.zxk, {
         className: h.button,
@@ -65,7 +65,7 @@ function f(e) {
           e.stopPropagation(), E(f.id)
         },
         disabled: N,
-        submitting: I || v || C,
+        submitting: y || v || C,
         children: p.intl.string(p.t.Kz8Pws)
       })]
     })]

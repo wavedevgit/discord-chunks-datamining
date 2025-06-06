@@ -20,9 +20,9 @@ var r = n(255367),
   _ = n(981631),
   E = n(921944),
   O = n(388032),
-  I = n(937976);
+  y = n(937976);
 
-function y(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ let C = [],
       className: n
     } = e;
     return (0, r.jsx)(s.IGR, {
-      className: a()(I.tag, n),
+      className: a()(y.tag, n),
       text: t
     })
   },
@@ -73,23 +73,23 @@ let C = [],
       wideStyle: o
     } = e;
     return (0, r.jsxs)("div", {
-      className: a()(I.featureCard, {
-        [I.wideStyle]: o
+      className: a()(y.featureCard, {
+        [y.wideStyle]: o
       }),
       children: [null != l ? (0, r.jsx)(S, {
         tagText: l,
-        className: I.featureCardTag
+        className: y.featureCardTag
       }) : null, (0, r.jsx)("img", {
         alt: "",
-        className: a()(I.featureCardImg, {
-          [I.wideStyle]: o
+        className: a()(y.featureCardImg, {
+          [y.wideStyle]: o
         }),
         src: i
       }), (0, r.jsxs)("div", {
-        className: I.featureCardTextGroup,
+        className: y.featureCardTextGroup,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/extrabold",
-          className: I.featureCardTextHeader,
+          className: y.featureCardTextHeader,
           children: t
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
@@ -140,7 +140,7 @@ function T(e) {
               type: "text/vtt"
             }),
             i = URL.createObjectURL(r);
-          return v(y({}, e), {
+          return v(I({}, e), {
             src: i
           })
         });
@@ -181,21 +181,21 @@ function T(e) {
       })
     }
   }, [T, L]), (0, r.jsxs)(s.Y0X, {
-    className: a()(I.root, t),
+    className: a()(y.root, t),
     transitionState: M,
     "aria-labelledby": U,
     parentComponent: "PremiumAnnouncementModalVariant1",
     children: [(0, r.jsx)(s.olH, {
-      className: I.closeButton,
+      className: y.closeButton,
       onClick: k
     }), null == P ? void 0 : P(), (0, r.jsxs)(s.hzk, {
-      className: I.content,
+      className: y.content,
       children: [(0, r.jsx)(s.X6q, {
         variant: "display-md",
-        className: a()(I.headerText, A),
+        className: a()(y.headerText, A),
         children: j
       }), "video" === l.type ? (0, r.jsx)(h.Z, {
-        className: a()(I.video, S),
+        className: a()(y.video, S),
         autoPlay: !B,
         loop: !0,
         muted: !0,
@@ -229,7 +229,7 @@ function T(e) {
           }, e.locale)
         })
       }) : "embed" === l.type ? (0, r.jsx)(u.BC, {
-        className: a()(I.video, S),
+        className: a()(y.video, S),
         allowFullScreen: !1,
         href: l.href,
         thumbnail: l.thumbnail,
@@ -247,22 +247,22 @@ function T(e) {
         }
       }) : "image" === l.type ? (0, r.jsx)("img", {
         alt: "",
-        className: a()(I.video, S),
+        className: a()(y.video, S),
         src: l.src
       }) : null, (0, r.jsxs)(s.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
-        className: I.subHeader,
+        className: y.subHeader,
         children: [x, null == Z ? void 0 : Z()]
       }), null != D && (0, r.jsx)(s.X6q, {
         variant: "heading-md/medium",
-        className: I.bodyText,
+        className: y.bodyText,
         children: D
       }), w.length > 0 && (0, r.jsx)("div", {
-        className: a()(I.featureCardGroup, {
-          [I.wideStyle]: G
+        className: a()(y.featureCardGroup, {
+          [y.wideStyle]: G
         }),
-        children: w.map((e, t) => (0, r.jsx)(N, v(y({}, e), {
+        children: w.map((e, t) => (0, r.jsx)(N, v(I({}, e), {
           wideStyle: G
         }), "".concat(e.header, "_").concat(t)))
       }), R()]

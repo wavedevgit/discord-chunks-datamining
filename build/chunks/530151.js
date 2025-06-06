@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(112724),
   E = n(812206),
   O = n(44315),
-  I = n(600164),
-  y = n(167533),
+  y = n(600164),
+  I = n(167533),
   v = n(925329),
   C = n(707409),
   S = n(210887),
@@ -267,8 +267,8 @@ class z extends i.PureComponent {
       foregroundGradientColor: i,
       message: l
     } = e;
-    return (0, r.jsxs)(I.Z, {
-      direction: I.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(y.Z, {
+      direction: y.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(p.Exd, {
         percent: t,
         size: p.Exd.Sizes.SMALL,
@@ -286,8 +286,8 @@ class z extends i.PureComponent {
       percents: t,
       message: n
     } = e;
-    return (0, r.jsxs)(I.Z, {
-      direction: I.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(y.Z, {
+      direction: y.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(p.yGy, {
         percents: t,
         size: p.yGy.Sizes.SMALL,
@@ -496,8 +496,8 @@ let W = () => (0, r.jsx)(G, {
   X = [{
     key: "name",
     cellClassName: D.nameCell,
-    render: e => (0, r.jsxs)(I.Z, {
-      align: I.Z.Align.CENTER,
+    render: e => (0, r.jsxs)(y.Z, {
+      align: y.Z.Align.CENTER,
       children: [(0, r.jsx)(v.Z, {
         game: e.application,
         className: D.__invalid_gameIcon,
@@ -534,8 +534,8 @@ let W = () => (0, r.jsx)(G, {
         item: e
       })) : i = (0, r.jsx)(q, {
         item: e
-      }), (0, r.jsxs)(I.Z, {
-        justify: I.Z.Justify.END,
+      }), (0, r.jsxs)(y.Z, {
+        justify: y.Z.Justify.END,
         children: [n, i]
       })
     }
@@ -582,7 +582,7 @@ class Q extends i.PureComponent {
           color: L.Ilk.BLUE_345,
           animate: i
         })]
-      }), (0, r.jsx)(y.Z, {
+      }), (0, r.jsx)(I.Z, {
         hasHeader: !1,
         columns: X,
         data: e,

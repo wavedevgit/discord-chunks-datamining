@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(209613),
   E = n(325708),
   O = n(320149),
-  I = n(82295),
-  y = n(252618),
+  y = n(82295),
+  I = n(252618),
   v = n(605236),
   C = n(243778),
   S = n(984370),
@@ -93,7 +93,7 @@ function en() {
         hasSingleMessageRequest: l
       }, u)
     }, [l, n, f]),
-    E = i.useCallback(() => (0, r.jsxs)(I.Z, {
+    E = i.useCallback(() => (0, r.jsxs)(y.Z, {
       className: ee.sectionTitle,
       children: [t > 0 ? $.intl.formatToPlainString($.t.rA4iWV, {
         count: t
@@ -288,10 +288,10 @@ let eo = (0, f.Z)(function(e) {
   i.useEffect(() => {
     null != g && !_ && E && b && ((0, T.Kh)(g), P.Z.closeChannelSidebar(w.uZ))
   }, [g, E, b, _]);
-  let [I, v] = i.useState(q.pS.REQUESTS), C = e => {
+  let [y, v] = i.useState(q.pS.REQUESTS), C = e => {
     v(e)
   };
-  return (0, y.Tt)({
+  return (0, I.Tt)({
     location: $.intl.string($.t.e7GWjY)
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -315,7 +315,7 @@ let eo = (0, f.Z)(function(e) {
             })
           }), (0, r.jsx)(S.Z.Divider, {}), (0, r.jsxs)(d.njP, {
             "aria-label": $.intl.string($.t.e7GWjY),
-            selectedItem: I,
+            selectedItem: y,
             type: "top-pill",
             onItemSelect: C,
             children: [(0, r.jsx)(d.njP.Item, {
@@ -334,7 +334,7 @@ let eo = (0, f.Z)(function(e) {
       }), (0, r.jsx)("div", {
         className: et.content,
         children: (0, r.jsx)(ea, {
-          section: I
+          section: y
         })
       })]
     }), b && (0, r.jsx)(er, {

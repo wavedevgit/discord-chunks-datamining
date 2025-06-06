@@ -63,9 +63,8 @@ function y(e) {
     windowKey: s,
     short: l,
     className: c
-  } = e, u = (0, d.getPlatform)(), f = i.useCallback(() => g(s), [s]), _ = u === d.PlatformTypes.WINDOWS;
+  } = e, u = (0, d.getPlatform)(), f = i.useCallback(() => g(s), [s]);
   return (0, r.jsxs)("div", {
-    "data-windows": _,
     className: o()(p.bar, c, {
       [p.shortBar]: l
     }),
@@ -95,7 +94,6 @@ function O(e) {
     windowKey: a
   } = e, s = (0, d.getPlatform)(), l = i.useCallback(() => g(a), [a]), c = s === d.PlatformTypes.WINDOWS;
   return s === d.PlatformTypes.WEB ? null : (0, r.jsx)("div", {
-    "data-windows": c,
     className: o()(p.bar, p.systemBar, {
       [p.fixed]: t,
       [p.show]: n

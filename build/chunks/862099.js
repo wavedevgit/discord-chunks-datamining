@@ -22,8 +22,8 @@ var r, i = n(255367),
   _ = n(501655),
   E = n(192079),
   O = n(427679),
-  I = n(448206),
-  y = n(496675),
+  y = n(448206),
+  I = n(496675),
   v = n(938475),
   C = n(626135),
   S = n(823379),
@@ -359,7 +359,7 @@ function Q(e) {
     channel: t,
     speakers: n,
     voiceType: r
-  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([y.Z], () => y.Z.can(U.Plq.CONNECT, t)), h = (0, I.Z)(t.id), f = G.intl.string(G.t.VJlc0d);
+  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([I.Z], () => I.Z.can(U.Plq.CONNECT, t)), h = (0, y.Z)(t.id), f = G.intl.string(G.t.VJlc0d);
   switch (r) {
     case 1:
       f = G.intl.string(G.t.VJlc0d);

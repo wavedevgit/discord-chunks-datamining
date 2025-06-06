@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(213609),
   E = n(463119),
   O = n(377171),
-  I = n(540059),
-  y = n(243778),
+  y = n(540059),
+  I = n(243778),
   v = n(488634),
   C = n(899740),
   S = n(28476),
@@ -256,7 +256,7 @@ let er = e => {
       children: (0, r.jsx)(f.mAB, {
         count: i
       })
-    }) : (0, r.jsx)(y.ZP, {
+    }) : (0, r.jsx)(I.ZP, {
       contentTypes: [p.z.FAMILY_CENTER_NEW_BADGE],
       children: e => {
         let {
@@ -389,7 +389,7 @@ function eh() {
     })),
     l = (0, d.e7)([U.Z], () => U.Z.hasLibraryApplication()),
     a = (0, d.e7)([G.Z], () => G.Z.getCurrentPath()),
-    s = (0, I.Q3)("PrivateChannels"),
+    s = (0, y.Q3)("PrivateChannels"),
     [c, u] = (0, R.Z)(e => {
       let {
         channelId: t,

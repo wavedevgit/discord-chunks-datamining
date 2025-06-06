@@ -41,7 +41,7 @@ function O(e) {
   return e
 }
 
-function I(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = {
+let I = {
   HOST: 5,
   LISTENER: 4
 };
@@ -103,7 +103,7 @@ class v extends i.PureComponent {
         className: _.party,
         children: (0, r.jsx)(d.Z, {
           users: this.props.party,
-          max: this.isHost() ? y.HOST : y.LISTENER,
+          max: this.isHost() ? I.HOST : I.LISTENER,
           renderUser: this.renderPartyMember,
           renderMoreUsers: this.renderPartyMemberOverflow
         })
@@ -135,7 +135,7 @@ class v extends i.PureComponent {
               onMouseEnter: r,
               onMouseLeave: s
             } = n;
-            return (0, i.createElement)(o.qEK, I(O({}, l), {
+            return (0, i.createElement)(o.qEK, y(O({}, l), {
               key: e.id,
               src: e.getAvatarURL(void 0, 24),
               size: o.EFr.SIZE_24,
@@ -158,7 +158,7 @@ class v extends i.PureComponent {
         targetElementRef: this.partyMemberOverflowRef,
         children: n => (0, r.jsx)(o.ua7, {
           text: b.intl.string(b.t.Zf4NPT),
-          children: i => (0, r.jsx)("div", I(O({
+          children: i => (0, r.jsx)("div", y(O({
             ref: this.partyMemberOverflowRef,
             className: a()(_.overflow, t)
           }, i, n), {

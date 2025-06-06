@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(294629),
   E = n(131951),
   O = n(459273),
-  I = n(242291),
-  y = n(792165),
+  y = n(242291),
+  I = n(792165),
   v = n(603074),
   C = n(981631),
   S = n(921944),
@@ -88,7 +88,7 @@ function A(e) {
     R = Z || w || L,
     [D, k] = i.useState(!1),
     M = t.getGuildId(),
-    U = (0, I.sR)({
+    U = (0, y.sR)({
       isSoundboardButtonDisabled: R
     }),
     [G, B] = (0, b.cv)(U),
@@ -131,7 +131,7 @@ function A(e) {
         guildId: M,
         channel: t,
         onClose: n,
-        gridNotice: G === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(y.o, {
+        gridNotice: G === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(I.o, {
           onClose: n,
           markAsDismissed: B
         }),

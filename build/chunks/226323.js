@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(670188),
   E = n(314897),
   O = n(131951),
-  I = n(51144),
-  y = n(524484),
+  y = n(51144),
+  I = n(524484),
   v = n(388032),
   C = n(795243);
 
@@ -109,7 +109,7 @@ function j(e) {
     }),
     k = null != (t = E.getGuildId()) ? t : void 0,
     M = j.getAvatarURL(E.guild_id, 24),
-    U = null != A ? A : I.ZP.getName(j),
+    U = null != A ? A : y.ZP.getName(j),
     {
       icon: G,
       colorize: B,
@@ -184,7 +184,7 @@ function j(e) {
         onContextMenu: F,
         focusProps: T,
         children: (0, r.jsx)(b.Z, {
-          shakeLocation: y.oZ.VOICE_USER,
+          shakeLocation: I.oZ.VOICE_USER,
           isShaking: D,
           children: (0, r.jsx)("div", {
             className: a()(C.avatar, {
@@ -246,8 +246,8 @@ function A(e) {
       color: "currentColor"
     }),
     focusProps: T
-  }), I = b && c ? t : m;
-  return I.length <= 0 ? null : (0, r.jsx)(s.zJl, {
+  }), y = b && c ? t : m;
+  return y.length <= 0 ? null : (0, r.jsx)(s.zJl, {
     className: a()(C.scroller, l),
     fade: !0,
     children: (0, r.jsxs)("div", {
@@ -255,7 +255,7 @@ function A(e) {
       className: a()(C.voiceUsers, !c && C.collapsed),
       role: "group",
       "aria-label": v.intl.string(v.t["/ZgaVV"]),
-      children: [I.map(e => {
+      children: [y.map(e => {
         let {
           user: t,
           nick: i,

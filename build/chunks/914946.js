@@ -34,8 +34,8 @@ var r, i, l = n(729594),
   _ = n(430824),
   E = n(131951),
   O = n(375954),
-  I = n(158776),
-  y = n(594174),
+  y = n(158776),
+  I = n(594174),
   v = n(979651),
   C = n(70956),
   S = n(5192),
@@ -112,7 +112,7 @@ function V(e, t) {
     })
   })), Promise.all(n).then(() => {
     var n;
-    let i = (!e.isNSFW() || (null == (n = y.default.getCurrentUser()) ? void 0 : n.nsfwAllowed) === !0) && t ? O.Z.getMessages(e.id).toArray().map(H) : [],
+    let i = (!e.isNSFW() || (null == (n = I.default.getCurrentUser()) ? void 0 : n.nsfwAllowed) === !0) && t ? O.Z.getMessages(e.id).toArray().map(H) : [],
       l = Object.values(v.Z.getVoiceStatesForChannel(e.id)).map(t => F(r, e.id, t));
     return {
       id: e.id,
@@ -166,7 +166,7 @@ function F(e, t, n) {
     selfDeaf: a,
     suppress: o,
     userId: s
-  } = n, c = y.default.getUser(s);
+  } = n, c = I.default.getUser(s);
   if (null == c) throw Error("Invalid user id: ".concat(s));
   return {
     nick: S.ZP.getName(e, t, c),
@@ -189,7 +189,7 @@ function z(e, t) {
     type: e,
     user: (0, j.Z)(t),
     presence: {
-      status: I.Z.getStatus(t.id, null),
+      status: y.Z.getStatus(t.id, null),
       activity: null
     }
   }
@@ -199,7 +199,7 @@ function W(e, t) {
   var n;
   return null == t ? e : w(Z({}, e), {
     presence: w(Z({}, e.presence), {
-      activity: null != (n = I.Z.getApplicationActivity(e.user.id, t)) ? n : null
+      activity: null != (n = y.Z.getApplicationActivity(e.user.id, t)) ? n : null
     })
   })
 }

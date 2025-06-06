@@ -21,8 +21,8 @@ var l = n(481060),
   _ = n(914010),
   E = n(594174),
   O = n(823379),
-  I = n(358085),
-  y = n(929809),
+  y = n(358085),
+  I = n(929809),
   v = n(179645),
   C = n(701476),
   S = n(785997),
@@ -92,7 +92,7 @@ class Z extends o.Z {
       let e = b.Z.getGuild(x);
       null != e && (0, d.Dc)(e) && (o = !0, (0, f.RM)(e.id))
     }
-    let Z = () => 0 === m.Z.totalGuilds && !I.isPlatformEmbedded,
+    let Z = () => 0 === m.Z.totalGuilds && !y.isPlatformEmbedded,
       w = s.bN();
     e = [{
       key: "Unified NUF Modal",
@@ -146,7 +146,7 @@ class Z extends o.Z {
       predicate: () => w && !Z() && !T.a
     }, {
       key: "Claim Account Modal",
-      open: e => c.j(I.isPlatformEmbedded, e),
+      open: e => c.j(y.isPlatformEmbedded, e),
       predicate: () => {
         var e;
         return !o && null != E.default.getCurrentUser() && !(null == (e = E.default.getCurrentUser()) ? void 0 : e.isClaimed()) && !T.a && !(0, p.g)("new_user_manager")
@@ -172,7 +172,7 @@ class Z extends o.Z {
       }),
       predicate: () => null != x && null != g.Z.get(x) && g.Z.get(x) !== g.a
     }], t = () => {
-      y.H(), h.Z.flowStep(P.MK.ANY, P.EW.NUF_COMPLETE, !0)
+      I.H(), h.Z.flowStep(P.MK.ANY, P.EW.NUF_COMPLETE, !0)
     }, [...e].reverse().forEach(e => {
       let n = t;
       t = () => {

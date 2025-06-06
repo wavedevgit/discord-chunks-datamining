@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(451478),
   E = n(701861),
   O = n(437314),
-  I = n(696577),
-  y = n(163417),
+  y = n(696577),
+  I = n(163417),
   v = n(830880),
   C = n(492347),
   S = n(42575),
@@ -127,7 +127,7 @@ let D = function(e) {
     }(e, ["key"]);
     switch (c) {
       case T.pJs.PENDING:
-        return (0, r.jsx)(I.Z, x(A({}, n), {
+        return (0, r.jsx)(y.Z, x(A({}, n), {
           isFocused: w
         }), t);
       case T.pJs.SUGGESTIONS:
@@ -240,7 +240,7 @@ let D = function(e) {
         onChange: B,
         onClear: V,
         size: s.E1j.Sizes.MEDIUM
-      }), (0, r.jsx)(y.Z, {
+      }), (0, r.jsx)(I.Z, {
         rows: Y,
         renderRow: G,
         renderSection: Q,

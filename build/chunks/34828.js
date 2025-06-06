@@ -30,11 +30,11 @@ let g = {
   _ = {},
   E = {},
   O = {},
-  I = {
+  y = {
     id: null,
     justChanged: !1
   },
-  y = {
+  I = {
     id: null,
     justChanged: !1
   },
@@ -74,13 +74,13 @@ class N extends(r = a.ZP.DeviceSettingsStore) {
     return _
   }
   get lastInputSystemDevice() {
-    return I
+    return y
   }
   get outputDevices() {
     return E
   }
   get lastOutputSystemDevice() {
-    return y
+    return I
   }
 }
 f(N, "displayName", "ConnectedDeviceStore"), f(N, "persistKey", "ConnectedDeviceStore"), f(N, "migrations", [e => {
@@ -118,19 +118,19 @@ let T = new N(o.Z, {
       inputDevices: t,
       outputDevices: n
     } = e, r = {};
-    I.justChanged = !1, t.forEach(e => {
+    y.justChanged = !1, t.forEach(e => {
       if (r[C(e)] = e.id, e.id === h.w5) {
         var t;
         let n = null != (t = e.originalId) ? t : e.originalName;
-        n !== I.id && (I.justChanged = !0), I.id = n
+        n !== y.id && (y.justChanged = !0), y.id = n
       }
     });
     let i = {};
-    if (y.justChanged = !1, n.forEach(e => {
+    if (I.justChanged = !1, n.forEach(e => {
         if (i[C(e)] = e.id, e.id === h.w5) {
           var t;
           let n = null != (t = e.originalId) ? t : e.originalName;
-          n !== y.id && (y.justChanged = !0), y.id = n
+          n !== I.id && (I.justChanged = !0), I.id = n
         }
       }), !b) {
       _ = r, E = i, b = !0;
