@@ -32,8 +32,8 @@ var r = n(255367),
   T = n(883429),
   I = n(993259),
   E = n(109434),
-  k = n(456269),
-  R = n(228392),
+  R = n(456269),
+  k = n(228392),
   Z = n(432771),
   M = n(538366),
   A = n(470623),
@@ -86,7 +86,7 @@ let V = {
     borderRadius: 10
   },
   q = e => {
-    (0, R.e5)({
+    (0, k.e5)({
       onboardingCTA: e
     })
   };
@@ -158,7 +158,7 @@ let X = e => {
     name: D.intl.string(D.t["6A0O6+"]),
     description: t ? D.intl.string(D.t["8hI5vr"]) : D.intl.format(D.t.ysxcAw, {
       onClick: e => {
-        null != l && (e.preventDefault(), e.stopPropagation(), (0, R.qz)(), (0, g.ZDy)(async () => {
+        null != l && (e.preventDefault(), e.stopPropagation(), (0, k.qz)(), (0, g.ZDy)(async () => {
           let {
             default: e
           } = await n.e("18417").then(n.bind(n, 740696));
@@ -376,7 +376,7 @@ let X = e => {
       }
     }, d.X), {
       tagFilter: s
-    } = (0, E.H)(l.id), o = (0, h.e7)([y.Z], () => y.Z.getGuild(l.getGuildId())), m = (0, k.r_)(l), {
+    } = (0, E.H)(l.id), o = (0, h.e7)([y.Z], () => y.Z.getGuild(l.getGuildId())), m = (0, R.r_)(l), {
       transitions: f,
       setVisible: x
     } = el(), b = ei(i), j = ec(), w = Q(l.id, x), {
@@ -389,7 +389,7 @@ let X = e => {
       channel: l,
       hasAnyThread: t,
       handleHide: w
-    }), I = !P && !N, R = (0, A.AF)(), Z = l.isMediaChannel(), L = e => R.getState().setOnboardingExpanded(e);
+    }), I = !P && !N, k = (0, A.AF)(), Z = l.isMediaChannel(), L = e => k.getState().setOnboardingExpanded(e);
     return (en(T, I, w), er({
       isAllDone: T,
       isVisible: I,

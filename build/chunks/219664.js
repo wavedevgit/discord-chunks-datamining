@@ -32,8 +32,8 @@ var r = n(255367),
   T = n(510060),
   I = n(983200),
   E = n(196255),
-  k = n(858543),
-  R = n(482062),
+  R = n(858543),
+  k = n(482062),
   Z = n(883728),
   M = n(710352),
   A = n(981631),
@@ -141,7 +141,7 @@ function H(e) {
     ei = (0, O.xw)(n, s.z.CREATION_DATE, M.R6.POSTED_DURATION_AGO),
     ea = (0, P.NN)(n),
     es = (null == z ? void 0 : z.blocked) || null == (null != u ? u : H),
-    eo = (0, R.nX)({
+    eo = (0, k.nX)({
       id: t,
       row: g.row,
       column: g.column,
@@ -237,7 +237,7 @@ function H(e) {
             shouldMaintainAspectRatio: eu
           }), (0, r.jsx)("div", {
             className: F.tagsRow,
-            children: (0, r.jsx)(k.ZP, {
+            children: (0, r.jsx)(R.ZP, {
               channel: n,
               tagsClassName: F.tagPill
             })
@@ -446,7 +446,7 @@ function X(e) {
     noStyleAndInteraction: !0
   }), {
     shouldRenderTagsRow: g
-  } = (0, k.DM)({
+  } = (0, R.DM)({
     channel: t,
     isNew: !1
   }), f = l.useMemo(() => ({
@@ -472,7 +472,7 @@ function X(e) {
       className: a()(F.textContentFooter, {
         [F.noTags]: !g
       }),
-      children: g ? (0, r.jsx)(k.ZP, {
+      children: g ? (0, r.jsx)(R.ZP, {
         channel: t,
         tagsClassName: F.tagPill,
         className: F.__invalid_row
