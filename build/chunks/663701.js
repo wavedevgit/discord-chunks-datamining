@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(213609),
   E = n(463119),
   O = n(377171),
-  y = n(540059),
-  I = n(243778),
+  I = n(540059),
+  y = n(243778),
   v = n(488634),
   C = n(899740),
   S = n(28476),
@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(695346),
   U = n(283595),
   G = n(923834),
-  B = n(55563),
-  V = n(774343),
+  V = n(55563),
+  B = n(774343),
   H = n(626135),
   F = n(814225),
   z = n(515753),
@@ -256,7 +256,7 @@ let er = e => {
       children: (0, r.jsx)(f.mAB, {
         count: i
       })
-    }) : (0, r.jsx)(I.ZP, {
+    }) : (0, r.jsx)(y.ZP, {
       contentTypes: [p.z.FAMILY_CENTER_NEW_BADGE],
       children: e => {
         let {
@@ -371,13 +371,13 @@ function ep() {
 }
 
 function eh() {
-  let e = (0, d.e7)([V.Z], () => V.Z.getHomeLink()),
-    t = (0, d.e7)([B.Z], () => {
+  let e = (0, d.e7)([B.Z], () => B.Z.getHomeLink()),
+    t = (0, d.e7)([V.Z], () => {
       if (e === K.Z5c.APPLICATION_STORE) return !0;
       let t = (0, F.ZK)(e);
       if (null != t) {
         var n, r;
-        return null != (r = null == (n = B.Z.get(t)) ? void 0 : n.premium) && r
+        return null != (r = null == (n = V.Z.get(t)) ? void 0 : n.premium) && r
       }
       return !1
     }, [e]),
@@ -389,7 +389,7 @@ function eh() {
     })),
     l = (0, d.e7)([U.Z], () => U.Z.hasLibraryApplication()),
     a = (0, d.e7)([G.Z], () => G.Z.getCurrentPath()),
-    s = (0, y.Q3)("PrivateChannels"),
+    s = (0, I.Q3)("PrivateChannels"),
     [c, u] = (0, R.Z)(e => {
       let {
         channelId: t,

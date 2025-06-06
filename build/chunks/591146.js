@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  CL: () => a,
-  Ml: () => i,
-  VM: () => o
+  CL: () => o,
+  Ml: () => a,
+  VM: () => s
 });
-let r = (0, n(818083).B)({
+var r = n(338390);
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2025-04_desktop_refresh_fast_follows",
   label: "Desktop Refresh Fast Follows",
@@ -57,20 +58,21 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i(e) {
-  return r.useExperiment({
+function a(e) {
+  let t = (0, r.Z)(e);
+  return i.useExperiment({
     location: e
-  }).largerGuildIcons
+  }).largerGuildIcons && !t
 }
 
-function a(e) {
-  return r.useExperiment({
+function o(e) {
+  return i.useExperiment({
     location: e
   }).darkerGuildListBackground
 }
 
-function o(e) {
-  return r.useExperiment({
+function s(e) {
+  return i.useExperiment({
     location: e
   }).distinctBorders
 }

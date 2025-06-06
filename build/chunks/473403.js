@@ -19,8 +19,8 @@ var c = n(442837),
   p = n(727429),
   m = n(810123),
   b = n(690221),
-  h = n(430824),
-  g = n(158776),
+  g = n(430824),
+  h = n(158776),
   v = n(111583),
   I = n(594174),
   y = n(998502),
@@ -93,12 +93,12 @@ function j(e) {
   } = e, i = (0, c.e7)([I.default], () => I.default.getUser(null == t ? void 0 : t.recipients[0])), o = (0, c.e7)([v.Z], () => !(null == i || null == t || t.isMultiUserDM()) && null != v.Z.getTypingUsers(null == t ? void 0 : t.id)[null == i ? void 0 : i.id]), {
     status: a,
     isMobile: l
-  } = (0, c.cj)([g.Z], () => null == i || null == t || t.isMultiUserDM() ? {
+  } = (0, c.cj)([h.Z], () => null == i || null == t || t.isMultiUserDM() ? {
     status: null,
     isMobile: !1
   } : {
-    status: g.Z.getStatus(i.id),
-    isMobile: g.Z.isMobileOnline(i.id)
+    status: h.Z.getStatus(i.id),
+    isMobile: h.Z.isMobileOnline(i.id)
   });
   return (0, r.jsx)(w, {
     size: n,
@@ -118,7 +118,7 @@ let L = e => {
       locked: o,
       hasActiveThreads: l,
       withGuildIcon: s
-    } = e, d = (0, c.e7)([h.Z], () => h.Z.getGuild(i.guild_id), [i.guild_id]), f = i.type === E.d4z.DM || i.type === E.d4z.GROUP_DM, p = null;
+    } = e, d = (0, c.e7)([g.Z], () => g.Z.getGuild(i.guild_id), [i.guild_id]), f = i.type === E.d4z.DM || i.type === E.d4z.GROUP_DM, p = null;
     if (s && null != d && !f) p = (0, r.jsx)(m.Z, {
       size: m.E.SMALL_32,
       className: C.iconContainerWithGuildIcon,
@@ -157,13 +157,13 @@ let L = e => {
       })
     }
     let b = s ? null == d ? void 0 : d.name : (0, _.bT)(i, d, o, l),
-      g = s && null != d ? "".concat(d.name, " - ").concat(b, " icon") : "".concat(b, " icon");
+      h = s && null != d ? "".concat(d.name, " - ").concat(b, " icon") : "".concat(b, " icon");
     return (0, r.jsx)(u.ua7, {
       text: b,
       delay: 500,
       children: e => (0, r.jsx)("div", A(P({}, e), {
         role: "img",
-        "aria-label": g,
+        "aria-label": h,
         className: a()(C.iconContainer, n),
         children: p
       }))
@@ -177,8 +177,8 @@ let L = e => {
       muted: s,
       selected: _,
       connected: m,
-      unread: h,
-      locked: g,
+      unread: g,
+      locked: h,
       hasActiveThreads: v,
       onClick: I,
       onMouseDown: y,
@@ -244,7 +244,7 @@ let L = e => {
             channel: o,
             guild: W,
             hasActiveThreads: v,
-            locked: g,
+            locked: h,
             withGuildIcon: Y
           }), (0, r.jsx)(f.Z, {
             className: a()(C.name, {
@@ -283,9 +283,9 @@ let L = e => {
         className: a()(Z, null != I || null != w || null != y || V ? C.wrapper : C.notInteractive, (() => {
           if (_) return a()(O.selectedChannel, N.SELECTED);
           if (m) return a()(O.selectedChannel, N.CONNECTED);
-          if (g) return N.LOCKED;
+          if (h) return N.LOCKED;
           if (s) return N.MUTED;
-          if (h)
+          if (g)
             if (X) return N.UNREAD_IMPORTANT;
             else return N.UNREAD_LESS_IMPORTANT;
           return null
@@ -312,7 +312,7 @@ let L = e => {
         onContextMenu: e => null == x ? void 0 : x(e, o),
         onMouseEnter: B,
         onMouseLeave: U,
-        children: [s || !h ? null : (0, r.jsx)("div", {
+        children: [s || !g ? null : (0, r.jsx)("div", {
           className: a()(C.unread, X ? C.unreadImportant : void 0)
         }), null != (n = null == j ? void 0 : j(el)) ? n : el]
       })

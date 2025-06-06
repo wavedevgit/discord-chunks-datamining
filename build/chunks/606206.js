@@ -57,7 +57,7 @@ function x(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t
-  }), P.emitChange()
+  }), S.emitChange()
 }
 
 function I() {
@@ -68,7 +68,7 @@ function T() {
   let e = null != v && null != v.application_id ? f.Z.getApplicationActivity(v.application_id) : null;
   if (null != v && (null == e || null == e.party || null == e.party.id)) return I()
 }
-class S extends(l = i.ZP.Store) {
+class P extends(l = i.ZP.Store) {
   initialize() {
     this.waitFor(f.Z)
   }
@@ -83,8 +83,8 @@ class S extends(l = i.ZP.Store) {
     return C
   }
 }
-N(S, "displayName", "ActivityInviteModalStore");
-let P = new S(o.Z, {
+N(P, "displayName", "ActivityInviteModalStore");
+let S = new P(o.Z, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
       v = e.activity, m = e.resolve, E = [], null == r && (r = new s.ZP((e, t) => {
         C = ("" === t.trim() ? function() {
@@ -144,7 +144,7 @@ let P = new S(o.Z, {
             default:
               return null
           }
-        }).filter(e => null != e), P.emitChange()
+        }).filter(e => null != e), S.emitChange()
       }, b, 100)), r.search("")
     },
     ACTIVITY_INVITE_MODAL_QUERY: function(e) {
@@ -179,4 +179,4 @@ let P = new S(o.Z, {
     LOCAL_ACTIVITY_UPDATE: T,
     RPC_APP_DISCONNECTED: T
   }),
-  j = 12633 == n.j ? P : null
+  j = 12633 == n.j ? S : null

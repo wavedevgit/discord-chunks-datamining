@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: cf5bd6abdb156a24
+  Original File Name: 4e6b543b5a38a78c
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -1930,6 +1930,16 @@
     width: 14px
 }
 
+.ping__06d62.largePing__06d62 {
+    background: linear-gradient(0deg,var(--color-background-feedback-positive,rgba(0,134,58,.08)) 0,var(--color-background-feedback-positive,rgba(0,134,58,.08)) 100%),var(--color-background-mod-faint,hsla(240,4%,61%,.04));
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 1px var(--color-border-faint,hsla(240,4%,61%,.04));
+    height: 20px;
+    margin-right: 8px;
+    padding: 6px;
+    width: 20px
+}
+
 .rtcConnectionStatus__06d62 {
     align-items: center;
     display: flex;
@@ -1983,6 +1993,15 @@
 
 .visual-refresh .rtcConnectionStatus__06d62 {
     padding-bottom: 0
+}
+
+.visual-refresh.align-chat-input .rtcConnectionStatusLabel__06d62 {
+    height: 20px;
+    margin-top: -1px
+}
+
+.visual-refresh.align-chat-input .rtcConnectionStatus__06d62 {
+    height: 32px
 }
 
 .icon__2894c {
@@ -3244,4 +3263,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=cf5bd6abdb156a24.css.map*/
+/*# sourceMappingURL=4e6b543b5a38a78c.css.map*/

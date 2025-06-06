@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(746728),
   E = n(140700),
   O = n(665807),
-  y = n(188493),
-  I = n(294330),
+  I = n(188493),
+  y = n(294330),
   v = n(981631),
   C = n(984503);
 let S = Object.freeze({
@@ -59,7 +59,7 @@ function j(e) {
     searchCategoryId: A
   } = (0, b.f)({
     loadId: t
-  }), x = 0 === s.length && !h, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), V = i.useCallback(e => {
+  }), x = 0 === s.length && !h, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), V = i.useRef(null), B = i.useCallback(e => {
     if (null != e && !x && !h) 336 * (s.length / M) <= e.height && j()
   }, [x, h, s.length, M, j]), H = i.useCallback(e => {
     let t = e.contentRect;
@@ -68,8 +68,8 @@ function j(e) {
     n < 1024 && k.current ? (k.current = !1, D(!1)) : n > 1024 && !k.current && (k.current = !0, D(!0));
     let r = 1;
     for (n -= 450 * !!R, n -= 280; n > 0;) n -= 264, r += 1;
-    r !== G.current && (G.current = r, U(r)), V(t)
-  }, [R, V]), F = (0, u.y)(H, [R, V]);
+    r !== G.current && (G.current = r, U(r)), B(t)
+  }, [R, B]), F = (0, u.y)(H, [R, B]);
   i.useEffect(() => {
     L((0, m.PM)())
   }, [v]), i.useEffect(() => {
@@ -99,7 +99,7 @@ function j(e) {
               className: C.headingFilters,
               children: [(0, r.jsx)(E.Z, {
                 loadId: t
-              }), (0, r.jsx)(y.Z, {
+              }), (0, r.jsx)(I.Z, {
                 loadId: t
               })]
             }), x && (0, r.jsx)(O.Z, {
@@ -148,7 +148,7 @@ function j(e) {
     Q = i.useCallback(async (e, t, n, r) => {
       var i, a;
       await l(e, t, n, r);
-      let o = null == (a = B.current) || null == (i = a.getScrollerState()) ? void 0 : i.scrollTop;
+      let o = null == (a = V.current) || null == (i = a.getScrollerState()) ? void 0 : i.scrollTop;
       null != o && g.Z.setState({
         scrollPosition: o
       })
@@ -159,7 +159,7 @@ function j(e) {
         let e = s[t];
         return (0, r.jsx)("div", {
           style: n,
-          children: (0, r.jsx)(I.ZP, {
+          children: (0, r.jsx)(y.ZP, {
             guildId: e,
             onClick: async e => await Q(e, t, A, T),
             onView: e => z(e)
@@ -168,7 +168,7 @@ function j(e) {
       }
     }, [s, Q, z, A]);
   i.useEffect(() => {
-    let e = B.current;
+    let e = V.current;
     return () => {
       var t;
       let n = null == e || null == (t = e.getScrollerState()) ? void 0 : t.scrollTop;
@@ -180,7 +180,7 @@ function j(e) {
     let e = g.Z.getField("scrollPosition");
     null != e && setTimeout(() => {
       var t;
-      null == (t = B.current) || t.scrollTo({
+      null == (t = V.current) || t.scrollTo({
         to: e,
         animate: !1,
         callback: () => {
@@ -193,7 +193,7 @@ function j(e) {
   }, []);
   let $ = i.useMemo(() => (0, o.debounce)(() => {
       var e;
-      let t = null == (e = B.current) ? void 0 : e.getScrollerState();
+      let t = null == (e = V.current) ? void 0 : e.getScrollerState();
       if (null == t) return;
       let n = t.scrollTop + t.offsetHeight;
       t.scrollHeight - n < 240 && j()
@@ -205,7 +205,7 @@ function j(e) {
     className: C.container,
     ref: F,
     children: (0, r.jsx)(c.GMG, {
-      ref: B,
+      ref: V,
       className: C.masonryList,
       sections: W,
       columns: M,
@@ -227,7 +227,7 @@ function j(e) {
           className: C.sidebarContent,
           children: [(0, r.jsx)("div", {
             className: C.sidebarLanguageSelect,
-            children: (0, r.jsx)(y.Z, {
+            children: (0, r.jsx)(I.Z, {
               loadId: t
             })
           }), (0, r.jsx)(_.Z, {

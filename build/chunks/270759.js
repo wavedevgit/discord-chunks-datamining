@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(984370),
   E = n(518311),
   O = n(199104),
-  y = n(108427),
-  I = n(210887),
+  I = n(108427),
+  y = n(210887),
   v = n(974042),
   C = n(849862),
   S = n(666286),
@@ -52,9 +52,9 @@ let Z = function(e) {
       l.replace(T.Z5c.ME)
     })
   }, [l, n]), i.useEffect(() => {
-    p.Y(T.Z5c.FRIENDS), (0, y.e)("friends")
+    p.Y(T.Z5c.FRIENDS), (0, I.e)("friends")
   }, []);
-  let Z = (0, c.e7)([I.Z], () => I.Z.theme),
+  let Z = (0, c.e7)([y.Z], () => y.Z.theme),
     w = (0, C.If)(),
     {
       section: L,
@@ -70,7 +70,7 @@ let Z = function(e) {
     },
     U = (0, g.Dt)(),
     G = (0, g.Dt)(),
-    B = [{
+    V = [{
       id: T.pJs.ONLINE,
       show: !E || R.filter(T.pJs.ONLINE).length > 0,
       content: j.intl.string(j.t.b9w3bG),
@@ -140,7 +140,7 @@ let Z = function(e) {
           type: "top-pill",
           onItemSelect: M,
           className: A.tabBar,
-          children: B.filter(e => e.show).map(e => (0, r.jsx)(u.njP.Item, {
+          children: V.filter(e => e.show).map(e => (0, r.jsx)(u.njP.Item, {
             id: e.id,
             className: e.className,
             "aria-label": e.ariaLabel,

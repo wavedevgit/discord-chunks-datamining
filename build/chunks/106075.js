@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(590771),
   E = n(273596),
   O = n(128449),
-  y = n(49898),
-  I = n(388032),
+  I = n(49898),
+  y = n(388032),
   v = n(398075);
 
 function C() {
@@ -62,10 +62,10 @@ function C() {
       })
     }),
     G = d.Z.useField("fetchedQuery"),
-    B = i.useCallback(e => {
+    V = i.useCallback(e => {
       T(e), L && Z()
     }, [L, Z, T]),
-    V = i.useMemo(() => L ? S.filter(e => {
+    B = i.useMemo(() => L ? S.filter(e => {
       let {
         id: t
       } = e;
@@ -100,25 +100,25 @@ function C() {
         icon: l.QTo
       }), !L && (0, r.jsx)(c.Z, {
         className: U,
-        tabs: V,
+        tabs: B,
         selectedTab: L ? null : N,
-        onTabSelect: B,
+        onTabSelect: V,
         onAvailableWidthChange: D
       }), L && (0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         className: v.searchResultsHeader,
-        children: I.intl.format(I.t.zHdzqa, {
+        children: y.intl.format(y.t.zHdzqa, {
           query: G
         })
       }), j && (0, r.jsx)(u.Z, {
         query: A,
-        placeholder: I.intl.string(I.t["5h0QOD"]),
+        placeholder: y.intl.string(y.t["5h0QOD"]),
         onTextChange: x,
         onClear: Z,
         onSubmit: w,
         onCollapsedClick: k,
-        state: L ? y.GlobalDiscoverySearchBarState.DEFAULT : R,
+        state: L ? I.GlobalDiscoverySearchBarState.DEFAULT : R,
         onBlur: M
       })]
     }), L ? (0, r.jsx)(E.Z, {

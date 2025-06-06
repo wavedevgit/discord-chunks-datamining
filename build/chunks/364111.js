@@ -16,11 +16,11 @@ function d(e, t, n) {
     p = (0, i.e7)([s.Z], () => s.Z.skipNumCategories),
     h = (0, u.hv)("useMaybeFetchCollectiblesShopHome"),
     f = (0, a.isDesktop)() || (0, a.isWeb)(),
-    [g, m, b, _, E, O, y] = (0, i.Wu)([c.Z], () => {
+    [g, m, b, _, E, O, I] = (0, i.Wu)([c.Z], () => {
       var t, n;
       return [c.Z.getShopBlocks(e), null != (t = c.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = c.Z.getLastErrorTimestamp(e)) ? n : 0, c.Z.getLastFetchOptions(e), c.Z.getFetchShopHomeError(e), c.Z.getIsFetchingShopHome(e), c.Z.getShopHomeConfigOverride()]
     }),
-    I = (0, r.useMemo)(() => {
+    y = (0, r.useMemo)(() => {
       var e, n;
       return e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -44,7 +44,7 @@ function d(e, t, n) {
         includeBundles: f,
         includePopularPicks: !0,
         includeDynamicBlocks: !0,
-        shopHomeConfig: y,
+        shopHomeConfig: I,
         skipNumCategories: p
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -56,19 +56,19 @@ function d(e, t, n) {
       })(Object(n)).forEach(function(t) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
       }), e
-    }, [t, h, f, y, p]),
-    v = (0, r.useMemo)(() => !(0, o.oc)(_, I), [_, I]),
+    }, [t, h, f, I, p]),
+    v = (0, r.useMemo)(() => !(0, o.oc)(_, y), [_, y]),
     C = (0, r.useMemo)(() => Date.now() - m < 6e5, [m]);
   return (0, r.useEffect)(() => {
     if (!d || O) return;
     let t = Date.now() - b < 6e5;
-    null != E && t || (v || !C) && (0, o.Ov)(e, I, n)
-  }, [d, O, E, b, C, v, I, e, n]), {
+    null != E && t || (v || !C) && (0, o.Ov)(e, y, n)
+  }, [d, O, E, b, C, v, y, e, n]), {
     isFetchingShopHome: O,
     fetchShopHomeError: E,
     shopBlocks: g,
     refreshShopHome: (0, r.useCallback)(() => {
-      (0, o.Ov)(e, I, n)
-    }, [e, I, n])
+      (0, o.Ov)(e, y, n)
+    }, [e, y, n])
   }
 }

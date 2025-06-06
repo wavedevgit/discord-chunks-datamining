@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 63eb80f28549f25e
+  Original File Name: 95e128f339ad47a7
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -4962,6 +4962,19 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     height: var(--chat-input-icon-size)
 }
 
+.visual-refresh.align-chat-input .attachButton__0923f {
+    padding: var(--space-12) 10px
+}
+
+.visual-refresh.align-chat-input .attachButtonInner__0923f {
+    border-radius: 8px;
+    padding: 6px
+}
+
+.visual-refresh.align-chat-input .attachButtonInner__0923f:hover {
+    background-color: var(--background-modifier-selected)
+}
+
 .attachButtonPlus__0923f,.attachButtonPlusGradient__0923f {
     height: var(--chat-input-icon-size);
     transform-origin: 50% 50%;
@@ -7139,6 +7152,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     overflow-anchor: none
 }
 
+.visual-refresh.align-chat-input .scrollerContent__36d07 {
+    padding-bottom: 12px
+}
+
 .scroller__36d07 {
     bottom: 0;
     left: 0;
@@ -7153,6 +7170,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .overlay .scroller__36d07::-webkit-scrollbar-track {
     margin-bottom: 0
+}
+
+.visual-refresh.align-chat-input .scroller__36d07::-webkit-scrollbar-track {
+    margin-bottom: 24px
 }
 
 .scrollerInner__36d07 {
@@ -7214,6 +7235,11 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .highlight {
     background: hsl(var(--yellow-300-hsl)/.3)
+}
+
+.typingGradient__36d07 {
+    -webkit-mask: linear-gradient(180deg,#000 0,#000 calc(100% - 32px),transparent calc(100% - 20px),transparent);
+    mask: linear-gradient(180deg,#000 0,#000 calc(100% - 32px),transparent calc(100% - 20px),transparent)
 }
 
 .combo__257af {
@@ -13243,4 +13269,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=63eb80f28549f25e.css.map*/
+/*# sourceMappingURL=95e128f339ad47a7.css.map*/

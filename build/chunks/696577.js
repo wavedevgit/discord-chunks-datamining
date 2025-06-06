@@ -20,9 +20,9 @@ var r = n(255367),
   _ = n(170245),
   E = n(981631),
   O = n(388032),
-  y = n(53487);
+  I = n(53487);
 
-function I(e) {
+function y(e) {
   var t;
   let {
     user: n,
@@ -44,7 +44,7 @@ function I(e) {
   }, [p]);
   return (0, r.jsxs)(r.Fragment, {
     children: [u && (0, r.jsx)("div", {
-      className: y.staffIndicator,
+      className: I.staffIndicator,
       children: (0, r.jsx)(o.IGR, {
         color: a.Z.unsafe_rawColors.BRAND_500.css,
         text: O.intl.string(O.t.oMx98P)
@@ -98,7 +98,7 @@ function C(e) {
     isProvisional: s
   } = e, p = i.useMemo(() => t ? O.intl.string(O.t["Uv/eT0"]) : a, [t, a]), h = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
   return (0, r.jsxs)("div", {
-    className: y.applicationSublabel,
+    className: I.applicationSublabel,
     children: [!s && (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
@@ -160,7 +160,7 @@ function N(e) {
     user: t,
     onClick: h,
     children: e => (0, r.jsxs)("div", {
-      className: y.listItemContents,
+      className: I.listItemContents,
       children: [(0, r.jsx)(S, {
         user: t,
         hovered: e,
@@ -168,8 +168,8 @@ function N(e) {
         isGameRelationship: c,
         applicationId: o
       }), (0, r.jsx)("div", {
-        className: y.actions,
-        children: n === E.OGo.PENDING_INCOMING ? (0, r.jsx)(I, {
+        className: I.actions,
+        children: n === E.OGo.PENDING_INCOMING ? (0, r.jsx)(y, {
           user: t,
           applicationId: o,
           isGameRelationship: c,

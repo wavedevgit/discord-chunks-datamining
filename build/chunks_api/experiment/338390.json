@@ -1,0 +1,1 @@
+{"id":"338390","type":"experiment","data":{"kind":"user","id":"2025-05_align_chat_input","label":"bottom-aligned chat input","commonTriggerPoint":"a.$P.CONNECTION_OPEN","defaultConfig":{"alignChatInput":false},"treatments":[{"id":1,"label":"bottom-aligned chat input","config":{"alignChatInput":false}}]},"fromModule":{"id":"web.js"}}

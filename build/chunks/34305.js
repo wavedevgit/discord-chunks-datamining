@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => y
+  Z: () => I
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -287,7 +287,7 @@ class O extends i.PureComponent {
     })
   }
 }
-let y = l.ZP.connectStores([d.Z], () => ({
+let I = l.ZP.connectStores([d.Z], () => ({
   installationPaths: d.Z.installationPaths,
   installationPathsMetadata: d.Z.installationPathsMetadata,
   defaultInstallationPath: d.Z.defaultInstallationPath

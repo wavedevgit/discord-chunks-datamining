@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: 2651e17f1ab05183
+  Original File Name: e101668e378a168d
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4079,6 +4079,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background-color: hsl(var(--red-400-hsl)/.2)
 }
 
+.visual-refresh.align-chat-input button.button__67645,.visual-refresh.align-chat-input span.button__67645 {
+    margin-bottom: 0;
+    margin-top: 0
+}
+
 .enable-forced-colors button.button__67645,.enable-forced-colors span.button__67645 {
     color: ButtonText
 }
@@ -4403,6 +4408,17 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .visual-refresh .micButtonParent__37e49 .buttonChevronIcon__37e49 {
     height: 16px;
     width: 16px
+}
+
+.visual-refresh.align-chat-input .container__37e49 {
+    height: 56px;
+    margin-left: -1px;
+    padding: 12px
+}
+
+.visual-refresh.align-chat-input .panelTitleContainer__37e49 {
+    margin-bottom: 2px;
+    margin-top: -1px
 }
 
 .visual-refresh.refresh-fast-follow-avatars .container__37e49 {
@@ -19497,4 +19513,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=2651e17f1ab05183.css.map*/
+/*# sourceMappingURL=e101668e378a168d.css.map*/

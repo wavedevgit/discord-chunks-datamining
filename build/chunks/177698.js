@@ -28,8 +28,8 @@ let f = (0, d.Z)(e => {
     state: _,
     guildId: E,
     channelId: O,
-    prompt: y,
-    disableGuildSelect: I,
+    prompt: I,
+    disableGuildSelect: y,
     disclosures: v,
     integrationType: C,
     pid: S
@@ -83,8 +83,8 @@ let f = (0, d.Z)(e => {
         permissions: d,
         guildId: E,
         channelId: O,
-        prompt: y,
-        disableGuildSelect: "boolean" == typeof I ? I : "true" === I,
+        prompt: I,
+        disableGuildSelect: "boolean" == typeof y ? y : "true" === y,
         integrationType: C
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

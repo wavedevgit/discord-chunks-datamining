@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(626135),
   E = n(70956),
   O = n(225559),
-  y = n(910436),
-  I = n(203028),
+  I = n(910436),
+  y = n(203028),
   v = n(358924),
   C = n(292140),
   S = n(525296),
@@ -37,10 +37,10 @@ let x = 15 * E.Z.Millis.MINUTE,
       onUserContextMenu: n,
       onChannelContextMenu: l,
       quest: a
-    } = e, o = i.useRef(null), c = (0, r.jsx)(I.Z, {
+    } = e, o = i.useRef(null), c = (0, r.jsx)(y.Z, {
       party: t,
       onUserContextMenu: n
-    }), d = (0, r.jsx)(y.Z, {
+    }), d = (0, r.jsx)(I.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a

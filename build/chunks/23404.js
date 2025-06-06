@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(475595),
   E = n(566078),
   O = n(602667),
-  y = n(65443),
-  I = n(611855),
+  I = n(65443),
+  y = n(611855),
   v = n(670638),
   C = n(667105),
   S = n(860151),
@@ -94,7 +94,7 @@ function w(e) {
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: u.jZ.ACCEPT_QUEST
     })
-  }, [E]), B = i.useCallback(() => {
+  }, [E]), V = i.useCallback(() => {
     null != E && (O({
       questId: E.id,
       questContent: f.jn.ACTIVITY_PANEL,
@@ -103,7 +103,7 @@ function w(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: E.id
     }))
-  }, [E, O]), V = i.useCallback(() => {
+  }, [E, O]), B = i.useCallback(() => {
     O({
       questId: E.id,
       questContent: f.jn.ACTIVITY_PANEL,
@@ -140,7 +140,7 @@ function w(e) {
       className: A.utils,
       children: [z ? (0, r.jsx)(Z, {
         quest: E
-      }) : (0, r.jsx)(I.Z, {}), (0, r.jsx)(v.r, {
+      }) : (0, r.jsx)(y.Z, {}), (0, r.jsx)(v.r, {
         quest: E,
         questContent: f.jn.ACTIVITY_PANEL,
         shouldShowDisclosure: (null == (c = E.userStatus) ? void 0 : c.enrolledAt) == null,
@@ -175,7 +175,7 @@ function w(e) {
           variant: "text-sm/normal",
           color: "text-normal",
           children: X
-        }), Q && (0, r.jsx)(y.Z, {
+        }), Q && (0, r.jsx)(I.Z, {
           quest: E,
           textColor: "text-muted",
           withRewardName: !0
@@ -196,7 +196,7 @@ function w(e) {
           color: s.zxk.Colors.PRIMARY,
           fullWidth: !0,
           size: s.zxk.Sizes.SMALL,
-          onClick: V,
+          onClick: B,
           children: j.intl.string(j.t.LLLLPD)
         }), (0, r.jsx)(s.zxk, {
           className: A.cta,
@@ -211,7 +211,7 @@ function w(e) {
         className: A.cta,
         color: s.zxk.Colors.BRAND,
         fullWidth: !0,
-        onClick: B,
+        onClick: V,
         size: s.zxk.Sizes.SMALL,
         children: j.intl.string(j.t.VN1Ajo)
       }), W && (0, r.jsx)(s.zxk, {

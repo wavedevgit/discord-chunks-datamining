@@ -100,24 +100,26 @@ class v extends l.PureComponent {
       lastPing: l,
       state: i,
       className: s,
-      children: u
+      children: u,
+      childrenAsSubtitle: c
     } = this.props;
     return i === h.hes.RTC_CONNECTED && (e = (0, r.jsx)(a.ua7, {
       text: t !== h.IE4.UNKNOWN && null != l ? "".concat(l.toFixed(0), " ms") : null,
       color: y[t],
       children: e => (0, r.jsx)(m, O({
         quality: t,
-        smallPing: n
+        smallPing: !c && n,
+        largePing: c
       }, e))
     })), (0, r.jsxs)("div", {
       className: p.rtcConnectionStatusWrapper,
       children: [(0, r.jsxs)("div", {
         className: o()(p.rtcConnectionStatus, b[t], s),
-        children: [e, (0, r.jsx)("div", {
+        children: [e, (0, r.jsxs)("div", {
           className: p.labelWrapper,
-          children: this.renderStatus()
+          children: [this.renderStatus(), c ? u : null]
         })]
-      }), u]
+      }), c ? null : u]
     })
   }
   constructor(...e) {
@@ -142,8 +144,9 @@ class v extends l.PureComponent {
 function m(e) {
   var {
     quality: t,
-    smallPing: n
-  } = e, l = function(e, t) {
+    smallPing: n,
+    largePing: l
+  } = e, i = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -157,17 +160,18 @@ function m(e) {
       for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
     return l
-  }(e, ["quality", "smallPing"]);
-  let i = {
+  }(e, ["quality", "smallPing", "largePing"]);
+  let s = {
     [h.IE4.FINE]: a.B_b,
     [h.IE4.AVERAGE]: a.hLg,
     [h.IE4.BAD]: a.mbS,
     [h.IE4.UNKNOWN]: a._3e
   } [t];
-  return (0, r.jsx)(i, O({
+  return (0, r.jsx)(s, O({
     className: o()(p.ping, {
-      [p.smallPing]: n
+      [p.smallPing]: n,
+      [p.largePing]: l
     })
-  }, l))
+  }, i))
 }
 let E = v

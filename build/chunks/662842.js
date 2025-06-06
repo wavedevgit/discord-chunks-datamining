@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(497656),
   E = n(554747),
   O = n(230900),
-  y = n(854698),
-  I = n(703656),
+  I = n(854698),
+  y = n(703656),
   v = n(922482),
   C = n(565799),
   S = n(501655),
@@ -50,7 +50,7 @@ function D(e) {
     isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       eventId: null == d ? void 0 : d.id
     })
-  }), [P, d]), U = null == l ? void 0 : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), V = (0, o.e7)([j.Z], () => j.Z.can(Z.Plq.CONNECT, l)), H = (0, T.Z)(null == l ? void 0 : l.id), F = null == d ? void 0 : d.creator_id, z = (0, o.e7)([A.default], () => A.default.getUser(F), [F]);
+  }), [P, d]), U = null == l ? void 0 : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), V = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), B = (0, o.e7)([j.Z], () => j.Z.can(Z.Plq.CONNECT, l)), H = (0, T.Z)(null == l ? void 0 : l.id), F = null == d ? void 0 : d.creator_id, z = (0, o.e7)([A.default], () => A.default.getUser(F), [F]);
   i.useEffect(() => {
     null != F && (0, u.PR)(F)
   }, [F]);
@@ -77,7 +77,7 @@ function D(e) {
       isEventNoticeHidden: d,
       isStageNoticeHidden: h,
       isStudyRoomNotice: m
-    } = e, _ = null != n && null != i && !h, E = null != t ? (0, y.DK)(t) : null;
+    } = e, _ = null != n && null != i && !h, E = null != t ? (0, I.DK)(t) : null;
     if (m && null != i) {
       let e = (0, p.KS)(i);
       return {
@@ -248,15 +248,15 @@ function D(e) {
     guildEvent: d,
     stageInstance: P,
     activeChannel: l,
-    canConnect: V,
+    canConnect: B,
     myRole: H,
     eventCreator: z,
     speakers: G,
-    listenerCount: B,
+    listenerCount: V,
     isEventNoticeHidden: M,
     isStageNoticeHidden: D,
     isStudyRoomNotice: n
-  }), [d, P, l, V, H, z, G, B, M, D, n]);
+  }), [d, P, l, B, H, z, G, V, M, D, n]);
   return null == W ? null : (0, r.jsxs)("div", {
     className: R.container,
     children: [null != ee ? (0, r.jsx)(c.P3F, {
@@ -302,7 +302,7 @@ function D(e) {
       size: c.zxk.Sizes.SMALL,
       color: c.zxk.Colors.GREEN,
       onClick: () => {
-        if (X) null != l && null != l.getGuildId() && ((0, v.Cq)(l), (0, I.XU)(l.getGuildId(), l.id));
+        if (X) null != l && null != l.getGuildId() && ((0, v.Cq)(l), (0, y.XU)(l.getGuildId(), l.id));
         else {
           if (null == d) return;
           (0, h.bO)({

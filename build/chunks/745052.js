@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(209613),
   E = n(325708),
   O = n(320149),
-  y = n(82295),
-  I = n(252618),
+  I = n(82295),
+  y = n(252618),
   v = n(605236),
   C = n(243778),
   S = n(984370),
@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(385956),
   U = n(610697),
   G = n(26373),
-  B = n(486622),
-  V = n(488634),
+  V = n(486622),
+  B = n(488634),
   H = n(899740),
   F = n(177033),
   z = n(355350),
@@ -67,13 +67,13 @@ function en() {
     }, []),
     {
       rejectAll: p
-    } = (0, B.m)({
+    } = (0, V.m)({
       onError: u
     }),
     h = (0, _.Z)("message-requests-list"),
     {
       channelId: f
-    } = (0, V._)(),
+    } = (0, B._)(),
     m = i.useCallback(() => {
       p(n.map(e => e.channel.id))
     }, [n, p]),
@@ -93,7 +93,7 @@ function en() {
         hasSingleMessageRequest: l
       }, u)
     }, [l, n, f]),
-    E = i.useCallback(() => (0, r.jsxs)(y.Z, {
+    E = i.useCallback(() => (0, r.jsxs)(I.Z, {
       className: ee.sectionTitle,
       children: [t > 0 ? $.intl.formatToPlainString($.t.rA4iWV, {
         count: t
@@ -288,10 +288,10 @@ let eo = (0, f.Z)(function(e) {
   i.useEffect(() => {
     null != g && !_ && E && b && ((0, T.Kh)(g), P.Z.closeChannelSidebar(w.uZ))
   }, [g, E, b, _]);
-  let [y, v] = i.useState(q.pS.REQUESTS), C = e => {
+  let [I, v] = i.useState(q.pS.REQUESTS), C = e => {
     v(e)
   };
-  return (0, I.Tt)({
+  return (0, y.Tt)({
     location: $.intl.string($.t.e7GWjY)
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -315,7 +315,7 @@ let eo = (0, f.Z)(function(e) {
             })
           }), (0, r.jsx)(S.Z.Divider, {}), (0, r.jsxs)(d.njP, {
             "aria-label": $.intl.string($.t.e7GWjY),
-            selectedItem: y,
+            selectedItem: I,
             type: "top-pill",
             onItemSelect: C,
             children: [(0, r.jsx)(d.njP.Item, {
@@ -334,7 +334,7 @@ let eo = (0, f.Z)(function(e) {
       }), (0, r.jsx)("div", {
         className: et.content,
         children: (0, r.jsx)(ea, {
-          section: y
+          section: I
         })
       })]
     }), b && (0, r.jsx)(er, {

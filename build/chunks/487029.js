@@ -31,8 +31,8 @@ function E(e) {
     keepOpen: x,
     interactive: I = !0,
     analyticsSource: T,
-    onClose: S
-  } = e, P = function(e) {
+    onClose: P
+  } = e, S = function(e) {
     let [t, n] = (0, o.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites()]);
     return l.useMemo(() => {
       let r = [],
@@ -49,13 +49,13 @@ function E(e) {
   }((0, y.h)(n, !0)), j = (0, O.j)(), Z = l.useRef(null), [A, _] = l.useState(void 0), w = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId()), {
     analyticsLocations: R
   } = (0, s.ZP)(a.Z.SOUNDBOARD_WHEEL), D = l.useCallback(e => {
-    (0, g.GN)(e, n.id, R), S()
-  }, [R, n.id, S]);
+    (0, g.GN)(e, n.id, R), P()
+  }, [R, n.id, P]);
   l.useEffect(() => {
     h.w(), c.DZ.loadIfNecessary()
   }, []), l.useEffect(() => {
-    0 === P.length && 0 === j.length && S()
-  }, [P.length, j, S]), l.useEffect(() => () => {
+    0 === S.length && 0 === j.length && P()
+  }, [S.length, j, P]), l.useEffect(() => () => {
     let e = Z.current;
     x || null == e || D(e)
   }, [x, D]), (0, u.Z)({
@@ -74,22 +74,22 @@ function E(e) {
     }, []),
     L = l.useCallback(e => {
       if (null == e) return void U(null);
-      let t = P[e];
+      let t = S[e];
       null != t && U(t)
-    }, [U, P]),
+    }, [U, S]),
     M = l.useCallback(e => {
       if (null == e) return;
-      let t = P[e];
+      let t = S[e];
       null != t && D(t)
-    }, [P, D]),
-    k = l.useMemo(() => P.map(e => (0, r.jsx)(b.ZP, {
+    }, [S, D]),
+    k = l.useMemo(() => S.map(e => (0, r.jsx)(b.ZP, {
       interactive: I,
       className: m.soundButton,
       sound: e,
       focused: A === e.soundId,
       channel: n
-    }, e.soundId)), [A, n, I, P]);
-  return 0 === P.length ? null : (0, r.jsx)(s.Gt, {
+    }, e.soundId)), [A, n, I, S]);
+  return 0 === S.length ? null : (0, r.jsx)(s.Gt, {
     value: R,
     children: (0, r.jsx)(N.Z, {
       wheelWidth: E,
@@ -100,7 +100,7 @@ function E(e) {
       activeItem: A,
       onItemSelect: L,
       onItemAction: M,
-      onClose: S,
+      onClose: P,
       interactive: I,
       children: k
     })

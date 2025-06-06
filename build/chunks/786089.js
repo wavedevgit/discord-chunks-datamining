@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(617136),
   E = n(113434),
   O = n(497505),
-  y = n(475595),
-  I = n(352084),
+  I = n(475595),
+  y = n(352084),
   v = n(125011),
   C = n(685613),
   S = n(981631),
@@ -31,8 +31,8 @@ let P = (0, i.memo)(function(e) {
   var t, n, l, P, j, A;
   let {
     quest: x
-  } = e, [Z, w] = (0, i.useState)(!1), [L, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(!1), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
-    ref: V,
+  } = e, [Z, w] = (0, i.useState)(!1), [L, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(!1), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), V = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+    ref: B,
     height: H = 0
   } = (0, p.ZP)(), F = (0, h.ZP)(), z = (0, E.B6)(null == (t = x.userStatus) ? void 0 : t.claimedAt, {
     month: "numeric",
@@ -50,7 +50,7 @@ let P = (0, i.memo)(function(e) {
   });
   let $ = (0, u.wj)(F),
     ee = (0, i.useMemo)(() => null != x.config.cosponsorMetadata, [x]),
-    et = (0, i.useMemo)(() => (0, y.fh)(x, y.eC.REWARD), [x]),
+    et = (0, i.useMemo)(() => (0, I.fh)(x, I.eC.REWARD), [x]),
     en = Z ? H + 8 : 0,
     er = (0, _.mH)(O.jn.TROPHY_CASE_CARD),
     {
@@ -113,7 +113,7 @@ let P = (0, i.memo)(function(e) {
       className: a()(T.container, {
         [T.hovered]: Z
       }),
-      children: [null != B && q && null != J && (0, r.jsx)("div", {
+      children: [null != V && q && null != J && (0, r.jsx)("div", {
         ref: G,
         className: T.decoWrapper,
         style: {
@@ -121,10 +121,10 @@ let P = (0, i.memo)(function(e) {
         },
         children: (0, r.jsx)(f.Z, {
           avatarDecorationOverride: J,
-          user: B,
+          user: V,
           guildId: null
         })
-      }), K ? (0, r.jsx)(I.Z, {
+      }), K ? (0, r.jsx)(y.Z, {
         className: T.image
       }) : X ? (0, r.jsx)(v.Z, {
         className: T.image
@@ -160,7 +160,7 @@ let P = (0, i.memo)(function(e) {
           withGameTile: !1
         })
       }), (0, r.jsxs)("div", {
-        ref: V,
+        ref: B,
         className: T.details,
         children: [(0, r.jsx)(d.X6q, {
           className: T.title,

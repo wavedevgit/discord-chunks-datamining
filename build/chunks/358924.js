@@ -19,8 +19,8 @@ var r, i = n(255367),
   _ = n(833664),
   E = n(503438),
   O = n(420660),
-  y = n(74433),
-  I = n(906732),
+  I = n(74433),
+  y = n(906732),
   v = n(812206),
   C = n(933557),
   S = n(194082),
@@ -39,8 +39,8 @@ var r, i = n(255367),
   M = n(395361),
   U = n(639351),
   G = n(81063),
-  B = n(823379),
-  V = n(51144),
+  V = n(823379),
+  B = n(51144),
   H = n(599706),
   F = n(981631),
   z = n(388032),
@@ -517,7 +517,7 @@ er.Header = en, er.Body = e => {
       color: "always-white",
       children: (0, j.P9)(h)
     })]
-  }), g = null != (n = null == (t = (0, y.Z)(r, a)) ? void 0 : t.activityText) ? n : z.intl.string(z.t.eXan7O);
+  }), g = null != (n = null == (t = (0, I.Z)(r, a)) ? void 0 : t.activityText) ? n : z.intl.string(z.t.eXan7O);
   return (0, i.jsxs)(J, {
     children: [(0, i.jsxs)("div", {
       className: W.applicationStreamingSection,
@@ -527,7 +527,7 @@ er.Header = en, er.Body = e => {
         "aria-label": l.username,
         className: W.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
-        children: [q(V.ZP.getName(l)), X(g)]
+        children: [q(B.ZP.getName(l)), X(g)]
       }), (0, i.jsx)(S.ZP, {
         size: S.ZP.Sizes.SMALL
       })]
@@ -546,11 +546,11 @@ er.Header = en, er.Body = e => {
       return c(t)
     })
   }, [d]);
-  let p = (0, s.Wu)([k.default, R.default], () => Array.from(a).map(e => R.default.getId() === e ? null : k.default.getUser(e)).filter(B.lm)),
+  let p = (0, s.Wu)([k.default, R.default], () => Array.from(a).map(e => R.default.getId() === e ? null : k.default.getUser(e)).filter(V.lm)),
     f = (0, h.O)(),
     {
       analyticsLocations: m
-    } = (0, I.ZP)();
+    } = (0, y.ZP)();
   if (null == d) return null;
   let b = v.Z.getApplication(d);
   if (null == b) return null;

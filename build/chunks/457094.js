@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(627845),
   E = n(185666),
   O = n(503737),
-  y = n(513202),
-  I = n(318891),
+  I = n(513202),
+  y = n(318891),
   v = n(687751),
   C = n(64514),
   S = n(912471),
@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(845767),
   U = n(620360),
   G = n(96051),
-  B = n(750995),
-  V = n(696287),
+  V = n(750995),
+  B = n(696287),
   H = n(657030),
   F = n(408026),
   z = n(763916),
@@ -74,8 +74,8 @@ var r = n(255367),
   e_ = n(329557),
   eE = n(304445),
   eO = n(893607),
-  ey = n(703656),
-  eI = n(298969),
+  eI = n(703656),
+  ey = n(298969),
   ev = n(719256),
   eC = n(6025),
   eS = n(897473),
@@ -94,8 +94,8 @@ var r = n(255367),
   eM = n(444961),
   eU = n(314897),
   eG = n(433355),
-  eB = n(592125),
-  eV = n(896797),
+  eV = n(592125),
+  eB = n(896797),
   eH = n(430824),
   eF = n(819640),
   ez = n(283595),
@@ -136,7 +136,7 @@ function e2(e) {
 }
 n(117240), n(801077), n(967368), n(272053), n(974180), n(574254), n(551428), n(55563), n(882029), n(959457), n(653255), n(663389), n(25990), n(778825), n(999382), n(388610), n(533947), n(277053), n(371398), n(141233), n(471073), n(606206);
 let e7 = !1;
-(0, S.DL)(), o.ZP.initialize(), eI.Z.loadServer(), eJ.isPlatformEmbedded && (e$.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
+(0, S.DL)(), o.ZP.initialize(), ey.Z.loadServer(), eJ.isPlatformEmbedded && (e$.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
   eF.Z.getLayers().includes(e1.S9g.USER_SETTINGS) || f.Z.open(null != t ? t : e1.oAB.ACCOUNT)
 }), e$.ZP.on("LAUNCH_APPLICATION", (e, t) => {
   let n = ez.Z.getActiveLibraryApplication(t);
@@ -169,14 +169,14 @@ let e6 = (0, m.l)(e => {
         }
       },
       children: [(0, r.jsx)(a.l_, {
-        to: eV.Z.defaultRoute
+        to: eB.Z.defaultRoute
       }), ";"]
     })
   }),
-  e9 = o.ZP.connectStores([K.Z, eV.Z, eU.default], () => ({
+  e9 = o.ZP.connectStores([K.Z, eB.Z, eU.default], () => ({
     isConnected: K.Z.isConnected(),
-    defaultRoute: eV.Z.defaultRoute,
-    defaultRouteFallback: eV.Z.fallbackRoute,
+    defaultRoute: eB.Z.defaultRoute,
+    defaultRouteFallback: eB.Z.fallbackRoute,
     token: eU.default.getToken()
   }))(class extends i.Component {
     componentDidMount() {
@@ -199,7 +199,7 @@ let e6 = (0, m.l)(e => {
       });
       if (e) {
         let e = tl(t);
-        return null == e || (e.params.guildId === e1.ME || null != eH.Z.getGuild(e.params.guildId)) && null != eB.Z.getChannel(e.params.channelId) ? (0, r.jsx)(a.l_, {
+        return null == e || (e.params.guildId === e1.ME || null != eH.Z.getGuild(e.params.guildId)) && null != eV.Z.getChannel(e.params.channelId) ? (0, r.jsx)(a.l_, {
           to: t
         }) : (0, r.jsx)(a.l_, {
           to: i
@@ -257,7 +257,7 @@ let ti = [{
       userId: n,
       sourceAnalyticsLocations: [N.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {
-      to: eV.Z.defaultRoute
+      to: eB.Z.defaultRoute
     })
   }
 }, {
@@ -305,7 +305,7 @@ let ti = [{
     return (0, q.h)(() => D.Z.openCreateGuildModal({
       location: "External link"
     })), (0, r.jsx)(a.l_, {
-      to: eV.Z.defaultRoute
+      to: eB.Z.defaultRoute
     })
   }
 }, {
@@ -322,7 +322,7 @@ let ti = [{
       subsection: (0, ee.Z)(e1.KsC, i),
       feature: o
     })), (0, r.jsx)(a.l_, {
-      to: eV.Z.defaultRoute
+      to: eB.Z.defaultRoute
     })
   },
   isSessionRequired: !0
@@ -368,7 +368,7 @@ let ti = [{
   path: [e1.Z5c.APPLICATION_LIBRARY_INVENTORY],
   render: function() {
     return (0, q.h)(() => f.Z.open(e1.oAB.INVENTORY)), (0, r.jsx)(a.l_, {
-      to: eV.Z.defaultRoute
+      to: eB.Z.defaultRoute
     })
   },
   isSessionRequired: !0
@@ -433,7 +433,7 @@ let ti = [{
 }, {
   path: [e1.Z5c.CHANNEL_THREAD_VIEW(eO.Hw.guildId(), eO.Hw.channelId(), ":threadId", ":messageId?"), e1.Z5c.CHANNEL(eO.Hw.guildId(), eO.Hw.channelId({
     optional: !0
-  }), ":messageId?"), e1.Z5c.ACTIVITY, e1.Z5c.ACTIVITIES, e1.Z5c.ACTIVITIES_HAPPENING_NOW, e1.Z5c.ACTIVITY_DETAILS(":applicationId"), e1.Z5c.APPLICATION_LIBRARY, e1.Z5c.APPLICATION_STORE, e1.Z5c.MESSAGE_REQUESTS, e1.Z5c.COLLECTIBLES_SHOP, e1.Z5c.COLLECTIBLES_SHOP_FULLSCREEN, e1.Z5c.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"), e1.Z5c.GUILD_DISCOVERY, e1.Z5c.QUEST_HOME, e1.Z5c.GLOBAL_DISCOVERY, e1.Z5c.GUILD_MEMBER_VERIFICATION(eO.Hw.guildId()), e1.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(eO.Hw.guildId(), ":inviteCode?"), e1.Z5c.GUILD_BOOSTING_MARKETING(eO.Hw.guildId()), e1.Z5c.FEATURE(":feature"), e1.Z5c.FAMILY_CENTER, e1.Z5c.NOTIFICATIONS_INBOX(eO.Hw.channelId({
+  }), ":messageId?"), e1.Z5c.ACTIVITY, e1.Z5c.ACTIVITIES, e1.Z5c.ACTIVITIES_HAPPENING_NOW, e1.Z5c.ACTIVITY_DETAILS(":applicationId"), e1.Z5c.APPLICATION_LIBRARY, e1.Z5c.APPLICATION_STORE, e1.Z5c.MESSAGE_REQUESTS, e1.Z5c.COLLECTIBLES_SHOP, e1.Z5c.COLLECTIBLES_SHOP_FULLSCREEN, e1.Z5c.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"), e1.Z5c.GUILD_DISCOVERY, e1.Z5c.QUEST_HOME, e1.Z5c.GLOBAL_DISCOVERY, e1.Z5c.GUILD_MEMBER_VERIFICATION(eO.Hw.guildId()), e1.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(eO.Hw.guildId(), ":inviteCode?"), e1.Z5c.GUILD_BOOSTING_MARKETING(eO.Hw.guildId()), e1.Z5c.GUILD_FEATURE(":feature", eO.Hw.guildId()), e1.Z5c.FEATURE(":feature"), e1.Z5c.FAMILY_CENTER, e1.Z5c.NOTIFICATIONS_INBOX(eO.Hw.channelId({
     optional: !0
   }), ":messageId?")],
   render: te,
@@ -469,12 +469,12 @@ function ta(e) {
   if (!K.Z.isConnected()) return;
   let {
     location: i
-  } = (0, ey.s1)();
-  i.pathname === r && (null == eB.Z.getChannel(t) ? (0, ey.dL)(e1.Z5c.CHANNEL(n)) : (0, ey.dL)(r))
+  } = (0, eI.s1)();
+  i.pathname === r && (null == eV.Z.getChannel(t) ? (0, eI.dL)(e1.Z5c.CHANNEL(n)) : (0, eI.dL)(r))
 }
 class to extends i.PureComponent {
   componentDidMount() {
-    e$.ZP.setZoomFactor(b.Z.zoom), eI.Z.init(), P.Z.initialize(), ef.Z.initialize(), F.Z.initialize(), eM.Z.initialize(), z.Z.initialize(), em.Z.initialize(), M.Z.initialize(), ei.Z.initialize(), _.Z.init(), Y.Z.init(), W.Z.init(), ec.Z.initialize(), v.Z.initialize(), B.Z.initialize(), eb.Z.initialize(), I.ZP.initialize(), ek.Z.initialize(), eh.Z.initialize(), y.Z.initialize(), en.Z.init(), Z.Z.init(), eQ.Z.init(), O.Z.initialize(), ex.Z.init(), eq.Z.init(), eL.Z.init(), eT.Z.initialize(), eP.Z.initialize(), ew.Z.initialize(), eR.Z.init(), G.Z.initialize(), E.Z.initialize(), ev.Z.initialize(), eN.Z.initialize(), ed.Z.initialize(), eu.Z.initialize(), ep.Z.initialize(), w.Z.initialize(), L.Z.initialize(), H.Z.initialize(), er.Z.init({
+    e$.ZP.setZoomFactor(b.Z.zoom), ey.Z.init(), P.Z.initialize(), ef.Z.initialize(), F.Z.initialize(), eM.Z.initialize(), z.Z.initialize(), em.Z.initialize(), M.Z.initialize(), ei.Z.initialize(), _.Z.init(), Y.Z.init(), W.Z.init(), ec.Z.initialize(), v.Z.initialize(), V.Z.initialize(), eb.Z.initialize(), y.ZP.initialize(), ek.Z.initialize(), eh.Z.initialize(), I.Z.initialize(), en.Z.init(), Z.Z.init(), eQ.Z.init(), O.Z.initialize(), ex.Z.init(), eq.Z.init(), eL.Z.init(), eT.Z.initialize(), eP.Z.initialize(), ew.Z.initialize(), eR.Z.init(), G.Z.initialize(), E.Z.initialize(), ev.Z.initialize(), eN.Z.initialize(), ed.Z.initialize(), eu.Z.initialize(), ep.Z.initialize(), w.Z.initialize(), L.Z.initialize(), H.Z.initialize(), er.Z.init({
       hasModalOpen: s.$sL,
       openModal: () => (0, s.ZDy)(async () => {
         let {
@@ -485,7 +485,7 @@ class to extends i.PureComponent {
     }), U.Z.init(), el.Z.initialize(), e_.Z.initialize(), eg.Z.initialize(), k.Z.initialize(), A.Z.initialize(), x.Z.initialize(), C.Z.initialize(), this.rewriterUnlisten = eE.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eE.Z.addRouteChangeListener(this.handleHistoryChange)
   }
   componentWillUnmount() {
-    eI.Z.terminate(), eM.Z.terminate(), em.Z.terminate(), ef.Z.terminate(), P.Z.terminate(), I.ZP.terminate(), ek.Z.terminate(), y.Z.terminate(), eb.Z.terminate(), eh.Z.terminate(), ew.Z.terminate(), O.Z.terminate(), G.Z.terminate(), el.Z.terminate(), E.Z.terminate(), e_.Z.terminate(), ev.Z.terminate(), eN.Z.terminate(), ed.Z.terminate(), eu.Z.terminate(), ep.Z.terminate(), w.Z.terminate(), L.Z.terminate(), eg.Z.terminate(), k.Z.terminate(), V.Z.terminate(), A.Z.terminate(), x.Z.terminate(), C.Z.terminate(), H.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+    ey.Z.terminate(), eM.Z.terminate(), em.Z.terminate(), ef.Z.terminate(), P.Z.terminate(), y.ZP.terminate(), ek.Z.terminate(), I.Z.terminate(), eb.Z.terminate(), eh.Z.terminate(), ew.Z.terminate(), O.Z.terminate(), G.Z.terminate(), el.Z.terminate(), E.Z.terminate(), e_.Z.terminate(), ev.Z.terminate(), eN.Z.terminate(), ed.Z.terminate(), eu.Z.terminate(), ep.Z.terminate(), w.Z.terminate(), L.Z.terminate(), eg.Z.terminate(), k.Z.terminate(), B.Z.terminate(), A.Z.terminate(), x.Z.terminate(), C.Z.terminate(), H.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
   }
   handleHistoryChange(e) {
     let {
@@ -537,7 +537,7 @@ class to extends i.PureComponent {
           let e = eG.ZP.getCurrentSidebarChannelId(n) !== s,
             t = null != eG.ZP.getGuildSidebarState(r);
           if (null != i && null != s && e)
-            if (t)(0, ey.dL)(e1.Z5c.CHANNEL(r, s, o));
+            if (t)(0, eI.dL)(e1.Z5c.CHANNEL(r, s, o));
             else {
               let e = {
                 type: eS.Ff.THREAD
@@ -560,7 +560,7 @@ class to extends i.PureComponent {
       } else tn.some(t => {
         var n;
         return (null == (n = (0, a.LX)(e, t)) ? void 0 : n.isExact) === !0
-      }) || (0, ey.dL)(eV.Z.fallbackRoute)
+      }) || (0, eI.dL)(eB.Z.fallbackRoute)
     }(t, n)
   }
   ensureChannelMatchesGuild(e) {
@@ -575,7 +575,7 @@ class to extends i.PureComponent {
       threadId: l
     } = tr(n), a = (0, eO.Ss)(r) && r !== e1.ME && r !== e1.I_8;
     if (null != i && (0, eO.cq)(i) && !(0, e3.AB)(i) && a) {
-      let n = eB.Z.getChannel(i);
+      let n = eV.Z.getChannel(i);
       if (null == n) eA.Z.loadThread(i).then(() => ta({
         channelId: i,
         guildId: r,
@@ -587,7 +587,7 @@ class to extends i.PureComponent {
       };
       if (null != l) {
         if (!((0, eO.cq)(l) && !(0, e3.AB)(i))) return null;
-        let n = eB.Z.getChannel(l);
+        let n = eV.Z.getChannel(l);
         if (null == n) eA.Z.loadThread(l).then(() => ta({
           channelId: l,
           guildId: r,
