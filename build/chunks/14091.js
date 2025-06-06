@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(768119),
   _ = n(944486),
   y = n(585483),
-  C = n(72006),
-  x = n(965996),
+  x = n(72006),
+  C = n(965996),
   v = n(652399),
   j = n(251285),
   O = n(406326),
@@ -43,7 +43,7 @@ function A(e, t, n) {
 
 function w(e) {
   let t = null != e ? b.Z.getEditorState(e) : null;
-  return null != t ? C.Sq(t) : null
+  return null != t ? x.Sq(t) : null
 }
 class R extends i.Component {
   componentDidMount() {
@@ -226,7 +226,7 @@ class k extends i.PureComponent {
           mode: e
         });
         let r = null != t ? b.Z.getEditorState(t) : null,
-          l = null != r ? C.Sq(r) : null;
+          l = null != r ? x.Sq(r) : null;
         p.Nz(t, e, l), this.setState({
           searchMode: e
         })
@@ -354,15 +354,15 @@ function L(e) {
     blockCount: d
   } = (0, j.Z)(t), p = i.useRef(null), [g, _] = i.useState(!1), {
     enabled: y,
-    force: C
-  } = (0, x.f)({
+    force: x
+  } = (0, C.f)({
     location: "SearchResults"
   });
   return i.useEffect(() => {
-    y && C && _(!0)
-  }, [C, y]), i.useEffect(() => {
-    y && (C || t !== p.current && (p.current = t, f.Z.possiblyShowFeedbackModal(Z.nw.SEARCH_RESULTS, () => _(!0), () => _(!1))))
-  }, [y, C, t]), (0, r.jsx)(k, {
+    y && x && _(!0)
+  }, [x, y]), i.useEffect(() => {
+    y && (x || t !== p.current && (p.current = t, f.Z.possiblyShowFeedbackModal(Z.nw.SEARCH_RESULTS, () => _(!0), () => _(!1))))
+  }, [y, x, t]), (0, r.jsx)(k, {
     searchId: t,
     search: n,
     searchAnalyticsId: l,

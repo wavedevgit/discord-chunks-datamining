@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(358221),
   _ = n(414910),
   y = n(909820),
-  C = n(493010),
-  x = n(71127),
+  x = n(493010),
+  C = n(71127),
   v = n(185935),
   j = n(522651),
   O = n(540059),
@@ -103,13 +103,13 @@ function eu(e) {
   } = (0, g.ZP)(), d = t.getGuildId(), p = (0, s.e7)([U.Z], () => U.Z.getMostRecentSelectedTextChannelId(d), [d]), h = M.default.getId(), f = !(0, s.e7)([b.Z], () => b.Z.isFullscreenInContext(n)) && (!B.isPlatformEmbedded || B.isPlatformEmbedded && F.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS)), m = null != c && c.type !== en.fO.ACTIVITY && c.user.id !== h, y = i.useMemo(() => {
     var e;
     return null != (e = null == a ? void 0 : a.window) ? e : window
-  }, [a]), C = (0, $.Z)({
+  }, [a]), x = (0, $.Z)({
     channel: t,
     appContext: n,
     popoutOpen: l,
     popoutWindow: a,
     currentWindow: y
-  }), x = n === et.IlC.POPOUT && B.isPlatformEmbedded && F.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS);
+  }), C = n === et.IlC.POPOUT && B.isPlatformEmbedded && F.ZP.supportsFeature(et.eRX.POPOUT_WINDOWS);
   return (0, r.jsxs)(r.Fragment, {
     children: [m ? (0, r.jsx)(R.Z, {
       context: (0, _.Z)(c.type),
@@ -117,7 +117,7 @@ function eu(e) {
       currentWindow: y,
       sliderClassName: ei.volumeSlider,
       location: u
-    }) : null, x ? (0, r.jsx)(w.Z, {
+    }) : null, C ? (0, r.jsx)(w.Z, {
       className: ei.rightTrayIcon,
       popoutWindowAlwaysOnTop: o,
       onToggleStayOnTop: ec
@@ -130,7 +130,7 @@ function eu(e) {
       onClosePopout: () => {
         (0, j.v)(u, j.d.POPOUT, !1), es()
       }
-    }) : null, C]
+    }) : null, x]
   })
 }
 
@@ -156,8 +156,8 @@ function ep(e) {
       showRequestToSpeakSidebar: p,
       popoutWindow: h,
       popoutWindowAlwaysOnTop: _,
-      popoutOpen: C,
-      chatOpen: x,
+      popoutOpen: x,
+      chatOpen: C,
       idleProps: v
     } = e,
     {
@@ -168,7 +168,7 @@ function ep(e) {
     P = (0, s.e7)([D.Z], () => D.Z.can(et.Plq.CONNECT, c)),
     S = (0, H.w8)(c.id, V.pV.SPEAKER),
     Z = (0, s.e7)([b.Z], () => b.Z.getSelectedParticipant(c.id)),
-    A = C && E !== et.IlC.POPOUT,
+    A = x && E !== et.IlC.POPOUT,
     w = (0, O.Q3)("StageChannelCallContent"),
     [R, M] = i.useState(0),
     L = (0, u._q$)("StageChannelCall"),
@@ -221,7 +221,7 @@ function ep(e) {
       children: (0, r.jsx)(eu, {
         channel: c,
         appContext: E,
-        popoutOpen: C,
+        popoutOpen: x,
         popoutWindow: h,
         popoutWindowAlwaysOnTop: _,
         selectedParticipant: Z
@@ -233,7 +233,7 @@ function ep(e) {
       showRequestToSpeakSidebar: p,
       channel: c
     }),
-    renderChatToasts: () => !F || x || A ? null : (0, r.jsx)(y.ZP, {
+    renderChatToasts: () => !F || C || A ? null : (0, r.jsx)(y.ZP, {
       children: (0, r.jsx)(N.Z, {
         className: a()(ei.chatToasts, {
           [ei.rtsSidebarOpen]: p
@@ -327,11 +327,11 @@ function eh(e) {
           chatOpen: S
         }) : null, (0, r.jsxs)("div", {
           className: ei.channelChatWrapper,
-          children: [S && k && (0, r.jsx)(C.Z, {
+          children: [S && k && (0, r.jsx)(x.Z, {
             channel: t,
             guild: T,
             maxWidth: M
-          }), N && A && k && (0, r.jsx)(x.Z, {
+          }), N && A && k && (0, r.jsx)(C.Z, {
             channel: t,
             maxWidth: M
           })]

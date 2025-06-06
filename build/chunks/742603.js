@@ -20,8 +20,8 @@ var i = n(120356),
   b = n(854698),
   _ = n(897669),
   y = n(665149),
-  C = n(984370),
-  x = n(910611),
+  x = n(984370),
+  C = n(910611),
   v = n(454585),
   j = n(134483),
   O = n(210975),
@@ -229,7 +229,7 @@ function V(e) {
     children: [(0, r.jsx)(o.f6W, {
       theme: M.BR.DARK,
       children: e => (0, r.jsxs)(y.ZP, {
-        onDoubleClick: C.O,
+        onDoubleClick: x.O,
         transparent: !0,
         className: e,
         childrenBottom: G,
@@ -257,7 +257,7 @@ function V(e) {
               }))
             })]
           })
-        }), (0, r.jsx)(x.TS, {
+        }), (0, r.jsx)(C.TS, {
           channel: t,
           guild: i
         }), (0, r.jsx)(H, {

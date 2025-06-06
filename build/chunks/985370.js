@@ -24,18 +24,18 @@ let g = e => {
   } = e, {
     isHovered: _,
     setIsHovered: y,
-    onMouseEnter: C,
-    onMouseLeave: x,
+    onMouseEnter: x,
+    onMouseLeave: C,
     cancelTimers: v
   } = (0, u.Z)(200, 300), [j, O] = i.useState(!1), E = (0, l.e7)([p.Z], () => p.Z.effectCooldownEndTime), I = i.useMemo(() => null != E ? (E.getTime() - Date.now()) / 1e3 : 0, [E]), {
     seconds: P
   } = (0, o.Z)(null != E ? E : new Date), S = P > 0, {
     parentAnalyticsLocation: Z
   } = (0, s.ZP)(), N = i.useCallback(e => {
-    "focus" !== e.type && (j || S || C())
-  }, [j, S, C]), T = i.useCallback(() => {
-    j || x()
-  }, [x, j]), A = i.useCallback((e, t) => {
+    "focus" !== e.type && (j || S || x())
+  }, [j, S, x]), T = i.useCallback(() => {
+    j || C()
+  }, [C, j]), A = i.useCallback((e, t) => {
     v(), O(!j), g === f.D.EMOJI ? null == b || b(void 0) : null == b || b(f.D.EMOJI), (!_ || j) && (null == t || t(e))
   }, [v, j, _, b, g]), w = (_ || j) && (g === f.D.EMOJI || null == g), R = i.useRef(null);
   return (0, r.jsx)(a.yRy, {
@@ -57,7 +57,7 @@ let g = e => {
         isHovered: w,
         channel: t,
         closePopout: n,
-        onMouseEnter: C,
+        onMouseEnter: x,
         onMouseLeave: T,
         onFocus: () => O(!0)
       })

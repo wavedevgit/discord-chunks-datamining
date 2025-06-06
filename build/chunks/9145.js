@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(786915),
   _ = n(402113),
   y = n(592125),
-  C = n(271383),
-  x = n(944486),
+  x = n(271383),
+  C = n(944486),
   v = n(594174),
   j = n(585483),
   O = n(51144),
@@ -82,10 +82,10 @@ function F(e) {
   }
   let eu = K.get(null != (l = null == V ? void 0 : V.id) ? l : ""),
     ed = G.kind === o.E.CONTEXTLESS,
-    ep = (0, s.e7)([x.Z], () => x.Z.getChannelId()),
-    eh = (0, s.Wu)([C.ZP], () => {
+    ep = (0, s.e7)([C.Z], () => C.Z.getChannelId()),
+    eh = (0, s.Wu)([x.ZP], () => {
       var e;
-      return null == Y ? [] : Array.from(null != (e = null == eu ? void 0 : eu.embeddedActivity.userIds) ? e : []).map(e => C.ZP.getMember(Y.guild_id, e))
+      return null == Y ? [] : Array.from(null != (e = null == eu ? void 0 : eu.embeddedActivity.userIds) ? e : []).map(e => x.ZP.getMember(Y.guild_id, e))
     }, [eu, Y]),
     ef = i.useMemo(() => {
       let e = new Map;

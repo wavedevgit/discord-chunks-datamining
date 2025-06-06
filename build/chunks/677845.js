@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(470956),
   _ = n(430824),
   y = n(496675),
-  C = n(434488),
-  x = n(27457),
+  x = n(434488),
+  C = n(27457),
   v = n(251564),
   j = n(695492),
   O = n(981631),
@@ -59,7 +59,7 @@ function I(e) {
     G = (0, f.wE)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     H = (0, d.KF)(S.id) !== d.jy.CAN_LAUNCH,
     V = null != R && R === S.id,
-    z = k.map(e => t => (0, r.jsx)(x.ZP, {
+    z = k.map(e => t => (0, r.jsx)(C.ZP, {
       participant: e,
       channel: S,
       className: E.tile,
@@ -81,7 +81,7 @@ function I(e) {
     }
   }, {
     trackOnInitialLoad: !0
-  }, []), null != w && !U && (!(M >= 2) || !F || H || G || V ? B && 1 === M && D && (F && !H ? z.push(e => (0, r.jsx)(C.h, {
+  }, []), null != w && !U && (!(M >= 2) || !F || H || G || V ? B && 1 === M && D && (F && !H ? z.push(e => (0, r.jsx)(x.h, {
     channel: S,
     guild: w,
     width: e,
@@ -93,7 +93,7 @@ function I(e) {
     channel: S,
     guild: w,
     inPopout: A
-  }))) : z.push(e => (0, r.jsx)(C.h, {
+  }))) : z.push(e => (0, r.jsx)(x.h, {
     channel: S,
     guild: w,
     width: e,

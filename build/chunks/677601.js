@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(239091),
   _ = n(287734),
   y = n(872810),
-  C = n(153867),
-  x = n(944543),
+  x = n(153867),
+  C = n(944543),
   v = n(410575),
   j = n(393238),
   O = n(110924),
@@ -73,8 +73,8 @@ var r = n(255367),
   eb = n(594174),
   e_ = n(979651),
   ey = n(626135),
-  eC = n(934415),
-  ex = n(585483),
+  ex = n(934415),
+  eC = n(585483),
   ev = n(358085),
   ej = n(998502),
   eO = n(228488),
@@ -255,7 +255,7 @@ class eq extends i.PureComponent {
       callContainerDimensions: _
     } = this.props, {
       isDesktopVisualRefreshEnabled: y
-    } = this.state, C = f === eB.AEg.MINIMUM, x = C || f === eB.AEg.NORMAL, v = i && a === eB.WtW.VIDEO, j = (null != (t = null == b ? void 0 : b.length) ? t : 0) > 0 && p.isPrivate();
+    } = this.state, x = f === eB.AEg.MINIMUM, C = x || f === eB.AEg.NORMAL, v = i && a === eB.WtW.VIDEO, j = (null != (t = null == b ? void 0 : b.length) ? t : 0) > 0 && p.isPrivate();
     return this._lastIdleProps = e, (0, r.jsx)(et.Z, ez(eV({
       renderHeader: this.renderHeader,
       renderBottomLeft: this.renderBottomLeft,
@@ -265,8 +265,8 @@ class eq extends i.PureComponent {
       renderVoiceChannelEffects: this.renderVoiceChannelEffects
     }, e), {
       screenMessage: this.screenMessage,
-      disableGradients: y && !i || C,
-      idle: !m && i && !C && e.idle,
+      disableGradients: y && !i || x,
+      idle: !m && i && !x && e.idle,
       children: i && this.popoutOpen && !this.inPopout ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(z.Z, {
           channel: p
@@ -285,7 +285,7 @@ class eq extends i.PureComponent {
           mode: a,
           onSelectParticipant: this.handleSelectParticipant,
           onContextMenuParticipant: this.handleContextMenu,
-          showParticipants: s && (!x || j),
+          showParticipants: s && (!C || j),
           popoutWindow: this.inPopout ? o : null,
           awaitingRemoteSessionInfo: g,
           callContainerDimensions: _
@@ -384,7 +384,7 @@ class eq extends i.PureComponent {
         appContext: n,
         layout: r
       } = this.props;
-      r !== e && (g.Z.updateLayout(t.id, e, n), e === eB.AEg.FULL_SCREEN && t.isPrivate() && ex.S.dispatch(eB.CkL.TEXTAREA_BLUR))
+      r !== e && (g.Z.updateLayout(t.id, e, n), e === eB.AEg.FULL_SCREEN && t.isPrivate() && eC.S.dispatch(eB.CkL.TEXTAREA_BLUR))
     }), eH(this, "handleDisconnect", () => {
       this.props.layout === eB.AEg.FULL_SCREEN && this.handleFullScreen()
     }), eH(this, "trackCallTileContextMenuImpression", (e, t) => {
@@ -518,7 +518,7 @@ class eq extends i.PureComponent {
         connectedEmbeddedActivity: t
       } = this.props, n = () => {
         let t = e.getGuildId();
-        null != t && (0, W.uL)((0, eC.LY)(t)), H.hP(e)
+        null != t && (0, W.uL)((0, ex.LY)(t)), H.hP(e)
       };
       null == t || (0, I.R)() ? n() : (0, N.Z)(n)
     }), eH(this, "handleStayOnTop", e => {
@@ -537,7 +537,7 @@ class eq extends i.PureComponent {
         channel: n,
         layout: i
       } = this.props;
-      return this.inPopout || i === eB.AEg.FULL_SCREEN || null == t || n.isManaged() || (e = (0, r.jsx)(x.Z, {
+      return this.inPopout || i === eB.AEg.FULL_SCREEN || null == t || n.isManaged() || (e = (0, r.jsx)(C.Z, {
         call: t
       })), (0, r.jsx)(M.Z, {
         justify: M.Z.Justify.END,
@@ -742,7 +742,7 @@ let eK = function(e) {
     return (null != (e = null == b ? void 0 : b.channelId) ? e : eg.Z.getVoiceChannelId()) === n.id
   }), {
     participants: y,
-    filteredParticipants: x,
+    filteredParticipants: C,
     participantsVersion: I,
     mode: N,
     layout: A,
@@ -777,7 +777,7 @@ let eK = function(e) {
     popoutWindow: V.Z.getWindow(eB.KJ3.CHANNEL_CALL_POPOUT),
     popoutWindowAlwaysOnTop: V.Z.getIsAlwaysOnTop(eB.KJ3.CHANNEL_CALL_POPOUT)
   })), $ = (0, u.e7)([ef.Z], () => ef.Z.can(eB.Plq.CONNECT, n)), ee = (0, u.e7)([ed.Z], () => ed.Z.getToastsEnabled(n.id)), et = (0, u.e7)([D.Z], () => D.Z.getAwaitingRemoteSessionInfo()), en = (0, u.e7)([q.ZP], () => q.ZP.callHeaderHeight), er = i.useCallback(e => {
-    C.ZP.updatedUnsyncedSettings({
+    x.ZP.updatedUnsyncedSettings({
       callHeaderHeight: e
     })
   }, []), ei = null != (t = null == W ? void 0 : W.id) ? t : null, el = (0, Z.Z)(ei, n.id), ea = (0, u.e7)([P.Z], () => P.Z.getFetchState(), []), eo = (0, O.Z)(ea);
@@ -801,9 +801,9 @@ let eK = function(e) {
     } = (0, ew.Z)({
       location: "ChannelCall"
     }),
-    eC = (0, L.bn)(d.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK),
+    ex = (0, L.bn)(d.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK),
     {
-      analyticsLocations: ex
+      analyticsLocations: eC
     } = (0, w.ZP)(T.Z.CHANNEL_CALL),
     ev = S.ZP.getEmbeddedActivitiesForChannel(n.id),
     {
@@ -811,7 +811,7 @@ let eK = function(e) {
     } = (0, f.TCT)(),
     eI = (0, k.Q3)("ChannelCall");
   return (0, r.jsx)(w.Gt, {
-    value: ex,
+    value: eC,
     children: (0, r.jsx)(v.Z, {
       page: eB.ZY5.CHANNEL_CALL,
       children: (0, r.jsx)(eS.B2, {
@@ -832,7 +832,7 @@ let eK = function(e) {
             mode: N,
             inCall: _,
             participants: y,
-            filteredParticipants: x,
+            filteredParticipants: C,
             participantsVersion: I,
             layout: A,
             chatOpen: F,
@@ -856,7 +856,7 @@ let eK = function(e) {
             channelChatRef: m,
             width: o,
             maxHeight: a,
-            forceShowControls: eC,
+            forceShowControls: ex,
             awaitingRemoteSessionInfo: et,
             currentChannelActivities: ev,
             theme: eO,

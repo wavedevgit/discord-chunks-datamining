@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(199902),
   _ = n(314897),
   y = n(271383),
-  C = n(131951),
-  x = n(496675),
+  x = n(131951),
+  C = n(496675),
   v = n(158776),
   j = n(885110),
   O = n(797258),
@@ -39,9 +39,9 @@ let w = i.memo(e => {
     deaf: a,
     user: s,
     channel: g,
-    sessionId: x,
+    sessionId: C,
     nick: A
-  } = e, w = s.id, R = (0, o.e7)([_.default], () => _.default.getId() === w, [w]), [M, k, L] = (0, o.Wu)([C.Z], () => R ? [!C.Z.isSupported() || C.Z.isSelfMute() || C.Z.isSelfMutedTemporarily(), C.Z.isSelfDeaf(), !1] : [!C.Z.isSupported() || C.Z.isLocalMute(w), !1, C.Z.isLocalVideoDisabled(w)], [R, w]), D = (0, o.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), U = (0, c.Z)({
+  } = e, w = s.id, R = (0, o.e7)([_.default], () => _.default.getId() === w, [w]), [M, k, L] = (0, o.Wu)([x.Z], () => R ? [!x.Z.isSupported() || x.Z.isSelfMute() || x.Z.isSelfMutedTemporarily(), x.Z.isSelfDeaf(), !1] : [!x.Z.isSupported() || x.Z.isLocalMute(w), !1, x.Z.isLocalVideoDisabled(w)], [R, w]), D = (0, o.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), U = (0, c.Z)({
     userId: w,
     checkSoundSharing: !0
   }), B = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(g.guild_id, w)), F = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), G = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
@@ -53,7 +53,7 @@ let w = i.memo(e => {
   null != W && S.ZP.trackExposure({
     location: "voice_users"
   });
-  let [Y, q] = (0, o.Wu)([b.Z], () => [b.Z.getStreamForUser(w, g.getGuildId()), b.Z.getActiveStreamForUser(w, g.getGuildId())], [g, w]), K = (0, o.e7)([O.Z], () => O.Z.getSessionById(x)), X = P.ZP.useName(s), Q = (0, o.e7)([I.Z], () => I.Z.getVoicePlatformForChannel(g.id, w), [g.id, w]), J = (0, m.Eu)(g.id, w);
+  let [Y, q] = (0, o.Wu)([b.Z], () => [b.Z.getStreamForUser(w, g.getGuildId()), b.Z.getActiveStreamForUser(w, g.getGuildId())], [g, w]), K = (0, o.e7)([O.Z], () => O.Z.getSessionById(C)), X = P.ZP.useName(s), Q = (0, o.e7)([I.Z], () => I.Z.getVoicePlatformForChannel(g.id, w), [g.id, w]), J = (0, m.Eu)(g.id, w);
   return (0, r.jsx)(f.Z, {
     shakeLocation: T.oZ.VOICE_USER,
     isShaking: U,
@@ -118,7 +118,7 @@ let R = [],
       tabIndex: f,
       location: b,
       numAudience: y,
-      withGuildIcon: C = !1,
+      withGuildIcon: x = !1,
       className: j,
       children: O
     } = e, [E, I] = i.useState(null), [P, S] = i.useState(!1), T = i.useRef(null), M = (0, m.Es)(l.id, null != c ? c : R), k = i.useRef(new s.sW(50, () => {
@@ -165,7 +165,7 @@ let R = [],
             sessionId: null != (i = s.sessionId) ? i : "",
             channel: l,
             collapsed: u,
-            canDrag: n && x.Z.can(N.Plq.MOVE_MEMBERS, l),
+            canDrag: n && C.Z.can(N.Plq.MOVE_MEMBERS, l),
             showPreview: D,
             hidePreview: U,
             previewIsOpen: P,
@@ -184,7 +184,7 @@ let R = [],
     return null == F && null == O ? null : (0, r.jsxs)(g.eJ, {
       className: a()(j, A.list, {
         [A.collapsed]: u,
-        [A.withGuildIcon]: C
+        [A.withGuildIcon]: x
       }),
       collapsed: u,
       children: [F, O]

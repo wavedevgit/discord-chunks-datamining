@@ -854,11 +854,11 @@ function ey(e, t, n) {
   } = n;
   if (t.type === M.d4z.GUILD_DIRECTORY || !e.optInEnabled || t.isGuildVocal() || e.optedInChannels.has(t.id) || t.isThread() || null != t.parent_id && e.optedInChannels.has(t.parent_id) || e.hideResourceChannels && t.hasFlag(V.zZ.IS_GUILD_RESOURCE_CHANNEL)) return !1;
   if (null != i && (i.id === t.id || i.isThread() && i.parent_id === t.id) || L.ZP.getMentionCount(t.id) > 0) return !0;
-  let l = f.Z.getNewChannelIds(e.id),
-    r = Array.from(l).sort((e, t) => Z.default.compare(t, e));
-  if (l.has(t.id) && r.indexOf(t.id) < j) return !0;
   for (let e in s[t.id])
     if (L.ZP.getMentionCount(e) > 0 || L.ZP.hasUnread(e) || L.ZP.hasRecentlyVisitedAndRead(e)) return !0;
-  return !(e.mutedChannelIds.has(t.id) || null != t.parent_id && e.mutedChannelIds.has(t.parent_id)) && !!L.ZP.hasRecentlyVisitedAndRead(t.id)
+  if (e.mutedChannelIds.has(t.id) || null != t.parent_id && e.mutedChannelIds.has(t.parent_id)) return !1;
+  let l = f.Z.getNewChannelIds(e.id),
+    r = Array.from(l).sort((e, t) => Z.default.compare(t, e));
+  return !!(l.has(t.id) && r.indexOf(t.id) < j || L.ZP.hasRecentlyVisitedAndRead(t.id))
 }
 let eS = new Set(Object.values(U.z))

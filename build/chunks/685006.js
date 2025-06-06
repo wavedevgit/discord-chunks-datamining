@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(213459),
   _ = n(541716),
   y = n(540059),
-  C = n(61356),
-  x = n(981631),
+  x = n(61356),
+  C = n(981631),
   v = n(314734),
   j = n(522271);
 let O = (0, o.U)(() => ({
@@ -47,14 +47,14 @@ function P(e) {
     primaryEntryPointCommand: s
   } = (0, h.Z)({
     context: t
-  }), c = null == o ? void 0 : o.id, f = (0, C.Z)({
+  }), c = null == o ? void 0 : o.id, f = (0, x.Z)({
     type: l
   }), {
     sectionCommands: y
   } = (0, b.If)(t, null != c ? c : ""), v = i.useCallback(() => {
     f ? m.yT(g.ti.DISMISSED) : (m.__(g._b.TEXT, _.Ie.NORMAL, {
       applicationId: c
-    }), (0, p.yw)(x.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
+    }), (0, p.yw)(C.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
       application_id: c,
       location: d.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON,
       source: g._b.TEXT
@@ -80,7 +80,7 @@ function S(e) {
     onOpenButtonPress: l,
     entryPointCommandButtonRef: o,
     type: s
-  } = e, u = (0, C.Z)({
+  } = e, u = (0, x.Z)({
     type: s
   }), {
     isExecutingLaunchInteraction: d,
@@ -90,7 +90,7 @@ function S(e) {
     currentEmbeddedActivity: g,
     channelRecipientUserId: b,
     setIsExecutingLaunchInteraction: _,
-    analyticsLocations: x
+    analyticsLocations: C
   } = (0, f.Z)({
     context: t,
     primaryEntryPointCommand: i,
@@ -105,7 +105,7 @@ function S(e) {
     onOpenButtonPress: l,
     channelRecipientUserId: b,
     setIsExecutingLaunchInteraction: _,
-    analyticsLocations: x
+    analyticsLocations: C
   }), E = h ? c.zxk.Colors.RED : c.zxk.Colors.BRAND, I = (0, y.Q3)("LoadedEntryPointCommandButton");
   return (0, r.jsx)(c.zxk, {
     className: a()(j.entryPointAppCommandButton, v.Id),

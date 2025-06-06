@@ -22,8 +22,8 @@ function d(e) {
     } = e,
     _ = [],
     y = !1,
-    C = null != f ? a.default.extractTimestamp(f) : null,
-    x = null;
+    x = null != f ? a.default.extractTimestamp(f) : null,
+    C = null;
   return h.forEach(e => {
     var i, v, j;
     let O, E;
@@ -34,18 +34,18 @@ function d(e) {
         let n = a.default.extractTimestamp(g[e].startId),
           r = a.default.extractTimestamp(g[e].endId);
         if (t >= n && t <= r) {
-          if (x === g[e].id) break;
+          if (C === g[e].id) break;
           _.push({
             type: u.ys_.DIVIDER,
             content: g[e].topic,
             contentKey: g[e].id
-          }), x = g[e].id;
+          }), C = g[e].id;
           break
         }
       }
     }
     let I = (0, l.vc)(e.timestamp, "LL");
-    I !== t && null == x && (_.push({
+    I !== t && null == C && (_.push({
       type: u.ys_.DIVIDER,
       content: I,
       contentKey: I
@@ -65,16 +65,16 @@ function d(e) {
       type: N,
       content: [],
       key: e.id
-    }, _.push(O)) : E = (O = v).content[O.content.length - 1], [O, E])), f === e.id && null != C) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== S ? (j = S, e.isFirstMessageInForumPost(p) || j.content.push({
+    }, _.push(O)) : E = (O = v).content[O.content.length - 1], [O, E])), f === e.id && null != x) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== S ? (j = S, e.isFirstMessageInForumPost(p) || j.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), j.hasUnread = !0) : e.isFirstMessageInForumPost(p) || _.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), C = null) : null != C && a.default.extractTimestamp(e.id) > C && (e.isFirstMessageInForumPost(p) || _.push({
+    }), x = null) : null != x && a.default.extractTimestamp(e.id) > x && (e.isFirstMessageInForumPost(p) || _.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), C = null);
+    }), x = null);
     let T = (0, c.f)(e, p);
     null != T && _.push({
       type: u.ys_.MESSAGE,

@@ -25,8 +25,8 @@ function b(e) {
     canToggle: b,
     iconAltText: _,
     onChange: y,
-    tooltipColor: C,
-    className: x,
+    tooltipColor: x,
+    className: C,
     id: v = "fancybutton-toggle",
     collapseWhenChecked: j = !0,
     onClick: O,
@@ -44,7 +44,7 @@ function b(e) {
       tooltipText: l
     }),
     position: "top",
-    color: null != C ? C : E ? c.ua7.Colors.BLACK : c.ua7.Colors.BRAND,
+    color: null != x ? x : E ? c.ua7.Colors.BLACK : c.ua7.Colors.BRAND,
     "aria-label": l,
     tooltipClassName: f.tooltip,
     className: f.tooltipContainer,
@@ -63,7 +63,7 @@ function b(e) {
       disabled: E
     }), (0, r.jsxs)("label", {
       htmlFor: v,
-      className: a()(f.label, x, {
+      className: a()(f.label, C, {
         [f.transition]: P,
         [f.labelChecked]: t,
         [f.labelUnchecked]: !t && !b

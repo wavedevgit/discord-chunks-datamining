@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(594174),
   _ = n(251625),
   y = n(823379),
-  C = n(665149),
-  x = n(228168),
+  x = n(665149),
+  C = n(228168),
   v = n(388032),
   j = n(479367);
 
@@ -97,7 +97,7 @@ class E {
         userId: this.userId,
         channelId: this.channelId,
         sourceAnalyticsLocations: this.analyticsLocations,
-        section: x.oh.MUTUAL_GUILDS
+        section: C.oh.MUTUAL_GUILDS
       })
     }), this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = i
   }
@@ -134,7 +134,7 @@ function I(e) {
     className: j.spacer
   }) : (0, r.jsxs)(d.Gt, {
     value: f,
-    children: [(0, r.jsx)(C.iz, {
+    children: [(0, r.jsx)(x.iz, {
       className: j.divider
     }), (0, r.jsx)(s.IGR, {
       text: v.intl.string(v.t.l1QVfn),

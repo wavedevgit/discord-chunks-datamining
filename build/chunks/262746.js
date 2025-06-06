@@ -20,10 +20,10 @@ function m(e) {
     channel: t,
     user: m,
     guild: g
-  } = e, b = (0, l.e7)([d.Z], () => null != m && d.Z.isUserBanned(m.id)), _ = null != m && null == b, [y, C] = i.useState(_), x = (0, l.e7)([u.Z], () => null != m && null != g && (0, c.lD)(m, g, [u.Z]));
+  } = e, b = (0, l.e7)([d.Z], () => null != m && d.Z.isUserBanned(m.id)), _ = null != m && null == b, [y, x] = i.useState(_), C = (0, l.e7)([u.Z], () => null != m && null != g && (0, c.lD)(m, g, [u.Z]));
   if ((0, s.ZP)(() => {
-      _ && o.Z.searchGuildBans(t.guild_id, void 0, [null == m ? void 0 : m.id]).finally(() => C(!1))
-    }), !x) return null;
+      _ && o.Z.searchGuildBans(t.guild_id, void 0, [null == m ? void 0 : m.id]).finally(() => x(!1))
+    }), !C) return null;
   let v = !0 === b ? f.intl.string(h.default.dpfwQ0) : f.intl.string(h.default.ASv23d),
     j = "ban-user-".concat(null == m ? void 0 : m.id);
   return (0, r.jsx)(p.Z, {

@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(594174),
   _ = n(176354),
   y = n(823379),
-  C = n(74538),
-  x = n(401062),
+  x = n(74538),
+  C = n(401062),
   v = n(696900),
   j = n(456631),
   O = n(963838),
@@ -48,7 +48,7 @@ function U(e) {
     channel: n,
     closePopout: m,
     onFocus: y
-  } = e, T = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, a.e7)([b.default], () => b.default.getCurrentUser()), B = C.ZP.canUseFancyVoiceChannelReactions(U), F = (0, a.e7)([v.Z], () => v.Z.getState().animationType), G = i.useRef(!1), H = i.useRef(null), V = (0, f.wC)(n.guild_id), z = (0, l.uniqBy)([...V, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
+  } = e, T = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, a.e7)([b.default], () => b.default.getCurrentUser()), B = x.ZP.canUseFancyVoiceChannelReactions(U), F = (0, a.e7)([v.Z], () => v.Z.getState().animationType), G = i.useRef(!1), H = i.useRef(null), V = (0, f.wC)(n.guild_id), z = (0, l.uniqBy)([...V, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: n,
     intention: k
@@ -59,10 +59,10 @@ function U(e) {
       c.Z.dispatch({
         type: "VOICE_CHANNEL_EFFECT_RECENT_EMOJI",
         emoji: e
-      }), (0, x.Lx)({
+      }), (0, C.Lx)({
         channel: n,
         emoji: e,
-        location: x.yX.EMOJI_PICKER,
+        location: C.yX.EMOJI_PICKER,
         animationType: F,
         animationId: Y,
         isPremium: B

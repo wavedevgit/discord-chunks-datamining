@@ -61,7 +61,7 @@ function _(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [y, C] = l.useState(h.ZP[_]), x = l.useCallback(e => {
+  }(t), [y, x] = l.useState(h.ZP[_]), C = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
       [_]: e
     })
@@ -95,8 +95,8 @@ function _(e) {
           minWidth: v,
           maxWidth: n,
           resizableNode: g,
-          onResize: C,
-          onResizeEnd: x
+          onResize: x,
+          onResizeEnd: C
         }), (0, i.jsx)("div", {
           ref: g,
           className: o()(m.container, {

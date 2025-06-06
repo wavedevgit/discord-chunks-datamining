@@ -43,8 +43,8 @@ function y(e) {
     applicationId: t,
     stream: i,
     channel: y,
-    exitFullScreen: C,
-    appContext: x,
+    exitFullScreen: x,
+    appContext: C,
     analyticsLocation: v,
     guildScheduledEvent: j,
     shouldPrioritizeGroupPlusIcon: O = !1,
@@ -137,8 +137,8 @@ function y(e) {
           channel: y,
           streamUserId: null == i ? void 0 : i.ownerId,
           applicationId: t,
-          appContext: null != x ? x : A,
-          exitFullScreen: C,
+          appContext: null != C ? C : A,
+          exitFullScreen: x,
           analyticsLocation: v,
           guildScheduledEvent: j
         })

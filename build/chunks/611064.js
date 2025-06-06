@@ -28,8 +28,8 @@ let _ = i.memo(function(e) {
       expanded: _,
       expandedCount: y
     } = e,
-    C = (0, l.e7)([u.Z], () => u.Z.hidden),
-    x = i.useCallback(e => {
+    x = (0, l.e7)([u.Z], () => u.Z.hidden),
+    C = i.useCallback(e => {
       (0, o.jW)(e, async () => {
         let {
           MemberListContentSettingsMenu: e
@@ -48,9 +48,9 @@ let _ = i.memo(function(e) {
       })
     }), (0, r.jsxs)(a.P3F, {
       onClick: e => {
-        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return C ? (0, c.lY)() : y > 3 ? b() : (0, h.dG4)()
+        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return x ? (0, c.lY)() : y > 3 ? b() : (0, h.dG4)()
       },
-      onContextMenu: x,
+      onContextMenu: C,
       tag: "span",
       "aria-hidden": !0,
       className: m.headerContainer,
@@ -59,7 +59,7 @@ let _ = i.memo(function(e) {
         children: [(0, r.jsxs)("span", {
           children: [p, " — ", y]
         }), (0, r.jsx)(d.Z, {})]
-      }), y <= 3 && !C ? null : (t = C ? (0, r.jsx)(a.u04, {
+      }), y <= 3 && !x ? null : (t = x ? (0, r.jsx)(a.u04, {
         className: m.toggleExpandIcon
       }) : _ ? (0, r.jsx)(a.CJ0, {
         className: m.toggleExpandIcon

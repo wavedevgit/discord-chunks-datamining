@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(320427),
   _ = n(145010),
   y = n(361057),
-  C = n(159909),
-  x = n(531675);
+  x = n(159909),
+  C = n(531675);
 
 function v(e) {
   let {
@@ -47,7 +47,7 @@ function v(e) {
   return (0, r.jsxs)(o.Gt, {
     value: j,
     children: [(0, r.jsxs)("div", {
-      className: x.voiceEffectsActionBar,
+      className: C.voiceEffectsActionBar,
       children: [R && (0, r.jsx)(g.Z, {
         channel: t
       }), w && (0, r.jsx)(p.t, {
@@ -60,9 +60,9 @@ function v(e) {
         glow: w
       }), M && (0, r.jsx)(b.Z, {}), M && (0, r.jsx)(_.Z, {
         channel: t
-      }), M && (0, r.jsx)(C.Z, {})]
+      }), M && (0, r.jsx)(x.Z, {})]
     }), v && (R || w || O || M) && (0, r.jsx)("div", {
-      className: x.divider
+      className: C.divider
     })]
   })
 }

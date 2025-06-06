@@ -1,8 +1,8 @@
 /** Chunk was on 62423 **/
 n.d(t, {
   ZP: () => j,
-  cy: () => x,
-  iu: () => C
+  cy: () => C,
+  iu: () => x
 }), n(388685);
 var r, i, l, a = n(255367),
   o = n(73800),
@@ -50,8 +50,8 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var C = ((i = {}).CENTER = "center", i.LEFT = "left", i),
-  x = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
+var x = ((i = {}).CENTER = "center", i.LEFT = "left", i),
+  C = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
 class v extends o.PureComponent {
   componentDidMount() {
     let {
@@ -213,6 +213,6 @@ class j extends(r = o.PureComponent) {
     })
   }
 }
-b(j, "TextAlignments", C), b(j, "defaultProps", {
+b(j, "TextAlignments", x), b(j, "defaultProps", {
   textAlign: "left"
 })

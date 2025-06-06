@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: ea639f099fbeb613
+  Original File Name: 4af0c5a842162867
 **/
 .errorBanner__3405b {
     color: var(--status-danger-text)
@@ -1234,7 +1234,7 @@ footer {
 
 .dropZone__43278 {
     align-items: center;
-    background: var(--background-secondary);
+    background: rgba(0,0,0,.08);
     border: 1px dashed var(--interactive-muted);
     border-radius: var(--radius-md);
     flex-grow: 1;
@@ -1245,15 +1245,18 @@ footer {
     position: relative
 }
 
+.dropZone__43278:hover {
+    background: rgba(0,0,0,.2)
+}
+
 @media (min-width:485px) and (min-height:550px) {
     .dropZone__43278 {
         padding: calc(var(--space-xl)*2)
     }
 }
 
-.dropZone__43278:hover {
-    background: var(--background-modifier-hover);
-    border-color: var(--interactive-active)
+.theme-light .dropZone__43278:hover {
+    background: rgba(0,0,0,.04)
 }
 
 .modalRootEditor_a13acd {
@@ -1314,4 +1317,4 @@ footer {
     top: var(--space-md)
 }
 
-/*# sourceMappingURL=ea639f099fbeb613.css.map*/
+/*# sourceMappingURL=4af0c5a842162867.css.map*/

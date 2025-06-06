@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 2222582a09c49840
+  Original File Name: 63eb80f28549f25e
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -7361,53 +7361,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     min-height: var(--custom-channel-textarea-text-area-height)
 }
 
-.channelAppLauncherWordlePromo__23128 .lottieAnimationControllerFill {
-    fill: var(--interactive-normal)
-}
-
-.animationContainer__23128 {
-    max-height: 24px;
-    max-width: 24px
-}
-
-.visual-refresh .animationContainer__23128 {
-    max-height: 20px;
-    max-width: 20px
-}
-
-.visual-refresh-chat-input .animationContainer__23128 {
-    max-height: 22px;
-    max-width: 22px
-}
-
-.indicatorDotDuringAnimation__23128 {
-    opacity: 0
-}
-
-.indicatorDotAfterAnimation__23128 {
-    opacity: 1
-}
-
-.full-motion .activityIndicatorAnimation__23128 {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-    animation-name: activityIndicatorEaseOut__23128;
-    animation-timing-function: ease-in-out
-}
-
-@keyframes activityIndicatorEaseOut__23128 {
-    0% {
-        opacity: 0;
-        transform: scale(2) translate(-25%,25%)
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1) translate(0)
-    }
-}
-
 .buttonContainer_e6e74f {
     margin-top: auto
 }
@@ -7439,22 +7392,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin-bottom: var(--custom-chat-input-margin-bottom);
     margin-left: var(--custom-channel-textarea-app-launcher-button-gap);
     position: relative
-}
-
-.appLauncherCircleMask_e6e74f {
-    background: var(--bg-overlay-3,var(--channeltextarea-background));
-    border-radius: 50%;
-    z-index: 2
-}
-
-.visual-refresh .appLauncherCircleMask_e6e74f {
-    background: var(--chat-background-default)
-}
-
-.appLauncherGlow_e6e74f {
-    overflow: hidden;
-    position: fixed;
-    z-index: 1
 }
 
 .visual-refresh .channelAppLauncher_e6e74f {
@@ -7557,10 +7494,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     to {
         transform: translateY(100%)
     }
-}
-
-.channelAppLauncherButtonBadge_e6e74f {
-    position: absolute
 }
 
 .channelAppLauncherButtonPopoutIconShimmerContainer_e6e74f {
@@ -13310,4 +13243,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=2222582a09c49840.css.map*/
+/*# sourceMappingURL=63eb80f28549f25e.css.map*/
