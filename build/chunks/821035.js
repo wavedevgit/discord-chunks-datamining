@@ -75,10 +75,11 @@ function x(e) {
             explicitContentNonFriendDm: e
           })
         })]
-      }), x && (0, i.jsxs)("div", {
+      }), (0, i.jsxs)("div", {
         className: _.selectItemRow,
         children: [(0, i.jsx)(s.Text, {
           variant: "text-md/medium",
+          color: x ? "text-primary" : "text-muted",
           children: b.intl.string(b.t["FP+a4+"])
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
@@ -86,7 +87,8 @@ function x(e) {
           value: E,
           onChange: e => O({
             explicitContentGuilds: e
-          })
+          }),
+          isDisabled: !x
         })]
       }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
@@ -121,7 +123,7 @@ function x(e) {
             explicitContentNonFriendDm: e
           })
         })
-      }), x && (0, i.jsx)(s.xJW, {
+      }), (0, i.jsx)(s.xJW, {
         tag: s.RB0.H3,
         title: b.intl.string(b.t["FP+a4+"]),
         titleClassName: _.selectItemTitle,
@@ -130,7 +132,8 @@ function x(e) {
           value: E,
           onChange: e => O({
             explicitContentGuilds: e
-          })
+          }),
+          isDisabled: !x
         })
       })]
     })
