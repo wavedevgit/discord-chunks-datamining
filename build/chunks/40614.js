@@ -44,6 +44,7 @@ function v() {
     className: y.textContent,
     variant: "text-xs/medium",
     color: "text-positive",
+    lineClamp: 1,
     children: v.join(" \xb7 ")
   })
 }

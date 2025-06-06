@@ -132,8 +132,8 @@ function S(e) {
       variant: "text-xs/normal",
       color: "text-secondary",
       className: y.nuxContent,
-      children: b.intl.format(b.t.fF2TbW, {
-        helpDeskUrl: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
+      children: b.intl.format(m.default.nHDuwM, {
+        learnMoreLink: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)("div", {
       className: y.toggleContainerWrapper,
@@ -156,7 +156,7 @@ function x(e) {
       variant: "text-xs/normal",
       color: "text-secondary",
       className: y.nuxContent,
-      children: b.intl.format(m.default.ZMYkIS, {
+      children: b.intl.format(m.default["vtp/IS"], {
         learnMoreLink: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)(_, {
@@ -175,8 +175,8 @@ function E(e) {
       variant: "text-xs/normal",
       color: "text-secondary",
       className: y.nuxContent,
-      children: b.intl.format(b.t.fF2TbW, {
-        helpDeskUrl: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
+      children: b.intl.format(m.default.nHDuwM, {
+        learnMoreLink: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)("div", {
       className: y.toggleContainerWrapper,
@@ -202,8 +202,8 @@ function P(e) {
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: b.intl.format(b.t.fF2TbW, {
-        helpDeskUrl: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
+      children: b.intl.format(m.default.nHDuwM, {
+        learnMoreLink: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)(f.y, {
       onClosePopout: t
@@ -224,8 +224,8 @@ function I(e) {
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: b.intl.format(b.t.fF2TbW, {
-        helpDeskUrl: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
+      children: b.intl.format(m.default["vtp/IS"], {
+        learnMoreLink: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)(_, {
       closePopout: t
@@ -247,8 +247,8 @@ function w(e) {
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: b.intl.format(b.t.fF2TbW, {
-        helpDeskUrl: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
+      children: b.intl.format(m.default.nHDuwM, {
+        learnMoreLink: p.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)(f.y, {
       onClosePopout: t

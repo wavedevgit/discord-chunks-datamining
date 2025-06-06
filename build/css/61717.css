@@ -1,6 +1,6 @@
 /**
   Module ID: 61717
-  Original File Name: c031b55bfb040e47
+  Original File Name: 35a2bb5ca7ea1561
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -4620,17 +4620,6 @@ div:has(>.positionLayer_fc71d3) {
     padding: 2.5px
 }
 
-.facepileItem_aaa08b {
-    align-items: center;
-    color: var(--text-normal);
-    display: flex;
-    justify-content: center
-}
-
-.facepileItem_aaa08b>foreignObject {
-    background: linear-gradient(0deg,var(--background-mod-strong,hsla(240,4%,61%,.24)) 0,var(--background-mod-strong,hsla(240,4%,61%,.24)) 100%),var(--background-surface-high)
-}
-
 .facepileItemContainer_aaa08b:not(:first-child) {
     margin-left: -4px
 }
@@ -4908,10 +4897,6 @@ div:has(>.positionLayer_fc71d3) {
 
 .iconEye__2ee44 {
     margin-right: 4px
-}
-
-.textContent__2ee44 {
-    white-space: normal
 }
 
 .gameName__8c6c2 {
@@ -6378,4 +6363,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=c031b55bfb040e47.css.map*/
+/*# sourceMappingURL=35a2bb5ca7ea1561.css.map*/

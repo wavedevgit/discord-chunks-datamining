@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: 0021ed8f13530903
+  Original File Name: 2651e17f1ab05183
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4423,6 +4423,32 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .plated__37e49:hover {
     background-color: var(--custom-nameplate)!important
+}
+
+.iconContainer__0ecc4 {
+    color: var(--text-normal)
+}
+
+.iconContainer__0ecc4,.iconContainer__0ecc4>foreignObject {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.iconContainer__0ecc4>foreignObject {
+    background: linear-gradient(0deg,var(--background-mod-strong,hsla(240,4%,61%,.24)) 0,var(--background-mod-strong,hsla(240,4%,61%,.24)) 100%),var(--background-surface-high)
+}
+
+.smallText__0ecc4 {
+    transform: scale(.42)
+}
+
+.textContainer__0ecc4 {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%
 }
 
 .wrapper__06283 {
@@ -13383,6 +13409,12 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     gap: 16px
 }
 
+.guildRowTextContainer__7db08 {
+    flex: 1;
+    margin-right: 32px;
+    overflow: hidden
+}
+
 .memberDetailsContainer__7db08 {
     align-items: center;
     display: flex;
@@ -13437,6 +13469,18 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     padding-right: 0
 }
 
+.noResultsContainer__7db08 {
+    align-items: center;
+    display: flex;
+    height: 736px;
+    justify-content: center
+}
+
+.noResultsText__7db08 {
+    color: var(--text-tertiary);
+    text-transform: capitalize
+}
+
 .divider_eda416 {
     margin: 32px 0
 }
@@ -13471,6 +13515,28 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
 
 .joinRequestSwitch_eda416 {
     margin-bottom: 0
+}
+
+.myServersContainer_eda416 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.myServersHeaderContainer_eda416 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.myServersTitle_eda416 {
+    margin-bottom: 0
+}
+
+.myServersIgnoredWarning_eda416 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
 }
 
 .switchRowContainer__6de8b {
@@ -19431,4 +19497,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=0021ed8f13530903.css.map*/
+/*# sourceMappingURL=2651e17f1ab05183.css.map*/
