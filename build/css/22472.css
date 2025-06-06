@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: 73ab929ba1ba7c42
+  Original File Name: 8a013ea9fd8e86db
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -8246,12 +8246,18 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     position: absolute
 }
 
-.allPerksScroller_ca1a02,.mainPageScroller_ca1a02 {
+.mainPageScroller_ca1a02 {
     background: var(--bg-overlay-chat,var(--background-primary));
     contain: layout size
 }
 
+.client-theme-color-picker .mainPageScroller_ca1a02 {
+    background: var(--background-primary)
+}
+
 .allPerksScroller_ca1a02 {
+    background: var(--bg-overlay-chat,var(--background-primary));
+    contain: layout size;
     height: calc(100% - 48px);
     left: 100%;
     position: absolute;
@@ -19429,4 +19435,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=73ab929ba1ba7c42.css.map*/
+/*# sourceMappingURL=8a013ea9fd8e86db.css.map*/
