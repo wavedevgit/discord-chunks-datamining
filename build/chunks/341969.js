@@ -1,6 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-var r = {
+e.exports = {
   popover: "popover__2d0ab",
   visible: "visible__2d0ab",
   tooltipContainer: "tooltipContainer__2d0ab",
@@ -10,8 +10,5 @@ var r = {
   avatarPopover: "avatarPopover__2d0ab",
   fadeIn: "fadeIn__2d0ab",
   expandable: "expandable__2d0ab",
-  fadeInAndOut: "fadeInAndOut__2d0ab",
-  fadeOut: "fadeOut__2d0ab",
   icon: "icon__2d0ab"
-};
-n.r(e.exports = r)
+}
