@@ -1,8 +1,10 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  s8: () => i
+  s8: () => a
 });
-let r = (0, n(818083).B)({
+var r = n(818083),
+  i = n(128064);
+let l = (0, r.B)({
   kind: "user",
   id: "2025-02_tigger_pawtect",
   label: "Tigger pawtect",
@@ -18,13 +20,13 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i(e) {
+function a(e) {
   let {
     location: t
-  } = e;
-  return r.getCurrentConfig({
+  } = e, n = l.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: !0
-  }).enabled
+  }), r = (0, i.pY)(t);
+  return n.enabled || r
 }
