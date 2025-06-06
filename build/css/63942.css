@@ -1,6 +1,6 @@
 /**
   Module ID: 63942
-  Original File Name: 410f03858744a85d
+  Original File Name: 22222503e024442d
 **/
 .modalRoot_de2fa0 {
     border: none!important;
@@ -154,6 +154,7 @@
 }
 
 .videoControlsBtnCont_de2fa0 {
+    border-radius: 4px;
     height: 24px
 }
 
@@ -545,6 +546,26 @@
     background-color: var(--white-600)!important
 }
 
+:-webkit-full-screen .endScreenPanel_de2fa0:focus-visible,:-webkit-full-screen .videoControlsBtnCont_de2fa0:focus-visible {
+    outline: 4px solid var(--blue-345);
+    outline-offset: 2px
+}
+
+:fullscreen .endScreenPanel_de2fa0:focus-visible,:fullscreen .videoControlsBtnCont_de2fa0:focus-visible {
+    outline: 4px solid var(--blue-345);
+    outline-offset: 2px
+}
+
+:-webkit-full-screen .volumeSlider_de2fa0:focus-within {
+    outline: 4px solid var(--blue-345);
+    outline-offset: 2px
+}
+
+:fullscreen .volumeSlider_de2fa0:focus-within {
+    outline: 4px solid var(--blue-345);
+    outline-offset: 2px
+}
+
 .endScreenOverlay_afedfc {
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
@@ -716,6 +737,16 @@
     width: 100%
 }
 
+:-webkit-full-screen .hitboxArea__370d1:focus-visible .progress__370d1 {
+    outline: 4px solid var(--blue-345);
+    outline-offset: 2px
+}
+
+:fullscreen .hitboxArea__370d1:focus-visible .progress__370d1 {
+    outline: 4px solid var(--blue-345);
+    outline-offset: 2px
+}
+
 .progressGlow__370d1 {
     box-shadow: 0 0 27.8px 2px var(--white)
 }
@@ -759,4 +790,4 @@
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=410f03858744a85d.css.map*/
+/*# sourceMappingURL=22222503e024442d.css.map*/

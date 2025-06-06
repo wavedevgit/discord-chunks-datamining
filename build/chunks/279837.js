@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685), n(457542);
 var s, i = n(255367),
   r = n(73800),
-  l = n(481060),
-  o = n(388032),
+  o = n(481060),
+  l = n(388032),
   a = n(460268);
 
 function h(e, t, n) {
@@ -27,53 +27,53 @@ class c extends(s = r.PureComponent) {
       error: h,
       isLoading: c,
       value: d
-    } = this.state, u = r.Children.count(n) > 0 ? (0, i.jsx)(l.Zbd, {
-      type: l.Zbd.Types.WARNING,
+    } = this.state, u = r.Children.count(n) > 0 ? (0, i.jsx)(o.Zbd, {
+      type: o.Zbd.Types.WARNING,
       className: a.card,
-      children: (0, i.jsx)(l.Text, {
-        className: a.warning,
+      children: (0, i.jsx)(o.Text, {
+        color: "currentColor",
         variant: "text-md/normal",
         children: n
       })
     }) : null;
-    return (0, i.jsx)(l.Y0X, {
+    return (0, i.jsx)(o.Y0X, {
       transitionState: s,
       parentComponent: "PasswordConfirm",
       children: (0, i.jsxs)("form", {
         onSubmit: this.handleSubmit,
-        children: [(0, i.jsx)(l.xBx, {
+        children: [(0, i.jsx)(o.xBx, {
           separator: !1,
-          children: (0, i.jsx)(l.X6q, {
+          children: (0, i.jsx)(o.X6q, {
             variant: "heading-lg/semibold",
             children: e
           })
-        }), (0, i.jsxs)(l.hzk, {
-          children: [u, (0, i.jsxs)(l.xJW, {
-            title: o.intl.string(o.t["CIGa+/"]),
+        }), (0, i.jsxs)(o.hzk, {
+          children: [u, (0, i.jsxs)(o.xJW, {
+            title: l.intl.string(l.t["CIGa+/"]),
             className: a.spacing,
-            children: [(0, i.jsx)(l.oil, {
+            children: [(0, i.jsx)(o.oil, {
               type: "password",
               autoComplete: "off",
               autoFocus: !0,
               value: d,
               onChange: this.handlePasswordChange
-            }), null != h && "" !== h ? (0, i.jsxs)(l.Text, {
+            }), null != h && "" !== h ? (0, i.jsxs)(o.Text, {
               variant: "text-xs/normal",
               color: "text-danger",
               className: a.error,
               children: [" ", h, " "]
             }) : null]
           })]
-        }), (0, i.jsxs)(l.mzw, {
-          children: [(0, i.jsx)(l.zxk, {
+        }), (0, i.jsxs)(o.mzw, {
+          children: [(0, i.jsx)(o.zxk, {
             type: "submit",
             disabled: c || 0 === d.length,
-            children: null != t ? t : o.intl.string(o.t["cY+Ooa"])
-          }), (0, i.jsx)(l.zxk, {
+            children: null != t ? t : l.intl.string(l.t["cY+Ooa"])
+          }), (0, i.jsx)(o.zxk, {
             onClick: this.handleCancel,
-            look: l.zxk.Looks.LINK,
-            color: l.zxk.Colors.PRIMARY,
-            children: o.intl.string(o.t["ETE/oK"])
+            look: o.zxk.Looks.LINK,
+            color: o.zxk.Colors.PRIMARY,
+            children: l.intl.string(l.t["ETE/oK"])
           })]
         })]
       })

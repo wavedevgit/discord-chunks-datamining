@@ -1,12 +1,12 @@
 /** Chunk was on 76540 **/
 n.d(t, {
-  Z: () => C
+  Z: () => g
 }), n(388685), n(953529);
 var s = n(255367),
   i = n(73800),
   r = n(120356),
-  l = n.n(r),
-  o = n(772848),
+  o = n.n(r),
+  l = n(772848),
   a = n(990547),
   h = n(481060),
   c = n(600164),
@@ -25,7 +25,7 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class g extends i.PureComponent {
+class C extends i.PureComponent {
   async componentDidMount() {
     let [e, {
       default: t
@@ -45,21 +45,21 @@ class g extends i.PureComponent {
     let e, t, n, {
       error: i,
       working: r,
-      transitionState: o,
+      transitionState: l,
       validPhone: f
     } = this.props;
     return e = null != i && "" !== i ? (0, s.jsx)("div", {
-      className: l()(E.description, E.error, R.marginBottom20),
+      className: o()(E.description, E.error, R.marginBottom20),
       children: i
     }) : f ? (0, s.jsx)("div", {
-      className: l()(E.description, R.marginBottom20),
+      className: o()(E.description, R.marginBottom20),
       children: p.intl.string(p.t["4qMI6O"])
     }) : (0, s.jsxs)(s.Fragment, {
       children: [(0, s.jsx)("div", {
-        className: l()(E.description, R.marginBottom20),
+        className: o()(E.description, R.marginBottom20),
         children: p.intl.string(p.t.Vp9je3)
       }), (0, s.jsx)("div", {
-        className: l()(E.description, R.marginBottom20),
+        className: o()(E.description, R.marginBottom20),
         children: p.intl.format(p.t["3BTmqa"], {})
       })]
     }), t = f ? (0, s.jsxs)(c.Z, {
@@ -84,22 +84,22 @@ class g extends i.PureComponent {
       impression: {
         impressionName: a.ImpressionNames.USER_VERIFY_PHONE
       },
-      transitionState: o,
-      className: l()(E.phoneVerificationModal, m.vertical, m.alignCenter, m.justifyCenter, R.marginTop60),
+      transitionState: l,
+      className: o()(E.phoneVerificationModal, m.vertical, m.alignCenter, m.justifyCenter, R.marginTop60),
       "aria-labelledby": this.headerId,
       parentComponent: "PhoneVerificationModal",
       children: [(0, s.jsx)("div", {
         className: E.animationContainer,
         ref: this.setLottieRef
       }), (0, s.jsx)("div", {
-        className: l()(E.title, R.marginBottom8),
+        className: o()(E.title, R.marginBottom8),
         id: this.headerId,
         children: n
       }), e, t]
     })
   }
   constructor(e) {
-    super(e), f(this, "_animItem", null), f(this, "_lottieRef", void 0), f(this, "headerId", (0, o.Z)()), f(this, "setLottieRef", e => {
+    super(e), f(this, "_animItem", null), f(this, "_lottieRef", void 0), f(this, "headerId", (0, l.Z)()), f(this, "setLottieRef", e => {
       this._lottieRef = e
     }), f(this, "handleAddPhone", e => {
       this.state.animated || null == this._animItem ? this.setState({
@@ -128,4 +128,4 @@ class g extends i.PureComponent {
     }
   }
 }
-let C = g
+let g = C

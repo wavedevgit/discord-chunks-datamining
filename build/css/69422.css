@@ -1,6 +1,6 @@
 /**
   Module ID: 69422
-  Original File Name: 85ac3a0cd0b9a42e
+  Original File Name: 8c71f34d61ea99e8
 **/
 .card__594f1,.spacing__594f1 {
     margin-bottom: 20px
@@ -12,10 +12,6 @@
 
 .error__594f1 {
     margin-top: 8px
-}
-
-.warning__594f1 {
-    color: var(--white-500)
 }
 
 .spacer__5ecaa {
@@ -237,4 +233,4 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     color: var(--text-muted-on-default)
 }
 
-/*# sourceMappingURL=85ac3a0cd0b9a42e.css.map*/
+/*# sourceMappingURL=8c71f34d61ea99e8.css.map*/
