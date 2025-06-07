@@ -1,36 +1,19 @@
 /**
   Module ID: 22274
-  Original File Name: dc08576605c92d9d
+  Original File Name: b6f57b3fb8507880
 **/
-.container__2a3ed {
+.content__2a3ed {
     border-radius: 8px;
     color: var(--text-normal);
     inset: 0;
-    opacity: 1;
+    opacity: 0;
     overflow: hidden;
     position: absolute;
-    transition: opacity .3s linear;
-    z-index: var(--custom-user-profile-toast-z-index)
+    transition: opacity .5s linear
 }
 
-.container__2a3ed:not(.loaded__2a3ed) {
-    opacity: 0;
-    pointer-events: none
-}
-
-.closeButton__2a3ed.closeButton__2a3ed {
-    background-color: var(--background-mod-subtle);
-    display: none;
-    opacity: 0;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 1
-}
-
-.loaded__2a3ed .closeButton__2a3ed.closeButton__2a3ed {
-    animation: reveal__2a3ed 1s linear .5s forwards;
-    display: block
+.content__2a3ed.loaded__2a3ed {
+    opacity: 1
 }
 
 .spinner__2a3ed {
@@ -39,21 +22,6 @@
     top: 50%;
     transform: translate(-50%,-50%);
     transition: opacity .5s linear
-}
-
-.content__2a3ed {
-    background-color: #000;
-    inset: 0;
-    position: absolute;
-    visibility: hidden
-}
-
-.loaded__2a3ed .content__2a3ed {
-    visibility: visible
-}
-
-.theme-light .content__2a3ed {
-    background-color: #eeeff1
 }
 
 .video__2a3ed {
@@ -165,4 +133,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=dc08576605c92d9d.css.map*/
+/*# sourceMappingURL=b6f57b3fb8507880.css.map*/

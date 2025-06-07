@@ -1,2 +1,2 @@
 /** Chunk was on 1941 **/
-t.exports = JSON.parse('{"8ZcEfn":"F\xe4rger","AsmU8/":"Anpassa ditt tema","xRdYAQ":"Anpassade teman [beta] \xe4r inte tillg\xe4ngligt p\xe5 mobilen.","2hAz8f":"Anpassa ditt tema","23QUzs":"Nytt! Anpassade teman","TRCE4u":"Matcha ditt hum\xf6r med o\xe4ndliga f\xe4rgkombinationer. Pr\xf6va det nu, endast med Nitro."}')
+t.exports = JSON.parse('{"+tTysr":"L\xe4gg till f\xe4rg","8ZcEfn":"F\xe4rger","xlXkaG":"F\xe4rgintensitet","dZkwg4":"Gradientriktning","AsmU8/":"Anpassa ditt tema","xRdYAQ":"Anpassade teman [beta] \xe4r inte tillg\xe4ngligt p\xe5 mobilen.","2hAz8f":"Anpassa ditt tema","23QUzs":"Nytt! Anpassade teman","TRCE4u":"Matcha ditt hum\xf6r med o\xe4ndliga f\xe4rgkombinationer. Pr\xf6va det nu, endast med Nitro."}')

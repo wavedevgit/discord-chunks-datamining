@@ -1,8 +1,8 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  P9: () => I,
+  P9: () => v,
   Uf: () => P,
-  b0: () => v,
+  b0: () => I,
   s_: () => g
 }), n(388685);
 var o = n(255367),
@@ -60,7 +60,7 @@ function g() {
   })
 }
 
-function v() {
+function I() {
   let e = m.intl.string(m.t.bFgqYG),
     [t] = r.useState(() => {
       var e;
@@ -72,7 +72,7 @@ function v() {
   })
 }
 
-function I(e) {
+function v(e) {
   let {
     user: t,
     guildId: n,
