@@ -112,8 +112,8 @@ var i = n(255367),
   e1 = n(459273),
   e3 = n(585483),
   e8 = n(70956),
-  e6 = n(823379),
-  e2 = n(74538),
+  e2 = n(823379),
+  e6 = n(74538),
   e5 = n(374023),
   e4 = n(51144),
   e7 = n(998502),
@@ -784,7 +784,7 @@ function t_() {
     U = (0, d.e7)([eW.Z], () => eW.Z.getGuildId()),
     V = (0, ex.D)(),
     G = (0, O.u)(),
-    F = e2.ZP.canUsePremiumGuildMemberProfile(t),
+    F = e6.ZP.canUsePremiumGuildMemberProfile(t),
     H = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === ti.rL,
     {
       voiceActivityStatusEnabled: z
@@ -848,7 +848,7 @@ function t_() {
         i = [];
       if (null != t ? e = t.partyId : null != n && null != n.party && null != n.party.id && (e = n.party.id), null != e) {
         var r;
-        i = o()(Array.from(null != (r = eF.Z.getParty(e)) ? r : [])).map(e => eX.default.getUser(e)).filter(e6.lm).value()
+        i = o()(Array.from(null != (r = eF.Z.getParty(e)) ? r : [])).map(e => eX.default.getUser(e)).filter(e2.lm).value()
       }
       return i.length > 1
     }),
