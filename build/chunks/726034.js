@@ -45,13 +45,14 @@ function P(e) {
   } = e;
   return (0, r.jsx)(l.zxk, {
     className: N.closeButton,
-    size: l.zxk.Sizes.ICON,
+    size: l.zxk.Sizes.MIN,
     look: l.zxk.Looks.BLANK,
     onClick: () => {
       null == t || t(I.L.USER_DISMISS), (0, d.Ll)()
     },
     children: (0, r.jsx)(l.Dio, {
-      size: "sm"
+      size: "xs",
+      colorClass: N.closeIconWithHover
     })
   })
 }
@@ -62,8 +63,14 @@ function R() {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-md/bold",
       children: A.intl.string(T.default["AsmU8/"])
-    }), (0, r.jsx)(l.SrA, {
-      size: "md"
+    }), (0, r.jsx)("div", {
+      className: N.nitroIconContainer,
+      children: (0, r.jsx)(l.SrA, {
+        size: "custom",
+        height: 20,
+        width: 20,
+        colorClass: N.nitroIconWithHover
+      })
     }), (0, r.jsx)(P, {})]
   })
 }
