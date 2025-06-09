@@ -97,33 +97,35 @@ function P() {
 function I(e) {
   let {
     messages: t,
-    loading: n,
-    loadMore: l,
-    renderMessageGroup: s,
-    setInboxReadState: h,
-    scrollerClassName: p,
-    className: C,
-    listName: I,
-    ignoreGrouping: w = !1
-  } = e, N = i.useRef(null), Z = (0, d.Z)(I, N), {
-    notificationCenterVariant: T
+    loadingInitial: n,
+    loadingMore: l,
+    loadMore: s,
+    renderLoadingState: h,
+    renderMessageGroup: p,
+    setInboxReadState: C,
+    scrollerClassName: I,
+    className: w,
+    listName: N,
+    ignoreGrouping: Z = !1
+  } = e, T = i.useRef(null), A = (0, d.Z)(N, T), {
+    notificationCenterVariant: R
   } = m.L.useExperiment({
     location: "NotificationsInboxSidebarList"
   }), {
-    messageCategoryOpenStates: A,
-    toggleOpenState: R
+    messageCategoryOpenStates: D,
+    toggleOpenState: L
   } = (0, y.Z)();
   i.useEffect(() => {
     function e() {
       var e;
-      null == (e = N.current) || e.scrollPageUp({
+      null == (e = T.current) || e.scrollPageUp({
         animate: !0
       })
     }
 
     function t() {
       var e;
-      null == (e = N.current) || e.scrollPageDown({
+      null == (e = T.current) || e.scrollPageDown({
         animate: !0
       })
     }
@@ -131,99 +133,96 @@ function I(e) {
       f.S.unsubscribe(_.CkL.SCROLL_PAGE_DOWN, t), f.S.unsubscribe(_.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
-  let D = i.useCallback(() => {
+  let M = i.useCallback(() => {
       var e;
-      let t = null == (e = N.current) ? void 0 : e.getScrollerState(),
-        n = (0, O.s)(A);
-      null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && (null == l || l(n))
-    }, [l, A]),
-    L = (0, O.fW)(null != t ? t : []),
-    M = i.useMemo(() => {
-      if (null == t) return null;
+      let t = null == (e = T.current) ? void 0 : e.getScrollerState(),
+        n = (0, O.s)(D);
+      null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && (null == s || s(n))
+    }, [s, D]),
+    k = (0, O.fW)(null != t ? t : []),
+    U = i.useMemo(() => {
+      if (null == t || n) return null;
       let e = {
           [v.KZ.UNREAD]: [],
           [v.KZ.TODAY]: [],
           [v.KZ.YESTERDAY]: [],
           [v.KZ.OLDER]: []
         },
-        n = {
-          [v.KZ.UNREAD]: {},
-          [v.KZ.TODAY]: {},
-          [v.KZ.YESTERDAY]: {},
-          [v.KZ.OLDER]: {}
-        },
         r = {
           [v.KZ.UNREAD]: [],
           [v.KZ.TODAY]: [],
           [v.KZ.YESTERDAY]: [],
           [v.KZ.OLDER]: []
+        },
+        i = {
+          [v.KZ.UNREAD]: {},
+          [v.KZ.TODAY]: {},
+          [v.KZ.YESTERDAY]: {},
+          [v.KZ.OLDER]: {}
         };
-      return null != t && t.length > 0 && (a().each(t, t => {
+      return null != t && t.length > 0 && (a().each(t, e => {
         let {
-          message: r,
-          kind: i
-        } = t, l = L(r.id);
-        i === v.fL.MENTION ? e[l].push(r) : r.channel_id in n[l] ? n[l][r.channel_id].push(r) : n[l][r.channel_id] = [r]
+          message: t,
+          kind: n
+        } = e, l = k(t.id);
+        n === v.fL.MENTION ? r[l].push(t) : t.channel_id in i[l] ? i[l][t.channel_id].push(t) : i[l][t.channel_id] = [t]
       }), a().each(E, t => {
-        [...Object.values(n[t]).map(e => e.reverse()), ...e[t].map(e => [e])].sort((e, t) => g.default.compare(t[0].id, e[0].id)).forEach(e => {
-          r[t].push(e)
+        [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => g.default.compare(t[0].id, e[0].id)).forEach(n => {
+          e[t].push(n)
         })
-      })), r
-    }, [t, L]),
-    k = i.useMemo(() => {
+      })), e
+    }, [t, k, n]),
+    G = i.useMemo(() => {
       let e = [];
-      return null == t ? e.push((0, r.jsx)("div", {
-        className: o()(j.emptyPlaceholder, j.loadingPlaceholder),
-        children: (0, r.jsx)(u.$jN, {})
-      }, "spinner")) : 0 === t.length ? e.push((0, r.jsx)(P, {}, "empty-state")) : w ? e.push(...t.map(e => {
+      return null == t || n ? e.push(h()) : 0 === t.length ? e.push((0, r.jsx)(P, {}, "empty-state")) : Z ? e.push(...t.map(e => {
         let {
           message: t
         } = e;
-        return s([t], "sidebar" === T, L(t.id) === v.KZ.UNREAD)
-      })) : null != M && a().each(E, t => {
-        0 !== M[t].length && (e.push((0, r.jsx)(x, {
+        return p([t], "sidebar" === R, k(t.id) === v.KZ.UNREAD)
+      })) : null != U && a().each(E, t => {
+        0 !== U[t].length && (e.push((0, r.jsx)(x, {
           group: t,
-          isOpen: A[t],
+          isOpen: D[t],
           toggleOpenedState: () => {
-            let e = A[t];
-            R(t), (0, b.RZ)({
+            let e = D[t];
+            L(t), (0, b.RZ)({
               section: t,
               enabled: !e
             })
           }
-        })), A[t] && e.push(...M[t].map(e => s(e, "sidebar" === T, L(e[0].id) === v.KZ.UNREAD))))
+        })), D[t] && e.push(...U[t].map(e => p(e, "sidebar" === R, k(e[0].id) === v.KZ.UNREAD))))
       }), (null == t ? void 0 : t.length) !== 0 && e.push((0, r.jsx)(u.LZC, {
         size: 8
       }, "spacer")), e
-    }, [t, A, R, M, w, s, T, L]);
+    }, [n, t, h, D, L, U, Z, p, R, k]);
   i.useEffect(() => {
-    null != M && 0 === M.UNREAD.length ? h(v.xM.READ) : h(v.xM.UNREAD)
-  }, [M, h]);
-  let U = null;
-  return null != t && t.length > 0 && null != l && n && (U = (0, r.jsx)("div", {
+    null != U && 0 === U.UNREAD.length ? C(v.xM.READ) : C(v.xM.UNREAD)
+  }, [U, C]);
+  let B = null;
+  return null != t && t.length > 0 && null != s && l && (B = (0, r.jsx)("div", {
     className: j.loadingMore,
     children: (0, r.jsx)(u.$jN, {})
   }, "loading-more-after")), (0, b.vU)({
-    notificationCenterVariant: T,
+    notificationCenterVariant: R,
     wrappedMessages: t,
-    groupedUnreadMessages: null == M ? void 0 : M.UNREAD
+    groupedUnreadMessages: null == U ? void 0 : U.UNREAD
   }), (0, r.jsx)("div", {
-    className: o()(C, j.messagesPopoutWrap),
+    className: o()(w, j.messagesPopoutWrap),
     onClick: S,
     onDoubleClick: S,
     "aria-label": e["aria-label"],
-    children: (0, r.jsxs)(u.Den, {
-      className: o()(j.messagesPopout, p),
-      onScroll: D,
-      ref: N,
-      children: [(0, r.jsx)(c.bG, {
-        navigator: Z,
+    children: (0, r.jsx)(u.Den, {
+      className: o()(j.messagesPopout, I),
+      onScroll: M,
+      ref: T,
+      children: (0, r.jsx)(c.bG, {
+        navigator: A,
         children: (0, r.jsx)(c.SJ, {
           children: e => {
-            var t, n, {
-                ref: i
+            var t, i, {
+                ref: l
               } = e,
-              l = function(e, t) {
+              o = function(e, t) {
                 if (null == e) return {};
                 var n, r, i = function(e, t) {
                   if (null == e) return {};
@@ -238,7 +237,7 @@ function I(e) {
                 }
                 return i
               }(e, ["ref"]);
-            return (0, r.jsx)("div", (t = function(e) {
+            return (0, r.jsxs)("div", (t = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -256,25 +255,26 @@ function I(e) {
               }
               return e
             }({
-              ref: i,
+              ref: l,
               style: {
-                height: "100%"
+                height: "100%",
+                overflow: n ? "hidden" : void 0
               }
-            }, l), n = n = {
-              children: k
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+            }, o), i = i = {
+              children: [G, B]
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var r = Object.getOwnPropertySymbols(e);
                 n.push.apply(n, r)
               }
               return n
-            })(Object(n)).forEach(function(e) {
-              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+            })(Object(i)).forEach(function(e) {
+              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
             }), t))
           }
         })
-      }), U]
+      })
     })
   })
 }

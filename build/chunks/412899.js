@@ -374,7 +374,7 @@ function K(e) {
       return (0, r.jsx)(H, {
         className: N,
         role: e,
-        canRemove: w && b.r6(s, P.id, K, e) || (null == (t = e.tags) ? void 0 : t.guild_connections) === null && n.id === P.id,
+        canRemove: (null == (t = e.tags) ? void 0 : t.guild_connections) === null ? n.id === P.id : w && b.r6(s, P.id, K, e),
         onRemove: () => f(e),
         ref: t => {
           var n;

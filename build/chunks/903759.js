@@ -1,6 +1,6 @@
 /** Chunk was on 56535 **/
 r.d(t, {
-  u: () => d
+  u: () => p
 }), r(388685);
 var n = r(255367),
   a = r(73800),
@@ -9,13 +9,14 @@ var n = r(255367),
   i = r(372129),
   o = r(598117),
   c = r(746622),
-  u = r(162337);
-let d = e => {
+  u = r(388032),
+  d = r(162337);
+let p = e => {
     let {
       setUserImage: t
     } = e, [r, i] = a.useState(null);
     return (0, n.jsxs)("div", {
-      className: u.emptyState,
+      className: d.emptyState,
       children: [(0, n.jsxs)("header", {
         children: [(0, n.jsx)(l.X6q, {
           variant: "heading-lg/medium",
@@ -27,13 +28,13 @@ let d = e => {
           children: "Select an image or GIF. You'll be able to edit & preview."
         })]
       }), (0, n.jsxs)("div", {
-        className: u.dropZone,
+        className: d.dropZone,
         children: [(0, n.jsx)(l.dZu, {
           size: "lg",
           color: l.TVs.colors.HEADER_MUTED
         }), (0, n.jsxs)(l.Text, {
           variant: "text-md/medium",
-          children: ["Drag & drop or ", (0, n.jsx)(p, {
+          children: ["Drag & drop or ", (0, n.jsx)(h, {
             setUserImage: t
           })]
         }), null !== r && (0, n.jsx)(c.H, {
@@ -45,23 +46,25 @@ let d = e => {
       })]
     })
   },
-  p = e => {
+  h = e => {
     let {
       setUserImage: t
     } = e;
-    return (0, n.jsxs)(l.P3F, {
+    return (0, n.jsx)(l.P3F, {
       focusProps: {
         within: !0
       },
       tag: "a",
-      children: ["Select an image", (0, n.jsx)(i.ZP, {
-        tabIndex: 0,
-        onChange: (e, r, n) => (t({
-          data: e,
-          file: r,
-          image: n
-        }), Promise.resolve(void 0)),
-        title: ""
-      })]
+      children: (0, n.jsxs)("label", {
+        children: [u.intl.string(u.t.DToW4e), (0, n.jsx)(i.ZP, {
+          tabIndex: 0,
+          onChange: (e, r, n) => (t({
+            data: e,
+            file: r,
+            image: n
+          }), Promise.resolve(void 0)),
+          title: ""
+        })]
+      })
     })
   }

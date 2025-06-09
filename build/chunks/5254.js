@@ -1,6 +1,6 @@
 /** Chunk was on 29709 **/
 n.d(t, {
-  Z: () => S
+  Z: () => E
 }), n(388685);
 var i, r = n(392711),
   l = n.n(r),
@@ -11,7 +11,7 @@ var i, r = n(392711),
   u = n(388380),
   d = n(72937);
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -19,7 +19,7 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let p = {},
+let f = {},
   g = 0,
   N = !1,
   O = !1;
@@ -35,7 +35,7 @@ function h(e) {
     contactNames: n
   }
 }
-class E extends(i = s.ZP.Store) {
+class m extends(i = s.ZP.Store) {
   initialize() {
     this.waitFor(c.default)
   }
@@ -43,24 +43,24 @@ class E extends(i = s.ZP.Store) {
     return g
   }
   getSuggestions() {
-    return Object.entries(p).map(e => {
+    return Object.entries(f).map(e => {
       let [t, n] = e;
       return n
     })
   }
   getSuggestion(e) {
-    return p[e]
+    return f[e]
   }
 }
-f(E, "displayName", "FriendSuggestionStore");
-let S = new E(a.Z, {
+p(m, "displayName", "FriendSuggestionStore");
+let E = new m(a.Z, {
   CONNECTION_OPEN: function(e) {
-    p = {}, (g = e.friendSuggestionCount) > 0 ? (O = !0, !N && O && (N = !0, O = !1, u.Z.fetch())) : (0, d.Z)()
+    f = {}, (g = e.friendSuggestionCount) > 0 ? (O = !0, !N && O && (N = !0, O = !1, u.Z.fetch())) : (0, d.Z)()
   },
   FRIEND_SUGGESTION_CREATE: function(e) {
     var t, n;
     let i = h(e.suggestion);
-    if (null != p[i.key]) return !1;
+    if (null != f[i.key]) return !1;
     g++, t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -68,11 +68,11 @@ let S = new E(a.Z, {
         "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), i.forEach(function(t) {
-          f(e, t, n[t])
+          p(e, t, n[t])
         })
       }
       return e
-    }({}, p), n = n = {
+    }({}, f), n = n = {
       [i.key]: i
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -83,16 +83,16 @@ let S = new E(a.Z, {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), p = t
+    }), f = t
   },
   FRIEND_SUGGESTION_DELETE: function(e) {
-    g = Math.max(0, --g), delete p[e.suggestedUserId]
+    g = Math.max(0, --g), delete f[e.suggestedUserId]
   },
   LOAD_FRIEND_SUGGESTIONS_SUCCESS: function(e) {
     var t;
-    N = !1, t = e.suggestions, p = l().chain(t).map(e => h(e)).keyBy(e => e.key).value(), g = l().keys(p).length
+    N = !1, t = e.suggestions, f = l().chain(t).map(e => h(e)).keyBy(e => e.key).value(), g = l().keys(f).length
   },
   LOAD_FRIEND_SUGGESTIONS_FAILURE: function() {
-    N = !1, p = {}
+    N = !1, f = {}
   }
 })

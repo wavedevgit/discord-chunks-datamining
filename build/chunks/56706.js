@@ -1,34 +1,40 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => m
+  Z: () => x
 }), n(388685);
 var a = n(255367),
   r = n(73800),
   l = n(481060),
   i = n(570140),
-  s = n(358820),
-  o = n(585483),
-  c = n(981631),
-  d = n(616257),
-  u = n(493733);
+  s = n(750180),
+  o = n(358820),
+  c = n(585483),
+  d = n(981631),
+  u = n(616257),
+  m = n(493733);
 
-function m() {
+function x() {
   let [e, t] = r.useState(30), n = () => {
     i.Z.dispatch({
       type: "VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME",
       timeInSeconds: e
     })
-  };
+  }, x = r.useCallback(() => {
+    i.Z.dispatch({
+      type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
+      state: s.O.LOADING
+    })
+  }, []);
   return (0, a.jsx)(l.zJl, {
-    className: d.panel,
+    className: u.panel,
     children: (0, a.jsxs)("div", {
-      className: u.panelInner,
+      className: m.panelInner,
       children: [(0, a.jsx)(l.Text, {
-        className: u.panelHeader,
+        className: m.panelHeader,
         variant: "text-lg/bold",
         children: "Voice Filters"
       }), (0, a.jsxs)("div", {
-        className: u.panelRow,
+        className: m.panelRow,
         children: [(0, a.jsx)(l.Text, {
           variant: "text-md/normal",
           children: "Set number of seconds remaining in countdown"
@@ -43,23 +49,33 @@ function m() {
           children: "Set"
         })]
       }), (0, a.jsxs)("div", {
-        className: u.panelRow,
+        className: m.panelRow,
         children: [(0, a.jsx)(l.Text, {
           variant: "text-md/normal",
           children: "Reset to API values"
         }), (0, a.jsx)(l.zxk, {
           size: l.zxk.Sizes.SMALL,
           onClick: () => {
-            (0, s.wV)()
+            (0, o.wV)()
           },
           children: "Reset"
         })]
+      }), (0, a.jsxs)("div", {
+        className: m.panelRow,
+        children: [(0, a.jsx)(l.Text, {
+          variant: "text-md/normal",
+          children: "Pretend the native module is loading so when you close your app it'll look as if it crashed on load"
+        }), (0, a.jsx)(l.zxk, {
+          size: l.zxk.Sizes.SMALL,
+          onClick: x,
+          children: "Pretend"
+        })]
       }), (0, a.jsx)("div", {
-        className: u.panelRow,
+        className: m.panelRow,
         children: (0, a.jsx)(l.zxk, {
           size: l.zxk.Sizes.SMALL,
           onClick: () => {
-            o.S.dispatch(c.CkL.OPEN_VOICE_FILTER_POPOUT)
+            c.S.dispatch(d.CkL.OPEN_VOICE_FILTER_POPOUT)
           },
           children: "Open voice filters panel"
         })

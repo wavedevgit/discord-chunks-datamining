@@ -1,6 +1,6 @@
 /**
   Module ID: 61717
-  Original File Name: d6f8c4bd5ca0bdb6
+  Original File Name: 1d8c496c615b73a6
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1379,6 +1379,54 @@
 
 .settingsButtonIcon_f37cb1 {
     --chat-input-icon-size: 18px
+}
+
+.skeleton__9897f {
+    padding-right: 8px
+}
+
+.skeletonItem__9897f {
+    align-items: flex-start;
+    display: flex;
+    gap: 12px;
+    padding: 4px
+}
+
+.avatar__9897f {
+    background-color: var(--bg-mod-subtle);
+    border-radius: 50%;
+    flex-shrink: 0;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+    width: 32px
+}
+
+.content__9897f {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px
+}
+
+.line__9897f {
+    background-color: var(--bg-mod-subtle);
+    border-radius: 8px;
+    height: 16px;
+    overflow: hidden;
+    position: relative
+}
+
+.lineShort__9897f {
+    width: 35%
+}
+
+.lineMedium__9897f {
+    width: 60%
+}
+
+.lineLong__9897f {
+    width: 95%
 }
 
 .channelName_cb862a {
@@ -6427,4 +6475,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=d6f8c4bd5ca0bdb6.css.map*/
+/*# sourceMappingURL=1d8c496c615b73a6.css.map*/

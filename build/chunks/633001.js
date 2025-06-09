@@ -274,9 +274,9 @@ function M(e) {
 
 function z() {
   var e, t;
-  let [n, l] = M(E.Odu.CLICK_ZONE_DEBUG), [s, d] = M(E.Odu.PERFORMANCE_DEBUG), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.ClickZones)), j = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.DisabledGPUBoost)), T = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.ForceGPUBoost)), S = (0, o.e7)([h.default], () => h.default.getForcedRenderMode()), [R, A] = r.useState({}), [Z, z] = r.useState(S), B = e => {
+  let [n, l] = M(E.Odu.CLICK_ZONE_DEBUG), [s, d] = M(E.Odu.PERFORMANCE_DEBUG), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.ClickZones)), j = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.DisabledGPUBoost)), T = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.ForceGPUBoost)), S = (0, o.e7)([h.default], () => h.default.getForcedRenderMode()), [R, A] = r.useState({}), [Z, z] = r.useState(S), U = e => {
     z(e), u.Z.forceRenderMode(e)
-  }, U = [{
+  }, B = [{
     label: m.R5.UNSET,
     value: m.R5.UNSET
   }, {
@@ -463,8 +463,8 @@ function z() {
           children: (0, a.jsx)(c.PhF, {
             serialize: e => e,
             isSelected: e => e === Z,
-            options: U,
-            select: B,
+            options: B,
+            select: U,
             popoutLayerContext: O.O$
           })
         }))
