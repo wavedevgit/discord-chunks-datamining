@@ -22,7 +22,7 @@ function O(e) {
   let t = new Set,
     n = null == s || u === S.Iq.EMBEDDED_APPLICATION ? void 0 : s.id,
     l = (0, I.rh)(E, n);
-  for (let e of (null == l || N.Z.isBlocked(l.id) || t.add(l.id), v.Z.getUserAffinities())) t.add(e.otherUserId);
+  for (let e of (null == l || N.Z.isBlockedOrIgnored(l.id) || t.add(l.id), v.Z.getUserAffinities())) t.add(e.otherUserId);
   let i = new Set;
   return u === S.Iq.EMBEDDED_APPLICATION && p.Z.getChannelHistory().map(e => f.Z.getChannel(e)).filter(x.lm).filter(e => e.type === _.d4z.GUILD_TEXT).filter(e => j.Z.can(_.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, I.an)({
     query: e,
