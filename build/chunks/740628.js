@@ -75,8 +75,8 @@ function O(e) {
     initialSubsection: y,
     onClose: Z
   } = e, {
-    trackUserProfileAction: P
-  } = (0, c.KZ)(), I = (0, i.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
+    trackUserProfileAction: I
+  } = (0, c.KZ)(), P = (0, i.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
     section: E,
     subsection: S
   }, T] = r.useState({
@@ -95,15 +95,15 @@ function O(e) {
     })
   }, [v, E]);
   let N = r.useCallback(e => {
-    P({
+    I({
       action: "PRESS_SECTION",
       section: e
     }), T({
       section: e,
       subsection: void 0
     })
-  }, [P, T]);
-  return I ? (0, l.jsx)("div", {
+  }, [I, T]);
+  return P ? (0, l.jsx)("div", {
     className: b.container,
     children: (0, l.jsxs)("div", {
       className: m.empty,

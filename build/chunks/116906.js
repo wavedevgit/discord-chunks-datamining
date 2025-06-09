@@ -1,6 +1,6 @@
 /** Chunk was on 37048 **/
 t.d(n, {
-  Z: () => P
+  Z: () => I
 });
 var l = t(255367);
 t(73800);
@@ -25,12 +25,12 @@ var r = t(442837),
   y = t(316879),
   Z = t(301150);
 
-function P(e) {
+function I(e) {
   let {
     user: n,
     currentUser: t,
-    displayProfile: P,
-    guildId: I,
+    displayProfile: I,
+    guildId: P,
     subsection: E,
     onClose: S
   } = e, {
@@ -48,7 +48,7 @@ function P(e) {
     voiceActivity: M
   } = (0, p.Z)({
     userId: n.id,
-    guildId: I
+    guildId: P
   }), R = (0, r.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), U = n.id === t.id, L = (0, r.e7)([c.Z, a.Z], () => {
     let e = U ? c.Z.getStatus() : a.Z.getStatus(n.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
@@ -74,7 +74,7 @@ function P(e) {
             currentUser: t,
             stream: _,
             onClose: S,
-            profileGuildId: null == P ? void 0 : P.guildId
+            profileGuildId: null == I ? void 0 : I.guildId
           })
         }), A.map((e, r) => (0, l.jsx)("li", {
           children: (0, l.jsx)(v.Z, {
@@ -82,7 +82,7 @@ function P(e) {
             currentUser: t,
             activity: e,
             onClose: S,
-            profileGuildId: null == P ? void 0 : P.guildId
+            profileGuildId: null == I ? void 0 : I.guildId
           })
         }, "live-".concat(r)))]
       })
@@ -103,7 +103,7 @@ function P(e) {
             user: n,
             currentUser: t,
             entry: e,
-            profileGuildId: null == P ? void 0 : P.guildId,
+            profileGuildId: null == I ? void 0 : I.guildId,
             onClose: S
           })
         }, e.id))

@@ -395,7 +395,7 @@ let eM = {
         message: eI.intl.string(eI.t.PoyOY2),
         messageName: "BOT_GDM_EXPLICIT_CONTENT"
       })).otherwise(() => ({
-        message: eI.intl.string(eI.t.bNMQVF),
+        message: eI.intl.string(eI.t.i4AbAQ),
         messageName: "BOT_GUILD_EXPLICIT_CONTENT"
       })), l = (0, j.r)();
       ej.sendBotMessage(e, a, s, l), (0, y.aP)({

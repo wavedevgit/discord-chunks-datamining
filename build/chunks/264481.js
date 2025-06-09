@@ -3,7 +3,7 @@ n.d(t, {
   P9: () => v,
   Uf: () => P,
   b0: () => I,
-  s_: () => g
+  s_: () => j
 }), n(388685);
 var o = n(255367),
   r = n(73800),
@@ -25,7 +25,7 @@ let y = [() => m.intl.string(m.t.madJdH), () => m.intl.string(m.t.NYmfoK), () =>
   }), () => m.intl.string(m.t["rrYh5+"]), () => m.intl.string(m.t["HX3K+P"]), () => m.intl.string(m.t["/yW3aW"]), () => m.intl.string(m.t["PmL/v7"]), () => m.intl.string(m.t.IALa3t), () => m.intl.string(m.t.HRcTFB), () => m.intl.string(m.t.NuCqPj), () => m.intl.string(m.t["M1tw+/"]), () => m.intl.string(m.t.UBm1y8), () => m.intl.string(m.t.Cu95PT), () => m.intl.string(m.t["R/wFur"]), () => m.intl.string(m.t.HQPAVV), () => m.intl.string(m.t.YolGh4)],
   h = [p.ABu.STEAM, p.ABu.PLAYSTATION, p.ABu.XBOX, p.ABu.TWITCH, p.ABu.BATTLENET, p.ABu.LEAGUE_OF_LEGENDS, p.ABu.EPIC_GAMES, p.ABu.RIOT_GAMES, p.ABu.ROBLOX, p.ABu.SPOTIFY, p.ABu.YOUTUBE, p.ABu.CRUNCHYROLL, p.ABu.BUNGIE];
 
-function j(e) {
+function g(e) {
   let {
     heading: t,
     bodyText: n,
@@ -48,13 +48,13 @@ function j(e) {
   })
 }
 
-function g() {
+function j() {
   let e = m.intl.string(m.t.RnD2yc),
     [t] = r.useState(() => {
       var e;
       return (null != (e = (0, i.sample)(y)) ? e : y[0])()
     });
-  return (0, o.jsx)(j, {
+  return (0, o.jsx)(g, {
     heading: e,
     bodyText: t
   })
@@ -66,7 +66,7 @@ function I() {
       var e;
       return (null != (e = (0, i.sample)(_)) ? e : _[0])()
     });
-  return (0, o.jsx)(j, {
+  return (0, o.jsx)(g, {
     heading: e,
     bodyText: t
   })
@@ -88,7 +88,7 @@ function v(e) {
       recipientIds: t.id
     }), null == s || s()
   }, [t.id, s]);
-  return (0, o.jsx)(j, {
+  return (0, o.jsx)(g, {
     heading: p,
     bodyText: y,
     children: (0, o.jsx)("div", {
@@ -128,7 +128,7 @@ function P(e) {
   }, [t]), i = r.useCallback(() => {
     null == t || t(), a.Z.open(p.oAB.CONTENT_AND_SOCIAL, "CONNECTED_GAMES")
   }, [t]);
-  return (0, o.jsxs)(j, {
+  return (0, o.jsxs)(g, {
     heading: m.intl.string(m.t.VB6LWV),
     bodyText: m.intl.string(m.t.KpjsU1),
     children: [(0, o.jsx)(O, {}), (0, o.jsxs)("div", {

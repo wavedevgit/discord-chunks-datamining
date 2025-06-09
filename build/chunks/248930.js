@@ -29,9 +29,9 @@ function x(e) {
     onClose: O,
     hideContextMenu: y = !1
   } = e, Z = r.useRef(null), {
-    analyticsLocations: P
+    analyticsLocations: I
   } = (0, a.ZP)(s.Z.USER_PROFILE_RECENT_ACTIVITY_CARD), {
-    themeType: I
+    themeType: P
   } = (0, g.z)(), {
     interactionSource: E,
     interactionSourceId: S
@@ -39,10 +39,10 @@ function x(e) {
     display: "recent",
     user: n,
     entry: t,
-    analyticsLocations: P
+    analyticsLocations: I
   });
-  return null != I && (0, c.Rh)(t) ? (0, l.jsx)(a.Gt, {
-    value: P,
+  return null != P && (0, c.Rh)(t) ? (0, l.jsx)(a.Gt, {
+    value: I,
     children: (0, l.jsx)(v.Z, {
       targetElementRef: Z,
       sourceType: m.n_.ACTIVITY,
@@ -50,7 +50,7 @@ function x(e) {
       children: (0, l.jsx)(f.Z, {
         user: n,
         guildId: i,
-        themeType: I,
+        themeType: P,
         sourceId: t.id,
         entry: t,
         onAction: T,
