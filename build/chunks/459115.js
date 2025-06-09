@@ -1,10 +1,10 @@
-/** Chunk was on 77978 **/
+/** Chunk was on 98787 **/
 n.d(t, {
   Z: () => o
 });
-var i = n(818083),
-  l = n(355820);
-let r = (0, i.B)({
+var r = n(818083),
+  i = n(355820);
+let l = (0, r.B)({
   kind: "user",
   id: "2025-04_custom_status_rtc_entrypoint",
   label: "Custom Status RTC Entrypoint Experiment",
@@ -33,14 +33,14 @@ function o(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
-  } = e, i = (0, l.P)({
+  } = e, r = (0, i.P)({
     location: t,
     autoTrackExposure: n
   });
-  return r.useExperiment({
+  return l.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
-    disable: i
+    disable: r
   })
 }

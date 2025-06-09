@@ -1,7 +1,7 @@
 /** Chunk was on 86915 **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => x
 }), n(539854), n(388685), n(413496), n(433524), n(35282), n(781311);
 var i, l = n(255367),
   r = n(73800),
@@ -24,7 +24,7 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class x extends(i = r.Component) {
+class j extends(i = r.Component) {
   getSelectedSection(e) {
     let {
       selectedSection: t
@@ -191,9 +191,9 @@ class x extends(i = r.Component) {
     })
   }
 }
-f(x, "defaultProps", {
+f(j, "defaultProps", {
   sections: [null]
 });
-let j = o.ZP.connectStores([d.Z], () => ({
+let x = o.ZP.connectStores([d.Z], () => ({
   keyboardModeEnabled: d.Z.keyboardModeEnabled
-}))(x)
+}))(j)

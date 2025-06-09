@@ -1,7 +1,7 @@
 /** Chunk was on 86915 **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => x
 }), n(388685);
 var i = n(255367),
   l = n(73800),
@@ -48,7 +48,7 @@ function f(e, t) {
   }), e
 }
 
-function x(e) {
+function j(e) {
   let {
     role: t,
     guild: r
@@ -79,13 +79,13 @@ function x(e) {
   }) : null
 }
 
-function j(e) {
+function x(e) {
   let {
     color: t,
     id: r,
     role: s,
     guild: d,
-    children: j,
+    children: x,
     isDragging: b,
     selectedItem: v,
     onItemSelect: y,
@@ -94,8 +94,8 @@ function j(e) {
     lockTooltip: S,
     showContextMenu: E,
     theme: O,
-    roleStyle: w,
-    "aria-label": Z
+    roleStyle: Z,
+    "aria-label": w
   } = e, T = (0, h.X)(d.id, null == s ? void 0 : s.colorStrings), R = l.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
@@ -115,10 +115,10 @@ function j(e) {
     selectedItem: v,
     onItemSelect: y,
     itemType: C,
-    "aria-label": null != S ? "".concat(Z, ", ").concat(S) : Z,
+    "aria-label": null != S ? "".concat(w, ", ").concat(S) : w,
     children: (0, i.jsxs)("div", {
       className: m.roleContent,
-      children: ["dot" === w ? (0, i.jsx)(o.FhE, {
+      children: ["dot" === Z ? (0, i.jsx)(o.FhE, {
         color: null != t ? t : void 0,
         colors: T,
         className: m.roleDot,
@@ -142,8 +142,8 @@ function j(e) {
       }(), (0, i.jsx)("div", {
         className: m.roleInner,
         onContextMenu: R,
-        children: j
-      }), E && null != s ? (0, i.jsx)(x, {
+        children: x
+      }), E && null != s ? (0, i.jsx)(j, {
         guild: d,
         role: s
       }) : null]

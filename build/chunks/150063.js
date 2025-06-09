@@ -1,11 +1,11 @@
-/** Chunk was on 77978 **/
+/** Chunk was on 98787 **/
 n.d(t, {
-  Y: () => l
+  Y: () => i
 });
-var i = n(570140);
+var r = n(570140);
 
-function l(e) {
-  i.Z.dispatch({
+function i(e) {
+  r.Z.dispatch({
     type: "APP_VIEW_SET_HOME_LINK",
     link: e
   })
