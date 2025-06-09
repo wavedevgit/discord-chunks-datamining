@@ -225,7 +225,7 @@ function x(e) {
       position: "bottom",
       forceOpen: h,
       shouldShow: h && !c,
-      text: g.intl.string(g.t["+B9e19"]),
+      text: g.intl.string(g.t.UdhTtr),
       children: () => (0, r.jsx)(a.P3F, y(b({}, e), {
         className: l,
         innerRef: s,

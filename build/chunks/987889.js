@@ -105,10 +105,13 @@ function v(e) {
     autoInvert: !1,
     targetElementRef: y,
     onRequestClose: () => b(!1),
-    renderPopout: e => (0, r.jsx)(a, {
-      renderPopoutProps: e,
-      channel: t,
-      message: n
+    renderPopout: e => (0, r.jsx)(o.P3F, {
+      onClick: e => e.stopPropagation(),
+      children: (0, r.jsx)(a, {
+        renderPopoutProps: e,
+        channel: t,
+        message: n
+      })
     }),
     children: e => (0, r.jsx)(o.ua7, {
       text: l,
