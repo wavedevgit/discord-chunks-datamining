@@ -116,7 +116,7 @@ function T(e) {
       });
       throw Error("Unknown filter: ".concat(f))
     }, [f, a, B, V, T, G]),
-    F = S === P.xM.READ && f === P.V5.ALL && !h && G,
+    F = S === P.xM.READ && !h && G,
     {
       notificationCenterVariant: z
     } = _.L.useExperiment({
@@ -169,7 +169,9 @@ function T(e) {
     }), t)), "popout" === z && (0, r.jsx)(x.Z, {
       selectedFilter: f,
       setSelectedFilter: C
-    }), F && (0, r.jsx)(D, {}), W && (0, r.jsx)(L, {
+    }), f === P.V5.ALL && (0, r.jsx)(D, {
+      canShow: F
+    }), W && (0, r.jsx)(L, {
       filter: f
     }), (0, r.jsx)(E.Z, {
       className: N.messageList,
@@ -204,23 +206,30 @@ function R(e, t, n) {
   }, e[0].id)
 }
 
-function D() {
-  let [e, t] = i.useState(!1), [n, l] = i.useState(!1), o = n ? u.kSu : u.kmB;
-  return e ? null : (0, r.jsxs)(u.P3F, {
-    onClick: () => t(!0),
-    onMouseEnter: () => l(!0),
-    onMouseLeave: () => l(!1),
-    className: N.caughtUpContainer,
-    children: [(0, r.jsx)(u.Text, {
-      variant: n ? "text-sm/medium" : "text-sm/normal",
-      color: "text-positive",
-      className: N.caughtUpText,
-      children: w.intl.string(w.t["6XMM+P"])
-    }), (0, r.jsx)(o, {
-      size: "sm",
-      className: N.caughtUpIcon,
-      color: f.Z.TEXT_POSITIVE
-    })]
+function D(e) {
+  let {
+    canShow: t
+  } = e, [n, l] = i.useState(!1), [s, a] = i.useState(!1), c = s ? u.kSu : u.kmB;
+  return (0, r.jsx)(u.P3F, {
+    onClick: () => l(!0),
+    onMouseEnter: () => a(!0),
+    onMouseLeave: () => a(!1),
+    className: o()(N.caughtUpContainer, {
+      [N.hide]: !(!n && t)
+    }),
+    children: (0, r.jsxs)("div", {
+      className: N.caughtUpContent,
+      children: [(0, r.jsx)(u.Text, {
+        variant: s ? "text-sm/medium" : "text-sm/normal",
+        color: "text-positive",
+        className: N.caughtUpText,
+        children: w.intl.string(w.t["6XMM+P"])
+      }), (0, r.jsx)(c, {
+        size: "sm",
+        className: N.caughtUpIcon,
+        color: f.Z.TEXT_POSITIVE
+      })]
+    })
   })
 }
 
