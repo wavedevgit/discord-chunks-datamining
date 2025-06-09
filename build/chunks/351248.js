@@ -27,12 +27,12 @@ function y(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let x = {
+let C = {
     STEPS: 23,
     FRAME_DURATION: 17,
     FRAME_SIZE: 26
   },
-  C = {
+  x = {
     SCALE_MIN: .7,
     SCALE_MAX: 1,
     DURATION_IN: 300,
@@ -58,8 +58,8 @@ class v extends i.PureComponent {
     } = this;
     t.setValue(0), n.setValue(0), o.Z.parallel([o.Z.timing(t, {
       toValue: 1,
-      duration: C.DURATION_IN,
-      easing: C.EASING_IN
+      duration: x.DURATION_IN,
+      easing: x.EASING_IN
     }), o.Z.timing(n, {
       toValue: 1,
       duration: 200
@@ -74,14 +74,14 @@ class v extends i.PureComponent {
     } = this;
     r.setValue(1), n.setValue(0);
     let l = [];
-    for (let e = 0; e < x.STEPS; e++) l.push(o.Z.timing(n, {
-      toValue: -x.FRAME_SIZE * e,
-      duration: x.FRAME_DURATION
+    for (let e = 0; e < C.STEPS; e++) l.push(o.Z.timing(n, {
+      toValue: -C.FRAME_SIZE * e,
+      duration: C.FRAME_DURATION
     }));
     o.Z.sequence([o.Z.timing(t, {
       toValue: 0,
-      duration: C.DURATION_OUT,
-      easing: C.EASING_OUT
+      duration: x.DURATION_OUT,
+      easing: x.EASING_OUT
     }), o.Z.sequence(l), o.Z.timing(i, {
       toValue: 0,
       duration: 125
@@ -95,7 +95,7 @@ class v extends i.PureComponent {
       transform: [{
         scale: e.interpolate({
           inputRange: [0, 1],
-          outputRange: [C.SCALE_MIN, C.SCALE_MAX]
+          outputRange: [x.SCALE_MIN, x.SCALE_MAX]
         })
       }],
       opacity: e
@@ -157,7 +157,7 @@ function j(e) {
     onClick: o,
     width: u,
     guildId: b
-  } = e, _ = (0, p.ZP)(), y = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), x = (0, s.e7)([h.Z], () => h.Z.isFocused()), C = n.map(e => {
+  } = e, _ = (0, p.ZP)(), y = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), x = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -172,7 +172,7 @@ function j(e) {
       theme: _,
       children: (0, r.jsx)(f.Z, {
         userId: l.id,
-        src: l.getAvatarURL(b, (0, d.pxk)(y), s && x),
+        src: l.getAvatarURL(b, (0, d.pxk)(y), s && C),
         size: y,
         muted: null != (t = null == a ? void 0 : a.isVoiceMuted()) && t,
         deafen: null != (n = null == a ? void 0 : a.isVoiceDeafened()) && n,
@@ -186,6 +186,6 @@ function j(e) {
   return (0, r.jsx)(c.W, {
     component: "div",
     className: a()(g.root, l),
-    children: C
+    children: x
   })
 }

@@ -20,8 +20,8 @@ var r = n(255367),
   b = n(358221),
   _ = n(795318),
   y = n(258609),
-  x = n(569545),
-  C = n(102172),
+  C = n(569545),
+  x = n(102172),
   v = n(352978),
   j = n(880395),
   O = n(670188),
@@ -136,9 +136,9 @@ let D = 16 / 9,
       selectedParticipant: null != l ? b.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
     })), N = i.useCallback((e, t) => {
-      if (e.type === R.fO.STREAM && 0 === j.filter(t => (0, x.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
-        if (!(0, C.p9)(l, Z.Z, P.Z, S.Z, y.Z)[0]) return;
-        (0, p.rn)((0, x.my)(e.id), {
+      if (e.type === R.fO.STREAM && 0 === j.filter(t => (0, C.V9)(t) === e.id && t.state !== w.jm8.ENDED).length) {
+        if (!(0, x.p9)(l, Z.Z, P.Z, S.Z, y.Z)[0]) return;
+        (0, p.rn)((0, C.my)(e.id), {
           forceMultiple: t.shiftKey
         })
       }(null == O ? void 0 : O.id) === e.id ? I ? (u.Z.selectParticipant(l.id, null), u.Z.updateStageStreamSize(l.id, !1)) : u.Z.updateStageStreamSize(l.id, !0) : (u.Z.updateStageStreamSize(l.id, !1), u.Z.selectParticipant(l.id, e.id))
@@ -168,11 +168,11 @@ let D = 16 / 9,
       width: c
     } = e, {
       newestAnalyticsLocation: u
-    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), y = l.getGuildId(), x = I.default.getId();
+    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), y = l.getGuildId(), C = I.default.getId();
     a()(null != y, "Channel cannot be guildless");
     let {
-      user: C
-    } = i, v = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), O = (0, s.e7)([N.ZP], () => N.ZP.isModerator(C.id, l.id), [l.id, C.id]);
+      user: x
+    } = i, v = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), O = (0, s.e7)([N.ZP], () => N.ZP.isModerator(x.id, l.id), [l.id, x.id]);
     if (null == v || v.type === R.fO.ACTIVITY) return null;
     let E = e => {
         (0, g.h)({
@@ -180,7 +180,7 @@ let D = 16 / 9,
           name: o.ImpressionNames.CALL_TILE_CONTEXT_MENU,
           properties: {
             location: "StageTile",
-            is_tile_owner: C.id === x,
+            is_tile_owner: x.id === C,
             tile_type: e
           }
         })
@@ -199,7 +199,7 @@ let D = 16 / 9,
                 exitFullscreen: () => {},
                 onInteraction: (0, _.u)("StreamContextMenu", u, {
                   entrypoint: a,
-                  targetUserId: C.id,
+                  targetUserId: x.id,
                   tileType: R.TH.STREAM
                 })
               }))
@@ -209,13 +209,13 @@ let D = 16 / 9,
             return;
           case R.fO.USER:
           default:
-            if (E(R.TH.USER), i) return (0, j.D)(t, C, l, {
+            if (E(R.TH.USER), i) return (0, j.D)(t, x, l, {
               context: p
             }, (e, t) => (0, _.o)({
               menuName: e,
               menuItemProps: t,
               entrypoint: R.A5.THREE_DOT,
-              targetUserId: C.id,
+              targetUserId: x.id,
               location: u,
               tileType: R.TH.USER
             }));
@@ -224,14 +224,14 @@ let D = 16 / 9,
                 default: e
               } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
               return t => (0, r.jsx)(e, L(k({}, t), {
-                user: C,
+                user: x,
                 guildId: y,
                 channel: l,
                 showMediaItems: !0,
                 showStageChannelItems: !0,
                 showChatItems: !1,
                 onInteraction: (0, _.u)("GuildChannelUserContextMenu", u, {
-                  targetUserId: C.id,
+                  targetUserId: x.id,
                   tileType: R.TH.USER
                 })
               }))
@@ -245,7 +245,7 @@ let D = 16 / 9,
       rtcParticipant: v,
       channel: l,
       guildId: y,
-      user: C,
+      user: x,
       width: c,
       isModerator: O,
       onContextMenu: P,
@@ -255,7 +255,7 @@ let D = 16 / 9,
       rtcParticipant: v,
       channel: l,
       guildId: y,
-      user: C,
+      user: x,
       width: c,
       isModerator: O,
       onContextMenu: P,

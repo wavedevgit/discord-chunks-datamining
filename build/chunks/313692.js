@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(271383),
   _ = n(594174),
   y = n(189432),
-  x = n(356778),
-  C = n(370595),
+  C = n(356778),
+  x = n(370595),
   v = n(50493),
   j = n(12740),
   O = n(450355);
@@ -33,7 +33,7 @@ function E(e) {
     location: I,
     className: P,
     onNavigate: S
-  } = e, Z = i.useRef(null), N = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == N ? void 0 : N.details.additionalSearchQuery) ? t : {}), R = (0, x.z0)(l, E, {
+  } = e, Z = i.useRef(null), N = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == N ? void 0 : N.details.additionalSearchQuery) ? t : {}), R = (0, C.z0)(l, E, {
     addtionalQuery: A,
     shouldDispatch: !0
   }), M = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), k = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
@@ -137,7 +137,7 @@ function E(e) {
     }, [R.result, B]);
   return null == M || null == k || null == G ? null : (0, r.jsxs)("div", {
     className: a()(j.container, P),
-    children: [(0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(x.Z, {
       guildId: E,
       userId: l,
       onNavigate: S

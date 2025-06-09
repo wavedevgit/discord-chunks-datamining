@@ -78,7 +78,7 @@ function f(e) {
     isActive: b = !1,
     isCenterButton: _ = !1,
     ref: y
-  } = e, x = function(e, t) {
+  } = e, C = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -93,29 +93,29 @@ function f(e) {
     }
     return i
   }(e, ["totalCooldownSeconds", "remainingCooldownSeconds", "onClick", "onKeyDown", "onMouseEnter", "onMouseLeave", "isActive", "isCenterButton", "ref"]);
-  let C = n > 0,
+  let x = n > 0,
     v = (0, o.q_F)({
       percentComplete: 0 !== n ? (t - n) / t : 0,
       config: p(d({}, a.config.molasses), {
         duration: 1e3
       })
     }, "animate-always"),
-    j = C ? c.intl.formatToPlainString(c.t.D8Drx8, {
+    j = x ? c.intl.formatToPlainString(c.t.D8Drx8, {
       seconds: n
     }) : void 0,
     O = _ ? s.d : s.Z;
   return (0, r.jsxs)("div", {
     className: u.container,
     ref: y,
-    children: [C ? (0, r.jsx)(h, {
+    children: [x ? (0, r.jsx)(h, {
       percentComplete: v.percentComplete
-    }) : null, (0, r.jsx)(O, p(d({}, x), {
+    }) : null, (0, r.jsx)(O, p(d({}, C), {
       isTrayButton: !0,
-      disabled: C,
+      disabled: x,
       label: j,
       iconComponent: o.EO4,
       iconClassName: l()(u.iconHover, b && u.active),
-      className: l()(x.className, u.button),
+      className: l()(C.className, u.button),
       onClick: i,
       onKeyDown: f,
       onMouseEnter: m,

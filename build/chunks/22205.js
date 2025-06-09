@@ -26,8 +26,8 @@ var i = n(255367),
   w = n(333031),
   P = n(610394),
   k = n(380736),
-  E = n(987650),
-  Z = n(981631),
+  Z = n(987650),
+  E = n(981631),
   S = n(388032),
   z = n(138134);
 
@@ -39,7 +39,7 @@ function N(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let T = l().throttle(() => {
+let D = l().throttle(() => {
     v.Z.increment({
       name: u.V.APP_CRASHED,
       tags: ["reason:".concat(c.v.UNHANDLED_JS_ERROR), "level:".concat(a.c.FATAL)]
@@ -47,7 +47,7 @@ let T = l().throttle(() => {
   }, 100, {
     trailing: !1
   }),
-  D = 10 * x.Z.Millis.SECOND;
+  T = 10 * x.Z.Millis.SECOND;
 
 function M(e) {
   var t, n;
@@ -58,8 +58,8 @@ function M(e) {
     onDisable: a,
     onCrashDisabled: u
   } = e, p = r.useMemo(() => new s.SpringValue(1), []), b = r.useRef(null), [v, g] = r.useState(!1), [x, C] = r.useState(!1), j = (0, d.e7)([y.default], () => y.default.getCurrentUser());
-  (0, f.ZP)(() => (b.current = setTimeout(w, D), m.Z.track(Z.rMx.NOTIFICATION_VIEWED, {
-    notif_type: E.n0.OverlayCrashed
+  (0, f.ZP)(() => (b.current = setTimeout(w, T), m.Z.track(E.rMx.NOTIFICATION_VIEWED, {
+    notif_type: Z.n0.OverlayCrashed
   }), () => {
     null != b.current && clearTimeout(b.current)
   }));
@@ -67,12 +67,12 @@ function M(e) {
       p.set(0), null != b.current && clearTimeout(b.current), b.current = null, null == l || l(), null == u || u()
     }, [p, l, u]),
     N = r.useCallback(e => {
-      x || (C(!0), null == l || l(), m.Z.track(Z.rMx.NOTIFICATION_CLICKED, {
-        notif_type: E.n0.OverlayCrashed,
+      x || (C(!0), null == l || l(), m.Z.track(E.rMx.NOTIFICATION_CLICKED, {
+        notif_type: Z.n0.OverlayCrashed,
         action_type: "reload"
       }, !0), e.stopPropagation(), setTimeout(() => null == c ? void 0 : c(), 200))
     }, [l, c, x]),
-    T = r.useCallback(e => {
+    D = r.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (g(!0), null != b.current && clearTimeout(b.current)) : g(!1)
     }, [g]),
     M = r.useCallback(e => {
@@ -102,12 +102,12 @@ function M(e) {
         })]
       })]
     }) : null,
-    A = v ? null : S.intl.string(S.t.oEJEFh),
-    I = null != (t = null == j ? void 0 : j.isStaff()) && t || null != (n = null == j ? void 0 : j.isStaffPersonal()) && n;
+    I = v ? null : S.intl.string(S.t.oEJEFh),
+    W = null != (t = null == j ? void 0 : j.isStaff()) && t || null != (n = null == j ? void 0 : j.isStaffPersonal()) && n;
   return (0, i.jsx)(k.Y, {
     title: S.intl.string(S.t.U38qZm),
     body: L,
-    hint: I ? A : void 0,
+    hint: W ? I : void 0,
     confirmText: S.intl.string(S.t.a3HlgI),
     cancelText: null != R ? S.intl.string(S.t.qIYnPj) : void 0,
     icon: (0, i.jsx)(O.Z, {
@@ -115,7 +115,7 @@ function M(e) {
       height: 40,
       className: z.notificationIcon
     }),
-    onNotificationClick: T,
+    onNotificationClick: D,
     onConfirmClick: N,
     onCancelClick: null != R ? M : void 0,
     onDismissClick: l,
@@ -123,7 +123,7 @@ function M(e) {
     locked: !0,
     notificationId: "overlay-crashed",
     index: 0,
-    status: Z._1z.ACTIVE,
+    status: E._1z.ACTIVE,
     containerRef: null,
     contentOpacity: p,
     className: z.errorNotificationContainer,
@@ -142,14 +142,14 @@ class R extends r.PureComponent {
     let r = C.Z.captureCrash(e, {
       extra: t
     });
-    m.Z.track(Z.rMx.APP_CRASHED, {
+    m.Z.track(E.rMx.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,
       error_stack: e.stack,
       sentry_issue_id: r,
       error_level: "fatal"
-    }), T(), this.pid = i
+    }), D(), this.pid = i
   }
   render() {
     let {

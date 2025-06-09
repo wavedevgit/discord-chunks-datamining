@@ -50,17 +50,17 @@ function g(e, t) {
 function b(e) {
   let {
     channel: t
-  } = e, n = i.useRef(null), [b, _] = (0, l.Wu)([s.ZP], () => [s.ZP.isChannelMuted(t.getGuildId(), t.id), s.ZP.resolvedMessageNotifications(t)], [t]), [y, x] = i.useState(!1);
+  } = e, n = i.useRef(null), [b, _] = (0, l.Wu)([s.ZP], () => [s.ZP.isChannelMuted(t.getGuildId(), t.id), s.ZP.resolvedMessageNotifications(t)], [t]), [y, C] = i.useState(!1);
   i.useEffect(() => {
-    let e = () => x(!0);
+    let e = () => C(!0);
     return c.S.subscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
       c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let C = e => {
+  let x = e => {
       e.shiftKey ? o.Z.updateChannelOverrideSettings(t.guild_id, t.id, {
         muted: !b
-      }, u.UE.muted(!b)) : x(e => !e)
+      }, u.UE.muted(!b)) : C(e => !e)
     },
     v = f.intl.string(f.t.h850Sk);
   return (0, r.jsx)(a.yRy, {
@@ -70,7 +70,7 @@ function b(e) {
     position: "bottom",
     align: "right",
     autoInvert: !1,
-    onRequestClose: () => x(!1),
+    onRequestClose: () => C(!1),
     renderPopout: e => (0, r.jsx)(p.Z, g(m({}, e), {
       channel: t,
       navId: "channel-context",
@@ -83,7 +83,7 @@ function b(e) {
       } = t;
       return (0, r.jsx)(d.ZP.Icon, g(m({}, e), {
         ref: n,
-        onClick: C,
+        onClick: x,
         tooltip: i ? null : v,
         icon: b || _ !== h.bL.ALL_MESSAGES ? a.owu : a.Dkj,
         "aria-label": v,

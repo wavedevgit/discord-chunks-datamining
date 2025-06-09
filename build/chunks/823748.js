@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(475179),
   _ = n(239091),
   y = n(377993),
-  x = n(697309),
-  C = n(457868),
+  C = n(697309),
+  x = n(457868),
   v = n(561472),
   j = n(36311),
   O = n(112724),
@@ -73,8 +73,8 @@ var r = n(255367),
   eb = n(134483),
   e_ = n(703656),
   ey = n(359110),
-  ex = n(854709),
-  eC = n(14091),
+  eC = n(854709),
+  ex = n(14091),
   ev = n(6025),
   ej = n(897473),
   eO = n(922482),
@@ -338,11 +338,11 @@ class to extends i.PureComponent {
         break;
       case e8.d4z.PUBLIC_THREAD:
       case e8.d4z.PRIVATE_THREAD:
-        if (!t.isArchivedThread() && null != i) return (0, r.jsx)(C.Z, {
+        if (!t.isArchivedThread() && null != i) return (0, r.jsx)(x.Z, {
           channel: t,
           guild: i
         }, "channel-members-".concat(t.id))
-    } else if (a === e8.ULH.SEARCH && null != e) return (0, r.jsx)(eC.Z, {
+    } else if (a === e8.ULH.SEARCH && null != e) return (0, r.jsx)(ex.Z, {
       searchId: e
     });
     return null
@@ -435,7 +435,7 @@ class to extends i.PureComponent {
       } if (null == e) return null;
     let u = (null == t ? void 0 : t.type) != null && e8.TPd.GUILD_THREADS_ONLY.has(t.type) ? 528 : 450,
       d = s - e8.PrS - u;
-    return c && (d += x.qO), (0, r.jsx)(e$.Z, {
+    return c && (d += C.qO), (0, r.jsx)(e$.Z, {
       sidebarType: (null == t ? void 0 : t.type) != null && e8.TPd.GUILD_THREADS_ONLY.has(t.type) ? e$.y.PostSidebar : e$.y.ThreadSidebar,
       maxWidth: d,
       onWidthChange: this.handleThreadSidebarResize,
@@ -746,8 +746,8 @@ class to extends i.PureComponent {
             guildId: l,
             channelId: e.id,
             channelType: e.type,
-            hideSearch: e.isDirectory() || p && !(0, ex.X)(),
-            showDivider: p && !(0, ex.X)(),
+            hideSearch: e.isDirectory() || p && !(0, eC.X)(),
+            showDivider: p && !(0, eC.X)(),
             toolbar: this.renderHeaderToolbar(),
             mobileToolbar: this.renderMobileToolbar(),
             className: a()(tn.title, s),
@@ -783,8 +783,8 @@ let ts = (0, O.Z)(to),
     let {
       providedChannel: n
     } = e, [l, a] = i.useState(null), o = (0, h.e7)([eY.Z], () => eY.Z.getChannelId()), s = (0, h.e7)([eY.Z], () => eY.Z.getVoiceChannelId()), c = (0, h.e7)([eU.Z], () => null != n ? n : eU.Z.getChannel(o), [o, n]), p = (0, h.e7)([eU.Z], () => eU.Z.getChannel(s), [s]), g = null == c ? void 0 : c.parent_id, _ = (0, h.e7)([eU.Z], () => eU.Z.getChannel(g), [g]), y = (0, h.e7)([eH.Z], () => eH.Z.getGuild(null == c ? void 0 : c.guild_id), [c]), {
-      needSubscriptionToAccess: x
-    } = (0, X.Z)(null != (t = null == c ? void 0 : c.id) ? t : void 0), C = (0, h.e7)([w.Z], () => {
+      needSubscriptionToAccess: C
+    } = (0, X.Z)(null != (t = null == c ? void 0 : c.id) ? t : void 0), x = (0, h.e7)([w.Z], () => {
       let e = null != o ? w.Z.getParticipants(o) : [],
         t = null != o ? w.Z.getActivityParticipants(o) : [];
       return e.length - t.length > 0
@@ -802,7 +802,7 @@ let ts = (0, O.Z)(to),
       k = (0, h.e7)([P.ZP], () => P.ZP.getActivityPanelMode()),
       L = null != M && !(0, Z.Z)(null == c ? void 0 : c.id) && k === e5.Ez.PANEL,
       D = (0, h.e7)([eX.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eX.Z.getVoiceStatesForChannel(c.id)), [c]),
-      B = null != c && c.isPrivate() && !L && C,
+      B = null != c && c.isPrivate() && !L && x,
       G = (null == c ? void 0 : c.isGuildVocal()) || B || D,
       {
         welcomeModalChannelId: H
@@ -866,8 +866,8 @@ let ts = (0, O.Z)(to),
         dismissAction: e6.L.AUTO
       })
     }, [null == c ? void 0 : c.id, ey, ep, eb]);
-    let ex = (0, m.f9)(),
-      eC = (0, U.Q3)("Channel");
+    let eC = (0, m.f9)(),
+      ex = (0, U.Q3)("Channel");
     return (0, r.jsx)(ts, tl(ti({
       guildId: null == c ? void 0 : c.guild_id,
       channelId: o,
@@ -877,15 +877,15 @@ let ts = (0, O.Z)(to),
       parentChannel: _,
       voiceChannel: p,
       layout: Y,
-      needSubscriptionToAccess: x,
+      needSubscriptionToAccess: C,
       isLurking: z,
-      hasModalOpen: ex,
+      hasModalOpen: eC,
       section: $,
       channelSidebarState: ee,
       guildSidebarState: en,
       guild: y,
       searchId: (0, h.e7)([eW.Z], () => eW.Z.getCurrentSearchId()),
-      showCall: !x && G,
+      showCall: !C && G,
       showActivityPanel: L,
       nsfwAgree: (0, h.e7)([eG.Z], () => eG.Z.didAgree(null == c ? void 0 : c.guild_id)),
       isMobile: (0, h.e7)([eV.Z], () => (null == c ? void 0 : c.type) === e8.d4z.DM && eV.Z.isMobileOnline(c.getRecipientId()), [c]),
@@ -904,7 +904,7 @@ let ts = (0, O.Z)(to),
       showHeaderGuildBreadcrumb: er || ei,
       premiumIndicatorEnabled: !1,
       hasTextActivityInPanelMode: L,
-      isRefreshEnabled: eC,
+      isRefreshEnabled: ex,
       embeddedActivity: M
     }))
   })

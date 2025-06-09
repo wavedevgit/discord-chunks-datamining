@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(111248),
   _ = n(312703),
   y = n(796638),
-  x = n(981631),
-  C = n(354459),
+  C = n(981631),
+  x = n(354459),
   v = n(363987),
   j = n(999976);
 
@@ -84,13 +84,13 @@ function S(e) {
     Y = (0, c.Z)(z),
     [q, K] = i.useState(!0),
     [X, Q] = i.useState(!1),
-    J = M.type === C.fO.ACTIVITY,
+    J = M.type === x.fO.ACTIVITY,
     $ = (0, u.Z)(J ? M.applicationId : void 0),
     ee = !J && null != M.streamId,
     et = U <= 2 * P + 144,
     en = k && !et,
     er = (0, c.Z)(en),
-    ei = B === x.AEg.MINIMUM || B === x.AEg.NORMAL,
+    ei = B === C.AEg.MINIMUM || B === C.AEg.NORMAL,
     el = !et && (!ei || J),
     ea = (0, m.Z)(el, 100),
     eo = (null != (t = (0, c.Z)(M.id)) ? t : M.id) !== M.id,
@@ -118,9 +118,9 @@ function S(e) {
         clamp: !0
       }),
       onStart: () => Q(!0),
-      onChange: () => f.S.dispatch(x.CkL.REMEASURE_TARGET),
+      onChange: () => f.S.dispatch(C.CkL.REMEASURE_TARGET),
       onRest: () => {
-        Q(!1), f.S.dispatch(x.CkL.REMEASURE_TARGET)
+        Q(!1), f.S.dispatch(C.CkL.REMEASURE_TARGET)
       }
     }, em),
     eb = (0, s.q_F)({
@@ -141,7 +141,7 @@ function S(e) {
         clamp: !0
       })
     }, em),
-    ex = (0, s.Yzy)(M, {
+    eC = (0, s.Yzy)(M, {
       keys: e => null == e ? void 0 : e.id,
       config: E(O({}, o.config.stiff), {
         clamp: !0
@@ -157,7 +157,7 @@ function S(e) {
         opacity: 0
       }
     }, em),
-    eC = i.useCallback(e => {
+    ex = i.useCallback(e => {
       W(e), K(!1)
     }, []),
     ev = en ? [] : (0, _.n3)(N, M, V),
@@ -187,7 +187,7 @@ function S(e) {
             style: {
               aspectRatio: ec
             },
-            children: ex((e, t, n) => {
+            children: eC((e, t, n) => {
               let {
                 key: i
               } = n;
@@ -205,7 +205,7 @@ function S(e) {
                   onClick: l,
                   onDoubleClick: Z,
                   onContextMenu: S,
-                  onVideoResize: eC,
+                  onVideoResize: ex,
                   inCall: w,
                   inPopout: G
                 })

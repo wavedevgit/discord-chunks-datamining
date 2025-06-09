@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 95e128f339ad47a7
+  Original File Name: 7beb967c8f1c7544
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -1782,6 +1782,7 @@ html:not(.visual-refresh) .header_cba592 {
 }
 
 .footer__49094 {
+    justify-content: space-between;
     padding: 12px 24px
 }
 
@@ -1830,10 +1831,6 @@ html:not(.visual-refresh) .header_cba592 {
 .leaveActivityButton__49094 {
     height: 40px;
     width: 40px
-}
-
-.userAvatars__49094 {
-    flex: 1
 }
 
 .footerButtons__49094 {
@@ -13269,4 +13266,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=95e128f339ad47a7.css.map*/
+/*# sourceMappingURL=7beb967c8f1c7544.css.map*/

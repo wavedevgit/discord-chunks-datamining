@@ -21,16 +21,16 @@ var r = n(255367),
 let y = i.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, u.Z)(), l = (0, o.e7)([f.Z], () => f.Z.isInChannel(t.id)), y = (0, o.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), x = (0, o.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
-    needSubscriptionToAccess: C
+  } = e, n = (0, u.Z)(), l = (0, o.e7)([f.Z], () => f.Z.isInChannel(t.id)), y = (0, o.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), C = (0, o.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
+    needSubscriptionToAccess: x
   } = (0, d.Z)(t.id), v = (0, p.$R)(t), j = i.useCallback(() => {
     c.Z.handleVoiceConnect({
       channel: t,
       connected: l,
-      needSubscriptionToAccess: C,
+      needSubscriptionToAccess: x,
       locked: !1
     })
-  }, [t, l, C]);
+  }, [t, l, x]);
   return (i.useEffect(() => (m.S.subscribe(b.CkL.CALL_START, j), () => {
     m.S.unsubscribe(b.CkL.CALL_START, j)
   }), [j]), p.tM.useExperiment({
@@ -38,7 +38,7 @@ let y = i.memo(function(e) {
     location: "63250c_1"
   }, {
     autoTrackExposure: !1
-  }).enabled && !n && !l && x && v && t.isVocalThread()) ? (0, r.jsx)(g.ZP.Icon, {
+  }).enabled && !n && !l && C && v && t.isVocalThread()) ? (0, r.jsx)(g.ZP.Icon, {
     icon: s.Csw,
     onClick: j,
     tooltip: y ? _.intl.string(_.t.fdEeb2) : _.intl.string(_.t.focH1t)

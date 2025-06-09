@@ -21,27 +21,27 @@ var i, r = n(255367),
   O = n(899663),
   x = n(636449),
   C = n(317381),
-  j = n(496616),
+  j = n(617552),
   w = n(100527),
   P = n(906732),
   k = n(168551),
-  E = n(260035),
-  Z = n(628123),
+  Z = n(260035),
+  E = n(628123),
   S = n(686546),
   z = n(950796),
   N = n(151851),
-  T = n(587061),
-  D = n(540059),
+  D = n(587061),
+  T = n(540059),
   M = n(280049),
   R = n(314910),
   L = n(22205),
-  A = n(746106),
-  I = n(892071),
-  W = n(740492),
+  I = n(746106),
+  W = n(892071),
+  A = n(740492),
   _ = n(358085),
   K = n(62883),
-  U = n(998502),
-  F = n(473159),
+  F = n(998502),
+  U = n(473159),
   q = n(928518),
   B = n(981631),
   H = n(501787),
@@ -87,7 +87,7 @@ class Q extends(i = o.Component) {
     let {
       guestWindow: e
     } = this.props, t = e.document;
-    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, F.O)(e), e.addEventListener("blur", this.handleBlur), _.isPlatformEmbedded ? t.addEventListener("contextmenu", K.contextMenuCallbackNative, !1) : t.addEventListener("contextmenu", K.contextMenuCallbackWeb, !1), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
+    null == t.querySelector("title") && null != t.head && t.head.appendChild(t.createElement("title")), this.updateTitle(), this.updateClientTheme(), (0, U.O)(e), e.addEventListener("blur", this.handleBlur), _.isPlatformEmbedded ? t.addEventListener("contextmenu", K.contextMenuCallbackNative, !1) : t.addEventListener("contextmenu", K.contextMenuCallbackWeb, !1), e.addEventListener("beforeunload", this.beforeUnload), this.registerPopoutGlobalKeybinds()
   }
   componentDidUpdate(e) {
     let {
@@ -148,9 +148,9 @@ class Q extends(i = o.Component) {
       guestWindow: u,
       clientThemesClassName: h,
       contentClassName: p
-    } = this.props, f = (0, _.getPlatform)(), v = a && !o, y = i === H.$J ? L.Z : Z.Z;
+    } = this.props, f = (0, _.getPlatform)(), v = a && !o, y = i === H.$J ? L.Z : E.Z;
     return (0, r.jsx)(d.VK, {
-      children: (0, r.jsx)(A.w, {
+      children: (0, r.jsx)(I.w, {
         windowKey: i,
         children: (0, r.jsx)(O.Z, {
           children: (0, r.jsxs)(m.JcV, {
@@ -162,7 +162,7 @@ class Q extends(i = o.Component) {
                 children: [(0, r.jsx)(S.Co, {}), (0, r.jsx)(g.Wu, {
                   appContext: B.IlC.POPOUT,
                   renderWindow: u,
-                  children: (0, r.jsx)(E.m, {
+                  children: (0, r.jsx)(Z.m, {
                     children: (0, r.jsxs)(R.yP, {
                       children: [(0, r.jsxs)("div", {
                         className: J.popout,
@@ -192,13 +192,16 @@ class Q extends(i = o.Component) {
   constructor(...e) {
     super(...e), V(this, "rootRef", o.createRef()), V(this, "_cleanupWindowActionCreators", void 0), V(this, "_combokeys", null), V(this, "beforeUnload", e => {
       let t = () => {
-        q.Z.unmountWindow(this.props.windowKey), _.isPlatformEmbedded && U.ZP.close(this.props.windowKey)
+        q.Z.unmountWindow(this.props.windowKey), _.isPlatformEmbedded && F.ZP.close(this.props.windowKey)
       };
-      if (null == this.props.connectedEmbeddedActivity || W.ZP.disableEmbeddedActivityPopOutAlert) t();
+      if (null == this.props.connectedEmbeddedActivity || A.ZP.disableEmbeddedActivityPopOutAlert) t();
       else {
         if (!_.isPlatformEmbedded) return;
-        (0, x.R)() || this.props.windowKey === H.$J ? t() : (e.returnValue = G.intl.string(G.t["bST/Y2"]), (0, j.Z)(() => {
-          t()
+        (0, x.R)() || this.props.windowKey === H.$J ? t() : (e.returnValue = G.intl.string(G.t["bST/Y2"]), (0, j.Z)({
+          onConfirm: () => {
+            t()
+          },
+          usesPopoutContext: !0
         }))
       }
     }), V(this, "handleBlur", () => {
@@ -219,7 +222,7 @@ let X = o.forwardRef(function(e, t) {
       lang: c,
       style: a,
       className: d
-    } = (0, I.vP)();
+    } = (0, W.vP)();
     return o.useEffect(() => {
       let e = n.document.documentElement;
       u()(null != e, "Window document element was null"), e.setAttribute("style", a)
@@ -244,7 +247,7 @@ let X = o.forwardRef(function(e, t) {
       isFullScreen: q.Z.isWindowFullScreen(e.windowKey)
     }));
     u()(null != n, "Missing guestWindow reference");
-    let l = (0, D.Q3)("PopoutWindow"),
+    let l = (0, T.Q3)("PopoutWindow"),
       {
         forcedColors: s,
         connectedEmbeddedActivity: c
@@ -252,7 +255,7 @@ let X = o.forwardRef(function(e, t) {
         forcedColors: y.Z.useForcedColors ? "yes" : "no",
         connectedEmbeddedActivity: C.ZP.getCurrentEmbeddedActivity()
       }));
-    (0, T.Z)(n, !1);
+    (0, D.Z)(n, !1);
     let {
       analyticsLocations: a
     } = (0, P.ZP)(w.Z.POPOUT_WINDOW), {

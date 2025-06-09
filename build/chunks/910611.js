@@ -21,8 +21,8 @@ var r = n(255367),
   b = n(703656),
   _ = n(699516),
   y = n(914010),
-  x = n(594174),
-  C = n(768581),
+  C = n(594174),
+  x = n(768581),
   v = n(63063),
   j = n(946734),
   O = n(99843),
@@ -41,7 +41,7 @@ function A(e) {
     children: i
   } = e, l = (0, u.q)(null == (t = n.linkedLobby) ? void 0 : t.application_id), [a, o] = (0, f.US)([s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], void 0, !0);
   if (null == l) return null;
-  let d = C.ZP.getApplicationIconURL({
+  let d = x.ZP.getApplicationIconURL({
       id: l.id,
       icon: l.icon,
       size: 14
@@ -134,7 +134,7 @@ function w(e) {
     renderFollowButton: g
   } = e, b = (0, h.KS)(t, o), {
     prefix: y,
-    level: C
+    level: x
   } = function(e, t) {
     var n, r;
     switch (e) {
@@ -178,7 +178,7 @@ function w(e) {
   switch (t.type) {
     case S.d4z.DM:
       return (0, r.jsx)(P.Z, {
-        level: C,
+        level: x,
         channel: t,
         handleClick: u,
         handleContextMenu: d
@@ -200,14 +200,14 @@ function w(e) {
       return null != t.linkedLobby ? (0, r.jsxs)(A, {
         channel: t,
         children: [k(b, t.type === S.d4z.GUILD_ANNOUNCEMENT ? N.intl.string(N.t.l1dkSE) : N.intl.string(N.t.Pnajj4)), (0, r.jsx)(I.Z.Title, {
-          level: C,
+          level: x,
           onContextMenu: d,
           onClick: u,
           children: v
         })]
       }) : (0, r.jsxs)(i.Fragment, {
         children: [k(b, t.type === S.d4z.GUILD_ANNOUNCEMENT ? N.intl.string(N.t.l1dkSE) : N.intl.string(N.t.Pnajj4)), (0, r.jsx)(I.Z.Title, {
-          level: C,
+          level: x,
           onContextMenu: d,
           onClick: u,
           children: v
@@ -216,7 +216,7 @@ function w(e) {
     case S.d4z.GUILD_VOICE:
       return (0, r.jsxs)(i.Fragment, {
         children: [k(b, N.intl.string(N.t.BVZqJi)), (0, r.jsx)(I.Z.Title, {
-          level: C,
+          level: x,
           onContextMenu: d,
           onClick: u,
           children: v
@@ -225,7 +225,7 @@ function w(e) {
     case S.d4z.GUILD_STAGE_VOICE:
       return (0, r.jsxs)(i.Fragment, {
         children: [k(b, N.intl.string(N.t.EErMzM)), (0, r.jsx)(I.Z.Title, {
-          level: C,
+          level: x,
           onContextMenu: d,
           onClick: u,
           children: v
@@ -239,18 +239,18 @@ function w(e) {
         let e = (0, h.KS)(l, o);
         j = (0, r.jsxs)(i.Fragment, {
           children: [k(e, N.intl.string(N.t.Pnajj4)), (0, r.jsx)(I.Z.Title, {
-            level: C,
+            level: x,
             onContextMenu: m,
             onClick: f,
             className: a()(T.parentChannelName, T.cursorPointer),
-            children: (0, p.F6)(l, x.default, _.Z)
+            children: (0, p.F6)(l, C.default, _.Z)
           }), (0, r.jsx)(I.Z.Caret, {})]
         })
       }
       let E = (null == l ? void 0 : l.type) != null && S.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, r.jsxs)(i.Fragment, {
         children: [j, k(E ? null : b, N.intl.string(N.t["7Xm5QE"])), (0, r.jsx)(I.Z.Title, {
-          level: C,
+          level: x,
           onContextMenu: d,
           onClick: u,
           className: a()({
@@ -270,7 +270,7 @@ function w(e) {
           icon: b,
           "aria-hidden": !0
         }) : null, (0, r.jsxs)(I.Z.Title, {
-          level: C,
+          level: x,
           onContextMenu: d,
           onClick: u,
           children: [null != y ? (0, r.jsxs)(c.nn4, {
@@ -285,7 +285,7 @@ function w(e) {
 let R = e => {
   let {
     channel: t
-  } = e, n = (0, o.e7)([x.default], () => x.default.getCurrentUser()), i = (0, o.e7)([x.default], () => x.default.getUser(t.getRecipientId()));
+  } = e, n = (0, o.e7)([C.default], () => C.default.getCurrentUser()), i = (0, o.e7)([C.default], () => C.default.getUser(t.getRecipientId()));
   return t.isDM() && (null == n ? void 0 : n.isStaff()) && (null == i ? void 0 : i.isStaff()) ? (0, r.jsx)(d.Z, {
     type: d.Z.Types.STAFF_ONLY_DM
   }) : null

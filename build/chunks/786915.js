@@ -43,8 +43,8 @@ function y(e) {
     applicationId: t,
     stream: i,
     channel: y,
-    exitFullScreen: x,
-    appContext: C,
+    exitFullScreen: C,
+    appContext: x,
     analyticsLocation: v,
     guildScheduledEvent: j,
     shouldPrioritizeGroupPlusIcon: O = !1,
@@ -137,8 +137,8 @@ function y(e) {
           channel: y,
           streamUserId: null == i ? void 0 : i.ownerId,
           applicationId: t,
-          appContext: null != C ? C : A,
-          exitFullScreen: x,
+          appContext: null != x ? x : A,
+          exitFullScreen: C,
           analyticsLocation: v,
           guildScheduledEvent: j
         })
@@ -148,6 +148,7 @@ function y(e) {
     iconClassName: I,
     look: P,
     size: S,
+    color: N,
     buttonText: Z
   }, T)) : null
 }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => v
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -40,13 +40,14 @@ function E(e) {
   }
   return e
 }
-let b = !1;
-class y extends d.Z {
+let b = !1,
+  y = !1;
+class O extends d.Z {
   _initialize() {
-    super._initialize(), s.Z.addChangeListener(this.handlePopoutWindowUpdate)
+    super._initialize(), s.Z.addChangeListener(this.handlePopoutWindowUpdate), a.Z.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
   _terminate() {
-    super._terminate(), s.Z.removeChangeListener(this.handlePopoutWindowUpdate)
+    super._terminate(), s.Z.removeChangeListener(this.handlePopoutWindowUpdate), a.Z.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
   showErrorModal(e) {
     let {
@@ -102,10 +103,17 @@ class y extends d.Z {
         reason: t,
         application: n
       })
+    }), g(this, "handlePopoutWindowOpen", e => {
+      let {
+        key: t
+      } = e;
+      t === h.KJ3.ACTIVITY_POPOUT && (y = !1)
+    }), g(this, "popInActivity", () => {
+      y = !0, l.xv(h.KJ3.ACTIVITY_POPOUT)
     }), g(this, "handlePopoutWindowUpdate", () => {
       let e = b,
         t = s.Z.getWindowOpen(h.KJ3.ACTIVITY_POPOUT);
-      if (e && !t) {
+      if (e && !t && !y) {
         let e = f.ZP.getCurrentEmbeddedActivity();
         null != e && this.leaveActivity({
           location: e.location,
@@ -116,4 +124,4 @@ class y extends d.Z {
     })
   }
 }
-let O = new y
+let v = new O

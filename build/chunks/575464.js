@@ -25,8 +25,8 @@ function m(e) {
     comparator: b,
     selected: _,
     checked: y,
-    inlineUsername: x = !0,
-    onClick: C,
+    inlineUsername: C = !0,
+    onClick: x,
     onMouseEnter: v,
     "aria-setsize": j,
     "aria-posinset": O
@@ -52,7 +52,7 @@ function m(e) {
     id: "user-row-".concat(m),
     className: f.friendWrapper,
     onClick: () => {
-      null != C && C(i.id)
+      null != x && x(i.id)
     },
     onMouseEnter: () => {
       null != v && v(m)
@@ -66,7 +66,7 @@ function m(e) {
       align: d.Z.Align.CENTER,
       className: l()(f.friend, {
         [f.friendSelected]: _,
-        [f.twoRows]: !x
+        [f.twoRows]: !C
       }),
       children: [(0, r.jsx)(u.Z, {
         user: i,
@@ -75,7 +75,7 @@ function m(e) {
       }), (0, r.jsxs)(d.Z, {
         className: f.match,
         align: d.Z.Align.BASELINE,
-        direction: x ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
+        direction: C ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
         children: [(0, r.jsx)(s.Text, {
           tag: "strong",
           className: f.nickname,
