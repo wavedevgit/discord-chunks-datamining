@@ -69,15 +69,15 @@ function S(e) {
     recentlyLeveledTenureBadge: n,
     markAsDismissed: s,
     closePopout: l
-  } = e, o = (0, f.J)(n, {
+  } = e, o = b.Qh.indexOf(n), d = (0, f.J)(b.Qh[o > 0 ? o - 1 : o], {
     ambient: !0
-  }), d = (0, r.useCallback)(() => {
+  }), u = (0, r.useCallback)(() => {
     s(x.L.TAKE_ACTION), l(), c.Z.setState({
       shouldRenderTenureLevelUp: !0
     }), m.S.dispatch(_.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
-  }, [s, l]), u = (0, r.useCallback)(() => {
+  }, [s, l]), p = (0, r.useCallback)(() => {
     s(x.L.USER_DISMISS), l()
-  }, [s, l]), p = b.vK[n];
+  }, [s, l]), h = b.vK[n];
   return (0, i.jsxs)("div", {
     className: j.contents,
     children: [(0, i.jsx)(a.M0o, {
@@ -89,10 +89,10 @@ function S(e) {
         size: "xs",
         color: "currentColor"
       }),
-      onClick: u
-    }), null != o && (0, i.jsx)("img", {
-      src: o,
-      alt: C.intl.string(p.nameUnformatted),
+      onClick: p
+    }), null != d && (0, i.jsx)("img", {
+      src: d,
+      alt: C.intl.string(h.nameUnformatted),
       className: j.badgeImage
     }), (0, i.jsx)(a.X6q, {
       variant: "heading-md/extrabold",
@@ -101,13 +101,13 @@ function S(e) {
       variant: "text-sm/medium",
       className: j.subtitle,
       children: C.intl.formatToPlainString(C.t.ewkaVV, {
-        timeMilestone: null == (t = (0, g.q)(p.id, p.tenureReqNumMonths)) ? void 0 : t.toLocaleLowerCase()
+        timeMilestone: null == (t = (0, g.q)(h.id, h.tenureReqNumMonths)) ? void 0 : t.toLocaleLowerCase()
       })
     }), (0, i.jsx)(a.zxk, {
       className: j.checkItOutButton,
       color: a.Ttl.WHITE,
       size: a.PhG.SMALL,
-      onClick: d,
+      onClick: u,
       children: C.intl.string(C.t.RzWDqa)
     }), (0, i.jsx)("div", {
       className: j.pointer

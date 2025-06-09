@@ -31,11 +31,11 @@ function g(e) {
       shouldRenderTenureLevelUp: !1
     })
   }, []);
-  return r.useEffect(() => a, [a]), (0, i.jsxs)("div", {
-    className: d.wrapper,
-    children: [(0, i.jsx)(s.EqS, {
-      containerRef: n,
-      children: (0, i.jsx)(s.M0o, {
+  return r.useEffect(() => a, [a]), (0, i.jsx)(s.EqS, {
+    containerRef: n,
+    children: (0, i.jsxs)("div", {
+      className: d.wrapper,
+      children: [(0, i.jsx)(s.M0o, {
         className: d.closeButton,
         tooltip: c.intl.string(c.t.cpT0Cg),
         color: s.YX$.SECONDARY,
@@ -45,12 +45,12 @@ function g(e) {
           color: "currentColor"
         }),
         onClick: a
-      })
-    }), (0, i.jsx)(r.Suspense, {
-      fallback: null,
-      children: (0, i.jsx)(u, {
-        levelUpData: t
-      })
-    })]
+      }), (0, i.jsx)(r.Suspense, {
+        fallback: null,
+        children: (0, i.jsx)(u, {
+          levelUpData: t
+        })
+      })]
+    })
   })
 }
