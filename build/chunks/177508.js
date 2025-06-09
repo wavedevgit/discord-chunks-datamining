@@ -71,7 +71,7 @@ function y() {
       text: "Testing",
       iconPosition: "end",
       icon: p.XHJ
-    }), (0, i.jsx)(B, {}), (0, i.jsx)(z, {}), (0, i.jsx)(Y, {}), (0, i.jsx)(F, {}), (0, i.jsx)(G, {}), (0, i.jsx)(V, {}), (0, i.jsx)(U, {}), (0, i.jsx)(q, {}), (0, i.jsx)(A, {}), (0, i.jsx)(X, {})]
+    }), (0, i.jsx)(B, {}), (0, i.jsx)(z, {}), (0, i.jsx)(Y, {}), (0, i.jsx)(F, {}), (0, i.jsx)(G, {}), (0, i.jsx)(V, {}), (0, i.jsx)(U, {}), (0, i.jsx)(X, {}), (0, i.jsx)(A, {}), (0, i.jsx)(Q, {})]
   })
 }
 
@@ -893,27 +893,182 @@ function K(e) {
     transitionState: t,
     onClose: n
   } = e;
+
+  function r(e) {
+    let {
+      children: t
+    } = e;
+    return (0, i.jsx)("div", {
+      className: O.modalOutlines,
+      style: {
+        padding: "16px"
+      },
+      children: t
+    })
+  }
   return (0, i.jsxs)(d.IX, {
     transitionState: t,
     onClose: n,
+    children: [(0, i.jsx)("div", {
+      className: O.modalOutlines,
+      children: (0, i.jsx)(g.x, {
+        title: "Demo Modal",
+        body: "The ModalHeader can have leading and trailing items on either side of the text",
+        leading: (0, i.jsx)(r, {}),
+        trailing: (0, i.jsx)(r, {})
+      })
+    }), (0, i.jsx)("div", {
+      className: O.modalOutlines,
+      children: (0, i.jsx)(m.h, {
+        controls: (0, i.jsx)(r, {
+          children: "This ModalContent renders any controls here"
+        }),
+        children: (0, i.jsx)(r, {
+          children: "This is the main ModalContent. This area scrolls if there is enough content"
+        })
+      })
+    }), (0, i.jsx)("div", {
+      className: O.modalOutlines,
+      children: (0, i.jsx)(m.m, {
+        children: (0, i.jsx)(r, {
+          children: "This is the ModalFooter"
+        })
+      })
+    }), (0, i.jsx)("div", {
+      className: O.modalOutlines,
+      children: (0, i.jsx)(u.G, {
+        leading: (0, i.jsx)(r, {
+          children: "ModalActionBar leading"
+        }),
+        actions: [{
+          variant: "secondary",
+          text: "Cancel",
+          onClick: n
+        }, {
+          variant: "primary",
+          text: "Submit",
+          onClick: n
+        }]
+      })
+    })]
+  })
+}
+
+function q(e) {
+  let {
+    transitionState: t,
+    onClose: n
+  } = e, [s, l] = r.useState("md"), [a, o] = r.useState("Demo Modal"), [c, h] = r.useState("Header body copy"), [f, b] = r.useState(!1), [_, x] = r.useState(!1), [E, C] = r.useState(!1), [j, O] = r.useState(!1), [S, v] = r.useState(!1);
+  return (0, i.jsxs)(d.IX, {
+    transitionState: t,
+    onClose: n,
+    size: s,
     children: [(0, i.jsx)(g.x, {
-      title: "Modal",
-      body: "This is some body text"
+      title: a,
+      body: c,
+      alignCenter: f
     }), (0, i.jsx)(m.h, {
-      controls: (0, i.jsx)(p.Text, {
-        variant: "text-md/medium",
-        children: "This is the controls in the ModalContent. Any content can go here."
-      }),
-      children: (0, i.jsx)(p.Text, {
-        variant: "text-md/medium",
-        children: "This is the ModalContent. Any content can go here."
+      controls: _ ? (0, i.jsx)(p.E1j, {
+        size: p.E1j.Sizes.MEDIUM,
+        placeholder: "Search",
+        onChange: () => null,
+        query: ""
+      }) : void 0,
+      children: (0, i.jsxs)(p.Kqy, {
+        gap: 16,
+        children: [(0, i.jsx)(p.xJW, {
+          title: "Modal Size",
+          children: (0, i.jsx)(p.q4e, {
+            value: s,
+            onChange: l,
+            options: [{
+              label: "Small",
+              value: "sm"
+            }, {
+              label: "Medium",
+              value: "md"
+            }, {
+              label: "Large",
+              value: "lg"
+            }, {
+              label: "XLarge",
+              value: "xl"
+            }]
+          })
+        }), (0, i.jsx)(p.xJW, {
+          title: "Header Title",
+          children: (0, i.jsx)(p.oil, {
+            onChange: o,
+            defaultValue: a
+          })
+        }), (0, i.jsx)(p.xJW, {
+          title: "Header body",
+          children: (0, i.jsx)(p.oil, {
+            onChange: h,
+            defaultValue: c
+          })
+        }), (0, i.jsx)(p.xJW, {
+          title: "Optional Content",
+          children: (0, i.jsxs)(p.Kqy, {
+            gap: 12,
+            children: [(0, i.jsx)(p.XZJ, {
+              value: f,
+              onChange: (e, t) => b(t),
+              children: (0, i.jsx)(p.Text, {
+                variant: "text-md/medium",
+                children: "Header Align Center"
+              })
+            }), (0, i.jsx)(p.XZJ, {
+              value: _,
+              onChange: (e, t) => x(t),
+              children: (0, i.jsx)(p.Text, {
+                variant: "text-md/medium",
+                children: "Show Search Input"
+              })
+            }), (0, i.jsx)(p.XZJ, {
+              value: E,
+              onChange: (e, t) => C(t),
+              children: (0, i.jsx)(p.Text, {
+                variant: "text-md/medium",
+                children: "Show Preview Content"
+              })
+            }), (0, i.jsx)(p.XZJ, {
+              value: j,
+              onChange: (e, t) => O(t),
+              children: (0, i.jsx)(p.Text, {
+                variant: "text-md/medium",
+                children: "Show Action Bar Leading Input"
+              })
+            }), (0, i.jsx)(p.XZJ, {
+              value: S,
+              onChange: (e, t) => v(t),
+              children: (0, i.jsx)(p.Text, {
+                variant: "text-md/medium",
+                children: "Full Width Actions"
+              })
+            })]
+          })
+        })]
       })
-    }), (0, i.jsx)(m.m, {
-      children: (0, i.jsx)(p.Text, {
-        variant: "text-md/medium",
-        children: "This is the ModalFooter. Any content can go here."
-      })
+    }), E && (0, i.jsxs)(m.m, {
+      children: [(0, i.jsx)(p.X6q, {
+        variant: "heading-lg/semibold",
+        children: "Celebration Station"
+      }), (0, i.jsx)(p.Text, {
+        variant: "text-sm/normal",
+        color: "text-secondary",
+        children: "32 Members ● 19 Online"
+      })]
     }), (0, i.jsx)(u.G, {
+      leading: j ? (0, i.jsx)(p.XZJ, {
+        value: !1,
+        onChange: () => {},
+        children: (0, i.jsx)(p.Text, {
+          variant: "text-sm/normal",
+          children: "Don't show this again?"
+        })
+      }) : void 0,
+      actionsFullWidth: S,
       actions: [{
         variant: "secondary",
         text: "Cancel",
@@ -927,7 +1082,7 @@ function K(e) {
   })
 }
 
-function q() {
+function X() {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: O.section,
@@ -959,13 +1114,18 @@ function q() {
         onClick: () => {
           (0, p.h7j)(e => (0, i.jsx)(K, S({}, e)))
         },
-        children: "Open modal"
+        children: "Open modal section visualizer"
+      }), (0, i.jsx)(p.zxk, {
+        onClick: () => {
+          (0, p.h7j)(e => (0, i.jsx)(q, S({}, e)))
+        },
+        children: "Open demo modal"
       })]
     })]
   })
 }
 
-function X() {
+function Q() {
   let e = (0, o.e7)([f.Z], () => f.Z.gradientPreset);
   return (0, i.jsx)(p.f6W, {
     theme: j.BR.DARKER,

@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: a05a25e4f7b84e3b
+  Original File Name: c8be36db5c127612
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -15052,7 +15052,10 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
 }
 
 .modalOutlines__6fdb8 {
-    outline: 1px dashed var(--border-strong)
+    background-color: var(--info-warning-background);
+    box-sizing: border-box;
+    color: var(--info-warning-text);
+    outline: 1px dashed var(--status-warning)
 }
 
 .datePicker__89fe9 {
@@ -19401,4 +19404,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=a05a25e4f7b84e3b.css.map*/
+/*# sourceMappingURL=c8be36db5c127612.css.map*/
