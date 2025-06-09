@@ -1,0 +1,2 @@
+/** Chunk was on 37628 **/
+e.exports = JSON.parse('{"+tTysr":"Renk ekle","8ZcEfn":"Renkler","xlXkaG":"Renk Yoğunluğu","dZkwg4":"Gradyan Y\xf6n\xfc","AsmU8/":"Temanı \xf6zelleştir","xRdYAQ":"\xd6zel temalar [Beta], mobilde mevcut değil.","2hAz8f":"Temanı \xf6zelleştir","23QUzs":"Yeni! \xd6zel Temalar","TRCE4u":"Ruh h\xe2line uygun sonsuz renk kombinasyonları seni bekliyor. Nitro ile şimdi dene."}')

@@ -8,5 +8,6 @@ e.exports = {
   messagesGroupHeaderWrap: "messagesGroupHeaderWrap__0aee3",
   messagesGroupHeader: "messagesGroupHeader__0aee3",
   chevron: "chevron__0aee3",
-  collapsed: "collapsed__0aee3"
+  collapsed: "collapsed__0aee3",
+  emptyStateContainer: "emptyStateContainer__0aee3"
 }

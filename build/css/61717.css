@@ -1,6 +1,6 @@
 /**
   Module ID: 61717
-  Original File Name: 9482ec6b6fa67919
+  Original File Name: 62e29511ae2f153c
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1768,17 +1768,11 @@
     transform: rotate(var(--custom-icon-collapse-rotate))
 }
 
-.unreadsEmpty__0aee3 {
+.emptyStateContainer__0aee3 {
     align-items: center;
     display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center
-}
-
-.unreadsEmptyIcon__0aee3 {
-    color: var(--text-muted)
+    height: 100%;
+    width: 100%
 }
 
 .container_ea5470 {
@@ -6400,4 +6394,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=9482ec6b6fa67919.css.map*/
+/*# sourceMappingURL=62e29511ae2f153c.css.map*/

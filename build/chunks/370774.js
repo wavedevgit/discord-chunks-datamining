@@ -48,6 +48,8 @@ function c() {
   return t.startsWith(p.Z5c.NOTIFICATIONS_INBOX())
 }
 
-function I() {
-  d.Z.open(p.oAB.NOTIFICATIONS, void 0)
+function I(t) {
+  d.Z.open(p.oAB.NOTIFICATIONS, void 0, {
+    analyticsLocations: t
+  })
 }

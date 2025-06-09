@@ -167,8 +167,8 @@ function ef(e) {
     [e$, e1] = i.useState(eg),
     [e0, e2] = i.useState(e_),
     [e5, e3] = i.useState(ev),
-    [e7, e8] = i.useState(null != (o = P.I0.getSetting()) && o),
-    [e4, e6] = i.useState(null != ef ? ef : null),
+    [e4, e7] = i.useState(null != (o = P.I0.getSetting()) && o),
+    [e8, e6] = i.useState(null != ef ? ef : null),
     e9 = null != (d = null == eb ? void 0 : eb.id) ? d : eH,
     [te, tt] = i.useState(eM ? "" : void 0),
     tn = (0, I.Q3)("GoLiveModal");
@@ -200,7 +200,7 @@ function ef(e) {
     }(0, g.WH)(i, n, ed(ec({}, c), {
       audioSourceId: eX,
       sound: e5,
-      previewDisabled: e7,
+      previewDisabled: e4,
       nativePickerStyleUsed: te,
       goLiveModalDurationMs: Date.now() - eS.current
     })), null != eD && eB(ei.L.AUTO_DISMISS), eA || (async () => {
@@ -364,7 +364,7 @@ function ef(e) {
             selectedSource: eY,
             selectedFPS: e0,
             sound: e5,
-            previewDisabled: e7,
+            previewDisabled: e4,
             sourceChanged: ez,
             selectSource: ee,
             onChangeSelectedFPS: e => tl(eq, e$, e),
@@ -376,9 +376,9 @@ function ef(e) {
             onChangeAudioDevice: e => eK(e),
             onChangeGuild: () => eW(0),
             onChangeSound: e => e3(e),
-            onChangePreviewDisabled: e => e8(e),
+            onChangePreviewDisabled: e => e7(e),
             onClose: eh,
-            selectedGuildId: e4,
+            selectedGuildId: e8,
             targetGuildPremiumTier: eE,
             selectGuild: F
           })
