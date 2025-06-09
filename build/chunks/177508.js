@@ -889,10 +889,12 @@ function Y(e) {
 
 function W(e) {
   let {
-    onClose: t
+    transitionState: t,
+    onClose: n
   } = e;
-  return (0, i.jsxs)(d.I, {
-    onClose: t,
+  return (0, i.jsxs)(d.IX, {
+    transitionState: t,
+    onClose: n,
     children: [(0, i.jsx)(m.O, {
       title: "Modal",
       body: "This is some body text"
@@ -900,11 +902,11 @@ function W(e) {
       actions: [{
         variant: "secondary",
         text: "Cancel",
-        onClick: t
+        onClick: n
       }, {
         variant: "primary",
         text: "Submit",
-        onClick: t
+        onClick: n
       }]
     })]
   })

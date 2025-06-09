@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  O: () => p,
-  Z: () => m
+  O: () => h,
+  Z: () => g
 });
 var r = n(255367),
   i = n(73800),
@@ -12,9 +12,10 @@ var r = n(255367),
   l = n(558452),
   c = n(770278),
   u = n(724723),
-  d = n(574697);
+  d = n(257465),
+  f = n(574697);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,24 +24,24 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e) {
+function h(e) {
   return e !== c.f.TOP_RADIAL && e !== c.f.SUBTLE && e !== c.f.BLUR
 }
 
-function h(e) {
+function m(e) {
   let {
     variant: t = "default",
     animationVariant: n = "default",
@@ -52,7 +53,7 @@ function h(e) {
   return (0, l.Y)(a, {
     keys: e => e ? "scrim" : "empty",
     config: {
-      duration: 250
+      duration: d.aU
     },
     from: {
       opacity: 0
@@ -65,16 +66,16 @@ function h(e) {
     }
   }, "instant" === n ? "animate-never" : "animate-always")((e, n) => n ? (0, r.jsx)(s.animated.div, {
     role: "none",
-    className: o()(d.scrim, {
-      [d.lightbox]: "lightbox" === t,
-      [d.pointerEventsNone]: u
+    className: o()(f.scrim, {
+      [f.lightbox]: "lightbox" === t,
+      [f.pointerEventsNone]: u
     }),
     style: e,
     onClick: c ? void 0 : i
   }) : null)
 }
-let m = i.forwardRef(function(e) {
-  return (0, u.q)("Scrim") ? (0, r.jsx)(h, _({}, e)) : (0, r.jsx)(c.Z, {
+let g = i.forwardRef(function(e) {
+  return (0, u.q)("Scrim") ? (0, r.jsx)(m, p({}, e)) : (0, r.jsx)(c.Z, {
     backdropStyle: "lightbox" === e.variant ? c.f.LIGHTBOX : c.f.DARK,
     onClose: e.onClick,
     isVisible: e.isVisible,

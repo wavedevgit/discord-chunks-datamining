@@ -1,38 +1,70 @@
-/** Chunk was on 22472 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  I: () => u
+  IX: () => g,
+  aU: () => m
 });
-var i = n(255367),
-  r = n(73800),
-  s = n(120356),
-  l = n.n(s),
-  a = n(793030),
-  o = n(507274),
-  c = n(667137),
-  d = n(946598);
+var r = n(255367),
+  i = n(73800),
+  a = n(120356),
+  o = n.n(a),
+  s = n(386230),
+  l = n(990547),
+  c = n(748780),
+  u = n(793030),
+  d = n(143450),
+  f = n(186325),
+  _ = n(507274),
+  p = n(667137),
+  h = n(946598);
+let m = 200;
 
-function u(e) {
+function g(e) {
   let {
-    size: t = "md",
-    onClose: n,
-    contentOutsideContainer: s,
-    children: u
-  } = e, m = r.useId(), g = r.useMemo(() => ({
-    id: m,
-    headingId: "heading-".concat(m),
-    onClose: n
-  }), [m, n]);
-  return (0, i.jsx)(o.V, {
-    "aria-describedby": g.headingId,
-    children: (0, i.jsx)(a.y5, {
-      forceLevel: 1,
-      children: (0, i.jsx)(c.t.Provider, {
-        value: g,
-        children: (0, i.jsxs)("div", {
-          className: d.outerContainer,
-          children: [s, (0, i.jsx)("div", {
-            className: l()(d.container, d["size-".concat(t)]),
-            children: u
+    transitionState: t,
+    animationVariant: n = "default",
+    size: a = "md",
+    fullScreenOnMobile: g = !0,
+    returnRef: E,
+    role: b = "dialog",
+    "aria-label": y,
+    onClose: O,
+    contentOutsideContainer: v,
+    children: I
+  } = e, S = i.useId(), T = i.useMemo(() => ({
+    id: S,
+    headingId: "heading-".concat(S),
+    onClose: O
+  }), [S, O]), A = 0 === t || 1 === t, {
+    reducedMotion: N
+  } = i.useContext(f.S), C = (0, d.q)({
+    opacity: +!!A,
+    transform: A || N.enabled || "subtle" === n ? "scale(1)" : "scale(0.7)",
+    config: {
+      duration: m,
+      easing: c.Z.Easing.out(c.Z.Easing.quad),
+      clamp: !0
+    }
+  }, "animate-always");
+  return (0, r.jsx)(p.t.Provider, {
+    value: T,
+    children: (0, r.jsx)(_.V, {
+      id: S,
+      role: b,
+      "aria-label": y,
+      "aria-labelledby": null != y ? void 0 : T.headingId,
+      returnRef: E,
+      impressionType: l.ImpressionTypes.MODAL,
+      children: (0, r.jsx)(u.y5, {
+        forceLevel: 1,
+        children: (0, r.jsxs)("div", {
+          className: o()(h.outerContainer, {
+            [h.fullScreenOnMobile]: g
+          }),
+          children: [v, (0, r.jsx)(s.animated.div, {
+            className: o()(h.container, h["size-".concat(a)]),
+            style: C,
+            children: I
           })]
         })
       })
