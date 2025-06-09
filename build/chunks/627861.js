@@ -413,7 +413,7 @@ function ec(e) {
     },
     disabledReason: P.author.id === I ? Q.intl.string(Q.t.IBl8IC) : void 0
   } : eb ? {
-    label: Q.intl.string(Q.t.VJlc0d),
+    label: Q.intl.string(Q.t.KC26NT),
     trackingArea: g.j_.PLAY,
     onClick: () => {},
     disabledReason: Q.intl.string(Q.t.KC26NT)
