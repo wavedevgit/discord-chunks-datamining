@@ -202,12 +202,14 @@ let N = r.forwardRef((e, t) => {
     backgroundImage: O,
     pillText: v,
     perkImage: T,
-    imageOverlayText: I
-  } = e, N = C === _.gM.CARD_CAROUSEL_FIRST_ROW || C === _.gM.CARD_CAROUSEL_SECOND_ROW || C === _.gM.CARD_CAROUSEL_THIRD_ROW, y = "" !== o || "" !== c || "" !== a && b === _.zW.REWARD, A = (0, h._)(b);
+    imageOverlayText: I,
+    hasNitroGradientBackground: N
+  } = e, y = C === _.gM.CARD_CAROUSEL_FIRST_ROW || C === _.gM.CARD_CAROUSEL_SECOND_ROW || C === _.gM.CARD_CAROUSEL_THIRD_ROW, A = "" !== o || "" !== c || "" !== a && b === _.zW.REWARD, P = (0, h._)(b);
   return (0, i.jsxs)(d.P3F, {
-    className: l()(S.card, p, null == (n = A.cardContainer) ? void 0 : n.className, {
+    className: l()(S.card, p, null == (n = P.cardContainer) ? void 0 : n.className, {
       [S.clickable]: null != j,
-      [S.hideOverflow]: N
+      [S.hideOverflow]: y,
+      [S.nitroGradientBackground]: N
     }),
     onMouseEnter: g,
     style: {
@@ -225,14 +227,14 @@ let N = r.forwardRef((e, t) => {
       titleClassName: s,
       subtitle: a,
       perkImage: T,
-      isCarousel: N,
+      isCarousel: y,
       descriptionCta: c,
       onCtaClick: m,
       perkComponent: f,
       subtitleClassName: S.cardSubtitle,
       cardVariant: b,
       imageOverlayText: I
-    }), y && (0, i.jsx)(E.Z, {
+    }), A && (0, i.jsx)(E.Z, {
       title: r,
       titleClassName: s,
       subtitle: a,

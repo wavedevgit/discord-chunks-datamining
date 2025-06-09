@@ -1529,7 +1529,8 @@ let e7 = 128,
     GUILD_ONBOARDING_EXAMPLES: "https://support.discord.com/hc/en-us/articles/10394859532823",
     ROLE_SUBSCRIPTION_STORE_PAGE: e => "https:".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/servers/").concat(e),
     INVITES_HELP: "https://support.discord.com/hc/en-us/articles/208866998-Invites-101",
-    SAFETY_CENTER: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/safetycenter")
+    SAFETY_CENTER: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/safetycenter"),
+    VOICE_FILTERS_BLOG: "https://discord.com/blog/voice-filters"
   }),
   tv = Object.freeze({
     DEVELOPER_PORTAL: "/developers",
