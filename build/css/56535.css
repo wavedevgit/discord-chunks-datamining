@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: 4af0c5a842162867
+  Original File Name: 8907c2d79e98ee01
 **/
 .errorBanner__3405b {
     color: var(--status-danger-text)
@@ -998,7 +998,7 @@ footer {
 }
 
 .heading__4d307 {
-    font-size: 16px;
+    font-size: 1rem;
     grid-area: heading;
     padding: var(--space-xs);
     text-align: center
@@ -1006,7 +1006,7 @@ footer {
 
 @media (min-width:485px) and (min-height:550px) {
     .heading__4d307 {
-        font-size: 20px;
+        font-size: 1.25rem;
         padding: var(--space-lg)
     }
 }
@@ -1317,4 +1317,4 @@ footer {
     top: var(--space-md)
 }
 
-/*# sourceMappingURL=4af0c5a842162867.css.map*/
+/*# sourceMappingURL=8907c2d79e98ee01.css.map*/
