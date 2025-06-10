@@ -272,6 +272,7 @@ let K = Object.freeze({
       };
     return (0, r.jsxs)(r.Fragment, {
       children: [S && (0, r.jsx)(R.Z, {
+        isDisabled: t,
         onSelect: () => {
           (0, m.XO)(m.wh.CUSTOM_THEME, {
             from: "SETTINGS" === a ? m.tE.SETTING : m.tE.CLIENT_THEMES_EDITOR

@@ -84,8 +84,9 @@ function v(e) {
     tabIndex: l,
     children: c,
     showBadge: d,
-    showLockedBadge: f
-  } = e, _ = (0, u.xUy)({
+    showLockedBadge: f,
+    showSelectionCircle: _ = !1
+  } = e, h = (0, u.xUy)({
     label: t,
     isSelected: s
   });
@@ -93,15 +94,15 @@ function v(e) {
     text: t,
     children: e => (0, r.jsxs)("div", {
       className: m.themeSelectionContainer,
-      children: [(0, r.jsx)(u.P3F, y(E({}, e, _), {
-        tabIndex: null != l ? l : _.tabIndex,
+      children: [(0, r.jsx)(u.P3F, y(E({}, e, h), {
+        tabIndex: null != l ? l : h.tabIndex,
         className: a()(m.themeSelection, {
           [m.selected]: s
         }, n),
         style: i,
         onClick: s ? p.dG4 : o,
         children: c
-      })), s && (0, r.jsx)(O, {}), !s && d && (0, r.jsx)("div", {
+      })), (s || _) && (0, r.jsx)(O, {}), !s && d && (0, r.jsx)("div", {
         className: m.redCircle
       }), f && (0, r.jsx)("div", {
         className: m.lockedBadgeContainer,
