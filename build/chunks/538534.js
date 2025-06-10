@@ -3,8 +3,8 @@
 n.d(t, {
   Ee: () => w,
   Fj: () => A,
-  ar: () => P,
-  xU: () => R
+  ar: () => R,
+  xU: () => P
 }), n(388685);
 var r, i = n(255367),
   a = n(73800),
@@ -279,7 +279,7 @@ class C extends(r = a.PureComponent) {
   }
 }
 
-function P() {
+function R() {
   let {
     orientation: e = "vertical",
     isDisabled: t = !1,
@@ -324,7 +324,7 @@ function P() {
   }
 }
 
-function R(e) {
+function P(e) {
   let {
     isSelected: t,
     label: n
@@ -353,7 +353,7 @@ function w(e) {
     "aria-labelledby": p,
     orientation: h,
     withTransparentBackground: m
-  } = e, E = (0, d.Gc)(), b = P({
+  } = e, E = (0, d.Gc)(), b = R({
     labelledBy: null != p ? p : E.titleId,
     orientation: h,
     isDisabled: f

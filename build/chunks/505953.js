@@ -71,7 +71,7 @@ function N(e) {
     guildId: I,
     unread: T,
     onClick: N
-  } = e, [C, P] = i.useState(!1), R = (0, u.Ye)(h.default.extractTimestamp(t.startId)), w = (0, a.e7)([m.Z], () => m.Z.summaryFeedback(t)), D = (e, n) => {
+  } = e, [C, R] = i.useState(!1), P = (0, u.Ye)(h.default.extractTimestamp(t.startId)), w = (0, a.e7)([m.Z], () => m.Z.summaryFeedback(t)), D = (e, n) => {
     e.stopPropagation(), (0, g.Z)({
       summary: t,
       channel: f,
@@ -91,8 +91,8 @@ function N(e) {
     className: v.container,
     onClick: N,
     onContextMenu: x,
-    onMouseEnter: () => P(!0),
-    onMouseLeave: () => P(!1),
+    onMouseEnter: () => R(!0),
+    onMouseLeave: () => R(!1),
     children: [(0, r.jsx)(c.Z, {
       hovered: C,
       unread: T,
@@ -105,7 +105,7 @@ function N(e) {
           className: v.timestamp,
           color: "interactive-normal",
           variant: "text-xs/normal",
-          children: R
+          children: P
         }), (0, r.jsx)(l.Z, {
           height: 4,
           width: 4,

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => D,
-  n: () => P
+  n: () => R
 }), n(35282);
 var r = n(255367),
   i = n(73800),
@@ -30,8 +30,8 @@ var r = n(255367),
   A = n(544348);
 let N = 90,
   C = 28,
-  P = (0, E.IC)(N),
-  R = e => {
+  R = (0, E.IC)(N),
+  P = e => {
     let {
       category: t
     } = e, {
@@ -111,7 +111,7 @@ function D(e) {
     }), (null == _ ? void 0 : _.addLogo) ? (0, r.jsx)("img", {
       className: A.categoryLogo,
       src: (0, E.uV)(t.logo, {
-        size: P
+        size: R
       }),
       alt: t.name,
       style: {
@@ -127,7 +127,7 @@ function D(e) {
         color: t.bannerTextColor
       } : void 0,
       variant: "text-md/normal",
-      children: t.skuId === s.T.DISXCORE ? (0, r.jsx)(R, {
+      children: t.skuId === s.T.DISXCORE ? (0, r.jsx)(P, {
         category: t
       }) : t.summary
     }), !i && (0, r.jsx)(O.Z, {

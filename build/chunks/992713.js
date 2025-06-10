@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 }), n(388685), n(642613);
 var r = n(108131),
   i = n.n(r),
@@ -46,7 +46,7 @@ function y(e) {
   var t;
   let n = null == (t = _.Z.getGuild(e.guild_id)) ? void 0 : t.name;
   E.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), a.ZP.Emitter.batched(() => {
-    null != e.channels && A(e.guild_id, new Set(e.channels)), null != e.roles && N(e.guild_id, new Set(e.roles)), null != e.emojis && C(e.guild_id, new Set(e.emojis)), null != e.stickers && P(e.guild_id, new Set(e.stickers))
+    null != e.channels && A(e.guild_id, new Set(e.channels)), null != e.roles && N(e.guild_id, new Set(e.roles)), null != e.emojis && C(e.guild_id, new Set(e.emojis)), null != e.stickers && R(e.guild_id, new Set(e.stickers))
   })
 }
 
@@ -119,7 +119,7 @@ function C(e, t) {
   })
 }
 
-function P(e, t) {
+function R(e, t) {
   var n;
   let r = null != (n = d.Z.getStickersByGuildId(e)) ? n : [],
     i = r.filter(e => t.has(e.id));
@@ -129,4 +129,4 @@ function P(e, t) {
     stickers: i
   })
 }
-let R = new b
+let P = new b

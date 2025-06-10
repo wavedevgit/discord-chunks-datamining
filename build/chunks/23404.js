@@ -115,12 +115,12 @@ function w(e) {
   }, [E.id, O]), H = (0, C.hf)({
     quest: E,
     location: f.jn.ACTIVITY_PANEL
-  }), F = (0, p.tP)(E), z = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, W = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, Y = (null == (l = E.userStatus) ? void 0 : l.claimedAt) != null, K = (null == E ? void 0 : E.userStatus) != null && (0, g.zE)(E.userStatus, f.jn.ACTIVITY_PANEL), q = (0, p.Rf)(E), X = (0, b.DD)({
+  }), F = (0, p.tP)(E), z = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, W = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, Y = (null == (l = E.userStatus) ? void 0 : l.claimedAt) != null, K = (null == E ? void 0 : E.userStatus) != null && (0, g.zE)(E.userStatus, f.jn.ACTIVITY_PANEL), q = (0, p.Rf)(E), Q = (0, b.DD)({
     quest: E,
     taskDetails: q,
     location: T.dr.ACTIVITY_PANEL,
     questContent: f.jn.ACTIVITY_PANEL
-  }), Q = (0, m.j)({
+  }), X = (0, m.j)({
     location: T.dr.QUESTS_BAR_MOBILE
   });
   return K || F || Y || w ? null : (0, r.jsxs)("div", {
@@ -174,8 +174,8 @@ function w(e) {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-normal",
-          children: X
-        }), Q && (0, r.jsx)(I.Z, {
+          children: Q
+        }), X && (0, r.jsx)(I.Z, {
           quest: E,
           textColor: "text-muted",
           withRewardName: !0

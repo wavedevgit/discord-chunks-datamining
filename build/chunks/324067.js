@@ -125,17 +125,17 @@ function C(e) {
   h[t] = void 0, t === p && y(t)
 }
 
-function P(e, t) {
+function R(e, t) {
   if (m = t, null == e || null == e.getGuildId()) return !1;
   let n = e.getGuildId();
   return null != n && (h[n] = void 0, n === p && y(n), !0)
 }
 
-function R(e) {
+function P(e) {
   let {
     channelId: t
   } = e;
-  return null == t && null != m ? P(c.Z.getChannel(m), null) : P(c.Z.getChannel(t), t)
+  return null == t && null != m ? R(c.Z.getChannel(m), null) : R(c.Z.getChannel(t), t)
 }
 
 function w(e) {
@@ -147,7 +147,7 @@ function w(e) {
       channelId: n,
       sessionId: r
     } = t;
-    return l.default.getSessionId() !== r ? e : P(c.Z.getChannel(n), n) || e
+    return l.default.getSessionId() !== r ? e : R(c.Z.getChannel(n), n) || e
   }, !1)
 }
 
@@ -194,6 +194,6 @@ let M = new k(a.Z, {
   GUILD_ROLE_DELETE: C,
   IMPERSONATE_UPDATE: C,
   IMPERSONATE_STOP: C,
-  VOICE_CHANNEL_SELECT: R,
+  VOICE_CHANNEL_SELECT: P,
   VOICE_STATE_UPDATES: w
 })

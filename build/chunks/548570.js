@@ -29,8 +29,8 @@ var r = n(512722),
   A = n(960048),
   N = n(138859),
   C = n(14639),
-  P = n(639655),
-  R = n(610308),
+  R = n(639655),
+  P = n(610308),
   w = n(91247),
   D = n(508569),
   L = n(183139),
@@ -78,7 +78,7 @@ function F(e, t) {
   }), e
 }
 let V = new E.Z("GatewaySocket"),
-  Z = new R.Z;
+  Z = new P.Z;
 
 function H(e) {
   let {
@@ -134,8 +134,8 @@ function W() {}
 let K = 4,
   z = 1001,
   q = "Stream end encountered",
-  Q = 4004,
-  X = 30 * S.Z.Millis.SECOND,
+  X = 4004,
+  Q = 30 * S.Z.Millis.SECOND,
   J = 3 * S.Z.Millis.MINUTE,
   $ = +S.Z.Millis.MINUTE;
 
@@ -191,7 +191,7 @@ class er extends L.Z {
     s.Z.mark("\uD83C\uDF10", "Socket._connect"), V.info("[CONNECT] ".concat(i, ", ") + "encoding: ".concat(r, ", ") + "version: ".concat(a, ", ") + "compression: ".concat(null != n ? n : "none")), null !== this.webSocket && (V.error("_connect called with already existing websocket"), this._cleanup(e => e.close(4e3))), this.connectionStartTime = Date.now(), this.helloTimeout = setTimeout(() => {
       let e = Date.now() - this.connectionStartTime;
       this._handleClose(!1, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time.")), this.setResumeUrl(null)
-    }, X);
+    }, Q);
     let o = new URL(i);
     o.searchParams.append("encoding", r), o.searchParams.append("v", a.toString()), null != n && o.searchParams.append("compress", n), Y({
       gatewayURL: o.toString(),
@@ -305,7 +305,7 @@ class er extends L.Z {
     if (e = e || !1, this._cleanup(), this.emit("close", {
         code: t,
         reason: n
-      }), t === Q) return this.connectionState = N.Z.CLOSED, V.warn("[WS CLOSED] because of authentication failure, marking as closed."), this._reset(e, t, n);
+      }), t === X) return this.connectionState = N.Z.CLOSED, V.warn("[WS CLOSED] because of authentication failure, marking as closed."), this._reset(e, t, n);
     if (this._tryDetectInvalidIOSToken(t, n, e), this.connectionState = N.Z.WILL_RECONNECT, this.nextReconnectIsImmediate) V.info("[WS CLOSED] (".concat(e.toString(), ", ").concat(t, ", ").concat(n, ") retrying immediately.")), this._connect("_handleCloseImmediateReconnect");
     else {
       let r = this.gatewayBackoff.fail(() => this._connect("_handleClose:".concat(n)));
@@ -330,7 +330,7 @@ class er extends L.Z {
       let {
         status: t
       } = e;
-      401 === t && (this.connectionState = N.Z.CLOSED, V.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, Q, "invalid token manually detected")), v.default.track(j.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
+      401 === t && (this.connectionState = N.Z.CLOSED, V.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, X, "invalid token manually detected")), v.default.track(j.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
         api_status_code: t
       })
     }))
@@ -367,7 +367,7 @@ class er extends L.Z {
   _cleanup(e) {
     u.ZP.Emitter.resume(), this._stopHeartbeater(), this._clearHelloTimeout();
     let t = this.webSocket;
-    this.webSocket = null, null != t && (t.onopen = W, t.onmessage = W, t.onerror = W, t.onclose = W, null == e || e(t)), this.gatewayBackoff.cancel(), this.compressionHandler.close(), this.compressionHandler = (0, P.I)(Z)
+    this.webSocket = null, null != t && (t.onopen = W, t.onmessage = W, t.onerror = W, t.onclose = W, null == e || e(t)), this.gatewayBackoff.cancel(), this.compressionHandler.close(), this.compressionHandler = (0, R.I)(Z)
   }
   _doResume() {
     var e;
@@ -380,7 +380,7 @@ class er extends L.Z {
   async _doIdentify() {
     this.seq = 0, this.sessionId = null;
     let e = this.handleIdentify();
-    if (null === e) return void this._handleClose(!0, Q, "No connection info provided");
+    if (null === e) return void this._handleClose(!0, X, "No connection info provided");
     this.connectionState = N.Z.IDENTIFYING;
     let t = Date.now();
     this.identifyStartTime = t;
@@ -417,7 +417,7 @@ class er extends L.Z {
   _doFastConnectIdentify() {
     this.seq = 0, this.sessionId = null;
     let e = this.handleIdentify();
-    if (null === e) return void this._handleClose(!0, Q, "No connection info provided");
+    if (null === e) return void this._handleClose(!0, X, "No connection info provided");
     let {
       token: t
     } = e;
@@ -530,6 +530,6 @@ class er extends L.Z {
       if (!n || this.isSessionEstablished()) try {
         null != this.webSocket && this.webSocket.send(r)
       } catch (e) {} else V.warn("Attempted to send while not being in a connected state opcode: ".concat(e))
-    }), this.dispatcher = new D.Z(this), this.gatewayBackoff = new o.Z(1e3, 6e4), this.connectionState_ = N.Z.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, P.I)(Z), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
+    }), this.dispatcher = new D.Z(this), this.gatewayBackoff = new o.Z(1e3, 6e4), this.connectionState_ = N.Z.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, R.I)(Z), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
   }
 }

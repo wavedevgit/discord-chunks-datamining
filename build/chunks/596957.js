@@ -172,10 +172,10 @@ let D = function(e) {
     }, [F, c]),
     K = i.useMemo(() => F.filter(e => e.type === T.OGo.PENDING_INCOMING).length, [F]),
     q = c === T.pJs.PENDING && K > 0 && K >= N.yf,
-    X = i.useCallback(e => {
+    Q = i.useCallback(e => {
       e.stopPropagation(), u.Z.confirmClearPendingRelationships(K)
     }, [K]),
-    Q = i.useCallback(e => {
+    X = i.useCallback(e => {
       let n = function(e, t, n) {
         switch (e) {
           case T.pJs.ONLINE:
@@ -210,7 +210,7 @@ let D = function(e) {
           color: s.Ttl.LINK,
           className: j.clearButton,
           size: s.zxk.Sizes.TINY,
-          onClick: X,
+          onClick: Q,
           "aria-label": P.intl.string(P.t.O8k7Oz),
           children: P.intl.string(P.t.O8k7Oz)
         })]
@@ -221,7 +221,7 @@ let D = function(e) {
           title: n
         })
       }, n)
-    }, [Y, c, t, q, X]);
+    }, [Y, c, t, q, Q]);
   if (i.useEffect(() => {
       c === T.pJs.ALL && (0, g.d$)()
     }, [c]), 0 === F.length && "" === M[c]) return (0, r.jsx)(R, {
@@ -243,7 +243,7 @@ let D = function(e) {
       }), (0, r.jsx)(y.Z, {
         rows: Y,
         renderRow: G,
-        renderSection: Q,
+        renderSection: X,
         sectionFilter: c,
         isVirtualizedList: D >= N.nG,
         hasSearchQuery: J,

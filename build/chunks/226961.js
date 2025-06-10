@@ -116,17 +116,17 @@ function C() {
   })
 }
 
-function P() {
+function R() {
   null != T && (T.destroy(), T = null)
 }
 
-function R(e) {
+function P(e) {
   var t;
   h = null != (t = e.section) ? t : p
 }
 
 function w() {
-  P()
+  R()
 }
 
 function D(e) {
@@ -222,7 +222,7 @@ function G(e) {
   let {
     path: t
   } = e, n = l.Z.getMediaEngine();
-  if (P(), !n.supports(d.AN.CONNECTION_REPLAY) || 0 === t.length) return;
+  if (R(), !n.supports(d.AN.CONNECTION_REPLAY) || 0 === t.length) return;
   let r = n.createReplayConnection(d.Yn.DEFAULT, t);
   null != r && (T = r, r.on(a.Sh.Video, (e, t, n, i, a) => {
     o.Z.dispatch({
@@ -298,7 +298,7 @@ class Z extends(r = i.ZP.Store) {
 }
 f(Z, "displayName", "RTCDebugStore");
 let H = new Z(o.Z, {
-  RTC_DEBUG_MODAL_OPEN: R,
+  RTC_DEBUG_MODAL_OPEN: P,
   RTC_DEBUG_MODAL_CLOSE: w,
   RTC_DEBUG_MODAL_SET_SECTION: x,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,

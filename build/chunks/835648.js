@@ -81,7 +81,7 @@ function A(e, t) {
 let N = [8, 8, 8, 8],
   C = 40;
 
-function P(e) {
+function R(e) {
   var {
     icon: t,
     isSelected: n,
@@ -100,24 +100,24 @@ function P(e) {
   }))
 }
 
-function R(e, t, n, i, a, o) {
+function P(e, t, n, i, a, o) {
   switch (e.categoryInfo.type) {
     case m.bg.FAVORITES:
-      return (0, r.jsx)(P, S(v({}, i), {
+      return (0, r.jsx)(R, S(v({}, i), {
         icon: c.r7p,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case m.bg.RECENTLY_HEARD:
-      return (0, r.jsx)(P, S(v({}, i), {
+      return (0, r.jsx)(R, S(v({}, i), {
         icon: c.T39,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case m.bg.FREQUENTLY_USED:
-      return (0, r.jsx)(P, S(v({}, i), {
+      return (0, r.jsx)(R, S(v({}, i), {
         icon: c.IeX,
         onClick: t,
         isSelected: n,
@@ -134,7 +134,7 @@ function R(e, t, n, i, a, o) {
         })
       }), e.key);
     case m.bg.DEFAULTS:
-      return (0, r.jsx)(P, S(v({}, i), {
+      return (0, r.jsx)(R, S(v({}, i), {
         icon: c.gw7,
         onClick: t,
         isSelected: n,
@@ -190,7 +190,7 @@ function L(e) {
     text: w(t),
     "aria-label": D(t),
     position: "right",
-    children: e => R(t, i, a, e, l, o)
+    children: e => P(t, i, a, e, l, o)
   })
 }
 

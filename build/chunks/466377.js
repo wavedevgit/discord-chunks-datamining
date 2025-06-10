@@ -14,7 +14,7 @@ var r = n(255367),
   i = n(73800),
   a = n(120356),
   o = n.n(a),
-  s = n(386230),
+  s = n(524979),
   l = n(990547),
   c = n(748780),
   u = n(197723),
@@ -72,9 +72,9 @@ function C(e, t) {
   }), e
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -82,7 +82,7 @@ function P(e, t) {
   return i
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -116,7 +116,7 @@ function x(e) {
       animation: T = "default",
       parentComponent: N
     } = e,
-    R = P(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
+    P = R(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
   let w = n === O.Dv.ENTERING || n === O.Dv.ENTERED;
   i.useContext(b.Z)({
     type: l.ImpressionTypes.PAGE,
@@ -136,7 +136,7 @@ function x(e) {
       clamp: !0
     },
     onRest: y
-  }, "animate-always"), k = i.useRef(null), M = null != R["aria-label"], j = null != R["aria-labelledby"], U = i.useId(), G = null != (t = R["aria-labelledby"]) ? t : U, B = i.useMemo(() => ({
+  }, "animate-always"), k = i.useRef(null), M = null != P["aria-label"], j = null != P["aria-labelledby"], U = i.useId(), G = null != (t = P["aria-labelledby"]) ? t : U, B = i.useMemo(() => ({
     headerId: G,
     headerIdIsManaged: j
   }), [G, j]);
@@ -148,7 +148,7 @@ function x(e) {
       returnRef: I,
       impressionType: l.ImpressionTypes.MODAL,
       "aria-labelledby": M ? void 0 : B.headerId
-    }, R), {
+    }, P), {
       children: (0, r.jsx)(s.animated.div, {
         className: o()(m, S.root, D[u], {
           [S.fullscreenOnMobile]: g,
@@ -203,7 +203,7 @@ function j(e) {
     children: n,
     scrollerRef: i,
     scrollbarType: a
-  } = e, s = P(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = M(a);
+  } = e, s = R(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = M(a);
   return (0, r.jsx)(l, C(A({
     className: o()(S.content, t),
     ref: i
@@ -258,7 +258,7 @@ function B(e) {
   var {
     className: t,
     scrollerRef: n
-  } = e, i = P(e, ["className", "scrollerRef"]);
+  } = e, i = R(e, ["className", "scrollerRef"]);
   return (0, r.jsx)(m.Tv, A({
     className: t,
     ref: n

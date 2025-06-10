@@ -129,9 +129,9 @@ function S(e, t) {
   if (0 === n.length) return !1;
   switch (e.type) {
     case u.l.Embed:
-      return P(e.media, n);
-    case u.l.Attachment:
       return R(e.media, n);
+    case u.l.Attachment:
+      return P(e.media, n);
     case u.l.GenericMedia:
       return w(e.media, n);
     default:
@@ -182,7 +182,7 @@ function C(e, t) {
   return null == s ? null : s.isDM() || s.isGroupDM() ? null != t && i.getFriendIDs().includes(t) ? u.n.FRIEND_DM : u.n.NON_FRIEND_DM : u.n.GUILD
 }
 
-function P(e, t) {
+function R(e, t) {
   var n, r, i, a, o, s, l;
   return !(0 === t.length || null == e || 0 === t.filter(t => !T(t, {
     type: u.l.Embed,
@@ -190,7 +190,7 @@ function P(e, t) {
   })).length || "video" in e && null != e.video && (null == (n = e.video) ? void 0 : n.width) === 0 && (null == (r = e.video) ? void 0 : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? void 0 : i.width) === 0 && (null == (a = e.thumbnail) ? void 0 : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? void 0 : o.width) === 0 && (null == (s = e.image) ? void 0 : s.height) === 0 || "images" in e && (null == (l = e.images) ? void 0 : l.some(e => null != e && 0 === e.width && 0 === e.height))) && D(k(e), t)
 }
 
-function R(e, t) {
+function P(e, t) {
   var n;
   return 0 !== t.length && 0 !== t.filter(t => !T(t, {
     type: u.l.Attachment,

@@ -118,7 +118,7 @@ function T(e) {
   } = e, {
     onClose: k,
     transitionState: M
-  } = n, U = (0, p.Dt)(), G = w.length % 2 == 0, V = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [B, H] = i.useState(Date.now()), [F, z] = i.useState(0), [W, Y] = i.useState(0), [K, q] = i.useState(!1), [X, Q] = i.useState(!0), J = i.useRef(B), $ = i.useRef(F), ee = i.useRef(W), et = i.useRef(K), en = i.useRef(X), [er, ei] = i.useState(C), el = i.useRef(!1);
+  } = n, U = (0, p.Dt)(), G = w.length % 2 == 0, V = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [B, H] = i.useState(Date.now()), [F, z] = i.useState(0), [W, Y] = i.useState(0), [K, q] = i.useState(!1), [Q, X] = i.useState(!0), J = i.useRef(B), $ = i.useRef(F), ee = i.useRef(W), et = i.useRef(K), en = i.useRef(Q), [er, ei] = i.useState(C), el = i.useRef(!1);
 
   function ea() {
     let e = Date.now(),
@@ -155,8 +155,8 @@ function T(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [er]), i.useEffect(() => {
-    J.current = B, $.current = F, ee.current = W, et.current = K, en.current = X
-  }, [B, F, W, K, X]), i.useEffect(() => () => {
+    J.current = B, $.current = F, ee.current = W, et.current = K, en.current = Q
+  }, [B, F, W, K, Q]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
       let [e, t] = ea();
       m.default.track(_.rMx.CHANGE_LOG_VIDEO_PLAYED, {
@@ -206,16 +206,16 @@ function T(e) {
         onPlay: e => {
           m.default.track(_.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
             change_log_id: L
-          }), H(Date.now()), q(!0), Q(e.currentTarget.muted)
+          }), H(Date.now()), q(!0), X(e.currentTarget.muted)
         },
         onEnded: e => {
-          ea(), Q(e.currentTarget.muted), q(!1)
+          ea(), X(e.currentTarget.muted), q(!1)
         },
         onVolumeChange: e => {
-          ea(), Q(e.currentTarget.muted)
+          ea(), X(e.currentTarget.muted)
         },
         onPause: e => {
-          ea(), Q(e.currentTarget.muted), q(!1)
+          ea(), X(e.currentTarget.muted), q(!1)
         },
         disablePictureInPicture: !0,
         children: null == er ? void 0 : er.map(e => {

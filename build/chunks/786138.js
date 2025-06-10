@@ -38,7 +38,7 @@ function b(e) {
     return {
       desktopSourceId: null == t ? void 0 : t.id
     }
-  }), S = (0, a.e7)([u.Z], () => u.Z.getState().soundshareEnabled), T = d.Z.supports(g.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, a.e7)([d.Z], () => d.Z.supports(g.AN.SOUNDSHARE)), N = (0, a.e7)([d.Z], () => d.Z.supportsScreenSoundshare()), C = (0, p.Z)(t, v), P = (0, _.Z)(t, v, m.Vq), R = null != I && A && (!I.startsWith("screen") || N), w = i.useCallback(() => {
+  }), S = (0, a.e7)([u.Z], () => u.Z.getState().soundshareEnabled), T = d.Z.supports(g.AN.DESKTOP_CAPTURE_APPLICATIONS), A = (0, a.e7)([d.Z], () => d.Z.supports(g.AN.SOUNDSHARE)), N = (0, a.e7)([d.Z], () => d.Z.supportsScreenSoundshare()), C = (0, p.Z)(t, v), R = (0, _.Z)(t, v, m.Vq), P = null != I && A && (!I.startsWith("screen") || N), w = i.useCallback(() => {
     (null == I ? void 0 : I.startsWith("prepicked:")) ? d.Z.getMediaEngine().eachConnection(e => {
       e.context === g.Yn.STREAM && e.presentDesktopSourcePicker()
     }): n()
@@ -76,7 +76,7 @@ function b(e) {
       label: E.intl.string(E.t.ytAD9f),
       children: C
     }) : null,
-    x = R ? (0, r.jsx)(o.S89, {
+    x = P ? (0, r.jsx)(o.S89, {
       id: "stream-settings-audio-enable",
       label: O ? E.intl.string(E.t.af2Tw8) : E.intl.string(E.t.ZJEHt7),
       checked: S,
@@ -97,6 +97,6 @@ function b(e) {
   return O ? (0, r.jsxs)(r.Fragment, {
     children: [M, k, L, x]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [L, b ? P : null, x, k, M]
+    children: [L, b ? R : null, x, k, M]
   })
 }

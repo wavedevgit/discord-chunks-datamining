@@ -71,33 +71,33 @@ function T(e) {
   } = e, {
     channelAction: E,
     completed: b
-  } = (0, g.P3)(f, _), T = (0, g.K_)(f, null == E ? void 0 : E.channelId), A = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), N = (null == E ? void 0 : E.actionType) === m.oi.VIEW, C = (0, c.dQu)(c.TVs.colors.WHITE), [P, R] = i.useState(!1), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
+  } = (0, g.P3)(f, _), T = (0, g.K_)(f, null == E ? void 0 : E.channelId), A = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), N = (null == E ? void 0 : E.actionType) === m.oi.VIEW, C = (0, c.dQu)(c.TVs.colors.WHITE), [R, P] = i.useState(!1), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
   i.useEffect(() => {
     b ? s.Z.timing(w, {
       toValue: 0,
       duration: A ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 500 * !N
-    }).start(() => R(!0)) : s.Z.timing(w, {
+    }).start(() => P(!0)) : s.Z.timing(w, {
       toValue: 1,
       duration: A ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
   }, [b, w, N, A]), i.useEffect(() => {
-    b && P && s.Z.timing(D, {
+    b && R && s.Z.timing(D, {
       toValue: 1,
       duration: 350 * !A,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [b, D, P, A]);
+  }, [b, D, R, A]);
   let L = i.useCallback(() => {
     null != T && (0, h.gp)(f, T.channelId)
   }, [f, T]);
-  return null == E || N && !P ? null : (0, r.jsx)("div", {
+  return null == E || N && !R ? null : (0, r.jsx)("div", {
     className: o()(O.container, p),
-    children: P && null != T ? (0, r.jsx)(s.Z.div, {
+    children: R && null != T ? (0, r.jsx)(s.Z.div, {
       style: {
         marginBottom: D.interpolate({
           inputRange: [0, 1],

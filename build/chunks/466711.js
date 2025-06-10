@@ -60,13 +60,13 @@ function C(e, t) {
   return n
 }
 
-function P(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function R(e) {
+function P(e) {
   return (0, r.jsx)(y.Z, {
     innerClassName: T.button,
     "aria-label": I.intl.string(I.t.Z1RnTk),
@@ -91,7 +91,7 @@ function w(e) {
     var t;
     i(), null == (t = e.onClick) || t.call(e)
   };
-  return (0, r.jsx)(y.Z, P(N({
+  return (0, r.jsx)(y.Z, R(N({
     innerClassName: T.button,
     "aria-label": I.intl.string(I.t.Z1RnTk),
     isActive: !1,
@@ -127,7 +127,7 @@ function L(e) {
   } = e, {
     analyticsLocations: y
   } = (0, u.ZP)(c.Z.GIFT_BUTTON), [I, T] = i.useState(!1), A = (0, a.e7)([h.Z], () => !(null === h.Z || void 0 === h.Z ? void 0 : h.Z.hasLayers())), N = (0, a.e7)([m.default], () => m.default.getCurrentUser()), C = null != N ? E.default.age(N.id) : 0, {
-    giftBoxAnimation: P,
+    giftBoxAnimation: R,
     trinketsAnimation: L
   } = null != (t = null == n ? void 0 : n.chatGiftIcon) ? t : {}, x = null != n.firstTimeNotice && !s && A && C >= D, [k, M] = (0, f.XR)(x ? o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, d.t)(o.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), j = null != k, U = I || j, G = (0, b.Ft)(g);
   if (s) return null;
@@ -148,8 +148,8 @@ function L(e) {
     F = () => {
       T(!1), M(v.L.TAKE_ACTION), B()
     },
-    V = void 0 !== P ? (0, r.jsx)(R, {
-      config: P,
+    V = void 0 !== R ? (0, r.jsx)(P, {
+      config: R,
       hovered: U,
       onClick: F
     }) : void 0 !== L ? (0, r.jsx)(w, {

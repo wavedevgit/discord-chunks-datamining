@@ -30,8 +30,8 @@ var r = n(255367),
   A = n(317381),
   N = n(513202),
   C = n(367907),
-  P = n(162685),
-  R = n(445446),
+  R = n(162685),
+  P = n(445446),
   w = n(979200),
   D = n(870822),
   L = n(600164),
@@ -51,8 +51,8 @@ var r = n(255367),
   K = n(49012),
   z = n(621600),
   q = n(709054),
-  Q = n(706454),
-  X = n(210887),
+  X = n(706454),
+  Q = n(210887),
   J = n(675478),
   $ = n(581883),
   ee = n(436267),
@@ -103,8 +103,8 @@ function ef(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let e_ = _.ZP.connectStores([X.Z], () => ({
-  theme: X.Z.theme
+let e_ = _.ZP.connectStores([Q.Z], () => ({
+  theme: Q.Z.theme
 }))(E.ubH);
 
 function ep(e) {
@@ -377,10 +377,10 @@ let eh = e => {
     } = e, b = a.id, O = i.useMemo(() => G.ZP.createFromServer(a), [a]), I = (0, W.yE)(O.flags, er.udG.EMBEDDED), S = (0, _.e7)([$.Z], () => {
       var e, t, n, r;
       return null == (r = $.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? void 0 : e.allowMobilePush
-    }, [b]), T = P.w.useExperiment({
+    }, [b]), T = R.w.useExperiment({
       location: "oauth2_authorize"
     }), A = a.bot, N = (0, _.e7)([F.Z], () => F.Z.getDMFromUserId(null == A ? void 0 : A.id)), {
-      appDMChannelMuteConfig: R,
+      appDMChannelMuteConfig: P,
       dmChannelMuted: D
     } = (0, _.cj)([H.ZP], () => null == N ? {
       appDMChannelMuteConfig: null,
@@ -451,14 +451,14 @@ let eh = e => {
           })
         }
       })
-    }, Q = i.useMemo(() => {
+    }, X = i.useMemo(() => {
       if (null != a.description && "" !== a.description) return (0, r.jsx)(E.Text, {
         className: es.markup,
         variant: "text-sm/normal",
         color: "text-normal",
         children: (0, j.parseBioReact)(a.description)
       })
-    }, [a.description]), X = () => {
+    }, [a.description]), Q = () => {
       let e = null != a.description && "" !== a.description,
         t = null != a.terms_of_service_url || null != a.privacy_policy_url;
       return e || t ? (0, r.jsx)(E.zF9, {
@@ -466,7 +466,7 @@ let eh = e => {
         isExpanded: x,
         collapsibleContent: (0, r.jsxs)("div", {
           className: eo.appDetailsContent,
-          children: [e && Q, t && (0, r.jsx)(eE, {
+          children: [e && X, t && (0, r.jsx)(eE, {
             application: a,
             isVisible: x
           })]
@@ -569,8 +569,8 @@ let eh = e => {
         hideBorder: !0,
         onChange: ed,
         className: eo.dmSettingsSwitch,
-        note: (null == R ? void 0 : R.end_time) != null ? ea.intl.format(ea.t.j7h4AA, {
-          endTime: new Date(R.end_time).toLocaleString(ea.intl.currentLocale, {
+        note: (null == P ? void 0 : P.end_time) != null ? ea.intl.format(ea.t.j7h4AA, {
+          endTime: new Date(P.end_time).toLocaleString(ea.intl.currentLocale, {
             month: "numeric",
             day: "numeric",
             hour: "numeric",
@@ -616,7 +616,7 @@ let eh = e => {
         component: et(),
         children: (0, r.jsxs)("div", {
           className: eo.appDetailsContainer,
-          children: [X(), K(), ef(), em()]
+          children: [Q(), K(), ef(), em()]
         })
       })
     })
@@ -627,11 +627,11 @@ let eh = e => {
   ev = () => {
     let e = (0, _.e7)([Z.Z], () => Z.Z.hidePersonalInformation),
       t = (0, _.e7)([B.Z], () => B.Z.getApps()),
-      a = (0, _.e7)([Q.default], () => Q.default.locale),
+      a = (0, _.e7)([X.default], () => X.default.locale),
       o = (0, _.e7)([A.ZP], () => A.ZP.getSelfEmbeddedActivities()),
       s = (0, _.e7)([F.Z, V.Z], () => F.Z.getChannel(V.Z.getChannelId())),
       c = null == s ? void 0 : s.getGuildId(),
-      u = R.G.useExperiment({
+      u = P.G.useExperiment({
         location: "UserSettingsAuthedApps"
       }, {
         autoTrackExposure: !0

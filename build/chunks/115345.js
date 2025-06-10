@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   F6: () => U,
-  _Y: () => X,
+  _Y: () => Q,
   cG: () => G,
   ly: () => B,
-  oL: () => Q,
+  oL: () => X,
   vo: () => Z
 }), n(388685), n(997841), n(415506);
 var r = n(73800),
@@ -34,8 +34,8 @@ var r = n(73800),
   A = n(630114),
   N = n(506712),
   C = n(468788),
-  P = n(789662),
-  R = n(981631),
+  R = n(789662),
+  P = n(981631),
   w = n(490897),
   D = n(526761),
   L = n(388032);
@@ -80,7 +80,7 @@ function j(e, t) {
 }
 
 function U(e, t) {
-  let [n, i] = r.useState(P.nf), [a, s] = r.useState({});
+  let [n, i] = r.useState(R.nf), [a, s] = r.useState({});
   (0, _.D)();
   let l = (0, o.Wu)([g.Z], () => Object.values(g.Z.getGuilds())),
     c = r.useCallback(() => {
@@ -103,8 +103,8 @@ function U(e, t) {
 
 function G(e, t) {
   return Object.values(g.Z.getGuilds()).some(n => {
-    let [r] = p.Z.hasConsented(R.pjP.PERSONALIZATION) ? (0, N.q)(n, P.nf, e, t, !1) : (0, N.A)(n, e);
-    return r === P.AR.UseGreyDot
+    let [r] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, N.q)(n, R.nf, e, t, !1) : (0, N.A)(n, e);
+    return r === R.AR.UseGreyDot
   })
 }
 
@@ -118,7 +118,7 @@ function B() {
       flags: e
     }
   }
-  W(t), y.default.track(R.rMx.NOTIFICATION_MIGRATION_COMPLETED, {
+  W(t), y.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, {
     auto_migrated: !0,
     num_unread_guids_after: e.filter(e => m.default.hasUnread(e.id)).length
   })
@@ -126,14 +126,14 @@ function B() {
 
 function F(e, t, n, r, i) {
   var a;
-  let [o, s, l] = p.Z.hasConsented(R.pjP.PERSONALIZATION) ? (0, N.q)(e, t, n, r, !0) : (0, N.A)(e, n), c = null != (a = n.filter(t => t.guild_id === e.id)[0]) ? a : {}, u = (0, A.Z)(e, null != i ? i : o, c, r, t);
+  let [o, s, l] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, N.q)(e, t, n, r, !0) : (0, N.A)(e, n), c = null != (a = n.filter(t => t.guild_id === e.id)[0]) ? a : {}, u = (0, A.Z)(e, null != i ? i : o, c, r, t);
   return {
     guildId: e.id,
     mode: o,
     debugReason: l,
     actions: u,
     overrideMode: i,
-    messagePain: c.messages === P.XR.High,
+    messagePain: c.messages === R.XR.High,
     visitsALot: s,
     muted: b.ZP.isMuted(e.id) && !b.ZP.isTemporarilyMuted(e.id)
   }
@@ -154,8 +154,8 @@ function V(e, t) {
       return -1 === t ? i.length : t
     }),
     s = [
-      ["Use Grey Dot", new Set([P.AR.UseGreyDot])],
-      ["Keep As Is", new Set([P.AR.KeepAsIs])]
+      ["Use Grey Dot", new Set([R.AR.UseGreyDot])],
+      ["Keep As Is", new Set([R.AR.KeepAsIs])]
     ].map(e => {
       let [t, n] = e, r = o.filter(e => {
         var t;
@@ -226,7 +226,7 @@ async function H(e, t) {
 function Y(e) {
   let t = Object.values(e).filter(e => {
       var t;
-      return (null != (t = e.overrideMode) ? t : e.mode) === P.AR.UseGreyDot
+      return (null != (t = e.overrideMode) ? t : e.mode) === R.AR.UseGreyDot
     }).map(e => {
       var t;
       return {
@@ -239,9 +239,9 @@ function Y(e) {
       unmuted_server_ids: t.filter(e => b.ZP.isMuted(e.plan.guildId)).map(e => e.plan.guildId)
     };
   return () => {
-    y.default.track(R.rMx.NOTIFICATION_MIGRATION_COMPLETED, j(k({}, n), {
+    y.default.track(P.rMx.NOTIFICATION_MIGRATION_COMPLETED, j(k({}, n), {
       auto_migrated: !0,
-      pre_selected_server_ids: Object.values(e).filter(e => e.mode === P.AR.UseGreyDot).map(e => e.guildId),
+      pre_selected_server_ids: Object.values(e).filter(e => e.mode === R.AR.UseGreyDot).map(e => e.guildId),
       final_selected_server_ids: t.map(e => e.plan.guildId),
       num_unread_guids_after: S.default.keys(e).filter(e => m.default.hasUnread(e)).length,
       num_tiny_servers_selected: t.filter(e => e.memberCount <= 20).length,
@@ -290,8 +290,8 @@ function q() {
     })
   })
 }
-async function Q() {
-  s.K.set("turnedOffNewNotifications", !0), y.default.track(R.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
+async function X() {
+  s.K.set("turnedOffNewNotifications", !0), y.default.track(P.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
     num_guilds_with_new_setting: Object.values(g.Z.getGuilds()).filter(e => b.ZP.resolveGuildUnreadSetting(e) === w.i.ONLY_MENTIONS).length
   });
   let e = await (0, T.Tn)(),
@@ -308,7 +308,7 @@ async function Q() {
   } else await u.Z.setAccountFlag(C.c.USE_NEW_NOTIFICATIONS, !1)
 }
 
-function X(e) {
+function Q(e) {
   var t, n, r;
   if (null == e) return [];
   let i = a().keyBy(null != (t = e.voice_joins) ? t : [], "channel_id"),

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 });
 var r = n(255367),
   i = n(73800),
@@ -46,7 +46,7 @@ function C(e, t) {
   return i
 }
 
-function P(e) {
+function R(e) {
   switch (e) {
     case v.cd.ANIMATED_AVATAR_MODAL_UPSELL:
     case v.cd.ANIMATED_BANNER_MODAL_UPSELL:
@@ -61,10 +61,10 @@ function P(e) {
   }
 }
 
-function R(e) {
+function P(e) {
   var t, n, a, {
       title: C,
-      type: R,
+      type: P,
       guildBoostProps: w,
       analyticsSource: D,
       analyticsLocation: L,
@@ -84,8 +84,8 @@ function R(e) {
       onSecondaryClick: K,
       secondaryCTA: z,
       secondaryCTAClassName: q,
-      subscribeButtonText: Q,
-      showNewBadge: X = !1,
+      subscribeButtonText: X,
+      showNewBadge: Q = !1,
       showBetaBadge: J = !1,
       enableArtBoxShadow: $ = !0,
       subscriptionTier: ee = v.Si.TIER_2,
@@ -115,7 +115,7 @@ function R(e) {
       analyticsLocations: eE,
       analyticsSource: D,
       guildBoostProps: w,
-      type: R
+      type: P
     },
     ey = i.useRef(eb);
   i.useEffect(() => {
@@ -144,7 +144,7 @@ function R(e) {
     })
   }, [ep, ee, et]);
   let eO = (0, s.e7)([m.Z], () => m.Z.affinities),
-    ev = eO.length > 1 && P(R),
+    ev = eO.length > 1 && R(P),
     eI = (0, s.e7)([m.Z], () => m.Z.hasFetched);
   i.useEffect(() => {
     eI || c.MH()
@@ -178,7 +178,7 @@ function R(e) {
         },
         onSubscribeModalClose: W,
         textOptions: {
-          textOverride: null != Q ? Q : e
+          textOverride: null != X ? X : e
         }
       })
     },
@@ -195,7 +195,7 @@ function R(e) {
     parentComponent: "PremiumUpsellModal",
     children: [null != eA && (0, r.jsxs)("div", {
       className: eT,
-      children: [eA, X ? (0, r.jsx)("img", {
+      children: [eA, Q ? (0, r.jsx)("img", {
         className: T.sparkleBadge,
         alt: "",
         src: A
@@ -205,7 +205,7 @@ function R(e) {
       className: o()(ei ? T.enhancedContent : T.content, !eg && U),
       children: et ? (0, r.jsx)(l.$jN, {}) : eg ? (0, r.jsx)(y.ZP, {
         onClose: H,
-        type: R,
+        type: P,
         subscriptionTier: null != (a = null == eh || null == (n = eh.subscription_trial) ? void 0 : n.sku_id) ? a : v.Si.TIER_2,
         headingText: C,
         context: k,

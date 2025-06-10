@@ -93,9 +93,9 @@ function N(e) {
       labelledBy: N
     }),
     {
-      ref: P
+      ref: R
     } = C,
-    R = T(C, ["ref"]),
+    P = T(C, ["ref"]),
     w = (0, d.Q3)("AppIconSelectionGroup"),
     D = e => {
       c.Z.dispatch({
@@ -105,8 +105,8 @@ function N(e) {
     };
   return (0, r.jsx)("div", {
     ref: A,
-    children: (0, r.jsx)("div", S(v({}, R), {
-      ref: P,
+    children: (0, r.jsx)("div", S(v({}, P), {
+      ref: R,
       className: b.__invalid_container,
       children: (0, r.jsxs)("div", {
         className: t,

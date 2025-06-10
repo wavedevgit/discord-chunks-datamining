@@ -7,7 +7,7 @@ var r = n(255367),
   i = n(73800),
   a = n(120356),
   o = n.n(a),
-  s = n(386230),
+  s = n(524979),
   l = n(692547),
   c = n(186325),
   u = n(84735),
@@ -108,8 +108,8 @@ let v = function(e) {
     innerRef: v
   } = e, {
     reducedMotion: I
-  } = i.useContext(c.S), S = i.useRef(null), [T, A] = i.useState(!1), N = (0, _.Q3)("Switch"), C = (0, d.d)(N ? l.Z.colors.INTERACTIVE_MUTED : l.Z.unsafe_rawColors.PRIMARY_400).spring(), P = (0, d.d)(N ? l.Z.colors.REDESIGN_INPUT_CONTROL_SELECTED : l.Z.unsafe_rawColors.GREEN_360).spring(), {
-    state: R,
+  } = i.useContext(c.S), S = i.useRef(null), [T, A] = i.useState(!1), N = (0, _.Q3)("Switch"), C = (0, d.d)(N ? l.Z.colors.INTERACTIVE_MUTED : l.Z.unsafe_rawColors.PRIMARY_400).spring(), R = (0, d.d)(N ? l.Z.colors.REDESIGN_INPUT_CONTROL_SELECTED : l.Z.unsafe_rawColors.GREEN_360).spring(), {
+    state: P,
     opacity: w
   } = (0, f.q_F)({
     config: b,
@@ -142,8 +142,8 @@ let v = function(e) {
       onMouseLeave: () => A(!1),
       style: {
         opacity: w,
-        backgroundColor: R.to({
-          output: [C, P]
+        backgroundColor: P.to({
+          output: [C, R]
         })
       },
       children: [(0, r.jsxs)(s.animated.svg, {
@@ -151,7 +151,7 @@ let v = function(e) {
         viewBox: "0 0 28 20",
         preserveAspectRatio: "xMinYMid meet",
         style: {
-          left: R.to({
+          left: P.to({
             range: [0, .3, .7, 1],
             output: [N ? -4 : -3, 1, 8, 12]
           })
@@ -159,24 +159,24 @@ let v = function(e) {
         "aria-hidden": !0,
         children: [(0, r.jsx)(s.animated.rect, {
           fill: "white",
-          x: R.to({
+          x: P.to({
             range: [0, .3, .7, 1],
             output: [4, 0, 0, 4]
           }),
-          y: R.to({
+          y: P.to({
             range: [0, .3, .7, 1],
             output: [0, 1, 1, 0]
           }),
-          height: R.to({
+          height: P.to({
             range: [0, .3, .7, 1],
             output: [20, 18, 18, 20]
           }),
-          width: R.to({
+          width: P.to({
             range: [0, .3, .7, 1],
             output: [20, 28, 28, 20]
           }),
           rx: "10"
-        }), O(R, C, P, I.enabled)]
+        }), O(P, C, R, I.enabled)]
       }), (0, r.jsx)("input", {
         id: t,
         type: "checkbox",

@@ -29,8 +29,8 @@ var r = n(255367),
   A = n(86724),
   N = n(847302),
   C = n(657198),
-  P = n(321127),
-  R = n(981631),
+  R = n(321127),
+  P = n(981631),
   w = n(117335);
 let D = i.forwardRef(function(e, t) {
   let {
@@ -54,8 +54,8 @@ let D = i.forwardRef(function(e, t) {
     onTab: K,
     onEnter: z,
     onSubmit: q,
-    maybeShowAutocomplete: Q,
-    hideAutocomplete: X,
+    maybeShowAutocomplete: X,
+    hideAutocomplete: Q,
     moveSelection: J,
     spellcheckEnabled: $,
     canUseCommands: ee,
@@ -142,10 +142,10 @@ let D = i.forwardRef(function(e, t) {
       if (a.length > 0) {
         var n, r;
         let e = a[0];
-        E.Q.selectCommandOption(ev, e.name), f.S.dispatch(R.CkL.SHAKE_APP, {
+        E.Q.selectCommandOption(ev, e.name), f.S.dispatch(P.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
-        }), (0, l.yw)(R.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
+        }), (0, l.yw)(P.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
           application_id: null == t ? void 0 : t.applicationId,
           command_id: null == t || null == (n = t.rootCommand) ? void 0 : n.id,
           argument_type: s.jw[null != (r = null == e ? void 0 : e.type) ? r : 3],
@@ -173,18 +173,18 @@ let D = i.forwardRef(function(e, t) {
     onEnter: z,
     allowNewLines: ei,
     submit: eS,
-    hideAutocomplete: X,
+    hideAutocomplete: Q,
     moveSelection: J
   }), {
     handlePaste: eN,
     handleGlobalPaste: eC
-  } = (0, S.Z)(ev, eE, F), eP = i.useCallback(e => {
-    null == Q || Q()
-  }, [Q]), eR = i.useCallback(e => {
+  } = (0, S.Z)(ev, eE, F), eR = i.useCallback(e => {
+    null == X || X()
+  }, [X]), eP = i.useCallback(e => {
     e !== eh.current ? eg.current && (null == B || B(null, (0, g.sk)(e, {
       mode: "raw"
-    }), e)) : eg.current && Q()
-  }, [Q, B]);
+    }), e)) : eg.current && X()
+  }, [X, B]);
   i.useLayoutEffect(() => {
     em.current && (eh.current = n, eb(ev, "parent", {
       value: n
@@ -199,10 +199,10 @@ let D = i.forwardRef(function(e, t) {
   }, [D, ev, eI]);
   let ew = i.useCallback((e, t) => (0, y.Z)(e, t), []),
     eD = i.useCallback(e => (0, C.Z)(ev, e, D.id), [D.id, ev]),
-    eL = i.useCallback(e => (0, P.Z)(e), []);
+    eL = i.useCallback(e => (0, R.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.d9, {
-      event: R.CkL.GLOBAL_CLIPBOARD_PASTE,
+      event: P.CkL.GLOBAL_CLIPBOARD_PASTE,
       handler: eC
     }), (0, r.jsx)("div", {
       ref: ep,
@@ -218,10 +218,10 @@ let D = i.forwardRef(function(e, t) {
         spellCheck: $,
         autoFocus: !en,
         canFocus: !k,
-        onChange: eR,
+        onChange: eP,
         onFocus: Z,
         onBlur: H,
-        onClick: eP,
+        onClick: eR,
         onPaste: eN,
         onKeyDown: eT,
         onKeyUp: eA,

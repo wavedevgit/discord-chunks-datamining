@@ -111,14 +111,14 @@ let E = i.memo(function(e) {
       inline: I = !0,
       onShowProfile: S,
       onClose: T
-    } = e, A = i.useRef(null), N = (0, s.e7)([d.default], () => d.default.getUser(a), [a]), C = (0, s.e7)([u.Z], () => u.Z.theme), P = null != (t = null == N ? void 0 : N.primaryGuild) ? t : n, {
-      tag: R,
+    } = e, A = i.useRef(null), N = (0, s.e7)([d.default], () => d.default.getUser(a), [a]), C = (0, s.e7)([u.Z], () => u.Z.theme), R = null != (t = null == N ? void 0 : N.primaryGuild) ? t : n, {
+      tag: P,
       badge: w,
       guildId: D
-    } = (0, f.Pb)(P);
+    } = (0, f.Pb)(R);
     return (0, f.yF)(a, _) && null != D ? v ? (0, r.jsx)(b, {
       guildId: D,
-      guildTag: R,
+      guildTag: P,
       guildBadge: w,
       className: o()(h.noTooltip, p),
       textVariant: E,
@@ -137,7 +137,7 @@ let E = i.memo(function(e) {
           ref: A,
           children: (0, r.jsx)(b, g({
             guildId: D,
-            guildTag: R,
+            guildTag: P,
             guildBadge: w,
             className: p,
             textVariant: E,

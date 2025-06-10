@@ -26,8 +26,8 @@ var r = n(98405),
   A = n(264750).f,
   N = n(522169),
   C = n(920029).forEach,
-  P = n(108015),
-  R = n(573078),
+  R = n(108015),
+  P = n(573078),
   w = n(117895),
   D = n(840991),
   L = n(335024),
@@ -47,10 +47,10 @@ var r = n(98405),
   K = l.TypedArray,
   z = l.TypedArrayPrototype,
   q = l.isTypedArray,
-  Q = "BYTES_PER_ELEMENT",
-  X = "Wrong length",
+  X = "BYTES_PER_ELEMENT",
+  Q = "Wrong length",
   J = function(e, t) {
-    R(e, t, {
+    P(e, t, {
       configurable: !0,
       get: function() {
         return M(this)[t]
@@ -94,7 +94,7 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
       var i = M(e);
       i.view[d](t * o + i.byteOffset, n ? g(r) : r, !0)
     },
-    R = function(e, t) {
+    P = function(e, t) {
       G(e, t, {
         get: function() {
           return v(this, t)
@@ -120,8 +120,8 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
         i = t, d = m(n, o);
         var f = t.byteLength;
         if (void 0 === r) {
-          if (f % o || (s = f - d) < 0) throw new F(X)
-        } else if ((s = p(r) * o) + d > f) throw new F(X);
+          if (f % o || (s = f - d) < 0) throw new F(Q)
+        } else if ((s = p(r) * o) + d > f) throw new F(Q);
         l = s / o
       } else if (q(t)) return L(E, t);
     else return a(N, E, t);
@@ -132,7 +132,7 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
         byteLength: s,
         length: l,
         view: new H(i)
-      }); c < l;) R(e, c++)
+      }); c < l;) P(e, c++)
   }), T && T(E, K), b = E.prototype = I(z)), b.constructor !== E && f(b, "constructor", E), U(b).TypedArrayConstructor = E, W && f(b, W, l);
   var w = E !== _;
   y[l] = E, r({
@@ -140,5 +140,5 @@ o ? (Y || (D.f = et, w.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLen
     constructor: !0,
     forced: w,
     sham: !Y
-  }, y), Q in E || f(E, Q, o), Q in b || f(b, Q, o), P(l)
+  }, y), X in E || f(E, X, o), X in b || f(b, X, o), R(l)
 }) : e.exports = function() {}

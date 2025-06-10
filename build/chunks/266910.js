@@ -98,11 +98,11 @@ let O = function(e) {
       className: p.avatarWrapper,
       src: n
     }, v)),
-    P = E(m({}, t), {
+    R = E(m({}, t), {
       backgroundColor: S
     });
-  return null != N && O && T && (P.backgroundImage = "url(".concat(N, ")"), P.backgroundSize = "cover"), (0, r.jsx)("div", {
-    style: P,
+  return null != N && O && T && (R.backgroundImage = "url(".concat(N, ")"), R.backgroundSize = "cover"), (0, r.jsx)("div", {
+    style: R,
     className: p.background,
     children: y ? (0, r.jsx)(c.Z, {
       shouldAnimate: O,

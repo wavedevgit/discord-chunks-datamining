@@ -96,7 +96,7 @@ function N(e) {
   let t, n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     r = b[e.id],
     i = void 0 !== e.id && e.id === p.default.getId();
-  if (null == r) void 0 !== (t = (r = new d.Z(e)).premiumType) && i && (r.premiumType = P((0, u.QI)(r), r.premiumType));
+  if (null == r) void 0 !== (t = (r = new d.Z(e)).premiumType) && i && (r.premiumType = R((0, u.QI)(r), r.premiumType));
   else if (n) {
     var a;
     let n = T(e);
@@ -109,18 +109,18 @@ function N(e) {
 function C(e) {
   var t;
   let n = null != (t = e.premium_type) ? t : e.premiumType,
-    r = P((0, u.VR)(e), n);
+    r = R((0, u.VR)(e), n);
   return void 0 !== e.premiumType ? e.premiumType = r : void 0 !== e.premium_type && (e.premium_type = r), e
 }
 
-function P(e, t) {
+function R(e, t) {
   if (!e) return t;
   let n = c.Z.getPremiumTypeOverride(),
     r = c.Z.getPremiumTypeActual();
   return n === g.F_ ? r : n
 }
 
-function R(e, t) {
+function P(e, t) {
   var n, r, i, a, o, s;
   if (null != e.author && "SENDING" !== e.state && A(e.author) && N(e.author, t), null == (n = e.mentions) || n.forEach(e => {
       A(e) && N(e, t)
@@ -211,7 +211,7 @@ function U(e) {
   let {
     messages: t
   } = e;
-  return t.forEach(e => R(e, !0)), !1
+  return t.forEach(e => P(e, !0)), !1
 }
 
 function G(e) {
@@ -222,7 +222,7 @@ function G(e) {
     let {
       message: t
     } = e;
-    return R(t, !0)
+    return P(t, !0)
   }), !1
 }
 
@@ -230,7 +230,7 @@ function B(e) {
   let {
     mostRecentMessages: t
   } = e;
-  return null == t || t.forEach(e => R(e, !1)), !1
+  return null == t || t.forEach(e => P(e, !1)), !1
 }
 
 function F(e) {
@@ -247,7 +247,7 @@ function V(e) {
     firstMessages: t,
     owners: n
   } = e;
-  null != t && t.forEach(e => R(e, !0)), null != n && n.forEach(e => N(e.user, !0))
+  null != t && t.forEach(e => P(e, !0)), null != n && n.forEach(e => N(e.user, !0))
 }
 
 function Z(e) {
@@ -260,7 +260,7 @@ function Z(e) {
       most_recent_message: n,
       owner: r
     } = e;
-    null != t && R(t, !0), null != n && R(n, !0), null != r && null != r.user && N(r.user, !0)
+    null != t && P(t, !0), null != n && P(n, !0), null != r && null != r.user && N(r.user, !0)
   })
 }
 
@@ -272,7 +272,7 @@ function H(e) {
     let {
       message_preview: t
     } = e;
-    null != t && R(t, !0)
+    null != t && P(t, !0)
   })
 }
 
@@ -313,7 +313,7 @@ function z(e) {
   let {
     message: t
   } = e;
-  if (R(t, !0), null != t.flags && f.yE(t.flags, m.iLy.URGENT)) {
+  if (P(t, !0), null != t.flags && f.yE(t.flags, m.iLy.URGENT)) {
     let e = b[p.default.getId()];
     return null != e && (b[p.default.getId()] = e.set("flags", f.mB(e.flags, m.xW$.HAS_UNREAD_URGENT_MESSAGES, !0)), !0)
   }
@@ -329,7 +329,7 @@ function q(e) {
   return null != t && t.forEach(e => N(e)), !1
 }
 
-function Q(e) {
+function X(e) {
   let {
     channels: t
   } = e;
@@ -339,7 +339,7 @@ function Q(e) {
     of t) null != e && e.forEach(e => N(e));
   return !1
 }
-let X = ["username", "avatar", "global_name", "discriminator", "bot", "primary_guild"];
+let Q = ["username", "avatar", "global_name", "discriminator", "bot", "primary_guild"];
 
 function J(e) {
   let {
@@ -348,7 +348,7 @@ function J(e) {
   return t.map(e => {
     let t = b[e.user.id];
     if (null == t) return !1;
-    let n = X.reduce((n, i) => {
+    let n = Q.reduce((n, i) => {
       if (e.user.hasOwnProperty(i)) {
         let a = t.set((0, r.camelCase)(i), e.user[i]);
         n = n || a !== t, t = a
@@ -586,7 +586,7 @@ function eA(e) {
     messageItems: t
   } = e;
   t.forEach(e => {
-    null != e.message && R(e.message, !0)
+    null != e.message && P(e.message, !0)
   }, !1)
 }
 
@@ -602,27 +602,27 @@ function eC(e) {
   return null != t && (b[p.default.getId()] = t.set("ageVerificationStatus", i.F$.CLIENT_ONLY_PENDING), !0)
 }
 
-function eP(e) {
+function eR(e) {
   let {
     status: t
   } = e, n = b[p.default.getId()];
   return null != n && n.ageVerificationStatus === i.F$.CLIENT_ONLY_PENDING && (b[p.default.getId()] = n.set("ageVerificationStatus", t), !0)
 }
-class eR extends h.Z {
+class eP extends h.Z {
   initialize() {
     this.waitFor(p.default, c.Z)
   }
   takeSnapshot() {
     let e = this.getCurrentUser();
     return {
-      version: eR.LATEST_SNAPSHOT_VERSION,
+      version: eP.LATEST_SNAPSHOT_VERSION,
       data: {
         users: [e].filter(_.lm)
       }
     }
   }
   handleLoadCache(e) {
-    let t = this.readSnapshot(eR.LATEST_SNAPSHOT_VERSION);
+    let t = this.readSnapshot(eP.LATEST_SNAPSHOT_VERSION);
     if (null != t)
       for (let e of t.users) b[e.id] = new d.Z(e);
     if (null != e.users)
@@ -699,7 +699,7 @@ class eR extends h.Z {
       THREAD_MEMBER_LIST_UPDATE: el,
       THREAD_MEMBERS_UPDATE: ec,
       CHANNEL_CREATE: q,
-      CHANNEL_UPDATES: Q,
+      CHANNEL_UPDATES: X,
       RELATIONSHIP_ADD: ed,
       GAME_RELATIONSHIP_ADD: ef,
       LOAD_RELATIONSHIPS_SUCCESS: e_,
@@ -727,9 +727,9 @@ class eR extends h.Z {
       LOAD_GRAVITY_HYDRATED: eA,
       EMBEDDED_ACTIVITY_UPDATE_V2: eN,
       INITIATE_AGE_VERIFICATION: eC,
-      CLOSE_AGE_VERIFICATION_MODAL: eP
+      CLOSE_AGE_VERIFICATION_MODAL: eR
     })
   }
 }
-E(eR, "displayName", "UserStore"), E(eR, "LATEST_SNAPSHOT_VERSION", 1);
-let ew = new eR
+E(eP, "displayName", "UserStore"), E(eP, "LATEST_SNAPSHOT_VERSION", 1);
+let ew = new eP

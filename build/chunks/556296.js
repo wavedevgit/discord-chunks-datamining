@@ -60,12 +60,12 @@ function C(e, t) {
   return n
 }
 
-function P(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = new f.Z("KeybindsStore"),
+let P = new f.Z("KeybindsStore"),
   w = {
     id: "1000",
     action: v.kg4.TOGGLE_MUTE,
@@ -125,7 +125,7 @@ function Y() {
 
 function W() {
   let e = x();
-  F && (X(e.id), F = !1)
+  F && (Q(e.id), F = !1)
 }
 
 function K() {
@@ -139,7 +139,7 @@ function K() {
 
 function z() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  (B || e) && (X(w.id), B = !1)
+  (B || e) && (Q(w.id), B = !1)
 }
 
 function q(e) {
@@ -149,16 +149,16 @@ function q(e) {
   t ? K() : z(!0)
 }
 
-function Q(e, t, n, r) {
+function X(e, t, n, r) {
   if (g.isPlatformEmbedded) E.ZP.inputEventRegister(parseInt(e), t, n, r);
   else {
-    X(e);
+    Q(e);
     let i = (0, _.r)(document);
     r.keyup && i.bindGlobal((0, y.BB)(t), () => n(!1), "keyup"), r.keydown && i.bindGlobal((0, y.BB)(t), () => n(!0), "keydown"), k[e] = i
   }
 }
 
-function X(e) {
+function Q(e) {
   if (g.isPlatformEmbedded) E.ZP.inputEventUnregister(parseInt(e, 10));
   else {
     let t = k[e];
@@ -181,10 +181,10 @@ function J(e) {
     enabled: r
   } = e;
   if (0 === t.length || null == t || n === v.kg4.UNASSIGNED || !r) return;
-  if (null == G[n]) return void R.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
+  if (null == G[n]) return void P.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
   let i = e.id,
     a = G[n].keyEvents;
-  e.action === v.kg4.TOGGLE_MUTE && z(), e.action === v.kg4.TOGGLE_OVERLAY_INPUT_LOCK && W(), Q(i, t, e => H(i, e), N({
+  e.action === v.kg4.TOGGLE_MUTE && z(), e.action === v.kg4.TOGGLE_OVERLAY_INPUT_LOCK && W(), X(i, t, e => H(i, e), N({
     focused: !0,
     blurred: !0,
     keydown: !1,
@@ -201,13 +201,13 @@ function $(e) {
     managed: !1,
     params: {}
   }, e);
-  return M = P(N({}, M), {
+  return M = R(N({}, M), {
     [t.id]: t
   }), j += 1, t
 }
 
 function ee(e) {
-  X(e.id), M = N({}, M), delete M[e.id], e.action === v.kg4.TOGGLE_MUTE && K(), e.action === v.kg4.TOGGLE_OVERLAY_INPUT_LOCK && Y()
+  Q(e.id), M = N({}, M), delete M[e.id], e.action === v.kg4.TOGGLE_MUTE && K(), e.action === v.kg4.TOGGLE_OVERLAY_INPUT_LOCK && Y()
 }
 
 function et(e) {
@@ -232,7 +232,7 @@ function er(e) {
   let {
     keybind: t
   } = e;
-  M = P(N({}, M), {
+  M = R(N({}, M), {
     [t.id]: t
   }), __OVERLAY__ || (m.default.track(v.rMx.USER_SETTINGS_KEYBIND_UPDATED, {
     keybind_action: t.action,
@@ -249,7 +249,7 @@ function ei(e) {
   let {
     enable: t
   } = e;
-  U = t, t ? (d.Z.enable(), l().forEach(M, J), K(), Y()) : (d.Z.disable(), l().forEach(M, e => X(e.id)), z(), W())
+  U = t, t ? (d.Z.enable(), l().forEach(M, J), K(), Y()) : (d.Z.disable(), l().forEach(M, e => Q(e.id)), z(), W())
 }
 
 function ea(e) {
@@ -261,7 +261,7 @@ function ea(e) {
     try {
       J(e)
     } catch (t) {
-      R.error("Failed to register keybind", e, t)
+      P.error("Failed to register keybind", e, t)
     }
   }), U = !0, null == r && (r = p.Z.subscribe({
     location: "KeybindsStore"
@@ -302,7 +302,7 @@ let el = [function() {
     else {
       if (null == t) return e || !1;
       er({
-        keybind: P(N({}, r), {
+        keybind: R(N({}, r), {
           shortcut: "string" == typeof t ? (0, y.Kd)(t) : t,
           context: n
         })
@@ -396,7 +396,7 @@ A(ed, "displayName", "KeybindsStore"), A(ed, "persistKey", "keybinds"), A(ed, "m
         r = (0, y.Kd)("`").map(e => e[1]);
       if (o()(n, r)) return e
     }
-    return P(N({}, e), {
+    return R(N({}, e), {
       [n]: t
     })
   }, {})
@@ -407,7 +407,7 @@ A(ed, "displayName", "KeybindsStore"), A(ed, "persistKey", "keybinds"), A(ed, "m
     if (null != i) {
       if (null == i.params || null == i.enabled) {
         var n;
-        i = P(N({}, i), {
+        i = R(N({}, i), {
           enabled: !1 !== i.enabled,
           params: null != (n = i.params) ? n : {}
         })
@@ -416,7 +416,7 @@ A(ed, "displayName", "KeybindsStore"), A(ed, "persistKey", "keybinds"), A(ed, "m
     }
   }
   return t
-}, e => l().reduce(e, (e, t, n) => t.action === v.kg4.TOGGLE_GO_LIVE_STREAMING && t.managed ? e : P(N({}, e), {
+}, e => l().reduce(e, (e, t, n) => t.action === v.kg4.TOGGLE_GO_LIVE_STREAMING && t.managed ? e : R(N({}, e), {
   [n]: t
 }), {})]);
 let ef = new ed(u.Z, {

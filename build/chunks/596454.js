@@ -93,8 +93,8 @@ function A(e) {
       isInteracting: A = !1,
       shouldAnimate: N,
       onMouseEnter: C,
-      onMouseLeave: P,
-      canSelect: R = !0,
+      onMouseLeave: R,
+      canSelect: P = !0,
       autoplay: w,
       registerInnerRef: D,
       registerAnimatedElementRef: L
@@ -121,9 +121,9 @@ function A(e) {
     }))
   }, [K]), q = i.useCallback(e => {
     O && M(!0), null == f && B(p), null == C || C(e)
-  }, [O, p, C, B, f]), Q = i.useCallback(e => {
-    O && M(!1), null == f && F(p), null == P || P(e)
-  }, [O, f, p, P, F]), X = i.useMemo(() => {
+  }, [O, p, C, B, f]), X = i.useCallback(e => {
+    O && M(!1), null == f && F(p), null == R || R(e)
+  }, [O, f, p, R, F]), Q = i.useMemo(() => {
     let e = null != f && "" !== f ? {
       "data-id": f
     } : {
@@ -135,10 +135,10 @@ function A(e) {
       }),
       onError: z,
       onMouseEnter: q,
-      onMouseLeave: Q,
+      onMouseLeave: X,
       "data-type": "emoji"
     }), e)
-  }, [c, f, p, q, Q, z, x, S]);
+  }, [c, f, p, q, X, z, x, S]);
   i.useEffect(() => () => {
     var e;
     return null == (e = G.current) ? void 0 : e.call(G)
@@ -157,12 +157,12 @@ function A(e) {
       emojiName: p,
       disable: !1 === H || !1 === V,
       emojiRef: $
-    }), R ? (0, r.jsx)("img", v(y({}, X), {
+    }), P ? (0, r.jsx)("img", v(y({}, Q), {
       ref: J,
       src: K,
       alt: null != (t = null != s ? s : p) ? t : void 0,
       draggable: !1
-    }), j) : (0, r.jsx)("div", v(y({}, X), {
+    }), j) : (0, r.jsx)("div", v(y({}, Q), {
       ref: J,
       role: "img",
       "aria-label": null != (n = null != s ? s : p) ? n : void 0,

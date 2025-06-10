@@ -5,7 +5,7 @@ n.d(t, {
 }), n(388685), n(583741);
 var r = n(255367),
   i = n(73800),
-  a = n(386230),
+  a = n(524979),
   o = n(442837),
   s = n(481060),
   l = n(607070),
@@ -86,7 +86,7 @@ function O(e) {
     isProgressBarAnimationComplete: A,
     setShouldFireConfetti: N,
     shouldFireConfetti: C,
-    tierMarkerAnimationPosition: P
+    tierMarkerAnimationPosition: R
   } = y({
     fillFactor: I,
     isRevealed: v,
@@ -133,7 +133,7 @@ function O(e) {
       setConfettiCount: E,
       setShouldFireConfetti: N,
       tier: e,
-      tierMarkerAnimationPosition: P,
+      tierMarkerAnimationPosition: R,
       totalAvailableBoostsCount: S,
       children: (0, c.nW)(e)
     }, e)), (0, r.jsx)(u.Z, {

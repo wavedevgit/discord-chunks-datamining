@@ -29,8 +29,8 @@ var r = n(255367),
   A = n(166584),
   N = n(915014),
   C = n(228168),
-  P = n(981631),
-  R = n(388032),
+  R = n(981631),
+  P = n(388032),
   w = n(200669);
 
 function D(e) {
@@ -79,7 +79,7 @@ function D(e) {
           onOpenProfile: k
         })]
       })
-    }), G === P.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
+    }), G === R.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
       children: (0, r.jsx)(g.Z, {
         user: t,
         guildId: null == L ? void 0 : L.id,
@@ -103,7 +103,7 @@ function D(e) {
     }), t.isProvisional ? (0, r.jsx)(O.Z.Overlay, {
       className: w.card,
       children: (0, r.jsx)(b.Z, {
-        heading: R.intl.string(R.t.Iyka0d),
+        heading: P.intl.string(P.t.Iyka0d),
         headingIcon: (0, r.jsx)(a.P4T, {
           size: "xxs",
           color: a.TVs.colors.HEADER_PRIMARY

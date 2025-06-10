@@ -69,18 +69,18 @@ e.exports = function(e) {
       literal: d
     },
     C = [E, S, A],
-    P = [{
+    R = [{
       match: r(/\./, a(...p)),
       relevance: 0
     }, {
       className: "built_in",
       match: r(/\b/, a(...p), /(?=\()/)
     }],
-    R = {
+    P = {
       match: /->/,
       relevance: 0
     },
-    w = [R, {
+    w = [P, {
       className: "operator",
       relevance: 0,
       variants: [{
@@ -217,10 +217,10 @@ e.exports = function(e) {
       begin: /</,
       end: />/,
       keywords: N,
-      contains: [...h, ...C, ...K, R, z]
+      contains: [...h, ...C, ...K, P, z]
     };
   z.contains.push(q);
-  let Q = {
+  let X = {
       begin: /\(/,
       end: /\)/,
       relevance: 0,
@@ -229,9 +229,9 @@ e.exports = function(e) {
         match: r(y, /\s*:/),
         keywords: "_|0",
         relevance: 0
-      }, ...h, H, ...C, ...P, ...w, x, B, ...W, ...K, z]
+      }, ...h, H, ...C, ...R, ...w, x, B, ...W, ...K, z]
     },
-    X = {
+    Q = {
       begin: /</,
       end: />/,
       keywords: "repeat each",
@@ -252,7 +252,7 @@ e.exports = function(e) {
           className: "params",
           match: y
         }]
-      }, ...h, ...C, ...w, x, B, ...K, z, Q],
+      }, ...h, ...C, ...w, x, B, ...K, z, X],
       endsParent: !0,
       illegal: /["']/
     },
@@ -262,7 +262,7 @@ e.exports = function(e) {
         1: "keyword",
         3: "title.function"
       },
-      contains: [X, J, t],
+      contains: [Q, J, t],
       illegal: [/\[/, /%/]
     },
     ee = {
@@ -270,7 +270,7 @@ e.exports = function(e) {
       className: {
         1: "keyword"
       },
-      contains: [X, J, t],
+      contains: [Q, J, t],
       illegal: /\[|%/
     },
     et = {
@@ -312,7 +312,7 @@ e.exports = function(e) {
         3: "title.class"
       },
       keywords: N,
-      contains: [X, ...C, {
+      contains: [Q, ...C, {
         begin: /:/,
         end: /\{/,
         keywords: N,
@@ -326,7 +326,7 @@ e.exports = function(e) {
   for (let e of B.variants) {
     let t = e.contains.find(e => "interpol" === e.label);
     t.keywords = N;
-    let n = [...C, ...P, ...w, x, B, ...W];
+    let n = [...C, ...R, ...w, x, B, ...W];
     t.contains = [...n, {
       begin: /\(/,
       end: /\)/,
@@ -341,6 +341,6 @@ e.exports = function(e) {
       end: /$/,
       contains: [...h],
       relevance: 0
-    }, H, ...C, ...P, ...w, x, B, ...W, ...K, z, Q]
+    }, H, ...C, ...R, ...w, x, B, ...W, ...K, z, X]
   }
 }

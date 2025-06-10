@@ -28,8 +28,8 @@ var r, i = n(392711),
   A = n(430824),
   N = n(496675),
   C = n(699516),
-  P = n(944486),
-  R = n(914010),
+  R = n(944486),
+  P = n(914010),
   w = n(594174),
   D = n(981631);
 
@@ -202,7 +202,7 @@ function q(e) {
   r = r.remove(t), c.Z.commit(r), x.delete(t)
 }
 
-function Q(e) {
+function X(e) {
   let {
     ids: t,
     channelId: n
@@ -223,7 +223,7 @@ function Q(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   let t = e.message.id,
     n = e.message.channel_id,
     r = c.Z.getOrCreate(n);
@@ -374,7 +374,7 @@ function ep(e) {
 }
 class eh extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(w.default, v.Z, I.Z, T.ZP, E.default, P.Z, R.Z, A.Z, C.Z, S.ZP), this.syncWith([p.Z], () => {})
+    this.waitFor(w.default, v.Z, I.Z, T.ZP, E.default, R.Z, P.Z, A.Z, C.Z, S.ZP), this.syncWith([p.Z], () => {})
   }
   getMessages(e) {
     if (p.Z.hasViewingRoles()) {
@@ -454,10 +454,10 @@ let em = new eh(s.Z, {
   MESSAGE_SEND_FAILED: z,
   MESSAGE_SEND_FAILED_AUTOMOD: el,
   MESSAGE_EDIT_FAILED_AUTOMOD: el,
-  MESSAGE_UPDATE: X,
+  MESSAGE_UPDATE: Q,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: J,
   MESSAGE_DELETE: q,
-  MESSAGE_DELETE_BULK: Q,
+  MESSAGE_DELETE_BULK: X,
   MESSAGE_REVEAL: er,
   THREAD_CREATE_LOCAL: ee,
   CHANNEL_DELETE: et,

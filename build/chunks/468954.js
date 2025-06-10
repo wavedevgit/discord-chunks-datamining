@@ -71,8 +71,8 @@ function p(e) {
     renderCategoryList: A,
     renderHeaderAccessories: N,
     rowHeight: C,
-    sectionHeaderHeight: P,
-    sectionFooterHeight: R,
+    sectionHeaderHeight: R,
+    sectionFooterHeight: P,
     itemNodeWidth: w,
     listPaddingRight: D,
     itemNodeMargin: L,
@@ -90,8 +90,8 @@ function p(e) {
     expressionsGrid: K,
     rowCount: z,
     rowCountBySection: q,
-    columnCounts: Q,
-    gutterWidth: X
+    columnCounts: X,
+    gutterWidth: Q
   } = (0, o.yi)({
     categories: t,
     collapsedCategories: n,
@@ -106,7 +106,7 @@ function p(e) {
     handleGridContainerKeyDown: et,
     isUsingKeyboardNavigation: en
   } = (0, o.t$)({
-    columnCounts: Q,
+    columnCounts: X,
     expressionsListRef: F,
     expressionsGrid: K,
     onSelectItem: p,
@@ -114,11 +114,11 @@ function p(e) {
     gridNavigatorId: k
   }), er = i.useCallback((e, t) => y(K[e], $(e), {
     isUsingKeyboardNavigation: en.current,
-    gutterWidth: X,
+    gutterWidth: Q,
     rowIndex: e,
     totalRowCount: z,
     sectionIndex: t.sectionIndex
-  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, X, en, y, f, z]), ei = i.useCallback(e => null == O ? void 0 : O(t[e]), [t, O]), ea = i.useCallback(e => null == v ? void 0 : v(t[e], e), [t, v]), eo = i.useCallback(e => null == I ? void 0 : I(t[e], e), [t, I]), es = i.useCallback(() => {
+  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, Q, en, y, f, z]), ei = i.useCallback(e => null == O ? void 0 : O(t[e]), [t, O]), ea = i.useCallback(e => null == v ? void 0 : v(t[e], e), [t, v]), eo = i.useCallback(e => null == I ? void 0 : I(t[e], e), [t, I]), es = i.useCallback(() => {
     var e;
     return null == S ? void 0 : S(null == K || null == (e = K[Y.rowIndex]) ? void 0 : e[Y.columnIndex])
   }, [K, Y.columnIndex, Y.rowIndex, S]);
@@ -171,8 +171,8 @@ function p(e) {
           rowCount: z,
           rowCountBySection: q,
           rowHeight: C,
-          sectionHeaderHeight: P,
-          sectionFooterHeight: R,
+          sectionHeaderHeight: R,
+          sectionFooterHeight: P,
           renderUpsell: U,
           setShowUpsell: G
         }) : null

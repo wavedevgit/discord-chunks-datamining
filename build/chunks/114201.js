@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 });
 var r = n(255367),
   i = n(73800),
@@ -109,15 +109,15 @@ function C(e, t) {
   }
 }
 
-function P(e) {
+function R(e) {
   let {
     guildId: t,
     leaderboardId: p
-  } = e, I = (0, o.e7)([c.default], () => c.default.getId()), T = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.RIOT_GAMES)), N = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.LEAGUE_OF_LEGENDS)), P = (0, g.Z)({
+  } = e, I = (0, o.e7)([c.default], () => c.default.getId()), T = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.RIOT_GAMES)), N = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.LEAGUE_OF_LEGENDS)), R = (0, g.Z)({
     guildId: t,
     leaderboardId: p
   }), {
-    leaderboardsDisabled: R
+    leaderboardsDisabled: P
   } = (0, m.O)(t, p), w = null != N && null != T ? () => {
     _.default.track(y.rMx.LEADERBOARD_USER_DATA_REFRESH_REQUESTED, {
       leaderboard_id: p,
@@ -126,7 +126,7 @@ function P(e) {
       riotConnectionId: T.id,
       lolConnectionId: N.id
     })
-  } : y.dG4, D = null == T || R ? O.intl.string(O.t["0yRXHx"]) : O.intl.string(O.t["KWpU6+"]), {
+  } : y.dG4, D = null == T || P ? O.intl.string(O.t["0yRXHx"]) : O.intl.string(O.t["KWpU6+"]), {
     lastUpdateRequested: L,
     statisticLastUpdatedDate: x
   } = (0, E.Z)({
@@ -141,7 +141,7 @@ function P(e) {
     let e = d.Z.getGuild(t);
     return f.Z.can(y.Plq.ADMINISTRATOR, e)
   }, [t]), U = i.useRef(null);
-  return null == P ? null : (0, r.jsx)(s.yRy, {
+  return null == R ? null : (0, r.jsx)(s.yRy, {
     targetElementRef: U,
     align: "top",
     position: "right",
@@ -158,7 +158,7 @@ function P(e) {
         "aria-label": O.intl.string(O.t.BjCuf3),
         onSelect: void 0,
         children: (0, r.jsxs)(s.kSQ, {
-          children: [P.leaderboard_id === b.z && null != T && (0, r.jsx)(s.sNh, {
+          children: [R.leaderboard_id === b.z && null != T && (0, r.jsx)(s.sNh, {
             id: "refresh-my-data",
             label: O.intl.string(O.t.iopWUV),
             action: w,
@@ -174,7 +174,7 @@ function P(e) {
                 } = await n.e("73217").then(n.bind(n, 139964));
                 return n => (0, r.jsx)(e, A(S({}, n), {
                   guildId: t,
-                  leaderboard: P
+                  leaderboard: R
                 }))
               }), null == i || i()
             }

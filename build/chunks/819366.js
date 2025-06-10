@@ -97,8 +97,8 @@ function N(e) {
     parsedUserId: S,
     content: N,
     inlinePreview: C = !1,
-    viewingChannelId: P
-  } = e, R = i.useRef(null), {
+    viewingChannelId: R
+  } = e, P = i.useRef(null), {
     analyticsLocations: w
   } = (0, c.ZP)(l.Z.USER_MENTION), D = (0, o.e7)([E.default], () => E.default.getUser(d)), L = (0, o.e7)([p.Z], () => p.Z.getChannel(v)), x = null != L ? L.getGuildId() : null, k = C || null == D || null == x || null == v ? void 0 : e => {
     null != L && (0, s.jW)(e, async () => {
@@ -106,7 +106,7 @@ function N(e) {
         default: e
       } = await Promise.all([n.e("14006"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("32152")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, T(I({}, t), {
-        viewingChannelId: P,
+        viewingChannelId: R,
         user: D,
         channel: L,
         guildId: x
@@ -119,7 +119,7 @@ function N(e) {
     children: N
   });
   let B = e => (0, r.jsx)(f.Z, T(I({
-    ref: R,
+    ref: P,
     className: t,
     onContextMenu: k,
     color: G
@@ -132,7 +132,7 @@ function N(e) {
   }) : (0, r.jsx)(c.Gt, {
     value: w,
     children: (0, r.jsx)(_.Z, {
-      targetElementRef: R,
+      targetElementRef: P,
       user: D,
       guildId: null != x ? x : void 0,
       channelId: v,

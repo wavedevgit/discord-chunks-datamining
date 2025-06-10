@@ -36,8 +36,8 @@ let y = [E.ff.AUTHENTICATION_FAILED, E.ff.NOT_ENTITLED],
   A = null,
   N = !1,
   C = new Map,
-  P = !1,
-  R = null;
+  R = !1,
+  P = null;
 
 function w() {
   let e = {
@@ -66,7 +66,7 @@ function L() {
       let e = d.default.getToken(),
         t = d.default.getId();
       if (null == e) throw Error("missing user token");
-      P = !p.Z.setCurrentTask(r, i, n, t, e)
+      R = !p.Z.setCurrentTask(r, i, n, t, e)
     }
   }
 }
@@ -210,7 +210,7 @@ function W(e) {
 function K() {
   for (let e of u.ZP.getRunningDiscordApplicationIds()) c.al(e, e);
   let e = u.ZP.getVisibleGame();
-  return S || null == e || e.pid === R || c.wO(), R = null == e ? null : e.pid, !1
+  return S || null == e || e.pid === P || c.wO(), P = null == e ? null : e.pid, !1
 }
 
 function z() {
@@ -221,13 +221,13 @@ function q() {
   s.K.remove(O), (0, h.isDesktop)() && p.Z.pause()
 }
 
-function Q(e) {
+function X(e) {
   return e.map(e => "string" == typeof e ? {
     comboId: e,
     action: "Patch"
   } : e)
 }
-class X extends(r = o.ZP.Store) {
+class Q extends(r = o.ZP.Store) {
   initialize() {
     var e;
     let t = null != (e = s.K.get(O)) ? e : {
@@ -235,7 +235,7 @@ class X extends(r = o.ZP.Store) {
       paused: null,
       userActions: null
     };
-    null != t.queue && (v = Q(t.queue)), null != t.paused && (S = t.paused), null != t.userActions && (C = new Map(Array.from(t.userActions))), this.waitFor(m.Z, u.ZP), this.syncWith([u.ZP], K), this.waitFor(m.Z)
+    null != t.queue && (v = X(t.queue)), null != t.paused && (S = t.paused), null != t.userActions && (C = new Map(Array.from(t.userActions))), this.waitFor(m.Z, u.ZP), this.syncWith([u.ZP], K), this.waitFor(m.Z)
   }
   get activeItems() {
     return v.map(e => {
@@ -255,11 +255,11 @@ class X extends(r = o.ZP.Store) {
     return x(e, t)
   }
   isCorruptInstallation() {
-    return P
+    return R
   }
 }
-b(X, "displayName", "DispatchManagerStore");
-let J = new X(l.Z, {
+b(Q, "displayName", "DispatchManagerStore");
+let J = new Q(l.Z, {
   DISPATCH_APPLICATION_INSTALL: j,
   DISPATCH_APPLICATION_UPDATE: B,
   DISPATCH_APPLICATION_UNINSTALL: U,

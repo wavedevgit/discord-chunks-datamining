@@ -89,8 +89,8 @@ let O = function(e) {
     applicationId: A,
     giftMessage: N,
     shinyButtonClassName: C,
-    showGradient: P = !1,
-    confirmationFooter: R,
+    showGradient: R = !1,
+    confirmationFooter: P,
     paymentModalBanner: w,
     isGift: D,
     color: L,
@@ -111,7 +111,7 @@ let O = function(e) {
       onSubscribeModalClose: v,
       premiumModalAnalyticsLocation: I,
       applicationId: A,
-      confirmationFooter: R,
+      confirmationFooter: P,
       paymentModalBanner: w,
       isGift: D,
       giftMessage: N
@@ -173,8 +173,8 @@ let O = function(e) {
           size: i,
           className: C,
           wrapperClassName: a()({
-            [p.tier2Gradient]: P && t === f.Si.TIER_2,
-            [p.tier1Gradient]: P && t === f.Si.TIER_1
+            [p.tier2Gradient]: R && t === f.Si.TIER_2,
+            [p.tier1Gradient]: R && t === f.Si.TIER_1
           }, h),
           buttonShineClassName: "buttonShineClassName" in j ? j.buttonShineClassName : n === l.Ttl.BRAND_INVERTED ? p.brandShine : void 0,
           pauseAnimation: !U || T

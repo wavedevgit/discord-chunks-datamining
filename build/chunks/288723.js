@@ -34,7 +34,7 @@ let d = {
             flipVariations: O,
             allowedAutoPlacements: v
           }) : n)
-        }, []), C = t.rects.reference, P = t.rects.popper, R = new Map, w = !0, D = N[0], L = 0; L < N.length; L++) {
+        }, []), C = t.rects.reference, R = t.rects.popper, P = new Map, w = !0, D = N[0], L = 0; L < N.length; L++) {
         var x = N[L],
           k = (0, i.Z)(x),
           M = (0, c.Z)(x) === l.BL,
@@ -48,7 +48,7 @@ let d = {
             padding: m
           }),
           B = j ? M ? l.F2 : l.t$ : M ? l.I : l.we;
-        C[U] > P[U] && (B = (0, r.Z)(B));
+        C[U] > R[U] && (B = (0, r.Z)(B));
         var F = (0, r.Z)(B),
           V = [];
         if (f && V.push(G[k] <= 0), p && V.push(G[B] <= 0, G[F] <= 0), V.every(function(e) {
@@ -57,12 +57,12 @@ let d = {
           D = x, w = !1;
           break
         }
-        R.set(x, V)
+        P.set(x, V)
       }
       if (w)
         for (var Z = O ? 3 : 1, H = function(e) {
             var t = N.find(function(t) {
-              var n = R.get(t);
+              var n = P.get(t);
               if (n) return n.slice(0, e).every(function(e) {
                 return e
               })

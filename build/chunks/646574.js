@@ -7,7 +7,7 @@ var r = n(255367),
   i = n(73800),
   a = n(120356),
   o = n.n(a),
-  s = n(386230),
+  s = n(524979),
   l = n(442837),
   c = n(704215),
   u = n(481060),
@@ -61,10 +61,10 @@ function v(e) {
     checked: t,
     onClick: n,
     id: a = "burst-reaction-toggle-button"
-  } = e, v = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), I = _.default.getCurrentUser(), S = null == I || (0, p.I5)(I) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [T, A] = (0, f.US)(S), [N, C] = i.useState(!1), [P, R] = (0, u.q_F)(() => ({})), w = (0, s.animated)(u.Pt5);
+  } = e, v = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), I = _.default.getCurrentUser(), S = null == I || (0, p.I5)(I) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [T, A] = (0, f.US)(S), [N, C] = i.useState(!1), [R, P] = (0, u.q_F)(() => ({})), w = (0, s.animated)(u.Pt5);
 
   function D() {
-    R({
+    P({
       from: {
         rotate: t ? "360deg" : "0deg"
       },
@@ -106,7 +106,7 @@ function v(e) {
         className: g.shine,
         shinePaused: v
       }) : null, (0, r.jsx)(w, {
-        style: v ? void 0 : P,
+        style: v ? void 0 : R,
         size: "custom",
         width: b,
         height: b,

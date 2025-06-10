@@ -95,7 +95,7 @@ function D() {
         s = (0, a.e7)([h.ZP], () => Array.from(h.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
-          } = t, r = (0, p.pY)(n);
+          } = t, r = (0, p.p)(n);
           return null != r && null != e[r]
         })),
         c = o.length > 0,

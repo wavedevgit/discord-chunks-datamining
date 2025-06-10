@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => R,
-  E: () => P
+  B: () => P,
+  E: () => R
 }), n(953529);
 var r = n(255367);
 n(73800);
@@ -91,7 +91,7 @@ let O = (e, t, n) => null != n && e.productLine === E.POd.COLLECTIBLES && n.type
       })
     })
   },
-  P = e => {
+  R = e => {
     let {
       sku: t,
       value: n
@@ -114,7 +114,7 @@ let O = (e, t, n) => null != n && e.productLine === E.POd.COLLECTIBLES && n.type
     })
   };
 
-function R(e) {
+function P(e) {
   let {
     sku: t,
     skuPricePreview: n

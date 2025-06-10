@@ -29,9 +29,9 @@ var r = n(392711),
   A = n(51144),
   N = n(981631),
   C = n(185923),
-  P = n(388032);
+  R = n(388032);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -47,7 +47,7 @@ function w(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -337,7 +337,7 @@ let U = u.Z.RULES,
     spoiler: {
       match: o().anyScopeRegex(N.$92),
       parse: () => ({
-        content: "<".concat(P.intl.string(P.t["F+x38P"]).toLowerCase(), ">")
+        content: "<".concat(R.intl.string(R.t["F+x38P"]).toLowerCase(), ">")
       })
     },
     staticRouteLink: {
@@ -377,7 +377,7 @@ function q(e, t, n) {
   }
 }
 
-function Q(e, t, n, r) {
+function X(e, t, n, r) {
   let i = "";
   return e.forEach(e => {
     if (q(t, e, r), "string" == typeof e.content) switch (e.type) {
@@ -391,12 +391,12 @@ function Q(e, t, n, r) {
         break;
       default:
         i += n(e.content)
-    } else e.content.constructor === Array ? i += Q(e.content, t, n, r) : console.warn("Unknown message item type: ", e)
+    } else e.content.constructor === Array ? i += X(e.content, t, n, r) : console.warn("Unknown message item type: ", e)
   }), i
 }
 
-function X(e, t, n) {
-  return Q(K(e, t), t, c.ZP.translateInlineEmojiToSurrogates, n)
+function Q(e, t, n) {
+  return X(K(e, t), t, c.ZP.translateInlineEmojiToSurrogates, n)
 }
 
 function J(e) {
@@ -489,7 +489,7 @@ let ee = {
         invalidEmojis: [],
         validNonShortcutEmojis: []
       };
-    return i.content = X(i.content, r, (t, n) => {
+    return i.content = Q(i.content, r, (t, n) => {
       T.ZP.isEmojiPremiumLocked({
         emoji: t,
         channel: e,
@@ -510,6 +510,6 @@ let ee = {
         guild: s,
         isNotification: n
       };
-    return Q(d(e, f), f, u)
+    return X(d(e, f), f, u)
   }
 }

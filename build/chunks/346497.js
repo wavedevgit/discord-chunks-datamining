@@ -4,7 +4,7 @@ n.d(t, {
   Vi: () => C,
   W1: () => D,
   k: () => w,
-  l2: () => R
+  l2: () => P
 });
 var r = n(913527),
   i = n.n(r),
@@ -94,7 +94,7 @@ function C() {
     });
   return !_ && I
 }
-async function P() {
+async function R() {
   var e;
   let t = c.default.getCurrentUser(),
     n = !(null == t ? void 0 : t.isClaimed()),
@@ -124,15 +124,15 @@ async function P() {
     mostRecentSubscription: l
   })
 }
-async function R() {
-  if (!await P()) return;
+async function P() {
+  if (!await R()) return;
   let e = v.Z.bogoPromotion;
   null != e && new Date(e.endDate).valueOf() >= Date.now() || await (0, y.L9)()
 }
 async function w() {
   let e = v.Z.bogoPromotion,
     t = null != e && new Date(e.endDate).valueOf() >= Date.now() && new Date(e.startDate).valueOf() <= Date.now(),
-    n = await P(),
+    n = await R(),
     {
       enabled: r
     } = m.Am.getCurrentConfig({

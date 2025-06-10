@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => X
+  Z: () => Q
 }), n(388685), n(781311), n(35282), n(539854);
 var r, i = n(956067),
   a = n(442837),
@@ -63,10 +63,10 @@ let O = 2,
   A = null,
   N = !1,
   C = new Map,
-  P = (e, t) => {
+  R = (e, t) => {
     C = new Map(C.set(e, t))
   },
-  R = p.Z.Millis.HOUR,
+  P = p.Z.Millis.HOUR,
   w = async () => {
     if (0 !== O) return;
     let e = s.Z.database();
@@ -87,7 +87,7 @@ function D(e) {
     if (f.Z.isMember(e) && !C.has(e)) {
       let t = _.Z.getGuild(e);
       for (let e of n) L(e, !0, t);
-      P(e, n)
+      R(e, n)
     }
 }
 let L = function(e) {
@@ -164,7 +164,7 @@ let L = function(e) {
 
 function G(e) {
   let t = _.Z.getGuild(e.id);
-  null != t && null != e.stickers && (e.stickers.forEach(e => L(e, !0, t)), P(t.id, e.stickers))
+  null != t && null != e.stickers && (e.stickers.forEach(e => L(e, !0, t)), R(t.id, e.stickers))
 }
 
 function B(e) {
@@ -207,7 +207,7 @@ let V = () => {
       guildId: t,
       stickers: n
     } = e;
-    n.forEach(e => L(e)), P(t, n)
+    n.forEach(e => L(e)), R(t, n)
   },
   K = e => {
     var t, n;
@@ -215,7 +215,7 @@ let V = () => {
       guildId: r,
       sticker: i
     } = e, a = null != (t = C.get(r)) ? t : [];
-    P(r, [...null != (n = a.filter(e => e.id !== i.id)) ? n : [], i]), L(i)
+    R(r, [...null != (n = a.filter(e => e.id !== i.id)) ? n : [], i]), L(i)
   },
   z = e => {
     let {
@@ -238,9 +238,9 @@ let V = () => {
       I.delete(e.id), null != S && S.delete(e.id)
     });
     let a = r.map(e => i(e));
-    a.forEach(e => L(e)), P(n, a)
+    a.forEach(e => L(e)), R(n, a)
   };
-class Q extends(r = a.ZP.Store) {
+class X extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(s.Z, f.Z, _.Z)
   }
@@ -254,7 +254,7 @@ class Q extends(r = a.ZP.Store) {
     return w(), null == S && (S = new Map, M()), S
   }
   get hasLoadedStickerPacks() {
-    return null != A && A + R > Date.now()
+    return null != A && A + P > Date.now()
   }
   get isFetchingStickerPacks() {
     return N
@@ -284,8 +284,8 @@ class Q extends(r = a.ZP.Store) {
     return w(), C.get(e)
   }
 }
-g(Q, "displayName", "StickersStore");
-let X = new Q(o.Z, {
+g(X, "displayName", "StickersStore");
+let Q = new X(o.Z, {
   BACKGROUND_SYNC: U,
   CONNECTION_OPEN: j,
   GUILD_CREATE: B,

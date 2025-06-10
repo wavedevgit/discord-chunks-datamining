@@ -9,7 +9,7 @@ var r = n(255367),
   o = n.n(a),
   s = n(392711),
   l = n.n(s),
-  c = n(386230),
+  c = n(524979),
   u = n(91192),
   d = n(336317),
   f = n(477690),
@@ -66,7 +66,7 @@ function N(e, t) {
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = P(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,14 +74,14 @@ function C(e, t) {
   return i
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = 20,
+let P = 20,
   w = 125,
   D = (0, g.hQ)(),
   L = d.Z.convert.fromCodePoint("1f44f"),
@@ -169,7 +169,7 @@ let j = e => {
             children: p.map((e, t) => (0, r.jsx)(j, {
               index: t,
               fade: 0 !== t,
-              delay: t * R,
+              delay: t * P,
               surrogate: e,
               onClick: a
             }, t))

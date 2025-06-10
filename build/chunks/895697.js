@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 });
 var r = n(255367);
 n(73800);
@@ -31,17 +31,17 @@ var i = n(442837),
   N = n(773714),
   C = n(200669);
 
-function P(e) {
+function R(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: P,
-    guild: R,
+    displayProfile: R,
+    guild: P,
     isHovering: w,
     onOpenProfile: D,
     channelId: L,
     onClose: x
-  } = e, k = c.ZP.getName(null == R ? void 0 : R.id, L, t), M = (0, i.e7)([u.Z], () => {
+  } = e, k = c.ZP.getName(null == P ? void 0 : P.id, L, t), M = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? void 0 : e.application
   }), j = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
@@ -54,9 +54,9 @@ function P(e) {
       user: t,
       onOpenProfile: D,
       nickname: k,
-      pronouns: null == P ? void 0 : P.pronouns,
+      pronouns: null == R ? void 0 : R.pronouns,
       tags: (0, r.jsx)(_.Z, {
-        displayProfile: P,
+        displayProfile: R,
         themeType: T.lY.POPOUT,
         onClose: x
       }),
@@ -82,39 +82,39 @@ function P(e) {
         closePopout: x
       }), (0, r.jsx)(y.Z, {
         user: t,
-        guildId: null == R ? void 0 : R.id,
+        guildId: null == P ? void 0 : P.id,
         className: N.button
       })]
     }), (0, r.jsx)(v.Z, {
       user: t,
-      bio: null == P ? void 0 : P.bio,
+      bio: null == R ? void 0 : R.bio,
       hidePersonalInformation: U,
       onClose: x
     }), G ? (0, r.jsx)(g.Z, {
       user: t,
       currentUser: n,
-      displayProfile: P,
-      guildId: null == R ? void 0 : R.id,
+      displayProfile: R,
+      guildId: null == P ? void 0 : P.id,
       onOpenUserProfileModal: D,
       onClose: x
     }) : (0, r.jsx)(p.Z, {
       user: t,
       currentUser: n,
-      displayProfile: P,
-      guildId: null == R ? void 0 : R.id,
+      displayProfile: R,
+      guildId: null == P ? void 0 : P.id,
       onClose: x
     }), (null == M ? void 0 : M.popularApplicationCommandIds) != null && null != j && (0, r.jsx)(f.Z, {
       applicationId: M.id,
       commandIds: M.popularApplicationCommandIds,
       channel: j,
-      guildId: null == R ? void 0 : R.id,
+      guildId: null == P ? void 0 : P.id,
       onClick: x
-    }), null != R && (0, r.jsx)(m.Z, {
+    }), null != P && (0, r.jsx)(m.Z, {
       heading: A.intl.string(A.t.LPJmLy),
       children: (0, r.jsx)(I.Z, {
         user: t,
         currentUser: n,
-        guild: R
+        guild: P
       })
     })]
   })

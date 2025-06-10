@@ -48,7 +48,7 @@ function h(e) {
   let r = i.Z.getApplication(t);
   if (null != r) return _({
     application: r,
-    channelId: (0, c.pY)(n.location)
+    channelId: (0, c.p)(n.location)
   })
 }
 

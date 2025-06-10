@@ -3,7 +3,7 @@
 n.d(t, {
   Ox: () => N,
   QP: () => I,
-  ob: () => P,
+  ob: () => R,
   q4: () => C
 }), n(388685);
 var r = n(255367),
@@ -80,7 +80,7 @@ function S(e) {
     item: t,
     containerRef: n
   } = e;
-  return (0, f.Tbt)(n), i.useEffect(() => (_.Z.disable(), t.key !== m.CV && _.Z.enableTemp(R(t.key)), () => {
+  return (0, f.Tbt)(n), i.useEffect(() => (_.Z.disable(), t.key !== m.CV && _.Z.enableTemp(P(t.key)), () => {
     _.Z.disableTemp()
   }), [t.key]), (0, r.jsx)(t.LayerComponent, {
     children: (0, r.jsxs)("div", {
@@ -90,7 +90,7 @@ function S(e) {
         className: g.drag
       }), t.render({
         transitionState: null != t ? t.transitionState : 3,
-        closeLayer: () => P(t.key)
+        closeLayer: () => R(t.key)
       })]
     })
   })
@@ -167,7 +167,7 @@ function C(e) {
   }), i
 }
 
-function P(e) {
+function R(e) {
   (0, u.j)(() => {
     I.setState(t => ({
       fullScreenLayers: t.fullScreenLayers.filter(t => t.key !== e)
@@ -175,13 +175,13 @@ function P(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   return {
     POP_LAYER: {
       binds: ["esc"],
       comboKeysBindGlobal: !0,
       action() {
-        P(e)
+        R(e)
       }
     }
   }

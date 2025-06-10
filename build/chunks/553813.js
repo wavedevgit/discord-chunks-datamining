@@ -187,12 +187,12 @@ function C(e, t) {
   return new y(e, t).patch
 }
 
-function P(e, t, n) {
+function R(e, t, n) {
   return new y(e, n).compare(new y(t, n))
 }
 
-function R(e, t) {
-  return P(e, t, !0)
+function P(e, t) {
+  return R(e, t, !0)
 }
 
 function w(e, t, n) {
@@ -202,7 +202,7 @@ function w(e, t, n) {
 }
 
 function D(e, t, n) {
-  return P(t, e, n)
+  return R(t, e, n)
 }
 
 function L(e, n) {
@@ -218,27 +218,27 @@ function x(e, n) {
 }
 
 function k(e, t, n) {
-  return P(e, t, n) > 0
+  return R(e, t, n) > 0
 }
 
 function M(e, t, n) {
-  return 0 > P(e, t, n)
+  return 0 > R(e, t, n)
 }
 
 function j(e, t, n) {
-  return 0 === P(e, t, n)
+  return 0 === R(e, t, n)
 }
 
 function U(e, t, n) {
-  return 0 !== P(e, t, n)
+  return 0 !== R(e, t, n)
 }
 
 function G(e, t, n) {
-  return P(e, t, n) >= 0
+  return R(e, t, n) >= 0
 }
 
 function B(e, t, n) {
-  return 0 >= P(e, t, n)
+  return 0 >= R(e, t, n)
 }
 
 function F(e, t, n, r) {
@@ -276,7 +276,7 @@ function V(e, t) {
   if (!(this instanceof V)) return new V(e, t);
   r("comparator", e, t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === Z ? this.value = "" : this.value = this.operator + this.semver.version, r("comp", this)
 }
-t.rcompareIdentifiers = T, t.major = A, t.minor = N, t.patch = C, t.compare = P, t.compareLoose = R, t.compareBuild = w, t.rcompare = D, t.sort = L, t.rsort = x, t.gt = k, t.lt = M, t.eq = j, t.neq = U, t.gte = G, t.lte = B, t.cmp = F, t.Comparator = V;
+t.rcompareIdentifiers = T, t.major = A, t.minor = N, t.patch = C, t.compare = R, t.compareLoose = P, t.compareBuild = w, t.rcompare = D, t.sort = L, t.rsort = x, t.gt = k, t.lt = M, t.eq = j, t.neq = U, t.gte = G, t.lte = B, t.cmp = F, t.Comparator = V;
 var Z = {};
 
 function H(e, t) {
@@ -312,7 +312,7 @@ function W(e, t) {
 }
 
 function K(e, t) {
-  return r("comp", e, t), r("caret", e = X(e, t)), r("tildes", e = q(e, t)), r("xrange", e = $(e, t)), r("stars", e = et(e, t)), e
+  return r("comp", e, t), r("caret", e = Q(e, t)), r("tildes", e = q(e, t)), r("xrange", e = $(e, t)), r("stars", e = et(e, t)), e
 }
 
 function z(e) {
@@ -321,11 +321,11 @@ function z(e) {
 
 function q(e, t) {
   return e.trim().split(/\s+/).map(function(e) {
-    return Q(e, t)
+    return X(e, t)
   }).join(" ")
 }
 
-function Q(e, t) {
+function X(e, t) {
   var n = t.loose ? l[u.TILDELOOSE] : l[u.TILDE];
   return e.replace(n, function(t, n, i, a, o) {
     var s;
@@ -333,7 +333,7 @@ function Q(e, t) {
   })
 }
 
-function X(e, t) {
+function Q(e, t) {
   return e.trim().split(/\s+/).map(function(e) {
     return J(e, t)
   }).join(" ")

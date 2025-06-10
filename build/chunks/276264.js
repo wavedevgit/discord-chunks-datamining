@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => Q,
+  Z: () => X,
   x: () => F
 }), n(388685);
 var r = n(255367),
@@ -30,8 +30,8 @@ var r = n(255367),
   A = n(594174),
   N = n(709586),
   C = n(624138),
-  P = n(51144),
-  R = n(981631),
+  R = n(51144),
+  P = n(981631),
   w = n(674563),
   D = n(524484),
   L = n(388032),
@@ -205,7 +205,7 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       handleSetTypingRef: _,
       typingRef: p,
       currentUser: h
-    } = e, m = a === R.Skl.OFFLINE, g = n ? c.Xo$ : c.qEK, E = (0, u.Z)(i) ? R.Skl.STREAMING : a;
+    } = e, m = a === P.Skl.OFFLINE, g = n ? c.Xo$ : c.qEK, E = (0, u.Z)(i) ? P.Skl.STREAMING : a;
     return E = m ? void 0 : E, (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g, U(M({}, o), {
         size: c.EFr.SIZE_32,
@@ -246,7 +246,7 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         let {
           type: t
         } = e;
-        return t === R.IIU.CUSTOM_STATUS
+        return t === P.IIU.CUSTOM_STATUS
       }),
       user: c,
       channel: u
@@ -263,7 +263,7 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       hideTooltip: n
     })
   }),
-  Q = i.memo(function(e) {
+  X = i.memo(function(e) {
     var t;
     let {
       selected: n = !1,
@@ -288,8 +288,8 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       className: Z,
       nameplate: H,
       hideClanTag: Y = !1,
-      hideSubtext: Q = !1,
-      hideTooltip: X = !1,
+      hideSubtext: X = !1,
+      hideTooltip: Q = !1,
       onMouseDown: J,
       onKeyDown: $,
       onClick: ee,
@@ -303,7 +303,7 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       tabIndex: el,
       itemProps: ec,
       ref: eu
-    } = e, ed = null == y ? void 0 : y.id, ef = P.ZP.useName(y), e_ = (null == (t = A.default.getCurrentUser()) ? void 0 : t.id) === ed, ep = i.useRef(null), eh = null != eu ? eu : ep, [em, eg] = i.useState(!1), [eE, eb] = i.useState(!1), [ey, eO] = i.useState(null), {
+    } = e, ed = null == y ? void 0 : y.id, ef = R.ZP.useName(y), e_ = (null == (t = A.default.getCurrentUser()) ? void 0 : t.id) === ed, ep = i.useRef(null), eh = null != eu ? eu : ep, [em, eg] = i.useState(!1), [eE, eb] = i.useState(!1), [ey, eO] = i.useState(null), {
       voiceChannel: ev
     } = (0, _.Z)({
       userId: ed,
@@ -322,8 +322,8 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       animateOnHover: !(n || em),
       guildId: F
     }), eC = null != ec ? ec : {}, {
-      onFocus: eP
-    } = eC, eR = G(eC, ["onFocus"]), ew = (0, O.X)(F, l), eD = (0, s.e7)([I.Z], () => null != I.Z.questEnrollmentBlockedUntil, []), [eL, ex] = i.useState(!1);
+      onFocus: eR
+    } = eC, eP = G(eC, ["onFocus"]), ew = (0, O.X)(F, l), eD = (0, s.e7)([I.Z], () => null != I.Z.questEnrollmentBlockedUntil, []), [eL, ex] = i.useState(!1);
     i.useEffect(() => {
       n && ex(!1)
     }, [n]);
@@ -336,8 +336,8 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         eg(!1)
       }, []),
       eG = i.useCallback(() => {
-        eb(!0), null == eP || eP()
-      }, [eP]),
+        eb(!0), null == eR || eR()
+      }, [eR]),
       eB = i.useCallback(() => {
         eb(!1)
       }, []),
@@ -369,7 +369,7 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         ref: eh,
         selected: n,
         className: o()(x.member, Z, {
-          [x.offline]: D === R.Skl.OFFLINE && !n,
+          [x.offline]: D === P.Skl.OFFLINE && !n,
           [x.flatBottom]: eM
         }),
         innerClassName: x.memberInner,
@@ -425,7 +425,7 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         }),
         nameplate: H,
         subText: (0, r.jsx)(q, {
-          hideSubtext: Q,
+          hideSubtext: X,
           activities: C,
           status: D,
           applicationStream: w,
@@ -434,7 +434,7 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           channel: B,
           isHoveringOrFocusing: em || eE,
           quest: ek,
-          hideTooltip: X
+          hideTooltip: Q
         }),
         decorators: (0, r.jsx)(W, {
           user: y,
@@ -459,6 +459,6 @@ let F = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             right: 4
           }
         }
-      }, eR))
+      }, eP))
     })
   })

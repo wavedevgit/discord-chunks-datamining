@@ -8,7 +8,7 @@ var r = n(255367),
   i = n(73800),
   a = n(120356),
   o = n.n(a),
-  s = n(386230),
+  s = n(524979),
   l = n(481060),
   c = n(493773),
   u = n(600164),
@@ -76,12 +76,12 @@ function T(e) {
     config: {
       duration: I
     }
-  })), P = e => {
+  })), R = e => {
     f(), O(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, v(y({}, C(p, n)), {
       choice: e.text,
       choice_id: e.key
     }))
-  }, R = async e => {
+  }, P = async e => {
     1 === e && (await N({
       width: "100%"
     }), o())
@@ -96,7 +96,7 @@ function T(e) {
     children: (0, r.jsxs)(l.MyZ, {
       activeSlide: b,
       width: S,
-      onSlideReady: R,
+      onSlideReady: P,
       children: [(0, r.jsxs)(l.Mi4, {
         id: 0,
         children: [(0, r.jsxs)(l.xBx, {
@@ -122,7 +122,7 @@ function T(e) {
           className: g.modalContent,
           children: n.choices.map(e => (0, r.jsx)(A, {
             choice: e,
-            onClick: P
+            onClick: R
           }, e.key))
         })]
       }), (0, r.jsxs)(l.Mi4, {

@@ -68,11 +68,11 @@ function C(e, t) {
   return N(e.type, t, void 0, void 0, void 0, e.props)
 }
 
-function P(e) {
+function R(e) {
   return "object" == typeof e && null !== e && e.$$typeof === i
 }
 
-function R(e) {
+function P(e) {
   var t = {
     "=": "=0",
     ":": "=2"
@@ -84,7 +84,7 @@ function R(e) {
 var w = /\/+/g;
 
 function D(e, t) {
-  return "object" == typeof e && null !== e && null != e.key ? R("" + e.key) : t.toString(36)
+  return "object" == typeof e && null !== e && null != e.key ? P("" + e.key) : t.toString(36)
 }
 
 function L() {}
@@ -133,7 +133,7 @@ function k(e, t, n, r, o) {
   }
   if (l) return o = o(e), l = "" === r ? "." + D(e, 0) : r, S(o) ? (n = "", null != l && (n = l.replace(w, "$&/") + "/"), k(o, t, n, "", function(e) {
     return e
-  })) : null != o && (P(o) && (o = C(o, n + (null == o.key || e && e.key === o.key ? "" : ("" + o.key).replace(w, "$&/") + "/") + l)), t.push(o)), 1;
+  })) : null != o && (R(o) && (o = C(o, n + (null == o.key || e && e.key === o.key ? "" : ("" + o.key).replace(w, "$&/") + "/") + l)), t.push(o)), 1;
   l = 0;
   var c = "" === r ? "." : r + ":";
   if (S(e))
@@ -201,7 +201,7 @@ t.Children = {
     }) || []
   },
   only: function(e) {
-    if (!P(e)) throw Error("React.Children.only expected to receive a single React element child.");
+    if (!R(e)) throw Error("React.Children.only expected to receive a single React element child.");
     return e
   }
 }, t.Component = y, t.Fragment = o, t.Profiler = l, t.PureComponent = v, t.StrictMode = s, t.Suspense = f, t.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = T, t.act = function() {
@@ -259,7 +259,7 @@ t.Children = {
     $$typeof: d,
     render: e
   }
-}, t.isValidElement = P, t.lazy = function(e) {
+}, t.isValidElement = R, t.lazy = function(e) {
   return {
     $$typeof: p,
     _payload: {

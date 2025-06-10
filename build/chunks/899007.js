@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -65,7 +65,7 @@ function N(e, t) {
 }
 let C = h.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
 
-function P(e) {
+function R(e) {
   let {
     user: t,
     displayProfile: n,
@@ -73,8 +73,8 @@ function P(e) {
     channelId: h,
     themeType: S,
     animateOnHover: A,
-    onOpenProfile: P,
-    className: R,
+    onOpenProfile: R,
+    className: P,
     previewStatus: w
   } = e, {
     theme: D
@@ -90,7 +90,7 @@ function P(e) {
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(U) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), F = void 0 !== w ? w : G, V = [y.lY.MODAL, y.lY.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = o()(I.avatar, R), {
+  })), F = void 0 !== w ? w : G, V = [y.lY.MODAL, y.lY.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = o()(I.avatar, P), {
     avatarDecorationSrc: H,
     avatarSrc: Y,
     eventHandlers: W
@@ -104,14 +104,14 @@ function P(e) {
     avatarDecoration: H,
     size: V,
     "aria-label": t.username,
-    imageClassName: null != P ? I.overlay : void 0,
+    imageClassName: null != R ? I.overlay : void 0,
     status: M ? O.Skl.UNKNOWN : F,
     statusBackdropColor: k && !M ? (0, l.QFD)(D) : void 0,
     isMobile: B,
     statusTooltip: !0,
     statusTooltipDelay: y.vB
   });
-  return null == P ? (0, r.jsx)("div", N(T({}, W), {
+  return null == R ? (0, r.jsx)("div", N(T({}, W), {
     className: Z,
     children: K
   })) : (0, r.jsx)(l.P3F, N(T({}, W), {
@@ -123,7 +123,7 @@ function P(e) {
       x({
         action: "PRESS_VIEW_PROFILE",
         analyticsLocations: L
-      }), null == P || P()
+      }), null == R || R()
     },
     children: K
   }))

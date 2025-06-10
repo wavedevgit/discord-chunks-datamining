@@ -40,8 +40,8 @@ function N(e) {
     pendingBio: g,
     pendingPronouns: T,
     pendingAvatar: N,
-    pendingAvatarDecoration: P,
-    pendingNickname: R,
+    pendingAvatarDecoration: R,
+    pendingNickname: P,
     pendingGlobalName: w,
     pendingThemeColors: D,
     pendingProfileEffectId: L,
@@ -63,7 +63,7 @@ function N(e) {
   } = (0, _.Z)({
     user: t,
     guildId: null == n ? void 0 : n.id,
-    avatarDecorationOverride: P,
+    avatarDecorationOverride: R,
     avatarOverride: N,
     size: s.EFr.SIZE_80,
     showPending: !0
@@ -71,8 +71,8 @@ function N(e) {
     pendingProfileEffectId: L,
     displayProfile: W
   }), {
-    theme: Q,
-    primaryColor: X
+    theme: X,
+    primaryColor: Q
   } = (0, f.Z)({
     user: t,
     displayProfile: W,
@@ -109,8 +109,8 @@ function N(e) {
           canUsePremiumCustomization: i,
           previewAvatar: K,
           previewAvatarDecoration: z,
-          previewTheme: Q,
-          previewPrimaryColor: X,
+          previewTheme: X,
+          previewPrimaryColor: Q,
           className: k,
           disabledInputs: U,
           isTryItOutFlow: j,
@@ -128,7 +128,7 @@ function N(e) {
         displayProfile: W,
         guild: n,
         pendingAvatar: N,
-        pendingNickname: R,
+        pendingNickname: P,
         pendingGlobalName: w,
         pendingBio: g,
         pendingPronouns: T,

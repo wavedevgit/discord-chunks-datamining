@@ -25,7 +25,7 @@ n.d(t, {
   RS: () => eE,
   R_: () => eM,
   Rt: () => eY,
-  SE: () => eR,
+  SE: () => eP,
   Sb: () => eS,
   Sh: () => eB,
   T4: () => D,
@@ -46,7 +46,7 @@ n.d(t, {
   cP: () => V,
   co: () => e_,
   d$: () => G,
-  d4: () => R,
+  d4: () => P,
   dN: () => E,
   eR: () => v,
   eo: () => j,
@@ -56,7 +56,7 @@ n.d(t, {
   fz: () => T,
   gR: () => q,
   gw: () => eV,
-  h2: () => Q,
+  h2: () => X,
   hg: () => eZ,
   iG: () => z,
   iH: () => eL,
@@ -75,7 +75,7 @@ n.d(t, {
   vF: () => S,
   x4: () => eg,
   xM: () => eo,
-  xq: () => X,
+  xq: () => Q,
   zA: () => Y,
   zY: () => eG
 }), n(388685);
@@ -152,10 +152,10 @@ let A = (0, d.Zc)("notifications", "gameActivityNotifications", e => null != e ?
     value: !!e
   })),
   C = (0, d.Zc)("notifications", "focusModeExpiresAtMs", e => null != e ? e : "0", e => e),
-  P = [],
-  R = (0, d.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : P, e => e),
-  w = (0, d.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : P, e => e),
-  D = (0, d.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : P, e => e),
+  R = [],
+  P = (0, d.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : R, e => e),
+  w = (0, d.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : R, e => e),
+  D = (0, d.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : R, e => e),
   L = (0, d.Zc)("textAndImages", "viewImageDescriptions", e => {
     var t;
     return null != (t = null == e ? void 0 : e.value) && t
@@ -224,14 +224,14 @@ let z = (0, d.Zc)("privacy", "defaultGuildsRestricted", e => null != e && e, e =
   q = (0, d.Zc)("privacy", "defaultGuildsRestrictedV2", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),
-  Q = (0, d.Zc)("privacy", "restrictedGuildIds", e => null != e ? e : [], e => e);
+  X = (0, d.Zc)("privacy", "restrictedGuildIds", e => null != e ? e : [], e => e);
 (0, d.Zc)("privacy", "friendDiscoveryFlags", e => {
   var t;
   return null != (t = null == e ? void 0 : e.value) ? t : 0
 }, e => o.yC.create({
   value: e
 }));
-let X = (0, d.TG)({
+let Q = (0, d.TG)({
     baseSetting: (0, d.Zc)("privacy", "friendSourceFlags", e => null == e ? void 0 : e.value, e => o.yC.create({
       value: e
     })),
@@ -457,9 +457,9 @@ let eS = (0, d.KM)((0, d.Zc)("appearance", "developerMode", e => null != e && e,
     var e;
     return null == (e = f.Z.getOverride("animateStickers")) ? void 0 : e.value
   })),
-  eP = [],
-  eR = (0, d.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eP, e => e),
-  ew = (0, d.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eP, e => e, p.fy.FREQUENT_USER_ACTION),
+  eR = [],
+  eP = (0, d.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eR, e => e),
+  ew = (0, d.Zc)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eR, e => e, p.fy.FREQUENT_USER_ACTION),
   eD = [],
   eL = (0, d.Zc)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eD, e => e),
   ex = (0, d.TG)({

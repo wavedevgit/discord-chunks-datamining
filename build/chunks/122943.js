@@ -72,10 +72,10 @@ function T(e) {
     canTruncate: I = !0,
     showChannelName: T = !1
   } = e, A = (0, l.vjg)(l.Skl.ONLINE), N = (0, d.ZP)(t), C = t.isDM() || t.isGroupDM(), {
-    enableTopNavButton: P
+    enableTopNavButton: R
   } = (0, f.Cq)({
     location: "VoiceActivityStatus"
-  }), R = !P && T, {
+  }), P = !R && T, {
     analyticsLocations: w
   } = (0, c.ZP)(), D = i.useCallback(() => {
     (0, h.A)({
@@ -101,14 +101,14 @@ function T(e) {
       channel: t,
       className: o()(y.icon, _)
     }))
-  }), x = () => P ? N : C ? b.intl.string(b.t["9FaEzs"]) : t.isGuildStageVoice() ? b.intl.string(b.t.QygGCA) : b.intl.string(b.t.msxteH);
+  }), x = () => R ? N : C ? b.intl.string(b.t["9FaEzs"]) : t.isGuildStageVoice() ? b.intl.string(b.t.QygGCA) : b.intl.string(b.t.msxteH);
   return (0, r.jsxs)(r.Fragment, {
     children: [L(), !g && (0, r.jsxs)(m.Z, {
       variant: n,
       className: a,
       canTruncate: I,
       hideTooltip: O,
-      children: [x(), R && null != N && " (".concat(N, ")")]
+      children: [x(), P && null != N && " (".concat(N, ")")]
     })]
   })
 }

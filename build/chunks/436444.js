@@ -8,7 +8,7 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   a = n.n(i),
-  o = n(386230),
+  o = n(524979),
   s = n(481060),
   l = n(906732),
   c = n(975298),
@@ -91,8 +91,8 @@ let S = {
       tierMarkerAnimationPosition: N,
       totalAvailableBoostsCount: C
     } = e, {
-      analyticsLocations: P
-    } = (0, l.ZP)(), R = (0, c.Z)(), w = p.oCV[A], D = w - C, L = A <= N || b, x = L && A <= i.premiumTier, k = L && A < i.premiumTier, M = L && A === i.premiumTier, j = i.premiumTier < A && C >= w, {
+      analyticsLocations: R
+    } = (0, l.ZP)(), P = (0, c.Z)(), w = p.oCV[A], D = w - C, L = A <= N || b, x = L && A <= i.premiumTier, k = L && A < i.premiumTier, M = L && A === i.premiumTier, j = i.premiumTier < A && C >= w, {
       scaleFactor: U
     } = (0, s.q_F)({
       from: {
@@ -124,7 +124,7 @@ let S = {
 
     function B() {
       L && (j || (0, f.u)({
-        analyticsLocations: P,
+        analyticsLocations: R,
         analyticsLocation: {
           page: p.ZY5.PREMIUM_GUILD_USER_MODAL,
           section: p.jXE.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR,
@@ -135,7 +135,7 @@ let S = {
         guild: i
       }))
     }
-    let F = !x && R.fractionalState === h.a$.NONE,
+    let F = !x && P.fractionalState === h.a$.NONE,
       V = F ? s.P3F : "div",
       Z = F ? {
         onClick: B

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   K: () => N,
-  Z: () => R
+  Z: () => P
 }), n(413496), n(433524), n(35282), n(781311);
 var r = n(255367);
 n(73800);
@@ -64,10 +64,10 @@ function C() {
   })
 }
 
-function P(e) {
+function R(e) {
   return "".concat(O.GI).concat(e.displayName)
 }
-let R = {
+let P = {
   sentinel: O.GI,
   stores: [f.Z, c.ZP, g.Z],
   matches: (e, t, n, r, i) => i.commands !== y.L8.DISABLED && null == f.Z.getActiveCommand(e.id) && (r || i.commands !== y.L8.OLD_BUILT_INS),
@@ -186,7 +186,7 @@ let R = {
       section: u
     } = t[n];
     if (c.inputType === _.iw.PLACEHOLDER) return null;
-    if (i.commands === y.L8.OLD_BUILT_INS) i.insertText(P(c));
+    if (i.commands === y.L8.OLD_BUILT_INS) i.insertText(R(c));
     else {
       let e = o;
       null == e && (e = l ? _.Vh.QUERY : _.Vh.DISCOVERY), s.Po({

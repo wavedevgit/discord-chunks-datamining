@@ -131,8 +131,8 @@ class S extends(r = a.Component) {
       autosize: A,
       required: N,
       onInvalid: C,
-      inputRef: P
-    } = this.props, R = A ? _.l : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? t : null == (e = this.context) ? void 0 : e.titleId, L = this.getAriaDescribedBy();
+      inputRef: R
+    } = this.props, P = A ? _.l : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? t : null == (e = this.context) ? void 0 : e.titleId, L = this.getAriaDescribedBy();
     return (0, i.jsxs)("div", {
       className: s()(m.inputWrapper, {
         [h.flex]: T
@@ -142,7 +142,7 @@ class S extends(r = a.Component) {
           [h.flex]: T
         }),
         children: [(0, i.jsx)(c.t, {
-          children: (0, i.jsx)(R, {
+          children: (0, i.jsx)(P, {
             type: "text",
             className: s()(m.inputDefault, h.textArea, g.scrollbarDefault, v, {
               [m.error]: w,
@@ -170,7 +170,7 @@ class S extends(r = a.Component) {
             onKeyDown: this.onKeyDown,
             onInvalid: C,
             rows: S,
-            ref: P
+            ref: R
           })
         }), null != l && (0, i.jsx)(d.n, {
           id: y,

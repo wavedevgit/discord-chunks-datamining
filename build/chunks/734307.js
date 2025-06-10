@@ -6,8 +6,8 @@ var l, i, r, E = t(392711),
   a = t.n(E),
   d = t(442837),
   o = t(570140),
-  u = t(317381),
-  _ = t(16609),
+  _ = t(317381),
+  u = t(16609),
   s = t(430198),
   c = t(924301),
   C = t(601070),
@@ -117,7 +117,7 @@ function Y(n) {
 }
 class k extends(l = d.ZP.Store) {
   initialize() {
-    this.waitFor(C.Z, S.default, I.Z, L.Z, D.Z, u.ZP, N.Z, s.Z, c.ZP, A.Z, h.Z, U.ZP, P.Z, R.ZP, T.Z)
+    this.waitFor(C.Z, S.default, I.Z, L.Z, D.Z, _.ZP, N.Z, s.Z, c.ZP, A.Z, h.Z, U.ZP, P.Z, R.ZP, T.Z)
   }
   getGuild(n, e) {
     var t, l;
@@ -209,11 +209,10 @@ let K = new k(o.Z, {
     return Z.nonPositionalChannelIdUpdate(e)
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function(n) {
-    var e, t;
     let {
-      location: l
+      location: e
     } = n;
-    return Z.updateSubtitles(null != (e = (0, _.jS)(l)) ? e : (0, _.hu)(l), null != (t = (0, _.pY)(l)) ? t : (0, _.wq)(l))
+    return Z.updateSubtitles((0, u.j)(e), (0, u.p)(e))
   },
   EMBEDDED_ACTIVITY_LAUNCH_START: function(n) {
     V()

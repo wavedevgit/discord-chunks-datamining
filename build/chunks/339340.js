@@ -35,7 +35,7 @@ function N(e) {
     transitionState: n,
     sourceAnalyticsLocations: a,
     onClose: N
-  } = e, C = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), P = (0, s.e7)([b.Z], () => b.Z.getMediaSessionId()), [R, w] = i.useState(null != C ? C : ""), [D, L] = i.useState(!1), [x, k] = i.useState(null), M = (0, s.e7)([y.default], () => y.default.getCurrentUser()), j = R.length > A, U = (0, g.Q3)("VoiceChannelStatusModal");
+  } = e, C = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), R = (0, s.e7)([b.Z], () => b.Z.getMediaSessionId()), [P, w] = i.useState(null != C ? C : ""), [D, L] = i.useState(!1), [x, k] = i.useState(null), M = (0, s.e7)([y.default], () => y.default.getCurrentUser()), j = P.length > A, U = (0, g.Q3)("VoiceChannelStatusModal");
   i.useEffect(() => {
     O.default.track(v.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -63,10 +63,10 @@ function N(e) {
       }
     },
     F = async e => {
-      R === C && N(), null == e || e.preventDefault(), k(null), L(!0);
-      let n = R.length,
-        r = R.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
-        i = E.ZP.parse(void 0, R),
+      P === C && N(), null == e || e.preventDefault(), k(null), L(!0);
+      let n = P.length,
+        r = P.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
+        i = E.ZP.parse(void 0, P),
         {
           hasErrors: o
         } = B(i);
@@ -76,7 +76,7 @@ function N(e) {
           204 === e.status ? (O.default.track(v.rMx.VOICE_CHANNEL_TOPIC_SET, {
             guild_id: t.guild_id,
             channel_id: t.id,
-            media_session_id: P,
+            media_session_id: R,
             raw_length: n,
             text_length: r,
             location_stack: a
@@ -86,7 +86,7 @@ function N(e) {
         }
         L(!1)
       }
-    }, [V, Z] = i.useState((0, p.JM)(R)), H = (e, t, n) => {
+    }, [V, Z] = i.useState((0, p.JM)(P)), H = (e, t, n) => {
       w(t), Z(n)
     }, Y = async () => (j || D || await F(), Promise.resolve({
       shouldClear: !1,
@@ -125,7 +125,7 @@ function N(e) {
           title: I.intl.string(I.t.Fq5lwM),
           children: [(0, r.jsx)(h.Z, {
             innerClassName: S.textArea,
-            textValue: R,
+            textValue: P,
             richValue: V,
             placeholder: I.intl.formatToPlainString(I.t.DUXxBg, {
               channelName: t.name

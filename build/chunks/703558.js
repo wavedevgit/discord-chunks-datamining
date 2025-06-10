@@ -137,7 +137,7 @@ function C() {
   return A(), !1
 }
 
-function P(e) {
+function R(e) {
   let {
     channel: {
       id: t
@@ -148,7 +148,7 @@ function P(e) {
   return delete r[t], !1
 }
 
-function R(e) {
+function P(e) {
   let {
     channel: t
   } = e, n = u.default.getId();
@@ -261,9 +261,9 @@ let k = new x(s.Z, {
   LOGOUT: w,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,
   GUILD_DELETE: C,
-  CHANNEL_DELETE: P,
-  THREAD_DELETE: P,
-  THREAD_CREATE: R,
+  CHANNEL_DELETE: R,
+  THREAD_DELETE: R,
+  THREAD_CREATE: P,
   DRAFT_SAVE: v,
   DRAFT_CHANGE: v,
   DRAFT_CLEAR: I,

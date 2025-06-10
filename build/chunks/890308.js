@@ -46,14 +46,14 @@ e = n.nmd(e),
       return r
     }
 
-    function P(e) {
+    function R(e) {
       return A(e, function(e) {
         var t = "";
         return e > 65535 && (e -= 65536, t += S(e >>> 10 & 1023 | 55296), e = 56320 | 1023 & e), t += S(e)
       }).join("")
     }
 
-    function R(e) {
+    function P(e) {
       return e - 48 < 10 ? e - 22 : e - 65 < 26 ? e - 65 : e - 97 < 26 ? e - 97 : u
     }
 
@@ -75,10 +75,10 @@ e = n.nmd(e),
         v = h;
       for ((n = e.lastIndexOf(g)) < 0 && (n = 0), r = 0; r < n; ++r) e.charCodeAt(r) >= 128 && T("not-basic"), E.push(e.charCodeAt(r));
       for (i = n > 0 ? n + 1 : 0; i < b;) {
-        for (a = y, o = 1, s = u; i >= b && T("invalid-input"), ((l = R(e.charCodeAt(i++))) >= u || l > I((c - y) / o)) && T("overflow"), y += l * o, !(l < (_ = s <= v ? d : s >= v + f ? f : s - v)); s += u) o > I(c / (p = u - _)) && T("overflow"), o *= p;
+        for (a = y, o = 1, s = u; i >= b && T("invalid-input"), ((l = P(e.charCodeAt(i++))) >= u || l > I((c - y) / o)) && T("overflow"), y += l * o, !(l < (_ = s <= v ? d : s >= v + f ? f : s - v)); s += u) o > I(c / (p = u - _)) && T("overflow"), o *= p;
         v = D(y - a, t = E.length + 1, 0 == a), I(y / t) > c - O && T("overflow"), O += I(y / t), y %= t, E.splice(y++, 0, O)
       }
-      return P(E)
+      return R(E)
     }
 
     function x(e) {
@@ -110,7 +110,7 @@ e = n.nmd(e),
         version: "1.4.1",
         ucs2: {
           decode: C,
-          encode: P
+          encode: R
         },
         decode: L,
         encode: x,

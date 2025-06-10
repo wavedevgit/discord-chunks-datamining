@@ -67,8 +67,8 @@ function g(e) {
   }, [b, I]), l()(null != A, "Unknown step for current payment flow.");
   let N = null != (c = null == A || null == (t = A.options) ? void 0 : t.hideSlider) && c,
     C = null == A || null == (n = A.options) ? void 0 : n.bodyClassName,
-    P = null == A || null == (a = A.options) ? void 0 : a.sliderBodyClassName;
-  return void 0 !== g && g && (P = _.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
+    R = null == A || null == (a = A.options) ? void 0 : a.sliderBodyClassName;
+  return void 0 !== g && g && (R = _.sliderBodyLarge), (0, r.jsxs)(r.Fragment, {
     children: [null == (p = null == A || null == (s = A.options) ? void 0 : s.renderHeader) || p ? h : null, A.renderStep(E), null == b || N ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         className: o()(C, _.body, _.noRoundedCorners, T, {
@@ -82,7 +82,7 @@ function g(e) {
           children: y.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
             id: e.key,
             children: (0, r.jsx)("form", {
-              className: o()(_.sliderBody, P),
+              className: o()(_.sliderBody, R),
               ref: e => {
                 O(e)
               },

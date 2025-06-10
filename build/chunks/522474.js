@@ -79,10 +79,10 @@ let S = new d.Z("PopoutWindowStore"),
   A = {},
   N = {},
   C = {},
-  P = {},
-  R = new Set,
+  R = {},
+  P = new Set,
   w = "app-mount",
-  D = () => X.emitChange(),
+  D = () => Q.emitChange(),
   L = s().debounce(D, 150),
   x = !1;
 
@@ -114,7 +114,7 @@ function j(e) {
   let t = N[e];
   a()(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", D), t.removeEventListener("blur", D), t.removeEventListener("resize", L);
   let n = C[e];
-  a()(null != n, "Window root was null while unmounting"), n.unmount(), delete N[e], delete A[e], delete P[e], delete C[e]
+  a()(null != n, "Window root was null while unmounting"), n.unmount(), delete N[e], delete A[e], delete R[e], delete C[e]
 }
 
 function U(e, t, r) {
@@ -133,7 +133,7 @@ function G(e, t) {
 
 function B(e) {
   let t = N[e],
-    n = P[e];
+    n = R[e];
   if (null == t) return void S.warn("Failed to open window", e);
   let r = t.document;
   (0, h.uF)(r, D), t.addEventListener("focus", D), t.addEventListener("blur", D), t.addEventListener("resize", L), x ? k(e, t) : G(e, t);
@@ -177,18 +177,18 @@ function F(e) {
     })
   }
   let E = window.open(g.Z5c.POPOUT_WINDOW, t, (0, m.Z)(d));
-  E.windowKey = t, i ? S.verbose("Opening out of process overlay window", t) : null == E || E.focus(), N[t] = E, P[t] = r, _.isPlatformEmbedded && (p.ZP.setAlwaysOnTop(t, f), A[t] = f, p.ZP.isAlwaysOnTop(t).then(e => A[t] = e)), R.add(t)
+  E.windowKey = t, i ? S.verbose("Opening out of process overlay window", t) : null == E || E.focus(), N[t] = E, R[t] = r, _.isPlatformEmbedded && (p.ZP.setAlwaysOnTop(t, f), A[t] = f, p.ZP.isAlwaysOnTop(t).then(e => A[t] = e)), P.add(t)
 }
 
 function V(e) {
-  R.has(e) && (B(e), R.delete(e), X.emitChange())
+  P.has(e) && (B(e), P.delete(e), Q.emitChange())
 }
 
 function Z(e) {
   let t = N[e];
   null != t && (t.closed || M(e), j(e), setTimeout(() => {
     Y(t)
-  }, 100), X.emitChange())
+  }, 100), Q.emitChange())
 }
 
 function H(e) {
@@ -242,7 +242,7 @@ function q(e) {
   } = e;
   for (let e of Object.values(N)) null == e || e.closed || U(e, t, n)
 }
-class Q extends(r = c.ZP.PersistedStore) {
+class X extends(r = c.ZP.PersistedStore) {
   initialize(e) {
     window.addEventListener("message", H), window.addEventListener("beforeunload", K), T = null != e ? e : {}
   }
@@ -276,7 +276,7 @@ class Q extends(r = c.ZP.PersistedStore) {
     return T
   }
   isWindowFullyInitialized(e) {
-    return null != N[e] && null != C[e] && null != P[e]
+    return null != N[e] && null != C[e] && null != R[e]
   }
   isWindowFullScreen(e) {
     var t, n;
@@ -287,12 +287,12 @@ class Q extends(r = c.ZP.PersistedStore) {
     return this.isWindowFullyInitialized(e) || S.warn("Attempted to unmount partially initialized window ".concat(e)), Z(e)
   }
 }
-E(Q, "displayName", "PopoutWindowStore"), E(Q, "persistKey", "PopoutWindowStore");
-let X = new Q(u.Z, {
+E(X, "displayName", "PopoutWindowStore"), E(X, "persistKey", "PopoutWindowStore");
+let Q = new X(u.Z, {
     POPOUT_WINDOW_OPEN: F,
     POPOUT_WINDOW_ADD_STYLESHEET: q,
     POPOUT_WINDOW_CLOSE: W,
     POPOUT_WINDOW_SET_ALWAYS_ON_TOP: z,
     LOGOUT: K
   }),
-  J = X
+  J = Q

@@ -148,7 +148,7 @@ function v(e) {
     S(!0)
   }, A = () => {
     S(!1)
-  }, N = null != m, C = null != O, P = i.useId(), R = "".concat(P, "-upper_badge_masks"), w = "".concat(P, "-lower_badge_masks"), D = "".concat(P, "-blob_mask"), L = "".concat(P, "-stroke_mask"), x = "".concat(P, "-highlight_mask"), k = (null == f ? void 0 : f.width) != null ? f.width : g, M = (null == f ? void 0 : f.height) != null ? f.height : g, j = {
+  }, N = null != m, C = null != O, R = i.useId(), P = "".concat(R, "-upper_badge_masks"), w = "".concat(R, "-lower_badge_masks"), D = "".concat(R, "-blob_mask"), L = "".concat(R, "-stroke_mask"), x = "".concat(R, "-highlight_mask"), k = (null == f ? void 0 : f.width) != null ? f.width : g, M = (null == f ? void 0 : f.height) != null ? f.height : g, j = {
     width: d ? n : n + 8,
     height: d ? n : n + 8,
     x: d ? 0 : -4,
@@ -177,7 +177,7 @@ function v(e) {
           d: G,
           id: D
         }), null != m ? (0, r.jsx)("rect", {
-          id: R,
+          id: P,
           className: u.badgeStroke,
           x: n - U + p,
           y: -p,
@@ -196,7 +196,7 @@ function v(e) {
           ry: h / 2
         }) : null]
       }), (0, r.jsxs)("mask", {
-        id: P,
+        id: R,
         fill: "black",
         x: 0,
         y: 0,
@@ -212,7 +212,7 @@ function v(e) {
             [u.isHighlighted]: _
           })
         }), N ? (0, r.jsx)("use", {
-          href: "#".concat(R),
+          href: "#".concat(P),
           fill: "black"
         }) : null, C ? (0, r.jsx)("use", {
           href: "#".concat(w),
@@ -227,7 +227,7 @@ function v(e) {
           y: "-25%",
           fill: "white"
         }), N ? (0, r.jsx)("use", {
-          href: "#".concat(R),
+          href: "#".concat(P),
           fill: "black"
         }) : null, C ? (0, r.jsx)("use", {
           href: "#".concat(w),
@@ -243,7 +243,7 @@ function v(e) {
         }), (0, r.jsxs)("g", {
           className: u.focusFill,
           children: [null != m ? (0, r.jsx)("use", {
-            href: "#".concat(R)
+            href: "#".concat(P)
           }) : null, null != O ? (0, r.jsx)("use", {
             href: "#".concat(w)
           }) : null]
@@ -255,7 +255,7 @@ function v(e) {
         className: u.highlight,
         mask: "url(#".concat(L, ")")
       }), (0, r.jsx)("foreignObject", {
-        mask: "url(#".concat(P, ")"),
+        mask: "url(#".concat(R, ")"),
         x: 0,
         y: 0,
         className: c,

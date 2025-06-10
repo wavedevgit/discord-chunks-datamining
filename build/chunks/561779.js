@@ -9,7 +9,7 @@ var r, i = n(255367),
   s = n.n(o),
   l = n(392711),
   c = n.n(l),
-  u = n(386230),
+  u = n(524979),
   d = n(374470),
   f = n(143450),
   _ = n(84735),
@@ -152,8 +152,8 @@ class T extends(r = a.PureComponent) {
       mini: T,
       hideBubble: N,
       defaultValue: C,
-      orientation: P,
-      onValueRender: R,
+      orientation: R,
+      onValueRender: P,
       renderMarker: w,
       getAriaValueText: D,
       barClassName: L,
@@ -190,7 +190,7 @@ class T extends(r = a.PureComponent) {
           })
         }, t)
       }) : null,
-      H = null != R ? R(t) : "".concat(F.toFixed(0), "%"),
+      H = null != P ? P(t) : "".concat(F.toFixed(0), "%"),
       Y = null != (e = null == D ? void 0 : D(t)) ? e : void 0;
     return (0, i.jsx)(A, {
       active: n,
@@ -211,7 +211,7 @@ class T extends(r = a.PureComponent) {
             "aria-valuemax": f,
             "aria-valuenow": t,
             "aria-disabled": m,
-            "aria-orientation": P,
+            "aria-orientation": R,
             "aria-hidden": j,
             "aria-label": U,
             "aria-labelledby": G,

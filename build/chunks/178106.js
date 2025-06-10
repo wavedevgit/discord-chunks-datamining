@@ -89,7 +89,7 @@ function A(e) {
   } = e;
   if (!L()) return;
   let i = n.toString();
-  r !== (null == (t = f.default.getCurrentUser()) ? void 0 : t.id) && P(i) && N(i)
+  r !== (null == (t = f.default.getCurrentUser()) ? void 0 : t.id) && R(i) && N(i)
 }
 
 function N(e) {
@@ -103,13 +103,13 @@ function C(e) {
   }), S.compute()
 }
 
-function P(e) {
+function R(e) {
   for (let t of p.Z.getSounds().values())
     if (null != t.find(t => t.soundId.toString() === e)) return !0;
   return !1
 }
 
-function R(e) {
+function P(e) {
   return a().mapValues(e, e => O(b({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   }))
@@ -119,7 +119,7 @@ function w() {
   var e;
   if (!x()) return;
   let t = null == (e = d.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? void 0 : e.playedSounds;
-  S.overwriteHistory(R(null != t ? t : {}), v)
+  S.overwriteHistory(P(null != t ? t : {}), v)
 }
 
 function D(e) {

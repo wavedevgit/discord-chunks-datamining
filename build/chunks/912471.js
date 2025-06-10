@@ -51,8 +51,8 @@ let O = 21,
   A = new i.Yd("SessionHeartbeatScheduler"),
   N = null,
   C = 0,
-  P = 0,
-  R = {
+  R = 0,
+  P = {
     state: "uninitialized"
   },
   w = d.Z.getState(),
@@ -65,7 +65,7 @@ function x() {
 
 function k() {
   if (null != N) return;
-  let e = 0 === P ? 0 : v - (performance.now() - P);
+  let e = 0 === R ? 0 : v - (performance.now() - R);
   p.Z.addBreadcrumb({
     message: "Received Last Heartbeat Event Timestamp. Time Until Next Heartbeat: ".concat(e / 1e3, " seconds. Scheduling Heartbeat")
   }), N = {
@@ -130,7 +130,7 @@ async function G() {
     client_heartbeat_initialization_timestamp: t.createdAtTimestamp,
     client_heartbeat_version: O
   }, (0, h.O)(), U());
-  f.default.track(E.rMx.CLIENT_HEARTBEAT, r), P = performance.now(), (0, l.Z)()
+  f.default.track(E.rMx.CLIENT_HEARTBEAT, r), R = performance.now(), (0, l.Z)()
 }
 
 function B() {}
@@ -157,10 +157,10 @@ function H(e) {
 }
 
 function Y() {
-  o.K.remove(S), R = {
+  o.K.remove(S), P = {
     state: "loaded",
     session: null
-  }, j(), P = 0
+  }, j(), R = 0
 }
 
 function W() {
@@ -196,7 +196,7 @@ function W() {
 async function K() {
   let e = null;
   try {
-    e = "uninitialized" === R.state ? H(await o.K.getAfterRefresh(S)) : R.session
+    e = "uninitialized" === P.state ? H(await o.K.getAfterRefresh(S)) : P.session
   } catch (e) {
     p.Z.captureException(e)
   }
@@ -207,7 +207,7 @@ async function K() {
       createdAtTimestamp: t,
       lastUsedTimestamp: t,
       version: g.EI
-    }, C = 0), e.lastUsedTimestamp = t, Z(e)) : null != e && (0, g.qK)(e) && (e = null), R = {
+    }, C = 0), e.lastUsedTimestamp = t, Z(e)) : null != e && (0, g.qK)(e) && (e = null), P = {
       state: "loaded",
       session: e
     }, e
@@ -215,6 +215,6 @@ async function K() {
 }
 
 function z() {
-  let e = "uninitialized" === R.state ? H(o.K.get(S)) : R.session;
+  let e = "uninitialized" === P.state ? H(o.K.get(S)) : P.session;
   return null == e || (0, g.qK)(e) ? null : e
 }

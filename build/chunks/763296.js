@@ -46,7 +46,7 @@ function C() {
   v = 1
 }
 
-function P(e) {
+function R(e) {
   let {
     updates: t
   } = e;
@@ -59,7 +59,7 @@ function P(e) {
   }), v = 2
 }
 
-function R(e) {
+function P(e) {
   let {
     guild: t
   } = e;
@@ -244,8 +244,8 @@ let Y = new H(s.Z, {
   USER_SETTINGS_PROTO_UPDATE: F,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS: x,
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS: k,
-  SOUNDBOARD_SOUNDS_RECEIVED: P,
-  GUILD_DELETE: R,
+  SOUNDBOARD_SOUNDS_RECEIVED: R,
+  GUILD_DELETE: P,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: V,
   OVERLAY_INITIALIZE: Z
 })

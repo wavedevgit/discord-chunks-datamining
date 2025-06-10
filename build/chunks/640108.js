@@ -28,8 +28,8 @@ var r, i, a = n(255367),
   A = n(58737),
   N = n(540026),
   C = n(528472),
-  P = n(455813),
-  R = n(283756),
+  R = n(455813),
+  P = n(283756),
   w = n(793148),
   D = n(981631),
   L = n(217702),
@@ -132,7 +132,7 @@ let q = e => {
     })]
   })
 };
-class Q extends(r = o.Component) {
+class X extends(r = o.Component) {
   componentDidMount() {
     this.state.translateY.setValue(+!!this.props.autoPlay)
   }
@@ -275,7 +275,7 @@ class Q extends(r = o.Component) {
   }
 }
 
-function X(e) {
+function Q(e) {
   let {
     fileName: t,
     fileSize: n,
@@ -306,7 +306,7 @@ function X(e) {
     })]
   })
 }
-j(Q, "defaultProps", {
+j(X, "defaultProps", {
   disabled: !1
 });
 class J extends o.Component {
@@ -739,7 +739,7 @@ class et extends(i = o.PureComponent) {
         dragging: E
       }
     } = this, y = this.getWidth();
-    return f || n || t === Y.AUDIO ? (0, a.jsx)(Q, {
+    return f || n || t === Y.AUDIO ? (0, a.jsx)(X, {
       buffers: c,
       currentTime: u,
       duration: d,
@@ -771,7 +771,7 @@ class et extends(i = o.PureComponent) {
         onClick: this.toggleFullscreen,
         node: (0, T.fn)(null == e ? void 0 : e.parentNode, e)
       }) : null
-    }) : (0, a.jsx)(P.Z, {
+    }) : (0, a.jsx)(R.Z, {
       onPlay: this.handleVideoClick,
       inactive: !r
     })
@@ -785,7 +785,7 @@ class et extends(i = o.PureComponent) {
       playable: i,
       mimeType: o
     } = this.props;
-    return null == e || null == t ? null : r === Y.AUDIO ? (0, a.jsx)(X, {
+    return null == e || null == t ? null : r === Y.AUDIO ? (0, a.jsx)(Q, {
       fileName: e,
       fileSize: t,
       src: n,
@@ -845,7 +845,7 @@ class et extends(i = o.PureComponent) {
         tabIndex: 0,
         children: [this.renderMetadata(), this.renderVideo(), (0, a.jsx)("div", {
           className: k.playCenter,
-          children: (0, a.jsx)(R.Z, {
+          children: (0, a.jsx)(P.Z, {
             className: k.__invalid_playButton,
             externalURL: n,
             renderLinkComponent: o

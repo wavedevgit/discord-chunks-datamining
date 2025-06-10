@@ -10,7 +10,7 @@ var r = n(255367),
   i = n(73800),
   a = n(120356),
   o = n.n(a),
-  s = n(386230),
+  s = n(524979),
   l = n(1561),
   c = n(438784),
   u = n(696826),
@@ -111,7 +111,7 @@ function C(e) {
   }, a))
 }
 
-function P(e, t) {
+function R(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   return null != t ? E.intl.formatToPlainString(E.t["/6mw19"], {
     label: e,
@@ -119,7 +119,7 @@ function P(e, t) {
   }) : e
 }
 
-function R(e, t, n, r) {
+function P(e, t, n, r) {
   if (null == e) return null;
   if (r) switch (t) {
     case h.EF.SIZE_16:
@@ -360,7 +360,7 @@ function M(e) {
   } = e, T = {
     width: (0, h.px)(n),
     height: (0, h.px)(n)
-  }, A = null == p || m ? void 0 : P(p, E, y), N = S.size * g.hs, C = R(E, n, y, O), w = null != v && (0, r.jsx)("svg", {
+  }, A = null == p || m ? void 0 : R(p, E, y), N = S.size * g.hs, C = P(E, n, y, O), w = null != v && (0, r.jsx)("svg", {
     width: N + I,
     height: N,
     viewBox: "0 0 ".concat(N + I, " ").concat(N),
@@ -446,13 +446,13 @@ function U(e) {
     "aria-label": T,
     imageClassName: A,
     ref: N
-  } = e, C = n !== m.Skl.UNKNOWN ? n : null, P = (0, h.UC)(i), R = null != C ? Math.ceil((P.status * h.D6 - P.status) / 2) : 0, L = P.size + R, k = (0, u.vj)(C, a);
+  } = e, C = n !== m.Skl.UNKNOWN ? n : null, R = (0, h.UC)(i), P = null != C ? Math.ceil((R.status * h.D6 - R.status) / 2) : 0, L = R.size + P, k = (0, u.vj)(C, a);
   return (0, r.jsx)(M, I(O({}, e), {
     ariaLabel: T,
     ariaHidden: S,
     status: C,
-    specs: P,
-    typingOffset: R,
+    specs: R,
+    typingOffset: P,
     children: (0, r.jsxs)("svg", {
       ref: N,
       width: L,
@@ -463,8 +463,8 @@ function U(e) {
       children: [(0, r.jsx)("foreignObject", {
         x: 0,
         y: 0,
-        width: P.size,
-        height: P.size,
+        width: R.size,
+        height: R.size,
         mask: "url(#".concat(w(C, i, s, l), ")"),
         children: (0, r.jsx)(j, {
           ref: _,
@@ -472,22 +472,22 @@ function U(e) {
           isSpeaking: g,
           className: A
         })
-      }), null != C && null != v ? x(v, s, P, C) : null, null != C ? (0, r.jsx)(d.u, {
+      }), null != C && null != v ? x(v, s, R, C) : null, null != C ? (0, r.jsx)(d.u, {
         text: E ? (0, p.u5)(C) : null,
         "aria-label": !1,
         position: "top",
-        spacing: 5 + 1.5 * P.stroke,
+        spacing: 5 + 1.5 * R.stroke,
         delay: y,
         children: e => (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("rect", I(O({}, e, D(P, C, s, l)), {
+          children: [(0, r.jsx)("rect", I(O({}, e, D(R, C, s, l)), {
             fill: k,
             mask: "url(#".concat((0, u.rs)(C, s, l), ")"),
             className: b.pointerEvents
           })), l ? (0, r.jsx)(c.b, {
             ref: f,
-            dotRadius: P.status / 4,
-            x: P.size - 1.375 * P.status - P.offset,
-            y: P.size - P.status / 1.333 - P.offset
+            dotRadius: R.status / 4,
+            x: R.size - 1.375 * R.status - R.offset,
+            y: R.size - R.status / 1.333 - R.offset
           }) : null]
         })
       }) : null]
@@ -524,8 +524,8 @@ function F(e) {
     src: y,
     status: v,
     statusColor: T,
-    statusTooltip: P = !1,
-    statusTooltipDelay: R,
+    statusTooltip: R = !1,
+    statusTooltipDelay: P,
     statusBackdropColor: w,
     "aria-hidden": D = !1,
     "aria-label": L,
@@ -552,8 +552,8 @@ function F(e) {
   }, N() ? "animate-always" : "animate-never"), {
     avatarCutoutX: z,
     avatarCutoutY: q,
-    avatarCutoutWidth: Q,
-    avatarCutoutHeight: X,
+    avatarCutoutWidth: X,
+    avatarCutoutHeight: Q,
     avatarCutoutRadius: J,
     fill: $
   } = K, ee = S(K, ["avatarCutoutX", "avatarCutoutY", "avatarCutoutWidth", "avatarCutoutHeight", "avatarCutoutRadius", "fill"]), et = (0, h.px)(E), en = (0, h.UC)(E), er = en.status * h.D6, ei = en.status * h.EW, ea = null != v ? (en.status * h.D6 - en.status) / 2 : 0, eo = en.size + Math.ceil(ea), [es, el, ec] = (0, f.q_F)({
@@ -597,8 +597,8 @@ function F(e) {
           color: "black",
           x: z,
           y: q,
-          width: Q,
-          height: X,
+          width: X,
+          height: Q,
           rx: J,
           ry: J
         })]
@@ -615,18 +615,18 @@ function F(e) {
           className: U
         })
       }), null != w && x(w, l, en, v), (0, r.jsx)(d.u, {
-        text: P ? (0, p.u5)(v) : null,
+        text: R ? (0, p.u5)(v) : null,
         "aria-label": !1,
         position: "top",
         spacing: G(en.status, en.stroke, l, _),
-        delay: R,
+        delay: P,
         children: e => (0, r.jsxs)(s.animated.g, {
           transform: es.scale.to(e => "scale(".concat(e, ") ").concat(B(en, e, v))),
           children: [(0, r.jsxs)("svg", {
             width: er,
             height: ei,
             viewBox: "0 0 ".concat(er, " ").concat(ei),
-            className: P ? b.cursorDefault : void 0,
+            className: R ? b.cursorDefault : void 0,
             children: [(0, u.vP)(ee, en.status, H), (0, r.jsx)(s.animated.rect, {
               fill: $,
               width: er,

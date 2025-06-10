@@ -66,7 +66,7 @@ function N(e, t) {
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = P(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,14 +74,14 @@ function C(e, t) {
   return i
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class R extends i.PureComponent {
+class P extends i.PureComponent {
   componentDidMount() {
     this.props.editor.events.addListener("onChange", this.handleOnChange)
   }
@@ -405,4 +405,4 @@ class R extends i.PureComponent {
     }
   }
 }
-let w = R
+let w = P

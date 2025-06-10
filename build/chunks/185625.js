@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   B0: () => O,
-  Jj: () => P,
+  Jj: () => R,
   Lo: () => y,
   M4: () => B,
   Nt: () => b,
@@ -11,7 +11,7 @@ n.d(t, {
   X: () => U,
   ZD: () => I,
   fw: () => A,
-  hs: () => R,
+  hs: () => P,
   i_: () => F,
   k8: () => j,
   ox: () => v,
@@ -173,13 +173,13 @@ async function C(e, t, n) {
     rejectWithError: !1
   })).body
 }
-async function P() {
+async function R() {
   return await s.tn.get({
     url: _.ANM.DSA_CAPABILITIES,
     rejectWithError: !1
   })
 }
-async function R(e) {
+async function P(e) {
   return (await s.tn.post({
     url: _.ANM.SUBMIT_REPORT_SECOND_LOOK,
     body: {

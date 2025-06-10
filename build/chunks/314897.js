@@ -36,8 +36,8 @@ function A(e, t, n) {
 }
 let N = new m.Z("AuthenticationStore"),
   C = "fingerprint",
-  P = "user_id_cache",
-  R = null,
+  R = "user_id_cache",
+  P = null,
   w = null,
   D = null,
   L = null,
@@ -58,7 +58,7 @@ let N = new m.Z("AuthenticationStore"),
   z = !1,
   q = [];
 
-function Q(e) {
+function X(e) {
   let t = null != a.getToken(),
     n = null != c.K.get(S.B1h);
   N.verbose(e, {
@@ -67,7 +67,7 @@ function Q(e) {
   })
 }
 
-function X() {
+function Q() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   if (x = c.K.get(C), null != Y) return Y;
   let t = null != x ? x : a.getToken();
@@ -119,7 +119,7 @@ function $() {
 }
 
 function ee(e, t) {
-  Q("setAuthToken called."), (null == t || t !== R) && a.removeAnalyticsToken(), a.setToken(e, t)
+  X("setAuthToken called."), (null == t || t !== P) && a.removeAnalyticsToken(), a.setToken(e, t)
 }
 
 function et(e) {
@@ -127,7 +127,7 @@ function et(e) {
 }
 
 function en() {
-  return Q("removeAuthToken called."), a.removeAnalyticsToken(), a.removeToken()
+  return X("removeAuthToken called."), a.removeAnalyticsToken(), a.removeToken()
 }
 
 function er(e) {
@@ -141,7 +141,7 @@ function ei(e) {
   let {
     isMultiAccount: t
   } = e;
-  j = S.u34.NONE, B = "", F = !1, V = null, r = null, t || (eu(), en(), X(!1))
+  j = S.u34.NONE, B = "", F = !1, V = null, r = null, t || (eu(), en(), Q(!1))
 }
 
 function ea() {
@@ -224,7 +224,7 @@ function eg(e) {
   null == x ? null != t ? (b.default.track(S.rMx.USER_FINGERPRINT_CHANGED, {
     old_fingerprint: null != k ? (0, o.s)(k) : null,
     new_fingerprint: (0, o.s)(t)
-  }), x = t, k = t, c.K.set(C, x)) : X() : null != t && x !== t && b.default.track(S.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
+  }), x = t, k = t, c.K.set(C, x)) : Q() : null != t && x !== t && b.default.track(S.rMx.EXTERNAL_FINGERPRINT_DROPPED, {
     fingerprint: (0, o.s)(x),
     dropped_fingerprint: (0, o.s)(t)
   })
@@ -247,7 +247,7 @@ function eb(e) {
     auth: o,
     staticAuthSessionId: s
   } = e;
-  Q("handleConnectionOpen called"), O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, D = i, L = s, et(a), R = n.id, void 0 !== o && (G = o.authenticator_types), c.K.set(P, n.id)
+  X("handleConnectionOpen called"), O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, D = i, L = s, et(a), P = n.id, void 0 !== o && (G = o.authenticator_types), c.K.set(R, n.id)
 }
 
 function ey(e) {
@@ -258,19 +258,19 @@ function ey(e) {
     analyticsToken: i,
     token: a
   } = e;
-  O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, M = i, ee(a, n.id), null != i && et(i), $(), R = n.id, c.K.set(P, n.id)
+  O.Z.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, E.Z)(n)), w = r, M = i, ee(a, n.id), null != i && et(i), $(), P = n.id, c.K.set(R, n.id)
 }
 
 function eO(e) {
   let {
     code: t
   } = e;
-  Q("handleConnectionClosed called with code ".concat(t, "."));
+  X("handleConnectionClosed called with code ".concat(t, "."));
   let r = n(952265).nf;
   if (4004 === t) {
     if (U || r(T.$$) || r(T.dG)) return void eS();
     b.default.track(S.rMx.APP_USER_DEAUTHENTICATED, {
-      user_id: c.K.get(P)
+      user_id: c.K.get(R)
     }), eT(), setImmediate(() => (0, g.uL)(S.Z5c.DEFAULT_LOGGED_OUT))
   }
 }
@@ -280,7 +280,7 @@ function ev(e) {
     token: t,
     userId: n
   } = e;
-  Q("handleUpdateToken called"), ee(t, n), $()
+  X("handleUpdateToken called"), ee(t, n), $()
 }
 
 function eI(e) {
@@ -298,12 +298,12 @@ function eS() {
 
 function eT(e) {
   var t;
-  Q("handleLogout called.");
+  X("handleLogout called.");
   let n = en();
-  null != (t = null == e ? void 0 : e.isSwitchingAccount) && t || (n && $(), X()), s.ZP.PersistedStore.clearAll({
+  null != (t = null == e ? void 0 : e.isSwitchingAccount) && t || (n && $(), Q()), s.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore"],
     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), I.Z.clearAll(), h.ZH(), O.Z.clearUser(), c.K.remove(P), R = null, w = null, j = (null == e ? void 0 : e.isSwitchingAccount) ? S.u34.LOGGING_IN : S.u34.NONE, B = "", V = null, F = !1, K = !1, z = !1, eu()
+  }), I.Z.clearAll(), h.ZH(), O.Z.clearUser(), c.K.remove(R), P = null, w = null, j = (null == e ? void 0 : e.isSwitchingAccount) ? S.u34.LOGGING_IN : S.u34.NONE, B = "", V = null, F = !1, K = !1, z = !1, eu()
 }
 
 function eA() {
@@ -318,28 +318,28 @@ function eC(e) {
   let {
     user: t
   } = e;
-  R = t.id, void 0 !== t.authenticator_types && (G = t.authenticator_types), c.K.set(P, t.id)
+  P = t.id, void 0 !== t.authenticator_types && (G = t.authenticator_types), c.K.set(R, t.id)
 }
 
-function eP(e) {
+function eR(e) {
   let {
     suspendedUserToken: t
   } = e;
   K = !1, W = t, setImmediate(() => (0, g.uL)(S.Z5c.ACCOUNT_STANDING))
 }
 
-function eR() {
+function eP() {
   W = null, j = S.u34.NONE, eT(), setImmediate(() => (0, g.uL)(S.Z5c.DEFAULT_LOGGED_OUT))
 }
 class ew extends(i = s.ZP.Store) {
   initialize() {
-    R = c.K.get(P), null == a.getToken() && X(), this.addChangeListener(() => (0, p.u)(R))
+    P = c.K.get(R), null == a.getToken() && Q(), this.addChangeListener(() => (0, p.u)(P))
   }
   getLoginStatus() {
     return j
   }
   getId() {
-    return R
+    return P
   }
   getSessionId() {
     return w
@@ -405,7 +405,7 @@ let eD = new ew(u.Z, {
   LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED: em,
   LOGIN_RESET: ei,
   LOGIN_STATUS_RESET: ea,
-  LOGIN_SUSPENDED_USER: eP,
+  LOGIN_SUSPENDED_USER: eR,
   LOGOUT: eT,
   FINGERPRINT: eg,
   REGISTER_SUCCESS: eE,
@@ -415,7 +415,7 @@ let eD = new ew(u.Z, {
   EXPERIMENTS_FETCH: J,
   CURRENT_USER_UPDATE: eC,
   AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: eS,
-  CLOSE_SUSPENDED_USER: eR,
+  CLOSE_SUSPENDED_USER: eP,
   PASSWORDLESS_FAILURE: ec,
   PASSWORDLESS_START: el
 }, u.c.Early)

@@ -117,7 +117,7 @@ function m(e) {
         path: e.split(d)
       })
     })
-  })), P = r.useCallback(e => {
+  })), R = r.useCallback(e => {
     if (!E.current) return;
     e.key === a.R8.ESCAPE && null != g && (e.stopPropagation(), e.preventDefault(), g());
     let n = f(e);
@@ -139,7 +139,7 @@ function m(e) {
         let i = p(null != (r = e.target.ownerDocument) ? r : document, _(t, v));
         null == i || i.click()
     }
-  }, [O, t, v, c, g]), R = r.useCallback(() => {
+  }, [O, t, v, c, g]), P = r.useCallback(() => {
     I || S(!0)
   }, [I]), w = r.useCallback(e => {
     e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && I && S(!1)
@@ -152,12 +152,12 @@ function m(e) {
     role: "menu",
     id: t,
     tabIndex: -1,
-    onKeyDown: P,
-    onFocus: R,
+    onKeyDown: R,
+    onFocus: P,
     onBlur: w,
     onMouseLeave: D,
     "aria-activedescendant": v.length > 0 ? (0, o.qR)(t, v.join(d)) : void 0
-  }), [t, P, R, w, D, v]), k = r.useCallback(e => {
+  }), [t, R, P, w, D, v]), k = r.useCallback(e => {
     let {
       path: n
     } = e;

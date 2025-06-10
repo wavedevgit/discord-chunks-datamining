@@ -2,14 +2,14 @@
 "use strict";
 n.d(t, {
   Z: () => D,
-  u: () => R
+  u: () => P
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   a = n(120356),
   o = n.n(a),
   s = n(392711),
-  l = n(386230),
+  l = n(524979),
   c = n(481060),
   u = n(596454),
   d = n(727637),
@@ -65,9 +65,9 @@ function N(e, t) {
   }), e
 }
 let C = O.Hz.CHAT,
-  P = [m.ZP.getByName("thumbsup"), m.ZP.getByName("eyes"), m.ZP.getByName("laughing"), m.ZP.getByName("watermelon"), m.ZP.getByName("fork_and_knife"), m.ZP.getByName("yum")].filter(b.lm);
+  R = [m.ZP.getByName("thumbsup"), m.ZP.getByName("eyes"), m.ZP.getByName("laughing"), m.ZP.getByName("watermelon"), m.ZP.getByName("fork_and_knife"), m.ZP.getByName("yum")].filter(b.lm);
 
-function R(e) {
+function P(e) {
   let {
     emoji: t,
     isDisabled: n = !1,
@@ -151,7 +151,7 @@ function D(e) {
     recentlyUsedEmojis: b,
     analyticsOverride: S,
     ref: A
-  } = e, D = (0, f.Dt)(), [L, x] = i.useState(!1), k = (0, _.wC)(t.guild_id), M = (0, s.uniqBy)([...k, ...P], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
+  } = e, D = (0, f.Dt)(), [L, x] = i.useState(!1), k = (0, _.wC)(t.guild_id), M = (0, s.uniqBy)([...k, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: C
@@ -225,7 +225,7 @@ function D(e) {
                 "aria-label": e.name,
                 tooltipClassName: I.tooltipContainer,
                 color: c.ua7.Colors.BRAND,
-                children: (0, r.jsx)(R, {
+                children: (0, r.jsx)(P, {
                   emoji: e,
                   isDisabled: n,
                   onClick: () => {

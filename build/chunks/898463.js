@@ -100,7 +100,7 @@ function C(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     file: t,
     alt: n,
@@ -173,7 +173,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     file: t,
     alt: n,
@@ -217,13 +217,13 @@ function w(e) {
     size: a = y.q.MEDIUM,
     onMouseEnter: s
   } = e, [l, c] = i.useState(!1), u = a === y.q.SMALL;
-  return n.isImage && n.item.platform === d.ow.WEB ? (0, r.jsx)(P, {
+  return n.isImage && n.item.platform === d.ow.WEB ? (0, r.jsx)(R, {
     file: n.item.file,
     alt: n.description,
     spoiler: n.spoiler,
     size: a,
     onMouseEnter: s
-  }) : !l && n.isVideo && n.item.platform === d.ow.WEB ? (0, r.jsx)(R, {
+  }) : !l && n.isVideo && n.item.platform === d.ow.WEB ? (0, r.jsx)(P, {
     file: n.item.file,
     size: a,
     alt: n.description,
@@ -257,10 +257,10 @@ function D(e) {
     canEdit: g = !0,
     hideFileName: I = !1,
     clip: T
-  } = e, N = null != T, C = (h = N ? y.q.CLIP : h) === y.q.SMALL, P = (0, s.e7)([m.Z], () => {
+  } = e, N = null != T, C = (h = N ? y.q.CLIP : h) === y.q.SMALL, R = (0, s.e7)([m.Z], () => {
     var e;
     return null == (e = m.Z.getChannel(t)) ? void 0 : e.guild_id
-  }), R = e => {
+  }), P = e => {
     e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, A(S({}, e), {
       draftType: n,
       upload: a,
@@ -307,7 +307,7 @@ function D(e) {
           [v.action]: C
         }),
         tooltip: O.intl.string(O.t.Y8ujqq),
-        onClick: R,
+        onClick: P,
         children: (0, r.jsx)(l.vdY, {
           size: "xs",
           color: "currentColor",
@@ -334,7 +334,7 @@ function D(e) {
     draftType: n,
     id: a.id,
     channelId: t,
-    handleEditModal: R,
+    handleEditModal: P,
     keyboardModeEnabled: d,
     size: h,
     className: o()({
@@ -357,7 +357,7 @@ function D(e) {
         participantIds: T.users,
         applicationId: T.applicationId,
         title: T.name,
-        guildId: P
+        guildId: R
       }), (0, r.jsx)(l.IGR, {
         color: _.Z.BG_BRAND,
         className: v.clipsBadge,

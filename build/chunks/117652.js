@@ -30,8 +30,8 @@ var i = n(442837),
   A = n(981631),
   N = n(474936),
   C = n(388032),
-  P = n(997433),
-  R = n(651427);
+  R = n(997433),
+  P = n(651427);
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -125,7 +125,7 @@ function k(e) {
         sku_id: e
       }), null != D && z(D, e), G(e)
     },
-    Q = e => {
+    X = e => {
       let t = V[e],
         n = null;
       if (null != t) {
@@ -139,56 +139,56 @@ function k(e) {
         price: a,
         isSelected: e === U,
         onSelect: e => q(e),
-        className: P.recommendedGiftPreview
+        className: R.recommendedGiftPreview
       }, e)
     },
-    X = () => (0, r.jsx)(p.Z, {
+    Q = () => (0, r.jsx)(p.Z, {
       sectionTitle: C.intl.string(C.t.B3miEx),
       onTextChange: e => null == l ? void 0 : l(e),
       pendingText: s,
       currentText: s,
       disableThemedBackground: !0,
-      className: P.customGiftMessageWrapper,
-      innerClassName: P.customGiftMessage
+      className: R.customGiftMessageWrapper,
+      innerClassName: R.customGiftMessage
     }),
     J = () => W ? (0, r.jsxs)("div", {
-      className: P.bodyColumnLeft,
+      className: R.bodyColumnLeft,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
         color: "header-secondary",
-        className: P.selectGiftTitle,
+        className: R.selectGiftTitle,
         children: K.toLocaleUpperCase()
-      }), L.map(e => Q(e)), (0, r.jsx)(M, {
+      }), L.map(e => X(e)), (0, r.jsx)(M, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
-      className: P.bodyColumnMiddle,
+      className: R.bodyColumnMiddle,
       children: (0, r.jsx)(h.q, {
         isShopGift: !0
       })
     }),
     $ = () => {
       if (W) return (0, r.jsxs)("div", {
-        className: P.bodyColumnRight,
+        className: R.bodyColumnRight,
         children: [(0, r.jsx)(g.s, {
           giftRecipient: D
         }), (0, r.jsx)(h.q, {
           isShopGift: !0,
-          className: R.adjustedGiftMainAnimation,
-          optionsContainerClassName: R.adjustedGiftBoxOptionContainer
-        }), X()]
+          className: P.adjustedGiftMainAnimation,
+          optionsContainerClassName: P.adjustedGiftBoxOptionContainer
+        }), Q()]
       });
       let e = null != B ? (0, O.T4)(B.amount, B.currency) : void 0;
       return (0, r.jsxs)("div", {
-        className: P.bodyColumnRight,
+        className: R.bodyColumnRight,
         children: [(0, r.jsx)(d.Z, {
           selectedSkuId: U,
-          className: P.sendTo,
+          className: R.sendTo,
           validateSelectedGift: z
-        }), X(), null != e && (0, r.jsx)(u.Z, {
+        }), Q(), null != e && (0, r.jsx)(u.Z, {
           skuId: U,
           price: e,
-          className: P.giftPreview,
+          className: R.giftPreview,
           isSelected: !0,
           shouldDisplayHeader: !0
         })]
@@ -197,7 +197,7 @@ function k(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(T.C3, {
       children: (0, r.jsxs)("div", {
-        className: P.stepBody,
+        className: R.stepBody,
         children: [J(), $()]
       })
     }), (0, r.jsx)(T.O3, {
@@ -232,11 +232,11 @@ function M(e) {
   return (0, r.jsx)(a.P3F, {
     onClick: i,
     children: (0, r.jsxs)("div", {
-      className: P.navigateToShopButton,
+      className: R.navigateToShopButton,
       children: [(0, r.jsxs)("div", {
-        className: P.navigateToShopBody,
+        className: R.navigateToShopBody,
         children: [(0, r.jsx)("div", {
-          className: P.shopIcon,
+          className: R.shopIcon,
           children: (0, r.jsx)(a.EOn, {
             size: "custom",
             width: 18,
@@ -244,7 +244,7 @@ function M(e) {
             color: "var(--header-primary)"
           })
         }), (0, r.jsxs)("div", {
-          className: P.navigateToShopTextWrapper,
+          className: R.navigateToShopTextWrapper,
           children: [(0, r.jsx)(a.Text, {
             color: "header-primary",
             variant: "text-md/semibold",

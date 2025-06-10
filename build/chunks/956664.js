@@ -8,7 +8,7 @@ n.d(t, {
   Tj: () => c,
   XN: () => v,
   _H: () => g,
-  c0: () => P,
+  c0: () => R,
   fD: () => T,
   kD: () => C,
   rn: () => m,
@@ -162,7 +162,7 @@ function C(e) {
     type: n
   })
 }
-async function P(e) {
+async function R(e) {
   var t;
   if ("image/png" !== (null == (t = e.type) ? void 0 : t.split(";")[0])) throw Error("File is not a PNG");
   let n = await e.text(),

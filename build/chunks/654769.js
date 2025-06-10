@@ -29,7 +29,7 @@ var r, i = n(392711),
   N = n(998502),
   C = n(981631);
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,15 +37,15 @@ function P(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let R = A.isPlatformEmbedded && (0, A.isWindows)(),
-  w = R && 10 > parseFloat(l.Z.os.release),
+let P = A.isPlatformEmbedded && (0, A.isWindows)(),
+  w = P && 10 > parseFloat(l.Z.os.release),
   D = !0;
-if (R && !w) {
+if (P && !w) {
   let [e, , t] = l.Z.os.release.split(".");
   D = parseInt(e) > 10 || parseInt(t) >= 15063
 }
 let L = new u.Z("NotificationUtils"),
-  x = R && D || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
+  x = P && D || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
 async function k() {
   if (null === l.Z || void 0 === l.Z ? void 0 : l.Z.features.supports("notifications")) try {
     return await N.ZP.invoke("NOTIFICATIONS_GET_SETTINGS")
@@ -82,7 +82,7 @@ let G = a().throttle(U, 1e3, {
 function B() {
   N.ZP.flashFrame(!1)
 }
-R && (window.addEventListener("focus", B), N.ZP.on("MAIN_WINDOW_FOCUS", B));
+P && (window.addEventListener("focus", B), N.ZP.on("MAIN_WINDOW_FOCUS", B));
 let F = window.Notification;
 if (w) {
   let e = {};
@@ -100,14 +100,14 @@ if (w) {
       body: n,
       icon: r
     }) {
-      P(this, "id", F._id++), P(this, "title", void 0), P(this, "body", void 0), P(this, "icon", void 0), P(this, "onshow", function() {}), P(this, "onclick", function() {}), P(this, "onclose", function() {}), t.includes("\0") ? (L.warn("Notification title contains null character, setting to empty string"), this.title = "") : this.title = t, n.includes("\0") ? (L.warn("Notification body contains null character, setting to empty string"), this.body = "") : this.body = n, this.icon = r, setImmediate(() => this.onshow()), e[this.id] = this, N.ZP.send("NOTIFICATION_SHOW", {
+      R(this, "id", F._id++), R(this, "title", void 0), R(this, "body", void 0), R(this, "icon", void 0), R(this, "onshow", function() {}), R(this, "onclick", function() {}), R(this, "onclose", function() {}), t.includes("\0") ? (L.warn("Notification title contains null character, setting to empty string"), this.title = "") : this.title = t, n.includes("\0") ? (L.warn("Notification body contains null character, setting to empty string"), this.body = "") : this.body = n, this.icon = r, setImmediate(() => this.onshow()), e[this.id] = this, N.ZP.send("NOTIFICATION_SHOW", {
         id: this.id,
         title: this.title,
         body: this.body,
         icon: this.icon
       })
     }
-  }, P(r, "permission", "granted"), P(r, "_id", 0), F = r
+  }, R(r, "permission", "granted"), R(r, "_id", 0), F = r
 }
 let V = {};
 if (null === l.Z || void 0 === l.Z ? void 0 : l.Z.features.supports("notifications")) {
@@ -164,10 +164,10 @@ function W(e) {
 }
 async function K(e, t, n, r, i) {
   var a, o, s, l, u, p, h;
-  let m, P = await k(),
-    w = (null == P ? void 0 : P.authorizationStatus) === "authorized" || (null == P ? void 0 : P.authorizationStatus) === "provisional",
-    M = null != P ? w : await H(),
-    U = w && (!R || (0, f.R)({
+  let m, R = await k(),
+    w = (null == R ? void 0 : R.authorizationStatus) === "authorized" || (null == R ? void 0 : R.authorizationStatus) === "provisional",
+    M = null != R ? w : await H(),
+    U = w && (!P || (0, f.R)({
       location: "showNotification"
     }).enabled),
     G = O.Z.disableNotifications && null == i.overrideStreamerMode,
@@ -178,12 +178,12 @@ async function K(e, t, n, r, i) {
   }
   t.includes("\0") && (L.warn("Notification title contains null character, setting to empty string"), t = ""), n.includes("\0") && (L.warn("Notification body contains null character, setting to empty string"), n = "");
   let Z = null != (o = null == i ? void 0 : i.tag) ? o : null,
-    Y = U && (null == P ? void 0 : P.sound) === !0 && (null == P ? void 0 : P.authorizationStatus) === "authorized",
+    Y = U && (null == R ? void 0 : R.sound) === !0 && (null == R ? void 0 : R.authorizationStatus) === "authorized",
     K = e => {
       var t;
       null == (t = i.onShown) || t.call(i), i.omitViewTracking || I.default.track(C.rMx.NOTIFICATION_VIEWED, r), x && setTimeout(() => e.close(), 5e3)
     };
-  if (null == i.sound || Y || W(i.sound, null != (s = i.volume) ? s : 1, i.soundpack), i.isUserAvatar && null != e && (e = await (0, _.D)(e)), R && b.Z.taskbarFlash && N.ZP.flashFrame(!0), U) {
+  if (null == i.sound || Y || W(i.sound, null != (s = i.volume) ? s : 1, i.soundpack), i.isUserAvatar && null != e && (e = await (0, _.D)(e)), P && b.Z.taskbarFlash && N.ZP.flashFrame(!0), U) {
     let a = {
       title: t,
       body: n

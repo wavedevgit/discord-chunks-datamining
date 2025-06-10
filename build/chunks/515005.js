@@ -80,8 +80,8 @@ function C(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let P = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
-  R = (0, l.Mg)(v.__invalid_stickerPickerPreviewPadding),
+let R = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
+  P = (0, l.Mg)(v.__invalid_stickerPickerPreviewPadding),
   w = 250,
   D = i.memo(function(e) {
     let {
@@ -98,8 +98,8 @@ let P = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
       rowIndex: M,
       stickerClassName: j,
       stickerDescriptors: U,
-      stickerPadding: G = R,
-      stickerSize: B = P,
+      stickerPadding: G = P,
+      stickerSize: B = R,
       ownedStickerPacks: F,
       enlargeOnInteraction: V = !1,
       channel: Z,
@@ -116,7 +116,7 @@ let P = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
       width: B,
       height: B,
       padding: G
-    }), [G, B]), [Q, X] = (0, f.Z)(null, 300);
+    }), [G, B]), [X, Q] = (0, f.Z)(null, 300);
     return (0, r.jsx)("div", A(S({
       className: v.row,
       style: z
@@ -128,12 +128,12 @@ let P = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
           T = t => {
             if ((null == D ? void 0 : D.current) === !0 || (null == L ? void 0 : L.current) === !0) return;
             let n = t.altKey;
-            n && e.type === m.al.STICKER && !(0, g.gM)(e.sticker.id) && X(e.sticker.id), null == k || k(e, n)
+            n && e.type === m.al.STICKER && !(0, g.gM)(e.sticker.id) && Q(e.sticker.id), null == k || k(e, n)
           },
-          P = (0, s.throttle)(() => {
+          R = (0, s.throttle)(() => {
             (null == D ? void 0 : D.current) === !0 || (null == L ? void 0 : L.current) === !0 || f || null == x || x(e)
           }, w),
-          R = () => {
+          P = () => {
             e.type === m.al.CREATE_STICKER && (p.default.track(y.rMx.OPEN_MODAL, {
               type: y.jXE.CREATE_STICKER_MODAL,
               location: W
@@ -163,9 +163,9 @@ let P = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
                 }),
                 innerRef: G,
                 tabIndex: K,
-                onFocus: null != z ? z : P,
-                onMouseMove: P,
-                onClick: R,
+                onFocus: null != z ? z : R,
+                onMouseMove: R,
+                onClick: P,
                 style: q,
                 children: [!V && (0, r.jsx)("div", {
                   className: v.inspectedIndicator
@@ -198,12 +198,12 @@ let P = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
             }), (0, r.jsxs)(c.P3F, {
               className: o()(v.sticker, j, {
                 [v.stickerInspected]: f,
-                [v.showPulse]: Q === e.sticker.id
+                [v.showPulse]: X === e.sticker.id
               }),
               innerRef: G,
               tabIndex: K,
-              onFocus: null != z ? z : P,
-              onMouseMove: P,
+              onFocus: null != z ? z : R,
+              onMouseMove: R,
               onClick: T,
               onContextMenu: l,
               style: q,

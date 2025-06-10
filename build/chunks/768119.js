@@ -146,14 +146,14 @@ function C(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     searchId: t
   } = e, n = g(t);
   n.isIndexing = !0, n.isHistoricalIndexing = !0, n.isSearching = !1
 }
 
-function R(e) {
+function P(e) {
   let {
     searchId: t
   } = e, n = g(t);
@@ -328,8 +328,8 @@ class V extends(r = o.ZP.Store) {
 p(V, "displayName", "SearchStore");
 let Z = new V(l.Z, {
   SEARCH_START: N,
-  SEARCH_INDEXING: P,
-  SEARCH_FINISH: R,
+  SEARCH_INDEXING: R,
+  SEARCH_FINISH: P,
   SEARCH_EDITOR_STATE_CLEAR: w,
   SEARCH_ENSURE_SEARCH_STATE: A,
   SEARCH_EDITOR_STATE_CHANGE: T,

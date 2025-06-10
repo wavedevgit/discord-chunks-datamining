@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Dt: () => N,
-  ZP: () => P,
+  ZP: () => R,
   ze: () => A
 }), n(997841);
 var r = n(255367),
@@ -114,19 +114,19 @@ function C(e) {
       maxWidth: A,
       maxHeight: C
     } = n,
-    P = S(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
+    R = S(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
     {
       zoomed: w,
       setZoomed: D
     } = (0, E.Y)(),
-    L = R(w, m, y),
+    L = P(w, m, y),
     x = null != _ && 0 !== _ && null != p && 0 !== p;
   if ("VIDEO" === T && x && null != y) {
     var k;
     let e = N(y);
     if (null == e) return null;
     let t = null != (k = n.renderLinkComponent) ? k : f.iT;
-    return (0, r.jsx)(c.Z, I(O({}, P), {
+    return (0, r.jsx)(c.Z, I(O({}, R), {
       src: L,
       width: _,
       height: p,
@@ -146,7 +146,7 @@ function C(e) {
       disableArrowKeySeek: !0
     }))
   }
-  return "IMAGE" === T && (t = x ? (0, r.jsx)(l.ZP, I(O({}, P), {
+  return "IMAGE" === T && (t = x ? (0, r.jsx)(l.ZP, I(O({}, R), {
     src: L,
     width: _,
     height: p,
@@ -183,9 +183,9 @@ function C(e) {
     children: t
   }) : null
 }
-let P = i.memo(C);
+let R = i.memo(C);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return e && m.Z.isDiscordAssetUrl(t) ? (0, d.s$)(t) : (0, _.q)({
     proxyURL: n,
     url: t

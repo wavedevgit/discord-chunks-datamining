@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   $B: () => j,
-  AW: () => P,
+  AW: () => R,
   EN: () => D,
   F0: () => m,
   LX: () => C,
@@ -185,7 +185,7 @@ function C(e, t) {
     }
   }, null)
 }
-var P = function(e) {
+var R = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
@@ -210,7 +210,7 @@ var P = function(e) {
   }, t
 }(i.Component);
 
-function R(e) {
+function P(e) {
   return "/" === e.charAt(0) ? e : "/" + e
 }
 i.Component;

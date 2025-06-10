@@ -218,7 +218,7 @@ function C(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     modelId: t,
     downloadedBytes: n,
@@ -230,7 +230,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   var t;
   let {
     modelId: n,
@@ -276,8 +276,8 @@ function M() {
 d(A, "displayName", "VoiceFilterStore");
 let j = new A(l.Z, {
   VOICE_FILTER_DOWNLOAD_STARTED: C,
-  VOICE_FILTER_DOWNLOAD_PROGRESS: P,
-  VOICE_FILTER_DOWNLOAD_FAILED: R,
+  VOICE_FILTER_DOWNLOAD_PROGRESS: R,
+  VOICE_FILTER_DOWNLOAD_FAILED: P,
   VOICE_FILTER_FILE_READY: w,
   VOICE_FILTER_CATALOG_FETCH_SUCCESS: I,
   VOICE_FILTER_CATALOG_FETCH_FAILED: S,

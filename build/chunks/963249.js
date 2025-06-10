@@ -89,8 +89,8 @@ function A(e) {
     analyticsLocations: A,
     analyticsObject: N,
     analyticsLocation: C,
-    analyticsSourceLocation: P,
-    confirmationFooter: R,
+    analyticsSourceLocation: R,
+    confirmationFooter: P,
     paymentModalBanner: w,
     isGift: D = !1,
     giftMessage: L,
@@ -106,7 +106,7 @@ function A(e) {
     returnRef: Z,
     subscription: H,
     skipConfirm: Y
-  } = null != e ? e : {}, W = !1, K = (0, o.Z)(), z = p.default.getCurrentUser(), q = (0, g.M5)(z, b.p9.TIER_2), Q = a()("payment-modal"), X = (0, g.Wz)(M);
+  } = null != e ? e : {}, W = !1, K = (0, o.Z)(), z = p.default.getCurrentUser(), q = (0, g.M5)(z, b.p9.TIER_2), X = a()("payment-modal"), Q = (0, g.Wz)(M);
   return (0, s.ZDy)(async () => {
     let {
       default: e
@@ -118,7 +118,7 @@ function A(e) {
       return (0, r.jsx)(e, I(O({}, o), {
         loadId: K,
         subscriptionTier: M,
-        skuId: X,
+        skuId: Q,
         isGift: D,
         giftMessage: L,
         giftStyle: x,
@@ -139,8 +139,8 @@ function A(e) {
         analyticsLocations: A,
         analyticsObject: N,
         analyticsLocation: C,
-        analyticsSourceLocation: P,
-        confirmationFooter: R,
+        analyticsSourceLocation: R,
+        confirmationFooter: P,
         paymentModalBanner: w,
         trialId: j,
         postSuccessGuild: U,
@@ -154,16 +154,16 @@ function A(e) {
       }))
     }
   }, {
-    modalKey: Q,
+    modalKey: X,
     onCloseCallback: () => {
       W || h.default.track(E.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: K,
         payment_type: E.Zuq[E.GZQ.SUBSCRIPTION],
         location: null != C ? C : N,
-        source: P,
+        source: R,
         subscription_type: E.NYc.PREMIUM,
         is_gift: D,
-        sku_id: X,
+        sku_id: Q,
         eligible_for_trial: null != j,
         application_id: B,
         location_stack: A

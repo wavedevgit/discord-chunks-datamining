@@ -55,8 +55,8 @@ function C(e) {
     currentUser: n,
     guildId: A,
     channelId: C,
-    messageId: P,
-    roleId: R,
+    messageId: R,
+    roleId: P,
     openedAt: w,
     closePopout: D,
     setPopoutRef: L,
@@ -70,8 +70,8 @@ function C(e) {
     userId: t.id,
     guildId: A,
     channelId: C,
-    messageId: P,
-    roleId: R
+    messageId: R,
+    roleId: P
   }), G = (0, _.ZP)(t.id, A), B = (0, a.e7)([u.Z], () => null != A ? u.Z.getGuild(A) : null), F = i.useRef(null), V = (0, s.Z)(F);
   i.useEffect(() => {
     null == L || L(null == F ? void 0 : F.current)

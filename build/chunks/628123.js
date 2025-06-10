@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -138,4 +138,4 @@ class C extends i.PureComponent {
     }), T(this, "discordErrorsSet", !1)
   }
 }
-let P = C
+let R = C

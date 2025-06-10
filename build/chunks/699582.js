@@ -402,7 +402,7 @@ function C(e) {
   return !(!i.expBCP47Syntax.test(e) || i.expVariantDupes.test(e) || i.expSingletonDupes.test(e))
 }
 
-function P(e) {
+function R(e) {
   var t, n;
   n = (e = e.toLowerCase()).split("-");
   for (var r = 1, a = n.length; r < a; r++)
@@ -414,7 +414,7 @@ function P(e) {
   return m.call(n, "-")
 }
 
-function R() {
+function P() {
   return r
 }
 
@@ -432,7 +432,7 @@ function D(e) {
       if (null == o || "string" != typeof o && "object" != typeof o) throw TypeError("String or Object type expected");
       var s = String(o);
       if (!C(s)) throw RangeError("'" + s + "' is not a structurally valid language tag");
-      s = P(s), -1 === d.call(t, s) && h.call(t, s)
+      s = R(s), -1 === d.call(t, s) && h.call(t, s)
     }
     i++
   }
@@ -462,7 +462,7 @@ function x(e, t) {
         c = a.indexOf("-u-");
       s["[[extension]]"] = l, s["[[extensionIndex]]"] = c
     }
-  } else s["[[locale]]"] = R();
+  } else s["[[locale]]"] = P();
   return s
 }
 
@@ -737,13 +737,13 @@ var q = {
   tibt: ["༠", "༡", "༢", "༣", "༤", "༥", "༦", "༧", "༨", "༩"]
 };
 
-function Q() {
+function X() {
   var e = arguments[0],
     t = arguments[1];
-  return this && this !== o ? X(em(this), e, t) : new o.DateTimeFormat(e, t)
+  return this && this !== o ? Q(em(this), e, t) : new o.DateTimeFormat(e, t)
 }
 
-function X(e, t, n) {
+function Q(e, t, n) {
   var r = eg(e),
     i = ep();
   if (!0 === r["[[initializedIntlObject]]"]) throw TypeError("`this` object has already been initialized as an Intl object");
@@ -802,8 +802,8 @@ u(o.NumberFormat.prototype, "resolvedOptions", {
 }), u(o, "DateTimeFormat", {
   configurable: !0,
   writable: !0,
-  value: Q
-}), u(Q, "prototype", {
+  value: X
+}), u(X, "prototype", {
   writable: !1
 });
 var J = {
@@ -973,7 +973,7 @@ function el(e, t) {
   var n, i = [t],
     a = t.split("-");
   for (a.length > 2 && 4 === a[1].length && h.call(i, a[0] + "-" + a[2]); n = g.call(i);) h.call(b.NumberFormat["[[availableLocales]]"], n), b.NumberFormat["[[localeData]]"][n] = e.number, e.date && (e.date.nu = e.number.nu, h.call(b.DateTimeFormat["[[availableLocales]]"], n), b.DateTimeFormat["[[localeData]]"][n] = e.date);
-  void 0 === r && (r = t), v || (Z(o.NumberFormat.prototype), v = !0), e.date && !I && (X(o.DateTimeFormat.prototype), I = !0)
+  void 0 === r && (r = t), v || (Z(o.NumberFormat.prototype), v = !0), e.date && !I && (Q(o.DateTimeFormat.prototype), I = !0)
 }
 
 function ec(e) {
@@ -1056,7 +1056,7 @@ es.Number.toLocaleString = function() {
   var t = arguments[0],
     n = arguments[1],
     n = ee(n, "any", "all");
-  return ea(new Q(t, n), e)
+  return ea(new X(t, n), e)
 }, es.Date.toLocaleDateString = function() {
   if ("[object Date]" !== Object.prototype.toString.call(this)) throw TypeError("`this` value must be a Date instance for Date.prototype.toLocaleDateString()");
   var e = +this;
@@ -1064,7 +1064,7 @@ es.Number.toLocaleString = function() {
   var t = arguments[0],
     n = arguments[1],
     n = ee(n, "date", "date");
-  return ea(new Q(t, n), e)
+  return ea(new X(t, n), e)
 }, es.Date.toLocaleTimeString = function() {
   if ("[object Date]" !== Object.prototype.toString.call(this)) throw TypeError("`this` value must be a Date instance for Date.prototype.toLocaleTimeString()");
   var e = +this;
@@ -1072,7 +1072,7 @@ es.Number.toLocaleString = function() {
   var t = arguments[0],
     n = arguments[1],
     n = ee(n, "time", "time");
-  return ea(new Q(t, n), e)
+  return ea(new X(t, n), e)
 }, u(o, "__applyLocaleSensitivePrototypes", {
   writable: !0,
   configurable: !0,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B_: () => P,
+  B_: () => R,
   MO: () => b,
   _M: () => y,
   k5: () => N,
@@ -86,7 +86,7 @@ async function C(e) {
   });
   return t.ok ? t.body.refreshed_urls[0].refreshed : void 0
 }
-async function P(e) {
+async function R(e) {
   let t = l.Z.toURLSafe(e);
   if (null == t || !I(t)) return e;
   let n = await C(e);

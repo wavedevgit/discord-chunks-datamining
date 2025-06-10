@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P,
+  Z: () => R,
   p: () => C
 }), n(953529);
 var r = n(255367),
@@ -33,14 +33,14 @@ var r = n(255367),
     return e[e.NONE = 0] = "NONE", e[e.PARENT_CONTAINER = 1] = "PARENT_CONTAINER", e[e.TAB_PARENT_CONTAINER = 2] = "TAB_PARENT_CONTAINER", e
   }({});
 
-function P(e) {
+function R(e) {
   let {
     containerContext: t,
     image: n,
     title: a,
     description: C,
-    enableSocialProof: P,
-    analyticsLocationSection: R,
+    enableSocialProof: R,
+    analyticsLocationSection: P,
     upsellViewedTrackingData: w,
     onClose: D,
     onDisplay: L,
@@ -48,15 +48,15 @@ function P(e) {
     isEmojiPickerOverlay: k = !1
   } = e, M = (0, s.e7)([g.Z], () => g.Z.affinities), j = (0, s.e7)([g.Z], () => g.Z.hasFetched);
   i.useEffect(() => {
-    !j && P && u.MH()
-  }, [j, P]), i.useEffect(() => {
+    !j && R && u.MH()
+  }, [j, R]), i.useEffect(() => {
     h.default.track(I.rMx.PREMIUM_UPSELL_VIEWED, w), null == L || L()
   }, [L, w]);
-  let U = M.length > 1 && P,
+  let U = M.length > 1 && R,
     G = () => 2 === t ? A.hasTabParentContainer : 1 === t ? A.hasParentContainer : A.noParentContainer,
     B = () => {
       h.default.track(I.rMx.PREMIUM_PROMOTION_OPENED, {
-        location_section: R,
+        location_section: P,
         location_object: I.qAy.NAVIGATION_LINK
       }), null == x || x(), (0, _.Z)(), D(), (0, d.xf)(), (0, p.uL)(I.Z5c.APPLICATION_STORE)
     },
@@ -114,7 +114,7 @@ function P(e) {
           }), (0, r.jsx)(y.Z, {
             showGradient: !0,
             premiumModalAnalyticsLocation: {
-              section: R,
+              section: P,
               object: I.qAy.BUTTON_CTA
             },
             subscriptionTier: v.Si.TIER_2,
@@ -173,7 +173,7 @@ function P(e) {
         }), (0, r.jsx)(y.Z, {
           showGradient: !0,
           premiumModalAnalyticsLocation: {
-            section: R,
+            section: P,
             object: I.qAy.BUTTON_CTA
           },
           subscriptionTier: v.Si.TIER_2,

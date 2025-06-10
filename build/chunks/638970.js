@@ -60,28 +60,28 @@ function C(e, t) {
   return n
 }
 
-function P(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = 250,
+let P = 250,
   w = 24;
 
 function D(e, t) {
   switch (t.type) {
     case "MEASUREMENT_COMPLETE":
-      return P(N({}, e), {
+      return R(N({}, e), {
         animationPhase: "ready",
         height: t.height
       });
     case "START_EXPAND_ANIMATION":
-      return P(N({}, e), {
+      return R(N({}, e), {
         animationPhase: "animating",
         height: t.height
       });
     case "ANIMATION_COMPLETE":
-      return P(N({}, e), {
+      return R(N({}, e), {
         animationPhase: "done",
         height: "auto"
       });
@@ -103,7 +103,7 @@ function x(e) {
     onOpenUserProfileModal: A,
     onClose: C
   } = e, {
-    analyticsLocations: P
+    analyticsLocations: R
   } = (0, d.ZP)(), {
     trackUserProfileAction: x
   } = (0, h.KZ)(), {
@@ -122,8 +122,8 @@ function x(e) {
     voiceActivityStatusEnabled: F
   } = (0, u.U)({
     location: "UserProfileStackedActivity"
-  }), V = F && null == M && null == U && null != j, Z = (0, E.yi)(), H = (null == Z ? void 0 : Z.interactionSource) === v.n_.ACTIVITY, Y = i.useRef(null), W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), [q, Q] = i.useReducer(D, L), {
-    height: X,
+  }), V = F && null == M && null == U && null != j, Z = (0, E.yi)(), H = (null == Z ? void 0 : Z.interactionSource) === v.n_.ACTIVITY, Y = i.useRef(null), W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), [q, X] = i.useReducer(D, L), {
+    height: Q,
     animationPhase: J
   } = q, $ = "awaitingInput" !== J, ee = "animating" === J || "done" === J, et = [], en = {
     user: t,
@@ -151,7 +151,7 @@ function x(e) {
     onClick: () => {
       x({
         action: "PRESS_VIEW_PROFILE",
-        analyticsLocations: P
+        analyticsLocations: R
       }), A({
         section: v.oh.ACTIVITY
       })
@@ -165,26 +165,26 @@ function x(e) {
     if (null == Y.current || null == K.current) return;
     x({
       action: "PRESS_SHOW_MORE_ACTIVITY",
-      analyticsLocations: P
+      analyticsLocations: R
     });
     let e = Y.current.getBoundingClientRect().height,
       t = K.current.getBoundingClientRect().height;
-    Q({
+    X({
       type: "MEASUREMENT_COMPLETE",
       height: e
     }), requestAnimationFrame(() => {
-      Q({
+      X({
         type: "START_EXPAND_ANIMATION",
         height: e + t - w
       }), z.current = setTimeout(() => {
         var e;
-        Q({
+        X({
           type: "ANIMATION_COMPLETE",
           height: "auto"
         }), null == (e = W.current) || e.focus()
-      }, R)
+      }, P)
     })
-  }, [P, x]);
+  }, [R, x]);
   return ((0, c.zq)(() => {
     null != z.current && window.clearTimeout(z.current)
   }), B || 0 === et.length) ? null : (0, r.jsxs)(r.Fragment, {
@@ -192,7 +192,7 @@ function x(e) {
       ref: Y,
       className: T.activityContainer,
       style: {
-        height: "auto" !== X ? "".concat(X, "px") : X
+        height: "auto" !== Q ? "".concat(Q, "px") : Q
       },
       children: [(0, r.jsxs)("ul", {
         ref: W,

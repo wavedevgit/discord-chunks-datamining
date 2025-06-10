@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G: () => R,
+  G: () => P,
   Z: () => w
 }), n(539854);
 var r = n(255367),
@@ -52,17 +52,17 @@ function C(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   var t, n, i, _, p, h, m;
   let {
     type: O,
     disabled: I,
     channel: S,
-    handleSubmit: P,
+    handleSubmit: R,
     isEmpty: w,
     showAllButtons: D,
     children: L
-  } = e, x = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), k = R(S.id, O, w), {
+  } = e, x = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), k = P(S.id, O, w), {
     activeCommand: M,
     activeCommandOption: j
   } = (0, o.cj)([c.Z], () => ({
@@ -91,7 +91,7 @@ function P(e) {
     disabled: I,
     type: O
   }, "emoji")), V || null == L || G.push(L), (null == (i = O.submit) ? void 0 : i.button) != null && ((null == (_ = O.submit) ? void 0 : _.ignorePreference) || x) && !V && G.push((0, r.jsx)(T.Z, {
-    onClick: P,
+    onClick: R,
     disabled: I || k
   }, "submit")), V && null != L && G.push(L), 0 === G.length) ? null : (0, r.jsx)("div", {
     className: N.buttons,
@@ -99,11 +99,11 @@ function P(e) {
   })
 }
 
-function R(e, t, n) {
+function P(e, t, n) {
   return (0, o.e7)([h.Z, m.Z], () => {
     let r = h.Z.getStickerPreview(e, t.drafts.type),
       i = null != r && r.length > 0;
     return 0 === m.Z.getUploads(e, t.drafts.type).length && n && !i
   })
 }
-let w = i.memo(P)
+let w = i.memo(R)

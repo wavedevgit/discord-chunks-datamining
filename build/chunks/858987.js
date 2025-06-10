@@ -104,8 +104,8 @@ function T(e) {
     isPrepaid: A,
     isTrial: N,
     makePurchase: C,
-    needsPaymentSource: P,
-    inReverseTrial: R,
+    needsPaymentSource: R,
+    inReverseTrial: P,
     onNext: w,
     onPaymentSourceAdd: D
   } = e, {
@@ -124,7 +124,7 @@ function T(e) {
     isGift: O,
     planGroup: T,
     isPrepaidPaymentSource: A,
-    inReverseTrial: R,
+    inReverseTrial: P,
     paymentSourceId: j,
     hasPaymentSources: B
   }), {
@@ -135,7 +135,7 @@ function T(e) {
     disabled: !0,
     children: F
   });
-  if (P && B) return (0, r.jsx)(o.ua7, {
+  if (R && B) return (0, r.jsx)(o.ua7, {
     text: m.intl.string(m.t.L7jbQU),
     children: e => (0, r.jsx)(o.zxk, v(y({}, e), {
       color: o.zxk.Colors.BRAND,
@@ -145,7 +145,7 @@ function T(e) {
       children: F
     }))
   });
-  if (P && !B) return (0, r.jsx)(o.ua7, {
+  if (R && !B) return (0, r.jsx)(o.ua7, {
     text: m.intl.string(m.t.L7jbQU),
     children: e => (0, r.jsx)(o.zxk, v(y({}, e), {
       color: o.zxk.Colors.GREEN,
@@ -187,7 +187,7 @@ function T(e) {
       children: F
     }))
   });
-  else if (R && null != U && null != j) return (0, r.jsx)(_.Z, {
+  else if (P && null != U && null != j) return (0, r.jsx)(_.Z, {
     activeSubscription: U,
     onNext: w,
     isSubmitting: h,

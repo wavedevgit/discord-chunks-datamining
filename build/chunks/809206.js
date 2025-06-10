@@ -10,14 +10,14 @@ n.d(t, {
   S2: () => E,
   V3: () => y,
   W0: () => v,
-  W3: () => R,
+  W3: () => P,
   Zy: () => m,
   b9: () => C,
   cV: () => S,
   e1: () => I,
   iR: () => D,
   s4: () => N,
-  si: () => P,
+  si: () => R,
   ss: () => g,
   xn: () => A
 });
@@ -237,13 +237,13 @@ function C() {
   })
 }
 
-function P() {
+function R() {
   o.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })
 }
 
-function R() {
+function P() {
   o.Z.dispatch({
     type: "USER_SETTINGS_RESET_ALL_PENDING"
   })

@@ -39,14 +39,14 @@ function S(e) {
     step: A,
     selectedPlan: N,
     purchaseState: C,
-    purchaseType: P,
-    selectedSku: R,
+    purchaseType: R,
+    selectedSku: P,
     enablePremiumRebrandDesign: w
   } = (0, g.JL)(), {
     isGift: D,
     selectedGiftStyle: L,
     giftRecipient: x
-  } = (0, m.wD)(), k = D && (0, h.pO)(x) && A === E.h8.CONFIRM && null != L && (null == R ? void 0 : R.productLine) !== b.POd.COLLECTIBLES, M = null != n && null != A, j = [E.h8.SKU_SELECT, E.h8.SELECT_FREE_SKU], U = null != A && !j.includes(A) && null != T, G = (0, d.N)(a), B = !D && null != G && null != T && y.nG[G.trial_id].skus.includes(T), F = (0, u.Ng)(), V = null == F || null == (t = F.discount) ? void 0 : t.plan_ids.some(e => y.GP[e].skuId === T), Z = !D && null != F && null != T && V, {
+  } = (0, m.wD)(), k = D && (0, h.pO)(x) && A === E.h8.CONFIRM && null != L && (null == P ? void 0 : P.productLine) !== b.POd.COLLECTIBLES, M = null != n && null != A, j = [E.h8.SKU_SELECT, E.h8.SELECT_FREE_SKU], U = null != A && !j.includes(A) && null != T, G = (0, d.N)(a), B = !D && null != G && null != T && y.nG[G.trial_id].skus.includes(T), F = (0, u.Ng)(), V = null == F || null == (t = F.discount) ? void 0 : t.plan_ids.some(e => y.GP[e].skuId === T), Z = !D && null != F && null != T && V, {
     enabled: H
   } = c.ZP.useExperiment({
     location: "PaymentModalHeader"
@@ -66,7 +66,7 @@ function S(e) {
         onClick: S,
         className: v.closeButton
       })]
-    }) : M ? e = n(null != N ? N : null, S, A) : P === O.GZ.ONE_TIME ? e = (0, r.jsx)(p.t, {
+    }) : M ? e = n(null != N ? N : null, S, A) : R === O.GZ.ONE_TIME ? e = (0, r.jsx)(p.t, {
       step: A,
       onClose: S
     }) : U && (o()(I(T, y.y7), "invalid sku id: ".concat(T)), e = (0, r.jsx)(_.Z, {
@@ -82,5 +82,5 @@ function S(e) {
       isEligibleForTrial: B,
       enablePremiumRebrandDesign: w
     })), e
-  }, [L, S, C, n, N, T, A, B, Z, k, U, M, P, D, x, W, w])
+  }, [L, S, C, n, N, T, A, B, Z, k, U, M, R, D, x, W, w])
 }

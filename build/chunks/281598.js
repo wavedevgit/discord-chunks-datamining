@@ -6,10 +6,10 @@ n.d(t, {
   Eo: () => m,
   Kj: () => _,
   Kr: () => b,
-  LY: () => P,
+  LY: () => R,
   XA: () => g,
   aB: () => f,
-  hm: () => R,
+  hm: () => P,
   jE: () => d
 }), n(388685), n(539854), n(472816), n(794429), n(642613);
 var r = n(73800),
@@ -164,7 +164,7 @@ let m = e => {
           t.ignoredFilenames.push(...e.map(e => y(n.name, e.name)))
         }
       }
-  }, P = async e => {
+  }, R = async e => {
     let t = {
       collectionFiles: [],
       avatarDecorationFiles: [],
@@ -181,7 +181,7 @@ let m = e => {
       T("", await new Promise(t => e.file(t)), null, t)
     }
     return t.collectionFiles.sort((e, t) => e.name.localeCompare(t.name)), t.avatarDecorationFiles.sort((e, t) => e.name.localeCompare(t.name)), t.ignoredFilenames.sort((e, t) => e.localeCompare(t)), t
-  }, R = () => {
+  }, P = () => {
     let [e, t] = r.useState(() => ({
       collectionFiles: [],
       avatarDecorationFiles: [],
@@ -191,7 +191,7 @@ let m = e => {
       upsertCollectionAsset: n,
       upsertAvatarDecorationAsset: i
     } = (0, o.N9)(), a = r.useCallback(async e => {
-      let r = await P(e);
+      let r = await R(e);
       t(r), (0 !== r.collectionFiles.length || 0 !== r.avatarDecorationFiles.length) && (r.collectionFiles.forEach(e => {
         E(e, e => {
           let t = v(e);

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var A, N = n(392711),
   C = n(754700),
-  P = n(887003),
-  R = n(442837),
+  R = n(887003),
+  P = n(442837),
   w = n(570140),
   D = n(497505),
   L = n(918701),
@@ -96,10 +96,10 @@ function q(e) {
   let {
     entitlements: n
   } = e, r = null == (t = n.items[0].tenantMetadata) ? void 0 : t.questRewards.reward;
-  return (null == r ? void 0 : r.tag) !== P.w.REWARD_CODE ? null : r.rewardCode
+  return (null == r ? void 0 : r.tag) !== R.w.REWARD_CODE ? null : r.rewardCode
 }
 
-function Q(e, t) {
+function X(e, t) {
   let n = new Map(g);
   n.set(e, t.items), g = n;
   let r = o.get(e),
@@ -118,7 +118,7 @@ function Q(e, t) {
   }
 }
 
-function X(e) {
+function Q(e) {
   null != E.get(e) && (E = new Map(E)).delete(e)
 }
 
@@ -176,7 +176,7 @@ function eo(e) {
   } = e;
   h.add(t), W(t, {
     userStatus: r
-  }), null != n && X(n)
+  }), null != n && Q(n)
 }
 
 function es(e) {
@@ -195,7 +195,7 @@ function el(e) {
   let {
     streamKey: t
   } = e;
-  X(t)
+  Q(t)
 }
 
 function ec(e) {
@@ -260,7 +260,7 @@ function eg(e) {
     questId: t,
     entitlements: n
   } = e, r = new Set(f);
-  r.delete(t), f = r, Q(t, n)
+  r.delete(t), f = r, X(t, n)
 }
 
 function eE(e) {
@@ -302,7 +302,7 @@ function eI(e) {
   let {
     streamKey: t
   } = e;
-  X(t)
+  Q(t)
 }
 
 function eS(e) {
@@ -363,7 +363,7 @@ function eC(e) {
   a.set(r, i), F.set(n, a)
 }
 
-function eP(e) {
+function eR(e) {
   let {
     quest: t,
     placement: n,
@@ -375,7 +375,7 @@ function eP(e) {
   })
 }
 
-function eR(e) {
+function eP(e) {
   let {
     placement: t
   } = e;
@@ -429,7 +429,7 @@ function ej() {
   }
 }
 H();
-class eU extends(A = R.ZP.Store) {
+class eU extends(A = P.ZP.Store) {
   get quests() {
     return o
   }
@@ -522,8 +522,8 @@ let eG = new eU(w.Z, {
     QUESTS_FETCH_CLAIMED_QUESTS_SUCCESS: ei,
     QUESTS_FETCH_CLAIMED_QUESTS_FAILURE: ea,
     QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN: en,
-    QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: eP,
-    QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eR,
+    QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS: eR,
+    QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE: eP,
     QUESTS_SEND_HEARTBEAT_SUCCESS: eo,
     QUESTS_SEND_HEARTBEAT_FAILURE: es,
     QUESTS_ENROLL_BEGIN: eu,

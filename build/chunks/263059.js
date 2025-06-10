@@ -29,8 +29,8 @@ var r = n(255367),
   A = n(336383),
   N = n(194811),
   C = n(373826),
-  P = n(262210),
-  R = n(666984),
+  R = n(262210),
+  P = n(666984),
   w = n(386019),
   D = n(228168),
   L = n(227832);
@@ -78,15 +78,15 @@ function M(e) {
     largeImage: z
   } = (0, d.FO)(x), {
     analyticsLocations: q
-  } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), Q = (0, m.Z)({
+  } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), X = (0, m.Z)({
     display: "live",
     user: n,
     activity: x,
     entry: Y,
     analyticsLocations: q
-  }), X = (0, g.Z)({
+  }), Q = (0, g.Z)({
     userId: n.id,
-    onAction: Q
+    onAction: X
   });
   if (!(0, l.Z)(x)) return null;
   let J = () => {
@@ -101,7 +101,7 @@ function M(e) {
           children: [(0, r.jsx)(s.P3F, {
             className: o()(L.clickableText, L.inline),
             onClick: e => {
-              e.stopPropagation(), Q({
+              e.stopPropagation(), X({
                 action: "OPEN_SPOTIFY_ARTIST"
               }), (0, h.d$)(x, n.id, t)
             },
@@ -119,17 +119,17 @@ function M(e) {
         start: t,
         end: n
       } = e;
-      return null == t || null == n ? null : (0, r.jsx)(P.Z, {
+      return null == t || null == n ? null : (0, r.jsx)(R.Z, {
         start: t,
         end: n
       })
     },
     ee = () => n.id === a.id ? null : (0, r.jsx)("div", {
       className: L.actions,
-      children: (0, r.jsx)(R.Z, {
+      children: (0, r.jsx)(P.Z, {
         user: n,
         activity: x,
-        onAction: Q
+        onAction: X
       })
     });
   if (null === V) return null;
@@ -149,15 +149,15 @@ function M(e) {
         sourceDetails: null == Y ? (0, b.Z)(x) : null,
         entry: Y,
         sourceType: D.n_.ACTIVITY,
-        onAction: Q,
+        onAction: X,
         children: () => (0, r.jsx)(v.Z, {
           ref: F,
           user: n,
           className: L.toolbarContainer,
           sourceType: D.n_.ACTIVITY,
           interactionSourceId: et,
-          onAction: Q,
-          onShowToolbar: () => Q({
+          onAction: X,
+          onShowToolbar: () => X({
             action: "HOVER_ACTIVITY_CARD"
           }),
           renderMoreButtonPopout: e => (0, r.jsx)(w.Z, {
@@ -169,11 +169,11 @@ function M(e) {
             children: e
           }),
           children: (0, r.jsxs)(A.Z, {
-            ref: X,
+            ref: Q,
             className: o()(j, {
               [L.hoisted]: en
             }),
-            onAction: Q,
+            onAction: X,
             onClose: U,
             "aria-labelledby": K ? "".concat(B, " ").concat(G) : G,
             children: [(0, r.jsx)(N.Z, k({
@@ -187,7 +187,7 @@ function M(e) {
                   size: V === D.lY.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
                   className: L.clickableImage,
                   onClick: e => {
-                    e.stopPropagation(), Q({
+                    e.stopPropagation(), X({
                       action: "OPEN_SPOTIFY_ALBUM"
                     }), (0, h.Z5)(x, n.id)
                   }
@@ -198,7 +198,7 @@ function M(e) {
                       variant: "heading-sm/semibold",
                       text: x.details,
                       onClick: () => {
-                        Q({
+                        X({
                           action: "OPEN_SPOTIFY_TRACK"
                         }), (0, h.aG)(x)
                       },

@@ -28,8 +28,8 @@ var r, i = n(658722),
   A = n(823379),
   N = n(780570),
   C = n(358085),
-  P = n(998502),
-  R = n(804739),
+  R = n(998502),
+  P = n(804739),
   w = n(7956),
   D = n(981631);
 
@@ -105,7 +105,7 @@ function q(e, t, n, r, i) {
     isNew: B(e, o),
     isLaunching: p.Z.launchingGames.has(e.id),
     isRunning: r.has(e.id),
-    isLaunchable: (0, R.t)({
+    isLaunchable: (0, P.t)({
       LibraryApplicationStore: E.Z,
       LaunchableGameStore: p.Z,
       DispatchApplicationStore: v.Z,
@@ -119,7 +119,7 @@ function q(e, t, n, r, i) {
   } : null
 }
 
-function Q(e, t, n, r) {
+function X(e, t, n, r) {
   let i = null != e ? f.Z.getApplication(e) : null;
   if (null == i || null == e || t.has(e)) return null;
   let a = K(i, n);
@@ -131,7 +131,7 @@ function Q(e, t, n, r) {
     isNew: !1,
     isLaunching: p.Z.launchingGames.has(e),
     isRunning: r.has(e),
-    isLaunchable: (0, R.t)({
+    isLaunchable: (0, P.t)({
       LibraryApplicationStore: E.Z,
       LaunchableGameStore: p.Z,
       DispatchApplicationStore: v.Z,
@@ -146,7 +146,7 @@ function Q(e, t, n, r) {
   }
 }
 
-function X() {
+function Q() {
   let e = new Set(_.ZP.getRunningVerifiedApplicationIds()),
     t = {},
     n = new Set,
@@ -155,12 +155,12 @@ function X() {
       return null != n ? (t[n.id] = e.lastFocused * S.Z.Millis.SECOND, n.id) : null
     }),
     i = Object.values(E.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, !0)).filter(A.lm),
-    a = [...r.map(r => Q(r, n, t, e)).filter(A.lm), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1);
-  return U = null != g.Z.lastFetched && E.Z.fetched, !s().isEqual(a, M) && (M = a, C.isPlatformEmbedded && P.ZP.setSystemTrayApplications(Z(M).map(e => e.application).slice(0, x)), !0)
+    a = [...r.map(r => X(r, n, t, e)).filter(A.lm), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1);
+  return U = null != g.Z.lastFetched && E.Z.fetched, !s().isEqual(a, M) && (M = a, C.isPlatformEmbedded && R.ZP.setSystemTrayApplications(Z(M).map(e => e.application).slice(0, x)), !0)
 }
 class J extends(r = u.ZP.Store) {
   initialize() {
-    this.syncWith([f.Z, g.Z, p.Z, _.ZP, v.Z, I.Z, E.Z, y.Z, b.Z, m.Z], X, 200), this.syncWith([O.Z, h.default], () => !0)
+    this.syncWith([f.Z, g.Z, p.Z, _.ZP, v.Z, I.Z, E.Z, y.Z, b.Z, m.Z], Q, 200), this.syncWith([O.Z, h.default], () => !0)
   }
   get applicationFilterQuery() {
     return j

@@ -5,7 +5,7 @@ n.d(t, {
 }), n(388685);
 var r = n(255367),
   i = n(73800),
-  a = n(386230),
+  a = n(524979),
   o = n(91192),
   s = n(442837),
   l = n(780384),
@@ -29,8 +29,8 @@ var r = n(255367),
   A = n(475595),
   N = n(602667),
   C = n(644646),
-  P = n(667105),
-  R = n(341907),
+  R = n(667105),
+  P = n(341907),
   w = n(46140),
   D = n(981631),
   L = n(231338),
@@ -80,10 +80,10 @@ function V(e) {
   } = e, K = (0, s.e7)([E.Z], () => {
     var e;
     return null != (e = E.Z.getChannel(null == M ? void 0 : M.channelId)) ? e : null
-  }), z = (0, P.hf)({
+  }), z = (0, R.hf)({
     quest: O,
     location: S.jn.MEMBERS_LIST
-  }), q = (0, I.tP)(O), Q = (null == O || null == (t = O.userStatus) ? void 0 : t.claimedAt) != null, X = (null == O || null == (h = O.userStatus) ? void 0 : h.enrolledAt) != null, J = (null == O || null == (m = O.userStatus) ? void 0 : m.completedAt) != null, $ = (0, s.e7)([g.Z], () => g.Z.getState().theme), ee = (0, l.wj)($) ? L.BR.DARK : L.BR.LIGHT, et = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
+  }), q = (0, I.tP)(O), X = (null == O || null == (t = O.userStatus) ? void 0 : t.claimedAt) != null, Q = (null == O || null == (h = O.userStatus) ? void 0 : h.enrolledAt) != null, J = (null == O || null == (m = O.userStatus) ? void 0 : m.completedAt) != null, $ = (0, s.e7)([g.Z], () => g.Z.getState().theme), ee = (0, l.wj)($) ? L.BR.DARK : L.BR.LIGHT, et = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     ref: en,
     height: er
   } = (0, f.ZP)(), [ei, ea] = i.useState(et), eo = (0, _.Aq)(), es = (0, o.eg)(), el = (0, T.up)(w.dr.MEMBERS_LIST);
@@ -129,14 +129,14 @@ function V(e) {
       eo.dispatch(D.CkL.POPOUT_CLOSE)
     },
     ef = "top" === V ? "".concat(U, " ").concat(U, " 0 0") : "0 0 ".concat(U, " ").concat(U);
-  if (null == O || q || Q && !F(M, K)) return null;
+  if (null == O || q || X && !F(M, K)) return null;
   let e_ = () => {
       (0, v._3)({
         questId: O.id,
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: v.jZ.OPEN_DISCLOSURE,
         trackGuildAndChannelMetadata: !0
-      }), (0, R.openDisclosureModal)(O, {
+      }), (0, P.openDisclosureModal)(O, {
         content: S.jn.MEMBERS_LIST,
         ctaContent: v.jZ.OPEN_DISCLOSURE
       })
@@ -147,7 +147,7 @@ function V(e) {
         questContent: S.jn.MEMBERS_LIST,
         questContentCTA: v.jZ.LEARN_MORE,
         trackGuildAndChannelMetadata: !0
-      }), (0, R.navigateToQuestHome)({
+      }), (0, P.navigateToQuestHome)({
         fromContent: S.jn.MEMBERS_LIST,
         questId: O.id
       })
@@ -176,12 +176,12 @@ function V(e) {
         }, t))
       })) : ep()
     },
-    eg = J && !Q ? {
+    eg = J && !X ? {
       headerText: x.intl.string(x.t.gHerLS),
       ctaText: el,
       handleClickCta: z,
       tileAssetType: "reward"
-    } : X && !Q ? {
+    } : Q && !X ? {
       headerText: x.intl.string(x.t.uH2sf3),
       ctaText: x.intl.string(x.t.VN1Ajo),
       handleClickCta: ep,

@@ -63,8 +63,8 @@ let S = 200,
   A = +_.Z.Millis.MINUTE,
   N = {},
   C = "content",
-  P = "file://",
-  R = !1,
+  R = "file://",
+  P = !1,
   w = 0,
   D = 0,
   L = 0,
@@ -74,7 +74,7 @@ let S = 200,
   j = !1;
 
 function U() {
-  R = !1
+  P = !1
 }
 
 function G(e, t) {
@@ -118,7 +118,7 @@ function B(e) {
                 } = n,
                 o = i,
                 s = l.Z.fileManager.join(e, r);
-              (0, h.isMac)() && !s.startsWith(P) && (s = "".concat(P).concat(s)), t = null != a ? l.Z.fileManager.join(e, a) : l.Z.fileManager.dirname(s), E[o] = I(O({}, n), {
+              (0, h.isMac)() && !s.startsWith(R) && (s = "".concat(R).concat(s)), t = null != a ? l.Z.fileManager.join(e, a) : l.Z.fileManager.dirname(s), E[o] = I(O({}, n), {
                 id: o,
                 fullExecutablePath: s,
                 fullWorkingDir: t
@@ -235,17 +235,17 @@ let K = a().throttle(H, S),
   z = a().throttle(Y, S),
   q = a().throttle(W, S);
 
-function Q(e, t, n) {
+function X(e, t, n) {
   let r = n(N[t]),
     i = n(e[t]);
   return null != r && null != i && 0 !== r ? Math.max(i - r, 0) : 0
 }
 
-function X(e) {
+function Q(e) {
   let {
     state: t
   } = e;
-  R = !0;
+  P = !0;
   let n = {},
     r = t.applications,
     i = null != t.currentTask ? t.currentTask.branchId : null,
@@ -254,11 +254,11 @@ function X(e) {
     for (let t in r[e]) {
       let o = (0, p.Tu)(e, t);
       if (n[o] = B(r[e][t]), null != N[o]) {
-        let e = Q(n, o, F);
+        let e = X(n, o, F);
         e > 0 && K(w += e);
-        let r = Q(n, o, V);
+        let r = X(n, o, V);
         r > 0 && q(D += r);
-        let s = Q(n, o, Z);
+        let s = X(n, o, Z);
         if (s > 0 && z(L += s), i === t) {
           let e = n[o];
           if (!0 !== e.paused && (e.type === b.vxO.UNINSTALLING || e.type === b.vxO.INSTALLING || e.type === b.vxO.UPDATING)) switch (e.stage) {
@@ -345,12 +345,12 @@ class J extends(r = o.ZP.Store) {
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {
-      if (R) return setImmediate(e), !1
+      if (P) return setImmediate(e), !1
     })
   }
 }
 y(J, "displayName", "DispatchApplicationStore");
 let $ = new J(s.Z, {
   CONNECTION_OPEN: U,
-  DISPATCH_APPLICATION_STATE_UPDATE: X
+  DISPATCH_APPLICATION_STATE_UPDATE: Q
 })

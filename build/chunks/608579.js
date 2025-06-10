@@ -29,8 +29,8 @@ var r = n(255367),
   A = n(981631),
   N = n(302800),
   C = n(215023),
-  P = n(231338),
-  R = n(770977);
+  R = n(231338),
+  P = n(770977);
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -91,7 +91,7 @@ function k(e) {
   } = (0, d.ZP)([...F, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(!1), q = i.useMemo(() => (0, N.UY)({
     purchaseType: C.o8.FIAT,
     skuId: M
-  }), [M]), Q = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), X = null != M ? [M] : Q, J = null != (t = X[0]) ? t : null, $ = null != M && p.Rm.has(M), ee = i.useCallback(() => {
+  }), [M]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != M ? [M] : X, J = null != (t = Q[0]) ? t : null, $ = null != M && p.Rm.has(M), ee = i.useCallback(() => {
     z(!0), null == a || a()
   }, [a]), et = i.useCallback(e => {
     z(!1), n(e), c.Z.dispatch({
@@ -113,29 +113,29 @@ function k(e) {
       hideConfetti: null != q
     })),
     options: {
-      bodyClassName: R.modalOverrideBody,
-      sliderBodyClassName: R.modalOverrideSliderBody
+      bodyClassName: P.modalOverrideBody,
+      sliderBodyClassName: P.modalOverrideSliderBody
     }
   }], [Z, Y, q, j]);
   return (0, r.jsxs)(d.Gt, {
     value: Z,
     children: [(0, r.jsx)(s.O_, {
       ref: W,
-      className: R.confettiCanvas,
+      className: P.confettiCanvas,
       environment: H.current
     }), (0, r.jsx)(_.i, {
       options: q,
-      className: o()(R.customConfetti, {
-        [R.hidden]: !K
+      className: o()(P.customConfetti, {
+        [P.hidden]: !K
       })
     }), (0, r.jsx)(m.PaymentContextProvider, {
       loadId: k,
       stepConfigs: er,
       applicationId: A.XAJ,
-      skuIDs: X,
+      skuIDs: Q,
       isGift: j,
       activeSubscription: null,
-      purchaseType: P.GZ.ONE_TIME,
+      purchaseType: R.GZ.ONE_TIME,
       excludeSubscriptionPlansBySKU: !0,
       children: (0, r.jsx)(E.c1, {
         children: (0, r.jsx)(h.KB, {

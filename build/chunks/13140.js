@@ -162,7 +162,7 @@ function C(e) {
   }
   return null != t ? t : null
 }(0, c.isMac)() || (y["223"] = "`"), Object.freeze(y);
-let P = [
+let R = [
     ["META", "⌘"],
     ["RIGHT META", "RIGHT ⌘"],
     ["SHIFT", "⇧"],
@@ -186,13 +186,13 @@ let P = [
     ["TAB", "⇥"],
     ["SPACE", "␣"]
   ],
-  R = e => {
-    for (let [t, n] of P)
+  P = e => {
+    for (let [t, n] of R)
       if (t === e.toUpperCase()) return n;
     return e
   },
   w = e => {
-    for (let [t, n] of P)
+    for (let [t, n] of R)
       if (n === e.toUpperCase()) return t.toLowerCase();
     return e
   },
@@ -249,5 +249,5 @@ function j(e) {
       }
       return t === d.MoX.MOUSE_BUTTON ? "mouse".concat(n) : t === d.MoX.GAMEPAD_BUTTON ? "gamepad".concat(n) : "dev".concat(t, ",").concat(n)
     }).filter(l.lm);
-  return t ? (-1 !== n.g.navigator.appVersion.indexOf("Mac OS X") ? r.map(R) : r).join(" + ").toUpperCase() : r.join("+")
+  return t ? (-1 !== n.g.navigator.appVersion.indexOf("Mac OS X") ? r.map(P) : r).join(" + ").toUpperCase() : r.join("+")
 }

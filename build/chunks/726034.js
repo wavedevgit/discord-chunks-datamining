@@ -39,7 +39,7 @@ function C(e) {
   }
 }
 
-function P(e) {
+function R(e) {
   let {
     markAsDismissed: t
   } = e;
@@ -57,7 +57,7 @@ function P(e) {
   })
 }
 
-function R() {
+function P() {
   return (0, r.jsxs)("div", {
     className: N.headerContainer,
     children: [(0, r.jsx)(l.Text, {
@@ -71,7 +71,7 @@ function R() {
         width: 20,
         colorClass: N.nitroIconWithHover
       })
-    }), (0, r.jsx)(P, {})]
+    }), (0, r.jsx)(R, {})]
   })
 }
 
@@ -85,7 +85,7 @@ function w(e) {
       className: N.badgeAndCloseRow,
       children: [(0, r.jsx)(l.lBU, {
         text: A.intl.string(A.t.oW0eUV)
-      }), (0, r.jsx)(P, {
+      }), (0, r.jsx)(R, {
         markAsDismissed: t
       })]
     }), (0, r.jsxs)("div", {
@@ -288,7 +288,7 @@ function G(e) {
     setColors: m,
     setChassisMixAmount: E,
     setGradientAngle: v
-  } = (0, g.I)(), [S, T] = i.useState(null != (t = f[0]) ? t : "#4394D4"), C = (0, s.e7)([h.Z], () => h.Z.theme), P = () => {
+  } = (0, g.I)(), [S, T] = i.useState(null != (t = f[0]) ? t : "#4394D4"), C = (0, s.e7)([h.Z], () => h.Z.theme), R = () => {
     (0, c.ZI)({
       theme: C,
       customUserThemeSettings: {
@@ -308,7 +308,7 @@ function G(e) {
         className: N.editorBody,
         children: [o ? (0, r.jsx)(w, {
           markAsDismissed: a
-        }) : (0, r.jsx)(R, {}), (0, r.jsx)(O.o, {}), (0, r.jsx)(y.U, {
+        }) : (0, r.jsx)(P, {}), (0, r.jsx)(O.o, {}), (0, r.jsx)(y.U, {
           onChange: e => {
             T(e), 0 === f.length && m([e])
           },
@@ -334,10 +334,10 @@ function G(e) {
           }), A.intl.string(A.t.yBZMsb)]
         })]
       }), o ? (0, r.jsx)(j, {
-        onSaveTheme: P,
+        onSaveTheme: R,
         canApply: x
       }) : (0, r.jsx)(U, {
-        onSaveTheme: P,
+        onSaveTheme: R,
         canApply: x,
         metadata: n
       })]

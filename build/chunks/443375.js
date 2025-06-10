@@ -29,8 +29,8 @@ var r = n(255367),
   A = n(287954),
   N = n(660579),
   C = n(652853),
-  P = n(64621),
-  R = n(979038),
+  R = n(64621),
+  P = n(979038),
   w = n(448980),
   D = n(336383),
   L = n(194811),
@@ -77,8 +77,8 @@ function W(e) {
     voiceGuild: K,
     voiceChannel: z,
     profileGuildId: q,
-    className: Q,
-    onClose: X
+    className: X,
+    onClose: Q
   } = e, J = (0, g.Dt)(), $ = (0, g.Dt)(), ee = i.useRef(null), {
     analyticsLocations: et
   } = (0, _.ZP)(f.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
@@ -108,7 +108,7 @@ function W(e) {
     activity: H,
     application: W,
     entry: ea,
-    onClose: X
+    onClose: Q
   }), e_ = () => {
     let e = (0, l.Z)(H) ? "crunchyroll" : "default",
       t = en === G.lY.MODAL_V2 ? h.J.SIZE_100 : h.J.SIZE_60;
@@ -161,7 +161,7 @@ function W(e) {
       onClick: () => {
         (0, E.X)(K.id), eo({
           action: "OPEN_VOICE_GUILD"
-        }), null == X || X()
+        }), null == Q || Q()
       }
     });
     if ((0, u.Z)(H)) return (0, r.jsx)(x.Z, {
@@ -254,14 +254,14 @@ function W(e) {
     guild: K,
     channel: z,
     onAction: eo,
-    onClose: X
+    onClose: Q
   }), eO = () => n.id === a.id ? null : (0, r.jsx)("div", {
     className: Z.actions,
-    children: (0, r.jsx)(R.Z, {
+    children: (0, r.jsx)(P.Z, {
       activity: H,
       user: n,
       onAction: eo,
-      onClose: X
+      onClose: Q
     })
   });
   if (null === en) return null;
@@ -269,7 +269,7 @@ function W(e) {
     eI = er === G.n_.ACTIVITY && ei === ev;
   return (0, r.jsx)(_.Gt, {
     value: et,
-    children: (0, r.jsx)(P.Z, {
+    children: (0, r.jsx)(R.Z, {
       targetElementRef: ee,
       sourceType: G.n_.ACTIVITY,
       user: n,
@@ -294,7 +294,7 @@ function W(e) {
             user: n,
             activity: H,
             entry: ea,
-            onClose: X,
+            onClose: Q,
             children: e
           }),
           onShowToolbar: () => eo({
@@ -302,11 +302,11 @@ function W(e) {
           }),
           children: (0, r.jsxs)(D.Z, {
             ref: es,
-            className: o()(Q, {
+            className: o()(X, {
               [Z.hoisted]: eI
             }),
             onAction: eo,
-            onClose: X,
+            onClose: Q,
             "aria-labelledby": ec ? "".concat($, " ").concat(J) : J,
             children: [(0, r.jsx)(L.Z, Y({
               textId: $

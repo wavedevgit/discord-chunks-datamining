@@ -41,8 +41,8 @@ var r = n(990547),
   A = n(973616),
   N = n(314897),
   C = n(592125),
-  P = n(430824),
-  R = n(496675),
+  R = n(430824),
+  P = n(496675),
   w = n(594174),
   D = n(979651),
   L = n(626135),
@@ -62,8 +62,8 @@ var r = n(990547),
   K = n(701488),
   z = n(918559),
   q = n(981631),
-  Q = n(674563),
-  X = n(245335),
+  X = n(674563),
+  Q = n(245335),
   J = n(388032);
 
 function $(e, t, n) {
@@ -223,7 +223,7 @@ async function ei(e) {
     throw e
   }
   let b = d.handler !== _.VC.APP_HANDLER;
-  if (!(b || Q.Yq.includes(t))) {
+  if (!(b || X.Yq.includes(t))) {
     null != r && await (0, p.FN)({
       type: "channel",
       channelId: r
@@ -244,7 +244,7 @@ async function ei(e) {
     }
   }
   let y = C.Z.getChannel(r),
-    O = null != i ? P.Z.getGuild(i) : null;
+    O = null != i ? R.Z.getGuild(i) : null;
   if (null == y) return {
     result: "failure",
     reason: 3
@@ -343,8 +343,8 @@ async function ea(e) {
   let p = (0, Z.e4)({
     channelId: i,
     ChannelStore: C.Z,
-    GuildStore: P.Z,
-    PermissionStore: R.Z,
+    GuildStore: R.Z,
+    PermissionStore: P.Z,
     VoiceStateStore: D.Z
   });
   if (p !== Z.jy.CAN_LAUNCH) {
@@ -427,7 +427,7 @@ function eo(e) {
     instanceId: null == i ? void 0 : i.launchId,
     showFeedback: r
   });
-  let a = (0, F.pY)(t);
+  let a = (0, F.p)(t);
   if (null != a) {
     var s;
     let e = y.Z.getSelectedParticipantId(a),
@@ -576,7 +576,7 @@ async function ed(e) {
     applicationId: r,
     location: i
   } = e, a = await u.ZP.createInvite(t, {
-    target_type: X.Iq.EMBEDDED_APPLICATION,
+    target_type: Q.Iq.EMBEDDED_APPLICATION,
     target_application_id: r
   }, i);
   null != C.Z.getChannel(n) && d.Z.sendInvite(n, a.code, i, null)
@@ -589,7 +589,7 @@ async function ef(e) {
     location: i,
     prefixedContent: a
   } = e, o = await u.ZP.createInvite(t, {
-    target_type: X.Iq.EMBEDDED_APPLICATION,
+    target_type: Q.Iq.EMBEDDED_APPLICATION,
     target_application_id: n
   }, i);
   await l.Z.ensurePrivateChannel(r).then(e => {

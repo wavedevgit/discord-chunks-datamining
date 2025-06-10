@@ -34,11 +34,11 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 let A = "NO_GUILD",
-  N = new c.h(e => [R(e)], e => e.id),
+  N = new c.h(e => [P(e)], e => e.id),
   C = new Set,
-  P = {};
+  R = {};
 
-function R(e) {
+function P(e) {
   var t;
   return null != (t = e.getGuildId()) ? t : A
 }
@@ -59,15 +59,15 @@ function D(e) {
 }
 
 function L(e) {
-  let t = P[e];
+  let t = R[e];
   if (null != t) return t;
   let n = p.Z.getChannel(e);
   return null != n && n.isGuildStageVoice() && (D(n.guild_id), k(n)) ? x(e) : null
 }
 
 function x(e) {
-  let t = P[e];
-  return null == t && (t = new v.ZP(e), P[e] = t, t.rebuild()), t
+  let t = R[e];
+  return null == t && (t = new v.ZP(e), R[e] = t, t.rebuild()), t
 }
 
 function k(e) {
@@ -93,16 +93,16 @@ function U(e) {
 }
 
 function G(e) {
-  for (let t of N.values(e)) N.delete(t.id), delete P[t.id];
+  for (let t of N.values(e)) N.delete(t.id), delete R[t.id];
   C.delete(e)
 }
 
 function B(e) {
-  return null != e && (delete P[e], N.delete(e), !0)
+  return null != e && (delete R[e], N.delete(e), !0)
 }
 
 function F() {
-  C.clear(), N.clear(), P = {}
+  C.clear(), N.clear(), R = {}
 }
 
 function V(e, t, n) {
@@ -167,7 +167,7 @@ function q(e) {
   return null != n && !!C.has(n) && U(r, [t])
 }
 
-function Q(e) {
+function X(e) {
   let {
     streamKey: t
   } = e, {
@@ -178,7 +178,7 @@ function Q(e) {
   return null != r && !!C.has(r) && U(i, [n])
 }
 
-function X(e) {
+function Q(e) {
   let {
     channel: {
       id: t
@@ -245,7 +245,7 @@ let en = new et(u.Z, {
   CONNECTION_OPEN: F,
   OVERLAY_INITIALIZE: F,
   VOICE_STATE_UPDATES: Z,
-  CHANNEL_DELETE: X,
+  CHANNEL_DELETE: Q,
   GUILD_MEMBERS_CHUNK_BATCH: H,
   USER_UPDATE: W,
   GUILD_MEMBER_REMOVE: W,
@@ -253,8 +253,8 @@ let en = new et(u.Z, {
   CHANNEL_UPDATES: J,
   GUILD_ROLE_UPDATE: $,
   RTC_CONNECTION_VIDEO: q,
-  STREAM_CLOSE: Q,
-  STREAM_DELETE: Q,
+  STREAM_CLOSE: X,
+  STREAM_DELETE: X,
   RELATIONSHIP_ADD: K,
   RELATIONSHIP_REMOVE: K,
   RELATIONSHIP_UPDATE: K,

@@ -36,13 +36,13 @@ function O(e) {
     hideBreadcrumbs: A = !1,
     isLoading: N = !1,
     purchaseError: C,
-    purchaseErrorBlockRef: P,
-    planError: R,
+    purchaseErrorBlockRef: R,
+    planError: P,
     onScroll: w,
     scrollerClassName: D,
     hasCurrencies: L = !1
   } = e, x = null;
-  null != O && null == (0, p.ly)(O) ? x = O : null != C ? x = C : null != R && (x = R);
+  null != O && null == (0, p.ly)(O) ? x = O : null != C ? x = C : null != P && (x = P);
   let k = null != x ? x.message : "";
   null != x && x instanceof d.HF && (x.code === f.SM.CARD_DECLINED && L && (k += " ".concat(E.intl.string(E.t.iWvwQU))), x.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd3)), x.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWF)));
   let {
@@ -85,7 +85,7 @@ function O(e) {
         children: [null == x ? null : (0, r.jsx)("div", {
           className: b.errorBlockWrapper,
           children: (0, r.jsx)(c.kzN, {
-            ref: P,
+            ref: R,
             children: k
           })
         }), N ? (0, r.jsx)(c.$jN, {

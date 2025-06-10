@@ -48,7 +48,7 @@ function y(e) {
     analyticsLocation: v,
     guildScheduledEvent: j,
     shouldPrioritizeGroupPlusIcon: O = !1,
-    isContextlessActivity: E = !1,
+    isRichPresenceInvite: E = !1,
     iconClassName: I,
     look: P,
     size: S,
@@ -68,7 +68,7 @@ function y(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["applicationId", "stream", "channel", "exitFullScreen", "appContext", "analyticsLocation", "guildScheduledEvent", "shouldPrioritizeGroupPlusIcon", "isContextlessActivity", "iconClassName", "look", "size", "buttonText", "color"]);
+  }(e, ["applicationId", "stream", "channel", "exitFullScreen", "appContext", "analyticsLocation", "guildScheduledEvent", "shouldPrioritizeGroupPlusIcon", "isRichPresenceInvite", "iconClassName", "look", "size", "buttonText", "color"]);
   let A = (0, c.bp)(),
     {
       parentAnalyticsLocation: w

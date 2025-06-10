@@ -1,5 +1,7 @@
 /** Chunk was on 56535 **/
 e.exports = {
+  main: "main__4d307",
+  footer: "footer__4d307",
   grid: "grid__4d307",
   preview: "preview__4d307",
   selector: "selector__4d307",

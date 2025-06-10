@@ -29,8 +29,8 @@ var r = n(255367),
   A = n(868781),
   N = n(122943),
   C = n(556638),
-  P = n(981631),
-  R = n(388032),
+  R = n(981631),
+  P = n(388032),
   w = n(843280);
 
 function D(e, t, n) {
@@ -74,13 +74,13 @@ function k(e, t) {
 
 function M(e) {
   let t = (null == e ? void 0 : e.name) === "" ? null : null == e ? void 0 : e.name;
-  return null != t ? R.intl.formatToPlainString(R.t["0wJXSk"], {
+  return null != t ? P.intl.formatToPlainString(P.t["0wJXSk"], {
     name: t
-  }) : R.intl.string(R.t.eXan7O)
+  }) : P.intl.string(P.t.eXan7O)
 }
 
 function j(e, t) {
-  return (e.isDM() || e.isGroupDM() ? R.intl.string(R.t["9FaEzs"]) : e.isGuildStageVoice() ? R.intl.string(R.t.QygGCA) : R.intl.string(R.t.msxteH)) + (null != t ? " (".concat(t, ")") : "")
+  return (e.isDM() || e.isGroupDM() ? P.intl.string(P.t["9FaEzs"]) : e.isGuildStageVoice() ? P.intl.string(P.t.QygGCA) : P.intl.string(P.t.msxteH)) + (null != t ? " (".concat(t, ")") : "")
 }
 
 function U(e) {
@@ -141,7 +141,7 @@ function F(e) {
     textClassName: g,
     iconClassName: y,
     textSize: O = "xs",
-    animateEmoji: R = !0,
+    animateEmoji: P = !0,
     hasQuest: D = !1,
     hideEmoji: x = !1,
     hideTooltip: M = !1
@@ -155,7 +155,7 @@ function F(e) {
         let {
           type: t
         } = e;
-        return t === P.IIU.CUSTOM_STATUS
+        return t === R.IIU.CUSTOM_STATUS
       });
       if (null == r) return null;
       let i = null != (t = null == (e = r.state) ? void 0 : e.trim()) ? t : null;
@@ -168,7 +168,7 @@ function F(e) {
           type: t,
           name: n
         } = e;
-        return t !== P.IIU.CUSTOM_STATUS && t !== P.IIU.HANG_STATUS && n !== (null == F ? void 0 : F.name)
+        return t !== R.IIU.CUSTOM_STATUS && t !== R.IIU.HANG_STATUS && n !== (null == F ? void 0 : F.name)
       })) ? e : [], (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name)
     }, [n, null == F ? void 0 : F.name]),
     H = null == n ? void 0 : n.find(e => e.name === (null == F ? void 0 : F.name)),
@@ -179,14 +179,14 @@ function F(e) {
     }) && null != V ? (0, h.Z)(V) : null,
     z = (null == V ? void 0 : V.state) != null || null != K,
     q = null != j,
-    Q = !q && null != _,
-    X = Z.length + (q || Q ? 1 : 0),
-    J = X > 1,
+    X = !q && null != _,
+    Q = Z.length + (q || X ? 1 : 0),
+    J = Q > 1,
     $ = (null == V ? void 0 : V.state) != null && "xs" === O,
     ee = U({
       streamActivity: H,
       otherActivities: Z,
-      voiceActivityChannel: Q ? _ : null
+      voiceActivityChannel: X ? _ : null
     });
   if (W) return null;
   let et = function() {
@@ -238,7 +238,7 @@ function F(e) {
         e.push((0, r.jsx)(A.Z, L({
           activity: n
         }, t), "activity-".concat(i)))
-      }), Q && e.push((0, r.jsx)(N.Z, k(L({
+      }), X && e.push((0, r.jsx)(N.Z, k(L({
         channel: _
       }, t), {
         showChannelName: !0
@@ -248,9 +248,9 @@ function F(e) {
       textVariant: "text-".concat(O, "/medium"),
       className: g,
       hasCustomStatusText: z,
-      totalActivityCount: X
+      totalActivityCount: Q
     }),
-    ei = () => 0 === X ? null : J && !Y ? M ? (0, r.jsxs)("div", {
+    ei = () => 0 === Q ? null : J && !Y ? M ? (0, r.jsxs)("div", {
       className: w.activityContainer,
       children: [et(), er()]
     }) : (0, r.jsx)(u.ua7, {
@@ -277,7 +277,7 @@ function F(e) {
           children: "".concat(n, ": ")
         }), null != e && !x && (0, r.jsx)(v.Z, {
           emoji: e,
-          animate: R,
+          animate: P,
           hideTooltip: M,
           className: y
         }), null != t && (0, r.jsx)(S.Z, {
@@ -293,7 +293,7 @@ function F(e) {
       [w.textXs]: "xs" === O,
       [w.textSm]: "sm" === O
     }),
-    children: [ei(), null != V && X > 0 && (0, r.jsx)(B, {
+    children: [ei(), null != V && Q > 0 && (0, r.jsx)(B, {
       textVariant: "text-".concat(O, "/normal"),
       className: g
     }), ea(), D && (0, r.jsx)(I.Z, {})]

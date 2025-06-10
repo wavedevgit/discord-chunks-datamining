@@ -18,10 +18,10 @@ n.r(t), n.d(t, {
   getCampaignParams: () => x,
   getDevice: () => G,
   getOS: () => U,
-  getSuperProperties: () => X,
+  getSuperProperties: () => Q,
   getSuperPropertiesBase64: () => J,
   isThrottled: () => z,
-  trackMaker: () => Q
+  trackMaker: () => X
 }), n(35282), n(704826), n(413496), n(433524), n(388685);
 var a, o = n(348327),
   s = n.n(o),
@@ -82,8 +82,8 @@ function T(e, t) {
 let A = "deviceProperties",
   N = "referralProperties",
   C = (0, f.Z)(),
-  P = {},
   R = {},
+  P = {},
   w = window.DiscordNative;
 if (null != w) {
   let e, t = w.remoteApp.getVersion(),
@@ -255,14 +255,14 @@ function K() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == n.release_channel || "" === n.release_channel) && (n.release_channel = r.split("-")[0]);
-  let i = parseInt("407649", 10);
+  let i = parseInt("407684", 10);
   isNaN(i) || (n.client_build_number = i);
   let a = null == w || null == (e = (t = w.remoteApp).getBuildNumber) ? void 0 : e.call(t);
   return isNaN(a) || (n.native_build_number = a), n.client_event_source = W(), n.has_client_mods = (0, _.e)(), n.client_launch_id = C, n
 }
 
 function z(e) {
-  return null != P[e] && P[e] > Date.now()
+  return null != R[e] && R[e] > Date.now()
 }
 if (null == r) try {
   r = Y()
@@ -274,7 +274,7 @@ function q(e) {
   r = I({}, r, e), i = (0, E.Z)(r)
 }
 q(K());
-let Q = e => {
+let X = e => {
   let {
     analyticEventConfigs: t,
     dispatcher: r,
@@ -294,11 +294,11 @@ let Q = e => {
         let t = [e, ...l.throttleKeys(o)].join("_");
         if (z(t) || "number" == typeof l.throttlePercent && Math.random() > l.throttlePercent) return Promise.resolve();
         if (l.deduplicate) {
-          let e = R[t];
+          let e = P[t];
           if (s()(e, o)) return Promise.resolve();
-          R[t] = o
+          P[t] = o
         }
-        P[t] = Date.now() + l.throttlePeriod
+        R[t] = Date.now() + l.throttlePeriod
       } else if ("throttlePercent" in l) {
       if (Math.random() > l.throttlePercent) return Promise.resolve()
     } else c()(!1, "Unsupported analytics event config: ".concat(l));
@@ -306,7 +306,7 @@ let Q = e => {
   }
 };
 
-function X() {
+function Q() {
   return r
 }
 

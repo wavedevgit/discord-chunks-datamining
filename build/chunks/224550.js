@@ -42,8 +42,8 @@ let g = (e, t, n, r) => {
         hide: A,
         purchaseType: N,
         productLine: C,
-        proratedAmount: P,
-        basePrice: R,
+        proratedAmount: R,
+        basePrice: P,
         currentSubscription: w,
         skuId: D
       } = e,
@@ -137,7 +137,7 @@ let g = (e, t, n, r) => {
           planGroup: x,
           isPrepaidPaymentSource: !1
         });
-        O || (e = g(R, t, n, b.id)), U = (null == w ? void 0 : w.isPausedAllowsResumeButNotUpdates) ? h.intl.format(h.t.B6oNwM, {
+        O || (e = g(P, t, n, b.id)), U = (null == w ? void 0 : w.isPausedAllowsResumeButNotUpdates) ? h.intl.format(h.t.B6oNwM, {
           primaryText: r,
           rate: e,
           paidURL: f.EYA.PAID_TERMS,
@@ -149,8 +149,8 @@ let g = (e, t, n, r) => {
           paidURL: f.EYA.PAID_TERMS,
           contactLink: f.EYA.CONTACT,
           helpdeskArticle: l.Z.getArticleURL(f.BhN.BILLING)
-        }) : L && C === f.POd.BOOST && null != R ? h.intl.format(h.t["2nKy//"], {
-          price: (0, u.T4)(R.amount, R.currency),
+        }) : L && C === f.POd.BOOST && null != P ? h.intl.format(h.t["2nKy//"], {
+          price: (0, u.T4)(P.amount, P.currency),
           paidServiceTermsArticle: f.EYA.PAID_TERMS,
           contactUsArticle: f.EYA.CONTACT,
           subscriptionFAQArticle: l.Z.getArticleURL(f.BhN.BILLING)
@@ -159,10 +159,10 @@ let g = (e, t, n, r) => {
           interval: c.ZP.formatInterval(null == b ? void 0 : b.interval),
           cancelSubscriptionArticle: l.Z.getArticleURL(f.BhN.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: l.Z.getArticleURL(f.BhN.PAID_TERMS)
-        }) : null != P && null != R ? h.intl.format(h.t.Kcieh4, {
+        }) : null != R && null != P ? h.intl.format(h.t.Kcieh4, {
           primaryText: r,
-          proratedAmount: (0, u.T4)(P, R.currency),
-          renewalAmount: (0, u.T4)(R.amount, R.currency),
+          proratedAmount: (0, u.T4)(R, P.currency),
+          renewalAmount: (0, u.T4)(P.amount, P.currency),
           rateInterval: c.ZP.formatInterval(null == b ? void 0 : b.interval),
           paidURL: f.EYA.PAID_TERMS,
           contactLink: f.EYA.CONTACT,

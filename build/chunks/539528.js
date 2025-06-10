@@ -163,13 +163,13 @@ function A(e) {
     return N && (a = u(a, N)), p(a, r, n)
   }
 
-  function P() {
+  function R() {
     return Math.random().toString(36).substr(2, A)
   }
-  var R = m();
+  var P = m();
 
   function w(e) {
-    (0, r.Z)(Q, e), Q.length = t.length, R.notifyListeners(Q.location, Q.action)
+    (0, r.Z)(X, e), X.length = t.length, P.notifyListeners(X.location, X.action)
   }
 
   function D(e) {
@@ -185,7 +185,7 @@ function A(e) {
     if (x) x = !1, w();
     else {
       var t = "POP";
-      R.confirmTransitionTo(e, t, h, function(n) {
+      P.confirmTransitionTo(e, t, h, function(n) {
         n ? w({
           action: t,
           location: e
@@ -195,7 +195,7 @@ function A(e) {
   }
 
   function M(e) {
-    var t = Q.location,
+    var t = X.location,
       n = U.indexOf(t.key); - 1 === n && (n = 0);
     var r = U.indexOf(e.key); - 1 === r && (r = 0);
     var i = n - r;
@@ -210,8 +210,8 @@ function A(e) {
 
   function B(e, r) {
     var i = "PUSH",
-      a = p(e, r, P(), Q.location);
-    R.confirmTransitionTo(a, i, h, function(e) {
+      a = p(e, r, R(), X.location);
+    P.confirmTransitionTo(a, i, h, function(e) {
       if (e) {
         var r = G(a),
           o = a.key,
@@ -222,7 +222,7 @@ function A(e) {
               state: s
             }, null, r), c) window.location.href = r;
           else {
-            var l = U.indexOf(Q.location.key),
+            var l = U.indexOf(X.location.key),
               u = U.slice(0, l + 1);
             u.push(a.key), U = u, w({
               action: i,
@@ -236,8 +236,8 @@ function A(e) {
 
   function F(e, r) {
     var i = "REPLACE",
-      a = p(e, r, P(), Q.location);
-    R.confirmTransitionTo(a, i, h, function(e) {
+      a = p(e, r, R(), X.location);
+    P.confirmTransitionTo(a, i, h, function(e) {
       if (e) {
         var r = G(a),
           o = a.key,
@@ -248,7 +248,7 @@ function A(e) {
               state: s
             }, null, r), c) window.location.replace(r);
           else {
-            var l = U.indexOf(Q.location.key); - 1 !== l && (U[l] = a.key), w({
+            var l = U.indexOf(X.location.key); - 1 !== l && (U[l] = a.key), w({
               action: i,
               location: a
             })
@@ -278,7 +278,7 @@ function A(e) {
 
   function z(e) {
     void 0 === e && (e = !1);
-    var t = R.setPrompt(e);
+    var t = P.setPrompt(e);
     return K || (W(1), K = !0),
       function() {
         return K && (K = !1, W(-1)), t()
@@ -286,13 +286,13 @@ function A(e) {
   }
 
   function q(e) {
-    var t = R.appendListener(e);
+    var t = P.appendListener(e);
     return W(1),
       function() {
         W(-1), t()
       }
   }
-  var Q = {
+  var X = {
     length: t.length,
     action: "POP",
     location: j,
@@ -305,7 +305,7 @@ function A(e) {
     block: z,
     listen: q
   };
-  return Q
+  return X
 }
 var N = "hashchange",
   C = {
@@ -327,12 +327,12 @@ var N = "hashchange",
     }
   };
 
-function P(e) {
+function R(e) {
   var t = e.indexOf("#");
   return -1 === t ? e : e.slice(0, t)
 }
 
-function R() {
+function P() {
   var e = window.location.href,
     t = e.indexOf("#");
   return -1 === t ? "" : e.substring(t + 1)
@@ -343,7 +343,7 @@ function w(e) {
 }
 
 function D(e) {
-  window.location.replace(P(window.location.href) + "#" + e)
+  window.location.replace(R(window.location.href) + "#" + e)
 }
 
 function L(e) {
@@ -361,7 +361,7 @@ function L(e) {
     y = h.decodePath;
 
   function v() {
-    var e = y(R());
+    var e = y(P());
     return f && (e = u(e, f)), p(e)
   }
   var I = m();
@@ -377,7 +377,7 @@ function L(e) {
   }
 
   function x() {
-    var e = R(),
+    var e = P(),
       t = b(e);
     if (e !== t) D(t);
     else {
@@ -408,7 +408,7 @@ function L(e) {
     var i = n - r;
     i && (T = !0, H(i))
   }
-  var j = R(),
+  var j = P(),
     U = b(j);
   j !== U && D(U);
   var G = v(),
@@ -417,7 +417,7 @@ function L(e) {
   function F(e) {
     var t = document.querySelector("base"),
       n = "";
-    return t && t.getAttribute("href") && (n = P(window.location.href)), n + "#" + b(f + _(e))
+    return t && t.getAttribute("href") && (n = R(window.location.href)), n + "#" + b(f + _(e))
   }
 
   function V(e, t) {
@@ -427,7 +427,7 @@ function L(e) {
       if (e) {
         var t = _(r),
           i = b(f + t),
-          a = R() !== i;
+          a = P() !== i;
         if (a) {
           A = t, w(i);
           var o = B.lastIndexOf(_(J.location)),
@@ -448,7 +448,7 @@ function L(e) {
       if (e) {
         var t = _(r),
           i = b(f + t),
-          a = R() !== i;
+          a = P() !== i;
         a && (A = t, D(i));
         var o = B.indexOf(_(J.location)); - 1 !== o && (B[o] = t), S({
           action: n,
@@ -476,7 +476,7 @@ function L(e) {
   }
   var q = !1;
 
-  function Q(e) {
+  function X(e) {
     void 0 === e && (e = !1);
     var t = I.setPrompt(e);
     return q || (z(1), q = !0),
@@ -485,7 +485,7 @@ function L(e) {
       }
   }
 
-  function X(e) {
+  function Q(e) {
     var t = I.appendListener(e);
     return z(1),
       function() {
@@ -502,8 +502,8 @@ function L(e) {
     go: H,
     goBack: Y,
     goForward: W,
-    block: Q,
-    listen: X
+    block: X,
+    listen: Q
   };
   return J
 }

@@ -14,8 +14,8 @@ n.d(t, {
   ic: () => E,
   pX: () => v,
   sq: () => p,
-  tV: () => R,
-  uu: () => P,
+  tV: () => P,
+  uu: () => R,
   wk: () => C,
   zd: () => O
 });
@@ -254,7 +254,7 @@ function C(e, t) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     application: t,
     entrypoint: n,
@@ -282,7 +282,7 @@ function P(e) {
   })
 }
 
-function R(e, t) {
+function P(e, t) {
   (0, u.m)({
     name: l.xw.MESSAGE,
     record: e

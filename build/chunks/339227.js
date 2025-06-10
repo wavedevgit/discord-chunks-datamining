@@ -248,7 +248,7 @@ function C(e) {
     originalMatch: e
   }
 }
-let P = {
+let R = {
     url: {
       parse: e => null == (0, u.yw)(e[1]) ? {
         type: "text",
@@ -291,9 +291,9 @@ let P = {
       }
     }
   },
-  R = /(-# +)/,
-  w = (0, _.Z)([T, P]),
-  D = (0, _.Z)([A, P]),
+  P = /(-# +)/,
+  w = (0, _.Z)([T, R]),
+  D = (0, _.Z)([A, R]),
   L = l._p(w),
   x = l._p(D),
   k = {
@@ -507,7 +507,7 @@ function V(e, t, n, r) {
     after: "_"
   };
   if ("subtext" === t) return {
-    before: R.exec(r.input)[1],
+    before: P.exec(r.input)[1],
     after: ""
   };
   let i = I["link" === t ? "url" : t];

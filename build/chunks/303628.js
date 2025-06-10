@@ -60,13 +60,13 @@ function C(e, t) {
   return n
 }
 
-function P(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -157,8 +157,8 @@ function L(e) {
         children: e => {
           var {
             ref: i
-          } = e, s = R(e, ["ref"]);
-          return (0, r.jsx)("ul", P(N({
+          } = e, s = P(e, ["ref"]);
+          return (0, r.jsx)("ul", R(N({
             ref: i
           }, s), {
             className: o()(S.channelAttachmentArea, T.scrollbarGhost),

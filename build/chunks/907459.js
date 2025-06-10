@@ -29,7 +29,7 @@ var r = n(255367),
   A = n(474936),
   N = n(388032),
   C = n(362450);
-let P = () => {
+let R = () => {
     var e, t, n;
     let i = (0, s.e7)([E.default], () => y.ZP.isPremium(E.default.getCurrentUser())),
       a = (0, h.N)(),
@@ -45,7 +45,7 @@ let P = () => {
       subscriptionTier: A.Si.TIER_2
     })
   },
-  R = e => {
+  P = e => {
     let {
       markAsDismissed: t
     } = e, n = () => {
@@ -81,7 +81,7 @@ let P = () => {
     };
     return (0, r.jsxs)("div", {
       className: C.editorFooter,
-      children: [i && (0, r.jsx)(P, {}), (0, r.jsx)(l.zxk, {
+      children: [i && (0, r.jsx)(R, {}), (0, r.jsx)(l.zxk, {
         className: C.footerButton,
         onClick: a,
         color: l.zxk.Colors.PRIMARY,
@@ -120,7 +120,7 @@ function D(e) {
       className: o()(C.editor, m ? C.editorAnimate : null),
       "data-app-right-panel": !0,
       children: (0, r.jsxs)(l.y5t, {
-        children: [(0, r.jsx)(R, {
+        children: [(0, r.jsx)(P, {
           markAsDismissed: n
         }), (0, r.jsx)(l.Ttm, {
           className: C.editorBody,

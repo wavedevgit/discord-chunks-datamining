@@ -30,8 +30,8 @@ var r = n(255367),
   A = n(451478),
   N = n(626135),
   C = n(823379),
-  P = n(5192),
-  R = n(981631),
+  R = n(5192),
+  P = n(981631),
   w = n(388032),
   D = n(486850);
 
@@ -105,7 +105,7 @@ class B extends i.PureComponent {
   }
   logShownEventIfNeeded() {
     let e = this.props.activity.application_id;
-    null != e && -1 === G.indexOf(e) && (N.default.track(R.rMx.SHOW_TUTORIAL, {
+    null != e && -1 === G.indexOf(e) && (N.default.track(P.rMx.SHOW_TUTORIAL, {
       tutorial: "activity-invite-nux-inline",
       application_id: e
     }), G.push(e))
@@ -227,7 +227,7 @@ function V(e) {
 function Z(e) {
   let t = (0, c.e7)([S.Z], () => S.Z.getTypingUsers(e.id)),
     n = (0, c.e7)([T.default], () => T.default.getCurrentUser());
-  return l()(t).keys().filter(e => e !== (null == n ? void 0 : n.id)).reject(e => v.Z.isBlockedOrIgnored(e)).map(e => T.default.getUser(e)).filter(C.lm).map(t => P.ZP.getName(e.guild_id, e.id, t)).value()
+  return l()(t).keys().filter(e => e !== (null == n ? void 0 : n.id)).reject(e => v.Z.isBlockedOrIgnored(e)).map(e => T.default.getUser(e)).filter(C.lm).map(t => R.ZP.getName(e.guild_id, e.id, t)).value()
 }
 
 function H(e) {

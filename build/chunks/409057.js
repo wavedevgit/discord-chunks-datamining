@@ -30,8 +30,8 @@ var i = n(120356),
   A = n(336383),
   N = n(194811),
   C = n(373826),
-  P = n(668700),
-  R = n(262210),
+  R = n(668700),
+  P = n(262210),
   w = n(670451),
   D = n(881530),
   L = n(228168),
@@ -94,18 +94,18 @@ function V(e) {
     analyticsLocations: z
   } = (0, f.ZP)(d.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     themeType: q
-  } = (0, I.z)(), Q = (0, h.Z)({
+  } = (0, I.z)(), X = (0, h.Z)({
     activity: i,
     user: t
-  }), X = (0, b.Z)({
+  }), Q = (0, b.Z)({
     display: "live",
     user: t,
     activity: i,
-    entry: Q,
+    entry: X,
     analyticsLocations: z
   }), J = (0, y.Z)({
     userId: t.id,
-    onAction: X
+    onAction: Q
   }), $ = (0, O.Z)(i), ee = null != $.text && "" !== $.text, {
     largeImage: et,
     smallImage: en
@@ -115,7 +115,7 @@ function V(e) {
     currentUser: n,
     activity: i,
     application: U,
-    entry: Q,
+    entry: X,
     onClose: H
   }), ei = () => {
     let e = (0, s.Z)(i) ? "crunchyroll" : "default",
@@ -133,7 +133,7 @@ function V(e) {
       className: j.clickableImage,
       aspectRatio: e,
       onClick: e => {
-        X({
+        Q({
           action: "PRESS_IMAGE"
         }), er(e)
       }
@@ -167,7 +167,7 @@ function V(e) {
         guildName: B.name
       }),
       onClick: () => {
-        (0, g.X)(B.id), X({
+        (0, g.X)(B.id), Q({
           action: "OPEN_VOICE_GUILD"
         }), null == H || H()
       }
@@ -243,7 +243,7 @@ function V(e) {
       start: e,
       end: t
     } = i.timestamps;
-    return (0, r.jsx)(R.Z, {
+    return (0, r.jsx)(P.Z, {
       start: e,
       end: t
     })
@@ -252,23 +252,23 @@ function V(e) {
   }) : (0, r.jsxs)(o.P3F, {
     className: j.clickableText,
     onClick: e => {
-      X({
+      Q({
         action: "PRESS_TEXT"
       }), er(e)
     },
     children: [ea(), eo(), es()]
-  }), ed = () => null == B || null == V ? null : (0, r.jsx)(P.Z, {
+  }), ed = () => null == B || null == V ? null : (0, r.jsx)(R.Z, {
     user: t,
     guild: B,
     channel: V,
-    onAction: X,
+    onAction: Q,
     onClose: H
   }), ef = () => t.id === n.id ? null : (0, r.jsx)("div", {
     className: j.actions,
     children: (0, r.jsx)(S.Z, {
       activity: i,
       user: t,
-      onAction: X,
+      onAction: Q,
       onClose: H
     })
   });
@@ -277,7 +277,7 @@ function V(e) {
     children: (0, r.jsxs)(A.Z, {
       ref: J,
       className: a()(j.card, Z),
-      onAction: X,
+      onAction: Q,
       onClose: H,
       "aria-labelledby": ee ? "".concat(K, " ").concat(W) : W,
       children: [(0, r.jsx)(N.Z, F(G({
@@ -287,7 +287,7 @@ function V(e) {
           display: "live",
           user: t,
           activity: i,
-          entry: Q,
+          entry: X,
           onClose: H,
           appContext: Y
         })

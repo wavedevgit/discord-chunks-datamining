@@ -73,8 +73,8 @@ function y(e) {
     setPaymentSourceId: A,
     purchaseError: N,
     setPurchaseError: C,
-    purchaseErrorBlockRef: P,
-    paymentAuthenticationState: R,
+    purchaseErrorBlockRef: R,
+    paymentAuthenticationState: P,
     selectedSkuId: w,
     activeSubscription: D,
     previousStepRef: L,
@@ -87,8 +87,8 @@ function y(e) {
     setPaymentSourceId: A,
     purchaseError: N,
     setPurchaseError: C,
-    purchaseErrorBlockRef: P,
-    paymentAuthenticationState: R,
+    purchaseErrorBlockRef: R,
+    paymentAuthenticationState: P,
     selectedSkuId: w,
     isGift: k
   }), j = (0, o.N)(m), U = !k && null != j && null != w && h.nG[j.trial_id].skus.includes(w), G = () => {

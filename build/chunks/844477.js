@@ -122,8 +122,8 @@ function v(e) {
     })
   }
   let C = i.useRef(null),
-    P = "expressive" === n,
-    R = i.useContext(s.S),
+    R = "expressive" === n,
+    P = i.useContext(s.S),
     w = (0, d.a)((0, f.ZP)()),
     D = (0, r.jsx)(l.t, g(h({}, S), {
       children: (0, r.jsxs)("button", g(h({
@@ -133,8 +133,8 @@ function v(e) {
         }),
         ref: C
       }, T), {
-        children: [P && (0, r.jsx)(I, {
-          hasReducedMotion: R.reducedMotion.enabled,
+        children: [R && (0, r.jsx)(I, {
+          hasReducedMotion: P.reducedMotion.enabled,
           buttonRef: C,
           isLightMode: w
         }), null != m && "start" === b && (0, r.jsx)(N, {}), (0, r.jsx)(u.x, {
@@ -147,7 +147,7 @@ function v(e) {
         }), null != m && "end" === b && (0, r.jsx)(N, {})]
       }))
     }));
-  return P ? (0, r.jsx)("div", {
+  return R ? (0, r.jsx)("div", {
     className: _.expressiveWrapper,
     children: D
   }) : D

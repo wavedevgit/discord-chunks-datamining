@@ -155,7 +155,7 @@ async function C() {
     receivedAt: Date.now()
   })
 }
-async function P(e) {
+async function R(e) {
   let t, n, {
     useQuickSwitcher: r = !0,
     useChannelAffinities: i = !0
@@ -204,7 +204,7 @@ async function P(e) {
   })
 }
 
-function R() {
+function P() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
     t = (0, o.e7)([d.Z], () => d.Z.isConnected()),
     n = r.useMemo(() => e.join(","), [e]);
@@ -214,7 +214,7 @@ function R() {
       try {
         await C()
       } catch (e) {}
-      await P(n.split(","))
+      await R(n.split(","))
     }
   }, [n, t])
 }
@@ -238,12 +238,12 @@ let D = {
   setGravitySelectedSummary: T,
   setHighlightedSummary: v,
   fetchSummaries: O,
-  fetchSummariesBulk: P,
+  fetchSummariesBulk: R,
   useChannelSummaries: function(e) {
     let {
       channelIds: t = []
     } = e;
-    return R(t), (0, o.Wu)([p.Z], () => p.Z.topSummaries(), [])
+    return P(t), (0, o.Wu)([p.Z], () => p.Z.topSummaries(), [])
   },
   deleteSummary: w
 }

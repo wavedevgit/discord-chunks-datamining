@@ -1,43 +1,42 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
 var r = n(255367);
 n(73800);
-var i = n(252258),
-  l = n(399606),
-  a = n(522474),
-  o = n(595519),
-  s = n(317381),
-  c = n(16609),
-  u = n(917107),
-  d = n(9145),
-  p = n(918559),
-  h = n(981631);
+var i = n(399606),
+  l = n(522474),
+  a = n(595519),
+  o = n(317381),
+  s = n(16609),
+  c = n(917107),
+  u = n(9145),
+  d = n(918559),
+  p = n(981631);
 
-function f(e) {
+function h(e) {
   let {
     maxHeight: t,
     renderExternalHeader: n
   } = e, {
-    connectedChannelId: f,
-    connectedActivity: m,
-    activityPanelMode: g
-  } = (0, l.cj)([s.ZP], () => {
-    let e = s.ZP.getConnectedActivityLocation(),
-      t = s.ZP.getSelfEmbeddedActivityForLocation(e);
+    connectedChannelId: h,
+    connectedActivity: f,
+    activityPanelMode: m
+  } = (0, i.cj)([o.ZP], () => {
+    let e = o.ZP.getConnectedActivityLocation(),
+      t = o.ZP.getSelfEmbeddedActivityForLocation(e);
     return {
-      connectedChannelId: (0, c.pY)(e),
+      connectedChannelId: (0, s.p)(e),
       connectedActivity: t,
-      activityPanelMode: s.ZP.getActivityPanelMode()
+      activityPanelMode: o.ZP.getActivityPanelMode()
     }
-  }), b = (null == m ? void 0 : m.location.kind) === i.E.CONTEXTLESS;
-  if (!(0, o.NX)(f) && !b) return null;
-  let _ = null == m ? void 0 : m.applicationId,
-    y = a.Z.getWindowOpen(h.KJ3.ACTIVITY_POPOUT);
-  return g !== p.Ez.PANEL || null == _ || y ? null : null != f && null != m && !(0, u.Z)(f) || b ? (0, r.jsx)(d.Z, {
+  });
+  if (!(0, a.NX)(h)) return null;
+  let g = null == f ? void 0 : f.applicationId,
+    b = l.Z.getWindowOpen(p.KJ3.ACTIVITY_POPOUT);
+  return m !== d.Ez.PANEL || null == g || b || null == h || null == f || (0, c.Z)(h) ? null : (0, r.jsx)(u.Z, {
     maxHeight: t,
-    connectedLocation: m.location,
+    connectedLocation: f.location,
     renderExternalHeader: n
-  }) : null
+  })
 }

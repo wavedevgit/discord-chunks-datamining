@@ -33,7 +33,7 @@ let u = i.memo(i.forwardRef((e, t) => {
     fade: A = !1,
     initialScrollTop: N = 0,
     role: C = "list"
-  } = e, [P, R] = i.useState(-1), [w, D] = i.useState(-1), L = i.useRef(null), x = i.useRef(0), k = i.useRef(-1);
+  } = e, [R, P] = i.useState(-1), [w, D] = i.useState(-1), L = i.useRef(null), x = i.useRef(0), k = i.useRef(-1);
   (0, l.Ng)(() => {
     var e;
     let t = null == (e = L.current) ? void 0 : e.getScrollerNode();
@@ -112,7 +112,7 @@ let u = i.memo(i.forwardRef((e, t) => {
       offsetHeight: r,
       scrollTop: i
     } = t;
-    D(r), R(i), null == a || a({
+    D(r), P(i), null == a || a({
       width: n,
       height: r
     })
@@ -134,7 +134,7 @@ let u = i.memo(i.forwardRef((e, t) => {
       let {
         scrollTop: e
       } = t;
-      x.current = e, null == n || n(e), R(e)
+      x.current = e, null == n || n(e), P(e)
     }))
   }, [n]);
   i.useImperativeHandle(t, () => ({
@@ -217,12 +217,12 @@ let u = i.memo(i.forwardRef((e, t) => {
     visibleItems: z,
     listOffset: q
   } = i.useMemo(() => {
-    if (-1 === w || -1 === P) return {
+    if (-1 === w || -1 === R) return {
       visibleItems: null,
       listOffset: 0
     };
-    let e = P,
-      t = P + w,
+    let e = R,
+      t = R + w,
       n = 0,
       r = u[0],
       i = [],
@@ -269,7 +269,7 @@ let u = i.memo(i.forwardRef((e, t) => {
       visibleItems: i,
       listOffset: r
     }
-  }, [j, G, U, B, u, d, f, p, _, P, Y, I, h, M, w]), Q = i.useMemo(() => {
+  }, [j, G, U, B, u, d, f, p, _, R, Y, I, h, M, w]), X = i.useMemo(() => {
     var e, t, n;
     return {
       top: q,
@@ -277,7 +277,7 @@ let u = i.memo(i.forwardRef((e, t) => {
       bottom: null != (t = null == u ? void 0 : u[2]) ? t : 0,
       left: null != (n = null == u ? void 0 : u[3]) ? n : 0
     }
-  }, [q, u]), X = i.useMemo(() => ({
+  }, [q, u]), Q = i.useMemo(() => ({
     height: Z
   }), [Z]), J = T ? s.xV : s.h2;
   return (0, r.jsxs)(J, {
@@ -288,11 +288,11 @@ let u = i.memo(i.forwardRef((e, t) => {
     children: [(0, r.jsx)("div", {
       role: C,
       className: c.listItems,
-      style: Q,
+      style: X,
       children: z
     }), (0, r.jsx)("div", {
       className: c.listHeight,
-      style: X
+      style: Q
     })]
   })
 }))

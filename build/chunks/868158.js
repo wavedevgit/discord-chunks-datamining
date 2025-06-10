@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Eb: () => R,
+  Eb: () => P,
   Fx: () => L,
   IM: () => w,
   J2: () => U,
-  r$: () => P
+  r$: () => R
 }), n(539854), n(388685), n(415506);
 var r = n(512722),
   i = n.n(r),
@@ -85,7 +85,7 @@ let T = new _.Z("ReadyPayloadUtils"),
   N = null,
   C = {};
 
-function P(e, t) {
+function R(e, t) {
   var n, {
       guilds: r,
       merged_members: i,
@@ -116,7 +116,7 @@ function P(e, t) {
   })
 }
 
-function R() {
+function P() {
   let e = s.Z.database(),
     t = (0, f.O)() ? l.Z.getCommittedVersions() : Promise.resolve({});
   return Promise.all([t, (0, f.O)() ? u.Z.getGuildIds() : Promise.resolve(new Set), null != e ? c.Z.okAsync(e) : Promise.resolve(!1)]).then(e => {

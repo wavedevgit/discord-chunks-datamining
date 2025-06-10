@@ -50,7 +50,7 @@ function C(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,8 +61,8 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -209,7 +209,7 @@ function M(e) {
       badgeStrokeColor: I,
       badgeColor: T,
       disableBoostClick: N,
-      "aria-label": P = !1
+      "aria-label": R = !1
     } = e,
     D = w(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]);
   let x = (0, f.Q3)("GuildBadgeV2"),
@@ -240,18 +240,18 @@ function M(e) {
     foregroundLightColor: K,
     premiumBackgroundColor: z,
     premiumForegroundColor: q,
-    sizeAdjustment: Q
+    sizeAdjustment: X
   } = L[B];
   if (null == Z) return null;
   G.premium && (t = q, n = z);
-  let X = (0, c.wj)(U) ? W : K,
+  let Q = (0, c.wj)(U) ? W : K,
     J = (0, c.wj)(U) ? H : Y;
-  t = null != t ? t : X, n = null != n ? n : J;
-  let $ = Math.floor(.75 * M) - (null != Q ? Q : 0);
+  t = null != t ? t : Q, n = null != n ? n : J;
+  let $ = Math.floor(.75 * M) - (null != X ? X : 0);
   return (0, r.jsx)(u.ua7, {
     color: l,
     position: d,
-    "aria-label": P,
+    "aria-label": R,
     text: (0, r.jsx)(k, {
       badgeType: B,
       guildTraits: G
@@ -260,7 +260,7 @@ function M(e) {
     children: e => (0, r.jsx)(u.P3F, {
       onClick: V,
       tabIndex: F ? 0 : -1,
-      children: (0, r.jsx)(p.Z, R(C({}, e), {
+      children: (0, r.jsx)(p.Z, P(C({}, e), {
         className: E,
         flowerStarClassName: b,
         allowFullSizedIcon: !0,

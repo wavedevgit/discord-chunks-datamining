@@ -29,8 +29,8 @@ var r = n(255367),
   A = n(4484),
   N = n(925994),
   C = n(981631),
-  P = n(388032),
-  R = n(302195);
+  R = n(388032),
+  P = n(302195);
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,13 +75,13 @@ let k = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
   M = {
-    12: R.fontSize12Padding,
-    14: R.fontSize14Padding,
-    15: R.fontSize15Padding,
-    16: R.fontSize16Padding,
-    18: R.fontSize18Padding,
-    20: R.fontSize20Padding,
-    24: R.fontSize24Padding
+    12: P.fontSize12Padding,
+    14: P.fontSize14Padding,
+    15: P.fontSize15Padding,
+    16: P.fontSize16Padding,
+    18: P.fontSize18Padding,
+    20: P.fontSize20Padding,
+    24: P.fontSize24Padding
   };
 class j extends i.Component {
   componentDidMount() {
@@ -194,7 +194,7 @@ class j extends i.Component {
       placeholder: t,
       isPreviewing: n
     } = this.props;
-    return e && !n ? P.intl.string(P.t.IYKTTU) : t
+    return e && !n ? R.intl.string(R.t.IYKTTU) : t
   }
   render() {
     var e, t, n, i, a, s;
@@ -213,7 +213,7 @@ class j extends i.Component {
       spellcheckEnabled: O,
       useNewSlashCommands: S,
       canOnlyUseTextCommands: N,
-      className: P,
+      className: R,
       id: w,
       required: L,
       maxCharacterCount: k,
@@ -226,9 +226,9 @@ class j extends i.Component {
       popup: V
     } = this.state, Z = {
       channel: m,
-      className: o()(P, R.textArea, {
-        [R.textAreaSlate]: b,
-        [R.textAreaDisabled]: u || F
+      className: o()(R, P.textArea, {
+        [P.textAreaSlate]: b,
+        [P.textAreaDisabled]: u || F
       }),
       id: w,
       placeholder: this.getPlaceholder(),
@@ -251,11 +251,11 @@ class j extends i.Component {
       onKeyDown: _,
       onSubmit: h,
       textAreaPaddingClassName: o()(M[E], {
-        [R.textAreaWithoutAttachmentButton]: g !== v.Ie.NORMAL && g !== v.Ie.OVERLAY && g !== v.Ie.THREAD_CREATION && g !== v.Ie.SIDEBAR,
-        [R.textAreaForPostCreation]: g === v.Ie.CREATE_FORUM_POST,
-        [R.textAreaCustomGift]: g === v.Ie.CUSTOM_GIFT,
-        [R.textAreaForUserProfile]: g === v.Ie.USER_PROFILE,
-        [R.textAreaForOverlayInlineReply]: g === v.Ie.OVERLAY_INLINE_REPLY
+        [P.textAreaWithoutAttachmentButton]: g !== v.Ie.NORMAL && g !== v.Ie.OVERLAY && g !== v.Ie.THREAD_CREATION && g !== v.Ie.SIDEBAR,
+        [P.textAreaForPostCreation]: g === v.Ie.CREATE_FORUM_POST,
+        [P.textAreaCustomGift]: g === v.Ie.CUSTOM_GIFT,
+        [P.textAreaForUserProfile]: g === v.Ie.USER_PROFILE,
+        [P.textAreaForOverlayInlineReply]: g === v.Ie.OVERLAY_INLINE_REPLY
       }),
       spellcheckEnabled: O,
       useNewSlashCommands: S,

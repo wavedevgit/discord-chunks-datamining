@@ -68,9 +68,9 @@ function T(e, t) {
 let A = 60,
   N = 1,
   C = .5,
-  P = new Set;
+  R = new Set;
 
-function R(e, t) {
+function P(e, t) {
   return "".concat(e, "_").concat(t)
 }
 class w {
@@ -100,8 +100,8 @@ class w {
         let t = !1,
           n = (0, g.Zp)(this.questContent);
         if (null != n) {
-          let r = R(e.id, n);
-          (t = !P.has(r) && (0, g.VB)(this.questContent)) && P.add(r)
+          let r = P(e.id, n);
+          (t = !R.has(r) && (0, g.VB)(this.questContent)) && R.add(r)
         }
         let r = I({
             min_view_time_seconds: this.minViewTimeSeconds,

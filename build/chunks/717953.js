@@ -63,10 +63,10 @@ function v(e) {
   } = e, I = (0, l.e7)([p.Z], () => {
     var e, t;
     return null == (t = p.Z.settings.appearance) || null == (e = t.clientThemeSettings) ? void 0 : e.customUserThemeSettings
-  }), [S, T] = (0, _.US)([c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE]), A = (0, d.ZP)(), N = null != I, C = (0, u.wjy)(A) ? y.darkOverlay : y.lightOverlay, P = (null != (n = null == I || null == (t = I.colors) ? void 0 : t.length) ? n : 0) > 1, R = i.useMemo(() => {
+  }), [S, T] = (0, _.US)([c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE]), A = (0, d.ZP)(), N = null != I, C = (0, u.wjy)(A) ? y.darkOverlay : y.lightOverlay, R = (null != (n = null == I || null == (t = I.colors) ? void 0 : t.length) ? n : 0) > 1, P = i.useMemo(() => {
     if (null == I || null == I.colors || 0 === I.colors.length) return;
     let e = I.colors[0];
-    if (P) {
+    if (R) {
       let {
         colors: t,
         gradientAngle: n
@@ -76,7 +76,7 @@ function v(e) {
     return {
       background: "var(--bg-overlay), ".concat(e)
     }
-  }, [I, P]), w = (0, f.Sl)(g.Il.WHITE).hex, D = (0, f.Sl)(g.Il.RED_430).hex, L = N ? w : void 0, x = i.useCallback(() => {
+  }, [I, R]), w = (0, f.Sl)(g.Il.WHITE).hex, D = (0, f.Sl)(g.Il.RED_430).hex, L = N ? w : void 0, x = i.useCallback(() => {
     S === c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE && T(m.L.TAKE_ACTION), null == v || v()
   }, [S, T, v]), k = S === c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE;
   return (0, r.jsxs)(h.S4, {
@@ -87,7 +87,7 @@ function v(e) {
     className: o()(y.container, N && C, a && y.disabled),
     showBadge: !1,
     showLockedBadge: !1,
-    style: R,
+    style: P,
     children: [!N && (0, r.jsx)(O, {}), (0, r.jsx)("div", {
       className: y.borderOverlay
     }), (0, r.jsx)(s.V3v, {

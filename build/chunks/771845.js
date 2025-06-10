@@ -92,13 +92,13 @@ function C() {
   return N(null != (t = d.Z.getGuildFolders()) ? t : [], null != (n = null == (e = d.Z.settings.guildFolders) ? void 0 : e.guildPositions) ? n : [])
 }
 
-function P() {
+function R() {
   var e, t;
   let n = d.Z.getGuildFolders();
   return !(null != r && a()(r, n)) && N(null != (r = n) ? r : [], null != (t = null == (e = d.Z.settings.guildFolders) ? void 0 : e.guildPositions) ? t : [])
 }
 
-function R(e) {
+function P(e) {
   let {
     sourceId: t,
     targetId: n,
@@ -258,8 +258,8 @@ class Z extends E.Z {
       GUILD_CREATE: C,
       GUILD_DELETE: C,
       GUILD_MEMBER_ADD: x,
-      USER_SETTINGS_PROTO_UPDATE: P,
-      GUILD_MOVE_BY_ID: R,
+      USER_SETTINGS_PROTO_UPDATE: R,
+      GUILD_MOVE_BY_ID: P,
       GUILD_FOLDER_CREATE_LOCAL: w,
       GUILD_FOLDER_EDIT_LOCAL: D,
       GUILD_FOLDER_DELETE_LOCAL: L,

@@ -6,10 +6,10 @@ n.d(t, {
   Tg: () => U,
   UU: () => G,
   gK: () => j,
-  hM: () => R,
+  hM: () => P,
   iy: () => B,
   mO: () => x,
-  t1: () => P,
+  t1: () => R,
   uL: () => F,
   v2: () => k,
   yC: () => L
@@ -92,7 +92,7 @@ function A(e, t) {
 let N = 250,
   C = /-/g;
 
-function P(e) {
+function R(e) {
   let t = null != e ? {
     [e]: 1
   } : {};
@@ -104,7 +104,7 @@ function P(e) {
   })
 }
 
-function R(e, t) {
+function P(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
   var {
     startTime: r
@@ -125,7 +125,7 @@ function R(e, t) {
 
 function w(e, t, n) {
   let r = Date.now();
-  P(t), o.tn.get({
+  R(t), o.tn.get({
     url: E.ANM.GIFS_SEARCH,
     query: {
       q: e,
@@ -138,7 +138,7 @@ function w(e, t, n) {
     rejectWithError: !0
   }).then(i => {
     let a = i.body;
-    R(a, t, {
+    P(a, t, {
       startTime: r,
       limit: n
     }), l.Z.dispatch({
@@ -261,7 +261,7 @@ function U() {
 
 function G(e) {
   let t = Date.now();
-  P(E.wI2.TRENDING_GIFS), o.tn.get({
+  R(E.wI2.TRENDING_GIFS), o.tn.get({
     url: E.ANM.GIFS_TRENDING_GIFS,
     query: {
       media_format: _.Z.getSelectedFormat(),
@@ -275,7 +275,7 @@ function G(e) {
     let {
       body: r
     } = n;
-    R(r, E.wI2.TRENDING_GIFS, {
+    P(r, E.wI2.TRENDING_GIFS, {
       startTime: t,
       limit: e
     }), l.Z.dispatch({

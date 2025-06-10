@@ -49,8 +49,8 @@ let T = 100,
   A = 1e3,
   N = .2,
   C = .1,
-  P = Object.freeze({}),
-  R = 300;
+  R = Object.freeze({}),
+  P = 300;
 
 function w() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
@@ -130,7 +130,7 @@ class L {
       this.clear(), this.updateAllResults();
       return
     }(this.options.frecencyBoosters ? s.DZ.loadIfNecessary() : Promise.resolve()).finally(() => {
-      this.queryUsers(e, t, this._limit), this._groupDMResults = this.queryGroupDMs(e, this._limit), this._textChannelResults = this.queryTextChannels(e, this._limit), this._voiceChannelResults = this.queryVoiceChannels(e, this._limit), this._guildResults = this.queryGuilds(e, this._limit), this._applicationResults = this.queryApplications(e, this._limit), this._linkResults = this.queryLink(e, this._limit), this._inAppNavigations = this.queryInAppNavigations(e, this._limit), this._isAsyncSearch() ? (clearTimeout(this._asyncTimeout), this._asyncTimeout = setTimeout(this.updateAllResults, R)) : this.updateAllResults()
+      this.queryUsers(e, t, this._limit), this._groupDMResults = this.queryGroupDMs(e, this._limit), this._textChannelResults = this.queryTextChannels(e, this._limit), this._voiceChannelResults = this.queryVoiceChannels(e, this._limit), this._guildResults = this.queryGuilds(e, this._limit), this._applicationResults = this.queryApplications(e, this._limit), this._linkResults = this.queryLink(e, this._limit), this._inAppNavigations = this.queryInAppNavigations(e, this._limit), this._isAsyncSearch() ? (clearTimeout(this._asyncTimeout), this._asyncTimeout = setTimeout(this.updateAllResults, P)) : this.updateAllResults()
     })
   }
   clear() {
@@ -258,8 +258,8 @@ class L {
       fuzzy: !0
     }) : []
   }
-  constructor(e, t, n = T, r = P) {
-    I(this, "query", ""), I(this, "options", P), I(this, "results", []), I(this, "_userResults", []), I(this, "_groupDMResults", []), I(this, "_textChannelResults", []), I(this, "_voiceChannelResults", []), I(this, "_guildResults", []), I(this, "_applicationResults", []), I(this, "_linkResults", []), I(this, "_inAppNavigations", []), I(this, "_asyncTimeout", void 0), I(this, "userSearchContext", void 0), I(this, "onResultsChange", void 0), I(this, "resultTypes", void 0), I(this, "_userBlacklist", null), I(this, "_limit", void 0), I(this, "parseUserResults", e => {
+  constructor(e, t, n = T, r = R) {
+    I(this, "query", ""), I(this, "options", R), I(this, "results", []), I(this, "_userResults", []), I(this, "_groupDMResults", []), I(this, "_textChannelResults", []), I(this, "_voiceChannelResults", []), I(this, "_guildResults", []), I(this, "_applicationResults", []), I(this, "_linkResults", []), I(this, "_inAppNavigations", []), I(this, "_asyncTimeout", void 0), I(this, "userSearchContext", void 0), I(this, "onResultsChange", void 0), I(this, "resultTypes", void 0), I(this, "_userBlacklist", null), I(this, "_limit", void 0), I(this, "parseUserResults", e => {
       let {
         results: t
       } = e;

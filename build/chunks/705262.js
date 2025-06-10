@@ -31,8 +31,8 @@ var r = n(255367),
   A = n(626135),
   N = n(238302),
   C = n(514361),
-  P = n(803038),
-  R = n(717953),
+  R = n(803038),
+  P = n(717953),
   w = n(583901),
   D = n(469115),
   L = n(981631),
@@ -120,7 +120,7 @@ let K = Object.freeze({
       location_stack: r
     })
   },
-  Q = e => {
+  X = e => {
     let {
       type: t,
       isPreview: n,
@@ -152,7 +152,7 @@ let K = Object.freeze({
       })]
     })
   },
-  X = e => {
+  Q = e => {
     var t, n;
     let {
       type: i,
@@ -204,11 +204,11 @@ let K = Object.freeze({
       className: G.header,
       children: [(0, r.jsxs)("div", {
         className: G.headings,
-        children: [(0, r.jsx)(Q, {
+        children: [(0, r.jsx)(X, {
           type: s,
           isPreview: c,
           isCoachmark: o
-        }), (0, r.jsx)(X, {
+        }), (0, r.jsx)(Q, {
           type: s,
           isPreview: c,
           isCoachmark: o
@@ -227,7 +227,7 @@ let K = Object.freeze({
     } = (0, h.ZP)(p.Z.CLIENT_THEMES_THEME_SELECTOR), [g, E] = (0, l.Wu)([C.Z], () => {
       var e;
       return [C.Z.isPreview, null == (e = C.Z.gradientPreset) ? void 0 : e.id]
-    }), [b, y] = i.useState(!1), [O, v] = i.useState(-1), I = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), S = P.M.useExperiment({
+    }), [b, y] = i.useState(!1), [O, v] = i.useState(-1), I = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), S = R.M.useExperiment({
       location: "GradientSelectors"
     }).enabled;
     i.useEffect(() => {
@@ -271,7 +271,7 @@ let K = Object.freeze({
         })
       };
     return (0, r.jsxs)(r.Fragment, {
-      children: [S && (0, r.jsx)(R.Z, {
+      children: [S && (0, r.jsx)(P.Z, {
         isDisabled: t,
         onSelect: () => {
           (0, m.XO)(m.wh.CUSTOM_THEME, {

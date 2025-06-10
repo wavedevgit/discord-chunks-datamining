@@ -35,8 +35,8 @@ function S(e) {
     iconClassName: A,
     textSize: N = "xs",
     animateEmoji: C = !0,
-    hasQuest: P = !1,
-    hideEmoji: R = !1,
+    hasQuest: R = !1,
+    hideEmoji: P = !1,
     hideTooltip: w = !1
   } = e;
   (0, u.Z)(null == t ? void 0 : t.id);
@@ -105,7 +105,7 @@ function S(e) {
           className: o()(T, I.customStatusLabel),
           color: "none",
           children: "".concat(i, ": ")
-        }), null != e && !R && (0, r.jsx)(h.Z, {
+        }), null != e && !P && (0, r.jsx)(h.Z, {
           emoji: e,
           animate: C,
           hideTooltip: w,
@@ -127,6 +127,6 @@ function S(e) {
       variant: "text-".concat(N, "/normal"),
       className: o()(I.truncated, I.dot, T),
       children: O.l
-    }), U(), P && (0, r.jsx)(m.Z, {})]
+    }), U(), R && (0, r.jsx)(m.Z, {})]
   })
 }

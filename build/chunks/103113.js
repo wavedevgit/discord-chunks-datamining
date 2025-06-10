@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -38,7 +38,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,12 +51,12 @@ function P(e) {
   return e
 }
 
-function R(e) {
+function P(e) {
   let {
     user: t,
     guildId: n,
     channelId: C,
-    messageId: R,
+    messageId: P,
     roleId: w,
     openedAt: D,
     setPopoutRef: L,
@@ -71,14 +71,14 @@ function R(e) {
     userId: t.id,
     guildId: n,
     channelId: C,
-    messageId: R,
+    messageId: P,
     roleId: w
   }), F = i.useRef(null), V = (0, o.Z)(F);
   i.useEffect(() => {
     null == L || L(null == F ? void 0 : F.current)
   }, [F, L]);
   let Z = () => {
-      null == x || x(), (0, m.openUserProfileModal)(P({
+      null == x || x(), (0, m.openUserProfileModal)(R({
         sourceAnalyticsLocations: G,
         hideRestrictedProfile: !0
       }, B))
@@ -88,7 +88,7 @@ function R(e) {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
-        Z(), (0, p.pQ)(P({
+        Z(), (0, p.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: G
         }, B))

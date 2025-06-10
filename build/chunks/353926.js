@@ -65,8 +65,8 @@ let O = "scientist:triggered",
   A = new u.Z("ExperimentStore"),
   N = !1,
   C = {},
-  P = new Map,
-  R = {},
+  R = new Map,
+  P = {},
   w = {
     rawUserExperiments: [],
     rawGuildExperiments: []
@@ -121,10 +121,10 @@ function z(e, t) {
 }
 
 function q(e, t) {
-  return P.get(e) === t
+  return R.get(e) === t
 }
 
-function Q(e) {
+function X(e) {
   let {
     experimentId: t,
     descriptor: n,
@@ -222,13 +222,13 @@ function Q(e) {
       fingerprint: o
     })
   }
-  c ? P.set(f, p) : (C[H(t, n, r, u)] = {
+  c ? R.set(f, p) : (C[H(t, n, r, u)] = {
     time: Date.now(),
     hash: Y(n)
   }, e_(C))
 }
 
-function X(e) {
+function Q(e) {
   let [t, n] = e;
   return null != p.Z[t] ? p.Z[t](n) : null
 }
@@ -264,7 +264,7 @@ function $(e) {
         })
       }
     }),
-    filters: n.map(X),
+    filters: n.map(Q),
     rawFilterData: n
   }
 }
@@ -417,7 +417,7 @@ function ei(e, t) {
     };
   if (null == (d = en(e, a.populations, u))) return null;
   let f = null;
-  return null != a.holdoutName && null != a.holdoutControlBucket && a.holdoutName !== t && (null == (f = ei(e, a.holdoutName)) ? void 0 : f.bucket) != null && (!0 !== f.override && Q({
+  return null != a.holdoutName && null != a.holdoutControlBucket && a.holdoutName !== t && (null == (f = ei(e, a.holdoutName)) ? void 0 : f.bucket) != null && (!0 !== f.override && X({
     experimentId: a.holdoutName,
     descriptor: f
   }), (null == f ? void 0 : f.bucket) === a.holdoutControlBucket) ? null : {
@@ -442,9 +442,9 @@ function ea(e) {
   for (let r in e) {
     var n;
     let i = e[r];
-    for (let e of (t[r] = E({}, i), t[r].populations)) e.filters = e.rawFilterData.map(X);
+    for (let e of (t[r] = E({}, i), t[r].populations)) e.filters = e.rawFilterData.map(Q);
     for (let e of null != (n = t[r].overridesFormatted) ? n : [])
-      for (let t of e) t.filters = t.rawFilterData.map(X)
+      for (let t of e) t.filters = t.rawFilterData.map(Q)
   }
   return t
 }
@@ -560,7 +560,7 @@ function ep(e) {
     buckets: a,
     commonTriggerPoint: o
   } = e;
-  R[t] = {
+  P[t] = {
     type: n,
     title: r,
     description: i,
@@ -576,7 +576,7 @@ function eh(e) {
     experimentBucket: r,
     experimentType: i,
     skipCleanup: a
-  } = e, o = null != i ? i : null == (t = R[n]) ? void 0 : t.type;
+  } = e, o = null != i ? i : null == (t = P[n]) ? void 0 : t.type;
   if (null == o) return !1;
   if (null == r ? (k = E({}, k), delete k[n], M = E({}, M), delete M[n]) : "user" === o ? k = y(E({}, k), {
       [n]: {
@@ -595,7 +595,7 @@ function eh(e) {
       }
     }), !a)
     for (let e of [k, M])
-      for (let t in e) null == R[t] && delete k[t];
+      for (let t in e) null == P[t] && delete k[t];
   ef()
 }
 
@@ -626,7 +626,7 @@ class eg extends f.Z {
     return N
   }
   hasRegisteredExperiment(e) {
-    return null != R[e]
+    return null != P[e]
   }
   getUserExperimentDescriptor(e) {
     if (j) {
@@ -678,7 +678,7 @@ class eg extends f.Z {
     })
   }
   getRegisteredExperiments() {
-    return R
+    return P
   }
   getAllExperimentOverrideDescriptors() {
     return j ? E({}, k, M) : {}
@@ -690,7 +690,7 @@ class eg extends f.Z {
   getAllExperimentAssignments() {
     let e = {},
       t = {};
-    for (let n in Object.keys(R).forEach(e => {
+    for (let n in Object.keys(P).forEach(e => {
         t[G("".concat(e))] = e
       }), D) {
       let r = t[n];
@@ -732,7 +732,7 @@ class eg extends f.Z {
       EXPERIMENT_OVERRIDE_BUCKET: eh,
       GUILD_CREATE: em,
       GUILD_UPDATE: em
-    }, l.c.Early), g(this, "trackExposure", Q)
+    }, l.c.Early), g(this, "trackExposure", X)
   }
 }
 g(eg, "displayName", "ExperimentStore"), g(eg, "LATEST_SNAPSHOT_VERSION", 1);

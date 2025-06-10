@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  En: () => R,
+  En: () => P,
   dY: () => T,
-  eC: () => P,
+  eC: () => R,
   jz: () => N,
   kC: () => v,
   l3: () => A,
@@ -176,10 +176,10 @@ function C(e, t, n) {
   }
 }
 
-function P(e, t) {
+function R(e, t) {
   return e.isPrivate() ? !e.isManaged() : t.can(u.Plq.EMBED_LINKS, e)
 }
 
-function R(e) {
+function P(e) {
   return "" !== e.content || e.messageSnapshots.some(e => "" !== e.message.content || e.message.attachments.length > 0)
 }

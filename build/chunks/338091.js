@@ -1,4 +1,4 @@
-/** Chunk was on 58994 **/
+/** Chunk was on 36160 **/
 t.exports = {
   MODE_NUMBER: 1,
   MODE_ALPHA_NUM: 2,

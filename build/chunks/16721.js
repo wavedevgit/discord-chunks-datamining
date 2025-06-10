@@ -32,11 +32,11 @@ var r = n(580983),
   if (A) return A.lastIndex = I.lastIndex, t = r(h, A, T), I.lastIndex = A.lastIndex, t;
   var N = S.groups,
     C = O && I.sticky,
-    P = r(o, I),
-    R = I.source,
+    R = r(o, I),
+    P = I.source,
     w = 0,
     D = T;
-  if (C && (-1 === g(P = E(P, "y", ""), "g") && (P += "g"), D = b(T, I.lastIndex), I.lastIndex > 0 && (!I.multiline || I.multiline && "\n" !== m(T, I.lastIndex - 1)) && (R = "(?: " + R + ")", D = " " + D, w++), n = RegExp("^(?:" + R + ")", P)), v && (n = RegExp("^" + R + "$(?!\\s)", P)), y && (i = I.lastIndex), s = r(p, C ? n : I, D), C ? s ? (s.input = b(s.input, w), s[0] = b(s[0], w), s.index = I.lastIndex, I.lastIndex += s[0].length) : I.lastIndex = 0 : y && s && (I.lastIndex = I.global ? s.index + s[0].length : i), v && s && s.length > 1 && r(_, s[0], n, function() {
+  if (C && (-1 === g(R = E(R, "y", ""), "g") && (R += "g"), D = b(T, I.lastIndex), I.lastIndex > 0 && (!I.multiline || I.multiline && "\n" !== m(T, I.lastIndex - 1)) && (P = "(?: " + P + ")", D = " " + D, w++), n = RegExp("^(?:" + P + ")", R)), v && (n = RegExp("^" + P + "$(?!\\s)", R)), y && (i = I.lastIndex), s = r(p, C ? n : I, D), C ? s ? (s.input = b(s.input, w), s[0] = b(s[0], w), s.index = I.lastIndex, I.lastIndex += s[0].length) : I.lastIndex = 0 : y && s && (I.lastIndex = I.global ? s.index + s[0].length : i), v && s && s.length > 1 && r(_, s[0], n, function() {
       for (l = 1; l < arguments.length - 2; l++) void 0 === arguments[l] && (s[l] = void 0)
     }), s && N)
     for (l = 0, s.groups = d = c(null); l < N.length; l++) d[(f = N[l])[0]] = s[f[1]];

@@ -8,7 +8,7 @@ var r = n(255367),
   i = n(73800),
   a = n(120356),
   o = n.n(a),
-  s = n(386230),
+  s = n(524979),
   l = n(481060),
   c = n(686546),
   u = n(540059),
@@ -99,8 +99,8 @@ function v(e) {
     onFocus: A,
     onBlur: N,
     pulse: C,
-    sparkle: P,
-    notification: R,
+    sparkle: R,
+    notification: P,
     "aria-label": w,
     "aria-expanded": D,
     "aria-haspopup": L,
@@ -111,7 +111,7 @@ function v(e) {
     let {
       component: t
     } = e;
-    return null != R ? (0, r.jsxs)("div", {
+    return null != P ? (0, r.jsxs)("div", {
       className: _.buttonContent,
       children: [(0, r.jsx)(c.ZP, {
         className: _.iconMask,
@@ -171,7 +171,7 @@ function v(e) {
           })
         })
       }, i) : void 0
-    }), P && (0, r.jsxs)("div", {
+    }), R && (0, r.jsxs)("div", {
       className: _.sparkleContainer,
       children: [(0, r.jsx)(f.Z, {
         className: _.sparkleStar

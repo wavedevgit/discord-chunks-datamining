@@ -6,7 +6,7 @@ n.d(t, {
 });
 var r = n(255367),
   i = n(73800),
-  a = n(386230),
+  a = n(524979),
   o = n(990547),
   s = n(873546),
   l = n(186325),
@@ -118,9 +118,9 @@ function T(e) {
   });
   let N = S.activeSlide,
     C = (0, d.Z)(S.activeSlide),
-    P = null != (t = S.directionOverride) ? t : v(null != C ? T[C] : null, T[N]),
+    R = null != (t = S.directionOverride) ? t : v(null != C ? T[C] : null, T[N]),
     {
-      reducedMotion: R
+      reducedMotion: P
     } = i.useContext(l.S),
     w = i.useContext(f.Z),
     D = T[N].impressionName,
@@ -139,7 +139,7 @@ function T(e) {
     ref: x,
     width: k = 0,
     height: M = 0
-  } = (0, u.ZP)(N), j = m({}, O, S.springConfig, R.enabled ? {
+  } = (0, u.ZP)(N), j = m({}, O, S.springConfig, P.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
     width: null != (n = S.width) ? n : k,
@@ -163,7 +163,7 @@ function T(e) {
       } = t;
       n === N && null != S.onSlideReady && S.onSlideReady(n)
     }
-  }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(P), {
+  }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(R), {
     width: F,
     centered: V = !0
   } = S, Z = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), Y = s.tq ? {} : V ? {
@@ -194,7 +194,7 @@ function T(e) {
           flexDirection: "column",
           backfaceVisibility: "hidden",
           width: s.tq ? "100%" : F
-        }, Y, R.enabled ? o : m({
+        }, Y, P.enabled ? o : m({
           left: e.value.to(I("left", B)),
           right: e.value.to(I("right", B))
         }, y && o)),

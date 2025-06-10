@@ -68,7 +68,7 @@ var C = function(e) {
   return e.MFA = "MFA", e.SUCCESS = "SUCCESS", e
 }({});
 
-function P(e) {
+function R(e) {
   let t = v({
     type: "LOGOUT"
   }, e);
@@ -78,9 +78,9 @@ function P(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b.Z5c.DEFAULT_LOGGED_OUT;
-  if (P(), null == t) return;
+  if (R(), null == t) return;
   let n = (0, f.D)();
   if (null == n) return void(0, _.uL)(t, {
     source: e
@@ -336,7 +336,7 @@ let w = {
     })
   },
   logoutInternal(e) {
-    P(e)
+    R(e)
   },
   logout(e) {
     var t;
@@ -364,7 +364,7 @@ let w = {
     }), {
       rejectWithError: !1
     })).finally(() => {
-      (null == r || r === h.default.getId()) && R(e, n)
+      (null == r || r === h.default.getId()) && P(e, n)
     })
   },
   switchAccountToken(e) {
@@ -373,7 +373,7 @@ let w = {
     return T.log("Switching accounts", {
       wasLoggedIn: null != n,
       tokenHasChanged: e !== n
-    }), P({
+    }), R({
       isSwitchingAccount: !0,
       goHomeAfterSwitching: t
     }), this.loginToken(e, !0).then(() => {
@@ -389,7 +389,7 @@ let w = {
       url: b.ANM.ME,
       oldFormErrors: !0,
       rejectWithError: !0
-    }).catch(() => R(e, t))
+    }).catch(() => P(e, t))
   },
   async verify(e) {
     let t = await g.Z.post({

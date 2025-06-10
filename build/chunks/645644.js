@@ -50,7 +50,7 @@ function C(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,8 +61,8 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -242,7 +242,7 @@ class j {
       screentype_fullscreen_duration: r[l.Jx.FULLSCREEN],
       screentype_minimized_duration: r[l.Jx.MINIMIZED]
     };
-    return R(C({}, c), {
+    return P(C({}, c), {
       screentype_global_supported_duration: c.screentype_windowed_duration + c.screentype_maximized_duration + c.screentype_borderless_fullscreen_duration,
       screentype_global_unsupported_duration: c.screentype_fullscreen_duration,
       screentype_initial: l.Jx[this.game.fullscreenType],
@@ -314,7 +314,7 @@ class G {
       original_method: e
     }, a);
     let o = n.any_other_method;
-    return C(R(C({}, n), {
+    return C(P(C({}, n), {
       any_other_method: e !== o ? e : o
     }), a)
   }
@@ -385,7 +385,7 @@ class G {
       v = null != O.any_other_method ? s.gl[O.any_other_method] : null,
       I = b.enabledLegacy || b.enabledOOP;
     return {
-      usage: R(C(R(C({
+      usage: P(C(P(C({
         event_uuid: this.uuid,
         overlay_usage_stats_version: w
       }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), m), {
@@ -540,7 +540,7 @@ function q(e) {
   null != t && t !== O.DEV_PID && (L.verbose("AUDIO_TOGGLE_SELF_MUTE", e), G.handleMuteToggled())
 }
 
-function Q(e) {
+function X(e) {
   L.verbose("WINDOW_FOCUS", e);
   let t = (0, v.UU)();
   if (e.windowId !== t) return void L.verbose("WINDOW_FOCUS: Not main window", {
@@ -550,7 +550,7 @@ function Q(e) {
   G.desktopSetFocused(e.focused)
 }
 
-function X(e) {
+function Q(e) {
   if (e.pid === O.DEV_PID) return;
   let t = G.getByPid(e.pid);
   if (null == t) return void L.error("OVERLAY_SUCCESSFULLY_SHOWN: Game not found", e, G.debug);
@@ -625,10 +625,10 @@ class et extends c.Z {
       SOUNDBOARD_SET_OVERLAY_ENABLED: Y,
       MESSAGE_ACKED: K,
       MESSAGE_CREATE: z,
-      WINDOW_FOCUS: Q,
+      WINDOW_FOCUS: X,
       RTC_CONNECTION_STATE: $.handleRTCConnectionState,
       AUDIO_TOGGLE_SELF_MUTE: q,
-      OVERLAY_SUCCESSFULLY_SHOWN: X,
+      OVERLAY_SUCCESSFULLY_SHOWN: Q,
       OVERLAY_UPDATE_OVERLAY_METHOD: J
     })
   }

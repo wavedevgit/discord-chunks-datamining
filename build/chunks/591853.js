@@ -35,8 +35,8 @@ var c = n(442837),
   A = n(810568),
   N = n(168524),
   C = n(102172),
-  P = n(871118),
-  R = n(565138),
+  R = n(871118),
+  P = n(565138),
   w = n(66999),
   D = n(359110),
   L = n(12168),
@@ -56,8 +56,8 @@ var c = n(442837),
   K = n(379357),
   z = n(26033),
   q = n(91907),
-  Q = n(358696),
-  X = n(656709),
+  X = n(358696),
+  Q = n(656709),
   J = n(593294),
   $ = n(192918),
   ee = n(22211),
@@ -186,8 +186,8 @@ function eE(e) {
     entry: o,
     onVoiceChannelPreview: h
   }), {
-    embeddedActivity: P
-  } = (0, J.Z)(o), R = eT(P), w = null != C && 0 === s.length ? [C] : s, D = w.length > 0, L = w.length >= 2, [x, k] = i.useState(!D), j = W.ZP.getName(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, n), G = null != t && m ? es.intl.formatToPlainString(es.t["8lzR/f"], {
+    embeddedActivity: R
+  } = (0, J.Z)(o), P = eT(R), w = null != C && 0 === s.length ? [C] : s, D = w.length > 0, L = w.length >= 2, [x, k] = i.useState(!D), j = W.ZP.getName(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, n), G = null != t && m ? es.intl.formatToPlainString(es.t["8lzR/f"], {
     channel: "#".concat(t.name)
   }) : es.intl.formatToPlainString(es.t["4c+CAw"], {
     channel: "@".concat(j)
@@ -244,13 +244,13 @@ function eE(e) {
       interactionType: i,
       requiresChannelReadiness: a
     } = e;
-    null == E || E.focus(), await (0, X.p)({
+    null == E || E.focus(), await (0, Q.p)({
       channel: n,
       content: t,
       entry: o,
       whenReady: a
     }), null == r || r(i, n)
-  }, Y = null != p ? p : null != N ? N : null != R ? R : void 0;
+  }, Y = null != p ? p : null != N ? N : null != P ? P : void 0;
   return i.useEffect(() => {
     x && (null == E || E.focus())
   }, [E, m, x]), (0, r.jsxs)("div", {
@@ -500,12 +500,12 @@ function ev(e) {
         className: el.popoutHeroInner,
         children: [(0, r.jsx)("div", {
           className: el.popoutThumbnailContainer,
-          children: (0, r.jsx)(Q.E, {
+          children: (0, r.jsx)(X.E, {
             image: O,
             smallImage: v,
             aspectRatio: p ? "none" : void 0,
             onClick: null != l ? l : I,
-            size: Q.J.SIZE_72
+            size: X.J.SIZE_72
           })
         }), (0, r.jsxs)("div", {
           className: el.popoutHeroBody,
@@ -569,13 +569,13 @@ function eI(e) {
     I = O ? v : void 0,
     {
       activity: S,
-      activityApplication: R,
+      activityApplication: P,
       fallbackApplication: w
     } = (0, J.Z)(y),
     {
       largeImage: D,
       smallImage: L
-    } = (0, K.YC)(S, null != R ? R : w),
+    } = (0, K.YC)(S, null != P ? P : w),
     {
       largeImage: x
     } = (0, K.rv)({
@@ -594,7 +594,7 @@ function eI(e) {
         } : void 0,
         children: (0, r.jsxs)("div", {
           className: el.streamingPopoutPreviewContainer,
-          children: [(0, r.jsx)(P.Z, {
+          children: [(0, r.jsx)(R.Z, {
             className: el.streamingPopoutImg,
             stream: s
           }), b && (0, r.jsx)("div", {
@@ -610,11 +610,11 @@ function eI(e) {
         className: el.streamingPopoutHeader,
         children: [null != D && (0, r.jsx)("div", {
           className: el.popoutThumbnailContainer,
-          children: (0, r.jsx)(Q.E, {
+          children: (0, r.jsx)(X.E, {
             image: D,
             smallImage: L,
             onClick: null != l ? l : I,
-            size: Q.J.SIZE_72
+            size: X.J.SIZE_72
           })
         }), (0, r.jsxs)("div", {
           className: el.streamingPopoutHeaderText,
@@ -661,8 +661,8 @@ function eS(e) {
 }
 
 function eT(e) {
-  let t = (0, c.e7)([j.Z], () => j.Z.getGuild((0, E.jS)(null == e ? void 0 : e.location))),
-    n = (0, c.e7)([M.Z], () => M.Z.getChannel((0, E.pY)(null == e ? void 0 : e.location))),
+  let t = (0, c.e7)([j.Z], () => j.Z.getGuild((0, E.j)(null == e ? void 0 : e.location))),
+    n = (0, c.e7)([M.Z], () => M.Z.getChannel((0, E.p)(null == e ? void 0 : e.location))),
     i = (0, c.Wu)([F.default], () => {
       var t, n;
       return null != (n = null == e || null == (t = e.participants) ? void 0 : t.map(e => F.default.getUser(e.userId))) ? n : []
@@ -674,9 +674,9 @@ function eT(e) {
         "aria-label": es.intl.string(es.t["W/A4Qk"]),
         onClick: () => (0, D.Kh)(n.id),
         className: el.voiceChannelPopoutReactorChannel,
-        children: [(0, r.jsx)(R.Z, {
+        children: [(0, r.jsx)(P.Z, {
           guild: t,
-          size: R.Z.Sizes.SMOL,
+          size: P.Z.Sizes.SMOL,
           className: el.voiceChannelGuildIcon,
           active: !0
         }), (0, r.jsx)(f.Fbu, {
@@ -782,9 +782,9 @@ function eA(e) {
             "aria-label": es.intl.string(es.t.WIVYqK),
             onClick: E,
             className: el.voiceChannelPopoutReactorChannel,
-            children: [(0, r.jsx)(R.Z, {
+            children: [(0, r.jsx)(P.Z, {
               guild: u,
-              size: R.Z.Sizes.SMOL,
+              size: P.Z.Sizes.SMOL,
               className: el.voiceChannelGuildIcon,
               active: !0
             }), (0, r.jsx)(f.Fbu, {

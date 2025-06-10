@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => Q
+  Z: () => X
 }), n(388685), n(539854), n(642613);
 var r, i = n(392711),
   a = n.n(i),
@@ -55,9 +55,9 @@ let T = S(),
   A = [],
   N = new Set,
   C = {},
-  P = null;
+  R = null;
 
-function R(e, t) {
+function P(e, t) {
   let n = new Date,
     r = new Date(e.getTime());
   r.setFullYear(t);
@@ -68,11 +68,11 @@ function R(e, t) {
 }
 
 function w(e) {
-  return !R(e, e.getFullYear()) && R(e, new Date().getFullYear())
+  return !P(e, e.getFullYear()) && P(e, new Date().getFullYear())
 }
 
 function D() {
-  if (null != P) return void z(P);
+  if (null != R) return void z(R);
   if (k(), !f.Z.hasConsented(m.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
@@ -172,7 +172,7 @@ function K(e) {
     total: t
   } = e;
   if (null == t) {
-    P = null, D();
+    R = null, D();
     return
   }
   z(t)
@@ -188,7 +188,7 @@ function z(e) {
     autoTrackExposure: !1
   });
   if (!t) return;
-  P = e;
+  R = e;
   let n = _.Z.getFriendIDs().filter(e => !_.Z.isIgnored(e));
   a().sampleSize(n, e).forEach(e => {
     let t = _.Z.getSince(e);
@@ -235,7 +235,7 @@ class q extends(r = l.ZP.PersistedStore) {
     return null != T.messageGiftIntentLastShownMap[e]
   }
   getDevToolTotalFriendAnniversaries() {
-    return P
+    return R
   }
 }
 g(q, "displayName", "PremiumGiftingIntentStore"), g(q, "persistKey", "PremiumGiftingIntentStore"), g(q, "migrations", [e => {
@@ -246,7 +246,7 @@ g(q, "displayName", "PremiumGiftingIntentStore"), g(q, "persistKey", "PremiumGif
     messageGiftIntentLastShownMap: {}
   }
 }]);
-let Q = new q(c.Z, {
+let X = new q(c.Z, {
   CONNECTION_OPEN: M,
   LOGOUT: j,
   MESSAGE_GIFT_INTENT_SHOWN: G,

@@ -60,7 +60,7 @@ function C(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,8 +71,8 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -152,7 +152,7 @@ function x(e) {
       "aria-label": v.ZP.getUserTag(l, {
         decoration: "never"
       }),
-      children: e => (0, r.jsx)(a.P3F, R(C({
+      children: e => (0, r.jsx)(a.P3F, P(C({
         tag: "span"
       }, e), {
         children: d

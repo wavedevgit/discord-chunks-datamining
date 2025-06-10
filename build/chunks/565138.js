@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 });
 var r, i = n(255367),
   a = n(73800),
@@ -152,9 +152,9 @@ class N extends a.PureComponent {
         iconSrc: T,
         "aria-hidden": N,
         lossless: C,
-        iconSize: P
+        iconSize: R
       } = n,
-      R = v(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
+      P = v(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
       w = A[c],
       D = null != h ? d.P3F : "div";
     return (0, i.jsxs)(D, O(b({
@@ -169,7 +169,7 @@ class N extends a.PureComponent {
       }, u) : u,
       onClick: null != E || null == h ? void 0 : h,
       tabIndex: S
-    }, R), {
+    }, P), {
       children: [this.renderAcronym(), this.renderBadge()]
     }))
   }
@@ -224,12 +224,12 @@ let C = c.ZP.connectStores([p.Z], e => {
     })
   }
 })((0, f.N)(e => (0, i.jsx)(N, b({}, e))));
-class P extends(r = a.PureComponent) {
+class R extends(r = a.PureComponent) {
   render() {
     return (0, i.jsx)(C, b({}, this.props))
   }
 }
-E(P, "Sizes", S), E(P, "defaultProps", {
+E(R, "Sizes", S), E(R, "defaultProps", {
   size: S.LARGE,
   textScale: 1,
   showBadge: !1,
@@ -239,4 +239,4 @@ E(P, "Sizes", S), E(P, "defaultProps", {
   badgeStrokeColor: u.Z.unsafe_rawColors.WHITE_500.css,
   animate: !1
 });
-let R = P
+let P = R
