@@ -62,10 +62,10 @@ function x() {
   let {
     profileEffects: e,
     upsertConfig: t
-  } = (0, g.n6)(), [n, s] = r.useState(), x = r.useRef(null), E = (0, o.Wu)([m.Z], () => m.Z.profileEffects), [C, j] = r.useState(""), O = r.useMemo(() => "" === C ? E : E.filter(e => {
-    let t = C.toLowerCase();
+  } = (0, g.n6)(), [n, s] = r.useState(), x = r.useRef(null), E = (0, o.Wu)([m.Z], () => m.Z.profileEffects), [j, C] = r.useState(""), O = r.useMemo(() => "" === j ? E : E.filter(e => {
+    let t = j.toLowerCase();
     return e.config.title.toLowerCase().includes(t) || e.config.description.toLowerCase().includes(t)
-  }), [C, E]), S = r.useCallback((e, n) => {
+  }), [j, E]), S = r.useCallback((e, n) => {
     if (null == n || !e.type.startsWith("text/")) return (0, u.Eo)(f);
     let [i, r] = n.split(",");
     if (!i.includes("text/plain")) return (0, u.Eo)(f);
@@ -121,9 +121,9 @@ function x() {
           variant: "heading-xl/bold",
           children: "All Effects"
         }), (0, i.jsx)("input", {
-          value: C,
+          value: j,
           onChange: e => {
-            j(e.target.value)
+            C(e.target.value)
           }
         }), (0, i.jsx)("div", {
           className: h.pfxGrid,

@@ -3,7 +3,7 @@ n.d(t, {
   M: () => O,
   M4: () => v,
   WS: () => T,
-  t4: () => C
+  t4: () => j
 }), n(388685), n(953529);
 var i = n(255367),
   r = n(73800),
@@ -23,8 +23,8 @@ var i = n(255367),
   _ = n(973792),
   x = n(447489),
   E = n(484885);
-let C = () => (0, g.Lk)(document.body.style.getPropertyValue("--custom-app-panels-height"), 56) + 8,
-  j = {
+let j = () => (0, g.Lk)(document.body.style.getPropertyValue("--custom-app-panels-height"), 56) + 8,
+  C = {
     discover: l.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK,
     shop: l.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK
   },
@@ -37,9 +37,9 @@ let C = () => (0, g.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       enabled: a
     } = (0, p.WX)({
       location: "virtual_currency_onboarding_coachmark"
-    }), o = j[t], c = (0, u.wE)(o), d = a && s && n && !c, m = r.useCallback(function() {
+    }), o = C[t], c = (0, u.wE)(o), d = a && s && n && !c, m = r.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "CLOSE";
-      c || (0, u.EW)(j[t], {
+      c || (0, u.EW)(C[t], {
         forceTrack: !0,
         dismissAction: "CTA_CLICK" === e ? b.L.TAKE_ACTION : b.L.USER_DISMISS,
         groupName: b.R.VIRTUAL_CURRENCY_ONBOARDING
@@ -128,7 +128,7 @@ function T(e) {
     onGetTargetElementDimensions: m,
     spacing: g,
     position: p = "right"
-  } = e, [f, b] = r.useState("bottom" === d), [_, x] = r.useState(!0), [E, C] = r.useState(String(Date.now())), j = (0, o.Z)(), O = r.useCallback(e => {
+  } = e, [f, b] = r.useState("bottom" === d), [_, x] = r.useState(!0), [E, j] = r.useState(String(Date.now())), C = (0, o.Z)(), O = r.useCallback(e => {
     let n = t(e);
     n !== _ && x(n)
   }, [_, t]), S = c.current, v = r.useCallback(() => {
@@ -148,10 +148,10 @@ function T(e) {
         height: t,
         width: n
       }), null != i) {
-      if (O(i), r && C(String(Date.now())), u) return;
+      if (O(i), r && j(String(Date.now())), u) return;
       let e = i.top < window.innerHeight / 2;
       if (e === f) return;
-      b(e), C(String(Date.now()))
+      b(e), j(String(Date.now()))
     }
   }, [f, O, m, u]);
   (0, h.fu)({
@@ -161,7 +161,7 @@ function T(e) {
     targetElementRef: c
   });
   let I = r.useMemo(() => u ? null != d ? d : "bottom" : f ? "top" : "bottom", [u, d, f]),
-    N = _ && !j,
+    N = _ && !C,
     y = r.Children.map(s, e => r.cloneElement(e, {
       align: I
     }));

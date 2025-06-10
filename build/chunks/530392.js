@@ -20,7 +20,7 @@ function u(e) {
     var e;
     (null == p ? void 0 : p.current) != null && null != t && u((null == (e = p.current) ? void 0 : e.getDistanceFromTop()) > 12)
   }, 200);
-  return r.useLayoutEffect(() => {
+  return (r.useLayoutEffect(() => {
     var e, t;
     let n = new ResizeObserver(() => {
         var e, t;
@@ -31,7 +31,7 @@ function u(e) {
       }),
       i = null != (t = null == p || null == (e = p.current) ? void 0 : e.getScrollerNode()) ? t : null;
     return null != i && n.observe(i), (null == h ? void 0 : h.current) != null && n.observe(h.current), () => n.disconnect()
-  }, []), (0, i.jsxs)(o.y5, {
+  }, []), null == n && null == t) ? null : (0, i.jsxs)(o.y5, {
     children: [(0, i.jsx)("div", {
       className: l()(d.contentSpacerTop, {
         [d.contentSpacerTopBorder]: m && null == t
@@ -64,7 +64,7 @@ function m(e) {
   let {
     children: t
   } = e;
-  return (0, i.jsx)("footer", {
+  return null == t ? null : (0, i.jsx)("footer", {
     className: l()(d.footer, d.section),
     children: t
   })

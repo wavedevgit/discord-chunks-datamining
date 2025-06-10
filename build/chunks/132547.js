@@ -1,6 +1,6 @@
 /** Chunk was on 22472 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(388685), n(65234), n(111804), n(490233), n(97749), n(35282);
 var i = n(255367),
   r = n(73800),
@@ -20,12 +20,12 @@ var i = n(255367),
   _ = n(981631),
   x = n(388032),
   E = n(614729),
-  C = n(865215);
-let j = () => {
+  j = n(865215);
+let C = () => {
   (0, d.z)(c.X);
   let e = r.useRef(null),
     t = r.useRef(null),
-    [n, j] = r.useState(!1),
+    [n, C] = r.useState(!1),
     {
       analyticsLocations: O
     } = (0, o.ZP)(a.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
@@ -53,7 +53,7 @@ let j = () => {
             noBackground: !0,
             leftAlignHeaders: !0,
             showAllPerksButton: (0, i.jsx)(b.Z, {
-              setIsAllPerksVisible: j,
+              setIsAllPerksVisible: C,
               previousComponent: h.MQ.HOME
             })
           }), (0, i.jsx)(g.Z, {
@@ -77,7 +77,7 @@ let j = () => {
               className: E.bottomOfPageVisibilitySensor
             })
           }), (0, i.jsx)("img", {
-            src: C,
+            src: j,
             className: E.bottomIllustration,
             width: 112,
             height: 85,
@@ -87,7 +87,7 @@ let j = () => {
       })
     }), (0, i.jsx)(f.Z, {
       isAllPerksVisible: n,
-      setIsAllPerksVisible: j,
+      setIsAllPerksVisible: C,
       previousComponent: h.MQ.HOME
     })]
   })

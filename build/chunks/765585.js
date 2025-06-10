@@ -24,8 +24,8 @@ let h = r.forwardRef(function(e, t) {
     tryItText: _,
     dismissText: x,
     onTryFeature: E,
-    onClose: C,
-    className: j,
+    onClose: j,
+    className: C,
     inlineArt: O = !1,
     isPremiumFeature: S = !1,
     shouldUseHorizontalButtons: v = !1,
@@ -62,7 +62,7 @@ let h = r.forwardRef(function(e, t) {
   }, [U, F, G, R]), r.useEffect(() => {
     (0, d.kk)(I)
   }, [I]), (0, i.jsx)("div", {
-    className: j,
+    className: C,
     ref: t,
     children: (0, i.jsxs)("div", {
       className: l()(p.content, b, {
@@ -114,7 +114,7 @@ let h = r.forwardRef(function(e, t) {
             className: p.button,
             size: M,
             onClick: e => {
-              null == C || C(e), E(e), H(m.L.PRIMARY)
+              null == j || j(e), E(e), H(m.L.PRIMARY)
             },
             color: null != B ? B : S || P ? a.zxk.Colors.BRAND_INVERTED : a.zxk.Colors.WHITE,
             children: null != _ ? _ : g.intl.string(g.t.IHf1RE)
@@ -122,7 +122,7 @@ let h = r.forwardRef(function(e, t) {
             className: p.button,
             size: M,
             onClick: e => {
-              null == C || C(e), H(m.L.DISMISS)
+              null == j || j(e), H(m.L.DISMISS)
             },
             color: S || P ? a.zxk.Colors.WHITE : a.zxk.Colors.BRAND,
             look: S || P ? a.zxk.Looks.LINK : a.zxk.Looks.FILLED,
@@ -132,7 +132,7 @@ let h = r.forwardRef(function(e, t) {
           className: p.button,
           size: a.zxk.Sizes.MAX,
           onClick: e => {
-            null == C || C(e), H(m.L.PRIMARY)
+            null == j || j(e), H(m.L.PRIMARY)
           },
           color: a.zxk.Colors.WHITE,
           children: g.intl.string(g.t.HU2IR0)

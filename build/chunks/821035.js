@@ -26,8 +26,8 @@ function E(e) {
   let {
     isNested: n = !1
   } = e, E = null == (t = (0, m.Z)()) || t, {
-    explicitContentGuilds: C,
-    explicitContentFriendDm: j,
+    explicitContentGuilds: j,
+    explicitContentFriendDm: C,
     explicitContentNonFriendDm: O
   } = (0, d.B)(), S = e => {
     let t = Object.values(e);
@@ -58,7 +58,7 @@ function E(e) {
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
           options: v,
-          value: j,
+          value: C,
           onChange: e => S({
             explicitContentFriendDm: e
           }),
@@ -103,7 +103,7 @@ function E(e) {
         }), (0, i.jsx)(s.q4e, {
           look: s.qQH.CUSTOM,
           options: T,
-          value: C,
+          value: j,
           onChange: e => S({
             explicitContentGuilds: e
           }),
@@ -135,7 +135,7 @@ function E(e) {
         titleClassName: x.selectItemTitle,
         children: (0, i.jsx)(s.q4e, {
           options: v,
-          value: j,
+          value: C,
           onChange: e => S({
             explicitContentFriendDm: e
           })
@@ -157,7 +157,7 @@ function E(e) {
         titleClassName: x.selectItemTitle,
         children: (0, i.jsx)(s.q4e, {
           options: T,
-          value: C,
+          value: j,
           onChange: e => S({
             explicitContentGuilds: e
           }),

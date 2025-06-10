@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(331642),
   x = n(63063),
   E = n(581883),
-  C = n(738486),
-  j = n(918257),
+  j = n(738486),
+  C = n(918257),
   O = n(970813),
   S = n(726985),
   v = n(981631),
@@ -47,7 +47,7 @@ function P(e) {
   } = e, n = (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(g.F, {
       setting: S.s6.VOICE_AND_VIDEO_SOUNDBOARD,
-      children: [(0, i.jsx)(j.Z, {
+      children: [(0, i.jsx)(C.Z, {
         refreshStyles: t
       }), (0, i.jsx)(O.Z, {
         refreshStyles: t
@@ -75,7 +75,7 @@ function R(e) {
     refreshStyles: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(), [s, c] = r.useState(T.hY), g = (0, b.tT)(s), E = A(g), j = (null == g ? void 0 : g.type) === b.zx.GLOBAL, O = (0, a.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == E;
+  } = (0, d.ZP)(), [s, c] = r.useState(T.hY), g = (0, b.tT)(s), E = A(g), C = (null == g ? void 0 : g.type) === b.zx.GLOBAL, O = (0, a.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == E;
   r.useEffect(() => {
     O && (0, f.tt)({
       location: n
@@ -127,7 +127,7 @@ function R(e) {
         forcedDivider: !t,
         children: [(0, i.jsx)(_.Z, {
           sound: E,
-          isGlobal: j,
+          isGlobal: C,
           onSelect: e => {
             null == e ? (0, f.aC)(s, n) : (0, f.SZ)(s, e, n)
           }
@@ -138,7 +138,7 @@ function R(e) {
         })]
       })]
     });
-  return t ? (0, i.jsx)(C.Z, {
+  return t ? (0, i.jsx)(j.Z, {
     children: P
   }) : P
 }

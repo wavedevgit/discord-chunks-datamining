@@ -38,15 +38,15 @@ function b() {
       value: r.Q4.BLOCK,
       label: h.intl.string(h.t["D/157e"])
     }],
-    C = [{
+    j = [{
       value: r.Q4.BLUR,
       label: h.intl.string(h.t.S49UaW)
     }],
-    j = {
+    C = {
       value: r.Q4.SHOW,
       label: h.intl.string(h.t["5k5OFh"])
     };
-  return t && (E.unshift(j), C.unshift(j)), (0, i.jsxs)(g.U, {
+  return t && (E.unshift(C), j.unshift(C)), (0, i.jsxs)(g.U, {
     setting: p.s6.GORE_MEDIA_REDACTION,
     children: [(0, i.jsxs)("div", {
       className: f.selectItemRow,
@@ -99,7 +99,7 @@ function b() {
         children: h.intl.string(h.t["FP+a4+"])
       }), (0, i.jsx)(s.q4e, {
         look: s.qQH.CUSTOM,
-        options: C,
+        options: j,
         value: n,
         onChange: e => x({
           goreContentGuilds: e

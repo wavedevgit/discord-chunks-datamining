@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(22189),
   x = n(391110),
   E = n(75077),
-  C = n(981631),
-  j = n(388032),
+  j = n(981631),
+  C = n(388032),
   O = n(614729),
   S = n(865215);
 let v = e => {
@@ -47,7 +47,7 @@ let v = e => {
       fractionalState: k
     } = (0, g.Z)(),
     L = (0, h.W)();
-  return w ? (t = j.intl.string(j.t["+vt7w8"]), n = j.intl.string(j.t.LgHbnJ)) : (t = j.intl.string(j.t.LgHbnJ), n = j.intl.string(j.t["+vt7w8"])), (0, i.jsx)(c.yWw, {
+  return w ? (t = C.intl.string(C.t["+vt7w8"]), n = C.intl.string(C.t.LgHbnJ)) : (t = C.intl.string(C.t.LgHbnJ), n = C.intl.string(C.t["+vt7w8"])), (0, i.jsx)(c.yWw, {
     className: l()(O.allPerksScroller, {
       [O.open]: s,
       [O.openCloseReduceMotion]: Z
@@ -60,7 +60,7 @@ let v = e => {
         children: [(0, i.jsx)(f.Z, {
           className: O.heroHeading,
           onBackClick: () => {
-            v(!1), p.default.track(C.rMx.NITRO_HOME_NAVIGATION, {
+            v(!1), p.default.track(j.rMx.NITRO_HOME_NAVIGATION, {
               current_component: x.MQ.SEE_ALL,
               next_component: T,
               interaction_component: "Back Button"
@@ -104,7 +104,7 @@ let v = e => {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
             className: O.heading,
-            children: j.intl.string(j.t.LTaxu7)
+            children: C.intl.string(C.t.LTaxu7)
           }), (0, i.jsx)(b.Z, {
             className: O.cardCarousel,
             cards: (0, E.ZM)({
@@ -122,7 +122,7 @@ let v = e => {
         }), (0, i.jsx)(o.$, {
           innerRef: y,
           onChange: e => {
-            e && !R && (p.default.track(C.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+            e && !R && (p.default.track(j.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
               location_stack: P
             }), D(!0))
           },
@@ -135,7 +135,7 @@ let v = e => {
           className: O.bottomIllustration,
           width: 112,
           height: 85,
-          alt: j.intl.string(j.t.X4IxWF)
+          alt: C.intl.string(C.t.X4IxWF)
         })]
       })
     })

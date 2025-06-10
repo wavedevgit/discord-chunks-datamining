@@ -1,7 +1,7 @@
 /** Chunk was on 22472 **/
 n.d(t, {
   Z: () => S,
-  u: () => j
+  u: () => C
 }), n(388685), n(539854), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(290780), n(642613);
 var i = n(255367),
   r = n(73800),
@@ -22,7 +22,7 @@ var i = n(255367),
   x = n(533936),
   E = n(20493);
 
-function C(e) {
+function j(e) {
   let {
     content: t
   } = e, n = (0, a.e7)([g.Z], () => {
@@ -48,7 +48,7 @@ function C(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     className: t,
     contents: n,
@@ -68,7 +68,7 @@ function j(e) {
       variant: "text-md/normal",
       className: E.marginTop4,
       children: "".concat(r.toLowerCase(), " (").concat(o.z[r], ")")
-    }), (0, b.qh)(l) && (0, i.jsx)(C, {
+    }), (0, b.qh)(l) && (0, i.jsx)(j, {
       content: l
     })]
   })
@@ -81,7 +81,7 @@ function O(e) {
     handleChange: r
   } = e;
   return (0, i.jsx)(i.Fragment, {
-    children: t.filter(e => isNaN(Number(e))).map(e => (0, i.jsx)(j, {
+    children: t.filter(e => isNaN(Number(e))).map(e => (0, i.jsx)(C, {
       contents: n,
       content: e,
       onChange: r
@@ -101,8 +101,8 @@ function S() {
       dailyCapOverridden: h.Z.dailyCapOverridden,
       newUserMinAgeRequiredOverridden: h.Z.newUserMinAgeRequiredOverridden
     })),
-    [_, C] = r.useState(""),
-    j = null != (e = (0, a.e7)([g.Z], () => {
+    [_, j] = r.useState(""),
+    C = null != (e = (0, a.e7)([g.Z], () => {
       var e;
       return null == (e = g.Z.settings.userContent) ? void 0 : e.dismissedContents
     })) ? e : new Uint8Array,
@@ -160,8 +160,8 @@ function S() {
         className: E.marginBottom20,
         size: d.E1j.Sizes.LARGE,
         query: _,
-        onChange: C,
-        onClear: () => C("")
+        onChange: j,
+        onClear: () => j("")
       }), (0, i.jsxs)(d.xJW, {
         className: x.buttonsContainer,
         children: [(0, i.jsx)(d.zxk, {
@@ -180,7 +180,7 @@ function S() {
           })
         }), (0, i.jsx)(O, {
           items: I,
-          dismissedContents: j,
+          dismissedContents: C,
           handleChange: T
         })]
       }) : null, N.length > 0 ? (0, i.jsxs)(i.Fragment, {
@@ -191,7 +191,7 @@ function S() {
           })
         }), (0, i.jsx)(O, {
           items: N,
-          dismissedContents: j,
+          dismissedContents: C,
           handleChange: T
         })]
       }) : null, (0, i.jsx)(u.Z, {
@@ -201,7 +201,7 @@ function S() {
         })
       }), (0, i.jsx)(O, {
         items: y,
-        dismissedContents: j,
+        dismissedContents: C,
         handleChange: T
       })]
     })]

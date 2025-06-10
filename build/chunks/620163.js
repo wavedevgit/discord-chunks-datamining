@@ -21,8 +21,8 @@ var r = n(990547),
   _ = n(163379),
   x = n(498646),
   E = n(489968),
-  C = n(803038),
-  j = n(703288),
+  j = n(803038),
+  C = n(703288),
   O = n(574755),
   S = n(994714),
   v = n(377171),
@@ -75,8 +75,8 @@ var r = n(990547),
   e_ = n(177508),
   ex = n(956699),
   eE = n(54942),
-  eC = n(293389),
-  ej = n(88624),
+  ej = n(293389),
+  eC = n(88624),
   eO = n(387747),
   eS = n(389650),
   ev = n(649157),
@@ -110,7 +110,7 @@ var r = n(990547),
   e$ = n(539452);
 let e0 = () => {
     let e = [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BADGE];
-    return C.M.getCurrentConfig({
+    return j.M.getCurrentConfig({
       location: "getAppearanceDCs"
     }).enabled && e.push(s.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE), e
   },
@@ -142,7 +142,7 @@ let e0 = () => {
   e2 = e => {
     let {
       unseenGiftCount: t,
-      showPrepaidPaymentPastDueWarning: C,
+      showPrepaidPaymentPastDueWarning: j,
       impressionSource: N,
       numOfPendingFamilyRequests: D,
       isOverlaySupported: Z,
@@ -610,7 +610,7 @@ let e0 = () => {
         searchableTitles: [eX.intl.string(eX.t.z2jK6e)],
         label: eX.intl.string(eX.t.z2jK6e),
         ariaLabel: eX.intl.string(eX.t.z2jK6e),
-        icon: F ? (0, i.jsx)(j.Z, {}) : void 0,
+        icon: F ? (0, i.jsx)(C.Z, {}) : void 0,
         element: O.Z,
         predicate: () => !e2,
         url: eW.Z5c.SETTINGS("clips")
@@ -658,7 +658,7 @@ let e0 = () => {
         searchableTitles: [eX.intl.string(eX.t.trSpHR)],
         label: eX.intl.string(eX.t.trSpHR),
         element: L.Z,
-        icon: C ? (0, i.jsx)(a.P4T, {
+        icon: j ? (0, i.jsx)(a.P4T, {
           size: "xs",
           color: l.Z.unsafe_rawColors.YELLOW_300.css
         }) : null
@@ -1601,7 +1601,7 @@ let e0 = () => {
         section: eW.oAB.REGISTERED_GAMES,
         searchableTitles: [eX.intl.string(eX.t.AVDyEh)],
         label: eX.intl.string(eX.t.AVDyEh),
-        element: eC.Z,
+        element: ej.Z,
         predicate: () => !e2 && (0, eB.Jw)()
       },
       [ez.s6.OVERLAY]: {
@@ -1637,7 +1637,7 @@ let e0 = () => {
         section: eW.oAB.HYPESQUAD_ONLINE,
         searchableTitles: [eX.intl.string(eX.t["k0R+4e"])],
         label: eX.intl.string(eX.t["k0R+4e"]),
-        element: ej.Z,
+        element: eC.Z,
         predicate: () => !to
       },
       [ez.s6.TOWNHALL]: {

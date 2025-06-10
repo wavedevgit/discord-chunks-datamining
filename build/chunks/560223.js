@@ -50,8 +50,8 @@ let b = e => {
       leftAlignHeaders: _ = !1,
       showAllPerksButton: x,
       headerClassname: E,
-      isFullScreen: C = !0
-    } = e, j = r.useRef(null), O = n === g.gM.WHATS_NEW, S = (0, u.x)();
+      isFullScreen: j = !0
+    } = e, C = r.useRef(null), O = n === g.gM.WHATS_NEW, S = (0, u.x)();
     r.useEffect(() => {
       O && S()
     }, [S, O]);
@@ -68,7 +68,7 @@ let b = e => {
       P = (0, p.ZM)({
         perksCards: T,
         variant: n,
-        isFullScreen: C,
+        isFullScreen: j,
         isPremiumSubscriber: I,
         fractionalState: N,
         isInReverseTrial: y,
@@ -76,7 +76,7 @@ let b = e => {
       }),
       R = P.some(e => null != e.pillText);
     return (0, i.jsxs)("div", {
-      ref: j,
+      ref: C,
       className: l()(f.section, {
         [f.centerAlignSection]: !_,
         [f.leftAlignSection]: _
@@ -103,8 +103,8 @@ let b = e => {
         children: x
       }), (0, i.jsx)("div", {
         className: l()({
-          [f.cardContainer]: C,
-          [f.cardContainerNarrowWidth]: !C
+          [f.cardContainer]: j,
+          [f.cardContainerNarrowWidth]: !j
         }),
         children: P.map((e, t) => {
           var n, r;

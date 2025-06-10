@@ -26,8 +26,8 @@ function x(e) {
     className: s,
     sectionTitle: x,
     forcedDivider: E = !1,
-    withTutorial: C = !1,
-    showBorder: j = !1,
+    withTutorial: j = !1,
+    showBorder: C = !1,
     isTryItOutFlow: O = !1,
     initialSelectedEffectId: S
   } = e, v = (0, m.Kg)(t, n), T = u.ZP.canUsePremiumProfileCustomization(t), {
@@ -47,13 +47,13 @@ function x(e) {
     })
   }, [T, I]);
   let P = null != n,
-    R = C ? a.gtL : a.zxk;
+    R = j ? a.gtL : a.zxk;
   return (0, i.jsx)(g.Z, {
     forcedDivider: E,
     borderType: p.Y.PREMIUM,
     hasBackground: !0,
     title: x,
-    showBorder: j,
+    showBorder: C,
     errors: y,
     className: s,
     children: (0, i.jsxs)("div", {
@@ -62,7 +62,7 @@ function x(e) {
         size: a.zxk.Sizes.SMALL,
         onClick: A,
         className: l()({
-          [_.buttonHighlighted]: C
+          [_.buttonHighlighted]: j
         }),
         children: b.intl.string(b.t["/dRfCQ"])
       }), (O || void 0 !== N ? null != N : null != v) && (0, i.jsx)(a.zxk, {

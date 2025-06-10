@@ -25,8 +25,8 @@ let _ = e => {
     descriptionCta: _,
     previewImage: x,
     videoUrl: E,
-    shouldLoadVideo: C,
-    index: j,
+    shouldLoadVideo: j,
+    index: C,
     size: O,
     customVideoStyle: S,
     isReducedMotion: v,
@@ -117,7 +117,7 @@ let _ = e => {
     }),
     children: (0, i.jsx)(u.Z, {
       playsInline: !0,
-      preload: C ? "auto" : "none",
+      preload: j ? "auto" : "none",
       muted: !0,
       poster: x,
       loop: !0,
@@ -144,7 +144,7 @@ let _ = e => {
     onFocus: k,
     onBlur: L,
     onMouseLeave: L,
-    children: j % 2 != 0 ? (0, i.jsxs)(i.Fragment, {
+    children: C % 2 != 0 ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(B, {}), (0, i.jsx)(M, {})]
     }) : (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(M, {}), (0, i.jsx)(B, {})]

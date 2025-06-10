@@ -21,8 +21,8 @@ var i = n(255367),
   _ = n(481060),
   x = n(239091),
   E = n(230711),
-  C = n(410575),
-  j = n(941129),
+  j = n(410575),
+  C = n(941129),
   O = n(634894),
   S = n(586902),
   v = n(980591),
@@ -75,8 +75,8 @@ var i = n(255367),
   e_ = n(640806),
   ex = n(768419),
   eE = n(184301),
-  eC = n(52538),
-  ej = n(670188),
+  ej = n(52538),
+  eC = n(670188),
   eO = n(321614),
   eS = n(879815),
   ev = n(294629),
@@ -176,7 +176,7 @@ function td(e) {
   } = e, p = r.useRef(null), h = null != t ? t : p, f = (0, J.Q3)("RTC Avatar"), b = (0, D.Z)(null == a ? void 0 : a.avatarDecoration), x = (0, eq.NZ)({
     avatarDecoration: b,
     size: (0, Z.y9)(_.EFr.SIZE_32)
-  }), E = (0, _.dQu)(_.TVs.modules.guildbar.AVATAR_SIZE), j = (0, H.Z)("Account") ? 32 : E, {
+  }), E = (0, _.dQu)(_.TVs.modules.guildbar.AVATAR_SIZE), C = (0, H.Z)("Account") ? 32 : E, {
     updateOpenPopoutRef: O,
     highlightBadge: S,
     setHighlightBadge: T
@@ -206,13 +206,13 @@ function td(e) {
       setHighlightBadge: i
     }
   }(), I = (0, eo.A)(m);
-  return null == a ? null : (0, i.jsx)(C.Z, {
+  return null == a ? null : (0, i.jsx)(j.Z, {
     object: e7.qAy.AVATAR,
-    children: (0, i.jsx)(ej.Z, {
+    children: (0, i.jsx)(eC.Z, {
       user: a,
       targetElementRef: h,
       clickTrap: !0,
-      preload: () => (0, eE.Z)(a.id, a.getAvatarURL(void 0, ej.I), {
+      preload: () => (0, eE.Z)(a.id, a.getAvatarURL(void 0, eC.I), {
         type: "account_popout",
         withMutualGuilds: !1,
         withMutualFriends: !1
@@ -254,8 +254,8 @@ function td(e) {
           [ti.plated]: null != m
         }),
         children: [(0, i.jsx)(ta, {
-          size: f ? _.EFr["SIZE_".concat(j)] : _.EFr.SIZE_32,
-          src: a.getAvatarURL(void 0, f ? j - 4 : 32, !1),
+          size: f ? _.EFr["SIZE_".concat(C)] : _.EFr.SIZE_32,
+          src: a.getAvatarURL(void 0, f ? C - 4 : 32, !1),
           avatarDecoration: x,
           "aria-label": a.username,
           status: s ? e7.Skl.STREAMING : o,
@@ -682,14 +682,14 @@ function tm(e) {
     handleOpenAccountSettings: b,
     handleOpenSettingsContextMenu: x,
     dismissibleContents: E,
-    nameplate: C,
-    accountContainerRef: j
-  } = e, O = (0, eo.A)(C);
+    nameplate: j,
+    accountContainerRef: C
+  } = e, O = (0, eo.A)(j);
   return (0, i.jsxs)("div", {
     className: ti.buttons,
     style: O,
     children: [(0, i.jsx)(th, {
-      accountContainerRef: j,
+      accountContainerRef: C,
       selfMute: n,
       serverMute: s,
       suppress: a,
@@ -701,24 +701,24 @@ function tm(e) {
       onMouseLeave: m,
       onClick: p,
       onContextMenu: h,
-      iconForeground: null != C ? ti.iconForeground : void 0,
-      nameplate: C
+      iconForeground: null != j ? ti.iconForeground : void 0,
+      nameplate: j
     }), (0, i.jsx)(tf, {
       selfDeaf: t,
       serverDeaf: l,
       onClick: g,
       onContextMenu: f,
       awaitingRemote: r,
-      iconForeground: null != C ? ti.iconForeground : void 0,
-      nameplate: C
+      iconForeground: null != j ? ti.iconForeground : void 0,
+      nameplate: j
     }), (0, i.jsx)(tp, {
       isEligibleForPomelo: c,
       webBuildOverride: d,
       onClick: b,
       onContextMenu: x,
       dismissibleContents: E.settings,
-      iconForeground: null != C ? ti.iconForeground : void 0,
-      nameplate: C
+      iconForeground: null != j ? ti.iconForeground : void 0,
+      nameplate: j
     })]
   })
 }
@@ -765,7 +765,7 @@ function tg() {
       selfDeaf: x,
       deaf: E
     } = (0, eS.Z)(p),
-    C = (0, d.e7)([w.C], () => {
+    j = (0, d.e7)([w.C], () => {
       var e;
       return (0, k.fD)() ? null == (e = w.C.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
     }),
@@ -778,7 +778,7 @@ function tg() {
     Z = (0, d.e7)([ee.Z], () => null != ee.Z.getAwaitingRemoteSessionInfo()),
     B = (0, d.e7)([eF.Z], () => eF.Z.getGuildId()),
     M = (0, ep.D)(),
-    U = (0, j.u)(),
+    U = (0, C.u)(),
     V = e1.ZP.canUsePremiumGuildMemberProfile(t),
     G = (null == t || null == (e = t.avatarDecoration) ? void 0 : e.skuId) === e9.rL,
     {
@@ -853,7 +853,7 @@ function tg() {
       status: l,
       streaming: s,
       suppress: b,
-      webBuildOverride: C,
+      webBuildOverride: j,
       awaitingRemote: Z,
       isEligibleForPomelo: D,
       voiceActivityStatusEnabled: F,
@@ -890,7 +890,7 @@ function tp(e) {
       markAsDismissed: h
     }) : p === u.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, i.jsx)(e_.Z, {
       markAsDismissed: h
-    }) : p === u.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, i.jsx)(eC.Z, {}) : () => (0, i.jsx)(i.Fragment, {}),
+    }) : p === u.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, i.jsx)(ej.Z, {}) : () => (0, i.jsx)(i.Fragment, {}),
     children: () => (0, i.jsx)(e2.Z, tl(ts({
       ref: d,
       tooltipText: null != t ? tn.intl.formatToPlainString(tn.t.Gzh6ZG, {
@@ -921,8 +921,8 @@ function th(e) {
     iconForeground: f,
     onMouseEnter: x,
     onMouseLeave: E,
-    onClick: C,
-    onContextMenu: j,
+    onClick: j,
+    onContextMenu: C,
     nameplate: O,
     accountContainerRef: S
   } = e, v = t || s || n, T = r.useRef(null), I = r.useRef(null), N = (0, p.O)(v ? "unmute" : "mute"), y = (0, h.P)(v ? "unmute" : "mute"), {
@@ -957,8 +957,8 @@ function th(e) {
   });
   r.useEffect(() => () => G(), [v, G]);
   let X = r.useCallback(e => {
-      j(e, W)
-    }, [j, W]),
+      C(e, W)
+    }, [C, W]),
     [Q, J] = r.useState(!1),
     ee = r.useCallback(e => {
       var t;
@@ -1010,7 +1010,7 @@ function th(e) {
           color: er,
           className: f
         }),
-        onClick: C,
+        onClick: j,
         onContextMenu: X,
         role: "switch",
         className: l()({

@@ -25,7 +25,7 @@ function b(e) {
     onCopy: m,
     "aria-label": b,
     delay: _ = h
-  } = e, [x, E] = r.useState(0), [C, j] = r.useState(!1), [O, S] = r.useState(!1), [v] = r.useState(() => new l.V7), [T] = r.useState(() => new l.V7);
+  } = e, [x, E] = r.useState(0), [j, C] = r.useState(!1), [O, S] = r.useState(!1), [v] = r.useState(() => new l.V7), [T] = r.useState(() => new l.V7);
   if (r.useEffect(() => () => {
       v.stop(), T.stop()
     }, [v, T]), !c.wS) return (0, i.jsx)(i.Fragment, {
@@ -33,14 +33,14 @@ function b(e) {
   });
   let I = x >= f.length - 1,
     N = I ? a.FGA.RED : a.FGA.GREEN,
-    y = C ? N : a.FGA.PRIMARY,
+    y = j ? N : a.FGA.PRIMARY,
     A = () => {
-      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), O || E(x + 1), S(!0), j(!0), v.start(g, () => S(!1)), T.start(p, () => E(0))
+      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), O || E(x + 1), S(!0), C(!0), v.start(g, () => S(!1)), T.start(p, () => E(0))
     };
   return (0, i.jsx)(a.ua7, {
     text: (() => {
       var e;
-      if (!C) return t;
+      if (!j) return t;
       let n = (0, s.clamp)(x - 1, 0, f.length - 1),
         r = null != (e = f[n]) ? e : f[0];
       return (0, i.jsx)(a.UkV, {
@@ -53,7 +53,7 @@ function b(e) {
     color: y,
     forceOpen: O,
     onAnimationRest: (e, t) => {
-      !O && C && t.phase === u.UkZ.LEAVE && j(!1)
+      !O && j && t.phase === u.UkZ.LEAVE && C(!1)
     },
     children: e => {
       var t, n, {
@@ -96,7 +96,7 @@ function b(e) {
           null == i || i(), A()
         },
         onMouseEnter: () => {
-          if (!C) {
+          if (!j) {
             null == r || r();
             return
           }

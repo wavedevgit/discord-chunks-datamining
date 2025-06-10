@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(714338),
   x = n(924557),
   E = n(600164),
-  C = n(74299),
-  j = n(577153),
+  j = n(74299),
+  C = n(577153),
   O = n(365023),
   S = n(610394),
   v = n(131951),
@@ -210,7 +210,7 @@ class z extends r.PureComponent {
       canGoLive: t,
       allowSoundboard: n,
       enableClips: i
-    } = this.props, r = j.Z.getCurrentConfig({
+    } = this.props, r = C.Z.getCurrentConfig({
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: !1
@@ -292,7 +292,7 @@ class z extends r.PureComponent {
       [R.kg4.TOGGLE_VOICE_MODE]: Z.intl.string(Z.t.snm5YW),
       [R.kg4.TOGGLE_STREAMER_MODE]: Z.intl.string(Z.t.YszLLy)
     };
-    return j.Z.getCurrentConfig({
+    return C.Z.getCurrentConfig({
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: !1
@@ -421,7 +421,7 @@ class z extends r.PureComponent {
 
 function Y() {
   let e = (0, c.e7)([T.ZP], () => T.ZP.getState()),
-    t = (0, c.e7)([v.Z], () => (0, C.Z)(v.Z)),
+    t = (0, c.e7)([v.Z], () => (0, j.Z)(v.Z)),
     n = (0, c.e7)([S.ZP], () => S.ZP.isSupported()),
     r = (0, x.Go)(),
     s = (0, u.C)("user-settings-keybinds");

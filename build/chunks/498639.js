@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(584825),
   x = n(305342),
   E = n(333867),
-  C = n(963249),
-  j = n(87484),
+  j = n(963249),
+  C = n(87484),
   O = n(767714),
   S = n(911367),
   v = n(43747),
@@ -165,7 +165,7 @@ let w = function() {
           }],
           onChange: e => _(e)
         }), (0, i.jsx)(o.zxk, {
-          onClick: () => (0, C.Z)({
+          onClick: () => (0, j.Z)({
             subscriptionTier: n,
             analyticsLocations: Y
           }),
@@ -382,7 +382,7 @@ let w = function() {
           value: ea,
           onChange: e => eo(e)
         }), (0, i.jsx)(o.zxk, {
-          onClick: () => (0, j.Z)({
+          onClick: () => (0, C.Z)({
             applicationId: es,
             skuId: ea,
             analyticsLocations: Y

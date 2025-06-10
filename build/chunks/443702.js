@@ -20,8 +20,8 @@ var i = n(255367),
   _ = n(853872),
   x = n(78839),
   E = n(706454),
-  C = n(726985),
-  j = n(981631),
+  j = n(726985),
+  C = n(981631),
   O = n(388032),
   S = n(189435);
 let v = () => (0, i.jsx)("div", {
@@ -35,7 +35,7 @@ class T extends r.PureComponent {
     })
   }
   handleRedemptionRedirect() {
-    c.Z.setSection(j.oAB.INVENTORY)
+    c.Z.setSection(C.oAB.INVENTORY)
   }
   render() {
     let {
@@ -51,17 +51,17 @@ class T extends r.PureComponent {
     return t ? (0, i.jsx)(d.Z, {}) : (0, i.jsxs)("div", {
       className: S.__invalid_userSettingsBilling,
       children: [e && 0 === Object.keys(n).length ? (0, i.jsx)(v, {}) : (0, i.jsx)(p.F, {
-        setting: C.s6.BILLING_PAYMENT_METHODS,
+        setting: j.s6.BILLING_PAYMENT_METHODS,
         children: (0, i.jsx)(m.Z, {
           paymentSources: n,
           defaultPaymentSourceId: r,
-          premiumSubscriptionPaymentSourceId: null != a && a.status !== j.O0b.CANCELED ? a.paymentSourceId : null,
+          premiumSubscriptionPaymentSourceId: null != a && a.status !== C.O0b.CANCELED ? a.paymentSourceId : null,
           locale: s,
           removing: o,
           submitting: c
         })
       }), (0, i.jsx)(p.F, {
-        setting: C.s6.BILLING_TRANSACTION_HISTORY,
+        setting: j.s6.BILLING_TRANSACTION_HISTORY,
         children: (0, i.jsx)("div", {
           className: S.paymentHistory,
           children: (0, i.jsxs)(l.y5t, {

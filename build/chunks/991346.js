@@ -24,8 +24,8 @@ var i = n(73800),
   _ = n(631885),
   x = n(160913),
   E = n(725727),
-  C = n(977156),
-  j = n(921157),
+  j = n(977156),
+  C = n(921157),
   O = n(667172),
   S = n(237292),
   v = n(314897),
@@ -109,13 +109,13 @@ function F() {
     location: "settings"
   }), q = (0, O.v4)({
     location: "settings"
-  }), X = (0, c.Q)(), Q = (0, C.Zy)({
+  }), X = (0, c.Q)(), Q = (0, j.Zy)({
     location: U.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
   }), J = (0, r.e7)([I.Z], () => I.Z.hasLibraryApplication()), $ = (0, r.e7)([v.default], () => v.default.hasTOTPEnabled()), ee = Z.Sb.useSetting(), et = (0, f.Z)(), {
     hypeSquadRemoved: en
   } = p.Z.useExperiment({
     location: "settings"
-  }), ei = null == (l = (0, b.Z)()) || l, er = (null == (t = (0, j.s)()) ? void 0 : t.length) > 0, {
+  }), ei = null == (l = (0, b.Z)()) || l, er = (null == (t = (0, C.s)()) ? void 0 : t.length) > 0, {
     hasBlockedUsers: es,
     hasIgnoredUsers: el
   } = (0, r.cj)([y.Z], () => ({

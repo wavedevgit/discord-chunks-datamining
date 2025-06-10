@@ -64,7 +64,7 @@ let E = e => {
       }), null === t ? "--" : t]
     })
   },
-  C = e => {
+  j = e => {
     var {
       orbBalance: t,
       orbPriceAmount: n,
@@ -107,7 +107,7 @@ let E = e => {
       onClick: l
     }))
   },
-  j = e => {
+  C = e => {
     let {
       orbPriceAmount: t,
       skuId: n
@@ -181,7 +181,7 @@ let E = e => {
       children: [(0, i.jsx)(r.vwX, {
         tag: r.RB0.H5,
         children: f.intl.string(f.t.sail9P)
-      }), (0, i.jsx)(j, {
+      }), (0, i.jsx)(C, {
         skuId: t,
         orbPriceAmount: n
       }), (0, i.jsx)(O, {
@@ -206,7 +206,7 @@ let E = e => {
     } = e;
     return (0, i.jsxs)(r.mzw, {
       align: o.Z.Align.CENTER,
-      children: [(0, i.jsx)(C, {
+      children: [(0, i.jsx)(j, {
         orbBalance: n,
         orbPriceAmount: t,
         submitting: s,

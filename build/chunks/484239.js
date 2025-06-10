@@ -25,7 +25,7 @@ let d = e => {
     cardVariant: b,
     subtitleClassName: _,
     imageOverlayText: x
-  } = e, E = (0, a._)(b), C = null != x;
+  } = e, E = (0, a._)(b), j = null != x;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
       className: s()(c.cover, c.below)
@@ -43,8 +43,8 @@ let d = e => {
       children: [(0, i.jsx)("img", {
         src: u,
         alt: "",
-        className: m ? C ? c.carouselCardImageGrayscale : c.carouselCardImage : ""
-      }), C ? (0, i.jsx)("div", {
+        className: m ? j ? c.carouselCardImageGrayscale : c.carouselCardImage : ""
+      }), j ? (0, i.jsx)("div", {
         className: c.imageOverlayTextContainer,
         children: (0, i.jsx)(l.Text, {
           className: c.imageOverlayText,

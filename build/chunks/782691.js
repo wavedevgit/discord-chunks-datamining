@@ -39,7 +39,7 @@ function E(e) {
   return e
 }
 
-function C(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,7 +51,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = {
+let C = {
     [h.cq.THUMBNAIL]: null,
     [h.cq.STATIC]: null,
     [h.cq.REDUCED_MOTION]: null
@@ -64,7 +64,7 @@ let j = {
       skipStore: s = !1
     } = e, {
       upsertConfig: S
-    } = (0, p.n6)(), v = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [T, I] = r.useState(!0), N = r.useRef(null), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState([]), [w, k] = r.useState(j), L = r.useRef([]), [B, M] = r.useState(t.name), U = B.toLowerCase().replace(/\s+/g, "_"), V = r.useMemo(() => ({
+    } = (0, p.n6)(), v = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [T, I] = r.useState(!0), N = r.useRef(null), [y, A] = r.useState(!1), [P, R] = r.useState(!1), [D, Z] = r.useState([]), [w, k] = r.useState(C), L = r.useRef([]), [B, M] = r.useState(t.name), U = B.toLowerCase().replace(/\s+/g, "_"), V = r.useMemo(() => ({
       type: a.Z.PROFILE_EFFECT,
       id: O,
       skuId: O,
@@ -80,7 +80,7 @@ let j = {
     }, F = (e, t) => {
       let n = G(t);
       null != n && (0, h.i0)(n, t => {
-        k(i => C(E({}, i), {
+        k(i => j(E({}, i), {
           [e]: (0, h.z)(t, n)
         }))
       })
@@ -99,7 +99,7 @@ let j = {
         })
       })
     }, z = e => {
-      k(t => C(E({}, t), {
+      k(t => j(E({}, t), {
         [e]: null
       }))
     };
@@ -118,7 +118,7 @@ let j = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, h.$j)(n.base64);
-          n.src = e, L.current.push(e), k(e => C(E({}, e), {
+          n.src = e, L.current.push(e), k(e => j(E({}, e), {
             [t]: n
           }))
         }
@@ -288,9 +288,9 @@ let j = {
                   children: "Download Timing Config"
                 })
               }), (0, i.jsx)(d.Z, {
-                fileContents: () => JSON.stringify(C(E({}, t), {
+                fileContents: () => JSON.stringify(j(E({}, t), {
                   name: B,
-                  config: C(E({}, t.config), {
+                  config: j(E({}, t.config), {
                     effects: D,
                     stillFrames: w
                   })
@@ -373,7 +373,7 @@ let j = {
               color: c.Ttl.RED,
               look: c.iLD.OUTLINED,
               onClick: () => {
-                Z([]), k(j)
+                Z([]), k(C)
               },
               children: "Clear Assets"
             })
