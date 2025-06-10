@@ -37,7 +37,7 @@ let _ = -1,
       channelId: t,
       authorId: n
     } = x(e);
-    return null == t ? 0 : m(t, n)
+    return null == t || null == e ? f.qn.NONE : m(t, n)
   },
   m = (e, t) => {
     var n;
@@ -57,7 +57,7 @@ function E(e) {
 
 function b(e, t) {
   var n, r;
-  if (t === f.qn.NONE) return !1;
+  if (t === f.qn.NONE || null == e) return !1;
   if ((null == (n = e.attachments) ? void 0 : n.some(e => v({
       type: u.l.Attachment,
       media: e
@@ -184,7 +184,7 @@ function C(e, t) {
 
 function P(e, t) {
   var n, r, i, a, o, s, l;
-  return !(0 === t.length || 0 === t.filter(t => !T(t, {
+  return !(0 === t.length || null == e || 0 === t.filter(t => !T(t, {
     type: u.l.Embed,
     media: e
   })).length || "video" in e && null != e.video && (null == (n = e.video) ? void 0 : n.width) === 0 && (null == (r = e.video) ? void 0 : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? void 0 : i.width) === 0 && (null == (a = e.thumbnail) ? void 0 : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? void 0 : o.width) === 0 && (null == (s = e.image) ? void 0 : s.height) === 0 || "images" in e && (null == (l = e.images) ? void 0 : l.some(e => null != e && 0 === e.width && 0 === e.height))) && D(k(e), t)
@@ -218,7 +218,7 @@ function L(e) {
 function x(e) {
   let t = null,
     n = null;
-  return "channel_id" in e && (t = e.channel_id), "author_id" in e && (n = e.author_id), {
+  return null == e || ("channel_id" in e && (t = e.channel_id), "author_id" in e && (n = e.author_id)), {
     channelId: t,
     authorId: n
   }
