@@ -15,13 +15,13 @@ var n, r = t(255367),
   m = t(635477),
   p = t(715697),
   g = t(95398),
-  b = t(947849),
-  f = t(768494),
-  v = t(624195),
-  y = t(44824),
-  x = t(124347),
-  w = t(283756),
-  j = t(169525),
+  b = t(936141),
+  f = t(947849),
+  v = t(768494),
+  y = t(624195),
+  x = t(44824),
+  w = t(124347),
+  j = t(283756),
   I = t(207982),
   O = t(785992),
   S = t(400266),
@@ -96,7 +96,7 @@ function z(e) {
     playable: v = !0,
     autoPlay: y = !1,
     autoMute: x,
-    volume: j,
+    volume: w,
     onPlay: I,
     onPause: O,
     onEnded: S,
@@ -144,7 +144,7 @@ function z(e) {
       onVolumeChange: A,
       playable: v,
       autoMute: x,
-      volume: j,
+      volume: w,
       onPlay: I,
       onPause: O,
       onMute: M,
@@ -225,7 +225,7 @@ function z(e) {
       className: W.embedVideoActions,
       children: (0, r.jsx)("div", {
         className: W.centerContent,
-        children: v ? (0, r.jsx)(w.Z, {
+        children: v ? (0, r.jsx)(j.Z, {
           onPlay: null != c ? G : null,
           externalURL: T,
           renderLinkComponent: f,
@@ -256,7 +256,7 @@ function Y(e) {
     placeholderVersion: f,
     sourceMetadata: v
   } = e;
-  return (0, r.jsx)(y.Z, {
+  return (0, r.jsx)(x.Z, {
     className: a()(W.embedVideo, l),
     original: t,
     poster: (0, E.q)(o),
@@ -550,9 +550,9 @@ class q extends(n = i.PureComponent) {
       className: p,
       autoPlayGif: g
     } = this.props, {
-      maxMediaWidth: v,
+      maxMediaWidth: b,
       maxMediaHeight: y,
-      sourceMetadata: w
+      sourceMetadata: x
     } = this.state;
     if (null == u) return null;
     let j = (0, E.q)(u),
@@ -562,11 +562,11 @@ class q extends(n = i.PureComponent) {
       } = null == h ? {
         srcToOnClickOverride: {},
         srcToHandlePreloadImage: {}
-      } : (0, I.G)(h.map(e => U(G({}, (0, f.Hv)(e, w, "IMAGE")), {
+      } : (0, I.G)(h.map(e => U(G({}, (0, v.Hv)(e, x, "IMAGE")), {
         original: e.url,
         srcIsAnimated: e.srcIsAnimated
       })), {}, "Embed"),
-      C = x.ZP.isAnimated({
+      C = w.ZP.isAnimated({
         src: (0, E.q)(u),
         original: u.url,
         animated: !1,
@@ -586,7 +586,7 @@ class q extends(n = i.PureComponent) {
         limitResponsiveWidth: !d,
         width: u.width,
         height: u.height,
-        maxWidth: v,
+        maxWidth: b,
         maxHeight: y,
         original: u.url,
         shouldLink: o,
@@ -599,9 +599,9 @@ class q extends(n = i.PureComponent) {
       },
       N = null != (n = null == (e = u.url.split(".").pop()) ? void 0 : e.split("?")[0]) ? n : "";
     "jpg" === N && (N = "jpeg");
-    let A = null != u && !x.uo.test(null == u ? void 0 : u.url) && !(u.srcIsAnimated && x.YG.test(null == u ? void 0 : u.url)) && !(u.srcIsAnimated && x.FH.test(null == u ? void 0 : u.url)),
+    let A = null != u && !w.uo.test(null == u ? void 0 : u.url) && !(u.srcIsAnimated && w.YG.test(null == u ? void 0 : u.url)) && !(u.srcIsAnimated && w.FH.test(null == u ? void 0 : u.url)),
       M = !0 !== this.props.isSearchResult && o && (null == (l = this.props.message) ? void 0 : l.channel_id) != null && (null == (t = this.props.message) ? void 0 : t.channel_id) !== void 0 && A && !(null != (i = u) && (i.width <= V.OF || i.height <= V.OF)) && null != N;
-    return (0, r.jsx)(b.h.Consumer, {
+    return (0, r.jsx)(f.h.Consumer, {
       children: e => (0, r.jsx)(R.G.Consumer, {
         children: l => {
           let {
@@ -623,7 +623,7 @@ class q extends(n = i.PureComponent) {
                 channelId: null == (e = this.props.message) ? void 0 : e.channel_id
               }) : null
             },
-            sourceMetadata: w,
+            sourceMetadata: x,
             analyticsSource: "Embed"
           }))
         }
@@ -940,7 +940,7 @@ class q extends(n = i.PureComponent) {
     }) : (0, O.Z)(l) ? (0, r.jsx)(S.Z, {
       embed: l,
       className: n
-    }) : (null == (e = l.provider) ? void 0 : e.name) === "Amazon Music" && l.type === B.hBH.RICH ? (0, r.jsx)(v.Z, {
+    }) : (null == (e = l.provider) ? void 0 : e.name) === "Amazon Music" && l.type === B.hBH.RICH ? (0, r.jsx)(y.Z, {
       embed: l,
       className: n
     }) : (0, m.Z)(l) ? (0, r.jsx)(p.Z, {
@@ -999,8 +999,8 @@ class q extends(n = i.PureComponent) {
       return (0, r.jsx)("div", {
         "aria-hidden": e,
         className: a()(W.inlineMediaEmbed, n, {
-          [W.spoilerAttachment]: t === j.wk.SPOILER,
-          [W.hiddenExplicitAttachment]: null != t && j.Xh.has(t),
+          [W.spoilerAttachment]: t === b.wk.SPOILER,
+          [W.hiddenExplicitAttachment]: null != t && b.Xh.has(t),
           [W.isHidden]: e,
           [W.justifyAuto]: l.usesJustifiedAutoStyle()
         }),
@@ -1029,8 +1029,8 @@ class q extends(n = i.PureComponent) {
       return (0, r.jsx)("article", {
         className: a()(t, W.embedFull, F.markup, {
           [W.isHidden]: e,
-          [W.spoilerEmbed]: i === j.wk.SPOILER,
-          [W.hiddenExplicitEmbed]: null != i && j.Xh.has(i),
+          [W.spoilerEmbed]: i === b.wk.SPOILER,
+          [W.hiddenExplicitEmbed]: null != i && b.Xh.has(i),
           [W.justifyAuto]: l.usesJustifiedAutoStyle()
         }),
         "aria-hidden": e,

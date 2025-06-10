@@ -84,7 +84,7 @@ function J(e, t) {
 function X(e) {
   return null == e.id ? j.ZP.convertSurrogateToName(e.name) : ":".concat(e.name, ":")
 }
-let q = e => {
+let Y = e => {
     let {
       emoji: t,
       channelId: n,
@@ -126,7 +126,7 @@ let q = e => {
       })]
     })
   },
-  Y = r.memo(function(e) {
+  q = r.memo(function(e) {
     let {
       emoji: t,
       count: n,
@@ -314,7 +314,7 @@ class Q extends r.PureComponent {
     } = this.props, a = [];
     return 0 === t.length && this.state.loadingMore ? a.push(length) : (a.push(t.length), e && a.push(1)), (0, i.jsxs)("div", {
       className: G.reactorsContainer,
-      children: [o === x.O.BURST && (0, i.jsx)(q, {
+      children: [o === x.O.BURST && (0, i.jsx)(Y, {
         emoji: n.emoji,
         channelId: r.getChannelId(),
         messageId: r.id
@@ -460,7 +460,7 @@ function et(e) {
         children: b.map(e => {
           var t;
           let n = e.burst_count > 0;
-          return (0, i.jsx)(Y, {
+          return (0, i.jsx)(q, {
             isSelected: en(T, e, n ? x.O.BURST : x.O.NORMAL),
             setSelected: S,
             reactionType: n ? x.O.BURST : x.O.NORMAL,

@@ -108,8 +108,8 @@ function B(e) {
     itemTextContent: W,
     canReport: q,
     onHeightUpdate: V,
-    onSelect: J,
-    onClose: Q,
+    onSelect: Q,
+    onClose: J,
     navId: Y,
     ariaLabel: $,
     shouldHideMediaOptions: ee = !1
@@ -135,9 +135,9 @@ function B(e) {
   }), eM = (0, k.Z)(t), ew = (0, p.Z)(t);
   return (0, i.jsxs)(l.v2r, {
     navId: Y,
-    onClose: Q,
+    onClose: J,
     "aria-label": $,
-    onSelect: J,
+    onSelect: Q,
     children: [(0, i.jsx)(l.kSQ, {
       children: et
     }), (0, i.jsx)(l.kSQ, {

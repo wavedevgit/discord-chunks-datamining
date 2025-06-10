@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
+  ec: () => p,
   l4: () => E,
-  tG: () => p,
   zj: () => b
 });
 var r = n(524437),
@@ -97,18 +97,18 @@ let u = {
     } = e;
     return t && !n ? r.Q4.BLOCK : r.Q4.BLUR
   },
-  E = () => {
-    let e = i.Sh.getSetting();
+  E = e => {
+    let t = null != e ? e : i.Sh.getSetting();
     return {
       explicitContentGuilds: p({
-        setting: null == e ? void 0 : e.explicitContentGuilds
+        setting: null == t ? void 0 : t.explicitContentGuilds
       }),
       explicitContentNonFriendDm: p({
-        setting: null == e ? void 0 : e.explicitContentNonFriendDm,
+        setting: null == t ? void 0 : t.explicitContentNonFriendDm,
         isDm: !0
       }),
       explicitContentFriendDm: p({
-        setting: null == e ? void 0 : e.explicitContentFriendDm,
+        setting: null == t ? void 0 : t.explicitContentFriendDm,
         isDm: !0,
         isFriend: !0
       })

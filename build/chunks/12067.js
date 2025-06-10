@@ -24,7 +24,7 @@ function j(e) {
     message: t
   } = (0, O.CJ)(), r = (0, l.e7)([f.Z], () => f.Z.getChannel(null == t ? void 0 : t.channel_id)), {
     shouldHideMediaOptions: j,
-    shouldRedactExplicitContent: g,
+    enabledContentHarmTypeFlags: g,
     gifAutoPlay: h,
     getGifFavButton: v,
     getOnMediaItemContextMenu: P
@@ -36,7 +36,7 @@ function j(e) {
       srcToHandlePreloadImage: w
     } = x.length > 1 ? (0, p.G)(x, {
       shouldHideMediaOptions: j,
-      shouldRedactExplicitContent: g
+      enabledContentHarmTypeFlags: g
     }, "Media Mosaic") : {
       srcToOnClickOverride: {},
       srcToHandlePreloadImage: {}

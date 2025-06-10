@@ -22,9 +22,9 @@ let A = e => {
   let {
     channelId: t,
     messageId: A,
-    transitionState: R,
-    onClose: g
-  } = e, L = (0, _.Z)(), x = (0, c.Jm)(), P = (0, I.m8)(), b = l.useMemo(() => x && P, [x, P]), v = l.useCallback(e => {
+    transitionState: g,
+    onClose: R
+  } = e, L = (0, _.Z)(), v = (0, c.Jm)(), x = (0, I.m8)(), b = l.useMemo(() => v && x, [v, x]), p = l.useCallback(e => {
     (0, I.aP)({
       action: e,
       channelId: t,
@@ -38,7 +38,7 @@ let A = e => {
       messageId: A
     })
   }, [t, A]), (0, r.jsxs)(o.Y0X, {
-    transitionState: R,
+    transitionState: g,
     "aria-label": m.intl.string(m.t.xdm3XF),
     parentComponent: "ExplicitMediaLearnMoreModal",
     children: [(0, r.jsx)(o.xBx, {
@@ -64,16 +64,16 @@ let A = e => {
         children: [b ? (0, r.jsx)(o.zxk, {
           color: o.zxk.Colors.BRAND,
           onClick: function() {
-            g(), v(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), s.Z.showAgeVerificationGetStartedModal(d.cU.SENSITIVE_MEDIA_LEARN_MORE)
+            R(), p(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), s.Z.showAgeVerificationGetStartedModal(d.cU.SENSITIVE_MEDIA_LEARN_MORE)
           },
           fullWidth: !0,
           children: m.intl.string(m.t.KPGVWl)
         }) : L ? (0, r.jsx)(o.zxk, {
           color: o.zxk.Colors.BRAND,
           onClick: function() {
-            v(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS), i.Z.open(u.oAB.CONTENT_AND_SOCIAL, null, {
+            p(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS), i.Z.open(u.oAB.CONTENT_AND_SOCIAL, null, {
               scrollPosition: f.FY.EXPLICIT_MEDIA_REDACTION_V2
-            }), g()
+            }), R()
           },
           fullWidth: !0,
           children: m.intl.string(m.t["9D+zGR"])
@@ -87,7 +87,7 @@ let A = e => {
         }), (0, r.jsx)(o.zxk, {
           color: o.zxk.Colors.PRIMARY,
           onClick: function() {
-            g(), v(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS)
+            R(), p(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS)
           },
           fullWidth: !0,
           children: m.intl.string(m.t.bmbHPD)
@@ -96,11 +96,11 @@ let A = e => {
           color: "header-secondary",
           children: b ? m.intl.format(m.t["TGqx+v"], {
             handleOnHelpUrlHook: () => {
-              s.Z.openUrl(E.Z.getArticleURL(u.BhN.TIGGER_PAWTECT_LEARN_MORE)), v(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
+              s.Z.openUrl(E.Z.getArticleURL(u.BhN.TIGGER_PAWTECT_LEARN_MORE)), p(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
             }
           }) : m.intl.format(m.t.Ge0HUl, {
             handleFalsePositiveHook: () => {
-              g(), v(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.ZDy)(async () => {
+              R(), p(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.ZDy)(async () => {
                 let {
                   default: e
                 } = await n(788679);
@@ -125,7 +125,7 @@ let A = e => {
                   channelId: t,
                   messageId: A
                 }, n))
-              }), v(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE)
+              }), p(I.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE)
             }
           })
         })]

@@ -26,8 +26,8 @@ var r, i = n(255367),
   O = n(446411),
   j = n(960904),
   C = n(161314),
-  S = n(247206),
-  I = n(25610),
+  S = n(629710),
+  I = n(262777),
   N = n(761538),
   T = n(674611),
   P = n(294734),
@@ -391,7 +391,7 @@ class e2 extends(r = l.Component) {
       canDeleteAttachments: r,
       inlineAttachmentMedia: l,
       onMediaItemContextMenu: a,
-      shouldRedactExplicitContent: o,
+      enabledContentHarmTypeFlags: o,
       shouldHideMediaOptions: s
     } = this.props, {
       attachments: c,
@@ -411,7 +411,7 @@ class e2 extends(r = l.Component) {
         srcToOnClickOverride: m,
         srcToHandlePreloadImage: f
       } = (0, X.G)(p, {
-        shouldRedactExplicitContent: o,
+        enabledContentHarmTypeFlags: o,
         shouldHideMediaOptions: s
       }, "Media Mosaic"),
       h = p.length > 1,
@@ -491,7 +491,7 @@ class e2 extends(r = l.Component) {
     if (0 === e.components.length) return null;
     let {
       gifAutoPlay: t,
-      shouldRedactExplicitContent: n,
+      enabledContentHarmTypeFlags: n,
       shouldHideMediaOptions: r,
       disableComponentInteractivity: l,
       onMediaItemContextMenu: a
@@ -503,7 +503,7 @@ class e2 extends(r = l.Component) {
         t.stopPropagation(), t.preventDefault(), null == a || a(t, e)
       },
       shouldHideMediaOptions: r,
-      shouldRedactExplicitContent: n,
+      enabledContentHarmTypeFlags: n,
       children: (0, i.jsx)(B.ZP, {
         message: e,
         shouldDisableInteractiveComponents: l
@@ -664,14 +664,9 @@ class e2 extends(r = l.Component) {
     })
   }
   renderMediaObscureNotice(e) {
-    if (0 === e.attachments.length && 0 === e.embeds.length) return null;
-    let {
-      obscuredAttachments: t,
-      obscuredEmbeds: n
-    } = (0, S.Tw)(e);
-    return 0 === t.length && 0 === n.length ? null : (0, i.jsx)(N.Z, {
+    return (0 !== e.attachments.length || 0 !== e.embeds.length) && (0, S.kC)(e) ? (0, i.jsx)(N.Z, {
       message: e
-    })
+    }) : null
   }
   renderPoll(e, t) {
     if (null != t) return (0, i.jsx)(Q.Z, {
@@ -737,7 +732,7 @@ class e2 extends(r = l.Component) {
         inlineEmbedMedia: a,
         canSuppressEmbeds: o,
         hasSpoilerEmbeds: s,
-        shouldRedactExplicitContent: c,
+        enabledContentHarmTypeFlags: c,
         isSearchResult: u
       } = this.props, d = r.channel_id, p = r.id, m = (0, eO.BP)(e, d, p, s, c);
       return e.type === eW.hBH.GIFT ? null : (0, i.jsx)(A.h.Provider, {
@@ -811,7 +806,7 @@ function e4(e) {
     communicationDisabled: y,
     isActiveChannelOrUnarchivableThread: v,
     isAutomodQuarantined: x
-  }), T = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), P = (0, K.Z)(null == n ? void 0 : n.id), A = (0, q.Z)(r), w = (0, I.V)(n.id, r.author.id), k = (0, eS._)(n), D = (0, ev.ro)(r.id, r.channel_id);
+  }), T = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), P = (0, K.Z)(null == n ? void 0 : n.id), A = (0, q.Z)(r), w = (0, I.v)(r), k = (0, eS._)(n), D = (0, ev.ro)(r.id, r.channel_id);
   return (0, i.jsx)(e2, e$(eJ(e$(eJ({
     canSuppressEmbeds: O,
     canDeleteAttachments: j
@@ -832,7 +827,7 @@ function e4(e) {
     showListsAndHeaders: T,
     showMaskedLinks: T,
     shouldHideMediaOptions: P,
-    shouldRedactExplicitContent: w,
+    enabledContentHarmTypeFlags: w,
     ctaButtonType: D
   }))
 }
@@ -872,7 +867,7 @@ let e6 = e => {
     h = ec.QK.useSetting(),
     g = (0, H.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()),
     _ = (0, K.Z)(null == r ? void 0 : r.id),
-    b = (0, I.V)(r.id, n.author.id),
+    b = (0, I.v)(n),
     E = (0, ev.ro)(n.id, n.channel_id),
     x = (0, q.Z)(n);
   return (0, i.jsx)(e2, e$(eJ({}, d), {
@@ -893,7 +888,7 @@ let e6 = e => {
     showListsAndHeaders: g,
     showMaskedLinks: g,
     shouldHideMediaOptions: _,
-    shouldRedactExplicitContent: b,
+    enabledContentHarmTypeFlags: b,
     ctaButtonType: E,
     isSearchResult: u
   }))

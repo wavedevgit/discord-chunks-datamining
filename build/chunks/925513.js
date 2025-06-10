@@ -6,9 +6,8 @@ n.d(t, {
   _i: () => l
 });
 var r = n(524437),
-  i = n(695346);
-n(592125), n(699516);
-var a = n(594174);
+  i = n(695346),
+  a = n(594174);
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,7 +30,6 @@ function s(e) {
   }
   return e
 }
-n(470734), n(721360);
 let l = e => {
     let {
       setting: t,
@@ -62,18 +60,18 @@ let l = e => {
     } = e;
     return t && n ? r.Q4.BLUR : t ? r.Q4.BLOCK : r.Q4.BLUR
   },
-  d = () => {
-    let e = i.j7.getSetting();
+  d = e => {
+    let t = null != e ? e : i.j7.getSetting();
     return {
       goreContentGuilds: l({
-        setting: null == e ? void 0 : e.goreContentGuilds
+        setting: null == t ? void 0 : t.goreContentGuilds
       }),
       goreContentNonFriendDm: l({
-        setting: null == e ? void 0 : e.goreContentNonFriendDm,
+        setting: null == t ? void 0 : t.goreContentNonFriendDm,
         isDm: !0
       }),
       goreContentFriendDm: l({
-        setting: null == e ? void 0 : e.goreContentFriendDm,
+        setting: null == t ? void 0 : t.goreContentFriendDm,
         isDm: !0,
         isFriend: !0
       })

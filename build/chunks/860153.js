@@ -14,15 +14,15 @@ var a = n(255367),
   p = n(123145),
   m = n(592125),
   g = n(73249),
-  f = n(369171),
-  y = n(545093),
+  y = n(369171),
+  f = n(545093),
   b = n(388032),
   O = n(114047);
 let _ = r.memo(function(e) {
   let {
     message: t
   } = e, n = (0, c.e7)([m.Z], () => m.Z.getChannel(t.channel_id));
-  return null == n ? null : (0, a.jsx)(f.ZP, {
+  return null == n ? null : (0, a.jsx)(y.ZP, {
     children: e => (0, a.jsxs)(u.Z.Provider, {
       value: n.guild_id,
       children: [(0, a.jsx)(s.Z, {
@@ -64,9 +64,9 @@ function h(e) {
     }), (0, a.jsx)(g.Z, {
       item: n,
       hideMediaOptions: r
-    }), (0, a.jsx)(f.ZP, {
-      mode: f.lx.PINNED,
-      children: e => (0, a.jsx)(y.Z, {
+    }), (0, a.jsx)(y.ZP, {
+      mode: y.lx.PINNED,
+      children: e => (0, a.jsx)(f.Z, {
         onClick: o,
         icon: l.Dio,
         tooltip: b.intl.string(b.t.cpT0Cg),
