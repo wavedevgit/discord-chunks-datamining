@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 56035 **/
 n.d(t, {
-  N: () => i
+  N: () => a
 });
-let r = null;
+let l = null;
 
-function i() {
-  if (null == r) try {
-    r = new AudioContext
+function a() {
+  if (null == l) try {
+    l = new AudioContext
   } catch (e) {}
-  return r
+  return l
 }

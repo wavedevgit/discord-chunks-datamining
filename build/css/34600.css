@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: f506b898c37827d3
+  Original File Name: 7cf23c52fb008af0
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3521,6 +3521,7 @@
     --embed-background: #2b2e30;
     --embed-background-alternate: #303338;
     --embed-title: #f2f2f5;
+    --experimental-avatar-embed-bg: rgba(0,0,0,.52);
     --expression-picker-bg: #2b2e30;
     --focus-primary: #00abfc;
     --forum-post-extra-media-count-container-background: rgba(36,36,41,.8);
@@ -3949,6 +3950,7 @@
     --embed-background: #f2f2f5;
     --embed-background-alternate: #e3e6e8;
     --embed-title: #060607;
+    --experimental-avatar-embed-bg: rgba(0,0,0,.52);
     --expression-picker-bg: #f2f2f5;
     --focus-primary: #0096f2;
     --forum-post-extra-media-count-container-background: rgba(235,237,240,.8);
@@ -4377,6 +4379,7 @@
     --embed-background: #131318;
     --embed-background-alternate: #303338;
     --embed-title: #ededf0;
+    --experimental-avatar-embed-bg: rgba(0,0,0,.52);
     --expression-picker-bg: #000;
     --focus-primary: #00abfc;
     --forum-post-extra-media-count-container-background: rgba(33,33,41,.8);
@@ -4805,6 +4808,7 @@
     --embed-background: #26262e;
     --embed-background-alternate: #303338;
     --embed-title: #e3e6e8;
+    --experimental-avatar-embed-bg: rgba(0,0,0,.52);
     --expression-picker-bg: #1c1c24;
     --focus-primary: #00abfc;
     --forum-post-extra-media-count-container-background: rgba(33,33,41,.8);
@@ -5025,4 +5029,4 @@
     --white: #fff
 }
 
-/*# sourceMappingURL=f506b898c37827d3.css.map*/
+/*# sourceMappingURL=7cf23c52fb008af0.css.map*/

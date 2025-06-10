@@ -21,7 +21,7 @@ let p = a.memo(function(e) {
     audio: n,
     className: i,
     waveformSettings: p
-  } = e, [b, y] = a.useState({
+  } = e, [y, b] = a.useState({
     width: 0,
     height: 0
   }), v = a.useRef(null), x = a.useMemo(() => {
@@ -49,8 +49,8 @@ let p = a.memo(function(e) {
       fineTuningResolution: t / m.nl.fineTuningScale,
       duration: t
     }, null != p ? p : {})
-  }, [n, p]), j = (0, f.b1)(t), w = (0, f.NN)(j, v.current, x), N = (0, c.ZP)(), C = (0, d.Sl)((0, o.wj)(N) ? h.Il.PRIMARY_300 : h.Il.PRIMARY_700), S = null == j || null == w, O = (0 === b.width || 0 === b.height || S) && null != t, P = a.useCallback(() => {
-    null != v.current && y({
+  }, [n, p]), j = (0, f.b1)(t), w = (0, f.NN)(j, v.current, x), N = (0, c.ZP)(), C = (0, d.Sl)((0, o.wj)(N) ? h.Il.PRIMARY_300 : h.Il.PRIMARY_700), S = null == j || null == w, O = (0 === y.width || 0 === y.height || S) && null != t, P = a.useCallback(() => {
+    null != v.current && b({
       width: v.current.offsetWidth,
       height: v.current.offsetHeight
     })
@@ -71,7 +71,7 @@ let p = a.memo(function(e) {
       width: n,
       height: l
     } = e;
-    if (0 !== b.width && 0 !== b.height && null != w && w.length > 0) {
+    if (0 !== y.width && 0 !== y.height && null != w && w.length > 0) {
       let e = n / w.length,
         a = -(e * (m.nl.waveformBarWidth - 1));
       t.clearRect(0, 0, n, l), t.fillStyle = C.hex;
@@ -82,13 +82,13 @@ let p = a.memo(function(e) {
         t.fillRect(r, s, e - a, i)
       }
     }
-  }, [C, b, N, w]), (0, l.jsxs)("div", {
+  }, [C, y, N, w]), (0, l.jsxs)("div", {
     className: r()(g.container, i),
     children: [(0, l.jsx)("canvas", {
       className: g.waveformCanvas,
       ref: v,
-      width: 4 * b.width,
-      height: 4 * b.height
+      width: 4 * y.width,
+      height: 4 * y.height
     }), O && (0, l.jsx)("div", {
       className: g.loading,
       children: (0, l.jsx)(u.$jN, {

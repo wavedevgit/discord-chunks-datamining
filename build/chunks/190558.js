@@ -4178,6 +4178,25 @@ let {
         opacity: 1
       }
     },
+    EXPERIMENTAL_AVATAR_EMBED_BG: {
+      category: "background",
+      [r.DARK]: {
+        raw: "OPACITY_BLACK_52",
+        opacity: .5215686274509804
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_BLACK_52",
+        opacity: .5215686274509804
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_BLACK_52",
+        opacity: .5215686274509804
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_BLACK_52",
+        opacity: .5215686274509804
+      }
+    },
     EXPRESSION_PICKER_BG: {
       category: "background",
       [r.DARK]: {
