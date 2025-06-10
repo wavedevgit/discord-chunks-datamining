@@ -92,11 +92,11 @@ var L = function(e) {
   x = function(e) {
     return e.EDIT = "edit", e.CREATE = "create", e
   }(x || {});
-let M = {
+let k = {
     [O]: l.G,
     [v]: o.X
   },
-  k = e => ({
+  M = e => ({
     name: "name",
     id: A,
     title: () => _.intl.string(_.t.vyuULS),
@@ -250,7 +250,7 @@ let M = {
         }
       },
       renderInput(t) {
-        let n = M[e],
+        let n = k[e],
           r = null == t.value || "" === t.value || null != n && null != n.find(e => {
             let {
               value: n
@@ -290,7 +290,7 @@ let M = {
     ],
     modalUSWithName: [
       [j],
-      [k],
+      [M],
       [U],
       [G],
       [B],
@@ -298,7 +298,7 @@ let M = {
     ],
     modalInternationalWithName: [
       [j],
-      [k],
+      [M],
       [U],
       [G],
       [B],
@@ -306,13 +306,13 @@ let M = {
       [F]
     ],
     settingsUS: [
-      [k],
+      [M],
       [U, G],
       [B, V, F],
       [j]
     ],
     settingsUSMobile: [
-      [k],
+      [M],
       [U],
       [G],
       [B],
@@ -321,14 +321,14 @@ let M = {
       [j]
     ],
     settingsInternational: [
-      [k],
+      [M],
       [U, G],
       [B],
       [V, F],
       [j]
     ],
     settingsInternationalMobile: [
-      [k],
+      [M],
       [U],
       [G],
       [B],

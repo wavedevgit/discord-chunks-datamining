@@ -83,12 +83,12 @@ function x() {
   w(I, {
     loading: !1,
     nextFetchDate: new Date(Date.now() + a)
-  }), S.set(I, setTimeout(() => M({
+  }), S.set(I, setTimeout(() => k({
     feedId: I,
     feature: i.L.INBOX
   }), a))
 }
-async function M(e) {
+async function k(e) {
   let {
     feedId: t,
     feature: n,
@@ -116,7 +116,7 @@ async function M(e) {
     let e = null != (i = N.get(t)) ? i : 0;
     if (e < O) {
       let i = _.Z.Millis.MINUTE * Math.pow(2, e) + P(e);
-      S.set(t, setTimeout(() => M({
+      S.set(t, setTimeout(() => k({
         feedId: t,
         feature: n,
         force: r
@@ -129,12 +129,12 @@ async function M(e) {
   }
 }
 
-function k() {
+function M() {
   x()
 }
 
 function j() {
-  k()
+  M()
 }
 
 function U() {
@@ -146,7 +146,7 @@ function G(e) {
     feedId: t,
     feature: n
   } = e;
-  L(t), M({
+  L(t), k({
     feedId: t,
     feature: n,
     force: !0
@@ -177,7 +177,7 @@ function V() {
   }, {
     autoTrackExposure: !0
   });
-  e && M({
+  e && k({
     feedId: E.YN.GAME_PROFILE_FEED,
     feature: i.L.GAME_PROFILE
   })
@@ -191,7 +191,7 @@ function Z() {
   }, {
     autoTrackExposure: !0
   });
-  e && M({
+  e && k({
     feedId: E.YN.GAME_PROFILE_FEED,
     feature: i.L.OVERLAY_INVITES
   })
@@ -201,9 +201,9 @@ class H extends o.Z {
     super(...e), y(this, "actions", {
       POST_CONNECTION_OPEN: j,
       CONNECTION_CLOSED: U,
-      WINDOW_FOCUS: k,
-      IDLE: k,
-      CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: k,
+      WINDOW_FOCUS: M,
+      IDLE: M,
+      CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: M,
       CONTENT_INVENTORY_MANUAL_REFRESH: G,
       CONTENT_INVENTORY_INBOX_STALE: B,
       SPOTIFY_NEW_TRACK: F,

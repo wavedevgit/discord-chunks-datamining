@@ -76,8 +76,8 @@ function A(e) {
   let {
     buttonType: L,
     description: x
-  } = (0, b.Z)(t, n, A, N), M = L === b.y.JOIN_GUILD, k = !y && w, j = i.useMemo(() => A ? u.JO.createFromGuildRecord(O) : null != N ? u.JO.createFromDiscoverableGuild(N) : void 0, [O, A, N]);
-  return k ? (0, r.jsx)(f.SE, {}) : (0, r.jsxs)("div", {
+  } = (0, b.Z)(t, n, A, N), k = L === b.y.JOIN_GUILD, M = !y && w, j = i.useMemo(() => A ? u.JO.createFromGuildRecord(O) : null != N ? u.JO.createFromDiscoverableGuild(N) : void 0, [O, A, N]);
+  return M ? (0, r.jsx)(f.SE, {}) : (0, r.jsxs)("div", {
     className: T.infoContainer,
     children: [(0, r.jsxs)(f.W_, {
       children: [(0, r.jsxs)("div", {
@@ -104,7 +104,7 @@ function A(e) {
           children: (0, r.jsx)(d.Oe, {
             expressionSourceGuild: j,
             hasJoinedExpressionSourceGuild: A,
-            isDisplayingJoinGuildButtonInPopout: M
+            isDisplayingJoinGuildButtonInPopout: k
           })
         }), (0, r.jsx)(S, {
           buttonType: L,

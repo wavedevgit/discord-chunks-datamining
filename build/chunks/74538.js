@@ -28,7 +28,7 @@ n.d(t, {
   Wz: () => tN,
   XK: () => e$,
   Z8: () => eb,
-  ZP: () => tM,
+  ZP: () => tk,
   Zx: () => e0,
   _O: () => tC,
   a5: () => eH,
@@ -130,12 +130,12 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = {
+let k = {
     PAYMENT_SOURCE_MANAGEMENT: "https://support.apple.com/HT201266",
     BILLING_HISTORY: "https://support.apple.com/HT201266",
     SUBSCRIPTION_MANAGEMENT: "https://support.apple.com/HT202039"
   },
-  k = {
+  M = {
     SUBSCRIPTION_MANAGEMENT: "https://play.google.com/store/account/subscriptions",
     PAYMENT_SOURCE_MANAGEMENT: "https://play.google.com/store/paymentmethods",
     BILLING_HISTORY: "https://play.google.com/store/account/orderhistory"
@@ -543,11 +543,11 @@ function es(e) {
     price: m
   }) : P.intl.format(P.t.NUkcpK, {
     price: m
-  }) : P.intl.string(P.t.zYx3Y2), M = N ? D ? P.intl.format(P.t.VsKcFB, {
+  }) : P.intl.string(P.t.zYx3Y2), k = N ? D ? P.intl.format(P.t.VsKcFB, {
     price: m
   }) : P.intl.format(P.t.hJ5xER, {
     price: m
-  }) : P.intl.string(P.t["8rSipK"]), k = N ? D ? P.intl.format(P.t["jRy6/P"], {
+  }) : P.intl.string(P.t["8rSipK"]), M = N ? D ? P.intl.format(P.t["jRy6/P"], {
     price: m,
     num: L
   }) : P.intl.format(P.t.tTNE8P, {
@@ -623,7 +623,7 @@ function es(e) {
             pauseDate: p.currentPeriodEnd
           });
         case A.O0b.PAUSED:
-          if (v) return M;
+          if (v) return k;
           return P.intl.format(P.t["6RTdZG"], {
             resumeDate: p.pauseEndsAt
           });
@@ -635,7 +635,7 @@ function es(e) {
             }
           });
         default:
-          return M
+          return k
       }
     case C.Xh.PREMIUM_MONTH_TIER_2:
     case C.Xh.PREMIUM_YEAR_TIER_2:
@@ -675,7 +675,7 @@ function es(e) {
             pauseDate: p.currentPeriodEnd
           });
         case A.O0b.PAUSED:
-          if (v) return k;
+          if (v) return M;
           return P.intl.format(P.t["6RTdZG"], {
             resumeDate: p.pauseEndsAt
           });
@@ -702,7 +702,7 @@ function es(e) {
             percent: null != (d = null == y ? void 0 : y.percentage) ? d : C.M_,
             regularPrice: T,
             numMonths: null != (f = null == y ? void 0 : y.duration) ? f : C.rt
-          }) : k
+          }) : M
       }
     default:
       throw Error("Invalid planId ".concat(h))
@@ -1123,7 +1123,7 @@ function ex(e, t, n) {
   return (0, S.og)(r, e.interval, e.intervalCount)
 }
 
-function eM(e, t) {
+function ek(e, t) {
   let {
     planId: n
   } = e;
@@ -1138,7 +1138,7 @@ function eM(e, t) {
   return null == r || (0, f.Q0)(r.subscriptionPlanId) || null != e.renewalMutations && e.renewalMutations.planId !== e.planId ? e.planId : r.subscriptionPlanId
 }
 
-function ek(e, t) {
+function eM(e, t) {
   let {
     status: n
   } = e;
@@ -1391,9 +1391,9 @@ function ez(e, t) {
   switch (e) {
     case A.gg$.APPLE_PARTNER:
     case A.gg$.APPLE:
-      return M[t];
+      return k[t];
     case A.gg$.GOOGLE:
-      return k[t]
+      return M[t]
   }
   throw Error("Invalid external payment gateway ".concat(e))
 }
@@ -1668,7 +1668,7 @@ function tx(e) {
     return e + i * r
   }, 0)
 }
-let tM = Object.freeze({
+let tk = Object.freeze({
   isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < G,
   isPremiumAtLeast: T.yd,
   isPremium: T.I5,
@@ -1700,8 +1700,8 @@ let tM = Object.freeze({
   isSwitchingPlansDisabled: eA,
   getSwitchingPlansDisabledMessage: eN,
   isNoneSubscription: f.Q0,
-  getPlanIdFromInvoice: eM,
-  getStatusFromInvoice: ek,
+  getPlanIdFromInvoice: ek,
+  getStatusFromInvoice: eM,
   isBaseSubscriptionCanceled: ej,
   getPremiumGuildIntervalPrice: eB,
   hasAccountCredit: eF,

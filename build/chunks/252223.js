@@ -66,13 +66,13 @@ function x(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e) {
+function M(e) {
   let t = (null == e ? void 0 : e.name) === "" ? null : null == e ? void 0 : e.name;
   return null != t ? P.intl.formatToPlainString(P.t["0wJXSk"], {
     name: t
@@ -97,7 +97,7 @@ function U(e) {
   } = (0, g.Cq)({
     location: "StackedActivityStatus"
   }), s = (0, _.ZP)(r), l = a || o;
-  return null != t && i.push(k(t)), n.forEach(e => {
+  return null != t && i.push(M(t)), n.forEach(e => {
     let {
       tooltip: t
     } = (0, O.Z)(e, l);
@@ -144,7 +144,7 @@ function F(e) {
     animateEmoji: P = !0,
     hasQuest: D = !1,
     hideEmoji: x = !1,
-    hideTooltip: k = !1
+    hideTooltip: M = !1
   } = e;
   (0, f.Z)(null == t ? void 0 : t.id);
   let j = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
@@ -191,7 +191,7 @@ function F(e) {
   if (W) return null;
   let et = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-        t = !0 === e || k;
+        t = !0 === e || M;
       if (null != j) return (0, r.jsx)(S.Z, {
         stream: j,
         game: H,
@@ -229,7 +229,7 @@ function F(e) {
           hideText: !1,
           canTruncate: !1
         };
-      return null != j && e.push((0, r.jsx)(S.Z, M(L({
+      return null != j && e.push((0, r.jsx)(S.Z, k(L({
         stream: j,
         game: null == n ? void 0 : n.find(d.Z)
       }, t), {
@@ -238,7 +238,7 @@ function F(e) {
         e.push((0, r.jsx)(A.Z, L({
           activity: n
         }, t), "activity-".concat(i)))
-      }), X && e.push((0, r.jsx)(N.Z, M(L({
+      }), X && e.push((0, r.jsx)(N.Z, k(L({
         channel: _
       }, t), {
         showChannelName: !0
@@ -250,7 +250,7 @@ function F(e) {
       hasCustomStatusText: z,
       totalActivityCount: Q
     }),
-    ei = () => 0 === Q ? null : J && !Y ? k ? (0, r.jsxs)("div", {
+    ei = () => 0 === Q ? null : J && !Y ? M ? (0, r.jsxs)("div", {
       className: w.activityContainer,
       children: [et(), er()]
     }) : (0, r.jsx)(u.ua7, {
@@ -258,7 +258,7 @@ function F(e) {
       delay: C.X,
       text: en(),
       "aria-label": ee,
-      children: e => (0, r.jsxs)("div", M(L({
+      children: e => (0, r.jsxs)("div", k(L({
         className: w.activityContainer
       }, e), {
         children: [et(!0), er()]
@@ -278,12 +278,12 @@ function F(e) {
         }), null != e && !x && (0, r.jsx)(v.Z, {
           emoji: e,
           animate: P,
-          hideTooltip: k,
+          hideTooltip: M,
           className: y
         }), null != t && (0, r.jsx)(T.Z, {
           variant: "text-".concat(O, "/medium"),
           className: g,
-          hideTooltip: k,
+          hideTooltip: M,
           children: t
         })]
       })

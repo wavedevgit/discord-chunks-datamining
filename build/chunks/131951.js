@@ -28,8 +28,8 @@ var u, d = n(512722),
   D = n(646047),
   L = n(594190),
   x = n(502286),
-  M = n(355552),
-  k = n(294473),
+  k = n(355552),
+  M = n(294473),
   j = n(706629),
   U = n(166884),
   G = n(529558),
@@ -120,8 +120,8 @@ let eS = new C.Z("MediaEngineStore"),
   },
   eL = 500,
   ex = 5 * $.Z.Millis.SECOND,
-  eM = -60,
-  ek = 100,
+  ek = -60,
+  eM = 100,
   ej = 2 * $.Z.Millis.SECOND,
   eU = 0;
 
@@ -129,7 +129,7 @@ function eG() {
   return {
     mode: ep.pM4.VOICE_ACTIVITY,
     modeOptions: {
-      threshold: eM,
+      threshold: ek,
       autoThreshold: ee.isPlatformEmbedded || __OVERLAY__,
       vadUseKrisp: !0,
       vadLeading: 5,
@@ -331,7 +331,7 @@ function tw() {
     if (null != o.desktopSource) {
       let t = tT(),
         n = tA().videoHook,
-        i = tk(),
+        i = tM(),
         a = i ? tj() && (0, Z.R)("MediaEngineStore_updateVideo").enabled ? eh.zj : eh.ZM : 0;
       eF.setGoLiveSource({
         desktopDescription: {
@@ -394,7 +394,7 @@ function tx(e) {
   }
 }
 
-function tM() {
+function tk() {
   eF.on(b.aB.Connection, e => {
     var t, n;
     tN(e), tR(e), tx(e);
@@ -405,7 +405,7 @@ function tM() {
         muteBeforeProcessing: s,
         pttBeforeProcessing: l,
         skipEncode: c
-      } = (null != o ? j.Z : k.Z).getCurrentConfig(ev({
+      } = (null != o ? j.Z : M.Z).getCurrentConfig(ev({
         location: "setupMediaEngine"
       }, null != o && {
         guildId: o
@@ -422,7 +422,7 @@ function tM() {
       } = U.Z.getConfig();
       e.configureGoLiveSimulcast(t, n)
     }(0, ee.isWindows)() ? (null == tb ? void 0 : tb.startsWith("NVIDIA")) || (null == tb ? void 0 : tb.startsWith("AMD")) ? e.setExperimentFlag(eb.V8.SIGNAL_AV1, !0): e.setExperimentFlag(eb.V8.SIGNAL_AV1_DECODE, !0): ((0, ee.isMac)() || (0, ee.isLinux)()) && e.setExperimentFlag(eb.V8.SIGNAL_AV1_DECODE, !0), (0, ee.isWindows)() && e.setExperimentFlag(eb.V8.SIGNAL_AV1_HARDWARE_DECODE, !0), eF.setHasFullbandPerformance((0, R.Z)());
-    let f = (0, M.D)("setupMediaEngine").enabled;
+    let f = (0, k.D)("setupMediaEngine").enabled;
     if (e.setRemoteAudioHistory(1e3 * !!f), (0, N.Z)(r)) {
       let t = A.Z.getSettings();
       e.setExperimentFlag(eb.V8.STREAMER_CLIP, t.clipsEnabled);
@@ -435,7 +435,7 @@ function tM() {
       });
       e.setViewerSideClip(n), e.setClipsKeyFrameInterval(eb.ux)
     }
-    for (let t of (i = tA(e.context), e.setPostponeDecodeLevel(ek), Object.keys(i.localMutes))) t !== ea.default.getId() && e.setLocalMute(t, i.localMutes[t]);
+    for (let t of (i = tA(e.context), e.setPostponeDecodeLevel(eM), Object.keys(i.localMutes))) t !== ea.default.getId() && e.setLocalMute(t, i.localMutes[t]);
     for (let t of Object.keys(i.localVolumes)) t !== ea.default.getId() && e.setLocalVolume(t, i.localVolumes[t]);
     for (let t of Object.keys(i.localPans)) {
       let n = i.localPans[t];
@@ -705,7 +705,7 @@ function tM() {
   })
 }
 
-function tk() {
+function tM() {
   return (0, ee.isWindows)() && m().satisfies(null === I.Z || void 0 === I.Z ? void 0 : I.Z.os.release, eh.c5)
 }
 
@@ -762,7 +762,7 @@ function tV() {
   }), y.K.remove("audio")), eV = null != (e = y.K.get(eA)) ? e : {}, p().each(eV, e => {
     if (p().defaultsDeep(e, eG()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, ei.Kd)(e.modeOptions.shortcut)), null != e.modeOptions && e.vadUseKrispSettingVersion !== eN && (e.vadUseKrispSettingVersion = eN, e.modeOptions.vadUseKrisp = !0), e.qosMigrated || (e.qosMigrated = !0, e.qos = !1), !e.vadThrehsoldMigrated) {
       var t;
-      e.vadThrehsoldMigrated = !0, (null == (t = e.modeOptions) ? void 0 : t.threshold) === -40 && (e.modeOptions.threshold = eM)
+      e.vadThrehsoldMigrated = !0, (null == (t = e.modeOptions) ? void 0 : t.threshold) === -40 && (e.modeOptions.threshold = ek)
     }(0, ee.isWeb)() ? e.ncUseKrispjsSettingVersion !== eR && (e.ncUseKrispjsSettingVersion = eR, e.noiseSuppression = !1, e.noiseCancellation = !0): e.ncUseKrispSettingVersion !== eC && (e.ncUseKrispSettingVersion = eC, e.noiseSuppression = !1, e.noiseCancellation = !0), e.hardwareEnabledVersion !== eP && (e.hardwareH264 = !0, e.hardwareEnabledVersion = eP), null == e.hardwareEncoding && (e.hardwareEncoding = e.hardwareH264)
   }), tY()
 }
@@ -1378,13 +1378,13 @@ function nx(e) {
   l = t, W.Z.setKrispSuppressionLevel(t)
 }
 
-function nM(e) {
+function nk(e) {
   tZ({
     videoHook: e.enabled
   })
 }
 
-function nk(e) {
+function nM(e) {
   tZ({
     experimentalSoundshare2: e.enabled
   })
@@ -1645,7 +1645,7 @@ function n7(e) {
       id: o.desktopSource.id,
       soundshareId: o.desktopSource.soundshareId,
       useVideoHook: _,
-      useGraphicsCapture: tk(),
+      useGraphicsCapture: tM(),
       useLoopback: r.getExperimentalSoundshare(),
       useQuartzCapturer: !0,
       allowScreenCaptureKit: tU(),
@@ -1805,7 +1805,7 @@ function r_(e) {
 }
 class rp extends(u = E.ZP.Store) {
   initialize() {
-    tM(), tV(), nK(), na(), tE = {
+    tk(), tV(), nK(), na(), tE = {
       [eb.AN.VIDEO]: eF.supports(eb.AN.VIDEO),
       [eb.AN.DESKTOP_CAPTURE]: eF.supports(eb.AN.DESKTOP_CAPTURE),
       [eb.AN.HYBRID_VIDEO]: eF.supports(eb.AN.HYBRID_VIDEO)
@@ -2270,8 +2270,8 @@ let rm = r = new rp(v.Z, {
   AUDIO_SET_DISPLAY_SILENCE_WARNING: nD,
   AUDIO_SET_DEBUG_LOGGING: nL,
   AUDIO_SET_KRISP_SUPPRESSION_LEVEL: nx,
-  MEDIA_ENGINE_SET_VIDEO_HOOK: nM,
-  MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE: nk,
+  MEDIA_ENGINE_SET_VIDEO_HOOK: nk,
+  MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE: nM,
   MEDIA_ENGINE_SET_USE_SYSTEM_SCREENSHARE_PICKER: nj,
   AUDIO_SET_ATTENUATION: nU,
   AUDIO_SET_QOS: nG,

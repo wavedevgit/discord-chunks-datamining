@@ -158,7 +158,7 @@ function A(e) {
       }
     }, x = e => {
       I(e)
-    }, M = o.length > 1;
+    }, k = o.length > 1;
   return (0, r.jsxs)("div", {
     className: l()(m.container, a),
     children: [(0, r.jsxs)("div", {
@@ -181,7 +181,7 @@ function A(e) {
           })
         }))
       })]
-    }), M && (0, r.jsx)(T, {
+    }), k && (0, r.jsx)(T, {
       colors: o,
       selectedIndex: b,
       onColorSelect: x
@@ -216,7 +216,7 @@ function A(e) {
               colorClass: m.iconWithHover
             })
           }))
-        }), M && (0, r.jsx)(f.ua7, {
+        }), k && (0, r.jsx)(f.ua7, {
           text: h.intl.string(p.default["rTik5+"]),
           children: e => (0, r.jsx)(f.zxk, y(E({}, e), {
             size: f.zxk.Sizes.ICON,

@@ -62,8 +62,8 @@ function R(e) {
     isEmpty: w,
     showAllButtons: D,
     children: L
-  } = e, x = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), M = P(T.id, O, w), {
-    activeCommand: k,
+  } = e, x = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), k = P(T.id, O, w), {
+    activeCommand: M,
     activeCommandOption: j
   } = (0, o.cj)([c.Z], () => ({
     activeCommand: c.Z.getActiveCommand(T.id),
@@ -75,24 +75,24 @@ function R(e) {
   }, {
     autoTrackExposure: !1
   }), G = [], B = !T.isDM() || void 0 === T.recipients || T.recipients.length > 1, F = (0, o.e7)([g.default], () => B ? null : g.default.getUser(T.recipients[0])), V = (0, d.R6)("ChannelTextAreaButtons"), Z = (0, f.Nt)() && (null == (t = O.confetti) ? void 0 : t.button) != null;
-  return (a.tq || ((null == (p = O.gifts) ? void 0 : p.button) != null && null == k && !U && (null == F || E.ZP.isPremiumEligible(F)) && G.push((0, r.jsx)(C, {
+  return (a.tq || ((null == (p = O.gifts) ? void 0 : p.button) != null && null == M && !U && (null == F || E.ZP.isPremiumEligible(F)) && G.push((0, r.jsx)(C, {
     disabled: I,
     channel: T
-  }, "gift")), (null == (h = O.gifs) ? void 0 : h.button) != null && null == k && D && G.push((0, r.jsx)(y.Z, {
+  }, "gift")), (null == (h = O.gifs) ? void 0 : h.button) != null && null == M && D && G.push((0, r.jsx)(y.Z, {
     disabled: I,
     type: O
-  }, "gif")), Z && null == k && G.push((0, r.jsx)(v.Z, {
+  }, "gif")), Z && null == M && G.push((0, r.jsx)(v.Z, {
     disabled: I,
     channel: T
-  }, "confetti")), !Z && (null == (m = O.stickers) ? void 0 : m.button) != null && null == k && D && G.push((0, r.jsx)(A.Z, {
+  }, "confetti")), !Z && (null == (m = O.stickers) ? void 0 : m.button) != null && null == M && D && G.push((0, r.jsx)(A.Z, {
     disabled: I,
     type: O
-  }, "sticker"))), (null == (n = O.emojis) ? void 0 : n.button) != null && (null == k || null != j && j.type !== s.jw.ATTACHMENT) && G.push((0, r.jsx)(b.Z, {
+  }, "sticker"))), (null == (n = O.emojis) ? void 0 : n.button) != null && (null == M || null != j && j.type !== s.jw.ATTACHMENT) && G.push((0, r.jsx)(b.Z, {
     disabled: I,
     type: O
   }, "emoji")), V || null == L || G.push(L), (null == (i = O.submit) ? void 0 : i.button) != null && ((null == (_ = O.submit) ? void 0 : _.ignorePreference) || x) && !V && G.push((0, r.jsx)(S.Z, {
     onClick: R,
-    disabled: I || M
+    disabled: I || k
   }, "submit")), V && null != L && G.push(L), 0 === G.length) ? null : (0, r.jsx)("div", {
     className: N.buttons,
     children: G

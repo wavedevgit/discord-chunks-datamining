@@ -71,8 +71,8 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let M = 190,
-  k = 178,
+let k = 190,
+  M = 178,
   j = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   U = e => {
     let {
@@ -173,11 +173,11 @@ function B(e) {
       }
       return 0
     }, [y, R, s]),
-    M = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == _), [f, _, x]);
+    k = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == _), [f, _, x]);
   return (0, r.jsx)(F, {
     channel: t,
     buttonPurchaseState: x,
-    buttonDisabledState: M,
+    buttonDisabledState: k,
     price: h,
     onActionClick: L,
     loading: P,
@@ -436,8 +436,8 @@ let F = e => {
       className: R.error,
       children: [(0, r.jsx)(l.Eep, {
         src: P,
-        width: k,
-        height: M
+        width: M,
+        height: k
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         children: C.intl.string(C.t.oKJdSk)

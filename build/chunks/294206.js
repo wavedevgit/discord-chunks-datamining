@@ -73,7 +73,7 @@ function L(e, t) {
 
 function x(e, t) {
   if (null == e) return {};
-  var n, r, i = M(e, t);
+  var n, r, i = k(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -81,14 +81,14 @@ function x(e, t) {
   return i
 }
 
-function M(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let k = "1",
+let M = "1",
   j = .01,
   U = .1,
   G = .01,
@@ -173,7 +173,7 @@ function Z(e) {
 
 function H(e, t) {
   return i.useMemo(() => {
-    if (null == t || e !== k) return {
+    if (null == t || e !== M) return {
       x: 0,
       y: 0
     };
@@ -187,7 +187,7 @@ function H(e, t) {
 let Y = i.forwardRef(function(e, t) {
   var n, a, u, y, O, P, {
       sound: D,
-      channel: M,
+      channel: k,
       containerClassName: F,
       className: Y,
       focused: W,
@@ -214,15 +214,15 @@ let Y = i.forwardRef(function(e, t) {
     name: ed,
     emojiId: ef,
     emojiName: e_
-  } = D, ep = (0, l.e7)([b.default], () => b.default.getCurrentUser()), eh = (0, S.z)(D, null == M ? void 0 : M.guild_id), {
+  } = D, ep = (0, l.e7)([b.default], () => b.default.getCurrentUser()), eh = (0, S.z)(D, null == k ? void 0 : k.guild_id), {
     playSoundboardSound: em,
     previewSound: eg,
     isPlayingSound: eE
-  } = (0, T.Z)(D, null != (u = null == M ? void 0 : M.id) ? u : null, null != (y = ea ? E.AY.getSetting() : null == (n = E.kU.getSetting()) ? void 0 : n.volume) ? y : 100, !ea && (null == M ? void 0 : M.isVocal()) ? N.w.VOICE : N.w.DEFAULT), {
+  } = (0, T.Z)(D, null != (u = null == k ? void 0 : k.id) ? u : null, null != (y = ea ? E.AY.getSetting() : null == (n = E.kU.getSetting()) ? void 0 : n.volume) ? y : 100, !ea && (null == k ? void 0 : k.isVocal()) ? N.w.VOICE : N.w.DEFAULT), {
     createMultipleConfettiAt: eb
-  } = i.useContext(p.h), ey = i.useRef(null), eO = H(D.soundId, ey.current), ev = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), eI = i.useRef(j), eT = i.useRef(new c.Xp), eS = D.soundId === k, eA = "sound-".concat(D.soundId), eN = (0, s.JA)(eA), eC = null != ef || null != e_, eR = !(0, I.Nq)(ep, D, M) && !ea, eP = K || q && !eR, ew = null != (O = h.Wq.useStore().bottomPosition) ? O : 0, eD = (null != (P = null == (a = ey.current) ? void 0 : a.getBoundingClientRect().bottom) ? P : 0) + 50 > ew ? "top" : "bottom", [eL, ex] = i.useState(!1), eM = eR && et;
+  } = i.useContext(p.h), ey = i.useRef(null), eO = H(D.soundId, ey.current), ev = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), eI = i.useRef(j), eT = i.useRef(new c.Xp), eS = D.soundId === M, eA = "sound-".concat(D.soundId), eN = (0, s.JA)(eA), eC = null != ef || null != e_, eR = !(0, I.Nq)(ep, D, k) && !ea, eP = K || q && !eR, ew = null != (O = h.Wq.useStore().bottomPosition) ? O : 0, eD = (null != (P = null == (a = ey.current) ? void 0 : a.getBoundingClientRect().bottom) ? P : 0) + 50 > ew ? "top" : "bottom", [eL, ex] = i.useState(!1), ek = eR && et;
 
-  function ek() {
+  function eM() {
     X || em($)
   }
 
@@ -230,14 +230,14 @@ let Y = i.forwardRef(function(e, t) {
     if (eS && !ev && (eI.current = Math.min(eI.current + G, U), Math.random() < eI.current && eb(eO.x, eO.y, void 0, void 0, {
         sprite: A.vv
       })), null != J) return void J(e);
-    ek()
+    eM()
   }
   let eU = V({
       sound: D,
       previewSound: eg,
       disabled: eR && !K
     }),
-    eG = e => X || eR ? eM ? (0, r.jsx)(d.mBM, {
+    eG = e => X || eR ? ek ? (0, r.jsx)(d.mBM, {
       size: "xs",
       color: "currentColor",
       className: o()(R.primaryIcon, R.lockIcon, e, {
@@ -252,7 +252,7 @@ let Y = i.forwardRef(function(e, t) {
       sound: D,
       disabled: !z && !K
     }),
-    eF = () => eM && !en ? (0, r.jsxs)(r.Fragment, {
+    eF = () => ek && !en ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: R.buttonOverlayBackground
       }), eG(R.primaryIconTopLevel), (0, r.jsx)("div", {
@@ -272,7 +272,7 @@ let Y = i.forwardRef(function(e, t) {
         className: R.buttonOverlayActions,
         children: ee === v.Pb.SOUNDMOJI ? (0, r.jsx)(m.ZP, {
           sound: D,
-          channel: M,
+          channel: k,
           setTooltipShowing: ex
         }) : (0, r.jsxs)(r.Fragment, {
           children: [eP && eU, eG(), eP && eB]

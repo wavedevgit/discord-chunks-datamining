@@ -48,7 +48,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,7 +73,7 @@ function k(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -90,7 +90,7 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
       emojiSearchResults: p,
       gridWidth: h,
       emojiPaddingHorizontal: x,
-      emojiSpriteSize: k,
+      emojiSpriteSize: M,
       shouldShowSoundmojiInEmojiPicker: U,
       showOnlyUnicode: B
     } = e, F = (0, s.e7)([c.ZP], () => c.ZP.categories), V = r.useMemo(() => B ? _.ZP.getCategories() : F, [F, B]), Z = (0, s.e7)([y.Z], () => y.Z.getGuild(null == t ? void 0 : t.getGuildId()), [t]), H = null == t ? null : t.getGuildId(), Y = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(H), [H]), W = (0, C.NJ)(H), K = (0, C.wC)(H), z = (0, C.q5)(H), {
@@ -133,7 +133,7 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
         u = 0,
         d = 0;
       if (null != Y && null != h) {
-        let f = Math.floor(h / (k + 2 * x)),
+        let f = Math.floor(h / (M + 2 * x)),
           m = 3 * f,
           g = (o, _) => {
             let p = new Map,
@@ -173,7 +173,7 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
                   return {
                     type: 0,
                     emoji: e,
-                    size: k,
+                    size: M,
                     isDisabled: p.get(e),
                     rowIndex: d,
                     columnIndex: G && t ? n + 1 : n,
@@ -186,7 +186,7 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
                   type: 1,
                   guildId: y.id,
                   name: L.intl.string(L.t["Z/r7IS"]),
-                  size: k,
+                  size: M,
                   rowIndex: d,
                   columnIndex: 0,
                   visibleRowIndex: u
@@ -197,7 +197,7 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
                     type: 1,
                     guildId: y.id,
                     name: L.intl.string(L.t["Z/r7IS"]),
-                    size: k,
+                    size: M,
                     rowIndex: e,
                     columnIndex: t.length,
                     visibleRowIndex: u
@@ -209,7 +209,7 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
                     type: 2,
                     guildId: y.id,
                     name: L.intl.string(L.t.NZI2Zm),
-                    size: k,
+                    size: M,
                     rowIndex: e,
                     columnIndex: t.length,
                     visibleRowIndex: u,
@@ -221,7 +221,7 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
               d++
             }
             let V = h ? 0 : B,
-              Z = j(M({}, _), {
+              Z = j(k({}, _), {
                 count: o.length
               });
             r.push(Z), e.push(V)
@@ -345,7 +345,7 @@ let G = [D.Z5.DISALLOW_EXTERNAL, D.Z5.DISALLOW_CUSTOM],
         rowCountBySection: e,
         sectionDescriptors: r
       }
-    }, [Y, h, k, x, p, n, el, ec, es, i, et, ee, t, l, Q, J, er, V, Z, $, q, X, z, K, W, ei, eu, U])
+    }, [Y, h, M, x, p, n, el, ec, es, i, et, ee, t, l, Q, J, er, V, Z, $, q, X, z, K, W, ei, eu, U])
   };
 var F = function(e) {
   return e[e.PREMIUM = 0] = "PREMIUM", e[e.ROLE_SUBSCRIPTION = 1] = "ROLE_SUBSCRIPTION", e

@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Jh: () => M,
+  Jh: () => k,
   Lk: () => j,
   Xg: () => U,
   ZP: () => L,
-  _Z: () => k,
+  _Z: () => M,
   c7: () => x,
   j3: () => G
 }), n(358797), n(35282);
@@ -124,7 +124,7 @@ function x(e) {
   }))
 }
 
-function M(e) {
+function k(e) {
   var {
     guild: t,
     application: n
@@ -155,7 +155,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   var {
     guild: t,
     application: n
@@ -217,7 +217,7 @@ function U() {
   var e, t;
   let n = (0, l.TH)();
   return (0, r.jsx)(I.G, {
-    children: (0, r.jsx)(M, {
+    children: (0, r.jsx)(k, {
       guild: null == (e = n.state) ? void 0 : e.guild,
       application: null == (t = n.state) ? void 0 : t.application,
       showsCloseWindowText: !0

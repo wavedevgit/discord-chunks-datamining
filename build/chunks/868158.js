@@ -138,7 +138,7 @@ function w(e, t, n) {
       guilds: u
     } = e,
     d = I(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
-  k(n);
+  M(n);
   let f = x(C = o().keyBy(a, e => e.id), s);
   null == l || l.forEach(e => {
     let t = e.recipient_ids;
@@ -183,12 +183,12 @@ function x(e, t) {
   }), n
 }
 
-function M(e) {
+function k(e) {
   let t = A[e];
   return delete A[e], t
 }
 
-function k(e) {
+function M(e) {
   null != s.Z.database() && !1 === e.databaseOk && d.Z.replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok"), A = {};
   let t = Object.values(g.Z.getGuilds()),
     n = p.ZP.getGuilds(),
@@ -206,7 +206,7 @@ function k(e) {
 
 function j(e) {
   var t, n, r, i, a, o, s, l, c, u, d, f;
-  let _ = M(e.id);
+  let _ = k(e.id);
   if ("partial" !== e.data_mode) return {
     id: e.id,
     dataMode: e.data_mode,
@@ -266,7 +266,7 @@ function j(e) {
 
 function U(e, t) {
   var n, r, i, a, o, s, l, c, u, d, f, _;
-  if (null == t && (t = M(e.id)), "partial" !== e.data_mode) return {
+  if (null == t && (t = k(e.id)), "partial" !== e.data_mode) return {
     id: e.id,
     emojis: e.emojis,
     guild_scheduled_events: e.guild_scheduled_events,

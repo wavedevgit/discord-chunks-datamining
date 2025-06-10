@@ -102,7 +102,7 @@ function x() {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     markAsDismissed: t
   } = e;
@@ -130,7 +130,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     gradientAngle: t,
     setGradientAngle: n
@@ -332,7 +332,7 @@ function Z(e) {
       children: [(0, r.jsx)(l.Ttm, {
         children: (0, r.jsxs)("div", {
           className: R.editorBody,
-          children: [o ? (0, r.jsx)(M, {
+          children: [o ? (0, r.jsx)(k, {
             markAsDismissed: a
           }) : (0, r.jsx)(x, {}), (0, r.jsx)(I.o, {}), (0, r.jsx)(v.U, {
             onChange: e => {
@@ -341,7 +341,7 @@ function Z(e) {
             value: O,
             colors: d,
             setColors: h
-          }), d.length > 1 && (0, r.jsx)(k, {
+          }), d.length > 1 && (0, r.jsx)(M, {
             gradientAngle: p,
             setGradientAngle: b
           }), (0, r.jsx)(j, {

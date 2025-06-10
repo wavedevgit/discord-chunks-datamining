@@ -150,8 +150,8 @@ function T(e) {
     onMouseUp: D,
     onMouseEnter: L,
     onMouseLeave: x,
-    onKeyDown: M,
-    children: k,
+    onKeyDown: k,
+    children: M,
     rel: j,
     buttonRef: U,
     focusProps: G,
@@ -179,7 +179,7 @@ function T(e) {
       onMouseDown: h ? void 0 : w,
       onMouseEnter: L,
       onMouseLeave: x,
-      onKeyDown: h ? void 0 : M,
+      onKeyDown: h ? void 0 : k,
       type: T,
       disabled: h,
       style: S,
@@ -199,7 +199,7 @@ function T(e) {
         itemClassName: f.spinnerItem
       }) : null, (0, r.jsx)("div", {
         className: o()(f.contents, C),
-        children: k
+        children: M
       })]
     }))
   }));

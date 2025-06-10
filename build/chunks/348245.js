@@ -127,7 +127,7 @@ function x(e) {
   return s.K.set(L, i), !0
 }
 
-function M(e) {
+function k(e) {
   var t;
   if (null != r && r.channelId === e) return r;
   let n = (0, a.LX)(location.pathname, {
@@ -140,12 +140,12 @@ function M(e) {
   }
 }
 
-function k() {
+function M() {
   let e = v.Z.getChannelId();
   if (null == e) return;
   let t = b.Z.getChannel(e);
   if (null == t) return;
-  let n = M(t.id);
+  let n = k(t.id);
   r = void 0, w({
     guildId: t.getGuildId(),
     channelId: t.id,
@@ -324,15 +324,15 @@ function q(e) {
 }
 class X extends f.Z {
   _initialize() {
-    l.Z.subscribe("CONNECTION_OPEN", k)
+    l.Z.subscribe("CONNECTION_OPEN", M)
   }
   _terminate() {
-    l.Z.unsubscribe("CONNECTION_OPEN", k)
+    l.Z.unsubscribe("CONNECTION_OPEN", M)
   }
   constructor(...e) {
     super(...e), R(this, "fetchMessages", w), R(this, "loadSelectedChannelIfNecessary", j), R(this, "stores", new Map().set(E.ZP, V)), R(this, "actions", {
       APP_STATE_UPDATE: q,
-      OVERLAY_INITIALIZE: k,
+      OVERLAY_INITIALIZE: M,
       CHANNEL_SELECT: U,
       VOICE_CHANNEL_SELECT: G,
       THREAD_CREATE: H,

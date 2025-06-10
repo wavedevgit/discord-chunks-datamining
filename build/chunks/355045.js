@@ -57,7 +57,7 @@ let A = function(e) {
     })
   }
 
-  function M() {
+  function k() {
     (0, _.Z)({
       initialPlanId: null,
       subscriptionTier: I.Si.TIER_2,
@@ -139,7 +139,7 @@ let A = function(e) {
         innerClassName: o()(S.__invalid_guildBoostCtaContent, S.guildBoostCtaGiftContent),
         look: c.zxk.Looks.OUTLINED,
         color: c.zxk.Colors.WHITE,
-        onClick: M,
+        onClick: k,
         size: c.zxk.Sizes.LARGE,
         children: [(0, r.jsx)(c.OgN, {
           size: "md",

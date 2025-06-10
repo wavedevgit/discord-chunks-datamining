@@ -94,8 +94,8 @@ let w = e => {
     pauseAnimation: D = !1,
     applicationId: L,
     handleSubscribeModalClose: x,
-    withHighlight: M = !1,
-    icon: k,
+    withHighlight: k = !1,
+    icon: M,
     intent: j
   } = e, U = R(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
     analyticsLocations: G
@@ -126,7 +126,7 @@ let w = e => {
       }), V(!1)
     }, Q = E.ZP.getPremiumTypeSubscription(), J = (0, r.jsxs)("div", {
       className: T.button,
-      children: [k, null != S ? S : I.intl.string(I.t.gKmQ1N)]
+      children: [M, null != S ? S : I.intl.string(I.t.gKmQ1N)]
     }), $ = (0, h.o)("GuildBoostingSubscribeButton", Z, H), ee = !1;
   return ((ee = null !== Q && !(K.length > 0) && (null == Q ? void 0 : Q.isPausedOrPausePending) && (H === v.a$.NONE || $)) && (J = (0, r.jsxs)("div", {
     className: T.button,
@@ -148,7 +148,7 @@ let w = e => {
     size: l.zxk.Sizes.SMALL
   }, U), {
     className: o()(U.className, {
-      [T.buttonHighlighted]: M
+      [T.buttonHighlighted]: k
     }),
     submitting: F,
     onClick: X,

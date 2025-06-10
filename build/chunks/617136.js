@@ -3,7 +3,7 @@
 n.d(t, {
   Ic: () => D,
   O5: () => x,
-  Zk: () => M,
+  Zk: () => k,
   _3: () => w,
   _F: () => L,
   _b: () => S,
@@ -215,13 +215,13 @@ function x() {
   }, [e])
 }
 
-function M(e, t) {
+function k(e, t) {
   r.useEffect(() => {
-    k(t, e)
+    M(t, e)
   }, [e, t])
 }
 
-function k(e, t) {
+function M(e, t) {
   o.ZP.trackWithMetadata(E.rMx.QUEST_EMBED_FALLBACK_VIEWED, {
     quest_id: e,
     reason: t

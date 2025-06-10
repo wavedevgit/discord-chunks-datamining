@@ -8,7 +8,7 @@ n.d(t, {
   hz: () => j,
   mz: () => U,
   ol: () => G,
-  xB: () => M
+  xB: () => k
 });
 var r = n(255367),
   i = n(73800),
@@ -136,7 +136,7 @@ function x(e) {
       clamp: !0
     },
     onRest: y
-  }, "animate-always"), M = i.useRef(null), k = null != P["aria-label"], j = null != P["aria-labelledby"], U = i.useId(), G = null != (t = P["aria-labelledby"]) ? t : U, B = i.useMemo(() => ({
+  }, "animate-always"), k = i.useRef(null), M = null != P["aria-label"], j = null != P["aria-labelledby"], U = i.useId(), G = null != (t = P["aria-labelledby"]) ? t : U, B = i.useMemo(() => ({
     headerId: G,
     headerIdIsManaged: j
   }), [G, j]);
@@ -147,17 +147,17 @@ function x(e) {
       role: _,
       returnRef: I,
       impressionType: l.ImpressionTypes.MODAL,
-      "aria-labelledby": k ? void 0 : B.headerId
+      "aria-labelledby": M ? void 0 : B.headerId
     }, P), {
       children: (0, r.jsx)(s.animated.div, {
         className: o()(m, T.root, D[u], {
           [T.fullscreenOnMobile]: g,
           [T.rootWithShadow]: !E
         }),
-        ref: M,
+        ref: k,
         style: x,
         children: (0, r.jsx)(h.J, {
-          containerRef: M,
+          containerRef: k,
           children: a
         })
       })
@@ -165,7 +165,7 @@ function x(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   var t, n, a, s, l;
   let {
     headerId: c,
@@ -186,7 +186,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   switch (null != e ? e : "thin") {
     case "auto":
       return g.yW;
@@ -203,7 +203,7 @@ function j(e) {
     children: n,
     scrollerRef: i,
     scrollbarType: a
-  } = e, s = R(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = k(a);
+  } = e, s = R(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = M(a);
   return (0, r.jsx)(l, C(A({
     className: o()(T.content, t),
     ref: i

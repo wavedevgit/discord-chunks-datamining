@@ -95,8 +95,8 @@ function A(e) {
     isGift: D = !1,
     giftMessage: L,
     giftStyle: x,
-    giftingOrigin: M,
-    subscriptionTier: k,
+    giftingOrigin: k,
+    subscriptionTier: M,
     trialId: j,
     postSuccessGuild: U,
     openInvoiceId: G,
@@ -106,7 +106,7 @@ function A(e) {
     returnRef: Z,
     subscription: H,
     skipConfirm: Y
-  } = null != e ? e : {}, W = !1, K = (0, o.Z)(), z = p.default.getCurrentUser(), q = (0, g.M5)(z, b.p9.TIER_2), X = a()("payment-modal"), Q = (0, g.Wz)(k);
+  } = null != e ? e : {}, W = !1, K = (0, o.Z)(), z = p.default.getCurrentUser(), q = (0, g.M5)(z, b.p9.TIER_2), X = a()("payment-modal"), Q = (0, g.Wz)(M);
   return (0, s.ZDy)(async () => {
     let {
       default: e
@@ -117,12 +117,12 @@ function A(e) {
       } = n, o = T(n, ["onClose"]);
       return (0, r.jsx)(e, I(O({}, o), {
         loadId: K,
-        subscriptionTier: k,
+        subscriptionTier: M,
         skuId: Q,
         isGift: D,
         giftMessage: L,
         giftStyle: x,
-        giftingOrigin: M,
+        giftingOrigin: k,
         giftRecipient: V,
         initialPlanId: t,
         followupSKUInfo: i,

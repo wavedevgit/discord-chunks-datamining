@@ -78,14 +78,14 @@ function x(e, t) {
   }
 }
 
-function M(e) {
+function k(e) {
   let {
     branchId: t
   } = e;
   y.add(t)
 }
 
-function k(e) {
+function M(e) {
   let {
     applicationId: t,
     branchId: n,
@@ -207,8 +207,8 @@ b(Y, "displayName", "ApplicationBuildStore");
 let W = new Y(l.Z, {
   CONNECTION_OPEN: w,
   GAMES_DATABASE_UPDATE: L,
-  APPLICATION_BUILD_FETCH_START: M,
-  APPLICATION_BUILD_FETCH_SUCCESS: k,
+  APPLICATION_BUILD_FETCH_START: k,
+  APPLICATION_BUILD_FETCH_SUCCESS: M,
   APPLICATION_BUILD_NOT_FOUND: j,
   APPLICATION_BUILD_SIZE_FETCH_START: U,
   APPLICATION_BUILD_SIZE_FETCH_SUCCESS: G,

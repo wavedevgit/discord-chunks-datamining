@@ -63,7 +63,7 @@ function x() {
   w = d.Z.getState(), D = (0, m.H)(), L = c.default.isAuthenticated(), V()
 }
 
-function M() {
+function k() {
   if (null != N) return;
   let e = 0 === R ? 0 : v - (performance.now() - R);
   p.Z.addBreadcrumb({
@@ -81,7 +81,7 @@ function M() {
   }
 }
 
-function k() {
+function M() {
   if (null == N) return !1;
   switch (N.type) {
     case "timeout":
@@ -97,7 +97,7 @@ function k() {
 }
 
 function j() {
-  k() && (p.Z.addBreadcrumb({
+  M() && (p.Z.addBreadcrumb({
     category: S,
     message: "Stopping Analytics Heartbeat"
   }), (0, l.Z)())
@@ -140,7 +140,7 @@ function F() {
 }
 
 function V() {
-  F() ? M() : j()
+  F() ? k() : j()
 }
 
 function Z(e) {

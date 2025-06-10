@@ -9,7 +9,7 @@ n.d(t, {
   aC: () => L,
   pI: () => T,
   sR: () => D,
-  tt: () => k
+  tt: () => M
 }), n(539854);
 var r = n(399606),
   i = n(704215),
@@ -98,7 +98,7 @@ function D(e) {
 
 function L(e, t) {
   (0, s.PS)(e, n => {
-    n.joinSound = void 0, M({
+    n.joinSound = void 0, k({
       guildId: e,
       changeType: b.MW.REMOVED,
       soundType: b.jy.ENTRY,
@@ -115,7 +115,7 @@ function x(e, t, n) {
     r.joinSound = {
       soundId: t.soundId,
       guildId: i ? v.hY : t.guildId
-    }, M({
+    }, k({
       guildId: e,
       changeType: o,
       soundSource: a,
@@ -125,7 +125,7 @@ function x(e, t, n) {
   }, s.fy.INFREQUENT_USER_ACTION)
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t,
     changeType: n,
@@ -142,7 +142,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     location: t
   } = e;

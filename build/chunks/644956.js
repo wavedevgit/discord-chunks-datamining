@@ -56,7 +56,7 @@ function x(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,8 +67,8 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -127,7 +127,7 @@ function U(e) {
             let {
               default: e
             } = await Promise.all([n.e("14006"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("32152")]).then(n.bind(n, 757387));
-            return t => (0, r.jsx)(e, k(x({}, t), {
+            return t => (0, r.jsx)(e, M(x({}, t), {
               user: _,
               guildId: a,
               channel: p,
@@ -185,7 +185,7 @@ function G(e) {
   });
   return (0, r.jsx)(c.d.Provider, {
     value: void 0,
-    children: (0, r.jsx)("div", k(x({
+    children: (0, r.jsx)("div", M(x({
       className: w.rolePopout,
       ref: d
     }, t), {
@@ -224,7 +224,7 @@ function B(e) {
     inlinePreview: _ = !1
   } = e, {
     analyticsLocations: g
-  } = (0, m.ZP)(h.Z.ROLE_MENTION), E = (0, l.e7)([p.Z], () => p.Z.roleStyle), b = (0, I.$V)(d, "RoleMention"), T = (null != t && 0 !== t || null != n && null != n.primaryColor) && !_, S = T && "dot" === E, A = T && "username" === E, N = b && null != n && null != n.secondaryColor ? (0, v.f)(n) : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, k(x({
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), E = (0, l.e7)([p.Z], () => p.Z.roleStyle), b = (0, I.$V)(d, "RoleMention"), T = (null != t && 0 !== t || null != n && null != n.primaryColor) && !_, S = T && "dot" === E, A = T && "username" === E, N = b && null != n && null != n.secondaryColor ? (0, v.f)(n) : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, M(x({
     ref: C,
     className: w.roleMention,
     color: A ? t : null,

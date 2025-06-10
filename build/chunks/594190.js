@@ -38,9 +38,9 @@ var i, a = n(392711),
   D = n(145597),
   L = n(370862),
   x = n(981631),
-  M = n(987650);
+  k = n(987650);
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -56,7 +56,7 @@ function j(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -426,14 +426,14 @@ function ex(e) {
   ea = t, eo = null
 }
 
-function eM(e) {
+function ek(e) {
   let {
     pid: t
   } = e;
   eo = t, ea = null
 }
 
-function ek() {
+function eM() {
   ea = null
 }
 
@@ -535,7 +535,7 @@ function eW(e) {
 
 function eK() {
   g.Z.hasLoadedExperiments && Z.length > 0 && (eC(Z), Z = [])
-}!__OVERLAY__ && ((0, P.isDesktop)() || M.iP) && (en = function() {
+}!__OVERLAY__ && ((0, P.isDesktop)() || k.iP) && (en = function() {
   let e = [],
     t = new Set;
   r = {};
@@ -690,14 +690,14 @@ class ez extends(i = c.ZP.Store) {
     ec.add(null != (t = (0, h.F)(e)) ? t : e)
   }
 }
-k(ez, "displayName", "RunningGameStore");
+M(ez, "displayName", "RunningGameStore");
 let eq = new ez(d.Z, {
     RUNNING_GAMES_CHANGE: ew,
     CANDIDATE_GAMES_CHANGE: eD,
     PERMISSION_CLEAR_PTT_ADMIN_WARNING: eL,
     PERMISSION_REQUEST_ELEVATED_PROCESS: ex,
-    PERMISSION_CLEAR_ELEVATED_PROCESS: ek,
-    PERMISSION_CONTINUE_NONELEVATED_PROCESS: eM,
+    PERMISSION_CLEAR_ELEVATED_PROCESS: eM,
+    PERMISSION_CONTINUE_NONELEVATED_PROCESS: ek,
     RUNNING_GAME_ADD_OVERRIDE: ej,
     RUNNING_GAME_TOGGLE_OVERLAY: eV,
     RUNNING_GAME_TOGGLE_DETECTION: eZ,

@@ -71,9 +71,9 @@ function x(e, t) {
   }), e
 }
 
-function M(e, t) {
+function k(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = M(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -81,7 +81,7 @@ function M(e, t) {
   return i
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -174,7 +174,7 @@ let V = i.forwardRef(function(e, t) {
     isProcessing: D = !1,
     maxVisibleItems: L = 7,
     look: x = C.q.FILLED,
-    autoFocus: k = !1,
+    autoFocus: M = !1,
     popoutPosition: j = "bottom",
     filter: V = !0,
     debounceTime: H,
@@ -194,7 +194,7 @@ let V = i.forwardRef(function(e, t) {
     hidePills: el,
     renderCustomPill: ec,
     customPillContainerClassName: eu
-  } = e, ed = M(e, ["options", "value", "onChange", "clearable", "multi", "closeOnSelect", "onOpen", "onClose", "placeholder", "wrapperClassName", "className", "isDisabled", "isProcessing", "maxVisibleItems", "look", "autoFocus", "popoutPosition", "filter", "debounceTime", "renderOptionLabel", "onSearchChange", "renderOptionPrefix", "renderOptionSuffix", "aria-describedby", "aria-invalid", "aria-labelledby", "aria-required", "inputClassNames", "centerCaret", "onBlur", "matchSorterOptions", "clearQueryOnSelect", "hidePills", "renderCustomPill", "customPillContainerClassName"]);
+  } = e, ed = k(e, ["options", "value", "onChange", "clearable", "multi", "closeOnSelect", "onOpen", "onClose", "placeholder", "wrapperClassName", "className", "isDisabled", "isProcessing", "maxVisibleItems", "look", "autoFocus", "popoutPosition", "filter", "debounceTime", "renderOptionLabel", "onSearchChange", "renderOptionPrefix", "renderOptionSuffix", "aria-describedby", "aria-invalid", "aria-labelledby", "aria-required", "inputClassNames", "centerCaret", "onBlur", "matchSorterOptions", "clearQueryOnSelect", "hidePills", "renderCustomPill", "customPillContainerClassName"]);
   let {
     ref: ef,
     width: e_
@@ -213,7 +213,7 @@ let V = i.forwardRef(function(e, t) {
     active: ev,
     loadableOptions: n,
     debounceTime: H
-  }), eL = i.useMemo(() => F(eP, a), [eP, a]), ex = i.useMemo(() => eL.map(e => e.value), [eL]), eM = eL[eL.length - 1], ek = (0, A.Z)(eM), ej = i.useId(), eU = i.useId(), eG = i.useId(), eB = i.useCallback(e => {
+  }), eL = i.useMemo(() => F(eP, a), [eP, a]), ex = i.useMemo(() => eL.map(e => e.value), [eL]), ek = eL[eL.length - 1], eM = (0, A.Z)(ek), ej = i.useId(), eU = i.useId(), eG = i.useId(), eB = i.useCallback(e => {
     ev === e || w || (eI(e), e ? null == g || g() : null == E || E())
   }, [w, E, g, ev]), eF = i.useCallback(e => {
     ev && !e && eB(!1)
@@ -246,7 +246,7 @@ let V = i.forwardRef(function(e, t) {
     }), []),
     eW = (0, c.ZP)({
       id: eU,
-      defaultFocused: null != eM ? String(eM.value) : void 0,
+      defaultFocused: null != ek ? String(ek.value) : void 0,
       scrollToStart: eH,
       scrollToEnd: eY,
       isEnabled: ev,
@@ -259,7 +259,7 @@ let V = i.forwardRef(function(e, t) {
     ez = (0, A.Z)(eP);
   i.useEffect(() => {
     let e = ez.current,
-      t = ek.current;
+      t = eM.current;
     ev && null != t && !ew && requestAnimationFrame(() => {
       let n = eC.current,
         r = e.indexOf(t);
@@ -268,7 +268,7 @@ let V = i.forwardRef(function(e, t) {
         row: r
       })
     })
-  }, [ev, ew, ez, ek]), i.useEffect(() => {
+  }, [ev, ew, ez, eM]), i.useEffect(() => {
     let e = eK.current;
     if (ev && !ew) {
       var t;
@@ -282,13 +282,13 @@ let V = i.forwardRef(function(e, t) {
       }
       eO(null != (t = e.focusedItemId()) ? t : null)
     } else {
-      let t = ek.current,
+      let t = eM.current,
         n = null != t ? String(t.value) : null;
       e.setFocus(n), eO(null)
     }
-  }, [ev, ew, eK, ek]), i.useLayoutEffect(() => {
-    ev || (f ? eS("") : null != eM && eS(eM.label))
-  }, [f, eM, ev]), i.useLayoutEffect(() => {
+  }, [ev, ew, eK, eM]), i.useLayoutEffect(() => {
+    ev || (f ? eS("") : null != ek && eS(ek.label))
+  }, [f, ek, ev]), i.useLayoutEffect(() => {
     f && eS("")
   }, [f, eL.length]);
   let eq = i.useCallback(function(e) {
@@ -306,11 +306,11 @@ let V = i.forwardRef(function(e, t) {
     eO(null), (!f || _) && eB(!1), eN(!1), es && eS("")
   }, [n, eP, f, _, es, l, a, eB]);
   i.useLayoutEffect(() => {
-    if (k) {
+    if (M) {
       var e;
       null == (e = eb.current) || e.focus()
     }
-  }, [k]);
+  }, [M]);
   let eX = i.useCallback(() => {
       eS(""), eq(null), eB(!0)
     }, [eq, eB]),
@@ -396,7 +396,7 @@ let V = i.forwardRef(function(e, t) {
           },
           onBlur: e => {
             var t, n, r;
-            (null == (t = eR.current) ? void 0 : t.contains(e.relatedTarget)) || (null == (r = eC.current) || null == (n = r.getScrollerNode()) ? void 0 : n.contains(e.relatedTarget)) || (f || null == eM || eS(eM.label), eN(!1), eB(!1), null == ea || ea(e))
+            (null == (t = eR.current) ? void 0 : t.contains(e.relatedTarget)) || (null == (r = eC.current) || null == (n = r.getScrollerNode()) ? void 0 : n.contains(e.relatedTarget)) || (f || null == ek || eS(ek.label), eN(!1), eB(!1), null == ea || ea(e))
           },
           children: [(0, r.jsx)(h.t, {
             ringTarget: eg,
@@ -568,7 +568,7 @@ function Z(e) {
       var {
         ref: t,
         onKeyDown: n
-      } = e, i = M(e, ["ref", "onKeyDown"]);
+      } = e, i = k(e, ["ref", "onKeyDown"]);
       return (0, r.jsx)(E._2, x(D({
         className: o()(P.popout, P.searchableSelect, {
           [P.noScrollbar]: s.length <= c,
@@ -739,7 +739,7 @@ function K(e) {
     isSelected: l,
     isFocused: c,
     multi: d
-  } = e, f = M(e, ["value", "label", "prefix", "suffix", "onSelect", "isSelected", "isFocused", "multi"]);
+  } = e, f = k(e, ["value", "label", "prefix", "suffix", "onSelect", "isSelected", "isFocused", "multi"]);
   let _ = (0, u.JA)(String(t));
   return (0, r.jsxs)(p.P, x(D({
     tag: "li",
@@ -815,7 +815,7 @@ function q(e) {
     selectedOptions: t,
     renderOptionPrefix: n,
     renderOptionSuffix: i
-  } = e, a = M(e, ["selectedOptions", "renderOptionPrefix", "renderOptionSuffix"]);
+  } = e, a = k(e, ["selectedOptions", "renderOptionPrefix", "renderOptionSuffix"]);
   let o = t[0],
     s = null == n ? void 0 : n(null != o ? o : null, {
       inPill: !1,
@@ -853,7 +853,7 @@ function X(e) {
     renderOptionSuffix: p,
     inputClassNames: h,
     hidePills: m
-  } = e, g = M(e, ["query", "placeholder", "selectedOptions", "selectValue", "onKeyDown", "isEditing", "isDisabled", "isProcessing", "inputRef", "renderOptionPrefix", "renderOptionSuffix", "inputClassNames", "hidePills"]);
+  } = e, g = k(e, ["query", "placeholder", "selectedOptions", "selectValue", "onKeyDown", "isEditing", "isDisabled", "isProcessing", "inputRef", "renderOptionPrefix", "renderOptionSuffix", "inputClassNames", "hidePills"]);
   let E = Math.max(n.length, (null != t ? t : "").length),
     b = i.useRef(null),
     {

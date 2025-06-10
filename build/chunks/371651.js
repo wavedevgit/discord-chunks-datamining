@@ -85,8 +85,8 @@ let R = new u.Z("OverlayRenderStore"),
   D = !1,
   L = !1,
   x = null,
-  M = {},
-  k = null,
+  k = {},
+  M = null,
   j = null,
   U = new Set([c.Jx.FULLSCREEN, c.Jx.BORDERLESS_FULLSCREEN, c.Jx.UNKNOWN, c.Jx.MINIMIZED]),
   G = new Set([c.Jx.MINIMIZED, c.Jx.UNKNOWN]);
@@ -105,25 +105,25 @@ function V() {
 
 function Z(e) {
   var t;
-  return null != (t = M[e]) ? t : null
+  return null != (t = k[e]) ? t : null
 }
 
 function H() {
-  return Object.keys(M).map(Number)
+  return Object.keys(k).map(Number)
 }
 
 function Y(e, t) {
-  M = A(T({}, M), {
+  k = A(T({}, k), {
     [e]: T({}, t)
   })
 }
 
 function W(e) {
-  delete M[e]
+  delete k[e]
 }
 
 function K(e) {
-  return null != M[e]
+  return null != k[e]
 }
 
 function z(e, t, n) {
@@ -414,8 +414,8 @@ async function el(e) {
 }
 
 function ec(e) {
-  null == k && (__OVERLAY__ && R.error("Running Polling While in Overlay Context!"), k = setTimeout(async () => {
-    k = null;
+  null == M && (__OVERLAY__ && R.error("Running Polling While in Overlay Context!"), M = setTimeout(async () => {
+    M = null;
     let e = H();
     e.length > 0 && (ec(y.HD), await el(new Set(e)))
   }, e))
@@ -567,7 +567,7 @@ class eN extends(r = i.ZP.Store) {
     return Z(e)
   }
   getTrackedGames() {
-    return M
+    return k
   }
   getGameOverlayStatus(e) {
     let t = Z(e.pid);
@@ -607,7 +607,7 @@ class eN extends(r = i.ZP.Store) {
     return j
   }
   getOverlayRenderingTrackedGames() {
-    return Object.values(M).filter(e => e.overlayMethod !== l.gl.Disabled && e.state === l.mM.OVERLAY_RENDERING)
+    return Object.values(k).filter(e => e.overlayMethod !== l.gl.Disabled && e.state === l.mM.OVERLAY_RENDERING)
   }
 }
 I(eN, "displayName", "OverlayRenderStore");

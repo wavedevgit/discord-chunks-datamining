@@ -98,7 +98,7 @@ function x(e) {
   null != c ? N[u] = c : delete N[u]
 }
 
-function M(e) {
+function k(e) {
   let {
     appContext: t,
     streamKey: n
@@ -112,7 +112,7 @@ function M(e) {
   }), A[n] = null, S[n] = null, delete N[n]
 }
 
-function k(e) {
+function M(e) {
   let {
     streamKey: t,
     rtcServerId: n,
@@ -300,8 +300,8 @@ let z = new K(u.Z, !E.Z.isSupported() || __OVERLAY__ ? {} : {
   RTC_CONNECTION_UPDATE_ID: Z,
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: V,
   STREAM_START: x,
-  STREAM_STOP: M,
-  STREAM_CREATE: k,
+  STREAM_STOP: k,
+  STREAM_CREATE: M,
   STREAM_SERVER_UPDATE: j,
   STREAM_UPDATE: G,
   STREAM_DELETE: B,

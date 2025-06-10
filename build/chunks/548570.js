@@ -35,8 +35,8 @@ var r = n(512722),
   D = n(508569),
   L = n(183139),
   x = n(645436),
-  M = n(866483),
-  k = n(833508),
+  k = n(866483),
+  M = n(833508),
   j = n(981631);
 
 function U(e, t, n) {
@@ -84,7 +84,7 @@ function H(e) {
   let {
     actuallySkipped: t,
     reason: n
-  } = e, r = x.a(), i = M.Pf(), a = m.Z.getState(), o = i.length > 0 ? "".concat(n, " + ").concat(i) : n, s = r ? "paused" : "request_state";
+  } = e, r = x.a(), i = k.Pf(), a = m.Z.getState(), o = i.length > 0 ? "".concat(n, " + ").concat(i) : n, s = r ? "paused" : "request_state";
   v.default.track(j.rMx.GATEWAY_CONNECT_SKIPPED, {
     actually_skipped: null != t ? t : r,
     client_app_state: a,
@@ -97,7 +97,7 @@ function H(e) {
       client_app_state: m.Z.getState(),
       skip_context: s,
       original_connect_reason: o,
-      gateway_connect_reasons: M.Pf()
+      gateway_connect_reasons: k.Pf()
     })
   }, 200)
 }
@@ -127,7 +127,7 @@ function Y(e) {
       }) : e)), V.log("[FAST CONNECT] successfully took over websocket, state:", F(G({}, e), {
         messages: null == (_ = e.messages) ? void 0 : _.length
       })), c = l.state.open, u = l.state.identify, d = l.state.messages, f = l.state.clientState
-    } null == t && ((t = (0, k.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(a), t.onopen = () => i(u, f), t.onmessage = a, t.onclose = s, t.onerror = o
+    } null == t && ((t = (0, M.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(a), t.onopen = () => i(u, f), t.onmessage = a, t.onclose = s, t.onerror = o
 }
 
 function W() {}
@@ -180,7 +180,7 @@ class er extends L.Z {
   _connect(e) {
     if (!this.willReconnect()) return void V.verbose("Skipping _connect because willReconnect is false");
     let t = x.a();
-    if ((t || !M.RZ()) && (V.info("Skipping _connect because socket is paused"), H({
+    if ((t || !k.RZ()) && (V.info("Skipping _connect because socket is paused"), H({
         reason: e
       }), t)) return;
     this.connectionState = N.Z.CONNECTING, this.nextReconnectIsImmediate = !1;
@@ -496,7 +496,7 @@ class er extends L.Z {
   }
   networkStateChange(e, t) {
     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-    M.RZ() || H({
+    k.RZ() || H({
       reason: t,
       actuallySkipped: !1
     }), this.expeditedHeartbeat(e, t, n, !1)

@@ -179,15 +179,15 @@ function x(e) {
   }
 }
 
-function M(e, t) {
+function k(e, t) {
   if (t === f.default.getId()) return !1;
   let n = g[t];
   if (null == n || null == n[e]) return !1;
   delete n[e], 0 === Object.keys(n).length && delete g[t], P(t)
 }
 
-function k(e) {
-  for (let t of d.default.keys(g)) M(e, t)
+function M(e) {
+  for (let t of d.default.keys(g)) k(e, t)
 }
 
 function j() {
@@ -261,7 +261,7 @@ function B(e) {
   let {
     presences: t
   } = e;
-  k(p.ME), t.forEach(e => {
+  M(p.ME), t.forEach(e => {
     let {
       user: t,
       status: n,
@@ -311,7 +311,7 @@ function V(e) {
   let {
     guild: t
   } = e;
-  k(t.id)
+  M(t.id)
 }
 
 function Z(e) {
@@ -319,7 +319,7 @@ function Z(e) {
     guildId: t,
     user: n
   } = e;
-  return M(t, n.id)
+  return k(t, n.id)
 }
 
 function H(e) {

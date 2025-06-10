@@ -147,14 +147,14 @@ function x(e) {
   return y.clear(), O = 0, T = {}, S = {}, v.forEach(A), t.forEach(e => e.guild_scheduled_events.forEach(e => A(e))), !0
 }
 
-function M(e) {
+function k(e) {
   let {
     guildScheduledEvent: t
   } = e;
   A(t)
 }
 
-function k(e) {
+function M(e) {
   let {
     guildId: t,
     guildScheduledEvents: n
@@ -371,8 +371,8 @@ let en = new et(l.Z, {
   CONNECTION_OPEN: x,
   GUILD_CREATE: j,
   GUILD_DELETE: U,
-  FETCH_GUILD_EVENT: M,
-  FETCH_GUILD_EVENTS_FOR_GUILD: k,
+  FETCH_GUILD_EVENT: k,
+  FETCH_GUILD_EVENTS_FOR_GUILD: M,
   GUILD_SCHEDULED_EVENT_CREATE: B,
   GUILD_SCHEDULED_EVENT_UPDATE: B,
   GUILD_SCHEDULED_EVENT_DELETE: F,

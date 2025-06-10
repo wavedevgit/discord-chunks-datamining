@@ -109,7 +109,7 @@ function x(e) {
   S.clearWithoutFlushing(t.id, !0)
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t,
     userIds: n
@@ -119,7 +119,7 @@ function M(e) {
   }), !1
 }
 
-function k(e) {
+function M(e) {
   let {
     guildId: t,
     userIds: n
@@ -251,8 +251,8 @@ let q = new z(l.Z, {
   CHANNEL_SELECT: V,
   GUILD_CREATE: L,
   GUILD_DELETE: x,
-  GUILD_SUBSCRIPTIONS_MEMBERS_ADD: M,
-  GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: k,
+  GUILD_SUBSCRIPTIONS_MEMBERS_ADD: k,
+  GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE: M,
   GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES: j,
   GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES: U,
   GUILD_SUBSCRIPTIONS_CHANNEL: B,

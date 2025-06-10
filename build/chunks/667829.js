@@ -71,10 +71,10 @@ function x(e, t) {
   }), e
 }
 new E.Z("ChannelEditor.tsx");
-let M = function() {
+let k = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
-  k = {
+  M = {
     12: P.fontSize12Padding,
     14: P.fontSize14Padding,
     15: P.fontSize15Padding,
@@ -216,7 +216,7 @@ class j extends i.Component {
       className: R,
       id: w,
       required: L,
-      maxCharacterCount: M,
+      maxCharacterCount: k,
       allowNewLines: j,
       "aria-describedby": U,
       "aria-labelledby": G,
@@ -250,7 +250,7 @@ class j extends i.Component {
       onResize: p,
       onKeyDown: _,
       onSubmit: h,
-      textAreaPaddingClassName: o()(k[E], {
+      textAreaPaddingClassName: o()(M[E], {
         [P.textAreaWithoutAttachmentButton]: g !== v.Ie.NORMAL && g !== v.Ie.OVERLAY && g !== v.Ie.THREAD_CREATION && g !== v.Ie.SIDEBAR,
         [P.textAreaForPostCreation]: g === v.Ie.CREATE_FORUM_POST,
         [P.textAreaCustomGift]: g === v.Ie.CUSTOM_GIFT,
@@ -265,7 +265,7 @@ class j extends i.Component {
       "aria-haspopup": "listbox",
       "aria-expanded": null !== V.id || void 0,
       "aria-activedescendant": null != (s = V.activeDescendant) ? s : void 0,
-      "aria-invalid": l.length > M,
+      "aria-invalid": l.length > k,
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
@@ -397,7 +397,7 @@ class j extends i.Component {
         {
           files: c
         } = U(e.clipboardData, o.uploadLongMessages ? l : null);
-      return M("onPaste", [...e.clipboardData.items].map(e => {
+      return k("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type

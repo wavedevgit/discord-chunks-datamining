@@ -69,8 +69,8 @@ function P(e) {
       analyticsSource: D,
       analyticsLocation: L,
       body: x,
-      context: M,
-      glowUp: k,
+      context: k,
+      glowUp: M,
       modalClassName: j,
       modalContentClassName: U,
       artContainerClassName: G,
@@ -208,11 +208,11 @@ function P(e) {
         type: P,
         subscriptionTier: null != (a = null == eh || null == (n = eh.subscription_trial) ? void 0 : n.sku_id) ? a : v.Si.TIER_2,
         headingText: C,
-        context: M,
+        context: k,
         analyticsLocationObject: L,
         discountOffer: em,
         trialOffer: eh,
-        children: k
+        children: M
       }) : (0, r.jsxs)("div", {
         className: S.contentContainer,
         children: [ec, (0, r.jsxs)("div", {

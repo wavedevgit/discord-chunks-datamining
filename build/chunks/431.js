@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685), n(825670);
 var r, i = n(442837),
   a = n(570140),
@@ -223,7 +223,7 @@ h(x, "displayName", "UserOfferStore"), h(x, "persistKey", "UserOfferStore"), h(x
     isFetching: !1
   }) : e
 }]);
-let M = new x(a.Z, {
+let k = new x(a.Z, {
   BILLING_USER_OFFER_FETCH_START: I,
   BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: T,
   BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: N,

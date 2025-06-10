@@ -56,7 +56,7 @@ function D(e) {
 }
 let L = {
   key: T.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, r.jsx)(M, D({}, e)),
+  renderStep: e => (0, r.jsx)(k, D({}, e)),
   options: {
     isLargeModal: !0,
     useBreadcrumbLabel: () => C.intl.string(C.t["W685+f"])
@@ -85,7 +85,7 @@ function x(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     handleStepChange: t,
     handleClose: n
@@ -97,7 +97,7 @@ function M(e) {
     validatingGiftRecipient: w,
     giftRecipient: D,
     recommendedGiftSkuIds: L,
-    giftingOrigin: M,
+    giftingOrigin: k,
     setValidatingGiftRecipient: j
   } = (0, v.wD)(), {
     selectedSkuId: U,
@@ -112,7 +112,7 @@ function M(e) {
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: !1
-  }), W = H && M === N.Wt.DM_CHANNEL, K = Y === _.u.POPULAR ? C.intl.string(C.t.Kwgrrq) : C.intl.string(C.t.r1huYW), z = async (e, t) => {
+  }), W = H && k === N.Wt.DM_CHANNEL, K = Y === _.u.POPULAR ? C.intl.string(C.t.Kwgrrq) : C.intl.string(C.t.r1huYW), z = async (e, t) => {
     j(!0), null != m && T(), await (0, c.B1)(e.id, t) || T(C.intl.string(C.t["4kgVqa"])), j(!1)
   };
   (0, o.ZP)(() => {
@@ -158,7 +158,7 @@ function M(e) {
         color: "header-secondary",
         className: R.selectGiftTitle,
         children: K.toLocaleUpperCase()
-      }), L.map(e => X(e)), (0, r.jsx)(k, {
+      }), L.map(e => X(e)), (0, r.jsx)(M, {
         handleClose: n
       })]
     }) : (0, r.jsx)("div", {
@@ -215,7 +215,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     handleClose: t
   } = e, {

@@ -86,11 +86,11 @@ function x() {
   R += 1
 }
 
-function M() {
+function k() {
   x()
 }
 
-function k() {
+function M() {
   J()
 }
 
@@ -322,12 +322,12 @@ function J() {
 }
 S(Q, "displayName", "PermissionStore");
 let $ = new Q(l.Z, {
-  BACKGROUND_SYNC: M,
-  CONNECTION_OPEN: M,
-  OVERLAY_INITIALIZE: M,
-  CACHE_LOADED: M,
-  CACHE_LOADED_LAZY: M,
-  CONNECTION_CLOSED: k,
+  BACKGROUND_SYNC: k,
+  CONNECTION_OPEN: k,
+  OVERLAY_INITIALIZE: k,
+  CACHE_LOADED: k,
+  CACHE_LOADED_LAZY: k,
+  CONNECTION_CLOSED: M,
   GUILD_CREATE: j,
   GUILD_UPDATE: j,
   GUILD_DELETE: j,

@@ -103,8 +103,8 @@ let g = 24,
       "aria-hidden": D,
       "aria-checked": L,
       "aria-expanded": x,
-      "aria-haspopup": M,
-      "data-jump-section": k
+      "aria-haspopup": k,
+      "data-jump-section": M
     } = e, j = (0, f.Q3)("BaseHeaderBar"), U = null != b ? {
       secondaryColorClass: b
     } : {}, G = (0, r.jsx)(y, m({
@@ -170,10 +170,10 @@ let g = 24,
           "aria-label": B,
           "aria-hidden": D,
           "aria-checked": L,
-          "aria-haspopup": M,
+          "aria-haspopup": k,
           "aria-expanded": x,
           tabIndex: l || null == v ? -1 : 0,
-          "data-jump-section": k,
+          "data-jump-section": M,
           children: [u ? (0, r.jsx)(d.ZP, {
             mask: "top" === _ ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
             height: j ? O : void 0,

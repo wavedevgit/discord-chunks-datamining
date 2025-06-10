@@ -45,14 +45,14 @@ function R(e) {
     onClose: D,
     onDisplay: L,
     onLearnMore: x,
-    isEmojiPickerOverlay: M = !1
-  } = e, k = (0, s.e7)([g.Z], () => g.Z.affinities), j = (0, s.e7)([g.Z], () => g.Z.hasFetched);
+    isEmojiPickerOverlay: k = !1
+  } = e, M = (0, s.e7)([g.Z], () => g.Z.affinities), j = (0, s.e7)([g.Z], () => g.Z.hasFetched);
   i.useEffect(() => {
     !j && R && u.MH()
   }, [j, R]), i.useEffect(() => {
     h.default.track(I.rMx.PREMIUM_UPSELL_VIEWED, w), null == L || L()
   }, [L, w]);
-  let U = k.length > 1 && R,
+  let U = M.length > 1 && R,
     G = () => 2 === t ? A.hasTabParentContainer : 1 === t ? A.hasParentContainer : A.noParentContainer,
     B = () => {
       h.default.track(I.rMx.PREMIUM_PROMOTION_OPENED, {
@@ -68,7 +68,7 @@ function R(e) {
     Z = (0, l.ap)((0, f.ZP)()),
     H = (0, E.Z)({
       location: "PremiumUpsellPickerOverlay"
-    }) && M;
+    }) && k;
   return H ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.ZMr, {
       onClick: D,
@@ -155,7 +155,7 @@ function R(e) {
           variant: "heading-xl/bold",
           children: a
         }), U && (0, r.jsx)(O.Z, {
-          affinities: k
+          affinities: M
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           className: A.body,

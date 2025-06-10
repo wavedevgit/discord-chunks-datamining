@@ -33,12 +33,12 @@ let A = function(e) {
     onClose: A
   } = e, [N, C] = i.useState(!0), R = i.useRef(!1), P = (0, l.Z)(() => Date.now()), {
     analyticsLocations: w
-  } = (0, c.ZP)(), D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), M = i.useCallback(() => {
+  } = (0, c.ZP)(), D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), k = i.useCallback(() => {
     null != x.current && null != L.current && L.current.scrollTo({
       to: x.current.offsetTop,
       animate: !0
     })
-  }, []), k = (0, u.Ek)(n.id, "GuildBoostingMarketing"), j = i.useCallback(() => {
+  }, []), M = (0, u.Ek)(n.id, "GuildBoostingMarketing"), j = i.useCallback(() => {
     null == A || A(), _.default.track(I.rMx.MODAL_DISMISSED, {
       type: I.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: w,
@@ -87,10 +87,10 @@ let A = function(e) {
         className: S.header,
         children: [(0, r.jsxs)("div", {
           className: S.headerContentWrapper,
-          children: [k && (0, r.jsx)(d.Z, {
+          children: [M && (0, r.jsx)(d.Z, {
             guild: e.guild,
             themeResponsive: !1,
-            onButtonClick: M
+            onButtonClick: k
           }), (0, r.jsx)(o.X6q, {
             className: S.heading,
             color: "always-white",
@@ -110,7 +110,7 @@ let A = function(e) {
         className: S.middleBodyContentWrapper,
         children: [(0, r.jsx)(O.ZP, {
           guild: e.guild
-        }), k && (0, r.jsx)(f.Z, {
+        }), M && (0, r.jsx)(f.Z, {
           ref: x,
           guild: e.guild,
           onClose: j
@@ -123,7 +123,7 @@ let A = function(e) {
             className: S.tierComparisonTable,
             guild: n
           }), (0, r.jsx)(p.Z, {}), (0, r.jsx)(m.Z, {
-            isGuildPowerupsExperimentEnabled: k
+            isGuildPowerupsExperimentEnabled: M
           })]
         }), (0, r.jsx)(v.A, {}), (0, r.jsx)("div", {
           className: S.lowerBodyBackgroundImage

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685);
 var r, i = n(149765),
   a = n(442837),
@@ -146,7 +146,7 @@ function x(e) {
   } = e;
   v.add(t)
 }
-class M extends(r = a.ZP.Store) {
+class k extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(g.Z, h.Z, _.Z), c.Zo.subscribe({
       location: "1"
@@ -167,8 +167,8 @@ class M extends(r = a.ZP.Store) {
     return !!(null != n && null != n.parent_id && p.Ec.has(null == n ? void 0 : n.type)) && this.isChannelOrThreadParentGated(e, n.parent_id)
   }
 }
-y(M, "displayName", "GatedChannelStore");
-let k = new M(o.Z, {
+y(k, "displayName", "GatedChannelStore");
+let M = new k(o.Z, {
   CONNECTION_OPEN: C,
   OVERLAY_INITIALIZE: C,
   CACHE_LOADED_LAZY: C,

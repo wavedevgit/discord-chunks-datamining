@@ -146,13 +146,13 @@ function x(e, t, n) {
   }), L()
 }
 
-function M(e, t, n) {
+function k(e, t, n) {
   (0, h.RF)(e, t, {
     muted: n
   }), L.cancel(), U()
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   (0, h.RF)(e, t, {
     soundboardMuted: n
   }), L.cancel(), U()
@@ -192,7 +192,7 @@ function B(e) {
     context: t,
     userId: n
   } = e;
-  n !== f.default.getId() && M(t, n, _.Z.isLocalMute(n, t))
+  n !== f.default.getId() && k(t, n, _.Z.isLocalMute(n, t))
 }
 
 function F(e) {
@@ -200,7 +200,7 @@ function F(e) {
     context: t,
     userId: n
   } = e;
-  n !== f.default.getId() && k(t, n, d.Z.isLocalSoundboardMuted(n))
+  n !== f.default.getId() && M(t, n, d.Z.isLocalSoundboardMuted(n))
 }
 class V extends l.Z {
   constructor(...e) {

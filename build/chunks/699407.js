@@ -68,11 +68,11 @@ let m = 1500,
   D = 0,
   L = Number.MAX_SAFE_INTEGER,
   x = 0,
-  M = 0,
-  k = null;
+  k = 0,
+  M = null;
 
 function j() {
-  N = 0, C = 0, R = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, M = 0, w = Date.now(), P = S
+  N = 0, C = 0, R = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, k = 0, w = Date.now(), P = S
 }
 
 function U(e) {
@@ -130,7 +130,7 @@ let G = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
       let e = V.slice();
       V = [], D = U(D);
       let t = e.length;
-      L = Math.min(L, t), x = Math.max(x, t), M = U(M, t);
+      L = Math.min(L, t), x = Math.max(x, t), k = U(k, t);
       let n = X(e);
       return n.then(() => {
         e.forEach(e => {
@@ -180,39 +180,39 @@ let G = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
           event_queue_batch_count: D,
           event_queue_batch_min_size: L === Number.MAX_SAFE_INTEGER ? 0 : L,
           event_queue_batch_max_size: x,
-          event_queue_batch_avg_size: D > 0 ? M / D : 0
+          event_queue_batch_avg_size: D > 0 ? k / D : 0
         }
       };
       return j(), X([e])
     }
 
     function J() {
-      if (null == k) return !1;
-      switch (k.type) {
+      if (null == M) return !1;
+      switch (M.type) {
         case "timeout":
-          clearTimeout(k.id);
+          clearTimeout(M.id);
           break;
         case "interval":
-          clearInterval(k.id);
+          clearInterval(M.id);
           break;
         default:
-          k.type
+          M.type
       }
-      return k = null, !0
+      return M = null, !0
     }
 
     function $() {
-      if (null != k) return;
+      if (null != M) return;
       let e = () => {
         let t = .1 * O;
-        k = {
+        M = {
           type: "timeout",
           id: setTimeout(() => {
             Q(), e()
           }, Math.max(O + (Math.floor(Math.random() * t * 2) - t), v))
         }
       };
-      k = {
+      M = {
         type: "timeout",
         id: setTimeout(() => {
           Q(), e()

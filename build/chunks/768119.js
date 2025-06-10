@@ -188,7 +188,7 @@ function x(e) {
   D(t)
 }
 
-function M(e) {
+function k(e) {
   let {
     searchId: t
   } = e;
@@ -197,7 +197,7 @@ function M(e) {
   }))
 }
 
-function k(e) {
+function M(e) {
   let {
     searchId: t,
     query: n
@@ -337,8 +337,8 @@ let Z = new V(l.Z, {
   SEARCH_SCREEN_OPEN: x,
   CHANNEL_SELECT: L,
   CHANNEL_TOGGLE_MEMBERS_SECTION: F,
-  SEARCH_CLEAR_HISTORY: M,
-  SEARCH_REMOVE_HISTORY: k,
+  SEARCH_CLEAR_HISTORY: k,
+  SEARCH_REMOVE_HISTORY: M,
   SEARCH_ADD_HISTORY: C,
   LOGOUT: B,
   CONNECTION_OPEN: G

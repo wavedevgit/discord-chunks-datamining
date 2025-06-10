@@ -12,7 +12,7 @@ n.d(t, {
   eQ: () => R,
   fw: () => C,
   uY: () => x,
-  x9: () => k
+  x9: () => M
 }), n(704826), n(35282), n(388685), n(781311);
 var r = n(392711),
   i = n.n(r),
@@ -123,11 +123,11 @@ function x(e, t) {
   return t === o.C.DEFAULT && null != e.image && (null == r || 0 === r.length)
 }
 
-function M(e) {
+function k(e) {
   return new Date(Date.now() + e * g.Z.Millis.HOUR).toISOString()
 }
 
-function k(e) {
+function M(e) {
   var t;
   if (null == e) return;
   let n = null == e || null == (t = e.answers) ? void 0 : t.map((e, t) => {
@@ -144,7 +144,7 @@ function k(e) {
         poll_media: a
       })
     }),
-    r = (null == e ? void 0 : e.duration) != null ? M(e.duration) : "0";
+    r = (null == e ? void 0 : e.duration) != null ? k(e.duration) : "0";
   return S(I({}, e), {
     expiry: r,
     answers: n

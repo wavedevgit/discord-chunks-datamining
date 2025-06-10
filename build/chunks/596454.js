@@ -100,7 +100,7 @@ function A(e) {
       registerAnimatedElementRef: L
     } = e,
     x = I(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef"]);
-  let [M, k] = i.useState(!1), [j, U] = i.useState(void 0), G = i.useRef(void 0), {
+  let [k, M] = i.useState(!1), [j, U] = i.useState(void 0), G = i.useRef(void 0), {
     triggerAnimation: B,
     untriggerAnimation: F
   } = i.useContext(u.Rm), V = _.Yk.useSetting(), Z = S(), H = null == w ? V : w, Y = E.kV[T], W = i.useRef(null), K = i.useMemo(() => {
@@ -109,20 +109,20 @@ function A(e) {
       let e = !0 === N && H;
       return h.ZP.getEmojiURL({
         id: f,
-        animated: Z && !0 === O && (e || M || !0 === A),
+        animated: Z && !0 === O && (e || k || !0 === A),
         size: Y
       })
     }
     if (null != p) return m.ZP.getURL(p);
     throw Error("Unknown Src for Emoji")
-  }, [O, H, f, p, Y, Z, M, A, N, a]), z = i.useCallback(() => {
+  }, [O, H, f, p, Y, Z, k, A, N, a]), z = i.useCallback(() => {
     null != K && (G.current = (0, d.po)(K, e => {
       e || U(Date.now())
     }))
   }, [K]), q = i.useCallback(e => {
-    O && k(!0), null == f && B(p), null == C || C(e)
+    O && M(!0), null == f && B(p), null == C || C(e)
   }, [O, p, C, B, f]), X = i.useCallback(e => {
-    O && k(!1), null == f && F(p), null == R || R(e)
+    O && M(!1), null == f && F(p), null == R || R(e)
   }, [O, f, p, R, F]), Q = i.useMemo(() => {
     let e = null != f && "" !== f ? {
       "data-id": f

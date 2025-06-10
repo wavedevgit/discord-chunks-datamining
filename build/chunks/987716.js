@@ -94,7 +94,7 @@ let A = e => {
     orientation: "horizontal"
   }), {
     ref: x
-  } = L, M = T(L, ["ref"]), k = (0, u.MY)(y, t), j = k === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = k !== u.xr.DEFAULT, G = (0, f.rK)(), {
+  } = L, k = T(L, ["ref"]), M = (0, u.MY)(y, t), j = M === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== u.xr.DEFAULT, G = (0, f.rK)(), {
     enabled: B
   } = f.ZP.useExperiment({
     location: "premiumGiftSelect_GiftAnimationOptions"
@@ -145,7 +145,7 @@ let A = e => {
       className: o()(b.giftBoxOptionContainer, a),
       "aria-label": E.intl.string(E.t.v54NrK),
       ref: x
-    }, M), {
+    }, k), {
       children: null != V && V.map((e, t) => (0, r.jsx)(m.m, {
         isSelected: v === e,
         giftStyle: e,

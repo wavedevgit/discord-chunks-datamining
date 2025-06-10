@@ -4499,7 +4499,7 @@ let {
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_40",
         opacity: 1
       },
       [r.MIDNIGHT]: {
@@ -8124,7 +8124,7 @@ let {
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_38",
+        raw: "NEUTRAL_40",
         opacity: 1
       },
       [r.MIDNIGHT]: {

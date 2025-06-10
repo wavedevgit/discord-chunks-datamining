@@ -42,8 +42,8 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 let x = new Set,
-  M = new d.Z("MessageStore"),
-  k = !1;
+  k = new d.Z("MessageStore"),
+  M = !1;
 
 function j() {
   c.Z.forEach(e => {
@@ -63,7 +63,7 @@ function U(e) {
     if (null == n) continue;
     let r = !1;
     if (!(n.cached || !r)) {
-      M.log("Skipping background message sync for ".concat(e, " cached:").concat(n.cached, " ") + "ready:".concat(n.ready, " hasMoreAfter:").concat(n.hasMoreAfter, " ") + "isConnected:".concat(r));
+      k.log("Skipping background message sync for ".concat(e, " cached:").concat(n.cached, " ") + "ready:".concat(n.ready, " hasMoreAfter:").concat(n.hasMoreAfter, " ") + "isConnected:".concat(r));
       continue
     }
     n.mergeDelta(t[e].new_messages, t[e].modified_messages, t[e].deleted_message_ids)
@@ -80,7 +80,7 @@ function B(e) {
     truncateBottom: n,
     truncateTop: r
   } = e;
-  M.log("Truncating messages for ".concat(t, " bottom:").concat(n, " top:").concat(r));
+  k.log("Truncating messages for ".concat(t, " bottom:").concat(n, " top:").concat(r));
   let i = c.Z.getOrCreate(t);
   i = i.truncate(n, r), c.Z.commit(i)
 }
@@ -89,7 +89,7 @@ function F(e) {
   let {
     channelId: t
   } = e;
-  M.log("Clearing messages for ".concat(t)), c.Z.clear(t), x.clear()
+  k.log("Clearing messages for ".concat(t)), c.Z.clear(t), x.clear()
 }
 
 function V(e) {
@@ -167,7 +167,7 @@ function K(e) {
     isPushNotification: r
   } = e, i = c.Z.getOrCreate(t);
   if (r) {
-    M.log("Inserting message tapped on from a push notification", n.id, n.channel_id), c.Z.commit(i.receivePushNotification(n));
+    k.log("Inserting message tapped on from a push notification", n.id, n.channel_id), c.Z.commit(i.receivePushNotification(n));
     return
   }
   if (!i.ready) return !1;
@@ -370,7 +370,7 @@ function ep(e) {
   let {
     message: t
   } = e, n = w.default.getCurrentUser();
-  null != t && null != t.author && null != n && t.author.id === n.id && (k = !0)
+  null != t && null != t.author && null != n && t.author.id === n.id && (M = !0)
 }
 class eh extends(r = o.ZP.Store) {
   initialize() {
@@ -433,7 +433,7 @@ class eh extends(r = o.ZP.Store) {
     return null != this.getMessages(e).findNewest(e => e.author.id === (null == t ? void 0 : t.id))
   }
   hasCurrentUserSentMessageSinceAppStart() {
-    return k
+    return M
   }
 }
 L(eh, "displayName", "MessageStore");

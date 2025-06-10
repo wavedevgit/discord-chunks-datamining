@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(489762),
   L = n(31543),
   x = n(814042),
-  M = n(15350),
-  k = n(611480),
+  k = n(15350),
+  M = n(611480),
   j = n(981631),
   U = n(655304);
 
@@ -119,7 +119,7 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       ed = b._O.useSetting(),
       ef = i.useMemo(() => new Set(ed), [ed]),
       e_ = (0, l.e7)([y.default], () => y.default.getCurrentUser()),
-      ep = i.useMemo(() => (0, M.S)(ea, e_, c), [ea, e_, c]),
+      ep = i.useMemo(() => (0, k.S)(ea, e_, c), [ea, e_, c]),
       eh = (0, A.RJ)(),
       em = (0, A.LZ)(),
       eg = (0, l.cj)([N.Z], () => N.Z.getAllGuildStickers()),
@@ -182,7 +182,7 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         onGridItemSelect: eC,
         store: p.ZN,
         setInspectedStickerPosition: p.ZN.setInspectedExpressionPosition,
-        gridNavigatorId: k.Vr
+        gridNavigatorId: M.Vr
       });
     i.useEffect(() => p.ZN.resetStoreState, []);
     let ex = () => {
@@ -211,7 +211,7 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
       var e;
       null == (e = er.current) || e.focus()
     }, []);
-    let eM = i.useCallback(() => {
+    let ek = i.useCallback(() => {
       G(), O.default.track(j.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: j.jXE.STICKER_PICKER_UPSELL
       }), (0, g.z)()
@@ -233,7 +233,7 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         children: [(0, r.jsx)("div", V(B({
           ref: X,
           className: U.listWrapper,
-          id: k.Vr
+          id: M.Vr
         }, ew), {
           children: null != eu ? (0, r.jsx)(D.Z, {
             ref: ee,
@@ -256,14 +256,14 @@ let Z = (0, v.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
           channel: c
         })]
       }), ei && (0, r.jsx)(x.C, {
-        onLearnMore: eM
+        onLearnMore: ek
       })]
     })
   }),
   ei = (e, t) => ((0, A.fP)(), (0, r.jsx)("div", {
     className: U.wrapper,
-    id: k.nZ,
-    "aria-labelledby": k.ED,
+    id: M.nZ,
+    "aria-labelledby": M.ED,
     role: "tabpanel",
     children: e.isLoading ? (0, r.jsx)(u.$jN, {
       className: U.loadingIndicator

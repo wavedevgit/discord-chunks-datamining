@@ -40,7 +40,7 @@ function I(e) {
     location: "gift card"
   }), L = b;
   P && (L = w ? m.Cj.SEASONAL_STANDARD_BOX : null != h ? h : E, D && (L = m.Cj.NITROWEEN_STANDARD));
-  let [x, M] = i.useState(L), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, _.MY)(T) === _.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? g.intl.string(g.t.ZkOo1d) : f), [F, V] = i.useState(void 0), [Z, H] = i.useState(void 0), Y = (0, _.E5)(I, t), [W, K] = i.useState(!1), [z, q] = i.useState(!1), [X, Q] = i.useState(), J = i.useCallback(e => {
+  let [x, k] = i.useState(L), M = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, _.MY)(T) === _.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? g.intl.string(g.t.ZkOo1d) : f), [F, V] = i.useState(void 0), [Z, H] = i.useState(void 0), Y = (0, _.E5)(I, t), [W, K] = i.useState(!1), [z, q] = i.useState(!1), [X, Q] = i.useState(), J = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
@@ -68,7 +68,7 @@ function I(e) {
       customGiftMessage: G,
       setCustomGiftMessage: B,
       selectedGiftStyle: x,
-      setSelectedGiftStyle: M,
+      setSelectedGiftStyle: k,
       sendGiftMessage: J,
       hasSentMessage: W,
       isSendingMessage: z,
@@ -76,7 +76,7 @@ function I(e) {
       alreadyHasHalloweenDeco: $,
       recommendedGiftSkuIds: ee,
       giftingOrigin: O,
-      claimableRewards: k,
+      claimableRewards: M,
       selectedGiftingPromotionReward: j,
       setSelectedGiftingPromotionReward: U
     },

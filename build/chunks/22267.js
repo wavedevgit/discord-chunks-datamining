@@ -36,11 +36,11 @@ let I = e => {
     pendingGlobalName: C,
     nameplatePreviewSize: R = "normal",
     isPurchased: P = !1
-  } = e, w = (0, s.e7)([h.Z], () => (0, l.wj)(h.Z.theme)), D = null != n ? (0, E.EU)(n) : a, L = (0, s.e7)([m.Z], () => null != t ? m.Z.getStatus(t.id) : c.Skl.ONLINE), x = w ? "#706F74" : "#aaaab2", M = i.useRef(null), k = "large" === R, j = k ? c.EFr.SIZE_48 : c.EFr.SIZE_32;
+  } = e, w = (0, s.e7)([h.Z], () => (0, l.wj)(h.Z.theme)), D = null != n ? (0, E.EU)(n) : a, L = (0, s.e7)([m.Z], () => null != t ? m.Z.getStatus(t.id) : c.Skl.ONLINE), x = w ? "#706F74" : "#aaaab2", k = i.useRef(null), M = "large" === R, j = M ? c.EFr.SIZE_48 : c.EFr.SIZE_32;
   return (0, r.jsxs)("div", {
     className: o()(I, y.nameplatePreview, {
       [y.nameplatePurchased]: P && !S,
-      [y.large]: k
+      [y.large]: M
     }),
     style: {
       color: w ? "white" : "black"
@@ -49,13 +49,13 @@ let I = e => {
       nameplate: D,
       hovered: S,
       placement: _.i.PREVIEW,
-      content: N ? void 0 : M
+      content: N ? void 0 : k
     }, null == n ? void 0 : n.id), (0, r.jsxs)("div", {
       className: y.overlayContainer,
       children: [null != t ? (0, r.jsx)("div", {
         className: o()(y.avatarContainer, !N && y.avatarVisible),
         children: (0, r.jsx)(u.Z, {
-          ref: M,
+          ref: k,
           avatar: (0, r.jsx)(d.Z, {
             user: t,
             guildId: null,
@@ -83,7 +83,7 @@ let I = e => {
           innerClassName: o()(T, y.avatarWithText),
           name: (0, r.jsx)("div", {
             className: o()(y.placeholderUsername, y.placeholderUsernameColor, {
-              [y.large]: k
+              [y.large]: M
             })
           })
         })

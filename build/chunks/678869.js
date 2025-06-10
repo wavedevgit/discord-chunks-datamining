@@ -102,8 +102,8 @@ function x(e) {
   let n, m, T, {
       channel: R,
       entry: x,
-      closePopout: M,
-      onReaction: k,
+      closePopout: k,
+      onReaction: M,
       onVoiceChannelPreview: j
     } = e,
     {
@@ -168,7 +168,7 @@ function x(e) {
         onOpenSpotifyArtist: e
       }), (null == K ? void 0 : K.syncDisabled) === !1) {
       let e = () => {
-        (0, _.Z)(K, N.kG.USER_ACTIVITY_SYNC), M()
+        (0, _.Z)(K, N.kG.USER_ACTIVITY_SYNC), k()
       };
       X.push((0, r.jsx)(I.Ll, {
         onClick: e,
@@ -198,7 +198,7 @@ function x(e) {
   return (0, r.jsxs)(I.yR, {
     children: [Q, (0, r.jsx)(I.St, {
       children: (0, r.jsx)(I.WT, {
-        onReaction: k,
+        onReaction: M,
         onVoiceChannelPreview: j,
         user: Z,
         channel: R,

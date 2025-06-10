@@ -45,7 +45,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,7 +70,7 @@ function k(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -96,7 +96,7 @@ function G(e) {
     badgeClassName: d,
     displayProfile: E,
     onClose: x,
-    shouldOpenBadgeTooltip: k,
+    shouldOpenBadgeTooltip: M,
     shouldGlowTenureBadge: G
   } = e, {
     analyticsLocations: B
@@ -116,7 +116,7 @@ function G(e) {
         O = t => {
           if (V({
               action: "PRESS_BADGE"
-            }), (0, T.NE)(M({
+            }), (0, T.NE)(k({
               badge: e.id,
               analyticsLocations: B
             }, F)), i) return void(0, u.mK)({
@@ -155,12 +155,12 @@ function G(e) {
           if (null != n) return null == x || x(), n(t)
         },
         I = () => {
-          e.id === S.i && y.default.track(C.rMx.QUEST_CONTENT_VIEWED, j(M({}, (0, _.mH)(h.jn.QUEST_BADGE)), {
+          e.id === S.i && y.default.track(C.rMx.QUEST_CONTENT_VIEWED, j(k({}, (0, _.mH)(h.jn.QUEST_BADGE)), {
             google_advertising_id: p.Z.googleAdvertisingId,
             is_targeted: !1
           })), V({
             action: "HOVER_BADGE"
-          }), (0, T.Qf)(M({
+          }), (0, T.Qf)(k({
             badge: e.id,
             analyticsLocations: B
           }, F))
@@ -173,7 +173,7 @@ function G(e) {
       return (0, r.jsx)(o.DY3, {
         text: A,
         "aria-label": e.description,
-        forceOpen: null != k && k(e.id),
+        forceOpen: null != M && M(e.id),
         delay: N.vB,
         children: (0, r.jsx)(o.eee, {
           onClick: O,

@@ -130,7 +130,7 @@ function x(e) {
   return i
 }
 
-function M(e) {
+function k(e) {
   let {
     user: t,
     sessionId: n
@@ -138,7 +138,7 @@ function M(e) {
   return a && (m = {}, b = {}, O = {}, y = {}, E.clear()), r = t.id, i = n, a
 }
 
-function k() {
+function M() {
   m = {}, b = {}, O = {}, y = {}, E.clear()
 }
 
@@ -249,8 +249,8 @@ class F extends(a = l.ZP.Store) {
 }
 _(F, "displayName", "VoiceStateStore");
 let V = new F(c.Z, {
-  CONNECTION_OPEN: M,
-  CONNECTION_OPEN_SUPPLEMENTAL: k,
+  CONNECTION_OPEN: k,
+  CONNECTION_OPEN_SUPPLEMENTAL: M,
   OVERLAY_INITIALIZE: j,
   VOICE_CHANNEL_SELECT: x,
   VOICE_STATE_UPDATES: P,

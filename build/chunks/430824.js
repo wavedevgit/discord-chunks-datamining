@@ -160,7 +160,7 @@ function x(e) {
   r = m({}, r), delete r[n], b[t] = r
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t,
     joinedAt: n,
@@ -174,7 +174,7 @@ function M(e) {
   })
 }
 
-function k() {
+function M() {
   return !0
 }
 let j = Object.freeze({});
@@ -222,7 +222,7 @@ let G = new U(s.Z, {
   GUILD_ROLE_CREATE: L,
   GUILD_ROLE_UPDATE: L,
   GUILD_ROLE_DELETE: x,
-  GUILD_MEMBER_ADD: M,
-  GUILD_SETTINGS_SUBMIT_SUCCESS: k,
+  GUILD_MEMBER_ADD: k,
+  GUILD_SETTINGS_SUBMIT_SUCCESS: M,
   GUILD_GEO_RESTRICTED: w
 })

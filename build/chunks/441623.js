@@ -73,7 +73,7 @@ function w(e) {
 
 function D() {
   if (null != R) return void z(R);
-  if (M(), !f.Z.hasConsented(m.pjP.PERSONALIZATION)) return;
+  if (k(), !f.Z.hasConsented(m.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
   } = h.w.getCurrentConfig({
@@ -110,16 +110,16 @@ function x() {
   return Array.from(N).some(e => !S.lastShownFriendsListGiftIntents.includes(e))
 }
 
-function M() {
+function k() {
   A.length = 0, N.clear(), C = {}
 }
 
-function k() {
-  M()
+function M() {
+  k()
 }
 
 function j() {
-  S = T(), M()
+  S = T(), k()
 }
 
 function U() {
@@ -179,7 +179,7 @@ function K(e) {
 }
 
 function z(e) {
-  M();
+  k();
   let {
     enabled: t
   } = h.w.getCurrentConfig({
@@ -247,7 +247,7 @@ g(q, "displayName", "PremiumGiftingIntentStore"), g(q, "persistKey", "PremiumGif
   }
 }]);
 let X = new q(c.Z, {
-  CONNECTION_OPEN: k,
+  CONNECTION_OPEN: M,
   LOGOUT: j,
   MESSAGE_GIFT_INTENT_SHOWN: G,
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: U,

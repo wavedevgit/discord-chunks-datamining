@@ -66,13 +66,13 @@ function x(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null == e) return {};
   var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -106,8 +106,8 @@ function Z(e) {
     onSelectSticker: u
   } = e, d = (0, s.JA)("".concat(a)), {
     tabIndex: _
-  } = d, p = k(d, ["tabIndex"]);
-  return (0, r.jsxs)(f.P3F, M(L({}, p), {
+  } = d, p = M(d, ["tabIndex"]);
+  return (0, r.jsxs)(f.P3F, k(L({}, p), {
     tabIndex: n ? -1 : _,
     className: o()(w.suggestedExpression, {
       [w.suggestedExpressionFocused]: t
@@ -290,8 +290,8 @@ let Y = i.memo(function(e) {
               var {
                 ref: t,
                 tabIndex: n
-              } = e, i = k(e, ["ref", "tabIndex"]);
-              return (0, r.jsx)("div", M(L({
+              } = e, i = M(e, ["ref", "tabIndex"]);
+              return (0, r.jsx)("div", k(L({
                 className: w.stickerResults,
                 ref: e => {
                   t.current = e
@@ -352,7 +352,7 @@ let Y = i.memo(function(e) {
               },
               children: (0, r.jsx)(f.ua7, {
                 text: P.intl.string(P.t.XNMs5u),
-                children: e => (0, r.jsx)(f.Dio, M(L({
+                children: e => (0, r.jsx)(f.Dio, k(L({
                   size: "md",
                   color: "currentColor"
                 }, e), {

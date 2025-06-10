@@ -4,7 +4,7 @@ n.r(t), n.d(t, {
   AnalyticEventConfigs: () => j,
   AnalyticsContext: () => T,
   AnalyticsSchema: () => d,
-  addExtraAnalyticsDecorator: () => k,
+  addExtraAnalyticsDecorator: () => M,
   clearAnalyticsEventsRecording: () => Q,
   debugLogEvent: () => Y,
   default: () => er,
@@ -102,10 +102,10 @@ let I = {
   D = 864e5,
   L = .001,
   x = performance.now(),
-  M = [];
+  k = [];
 
-function k(e) {
-  M.push(e)
+function M(e) {
+  k.push(e)
 }
 let j = {
   [p.rMx.APP_OPENED]: {
@@ -380,7 +380,7 @@ function H(e) {
     utmCampaign: c,
     utmContent: u
   } = S;
-  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, M.forEach(e => e(a)), a
+  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, k.forEach(e => e(a)), a
 }
 
 function Y(e, t) {

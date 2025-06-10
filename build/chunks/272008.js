@@ -4,10 +4,10 @@ n.d(t, {
   AH: () => C,
   Ag: () => U,
   CS: () => I,
-  EW: () => k,
+  EW: () => M,
   OR: () => j,
   QB: () => R,
-  T0: () => M,
+  T0: () => k,
   Wf: () => L,
   cT: () => F,
   eT: () => x,
@@ -362,7 +362,7 @@ async function x(e) {
     })
   }
 }
-async function M(e) {
+async function k(e) {
   try {
     a.Z.dispatch({
       type: "QUESTS_DOCK_RESET_SOFT_DISMISSAL"
@@ -385,7 +385,7 @@ async function M(e) {
   }
 }
 
-function k(e) {
+function M(e) {
   a.Z.dispatch({
     type: "QUESTS_DELIVERY_OVERRIDE",
     questId: e

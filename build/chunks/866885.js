@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(701488),
   L = n(918559),
   x = n(981631),
-  M = n(354459),
-  k = n(672058),
+  k = n(354459),
+  M = n(672058),
   j = n(992955),
   U = n(20795);
 
@@ -107,7 +107,7 @@ function Z(e) {
     })) : null,
     selectedParticipant: null != _ ? g.Z.getSelectedParticipant(_.id) : null,
     participantsOpen: null != _ && g.Z.getParticipantsOpen(_.id)
-  })), Q = H || null != K, J = (0, R.Z)(null == _ ? void 0 : _.id), $ = J && (null == q ? void 0 : q.type) !== M.fO.ACTIVITY, ee = !J && F === L.Ez.PIP, et = Q && ($ || ee) && null == Y, en = (!Q || et) && !W, er = en && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
+  })), Q = H || null != K, J = (0, R.Z)(null == _ ? void 0 : _.id), $ = J && (null == q ? void 0 : q.type) !== k.fO.ACTIVITY, ee = !J && F === L.Ez.PIP, et = Q && ($ || ee) && null == Y, en = (!Q || et) && !W, er = en && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
 
   function ei() {
     if (null != _) {
@@ -135,7 +135,7 @@ function Z(e) {
       isActivityInTextChannel: o,
       users: s
     } = e;
-    return en && null != B && ((null == z ? void 0 : z.type) === M.fO.ACTIVITY || o) ? (null == (t = B.config) ? void 0 : t.useInteractivePIP) ? (0, r.jsx)(w.of, {
+    return en && null != B && ((null == z ? void 0 : z.type) === k.fO.ACTIVITY || o) ? (null == (t = B.config) ? void 0 : t.useInteractivePIP) ? (0, r.jsx)(w.of, {
       onJumpToChannel: ei,
       applicationId: B.applicationId,
       channel: _,
@@ -164,7 +164,7 @@ function Z(e) {
         onMouseMove: n,
         onMouseDown: n,
         onMouseLeave: i,
-        className: k.clickShield,
+        className: M.clickShield,
         onDoubleClick: ei
       }), (0, r.jsx)(w.YB, {
         idle: a,
@@ -207,14 +207,14 @@ function Z(e) {
         onForceIdle: s
       } = e;
       return (0, r.jsxs)(b.Z, {
-        className: o()(k.root, {
-          [k.pipMode]: en,
+        className: o()(M.root, {
+          [M.pipMode]: en,
           [U.elevationHigh]: en,
           [j.idle]: i && !(null == (t = B.config) ? void 0 : t.useInteractivePIP),
-          [k.pipModeShort]: en && !N,
-          [k.pipModeTall]: en && N,
-          [k.hidden]: W,
-          [k.multiPIPMode]: er
+          [M.pipModeShort]: en && !N,
+          [M.pipModeTall]: en && N,
+          [M.hidden]: W,
+          [M.multiPIPMode]: er
         }),
         noBorder: !en,
         children: [(0, r.jsx)("div", {
@@ -227,19 +227,19 @@ function Z(e) {
             users: es
           })
         }), p ? (0, r.jsx)(l.$jN, {
-          className: o()(k.iframe, {
-            [k.pipModeShort]: en && !N,
-            [k.pipModeTall]: en && N
+          className: o()(M.iframe, {
+            [M.pipModeShort]: en && !N,
+            [M.pipModeTall]: en && N
           })
         }) : (0, r.jsx)(P.J, {
           allowPopups: (0, C.h)(V),
           referrerPolicy: D.um.has(B.applicationId) ? "no-referrer" : "origin",
           url: B.url,
           queryParams: el,
-          className: o()(k.iframe, {
-            [k.pipModeShort]: en && !N,
-            [k.pipModeTall]: en && N,
-            [k.pipNonInteractive]: en && !(null == (n = B.config) ? void 0 : n.useInteractivePIP)
+          className: o()(M.iframe, {
+            [M.pipModeShort]: en && !N,
+            [M.pipModeTall]: en && N,
+            [M.pipNonInteractive]: en && !(null == (n = B.config) ? void 0 : n.useInteractivePIP)
           }),
           shouldRefocus: !en && H
         }), !en && null != _ && (0, r.jsx)(w.Ds, {

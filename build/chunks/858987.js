@@ -111,14 +111,14 @@ function S(e) {
   } = e, {
     application: L,
     selectedPlan: x,
-    hasAcceptedTerms: M,
-    purchaseType: k,
+    hasAcceptedTerms: k,
+    purchaseType: M,
     paymentSourceId: j,
     activeSubscription: U,
     devShelfFetchState: G,
     hasPaymentSources: B
   } = (0, c.JL)(), F = I({
-    purchaseType: k,
+    purchaseType: M,
     plan: x,
     premiumSubscription: b,
     isGift: O,
@@ -167,8 +167,8 @@ function S(e) {
   });
   if (N) return (0, r.jsxs)(o.gtL, {
     innerClassName: g.innerButton,
-    "data-testid": M ? "purchase" : "submitButton",
-    onClick: M ? C : () => T(n, f),
+    "data-testid": k ? "purchase" : "submitButton",
+    onClick: k ? C : () => T(n, f),
     color: o.zxk.Colors.GREEN,
     submitting: h,
     children: [(0, r.jsx)("img", {
@@ -177,7 +177,7 @@ function S(e) {
       src: E
     }), F]
   });
-  else if (!M) return (0, r.jsx)(o.ua7, {
+  else if (!k) return (0, r.jsx)(o.ua7, {
     text: m.intl.string(m.t.XdvBLS),
     children: e => (0, r.jsx)(o.zxk, v(y({}, e), {
       color: o.zxk.Colors.GREEN,

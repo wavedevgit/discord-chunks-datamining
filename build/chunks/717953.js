@@ -78,7 +78,7 @@ function v(e) {
     }
   }, [I, R]), w = (0, f.Sl)(g.Il.WHITE).hex, D = (0, f.Sl)(g.Il.RED_430).hex, L = N ? w : void 0, x = i.useCallback(() => {
     T === c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE && S(m.L.TAKE_ACTION), null == v || v()
-  }, [T, S, v]), M = T === c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE;
+  }, [T, S, v]), k = T === c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE;
   return (0, r.jsxs)(h.S4, {
     onSelect: a ? void 0 : x,
     isSelected: !1,
@@ -93,7 +93,7 @@ function v(e) {
     }), (0, r.jsx)(s.V3v, {
       color: L,
       className: y.paletteIcon
-    }), M && (0, r.jsx)(u.IGR, {
+    }), k && (0, r.jsx)(u.IGR, {
       className: y.newBadge,
       text: b.intl.string(b.t.y2b7CA),
       color: D

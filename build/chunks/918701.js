@@ -47,7 +47,7 @@ n.d(t, {
   b7: () => eK,
   bA: () => tb,
   f$: () => tu,
-  f2: () => ek,
+  f2: () => eM,
   fY: () => te,
   gI: () => tt,
   hF: () => tv,
@@ -55,7 +55,7 @@ n.d(t, {
   iQ: () => z,
   il: () => eW,
   lQ: () => W,
-  nc: () => eM,
+  nc: () => ek,
   o9: () => ex,
   oo: () => eA,
   pO: () => eP,
@@ -118,7 +118,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -131,7 +131,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -143,7 +143,7 @@ function k(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -487,8 +487,8 @@ function eI(e, t) {
 }
 
 function eT(e, t) {
-  O.Z.captureException(e, j(M({}, t), {
-    tags: j(M({}, null == t ? void 0 : t.tags), {
+  O.Z.captureException(e, j(k({}, t), {
+    tags: j(k({}, null == t ? void 0 : t.tags), {
       app_context: "quests"
     })
   }))
@@ -559,7 +559,7 @@ function ex(e) {
   return r.type === c.w.REWARD_CODE ? r : null
 }
 
-function eM(e, t) {
+function ek(e, t) {
   let n = C.r.build(e.config).application.link;
   (0, v._3)({
     questId: e.id,
@@ -569,7 +569,7 @@ function eM(e, t) {
     impressionId: t.impressionId
   }), g.S.dispatch(w.CkL.QUEST_GAME_LINK_OPENED), (0, f.Z)(n)
 }
-let ek = (e, t) => {
+let eM = (e, t) => {
     (0, v._3)({
       questId: e,
       questContent: t.content,
