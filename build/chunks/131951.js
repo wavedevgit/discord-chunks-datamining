@@ -1486,7 +1486,7 @@ async function nY() {
 }
 
 function nW() {
-  return (0, ee.isWindows)() || (0, ee.isLinux)() || (0, ee.isMac)()
+  return (0, ee.isWindows)() && "arm64" !== er.ZP.architecture || (0, ee.isLinux)() || (0, ee.isMac)()
 }
 
 function nK() {

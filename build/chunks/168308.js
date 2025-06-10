@@ -5,7 +5,7 @@ n.d(t, {
   bC: () => l
 });
 var r = n(442837),
-  i = n(808506),
+  i = n(610394),
   a = n(358085);
 
 function o() {
@@ -17,5 +17,5 @@ function s(e) {
 }
 
 function l() {
-  return s((0, r.e7)([i.default], () => i.default.isSupported()))
+  return s((0, r.e7)([i.ZP], () => i.ZP.isSupported()))
 }
