@@ -1,10 +1,10 @@
-/** Chunk was on 26268 **/
+/** Chunk was on 94421 **/
 "use strict";
 n.d(t, {
   ID: () => h,
   NM: () => j,
   Xi: () => y,
-  ZP: () => P,
+  ZP: () => E,
   bT: () => x
 });
 var r, i, s = n(255367),
@@ -113,7 +113,7 @@ v(y, "defaultProps", {
   paddingBottom: 60
 });
 var x = ((r = {}).MINIMAL = "minimal", r.CUSTOM = "custom", r.DEFAULT = "default", r.WIDE = "wide", r.SCROLLABLE_CUSTOM = "scrollableCustom", r);
-let S = Object.freeze({
+let C = Object.freeze({
   minimal: "contentColumnMinimal",
   custom: "contentColumnCustom",
   default: "contentColumnDefault",
@@ -121,7 +121,7 @@ let S = Object.freeze({
   scrollableCustom: "contentColumnCustom"
 });
 
-function C(e) {
+function S(e) {
   let {
     isMobile: t,
     mobileSidebarOpen: n,
@@ -150,7 +150,7 @@ function C(e) {
     })
   })
 }
-let P = function(e) {
+let E = function(e) {
   let {
     sidebar: t,
     content: n,
@@ -163,7 +163,7 @@ let P = function(e) {
     mobileSidebarOpen: h,
     toggleSidebar: y,
     hideSidebar: j = !1
-  } = e, x = o.useRef(null), P = o.useRef(null), w = (0, g.Z)(i), E = (0, f.Yzy)(j, {
+  } = e, x = o.useRef(null), E = o.useRef(null), P = (0, g.Z)(i), w = (0, f.Yzy)(j, {
     from: {
       position: "absolute",
       opacity: 0
@@ -177,17 +177,17 @@ let P = function(e) {
     x.current = e, null != v && (v.current = e)
   }, [v]);
   o.useLayoutEffect(() => {
-    null != x.current && w !== i && x.current.scrollTo({
+    null != x.current && P !== i && x.current.scrollTo({
       to: 0
     })
-  }, [i, w, x]);
-  let T = (0, s.jsx)(C, {
+  }, [i, P, x]);
+  let T = (0, s.jsx)(S, {
     isMobile: d.tq,
     mobileSidebarOpen: h,
     closeAction: a
   });
 
-  function D() {
+  function I() {
     return null == r ? null : (0, s.jsx)(f.oXn, {
       className: l()(_.noticeRegion, {
         [_.noticeRegionHiddenSidebar]: j
@@ -196,7 +196,7 @@ let P = function(e) {
     }, i)
   }
   return (0, s.jsx)(s.Fragment, {
-    children: E((e, r) => (0, s.jsxs)(c.animated.div, {
+    children: w((e, r) => (0, s.jsxs)(c.animated.div, {
       style: e,
       className: _.standardSidebarView,
       children: [!r && (null == t ? null : (0, s.jsx)(f.f6W, {
@@ -233,7 +233,7 @@ let P = function(e) {
         if ("custom" === m) return (0, s.jsxs)(p.W, {
           component: "div",
           className: _.contentRegion,
-          children: [t, n, !d.tq && T, D()]
+          children: [t, n, !d.tq && T, I()]
         });
         if ("scrollableCustom" === m) return (0, s.jsxs)(p.W, {
           component: "div",
@@ -244,17 +244,17 @@ let P = function(e) {
             children: [(0, s.jsx)(O.Provider, {
               value: x.current,
               children: (0, s.jsx)("div", {
-                ref: P,
+                ref: E,
                 className: _.contentColumnScrollable,
                 children: (0, s.jsx)(f.JcV, {
-                  containerRef: P,
+                  containerRef: E,
                   children: n
                 })
               })
             }), !d.tq && T]
-          }), D()]
+          }), I()]
         });
-        let r = S[null != m ? m : "default"];
+        let r = C[null != m ? m : "default"];
         return (0, s.jsxs)(p.W, {
           component: "div",
           className: l()(_.contentRegion, {
@@ -272,18 +272,18 @@ let P = function(e) {
                   className: l()(_.contentColumn, _[r], {
                     [_.mobileContent]: d.tq
                   }),
-                  ref: P,
+                  ref: E,
                   style: d.tq ? {
                     maxWidth: window.innerWidth
                   } : void 0,
                   children: j ? n : (0, s.jsx)(f.JcV, {
-                    containerRef: P,
+                    containerRef: E,
                     children: n
                   })
                 })
               }), !d.tq && T]
             })]
-          }), D()]
+          }), I()]
         })
       }()]
     }))

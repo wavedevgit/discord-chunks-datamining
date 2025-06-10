@@ -1,6 +1,6 @@
 /** Chunk was on 40814 **/
 n.d(t, {
-  Z: () => u
+  Z: () => c
 });
 var r = n(503438),
   l = n(802856),
@@ -9,6 +9,6 @@ var r = n(503438),
   a = n(630186),
   s = n(250889);
 
-function u(e) {
+function c(e) {
   return (0, l.Z)(e) ? s.H + e.name : (0, r.Z)(e) && null != e.party && null != e.party.id ? o.r9.id : (0, i.Z)(e) && null != e.url ? a._ + e.url : null != e.application_id ? e.application_id : null
 }

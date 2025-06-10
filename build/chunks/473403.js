@@ -1,35 +1,35 @@
-/** Chunk was on 13368 **/
+/** Chunk was on 44606 **/
 n.d(t, {
-  ZP: () => Z,
-  _W: () => L,
-  ge: () => x,
-  je: () => j
+  ZP: () => x,
+  _W: () => P,
+  ge: () => v,
+  je: () => b
 });
 var r = n(255367),
-  i = n(73800),
-  o = n(120356),
-  a = n.n(o);
-if (12633 == n.j) var l = n(91192);
-var c = n(442837),
-  u = n(481060),
-  s = n(43267),
-  d = n(933557),
+  l = n(73800),
+  s = n(120356),
+  i = n.n(s);
+if (12633 == n.j) var a = n(91192);
+var o = n(442837),
+  E = n(481060),
+  u = n(43267),
+  c = n(933557),
   _ = n(471445),
-  f = n(111028),
-  p = n(727429),
-  m = n(810123),
-  b = n(690221),
-  g = n(430824),
-  h = n(158776),
-  v = n(111583),
-  I = n(594174),
-  y = n(998502),
-  E = n(981631),
-  S = n(490897),
-  O = n(915887),
-  C = n(768107);
+  d = n(111028),
+  A = n(727429),
+  T = n(810123),
+  I = n(690221),
+  O = n(430824),
+  N = n(158776),
+  R = n(111583),
+  g = n(594174),
+  f = n(998502),
+  S = n(981631),
+  h = n(490897),
+  U = n(915887),
+  p = n(768107);
 
-function P(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function P(e) {
   return e
 }
 
-function A(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,217 +60,217 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = {
-  SELECTED: C.modeSelected,
-  CONNECTED: C.modeConnected,
-  UNREAD_IMPORTANT: C.modeUnreadImportant,
-  UNREAD_LESS_IMPORTANT: C.modeUnreadLessImportant,
-  MUTED: C.modeMuted,
-  LOCKED: C.modeLocked
+let C = {
+  SELECTED: p.modeSelected,
+  CONNECTED: p.modeConnected,
+  UNREAD_IMPORTANT: p.modeUnreadImportant,
+  UNREAD_LESS_IMPORTANT: p.modeUnreadLessImportant,
+  MUTED: p.modeMuted,
+  LOCKED: p.modeLocked
 };
 
-function T(e) {
+function M(e) {
   e.preventDefault(), e.stopPropagation()
 }
-let w = y.ZP.getEnableHardwareAcceleration() ? u.Xo$ : u.qEK;
+let m = f.ZP.getEnableHardwareAcceleration() ? E.Xo$ : E.qEK;
 
-function x(e) {
+function v(e) {
   let {
     channel: t,
-    size: n = u.EFr.SIZE_20
+    size: n = E.EFr.SIZE_20
   } = e;
-  return (0, r.jsx)(w, {
-    src: (0, s.x)(t),
+  return (0, r.jsx)(m, {
+    src: (0, u.x)(t),
     "aria-hidden": !0,
     size: n
   })
 }
 
-function j(e) {
+function b(e) {
   let {
     channel: t,
-    size: n = u.EFr.SIZE_20
-  } = e, i = (0, c.e7)([I.default], () => I.default.getUser(null == t ? void 0 : t.recipients[0])), o = (0, c.e7)([v.Z], () => !(null == i || null == t || t.isMultiUserDM()) && null != v.Z.getTypingUsers(null == t ? void 0 : t.id)[null == i ? void 0 : i.id]), {
-    status: a,
-    isMobile: l
-  } = (0, c.cj)([h.Z], () => null == i || null == t || t.isMultiUserDM() ? {
+    size: n = E.EFr.SIZE_20
+  } = e, l = (0, o.e7)([g.default], () => g.default.getUser(null == t ? void 0 : t.recipients[0])), s = (0, o.e7)([R.Z], () => !(null == l || null == t || t.isMultiUserDM()) && null != R.Z.getTypingUsers(null == t ? void 0 : t.id)[null == l ? void 0 : l.id]), {
+    status: i,
+    isMobile: a
+  } = (0, o.cj)([N.Z], () => null == l || null == t || t.isMultiUserDM() ? {
     status: null,
     isMobile: !1
   } : {
-    status: h.Z.getStatus(i.id),
-    isMobile: h.Z.isMobileOnline(i.id)
+    status: N.Z.getStatus(l.id),
+    isMobile: N.Z.isMobileOnline(l.id)
   });
-  return (0, r.jsx)(w, {
+  return (0, r.jsx)(m, {
     size: n,
-    src: null == i ? void 0 : i.getAvatarURL(void 0, 40),
-    status: a,
-    isMobile: l,
-    isTyping: o,
-    "aria-label": null == i ? void 0 : i.username,
+    src: null == l ? void 0 : l.getAvatarURL(void 0, 40),
+    status: i,
+    isMobile: a,
+    isTyping: s,
+    "aria-label": null == l ? void 0 : l.username,
     statusTooltip: !0
   })
 }
-let L = e => {
+let P = e => {
     let {
       className: t,
       containerClassName: n,
-      channel: i,
-      locked: o,
-      hasActiveThreads: l,
-      withGuildIcon: s
-    } = e, d = (0, c.e7)([g.Z], () => g.Z.getGuild(i.guild_id), [i.guild_id]), f = i.type === E.d4z.DM || i.type === E.d4z.GROUP_DM, p = null;
-    if (s && null != d && !f) p = (0, r.jsx)(m.Z, {
-      size: m.E.SMALL_32,
-      className: C.iconContainerWithGuildIcon,
-      iconClassName: C.iconWithGuildIcon,
-      channel: i,
-      guild: d,
-      locked: o,
-      hasActiveThreads: l
+      channel: l,
+      locked: s,
+      hasActiveThreads: a,
+      withGuildIcon: u
+    } = e, c = (0, o.e7)([O.Z], () => O.Z.getGuild(l.guild_id), [l.guild_id]), d = l.type === S.d4z.DM || l.type === S.d4z.GROUP_DM, A = null;
+    if (u && null != c && !d) A = (0, r.jsx)(T.Z, {
+      size: T.E.SMALL_32,
+      className: p.iconContainerWithGuildIcon,
+      iconClassName: p.iconWithGuildIcon,
+      channel: l,
+      guild: c,
+      locked: s,
+      hasActiveThreads: a
     });
     else {
       let e = function(e, t, n) {
         switch (e.type) {
-          case E.d4z.DM:
+          case S.d4z.DM:
             return function() {
-              return (0, r.jsx)(j, {
+              return (0, r.jsx)(b, {
                 channel: e
               })
             };
-          case E.d4z.GROUP_DM:
+          case S.d4z.GROUP_DM:
             return function() {
-              return (0, r.jsx)(x, {
+              return (0, r.jsx)(v, {
                 channel: e
               })
             };
           default:
             return (0, _.KS)(e, t, n)
         }
-      }(i, d, {
-        locked: o,
-        hasActiveThreads: l
+      }(l, c, {
+        locked: s,
+        hasActiveThreads: a
       });
       if (null == e) return null;
-      p = (0, r.jsx)(e, {
+      A = (0, r.jsx)(e, {
         color: "currentColor",
-        className: a()(C.icon, t)
+        className: i()(p.icon, t)
       })
     }
-    let b = s ? null == d ? void 0 : d.name : (0, _.bT)(i, d, o, l),
-      h = s && null != d ? "".concat(d.name, " - ").concat(b, " icon") : "".concat(b, " icon");
-    return (0, r.jsx)(u.ua7, {
-      text: b,
+    let I = u ? null == c ? void 0 : c.name : (0, _.bT)(l, c, s, a),
+      N = u && null != c ? "".concat(c.name, " - ").concat(I, " icon") : "".concat(I, " icon");
+    return (0, r.jsx)(E.ua7, {
+      text: I,
       delay: 500,
-      children: e => (0, r.jsx)("div", A(P({}, e), {
+      children: e => (0, r.jsx)("div", D(L({}, e), {
         role: "img",
-        "aria-label": h,
-        className: a()(C.iconContainer, n),
-        children: p
+        "aria-label": N,
+        className: i()(p.iconContainer, n),
+        children: A
       }))
     })
   },
-  Z = 12633 == n.j ? i.forwardRef(function(e, t) {
+  x = 12633 == n.j ? l.forwardRef(function(e, t) {
     var n;
     let {
-      channel: o,
-      name: c,
-      muted: s,
+      channel: s,
+      name: o,
+      muted: u,
       selected: _,
-      connected: m,
-      unread: g,
-      locked: h,
-      hasActiveThreads: v,
-      onClick: I,
-      onMouseDown: y,
-      onMouseUp: w,
-      onContextMenu: x,
-      connectDragPreview: j,
-      className: Z,
-      iconClassName: R,
-      subtitle: k,
-      subtitleColor: D,
+      connected: T,
+      unread: O,
+      locked: N,
+      hasActiveThreads: R,
+      onClick: g,
+      onMouseDown: f,
+      onMouseUp: m,
+      onContextMenu: v,
+      connectDragPreview: b,
+      className: x,
+      iconClassName: j,
+      subtitle: y,
+      subtitleColor: G,
       channel: {
-        type: G
+        type: F
       },
-      onMouseEnter: B,
-      onMouseLeave: U,
-      "aria-label": M,
-      children: F,
-      guild: W,
-      channelTypeOverride: H,
-      forceInteractable: V,
-      mentionCount: Q,
-      resolvedUnreadSetting: z,
-      isFavoriteSuggestion: q,
-      withGuildIcon: Y,
-      hasActiveEvent: K = !1
-    } = e, X = z === S.i.ALL_MESSAGES || null != Q && Q > 0, J = (0, l.JA)(o.id), {
+      onMouseEnter: z,
+      onMouseLeave: B,
+      "aria-label": w,
+      children: H,
+      guild: V,
+      channelTypeOverride: k,
+      forceInteractable: K,
+      mentionCount: Z,
+      resolvedUnreadSetting: W,
+      isFavoriteSuggestion: Y,
+      withGuildIcon: q,
+      hasActiveEvent: X = !1
+    } = e, J = W === h.i.ALL_MESSAGES || null != Z && Z > 0, Q = (0, a.JA)(s.id), {
       role: $
-    } = J, ee = function(e, t) {
+    } = Q, ee = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
+      var n, r, l = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
+        var n, r, l = {},
+          s = Object.keys(e);
+        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var s = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
-      return i
-    }(J, ["role"]), et = i.useRef(null), en = i.useRef(null), er = (0, p.Z)(o), ei = E.Z5c.CHANNEL(er, o.id), eo = (0, d.ZP)(o), ea = o.isGuildVocal(), el = (0, r.jsx)("div", {
-      className: a()({
-        [C.favoritesSuggestion]: q
+      return l
+    }(Q, ["role"]), et = l.useRef(null), en = l.useRef(null), er = (0, A.Z)(s), el = S.Z5c.CHANNEL(er, s.id), es = (0, c.ZP)(s), ei = s.isGuildVocal(), ea = (0, r.jsx)("div", {
+      className: i()({
+        [p.favoritesSuggestion]: Y
       }),
       ref: en,
-      children: (0, r.jsxs)(b.Z, A(P({
-        role: ea && !m ? "button" : "link",
-        href: ea ? void 0 : ei,
+      children: (0, r.jsxs)(I.Z, D(L({
+        role: ei && !T ? "button" : "link",
+        href: ei ? void 0 : el,
         target: "_blank",
         ref: et,
-        className: C.link,
-        onClick: () => null == I ? void 0 : I(o)
+        className: p.link,
+        onClick: () => null == g ? void 0 : g(s)
       }, ee), {
-        "aria-label": M,
+        "aria-label": w,
         focusProps: {
           enabled: !1
         },
         children: [(0, r.jsxs)("div", {
-          className: C.linkTop,
-          children: [(0, r.jsx)(L, {
-            className: R,
-            channel: o,
-            guild: W,
-            hasActiveThreads: v,
-            locked: h,
-            withGuildIcon: Y
-          }), (0, r.jsx)(f.Z, {
-            className: a()(C.name, {
-              [C.activeEvent]: K
+          className: p.linkTop,
+          children: [(0, r.jsx)(P, {
+            className: j,
+            channel: s,
+            guild: V,
+            hasActiveThreads: R,
+            locked: N,
+            withGuildIcon: q
+          }), (0, r.jsx)(d.Z, {
+            className: i()(p.name, {
+              [p.activeEvent]: X
             }),
             "aria-hidden": !0,
-            children: null == c ? eo : c
-          }), i.Children.count(F) > 0 ? (0, r.jsx)("div", {
-            onClick: T,
-            className: C.children,
-            children: F
+            children: null == o ? es : o
+          }), l.Children.count(H) > 0 ? (0, r.jsx)("div", {
+            onClick: M,
+            className: p.children,
+            children: H
           }) : null]
-        }), null != k ? (0, r.jsx)("div", {
-          className: a()(C.linkBottom, {
-            [C.withGuildIcon]: Y
+        }), null != y ? (0, r.jsx)("div", {
+          className: i()(p.linkBottom, {
+            [p.withGuildIcon]: q
           }),
-          children: (0, r.jsx)(u.Text, {
-            color: null != D ? D : "text-muted",
+          children: (0, r.jsx)(E.Text, {
+            color: null != G ? G : "text-muted",
             variant: "text-xs/medium",
-            className: C.subtitle,
-            children: k
+            className: p.subtitle,
+            children: y
           })
         }) : null]
       }))
     });
-    return (0, r.jsx)(u.tEY, {
+    return (0, r.jsx)(E.tEY, {
       focusTarget: et,
       ringTarget: en,
       offset: {
@@ -280,41 +280,41 @@ let L = e => {
       },
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: a()(Z, null != I || null != w || null != y || V ? C.wrapper : C.notInteractive, (() => {
-          if (_) return a()(O.selectedChannel, N.SELECTED);
-          if (m) return a()(O.selectedChannel, N.CONNECTED);
-          if (h) return N.LOCKED;
-          if (s) return N.MUTED;
-          if (g)
-            if (X) return N.UNREAD_IMPORTANT;
-            else return N.UNREAD_LESS_IMPORTANT;
+        className: i()(x, null != g || null != m || null != f || K ? p.wrapper : p.notInteractive, (() => {
+          if (_) return i()(U.selectedChannel, C.SELECTED);
+          if (T) return i()(U.selectedChannel, C.CONNECTED);
+          if (N) return C.LOCKED;
+          if (u) return C.MUTED;
+          if (O)
+            if (J) return C.UNREAD_IMPORTANT;
+            else return C.UNREAD_LESS_IMPORTANT;
           return null
         })(), function(e) {
           switch (e) {
-            case E.d4z.GUILD_STAGE_VOICE:
-            case E.d4z.GUILD_VOICE:
-              return C.typeVoice;
-            case E.d4z.ANNOUNCEMENT_THREAD:
-            case E.d4z.PUBLIC_THREAD:
-            case E.d4z.PRIVATE_THREAD:
-              return C.typeThread;
-            case E.d4z.GUILD_ANNOUNCEMENT:
-            case E.d4z.GUILD_TEXT:
-            case E.d4z.GUILD_STORE:
-            case E.d4z.GUILD_FORUM:
-            case E.d4z.GUILD_MEDIA:
+            case S.d4z.GUILD_STAGE_VOICE:
+            case S.d4z.GUILD_VOICE:
+              return p.typeVoice;
+            case S.d4z.ANNOUNCEMENT_THREAD:
+            case S.d4z.PUBLIC_THREAD:
+            case S.d4z.PRIVATE_THREAD:
+              return p.typeThread;
+            case S.d4z.GUILD_ANNOUNCEMENT:
+            case S.d4z.GUILD_TEXT:
+            case S.d4z.GUILD_STORE:
+            case S.d4z.GUILD_FORUM:
+            case S.d4z.GUILD_MEDIA:
             default:
-              return C.typeDefault
+              return p.typeDefault
           }
-        }(null != H ? H : G)),
-        onMouseUp: e => null == w ? void 0 : w(e, o),
-        onMouseDown: e => null == y ? void 0 : y(e, o),
-        onContextMenu: e => null == x ? void 0 : x(e, o),
-        onMouseEnter: B,
-        onMouseLeave: U,
-        children: [s || !g ? null : (0, r.jsx)("div", {
-          className: a()(C.unread, X ? C.unreadImportant : void 0)
-        }), null != (n = null == j ? void 0 : j(el)) ? n : el]
+        }(null != k ? k : F)),
+        onMouseUp: e => null == m ? void 0 : m(e, s),
+        onMouseDown: e => null == f ? void 0 : f(e, s),
+        onContextMenu: e => null == v ? void 0 : v(e, s),
+        onMouseEnter: z,
+        onMouseLeave: B,
+        children: [u || !O ? null : (0, r.jsx)("div", {
+          className: i()(p.unread, J ? p.unreadImportant : void 0)
+        }), null != (n = null == b ? void 0 : b(ea)) ? n : ea]
       })
     })
   }) : null

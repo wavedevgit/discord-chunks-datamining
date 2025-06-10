@@ -118,7 +118,7 @@ function T(e) {
   } = e, {
     onClose: k,
     transitionState: M
-  } = n, U = (0, p.Dt)(), G = w.length % 2 == 0, V = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [B, H] = i.useState(Date.now()), [F, z] = i.useState(0), [W, Y] = i.useState(0), [K, q] = i.useState(!1), [Q, X] = i.useState(!0), J = i.useRef(B), $ = i.useRef(F), ee = i.useRef(W), et = i.useRef(K), en = i.useRef(Q), [er, ei] = i.useState(C), el = i.useRef(!1);
+  } = n, U = (0, p.Dt)(), G = w.length % 2 == 0, B = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [V, H] = i.useState(Date.now()), [F, z] = i.useState(0), [W, Y] = i.useState(0), [K, q] = i.useState(!1), [Q, X] = i.useState(!0), J = i.useRef(V), $ = i.useRef(F), ee = i.useRef(W), et = i.useRef(K), en = i.useRef(Q), [er, ei] = i.useState(C), el = i.useRef(!1);
 
   function ea() {
     let e = Date.now(),
@@ -155,8 +155,8 @@ function T(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [er]), i.useEffect(() => {
-    J.current = B, $.current = F, ee.current = W, et.current = K, en.current = Q
-  }, [B, F, W, K, Q]), i.useEffect(() => () => {
+    J.current = V, $.current = F, ee.current = W, et.current = K, en.current = Q
+  }, [V, F, W, K, Q]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
       let [e, t] = ea();
       m.default.track(_.rMx.CHANGE_LOG_VIDEO_PLAYED, {
@@ -196,7 +196,7 @@ function T(e) {
         children: j
       }), "video" === l.type ? (0, r.jsx)(h.Z, {
         className: a()(I.video, S),
-        autoPlay: !V,
+        autoPlay: !B,
         loop: !0,
         muted: !0,
         controls: !0,

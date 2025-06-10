@@ -1,10 +1,10 @@
-/** Chunk was on 26268 **/
+/** Chunk was on 94421 **/
 "use strict";
 n.d(t, {
-  $x: () => S,
+  $x: () => C,
   ZP: () => N,
-  d7: () => P,
-  w6: () => C
+  d7: () => E,
+  w6: () => S
 }), n(539854), n(361932), n(187205), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -63,11 +63,11 @@ let x = Object.freeze({
     onPreventNavigation: null,
     sidebarOpen: !0
   }),
-  S = 1.4,
-  C = 15,
-  P = 2;
+  C = 1.4,
+  S = 15,
+  E = 2;
 
-function w(e) {
+function P(e) {
   var t, n;
   let {
     section: i,
@@ -89,7 +89,7 @@ function w(e) {
     }))
   })
 }
-class E extends i.PureComponent {
+class w extends i.PureComponent {
   componentDidMount() {
     this.getPredicateSections().forEach(e => {
       let {
@@ -108,7 +108,7 @@ class E extends i.PureComponent {
     let {
       section: t
     } = e;
-    t !== this.props.section && (this._intensity = S)
+    t !== this.props.section && (this._intensity = C)
   }
   componentWillUnmount() {
     this._unmounted = !0, this._subscribedStores.forEach(e => e.removeChangeListener(this.handleNoticeStoreUpdate)), this.props.sections.forEach(e => {
@@ -129,7 +129,7 @@ class E extends i.PureComponent {
     return null != n && n.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (f.S.dispatch(_.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + P, C), f.S.dispatch(_.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = S, !0)
+    }), this._intensity = Math.min(this._intensity + E, S), f.S.dispatch(_.CkL.EMPHASIZE_NOTICE), !1) : (this._intensity = C, !0)
   }
   renderSidebar(e) {
     let {
@@ -204,7 +204,7 @@ class E extends i.PureComponent {
         scrollerRef: this.scrollerRef,
         section: n,
         sidebar: this.renderSidebar(a),
-        content: (0, r.jsx)(w, {
+        content: (0, r.jsx)(P, {
           section: l,
           setPreventNavigation: this.setPreventNavigation,
           scrollerRef: this.scrollerRef
@@ -221,7 +221,7 @@ class E extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), O(this, "_unmounted", !1), O(this, "_intensity", S), O(this, "_subscribedStores", []), O(this, "scrollerRef", i.createRef()), O(this, "state", j(y({}, x), {
+    super(...e), O(this, "_unmounted", !1), O(this, "_intensity", C), O(this, "_subscribedStores", []), O(this, "scrollerRef", i.createRef()), O(this, "state", j(y({}, x), {
       sidebarOpen: this.props.section !== _.oAB.SUBSCRIPTIONS && this.props.section !== _.oAB.PROFILE_CUSTOMIZATION
     })), O(this, "setPreventNavigation", (e, t) => {
       this.setState({
@@ -259,7 +259,7 @@ class E extends i.PureComponent {
         null == e || e()
       }
     }), O(this, "handleNoticeStoreUpdate", () => {
-      this._unmounted || (this._intensity = S, this.forceUpdate())
+      this._unmounted || (this._intensity = C, this.forceUpdate())
     }), O(this, "renderSettingsSectionTabBarItem", (e, t, n) => {
       let {
         section: i,
@@ -306,4 +306,4 @@ class E extends i.PureComponent {
     })
   }
 }
-let N = E
+let N = w

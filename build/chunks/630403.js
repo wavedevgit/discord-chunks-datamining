@@ -1,4 +1,5 @@
-/** Chunk was on 87337 **/
+/** Chunk was on 94421 **/
+"use strict";
 e.exports = {
   container: "container__1ce5d",
   circularImage: "circularImage__1ce5d",

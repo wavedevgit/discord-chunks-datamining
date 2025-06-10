@@ -1,7 +1,7 @@
 /** Chunk was on 40814 **/
 n.d(t, {
   IN: () => s,
-  oZ: () => u
+  oZ: () => c
 }), n(255367), n(73800);
 var r = n(570140),
   l = n(610394);
@@ -40,7 +40,7 @@ function s(e, t) {
   })
 }
 
-function u(e) {
+function c(e) {
   r.Z.dispatch({
     type: "SOUNDBOARD_SET_OVERLAY_ENABLED",
     pid: e,

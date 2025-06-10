@@ -1,4 +1,4 @@
-/** Chunk was on 26268 **/
+/** Chunk was on 94421 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -28,15 +28,15 @@ let b = i.memo(function(e) {
     previewGuildId: O,
     preview: y,
     author: j
-  } = e, x = null != O ? O : (0, c.k)(n), S = (0, l.Z)(j), C = (0, a.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
-    content: P
+  } = e, x = null != O ? O : (0, c.k)(n), C = (0, l.Z)(j), S = (0, a.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
+    content: E
   } = (0, d.Z)(n, {
     hideSimpleEmbedContent: v,
-    allowList: C,
-    allowHeading: C,
+    allowList: S,
+    allowHeading: S,
     allowLinks: !0,
     previewLinkTarget: !0
-  }), w = i.useMemo(() => {
+  }), P = i.useMemo(() => {
     var t, n;
     return (0, f.Z)((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -76,10 +76,10 @@ let b = i.memo(function(e) {
       [g.cozyMessage]: !b,
       [g.groupStart]: _
     }),
-    childrenHeader: w,
-    childrenMessageContent: (0, p.Z)(e, P),
+    childrenHeader: P,
+    childrenMessageContent: (0, p.Z)(e, E),
     disableInteraction: h,
-    authorHasGradientRole: S,
+    authorHasGradientRole: C,
     guildId: x,
     preview: y
   })
