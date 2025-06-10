@@ -1,8 +1,8 @@
 /** Chunk was on 22472 **/
 n.d(t, {
-  Z: () => j,
-  u: () => E
-}), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(290780), n(642613);
+  Z: () => S,
+  u: () => j
+}), n(388685), n(539854), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(290780), n(642613);
 var i = n(255367),
   r = n(73800),
   s = n(120356),
@@ -17,11 +17,38 @@ var i = n(255367),
   p = n(883904),
   h = n(68985),
   f = n(211644),
-  b = n(804501),
-  _ = n(533936),
-  x = n(20493);
+  b = n(428967),
+  _ = n(972118),
+  x = n(533936),
+  E = n(20493);
 
-function E(e) {
+function C(e) {
+  let {
+    content: t
+  } = e, n = (0, a.e7)([g.Z], () => {
+    var e, n;
+    return null == (n = g.Z.settings.userContent) || null == (e = n.recurringDismissibleContentStates) ? void 0 : e[t]
+  });
+  if (null == n) return null;
+  let r = [],
+    {
+      lastDismissedVersion: s,
+      lastDismissedAtMs: l,
+      lastDismissedObjectId: o
+    } = n;
+  if (void 0 !== s && 0 !== s && r.push("last_dismissed_version: ".concat(s)), void 0 !== l) {
+    let e = Number(l),
+      t = Number.isNaN(e) ? "n/a" : new Date(e).toLocaleString();
+    r.push("last_dismissed_at: ".concat(t))
+  }
+  return (void 0 !== o && "0" !== o && r.push("last_dismissed_object_id: ".concat(o)), 0 === r.length) ? null : (0, i.jsx)(d.Text, {
+    variant: "text-xs/normal",
+    className: E.marginTop4,
+    children: r.join(", ")
+  })
+}
+
+function j(e) {
   let {
     className: t,
     contents: n,
@@ -29,15 +56,8 @@ function E(e) {
     onChange: s
   } = e, l = o.z[r], {
     isDismissed: a,
-    handleToggleDismissState: c,
-    recurringDismissibleContentInfo: u
-  } = (0, b.x)(l, n), m = "";
-  if (null == u || void 0 === u.lastDismissedVersion && void 0 === u.lastDismissedAtMs) m = "";
-  else if (void 0 !== u.lastDismissedVersion && 0 !== u.lastDismissedVersion) m = "last_dismissed_version: ".concat(u.lastDismissedVersion);
-  else if (void 0 !== u.lastDismissedAtMs) {
-    let e = new Date(u.lastDismissedAtMs).toLocaleString();
-    m = "last_dismissed_at: ".concat(e)
-  }
+    handleToggleDismissState: c
+  } = (0, _.Z)(l, n);
   return (0, i.jsxs)(d.j7V, {
     value: a,
     onChange: () => {
@@ -46,24 +66,22 @@ function E(e) {
     className: t,
     children: [(0, i.jsx)(d.Text, {
       variant: "text-md/normal",
-      className: x.marginTop4,
+      className: E.marginTop4,
       children: "".concat(r.toLowerCase(), " (").concat(o.z[r], ")")
-    }), null != m && (0, i.jsx)(d.Text, {
-      variant: "text-xs/normal",
-      className: x.marginTop4,
-      children: m
+    }), (0, b.qh)(l) && (0, i.jsx)(C, {
+      content: l
     })]
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     items: t,
     dismissedContents: n,
     handleChange: r
   } = e;
   return (0, i.jsx)(i.Fragment, {
-    children: t.filter(e => isNaN(Number(e))).map(e => (0, i.jsx)(E, {
+    children: t.filter(e => isNaN(Number(e))).map(e => (0, i.jsx)(j, {
       contents: n,
       content: e,
       onChange: r
@@ -71,7 +89,7 @@ function C(e) {
   })
 }
 
-function j() {
+function S() {
   var e;
   let t = (0, f.ZP)(e => e.recentlyShown),
     {
@@ -83,8 +101,8 @@ function j() {
       dailyCapOverridden: h.Z.dailyCapOverridden,
       newUserMinAgeRequiredOverridden: h.Z.newUserMinAgeRequiredOverridden
     })),
-    [E, j] = r.useState(""),
-    O = null != (e = (0, a.e7)([g.Z], () => {
+    [_, C] = r.useState(""),
+    j = null != (e = (0, a.e7)([g.Z], () => {
       var e;
       return null == (e = g.Z.settings.userContent) ? void 0 : e.dismissedContents
     })) ? e : new Uint8Array,
@@ -106,16 +124,16 @@ function j() {
       })
     },
     I = t.map(e => o.z[e]),
-    N = S.filter(e => e.toLowerCase().includes(E.toLowerCase())).filter(e => !I.includes(e)),
-    y = Object.keys(o.z).filter(e => !I.includes(e)).filter(e => !S.includes(e)).filter(e => e.toLowerCase().includes(E.toLowerCase())).sort((e, t) => e.localeCompare(t));
+    N = S.filter(e => e.toLowerCase().includes(_.toLowerCase())).filter(e => !I.includes(e)),
+    y = Object.keys(o.z).filter(e => !I.includes(e)).filter(e => !S.includes(e)).filter(e => e.toLowerCase().includes(_.toLowerCase())).sort((e, t) => e.localeCompare(t));
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(d.hjN, {
       title: "Dismissible Content Fatigue",
       tag: d.RB0.H1,
-      className: x.marginBottom60,
+      className: E.marginBottom60,
       children: [(0, i.jsx)(d.xJW, {
         children: (0, i.jsxs)(d.R94, {
-          className: x.marginBottom4,
+          className: E.marginBottom4,
           children: ["Daily Cap Reached: ", n ? "Yes" : "No"]
         })
       }), (0, i.jsx)(d.j7V, {
@@ -131,7 +149,7 @@ function j() {
           onClick: () => (0, p.EG)(),
           children: "Reset DismissibleContentFrameworkStore"
         }), (0, i.jsx)(d.R94, {
-          className: x.marginTop4,
+          className: E.marginTop4,
           children: "This will reset the daily cap and content seen during session"
         })]
       })]
@@ -139,13 +157,13 @@ function j() {
       title: "Dismissible Contents",
       tag: d.RB0.H1,
       children: [(0, i.jsx)(d.E1j, {
-        className: x.marginBottom20,
+        className: E.marginBottom20,
         size: d.E1j.Sizes.LARGE,
-        query: E,
-        onChange: j,
-        onClear: () => j("")
+        query: _,
+        onChange: C,
+        onClear: () => C("")
       }), (0, i.jsxs)(d.xJW, {
-        className: _.buttonsContainer,
+        className: x.buttonsContainer,
         children: [(0, i.jsx)(d.zxk, {
           onClick: m.sr,
           children: "Clear All Dismissed Contents"
@@ -154,36 +172,36 @@ function j() {
           children: "Check All Dismissed Contents"
         })]
       }), t.length > 0 ? (0, i.jsxs)("div", {
-        className: x.marginBottom20,
+        className: E.marginBottom20,
         children: [(0, i.jsx)("div", {
-          className: x.marginBottom20,
+          className: E.marginBottom20,
           children: (0, i.jsx)(d.vwX, {
             children: "Recently Shown"
           })
-        }), (0, i.jsx)(C, {
+        }), (0, i.jsx)(O, {
           items: I,
-          dismissedContents: O,
+          dismissedContents: j,
           handleChange: T
         })]
       }) : null, N.length > 0 ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-          className: x.marginBottom20,
+          className: E.marginBottom20,
           children: (0, i.jsx)(d.vwX, {
             children: "Recent Overrides"
           })
-        }), (0, i.jsx)(C, {
+        }), (0, i.jsx)(O, {
           items: N,
-          dismissedContents: O,
+          dismissedContents: j,
           handleChange: T
         })]
       }) : null, (0, i.jsx)(u.Z, {
-        className: l()(x.marginBottom20, x.marginTop20),
+        className: l()(E.marginBottom20, E.marginTop20),
         children: (0, i.jsx)(d.vwX, {
           children: "Available Dismissible Contents"
         })
-      }), (0, i.jsx)(C, {
+      }), (0, i.jsx)(O, {
         items: y,
-        dismissedContents: O,
+        dismissedContents: j,
         handleChange: T
       })]
     })]
