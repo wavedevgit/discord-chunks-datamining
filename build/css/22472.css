@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: b8fd8e73c6e7b770
+  Original File Name: 6e7832aec6a6c8c4
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -821,7 +821,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -14707,6 +14707,13 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     margin-bottom: 0
 }
 
+.rowContainer__0e124 {
+    align-items: center;
+    display: flex;
+    gap: var(--spacing-8);
+    margin-right: var(--spacing-4)
+}
+
 .settingHeader_d81ffd {
     display: flex;
     flex-direction: column;
@@ -19434,4 +19441,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=b8fd8e73c6e7b770.css.map*/
+/*# sourceMappingURL=6e7832aec6a6c8c4.css.map*/
