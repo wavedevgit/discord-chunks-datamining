@@ -150,7 +150,7 @@ let eu = 880,
       children: (0, r.jsx)(X.Z, {
         nameplate: i,
         user: o,
-        nameplatePreviewSize: "large",
+        nameplatePreviewSize: "xlarge",
         isHighlighted: !0
       })
     })).with(u.Z.BUNDLE, () => (0, r.jsx)("div", {

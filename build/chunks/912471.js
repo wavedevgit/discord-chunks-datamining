@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Ai: () => z,
-  DL: () => W,
-  Gg: () => K
+  Ai: () => J,
+  DL: () => X,
+  Gg: () => Q
 }), n(415506);
 var r = n(772848),
   i = n(259443),
@@ -20,9 +20,10 @@ var r = n(772848),
   h = n(343420),
   m = n(127438),
   g = n(686325),
-  E = n(981631);
+  E = n(733879),
+  b = n(981631);
 
-function b(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,79 +32,80 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
-let O = 21,
-  v = 15 * _.Z.Millis.MINUTE,
-  I = _.Z.Millis.SECOND,
-  T = "LAST_CLIENT_HEARTBEAT_SESSION",
-  S = "user",
-  A = new i.Yd("SessionHeartbeatScheduler"),
-  N = null,
-  C = 0,
-  R = 0,
-  P = {
+let v = 22,
+  I = 15 * _.Z.Millis.MINUTE,
+  T = _.Z.Millis.SECOND,
+  S = "LAST_CLIENT_HEARTBEAT_SESSION",
+  A = "user",
+  N = new i.Yd("SessionHeartbeatScheduler"),
+  C = null,
+  R = null,
+  P = 0,
+  w = 0,
+  D = {
     state: "uninitialized"
   },
-  w = d.Z.getState(),
-  D = (0, m.H)(),
-  L = c.default.isAuthenticated();
+  L = d.Z.getState(),
+  x = (0, m.H)(),
+  k = c.default.isAuthenticated();
 
-function x() {
-  w = d.Z.getState(), D = (0, m.H)(), L = c.default.isAuthenticated(), V()
+function M() {
+  L = d.Z.getState(), x = (0, m.H)(), k = c.default.isAuthenticated(), Y()
 }
 
-function k() {
-  if (null != N) return;
-  let e = 0 === R ? 0 : v - (performance.now() - R);
+function j() {
+  if (null != C) return;
+  let e = 0 === w ? 0 : I - (performance.now() - w);
   p.Z.addBreadcrumb({
     message: "Received Last Heartbeat Event Timestamp. Time Until Next Heartbeat: ".concat(e / 1e3, " seconds. Scheduling Heartbeat")
-  }), N = {
+  }), C = {
     type: "timeout",
     id: setTimeout(() => {
-      G(), N = {
+      F(), C = {
         type: "interval",
         id: setInterval(() => {
-          G()
-        }, v)
+          F()
+        }, I)
       }
     }, e)
   }
 }
 
-function M() {
-  if (null == N) return !1;
-  switch (N.type) {
+function U() {
+  if (null == C) return !1;
+  switch (C.type) {
     case "timeout":
-      clearTimeout(N.id);
+      clearTimeout(C.id);
       break;
     case "interval":
-      clearInterval(N.id);
+      clearInterval(C.id);
       break;
     default:
-      N.type
+      C.type
   }
-  return N = null, !0
+  return C = null, !0
 }
 
-function j() {
-  M() && (p.Z.addBreadcrumb({
-    category: S,
+function G() {
+  U() && (p.Z.addBreadcrumb({
+    category: A,
     message: "Stopping Analytics Heartbeat"
   }), (0, l.Z)())
 }
 
-function U() {
+function B() {
   var e;
   let t = null != (e = u.Z.getIdleSince()) ? e : 0;
   return {
@@ -114,107 +116,124 @@ function U() {
     is_system_locked: u.Z.getSystemLocked()
   }
 }
-async function G() {
+async function F() {
   let e = Date.now(),
-    t = await K(),
+    t = await Q(),
     n = Date.now();
   if (null == t) return void p.Z.captureException(Error("Null session when tracking session heartbeat. Waited ".concat(n - e, "ms")));
   p.Z.addBreadcrumb({
-    category: S,
+    category: A,
     message: "Tracking Heartbeat",
     data: {
       initialized: t.createdAtTimestamp
     }
   });
-  let r = y({
+  let r = O({
     client_heartbeat_initialization_timestamp: t.createdAtTimestamp,
-    client_heartbeat_version: O
-  }, (0, h.O)(), U());
-  f.default.track(E.rMx.CLIENT_HEARTBEAT, r), R = performance.now(), (0, l.Z)()
-}
-
-function B() {}
-
-function F() {
-  return L && (D || w !== E.hes.DISCONNECTED && w !== E.hes.RTC_DISCONNECTED)
+    client_heartbeat_version: v
+  }, (0, h.O)(), B());
+  f.default.track(b.rMx.CLIENT_HEARTBEAT, r), w = performance.now(), (0, l.Z)()
 }
 
 function V() {
-  F() ? k() : j()
+  if (!(k && (0, E.y)()) || performance.now() - w <= I) return;
+  let e = {
+    client_heartbeat_version: v
+  };
+  f.default.track(b.rMx.CLIENT_HEARTBEAT_SKIPPED, e)
 }
 
-function Z(e) {
+function Z() {}
+
+function H() {
+  return k && (x || L !== b.hes.DISCONNECTED && L !== b.hes.RTC_DISCONNECTED)
+}
+
+function Y() {
+  H() ? j() : G()
+}
+
+function W() {
+  null == R && (R = {
+    id: setInterval(() => {
+      V()
+    }, I),
+    type: "interval"
+  })
+}
+
+function K(e) {
   let t = performance.now();
-  if (!(t - C < I)) try {
-    o.K.set(T, e), C = t
+  if (!(t - P < T)) try {
+    o.K.set(S, e), P = t
   } catch (e) {
     p.Z.captureException(e)
   }
 }
 
-function H(e) {
-  return null == e ? null : e.version !== g.EI ? (A.warn("Throwing away client session with invalid version: ".concat(e.version, ", expected ").concat(g.EI)), null) : e
+function z(e) {
+  return null == e ? null : e.version !== g.EI ? (N.warn("Throwing away client session with invalid version: ".concat(e.version, ", expected ").concat(g.EI)), null) : e
 }
 
-function Y() {
-  o.K.remove(T), P = {
+function q() {
+  o.K.remove(S), D = {
     state: "loaded",
     session: null
-  }, j(), R = 0
+  }, G(), w = 0
 }
 
-function W() {
+function X() {
   function e() {
-    L = c.default.isAuthenticated(), V()
+    k = c.default.isAuthenticated(), Y()
   }
 
   function t() {
-    L = !1, Y()
+    k = !1, q()
   }
 
   function n() {
-    w = d.Z.getState(), V()
+    L = d.Z.getState(), Y()
   }
 
   function r(e) {
     let {
       focused: t
     } = e;
-    D = t, V()
+    x = t, Y()
   }
 
   function i(e) {
     let {
       state: t
     } = e;
-    D = t === E.$7l.ACTIVE, V()
+    x = t === b.$7l.ACTIVE, Y()
   }
   p.Z.addBreadcrumb({
     message: "Initializing SessionHeartbeatScheduler"
-  }), d.Z.addChangeListener(n), c.default.addChangeListener(e), s.Z.subscribe("WINDOW_FOCUS", r), s.Z.subscribe("APP_STATE_UPDATE", i), s.Z.subscribe("LOGOUT", t), V(), a.ZP.initialized.then(x)
+  }), d.Z.addChangeListener(n), c.default.addChangeListener(e), s.Z.subscribe("WINDOW_FOCUS", r), s.Z.subscribe("APP_STATE_UPDATE", i), s.Z.subscribe("LOGOUT", t), Y(), W(), a.ZP.initialized.then(M)
 }
-async function K() {
+async function Q() {
   let e = null;
   try {
-    e = "uninitialized" === P.state ? H(await o.K.getAfterRefresh(T)) : P.session
+    e = "uninitialized" === D.state ? z(await o.K.getAfterRefresh(S)) : D.session
   } catch (e) {
     p.Z.captureException(e)
   }
   return (() => {
     let t = Date.now();
-    return F() ? ((null == e || (0, g.qK)(e)) && (e = {
+    return H() ? ((null == e || (0, g.qK)(e)) && (e = {
       uuid: (0, r.Z)(),
       createdAtTimestamp: t,
       lastUsedTimestamp: t,
       version: g.EI
-    }, C = 0), e.lastUsedTimestamp = t, Z(e)) : null != e && (0, g.qK)(e) && (e = null), P = {
+    }, P = 0), e.lastUsedTimestamp = t, K(e)) : null != e && (0, g.qK)(e) && (e = null), D = {
       state: "loaded",
       session: e
     }, e
   })()
 }
 
-function z() {
-  let e = "uninitialized" === P.state ? H(o.K.get(T)) : P.session;
+function J() {
+  let e = "uninitialized" === D.state ? z(o.K.get(S)) : D.session;
   return null == e || (0, g.qK)(e) ? null : e
 }
