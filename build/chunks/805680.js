@@ -208,7 +208,7 @@ function ee(e) {
     autoTrackExposure: !1
   }), eO = i.useCallback(e => {
     var t;
-    if (!eE && (0, p.$s)() || eE && !(eb && er) || eg) return;
+    if (!eE && (0, p.$s)() || eE && !(eb && er) || eg || e.defaultPrevented) return;
     let {
       target: n
     } = e;

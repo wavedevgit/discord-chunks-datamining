@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => I
+  Z: () => P
 });
 var r = n(255367),
   i = n(73800),
@@ -11,70 +11,71 @@ var r = n(255367),
   c = n(896449),
   u = n(540059),
   d = n(314910),
-  p = n(585483),
-  h = n(5967),
-  f = n(499254),
-  m = n(827498),
-  g = n(421591),
-  b = n(496977),
-  _ = n(314734),
-  y = n(981631),
-  C = n(149203),
-  x = n(388032),
-  v = n(760420);
-let j = {
-  height: _.lv
+  p = n(574254),
+  h = n(585483),
+  f = n(5967),
+  m = n(499254),
+  g = n(827498),
+  b = n(421591),
+  _ = n(496977),
+  y = n(314734),
+  C = n(981631),
+  x = n(149203),
+  v = n(388032),
+  j = n(760420);
+let O = {
+  height: y.lv
 };
 
-function O() {
-  f.yT(m.ti.DISMISSED)
+function E() {
+  m.yT(g.ti.DISMISSED)
 }
 
-function E(e) {
+function I(e) {
   let {
     channel: t,
     closeOnModalOuterClick: n = !1,
     parentModalKey: u
   } = e, d = i.useRef(null), {
-    renderWindow: f,
-    windowDispatch: x
-  } = i.useContext(s.ZP), v = null != u, j = (0, a.Jw)(null != u ? u : ""), E = i.useCallback(e => {
+    renderWindow: m,
+    windowDispatch: v
+  } = i.useContext(s.ZP), j = null != u, O = (0, a.Jw)(null != u ? u : ""), I = i.useCallback(e => {
     var t;
-    if (!v && (0, a.$s)() || v && !(j && n)) return;
+    if (!j && (0, a.$s)() || j && !(O && n) || p.Z.isOpen() || e.defaultPrevented) return;
     let {
       target: r
     } = e;
-    if ((0, l.k)(r) && null != r.closest("." + _.Jh)) return;
+    if ((0, l.k)(r) && null != r.closest("." + y.Jh)) return;
     for (;
       (0, l.k)(r);) {
       if (r === d.current) return;
-      if (r.classList.contains(_.t4) || r.classList.contains(_.Id)) return void e.preventDefault();
-      if (r.classList.contains(_.NN)) return;
-      let t = [C.cZ, c.N];
-      if (r.classList.contains(_.I4) || t.includes(r.id)) return;
+      if (r.classList.contains(y.t4) || r.classList.contains(y.Id)) return void e.preventDefault();
+      if (r.classList.contains(y.NN)) return;
+      let t = [x.cZ, c.N];
+      if (r.classList.contains(y.I4) || t.includes(r.id)) return;
       r = r.parentNode
     }
-    O();
-    let i = null == (t = (0, h.uB)(e)) ? void 0 : t.activeElement;
-    (null == i || "BODY" === i.tagName) && p.S.dispatchToLastSubscribed(y.CkL.TEXTAREA_FOCUS)
-  }, [n, j, v]);
-  i.useLayoutEffect(() => (f.addEventListener("mousedown", E), f.addEventListener("contextmenu", E), x.subscribe(y.CkL.POPOUT_CLOSE, O), () => {
-    f.removeEventListener("mousedown", E), f.removeEventListener("contextmenu", E), x.unsubscribe(y.CkL.POPOUT_CLOSE, O)
-  }), [E, f, x]), (0, o.Tbt)(d), i.useEffect(() => {
-    (!v && (0, a.$s)() || v && !j) && O()
-  }, [j, v]);
-  let I = (0, b.Z)();
-  return (0, r.jsx)(g.Z, {
+    E();
+    let i = null == (t = (0, f.uB)(e)) ? void 0 : t.activeElement;
+    (null == i || "BODY" === i.tagName) && h.S.dispatchToLastSubscribed(C.CkL.TEXTAREA_FOCUS)
+  }, [n, O, j]);
+  i.useLayoutEffect(() => (m.addEventListener("mousedown", I), m.addEventListener("contextmenu", I), v.subscribe(C.CkL.POPOUT_CLOSE, E), () => {
+    m.removeEventListener("mousedown", I), m.removeEventListener("contextmenu", I), v.unsubscribe(C.CkL.POPOUT_CLOSE, E)
+  }), [I, m, v]), (0, o.Tbt)(d), i.useEffect(() => {
+    (!j && (0, a.$s)() || j && !O) && E()
+  }, [O, j]);
+  let P = (0, _.Z)();
+  return (0, r.jsx)(b.Z, {
     ref: d,
     context: {
       channel: t,
       type: "channel"
     },
-    entrypoint: m._b.TEXT,
-    initHistory: I
+    entrypoint: g._b.TEXT,
+    initHistory: P
   })
 }
-let I = i.memo(function(e) {
+let P = i.memo(function(e) {
   var {
     positionTargetRef: t
   } = e, n = function(e, t) {
@@ -94,9 +95,9 @@ let I = i.memo(function(e) {
   }(e, ["positionTargetRef"]);
   let i = (0, u.Q3)("AppLauncherPopup");
   return (0, r.jsx)("span", {
-    style: _.u$,
+    style: y.u$,
     children: (0, r.jsx)(d.W5, {
-      className: v.positionLayer,
+      className: j.positionLayer,
       targetRef: t,
       position: "top",
       align: "right",
@@ -108,11 +109,11 @@ let I = i.memo(function(e) {
           isPositioned: t
         } = e;
         return (0, r.jsx)("section", {
-          className: v.positionContainer,
+          className: j.positionContainer,
           role: "dialog",
-          style: j,
-          "aria-label": x.intl.string(x.t["3CNGLC"]),
-          children: t && (0, r.jsx)(E, function(e) {
+          style: O,
+          "aria-label": v.intl.string(v.t["3CNGLC"]),
+          children: t && (0, r.jsx)(I, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
