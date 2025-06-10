@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: d719753d27dc9e3f
+  Original File Name: 1317d60efea02163
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -1991,7 +1991,9 @@ h1.title_feb59c,h2.title_feb59c {
 
 .wrapper__2beb3 {
     background-color: #000;
+    border-radius: 8px;
     inset: 0;
+    overflow: hidden;
     position: absolute;
     z-index: var(--custom-user-profile-toast-z-index)
 }
@@ -19432,4 +19434,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=d719753d27dc9e3f.css.map*/
+/*# sourceMappingURL=1317d60efea02163.css.map*/
