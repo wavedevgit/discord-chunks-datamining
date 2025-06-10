@@ -200,82 +200,96 @@ function I(e) {
   }, [U, C]);
   let B = null;
   return null != t && t.length > 0 && null != s && l && (B = (0, r.jsx)("div", {
-    className: j.loadingMore,
-    children: (0, r.jsx)(u.$jN, {})
-  }, "loading-more-after")), (0, b.vU)({
-    notificationCenterVariant: R,
-    wrappedMessages: t,
-    groupedUnreadMessages: null == U ? void 0 : U.UNREAD
-  }), (0, r.jsx)("div", {
-    className: o()(w, j.messagesPopoutWrap),
-    onClick: S,
-    onDoubleClick: S,
-    "aria-label": e["aria-label"],
-    children: (0, r.jsx)(u.Den, {
-      className: o()(j.messagesPopout, I),
-      onScroll: M,
-      fade: !0,
-      ref: T,
-      children: (0, r.jsx)(c.bG, {
-        navigator: A,
-        children: (0, r.jsx)(c.SJ, {
-          children: e => {
-            var t, i, {
-                ref: l
-              } = e,
-              o = function(e, t) {
-                if (null == e) return {};
-                var n, r, i = function(e, t) {
+      className: j.loadingMore,
+      children: (0, r.jsx)(u.$jN, {})
+    }, "loading-more-after")),
+    function(e) {
+      let {
+        loadingInitial: t,
+        messagesByCategory: n
+      } = e, r = i.useRef(!1), l = null != n && n.UNREAD.length > 0, o = null == n || t, {
+        setOpenStateFromUnreads: s
+      } = (0, y.Z)();
+      i.useEffect(() => {
+        o || r.current || (s(l), r.current = !0)
+      }, [s, l, o])
+    }({
+      messagesByCategory: U,
+      loadingInitial: n
+    }), (0, b.vU)({
+      notificationCenterVariant: R,
+      wrappedMessages: t,
+      groupedUnreadMessages: null == U ? void 0 : U.UNREAD
+    }), (0, r.jsx)("div", {
+      className: o()(w, j.messagesPopoutWrap),
+      onClick: S,
+      onDoubleClick: S,
+      "aria-label": e["aria-label"],
+      children: (0, r.jsx)(u.Den, {
+        className: o()(j.messagesPopout, I),
+        onScroll: M,
+        fade: !0,
+        ref: T,
+        children: (0, r.jsx)(c.bG, {
+          navigator: A,
+          children: (0, r.jsx)(c.SJ, {
+            children: e => {
+              var t, i, {
+                  ref: l
+                } = e,
+                o = function(e, t) {
                   if (null == e) return {};
-                  var n, r, i = {},
-                    l = Object.keys(e);
-                  for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+                  var n, r, i = function(e, t) {
+                    if (null == e) return {};
+                    var n, r, i = {},
+                      l = Object.keys(e);
+                    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+                    return i
+                  }(e, t);
+                  if (Object.getOwnPropertySymbols) {
+                    var l = Object.getOwnPropertySymbols(e);
+                    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+                  }
                   return i
-                }(e, t);
-                if (Object.getOwnPropertySymbols) {
-                  var l = Object.getOwnPropertySymbols(e);
-                  for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+                }(e, ["ref"]);
+              return (0, r.jsxs)("div", (t = function(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                  var n = null != arguments[t] ? arguments[t] : {},
+                    r = Object.keys(n);
+                  "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(n, e).enumerable
+                  }))), r.forEach(function(t) {
+                    var r;
+                    r = n[t], t in e ? Object.defineProperty(e, t, {
+                      value: r,
+                      enumerable: !0,
+                      configurable: !0,
+                      writable: !0
+                    }) : e[t] = r
+                  })
                 }
-                return i
-              }(e, ["ref"]);
-            return (0, r.jsxs)("div", (t = function(e) {
-              for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                  r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                  return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                  var r;
-                  r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0
-                  }) : e[t] = r
-                })
-              }
-              return e
-            }({
-              ref: l,
-              style: {
-                height: "100%",
-                overflow: n ? "hidden" : void 0
-              }
-            }, o), i = i = {
-              children: [G, B]
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-              var n = Object.keys(e);
-              if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
-              }
-              return n
-            })(Object(i)).forEach(function(e) {
-              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
-            }), t))
-          }
+                return e
+              }({
+                ref: l,
+                style: {
+                  height: "100%",
+                  overflow: n ? "hidden" : void 0
+                }
+              }, o), i = i = {
+                children: [G, B]
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+                var n = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                  var r = Object.getOwnPropertySymbols(e);
+                  n.push.apply(n, r)
+                }
+                return n
+              })(Object(i)).forEach(function(e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+              }), t))
+            }
+          })
         })
       })
     })
-  })
 }
