@@ -18,8 +18,8 @@ var i = n(255367),
 function m(e) {
   let {
     locked: t
-  } = e, n = (0, p.II)(), m = null == n ? void 0 : n.id, g = null == n ? void 0 : n.altId, y = (0, o.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [v, b] = r.useState(new Set), [E, _] = r.useState(new Set), x = r.useCallback((e, t, n) => {
-    b(n => {
+  } = e, n = (0, p.II)(), m = null == n ? void 0 : n.id, g = null == n ? void 0 : n.altId, y = (0, o.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [b, v] = r.useState(new Set), [E, _] = r.useState(new Set), x = r.useCallback((e, t, n) => {
+    v(n => {
       if (t) {
         if (n.has(e)) return n;
         n.add(e)
@@ -38,7 +38,7 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), S = (0, u.ee)(() => v, [v]), I = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
+  }, []), S = (0, u.ee)(() => b, [b]), I = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
   r.useEffect(() => {
     0 === S.size || t || j(h.Odu.FRIENDS, {
       locked: t,

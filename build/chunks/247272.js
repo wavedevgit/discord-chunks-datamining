@@ -14,7 +14,7 @@ function r(e) {
     applicationId: s,
     inviteTargetType: a
   } = e;
-  return (0, i.W)().then(() => {
+  return (0, i._)().then(() => {
     l.Z.dispatch({
       type: "LOAD_INVITE_SUGGESTIONS",
       omitUserIds: null != t ? t : new Set,

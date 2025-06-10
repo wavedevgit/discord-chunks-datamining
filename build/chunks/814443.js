@@ -1,8 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
-n.d(t, {
-  Z: () => O
-}), n(388685);
+n(388685);
 var r, i = n(442837),
   a = n(570140),
   o = n(699516);
@@ -101,8 +99,7 @@ class y extends(r = i.ZP.PersistedStore) {
     return p.affinityUserIds
   }
 }
-s(y, "displayName", "UserAffinitiesStore"), s(y, "persistKey", "UserAffinitiesStore"), s(y, "migrations", [e => null]);
-let O = new y(a.Z, {
+s(y, "displayName", "UserAffinitiesStore"), s(y, "persistKey", "UserAffinitiesStore"), s(y, "migrations", [e => null]), new y(a.Z, {
   LOAD_USER_AFFINITIES_SUCCESS: E,
   LOAD_USER_AFFINITIES: g,
   LOAD_USER_AFFINITIES_FAILURE: m,

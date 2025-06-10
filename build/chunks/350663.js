@@ -2,8 +2,8 @@
 n.d(t, {
   IV: () => _,
   ZP: () => S,
-  bt: () => v,
-  fd: () => b
+  bt: () => b,
+  fd: () => v
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -51,8 +51,8 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = 256,
-  b = 144,
+let b = 256,
+  v = 144,
   E = e => {
     let {
       participant: t,
@@ -75,16 +75,16 @@ let v = 256,
 
 function _(e, t, n) {
   if (e === f.C5.VERTICAL) {
-    let e = Math.max(t, v),
-      n = Math.max(9 / 16 * e, b);
+    let e = Math.max(t, b),
+      n = Math.max(9 / 16 * e, v);
     return {
       tileWidth: e,
       tileHeight: n
     }
   }
-  let i = Math.max(n, b);
+  let i = Math.max(n, v);
   return {
-    tileWidth: Math.max(16 / 9 * i, v),
+    tileWidth: Math.max(16 / 9 * i, b),
     tileHeight: i
   }
 }
@@ -100,8 +100,8 @@ let x = {
       tileWidth: n,
       tileHeight: o,
       layout: h,
-      locked: v,
-      activeStreams: b,
+      locked: b,
+      activeStreams: v,
       streamParticipants: _,
       participantsVersion: S,
       pinned: I,
@@ -112,10 +112,10 @@ let x = {
       key: e.user.id,
       width: n,
       height: o,
-      locked: v,
+      locked: b,
       widgetId: t,
       pinned: I
-    })), w = (0, c.Z)(n), Z = (0, c.Z)(v), P = h === f.C5.VERTICAL, T = v || Z !== v || w !== n, k = 0, D = 0, A = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
+    })), w = (0, c.Z)(n), Z = (0, c.Z)(b), P = h === f.C5.VERTICAL, T = b || Z !== b || w !== n, k = 0, D = 0, A = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
       y: (k += e.height + (t > 0 ? j : 0)) - e.height,
       x: 0
     })) : N.map((e, t) => O(y({}, e), {
@@ -162,7 +162,7 @@ let x = {
       },
       config: x,
       trail: 100 * !T
-    }, T ? "animate-never" : "respect-motion-settings"), R = (0, p.ee)(() => new Set(_.map(e => e.user.id)), [_, S]), L = (0, p.ee)(() => new Set(_.filter(e => b.has((0, u.V9)(e.stream))).map(e => e.user.id)), [_, b, S]);
+    }, T ? "animate-never" : "respect-motion-settings"), R = (0, p.ee)(() => new Set(_.map(e => e.user.id)), [_, S]), L = (0, p.ee)(() => new Set(_.filter(e => v.has((0, u.V9)(e.stream))).map(e => e.user.id)), [_, v, S]);
     return r.useEffect(() => {
       0 !== R.size && (0, p.zi)(m.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),

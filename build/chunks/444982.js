@@ -18,8 +18,8 @@ var i = n(255367),
   g = n(430561),
   y = n(134849),
   O = n(501787),
-  v = n(981631),
-  b = n(388032);
+  b = n(981631),
+  v = n(388032);
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -53,7 +53,7 @@ function _(e, t) {
   }), e
 }
 let x = {
-  [v.Odu.VIDEO]: {
+  [b.Odu.VIDEO]: {
     renderWidget(e) {
       let {
         widget: t,
@@ -75,7 +75,7 @@ let x = {
       }) : null
     },
     renderTitle: () => (0, i.jsx)(g.PI, {
-      children: b.intl.string(b.t.UPvOiY)
+      children: v.intl.string(v.t.UPvOiY)
     }),
     renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(g.ls, {
@@ -97,7 +97,7 @@ let x = {
     }),
     resizeValidation: f.R
   },
-  [v.Odu.VOICE_V3]: {
+  [b.Odu.VOICE_V3]: {
     renderWidget(e) {
       var t;
       let {
@@ -111,14 +111,14 @@ let x = {
         id: n.id,
         locked: o,
         pinned: n.pinned,
-        widget: v.Odu.VOICE_V3,
+        widget: b.Odu.VOICE_V3,
         maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : O.At,
         isPreviewingInGame: !1,
         showEmpty: l
       }) : null
     },
     renderTitle: () => (0, i.jsx)(g.PI, {
-      children: b.intl.string(b.t.nFv3GR)
+      children: v.intl.string(v.t.nFv3GR)
     }),
     renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(g.ls, {
@@ -138,7 +138,7 @@ let x = {
       })]
     })
   },
-  [v.Odu.CLICK_ZONE_DEBUG]: {
+  [b.Odu.CLICK_ZONE_DEBUG]: {
     renderWidget(e) {
       let {
         widget: t,
@@ -171,7 +171,7 @@ let x = {
       })]
     })
   },
-  [v.Odu.PERFORMANCE_DEBUG]: {
+  [b.Odu.PERFORMANCE_DEBUG]: {
     renderWidget(e) {
       let {
         widget: t,
@@ -193,7 +193,7 @@ let x = {
       pinned: e.pinned
     })
   },
-  [v.Odu.GO_LIVE]: {
+  [b.Odu.GO_LIVE]: {
     renderWidget(e) {
       var t;
       let {
@@ -225,7 +225,7 @@ let x = {
       }) : null
     },
     renderTitle: () => (0, i.jsx)(g.PI, {
-      children: b.intl.string(b.t["386XRk"])
+      children: v.intl.string(v.t["386XRk"])
     }),
     renderButtons(e, t) {
       var o;
@@ -253,7 +253,7 @@ let x = {
     },
     resizeValidation: u.w
   },
-  [v.Odu.QUICK_ACTIONS]: {
+  [b.Odu.QUICK_ACTIONS]: {
     renderWidget(e) {
       let {
         locked: t
@@ -263,7 +263,7 @@ let x = {
       })
     }
   },
-  [v.Odu.NOTIFICATIONS]: {
+  [b.Odu.NOTIFICATIONS]: {
     renderWidget(e) {
       let {
         locked: t,
@@ -275,7 +275,7 @@ let x = {
       })
     },
     renderTitle: () => (0, i.jsx)(g.PI, {
-      children: b.intl.string(b.t.gnKWdX)
+      children: v.intl.string(v.t.gnKWdX)
     }),
     renderButtons: (e, t) => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(g.ls, {
@@ -295,7 +295,7 @@ let x = {
       })]
     })
   },
-  [v.Odu.ACTIVITY]: {
+  [b.Odu.ACTIVITY]: {
     renderWidget(e) {
       let {
         locked: t
@@ -305,12 +305,12 @@ let x = {
       })
     },
     renderTitle: () => (0, i.jsx)(g.PI, {
-      children: b.intl.string(b.t["6gwSFR"])
+      children: v.intl.string(v.t["6gwSFR"])
     }),
     renderButtons: () => null,
     predicate: () => (0, l.Rb)("ActivityPopout").allowActivityWidget && !(0, o.XU)("FriendsPopout").enableOverlayWidget
   },
-  [v.Odu.FRIENDS]: {
+  [b.Odu.FRIENDS]: {
     renderWidget(e) {
       let {
         locked: t
@@ -320,7 +320,7 @@ let x = {
       })
     },
     renderTitle: () => (0, i.jsx)(g.PI, {
-      children: b.intl.string(b.t.TdEu5e)
+      children: v.intl.string(v.t.TdEu5e)
     }),
     renderButtons: () => null,
     predicate: () => (0, o.XU)("FriendsPopout").enableOverlayWidget

@@ -124,7 +124,7 @@ class _ extends o.Z {
       }, {
         autoTrackExposure: !1
       });
-      e && (0, c.W)()
+      e && (0, c._)()
     }), y(this, "_trackCustomNotificationSoundsExposure", () => {
       b.Y.trackExposure({
         location: "PremiumManager"

@@ -19,11 +19,11 @@ var i = n(255367),
   y = n(76932);
 let O = [];
 
-function v(e) {
+function b(e) {
   return e.notification.id
 }
 
-function b(e, t, n, r) {
+function v(e, t, n, r) {
   let {
     index: o,
     notification: l,
@@ -67,8 +67,8 @@ let _ = e => r.useState(() => new h.AS(e))[0],
       value: y,
       children: (0, i.jsx)(l.W3x, {
         items: p,
-        renderItem: b,
-        getItemKey: v,
+        renderItem: v,
+        getItemKey: b,
         wrapChildren: E
       })
     }) : n ? t ? null : (0, i.jsx)(s.E, {

@@ -20,8 +20,8 @@ var i = n(255367),
   g = n(99690),
   y = n(493773),
   O = n(549879),
-  v = n(620662),
-  b = n(835473),
+  b = n(620662),
+  v = n(835473),
   E = n(194082),
   _ = n(297781),
   x = n(656709),
@@ -92,8 +92,8 @@ function Q(e) {
       return () => clearTimeout(e)
     }
   }, [s]);
-  let y = null != n && (0, v.Z)(n, G.xjy.JOIN),
-    b = async e => {
+  let y = null != n && (0, b.Z)(n, G.xjy.JOIN),
+    v = async e => {
       if (null != a && "unsent" === s) {
         e.stopPropagation();
         try {
@@ -155,7 +155,7 @@ function Q(e) {
     "aria-label": _,
     children: e => (0, i.jsx)(d.zxk, Y(H({}, e), {
       submitting: "sending" === s,
-      onClick: h ? E : b,
+      onClick: h ? E : v,
       className: B.inviteButton,
       wrapperClassName: B.inviteButtonWrapper,
       innerClassName: B.inviteButtonInner,
@@ -180,7 +180,7 @@ function K(e) {
     entry: n,
     currentUserActivity: o
   } = e, l = (0, u.e7)([A.default], () => A.default.getUser(n.author_id)), a = null != (t = null == o ? void 0 : o.application_id) ? t : n.extra.application_id, s = (0, u.e7)([k.Z], () => null != l ? k.Z.getApplicationActivity(l.id, a) : null, [a, l]), [c, h] = r.useState("unsent");
-  if (!(null != s && (0, v.Z)(s, G.xjy.JOIN))) return null;
+  if (!(null != s && (0, b.Z)(s, G.xjy.JOIN))) return null;
   let f = async e => {
     if (null != l && "unsent" === c) {
       e.stopPropagation();
@@ -416,7 +416,7 @@ function et(e) {
     activity: t,
     currentUser: n,
     showInviteButton: r = !0
-  } = e, o = null != t && (0, v.Z)(t, G.xjy.JOIN), l = (0, b.q)(null == t ? void 0 : t.application_id), a = null != l && (0, M.yE)(l.flags, G.udG.EMBEDDED);
+  } = e, o = null != t && (0, b.Z)(t, G.xjy.JOIN), l = (0, v.q)(null == t ? void 0 : t.application_id), a = null != l && (0, M.yE)(l.flags, G.udG.EMBEDDED);
   return null == t || null == n ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(w.Z, {
       className: B.activityCard,
