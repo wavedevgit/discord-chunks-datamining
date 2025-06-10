@@ -7,8 +7,8 @@ var r, i, l, s = n(442837),
   a = n(570140),
   o = n(45966),
   c = n(734893),
-  u = n(999382),
-  d = n(392885),
+  d = n(999382),
+  u = n(392885),
   m = n(740903),
   g = n(889369),
   p = n(969632),
@@ -24,12 +24,12 @@ function O(e) {
   let {
     subsection: t
   } = e;
-  if (u.Z.getGuildId() === v) return !1;
-  _ = t === b.KsC.SERVER_GUIDE ? h.PG.HOME_SETTINGS : h.PG.LANDING, v = u.Z.getGuildId()
+  if (d.Z.getGuildId() === v) return !1;
+  _ = t === b.KsC.SERVER_GUIDE ? h.PG.HOME_SETTINGS : h.PG.LANDING, v = d.Z.getGuildId()
 }
 class C extends(r = s.ZP.Store) {
   initialize() {
-    this.waitFor(o.Z, g.Z, f.Z, p.Z, d.Z), this.syncWith([o.Z, g.Z, f.Z, p.Z, d.Z], () => !0)
+    this.waitFor(o.Z, g.Z, f.Z, p.Z, u.Z), this.syncWith([o.Z, g.Z, f.Z, p.Z, u.Z], () => !0)
   }
   isEducationUpsellDismissed(e) {
     return j.has(e)
@@ -54,7 +54,7 @@ class C extends(r = s.ZP.Store) {
   showNotice() {
     if (null == v) return !1;
     if ((0, x.C)(v)) return this.hasChanges();
-    let e = d.Z.getCurrentPage();
+    let e = u.Z.getCurrentPage();
     return (_ !== h.PG.SAFETY_CHECK || e === m.u.OVERVIEW) && null != _ && _ !== h.PG.LANDING
   }
   canCloseEarly() {

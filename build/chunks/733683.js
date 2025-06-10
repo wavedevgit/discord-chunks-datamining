@@ -10,8 +10,8 @@ var r, i = n(255367),
   a = n.n(s),
   o = n(524979),
   c = n(772848),
-  u = n(374470),
-  d = n(477690),
+  d = n(374470),
+  u = n(477690),
   m = n(481060),
   g = n(624138),
   p = n(981631),
@@ -28,8 +28,8 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 let j = -1,
-  _ = (0, g.Mg)(d.Z.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
-  v = (0, g.Mg)(d.Z.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
+  _ = (0, g.Mg)(u.Z.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
+  v = (0, g.Mg)(u.Z.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
   O = {
     tension: 140,
     friction: 30
@@ -140,14 +140,14 @@ class y extends(r = l.Component) {
         tiers: a
       } = this.props,
       c = a[n],
-      u = s >= e.numRequired,
-      d = null != c && e.key === c.key,
+      d = s >= e.numRequired,
+      u = null != c && e.key === c.key,
       g = e.key === a[0].key,
       p = this.getTierDisabled(e);
-    l = g ? x.tierFirst : p ? x.tierInProgress : d ? x.tierCurrent : u ? x.tierAccomplished : x.tierInProgress;
+    l = g ? x.tierFirst : p ? x.tierInProgress : u ? x.tierCurrent : d ? x.tierAccomplished : x.tierInProgress;
     let f = e.y - (g ? 0 : v / 2),
       h = this.state.tierMarkerActive >= t,
-      j = !g && d && h;
+      j = !g && u && h;
     return (0, i.jsx)(m.ua7, {
       text: this.renderTierMarkerTooltip(e),
       position: "right",
@@ -287,7 +287,7 @@ class y extends(r = l.Component) {
         showForegroundTooltip: !0
       }), this.handleForegroundMouseMove(e)
     }), b(this, "handleForegroundMouseMove", e => {
-      if (!(0, u.k)(e.target)) return;
+      if (!(0, d.k)(e.target)) return;
       let t = e.target.getBoundingClientRect(),
         n = e.clientY - t.top;
       n !== this.state.foregroundTooltipY && this.setState({

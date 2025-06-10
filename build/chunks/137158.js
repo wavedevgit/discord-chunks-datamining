@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(392711),
   o = n(562075),
   c = n(539202),
-  u = n(793030),
-  d = n(692547),
+  d = n(793030),
+  u = n(692547),
   m = n(481060),
   g = n(838221),
   p = n(246364),
@@ -67,7 +67,7 @@ function b(e) {
     children: [(0, r.jsx)(n.icon, {
       size: "xs",
       color: "currentColor"
-    }), (0, r.jsx)(u.xv, {
+    }), (0, r.jsx)(d.xv, {
       variant: "text-sm/medium",
       tag: "span",
       children: n.text
@@ -84,7 +84,7 @@ function j(e) {
     canRemove: a,
     actionsLocation: o,
     fieldStyle: c,
-    field: u
+    field: d
   } = e;
   return (0, r.jsxs)("div", {
     className: h.backgroundContainer,
@@ -102,7 +102,7 @@ function j(e) {
         className: h.compactTitle,
         children: t
       }), (0, r.jsx)(b, {
-        type: u.field_type
+        type: d.field_type
       })]
     }), "footer" === o && (0, r.jsxs)(m.hjN, {
       className: h.containerFooter,
@@ -146,10 +146,10 @@ function v(e) {
     index: t,
     field: n,
     isDropHovered: l,
-    onDrop: u,
+    onDrop: d,
     fieldStyle: g
   } = e, f = (0, a.debounce)(async (e, t, n) => {
-    await u(e, t, n)
+    await d(e, t, n)
   }), b = i.useRef(null), [, v] = (0, o.c)({
     type: _,
     item: {
@@ -190,7 +190,7 @@ function v(e) {
       children: (0, r.jsx)(m.Vni, {
         size: "xs",
         className: h.dragIcon,
-        color: d.Z.unsafe_rawColors.PRIMARY_400.css
+        color: u.Z.unsafe_rawColors.PRIMARY_400.css
       })
     }), (0, r.jsx)(j, x({}, e))]
   })

@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(481060),
   o = n(313201),
   c = n(584825),
-  u = n(723047),
-  d = n(727843),
+  d = n(723047),
+  u = n(727843),
   m = n(290348),
   g = n(518470),
   p = n(22902),
@@ -23,12 +23,12 @@ function b() {
   var e;
   let {
     editStateId: t
-  } = (0, d.N)(), [n, l] = m.TT(t), [b, j] = m.F2(t), _ = (0, c.oC)(t), {
+  } = (0, u.N)(), [n, l] = m.TT(t), [b, j] = m.F2(t), _ = (0, c.oC)(t), {
     options: v
   } = (0, p.Z)(null != (e = null == _ ? void 0 : _.active_trial) ? e : null), O = (0, g.Z)(), C = null != n, y = i.useCallback(e => {
     let t = v.find(e => e.isDefault);
     s()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
-  }, [l, v]), N = (0, u.mY)(), I = (0, o.Dt)(), E = (0, o.Dt)();
+  }, [l, v]), N = (0, d.mY)(), I = (0, o.Dt)(), E = (0, o.Dt)();
   return (0, r.jsxs)(f.Z, {
     title: h.intl.string(h.t["6antoq"]),
     description: h.intl.string(h.t.urVijY),

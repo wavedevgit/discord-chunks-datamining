@@ -10,7 +10,7 @@ var r, i = n(392711),
   o = n(563534),
   c = n(999382);
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -19,14 +19,14 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
@@ -47,14 +47,14 @@ function b(e, t) {
   if (null == p.newMemberActions) return !1;
   let n = p.newMemberActions.findIndex(t => t.channelId === e);
   if (n < 0) return !1;
-  p.newMemberActions[n] = d({}, t), p.newMemberActions = [...p.newMemberActions]
+  p.newMemberActions[n] = u({}, t), p.newMemberActions = [...p.newMemberActions]
 }
 
 function j(e, t) {
   if (null == p.resourceChannels) return !1;
   let n = p.resourceChannels.findIndex(t => t.channelId === e);
   if (n < 0) return !1;
-  p.resourceChannels[n] = d({}, t), p.resourceChannels = [...p.resourceChannels]
+  p.resourceChannels[n] = u({}, t), p.resourceChannels = [...p.resourceChannels]
 }
 
 function _() {
@@ -95,7 +95,7 @@ class v extends(r = s.ZP.PersistedStore) {
     return null == n ? null : n
   }
 }
-u(v, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), u(v, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
+d(v, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), d(v, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
 let O = new v(a.Z, {
   GUILD_SETTINGS_INIT: x,
   GUILD_SETTINGS_SET_SECTION: x,

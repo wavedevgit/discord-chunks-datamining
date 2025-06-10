@@ -12,8 +12,8 @@ var r = n(255367),
   a = n(392711),
   o = n(442837),
   c = n(481060),
-  u = n(230711),
-  d = n(497321),
+  d = n(230711),
+  u = n(497321),
   m = n(688465),
   g = n(241559),
   p = n(496675),
@@ -111,7 +111,7 @@ function T(e) {
     guild: t,
     className: n,
     withDivider: l = !0
-  } = e, a = (0, o.e7)([p.Z], () => null != t && p.Z.can(C.Plq.MANAGE_GUILD, t), [t]), u = i.useCallback(async e => {
+  } = e, a = (0, o.e7)([p.Z], () => null != t && p.Z.can(C.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
     let {
       value: n
     } = e;
@@ -124,12 +124,12 @@ function T(e) {
     } catch (e) {
       (0, c.showToast)((0, c.createToast)(y.intl.string(y.t["46Rs3t"]), c.ToastType.FAILURE))
     }
-  }, [t.id]), d = i.useMemo(() => {
+  }, [t.id]), u = i.useMemo(() => {
     let e = (0, b.MF)(null == t ? void 0 : t.hasFeature(C.oNc.COMMUNITY)).map(e => E(I({}, e), {
       tooltipPosition: "left"
     }));
     return (0, b.LJ)(e)
-  }, [t]), m = i.useMemo(() => d.find(e => e.value === (null == t ? void 0 : t.explicitContentFilter)), [t, d]);
+  }, [t]), m = i.useMemo(() => u.find(e => e.value === (null == t ? void 0 : t.explicitContentFilter)), [t, u]);
   return (0, r.jsxs)(r.Fragment, {
     children: [l && (0, r.jsx)(c.$i$, {
       className: N.divider
@@ -151,9 +151,9 @@ function T(e) {
       }), (0, r.jsx)(O.Z, {
         changeTitle: y.intl.string(y.t["eBd+Ul"]),
         value: null == m ? void 0 : m.value,
-        options: d,
+        options: u,
         disabled: !a,
-        onChange: u
+        onChange: d
       })]
     })]
   })
@@ -169,15 +169,15 @@ async function P(e, t) {
 function w(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([p.Z], () => null != t && p.Z.can(C.Plq.MANAGE_GUILD, t), [t]), l = t.hasFeature(C.oNc.COMMUNITY), s = (0, g.n2)(t.id), [a, u] = i.useState(t.hasFeature(C.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), d = i.useCallback(async e => {
-    u(e), await P(t, e)
+  } = e, n = (0, o.e7)([p.Z], () => null != t && p.Z.can(C.Plq.MANAGE_GUILD, t), [t]), l = t.hasFeature(C.oNc.COMMUNITY), s = (0, g.n2)(t.id), [a, d] = i.useState(t.hasFeature(C.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), u = i.useCallback(async e => {
+    d(e), await P(t, e)
   }, [t]);
   return l || !s ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: N.setupContainer,
       children: [(0, r.jsx)(c.j7V, {
         value: a,
-        onChange: d,
+        onChange: u,
         className: N.switchItem,
         disabled: !n,
         hideBorder: !0,
@@ -211,7 +211,7 @@ function R(e) {
     guild: t,
     mfaLevel: n
   } = e, l = (0, o.e7)([p.Z], () => null != t && p.Z.can(C.Plq.MANAGE_GUILD, t), [t]), s = (0, o.e7)([h.default], () => h.default.getCurrentUser()), {
-    isGuildOwnerWithMFA: d,
+    isGuildOwnerWithMFA: u,
     showMFAUserTooltip: m
   } = i.useMemo(() => null == s ? {
     canChangeMFALevel: !1,
@@ -220,7 +220,7 @@ function R(e) {
     isGuildOwnerWithMFA: t.isOwnerWithRequiredMfaLevel(s),
     showMFAUserTooltip: !s.mfaEnabled && t.isOwner(s)
   }, [s, t]), g = n === C.BpS.ELEVATED, f = (0, a.throttle)(async e => {
-    d && (m || await j.Z.updateMFALevel({
+    u && (m || await j.Z.updateMFALevel({
       guildId: t.id,
       level: e ? C.BpS.ELEVATED : C.BpS.NONE,
       isEnabled: !e
@@ -235,7 +235,7 @@ function R(e) {
         value: g,
         onChange: f,
         className: N.switchItem,
-        disabled: !d,
+        disabled: !u,
         hideBorder: !0,
         children: (0, r.jsxs)("div", {
           className: N.switchItemTextContent,
@@ -254,7 +254,7 @@ function R(e) {
         textVariant: "text-xs/normal",
         children: y.intl.format(y.t.Xz1O0d, {
           onClick: function() {
-            u.Z.open(C.oAB.ACCOUNT)
+            d.Z.open(C.oAB.ACCOUNT)
           }
         })
       })]
@@ -267,7 +267,7 @@ function Z() {
     guild: e,
     mfaLevel: t
   } = (0, o.cj)([_.Z], () => _.Z.getProps(), []), n = (0, o.e7)([f.Z], () => f.Z.enabled, []);
-  return null == e ? null : n ? (0, r.jsx)(d.Z, {}) : (0, r.jsxs)(c.hjN, {
+  return null == e ? null : n ? (0, r.jsx)(u.Z, {}) : (0, r.jsxs)(c.hjN, {
     title: y.intl.string(y.t["suhY+f"]),
     tag: c.RB0.H1,
     titleClassName: N.headerContainer,

@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(442837),
   o = n(481060),
   c = n(239091),
-  u = n(479531),
-  d = n(616780),
+  d = n(479531),
+  u = n(616780),
   m = n(100527),
   g = n(906732),
   p = n(670188),
@@ -66,7 +66,7 @@ async function w(e, t, n) {
   try {
     await b.Z.updateMemberRoles(t, e.id, i, [], [n])
   } catch (t) {
-    let e = new u.Z(t);
+    let e = new d.Z(t);
     (0, o.h7j)(t => (0, r.jsx)(o.ConfirmModal, P(T({}, t), {
       header: I.intl.string(I.t.R0RpRU),
       confirmText: I.intl.string(I.t.BddRzc),
@@ -85,13 +85,13 @@ function R(e) {
     member: t,
     guildId: l,
     roleId: a,
-    locked: u
+    locked: d
   } = e, m = i.useRef(null), g = i.useMemo(() => ({
     [l]: [t.id]
   }), [l, t.id]);
 
   function h(e) {
-    if (e.stopPropagation(), !u) {
+    if (e.stopPropagation(), !d) {
       if (e.shiftKey) return void w(t, l, a);
       let n = j.Z.getRole(a);
       (0, o.h7j)(e => (0, r.jsxs)(o.ConfirmModal, P(T({}, e), {
@@ -129,7 +129,7 @@ function R(e) {
       }))
     })
   }
-  return (0, d.$)(g), (0, r.jsx)("div", {
+  return (0, u.$)(g), (0, r.jsx)("div", {
     className: S.contentWidth,
     children: (0, r.jsx)(p.Z, {
       targetElementRef: m,
@@ -151,11 +151,11 @@ function R(e) {
         }), (0, r.jsx)("div", {
           className: E.removeButtonContainer,
           children: (0, r.jsx)(o.ua7, {
-            text: u ? I.intl.string(I.t.wkrQaG) : I.intl.string(I.t["7sFNfX"]),
+            text: d ? I.intl.string(I.t.wkrQaG) : I.intl.string(I.t["7sFNfX"]),
             position: "top",
             children: e => (0, r.jsx)(o.P3F, P(T({}, e), {
               className: s()(E.removeButton, {
-                [E.removeButtonDisabled]: u
+                [E.removeButtonDisabled]: d
               }),
               onClick: h,
               children: (0, r.jsx)(o.k$p, {
@@ -207,13 +207,13 @@ function D(e) {
     headerHeight: s,
     locked: a,
     onScroll: c,
-    roleMembers: u,
-    handleAddClick: d
+    roleMembers: d,
+    handleAddClick: u
   } = e, {
     analyticsLocations: p
   } = (0, g.ZP)(m.Z.MEMBER_LIST), f = i.useMemo(() => l.trim().toLowerCase(), [l]);
   (0, _.rY)(t, f);
-  let h = i.useMemo(() => u.filter(e => (0, _.eg)(f, e)), [u, f]),
+  let h = i.useMemo(() => d.filter(e => (0, _.eg)(f, e)), [d, f]),
     x = i.useMemo(() => h.sort((e, t) => e.name.localeCompare(t.name)), [h]);
   return (0, r.jsx)(g.Gt, {
     value: p,
@@ -235,7 +235,7 @@ function D(e) {
           row: i
         } = e;
         if (0 === x.length) return (0, r.jsx)(Z, {
-          handleAddClick: d,
+          handleAddClick: u,
           locked: a
         }, "empty");
         let l = x[i];
@@ -282,8 +282,8 @@ function A(e) {
     guild: t,
     role: l,
     locked: c,
-    setSelectedSection: u
-  } = e, [d, m] = i.useState(""), {
+    setSelectedSection: d
+  } = e, [u, m] = i.useState(""), {
     headerHeight: g,
     headerRef: p
   } = (0, v.Z)(0), {
@@ -322,9 +322,9 @@ function A(e) {
             guild: t,
             role: l,
             selectedSection: y.ZI.MEMBERS,
-            setSelectedSection: u
+            setSelectedSection: d
           }), (0, r.jsx)(k, {
-            query: d,
+            query: u,
             setQuery: m,
             locked: j,
             handleAddClick: R
@@ -337,7 +337,7 @@ function A(e) {
       })
     }), (0, r.jsx)(D, {
       headerHeight: g + 8,
-      query: d,
+      query: u,
       guildId: t.id,
       roleId: l.id,
       locked: j,

@@ -11,8 +11,8 @@ var i = n(481060),
   a = n(375263),
   o = n(586382),
   c = n(981631),
-  u = n(388032),
-  d = n(563772);
+  d = n(388032),
+  u = n(563772);
 
 function m(e) {
   let {
@@ -20,33 +20,33 @@ function m(e) {
     canManageGuild: n
   } = e;
   return (0, r.jsxs)(i.hjN, {
-    className: d.container,
+    className: u.container,
     children: [(0, r.jsxs)("div", {
-      className: d.column,
+      className: u.column,
       children: [(0, r.jsxs)(i.vwX, {
-        className: d.title,
-        children: [u.intl.string(u.t["0r0AzM"]), (0, r.jsx)(o.zA, {
+        className: u.title,
+        children: [d.intl.string(d.t["0r0AzM"]), (0, r.jsx)(o.zA, {
           guild: t
         })]
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: d.text,
-        children: u.intl.string(u.t.UfqmIS)
+        className: u.text,
+        children: d.intl.string(d.t.UfqmIS)
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: d.text,
-        children: u.intl.format(u.t.vBcWUl, {
+        className: u.text,
+        children: d.intl.format(d.t.vBcWUl, {
           articleURL: l.Z.getArticleURL(c.BhN.GUILD_BANNER_SPLASH)
         })
       }), (0, r.jsx)(s.F, {
         guild: t,
         canManageGuild: n,
-        buttonClassName: d.button
+        buttonClassName: u.button
       })]
     }), (0, r.jsx)("div", {
-      className: d.column,
+      className: u.column,
       children: (0, r.jsx)(a.O, {
         guild: t,
         canManageGuild: n

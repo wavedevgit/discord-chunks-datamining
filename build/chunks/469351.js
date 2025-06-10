@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(481060),
   o = n(76535),
   c = n(395586),
-  u = n(204875),
-  d = n(715796),
+  d = n(204875),
+  u = n(715796),
   m = n(411667),
   g = n(434404),
   p = n(962086),
@@ -38,7 +38,7 @@ function S(e) {
   } = (0, _.eD)(t), T = (0, s.e7)([x.Z], () => x.Z.getGuild(t)), P = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = (null == T ? void 0 : T.isOwner(P)) === !0, {
     loading: R
   } = (0, o.H)(t), [Z, D] = i.useState(n ? "manage_listings" : "payment");
-  (0, d.P)(T);
+  (0, u.P)(T);
   let k = i.useCallback(() => {
     if (null == T) return;
     let e = x.Z.getRole(T.id, T.getEveryoneRoleId());
@@ -75,12 +75,12 @@ function S(e) {
       "aria-label": I.intl.string(I.t.X6h2g4),
       selectedItem: Z,
       onItemSelect: D,
-      children: [(0, r.jsx)(u.Z, {
+      children: [(0, r.jsx)(d.Z, {
         id: "basic_info",
         disabledTooltip: I.intl.string(I.t.NVDuUV),
         disabled: !n,
         children: I.intl.string(I.t.w27QAQ)
-      }), (0, r.jsx)(u.Z, {
+      }), (0, r.jsx)(d.Z, {
         id: "manage_listings",
         disabledTooltip: I.intl.string(I.t.NVDuUV),
         disabled: !n,

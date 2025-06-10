@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(524979),
   o = n(481060),
   c = n(393238),
-  u = n(388032),
-  d = n(212787);
+  d = n(388032),
+  u = n(212787);
 let m = i.memo(function(e) {
   var t, n;
   let {
@@ -74,22 +74,22 @@ let m = i.memo(function(e) {
     }, 100);
     return () => clearTimeout(e)
   }, []), (0, r.jsx)(o.P3F, {
-    className: s()(d.editCard, {
-      [d.toggled]: g,
-      [d.noBackground]: x
+    className: s()(u.editCard, {
+      [u.toggled]: g,
+      [u.noBackground]: x
     }),
     children: (0, r.jsxs)(a.animated.div, {
-      className: s()(d.contentExpandContainer, {
-        [d.showOverflow]: g && _
+      className: s()(u.contentExpandContainer, {
+        [u.showOverflow]: g && _
       }),
       style: S,
       children: [(0, r.jsx)(o.P3F, {
         innerRef: O,
         onClick: p ? void 0 : f,
-        className: s()(d.innerHeader, {
-          [d.toggled]: g && p
+        className: s()(u.innerHeader, {
+          [u.toggled]: g && p
         }),
-        "aria-label": u.intl.string(u.t.dcl9MT),
+        "aria-label": d.intl.string(d.t.dcl9MT),
         children: l
       }), (0, r.jsx)("div", {
         ref: y,

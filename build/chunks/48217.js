@@ -11,8 +11,8 @@ var i = n(481060),
   a = n(267642),
   o = n(26323),
   c = n(30513),
-  u = n(981631),
-  d = n(388032),
+  d = n(981631),
+  u = n(388032),
   m = n(309818);
 
 function g(e) {
@@ -49,18 +49,18 @@ function p(e) {
     guild: i,
     isGIF: l,
     banner: s
-  } = e, m = l ? (0, a._p)(u.oNc.ANIMATED_BANNER) : (0, a._p)(u.oNc.BANNER);
+  } = e, m = l ? (0, a._p)(d.oNc.ANIMATED_BANNER) : (0, a._p)(d.oNc.BANNER);
   null != m && (0, o.Z)({
     analyticsLocations: t,
     analyticsSourceLocation: n,
     guild: i,
     headerProps: {
-      title: d.intl.string(d.t["rv2H+/"]),
+      title: u.intl.string(u.t["rv2H+/"]),
       subtitle: function(e, t) {
         let n = (0, a.nW)(e);
-        return t ? d.intl.formatToPlainString(d.t["TR/Uys"], {
+        return t ? u.intl.formatToPlainString(u.t["TR/Uys"], {
           targetLevelOrPlan: n
-        }) : d.intl.formatToPlainString(d.t.B253V1, {
+        }) : u.intl.formatToPlainString(u.t.B253V1, {
           targetLevelOrPlan: n
         })
       }(m, l),
@@ -69,7 +69,7 @@ function p(e) {
         banner: s
       })
     },
-    perkIntro: d.intl.string(d.t.ZuItcH),
+    perkIntro: u.intl.string(u.t.ZuItcH),
     perks: l ? (0, c.zC)() : (0, c.XO)()
   })
 }

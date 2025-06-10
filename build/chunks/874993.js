@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(481060),
   o = n(999382),
   c = n(279542),
-  u = n(823379),
-  d = n(63063),
+  d = n(823379),
+  u = n(63063),
   m = n(426563),
   g = n(727072),
   p = n(85960),
@@ -41,7 +41,7 @@ function y(e) {
   } = (0, g.pH)(P), D = {
     [p.vh.MEMBERS]: O.intl.string(O.t.sx4E5u),
     [p.vh.CONTENT]: O.intl.string(O.t.fphZb2)
-  }, k = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(u.lm), [Z]), A = {
+  }, k = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), A = {
     isInEditMode: w,
     setEditingRule: E
   }, L = i.useRef(A);
@@ -102,7 +102,7 @@ function y(e) {
           variant: "text-sm/medium",
           className: C.helpUrl,
           children: O.intl.format(O.t["B+sgGh"], {
-            helpUrl: d.Z.getArticleURL(v.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+            helpUrl: u.Z.getArticleURL(v.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
       }), (0, r.jsxs)("div", {

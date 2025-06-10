@@ -1,5 +1,4 @@
-/** Chunk was on 57931 **/
-"use strict";
+/** Chunk was on 43473 **/
 e.exports = {
   right: "right__89d2b",
   down: "down__89d2b",

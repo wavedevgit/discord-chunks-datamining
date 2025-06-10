@@ -1,4 +1,4 @@
-/** Chunk was on 57931 **/
+/** Chunk was on 26268 **/
 "use strict";
 n.d(t, {
   E: () => p,
@@ -25,15 +25,15 @@ function f(e) {
     color: n = c.W.YELLOW,
     buttonPosition: i = p.BOTTOM,
     notice: f,
-    ctaLabel: b,
-    ctaLoading: g,
+    ctaLabel: g,
+    ctaLoading: b,
     ctaDisabled: m,
     ctaClassName: _,
     onClick: v
   } = e, h = (0, l.ZP)();
   return (0, r.jsx)(u.Z, {
     className: s()(d.statusWarningBlock, {
-      [d.statusWarningBlockWithCta]: null != b
+      [d.statusWarningBlockWithCta]: null != g
     }, t),
     color: (0, o.wj)(h) ? n : c.W.BROWN,
     children: (0, r.jsxs)("div", {
@@ -42,7 +42,7 @@ function f(e) {
         variant: "text-sm/normal",
         color: "interactive-active",
         children: f
-      }), null != b && null != v && (0, r.jsx)("div", {
+      }), null != g && null != v && (0, r.jsx)("div", {
         className: d.ctaButtonContainer,
         children: (0, r.jsx)(a.zxk, {
           className: s()(d.ctaButton, (0, o.wj)(h) ? void 0 : d.ctaBlackButton, _),
@@ -50,11 +50,11 @@ function f(e) {
           size: a.PhG.MEDIUM,
           onClick: v,
           disabled: m,
-          submitting: g,
+          submitting: b,
           children: (0, r.jsx)(a.Text, {
             className: d.ctaButtonText,
             variant: "text-sm/medium",
-            children: b
+            children: g
           })
         })
       })]

@@ -10,8 +10,8 @@ var r = n(73800),
   a = n(63063),
   o = n(223892),
   c = n(58259),
-  u = n(158992),
-  d = n(159361),
+  d = n(158992),
+  u = n(159361),
   m = n(377176),
   g = n(981631),
   p = n(388032);
@@ -35,11 +35,11 @@ function f(e) {
       error: C,
       refresh: y,
       eligibility: N
-    } = (0, u.Z)(null == e ? void 0 : e.id),
+    } = (0, d.Z)(null == e ? void 0 : e.id),
     {
       isApplicationRejected: I,
       requestCooldownDuration: E
-    } = (0, d.Z)(N),
+    } = (0, u.Z)(N),
     S = (null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_RESTRICTED)) === !0 || (null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_DISABLED)) === !0,
     {
       isMonetizationReapplicationDisabled: T

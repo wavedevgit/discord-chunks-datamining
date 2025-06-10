@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(239091),
   o = n(132580),
   c = n(688465),
-  u = n(236413),
-  d = n(727072),
+  d = n(236413),
+  u = n(727072),
   m = n(85960),
   g = n(65912),
   p = n(457414),
@@ -172,7 +172,7 @@ function S(e) {
     saveRule: m
   } = (0, g.w)(), {
     updateRule: f
-  } = (0, d.pH)(t.guildId), [h, x] = i.useState(t.enabled), C = (0, l.throttle)(async (e, n) => {
+  } = (0, u.pH)(t.guildId), [h, x] = i.useState(t.enabled), C = (0, l.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !c) {
       let e = v(_({}, t), {
         enabled: !h
@@ -190,7 +190,7 @@ function S(e) {
     headerSubtext: T,
     descriptionText: P,
     icon: w
-  } = o, R = !(0, u.Vb)(t);
+  } = o, R = !(0, d.Vb)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: j.ruleIconContainer,
@@ -299,8 +299,8 @@ function P(e) {
     isEditMode: l,
     isDefaultRule: o,
     forceSetup: c,
-    onSetupRule: u,
-    onChangeRule: d
+    onSetupRule: d,
+    onChangeRule: u
   } = e, m = e => {
     null != t && (e.preventDefault(), e.stopPropagation(), (0, a.jW)(e, async () => {
       let {
@@ -312,11 +312,11 @@ function P(e) {
     }))
   }, g = (0, r.jsx)(T, {
     triggerType: i,
-    onSetupRule: u
+    onSetupRule: d
   });
   return null == t || c || (g = l ? (0, r.jsx)(I, {
     rule: t,
-    onChangeRule: d,
+    onChangeRule: u,
     onContextMenu: m
   }) : (0, r.jsx)(S, {
     rule: t,

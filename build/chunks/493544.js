@@ -1,4 +1,4 @@
-/** Chunk was on 57931 **/
+/** Chunk was on 26268 **/
 "use strict";
 n.d(t, {
   ID: () => h,
@@ -16,8 +16,8 @@ var r, i, s = n(255367),
   d = n(873546),
   p = n(215569),
   f = n(481060),
-  b = n(110924),
-  g = n(358085),
+  g = n(110924),
+  b = n(358085),
   m = n(425493),
   _ = n(319586);
 
@@ -132,7 +132,7 @@ function C(e) {
       [_.mobileToolsContainer]: t,
       [_.mobileSidebarTools]: t,
       [_.closeIconOnly]: !n,
-      [_.isMobileAndroid]: !n && !0 === (0, g.isAndroidWeb)()
+      [_.isMobileAndroid]: !n && !0 === (0, b.isAndroidWeb)()
     }),
     ref: i,
     children: (0, s.jsx)(f.JcV, {
@@ -157,13 +157,13 @@ let P = function(e) {
     notice: r,
     section: i,
     closeAction: a,
-    sidebarTheme: g,
+    sidebarTheme: b,
     contentType: m,
     scrollerRef: v,
     mobileSidebarOpen: h,
     toggleSidebar: y,
     hideSidebar: j = !1
-  } = e, x = o.useRef(null), P = o.useRef(null), w = (0, b.Z)(i), E = (0, f.Yzy)(j, {
+  } = e, x = o.useRef(null), P = o.useRef(null), w = (0, g.Z)(i), E = (0, f.Yzy)(j, {
     from: {
       position: "absolute",
       opacity: 0
@@ -200,7 +200,7 @@ let P = function(e) {
       style: e,
       className: _.standardSidebarView,
       children: [!r && (null == t ? null : (0, s.jsx)(f.f6W, {
-        theme: g,
+        theme: b,
         children: e => (0, s.jsx)("div", {
           className: l()(_.sidebarRegion, e, {
             [_.flexFullWidth]: d.tq,

@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -11,13 +11,13 @@ var r = n(255367),
   o = n(717251),
   c = n(313795);
 
-function u(e) {
+function d(e) {
   var {
     action: t,
     children: n,
     className: l,
-    onExpandChange: u,
-    loading: d
+    onExpandChange: d,
+    loading: u
   } = e, m = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -34,7 +34,7 @@ function u(e) {
     return i
   }(e, ["action", "children", "className", "onExpandChange", "loading"]);
   let [g, p] = i.useState(!1), f = e => {
-    p(e), null == u || u(e)
+    p(e), null == d || d(e)
   };
   return (0, r.jsx)(a.zF9, {
     className: s()(c.groupContainer, l),
@@ -69,7 +69,7 @@ function u(e) {
         return e
       }({}, m), i = i = {
         className: c.groupHeaderRow,
-        action: d ? (0, r.jsx)(a.$jN, {
+        action: u ? (0, r.jsx)(a.$jN, {
           type: a.$jN.Type.PULSING_ELLIPSIS
         }) : t,
         onClick: e => {

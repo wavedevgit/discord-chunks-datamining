@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  q: () => u
+  q: () => d
 }), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -11,17 +11,17 @@ var r = n(255367),
   o = n(388032),
   c = n(837188);
 
-function u(e) {
+function d(e) {
   let {
     isInventoryFeedEnabled: t,
     canManageGuild: n,
-    features: u
-  } = e, d = i.useCallback(e => {
-    let t = new Set(u);
+    features: d
+  } = e, u = i.useCallback(e => {
+    let t = new Set(d);
     e ? (t.add(a.oNc.ACTIVITY_FEED_ENABLED_BY_USER), t.delete(a.oNc.ACTIVITY_FEED_DISABLED_BY_USER)) : (t.add(a.oNc.ACTIVITY_FEED_DISABLED_BY_USER), t.delete(a.oNc.ACTIVITY_FEED_ENABLED_BY_USER)), s.Z.updateGuild({
       features: t
     })
-  }, [u]);
+  }, [d]);
   return (0, r.jsxs)(l.hjN, {
     title: o.intl.string(o.t["oQ/7BQ"]),
     children: [(0, r.jsx)(l.Text, {
@@ -34,7 +34,7 @@ function u(e) {
       className: c.switch,
       hideBorder: !0,
       disabled: !n,
-      onChange: d,
+      onChange: u,
       children: o.intl.string(o.t.WompT0)
     })]
   })

@@ -11,8 +11,8 @@ var i = n(990547),
   a = n(787051),
   o = n(696936),
   c = n(539290),
-  u = n(975464),
-  d = n(388032),
+  d = n(975464),
+  u = n(388032),
   m = n(900388),
   g = n(270395);
 
@@ -30,19 +30,19 @@ function p(e) {
     children: [(0, r.jsx)("img", {
       className: m.__invalid_heroBanner,
       src: g,
-      alt: d.intl.string(d.t.Af4klJ)
+      alt: u.intl.string(u.t.Af4klJ)
     }), (0, r.jsxs)("div", {
       className: m.__invalid_ctaContent,
       children: [(0, r.jsx)(l.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        children: d.intl.string(d.t.PqYfh4)
+        children: u.intl.string(u.t.PqYfh4)
       }), (0, r.jsx)(l.LZC, {
         size: 12
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: d.intl.string(d.t["41wkMT"])
+        children: u.intl.string(u.t["41wkMT"])
       }), (0, r.jsx)(l.LZC, {
         size: 24
       }), (0, r.jsx)(c.Z, {
@@ -66,7 +66,7 @@ function f(e) {
   } = e, {
     isLoading: o,
     error: c,
-    creatorMonetizationOnboardingMarketing: d
+    creatorMonetizationOnboardingMarketing: u
   } = (0, a.Z)(t.id);
   return ((0, s.Z)({
     type: i.ImpressionTypes.PANE,
@@ -78,8 +78,8 @@ function f(e) {
     className: m.__invalid_container,
     children: [(0, r.jsx)(p, {
       config: n
-    }), (0, r.jsx)(u.C, {
-      onboardingMarketing: d,
+    }), (0, r.jsx)(d.C, {
+      onboardingMarketing: u,
       onboardingMarketingError: c
     })]
   })

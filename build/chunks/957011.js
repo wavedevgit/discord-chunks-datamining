@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(388685);
 var r = n(73800),
   i = n(442837),
@@ -11,9 +11,9 @@ var r = n(73800),
   o = n(53365),
   c = n(223892);
 
-function u(e, t) {
+function d(e, t) {
   let n = (0, i.e7)([s.Z], () => s.Z.getGuild(e)),
-    [u, d] = r.useState(),
+    [d, u] = r.useState(),
     [m, g] = r.useState(!1),
     p = (0, c.Ob)(n);
   return {
@@ -21,15 +21,15 @@ function u(e, t) {
       let e = a.default.getCurrentUser();
       return (null == n ? void 0 : n.isOwner(e)) === !0
     }, [n]),
-    error: u,
+    error: d,
     loading: m,
     submitAcceptTermsRequest: r.useCallback(async () => {
       if (null != e && (p || null != t)) {
-        g(!0), d(void 0);
+        g(!0), u(void 0);
         try {
           null != t ? await o.wE(e, t) : await o.zo(e)
         } catch (e) {
-          d(new l.Z(e))
+          u(new l.Z(e))
         } finally {
           g(!1)
         }

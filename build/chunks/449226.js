@@ -16,8 +16,8 @@ function o(e) {
     checked: i,
     onChange: o,
     disabled: c,
-    className: u,
-    tooltipProps: d
+    className: d,
+    tooltipProps: u
   } = e, m = e => {
     e.stopPropagation(), e.preventDefault()
   };
@@ -42,8 +42,8 @@ function o(e) {
     onClick: m,
     onMouseDown: m,
     onMouseUp: m,
-    className: l()(a.switch, u)
-  }, d), n = n = {
+    className: l()(a.switch, d)
+  }, u), n = n = {
     children: (0, r.jsx)(s.rsf, {
       checked: i,
       onChange: o,

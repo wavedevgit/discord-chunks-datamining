@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(442837),
   o = n(704215),
   c = n(481060),
-  u = n(605236),
-  d = n(768762),
+  d = n(605236),
+  u = n(768762),
   m = n(999382),
   g = n(743475),
   p = n(983135),
@@ -48,7 +48,7 @@ function T(e) {
     h = (0, j.Z)(n),
     S = !h && m;
   switch (i.useEffect(() => {
-      (0, u.EW)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
+      (0, d.EW)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), l) {
     case b.PG.LANDING:
       t = h ? (0, r.jsx)(O.Z, {
@@ -96,9 +96,9 @@ function T(e) {
         onClick: () => {
           (0, f.NB)(), (0, g.BG)(), (0, p.$K)(b.PG.LANDING)
         },
-        children: [(0, r.jsx)(d.Z, {
+        children: [(0, r.jsx)(u.Z, {
           className: E.arrow,
-          direction: d.Z.Directions.LEFT
+          direction: u.Z.Directions.LEFT
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
@@ -118,7 +118,7 @@ function P(e) {
     homeSettingsEnabled: i
   } = e, l = (0, a.e7)([x.Z], () => x.Z.hasErrors()), o = e => {
     if (!l) return () => n(e)
-  }, u = (0, a.e7)([h.Z], () => h.Z.advancedMode);
+  }, d = (0, a.e7)([h.Z], () => h.Z.advancedMode);
   return (0, r.jsxs)("div", {
     className: E.progressContainer,
     children: [(0, r.jsxs)(c.P3F, {
@@ -145,7 +145,7 @@ function P(e) {
       }), (0, r.jsx)(c.Text, {
         color: t === b.PG.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: u ? I.intl.formatToPlainString(I.t["8mGhOz"], {
+        children: d ? I.intl.formatToPlainString(I.t["8mGhOz"], {
           stepNumber: 2
         }) : I.intl.formatToPlainString(I.t.vxpuTU, {
           stepNumber: 2
@@ -161,7 +161,7 @@ function P(e) {
       }), (0, r.jsx)(c.Text, {
         color: t === b.PG.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: u ? I.intl.formatToPlainString(I.t.vb6J5u, {
+        children: d ? I.intl.formatToPlainString(I.t.vb6J5u, {
           stepNumber: 3
         }) : I.intl.formatToPlainString(I.t.ZpdQqK, {
           stepNumber: 3

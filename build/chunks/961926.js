@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(456677),
   o = n(55889),
   c = n(300453),
-  u = n(620436),
-  d = n(273504),
+  d = n(620436),
+  u = n(273504),
   m = n(388032),
   g = n(461367);
 
@@ -70,11 +70,11 @@ function h(e) {
       }), (0, r.jsx)(l.Z, {
         onChange: j,
         initialValue: null == (t = x.triggerMetadata) ? void 0 : t.allowList,
-        maxWordCount: d.I3,
+        maxWordCount: u.I3,
         collapsed: (null == (n = x.triggerMetadata) ? void 0 : n.allowList) == null || (null == (h = x.triggerMetadata) ? void 0 : h.allowList.length) === 0
       })]
-    }), (0, r.jsx)(u.Z, {
-      type: u.Z.Type.ARROW_DOWN
+    }), (0, r.jsx)(d.Z, {
+      type: d.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(c.Z, {
       step: 2,
       header: m.intl.string(m.t["18TOiY"]),
@@ -82,8 +82,8 @@ function h(e) {
         rule: x,
         onChangeRule: b
       })
-    }), (0, r.jsx)(u.Z, {
-      type: u.Z.Type.CROSS
+    }), (0, r.jsx)(d.Z, {
+      type: d.Z.Type.CROSS
     }), (0, r.jsx)(c.Z, {
       step: 3,
       header: m.intl.string(m.t.eq3gjo),

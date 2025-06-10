@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(793030),
   o = n(442837),
   c = n(481060),
-  u = n(296991),
-  d = n(999382),
+  d = n(296991),
+  u = n(999382),
   m = n(217472),
   g = n(651390),
   p = n(388032),
@@ -21,7 +21,7 @@ function h(e) {
   let {
     requireTerms: t,
     rules: n
-  } = e, l = (0, o.e7)([d.Z], () => d.Z.getProps().guild), h = null == l ? void 0 : l.id, x = i.useCallback(e => {
+  } = e, l = (0, o.e7)([u.Z], () => u.Z.getProps().guild), h = null == l ? void 0 : l.id, x = i.useCallback(e => {
     if (null == h || null == n) return null;
     m.Z.setPendingInviteRules(h, e, [...n])
   }, [h, n]), b = i.useCallback(e => {
@@ -61,7 +61,7 @@ function h(e) {
           color: "text-muted",
           className: f.rulesHeader,
           children: p.intl.string(p.t.XcAzbm)
-        }), (0, r.jsx)(u.k, {
+        }), (0, r.jsx)(d.k, {
           guild: l,
           rules: n,
           setRules: b

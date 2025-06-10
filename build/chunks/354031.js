@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  P: () => d
+  P: () => u
 }), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -10,13 +10,13 @@ var r = n(255367),
   a = n(434404),
   o = n(981631),
   c = n(388032),
-  u = n(307906);
+  d = n(307906);
 
-function d(e) {
+function u(e) {
   let {
     features: t,
     canManageGuild: n
-  } = e, d = i.useCallback(e => {
+  } = e, u = i.useCallback(e => {
     let n = new Set(t);
     e ? n.add(o.oNc.SUMMARIES_ENABLED_BY_USER) : n.delete(o.oNc.SUMMARIES_ENABLED_BY_USER), a.Z.updateGuild({
       features: n
@@ -24,7 +24,7 @@ function d(e) {
   }, [t]);
   return (0, r.jsxs)(l.hjN, {
     children: [(0, r.jsxs)(l.vwX, {
-      className: u.subtitle,
+      className: d.subtitle,
       children: [c.intl.string(c.t.FOYxgo), (0, r.jsx)(l.IGR, {
         text: c.intl.string(c.t.oW0eUV),
         color: l.TVs.unsafe_rawColors.BRAND_500.css
@@ -32,13 +32,13 @@ function d(e) {
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: u.description,
+      className: d.description,
       children: c.intl.format(c.t["c6Cy/v"], {
         helpdeskArticle: s.Z.getArticleURL(o.BhN.CONVERSATION_SUMMARIES)
       })
     }), (0, r.jsx)(l.j7V, {
-      className: u.switch,
-      onChange: d,
+      className: d.switch,
+      onChange: u,
       value: t.has(o.oNc.SUMMARIES_ENABLED_BY_USER),
       hideBorder: !0,
       disabled: !n,

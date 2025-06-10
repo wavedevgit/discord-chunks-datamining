@@ -10,9 +10,9 @@ var r, i = n(255367),
   a = n.n(s),
   o = n(748780),
   c = n(215569),
-  u = n(65187);
+  d = n(65187);
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,7 +28,7 @@ function m(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
@@ -70,12 +70,12 @@ class f extends l.PureComponent {
   render() {
     return (0, i.jsx)(o.Z.div, {
       style: this.getStyle(),
-      className: u.item,
+      className: d.item,
       children: this.props.children
     })
   }
   constructor(e) {
-    super(e), d(this, "_animated", void 0), this._animated = new o.Z.Value(-1 * e.direction)
+    super(e), u(this, "_animated", void 0), this._animated = new o.Z.Value(-1 * e.direction)
   }
 }
 let h = e => {
@@ -89,7 +89,7 @@ let h = e => {
   } = e;
   return (0, i.jsx)(c.W, {
     component: "div",
-    className: a()(u.animator, l),
+    className: a()(d.animator, l),
     children: (0, i.jsx)(f, {
       direction: r,
       onAnimationStart: s,

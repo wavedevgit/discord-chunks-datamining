@@ -274,9 +274,9 @@ function M(e) {
 
 function z() {
   var e, t;
-  let [n, l] = M(E.Odu.CLICK_ZONE_DEBUG), [s, d] = M(E.Odu.PERFORMANCE_DEBUG), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.ClickZones)), j = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.DisabledGPUBoost)), T = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.ForceGPUBoost)), S = (0, o.e7)([h.default], () => h.default.getForcedRenderMode()), [R, A] = r.useState({}), [Z, z] = r.useState(S), U = e => {
+  let [n, l] = M(E.Odu.CLICK_ZONE_DEBUG), [s, d] = M(E.Odu.PERFORMANCE_DEBUG), g = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.ClickZones)), j = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.WidgetAreas)), y = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.DisabledGPUBoost)), T = (0, o.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(p.G.ForceGPUBoost)), S = (0, o.e7)([h.default], () => h.default.getForcedRenderMode()), [R, A] = r.useState({}), [Z, z] = r.useState(S), B = e => {
     z(e), u.Z.forceRenderMode(e)
-  }, B = [{
+  }, U = [{
     label: m.R5.UNSET,
     value: m.R5.UNSET
   }, {
@@ -290,7 +290,7 @@ function z() {
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => k(w({}, e), {
     label: "".concat(e.label, " ").concat(S === e.value ? "(current)" : "")
-  })), F = (0, o.cj)([h.default], () => h.default.getTrackedGames()), G = (0, o.e7)([_.default], () => _.default.getFocusedPID()), V = (0, o.e7)([_.default], () => _.default.isFocusedPidOutOfProcess()), H = (0, N.getPID)(), W = (0, o.e7)([h.default], () => h.default.isOverlayOOPEnabledForPid(H), [H]), [X, K] = (0, o.Wu)([v.Z], () => [v.Z.enabled, v.Z.keepOpen]), Y = (0, o.e7)([x.ZP], () => x.ZP.getRunningGames());
+  })), F = (0, o.cj)([h.default], () => h.default.getTrackedGames()), G = (0, o.e7)([_.default], () => _.default.getFocusedPID()), V = (0, o.e7)([_.default], () => _.default.isFocusedPidOutOfProcess()), H = (0, N.getPID)(), W = (0, o.e7)([h.default], () => h.default.isOverlayOOPEnabledForPid(H), [H]), [K, X] = (0, o.Wu)([v.Z], () => [v.Z.enabled, v.Z.keepOpen]), Y = (0, o.e7)([x.ZP], () => x.ZP.getRunningGames());
   r.useEffect(() => {
     A(e => {
       for (let t of Object.keys(F)) e[Number(t)] = F[Number(t)];
@@ -463,8 +463,8 @@ function z() {
           children: (0, a.jsx)(c.PhF, {
             serialize: e => e,
             isSelected: e => e === Z,
-            options: B,
-            select: U,
+            options: U,
+            select: B,
             popoutLayerContext: O.O$
           })
         }))
@@ -528,11 +528,11 @@ function z() {
           }), (0, a.jsxs)(c.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
-            children: ["SoundboardOverlay.enabled: ", X ? "Yes" : "No"]
+            children: ["SoundboardOverlay.enabled: ", K ? "Yes" : "No"]
           }), (0, a.jsxs)(c.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
-            children: ["SoundboardOverlay.keepOpen: ", K ? "Yes" : "No"]
+            children: ["SoundboardOverlay.keepOpen: ", X ? "Yes" : "No"]
           })]
         })]
       }), (0, a.jsx)(c.ua7, {

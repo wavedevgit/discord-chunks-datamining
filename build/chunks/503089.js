@@ -1,4 +1,4 @@
-/** Chunk was on 57931 **/
+/** Chunk was on 26268 **/
 "use strict";
 n.d(t, {
   $x: () => S,
@@ -17,8 +17,8 @@ var r = n(255367),
   d = n(126848),
   p = n(207874),
   f = n(585483),
-  b = n(960048),
-  g = n(410575),
+  g = n(960048),
+  b = n(410575),
   m = n(493544),
   _ = n(981631),
   v = n(388032),
@@ -81,7 +81,7 @@ function w(e) {
   });
   let c = null != (t = null == i ? void 0 : i.element) ? t : _.VqG,
     u = null != (n = null == i ? void 0 : i.elementProps) ? n : {};
-  return (0, r.jsx)(g.Z, {
+  return (0, r.jsx)(b.Z, {
     section: i.section,
     children: (0, r.jsx)(c, j(y({}, u), {
       setPreventNavigation: o,
@@ -247,7 +247,7 @@ class E extends i.PureComponent {
           sidebarOpen: !1
         }))
       };
-      this.validNavigation() && !r && (s(), b.Z.addBreadcrumb({
+      this.validNavigation() && !r && (s(), g.Z.addBreadcrumb({
         category: "settings",
         message: "Set section: ".concat(e)
       })), r && null != i && i(s)
@@ -269,8 +269,8 @@ class E extends i.PureComponent {
         variant: u,
         icon: p,
         className: f,
-        newIndicator: b,
-        newIndicatorDismissibleContentTypes: g,
+        newIndicator: g,
+        newIndicatorDismissibleContentTypes: b,
         badgeCount: m
       } = e, O = null;
       i === _.oAB.ACCOUNT && this.props.isEligibleForPomelo ? O = (0, r.jsx)(a.P4T, {
@@ -282,7 +282,7 @@ class E extends i.PureComponent {
         variant: "text-md/normal",
         color: "text-muted",
         children: e.decoration
-      }) : null != n && (null == g ? void 0 : g.includes(n)) && !t ? O = null != b ? b : (0, r.jsx)(a.IGR, {
+      }) : null != n && (null == b ? void 0 : b.includes(n)) && !t ? O = null != g ? g : (0, r.jsx)(a.IGR, {
         text: v.intl.string(v.t.y2b7CA)
       }) : null != p ? O = p : null != m && m > 0 && (O = (0, r.jsx)(a.mAB, {
         count: m

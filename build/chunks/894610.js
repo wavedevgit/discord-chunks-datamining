@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(255367),
   i = n(73800),
@@ -45,13 +45,13 @@ let c = (0, l.Yn)([(0, l.nn)({
   })
 })]);
 
-function u(e) {
+function d(e) {
   let {
     earningsData: t,
     guildId: n
   } = e, a = (0, s.ue)(n, {
     publishedOnly: !1
-  }), o = t.currentPeriod, u = i.useMemo(() => a.map(e => {
+  }), o = t.currentPeriod, d = i.useMemo(() => a.map(e => {
     var t, n, r;
     let i = null == o ? void 0 : o.ppgs[e.id];
     return n = function(e) {
@@ -88,7 +88,7 @@ function u(e) {
   }).filter(e => e.listing.published || e.paymentsCount > 0), [a, null == o ? void 0 : o.ppgs]);
   return null == a || 0 === a.length ? null : (0, r.jsx)(l.ZP, {
     columns: c,
-    data: u,
+    data: d,
     initialSortKey: "LISTING_NAME"
   })
 }

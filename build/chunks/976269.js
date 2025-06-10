@@ -10,26 +10,26 @@ var r = n(255367),
   a = n(999382),
   o = n(8426),
   c = n(969632),
-  u = n(388032);
+  d = n(388032);
 
-function d(e) {
+function u(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.getSettings()), a = (0, l.e7)([c.Z], () => c.Z.getSubmitting()), d = i.useCallback(() => {
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.getSettings()), a = (0, l.e7)([c.Z], () => c.Z.getSubmitting()), u = i.useCallback(() => {
     try {
       (0, o.oo)(t, n)
     } catch (e) {}
   }, [t, n]);
   return (0, r.jsx)(s.Z, {
-    onSave: d,
+    onSave: u,
     onReset: o.bj,
     submitting: a,
-    onSaveText: u.intl.string(u.t.R3BPHx)
+    onSaveText: d.intl.string(d.t.R3BPHx)
   })
 }
 let m = function() {
   let e = (0, l.e7)([a.Z], () => a.Z.getGuild());
-  return null == e ? null : (0, r.jsx)(d, {
+  return null == e ? null : (0, r.jsx)(u, {
     guildId: e.id
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(388685), n(457542), n(642613);
 var r = n(255367),
   i = n(73800),
@@ -11,12 +11,12 @@ var r = n(255367),
   o = n(388032),
   c = n(955373);
 
-function u(e) {
+function d(e) {
   let {
     guildId: t,
     selectedGameApplicationIds: n,
-    onUpdateGames: u,
-    disabled: d
+    onUpdateGames: d,
+    disabled: u
   } = e, {
     topGames: m,
     tryFetchTopGames: g
@@ -28,8 +28,8 @@ function u(e) {
   }, [t, g]);
   let x = i.useMemo(() => null == p ? [] : Object.keys(p).filter(e => !n.includes(e)).sort((e, t) => p[t].score - p[e].score), [p, n]),
     b = i.useCallback(e => {
-      n.includes(e) ? u(n.filter(t => t !== e)) : u([...n, e])
-    }, [u, n]);
+      n.includes(e) ? d(n.filter(t => t !== e)) : d([...n, e])
+    }, [d, n]);
   return f && null == p ? (0, r.jsx)(l.$jN, {}) : null == x || 0 === x.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: c.separator
@@ -45,7 +45,7 @@ function u(e) {
           applicationId: e,
           selected: !1,
           onClick: b,
-          disabled: d
+          disabled: u
         }, e))
       })]
     })]

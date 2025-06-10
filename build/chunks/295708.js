@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -10,16 +10,16 @@ var r = n(255367),
   a = n(981631),
   o = n(388032),
   c = n(957270),
-  u = n(282338);
+  d = n(282338);
 
-function d(e) {
+function u(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, [d, m] = i.useState(t.name);
+  } = e, [u, m] = i.useState(t.name);
   return (0, r.jsxs)(l.xJW, {
     children: [(0, r.jsx)(l.Text, {
-      className: u.triggerHeader,
+      className: d.triggerHeader,
       variant: "text-sm/semibold",
       children: o.intl.string(o.t.WVAHxM)
     }), (0, r.jsx)(l.oil, {
@@ -62,7 +62,7 @@ function d(e) {
       },
       placeholder: o.intl.string(o.t["5AO43N"]),
       maxLength: s.OU,
-      value: d
+      value: u
     })]
   })
 }

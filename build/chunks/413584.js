@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(348327),
   o = n.n(a),
   c = n(562075),
-  u = n(539202),
-  d = n(442837),
+  d = n(539202),
+  u = n(442837),
   m = n(481060),
   g = n(239091),
   p = n(596454),
@@ -81,8 +81,8 @@ let M = "WELCOME_CHANNEL",
       } = e,
       [O, C] = i.useState(!1),
       y = i.useRef(null),
-      S = (0, d.e7)([I.Z], () => I.Z.getChannel(o.channel_id)),
-      P = (0, d.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
+      S = (0, u.e7)([I.Z], () => I.Z.getChannel(o.channel_id)),
+      P = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
       w = null != S && T.Uu(R.Plq.VIEW_CHANNEL, S),
       G = null != (t = (0, b.KS)(S)) ? t : m.VL1,
       U = (0, x.ZP)(S, !1),
@@ -96,7 +96,7 @@ let M = "WELCOME_CHANNEL",
           null == e || t.didDrop() || h(e.channel, null, !0)
         }
       }),
-      [, F] = (0, u.L)({
+      [, F] = (0, d.L)({
         accept: M,
         hover: e => {
           h(e.channel, v, !1)
@@ -189,7 +189,7 @@ let M = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: s,
       originalWelcomeSettings: a
-    } = (0, d.e7)([y.Z], () => y.Z.getSettingsProps()), c = (0, d.e7)([h.Z], () => h.Z.useReducedMotion), [u, g] = i.useState(null), [p, x] = i.useState(!1), [b, j] = i.useState(!1), {
+    } = (0, u.e7)([y.Z], () => y.Z.getSettingsProps()), c = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [d, g] = i.useState(null), [p, x] = i.useState(!1), [b, j] = i.useState(!1), {
       description: N,
       channels: I,
       enabled: T
@@ -357,7 +357,7 @@ let M = "WELCOME_CHANNEL",
             welcomeChannel: e,
             onEdit: z(n),
             onChannelReorder: H,
-            isDropHovered: n === u,
+            isDropHovered: n === d,
             index: n
           }, n)), (null == I || I.length < 5) && (0, r.jsx)(m.zxk, {
             onClick: () => (0, m.ZDy)(async () => {

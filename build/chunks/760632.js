@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(388032);
 let o = "".concat(60),
   c = "".concat(300),
-  u = "".concat(900),
-  d = "".concat(1800),
+  d = "".concat(900),
+  u = "".concat(1800),
   m = "".concat(3600);
 
 function g(e) {
@@ -30,12 +30,12 @@ function g(e) {
       minutes: 5
     })
   }, {
-    value: u,
+    value: d,
     label: a.intl.formatToPlainString(a.t.iXLF9f, {
       minutes: 15
     })
   }, {
-    value: d,
+    value: u,
     label: a.intl.formatToPlainString(a.t.iXLF9f, {
       minutes: 30
     })

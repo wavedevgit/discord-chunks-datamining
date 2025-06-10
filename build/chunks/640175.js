@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  z: () => d
+  z: () => u
 });
 var r = n(255367),
   i = n(73800),
@@ -10,19 +10,19 @@ var r = n(255367),
   a = n(650774),
   o = n(434404),
   c = n(981631),
-  u = n(388032);
+  d = n(388032);
 
-function d(e) {
+function u(e) {
   let {
     guildId: t,
     defaultSettings: n,
-    canManageGuild: d
+    canManageGuild: u
   } = e, m = (0, l.e7)([a.Z], () => a.Z.getMemberCount(t)), g = i.useMemo(() => [{
-    name: u.intl.string(u.t["n/bTaW"]),
+    name: d.intl.string(d.t["n/bTaW"]),
     value: c.bL.ALL_MESSAGES,
-    desc: null != m && m >= c.qWG ? u.intl.string(u.t["L+P4t7"]) : null
+    desc: null != m && m >= c.qWG ? d.intl.string(d.t["L+P4t7"]) : null
   }, {
-    name: u.intl.string(u.t["6fQPho"]),
+    name: d.intl.string(d.t["6fQPho"]),
     value: c.bL.ONLY_MENTIONS
   }], [m]), p = i.useCallback(e => {
     let {
@@ -35,7 +35,7 @@ function d(e) {
   return (0, r.jsx)(s.FXm, {
     options: g,
     value: n,
-    disabled: !d,
+    disabled: !u,
     onChange: p
   })
 }

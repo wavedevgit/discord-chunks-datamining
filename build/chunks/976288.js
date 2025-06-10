@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(481060),
   o = n(558324),
   c = n(456268),
-  u = n(681460),
-  d = n(345861),
+  d = n(681460),
+  u = n(345861),
   m = n(650774),
   g = n(434404),
   p = n(999382),
@@ -46,7 +46,7 @@ function E(e) {
     g.Z.updateGuild({
       discoverySplash: e
     })
-  }, []), u = i.useCallback(() => {
+  }, []), d = i.useCallback(() => {
     g.Z.updateGuild({
       discoverySplash: null
     })
@@ -88,7 +88,7 @@ function E(e) {
           children: y.intl.string(y.t.VJMq8f)
         }), (0, r.jsxs)("div", {
           className: N.buttonList,
-          children: [(0, r.jsx)(d.Z, {
+          children: [(0, r.jsx)(u.Z, {
             size: a.zxk.Sizes.SMALL,
             color: a.zxk.Colors.PRIMARY,
             className: N.editableSection,
@@ -99,7 +99,7 @@ function E(e) {
             color: a.zxk.Colors.RED,
             look: a.zxk.Looks.LINK,
             className: N.editableSection,
-            onClick: u,
+            onClick: d,
             children: y.intl.string(y.t.N86XcH)
           }) : null]
         })]
@@ -199,7 +199,7 @@ function T(e) {
     guildMetadata: n,
     requireTag: l,
     error: s
-  } = e, [d, m] = i.useState(null), g = i.useCallback(e => {
+  } = e, [u, m] = i.useState(null), g = i.useCallback(e => {
     let r = [...n.keywords];
     r.splice(e, 1), m(null), (0, c.zH)(t, r)
   }, [t, n]), p = i.useCallback(e => {
@@ -215,7 +215,7 @@ function T(e) {
       disabled: t,
       tooltipText: t ? y.intl.string(y.t.Xx7XeH) : void 0
     }
-  }), [n.keywords, n.primaryCategoryId, p]), h = null != s ? s : d;
+  }), [n.keywords, n.primaryCategoryId, p]), h = null != s ? s : u;
   return (0, r.jsxs)("div", {
     className: N.sectionContainer,
     children: [(0, r.jsxs)("div", {
@@ -251,7 +251,7 @@ function T(e) {
         children: y.intl.string(y.t.sF28Oj)
       }), (0, r.jsx)("div", {
         className: N.editableSection,
-        children: (0, r.jsx)(u.j, {
+        children: (0, r.jsx)(d.j, {
           pills: f
         })
       })]

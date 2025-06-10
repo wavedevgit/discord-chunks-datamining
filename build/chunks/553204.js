@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(477690),
   o = n(481060),
   c = n(91218),
-  u = n(518738),
-  d = n(208567),
+  d = n(518738),
+  u = n(208567),
   m = n(624138),
   g = n(388032),
   p = n(973217);
@@ -24,7 +24,7 @@ function h(e) {
     className: l,
     onClick: a,
     disabled: m = !1
-  } = e, h = i.useRef(null), x = i.useMemo(() => null != t ? (0, u.Kz)(t, f) : null, [t]), b = null != x ? (0, r.jsx)(c.Z, function(e) {
+  } = e, h = i.useRef(null), x = i.useMemo(() => null != t ? (0, d.Kz)(t, f) : null, [t]), b = null != x ? (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -62,7 +62,7 @@ function h(e) {
         ref: h,
         className: p.preview,
         children: b
-      }), null != x ? (0, r.jsx)(d.S, {
+      }), null != x ? (0, r.jsx)(u.S, {
         className: p.uploaderIcon
       }) : null]
     })

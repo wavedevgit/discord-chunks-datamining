@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(442837),
   o = n(481060),
   c = n(497321),
-  u = n(484614),
-  d = n(314852),
+  d = n(484614),
+  u = n(314852),
   m = n(65361),
   g = n(246946),
   p = n(330010),
@@ -29,7 +29,7 @@ function v(e) {
     guildProfile: c,
     fetchGuildProfile: g,
     fetchStatus: v
-  } = (0, m.u)(t), O = v !== d.a.FETCHED, {
+  } = (0, m.u)(t), O = v !== u.a.FETCHED, {
     fetchedEmbed: C,
     embedEnabled: y,
     embedChannelId: N
@@ -86,14 +86,14 @@ function v(e) {
           className: _.column,
           children: [(0, r.jsx)(o.vwX, {
             children: j.intl.string(j.t.TRyLUl)
-          }), (0, r.jsx)(u.Z, {
+          }), (0, r.jsx)(d.Z, {
             value: t
           })]
         }), (0, r.jsxs)("div", {
           className: _.column,
           children: [(0, r.jsx)(o.vwX, {
             children: j.intl.string(j.t.VECJcH)
-          }), (0, r.jsx)(u.Z, {
+          }), (0, r.jsx)(d.Z, {
             value: I
           })]
         })]
@@ -105,7 +105,7 @@ function v(e) {
           className: _.column,
           children: [(0, r.jsx)(o.vwX, {
             children: j.intl.string(j.t.XVGbn5)
-          }), (0, r.jsx)(u.Z, {
+          }), (0, r.jsx)(d.Z, {
             value: E
           }), (0, r.jsx)(s.xv, {
             variant: "text-sm/medium",

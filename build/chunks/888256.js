@@ -14,9 +14,10 @@ function c(e) {
   let {
     className: t,
     currentUser: n,
-    handleDisableAccount: c,
-    handleDeleteAccount: d
-  } = e, u = n.isClaimed();
+    disabled: c,
+    handleDisableAccount: d,
+    handleDeleteAccount: u
+  } = e, m = n.isClaimed();
   return (0, i.jsx)(s.F, {
     setting: l.s6.ACCOUNT_DISABLE_ACCOUNT,
     children: (0, i.jsxs)(r.hjN, {
@@ -25,15 +26,16 @@ function c(e) {
       children: [(0, i.jsx)(r.R94, {
         className: o.description,
         type: r.R94.Types.DESCRIPTION,
-        children: u ? a.intl.string(a.t.TIh3Ym) : a.intl.string(a.t.czsGAw)
+        children: m ? a.intl.string(a.t.TIh3Ym) : a.intl.string(a.t.czsGAw)
       }), (0, i.jsxs)("div", {
         className: o.buttonContainer,
-        children: [u ? (0, i.jsx)(r.zxk, {
+        children: [m ? (0, i.jsx)(r.zxk, {
           className: o.disableButton,
           look: r.iLD.FILLED,
           color: r.Ttl.RED,
           size: r.PhG.SMALL,
-          onClick: c,
+          disabled: c,
+          onClick: d,
           children: a.intl.string(a.t.jf5GGR)
         }) : null, (0, i.jsx)(s.F, {
           setting: l.s6.ACCOUNT_DELETE_ACCOUNT,
@@ -41,7 +43,8 @@ function c(e) {
             look: r.iLD.OUTLINED,
             color: r.Ttl.RED,
             size: r.PhG.SMALL,
-            onClick: d,
+            disabled: c,
+            onClick: u,
             children: a.intl.string(a.t["8lQ2ra"])
           })
         })]

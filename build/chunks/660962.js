@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(392711),
   o = n.n(a),
   c = n(866442),
-  u = n(442837),
-  d = n(704215),
+  d = n(442837),
+  u = n(704215),
   m = n(780384),
   g = n(481060),
   p = n(37234),
@@ -120,7 +120,7 @@ function en(e) {
     selectedStyle: i,
     disabled: l,
     shouldShowUpsell: a
-  } = e, o = e => l || a && [k.g.HOLOGRAPHIC, k.g.GRADIENT].includes(e), u = el(H.intl.string(H.t.Mi9KbW)), h = (0, f.ZP)(), b = (0, O.oC)(n, t), j = {
+  } = e, o = e => l || a && [k.g.HOLOGRAPHIC, k.g.GRADIENT].includes(e), d = el(H.intl.string(H.t.Mi9KbW)), h = (0, f.ZP)(), b = (0, O.oC)(n, t), j = {
     dark: {
       src: K,
       name: t.name
@@ -136,12 +136,12 @@ function en(e) {
       children: [(0, r.jsx)("div", {
         children: H.intl.string(H.t["9wVJRE"])
       }), (0, r.jsx)(v.ZP, {
-        contentTypes: [d.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
+        contentTypes: [u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
         children: e => {
           let {
             visibleContent: t
           } = e;
-          return t === d.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE ? (0, r.jsx)(g.IGR, {
+          return t === u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE ? (0, r.jsx)(g.IGR, {
             text: H.intl.string(H.t.y2b7CA),
             className: V.newBadge
           }) : null
@@ -153,7 +153,7 @@ function en(e) {
         let {
           id: l,
           colors: a,
-          labelString: d
+          labelString: u
         } = e;
         return (0, r.jsxs)("button", {
           className: s()(V.roleStylePreviewContainer, {
@@ -168,7 +168,7 @@ function en(e) {
               className: V.roleStyleMessageContainer,
               children: (0, r.jsx)(N.Z, {
                 author: {
-                  nick: u.author.username,
+                  nick: d.author.username,
                   colorStrings: {
                     primaryColor: null != a.primary_color ? (0, c.Rf)(a.primary_color) : void 0,
                     secondaryColor: null != a.secondary_color ? (0, c.Rf)(a.secondary_color) : void 0,
@@ -176,7 +176,7 @@ function en(e) {
                   },
                   colorString: null != a.primary_color ? (0, c.Rf)(a.primary_color) : void 0
                 },
-                message: u,
+                message: d,
                 preview: !0,
                 roleIcon: null != b ? b : (0, m.ap)(h) ? j.light : j.dark,
                 isGroupStart: !0,
@@ -186,7 +186,7 @@ function en(e) {
             })
           }), (0, r.jsx)("div", {
             className: V.roleStyleLabel,
-            children: H.intl.string(d)
+            children: H.intl.string(u)
           })]
         }, l)
       })
@@ -226,7 +226,7 @@ function en(e) {
 }
 
 function er() {
-  let e = (0, u.e7)([h.Z], () => h.Z.useReducedMotion),
+  let e = (0, d.e7)([h.Z], () => h.Z.useReducedMotion),
     {
       gradientStyle: t,
       gradientClassname: n
@@ -320,9 +320,9 @@ function es(e) {
     role: a,
     guildId: o,
     selectedStyle: c,
-    disableInteraction: u
-  } = e, d = el(H.intl.string(H.t.Mi9KbW)), p = {
-    nick: d.author.username,
+    disableInteraction: d
+  } = e, u = el(H.intl.string(H.t.Mi9KbW)), p = {
+    nick: u.author.username,
     colorStrings: {
       primaryColor: null == (t = a.colorStrings) ? void 0 : t.primaryColor,
       secondaryColor: null == (n = a.colorStrings) ? void 0 : n.secondaryColor,
@@ -339,7 +339,7 @@ function es(e) {
   return (0, r.jsx)(g.Rny, {
     children: (0, r.jsx)("div", {
       className: s()(V.previewContainer, {
-        [V.disableInteraction]: u
+        [V.disableInteraction]: d
       }),
       "aria-hidden": !0,
       children: b.map(e => (0, r.jsx)(g.f6W, {
@@ -351,7 +351,7 @@ function es(e) {
             className: V.messageContainer,
             children: (0, r.jsx)(N.Z, {
               author: p,
-              message: d,
+              message: u,
               roleIcon: null != x ? x : (0, m.ap)(e) ? h : f,
               previewGuildId: o,
               isGroupStart: !0
@@ -399,7 +399,7 @@ function eo(e) {
     role: n,
     locked: i,
     setSelectedSection: l
-  } = e, a = (0, T.Z)(t.id, "GuildSettingsRolesEditDisplay"), o = (0, u.e7)([k.Z], () => k.Z.getRoleStyleData(n.id)), c = null != o && a ? o.currentStyle : k.g.SOLID, d = (0, E.Ek)(t.id, "GuildSettingsRolesEditDisplay") && (0, I.QZ)("GuildSettingsRolesEditDisplay") && !(0, I.OC)(t.id, "GuildSettingsRolesEditDisplay"), m = (0, b.pM)(null == t ? void 0 : t.id, n.id), p = i || m, f = (0, u.e7)([R.Z], () => R.Z.canImpersonateRole(t, n)), {
+  } = e, a = (0, T.Z)(t.id, "GuildSettingsRolesEditDisplay"), o = (0, d.e7)([k.Z], () => k.Z.getRoleStyleData(n.id)), c = null != o && a ? o.currentStyle : k.g.SOLID, u = (0, E.Ek)(t.id, "GuildSettingsRolesEditDisplay") && (0, I.QZ)("GuildSettingsRolesEditDisplay") && !(0, I.OC)(t.id, "GuildSettingsRolesEditDisplay"), m = (0, b.pM)(null == t ? void 0 : t.id, n.id), p = i || m, f = (0, d.e7)([R.Z], () => R.Z.canImpersonateRole(t, n)), {
     headerHeight: h,
     headerRef: x
   } = (0, A.Z)(0), {
@@ -435,12 +435,12 @@ function eo(e) {
         })
       }), (0, r.jsx)(g.$i$, {
         className: V.divider
-      }), (a || d) && null != c && (0, r.jsx)(en, {
+      }), (a || u) && null != c && (0, r.jsx)(en, {
         role: n,
         guildId: t.id,
         selectedStyle: c,
         disabled: p,
-        shouldShowUpsell: d
+        shouldShowUpsell: u
       }), c !== k.g.HOLOGRAPHIC && null != c && (0, r.jsx)(ei, {
         role: n,
         disabled: p,

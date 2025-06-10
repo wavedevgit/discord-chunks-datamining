@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   T: () => c,
-  Z: () => u
+  Z: () => d
 });
 var r = n(255367),
   i = n(73800),
@@ -16,7 +16,7 @@ function c(e, t, n) {
   return i.useMemo(() => r && n.id === (null == t ? void 0 : t.id), [r, n, t]) ? o.intl.string(o.t.PQylOT) : r ? o.intl.string(o.t.UGIjx8) : null
 }
 
-function u(e) {
+function d(e) {
   let {
     className: t,
     tooltipText: n,

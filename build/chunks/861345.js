@@ -11,8 +11,8 @@ var r = n(255367),
   a = n(952683),
   o = n(481060),
   c = n(313201),
-  u = n(817460),
-  d = n(723047),
+  d = n(817460),
+  u = n(723047),
   m = n(528027),
   g = n(686807),
   p = n(157018),
@@ -27,8 +27,8 @@ function b(e) {
     emojiName: l,
     title: a,
     description: c,
-    targetType: u,
-    index: d,
+    targetType: d,
+    index: u,
     dndName: g,
     onEdit: p,
     onMove: b,
@@ -38,7 +38,7 @@ function b(e) {
     dragPreview: C,
     drop: y,
     isDragging: N
-  } = (0, f.Z)(_, u, d, b);
+  } = (0, f.Z)(_, d, u, b);
   return O(v), C(y(_)), (0, r.jsxs)("div", {
     ref: _,
     className: s()(x.card, {
@@ -100,7 +100,7 @@ function j(e) {
     isDragging: f
   } = (0, a.f)(e => ({
     isDragging: e.getItemType() === m
-  })), h = (0, d.mY)();
+  })), h = (0, u.mY)();
   return 0 === t.length ? null : (0, r.jsx)("div", {
     className: s()(x.container, {
       [x.isDragging]: f
@@ -121,7 +121,7 @@ function j(e) {
         onMove: l,
         disabled: h
       })]
-    }, (0, u.ab)(e)))
+    }, (0, d.ab)(e)))
   })
 }
 

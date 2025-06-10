@@ -1,30 +1,30 @@
-/** Chunk was on 92754 **/
+/** Chunk was on 26268 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => s
 }), n(388685);
 var r = n(73800),
   i = n(586739);
-let l = function() {
+let s = function() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
     {
       refreshOnDepChange: t
     } = e,
-    [n, l] = r.useState([]),
-    [s, a] = r.useState(!0),
-    o = async () => {
+    [n, s] = r.useState([]),
+    [o, a] = r.useState(!0),
+    l = async () => {
       a(!0);
       try {
         let e = await i.Z.fetchTeams(!0);
-        l(e.body)
+        s(e.body)
       } catch (e) {}
       a(!1)
     }, c = r.useRef(!0);
   return r.useEffect(() => {
-    (c.current || t) && (c.current = !1, o())
+    (c.current || t) && (c.current = !1, l())
   }, [t]), {
     teams: n,
-    loading: s,
-    refresh: o
+    loading: o,
+    refresh: l
   }
 }

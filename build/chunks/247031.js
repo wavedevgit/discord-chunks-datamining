@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(392711),
   o = n(442837),
   c = n(481060),
-  u = n(239091),
-  d = n(749210),
+  d = n(239091),
+  u = n(749210),
   m = n(493544),
   g = n(479531),
   p = n(118012),
@@ -75,12 +75,12 @@ function D(e) {
     ban: s,
     hideDiscriminator: a,
     onClose: o
-  } = e, [u, m] = i.useState(!1), [f, h] = i.useState(null);
+  } = e, [d, m] = i.useState(!1), [f, h] = i.useState(null);
   async function x() {
     if (null != n) {
       h(null), m(!0);
       try {
-        await d.Z.unbanUser(n.id, l.id), o()
+        await u.Z.unbanUser(n.id, l.id), o()
       } catch (e) {
         h(new g.Z(e)), m(!1)
       }
@@ -126,7 +126,7 @@ function D(e) {
         onClick: x,
         look: c.zxk.Looks.LINK,
         color: c.zxk.Colors.RED,
-        submitting: u,
+        submitting: d,
         children: S.intl.string(S.t.UPcIa2)
       }), (0, r.jsx)(c.zxk, {
         onClick: o,
@@ -178,7 +178,7 @@ class k extends i.PureComponent {
         hideDiscriminator: n
       })))
     }), w(this, "handleContextMenu", e => {
-      (0, u.jW)(e, async () => {
+      (0, d.jW)(e, async () => {
         let {
           default: e
         } = await n.e("23835").then(n.bind(n, 768079));
@@ -259,14 +259,14 @@ class A extends i.PureComponent {
         className: T.spinner,
         type: c.$jN.Type.SPINNING_CIRCLE
       }, "spinner");
-      let u = this.getSortedBans(l, o)[i],
-        d = null == l ? void 0 : l.get(null != (t = null == u ? void 0 : u.id) ? t : "");
-      if (null != u && null != d) return (0, r.jsx)(k, {
-        user: u,
-        ban: d,
+      let d = this.getSortedBans(l, o)[i],
+        u = null == l ? void 0 : l.get(null != (t = null == d ? void 0 : d.id) ? t : "");
+      if (null != d && null != u) return (0, r.jsx)(k, {
+        user: d,
+        ban: u,
         hideDiscriminator: s,
         guild: a
-      }, u.id)
+      }, d.id)
     }), w(this, "getSectionHeight", e => {
       if (e > 0) return 0;
       let {

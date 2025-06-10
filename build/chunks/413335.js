@@ -12,8 +12,8 @@ function s(e) {
   var t, n, s, a, {
       size: o = "sm",
       color: c = "#FF73FA",
-      width: u,
-      height: d
+      width: d,
+      height: u
     } = e,
     m = function(e, t) {
       if (null == e) return {};
@@ -31,8 +31,8 @@ function s(e) {
       return i
     }(e, ["size", "color", "width", "height"]);
   let g = (0, l.m)(o),
-    p = null != (s = null == g ? void 0 : g.width) ? s : u,
-    f = null != (a = null == g ? void 0 : g.height) ? a : d;
+    p = null != (s = null == g ? void 0 : g.width) ? s : d,
+    f = null != (a = null == g ? void 0 : g.height) ? a : u;
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

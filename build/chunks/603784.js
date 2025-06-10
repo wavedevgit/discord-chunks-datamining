@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(91192),
   o = n(442837),
   c = n(780384),
-  u = n(481060),
-  d = n(726542),
+  d = n(481060),
+  u = n(726542),
   m = n(100527),
   g = n(933557),
   p = n(670188),
@@ -68,12 +68,12 @@ class T extends i.PureComponent {
     return (0, r.jsxs)("span", {
       onContextMenu: t,
       className: I.userHook,
-      children: [(0, r.jsx)(u.Text, {
+      children: [(0, r.jsx)(d.Text, {
         variant: "text-md/normal",
         children: _.ZP.getUserTag(e, {
           mode: "username"
         })
-      }), "0" !== e.discriminator && (0, r.jsxs)(u.Text, {
+      }), "0" !== e.discriminator && (0, r.jsxs)(d.Text, {
         variant: "text-xs/normal",
         className: I.discrim,
         children: ["#", e.discriminator]
@@ -106,11 +106,11 @@ let P = i.forwardRef((e, t) => {
   f ? G = I.headerExpanded : M && (G = I.headerClickable);
   let U = l.timestampStart.calendar(),
     B = l.timestampEnd.calendar();
-  n = U === B ? (0, r.jsx)(u.Text, {
+  n = U === B ? (0, r.jsx)(d.Text, {
     className: I.timestamp,
     variant: "text-sm/normal",
     children: U
-  }) : (0, r.jsxs)(u.Text, {
+  }) : (0, r.jsxs)(d.Text, {
     className: I.timestamp,
     variant: "text-sm/normal",
     children: [U, "—", B]
@@ -121,7 +121,7 @@ let P = i.forwardRef((e, t) => {
     children: e => (0, r.jsxs)("div", {
       ref: t,
       className: s()(I.auditLog, o),
-      children: [(0, r.jsxs)(u.P3F, S(E({
+      children: [(0, r.jsxs)(d.P3F, S(E({
         className: G,
         "aria-expanded": f,
         onClick: F
@@ -145,7 +145,7 @@ let P = i.forwardRef((e, t) => {
             newAnalyticsLocations: [m.Z.AVATAR],
             children: e => {
               var t;
-              return (0, r.jsx)(u.qEK, S(E({}, e), {
+              return (0, r.jsx)(d.qEK, S(E({}, e), {
                 ref: L,
                 onClick: t => {
                   t.stopPropagation(), e.onClick(t)
@@ -153,19 +153,19 @@ let P = i.forwardRef((e, t) => {
                 className: I.avatar,
                 src: l.action === y.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === y.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === y.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === y.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, v.j)() : null == (t = l.user) ? void 0 : t.getAvatarURL(_, 40),
                 "aria-hidden": !0,
-                size: u.EFr.SIZE_40
+                size: d.EFr.SIZE_40
               }))
             }
           });
           if (null != n) {
-            let e = d.Z.get(n);
+            let e = u.Z.get(n);
             if (null != e) {
               let t = (0, c.wj)(A) ? e.icon.darkSVG : e.icon.lightSVG;
-              return (0, r.jsx)(u.qEK, {
+              return (0, r.jsx)(d.qEK, {
                 className: I.avatar,
                 src: t,
                 "aria-hidden": !0,
-                size: u.EFr.SIZE_40
+                size: d.EFr.SIZE_40
               })
             }
           }
@@ -192,7 +192,7 @@ let P = i.forwardRef((e, t) => {
                     }, t);
                     if (null != l.options.integration_type) {
                       var n;
-                      let e = d.Z.get(l.options.integration_type);
+                      let e = u.Z.get(l.options.integration_type);
                       return null != (n = null == e ? void 0 : e.name) ? n : N.intl.string(N.t["n+olu7"])
                     }
                     return N.intl.string(N.t["30mdIy"])

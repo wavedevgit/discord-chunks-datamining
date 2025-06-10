@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(255367),
   i = n(73800),
@@ -10,12 +10,12 @@ var r = n(255367),
   a = n(8426),
   o = n(388032),
   c = n(773100);
-let u = function(e) {
+let d = function(e) {
   var t;
   let {
     channel: n,
-    end: u
-  } = e, d = i.useCallback(() => {
+    end: d
+  } = e, u = i.useCallback(() => {
     (0, a.r2)({
       channelId: n.id,
       title: n.name,
@@ -36,14 +36,14 @@ let u = function(e) {
       }), (0, r.jsx)(l.zxk, {
         className: c.suggestedChannelButton,
         size: l.zxk.Sizes.MIN,
-        onClick: d,
+        onClick: u,
         children: (0, r.jsx)(l.Text, {
           variant: "text-sm/semibold",
           color: "always-white",
           children: o.intl.string(o.t.OYkgVl)
         })
       })]
-    }), u && (0, r.jsx)("div", {
+    }), d && (0, r.jsx)("div", {
       className: c.suggestedSeparator
     })]
   })

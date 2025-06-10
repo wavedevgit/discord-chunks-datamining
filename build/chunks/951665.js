@@ -11,7 +11,7 @@ var r = n(255367),
   o = n(388032),
   c = n(320705);
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +30,7 @@ function u(e) {
   return e
 }
 
-function d(e, t) {
+function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,8 +52,8 @@ function m(e) {
   } = e, [p, f] = i.useState(!g), h = i.useCallback(() => {
     f(!p)
   }, [p, f]), x = i.useCallback(e => {
-    m(d(u({}, n), {
-      triggerMetadata: d(u({}, n.triggerMetadata), {
+    m(u(d({}, n), {
+      triggerMetadata: u(d({}, n.triggerMetadata), {
         regexPatterns: e
       })
     }))

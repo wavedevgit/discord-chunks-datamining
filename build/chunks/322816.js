@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(149765),
   o = n(442837),
   c = n(481060),
-  u = n(144991),
-  d = n(496675),
+  d = n(144991),
+  u = n(496675),
   m = n(594174),
   g = n(626135),
   p = n(233608),
@@ -64,18 +64,18 @@ function S(e) {
     guild: t,
     role: n,
     locked: l
-  } = e, s = (0, o.e7)([m.default], () => m.default.getCurrentUser()), u = i.useMemo(() => f.uB({
+  } = e, s = (0, o.e7)([m.default], () => m.default.getCurrentUser()), d = i.useMemo(() => f.uB({
     user: s,
     context: t
-  }), [s, t]), d = i.useMemo(() => ({
+  }), [s, t]), u = i.useMemo(() => ({
     [n.id]: E(I({}, n), {
       permissions: f.Hn
     })
   }), [n]), g = i.useMemo(() => f.uB({
     user: s,
     context: t,
-    roles: d
-  }), [s, t, d]), p = !a.fS(u, g);
+    roles: u
+  }), [s, t, u]), p = !a.fS(d, g);
   return (0, r.jsx)("div", {
     className: y.clearButtonWrapper,
     children: (0, r.jsx)(c.ua7, {
@@ -121,7 +121,7 @@ function T(e) {
   });
 
   function s(e) {
-    return d.Z.can(e, t) ? !d.Z.can(e, t, null, {
+    return u.Z.can(e, t) ? !u.Z.can(e, t, null, {
       [n.id]: E(I({}, n), {
         permissions: a.Od(n.permissions, e)
       })
@@ -133,7 +133,7 @@ function T(e) {
       guild: t,
       role: n,
       locked: l
-    }), i.map((e, t) => (0, r.jsx)(u.Z, {
+    }), i.map((e, t) => (0, r.jsx)(d.Z, {
       className: y.permissionsForm,
       spec: e,
       permissions: n.permissions,
@@ -154,9 +154,9 @@ function P(e) {
     locked: l,
     setSelectedSection: a,
     initialSearchQuery: o
-  } = e, [u, d] = i.useState(null != o ? o : ""), m = i.useMemo(() => p.Z.generateGuildPermissionSpec(t), [t]).map(e => E(I({}, e), {
+  } = e, [d, u] = i.useState(null != o ? o : ""), m = i.useMemo(() => p.Z.generateGuildPermissionSpec(t), [t]).map(e => E(I({}, e), {
     permissions: e.permissions.filter(e => {
-      let t = u.trimStart().toLowerCase();
+      let t = d.trimStart().toLowerCase();
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
     })
   })).filter(e => e.permissions.length > 0), {
@@ -167,10 +167,10 @@ function P(e) {
     handleScroll: S
   } = (0, j.V)(), P = i.useRef(!1);
   return i.useEffect(() => {
-    P.current || "" === u.trimStart() || (g.default.track(O.rMx.SEARCH_STARTED, {
+    P.current || "" === d.trimStart() || (g.default.track(O.rMx.SEARCH_STARTED, {
       search_type: "Permissions"
     }), P.current = !0)
-  }, [u]), (0, r.jsx)(c.yWw, {
+  }, [d]), (0, r.jsx)(c.yWw, {
     className: y.scroller,
     style: {
       scrollPaddingTop: f
@@ -197,9 +197,9 @@ function P(e) {
           className: y.searchContainer,
           children: (0, r.jsx)(c.E1j, {
             size: c.E1j.Sizes.MEDIUM,
-            query: u,
-            onChange: d,
-            onClear: () => d(""),
+            query: d,
+            onChange: u,
+            onClear: () => u(""),
             placeholder: C.intl.string(C.t.OLJAk5),
             "aria-label": C.intl.string(C.t.OLJAk5)
           })

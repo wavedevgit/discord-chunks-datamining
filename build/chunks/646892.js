@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(255367);
 n(73800);
@@ -11,22 +11,22 @@ var i = n(120356),
   a = n(481060),
   o = n(607070),
   c = n(307537),
-  u = n(984313);
+  d = n(984313);
 
-function d(e) {
+function u(e) {
   let {
     className: t,
     shouldShine: n = !0,
     size: i = 14
-  } = e, d = (0, s.e7)([o.Z], () => o.Z.useReducedMotion);
+  } = e, u = (0, s.e7)([o.Z], () => o.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
-    className: l()([u.guildProductRoleIcon, t]),
+    className: l()([d.guildProductRoleIcon, t]),
     children: [(0, r.jsx)(c.Z, {
       height: i,
       width: i
     }), (0, r.jsx)(a.ZX5, {
-      className: u.shine,
-      shinePaused: d || !n,
+      className: d.shine,
+      shinePaused: u || !n,
       shineSize: a.gtL.ShineSizes.SMALL
     })]
   })

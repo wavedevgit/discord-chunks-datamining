@@ -12,7 +12,7 @@ var r = n(73800),
 function o(e, t) {
   let n = (0, i.e7)([a.Z], () => a.Z.getGuildApplication(e, t)),
     [o, c] = r.useState(null == n),
-    [u, d] = r.useState(),
+    [d, u] = r.useState(),
     [m, g] = r.useState(!1),
     p = r.useCallback(async () => {
       if (null == n && null != e) {
@@ -23,7 +23,7 @@ function o(e, t) {
             includeTeam: !0
           })
         } catch (e) {
-          d(new l.Hx(e))
+          u(new l.Hx(e))
         } finally {
           c(!1)
         }
@@ -33,7 +33,7 @@ function o(e, t) {
     m || p()
   }, [m, p]), {
     application: n,
-    error: u,
+    error: d,
     loading: o
   }
 }

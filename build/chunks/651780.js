@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(570140),
   o = n(355467),
   c = n(37234),
-  u = n(821849),
-  d = n(774078),
+  d = n(821849),
+  u = n(774078),
   m = n(100527),
   g = n(15640),
   p = n(774380),
@@ -37,7 +37,7 @@ function S(e) {
   } = e, {
     days: i,
     hours: l
-  } = (0, d.Z)(t);
+  } = (0, u.Z)(t);
   return n <= 0 ? null : 0 === i && 0 === l ? I.intl.format(I.t.kF0HER, {
     tierName: r,
     numPremiumSubscriptions: n
@@ -91,7 +91,7 @@ let P = e => {
 function w() {
   i.useEffect(() => {
     a.Z.wait(() => {
-      (0, o.tZ)(), (0, u.Y2)()
+      (0, o.tZ)(), (0, d.Y2)()
     })
   }, []);
   let e = (0, l.e7)([y.Z], () => y.Z.getGuild()),

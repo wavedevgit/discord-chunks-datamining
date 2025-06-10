@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(255367),
   i = n(73800),
@@ -10,12 +10,12 @@ var r = n(255367),
   a = n(456268),
   o = n(526429),
   c = n(203377);
-let u = e => {
+let d = e => {
   let {
     guild: t,
     guildMetadata: n,
-    disabled: u
-  } = e, d = (0, l.Wu)([o.Z], () => o.Z.getAllCategories()), m = i.useMemo(() => d.map(e => {
+    disabled: d
+  } = e, u = (0, l.Wu)([o.Z], () => o.Z.getAllCategories()), m = i.useMemo(() => u.map(e => {
     let {
       categoryId: t,
       name: n
@@ -24,7 +24,7 @@ let u = e => {
       value: t,
       label: n
     }
-  }), [d]);
+  }), [u]);
   return 0 === m.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(s.VcW, {
     value: n.secondaryCategoryIds,
     options: m,
@@ -38,7 +38,7 @@ let u = e => {
         e.filter(e => !r.includes(e)).forEach(e => (0, a.Kq)(t.id, e))
       }
     },
-    isDisabled: u,
+    isDisabled: d,
     multi: !0
   })
 }

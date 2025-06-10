@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(442837),
   o = n(481060),
   c = n(603211),
-  u = n(710344),
-  d = n(637853),
+  d = n(710344),
+  u = n(637853),
   m = n(259580),
   g = n(823379),
   p = n(889369),
@@ -30,7 +30,7 @@ function O(e) {
   let {
     guild: n,
     prompt: l,
-    disableAutofocus: u,
+    disableAutofocus: d,
     promptIndex: x,
     dragIndex: O,
     includeCount: N,
@@ -53,17 +53,17 @@ function O(e) {
   }), k = (0, a.cj)([h.Z], () => {
     var e;
     return null != (e = h.Z.errors[x]) ? e : v
-  }), [A, L] = i.useState(!1), [M, G] = i.useState(!1), U = null != (t = k.options) ? t : k.optionErrors.filter(g.lm)[0], B = k.config, F = l.options.length >= b.fY, z = (0, d.kl)(n.id, Array.from(P), [l]).length - P.size, H = i.useRef(null), W = i.useRef(x);
+  }), [A, L] = i.useState(!1), [M, G] = i.useState(!1), U = null != (t = k.options) ? t : k.optionErrors.filter(g.lm)[0], B = k.config, F = l.options.length >= b.fY, z = (0, u.kl)(n.id, Array.from(P), [l]).length - P.size, H = i.useRef(null), W = i.useRef(x);
   return (i.useEffect(() => {
     W.current = x
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
-      if (0 === W.current && !u) {
+      if (0 === W.current && !d) {
         var e;
         null == (e = H.current) || e.focus()
       }
     }, 0)
-  }, [u]), A) ? (0, r.jsx)(o.tEY, {
+  }, [d]), A) ? (0, r.jsx)(o.tEY, {
     children: (0, r.jsxs)("div", {
       tabIndex: 0,
       onFocus: () => G(!0),
@@ -284,12 +284,12 @@ function y(e) {
     handleDragStart: a,
     handleDragReset: o,
     handleDragComplete: c
-  } = (0, u.Z)(n.options, e => (0, f.Kk)(t, n.id, {
+  } = (0, d.Z)(n.options, e => (0, f.Kk)(t, n.id, {
     options: e
   }));
   return (0, r.jsxs)("div", {
     className: _.options,
-    children: [n.options.map((e, u) => (0, r.jsx)(x.Z, {
+    children: [n.options.map((e, d) => (0, r.jsx)(x.Z, {
       guild: t,
       prompt: n,
       promptIndex: i,
@@ -298,7 +298,7 @@ function y(e) {
       onDragStart: a,
       onDragComplete: c,
       onDragReset: o,
-      hasError: null != s.optionErrors[u]
+      hasError: null != s.optionErrors[d]
     }, e.id)), n.options.length < b.qm ? (0, r.jsx)(x.B, {
       guild: t,
       prompt: n,

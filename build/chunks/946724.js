@@ -7,8 +7,8 @@ n.d(t, {
 }), n(388685), n(583741), n(953529);
 var s, a, o = n(392711),
   c = n.n(o),
-  u = n(149765),
-  d = n(866442),
+  d = n(149765),
+  u = n(866442),
   m = n(442837),
   g = n(570140),
   p = n(561654),
@@ -267,7 +267,7 @@ let W = new H(g.Z, __OVERLAY__ ? {} : {
         permissions: l
       } = i;
       return B(i, {
-        permissions: l = r ? u.IH(l, n) : u.Od(l, n)
+        permissions: l = r ? d.IH(l, n) : d.Od(l, n)
       })
     },
     GUILD_SETTINGS_ROLES_UPDATE_PERMISSION_SET: function(e) {
@@ -309,7 +309,7 @@ let W = new H(g.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         color: n
-      } = e, r = 0 === n ? null : (0, d.Rf)(n), i = F(t);
+      } = e, r = 0 === n ? null : (0, u.Rf)(n), i = F(t);
       if (null == i) return !1;
       let l = k.get(t);
       return null != l && (l.currentStyle = "solid", l.styleColors.solid = {

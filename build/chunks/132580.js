@@ -15,7 +15,7 @@ function o(e) {
       className: o,
       color: c = (0, l.Lq)(s.Ilk.BRAND_500)
     } = e,
-    u = function(e, t) {
+    d = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -47,7 +47,7 @@ function o(e) {
       })
     }
     return e
-  }({}, u), n = n = {
+  }({}, d), n = n = {
     text: a.intl.string(a.t.G6GWZ2),
     color: c,
     className: o

@@ -3,7 +3,7 @@
 n.d(t, {
   E6: () => m,
   f4: () => g,
-  mw: () => d
+  mw: () => u
 });
 var r = n(255367),
   i = n(481060),
@@ -12,9 +12,9 @@ var r = n(255367),
   a = n(26323),
   o = n(267642),
   c = n(434404),
-  u = n(981631);
+  d = n(981631);
 
-function d(e) {
+function u(e) {
   let {
     uploadType: t,
     maxFileSizeBytes: l,
@@ -64,10 +64,10 @@ function m(e) {
     perks: s,
     targetPremiumGuildTier: c
   } = e;
-  (0, l.yw)(u.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+  (0, l.yw)(d.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
     location: {
       section: r,
-      object: u.qAy.LEARN_MORE,
+      object: d.qAy.LEARN_MORE,
       objectType: c ? (0, o.ge)(c) : void 0
     },
     guild_id: t.id,
@@ -77,7 +77,7 @@ function m(e) {
     analyticsSourceLocation: {
       section: r,
       object: i,
-      page: u.ZY5.GUILD_SETTINGS
+      page: d.ZY5.GUILD_SETTINGS
     },
     guild: t,
     perks: s
@@ -87,14 +87,14 @@ function m(e) {
 function g(e, t, n, r) {
   let i = null == r ? void 0 : r.type,
     l = {
-      page: u.ZY5.GUILD_SETTINGS,
-      section: u.jXE.ANIMATED_GUILD_BANNER_UPSELL,
+      page: d.ZY5.GUILD_SETTINGS,
+      section: d.jXE.ANIMATED_GUILD_BANNER_UPSELL,
       object: "temp"
     };
   if (null != i && null != n)
-    if ("image/gif" !== i || e.hasFeature(u.oNc.ANIMATED_BANNER)) {
-      if (!e.hasFeature(u.oNc.BANNER)) {
-        l.object = u.qAy.IMAGE_CROPPING_MODAL, (0, s.c)({
+    if ("image/gif" !== i || e.hasFeature(d.oNc.ANIMATED_BANNER)) {
+      if (!e.hasFeature(d.oNc.BANNER)) {
+        l.object = d.qAy.IMAGE_CROPPING_MODAL, (0, s.c)({
           guild: e,
           analyticsLocations: t,
           analyticsLocation: l,
@@ -104,7 +104,7 @@ function g(e, t, n, r) {
         return
       }
     } else {
-      l.object = u.qAy.GIF_CROPPING_MODAL, (0, s.c)({
+      l.object = d.qAy.GIF_CROPPING_MODAL, (0, s.c)({
         guild: e,
         analyticsLocations: t,
         analyticsLocation: l,

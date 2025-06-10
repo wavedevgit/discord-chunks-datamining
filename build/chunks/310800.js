@@ -11,8 +11,8 @@ var i = n(481060),
   a = n(572004),
   o = n(495437),
   c = n(267101),
-  u = n(863663),
-  d = n(676651),
+  d = n(863663),
+  u = n(676651),
   m = n(613810),
   g = n(391181),
   p = n(388032),
@@ -22,7 +22,7 @@ let h = "guild-product-listings-header";
 function x(e) {
   let {
     guildId: t,
-    handleCreateOrEditProduct: d
+    handleCreateOrEditProduct: u
   } = e, x = (0, c.ue)(t, {
     publishedOnly: !1
   }), {
@@ -60,7 +60,7 @@ function x(e) {
       }, n))
     })
   }, v = (e, t) => {
-    (0, a.JG)((0, u.ar)(e, t))
+    (0, a.JG)((0, d.ar)(e, t))
   }, O = x.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.vwX, {
@@ -74,7 +74,7 @@ function x(e) {
         children: (0, r.jsx)(g.Z, {
           guildId: t,
           product: e,
-          onEditProduct: () => d(e.id),
+          onEditProduct: () => u(e.id),
           onUnpublishProduct: () => j(e.id),
           onDeleteProduct: () => _(e.id, e.name),
           onCopyProductLink: () => v(t, e.id),
@@ -100,7 +100,7 @@ function b(e) {
   } = e, {
     shouldRestrictUpdatingCreatorMonetizationSettings: n
   } = (0, s.gX)(t), l = e => {
-    d.h(t, e)
+    u.h(t, e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(i.zxk, {

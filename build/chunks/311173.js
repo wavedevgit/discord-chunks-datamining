@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(481060),
   o = n(63063),
   c = n(256569),
-  u = n(858457),
-  d = n(273504),
+  d = n(858457),
+  u = n(273504),
   m = n(981631),
   g = n(388032),
   p = n(409866);
@@ -53,7 +53,7 @@ function x(e) {
     errors: b,
     validatePatternsChanged: j,
     validateEditingValueChanged: _
-  } = (0, u.Z)(l, a), [v] = i.useState(() => ({
+  } = (0, d.Z)(l, a), [v] = i.useState(() => ({
     tags: m,
     value: "",
     selections: [],
@@ -85,7 +85,7 @@ function x(e) {
       onChangeTags: C,
       onChangeNewTagValue: y,
       tagErrors: O,
-      maxTags: d.VW
+      maxTags: u.VW
     }), (0, r.jsx)(h, {
       text: g.intl.format(g.t["PGC/AA"], {
         helpArticle: f
@@ -95,7 +95,7 @@ function x(e) {
         let {
           pattern: t
         } = e;
-        return t === u.r
+        return t === d.r
       })) ? void 0 : t.message) ? n : null == x ? void 0 : x.message
     })]
   })

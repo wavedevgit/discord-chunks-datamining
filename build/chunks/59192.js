@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var r = n(255367);
 n(73800);
@@ -12,31 +12,31 @@ var i = n(236413),
   o = n(591026),
   c = n(813922);
 
-function u(e) {
+function d(e) {
   let {
     rule: t,
     isLoading: n,
-    onChangeRule: u
+    onChangeRule: d
   } = e;
   return null == t ? null : (0, i.DO)(t) ? (0, r.jsx)(s.Z, {
     rule: t,
     isLoading: n,
-    onChangeRule: u
+    onChangeRule: d
   }) : (0, i.vo)(t) ? (0, r.jsx)(a.Z, {
     rule: t,
     isLoading: n,
-    onChangeRule: u
+    onChangeRule: d
   }) : (0, i.Fn)(t) ? (0, r.jsx)(l.Z, {
     rule: t,
     isLoading: n,
-    onChangeRule: u
+    onChangeRule: d
   }) : (0, i.nC)(t) ? (0, r.jsx)(o.Z, {
     rule: t,
     isLoading: n,
-    onChangeRule: u
+    onChangeRule: d
   }) : (0, i.Jq)(t) ? (0, r.jsx)(c.Z, {
     rule: t,
     isLoading: n,
-    onChangeRule: u
+    onChangeRule: d
   }) : null
 }

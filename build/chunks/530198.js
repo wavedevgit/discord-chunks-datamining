@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(512722),
   o = n.n(a),
   c = n(780384),
-  u = n(481060),
-  d = n(99690),
+  d = n(481060),
+  u = n(99690),
   m = n(410030),
   g = n(726542),
   p = n(981631),
@@ -47,8 +47,8 @@ function j(e) {
     onRemove: g,
     locked: p
   } = e;
-  if ((null == m ? void 0 : m.application) != null) o()(null != m.application.bot, "bot is null"), i = (0, r.jsx)(d.Z, {
-    size: u.EFr.SIZE_24,
+  if ((null == m ? void 0 : m.application) != null) o()(null != m.application.bot, "bot is null"), i = (0, r.jsx)(u.Z, {
+    size: d.EFr.SIZE_24,
     user: m.application.bot,
     className: x.verifiedIcon
   });
@@ -64,22 +64,22 @@ function j(e) {
   }
   return (0, r.jsxs)("div", {
     className: s()(x.verifiedRow, (null == a ? void 0 : a.hasMetadata) === !0 || (null == m ? void 0 : m.role_connections_metadata) != null && (null == m ? void 0 : m.role_connections_metadata.length) > 0 ? x.verifiedRowWithMetadata : null),
-    children: [i, (0, r.jsx)(u.Text, {
+    children: [i, (0, r.jsx)(d.Text, {
       variant: "text-md/medium",
       className: x.verifiedText,
       children: h.intl.format(h.t.Nj0a3t, {
         platformName: null != (n = null == a ? void 0 : a.name) ? n : null == m || null == (t = m.application) ? void 0 : t.name
       })
-    }), (0, r.jsx)(u.zxk, {
+    }), (0, r.jsx)(d.zxk, {
       "aria-label": h.intl.string(h.t.N86XcH),
-      size: u.zxk.Sizes.TINY,
-      look: u.zxk.Looks.BLANK,
+      size: d.zxk.Sizes.TINY,
+      look: d.zxk.Looks.BLANK,
       onClick: g,
       disabled: p,
       className: x.closeButton,
-      children: (0, r.jsx)(u.ua7, {
+      children: (0, r.jsx)(d.ua7, {
         text: h.intl.string(h.t.N86XcH),
-        children: e => (0, r.jsx)(u.Dio, b({
+        children: e => (0, r.jsx)(d.Dio, b({
           size: "md",
           color: "currentColor",
           className: x.closeIcon
@@ -98,13 +98,13 @@ function _(e) {
     platform: a,
     applicationId: o,
     onConfigurationChange: c,
-    locked: d
+    locked: u
   } = e, m = i.useId();
   return (0, r.jsxs)("tr", {
     className: x.ruleContainer,
     children: [(0, r.jsx)("th", {
       scope: "row",
-      children: (0, r.jsx)(u.nn4, {
+      children: (0, r.jsx)(d.nn4, {
         children: (0, r.jsx)("label", {
           htmlFor: m,
           children: t
@@ -112,19 +112,19 @@ function _(e) {
       })
     }), (0, r.jsxs)("td", {
       className: x.ruleContainerLabel,
-      children: [(0, r.jsx)(u.Text, {
+      children: [(0, r.jsx)(d.Text, {
         variant: "text-md/bold",
         "aria-hidden": "true",
         children: t
       }), (0, r.jsx)("div", {
         className: x.numericalRuleSubItemContainer,
-        children: (0, r.jsx)(u.Text, {
+        children: (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           children: n
         })
       })]
     }), (0, r.jsx)("td", {}), (0, r.jsx)("td", {
-      children: (0, r.jsx)(u.rsf, {
+      children: (0, r.jsx)(d.rsf, {
         id: m,
         checked: (null == s ? void 0 : s.configuration.value) === "1",
         onChange: e => {
@@ -138,7 +138,7 @@ function _(e) {
             value: "1"
           }), c(r, null != (n = null == s ? void 0 : s.index) ? n : -1)
         },
-        disabled: d
+        disabled: u
       })
     })]
   }, l)
@@ -152,7 +152,7 @@ function v(e) {
     fieldTextHook: a,
     metadataField: o,
     existingPendingConfiguration: c,
-    platform: d,
+    platform: u,
     applicationId: m,
     onConfigurationChange: g,
     locked: p,
@@ -172,7 +172,7 @@ function v(e) {
     className: x.ruleContainer,
     children: [(0, r.jsx)("th", {
       scope: "row",
-      children: (0, r.jsx)(u.nn4, {
+      children: (0, r.jsx)(d.nn4, {
         children: (0, r.jsx)("label", {
           htmlFor: I,
           children: l
@@ -180,23 +180,23 @@ function v(e) {
       })
     }), (0, r.jsxs)("td", {
       className: x.ruleContainerLabel,
-      children: [(0, r.jsx)(u.Text, {
+      children: [(0, r.jsx)(d.Text, {
         variant: "text-md/bold",
         "aria-hidden": "true",
         children: l
       }), (0, r.jsx)("div", {
         className: x.numericalRuleSubItemContainer,
-        children: (0, r.jsx)(u.Text, {
+        children: (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           children: N
         })
       })]
     }), (0, r.jsx)("td", {
-      children: (0, r.jsx)(u.oil, {
+      children: (0, r.jsx)(d.oil, {
         "aria-label": h.intl.string(h.t["FTmi9/"]),
         type: "number",
         className: x.numericalRuleInput,
-        size: u.oil.Sizes.MINI,
+        size: d.oil.Sizes.MINI,
         value: C,
         onChange: e => {
           if (y(e), null == c) return;
@@ -208,7 +208,7 @@ function v(e) {
           if ("" !== e) {
             var r;
             g({
-              connectionType: null != (r = null == d ? void 0 : d.type) ? r : f.Kt,
+              connectionType: null != (r = null == u ? void 0 : u.type) ? r : f.Kt,
               applicationId: m,
               connectionMetadataField: o,
               operator: n,
@@ -219,14 +219,14 @@ function v(e) {
         disabled: p || !j
       })
     }), (0, r.jsx)("td", {
-      children: (0, r.jsx)(u.rsf, {
+      children: (0, r.jsx)(d.rsf, {
         id: I,
         checked: j,
         onChange: e => {
           var t, n;
           let r = null;
           e && (r = {
-            connectionType: null != (t = null == d ? void 0 : d.type) ? t : f.Kt,
+            connectionType: null != (t = null == u ? void 0 : u.type) ? t : f.Kt,
             applicationId: m,
             connectionMetadataField: o,
             operator: O,
@@ -251,17 +251,17 @@ function O(e) {
           scope: "col"
         }), (0, r.jsx)("th", {
           scope: "col",
-          children: (0, r.jsx)(u.nn4, {
+          children: (0, r.jsx)(d.nn4, {
             children: h.intl.string(h.t.TwDLVl)
           })
         }), (0, r.jsx)("th", {
           scope: "col",
-          children: (0, r.jsx)(u.nn4, {
+          children: (0, r.jsx)(d.nn4, {
             children: h.intl.string(h.t.qDWJwc)
           })
         }), (0, r.jsx)("th", {
           scope: "col",
-          children: (0, r.jsx)(u.nn4, {
+          children: (0, r.jsx)(d.nn4, {
             children: h.intl.string(h.t["5IF76e"])
           })
         })]
@@ -607,21 +607,21 @@ function P(e) {
       return (null == (t = e.application) ? void 0 : t.id) === o
     }) : void 0;
   if (null != o && null == c) return null;
-  let u = null;
+  let d = null;
   try {
-    u = g.Z.get(n[0].configuration.connectionType)
+    d = g.Z.get(n[0].configuration.connectionType)
   } catch (e) {}
-  let d = new Map;
+  let u = new Map;
   n.forEach(e => {
-    null != e.configuration.connectionMetadataField ? d.set(e.configuration.connectionMetadataField, e) : null == e.configuration.value && null == e.configuration.operator && null == e.configuration.connectionMetadataField && (t = e)
+    null != e.configuration.connectionMetadataField ? u.set(e.configuration.connectionMetadataField, e) : null == e.configuration.value && null == e.configuration.operator && null == e.configuration.connectionMetadataField && (t = e)
   });
   let f = {
-      configMetadataMap: d,
+      configMetadataMap: u,
       onConfigurationChange: i,
       locked: l
     },
     h = null;
-  switch (null == u ? void 0 : u.type) {
+  switch (null == d ? void 0 : d.type) {
     case p.ABu.STEAM:
       h = (0, r.jsx)(C, b({}, f));
       break;
@@ -659,7 +659,7 @@ function P(e) {
     className: x.container,
     children: [(0, r.jsx)(j, {
       theme: a,
-      platform: u,
+      platform: d,
       integration: c,
       onRemove: () => i(null, t.index),
       locked: l

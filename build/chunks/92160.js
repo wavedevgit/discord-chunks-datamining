@@ -17,8 +17,8 @@ function c(e) {
     enabled: n,
     previewCTA: i,
     onPreview: c,
-    onToggle: u,
-    animateStatus: d,
+    onToggle: d,
+    animateStatus: u,
     firstLine: m,
     secondLine: g,
     disabled: p
@@ -31,7 +31,7 @@ function c(e) {
       width: 24,
       height: 24,
       className: l()(o.activeCircle, {
-        [o.animate]: d
+        [o.animate]: u
       })
     }) : (0, r.jsx)(s.vdY, {
       size: "custom",
@@ -39,7 +39,7 @@ function c(e) {
       width: 24,
       height: 24,
       className: l()(o.editCircle, {
-        [o.animate]: d
+        [o.animate]: u
       })
     }), (0, r.jsxs)("div", {
       className: o.enableDescription,
@@ -61,10 +61,10 @@ function c(e) {
         color: s.zxk.Colors.PRIMARY,
         children: null != i ? i : a.intl.string(a.t["5U0kLy"])
       }), (0, r.jsx)(s.zxk, {
-        disabled: null == u || p,
+        disabled: null == d || p,
         size: s.zxk.Sizes.SMALL,
         color: n ? s.zxk.Colors.RED : s.zxk.Colors.BRAND,
-        onClick: u,
+        onClick: d,
         children: n ? a.intl.string(a.t.R9GHyc) : a.intl.string(a.t.JFfinp)
       })]
     })]

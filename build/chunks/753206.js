@@ -1,7 +1,7 @@
-/** Chunk was on 57931 **/
+/** Chunk was on 26268 **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => b
 });
 var r = n(255367),
   i = n(73800),
@@ -14,13 +14,13 @@ var r = n(255367),
   d = n(25015),
   p = n(963550),
   f = n(845080),
-  b = n(30804);
-let g = i.memo(function(e) {
+  g = n(30804);
+let b = i.memo(function(e) {
   var t;
   let {
     message: n,
     channel: s,
-    compact: g,
+    compact: b,
     className: m,
     isGroupStart: _,
     hideSimpleEmbedContent: v = !0,
@@ -70,11 +70,11 @@ let g = i.memo(function(e) {
     }), t))
   }, [e, s, x]);
   return (0, r.jsx)(u.Z, {
-    compact: g,
+    compact: b,
     className: o()(m, {
-      [b.message]: !0,
-      [b.cozyMessage]: !g,
-      [b.groupStart]: _
+      [g.message]: !0,
+      [g.cozyMessage]: !b,
+      [g.groupStart]: _
     }),
     childrenHeader: w,
     childrenMessageContent: (0, p.Z)(e, P),

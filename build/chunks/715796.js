@@ -13,10 +13,10 @@ var r = n(255367),
 function c(e) {
   let t = (null == e ? void 0 : e.hasFeature(o.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING)) === !0,
     c = (null == e ? void 0 : e.hasFeature(o.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) === !0,
-    u = (0, l.e7)([a.default], () => a.default.getCurrentUser()),
-    d = (null == e ? void 0 : e.isOwner(u)) === !0;
+    d = (0, l.e7)([a.default], () => a.default.getCurrentUser()),
+    u = (null == e ? void 0 : e.isOwner(d)) === !0;
   i.useEffect(() => {
-    null != e && t && d && (0, s.ZDy)(async () => {
+    null != e && t && u && (0, s.ZDy)(async () => {
       let {
         default: t
       } = await n.e("710").then(n.bind(n, 32342));
@@ -54,5 +54,5 @@ function c(e) {
         }), i))
       }
     })
-  }, [t, c, e, d])
+  }, [t, c, e, u])
 }

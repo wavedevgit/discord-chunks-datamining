@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(571728),
   o = n(446945),
   c = n(681460),
-  u = n(700833),
-  d = n(217472),
+  d = n(700833),
+  u = n(217472),
   m = n(592286),
   g = n(388032),
   p = n(539482);
@@ -30,7 +30,7 @@ function f(e) {
     v = i.useMemo(() => null == f ? void 0 : f.some(e => (0, s.J)(e)), [f]),
     O = i.useMemo(() => f.length === m.nx, [f]),
     C = i.useCallback(e => {
-      d.Z.setPendingMemberVerificationRules(n.id, e), x(e), null != j && _(null)
+      u.Z.setPendingMemberVerificationRules(n.id, e), x(e), null != j && _(null)
     }, [j, n.id]),
     y = i.useCallback(e => {
       C([...f, e])
@@ -57,7 +57,7 @@ function f(e) {
         currentCount: f.length,
         maxCount: m.nx
       })
-    }), f.map(e => (0, u.a0)({
+    }), f.map(e => (0, d.a0)({
       dropHoveredIndex: j,
       formField: e,
       guild: n,

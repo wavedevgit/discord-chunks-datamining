@@ -1,11 +1,11 @@
-/** Chunk was on 92754 **/
+/** Chunk was on 26268 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => s
 });
 var r = n(544891),
   i = n(981631);
-let l = {
+let s = {
   fetchTeams() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
     return r.tn.get({

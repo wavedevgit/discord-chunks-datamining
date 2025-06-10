@@ -157,8 +157,8 @@ function S(e) {
       }
     }
   }, [b, j]);
-  let U = "Active";
-  return Z && (U = "Acked"), L && (U = "Expired"), (0, a.jsxs)("div", {
+  let B = "Active";
+  return Z && (B = "Acked"), L && (B = "Expired"), (0, a.jsxs)("div", {
     className: i()(_.card, D ? _.gradientWrapperTier0 : _.gradientWrapperTier2),
     children: [(0, a.jsx)("div", {
       className: i()(_.row, _.nameRow),
@@ -237,8 +237,8 @@ function S(e) {
         }),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
-          color: "Acked" === U ? void 0 : "always-white",
-          children: U
+          color: "Acked" === B ? void 0 : "always-white",
+          children: B
         })
       }), null != I && (0, a.jsx)("div", {
         className: i()(_.badge, _.redeemed),
@@ -440,14 +440,14 @@ function I() {
   let [e, t] = r.useState([]), [n, l] = r.useState([]), [i, s] = r.useState(), [x, p] = r.useState(), [g, N] = r.useState([]), [I, w] = r.useState([]), [k, R] = r.useState(!0), [A, Z] = r.useState(10080), [L, D] = r.useState([]), {
     entitlements: M,
     deleteFractionalPremium: z,
-    refreshEntitlementList: U
+    refreshEntitlementList: B
   } = (0, f.m)();
   r.useEffect(() => {
-    U()
-  }, [U]);
-  let B = e => e.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date);
+    B()
+  }, [B]);
+  let U = e => e.filter(e => e.sourceType === v.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date);
   r.useEffect(() => {
-    D(B(M))
+    D(U(M))
   }, [M]), r.useEffect(() => {
     (0 === e.length || 0 === n.length || k) && y().then(e => {
       let n = Object.keys(e.trial).map(t => ({
@@ -473,7 +473,7 @@ function I() {
     await E(), R(!0)
   }, H = async () => {
     let e = new Date(Date.now() + 60 * A * 1e3).toISOString();
-    await T(e), U()
+    await T(e), B()
   };
   return (0, a.jsx)(c.zJl, {
     className: j.panel,

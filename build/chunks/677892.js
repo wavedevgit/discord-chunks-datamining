@@ -13,8 +13,8 @@ var r = n(255367),
   a = n(45966),
   o = n(637853),
   c = n(734893),
-  u = n(8426),
-  d = n(969632),
+  d = n(8426),
+  u = n(969632),
   m = n(974513),
   g = n(290511),
   p = n(388032),
@@ -28,7 +28,7 @@ function h(e) {
     hasStarted: a,
     status: o,
     onEdit: c,
-    extra: u
+    extra: d
   } = e;
   switch (o) {
     case "good":
@@ -93,7 +93,7 @@ function h(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: f.rightContainer,
-      children: [t, u, a ? (0, r.jsx)(s.zxk, {
+      children: [t, d, a ? (0, r.jsx)(s.zxk, {
         className: f.cta,
         size: s.zxk.Sizes.SMALL,
         color: s.zxk.Colors.PRIMARY,
@@ -133,9 +133,9 @@ function j(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, u = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), d = (0, l.e7)([a.Z], () => (0, o.kl)(t, a.Z.getDefaultChannelIds(t), a.Z.getOnboardingPrompts(t)).length), b = i.useMemo(() => new Set(u), [u]), [, j] = (0, o.VF)(t, b), _ = j.length, v = x(t), O = (0, m.O4)(t), C = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), y = C ? p.intl.formatToPlainString(p.t.nHwnLC, {
+  } = e, d = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), u = (0, l.e7)([a.Z], () => (0, o.kl)(t, a.Z.getDefaultChannelIds(t), a.Z.getOnboardingPrompts(t)).length), b = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, b), _ = j.length, v = x(t), O = (0, m.O4)(t), C = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), y = C ? p.intl.formatToPlainString(p.t.nHwnLC, {
     numDefaultChannels: _,
-    numFromQuestions: d - _
+    numFromQuestions: u - _
   }) : v ? p.intl.formatToPlainString(p.t.HxEwSk, {
     numDefaultChannels: _
   }) : p.intl.formatToPlainString(p.t.ey3uVV, {
@@ -161,7 +161,7 @@ function _(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: i
-  } = e, c = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), u = (0, l.Wu)([a.Z], () => a.Z.getOnboardingPrompts(t)), d = u.length, [m, g] = (0, o.dF)(t, u, c), x = m.length, b = m.length + g.length, j = x / b * 100, _ = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), v = d > 0, O = "none";
+  } = e, c = (0, l.Wu)([a.Z], () => a.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([a.Z], () => a.Z.getOnboardingPrompts(t)), u = d.length, [m, g] = (0, o.dF)(t, d, c), x = m.length, b = m.length + g.length, j = x / b * 100, _ = (0, l.e7)([a.Z], () => a.Z.isAdvancedMode(t)), v = u > 0, O = "none";
   return v && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(h, {
     title: _ ? p.intl.string(p.t.AGjtFh) : p.intl.string(p.t.dqCzoa),
     description: p.intl.format(p.t.iuNisr, {
@@ -190,8 +190,8 @@ function v(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: o
-  } = e, m = (0, l.e7)([d.Z], () => d.Z.getSettings()), g = (0, l.e7)([a.Z], () => a.Z.getEnabled(t)), x = (0, c.uo)(m), b = m.enabled, j = i.useCallback(() => {
-    (0, u.To)(t, !b)
+  } = e, m = (0, l.e7)([u.Z], () => u.Z.getSettings()), g = (0, l.e7)([a.Z], () => a.Z.getEnabled(t)), x = (0, c.uo)(m), b = m.enabled, j = i.useCallback(() => {
+    (0, d.To)(t, !b)
   }, [t, b]), _ = !(0, c.av)(m), v = "none";
   _ && (x && !o ? v = "good" : x || (v = "required"));
   let O = p.intl.string(p.t.GMOwOD);

@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(481060),
   o = n(110924),
   c = n(347469),
-  u = n(853276),
-  d = n(596390),
+  d = n(853276),
+  u = n(596390),
   m = n(870472),
   g = n(673569);
 
@@ -21,7 +21,7 @@ function p(e) {
     onResize: n,
     onResizeEnd: i
   } = e, l = (0, c.Z)({
-    minDimension: d.tq,
+    minDimension: u.tq,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: i,
@@ -39,7 +39,7 @@ let f = i.forwardRef(function(e, t) {
     onFocus: l,
     onBlur: s,
     onClick: o
-  } = e, c = i.useRef(null), [u, m] = i.useState(d.tq);
+  } = e, c = i.useRef(null), [d, m] = i.useState(u.tq);
   return (0, r.jsxs)(a.P3F, {
     className: g.textArea,
     onFocus: l,
@@ -48,12 +48,12 @@ let f = i.forwardRef(function(e, t) {
     innerRef: c,
     ignoreKeyPress: !0,
     style: {
-      minHeight: u
+      minHeight: d
     },
     children: [(0, r.jsx)(a.Den, {
       className: g.innerScroller,
       style: {
-        minHeight: u - 2
+        minHeight: d - 2
       },
       ref: t,
       children: n
@@ -73,7 +73,7 @@ function h(e) {
     initialValue: n,
     onChangeTags: l,
     onChangeNewTagValue: c,
-    tagErrors: d = {},
+    tagErrors: u = {},
     placeholder: p,
     className: h,
     maxTags: x
@@ -135,7 +135,7 @@ function h(e) {
     children: [(0, r.jsxs)(f, {
       ref: _,
       onClick: G,
-      children: [Z.map((e, t) => (0, r.jsx)(u.Z, {
+      children: [Z.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,
         onChange: E(t),
         onBlur: U,
@@ -143,7 +143,7 @@ function h(e) {
         onRemove: () => I(t),
         isSelected: D.includes(e),
         isSelecting: k,
-        error: d[e],
+        error: u[e],
         forceShowErrorTooltip: !L && t === Z.length - 1
       }, t)), (0, r.jsx)("input", {
         className: s()(g.mainTextInput, {

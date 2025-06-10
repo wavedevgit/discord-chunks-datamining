@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(410030),
   o = n(434404),
   c = n(388032),
-  u = n(747608),
-  d = n(935653),
+  d = n(747608),
+  u = n(935653),
   m = n(449874);
 
 function g(e) {
@@ -24,11 +24,11 @@ function g(e) {
     })
   }, []);
   return (0, r.jsxs)(s.hjN, {
-    className: u.container,
+    className: d.container,
     children: [(0, r.jsxs)("div", {
-      className: u.column,
+      className: d.column,
       children: [(0, r.jsx)(s.j7V, {
-        className: u.switch,
+        className: d.switch,
         onChange: p,
         value: n,
         hideBorder: !0,
@@ -40,11 +40,11 @@ function g(e) {
         children: c.intl.string(c.t.xzHcoa)
       })]
     }), (0, r.jsx)("div", {
-      className: u.column,
+      className: d.column,
       children: (0, r.jsx)("img", {
         alt: c.intl.string(c.t.UOJp5e),
-        src: (0, l.ap)(g) ? m : d,
-        className: u.progressBarImage
+        src: (0, l.ap)(g) ? m : u,
+        className: d.progressBarImage
       })
     })]
   })

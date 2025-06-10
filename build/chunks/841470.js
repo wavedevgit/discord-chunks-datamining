@@ -15,8 +15,8 @@ let c = e => {
     title: t,
     subtext: n = a.intl.string(a.t.jHpxws),
     localizedNumber: c,
-    isTrendingUp: u,
-    isTrendingDown: d,
+    isTrendingUp: d,
+    isTrendingDown: u,
     tooltipText: m
   } = e, g = null != m ? (0, r.jsx)(l.ua7, {
     text: m,
@@ -72,13 +72,13 @@ let c = e => {
       })
     }), (0, r.jsxs)("div", {
       className: o.analyticsCardArrowSubText,
-      children: [u ? (0, r.jsx)(s.Z, {
+      children: [d ? (0, r.jsx)(s.Z, {
         className: o.trendingArrow,
         color: i.Z.unsafe_rawColors.GREEN_360.css,
         "aria-label": a.intl.string(a.t["8mcccX"]),
         width: 14,
         height: 12
-      }) : null, d ? (0, r.jsx)(s.Z, {
+      }) : null, u ? (0, r.jsx)(s.Z, {
         className: o.trendingArrowIconDown,
         color: i.Z.unsafe_rawColors.RED_400.css,
         "aria-label": a.intl.string(a.t.NLl6Q0),

@@ -11,8 +11,8 @@ var i = n(399606),
   a = n(267101),
   o = n(430824),
   c = n(584825),
-  u = n(198139),
-  d = n(388032);
+  d = n(198139),
+  u = n(388032);
 
 function m(e) {
   let {
@@ -27,12 +27,12 @@ function m(e) {
   } = (0, s.gX)(t), x = m.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
-    return (null == n ? void 0 : n.status) === u.x_.OPEN || (null == n ? void 0 : n.status) === u.x_.PAYOUT_DEFERRED
+    return (null == n ? void 0 : n.status) === d.x_.OPEN || (null == n ? void 0 : n.status) === d.x_.PAYOUT_DEFERRED
   }), b = p.length > 0, j = f.length > 0, _ = x.length > 0;
   return null == g ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.R94, {
       type: l.R94.Types.DESCRIPTION,
-      children: d.intl.format(d.t.fvOn6O, {
+      children: u.intl.format(u.t.fvOn6O, {
         guildName: g.toString()
       })
     }), (0, r.jsx)(l.LZC, {
@@ -80,7 +80,7 @@ function m(e) {
           }
         })
       },
-      children: d.intl.string(d.t.FrOFSk)
+      children: u.intl.string(u.t.FrOFSk)
     })]
   })
 }

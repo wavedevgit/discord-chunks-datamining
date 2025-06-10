@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(399606),
   o = n(481060),
   c = n(734893),
-  u = n(150512),
-  d = n(314897),
+  d = n(150512),
+  u = n(314897),
   m = n(8426),
   g = n(969632),
   p = n(535907),
@@ -64,7 +64,7 @@ let j = function(e) {
       welcomeMessage: l,
       onSave: e => (0, m._N)(e)
     }))
-  }), [t, l]), _ = (0, a.e7)([d.default], () => d.default.getId());
+  }), [t, l]), _ = (0, a.e7)([u.default], () => u.default.getId());
   return (0, c.pw)(l) ? (0, r.jsx)(o.zxk, {
     size: o.zxk.Sizes.SMALL,
     onClick: j,
@@ -75,7 +75,7 @@ let j = function(e) {
   }) : (0, r.jsxs)(o.P3F, {
     className: h.editWelcomeSection,
     onClick: j,
-    children: [(0, r.jsx)(u.Z, {
+    children: [(0, r.jsx)(d.Z, {
       guildId: t,
       welcomeMessage: {
         authorIds: l.authorIds.length > 0 ? l.authorIds : [_],

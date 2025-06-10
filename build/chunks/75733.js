@@ -10,8 +10,8 @@ var r = n(255367),
   a = n(481060),
   o = n(596454),
   c = n(318766),
-  u = n(907040),
-  d = n(176354),
+  d = n(907040),
+  u = n(176354),
   m = n(434404),
   g = n(185923),
   p = n(388032),
@@ -47,7 +47,7 @@ function j(e) {
     handleSelectEmoji: l
   } = e, s = i.useRef(null), m = i.useMemo(() => null == t || null == t.name ? null : function() {
     var e;
-    let n = d.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
+    let n = u.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
     return (0, r.jsx)(o.Z, {
       animated: null != (e = t.animated) && e,
       emojiId: t.id,
@@ -65,7 +65,7 @@ function j(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(u.Z, {
+      return (0, r.jsx)(d.Z, {
         closePopout: t,
         onSelectEmoji: l(t),
         pickerIntention: g.Hz.GUILD_PROFILE
@@ -102,12 +102,12 @@ function _(e) {
     index: l,
     onTraitUpdate: o,
     disabled: c
-  } = e, u = i.useCallback(() => {
+  } = e, d = i.useCallback(() => {
     o(t, l, {
       emoji: void 0,
       label: ""
     })
-  }, [t, l, o]), d = i.useCallback(e => n => {
+  }, [t, l, o]), u = i.useCallback(e => n => {
     let {
       emoji: r,
       willClose: i
@@ -131,7 +131,7 @@ function _(e) {
       prefixElement: (0, r.jsx)(j, {
         emoji: b,
         disabled: c,
-        handleSelectEmoji: d
+        handleSelectEmoji: u
       }),
       className: s()(f.traitContainer, {
         [f.traitContainerFocused]: m
@@ -140,7 +140,7 @@ function _(e) {
       onFocus: p,
       onBlur: h
     }), _ && (0, r.jsx)(a.P3F, {
-      onClick: u,
+      onClick: d,
       className: f.traitRemoveButton,
       children: (0, r.jsx)(a.k$p, {
         size: "xs",
