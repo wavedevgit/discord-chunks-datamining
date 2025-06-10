@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  PC: () => h,
-  o_: () => p,
-  sO: () => _,
-  xo: () => f
+  PC: () => m,
+  o_: () => h,
+  sO: () => p,
+  xo: () => _
 }), n(388685), n(953529);
 var r = n(345074),
   i = n(339085),
@@ -55,7 +55,11 @@ function d(e) {
 }
 
 function f(e) {
-  var t, n, r, i, a;
+  return null == e || "" === e ? null : e
+}
+
+function _(e) {
+  var t, n, r, i;
   return {
     id: e.id,
     name: e.name,
@@ -64,12 +68,12 @@ function f(e) {
     customBanner: e.custom_banner_hash,
     onlineCount: e.online_count,
     memberCount: e.member_count,
-    brandColorPrimary: null != (n = e.brand_color_primary) ? n : null,
+    brandColorPrimary: f(e.brand_color_primary),
     visibility: e.visibility,
-    traits: u(e.id, null != (r = e.traits) ? r : []),
-    gameApplicationIds: null != (i = e.game_application_ids) ? i : [],
+    traits: u(e.id, null != (n = e.traits) ? n : []),
+    gameApplicationIds: null != (r = e.game_application_ids) ? r : [],
     gameActivity: d(e.game_activity),
-    features: null != (a = e.features) ? a : [],
+    features: null != (i = e.features) ? i : [],
     tag: e.tag,
     badge: e.badge,
     badgeColorPrimary: e.badge_color_primary,
@@ -80,7 +84,7 @@ function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   let t = {};
   return null != e.name && (t.name = e.name), null != e.description && (t.description = e.description), void 0 !== e.icon && (t.icon = e.icon), void 0 !== e.customBanner && (t.custom_banner = e.customBanner), null != e.visibility && (t.visibility = e.visibility), void 0 !== e.brandColorPrimary && (t.brand_color_primary = e.brandColorPrimary), null != e.traits && (t.traits = e.traits.map((e, t) => {
     var n, r, i;
@@ -94,19 +98,19 @@ function _(e) {
   }).filter(o.lm)), null != e.gameApplicationIds && (t.game_application_ids = e.gameApplicationIds), void 0 !== e.tag && (t.tag = e.tag), void 0 !== e.badge && (t.badge = e.badge), void 0 !== e.badgeColorPrimary && (t.badge_color_primary = e.badgeColorPrimary), void 0 !== e.badgeColorSecondary && (t.badge_color_secondary = e.badgeColorSecondary), t
 }
 
-function p(e) {
+function h(e) {
   return e.reduce((e, t) => (e[t.game_application_id] = {
     level: t.activity_level,
     score: t.activity_score
   }, e), {})
 }
 
-function h(e) {
+function m(e) {
   var t, n, r, i, a, o;
   let {
     guild: l,
     profile: c
-  } = e, u = null != c ? f(c) : null;
+  } = e, u = null != c ? _(c) : null;
   return null != u ? u : null == l ? null : {
     id: l.id,
     name: l.name,
