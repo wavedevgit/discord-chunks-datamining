@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: b085b38ff6d8895c
+  Original File Name: bda4904e8ba54379
 **/
 .errorBanner__3405b {
     color: var(--status-danger-text)
@@ -1047,11 +1047,11 @@
 
 .heading__4d307 {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     grid-area: heading;
     height: 50px;
-    line-height: 32px;
+    line-height: 2rem;
     padding: var(--space-xs) 0;
     text-align: center;
     z-index: var(--custom-zindex-emoji-studio-top)
@@ -1059,9 +1059,9 @@
 
 @media (min-width:485px) and (min-height:550px) {
     .heading__4d307 {
-        font-size: 20px;
+        font-size: 1.25rem;
         height: 60px;
-        line-height: 40px;
+        line-height: 2.5rem;
         padding-top: 12px
     }
 }
@@ -1404,4 +1404,4 @@
     }
 }
 
-/*# sourceMappingURL=b085b38ff6d8895c.css.map*/
+/*# sourceMappingURL=bda4904e8ba54379.css.map*/
