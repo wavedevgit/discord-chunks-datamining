@@ -1,2 +1,2 @@
 /** Chunk was on 49553 **/
-e.exports = JSON.parse('{"yfwZu7":"Mein Abzeichen anzeigen","UnPGio":"Das Abzeichen wurde deinem Profil hinzugef\xfcgt.","nvaTQk":"Du hast das Kugel-Profilabzeichen eingesammelt!"}')
+e.exports = JSON.parse('{"yfwZu7":"Mein Abzeichen anzeigen","UnPGio":"Das Abzeichen wurde deinem Profil hinzugef\xfcgt.","nvaTQk":"Du hast das Orbs-Profilabzeichen eingesammelt!"}')

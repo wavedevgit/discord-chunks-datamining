@@ -1,2 +1,2 @@
 /** Chunk was on 32813 **/
-e.exports = JSON.parse('{"yfwZu7":"Saj\xe1t jelv\xe9ny megtekint\xe9se","UnPGio":"Jelv\xe9ny sikeresen hozz\xe1adva a profilodhoz.","nvaTQk":"Megszerezted a G\xf6mb\xf6k profiljelv\xe9nyt!"}')
+e.exports = JSON.parse('{"yfwZu7":"Saj\xe1t jelv\xe9ny megtekint\xe9se","UnPGio":"Jelv\xe9ny sikeresen hozz\xe1adva a profilodhoz.","nvaTQk":"Megszerezted az Orbok profiljelv\xe9nyt!"}')

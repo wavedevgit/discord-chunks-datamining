@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: 462b19fa61a08f24
+  Original File Name: 9c90916637474825
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3325,6 +3325,8 @@
     --autocomplete-bg: #2b2e30;
     --background-accent: #40424a;
     --background-base-low: #36383d;
+    --background-base-lower: #333338;
+    --background-base-lowest: #2b2e33;
     --background-floating: #111214;
     --background-mentioned: rgba(240,179,51,.1);
     --background-mentioned-hover: rgba(240,179,51,.08);
@@ -3697,6 +3699,8 @@
     --autocomplete-bg: #fafafa;
     --background-accent: #6e7078;
     --background-base-low: #fafafa;
+    --background-base-lower: #fafafa;
+    --background-base-lowest: #f2f2f5;
     --background-floating: #fff;
     --background-mentioned: rgba(240,179,51,.1);
     --background-mentioned-hover: rgba(240,179,51,.2);
@@ -4069,6 +4073,8 @@
     --autocomplete-bg: #2b2e30;
     --background-accent: #2b2e36;
     --background-base-low: #0c0c0e;
+    --background-base-lower: #070709;
+    --background-base-lowest: #000;
     --background-floating: #131318;
     --background-mentioned: rgba(252,194,69,.08);
     --background-mentioned-hover: rgba(240,179,51,.08);
@@ -4441,6 +4447,8 @@
     --autocomplete-bg: #2b2e30;
     --background-accent: #383b42;
     --background-base-low: #212124;
+    --background-base-lower: #1a1a1f;
+    --background-base-lowest: #121214;
     --background-floating: #26262e;
     --background-mentioned: rgba(252,194,69,.08);
     --background-mentioned-hover: rgba(240,179,51,.08);
@@ -4801,4 +4809,4 @@
     --white: #fff
 }
 
-/*# sourceMappingURL=462b19fa61a08f24.css.map*/
+/*# sourceMappingURL=9c90916637474825.css.map*/

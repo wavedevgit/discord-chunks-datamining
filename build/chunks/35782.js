@@ -1636,6 +1636,14 @@ let {
         [r.LIGHT]: {
           raw: "BLACK",
           opacity: .04
+        },
+        [r.MIDNIGHT]: {
+          raw: "PLUM_11",
+          opacity: .24
+        },
+        [r.DARKER]: {
+          raw: "PLUM_11",
+          opacity: .32
         }
       }
     },

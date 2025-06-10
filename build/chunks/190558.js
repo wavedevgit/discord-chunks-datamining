@@ -241,6 +241,44 @@ let {
         opacity: 1
       }
     },
+    BACKGROUND_BASE_LOWER: {
+      category: "background",
+      [r.DARK]: {
+        raw: "NEUTRAL_69",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_2",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_97",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_86",
+        opacity: 1
+      }
+    },
+    BACKGROUND_BASE_LOWEST: {
+      category: "background",
+      [r.DARK]: {
+        raw: "NEUTRAL_73",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "NEUTRAL_4",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "NEUTRAL_100",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "NEUTRAL_92",
+        opacity: 1
+      }
+    },
     BACKGROUND_FLOATING: {
       category: "background",
       [r.DARK]: {
@@ -1528,19 +1566,19 @@ let {
     BUTTON_DANGER_BORDER: {
       category: "generic",
       [r.DARK]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 0
       },
       [r.LIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 0
       },
       [r.MIDNIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 0
       },
       [r.DARKER]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 0
       }
     },
@@ -1661,19 +1699,19 @@ let {
     BUTTON_FILLED_BRAND_BORDER: {
       category: "generic",
       [r.DARK]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 0
       },
       [r.LIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 0
       },
       [r.MIDNIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 0
       },
       [r.DARKER]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 0
       }
     },
@@ -1775,57 +1813,57 @@ let {
     BUTTON_FILLED_WHITE_BACKGROUND: {
       category: "generic",
       [r.DARK]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       }
     },
     BUTTON_FILLED_WHITE_BACKGROUND_ACTIVE: {
       category: "generic",
       [r.DARK]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       }
     },
     BUTTON_FILLED_WHITE_BACKGROUND_HOVER: {
       category: "generic",
       [r.DARK]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       }
     },
@@ -2611,19 +2649,19 @@ let {
     BUTTON_POSITIVE_BORDER: {
       category: "generic",
       [r.DARK]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 0
       },
       [r.LIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 0
       },
       [r.MIDNIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 0
       },
       [r.DARKER]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 0
       }
     },
@@ -2706,26 +2744,26 @@ let {
     BUTTON_SECONDARY_TEXT: {
       category: "text",
       [r.DARK]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: 1
       }
     },
     BUTTON_TRANSPARENT_BACKGROUND: {
       category: "generic",
       [r.DARK]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: .1
       },
       [r.LIGHT]: {
@@ -2733,18 +2771,18 @@ let {
         opacity: .01
       },
       [r.MIDNIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: .1
       },
       [r.DARKER]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: .1
       }
     },
     BUTTON_TRANSPARENT_BACKGROUND_ACTIVE: {
       category: "generic",
       [r.DARK]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: .01
       },
       [r.LIGHT]: {
@@ -2752,18 +2790,18 @@ let {
         opacity: .25
       },
       [r.MIDNIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: .01
       },
       [r.DARKER]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: .01
       }
     },
     BUTTON_TRANSPARENT_BACKGROUND_HOVER: {
       category: "generic",
       [r.DARK]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: .05
       },
       [r.LIGHT]: {
@@ -2771,11 +2809,11 @@ let {
         opacity: .2
       },
       [r.MIDNIGHT]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: .05
       },
       [r.DARKER]: {
-        raw: "WHITE_500",
+        raw: "WHITE",
         opacity: .05
       }
     },
