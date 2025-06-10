@@ -53,7 +53,7 @@ function I(e) {
   p = n, m = t
 }
 
-function S(e) {
+function T(e) {
   let {
     id: t,
     changelog: n
@@ -68,7 +68,7 @@ function S(e) {
   }, null == _[t] && (_[t] = {}), _[t][n.locale] = u.LU.LOADED_SUCCESS
 }
 
-function T(e) {
+function S(e) {
   let {
     id: t,
     locale: n
@@ -147,8 +147,8 @@ let P = new R(o.Z, {
   CHANGE_LOG_LOCK: O,
   CHANGE_LOG_UNLOCK: v,
   CHANGE_LOG_SET_CONFIG: I,
-  CHANGE_LOG_FETCH_SUCCESS: S,
-  CHANGE_LOG_FETCH_FAILED: T,
+  CHANGE_LOG_FETCH_SUCCESS: T,
+  CHANGE_LOG_FETCH_FAILED: S,
   CHANGE_LOG_SET_OVERRIDE: A,
   CHANGE_LOG_MARK_SEEN: N
 })

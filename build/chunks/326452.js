@@ -151,8 +151,8 @@ class v extends(r = a.PureComponent) {
         disabled: y,
         onChange: v,
         onBlur: I,
-        onFocus: S,
-        autoComplete: T,
+        onFocus: T,
+        autoComplete: S,
         inputProps: A,
         hideSearchIcon: N,
         "aria-label": C = f.intl.string(f.t["5h0QOD"])
@@ -170,7 +170,7 @@ class v extends(r = a.PureComponent) {
         children: (0, i.jsxs)("div", {
           className: _.inner,
           children: [(0, i.jsx)("input", g(h({}, A), {
-            onFocus: S,
+            onFocus: T,
             onBlur: I,
             className: _.input,
             value: t,
@@ -181,7 +181,7 @@ class v extends(r = a.PureComponent) {
             placeholder: o,
             disabled: y,
             autoFocus: n,
-            autoComplete: T,
+            autoComplete: S,
             "aria-label": C,
             ref: this.inputRef
           })), !N && (0, i.jsx)(O, {

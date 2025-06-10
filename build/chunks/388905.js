@@ -4,18 +4,18 @@ n.d(t, {
   DK: () => I,
   Dx: () => v,
   EJ: () => L,
-  Ee: () => S,
+  Ee: () => T,
   Hh: () => D,
   II: () => R,
   MC: () => C,
   Vj: () => N,
-  ZP: () => M,
+  ZP: () => k,
   gO: () => P,
   i_: () => w,
   jQ: () => x,
   qE: () => A,
-  v6: () => k,
-  zx: () => T
+  v6: () => M,
+  zx: () => S
 }), n(953529), n(472816), n(794429);
 var r = n(255367);
 n(73800);
@@ -100,7 +100,7 @@ let v = e => {
       children: n
     })
   },
-  S = e => {
+  T = e => {
     let {
       className: t,
       src: n
@@ -111,7 +111,7 @@ let v = e => {
       className: a()(m.image, t)
     })
   },
-  T = e => {
+  S = e => {
     var {
       className: t
     } = e, n = b(e, ["className"]);
@@ -125,7 +125,7 @@ let v = e => {
       })
     }, n))
   };
-T.Looks = o.zxk.Looks, T.Colors = o.zxk.Colors, T.Sizes = o.zxk.Sizes;
+S.Looks = o.zxk.Looks, S.Colors = o.zxk.Colors, S.Sizes = o.zxk.Sizes;
 let A = e => {
     let {
       className: t,
@@ -189,14 +189,14 @@ let R = e => {
       required: O,
       onFocus: v,
       onBlur: I
-    } = e, S = (0, u.Dt)();
+    } = e, T = (0, u.Dt)();
     return (0, r.jsxs)(o.xJW, {
       title: t,
       error: n,
       className: l,
       required: O,
       tag: "label",
-      htmlFor: S,
+      htmlFor: T,
       children: [(0, r.jsx)(o.oil, {
         name: b,
         type: f,
@@ -212,7 +212,7 @@ let R = e => {
         autoFocus: h,
         maxLength: g,
         spellCheck: E,
-        id: S,
+        id: T,
         onFocus: v,
         onBlur: I
       }), null != y ? (0, r.jsx)(o.R94, {
@@ -321,13 +321,13 @@ let R = e => {
       })]
     })
   },
-  k = e => {
+  M = e => {
     let {
       className: t
     } = e;
     return (0, r.jsxs)(P, {
       className: t,
-      children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(S, {
         onClick: () => window.open((0, f.t3)()),
         children: h.intl.format(h.t.JoS1i4, {
           platform: (0, f.DW)()
@@ -340,7 +340,7 @@ let R = e => {
       })]
     })
   },
-  M = e => {
+  k = e => {
     let {
       className: t,
       contentClassName: n,

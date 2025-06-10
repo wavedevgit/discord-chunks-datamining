@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A_: () => S,
+  A_: () => T,
   Ok: () => C,
-  U4: () => T,
+  U4: () => S,
   Ye: () => h.Z,
   ZJ: () => N,
   q: () => A
@@ -82,11 +82,11 @@ function I(e, t) {
 }
 n(388032);
 
-function S() {
+function T() {
   (0, o.yw)(g.rMx.THREAD_BROWSER_TAB_CHANGED)
 }
 
-function T() {
+function S() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Modal";
   (0, o.yw)(g.rMx.OPEN_MODAL, {
     type: "Thread Browser",
@@ -113,8 +113,8 @@ function N(e, t) {
     y = p.Z.isMuted(e.id),
     I = (0, f.sK)(p.Z.getMuteConfig(e.id)),
     {
-      can_send_message: S,
-      parent_channel_type: T
+      can_send_message: T,
+      parent_channel_type: S
     } = i,
     A = O(b({}, v(i, ["can_send_message", "parent_channel_type"])), {
       channel_id: e.id,

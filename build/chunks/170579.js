@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => T
 });
 var r = n(255367);
 n(73800);
@@ -60,7 +60,7 @@ let I = e => {
       })
     })
   },
-  S = function(e) {
+  T = function(e) {
     var t;
     let n, {
         hideCloseButton: i = !1,
@@ -68,8 +68,8 @@ let I = e => {
         shouldShowPrice: h,
         plan: g,
         renderAnimation: y,
-        onClose: S,
-        isGift: T,
+        onClose: T,
+        isGift: S,
         upgradeToPremiumType: A,
         headerTheme: N = b.nL.DEFAULT,
         className: C,
@@ -107,12 +107,12 @@ let I = e => {
           })]
         }), !i && (0, r.jsx)(s.olH, {
           hideOnFullscreen: p,
-          onClick: S,
+          onClick: T,
           className: O.closeButton
         })]
       }), h && null != g ? (0, r.jsx)("div", {
         className: O.price,
-        children: v(g, T)
+        children: v(g, S)
       }) : null]
     })
   }

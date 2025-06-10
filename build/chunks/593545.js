@@ -127,7 +127,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     expanded: t,
     setExpanded: n,
@@ -150,7 +150,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     url: t,
     fileName: n,
@@ -286,7 +286,7 @@ function C(e) {
       className: h.footer,
       variant: "text-sm/normal",
       children: [w ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(S, {
+        children: [(0, r.jsx)(T, {
           expanded: c,
           setExpanded: d,
           isWholeFile: v,
@@ -301,7 +301,7 @@ function C(e) {
         })]
       }) : null, (0, r.jsx)("div", {
         className: h.footerGap
-      }), (0, r.jsx)(T, {
+      }), (0, r.jsx)(S, {
         url: n,
         fileName: i,
         fileSize: a
@@ -347,7 +347,7 @@ function R(e) {
         variant: "text-sm/normal",
         children: [(0, r.jsx)("div", {
           className: h.footerGap
-        }), (0, r.jsx)(T, {
+        }), (0, r.jsx)(S, {
           url: t,
           fileName: n,
           fileSize: a

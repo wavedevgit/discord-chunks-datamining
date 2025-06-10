@@ -21,19 +21,19 @@ var r = n(98405),
   O = p("iterator"),
   v = "keys",
   I = "values",
-  S = "entries",
-  T = function() {
+  T = "entries",
+  S = function() {
     return this
   };
 e.exports = function(e, t, n, o, p, m, A) {
   l(n, t, o);
   var N, C, R, P = function(e) {
-      if (e === p && k) return k;
+      if (e === p && M) return M;
       if (!y && e && e in L) return L[e];
       switch (e) {
         case v:
         case I:
-        case S:
+        case T:
           return function() {
             return new n(this, e)
           }
@@ -46,15 +46,15 @@ e.exports = function(e, t, n, o, p, m, A) {
     D = !1,
     L = e.prototype,
     x = L[O] || L["@@iterator"] || p && L[p],
-    k = !y && x || P(p),
-    M = "Array" === t && L.entries || x;
-  if (M && (N = c(M.call(new e))) !== Object.prototype && N.next && (!a && c(N) !== b && (u ? u(N, b) : s(N[O]) || _(N, O, T)), d(N, w, !0, !0), a && (h[w] = T)), g && p === I && x && x.name !== I && (!a && E ? f(L, "name", I) : (D = !0, k = function() {
+    M = !y && x || P(p),
+    k = "Array" === t && L.entries || x;
+  if (k && (N = c(k.call(new e))) !== Object.prototype && N.next && (!a && c(N) !== b && (u ? u(N, b) : s(N[O]) || _(N, O, S)), d(N, w, !0, !0), a && (h[w] = S)), g && p === I && x && x.name !== I && (!a && E ? f(L, "name", I) : (D = !0, M = function() {
       return i(x, this)
     })), p)
     if (C = {
         values: P(I),
-        keys: m ? k : P(v),
-        entries: P(S)
+        keys: m ? M : P(v),
+        entries: P(T)
       }, A)
       for (R in C) !y && !D && R in L || _(L, R, C[R]);
     else r({
@@ -62,7 +62,7 @@ e.exports = function(e, t, n, o, p, m, A) {
       proto: !0,
       forced: y || D
     }, C);
-  return (!a || A) && L[O] !== k && _(L, O, k, {
+  return (!a || A) && L[O] !== M && _(L, O, M, {
     name: p
-  }), h[t] = k, C
+  }), h[t] = M, C
 }

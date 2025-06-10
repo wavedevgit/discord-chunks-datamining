@@ -4,7 +4,7 @@ n.d(t, {
   FL: () => B,
   Mq: () => j,
   NK: () => Z,
-  OP: () => S,
+  OP: () => T,
   Sw: () => Y,
   ZP: () => V,
   ge: () => H,
@@ -73,7 +73,7 @@ function I(e) {
   return e.type === g.uaV.AUTO_MODERATION_ACTION
 }
 
-function S(e) {
+function T(e) {
   var t;
   return null == (t = e.embeds) ? void 0 : t.some(e => {
     let {
@@ -83,7 +83,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   return e.type === g.hBH.AUTO_MODERATION_NOTIFICATION
 }
 
@@ -101,7 +101,7 @@ function N(e, t) {
       } = e;
       return n === t
     })) ? void 0 : r.rawValue;
-    if (T(s)) return null == s || null == (o = s.fields) || null == (a = o.find(e => {
+    if (S(s)) return null == s || null == (o = s.fields) || null == (a = o.find(e => {
       let {
         rawName: n
       } = e;
@@ -182,12 +182,12 @@ function x(e, t, n) {
   }
 }
 
-function k(e, t) {
+function M(e, t) {
   var n;
   return t ? null != (n = null == e ? void 0 : e.name) ? n : E.intl.string(E.t.J90oLS) : E.intl.string(E.t["/YzI6+"])
 }
 
-function M(e, t, n) {
+function k(e, t, n) {
   let r = N(e, s.G.VOICE_CHANNEL_STATUS_OUTCOME);
   if (null == r) return null;
   let i = "blocked" === r ? E.t.cLQrq6 : E.t.bma6cn;
@@ -213,9 +213,9 @@ function j(e, t) {
     if (null != e) return e
   }
   let m = p.Z.can(g.Plq.VIEW_CHANNEL, t),
-    b = k(t, m),
+    b = M(t, m),
     y = null != t && m ? n : g.VqG,
-    O = M(e, b, n);
+    O = k(e, b, n);
   return null != O ? O : null != h ? _ === o.y.MODAL && null != i ? f !== a.P.BLOCKED ? E.intl.format(E.t["4xL9Sk"], {
     applicationName: h,
     interactionUserHook: i,

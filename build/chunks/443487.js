@@ -93,10 +93,10 @@ function O(e) {
     participant1: b,
     participant2: O,
     numOtherParticipants: v
-  } = (0, p.Z)(i, a), I = (0, o.e7)([u.ZP], () => u.ZP.getMember(t, l)), S = (0, o.e7)([d.Z], () => {
+  } = (0, p.Z)(i, a), I = (0, o.e7)([u.ZP], () => u.ZP.getMember(t, l)), T = (0, o.e7)([d.Z], () => {
     var e;
     return (null == I ? void 0 : I.colorRoleId) != null ? null == (e = d.Z.getRole(t, I.colorRoleId)) ? void 0 : e.name : void 0
-  }, [t, I]), T = (0, c.X)(t, null == I ? void 0 : I.colorStrings);
+  }, [t, I]), S = (0, c.X)(t, null == I ? void 0 : I.colorStrings);
   if (null == g) return null;
   let A = null == I ? void 0 : I.colorString,
     N = _.ZP.getName(t, n, g);
@@ -108,8 +108,8 @@ function O(e) {
       "aria-hidden": !0
     }), (0, r.jsx)(s.PUh, {
       color: null != A ? A : void 0,
-      roleName: S,
-      roleColors: T,
+      roleName: T,
+      roleColors: S,
       name: N,
       className: m.userName,
       "aria-hidden": !0

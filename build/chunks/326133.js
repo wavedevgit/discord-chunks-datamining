@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -25,7 +25,7 @@ var r = n(255367),
   v = n(918559),
   I = n(504573);
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,14 +34,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -86,30 +86,30 @@ let P = 490,
   D = 245,
   L = 200,
   x = 120,
-  k = i.forwardRef(function(e, t) {
-    var n, a, S, A, R;
+  M = i.forwardRef(function(e, t) {
+    var n, a, T, A, R;
     let {
-      channel: k,
-      type: M,
+      channel: M,
+      type: k,
       editorHeight: j,
       onVisibilityChange: U
     } = e, G = (0, h.Dt)(), B = (0, l.e7)([E.Z], () => {
       var e;
-      return null != (e = E.Z.getGuild(k.guild_id)) ? e : null
-    }, [k.guild_id]), F = i.useRef(null), [V, Z, H] = (0, O.Z)(N(T({}, e), {
+      return null != (e = E.Z.getGuild(M.guild_id)) ? e : null
+    }, [M.guild_id]), F = i.useRef(null), [V, Z, H] = (0, O.Z)(N(S({}, e), {
       guild: B
-    }), t, F), Y = (null == (n = M.autocomplete) ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, W = (0, _.DJ)(V.selectedIndex);
+    }), t, F), Y = (null == (n = k.autocomplete) ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, W = (0, _.DJ)(V.selectedIndex);
     (0, p.KR)(G, V.isVisible, W);
     let K = (0, y.Z)({
         editorHeight: j,
-        type: M,
+        type: k,
         state: V
       }),
       z = (0, l.e7)([d.ZP], () => {
-        let e = d.ZP.getSelfEmbeddedActivityForChannel(k.id),
+        let e = d.ZP.getSelfEmbeddedActivityForChannel(M.id),
           t = d.ZP.getActivityPanelMode();
-        return (0, u.l5)(k) && null != e && (0, f.p)(e.location) === k.id && t === v.Ez.PANEL
-      }, [k]),
+        return (0, u.l5)(M) && null != e && (0, f.p)(e.location) === M.id && t === v.Ez.PANEL
+      }, [M]),
       q = i.useMemo(() => (null == K ? void 0 : K.top) == null && (null == K ? void 0 : K.left) == null && (null == K ? void 0 : K.bottom) == null && (null == K ? void 0 : K.right) == null ? "" : String(Date.now()), [null == K ? void 0 : K.top, null == K ? void 0 : K.left, null == K ? void 0 : K.bottom, null == K ? void 0 : K.right]);
     if (i.useEffect(() => {
         U(V.isVisible)
@@ -117,7 +117,7 @@ let P = 490,
     let X = null != (a = V.query.typeInfo.renderResults({
       results: V.query.results,
       selectedIndex: V.selectedIndex,
-      channel: k,
+      channel: M,
       guild: B,
       query: V.query.queryText,
       options: V.query.options,
@@ -132,7 +132,7 @@ let P = 490,
         [I.autocompleteTop]: z
       },
       J = P;
-    null != K && (J = (null == (S = M.autocomplete) ? void 0 : S.small) ? L : (null == (A = V.query) ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
+    null != K && (J = (null == (T = k.autocomplete) ? void 0 : T.small) ? L : (null == (A = V.query) ? void 0 : A.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
     let $ = Math.min(.5 * window.innerHeight, j);
     J = Math.min(window.innerHeight - x - $, J);
     let ee = (0, r.jsx)(_.ZP, {
@@ -147,7 +147,7 @@ let P = 490,
             var {
               ref: t
             } = e, n = C(e, ["ref"]);
-            return (0, r.jsx)(c.h21, N(T({
+            return (0, r.jsx)(c.h21, N(S({
               id: G,
               ref: e => {
                 var n;

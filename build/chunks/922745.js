@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T,
-  r: () => S
+  Z: () => S,
+  r: () => T
 });
 var r = n(255367);
 n(73800);
@@ -63,7 +63,7 @@ function I(e, t) {
   return i
 }
 
-function S(e) {
+function T(e) {
   let {
     title: t,
     onJumpToChannel: n,
@@ -103,7 +103,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   var {
     children: t,
     idle: n,
@@ -119,7 +119,7 @@ function T(e) {
     className: E,
     innerClassName: y,
     videoControlsClassName: I
-  } = e, T = v(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName", "videoControlsClassName"]);
+  } = e, S = v(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName", "videoControlsClassName"]);
   return (0, r.jsxs)("div", {
     onMouseMove: c,
     onMouseDown: c,
@@ -139,11 +139,11 @@ function T(e) {
       className: a()(b.videoControls, I, "theme-dark"),
       children: [(0, r.jsx)("div", {
         className: b.topControls,
-        children: (0, r.jsx)(S, O({
+        children: (0, r.jsx)(T, O({
           idle: n,
           onJumpToChannel: i,
           onHide: o
-        }, T))
+        }, S))
       }), (0, r.jsxs)("div", {
         className: b.bottomControls,
         children: [(0, r.jsx)(u.Z, {

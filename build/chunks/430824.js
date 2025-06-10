@@ -74,7 +74,7 @@ function I(e) {
       } n && (v = e.geoRestrictedGuilds)
 }
 
-function S(e) {
+function T(e) {
   for (let n of e.guilds) {
     var t;
     let e = y[n.id];
@@ -84,17 +84,17 @@ function S(e) {
   r = Object.keys(y).length
 }
 
-function T(e) {
+function S(e) {
   for (let t of (y = {}, b = {}, r = 0, e)) r++, y[t.id] = c.cL(t), b[t.id] = t.roles
 }
 
 function A(e) {
-  T(e.guilds)
+  S(e.guilds)
 }
 
 function N(e) {
   if (0 === e.guilds.length) return !1;
-  T(e.guilds)
+  S(e.guilds)
 }
 
 function C(e) {
@@ -160,7 +160,7 @@ function x(e) {
   r = m({}, r), delete r[n], b[t] = r
 }
 
-function k(e) {
+function M(e) {
   let {
     guildId: t,
     joinedAt: n,
@@ -174,7 +174,7 @@ function k(e) {
   })
 }
 
-function M() {
+function k() {
   return !0
 }
 let j = Object.freeze({});
@@ -211,7 +211,7 @@ class U extends(i = a.ZP.Store) {
 }
 h(U, "displayName", "GuildStore");
 let G = new U(s.Z, {
-  BACKGROUND_SYNC: S,
+  BACKGROUND_SYNC: T,
   CONNECTION_OPEN: I,
   OVERLAY_INITIALIZE: C,
   CACHE_LOADED: A,
@@ -222,7 +222,7 @@ let G = new U(s.Z, {
   GUILD_ROLE_CREATE: L,
   GUILD_ROLE_UPDATE: L,
   GUILD_ROLE_DELETE: x,
-  GUILD_MEMBER_ADD: k,
-  GUILD_SETTINGS_SUBMIT_SUCCESS: M,
+  GUILD_MEMBER_ADD: M,
+  GUILD_SETTINGS_SUBMIT_SUCCESS: k,
   GUILD_GEO_RESTRICTED: w
 })

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => S
 }), n(35282), n(388685);
 var r = n(46973),
   i = n(570140),
@@ -25,7 +25,7 @@ var r = n(46973),
   v = n(981631),
   I = n(70722);
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,7 +33,7 @@ function S(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class T extends a.Z {
+class S extends a.Z {
   handleRTCConnectionState(e) {
     let {
       context: t,
@@ -199,7 +199,7 @@ class T extends a.Z {
   }
   disableClips() {}
   constructor(...e) {
-    super(...e), S(this, "actions", {
+    super(...e), T(this, "actions", {
       POST_CONNECTION_OPEN: e => this.handlePostConnectionOpen(),
       RTC_CONNECTION_FLAGS: e => this.handleRTCConnectionFlags(e),
       RTC_CONNECTION_USER_CREATE: e => this.handleRTCUserCreate(e),

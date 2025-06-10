@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(35282);
 var r = n(255367),
   i = n(73800),
@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(287954),
   v = n(660579),
   I = n(652853),
-  S = n(64621),
-  T = n(448980),
+  T = n(64621),
+  S = n(448980),
   A = n(336383),
   N = n(194811),
   C = n(373826),
@@ -44,7 +44,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,13 +57,13 @@ function k(e) {
   return e
 }
 
-function M(e) {
+function k(e) {
   var t;
   let {
     user: n,
     currentUser: a,
     activity: x,
-    profileGuildId: M,
+    profileGuildId: k,
     className: j,
     onClose: U
   } = e, G = (0, p.Dt)(), B = (0, p.Dt)(), F = i.useRef(null), {
@@ -137,13 +137,13 @@ function M(e) {
     en = Z === D.n_.ACTIVITY && H === et;
   return (0, r.jsx)(u.Gt, {
     value: q,
-    children: (0, r.jsx)(S.Z, {
+    children: (0, r.jsx)(T.Z, {
       targetElementRef: F,
       sourceType: D.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(O.Z, {
         user: n,
-        guildId: M,
+        guildId: k,
         themeType: V,
         sourceId: et,
         sourceDetails: null == Y ? (0, b.Z)(x) : null,
@@ -176,7 +176,7 @@ function M(e) {
             onAction: X,
             onClose: U,
             "aria-labelledby": K ? "".concat(B, " ").concat(G) : G,
-            children: [(0, r.jsx)(N.Z, k({
+            children: [(0, r.jsx)(N.Z, M({
               textId: B
             }, W)), (0, r.jsx)("div", {
               className: L.body,
@@ -204,7 +204,7 @@ function M(e) {
                       },
                       id: G
                     }), J()]
-                  }), (0, r.jsx)(T.Z, {
+                  }), (0, r.jsx)(S.Z, {
                     user: n,
                     activity: x,
                     className: L.badges

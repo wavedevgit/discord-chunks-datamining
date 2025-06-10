@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B6: () => S,
+  B6: () => T,
   ZP: () => I,
-  qc: () => T,
+  qc: () => S,
   sp: () => v
 }), n(388685), n(704826), n(35282), n(539854);
 var r = n(738774),
@@ -147,11 +147,11 @@ let I = {
   isFileTooBig: e => e.size > h,
   isDataTooBig: e => (0, d.QB)(e) > p.h_
 };
-async function S(e) {
+async function T(e) {
   return await u.Z.getEmojiColors(e)
 }
 
-function T(e) {
+function S(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 32,
     {
       id: n,

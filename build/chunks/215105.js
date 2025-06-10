@@ -24,11 +24,11 @@ var r = n(255367),
   O = n(420212),
   v = n(388032),
   I = n(42328);
-let S = (0, f.kt)({
+let T = (0, f.kt)({
     id: "1",
     type: s.d.DM
   }),
-  T = e => {
+  S = e => {
     let {
       input: t,
       username: n,
@@ -87,7 +87,7 @@ function N(e) {
     setInteractionToast: w
   } = (0, g.Xo)(), {
     primaryColor: D
-  } = (0, b.z)(), [L, x] = i.useState(""), [k, M] = i.useState((0, u.JM)(L)), j = i.useRef(!1), U = i.useRef(null), G = i.useCallback(e => {
+  } = (0, b.z)(), [L, x] = i.useState(""), [M, k] = i.useState((0, u.JM)(L)), j = i.useRef(!1), U = i.useRef(null), G = i.useCallback(e => {
     e.key === O.vn.ESCAPE && (e.stopPropagation(), P())
   }, [P]);
   i.useEffect(() => {
@@ -102,7 +102,7 @@ function N(e) {
     }) : N({
       action: "SEND_REPLY_ACTIVITY"
     });
-    let n = T({
+    let n = S({
       input: e,
       username: h.ZP.getName(t),
       sourceType: s,
@@ -142,11 +142,11 @@ function N(e) {
         placeholder: v.intl.formatToPlainString(A(s), {
           username: p.ZP.getName(n, a, t)
         }),
-        channel: S,
+        channel: T,
         textValue: L,
-        richValue: k,
+        richValue: M,
         onChange: (e, t, n) => {
-          t !== L && (x(t), M(n))
+          t !== L && (x(t), k(n))
         },
         focused: j.current,
         onFocus: () => {

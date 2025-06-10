@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(444282),
   v = n(898463),
   I = n(981631),
-  S = n(650514),
-  T = n(283574);
+  T = n(650514),
+  S = n(283574);
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -106,13 +106,13 @@ function L(e) {
       commandOptions: e.options,
       commandOptionStates: n
     }
-  }), k = i.useMemo(() => {
+  }), M = i.useMemo(() => {
     var e;
     return null != (e = null == L ? void 0 : L.filter(e => {
       var t;
       return e.type === f.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? void 0 : t.hasValue)
     })) ? e : []
-  }, [L, x]), [M, j] = i.useState([]);
+  }, [L, x]), [k, j] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
@@ -128,8 +128,8 @@ function L(e) {
   });
   let G = {
       isApplicationCommand: w,
-      previousUploadOptions: M,
-      uploadOptions: k
+      previousUploadOptions: k,
+      uploadOptions: M
     },
     B = i.useRef(G);
   i.useEffect(() => {
@@ -148,9 +148,9 @@ function L(e) {
         d.Z.remove(t, e.name, n.drafts.type)
       }), j(i)
     }
-  }, [t, k.length, n]);
+  }, [t, M.length, n]);
   let F = (0, m.Q3)("ChannelAttachmentArea");
-  return !w && 0 === C.length || w && 0 === k.length ? null : (0, r.jsxs)(i.Fragment, {
+  return !w && 0 === C.length || w && 0 === M.length ? null : (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(s.bG, {
       navigator: A,
       children: (0, r.jsx)(s.SJ, {
@@ -161,8 +161,8 @@ function L(e) {
           return (0, r.jsx)("ul", R(N({
             ref: i
           }, s), {
-            className: o()(S.channelAttachmentArea, T.scrollbarGhost),
-            children: w ? k.map(e => (0, r.jsx)(O.Z, {
+            className: o()(T.channelAttachmentArea, S.scrollbarGhost),
+            children: w ? M.map(e => (0, r.jsx)(O.Z, {
               channelId: t,
               keyboardModeEnabled: a,
               option: e
@@ -191,4 +191,4 @@ function x(e) {
     type: n
   }) : null
 }
-let k = i.memo(x)
+let M = i.memo(x)

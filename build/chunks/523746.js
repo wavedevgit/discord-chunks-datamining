@@ -90,14 +90,14 @@ function I() {
   return b(!0)
 }
 
-function S(e) {
+function T(e) {
   let {
     channelId: t
   } = e;
   return b(!1, t)
 }
 
-function T(e) {
+function S(e) {
   let {
     channel: t
   } = e;
@@ -214,8 +214,8 @@ let D = new w(l.Z, {
   CONNECTION_CLOSED: v,
   OVERLAY_INITIALIZE: O,
   CONNECTION_RESUMED: I,
-  CHANNEL_SELECT: S,
-  CHANNEL_DELETE: T,
+  CHANNEL_SELECT: T,
+  CHANNEL_DELETE: S,
   CALL_CREATE: A,
   CALL_UPDATE: C,
   CALL_DELETE: R,

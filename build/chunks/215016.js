@@ -27,7 +27,7 @@ var r = n(255367),
   v = n(388032),
   I = n(171341);
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,14 +36,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -71,7 +71,7 @@ function w(e, t) {
 function D(e, t, n, i) {
   if (!(e > 0)) return null == R[t] ? null : (0, r.jsx)("div", {
     className: I.placeholder,
-    style: T({
+    style: S({
       animationDelay: "".concat(75 * t, "ms")
     }, n)
   }, i)
@@ -86,13 +86,13 @@ function x(e) {
   return e === u.EO.VIDEO
 }
 
-function k(e) {
+function M(e) {
   return ((0, g._M)(e) || (0, g.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
-function M(e) {
+function k(e) {
   let t = b.Z.toURLSafe(e);
-  return null != t && k(t) ? (t.searchParams.set("animated", "true"), t.toString()) : e
+  return null != t && M(t) ? (t.searchParams.set("animated", "true"), t.toString()) : e
 }
 class j extends i.PureComponent {
   componentDidMount() {
@@ -141,7 +141,7 @@ class j extends i.PureComponent {
       loaded: i
     } = this.state;
     return i ? (0, r.jsx)("img", {
-      src: M(e),
+      src: k(e),
       width: t,
       height: n,
       className: I.gif,
@@ -167,18 +167,18 @@ class j extends i.PureComponent {
       className: I.result,
       "data-focused": a,
       onClick: this.handleClick,
-      style: T({
+      style: S({
         backgroundColor: s ? void 0 : o
       }, i),
       children: [x(n) ? null : this.renderGIF(), null != t ? t(e) : null]
     })
   }
   constructor(e) {
-    super(e), S(this, "ref", null), S(this, "_video", null), S(this, "_image", null), S(this, "_mounted", !0), S(this, "handleCanPlay", () => {
+    super(e), T(this, "ref", null), T(this, "_video", null), T(this, "_image", null), T(this, "_mounted", !0), T(this, "handleCanPlay", () => {
       this._mounted && this.setState({
         loaded: !0
       })
-    }), S(this, "handleClick", () => {
+    }), T(this, "handleClick", () => {
       let {
         onClick: e,
         item: t,
@@ -290,9 +290,9 @@ class U extends i.PureComponent {
     }, t)
   }
   constructor(...e) {
-    super(...e), S(this, "_masonryRef", i.createRef()), S(this, "prevResultQuery", null), S(this, "state", {
+    super(...e), T(this, "_masonryRef", i.createRef()), T(this, "prevResultQuery", null), T(this, "state", {
       focusedId: null
-    }), S(this, "handleFocus", e => {
+    }), T(this, "handleFocus", e => {
       let {
         current: t
       } = this._masonryRef;
@@ -304,14 +304,14 @@ class U extends i.PureComponent {
       }), this.setState({
         focusedId: e
       }))
-    }), S(this, "handleSelect", e => {
+    }), T(this, "handleSelect", e => {
       let t, {
           data: n
         } = this.props,
         r = n.findIndex(t => P(t) === e); - 1 !== r && (t = n[r]), null != t && this.selectItem(t, r)
-    }), S(this, "handleClickItem", (e, t) => {
+    }), T(this, "handleClickItem", (e, t) => {
       this.selectItem(e, t)
-    }), S(this, "handleScroll", () => {
+    }), T(this, "handleScroll", () => {
       let {
         resultQuery: e
       } = this.props, {
@@ -323,7 +323,7 @@ class U extends i.PureComponent {
         scrollHeight: r
       } = t.getScrollerState();
       r - n <= C && (e !== this.prevResultQuery && (0, _.mO)(e), this.prevResultQuery = e)
-    }), S(this, "renderItem", (e, t, n, i) => {
+    }), T(this, "renderItem", (e, t, n, i) => {
       if (e > 0) return null;
       let {
         focusedId: a
@@ -335,23 +335,23 @@ class U extends i.PureComponent {
         src: o.src,
         coords: n,
         onClick: this.handleClickItem,
-        renderExtras: () => (0, r.jsx)(E.Z, T({
+        renderExtras: () => (0, r.jsx)(E.Z, S({
           className: I.favButton
         }, o)),
         focused: P(o) === a,
         imagePool: this.props.imagePool,
         videoPool: this.props.videoPool
       }, i)
-    }), S(this, "getItemHeight", (e, t, n) => {
+    }), T(this, "getItemHeight", (e, t, n) => {
       if (e > 0) return 0;
       let r = this.props.data[t];
       return null == r ? 0 : n * (r.height / r.width)
-    }), S(this, "getItemKey", (e, t) => {
+    }), T(this, "getItemKey", (e, t) => {
       var n;
       if (e > 0) return null;
       let r = this.props.data[t];
       return null != r ? null != (n = r.id) ? n : r.src : null
-    }), S(this, "renderSection", (e, t, n) => {
+    }), T(this, "renderSection", (e, t, n) => {
       let {
         onSelectSuggestion: a,
         suggestions: o
@@ -378,7 +378,7 @@ class U extends i.PureComponent {
           })]
         }) : null
       }, n) : null
-    }), S(this, "renderContent", (e, t, n) => {
+    }), T(this, "renderContent", (e, t, n) => {
       let {
         className: i,
         data: a,
@@ -411,12 +411,12 @@ class U extends i.PureComponent {
         onScroll: this.handleScroll,
         chunkSize: 128
       }, "".concat(s, "-").concat(null != c ? c : ""))
-    }), S(this, "getItemGrid", () => {
+    }), T(this, "getItemGrid", () => {
       let {
         current: e
       } = this._masonryRef;
       return null != e ? e.getItemGrid() : []
-    }), S(this, "getCoordsMap", () => {
+    }), T(this, "getCoordsMap", () => {
       let {
         current: e
       } = this._masonryRef;
@@ -447,5 +447,5 @@ function G() {
 }
 let B = function(e) {
   let t = G();
-  return (0, r.jsx)(U, T({}, e, t))
+  return (0, r.jsx)(U, S({}, e, t))
 }

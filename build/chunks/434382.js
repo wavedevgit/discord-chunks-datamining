@@ -51,20 +51,20 @@ function I() {
   for (let e in E) clearTimeout(E.get(e)), E.delete(e)
 }
 
-function S() {
+function T() {
   var e;
   I();
   let t = l.Z.getGuildId();
   if (null == t || !v(t, p)) return;
   let n = d.Z.getLeaderboardResponse(t, p),
-    r = setTimeout(() => T({
+    r = setTimeout(() => S({
       guildId: t,
       leaderboardId: p
     }), Math.max(0, (null != (e = null == n ? void 0 : n.expires_at) ? e : Date.now()) - Date.now())),
     i = O(t, p);
   E.set(i, r)
 }
-async function T(e) {
+async function S(e) {
   let {
     guildId: t,
     leaderboardId: n,
@@ -98,13 +98,13 @@ async function T(e) {
       type: "SET_GUILD_LEADERBOARD",
       leaderboardResponse: e,
       intervalOffset: 0
-    }), y.delete(a), b.delete(a), S()
+    }), y.delete(a), b.delete(a), T()
   } catch (i) {
     var o;
     let e = (null != (o = y.get(a)) ? o : 0) + 1;
     if (y.set(a, e), !v(t, n)) return;
     let r = 1e3 * Math.pow(m, e);
-    E.set(a, setTimeout(() => T({
+    E.set(a, setTimeout(() => S({
       guildId: t,
       leaderboardId: n,
       force: !0
@@ -113,7 +113,7 @@ async function T(e) {
 }
 
 function A() {
-  S()
+  T()
 }
 
 function N() {
@@ -121,7 +121,7 @@ function N() {
 }
 class C extends a.Z {
   fetchLeaderboard(e) {
-    return T(e)
+    return S(e)
   }
   constructor(...e) {
     super(...e), _(this, "actions", {

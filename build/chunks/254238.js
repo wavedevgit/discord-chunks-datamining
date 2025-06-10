@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   LO: () => C,
-  On: () => T,
+  On: () => S,
   Vv: () => I,
-  _: () => S,
+  _: () => T,
   bp: () => R,
   ef: () => v,
   s6: () => O,
@@ -96,7 +96,7 @@ function I(e, t) {
   }), y("VOICE_STATE_UPDATE", e)
 }
 
-function S(e) {
+function T(e) {
   o.Z.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
@@ -106,7 +106,7 @@ function S(e) {
   }), y("DISCONNECT", e), O()
 }
 
-function T(e, t, n, r) {
+function S(e, t, n, r) {
   let i = (0, l.z)(n);
   null != i && (o.Z.dispatch({
     type: "REMOTE_COMMAND",

@@ -24,9 +24,9 @@ var r = n(255367),
   O = n(981631),
   v = n(474936),
   I = n(388032),
-  S = n(412439);
+  T = n(412439);
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -42,7 +42,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -87,15 +87,15 @@ let w = e => {
     analyticsLocation: t,
     analyticsSourceLocation: n,
     guild: a,
-    buttonText: T,
+    buttonText: S,
     targetBoostedGuildTier: N,
     onClose: P = () => {},
     closeLayer: w = () => {},
     pauseAnimation: D = !1,
     applicationId: L,
     handleSubscribeModalClose: x,
-    withHighlight: k = !1,
-    icon: M,
+    withHighlight: M = !1,
+    icon: k,
     intent: j
   } = e, U = R(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
     analyticsLocations: G
@@ -125,14 +125,14 @@ let w = e => {
         intent: j
       }), V(!1)
     }, Q = E.ZP.getPremiumTypeSubscription(), J = (0, r.jsxs)("div", {
-      className: S.button,
-      children: [M, null != T ? T : I.intl.string(I.t.gKmQ1N)]
+      className: T.button,
+      children: [k, null != S ? S : I.intl.string(I.t.gKmQ1N)]
     }), $ = (0, h.o)("GuildBoostingSubscribeButton", Z, H), ee = !1;
   return ((ee = null !== Q && !(K.length > 0) && (null == Q ? void 0 : Q.isPausedOrPausePending) && (H === v.a$.NONE || $)) && (J = (0, r.jsxs)("div", {
-    className: S.button,
+    className: T.button,
     children: [(0, r.jsx)(l.mBM, {
       size: "xs",
-      className: S.buttonIcon
+      className: T.buttonIcon
     }), " ", J]
   }), U.disabled = !0), null != q) ? (0, r.jsx)(_.Z, {
     text: q,
@@ -148,7 +148,7 @@ let w = e => {
     size: l.zxk.Sizes.SMALL
   }, U), {
     className: o()(U.className, {
-      [S.buttonHighlighted]: k
+      [T.buttonHighlighted]: M
     }),
     submitting: F,
     onClick: X,

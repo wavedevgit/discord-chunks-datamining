@@ -68,15 +68,15 @@ function O(e) {
     events: v,
     play: I
   } = (0, a.$)(), {
-    enabled: S
+    enabled: T
   } = d.G.useExperiment({
     location: "gift-button"
   }, {
     autoTrackExposure: !1
-  }), T = (0, c.Q3)("ChannelPremiumGiftButton"), A = i.type === p.d4z.DM;
+  }), S = (0, c.Q3)("ChannelPremiumGiftButton"), A = i.type === p.d4z.DM;
   if (t) return null;
   let N = () => {
-    S && A && null != b ? (0, o.ZDy)(async () => {
+    T && A && null != b ? (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59207").then(n.bind(n, 435626));
@@ -115,7 +115,7 @@ function O(e) {
       }
     }), v), {
       children: (0, r.jsx)(O, {
-        size: T ? "refresh_sm" : void 0,
+        size: S ? "refresh_sm" : void 0,
         color: "currentColor"
       })
     }))

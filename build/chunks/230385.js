@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => S
 }), n(388685);
 var r = n(704215),
   i = n(283693),
@@ -59,7 +59,7 @@ function v(e, t) {
   }), e
 }
 let I = new o.Z("VoiceFilterManager");
-class S extends a.Z {
+class T extends a.Z {
   handleVoiceFilterRequestSwitch(e) {
     let {
       newVoiceFilterId: t,
@@ -212,4 +212,4 @@ class S extends a.Z {
     })
   }
 }
-let T = new S
+let S = new T

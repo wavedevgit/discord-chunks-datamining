@@ -4,8 +4,8 @@ n.d(t, {
   DM: () => E,
   Ey: () => b,
   No: () => v,
-  Ry: () => S,
-  qX: () => T,
+  Ry: () => T,
+  qX: () => S,
   u3: () => I
 });
 var r = n(255367);
@@ -146,7 +146,7 @@ function I(e) {
   }))
 }
 
-function S(e) {
+function T(e) {
   let {
     onClick: t,
     noticeType: n
@@ -168,7 +168,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     color: t = E.DEFAULT,
     className: n,

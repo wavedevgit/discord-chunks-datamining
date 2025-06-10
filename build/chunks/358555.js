@@ -56,13 +56,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -119,7 +119,7 @@ function N(e) {
       text: I,
       position: "bottom",
       "aria-label": null != O ? O : "",
-      children: e => (0, r.jsx)(s.P3F, S(v({}, e), {
+      children: e => (0, r.jsx)(s.P3F, T(v({}, e), {
         className: y.__invalid_premiumGuildIcon,
         onClick: p,
         children: (0, r.jsx)(_.Z, {
@@ -177,7 +177,7 @@ function R(e) {
   var {
     guild: t,
     disableBoostClick: n
-  } = e, i = T(e, ["guild", "disableBoostClick"]);
+  } = e, i = S(e, ["guild", "disableBoostClick"]);
   let a = !(0, l.Q3)("GuildHeaderGuildBadge") && i.isBannerVisible;
   return (0, c.Z)(t) ? (0, r.jsx)(C, {
     guild: t,

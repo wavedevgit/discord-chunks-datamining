@@ -6,8 +6,8 @@ n.d(t, {
   Gy: () => N,
   R5: () => A,
   T: () => E,
-  Us: () => S,
-  Zl: () => T,
+  Us: () => T,
+  Zl: () => S,
   vu: () => I
 });
 var r = n(255367);
@@ -123,7 +123,7 @@ function I(e, t) {
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t
@@ -136,7 +136,7 @@ function S(e, t) {
   })
 }
 
-function T(e) {
+function S(e) {
   let t = o.default.getId(),
     n = (0, u.Z7)(e),
     r = (0, u.wK)(e);

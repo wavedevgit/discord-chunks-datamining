@@ -31,8 +31,8 @@ let g = "33kozedd0zs6fbauka98psnc7zwom2s",
   O = "https://api.twitch.tv/helix",
   v = /live_user_(.*)-\{width\}/,
   I = 128,
-  S = null,
-  T = 0,
+  T = null,
+  S = 0,
   A = null,
   N = new Set,
   C = {};
@@ -71,7 +71,7 @@ class D {
     this._started || (this._started = !0, _.Z.isFetching() ? c.Z.fetch() : this._check())
   }
   stop() {
-    this._started = !1, A = null, T = 0, null != this._nextCheck && clearTimeout(this._nextCheck), l.Z.dispatch({
+    this._started = !1, A = null, S = 0, null != this._nextCheck && clearTimeout(this._nextCheck), l.Z.dispatch({
       type: "STREAMING_UPDATE",
       stream: null
     })
@@ -162,7 +162,7 @@ class D {
     null != this._nextCheck && clearTimeout(this._nextCheck);
     let t = [h.ABu.TWITCH],
       n = Date.now();
-    T <= n && (t.push(h.ABu.YOUTUBE), T = n + y), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
+    S <= n && (t.push(h.ABu.YOUTUBE), S = n + y), Promise.allSettled(e.filter(e => t.includes(e.type)).map(e => e.type === h.ABu.TWITCH ? this._checkTwitch(e) : this._checkYouTube(e))).then(e => {
       if (this._started) {
         var t;
         let n = null == (t = e.find(e => "fulfilled" === e.status && null != e.value)) ? void 0 : t.value;
@@ -187,21 +187,21 @@ function x() {
   p.Z.enabled ? L.start() : L.stop()
 }
 
-function k(e) {
+function M(e) {
   var t;
-  if (a()(e.stream, S)) return !1;
-  S = null != (t = e.stream) ? t : null
+  if (a()(e.stream, T)) return !1;
+  T = null != (t = e.stream) ? t : null
 }
-class M extends(r = o.ZP.Store) {
+class k extends(r = o.ZP.Store) {
   initialize() {
     x(), this.waitFor(_.Z), this.syncWith([p.Z], x)
   }
   getStream() {
-    return S
+    return T
   }
 }
-m(M, "displayName", "ExternalStreamingStore");
-let j = new M(l.Z, {
-  STREAMING_UPDATE: k,
+m(k, "displayName", "ExternalStreamingStore");
+let j = new k(l.Z, {
+  STREAMING_UPDATE: M,
   USER_CONNECTIONS_UPDATE: () => L._check()
 })

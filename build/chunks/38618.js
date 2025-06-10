@@ -23,8 +23,8 @@ var r, i = n(392711),
   O = n(358085),
   v = n(138859),
   I = n(955132),
-  S = n(645436),
-  T = n(344651),
+  T = n(645436),
+  S = n(344651),
   A = n(981631),
   N = n(526761);
 
@@ -37,15 +37,15 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 let R = window.DiscordNative;
-I.Wb.dispatcher.getDispatchHandler = T.Z;
+I.Wb.dispatcher.getDispatchHandler = S.Z;
 let P = new c.Z("ConnectionStore"),
   w = 100,
   D = 0,
   L = null,
   x = !0,
-  k = null;
+  M = null;
 
-function M() {
+function k() {
   return I.Wb.isClosed() ? (P.verbose("Socket is reconnecting because of starting new session"), I.Wb.connect()) : (P.verbose("Socket is not reconnecting during a new session because it is not closed"), !1)
 }
 
@@ -88,7 +88,7 @@ function V(e) {
   return I.GC.update({
     guildId: e.guildId,
     channelId: e.channelId
-  }), (0, O.isIOS)() && k === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(!0) : I.Wb.isClosed() && (S.Y(!1), I.Wb.connect())), !1
+  }), (0, O.isIOS)() && M === A.$7l.BACKGROUND && (null == e.channelId ? I.Wb.close(!0) : I.Wb.isClosed() && (T.Y(!1), I.Wb.connect())), !1
 }
 
 function Z() {
@@ -154,7 +154,7 @@ function q(e) {
 }
 
 function X(e) {
-  return (0, O.isIOS)() ? (f.default.isAuthenticated() && (k === A.$7l.INACTIVE && e.state === A.$7l.BACKGROUND && null == I.GC.channelId ? I.Wb.close(!0) : k === A.$7l.BACKGROUND && e.state === A.$7l.ACTIVE && I.Wb.isClosed() && (S.Y(!1), I.Wb.connect())), k = e.state) : e.state === A.$7l.ACTIVE && (S.Y(!1), f.default.isAuthenticated() && I.Wb.resetBackoff("App state is active")), !1
+  return (0, O.isIOS)() ? (f.default.isAuthenticated() && (M === A.$7l.INACTIVE && e.state === A.$7l.BACKGROUND && null == I.GC.channelId ? I.Wb.close(!0) : M === A.$7l.BACKGROUND && e.state === A.$7l.ACTIVE && I.Wb.isClosed() && (T.Y(!1), I.Wb.connect())), M = e.state) : e.state === A.$7l.ACTIVE && (T.Y(!1), f.default.isAuthenticated() && I.Wb.resetBackoff("App state is active")), !1
 }
 
 function Q() {
@@ -316,7 +316,7 @@ class em extends(r = o.ZP.Store) {
 }
 C(em, "displayName", "GatewayConnectionStore");
 let eg = new em(s.Z, {
-  START_SESSION: M,
+  START_SESSION: k,
   LOGIN_SUCCESS: U,
   LOGOUT: j,
   CLEAR_CACHES: F,

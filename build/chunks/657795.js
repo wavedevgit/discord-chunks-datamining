@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => S
 });
 var r = n(255367),
   i = n(73800),
@@ -24,12 +24,12 @@ var r = n(255367),
   O = n(474936),
   v = n(388032),
   I = n(962749);
-let S = 80;
+let T = 80;
 
-function T(e) {
+function S(e) {
   var t, n, a;
   let {
-    className: T,
+    className: S,
     onClose: A
   } = e;
   (0, h.fP)();
@@ -50,7 +50,7 @@ function T(e) {
     w = null != R || null != P,
     D = (null == R || null == (t = R.subscription_trial) ? void 0 : t.sku_id) === O.Si.TIER_0;
   return (0, r.jsxs)("div", {
-    className: o()(I.emptyState, T, {
+    className: o()(I.emptyState, S, {
       [I.unifyTrialUpsell]: w
     }),
     children: [w ? (0, r.jsx)(_.ZP, {
@@ -75,7 +75,7 @@ function T(e) {
         children: C.filter(e => null != e).map(e => (0, r.jsx)(g.Z, {
           sticker: e,
           className: I.sticker,
-          size: S
+          size: T
         }, null == e ? void 0 : e.id))
       })]
     }), !w && (0, r.jsx)(E.Z, {

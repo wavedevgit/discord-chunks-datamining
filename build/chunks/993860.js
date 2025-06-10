@@ -46,7 +46,7 @@ function E(e, t) {
       validInviteKey: t,
       isBypassInvite: (0, _.yE)(null != (e = r.flags) ? e : 0, i.$.IS_APPLICATION_BYPASS)
     }
-  }), I = (0, s.Z)(), S = r.useMemo(() => {
+  }), I = (0, s.Z)(), T = r.useMemo(() => {
     if (y) {
       let r = null == b ? void 0 : b.primaryGuild,
         i = (null == r ? void 0 : r.identityGuildId) === n && (null == r ? void 0 : r.identityEnabled) === !0;
@@ -56,7 +56,7 @@ function E(e, t) {
   }, [y, I, n, m, O, e.visibility, e.tag, v, null == b ? void 0 : b.primaryGuild, t, E]);
   return {
     guildId: n,
-    ctaType: S,
+    ctaType: T,
     validInviteKey: O
   }
 }

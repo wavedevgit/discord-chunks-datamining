@@ -42,9 +42,9 @@ let b = function(e) {
     (0, c.Hi)(e, t.id)
   }, [t.id]), v = i.useCallback(() => {
     (0, c.GA)(t.id)
-  }, [t.id]), I = i.useMemo(() => null != n ? n.name.replace(/_/g, " ") : "", [n]), S = i.useCallback(() => {
+  }, [t.id]), I = i.useMemo(() => null != n ? n.name.replace(/_/g, " ") : "", [n]), T = i.useCallback(() => {
     (0, c.Hb)(t.id)
-  }, [t.id]), T = i.useMemo(() => null != y && y > 0 ? (null == b ? void 0 : b.type) === h.qc2.DEVELOPER_GIFT ? m.intl.format(m.t["b+P6ra"], {
+  }, [t.id]), S = i.useMemo(() => null != y && y > 0 ? (null == b ? void 0 : b.type) === h.qc2.DEVELOPER_GIFT ? m.intl.format(m.t["b+P6ra"], {
     numPotions: y
   }) : m.intl.format(m.t.RiQ4cn, {
     numPotions: y
@@ -103,13 +103,13 @@ let b = function(e) {
         className: g.learnMoreButton,
         children: (0, r.jsx)(a.xv, {
           variant: "text-sm/medium",
-          children: T
+          children: S
         })
       }), (0, r.jsx)("div", {
         className: g.separator,
         "aria-hidden": !0
       }), (0, r.jsx)(l.B, {
-        onClick: S
+        onClick: T
       })]
     })]
   })

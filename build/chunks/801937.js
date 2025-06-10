@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => M
+  ZP: () => k
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -45,7 +45,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,8 +56,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -126,7 +126,7 @@ function x(e) {
     remainingPaymentMethods: o
   }
 }
-class k extends i.PureComponent {
+class M extends i.PureComponent {
   componentDidMount() {
     var e;
     (0, c.GE)(), (null != (e = this.props.paymentRequestWallets) ? e : []).length > 0 && setTimeout(() => {
@@ -138,7 +138,7 @@ class k extends i.PureComponent {
     let t = null != (e = this.props.paymentRequestWallets) ? e : [];
     if (0 === t.length || !this.arePaymentRequestWalletsLoading()) return;
     A.warn("Payment request wallets failed to load in time: ".concat(t.join(", "), ". Max time allowed: ").concat(L, " ms"));
-    let n = t.reduce((e, t) => T(I({}, e), {
+    let n = t.reduce((e, t) => S(I({}, e), {
       ["".concat(t, "Loaded")]: !0
     }), {});
     this.setState(n)
@@ -221,7 +221,7 @@ class k extends i.PureComponent {
       } = x(s);
       g.push(...this.createPaymentButtons(e)), E.push(...this.createPaymentButtons(t))
     }
-    let S = (0, r.jsxs)("div", {
+    let T = (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: o()(O.wrap, O.horizontal, y.container),
         children: [g, m]
@@ -241,7 +241,7 @@ class k extends i.PureComponent {
         children: E
       })]
     });
-    return v && !c && (S = (0, r.jsxs)("div", {
+    return v && !c && (T = (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         className: y.hidden,
         children: m
@@ -254,7 +254,7 @@ class k extends i.PureComponent {
       }), (0, r.jsx)(l.hjN, {
         title: _ ? b.intl.string(b.t.tywMsb) : b.intl.string(b.t["8lqkf3"]),
         className: i,
-        children: S
+        children: T
       }), _ && (0, r.jsx)("hr", {
         className: y.SeparatorLower
       })]
@@ -268,8 +268,8 @@ class k extends i.PureComponent {
     }
   }
 }
-let M = s.ZP.connectStores([m.Z], () => ({
+let k = s.ZP.connectStores([m.Z], () => ({
   ipCountryCode: m.Z.ipCountryCode,
   ipCountryCodeHasError: m.Z.ipCountryCodeHasError,
   localizedPromo: m.Z.localizedPricingPromo
-}))(k)
+}))(M)

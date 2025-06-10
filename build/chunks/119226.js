@@ -60,9 +60,9 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = h.ZP.getEnableHardwareAcceleration() ? o.Xo$ : o.qEK;
+let T = h.ZP.getEnableHardwareAcceleration() ? o.Xo$ : o.qEK;
 
-function T(e) {
+function S(e) {
   let {
     avatarDecoration: t
   } = e, {
@@ -75,7 +75,7 @@ function T(e) {
   });
   return (0, r.jsx)("div", {
     className: E.giftMainAnimationWrapper,
-    children: (0, r.jsx)(S, I(O({}, i), {
+    children: (0, r.jsx)(T, I(O({}, i), {
       avatarDecoration: n,
       src: a,
       className: E.avatar,
@@ -127,7 +127,7 @@ function C(e) {
     product: o
   } = (0, c.T)(null == t ? void 0 : t.id), s = null == o ? void 0 : o.items[0], l = (0, i.EQ)(s).with({
     type: a.Z.AVATAR_DECORATION
-  }, e => (0, r.jsx)(T, {
+  }, e => (0, r.jsx)(S, {
     avatarDecoration: e
   })).with({
     type: a.Z.PROFILE_EFFECT

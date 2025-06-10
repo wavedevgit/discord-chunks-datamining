@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => S
 }), n(388685), n(997841);
 var r, i = n(442837),
   a = n(570140),
@@ -125,7 +125,7 @@ function I(e) {
     return null != r && (e[n] = r), e
   }, {})), null != r && i.type === u.z.NEW_MEMBER && (i.memberOptions.flags = r), !0)
 }
-class S extends(r = i.ZP.Store) {
+class T extends(r = i.ZP.Store) {
   hasViewingRoles() {
     return !(0, l.ld)(g)
   }
@@ -195,8 +195,8 @@ class S extends(r = i.ZP.Store) {
     }
   }
 }
-_(S, "displayName", "ImpersonateStore");
-let T = new S(a.Z, {
+_(T, "displayName", "ImpersonateStore");
+let S = new T(a.Z, {
   IMPERSONATE_UPDATE: E,
   IMPERSONATE_STOP: b,
   GUILD_ROLE_DELETE: y,

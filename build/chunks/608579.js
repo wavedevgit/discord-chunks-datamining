@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(742956),
   v = n(346790),
   I = n(49308),
-  S = n(117652),
-  T = n(126982),
+  T = n(117652),
+  S = n(126982),
   A = n(981631),
   N = n(302800),
   C = n(215023),
@@ -71,15 +71,15 @@ function x(e, t) {
   }), e
 }
 
-function k(e) {
+function M(e) {
   var t;
   let {
     onClose: n,
     onComplete: a,
     onStepChange: w,
     transitionState: L,
-    loadId: k,
-    skuId: M,
+    loadId: M,
+    skuId: k,
     isGift: j = !1,
     giftRecipient: U,
     giftMessage: G,
@@ -90,8 +90,8 @@ function k(e) {
     analyticsLocations: Z
   } = (0, d.ZP)([...F, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(!1), q = i.useMemo(() => (0, N.UY)({
     purchaseType: C.o8.FIAT,
-    skuId: M
-  }), [M]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != M ? [M] : X, J = null != (t = Q[0]) ? t : null, $ = null != M && p.Rm.has(M), ee = i.useCallback(() => {
+    skuId: k
+  }), [k]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != k ? [k] : X, J = null != (t = Q[0]) ? t : null, $ = null != k && p.Rm.has(k), ee = i.useCallback(() => {
     z(!0), null == a || a()
   }, [a]), et = i.useCallback(e => {
     z(!1), n(e), c.Z.dispatch({
@@ -102,10 +102,10 @@ function k(e) {
     step: n,
     onClose: () => t(!1),
     giftingOrigin: B
-  }) : (0, r.jsx)(T.Z, {
+  }) : (0, r.jsx)(S.Z, {
     step: n,
     onClose: () => t(!1)
-  }), er = i.useMemo(() => [y.WA, ...j ? [S.Dd] : [], v.n, ...y.yp, y.wo, {
+  }), er = i.useMemo(() => [y.WA, ...j ? [T.Dd] : [], v.n, ...y.yp, y.wo, {
     key: g.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(I.x, x(D({}, e), {
       confettiCanvas: Y,
@@ -129,7 +129,7 @@ function k(e) {
         [P.hidden]: !K
       })
     }), (0, r.jsx)(m.PaymentContextProvider, {
-      loadId: k,
+      loadId: M,
       stepConfigs: er,
       applicationId: A.XAJ,
       skuIDs: Q,

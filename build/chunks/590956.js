@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Y: () => S,
+  Y: () => T,
   c: () => I
 }), n(388685);
 var r = n(255367),
@@ -82,7 +82,7 @@ let I = e => {
       position: a,
       shouldShow: !g,
       onTooltipShow: () => {
-        s && T({
+        s && S({
           emojiNode: n,
           isCustomEmoji: !1
         })
@@ -102,7 +102,7 @@ let I = e => {
       }))
     }));
     if (!s) return I();
-    let S = e => (0, r.jsx)(_.Az, v(y({}, e), {
+    let T = e => (0, r.jsx)(_.Az, v(y({}, e), {
       node: n
     }));
     return (0, r.jsx)(l.yRy, {
@@ -114,12 +114,12 @@ let I = e => {
       onRequestClose: () => {
         b(!1)
       },
-      renderPopout: S,
+      renderPopout: T,
       targetElementRef: f,
       children: I
     })
   },
-  S = e => {
+  T = e => {
     let {
       node: t,
       isInteracting: n,
@@ -127,7 +127,7 @@ let I = e => {
       enableClick: u = !0,
       channelId: g,
       messageId: b
-    } = e, [O, I] = i.useState(String(Date.now())), [S, A] = i.useState(!1), [N, C] = i.useState(!1), R = i.useRef(null), P = function() {
+    } = e, [O, I] = i.useState(String(Date.now())), [T, A] = i.useState(!1), [N, C] = i.useState(!1), R = i.useRef(null), P = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
       return (0, r.jsx)(c.Z, v(y({}, e), {
         emojiName: t.name,
@@ -145,7 +145,7 @@ let I = e => {
       position: a,
       shouldShow: !N,
       onTooltipShow: () => {
-        A(!0), u && (T({
+        A(!0), u && (S({
           emojiNode: t,
           isCustomEmoji: !0,
           nonce: w
@@ -162,7 +162,7 @@ let I = e => {
           A(!1), C(!0), null == e || null == (n = e.onClick) || n.call(e, t)
         } : void 0,
         onMouseLeave: () => {
-          S && (f.default.track(h.rMx.CLOSE_POPOUT, {
+          T && (f.default.track(h.rMx.CLOSE_POPOUT, {
             nonce: w
           }), A(!1))
         },
@@ -197,7 +197,7 @@ let I = e => {
       children: D
     })
   },
-  T = e => {
+  S = e => {
     let {
       emojiNode: t,
       isCustomEmoji: n,

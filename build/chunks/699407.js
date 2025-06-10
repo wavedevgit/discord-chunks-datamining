@@ -57,8 +57,8 @@ let m = 1500,
   O = E,
   v = b,
   I = y,
-  S = m,
-  T = 0,
+  T = m,
+  S = 0,
   A = Number.MAX_SAFE_INTEGER - 1,
   N = 0,
   C = 0,
@@ -68,11 +68,11 @@ let m = 1500,
   D = 0,
   L = Number.MAX_SAFE_INTEGER,
   x = 0,
-  k = 0,
-  M = null;
+  M = 0,
+  k = null;
 
 function j() {
-  N = 0, C = 0, R = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, k = 0, w = Date.now(), P = T
+  N = 0, C = 0, R = 0, D = 0, L = Number.MAX_SAFE_INTEGER, x = 0, M = 0, w = Date.now(), P = S
 }
 
 function U(e) {
@@ -121,7 +121,7 @@ let G = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
         shouldFlushOnNextTick: t = !1
       } = e;
       null == Z && K() && (Z = t ? setTimeout(q, 0) : Y(q, {
-        timeout: S
+        timeout: T
       }))
     }
 
@@ -130,7 +130,7 @@ let G = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
       let e = V.slice();
       V = [], D = U(D);
       let t = e.length;
-      L = Math.min(L, t), x = Math.max(x, t), k = U(k, t);
+      L = Math.min(L, t), x = Math.max(x, t), M = U(M, t);
       let n = X(e);
       return n.then(() => {
         e.forEach(e => {
@@ -173,46 +173,46 @@ let G = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
           rpc_success_count: C,
           rpc_failure_count: R,
           first_seen_event_sequence_number: P,
-          last_seen_event_sequence_number: T,
+          last_seen_event_sequence_number: S,
           telemetry_period_start_timestamp: w,
           telemetry_period_end_timestamp: Date.now(),
           event_queue_rejection_count: N,
           event_queue_batch_count: D,
           event_queue_batch_min_size: L === Number.MAX_SAFE_INTEGER ? 0 : L,
           event_queue_batch_max_size: x,
-          event_queue_batch_avg_size: D > 0 ? k / D : 0
+          event_queue_batch_avg_size: D > 0 ? M / D : 0
         }
       };
       return j(), X([e])
     }
 
     function J() {
-      if (null == M) return !1;
-      switch (M.type) {
+      if (null == k) return !1;
+      switch (k.type) {
         case "timeout":
-          clearTimeout(M.id);
+          clearTimeout(k.id);
           break;
         case "interval":
-          clearInterval(M.id);
+          clearInterval(k.id);
           break;
         default:
-          M.type
+          k.type
       }
-      return M = null, !0
+      return k = null, !0
     }
 
     function $() {
-      if (null != M) return;
+      if (null != k) return;
       let e = () => {
         let t = .1 * O;
-        M = {
+        k = {
           type: "timeout",
           id: setTimeout(() => {
             Q(), e()
           }, Math.max(O + (Math.floor(Math.random() * t * 2) - t), v))
         }
       };
-      M = {
+      k = {
         type: "timeout",
         id: setTimeout(() => {
           Q(), e()
@@ -223,7 +223,7 @@ let G = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
     function ee() {
       if (!J()) return
     }
-    S = null != b ? b : m, F.handleConnectionOpen = function(e) {
+    T = null != b ? b : m, F.handleConnectionOpen = function(e) {
       let {
         analyticsToken: t,
         user: n
@@ -247,14 +247,14 @@ let G = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
         let {
           sessionId: s
         } = e;
-        (s !== r || T >= A) && (T = 0, r = s, j());
+        (s !== r || S >= A) && (S = 0, r = s, j());
         let l = {
             type: t,
             fingerprint: a,
             properties: _({
               client_track_timestamp: Date.now(),
               client_heartbeat_session_id: s,
-              event_sequence_number: ++T
+              event_sequence_number: ++S
             }, n),
             resolve: o
           },

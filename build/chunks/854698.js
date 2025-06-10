@@ -12,13 +12,13 @@ n.d(t, {
   Uq: () => G,
   Y4: () => B,
   hn: () => b,
-  iA: () => k,
+  iA: () => M,
   ib: () => R,
   lh: () => J,
   mF: () => q,
   ub: () => D,
   v1: () => j,
-  x6: () => M,
+  x6: () => k,
   zi: () => X
 }), n(388685), n(539854);
 var r = n(392711),
@@ -42,8 +42,8 @@ let p = 365,
   O = [o.Ci.SU.weekday, o.Ci.MO.weekday, o.Ci.TU.weekday, o.Ci.WE.weekday, o.Ci.TH.weekday],
   v = [o.Ci.TU.weekday, o.Ci.WE.weekday, o.Ci.TH.weekday, o.Ci.FR.weekday, o.Ci.SA.weekday],
   I = [o.Ci.SA.weekday, o.Ci.SU.weekday],
-  S = [o.Ci.FR.weekday, o.Ci.SA.weekday],
-  T = [o.Ci.SU.weekday, o.Ci.MO.weekday],
+  T = [o.Ci.FR.weekday, o.Ci.SA.weekday],
+  S = [o.Ci.SU.weekday, o.Ci.MO.weekday],
   A = [o.Ci.SU.weekday, o.Ci.MO.weekday, o.Ci.TU.weekday, o.Ci.WE.weekday, o.Ci.TH.weekday, o.Ci.FR.weekday, o.Ci.SA.weekday],
   N = new Set([0, 6]);
 
@@ -126,7 +126,7 @@ function x(e, t) {
   }, null != t && (n.endDate = a()(t))), n
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = U(t),
     r = a()(u.default.extractTimestamp(e)),
     i = (null == n ? void 0 : n.endDate) != null ? r.clone().add(n.endDate.diff(n.startDate)) : void 0;
@@ -136,7 +136,7 @@ function k(e, t) {
   }
 }
 
-function M(e, t) {
+function k(e, t) {
   var n;
   if (null == t) return e;
   let r = null != (n = t.scheduled_end_time) ? n : e.endDate;
@@ -223,7 +223,7 @@ function W(e) {
 function K(e) {
   let t = L(e.toDate().getDay()),
     n = L(e.toDate().getUTCDay());
-  return n.weekday - t.weekday > 0 ? T : n.weekday - t.weekday < 0 ? S : I
+  return n.weekday - t.weekday > 0 ? S : n.weekday - t.weekday < 0 ? T : I
 }
 
 function z(e, t) {

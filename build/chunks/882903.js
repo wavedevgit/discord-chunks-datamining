@@ -6,9 +6,9 @@ e.exports = {
   editorBody: "editorBody__68a18",
   headerContainer: "headerContainer__68a18",
   closeButton: "closeButton__68a18",
+  closeIcon: "closeIcon__68a18",
   closeIconWithHover: "closeIconWithHover__68a18",
   sliderContainer: "sliderContainer__68a18",
-  slider: "slider__68a18",
   gradientDirectionSliderContainer: "gradientDirectionSliderContainer__68a18",
   resetButton: "resetButton__68a18",
   resetButtonContent: "resetButtonContent__68a18",
@@ -25,6 +25,5 @@ e.exports = {
   subtitle: "subtitle__68a18",
   coachmarkFooterContainer: "coachmarkFooterContainer__68a18",
   coachmarkSecondButton: "coachmarkSecondButton__68a18",
-  nitroIconContainer: "nitroIconContainer__68a18",
-  nitroIconWithHover: "nitroIconWithHover__68a18"
+  nitroIcon: "nitroIcon__68a18"
 }

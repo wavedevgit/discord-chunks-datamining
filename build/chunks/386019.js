@@ -28,19 +28,19 @@ function _(e) {
     targetElementRef: y
   } = e, [O, v] = i.useState(!1), {
     analyticsLocations: I
-  } = (0, s.ZP)(o.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), S = (0, c.Z)({
+  } = (0, s.ZP)(o.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), T = (0, c.Z)({
     display: m,
     user: _,
     activity: p,
     entry: h,
     analyticsLocations: I
-  }), T = (0, u.yi)(), A = i.useRef(null), N = null != (t = null == T ? void 0 : T.interactionPopoutTargetRef) ? t : A, C = (0, d.Z)({
+  }), S = (0, u.yi)(), A = i.useRef(null), N = null != (t = null == S ? void 0 : S.interactionPopoutTargetRef) ? t : A, C = (0, d.Z)({
     entry: h,
     activity: p,
     user: _,
     display: m,
     onClose: E,
-    onAction: S,
+    onAction: T,
     isMenuOpen: O,
     appContext: b
   });
@@ -50,7 +50,7 @@ function _(e) {
     position: "right",
     disablePointerEvents: !1,
     onRequestOpen: () => {
-      S({
+      T({
         action: "OPEN_MENU"
       }), v(!0)
     },

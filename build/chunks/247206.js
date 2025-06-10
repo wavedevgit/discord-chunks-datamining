@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Cm: () => S,
+  Cm: () => T,
   Hc: () => y,
   IV: () => O,
   JO: () => P,
@@ -173,11 +173,11 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     attachments: t,
     embeds: n
-  } = T(e), r = A(e);
+  } = S(e), r = A(e);
   return e = e.merge({
     attachments: t,
     embeds: n,
@@ -185,7 +185,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   return {
     attachments: e.attachments.map(e => (e.content_scan_version = -1, e)),
     embeds: e.embeds.map(e => (e.contentScanVersion = -1, e))
@@ -202,7 +202,7 @@ function A(e) {
     } = e, {
       attachments: n,
       embeds: r
-    } = T(t);
+    } = S(t);
     return t = t.merge({
       attachments: n,
       embeds: r

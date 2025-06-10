@@ -52,7 +52,7 @@ function I() {
   return null != e ? e.name : ""
 }
 
-function S(e, t, n, r) {
+function T(e, t, n, r) {
   let {
     location: i,
     analyticsLocations: a
@@ -76,7 +76,7 @@ function S(e, t, n, r) {
     audio_layer: g
   })
 }
-let T = {
+let S = {
     isNotSupported: () => !1,
     enable: e => Promise.resolve(!0),
     trackToggleSelfMute(e) {},
@@ -87,7 +87,7 @@ let T = {
     isNotSupported: N,
     trackToggleSelfMute: C,
     trackToggleSelfDeaf: R
-  } = T = n(929782),
+  } = S = n(929782),
   P = {
     enable: A,
     toggleSelfMute() {
@@ -283,7 +283,7 @@ let T = {
         location: t,
         analyticsLocations: n
       } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-      N() || ((null != t || null != n) && S(d.Z.getInputDevices(), d.Z.getInputDeviceId(), e, "Audio Input", {
+      N() || ((null != t || null != n) && T(d.Z.getInputDevices(), d.Z.getInputDeviceId(), e, "Audio Input", {
         location: t,
         analyticsLocations: n
       }), r.Z.dispatch({
@@ -296,7 +296,7 @@ let T = {
         location: t,
         analyticsLocations: n
       } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-      N() || ((null != t || null != n) && S(d.Z.getOutputDevices(), d.Z.getOutputDeviceId(), e, "Audio Output", {
+      N() || ((null != t || null != n) && T(d.Z.getOutputDevices(), d.Z.getOutputDeviceId(), e, "Audio Output", {
         location: t,
         analyticsLocations: n
       }), r.Z.dispatch({
@@ -309,7 +309,7 @@ let T = {
         location: t,
         analyticsLocations: n
       } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-      N() || ((null != t || null != n) && S(d.Z.getVideoDevices(), d.Z.getVideoDeviceId(), e, "Video", {
+      N() || ((null != t || null != n) && T(d.Z.getVideoDevices(), d.Z.getVideoDeviceId(), e, "Video", {
         location: t,
         analyticsLocations: n
       }), r.Z.dispatch({

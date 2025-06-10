@@ -8,7 +8,7 @@ n.d(t, {
   M8: () => y,
   aj: () => h,
   bN: () => p,
-  lP: () => T,
+  lP: () => S,
   q: () => m
 }), n(388685);
 var r = n(512722),
@@ -322,7 +322,7 @@ let p = f(u({}, a.ML, o.F3), {
       i = p.toDOMRange(e, n).getBoundingClientRect();
     return v(r, i) && v(i, r)
   },
-  S = (e, t, n, r) => {
+  T = (e, t, n, r) => {
     let i = {
         anchor: t,
         focus: t
@@ -342,7 +342,7 @@ let p = f(u({}, a.ML, o.F3), {
         }, i) && (s = o)
       } return n[s]
   },
-  T = {
+  S = {
     getLineStart(e, t, n) {
       let r, i = p.getParentElement(e, t);
       if (null == i) return null;
@@ -358,11 +358,11 @@ let p = f(u({}, a.ML, o.F3), {
         s = Array.from(p.positions(e, {
           at: o
         })),
-        l = S(e, t, s, !0);
+        l = T(e, t, s, !0);
       if (n && b.equals(t, l) && !b.isAtEnd(t, i)) {
         let n = p.after(e, t);
         if (null == n) return l;
-        l = S(e, n, s, !0)
+        l = T(e, n, s, !0)
       }
       return l
     },
@@ -381,11 +381,11 @@ let p = f(u({}, a.ML, o.F3), {
         s = Array.from(p.positions(e, {
           at: o
         })),
-        l = S(e, t, s, !1);
+        l = T(e, t, s, !1);
       if (n && b.equals(t, l) && !b.isAtEnd(t, i)) {
         let n = p.after(e, t);
         if (null == n) return l;
-        l = S(e, n, s, !1)
+        l = T(e, n, s, !1)
       }
       return l
     },
@@ -393,13 +393,13 @@ let p = f(u({}, a.ML, o.F3), {
       let n = y.toPoint(e.selection);
       if (null == n) return null;
       if (t) {
-        let t = T.getLineStart(e, n, !1);
+        let t = S.getLineStart(e, n, !1);
         return null == t ? null : {
           anchor: t,
           focus: n
         }
       } {
-        let t = T.getLineEnd(e, n, !0);
+        let t = S.getLineEnd(e, n, !0);
         return null == t ? null : {
           anchor: n,
           focus: t

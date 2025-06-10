@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => T
 }), n(997841);
 var r = n(697988),
   i = n(544891),
@@ -46,7 +46,7 @@ function I(e, t) {
     isJoining: t
   })
 }
-let S = {
+let T = {
   archiveThread(e, t) {
     let n = {
       archived: !0

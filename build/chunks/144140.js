@@ -59,14 +59,14 @@ let O = new Set,
   v = {},
   I = {};
 
-function S(e) {
+function T(e) {
   v = a().omitBy(v, t => {
     let n = t.guildId === e;
     return n && delete I[t.parentId], n
   })
 }
 
-function T(e) {
+function S(e) {
   v = a().omitBy(v, t => t.parentId === e), delete I[e]
 }
 
@@ -139,14 +139,14 @@ function x(e) {
   C(t)
 }
 
-function k(e) {
+function M(e) {
   let {
     guild: t
   } = e;
-  S(t.id)
+  T(t.id)
 }
 
-function M(e) {
+function k(e) {
   let {
     channel: t
   } = e;
@@ -187,7 +187,7 @@ function B(e) {
   let {
     channel: t
   } = e;
-  T(t.id)
+  S(t.id)
 }
 
 function F(e) {
@@ -311,9 +311,9 @@ let X = new q(s.Z, {
   CONNECTION_OPEN: D,
   OVERLAY_INITIALIZE: L,
   GUILD_CREATE: x,
-  GUILD_DELETE: k,
-  THREAD_CREATE: M,
-  THREAD_UPDATE: M,
+  GUILD_DELETE: M,
+  THREAD_CREATE: k,
+  THREAD_UPDATE: k,
   THREAD_LIST_SYNC: j,
   LOAD_THREADS_SUCCESS: U,
   LOAD_ARCHIVED_THREADS_SUCCESS: U,

@@ -3,7 +3,7 @@
 n.d(t, {
   Ep: () => _,
   Hp: () => h,
-  PP: () => k,
+  PP: () => M,
   lX: () => A,
   ob: () => p,
   q_: () => L
@@ -130,9 +130,9 @@ function v(e) {
   return void 0 === e.state && -1 === navigator.userAgent.indexOf("CriOS")
 }
 var I = "popstate",
-  S = "hashchange";
+  T = "hashchange";
 
-function T() {
+function S() {
   try {
     return window.history.state || {}
   } catch (e) {
@@ -173,15 +173,15 @@ function A(e) {
   }
 
   function D(e) {
-    v(e) || k(C(e.state))
+    v(e) || M(C(e.state))
   }
 
   function L() {
-    k(C(T()))
+    M(C(S()))
   }
   var x = !1;
 
-  function k(e) {
+  function M(e) {
     if (x) x = !1, w();
     else {
       var t = "POP";
@@ -189,19 +189,19 @@ function A(e) {
         n ? w({
           action: t,
           location: e
-        }) : M(e)
+        }) : k(e)
       })
     }
   }
 
-  function M(e) {
+  function k(e) {
     var t = X.location,
       n = U.indexOf(t.key); - 1 === n && (n = 0);
     var r = U.indexOf(e.key); - 1 === r && (r = 0);
     var i = n - r;
     i && (x = !0, V(i))
   }
-  var j = C(T()),
+  var j = C(S()),
     U = [j.key];
 
   function G(e) {
@@ -272,7 +272,7 @@ function A(e) {
   var Y = 0;
 
   function W(e) {
-    1 === (Y += e) && 1 === e ? (window.addEventListener(I, D), i && window.addEventListener(S, L)) : 0 === Y && (window.removeEventListener(I, D), i && window.removeEventListener(S, L))
+    1 === (Y += e) && 1 === e ? (window.addEventListener(I, D), i && window.addEventListener(T, L)) : 0 === Y && (window.removeEventListener(I, D), i && window.removeEventListener(T, L))
   }
   var K = !1;
 
@@ -366,10 +366,10 @@ function L(e) {
   }
   var I = m();
 
-  function S(e) {
+  function T(e) {
     (0, r.Z)(J, e), J.length = t.length, I.notifyListeners(J.location, J.action)
   }
-  var T = !1,
+  var S = !1,
     A = null;
 
   function L(e, t) {
@@ -383,30 +383,30 @@ function L(e) {
     else {
       var n = v(),
         r = J.location;
-      if (!T && L(r, n) || A === _(n)) return;
-      A = null, k(n)
-    }
-  }
-
-  function k(e) {
-    if (T) T = !1, S();
-    else {
-      var t = "POP";
-      I.confirmTransitionTo(e, t, a, function(n) {
-        n ? S({
-          action: t,
-          location: e
-        }) : M(e)
-      })
+      if (!S && L(r, n) || A === _(n)) return;
+      A = null, M(n)
     }
   }
 
   function M(e) {
+    if (S) S = !1, T();
+    else {
+      var t = "POP";
+      I.confirmTransitionTo(e, t, a, function(n) {
+        n ? T({
+          action: t,
+          location: e
+        }) : k(e)
+      })
+    }
+  }
+
+  function k(e) {
     var t = J.location,
       n = B.lastIndexOf(_(t)); - 1 === n && (n = 0);
     var r = B.lastIndexOf(_(e)); - 1 === r && (r = 0);
     var i = n - r;
-    i && (T = !0, H(i))
+    i && (S = !0, H(i))
   }
   var j = P(),
     U = b(j);
@@ -432,11 +432,11 @@ function L(e) {
           A = t, w(i);
           var o = B.lastIndexOf(_(J.location)),
             s = B.slice(0, o + 1);
-          s.push(t), B = s, S({
+          s.push(t), B = s, T({
             action: n,
             location: r
           })
-        } else S()
+        } else T()
       }
     })
   }
@@ -450,7 +450,7 @@ function L(e) {
           i = b(f + t),
           a = P() !== i;
         a && (A = t, D(i));
-        var o = B.indexOf(_(J.location)); - 1 !== o && (B[o] = t), S({
+        var o = B.indexOf(_(J.location)); - 1 !== o && (B[o] = t), T({
           action: n,
           location: r
         })
@@ -512,7 +512,7 @@ function x(e, t, n) {
   return Math.min(Math.max(e, t), n)
 }
 
-function k(e) {
+function M(e) {
   void 0 === e && (e = {});
   var t = e,
     n = t.getUserConfirmation,
@@ -587,12 +587,12 @@ function k(e) {
     O(1)
   }
 
-  function S(e) {
+  function T(e) {
     var t = N.index + e;
     return t >= 0 && t < N.entries.length
   }
 
-  function T(e) {
+  function S(e) {
     return void 0 === e && (e = !1), u.setPrompt(e)
   }
 
@@ -611,8 +611,8 @@ function k(e) {
     go: O,
     goBack: v,
     goForward: I,
-    canGo: S,
-    block: T,
+    canGo: T,
+    block: S,
     listen: A
   };
   return N

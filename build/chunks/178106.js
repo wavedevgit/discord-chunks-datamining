@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(539854), n(388685);
 var r, i = n(392711),
   a = n.n(i),
@@ -60,7 +60,7 @@ let v = [],
   I = new(s())({
     max: m.zb
   }),
-  S = new u.ZP({
+  T = new u.ZP({
     computeBonus: () => 100,
     computeWeight: e => {
       let t = 1;
@@ -71,7 +71,7 @@ let v = [],
     numFrequentlyItems: m.O6
   });
 
-function T(e) {
+function S(e) {
   let {
     sound: t,
     trigger: n
@@ -97,10 +97,10 @@ function N(e) {
 }
 
 function C(e) {
-  S.track(e), v.push({
+  T.track(e), v.push({
     key: e,
     timestamp: Date.now()
-  }), S.compute()
+  }), T.compute()
 }
 
 function R(e) {
@@ -119,7 +119,7 @@ function w() {
   var e;
   if (!x()) return;
   let t = null == (e = d.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? void 0 : e.playedSounds;
-  S.overwriteHistory(P(null != t ? t : {}), v)
+  T.overwriteHistory(P(null != t ? t : {}), v)
 }
 
 function D(e) {
@@ -145,7 +145,7 @@ function x() {
     autoTrackExposure: !1
   }).canSeeFrequentlyPlayed
 }
-class k extends(r = l.ZP.PersistedStore) {
+class M extends(r = l.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(f.default, p.Z), (null == e ? void 0 : e.recentlyHeardCache) != null && I.load(e.recentlyHeardCache), (null == e ? void 0 : e.playedEventsPendingFlush) != null && (v = e.playedEventsPendingFlush), this.syncWith([d.Z], w)
   }
@@ -159,18 +159,18 @@ class k extends(r = l.ZP.PersistedStore) {
     return v.length > 0
   }
   get playedSoundHistory() {
-    return S.usageHistory
+    return T.usageHistory
   }
   get recentlyHeardSoundIds() {
     return I.values()
   }
   get frecentlyPlayedSounds() {
-    return S.frequently
+    return T.frequently
   }
 }
-E(k, "displayName", "SoundboardEventStore"), E(k, "persistKey", "SoundboardEventStore");
-let M = new k(c.Z, {
-  GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: T,
+E(M, "displayName", "SoundboardEventStore"), E(M, "persistKey", "SoundboardEventStore");
+let k = new M(c.Z, {
+  GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: S,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: A,
   USER_SETTINGS_PROTO_UPDATE: D
 })

@@ -85,7 +85,7 @@ function I(e) {
   }
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   var r;
   let {
     currentGuildHasAddPermissions: i,
@@ -106,7 +106,7 @@ function S(e, t, n) {
   })
 }
 
-function T(e, t) {
+function S(e, t) {
   var n;
   let r = null != (n = t.get(b.X8)) ? n : b.Hy;
   e.push({
@@ -138,14 +138,14 @@ function A(e) {
   } = (0, _.k)({
     location: "soundboard-useSoundGrid",
     autoTrackExposure: !0
-  }), x = C(), k = (0, i.Wu)([h.Z], () => h.Z.recentlyHeardSoundIds), M = p.C.useExperiment({
+  }), x = C(), M = (0, i.Wu)([h.Z], () => h.Z.recentlyHeardSoundIds), k = p.C.useExperiment({
     location: "useSoundGrid"
   });
   return r.useMemo(() => {
     let e = 0,
       r = 0,
       i = [];
-    if (n) return T(i, f), {
+    if (n) return S(i, f), {
       categories: i,
       allSounds: f,
       isFetching: O,
@@ -166,7 +166,7 @@ function A(e) {
       sections: i,
       guildIds: A,
       allSounds: f,
-      potentialSoundIdsForSection: k,
+      potentialSoundIdsForSection: M,
       sectionType: g.bg.RECENTLY_HEARD,
       sortById: !1
     }), L && v({
@@ -176,19 +176,19 @@ function A(e) {
       potentialSoundIdsForSection: x.map(e => e.soundId),
       sectionType: g.bg.FREQUENTLY_USED,
       sortById: !1
-    }), void 0 !== P && S(i, P, {
+    }), void 0 !== P && T(i, P, {
       currentGuildHasAddPermissions: w,
       allSounds: f,
       filterOutEmptyCurrentGuild: t
     });
-    let a = R || M.enabled;
-    return a || T(i, f), I({
+    let a = R || k.enabled;
+    return a || S(i, f), I({
       sections: i,
       guilds: N,
       currentGuildId: null == P ? void 0 : P.id,
       allSounds: f,
       hasNitro: u
-    }), a && T(i, f), i.forEach(t => {
+    }), a && S(i, f), i.forEach(t => {
       t.categoryInfo.type === g.bg.GUILD && (t.categoryInfo.isNitroLocked ? r += t.items.length : e += t.items.length)
     }), {
       categories: i,
@@ -200,7 +200,7 @@ function A(e) {
         lockedCustomSoundCount: r
       }
     }
-  }, [A, f, b, k, x, L, D, P, w, t, R, N, n, O, u, M.enabled])
+  }, [A, f, b, M, x, L, D, P, w, t, R, N, n, O, u, k.enabled])
 }
 
 function N(e, t, n) {

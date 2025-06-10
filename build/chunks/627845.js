@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T,
-  b: () => S
+  Z: () => S,
+  b: () => T
 });
 var r = n(255367);
 n(73800);
@@ -51,10 +51,10 @@ function I() {
   return null == e || Date.now() - +e.createdAt < 864e5
 }
 
-function S() {
+function T() {
   return "windows" === (0, c.getOS)()
 }
-let T = {
+let S = {
   initBasic() {
     m.addListener(this.handleSystemPrefersReducedMotionChanged), this.handleSystemPrefersReducedMotionChanged(m), b.addListener(this.handleSystemColorPreferencesChanged), y.addListener(this.handleSystemColorPreferencesChanged), O.addListener(this.handleSystemColorPreferencesChanged), this.handleSystemColorPreferencesChanged(), g.addListener(this.handleSystemPrefersContrastChanged), E.addListener(this.handleSystemPrefersContrastChanged), this.handleSystemPrefersContrastChanged()
   },
@@ -85,7 +85,7 @@ let T = {
   handleSystemColorPreferencesChanged() {
     let e = _.zd.NO_PREFERENCE;
     b.matches ? e = _.zd.DARK : y.matches && (e = _.zd.LIGHT);
-    let t = (!c.isPlatformEmbedded || S()) && O.matches ? "active" : "none";
+    let t = (!c.isPlatformEmbedded || T()) && O.matches ? "active" : "none";
     a.Z.wait(() => {
       o.Q_(e), u.Ej(t)
     })

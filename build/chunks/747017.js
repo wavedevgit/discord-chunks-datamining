@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => T
 }), n(781311);
 var r = n(255367),
   i = n(73800),
@@ -25,13 +25,13 @@ var r = n(255367),
   v = n(981631),
   I = n(843280);
 
-function S(e) {
+function T(e) {
   let {
     user: t,
     activities: n,
     applicationStream: a,
-    voiceChannel: S,
-    textClassName: T,
+    voiceChannel: T,
+    textClassName: S,
     iconClassName: A,
     textSize: N = "xs",
     animateEmoji: C = !0,
@@ -57,17 +57,17 @@ function S(e) {
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]);
   if ((0, l.e7)([p.Z], () => p.Z.isBlockedOrIgnored(null == t ? void 0 : t.id))) return null;
-  let k = (null == t ? void 0 : t.bot) === !0,
-    M = (null == x ? void 0 : x.state) != null && "xs" === N,
+  let M = (null == t ? void 0 : t.bot) === !0,
+    k = (null == x ? void 0 : x.state) != null && "xs" === N,
     j = () => {
       if (null != D) return (0, r.jsx)(E.Z, {
         stream: D,
         game: null == n ? void 0 : n.find(c.Z),
         textVariant: "text-".concat(N, "/medium"),
-        textClassName: T,
+        textClassName: S,
         iconClassName: A,
-        hideText: M,
-        hideIcon: k,
+        hideText: k,
+        hideIcon: M,
         hideTooltip: w
       });
       let e = null == n ? void 0 : n.find(e => {
@@ -79,17 +79,17 @@ function S(e) {
       return null != e ? (0, r.jsx)(b.Z, {
         activity: e,
         textVariant: "text-".concat(N, "/medium"),
-        textClassName: T,
+        textClassName: S,
         iconClassName: A,
-        hideText: M,
-        hideIcon: k,
+        hideText: k,
+        hideIcon: M,
         hideTooltip: w
-      }) : null != S ? (0, r.jsx)(y.Z, {
-        channel: S,
+      }) : null != T ? (0, r.jsx)(y.Z, {
+        channel: T,
         textVariant: "text-".concat(N, "/medium"),
-        textClassName: T,
+        textClassName: S,
         iconClassName: A,
-        hideText: M,
+        hideText: k,
         hideTooltip: w
       }) : null
     },
@@ -102,7 +102,7 @@ function S(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [null != i && (0, r.jsx)(s.xv, {
           variant: "text-".concat(N, "/medium"),
-          className: o()(T, I.customStatusLabel),
+          className: o()(S, I.customStatusLabel),
           color: "none",
           children: "".concat(i, ": ")
         }), null != e && !P && (0, r.jsx)(h.Z, {
@@ -112,7 +112,7 @@ function S(e) {
           className: A
         }), null != t && (0, r.jsx)(g.Z, {
           variant: "text-".concat(N, "/medium"),
-          className: T,
+          className: S,
           hideTooltip: w,
           children: t
         })]
@@ -125,7 +125,7 @@ function S(e) {
     }),
     children: [j(), (0, r.jsx)(s.xv, {
       variant: "text-".concat(N, "/normal"),
-      className: o()(I.truncated, I.dot, T),
+      className: o()(I.truncated, I.dot, S),
       children: O.l
     }), U(), R && (0, r.jsx)(m.Z, {})]
   })

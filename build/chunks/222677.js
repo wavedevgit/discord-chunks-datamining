@@ -3,7 +3,7 @@
 n.d(t, {
   $E: () => L,
   T6: () => w,
-  TW: () => S,
+  TW: () => T,
   U0: () => R,
   WO: () => x,
   rU: () => P,
@@ -65,11 +65,11 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var S = function(e) {
+var T = function(e) {
   return e.MESSAGE = "Message", e.FORUM_TOOLBAR = "Forum Toolbar", e.MOBILE_MEDIA_VIEWER = "Mobile Media Viewer", e.MESSAGE_HOVER_BAR = "Message Hover Bar", e.MESSAGE_INLINE_BUTTON = "Message Inline Button", e.MESSAGE_CONTEXT_MENU = "Message Context Menu", e.MESSAGE_REACTION_PICKER = "Message Reaction Picker", e.MESSAGE_SHORTCUT = "Message Shortcut", e
 }({});
 
-function T(e, t, n) {
+function S(e, t, n) {
   let {
     headers: r,
     status: i,
@@ -163,12 +163,12 @@ async function P(e, t, n) {
     u = arguments.length > 4 ? arguments[4] : void 0,
     f = null != u && !!u.burst,
     p = null != u && !!u.isRetry;
-  if (!p && M(e, t, n, f)) return void o.Z.show({
+  if (!p && k(e, t, n, f)) return void o.Z.show({
     title: b.intl.string(b.t["uaUU/v"]),
     body: b.intl.string(b.t.psMorq),
     confirmText: b.intl.string(b.t["NX+WJC"])
   });
-  let h = await k(n, f);
+  let h = await M(n, f);
   return A("MESSAGE_REACTION_ADD", e, t, n, {
     burst: f,
     colors: h
@@ -209,7 +209,7 @@ async function P(e, t, n) {
       name: n.name
     }))
   }).catch(r => {
-    T(r, () => P(e, t, n, a, {
+    S(r, () => P(e, t, n, a, {
       burst: f,
       isRetry: !0
     }), {
@@ -246,7 +246,7 @@ async function D(e, t, n) {
     oldFormErrors: !0,
     rejectWithError: !1
   }).catch(n => {
-    T(n, () => D(e, t, {
+    S(n, () => D(e, t, {
       isRetry: !0
     }), {
       isRetry: i
@@ -262,7 +262,7 @@ async function L(e, t, n, i) {
     oldFormErrors: !0,
     rejectWithError: !1
   }).catch(r => {
-    T(r, () => L(e, t, n, {
+    S(r, () => L(e, t, n, {
       isRetry: !0
     }), {
       isRetry: a
@@ -303,7 +303,7 @@ async function x(e) {
       name: a.name
     }))
   }).catch(async e => {
-    if (T(e, () => x({
+    if (S(e, () => x({
         channelId: t,
         messageId: n,
         emoji: a,
@@ -316,7 +316,7 @@ async function x(e) {
       }), {
         isRetry: f
       })) {
-      let e = await k(a, d);
+      let e = await M(a, d);
       A("MESSAGE_REACTION_ADD", t, n, a, {
         userId: s,
         burst: d,
@@ -329,7 +329,7 @@ async function x(e) {
     }
   })
 }
-async function k(e, t) {
+async function M(e, t) {
   let n = [];
   if (t) try {
     n = await (0, m.B6)(e)
@@ -337,7 +337,7 @@ async function k(e, t) {
   return n
 }
 
-function M(e, t, n, r) {
+function k(e, t, n, r) {
   let i = f.Z.getMessage(e, t);
   return null != i && i.userHasReactedWithEmoji(n, r)
 }

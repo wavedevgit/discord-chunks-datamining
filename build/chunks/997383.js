@@ -33,7 +33,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function S(e) {
   }
   return e
 }
-let T = 100,
+let S = 100,
   A = 1e3,
   N = .2,
   C = .1,
@@ -123,7 +123,7 @@ class L {
   }
   setOptions(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    t ? this.options = S({}, this.options, e) : this.options = e, null != this.options.blacklist ? this._userBlacklist = Array.from(this.options.blacklist).map(e => e.startsWith("user:") ? e.replace("user:", "") : "").filter(e => "" !== e) : this._userBlacklist = null
+    t ? this.options = T({}, this.options, e) : this.options = e, null != this.options.blacklist ? this._userBlacklist = Array.from(this.options.blacklist).map(e => e.startsWith("user:") ? e.replace("user:", "") : "").filter(e => "" !== e) : this._userBlacklist = null
   }
   search(e, t) {
     if (this.query = e, "" === e.trim()) {
@@ -258,7 +258,7 @@ class L {
       fuzzy: !0
     }) : []
   }
-  constructor(e, t, n = T, r = R) {
+  constructor(e, t, n = S, r = R) {
     I(this, "query", ""), I(this, "options", R), I(this, "results", []), I(this, "_userResults", []), I(this, "_groupDMResults", []), I(this, "_textChannelResults", []), I(this, "_voiceChannelResults", []), I(this, "_guildResults", []), I(this, "_applicationResults", []), I(this, "_linkResults", []), I(this, "_inAppNavigations", []), I(this, "_asyncTimeout", void 0), I(this, "userSearchContext", void 0), I(this, "onResultsChange", void 0), I(this, "resultTypes", void 0), I(this, "_userBlacklist", null), I(this, "_limit", void 0), I(this, "parseUserResults", e => {
       let {
         results: t

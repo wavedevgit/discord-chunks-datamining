@@ -29,9 +29,9 @@ function E(e) {
       var t;
       e.preventDefault(), null == (t = E.current) || t.activateUploadDialogue()
     }
-  }, S = i.useCallback(() => {
+  }, T = i.useCallback(() => {
     y(!0)
-  }, []), T = i.useCallback(() => {
+  }, []), S = i.useCallback(() => {
     y(!1)
   }, []), A = i.useCallback(e => {
     var r;
@@ -50,10 +50,10 @@ function E(e) {
   }, [t, n]);
   i.useEffect(() => {
     let e = v.current;
-    return null == O && (null == e || e.addEventListener("dragover", S, !1), null == e || e.addEventListener("dragleave", T, !1), null == e || e.addEventListener("drop", A, !1)), () => {
-      null == e || e.removeEventListener("dragover", S, !1), null == e || e.removeEventListener("dragleave", T, !1), null == e || e.removeEventListener("drop", A, !1)
+    return null == O && (null == e || e.addEventListener("dragover", T, !1), null == e || e.addEventListener("dragleave", S, !1), null == e || e.addEventListener("drop", A, !1)), () => {
+      null == e || e.removeEventListener("dragover", T, !1), null == e || e.removeEventListener("dragleave", S, !1), null == e || e.removeEventListener("drop", A, !1)
     }
-  }, [O, S, T, A]);
+  }, [O, T, S, A]);
   let N = e => {
     var r, i;
     if (null != t && (null == (i = e.currentTarget) || null == (r = i.files) ? void 0 : r[0]) != null) {

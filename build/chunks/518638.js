@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A2: () => T,
+  A2: () => S,
   BU: () => A,
   Pz: () => y,
   Qf: () => w,
@@ -9,7 +9,7 @@ n.d(t, {
   ZC: () => R,
   a0: () => N,
   kr: () => v,
-  t8: () => S,
+  t8: () => T,
   tq: () => C
 }), n(997841), n(704826), n(35282), n(642613);
 var r = n(544891),
@@ -68,7 +68,7 @@ function I(e) {
     promotion: O(e.promotion)
   }
 }
-async function S() {
+async function T() {
   return (await r.tn.get({
     url: g.ANM.CLAIMED_OUTBOUND_PROMOTION_CODES,
     query: {
@@ -78,7 +78,7 @@ async function S() {
     rejectWithError: !1
   })).body.map(I)
 }
-async function T(e) {
+async function S(e) {
   return I((await r.tn.post({
     url: g.ANM.CLAIM_OUTBOUND_PROMOTION_CODE(e),
     rejectWithError: !1

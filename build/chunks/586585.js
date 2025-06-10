@@ -95,12 +95,12 @@ let h = e => {
         className: c.primaryIcon
       }), h]
     }))
-  }, S = () => null == y ? null : (0, r.jsx)(i.zxk, {
+  }, T = () => null == y ? null : (0, r.jsx)(i.zxk, {
     color: i.zxk.Colors.PRIMARY,
     look: i.zxk.Looks.LINK,
     onClick: O,
     children: y
-  }), T = () => null == t ? null : (0, r.jsx)(i.zxk, {
+  }), S = () => null == t ? null : (0, r.jsx)(i.zxk, {
     className: c.back,
     color: i.zxk.Colors.PRIMARY,
     look: i.zxk.Looks.LINK,
@@ -111,7 +111,7 @@ let h = e => {
     justify: a.Z.Justify.BETWEEN,
     align: a.Z.Align.CENTER,
     className: v,
-    children: [I(), S(), (0, r.jsx)(s.Z, {}), T()]
+    children: [I(), T(), (0, r.jsx)(s.Z, {}), S()]
   })
 };
 h.CTAType = p;

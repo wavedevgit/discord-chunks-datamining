@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -100,7 +100,7 @@ function N(e, t, n, i, a) {
       })
     }
   };
-  "" !== p.Z.getDraft(e, p.d.ChannelMessage) ? (0, o.h7j)(t => (0, r.jsx)(o.ConfirmModal, A(S({
+  "" !== p.Z.getDraft(e, p.d.ChannelMessage) ? (0, o.h7j)(t => (0, r.jsx)(o.ConfirmModal, A(T({
     header: O.intl.string(O.t.pe26Cg),
     confirmText: O.intl.string(O.t.VkKicX),
     cancelText: O.intl.string(O.t["ETE/oK"]),
@@ -140,14 +140,14 @@ function C(e) {
   } : {
     type: "contextless"
   }, {
-    command: S
-  } = l.YZ(I, null != (t = n.commandKey) ? t : ""), T = f.dN.useSetting(), A = i.useMemo(() => {
-    if (null == S || null == g || S.untranslatedName !== n.commandName || T) return !1;
+    command: T
+  } = l.YZ(I, null != (t = n.commandKey) ? t : ""), S = f.dN.useSetting(), A = i.useMemo(() => {
+    if (null == T || null == g || T.untranslatedName !== n.commandName || S) return !1;
     let e = g.isPrivate();
     if ((0, d.xl)(g) || !e && !O) return !1;
-    let t = (null == S ? void 0 : S.applicationId) === b.bi.BUILT_IN;
+    let t = (null == T ? void 0 : T.applicationId) === b.bi.BUILT_IN;
     return !!e || !!t || !!v
-  }, [g, S, O, v, n.commandName, T]), C = i.useCallback(e => {
+  }, [g, T, O, v, n.commandName, S]), C = i.useCallback(e => {
     null == e || e.stopPropagation(), null != g && null != n.commandName && null != n.commandKey && N(g.id, n.commandName, n.commandKey, c.Vh.MENTION)
   }, [g, n.commandKey, n.commandName]);
   return A ? (0, r.jsx)(o.ua7, {

@@ -25,8 +25,8 @@ var i = n(120356),
   O = n(994746),
   v = n(232174),
   I = n(652853),
-  S = n(979038),
-  T = n(448980),
+  T = n(979038),
+  S = n(448980),
   A = n(336383),
   N = n(194811),
   C = n(373826),
@@ -36,8 +36,8 @@ var i = n(120356),
   D = n(881530),
   L = n(228168),
   x = n(981631),
-  k = n(701488),
-  M = n(388032),
+  M = n(701488),
+  k = n(388032),
   j = n(227832);
 
 function U(e, t, n) {
@@ -163,7 +163,7 @@ function V(e) {
   }, eo = () => {
     if ((0, u.Z)(i) && null != B) return (0, r.jsx)(C.Z, {
       variant: "text-xs/normal",
-      text: M.intl.formatToPlainString(M.t["hq/Qzc"], {
+      text: k.intl.formatToPlainString(k.t["hq/Qzc"], {
         guildName: B.name
       }),
       onClick: () => {
@@ -192,7 +192,7 @@ function V(e) {
     if (i.type === x.IIU.WATCHING) return null;
     if ((0, c.Z)(i)) return el();
     if ((0, E.dS)(i) && (null == (e = i.party) ? void 0 : e.size) != null && (null == (t = i.party) ? void 0 : t.size.length) >= 2) {
-      let e = M.intl.formatToPlainString(M.t["JC/3x8"], {
+      let e = k.intl.formatToPlainString(k.t["JC/3x8"], {
         numSpeakers: null == (a = i.party) ? void 0 : a.size[0],
         numListeners: (null == (o = i.party) ? void 0 : o.size[1]) - (null == (s = i.party) ? void 0 : s.size[0])
       });
@@ -207,14 +207,14 @@ function V(e) {
     })
   }, el = () => {
     var e, t, n, a;
-    return (null == (e = i.party) ? void 0 : e.size) == null && i.application_id === k.Zc ? (0, r.jsxs)("div", {
+    return (null == (e = i.party) ? void 0 : e.size) == null && i.application_id === M.Zc ? (0, r.jsxs)("div", {
       className: j.gameState,
       children: [(0, r.jsx)(C.Z, {
         variant: "text-xs/normal",
         text: i.state
       }), (0, r.jsx)(C.Z, {
         variant: "text-xs/normal",
-        text: M.intl.formatToPlainString(M.t["u//9Bw"], {
+        text: k.intl.formatToPlainString(k.t["u//9Bw"], {
           count: "0",
           max: null != (a = null == U ? void 0 : U.getMaxParticipants()) ? a : 0
         })
@@ -226,9 +226,9 @@ function V(e) {
         text: i.state
       }), (0, r.jsx)(C.Z, {
         variant: "text-xs/normal",
-        text: 0 === i.party.size[1] ? M.intl.formatToPlainString(M.t.IM4J4e, {
+        text: 0 === i.party.size[1] ? k.intl.formatToPlainString(k.t.IM4J4e, {
           count: i.party.size[0]
-        }) : M.intl.formatToPlainString(M.t["u//9Bw"], {
+        }) : k.intl.formatToPlainString(k.t["u//9Bw"], {
           count: i.party.size[0],
           max: i.party.size[1]
         })
@@ -265,7 +265,7 @@ function V(e) {
     onClose: H
   }), ef = () => t.id === n.id ? null : (0, r.jsx)("div", {
     className: j.actions,
-    children: (0, r.jsx)(S.Z, {
+    children: (0, r.jsx)(T.Z, {
       activity: i,
       user: t,
       onAction: Q,
@@ -297,7 +297,7 @@ function V(e) {
           className: j.content,
           children: [!t.bot && ei(), (0, r.jsxs)("div", {
             className: j.details,
-            children: [eu(), !t.bot && (0, r.jsx)(T.Z, {
+            children: [eu(), !t.bot && (0, r.jsx)(S.Z, {
               user: t,
               activity: i,
               className: j.badges

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => T
 }), n(35282), n(781311);
 var r = n(255367),
   i = n(73800),
@@ -41,7 +41,7 @@ function v(e, t, n) {
 function I(e) {
   return e.meta.url
 }
-let S = {
+let T = {
   stores: [d.Z, h.Z],
   matches(e, t, n, r, i) {
     var a;

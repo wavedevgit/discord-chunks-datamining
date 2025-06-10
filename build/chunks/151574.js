@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(378233),
   v = n(419922),
   I = n(490095),
-  S = n(652136),
-  T = n(626135),
+  T = n(652136),
+  S = n(626135),
   A = n(280930),
   N = n(606301),
   C = n(278754),
@@ -66,13 +66,13 @@ function x(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -106,8 +106,8 @@ function Z(e) {
     onSelectSticker: u
   } = e, d = (0, s.JA)("".concat(a)), {
     tabIndex: _
-  } = d, p = M(d, ["tabIndex"]);
-  return (0, r.jsxs)(f.P3F, k(L({}, p), {
+  } = d, p = k(d, ["tabIndex"]);
+  return (0, r.jsxs)(f.P3F, M(L({}, p), {
     tabIndex: n ? -1 : _,
     className: o()(w.suggestedExpression, {
       [w.suggestedExpressionFocused]: t
@@ -243,13 +243,13 @@ let Y = i.memo(function(e) {
     }),
     es = (e, t) => {
       if (ea) {
-        if (T.default.track(R.rMx.AUTO_SUGGEST_EXPRESSION_SELECTED, {
+        if (S.default.track(R.rMx.AUTO_SUGGEST_EXPRESSION_SELECTED, {
             sticker_id: e.id,
             suggestion_trigger: W
           }), t === E.eb.SENDABLE) x(!0), c(e, y.V0.EXPRESSION_SUGGESTIONS), et.cancel(), Y("");
         else if ((0, O.jl)(e)) {
           let t = b.Z.getStickerPack(e.pack_id);
-          null != t && (0, S.Z)({
+          null != t && (0, T.Z)({
             stickerPack: t,
             analyticsLocations: $
           })
@@ -290,8 +290,8 @@ let Y = i.memo(function(e) {
               var {
                 ref: t,
                 tabIndex: n
-              } = e, i = M(e, ["ref", "tabIndex"]);
-              return (0, r.jsx)("div", k(L({
+              } = e, i = k(e, ["ref", "tabIndex"]);
+              return (0, r.jsx)("div", M(L({
                 className: w.stickerResults,
                 ref: e => {
                   t.current = e
@@ -343,7 +343,7 @@ let Y = i.memo(function(e) {
               })
             }), (0, r.jsx)(f.P3F, {
               onClick: () => {
-                T.default.track(R.rMx.STICKER_SUGGESTIONS_ENABLED_TOGGLED, {
+                S.default.track(R.rMx.STICKER_SUGGESTIONS_ENABLED_TOGGLED, {
                   enabled: !1,
                   location: {
                     section: R.jXE.EXPRESSION_PICKER
@@ -352,7 +352,7 @@ let Y = i.memo(function(e) {
               },
               children: (0, r.jsx)(f.ua7, {
                 text: P.intl.string(P.t.XNMs5u),
-                children: e => (0, r.jsx)(f.Dio, k(L({
+                children: e => (0, r.jsx)(f.Dio, M(L({
                   size: "md",
                   color: "currentColor"
                 }, e), {

@@ -31,8 +31,8 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 let I = {},
-  S = {},
   T = {},
+  S = {},
   A = {},
   N = {},
   C = O.hVg.THEATRE,
@@ -45,7 +45,7 @@ function P(e, t, n) {
     serverId: t,
     initialLayout: C,
     analyticsContext: n,
-    isStreamer: null != S[e],
+    isStreamer: null != T[e],
     parentMediaSessionId: y.Z.getMediaSessionId()
   })
 }
@@ -86,9 +86,9 @@ function x(e) {
         isOwner: n
       } = e;
       t.setActionContext(i), t.setNativePickerStyleUsed(s), n && t.trackStart()
-    }), A[u] = o, T[u] = a, null != a) {
+    }), A[u] = o, S[u] = a, null != a) {
     let e = d.ZP.getGameForPID(a);
-    null != e && (S[u] = {
+    null != e && (T[u] = {
       name: e.name,
       id: e.id,
       exe: e.exeName,
@@ -98,7 +98,7 @@ function x(e) {
   null != c ? N[u] = c : delete N[u]
 }
 
-function k(e) {
+function M(e) {
   let {
     appContext: t,
     streamKey: n
@@ -109,10 +109,10 @@ function k(e) {
       isOwner: r
     } = e;
     n.setActionContext(t), r && n.trackEnd()
-  }), A[n] = null, T[n] = null, delete N[n]
+  }), A[n] = null, S[n] = null, delete N[n]
 }
 
-function M(e) {
+function k(e) {
   let {
     streamKey: t,
     rtcServerId: n,
@@ -120,12 +120,12 @@ function M(e) {
     viewerIds: i
   } = e, a = R[t];
   if (null == a && null != n) {
-    null == T[t] && (S[t] = null);
+    null == S[t] && (T[t] = null);
     let e = (0, _.my)(t);
-    null == S[t] && null == A[t] && (S[t] = (0, p.L2)(e, b.Z));
+    null == T[t] && null == A[t] && (T[t] = (0, p.L2)(e, b.Z));
     let o = new f.A({
       streamRegion: r,
-      streamApplication: S[t],
+      streamApplication: T[t],
       streamSourceType: W(A[t]),
       actionContext: I[t],
       numViewers: null != i ? i.length : 0,
@@ -300,8 +300,8 @@ let z = new K(u.Z, !E.Z.isSupported() || __OVERLAY__ ? {} : {
   RTC_CONNECTION_UPDATE_ID: Z,
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: V,
   STREAM_START: x,
-  STREAM_STOP: k,
-  STREAM_CREATE: M,
+  STREAM_STOP: M,
+  STREAM_CREATE: k,
   STREAM_SERVER_UPDATE: j,
   STREAM_UPDATE: G,
   STREAM_DELETE: B,

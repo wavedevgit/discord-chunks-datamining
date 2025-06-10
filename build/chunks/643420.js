@@ -114,7 +114,7 @@ function y(e) {
   } = i.useContext(s.h), v = (0, a.uR)(O, _), I = i.useMemo(() => ({
     triggerAnimation: () => l(!0),
     untriggerAnimation: () => l(!1)
-  }), []), S = i.useCallback(() => {
+  }), []), T = i.useCallback(() => {
     let e = null == O ? void 0 : O.getCanvas();
     if (null == e) return;
     let t = e.getBoundingClientRect();
@@ -133,9 +133,9 @@ function y(e) {
     }))
   }, [v, O]);
   return (i.useEffect(() => {
-    let e = n ? setInterval(S, h) : null;
+    let e = n ? setInterval(T, h) : null;
     return () => clearInterval(e)
-  }, [n, S]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
+  }, [n, T]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
     value: I,
     children: [t, (0, r.jsx)(a.Ji, {
       ref: y,

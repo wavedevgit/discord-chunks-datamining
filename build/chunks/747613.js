@@ -25,7 +25,7 @@ var r = n(255367),
   v = n(388032),
   I = n(140847);
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,14 +34,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -86,9 +86,9 @@ let P = 20,
   D = (0, g.hQ)(),
   L = d.Z.convert.fromCodePoint("1f44f"),
   x = (0, y.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
-  k = (0, y.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
+  M = (0, y.Mg)(f.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
 
-function M(e) {
+function k(e) {
   switch (d.Z.convert.toCodePoint(e)) {
     case "1f3fb":
       return v.intl.string(v.t.BVK5b2);
@@ -118,15 +118,15 @@ let j = e => {
       },
       delay: a
     }, "animate-always");
-    return (0, r.jsx)(_.P3F, N(T({}, s), {
+    return (0, r.jsx)(_.P3F, N(S({}, s), {
       role: "option",
       "aria-selected": 0 === o,
       onClick: () => i(n),
       className: I.diversityEmojiItem,
       children: (0, r.jsx)(c.animated.div, {
-        "aria-label": M(n),
+        "aria-label": k(n),
         className: I.diversityEmojiItemImage,
-        style: T({
+        style: S({
           backgroundImage: 'url("'.concat(l, '")')
         }, d)
       })
@@ -139,9 +139,9 @@ let j = e => {
       onClick: a,
       hasTabWrapper: s
     } = e, d = (0, m.Z)("diversity"), f = (0, _.q_F)({
-      height: (k + 2 * x) * (E.gw.length + 1),
+      height: (M + 2 * x) * (E.gw.length + 1),
       from: {
-        height: k
+        height: M
       },
       config: {
         duration: w
@@ -158,7 +158,7 @@ let j = e => {
           var {
             ref: n
           } = e, i = C(e, ["ref"]);
-          return (0, r.jsx)(c.animated.div, N(T({}, i), {
+          return (0, r.jsx)(c.animated.div, N(S({}, i), {
             id: t,
             ref: n,
             className: o()(I.diversitySelectorOptions, {

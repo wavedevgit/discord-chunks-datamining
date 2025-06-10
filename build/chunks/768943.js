@@ -85,7 +85,7 @@ function I(e) {
   a.add(r), y.set(i, a), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
 }
 
-function S(e) {
+function T(e) {
   var t;
   let n = v(e),
     r = h.get(n);
@@ -95,7 +95,7 @@ function S(e) {
   null == (t = y.get(r.saveData.channelId)) || t.delete(i), b.delete(i), E.delete(i), g = Date.now()
 }
 
-function T() {
+function S() {
   m = !0
 }
 
@@ -121,7 +121,7 @@ function R(e) {
   let {
     savedMessageData: t
   } = e;
-  return S(t)
+  return T(t)
 }
 
 function P(e) {
@@ -179,7 +179,7 @@ function x() {
   m = !0
 }
 
-function k(e) {
+function M(e) {
   let {
     channel: t
   } = e;
@@ -187,7 +187,7 @@ function k(e) {
   m = !0
 }
 
-function M(e) {
+function k(e) {
   let {
     channels: t
   } = e;
@@ -269,7 +269,7 @@ class B extends(r = i.ZP.Store) {
 }
 u(B, "displayName", "SavedMessagesStore");
 let F = new B(o.Z, {
-  POST_CONNECTION_OPEN: T,
+  POST_CONNECTION_OPEN: S,
   LOGOUT: A,
   SAVED_MESSAGES_UPDATE: N,
   SAVED_MESSAGE_CREATE: C,
@@ -280,8 +280,8 @@ let F = new B(o.Z, {
   GUILD_CREATE: x,
   GUILD_UPDATE: x,
   GUILD_DELETE: x,
-  CHANNEL_CREATE: k,
-  CHANNEL_UPDATES: M,
+  CHANNEL_CREATE: M,
+  CHANNEL_UPDATES: k,
   CHANNEL_DELETE: j,
   GUILD_MEMBER_UPDATE: U,
   GUILD_ROLE_CREATE: x,

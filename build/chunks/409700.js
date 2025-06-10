@@ -4,7 +4,7 @@ n.d(t, {
   Dp: () => N,
   Hh: () => C,
   ZP: () => R,
-  hq: () => T
+  hq: () => S
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -58,13 +58,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T() {
+function S() {
   let {
     volume: e,
     onVolumeChange: t
@@ -173,7 +173,7 @@ function C(e) {
     renderPopout: e => (0, r.jsx)(c.P3F, {
       onClick: e => e.stopPropagation(),
       onMouseOver: e => e.stopPropagation(),
-      children: t(S(v({}, e), {
+      children: t(T(v({}, e), {
         refreshPosition: h
       }))
     }),
@@ -195,7 +195,7 @@ function C(e) {
       text: a,
       position: "top",
       shouldShow: g,
-      children: t => (0, r.jsx)(c.P3F, S(v({
+      children: t => (0, r.jsx)(c.P3F, T(v({
         innerRef: m
       }, t, e), {
         "aria-label": a,
@@ -216,7 +216,7 @@ function R(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(C, {
       setTooltipShowing: i,
-      renderPopout: () => (0, r.jsx)(T, {}),
+      renderPopout: () => (0, r.jsx)(S, {}),
       tooltipText: E.intl.string(E.t["19lt29"]),
       position: "top",
       children: (0, r.jsx)(c.gj8, {

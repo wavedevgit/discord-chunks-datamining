@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -137,12 +137,12 @@ let R = function(e) {
   } = e, d = E.jU.useSetting(), y = (0, s.e7)([h.Z], () => h.Z.getSoundById(a), [a]), v = i.useMemo(() => {
     var e;
     return null != (e = (0, f.Z)(t, n, a, o)) ? e : y
-  }, [t, n, a, o, y]), S = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), N = (0, u.X0)({
+  }, [t, n, a, o, y]), T = (0, s.e7)([b.Z], () => b.Z.getChannel(t)), N = (0, u.X0)({
     location: "SoundboardMention"
   }), R = i.useRef(null), {
     isPlaying: P,
     playSound: w
-  } = (0, p.Z)(v, S), D = i.useCallback(async () => {
+  } = (0, p.Z)(v, T), D = i.useCallback(async () => {
     if (await w()) {
       var e;
       null == (e = R.current) || e.addAnimation()
@@ -154,7 +154,7 @@ let R = function(e) {
     containerClassName: O.jumboContainer,
     className: O.jumboButton,
     sound: v,
-    channel: S,
+    channel: T,
     onSelectItem: D,
     isPlayingSoundOverride: P,
     isSoundmoji: !0,
@@ -174,7 +174,7 @@ let R = function(e) {
     tooltipContentClassName: O.tooltipContainer,
     position: "top",
     delay: 500,
-    children: e => (0, r.jsx)("span", T(I({}, e), {
+    children: e => (0, r.jsx)("span", S(I({}, e), {
       children: (0, r.jsx)(C, {
         sound: v,
         playSound: D,

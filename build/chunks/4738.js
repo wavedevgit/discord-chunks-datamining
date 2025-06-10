@@ -146,7 +146,7 @@ function h(e) {
     }, e.key)
   }
 
-  function S(e) {
+  function T(e) {
     let {
       pages: t,
       hasMultiplePages: n
@@ -178,6 +178,6 @@ function h(e) {
     maxVisiblePages: a,
     hideMaxPage: m,
     onPageChange: b,
-    children: S
+    children: T
   })
 }

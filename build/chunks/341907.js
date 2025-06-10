@@ -7,8 +7,8 @@ n.r(t), n.d(t, {
   openAppWithQuest: () => Z,
   openDisclosureModal: () => j,
   openQuestInGameRewardModal: () => x,
-  openQuestMinorEnrollmentBlockModal: () => M,
-  openQuestOrbsRewardModal: () => k,
+  openQuestMinorEnrollmentBlockModal: () => k,
+  openQuestOrbsRewardModal: () => M,
   openQuestsNitroRewardModal: () => L,
   openQuestsRewardCodeModal: () => D,
   openVideoQuestModal: () => F
@@ -35,8 +35,8 @@ var i = n(772848),
   O = n(61115),
   v = n(150560),
   I = n(46140),
-  S = n(981631),
-  T = n(49898);
+  T = n(981631),
+  S = n(49898);
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -126,7 +126,7 @@ function x(e, t) {
   })
 }
 
-function k(e, t) {
+function M(e, t) {
   (0, s.ZDy)(async () => {
     let {
       default: i
@@ -138,7 +138,7 @@ function k(e, t) {
   })
 }
 
-function M(e, t) {
+function k(e, t) {
   (0, s.ZDy)(async () => {
     let {
       default: i
@@ -181,8 +181,8 @@ function U() {
   });
   let n = null != t ? "#".concat(t) : "";
   c.Z.setState({
-    selectedTab: T.GlobalDiscoveryTab.QUESTS
-  }), (0, l.xf)(), (0, d.uL)(S.Z5c.QUEST_HOME + n)
+    selectedTab: S.GlobalDiscoveryTab.QUESTS
+  }), (0, l.xf)(), (0, d.uL)(T.Z5c.QUEST_HOME + n)
 }
 
 function G(e) {
@@ -249,13 +249,13 @@ function V(e) {
 function Z(e) {
   let t = V(e),
     n = (0, a.zS)(t);
-  null != n && _.default.track(S.rMx.DEEP_LINK_CLICKED, {
+  null != n && _.default.track(T.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, o.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), p.Z.launch(t, t => {
     t || (0, d.dL)({
-      pathname: S.Z5c.QUEST_HOME,
+      pathname: T.Z5c.QUEST_HOME,
       hash: e
     })
   })

@@ -94,8 +94,8 @@ function v(e) {
     children: E,
     onClick: v,
     isActive: I,
-    onMouseEnter: S,
-    onMouseLeave: T,
+    onMouseEnter: T,
+    onMouseLeave: S,
     onFocus: A,
     onBlur: N,
     pulse: C,
@@ -105,7 +105,7 @@ function v(e) {
     "aria-expanded": D,
     "aria-haspopup": L,
     "aria-controls": x
-  } = e, k = (0, u.Q3)("ChannelTextAreaButton"), M = (0, l.Yzy)(null != E, g(h({}, O), {
+  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), k = (0, l.Yzy)(null != E, g(h({}, O), {
     keys: e => e ? "children" : "icon"
   })), j = e => {
     let {
@@ -116,8 +116,8 @@ function v(e) {
       children: [(0, r.jsx)(c.ZP, {
         className: _.iconMask,
         mask: c.QS.CHAT_INPUT_BUTTON_NOTIFICATION,
-        width: k ? y : b,
-        height: k ? y : b,
+        width: M ? y : b,
+        height: M ? y : b,
         children: t
       }), (0, r.jsx)("span", {
         className: _.notificationDot
@@ -139,8 +139,8 @@ function v(e) {
       [_.pulseButton]: C
     }),
     onClick: v,
-    onMouseEnter: S,
-    onMouseLeave: T,
+    onMouseEnter: T,
+    onMouseLeave: S,
     onFocus: A,
     onBlur: N,
     focusProps: {
@@ -149,7 +149,7 @@ function v(e) {
         bottom: 4
       }
     },
-    children: [M((e, t, n) => {
+    children: [k((e, t, n) => {
       let {
         key: i
       } = n;

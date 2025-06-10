@@ -34,7 +34,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -146,7 +146,7 @@ function R(e) {
       })
     }, [u, p, n, f]),
     m = i.useCallback(() => {
-      null != u && (0, l.h7j)(e => (0, r.jsx)(l.Y0X, A(S({
+      null != u && (0, l.h7j)(e => (0, r.jsx)(l.Y0X, A(T({
         className: v.__invalid_modal
       }, e), {
         size: l.CgR.DYNAMIC,
@@ -256,12 +256,12 @@ function D(e) {
     size: h = y.q.MEDIUM,
     canEdit: g = !0,
     hideFileName: I = !1,
-    clip: T
-  } = e, N = null != T, C = (h = N ? y.q.CLIP : h) === y.q.SMALL, R = (0, s.e7)([m.Z], () => {
+    clip: S
+  } = e, N = null != S, C = (h = N ? y.q.CLIP : h) === y.q.SMALL, R = (0, s.e7)([m.Z], () => {
     var e;
     return null == (e = m.Z.getChannel(t)) ? void 0 : e.guild_id
   }), P = e => {
-    e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, A(S({}, e), {
+    e.stopPropagation(), (0, l.h7j)(e => (0, r.jsx)(u.default, A(T({}, e), {
       draftType: n,
       upload: a,
       channelId: t,
@@ -353,10 +353,10 @@ function D(e) {
     }), N && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(f.Z, {
         className: v.clipsFooter,
-        createdAt: E.default.extractTimestamp(T.id),
-        participantIds: T.users,
-        applicationId: T.applicationId,
-        title: T.name,
+        createdAt: E.default.extractTimestamp(S.id),
+        participantIds: S.users,
+        applicationId: S.applicationId,
+        title: S.name,
         guildId: R
       }), (0, r.jsx)(l.IGR, {
         color: _.Z.BG_BRAND,

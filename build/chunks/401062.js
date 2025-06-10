@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Lx: () => S,
+  Lx: () => T,
   kq: () => I,
   vy: () => v,
   yX: () => y
@@ -80,7 +80,7 @@ function I(e, t, n, r) {
     if (d.signal.aborted) return
   }), (0, u.Z)(null != r ? r : [], n, t, c.jy.DEFAULT)
 }
-let S = async e => {
+let T = async e => {
   let {
     channel: t,
     emoji: n,
@@ -119,7 +119,7 @@ let S = async e => {
       })
     }
   }
-}, T = {
+}, S = {
   [g.q.BASIC]: "Basic",
   [g.q.PREMIUM]: "Premium"
 }, A = (e, t, n, r) => {
@@ -130,7 +130,7 @@ let S = async e => {
     managed: l,
     managedExternal: c,
     animated: u
-  } = (0, _.sp)([t], e.getGuildId()), d = T[r];
+  } = (0, _.sp)([t], e.getGuildId()), d = S[r];
   s.ZP.trackWithMetadata(E.rMx.VOICE_CHANNEL_EFFECT_SENT, {
     channel_id: e.id,
     guild_id: e.getGuildId(),

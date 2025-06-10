@@ -42,8 +42,8 @@ let g = [],
   O = null,
   v = !1,
   I = !1,
-  S = p.QZA.CLOSED,
-  T = {},
+  T = p.QZA.CLOSED,
+  S = {},
   A = !1,
   N = null;
 
@@ -79,11 +79,11 @@ function P(e) {
     let e = z(O.id);
     null != e && (O = e)
   }
-  b = null, S = p.QZA.OPEN, T = {}, A = !1
+  b = null, T = p.QZA.OPEN, S = {}, A = !1
 }
 
 function w() {
-  r = null, g = [], E = [], b = null, y = null, O = null, S = p.QZA.CLOSED, A = !1
+  r = null, g = [], E = [], b = null, y = null, O = null, T = p.QZA.CLOSED, A = !1
 }
 let D = s().debounce(() => {
   A && (null != y ? s().isEqual(y, K(y.id)) && (A = !1) : null != O && s().isEqual(O, z(O.id)) && (A = !1), A || X.emitChange())
@@ -105,14 +105,14 @@ function x(e) {
   O = m({}, O), null != t.name && O.name !== t.name && (O.name = t.name, A = !0), void 0 !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, A = !0), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, A = !0), A && D()
 }
 
-function k() {
-  S = p.QZA.SUBMITTING, T = {}
+function M() {
+  T = p.QZA.SUBMITTING, S = {}
 }
 
-function M(e) {
+function k(e) {
   var t;
-  if (S !== p.QZA.SUBMITTING) return !1;
-  S = p.QZA.OPEN, T = null != (t = e.errors) ? t : {}
+  if (T !== p.QZA.SUBMITTING) return !1;
+  T = p.QZA.OPEN, S = null != (t = e.errors) ? t : {}
 }
 
 function j(e) {
@@ -120,7 +120,7 @@ function j(e) {
     guildId: t,
     integrations: n
   } = e;
-  if (null == r || t !== r.id || S === p.QZA.SUBMITTING) return !1;
+  if (null == r || t !== r.id || T === p.QZA.SUBMITTING) return !1;
   for (let e of (I = !1, n))
     if (null == g.find(t => {
         let {
@@ -152,7 +152,7 @@ function U(e) {
     channelId: n,
     webhooks: i
   } = e;
-  if (v = !1, null != r && t === r.id && null != i && S !== p.QZA.SUBMITTING) {
+  if (v = !1, null != r && t === r.id && null != i && T !== p.QZA.SUBMITTING) {
     for (let e = E.length - 1; e >= 0; e--) {
       let t = E[e];
       if (null != n && (null == t ? void 0 : t.channel_id) !== n) continue;
@@ -181,7 +181,7 @@ function G(e) {
   let {
     commandId: t
   } = e;
-  b = t, y = null, O = null, T = {}, A = !0
+  b = t, y = null, O = null, S = {}, A = !0
 }
 
 function B(e) {
@@ -189,7 +189,7 @@ function B(e) {
     commandId: t
   } = e;
   if (null == b || b !== t) return !1;
-  b = null, T = {}, A = !1
+  b = null, S = {}, A = !1
 }
 
 function F(e) {
@@ -197,11 +197,11 @@ function F(e) {
     integrationId: t
   } = e, n = K(t);
   if (null == n) return !1;
-  y = n, b = null, O = null, T = {}, A = !1
+  y = n, b = null, O = null, S = {}, A = !1
 }
 
 function V() {
-  y = null, T = {}, A = !1
+  y = null, S = {}, A = !1
 }
 
 function Z(e) {
@@ -209,11 +209,11 @@ function Z(e) {
     webhookId: t
   } = e, n = z(t);
   if (null == n) return !1;
-  O = n, b = null, y = null, T = {}, A = !1
+  O = n, b = null, y = null, S = {}, A = !1
 }
 
 function H() {
-  O = null, T = {}, A = !1
+  O = null, S = {}, A = !1
 }
 
 function Y() {
@@ -267,10 +267,10 @@ class q extends(a = l.ZP.Store) {
     return O
   }
   get formState() {
-    return S
+    return T
   }
   getErrors() {
-    return T
+    return S
   }
   getSection() {
     return null != i ? i : p.b4C.OVERVIEW
@@ -316,7 +316,7 @@ let X = new q(c.Z, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_CLOSE: w,
     GUILD_SETTINGS_LOADED_INTEGRATIONS: j,
     WEBHOOKS_UPDATE: U,
-    INTEGRATION_SETTINGS_SUBMITTING: k,
-    INTEGRATION_SETTINGS_SAVE_FAILURE: M
+    INTEGRATION_SETTINGS_SUBMITTING: M,
+    INTEGRATION_SETTINGS_SAVE_FAILURE: k
   }),
   Q = X

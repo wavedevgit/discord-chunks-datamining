@@ -28,8 +28,8 @@ var r = n(255367),
   O = n(370370),
   v = n(107062),
   I = n(91140),
-  S = n(227172),
-  T = n(551228),
+  T = n(227172),
+  S = n(551228),
   A = n(678869),
   N = n(278399),
   C = n(886217),
@@ -39,9 +39,9 @@ var r = n(255367),
   D = n(268010),
   L = n(797342),
   x = n(206583),
-  k = n(921944);
+  M = n(921944);
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -57,7 +57,7 @@ function j(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -125,7 +125,7 @@ let Y = e => {
           entry: t
         }));
       case l.s.LISTENED_SESSION:
-        return (0, r.jsx)(T.ZP, G(j({}, n), {
+        return (0, r.jsx)(S.ZP, G(j({}, n), {
           entry: t
         }));
       case l.s.LAUNCHED_ACTIVITY:
@@ -167,7 +167,7 @@ let Y = e => {
       i = B(e, ["entry"]);
     switch (n.content_type) {
       case l.s.PLAYED_GAME:
-        return (0, r.jsx)(S.Z, G(j({}, i), {
+        return (0, r.jsx)(T.Z, G(j({}, i), {
           entry: n
         }));
       case l.s.WATCHED_MEDIA:
@@ -213,16 +213,16 @@ let Y = e => {
       v = (0, s.JA)("".concat(a)),
       I = null == (t = b.default.getCurrentUser()) ? void 0 : t.isStaff(),
       {
-        isRich: S,
-        appName: T
+        isRich: T,
+        appName: S
       } = (0, L.n)(m.entry),
       A = i.useMemo(() => ({
         entry: m.entry,
         channelId: m.channel.id,
         guildId: m.channel.guild_id,
         requestId: m.requestId,
-        richPresenceName: S ? T : void 0
-      }), [T, m.channel.guild_id, m.channel.id, m.entry, m.requestId, S]),
+        richPresenceName: T ? S : void 0
+      }), [S, m.channel.guild_id, m.channel.id, m.entry, m.requestId, T]),
       N = i.useRef(!1),
       [C, R] = i.useState(!1),
       [P, w] = i.useState(!1),
@@ -230,7 +230,7 @@ let Y = e => {
     i.useEffect(() => {
       C && D && w(!0)
     }, [C, D]);
-    let M = i.useCallback(e => {
+    let k = i.useCallback(e => {
         I && (0, f.jW)(e, async () => {
           let {
             default: e
@@ -263,7 +263,7 @@ let Y = e => {
       ref: p,
       onMouseEnter: () => {
         m.entry.content_type !== l.s.LEADERBOARD || (0, h.un)(u.z.LEADERBOARD_NUX_COACHMARK) || (0, h.EW)(u.z.LEADERBOARD_NUX_COACHMARK, {
-          dismissAction: k.L.SECONDARY
+          dismissAction: M.L.SECONDARY
         }), N.current = !0, setTimeout(() => {
           N.current && R(!0), V(A)
         }, 100)
@@ -309,7 +309,7 @@ let Y = e => {
             onClick: () => {
               C || R(!0)
             },
-            onContextMenu: M,
+            onContextMenu: k,
             children: (0, r.jsx)(Y, G(j({}, m), {
               selected: n,
               hovered: N.current

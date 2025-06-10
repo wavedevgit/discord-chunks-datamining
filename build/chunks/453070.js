@@ -5,11 +5,11 @@ n.d(t, {
   LZ: () => D,
   Pq: () => v,
   RJ: () => P,
-  Sd: () => k,
+  Sd: () => M,
   XW: () => x,
-  el: () => S,
+  el: () => T,
   fP: () => A,
-  fQ: () => T,
+  fQ: () => S,
   t$: () => I
 }), n(539854), n(388685), n(290780);
 var r = n(73800),
@@ -42,7 +42,7 @@ let v = e => {
     let t = o.Wp.useSetting();
     return (0, b.WD)(t, e)
   },
-  S = e => {
+  T = e => {
     let {
       collapsedStickersCategories: t,
       filteredStickers: n,
@@ -73,9 +73,9 @@ let v = e => {
             v = d.findIndex(e => e.type === E.Ih.RECENT),
             I = t.length;
           null != i && s === i.id && o && t.length < (0, f.A3)(i.premiumTier) && I++;
-          let S = Math.ceil(I / e);
-          p[g] = r ? 0 : S;
-          for (let a = 0; a < S; a++) {
+          let T = Math.ceil(I / e);
+          p[g] = r ? 0 : T;
+          for (let a = 0; a < T; a++) {
             let o = a * e,
               s = o + e,
               l = t.slice(o, s).map((e, t) => ({
@@ -113,7 +113,7 @@ let v = e => {
       }
     }, [t, n, i, o, s, u, d])
   },
-  T = e => {
+  S = e => {
     let t = (0, i.e7)([d.default], () => d.default.getCurrentUser());
     return (0, i.e7)([g.Z], () => {
       for (let n of g.Z.getAllStickersIterator())
@@ -263,7 +263,7 @@ let L = e => {
       })()
     }, [t]), c) ? [e, s] : [null != n ? n : null, s]
   },
-  k = e => {
+  M = e => {
     let t = L(e);
     return r.useMemo(() => t.filter(e => e.type === E.Ih.EMPTY_GUILD_UPSELL || e.stickers.length > 0, []), [t])
   }

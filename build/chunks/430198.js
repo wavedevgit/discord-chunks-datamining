@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685);
 var r, i = n(149765),
   a = n(442837),
@@ -39,7 +39,7 @@ function I(e, t) {
   return null != r && r.roles.includes(e.id)
 }
 
-function S(e) {
+function T(e) {
   let {
     guildId: t,
     role: n,
@@ -48,12 +48,12 @@ function S(e) {
   return !!(0, d.Z)(n) && !!(r || (0, d.h)(null != n ? n : void 0) || I(n, t))
 }
 
-function T(e, t) {
+function S(e, t) {
   if (!t.hasFeature(b.oNc.CREATOR_MONETIZABLE) && !t.hasFeature(b.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) return !1;
   let n = _.Z.isViewingServerShop(t.id);
   for (let r of Object.keys(e.permissionOverwrites)) {
     let i = g.Z.getRole(t.id, r);
-    if (!S({
+    if (!T({
         guildId: t.id,
         role: i,
         isPreviewingRoles: n
@@ -66,7 +66,7 @@ function T(e, t) {
     o = (0, f.wB)(e, e.permissionOverwrites[t.id]);
   if (a && !o) {
     for (let e of Object.values(g.Z.getRoles(t.id)))
-      if (S({
+      if (T({
           guildId: t.id,
           role: e,
           isPreviewingRoles: n
@@ -83,7 +83,7 @@ function A(e) {
   let r = h.Z.getMutableGuildChannelsForGuild(e);
   for (let e in r) {
     let i = r[e];
-    T(i, t) && n.add(i.id)
+    S(i, t) && n.add(i.id)
   }
 }
 
@@ -95,7 +95,7 @@ function N(e, t) {
   let i = g.Z.getGuild(r.getGuildId());
   if (null == i) return !1;
   let a = n.has(t),
-    o = T(r, i);
+    o = S(r, i);
   return a !== o && (o ? n.add(t) : n.delete(t), !0)
 }
 
@@ -146,7 +146,7 @@ function x(e) {
   } = e;
   v.add(t)
 }
-class k extends(r = a.ZP.Store) {
+class M extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(g.Z, h.Z, _.Z), c.Zo.subscribe({
       location: "1"
@@ -167,8 +167,8 @@ class k extends(r = a.ZP.Store) {
     return !!(null != n && null != n.parent_id && p.Ec.has(null == n ? void 0 : n.type)) && this.isChannelOrThreadParentGated(e, n.parent_id)
   }
 }
-y(k, "displayName", "GatedChannelStore");
-let M = new k(o.Z, {
+y(M, "displayName", "GatedChannelStore");
+let k = new M(o.Z, {
   CONNECTION_OPEN: C,
   OVERLAY_INITIALIZE: C,
   CACHE_LOADED_LAZY: C,

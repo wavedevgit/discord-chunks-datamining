@@ -91,7 +91,7 @@ function y(e, t, n, r) {
           path: f.C0.child(i, 0),
           offset: 0
         };
-      (n || null != r && S(e, a, l, r)) && (d.Q.voidToText(e, (0, u.sg)(s, {
+      (n || null != r && T(e, a, l, r)) && (d.Q.voidToText(e, (0, u.sg)(s, {
         mode: "plain",
         preventEmojiSurrogates: !0
       }), i), o = !0)
@@ -205,7 +205,7 @@ function O(e, t, n, r) {
       default:
         continue
     }
-    if (!T(n, t[0], l)) continue;
+    if (!S(n, t[0], l)) continue;
     let _ = (0, c.t)(e, i, r.serializedChildren, u.start),
       p = (0, c.t)(e, i, r.serializedChildren, u.start + u.text.length);
     d.Q.textToVoid(e, l, {
@@ -228,12 +228,12 @@ function v(e, t, n, r, i) {
         _.lastIndex = u.index + 1;
         continue
       }
-      if (S(e, o, {
+      if (T(e, o, {
           path: p,
           offset: u.index
         }, i)) continue;
       let a = (0, s.i)(u[0], n, r);
-      null != a && T(r, t[0], a) ? h.push({
+      null != a && S(r, t[0], a) ? h.push({
         index: u.index,
         length: u[0].length,
         node: a
@@ -258,7 +258,7 @@ function I(e, t, n, r, a) {
   })
 }
 
-function S(e, t, n, r) {
+function T(e, t, n, r) {
   let i = 0;
   for (let [r, a] of f.bN.nodes(e, {
       at: {
@@ -276,7 +276,7 @@ function S(e, t, n, r) {
   return !1
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   if ("applicationCommandOption" !== t.type) return !0;
   switch (t.optionType) {
     case a.jw.CHANNEL:

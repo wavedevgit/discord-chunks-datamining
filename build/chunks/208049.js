@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $d: () => S,
-  AA: () => T,
+  $d: () => T,
+  AA: () => S,
   Db: () => L,
   Dx: () => I,
   R: () => w,
@@ -90,7 +90,7 @@ async function I(e) {
   });
   return (0, f.o3)(l.body, t)
 }
-async function S(e) {
+async function T(e) {
   let {
     guildId: t,
     soundId: n,
@@ -110,7 +110,7 @@ async function S(e) {
   });
   return (0, f.o3)(l.body, t)
 }
-async function T(e, t) {
+async function S(e, t) {
   await a.tn.del({
     url: h.ANM.GUILD_SOUNDBOARD_SOUND(e, t),
     oldFormErrors: !0,

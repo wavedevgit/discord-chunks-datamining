@@ -75,7 +75,7 @@ function v(e) {
     analyticsLocations: m
   } = (0, u.ZP)(), {
     trackUserProfileAction: g
-  } = (0, _.KZ)(), E = i.useRef(null), b = i.useRef(null), [v, I] = (0, s.Wu)([c.Z], () => [c.Z.useReducedMotion, c.Z.keyboardModeEnabled]), S = !n || v || I ? 0 : y, T = () => {
+  } = (0, _.KZ)(), E = i.useRef(null), b = i.useRef(null), [v, I] = (0, s.Wu)([c.Z], () => [c.Z.useReducedMotion, c.Z.keyboardModeEnabled]), T = !n || v || I ? 0 : y, S = () => {
     g({
       action: "PRESS_EDIT_CUSTOM_STATUS"
     }), O(m), null == a || a()
@@ -92,14 +92,14 @@ function v(e) {
     children: [(0, r.jsx)(l.DY3, {
       targetElementRef: E,
       text: p.intl.string(p.t.bt75u7),
-      delay: S,
+      delay: T,
       "aria-label": !1,
       children: (0, r.jsx)(d.zx, {
         ref: E,
         className: o()(h.button, h.left),
         "aria-label": p.intl.string(p.t.QdHxoq),
         "aria-haspopup": "dialog",
-        onClick: T,
+        onClick: S,
         children: (0, r.jsx)(l.vdY, {
           size: "xs",
           colorClass: h.icon
@@ -107,7 +107,7 @@ function v(e) {
       })
     }), (0, r.jsx)(l.DY3, {
       text: p.intl.string(p.t.VkKicX),
-      delay: S,
+      delay: T,
       "aria-label": !1,
       children: (0, r.jsx)(d.zx, {
         ref: b,

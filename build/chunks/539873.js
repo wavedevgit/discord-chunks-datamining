@@ -55,13 +55,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -95,7 +95,7 @@ function N(e) {
     {
       ref: R
     } = C,
-    P = T(C, ["ref"]),
+    P = S(C, ["ref"]),
     w = (0, d.Q3)("AppIconSelectionGroup"),
     D = e => {
       c.Z.dispatch({
@@ -105,7 +105,7 @@ function N(e) {
     };
   return (0, r.jsx)("div", {
     ref: A,
-    children: (0, r.jsx)("div", S(v({}, P), {
+    children: (0, r.jsx)("div", T(v({}, P), {
       ref: R,
       className: b.__invalid_container,
       children: (0, r.jsxs)("div", {

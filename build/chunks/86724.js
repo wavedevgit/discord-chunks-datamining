@@ -25,8 +25,8 @@ var r = n(373793),
   O = n(42530),
   v = n(981631),
   I = n(761652);
-let S = new Set(["applicationCommandOption"]),
-  T = new Set([i.jw.ATTACHMENT]),
+let T = new Set(["applicationCommandOption"]),
+  S = new Set([i.jw.ATTACHMENT]),
   A = new Set(["line", "applicationCommand"]);
 
 function N(e, t, n, r) {
@@ -72,12 +72,12 @@ function N(e, t, n, r) {
       }
     }
     return i(n)
-  }, e.isInline = e => !!S.has(e.type) || d(e), e.isVoid = e => !!("applicationCommandOption" === e.type && T.has(e.optionType)) || f(e), e.deleteBackward = t => {
-    k(e, () => p(t))
+  }, e.isInline = e => !!T.has(e.type) || d(e), e.isVoid = e => !!("applicationCommandOption" === e.type && S.has(e.optionType)) || f(e), e.deleteBackward = t => {
+    M(e, () => p(t))
   }, e.deleteForward = t => {
-    k(e, () => h(t))
+    M(e, () => h(t))
   }, e.deleteFragment = t => {
-    k(e, () => m(t))
+    M(e, () => m(t))
   };
   let E = null,
     b = null,
@@ -160,7 +160,7 @@ function C(e) {
     let e = y.bN.richValue(i)[0],
       t = e.children[0];
     if (A.has(e.type) && y.LC.isText(t)) {
-      let e = M(t.text, s);
+      let e = k(t.text, s);
       if (null != e) return a.Po({
         channelId: s.id,
         command: e.command,
@@ -214,7 +214,7 @@ function R(e, t, n) {
     g = "".concat(I.GI).concat(u.untranslatedName, " ").toLocaleLowerCase();
   p.startsWith(h) ? _ = f.substring(h.length).trim() : p.startsWith(g) && (_ = f.substring(g.length).trim());
   let v = [],
-    S = null,
+    T = null,
     A = null;
   if (null != u.options) {
     let e = new Set;
@@ -231,12 +231,12 @@ function R(e, t, n) {
               text: i
             }]
           };
-        v.push(a), 0 === r.text.length && null == S && (S = a)
+        v.push(a), 0 === r.text.length && null == T && (T = a)
       }
     for (let r of u.options)
       if (!e.has(r.name) && (r.required || null != c[r.name])) {
         let e, i;
-        _.length > 0 && !T.has(r.type) ? (e = _, _ = "") : e = null != (i = j(n, t, r.name)) ? i : "";
+        _.length > 0 && !S.has(r.type) ? (e = _, _ = "") : e = null != (i = j(n, t, r.name)) ? i : "";
         let a = {
           type: "applicationCommandOption",
           optionName: r.name,
@@ -246,7 +246,7 @@ function R(e, t, n) {
             text: e
           }]
         };
-        v.push(a), 0 === e.length && null == S && (S = a), null == i && (A = a)
+        v.push(a), 0 === e.length && null == T && (T = a), null == i && (A = a)
       }
   }
   l = _.length > 0 ? "".concat(I.GI).concat(u.displayName, " ").concat(_.replace(/\r|\n/g, " ")) : 0 === v.length ? "".concat(I.GI).concat(u.displayName, " ") : "".concat(I.GI).concat(u.displayName), v.unshift({
@@ -270,7 +270,7 @@ function R(e, t, n) {
     })
   });
   let C = null;
-  return null != S ? (b.Q.selectCommandOption(e, S.optionName), C = S.optionName) : null != A ? (b.Q.selectCommandOption(e, A.optionName, !1), C = A.optionName) : b.Q.resetSelectionToEnd(e), null == A && D(e, u), C
+  return null != T ? (b.Q.selectCommandOption(e, T.optionName), C = T.optionName) : null != A ? (b.Q.selectCommandOption(e, A.optionName, !1), C = A.optionName) : b.Q.resetSelectionToEnd(e), null == A && D(e, u), C
 }
 
 function P(e, t, n, r) {
@@ -331,7 +331,7 @@ function w(e, t) {
 }
 
 function D(e, t) {
-  if (null == t.options || 1 !== t.options.length || !0 === t.options[0].required || T.has(t.options[0].type) || m.cu(e).length > 0 || null == m.cr(e)) return !1;
+  if (null == t.options || 1 !== t.options.length || !0 === t.options[0].required || S.has(t.options[0].type) || m.cu(e).length > 0 || null == m.cr(e)) return !1;
   let n = y.bN.getFirstText(e);
   if (null == n) return !1;
   let r = t.options[0],
@@ -409,7 +409,7 @@ function x(e) {
   }
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = m.cu(e)[0];
   t();
   let r = y.M8.toPoint(e.selection);
@@ -424,7 +424,7 @@ function k(e, t) {
   }) && b.Q.insertText(e, " ")
 }
 
-function M(e, t) {
+function k(e, t) {
   if (!e.startsWith("/")) return null;
   let n = (0, f.hV)(t, e.substring(1));
   if (!n.hasSpaceTerminator) return null;

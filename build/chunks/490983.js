@@ -23,8 +23,8 @@ var r, i = n(658722),
   O = n(799777),
   v = n(417363),
   I = n(941128),
-  S = n(70956),
-  T = n(251625),
+  T = n(70956),
+  S = n(251625),
   A = n(823379),
   N = n(780570),
   C = n(358085),
@@ -42,8 +42,8 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 let x = 5,
-  k = c()().subtract(1, "week"),
-  M = [],
+  M = c()().subtract(1, "week"),
+  k = [],
   j = "",
   U = !1;
 
@@ -54,7 +54,7 @@ function G(e, t) {
 }
 
 function B(e, t) {
-  return null != e && c()(e.createdAt).isAfter(k) && 0 === t
+  return null != e && c()(e.createdAt).isAfter(M) && 0 === t
 }
 let F = {
     [D.iEv.NAME]: G,
@@ -66,16 +66,16 @@ let F = {
     [D.iEv.LAST_PLAYED]: (e, t) => e.isNew && !t.isNew ? -1 : !e.isNew && t.isNew ? 1 : e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1,
     [D.iEv.ACTIONS]: null
   },
-  V = (0, T.oH)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
-  Z = (0, T.oH)(e => e.filter(e => null != e.libraryApplication && v.Z.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
-  H = (0, T.oH)((e, t) => e.filter(e => a()(t.toLowerCase(), e.application.name.toLowerCase()))),
-  Y = (0, T.oH)((e, t, n, r) => {
+  V = (0, S.oH)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
+  Z = (0, S.oH)(e => e.filter(e => null != e.libraryApplication && v.Z.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
+  H = (0, S.oH)((e, t) => e.filter(e => a()(t.toLowerCase(), e.application.name.toLowerCase()))),
+  Y = (0, S.oH)((e, t, n, r) => {
     let i = F[t];
     if (null == i) return e;
     let a = [...e].sort(i);
     return n === D.sHY.DESCENDING ? a.reverse() : a
   }),
-  W = (0, T.oH)(e => e.filter(e => null != e.libraryApplication && e.libraryApplication.isHidden()));
+  W = (0, S.oH)(e => e.filter(e => null != e.libraryApplication && e.libraryApplication.isHidden()));
 
 function K(e, t) {
   let n = y.Z.getCurrentUserStatisticsForApplication(e.id);
@@ -152,11 +152,11 @@ function Q() {
     n = new Set,
     r = _.ZP.getGamesSeen(!1, !1).map(e => {
       let n = g.Z.getGameByGameData(e);
-      return null != n ? (t[n.id] = e.lastFocused * S.Z.Millis.SECOND, n.id) : null
+      return null != n ? (t[n.id] = e.lastFocused * T.Z.Millis.SECOND, n.id) : null
     }),
     i = Object.values(E.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, !0)).filter(A.lm),
     a = [...r.map(r => X(r, n, t, e)).filter(A.lm), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1);
-  return U = null != g.Z.lastFetched && E.Z.fetched, !s().isEqual(a, M) && (M = a, C.isPlatformEmbedded && R.ZP.setSystemTrayApplications(Z(M).map(e => e.application).slice(0, x)), !0)
+  return U = null != g.Z.lastFetched && E.Z.fetched, !s().isEqual(a, k) && (k = a, C.isPlatformEmbedded && R.ZP.setSystemTrayApplications(Z(k).map(e => e.application).slice(0, x)), !0)
 }
 class J extends(r = u.ZP.Store) {
   initialize() {
@@ -166,13 +166,13 @@ class J extends(r = u.ZP.Store) {
     return j
   }
   get applicationViewItems() {
-    return M
+    return k
   }
   get launchableApplicationViewItems() {
-    return Z(M)
+    return Z(k)
   }
   get libraryApplicationViewItems() {
-    return V(M)
+    return V(k)
   }
   get filteredLibraryApplicationViewItems() {
     return H(this.libraryApplicationViewItems, j)
@@ -181,7 +181,7 @@ class J extends(r = u.ZP.Store) {
     return Y(this.filteredLibraryApplicationViewItems, O.Z.sortKey, O.Z.sortDirection, h.default.locale)
   }
   get hiddenLibraryApplicationViewItems() {
-    return W(M)
+    return W(k)
   }
   get hasFetchedApplications() {
     return U

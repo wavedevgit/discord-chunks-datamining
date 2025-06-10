@@ -63,7 +63,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -139,15 +139,15 @@ function x(e) {
   }), t
 }
 
-function k() {
+function M() {
   let e = document.referrer;
   return 0 === e.search("https?://(.*)google.([^/?]*)") ? "google" : 0 === e.search("https?://(.*)bing.com") ? "bing" : 0 === e.search("https?://(.*)yahoo.com") ? "yahoo" : 0 === e.search("https?://(.*)duckduckgo.com") ? "duckduckgo" : null
 }
 
-function M() {
+function k() {
   let e = {},
     t = document.referrer,
-    n = k(),
+    n = M(),
     r = "yahoo" !== n ? "q" : "p";
   if (null != n) {
     e.search_engine = n;
@@ -216,7 +216,7 @@ function F() {
 
 function V() {
   var e, t;
-  return T(I({}, {
+  return S(I({}, {
     browser_user_agent: window.navigator.userAgent || "",
     browser_version: d().version || ""
   }), {
@@ -226,7 +226,7 @@ function V() {
 
 function Z() {
   let e = {};
-  return e.referrer = document.referrer, e.referring_domain = B(), e = I({}, e, x(window.location.href), M())
+  return e.referrer = document.referrer, e.referring_domain = B(), e = I({}, e, x(window.location.href), k())
 }
 
 function H(e, t) {
@@ -255,7 +255,7 @@ function K() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == n.release_channel || "" === n.release_channel) && (n.release_channel = r.split("-")[0]);
-  let i = parseInt("407801", 10);
+  let i = parseInt("407825", 10);
   isNaN(i) || (n.client_build_number = i);
   let a = null == w || null == (e = (t = w.remoteApp).getBuildNumber) ? void 0 : e.call(t);
   return isNaN(a) || (n.native_build_number = a), n.client_event_source = W(), n.has_client_mods = (0, _.e)(), n.client_launch_id = C, n

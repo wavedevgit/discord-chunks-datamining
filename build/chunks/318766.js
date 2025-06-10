@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M,
+  Z: () => k,
   u: () => L
 }), n(388685);
 var r = n(255367),
@@ -25,9 +25,9 @@ var r = n(255367),
   O = n(921944),
   v = n(185923),
   I = n(388032),
-  S = n(3974);
+  T = n(3974);
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -76,10 +76,10 @@ let R = 20,
   x = () => {
     let e = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
     return (0, r.jsxs)("div", {
-      className: S.premiumTooltipContainer,
+      className: T.premiumTooltipContainer,
       children: [(0, r.jsx)(u.Fmz, {
-        className: o()(S.premiumUnlockAnimation, {
-          [S.reducedMotion]: e
+        className: o()(T.premiumUnlockAnimation, {
+          [T.reducedMotion]: e
         }),
         loop: !1,
         shouldAnimate: !e,
@@ -87,39 +87,39 @@ let R = 20,
         importData: () => n.e("21812").then(n.t.bind(n, 741855, 19))
       }), (0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
-        className: S.premiumTooltipText,
+        className: T.premiumTooltipText,
         children: I.intl.format(I.t["/7R4q6"], {})
       })]
     })
   };
 
-function k(e, t) {
+function M(e, t) {
   return {
     "--custom-emoji-sprite-size": "".concat(t ? w : P, "px"),
     "--custom-emoji-sprite-row": Math.floor(e / R),
     "--custom-emoji-sprite-col": e % R
   }
 }
-let M = function(e) {
+let k = function(e) {
   let {
     tabIndex: t,
     className: n,
     renderButtonContents: a,
-    active: T,
+    active: S,
     onClick: N,
     "aria-controls": R,
     focusProps: P,
     shouldShowSoundmojiCoachmark: w = !1,
-    ref: M
-  } = e, [j, U] = i.useState(!1), [G, B] = i.useState(50), F = j || T, V = (0, b.l)(S, "emojiButton", F ? "Hovered" : "Normal"), Z = k(G, (0, f.Q3)("EmojiButton")), H = i.useCallback(() => {
+    ref: k
+  } = e, [j, U] = i.useState(!1), [G, B] = i.useState(50), F = j || S, V = (0, b.l)(T, "emojiButton", F ? "Hovered" : "Normal"), Z = M(G, (0, f.Q3)("EmojiButton")), H = i.useCallback(() => {
     if (F) return;
     let e = Math.floor(Math.random() * D);
     U(!0), B(e), (0, p.x)(v.qR.EmojiButtonMouseEntered)
   }, [F, U, B]), Y = i.useCallback(() => {
     U(!1)
-  }, [U]), W = i.useCallback(() => (0, p.x)(v.qR.EmojiButtonFocused), []), K = (0, h.B4)(), [z, q] = (0, _.US)(K ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), X = z === c.z.TRIAL_NUX_EMOJI_BUTTON, Q = !T && X, J = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [$, ee] = i.useState(!1), [et, en] = i.useState(!1), er = (0, m.V2)({
+  }, [U]), W = i.useCallback(() => (0, p.x)(v.qR.EmojiButtonFocused), []), K = (0, h.B4)(), [z, q] = (0, _.US)(K ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], void 0, !0), X = z === c.z.TRIAL_NUX_EMOJI_BUTTON, Q = !S && X, J = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [$, ee] = i.useState(!1), [et, en] = i.useState(!1), er = (0, m.V2)({
     location: "EmojiButton"
-  }), [ei, ea] = (0, _.US)(w && er ? [c.z.SOUNDMOJI_COACHMARK] : []), eo = !$ && ei === c.z.SOUNDMOJI_COACHMARK && !et, es = i.useRef(null), el = null != M ? M : es;
+  }), [ei, ea] = (0, _.US)(w && er ? [c.z.SOUNDMOJI_COACHMARK] : []), eo = !$ && ei === c.z.SOUNDMOJI_COACHMARK && !et, es = i.useRef(null), el = null != k ? k : es;
   return (0, r.jsx)(u.yRy, {
     targetElementRef: el,
     renderPopout: () => (0, r.jsx)(g.Z, {
@@ -138,8 +138,8 @@ let M = function(e) {
       shouldShow: Q,
       onTooltipHide: () => ee(!1),
       onTooltipShow: () => ee(Q),
-      tooltipClassName: S.premiumTooltip,
-      tooltipContentClassName: S.premiumTooltipContainer,
+      tooltipClassName: T.premiumTooltip,
+      tooltipContentClassName: T.premiumTooltipContainer,
       children: i => (0, r.jsx)(u.zxk, C(A({}, e), {
         buttonRef: el,
         look: u.zxk.Looks.BLANK,
@@ -162,7 +162,7 @@ let M = function(e) {
         },
         "aria-label": I.intl.string(I.t["59QgaG"]),
         "aria-controls": R,
-        "aria-expanded": T,
+        "aria-expanded": S,
         "aria-haspopup": "dialog",
         focusProps: P,
         onContextMenu: i.onContextMenu,
@@ -176,15 +176,15 @@ let M = function(e) {
               value: t
             } = e;
             return (0, r.jsxs)(s.animated.div, {
-              className: S.spriteContainer,
+              className: T.spriteContainer,
               style: C(A({}, Z), {
                 transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
               }),
               children: [(0, r.jsx)("div", {
-                className: o()(S.sprite, S.spriteColored, F ? S.active : S.inactive)
+                className: o()(T.sprite, T.spriteColored, F ? T.active : T.inactive)
               }), (0, r.jsx)("div", {
-                className: o()(S.sprite, X ? S.spritePremiumColored : S.spriteGreyscale, F ? S.inactive : S.active, {
-                  [S.reducedMotion]: J
+                className: o()(T.sprite, X ? T.spritePremiumColored : T.spriteGreyscale, F ? T.inactive : T.active, {
+                  [T.reducedMotion]: J
                 })
               })]
             })

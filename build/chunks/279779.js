@@ -60,14 +60,14 @@ function I(e) {
   }), t
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = [];
   return e.forEach(e => {
     let r = O(e.user);
     null != r && (v(r, t, e.nick), n.push(r))
   }), n
 }
-class T {
+class S {
   setLimit(e) {
     this._limit = e, null != this._nextQuery && (this._nextQuery.limit = e)
   }
@@ -154,7 +154,7 @@ class A extends o.Z {
       _worker: n
     } = this;
     if (null == n) throw Error("SearchContextManager: No webworker initialized");
-    return new T(n, e, t)
+    return new S(n, e, t)
   }
   constructor(...e) {
     super(...e), b(this, "_worker", void 0), b(this, "actions", {
@@ -202,7 +202,7 @@ class A extends o.Z {
         guilds: t
       } = e;
       setTimeout(() => {
-        let e = i().flatMap(t, e => S(e.members, e.id)),
+        let e = i().flatMap(t, e => T(e.members, e.id)),
           n = i().flatMap(t, e => {
             var t;
             let n = [];
@@ -245,12 +245,12 @@ class A extends o.Z {
       } = e, {
         members: n
       } = t;
-      this.updateUsers(S(n, t.id), "guild_create")
+      this.updateUsers(T(n, t.id), "guild_create")
     }), b(this, "_handleGuildMembersChunkBatch", e => {
       let {
         chunks: t
       } = e, n = [];
-      for (let e of t) n.push(...S(e.members, e.guildId));
+      for (let e of t) n.push(...T(e.members, e.guildId));
       this.updateUsers(n, "guild_members_chunk_batch")
     }), b(this, "_handleGuildMemberUpdate", e => {
       let {
@@ -260,7 +260,7 @@ class A extends o.Z {
       } = e, i = O(n);
       null != i && (v(i, t, r), this.updateUsers([i], "guild_member_update"))
     }), b(this, "_handlePassiveUpdateV2", e => {
-      this.updateUsers(S(e.members, e.guildId), "passive_update_v2")
+      this.updateUsers(T(e.members, e.guildId), "passive_update_v2")
     }), b(this, "_handleRelationshipAdd", e => {
       let t = O(e.relationship.user);
       this.updateUsers([t], "relationship_add")

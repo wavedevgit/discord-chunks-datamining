@@ -57,7 +57,7 @@ function y(e, t) {
 let O = "migrated",
   v = .02,
   I = .01,
-  S = {
+  T = {
     [h.Odu.GUILDS]: {
       resizeX: !1,
       resizeY: !0,
@@ -375,7 +375,7 @@ let O = "migrated",
     }
   };
 
-function T(e) {
+function S(e) {
   let {
     layoutId: t,
     widgets: n,
@@ -485,7 +485,7 @@ function x(e, t, n, r, a) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     widgetId: t
   } = e;
@@ -501,7 +501,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     layoutId: t
   } = e, n = r[t];
@@ -566,7 +566,7 @@ function V(e) {
 }
 
 function Z(e) {
-  let t = S[e];
+  let t = T[e];
   if (null != t) return t.defaultSettings
 }
 class H extends(a = c.ZP.PersistedStore) {
@@ -574,14 +574,14 @@ class H extends(a = c.ZP.PersistedStore) {
     null != e && null != e.layouts && null != e.widgets ? (r = F(e.layouts), i = V(e.widgets)) : (r = {}, i = {});
     let t = !1,
       n = [];
-    s().forEach(S, (e, t) => {
+    s().forEach(T, (e, t) => {
       "REQUIRED" === e.layoutPolicy && n.push(t)
     }), s().forEach(r, (e, a) => {
       let o = this.getWidgetsForLayout(a),
         s = !1;
       for (let r of n) {
         let n = o.find(e => e.type === r);
-        if (null != n || S[r].version !== e.version) continue;
+        if (null != n || T[r].version !== e.version) continue;
         s = t = !0;
         let c = (0, l.Z)(),
           u = Z(r);
@@ -646,7 +646,7 @@ class H extends(a = c.ZP.PersistedStore) {
     }), n
   }
   getWidgetConfig(e) {
-    return S[e]
+    return T[e]
   }
   getWidgetDefaultSettings(e) {
     return Z(e)
@@ -656,7 +656,7 @@ class H extends(a = c.ZP.PersistedStore) {
     return null != t ? t.type : ""
   }
   getRegisteredWidgets() {
-    return S
+    return T
   }
   getDefaultLayout(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
@@ -791,12 +791,12 @@ g(H, "displayName", "LayoutStore"), g(H, "persistKey", "LayoutStore"), g(H, "mig
   }
 }]);
 let Y = new H(d.Z, {
-  LAYOUT_CREATE: T,
+  LAYOUT_CREATE: S,
   LAYOUT_SET_PINNED: L,
   LAYOUT_UPDATE_WIDGET: C,
   LAYOUT_SET_TOP_WIDGET: R,
-  LAYOUT_DELETE_WIDGET: k,
-  LAYOUT_DELETE_ALL_WIDGETS: M,
+  LAYOUT_DELETE_WIDGET: M,
+  LAYOUT_DELETE_ALL_WIDGETS: k,
   LAYOUT_CREATE_WIDGETS: j,
   LAYOUT_SET_WIDGET_META: w
 })

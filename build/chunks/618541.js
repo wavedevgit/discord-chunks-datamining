@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => S
+  Z: () => T
 }), n(415506);
 var a, o = n(442837),
   s = n(544891),
@@ -105,4 +105,4 @@ let I = new v(l.Z, {
     BRAINTREE_CREATE_VENMO_CLIENT_SUCCESS: g,
     BRAINTREE_TEARDOWN_VENMO_CLIENT: O
   }),
-  S = I
+  T = I

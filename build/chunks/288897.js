@@ -25,7 +25,7 @@ var r = n(255367),
   v = n(508928),
   I = n(73433);
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,14 +34,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -117,11 +117,11 @@ class P extends i.PureComponent {
       attributes: o,
       children: s
     } = e;
-    "rtl" === o.dir && (o.style = N(T({}, o.style), {
+    "rtl" === o.dir && (o.style = N(S({}, o.style), {
       textAlign: "right"
     }));
     let l = null != (t = null == a ? void 0 : a(e)) ? t : (0, b.Z)(e, n, i);
-    return null != l ? l : (0, r.jsx)("div", N(T({}, o), {
+    return null != l ? l : (0, r.jsx)("div", N(S({}, o), {
       children: s
     }))
   }
@@ -134,7 +134,7 @@ class P extends i.PureComponent {
       attributes: a,
       children: o
     } = e, s = null != (t = null == i ? void 0 : i(e)) ? t : (0, y.Z)(n, e);
-    return null != s ? s : (0, r.jsx)("span", N(T({}, a), {
+    return null != s ? s : (0, r.jsx)("span", N(S({}, a), {
       children: o
     }))
   }
@@ -323,7 +323,7 @@ class P extends i.PureComponent {
         let {
           default: e
         } = await n.e("41984").then(n.bind(n, 343602));
-        return n => (0, r.jsx)(e, N(T({}, n), {
+        return n => (0, r.jsx)(e, N(S({}, n), {
           editor: t,
           text: m.bN.getSelectedText(t, !0)
         }))
@@ -372,7 +372,7 @@ class P extends i.PureComponent {
       }) : null, (0, r.jsx)(s.mH, {
         editor: t,
         value: [...this.state.initialValue],
-        children: (0, r.jsx)(s.CX, N(T({}, y), {
+        children: (0, r.jsx)(s.CX, N(S({}, y), {
           className: o()(I.markup, v.editor, n),
           decorate: this.decorate,
           renderElement: this.renderElement,
@@ -396,7 +396,7 @@ class P extends i.PureComponent {
     })
   }
   constructor(e) {
-    super(e), S(this, "containerRef", i.createRef()), S(this, "state", void 0), this.decorate = this.decorate.bind(this), this.renderElement = this.renderElement.bind(this), this.renderLeaf = this.renderLeaf.bind(this), this.handleOnChange = this.handleOnChange.bind(this), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleKeyUp = this.handleKeyUp.bind(this), this.handleBeforeInput = this.handleBeforeInput.bind(this), this.handleCompositionStart = this.handleCompositionStart.bind(this), this.handleCompositionEnd = this.handleCompositionEnd.bind(this), this.handleFocusCapture = this.handleFocusCapture.bind(this), this.handleBlurCapture = this.handleBlurCapture.bind(this), this.handleContextMenu = this.handleContextMenu.bind(this), this.handlePasteCapture = this.handlePasteCapture.bind(this), m.bN.isEditorEmpty(e.editor) ? this.state = {
+    super(e), T(this, "containerRef", i.createRef()), T(this, "state", void 0), this.decorate = this.decorate.bind(this), this.renderElement = this.renderElement.bind(this), this.renderLeaf = this.renderLeaf.bind(this), this.handleOnChange = this.handleOnChange.bind(this), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleKeyUp = this.handleKeyUp.bind(this), this.handleBeforeInput = this.handleBeforeInput.bind(this), this.handleCompositionStart = this.handleCompositionStart.bind(this), this.handleCompositionEnd = this.handleCompositionEnd.bind(this), this.handleFocusCapture = this.handleFocusCapture.bind(this), this.handleBlurCapture = this.handleBlurCapture.bind(this), this.handleContextMenu = this.handleContextMenu.bind(this), this.handlePasteCapture = this.handlePasteCapture.bind(this), m.bN.isEditorEmpty(e.editor) ? this.state = {
       initialValue: (0, f.H2)().richValue,
       showPlaceholder: !0
     } : this.state = {

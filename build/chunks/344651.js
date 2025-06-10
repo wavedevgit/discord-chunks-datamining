@@ -25,8 +25,8 @@ var a = n(442837),
   O = n(592125),
   v = n(271383),
   I = n(819640),
-  S = n(594174),
-  T = n(979651),
+  T = n(594174),
+  S = n(979651),
   A = n(509545),
   N = n(78839),
   C = n(936101),
@@ -67,13 +67,13 @@ function x(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = j(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -99,7 +99,7 @@ let U = new d.Z("ConnectionStore"),
     };
     let r = (0, E.q_)(t),
       i = O.Z.getChannel(t.id),
-      a = null == i ? void 0 : i.merge(k(L({}, r), {
+      a = null == i ? void 0 : i.merge(M(L({}, r), {
         recipients: i.recipients,
         bitrate: null != (n = r.bitrate) ? n : i.bitrate
       }));
@@ -243,7 +243,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
   m.Z.initialGuild.measure(() => {
     a.ZP.Emitter.batched(() => {
       let t = R.Fx(e, w.Wb.identifyStartTime);
-      null != S.default.getCurrentUser() && (K({
+      null != T.default.getCurrentUser() && (K({
         type: "GUILD_CREATE",
         guild: t
       }), K({
@@ -542,7 +542,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
 }), Y(["THREAD_CREATE", "THREAD_UPDATE", "THREAD_DELETE"], e => O.o.loadGuildIds([e.guild_id]), (e, t) => {
   let {
     newly_created: n
-  } = e, r = M(e, ["newly_created"]);
+  } = e, r = k(e, ["newly_created"]);
   K({
     type: t,
     isNewlyCreated: n,
@@ -902,7 +902,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
       selfStream: e.self_stream || !1,
       requestToSpeakTimestamp: null != (t = e.request_to_speak_timestamp) ? t : null,
       discoverable: null == (n = e.discoverable) || n,
-      oldChannelId: T.Z.getUserVoiceChannelId(e.guild_id, e.user_id)
+      oldChannelId: S.Z.getUserVoiceChannelId(e.guild_id, e.user_id)
     }]
   })
 }), H(["VOICE_SERVER_UPDATE"], e => {

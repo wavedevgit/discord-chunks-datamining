@@ -101,12 +101,12 @@ function m(e) {
   }, [n]);
   let {
     focusPath: v
-  } = b, [I, S] = r.useState(!1), [T, A] = r.useState(!1), [{
+  } = b, [I, T] = r.useState(!1), [S, A] = r.useState(!1), [{
     onItemFocusMemoizer: N,
     onItemMouseEnterMemoizer: C
   }] = r.useState(() => ({
     onItemFocusMemoizer: new o.$o(e => () => {
-      S(!0), y({
+      T(!0), y({
         type: i.B.SET_FOCUS_PATH,
         path: e.split(d)
       })
@@ -140,14 +140,14 @@ function m(e) {
         null == i || i.click()
     }
   }, [O, t, v, c, g]), P = r.useCallback(() => {
-    I || S(!0)
+    I || T(!0)
   }, [I]), w = r.useCallback(e => {
-    e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && I && S(!1)
+    e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && I && T(!1)
   }, [I]), D = r.useCallback(() => {
     y({
       type: i.B.SET_FOCUS_PATH,
       path: []
-    }), S(!1)
+    }), T(!1)
   }, []), L = r.useCallback(e => e.every((e, t) => v[t] === e), [v]), x = r.useCallback(() => ({
     role: "menu",
     id: t,
@@ -157,7 +157,7 @@ function m(e) {
     onBlur: w,
     onMouseLeave: D,
     "aria-activedescendant": v.length > 0 ? (0, o.qR)(t, v.join(d)) : void 0
-  }), [t, R, P, w, D, v]), k = r.useCallback(e => {
+  }), [t, R, P, w, D, v]), M = r.useCallback(e => {
     let {
       path: n
     } = e;
@@ -166,9 +166,9 @@ function m(e) {
       tabIndex: -1,
       "aria-activedescendant": L(n) ? (0, o.qR)(t, v.join(d)) : void 0,
       focusIndex: b.focusIndex,
-      isUsingKeyboardNavigation: T
+      isUsingKeyboardNavigation: S
     }
-  }, [t, v, L, b.focusIndex, T]), M = r.useCallback(e => {
+  }, [t, v, L, b.focusIndex, S]), k = r.useCallback(e => {
     let {
       path: n,
       hasSubmenu: r = !1,
@@ -189,9 +189,9 @@ function m(e) {
   return r.useMemo(() => ({
     dispatch: O,
     getContainerProps: x,
-    getSubmenuProps: k,
-    getItemProps: M,
+    getSubmenuProps: M,
+    getItemProps: k,
     isFocused: L,
-    isUsingKeyboardNavigation: T
-  }), [O, x, k, M, L, T])
+    isUsingKeyboardNavigation: S
+  }), [O, x, M, k, L, S])
 }

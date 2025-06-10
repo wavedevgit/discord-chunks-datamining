@@ -32,8 +32,8 @@ function y(e, t, n) {
 let O = [],
   v = null,
   I = null,
-  S = new Set,
-  T = l.z.LATEST_ACTIVITY,
+  T = new Set,
+  S = l.z.LATEST_ACTIVITY,
   A = s.z.MATCH_SOME,
   N = 0,
   C = [],
@@ -44,19 +44,19 @@ let O = [],
   L = new Set,
   x = new Set;
 
-function k(e) {
+function M(e) {
   var t;
   return null != (t = h.ZP.lastMessageId(e)) ? t : e
 }
 
-function M(e) {
+function k(e) {
   let t = f.Z.getCount(e);
   return null === t || 0 === t
 }
 
 function j(e) {
   return function(t, n) {
-    return (0, b.yv)(t) ? -1 : (0, b.yv)(n) ? 1 : e === l.z.LATEST_ACTIVITY ? E.default.compare(k(n), k(t)) : E.default.compare(n, t)
+    return (0, b.yv)(t) ? -1 : (0, b.yv)(n) ? 1 : e === l.z.LATEST_ACTIVITY ? E.default.compare(M(n), M(t)) : E.default.compare(n, t)
   }
 }
 
@@ -73,7 +73,7 @@ function U(e, t) {
 }
 
 function G() {
-  C = [], r = null, I = null, S = new Set, T = l.z.LATEST_ACTIVITY, A = s.z.MATCH_SOME, N = 0, P = [], w = o().chain(O), D = o().chain(O), x.clear(), L.clear()
+  C = [], r = null, I = null, T = new Set, S = l.z.LATEST_ACTIVITY, A = s.z.MATCH_SOME, N = 0, P = [], w = o().chain(O), D = o().chain(O), x.clear(), L.clear()
 }
 
 function B() {
@@ -92,7 +92,7 @@ function F(e) {
       id: t
     } = e;
     return t
-  }).sort(j(T))
+  }).sort(j(S))
 }
 
 function V(e) {
@@ -104,8 +104,8 @@ function V(e) {
     } = e;
     return t
   }), N = 0, R = !0), 0 !== L.size && (P = P.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (P = Array.from(new Set([...P, ...x])), x.clear()), ((null == e ? void 0 : e.refreshThreadIds) || (null == e ? void 0 : e.sortThreadIds)) && (D = o().chain(P).sort(j(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(j(l.z.CREATION_DATE)));
-  let n = (T === l.z.LATEST_ACTIVITY ? D : w).value(),
-    i = (C = 0 === S.size ? n : n.filter(U(S, A))).find(e => M(e));
+  let n = (S === l.z.LATEST_ACTIVITY ? D : w).value(),
+    i = (C = 0 === T.size ? n : n.filter(U(T, A))).find(e => k(e));
   r = null == i ? null : i
 }
 
@@ -194,10 +194,10 @@ class X extends(i = c.ZP.Store) {
   }
   getThreadIds(e, t, n, r) {
     let i = e !== I,
-      a = !(0, g.OL)(n, S),
-      o = t !== T,
+      a = !(0, g.OL)(n, T),
+      o = t !== S,
       s = r !== A;
-    return I = e, S = n, T = t, A = r, i ? V({
+    return I = e, T = n, S = t, A = r, i ? V({
       refreshThreadIds: !0
     }) : o ? V({
       sortThreadIds: !0

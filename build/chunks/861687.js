@@ -24,8 +24,8 @@ var r = n(654861),
   O = n(631053),
   v = n(148959),
   I = n(815644),
-  S = n(926951),
-  T = n(166884),
+  T = n(926951),
+  S = n(166884),
   A = n(52923),
   N = n(868616),
   C = n(450109),
@@ -35,8 +35,8 @@ var r = n(654861),
   D = n(314897),
   L = n(592125),
   x = n(131951),
-  k = n(19780),
-  M = n(226961),
+  M = n(19780),
+  k = n(226961),
   j = n(936349),
   U = n(594174),
   G = n(626135),
@@ -319,7 +319,7 @@ class ev extends d.Z {
       e && (n ? t.push("force_krisp_enabled") : t.push("force_krisp_disabled"))
     }
     if (x.Z.supports(es.AN.FIXED_KEYFRAME_INTERVAL) && t.push("fixed_keyframe_interval"), 0 !== this._supportedBandwidthEstimationExperiments.length) {
-      let e = T.Z.workerExperimentString();
+      let e = S.Z.workerExperimentString();
       null != e && t.push(e)
     }
     this.context === es.Yn.DEFAULT && (0, I.f)("RtcConnection").enabled && t.push("audio_transport_cc"), A.Z.getCurrentConfig({
@@ -355,13 +355,13 @@ class ev extends d.Z {
     }), this.setState(eo.hes.AUTHENTICATING)
   }
   _handleDisconnect(e, t, n, r) {
-    var i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, v, I, S, T;
+    var i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, v, I, T, S;
     this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(r, ", state: ").concat(this.state)), t || !this._connecting || this._encountered_socket_failure || (G.default.track(eo.rMx.VOICE_CONNECTION_SOCKET_FAILURE, ed(ec({}, this._getAnalyticsProperties()), {
       hostname: this.hostname,
       connect_count: this._connectCount,
       code: n,
       reason: r
-    })), this._encountered_socket_failure = !0), k.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null == (l = this._connection) || l.wasRemoteDisconnected());
+    })), this._encountered_socket_failure = !0), M.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null == (l = this._connection) || l.wasRemoteDisconnected());
     let A = "Force Close" !== r;
     if (A) {
       let e = this._backoff.fail(this.reconnect);
@@ -428,7 +428,7 @@ class ev extends d.Z {
           reconnect: A,
           reason: r,
           duration: this.getDuration()
-        }), null == (d = this._voiceQuality) ? void 0 : d.getMosStats(), null == (f = this._voiceQuality) ? void 0 : f.getPacketStats(), null == (_ = this._voiceQuality) ? void 0 : _.getBytesStats(), null == (p = this._voiceQuality) ? void 0 : p.getBufferStats(), null == (h = this._voiceQuality) ? void 0 : h.getNetworkStats(), null == (m = this._voiceQuality) ? void 0 : m.getSystemResourceStats(), null == (g = this._voiceQuality) ? void 0 : g.getFrameOpStats(), null == (E = this._voiceQuality) ? void 0 : E.getDurationStats(), null == (b = this._voiceQuality) ? void 0 : b.getTransportStats(), null == (y = this._voiceQuality) ? void 0 : y.getE2EEStats(), null == (v = this._voiceQuality) ? void 0 : v.getAudioDeviceStats(), null == (I = this._voiceDuration) ? void 0 : I.getDurationStats(), this.getAudioDeviceStates(), null == (S = this._systemResponsiveness) ? void 0 : S.getPttQueueLatencyStats()), {
+        }), null == (d = this._voiceQuality) ? void 0 : d.getMosStats(), null == (f = this._voiceQuality) ? void 0 : f.getPacketStats(), null == (_ = this._voiceQuality) ? void 0 : _.getBytesStats(), null == (p = this._voiceQuality) ? void 0 : p.getBufferStats(), null == (h = this._voiceQuality) ? void 0 : h.getNetworkStats(), null == (m = this._voiceQuality) ? void 0 : m.getSystemResourceStats(), null == (g = this._voiceQuality) ? void 0 : g.getFrameOpStats(), null == (E = this._voiceQuality) ? void 0 : E.getDurationStats(), null == (b = this._voiceQuality) ? void 0 : b.getTransportStats(), null == (y = this._voiceQuality) ? void 0 : y.getE2EEStats(), null == (v = this._voiceQuality) ? void 0 : v.getAudioDeviceStats(), null == (I = this._voiceDuration) ? void 0 : I.getDurationStats(), this.getAudioDeviceStates(), null == (T = this._systemResponsiveness) ? void 0 : T.getPttQueueLatencyStats()), {
           media_session_id: this.getMediaSessionId(),
           channel_bitrate: null != a ? a.bitrate : null,
           cloudflare_best_region: n,
@@ -451,7 +451,7 @@ class ev extends d.Z {
           encryption_mode: this._encryptionMode,
           channel_count: this.channelIds.size,
           device_performance_class: (0, O.Z)(),
-          num_fast_udp_reconnects: null != this._connection ? null == (T = this._connection) ? void 0 : T.getNumFastUdpReconnects() : null,
+          num_fast_udp_reconnects: null != this._connection ? null == (S = this._connection) ? void 0 : S.getNumFastUdpReconnects() : null,
           parent_media_session_id: this.parentMediaSessionId,
           audio_subsystem: x.Z.getMediaEngine().getAudioSubsystem(),
           audio_layer: x.Z.getMediaEngine().getAudioLayer(),
@@ -822,7 +822,7 @@ class ev extends d.Z {
   }
   _handleBandwidthEstimationExperiment(e) {
     this._bandwidthEstimationExperiment = e;
-    let t = S.Z.getMediaEngineExperiments(e);
+    let t = T.Z.getMediaEngineExperiments(e);
     if (null !== t && 0 !== t.length) {
       var n;
       null == (n = this._connection) || n.setBandwidthEstimationExperiments(t)
@@ -1169,7 +1169,7 @@ class ev extends d.Z {
         this.logger.info("Go Live Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null == (t = this._connection) || t.setLocalVideoSinkWants(e)
       }
     }));
-    this._remoteVideoSinkWants = Q.Yy, ea.w.on(ea.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), ea.w.on(ea.e.WindowVisibilityChanged, this.windowVisibilityChanged), M.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = !0, g.TC(!1)) : this._recordingEnabled = !1, this._soundshareStats = new J.Z, V.Z.addOnlineCallback(this._handleNetworkOnline), V.Z.addOfflineCallback(this._handleNetworkOffline), (0, Z.isDesktop)() && (this.powerMonitorListener = W.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, x.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+    this._remoteVideoSinkWants = Q.Yy, ea.w.on(ea.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged), ea.w.on(ea.e.WindowVisibilityChanged, this.windowVisibilityChanged), k.ZP.shouldRecordNextConnection() ? (this._recordingEnabled = !0, g.TC(!1)) : this._recordingEnabled = !1, this._soundshareStats = new J.Z, V.Z.addOnlineCallback(this._handleNetworkOnline), V.Z.addOfflineCallback(this._handleNetworkOffline), (0, Z.isDesktop)() && (this.powerMonitorListener = W.Z.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, x.Z.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
       this._supportedBandwidthEstimationExperiments = e
     })
   }

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => S
 });
 var r = n(255367);
 n(73800);
@@ -49,10 +49,10 @@ let b = {
     trailing: !0
   });
 
-function S(e) {
+function T(e) {
   return e.displayName
 }
-let T = {
+let S = {
   stores: [c.Z, l.Z],
   showEmpty: !0,
   matches(e, t, n, r, i) {
@@ -135,7 +135,7 @@ let T = {
       index: n,
       options: r
     } = e, i = t[n];
-    return r.insertText(S(i)), {
+    return r.insertText(T(i)), {
       type: p.z2.CHOICE
     }
   }

@@ -51,17 +51,17 @@ let u = [],
     } = e;
     r = t, i = Date.now() + Math.min(E * 2 ** m, b), ++m, y(u), f = !1
   },
-  S = e => {
+  T = e => {
     let {
       id: t
     } = e;
     h = t
   },
-  T = () => {
+  S = () => {
     y(u), h = null, i = void 0, f = !1
   },
   A = e => {
-    T()
+    S()
   };
 class N extends(a = s.ZP.Store) {
   get isFetching() {
@@ -91,6 +91,6 @@ let C = new N(l.Z, {
   USER_PROFILE_EFFECTS_FETCH: O,
   USER_PROFILE_EFFECTS_FETCH_SUCCESS: v,
   USER_PROFILE_EFFECTS_FETCH_FAILURE: I,
-  PROFILE_EFFECTS_SET_TRY_IT_OUT: S,
+  PROFILE_EFFECTS_SET_TRY_IT_OUT: T,
   LOGOUT: A
 })

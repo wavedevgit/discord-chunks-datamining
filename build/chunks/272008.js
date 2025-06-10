@@ -4,17 +4,17 @@ n.d(t, {
   AH: () => C,
   Ag: () => U,
   CS: () => I,
-  EW: () => M,
+  EW: () => k,
   OR: () => j,
   QB: () => R,
-  T0: () => k,
+  T0: () => M,
   Wf: () => L,
   cT: () => F,
   eT: () => x,
   gU: () => Z,
   gl: () => w,
-  is: () => S,
-  it: () => T,
+  is: () => T,
+  it: () => S,
   lL: () => V,
   m0: () => N,
   nE: () => D,
@@ -107,13 +107,13 @@ async function I(e) {
     errorHints: []
   }
 }
-async function S(e) {
+async function T(e) {
   await i.tn.post({
     url: E.ANM.QUEST_ON_CONSOLE_STOP(e),
     rejectWithError: !1
   })
 }
-async function T() {
+async function S() {
   await i.tn.del({
     url: E.ANM.QUESTS_RESET_RECENT_QUEST_COMPLETIONS,
     rejectWithError: !1
@@ -362,7 +362,7 @@ async function x(e) {
     })
   }
 }
-async function k(e) {
+async function M(e) {
   try {
     a.Z.dispatch({
       type: "QUESTS_DOCK_RESET_SOFT_DISMISSAL"
@@ -385,7 +385,7 @@ async function k(e) {
   }
 }
 
-function M(e) {
+function k(e) {
   a.Z.dispatch({
     type: "QUESTS_DELIVERY_OVERRIDE",
     questId: e

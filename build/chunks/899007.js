@@ -25,7 +25,7 @@ var r = n(255367),
   v = n(474936),
   I = n(487784);
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,14 +34,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -71,7 +71,7 @@ function R(e) {
     displayProfile: n,
     guildId: a,
     channelId: h,
-    themeType: S,
+    themeType: T,
     animateOnHover: A,
     onOpenProfile: R,
     className: P,
@@ -82,7 +82,7 @@ function R(e) {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
     trackUserProfileAction: x
-  } = (0, m.KZ)(), k = p.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, v.p9.TIER_2), M = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+  } = (0, m.KZ)(), M = p.ZP.isPremiumAtLeast(null == n ? void 0 : n.premiumType, v.p9.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
     live: j
   } = (0, g.Z)(t.id), [U] = j, {
     status: G,
@@ -90,7 +90,7 @@ function R(e) {
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(U) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), F = void 0 !== w ? w : G, V = [y.lY.MODAL, y.lY.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = o()(I.avatar, P), {
+  })), F = void 0 !== w ? w : G, V = [y.lY.MODAL, y.lY.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = o()(I.avatar, P), {
     avatarDecorationSrc: H,
     avatarSrc: Y,
     eventHandlers: W
@@ -105,16 +105,16 @@ function R(e) {
     size: V,
     "aria-label": t.username,
     imageClassName: null != R ? I.overlay : void 0,
-    status: M ? O.Skl.UNKNOWN : F,
-    statusBackdropColor: k && !M ? (0, l.QFD)(D) : void 0,
+    status: k ? O.Skl.UNKNOWN : F,
+    statusBackdropColor: M && !k ? (0, l.QFD)(D) : void 0,
     isMobile: B,
     statusTooltip: !0,
     statusTooltipDelay: y.vB
   });
-  return null == R ? (0, r.jsx)("div", N(T({}, W), {
+  return null == R ? (0, r.jsx)("div", N(S({}, W), {
     className: Z,
     children: K
-  })) : (0, r.jsx)(l.P3F, N(T({}, W), {
+  })) : (0, r.jsx)(l.P3F, N(S({}, W), {
     className: o()(Z, I.clickable),
     focusProps: {
       ringClassName: I.focusRing

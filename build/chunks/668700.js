@@ -31,9 +31,9 @@ function v(e) {
     guild: n,
     channel: v,
     onAction: I,
-    onClose: S
+    onClose: T
   } = e, {
-    themeType: T
+    themeType: S
   } = (0, m.z)(), A = (0, p.Z)(v), N = (0, s.ZP)(v), {
     canViewChannel: C,
     canConnect: R
@@ -46,7 +46,7 @@ function v(e) {
       let e = e => {
         e.stopPropagation(), (0, f.X)(n.id), null == I || I({
           action: "OPEN_VOICE_GUILD"
-        }), null == S || S()
+        }), null == T || T()
       };
       return (0, r.jsx)(a.DY3, {
         text: n.name,
@@ -71,7 +71,7 @@ function v(e) {
       let e = e => {
         e.stopPropagation(), o.default.selectVoiceChannel(v.id), (0, d.Kh)(v.id), null == I || I({
           action: "OPEN_VOICE_CHANNEL"
-        }), null == S || S()
+        }), null == T || T()
       };
       return (0, r.jsx)(a.P3F, {
         onClick: e,
@@ -86,7 +86,7 @@ function v(e) {
         })
       })
     },
-    D = T !== E.lY.MODAL && T !== E.lY.MODAL_V2 && T !== E.lY.SIDEBAR;
+    D = S !== E.lY.MODAL && S !== E.lY.MODAL_V2 && S !== E.lY.SIDEBAR;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h.Z, {
       className: y.voiceChannelDivider

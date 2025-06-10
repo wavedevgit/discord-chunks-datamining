@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => T
 }), n(388685);
 var r, i = n(512722),
   a = n.n(i),
@@ -168,4 +168,4 @@ Promise.resolve().then(n.bind(n, 626135)).then(e => {
     }
   })
 });
-let S = I
+let T = I

@@ -68,7 +68,7 @@ function c(e) {
       keywords: E,
       contains: []
     },
-    S = {
+    T = {
       begin: ".?html`",
       end: "",
       starts: {
@@ -78,7 +78,7 @@ function c(e) {
         subLanguage: "xml"
       }
     },
-    T = {
+    S = {
       begin: ".?css`",
       end: "",
       starts: {
@@ -133,7 +133,7 @@ function c(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, A, N, {
+    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, {
       match: /\$\d+/
     }, v];
   I.contains = R.concat({
@@ -183,13 +183,13 @@ function c(e) {
         _: [...i, ...a]
       }
     },
-    k = {
+    M = {
       label: "use_strict",
       className: "meta",
       relevance: 10,
       begin: /^\s*['"]use (strict|asm)['"]/
     },
-    M = {
+    k = {
       variants: [{
         match: [/function/, /\s+/, d, /(?=\s*\()/]
       }, {
@@ -258,7 +258,7 @@ function c(e) {
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), k, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, A, N, C, {
+    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, C, {
       match: /\$\d+/
     }, v, x, {
       scope: "attr",
@@ -316,7 +316,7 @@ function c(e) {
           contains: ["self"]
         }]
       }]
-    }, M, {
+    }, k, {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",

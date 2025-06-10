@@ -64,9 +64,9 @@ let d = i.forwardRef(function(e, t) {
     onMouseLeave: O,
     buttonProps: v,
     "aria-label": I
-  } = e, S = i.useRef(null);
-  return i.useImperativeHandle(t, () => S.current), (0, r.jsxs)(n, {
-    ref: S,
+  } = e, T = i.useRef(null);
+  return i.useImperativeHandle(t, () => T.current), (0, r.jsxs)(n, {
+    ref: T,
     className: c,
     style: d,
     onClick: _,
@@ -77,7 +77,7 @@ let d = i.forwardRef(function(e, t) {
     onContextMenu: h,
     children: [(0, r.jsx)(a.P, u(l({}, v), {
       focusProps: l({
-        ringTarget: S
+        ringTarget: T
       }, f),
       className: o.focusTarget,
       "aria-label": I,

@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(541099),
   v = n(998698),
   I = n(271668),
-  S = n(404295),
-  T = n(326133),
+  T = n(404295),
+  S = n(326133),
   A = n(405701),
   N = n(570220),
   C = n(540059),
@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(151574),
   L = n(368844),
   x = n(41776),
-  k = n(849522),
-  M = n(780291),
+  M = n(849522),
+  k = n(780291),
   j = n(328908),
   U = n(576645),
   G = n(913663),
@@ -168,14 +168,14 @@ function eI(e, t, a, o) {
   }
 }
 
-function eS(e, t, n) {
+function eT(e, t, n) {
   return i.useCallback(r => {
     var i, a;
     t === et.Ie.CREATE_FORUM_POST ? null == (a = n.current) || a.insertGIF(r) : e(r.url, void 0, void 0, !0), (0, R._Q)(), null == (i = n.current) || i.focus()
   }, [n, e, t])
 }
 
-function eT(e) {
+function eS(e) {
   return i.useCallback(t => {
     let {
       emoji: n,
@@ -349,7 +349,7 @@ function ex(e, t, n) {
   }
 }
 
-function ek(e, t, n) {
+function eM(e, t, n) {
   let r = i.useCallback(() => {
     var r, i;
     return !!(!n && (null == (r = t.current) ? void 0 : r.onTabOrEnter(!1))) || (null == (i = e.current) ? void 0 : i.onTabOrEnter(!1)) || !1
@@ -367,7 +367,7 @@ function ek(e, t, n) {
   }
 }
 
-function eM(e, t, n, r) {
+function ek(e, t, n, r) {
   var i, a;
   let o = (0, w.pR)(),
     s = (0, _.e7)([G.Z], () => G.Z.getStickerPreview(e.id, t.drafts.type)),
@@ -428,7 +428,7 @@ function ej(e, t) {
   } = (0, y.ZP)(b.Z.CHANNEL_TEXT_AREA), e9 = (0, C.R6)("ChannelTextAreaContainer"), te = (0, C.Q3)("ChannelTextAreaContainer"), tt = ew(t), tn = i.useRef(null), tr = i.useRef(null), ti = i.useRef(null), ta = i.useRef(null);
   null == e0 || e0(tr.current);
   let to = (0, U.Nt)(),
-    ts = (0, S.h9)(ea.id),
+    ts = (0, T.h9)(ea.id),
     [tl, tc] = i.useState(!ts);
   (0, g.PM)(tt, e => {
     let {
@@ -452,17 +452,17 @@ function ej(e, t) {
     canAttachFiles: th,
     canCreateThreads: tm,
     canEveryoneSendMessages: tg
-  } = eL(ea, ep, tu, X), tE = ep.toolbarType === et.OW.STATIC, tb = !Z.dN.useSetting() && !(0, $.isAndroidWeb)() && null != window.ResizeObserver, ty = !tb || !(null == (n = ep.commands) ? void 0 : n.enabled) || !em || F !== e_.GI, tO = (0, k.Z)(), {
+  } = eL(ea, ep, tu, X), tE = ep.toolbarType === et.OW.STATIC, tb = !Z.dN.useSetting() && !(0, $.isAndroidWeb)() && null != window.ResizeObserver, ty = !tb || !(null == (n = ep.commands) ? void 0 : n.enabled) || !em || F !== e_.GI, tO = (0, M.Z)(), {
     isSubmitButtonEnabled: tv,
     fontSize: tI
   } = (0, _.cj)([E.Z], () => ({
     fontSize: E.Z.fontSize,
     isSubmitButtonEnabled: E.Z.isSubmitButtonEnabled
-  })), tS = (0, _.e7)([K.Z], () => K.Z.isEnabled()), tT = i.useRef(F);
-  tT.current = F;
+  })), tT = (0, _.e7)([K.Z], () => K.Z.isEnabled()), tS = i.useRef(F);
+  tS.current = F;
   let tA = i.useCallback((e, t, n) => {
     var r;
-    t === e_.GI && "" === tT.current && (null == (r = ep.commands) ? void 0 : r.enabled) && (null == e6 || e6()), null == eU || eU(e, t, n)
+    t === e_.GI && "" === tS.current && (null == (r = ep.commands) ? void 0 : r.enabled) && (null == e6 || e6()), null == eU || eU(e, t, n)
   }, [eU, e6, null == (a = ep.commands) ? void 0 : a.enabled]);
   eC(ep, tp);
   let {
@@ -476,7 +476,7 @@ function ej(e, t) {
     autocompleteRef: tD,
     handleMaybeShowAutocomplete: tL,
     handleHideAutocomplete: tx
-  } = eP(), tk = eS(tP, ep, tr), tM = eT(tr), tj = eA({
+  } = eP(), tM = eT(tP, ep, tr), tk = eS(tr), tj = eA({
     editorRef: tr,
     disabled: tp,
     textValue: F,
@@ -493,7 +493,7 @@ function ej(e, t) {
     handleTab: tV,
     handleEnter: tZ,
     handleMoveSelection: tH
-  } = ek(tD, tn, ty), {
+  } = eM(tD, tn, ty), {
     expressionPickerView: tY,
     shouldHideExpressionPicker: tW,
     handleAutocompleteVisibilityChange: tK,
@@ -506,7 +506,7 @@ function ej(e, t) {
   null != tu ? tQ = null == eE ? void 0 : eE(tu, td, eh.attachButton) : (!tp || tm) && (tQ = null == eg ? void 0 : eg(tq, eh.attachButton));
   let tJ = tb && null != V && !tp && ep.showCharacterCount && null == tu,
     t$ = tb && !__OVERLAY__ && null != V && null == tu && ep.toolbarType !== et.OW.NONE,
-    t0 = eM(ea, ep, V, tD),
+    t0 = ek(ea, ep, V, tD),
     t1 = (0, eo.c)({
       channel: ea,
       type: ep,
@@ -643,7 +643,7 @@ function ej(e, t) {
                 onHideAutocomplete: tx,
                 promptToUpload: eH,
                 fontSize: tI,
-                spellcheckEnabled: tS,
+                spellcheckEnabled: tT,
                 canOnlyUseTextCommands: tq,
                 className: o()({
                   [eh.textAreaThreadCreation]: ep === et.Ie.THREAD_CREATION,
@@ -666,7 +666,7 @@ function ej(e, t) {
           ref: tn,
           channel: ea,
           canOnlyUseTextCommands: tq
-        }), (0, r.jsx)(T.Z, {
+        }), (0, r.jsx)(S.Z, {
           ref: tD,
           channel: ea,
           canMentionRoles: eW,
@@ -687,7 +687,7 @@ function ej(e, t) {
           editorHeight: tB,
           setValue: (e, t) => null == tA ? void 0 : tA(null, e, t),
           position: e1
-        }), (0, r.jsx)(M.Z, {
+        }), (0, r.jsx)(k.Z, {
           textValue: F,
           editorHeight: tB,
           channelId: ea.id
@@ -702,8 +702,8 @@ function ej(e, t) {
       }), tW ? null : (0, r.jsx)(P.Z, {
         positionTargetRef: tt,
         type: ep,
-        onSelectGIF: tk,
-        onSelectEmoji: tM,
+        onSelectGIF: tM,
+        onSelectEmoji: tk,
         onSelectSticker: tj,
         onSelectSound: tU,
         channel: ea,

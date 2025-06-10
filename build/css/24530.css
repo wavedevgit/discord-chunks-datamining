@@ -1,6 +1,6 @@
 /**
   Module ID: 24530
-  Original File Name: 3d591203a5f2820e
+  Original File Name: 371f3bb11418bdb2
 **/
 .pickerWrapper_a32ef3 {
     display: flex;
@@ -9,18 +9,23 @@
 }
 
 .saturation_a32ef3 {
-    flex: 1
-}
-
-.hue_a32ef3,.saturation_a32ef3 {
-    border-radius: 8px;
     cursor: crosshair;
-    overflow: hidden;
+    flex: 1;
     position: relative
 }
 
+.saturation_a32ef3>div,.saturation_a32ef3>div>div,.saturation_a32ef3>div>div>div {
+    border-radius: 8px
+}
+
 .hue_a32ef3 {
+    cursor: crosshair;
+    position: relative;
     width: 20px
+}
+
+.hue_a32ef3>div>div {
+    border-radius: 8px
 }
 
 .customPointer_a32ef3 {
@@ -39,4 +44,4 @@
     transform: translate(2px,-8px)
 }
 
-/*# sourceMappingURL=3d591203a5f2820e.css.map*/
+/*# sourceMappingURL=371f3bb11418bdb2.css.map*/

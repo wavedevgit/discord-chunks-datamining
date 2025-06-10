@@ -30,9 +30,9 @@ function E(e) {
   } = e, {
     themeType: O
   } = (0, p.z)(), v = O === h.lY.MODAL_V2, I = f.ZP.getName(n, a, t), {
-    trackUserProfileAction: S
+    trackUserProfileAction: T
   } = (0, _.KZ)(), {
-    newestAnalyticsLocation: T
+    newestAnalyticsLocation: S
   } = (0, l.ZP)(), {
     acceptFriendRequest: A,
     cancelFriendRequest: N
@@ -40,16 +40,16 @@ function E(e) {
     userId: t.id,
     applicationId: E,
     isGameRelationship: b,
-    location: T
+    location: S
   }), C = i.useCallback(() => {
-    A(), S({
+    A(), T({
       action: b ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
     })
-  }, [A, b, S]), R = i.useCallback(() => {
-    N(), S({
+  }, [A, b, T]), R = i.useCallback(() => {
+    N(), T({
       action: b ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [N, b, S]), P = null != E, w = (0, c.q)(E);
+  }, [N, b, T]), P = null != E, w = (0, c.q)(E);
   return P && null == w ? null : (0, r.jsxs)("div", {
     className: o()(g.container, y),
     children: [P ? (0, r.jsx)(s.Text, {

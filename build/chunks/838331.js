@@ -77,8 +77,8 @@ function v(e, t) {
   return i
 }
 let I = "data-listbox-item-id",
-  S = 40,
-  T = Object.freeze({
+  T = 40,
+  S = Object.freeze({
     STANDARD: m.selected,
     BRAND: m.selectedBrand
   });
@@ -113,11 +113,11 @@ function R(e) {
     listClassName: g,
     "aria-label": b,
     multiSelect: v = !1,
-    autoFocus: T = !1,
+    autoFocus: S = !1,
     maxVisibleItems: A = 5,
     itemToString: R = N,
     showScrollbar: P = !1
-  } = e, [w, D] = i.useState(""), [L] = i.useState(!0), [x, k] = i.useState(null), M = i.useId(), j = i.useRef(null);
+  } = e, [w, D] = i.useState(""), [L] = i.useState(!0), [x, M] = i.useState(null), k = i.useId(), j = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = document.querySelector("[".concat(I, '="').concat(x, '"]')),
       t = j.current;
@@ -144,7 +144,7 @@ function R(e) {
       })
     }), []),
     Z = i.useCallback((e, t) => {
-      k(t);
+      M(t);
       let n = document.querySelector(e),
         r = j.current;
       null != r && null != n && r.scrollIntoViewNode({
@@ -173,18 +173,18 @@ function R(e) {
           role: "combobox",
           "aria-label": b,
           "aria-expanded": L,
-          "aria-controls": L ? M : void 0,
-          "aria-owns": M,
+          "aria-controls": L ? k : void 0,
+          "aria-owns": k,
           "aria-haspopup": "listbox",
           className: o()(m.combobox, u),
           children: [(0, r.jsx)(f.E, {
-            autoFocus: T,
+            autoFocus: S,
             size: f.E.Sizes.MEDIUM,
             placeholder: t,
             query: w,
             onChange: D,
             onKeyDown: i,
-            onBlur: () => k(null),
+            onBlur: () => M(null),
             onClear: () => D(""),
             className: o()({
               [m.searchWithScrollbar]: P
@@ -213,17 +213,17 @@ function R(e) {
               },
               children: (0, r.jsx)(Y, y(E({}, s), {
                 style: {
-                  maxHeight: A * (S + 6)
+                  maxHeight: A * (T + 6)
                 },
                 "aria-multiselectable": v,
-                id: M,
+                id: k,
                 ref: j,
                 className: o()(m.list, g, {
                   [m.scroller]: P
                 }),
                 sections: [U.length],
                 sectionHeight: 0,
-                rowHeight: S,
+                rowHeight: T,
                 renderRow: e => {
                   let {
                     row: t
@@ -246,7 +246,7 @@ function w(e) {
       value: n,
       children: a,
       disabled: s = !1,
-      selectedColor: c = T.STANDARD
+      selectedColor: c = S.STANDARD
     } = e,
     d = O(e, ["value", "children", "disabled", "selectedColor"]);
   let {
@@ -254,7 +254,7 @@ function w(e) {
     selected: _,
     setSelected: p,
     itemToString: h
-  } = i.useContext(C), g = h(n), b = f === g, v = null != (t = null == d ? void 0 : d.selected) ? t : _.has(n), S = (0, l.JA)(g);
+  } = i.useContext(C), g = h(n), b = f === g, v = null != (t = null == d ? void 0 : d.selected) ? t : _.has(n), T = (0, l.JA)(g);
   return (0, r.jsx)(u.P, y(E({
     tag: "li",
     id: g,
@@ -265,7 +265,7 @@ function w(e) {
       [c]: v,
       [m.disabled]: s
     })
-  }, S), {
+  }, T), {
     role: "option",
     "aria-selected": v,
     "aria-disabled": s,
@@ -275,7 +275,7 @@ function w(e) {
     })
   }))
 }
-w.Colors = T, w.Label = function(e) {
+w.Colors = S, w.Label = function(e) {
   let {
     children: t
   } = e;

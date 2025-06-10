@@ -4,13 +4,13 @@ n.d(t, {
   Ew: () => y,
   Iv: () => v,
   Mf: () => m,
-  PM: () => T,
+  PM: () => S,
   QW: () => E,
   Uv: () => O,
   Xp: () => I,
   a$: () => g,
   lg: () => b,
-  vL: () => S,
+  vL: () => T,
   vb: () => h
 }), n(415506), n(953529), n(388685), n(704826), n(35282);
 var r = n(772848),
@@ -209,7 +209,7 @@ function I() {
   let [t] = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [i.default], n = (0, l.Cf)(), r = t.locale;
   return (null != (e = n.find(e => e.code === r)) ? e : n[0]).code
 }
-async function S(e) {
+async function T(e) {
   let {
     loadId: t,
     guildId: n,
@@ -229,6 +229,6 @@ async function S(e) {
   })
 }
 
-function T() {
+function S() {
   return (0, r.Z)().replace(/-/g, "")
 }

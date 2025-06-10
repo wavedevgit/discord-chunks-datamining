@@ -50,9 +50,9 @@ function v(e) {
     viewProfileItem: y,
     onCloseProfile: v
   } = e, I = i.useRef(null), {
-    trackUserProfileAction: S
+    trackUserProfileAction: T
   } = (0, m.KZ)(), {
-    analyticsLocations: T,
+    analyticsLocations: S,
     newestAnalyticsLocation: A
   } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), N = c.J.useExperiment({
     location: "UserSettingsAuthedApps"
@@ -63,9 +63,9 @@ function v(e) {
     application: null != R ? R : void 0,
     guildId: n,
     onItemClick: () => {
-      S({
+      T({
         action: "MANAGE_APP",
-        analyticsLocations: T
+        analyticsLocations: S
       }), null == v || v()
     }
   }), w = (0, _.Z)({
@@ -73,55 +73,55 @@ function v(e) {
     guildId: n,
     location: A,
     color: "danger",
-    onBlock: () => S({
+    onBlock: () => T({
       action: "BLOCK",
-      analyticsLocations: T
+      analyticsLocations: S
     }),
-    onUnblock: () => S({
+    onUnblock: () => T({
       action: "UNBLOCK",
-      analyticsLocations: T
+      analyticsLocations: S
     })
   }), D = (0, p.Z)({
     user: t,
     guildId: n,
     location: A,
-    onIgnore: () => S({
+    onIgnore: () => T({
       action: "IGNORE",
-      analyticsLocations: T
+      analyticsLocations: S
     }),
-    onUnignore: () => S({
+    onUnignore: () => T({
       action: "UNIGNORE",
-      analyticsLocations: T
+      analyticsLocations: S
     })
   }), L = (0, h.Z)({
     user: t,
     guildId: n,
     location: A,
     color: "danger",
-    onAction: () => S({
+    onAction: () => T({
       action: "REPORT",
-      analyticsLocations: T
+      analyticsLocations: S
     })
   }), x = (0, d.Z)({
     id: null == R ? void 0 : R.id,
     label: b.intl.string(b.t["+NP/b2"]),
-    onSuccess: () => S({
+    onSuccess: () => T({
       action: "COPY_APP_ID",
-      analyticsLocations: T
+      analyticsLocations: S
     })
-  }), k = [
+  }), M = [
     [y], N ? [P] : [],
     [D, w, L],
     [(0, u.Z)({
       application: R,
       label: b.intl.string(b.t.WqhZsr),
-      onSuccess: () => S({
+      onSuccess: () => T({
         action: "COPY_APP_LINK",
-        analyticsLocations: T
+        analyticsLocations: S
       })
     }), x]
   ];
-  return k.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
+  return M.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     targetElementRef: I,
     renderPopout: e => {
       let {
@@ -132,7 +132,7 @@ function v(e) {
         onSelect: void 0,
         onClose: t,
         "aria-label": b.intl.string(b.t.AXIHpa),
-        children: k.map((e, t) => (0, r.jsx)(o.kSQ, {
+        children: M.map((e, t) => (0, r.jsx)(o.kSQ, {
           children: e.map(e => e)
         }, t))
       })

@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(98528),
   v = n(551058),
   I = n(536442),
-  S = n(140465),
-  T = n(775412),
+  T = n(140465),
+  S = n(775412),
   A = n(53691),
   N = n(75145),
   C = n(695346),
@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(74538),
   L = n(624138),
   x = n(543241),
-  k = n(883661),
-  M = n(880949),
+  M = n(883661),
+  k = n(880949),
   j = n(784222),
   U = n(172800),
   G = n(149203),
@@ -70,7 +70,7 @@ let Y = 0,
       sectionDescriptors: m,
       setCollapsedSections: g,
       getEmojiItemProps: O,
-      getEmojiRowProps: T,
+      getEmojiRowProps: S,
       isScrolling: A,
       isUsingKeyboardNavigation: C,
       allowAnimatedEmoji: R,
@@ -128,7 +128,7 @@ let Y = 0,
         onSelect: c,
         onSelectSoundmoji: f,
         getEmojiItemProps: O,
-        getEmojiRowProps: T,
+        getEmojiRowProps: S,
         isScrolling: A,
         isUsingKeyboardNavigation: C,
         rowIndex: e,
@@ -143,7 +143,7 @@ let Y = 0,
         inNitroLockedSection: i.isNitroLocked,
         handleScrollUpOnSectionCollapse: o
       }, e)
-    }), [a, m, s, es, ed, c, f, O, T, A, C, R, ef, w, D, L, V, ei]);
+    }), [a, m, s, es, ed, c, f, O, S, A, C, R, ef, w, D, L, V, ei]);
     i.useEffect(() => () => {
       var e, t;
       return null == (t = e_.cache) || null == (e = t.clear) ? void 0 : e.call(t)
@@ -158,11 +158,11 @@ let Y = 0,
           sectionId: l
         } = n;
         if (s === G.En.SEARCH_RESULTS) return;
-        let c = s === G.En.GUILD ? null != i ? (0, r.jsx)(M.Z, {
+        let c = s === G.En.GUILD ? null != i ? (0, r.jsx)(k.Z, {
             guild: i,
             height: $,
             width: $
-          }) : null : null != a ? (0, r.jsx)(k.Z, {
+          }) : null : null != a ? (0, r.jsx)(M.Z, {
             categoryId: a,
             height: $,
             width: $,
@@ -193,7 +193,7 @@ let Y = 0,
           children: u
         }, l)
       }), [m, t, eu, Y, ee]),
-      eh = (0, S.B4)(),
+      eh = (0, T.B4)(),
       em = i.useCallback((e, n) => {
         let i = m[e],
           a = ec(e),
@@ -243,12 +243,12 @@ let Y = 0,
       collapsedSections: y,
       setCollapsedSections: v,
       getEmojiItemProps: I,
-      getEmojiRowProps: S,
+      getEmojiRowProps: T,
       rowCount: N,
       isUsingKeyboardNavigation: L,
       channelGuildId: x,
-      channelId: k,
-      messageId: M,
+      channelId: M,
+      messageId: k,
       isBurstReaction: U,
       listHeaderClassName: G
     } = e, F = i.useRef(!1), W = E.kJ.useStore(e => e.activeCategoryIndex), K = (0, b.Iu)(e => e.searchQuery), z = C.Yk.useSetting(), q = (0, u.e7)([R.default], () => R.default.getCurrentUser()), X = (0, w.I5)(q), {
@@ -275,13 +275,13 @@ let Y = 0,
       sectionDescriptors: f,
       setCollapsedSections: v,
       getEmojiItemProps: I,
-      getEmojiRowProps: S,
+      getEmojiRowProps: T,
       isScrolling: F,
       isUsingKeyboardNavigation: L,
       allowAnimatedEmoji: z,
       channelGuildId: x,
-      channelId: k,
-      messageId: M,
+      channelId: M,
+      messageId: k,
       isBurstReaction: U,
       listHeaderClassName: G,
       activeSectionIndex: $,
@@ -329,7 +329,7 @@ let Y = 0,
 
     function eO() {
       var e;
-      let t = (0, T.J0)();
+      let t = (0, S.J0)();
       return null != (e = (0, D.fr)(t)) ? e : Z.intl.string(Z.t.BmJkbW)
     }
     return i.useEffect(() => {

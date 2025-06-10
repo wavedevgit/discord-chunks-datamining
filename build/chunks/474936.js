@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $7: () => k,
+  $7: () => M,
   $8: () => eR,
   $e: () => d,
   $n: () => eX,
@@ -44,8 +44,8 @@ n.d(t, {
   Tp: () => eH,
   UA: () => x,
   UD: () => b,
-  Ue: () => M,
-  Uq: () => eS,
+  Ue: () => k,
+  Uq: () => eT,
   VU: () => e3,
   Wt: () => e$,
   X2: () => eJ,
@@ -84,16 +84,16 @@ n.d(t, {
   jz: () => er,
   kJ: () => ez,
   m8: () => B,
-  mn: () => S,
+  mn: () => T,
   nG: () => eE,
-  nH: () => ek,
+  nH: () => eM,
   nL: () => eG,
   o4: () => O,
   p9: () => s,
   pH: () => eC,
   pj: () => C,
   rB: () => ed,
-  rV: () => T,
+  rV: () => S,
   rX: () => F,
   rt: () => e0,
   vK: () => e5,
@@ -102,7 +102,7 @@ n.d(t, {
   wh: () => K,
   xT: () => ee,
   y7: () => h,
-  ys: () => eM,
+  ys: () => ek,
   zp: () => j
 }), n(388685);
 var r = n(314794),
@@ -164,7 +164,7 @@ let E = new Set(["978380692553465866", "1024422698568122368", "51165187173620121
     "590663762298667008": void 0,
     "521842865731534868": void 0
   }),
-  S = Object.freeze({
+  T = Object.freeze({
     "978380684370378762": "1024422698568122368",
     "521846918637420545": "511651876987469824",
     "521847234246082599": "511651885459963904",
@@ -172,7 +172,7 @@ let E = new Set(["978380692553465866", "1024422698568122368", "51165187173620121
     "590663762298667008": void 0,
     "521842865731534868": void 0
   });
-var T = function(e) {
+var S = function(e) {
     return e[e.MONTH = 1] = "MONTH", e[e.YEAR = 2] = "YEAR", e[e.DAY = 3] = "DAY", e
   }({}),
   A = function(e) {
@@ -323,8 +323,8 @@ let N = Object.freeze({
   D = 30,
   L = 2,
   x = 3,
-  k = 28,
-  M = 30,
+  M = 28,
+  k = 30,
   j = 30,
   U = 7,
   G = 30,
@@ -416,8 +416,8 @@ let eO = Object.freeze({
   }),
   ev = 0x3200000,
   eI = 0x3200000,
-  eS = 524288e3,
-  eT = 0x3200000,
+  eT = 524288e3,
+  eS = 0x3200000,
   eA = 0x6400000,
   eN = 5,
   eC = {
@@ -470,7 +470,7 @@ let eO = Object.freeze({
       limits: {
         emoji: 150,
         bitrate: 256e3,
-        fileSize: eT,
+        fileSize: eS,
         screenShareQualityFramerate: 60,
         screenShareQualityResolution: "1080p",
         soundboardSounds: eP[i.Eu4.TIER_2],
@@ -499,14 +499,14 @@ var eL = function(e) {
   ex = function(e) {
     return e.FREE = "free", e.PREMIUM_STANDARD = "premium-standard", e
   }({});
-let ek = {
+let eM = {
   "1024422698568122368": R,
   "511651876987469824": R,
   "511651885459963904": R,
   "944037208325619722": P,
   "642251038925127690": w
 };
-var eM = function(e) {
+var ek = function(e) {
   return e.HIGH_STREAMING_QUALITY = "high_streaming_quality", e.MID_STREAMING_QUALITY = "mid_streaming_quality", e
 }({});
 let ej = Object.freeze({
@@ -535,7 +535,7 @@ let eF = Object.freeze({
       fileSize: eI
     },
     2: {
-      fileSize: eS
+      fileSize: eT
     }
   });
 var eZ = function(e) {

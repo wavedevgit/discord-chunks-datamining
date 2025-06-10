@@ -58,8 +58,8 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = 200,
-  T = 200,
+let T = 200,
+  S = 200,
   A = +_.Z.Millis.MINUTE,
   N = {},
   C = "content",
@@ -69,8 +69,8 @@ let S = 200,
   D = 0,
   L = 0,
   x = [],
-  k = [],
   M = [],
+  k = [],
   j = !1;
 
 function U() {
@@ -205,10 +205,10 @@ function Z(e) {
 }
 
 function H(e) {
-  k = (k = [{
+  M = (M = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...k]).slice(0, T)
+  }, ...M]).slice(0, S)
 }
 
 function Y(e) {
@@ -217,7 +217,7 @@ function Y(e) {
   x = (x = [{
     bytes: e,
     timestamp: t
-  }, ...x]).slice(0, T).filter(e => {
+  }, ...x]).slice(0, S).filter(e => {
     let {
       timestamp: t
     } = e;
@@ -226,14 +226,14 @@ function Y(e) {
 }
 
 function W(e) {
-  M = (M = [{
+  k = (k = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...M]).slice(0, T)
+  }, ...k]).slice(0, S)
 }
-let K = a().throttle(H, S),
-  z = a().throttle(Y, S),
-  q = a().throttle(W, S);
+let K = a().throttle(H, T),
+  z = a().throttle(Y, T),
+  q = a().throttle(W, T);
 
 function X(e, t, n) {
   let r = n(N[t]),
@@ -338,10 +338,10 @@ class J extends(r = o.ZP.Store) {
     return x
   }
   getHistoricalTotalBytesDownloaded() {
-    return k
+    return M
   }
   getHistoricalTotalBytesWritten() {
-    return M
+    return k
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {

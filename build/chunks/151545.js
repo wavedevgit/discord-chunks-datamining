@@ -30,8 +30,8 @@ function E(e) {
     profileGuildId: O
   } = e, v = (0, f.T)({
     location: "UserProfileActivityCardWrapper"
-  }), I = t.id === n.id, S = v && !I && !t.bot, {
-    voiceGuild: T,
+  }), I = t.id === n.id, T = v && !I && !t.bot, {
+    voiceGuild: S,
     voiceChannel: A
   } = (0, i.cj)([u.Z, d.Z, c.Z], () => {
     var e;
@@ -45,7 +45,7 @@ function E(e) {
   });
   (0, l.q)(null == E ? void 0 : E.application_id);
   let N = (0, i.e7)([s.Z], () => (null == E ? void 0 : E.application_id) != null ? s.Z.getApplication(E.application_id) : (null == E ? void 0 : E.name) != null ? s.Z.getApplicationByName(E.name) : null);
-  return (null == E ? void 0 : E.type) === g.IIU.CUSTOM_STATUS || (null == E ? void 0 : E.type) === g.IIU.HANG_STATUS ? null : (0, o.Z)(E) ? S ? (0, r.jsx)(m.Z, {
+  return (null == E ? void 0 : E.type) === g.IIU.CUSTOM_STATUS || (null == E ? void 0 : E.type) === g.IIU.HANG_STATUS ? null : (0, o.Z)(E) ? T ? (0, r.jsx)(m.Z, {
     user: t,
     currentUser: n,
     activity: E,
@@ -58,12 +58,12 @@ function E(e) {
     activity: E,
     className: b,
     onClose: y
-  }) : S ? (0, r.jsx)(p.Z, {
+  }) : T ? (0, r.jsx)(p.Z, {
     user: t,
     currentUser: n,
     activity: E,
     application: N,
-    voiceGuild: T,
+    voiceGuild: S,
     voiceChannel: A,
     profileGuildId: O,
     className: b,
@@ -73,7 +73,7 @@ function E(e) {
     currentUser: n,
     activity: E,
     application: N,
-    voiceGuild: T,
+    voiceGuild: S,
     voiceChannel: A,
     className: b,
     onClose: y

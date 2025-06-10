@@ -6,9 +6,9 @@ n.d(t, {
   CA: () => L,
   F8: () => ee,
   JM: () => D,
-  NZ: () => M,
+  NZ: () => k,
   ZP: () => en,
-  aN: () => k,
+  aN: () => M,
   ay: () => J,
   ff: () => b,
   gT: () => C,
@@ -75,8 +75,8 @@ let b = /^data:/,
 r.DEFAULT_GROUP_DM_AVATARS;
 let v = r.canUseWebp(),
   I = 5,
-  S = 240,
-  T = 1096,
+  T = 240,
+  S = 1096,
   A = (0, u.isAndroid)();
 
 function N(e) {
@@ -192,7 +192,7 @@ function x(e, t) {
   return null != r ? et(r) : t.getAvatarSource(e.guildId, n)
 }
 
-function k(e) {
+function M(e) {
   let t, {
     id: n,
     banner: r,
@@ -209,7 +209,7 @@ function k(e) {
   return "webp" === c && i && Q(r) && (u.animated = !0), t += "?".concat(o.stringify(u))
 }
 
-function M(e) {
+function k(e) {
   let {
     avatarDecoration: t,
     size: n,
@@ -270,7 +270,7 @@ function B(e) {
     } = e,
     i = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (null == r) return null;
-  let a = (0, l.oO)(S * (0, l.x_)()),
+  let a = (0, l.oO)(T * (0, l.x_)()),
     s = v ? "webp" : "jpg",
     c = i && Q(r) ? ei(v) : s,
     u = window.GLOBAL_ENV.CDN_HOST;
@@ -287,7 +287,7 @@ function F(e) {
     homeHeader: r
   } = e;
   if (null == r) return null;
-  let i = (0, l.oO)(T * (0, l.x_)()),
+  let i = (0, l.oO)(S * (0, l.x_)()),
     a = window.GLOBAL_ENV.CDN_HOST;
   return (null != a ? "https://".concat(a, "/home-headers/").concat(n, "/").concat(r, ".png") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_HOME_HEADER(n, r)) + "?size=".concat(i)
 }
@@ -475,8 +475,8 @@ let en = {
   getGuildMemberAvatarURLSimple: D,
   getGuildMemberAvatarSource: x,
   getGuildMemberBannerURL: j,
-  getUserBannerURL: k,
-  getAvatarDecorationURL: M,
+  getUserBannerURL: M,
+  getAvatarDecorationURL: k,
   hasAnimatedGuildIcon: function e(e) {
     return Q(null == e ? void 0 : e.icon)
   },

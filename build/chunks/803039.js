@@ -126,16 +126,16 @@ e.exports = function(e) {
         }
       }]
     },
-    S = {
+    T = {
       scope: "attr",
       match: t.concat(r, t.lookahead(":"), t.lookahead(/(?!::)/))
     },
-    T = {
+    S = {
       relevance: 0,
       begin: /\(/,
       end: /\)/,
       keywords: b,
-      contains: [S, o, I, e.C_BLOCK_COMMENT_MODE, p, h, O]
+      contains: [T, o, I, e.C_BLOCK_COMMENT_MODE, p, h, O]
     },
     A = {
       relevance: 0,
@@ -143,10 +143,10 @@ e.exports = function(e) {
       scope: {
         3: "title.function.invoke"
       },
-      contains: [T]
+      contains: [S]
     };
-  T.contains.push(A);
-  let N = [S, I, e.C_BLOCK_COMMENT_MODE, p, h, O],
+  S.contains.push(A);
+  let N = [T, I, e.C_BLOCK_COMMENT_MODE, p, h, O],
     C = {
       begin: t.concat(/#\[\s*\\?/, t.either(i, a)),
       beginScope: "meta",

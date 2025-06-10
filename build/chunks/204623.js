@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => T
 }), n(35282), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -40,7 +40,7 @@ function v() {
 let I = l.ZP.connectStores([_.Z], () => ({
   focused: _.Z.isFocused()
 }))(E.Z);
-class S extends i.PureComponent {
+class T extends i.PureComponent {
   getPlatform() {
     var e;
     let t = null == (e = o().os) ? void 0 : e.family;

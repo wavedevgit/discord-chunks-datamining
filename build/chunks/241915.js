@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => N,
-  _: () => T
+  _: () => S
 }), n(388685);
 var r, i = n(255367),
   a = n(73800),
@@ -63,7 +63,7 @@ function I(e, t) {
   return (0, l.clamp)(n, t.minWidth, t.maxWidth)
 }
 
-function S(e) {
+function T(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -86,7 +86,7 @@ function S(e) {
     className: s()(p.resizeHandle, O[l])
   })
 }
-class T extends(r = a.PureComponent) {
+class S extends(r = a.PureComponent) {
   componentDidMount() {
     this.setPosition(this.props.position)
   }
@@ -237,7 +237,7 @@ class T extends(r = a.PureComponent) {
         ref: this.handleSetInnerDivRef,
         style: f,
         children: this.props.children
-      }), null != c ? (0, i.jsx)(S, {
+      }), null != c ? (0, i.jsx)(T, {
         onResize: this.handleResize,
         onResizeEnd: this.handleResizeEnd,
         resizableNode: this._innerDivRef,
@@ -312,7 +312,7 @@ class T extends(r = a.PureComponent) {
     })
   }
 }
-h(T, "defaultProps", {
+h(S, "defaultProps", {
   hidden: !1,
   roundCorners: !0
 });
@@ -338,7 +338,7 @@ let A = e => {
       }, e.props), e.id)
     }), [n, t, r, _]), I = a.useCallback(() => {
       O(!0)
-    }, []), S = a.useCallback(() => {
+    }, []), T = a.useCallback(() => {
       O(!1)
     }, []), A = a.useMemo(() => n.some(e => e.component === f.NYg.EMBED_IFRAME), [n]);
     return null == t ? (0, i.jsx)("div", {
@@ -347,7 +347,7 @@ let A = e => {
       className: s()(p.pictureInPicture, {
         [p.dragging]: b
       }),
-      children: (0, i.jsx)(T, {
+      children: (0, i.jsx)(S, {
         appContext: h,
         position: t.position,
         id: t.id,
@@ -355,7 +355,7 @@ let A = e => {
         onMove: c,
         onResize: u,
         onDragStart: I,
-        onDragEnd: S,
+        onDragEnd: T,
         maxX: o,
         maxY: l,
         width: r,

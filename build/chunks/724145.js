@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(594174),
   v = n(626135),
   I = n(74538),
-  S = n(514361),
-  T = n(55358),
+  T = n(514361),
+  S = n(55358),
   A = n(572397),
   N = n(705262),
   C = n(981631),
@@ -50,7 +50,7 @@ let L = () => (0, r.jsx)("div", {
     let {
       markAsDismissed: t
     } = e, n = (0, A.q)(), i = () => {
-      null != t && t(R.L.DISMISS), n(C.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, T.C)()
+      null != t && t(R.L.DISMISS), n(C.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, S.C)()
     };
     return (0, r.jsxs)("div", {
       className: D.editorHeader,
@@ -68,14 +68,14 @@ let L = () => (0, r.jsx)("div", {
       })]
     })
   },
-  k = e => {
+  M = e => {
     var t, n, i;
     let {
       onSubscribeSuccess: a,
       markAsDismissed: o
     } = e, {
       analyticsLocations: s
-    } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), [f, _] = (0, l.Wu)([O.default, S.Z], () => [S.Z.gradientPreset, I.ZP.isPremium(O.default.getCurrentUser())]), p = (0, E.N)(), g = (0, I.Rt)({
+    } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), [f, _] = (0, l.Wu)([O.default, T.Z], () => [T.Z.gradientPreset, I.ZP.isPremium(O.default.getCurrentUser())]), p = (0, E.N)(), g = (0, I.Rt)({
       intervalType: null == p || null == (t = p.subscription_trial) ? void 0 : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? void 0 : n.interval_count
     }), y = e => {
@@ -97,16 +97,16 @@ let L = () => (0, r.jsx)("div", {
       onSubscribeModalClose: y
     })
   },
-  M = e => {
+  k = e => {
     let {
       markAsDismissed: t,
       isCoachmark: n
     } = e, {
       isPreview: a
-    } = (0, l.cj)([S.Z], () => ({
-      isPreview: S.Z.isPreview
+    } = (0, l.cj)([T.Z], () => ({
+      isPreview: T.Z.isPreview
     })), [o, c] = i.useState(!1), d = (0, A.q)(), _ = () => {
-      null != t && t(R.L.DISMISS), d(C.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, T.C)(), n || f.Z.open()
+      null != t && t(R.L.DISMISS), d(C.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, S.C)(), n || f.Z.open()
     }, p = (0, s.EQ)({
       isPreview: a,
       isCoachmark: n,
@@ -120,7 +120,7 @@ let L = () => (0, r.jsx)("div", {
     }, () => w.intl.string(w.t["dqH+qq"])).otherwise(() => w.intl.string(w.t.Olc2Ky));
     return (0, r.jsxs)("div", {
       className: D.editorFooter,
-      children: [a && (0, r.jsx)(k, {
+      children: [a && (0, r.jsx)(M, {
         onSubscribeSuccess: () => {
           c(!0)
         },
@@ -144,8 +144,8 @@ function j(e) {
   } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), {
     isPreview: s,
     shouldEditorAnimate: c
-  } = (0, l.cj)([S.Z, p.Z], () => ({
-    isPreview: S.Z.isPreview,
+  } = (0, l.cj)([T.Z, p.Z], () => ({
+    isPreview: T.Z.isPreview,
     shouldEditorAnimate: n && !p.Z.useReducedMotion
   })), d = (0, g.oq)().activePanel === g.wh.CLIENT_THEMES, f = (0, A.q)();
   i.useEffect(() => f(C.rMx.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {
@@ -178,7 +178,7 @@ function j(e) {
               isCoachmark: n
             })]
           })
-        }), (0, r.jsx)(M, {
+        }), (0, r.jsx)(k, {
           markAsDismissed: t,
           isCoachmark: n
         })]

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(539854), n(388685), n(997841);
 var r, i = n(348327),
   a = n.n(i),
@@ -44,7 +44,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,8 +55,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -94,10 +94,10 @@ function C() {
       }
     })
   }
-  let S = h.Z.getActivity();
-  null != S && e.push(I({
+  let T = h.Z.getActivity();
+  null != T && e.push(I({
     type: O.IIU.LISTENING
-  }, S)), a()(A, e) || (A = e)
+  }, T)), a()(A, e) || (A = e)
 }
 
 function R() {
@@ -135,7 +135,7 @@ function L() {
     var n;
     let o = null != (n = a.flags) ? n : 0,
       s = (0, d.Ix)(o);
-    s !== o ? (e[r] = [i, T(I({}, a), {
+    s !== o ? (e[r] = [i, S(I({}, a), {
       flags: s
     })], t = !0) : e[r] = [i, a]
   }
@@ -145,7 +145,7 @@ function L() {
 function x() {
   L(), C()
 }
-class k extends(r = l.ZP.Store) {
+class M extends(r = l.ZP.Store) {
   initialize() {
     this.waitFor(_.ZP, u.ZP, b.Z, E.Z, h.Z, g.Z, y.Z), this.syncWith([p.Z], () => C())
   }
@@ -173,8 +173,8 @@ class k extends(r = l.ZP.Store) {
     return null
   }
 }
-v(k, "displayName", "LocalActivityStore");
-let M = new k(c.Z, {
+v(M, "displayName", "LocalActivityStore");
+let k = new M(c.Z, {
   OVERLAY_INITIALIZE: D,
   START_SESSION: R,
   LOCAL_ACTIVITY_UPDATE: P,

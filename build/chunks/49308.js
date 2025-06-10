@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  x: () => S
+  x: () => T
 });
 var r = n(255367),
   i = n(73800),
@@ -69,7 +69,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     isGift: t,
     giftCode: n,
@@ -80,9 +80,9 @@ function S(e) {
     isSendingMessage: p
   } = (0, m.wD)(), b = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), y = i.useRef(null), {
     selectedSkuId: O
-  } = (0, g.JL)(), S = (0, s.e7)([c.Z], () => c.Z.getProduct(O)), {
-    confettiColors: T
-  } = (0, f.Z)(null == S ? void 0 : S.styles);
+  } = (0, g.JL)(), T = (0, s.e7)([c.Z], () => c.Z.getProduct(O)), {
+    confettiColors: S
+  } = (0, f.Z)(null == T ? void 0 : T.styles);
   return t ? (0, r.jsxs)("div", {
     ref: y,
     children: [(0, r.jsx)(E.Z, {
@@ -96,8 +96,8 @@ function S(e) {
     }), !e.hideConfetti && !b && (0, r.jsx)(_.Z, {
       confettiTarget: y.current,
       confettiCanvas: e.confettiCanvas,
-      sprites: (0, h.vK)(null == S ? void 0 : S.categorySkuId),
-      colors: null == T ? void 0 : T.map(e => e.toHexString())
+      sprites: (0, h.vK)(null == T ? void 0 : T.categorySkuId),
+      colors: null == S ? void 0 : S.map(e => e.toHexString())
     })]
   }) : (0, r.jsx)(I, v({}, e))
 }

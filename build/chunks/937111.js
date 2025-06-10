@@ -144,7 +144,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     guildId: t,
     cooldown: n
@@ -152,7 +152,7 @@ function S(e) {
   p[t] = null != n ? n : 0
 }
 
-function T(e) {
+function S(e) {
   let {
     form: t,
     guildId: n
@@ -221,10 +221,10 @@ let P = new R(a.Z, {
   USER_GUILD_JOIN_REQUEST_UPDATE: E,
   GUILD_DELETE: O,
   USER_JOIN_REQUEST_GUILDS_FETCH: I,
-  MEMBER_VERIFICATION_FORM_UPDATE: T,
+  MEMBER_VERIFICATION_FORM_UPDATE: S,
   INVITE_ACCEPT_SUCCESS: v,
   ACK_APPROVED_GUILD_JOIN_REQUEST: A,
   USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW: N,
   USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR: C,
-  USER_GUILD_JOIN_REQUEST_COOLDOWN_FETCH: S
+  USER_GUILD_JOIN_REQUEST_COOLDOWN_FETCH: T
 })

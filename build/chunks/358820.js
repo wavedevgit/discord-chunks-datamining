@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   fz: () => P,
-  ge: () => k,
+  ge: () => M,
   gf: () => j,
-  r5: () => M,
+  r5: () => k,
   rk: () => w,
   wV: () => x
 }), n(415506);
@@ -50,7 +50,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,8 +61,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -85,7 +85,7 @@ function P(e) {
       fileName: i
     } = e,
     a = b.Z.getModelState(r);
-  if ((null == a ? void 0 : a.status) === y.L.DOWNLOADED) return void c.Z.dispatch(T(I({
+  if ((null == a ? void 0 : a.status) === y.L.DOWNLOADED) return void c.Z.dispatch(S(I({
     type: "VOICE_FILTER_FILE_READY"
   }, e), {
     fetchedFromNetwork: !1,
@@ -98,14 +98,14 @@ function P(e) {
       downloadedBytes: n,
       totalBytes: r
     } = t;
-    c.Z.dispatch(T(I({
+    c.Z.dispatch(S(I({
       type: "VOICE_FILTER_DOWNLOAD_PROGRESS"
     }, e), {
       downloadedBytes: n,
       totalBytes: r
     }))
   }).then(n => {
-    c.Z.dispatch(T(I({
+    c.Z.dispatch(S(I({
       type: "VOICE_FILTER_FILE_READY"
     }, e), {
       fetchedFromNetwork: n.fetchedFromNetwork,
@@ -131,7 +131,7 @@ function P(e) {
         }
       })
     }
-    c.Z.dispatch(T(I({
+    c.Z.dispatch(S(I({
       type: "VOICE_FILTER_DOWNLOAD_FAILED"
     }, e), {
       error: t
@@ -140,7 +140,7 @@ function P(e) {
 }
 async function w(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-  await M();
+  await k();
   let n = performance.now();
   try {
     let r = m.ZP.getVoiceFilters();
@@ -216,12 +216,12 @@ async function x() {
   }
 }
 
-function k() {
+function M() {
   c.Z.dispatch({
     type: "VOICE_FILTER_DOWNLOAD_CANCELED"
   })
 }
-async function M() {
+async function k() {
   if (!(b.Z.isNativeModuleLoaded() || b.Z.isNativeModuleLoading()) && !__OVERLAY__) {
     if (!(0, p.isWindows)() && !(0, p.isMac)()) return void c.Z.dispatch({
       type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",

@@ -24,9 +24,9 @@ var r = n(255367),
   O = n(998502),
   v = n(981631),
   I = n(388032),
-  S = n(804683);
+  T = n(804683);
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -52,7 +52,7 @@ function A() {
     size: f.PhG.LARGE,
     onClick: n,
     submitting: e,
-    className: S.clearOverrideButton,
+    className: T.clearOverrideButton,
     children: I.intl.string(I.t["/Nz9ra"])
   })
 }
@@ -115,7 +115,7 @@ class C extends i.PureComponent {
           })]
         }),
         n = (0, r.jsxs)("div", {
-          className: S.buttons,
+          className: T.buttons,
           children: [(0, r.jsx)(f.zxk, {
             size: f.PhG.LARGE,
             onClick: this._handleSubmitReport,
@@ -126,16 +126,16 @@ class C extends i.PureComponent {
         title: I.intl.string(I.t["3h+n+/"]),
         note: null != t ? t() : e,
         action: n,
-        className: S.errorPage
+        className: T.errorPage
       })
     }
     return e
   }
   constructor(...e) {
-    super(...e), T(this, "state", {
+    super(...e), S(this, "state", {
       error: null,
       info: null
-    }), T(this, "discordErrorsSet", !1)
+    }), S(this, "discordErrorsSet", !1)
   }
 }
 let R = C

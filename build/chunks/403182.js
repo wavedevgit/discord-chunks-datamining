@@ -7,7 +7,7 @@ n.d(t, {
   dp: () => E,
   f3: () => y,
   iL: () => C,
-  nA: () => S,
+  nA: () => T,
   qF: () => g,
   uV: () => O,
   vY: () => A
@@ -103,19 +103,19 @@ function I(e) {
   return Math.max(null != r ? _.HO[r.premiumTier].limits.fileSize : f.mBz, n)
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = I(t);
   return Array.from(e).some(e => e.size > n)
 }
 
-function T(e) {
+function S(e) {
   let t = 0;
   for (let n of e) t += n.size;
   return t
 }
 
 function A(e) {
-  return T(e) > N()
+  return S(e) > N()
 }
 
 function N() {

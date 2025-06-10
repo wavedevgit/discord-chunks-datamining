@@ -122,8 +122,8 @@ let b = i.forwardRef(function(e, t) {
     }
   }, [b, y, O, I]);
   let {
-    x: S,
-    y: T
+    x: T,
+    y: S
   } = i.useMemo(() => {
     var e, t, n, r;
     let i = null == (e = a.current) ? void 0 : e.getSlateEditor();
@@ -156,10 +156,10 @@ let b = i.forwardRef(function(e, t) {
     }
   }, [o, _, a]), [A, N] = i.useState(0), [C, R] = i.useState(0);
   if (i.useLayoutEffect(() => {
-      if (null == S || null == T || null == f.current) return;
+      if (null == T || null == S || null == f.current) return;
       let e = f.current.getBoundingClientRect();
       R(e.width / 2), N(e.height + 12)
-    }, [S, T]), null == S || null == T) return null;
+    }, [T, S]), null == T || null == S) return null;
   let P = null == (n = a.current) ? void 0 : n.getSlateEditor();
   return null == P ? null : (0, r.jsx)(u.ZP, {
     children: (0, r.jsxs)("div", {
@@ -167,8 +167,8 @@ let b = i.forwardRef(function(e, t) {
       ref: f,
       className: g.toolbar,
       style: {
-        top: T - A,
-        left: S - C
+        top: S - A,
+        left: T - C
       },
       onMouseDown: e => {
         e.stopPropagation()

@@ -74,7 +74,7 @@ function I(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let S = {
+let T = {
     SMOL: "Smol",
     MINI: "Mini",
     SMALLER: "Smaller",
@@ -84,25 +84,25 @@ let S = {
     LARGER: "Larger",
     XLARGE: "XLarge"
   },
-  T = {
-    [S.SMOL]: 16,
-    [S.MINI]: 20,
-    [S.SMALLER]: 24,
-    [S.SMALL]: 30,
-    [S.MEDIUM]: 40,
-    [S.LARGE]: 50,
-    [S.LARGER]: 64,
-    [S.XLARGE]: 100
+  S = {
+    [T.SMOL]: 16,
+    [T.MINI]: 20,
+    [T.SMALLER]: 24,
+    [T.SMALL]: 30,
+    [T.MEDIUM]: 40,
+    [T.LARGE]: 50,
+    [T.LARGER]: 64,
+    [T.XLARGE]: 100
   },
   A = {
-    [S.SMOL]: [10, 10, 8, 6, 6, 4],
-    [S.MINI]: [12, 12, 10, 10, 8, 6, 4],
-    [S.SMALLER]: [13, 13, 11, 11, 9, 7, 5],
-    [S.SMALL]: [14, 14, 12, 12, 10, 8, 6],
-    [S.MEDIUM]: [16, 16, 14, 14, 12, 10, 8],
-    [S.LARGE]: [18, 18, 16, 16, 14, 12, 10],
-    [S.LARGER]: [19, 19, 17, 17, 15, 13, 11],
-    [S.XLARGE]: [20, 20, 18, 18, 16, 14, 12]
+    [T.SMOL]: [10, 10, 8, 6, 6, 4],
+    [T.MINI]: [12, 12, 10, 10, 8, 6, 4],
+    [T.SMALLER]: [13, 13, 11, 11, 9, 7, 5],
+    [T.SMALL]: [14, 14, 12, 12, 10, 8, 6],
+    [T.MEDIUM]: [16, 16, 14, 14, 12, 10, 8],
+    [T.LARGE]: [18, 18, 16, 16, 14, 12, 10],
+    [T.LARGER]: [19, 19, 17, 17, 15, 13, 11],
+    [T.XLARGE]: [20, 20, 18, 18, 16, 14, 12]
   };
 class N extends a.PureComponent {
   renderAcronym() {
@@ -148,8 +148,8 @@ class N extends a.PureComponent {
         to: E,
         badgeStrokeColor: y,
         animate: I,
-        tabIndex: S,
-        iconSrc: T,
+        tabIndex: T,
+        iconSrc: S,
         "aria-hidden": N,
         lossless: C,
         iconSize: R
@@ -168,7 +168,7 @@ class N extends a.PureComponent {
         fontSize: (null != (t = w[r.acronym.length]) ? t : w[w.length - 1]) * f
       }, u) : u,
       onClick: null != E || null == h ? void 0 : h,
-      tabIndex: S
+      tabIndex: T
     }, P), {
       children: [this.renderAcronym(), this.renderBadge()]
     }))
@@ -220,7 +220,7 @@ let C = c.ZP.connectStores([p.Z], e => {
   } = e;
   return {
     style: O(b({}, i), {
-      backgroundImage: (0, h.rv)(null != r ? r : t.getIconURL(null != o ? o : T[a], n && p.Z.isFocused(), s))
+      backgroundImage: (0, h.rv)(null != r ? r : t.getIconURL(null != o ? o : S[a], n && p.Z.isFocused(), s))
     })
   }
 })((0, f.N)(e => (0, i.jsx)(N, b({}, e))));
@@ -229,8 +229,8 @@ class R extends(r = a.PureComponent) {
     return (0, i.jsx)(C, b({}, this.props))
   }
 }
-E(R, "Sizes", S), E(R, "defaultProps", {
-  size: S.LARGE,
+E(R, "Sizes", T), E(R, "defaultProps", {
+  size: T.LARGE,
   textScale: 1,
   showBadge: !1,
   showTooltip: !1,

@@ -71,10 +71,10 @@ function I(e) {
   return null != r && i >= m(e)
 }
 
-function S(e) {
+function T(e) {
   g[e] = new Set, E[e] = null
 }
-class T extends i.Z {
+class S extends i.Z {
   handleInitialize() {
     null == b && y()
   }
@@ -86,13 +86,13 @@ class T extends i.Z {
   }
   handleGuildDelete(e) {
     let t = e.guild.id;
-    s.Z.isInitialized(t) && S(t)
+    s.Z.isInitialized(t) && T(t)
   }
   handleGuildMemberSearchSuccess(e) {
     let {
       guildId: t
     } = e;
-    s.Z.isInitialized(t) && S(t)
+    s.Z.isInitialized(t) && T(t)
   }
   constructor(...e) {
     super(...e), l(this, "actions", {
@@ -104,4 +104,4 @@ class T extends i.Z {
     })
   }
 }
-let A = new T
+let A = new S

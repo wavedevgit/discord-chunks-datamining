@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => S
+  ZP: () => T
 }), n(415506), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -111,7 +111,7 @@ function I(e, t) {
   })), n
 }
 
-function S(e) {
+function T(e) {
   let {
     selectedPaymentSourceId: t,
     paymentSources: n,
@@ -123,8 +123,8 @@ function S(e) {
     disabled: g = !1,
     className: E,
     optionClassName: b,
-    dropdownLoading: S,
-    paymentGatewayRestrictions: T
+    dropdownLoading: T,
+    paymentGatewayRestrictions: S
   } = e, A = 0 === n.length, N = e => {
     if (e === y) null != _ && _();
     else {
@@ -136,7 +136,7 @@ function S(e) {
       let {
         brand: t,
         label: n
-      } = v(e, c), i = e === O || null == T || (null == T ? void 0 : T.includes(e.paymentGateway));
+      } = v(e, c), i = e === O || null == S || (null == S ? void 0 : S.includes(e.paymentGateway));
       return {
         value: e.id,
         label: (0, r.jsxs)("div", {
@@ -162,8 +162,8 @@ function S(e) {
       })
     }
   }), R = I(p, i.useMemo(() => n.find(e => e.id === t), [n, t]));
-  if (null == t && null != T && T.length > 0) {
-    let e = n.filter(e => T.includes(e.paymentGateway));
+  if (null == t && null != S && S.length > 0) {
+    let e = n.filter(e => S.includes(e.paymentGateway));
     t = 0 === e.length ? y : e[0].id
   }
   return (0, r.jsxs)(r.Fragment, {
@@ -184,7 +184,7 @@ function S(e) {
       placeholder: h.intl.string(h.t["8lqkf3"]),
       renderOptionValue: e => {
         let [t] = e;
-        return S ? (0, r.jsx)(l.$jN, {
+        return T ? (0, r.jsx)(l.$jN, {
           type: l.RAz.SPINNING_CIRCLE
         }) : t.label
       }

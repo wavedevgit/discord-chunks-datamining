@@ -139,7 +139,7 @@ function I(e) {
   });
   if (r) return !0;
   let i = null != (t = d.Z.getFeedbackConfig(e)) ? t : v[e],
-    a = [T, S],
+    a = [S, T],
     {
       doGroupEligibilityCheck: o
     } = (0, p.T)({
@@ -150,7 +150,7 @@ function I(e) {
   return a.every(e => e(i)) && s.every(e => e(i))
 }
 
-function S(e) {
+function T(e) {
   let {
     persistToBackend: t
   } = (0, f.O)({
@@ -170,7 +170,7 @@ function S(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   return Math.random() < e.chance
 }
 

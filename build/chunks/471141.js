@@ -27,7 +27,7 @@ function _(e) {
     children: E,
     disabledText: b,
     containerRef: y
-  } = e, O = i.useRef(null), v = i.useRef(null), I = i.useId(), S = (0, r.jsx)(l.r, {
+  } = e, O = i.useRef(null), v = i.useRef(null), I = i.useId(), T = (0, r.jsx)(l.r, {
     id: I,
     checked: t,
     onChange: p,
@@ -59,8 +59,8 @@ function _(e) {
           className: f.control,
           children: null != _ ? (0, r.jsx)(c.DY, {
             text: _,
-            children: S
-          }) : S
+            children: T
+          }) : T
         })]
       })
     }), null != g && (0, r.jsx)("div", {

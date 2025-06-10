@@ -28,18 +28,18 @@ let u = i.memo(i.forwardRef((e, t) => {
     sectionFooterHeight: O,
     listHeaderHeight: v,
     stickyHeaders: I = !1,
-    className: S,
-    hideScrollbar: T = !1,
+    className: T,
+    hideScrollbar: S = !1,
     fade: A = !1,
     initialScrollTop: N = 0,
     role: C = "list"
-  } = e, [R, P] = i.useState(-1), [w, D] = i.useState(-1), L = i.useRef(null), x = i.useRef(0), k = i.useRef(-1);
+  } = e, [R, P] = i.useState(-1), [w, D] = i.useState(-1), L = i.useRef(null), x = i.useRef(0), M = i.useRef(-1);
   (0, l.Ng)(() => {
     var e;
     let t = null == (e = L.current) ? void 0 : e.getScrollerNode();
     null != t && (t.scrollTop = N)
   });
-  let M = i.useCallback(() => {
+  let k = i.useCallback(() => {
       let e = "function" == typeof v ? v() : v;
       return null == e ? 0 : e
     }, [v]),
@@ -72,7 +72,7 @@ let u = i.memo(i.forwardRef((e, t) => {
         r = u[0],
         i = [],
         a = [];
-      r += M();
+      r += k();
       for (let o = 0; o < n; o++) {
         let n = t ? g[o] : m,
           s = (null == g ? void 0 : g[o]) !== 0;
@@ -101,7 +101,7 @@ let u = i.memo(i.forwardRef((e, t) => {
         rowDescriptors: i,
         sectionDescriptors: a
       }
-    }, [j, G, U, B, u, m, g, M]);
+    }, [j, G, U, B, u, m, g, k]);
   F.current = Y, V.current = H;
   let W = i.useCallback(() => {
     var e;
@@ -130,7 +130,7 @@ let u = i.memo(i.forwardRef((e, t) => {
   let K = i.useCallback(() => {
     var e;
     let t = null == (e = L.current) ? void 0 : e.getScrollerNode();
-    null != t && (window.cancelAnimationFrame(k.current), k.current = window.requestAnimationFrame(() => {
+    null != t && (window.cancelAnimationFrame(M.current), M.current = window.requestAnimationFrame(() => {
       let {
         scrollTop: e
       } = t;
@@ -226,7 +226,7 @@ let u = i.memo(i.forwardRef((e, t) => {
       n = 0,
       r = u[0],
       i = [],
-      a = M();
+      a = k();
     null != h && e < a ? i.push(h()) : r += a;
     for (let a = 0; a < Y.length; a++) {
       let {
@@ -269,7 +269,7 @@ let u = i.memo(i.forwardRef((e, t) => {
       visibleItems: i,
       listOffset: r
     }
-  }, [j, G, U, B, u, d, f, p, _, R, Y, I, h, M, w]), X = i.useMemo(() => {
+  }, [j, G, U, B, u, d, f, p, _, R, Y, I, h, k, w]), X = i.useMemo(() => {
     var e, t, n;
     return {
       top: q,
@@ -279,10 +279,10 @@ let u = i.memo(i.forwardRef((e, t) => {
     }
   }, [q, u]), Q = i.useMemo(() => ({
     height: Z
-  }), [Z]), J = T ? s.xV : s.h2;
+  }), [Z]), J = S ? s.xV : s.h2;
   return (0, r.jsxs)(J, {
     fade: A,
-    className: o()(c.scroller, S),
+    className: o()(c.scroller, T),
     ref: L,
     onScroll: K,
     children: [(0, r.jsx)("div", {

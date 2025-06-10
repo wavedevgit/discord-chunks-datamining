@@ -187,18 +187,18 @@
         n.current = e
       }, [e]), n.current
     },
-    S = function(e) {
+    T = function(e) {
       return null !== e && "object" === i(e)
     },
-    T = function(e) {
-      return S(e) && "function" == typeof e.then
+    S = function(e) {
+      return T(e) && "function" == typeof e.then
     },
     A = function(e) {
-      return S(e) && "function" == typeof e.elements && "function" == typeof e.createToken && "function" == typeof e.createPaymentMethod && "function" == typeof e.confirmCardPayment
+      return T(e) && "function" == typeof e.elements && "function" == typeof e.createToken && "function" == typeof e.createPaymentMethod && "function" == typeof e.confirmCardPayment
     },
     N = "[object Object]",
     C = function e(t, n) {
-      if (!S(t) || !S(n)) return t === n;
+      if (!T(t) || !T(n)) return t === n;
       var r = Array.isArray(t);
       if (r !== Array.isArray(n)) return !1;
       var i = Object.prototype.toString.call(t) === N;
@@ -219,8 +219,8 @@
       return u.every(_)
     },
     R = function(e, t, n) {
-      return S(e) ? Object.keys(e).reduce(function(i, o) {
-        var s = !S(t) || !C(e[o], t[o]);
+      return T(e) ? Object.keys(e).reduce(function(i, o) {
+        var s = !T(t) || !C(e[o], t[o]);
         return n.includes(o) ? (s && console.warn("Unsupported prop change: options.".concat(o, " is not a mutable property.")), i) : s ? r(r({}, i || {}), {}, a({}, o, e[o])) : i
       }, null) : null
     },
@@ -232,7 +232,7 @@
     },
     D = function(e) {
       var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : P;
-      if (T(e)) return {
+      if (S(e)) return {
         tag: "async",
         stripePromise: Promise.resolve(e).then(function(e) {
           return w(e, t)
@@ -258,11 +258,11 @@
     },
     x = t.createContext(null);
   x.displayName = "ElementsContext";
-  var k = function(e, t) {
+  var M = function(e, t) {
       if (!e) throw Error("Could not find Elements context; You need to wrap the part of your app that ".concat(t, " in an <Elements> provider."));
       return e
     },
-    M = function(e) {
+    k = function(e) {
       var n = e.stripe,
         r = e.options,
         i = e.children,
@@ -310,12 +310,12 @@
         value: s
       }, i)
     };
-  M.propTypes = {
+  k.propTypes = {
     stripe: O.any,
     options: O.object
   };
   var j = function(e) {
-      return k(t.useContext(x), e)
+      return M(t.useContext(x), e)
     },
     U = function() {
       return j("calls useElements()").elements
@@ -389,7 +389,7 @@
       var m = I(r);
       t.useEffect(function() {
         if (d.customCheckoutSdk) {
-          !r.clientSecret || S(m) || C(r.clientSecret, m.clientSecret) || console.warn("Unsupported prop change: options.client_secret is not a mutable property.");
+          !r.clientSecret || T(m) || C(r.clientSecret, m.clientSecret) || console.warn("Unsupported prop change: options.client_secret is not a mutable property.");
           var e, t, n = null == m || null == (e = m.elementsOptions) ? void 0 : e.appearance,
             i = null == r || null == (t = r.elementsOptions) ? void 0 : t.appearance;
           i && !C(i, n) && d.customCheckoutSdk.changeAppearance(i)
@@ -420,7 +420,7 @@
       var n = t.useContext(F),
         r = t.useContext(x);
       if (n && r) throw Error("You cannot wrap the part of your app that ".concat(e, " in both <CustomCheckoutProvider> and <Elements> providers."));
-      return n ? V(n, e) : k(r, e)
+      return n ? V(n, e) : M(r, e)
     },
     q = function() {
       K("calls useCustomCheckout()");
@@ -450,16 +450,16 @@
             b = n.onConfirm,
             y = n.onCancel,
             O = n.onShippingAddressChange,
-            S = n.onShippingRateChange,
-            T = z("mounts <".concat(r, ">")),
-            A = "elements" in T ? T.elements : null,
-            N = "customCheckoutSdk" in T ? T.customCheckoutSdk : null,
+            T = n.onShippingRateChange,
+            S = z("mounts <".concat(r, ">")),
+            A = "elements" in S ? S.elements : null,
+            N = "customCheckoutSdk" in S ? S.customCheckoutSdk : null,
             C = l(t.useState(null), 2),
             P = C[0],
             w = C[1],
             D = t.useRef(null),
             L = t.useRef(null);
-          v(P, "blur", u), v(P, "focus", d), v(P, "escape", p), v(P, "click", h), v(P, "loaderror", m), v(P, "loaderstart", g), v(P, "networkschange", E), v(P, "confirm", b), v(P, "cancel", y), v(P, "shippingaddresschange", O), v(P, "shippingratechange", S), v(P, "change", _), f && (i = "expressCheckout" === e ? f : function() {
+          v(P, "blur", u), v(P, "focus", d), v(P, "escape", p), v(P, "click", h), v(P, "loaderror", m), v(P, "loaderstart", g), v(P, "networkschange", E), v(P, "confirm", b), v(P, "cancel", y), v(P, "shippingaddresschange", O), v(P, "shippingratechange", T), v(P, "change", _), f && (i = "expressCheckout" === e ? f : function() {
             f(P)
           }), v(P, "ready", i), t.useLayoutEffect(function() {
             if (null === D.current && null !== L.current && (A || N)) {
@@ -621,7 +621,7 @@
     eO = Q("address", J),
     ev = Q("shippingAddress", J),
     eI = Q("paymentMethodMessaging", J),
-    eS = Q("affirmMessage", J),
-    eT = Q("afterpayClearpayMessage", J);
-  e.AddressElement = eO, e.AffirmMessageElement = eS, e.AfterpayClearpayMessageElement = eT, e.AuBankAccountElement = es, e.CardCvcElement = ed, e.CardElement = el, e.CardExpiryElement = eu, e.CardNumberElement = ec, e.CustomCheckoutProvider = W, e.Elements = M, e.ElementsConsumer = G, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = en, e.EpsBankElement = em, e.ExpressCheckoutElement = eE, e.FpxBankElement = ef, e.IbanElement = e_, e.IdealBankElement = ep, e.LinkAuthenticationElement = ey, e.P24BankElement = eh, e.PaymentElement = eg, e.PaymentMethodMessagingElement = eI, e.PaymentRequestButtonElement = eb, e.ShippingAddressElement = ev, e.useCustomCheckout = q, e.useElements = U, e.useStripe = eo
+    eT = Q("affirmMessage", J),
+    eS = Q("afterpayClearpayMessage", J);
+  e.AddressElement = eO, e.AffirmMessageElement = eT, e.AfterpayClearpayMessageElement = eS, e.AuBankAccountElement = es, e.CardCvcElement = ed, e.CardElement = el, e.CardExpiryElement = eu, e.CardNumberElement = ec, e.CustomCheckoutProvider = W, e.Elements = k, e.ElementsConsumer = G, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = en, e.EpsBankElement = em, e.ExpressCheckoutElement = eE, e.FpxBankElement = ef, e.IbanElement = e_, e.IdealBankElement = ep, e.LinkAuthenticationElement = ey, e.P24BankElement = eh, e.PaymentElement = eg, e.PaymentMethodMessagingElement = eI, e.PaymentRequestButtonElement = eb, e.ShippingAddressElement = ev, e.useCustomCheckout = q, e.useElements = U, e.useStripe = eo
 })

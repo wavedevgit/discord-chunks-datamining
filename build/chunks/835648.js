@@ -55,13 +55,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -87,8 +87,8 @@ function R(e) {
     isSelected: n,
     onClick: i,
     listItemProps: a
-  } = e, s = T(e, ["icon", "isSelected", "onClick", "listItemProps"]);
-  return (0, r.jsx)(c.P3F, S(v({}, a, s), {
+  } = e, s = S(e, ["icon", "isSelected", "onClick", "listItemProps"]);
+  return (0, r.jsx)(c.P3F, T(v({}, a, s), {
     onClick: i,
     className: o()(y.categoryIcon, {
       [y.selected]: n
@@ -103,28 +103,28 @@ function R(e) {
 function P(e, t, n, i, a, o) {
   switch (e.categoryInfo.type) {
     case m.bg.FAVORITES:
-      return (0, r.jsx)(R, S(v({}, i), {
+      return (0, r.jsx)(R, T(v({}, i), {
         icon: c.r7p,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case m.bg.RECENTLY_HEARD:
-      return (0, r.jsx)(R, S(v({}, i), {
+      return (0, r.jsx)(R, T(v({}, i), {
         icon: c.T39,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case m.bg.FREQUENTLY_USED:
-      return (0, r.jsx)(R, S(v({}, i), {
+      return (0, r.jsx)(R, T(v({}, i), {
         icon: c.IeX,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case m.bg.GUILD:
-      return (0, r.jsx)(c.P3F, S(v({}, a, i), {
+      return (0, r.jsx)(c.P3F, T(v({}, a, i), {
         className: y.category,
         onClick: t,
         children: (0, r.jsx)(u.Z, {
@@ -134,7 +134,7 @@ function P(e, t, n, i, a, o) {
         })
       }), e.key);
     case m.bg.DEFAULTS:
-      return (0, r.jsx)(R, S(v({}, i), {
+      return (0, r.jsx)(R, T(v({}, i), {
         icon: c.gw7,
         onClick: t,
         isSelected: n,

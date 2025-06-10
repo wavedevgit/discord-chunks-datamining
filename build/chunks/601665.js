@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(895697),
   v = n(161572),
   I = n(228168),
-  S = n(388032),
-  T = n(200669);
+  T = n(388032),
+  S = n(200669);
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,11 +61,11 @@ function C(e) {
     closePopout: D,
     setPopoutRef: L,
     disableUserProfileLink: x = __OVERLAY__,
-    newAnalyticsLocations: k = [],
-    disableAutoFocus: M = !1
+    newAnalyticsLocations: M = [],
+    disableAutoFocus: k = !1
   } = e, {
     analyticsLocations: j
-  } = (0, c.ZP)([...k, l.Z.USER_PROFILE_POPOUT]), U = (0, d.ZB)({
+  } = (0, c.ZP)([...M, l.Z.USER_PROFILE_POPOUT]), U = (0, d.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: A,
@@ -84,7 +84,7 @@ function C(e) {
     },
     H = () => x ? null : (0, r.jsx)(o.sNh, {
       id: "view-profile",
-      label: S.intl.string(S.t["+Xp3ho"]),
+      label: T.intl.string(T.t["+Xp3ho"]),
       action: () => {
         Z(), (0, f.pQ)(N({
           action: "PRESS_VIEW_PROFILE",
@@ -92,7 +92,7 @@ function C(e) {
         }, U))
       }
     }),
-    Y = M ? "div" : o.VqE;
+    Y = k ? "div" : o.VqE;
   return (0, r.jsx)(c.Gt, {
     value: j,
     children: (0, r.jsx)(d.Mt, {
@@ -116,7 +116,7 @@ function C(e) {
               onCloseProfile: D
             })
           }), (0, r.jsxs)("header", {
-            className: T.header,
+            className: S.header,
             children: [(0, r.jsx)(m.Z, {
               user: t,
               displayProfile: G,
@@ -150,7 +150,7 @@ function C(e) {
             guildId: A,
             channelId: C,
             onClose: D,
-            disableAutoFocus: M
+            disableAutoFocus: k
           })]
         })
       })

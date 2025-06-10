@@ -69,7 +69,7 @@ let E = i.memo(function(e) {
     }, 500);
     return () => clearTimeout(e)
   }, [b]);
-  let S = e => {
+  let T = e => {
     e.preventDefault(), e.stopPropagation(), y(!0), O ? (0, l.PF)(p) : ((0, l.uL)({
       url: p,
       src: a,
@@ -86,7 +86,7 @@ let E = i.memo(function(e) {
         [_.showPulse]: b
       }),
       onMouseDown: e => e.preventDefault(),
-      onClick: S,
+      onClick: T,
       onDoubleClick: e => e.preventDefault(),
       children: (0, r.jsx)(I, {
         color: "currentColor",

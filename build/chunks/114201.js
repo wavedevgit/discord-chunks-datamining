@@ -33,7 +33,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,7 +58,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -113,20 +113,20 @@ function R(e) {
   let {
     guildId: t,
     leaderboardId: p
-  } = e, I = (0, o.e7)([c.default], () => c.default.getId()), T = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.RIOT_GAMES)), N = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.LEAGUE_OF_LEGENDS)), R = (0, g.Z)({
+  } = e, I = (0, o.e7)([c.default], () => c.default.getId()), S = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.RIOT_GAMES)), N = (0, o.e7)([u.Z], () => u.Z.getAccount(null, y.ABu.LEAGUE_OF_LEGENDS)), R = (0, g.Z)({
     guildId: t,
     leaderboardId: p
   }), {
     leaderboardsDisabled: P
-  } = (0, m.O)(t, p), w = null != N && null != T ? () => {
+  } = (0, m.O)(t, p), w = null != N && null != S ? () => {
     _.default.track(y.rMx.LEADERBOARD_USER_DATA_REFRESH_REQUESTED, {
       leaderboard_id: p,
       guild_id: t
     }), (0, h._7)({
-      riotConnectionId: T.id,
+      riotConnectionId: S.id,
       lolConnectionId: N.id
     })
-  } : y.dG4, D = null == T || P ? O.intl.string(O.t["0yRXHx"]) : O.intl.string(O.t["KWpU6+"]), {
+  } : y.dG4, D = null == S || P ? O.intl.string(O.t["0yRXHx"]) : O.intl.string(O.t["KWpU6+"]), {
     lastUpdateRequested: L,
     statisticLastUpdatedDate: x
   } = (0, E.Z)({
@@ -135,8 +135,8 @@ function R(e) {
     leaderboardId: p,
     statisticId: a.E.LOL_TOTAL_KILLS
   }), {
-    disabled: k,
-    subtext: M
+    disabled: M,
+    subtext: k
   } = C(L, x), j = (0, o.e7)([f.Z, d.Z], () => {
     let e = d.Z.getGuild(t);
     return f.Z.can(y.Plq.ADMINISTRATOR, e)
@@ -158,12 +158,12 @@ function R(e) {
         "aria-label": O.intl.string(O.t.BjCuf3),
         onSelect: void 0,
         children: (0, r.jsxs)(s.kSQ, {
-          children: [R.leaderboard_id === b.z && null != T && (0, r.jsx)(s.sNh, {
+          children: [R.leaderboard_id === b.z && null != S && (0, r.jsx)(s.sNh, {
             id: "refresh-my-data",
             label: O.intl.string(O.t.iopWUV),
             action: w,
-            disabled: k,
-            subtext: M
+            disabled: M,
+            subtext: k
           }), (0, r.jsx)(s.sNh, {
             id: "leaderboard-modal",
             label: D,
@@ -172,7 +172,7 @@ function R(e) {
                 let {
                   default: e
                 } = await n.e("73217").then(n.bind(n, 139964));
-                return n => (0, r.jsx)(e, A(S({}, n), {
+                return n => (0, r.jsx)(e, A(T({}, n), {
                   guildId: t,
                   leaderboard: R
                 }))
@@ -186,7 +186,7 @@ function R(e) {
                 let {
                   default: e
                 } = await n.e("25526").then(n.bind(n, 262918));
-                return n => (0, r.jsx)(e, A(S({}, n), {
+                return n => (0, r.jsx)(e, A(T({}, n), {
                   guildId: t,
                   leaderboardId: p
                 }))
@@ -199,7 +199,7 @@ function R(e) {
     children: e => (0, r.jsx)(s.ua7, {
       text: O.intl.string(O.t.UKOtz8),
       targetElementRef: U,
-      children: t => (0, r.jsx)(s.P3F, A(S(A(S({}, t), {
+      children: t => (0, r.jsx)(s.P3F, A(T(A(T({}, t), {
         className: v.menuIcon
       }), e), {
         innerRef: U,

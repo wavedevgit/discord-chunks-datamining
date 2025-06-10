@@ -39,12 +39,12 @@ function I(e) {
   r = "".concat(location.protocol, "//").concat(location.host, "/handoff?rpc=").concat(e.port), O()
 }
 
-function S(e) {
+function T(e) {
   if (null != i) return !1;
   i = (0, s.Z)(), y.start(e.timeout, () => (0, f.lx)()), O()
 }
 
-function T(e) {
+function S(e) {
   let {
     handoffKey: t,
     handoffToken: n,
@@ -78,8 +78,8 @@ class C extends(o = l.ZP.Store) {
 g(C, "displayName", "BrowserHandoffStore");
 let R = new C(d.Z, {
   RPC_SERVER_READY: I,
-  BROWSER_HANDOFF_BEGIN: S,
-  BROWSER_HANDOFF_FROM_APP: T,
+  BROWSER_HANDOFF_BEGIN: T,
+  BROWSER_HANDOFF_FROM_APP: S,
   BROWSER_HANDOFF_UNAVAILABLE: v,
   BROWSER_HANDOFF_SET_USER: A,
   LOGIN: N,

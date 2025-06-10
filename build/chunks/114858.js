@@ -6,8 +6,8 @@ n.d(t, {
   EN: () => D,
   F0: () => m,
   LX: () => C,
-  TH: () => k,
-  UO: () => M,
+  TH: () => M,
+  UO: () => k,
   k6: () => x,
   l_: () => I,
   rs: () => w,
@@ -132,20 +132,20 @@ function I(e) {
     })
   })
 }
-var S = {},
-  T = 1e4,
+var T = {},
+  S = 1e4,
   A = 0;
 
 function N(e, t) {
   var n = "" + t.end + t.strict + t.sensitive,
-    r = S[n] || (S[n] = {});
+    r = T[n] || (T[n] = {});
   if (r[e]) return r[e];
   var i = [],
     a = {
       regexp: u()(e, i, t),
       keys: i
     };
-  return A < T && (r[e] = a, A++), a
+  return A < S && (r[e] = a, A++), a
 }
 
 function C(e, t) {
@@ -258,17 +258,17 @@ function x() {
   return L(p)
 }
 
-function k() {
+function M() {
   return L(h).location
 }
 
-function M() {
+function k() {
   var e = L(h).match;
   return e ? e.params : {}
 }
 
 function j(e) {
-  var t = k(),
+  var t = M(),
     n = L(h).match;
   return e ? C(t.pathname, e) : n
 }

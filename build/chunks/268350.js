@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $p: () => S,
+  $p: () => T,
   FQ: () => I,
-  Il: () => T,
+  Il: () => S,
   Jf: () => R,
   SA: () => L,
   Um: () => N,
@@ -81,7 +81,7 @@ let I = async (e, t) => {
     pack: n,
     ingestStickers: t
   }), n
-}, S = async function() {
+}, T = async function() {
   let {
     locale: e = c.default.locale
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
@@ -106,7 +106,7 @@ let I = async (e, t) => {
     type: "STICKER_PACKS_FETCH_SUCCESS",
     packs: t
   })
-}, T = async e => {
+}, S = async e => {
   let {
     body: t
   } = await a.tn.get({

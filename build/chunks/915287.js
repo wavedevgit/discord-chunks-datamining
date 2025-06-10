@@ -161,8 +161,8 @@ function v(e, t, n, a) {
       className: g,
       onScroll: v,
       onResize: I = null,
-      onContentResize: S = null,
-      dir: T = "ltr",
+      onContentResize: T = null,
+      dir: S = "ltr",
       sections: A,
       sectionHeight: N,
       rowHeight: C,
@@ -172,8 +172,8 @@ function v(e, t, n, a) {
       renderSection: D,
       renderRow: L,
       renderFooter: x,
-      renderSidebar: k,
-      renderListHeader: M,
+      renderSidebar: M,
+      renderListHeader: k,
       stickyListHeader: j,
       wrapSection: U,
       getAnchorId: G,
@@ -204,7 +204,7 @@ function v(e, t, n, a) {
       className: g,
       specs: s,
       orientation: "vertical",
-      dir: T
+      dir: S
     });
     let {
       spacerTop: es,
@@ -226,9 +226,9 @@ function v(e, t, n, a) {
       chunkSize: H,
       getScrollerState: eo,
       getAnchorId: G
-    }), ep = (0, u.t2)(ei), eh = i.useRef(I), em = i.useRef(S);
+    }), ep = (0, u.t2)(ei), eh = i.useRef(I), em = i.useRef(T);
     i.useLayoutEffect(() => {
-      eh.current = I, em.current = S
+      eh.current = I, em.current = T
     });
     let eg = i.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 2;
@@ -303,7 +303,7 @@ function v(e, t, n, a) {
           containerRef: et,
           children: y({
             items: ec,
-            renderListHeader: M,
+            renderListHeader: k,
             stickyListHeader: j,
             renderSection: D,
             renderRow: L,
@@ -312,12 +312,12 @@ function v(e, t, n, a) {
             spacerTop: es
           })
         })
-      }), [J, W, K, z, q, X, el, Q, ec, M, j, D, L, x, U, es]), i.useMemo(() => O({
+      }), [J, W, K, z, q, X, el, Q, ec, k, j, D, L, x, U, es]), i.useMemo(() => O({
         isSidebarVisible: eu,
-        renderSidebar: k,
+        renderSidebar: M,
         sidebarHeight: P,
         isListVisible: 0 !== ec.length
-      }), [eu, k, P, ec.length])]
+      }), [eu, M, P, ec.length])]
     }))
   })
 }

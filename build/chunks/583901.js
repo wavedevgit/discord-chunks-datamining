@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  DR: () => S,
+  DR: () => T,
   S4: () => v,
   bD: () => I,
   oK: () => O
@@ -161,7 +161,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     preset: t,
     isSelected: n,

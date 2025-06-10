@@ -25,9 +25,9 @@ var b = n(814011),
   O = n(618136),
   v = n(247765),
   I = n(15559),
-  S = n(42530);
+  T = n(42530);
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -72,8 +72,8 @@ function R(e) {
     [i] = r.useState(() => {
       let r = (0, a.Jh)();
       return r.children = (0, u.JM)(""), r.selection = {
-        anchor: S.nO,
-        focus: S.nO
+        anchor: T.nO,
+        focus: T.nO
       }, P(C(A({}, e), {
         editor: r,
         windowContext: t,
@@ -99,17 +99,17 @@ function P(e) {
     canUseCommands: l,
     canOnlyUseTextCommands: c,
     windowContext: u,
-    previewMarkdown: S,
-    forTests: T,
+    previewMarkdown: T,
+    forTests: S,
     onChangeStart: A,
     onChangeEnd: N,
     updateState: C
   } = e, R = a, {
     onChange: P
   } = R;
-  R.chatInputType = o, R.windowContext = u, R.previewMarkdown = S, R.composition = null, R.events = new i.EventEmitter, R.isMac = "MacIntel" === navigator.platform, R.onChange = () => {
+  R.chatInputType = o, R.windowContext = u, R.previewMarkdown = T, R.composition = null, R.events = new i.EventEmitter, R.isMac = "MacIntel" === navigator.platform, R.onChange = () => {
     R.events.emit("onChange"), P()
-  }, R = (0, y.B)(R, !0 === T), R = (0, b.Z)(R), R = (0, E.Z)(R), (null == (t = o.commands) ? void 0 : t.enabled) && (R = (0, d.Z)(R, s, !0 === l, !0 === c)), R = (0, g.ZP)(R, s.guild_id, s.id), (null == (n = o.markdown) ? void 0 : n.disableBlockQuotes) || (R = (0, f.Z)(R)), (null == (r = o.markdown) ? void 0 : r.disableCodeBlocks) || (R = (0, _.ZP)(R)), T && (R = (0, v.Z)(R)), R = (0, m.Z)(R), R = (0, p.Z)(R), R = (0, O.Z)(R), R = (0, I.Z)(R, A, N), R = (0, h.Z)(R, e => {
+  }, R = (0, y.B)(R, !0 === S), R = (0, b.Z)(R), R = (0, E.Z)(R), (null == (t = o.commands) ? void 0 : t.enabled) && (R = (0, d.Z)(R, s, !0 === l, !0 === c)), R = (0, g.ZP)(R, s.guild_id, s.id), (null == (n = o.markdown) ? void 0 : n.disableBlockQuotes) || (R = (0, f.Z)(R)), (null == (r = o.markdown) ? void 0 : r.disableCodeBlocks) || (R = (0, _.ZP)(R)), S && (R = (0, v.Z)(R)), R = (0, m.Z)(R), R = (0, p.Z)(R), R = (0, O.Z)(R), R = (0, I.Z)(R, A, N), R = (0, h.Z)(R, e => {
     let {
       newValue: t,
       newSelection: n

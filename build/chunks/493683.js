@@ -45,7 +45,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,8 +56,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -250,7 +250,7 @@ let A = {
         new_icon_set: null != t,
         location: n
       };
-    m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(I({}, a), {
+    m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, S(I({}, a), {
       status: "initiated"
     }));
     try {
@@ -263,14 +263,14 @@ let A = {
         rejectWithError: !0,
         failImmediatelyWhenRateLimited: !0
       });
-      m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(I({}, a), {
+      m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, S(I({}, a), {
         status: "success"
       }));
       let o = null == i ? void 0 : i.getGuildId();
       return null == o || (null == i ? void 0 : i.isThread()) || l.Z.checkGuildTemplateDirty(o), n
     } catch (e) {
       var o, s;
-      throw m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(I({}, a), {
+      throw m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, S(I({}, a), {
         status: "failed",
         is_rate_limited: (null == e || null == (o = e.body) ? void 0 : o.retry_after) != null,
         error_message: null == e || null == (s = e.body) ? void 0 : s.message
@@ -296,7 +296,7 @@ let A = {
         new_icon_set: null != o,
         location: n
       };
-    i && m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(I({}, s), {
+    i && m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, S(I({}, s), {
       status: "initiated"
     }));
     try {
@@ -310,13 +310,13 @@ let A = {
           rejectWithError: !0
         }),
         c = null == a ? void 0 : a.getGuildId();
-      return null == c || (null == a ? void 0 : a.isThread()) || l.Z.checkGuildTemplateDirty(c), i && m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(I({}, s), {
+      return null == c || (null == a ? void 0 : a.isThread()) || l.Z.checkGuildTemplateDirty(c), i && m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, S(I({}, s), {
         status: "success"
       })), o
     } catch (e) {
       if (i) {
         var c, u;
-        m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(I({}, s), {
+        m.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, S(I({}, s), {
           status: "failed",
           is_rate_limited: (null == e || null == (c = e.body) ? void 0 : c.retry_after) != null,
           error_message: null == e || null == (u = e.body) ? void 0 : u.message

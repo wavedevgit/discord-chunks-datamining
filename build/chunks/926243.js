@@ -45,7 +45,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,8 +56,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -93,7 +93,7 @@ let C = (e, t) => "".concat(e, ":").concat(t),
       rowIndex: m,
       size: E,
       surrogateCodePoint: v,
-      allowAnimatedEmoji: S,
+      allowAnimatedEmoji: T,
       selectedItemClassName: N,
       inNitroLockedSection: C
     } = e, R = A(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
@@ -109,7 +109,7 @@ let C = (e, t) => "".concat(e, ":").concat(t),
       },
       D = d && !C;
     return (0, r.jsx)(l.tEY, {
-      children: (0, r.jsx)("button", T(I({}, R), {
+      children: (0, r.jsx)("button", S(I({}, R), {
         className: o()(O.emojiItem, {
           [O.emojiItemLarge]: a,
           [O.emojiItemMedium]: c,
@@ -130,7 +130,7 @@ let C = (e, t) => "".concat(e, ":").concat(t),
           emoji: n,
           size: E,
           surrogateCodePoint: v,
-          allowAnimatedEmoji: S,
+          allowAnimatedEmoji: T,
           isLocked: D
         })
       }))
@@ -148,15 +148,15 @@ function P(e) {
     onSelect: b,
     isScrolling: O,
     isUsingKeyboardNavigation: v,
-    showEmojiFavoriteTooltip: S,
+    showEmojiFavoriteTooltip: T,
     surrogateCodePoint: N,
     selectedItemClassName: P,
     getEmojiItemProps: w,
     isMediumSize: D,
     isLargeSize: L,
     pulseItemKey: x,
-    allowAnimatedEmoji: k,
-    setPulseItemKey: M,
+    allowAnimatedEmoji: M,
+    setPulseItemKey: k,
     messageId: j,
     isBurstReaction: U,
     rowPosition: G,
@@ -169,7 +169,7 @@ function P(e) {
   } = t, X = e => {
     if (e.stopPropagation(), O.current || v.current) return;
     let n = e.altKey;
-    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && M(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), b(t, {
+    n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && k(a), (0, h.Kw)(h.v6.FAVORITE_EMOJI_TOOLTIP), b(t, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: n
     })
@@ -192,7 +192,7 @@ function P(e) {
       tabIndex: c,
       onFocus: u
     } = s, d = A(s, ["ref", "tabIndex", "onFocus"]);
-    return (0, i.createElement)("li", T(I({}, d), {
+    return (0, i.createElement)("li", S(I({}, d), {
       key: a,
       ref: Y
     }), F !== C(q, f) && (0, r.jsx)(R, {
@@ -204,13 +204,13 @@ function P(e) {
       isInspected: o,
       isDisabled: z,
       showPulse: x === a,
-      allowAnimatedEmoji: k,
+      allowAnimatedEmoji: M,
       onFocus: null != u ? u : Q,
       onMouseMove: Q,
       onMouseEnter: t,
       onMouseLeave: n,
       onClick: e => {
-        if (null != Y.current && null != G && null != j && !e.shiftKey && null != W.name && U && !Z && k) {
+        if (null != Y.current && null != G && null != j && !e.shiftKey && null != W.name && U && !Z && M) {
           let e = null == W.id ? _.ZP.convertNameToSurrogate(W.name) : W.name,
             t = Y.current.getBoundingClientRect();
           t.x = G.x + (q + 1) * K, V(C(q, f)), (0, m.U)(j, e, W.id, t)
@@ -227,7 +227,7 @@ function P(e) {
       inNitroLockedSection: B
     }))
   };
-  return S ? (0, r.jsx)(l.ua7, {
+  return T ? (0, r.jsx)(l.ua7, {
     text: y.intl.formatToPlainString(y.t.glqNsb, {
       key: (0, E.isMac)() ? "Opt" : "Alt"
     }),

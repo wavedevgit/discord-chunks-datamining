@@ -36,7 +36,7 @@ function I(e, t) {
   let n = g[e];
   return null != n ? n[t] : null
 }
-let S = e => {
+let T = e => {
   switch (e.type) {
     case p.IIU.CUSTOM_STATUS:
       return 4;
@@ -51,8 +51,8 @@ let S = e => {
   }
 };
 
-function T(e, t) {
-  return S(t) - S(e)
+function S(e, t) {
+  return T(t) - T(e)
 }
 let A = e => +!!(0, u.Z)(e);
 
@@ -66,7 +66,7 @@ function C(e, t) {
 }
 
 function R(e, t) {
-  return T(e, t) || N(e, t) || C(e, t)
+  return S(e, t) || N(e, t) || C(e, t)
 }
 
 function P(e) {
@@ -179,15 +179,15 @@ function x(e) {
   }
 }
 
-function k(e, t) {
+function M(e, t) {
   if (t === f.default.getId()) return !1;
   let n = g[t];
   if (null == n || null == n[e]) return !1;
   delete n[e], 0 === Object.keys(n).length && delete g[t], P(t)
 }
 
-function M(e) {
-  for (let t of d.default.keys(g)) k(e, t)
+function k(e) {
+  for (let t of d.default.keys(g)) M(e, t)
 }
 
 function j() {
@@ -261,7 +261,7 @@ function B(e) {
   let {
     presences: t
   } = e;
-  M(p.ME), t.forEach(e => {
+  k(p.ME), t.forEach(e => {
     let {
       user: t,
       status: n,
@@ -311,7 +311,7 @@ function V(e) {
   let {
     guild: t
   } = e;
-  M(t.id)
+  k(t.id)
 }
 
 function Z(e) {
@@ -319,7 +319,7 @@ function Z(e) {
     guildId: t,
     user: n
   } = e;
-  return k(t, n.id)
+  return M(t, n.id)
 }
 
 function H(e) {

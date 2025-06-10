@@ -24,7 +24,7 @@ var r, i = n(392711),
   v = n(594174),
   I = n(981631);
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,14 +33,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -58,9 +58,9 @@ let A = "recentMentionFilterSettings",
   }),
   L = !1,
   x = 0,
-  k = !1;
+  M = !1;
 
-function M(e) {
+function k(e) {
   C = {}, e.forEach(e => {
     null == C[e.getChannelId()] && (C[e.getChannelId()] = 0), C[e.getChannelId()]++
   })
@@ -126,12 +126,12 @@ function V(e) {
     userId: r,
     suppressEveryone: i,
     suppressRoles: a
-  }) ? (k && E.ZP.ackMessageId(n.id) !== e.id && (0, d.ZP)({
+  }) ? (M && E.ZP.ackMessageId(n.id) !== e.id && (0, d.ZP)({
     message: e,
     userId: r,
     suppressEveryone: O.ZP.isSuppressEveryoneEnabled(n.getGuildId()),
     suppressRoles: O.ZP.isSuppressRolesEnabled(n.getGuildId())
-  }) && (k = !1), e) : null
+  }) && (M = !1), e) : null
 }
 
 function Z(e) {
@@ -197,7 +197,7 @@ function K(e) {
 }
 
 function z(e) {
-  let t = T({}, D);
+  let t = S({}, D);
   D = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), D), s.K.set(A, D);
   let n = (e, n) => t[e] !== D[e] && D[e] === n,
     r = n("guildFilter", I.NgX.THIS_SERVER) || n("everyoneFilter", !1) || n("roleFilter", !1);
@@ -206,7 +206,7 @@ function z(e) {
   r && N.forEach(e => {
     let t = V(e);
     null != t && (i.push(t), R[t.id] = !0)
-  }), M(N = i), 0 === N.length && (L = !1)
+  }), k(N = i), 0 === N.length && (L = !1)
 }
 
 function q() {
@@ -215,7 +215,7 @@ function q() {
 }
 
 function X() {
-  N = [], R = {}, L = !1, k = !1, C = {}
+  N = [], R = {}, L = !1, M = !1, C = {}
 }
 
 function Q(e) {
@@ -261,7 +261,7 @@ function et(e) {
 }
 
 function en(e) {
-  k = !0
+  M = !0
 }
 class er extends(r = o.ZP.Store) {
   initialize() {
@@ -295,7 +295,7 @@ class er extends(r = o.ZP.Store) {
     return D.roleFilter
   }
   get mentionsAreStale() {
-    return k
+    return M
   }
   get mentionCountByChannel() {
     return C
@@ -305,7 +305,7 @@ class er extends(r = o.ZP.Store) {
     return null != (t = C[e]) ? t : 0
   }
 }
-S(er, "displayName", "RecentMentionsStore");
+T(er, "displayName", "RecentMentionsStore");
 let ei = new er(c.Z, {
   LOAD_RECENT_MENTIONS: U,
   LOAD_RECENT_MENTIONS_SUCCESS: B,

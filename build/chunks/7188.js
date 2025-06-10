@@ -25,7 +25,7 @@ var r = n(255367),
   v = n(388032),
   I = n(71922);
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,14 +34,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -116,7 +116,7 @@ function D(e) {
   } = e, h = C(e, ["hideBadges", "stream", "location"]);
   let I = i.useRef(null),
     {
-      parentAnalyticsLocation: S
+      parentAnalyticsLocation: T
     } = (0, s.ZP)(),
     A = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), O.p9.TIER_1)),
     R = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? void 0 : n.channelId)),
@@ -141,19 +141,19 @@ function D(e) {
           onClose: t,
           showReportOption: !0,
           handleGoLive: L,
-          onInteraction: (0, c.u)("ManageStreamsButton", null != S ? S : u, {
+          onInteraction: (0, c.u)("ManageStreamsButton", null != T ? T : u, {
             entrypoint: y.A5.OTHER_BUTTON
           })
         })
       })
     },
     animation: o.yRy.Animation.FADE,
-    children: e => (0, r.jsx)(E.Z, T(N(T({}, e), {
+    children: e => (0, r.jsx)(E.Z, S(N(S({}, e), {
       buttonRef: I,
       label: v.intl.string(v.t.tmiYpK),
       iconComponent: x,
       onClick: t => {
-        (null != S || null != u) && (0, l.v)(null != S ? S : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)
+        (null != T || null != u) && (0, l.v)(null != T ? T : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)
       }
     }), h))
   })

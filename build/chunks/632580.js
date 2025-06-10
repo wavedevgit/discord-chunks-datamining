@@ -66,8 +66,8 @@ async function y(e) {
     isGift: O,
     baseAnalyticsData: v,
     analyticsLocation: I,
-    analyticsLocations: S,
-    flowStartTime: T,
+    analyticsLocations: T,
+    flowStartTime: S,
     subscriptionPlan: A,
     planGroup: N,
     trialId: C,
@@ -77,8 +77,8 @@ async function y(e) {
     openInvoiceId: D,
     premiumSubscription: L,
     onNext: x,
-    metadata: k,
-    sku: M,
+    metadata: M,
+    sku: k,
     skuPricePreview: j,
     purchaseType: U,
     referralCode: G,
@@ -94,9 +94,9 @@ async function y(e) {
         tax: null == V ? void 0 : V.tax,
         expected_amount: null == V ? void 0 : V.total,
         expected_currency: null == V ? void 0 : V.currency,
-        duration_ms: Date.now() - T
+        duration_ms: Date.now() - S
       })), E) return;
-    if (U === p.GZQ.ONE_TIME) i()(null != M, "SKU must exist and be fetched."), i()(null != j, "SKUPricePreview must exist."), e = await (0, c.ZZ)(M.applicationId, M.id, {
+    if (U === p.GZQ.ONE_TIME) i()(null != k, "SKU must exist and be fetched."), i()(null != j, "SKUPricePreview must exist."), e = await (0, c.ZZ)(k.applicationId, k.id, {
       expectedAmount: j.amount,
       expectedCurrency: j.currency,
       isGift: O,
@@ -130,20 +130,20 @@ async function y(e) {
       } else if (w && null != D && null != P && null != L) e = p.Uk1.has(P.type) ? await (0, o.G)(L, D, P, R.currency) : await (0, o.Mg)(L, {
         paymentSource: P,
         currency: R.currency
-      }, t, n, S, I, B);
+      }, t, n, T, I, B);
       else if (null != L) {
         let r = (0, f.al)(L, A.id, 1, new Set(N)),
           i = {
             paymentSource: P,
             currency: R.currency
           };
-        L.status === p.O0b.PAUSED && (i.status = p.O0b.ACTIVE), L.isPausedAllowsResumeButNotUpdates || (i.items = r), e = await (0, o.Mg)(L, i, t, n, S, I, B)
+        L.status === p.O0b.PAUSED && (i.status = p.O0b.ACTIVE), L.isPausedAllowsResumeButNotUpdates || (i.items = r), e = await (0, o.Mg)(L, i, t, n, T, I, B)
       } else e = await (0, l.Ld)({
         planId: A.id,
         currency: R.currency,
         paymentSource: P,
         trialId: C,
-        metadata: k,
+        metadata: M,
         referralCode: G,
         loadId: B,
         expectedInvoicePrice: t,
@@ -157,7 +157,7 @@ async function y(e) {
       payment_error_code: null == e ? void 0 : e.code,
       payment_source_id: null == P ? void 0 : P.id,
       payment_source_type: null == P ? void 0 : P.type,
-      duration_ms: Date.now() - T
+      duration_ms: Date.now() - S
     }))
   } finally {
     E || r(!1)

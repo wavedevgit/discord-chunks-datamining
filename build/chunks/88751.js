@@ -70,7 +70,7 @@ function I(e, t) {
   return null != r && !!r.isGuildStageVoice() && (null == (n = g[t]) || delete n[e], !0)
 }
 
-function S(e, t) {
+function T(e, t) {
   for (let n in g) {
     let r = l.Z.getBasicChannel(n);
     null != r && r.guild_id === t && delete g[n][e]
@@ -78,7 +78,7 @@ function S(e, t) {
   return !0
 }
 
-function T(e) {
+function S(e) {
   let t = Object.values(l.Z.getMutableGuildChannelsForGuild(e)).filter(e => e.isGuildStageVoice());
   for (let e of t) delete g[e.id];
   return t.length > 0
@@ -95,7 +95,7 @@ function N(e) {
   let {
     guildId: t
   } = e;
-  T(t)
+  S(t)
 }
 
 function C(e) {
@@ -103,7 +103,7 @@ function C(e) {
     guildId: t,
     user: n
   } = e;
-  return null != n && null != t && S(n.id, t)
+  return null != n && null != t && T(n.id, t)
 }
 
 function R(e) {
@@ -120,7 +120,7 @@ function R(e) {
 }
 
 function P(e) {
-  return T(e.guildId)
+  return S(e.guildId)
 }
 
 function w() {

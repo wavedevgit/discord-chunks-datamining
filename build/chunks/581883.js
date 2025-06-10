@@ -67,20 +67,20 @@ function v(e) {
   } = (0, p.xt)(E.proto, _.Z[h.yP.PRELOADED_USER_SETTINGS]);
   r && A(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = !0, Object.values(y).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = !1, e.editInfo.loading = !1)
-  }), T()
+  }), S()
 }
 
 function I() {
-  T()
+  S()
 }
 
-function S() {
-  T(), Object.values(y).forEach(e => {
+function T() {
+  S(), Object.values(y).forEach(e => {
     e.proto = e.ProtoClass.create(), e.editInfo = (0, h.JC)()
   })
 }
 
-function T() {
+function S() {
   Object.values(y).forEach(e => {
     if (null != e.editInfo.timeout) {
       var t, n;
@@ -219,5 +219,5 @@ let L = new D(f.Z, {
   CONNECTION_CLOSED: I,
   CONNECTION_RESUMED: I,
   OVERLAY_INITIALIZE: N,
-  LOGOUT: S
+  LOGOUT: T
 })

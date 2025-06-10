@@ -45,9 +45,9 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -55,7 +55,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -66,11 +66,11 @@ function T(e, t) {
 function A(e) {
   var {
     onClose: t
-  } = e, n = S(e, ["onClose"]);
+  } = e, n = T(e, ["onClose"]);
   let v = (0, a.e7)([d.default], () => d.default.getCurrentUser()),
-    T = (0, a.e7)([c.Z], () => c.Z.theme),
+    S = (0, a.e7)([c.Z], () => c.Z.theme),
     A = (0, a.e7)([u.Z], () => u.Z.getGuildId()),
-    N = T === b.BRd.LIGHT ? "light" : "dark",
+    N = S === b.BRd.LIGHT ? "light" : "dark",
     C = (0, r.jsx)("img", {
       className: O.art,
       alt: "File Upload Nitro Perk",

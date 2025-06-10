@@ -49,7 +49,7 @@ function g(e) {
     guild: y
   }), v = (0, l.Z)({}), {
     trackUserProfileAction: I
-  } = (0, d.KZ)(), S = i.useRef(null);
+  } = (0, d.KZ)(), T = i.useRef(null);
   return b ? null == y ? (0, r.jsx)(f.tG, {
     action: "EDIT_PROFILE",
     text: _.intl.string(_.t.s5vZlZ),
@@ -60,7 +60,7 @@ function g(e) {
       null == E || E(), v(), (0, s.i)(g)
     }
   }) : (0, r.jsx)(o.yRy, {
-    targetElementRef: S,
+    targetElementRef: T,
     renderPopout: e => {
       let {
         closePopout: t
@@ -95,7 +95,7 @@ function g(e) {
       })
     },
     children: e => (0, r.jsx)(f.tG, m({
-      ref: S,
+      ref: T,
       text: _.intl.string(_.t.s5vZlZ),
       icon: o.vdY,
       autoFocus: !0,

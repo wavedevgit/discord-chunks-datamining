@@ -6,8 +6,8 @@ n.d(t, {
   Hz: () => A,
   LD: () => v,
   MD: () => y,
-  SI: () => T,
-  UJ: () => S,
+  SI: () => S,
+  UJ: () => T,
   X6: () => b,
   aQ: () => L,
   g4: () => I,
@@ -76,10 +76,10 @@ function y(e) {
   var t, n;
   let r = h(e);
   if (r === f.qn.NONE) return !1;
-  if ((null == (t = e.attachments) ? void 0 : t.some(e => S({
+  if ((null == (t = e.attachments) ? void 0 : t.some(e => T({
       type: u.l.Attachment,
       media: e
-    }, r))) || (null == (n = e.embeds) ? void 0 : n.some(e => S({
+    }, r))) || (null == (n = e.embeds) ? void 0 : n.some(e => T({
       type: u.l.Embed,
       media: e
     }, r)))) return !0;
@@ -97,11 +97,11 @@ function O(e) {
     attachmentIds: [],
     embedIds: []
   };
-  let o = null == (t = e.attachments) ? void 0 : t.filter(e => S({
+  let o = null == (t = e.attachments) ? void 0 : t.filter(e => T({
       type: u.l.Attachment,
       media: e
     }, a)),
-    s = null == (n = e.embeds) ? void 0 : n.filter(e => S({
+    s = null == (n = e.embeds) ? void 0 : n.filter(e => T({
       type: u.l.Embed,
       media: e
     }, a));
@@ -114,16 +114,16 @@ function O(e) {
 function v(e, t) {
   if (t === f.qn.NONE) return [];
   let n = N(t);
-  return 0 === n.length ? [] : n.filter(t => T(t, e)).map(e => f.Fj[e].obscureReason)
+  return 0 === n.length ? [] : n.filter(t => S(t, e)).map(e => f.Fj[e].obscureReason)
 }
 
 function I(e, t) {
   if (t === f.qn.NONE) return !1;
   let n = N(t);
-  return 0 !== n.length && n.filter(t => T(t, e)).length > 0
+  return 0 !== n.length && n.filter(t => S(t, e)).length > 0
 }
 
-function S(e, t) {
+function T(e, t) {
   if (t === f.qn.NONE || i.ZP.get("explicit_media_redaction_ignore_pending_scan")) return !1;
   let n = N(t);
   if (0 === n.length) return !1;
@@ -139,7 +139,7 @@ function S(e, t) {
   }
 }
 
-function T(e, t) {
+function S(e, t) {
   var n, r, a, o;
   if (null == e) return !1;
   let s = f.Fj[e];
@@ -184,15 +184,15 @@ function C(e, t) {
 
 function R(e, t) {
   var n, r, i, a, o, s, l;
-  return !(0 === t.length || null == e || 0 === t.filter(t => !T(t, {
+  return !(0 === t.length || null == e || 0 === t.filter(t => !S(t, {
     type: u.l.Embed,
     media: e
-  })).length || "video" in e && null != e.video && (null == (n = e.video) ? void 0 : n.width) === 0 && (null == (r = e.video) ? void 0 : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? void 0 : i.width) === 0 && (null == (a = e.thumbnail) ? void 0 : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? void 0 : o.width) === 0 && (null == (s = e.image) ? void 0 : s.height) === 0 || "images" in e && (null == (l = e.images) ? void 0 : l.some(e => null != e && 0 === e.width && 0 === e.height))) && D(k(e), t)
+  })).length || "video" in e && null != e.video && (null == (n = e.video) ? void 0 : n.width) === 0 && (null == (r = e.video) ? void 0 : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? void 0 : i.width) === 0 && (null == (a = e.thumbnail) ? void 0 : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? void 0 : o.width) === 0 && (null == (s = e.image) ? void 0 : s.height) === 0 || "images" in e && (null == (l = e.images) ? void 0 : l.some(e => null != e && 0 === e.width && 0 === e.height))) && D(M(e), t)
 }
 
 function P(e, t) {
   var n;
-  return 0 !== t.length && 0 !== t.filter(t => !T(t, {
+  return 0 !== t.length && 0 !== t.filter(t => !S(t, {
     type: u.l.Attachment,
     media: e
   })).length && D(null != (n = e.content_scan_version) ? n : e.contentScanVersion, t)
@@ -200,7 +200,7 @@ function P(e, t) {
 
 function w(e, t) {
   var n;
-  return 0 !== t.length && 0 !== t.filter(t => !T(t, {
+  return 0 !== t.length && 0 !== t.filter(t => !S(t, {
     type: u.l.GenericMedia,
     media: e
   })).length && D(null == (n = e.contentScanMetadata) ? void 0 : n.version, t)
@@ -224,6 +224,6 @@ function x(e) {
   }
 }
 
-function k(e) {
+function M(e) {
   return null != e.content_scan_version ? e.content_scan_version : null != e.contentScanVersion || null != e.contentScanVersion ? e.contentScanVersion : null
 }

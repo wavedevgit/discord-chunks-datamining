@@ -29,8 +29,8 @@ function E(e) {
     guildId: b
   } = e, y = (0, s.e7)([u.default], () => u.default.getUser(E)), O = g.guild_settings.sort_by_statistic_id, v = i.useMemo(() => g.users.findIndex(e => e.user_id === E) + 1, [g, E]), I = i.useMemo(() => g.users.find(e => e.user_id === E), [g, E]);
   o()(null != I, "User row should not be null"), o()(null != y, "User must exist");
-  let S = d.ZP.getName(b, void 0, y),
-    T = null != (n = null == (t = I.statistics[O]) ? void 0 : t.value) ? n : 0;
+  let T = d.ZP.getName(b, void 0, y),
+    S = null != (n = null == (t = I.statistics[O]) ? void 0 : t.value) ? n : 0;
   return (0, r.jsxs)("div", {
     ref: a,
     className: m.container,
@@ -56,7 +56,7 @@ function E(e) {
         className: m.title,
         variant: "text-md/semibold",
         children: h.intl.format(h.t.tluICw, {
-          username: S,
+          username: T,
           rank: v
         })
       }), (0, r.jsx)(l.LZC, {
@@ -64,7 +64,7 @@ function E(e) {
       }), (0, r.jsxs)(c.Gk, {
         location: c.Gt.EMBED,
         children: [(0, r.jsx)(f.DC, {
-          value: T,
+          value: S,
           statisticId: O
         }), (0, r.jsx)(f.Js, {
           intervalStart: g.interval_start,

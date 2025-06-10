@@ -59,8 +59,8 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = "max_uses",
-  T = "User Invite Context Menu",
+let T = "max_uses",
+  S = "User Invite Context Menu",
   A = "context_menu";
 
 function N(e, t) {
@@ -90,9 +90,9 @@ function C(e) {
           [e.id]: !0
         })), !p.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) return void N(t, e.vanityURLCode);
       l.ZP.createInvite(n.id, {
-        [S]: 1,
+        [T]: 1,
         unique: !0
-      }, T).then(e => N(t, e.code))
+      }, S).then(e => N(t, e.code))
     }
   }
   return (null == c ? void 0 : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(o.sNh, {

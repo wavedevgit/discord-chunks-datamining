@@ -13,9 +13,9 @@ n.d(t, {
   U9: () => z,
   XF: () => B,
   Yl: () => q,
-  ej: () => M,
+  ej: () => k,
   f: () => H,
-  m7: () => k,
+  m7: () => M,
   n8: () => K,
   pQ: () => V,
   v1: () => Z,
@@ -42,9 +42,9 @@ var r = n(255367),
   O = n(371991),
   v = n(206583),
   I = n(388032),
-  S = n(859589);
+  T = n(859589);
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -60,7 +60,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -116,18 +116,18 @@ function x() {
   return i.useContext(L)
 }
 
-function k(e) {
+function M(e) {
   var {
     children: t
   } = e, n = R(e, ["children"]);
   return (0, r.jsx)("div", C(A({
-    className: S.badgeContainer
+    className: T.badgeContainer
   }, n), {
     children: t
   }))
 }
 
-function M(e) {
+function k(e) {
   let {
     Icon: t,
     text: n,
@@ -142,14 +142,14 @@ function M(e) {
   return (0, r.jsx)(f.ua7, {
     text: a,
     shouldShow: o,
-    children: e => (0, r.jsxs)(k, C(A({}, e), {
+    children: e => (0, r.jsxs)(M, C(A({}, e), {
       children: [(0, r.jsx)(t, {
         size: "xxs",
         color: null != i ? i : l
       }), (0, r.jsx)(f.Text, {
         variant: "text-xs/normal",
         color: s,
-        className: S.badgeLabel,
+        className: T.badgeLabel,
         scaleFontToUserSetting: 5 === c,
         children: n
       })]
@@ -165,7 +165,7 @@ function j(e) {
   } = (0, E.Z)(t), {
     location: i
   } = x();
-  return null == n || (0, h.Hi)(i, [1, 2, 3, 4]) ? null : (0, r.jsx)(M, {
+  return null == n || (0, h.Hi)(i, [1, 2, 3, 4]) ? null : (0, r.jsx)(k, {
     Icon: f.gj8,
     text: n.name
   })
@@ -188,7 +188,7 @@ function U(e) {
   }, {
     autoTrackExposure: !0
   }), p = null != u ? f.hGI : (0, g.Mq)(t) && !d ? f.jje : f.iWm;
-  return (0, r.jsxs)(k, {
+  return (0, r.jsxs)(M, {
     children: [(0, r.jsx)(p, {
       size: "xxs",
       color: l
@@ -212,7 +212,7 @@ function G(e) {
     state: a,
     party: o
   } = (0, y.n)(t), s = (0, b.bT)(a, o);
-  return null == s ? null : (0, r.jsxs)(k, {
+  return null == s ? null : (0, r.jsxs)(M, {
     children: [(0, r.jsx)(f.BFJ, {
       size: "xxs",
       color: i
@@ -235,7 +235,7 @@ function B(e) {
     location: o
   } = x(), s = (0, b.Jg)(t) && (0, h.Hi)(o, [0, 4]), l = s ? f.TVs.colors.TEXT_POSITIVE : a, c = s ? "text-positive" : i;
   return (0, r.jsxs)("div", {
-    className: S.badgeContainer,
+    className: T.badgeContainer,
     children: [(0, r.jsx)(f.RZG, {
       size: "xxs",
       color: l
@@ -254,7 +254,7 @@ function F(e) {
   } = e, {
     location: n
   } = x(), i = (0, h.Hi)(n, [0, 3]) ? f.TVs.colors.STATUS_POSITIVE : void 0;
-  return (0, b.Ol)(t) ? (0, r.jsx)(M, {
+  return (0, b.Ol)(t) ? (0, r.jsx)(k, {
     Icon: f._IE,
     text: I.intl.string(I.t.keY6mZ),
     iconColor: i
@@ -274,7 +274,7 @@ function V(e) {
       text: o,
       tooltipText: s
     } = (0, b.zo)(t);
-  return null == o ? null : (0, r.jsx)(M, {
+  return null == o ? null : (0, r.jsx)(k, {
     Icon: f.ANZ,
     text: o,
     tooltipText: s,
@@ -290,7 +290,7 @@ function Z(e) {
   } = x(), i = 0 !== n, a = (0, b.dw)(t);
   if (null == a) return null;
   let o = (0, b.GE)(a);
-  return (0, r.jsx)(M, {
+  return (0, r.jsx)(k, {
     Icon: f.Oe7,
     showTooltip: !i,
     tooltipText: o,
@@ -304,7 +304,7 @@ function H(e) {
   } = e, {
     location: n
   } = x(), i = (0, b.vU)(t);
-  return (0, b.q_)(t) ? (0, r.jsx)(M, {
+  return (0, b.q_)(t) ? (0, r.jsx)(k, {
     Icon: f.qOE,
     showTooltip: 0 === n,
     text: I.intl.formatToPlainString(I.t["Klie/P"], {
@@ -325,7 +325,7 @@ function Y(e) {
   if (null == a) return null;
   let o = i ? " — " : ": ",
     s = i ? I.t.C0Axoa : I.t.SDRHgo;
-  return (0, r.jsx)(M, {
+  return (0, r.jsx)(k, {
     Icon: f.rm8,
     text: (0, r.jsxs)(r.Fragment, {
       children: [I.intl.string(I.t["/50eHh"]), o, I.intl.format(s, {
@@ -348,7 +348,7 @@ function W(e) {
   }) : I.intl.formatToPlainString(I.t["jq/Bmp"], {
     count: a
   });
-  return (0, r.jsx)(M, {
+  return (0, r.jsx)(k, {
     Icon: f.rm8,
     text: o
   })
@@ -362,7 +362,7 @@ function K(e) {
   } = x();
   if (3 === n) return null;
   let i = (0, b.ig)(t);
-  return null == i || i === d.o.TRENDING_TYPE_UNSPECIFIED ? null : (0, r.jsx)(M, {
+  return null == i || i === d.o.TRENDING_TYPE_UNSPECIFIED ? null : (0, r.jsx)(k, {
     Icon: f.YqE,
     text: I.intl.string(I.t.kAlUs7)
   })
@@ -376,7 +376,7 @@ function z(e) {
   } = x();
   if (3 === n) return null;
   let i = m.default.extractTimestamp(t.extra.application_id);
-  return l()().diff(l()(i), "days") > v.G ? null : (0, r.jsx)(M, {
+  return l()().diff(l()(i), "days") > v.G ? null : (0, r.jsx)(k, {
     Icon: f.rIT,
     text: I.intl.string(I.t.vYuyWV)
   })
@@ -392,7 +392,7 @@ function q(e) {
     location: o
   } = x(), s = (0, b.Jg)(t) && 4 === o, l = s ? f.TVs.colors.TEXT_POSITIVE : a, c = s ? "text-positive" : i;
   return (0, r.jsxs)("div", {
-    className: S.badgeContainer,
+    className: T.badgeContainer,
     children: [(0, r.jsx)(f.ARS, {
       size: "xxs",
       color: l
@@ -409,7 +409,7 @@ function X(e) {
   let {
     entry: t
   } = e, n = (0, b.ap)(t.extra.media_assets_large_text);
-  return null == n ? null : (0, r.jsx)(M, {
+  return null == n ? null : (0, r.jsx)(k, {
     Icon: f.sVe,
     text: n
   })
@@ -438,10 +438,10 @@ function Q(e) {
       location: n
     }, t),
     children: (0, r.jsx)("div", {
-      className: o()(S.badgesContainer, {
-        [S.badgesContainerCard]: 0 === n,
-        [S.badgesContainerPopout]: (0, h.Hi)(n, [1, 2]),
-        [S.badgesContainerGameProfile]: 3 === n
+      className: o()(T.badgesContainer, {
+        [T.badgesContainerCard]: 0 === n,
+        [T.badgesContainerPopout]: (0, h.Hi)(n, [1, 2]),
+        [T.badgesContainerGameProfile]: 3 === n
       }, a),
       children: i
     })

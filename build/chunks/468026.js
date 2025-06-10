@@ -27,8 +27,8 @@ let m = e => {
       secondaryConfirmText: O,
       onCancel: v,
       onClose: I,
-      onConfirm: S,
-      onConfirmSecondary: T,
+      onConfirm: T,
+      onConfirmSecondary: S,
       title: A,
       transitionState: N,
       titleClassName: C
@@ -39,10 +39,10 @@ let m = e => {
       null == I || I(), null == v || v()
     },
     D = e => {
-      null != e && e.preventDefault(), null == I || I(), null == S || S()
+      null != e && e.preventDefault(), null == I || I(), null == T || T()
     },
     L = () => {
-      null == I || I(), null == T || T()
+      null == I || I(), null == S || S()
     };
   return null != g && "" !== g && (t = (0, r.jsx)(o.zx, {
     type: "button",

@@ -68,8 +68,8 @@ function y(e) {
   } = e, {
     contextMetadata: v,
     step: I,
-    paymentSources: S,
-    paymentSourceId: T,
+    paymentSources: T,
+    paymentSourceId: S,
     setPaymentSourceId: A,
     purchaseError: N,
     setPurchaseError: C,
@@ -80,19 +80,19 @@ function y(e) {
     previousStepRef: L,
     setPurchaseState: x
   } = (0, d.JL)(), {
-    isGift: k
-  } = (0, u.wD)(), M = b(g({}, (0, s.fL)()), {
-    paymentSources: S,
-    paymentSourceId: T,
+    isGift: M
+  } = (0, u.wD)(), k = b(g({}, (0, s.fL)()), {
+    paymentSources: T,
+    paymentSourceId: S,
     setPaymentSourceId: A,
     purchaseError: N,
     setPurchaseError: C,
     purchaseErrorBlockRef: R,
     paymentAuthenticationState: P,
     selectedSkuId: w,
-    isGift: k
-  }), j = (0, o.N)(m), U = !k && null != j && null != w && h.nG[j.trial_id].skus.includes(w), G = () => {
-    c(Object.values(S).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
+    isGift: M
+  }), j = (0, o.N)(m), U = !M && null != j && null != w && h.nG[j.trial_id].skus.includes(w), G = () => {
+    c(Object.values(T).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: f.h8.PAYMENT_TYPE
     })
   }, B = null != E ? E : G;
@@ -100,7 +100,7 @@ function y(e) {
   let F = (0, a.Z)(() => Date.now(), [I]),
     V = null != y && null == L.current ? y : f.h8.PAYMENT_TYPE;
   return (0, s.vP)({
-    paymentModalArgs: M,
+    paymentModalArgs: k,
     initialStep: V,
     prependSteps: [f.h8.PROMOTION_INFO],
     appendSteps: [f.h8.REVIEW, f.h8.CONFIRM],
@@ -128,7 +128,7 @@ function y(e) {
       }))
     },
     isEligibleForTrial: U,
-    allowDesktopRedirectPurchase: O(w, k, D)
+    allowDesktopRedirectPurchase: O(w, M, D)
   })
 }
 

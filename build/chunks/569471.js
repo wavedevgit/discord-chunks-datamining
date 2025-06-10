@@ -95,14 +95,14 @@ function I(e) {
   })).keyBy("threadId").value()
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: t
   } = e;
   E(t.id), b(t)
 }
 
-function T(e) {
+function S(e) {
   let {
     guild: t
   } = e;
@@ -217,8 +217,8 @@ d(D, "displayName", "JoinedThreadsStore");
 let L = new D(s.Z, {
     CONNECTION_OPEN: v,
     OVERLAY_INITIALIZE: I,
-    GUILD_CREATE: S,
-    GUILD_DELETE: T,
+    GUILD_CREATE: T,
+    GUILD_DELETE: S,
     THREAD_CREATE: A,
     THREAD_LIST_SYNC: N,
     SEARCH_FINISH: N,

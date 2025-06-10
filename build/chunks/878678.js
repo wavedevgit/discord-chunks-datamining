@@ -51,17 +51,17 @@ function p(e) {
       transitionState: O,
       loading: v = !1,
       confirmButtonColor: I = s.zx.Colors.RED,
-      focusCancel: S = !1,
-      impression: T
+      focusCancel: T = !1,
+      impression: S
     } = e,
     A = i.useRef(null),
     N = (0, c.Q3)("ConfirmModal");
   return i.useEffect(() => {
-    S || setTimeout(() => {
+    T || setTimeout(() => {
       var e;
       return null == (e = A.current) ? void 0 : e.focus()
     }, 0)
-  }, [S]), i.useLayoutEffect(() => () => null == b ? void 0 : b()), null != p && (t = (0, r.jsx)(s.zx, {
+  }, [T]), i.useLayoutEffect(() => () => null == b ? void 0 : b()), null != p && (t = (0, r.jsx)(s.zx, {
     type: "button",
     look: N ? s.zx.Looks.FILLED : s.zx.Looks.LINK,
     color: s.zx.Colors.PRIMARY,
@@ -71,7 +71,7 @@ function p(e) {
     onClick: () => {
       null == g || g(), E()
     },
-    autoFocus: S,
+    autoFocus: T,
     children: p
   })), null != _ && (n = (0, r.jsx)(s.zx, {
     buttonRef: A,
@@ -86,12 +86,12 @@ function p(e) {
         throw e
       }
     },
-    autoFocus: !S,
+    autoFocus: !T,
     children: _
   })), (0, r.jsxs)(u.Y0, {
     className: h,
     transitionState: O,
-    impression: T,
+    impression: S,
     parentComponent: "ConfirmModal",
     children: [null != a ? (0, r.jsx)(u.xB, {
       separator: !1,

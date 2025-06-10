@@ -52,7 +52,7 @@ function I(e) {
   return delete E[e], g === e && (g = null, t = !0), m === e && (Object.values(f.Z.getGuilds()).find(t => t.id !== e), m = null, (0, c.dL)(_.Z5c.ME), t = !0), t
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: {
       id: t,
@@ -62,7 +62,7 @@ function S(e) {
   return !0 !== n && I(t)
 }
 
-function T(e) {
+function S(e) {
   let {
     guildId: t,
     user: n
@@ -105,7 +105,7 @@ let C = new N(o.Z, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: y,
   CHANNEL_SELECT: v,
-  GUILD_MEMBER_REMOVE: T,
-  GUILD_DELETE: S,
+  GUILD_MEMBER_REMOVE: S,
+  GUILD_DELETE: T,
   LOGOUT: A
 })

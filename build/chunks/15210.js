@@ -38,8 +38,8 @@ function g(e) {
       object: p.qAy.GUILD_PROFILE
     })
   }, [t]), {
-    text: S,
-    onClick: T
+    text: T,
+    onClick: S
   } = i.useMemo(() => {
     switch (n) {
       case _.sE.IS_MEMBER:
@@ -74,18 +74,18 @@ function g(e) {
   }, [n, v, I, E, u, s, f, O]), A = i.useCallback(async e => {
     e.stopPropagation(), y(!0);
     try {
-      await (null == T ? void 0 : T())
+      await (null == S ? void 0 : S())
     } catch (e) {} finally {
       null == g || g(), y(!1)
     }
-  }, [T, g]);
-  return null == S ? null : (0, r.jsx)(a.zxk, {
+  }, [S, g]);
+  return null == T ? null : (0, r.jsx)(a.zxk, {
     color: E ? a.zxk.Colors.GREEN : a.zxk.Colors.BRAND,
     size: a.zxk.Sizes.SMALL,
     fullWidth: !0,
     submitting: b || o,
     onClick: A,
-    children: S
+    children: T
   })
 }
 

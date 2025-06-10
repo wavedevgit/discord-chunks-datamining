@@ -7,9 +7,9 @@ n.d(t, {
   Nq: () => A,
   SZ: () => x,
   aC: () => L,
-  pI: () => S,
+  pI: () => T,
   sR: () => D,
-  tt: () => M
+  tt: () => k
 }), n(539854);
 var r = n(399606),
   i = n(704215),
@@ -33,19 +33,19 @@ var r = n(399606),
   v = n(710111),
   I = n(981631);
 
-function S() {
+function T() {
   var e;
   let t = o.kU.getSetting();
   return null != (e = null == t ? void 0 : t.volume) ? e : 100
 }
 
-function T(e, t) {
+function S(e, t) {
   return (null == t ? void 0 : t.guild_id) == null || f.Z.can(I.Plq.USE_EXTERNAL_SOUNDS, t) || e.guildId === v.X8 || e.guildId === (null == t ? void 0 : t.guild_id)
 }
 
 function A(e, t, n) {
   let r = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3];
-  return (h.ZP.canUseSoundboardEverywhere(e) || t.guildId === (null == n ? void 0 : n.guild_id) || t.guildId === v.X8) && T(t, n) && (!r || t.available)
+  return (h.ZP.canUseSoundboardEverywhere(e) || t.guildId === (null == n ? void 0 : n.guild_id) || t.guildId === v.X8) && S(t, n) && (!r || t.available)
 }
 
 function N(e) {
@@ -79,7 +79,7 @@ async function w(e) {
   let i = r.guildId === v.hY ? v.X8 : r.guildId,
     o = E.Z.getSound(i, r.soundId);
   if (null != o) {
-    if (!T(o, n) || !A(t, o, n, !0) || !N(n)) return null;
+    if (!S(o, n) || !A(t, o, n, !0) || !N(n)) return null;
     R(o, n.id)
   }
 }
@@ -98,7 +98,7 @@ function D(e) {
 
 function L(e, t) {
   (0, s.PS)(e, n => {
-    n.joinSound = void 0, k({
+    n.joinSound = void 0, M({
       guildId: e,
       changeType: b.MW.REMOVED,
       soundType: b.jy.ENTRY,
@@ -115,7 +115,7 @@ function x(e, t, n) {
     r.joinSound = {
       soundId: t.soundId,
       guildId: i ? v.hY : t.guildId
-    }, k({
+    }, M({
       guildId: e,
       changeType: o,
       soundSource: a,
@@ -125,7 +125,7 @@ function x(e, t, n) {
   }, s.fy.INFREQUENT_USER_ACTION)
 }
 
-function k(e) {
+function M(e) {
   let {
     guildId: t,
     changeType: n,
@@ -142,7 +142,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     location: t
   } = e;

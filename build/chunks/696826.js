@@ -117,11 +117,11 @@ function I(e) {
   return (0, s.wj)(e) ? f.VZ.BLACK : f.VZ.WHITE
 }
 
-function S(e, t, n, r) {
+function T(e, t, n, r) {
   return "scale(".concat(t, ") translate(").concat(.5625 * e + r, " ").concat(.75 * e + n, ")")
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   return "".concat(.5625 * e + n, "px ").concat(.75 * e + t, "px")
 }
 
@@ -145,8 +145,8 @@ function A(e) {
     cutoutWidth: 0,
     cutoutHeight: 0,
     cutoutRadius: 0,
-    polygonScale: S(t, 0, s, l),
-    polygonOrigin: T(t, s, l),
+    polygonScale: T(t, 0, s, l),
+    polygonOrigin: S(t, s, l),
     dotY: .75 * t + s,
     dotX: .5 * t + l,
     dotRadius: 0
@@ -164,33 +164,33 @@ function A(e) {
         cutoutWidth: .75 * t,
         cutoutHeight: .75 * t,
         cutoutRadius: 0,
-        polygonScale: S(t, 0, s, l),
-        polygonOrigin: T(t, s, l),
+        polygonScale: T(t, 0, s, l),
+        polygonOrigin: S(t, s, l),
         dotY: 1.25 * t,
         dotX: .5 * t + l,
         dotRadius: .125 * t
       };
       return {
-        bgRadius: .5 * t, bgY: .25 * t + s, bgX: l, bgHeight: t, bgWidth: t, cutoutX: .5 * t + l, cutoutY: .75 * t + s, cutoutWidth: 0, cutoutHeight: 0, cutoutRadius: 0, polygonScale: S(t, 0, s, l), polygonOrigin: T(t, s, l), dotY: .75 * t + s, dotX: .5 * t + l, dotRadius: 0
+        bgRadius: .5 * t, bgY: .25 * t + s, bgX: l, bgHeight: t, bgWidth: t, cutoutX: .5 * t + l, cutoutY: .75 * t + s, cutoutWidth: 0, cutoutHeight: 0, cutoutRadius: 0, polygonScale: T(t, 0, s, l), polygonOrigin: S(t, s, l), dotY: .75 * t + s, dotX: .5 * t + l, dotRadius: 0
       };
     case d.Skl.IDLE:
       return {
-        bgRadius: .5 * t, bgY: .25 * t + s, bgX: l, bgHeight: t, bgWidth: t, cutoutX: -(.125 * t) + l, cutoutY: .125 * t + s, cutoutWidth: .75 * t, cutoutHeight: .75 * t, cutoutRadius: .375 * t, polygonScale: S(t, 0, s, l), polygonOrigin: T(t, s, l), dotY: .75 * t + s, dotX: .5 * t + l, dotRadius: 0
+        bgRadius: .5 * t, bgY: .25 * t + s, bgX: l, bgHeight: t, bgWidth: t, cutoutX: -(.125 * t) + l, cutoutY: .125 * t + s, cutoutWidth: .75 * t, cutoutHeight: .75 * t, cutoutRadius: .375 * t, polygonScale: T(t, 0, s, l), polygonOrigin: S(t, s, l), dotY: .75 * t + s, dotX: .5 * t + l, dotRadius: 0
       };
     case d.Skl.DND:
       return {
-        bgRadius: .5 * t, bgY: .25 * t + s, bgX: l, bgHeight: t, bgWidth: t, cutoutX: .125 * t + l, cutoutY: .625 * t + s, cutoutWidth: .75 * t, cutoutHeight: .25 * t, cutoutRadius: .125 * t, polygonScale: S(t, 0, s, l), polygonOrigin: T(t, s, l), dotY: .75 * t + s, dotX: .5 * t + l, dotRadius: 0
+        bgRadius: .5 * t, bgY: .25 * t + s, bgX: l, bgHeight: t, bgWidth: t, cutoutX: .125 * t + l, cutoutY: .625 * t + s, cutoutWidth: .75 * t, cutoutHeight: .25 * t, cutoutRadius: .125 * t, polygonScale: T(t, 0, s, l), polygonOrigin: S(t, s, l), dotY: .75 * t + s, dotX: .5 * t + l, dotRadius: 0
       };
     case d.Skl.STREAMING:
       return {
-        bgRadius: .5 * t, bgY: .25 * t + s, bgX: l, bgHeight: t, bgWidth: t, cutoutX: .5 * t + l, cutoutY: .75 * t + s, cutoutWidth: 0, cutoutHeight: 0, cutoutRadius: .25 * t, polygonScale: S(t, 1, s, l), polygonOrigin: T(t, s, l), dotY: .75 * t + s, dotX: .5 * t + l, dotRadius: 0
+        bgRadius: .5 * t, bgY: .25 * t + s, bgX: l, bgHeight: t, bgWidth: t, cutoutX: .5 * t + l, cutoutY: .75 * t + s, cutoutWidth: 0, cutoutHeight: 0, cutoutRadius: .25 * t, polygonScale: T(t, 1, s, l), polygonOrigin: S(t, s, l), dotY: .75 * t + s, dotX: .5 * t + l, dotRadius: 0
       };
     case d.Skl.INVISIBLE:
     case d.Skl.UNKNOWN:
     case d.Skl.OFFLINE:
     default:
       return {
-        bgRadius: .5 * t, bgY: .25 * t + s, bgX: l, bgHeight: t, bgWidth: t, cutoutX: .25 * t + l, cutoutY: .5 * t + s, cutoutWidth: .5 * t, cutoutHeight: .5 * t, cutoutRadius: .25 * t, polygonScale: S(t, 0, s, l), polygonOrigin: T(t, s, l), dotY: .75 * t + s, dotX: .5 * t + l, dotRadius: 0
+        bgRadius: .5 * t, bgY: .25 * t + s, bgX: l, bgHeight: t, bgWidth: t, cutoutX: .25 * t + l, cutoutY: .5 * t + s, cutoutWidth: .5 * t, cutoutHeight: .5 * t, cutoutRadius: .25 * t, polygonScale: T(t, 0, s, l), polygonOrigin: S(t, s, l), dotY: .75 * t + s, dotX: .5 * t + l, dotRadius: 0
       }
   }
 }

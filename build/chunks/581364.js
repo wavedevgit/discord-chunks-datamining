@@ -8,14 +8,14 @@ n.d(t, {
   Dd: () => C,
   Ft: () => D,
   TK: () => B,
-  X0: () => M,
+  X0: () => k,
   XA: () => j,
   Z8: () => v,
   bD: () => P,
   nG: () => A,
   qJ: () => U,
   t0: () => G,
-  tI: () => k
+  tI: () => M
 }), n(388685), n(953529), n(539854), n(361932), n(187205), n(35282), n(781311);
 var r = n(654861),
   i = n.n(r),
@@ -117,7 +117,7 @@ function I(e) {
   return null == e ? void 0 : e.map(e => {
     var t, n;
     let r = O(b({}, e), {
-      choices: S(e.choices),
+      choices: T(e.choices),
       options: I(e.options),
       serverLocalizedName: e.name_localized,
       displayName: null != (t = e.name_localized) ? t : e.name,
@@ -135,7 +135,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   return null == e ? void 0 : e.map(e => {
     var t;
     return O(b({}, e), {
@@ -144,7 +144,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   var t, n;
   let {
     rootCommand: r,
@@ -171,7 +171,7 @@ function T(e) {
   let l = [];
   if (null == i.options) return l;
   let c = i.options.filter(e => e.type === u.jw.SUB_COMMAND_GROUP);
-  for (let e = 0; e < c.length; e++) l.push(...T({
+  for (let e = 0; e < c.length; e++) l.push(...S({
     rootCommand: r,
     command: c[e],
     applicationId: a,
@@ -204,7 +204,7 @@ function T(e) {
 }
 
 function A(e, t) {
-  return l().flatMap(e, e => (o()(null != e.id, "Missing command id"), T({
+  return l().flatMap(e, e => (o()(null != e.id, "Missing command id"), S({
     rootCommand: e,
     command: e,
     applicationId: e.application_id,
@@ -300,14 +300,14 @@ function x(e) {
   }
 }
 
-function k(e) {
+function M(e) {
   if (null != e)
     if (e.id === h.bi.BUILT_IN) return p.ub.BUILT_IN;
     else if (e.id === h.bi.FRECENCY) return p.ub.FRECENCY;
   else return p.ub.APP
 }
 
-function M(e, t) {
+function k(e, t) {
   var n, r;
   return {
     type: p.Qi.APPLICATION,

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   n: () => A,
-  v: () => S
+  v: () => T
 }), n(388685), n(415506), n(482853);
 var r = n(255367),
   i = n(73800),
@@ -92,14 +92,14 @@ class I extends i.PureComponent {
   }
 }
 
-function S() {
+function T() {
   return (0, g.Vn)((0, f.bp)())
 }
-let T = [];
+let S = [];
 
 function A() {
-  let e = S(),
-    t = (0, g.s9)(t => void 0 !== t[e] ? t[e] : T),
+  let e = T(),
+    t = (0, g.s9)(t => void 0 !== t[e] ? t[e] : S),
     n = (0, _.q)("Modals"),
     a = i.useRef(void 0);
   i.useLayoutEffect(() => {

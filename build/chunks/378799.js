@@ -3,8 +3,8 @@
 n.d(t, {
   Dz: () => _,
   SW: () => w,
-  T_: () => k,
-  _v: () => M,
+  T_: () => M,
+  _v: () => k,
   jd: () => x,
   pz: () => D,
   s5: () => R
@@ -171,10 +171,10 @@ function I() {
   return null != (e = o.K.get(v)) ? e : null
 }
 
-function S(e) {
+function T(e) {
   o.K.set(v, e)
 }
-class T {
+class S {
   _setCachedKeyCodeMapEntries() {
     this._cachedKeyCodeMapEntries = Object.entries(this.keyCodeMap).map(e => {
       let [t, n] = e;
@@ -238,7 +238,7 @@ class T {
     this._internalKeyLayoutMap = null, this.keyMap = y(u({}, this._defaultKeyMap)), this._initializeInternalLayoutMap(), this.keyCodeMap = this._buildKeyCodeMapFromKeyMap(), this.updateCaches(), this.save()
   }
   save() {
-    S(this.keyMap)
+    T(this.keyMap)
   }
   getLayoutMap() {
     return null == this._internalKeyLayoutMap ? b() : this._internalKeyLayoutMap
@@ -264,7 +264,7 @@ class T {
     null != t ? this.keyMap = t : this.keyMap = y(u({}, e)), this._initializeInternalLayoutMap(), this.keyCodeMap = this._buildKeyCodeMapFromKeyMap(), this.updateCaches(), this.save()
   }
 }
-class A extends T {
+class A extends S {
   getKeyString(e, t) {
     var n;
     let r = this.getKeyCodeMapItem(e);
@@ -410,7 +410,7 @@ function x(e) {
   return null
 }
 
-function k(e) {
+function M(e) {
   var t, n, r, i;
   let a = null != e ? h(e) : void 0;
   if (null == a) return null;
@@ -431,7 +431,7 @@ function k(e) {
   }
 }
 
-function M(e) {
+function k(e) {
   var t, n, r, i;
   let a = null != (n = null == (t = P()) ? void 0 : t.findKeyboardEventByKeyCode(e)) ? n : null;
   if (null != a) return a;

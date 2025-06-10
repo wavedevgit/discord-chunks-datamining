@@ -10,7 +10,7 @@ n.r(t), n.d(t, {
   removeAnalyticsToken: () => R,
   removeToken: () => C,
   setAnalyticsToken: () => I,
-  setToken: () => S,
+  setToken: () => T,
   showToken: () => N
 }), n(388685);
 var a = n(433517),
@@ -87,15 +87,15 @@ function v(e) {
 
 function I(e) {
   if (null == e) return void C(l);
-  T(e, l)
-}
-
-function S(e, t) {
-  if (null == e) return void C(t);
-  r = e, T(e, t)
+  S(e, l)
 }
 
 function T(e, t) {
+  if (null == e) return void C(t);
+  r = e, S(e, t)
+}
+
+function S(e, t) {
   null != t && (_[t] = e), f ? P() : (i = r, p = _, g())
 }
 

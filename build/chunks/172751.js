@@ -109,8 +109,8 @@ let E = i.memo(function(e) {
       badgeSize: O,
       disableGuildProfile: v = !1,
       inline: I = !0,
-      onShowProfile: S,
-      onClose: T
+      onShowProfile: T,
+      onClose: S
     } = e, A = i.useRef(null), N = (0, s.e7)([d.default], () => d.default.getUser(a), [a]), C = (0, s.e7)([u.Z], () => u.Z.theme), R = null != (t = null == N ? void 0 : N.primaryGuild) ? t : n, {
       tag: P,
       badge: w,
@@ -129,8 +129,8 @@ let E = i.memo(function(e) {
       theme: C,
       children: (0, r.jsx)(c.Z, {
         guildId: D,
-        onRequestOpen: S,
-        onClose: T,
+        onRequestOpen: T,
+        onClose: S,
         targetElementRef: A,
         children: e => (0, r.jsx)("span", {
           className: m,

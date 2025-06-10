@@ -32,8 +32,8 @@ function y(e, t, n) {
 let O = 4,
   v = 2 * _.Z.Millis.MINUTE,
   I = E.YN.GLOBAL_FEED,
-  S = 15 * _.Z.Millis.MINUTE,
-  T = new Map,
+  T = 15 * _.Z.Millis.MINUTE,
+  S = new Map,
   A = new Set,
   N = new Map,
   C = null,
@@ -59,7 +59,7 @@ function D(e) {
   if (e === I) {
     if (!(0, p.sA)("ContentInventoryManager") || m.Z.hidden && null != g.Z.getFeed(e) || !f.Z.isFocused() || !l.Z.isConnected()) return !1;
     let t = d.Z.getIdleSince();
-    if (null != t && Date.now() - t > S) return !1
+    if (null != t && Date.now() - t > T) return !1
   }
   return !0
 }
@@ -68,8 +68,8 @@ function L(e) {
   w(e, {
     loading: !1
   });
-  let t = T.get(e);
-  void 0 !== t && (clearTimeout(t), T.delete(e))
+  let t = S.get(e);
+  void 0 !== t && (clearTimeout(t), S.delete(e))
 }
 
 function x() {
@@ -83,12 +83,12 @@ function x() {
   w(I, {
     loading: !1,
     nextFetchDate: new Date(Date.now() + a)
-  }), T.set(I, setTimeout(() => k({
+  }), S.set(I, setTimeout(() => M({
     feedId: I,
     feature: i.L.INBOX
   }), a))
 }
-async function k(e) {
+async function M(e) {
   let {
     feedId: t,
     feature: n,
@@ -116,7 +116,7 @@ async function k(e) {
     let e = null != (i = N.get(t)) ? i : 0;
     if (e < O) {
       let i = _.Z.Millis.MINUTE * Math.pow(2, e) + P(e);
-      T.set(t, setTimeout(() => k({
+      S.set(t, setTimeout(() => M({
         feedId: t,
         feature: n,
         force: r
@@ -129,12 +129,12 @@ async function k(e) {
   }
 }
 
-function M() {
+function k() {
   x()
 }
 
 function j() {
-  M()
+  k()
 }
 
 function U() {
@@ -146,7 +146,7 @@ function G(e) {
     feedId: t,
     feature: n
   } = e;
-  L(t), k({
+  L(t), M({
     feedId: t,
     feature: n,
     force: !0
@@ -177,7 +177,7 @@ function V() {
   }, {
     autoTrackExposure: !0
   });
-  e && k({
+  e && M({
     feedId: E.YN.GAME_PROFILE_FEED,
     feature: i.L.GAME_PROFILE
   })
@@ -191,7 +191,7 @@ function Z() {
   }, {
     autoTrackExposure: !0
   });
-  e && k({
+  e && M({
     feedId: E.YN.GAME_PROFILE_FEED,
     feature: i.L.OVERLAY_INVITES
   })
@@ -201,9 +201,9 @@ class H extends o.Z {
     super(...e), y(this, "actions", {
       POST_CONNECTION_OPEN: j,
       CONNECTION_CLOSED: U,
-      WINDOW_FOCUS: M,
-      IDLE: M,
-      CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: M,
+      WINDOW_FOCUS: k,
+      IDLE: k,
+      CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: k,
       CONTENT_INVENTORY_MANUAL_REFRESH: G,
       CONTENT_INVENTORY_INBOX_STALE: B,
       SPOTIFY_NEW_TRACK: F,

@@ -33,7 +33,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function S(e) {
   }
   return e
 }
-let T = (0, r.debounce)(o.xc, 1e3),
+let S = (0, r.debounce)(o.xc, 1e3),
   A = {},
   N = {},
   C = 3 * b.Z.Millis.MINUTE,
@@ -75,12 +75,12 @@ function x(e, t) {
   }), !0)
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = null != t ? t : h.Z.getPreferredRegion();
   null != n && n !== h.Z.getRegion(g.Z.getHostname(e)) && (0, o.dV)(e, n)
 }
 
-function M(e, t) {
+function k(e, t) {
   var n;
   if (g.Z.getAllActiveStreamKeys().includes(e)) return;
   let r = null != (n = N[e]) ? n : new i.V7;
@@ -100,7 +100,7 @@ class j extends s.Z {
       } = e, {
         channelId: r
       } = (0, y.my)(t), i = _.Z.getChannel(r);
-      M(t, null == i ? void 0 : i.isGuildStageVoice()), D(t), n || d.Z.getAllActiveStreams().forEach(e => {
+      k(t, null == i ? void 0 : i.isGuildStageVoice()), D(t), n || d.Z.getAllActiveStreams().forEach(e => {
         let n = (0, y.V9)(e);
         e.ownerId !== f.default.getId() && n !== t && (0, o.g)(n, !1)
       })
@@ -110,7 +110,7 @@ class j extends s.Z {
         streamType: n,
         guildId: r
       } = e, i = _.Z.getChannel(t);
-      M((0, y.V9)({
+      k((0, y.V9)({
         streamType: n,
         guildId: r,
         channelId: t,
@@ -128,7 +128,7 @@ class j extends s.Z {
       } = (0, y.my)(n);
       if (null == i || null == r || r !== (null == (t = E.default.getCurrentUser()) ? void 0 : t.id)) return;
       let a = p.Z.getMemberCount(i);
-      null == a || a < 2 || a > O.tB || u.eo.getSetting() && T(n)
+      null == a || a < 2 || a > O.tB || u.eo.getSetting() && S(n)
     }), I(this, "handleStreamUpdate", e => {
       let {
         streamKey: t
@@ -139,7 +139,7 @@ class j extends s.Z {
         reason: t,
         streamKey: n
       } = e;
-      L(n), t === v.si2.STREAM_FULL && ((0, l.kr)(S({
+      L(n), t === v.si2.STREAM_FULL && ((0, l.kr)(T({
         type: l.u.STREAM_FULL
       }, (0, c.rT)(n))), (0, o.aP)(n, !1), this.platformShowStreamFull())
     }), I(this, "handleStreamClose", e => {
@@ -193,13 +193,13 @@ class j extends s.Z {
         channelId: t,
         region: n
       } = e, r = d.Z.getCurrentUserActiveStream();
-      (null == r ? void 0 : r.channelId) === t && k((0, y.V9)(r), n)
+      (null == r ? void 0 : r.channelId) === t && M((0, y.V9)(r), n)
     }), I(this, "handleChannelUpdates", e => {
       let {
         channels: t
       } = e, n = d.Z.getCurrentUserActiveStream();
       if (null != n)
-        for (let e of t) n.channelId === e.id && k((0, y.V9)(n), e.rtcRegion)
+        for (let e of t) n.channelId === e.id && M((0, y.V9)(n), e.rtcRegion)
     }), I(this, "handleMediaEngineVideoStateChanged", e => {
       let {
         videoState: t

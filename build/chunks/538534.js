@@ -63,7 +63,7 @@ function v(e, t) {
 
 function I(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,14 +71,14 @@ function I(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let T = {
+let S = {
   NOT_SET: "",
   NONE: "0",
   SMALL: "7px 10px",
@@ -345,7 +345,7 @@ function w(e) {
     collapsibleClassName: a,
     className: o,
     value: s = null,
-    size: l = T.MEDIUM,
+    size: l = S.MEDIUM,
     radioPosition: c = "left",
     onChange: u = g.dG4,
     disabled: f = !1,
@@ -359,8 +359,8 @@ function w(e) {
     isDisabled: f
   }), {
     ref: O
-  } = b, S = I(b, ["ref"]), A = _.some(e => e.value === s);
-  return (0, i.jsx)("div", v(y({}, S), {
+  } = b, T = I(b, ["ref"]), A = _.some(e => e.value === s);
+  return (0, i.jsx)("div", v(y({}, T), {
     ref: O,
     className: o,
     children: _.map(e => (0, i.jsx)(C, {
@@ -384,4 +384,4 @@ function w(e) {
 b(C, "defaultProps", {
   withTransparentBackground: !1,
   radioPosition: "left"
-}), w.Sizes = T
+}), w.Sizes = S

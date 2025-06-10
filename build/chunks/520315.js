@@ -23,7 +23,7 @@ function o(e) {
   y.current = l;
   let O = r.useRef(c);
   O.current = c;
-  let [v, I] = r.useState(!1), S = r.useCallback(() => I(!1), []);
+  let [v, I] = r.useState(!1), T = r.useCallback(() => I(!1), []);
   return r.useLayoutEffect(() => {
     void 0 !== t && (h.current = null, m.current = null, I(!1))
   }, [t]), r.useLayoutEffect(() => {
@@ -51,6 +51,6 @@ function o(e) {
   }, [t, d, v]), {
     ref: p,
     isTransitioning: v,
-    onTransitionEnd: S
+    onTransitionEnd: T
   }
 }

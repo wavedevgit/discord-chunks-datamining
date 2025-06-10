@@ -41,18 +41,18 @@ function v() {
   let v = c.Z.getGuild(y.getGuildId());
   if (null == v || !v.hasFeature(b.oNc.DISCOVERABLE)) return null;
   let I = (0, h.Lw)(y, u),
-    S = (null == O || null == (e = O.party) ? void 0 : e.id) === I ? O : null,
-    T = _.Z.getMutableParticipants(y.id, p.pV.SPEAKER),
-    A = T.filter(e => e.type === p.Ui.STREAM).length,
-    N = T.length - A,
+    T = (null == O || null == (e = O.party) ? void 0 : e.id) === I ? O : null,
+    S = _.Z.getMutableParticipants(y.id, p.pV.SPEAKER),
+    A = S.filter(e => e.type === p.Ui.STREAM).length,
+    N = S.length - A,
     C = _.Z.getParticipantCount(s) - A,
-    R = (null == S || null == (t = S.party) ? void 0 : t.size) != null ? S.party.size[1] : 0;
+    R = (null == T || null == (t = T.party) ? void 0 : t.size) != null ? T.party.size[1] : 0;
   return {
     application_id: E.gD,
     name: null != (i = null != (r = u.topic) ? r : y.topic) ? i : y.name,
     type: (0, g.xJ)(y.id) ? b.IIU.WATCHING : b.IIU.LISTENING,
     timestamps: {
-      start: null != (a = null == S || null == (n = S.timestamps) ? void 0 : n.start) ? a : new Date().getTime()
+      start: null != (a = null == T || null == (n = T.timestamps) ? void 0 : n.start) ? a : new Date().getTime()
     },
     assets: {
       small_image: null != (o = v.icon) ? o : void 0,
@@ -70,7 +70,7 @@ function I() {
   return !a()(e, O) && (O = e, !0)
 }
 
-function S(e) {
+function T(e) {
   let {
     voiceStates: t
   } = e;
@@ -79,7 +79,7 @@ function S(e) {
   null != n && null != t.find(e => e.channelId === n.channelId) && I()
 }
 
-function T(e) {
+function S(e) {
   var t, n, r;
   let {
     state: i
@@ -101,6 +101,6 @@ let N = new A(s.Z, {
   STAGE_INSTANCE_UPDATE: I,
   STAGE_INSTANCE_DELETE: I,
   VOICE_CHANNEL_SELECT: I,
-  RTC_CONNECTION_STATE: T,
-  VOICE_STATE_UPDATES: S
+  RTC_CONNECTION_STATE: S,
+  VOICE_STATE_UPDATES: T
 })

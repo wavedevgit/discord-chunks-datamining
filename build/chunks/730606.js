@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(683528),
   v = n(545093),
   I = n(549635),
-  S = n(981631),
-  T = n(388032),
+  T = n(981631),
+  S = n(388032),
   A = n(606584);
 
 function N(e) {
@@ -120,8 +120,8 @@ function w(e) {
   i.useEffect(() => {
     let e = () => P(p.current + 1),
       t = () => P(p.current - 1);
-    return h.S.subscribe(S.CkL.MODAL_CAROUSEL_NEXT, e), h.S.subscribe(S.CkL.MODAL_CAROUSEL_PREV, t), () => {
-      h.S.unsubscribe(S.CkL.MODAL_CAROUSEL_NEXT, e), h.S.unsubscribe(S.CkL.MODAL_CAROUSEL_PREV, t)
+    return h.S.subscribe(T.CkL.MODAL_CAROUSEL_NEXT, e), h.S.subscribe(T.CkL.MODAL_CAROUSEL_PREV, t), () => {
+      h.S.unsubscribe(T.CkL.MODAL_CAROUSEL_NEXT, e), h.S.unsubscribe(T.CkL.MODAL_CAROUSEL_PREV, t)
     }
   }, [P, N]);
   let w = t[f],
@@ -138,17 +138,17 @@ function w(e) {
       children: e => x ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(v.Z, {
           onClick: e => {
-            e.stopPropagation(), h.S.dispatch(S.CkL.MODAL_CAROUSEL_PREV)
+            e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_PREV)
           },
           icon: s.j9r,
-          tooltip: T.intl.string(T.t.vgfxaG),
+          tooltip: S.intl.string(S.t.vgfxaG),
           className: o()(A.navPrev, e)
         }), (0, r.jsx)(v.Z, {
           onClick: e => {
-            e.stopPropagation(), h.S.dispatch(S.CkL.MODAL_CAROUSEL_NEXT)
+            e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_NEXT)
           },
           icon: s.d4D,
-          tooltip: T.intl.string(T.t.XiOHRU),
+          tooltip: S.intl.string(S.t.XiOHRU),
           className: o()(A.navNext, e)
         })]
       }) : void 0

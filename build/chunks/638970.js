@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(864141),
   v = n(228168),
   I = n(231338),
-  S = n(388032),
-  T = n(608459);
+  T = n(388032),
+  S = n(608459);
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -107,8 +107,8 @@ function x(e) {
   } = (0, d.ZP)(), {
     trackUserProfileAction: x
   } = (0, h.KZ)(), {
-    live: k,
-    stream: M
+    live: M,
+    stream: k
   } = (0, m.Z)(t.id), {
     voiceChannel: j,
     voiceActivity: U
@@ -122,20 +122,20 @@ function x(e) {
     voiceActivityStatusEnabled: F
   } = (0, u.U)({
     location: "UserProfileStackedActivity"
-  }), V = F && null == M && null == U && null != j, Z = (0, E.yi)(), H = (null == Z ? void 0 : Z.interactionSource) === v.n_.ACTIVITY, Y = i.useRef(null), W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), [q, X] = i.useReducer(D, L), {
+  }), V = F && null == k && null == U && null != j, Z = (0, E.yi)(), H = (null == Z ? void 0 : Z.interactionSource) === v.n_.ACTIVITY, Y = i.useRef(null), W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), [q, X] = i.useReducer(D, L), {
     height: Q,
     animationPhase: J
   } = q, $ = "awaitingInput" !== J, ee = "animating" === J || "done" === J, et = [], en = {
     user: t,
     currentUser: n,
-    className: T.card,
+    className: S.card,
     onClose: C
   };
-  null != M && et.push((0, r.jsx)(y.Z, N({
+  null != k && et.push((0, r.jsx)(y.Z, N({
     location: "UserProfileStackedActivity",
-    stream: M,
+    stream: k,
     profileGuildId: null == a ? void 0 : a.guildId
-  }, en), "stream")), k.forEach((e, t) => {
+  }, en), "stream")), M.forEach((e, t) => {
     et.push((0, r.jsx)(b.Z, N({
       activity: e,
       profileGuildId: null == a ? void 0 : a.guildId
@@ -147,7 +147,7 @@ function x(e) {
     look: l.zxk.Looks.BLANK,
     size: l.zxk.Sizes.NONE,
     color: l.zxk.Colors.TRANSPARENT,
-    className: o()(T.viewAllButton, ee && T.isShown),
+    className: o()(S.viewAllButton, ee && S.isShown),
     onClick: () => {
       x({
         action: "PRESS_VIEW_PROFILE",
@@ -159,7 +159,7 @@ function x(e) {
     children: (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
       color: "header-primary",
-      children: S.intl.string(S.t.pD1L1t)
+      children: T.intl.string(T.t.pD1L1t)
     })
   }) : null, es = i.useCallback(() => {
     if (null == Y.current || null == K.current) return;
@@ -190,42 +190,42 @@ function x(e) {
   }), B || 0 === et.length) ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       ref: Y,
-      className: T.activityContainer,
+      className: S.activityContainer,
       style: {
         height: "auto" !== Q ? "".concat(Q, "px") : Q
       },
       children: [(0, r.jsxs)("ul", {
         ref: W,
-        className: T.cardsList,
-        "aria-label": S.intl.string(S.t.J6STd3),
+        className: S.cardsList,
+        "aria-label": T.intl.string(T.t.J6STd3),
         tabIndex: -1,
         children: [(0, r.jsxs)("li", {
-          className: o()(T.firstCardContainer, !ee && ei.length > 0 && T.hasShowMoreButton, H && T.isInteracting),
+          className: o()(S.firstCardContainer, !ee && ei.length > 0 && S.hasShowMoreButton, H && S.isInteracting),
           children: [er, ea && "done" !== J && (0, r.jsx)("div", {
-            className: T.showMoreButtonContainer,
+            className: S.showMoreButtonContainer,
             children: (0, r.jsx)(l.zxk, {
               look: l.zxk.Looks.BLANK,
               size: l.zxk.Sizes.NONE,
               color: l.zxk.Colors.TRANSPARENT,
-              className: o()(T.showMoreButton, ee && T.isHidden),
+              className: o()(S.showMoreButton, ee && S.isHidden),
               onClick: es,
               children: (0, r.jsx)(l.Text, {
                 variant: "text-xs/medium",
                 color: "header-primary",
-                children: S.intl.format(S.t.wv8Q7u, {
+                children: T.intl.format(T.t.wv8Q7u, {
                   activitiesCount: ei.length
                 })
               })
             })
           })]
         }), ea && $ && ei.map((e, t) => (0, r.jsx)("li", {
-          className: o()(T.remainingCardContainer, ee && T.isShown),
+          className: o()(S.remainingCardContainer, ee && S.isShown),
           children: e
         }, "activity-".concat(t)))]
       }), ea && $ && eo]
     }), ea && (0, r.jsxs)("div", {
       ref: K,
-      className: o()(T.cardsList, T.remainingCardsCopyToMeasure),
+      className: o()(S.cardsList, S.remainingCardsCopyToMeasure),
       children: [ei, eo]
     })]
   })

@@ -84,7 +84,7 @@ function I(e) {
     filteredSectionId: h,
     onSectionClick: E,
     applicationCommandListRef: I
-  } = e, S = i.useRef(null), T = i.useCallback((e, t) => {
+  } = e, T = i.useRef(null), S = i.useCallback((e, t) => {
     var n;
     let r = 2 * O;
     return (null == (n = a[t + 1]) ? void 0 : n.type) === u.Qi.BUILT_IN && (r += v), y + r
@@ -133,14 +133,14 @@ function I(e) {
   return 0 === a.length ? null : (0, r.jsx)("div", {
     className: o()(t, f.wrapper),
     children: (0, r.jsx)(c.Z, {
-      categoryListRef: S,
+      categoryListRef: T,
       expressionsListRef: I,
       store: l.Xn,
       categories: a,
       className: f.list,
       renderCategoryListItem: N,
       rowCount: a.length,
-      categoryHeight: T,
+      categoryHeight: S,
       listPadding: b,
       getScrollOffsetForIndex: A
     })

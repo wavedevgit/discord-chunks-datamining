@@ -115,7 +115,7 @@ class y extends(r = a.Component) {
       autoInvert: O = !0,
       nudgeAlignIntoViewport: v = !0,
       spacing: I = 8,
-      clickTrap: S = !1
+      clickTrap: T = !1
     } = this.props;
     return (0, i.jsx)(l.H, {
       ref: this.ref,
@@ -140,7 +140,7 @@ class y extends(r = a.Component) {
       closeOnScroll: h,
       useMouseEnter: m,
       layerContext: E,
-      clickTrap: S,
+      clickTrap: T,
       children: e
     })
   }

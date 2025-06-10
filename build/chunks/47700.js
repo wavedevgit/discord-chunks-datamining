@@ -80,12 +80,12 @@ function v(e) {
     }
 }
 var I = !1,
-  S = -1,
-  T = 5,
+  T = -1,
+  S = 5,
   A = -1;
 
 function N() {
-  return !(t.unstable_now() - A < T)
+  return !(t.unstable_now() - A < S)
 }
 
 function C() {
@@ -96,7 +96,7 @@ function C() {
     try {
       e: {
         m = !1,
-        g && (g = !1, b(S), S = -1),
+        g && (g = !1, b(T), T = -1),
         h = !0;
         var a = p;
         try {
@@ -150,7 +150,7 @@ function w() {
 }
 
 function D(e, n) {
-  S = E(function() {
+  T = E(function() {
     e(t.unstable_now())
   }, n)
 }
@@ -159,7 +159,7 @@ t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPri
 }, t.unstable_continueExecution = function() {
   m || h || (m = !0, w())
 }, t.unstable_forceFrameRate = function(e) {
-  0 > e || 125 < e ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported") : T = 0 < e ? Math.floor(1e3 / e) : 5
+  0 > e || 125 < e ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported") : S = 0 < e ? Math.floor(1e3 / e) : 5
 }, t.unstable_getCurrentPriorityLevel = function() {
   return p
 }, t.unstable_getFirstCallbackNode = function() {
@@ -224,7 +224,7 @@ t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPri
     startTime: a,
     expirationTime: s,
     sortIndex: -1
-  }, a > o ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (b(S), S = -1) : g = !0, D(v, a - o))) : (e.sortIndex = s, n(u, e), m || h || (m = !0, w())), e
+  }, a > o ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (b(T), T = -1) : g = !0, D(v, a - o))) : (e.sortIndex = s, n(u, e), m || h || (m = !0, w())), e
 }, t.unstable_shouldYield = N, t.unstable_wrapCallback = function(e) {
   var t = p;
   return function() {

@@ -23,8 +23,8 @@ var r, i = n(512722),
   O = n(606304),
   v = n(594174),
   I = n(33039),
-  S = n(979651),
-  T = n(413523),
+  T = n(979651),
+  S = n(413523),
   A = n(354459),
   N = n(981631);
 
@@ -69,8 +69,8 @@ function w(e, t) {
 let D = new d.Z("ChannelRTCStore"),
   L = Object.freeze([]),
   x = [],
-  k = {},
   M = {},
+  k = {},
   j = {},
   U = {},
   G = {},
@@ -82,8 +82,8 @@ let D = new d.Z("ChannelRTCStore"),
   Y = {};
 
 function W(e) {
-  let t = k[e];
-  return null == t && (t = new T.ZP(e), k[e] = t), t
+  let t = M[e];
+  return null == t && (t = new S.ZP(e), M[e] = t), t
 }
 
 function K() {
@@ -98,7 +98,7 @@ function z() {
   let n = y.Z.getVoiceChannelId();
   null == n || e.includes(n) || e.push(n);
   let r = f.Z.getRemoteSessionId(),
-    i = S.Z.getVoiceStateForSession(m.default.getId(), r);
+    i = T.Z.getVoiceStateForSession(m.default.getId(), r);
   (null == i ? void 0 : i.channelId) != null && e.push(null == i ? void 0 : i.channelId), s().difference(x, e).forEach(ei);
   let a = s().difference(e, x);
   return x = e, a
@@ -118,12 +118,12 @@ function Q(e) {
   var t;
   let n = E.Z.getChannel(e),
     r = (null == n ? void 0 : n.isDM()) && 1 ? A.dF.AUTO : A.dF.NONE;
-  return null != (t = M[e]) ? t : [r, A.dF.NONE]
+  return null != (t = k[e]) ? t : [r, A.dF.NONE]
 }
 
 function J(e) {
-  if (null == M[e]) return !1;
-  let [t] = M[e];
+  if (null == k[e]) return !1;
+  let [t] = k[e];
   return t !== A.dF.NONE
 }
 
@@ -147,11 +147,11 @@ function $(e) {
 function ee(e, t) {
   $(e);
   let n = J(e);
-  null == t ? delete M[e] : M[e] = t, n !== J(e) && j[e].toggleCount++
+  null == t ? delete k[e] : k[e] = t, n !== J(e) && j[e].toggleCount++
 }
 
 function et(e) {
-  return e.size(T.sI.STREAM) > 0 || e.size(T.sI.VIDEO) > 0 || e.hasEmbeddedActivity()
+  return e.size(S.sI.STREAM) > 0 || e.size(S.sI.VIDEO) > 0 || e.hasEmbeddedActivity()
 }
 
 function en(e) {
@@ -159,11 +159,11 @@ function en(e) {
     n = W(e);
   if (0 === n.size() || y.Z.getVoiceChannelId() !== e) return void ee(e, null);
   let r = A.dF.NONE,
-    i = n.toArray(T.sI.STREAM).find(e => e.type === A.fO.STREAM && h.Z.getActiveStreamForStreamKey(e.id));
+    i = n.toArray(S.sI.STREAM).find(e => e.type === A.fO.STREAM && h.Z.getActiveStreamForStreamKey(e.id));
   if (null != i) a()(i.type === A.fO.STREAM, "Impossible condition"), r = i.id;
   else if (1 === n.size()) r = t;
-  else if (1 === n.size(T.sI.VIDEO)) {
-    let [e] = n.toArray(T.sI.VIDEO);
+  else if (1 === n.size(S.sI.VIDEO)) {
+    let [e] = n.toArray(S.sI.VIDEO);
     r = e.id
   } else {
     var o;
@@ -181,12 +181,12 @@ function en(e) {
 function er(e) {
   let t = W(e);
   if (0 === t.size()) return;
-  let n = ek(e) || et(t) ? N.WtW.VIDEO : N.WtW.VOICE;
+  let n = eM(e) || et(t) ? N.WtW.VIDEO : N.WtW.VOICE;
   n === N.WtW.VOICE ? (delete U[e], delete G[e]) : U[e] = n
 }
 
 function ei(e) {
-  delete k[e], delete M[e], delete U[e], delete G[e]
+  delete M[e], delete k[e], delete U[e], delete G[e]
 }
 
 function ea() {
@@ -341,7 +341,7 @@ function eI(e) {
     channelId: t,
     id: n
   } = e, r = W(t);
-  null == n && r.toArray(T.sI.STREAM).forEach(e => {
+  null == n && r.toArray(S.sI.STREAM).forEach(e => {
     (0, A._5)(e) && r.updateParticipant(e.user.id)
   });
   let [, i] = Q(t);
@@ -358,7 +358,7 @@ function eI(e) {
   }
 }
 
-function eS(e) {
+function eT(e) {
   let {
     channel: t
   } = e;
@@ -374,7 +374,7 @@ function eS(e) {
   return !1
 }
 
-function eT(e) {
+function eS(e) {
   let {
     channel: {
       id: t
@@ -475,13 +475,13 @@ function ex(e) {
   return r.forEach(e => i.updateGuildRingingUsers(e, !1)), q(e => e.rebuild(), [t])
 }
 
-function ek(e) {
+function eM(e) {
   var t;
   return !!(null == (t = E.Z.getChannel(e)) ? void 0 : t.isGuildVocal())
 }
-class eM extends(r = l.ZP.PersistedStore) {
+class ek extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, O.Z, v.default, I.Z, S.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], ea), (null == e ? void 0 : e.voiceParticipantsHidden) !== void 0 && Object.assign(F, null == e ? void 0 : e.voiceParticipantsHidden)
+    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, O.Z, v.default, I.Z, T.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], ea), (null == e ? void 0 : e.voiceParticipantsHidden) !== void 0 && Object.assign(F, null == e ? void 0 : e.voiceParticipantsHidden)
   }
   getState() {
     return {
@@ -497,29 +497,29 @@ class eM extends(r = l.ZP.PersistedStore) {
   }
   getSpeakingParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(T.sI.SPEAKING)) ? t : L
+    return null != (t = W(e).toArray(S.sI.SPEAKING)) ? t : L
   }
   getFilteredParticipants(e) {
-    return F[e] ? W(e).toArray(T.sI.FILTERED) : W(e).toArray()
+    return F[e] ? W(e).toArray(S.sI.FILTERED) : W(e).toArray()
   }
   getVideoParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(T.sI.VIDEO)) ? t : L
+    return null != (t = W(e).toArray(S.sI.VIDEO)) ? t : L
   }
   getStreamParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(T.sI.STREAM)) ? t : L
+    return null != (t = W(e).toArray(S.sI.STREAM)) ? t : L
   }
   getActivityParticipants(e) {
     var t;
-    return null != (t = W(e).toArray(T.sI.ACTIVITY)) ? t : L
+    return null != (t = W(e).toArray(S.sI.ACTIVITY)) ? t : L
   }
   getParticipant(e, t) {
     return W(e).getParticipant(t)
   }
   getUserParticipantCount(e) {
     let t = W(e);
-    return t.size() - t.size(T.sI.STREAM) - t.size(T.sI.ACTIVITY)
+    return t.size() - t.size(S.sI.STREAM) - t.size(S.sI.ACTIVITY)
   }
   getParticipantsOpen(e) {
     var t;
@@ -550,13 +550,13 @@ class eM extends(r = l.ZP.PersistedStore) {
   }
   getMode(e) {
     var t;
-    return null != (t = U[e]) ? t : ek(e) ? N.WtW.VIDEO : N.WtW.VOICE
+    return null != (t = U[e]) ? t : eM(e) ? N.WtW.VIDEO : N.WtW.VOICE
   }
   getLayout(e) {
     var t, n;
     let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : N.IlC.APP;
     if (__OVERLAY__) return N.AEg.NORMAL;
-    let i = ek(e);
+    let i = eM(e);
     return null != (n = null == (t = G[e]) ? void 0 : t[r]) ? n : i ? N.AEg.NO_CHAT : N.AEg.NORMAL
   }
   getChatOpen(e) {
@@ -581,8 +581,8 @@ class eM extends(r = l.ZP.PersistedStore) {
     return Y[e]
   }
 }
-C(eM, "displayName", "ChannelRTCStore"), C(eM, "persistKey", "ChannelRTCStore");
-let ej = new eM(c.Z, {
+C(ek, "displayName", "ChannelRTCStore"), C(ek, "persistKey", "ChannelRTCStore");
+let ej = new ek(c.Z, {
   CONNECTION_OPEN: K,
   CONNECTION_OPEN_SUPPLEMENTAL: ea,
   THREAD_LIST_SYNC: ea,
@@ -591,9 +591,9 @@ let ej = new eM(c.Z, {
   CHANNEL_SELECT: es,
   CHANNEL_RTC_ACTIVE_CHANNELS: ea,
   VOICE_STATE_UPDATES: el,
-  CHANNEL_CREATE: eS,
-  CHANNEL_DELETE: eT,
-  THREAD_DELETE: eT,
+  CHANNEL_CREATE: eT,
+  CHANNEL_DELETE: eS,
+  THREAD_DELETE: eS,
   CALL_CREATE: e_,
   CALL_UPDATE: e_,
   CALL_DELETE: ep,

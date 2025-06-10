@@ -24,8 +24,8 @@ var r = n(392711),
   O = n(699516),
   v = n(246946),
   I = n(594174),
-  S = n(483360),
-  T = n(176354),
+  T = n(483360),
+  S = n(176354),
   A = n(51144),
   N = n(981631),
   C = n(185923),
@@ -98,7 +98,7 @@ function x(e, t, n) {
   }).first()
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
   if (t[0] !== e) return null;
   if ('"' !== t[1]) return x(e, t, n, r);
@@ -130,7 +130,7 @@ function k(e, t, n) {
   }).first()
 }
 
-function M(e) {
+function k(e) {
   return {
     order: e.order,
     match: e.match,
@@ -158,11 +158,11 @@ let U = u.Z.RULES,
   Z = /^<a?:(\w+):(\d+)>/,
   H = /(@everyone|@here|@Clyde)\b/,
   Y = {
-    link: M(o().defaultRules.link),
-    autolink: M(o().defaultRules.autolink),
-    url: M(o().defaultRules.url),
-    inlineCode: M(U.inlineCode),
-    codeBlock: M(U.codeBlock),
+    link: k(o().defaultRules.link),
+    autolink: k(o().defaultRules.autolink),
+    url: k(o().defaultRules.url),
+    inlineCode: k(U.inlineCode),
+    codeBlock: k(U.codeBlock),
     rawUserMention: j(B),
     rawRoleMention: j(F),
     rawChannelMention: j(V),
@@ -193,7 +193,7 @@ let U = u.Z.RULES,
       }
     },
     channel: {
-      match: (e, t) => k("#", e, t.channels),
+      match: (e, t) => M("#", e, t.channels),
       parse: e => ({
         type: "text",
         content: "<#".concat(e[1], ">")
@@ -256,8 +256,8 @@ let U = u.Z.RULES,
     })
   },
   W = {
-    inlineCode: M(U.inlineCode),
-    codeBlock: M(U.codeBlock),
+    inlineCode: k(U.inlineCode),
+    codeBlock: k(U.codeBlock),
     mention: {
       match: o().anyScopeRegex(B),
       parse(e, t, n) {
@@ -450,7 +450,7 @@ function J(e) {
         text: n
       }
     }),
-    u = null != n ? i()(S.k1).filter(e => e !== g.sH).flatMap(e => g.ZP.getChannels(n)[e].map(e => ({
+    u = null != n ? i()(T.k1).filter(e => e !== g.sH).flatMap(e => g.ZP.getChannels(n)[e].map(e => ({
       id: e.channel.id,
       text: e.channel.name
     }))).value() : [],
@@ -490,7 +490,7 @@ let ee = {
         validNonShortcutEmojis: []
       };
     return i.content = Q(i.content, r, (t, n) => {
-      T.ZP.isEmojiPremiumLocked({
+      S.ZP.isEmojiPremiumLocked({
         emoji: t,
         channel: e,
         intention: C.Hz.CHAT

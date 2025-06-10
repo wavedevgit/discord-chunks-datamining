@@ -77,7 +77,7 @@ function v(e) {
   } = e, g = (0, f.Ek)(t.id, "GuildBoostingMarketing"), b = (0, c.e7)([d.Z], () => {
     var e, n;
     return null == (n = d.Z.getStateForGuild(t.id)) || null == (e = n.powerupCatalog) ? void 0 : e[_.Us.PERK]
-  }), [v, I] = i.useState(!1), [S, T] = (0, u.q_F)(() => ({
+  }), [v, I] = i.useState(!1), [T, S] = (0, u.q_F)(() => ({
     scale: .8,
     config: {
       tension: 500,
@@ -86,12 +86,12 @@ function v(e) {
   }));
   i.useEffect(() => {
     let e = setTimeout(() => {
-      T({
+      S({
         scale: 1
       }), I(!0)
     }, 300);
     return () => clearTimeout(e)
-  }, [T]);
+  }, [S]);
   let A = i.useMemo(() => {
     let e;
     if (null == b || 0 === b.length) return "";
@@ -125,7 +125,7 @@ function v(e) {
     className: o()(m.container, {
       [m.themeResponsiveContainer]: n
     }),
-    style: y(E({}, S), {
+    style: y(E({}, T), {
       opacity: +!!v
     }),
     children: [(0, r.jsx)(l.xv, {

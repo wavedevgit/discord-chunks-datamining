@@ -90,17 +90,17 @@ function O(e) {
     size: O = c.EFr.SIZE_24,
     overflowCountVariant: v,
     overflowCountColor: I = "interactive-normal",
-    overflowCountClassName: S,
-    hideOverflowCount: T = !1,
+    overflowCountClassName: T,
+    hideOverflowCount: S = !1,
     disableUsernameTooltip: A = !1,
     disableUserPopout: N = !1,
     onClick: C,
     onFocus: R,
     onUserClick: P,
     onUserPopoutRequestClose: w
-  } = e, [D, L] = i.useState(!1), x = b(O), k = i.useRef(null);
+  } = e, [D, L] = i.useState(!1), x = b(O), M = i.useRef(null);
 
-  function M() {
+  function k() {
     return (0, r.jsx)(c.VqE, {
       className: p.popoutWrapper,
       children: (0, r.jsx)(c.Ttm, {
@@ -135,7 +135,7 @@ function O(e) {
   function j() {
     let e = t.length - a,
       n = e + 1,
-      i = e > 0 && !T,
+      i = e > 0 && !S,
       u = Math.min(t.length, a) - 1,
       d = l()(t).take(a).map((e, t) => {
         let n = _.ZP.getName(e),
@@ -161,14 +161,14 @@ function O(e) {
     if (i) {
       let e = null != v ? v : y(O);
       d[d.length - 1] = (0, r.jsx)(c.yRy, {
-        targetElementRef: k,
-        renderPopout: M,
+        targetElementRef: M,
+        renderPopout: k,
         shouldShow: D,
         position: "bottom",
         onRequestClose: () => L(!1),
         children: () => (0, r.jsx)(c.zxk, {
-          buttonRef: k,
-          className: o()(p.overflow, x, S),
+          buttonRef: M,
+          className: o()(p.overflow, x, T),
           onFocus: R,
           onClick: e => {
             null == C || C(e), L(!0)

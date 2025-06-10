@@ -67,13 +67,13 @@ let I = e => {
     shouldDisplayHeader: O = !1,
     className: I
   } = e, {
-    product: S
+    product: T
   } = (0, p.T)(t), {
-    giftRecipient: T,
+    giftRecipient: S,
     giftRecipientError: A
-  } = (0, u.wD)(), N = (0, l.e7)([_.default], () => _.default.getCurrentUser()), C = (0, h.k)(S), R = i.useRef(null);
-  if (null == S) return null;
-  let [P] = S.items, w = () => {
+  } = (0, u.wD)(), N = (0, l.e7)([_.default], () => _.default.getCurrentUser()), C = (0, h.k)(T), R = i.useRef(null);
+  if (null == T) return null;
+  let [P] = T.items, w = () => {
     switch (P.type) {
       case s.Z.AVATAR_DECORATION:
         return g.intl.string(g.t["7v0T9P"]);
@@ -84,7 +84,7 @@ let I = e => {
       default:
         return null
     }
-  }, D = null != T && T.id !== (null == N ? void 0 : N.id) && P.type !== s.Z.NAMEPLATE, L = () => {
+  }, D = null != S && S.id !== (null == N ? void 0 : N.id) && P.type !== s.Z.NAMEPLATE, L = () => {
     null != t && null != b && b(t)
   };
   return (0, r.jsxs)("div", {
@@ -96,10 +96,10 @@ let I = e => {
         children: g.intl.string(g.t.PpoJzs)
       }), D && (0, r.jsx)(c.yRy, {
         targetElementRef: R,
-        preload: () => (0, f.Z)(T.id, T.getAvatarURL(null, 80)),
+        preload: () => (0, f.Z)(S.id, S.getAvatarURL(null, 80)),
         renderPopout: e => (0, r.jsx)(d.Z, v(y({}, e), {
-          user: T,
-          pendingAvatar: T.getAvatarURL(null, (0, c.pxk)(c.EFr.SIZE_80)),
+          user: S,
+          pendingAvatar: S.getAvatarURL(null, (0, c.pxk)(c.EFr.SIZE_80)),
           pendingAvatarDecoration: P.type === s.Z.AVATAR_DECORATION ? P : null,
           pendingProfileEffectId: P.type === s.Z.PROFILE_EFFECT ? P.id : null,
           canUsePremiumCustomization: !0,
@@ -116,7 +116,7 @@ let I = e => {
             children: g.intl.string(g.t["2GnJQE"])
           })
         }))
-      }, T.id)]
+      }, S.id)]
     }), (0, r.jsxs)(c.P3F, {
       tag: "div",
       onClick: L,
@@ -127,7 +127,7 @@ let I = e => {
       children: [(0, r.jsxs)("div", {
         className: E.giftInfoContainer,
         children: [(0, r.jsx)(m.O, {
-          product: S,
+          product: T,
           fallbackLabel: null
         }), (0, r.jsxs)("div", {
           className: E.previewTextContainer,

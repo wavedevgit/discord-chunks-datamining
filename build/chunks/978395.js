@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(502762),
   v = n(530),
   I = n(827313),
-  S = n(420654),
-  T = n(116854),
+  T = n(420654),
+  S = n(116854),
   A = n(166584),
   N = n(915014),
   C = n(228168),
@@ -40,10 +40,10 @@ function D(e) {
     displayProfile: D,
     guild: L,
     isHovering: x,
-    onOpenProfile: k,
-    channelId: M,
+    onOpenProfile: M,
+    channelId: k,
     onClose: j
-  } = e, U = u.ZP.useName(null == L ? void 0 : L.id, M, t), {
+  } = e, U = u.ZP.useName(null == L ? void 0 : L.id, k, t), {
     relationshipType: G,
     originApplicationId: B
   } = (0, i.cj)([l.Z], () => ({
@@ -57,9 +57,9 @@ function D(e) {
     className: w.body,
     children: [(0, r.jsx)(v.Z, {
       user: t,
-      onOpenProfile: k,
+      onOpenProfile: M,
       onClose: j,
-      usernameIcon: t.hasAvatarForGuild(null == L ? void 0 : L.id) && (0, r.jsx)(T.Z, {
+      usernameIcon: t.hasAvatarForGuild(null == L ? void 0 : L.id) && (0, r.jsx)(S.Z, {
         user: t,
         nickname: U
       }),
@@ -76,14 +76,14 @@ function D(e) {
         }), !V && (0, r.jsx)(I.Z, {
           userId: t.id,
           isHovering: x,
-          onOpenProfile: k
+          onOpenProfile: M
         })]
       })
     }), G === R.OGo.PENDING_INCOMING && (0, r.jsx)(O.Z.Overlay, {
       children: (0, r.jsx)(g.Z, {
         user: t,
         guildId: null == L ? void 0 : L.id,
-        channelId: M,
+        channelId: k,
         applicationId: B
       })
     }), F.map(e => (0, r.jsx)(O.Z.Overlay, {
@@ -91,13 +91,13 @@ function D(e) {
         user: t,
         isGameRelationship: !0,
         applicationId: e.applicationId,
-        channelId: M
+        channelId: k
       })
     }, e.applicationId)), (0, r.jsx)(E.Z, {
       user: t
     }), !H && (0, r.jsx)(N.Z, {
       user: t,
-      onOpenProfile: e => null == k ? void 0 : k({
+      onOpenProfile: e => null == M ? void 0 : M({
         section: e
       })
     }), t.isProvisional ? (0, r.jsx)(O.Z.Overlay, {
@@ -113,7 +113,7 @@ function D(e) {
           userId: t.id
         })
       })
-    }) : (0, r.jsx)(S.Z, {
+    }) : (0, r.jsx)(T.Z, {
       user: t,
       bio: null == D ? void 0 : D.bio,
       hidePersonalInformation: V,
@@ -126,7 +126,7 @@ function D(e) {
       currentUser: n,
       displayProfile: D,
       guildId: null == L ? void 0 : L.id,
-      onOpenUserProfileModal: k,
+      onOpenUserProfileModal: M,
       onClose: j
     }) : (0, r.jsx)(h.Z, {
       user: t,

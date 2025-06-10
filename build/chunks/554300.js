@@ -82,8 +82,8 @@ let E = function(e) {
       hovered: O,
       selected: v,
       muted: I,
-      to: S,
-      avatarClassName: T,
+      to: T,
+      avatarClassName: S,
       selectedClassName: A,
       innerClassName: N,
       wrapContent: C,
@@ -95,7 +95,7 @@ let E = function(e) {
     [d.selected]: v,
     [d.highlighted]: R,
     [null != A ? A : ""]: v,
-    [d.clickable]: !v && (null != S || null != y)
+    [d.clickable]: !v && (null != T || null != y)
   }), w["aria-selected"] = null != (t = w["aria-selected"]) ? t : v;
   let D = i.useRef(null),
     L = (0, r.jsxs)("div", {
@@ -115,7 +115,7 @@ let E = function(e) {
           [d.wrappedLayout]: C
         }),
         children: [(0, r.jsx)("div", {
-          className: o()(d.avatar, T),
+          className: o()(d.avatar, S),
           children: a
         }), (0, r.jsxs)("div", {
           className: d.content,
@@ -137,9 +137,9 @@ let E = function(e) {
         }) : null]
       })]
     });
-  return null != S ? (0, r.jsx)(l.tEY, h(_({}, P), {
+  return null != T ? (0, r.jsx)(l.tEY, h(_({}, P), {
     children: (0, r.jsx)(s.rU, h(_({
-      to: S,
+      to: T,
       onClick: y
     }, w), {
       role: "listitem",

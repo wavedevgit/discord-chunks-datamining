@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: 7cf23c52fb008af0
+  Original File Name: 292035eadbb55ff2
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3533,7 +3533,7 @@
     --home-background: #29292e;
     --icon-default: #dee0e3;
     --icon-invert: #2e3036;
-    --icon-link: #00abfc;
+    --icon-link: #7ab0f5;
     --icon-muted: #80858f;
     --icon-primary: #f2f2f5;
     --icon-secondary: #b5bac2;
@@ -3712,7 +3712,7 @@
     --text-feedback-positive: #75c282;
     --text-feedback-warning: #d9ab73;
     --text-invert: #2e3036;
-    --text-link: #00abfc;
+    --text-link: #7ab0f5;
     --text-link-low-saturation: #2eb5ff;
     --text-low-contrast: #949ca3;
     --text-message-preview-low-sat: #949ca3;
@@ -3962,7 +3962,7 @@
     --home-background: #fafafa;
     --icon-default: #333338;
     --icon-invert: #fff;
-    --icon-link: #006be8;
+    --icon-link: #0073e3;
     --icon-muted: #80858f;
     --icon-primary: #060607;
     --icon-secondary: #4f4f59;
@@ -4141,7 +4141,7 @@
     --text-feedback-positive: #057833;
     --text-feedback-warning: #945903;
     --text-invert: #fff;
-    --text-link: #006be8;
+    --text-link: #0073e3;
     --text-link-low-saturation: #006be8;
     --text-low-contrast: #5c5e66;
     --text-message-preview-low-sat: #5c5e66;
@@ -4391,7 +4391,7 @@
     --home-background: #26262e;
     --icon-default: #dbdbde;
     --icon-invert: #2e3036;
-    --icon-link: #00abfc;
+    --icon-link: #3687e8;
     --icon-muted: #5c5e6b;
     --icon-primary: #d4d6d9;
     --icon-secondary: #9496a3;
@@ -4570,7 +4570,7 @@
     --text-feedback-positive: #3b9e54;
     --text-feedback-warning: #ba8036;
     --text-invert: #2e3036;
-    --text-link: #00abfc;
+    --text-link: #3687e8;
     --text-link-low-saturation: #2eb5ff;
     --text-low-contrast: #5c5e6b;
     --text-message-preview-low-sat: #9496a3;
@@ -4820,7 +4820,7 @@
     --home-background: #26262e;
     --icon-default: #f0f0f0;
     --icon-invert: #2e3036;
-    --icon-link: #00abfc;
+    --icon-link: #5296ed;
     --icon-muted: #6b707d;
     --icon-primary: #dedee0;
     --icon-secondary: #9496a3;
@@ -4999,7 +4999,7 @@
     --text-feedback-positive: #54ab66;
     --text-feedback-warning: #c4914d;
     --text-invert: #2e3036;
-    --text-link: #00abfc;
+    --text-link: #5296ed;
     --text-link-low-saturation: #2eb5ff;
     --text-low-contrast: #6b707d;
     --text-message-preview-low-sat: #6b707d;
@@ -5029,4 +5029,4 @@
     --white: #fff
 }
 
-/*# sourceMappingURL=7cf23c52fb008af0.css.map*/
+/*# sourceMappingURL=292035eadbb55ff2.css.map*/

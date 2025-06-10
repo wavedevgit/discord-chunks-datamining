@@ -25,13 +25,13 @@ var r = n(255367),
   v = n(182525);
 let I = i.lazy(() => n.e("89792").then(n.bind(n, 711635)));
 
-function S(e) {
+function T(e) {
   let t = (b.TC.indexOf(e) + 1) % b.TC.length,
     n = b.TC[t];
   (0, u.C)(n, d.Ir.VOICE_MESSAGE)
 }
 
-function T(e) {
+function S(e) {
   let {
     played: t,
     duration: n,
@@ -91,10 +91,10 @@ let C = i.memo(function(e) {
       playbackCacheKey: L
     } = e,
     x = i.useRef(null),
-    k = i.useMemo(() => null != L ? d.ZP.getPlaybackPosition(L) : 0, [L]),
-    M = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
-    [j, U] = i.useState(k > 0),
-    [G, B] = i.useState(k),
+    M = i.useMemo(() => null != L ? d.ZP.getPlaybackPosition(L) : 0, [L]),
+    k = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
+    [j, U] = i.useState(M > 0),
+    [G, B] = i.useState(M),
     [F, V] = i.useState(y),
     [Z, H] = i.useState(!1),
     [Y, W] = i.useState(!1),
@@ -165,8 +165,8 @@ let C = i.memo(function(e) {
   i.useEffect(() => {
     eg.current = em
   }), i.useEffect(() => {
-    k > 0 && el(k)
-  }, [k, el]), i.useEffect(() => {
+    M > 0 && el(M)
+  }, [M, el]), i.useEffect(() => {
     let e;
     return Y && !K && (e = setInterval(() => {
       var e, t;
@@ -195,9 +195,9 @@ let C = i.memo(function(e) {
   let eE = Y ? l.fpf : l.o1U,
     eb = Y ? O.intl.string(O.t.ZcgDJS) : O.intl.string(O.t.RscU7O),
     ey = O.intl.formatToPlainString(O.t.LgCPMj, {
-      playbackRate: M
+      playbackRate: k
     }),
-    eO = "".concat(M.toString().replace(/^0/, ""), "X");
+    eO = "".concat(k.toString().replace(/^0/, ""), "X");
   t = "Safari" === platform.name ? (0, r.jsx)(i.Suspense, {
     children: (0, r.jsx)(I, {
       ref: x,
@@ -210,7 +210,7 @@ let C = i.memo(function(e) {
       onError: ec,
       muted: Z,
       volume: $,
-      playbackRate: M
+      playbackRate: k
     })
   }) : (0, r.jsx)(f.Z, {
     ref: x,
@@ -222,7 +222,7 @@ let C = i.memo(function(e) {
     onError: ec,
     muted: Z,
     volume: $,
-    playbackRate: M,
+    playbackRate: k,
     playing: Y && !K,
     children: (0, r.jsx)("source", {
       src: n
@@ -260,13 +260,13 @@ let C = i.memo(function(e) {
       onDrag: ep,
       onDragStart: ef,
       onDragEnd: e_
-    }), (0, r.jsx)(T, {
+    }), (0, r.jsx)(S, {
       played: j,
       currentTime: G,
       duration: F
     }), (0, r.jsx)(l.P3F, {
       className: v.playbackRateContainer,
-      onClick: () => S(M),
+      onClick: () => T(k),
       "aria-label": ey,
       children: (0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",

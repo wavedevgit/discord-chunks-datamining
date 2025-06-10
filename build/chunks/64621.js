@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => S
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -24,13 +24,13 @@ var r = n(255367),
   O = n(685741);
 let v = 200,
   I = 32,
-  S = 30;
+  T = 30;
 
-function T(e) {
+function S(e) {
   let {
     sourceType: t,
     children: n,
-    user: T,
+    user: S,
     targetElementRef: A
   } = e, {
     themeType: N
@@ -38,8 +38,8 @@ function T(e) {
     location: "UserProfilePopoutInteractionCoachmark"
   }), R = (0, a.e7)([_.default], () => {
     var e;
-    return (null == (e = _.default.getCurrentUser()) ? void 0 : e.id) === T.id
-  }), P = (0, a.e7)([f.Z], () => f.Z.findActivity(T.id, e => {
+    return (null == (e = _.default.getCurrentUser()) ? void 0 : e.id) === S.id
+  }), P = (0, a.e7)([f.Z], () => f.Z.findActivity(S.id, e => {
     let {
       type: t
     } = e;
@@ -48,8 +48,8 @@ function T(e) {
   (0, l.Z)(() => L(!0), w() ? v : null);
   let {
     asset: x,
-    assetClassName: k,
-    className: M,
+    assetClassName: M,
+    className: k,
     content: j,
     header: U,
     spacing: G,
@@ -60,7 +60,7 @@ function T(e) {
     className: b.profileCoachmark,
     content: E.intl.string(E.t.HEGlIC),
     header: E.intl.string(E.t["R/RaKy"]),
-    spacing: S,
+    spacing: T,
     dismissibleContentType: o.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ALL
   } : {
     asset: y,
@@ -88,11 +88,11 @@ function T(e) {
           null == i || i(e)
         },
         children: (0, r.jsx)(d.ZP, {
-          className: M,
+          className: k,
           asset: (0, r.jsx)("img", {
             alt: "",
             src: x,
-            className: k
+            className: M
           }),
           buttonCTA: E.intl.string(E.t["+IrDzM"]),
           buttonLayout: d._F.STACKED,

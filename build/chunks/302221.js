@@ -14,7 +14,7 @@ n.d(t, {
   pz: () => h,
   rj: () => _,
   vq: () => g,
-  xj: () => M
+  xj: () => k
 }), n(415506), n(388685), n(35282), n(539854), n(642613);
 var r = n(688619),
   i = n.n(r),
@@ -196,8 +196,8 @@ function y(e, t, n) {
 let O = 30,
   v = 80,
   I = 20,
-  S = 30,
-  T = 40,
+  T = 30,
+  S = 40,
   A = 15;
 
 function N(e) {
@@ -211,7 +211,7 @@ function N(e) {
     o = r,
     s = i,
     l = a;
-  s < O && (s += S), l > v && (l -= T), l < I && (l += A);
+  s < O && (s += T), l > v && (l -= S), l < I && (l += A);
   let c = 360 / (t + 1);
   for (; n.length < t;) {
     (o -= c) < 0 && (o += 360);
@@ -325,16 +325,16 @@ function x(e) {
         v: 0
       }
     }
-  }).sort(k)[0].hex
+  }).sort(M)[0].hex
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = e.hsv,
     r = t.hsv;
   return r.s + r.v - (n.s + n.v)
 }
 
-function M(e) {
+function k(e) {
   var t;
   let {
     colorRGB: n,

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A: () => k,
-  Z: () => M
+  A: () => M,
+  Z: () => k
 }), n(539854);
 var r = n(392711),
   i = n.n(r),
@@ -25,8 +25,8 @@ var r = n(392711),
   O = n(626135),
   v = n(12647),
   I = n(756315),
-  S = n(569545),
-  T = n(297733),
+  T = n(569545),
+  S = n(297733),
   A = n(981631),
   N = n(65154);
 
@@ -71,7 +71,7 @@ function w(e, t) {
 let D = 10,
   L = 15e5,
   x = 15e5;
-class k {
+class M {
   setActionContext(e) {
     this.actionContext = e
   }
@@ -104,7 +104,7 @@ class k {
     C(this, "streamRegion", void 0), C(this, "streamApplication", void 0), C(this, "streamSourceType", void 0), C(this, "actionContext", void 0), C(this, "maxViewers", void 0), C(this, "nativePickerStyleUsed", void 0), C(this, "startTime", void 0), C(this, "endTime", void 0), C(this, "goLiveModalDurationMs", void 0), C(this, "numViewers", void 0), this.streamRegion = e, this.streamApplication = t, this.streamSourceType = n, this.actionContext = r, this.maxViewers = i, this.goLiveModalDurationMs = a, this.numViewers = i
   }
 }
-class M extends s.Z {
+class k extends s.Z {
   get isOwner() {
     let {
       ownerId: e
@@ -190,7 +190,7 @@ class M extends s.Z {
             b = this.getRTCConnectionId(),
             v = this.getGoLiveSource();
           (0, y.q)().then(y => {
-            var I, S, T;
+            var I, T, S;
             let C = null;
             if (null != y) {
               let {
@@ -214,7 +214,7 @@ class M extends s.Z {
                 gameName: D,
                 gameId: L,
                 exe: x,
-                distributor: k
+                distributor: M
               } = (0, f.G8)(w);
             O.default.track(A.rMx.SCREENSHARE_FINISHED, R({
               screenshare_frames: e,
@@ -237,11 +237,11 @@ class M extends s.Z {
               screens: d,
               windows: p,
               activity: h,
-              soundshare_session: null != (T = null == v || null == (S = v.desktopSource) ? void 0 : S.soundshareSession) ? T : void 0,
+              soundshare_session: null != (S = null == v || null == (T = v.desktopSource) ? void 0 : T.soundshareSession) ? S : void 0,
               share_game_name: D,
               share_game_id: L,
               share_game_exe: x,
-              share_game_distributor: k,
+              share_game_distributor: M,
               picker_type_used: null != this.analyticsContext.nativePickerStyleUsed ? "native" : "internal",
               duration: this.analyticsContext.getDuration()
             }, C))
@@ -249,7 +249,7 @@ class M extends s.Z {
         })
       }
     }), this.on(l.z.Video, (t, n, r, i, a) => {
-      let o = (0, S.my)(this._streamKey);
+      let o = (0, T.my)(this._streamKey);
       o.guildId === t && o.channelId === n && o.ownerId === r && (null == this.getMediaSessionId() || e || (this._trackVideoStartStats(), e = !0), this._updateVideoStreamId(i, a))
     }), this.on(l.z.VideoSourceQualityChanged, (e, t, n, r, i, a) => {
       var s;
@@ -315,7 +315,7 @@ class M extends s.Z {
     }
   }
   _trackVideoStartStats() {
-    let e = this.isOwner ? (0, T.Z)() : null;
+    let e = this.isOwner ? (0, S.Z)() : null;
     O.default.track(A.rMx.VIDEO_STREAM_STARTED, w(R({}, this._getStreamAnalyticsProperties(), e), {
       connection_type: g.Z.getType(),
       effective_connection_speed: g.Z.getEffectiveConnectionSpeed(),
@@ -371,7 +371,7 @@ class M extends s.Z {
   }
   _getExtraConnectionOptions() {
     return {
-      streamUserId: (0, S.my)(this._streamKey).ownerId
+      streamUserId: (0, T.my)(this._streamKey).ownerId
     }
   }
   constructor({
@@ -383,7 +383,7 @@ class M extends s.Z {
     isStreamer: s,
     parentMediaSessionId: l
   }) {
-    let c = (0, S.my)(t),
+    let c = (0, T.my)(t),
       {
         guildId: u,
         channelId: d
@@ -401,7 +401,7 @@ class M extends s.Z {
         guildId: n,
         channelId: r,
         ownerId: i
-      } = (0, S.my)(this._streamKey);
+      } = (0, T.my)(this._streamKey);
       o.Z.wait(() => o.Z.dispatch({
         type: "RTC_CONNECTION_VIDEO",
         guildId: n,

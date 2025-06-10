@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(77188),
   v = n(230554),
   I = n(780748),
-  S = n(464581),
-  T = n(732659),
+  T = n(464581),
+  S = n(732659),
   A = n(86724),
   N = n(847302),
   C = n(657198),
@@ -39,8 +39,8 @@ let D = i.forwardRef(function(e, t) {
     channel: D,
     className: L,
     id: x,
-    disabled: k,
-    submitting: M,
+    disabled: M,
+    submitting: k,
     placeholder: j,
     required: U,
     textAreaPaddingClassName: G,
@@ -72,7 +72,7 @@ let D = i.forwardRef(function(e, t) {
     "aria-describedby": ed,
     "aria-labelledby": ef,
     "aria-autocomplete": e_
-  } = e, ep = i.useRef(null), eh = i.useRef(null), em = i.useRef(!0), eg = i.useRef(!0), eE = k || M, eb = i.useCallback((e, t, n) => {
+  } = e, ep = i.useRef(null), eh = i.useRef(null), em = i.useRef(!0), eg = i.useRef(!0), eE = M || k, eb = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -129,7 +129,7 @@ let D = i.forwardRef(function(e, t) {
       values: n,
       results: r
     }
-  }, [D.guild_id, D.id, ev]), eS = i.useCallback(() => {
+  }, [D.guild_id, D.id, ev]), eT = i.useCallback(() => {
     let e, t = ee ? c.Z.getActiveCommand(D.id) : null;
     if (null != t && null != t.options) {
       let i = eI(t, !1);
@@ -159,9 +159,9 @@ let D = i.forwardRef(function(e, t) {
       ignoreTrailingEmptyNodes: !0
     }), t, e)
   }, [D.id, ev, q, eI, ee]);
-  (0, v.Z)(t, ev, D, eS), (0, T.Z)(ev, ep, V);
+  (0, v.Z)(t, ev, D, eT), (0, S.Z)(ev, ep, V);
   let {
-    handleKeyDown: eT,
+    handleKeyDown: eS,
     handleKeyUp: eA
   } = (0, I.Z)({
     editor: ev,
@@ -172,13 +172,13 @@ let D = i.forwardRef(function(e, t) {
     onTab: K,
     onEnter: z,
     allowNewLines: ei,
-    submit: eS,
+    submit: eT,
     hideAutocomplete: Q,
     moveSelection: J
   }), {
     handlePaste: eN,
     handleGlobalPaste: eC
-  } = (0, S.Z)(ev, eE, F), eR = i.useCallback(e => {
+  } = (0, T.Z)(ev, eE, F), eR = i.useCallback(e => {
     null == X || X()
   }, [X]), eP = i.useCallback(e => {
     e !== eh.current ? eg.current && (null == B || B(null, (0, g.sk)(e, {
@@ -217,13 +217,13 @@ let D = i.forwardRef(function(e, t) {
         readOnly: eE,
         spellCheck: $,
         autoFocus: !en,
-        canFocus: !k,
+        canFocus: !M,
         onChange: eP,
         onFocus: Z,
         onBlur: H,
         onClick: eR,
         onPaste: eN,
-        onKeyDown: eT,
+        onKeyDown: eS,
         onKeyUp: eA,
         decorateExtra: ew,
         renderExtraElement: eD,

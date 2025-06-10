@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 });
 var r = n(255367),
   i = n(73800),
@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(284363),
   v = n(854218),
   I = n(682947),
-  S = n(981631),
-  T = n(388032),
+  T = n(981631),
+  S = n(388032),
   A = n(90235);
 
 function N(e, t, n) {
@@ -158,7 +158,7 @@ function x(e) {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
-        children: T.intl.format(T.t["dR/SVF"], {
+        children: S.intl.format(S.t["dR/SVF"], {
           count: t.premiumSubscriberCount
         })
       })
@@ -166,7 +166,7 @@ function x(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     badgeType: t,
     guildTraits: n
@@ -197,7 +197,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let t, n;
   var a, {
       guild: o,
@@ -207,13 +207,13 @@ function M(e) {
       flowerStarClassName: b,
       iconClassName: y,
       badgeStrokeColor: I,
-      badgeColor: T,
+      badgeColor: S,
       disableBoostClick: N,
       "aria-label": R = !1
     } = e,
     D = w(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]);
   let x = (0, f.Q3)("GuildBadgeV2"),
-    M = null != (a = D.size) ? a : x ? 18 : 16,
+    k = null != (a = D.size) ? a : x ? 18 : 16,
     j = (0, s.e7)([g.default, m.ZP], () => {
       let e = g.default.getCurrentUser();
       return m.ZP.isMember(null == o ? void 0 : o.id, null == e ? void 0 : e.id)
@@ -226,8 +226,8 @@ function M(e) {
       F && (e.stopPropagation(), e.preventDefault(), (0, _.f)({
         guildId: o.id,
         location: {
-          section: S.jXE.GUILD_HEADER,
-          object: S.qAy.BOOST_GEM_ICON
+          section: T.jXE.GUILD_HEADER,
+          object: T.qAy.BOOST_GEM_ICON
         }
       }))
     }, [F, o.id]);
@@ -247,12 +247,12 @@ function M(e) {
   let Q = (0, c.wj)(U) ? W : K,
     J = (0, c.wj)(U) ? H : Y;
   t = null != t ? t : Q, n = null != n ? n : J;
-  let $ = Math.floor(.75 * M) - (null != X ? X : 0);
+  let $ = Math.floor(.75 * k) - (null != X ? X : 0);
   return (0, r.jsx)(u.ua7, {
     color: l,
     position: d,
     "aria-label": R,
-    text: (0, r.jsx)(k, {
+    text: (0, r.jsx)(M, {
       badgeType: B,
       guildTraits: G
     }),
@@ -264,9 +264,9 @@ function M(e) {
         className: E,
         flowerStarClassName: b,
         allowFullSizedIcon: !0,
-        color: null != n ? n : T,
+        color: null != n ? n : S,
         stroke: I,
-        size: M,
+        size: k,
         children: (0, r.jsx)(Z, {
           size: "custom",
           width: $,

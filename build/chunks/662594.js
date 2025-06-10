@@ -27,7 +27,7 @@ var r, i = n(392711),
   v = n(981631),
   I = n(388032);
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,14 +36,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -104,7 +104,7 @@ function D(e, t, n) {
     o = r ? y.Z.getActivities() : b.Z.getActivities(n, e),
     s = _.Z.getStreamForUser(n, e),
     l = O.default.getUser(n);
-  return null == l ? null : N(T({
+  return null == l ? null : N(S({
     type: "MEMBER"
   }, g.ZP.getMember(e, n)), {
     user: l,
@@ -131,7 +131,7 @@ function x(e) {
     return l.e$(r, v.Plq.VIEW_CHANNEL) ? e.push("allow:".concat(n)) : l.e$(i, v.Plq.VIEW_CHANNEL) && e.push("deny:".concat(n)), e
   }, []).sort().join(",")).toString()
 }
-class k {
+class M {
   updateOwnerId() {
     let e = E.Z.getGuild(this.guildId);
     if (null == e) return !1;
@@ -202,15 +202,15 @@ class k {
     }
   }
   constructor(e, t) {
-    S(this, "guildId", void 0), S(this, "listId", void 0), S(this, "ownerId", void 0), S(this, "rows", []), S(this, "groups", []), S(this, "members", {}), S(this, "version", 0), this.guildId = e, this.listId = t, this.updateOwnerId()
+    T(this, "guildId", void 0), T(this, "listId", void 0), T(this, "ownerId", void 0), T(this, "rows", []), T(this, "groups", []), T(this, "members", {}), T(this, "version", 0), this.guildId = e, this.listId = t, this.updateOwnerId()
   }
 }
-class M {
+class k {
   get(e, t) {
     let n = this._guildLists[e];
     null == n && (n = this._guildLists[e] = {});
     let r = n[t];
-    return null == r && ((r = new k(e, t)).setGroups([{
+    return null == r && ((r = new M(e, t)).setGroups([{
       id: v.Skl.UNKNOWN,
       count: 0
     }]), n[t] = r), r
@@ -231,10 +231,10 @@ class M {
     this._guildLists = {}
   }
   constructor() {
-    S(this, "_guildLists", {})
+    T(this, "_guildLists", {})
   }
 }
-let j = new M;
+let j = new k;
 
 function U(e) {
   let t = j.get(e.guildId, e.id);
@@ -327,7 +327,7 @@ class z extends(r = c.ZP.Store) {
     return j.get(e, L(t)).rows
   }
 }
-S(z, "displayName", "ChannelMemberStore");
+T(z, "displayName", "ChannelMemberStore");
 let q = new z(u.Z, {
   CONNECTION_OPEN: G,
   OVERLAY_INITIALIZE: G,

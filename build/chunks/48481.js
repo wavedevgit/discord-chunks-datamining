@@ -5,12 +5,12 @@ n.d(t, {
   ac: () => E,
   cv: () => b,
   d5: () => g,
-  i7: () => S,
+  i7: () => T,
   kI: () => m,
   re: () => O,
   tU: () => N,
   u0: () => I,
-  uL: () => T,
+  uL: () => S,
   xU: () => y,
   xt: () => A
 }), n(415506), n(388685), n(539854), n(583741);
@@ -92,11 +92,11 @@ function I(e, t, n) {
   return (null == t || "null" === t) && (t = d.aIL), t in e.guilds || (e.guilds[t] = l.C4.create()), n(e.guilds[t])
 }
 
-function S(e, t, n, r) {
-  return v(e, t, e => T(e, n, r))
+function T(e, t, n, r) {
+  return v(e, t, e => S(e, n, r))
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e.channels || (e.channels[t] = l.p5.create()), n(e.channels[t])
 }
 

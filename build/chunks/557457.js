@@ -3,7 +3,7 @@
 n.d(t, {
   W3: () => I,
   Wc: () => v,
-  Ye: () => S,
+  Ye: () => T,
   bp: () => O,
   ml: () => y,
   nG: () => g,
@@ -76,7 +76,7 @@ function I(e) {
   } : v(e), [n, e, t])
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   let r = b(e, t, n),
     i = c.default.getCurrentUser(),
     a = l.Z.getGuildId(),

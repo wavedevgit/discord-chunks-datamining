@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(699516),
   v = n(246946),
   I = n(594174),
-  S = n(572004),
-  T = n(669079),
+  T = n(572004),
+  S = n(669079),
   A = n(74538),
   N = n(51144),
   C = n(987209),
@@ -47,19 +47,19 @@ function x(e) {
     giftRecipient: h,
     giftMessageError: E,
     isSendingMessage: b
-  } = e, [O, I] = i.useState(u.kO8.Modes.DEFAULT), x = (0, c.e7)([v.Z], () => v.Z.enabled), M = f || null != l && null != h, j = (null == a ? void 0 : a.productLine) === R.POd.COLLECTIBLES, U = (0, g.Z)(), {
+  } = e, [O, I] = i.useState(u.kO8.Modes.DEFAULT), x = (0, c.e7)([v.Z], () => v.Z.enabled), k = f || null != l && null != h, j = (null == a ? void 0 : a.productLine) === R.POd.COLLECTIBLES, U = (0, g.Z)(), {
     selectedGiftingPromotionReward: G
   } = (0, C.wD)(), B = null == U ? void 0 : U.giftPurchaseConfirmation, F = (0, m.tK)(null == G ? void 0 : G.skuId), V = (0, m.a5)(s) && null != F && null != B, Z = () => null != s ? s.skuId : null != a ? a.id : null, H = () => {
     let e;
-    return null != E ? w.intl.string(w.t.qB8ayc) : null == s ? null : (e = s.interval === P.rV.MONTH ? M ? V ? B.monthGiftText : w.t["4ZJ+7e"] : w.t["P+z55e"] : M ? V ? B.yearGiftText : w.t.p0pZXF : w.t.bXqk3t, w.intl.format(e, {
+    return null != E ? w.intl.string(w.t.qB8ayc) : null == s ? null : (e = s.interval === P.rV.MONTH ? k ? V ? B.monthGiftText : w.t["4ZJ+7e"] : w.t["P+z55e"] : k ? V ? B.yearGiftText : w.t.p0pZXF : w.t.bXqk3t, w.intl.format(e, {
       skuName: (0, A.aq)(s.id),
       intervalCount: s.intervalCount
     }))
   }, Y = () => null != h || f && null == E ? w.intl.string(w.t.zOmK9P) : null != E ? w.intl.string(w.t.d1lrmZ) : w.intl.string(w.t["/s1xR0"]), W = (e, t) => {
-    null != a && (0, T.dM)(new y.Z({
+    null != a && (0, S.dM)(new y.Z({
       code: t,
       maxUses: 1
-    }), a), (0, S.JG)(e, () => I(u.kO8.Modes.SUCCESS), () => I(u.kO8.Modes.ERROR)), setTimeout(() => {
+    }), a), (0, T.JG)(e, () => I(u.kO8.Modes.SUCCESS), () => I(u.kO8.Modes.ERROR)), setTimeout(() => {
       I(u.kO8.Modes.DEFAULT)
     }, L)
   }, K = () => {
@@ -81,11 +81,11 @@ function x(e) {
         children: w.intl.string(w.t["/dG4ND"])
       }), null != t && (0, r.jsx)(u.kO8, {
         hideMessage: x ? w.intl.string(w.t["0RLn4+"]) : null,
-        value: (0, T.Nz)(t),
+        value: (0, S.Nz)(t),
         mode: O,
         text: e,
         onCopy: e => W(e, t),
-        supportsCopy: S.wS,
+        supportsCopy: T.wS,
         className: D.__invalid_copyInput,
         buttonColor: u.Ttl.LINK,
         buttonLook: u.iLD.LINK
@@ -98,7 +98,7 @@ function x(e) {
     children: [(0, r.jsx)("div", {
       className: D.blurb,
       children: H()
-    }), null == E && (0, r.jsx)(k, {
+    }), null == E && (0, r.jsx)(M, {
       giftCode: t,
       onClose: d
     }), (0, r.jsx)("div", {
@@ -147,10 +147,10 @@ function x(e) {
         [D.headerCustomGifting]: null != l && !j
       }),
       children: Y()
-    }), f && null != h && null == E || M ? q() : z()]
+    }), f && null != h && null == E || k ? q() : z()]
   })
 }
-let k = e => {
+let M = e => {
   let {
     giftCode: t,
     onClose: n
@@ -164,7 +164,7 @@ let k = e => {
   } = (0, c.cj)([b.Z], () => ({
     userAffinities: b.Z.getUserAffinitiesMap(),
     isLoading: b.Z.isFetching()
-  })), S = Array.from(y.keys()).sort((e, t) => b.Z.compare(e, t)), T = (0, c.e7)([O.Z], () => O.Z.getFriendIDs()), A = l().difference(T, S), C = [...S, ...A], R = (0, c.e7)([I.default], () => I.default.filter(e => C.includes(e.id) && !e.bot), [C]);
+  })), T = Array.from(y.keys()).sort((e, t) => b.Z.compare(e, t)), S = (0, c.e7)([O.Z], () => O.Z.getFriendIDs()), A = l().difference(S, T), C = [...T, ...A], R = (0, c.e7)([I.default], () => I.default.filter(e => C.includes(e.id) && !e.bot), [C]);
   if (null == R || 0 === R.length) return null;
   let P = l().sortBy(R, e => C.indexOf(e.id));
   return (0, r.jsxs)("div", {

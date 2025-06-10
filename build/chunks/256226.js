@@ -55,13 +55,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -91,9 +91,9 @@ let N = i.forwardRef(function(e, t) {
     } = e,
     x = (0, s.JA)(R.id),
     {
-      tabIndex: k
+      tabIndex: M
     } = x,
-    M = T(x, ["tabIndex"]),
+    k = S(x, ["tabIndex"]),
     j = (0, g.p9)({
       roleId: R.id,
       size: 16,
@@ -106,7 +106,7 @@ let N = i.forwardRef(function(e, t) {
         let {
           default: e
         } = await n.e("5396").then(n.bind(n, 731646));
-        return t => (0, r.jsx)(e, S(v({}, t), {
+        return t => (0, r.jsx)(e, T(v({}, t), {
           id: R.id,
           label: b.intl.string(b.t.sMsaLi)
         }))
@@ -146,7 +146,7 @@ let N = i.forwardRef(function(e, t) {
       children: (0, r.jsxs)(d.P3F, {
         className: o()(y.roleRemoveButtonCanRemove, y.roleRemoveButton),
         onClick: P,
-        tabIndex: k,
+        tabIndex: M,
         focusProps: {
           focusClassName: y.roleRemoveIconFocused
         },
@@ -174,16 +174,16 @@ let N = i.forwardRef(function(e, t) {
       children: A
     });
   return (0, r.jsx)(d.tEY, {
-    children: (0, r.jsxs)("div", S(v({
+    children: (0, r.jsxs)("div", T(v({
       ref: t,
       className: o()(y.role, C),
       style: K,
       onContextMenu: B,
       onMouseDown: L,
       "aria-label": R.name,
-      tabIndex: k
-    }, M), {
-      children: [z(), null != j ? (0, r.jsx)(m.Z, S(v({
+      tabIndex: M
+    }, k), {
+      children: [z(), null != j ? (0, r.jsx)(m.Z, T(v({
         className: y.roleIcon
       }, j), {
         enableTooltip: !1

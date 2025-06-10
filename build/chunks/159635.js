@@ -60,8 +60,8 @@
             }
             if (null == c || null == u) throw Error("Could not find a matching rule for the below content. The rule with highest `order` should always match content provided to it. Check the definition of `match` for '" + a[a.length - 1] + "'. It seems to not match the following source:\n" + t);
             if (u.index) throw Error("`match` must return a capture starting at index 0 (the current parse index). Did you forget a ^ at the start of the RegExp?");
-            var S = c.parse(u, d, r);
-            Array.isArray(S) ? Array.prototype.push.apply(i, S) : (null == S.type && (S.type = l), i.push(S)), r.prevCapture = u, t = t.substring(r.prevCapture[0].length)
+            var T = c.parse(u, d, r);
+            Array.isArray(T) ? Array.prototype.push.apply(i, T) : (null == T.type && (T.type = l), i.push(T)), r.prevCapture = u, t = t.substring(r.prevCapture[0].length)
           }
           return i
         },
@@ -160,9 +160,9 @@
       return {}
     },
     I = "(?:[*+-]|\\d+\\.)",
-    S = "( *)(" + I + ") +",
-    T = RegExp("^" + S),
-    A = RegExp(S + "[^\\n]*(?:\\n(?!\\1" + I + " )[^\\n]*)*(\n|$)", "gm"),
+    T = "( *)(" + I + ") +",
+    S = RegExp("^" + T),
+    A = RegExp(T + "[^\\n]*(?:\\n(?!\\1" + I + " )[^\\n]*)*(\n|$)", "gm"),
     N = /\n{2,}$/,
     C = /^ (?= *`)|(` *) $/g,
     R = N,
@@ -220,8 +220,8 @@
       }
     }(),
     x = "(?:\\[[^\\]]*\\]|[^\\[\\]]|\\](?=[^\\[]*\\]))*",
-    k = "\\s*<?((?:\\([^)]*\\)|[^\\s\\\\]|\\\\.)*?)>?(?:\\s+['\"]([\\s\\S]*?)['\"])?\\s*",
-    M = /mailto:/i,
+    M = "\\s*<?((?:\\([^)]*\\)|[^\\s\\\\]|\\\\.)*?)>?(?:\\s+['\"]([\\s\\S]*?)['\"])?\\s*",
+    k = /mailto:/i,
     j = function(e, t, n) {
       var r = (e[2] || e[1]).replace(/\s+/g, " ").toLowerCase();
       if (t._defs && t._defs[r]) {
@@ -386,9 +386,9 @@
             ordered: i,
             start: a,
             items: o.map(function(e, r) {
-              var i, a = T.exec(e),
+              var i, a = S.exec(e),
                 l = RegExp("^ {1," + (a ? a[0].length : 0) + "}", "gm"),
-                c = e.replace(l, "").replace(T, ""),
+                c = e.replace(l, "").replace(S, ""),
                 u = r === o.length - 1,
                 d = -1 !== c.indexOf("\n\n") || u && s;
               s = d;
@@ -586,7 +586,7 @@
         parse: function(e, t, n) {
           var r = e[1],
             i = e[1];
-          return M.test(i) || (i = "mailto:" + i), {
+          return k.test(i) || (i = "mailto:" + i), {
             type: "link",
             content: [{
               type: "text",
@@ -619,7 +619,7 @@
       link: {
         order: G++,
         requiredFirstCharacters: ["["],
-        match: o(RegExp("^\\[(" + x + ")\\]\\(" + k + "\\)")),
+        match: o(RegExp("^\\[(" + x + ")\\]\\(" + M + "\\)")),
         parse: function(e, t, n) {
           return {
             content: t(e[1], n),
@@ -644,7 +644,7 @@
       },
       image: {
         order: G++,
-        match: o(RegExp("^!\\[(" + x + ")\\]\\(" + k + "\\)")),
+        match: o(RegExp("^!\\[(" + x + ")\\]\\(" + M + "\\)")),
         parse: function(e, t, n) {
           return {
             alt: e[1],

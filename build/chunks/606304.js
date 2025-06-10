@@ -82,7 +82,7 @@ function I(e) {
   h = t.id, m = n, g = null
 }
 
-function S(e) {
+function T(e) {
   let {
     context: t,
     userId: n,
@@ -99,7 +99,7 @@ function S(e) {
   return (r & f.Dg.HIDDEN) === f.Dg.HIDDEN && (r = 0), v(t, n, r)
 }
 
-function T(e) {
+function S(e) {
   let {
     voiceStates: t
   } = e;
@@ -164,6 +164,6 @@ _(A, "displayName", "SpeakingStore");
 let N = new A(a.Z, {
   CONNECTION_OPEN: I,
   OVERLAY_INITIALIZE: I,
-  SPEAKING: S,
-  VOICE_STATE_UPDATES: T
+  SPEAKING: T,
+  VOICE_STATE_UPDATES: S
 })

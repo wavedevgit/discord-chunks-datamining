@@ -11,7 +11,7 @@ n.d(t, {
   YW: () => d,
   ae: () => O,
   b3: () => _,
-  cf: () => T,
+  cf: () => S,
   dr: () => I,
   fY: () => m,
   iU: () => l,
@@ -124,7 +124,7 @@ function I(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   return {
     id: e.id,
     options: e.options.map(e => {
@@ -147,10 +147,10 @@ function S(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   var t, n, r;
   return {
-    prompts: e.prompts.map(S),
+    prompts: e.prompts.map(T),
     defaultChannelIds: e.default_channel_ids,
     responses: null != (t = e.responses) ? t : [],
     mode: e.mode,

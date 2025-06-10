@@ -108,20 +108,20 @@ function g(e) {
     resetInteraction: O,
     interactionSourceId: v,
     interactionPopoutTargetRef: I
-  } = (0, a.Xo)(), S = [c.lY.MODAL, c.lY.MODAL_V2].includes(f) ? (0, o.z)(t.id, n) : void 0, T = y === E.sourceType && b === c.P.REACT, A = y === E.sourceType && b === c.P.REPLY, N = (T || A) && v === E.sourceId;
+  } = (0, a.Xo)(), T = [c.lY.MODAL, c.lY.MODAL_V2].includes(f) ? (0, o.z)(t.id, n) : void 0, S = y === E.sourceType && b === c.P.REACT, A = y === E.sourceType && b === c.P.REPLY, N = (S || A) && v === E.sourceId;
   return (0, r.jsx)(i.yRy, _(d({
     targetElementRef: null != I ? I : void 0,
     renderPopout: e => {
       let {
         setPopoutRef: i
-      } = e, a = T ? s.Z : l.Z;
+      } = e, a = S ? s.Z : l.Z;
       return (0, r.jsx)(a, d({
         user: t,
         guildId: n,
         channelId: u,
         themeType: f,
         onClose: h,
-        modalKey: S,
+        modalKey: T,
         setPopoutRef: i
       }, E))
     },

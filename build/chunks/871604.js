@@ -24,9 +24,9 @@ var r = n(255367),
   O = n(497805),
   v = n(475413),
   I = n(981631),
-  S = n(388032);
+  T = n(388032);
 
-function T(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -42,7 +42,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
@@ -70,7 +70,7 @@ function R(e) {
   var {
     user: t,
     closePopout: n
-  } = e, T = N(e, ["user", "closePopout"]);
+  } = e, S = N(e, ["user", "closePopout"]);
   let C = i.useRef(null),
     R = (0, a.e7)([y.Z], () => {
       var e;
@@ -91,8 +91,8 @@ function R(e) {
     x = (0, s.Z)({
       context: L
     }),
-    k = t.id,
-    M = i.useCallback(() => {
+    M = t.id,
+    k = i.useCallback(() => {
       if (null != R)
         if (x) {
           let e = h.Z.getCurrentlySelectedChannelId(),
@@ -100,14 +100,14 @@ function R(e) {
             r = null != _.ZP.getSidebarState(e) || (null == t ? void 0 : t.isGuildVocal()) ? f.Ie.SIDEBAR : f.Ie.NORMAL;
           l.__(c._b.TEXT, r, {
             applicationId: R.id
-          }), (0, o.Mr3)((0, O.z)(k, D)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+          }), (0, o.Mr3)((0, O.z)(M, D)), null == n || n(), m.default.track(I.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
             application_id: R.id
           })
         } else(0, b.L)(A({
           applicationId: R.id
         }, R))
-    }, [x, R, k, D, n]),
-    j = x ? S.intl.string(S.t["Cia+Aw"]) : S.intl.string(S.t.NgXl3N);
+    }, [x, R, M, D, n]),
+    j = x ? T.intl.string(T.t["Cia+Aw"]) : T.intl.string(T.t.NgXl3N);
   if (null == R || !(0, d.Eb)(R)) return null;
   let {
     customInstallUrl: U
@@ -121,12 +121,12 @@ function R(e) {
       return (0, r.jsx)(o.v2r, {
         navId: "user-bot-profile-add-app",
         onClose: t,
-        "aria-label": S.intl.string(S.t.dbkxVl),
+        "aria-label": T.intl.string(T.t.dbkxVl),
         onSelect: void 0,
         children: (0, r.jsx)(o.kSQ, {
           children: (0, r.jsx)(o.sNh, {
             id: "copy",
-            label: S.intl.string(S.t.XWDiho),
+            label: T.intl.string(T.t.XWDiho),
             action: () => (0, g.JG)((0, u.J)(R))
           })
         })
@@ -142,13 +142,13 @@ function R(e) {
         text: j,
         icon: B,
         onContextMenu: t,
-        onClick: M
-      }, n, T))
+        onClick: k
+      }, n, S))
     }
   }) : (0, r.jsx)(v.tG, A({
     action: "PRESS_ADD_APP",
     text: j,
     icon: B,
-    onClick: M
-  }, T))
+    onClick: k
+  }, S))
 }

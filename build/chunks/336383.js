@@ -84,13 +84,13 @@ let v = i.forwardRef(function(e, t) {
     "aria-labelledby": v
   } = e, I = y(e, ["children", "className", "subsection", "onAction", "onClose", "aria-label", "aria-labelledby"]);
   let {
-    themeType: S
+    themeType: T
   } = (0, f.z)(), {
-    analyticsLocations: T
+    analyticsLocations: S
   } = (0, l.ZP)(), {
     context: A
   } = (0, c.KZ)();
-  return S === _.lY.MODAL || S === _.lY.MODAL_V2 || (null == A ? void 0 : A.userId) == null ? (0, r.jsx)("article", {
+  return T === _.lY.MODAL || T === _.lY.MODAL_V2 || (null == A ? void 0 : A.userId) == null ? (0, r.jsx)("article", {
     "aria-label": O,
     "aria-labelledby": v,
     children: (0, r.jsx)(d.Z.Overlay, b(g({
@@ -112,7 +112,7 @@ let v = i.forwardRef(function(e, t) {
           action: "PRESS_CARD"
         }), (0, u.openUserProfileModal)(g({
           section: _.oh.ACTIVITY,
-          sourceAnalyticsLocations: T,
+          sourceAnalyticsLocations: S,
           subsection: a
         }, A)), null == E || E()
       },

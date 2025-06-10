@@ -26,7 +26,7 @@ let m = i.forwardRef(function(e, t) {
       autoFocus: b,
       className: y,
       defaultSearchPlaceholder: O
-    } = e, v = i.useRef(null), I = (0, d.Iu)(e => e.searchQuery), [S, T] = u.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], s.X), A = i.useCallback(e => {
+    } = e, v = i.useRef(null), I = (0, d.Iu)(e => e.searchQuery), [T, S] = u.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], s.X), A = i.useCallback(e => {
       var t;
       u.kJ.setActiveCategoryIndex("" === e ? 0 : f.c), u.kJ.setInspectedExpressionPosition(0, 0), u.kJ.setSearchPlaceholder(null), (0, d.ql)(e), null == (t = n.current) || t.scrollTo(0)
     }, [n]), N = i.useCallback(() => {
@@ -51,7 +51,7 @@ let m = i.forwardRef(function(e, t) {
       query: I,
       ref: v,
       size: c.E1j.Sizes.MEDIUM,
-      placeholder: null != T ? T : O,
+      placeholder: null != S ? S : O,
       onClear: N,
       onKeyDown: C,
       onFocus: E,
@@ -64,7 +64,7 @@ let m = i.forwardRef(function(e, t) {
         "aria-haspopup": "grid",
         "aria-controls": a,
         "aria-expanded": !0,
-        "aria-activedescendant": (0, l.NE)(a, S.columnIndex, S.rowIndex)
+        "aria-activedescendant": (0, l.NE)(a, T.columnIndex, T.rowIndex)
       }
     })
   }),

@@ -25,8 +25,8 @@ var i = n(120356),
   O = n(388032),
   v = n(445561);
 let I = "#ffffff",
-  S = e => y.ZP.close(e),
-  T = e => y.ZP.minimize(e),
+  T = e => y.ZP.close(e),
+  S = e => y.ZP.minimize(e),
   A = (e, t) => {
     (0, b.isMac)() && !t.altKey ? y.ZP.fullscreen(e) : y.ZP.maximize(e)
   },
@@ -38,7 +38,7 @@ let I = "#ffffff",
       hasOpenLayer: o
     } = e, l = (0, r.jsx)(s.P3F, {
       className: v.winButtonClose,
-      onClick: () => S(n),
+      onClick: () => T(n),
       "aria-label": O.intl.string(O.t.ZdNUj4),
       tabIndex: -1,
       children: (0, r.jsx)(_.Z, {})
@@ -50,7 +50,7 @@ let I = "#ffffff",
       children: (0, r.jsx)(h.Z, {})
     }), u = (0, r.jsx)(s.P3F, {
       className: v.winButtonMinMax,
-      onClick: () => T(n),
+      onClick: () => S(n),
       "aria-label": O.intl.string(O.t.CxOC4e),
       tabIndex: -1,
       children: (0, r.jsx)(g.Z, {})
@@ -91,7 +91,7 @@ let I = "#ffffff",
           className: v.macButtons,
           children: [(0, r.jsx)(s.P3F, {
             className: v.macButtonClose,
-            onClick: () => S(n),
+            onClick: () => T(n),
             "aria-label": O.intl.string(O.t.ZdNUj4),
             tabIndex: -1,
             children: (0, r.jsx)(p.Z, {
@@ -99,7 +99,7 @@ let I = "#ffffff",
             })
           }), (0, r.jsx)(s.P3F, {
             className: v.macButtonMinimize,
-            onClick: () => T(n),
+            onClick: () => S(n),
             "aria-label": O.intl.string(O.t.CxOC4e),
             tabIndex: -1,
             children: (0, r.jsx)(E.Z, {

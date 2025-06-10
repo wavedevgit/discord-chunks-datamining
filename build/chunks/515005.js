@@ -33,7 +33,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,7 +58,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,13 +89,13 @@ let R = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
       preferAnimation: a = !0,
       getStickerItemProps: l,
       getStickerRowProps: I,
-      gutterWidth: T,
+      gutterWidth: S,
       inspectedStickerPosition: C,
       isScrolling: D,
       isUsingKeyboardNavigation: L,
       onInspect: x,
-      onSelect: k,
-      rowIndex: M,
+      onSelect: M,
+      rowIndex: k,
       stickerClassName: j,
       stickerDescriptors: U,
       stickerPadding: G = P,
@@ -108,27 +108,27 @@ let R = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
     } = e, {
       location: W
     } = (0, d.O)(), K = B + 2 * G, z = i.useMemo(() => ({
-      gridColumnGap: T,
+      gridColumnGap: S,
       gridTemplateColumns: "repeat(auto-fill, ".concat(K, "px)"),
       height: K,
       paddingRight: t ? void 0 : K
-    }), [t, T, K]), q = i.useMemo(() => ({
+    }), [t, S, K]), q = i.useMemo(() => ({
       width: B,
       height: B,
       padding: G
     }), [G, B]), [X, Q] = (0, f.Z)(null, 300);
-    return (0, r.jsx)("div", A(S({
+    return (0, r.jsx)("div", A(T({
       className: v.row,
       style: z
-    }, null == I ? void 0 : I(M)), {
+    }, null == I ? void 0 : I(k)), {
       children: U.map(e => {
         var d;
         let f = e.visibleRowIndex === (null == C ? void 0 : C.rowIndex) && e.columnIndex === (null == C ? void 0 : C.columnIndex),
           I = e.type === m.al.STICKER && V && f,
-          T = t => {
+          S = t => {
             if ((null == D ? void 0 : D.current) === !0 || (null == L ? void 0 : L.current) === !0) return;
             let n = t.altKey;
-            n && e.type === m.al.STICKER && !(0, g.gM)(e.sticker.id) && Q(e.sticker.id), null == k || k(e, n)
+            n && e.type === m.al.STICKER && !(0, g.gM)(e.sticker.id) && Q(e.sticker.id), null == M || M(e, n)
           },
           R = (0, s.throttle)(() => {
             (null == D ? void 0 : D.current) === !0 || (null == L ? void 0 : L.current) === !0 || f || null == x || x(e)
@@ -141,12 +141,12 @@ let R = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
               let {
                 default: t
               } = await Promise.all([n.e("93626"), n.e("61547")]).then(n.bind(n, 136735));
-              return n => (0, r.jsx)(t, S({
+              return n => (0, r.jsx)(t, T({
                 guildId: e.guild_id
               }, n))
             }))
           },
-          U = null != (d = null == l ? void 0 : l(e.columnIndex, M)) ? d : {},
+          U = null != (d = null == l ? void 0 : l(e.columnIndex, k)) ? d : {},
           {
             ref: G,
             tabIndex: K,
@@ -155,7 +155,7 @@ let R = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
           J = N(U, ["ref", "tabIndex", "onFocus"]);
         switch (e.type) {
           case m.al.CREATE_STICKER:
-            return (0, r.jsx)("div", A(S({}, J), {
+            return (0, r.jsx)("div", A(T({}, J), {
               children: (0, r.jsxs)(c.P3F, {
                 "aria-label": e.name,
                 className: o()(v.createSticker, j, {
@@ -190,10 +190,10 @@ let R = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
                   let {
                     default: e
                   } = await n.e("39010").then(n.bind(n, 269254));
-                  return t => (0, r.jsx)(e, S({}, t))
+                  return t => (0, r.jsx)(e, T({}, t))
                 })
               };
-            return (0, i.createElement)("div", A(S({}, J), {
+            return (0, i.createElement)("div", A(T({}, J), {
               key: e.sticker.id
             }), (0, r.jsxs)(c.P3F, {
               className: o()(v.sticker, j, {
@@ -204,7 +204,7 @@ let R = (0, l.Mg)(v.__invalid_stickerPickerPreviewDimensions),
               tabIndex: K,
               onFocus: null != z ? z : R,
               onMouseMove: R,
-              onClick: T,
+              onClick: S,
               onContextMenu: l,
               style: q,
               "data-type": _.S.STICKER,

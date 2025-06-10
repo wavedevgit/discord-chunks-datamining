@@ -4,7 +4,7 @@ n.d(t, {
   VF: () => w,
   WW: () => C,
   XO: () => A,
-  Yp: () => T,
+  Yp: () => S,
   hC: () => P,
   o9: () => R,
   zC: () => N
@@ -113,7 +113,7 @@ let u = () => ({
     icon: s.Z,
     description: c.intl.string(c.t.Tm40TU)
   }),
-  S = function() {
+  T = function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : r.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css;
     return {
       color: e,
@@ -122,12 +122,12 @@ let u = () => ({
     }
   };
 
-function T() {
+function S() {
   return [p(), f(), h(), v()]
 }
 
 function A() {
-  return [p(), m(l.Eu4.TIER_2), S(), v()]
+  return [p(), m(l.Eu4.TIER_2), T(), v()]
 }
 
 function N() {

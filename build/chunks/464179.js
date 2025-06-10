@@ -74,8 +74,8 @@ function y(e, t) {
 let O = "US",
   v = "CA",
   I = 5,
-  S = ["AE", "AG", "AN", "AO", "AW", "BF", "BI", "BJ", "BM", "BO", "BQ", "BS", "BW", "BZ", "CD", "CF", "CG", "CI", "CK", "CM", "CW", "DJ", "DM", "ER", "FJ", "GA", "GD", "GH", "GM", "GQ", "GY", "HK", "HM", "IE", "JM", "KE", "KI", "KM", "KN", "KP", "LY", "ML", "MO", "MR", "MW", "NA", "NR", "NU", "QA", "RW", "SB", "SC", "SL", "SR", "ST", "SX", "SY", "TD", "TF", "TG", "TK", "TL", "TO", "TV", "UG", "VU", "YE", "ZA", "ZW"],
-  T = s.Z.map(e => ({
+  T = ["AE", "AG", "AN", "AO", "AW", "BF", "BI", "BJ", "BM", "BO", "BQ", "BS", "BW", "BZ", "CD", "CF", "CG", "CI", "CK", "CM", "CW", "DJ", "DM", "ER", "FJ", "GA", "GD", "GH", "GM", "GQ", "GY", "HK", "HM", "IE", "JM", "KE", "KI", "KM", "KN", "KP", "LY", "ML", "MO", "MR", "MW", "NA", "NR", "NU", "QA", "RW", "SB", "SC", "SL", "SR", "ST", "SX", "SY", "TD", "TF", "TG", "TK", "TL", "TO", "TV", "UG", "VU", "YE", "ZA", "ZW"],
+  S = s.Z.map(e => ({
     value: e.alpha2,
     label: e.name
   })).filter(e => "KP" !== e.value && "SY" !== e.value),
@@ -92,11 +92,11 @@ var L = function(e) {
   x = function(e) {
     return e.EDIT = "edit", e.CREATE = "create", e
   }(x || {});
-let k = {
+let M = {
     [O]: l.G,
     [v]: o.X
   },
-  M = e => ({
+  k = e => ({
     name: "name",
     id: A,
     title: () => _.intl.string(_.t.vyuULS),
@@ -128,7 +128,7 @@ let k = {
         autoFocus: !0,
         maxVisibleItems: 8,
         isDisabled: "edit" === t.mode,
-        options: T,
+        options: S,
         onChange: t => {
           null != n && n(t, e.name)
         }
@@ -250,7 +250,7 @@ let k = {
         }
       },
       renderInput(t) {
-        let n = k[e],
+        let n = M[e],
           r = null == t.value || "" === t.value || null != n && null != n.find(e => {
             let {
               value: n
@@ -290,7 +290,7 @@ let k = {
     ],
     modalUSWithName: [
       [j],
-      [M],
+      [k],
       [U],
       [G],
       [B],
@@ -298,7 +298,7 @@ let k = {
     ],
     modalInternationalWithName: [
       [j],
-      [M],
+      [k],
       [U],
       [G],
       [B],
@@ -306,13 +306,13 @@ let k = {
       [F]
     ],
     settingsUS: [
-      [M],
+      [k],
       [U, G],
       [B, V, F],
       [j]
     ],
     settingsUSMobile: [
-      [M],
+      [k],
       [U],
       [G],
       [B],
@@ -321,14 +321,14 @@ let k = {
       [j]
     ],
     settingsInternational: [
-      [M],
+      [k],
       [U, G],
       [B],
       [V, F],
       [j]
     ],
     settingsInternationalMobile: [
-      [M],
+      [k],
       [U],
       [G],
       [B],
@@ -380,7 +380,7 @@ class H extends(r = a.PureComponent) {
         e && !n.postalCode || this.hasValue(t.postalCode) || (r.postalCode = _.intl.string(_.t.LRlhb2)), e && !n.state || this.hasValue(t.state) || (r.state = _.intl.string(_.t.PsJCcn));
         break;
       default:
-        e && !n.postalCode || this.hasValue(t.postalCode) || S.includes(null != i ? i : "") || (r.postalCode = _.intl.string(_.t.LRlhb2))
+        e && !n.postalCode || this.hasValue(t.postalCode) || T.includes(null != i ? i : "") || (r.postalCode = _.intl.string(_.t.LRlhb2))
     }
     return r
   }

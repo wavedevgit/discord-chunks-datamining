@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(864106),
   v = n(240781),
   I = n(818611),
-  S = n(981631),
-  T = n(474936),
+  T = n(981631),
+  S = n(474936),
   A = n(388032),
   N = n(543901);
 
@@ -38,7 +38,7 @@ function C(e) {
     onClose: f,
     initialSelectedDecoration: E,
     initialSelectedDecorationId: b,
-    isTryItOutFlow: S,
+    isTryItOutFlow: T,
     guild: C
   } = e, {
     pendingAvatarDecoration: R,
@@ -46,7 +46,7 @@ function C(e) {
     savedAvatarDecoration: w
   } = (0, g.Z)({
     analyticsLocations: l,
-    isTryItOut: S,
+    isTryItOut: T,
     guildId: null == C ? void 0 : C.id
   }), [D, L] = i.useState(() => {
     var e, t;
@@ -55,8 +55,8 @@ function C(e) {
     return null != b ? null != (e = r.find(e => e.id === b)) ? e : null : void 0 !== R ? R : null == w ? null : null != (t = r.find(e => (0, O.sr)(e, w))) ? t : null
   }), {
     product: x,
-    purchase: k
-  } = (0, d.Z)(null == D ? void 0 : D.skuId), M = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(l), G = (0, O.sr)(D, void 0 === R ? w : R), B = e => {
+    purchase: M
+  } = (0, d.Z)(null == D ? void 0 : D.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(l), G = (0, O.sr)(D, void 0 === R ? w : R), B = e => {
     L(e), null != e && U(e)
   }, F = () => {
     P(D), f()
@@ -66,16 +66,16 @@ function C(e) {
       analyticsSource: s.Z.EDIT_AVATAR_DECORATION_MODAL,
       initialProductSkuId: e
     })
-  }, [l, f]), Z = (0, p.M)(), H = () => null != k && (!(0, u.qS)(k) || M) || null === D ? (0, r.jsx)(o.zxk, {
+  }, [l, f]), Z = (0, p.M)(), H = () => null != M && (!(0, u.qS)(M) || k) || null === D ? (0, r.jsx)(o.zxk, {
     onClick: F,
     disabled: G,
     children: A.intl.string(A.t.Jh8fJy)
-  }) : null == k && (M || !(0, u.G1)(x)) ? (0, r.jsx)(o.zxk, {
+  }) : null == M && (k || !(0, u.G1)(x)) ? (0, r.jsx)(o.zxk, {
     className: N.modalFooterShopButton,
     onClick: () => V(null == x ? void 0 : x.skuId),
     children: A.intl.string(A.t.fYfGgI)
   }) : (0, r.jsx)(m.Z, {
-    subscriptionTier: T.Si.TIER_2,
+    subscriptionTier: S.Si.TIER_2,
     showGradient: Z,
     textOptions: {
       textOverride: y.ZP.isPremium(t) ? A.intl.string(A.t.KXLX7u) : Z ? A.intl.string(A.t.pj0XBA) : A.intl.string(A.t.mr4K7O)
@@ -143,12 +143,12 @@ function R(e) {
     isFetchingPurchases: I
   } = (0, f.ZP)({
     location: "AvatarDecorationModal"
-  }), T = v || I && 0 === O.size, A = () => {
+  }), S = v || I && 0 === O.size, A = () => {
     u(), null == c || c()
   };
   return i.useEffect(() => {
-    b.default.track(S.rMx.OPEN_MODAL, {
-      type: S.jXE.AVATAR_DECORATION_CUSTOMIZATION,
+    b.default.track(T.rMx.OPEN_MODAL, {
+      type: T.jXE.AVATAR_DECORATION_CUSTOMIZATION,
       location_stack: g
     })
   }, [g]), null == m ? null : (0, r.jsx)(l.Gt, {
@@ -156,9 +156,9 @@ function R(e) {
     children: (0, r.jsx)(o.Y0X, {
       transitionState: t,
       className: N.modal,
-      size: T ? o.CgR.DYNAMIC : o.CgR.MEDIUM,
+      size: S ? o.CgR.DYNAMIC : o.CgR.MEDIUM,
       parentComponent: "AvatarDecorationModal",
-      children: T ? (0, r.jsx)(o.$jN, {
+      children: S ? (0, r.jsx)(o.$jN, {
         className: N.spinner,
         type: o.$jN.Type.SPINNING_CIRCLE
       }) : (0, r.jsx)(C, {

@@ -25,8 +25,8 @@ var r = n(255367),
   O = n(317951),
   v = n(287941),
   I = n(235894),
-  S = n(883998),
-  T = n(576645),
+  T = n(883998),
+  S = n(576645),
   A = n(981631),
   N = n(921944),
   C = n(388032),
@@ -71,8 +71,8 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = 190,
-  M = 178,
+let M = 190,
+  k = 178,
   j = "MESSAGE_CONFETTI_POTION_MODAL_KEY",
   U = e => {
     let {
@@ -141,11 +141,11 @@ function B(e) {
     price: h,
     fetchingPrice: m,
     error: g
-  } = (0, T.R2)(O.D1), {
+  } = (0, S.R2)(O.D1), {
     entitlement: y,
     fetchedEntitlement: v,
-    error: S
-  } = (0, T.t6)(O.D1), N = g || S, {
+    error: T
+  } = (0, S.t6)(O.D1), N = g || T, {
     analyticsLocations: C
   } = (0, d.ZP)([u.Z.CONFETTI_POTION_MODAL]), R = null != y && !y.consumed, P = m || !v;
   (0, i.useEffect)(() => () => {
@@ -173,11 +173,11 @@ function B(e) {
       }
       return 0
     }, [y, R, s]),
-    k = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == _), [f, _, x]);
+    M = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == _), [f, _, x]);
   return (0, r.jsx)(F, {
     channel: t,
     buttonPurchaseState: x,
-    buttonDisabledState: k,
+    buttonDisabledState: M,
     price: h,
     onActionClick: L,
     loading: P,
@@ -289,7 +289,7 @@ let F = e => {
       emojiName: null == n.id ? n.optionallyDiverseSequence : n.name,
       selectionText: n.name.replace(/_/g, " ")
     }, [n]), p = (0, i.useRef)(null);
-    return (0, r.jsx)(S.Z, {
+    return (0, r.jsx)(T.Z, {
       channel: t,
       shouldShow: o,
       onRequestClose: u,
@@ -367,7 +367,7 @@ let F = e => {
     let {
       entitlement: e,
       numPotions: t
-    } = (0, T.t6)(O.D1);
+    } = (0, S.t6)(O.D1);
     if (null == t || 0 === t) return null;
     let n = (null == e ? void 0 : e.type) === A.qc2.DEVELOPER_GIFT ? C.t["b+P6ra"] : C.t.RiQ4cn;
     return (0, r.jsxs)("div", {
@@ -436,8 +436,8 @@ let F = e => {
       className: R.error,
       children: [(0, r.jsx)(l.Eep, {
         src: P,
-        width: M,
-        height: k
+        width: k,
+        height: M
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         children: C.intl.string(C.t.oKJdSk)

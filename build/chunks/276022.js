@@ -26,7 +26,7 @@ function g(e) {
     guildId: b,
     context: y,
     onItemClick: O
-  } = e, v = null != (t = null == E ? void 0 : E.id) ? t : null == g ? void 0 : g.id, I = _.Z.getGuild(b), S = (0, a.e7)([p.Z], () => null != I ? p.Z.can(h.Plq.MANAGE_GUILD, I) : null), T = !0, A = !0, N = (0, c.LD)(b, A), C = (0, c.PL)(T, A), R = (0, a.e7)([f.Z], () => {
+  } = e, v = null != (t = null == E ? void 0 : E.id) ? t : null == g ? void 0 : g.id, I = _.Z.getGuild(b), T = (0, a.e7)([p.Z], () => null != I ? p.Z.can(h.Plq.MANAGE_GUILD, I) : null), S = !0, A = !0, N = (0, c.LD)(b, A), C = (0, c.PL)(S, A), R = (0, a.e7)([f.Z], () => {
     var e;
     return null != v && (null == (e = f.Z.getApps()) ? void 0 : e.find(e => e.application.id === v)) != null
   }), {
@@ -66,7 +66,7 @@ function g(e) {
     }, [E, O, g]);
   if (y === h.IlC.POPOUT) return null;
   let x = [];
-  return w && S && x.push((0, r.jsx)(o.sNh, {
+  return w && T && x.push((0, r.jsx)(o.sNh, {
     id: "manage-server-integration",
     label: m.intl.string(m.t.IuSJT0),
     action: D

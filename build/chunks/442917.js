@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(221888),
   v = n(522651),
   I = n(933557),
-  S = n(502053),
-  T = n(965048),
+  T = n(502053),
+  S = n(965048),
   A = n(569545),
   N = n(74299),
   C = n(863908),
@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(703656),
   L = n(937995),
   x = n(618158),
-  k = n(922745),
-  M = n(197016),
+  M = n(922745),
+  k = n(197016),
   j = n(800965),
   U = n(445062),
   G = n(7188),
@@ -244,7 +244,7 @@ class ep extends i.PureComponent {
       timeout: 1800,
       children: e => {
         var t;
-        return (0, r.jsx)(k.Z, e_(ed({
+        return (0, r.jsx)(M.Z, e_(ed({
           title: o,
           backgroundKey: null != (t = null == n ? void 0 : n.id) ? t : "",
           screenMessage: null == l ? this.getScreenMessage() : null,
@@ -320,7 +320,7 @@ class ep extends i.PureComponent {
       return (0, r.jsxs)(r.Fragment, {
         children: [a ? this.renderViewersIcon() : null, e ? this.renderSettingsIcon() : null, t ? this.renderPopoutIcon() : null, i ? this.renderStopStreamButton() : null, n ? this.renderDisconnectButton() : null]
       })
-    }), eu(this, "renderDisconnectButton", () => (0, r.jsx)(M.Z, {
+    }), eu(this, "renderDisconnectButton", () => (0, r.jsx)(k.Z, {
       className: el.rightTrayIcon,
       onClick: () => (0, v.v)(g.Z.VIDEO_PIP, v.d.DISCONNECT)
     })), eu(this, "renderStopStreamButton", () => {
@@ -372,7 +372,7 @@ function eh(e) {
   let {
     channel: t,
     width: n
-  } = e, i = (0, c.e7)([Y.Z], () => Y.Z.getSpeaker(t.id)), a = (0, c.e7)([b.Z], () => b.Z.getParticipant(t.id, i), [t.id, i]), o = (0, c.e7)([V.Z], () => l()(V.Z.getVideoDevices()).values().first()), s = (0, c.e7)([W.Z], () => null != a && a.type !== es.fO.ACTIVITY && a.type !== es.fO.HIDDEN_STREAM ? W.Z.getStreamId(a.user.id, t.getGuildId(), (0, y.Z)(a.type)) : null, [a, t]), d = null == o || o.disabled, f = !d, _ = (0, c.e7)([V.Z], () => !d && V.Z.isVideoEnabled(), [d]), p = (0, c.e7)([V.Z], () => (0, N.Z)(V.Z)), h = (0, c.e7)([F.default], () => F.default.getId()), m = (0, c.e7)([B.Z], () => B.Z.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, T.Z)((null == a ? void 0 : a.type) === es.fO.STREAM ? u.Yn.STREAM : u.Yn.DEFAULT, g), O = (0, S.Z)(g), v = (0, c.Wu)([B.Z], () => B.Z.getAllActiveStreams());
+  } = e, i = (0, c.e7)([Y.Z], () => Y.Z.getSpeaker(t.id)), a = (0, c.e7)([b.Z], () => b.Z.getParticipant(t.id, i), [t.id, i]), o = (0, c.e7)([V.Z], () => l()(V.Z.getVideoDevices()).values().first()), s = (0, c.e7)([W.Z], () => null != a && a.type !== es.fO.ACTIVITY && a.type !== es.fO.HIDDEN_STREAM ? W.Z.getStreamId(a.user.id, t.getGuildId(), (0, y.Z)(a.type)) : null, [a, t]), d = null == o || o.disabled, f = !d, _ = (0, c.e7)([V.Z], () => !d && V.Z.isVideoEnabled(), [d]), p = (0, c.e7)([V.Z], () => (0, N.Z)(V.Z)), h = (0, c.e7)([F.default], () => F.default.getId()), m = (0, c.e7)([B.Z], () => B.Z.getCurrentUserActiveStream()), g = null != a && "user" in a ? a.user.id : "", E = (0, S.Z)((null == a ? void 0 : a.type) === es.fO.STREAM ? u.Yn.STREAM : u.Yn.DEFAULT, g), O = (0, T.Z)(g), v = (0, c.Wu)([B.Z], () => B.Z.getAllActiveStreams());
   return (0, r.jsx)(ep, {
     channel: t,
     streamId: s,

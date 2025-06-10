@@ -8,7 +8,7 @@ n.d(t, {
   km: () => E,
   oJ: () => g,
   rV: () => b,
-  yt: () => S
+  yt: () => T
 });
 var r = n(544891),
   i = n(570140),
@@ -162,7 +162,7 @@ function I(e) {
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = (0, c.ZI)(e, t),
     {
       pathname: r

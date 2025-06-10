@@ -243,9 +243,9 @@ function b(e) {
     O = y.height,
     v = y.width,
     I = b[1],
-    S = r.useState(!0),
-    T = S[0],
-    A = S[1],
+    T = r.useState(!0),
+    S = T[0],
+    A = T[1],
     N = d.fitCanvasToArtboardHeight,
     C = d.shouldResizeCanvasToContainer,
     R = d.useDevicePixelRatio,
@@ -254,8 +254,8 @@ function b(e) {
     D = u(P),
     L = null != c ? c : {},
     x = L.maxX,
-    k = L.maxY,
-    M = r.useCallback(function() {
+    M = L.maxY,
+    k = r.useCallback(function() {
       var e, t, n, r, i = null != (t = null == (e = a.current) ? void 0 : e.clientWidth) ? t : 0,
         o = null != (r = null == (n = a.current) ? void 0 : n.clientHeight) ? r : 0;
       return N && c ? {
@@ -265,10 +265,10 @@ function b(e) {
         width: i,
         height: o
       }
-    }, [a, N, x, k]);
+    }, [a, N, x, M]);
   r.useEffect(function() {
     if (C && a.current && n) {
-      var e = M(),
+      var e = k(),
         t = e.width,
         r = e.height,
         o = !1;
@@ -292,9 +292,9 @@ function b(e) {
           height: r
         })
       }
-      l && (T || o) && l && l(), T && A(!1)
+      l && (S || o) && l && l(), S && A(!1)
     }
-  }, [i, a, w, D, M, T, A, O, v, p, h, l, C, N, R, n]), r.useEffect(function() {
+  }, [i, a, w, D, k, S, A, O, v, p, h, l, C, N, R, n]), r.useEffect(function() {
     I({
       width: 0,
       height: 0
@@ -322,11 +322,11 @@ var y, O = function() {
       this.observer.unobserve(e), this.elementsMap.delete(e)
     }, e
   }(),
-  S = function() {
+  T = function() {
     return y || (y = new I), y
   };
 
-function T(e) {
+function S(e) {
   var t = e.setContainerRef,
     n = e.setCanvasRef,
     r = e.className,
@@ -408,10 +408,10 @@ function A(e, t) {
     }, []),
     v = {
       observe: r.useCallback(function(e, t) {
-        S().registerCallback(e, t)
+        T().registerCallback(e, t)
       }, []),
       unobserve: r.useCallback(function(e) {
-        S().removeCallback(e)
+        T().removeCallback(e)
       }, [])
     },
     I = v.observe,
@@ -440,7 +440,7 @@ function A(e, t) {
     f && N && (f.isPlaying ? (f.stop(f.animationNames), f.play(N)) : f.isPaused && (f.stop(f.animationNames), f.pause(N)))
   }, [N, f]);
   var C = r.useCallback(function(e) {
-    return a.default.createElement(T, o({
+    return a.default.createElement(S, o({
       setContainerRef: O,
       setCanvasRef: y
     }, e))

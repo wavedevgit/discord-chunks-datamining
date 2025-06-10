@@ -26,8 +26,8 @@ var r, i = n(442837),
   O = n(503522),
   v = n(829907),
   I = n(398269),
-  S = n(987650),
-  T = n(757744),
+  T = n(987650),
+  S = n(757744),
   A = n(501787),
   N = n(981631);
 
@@ -80,8 +80,8 @@ class L {
   }
 }
 let x = new c.Z("OverlayStoreV3"),
-  k = new Set,
   M = new Set,
+  k = new Set,
   j = {},
   U = new L,
   G = null,
@@ -217,8 +217,8 @@ function er(e, t) {
 
 function ei(e, t) {
   try {
-    if (null != t && (W[e] = t), null == G || G.trackGame(e), et(e), k.has(e)) return;
-    k.add(e), o.Z.updateOverlayState(e, s.mM.WAITING_FOR_OVERLAY_OPEN)
+    if (null != t && (W[e] = t), null == G || G.trackGame(e), et(e), M.has(e)) return;
+    M.add(e), o.Z.updateOverlayState(e, s.mM.WAITING_FOR_OVERLAY_OPEN)
   } catch (t) {
     x.error("Error tracking game:", t), en(e, t)
   }
@@ -226,7 +226,7 @@ function ei(e, t) {
 
 function ea(e) {
   try {
-    null == G || G.untrackGame(e), k.delete(e), delete Y[e], delete W[e], x.verbose("Removing tracked game ".concat(e))
+    null == G || G.untrackGame(e), M.delete(e), delete Y[e], delete W[e], x.verbose("Removing tracked game ".concat(e))
   } catch (t) {
     x.error("Error removing tracked game:", t), en(e, t)
   }
@@ -234,8 +234,8 @@ function ea(e) {
 
 function eo() {
   try {
-    for (let e of k) null == G || G.untrackGame(e);
-    k.clear(), Y = {}, W = {}, x.verbose("Cleared all tracked games")
+    for (let e of M) null == G || G.untrackGame(e);
+    M.clear(), Y = {}, W = {}, x.verbose("Cleared all tracked games")
   } catch (e) {
     x.error("Error clearing tracked games:", e), en(g.UNSET_PID, e)
   }
@@ -248,8 +248,8 @@ function es() {
 function el() {
   if (!B) return void eo();
   let e = new Set(d.ZP.getRunningGames().filter(e => d.ZP.getOverlayEnabledForGame(e)).map(e => e.pid));
-  for (let t of new Set([...k].filter(t => !e.has(t)))) ea(t);
-  for (let e of k) ei(e)
+  for (let t of new Set([...M].filter(t => !e.has(t)))) ea(t);
+  for (let e of M) ei(e)
 }
 
 function ec(e) {
@@ -302,7 +302,7 @@ function ef() {
   } catch (e) {
     x.error("Error setting background throttling:", e), en(null != V ? V : g.UNSET_PID, e)
   }
-  eb(), M.clear(), O.Z.resetWindowState(!1), null != V && e_(V), V = null, (0, g.setPID)(null != V ? V : g.UNSET_PID)
+  eb(), k.clear(), O.Z.resetWindowState(!1), null != V && e_(V), V = null, (0, g.setPID)(null != V ? V : g.UNSET_PID)
 }
 
 function e_(e) {
@@ -311,7 +311,7 @@ function e_(e) {
 
 function ep(e) {
   try {
-    x.verbose("Refreshing OOP host window for pid ".concat(e)), eu(e), M.delete(null != V ? V : g.UNSET_PID), V = e, (0, g.setPID)(null != V ? V : g.UNSET_PID);
+    x.verbose("Refreshing OOP host window for pid ".concat(e)), eu(e), k.delete(null != V ? V : g.UNSET_PID), V = e, (0, g.setPID)(null != V ? V : g.UNSET_PID);
     let t = f.Z.getWindow(A.$J),
       n = () => new Promise(e => {
         let n = t => {
@@ -394,7 +394,7 @@ function eO(e) {
 let ev = (() => {
   let e = null;
   async function t() {
-    if (!S.iP) return void x.error("Attempted to load overlay on an unsupported platform.");
+    if (!T.iP) return void x.error("Attempted to load overlay on an unsupported platform.");
     x.info("Loading Out of Process Overlay Module");
     try {
       var e, t, n;
@@ -412,11 +412,11 @@ function eI(e) {
   null == G || G.setInteractionEnabled(e)
 }
 
-function eS(e) {
-  if (S.iP && (B = e, null == G && es())) return void ev()
+function eT(e) {
+  if (T.iP && (B = e, null == G && es())) return void ev()
 }
 
-function eT(e) {}
+function eS(e) {}
 
 function eA(e) {}
 
@@ -434,7 +434,7 @@ function eP(e) {
     pid: t,
     error: n
   } = e;
-  if (k.has(t)) {
+  if (M.has(t)) {
     let e = "string" == typeof n ? Error(n) : n;
     er(t, null != e ? e : Error("unknown error"))
   }
@@ -445,14 +445,14 @@ function ew(e) {
 }
 
 function eD() {
-  x.verbose("Maybe Enable Overlay"), es() ? (eS(E.v.oopEnabled), (0, g.setOutOfProcessSupport)(!0), ev()) : B && eS(!1)
+  x.verbose("Maybe Enable Overlay"), es() ? (eT(E.v.oopEnabled), (0, g.setOutOfProcessSupport)(!0), ev()) : B && eT(!1)
 }
 
 function eL(e) {
   let {
     oopEnabled: t
   } = e;
-  eS(t)
+  eT(t)
 }
 
 function ex(e) {
@@ -462,17 +462,17 @@ function ex(e) {
   Q.setClickZones(t)
 }
 
-function ek(e) {
+function eM(e) {
   Y[e.pid] = e.overlayState
 }
 
-function eM(e) {
+function ek(e) {
   let {
     locked: t,
     pid: n
   } = e, r = Y[n];
   if (t || r !== s.mM.OVERLAY_CRASHED_DISABLED) {
-    if (t ? M.delete(n) : M.add(n), null != H && (clearTimeout(H), H = null, t)) return;
+    if (t ? k.delete(n) : k.add(n), null != H && (clearTimeout(H), H = null, t)) return;
     t ? ec(t) : H = setTimeout(() => {
       ec(t), H = null
     }, 100)
@@ -517,19 +517,19 @@ class eZ extends(r = i.ZP.Store) {
     this.waitFor(d.ZP, _.default, u.Z), this.syncWith([u.Z], eB)
   }
   isInputLocked(e) {
-    return !M.has(e)
+    return !k.has(e)
   }
   isSupported() {
-    return S.iP
+    return T.iP
   }
   isOverlayV3Enabled() {
     return es()
   }
   isOverlayV3EnabledForPID(e) {
-    return k.has(e)
+    return M.has(e)
   }
   getWidgetByType(e) {
-    let t = p.Z.getLayout(T.$S);
+    let t = p.Z.getLayout(S.$S);
     if (null != t) {
       let r = t.widgets.find(t => {
         let n = p.Z.getWidget(t);
@@ -556,14 +556,14 @@ class eZ extends(r = i.ZP.Store) {
     return F
   }
   isFocused(e) {
-    return null != F && e !== g.UNSET_PID && (!!k.has(e) || e === g.DEV_PID) && F === e
+    return null != F && e !== g.UNSET_PID && (!!M.has(e) || e === g.DEV_PID) && F === e
   }
   getFocusedRunningGame() {
     var e;
     return null == F ? null : null != (e = d.ZP.getRunningGames().find(e => e.pid === F)) ? e : null
   }
   isReady(e) {
-    return k.has(e)
+    return M.has(e)
   }
   isGPUBoosted() {
     return U.isGPUBoosted
@@ -579,17 +579,17 @@ let eH = new eZ(a.Z, {
     LOGOUT: eF,
     EXPERIMENT_OVERRIDE_BUCKET: eD,
     OVERLAY_SET_ENABLED: eL,
-    GAME_LAUNCH_SUCCESS: eT,
+    GAME_LAUNCH_SUCCESS: eS,
     RUNNING_GAMES_CHANGE: eA,
     RUNNING_GAME_TOGGLE_OVERLAY: eN,
     OVERLAY_FORCE_RENDER_MODE: eV,
     OVERLAY_SET_CLICK_ZONES: ex,
-    OVERLAY_SET_INPUT_LOCKED: eM,
+    OVERLAY_SET_INPUT_LOCKED: ek,
     OVERLAY_ACTIVATE_REGION: ej,
     OVERLAY_DEACTIVATE_ALL_REGIONS: eU,
     OVERLAY_RENDER_DEBUG_MODE: eG,
     OVERLAY_UPDATE_OVERLAY_METHOD: eR,
-    OVERLAY_UPDATE_OVERLAY_STATE: ek,
+    OVERLAY_UPDATE_OVERLAY_STATE: eM,
     OVERLAY_SET_GPU_BOOST_REQUESTED: ew,
     OVERLAY_CRASHED: eP,
     OVERLAY_FOCUSED: ey

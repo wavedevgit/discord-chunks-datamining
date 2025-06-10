@@ -7,9 +7,9 @@ n.d(t, {
   Ov: () => G,
   R2: () => U,
   Sm: () => N,
-  fK: () => M,
+  fK: () => k,
   fi: () => B,
-  jr: () => k,
+  jr: () => M,
   mK: () => C,
   oK: () => P,
   oc: () => D,
@@ -47,7 +47,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -79,7 +79,7 @@ function A(e, t) {
 }
 n(597688), n(328347), n(874703), n(52030);
 let N = e => {
-    s.Z.dispatch(S({
+    s.Z.dispatch(T({
       type: "COLLECTIBLES_SHOP_OPEN"
     }, e))
   },
@@ -88,7 +88,7 @@ let N = e => {
       openInLayer: t = !0,
       tab: n
     } = e;
-    N(T(e, ["openInLayer", "tab"])), t ? (0, l.jN)(v.S9g.COLLECTIBLES_SHOP) : (0, d.uL)(n ? v.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n) : v.Z5c.COLLECTIBLES_SHOP)
+    N(S(e, ["openInLayer", "tab"])), t ? (0, l.jN)(v.S9g.COLLECTIBLES_SHOP) : (0, d.uL)(n ? v.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n) : v.Z5c.COLLECTIBLES_SHOP)
   },
   R = () => {
     s.Z.dispatch({
@@ -170,7 +170,7 @@ let N = e => {
         error: e
       }), e
     }
-  }, k = async (e, t) => {
+  }, M = async (e, t) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_PRODUCT_FETCH",
       skuId: e
@@ -196,7 +196,7 @@ let N = e => {
         error: t
       })
     }
-  }, M = async e => {
+  }, k = async e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_CLAIM",
       skuId: e

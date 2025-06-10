@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => S
 });
 var r = n(255367),
   i = n(73800),
@@ -38,7 +38,7 @@ function I(e, t) {
   }, [n, r])
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t,
     message: n,
@@ -83,7 +83,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     reply: t,
     chatInputType: n
@@ -96,9 +96,9 @@ function T(e) {
     guildId: h,
     nick: m,
     colorString: v,
-    colorStrings: T,
+    colorStrings: S,
     colorRoleName: A
-  } = (0, u.ZP)(a), N = (0, d.X)(h, T), C = I(i, a), R = (0, p.NE)(i, a), P = n.showThreadPromptOnReply && C >= O && R, w = () => (0, _.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+  } = (0, u.ZP)(a), N = (0, d.X)(h, S), C = I(i, a), R = (0, p.NE)(i, a), P = n.showThreadPromptOnReply && C >= O && R, w = () => (0, _.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function D(e) {
     e.stopPropagation(), (0, f.qx)(i.id, !s)
@@ -178,7 +178,7 @@ function T(e) {
             onClick: L
           })]
         })]
-      }), P && (0, r.jsx)(S, {
+      }), P && (0, r.jsx)(T, {
         channel: i,
         message: a,
         replyChainLength: C

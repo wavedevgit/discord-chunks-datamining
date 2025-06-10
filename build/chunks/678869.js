@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(206295),
   v = n(551228),
   I = n(591853),
-  S = n(371991),
-  T = n(410441),
+  T = n(371991),
+  S = n(410441),
   A = n(981631),
   N = n(616922),
   C = n(388032),
@@ -55,7 +55,7 @@ function L(e) {
     activity: t
   } = e, n = t.timestamps, {
     now: a
-  } = (0, S.tS)(), {
+  } = (0, T.tS)(), {
     durationTimestamp: o,
     seekBarStyles: s
   } = i.useMemo(() => {
@@ -79,7 +79,7 @@ function L(e) {
   }, [t, a]);
   return null == s ? null : (0, r.jsxs)("div", {
     className: R.listeningTimeline,
-    children: [(0, r.jsx)(S.x3, {
+    children: [(0, r.jsx)(T.x3, {
       entry: n
     }), (0, r.jsx)("div", {
       className: R.seekBarContainer,
@@ -99,11 +99,11 @@ function L(e) {
 
 function x(e) {
   var t;
-  let n, m, S, {
+  let n, m, T, {
       channel: R,
       entry: x,
-      closePopout: k,
-      onReaction: M,
+      closePopout: M,
+      onReaction: k,
       onVoiceChannelPreview: j
     } = e,
     {
@@ -152,7 +152,7 @@ function x(e) {
   if (B.media.provider === a.p.SPOTIFY) {
     m = () => {
       (0, c.aG)(G)
-    }, S = () => {
+    }, T = () => {
       (0, c.Z5)(G, Z.id)
     }, n = () => {
       var e;
@@ -168,7 +168,7 @@ function x(e) {
         onOpenSpotifyArtist: e
       }), (null == K ? void 0 : K.syncDisabled) === !1) {
       let e = () => {
-        (0, _.Z)(K, N.kG.USER_ACTIVITY_SYNC), k()
+        (0, _.Z)(K, N.kG.USER_ACTIVITY_SYNC), M()
       };
       X.push((0, r.jsx)(I.Ll, {
         onClick: e,
@@ -178,10 +178,10 @@ function x(e) {
     }
   }
   let Q = (0, r.jsx)(I.wG, {
-    onClickThumbnail: S,
+    onClickThumbnail: T,
     channel: R,
     entry: x,
-    headerIcons: B.media.provider === a.p.SPOTIFY ? (0, r.jsx)(T.Z, {
+    headerIcons: B.media.provider === a.p.SPOTIFY ? (0, r.jsx)(S.Z, {
       onClick: n,
       "aria-label": C.intl.string(C.t.rRffNz),
       Icon: h.Z
@@ -198,7 +198,7 @@ function x(e) {
   return (0, r.jsxs)(I.yR, {
     children: [Q, (0, r.jsx)(I.St, {
       children: (0, r.jsx)(I.WT, {
-        onReaction: M,
+        onReaction: k,
         onVoiceChannelPreview: j,
         user: Z,
         channel: R,

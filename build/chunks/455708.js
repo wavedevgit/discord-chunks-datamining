@@ -45,7 +45,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,8 +56,8 @@ function S(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function S(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -248,7 +248,7 @@ let C = i.forwardRef((e, t) => {
       var e;
       null == (e = g.current) || e.focus()
     }
-  }, [d, g]), (0, r.jsx)(N, T(I({}, e), {
+  }, [d, g]), (0, r.jsx)(N, S(I({}, e), {
     forwardedRef: t,
     query: f,
     resultQuery: a,

@@ -93,16 +93,16 @@ function g(e) {
   let {
     isJoining: v,
     handleJoinRequest: I,
-    buttonCTA: S,
-    tooltip: T,
+    buttonCTA: T,
+    tooltip: S,
     isEnabled: A,
     isEmbedded: N
   } = b;
   return N ? (0, r.jsx)(i.ua7, {
-    text: T,
+    text: S,
     children: e => (0, r.jsx)(c.tG, m(p({}, e), {
       icon: i.YVR,
-      text: S,
+      text: T,
       disabled: !A,
       submitting: v,
       size: g === d.lY.MODAL_V2 ? i.PhG.TINY : void 0,
@@ -115,10 +115,10 @@ function g(e) {
       }
     }))
   }) : (0, r.jsx)(i.ua7, {
-    text: T,
+    text: S,
     children: e => (0, r.jsx)(c.tG, m(p({}, e), {
       icon: i.iWm,
-      text: S,
+      text: T,
       disabled: !A,
       submitting: v,
       size: g === d.lY.MODAL_V2 ? i.PhG.TINY : void 0,

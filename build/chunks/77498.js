@@ -31,7 +31,7 @@ let h = "GameStoreReportedGames",
   v = "",
   I = null;
 
-function S(e) {
+function T(e) {
   var t, n, r, i, a, o, s;
   return {
     id: e.id,
@@ -47,7 +47,7 @@ function S(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   return {
     id: e.id,
     name: e.name,
@@ -63,7 +63,7 @@ function T(e) {
 }
 
 function A(e) {
-  let t = e instanceof d.ZP ? T(e) : e;
+  let t = e instanceof d.ZP ? S(e) : e;
   for (let n of (E.set(e.id, t), b[e.name.toLowerCase()] = t, e.aliases)) b[n.toLowerCase()] = t;
   if ((0, _.isDesktop)())
     for (let n of e.executables) y[n.name] = t
@@ -89,7 +89,7 @@ function P(e) {
     games: t,
     etag: n
   } = e;
-  for (let e of (null != n && v !== n && (v = n), t)) A(S(e));
+  for (let e of (null != n && v !== n && (v = n), t)) A(T(e));
   r = void 0, I = Date.now()
 }
 class w extends(a = o.ZP.PersistedStore) {
@@ -168,7 +168,7 @@ p(w, "displayName", "GameStore"), p(w, "persistKey", "GameStore"), p(w, "migrati
     detectableGames: []
   } : {
     detectableGamesEtag: e.detectableGamesEtag,
-    detectableGames: null != (n = null == (t = e.detectableGames) ? void 0 : t.map(e => T(new d.ZP(e)))) ? n : []
+    detectableGames: null != (n = null == (t = e.detectableGames) ? void 0 : t.map(e => S(new d.ZP(e)))) ? n : []
   }
 }, e => (0, _.isDesktop)() ? e : {
   detectableGamesEtag: "",

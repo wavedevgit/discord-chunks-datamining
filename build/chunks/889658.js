@@ -99,7 +99,7 @@ let a = new(n(147567)),
     for (; n && r.length;) n = r.every(e => i.intersects(e, t)), i = r.pop();
     return n
   },
-  y = (e, t) => (l("comp", e, t), l("caret", e = S(e, t)), l("tildes", e = v(e, t)), l("xrange", e = A(e, t)), l("stars", e = C(e, t)), e),
+  y = (e, t) => (l("comp", e, t), l("caret", e = T(e, t)), l("tildes", e = v(e, t)), l("xrange", e = A(e, t)), l("stars", e = C(e, t)), e),
   O = e => !e || "x" === e.toLowerCase() || "*" === e,
   v = (e, t) => e.trim().split(/\s+/).map(e => I(e, t)).join(" "),
   I = (e, t) => {
@@ -109,8 +109,8 @@ let a = new(n(147567)),
       return l("tilde", e, t, n, r, i, a), O(n) ? o = "" : O(r) ? o = `>=${n}.0.0 <${+n+1}.0.0-0` : O(i) ? o = `>=${n}.${r}.0 <${n}.${+r+1}.0-0` : a ? (l("replaceTilde pr", a), o = `>=${n}.${r}.${i}-${a} <${n}.${+r+1}.0-0`) : o = `>=${n}.${r}.${i} <${n}.${+r+1}.0-0`, l("tilde return", o), o
     })
   },
-  S = (e, t) => e.trim().split(/\s+/).map(e => T(e, t)).join(" "),
-  T = (e, t) => {
+  T = (e, t) => e.trim().split(/\s+/).map(e => S(e, t)).join(" "),
+  S = (e, t) => {
     l("caret", e, t);
     let n = t.loose ? u[d.CARETLOOSE] : u[d.CARET],
       r = t.includePrerelease ? "-0" : "";

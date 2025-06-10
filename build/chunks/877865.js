@@ -63,7 +63,7 @@ function I(e, t) {
   return e.length < 1 ? 0 : t / (e.length - 1) * 80 + 10
 }
 
-function S(e) {
+function T(e) {
   let {
     colors: t,
     selectedIndex: n,
@@ -103,7 +103,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   if (!(0, c.FX)(e)) return e;
   let t = o()(e);
   return t.set("hsl.h", (t.get("hsl.h") + 15) % 360).hex()
@@ -148,7 +148,7 @@ function A(e) {
     }, D = () => {
       if (o.length === v) return;
       let e = o.length > 0 ? o[o.length - 1] : A,
-        t = o.length > 0 ? T(e) : e,
+        t = o.length > 0 ? S(e) : e,
         n = [...o, t];
       s(n), I(n.length - 1)
     }, L = e => {
@@ -158,7 +158,7 @@ function A(e) {
       }
     }, x = e => {
       I(e)
-    }, k = o.length > 1;
+    }, M = o.length > 1;
   return (0, r.jsxs)("div", {
     className: l()(m.container, a),
     children: [(0, r.jsxs)("div", {
@@ -181,7 +181,7 @@ function A(e) {
           })
         }))
       })]
-    }), k && (0, r.jsx)(S, {
+    }), M && (0, r.jsx)(T, {
       colors: o,
       selectedIndex: b,
       onColorSelect: x
@@ -216,7 +216,7 @@ function A(e) {
               colorClass: m.iconWithHover
             })
           }))
-        }), k && (0, r.jsx)(f.ua7, {
+        }), M && (0, r.jsx)(f.ua7, {
           text: h.intl.string(p.default["rTik5+"]),
           children: e => (0, r.jsx)(f.zxk, y(E({}, e), {
             size: f.zxk.Sizes.ICON,

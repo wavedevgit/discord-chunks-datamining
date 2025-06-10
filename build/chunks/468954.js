@@ -66,8 +66,8 @@ function p(e) {
     renderSection: O,
     renderSectionHeader: v,
     renderSectionFooter: I,
-    renderInspector: S,
-    renderEmptySearchState: T,
+    renderInspector: T,
+    renderEmptySearchState: S,
     renderCategoryList: A,
     renderHeaderAccessories: N,
     rowHeight: C,
@@ -77,8 +77,8 @@ function p(e) {
     listPaddingRight: D,
     itemNodeMargin: L,
     listPadding: x,
-    gridNavigatorId: k,
-    gridNotice: M,
+    gridNavigatorId: M,
+    gridNotice: k,
     renderHeader: j,
     renderUpsell: U,
     setShowUpsell: G
@@ -111,7 +111,7 @@ function p(e) {
     expressionsGrid: K,
     onSelectItem: p,
     store: f,
-    gridNavigatorId: k
+    gridNavigatorId: M
   }), er = i.useCallback((e, t) => y(K[e], $(e), {
     isUsingKeyboardNavigation: en.current,
     gutterWidth: Q,
@@ -120,8 +120,8 @@ function p(e) {
     sectionIndex: t.sectionIndex
   }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, Q, en, y, f, z]), ei = i.useCallback(e => null == O ? void 0 : O(t[e]), [t, O]), ea = i.useCallback(e => null == v ? void 0 : v(t[e], e), [t, v]), eo = i.useCallback(e => null == I ? void 0 : I(t[e], e), [t, I]), es = i.useCallback(() => {
     var e;
-    return null == S ? void 0 : S(null == K || null == (e = K[Y.rowIndex]) ? void 0 : e[Y.columnIndex])
-  }, [K, Y.columnIndex, Y.rowIndex, S]);
+    return null == T ? void 0 : T(null == K || null == (e = K[Y.rowIndex]) ? void 0 : e[Y.columnIndex])
+  }, [K, Y.columnIndex, Y.rowIndex, T]);
   i.useEffect(() => {
     h(H)
   }, [h, H]), i.useEffect(() => {
@@ -138,7 +138,7 @@ function p(e) {
       hasSendableExpressions: !0,
       onKeyDown: et,
       expressionsListRef: F,
-      gridNavigatorId: k,
+      gridNavigatorId: M,
       defaultSearchPlaceholder: g,
       emptySearchPlaceholder: E
     }), null == N ? void 0 : N()]
@@ -148,13 +148,13 @@ function p(e) {
       className: c.header,
       children: [" ", el, " "]
     }), Z && null != b ? b(c.emptyState) : (0, r.jsxs)(r.Fragment, {
-      children: [A(F), null != M && (0, r.jsx)("div", {
+      children: [A(F), null != k && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
-        children: M
+        children: k
       }), (0, r.jsx)("div", _(d({
         ref: B,
         className: c.listWrapper,
-        id: k
+        id: M
       }, ee), {
         children: null != W ? (0, r.jsx)(s.Z, {
           categories: t,
@@ -166,8 +166,8 @@ function p(e) {
           renderSection: null != O ? ei : void 0,
           renderSectionHeader: null != v ? ea : void 0,
           renderSectionFooter: null != I ? eo : void 0,
-          renderInspector: null != S ? es : void 0,
-          renderEmptySearchState: T,
+          renderInspector: null != T ? es : void 0,
+          renderEmptySearchState: S,
           rowCount: z,
           rowCountBySection: q,
           rowHeight: C,

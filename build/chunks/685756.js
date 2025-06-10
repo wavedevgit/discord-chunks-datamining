@@ -61,8 +61,8 @@ let y = 20 * u.Z.Millis.SECOND,
   O = 3,
   v = +u.Z.Millis.MINUTE,
   I = .25,
-  S = .1,
-  T = 5 * u.Z.Millis.SECOND,
+  T = .1,
+  S = 5 * u.Z.Millis.SECOND,
   A = 2,
   N = 8;
 
@@ -271,9 +271,9 @@ class L extends o.Z {
   handleHello(e) {
     var t, n, r;
     if (this.serverVersion = null != (t = e.v) ? t : g, this.serverVersion <= 3) {
-      let t = d.isPlatformEmbedded ? I : S;
+      let t = d.isPlatformEmbedded ? I : T;
       this.heartbeatInterval = e.heartbeat_interval * t
-    } else this.heartbeatInterval = e.heartbeat_interval * this.heartbeatIntervalModifier, d.isPlatformEmbedded || (this.heartbeatInterval = Math.min(T, null != (n = this.heartbeatInterval) ? n : NaN));
+    } else this.heartbeatInterval = e.heartbeat_interval * this.heartbeatIntervalModifier, d.isPlatformEmbedded || (this.heartbeatInterval = Math.min(S, null != (n = this.heartbeatInterval) ? n : NaN));
     let i = (0, s.zO)() - this.connectionStartTime;
     this.logger.info("[HELLO] heartbeat interval: ".concat(null != (r = this.heartbeatInterval) ? r : "??", ", version: ").concat(this.serverVersion, ", took ").concat(i, " ms")), this.startHeartbeater()
   }

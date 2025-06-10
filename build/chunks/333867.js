@@ -84,8 +84,8 @@ function v(e) {
       onClose: E,
       onComplete: v,
       analyticsLocations: I,
-      analyticsObject: S,
-      giftRecipient: T,
+      analyticsObject: T,
+      giftRecipient: S,
       variantsReturnStyle: A
     } = e,
     N = !1,
@@ -106,7 +106,7 @@ function v(e) {
       giftMessage: _,
       giftingOrigin: h,
       analyticsLocations: I,
-      giftRecipient: T,
+      giftRecipient: S,
       onClose: e => {
         t(), null == E || E(e)
       },
@@ -122,7 +122,7 @@ function v(e) {
       N || c.default.track(f.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: C,
         payment_type: f.Zuq[f.GZQ.ONE_TIME],
-        location: S,
+        location: T,
         is_gift: u,
         sku_id: n,
         location_stack: I

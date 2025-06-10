@@ -5,10 +5,10 @@ n.d(t, {
   C7: () => A,
   Ek: () => I,
   Gu: () => U,
-  JQ: () => T,
+  JQ: () => S,
   NE: () => E,
   RG: () => D,
-  Xb: () => k,
+  Xb: () => M,
   Xu: () => y,
   Y: () => j,
   cD: () => O,
@@ -77,14 +77,14 @@ function v(e, t, n) {
 
 function I(e) {
   let t = (0, o.e7)([f.Z], () => f.Z.getChannel(p.default.castMessageIdAsChannelId(e.id)), [e]);
-  return S((0, o.e7)([_.Z], () => _.Z.can(m.Plq.VIEW_CHANNEL, t), [t]), e, t)
+  return T((0, o.e7)([_.Z], () => _.Z.can(m.Plq.VIEW_CHANNEL, t), [t]), e, t)
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   return !!t.hasFlag(m.iLy.HAS_THREAD) && null != n && !!e
 }
 
-function T(e) {
+function S(e) {
   return (0, o.cj)([h.Z, _.Z], () => {
     let t = h.Z.getActiveJoinedThreadsForParent(e.guild_id, e.id),
       n = h.Z.getActiveJoinedRelevantThreadsForParent(e.guild_id, e.id),
@@ -117,13 +117,13 @@ function C(e, t, n) {
 
 function R(e) {
   let t = (0, o.e7)([_.Z], () => N(e, _.Z)),
-    n = k(e);
+    n = M(e);
   return C(e, t, n)
 }
 
 function P(e) {
   let t = N(e, _.Z),
-    n = M(e);
+    n = k(e);
   return C(e, t, n)
 }
 
@@ -147,11 +147,11 @@ function x(e, t) {
   return null != e && t.can(m.Plq.MANAGE_THREADS, e)
 }
 
-function k(e) {
+function M(e) {
   return (0, o.e7)([_.Z], () => x(e, _.Z))
 }
 
-function M(e) {
+function k(e) {
   return x(e, _.Z)
 }
 
@@ -169,6 +169,6 @@ function j(e) {
 }
 
 function U(e) {
-  let t = k(e);
+  let t = M(e);
   return e.isLockedThread() && !t
 }

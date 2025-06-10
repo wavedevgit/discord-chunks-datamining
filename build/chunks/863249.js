@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => T
+  ZP: () => S
 }), n(953529);
 var r = n(544891),
   i = n(570140),
@@ -60,13 +60,13 @@ function v(e, t) {
 }
 let I = -1;
 
-function S(e) {
+function T(e) {
   i.Z.dispatch({
     type: "USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW",
     guildId: e
   })
 }
-let T = {
+let S = {
   fetchVerificationForm: async (e, t) => {
     let n = null != t ? t : _.Z.getInviteKeyForGuildId(e),
       a = p.default.getCurrentUser(),
@@ -199,7 +199,7 @@ let T = {
         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
         guildId: e,
         request: a
-      }), (0, m.YG)(t.formFields) && n !== I && setTimeout(() => S(e), n), a
+      }), (0, m.YG)(t.formFields) && n !== I && setTimeout(() => T(e), n), a
     } catch (t) {
       let {
         status: e

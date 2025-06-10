@@ -67,8 +67,8 @@ function O(e) {
     isFocused: O,
     menuItemProps: v,
     action: I,
-    className: S,
-    focusedClassName: T
+    className: T,
+    focusedClassName: S
   } = e, {
     onInteraction: A
   } = i.useContext(c.p), N = i.useRef(null), C = (0, f.Q3)("MenuCheckboxItem");
@@ -82,10 +82,10 @@ function O(e) {
   }, [I, A]);
   return (0, r.jsxs)(s.P, y(E({
     innerRef: N,
-    className: o()(m.item, m.checkboxContainer, m.labelContainer, h._[t], S, {
+    className: o()(m.item, m.checkboxContainer, m.labelContainer, h._[t], T, {
       [m.disabled]: b,
       [m.focused]: O,
-      [null != T ? T : ""]: O
+      [null != S ? S : ""]: O
     }),
     onClick: b ? void 0 : R
   }, v), {

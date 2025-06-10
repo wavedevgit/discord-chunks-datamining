@@ -27,12 +27,12 @@ let f = e => {
   } = (0, a.j)(E, p), O = (0, i.e7)([s.ZP], () => null != f && null != n ? s.ZP.getMember(f, n.id) : null), [v, I] = (0, i.Wu)([l.default], () => {
     var e;
     return [null == (e = l.default.getCurrentUser()) ? void 0 : e.id, l.default.getUser(null == n ? void 0 : n.id)]
-  }), S = null == O ? null == I ? void 0 : I.avatarDecoration : null === O.avatarDecoration ? null : null != (t = O.avatarDecoration) ? t : null == I ? void 0 : I.avatarDecoration, {
-    pendingAvatarDecoration: T
+  }), T = null == O ? null == I ? void 0 : I.avatarDecoration : null === O.avatarDecoration ? null : null != (t = O.avatarDecoration) ? t : null == I ? void 0 : I.avatarDecoration, {
+    pendingAvatarDecoration: S
   } = (0, o.Z)({
     isTryItOut: m,
     guildId: f
-  }), A = h && void 0 !== T && void 0 !== v && v === (null == n ? void 0 : n.id), N = null != f && null === T, C = (0, u.Z)(A ? N ? null == I ? void 0 : I.avatarDecoration : null != T ? T : S : null != S ? S : null == I ? void 0 : I.avatarDecoration), R = r.useMemo(() => (0, c.NZ)({
+  }), A = h && void 0 !== S && void 0 !== v && v === (null == n ? void 0 : n.id), N = null != f && null === S, C = (0, u.Z)(A ? N ? null == I ? void 0 : I.avatarDecoration : null != S ? S : T : null != T ? T : null == I ? void 0 : I.avatarDecoration), R = r.useMemo(() => (0, c.NZ)({
     avatarDecoration: void 0 !== g ? g : C,
     canAnimate: y,
     size: _

@@ -24,8 +24,8 @@ let m = 40,
   O = 4,
   v = 6,
   I = 24,
-  S = 2,
-  T = 4,
+  T = 2,
+  S = 4,
   A = [0, 0, 0, 0, 0],
   N = 200;
 
@@ -85,11 +85,11 @@ function x(e) {
     segmentValue: i,
     segmentIndex: a,
     constrainMin: o
-  } = e, s = o ? (I - S) * i + S : I * i;
+  } = e, s = o ? (I - T) * i + T : I * i;
   0 !== s && D(t, a * (2 * y + O) * n, (r / 2 - s / 2) * n, s * n, y * n)
 }
 
-function k(e, t) {
+function M(e, t) {
   let n = i.useMemo(() => C(e), [e]),
     r = i.useMemo(() => w(t), [t]);
   return i.useMemo(() => {
@@ -98,7 +98,7 @@ function k(e, t) {
   }, [n, r])
 }
 
-function M(e, t, n) {
+function k(e, t, n) {
   let [r, a] = i.useState(e), [o, s] = i.useState(e), l = i.useRef(o);
   return i.useLayoutEffect(() => {
     l.current = o
@@ -114,9 +114,9 @@ function j(e, t) {
     a = (0, l.dQu)(s.Z.unsafe_rawColors.BRAND_430).hex(),
     o = (0, l.dQu)(s.Z.unsafe_rawColors.WHITE_500).hex(),
     c = t ? a : n,
-    [u, d] = M(c, t, e),
-    [f, _] = M(t ? o : e ? i : r, t, e),
-    [p, h] = M(e ? c : r, t, e);
+    [u, d] = k(c, t, e),
+    [f, _] = k(t ? o : e ? i : r, t, e),
+    [p, h] = k(e ? c : r, t, e);
   return {
     lastBackgroundFillColor: u,
     backgroundFillColor: d,
@@ -147,11 +147,11 @@ function G(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.ZP)(), b = i.useMemo(() => P(s), [s]), y = i.useRef(void 0), O = k(n, E), v = i.useRef(l), S = i.useRef(d), A = i.useRef(null), C = window.devicePixelRatio, {
+  } = (0, c.ZP)(), b = i.useMemo(() => P(s), [s]), y = i.useRef(void 0), O = M(n, E), v = i.useRef(l), T = i.useRef(d), A = i.useRef(null), C = window.devicePixelRatio, {
     lastBackgroundFillColor: R,
     backgroundFillColor: w,
     lastActiveFillColor: D,
-    activeFillColor: M,
+    activeFillColor: k,
     lastInactiveFillColor: G,
     inactiveFillColor: B
   } = j(l, d), F = {
@@ -199,7 +199,7 @@ function G(e) {
         a = y.current;
       if (null == r || null == i || null == a) return;
       let o = !1;
-      (v.current !== l || S.current !== d) && (v.current = l, S.current = d, A.current = n), null != A.current && n > A.current + N && (A.current = null);
+      (v.current !== l || T.current !== d) && (v.current = l, T.current = d, A.current = n), null != A.current && n > A.current + N && (A.current = null);
       let s = r.height / C;
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
       let [c, u] = U(R, w, n, A.current);
@@ -215,7 +215,7 @@ function G(e) {
       i.fill();
       let [f, _] = U(G, B, n, A.current);
       o = o || _;
-      let [p, h] = U(D, M, n, A.current);
+      let [p, h] = U(D, k, n, A.current);
       o = o || h;
       for (let e = 0; e < a.length; e++) {
         let t = a[e],
@@ -234,7 +234,7 @@ function G(e) {
     return e = requestAnimationFrame(t), () => {
       null != e && cancelAnimationFrame(e)
     }
-  }, [g, C, O, E, a, s, l, d, R, w, D, M, G, B]);
+  }, [g, C, O, E, a, s, l, d, R, w, D, k, G, B]);
   let [, Z] = (0, u.Z)({
     ref: g,
     onDrag: f,
@@ -248,7 +248,7 @@ function G(e) {
       width: b
     },
     ref: g,
-    height: (I + 2 * T) * window.devicePixelRatio,
+    height: (I + 2 * S) * window.devicePixelRatio,
     width: (null != E ? E : 0) * window.devicePixelRatio
   })
 }

@@ -44,18 +44,18 @@ function g() {
         return n.id === e.promotion.id
       }) ? t : [...t, e])
     }, []),
-    S = l.ZP.isPremiumExactly(t, h.p9.TIER_2),
-    T = d.g.useExperiment({
+    T = l.ZP.isPremiumExactly(t, h.p9.TIER_2),
+    S = d.g.useExperiment({
       location: "useOutboundPromotions"
     }, {
       autoTrackExposure: !1,
-      disable: S
-    }).enabled || S;
+      disable: T
+    }).enabled || T;
   r.useEffect(() => {
     a.Z.wait(() => {
-      T && (null == e || E) && _.ZP.fetchActiveOutboundPromotions()
+      S && (null == e || E) && _.ZP.fetchActiveOutboundPromotions()
     })
-  }, [e, T, E]), r.useEffect(() => {
+  }, [e, S, E]), r.useEffect(() => {
     a.Z.wait(() => {
       (0, f.t8)().then(e => {
         v(e), y(!0)
@@ -78,7 +78,7 @@ function g() {
       return t
     }));
   return {
-    promotionsLoaded: b && (!T || null != e || E),
+    promotionsLoaded: b && (!S || null != e || E),
     activeOutboundPromotions: N,
     claimedEndedOutboundPromotions: O.filter(e => {
       let {

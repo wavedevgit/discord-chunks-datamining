@@ -110,11 +110,11 @@ function I(e) {
   h.delete(n)
 }
 
-function S() {
+function T() {
   h.clear()
 }
 
-function T(e) {
+function S(e) {
   let {
     guildId: t
   } = e;
@@ -136,10 +136,10 @@ _(A, "displayName", "GuildVerificationStore");
 let N = new A(a.Z, {
   CONNECTION_OPEN: b,
   CONNECTION_CLOSED: y,
-  CURRENT_USER_UPDATE: S,
+  CURRENT_USER_UPDATE: T,
   GUILD_CREATE: O,
   GUILD_UPDATE: O,
   GUILD_DELETE: v,
   GUILD_MEMBER_UPDATE: I,
-  GUILD_VERIFICATION_CHECK: T
+  GUILD_VERIFICATION_CHECK: S
 })

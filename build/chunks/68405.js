@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   PF: () => V,
-  R7: () => M,
+  R7: () => k,
   Tg: () => U,
   UU: () => G,
   gK: () => j,
@@ -11,7 +11,7 @@ n.d(t, {
   mO: () => x,
   t1: () => R,
   uL: () => F,
-  v2: () => k,
+  v2: () => M,
   yC: () => L
 }), n(704826), n(35282);
 var r = n(392711),
@@ -66,13 +66,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -108,13 +108,13 @@ function P(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
   var {
     startTime: r
-  } = n, i = T(n, ["startTime"]);
+  } = n, i = S(n, ["startTime"]);
   let a = {
       offset: 0,
       limit: null,
       totalResults: e.length
     },
-    o = (0, h._)(_.Z.getAnalyticsID(), t, S(v({}, a, i), {
+    o = (0, h._)(_.Z.getAnalyticsID(), t, T(v({}, a, i), {
       results: e.length
     })),
     s = null == r ? {} : {
@@ -156,7 +156,7 @@ let D = i().debounce(w, N);
 function L(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 ? arguments[3] : void 0;
-  "" === e ? k() : (l.Z.dispatch({
+  "" === e ? M() : (l.Z.dispatch({
     type: "GIF_PICKER_QUERY",
     query: e
   }), n ? w(e, t, r) : D(e, t, r))
@@ -183,14 +183,14 @@ function x(e) {
   })
 }
 
-function k() {
+function M() {
   l.Z.dispatch({
     type: "GIF_PICKER_QUERY",
     query: ""
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     type: t,
     index: n,
@@ -206,7 +206,7 @@ function M(e) {
     results: a,
     totalResults: s
   });
-  c.ZP.trackWithMetadata(E.rMx.SEARCH_RESULT_SELECTED, S(v({}, d), {
+  c.ZP.trackWithMetadata(E.rMx.SEARCH_RESULT_SELECTED, T(v({}, d), {
     index_num: n,
     source_object: "GIF Picker",
     query: l
@@ -298,7 +298,7 @@ function F(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     var n;
     let r = null != (n = i().max(Object.values(t.gifs).map(e => e.order))) ? n : 0;
-    if (t.gifs[B(e.url)] = S(v({}, e), {
+    if (t.gifs[B(e.url)] = T(v({}, e), {
         order: r + 1
       }), s.wK.toBinary(t).length > b.vY) return g.Z.show({
       title: y.intl.string(y.t["+XYXtb"]),

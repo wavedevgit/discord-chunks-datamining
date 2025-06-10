@@ -95,8 +95,8 @@ class v {
   }
 }
 let I = v.empty(),
-  S = !1,
-  T = null;
+  T = !1,
+  S = null;
 
 function A(e, t, n) {
   return "".concat(e, ":").concat(t, ":").concat(n)
@@ -117,7 +117,7 @@ function C() {
 }
 
 function R() {
-  null != T && (T.destroy(), T = null)
+  null != S && (S.destroy(), S = null)
 }
 
 function P(e) {
@@ -144,7 +144,7 @@ function x(e) {
   h = e.section
 }
 
-function k(e) {
+function M(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : Date.now(),
     r = {};
@@ -157,12 +157,12 @@ function k(e) {
         for (let e = 0; e < a.length; e++) {
           let r = t[e],
             i = "object" == typeof r ? r : {};
-          o.push(k(a[e], i, n))
+          o.push(M(a[e], i, n))
         }
       } else r[i] = a;
     else if ("object" == typeof a && null !== a) {
       let t = "object" == typeof e && null !== e ? e : {};
-      r[i] = k(a, t, n)
+      r[i] = M(a, t, n)
     } else if (i in E && "number" == typeof a) {
       let t = r[i] = Array.isArray(e) ? e : [];
       t.push({
@@ -174,7 +174,7 @@ function k(e) {
   return r
 }
 
-function M(e) {
+function k(e) {
   let {
     connectionStats: t
   } = e;
@@ -210,7 +210,7 @@ function j(e) {
       } = n;
       Object.keys(e).includes(a) || (h = p)
     }
-    i[r] = k(n, i[r])
+    i[r] = M(n, i[r])
   } else delete i[r]
 }
 
@@ -224,7 +224,7 @@ function G(e) {
   } = e, n = l.Z.getMediaEngine();
   if (R(), !n.supports(d.AN.CONNECTION_REPLAY) || 0 === t.length) return;
   let r = n.createReplayConnection(d.Yn.DEFAULT, t);
-  null != r && (T = r, r.on(a.Sh.Video, (e, t, n, i, a) => {
+  null != r && (S = r, r.on(a.Sh.Video, (e, t, n, i, a) => {
     o.Z.dispatch({
       type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT",
       mediaEngineConnectionId: r.mediaEngineConnectionId,
@@ -243,7 +243,7 @@ function F(e) {
   let {
     value: t
   } = e;
-  S = t
+  T = t
 }
 
 function V(e) {
@@ -289,7 +289,7 @@ class Z extends(r = i.ZP.Store) {
     return I
   }
   shouldRecordNextConnection() {
-    return S
+    return T
   }
   getSimulcastDebugOverride(e, t) {
     let n = O(e, t);
@@ -308,5 +308,5 @@ let H = new Z(o.Z, {
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: V,
   VOICE_CHANNEL_SELECT: D,
   RTC_CONNECTION_VIDEO: L,
-  MEDIA_ENGINE_CONNECTION_STATS: M
+  MEDIA_ENGINE_CONNECTION_STATS: k
 })

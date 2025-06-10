@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => S
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -60,14 +60,14 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   let {
     disabled: n,
     type: a
-  } = e, [y, v] = i.useState(!1), S = (0, l.e7)([_.Z], () => {
+  } = e, [y, v] = i.useState(!1), T = (0, l.e7)([_.Z], () => {
     var e, t;
     return y && Object.values(null != (t = null == (e = _.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? void 0 : e.gifs) ? t : {}).length <= 2
-  }), [T, A, N] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), C = i.useRef(0), R = i.useCallback(() => {
+  }), [S, A, N] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), C = i.useRef(0), R = i.useCallback(() => {
     v(!0), clearTimeout(C.current), C.current = setTimeout(() => {
       v(!1), C.current = 0
     }, 2e3)
@@ -86,9 +86,9 @@ function S(e, t) {
     } = (0, c.V)(),
     x = (0, d.Q3)("ChannelGIFPickerButton");
   if (n) return null;
-  let k = T === g.X1.GIF && A === a;
+  let M = S === g.X1.GIF && A === a;
   return (0, r.jsx)(u.ua7, {
-    text: S ? E.intl.string(E.t.mE2e8P) : null,
+    text: T ? E.intl.string(E.t.mE2e8P) : null,
     forceOpen: !0,
     children: e => (0, r.jsx)("div", I(O({
       ref: t,
@@ -101,10 +101,10 @@ function S(e, t) {
         onClick: () => {
           P(), L()
         },
-        isActive: k,
+        isActive: M,
         pulse: y,
         "aria-label": E.intl.string(E.t.PtVpk5),
-        "aria-expanded": k,
+        "aria-expanded": M,
         "aria-haspopup": "dialog",
         "aria-controls": N,
         children: (0, r.jsx)(w, {
@@ -115,4 +115,4 @@ function S(e, t) {
     }))
   })
 }
-let T = i.memo(i.forwardRef(S))
+let S = i.memo(i.forwardRef(T))

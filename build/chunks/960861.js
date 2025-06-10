@@ -36,8 +36,8 @@ var v = function(e) {
   return e[e.Present = 0] = "Present", e[e.Update = 1] = "Update", e[e.Cancel = 2] = "Cancel", e[e.Error = 3] = "Error", e
 }({});
 let I = !1,
-  S = 0,
   T = 0,
+  S = 0,
   A = !1,
   N = {};
 
@@ -50,7 +50,7 @@ function R() {
 }
 
 function P() {
-  let e = R() && (T > 0 || I && 0 === S);
+  let e = R() && (S > 0 || I && 0 === T);
   if (e !== A) {
     var t, n;
     A = e, null == (n = d.Z.getMediaEngine()) || null == (t = n.setNativeDesktopVideoSourcePickerActive) || t.call(n, A)
@@ -58,14 +58,14 @@ function P() {
 }
 
 function w() {
-  return (0, a.useEffect)(() => (S++, P(), () => {
-    0 == --S && P()
+  return (0, a.useEffect)(() => (T++, P(), () => {
+    0 == --T && P()
   }), [])
 }
 
 function D() {
-  return (0, a.useEffect)(() => (T++, P(), () => {
-    --T, P()
+  return (0, a.useEffect)(() => (S++, P(), () => {
+    --S, P()
   }), [])
 }
 
@@ -78,11 +78,11 @@ function x() {
   return null != r ? (0, g.Z)(r) : null
 }
 
-function k() {
+function M() {
   return null != r ? (0, m.Z)(r) : null
 }
 
-function M() {
+function k() {
   var e;
   return {
     sourceId: "prepicked:0",
@@ -113,10 +113,10 @@ class j extends(i = o.ZP.Store) {
     return x()
   }
   getLastPickedContentPID() {
-    return k()
+    return M()
   }
   getStreamStartOptions() {
-    return M()
+    return k()
   }
 }
 
@@ -127,9 +127,9 @@ function U(e) {
   } = e;
   if (N = {
       lastPickerAction: 1
-    }, r = n, 0 === S && !t) {
+    }, r = n, 0 === T && !t) {
     let e = c.Z.getChannel(_.Z.getVoiceChannelId());
-    null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, f.Z, !1) && (0, l.WH)(e.getGuildId(), e.id, M())
+    null != e && (0, h.Z)(d.Z) && (0, p.JL)(e, u.Z, f.Z, !1) && (0, l.WH)(e.getGuildId(), e.id, k())
   }
 }
 

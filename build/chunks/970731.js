@@ -94,14 +94,14 @@ function y(e) {
     secondaryButtonProps: I = {
       color: o.zxk.Colors.BRAND_INVERTED
     },
-    onComponentMount: S,
-    asset: T,
+    onComponentMount: T,
+    asset: S,
     markAsDismissed: A,
     caretPosition: N = "caretTopCenter",
     buttonLayout: C = 0
   } = e;
   (0, s.ZP)(() => {
-    null == S || S()
+    null == T || T()
   });
   let R = null != m,
     P = e => {
@@ -112,7 +112,7 @@ function y(e) {
     };
   return (0, r.jsxs)("div", {
     className: a()(n, g[t], c.upsellTooltipWrapper, c[N]),
-    children: [T, null == i ? null : (0, r.jsx)(o.X6q, {
+    children: [S, null == i ? null : (0, r.jsx)(o.X6q, {
       color: E[t],
       className: a()(u, c.upsellTooltipHeader),
       variant: "heading-md/semibold",

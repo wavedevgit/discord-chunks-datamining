@@ -58,13 +58,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -148,7 +148,7 @@ class D extends m.Z {
     let n, {
         channelId: r
       } = e,
-      i = T(e, ["channelId"]),
+      i = S(e, ["channelId"]),
       o = (0, u.d)(),
       s = v({
         mobile_network_type: _.Z.getType()
@@ -172,7 +172,7 @@ class D extends m.Z {
     }, this.logger.log("Overlay location: ", n));
     let f = this.createResponseHandler(e.nonce, t),
       p = new AbortController;
-    this.startQueueMetricTimers(e.nonce), a.tn.post(S(v({
+    this.startQueueMetricTimers(e.nonce), a.tn.post(T(v({
       url: b.ANM.MESSAGES(r),
       body: s,
       context: n,
@@ -189,7 +189,7 @@ class D extends m.Z {
     var {
       channelId: n,
       messageId: r
-    } = e, i = T(e, ["channelId", "messageId"]);
+    } = e, i = S(e, ["channelId", "messageId"]);
     let o = new AbortController;
     a.tn.patch({
       url: b.ANM.MESSAGE(n, r),

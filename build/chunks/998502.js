@@ -58,8 +58,8 @@ function v(e, t) {
   }), e
 }
 let I = window.DiscordNative,
-  S = new Set(["jpg", "jpeg", "png"]),
-  T = new Set(["jpg", "jpeg", "png", "webp", "gif", "tiff", "bmp", "avif"]),
+  T = new Set(["jpg", "jpeg", "png"]),
+  S = new Set(["jpg", "jpeg", "png", "webp", "gif", "tiff", "bmp", "avif"]),
   A = e => e.startsWith("image/"),
   N = 5,
   C = null,
@@ -70,8 +70,8 @@ null != I && (C = I.remoteApp.getVersion().split(".").map(e => parseInt(e)), P =
 let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
   L = !1,
   x = "lastImageSaveDirectory",
-  k = /[<>:"/\\|?*@]/g,
-  M = /(\.[a-zA-Z0-9]+):[^.]*$/,
+  M = /[<>:"/\\|?*@]/g,
+  k = /(\.[a-zA-Z0-9]+):[^.]*$/,
   j = /(\.[a-zA-Z0-9]+)%3A.+$/,
   U = /[^a-zA-Z0-9]/g,
   G = /\.[^.]*$/;
@@ -79,9 +79,9 @@ let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discor
 function B(e) {
   try {
     let t = decodeURIComponent(e);
-    return (t = (t = t.replace(M, "$1")).replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2")).replace(k, "_")
+    return (t = (t = t.replace(k, "$1")).replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2")).replace(M, "_")
   } catch (t) {
-    return e.replace(j, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(k, "_")
+    return e.replace(j, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(M, "_")
   }
 }
 async function F(e) {
@@ -294,7 +294,7 @@ let z = {
       l()(h.isPlatformEmbedded, "Copy image method called outside native app"), l()("function" == typeof I.clipboard.copyImage, "Copy image not supported");
       let n = await V(e),
         r = W(e, t),
-        i = null != r && S.has(r) ? "image.".concat(r) : e;
+        i = null != r && T.has(r) ? "image.".concat(r) : e;
       I.clipboard.copyImage(E.from(n), i)
     },
     async copyImageBlob(e, t) {
@@ -304,7 +304,7 @@ let z = {
     canSaveImage(e, t) {
       if (null == e || !h.isPlatformEmbedded) return !1;
       let n = W(e, t);
-      return null == n || T.has(n)
+      return null == n || S.has(n)
     },
     async saveImage(e, t, n) {
       var r, i, a;
@@ -358,7 +358,7 @@ let z = {
       if (!h.isPlatformEmbedded) return !1;
       if (null != e) {
         let n = W(e, t);
-        if (null != n && !S.has(n)) return !1
+        if (null != n && !T.has(n)) return !1
       }
       return "function" == typeof I.clipboard.copyImage
     },

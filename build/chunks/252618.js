@@ -126,7 +126,7 @@ function I(e) {
   return v(e), null
 }
 
-function S() {
+function T() {
   let [e, t] = p(e => {
     let {
       flashQueue: t
@@ -153,7 +153,7 @@ function S() {
   }, [t]), n ? s : e
 }
 
-function T() {
+function S() {
   r.useEffect(() => {
     function e() {
       O()
@@ -170,8 +170,8 @@ function A() {
   let {
     skipsSettingDefaultPageTitle: e
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-  T();
-  let t = S();
+  S();
+  let t = T();
   r.useEffect(() => {
     let n = t === d.base;
     e && n || (document.title = t)

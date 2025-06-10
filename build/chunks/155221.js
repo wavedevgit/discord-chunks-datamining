@@ -25,8 +25,8 @@ var r = n(255367),
   O = n(893607),
   v = n(314897),
   I = n(626135),
-  S = n(361207),
-  T = n(690032),
+  T = n(361207),
+  S = n(690032),
   A = n(358085),
   N = n(998502),
   C = n(981631),
@@ -72,12 +72,12 @@ function x(e, t) {
   }), e
 }
 n(928518), n(972830), n(704806);
-let k = (0, h.Un)({
+let M = (0, h.Un)({
     createPromise: () => n.e("47620").then(n.bind(n, 576184)),
     webpackId: 576184,
     name: "UnsupportedBrowser"
   }),
-  M = (0, h.Un)({
+  k = (0, h.Un)({
     createPromise: () => n.e("74023").then(n.bind(n, 431583)),
     webpackId: 431583,
     name: "DownloadApps"
@@ -196,7 +196,7 @@ class ei extends i.Component {
     } = this.props;
     return e = n === g.P.IN_PROGRESS ? null : !P.KO || d ? (0, r.jsx)(o.rs, {
       children: (0, r.jsx)(p.Z, {
-        component: k
+        component: M
       })
     }) : A.isPlatformEmbedded ? (0, r.jsxs)(o.rs, {
       children: [t ? null : (0, r.jsx)(o.AW, {
@@ -209,7 +209,7 @@ class ei extends i.Component {
       }), (0, r.jsx)(p.Z, {
         exact: !0,
         path: C.Z5c.APPS,
-        component: M
+        component: k
       }), (0, r.jsx)(o.AW, {
         path: er([C.Z5c.LOGIN, C.Z5c.REGISTER, C.Z5c.INVITE(":inviteCode"), C.Z5c.INVITE_LOGIN(":inviteCode"), C.Z5c.GIFT_CODE(":giftCode"), C.Z5c.GIFT_CODE_LOGIN(":giftCode"), C.Z5c.RESET], R.a),
         component: Y
@@ -306,19 +306,19 @@ class ei extends i.Component {
             has_e_mail: "true" === i.has_e_mail,
             referring_location: o,
             qr_code: !0
-          }), window.location.href = (0, S.Gn)(null != o && "" !== o ? o : "qr_code", r), null
+          }), window.location.href = (0, T.Gn)(null != o && "" !== o ? o : "qr_code", r), null
         }
       }), (0, r.jsx)(p.Z, {
         path: C.Z5c.OPEN_APP_FROM_EMAIL,
         render: () => {
           var e, t;
           let n = null == (e = I.default.getSuperProperties()) ? void 0 : e.os,
-            i = (0, T.o)(null != (t = window.location.search) ? t : "");
+            i = (0, S.o)(null != (t = window.location.search) ? t : "");
           if ("iOS" !== n && "Android" !== n) return (0, r.jsx)(o.l_, {
             to: null != i.desktop ? "".concat(i.desktop.pathname).concat(i.desktop.search) : C.Z5c.APP
           });
           {
-            let e = (0, S.Gn)("app_open_from_email", n, i.mobile),
+            let e = (0, T.Gn)("app_open_from_email", n, i.mobile),
               t = (0, c.zS)(e);
             null != t && I.default.track(C.rMx.DEEP_LINK_CLICKED, {
               fingerprint: (0, u.K)(t.fingerprint),

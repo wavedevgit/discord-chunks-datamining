@@ -55,13 +55,13 @@ function I(e, t) {
   return n
 }
 
-function S(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e) {
+function S(e) {
   let {
     channel: t,
     textVariant: n,
@@ -70,12 +70,12 @@ function T(e) {
     hideText: g = !1,
     hideTooltip: O = !1,
     canTruncate: I = !0,
-    showChannelName: T = !1
+    showChannelName: S = !1
   } = e, A = (0, l.vjg)(l.Skl.ONLINE), N = (0, d.ZP)(t), C = t.isDM() || t.isGroupDM(), {
     enableTopNavButton: R
   } = (0, f.Cq)({
     location: "VoiceActivityStatus"
-  }), P = !R && T, {
+  }), P = !R && S, {
     analyticsLocations: w
   } = (0, c.ZP)(), D = i.useCallback(() => {
     (0, h.A)({
@@ -95,7 +95,7 @@ function T(e) {
     }),
     delay: E.X,
     onTooltipShow: D,
-    children: e => (0, r.jsx)(p.Z, S(v({}, e), {
+    children: e => (0, r.jsx)(p.Z, T(v({}, e), {
       size: "custom",
       color: s.Z.colors.STATUS_POSITIVE,
       channel: t,
@@ -127,7 +127,7 @@ function A(e) {
     enableTopNavButton: O
   } = (0, f.Cq)({
     location: "VoiceActivityStatusWithCombinedTooltip"
-  }), v = O && null != m ? m : E ? b.intl.string(b.t["9FaEzs"]) : t.isGuildStageVoice() ? b.intl.string(b.t.QygGCA) : b.intl.string(b.t.msxteH), I = null == m || O ? v : "".concat(v, " (").concat(m, ")"), S = _ ? I : v;
+  }), v = O && null != m ? m : E ? b.intl.string(b.t["9FaEzs"]) : t.isGuildStageVoice() ? b.intl.string(b.t.QygGCA) : b.intl.string(b.t.msxteH), I = null == m || O ? v : "".concat(v, " (").concat(m, ")"), T = _ ? I : v;
   return (0, r.jsx)(g.Z, {
     icon: (0, r.jsx)(p.Z, {
       size: "custom",
@@ -135,7 +135,7 @@ function A(e) {
       channel: t,
       className: o()(y.icon, a)
     }),
-    text: S,
+    text: T,
     tooltipText: c ? void 0 : I,
     textVariant: n,
     textClassName: i,
@@ -149,5 +149,5 @@ function A(e) {
 function N(e) {
   return (0, _.b)({
     location: "VoiceActivityStatusExperimentWrapper"
-  }) ? (0, r.jsx)(A, v({}, e)) : (0, r.jsx)(T, v({}, e))
+  }) ? (0, r.jsx)(A, v({}, e)) : (0, r.jsx)(S, v({}, e))
 }

@@ -84,8 +84,8 @@ let O = function(e) {
     postSuccessGuild: O,
     onSubscribeModalClose: v,
     premiumModalAnalyticsLocation: I,
-    showIcon: S = !0,
-    disableShine: T,
+    showIcon: T = !0,
+    disableShine: S,
     applicationId: A,
     giftMessage: N,
     shinyButtonClassName: C,
@@ -95,8 +95,8 @@ let O = function(e) {
     isGift: D,
     color: L,
     iconColor: x = "currentColor",
-    useExpressiveButton: k,
-    giftIconClassName: M
+    useExpressiveButton: M,
+    giftIconClassName: k
   } = e, j = b(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "giftMessage", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner", "isGift", "color", "iconColor", "useExpressiveButton", "giftIconClassName"]);
   let U = (0, o.e7)([c.Z], () => c.Z.isFocused()),
     G = (0, d.Z)({
@@ -116,7 +116,7 @@ let O = function(e) {
       isGift: D,
       giftMessage: N
     };
-  if (k && (null == g ? void 0 : g.expressiveButtonText) != null) return (0, r.jsx)(u.Z, E(m({}, B), {
+  if (M && (null == g ? void 0 : g.expressiveButtonText) != null) return (0, r.jsx)(u.Z, E(m({}, B), {
     children: e => {
       var t;
       let {
@@ -145,10 +145,10 @@ let O = function(e) {
           color: null != L ? L : l.zxk.Colors.PRIMARY,
           onClick: o
         }, j), {
-          children: [S && (0, r.jsx)(l.OgN, {
+          children: [T && (0, r.jsx)(l.OgN, {
             size: "md",
             color: "currentColor",
-            className: a()(p.giftIcon, M)
+            className: a()(p.giftIcon, k)
           }), (0, r.jsx)("span", {
             className: a()(p.buttonText, null == g ? void 0 : g.textClassName),
             children: null != (n = null == g ? void 0 : g.textOverride) ? n : e
@@ -177,9 +177,9 @@ let O = function(e) {
             [p.tier1Gradient]: R && t === f.Si.TIER_1
           }, h),
           buttonShineClassName: "buttonShineClassName" in j ? j.buttonShineClassName : n === l.Ttl.BRAND_INVERTED ? p.brandShine : void 0,
-          pauseAnimation: !U || T
+          pauseAnimation: !U || S
         }, j, e), {
-          children: [S && (0, r.jsx)(l.SrA, {
+          children: [T && (0, r.jsx)(l.SrA, {
             size: "md",
             color: x,
             className: a()(p.premiumIcon, y)

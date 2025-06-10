@@ -37,7 +37,7 @@ let d = i.forwardRef(function(e, t) {
       null == (e = g.current) || e.focus()
     }
   }, [b]);
-  let S = () => null != y ? y : d || null == m ? h : m;
+  let T = () => null != y ? y : d || null == m ? h : m;
   return (0, r.jsx)("div", {
     className: u.wrapper,
     children: (0, r.jsx)(s.E1j, {
@@ -46,7 +46,7 @@ let d = i.forwardRef(function(e, t) {
       query: E,
       ref: g,
       size: s.E1j.Sizes.MEDIUM,
-      placeholder: S(),
+      placeholder: T(),
       onClear: I,
       onKeyDown: f,
       onChange: v,

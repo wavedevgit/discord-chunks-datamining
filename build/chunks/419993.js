@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  K: () => S
+  K: () => T
 }), n(539854);
 var r, i = n(255367),
   a = n(73800),
@@ -31,7 +31,7 @@ let b = (0, l.Z)(),
   O = (0, l.Z)(),
   v = 10,
   I = 7.23;
-class S extends(r = a.Component) {
+class T extends(r = a.Component) {
   getPaddingRight() {
     let {
       maxLength: e,
@@ -126,8 +126,8 @@ class S extends(r = a.Component) {
       resizeable: b,
       className: v,
       id: I,
-      rows: S,
-      flex: T,
+      rows: T,
+      flex: S,
       autosize: A,
       required: N,
       onInvalid: C,
@@ -135,11 +135,11 @@ class S extends(r = a.Component) {
     } = this.props, P = A ? _.l : "textarea", w = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? t : null == (e = this.context) ? void 0 : e.titleId, L = this.getAriaDescribedBy();
     return (0, i.jsxs)("div", {
       className: s()(m.inputWrapper, {
-        [h.flex]: T
+        [h.flex]: S
       }),
       children: [(0, i.jsxs)("div", {
         className: s()(h.inputMaxLength, {
-          [h.flex]: T
+          [h.flex]: S
         }),
         children: [(0, i.jsx)(c.t, {
           children: (0, i.jsx)(P, {
@@ -169,7 +169,7 @@ class S extends(r = a.Component) {
             onFocus: this.onFocus,
             onKeyDown: this.onKeyDown,
             onInvalid: C,
-            rows: S,
+            rows: T,
             ref: R
           })
         }), null != l && (0, i.jsx)(d.n, {
@@ -226,7 +226,7 @@ class S extends(r = a.Component) {
     }
   }
 }
-E(S, "contextType", u.q3), E(S, "defaultProps", {
+E(T, "contextType", u.q3), E(T, "defaultProps", {
   name: "",
   disabled: !1,
   placeholder: "",

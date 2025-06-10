@@ -25,8 +25,8 @@ var r = n(255367),
   O = n(87051),
   v = n(230711),
   I = n(497321),
-  S = n(468026),
-  T = n(317381),
+  T = n(468026),
+  S = n(317381),
   A = n(513202),
   N = n(367907),
   C = n(162685),
@@ -36,8 +36,8 @@ var r = n(255367),
   D = n(726721),
   L = n(240991),
   x = n(713938),
-  k = n(973616),
-  M = n(881998),
+  M = n(973616),
+  k = n(881998),
   j = n(592125),
   U = n(944486),
   G = n(246946),
@@ -152,7 +152,7 @@ let ec = e => {
           applicationName: e.name
         })
       })]
-    })), (0, E.h7j)(e => (0, r.jsx)(S.default, eo({
+    })), (0, E.h7j)(e => (0, r.jsx)(T.default, eo({
       title: n,
       body: i,
       confirmText: et.intl.string(et.t.xUqheH),
@@ -220,13 +220,13 @@ let ec = e => {
       disclosures: d,
       locale: p,
       id: g
-    } = e, b = a.id, v = i.useMemo(() => k.ZP.createFromServer(a), [a]), I = (0, V.yE)(v.flags, $.udG.EMBEDDED), S = (0, _.e7)([q.Z], () => {
+    } = e, b = a.id, v = i.useMemo(() => M.ZP.createFromServer(a), [a]), I = (0, V.yE)(v.flags, $.udG.EMBEDDED), T = (0, _.e7)([q.Z], () => {
       var e, t, n, r;
       return null == (r = q.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? void 0 : e.allowMobilePush
-    }, [b]), T = C.w.useExperiment({
+    }, [b]), S = C.w.useExperiment({
       location: "oauth2_authorize"
     }), A = a.bot, P = (0, _.e7)([j.Z], () => j.Z.getDMFromUserId(null == A ? void 0 : A.id)), {
-      appDMChannelMuteConfig: M,
+      appDMChannelMuteConfig: k,
       dmChannelMuted: U
     } = (0, _.cj)([B.ZP], () => null == P ? {
       appDMChannelMuteConfig: null,
@@ -404,7 +404,7 @@ let ec = e => {
           applicationId: a.id
         }, n))
       })
-    }, [P, A, U, a.id]), em = () => T.enabled ? (0, r.jsxs)("div", {
+    }, [P, A, U, a.id]), em = () => S.enabled ? (0, r.jsxs)("div", {
       className: en.directMessagesSection,
       children: [(0, r.jsx)(E.X6q, {
         variant: "heading-sm/medium",
@@ -415,8 +415,8 @@ let ec = e => {
         hideBorder: !0,
         onChange: eh,
         className: en.dmSettingsSwitch,
-        note: (null == M ? void 0 : M.end_time) != null ? et.intl.format(et.t.j7h4AA, {
-          endTime: new Date(M.end_time).toLocaleString(et.intl.currentLocale, {
+        note: (null == k ? void 0 : k.end_time) != null ? et.intl.format(et.t.j7h4AA, {
+          endTime: new Date(k.end_time).toLocaleString(et.intl.currentLocale, {
             month: "numeric",
             day: "numeric",
             hour: "numeric",
@@ -428,12 +428,12 @@ let ec = e => {
           variant: "text-sm/medium",
           children: et.intl.string(et.t.NkwaBg)
         })
-      }) : null, I && T.enabled ? (0, r.jsx)(E.j7V, {
+      }) : null, I && S.enabled ? (0, r.jsx)(E.j7V, {
         hideBorder: !0,
         onChange: ep,
         className: en.dmSettingsSwitch,
         note: et.intl.string(et.t.hw1nKS),
-        value: S,
+        value: T,
         disabled: U,
         children: (0, r.jsx)(E.Text, {
           variant: "text-sm/medium",
@@ -472,9 +472,9 @@ let ec = e => {
   })),
   ep = () => {
     let e = (0, _.e7)([G.Z], () => G.Z.hidePersonalInformation),
-      t = (0, _.e7)([M.Z], () => M.Z.getApps()),
+      t = (0, _.e7)([k.Z], () => k.Z.getApps()),
       a = (0, _.e7)([W.default], () => W.default.locale),
-      o = (0, _.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivities()),
+      o = (0, _.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities()),
       s = (0, _.e7)([j.Z, U.Z], () => j.Z.getChannel(U.Z.getChannelId())),
       c = null == s ? void 0 : s.getGuildId(),
       u = (0, g.C)("user-settings-authed-apps");
@@ -535,7 +535,7 @@ let ec = e => {
         let e = f.trim().toLowerCase();
         return "" === e || null == t ? t : t.length < 100 ? t.filter(t => l()(e, t.application.name.toLowerCase())) : t.filter(t => t.application.name.toLowerCase().includes(e))
       }, [t, f]),
-      S = () => null == t || null == v ? (0, r.jsx)(E.$jN, {
+      T = () => null == t || null == v ? (0, r.jsx)(E.$jN, {
         className: ei.marginTop20,
         type: E.$jN.Type.SPINNING_CIRCLE
       }) : 0 === t.length ? O(et.intl.string(et.t.CpPv5u), et.intl.string(et.t["E+SM6e"])) : 0 === v.length ? (0, r.jsxs)(r.Fragment, {
@@ -558,7 +558,7 @@ let ec = e => {
           title: et.intl.string(et.t.HU3RFx),
           body: et.intl.string(et.t.Nu5Yi4)
         }),
-        children: S()
+        children: T()
       })
     })
   }

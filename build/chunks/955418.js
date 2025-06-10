@@ -71,7 +71,7 @@ function O(e) {
     newestAnalyticsLocation: E
   } = (0, a.ZP)(), {
     trackUserProfileAction: O
-  } = (0, d.KZ)(), [v, I] = i.useState(""), [S, T] = i.useState((0, s.JM)(v)), A = i.useRef(!1), N = i.useMemo(() => b(g({}, o.Ie.USER_PROFILE), {
+  } = (0, d.KZ)(), [v, I] = i.useState(""), [T, S] = i.useState((0, s.JM)(v)), A = i.useRef(!1), N = i.useMemo(() => b(g({}, o.Ie.USER_PROFILE), {
     disableAutoFocus: m
   }), [m]);
   return (0, r.jsx)(l.Z, {
@@ -83,9 +83,9 @@ function O(e) {
     }),
     channel: y,
     textValue: v,
-    richValue: S,
+    richValue: T,
     onChange: (e, t, n) => {
-      t !== v && (I(t), T(n))
+      t !== v && (I(t), S(n))
     },
     focused: A.current,
     onFocus: () => {

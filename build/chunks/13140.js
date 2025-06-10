@@ -3,9 +3,9 @@
 n.d(t, {
   BB: () => j,
   C$: () => A,
-  H9: () => T,
-  Kd: () => M,
-  d2: () => k,
+  H9: () => S,
+  Kd: () => k,
+  d2: () => M,
   dU: () => I
 }), n(388685), n(704826), n(35282), n(415506), n(539854), n(781311);
 var r = n(921738),
@@ -85,7 +85,7 @@ function I() {
   return (0, c.isLinux)() ? d.CgE.LINUX : (0, c.isMac)() ? d.CgE.MACOS : (0, c.isWindows)() ? d.CgE.WINDOWS : __OVERLAY__ ? d.CgE.WINDOWS : d.CgE.BROWSER
 }
 
-function S(e) {
+function T(e) {
   let t, [, n, r] = e;
   switch (r) {
     case d.CgE.LINUX:
@@ -109,8 +109,8 @@ function S(e) {
   return null != t ? t : null
 }
 
-function T(e) {
-  let [, t, n] = e, r = S(e);
+function S(e) {
+  let [, t, n] = e, r = T(e);
   if (null != r) return v(t, r, n);
   let i = (0, u._v)(t);
   return null != i ? v(i.keyCode, i.key, n) : null
@@ -206,7 +206,7 @@ function x(e) {
   return e + "Key"
 }
 
-function k(e) {
+function M(e) {
   let t = {
     keyCode: 0,
     key: "",
@@ -217,7 +217,7 @@ function k(e) {
     ctrlKey: !1
   };
   return null == e ? [] : e.reduce((e, n) => {
-    let r = T(n),
+    let r = S(n),
       i = _({}, t);
     if (null == r) return e.push(h(_({}, i), {
       combo: n
@@ -230,7 +230,7 @@ function k(e) {
   }, [])
 }
 
-function M(e) {
+function k(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : I(),
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.Z.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {
@@ -245,7 +245,7 @@ function j(e) {
       let [t, n, r] = e, i = "number" == typeof r ? r : I();
       if (t === d.MoX.KEYBOARD_KEY || t === d.MoX.KEYBOARD_MODIFIER_KEY) {
         var a;
-        return null != (a = T(null != i ? [t, n, i] : [t, n])) ? a : "UNK".concat(n)
+        return null != (a = S(null != i ? [t, n, i] : [t, n])) ? a : "UNK".concat(n)
       }
       return t === d.MoX.MOUSE_BUTTON ? "mouse".concat(n) : t === d.MoX.GAMEPAD_BUTTON ? "gamepad".concat(n) : "dev".concat(t, ",").concat(n)
     }).filter(l.lm);

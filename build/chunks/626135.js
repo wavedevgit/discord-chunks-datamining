@@ -2,9 +2,9 @@
 "use strict";
 n.r(t), n.d(t, {
   AnalyticEventConfigs: () => j,
-  AnalyticsContext: () => S,
+  AnalyticsContext: () => T,
   AnalyticsSchema: () => d,
-  addExtraAnalyticsDecorator: () => M,
+  addExtraAnalyticsDecorator: () => k,
   clearAnalyticsEventsRecording: () => Q,
   debugLogEvent: () => Y,
   default: () => er,
@@ -91,8 +91,8 @@ function v(e, t) {
 let I = {
     location: {}
   },
-  S = r.createContext(I),
-  T = {},
+  T = r.createContext(I),
+  S = {},
   A = 1e4,
   N = 6e4,
   C = 12e4,
@@ -102,10 +102,10 @@ let I = {
   D = 864e5,
   L = .001,
   x = performance.now(),
-  k = [];
+  M = [];
 
-function M(e) {
-  k.push(e)
+function k(e) {
+  M.push(e)
 }
 let j = {
   [p.rMx.APP_OPENED]: {
@@ -353,7 +353,7 @@ let V = (0, a.trackMaker)({
 });
 
 function Z(e) {
-  return T = e
+  return S = e
 }
 
 function H(e) {
@@ -379,8 +379,8 @@ function H(e) {
     utmMedium: l,
     utmCampaign: c,
     utmContent: u
-  } = T;
-  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, k.forEach(e => e(a)), a
+  } = S;
+  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, M.forEach(e => e(a)), a
 }
 
 function Y(e, t) {

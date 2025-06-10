@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(124072),
   v = n(850568),
   I = n(181918),
-  S = n(670188),
-  T = n(592125),
+  T = n(670188),
+  S = n(592125),
   A = n(271383),
   N = n(430824),
   C = n(594174),
@@ -56,7 +56,7 @@ function x(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,8 +67,8 @@ function k(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function k(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -97,8 +97,8 @@ function U(e) {
   } = e, c = i.useRef(null), u = (0, l.e7)([N.Z], () => {
     var e;
     return null == (e = N.Z.getGuild(a)) ? void 0 : e.ownerId
-  }, [a]), _ = (0, l.e7)([C.default], () => C.default.getUser(t.userId), [t.userId]), p = (0, l.e7)([T.Z], () => T.Z.getChannel(o), [o]);
-  return null == _ || null == p ? null : (0, r.jsx)(S.Z, {
+  }, [a]), _ = (0, l.e7)([C.default], () => C.default.getUser(t.userId), [t.userId]), p = (0, l.e7)([S.Z], () => S.Z.getChannel(o), [o]);
+  return null == _ || null == p ? null : (0, r.jsx)(T.Z, {
     targetElementRef: c,
     userId: t.userId,
     guildId: a,
@@ -127,7 +127,7 @@ function U(e) {
             let {
               default: e
             } = await Promise.all([n.e("14006"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("32152")]).then(n.bind(n, 757387));
-            return t => (0, r.jsx)(e, M(x({}, t), {
+            return t => (0, r.jsx)(e, k(x({}, t), {
               user: _,
               guildId: a,
               channel: p,
@@ -185,7 +185,7 @@ function G(e) {
   });
   return (0, r.jsx)(c.d.Provider, {
     value: void 0,
-    children: (0, r.jsx)("div", M(x({
+    children: (0, r.jsx)("div", k(x({
       className: w.rolePopout,
       ref: d
     }, t), {
@@ -224,13 +224,13 @@ function B(e) {
     inlinePreview: _ = !1
   } = e, {
     analyticsLocations: g
-  } = (0, m.ZP)(h.Z.ROLE_MENTION), E = (0, l.e7)([p.Z], () => p.Z.roleStyle), b = (0, I.$V)(d, "RoleMention"), S = (null != t && 0 !== t || null != n && null != n.primaryColor) && !_, T = S && "dot" === E, A = S && "username" === E, N = b && null != n && null != n.secondaryColor ? (0, v.f)(n) : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, M(x({
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), E = (0, l.e7)([p.Z], () => p.Z.roleStyle), b = (0, I.$V)(d, "RoleMention"), T = (null != t && 0 !== t || null != n && null != n.primaryColor) && !_, S = T && "dot" === E, A = T && "username" === E, N = b && null != n && null != n.secondaryColor ? (0, v.f)(n) : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, k(x({
     ref: C,
     className: w.roleMention,
     color: A ? t : null,
     roleColors: A ? N : null
   }, e), {
-    children: [T && null != t && (0, r.jsx)(u.FhE, {
+    children: [S && null != t && (0, r.jsx)(u.FhE, {
       color: (0, s.Rf)(t),
       colors: N,
       className: D.roleDot,

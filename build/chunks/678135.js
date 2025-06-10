@@ -25,8 +25,8 @@ var i = n(120356),
   O = n(724241),
   v = n(890876),
   I = n(981631),
-  S = n(228168),
-  T = n(388032),
+  T = n(228168),
+  S = n(388032),
   A = n(997926);
 
 function N(e) {
@@ -38,7 +38,7 @@ function N(e) {
     pendingBanner: l,
     pendingAccentColor: m,
     pendingBio: g,
-    pendingPronouns: T,
+    pendingPronouns: S,
     pendingAvatar: N,
     pendingAvatarDecoration: R,
     pendingNickname: P,
@@ -46,8 +46,8 @@ function N(e) {
     pendingThemeColors: D,
     pendingProfileEffectId: L,
     pendingLegacyUsernameDisabled: x,
-    avatarClassName: k,
-    containerClassName: M,
+    avatarClassName: M,
+    containerClassName: k,
     isTryItOutFlow: j = !1,
     disabledInputs: U = !1,
     hideCustomStatus: G = !1,
@@ -84,9 +84,9 @@ function N(e) {
     children: [(0, r.jsxs)(p.Z, {
       user: t,
       displayProfile: W,
-      themeType: S.lY.POPOUT,
+      themeType: T.lY.POPOUT,
       pendingThemeColors: D,
-      className: a()(A.container, M),
+      className: a()(A.container, k),
       forceShowPremium: i,
       children: [(0, r.jsxs)("header", {
         className: A.header,
@@ -111,7 +111,7 @@ function N(e) {
           previewAvatarDecoration: z,
           previewTheme: X,
           previewPrimaryColor: Q,
-          className: k,
+          className: M,
           disabledInputs: U,
           isTryItOutFlow: j,
           onUpsellClick: () => null == o ? void 0 : o({
@@ -120,7 +120,7 @@ function N(e) {
         }), !G && (0, r.jsx)(h.Z, {
           location: "UserProfilePreview",
           user: t,
-          themeType: S.lY.POPOUT,
+          themeType: T.lY.POPOUT,
           disableToolbar: U
         })]
       }), (0, r.jsx)(O.Z, {
@@ -131,7 +131,7 @@ function N(e) {
         pendingNickname: P,
         pendingGlobalName: w,
         pendingBio: g,
-        pendingPronouns: T,
+        pendingPronouns: S,
         pendingLegacyUsernameDisabled: x,
         isTryItOutFlow: j,
         hideBioSection: B,
@@ -158,7 +158,7 @@ function C(e) {
     className: A.nameplatePreviewSection,
     children: [(0, r.jsx)(s.Text, {
       variant: "eyebrow",
-      children: T.intl.string(T.t["7KRt6e"]).toLocaleUpperCase()
+      children: S.intl.string(S.t["7KRt6e"]).toLocaleUpperCase()
     }), (0, r.jsx)(l.Z, {
       user: n,
       nameplate: i,

@@ -30,8 +30,8 @@ function h(e) {
     showDiscountBadge: O,
     isGift: v,
     giftRecipient: I,
-    isEligibleForTrial: S,
-    enablePremiumRebrandDesign: T
+    isEligibleForTrial: T,
+    enablePremiumRebrandDesign: S
   } = e, A = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), N = g ? f.nL.WINTER : f.nL.DEFAULT, C = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
@@ -55,12 +55,12 @@ function h(e) {
       className: p.closeButton,
       innerClassName: p.closeButtonInner
     })]
-  }) : T ? (0, r.jsx)(u.Z, {
+  }) : S ? (0, r.jsx)(u.Z, {
     hideCloseOnFullScreen: !0,
     hideCloseButton: b,
     upgradeToPremiumType: m,
     onClose: E,
-    isEligibleForTrial: S,
+    isEligibleForTrial: T,
     showTrialBadge: y,
     showDiscountBadge: O
   }) : (0, r.jsx)("div", {

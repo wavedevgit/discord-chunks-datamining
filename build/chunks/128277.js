@@ -24,8 +24,8 @@ var r = n(255367),
   O = n(336383),
   v = n(194811),
   I = n(373826),
-  S = n(262210),
-  T = n(666984),
+  T = n(262210),
+  S = n(666984),
   A = n(670451),
   N = n(228168),
   C = n(227832);
@@ -77,8 +77,8 @@ function L(e) {
     className: R,
     onClose: w
   } = e, L = (0, p.Dt)(), x = (0, p.Dt)(), {
-    themeType: k
-  } = (0, b.z)(), M = (0, _.Z)({
+    themeType: M
+  } = (0, b.z)(), k = (0, _.Z)({
     activity: a,
     user: t
   }), j = (0, E.Z)(a), U = null != j.text && "" !== j.text, {
@@ -89,7 +89,7 @@ function L(e) {
     display: "live",
     user: t,
     activity: a,
-    entry: M,
+    entry: k,
     analyticsLocations: B
   }), V = (0, g.Z)({
     userId: t.id,
@@ -126,14 +126,14 @@ function L(e) {
         start: t,
         end: n
       } = e;
-      return null == t || null == n ? null : (0, r.jsx)(S.Z, {
+      return null == t || null == n ? null : (0, r.jsx)(T.Z, {
         start: t,
         end: n
       })
     },
     Y = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: C.actions,
-      children: (0, r.jsx)(T.Z, {
+      children: (0, r.jsx)(S.Z, {
         user: t,
         activity: a,
         onAction: F
@@ -154,7 +154,7 @@ function L(e) {
           display: "live",
           user: t,
           activity: a,
-          entry: M,
+          entry: k,
           onClose: w
         })
       })), (0, r.jsx)("div", {
@@ -163,7 +163,7 @@ function L(e) {
           className: C.content,
           children: [(0, r.jsx)(f.E, {
             image: G,
-            size: k === N.lY.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
+            size: M === N.lY.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
             className: C.clickableImage,
             onClick: e => {
               e.stopPropagation(), F({
@@ -187,10 +187,10 @@ function L(e) {
               user: t,
               activity: a,
               className: C.badges
-            }), H(), k === N.lY.MODAL_V2 && Y()]
-          }), k === N.lY.MODAL && Y()]
+            }), H(), M === N.lY.MODAL_V2 && Y()]
+          }), M === N.lY.MODAL && Y()]
         })
-      }), k !== N.lY.MODAL && k !== N.lY.MODAL_V2 && Y()]
+      }), M !== N.lY.MODAL && M !== N.lY.MODAL_V2 && Y()]
     })
   })
 }

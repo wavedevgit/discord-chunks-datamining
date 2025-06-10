@@ -44,14 +44,14 @@ let b = 5,
   v = 6048e5,
   I = 12096e5;
 
-function S() {
+function T() {
   return {
     messageGiftIntentLastShownMap: {},
     lastShownFriendsListGiftIntents: [],
     friendsTabBadgeLastDismissedTime: null
   }
 }
-let T = S(),
+let S = T(),
   A = [],
   N = new Set,
   C = {},
@@ -73,7 +73,7 @@ function w(e) {
 
 function D() {
   if (null != R) return void z(R);
-  if (k(), !f.Z.hasConsented(m.pjP.PERSONALIZATION)) return;
+  if (M(), !f.Z.hasConsented(m.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
   } = h.w.getCurrentConfig({
@@ -107,23 +107,23 @@ function L(e) {
 }
 
 function x() {
-  return Array.from(N).some(e => !T.lastShownFriendsListGiftIntents.includes(e))
-}
-
-function k() {
-  A.length = 0, N.clear(), C = {}
+  return Array.from(N).some(e => !S.lastShownFriendsListGiftIntents.includes(e))
 }
 
 function M() {
-  k()
+  A.length = 0, N.clear(), C = {}
+}
+
+function k() {
+  M()
 }
 
 function j() {
-  T = S(), k()
+  S = T(), M()
 }
 
 function U() {
-  T.lastShownFriendsListGiftIntents = Array.from(N)
+  S.lastShownFriendsListGiftIntents = Array.from(N)
 }
 
 function G(e) {
@@ -134,7 +134,7 @@ function G(e) {
 }
 
 function B() {
-  T.friendsTabBadgeLastDismissedTime = Date.now()
+  S.friendsTabBadgeLastDismissedTime = Date.now()
 }
 
 function F(e) {
@@ -145,26 +145,26 @@ function F(e) {
 }
 
 function V(e) {
-  null == T.messageGiftIntentLastShownMap[e] && (T.messageGiftIntentLastShownMap[e] = Date.now())
+  null == S.messageGiftIntentLastShownMap[e] && (S.messageGiftIntentLastShownMap[e] = Date.now())
 }
 
 function Z() {
-  for (let e in T.messageGiftIntentLastShownMap) {
-    let t = T.messageGiftIntentLastShownMap[e];
-    Date.now() - t > I && delete T.messageGiftIntentLastShownMap[e]
+  for (let e in S.messageGiftIntentLastShownMap) {
+    let t = S.messageGiftIntentLastShownMap[e];
+    Date.now() - t > I && delete S.messageGiftIntentLastShownMap[e]
   }
 }
 
 function H() {
-  T.lastShownFriendsListGiftIntents = []
+  S.lastShownFriendsListGiftIntents = []
 }
 
 function Y() {
-  T.messageGiftIntentLastShownMap = {}
+  S.messageGiftIntentLastShownMap = {}
 }
 
 function W() {
-  T.friendsTabBadgeLastDismissedTime = null
+  S.friendsTabBadgeLastDismissedTime = null
 }
 
 function K(e) {
@@ -179,7 +179,7 @@ function K(e) {
 }
 
 function z(e) {
-  k();
+  M();
   let {
     enabled: t
   } = h.w.getCurrentConfig({
@@ -202,10 +202,10 @@ function z(e) {
 }
 class q extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    T = S(), null != e && (T.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, T.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), T.messageGiftIntentLastShownMap = E({}, e.messageGiftIntentLastShownMap)), this.syncWith([_.Z, d.Z, f.Z, u.Z], D), Z()
+    S = T(), null != e && (S.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, S.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), S.messageGiftIntentLastShownMap = E({}, e.messageGiftIntentLastShownMap)), this.syncWith([_.Z, d.Z, f.Z, u.Z], D), Z()
   }
   getState() {
-    return T
+    return S
   }
   getFriendAnniversaries() {
     return A
@@ -224,7 +224,7 @@ class q extends(r = l.ZP.PersistedStore) {
   }
   canShowFriendsTabBadge() {
     var e;
-    let t = null != (e = T.friendsTabBadgeLastDismissedTime) ? e : 0;
+    let t = null != (e = S.friendsTabBadgeLastDismissedTime) ? e : 0;
     return !(Date.now() - t <= v) && x()
   }
   getFriendAnniversaryYears(e) {
@@ -232,7 +232,7 @@ class q extends(r = l.ZP.PersistedStore) {
     return null == t ? 0 : L(t.friendsSince)
   }
   isGiftIntentMessageInCooldown(e) {
-    return null != T.messageGiftIntentLastShownMap[e]
+    return null != S.messageGiftIntentLastShownMap[e]
   }
   getDevToolTotalFriendAnniversaries() {
     return R
@@ -247,7 +247,7 @@ g(q, "displayName", "PremiumGiftingIntentStore"), g(q, "persistKey", "PremiumGif
   }
 }]);
 let X = new q(c.Z, {
-  CONNECTION_OPEN: M,
+  CONNECTION_OPEN: k,
   LOGOUT: j,
   MESSAGE_GIFT_INTENT_SHOWN: G,
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: U,

@@ -108,11 +108,11 @@ function I() {
   d = new Map, f = new Set, _ = null, p = !1
 }
 
-function S() {
+function T() {
   I(), h = !0
 }
 
-function T() {
+function S() {
   I()
 }
 class A extends(r = i.ZP.Store) {
@@ -141,8 +141,8 @@ class A extends(r = i.ZP.Store) {
 }
 s(A, "displayName", "ContentInventoryOutboxStore");
 let N = new A(a.Z, {
-  CONNECTION_OPEN: S,
-  LOGOUT: T,
+  CONNECTION_OPEN: T,
+  LOGOUT: S,
   CONTENT_INVENTORY_FETCH_OUTBOX_START: m,
   CONTENT_INVENTORY_FETCH_OUTBOX_SUCCESS: g,
   CONTENT_INVENTORY_FETCH_OUTBOX_FAILURE: E,

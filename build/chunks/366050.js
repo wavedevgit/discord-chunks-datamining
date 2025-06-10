@@ -137,7 +137,7 @@ function I(e) {
   }
 }
 
-function S(e) {
+function T(e) {
   let {
     id: t
   } = e;
@@ -151,7 +151,7 @@ function S(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   let {
     id: t
   } = e, n = p.get(t);
@@ -220,8 +220,8 @@ let C = new N(s.Z, {
   PICTURE_IN_PICTURE_MOVE: y,
   PICTURE_IN_PICTURE_RESIZE: O,
   PICTURE_IN_PICTURE_HIDE: I,
-  PICTURE_IN_PICTURE_SHOW: S,
+  PICTURE_IN_PICTURE_SHOW: T,
   PICTURE_IN_PICTURE_UPDATE_RECT: v,
-  PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: T,
+  PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: S,
   LOGOUT: A
 })

@@ -98,8 +98,8 @@ function O(e) {
     avatarUrl: O,
     preload: v,
     renderPopout: I,
-    onRequestOpen: S,
-    onRequestClose: T,
+    onRequestOpen: T,
+    onRequestClose: S,
     onClosePopout: A,
     shouldShow: N,
     shouldPreload: C = !0
@@ -132,8 +132,8 @@ function O(e) {
     shouldShow: N,
     preload: C ? w : void 0,
     renderPopout: D,
-    onRequestOpen: S,
-    onRequestClose: T
+    onRequestOpen: T,
+    onRequestClose: S
   }, R), {
     children: t
   }))

@@ -27,8 +27,8 @@ let u = 20,
       rowCountBySection: O,
       rowHeight: v,
       sectionHeaderHeight: I,
-      sectionFooterHeight: S,
-      renderUpsell: T,
+      sectionFooterHeight: T,
+      renderUpsell: S,
       setShowUpsell: A
     } = e, N = i.useRef(!1), C = i.useRef(null), R = (0, s.Iu)(e => e.searchQuery), P = d.useStore(e => e.activeCategoryIndex), w = n.map(e => (0, o._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
@@ -103,9 +103,9 @@ let u = 20,
         rowCountBySection: O,
         rowHeight: v,
         sectionHeaderHeight: I,
-        sectionFooterHeight: S,
+        sectionFooterHeight: T,
         stickyHeaders: !0,
         ref: C
-      }), null == T ? void 0 : T(), null == E ? void 0 : E()]
+      }), null == S ? void 0 : S(), null == E ? void 0 : E()]
     })
   })

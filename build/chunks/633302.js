@@ -37,12 +37,12 @@ let c = null,
     numNonDiversitySprites: I
   } = n(382342);
 
-function S(e) {
+function T(e) {
   let t = y[e];
   return null == t ? null : E[t]
 }
 
-function T(e) {
+function S(e) {
   let t = O[e];
   return null == t ? null : E[t]
 }
@@ -89,7 +89,7 @@ class A {
   get name() {
     if (this.hasDiversity && null != c) {
       var e;
-      return "".concat(this.uniqueName, "::").concat(null == (e = T(c)) ? void 0 : e.names[0])
+      return "".concat(this.uniqueName, "::").concat(null == (e = S(c)) ? void 0 : e.names[0])
     }
     return this.uniqueName
   }
@@ -140,7 +140,7 @@ function w() {
 }
 
 function D(e) {
-  let t = S(e);
+  let t = T(e);
   return null != t ? N(t) : null
 }
 let L = new Map;
@@ -154,17 +154,17 @@ function x(e) {
   return t
 }
 
-function k(e) {
+function M(e) {
   return m.test(e)
 }
 
-function M(e) {
+function k(e) {
   return e.replace(_, (e, t) => H(t, e))
 }
 
 function j(e) {
   var t;
-  let n = null == (t = T(e)) ? void 0 : t.names[0];
+  let n = null == (t = S(e)) ? void 0 : t.names[0];
   return null != n ? {
     type: "emoji",
     surrogate: e,
@@ -180,7 +180,7 @@ let U = String.fromCodePoint(917631),
 
 function F(e, t) {
   var n;
-  if (!0 !== t && !k(e)) return [{
+  if (!0 !== t && !M(e)) return [{
     type: "text",
     text: e
   }];
@@ -217,7 +217,7 @@ function V(e) {
 }
 
 function Z(e) {
-  if (!k(e)) return null;
+  if (!M(e)) return null;
   let t = F(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
   return t === e ? null : t
 }
@@ -225,14 +225,14 @@ function Z(e) {
 function H(e) {
   var t, n;
   let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
-  return null != (n = null == (t = S(e)) ? void 0 : t.surrogates) ? n : r
+  return null != (n = null == (t = T(e)) ? void 0 : t.surrogates) ? n : r
 }
 
 function Y(e) {
   var t, n;
   let r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "",
-    a = null != (n = null == (t = T(e)) ? void 0 : t.names[0]) ? n : i;
+    a = null != (n = null == (t = S(e)) ? void 0 : t.names[0]) ? n : i;
   return r ? ":".concat(a, ":") : a
 }
 
@@ -245,8 +245,8 @@ let K = {
   getCategories: w,
   getByName: D,
   getByCategory: x,
-  contentHasUnicodeOrEmoji: k,
-  translateInlineEmojiToSurrogates: M,
+  contentHasUnicodeOrEmoji: M,
+  translateInlineEmojiToSurrogates: k,
   maybeTranslateSurrogatesToInlineEmoji: Z,
   findInlineEmojisFromSurrogates: F,
   translateSurrogatesToInlineEmoji: V,

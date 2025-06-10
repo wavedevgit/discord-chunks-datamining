@@ -67,7 +67,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   return I(e).reduce((e, t) => {
     var n, r;
     if (t.type === h.Cl) return e.push({
@@ -75,7 +75,7 @@ function S(e) {
       navigable: !1
     }), e;
     if (t.type === h.kS) {
-      let n = S(t.props.children);
+      let n = T(t.props.children);
       return n.length > 0 && (e.push({
         type: "groupstart",
         length: n.length,
@@ -99,7 +99,7 @@ function S(e) {
       key: t.props.id,
       navigable: !0,
       label: t.props.label,
-      children: t.props.children ? S(t.props.children) : void 0,
+      children: t.props.children ? T(t.props.children) : void 0,
       onChildrenScroll: t.props.onChildrenScroll,
       props: t.props,
       childRowHeight: t.props.childRowHeight,
@@ -134,10 +134,10 @@ function S(e) {
   }, [])
 }
 
-function T(e) {
+function S(e) {
   return e.reduce((e, t) => (t.navigable && e.push({
     key: t.key,
-    children: "item" === t.type && null != t.children ? T(t.children) : void 0
+    children: "item" === t.type && null != t.children ? S(t.children) : void 0
   }), e), [])
 }
 
@@ -271,7 +271,7 @@ function N(e) {
     onClose: b,
     onSelect: O,
     onInteraction: I
-  } = e, N = S(h), C = T(N), P = i.useRef([]);
+  } = e, N = T(h), C = S(N), P = i.useRef([]);
   l()(P.current, C) || (P.current = C);
   let w = null == (t = N.find(e => null != e.key)) ? void 0 : t.key,
     D = (0, c.ZP)({
@@ -286,12 +286,12 @@ function N(e) {
   let L = i.useRef(null);
   (0, u.T)(L);
   let x = s ? d.u2 : d.zJ,
-    k = i.useMemo(() => ({
+    M = i.useMemo(() => ({
       onSelect: O,
       onInteraction: I
     }), [O, I]);
   return (0, r.jsx)(m.p.Provider, {
-    value: k,
+    value: M,
     children: (0, r.jsx)("div", v(y({
       className: o()(E.menu, E[a], f)
     }, D.getContainerProps()), {

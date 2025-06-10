@@ -7,7 +7,7 @@ n.d(t, {
   U$: () => N,
   ZP: () => D,
   e7: () => I,
-  wv: () => S,
+  wv: () => T,
   yK: () => v
 }), n(35282);
 var r = n(73800),
@@ -98,7 +98,7 @@ function I() {
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   null != e && null != t && y(e, t), l.Z.dispatch({
     type: "SET_SELECTED_SUMMARY",
     channelId: e,
@@ -106,7 +106,7 @@ function S(e, t) {
   })
 }
 
-function T(e, t) {
+function S(e, t) {
   l.Z.dispatch({
     type: "SET_GRAVITY_SELECTED_SUMMARY",
     channelId: e,
@@ -234,8 +234,8 @@ async function w(e) {
 let D = {
   setSummaryFeedback: N,
   updateVisibleMessages: A,
-  setSelectedSummary: S,
-  setGravitySelectedSummary: T,
+  setSelectedSummary: T,
+  setGravitySelectedSummary: S,
   setHighlightedSummary: v,
   fetchSummaries: O,
   fetchSummariesBulk: R,

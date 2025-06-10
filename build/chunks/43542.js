@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => T
 });
 var r = n(255367),
   i = n(73800),
@@ -105,7 +105,7 @@ function I(e) {
   }))
 }
 
-function S(e) {
+function T(e) {
   let {
     profile: t,
     disableGuildNameClick: n

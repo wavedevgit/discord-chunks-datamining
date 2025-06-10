@@ -73,7 +73,7 @@ function I(e) {
   n.delete(t), E = n
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: {
       id: t
@@ -94,7 +94,7 @@ function S(e) {
   return !1
 }
 
-function T(e) {
+function S(e) {
   let {
     guildId: t
   } = e;
@@ -139,11 +139,11 @@ f(N, "displayName", "SubscriptionRoleStore");
 let C = new N(o.Z, {
   CONNECTION_OPEN: v,
   LOGOUT: v,
-  GUILD_CREATE: S,
+  GUILD_CREATE: T,
   GUILD_DELETE: I,
-  GUILD_UPDATE: S,
-  GUILD_ROLE_CREATE: T,
-  GUILD_ROLE_UPDATE: T,
-  GUILD_ROLE_DELETE: T,
+  GUILD_UPDATE: T,
+  GUILD_ROLE_CREATE: S,
+  GUILD_ROLE_UPDATE: S,
+  GUILD_ROLE_DELETE: S,
   GUILD_MEMBER_UPDATE: A
 })

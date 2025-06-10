@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => T
 }), n(413496), n(433524), n(35282), n(704826), n(804061);
 var r = n(512722),
   i = n.n(r),
@@ -59,7 +59,7 @@ let d = /\n{2,}$/,
   O = 1,
   v = 1e9,
   I = e => e.map(e => ("text" === e.type && null != e.content && (e.content = e.content.replace(/\n+\s*$/, "")), e)),
-  S = u(l({}, o().defaultRules.list), {
+  T = u(l({}, o().defaultRules.list), {
     requiredFirstCharacters: " *-0123456789".split(""),
     match: (e, t) => {
       if (!t.allowList || t._listLevel >= y + 1) return null;
@@ -80,15 +80,15 @@ let d = /\n{2,}$/,
         b = RegExp("^ {1," + f + "}", "gm"),
         y = s.match(E);
       i()(null != y, "markup list items can not be parsed.");
-      let S = !1;
+      let T = !1;
       return {
         ordered: a,
         start: o,
         items: y.map((e, r) => {
           let i, a = e.replace(h, "").replace(b, ""),
             o = r === y.length - 1,
-            s = -1 !== a.indexOf("\n\n") || o && S;
-          S = s;
+            s = -1 !== a.indexOf("\n\n") || o && T;
+          T = s;
           let c = n.inline,
             d = n._list,
             f = n._listLevel;

@@ -41,13 +41,13 @@ function f(e) {
     useReducedMotion: O,
     alwaysShowLinkDecorations: v,
     hardwareAccelerationEnabled: I,
-    children: S
-  } = e, T = window.CSS.supports("selector(::-webkit-scrollbar)"), A = "font-size: ".concat(_, "%; --saturation-factor: ").concat(g, ";"), N = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(d), p, {
+    children: T
+  } = e, S = window.CSS.supports("selector(::-webkit-scrollbar)"), A = "font-size: ".concat(_, "%; --saturation-factor: ").concat(g, ";"), N = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(d), p, {
     "low-saturation": g <= l.AEw,
     "keyboard-mode": m,
     "decorate-links": v,
-    "no-webkit-scrollbar": !T,
-    "has-webkit-scrollbar": T,
+    "no-webkit-scrollbar": !S,
+    "has-webkit-scrollbar": S,
     "mouse-mode": h,
     "reduce-motion": O,
     "full-motion": !O,
@@ -66,6 +66,6 @@ function f(e) {
   }), [n, A, N]);
   return (0, r.jsx)(u.Provider, {
     value: C,
-    children: S
+    children: T
   })
 }

@@ -63,7 +63,7 @@ function v(e) {
   } = e, I = (0, l.e7)([p.Z], () => {
     var e, t;
     return null == (t = p.Z.settings.appearance) || null == (e = t.clientThemeSettings) ? void 0 : e.customUserThemeSettings
-  }), [S, T] = (0, _.US)([c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE]), A = (0, d.ZP)(), N = null != I, C = (0, u.wjy)(A) ? y.darkOverlay : y.lightOverlay, R = (null != (n = null == I || null == (t = I.colors) ? void 0 : t.length) ? n : 0) > 1, P = i.useMemo(() => {
+  }), [T, S] = (0, _.US)([c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE]), A = (0, d.ZP)(), N = null != I, C = (0, u.wjy)(A) ? y.darkOverlay : y.lightOverlay, R = (null != (n = null == I || null == (t = I.colors) ? void 0 : t.length) ? n : 0) > 1, P = i.useMemo(() => {
     if (null == I || null == I.colors || 0 === I.colors.length) return;
     let e = I.colors[0];
     if (R) {
@@ -77,8 +77,8 @@ function v(e) {
       background: "var(--bg-overlay), ".concat(e)
     }
   }, [I, R]), w = (0, f.Sl)(g.Il.WHITE).hex, D = (0, f.Sl)(g.Il.RED_430).hex, L = N ? w : void 0, x = i.useCallback(() => {
-    S === c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE && T(m.L.TAKE_ACTION), null == v || v()
-  }, [S, T, v]), k = S === c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE;
+    T === c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE && S(m.L.TAKE_ACTION), null == v || v()
+  }, [T, S, v]), M = T === c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE;
   return (0, r.jsxs)(h.S4, {
     onSelect: a ? void 0 : x,
     isSelected: !1,
@@ -93,7 +93,7 @@ function v(e) {
     }), (0, r.jsx)(s.V3v, {
       color: L,
       className: y.paletteIcon
-    }), k && (0, r.jsx)(u.IGR, {
+    }), M && (0, r.jsx)(u.IGR, {
       className: y.newBadge,
       text: b.intl.string(b.t.y2b7CA),
       color: D

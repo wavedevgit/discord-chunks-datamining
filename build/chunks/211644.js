@@ -5,7 +5,7 @@ n.d(t, {
   ZP: () => w,
   bn: () => C,
   cI: () => N,
-  f0: () => T,
+  f0: () => S,
   gE: () => A,
   mc: () => P
 }), n(388685), n(290780);
@@ -92,7 +92,7 @@ let u = new(n(499303)).I,
     })), e.candidates.get(t[Math.floor(Math.random() * t.length)])
   },
   I = e => null != e.prevFatigableCandidate && e.candidates.has(e.prevFatigableCandidate.content) && null == e.shownFatigableCandidate,
-  S = e => {
+  T = e => {
     if (0 === e.candidates.size) return e;
     let t = new Date().getTime() - e.lastWinnerTime > d;
     if (I(e) && !t) return u.unschedule(), y(e, O(e));
@@ -107,12 +107,12 @@ let u = new(n(499303)).I,
       })
     }, 250), e
   },
-  T = e => {
+  S = e => {
     let t = a.O.has(e.content);
     (0, i.j)(() => {
       p.setState(n => {
         let r = h(n);
-        return t ? g(r, e) : S(E(r, e))
+        return t ? g(r, e) : T(E(r, e))
       })
     })
   },
@@ -120,7 +120,7 @@ let u = new(n(499303)).I,
     (0, i.j)(() => {
       p.setState(n => {
         let r = h(n);
-        return t ? S(m(b(r, e), e)) : m(b(r, e), e)
+        return t ? T(m(b(r, e), e)) : m(b(r, e), e)
       })
     })
   },

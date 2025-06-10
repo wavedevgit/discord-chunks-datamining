@@ -2,13 +2,13 @@
 "use strict";
 n.d(t, {
   AW: () => y,
-  Cm: () => T,
+  Cm: () => S,
   HU: () => L,
   IV: () => A,
   J0: () => C,
   K8: () => D,
   RE: () => v,
-  Vt: () => k,
+  Vt: () => M,
   ZS: () => f,
   a$: () => w,
   aK: () => I,
@@ -16,7 +16,7 @@ n.d(t, {
   gJ: () => P,
   i0: () => E,
   kN: () => R,
-  lb: () => S,
+  lb: () => T,
   o0: () => j,
   o8: () => x,
   pv: () => N,
@@ -160,8 +160,8 @@ var b = function(e) {
 let O = ["avatar-decorations", "profile-effects", "nameplates", "bundles"],
   v = e => O.includes(e),
   I = e => null != e && "home" !== e && "catalog" !== e,
-  S = 800,
-  T = 6048e5,
+  T = 800,
+  S = 6048e5,
   A = 12,
   N = 1128,
   C = 518,
@@ -173,9 +173,9 @@ let O = ["avatar-decorations", "profile-effects", "nameplates", "bundles"],
 var x = function(e) {
   return e[e.FIAT = 0] = "FIAT", e[e.ORB = 1] = "ORB", e[e.PREMIUM_PURCHASE = 2] = "PREMIUM_PURCHASE", e[e.PROMOTIONAL = 3] = "PROMOTIONAL", e[e.TENURE_REWARD = 4] = "TENURE_REWARD", e[e.GIFT = 5] = "GIFT", e
 }({});
-let k = {
+let M = {
     ORB_PROFILE_BADGE: "1342211853484429445",
     FRACTIONAL_PREMIUM: u.a.PREMIUM_TIER_2_3_DAY
   },
-  M = new Set(Object.values(k)),
-  j = e => M.has(e)
+  k = new Set(Object.values(M)),
+  j = e => k.has(e)

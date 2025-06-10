@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => T
 }), n(314940);
 var r = n(255367),
   i = n(73800),
@@ -79,7 +79,7 @@ let v = [{
       })]
     })
   },
-  S = e => {
+  T = e => {
     let {
       user: t,
       guildId: n,
@@ -87,9 +87,9 @@ let v = [{
       className: _
     } = e, h = (0, l.e7)([m.Z], () => m.Z.getStatus(t.id)), {
       product: g,
-      purchase: S
-    } = (0, d.Z)(null == a ? void 0 : a.skuId), T = E.ZP.canUseCollectibles(t), A = (0, u.qS)(S), N = (0, u.G1)(g), C = !T && A, R = (0, p.M)(!N || T), P = (0, f.k)(g), w = i.useMemo(() => C ? y.intl.string(y.t["7vkeu7"]) : (0, s.EQ)([N, T, R]).with([!0, !0, !1], () => y.intl.string(y.t.hmyYKy)).with([!0, !1, !0], () => y.intl.string(y.t.q0PlFh)).with([!0, !1, !1], () => y.intl.string(y.t["0xs2sL"])).otherwise(() => y.intl.string(y.t.fEGjVV)), [C, N, T, R]);
-    return null != g && (null == S || C) ? (0, r.jsxs)("div", {
+      purchase: T
+    } = (0, d.Z)(null == a ? void 0 : a.skuId), S = E.ZP.canUseCollectibles(t), A = (0, u.qS)(T), N = (0, u.G1)(g), C = !S && A, R = (0, p.M)(!N || S), P = (0, f.k)(g), w = i.useMemo(() => C ? y.intl.string(y.t["7vkeu7"]) : (0, s.EQ)([N, S, R]).with([!0, !0, !1], () => y.intl.string(y.t.hmyYKy)).with([!0, !1, !0], () => y.intl.string(y.t.q0PlFh)).with([!0, !1, !1], () => y.intl.string(y.t["0xs2sL"])).otherwise(() => y.intl.string(y.t.fEGjVV)), [C, N, S, R]);
+    return null != g && (null == T || C) ? (0, r.jsxs)("div", {
       className: o()(O.modalPreview, O.shopPreviewContainer, _),
       children: [(0, r.jsx)("div", {
         className: O.shopPreviewBanner,
@@ -139,8 +139,8 @@ let v = [{
             }, "".concat(i).concat(o))
           })
         })]
-      }), null != S && (0, r.jsx)(I, {
-        purchase: S
+      }), null != T && (0, r.jsx)(I, {
+        purchase: T
       })]
     })
   }

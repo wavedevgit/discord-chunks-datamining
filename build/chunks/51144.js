@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  EO: () => S,
+  EO: () => T,
   Fc: () => I,
   Ft: () => N,
   W5: () => A,
@@ -128,14 +128,14 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   return v(e, {
     minDaysOld: 0,
     maxDaysOld: 7
   })
 }
 
-function T(e, t, n) {
+function S(e, t, n) {
   if (null == e) return s.intl.string(s.t.sKdZ6e);
   if (!h(e.username)) return d;
   let r = n;
@@ -147,7 +147,7 @@ function T(e, t, n) {
 function A(e, t) {
   let n = c({}, p, t),
     r = "auto" !== n.identifiable || i.Z.hidePersonalInformation;
-  return T(e, n, r)
+  return S(e, n, r)
 }
 
 function N(e) {
@@ -161,7 +161,7 @@ let C = {
   isNameConcealed: e => 4 === e.length && e.endsWith("..."),
   getUserTag: A,
   useUserTag: function(e, t) {
-    return T(e, c({}, p, t), (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation))
+    return S(e, c({}, p, t), (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation))
   },
   getFormattedName: y,
   getGlobalName: b,

@@ -29,10 +29,10 @@ function E(e) {
     showLogout: O,
     location: v,
     scopes: I
-  } = e, S = u.ZP.getApplicationIconURL({
+  } = e, T = u.ZP.getApplicationIconURL({
     id: E.id,
     icon: E.icon
-  }), T = u.ZP.getUserAvatarURL(n), A = i.useMemo(() => I.some(e => (0, _.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
+  }), S = u.ZP.getUserAvatarURL(n), A = i.useMemo(() => I.some(e => (0, _.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.x, {
       variant: "text-lg/normal",
       color: "header-secondary",
@@ -67,7 +67,7 @@ function E(e) {
       className: g.headerIcons,
       children: [(0, r.jsx)(o.qE, {
         className: g.avatar,
-        src: S,
+        src: T,
         size: h.EF.SIZE_80,
         "aria-label": E.name
       }), (0, r.jsxs)("div", {
@@ -81,7 +81,7 @@ function E(e) {
         })]
       }), (0, r.jsx)(o.qE, {
         className: g.avatar,
-        src: T,
+        src: S,
         size: h.EF.SIZE_80,
         "aria-label": n.username
       })]

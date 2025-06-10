@@ -94,8 +94,8 @@ function v(e) {
     icon: m,
     iconPosition: b = "start",
     iconOpticalOffsetMargin: v = 0,
-    focusProps: S
-  } = e, T = E(e, ["role", "variant", "size", "fullWidth", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "focusProps"]);
+    focusProps: T
+  } = e, S = E(e, ["role", "variant", "size", "fullWidth", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "focusProps"]);
 
   function A() {
     if (0 === v) return {};
@@ -125,14 +125,14 @@ function v(e) {
     R = "expressive" === n,
     P = i.useContext(s.S),
     w = (0, d.a)((0, f.ZP)()),
-    D = (0, r.jsx)(l.t, g(h({}, S), {
+    D = (0, r.jsx)(l.t, g(h({}, T), {
       children: (0, r.jsxs)("button", g(h({
         role: t,
         className: o()(_.button, _[a], _[n], {
           [_.fullWidth]: c
         }),
         ref: C
-      }, T), {
+      }, S), {
         children: [R && (0, r.jsx)(I, {
           hasReducedMotion: P.reducedMotion.enabled,
           buttonRef: C,

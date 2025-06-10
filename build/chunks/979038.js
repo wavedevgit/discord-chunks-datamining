@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => T
+  Z: () => S
 });
 var r = n(255367);
 n(73800);
@@ -25,7 +25,7 @@ var i = n(40851),
   O = n(477839),
   v = n(388032),
   I = n(603571);
-let S = e => {
+let T = e => {
   let {
     user: t,
     activity: n,
@@ -45,7 +45,7 @@ let S = e => {
   })
 };
 
-function T(e) {
+function S(e) {
   let {
     user: t,
     activity: n,
@@ -54,7 +54,7 @@ function T(e) {
   } = e;
   return null != n && n.application_id === O.bO ? (n.buttons = [v.intl.string(I.default["Fv/2Oz"])], n.metadata = {
     button_urls: [O.U8]
-  }, (0, r.jsx)(S, {
+  }, (0, r.jsx)(T, {
     user: t,
     activity: n,
     onAction: i

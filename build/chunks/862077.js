@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => T
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -45,13 +45,13 @@ function I(e) {
   return e
 }
 
-function S(e) {
+function T(e) {
   let {
     user: t,
     guildId: n,
     setPopoutRef: v,
-    channelId: S,
-    messageId: T,
+    channelId: T,
+    messageId: S,
     roleId: A,
     openedAt: N,
     onHide: C,
@@ -63,29 +63,29 @@ function S(e) {
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
-    channelId: S,
-    messageId: T,
+    channelId: T,
+    messageId: S,
     roleId: A
-  }), x = i.useRef(null), k = (0, _.ZP)(t.id, n);
+  }), x = i.useRef(null), M = (0, _.ZP)(t.id, n);
   i.useEffect(() => {
     null == v || v(null == x ? void 0 : x.current)
   }, [x, v]);
-  let M = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+  let k = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
     j = P ? "div" : o.VqE;
   return (0, r.jsx)(l.Gt, {
     value: D,
     children: (0, r.jsx)(d.Mt, {
       value: L,
       openedAt: N,
-      fetchStartedAt: null == k ? void 0 : k.fetchStartedAt,
-      fetchEndedAt: null == k ? void 0 : k.fetchEndedAt,
-      isLoaded: null == k ? void 0 : k.isLoaded,
+      fetchStartedAt: null == M ? void 0 : M.fetchStartedAt,
+      fetchEndedAt: null == M ? void 0 : M.fetchEndedAt,
+      isLoaded: null == M ? void 0 : M.isLoaded,
       children: (0, r.jsx)(j, {
         ref: x,
         "aria-label": t.username,
         children: (0, r.jsx)(h.Z, {
           user: t,
-          displayProfile: k,
+          displayProfile: M,
           themeType: E.lY.POPOUT,
           children: (0, r.jsxs)("div", {
             className: y.container,
@@ -107,7 +107,7 @@ function S(e) {
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
                   children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5u"], {
-                    username: u.ZP.getName(n, S, t)
+                    username: u.ZP.getName(n, T, t)
                   })
                 })]
               }), (0, r.jsxs)(o.Kqy, {
@@ -116,7 +116,7 @@ function S(e) {
                   isBlocked: w,
                   onClick: () => {
                     C(), (0, f.pQ)(I({
-                      action: M,
+                      action: k,
                       analyticsLocations: D
                     }, L))
                   }

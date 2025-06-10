@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   K: () => I,
-  Z: () => T
+  Z: () => S
 }), n(997841);
 var r = n(255367);
 n(73800);
@@ -83,13 +83,13 @@ function I(e) {
   return m.intl.string(m.t.YScQSE)
 }
 
-function S(e, t) {
+function T(e, t) {
   null != e.current && (e.current.scrollIntoView({
     behavior: "smooth"
   }), t())
 }
 
-function T(e) {
+function S(e) {
   var t;
   let {
     legalTermsNodeRef: n,
@@ -100,7 +100,7 @@ function T(e) {
     isSubmitting: h,
     premiumSubscription: b,
     isGift: O,
-    planGroup: T,
+    planGroup: S,
     isPrepaid: A,
     isTrial: N,
     makePurchase: C,
@@ -111,18 +111,18 @@ function T(e) {
   } = e, {
     application: L,
     selectedPlan: x,
-    hasAcceptedTerms: k,
-    purchaseType: M,
+    hasAcceptedTerms: M,
+    purchaseType: k,
     paymentSourceId: j,
     activeSubscription: U,
     devShelfFetchState: G,
     hasPaymentSources: B
   } = (0, c.JL)(), F = I({
-    purchaseType: M,
+    purchaseType: k,
     plan: x,
     premiumSubscription: b,
     isGift: O,
-    planGroup: T,
+    planGroup: S,
     isPrepaidPaymentSource: A,
     inReverseTrial: P,
     paymentSourceId: j,
@@ -167,8 +167,8 @@ function T(e) {
   });
   if (N) return (0, r.jsxs)(o.gtL, {
     innerClassName: g.innerButton,
-    "data-testid": k ? "purchase" : "submitButton",
-    onClick: k ? C : () => S(n, f),
+    "data-testid": M ? "purchase" : "submitButton",
+    onClick: M ? C : () => T(n, f),
     color: o.zxk.Colors.GREEN,
     submitting: h,
     children: [(0, r.jsx)("img", {
@@ -177,12 +177,12 @@ function T(e) {
       src: E
     }), F]
   });
-  else if (!k) return (0, r.jsx)(o.ua7, {
+  else if (!M) return (0, r.jsx)(o.ua7, {
     text: m.intl.string(m.t.XdvBLS),
     children: e => (0, r.jsx)(o.zxk, v(y({}, e), {
       color: o.zxk.Colors.GREEN,
       type: "submit",
-      onClick: () => S(n, f),
+      onClick: () => T(n, f),
       "data-testid": "submitButton",
       children: F
     }))

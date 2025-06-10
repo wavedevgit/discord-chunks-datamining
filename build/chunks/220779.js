@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  A7: () => S,
+  A7: () => T,
   dE: () => A
 }), n(388685);
 var r = n(255367),
@@ -64,7 +64,7 @@ let I = (0, p.kt)({
   type: m.d4z.DM
 });
 
-function S(e) {
+function T(e) {
   let {
     placeholder: t,
     onEnter: n,
@@ -75,8 +75,8 @@ function S(e) {
     onFocus: _,
     channel: p,
     className: m
-  } = e, [g, b] = i.useState(""), [O, S] = i.useState((0, u.JM)("")), T = () => {
-    b(""), S((0, u.JM)(""))
+  } = e, [g, b] = i.useState(""), [O, T] = i.useState((0, u.JM)("")), S = () => {
+    b(""), T((0, u.JM)(""))
   }, A = c.Ie.ATOMIC_REACTOR_REPLY_INPUT, N = i.useRef(null), C = () => {
     if (null == N.current) return "top";
     let e = N.current.getBoundingClientRect(),
@@ -93,7 +93,7 @@ function S(e) {
     maxCharacterCount: h.z,
     channel: null != p ? p : I,
     onChange: (e, t, n) => {
-      b(t), S(n)
+      b(t), T(n)
     },
     type: s ? v(y({}, A), {
       emojis: {
@@ -109,7 +109,7 @@ function S(e) {
       return t.length > h.z ? Promise.resolve({
         shouldClear: !1,
         shouldRefocus: !0
-      }) : (n(t), T(), Promise.resolve({
+      }) : (n(t), S(), Promise.resolve({
         shouldClear: !0,
         shouldRefocus: !1
       }))
@@ -124,7 +124,7 @@ function S(e) {
     renderAttachButton: l
   })
 }
-let T = (e, t) => {
+let S = (e, t) => {
     i.useEffect(() => {
       let n = t => {
           "Escape" === t.key && e()
@@ -143,7 +143,7 @@ let T = (e, t) => {
       onSelectEmoji: t,
       onClick: n
     } = e, a = (0, l.ZP)(), [o, c] = i.useState(!1), u = i.useRef(null), d = i.useRef(null);
-    return T(() => c(!1), u), (0, r.jsx)(s.yRy, {
+    return S(() => c(!1), u), (0, r.jsx)(s.yRy, {
       targetElementRef: d,
       align: "right",
       position: "top",

@@ -9,9 +9,9 @@ n.d(t, {
   d9: () => R,
   dF: () => v,
   dX: () => L,
-  iF: () => S,
+  iF: () => T,
   kl: () => A,
-  mn: () => T,
+  mn: () => S,
   p3: () => b,
   wC: () => E
 }), n(997841), n(388685), n(539854), n(472816), n(794429);
@@ -88,17 +88,17 @@ function v(e, t, n) {
 }
 
 function I(e) {
-  return S(o.Z.getChannel(e))
-}
-
-function S(e) {
-  return null != e && !!(0, _.s)(e.guild_id, e.id) && (e.isForumChannel() ? f.Uu(p.Plq.SEND_MESSAGES_IN_THREADS, e) : f.Uu(p.Plq.SEND_MESSAGES, e))
+  return T(o.Z.getChannel(e))
 }
 
 function T(e) {
+  return null != e && !!(0, _.s)(e.guild_id, e.id) && (e.isForumChannel() ? f.Uu(p.Plq.SEND_MESSAGES_IN_THREADS, e) : f.Uu(p.Plq.SEND_MESSAGES, e))
+}
+
+function S(e) {
   return (0, r.e7)([o.Z], () => {
     let t = o.Z.getChannel(e);
-    return (0, d.lm)(t) && S(t)
+    return (0, d.lm)(t) && T(t)
   })
 }
 
@@ -121,7 +121,7 @@ function A(e, t, n) {
 function N(e, t) {
   return e.filter(e => {
     var n;
-    return S(null == (n = t[e]) ? void 0 : n.channel)
+    return T(null == (n = t[e]) ? void 0 : n.channel)
   })
 }
 
@@ -163,7 +163,7 @@ function w(e, t) {
       r = [],
       i = [],
       a = {};
-    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (a[e.channel.id] = e, r.push(e.channel), S(e.channel) && i.push(e.channel.id));
+    for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (a[e.channel.id] = e, r.push(e.channel), T(e.channel) && i.push(e.channel.id));
     return [i, r]
   }, [e, t], P)
 }

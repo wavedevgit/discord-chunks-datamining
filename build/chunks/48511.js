@@ -20,8 +20,8 @@ var r = "function" == typeof Map && Map.prototype,
   O = String.prototype.toLowerCase,
   v = RegExp.prototype.test,
   I = Array.prototype.concat,
-  S = Array.prototype.join,
-  T = Array.prototype.slice,
+  T = Array.prototype.join,
+  S = Array.prototype.slice,
   A = Math.floor,
   N = "function" == typeof BigInt ? BigInt.prototype.valueOf : null,
   C = Object.getOwnPropertySymbols,
@@ -46,9 +46,9 @@ function x(e, t) {
   }
   return b.call(t, n, "$&_")
 }
-var k = n(706827),
-  M = k.custom,
-  j = X(M) ? M : null,
+var M = n(706827),
+  k = M.custom,
+  j = X(k) ? k : null,
   U = {
     __proto__: null,
     double: '"',
@@ -147,7 +147,7 @@ e.exports = function e(t, r, i, s) {
   else if (en(s, t) >= 0) return "[Circular]";
 
   function y(t, n, r) {
-    if (n && (s = T.call(s)).push(n), r) {
+    if (n && (s = S.call(s)).push(n), r) {
       var a = {
         depth: l.depth
       };
@@ -158,27 +158,27 @@ e.exports = function e(t, r, i, s) {
   if ("function" == typeof t && !Y(t)) {
     var v = et(t),
       A = eg(t, y);
-    return "[Function" + (v ? ": " + v : " (anonymous)") + "]" + (A.length > 0 ? " { " + S.call(A, ", ") + " }" : "")
+    return "[Function" + (v ? ": " + v : " (anonymous)") + "]" + (A.length > 0 ? " { " + T.call(A, ", ") + " }" : "")
   }
   if (X(t)) {
     var C = P ? b.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : R.call(t);
     return "object" != typeof t || P ? C : ed(C)
   }
   if (el(t)) {
-    for (var M = "<" + O.call(String(t.nodeName)), G = t.attributes || [], V = 0; V < G.length; V++) M += " " + G[V].name + "=" + B(F(G[V].value), "double", l);
-    return M += ">", t.childNodes && t.childNodes.length && (M += "..."), M += "</" + O.call(String(t.nodeName)) + ">"
+    for (var k = "<" + O.call(String(t.nodeName)), G = t.attributes || [], V = 0; V < G.length; V++) k += " " + G[V].name + "=" + B(F(G[V].value), "double", l);
+    return k += ">", t.childNodes && t.childNodes.length && (k += "..."), k += "</" + O.call(String(t.nodeName)) + ">"
   }
   if (Z(t)) {
     if (0 === t.length) return "[]";
     var J = eg(t, y);
-    return g && !ep(J) ? "[" + em(J, g) + "]" : "[ " + S.call(J, ", ") + " ]"
+    return g && !ep(J) ? "[" + em(J, g) + "]" : "[ " + T.call(J, ", ") + " ]"
   }
   if (W(t)) {
     var eu = eg(t, y);
-    return "cause" in Error.prototype || !("cause" in t) || D.call(t, "cause") ? 0 === eu.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + S.call(eu, ", ") + " }" : "{ [" + String(t) + "] " + S.call(I.call("[cause]: " + y(t.cause), eu), ", ") + " }"
+    return "cause" in Error.prototype || !("cause" in t) || D.call(t, "cause") ? 0 === eu.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + T.call(eu, ", ") + " }" : "{ [" + String(t) + "] " + T.call(I.call("[cause]: " + y(t.cause), eu), ", ") + " }"
   }
   if ("object" == typeof t && d) {
-    if (j && "function" == typeof t[j] && k) return k(t, {
+    if (j && "function" == typeof t[j] && M) return M(t, {
       depth: m - i
     });
     else if ("symbol" !== d && "function" == typeof t.inspect) return t.inspect()
@@ -209,8 +209,8 @@ e.exports = function e(t, r, i, s) {
       eO = L ? L(t) === Object.prototype : t instanceof Object || t.constructor === Object,
       ev = t instanceof Object ? "" : "null prototype",
       eI = !eO && w && Object(t) === t && w in t ? E.call(ee(t), 8, -1) : ev ? "Object" : "",
-      eS = (eO || "function" != typeof t.constructor ? "" : t.constructor.name ? t.constructor.name + " " : "") + (eI || ev ? "[" + S.call(I.call([], eI || [], ev || []), ": ") + "] " : "");
-    return 0 === ey.length ? eS + "{}" : g ? eS + "{" + em(ey, g) + "}" : eS + "{ " + S.call(ey, ", ") + " }"
+      eT = (eO || "function" != typeof t.constructor ? "" : t.constructor.name ? t.constructor.name + " " : "") + (eI || ev ? "[" + T.call(I.call([], eI || [], ev || []), ": ") + "] " : "");
+    return 0 === ey.length ? eT + "{}" : g ? eT + "{" + em(ey, g) + "}" : eT + "{ " + T.call(ey, ", ") + " }"
   }
   return String(t)
 };
@@ -338,7 +338,7 @@ function ef(e) {
 }
 
 function e_(e, t, n, r) {
-  return e + " (" + t + ") {" + (r ? em(n, r) : S.call(n, ", ")) + "}"
+  return e + " (" + t + ") {" + (r ? em(n, r) : T.call(n, ", ")) + "}"
 }
 
 function ep(e) {
@@ -352,18 +352,18 @@ function eh(e, t) {
   if ("	" === e.indent) n = "	";
   else {
     if ("number" != typeof e.indent || !(e.indent > 0)) return null;
-    n = S.call(Array(e.indent + 1), " ")
+    n = T.call(Array(e.indent + 1), " ")
   }
   return {
     base: n,
-    prev: S.call(Array(t + 1), n)
+    prev: T.call(Array(t + 1), n)
   }
 }
 
 function em(e, t) {
   if (0 === e.length) return "";
   var n = "\n" + t.prev + t.base;
-  return n + S.call(e, "," + n) + "\n" + t.prev
+  return n + T.call(e, "," + n) + "\n" + t.prev
 }
 
 function eg(e, t) {

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   C: () => N,
-  default: () => T
+  default: () => S
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -60,16 +60,16 @@ function v(e, t) {
   }), e
 }
 let I = 2500,
-  S = 467;
+  T = 467;
 
-function T(e) {
+function S(e) {
   let {
     questId: t,
     survey: n,
     transitionState: a,
     onClose: o,
     onSubmit: f
-  } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [T, N] = (0, l.q_F)(() => ({
+  } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [S, N] = (0, l.q_F)(() => ({
     from: {
       width: "0%"
     },
@@ -95,7 +95,7 @@ function T(e) {
     parentComponent: "QuestSurveyModal",
     children: (0, r.jsxs)(l.MyZ, {
       activeSlide: b,
-      width: S,
+      width: T,
       onSlideReady: P,
       children: [(0, r.jsxs)(l.Mi4, {
         id: 0,
@@ -149,7 +149,7 @@ function T(e) {
               children: m.intl.string(m.t.cpT0Cg)
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,
-              style: T
+              style: S
             })]
           })
         })]

@@ -92,8 +92,8 @@ let g = 24,
       iconSize: O = g,
       onClick: v,
       onContextMenu: I,
-      tooltip: S = null,
-      tooltipColor: T,
+      tooltip: T = null,
+      tooltipColor: S,
       tooltipPosition: A = "bottom",
       tooltipDisabled: N,
       tooltipSpacing: C,
@@ -103,8 +103,8 @@ let g = 24,
       "aria-hidden": D,
       "aria-checked": L,
       "aria-expanded": x,
-      "aria-haspopup": k,
-      "data-jump-section": M
+      "aria-haspopup": M,
+      "data-jump-section": k
     } = e, j = (0, f.Q3)("BaseHeaderBar"), U = null != b ? {
       secondaryColorClass: b
     } : {}, G = (0, r.jsx)(y, m({
@@ -117,9 +117,9 @@ let g = 24,
       colorClass: null != E ? E : void 0,
       color: null != h ? h : "currentColor"
     }, U)), B = w;
-    return null == B && "string" == typeof S && (B = S), (0, r.jsx)(c.ua7, {
-      text: S,
-      color: T,
+    return null == B && "string" == typeof T && (B = T), (0, r.jsx)(c.ua7, {
+      text: T,
+      color: S,
       position: A,
       hideOnClick: R,
       shouldShow: !N,
@@ -129,7 +129,7 @@ let g = 24,
           onMouseEnter: f,
           onMouseLeave: g,
           onFocus: b,
-          onBlur: S
+          onBlur: T
         } = e;
         return null == v ? (0, r.jsx)("div", {
           ref: t,
@@ -149,7 +149,7 @@ let g = 24,
             onMouseEnter: f,
             onMouseLeave: g,
             onFocus: b,
-            onBlur: S
+            onBlur: T
           }, U))
         }) : (0, r.jsxs)(c.P3F, {
           innerRef: t,
@@ -159,7 +159,7 @@ let g = 24,
           onMouseEnter: f,
           onMouseLeave: g,
           onFocus: b,
-          onBlur: S,
+          onBlur: T,
           className: o()(n, {
             [p.iconWrapper]: !0,
             [p.clickable]: !l && null != v,
@@ -170,10 +170,10 @@ let g = 24,
           "aria-label": B,
           "aria-hidden": D,
           "aria-checked": L,
-          "aria-haspopup": k,
+          "aria-haspopup": M,
           "aria-expanded": x,
           tabIndex: l || null == v ? -1 : 0,
-          "data-jump-section": M,
+          "data-jump-section": k,
           children: [u ? (0, r.jsx)(d.ZP, {
             mask: "top" === _ ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
             height: j ? O : void 0,

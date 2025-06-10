@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Vh: () => T,
+  Vh: () => S,
   f: () => I,
   hR: () => R,
-  xF: () => S
+  xF: () => T
 }), n(35282), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(512722),
   i = n.n(r),
@@ -75,7 +75,7 @@ function I(e, t) {
   return n ? "".concat(e, ":").concat(n.toString()) : null
 }
 
-function S(e, t, n) {
+function T(e, t, n) {
   if (null != t && t.includes(":")) {
     let [e, r] = t.split(":");
     return e === u.ABu.TWITCH ? null == n || "number" == typeof n ? void new l.Z("ApplicationAssetUtils").warn("getAssetImage: size must === [number, number] for Twitch") : E[u.ABu.TWITCH].deserialize(r, n) : Object.prototype.hasOwnProperty.call(E, e) ? E[e].deserialize(r) : void 0
@@ -85,7 +85,7 @@ function S(e, t, n) {
     i = "number" == typeof r ? "?size=".concat((0, c.oO)(r)) : "";
   return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/app-assets/").concat(e, "/").concat(t, ".png").concat(i) : "".concat((0, a.K0)(), "/applications/").concat(e, "/app-assets/").concat(t, ".png").concat(i)
 }
-async function T(e) {
+async function S(e) {
   let t = await v(e);
   return null == t ? void 0 : t.assets
 }
@@ -150,7 +150,7 @@ async function R(e, t) {
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r;
-  let a = await T(e);
+  let a = await S(e);
   return (o.Z.dispatch({
     type: "APPLICATION_ASSETS_UPDATE",
     applicationId: e,

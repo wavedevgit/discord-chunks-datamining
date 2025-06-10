@@ -82,26 +82,26 @@ let O = function(e) {
     speaking: O = !1
   } = e, v = b(e, ["style", "src", "backgroundSrc", "userId", "pulseSpeakingIndicator", "speaking"]);
   let I = null != h ? h : n,
-    S = (0, s.ZP)(I, a.Z.unsafe_rawColors.PRIMARY_800.css),
-    T = (0, l.c)(!0, "VideoBackground-web").enabled,
+    T = (0, s.ZP)(I, a.Z.unsafe_rawColors.PRIMARY_800.css),
+    S = (0, l.c)(!0, "VideoBackground-web").enabled,
     A = (0, u.ZP)(null != g ? g : _.lds),
     N = null == A ? void 0 : A.getBannerURL({
       size: 1024,
       canAnimate: f.QK.getSetting()
     });
   if (i.useEffect(() => {
-      null != g && T && (0, d.Z)(g, void 0, {
+      null != g && S && (0, d.Z)(g, void 0, {
         dispatchWait: !0
       })
-    }, [T, g]), null == n) return null;
+    }, [S, g]), null == n) return null;
   let C = (0, r.jsx)(o.qEK, m({
       className: p.avatarWrapper,
       src: n
     }, v)),
     R = E(m({}, t), {
-      backgroundColor: S
+      backgroundColor: T
     });
-  return null != N && O && T && (R.backgroundImage = "url(".concat(N, ")"), R.backgroundSize = "cover"), (0, r.jsx)("div", {
+  return null != N && O && S && (R.backgroundImage = "url(".concat(N, ")"), R.backgroundSize = "cover"), (0, r.jsx)("div", {
     style: R,
     className: p.background,
     children: y ? (0, r.jsx)(c.Z, {

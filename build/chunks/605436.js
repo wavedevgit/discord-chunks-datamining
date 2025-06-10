@@ -14,7 +14,7 @@ n.d(t, {
   Yh: () => K,
   Yk: () => z,
   _A: () => Y,
-  aq: () => S,
+  aq: () => T,
   cR: () => V,
   iI: () => B,
   ik: () => R,
@@ -91,7 +91,7 @@ function I(e, t) {
   return n !== r ? n - r : t.position - e.position
 }
 
-function S() {
+function T() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g.intl.string(g.t.gnsna2);
   return [{
     rowType: h.aC.EMPTY_STATE,
@@ -102,7 +102,7 @@ function S() {
   }]
 }
 
-function T(e, t, n, i) {
+function S(e, t, n, i) {
   let a = c.default.getCurrentUser();
   if (null == a) return !1;
   if (null == e) return a.id !== t;
@@ -124,41 +124,41 @@ function C(e, t) {
 
 function R(e, t, n, r) {
   let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : () => !0;
-  return Object.values(t).filter(t => !y(t) && T(n, t.id, r) && C(e, t) && i(t.name)).sort(I).map(e => v(e))
+  return Object.values(t).filter(t => !y(t) && S(n, t.id, r) && C(e, t) && i(t.name)).sort(I).map(e => v(e))
 }
 
 function P(e, t, n, i) {
   let a = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : () => !0;
-  return Object.values(t).filter(t => !y(t) && T(n, t.id, i) && C(e, t) && a(t.name)).sort(I).map(e => v(e, r.e$(e.permissions, i)))
+  return Object.values(t).filter(t => !y(t) && S(n, t.id, i) && C(e, t) && a(t.name)).sort(I).map(e => v(e, r.e$(e.permissions, i)))
 }
 
 function w(e, t, n, r, i) {
-  return Object.values(t).filter(t => y(t) || !T(n, t.id, r, i) && C(e, t))
+  return Object.values(t).filter(t => y(t) || !S(n, t.id, r, i) && C(e, t))
 }
 
 function D(e, t, n, i, a) {
   return Object.values(t).filter(t => {
     var o;
-    return y(t) || !T(n, t.id, i, a) && C(e, t) || r.e$(r.$e(t.permissions, null == (o = n.permissionOverwrites[t.id]) ? void 0 : o.allow), i)
+    return y(t) || !S(n, t.id, i, a) && C(e, t) || r.e$(r.$e(t.permissions, null == (o = n.permissionOverwrites[t.id]) ? void 0 : o.allow), i)
   })
 }
 
 function L(e, t, n, r, i) {
   let a = [];
-  return 0 === (a = w(e, t, n, r, i).sort(I).map(e => v(e))).length ? S(g.intl.string(g.t.nZfHsb)) : a
+  return 0 === (a = w(e, t, n, r, i).sort(I).map(e => v(e))).length ? T(g.intl.string(g.t.nZfHsb)) : a
 }
 
 function x(e, t, n, i, a) {
   let o = [];
-  return 0 === (o = D(e, t, n, i, a).sort(I).map(e => v(e, r.e$(e.permissions, i)))).length ? S(g.intl.string(g.t.nZfHsb)) : o
+  return 0 === (o = D(e, t, n, i, a).sort(I).map(e => v(e, r.e$(e.permissions, i)))).length ? T(g.intl.string(g.t.nZfHsb)) : o
 }
 
-function k(e, t) {
+function M(e, t) {
   var n;
   return null != (n = l.ZP.getNick(t.id, e.id)) ? n : p.ZP.getName(e)
 }
 
-function M(e, t) {
+function k(e, t) {
   return t.isOwner(e)
 }
 
@@ -171,14 +171,14 @@ function U(e, t) {
   let r = j(e, t);
   return {
     rowType: r,
-    name: k(e, t),
+    name: M(e, t),
     nickname: null != (n = l.ZP.getNick(t.id, e.id)) ? n : null,
     username: p.ZP.getName(e),
     id: e.id,
     avatarURL: e.getAvatarURL(t.id, 24),
     bot: e.bot,
     verifiedBot: e.isVerifiedBot(),
-    disabled: M(e, t),
+    disabled: k(e, t),
     key: "".concat(r, ":").concat(e.id)
   }
 }
@@ -189,11 +189,11 @@ function G(e, t) {
 
 function B(e, t, n, r) {
   let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : () => !0;
-  return e.map(c.default.getUser).filter(d.lm).filter(e => !n.isOwner(e) && T(t, e.id, r) && (i(k(e, n)) || i(e.username) || i(e.discriminator))).map(e => U(e, n)).sort(G)
+  return e.map(c.default.getUser).filter(d.lm).filter(e => !n.isOwner(e) && S(t, e.id, r) && (i(M(e, n)) || i(e.username) || i(e.discriminator))).map(e => U(e, n)).sort(G)
 }
 
 function F(e, t, n, r, i) {
-  return e.map(c.default.getUser).filter(d.lm).filter(e => !T(t, e.id, r, i) || M(e, n))
+  return e.map(c.default.getUser).filter(d.lm).filter(e => !S(t, e.id, r, i) || k(e, n))
 }
 
 function V(e, t, n, r, i) {

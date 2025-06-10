@@ -31,17 +31,17 @@ let d = 5,
   O = [],
   v = !1,
   I = 0,
-  S = !1,
-  T = null;
+  T = !1,
+  S = null;
 
 function A() {
-  f = null, _ = new Set, h = !1, m = new Set, g = new Set, E = new Map, b = 0, y = null, O = [], v = !1, I = 0, S = !1, T = null, p = new Map
+  f = null, _ = new Set, h = !1, m = new Set, g = new Set, E = new Map, b = 0, y = null, O = [], v = !1, I = 0, T = !1, S = null, p = new Map
 }
 let N = () => !0;
 
 function C(e) {
   let {} = e;
-  T = null, h = !0
+  S = null, h = !0
 }
 
 function R(e) {
@@ -52,12 +52,12 @@ function R(e) {
     recipient_status: i,
     has_eligible_friends: a
   } = e;
-  S = null == r && a, h = !1, f = t, _ = new Set(n), T = r, p = i
+  T = null == r && a, h = !1, f = t, _ = new Set(n), S = r, p = i
 }
 
 function P(e) {
   let {} = e;
-  S = !1, T = null, h = !1, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
+  T = !1, S = null, h = !1, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
 }
 
 function w(e) {
@@ -85,14 +85,14 @@ function x(e) {
   null != t && (m.delete(t.id), g.add(t.id), E.set(t.id, t))
 }
 
-function k(e) {
+function M(e) {
   let {
     userTrialOfferId: t
   } = e;
   m.delete(t), g.add(t)
 }
 
-function M(e) {
+function k(e) {
   let {
     message: t
   } = e;
@@ -166,10 +166,10 @@ class Z extends(r = a.ZP.Store) {
     return I
   }
   getIsEligibleToSendReferrals() {
-    return S
+    return T
   }
   getRefreshAt() {
-    return T
+    return S
   }
   getAllRelevantReferralTrialOffers() {
     return Array.from(E.values())
@@ -187,12 +187,12 @@ let H = new Z(o.Z, {
   BILLING_CREATE_REFERRAL_SUCCESS: w,
   CREATE_REFERRALS_SUCCESS: D,
   BILLING_REFERRAL_RESOLVE_SUCCESS: x,
-  BILLING_REFERRAL_RESOLVE_FAIL: k,
+  BILLING_REFERRAL_RESOLVE_FAIL: M,
   REFERRALS_FETCH_ELIGIBLE_USER_START: B,
   REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: F,
   REFERRALS_FETCH_ELIGIBLE_USER_FAIL: V,
   LOAD_MESSAGES_SUCCESS: j,
-  MESSAGE_CREATE: M,
+  MESSAGE_CREATE: k,
   LOAD_MESSAGES_AROUND_SUCCESS: j,
   LOGOUT: A
 })

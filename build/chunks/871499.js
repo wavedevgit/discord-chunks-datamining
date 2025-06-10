@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => v,
-  d: () => T
+  d: () => S
 });
 var r = n(255367),
   i = n(73800),
@@ -91,8 +91,8 @@ function v(e) {
     themeable: O = !1,
     disabled: v = !1,
     isActive: I = !1,
-    tooltipPosition: S = "top",
-    shouldShowTooltip: T = !0,
+    tooltipPosition: T = "top",
+    shouldShowTooltip: S = !0,
     forceTooltipOpen: A = !1,
     buttonRef: N,
     grow: C,
@@ -104,17 +104,17 @@ function v(e) {
   } = e;
   return (0, r.jsx)(f.Z, {
     children: (0, r.jsx)(l.ua7, {
-      position: S,
+      position: T,
       text: t,
       "aria-label": R,
-      shouldShow: T,
+      shouldShow: S,
       forceOpen: A,
       children: e => {
         var {
           onClick: t,
           onContextMenu: f,
-          onMouseEnter: S,
-          onMouseLeave: T
+          onMouseEnter: T,
+          onMouseLeave: S
         } = e, A = y(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
         return (0, r.jsxs)(l.zxk, b(g({
           look: null != P ? P : l.zxk.Looks.BLANK,
@@ -130,19 +130,19 @@ function v(e) {
             null == t || t(), null == n || n(e)
           },
           onMouseEnter: e => {
-            null == S || S(), null == a || a(e)
+            null == T || T(), null == a || a(e)
           },
           onMouseLeave: e => {
-            null == T || T(), null == c || c(e)
+            null == S || S(), null == c || c(e)
           },
           onContextMenu: e => {
             null == f || f(), null == u || u(e)
           },
           onFocus: e => {
-            null == S || S(), null == a || a(e)
+            null == T || T(), null == a || a(e)
           },
           onBlur: e => {
-            null == T || T(), null == c || c(e)
+            null == S || S(), null == c || c(e)
           },
           disabled: v,
           innerClassName: o()(h.lineHeightReset, {
@@ -182,7 +182,7 @@ let I = {
     activeLight: h.activeLight,
     premiumGradient: h.premiumGradient
   },
-  S = {
+  T = {
     disconnect: h.disconnect,
     join: h.join,
     red: h.redGlow,
@@ -195,7 +195,7 @@ let I = {
     premiumGradient: h.premiumGradient
   };
 
-function T(e) {
+function S(e) {
   var t, {
       ref: n,
       color: a,
@@ -203,7 +203,7 @@ function T(e) {
       isActive: m = !1,
       className: E,
       iconClassName: O,
-      onPopoutClick: T,
+      onPopoutClick: S,
       popoutOpen: A = !1,
       popoutDisabled: N = !1,
       isTrayButton: C,
@@ -214,28 +214,28 @@ function T(e) {
     D = null != s ? s : w,
     L = (0, c.Z)("(max-width: 456px)"),
     x = i.useRef(null),
-    k = i.useContext(d.h9);
+    M = i.useContext(d.h9);
   i.useEffect(() => {
-    null != x.current && (k ? x.current.pause() : x.current.play())
-  }, [k]);
-  let M = null != (t = P.onContextMenu) ? t : T,
-    j = null == T && !C,
-    U = null != T && !C,
-    G = C && null != T,
+    null != x.current && (M ? x.current.pause() : x.current.play())
+  }, [M]);
+  let k = null != (t = P.onContextMenu) ? t : S,
+    j = null == S && !C,
+    U = null != S && !C,
+    G = C && null != S,
     B = (0, r.jsx)(v, b(g({}, P), {
       grow: !1,
-      onContextMenu: M,
+      onContextMenu: k,
       iconClassName: o()(O, h.centerIcon, j && h.fullRegionIcon),
-      className: o()(L || R ? E : null, m && h.active, h.centerButton, S[w], j && h.fullRegionButton, G && h.attachedButton)
+      className: o()(L || R ? E : null, m && h.active, h.centerButton, T[w], j && h.fullRegionButton, G && h.attachedButton)
     }));
   return L ? B : (0, r.jsxs)("div", {
     ref: n,
     className: o()(h.attachedCaretButtonContainer, A && h.popoutOpen, E, U && [h.fullRegionDropdownButton, I[w]]),
-    children: [B, null != T ? (0, r.jsx)(f.Z, {
+    children: [B, null != S ? (0, r.jsx)(f.Z, {
       children: (0, r.jsx)(l.P3F, {
         "aria-label": p.intl.string(p.t.PdRCRk),
-        onClick: N ? void 0 : T,
-        className: o()(h.contextMenuNub, C && h.attachedCaret, S[D], A && [h.popoutOpen, h.active], N && h.disabled),
+        onClick: N ? void 0 : S,
+        className: o()(h.contextMenuNub, C && h.attachedCaret, T[D], A && [h.popoutOpen, h.active], N && h.disabled),
         children: (0, r.jsx)(u.Z, {
           className: o()(h.contextMenuCaret, A && h.open, N && h.disabled)
         })

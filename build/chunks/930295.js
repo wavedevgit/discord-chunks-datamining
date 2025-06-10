@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F: () => S,
+  F: () => T,
   H: () => A
 }), n(953529), n(388685), n(415506);
 var r, i = n(255367),
@@ -59,8 +59,8 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = Symbol("POPOUT_PREVENT_CLOSE"),
-  T = new Set(["Spacebar", " ", "Enter"]);
+let T = Symbol("POPOUT_PREVENT_CLOSE"),
+  S = new Set(["Spacebar", " ", "Enter"]);
 class A extends(r = a.Component) {
   shouldShowPopout(e, t) {
     return null != e.shouldShow ? e.shouldShow : t.shouldShowPopout
@@ -209,7 +209,7 @@ class A extends(r = a.Component) {
         onRequestClose: t,
         shouldShow: n
       } = this.props;
-      (null == t ? void 0 : t(e)) !== S && null == n && this.toggleShow(!1)
+      (null == t ? void 0 : t(e)) !== T && null == n && this.toggleShow(!1)
     }), y(this, "handleClick", e => {
       let {
         onShiftClick: t,
@@ -253,7 +253,7 @@ class A extends(r = a.Component) {
         }
       }
     }), y(this, "handleKeyboardPreload", e => {
-      T.has(e.key) && this.handlePreload()
+      S.has(e.key) && this.handlePreload()
     }), y(this, "handleDocumentMouseDown", e => {
       let {
         ignoreModalClicks: t

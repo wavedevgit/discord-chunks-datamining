@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => M,
+  ZP: () => k,
   wU: () => D
 }), n(388685);
 var r, i = n(442837),
@@ -75,7 +75,7 @@ function y(e, t) {
 let O = 7,
   v = 1e3,
   I = new Set,
-  S = new a.h(function(e) {
+  T = new a.h(function(e) {
     let {
       userId: t,
       channelId: n
@@ -89,7 +89,7 @@ let O = 7,
     return "".concat(n, "-").concat(t)
   });
 
-function T(e) {
+function S(e) {
   return null != e && (e.value > 0 || (null == e ? void 0 : e.multiplier) > 1)
 }
 let A = new a.h(function(e) {
@@ -122,14 +122,14 @@ let A = new a.h(function(e) {
 function C(e) {
   var t, n, r, i, a, s;
   let l = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    c = S.get(N(e)),
+    c = T.get(N(e)),
     u = E(m({}, c, e), {
       value: null != (n = null != (t = e.value) ? t : null == c ? void 0 : c.value) ? n : 0,
       multiplier: Math.min(null != (i = null != (r = e.multiplier) ? r : null == c ? void 0 : c.multiplier) ? i : 1, O),
       decayInterval: null != (a = null == c ? void 0 : c.decayInterval) ? a : new o.Xp
     });
-  S.set(N(e), u), l && (null == (s = u.decayInterval) || s.start(v, () => {
-    let e = S.get(N(u));
+  T.set(N(e), u), l && (null == (s = u.decayInterval) || s.start(v, () => {
+    let e = T.get(N(u));
     if (null != e) {
       let n = u.multiplier !== e.multiplier && u.value !== e.value;
       if (e.value <= 0 || n) {
@@ -137,10 +137,10 @@ function C(e) {
         null == (t = e.decayInterval) || t.stop(), e.value <= 0 && (C(E(m({}, e), {
           value: 0,
           multiplier: 1
-        })), k.emitChange())
+        })), M.emitChange())
       } else C(E(m({}, e), {
         value: e.value - 1
-      })), k.emitChange()
+      })), M.emitChange()
     }
   }))
 }
@@ -182,7 +182,7 @@ function L(e) {
   if (!d.Z.isEnabled()) return !1;
   let s = l.default.getId();
   if (!D(null == a ? void 0 : a.id, s, o, I)) return !1;
-  let c = S.get(N({
+  let c = T.get(N({
     userId: null != (t = null == a ? void 0 : a.id) ? t : "???",
     channelId: r
   }));
@@ -200,21 +200,21 @@ class x extends(r = i.ZP.Store) {
     this.waitFor(l.default, c.Z)
   }
   getComboScore(e, t) {
-    let n = S.get(N({
+    let n = T.get(N({
       userId: e,
       channelId: t
     }));
     return null == n ? 0 : (0, f.Eo)(n)
   }
   getUserCombo(e, t) {
-    return S.get(N({
+    return T.get(N({
       userId: e,
       channelId: t
     }))
   }
   isComboing(e, t) {
     let n = this.getUserCombo(e, t);
-    return null != n && n.value >= d.Z.combosRequiredCount && T(n)
+    return null != n && n.value >= d.Z.combosRequiredCount && S(n)
   }
   getMessageCombo(e) {
     var t;
@@ -231,9 +231,9 @@ class x extends(r = i.ZP.Store) {
   }
 }
 h(x, "displayName", "PoggermodeStore");
-let k = new x(s.Z, {
+let M = new x(s.Z, {
     POGGERMODE_UPDATE_COMBO: P,
     POGGERMODE_UPDATE_MESSAGE_COMBO: w,
     MESSAGE_CREATE: L
   }),
-  M = k
+  k = M

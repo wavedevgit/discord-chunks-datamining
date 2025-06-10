@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  CR: () => k,
+  CR: () => M,
   DD: () => D,
-  mK: () => M,
+  mK: () => k,
   up: () => j
 }), n(953529), n(388685);
 var r = n(73800),
@@ -112,7 +112,7 @@ function I(e) {
   }, i)
 }
 
-function S(e) {
+function T(e) {
   let t, {
       quest: n,
       taskDetails: r,
@@ -136,7 +136,7 @@ function S(e) {
   }, i)
 }
 
-function T(e) {
+function S(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -241,7 +241,7 @@ function R(e) {
     hasNitro: u,
     collectibleRewardDuration: d
   });
-  if ((0, l.$H)(t)) return S({
+  if ((0, l.$H)(t)) return T({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i,
@@ -250,7 +250,7 @@ function R(e) {
   });
   if ((0, l.oo)({
       quest: t
-    })) return T({
+    })) return S({
     quest: t,
     taskDetails: n,
     withoutMarkdown: i
@@ -321,7 +321,7 @@ function x(e) {
   return r.useMemo(() => L(e), [e])
 }
 
-function k(e) {
+function M(e) {
   let {
     quest: t,
     location: n,
@@ -342,7 +342,7 @@ function k(e) {
   }
 }
 
-function M(e) {
+function k(e) {
   let t = r.useMemo(() => (0, l.f$)(e), [e]),
     n = r.useMemo(() => (0, l._p)(e), [e]);
   return t ? n ? h.intl.string(h.t.hh7Rb2) : h.intl.string(h.t.GYGb3N) : null

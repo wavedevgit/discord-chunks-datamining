@@ -27,8 +27,8 @@ var r = n(913527),
   O = n(725727),
   v = n(1844),
   I = n(474936),
-  S = n(981631),
-  T = n(388032);
+  T = n(981631),
+  S = n(388032);
 let A = 10;
 
 function N(e) {
@@ -38,7 +38,7 @@ function N(e) {
     premiumSubscription: a,
     mostRecentSubscription: o
   } = e, s = !1, l = !1;
-  if (null != o && o.status === S.O0b.ENDED) {
+  if (null != o && o.status === T.O0b.ENDED) {
     let e = o.endedAt,
       n = null == (t = (0, f.Af)(o)) ? void 0 : t.planId,
       r = null != n && f.ZP.getPremiumType(n) === I.p9.TIER_2;
@@ -172,8 +172,8 @@ function D() {
     case "uk":
     case "ja":
     case "ko":
-      return T.intl.string(T.t.OS9KPj);
+      return S.intl.string(S.t.OS9KPj);
     default:
-      return T.intl.string(T.t.VeCPBQ)
+      return S.intl.string(S.t.VeCPBQ)
   }
 }

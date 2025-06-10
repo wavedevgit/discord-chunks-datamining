@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F5: () => T,
+  F5: () => S,
   Jm: () => g,
   L0: () => y,
   L5: () => m,
   M$: () => E,
-  WD: () => S,
+  WD: () => T,
   g0: () => b,
   kJ: () => v,
   l6: () => I,
@@ -69,7 +69,7 @@ function I() {
   return (null == e ? void 0 : e.ageVerificationStatus) !== o.F$.UNVERIFIED && (null == e ? void 0 : e.ageVerificationStatus) !== o.F$.CLIENT_ONLY_PENDING
 }
 
-function S(e) {
+function T(e) {
   let [t, n] = r.useState(!1), o = (0, i.e7)([u.default], () => u.default.getCurrentUser()), {
     current: s
   } = r.useRef(null == o ? void 0 : o.ageVerificationStatus), c = r.useCallback(() => {
@@ -102,7 +102,7 @@ function S(e) {
   }
 }
 
-function T(e) {
+function S(e) {
   let t = (0, i.e7)([u.default], () => {
       var e;
       return null == (e = u.default.getCurrentUser()) ? void 0 : e.ageVerificationStatus

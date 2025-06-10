@@ -62,9 +62,9 @@ let y = "SearchStore",
   O = "tokenized",
   v = !1,
   I = {},
-  S = null;
+  T = null;
 
-function T(e) {
+function S(e) {
   let {
     searchId: t,
     editorState: n
@@ -169,8 +169,8 @@ function w(e) {
 }
 
 function D(e) {
-  if (e === S) return !1;
-  null != e && null == m[e] && g(e), S = e
+  if (e === T) return !1;
+  null != e && null == m[e] && g(e), T = e
 }
 
 function L(e) {
@@ -188,7 +188,7 @@ function x(e) {
   D(t)
 }
 
-function k(e) {
+function M(e) {
   let {
     searchId: t
   } = e;
@@ -197,7 +197,7 @@ function k(e) {
   }))
 }
 
-function M(e) {
+function k(e) {
   let {
     searchId: t,
     query: n
@@ -232,8 +232,8 @@ function B() {
 }
 
 function F() {
-  return null != S && w({
-    searchId: S
+  return null != T && w({
+    searchId: T
   })
 }
 class V extends(r = o.ZP.Store) {
@@ -243,17 +243,17 @@ class V extends(r = o.ZP.Store) {
     (null == e ? void 0 : e.history) != null && (I = j(e.history)), v = !!s.K.get(O)
   }
   getCurrentSearchId() {
-    return S
+    return T
   }
   isActive() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S;
+    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T;
     return null != e && (this.isIndexing(e) || this.isSearching(e) || this.hasResults(e))
   }
   isTokenized() {
     return v
   }
   getSearchType(e) {
-    return b(null != e ? e : S, e => e.searchType)
+    return b(null != e ? e : T, e => e.searchType)
   }
   getRawResults(e) {
     return b(e, e => e.rawResults)
@@ -332,13 +332,13 @@ let Z = new V(l.Z, {
   SEARCH_FINISH: P,
   SEARCH_EDITOR_STATE_CLEAR: w,
   SEARCH_ENSURE_SEARCH_STATE: A,
-  SEARCH_EDITOR_STATE_CHANGE: T,
+  SEARCH_EDITOR_STATE_CHANGE: S,
   SEARCH_SET_SHOW_BLOCKED_RESULTS: U,
   SEARCH_SCREEN_OPEN: x,
   CHANNEL_SELECT: L,
   CHANNEL_TOGGLE_MEMBERS_SECTION: F,
-  SEARCH_CLEAR_HISTORY: k,
-  SEARCH_REMOVE_HISTORY: M,
+  SEARCH_CLEAR_HISTORY: M,
+  SEARCH_REMOVE_HISTORY: k,
   SEARCH_ADD_HISTORY: C,
   LOGOUT: B,
   CONNECTION_OPEN: G

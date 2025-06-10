@@ -83,8 +83,8 @@ function v(e) {
     onSubscribeModalClose: O,
     premiumModalAnalyticsLocation: v,
     applicationId: I,
-    giftMessage: S,
-    confirmationFooter: T,
+    giftMessage: T,
+    confirmationFooter: S,
     paymentModalBanner: A,
     isGift: N,
     children: C
@@ -142,8 +142,8 @@ function v(e) {
         postSuccessGuild: E,
         onClose: O,
         applicationId: I,
-        giftMessage: S,
-        confirmationFooter: T,
+        giftMessage: T,
+        confirmationFooter: S,
         paymentModalBanner: A
       })
     }

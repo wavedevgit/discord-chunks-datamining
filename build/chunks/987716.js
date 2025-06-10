@@ -60,9 +60,9 @@ function I(e, t) {
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,7 +70,7 @@ function S(e, t) {
   return i
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -85,7 +85,7 @@ let A = e => {
   } = e, {
     giftRecipient: y,
     selectedGiftStyle: v,
-    setSelectedGiftStyle: T,
+    setSelectedGiftStyle: S,
     emojiConfetti: A,
     soundEffect: N,
     setEmojiConfetti: C,
@@ -94,7 +94,7 @@ let A = e => {
     orientation: "horizontal"
   }), {
     ref: x
-  } = L, k = S(L, ["ref"]), M = (0, u.MY)(y, t), j = M === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== u.xr.DEFAULT, G = (0, f.rK)(), {
+  } = L, M = T(L, ["ref"]), k = (0, u.MY)(y, t), j = k === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = k !== u.xr.DEFAULT, G = (0, f.rK)(), {
     enabled: B
   } = f.ZP.useExperiment({
     location: "premiumGiftSelect_GiftAnimationOptions"
@@ -145,11 +145,11 @@ let A = e => {
       className: o()(b.giftBoxOptionContainer, a),
       "aria-label": E.intl.string(E.t.v54NrK),
       ref: x
-    }, k), {
+    }, M), {
       children: null != V && V.map((e, t) => (0, r.jsx)(m.m, {
         isSelected: v === e,
         giftStyle: e,
-        setSelectedGiftStyle: T,
+        setSelectedGiftStyle: S,
         ref: 0 === t ? D : null,
         onFocus: () => w(!0),
         onBlur: () => w(!1)

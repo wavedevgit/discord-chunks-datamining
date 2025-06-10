@@ -90,7 +90,7 @@ let v = e => {
       })
     })
   },
-  S = e => {
+  T = e => {
     let {
       reason: t = _.wk.SPOILER,
       className: n,
@@ -117,7 +117,7 @@ let v = e => {
         return (0, p.vE)(t)
     }
   },
-  T = e => {
+  S = e => {
     let {
       obscureReason: t,
       isVisible: n,
@@ -186,14 +186,14 @@ class N extends i.PureComponent {
           }),
           role: g ? "presentation" : "button",
           tabIndex: g ? -1 : 0,
-          children: [g || t ? null : (0, r.jsx)(S, {
+          children: [g || t ? null : (0, r.jsx)(T, {
             reason: s,
             isSingleMosaicItem: c
           }), (0, r.jsx)("div", {
             "aria-hidden": !g,
             className: m.spoilerInnerContainer,
             children: e(!g)
-          }), f ? null : (0, r.jsx)(T, {
+          }), f ? null : (0, r.jsx)(S, {
             obscureReason: s,
             isVisible: p,
             handleToggleObscurity: this.handleToggleObscurity,
@@ -210,7 +210,7 @@ class N extends i.PureComponent {
           }),
           role: g ? "presentation" : "button",
           tabIndex: g ? -1 : 0,
-          children: [g || t ? null : (0, r.jsx)(S, {
+          children: [g || t ? null : (0, r.jsx)(T, {
             reason: s,
             isSingleMosaicItem: c
           }), (0, r.jsx)("div", {
@@ -249,14 +249,14 @@ class N extends i.PureComponent {
           }),
           role: p ? "presentation" : "button",
           tabIndex: p ? -1 : 0,
-          children: [p ? null : (0, r.jsx)(S, {
+          children: [p ? null : (0, r.jsx)(T, {
             reason: s,
             isSingleMosaicItem: i
           }), (0, r.jsx)("div", {
             "aria-hidden": !p,
             className: m.spoilerInnerContainer,
             children: e(!p)
-          }), u ? null : (0, r.jsx)(T, {
+          }), u ? null : (0, r.jsx)(S, {
             obscureReason: s,
             isVisible: d,
             handleToggleObscurity: this.handleToggleObscurity,
@@ -272,7 +272,7 @@ class N extends i.PureComponent {
           style: n,
           role: p ? "presentation" : "button",
           tabIndex: p ? -1 : 0,
-          children: [p ? null : (0, r.jsx)(S, {
+          children: [p ? null : (0, r.jsx)(T, {
             reason: s,
             className: m.embed
           }), (0, r.jsx)("div", {

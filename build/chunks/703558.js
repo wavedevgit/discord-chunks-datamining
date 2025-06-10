@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k,
+  Z: () => M,
   d: () => E
 }), n(388685), n(781311);
 var r, i = n(392711),
@@ -85,7 +85,7 @@ function v(e) {
       timestamp: Date.now(),
       draft: r
     }
-  } else T(n, i);
+  } else S(n, i);
   return "DRAFT_SAVE" === t
 }
 
@@ -94,10 +94,10 @@ function I(e) {
     channelId: t,
     draftType: n
   } = e;
-  return T(t, n)
+  return S(t, n)
 }
 
-function S(e) {
+function T(e) {
   let {
     channelId: t,
     draft: n
@@ -112,7 +112,7 @@ function S(e) {
   })
 }
 
-function T(e, t) {
+function S(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : u.default.getId();
   if (null == n) return !1;
   let r = O(n),
@@ -168,7 +168,7 @@ function P(e) {
         timestamp: Date.now(),
         draft: n
       }
-    }), T(t.parent_id, 1), T(t.parent_id, 2)
+    }), S(t.parent_id, 1), S(t.parent_id, 2)
   }
 }
 
@@ -184,7 +184,7 @@ function L() {
   for (let [e, t] of c.default.entries(b))
     for (let [n, r] of c.default.entries(t)) {
       let t = r[0];
-      null != t && ("" === t.draft || "" === t.draft.trim()) && T(n, 0, e)
+      null != t && ("" === t.draft || "" === t.draft.trim()) && S(n, 0, e)
     }
 }
 class x extends(r = o.ZP.PersistedStore) {
@@ -256,7 +256,7 @@ _(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migra
   for (let t in e) r[t] = e[t];
   return n
 }]);
-let k = new x(s.Z, {
+let M = new x(s.Z, {
   CONNECTION_OPEN: N,
   LOGOUT: w,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,
@@ -267,5 +267,5 @@ let k = new x(s.Z, {
   DRAFT_SAVE: v,
   DRAFT_CHANGE: v,
   DRAFT_CLEAR: I,
-  THREAD_SETTINGS_DRAFT_CHANGE: S
+  THREAD_SETTINGS_DRAFT_CHANGE: T
 })

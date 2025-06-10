@@ -4,7 +4,7 @@ n.d(t, {
   B: () => D,
   B5: () => R,
   Do: () => w,
-  GX: () => M,
+  GX: () => k,
   HR: () => V,
   Hr: () => C,
   Je: () => A,
@@ -12,9 +12,9 @@ n.d(t, {
   KR: () => P,
   MO: () => U,
   N3: () => j,
-  Oq: () => T,
+  Oq: () => S,
   P_: () => v,
-  Vn: () => S,
+  Vn: () => T,
   ab: () => N,
   e5: () => L,
   e7: () => O,
@@ -24,7 +24,7 @@ n.d(t, {
   qs: () => E,
   qz: () => F,
   ws: () => x,
-  xI: () => k,
+  xI: () => M,
   zI: () => y
 }), n(781311);
 var r = n(367907),
@@ -172,7 +172,7 @@ function I(e) {
   }))
 }
 
-function S(e) {
+function T(e) {
   var t, n, i, a;
   let {
     guildId: l,
@@ -195,7 +195,7 @@ function S(e) {
   }))
 }
 
-function T(e) {
+function S(e) {
   let {
     guildId: t,
     channelId: n
@@ -339,7 +339,7 @@ function x(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     added: t
   } = e;
@@ -348,7 +348,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     readGuideCta: t
   } = e;

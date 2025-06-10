@@ -58,14 +58,14 @@ let E = 5 * f.Z.Millis.MINUTE,
   v = {},
   I = {};
 
-function S() {
+function T() {
   y = {}, O = {}, v = {}, I = {}, setInterval(() => {
     let e = Date.now();
     for (let [t, n] of Object.entries(I)) e - n.insertedAt > b && delete I[t]
   }, E)
 }
 
-function T(e) {
+function S(e) {
   let {
     nonce: t,
     messageId: n,
@@ -101,7 +101,7 @@ function N(e) {
   let {
     nonce: t
   } = e;
-  M(t)
+  k(t)
 }
 
 function C(e) {
@@ -148,7 +148,7 @@ function w(e) {
   let {
     nonce: t
   } = e;
-  M(t)
+  k(t)
 }
 
 function D(e) {
@@ -156,7 +156,7 @@ function D(e) {
     application: t,
     nonce: n
   } = e;
-  i = t.id, M(n)
+  i = t.id, k(n)
 }
 
 function L() {
@@ -170,7 +170,7 @@ function x(e) {
   r = t
 }
 
-function k(e) {
+function M(e) {
   let t, n, {
       participants: r
     } = e,
@@ -182,7 +182,7 @@ function k(e) {
   null == s ? (t = v[o.nonce], n = y[o.nonce]) : (t = s.messageId, n = s.interaction), null != n && null != t && (j(o.nonce), null != t && "channelId" in n.data && l.Z.deleteMessage(n.data.channelId, t, !0))
 }
 
-function M(e) {
+function k(e) {
   var t;
   if (null == e) return !1;
   let n = y[e];
@@ -228,8 +228,8 @@ class U extends(a = o.ZP.Store) {
 }
 p(U, "displayName", "InteractionStore");
 let G = new U(s.Z, {
-  LOGOUT: S,
-  INTERACTION_QUEUE: T,
+  LOGOUT: T,
+  INTERACTION_QUEUE: S,
   INTERACTION_CREATE: A,
   INTERACTION_SUCCESS: N,
   INTERACTION_FAILURE: R,
@@ -239,5 +239,5 @@ let G = new U(s.Z, {
   INTERACTION_IFRAME_MODAL_CLOSE: L,
   INTERACTION_IFRAME_MODAL_KEY_CREATE: x,
   INTERACTION_MODAL_CREATE: w,
-  EMBEDDED_ACTIVITY_UPDATE_V2: k
+  EMBEDDED_ACTIVITY_UPDATE_V2: M
 })

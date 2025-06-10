@@ -42,16 +42,16 @@ function g(e) {
   } = E.guild_settings, v = null != (o = null == y || null == (i = y.statistics) || null == (n = i[O]) ? void 0 : n.value) ? o : 0, I = p.intl.formatToPlainString(p.t.yhdo8v, {
     value: v,
     statisticName: (0, f.C)(O)
-  }), S = (0, _.j)(E), {
-    primaryColor: T,
+  }), T = (0, _.j)(E), {
+    primaryColor: S,
     secondaryColor: A
-  } = (0, c.Z)("".concat(S, "?forColors")), N = (0, s.e7)([u.default], () => u.default.getUser(null == y ? void 0 : y.user_id));
+  } = (0, c.Z)("".concat(T, "?forColors")), N = (0, s.e7)([u.default], () => u.default.getUser(null == y ? void 0 : y.user_id));
   if (null == N) return null;
   let C = d.ZP.getName(g, void 0, N);
   return (0, r.jsxs)("div", {
     className: a()(h.container, b),
     style: {
-      backgroundImage: "linear-gradient(90deg, ".concat(A, " 0%, ").concat(T, " 100%)")
+      backgroundImage: "linear-gradient(90deg, ".concat(A, " 0%, ").concat(S, " 100%)")
     },
     children: [(0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
@@ -77,11 +77,11 @@ function g(e) {
         color: "text-secondary",
         children: I
       })]
-    }), null != S && (0, r.jsx)("div", {
+    }), null != T && (0, r.jsx)("div", {
       className: h.heroArtContainer,
       children: (0, r.jsx)("img", {
         className: h.heroArt,
-        src: S,
+        src: T,
         alt: ""
       })
     })]

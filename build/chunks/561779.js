@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  i: () => T
+  i: () => S
 }), n(642613), n(415506), n(388685);
 var r, i = n(255367),
   a = n(73800),
@@ -107,7 +107,7 @@ function I(e) {
   }
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = Math.min(Math.max(e.initialValue, e.minValue), e.maxValue);
   return b({
     value: null != t ? t : n,
@@ -115,9 +115,9 @@ function S(e, t) {
     newClosestIndex: null
   }, I(e))
 }
-class T extends(r = a.PureComponent) {
+class S extends(r = a.PureComponent) {
   static getDerivedStateFromProps(e, t) {
-    return e.initialValue !== t.initialValueProp ? O(b({}, S(e, t.value)), {
+    return e.initialValue !== t.initialValueProp ? O(b({}, T(e, t.value)), {
       active: t.active
     }) : null
   }
@@ -148,8 +148,8 @@ class T extends(r = a.PureComponent) {
       className: y,
       children: v,
       barStyles: I,
-      fillStyles: S,
-      mini: T,
+      fillStyles: T,
+      mini: S,
       hideBubble: N,
       defaultValue: C,
       orientation: R,
@@ -158,8 +158,8 @@ class T extends(r = a.PureComponent) {
       getAriaValueText: D,
       barClassName: L,
       grabberClassName: x,
-      grabberStyles: k = {},
-      markerPosition: M = 0,
+      grabberStyles: M = {},
+      markerPosition: k = 0,
       "aria-hidden": j,
       "aria-label": U,
       "aria-labelledby": G,
@@ -174,8 +174,8 @@ class T extends(r = a.PureComponent) {
         return (0, i.jsx)("div", {
           className: s()(g.mark, {
             [g.defaultValue]: r,
-            [g.markAbove]: 0 === M,
-            [g.markBelow]: 1 === M
+            [g.markAbove]: 0 === k,
+            [g.markBelow]: 1 === k
           }),
           style: {
             left: "".concat(e, "%")
@@ -204,7 +204,7 @@ class T extends(r = a.PureComponent) {
             className: s()(g.slider, y, {
               [g.hasMarks]: (null != (a = null == Z ? void 0 : Z.length) ? a : 0) > 0,
               [g.disabled]: m,
-              [g.mini]: T
+              [g.mini]: S
             }),
             style: null == e ? void 0 : e.sliderStyles,
             "aria-valuemin": d,
@@ -238,7 +238,7 @@ class T extends(r = a.PureComponent) {
               style: I,
               children: (0, i.jsx)("div", {
                 className: g.barFill,
-                style: O(b({}, S), {
+                style: O(b({}, T), {
                   width: V
                 })
               })
@@ -251,7 +251,7 @@ class T extends(r = a.PureComponent) {
                 forceOpen: n || r && h.Z.keyboardModeEnabled,
                 children: e => (0, i.jsx)("div", O(b({}, e), {
                   className: s()(g.grabber, x),
-                  style: O(b({}, k), {
+                  style: O(b({}, M), {
                     left: V
                   }),
                   onMouseDown: this.handleMouseDown,
@@ -455,7 +455,7 @@ class T extends(r = a.PureComponent) {
       active: !1,
       focused: !1,
       dragStartValue: void 0
-    }, S(e, e.initialValue))
+    }, T(e, e.initialValue))
   }
 }
 
@@ -476,7 +476,7 @@ function A(e) {
     setHovered: s
   }) : r()
 }
-E(T, "defaultProps", {
+E(S, "defaultProps", {
   initialValue: 10,
   minValue: 0,
   maxValue: 100,

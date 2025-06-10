@@ -39,7 +39,7 @@ let O = (e, t, n) => null != n && e.productLine === E.POd.COLLECTIBLES && n.type
       children: t
     })
   },
-  S = e => {
+  T = e => {
     let {
       children: t,
       className: n
@@ -49,7 +49,7 @@ let O = (e, t, n) => null != n && e.productLine === E.POd.COLLECTIBLES && n.type
       children: t
     })
   },
-  T = e => {
+  S = e => {
     let {
       children: t,
       className: n
@@ -99,11 +99,11 @@ let O = (e, t, n) => null != n && e.productLine === E.POd.COLLECTIBLES && n.type
     return (0, r.jsx)(p.aO, {
       className: y.invoiceTable,
       children: (0, r.jsxs)(I, {
-        children: ["THREE_COLUMN" === o && (0, r.jsx)(S, {
+        children: ["THREE_COLUMN" === o && (0, r.jsx)(T, {
           children: (0, r.jsx)(N, {
             sku: t
           })
-        }), (0, r.jsx)(T, {
+        }), (0, r.jsx)(S, {
           className: y.invoiceRegularText,
           children: t.name
         }), (0, r.jsx)(A, {
@@ -131,11 +131,11 @@ function P(e) {
   return (0, r.jsxs)(p.aO, {
     className: y.invoiceTable,
     children: [(0, r.jsxs)(I, {
-      children: ["THREE_COLUMN" === o && (0, r.jsx)(S, {
+      children: ["THREE_COLUMN" === o && (0, r.jsx)(T, {
         children: (0, r.jsx)(N, {
           sku: t
         })
-      }), (0, r.jsx)(T, {
+      }), (0, r.jsx)(S, {
         className: y.invoiceRegularText,
         children: t.name
       }), (0, r.jsx)(A, {
@@ -143,11 +143,11 @@ function P(e) {
         children: (0, g.T4)(u, n.currency)
       })]
     }), null != h && (0, r.jsxs)(I, {
-      children: ["THREE_COLUMN" === o && (0, r.jsx)(S, {
+      children: ["THREE_COLUMN" === o && (0, r.jsx)(T, {
         children: (0, r.jsx)(C, {
           discount: h
         })
-      }), (0, r.jsx)(T, {
+      }), (0, r.jsx)(S, {
         className: y.invoiceDiscountText,
         children: h.description
       }), (0, r.jsx)(A, {
@@ -155,7 +155,7 @@ function P(e) {
         children: (0, g.T4)(-1 * h.amount, n.currency)
       })]
     }), _ && (0, r.jsxs)(I, {
-      children: ["THREE_COLUMN" === o && (0, r.jsx)(S, {}), (0, r.jsx)(T, {
+      children: ["THREE_COLUMN" === o && (0, r.jsx)(T, {}), (0, r.jsx)(S, {
         className: y.invoiceRegularText,
         children: b.intl.string(b.t["/I8zmJ"])
       }), (0, r.jsx)(A, {
@@ -165,10 +165,10 @@ function P(e) {
     }), m && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p.UN, {}), (0, r.jsxs)(I, {
         className: y.totalRow,
-        children: [(0, r.jsx)(S, {
+        children: [(0, r.jsx)(T, {
           className: y.invoiceRegularText,
           children: b.intl.format(b.t["+B5KfH"], {})
-        }), "THREE_COLUMN" === o && (0, r.jsx)(T, {}), (0, r.jsx)(A, {
+        }), "THREE_COLUMN" === o && (0, r.jsx)(S, {}), (0, r.jsx)(A, {
           className: y.invoiceRegularText,
           children: (0, g.T4)(n.amount, n.currency)
         })]

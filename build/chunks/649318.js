@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   $6: () => P,
-  MP: () => T,
+  MP: () => S,
   Mg: () => O,
   Nl: () => C,
   Ns: () => b,
@@ -114,7 +114,7 @@ function I(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     mid: t,
     type: n,
@@ -194,9 +194,9 @@ function S(e) {
         payload: l,
         rate: 9e4
       });
-      let S = "x-google-max-bitrate=".concat(c);
-      s === _.ad.H264 && (S += ";level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f"), v.fmtp.push({
-        config: S,
+      let T = "x-google-max-bitrate=".concat(c);
+      s === _.ad.H264 && (T += ";level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f"), v.fmtp.push({
+        config: T,
         payload: l
       }), v.rtcpFb = [{
         type: "ccm",
@@ -227,7 +227,7 @@ function S(e) {
   return v
 }
 
-function T(e) {
+function S(e) {
   let {
     type: t,
     baseSDP: n,
@@ -250,7 +250,7 @@ function T(e) {
       let g = "audio" === f ? i : s,
         E = "audio" === f ? a : l,
         b = "audio" === f ? o : c;
-      p.push(S({
+      p.push(T({
         mid: m,
         type: f,
         setup: e,
@@ -272,7 +272,7 @@ function T(e) {
         let [t, n] = e;
         return v(n, t, "a")
       });
-    if (p.push(S({
+    if (p.push(T({
         mid: "audio",
         type: "audio",
         setup: e,
@@ -291,7 +291,7 @@ function T(e) {
         let [t, n] = e;
         return v(n, t, "v")
       });
-      p.push(S({
+      p.push(T({
         mid: "video",
         type: "video",
         setup: e,
@@ -340,8 +340,8 @@ function A(e) {
     let y = "audio" === g ? r : o,
       O = "audio" === g ? i : s,
       I = "audio" === g ? null : u,
-      T = "audio" === g ? a : l;
-    p.push(S({
+      S = "audio" === g ? a : l;
+    p.push(T({
       mid: b,
       type: g,
       setup: h,
@@ -349,7 +349,7 @@ function A(e) {
       baseSDP: n,
       codec: y,
       payload: O,
-      bitrate: T,
+      bitrate: S,
       ssrcs: t,
       extensions: f,
       rtxPayload: I,

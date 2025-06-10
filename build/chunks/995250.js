@@ -88,7 +88,7 @@ function O(e) {
     {
       interactionSource: I
     } = (0, l.Xo)(),
-    S = o()(p.avatar, {
+    T = o()(p.avatar, {
       [p.hoisted]: I === _.n_.AVATAR || I === _.n_.STATUS
     });
   return (0, r.jsx)(f.Z, {
@@ -97,14 +97,14 @@ function O(e) {
     user: t,
     children: (0, r.jsx)(u.Z, E(m({
       user: t,
-      className: S,
+      className: T,
       themeType: n,
       sourceType: O,
       onAction: v
     }, g), {
       children: () => (0, r.jsx)(d.Z, {
         ref: y,
-        className: S,
+        className: T,
         user: t,
         sourceType: O,
         onAction: v,

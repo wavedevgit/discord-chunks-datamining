@@ -33,7 +33,7 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,7 +58,7 @@ function T(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -102,9 +102,9 @@ function L(e) {
     canManageRoles: _,
     onAddRole: p,
     onRemoveRole: I
-  } = e, T = i.useRef({}), C = (e, t) => {
-    null != t ? T.current[e] = t : delete T.current[e]
-  }, [L, x] = i.useState(d), [k, M] = i.useState(P), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), F = i.useRef(0);
+  } = e, S = i.useRef({}), C = (e, t) => {
+    null != t ? S.current[e] = t : delete S.current[e]
+  }, [L, x] = i.useState(d), [M, k] = i.useState(P), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), F = i.useRef(0);
   i.useLayoutEffect(() => {
     F.current = 0
   }, [d]), i.useLayoutEffect(() => {
@@ -117,7 +117,7 @@ function L(e) {
       let t = e === w - 1 ? r : P;
       for (let e = 0, r = n.length; r < d.length; r++) {
         let i = d[r],
-          a = T.current[i.id];
+          a = S.current[i.id];
         if (null == a) {
           0 === F.current && n.push(i);
           continue
@@ -127,7 +127,7 @@ function L(e) {
         e += o + R, n.push(i)
       }
     }
-    x(n.length === L.length ? L : n), M(r), F.current++
+    x(n.length === L.length ? L : n), k(r), F.current++
   }, [d, L, j]);
   let V = i.useMemo(() => "roles-".concat((0, a.Z)()), []),
     Z = (0, o.ZP)({
@@ -147,7 +147,7 @@ function L(e) {
         role: e,
         guildId: l.id,
         style: {
-          maxWidth: j || i !== L.length - 1 ? P : k
+          maxWidth: j || i !== L.length - 1 ? P : M
         },
         disableBorderColor: !0,
         ref: t => C(e.id, t),
@@ -175,7 +175,7 @@ function L(e) {
         var {
           ref: t
         } = e, n = N(e, ["ref"]);
-        return (0, r.jsxs)("div", A(S({
+        return (0, r.jsxs)("div", A(T({
           className: v.root,
           "aria-label": Y,
           ref: t
@@ -240,8 +240,8 @@ function x(e) {
       action: "ADD_ROLE"
     });
     let n = null != h ? h : []; - 1 === n.indexOf(e) && (n = n.concat([e])), d.Z.updateMemberRoles(a.id, t.id, n, [e], [])
-  }, [h, a.id, t.id, o]), S = O && null != s;
-  return 0 !== E.length || S ? (0, r.jsx)(L, {
+  }, [h, a.id, t.id, o]), T = O && null != s;
+  return 0 !== E.length || T ? (0, r.jsx)(L, {
     user: t,
     currentUser: n,
     guild: a,

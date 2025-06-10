@@ -60,9 +60,9 @@ function I() {
   null == y && (y = {})
 }
 
-function S() {}
+function T() {}
 
-function T() {
+function S() {
   return y.darkSidebar = !y.darkSidebar, !0
 }
 
@@ -204,6 +204,6 @@ let C = new N(l.Z, {
   UNSYNCED_USER_SETTINGS_UPDATE: O,
   LOGOUT: v,
   LOGIN_SUCCESS: I,
-  REGISTER_SUCCESS: S,
-  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: T
+  REGISTER_SUCCESS: T,
+  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: S
 })

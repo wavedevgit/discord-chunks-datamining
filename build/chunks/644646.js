@@ -29,13 +29,13 @@ let v = function(e) {
       autoplay: v = !0,
       learnMoreStyle: I = null
     } = e,
-    S = (0, _.O5)(),
-    T = (0, l.e7)([f.Z], () => f.Z.isFocused()),
+    T = (0, _.O5)(),
+    S = (0, l.e7)([f.Z], () => f.Z.isFocused()),
     A = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
     N = i.useMemo(() => (0, h.fh)(a, h.eC.REWARD), [a]),
     C = i.useCallback(t => {
       var n;
-      (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), S({
+      (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), T({
         questId: a.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
@@ -44,7 +44,7 @@ let v = function(e) {
         fromContent: e.questContent,
         questId: a.id
       }), null == (n = e.onClick) || n.call(e, t)
-    }, [S, a.id, e]),
+    }, [T, a.id, e]),
     R = i.useRef(null),
     P = i.useRef(v),
     w = (0, p.Bg)(a.config);
@@ -101,7 +101,7 @@ let v = function(e) {
     children: [t, (0, r.jsx)(c.ZX5, {
       className: O.shine,
       shineSize: c.rHe.SMALL,
-      shinePaused: !T || A
+      shinePaused: !S || A
     }), "text" === I && (0, r.jsx)(c.Text, {
       color: "always-white",
       variant: "text-xs/normal",

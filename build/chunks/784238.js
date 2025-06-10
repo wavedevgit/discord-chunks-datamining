@@ -84,8 +84,8 @@ let E = e => {
       showGradient: O,
       confirmationFooter: v,
       paymentModalBanner: I,
-      color: S
-    } = e, T = m(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "paymentModalBanner", "color"]);
+      color: T
+    } = e, S = m(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "paymentModalBanner", "color"]);
     let A = (0, o.ZP)(),
       N = (0, c.N)(),
       C = null == N ? void 0 : N.subscription_trial,
@@ -104,7 +104,7 @@ let E = e => {
         shouldShowReferralTrialCopy: D,
         subscriptionTrial: C
       }),
-      x = null != S ? S : (0, i.wj)(A) ? a.Ttl.BRAND_INVERTED : a.Ttl.BRAND;
+      x = null != T ? T : (0, i.wj)(A) ? a.Ttl.BRAND_INVERTED : a.Ttl.BRAND;
     return (0, r.jsx)(u.Z, h({
       color: x,
       textOptions: h({
@@ -116,5 +116,5 @@ let E = e => {
       showGradient: O,
       confirmationFooter: v,
       paymentModalBanner: I
-    }, T))
+    }, S))
   }

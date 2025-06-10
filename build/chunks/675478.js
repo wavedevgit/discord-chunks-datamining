@@ -12,10 +12,10 @@ n.d(t, {
   fy: () => b.fy,
   hW: () => C,
   nm: () => L,
-  po: () => M,
+  po: () => k,
   sr: () => G,
   w9: () => j,
-  z2: () => k
+  z2: () => M
 }), n(415506), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
 var r = n(512722),
   i = n.n(r),
@@ -46,18 +46,18 @@ function O(e, t, n) {
 }
 let v = 5e3,
   I = "UserSettingsProtoLastWriteTimes",
-  S = 2592e6,
-  T = Date.now();
+  T = 2592e6,
+  S = Date.now();
 
 function A() {}
 u.Z.subscribe("CONNECTION_OPEN", () => {
-  T = Date.now()
+  S = Date.now()
 }), u.Z.subscribe("CONNECTION_CLOSED", () => {
-  T = Date.now()
+  S = Date.now()
 }), "undefined" != typeof document && (document.addEventListener("mousedown", () => {
-  T = 0
+  S = 0
 }), document.addEventListener("keydown", () => {
-  T = 0
+  S = 0
 }));
 class N {
   getEditInfo() {
@@ -302,7 +302,7 @@ function x(e, t) {
   }, b.fy.INFREQUENT_USER_ACTION)
 }
 
-function k(e) {
+function M(e) {
   return C.updateAsync("userContent", t => {
     null == t.recurringDismissibleContentStates[e] ? t.recurringDismissibleContentStates[e] = {
       lastDismissedVersion: 0,
@@ -312,7 +312,7 @@ function k(e) {
   }, b.fy.INFREQUENT_USER_ACTION)
 }
 
-function M(e, t) {
+function k(e, t) {
   return C.updateAsync("userContent", n => {
     null == n.recurringDismissibleContentStates[e] ? n.recurringDismissibleContentStates[e] = {
       lastDismissedVersion: 0,
@@ -348,7 +348,7 @@ function B() {
     for (let n of d.V_)(0, d.O2)(n) ? t = (0, h.GV)(t, n) : e.recurringDismissibleContentStates[n] = {
       lastDismissedVersion: (0, d.lg)(n) ? (0, f.t)(n) : 0,
       lastDismissedAtMs: new Date().getTime().toString(),
-      lastDismissedObjectId: (0, d.I0)(n) ? p.default.fromTimestamp(Date.now() + S) : "0"
+      lastDismissedObjectId: (0, d.I0)(n) ? p.default.fromTimestamp(Date.now() + T) : "0"
     };
     e.dismissedContents = t
   }, b.fy.INFREQUENT_USER_ACTION)
