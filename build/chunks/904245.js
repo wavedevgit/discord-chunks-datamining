@@ -907,7 +907,8 @@ let eM = {
           tts: _,
           message_reference: b,
           allowed_mentions: O,
-          flags: P
+          flags: P,
+          analyticsLocation: h
         }
       };
       if (null != p) {
