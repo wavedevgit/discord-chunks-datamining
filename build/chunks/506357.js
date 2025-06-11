@@ -1,6 +1,6 @@
-/** Chunk was on 78965 **/
+/** Chunk was on 48057 **/
 n.d(t, {
-  Z: () => A
+  Z: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -19,10 +19,10 @@ var r = n(255367),
   p = n(981631),
   N = n(176505),
   S = n(388032),
-  f = n(302654);
+  A = n(302654);
 
-function A(e) {
-  var t, A;
+function f(e) {
+  var t, f;
   let {
     onDismiss: R
   } = e, m = (0, l.e7)([_.Z], () => _.Z.getGuildId()), C = (0, l.e7)([d.Z], () => null != m ? d.Z.getChannelId(m) : null, [m]), g = null != m ? m : null, P = (0, l.e7)([u.Z], () => null != g ? u.Z.getGuild(g) : null, [g]), {
@@ -80,22 +80,22 @@ function A(e) {
       })
     },
     v = (0, r.jsx)(a.Z, {
-      className: f.guildIcon,
+      className: A.guildIcon,
       guild: P,
       size: a.Z.Sizes.MINI
     }),
     k = (0, T.OY)(D, P.name);
-  if (null != (null != (A = D.dmsDisabledUntil) ? A : D.invitesDisabledUntil) && b) return (0, r.jsxs)(o.qXd, {
-    className: f.notice,
+  if (null != (null != (f = D.dmsDisabledUntil) ? f : D.invitesDisabledUntil) && b) return (0, r.jsxs)(o.qXd, {
+    className: A.notice,
     color: o.DM8.NEUTRAL,
     children: [(0, r.jsx)(o.RyX, {
       onClick: R,
       noticeType: p.kVF.GUILD_RAID_NOTIFICATION
     }), v, k, (0, r.jsx)(o.EyT, {
-      className: f.actionButton,
+      className: A.actionButton,
       onClick: () => M(!1),
       children: (0, r.jsxs)("div", {
-        className: f.actionButtonInner,
+        className: A.actionButtonInner,
         children: [(0, r.jsx)(o.mBM, {
           size: "xs",
           color: "currentColor"
@@ -114,16 +114,16 @@ function A(e) {
     }),
     Z = h && C === N.oC.MEMBER_SAFETY;
   return (0, r.jsxs)(o.qXd, {
-    className: f.notice,
+    className: A.notice,
     color: o.DM8.WARNING,
     children: [(0, r.jsx)(o.RyX, {
       onClick: R,
       noticeType: p.kVF.GUILD_RAID_NOTIFICATION
     }), v, L, !Z && (0, r.jsx)(o.EyT, {
-      className: f.actionButton,
+      className: A.actionButton,
       onClick: () => M(!0),
       children: (0, r.jsx)("div", {
-        className: f.actionButtonInner,
+        className: A.actionButtonInner,
         children: (0, r.jsx)("span", {
           children: S.intl.string(S.t.zDJDho)
         })

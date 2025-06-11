@@ -28,12 +28,12 @@ var n = r(255367),
   P = r(567409),
   S = r(774073),
   N = r(426482),
-  A = r(715318),
-  w = r(38516),
+  w = r(715318),
+  A = r(38516),
   C = r(891949),
-  M = r(252547),
+  T = r(252547),
   R = r(484527),
-  T = r(131033),
+  M = r(131033),
   L = r(296768),
   D = r(978313),
   G = r(206583),
@@ -91,7 +91,7 @@ function Q(e) {
             className: K.logo,
             size: N.Z.LARGE
           })
-        }), (0, n.jsx)(A.Z, {
+        }), (0, n.jsx)(w.Z, {
           applicationId: a.id,
           viewId: u,
           className: K.overflowMenu
@@ -147,7 +147,7 @@ function F(e) {
   } = e;
   return (0, n.jsxs)("div", {
     className: K.sections,
-    children: [(0, n.jsx)(M.Z, {
+    children: [(0, n.jsx)(T.Z, {
       entries: a,
       viewId: u,
       officialGuildId: null == l || null == (t = l.guild) ? void 0 : t.id,
@@ -189,10 +189,10 @@ function Y(e) {
         trackClick: a,
         onInviteResolved: o,
         closeModal: s
-      }), (0, n.jsx)(w.Z, {
+      }), (0, n.jsx)(A.Z, {
         detectedGame: t,
         trackClick: a
-      }), (0, n.jsx)(T.Z, {
+      }), (0, n.jsx)(M.Z, {
         detectedGame: t
       })]
     })]
@@ -213,7 +213,7 @@ let U = e => e.filter(S.z6).slice(0, 5),
     } = (0, p.ZP)(), b = (0, u.e7)([x.default], () => x.default.locale), S = i.useMemo(() => (0, I.fP)(), []), N = (0, u.Wu)([_.Z], () => {
       var e;
       return (null != (e = _.Z.getSimilarGames(r)) ? e : []).slice(0, 25)
-    }), [A, w] = i.useState(null), C = (0, P.Ns)(r), [M, R] = i.useState(null), T = (0, f.q)(r), L = (0, u.e7)([h.Z], () => h.Z.getGame(r)), D = null != (t = null == L ? void 0 : L.name) ? t : null == T ? void 0 : T.name, G = (e, t) => {
+    }), [w, A] = i.useState(null), C = (0, P.N)(r), [T, R] = i.useState(null), M = (0, f.q)(r), L = (0, u.e7)([h.Z], () => h.Z.getGame(r)), D = null != (t = null == L ? void 0 : L.name) ? t : null == M ? void 0 : M.name, G = (e, t) => {
       var n;
       (0, I.UE)({
         gameName: null != D ? D : "",
@@ -221,7 +221,7 @@ let U = e => e.filter(S.z6).slice(0, 5),
         action: e,
         similarGameId: t,
         viewId: S,
-        officialGuildId: null == M || null == (n = M.guild) ? void 0 : n.id
+        officialGuildId: null == T || null == (n = T.guild) ? void 0 : n.id
       })
     };
     return ((0, g.ZP)(() => {
@@ -239,11 +239,11 @@ let U = e => e.filter(S.z6).slice(0, 5),
     }, [r, null == L ? void 0 : L.summaryLocalized, b]), i.useEffect(() => {
       (async () => {
         if (0 === N.length) {
-          w(null);
+          A(null);
           try {
             await (0, y.i)(r)
           } catch (e) {
-            w(e)
+            A(e)
           }
         }
       })()
@@ -265,9 +265,9 @@ let U = e => e.filter(S.z6).slice(0, 5),
         playedFriendIds: C.map(e => e.author_id),
         playedFriendsData: n,
         similarGames: U(N),
-        officialGuildId: null == M || null == (e = M.guild) ? void 0 : e.id
+        officialGuildId: null == T || null == (e = T.guild) ? void 0 : e.id
       })
-    }), null == L || null == T) ? null : (0, n.jsx)(d.Y0X, {
+    }), null == L || null == M) ? null : (0, n.jsx)(d.Y0X, {
       transitionState: o,
       size: d.CgR.DYNAMIC,
       className: l()(j, K.gameProfileModal),
@@ -276,7 +276,7 @@ let U = e => e.filter(S.z6).slice(0, 5),
         orientation: "auto",
         children: [(0, n.jsx)(Q, {
           detectedGame: L,
-          application: T,
+          application: M,
           entries: C,
           viewId: S,
           trackAction: G
@@ -285,11 +285,11 @@ let U = e => e.filter(S.z6).slice(0, 5),
             className: l()(K.content, K.mainContent),
             children: [(0, n.jsx)(F, {
               detectedGame: L,
-              application: T,
+              application: M,
               entries: C,
-              officialGuildInvite: M,
+              officialGuildInvite: T,
               similarGames: N,
-              similarGamesError: A,
+              similarGamesError: w,
               onClose: c,
               viewId: S,
               trackAction: G

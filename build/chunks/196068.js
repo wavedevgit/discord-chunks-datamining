@@ -1,4 +1,4 @@
-/** Chunk was on 78965 **/
+/** Chunk was on 48057 **/
 n.d(t, {
   c: () => P
 });
@@ -19,8 +19,8 @@ var r = n(255367),
   p = n(594174),
   N = n(626135),
   S = n(74538),
-  f = n(243778),
-  A = n(921944),
+  A = n(243778),
+  f = n(921944),
   R = n(981631),
   m = n(474936),
   C = n(388032),
@@ -93,7 +93,7 @@ let P = e => {
     children: [(0, r.jsx)(c.RyX, {
       noticeType: R.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        T.ZP.dismissOutboundPromotionNotice(), null !== e && e(A.L.USER_DISMISS)
+        T.ZP.dismissOutboundPromotionNotice(), null !== e && e(f.L.USER_DISMISS)
       }
     }), (0, r.jsx)(c.SrA, {
       size: "md",
@@ -108,18 +108,18 @@ let P = e => {
     }) : C.intl.string(C.t["5JMiOj"]) : C.intl.string(C.t["Pzh+Gx"]), (0, r.jsx)(c.NoS, {
       noticeType: R.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        k(), null !== e && e(A.L.TAKE_ACTION)
+        k(), null !== e && e(f.L.TAKE_ACTION)
       },
       children: D ? C.intl.string(C.t.pj0XBA) : C.intl.string(C.t.jVcuVV)
     })]
   });
-  return b ? (0, r.jsx)(f.O1, {
+  return b ? (0, r.jsx)(A.O1, {
     contentType: t,
     newSnowflakeId: n,
     timeRecurringConfig: {
       cooldownDurationMs: 0
     },
-    groupName: A.R.NOTICE_BAR,
+    groupName: f.R.NOTICE_BAR,
     bypassAutoDismiss: !0,
     children: e => {
       let {

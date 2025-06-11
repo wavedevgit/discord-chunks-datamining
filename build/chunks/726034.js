@@ -207,6 +207,7 @@ function V(e) {
     type: t
   } = e, n = i.useCallback(() => {
     var e;
+    (0, I.Om)();
     let t = (0, O.C)();
     y.I.setState({
       colors: t.colors,

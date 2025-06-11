@@ -2,7 +2,6 @@
 "use strict";
 n.d(t, {
   DG: () => o,
-  iC: () => _,
   me: () => s,
   nP: () => f,
   sA: () => c,
@@ -108,18 +107,3 @@ function f(e) {
     autoTrackExposure: !0
   })
 }
-let _ = (0, r.B)({
-  kind: "user",
-  id: "2025-02_game_profile_reenable",
-  label: "Re-enable content inventory on game profile",
-  defaultConfig: {
-    enabled: !1
-  },
-  treatments: [{
-    id: 1,
-    label: "Re-enable",
-    config: {
-      enabled: !0
-    }
-  }]
-})

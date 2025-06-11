@@ -1,4 +1,4 @@
-/** Chunk was on 78965 **/
+/** Chunk was on 48057 **/
 n.d(t, {
   Z: () => M,
   a: () => h
@@ -19,8 +19,8 @@ var r, i = n(255367),
   p = n(372900),
   N = n(172751),
   S = n(477747),
-  f = n(477734),
-  A = n(670188),
+  A = n(477734),
+  f = n(670188),
   R = n(768581),
   m = n(585483),
   C = n(463396),
@@ -100,7 +100,7 @@ function M(e) {
     colorString: J,
     colorStrings: Q,
     colorRoleName: $
-  } = n, ee = (0, s.e7)([E.Z], () => E.Z.roleStyle), et = "username" === ee, en = (0, f.X$)(), er = (0, S.Z)(null != B ? B : Y, "BaseUsername"), ei = (0, g.Z)(r), el = l.useContext(u.d), eo = er && null != Q && null != Q.primaryColor && null != Q.secondaryColor, ea = et && eo;
+  } = n, ee = (0, s.e7)([E.Z], () => E.Z.roleStyle), et = "username" === ee, en = (0, A.X$)(), er = (0, S.Z)(null != B ? B : Y, "BaseUsername"), ei = (0, g.Z)(r), el = l.useContext(u.d), eo = er && null != Q && null != Q.primaryColor && null != Q.secondaryColor, ea = et && eo;
   l.useEffect(() => {
     if (null == W || !ea || null == el) return;
     let {
@@ -136,7 +136,7 @@ function M(e) {
     userId: r.author.id,
     contextGuildId: Y,
     className: y.clanTagChiplet
-  }) : null, [h, n.primaryGuild, Y, r.author.id, k]), eE = null != T ? T : r.author, eI = null != G && null != v ? (0, i.jsx)(A.Z, {
+  }) : null, [h, n.primaryGuild, Y, r.author.id, k]), eE = null != T ? T : r.author, eI = null != G && null != v ? (0, i.jsx)(f.Z, {
     targetElementRef: z,
     user: eE,
     renderPopout: G,

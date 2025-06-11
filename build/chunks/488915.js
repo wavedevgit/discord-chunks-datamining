@@ -28,18 +28,18 @@ function T(t, e, i) {
   return "entitlement:".concat(t, ":").concat(i, ":").concat(e)
 }
 
-function N(t, e) {
+function g(t, e) {
   return "entitlement:".concat(e, ":").concat(t)
 }
-let g = new p.h(t => [f(t.application_id), ...t.subscription_listings_ids.map(C)], t => t.id),
+let N = new p.h(t => [f(t.application_id), ...t.subscription_listings_ids.map(C)], t => t.id),
   P = new p.h(t => [f(t.application_id), I(t.subscription_plans[0].id)], t => t.id),
-  O = new p.h(t => [T(t.applicationId, t.isValid(null, d.Z), t.guildId), N(t.isValid(null, d.Z), t.guildId)], t => t.id),
+  O = new p.h(t => [T(t.applicationId, t.isValid(null, d.Z), t.guildId), g(t.isValid(null, d.Z), t.guildId)], t => t.id),
   b = {},
   m = {};
 
 function h(t) {
   var e, i;
-  for (let n of (g.set(t.id, t), null != (e = t.subscription_listings) ? e : [])) {
+  for (let n of (N.set(t.id, t), null != (e = t.subscription_listings) ? e : [])) {
     i = n, P.set(i.id, i)
   }
 }
@@ -49,10 +49,10 @@ class L extends(n = c.yh) {
     return null != (e = b[t]) ? e : 0
   }
   getSubscriptionGroupListing(t) {
-    return g.get(t)
+    return N.get(t)
   }
   getSubscriptionGroupListingForSubscriptionListing(t) {
-    let e = g.values(C(t));
+    let e = N.values(C(t));
     return a()(e.length <= 1, "Found multiple group listings for listing"), e[0]
   }
   getSubscriptionListing(t) {
@@ -75,7 +75,7 @@ class L extends(n = c.yh) {
   }
   getEntitlementsForGuild(t) {
     let e = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-    return O.values(N(e, t))
+    return O.values(g(e, t))
   }
 }
 o = "ApplicationSubscriptionStore", (s = "displayName") in L ? Object.defineProperty(L, s, {
@@ -86,7 +86,7 @@ o = "ApplicationSubscriptionStore", (s = "displayName") in L ? Object.defineProp
 }) : L[s] = o;
 let E = new L(u.Z, {
   LOGOUT: function() {
-    g.clear(), P.clear(), O.clear(), b = {}, m = {}
+    N.clear(), P.clear(), O.clear(), b = {}, m = {}
   },
   APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS: function(t) {
     let {
@@ -94,7 +94,7 @@ let E = new L(u.Z, {
       groupListingId: i
     } = t;
     b[e] = 1;
-    let n = g.get(i);
+    let n = N.get(i);
     if (null != n)
       for (let t of n.subscription_listings_ids) P.delete(t)
   },

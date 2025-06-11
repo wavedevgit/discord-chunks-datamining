@@ -1,4 +1,4 @@
-/** Chunk was on 78965 **/
+/** Chunk was on 48057 **/
 n.d(t, {
   Z: () => R
 }), n(539854), n(388685);
@@ -20,9 +20,9 @@ var i = n(120356),
   p = n(176505),
   N = n(388032),
   S = n(246752),
-  f = n(240211);
+  A = n(240211);
 
-function A(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,13 +52,13 @@ let R = () => {
     y = null,
     D = null,
     b = null,
-    h = [S.notice, f.notice];
+    h = [S.notice, A.notice];
   switch (P) {
     case E.wB.SUBMITTED:
       y = N.intl.string(N.t["5iLvS0"]), D = N.intl.string(N.t.mqtdmZ), b = () => {
         (0, c.h7j)(e => {
           var t, n;
-          return (0, r.jsx)(c.ConfirmModal, (t = A({
+          return (0, r.jsx)(c.ConfirmModal, (t = f({
             header: N.intl.string(N.t.aIz1oa),
             confirmText: N.intl.string(N.t["cY+Ooa"]),
             cancelText: N.intl.string(N.t["ETE/oK"]),
@@ -88,7 +88,7 @@ let R = () => {
           let {
             default: e
           } = await n.e("3378").then(n.bind(n, 76075));
-          return t => (0, r.jsx)(e, A({
+          return t => (0, r.jsx)(e, f({
             guildId: R.id
           }, t))
         })

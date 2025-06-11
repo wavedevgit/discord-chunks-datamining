@@ -19,14 +19,17 @@ function c(e, t) {
 
 function u(e) {
   let {
-    feed: t,
-    filters: r
+    id: t,
+    unrankedEntries: r = !1
+  } = e, {
+    feed: u,
+    filters: d
   } = (0, i.cj)([a.Z], () => ({
-    feed: a.Z.getFeed(e),
+    feed: a.Z.getFeed(t),
     filters: a.Z.getFilters()
-  })), u = n.useMemo(() => {
-    let e = null == t ? void 0 : t.entries.map(e => e.content);
-    return null != r ? null == e ? void 0 : e.filter(e => c(r, e)) : e
-  }, [t, r]);
-  return u = (0, l.Z)(u), u = (0, s.Z)(u), u = (0, o.Z)(u)
+  })), m = n.useMemo(() => {
+    let e = r ? null == u ? void 0 : u.unranked_game_entries.map(e => e.content) : null == u ? void 0 : u.entries.map(e => e.content);
+    return null != d ? null == e ? void 0 : e.filter(e => c(d, e)) : e
+  }, [u, d, r]);
+  return m = (0, l.Z)(m), m = (0, s.Z)(m), m = (0, o.Z)(m)
 }

@@ -169,7 +169,7 @@ function D(e) {
   } = t, c = (0, o.e7)([x.Z], () => {
     var e;
     return null != (e = x.Z.getGuildId()) ? e : void 0
-  }, []), u = (0, _.Ns)(t.id), d = (0, o.Wu)([v.default, y.Z], () => {
+  }, []), u = (0, _.N)(t.id), d = (0, o.Wu)([v.default, y.Z], () => {
     let e = [];
     for (let [t, n] of u.entries()) {
       if (t >= 5) break;

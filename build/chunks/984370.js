@@ -1,4 +1,4 @@
-/** Chunk was on 78965 **/
+/** Chunk was on 48057 **/
 n.d(t, {
   O: () => v,
   Z: () => j
@@ -21,8 +21,8 @@ var i = n(120356),
   p = n(2818),
   N = n(954551),
   S = n(208450),
-  f = n(975146),
-  A = n(979651),
+  A = n(975146),
+  f = n(979651),
   R = n(358085),
   m = n(998502),
   C = n(665149),
@@ -89,7 +89,7 @@ function k(e) {
     role: Z,
     hideSearch: j,
     showDivider: x
-  } = e, F = null == i || (0, b.AB)(i) ? null : i, G = (0, a.e7)([A.Z], () => A.Z.isInChannel(F) || !1), V = (0, a.e7)([_.Z], () => null != F && _.Z.getParticipantsListOpen(F)), {
+  } = e, F = null == i || (0, b.AB)(i) ? null : i, G = (0, a.e7)([f.Z], () => f.Z.isInChannel(F) || !1), V = (0, a.e7)([_.Z], () => null != F && _.Z.getParticipantsListOpen(F)), {
     hasBugReporterAccess: w
   } = d.Z.useExperiment({
     location: "HeaderBar"
@@ -118,7 +118,7 @@ function k(e) {
           canShowReminder: !0
         }), !H && (0, r.jsx)(T.Z, {}), B && !W ? (0, r.jsx)(N.Z, {}) : null, !H && (w ? (0, r.jsx)(P.Z, {}) : (0, r.jsx)(g.Z, {})), z && G && null != F && !V && l === D.d4z.GROUP_DM && (0, r.jsxs)("div", {
           className: h.controlButtonWrapper,
-          children: [(0, r.jsx)(C.ZP.Divider, {}), (0, r.jsx)(f.Z, {
+          children: [(0, r.jsx)(C.ZP.Divider, {}), (0, r.jsx)(A.Z, {
             onClick: () => c.Z.toggleParticipantsList(F, !V)
           })]
         })]

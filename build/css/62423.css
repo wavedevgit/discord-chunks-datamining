@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 8a5111cc2bba2199
+  Original File Name: 90bdc57b17c242c0
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -6772,7 +6772,9 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid var(--background-secondary);
-    left: 100px
+    bottom: -10px;
+    left: 100px;
+    top: unset
 }
 
 .visual-refresh .box_ee23ac {
@@ -13257,4 +13259,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=8a5111cc2bba2199.css.map*/
+/*# sourceMappingURL=90bdc57b17c242c0.css.map*/

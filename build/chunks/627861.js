@@ -451,7 +451,7 @@ function ec(e) {
   }, [ex, V, ey, eO]), ej = el(j.name, null == (t = P.activity) ? void 0 : t.type), eS = k ? (0, f.H)({
     applicationId: j.id,
     referrerId: I
-  }) : void 0, eI = (0, O.Ns)(j.id).some(e => (0, x.ig)(e) === l.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+  }) : void 0, eI = (0, O.N)(j.id).some(e => (0, x.ig)(e) === l.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.YqE, {
       size: "xxs",
       color: "currentColor"

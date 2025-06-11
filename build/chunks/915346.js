@@ -11,16 +11,16 @@ async function l(e) {
     analyticsLocations: l,
     customId: o,
     referrerId: a,
-    commandOrigin: c
-  } = e, u = await i.Z.openPrivateChannel({
+    commandOrigin: u
+  } = e, c = await i.Z.openPrivateChannel({
     recipientIds: n
   });
   return await (0, r.Z)({
     targetApplicationId: t,
-    channelId: u,
+    channelId: c,
     analyticsLocations: l,
     customId: o,
     referrerId: a,
-    commandOrigin: c
+    commandOrigin: u
   })
 }

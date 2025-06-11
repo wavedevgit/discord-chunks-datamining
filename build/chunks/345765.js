@@ -169,15 +169,8 @@ function B(e) {
 }
 
 function F() {
-  let {
-    enabled: e
-  } = _.iC.getCurrentConfig({
-    location: "ContentInventoryManager"
-  }, {
-    autoTrackExposure: !0
-  });
-  e && x({
-    feedId: g.YN.GAME_PROFILE_FEED,
+  x({
+    feedId: g.YN.GLOBAL_FEED,
     feature: i.L.GAME_PROFILE
   })
 }

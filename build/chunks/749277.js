@@ -1,4 +1,4 @@
-/** Chunk was on 78965 **/
+/** Chunk was on 48057 **/
 n.d(t, {
   A: () => M
 });
@@ -20,8 +20,8 @@ var i = n(442837),
   p = n(246965),
   N = n(703656),
   S = n(706454),
-  f = n(914010),
-  A = n(594174),
+  A = n(914010),
+  f = n(594174),
   R = n(933429),
   m = n(395361),
   C = n(626135),
@@ -36,7 +36,7 @@ let M = e => {
   let {
     dismissibleContent: t,
     noticeType: M
-  } = e, v = (0, i.e7)([R.ZP], () => R.ZP.getNotice()), k = (0, i.e7)([S.default], () => S.default.locale), L = (0, i.e7)([A.default], () => A.default.getCurrentUser()), Z = (0, i.e7)([f.Z], () => f.Z.getGuildId());
+  } = e, v = (0, i.e7)([R.ZP], () => R.ZP.getNotice()), k = (0, i.e7)([S.default], () => S.default.locale), L = (0, i.e7)([f.default], () => f.default.getCurrentUser()), Z = (0, i.e7)([A.Z], () => A.Z.getGuildId());
   return (0, r.jsx)(g.ZP, {
     contentTypes: [t],
     groupName: P.R.NOTICE_BAR,
