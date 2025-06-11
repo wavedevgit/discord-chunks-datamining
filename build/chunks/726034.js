@@ -240,7 +240,7 @@ function Z(e) {
     onSaveTheme: t,
     canApply: n
   } = e, i = (0, g.m)(C.p9.TIER_2);
-  return (0, I.h)(i, f.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsxs)("div", {
+  return (0, I.hf)(i, f.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsxs)("div", {
     className: w.coachmarkFooterContainer,
     children: [(0, r.jsx)(B, {
       type: "with-text"
@@ -269,7 +269,11 @@ function H(e) {
     canApply: n,
     metadata: i
   } = e, a = (0, g.m)(C.p9.TIER_2);
-  return (0, I.h)(a, f.Z.CUSTOM_THEMES_EDITOR), (0, r.jsxs)("div", {
+  (0, I.hf)(a, f.Z.CUSTOM_THEMES_EDITOR);
+  let o = () => {
+    (0, I.Vb)(), (null == i ? void 0 : i.from) === _.tE.SETTING ? (d.Z.open(), (0, _.Ll)()) : (null == i ? void 0 : i.from) === _.tE.CLIENT_THEMES_EDITOR ? (0, _.XO)(_.wh.CLIENT_THEMES) : (0, _.Ll)()
+  };
+  return (0, r.jsxs)("div", {
     className: w.footerContainer,
     children: [(0, r.jsx)(B, {
       type: "no-text"
@@ -279,9 +283,7 @@ function H(e) {
         className: w.backButton,
         size: c.zxk.Sizes.NONE,
         look: c.zxk.Looks.BLANK,
-        onClick: () => {
-          (null == i ? void 0 : i.from) === _.tE.SETTING ? (d.Z.open(), (0, _.Ll)()) : (null == i ? void 0 : i.from) === _.tE.CLIENT_THEMES_EDITOR ? (0, _.XO)(_.wh.CLIENT_THEMES) : (0, _.Ll)()
-        },
+        onClick: o,
         children: P.intl.string(P.t["13/7kZ"])
       }), a ? (0, r.jsx)(F, {
         className: w.applyButton,
@@ -315,17 +317,19 @@ function Y(e) {
     setColors: g,
     setChassisMixAmount: b,
     setGradientAngle: O
-  } = (0, y.I)(), [I, A] = i.useState(null != (t = f[0]) ? t : "#4394D4"), C = (0, s.e7)([E.Z], () => E.Z.theme), R = (0, p.wE)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), D = () => {
+  } = (0, y.I)(), [A, C] = i.useState(null != (t = f[0]) ? t : "#4394D4"), R = (0, s.e7)([E.Z], () => E.Z.theme), D = (0, p.wE)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), L = () => {
     (0, u.ZI)({
-      theme: C,
+      theme: R,
       customUserThemeSettings: {
         colors: f,
         gradientColorStops: [],
         gradientAngle: m,
         baseMix: h
       }
-    }), null == a || a(N.L.TAKE_ACTION), R || (0, p.EW)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, _.Ll)()
-  }, L = f.length > 0;
+    }), null == a || a(N.L.TAKE_ACTION), D || (0, p.EW)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, _.Ll)()
+  }, x = () => {
+    V(), (0, I.uf)()
+  }, k = f.length > 0;
   return (i.useEffect(() => V, []), d) ? (0, r.jsx)("div", {
     className: w.container,
     "data-app-right-panel": !0,
@@ -338,9 +342,9 @@ function Y(e) {
             markAsDismissed: a
           }) : (0, r.jsx)(M, {}), (0, r.jsx)(S.o, {}), (0, r.jsx)(T.U, {
             onChange: e => {
-              A(e), 0 === f.length && g([e])
+              C(e), 0 === f.length && g([e])
             },
-            value: I,
+            value: A,
             colors: f,
             setColors: g
           }), f.length > 1 && (0, r.jsx)(U, {
@@ -349,25 +353,25 @@ function Y(e) {
           }), (0, r.jsx)(G, {
             chassisMixAmount: h,
             setChassisMixAmount: e => {
-              b(e), 0 === f.length && g([I])
+              b(e), 0 === f.length && g([A])
             }
           }), (0, r.jsxs)(c.zxk, {
             className: w.resetButton,
             innerClassName: w.resetButtonContent,
             look: c.zxk.Looks.FILLED,
             color: c.zxk.Colors.CUSTOM,
-            onClick: V,
+            onClick: x,
             children: [(0, r.jsx)(c.Oe7, {
               size: "xs"
             }), P.intl.string(P.t.yBZMsb)]
           })]
         })
       }), o ? (0, r.jsx)(Z, {
-        onSaveTheme: D,
-        canApply: L
+        onSaveTheme: L,
+        canApply: k
       }) : (0, r.jsx)(H, {
-        onSaveTheme: D,
-        canApply: L,
+        onSaveTheme: L,
+        canApply: k,
         metadata: n
       })]
     })
