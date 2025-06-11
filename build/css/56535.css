@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: 976c5de92f39c834
+  Original File Name: 070da912f3a6ede2
 **/
 .errorBanner__3405b {
     color: var(--status-danger-text)
@@ -12,10 +12,11 @@
 }
 
 .guildSelector_f494f4 {
-    gap: 2px;
-    height: var(--custom-button-height);
-    min-height: var(--custom-button-height);
+    gap: 4px;
+    height: 40px;
+    min-height: 40px;
     overflow: hidden;
+    padding: 0 4px 0 8px;
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content
@@ -25,6 +26,11 @@
     min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content
+}
+
+.guildSelector_f494f4>div svg {
+    height: 20px;
+    width: 20px
 }
 
 .selectedIcon_f494f4 {
@@ -41,10 +47,19 @@
     width: 100%
 }
 
-.guildSelectOption_f494f4 img {
+.guildSelectOptionIcon_f494f4 {
     border-radius: 10px;
+    flex-shrink: 0;
     height: 32px;
+    min-height: 32px;
+    min-width: 32px;
     width: 32px
+}
+
+.guildSelectOptionIcon_f494f4>div {
+    font-weight: 500;
+    height: 32px;
+    line-height: 32px
 }
 
 .guildSelectOptionLabel_f494f4 {
@@ -1023,7 +1038,7 @@
 
 @media (min-width:485px) and (min-height:550px) {
     .footer__4d307 {
-        padding: 19px
+        padding: 24px
     }
 }
 
@@ -1039,10 +1054,10 @@
 
 @media (min-width:485px) and (min-height:550px) {
     .grid__4d307 {
-        gap: var(--space-lg);
+        gap: 12px;
         grid-template-areas: "prev select submit";
-        grid-template-columns: auto -webkit-min-content auto;
-        grid-template-columns: auto min-content auto
+        grid-template-columns: auto -webkit-min-content -webkit-min-content;
+        grid-template-columns: auto min-content min-content
     }
 }
 
@@ -1050,15 +1065,16 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: var(--space-lg);
-    grid-area: prev;
-    min-height: 48px
+    gap: 8px;
+    grid-area: prev
 }
 
 .preview__4d307 img {
     background: var(--interactive-muted);
-    max-height: 48px;
-    max-width: 48px
+    height: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    width: 40px
 }
 
 .selector__4d307 {
@@ -1068,7 +1084,10 @@
 .submit__4d307 {
     grid-area: submit;
     height: var(--custom-button-height);
-    min-height: var(--custom-button-height)
+    min-height: var(--custom-button-height);
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content
 }
 
 .heading__4d307 {
@@ -1325,7 +1344,7 @@
 }
 
 .emptyState__43278 {
-    gap: var(--space-md);
+    gap: 24px;
     height: 100%;
     padding: var(--space-md) 0 var(--space-xl);
     width: 100%
@@ -1344,7 +1363,6 @@
     border-radius: var(--radius-md);
     flex-grow: 1;
     gap: var(--space-lg);
-    justify-content: center;
     overflow: hidden;
     padding: var(--space-xl);
     position: relative
@@ -1356,12 +1374,21 @@
 
 @media (min-width:485px) and (min-height:550px) {
     .dropZone__43278 {
-        padding: calc(var(--space-xl)*2)
+        padding: 48px
     }
 }
 
 .theme-light .dropZone__43278:hover {
     background: rgba(0,0,0,.04)
+}
+
+.imagePlusIcon__43278 {
+    height: 40px;
+    width: 40px
+}
+
+.header__43278 {
+    padding-bottom: 8px
 }
 
 :root {
@@ -1430,4 +1457,4 @@
     }
 }
 
-/*# sourceMappingURL=976c5de92f39c834.css.map*/
+/*# sourceMappingURL=070da912f3a6ede2.css.map*/

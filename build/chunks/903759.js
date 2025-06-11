@@ -21,22 +21,27 @@ let p = e => {
         children: [(0, n.jsx)(l.X6q, {
           variant: "heading-lg/medium",
           color: "header-primary",
-          children: "Add Emoji"
+          className: d.header,
+          children: u.intl.string(u.t["r/XaTE"])
         }), (0, n.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "header-muted",
-          children: "Select an image or GIF. You'll be able to edit & preview."
+          children: u.intl.string(u.t.MU9wRU)
         })]
       }), (0, n.jsxs)("div", {
         className: d.dropZone,
-        children: [(0, n.jsx)(l.dZu, {
+        children: [(0, n.jsx)(l.FmF, {
           size: "lg",
-          color: l.TVs.colors.HEADER_MUTED
-        }), (0, n.jsxs)(l.Text, {
+          color: l.TVs.colors.HEADER_MUTED,
+          className: d.imagePlusIcon
+        }), (0, n.jsx)(l.Text, {
           variant: "text-md/medium",
-          children: ["Drag & drop or ", (0, n.jsx)(h, {
-            setUserImage: t
-          })]
+          children: u.intl.format(u.t["Ks2/3d"], {
+            selectFileHook: e => (0, n.jsx)(h, {
+              translatedContent: e,
+              setUserImage: t
+            })
+          })
         }), null !== r && (0, n.jsx)(c.H, {
           error: o.ze.IMAGE_LOAD
         }), (0, n.jsx)(s.X, {
@@ -48,7 +53,8 @@ let p = e => {
   },
   h = e => {
     let {
-      setUserImage: t
+      setUserImage: t,
+      translatedContent: r
     } = e;
     return (0, n.jsx)(l.P3F, {
       focusProps: {
@@ -56,7 +62,7 @@ let p = e => {
       },
       tag: "a",
       children: (0, n.jsxs)("label", {
-        children: [u.intl.string(u.t.DToW4e), (0, n.jsx)(i.ZP, {
+        children: [r, (0, n.jsx)(i.ZP, {
           tabIndex: 0,
           onChange: (e, r, n) => (t({
             data: e,
