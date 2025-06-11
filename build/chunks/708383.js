@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   o = n(114858),
-  s = n(749210),
-  l = n(287734),
+  l = n(749210),
+  s = n(287734),
   a = n(765717),
   c = n(893607),
   d = n(703656),
@@ -39,7 +39,7 @@ class h extends r.Component {
         messageId: i
       }
     }(e);
-    (0, c.Ss)(t) && (0, c.cq)(n) ? (s.Z.selectGuild(t), l.default.selectChannel({
+    (0, c.Ss)(t) && (0, c.cq)(n) ? (l.Z.selectGuild(t), s.default.selectChannel({
       guildId: t,
       channelId: n,
       messageId: i

@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(481060),
   o = n(13245),
-  s = n(371651),
-  l = n(594174),
+  l = n(371651),
+  s = n(594174),
   a = n(145597),
   c = n(312839),
   d = n(981631),
@@ -67,7 +67,7 @@ function y(e) {
         voiceGuild: p
       } = e, {
         trackView: y,
-        trackClick: v
+        trackClick: O
       } = (0, c.R)(u.n0.GoLiveNudge, {
         notif_type: u.n0.GoLiveNudge
       });
@@ -84,9 +84,9 @@ function y(e) {
           y()
         },
         onNotificationClick: (e, t) => {
-          v("unlock"), o.Z.updateNotificationStatus(t);
-          let c = s.default.isOverlayOOPEnabledForPid((0, a.getPID)());
-          if (c ? o.Z.setInputLocked(!1, (0, a.getPID)()) : o.Z.setInstanceLocked(!1), null == l.default.getCurrentUser()) return;
+          O("unlock"), o.Z.updateNotificationStatus(t);
+          let c = l.default.isOverlayOOPEnabledForPid((0, a.getPID)());
+          if (c ? o.Z.setInputLocked(!1, (0, a.getPID)()) : o.Z.setInstanceLocked(!1), null == s.default.getCurrentUser()) return;
           let u = c ? {
             contextKey: r.u1M
           } : void 0;
@@ -103,7 +103,7 @@ function y(e) {
           }, u)
         },
         onDismissClick: () => {
-          v("dismiss")
+          O("dismiss")
         }
       }
     }
@@ -111,7 +111,7 @@ function y(e) {
       let {
         game: t
       } = e, {
-        trackView: l,
+        trackView: s,
         trackClick: p
       } = (0, c.R)(u.n0.GoLiveNonVoiceNudge, {
         notif_type: u.n0.GoLiveNonVoiceNudge
@@ -125,13 +125,13 @@ function y(e) {
         hint: () => (0, i.jsx)(m, {}),
         renderFooter: () => (0, i.jsx)(m, {}),
         onNotificationShow: () => {
-          l()
+          s()
         },
         onNotificationClick: (e, t) => {
           p("unlock"), o.Z.updateNotificationStatus(t);
-          let l = s.default.isOverlayOOPEnabledForPid((0, a.getPID)());
-          l ? o.Z.setInputLocked(!1, (0, a.getPID)()) : o.Z.setInstanceLocked(!1);
-          let c = l ? {
+          let s = l.default.isOverlayOOPEnabledForPid((0, a.getPID)());
+          s ? o.Z.setInputLocked(!1, (0, a.getPID)()) : o.Z.setInstanceLocked(!1);
+          let c = s ? {
             contextKey: r.u1M
           } : void 0;
           (0, r.ZDy)(async () => {

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(224706),
   r = n(13245),
   o = n(864060),
-  s = n(593481),
-  l = n(312839),
+  l = n(593481),
+  s = n(312839),
   a = n(987650),
   c = n(388032);
 
@@ -21,8 +21,8 @@ function d(e, t, n, d, u) {
     body: m
   } = (0, o.Xi)(e, t, n), {
     trackView: y,
-    trackClick: v
-  } = (0, l.R)(a.n0.ActivityInvite, {
+    trackClick: O
+  } = (0, s.R)(a.n0.ActivityInvite, {
     notif_type: a.n0.ActivityInvite,
     notif_user_id: n.id,
     message_id: t.id,
@@ -37,22 +37,22 @@ function d(e, t, n, d, u) {
     icon: f,
     title: g,
     body: m,
-    hint: e => (0, s.QR)(e, (0, l.P)(), c.t.aB5xLy),
+    hint: e => (0, l.QR)(e, (0, s.P)(), c.t.aB5xLy),
     onNotificationShow: () => {
       y()
     },
     confirmText: c.intl.string(c.t.VJlc0d),
-    onConfirmClick: (o, s) => {
+    onConfirmClick: (o, l) => {
       i.Z.join({
         userId: n.id,
         sessionId: p,
         applicationId: d.id,
         channelId: e.id,
         messageId: t.id
-      }), r.Z.updateNotificationStatus(s), v("join")
+      }), r.Z.updateNotificationStatus(l), O("join")
     },
     onDismissClick: () => {
-      v("dismiss")
+      O("dismiss")
     }
   }
 }

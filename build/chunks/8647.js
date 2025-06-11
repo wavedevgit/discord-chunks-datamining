@@ -13,9 +13,9 @@ var r = n(120356),
   d = n(78839),
   u = n(63063),
   m = n(74538),
-  g = n(821629),
-  p = n(784238),
-  h = n(346497),
+  g = n(367074),
+  p = n(821629),
+  h = n(784238),
   f = n(725727),
   b = n(474936),
   _ = n(981631),
@@ -28,7 +28,7 @@ let j = function(e) {
   } = e, {
     promotion: j
   } = (0, f.mq)(), C = (0, l.e7)([d.ZP], () => d.ZP.getPremiumTypeSubscription());
-  if (!(0, h.Vi)()) return null;
+  if (!(0, g.Vi)()) return null;
   let O = new Date(j.endDate);
   return (0, i.jsx)(c.O, {
     newLocations: [o.Z.PREMIUM_MARKETING_PAGE_BANNER],
@@ -53,7 +53,7 @@ let j = function(e) {
           }), (0, i.jsx)(a.Text, {
             className: E.countdown,
             variant: "text-sm/bold",
-            children: (0, i.jsx)(g.Z, {
+            children: (0, i.jsx)(p.Z, {
               endDate: O
             })
           }), (0, i.jsx)(a.Text, {
@@ -63,7 +63,7 @@ let j = function(e) {
               helpCenterLink: u.Z.getArticleURL(_.BhN.SUMMER_BOGO_2024)
             })
           })]
-        }), (0, i.jsx)(p.Z, {
+        }), (0, i.jsx)(h.Z, {
           textOptions: {
             textOverride: x.intl.string(x.t.J61px8),
             textClassName: E.subscribeButtonText

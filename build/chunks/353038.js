@@ -1,6 +1,6 @@
 /** Chunk was on 89298 **/
 n.d(t, {
-  B: () => b,
+  B: () => v,
   Z: () => C
 }), n(388685), n(415506);
 var i, r, o = n(255367),
@@ -49,8 +49,8 @@ function y(e, t) {
   }), e
 }
 let O = (e, t, n, i) => Math.pow(e - n, 2) + Math.pow(t - i, 2);
-var b = ((r = {}).MOVE = "MOVE", r.RESIZE_NORTH = "RESIZE_NORTH", r.RESIZE_WEST = "RESIZE_WEST", r.RESIZE_EAST = "RESIZE_EAST", r.RESIZE_SOUTH = "RESIZE_SOUTH", r.RESIZE_NORTH_WEST = "RESIZE_NORTH_WEST", r.RESIZE_NORTH_EAST = "RESIZE_NORTH_EAST", r.RESIZE_SOUTH_WEST = "RESIZE_SOUTH_WEST", r.RESIZE_SOUTH_EAST = "RESIZE_SOUTH_EAST", r);
-let v = new Set(["RESIZE_NORTH", "RESIZE_WEST", "RESIZE_EAST", "RESIZE_SOUTH", "RESIZE_NORTH_WEST", "RESIZE_NORTH_EAST", "RESIZE_SOUTH_WEST", "RESIZE_SOUTH_EAST"]);
+var v = ((r = {}).MOVE = "MOVE", r.RESIZE_NORTH = "RESIZE_NORTH", r.RESIZE_WEST = "RESIZE_WEST", r.RESIZE_EAST = "RESIZE_EAST", r.RESIZE_SOUTH = "RESIZE_SOUTH", r.RESIZE_NORTH_WEST = "RESIZE_NORTH_WEST", r.RESIZE_NORTH_EAST = "RESIZE_NORTH_EAST", r.RESIZE_SOUTH_WEST = "RESIZE_SOUTH_WEST", r.RESIZE_SOUTH_EAST = "RESIZE_SOUTH_EAST", r);
+let b = new Set(["RESIZE_NORTH", "RESIZE_WEST", "RESIZE_EAST", "RESIZE_SOUTH", "RESIZE_NORTH_WEST", "RESIZE_NORTH_EAST", "RESIZE_SOUTH_WEST", "RESIZE_SOUTH_EAST"]);
 
 function E(e, t, n) {
   let {
@@ -182,16 +182,16 @@ class C extends(i = l.Component) {
     let {
       width: m,
       height: g
-    } = S(n, this.size), y = t - h, O = e - d, b = (0, p.ou)((0, p.PY)({
+    } = S(n, this.size), y = t - h, O = e - d, v = (0, p.ou)((0, p.PY)({
       top: y,
       left: O,
       bottom: void 0,
       right: void 0
-    }, r, o, m, g)), v = u ? (0, p.R)(b) : I("RESIZE_SOUTH_EAST", b);
-    this.setDOMPositions(v), this.setState({
+    }, r, o, m, g)), b = u ? (0, p.R)(v) : I("RESIZE_SOUTH_EAST", v);
+    this.setDOMPositions(b), this.setState({
       operationStarted: !0,
-      anchorTopOverride: null != v.top,
-      anchorLeftOverride: null != v.left
+      anchorTopOverride: null != b.top,
+      anchorLeftOverride: null != b.left
     }, () => {
       f || null == s || s(), null != c && c(i, "MOVE", this.anchor, this.size)
     })
@@ -218,37 +218,37 @@ class C extends(i = l.Component) {
     } = this, {
       startX: m,
       startY: O
-    } = this.dragState, b = 0, v = 0;
+    } = this.dragState, v = 0, b = 0;
     if (null == h) return;
     switch (e = Math.max(Math.min(r, e), l), t = Math.max(Math.min(o, t), a), h) {
       case "RESIZE_EAST":
       case "RESIZE_SOUTH_EAST":
       case "RESIZE_NORTH_EAST":
-        b -= m - e;
+        v -= m - e;
         break;
       case "RESIZE_WEST":
       case "RESIZE_SOUTH_WEST":
       case "RESIZE_NORTH_WEST":
-        b += m - e
+        v += m - e
     }
     switch (h) {
       case "RESIZE_SOUTH":
       case "RESIZE_SOUTH_WEST":
       case "RESIZE_SOUTH_EAST":
-        v -= O - t;
+        b -= O - t;
         break;
       case "RESIZE_NORTH":
       case "RESIZE_NORTH_WEST":
       case "RESIZE_NORTH_EAST":
-        v += O - t
+        b += O - t
     }
     let E = d({
         padding: 8,
         borderWidth: 2,
         operation: h,
         computedSize: {
-          width: Math.max(this.dragState.offsetWidth + b, i.width),
-          height: Math.max(this.dragState.offsetHeight + v, i.height)
+          width: Math.max(this.dragState.offsetWidth + v, i.width),
+          height: Math.max(this.dragState.offsetHeight + b, i.height)
         },
         originSize: {
           width: this.dragState.offsetWidth,
@@ -495,7 +495,7 @@ class C extends(i = l.Component) {
           operationStarted: l
         }
       } = this;
-      !(null == o || !l && 3 > O(i, r, t, n)) && ("MOVE" === o ? this.handleDragMove(t, n) : v.has(o) && this.handleResizeMove(t, n))
+      !(null == o || !l && 3 > O(i, r, t, n)) && ("MOVE" === o ? this.handleDragMove(t, n) : b.has(o) && this.handleResizeMove(t, n))
     }), m(this, "handleOperationStart", (e, t, n) => {
       let {
         ref: {
@@ -592,4 +592,4 @@ class C extends(i = l.Component) {
     }), this.anchor = _(e.anchor), this.size = E(e.size, e.minSize.width, e.minSize.height)
   }
 }
-m(C, "Operations", b)
+m(C, "Operations", v)

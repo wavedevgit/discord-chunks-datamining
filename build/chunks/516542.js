@@ -23,8 +23,8 @@ function O(e) {
     id: t,
     replyToMessageId: n,
     channel: O,
-    onSend: b
-  } = e, v = (0, f.Z)(), {
+    onSend: v
+  } = e, b = (0, f.Z)(), {
     placeholder: E,
     accessibilityLabel: _
   } = (0, c.Z)({
@@ -47,10 +47,10 @@ function O(e) {
     T = r.useCallback(e => {
       "Escape" === e.key && l.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    k = r.useCallback(() => (I.length > v || (o.Z.sendMessage(O.id, h.ZP.parse(O, I), !1), l.Z.setInputLocked(!0, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == b || b(I)), Promise.resolve({
+    k = r.useCallback(() => (I.length > b || (o.Z.sendMessage(O.id, h.ZP.parse(O, I), !1), l.Z.setInputLocked(!0, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(I)), Promise.resolve({
       shouldClear: !1,
       shouldRefocus: !0
-    })), [I, v, O, t, b]);
+    })), [I, b, O, t, v]);
   return (0, i.jsx)("div", {
     className: y.container,
     children: (0, i.jsx)(p.Z, {

@@ -1,12 +1,12 @@
 /** Chunk was on 63141 **/
 n.d(t, {
-  ZP: () => x,
+  ZP: () => S,
   wB: () => m
 }), n(415506);
 var i, r = n(255367),
   o = n(73800),
-  s = n(120356),
-  l = n.n(s),
+  l = n(120356),
+  s = n.n(l),
   a = n(877921),
   c = n.n(a),
   d = n(481060),
@@ -28,8 +28,8 @@ let g = u.t_t.DEFAULT,
     type: g,
     opacity: m
   }),
-  v = o.createContext(void 0),
-  _ = e => {
+  O = o.createContext(void 0),
+  v = e => {
     var {
       children: t,
       className: n
@@ -53,10 +53,10 @@ let g = u.t_t.DEFAULT,
         let {
           type: o
         } = e;
-        return (0, r.jsx)(v.Consumer, {
+        return (0, r.jsx)(O.Consumer, {
           children: e => {
-            var s, a;
-            return (0, r.jsx)("div", (s = function(e) {
+            var l, a;
+            return (0, r.jsx)("div", (l = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   i = Object.keys(n);
@@ -68,11 +68,11 @@ let g = u.t_t.DEFAULT,
               }
               return e
             }({
-              className: l()(h.bar, h[c()(o)], n),
+              className: s()(h.bar, h[c()(o)], n),
               style: e
             }, i), a = a = {
               children: t
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
                 var i = Object.getOwnPropertySymbols(e);
@@ -80,31 +80,31 @@ let g = u.t_t.DEFAULT,
               }
               return n
             })(Object(a)).forEach(function(e) {
-              Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(a, e))
-            }), s))
+              Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
+            }), l))
           }
         })
       }
     })
   };
-class O extends(i = o.PureComponent) {
+class _ extends(i = o.PureComponent) {
   render() {
     let {
       disableScroll: e,
       children: t,
       className: n
     } = this.props;
-    return (0, r.jsx)(v.Consumer, {
+    return (0, r.jsx)(O.Consumer, {
       children: i => (0, r.jsx)(y.Consumer, {
         children: o => {
-          let s = l()(h.body, h[c()(o.type)], n);
+          let l = s()(h.body, h[c()(o.type)], n);
           return e ? (0, r.jsx)("div", {
-            className: s,
+            className: l,
             style: i,
             children: t
           }) : (0, r.jsx)(d.Ttm, {
             fade: !0,
-            className: s,
+            className: l,
             children: t
           })
         }
@@ -112,7 +112,7 @@ class O extends(i = o.PureComponent) {
     })
   }
 }
-f(O, "defaultProps", {
+f(_, "defaultProps", {
   disableScroll: !1
 });
 let b = e => {
@@ -121,7 +121,7 @@ let b = e => {
       width: n,
       height: i,
       children: o,
-      className: s,
+      className: l,
       opacity: a = m,
       onClick: d
     } = e;
@@ -131,7 +131,7 @@ let b = e => {
         opacity: a
       },
       children: (0, r.jsx)("div", {
-        className: l()(h.widget, h[c()(t)], s),
+        className: s()(h.widget, h[c()(t)], l),
         style: {
           width: n,
           height: i
@@ -147,9 +147,9 @@ let b = e => {
       className: n,
       dynamicSize: i = !1
     } = e;
-    return (0, r.jsx)(v.Consumer, {
+    return (0, r.jsx)(O.Consumer, {
       children: e => (0, r.jsx)("div", {
-        className: l()(h.content, {
+        className: s()(h.content, {
           [h.staticSize]: !i
         }, n),
         style: e,
@@ -163,20 +163,20 @@ b.Background = e => {
     opacityOverride: n
   } = e;
   if (null == t) return null;
-  let i = [_, O, E];
+  let i = [v, _, E];
   return (0, r.jsx)(y.Consumer, {
     children: e => {
       let {
-        opacity: s
-      } = e, l = {
-        backgroundColor: "rgba(54, 57, 63, ".concat("" + (null != n ? n : s), ")")
+        opacity: l
+      } = e, s = {
+        backgroundColor: "rgba(54, 57, 63, ".concat("" + (null != n ? n : l), ")")
       };
       if ("string" == typeof t.type) return o.cloneElement(t, {
-        style: l
+        style: s
       });
       {
-        if (i.includes(t.type)) return (0, r.jsx)(v.Provider, {
-          value: l,
+        if (i.includes(t.type)) return (0, r.jsx)(O.Provider, {
+          value: s,
           children: t
         });
         let e = t.type.displayName;
@@ -184,13 +184,13 @@ b.Background = e => {
       }
     }
   })
-}, b.Body = O, b.Content = E, b.Icon = e => {
+}, b.Body = _, b.Content = E, b.Icon = e => {
   let {
     ref: t,
     icon: n,
     label: i,
     onClick: o,
-    isActive: s,
+    isActive: l,
     tooltipPosition: a = "top",
     size: c = 20,
     isTutorial: u = !1
@@ -216,8 +216,8 @@ b.Background = e => {
         onClick: o,
         onMouseEnter: a,
         onMouseLeave: u,
-        className: l()(h.icon, {
-          [h.toggledIconOn]: s
+        className: s()(h.icon, {
+          [h.toggledIconOn]: l
         }),
         innerClassName: p.flexCenter,
         "aria-label": i,
@@ -231,5 +231,5 @@ b.Background = e => {
       })
     }
   })
-}, b.Bar = _;
-let x = b
+}, b.Bar = v;
+let S = b

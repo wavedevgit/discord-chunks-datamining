@@ -490,7 +490,6 @@ let ed = 12633 == n.j ? e => {
       userId: c
     }),
     p = (0, Z.K)({
-      location: "PrivateChannel",
       user: s
     }),
     h = (0, m.e7)([W.default, z.Z], () => {

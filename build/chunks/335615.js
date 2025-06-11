@@ -228,7 +228,6 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
       var e;
       return null != t ? null == (e = U.Z.getRole(i.guild_id, t)) ? void 0 : e.name : void 0
     }, [i, t]), p = (0, R.K)({
-      location: "ChannelMembers",
       user: l
     });
     return (0, r.jsx)(er, $(J({}, n, o), {

@@ -1,13 +1,13 @@
 /** Chunk was on 94136 **/
-i.d(t, {
+n.d(t, {
   Z: () => l
 });
-var n = i(768581),
-  r = i(1585);
-let l = (e, t, i) => (0, n.NZ)({
+var i = n(768581),
+  r = n(1585);
+let l = (e, t, n) => (0, i.NZ)({
   avatarDecoration: {
     asset: e
   },
   size: (0, r.y9)(t),
-  canAnimate: i
+  canAnimate: n
 })

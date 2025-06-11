@@ -131,7 +131,6 @@ let X = l.memo(e => {
   } = (0, S.Z)({
     userId: t.id
   }), er = (0, P.K)({
-    location: "friends-popout",
     user: t
   }), {
     status: el,

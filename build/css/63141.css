@@ -1,6 +1,6 @@
 /**
   Module ID: 63141
-  Original File Name: 096d2c43fb177551
+  Original File Name: 6243c015000ac982
 **/
 .key__1728a {
     background-color: var(--brand-500);
@@ -447,131 +447,6 @@
 }
 
 .ctaButton__8e8b5 {
-    flex-grow: 1
-}
-
-.title__62821 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
-.avatarContainer__62821 {
-    flex-shrink: 0
-}
-
-.helpText__62821 {
-    align-items: center;
-    display: flex;
-    gap: 6px
-}
-
-.editButton__62821 {
-    border-radius: var(--radius-sm);
-    padding: 4px
-}
-
-.editButton__62821:hover {
-    background: var(--bg-mod-strong);
-    color: var(--white-500)
-}
-
-.userRow__62821 {
-    align-items: center;
-    display: flex;
-    gap: 12px;
-    margin-top: 12px
-}
-
-.userInfo__62821 {
-    flex-grow: 1;
-    overflow: hidden
-}
-
-.usernameWrapper__62821 {
-    align-items: center;
-    display: flex;
-    gap: 6px
-}
-
-.username__62821 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
-.inviteButtonWrapper__62821 {
-    flex-shrink: 0;
-    height: 32px;
-    width: 32px
-}
-
-.inviteButton__62821 {
-    padding: 0
-}
-
-.header__62821 {
-    display: flex;
-    justify-content: space-between
-}
-
-.headerLeft__62821 {
-    gap: 8px;
-    overflow: hidden
-}
-
-.headerLeft__62821,.headerRight__62821 {
-    align-items: center;
-    display: flex
-}
-
-.headerRight__62821 {
-    flex-shrink: 0;
-    gap: 12px
-}
-
-.muteButton__62821 .muteIcon__62821 {
-    opacity: .5
-}
-
-.muteButton__62821:hover .muteIcon__62821 {
-    opacity: 1
-}
-
-.dismissButton__62821 .dismissIcon__62821 {
-    opacity: .5
-}
-
-.dismissButton__62821:hover .dismissIcon__62821 {
-    opacity: 1
-}
-
-.gameInfo__62821 {
-    flex-grow: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
-.editMessageContainer__62821 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 8px
-}
-
-.editMessageButtons__62821 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 8px
-}
-
-.cancelButton__62821:hover {
-    color: var(--white-500)
-}
-
-.charCount__62821 {
     flex-grow: 1
 }
 
@@ -1568,4 +1443,4 @@
     transform: translateX(-50%)
 }
 
-/*# sourceMappingURL=096d2c43fb177551.css.map*/
+/*# sourceMappingURL=6243c015000ac982.css.map*/

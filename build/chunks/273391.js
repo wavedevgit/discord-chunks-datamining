@@ -111,7 +111,7 @@ let m = new i.Z("ImageEditor"),
           height: a
         }), S(l)
       }, [D, C, P, E, T]),
-      U = a.useCallback(() => {
+      B = a.useCallback(() => {
         if (null == D) return {};
         let {
           height: e,
@@ -124,7 +124,7 @@ let m = new i.Z("ImageEditor"),
           minWidth: t
         }
       }, [D, C, E]),
-      B = a.useCallback(e => {
+      U = a.useCallback(e => {
         k({
           x: e.clientX - v.current.x,
           y: e.clientY - v.current.y
@@ -228,13 +228,13 @@ let m = new i.Z("ImageEditor"),
           style: h({
             opacity: +(null != D),
             transform: "translate3d(".concat(v.current.x, "px, ").concat(v.current.y, "px, 0) rotate(").concat(C, "deg)")
-          }, U()),
+          }, B()),
           className: p.image,
           src: r,
           crossOrigin: "anonymous",
           alt: "avatar",
           ref: O,
-          onMouseDown: B,
+          onMouseDown: U,
           draggable: !1
         }), (0, n.jsx)("div", {
           className: p.overlay,

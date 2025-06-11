@@ -118,7 +118,6 @@ let W = U.ZP.getEnableHardwareAcceleration(),
         }
       })
     }, [t.guild_id]), q = (0, j.K)({
-      location: "ThreadMembers",
       user: b
     }), [K, X] = i.useState(!1);
     if (null == b) return null;

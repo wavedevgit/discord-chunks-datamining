@@ -6,8 +6,8 @@ var i = n(255367);
 n(73800);
 var r = n(704215),
   o = n(13245),
-  s = n(605236),
-  l = n(593481),
+  l = n(605236),
+  s = n(593481),
   a = n(371651),
   c = n(237997),
   d = n(145597),
@@ -21,14 +21,14 @@ let f = () => ({
     hint: g,
     notifType: h.n0.OopWelcomeNudge
   }),
-  g = e => (0, l.QR)(e, (0, u.P)(), p.t["z8/sgI"]);
+  g = e => (0, s.QR)(e, (0, u.P)(), p.t["z8/sgI"]);
 
 function m(e) {
   let {
     isFirstTimeNux: t
   } = e, {
     icon: n,
-    title: l,
+    title: s,
     body: h,
     hint: g,
     notifType: m
@@ -69,13 +69,13 @@ function m(e) {
     return e
   }(f(), e), {
     trackView: y,
-    trackClick: v
+    trackClick: O
   } = (0, u.R)(m, {
     notif_type: m
   });
   return {
     icon: n,
-    title: l,
+    title: s,
     body: h,
     hint: g,
     renderFooter: () => (0, i.jsx)("div", {
@@ -87,16 +87,16 @@ function m(e) {
     }),
     confirmText: t ? p.intl.string(p.t.TxyTbm) : void 0,
     onConfirmClick: t ? () => {
-      v("unlock"), o.Z.setInputLocked(!1, (0, d.getPID)())
+      O("unlock"), o.Z.setInputLocked(!1, (0, d.getPID)())
     } : void 0,
     onNotificationShow: () => {
-      y(), t && (0, s.EW)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
+      y(), t && (0, l.EW)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
     },
     onNotificationClick: (e, t) => {
-      v("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? o.Z.setInputLocked(!1, (0, d.getPID)()) : c.default.isInstanceLocked() && o.Z.setInstanceLocked(!1)
+      O("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? o.Z.setInputLocked(!1, (0, d.getPID)()) : c.default.isInstanceLocked() && o.Z.setInstanceLocked(!1)
     },
     onDismissClick: () => {
-      v("dismiss")
+      O("dismiss")
     }
   }
 }

@@ -20,14 +20,14 @@ var r = n(255367),
   b = n(626135),
   _ = n(74538),
   E = n(502087),
-  O = n(695349),
-  I = n(963590),
-  y = n(767870),
-  v = n(104494),
-  C = n(639119),
-  S = n(655525),
-  N = n(52188),
-  T = n(346497),
+  O = n(367074),
+  I = n(695349),
+  y = n(963590),
+  v = n(767870),
+  C = n(104494),
+  S = n(639119),
+  N = n(655525),
+  T = n(52188),
   P = n(924540),
   j = n(474486),
   A = n(497334),
@@ -42,7 +42,7 @@ var r = n(255367),
 let U = e => {
     let {
       selected: t
-    } = e, n = (0, a.e7)([f.default], () => f.default.getCurrentUser()), r = (0, a.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()), i = (0, C.N)(), l = (0, v.Ng)(), o = (0, T.Vi)(), s = (0, x.V)(), c = (0, _.Qo)(n, r), u = (0, a.e7)([E.Z], () => E.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? void 0 : n.createdAt;
+    } = e, n = (0, a.e7)([f.default], () => f.default.getCurrentUser()), r = (0, a.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()), i = (0, S.N)(), l = (0, C.Ng)(), o = (0, O.Vi)(), s = (0, x.V)(), c = (0, _.Qo)(n, r), u = (0, a.e7)([E.Z], () => E.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? void 0 : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
   G = e => {
@@ -71,11 +71,11 @@ let U = e => {
       Y = (0, a.e7)([m.ZP], () => m.ZP.getPremiumTypeSubscription()),
       K = (0, _.Qo)(W, Y),
       q = (0, l.JA)("nitro"),
-      Q = (0, C.N)(),
-      X = (0, v.Ng)(),
-      J = (0, O.W)(),
+      Q = (0, S.N)(),
+      X = (0, C.Ng)(),
+      J = (0, I.W)(),
       $ = (0, a.e7)([g.Z], () => g.Z.isLocalizedPromoEnabled) && null == Q,
-      ee = (0, T.Vi)(),
+      ee = (0, O.Vi)(),
       et = (0, x.V)(),
       en = (0, Z.Kn)("NitroTabButton"),
       {
@@ -89,7 +89,7 @@ let U = e => {
         showAfterTimestamp: ei.valueOf(),
         cooldownDurationMs: 0
       }),
-      es = (0, I.Z)({
+      es = (0, y.Z)({
         location: "NitroTabButton"
       }),
       ec = (null == Q ? void 0 : Q.trial_id) === L.a7,
@@ -101,13 +101,13 @@ let U = e => {
       }, [ep, V, ed]), !U({
         selected: V
       })) return null;
-    er === L.a$.NONE || J || (E = 7, n = (0, r.jsx)(y.Z, {
+    er === L.a$.NONE || J || (E = 7, n = (0, r.jsx)(v.Z, {
       className: "",
       startsAt: ei,
       endsAt: el,
       messageStyle: u.aj.SHORT_TIME,
       upperCase: !0
-    })), ee ? (n = (0, r.jsx)(S.Z, {}), E = 0) : ed === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(P._y, {
+    })), ee ? (n = (0, r.jsx)(N.Z, {}), E = 0) : ed === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(P._y, {
       isTabSelected: V,
       badgeCopy: k.intl.string(k.t.y2b7CA),
       offerExpiresAt: null
@@ -125,8 +125,8 @@ let U = e => {
       onSelect: () => (0, p.EW)(o.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: D.L.TAKE_ACTION
       })
-    }), E = 6) : $ && (n = (0, r.jsx)(N.k, {
-      entryPoint: N.U.PrivateMessages
+    }), E = 6) : $ && (n = (0, r.jsx)(T.k, {
+      entryPoint: T.U.PrivateMessages
     }), V || (t = M.localizeBadge), E = 5) : (n = (0, r.jsx)(P.$H, {
       trialOffer: Q,
       isTabSelected: V

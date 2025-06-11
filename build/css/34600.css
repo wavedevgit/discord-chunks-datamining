@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: 4d7b3447117264f7
+  Original File Name: 85a3cedde63813f2
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3729,6 +3729,7 @@
     --thread-channel-spine: #4f4f59;
     --toast-bg: #383b40;
     --typing-indicator-bg: #333338;
+    --user-profile-activity-toolbar-background: #404047;
     --user-profile-background-hover: hsla(240,4%,61%,.08);
     --user-profile-border: hsla(240,4%,61%,.12);
     --user-profile-header-overflow-background: rgba(31,31,33,.5);
@@ -4158,6 +4159,7 @@
     --thread-channel-spine: #c4c9cf;
     --toast-bg: #fff;
     --typing-indicator-bg: #fafafa;
+    --user-profile-activity-toolbar-background: #fff;
     --user-profile-background-hover: hsla(240,4%,61%,.12);
     --user-profile-border: hsla(240,4%,61%,.28);
     --user-profile-header-overflow-background: hsla(0,0%,100%,.5);
@@ -4587,6 +4589,7 @@
     --thread-channel-spine: #4d4f5c;
     --toast-bg: #212129;
     --typing-indicator-bg: #070709;
+    --user-profile-activity-toolbar-background: #1f1f21;
     --user-profile-background-hover: hsla(240,4%,61%,.12);
     --user-profile-border: hsla(240,4%,61%,.24);
     --user-profile-header-overflow-background: rgba(28,28,36,.5);
@@ -5016,6 +5019,7 @@
     --thread-channel-spine: #4d4f5c;
     --toast-bg: #2b2e36;
     --typing-indicator-bg: #1a1a1f;
+    --user-profile-activity-toolbar-background: #2b2e33;
     --user-profile-background-hover: hsla(240,4%,61%,.08);
     --user-profile-border: hsla(240,4%,61%,.12);
     --user-profile-header-overflow-background: rgba(28,28,36,.5);
@@ -5029,4 +5033,4 @@
     --white: #fff
 }
 
-/*# sourceMappingURL=4d7b3447117264f7.css.map*/
+/*# sourceMappingURL=85a3cedde63813f2.css.map*/

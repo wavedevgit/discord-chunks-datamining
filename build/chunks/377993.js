@@ -91,7 +91,6 @@ function w(e) {
       rawText: n
     }), c.Z.startTyping(o.id)
   }, R = (0, m.K)({
-    location: "PrivateChannelRecipients",
     user: t
   }), [M, k] = i.useState(!1);
   return (0, r.jsx)(g.Z, {

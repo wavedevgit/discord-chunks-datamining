@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   o = n(120356),
-  s = n.n(o),
-  l = n(481060),
+  l = n.n(o),
+  s = n(481060),
   a = n(518084),
   c = n(981631),
   d = n(388032),
@@ -21,14 +21,14 @@ let h = function(e) {
     } = e,
     g = r.useRef(null);
   return t = null != n ? (0, i.jsxs)(a.ZP.Bar, {
-    className: s()(u.header, u.draggableStartArea),
+    className: l()(u.header, u.draggableStartArea),
     onMouseDown: f,
     children: [(0, i.jsx)(a.ZP.Content, {
-      className: s()(u.headerTitle, u.draggableStartArea),
+      className: l()(u.headerTitle, u.draggableStartArea),
       dynamicSize: !0,
       children: n
     }), (0, i.jsx)(a.ZP.Content, {
-      children: (0, i.jsx)(l.yRy, {
+      children: (0, i.jsx)(s.yRy, {
         targetElementRef: g,
         position: "right",
         renderPopout: null != p ? p : c.dG4,
@@ -53,7 +53,7 @@ let h = function(e) {
             }
             return e
           }({}, e), n = n = {
-            icon: l.ewm,
+            icon: s.ewm,
             label: d.intl.string(d.t["3D5yo6"]),
             ref: g
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

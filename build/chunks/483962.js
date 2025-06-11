@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(255367),
   r = n(73800),
   o = n(442837),
-  s = n(831218),
-  l = n(840780),
+  l = n(831218),
+  s = n(840780),
   a = n(51596),
   c = n(905423),
   d = n(237997),
@@ -33,7 +33,7 @@ let g = () => (0, a.$Z)("DM_SEARCH"),
           onClick: g,
           children: p.intl.string(p.t.LzcpeX)
         })
-      }), (0, i.jsx)(s.Z, {
+      }), (0, i.jsx)(l.Z, {
         padding: 8,
         theme: h.BRd.DARK,
         version: e,
@@ -41,7 +41,7 @@ let g = () => (0, a.$Z)("DM_SEARCH"),
       }), (0, i.jsx)("section", {
         className: f.panels,
         "aria-label": p.intl.string(p.t.StREWF),
-        children: (0, i.jsx)(l.Z, {
+        children: (0, i.jsx)(s.Z, {
           guildId: null
         })
       })]

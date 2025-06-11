@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var i, r = n(73800),
   o = n(392711),
-  s = n.n(o),
-  l = n(374470),
+  l = n.n(o),
+  s = n(374470),
   a = n(902704),
   c = n(846519),
   d = n(13245),
@@ -28,25 +28,25 @@ let m = {
   },
   y = !1;
 
-function v(e) {
+function O(e) {
   let {
     clientX: t,
     clientY: n
   } = e;
   y = !0, m.x = t, m.y = n
 }
-let _ = new Map;
+let v = new Map;
 
-function O(e, t) {
-  if (null == t) _.delete(e), 0 === _.size && (window.removeEventListener("mousemove", v), y = !1);
+function _(e, t) {
+  if (null == t) v.delete(e), 0 === v.size && (window.removeEventListener("mousemove", O), y = !1);
   else {
-    let n = _.get(e);
+    let n = v.get(e);
     if (null != n && (0, a.Z)(n.zone, t.zone)) return;
-    0 === _.size && window.addEventListener("mousemove", v), _.set(e, t)
+    0 === v.size && window.addEventListener("mousemove", O), v.set(e, t)
   }
   if (f.isPlatformEmbedded)
     if (u.default.isCurrentPidOutOfProcess()) {
-      let e = Array.from(_.values()).map(e => {
+      let e = Array.from(v.values()).map(e => {
         let {
           zone: t
         } = e;
@@ -65,14 +65,14 @@ function O(e, t) {
       if (null == e) return;
       e.broadcastCommand({
         message: "set_click_zones",
-        zones: Array.from(_.values()).map(e => {
+        zones: Array.from(v.values()).map(e => {
           let {
             zone: t
           } = e;
           return t
         })
       }), n = e, b || (n.setClickZoneCallback((e, t, n) => {
-        let i = _.get(e);
+        let i = v.get(e);
         null != i && (y || (m.x = t, m.y = n), i.instance.click())
       }), b = !0)
     }
@@ -83,7 +83,7 @@ class E extends(i = r.PureComponent) {
     this.props.observe ? this.observeZone() : this.updateZone()
   }
   componentWillUnmount() {
-    this.interval.stop(), O(this.zone, null)
+    this.interval.stop(), _(this.zone, null)
   }
   componentDidUpdate(e) {
     let {
@@ -102,16 +102,16 @@ class E extends(i = r.PureComponent) {
     (0, p.J)(e, m.x, m.y)
   }
   constructor(...e) {
-    super(...e), g(this, "zone", s().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {
+    super(...e), g(this, "zone", l().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {
       let e = this.props.contentDomRef.current;
-      if ((0, l.k)(e)) {
+      if ((0, s.k)(e)) {
         let {
           left: t,
           top: n,
           right: i,
           bottom: r
         } = e.getBoundingClientRect();
-        O(this.zone, {
+        _(this.zone, {
           instance: this,
           zone: {
             name: this.zone,

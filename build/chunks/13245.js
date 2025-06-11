@@ -391,12 +391,6 @@ let y = new i.Yd("OverlayActionCreators"),
         pid: e
       })
     },
-    notifyContentInventoryReady(e) {
-      a.Z.dispatch({
-        type: "OVERLAY_CONTENT_INVENTORY_READY",
-        contentInventoryEntries: e
-      })
-    },
     setGpuBoostRequested(e, t) {
       a.Z.dispatch({
         type: "OVERLAY_SET_GPU_BOOST_REQUESTED",

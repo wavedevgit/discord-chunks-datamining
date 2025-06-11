@@ -807,7 +807,6 @@ function tg() {
       analyticsLocations: $
     } = (0, R.ZP)(P.Z.ACCOUNT),
     et = (0, ea.K)({
-      location: "Account",
       user: t
     }),
     ei = (0, eg.Ws)({
