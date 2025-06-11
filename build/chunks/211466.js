@@ -16,14 +16,14 @@ var r = n(63063),
 
 function g() {
   let e = [{
-    title: "Sexually explicit media",
+    title: m.intl.string(m.t.GYpoAg),
     component: () => (0, i.jsx)(l.P, {
       isNested: !0
     }),
     orientation: "vertical",
     setting: d.s6.SEXUALLY_EXPLICIT_MEDIA_REDACTION
   }, {
-    title: "Gore",
+    title: m.intl.string(m.t["16/3Bg"]),
     component: a.I,
     orientation: "vertical",
     setting: d.s6.GORE_MEDIA_REDACTION
