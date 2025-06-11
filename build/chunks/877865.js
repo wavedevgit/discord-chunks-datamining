@@ -205,6 +205,7 @@ function A(e) {
         className: m.trailingIcons,
         children: [null != g && (0, r.jsx)(f.ua7, {
           text: h.intl.string(p.default["8QXO8v"]),
+          tooltipClassName: m.eyeDropperTooltip,
           children: e => (0, r.jsx)(f.zxk, y(E({
             size: f.zxk.Sizes.ICON,
             look: f.zxk.Looks.BLANK

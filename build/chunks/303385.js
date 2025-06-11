@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var s = n(524979),
-  o = n(481060),
+var o = n(524979),
+  s = n(481060),
   a = n(497505),
   i = n(467628),
   l = n(644646),
@@ -25,10 +25,10 @@ let p = e => {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: u.rewardTileSpacer
-    }), (0, r.jsx)(s.animated.div, {
+    }), (0, r.jsx)(o.animated.div, {
       className: u.rewardTileContainer,
       style: {
-        transform: (0, s.to)([n.to({
+        transform: (0, o.to)([n.to({
           range: [0, 1],
           output: [-8, 0]
         }), n.to({
@@ -46,10 +46,10 @@ let p = e => {
         location: c.dr.QUESTS_BAR,
         autoplay: p && !f
       })
-    }), (0, r.jsxs)(s.animated.div, {
+    }), (0, r.jsxs)(o.animated.div, {
       className: u.rewardHighlightLogoCTA,
       style: {
-        transform: (0, s.to)([n.to({
+        transform: (0, o.to)([n.to({
           range: [0, 1],
           output: [0, -48]
         }), n.to({
@@ -60,7 +60,7 @@ let p = e => {
       children: [(0, r.jsx)("div", {
         className: u.partnerBranding,
         children: m
-      }), (0, r.jsx)(s.animated.div, {
+      }), (0, r.jsx)(o.animated.div, {
         className: u.rewardHighlightCTA,
         style: {
           opacity: n.to({
@@ -68,7 +68,7 @@ let p = e => {
             output: [.7, 0]
           })
         },
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(s.Text, {
           color: "always-white",
           variant: "text-xs/medium",
           children: d.intl.string(d.t["1Wvve3"])

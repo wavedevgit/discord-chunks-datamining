@@ -56,7 +56,7 @@ function a(e) {
     onConfirmSecondary: () => {
       i.ZP.updatedUnsyncedSettings({
         disableHideSelfStreamAndVideoConfirmationAlert: !0
-      }), n()
+      })
     },
     body: s
   }, a))

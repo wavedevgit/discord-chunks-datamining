@@ -63,17 +63,15 @@ function j(e, t) {
   let n = k(e);
   if (null != x[n]) {
     let {
-      timeout: r
+      timeout: r,
+      setAt: i
     } = x[n];
-    return clearTimeout(r), U(e, t), delete x[n], !0
+    return U(e, t, i), clearTimeout(r), delete x[n], !0
   }
   return !1
 }
 
-function U(e, t) {
-  let {
-    setAt: n
-  } = x[k(e)];
+function U(e, t, n) {
   if (t === I.Pq.UPDATE) {
     var r, i;
     let t = null != (r = e.attachments) ? r : [],

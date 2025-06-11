@@ -4,9 +4,9 @@ n.d(t, {
   yD: () => T
 });
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(481060),
   l = n(100527),
   c = n(335131),
@@ -42,7 +42,7 @@ function _(e) {
   return e
 }
 
-function O(e) {
+function C(e) {
   let {
     quest: t,
     taskDetails: n
@@ -58,7 +58,7 @@ function O(e) {
     children: (0, f.F9)(n)
   })
 }
-let C = e => {
+let O = e => {
     let {
       quest: t
     } = e, n = (0, u.aM)();
@@ -77,7 +77,7 @@ let C = e => {
     var t;
     let {
       quest: n
-    } = e, s = null == (t = (0, u.WD)()) ? void 0 : t.getId();
+    } = e, o = null == (t = (0, u.WD)()) ? void 0 : t.getId();
     return (0, r.jsx)(i.zxk, {
       fullWidth: !0,
       className: y.cta,
@@ -86,7 +86,7 @@ let C = e => {
       }, {
         content: m.jn.QUEST_BAR_V2,
         ctaContent: d.jZ.CONNECT_CONSOLE,
-        impressionId: s
+        impressionId: o
       }),
       size: i.zxk.Sizes.SMALL,
       children: v.intl.string(v.t.csptqa)
@@ -95,59 +95,59 @@ let C = e => {
   S = e => {
     let {
       quest: t
-    } = e, n = (0, f.Vl)(t), s = t.config.features.includes(b.S7.START_QUEST_CTA), o = (0, g.CR)({
+    } = e, n = (0, f.Vl)(t), o = t.config.features.includes(b.S7.START_QUEST_CTA), s = (0, g.CR)({
       quest: t,
       location: b.dr.QUESTS_BAR
     }), {
       launchInGameActivity: a
     } = (0, p.zB)(t);
-    return n && s ? (0, r.jsx)(i.zxk, {
+    return n && o ? (0, r.jsx)(i.zxk, {
       className: y.cta,
       color: i.zxk.Colors.BRAND,
       fullWidth: !0,
       onClick: a,
       size: i.zxk.Sizes.SMALL,
-      children: o
+      children: s
     }) : null
   },
   P = e => {
-    var t, n, o, {
+    var t, n, s, {
         quest: d,
         useReducedMotion: u,
         isExpanded: p,
         className: h,
         ctaLabel: v,
-        onClick: O
+        onClick: C
       } = e,
-      C = function(e, t) {
+      O = function(e, t) {
         if (null == e) return {};
-        var n, r, s = function(e, t) {
+        var n, r, o = function(e, t) {
           if (null == e) return {};
-          var n, r, s = {},
-            o = Object.keys(e);
-          for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
-          return s
+          var n, r, o = {},
+            s = Object.keys(e);
+          for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+          return o
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var o = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
+          var s = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
         }
-        return s
+        return o
       }(e, ["quest", "useReducedMotion", "isExpanded", "className", "ctaLabel", "onClick"]);
     let w = (0, x.hf)({
         quest: d,
         location: m.jn.QUEST_BAR_V2
       }),
       S = (0, g.up)(b.dr.QUESTS_BAR),
-      P = s.useCallback(e => {
+      P = o.useCallback(e => {
         var t;
-        null == O || O(e), (0, f.xN)(d.config) && (null == (t = d.userStatus) ? void 0 : t.claimedAt) != null ? (0, c.mK)({
+        null == C || C(e), (0, f.xN)(d.config) && (null == (t = d.userStatus) ? void 0 : t.claimedAt) != null ? (0, c.mK)({
           openInLayer: !1,
           tab: j.AW.ORBS,
           analyticsLocations: [],
           analyticsSource: l.Z.QUEST_HOME_PAGE
         }) : w()
-      }, [O, d.config, null == (o = d.userStatus) ? void 0 : o.claimedAt, w]);
+      }, [C, d.config, null == (s = d.userStatus) ? void 0 : s.claimedAt, w]);
     return (0, r.jsx)(i.gtL, (t = _({
       fullWidth: !0,
       size: i.zxk.Sizes.SMALL,
@@ -155,7 +155,7 @@ let C = e => {
       pauseAnimation: u || !p,
       className: a()(y.cta, h),
       buttonShineClassName: y.shine
-    }, C), n = n = {
+    }, O), n = n = {
       children: null != v ? v : S
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -172,8 +172,8 @@ let C = e => {
     var t;
     let {
       quest: n,
-      useReducedMotion: s,
-      isExpanded: o,
+      useReducedMotion: o,
+      isExpanded: s,
       awaitingConsoleConnections: a,
       hasMadeProgress: i,
       isProgressing: l,
@@ -182,10 +182,10 @@ let C = e => {
     } = e, u = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, p = (0, f.q8)(n), g = (0, f.Vl)(n);
     if (u) return (0, r.jsx)(P, {
       quest: n,
-      useReducedMotion: s,
-      isExpanded: o
+      useReducedMotion: o,
+      isExpanded: s
     });
-    if (p) return (0, r.jsx)(O, {
+    if (p) return (0, r.jsx)(C, {
       quest: n,
       taskDetails: d
     });
@@ -195,7 +195,7 @@ let C = e => {
     if (c === m.LI.CONSOLE && a) return (0, r.jsx)(w, {
       quest: n
     });
-    if (c !== m.LI.SELECT && !i && !l) return (0, r.jsx)(C, {
+    if (c !== m.LI.SELECT && !i && !l) return (0, r.jsx)(O, {
       quest: n
     });
     return null

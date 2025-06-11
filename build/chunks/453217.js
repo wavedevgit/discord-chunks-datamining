@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var s = n(120356),
-  o = n.n(s),
+var o = n(120356),
+  s = n.n(o),
   a = n(524979),
   i = n(481060),
   l = n(113434),
@@ -21,22 +21,22 @@ let h = function(e) {
   var t;
   let {
     className: n,
-    expansionSpring: s,
+    expansionSpring: o,
     isExpanded: h,
     isExpansionAnimationComplete: b,
     quest: j,
     useReducedMotion: v
   } = e, y = (null == (t = j.userStatus) ? void 0 : t.enrolledAt) != null, {
     percentComplete: _
-  } = (0, l.Rf)(j), O = (0, l.Jf)(j), C = null != O ? O.percentComplete > 0 : _ > 0;
+  } = (0, l.Rf)(j), C = (0, l.Jf)(j), O = null != C ? C.percentComplete > 0 : _ > 0;
   return (0, r.jsxs)(a.animated.div, {
     "aria-hidden": h && b,
-    className: o()(n, x.contentCollapsed, {
+    className: s()(n, x.contentCollapsed, {
       [x.contentCollapsedExpanded]: h,
       [x.contentCollapsedAccepted]: y
     }),
     style: {
-      opacity: s.to({
+      opacity: o.to({
         range: [0, 1],
         output: [1, 0]
       })
@@ -54,7 +54,7 @@ let h = function(e) {
           questContent: c.jn.QUEST_BAR,
           autoplay: !1,
           location: f.dr.QUESTS_BAR
-        }), C ? (0, r.jsx)(u.Z, {
+        }), O ? (0, r.jsx)(u.Z, {
           className: x.questProgressBar,
           quest: j
         }) : (0, r.jsx)(i.Text, {

@@ -1,11 +1,11 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685);
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(442837),
   l = n(481060),
   c = n(607070),
@@ -33,11 +33,11 @@ let _ = [{
   }
 }];
 
-function O(e) {
+function C(e) {
   let t, n, {
-    value: s
+    value: o
   } = e;
-  switch (s) {
+  switch (o) {
     case j.cd.DESKTOP:
       n = (0, r.jsx)(l.pzj, {}), t = v.intl.string(v.t.QXc019);
       break;
@@ -53,8 +53,8 @@ function O(e) {
   })
 }
 
-function C(e) {
-  var t, n, o, C;
+function O(e) {
+  var t, n, s, O;
   let {
     quest: w,
     location: S,
@@ -76,10 +76,10 @@ function C(e) {
     isClaiming: m.Z.isClaimingReward(w.id) || m.Z.isFetchingRewardCode(w.id),
     isEnrolling: m.Z.isEnrolling(w.id),
     isQuestEnrollmentBlocked: null != m.Z.questEnrollmentBlockedUntil
-  })), V = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, Z = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, W = Z && (null == (o = w.userStatus) ? void 0 : o.claimedAt) == null, Q = (0, g.iQ)(w), H = !(0, g.zi)(w), U = (0, p._Q)(w), z = (0, g.Xv)(w.config), F = (0, g.PB)(w), K = (0, g.HJ)(w), X = (0, g.Vl)(w), Y = s.useRef(null), G = (0, p.Rf)(w), [J, $, ee] = (0, p.me)(w, G), et = H && U === p.OH.ACCEPTED, en = et && J === f.LI.SELECT, er = et && !en && $.length > 1, es = s.useCallback(e => {
+  })), W = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, V = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, Z = V && (null == (s = w.userStatus) ? void 0 : s.claimedAt) == null, Q = (0, g.iQ)(w), H = !(0, g.zi)(w), U = (0, p._Q)(w), z = (0, g.Xv)(w.config), F = (0, g.PB)(w), K = (0, g.HJ)(w), X = (0, g.Vl)(w), Y = o.useRef(null), G = (0, p.Rf)(w), [J, $, ee] = (0, p.me)(w, G), et = H && U === p.OH.ACCEPTED, en = et && J === f.LI.SELECT, er = et && !en && $.length > 1, eo = o.useCallback(e => {
     ee(e), e === j.cd.DESKTOP && P([])
   }, [ee, P]), {
-    text: eo,
+    text: es,
     onClick: ea
   } = (0, x.Ks)({
     progressState: U,
@@ -108,14 +108,14 @@ function C(e) {
     afterRequest: e => {
       R.stopAnimation(), P(e)
     }
-  }), ec = (null == (C = w.userStatus) ? void 0 : C.claimedAt) != null, ed = null;
-  return (Q && W ? ed = (0, r.jsx)(l.zxk, {
+  }), ec = (null == (O = w.userStatus) ? void 0 : O.claimedAt) != null, ed = null;
+  return (Q && Z ? ed = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
     submitting: D,
     onClick: null != ea ? ea : void 0,
     className: y.button,
-    children: eo
-  }) : Z ? ed = F ? (0, r.jsxs)(r.Fragment, {
+    children: es
+  }) : V ? ed = F ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zxk, {
       color: l.Ttl.PRIMARY,
       className: y.button,
@@ -138,31 +138,31 @@ function C(e) {
       color: l.Ttl.BRAND,
       className: y.button,
       onClick: null != ea ? ea : void 0,
-      children: eo
+      children: es
     })]
   }) : (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
     className: y.button,
     onClick: null != ea ? ea : void 0,
-    children: eo
-  }) : H ? H && W ? ed = (0, r.jsx)(l.zxk, {
+    children: es
+  }) : H ? H && Z ? ed = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
     submitting: D,
     onClick: null != ea ? ea : void 0,
     className: y.button,
-    children: eo
+    children: es
   }) : K ? ed = (0, r.jsx)(l.zxk, {
     color: l.Ttl.PRIMARY,
     disabled: !0,
     className: y.button,
     children: v.intl.string(v.t.BkZhUF)
-  }) : H && V && !ec ? ed = en ? (0, r.jsx)(l.PhF, {
+  }) : H && W && !ec ? ed = en ? (0, r.jsx)(l.PhF, {
     className: y.platformSelectorPrimary,
     isSelected: () => !1,
     options: _,
     placeholder: v.intl.string(v.t.drVw4e),
-    renderOptionLabel: O,
-    select: es,
+    renderOptionLabel: C,
+    select: eo,
     serialize: e => {
       switch (e) {
         case j.cd.DESKTOP:
@@ -175,7 +175,7 @@ function C(e) {
     color: l.Ttl.PRIMARY,
     className: y.button,
     onClick: null != ea ? ea : void 0,
-    children: eo
+    children: es
   }) : (0, r.jsx)(l.zxk, {
     color: l.Ttl.PRIMARY,
     onClick: el,
@@ -189,13 +189,13 @@ function C(e) {
     color: l.Ttl.BRAND,
     onClick: null != ea ? ea : void 0,
     className: y.button,
-    children: eo
+    children: es
   }) : (0, r.jsx)(l.zxk, {
     color: l.Ttl.PRIMARY,
     disabled: !0,
     className: y.button,
     children: v.intl.string(v.t["9KoPyM"])
-  }) : H && !V && (ed = L ? (0, r.jsxs)(r.Fragment, {
+  }) : H && !W && (ed = L ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zxk, {
       color: l.Ttl.PRIMARY,
       className: y.button,
@@ -212,7 +212,7 @@ function C(e) {
     color: l.Ttl.BRAND,
     onClick: null != ea ? ea : void 0,
     className: y.button,
-    children: eo
+    children: es
   })) : ed = (0, r.jsx)(l.zxk, {
     color: l.Ttl.PRIMARY,
     disabled: !0,
@@ -224,7 +224,7 @@ function C(e) {
     className: y.container,
     children: [ed, er && (0, r.jsx)(b.U, {
       popoutTargetRef: Y,
-      onSelect: es,
+      onSelect: eo,
       quest: w,
       questContent: f.jn.ACTIVITY_PANEL,
       children: e => {

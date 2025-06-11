@@ -1,11 +1,11 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => V
+  Z: () => W
 }), n(953529);
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(524979),
   l = n(442837),
   c = n(950104),
@@ -22,8 +22,8 @@ var r = n(255367),
   v = n(497505),
   y = n(918701),
   _ = n(865364),
-  O = n(373370),
-  C = n(475595),
+  C = n(373370),
+  O = n(475595),
   w = n(566078),
   S = n(340100),
   P = n(611855),
@@ -87,13 +87,13 @@ function L(e) {
     children: q.intl.string(q.t.lwQdjI)
   }) : null
 }
-let V = s.forwardRef(function(e, t) {
-  var n, o;
+let W = o.forwardRef(function(e, t) {
+  var n, s;
   let {
     children: _,
-    className: V,
-    collapsedHeight: Z,
-    expansionSpring: W,
+    className: W,
+    collapsedHeight: V,
+    expansionSpring: Z,
     isExpanded: Q,
     isExpansionAnimationComplete: H,
     onCtxMenuOpen: U,
@@ -101,7 +101,7 @@ let V = s.forwardRef(function(e, t) {
     onCtxMenuSelect: F,
     quest: K,
     useReducedMotion: X
-  } = e, Y = (0, l.e7)([j.Z], () => j.Z.isEnrolling(K.id), [K]), G = (0, x.aM)(), J = (0, b.B6)(K.config.expiresAt), $ = w.r.build(K.config), ee = (0, b.B6)($.rewardsExpireAt), et = s.useMemo(() => (0, C.fh)(K, C.eC.HERO), [K]), en = (0, A.tP)($.application.id), er = $.features.has(R.S7.START_QUEST_CTA) ? g.jZ.START_QUEST : g.jZ.ACCEPT_QUEST, es = $.features.has(R.S7.START_QUEST_CTA) ? q.intl.string(q.t.E80Bdn) : q.intl.string(q.t.l7E81t), eo = s.useCallback(() => {
+  } = e, Y = (0, l.e7)([j.Z], () => j.Z.isEnrolling(K.id), [K]), G = (0, x.aM)(), J = (0, b.B6)(K.config.expiresAt), $ = w.r.build(K.config), ee = (0, b.B6)($.rewardsExpireAt), et = o.useMemo(() => (0, O.fh)(K, O.eC.HERO), [K]), en = (0, A.tP)($.application.id), er = $.features.has(R.S7.START_QUEST_CTA) ? g.jZ.START_QUEST : g.jZ.ACCEPT_QUEST, eo = $.features.has(R.S7.START_QUEST_CTA) ? q.intl.string(q.t.E80Bdn) : q.intl.string(q.t.l7E81t), es = o.useCallback(() => {
     (0, h.AH)(K.id, {
       questContent: v.jn.QUEST_BAR,
       questContentCTA: er
@@ -109,19 +109,19 @@ let V = s.forwardRef(function(e, t) {
   }, [K, er, $.features]), ea = (0, A.hf)({
     quest: K,
     location: v.jn.QUEST_BAR
-  }), ei = s.useCallback(() => {
+  }), ei = o.useCallback(() => {
     (0, y.nc)(K, {
       content: v.jn.QUEST_BAR,
       ctaContent: g.jZ.OPEN_GAME_LINK,
       impressionId: G
     })
-  }, [G, K]), el = $.features.has(R.S7.POST_ENROLLMENT_CTA), ec = (0, b.Rf)(K), ed = (0, b.Jf)(K), eu = null != ed ? ed.progress > 0 : ec.progressSeconds > 0, ep = (null == (n = K.userStatus) ? void 0 : n.enrolledAt) != null, em = (null == (o = K.userStatus) ? void 0 : o.completedAt) != null, ef = s.useMemo(() => (0, y.Xv)(K.config), [K.config]), eg = Q && H, ex = (0, O.DD)({
+  }, [G, K]), el = $.features.has(R.S7.POST_ENROLLMENT_CTA), ec = (0, b.Rf)(K), ed = (0, b.Jf)(K), eu = null != ed ? ed.progress > 0 : ec.progressSeconds > 0, ep = (null == (n = K.userStatus) ? void 0 : n.enrolledAt) != null, em = (null == (s = K.userStatus) ? void 0 : s.completedAt) != null, ef = o.useMemo(() => (0, y.Xv)(K.config), [K.config]), eg = Q && H, ex = (0, C.DD)({
     quest: K,
     taskDetails: ec,
     location: R.dr.QUESTS_BAR,
     questContent: v.jn.QUEST_BAR,
     thirdPartyTaskDetails: null != ed ? ed : void 0
-  }), eh = (0, f.isWeb)(), eb = s.useMemo(() => {
+  }), eh = (0, f.isWeb)(), eb = o.useMemo(() => {
     let e = (0, d.Qg)(K.config.colors.primary, {
       base: "#ffffff",
       contrastRatio: d.S3.Text
@@ -133,17 +133,17 @@ let V = s.forwardRef(function(e, t) {
     }
   }, [K.config.colors.primary]);
   return (0, r.jsxs)(i.animated.div, {
-    className: a()(V, I.contentExpanded, {
+    className: a()(W, I.contentExpanded, {
       [I.contentInteractable]: eg
     }),
     style: {
       backgroundColor: K.config.colors.secondary,
-      transform: em ? void 0 : (0, i.to)([W.to({
+      transform: em ? void 0 : (0, i.to)([Z.to({
         range: [0, 1],
         output: [0, -100]
-      }), W.to({
+      }), Z.to({
         range: [0, 1],
-        output: [0, Z]
+        output: [0, V]
       })], (e, t) => "translateY(calc(".concat(e, "% + ").concat(t, "px))"))
     },
     children: [_, (0, r.jsx)("div", {
@@ -269,10 +269,10 @@ let V = s.forwardRef(function(e, t) {
             style: "1232852290197655573" !== K.id ? eb : void 0,
             color: u.zxk.Colors.CUSTOM,
             fullWidth: !0,
-            onClick: eg ? eo : void 0,
+            onClick: eg ? es : void 0,
             size: u.zxk.Sizes.NONE,
             submitting: Y,
-            children: es
+            children: eo
           })]
         }), (0, r.jsx)("div", {
           className: I.heroAssetWrapper,

@@ -1,11 +1,12 @@
 /**
   Module ID: 88622
-  Original File Name: ec7447c437a3a92f
+  Original File Name: aa128763517ab3fb
 **/
 .wrapper_b76891 {
     align-items: center;
     background-color: var(--background-secondary);
     border-radius: 8px;
+    color: var(--text-normal);
     display: flex;
     gap: 8px;
     margin-bottom: 8px;
@@ -916,7 +917,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 3
+    z-index: 4
 }
 
 .opaqueExpandedBackground_a86e4f {
@@ -943,16 +944,6 @@
     margin-left: -4px;
     margin-right: 4px;
     width: 24px
-}
-
-.questAvailable_a86e4f {
-    flex: 1 1 auto;
-    pointer-events: none
-}
-
-.questAvailableText_a86e4f {
-    text-align: right;
-    white-space: nowrap
 }
 
 .submenuWrapper_a86e4f {
@@ -1051,11 +1042,33 @@
     height: 24px
 }
 
+.questProgressWrapper__1d950 {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
+.questProgressRewardTile__1d950 {
+    box-shadow: var(--shadow-high);
+    display: block;
+    flex: 1
+}
+
+.questProgressRewardTile__1d950.questProgressRewardTile__1d950 {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px
+}
+
+.questProgressCopy__1d950,.questProgressHint__1d950 {
+    flex: 1 1 auto
+}
+
 .contentCollapsed__5f897 {
     box-sizing: border-box;
     display: flex;
     height: 100%;
-    padding: 8px 12px;
+    padding: 0;
     width: 100%;
     z-index: 2
 }
@@ -1072,110 +1085,6 @@
 
 .contentCollapsedExpanded__5f897 {
     pointer-events: none
-}
-
-.preEnrollmentWrapper__5f897 {
-    align-items: center;
-    display: flex;
-    justify-content: space-between
-}
-
-.partnerBranding__5f897 {
-    margin-right: 8px
-}
-
-.questAvailable__5f897 {
-    flex: 1 1 auto;
-    opacity: .7;
-    text-align: right;
-    white-space: nowrap
-}
-
-.background__5f897 {
-    background-color: transparent
-}
-
-.backgroundAnimation__5f897 {
-    opacity: .5
-}
-
-.wreathIcon__5f897 {
-    height: 24px;
-    margin-left: -4px;
-    margin-right: 4px;
-    width: 24px
-}
-
-.questProgressWrapper__5f897 {
-    align-items: center;
-    display: flex;
-    gap: 8px
-}
-
-.questProgressRewardTile__5f897 {
-    box-shadow: var(--shadow-high);
-    display: block;
-    flex: 1
-}
-
-.questProgressRewardTile__5f897.questProgressRewardTile__5f897 {
-    border-radius: 50%;
-    height: 32px;
-    width: 32px
-}
-
-.questProgressBar__5f897,.questProgressCopy__5f897,.questProgressHint__5f897 {
-    flex: 1 1 auto
-}
-
-.heroAssetWrapper__5f897 {
-    border-radius: 8px 8px 0 0;
-    overflow: hidden;
-    right: 0;
-    top: 0
-}
-
-.heroAssetWrapper__5f897,.heroAssetWrapper__5f897:after {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 1
-}
-
-.heroAssetWrapper__5f897:after {
-    background-color: currentColor;
-    bottom: 0;
-    color: transparent;
-    content: "";
-    -webkit-mask-image: linear-gradient(180deg,transparent,#000);
-    mask-image: linear-gradient(180deg,transparent,#000)
-}
-
-.heroAssetTint__5f897 {
-    opacity: 60%
-}
-
-.heroAssetDarken__5f897,.heroAssetTint__5f897 {
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: 1
-}
-
-.heroAssetDarken__5f897 {
-    background-color: var(--primary-760);
-    opacity: 70%
-}
-
-.heroAsset__5f897 {
-    filter: blur(5px);
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    transform: scale(3.5);
-    width: 100%;
-    z-index: 0
 }
 
 .ctaButtons_a77fde {
@@ -1660,7 +1569,7 @@
     flex-direction: column;
     height: 100%;
     position: relative;
-    z-index: 2
+    z-index: 3
 }
 
 .questAcceptedHeader__636a2 {
@@ -2004,6 +1913,47 @@
 
 .subTextList__636a2,.subTextList__636a2 li {
     padding-left: 4px
+}
+
+.contentCollapsedBackgroundWrapper__636a2 {
+    border-radius: 12px 12px 0 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    width: 100%;
+    z-index: 2
+}
+
+.contentCollapsedBackgroundWrapper__636a2:after {
+    background-color: var(--background-primary);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.visual-refresh .contentCollapsedBackgroundWrapper__636a2 {
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0
+}
+
+.contentCollapsedBackground__636a2 {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -50px;
+    filter: blur(30px) brightness(.6) saturate(110%);
+    left: -50px;
+    position: absolute;
+    right: -50px;
+    top: -50px
 }
 
 .content__60686 {
@@ -2362,8 +2312,13 @@
 .contentWrapper__0d616 {
     background-color: var(--black);
     border-radius: 8px 8px 0 0;
+    height: 100%;
     width: 100%;
     z-index: 2
+}
+
+.contentWrapperBrandColorRemoval__0d616 {
+    background-color: transparent
 }
 
 .contentWrapper__0d616:after {
@@ -2647,4 +2602,4 @@
     padding-top: 10px
 }
 
-/*# sourceMappingURL=ec7447c437a3a92f.css.map*/
+/*# sourceMappingURL=aa128763517ab3fb.css.map*/

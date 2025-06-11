@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => v
 }), n(388685);
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(617136),
   l = n(113434),
   c = n(497505),
@@ -22,29 +22,29 @@ var r = n(255367),
 function j(e) {
   var t, n;
   let {
-    quest: o,
+    quest: s,
     className: c,
     questContent: u,
     contentPosition: j,
     rowIndex: v,
     impressionRef: y
-  } = e, [_, O] = s.useState(!1), [C, w] = s.useState([]), S = (0, l.qb)(o), P = s.useMemo(() => (0, d.q8)(o), [o]), E = (0, i._F)(), T = s.useCallback(() => {
-    O(!0), E({
-      questId: o.id,
+  } = e, [_, C] = o.useState(!1), [O, w] = o.useState([]), S = (0, l.qb)(s), P = o.useMemo(() => (0, d.q8)(s), [s]), E = (0, i._F)(), T = o.useCallback(() => {
+    C(!0), E({
+      questId: s.id,
       event: h.rMx.QUEST_HOVER,
       properties: (0, i.mH)(u)
     }), P && (0, p.loadVideoQuestModal)()
-  }, [E, o.id, u, P]), N = s.useCallback(() => {
-    O(!1), E({
-      questId: o.id,
+  }, [E, s.id, u, P]), N = o.useCallback(() => {
+    C(!1), E({
+      questId: s.id,
       event: h.rMx.QUEST_HOVER_OFF,
       properties: (0, i.mH)(u)
     })
-  }, [E, o.id, u]), A = s.useContext(f.t), {
+  }, [E, s.id, u]), A = o.useContext(f.t), {
     visibilityElementRef: R,
     almostVisibleInViewport: k
   } = function(e) {
-    let [t, n] = s.useState(!1), r = s.useCallback(e => {
+    let [t, n] = o.useState(!1), r = o.useCallback(e => {
       e.isIntersecting && n(!0)
     }, []);
     return {
@@ -57,7 +57,7 @@ function j(e) {
     }
   }(null != (n = null == A || null == (t = A.current) ? void 0 : t.getScrollerNode()) ? n : null);
   return (0, r.jsxs)("div", {
-    id: "quest-tile-".concat(o.id),
+    id: "quest-tile-".concat(s.id),
     ref: e => {
       y.current = e, R.current = e
     },
@@ -67,13 +67,13 @@ function j(e) {
     onFocus: T,
     onBlur: N,
     children: [(0, r.jsx)(g.Z, {
-      quest: o,
+      quest: s,
       isHovering: _,
-      errorHints: C,
+      errorHints: O,
       warningHints: S,
       isVisibleInViewport: k
     }), (0, r.jsx)(x.Z, {
-      quest: o,
+      quest: s,
       questContent: u,
       isHovering: _,
       contentPosition: j,
@@ -92,7 +92,7 @@ function v(e) {
     questContentRowIndex: e.rowIndex,
     trackGuildAndChannelMetadata: e.questContent === c.jn.QUESTS_EMBED,
     children: t => {
-      var n, s;
+      var n, o;
       return (0, r.jsx)(j, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -110,17 +110,17 @@ function v(e) {
           })
         }
         return e
-      }({}, e), s = s = {
+      }({}, e), o = o = {
         impressionRef: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(s)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(s, e))
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
       }), n))
     }
   })

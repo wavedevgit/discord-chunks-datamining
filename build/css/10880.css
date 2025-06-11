@@ -1,6 +1,6 @@
 /**
   Module ID: 10880
-  Original File Name: 613177116456d3e0
+  Original File Name: 4f2c20e781dad149
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -472,6 +472,7 @@
     align-items: center;
     background-color: var(--background-secondary);
     border-radius: 8px;
+    color: var(--text-normal);
     display: flex;
     gap: 8px;
     margin-bottom: 8px;
@@ -1120,4 +1121,4 @@
     align-items: stretch
 }
 
-/*# sourceMappingURL=613177116456d3e0.css.map*/
+/*# sourceMappingURL=4f2c20e781dad149.css.map*/

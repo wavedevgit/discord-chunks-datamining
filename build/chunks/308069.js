@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => j
 });
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(524979),
   l = n(481060),
   c = n(617136),
@@ -22,24 +22,24 @@ let j = e => {
   let {
     quest: t,
     expansionSpring: n,
-    onCtxMenuSelect: o,
+    onCtxMenuSelect: s,
     onCtxMenuOpen: j,
     onCtxMenuClose: v,
     useReducedMotion: y,
     isExpanded: _,
-    isExpansionAnimationComplete: O
-  } = e, C = (0, d.aM)(), w = s.useCallback(() => {
+    isExpansionAnimationComplete: C
+  } = e, O = (0, d.aM)(), w = o.useCallback(() => {
     (0, g.openDisclosureModal)(t, {
       content: u.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_DISCLOSURE
     })
-  }, [t]), S = s.useCallback(() => {
+  }, [t]), S = o.useCallback(() => {
     (0, p.nc)(t, {
       content: u.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_GAME_LINK,
-      impressionId: C
+      impressionId: O
     })
-  }, [C, t]), P = _ && O, E = (0, r.jsx)(l.P3F, {
+  }, [O, t]), P = _ && C, E = (0, r.jsx)(l.P3F, {
     onClick: S,
     className: a()(b.clickable, {
       [b.logo]: P
@@ -96,7 +96,7 @@ let j = e => {
       }), (0, r.jsx)(f.r, {
         onOpen: j,
         onClose: v,
-        onSelect: o,
+        onSelect: s,
         questContent: u.jn.QUEST_BAR_V2,
         quest: t,
         shouldShowDisclosure: !0,

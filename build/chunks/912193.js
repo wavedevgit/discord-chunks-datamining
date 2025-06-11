@@ -15,7 +15,7 @@ function s() {
 }
 
 function u() {
-  l.Z.setSilenceWarning(!1), s()
+  l.Z.setSilenceWarning(!1)
 }
 
 function d() {

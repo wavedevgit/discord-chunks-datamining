@@ -54,7 +54,7 @@ let a = t => {
     onConfirmSecondary: () => {
       o.ZP.updatedUnsyncedSettings({
         disableVoiceChannelChangeAlert: !0
-      }), e()
+      })
     },
     body: c.intl.format(c.t["vA+uEh"], {
       channel: u

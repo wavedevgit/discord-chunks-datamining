@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => p
 });
 var r = n(255367),
-  s = n(73800),
-  o = n(113434),
+  o = n(73800),
+  s = n(113434),
   a = n(308069),
   i = n(613087),
   l = n(457153),
@@ -24,7 +24,7 @@ let p = function(e) {
     quest: b,
     useReducedMotion: j,
     collapsedHeight: v
-  } = e, y = s.useRef(null), _ = s.useRef(null), O = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, C = (0, o.Rf)(b);
+  } = e, y = o.useRef(null), _ = o.useRef(null), C = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, O = (0, s.Rf)(b);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: n,
     collapsedContentRef: y,
@@ -37,7 +37,7 @@ let p = function(e) {
       isExpansionAnimationComplete: f,
       quest: b,
       useReducedMotion: j,
-      taskDetails: C
+      taskDetails: O
     }), (0, r.jsx)(c.Z, {
       expansionSpring: p,
       className: u.content,
@@ -51,12 +51,12 @@ let p = function(e) {
       quest: b,
       useReducedMotion: j,
       ref: n,
-      taskDetails: C,
+      taskDetails: O,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Z, {
           expansionSpring: p,
           isExpanded: m
-        }), !O && (0, r.jsx)(a.Z, {
+        }), !C && (0, r.jsx)(a.Z, {
           quest: b,
           expansionSpring: p,
           useReducedMotion: j,

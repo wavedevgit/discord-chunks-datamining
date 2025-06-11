@@ -5,9 +5,9 @@ n.d(t, {
   y3: () => f
 });
 var r = n(255367),
-  s = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  o = n(73800),
+  s = n(120356),
+  a = n.n(s),
   i = n(481060),
   l = n(918701),
   c = n(373370),
@@ -19,13 +19,13 @@ function m(e) {
   let {
     children: t,
     isComplete: n,
-    hasNextStep: s
+    hasNextStep: o
   } = e;
   return (0, r.jsxs)("li", {
     className: a()(p.stepWrapper, {
       [p.stepWrapperComplete]: n
     }, {
-      [p.stepWrapperWithNextStep]: s
+      [p.stepWrapperWithNextStep]: o
     }),
     children: [(0, r.jsxs)("div", {
       className: p.stepIndicator,
@@ -35,7 +35,7 @@ function m(e) {
           className: p.stepIcon,
           color: i.TVs.colors.WHITE
         })
-      }), s && (0, r.jsx)("div", {
+      }), o && (0, r.jsx)("div", {
         className: p.stepConnector
       })]
     }), (0, r.jsx)("div", {
@@ -61,8 +61,8 @@ function g(e) {
     quest: t
   } = e, {
     rewardName: n,
-    rewardDuration: o
-  } = s.useMemo(() => ({
+    rewardDuration: s
+  } = o.useMemo(() => ({
     rewardName: d.r.build(t.config).defaultReward.messages.name,
     rewardDuration: (0, l.Kr)(t.config)
   }), [t.config]), a = (0, c.mK)(t.config);
@@ -71,8 +71,8 @@ function g(e) {
     children: [(0, r.jsx)(i.X6q, {
       color: "header-primary",
       variant: "text-xs/semibold",
-      children: null == o ? u.intl.string(u.t["7Rdjmp"]) : u.intl.formatToPlainString(u.t.coKAb2, {
-        rewardsDuration: o
+      children: null == s ? u.intl.string(u.t["7Rdjmp"]) : u.intl.formatToPlainString(u.t.coKAb2, {
+        rewardsDuration: s
       })
     }), (0, r.jsx)("ul", {
       className: p.rewardsListBody,
@@ -93,7 +93,7 @@ let x = function(e) {
   let {
     children: t,
     heading: n,
-    steps: s
+    steps: o
   } = e;
   return (0, r.jsxs)("div", {
     className: p.wrapper,
@@ -108,9 +108,9 @@ let x = function(e) {
     }), (0, r.jsx)("div", {
       className: p.stepsWrapper,
       children: (0, r.jsx)("ul", {
-        children: s.map((e, t) => (0, r.jsx)(m, {
+        children: o.map((e, t) => (0, r.jsx)(m, {
           isComplete: e.isComplete,
-          hasNextStep: t < s.length - 1,
+          hasNextStep: t < o.length - 1,
           children: e.renderContent()
         }, t))
       })

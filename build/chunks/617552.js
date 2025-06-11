@@ -41,7 +41,7 @@ function d(e) {
   } = e, d = () => {
     a.ZP.updatedUnsyncedSettings({
       disableEmbeddedActivityPopOutAlert: !0
-    }), t()
+    })
   };
   s.ZP.disableEmbeddedActivityPopOutAlert ? t() : (0, i.h7j)(e => (0, r.jsx)(o.default, u({
     confirmText: l.intl.string(l.t.makWn5),
