@@ -13,7 +13,7 @@ let u = e => {
     let {
       onChange: t,
       value: r
-    } = e, [l, u] = a.useState(!1);
+    } = e, [l, u] = a.useState(!0);
     return (0, n.jsxs)("div", {
       className: o.nameInput,
       children: [(0, n.jsxs)("div", {
