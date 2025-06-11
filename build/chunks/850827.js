@@ -1,4 +1,4 @@
-/** Chunk was on 80767 **/
+/** Chunk was on 86350 **/
 n.d(t, {
   Z: () => M
 });
@@ -16,10 +16,10 @@ var i = n(120356),
   p = n(600164),
   m = n(750154),
   g = n(892001),
-  _ = n(594174),
-  b = n(374129),
-  h = n(639351),
-  v = n(503438),
+  b = n(594174),
+  _ = n(374129),
+  v = n(639351),
+  h = n(503438),
   y = n(802856),
   O = n(387903),
   j = n(606925),
@@ -35,8 +35,8 @@ var i = n(120356),
   Z = n(477839),
   A = n(388032),
   D = n(603571),
-  L = n(126485);
-let k = e => {
+  k = n(126485);
+let L = e => {
     let {
       user: t,
       color: n,
@@ -68,10 +68,10 @@ let k = e => {
       look: F = c.zxk.Looks.OUTLINED,
       type: U,
       onAction: V
-    } = e, B = (0, s.e7)([_.default], () => {
-      let e = _.default.getCurrentUser();
+    } = e, B = (0, s.e7)([b.default], () => {
+      let e = b.default.getCurrentUser();
       return o()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), Y = U === O.Y.STREAM_PREVIEW || null != a, W = (0, v.Z)(t), z = W || Y ? p.Z.Direction.HORIZONTAL : p.Z.Direction.VERTICAL;
+    }), Y = U === O.Y.STREAM_PREVIEW || null != a, W = (0, h.Z)(t), z = W || Y ? p.Z.Direction.HORIZONTAL : p.Z.Direction.VERTICAL;
     if ((null == t ? void 0 : t.application_id) === Z.bO) {
       var G, H;
       return G = function(e) {
@@ -105,7 +105,7 @@ let k = e => {
         return n
       })(Object(H)).forEach(function(e) {
         Object.defineProperty(G, e, Object.getOwnPropertyDescriptor(H, e))
-      }), t = G, (0, r.jsx)(k, {
+      }), t = G, (0, r.jsx)(L, {
         user: i,
         color: R,
         look: F,
@@ -119,21 +119,21 @@ let k = e => {
       align: p.Z.Align.STRETCH,
       direction: z,
       wrap: J ? p.Z.Wrap.WRAP : p.Z.Wrap.NO_WRAP,
-      className: l()(u, L.buttonsWrapper, J ? L.vertical : L.horizontal),
+      className: l()(u, k.buttonsWrapper, J ? k.vertical : k.horizontal),
       children: (() => {
         if ((0, y.Z)(t)) return (0, r.jsx)(j.Z, {
           platform: d.Z.get(N.ABu.XBOX),
           look: F,
           color: R,
           onAction: V,
-          Icon: h.Z
+          Icon: v.Z
         }, "ConnectPlatformActivityButton");
         if ((null == t ? void 0 : t.platform) === N.M7m.PS4 || (null == t ? void 0 : t.platform) === N.M7m.PS5) return (0, r.jsx)(j.Z, {
           look: F,
           color: R,
           platform: d.Z.get(N.ABu.PLAYSTATION),
           onAction: V,
-          Icon: b.Z
+          Icon: _.Z
         }, "ConnectPlatformActivityButton");
         if (W) {
           let e = (0, r.jsx)(E.Z, {

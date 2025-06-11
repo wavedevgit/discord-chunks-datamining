@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(475595),
   w = n(720293),
   S = n(566078),
-  P = n(65443),
-  E = n(644646),
+  E = n(65443),
+  P = n(644646),
   T = n(78826),
   N = n(670638),
   A = n(341907),
@@ -39,12 +39,12 @@ var r = n(255367),
   D = n(694802),
   M = n(95985),
   L = n(50476),
-  W = n(46140),
-  V = n(743294),
+  V = n(46140),
+  W = n(743294),
   Z = n(388032),
   Q = n(921183);
 
-function H(e) {
+function U(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,7 +63,7 @@ function H(e) {
   return e
 }
 
-function U(e, t) {
+function H(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -135,12 +135,12 @@ function F(e) {
   let {
     quest: t
   } = e;
-  return (0, r.jsx)(E.Z, {
+  return (0, r.jsx)(P.Z, {
     className: a()(Q.rewardTile, Q.hiddenRewardTile),
     learnMoreStyle: "text",
     quest: t,
     questContent: b.jn.QUEST_BAR_V2,
-    location: W.dr.QUESTS_BAR
+    location: V.dr.QUESTS_BAR
   })
 }
 
@@ -156,7 +156,7 @@ function K(e) {
       variant: "text-xs/normal",
       children: (0, C.DD)({
         quest: t,
-        location: W.dr.QUESTS_BAR,
+        location: V.dr.QUESTS_BAR,
         questContent: b.jn.QUEST_BAR_V2,
         taskDetails: n
       })
@@ -177,7 +177,7 @@ function X(e) {
     variant: "text-xs/normal",
     children: (0, C.DD)({
       quest: e.quest,
-      location: W.dr.QUESTS_BAR,
+      location: V.dr.QUESTS_BAR,
       questContent: b.jn.QUEST_BAR_V2,
       taskDetails: e.taskDetails
     })
@@ -199,16 +199,16 @@ function Y(e) {
     null == v.current || c || (f ? (v.current.currentTime = 0, v.current.play()) : v.current.pause())
   }, [c, f]);
   let w = (0, _.j)({
-      location: W.dr.QUESTS_BAR
+      location: V.dr.QUESTS_BAR
     }),
     S = (0, j.Kr)(t.config),
-    E = (0, C.mK)(t.config),
+    P = (0, C.mK)(t.config),
     N = (0, C.CR)({
       quest: t,
-      location: W.dr.QUESTS_BAR
+      location: V.dr.QUESTS_BAR
     }),
     A = (0, y.h)({
-      location: W.dr.QUESTS_BAR,
+      location: V.dr.QUESTS_BAR,
       questConfig: t.config
     }),
     R = o.useMemo(() => (0, O.fh)(t, O.eC.HERO_IMAGE), [t]),
@@ -243,14 +243,14 @@ function Y(e) {
         }), (0, r.jsx)(p.ua7, {
           "aria-label": "".concat(Z.intl.formatToPlainString(Z.t.coKAb2, {
             rewardsDuration: S
-          })).concat(null != E ? " • ".concat(E) : ""),
-          text: null != S && w && (0, r.jsx)(P.Z, {
+          })).concat(null != P ? " • ".concat(P) : ""),
+          text: null != S && w && (0, r.jsx)(E.Z, {
             quest: t,
             orientation: "stack",
             withPremiumHighlight: !1
           }),
           shouldShow: null != S && w,
-          children: e => (0, r.jsx)(p.zxk, U(H({}, e), {
+          children: e => (0, r.jsx)(p.zxk, H(U({}, e), {
             wrapperClassName: Q.cta,
             color: p.zxk.Colors.BRAND,
             fullWidth: !0,
@@ -341,18 +341,18 @@ function G(e) {
     onCtxMenuOpen: g,
     onCtxMenuClose: h,
     onCtxMenuSelect: v
-  } = e, y = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, C = s.percentComplete > 0, O = (0, x.z)(n), [w, S, P] = (0, x.me)(n, s), E = o.useRef(null), T = (0, x.B6)(n.config.expiresAt), F = (0, x._s)({
+  } = e, y = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, C = s.percentComplete > 0, O = (0, x.z)(n), [w, S, E] = (0, x.me)(n, s), P = o.useRef(null), T = (0, x.B6)(n.config.expiresAt), F = (0, x._s)({
     quest: n
   }), K = (0, j.q8)(n), X = (0, x.Jf)(n), Y = o.useCallback(() => {
     (0, A.openVideoQuestModal)(n)
   }, [n]), G = (0, _.j)({
-    location: W.dr.QUESTS_BAR
+    location: V.dr.QUESTS_BAR
   }), J = null != X ? X.percentComplete : s.percentComplete;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.animated.div, {
       className: a()(Q.postEnrollmentBackground, Q.postEnrollmentBackgroundCollapsed),
       style: {
-        backgroundImage: "linear-gradient(90deg, ".concat(V.aY, ", ").concat(V.v6, ")"),
+        backgroundImage: "linear-gradient(90deg, ".concat(W.aY, ", ").concat(W.v6, ")"),
         opacity: c.to({
           range: [0, 1],
           output: [1, 0]
@@ -377,7 +377,7 @@ function G(e) {
           quest: n,
           shouldShowDisclosure: !1,
           showShareLink: !0,
-          children: e => (0, r.jsx)(p.P3F, U(H({}, e), {
+          children: e => (0, r.jsx)(p.P3F, H(U({}, e), {
             className: Q.submenuWrapper,
             "aria-label": Z.intl.string(Z.t.DEoVWV),
             children: (0, r.jsx)(p.xhG, {
@@ -392,20 +392,20 @@ function G(e) {
       }), (0, r.jsx)(B.Z, {
         expansionSpring: c,
         overlayRef: d,
-        progressBarRef: E,
+        progressBarRef: P,
         quest: n,
         isExpanded: u
       }), (0, r.jsx)(M.Z, {
         contentLocation: "expanded",
         quest: n,
-        progressBarRef: E,
+        progressBarRef: P,
         isExpanded: !0,
         percentComplete: J,
         activeScreen: w
       }), (0, r.jsx)(R.n, {
         children: (!y || G) && !(0, j.Gd)(n) && (0, l.EQ)(w).with(b.LI.SELECT, () => (0, r.jsx)(L.Z, {
-          onConsole: () => P(W.cd.CONSOLE),
-          onDesktop: () => P(W.cd.DESKTOP)
+          onConsole: () => E(V.cd.CONSOLE),
+          onDesktop: () => E(V.cd.DESKTOP)
         })).with(b.LI.DESKTOP, () => (0, r.jsxs)(r.Fragment, {
           children: [G && (0, r.jsx)(I.Z, {
             quest: n,
@@ -432,14 +432,14 @@ function G(e) {
           isProgressing: O,
           activeScreen: w,
           showBackButton: w !== b.LI.SELECT && S.length > 1 && !C && !O,
-          onBack: () => P(null),
+          onBack: () => E(null),
           taskDetails: s
         })]
       })]
     }), (0, r.jsx)("div", {
       className: a()(Q.postEnrollmentBackground, Q.postEnrollmentBackgroundExpanded),
       style: {
-        backgroundImage: "linear-gradient(90deg, ".concat(V.aY, ", ").concat(V.v6, ")")
+        backgroundImage: "linear-gradient(90deg, ".concat(W.aY, ", ").concat(W.v6, ")")
       }
     })]
   })
@@ -461,15 +461,15 @@ let J = o.forwardRef(function(e, t) {
     useReducedMotion: C,
     taskDetails: O
   } = e, w = (0, j.q8)(_), S = (0, j.Vl)(_), {
-    launchInGameActivity: P
-  } = (0, x.zB)(_), E = o.useCallback(() => {
-    let e = _.config.features.includes(W.S7.START_QUEST_CTA),
+    launchInGameActivity: E
+  } = (0, x.zB)(_), P = o.useCallback(() => {
+    let e = _.config.features.includes(V.S7.START_QUEST_CTA),
       t = e ? f.jZ.START_QUEST : f.jZ.ACCEPT_QUEST;
     (0, g.AH)(_.id, {
       questContent: b.jn.QUEST_BAR_V2,
       questContentCTA: t
-    }), w && (0, A.openVideoQuestModal)(_), S && e && P()
-  }, [_, w, S, P]), T = (null == (n = _.userStatus) ? void 0 : n.enrolledAt) != null, N = d && u;
+    }), w && (0, A.openVideoQuestModal)(_), S && e && E()
+  }, [_, w, S, E]), T = (null == (n = _.userStatus) ? void 0 : n.enrolledAt) != null, N = d && u;
   return (0, r.jsxs)(i.animated.div, {
     "aria-hidden": !N,
     className: a()(l, Q.contentExpanded, {
@@ -508,7 +508,7 @@ let J = o.forwardRef(function(e, t) {
         reducedMotion: C,
         containerRef: t,
         isExpanded: d,
-        onAcceptQuest: E
+        onAcceptQuest: P
       })
     })]
   })

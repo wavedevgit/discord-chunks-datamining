@@ -26,8 +26,8 @@ var r = n(255367),
   O = n(341907),
   w = n(251360),
   S = n(19148),
-  P = n(46140),
-  E = n(642145),
+  E = n(46140),
+  P = n(642145),
   T = n(981631),
   N = n(388032),
   A = n(508936);
@@ -92,7 +92,7 @@ function B(e) {
   }, [s, f, x, a]), j = 2 !== h, v = (0, c.q_F)({
     opacity: +!!j,
     height: j ? m : 0,
-    config: E.Y
+    config: P.Y
   }), _ = 0 === h ? c.P4T : c.d3s, C = (0, p.Lq)(T.Ilk.RED_345), O = 0 === h ? C : l ? c.TVs.colors.TEXT_NORMAL : c.TVs.colors.WHITE;
   return (0, r.jsx)(i.animated.div, {
     style: v,
@@ -131,7 +131,7 @@ function q(e) {
     quest: t,
     isHovering: n,
     showAssets: s
-  } = e, a = o.useMemo(() => (0, j.fh)(t, j.eC.HERO_IMAGE), [t]), i = o.useMemo(() => (0, j.fh)(t, j.eC.HERO_VIDEO), [t]), l = (0, b.h)(t, P.dr.QUEST_HOME_DESKTOP), {
+  } = e, a = o.useMemo(() => (0, j.fh)(t, j.eC.HERO_IMAGE), [t]), i = o.useMemo(() => (0, j.fh)(t, j.eC.HERO_VIDEO), [t]), l = (0, b.h)(t, E.dr.QUEST_HOME_DESKTOP), {
     onAssetLoadComplete: c
   } = o.useContext(w.k);
   return (0, r.jsx)("div", {
@@ -161,14 +161,14 @@ function I(e) {
     errorHints: j,
     warningHints: v,
     isVisibleInViewport: y,
-    onCtxMenuClose: P,
-    onCtxMenuOpen: E,
+    onCtxMenuClose: E,
+    onCtxMenuOpen: P,
     onCtxMenuSelect: I
-  } = e, D = (0, h.PB)(p), M = (0, u.ZP)(), L = ((0, l.wj)(M) ? T.BRd.DARK : T.BRd.LIGHT) === T.BRd.DARK, W = (0, g.tP)(p), V = (null == (t = p.userStatus) ? void 0 : t.claimedAt) != null, Z = (0, g.B6)(p.config.expiresAt, {
+  } = e, D = (0, h.PB)(p), M = (0, u.ZP)(), L = ((0, l.wj)(M) ? T.BRd.DARK : T.BRd.LIGHT) === T.BRd.DARK, V = (0, g.tP)(p), W = (null == (t = p.userStatus) ? void 0 : t.claimedAt) != null, Z = (0, g.B6)(p.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), Q = (null == (n = p.userStatus) ? void 0 : n.enrolledAt) != null, H = (null == (s = p.userStatus) ? void 0 : s.completedAt) != null, {
-    onAssetLoadComplete: U
+  }), Q = (null == (n = p.userStatus) ? void 0 : n.enrolledAt) != null, U = (null == (s = p.userStatus) ? void 0 : s.completedAt) != null, {
+    onAssetLoadComplete: H
   } = o.useContext(w.k), z = o.useCallback(() => {
     D && ((0, h.zi)(p) || Q || (0, f.AH)(p.id, {
       questContent: x.jn.QUEST_HOME_DESKTOP,
@@ -204,7 +204,7 @@ function I(e) {
               children: N.intl.string(N.t.SKNnqq)
             })
           }), D && (0, r.jsx)(c.ua7, {
-            text: H ? N.intl.string(N.t.YsCuyM) : Q ? N.intl.string(N.t["74Kqra"]) : (0, h.zi)(p) ? N.intl.string(N.t["I6JG4+"]) : N.intl.string(N.t.umdNio),
+            text: U ? N.intl.string(N.t.YsCuyM) : Q ? N.intl.string(N.t["74Kqra"]) : (0, h.zi)(p) ? N.intl.string(N.t["I6JG4+"]) : N.intl.string(N.t.umdNio),
             children: e => (0, r.jsx)(c.P3F, k(R({}, e), {
               className: A.utilButtonWrapper,
               "aria-label": N.intl.string(N.t.RscU7O),
@@ -215,8 +215,8 @@ function I(e) {
               })
             }))
           }), (0, r.jsx)(C.r, {
-            onOpen: E,
-            onClose: P,
+            onOpen: P,
+            onClose: E,
             onSelect: I,
             questContent: x.jn.QUEST_HOME_DESKTOP,
             quest: p,
@@ -244,7 +244,7 @@ function I(e) {
             quest: p,
             separatorSpacing: _.US.MEDIUM,
             withGameTile: !1,
-            onLoadComplete: U
+            onLoadComplete: H
           })
         }), (0, r.jsxs)("div", {
           className: A.bottomRow,
@@ -254,7 +254,7 @@ function I(e) {
             children: N.intl.format(N.t.buEvBw, {
               brandName: null != (d = null == (i = p.config.cosponsorMetadata) ? void 0 : i.name) ? d : p.config.messages.gamePublisher
             })
-          }), W || V ? null : (0, r.jsx)(c.Text, {
+          }), V || W ? null : (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: L ? "text-muted" : "always-white",
             children: N.intl.format(N.t["7D8r4O"], {

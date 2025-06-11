@@ -1,4 +1,4 @@
-/** Chunk was on 80767 **/
+/** Chunk was on 86350 **/
 n.d(t, {
   P: () => O,
   Z: () => j
@@ -17,10 +17,10 @@ var i = n(442837),
   p = n(430824),
   m = n(979651),
   g = n(153066),
-  _ = n(981631),
-  b = n(66569);
+  b = n(981631),
+  _ = n(66569);
 
-function h(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function h(e) {
   return e
 }
 
-function v(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function y(e) {
     actionColor: f
   } = e;
   return (0, r.jsx)(s.Z, {
-    className: (0, g.l)(b, "actions", t),
+    className: (0, g.l)(_, "actions", t),
     type: t,
     source: n,
     activity: i,
@@ -86,7 +86,7 @@ let O = o.Z.Types,
       useStoreStream: l = !0,
       showActions: s = !0,
       hideHeader: g = !1,
-      showChannelDetails: b = !1
+      showChannelDetails: _ = !1
     } = e, O = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
@@ -109,7 +109,7 @@ let O = o.Z.Types,
       S = (0, i.e7)([d.Z], () => l ? d.Z.getAnyStreamForUser(n.id) : null),
       x = (0, i.e7)([p.Z, m.Z, f.Z], () => {
         var e, r;
-        return (0, a.Z)(t, _.xjy.EMBEDDED) ? p.Z.getGuild(null == (e = f.Z.getChannel(null == (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) ? void 0 : r.channelId)) ? void 0 : e.getGuildId()) : null
+        return (0, a.Z)(t, b.xjy.EMBEDDED) ? p.Z.getGuild(null == (e = f.Z.getChannel(null == (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) ? void 0 : r.channelId)) ? void 0 : e.getGuildId()) : null
       }),
       I = (0, i.e7)([p.Z], () => null != S ? p.Z.getGuild(S.guildId) : null),
       P = (0, i.e7)([c.Z], () => {
@@ -118,15 +118,15 @@ let O = o.Z.Types,
           else return c.Z.getApplicationByName(t.name);
         return null
       });
-    return (null == t ? void 0 : t.type) === _.IIU.HANG_STATUS ? null : (0, r.jsx)(o.Z, v(h({}, O), {
+    return (null == t ? void 0 : t.type) === b.IIU.HANG_STATUS ? null : (0, r.jsx)(o.Z, h(v({}, O), {
       activity: t,
       user: n,
       application: P,
       hideHeader: g,
       activityGuild: null != x ? x : I,
-      showChannelDetails: b,
-      channel: b ? j : void 0,
-      renderActions: s ? () => (0, r.jsx)(y, v(h({}, O), {
+      showChannelDetails: _,
+      channel: _ ? j : void 0,
+      renderActions: s ? () => (0, r.jsx)(y, h(v({}, O), {
         applicationStream: S,
         activity: t,
         user: n

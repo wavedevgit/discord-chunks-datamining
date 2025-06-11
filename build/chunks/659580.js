@@ -1,4 +1,4 @@
-/** Chunk was on 80767 **/
+/** Chunk was on 86350 **/
 n.d(t, {
   default: () => I
 });
@@ -16,10 +16,10 @@ var i = n(990547),
   p = n(453925),
   m = n(967003),
   g = n(632304),
-  _ = n(131951),
-  b = n(358085),
-  h = n(947150),
-  v = n(488021),
+  b = n(131951),
+  _ = n(358085),
+  v = n(947150),
+  h = n(488021),
   y = n(822556),
   O = n(981631),
   j = n(345655),
@@ -41,26 +41,26 @@ function I(e) {
     appContext: A,
     onInteraction: D
   } = e, {
-    analyticsLocations: L
+    analyticsLocations: k
   } = (0, u.ZP)();
   (0, d.Z)({
     type: i.ImpressionTypes.MENU,
     name: i.ImpressionNames.AUDIO_DEVICE_MENU,
     properties: {
-      location_stack: L
+      location_stack: k
     }
   });
-  let k = (0, y.Z)(A),
-    M = (0, h.Z)(L, N),
-    R = (0, v.Z)(L, N),
-    F = (0, l.e7)([_.Z], () => _.Z.getActiveInputProfile()),
-    U = (0, m.Z)(L),
-    V = (0, f.Z)(L),
-    B = (0, p.Z)(L),
-    Y = (0, g.Z)(L),
+  let L = (0, y.Z)(A),
+    M = (0, v.Z)(k, N),
+    R = (0, h.Z)(k, N),
+    F = (0, l.e7)([b.Z], () => b.Z.getActiveInputProfile()),
+    U = (0, m.Z)(k),
+    V = (0, f.Z)(k),
+    B = (0, p.Z)(k),
+    Y = (0, g.Z)(k),
     W = a.Yn.DEFAULT,
-    z = _.Z.isSelfDeaf(W),
-    G = (0, l.e7)([_.Z], () => _.Z.getMode()),
+    z = b.Z.isSelfDeaf(W),
+    G = (0, l.e7)([b.Z], () => b.Z.getMode()),
     H = G === O.pM4.VOICE_ACTIVITY ? O.pM4.PUSH_TO_TALK : O.pM4.VOICE_ACTIVITY;
   return (0, r.jsx)(c.Z, {
     object: O.qAy.CONTEXT_MENU,
@@ -83,15 +83,15 @@ function I(e) {
             location: "AudioDeviceMenu"
           }),
           checked: z
-        }, "self-deafen") : null, N && I && b.isPlatformEmbedded ? (0, r.jsx)(o.S89, {
+        }, "self-deafen") : null, N && I && _.isPlatformEmbedded ? (0, r.jsx)(o.S89, {
           checked: G === O.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: S.intl.string(S.t.Q8gkVF),
           action: () => s.Z.setMode(H, void 0, void 0, {
-            analyticsLocations: L
+            analyticsLocations: k
           }),
           disabled: F === j._.STUDIO
-        }) : null, k]
+        }) : null, L]
       })]
     })
   })

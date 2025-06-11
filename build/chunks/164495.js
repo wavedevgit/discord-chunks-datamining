@@ -1,6 +1,6 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  i0: () => P,
+  i0: () => E,
   yD: () => T
 });
 var r = n(255367),
@@ -110,7 +110,7 @@ let O = e => {
       children: s
     }) : null
   },
-  P = e => {
+  E = e => {
     var t, n, s, {
         quest: d,
         useReducedMotion: u,
@@ -139,7 +139,7 @@ let O = e => {
         location: m.jn.QUEST_BAR_V2
       }),
       S = (0, g.up)(b.dr.QUESTS_BAR),
-      P = o.useCallback(e => {
+      E = o.useCallback(e => {
         var t;
         null == C || C(e), (0, f.xN)(d.config) && (null == (t = d.userStatus) ? void 0 : t.claimedAt) != null ? (0, c.mK)({
           openInLayer: !1,
@@ -151,7 +151,7 @@ let O = e => {
     return (0, r.jsx)(i.gtL, (t = _({
       fullWidth: !0,
       size: i.zxk.Sizes.SMALL,
-      onClick: P,
+      onClick: E,
       pauseAnimation: u || !p,
       className: a()(y.cta, h),
       buttonShineClassName: y.shine
@@ -168,7 +168,7 @@ let O = e => {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  E = e => {
+  P = e => {
     var t;
     let {
       quest: n,
@@ -180,7 +180,7 @@ let O = e => {
       activeScreen: c,
       taskDetails: d
     } = e, u = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, p = (0, f.q8)(n), g = (0, f.Vl)(n);
-    if (u) return (0, r.jsx)(P, {
+    if (u) return (0, r.jsx)(E, {
       quest: n,
       useReducedMotion: o,
       isExpanded: s
@@ -215,6 +215,6 @@ function T(e) {
       children: (0, r.jsx)(i.V7D, {
         className: y.backIcon
       })
-    }), (0, r.jsx)(E, _({}, e))]
+    }), (0, r.jsx)(P, _({}, e))]
   })
 }

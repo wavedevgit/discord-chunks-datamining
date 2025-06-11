@@ -1,7 +1,7 @@
 /** Chunk was on 88622 **/
 n.d(t, {
   default: () => w,
-  y: () => P
+  y: () => E
 }), n(388685);
 var r = n(255367),
   o = n(73800),
@@ -50,20 +50,20 @@ function w(e) {
     questId: n,
     errorHints: s,
     transitionState: w,
-    onClose: P
-  } = e, E = (0, g.sf)(n);
-  null == E && P();
+    onClose: E
+  } = e, P = (0, g.sf)(n);
+  null == P && E();
   let [T, N] = (0, o.useState)(s), A = (0, g.KX)(), R = (0, m.O5)(), k = null == (t = (0, f.WD)()) ? void 0 : t.getId(), B = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), q = (0, j.g2)({
     useReducedMotion: B,
     className: _.colorTransition
-  }), I = T.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(E), M = (0, i.e7)([p.Z], () => p.Z.getState().theme), L = (0, l.wj)(M) ? v.BRd.DARK : v.BRd.LIGHT, {
-    startConsoleQuest: W,
-    startingConsoleQuest: V
+  }), I = T.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(P), M = (0, i.e7)([p.Z], () => p.Z.getState().theme), L = (0, l.wj)(M) ? v.BRd.DARK : v.BRd.LIGHT, {
+    startConsoleQuest: V,
+    startingConsoleQuest: W
   } = (0, g.GI)({
-    questId: E.id,
+    questId: P.id,
     beforeRequest: () => {
       q.startAnimation(), R({
-        questId: E.id,
+        questId: P.id,
         questContent: x.jn.CONNECTIONS_MODAL,
         questContentCTA: m.jZ.DEFIBRILLATOR
       })
@@ -92,7 +92,7 @@ function w(e) {
           })
         }), (0, r.jsx)(c.olH, {
           className: _.closeBtn,
-          onClick: P
+          onClick: E
         })]
       }), (0, r.jsx)(c.X6q, {
         variant: "heading-xl/bold",
@@ -113,9 +113,9 @@ function w(e) {
           children: y.intl.string(y.t["+/hZMz"])
         }), (0, r.jsxs)(c.P3F, {
           className: a()(_.refreshWrapper, {
-            [_.disabled]: V
+            [_.disabled]: W
           }),
-          onClick: W,
+          onClick: V,
           children: [q.render(), (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
@@ -137,12 +137,12 @@ function w(e) {
           text: y.intl.string(y.t.XF4wuL),
           errors: D ? void 0 : I.map(e => e.message),
           gameTile: D ? (0, r.jsx)(c.ua7, {
-            "aria-label": E.config.messages.gameTitle,
+            "aria-label": P.config.messages.gameTitle,
             text: () => (0, r.jsxs)("div", {
               className: _.tooltip,
               children: [(0, r.jsx)(c.Text, {
                 variant: "text-sm/medium",
-                children: E.config.messages.gameTitle
+                children: P.config.messages.gameTitle
               }), (0, r.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
@@ -153,8 +153,8 @@ function w(e) {
               var t, n;
               return (0, r.jsx)("img", (t = O({}, e), n = n = {
                 className: _.gameTile,
-                alt: E.config.messages.gameTitle,
-                src: (0, b.fh)(E, b.eC.GAME_TILE, L).url
+                alt: P.config.messages.gameTitle,
+                src: (0, b.fh)(P, b.eC.GAME_TILE, L).url
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -173,15 +173,15 @@ function w(e) {
       className: _.footer,
       children: [(0, r.jsx)(c.zxk, {
         size: c.PhG.MIN,
-        onClick: P,
+        onClick: E,
         className: _.footerCloseButton,
         children: y.intl.string(y.t.cpT0Cg)
       }), (0, r.jsx)(c.zxk, {
         look: c.iLD.LINK,
         color: c.Ttl.PRIMARY,
         onClick: () => {
-          P(), (0, h.V$)({
-            quest: E
+          E(), (0, h.V$)({
+            quest: P
           }, {
             content: x.jn.CONNECTIONS_MODAL,
             ctaContent: m.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
@@ -243,7 +243,7 @@ function S(e) {
   })
 }
 
-function P(e) {
+function E(e) {
   (0, c.ZDy)(async () => {
     let {
       default: t

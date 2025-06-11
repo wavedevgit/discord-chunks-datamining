@@ -1,31 +1,26 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => m
+  Z: () => u
 });
 var r = n(255367),
   i = n(73800),
-  l = n(652844),
-  a = n(747906),
-  o = n(481060),
-  s = n(40851),
-  c = n(906732),
-  u = n(628581),
-  d = n(522651),
-  p = n(378441),
-  h = n(871499),
-  f = n(981631);
+  l = n(906732),
+  a = n(628581),
+  o = n(522651),
+  s = n(8404),
+  c = n(871499);
 
-function m(e) {
+function u(e) {
   var {
     selfMute: t,
     serverMute: n,
-    suppress: m,
-    centerButton: g = !1,
-    awaitingRemote: b,
-    onMouseEnter: _,
-    onMouseLeave: y,
-    onClick: C
-  } = e, x = function(e, t) {
+    suppress: u,
+    centerButton: d = !1,
+    awaitingRemote: p,
+    onMouseEnter: h,
+    onMouseLeave: f,
+    onClick: m
+  } = e, g = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -41,16 +36,13 @@ function m(e) {
     return i
   }(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]);
   let {
-    parentAnalyticsLocation: v
-  } = (0, c.ZP)(), j = t || n || m, O = g ? h.d : h.Z, E = (0, u.Z)(t, n, m, b), I = (0, l.O)(j ? "unmute" : "mute"), P = (0, a.P)(j ? "unmute" : "mute"), {
-    activeVoice: S
-  } = (0, p.o)(), Z = null != S, N = Z ? P : I, {
-    events: T,
-    play: A
-  } = N;
-  i.useEffect(() => () => A(), [A, j]);
-  let w = N.Component;
-  return (0, s.bp)() === f.IlC.POPOUT && (w = Z ? j ? o.TYr : o.x8H : j ? o.nRN : o.S6n), (0, r.jsx)(O, function(e) {
+    parentAnalyticsLocation: b
+  } = (0, l.ZP)(), _ = t || n || u, y = d ? c.d : c.Z, C = (0, a.Z)(t, n, u, p), {
+    events: x,
+    play: v,
+    Component: j
+  } = (0, s.b)(_);
+  return i.useEffect(() => () => v(), [v, _]), (0, r.jsx)(y, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -68,19 +60,19 @@ function m(e) {
     }
     return e
   }({
-    iconComponent: w,
+    iconComponent: j,
     isTrayButton: !0,
-    caretColor: j ? "red" : "primaryDark",
-    color: j ? "red" : void 0,
-    label: E,
+    caretColor: _ ? "red" : "primaryDark",
+    color: _ ? "red" : void 0,
+    label: C,
     onMouseEnter: e => {
-      null == _ || _(e), T.onMouseEnter()
+      null == h || h(e), x.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == y || y(e), T.onMouseLeave()
+      null == f || f(e), x.onMouseLeave()
     },
     onClick: e => {
-      null == C || C(e), (0, d.v)(v, d.d.MIC, t)
+      null == m || m(e), (0, o.v)(b, o.d.MIC, t)
     }
-  }, x))
+  }, g))
 }

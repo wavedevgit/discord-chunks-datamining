@@ -1,4 +1,4 @@
-/** Chunk was on 80767 **/
+/** Chunk was on 86350 **/
 n.d(t, {
   Z: () => u
 });
@@ -22,17 +22,17 @@ function u(e) {
     look: p,
     color: m,
     className: g,
-    onAction: _
+    onAction: b
   } = e, {
-    tooltip: b,
-    loading: h,
-    disabled: v,
+    tooltip: _,
+    loading: v,
+    disabled: h,
     onClick: y
   } = (0, s.Fe)(t, n, d, o.ZP.getNickname(u, i, n)), O = () => {
-    null == _ || _(), y()
+    null == b || b(), y()
   };
   return (0, r.jsx)(a.ua7, {
-    text: b,
+    text: _,
     children: e => {
       let {
         onMouseEnter: n,
@@ -47,9 +47,9 @@ function u(e) {
         onClick: O,
         onMouseEnter: n,
         onMouseLeave: i,
-        disabled: v,
-        submitting: h,
-        "aria-label": null != b ? b : t.name,
+        disabled: h,
+        submitting: v,
+        "aria-label": null != _ ? _ : t.name,
         children: (0, r.jsx)(a.iOO, {
           size: "xs",
           color: "currentColor"

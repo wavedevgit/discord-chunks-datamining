@@ -1,4 +1,4 @@
-/** Chunk was on 80767 **/
+/** Chunk was on 86350 **/
 n.d(t, {
   Z: () => w
 }), n(388685);
@@ -15,10 +15,10 @@ var r = n(255367),
   p = n(258609),
   m = n(199902),
   g = n(314897),
-  _ = n(430824),
-  b = n(496675),
-  h = n(158776),
-  v = n(979651),
+  b = n(430824),
+  _ = n(496675),
+  v = n(158776),
+  h = n(979651),
   y = n(626135),
   O = n(102172),
   j = n(687516),
@@ -138,7 +138,7 @@ function w(e) {
       }
       return i
     }(e, ["user", "channel"]);
-  let [c, d] = (0, o.Wu)([v.Z, _.Z, b.Z, p.Z], () => (0, O.p9)(a, v.Z, _.Z, b.Z, p.Z)), f = (0, o.e7)([m.Z], () => m.Z.getStreamForUser(l.id, a.getGuildId())), y = (0, o.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(f)), S = (0, o.e7)([g.default], () => g.default.getId()), x = (0, j.Cf)(f), I = (0, o.e7)([h.Z], () => (0, j.Um)(f, h.Z)), P = i.useMemo(() => ({
+  let [c, d] = (0, o.Wu)([h.Z, b.Z, _.Z, p.Z], () => (0, O.p9)(a, h.Z, b.Z, _.Z, p.Z)), f = (0, o.e7)([m.Z], () => m.Z.getStreamForUser(l.id, a.getGuildId())), y = (0, o.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(f)), S = (0, o.e7)([g.default], () => g.default.getId()), x = (0, j.Cf)(f), I = (0, o.e7)([v.Z], () => (0, j.Um)(f, v.Z)), P = i.useMemo(() => ({
     [a.guild_id]: [l.id]
   }), [a.guild_id, l.id]);
   return (0, u.$)(P), (0, r.jsx)(E, (t = function(e) {

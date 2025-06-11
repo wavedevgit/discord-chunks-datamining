@@ -1,8 +1,8 @@
-/** Chunk was on 80767 **/
+/** Chunk was on 86350 **/
 n.d(t, {
   ZP: () => M,
-  eJ: () => L,
-  nm: () => k
+  eJ: () => k,
+  nm: () => L
 }), n(539854), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -17,10 +17,10 @@ var r = n(255367),
   p = n(367907),
   m = n(906732),
   g = n(522651),
-  _ = n(795318),
-  b = n(194082),
-  h = n(925329),
-  v = n(340044),
+  b = n(795318),
+  _ = n(194082),
+  v = n(925329),
+  h = n(340044),
   y = n(880395),
   O = n(314897),
   j = n(592125),
@@ -54,7 +54,7 @@ function D(e) {
   }
   return e
 }
-let L = e => {
+let k = e => {
   let {
     children: t,
     collapsed: n = !1,
@@ -67,7 +67,7 @@ let L = e => {
   })
 };
 
-function k(e) {
+function L(e) {
   let {
     className: t,
     mute: n,
@@ -79,9 +79,9 @@ function k(e) {
     collapsed: p,
     video: m,
     isStreaming: g,
-    disabled: _,
-    isWatching: h,
-    iconClassName: v,
+    disabled: b,
+    isWatching: v,
+    iconClassName: h,
     embeddedApplication: y,
     otherClientSessionType: O,
     voicePlatform: j,
@@ -89,18 +89,18 @@ function k(e) {
     guildId: x,
     channelId: E,
     user: D,
-    disconnected: L
+    disconnected: k
   } = e, {
-    enabled: k
+    enabled: L
   } = d.c.getCurrentConfig({
     location: "VoiceUserIcons"
   }, {
     autoTrackExposure: !0
   });
-  if (p || _) return null;
+  if (p || b) return null;
   let M = [],
     U = (0, r.jsx)(F, {
-      iconClassName: v,
+      iconClassName: h,
       mute: n,
       localMute: i,
       serverMute: o,
@@ -113,7 +113,7 @@ function k(e) {
     children: (0, r.jsx)(s.Amn, {
       size: "md",
       color: "currentColor",
-      className: a()(A.icon, v),
+      className: a()(A.icon, h),
       colorClass: A.strikethrough
     })
   }, "video")) : M.push((0, r.jsx)(s.DY3, {
@@ -122,47 +122,47 @@ function k(e) {
     children: (0, r.jsx)(s.Odl, {
       size: "md",
       color: "currentColor",
-      className: a()(A.icon, v)
+      className: a()(A.icon, h)
     })
-  }, "video"))), L && M.push((0, r.jsx)(s.DY3, {
+  }, "video"))), k && M.push((0, r.jsx)(s.DY3, {
     className: A.iconSpacing,
     text: Z.intl.string(Z.t.HFwRpq),
     children: (0, r.jsx)(s.P4T, {
-      className: a()(A.icon, v),
+      className: a()(A.icon, h),
       color: s.TVs.colors.STATUS_WARNING_BACKGROUND
     })
   }, "disconnected"));
-  let V = k ? s.iWm : s.nG3;
+  let V = L ? s.iWm : s.nG3;
   null != y && M.push((0, r.jsx)(s.DY3, {
     text: (0, f.Z)(y.name),
     className: A.iconSpacing,
     children: (0, r.jsx)(V, {
       size: "md",
       color: "currentColor",
-      className: a()(A.icon, v)
+      className: a()(A.icon, h)
     })
   }, "activity")), O === N.YE.XBOX || j === T.wR.XBOX ? M.push((0, r.jsx)("div", {
     className: A.iconSpacing,
     children: (0, r.jsx)(P.Z, {
-      className: a()(A.icon, v)
+      className: a()(A.icon, h)
     })
   }, "xbox")) : (O === N.YE.PLAYSTATION || j === T.wR.PLAYSTATION) && M.push((0, r.jsx)("div", {
     className: A.iconSpacing,
     children: (0, r.jsx)(I.Z, {
-      className: a()(A.icon, v)
+      className: a()(A.icon, h)
     })
-  }, "playstation")), h && M.push((0, r.jsx)(s.DY3, {
+  }, "playstation")), v && M.push((0, r.jsx)(s.DY3, {
     className: A.iconSpacing,
     text: Z.intl.string(Z.t.JH1SJy),
     children: (0, r.jsx)(s.tEF, {
       size: "xs",
       color: "currentColor",
-      className: a()(A.icon, v)
+      className: a()(A.icon, h)
     })
   }, "watch")), g && M.push((0, r.jsx)("div", {
     className: a()(A.iconSpacing, A.liveIconSpacing),
-    children: (0, r.jsx)(b.ZP, {
-      size: b.ZP.Sizes.SMALL
+    children: (0, r.jsx)(_.ZP, {
+      size: _.ZP.Sizes.SMALL
     })
   }, "stream"));
   let B = null != S && !(0, C.yE)(S.flags, w.udG.EMBEDDED);
@@ -175,7 +175,7 @@ function k(e) {
       className: A.iconGroup,
       children: (0, r.jsx)(R, {
         application: S,
-        iconClassName: v,
+        iconClassName: h,
         guildId: x,
         channelId: E,
         userId: D.id
@@ -190,9 +190,9 @@ let M = i.forwardRef(function(e, t) {
       size: d = w.ipw.SMALL,
       selected: f = !1,
       disabled: p = !1,
-      isOverlay: b = !1
+      isOverlay: _ = !1
     } = e,
-    h = function(e, t) {
+    v = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -212,7 +212,7 @@ let M = i.forwardRef(function(e, t) {
     onKeyDown: P,
     onDoubleClick: C,
     onContextMenu: N,
-    onMouseLeave: L,
+    onMouseLeave: k,
     onMouseDown: M,
     priority: R,
     speaking: F,
@@ -229,7 +229,7 @@ let M = i.forwardRef(function(e, t) {
     ringing: q,
     user: K,
     channelId: Q
-  } = h, {
+  } = v, {
     parentAnalyticsLocation: $
   } = (0, m.ZP)(), ee = (0, u.bp)(), et = null != Q ? j.Z.getChannel(Q) : null, en = (0, o.e7)([O.default, S.Z], () => S.Z.isInChannel(Q, O.default.getId())), [er, ei] = i.useState(!1);
   return i.useEffect(() => {
@@ -260,7 +260,7 @@ let M = i.forwardRef(function(e, t) {
       null == N || N(e, K)
     },
     onMouseLeave: e => {
-      null == L || L(e, K)
+      null == k || k(e, K)
     },
     onMouseDown: e => {
       null == M || M(e, K)
@@ -308,14 +308,14 @@ let M = i.forwardRef(function(e, t) {
             primaryGuild: K.primaryGuild,
             userId: K.id,
             contextGuildId: Y,
-            isOverlay: b,
+            isOverlay: _,
             disableTooltip: !0,
-            className: a()(A.clanTag, b && A.isOverlay),
+            className: a()(A.clanTag, _ && A.isOverlay),
             profileViewedAnalytics: {
-              source: b ? w.jXE.OVERLAY : w.Sbl.VOICE_PANEL
+              source: _ ? w.jXE.OVERLAY : w.Sbl.VOICE_PANEL
             }
           };
-        return !U || b ? (0, r.jsx)(v.Z, (e = D({}, i), t = t = {
+        return !U || _ ? (0, r.jsx)(h.Z, (e = D({}, i), t = t = {
           children: n
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -327,9 +327,9 @@ let M = i.forwardRef(function(e, t) {
         })(Object(t)).forEach(function(n) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)) : null
-      }(), (0, r.jsx)(k, D({
+      }(), (0, r.jsx)(L, D({
         disabled: p
-      }, h)), !U && en ? (0, r.jsx)(s.DY3, {
+      }, v)), !U && en ? (0, r.jsx)(s.DY3, {
         text: Z.intl.string(Z.t["+1H47u"]),
         className: a()(A.optionsButtonContainer, {
           [A.optionsContainerActive]: er
@@ -342,7 +342,7 @@ let M = i.forwardRef(function(e, t) {
             null != Y && null != et && ((0, g.v)($, g.d.MORE), ei(!0), (0, y.D)(e, K, et, {
               context: ee
             }, (e, t) => {
-              (0, _.o)({
+              (0, b.o)({
                 menuName: e,
                 menuItemProps: t,
                 entrypoint: T.A5.THREE_DOT,
@@ -385,10 +385,10 @@ function R(e) {
     className: A.iconSpacing,
     children: (0, r.jsx)("div", {
       ref: m,
-      children: (0, r.jsx)(h.Z, {
+      children: (0, r.jsx)(v.Z, {
         className: a()(A.icon, n),
         game: t,
-        size: h.Z.Sizes.XSMALL,
+        size: v.Z.Sizes.XSMALL,
         onMouseEnter: () => {
           p.ZP.trackWithMetadata(w.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_HOVERED, {
             channel_id: o,

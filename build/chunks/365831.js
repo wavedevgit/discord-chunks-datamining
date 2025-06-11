@@ -1,4 +1,4 @@
-/** Chunk was on 80767 **/
+/** Chunk was on 86350 **/
 n.d(t, {
   y: () => I
 }), n(388685), n(953529);
@@ -15,11 +15,11 @@ var r = n(255367),
   p = n(131951),
   m = n(743498),
   g = n(56848),
-  _ = n(378441),
-  b = n(388032),
-  h = n(270217);
+  b = n(378441),
+  _ = n(388032),
+  v = n(270217);
 
-function v(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -72,13 +72,13 @@ function I(e) {
   var t;
   let {} = e, {
     activeVoice: n
-  } = (0, _.o)(), l = (0, d.Z)(n), I = (0, g.z)(n), {
+  } = (0, b.o)(), l = (0, d.Z)(n), I = (0, g.z)(n), {
     toggleLoopback: P,
     isLoopbackEnabled: C
   } = function() {
     let {
       activeVoice: e
-    } = (0, _.o)(), t = (0, s.e7)([p.Z], () => p.Z.getVoiceFilterPlaybackEnabled()), n = i.useCallback(() => {
+    } = (0, b.o)(), t = (0, s.e7)([p.Z], () => p.Z.getVoiceFilterPlaybackEnabled()), n = i.useCallback(() => {
       (0, f.GN)(t ? "voice_filter_loopback_off" : "voice_filter_loopback_on"), (0, m._j)(!t)
     }, [t]);
     return i.useEffect(() => (u.Z.setLoopback("voice_filter_preview", null != e && t), () => {
@@ -92,8 +92,8 @@ function I(e) {
     Z.current = A
   }, [A]);
   let D = null != n,
-    L = !D,
-    k = D && null != l,
+    k = !D,
+    L = D && null != l,
     M = null == n && null != l,
     R = (0, c.q_F)({
       opacity: +!!D,
@@ -104,7 +104,7 @@ function I(e) {
         easing: O,
         duration: 200
       } : j,
-      delay: 100 * !!k
+      delay: 100 * !!L
     }, "respect-motion-settings"),
     F = (0, c.Yzy)(null == I ? void 0 : I.id, {
       key: A,
@@ -114,19 +114,19 @@ function I(e) {
       },
       enter: {
         opacity: 1,
-        delay: k ? 100 : 50
+        delay: L ? 100 : 50
       },
       leave: {
         opacity: 0,
-        delay: k ? 100 : 150
+        delay: L ? 100 : 150
       },
       config: {
         easing: O,
-        duration: k ? 250 : 200
+        duration: L ? 250 : 200
       }
     }, "respect-motion-settings"),
     [U] = (0, c.bYB)(2, e => ({
-      from: k ? {
+      from: L ? {
         translateY: 0,
         opacity: 1
       } : {
@@ -136,7 +136,7 @@ function I(e) {
       to: null == n ? {
         translateY: 16,
         opacity: 0
-      } : k ? null : {
+      } : L ? null : {
         translateY: 0,
         opacity: 1
       },
@@ -151,7 +151,7 @@ function I(e) {
       from: {
         opacity: 0,
         scale: 80 / 88,
-        translateX: k ? -16 : 0
+        translateX: L ? -16 : 0
       },
       enter: {
         opacity: 1,
@@ -163,7 +163,7 @@ function I(e) {
         opacity: 0,
         scale: D ? 80 / 88 : 1,
         translateX: 24 * !!D,
-        delay: 150 * !k
+        delay: 150 * !L
       },
       config: e => "opacity" === e ? {
         easing: O,
@@ -174,8 +174,8 @@ function I(e) {
       key: A,
       from: {
         opacity: 0,
-        scale: k ? .9 : 1,
-        translateY: 16 * !k
+        scale: L ? .9 : 1,
+        translateY: 16 * !L
       },
       enter: {
         opacity: 1,
@@ -186,7 +186,7 @@ function I(e) {
         config: e => "opacity" === e ? {
           easing: O,
           duration: 200
-        } : k ? j : S
+        } : L ? j : S
       },
       leave: {
         opacity: 0,
@@ -196,70 +196,70 @@ function I(e) {
         config: e => "opacity" === e ? {
           easing: O,
           duration: 200
-        } : k ? j : S
+        } : L ? j : S
       }
     }, "respect-motion-settings"),
-    Y = b.intl.string(C ? b.t.esVyo6 : b.t.UQqFCA);
+    Y = _.intl.string(C ? _.t.esVyo6 : _.t.UQqFCA);
   return (0, r.jsxs)(o.animated.div, {
-    className: h.voiceFilterHero,
-    "aria-hidden": L,
+    className: v.voiceFilterHero,
+    "aria-hidden": k,
     style: R,
     children: [(0, r.jsx)("div", {
-      className: a()([h.bgGradient, h.bgGradientHighlight])
+      className: a()([v.bgGradient, v.bgGradientHighlight])
     }), F(e => (0, r.jsx)(o.animated.div, {
-      className: h.bgGradient,
+      className: v.bgGradient,
       style: e
     })), (0, r.jsx)("div", {
-      className: h.iconWrapper,
+      className: v.iconWrapper,
       children: V((e, t) => (0, r.jsx)(o.animated.img, {
-        className: h.activeVoiceIcon,
+        className: v.activeVoiceIcon,
         style: e,
         alt: "",
         src: t
       }, t))
     }), (0, r.jsx)("div", {
-      className: h.descriptionWrapper,
+      className: v.descriptionWrapper,
       children: B((e, t) => (0, r.jsxs)(o.animated.div, {
-        className: h.description,
+        className: v.description,
         style: e,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "always-white",
-          className: h.offWhiteText,
-          children: b.intl.string(b.t.WW5DAA)
+          className: v.offWhiteText,
+          children: _.intl.string(_.t.WW5DAA)
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "always-white",
-          children: null != t ? b.intl.string(t) : ""
+          children: null != t ? _.intl.string(t) : ""
         })]
       }))
     }), (0, r.jsxs)("div", {
-      className: h.buttonWrapper,
+      className: v.buttonWrapper,
       children: [(0, r.jsx)(c.ua7, {
         "aria-label": Y,
-        tooltipClassName: h.tooltip,
-        tooltipContentClassName: h.tooltipContent,
+        tooltipClassName: v.tooltip,
+        tooltipContentClassName: v.tooltipContent,
         shouldShow: D,
         text: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-sm/normal",
             color: "header-primary",
-            className: h.tooltipHeader,
+            className: v.tooltipHeader,
             children: Y
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-muted",
-            children: b.intl.string(C ? b.t.Sg6cfn : b.t.ZKhtw8)
+            children: _.intl.string(C ? _.t.Sg6cfn : _.t.ZKhtw8)
           })]
         }),
         children: e => (0, r.jsx)(o.animated.div, {
-          className: h.buttonWrapper,
+          className: v.buttonWrapper,
           style: U[0],
-          children: (0, r.jsx)(c.P3F, y(v({
-            className: a()(h.button, {
-              [h.loopbackEnabled]: C
+          children: (0, r.jsx)(c.P3F, y(h({
+            className: a()(v.button, {
+              [v.loopbackEnabled]: C
             }),
-            "aria-hidden": L,
+            "aria-hidden": k,
             focusProps: {
               enabled: D
             },
@@ -276,13 +276,13 @@ function I(e) {
         })
       }), (0, r.jsx)(c.ua7, {
         shouldShow: D,
-        text: b.intl.string(b.t.UvMx7O),
+        text: _.intl.string(_.t.UvMx7O),
         children: e => (0, r.jsx)(o.animated.div, {
-          className: h.buttonWrapper,
+          className: v.buttonWrapper,
           style: U[1],
-          children: (0, r.jsx)(c.P3F, y(v({
-            className: h.button,
-            "aria-hidden": L,
+          children: (0, r.jsx)(c.P3F, y(h({
+            className: v.button,
+            "aria-hidden": k,
             focusProps: {
               enabled: D
             },

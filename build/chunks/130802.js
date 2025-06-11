@@ -1,7 +1,8 @@
-/** Chunk was on 80767 **/
+/** Chunk was on 86350 **/
 e.exports = {
   voiceFiltersPopout: "voiceFiltersPopout_e2f668",
   wide: "wide_e2f668",
+  notResizable: "notResizable_e2f668",
   voiceFiltersHeader: "voiceFiltersHeader_e2f668",
   voiceFiltersFooter: "voiceFiltersFooter_e2f668",
   hasActiveVoice: "hasActiveVoice_e2f668",
