@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(933557),
   E = n(287746),
   O = n(388032),
-  I = n(560460),
-  y = n(46467);
+  y = n(560460),
+  I = n(46467);
 
 function v(e) {
   let {
@@ -32,20 +32,20 @@ function v(e) {
   }, [t.id, T, S, N, C]), A = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(O.intl.string(O.t.pIQ3h4), a.ToastType.FAILURE))
   }, []), {
-    markAsNotSpam: x
+    markAsNotSpam: Z
   } = (0, h.m)({
     onAcceptSuccess: j,
     onError: A
   });
   if (null == t || !t.isDM()) return null;
-  let Z = [(0, r.jsx)(s.ZP.Icon, {
+  let x = [(0, r.jsx)(s.ZP.Icon, {
     icon: a.Dio,
     tooltip: O.intl.string(O.t.cpT0Cg),
     onClick: () => m.Z.closeChannelSidebar(n)
   }, "close")];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.ZP, {
-      toolbar: Z,
+      toolbar: x,
       "aria-label": O.intl.string(O.t.BIYAqa),
       children: (0, c.ud)({
         channel: t,
@@ -53,19 +53,19 @@ function v(e) {
         inSidebar: !0
       })
     }), T && (0, r.jsxs)("div", {
-      className: y.hamBanner,
+      className: I.hamBanner,
       children: [(0, r.jsx)(a.Text, {
-        className: y.__invalid_hamBannerText,
+        className: I.__invalid_hamBannerText,
         variant: "text-sm/normal",
         children: O.intl.string(O.t.XVOKgo)
       }), (0, r.jsx)(a.zxk, {
-        className: y.hamBannerButton,
+        className: I.hamBannerButton,
         size: a.PhG.SMALL,
-        onClick: () => x(t, P),
+        onClick: () => Z(t, P),
         children: O.intl.string(O.t.koqL3d)
       })]
     }), (0, r.jsx)("div", {
-      className: I.chat,
+      className: y.chat,
       children: (0, r.jsx)(E.Z, {
         channel: t,
         guild: null,

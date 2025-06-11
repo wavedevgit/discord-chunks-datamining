@@ -50,15 +50,15 @@ let p = function(e) {
       padding: 8,
       callback: () => null == t ? void 0 : t.focus()
     })
-  }, []), I = (0, l.ZP)({
+  }, []), y = (0, l.ZP)({
     id: "people-list",
     isEnabled: m,
     scrollToStart: _,
     scrollToEnd: E,
     setFocus: O
-  }), y = i.useMemo(() => t.map(e => e.length), [t]);
+  }), I = i.useMemo(() => t.map(e => e.length), [t]);
   return (0, r.jsx)(a.bG, {
-    navigator: I,
+    navigator: y,
     children: (0, r.jsx)(a.SJ, {
       children: e => {
         var {
@@ -105,7 +105,7 @@ let p = function(e) {
             rowHeight: u.NV,
             renderSection: g,
             sectionHeight: u.aS,
-            sections: y,
+            sections: I,
             className: d.peopleList
           }, n)), h]
         })

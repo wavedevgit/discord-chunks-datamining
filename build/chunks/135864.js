@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(766219),
   E = n(749681),
   O = n(49898),
-  I = n(981631),
-  y = n(46140),
+  y = n(981631),
+  I = n(46140),
   v = n(388032),
   C = n(444657);
 
@@ -54,11 +54,11 @@ function S(e) {
   })(t, n), [t, n]), S = i.useMemo(() => (0, _.s)(t), [t]), N = l === t, T = i.useCallback(() => {
     switch (t) {
       case O.GlobalDiscoveryTab.QUESTS:
-        return N && g.Z.resetState(), m.default.track(I.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
+        return N && g.Z.resetState(), m.default.track(y.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
           client_ad_session_id: (0, u.Gy)().uuid
         }), (0, E.transitionToGlobalDiscovery)({
           tab: O.GlobalDiscoveryTab.QUESTS,
-          location: y.dr.DISCOVERY_SIDEBAR,
+          location: I.dr.DISCOVERY_SIDEBAR,
           questContent: o.j.DISCOVERY_SIDEBAR
         });
       case O.GlobalDiscoveryTab.APPS:

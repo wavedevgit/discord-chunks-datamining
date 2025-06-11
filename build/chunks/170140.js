@@ -25,13 +25,13 @@ function b(e, t) {
       let e = o.default.getId();
       return c.ZP.isMember(null == b ? void 0 : b.guildId, e)
     }, [b]),
-    x = (0, i.e7)([l.Z], () => null != b && (null == b ? void 0 : b.channelId) != null && l.Z.isChannelGated(b.guildId, b.channelId), [b]),
-    y = t.hasFlag(_.iLy.IS_CROSSPOST),
+    y = (0, i.e7)([l.Z], () => null != b && (null == b ? void 0 : b.channelId) != null && l.Z.isChannelGated(b.guildId, b.channelId), [b]),
+    x = t.hasFlag(_.iLy.IS_CROSSPOST),
     {
       rawMediaPostEmbedData: v,
       guild: O,
-      parentChannel: j,
-      user: C,
+      parentChannel: C,
+      user: j,
       selectedGuildId: S,
       canAccess: I
     } = (0, i.cj)([h.Z, u.Z, s.Z, p.default, d.Z], () => {
@@ -56,8 +56,8 @@ function b(e, t) {
       let n = (0, g.ku)({
         mediaPostEmbedData: v,
         guild: O,
-        parentChannel: j,
-        user: C,
+        parentChannel: C,
+        user: j,
         selectedGuildId: S,
         canAccess: I
       });
@@ -79,7 +79,7 @@ function b(e, t) {
         }
         return e
       }({}, n), t = t = {
-        user: C
+        user: j
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -90,11 +90,11 @@ function b(e, t) {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)
-    }, [v, O, j, C, S, I]);
+    }, [v, O, C, j, S, I]);
   return r.useEffect(() => {
     if ((null == b ? void 0 : b.threadId) != null) {
       let e = h.Z.getEmbedFetchState(b.threadId);
-      !0 !== n || e !== h.M.NOT_FETCHED || E && !1 === x || !E && y || (0, m.xP)(null == b ? void 0 : b.threadId)
+      !0 !== n || e !== h.M.NOT_FETCHED || E && !1 === y || !E && x || (0, m.xP)(null == b ? void 0 : b.threadId)
     }
-  }, [b, n, E, x, y]), N
+  }, [b, n, E, y, x]), N
 }

@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(213609),
   E = n(463119),
   O = n(377171),
-  I = n(540059),
-  y = n(243778),
+  y = n(540059),
+  I = n(243778),
   v = n(488634),
   C = n(899740),
   S = n(28476),
@@ -30,10 +30,10 @@ var r = n(255367),
   P = n(849862),
   j = n(522558),
   A = n(795448),
-  x = n(441623),
-  Z = n(457396),
-  w = n(108989),
-  L = n(51596),
+  Z = n(441623),
+  x = n(457396),
+  L = n(108989),
+  w = n(51596),
   R = n(905423),
   D = n(155409),
   k = n(210887),
@@ -107,7 +107,7 @@ let er = e => {
     } = e, n = en(e, ["selected"]);
     let l = (0, c.JA)("friends"),
       a = (0, P.If)(),
-      o = (0, d.e7)([x.Z], () => x.Z.canShowFriendsTabBadge()),
+      o = (0, d.e7)([Z.Z], () => Z.Z.canShowFriendsTabBadge()),
       u = (0, d.e7)([b.Z], () => b.Z.useReducedMotion),
       {
         enabled: p
@@ -150,7 +150,7 @@ let er = e => {
         children: a > 0 ? (0, r.jsx)(f.mAB, {
           count: a
         }) : null
-      })), h && !u && (0, r.jsx)(w.Z, {
+      })), h && !u && (0, r.jsx)(L.Z, {
         className: $.confetti,
         wind: 0,
         sprites: q.CA,
@@ -256,7 +256,7 @@ let er = e => {
       children: (0, r.jsx)(f.mAB, {
         count: i
       })
-    }) : (0, r.jsx)(y.ZP, {
+    }) : (0, r.jsx)(I.ZP, {
       contentTypes: [p.z.FAMILY_CENTER_NEW_BADGE],
       children: e => {
         let {
@@ -269,7 +269,7 @@ let er = e => {
       }
     })
   },
-  ec = () => (0, L.$Z)("DM_SEARCH");
+  ec = () => (0, w.$Z)("DM_SEARCH");
 
 function eu(e) {
   switch (e) {
@@ -336,7 +336,7 @@ let ed = i.memo(function(e) {
         hideGameUpdateProgressIndicator: l === K.Z5c.APPLICATION_LIBRARY
       }, "library") : null, d ? (0, r.jsx)(ea, {
         selected: null == g ? null != l && l.startsWith(K.Z5c.MESSAGE_REQUESTS) : g === K.Z5c.MESSAGE_REQUESTS
-      }, "message-requests") : null, c ? (0, r.jsx)(Z.g, {
+      }, "message-requests") : null, c ? (0, r.jsx)(x.g, {
         selected: null == g ? o : g.startsWith(K.Z5c.APPLICATION_STORE),
         route: K.Z5c.APPLICATION_STORE,
         locationState: {
@@ -389,7 +389,7 @@ function eh() {
     })),
     l = (0, d.e7)([U.Z], () => U.Z.hasLibraryApplication()),
     a = (0, d.e7)([G.Z], () => G.Z.getCurrentPath()),
-    s = (0, I.Q3)("PrivateChannels"),
+    s = (0, y.Q3)("PrivateChannels"),
     [c, u] = (0, R.Z)(e => {
       let {
         channelId: t,
@@ -397,7 +397,7 @@ function eh() {
       } = e;
       return [t, n]
     }, o.X),
-    p = (0, Z.i)({
+    p = (0, x.i)({
       selected: null == u ? t : u.startsWith(K.Z5c.APPLICATION_STORE)
     }),
     h = (0, S.a)(),

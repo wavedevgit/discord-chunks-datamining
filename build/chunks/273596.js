@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(746728),
   E = n(140700),
   O = n(665807),
-  I = n(188493),
-  y = n(294330),
+  y = n(188493),
+  I = n(294330),
   v = n(981631),
   C = n(984503);
 let S = Object.freeze({
@@ -59,9 +59,9 @@ function j(e) {
     searchCategoryId: A
   } = (0, b.f)({
     loadId: t
-  }), x = 0 === s.length && !h, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), V = i.useRef(null), B = i.useCallback(e => {
-    if (null != e && !x && !h) 336 * (s.length / M) <= e.height && j()
-  }, [x, h, s.length, M, j]), H = i.useCallback(e => {
+  }), Z = 0 === s.length && !h, x = i.useContext(d.AnalyticsContext), [L, w] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), V = i.useRef(null), B = i.useCallback(e => {
+    if (null != e && !Z && !h) 336 * (s.length / M) <= e.height && j()
+  }, [Z, h, s.length, M, j]), H = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
@@ -71,17 +71,17 @@ function j(e) {
     r !== G.current && (G.current = r, U(r)), B(t)
   }, [R, B]), F = (0, u.y)(H, [R, B]);
   i.useEffect(() => {
-    L((0, m.PM)())
+    w((0, m.PM)())
   }, [v]), i.useEffect(() => {
     P({
       loadId: t,
-      searchId: w,
+      searchId: L,
       query: v,
       guildResults: s.map(f.Z.getGuild).filter(p.lm),
-      analyticsContext: Z,
+      analyticsContext: x,
       categoryId: A
     })
-  }, [Z, s, t, A, w, v]);
+  }, [x, s, t, A, L, v]);
   let z = i.useCallback(e => n(e, A), [n, A]),
     W = i.useMemo(() => h ? [s.length, 0] : [s.length], [s.length, h]),
     Y = i.useCallback((e, n, i) => {
@@ -99,10 +99,10 @@ function j(e) {
               className: C.headingFilters,
               children: [(0, r.jsx)(E.Z, {
                 loadId: t
-              }), (0, r.jsx)(I.Z, {
+              }), (0, r.jsx)(y.Z, {
                 loadId: t
               })]
-            }), x && (0, r.jsx)(O.Z, {
+            }), Z && (0, r.jsx)(O.Z, {
               loadId: t
             })]
           }, i);
@@ -113,18 +113,18 @@ function j(e) {
             })
           }, i)
       }
-    }, [x, R, t]),
+    }, [Z, R, t]),
     K = i.useCallback(e => {
       switch (e) {
         case 0:
           let t = R ? 16 : 50;
-          return x ? t + 448 : t;
+          return Z ? t + 448 : t;
         case 1:
           return 120;
         default:
           throw Error("[getSectionHeight] Failed for section: ".concat(e))
       }
-    }, [x, R]),
+    }, [Z, R]),
     q = i.useCallback((e, t) => {
       switch (e) {
         case 0:
@@ -159,7 +159,7 @@ function j(e) {
         let e = s[t];
         return (0, r.jsx)("div", {
           style: n,
-          children: (0, r.jsx)(y.ZP, {
+          children: (0, r.jsx)(I.ZP, {
             guildId: e,
             onClick: async e => await X(e, t, A, T),
             onView: e => z(e)
@@ -227,7 +227,7 @@ function j(e) {
           className: C.sidebarContent,
           children: [(0, r.jsx)("div", {
             className: C.sidebarLanguageSelect,
-            children: (0, r.jsx)(I.Z, {
+            children: (0, r.jsx)(y.Z, {
               loadId: t
             })
           }), (0, r.jsx)(_.Z, {

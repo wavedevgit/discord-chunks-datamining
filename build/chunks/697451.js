@@ -19,12 +19,12 @@ var r = n(255367),
   _ = n(403404),
   b = n(100527),
   E = n(906732),
-  x = n(783097),
-  y = n(581364),
+  y = n(783097),
+  x = n(581364),
   v = n(592180),
   O = n(726033),
-  j = n(598077),
-  C = n(594174),
+  C = n(598077),
+  j = n(594174),
   S = n(768581),
   I = n(585483),
   N = n(55935),
@@ -102,8 +102,8 @@ function U(e, t, n, i, l, o) {
     showAvatarPopout: _,
     showTargetAvatarPopout: b,
     onClickAvatar: E,
-    onUserContextMenu: x,
-    onClickTargetAvatar: y,
+    onUserContextMenu: y,
+    onClickTargetAvatar: x,
     onTargetUserContextMenu: v,
     onPopoutRequestClose: O
   } = e;
@@ -114,12 +114,12 @@ function U(e, t, n, i, l, o) {
       className: k.commandIcon
     })
   });
-  let j = null != (u = S.ZP.getGuildMemberAvatarURL({
+  let C = null != (u = S.ZP.getGuildMemberAvatarURL({
       avatar: null != (s = i.guildMemberAvatar) ? s : void 0,
       userId: t.id,
       guildId: null != (c = null == f ? void 0 : f.guild_id) ? c : ""
     })) ? u : void 0,
-    C = () => (function(e) {
+    j = () => (function(e) {
       let {
         user: t,
         guildId: n,
@@ -144,9 +144,9 @@ function U(e, t, n, i, l, o) {
     })({
       user: t,
       guildId: f.guild_id,
-      guildAvatar: j,
-      onClick: 1 === n ? y : E,
-      onContextMenu: 1 === n ? v : x,
+      guildAvatar: C,
+      onClick: 1 === n ? x : E,
+      onContextMenu: 1 === n ? v : y,
       ref: o
     }),
     I = 1 === n ? b : _;
@@ -156,8 +156,8 @@ function U(e, t, n, i, l, o) {
     shouldShow: I,
     position: "right",
     onRequestClose: O,
-    children: C
-  }) : C()
+    children: j
+  }) : j()
 }
 
 function F(e, t, n, i, l) {
@@ -212,7 +212,7 @@ function H(e) {
     {
       analyticsLocations: c
     } = (0, E.ZP)(b.Z.EXECUTED_COMMAND),
-    f = (0, d.e7)([C.default], () => C.default.getCurrentUser()),
+    f = (0, d.e7)([j.default], () => j.default.getCurrentUser()),
     S = i.useRef(null),
     P = i.useRef(null),
     M = i.useMemo(() => (e, t, n) => (s()(null != t, "ExecutedCommand: user cannot be undefined"), s()(null != f, "ExecutedCommand: currentUser cannot be undefined"), s()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(O.Z, L(D({}, e), {
@@ -228,8 +228,8 @@ function H(e) {
       messageId: l.id,
       interactionData: l.interactionData
     }))), [o, l.id, l.interactionData]),
-    V = (0, y.t0)(l),
-    z = (null == V ? void 0 : V.type) === m.B8.APPLICATION_COMMAND && null != V.target_user ? new j.Z(V.target_user) : null,
+    V = (0, x.t0)(l),
+    z = (null == V ? void 0 : V.type) === m.B8.APPLICATION_COMMAND && null != V.target_user ? new C.Z(V.target_user) : null,
     W = (null == V ? void 0 : V.type) === m.B8.APPLICATION_COMMAND && null != l.messageReference && null != e.renderTargetMessage,
     K = (0, T.Sw)(null == (t = l.interaction) ? void 0 : t.user, o),
     Y = (0, T.Sw)(z, o),
@@ -302,7 +302,7 @@ function H(e) {
               children: c
             });
             {
-              let e = (0, x.XZ)(c);
+              let e = (0, y.XZ)(c);
               return (0, r.jsx)(p.P3F, L(D({}, i), {
                 tag: "span",
                 onClick: () => {

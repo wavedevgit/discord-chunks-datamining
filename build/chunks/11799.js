@@ -20,11 +20,11 @@ let p = e => {
       initialPageSize: f
     } = e, h = (0, i.e7)([u.Z], () => u.Z.shouldReload()), g = r.useRef(!1), [_, b] = r.useState(!1), {
       initialized: E,
-      loading: x,
-      items: y,
+      loading: y,
+      items: x,
       hasMore: v,
       cursor: O,
-      errored: j
+      errored: C
     } = (0, i.cj)([c.Z], () => ({
       initialized: c.Z.initialized,
       loading: c.Z.loading,
@@ -33,7 +33,7 @@ let p = e => {
       cursor: c.Z.cursor,
       errored: c.Z.errored
     })), {
-      roleFilter: C,
+      roleFilter: j,
       everyoneFilter: S
     } = (0, i.cj)([o.Z], () => ({
       everyoneFilter: o.Z.everyoneFilter,
@@ -44,38 +44,38 @@ let p = e => {
     }, [t, E]);
     let I = (0, a.Z)();
     r.useEffect(() => () => {
-      p ? !I() && (j || y.length > 100) && (0, s.jF)() : n && y.length > 100 && (0, s.jF)()
-    }, [n, y, p, I, j]), r.useEffect(() => {
+      p ? !I() && (C || x.length > 100) && (0, s.jF)() : n && x.length > 100 && (0, s.jF)()
+    }, [n, x, p, I, C]), r.useEffect(() => {
       let e = h && t;
       (!E || e) && (0, s.jk)({
         limit: null != f ? f : m ? 8 : 20,
         with_mentions: m,
-        roles_filter: C,
+        roles_filter: j,
         everyone_filter: S
       })
-    }, [E, h, t, m, C, S, f]);
+    }, [E, h, t, m, j, S, f]);
     let N = r.useCallback(async e => {
-      !g.current && E && v && null != O && (e || !j) && (g.current = !0, b(!0), await (0, s.jk)({
+      !g.current && E && v && null != O && (e || !C) && (g.current = !0, b(!0), await (0, s.jk)({
         after: O,
         with_mentions: m,
-        roles_filter: C,
+        roles_filter: j,
         everyone_filter: S,
         limit: m ? 8 : 20
       }, () => {
         g.current = !1
       }), b(!1))
-    }, [E, v, O, j, m, C, S]);
+    }, [E, v, O, C, m, j, S]);
     return {
       initialized: E,
-      loading: x,
-      items: y,
+      loading: y,
+      items: x,
       hasMore: v,
       loadMore: N,
       loadingMore: _,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = !0)
       },
-      errored: j
+      errored: C
     }
   },
   m = () => {

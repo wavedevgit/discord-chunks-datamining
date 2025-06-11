@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => L
+  Z: () => w
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(626135),
   E = n(70956),
   O = n(225559),
-  I = n(910436),
-  y = n(203028),
+  y = n(910436),
+  I = n(203028),
   v = n(358924),
   C = n(292140),
   S = n(525296),
@@ -30,17 +30,17 @@ var r = n(255367),
   P = n(46140),
   j = n(388032),
   A = n(370168);
-let x = 15 * E.Z.Millis.MINUTE,
-  Z = (0, S.Z)(function(e) {
+let Z = 15 * E.Z.Millis.MINUTE,
+  x = (0, S.Z)(function(e) {
     let {
       party: t,
       onUserContextMenu: n,
       onChannelContextMenu: l,
       quest: a
-    } = e, o = i.useRef(null), c = (0, r.jsx)(y.Z, {
+    } = e, o = i.useRef(null), c = (0, r.jsx)(I.Z, {
       party: t,
       onUserContextMenu: n
-    }), d = (0, r.jsx)(I.Z, {
+    }), d = (0, r.jsx)(y.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a
@@ -61,7 +61,7 @@ let x = 15 * E.Z.Millis.MINUTE,
         in_voice_channel: O,
         games_detected: e
       })
-    }, [m, b, E, O, f]), P = s()(S, x);
+    }, [m, b, E, O, f]), P = s()(S, Z);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -119,9 +119,9 @@ let x = 15 * E.Z.Millis.MINUTE,
       }
     }) : null
   }),
-  w = a().throttle(() => f._(), 3e5);
+  L = a().throttle(() => f._(), 3e5);
 
-function L() {
+function w() {
   let {
     nowPlayingCards: e,
     loaded: t,
@@ -136,7 +136,7 @@ function L() {
     currentUser: m.default.getCurrentUser()
   })), o = (0, c.e7)([p.Z], () => p.Z.quests);
   i.useEffect(() => (d.Z.wait(() => O.L()), () => d.Z.wait(() => O.v())), [null == a ? void 0 : a.id]), i.useEffect(() => {
-    n && !l && w()
+    n && !l && L()
   }, [n, l]);
   let s = i.useMemo(() => {
       let t = new Map,
@@ -157,7 +157,7 @@ function L() {
     let {
       party: t
     } = e;
-    return (0, r.jsx)(Z, {
+    return (0, r.jsx)(x, {
       party: t,
       quest: s.get(t.id)
     }, t.id)

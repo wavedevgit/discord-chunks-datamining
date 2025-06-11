@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => L
+  Z: () => w
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(475595),
   E = n(566078),
   O = n(602667),
-  I = n(65443),
-  y = n(611855),
+  y = n(65443),
+  I = n(611855),
   v = n(670638),
   C = n(667105),
   S = n(860151),
@@ -31,7 +31,7 @@ var r = n(255367),
   j = n(388032),
   A = n(396896);
 
-function x(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function x(e) {
   return e
 }
 
-function Z(e) {
+function x(e) {
   var t;
   let {
     quest: n
@@ -82,12 +82,12 @@ function Z(e) {
   })
 }
 
-function w(e) {
+function L(e) {
   var t, n, l, c;
   let {
     nodeRef: _,
     quest: E
-  } = e, O = (0, u.O5)(), P = (0, o.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), w = (0, o.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), [L, R] = i.useState(!1), D = i.useCallback(() => R(!0), []), k = i.useCallback(() => R(!1), []), M = (0, b.up)(T.dr.ACTIVITY_PANEL), U = i.useCallback(e => {
+  } = e, O = (0, u.O5)(), P = (0, o.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), L = (0, o.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), [w, R] = i.useState(!1), D = i.useCallback(() => R(!0), []), k = i.useCallback(() => R(!1), []), M = (0, b.up)(T.dr.ACTIVITY_PANEL), U = i.useCallback(e => {
     e.stopPropagation()
   }, []), G = i.useCallback(() => {
     (0, d.AH)(E.id, {
@@ -123,7 +123,7 @@ function w(e) {
   }), X = (0, m.j)({
     location: T.dr.QUESTS_BAR_MOBILE
   });
-  return K || F || Y || w ? null : (0, r.jsxs)("div", {
+  return K || F || Y || L ? null : (0, r.jsxs)("div", {
     ref: e => {
       _.current = e
     },
@@ -138,16 +138,16 @@ function w(e) {
     onMouseLeave: k,
     children: [(0, r.jsxs)("div", {
       className: A.utils,
-      children: [z ? (0, r.jsx)(Z, {
+      children: [z ? (0, r.jsx)(x, {
         quest: E
-      }) : (0, r.jsx)(y.Z, {}), (0, r.jsx)(v.r, {
+      }) : (0, r.jsx)(I.Z, {}), (0, r.jsx)(v.r, {
         quest: E,
         questContent: f.jn.ACTIVITY_PANEL,
         shouldShowDisclosure: (null == (c = E.userStatus) ? void 0 : c.enrolledAt) == null,
         showShareLink: !0,
         children: e => {
           var t, n;
-          return (0, r.jsx)(s.P3F, (t = x({}, e), n = n = {
+          return (0, r.jsx)(s.P3F, (t = Z({}, e), n = n = {
             "aria-label": j.intl.string(j.t.DEoVWV),
             children: (0, r.jsx)(s.xhG, {
               size: "md",
@@ -167,7 +167,7 @@ function w(e) {
         }
       })]
     }), !z && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(Z, {
+      children: [(0, r.jsx)(x, {
         quest: E
       }), (0, r.jsxs)("div", {
         className: A.instructions,
@@ -175,14 +175,14 @@ function w(e) {
           variant: "text-sm/normal",
           color: "text-normal",
           children: Q
-        }), X && (0, r.jsx)(I.Z, {
+        }), X && (0, r.jsx)(y.Z, {
           quest: E,
           textColor: "text-muted",
           withRewardName: !0
         })]
       })]
     }), z && !W && (0, r.jsx)(S.Z, {
-      autoplay: L,
+      autoplay: w,
       className: A.rewardTileWithInstructions,
       quest: E,
       questContent: f.jn.ACTIVITY_PANEL,
@@ -225,11 +225,11 @@ function w(e) {
     })]
   })
 }
-let L = function(e) {
+let w = function(e) {
   return (0, r.jsx)(O.A, {
     questOrQuests: e.quest,
     questContent: f.jn.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(w, x({
+    children: t => (0, r.jsx)(L, Z({
       nodeRef: t
     }, e))
   })

@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(381416),
   E = n(523924),
   O = n(390500),
-  I = n(981631),
-  y = n(898625),
+  y = n(981631),
+  I = n(898625),
   v = n(388032),
   C = n(74816);
 
@@ -60,7 +60,7 @@ let N = e => {
     ref: n,
     width: s,
     height: c
-  } = (0, o.ZP)(), [p, h] = i.useState(y.hO.INITIAL), N = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), T = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
+  } = (0, o.ZP)(), [p, h] = i.useState(I.hO.INITIAL), N = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), T = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: P,
     guildPreviewDisabled: j
   } = (0, l.cj)([b.Z], () => ({
@@ -68,14 +68,14 @@ let N = e => {
     guildPreviewDisabled: b.Z.getJoinRequestGuild(t)
   }));
   i.useEffect(() => {
-    null != T && (0, u.uL)(I.Z5c.CHANNEL(t))
+    null != T && (0, u.uL)(y.Z5c.CHANNEL(t))
   }, [T, t]), i.useEffect(() => {
     P || f.Z.fetchRequestToJoinGuilds()
   }, [P]);
   let A = i.useCallback(() => {
-      h(Math.max(p, y.hO.FILLING)), f.Z.removeGuildJoinRequest(t), (0, u.uL)(I.Z5c.ME)
+      h(Math.max(p, I.hO.FILLING)), f.Z.removeGuildJoinRequest(t), (0, u.uL)(y.Z5c.ME)
     }, [t, p]),
-    x = (e, t) => () => {
+    Z = (e, t) => () => {
       (0, a.h7j)(n => {
         var i, l;
         return (0, r.jsx)(a.ConfirmModal, (i = function(e) {
@@ -119,11 +119,11 @@ let N = e => {
         }), i))
       })
     },
-    Z = async () => {
+    x = async () => {
       await f.Z.resetGuildJoinRequest(t), (0, g.hk)(t)
-    }, w = x(v.intl.format(v.t["9ZezpK"], {
+    }, L = Z(v.intl.format(v.t["9ZezpK"], {
       name: null == j ? void 0 : j.name
-    }), A), L = x(v.intl.format(v.t.fJwWVl, {
+    }), A), w = Z(v.intl.format(v.t.fJwWVl, {
       name: null == j ? void 0 : j.name
     }), A);
   return (0, r.jsxs)("div", {
@@ -140,21 +140,21 @@ let N = e => {
         switch (N.applicationStatus) {
           case m.wB.SUBMITTED:
             return (0, r.jsx)(O.Z, {
-              onWithdrawApplication: w,
+              onWithdrawApplication: L,
               guild: j
             });
           case m.wB.REJECTED:
             return (0, r.jsx)(E.Z, {
               reapplyText: v.intl.string(v.t.I1LYVl),
-              onReapply: Z,
+              onReapply: x,
               confirmText: v.intl.string(v.t.g9tK0t),
-              onWithdrawApplication: w,
+              onWithdrawApplication: L,
               rejectionReason: N.rejectionReason,
               guild: j
             });
           default:
             return (0, r.jsx)(_.s, {
-              onDiscardApplication: L,
+              onDiscardApplication: w,
               onContinueApplication: () => (0, g.hk)(t),
               guild: j
             })

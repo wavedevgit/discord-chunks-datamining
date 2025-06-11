@@ -26,8 +26,8 @@ function _(e) {
     badgeState: b,
     closePopout: E
   } = e, {
-    enabled: x,
-    inInbox: y
+    enabled: y,
+    inInbox: x
   } = d.Z.useExperiment({
     location: "RecentsPopout"
   }), v = (0, m.Us)({
@@ -36,7 +36,7 @@ function _(e) {
     enabled: O
   } = u.Z.useExperiment({
     location: "RecentsHeader"
-  }), j = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), C = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
+  }), C = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), j = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
   return (0, r.jsxs)(o.h4, {
     className: g.header,
     children: [(0, r.jsxs)("div", {
@@ -85,16 +85,16 @@ function _(e) {
           "aria-label": "game_invites",
           id: l.X.GAME_INVITES,
           className: g.tab,
-          children: [h.intl.string(h.t.apq3cX), j > 0 ? (0, r.jsx)(a.fWl, {
+          children: [h.intl.string(h.t.apq3cX), C > 0 ? (0, r.jsx)(a.fWl, {
             color: s.Z.STATUS_DANGER,
             className: g.iconBadge
           }) : null]
-        }) : null, x && y ? (0, r.jsx)(a.njP.Item, {
+        }) : null, y && x ? (0, r.jsx)(a.njP.Item, {
           "aria-label": h.intl.string(h.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
           className: g.tab,
-          children: 0 === C ? h.intl.string(h.t["2pAkDA"]) : h.intl.formatToPlainString(h.t.I4fryM, {
-            count: C
+          children: 0 === j ? h.intl.string(h.t["2pAkDA"]) : h.intl.formatToPlainString(h.t.I4fryM, {
+            count: j
           })
         }) : null, v ? (0, r.jsx)(a.njP.Item, {
           "aria-label": "scheduled",

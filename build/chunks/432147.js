@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 });
 var r = n(255367);
 n(73800);
@@ -21,19 +21,19 @@ var i = n(120356),
   b = n(388032),
   E = n(955344);
 
-function x(e) {
+function y(e) {
   let {
     message: t,
     compact: n
   } = e, i = (0, a.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
-  return null == i ? null : (0, r.jsx)(y, {
+  return null == i ? null : (0, r.jsx)(x, {
     channel: i,
     compact: n,
     isSystemMessage: (0, c.Z)(t)
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     channel: t,
     compact: i,
@@ -59,7 +59,7 @@ function y(e) {
         children: (0, f.Ye)(l)
       })]
     })
-  }(t), x = null != u && u > 0;
+  }(t), y = null != u && u > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: l()(E.spine, {
@@ -117,7 +117,7 @@ function y(e) {
             children: t.name
           }), (0, r.jsx)("span", {
             className: E.cta,
-            "aria-hidden": !x,
+            "aria-hidden": !y,
             children: (0, p.WE)(u, t.id)
           })]
         }), (0, r.jsx)(o.Text, {

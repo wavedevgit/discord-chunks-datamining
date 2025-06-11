@@ -83,15 +83,15 @@ let g = ["349134787773988865"],
         E > 0 && (p.flags = E), delete p.instance, null == (t = p.party) || delete t.privacy;
         let {
           assets: O,
-          party: I,
-          secrets: y,
+          party: y,
+          secrets: I,
           timestamps: v,
           buttons: C,
           type: S
         } = p;
-        if (null == S && (p.type = f.IIU.PLAYING), null != y) {
-          let e = i().values(y).filter(e => !!e);
-          if (null != I && i().intersection(e, [I.id]).length > 0 && !g.includes(r.application.id)) throw new d.Z({
+        if (null == S && (p.type = f.IIU.PLAYING), null != I) {
+          let e = i().values(I).filter(e => !!e);
+          if (null != y && i().intersection(e, [y.id]).length > 0 && !g.includes(r.application.id)) throw new d.Z({
             errorCode: f.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot match the party id");
           if (i().uniq(e).length < e.length) throw new d.Z({

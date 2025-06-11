@@ -26,8 +26,8 @@ let f = (0, o.debounce)(c.ZP.trackWithMetadata, 500),
       imageMarginTop: _,
       trackingSource: E,
       undismissable: O,
-      onDismissed: I,
-      onClick: y,
+      onDismissed: y,
+      onClick: I,
       cta: v,
       ctaColor: C,
       centerText: S,
@@ -48,7 +48,7 @@ let f = (0, o.debounce)(c.ZP.trackWithMetadata, 500),
           source: E,
           guild_id: t.id,
           notice_type: g
-        }), null == y || y()
+        }), null == I || I()
       },
       fullWidth: !0,
       color: C,
@@ -81,7 +81,7 @@ let f = (0, o.debounce)(c.ZP.trackWithMetadata, 500),
         onClick: () => {
           c.ZP.trackWithMetadata(d.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: g
-          }), null == I || I()
+          }), null == y || y()
         },
         className: h.close,
         "aria-label": p.intl.string(p.t.WAI6xs),

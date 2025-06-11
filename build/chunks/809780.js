@@ -20,12 +20,12 @@ var r, i, l = n(73800),
   _ = n(220444),
   b = n(601070),
   E = n(344185),
-  x = n(569471),
-  y = n(723170),
+  y = n(569471),
+  x = n(723170),
   v = n(675478),
   O = n(581883),
-  j = n(131704),
-  C = n(592125),
+  C = n(131704),
+  j = n(592125),
   S = n(984933),
   I = n(731290),
   N = n(430824),
@@ -246,7 +246,7 @@ class z extends a.EventEmitter {
         channels: e
       })
     }, this.handleJoinedThreadsStoreChange = () => {
-      let e = this.state.channels.filter(e => !x.Z.isMuted(e.channelId));
+      let e = this.state.channels.filter(e => !y.Z.isMuted(e.channelId));
       e.length !== this.state.channels.length && this.setState({
         channels: e
       })
@@ -294,14 +294,14 @@ function K() {
         r = null != (t = null == (e = O.Z.settings.guilds) ? void 0 : e.guilds) ? t : {};
       for (let e in r)
         for (let t in r[e].channels) {
-          let i = C.Z.getChannel(t);
+          let i = j.Z.getChannel(t);
           t in n && (null == i ? void 0 : i.guild_id) !== e || (n[t] = r[e].channels[t].collapsedInInbox)
         }
       return n
     }(),
     t = function(e) {
       let t = [];
-      return C.Z.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), w.ZP.getFlattenedGuildIds().forEach(n => {
+      return j.Z.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), w.ZP.getFlattenedGuildIds().forEach(n => {
         if (null == n) return;
         let r = S.ZP.getSelectableChannelIds(n),
           i = b.Z.getActiveJoinedUnreadThreadsForGuild(n);
@@ -327,8 +327,8 @@ function K() {
 
 function Y(e, t, n, r) {
   if (null == r) return;
-  let i = C.Z.getChannel(r);
-  if (null == i || !j.Ec.has(i.type) && Z.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
+  let i = j.Z.getChannel(r);
+  if (null == i || !C.Ec.has(i.type) && Z.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
   if (i.isPrivate()) {
     if (0 === A.ZP.getMentionCount(r)) return
   } else if (!(0, _.d)(i) && 0 === A.ZP.getMentionCount(r)) return;
@@ -358,7 +358,7 @@ function Y(e, t, n, r) {
     hasMentionsOrUnreads: c,
     mentionCount: s,
     sortOrder: function(e, t, n) {
-      let r = C.Z.getChannel(t);
+      let r = j.Z.getChannel(t);
       if (h.Z.isFavorite(t)) return 0;
       if (r.isPrivate()) return 1;
       if (A.ZP.getMentionCount(t) > 0) return A.ZP.getIsMentionLowImportance(t) ? 3 : 2;
@@ -368,7 +368,7 @@ function Y(e, t, n, r) {
         if (Date.now() - e > X) return 6
       }
       if (r.isThread()) {
-        let e = (0, y.J)(r);
+        let e = (0, x.J)(r);
         return e === M.iN.ALL_MESSAGES ? 4 : e === M.iN.NO_MESSAGES ? 7 : 5
       } {
         let n = Z.ZP.getChannelMessageNotifications(e, t),
@@ -408,5 +408,5 @@ function Q(e) {
     c.current = t
   }), l.useLayoutEffect(() => {
     null == o || o.channels, null == o || o.loadState, c.current.maybeLoadMore()
-  }, [null == o ? void 0 : o.channels, null == o ? void 0 : o.loadState]), l.useEffect(() => (T.Z.addChangeListener(t.reloadMessages), () => T.Z.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), l.useEffect(() => (Z.ZP.addChangeListener(t.handleUserGuildSettingsStoreChange), () => Z.ZP.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), l.useEffect(() => (x.Z.addChangeListener(t.handleJoinedThreadsStoreChange), () => x.Z.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), l.useEffect(() => (E.Z.addChangeListener(t.handleActiveThreadsStoreChange), () => E.Z.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [o, t]
+  }, [null == o ? void 0 : o.channels, null == o ? void 0 : o.loadState]), l.useEffect(() => (T.Z.addChangeListener(t.reloadMessages), () => T.Z.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), l.useEffect(() => (Z.ZP.addChangeListener(t.handleUserGuildSettingsStoreChange), () => Z.ZP.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), l.useEffect(() => (y.Z.addChangeListener(t.handleJoinedThreadsStoreChange), () => y.Z.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), l.useEffect(() => (E.Z.addChangeListener(t.handleActiveThreadsStoreChange), () => E.Z.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [o, t]
 }

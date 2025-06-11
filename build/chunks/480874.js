@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(488634),
   E = n(110287),
   O = n(355350),
-  I = n(948247),
-  y = n(125855),
+  y = n(948247),
+  I = n(125855),
   v = n(687683),
   C = n(981631),
   S = n(388032),
@@ -41,13 +41,13 @@ function T() {
       (0, c.showToast)((0, c.createToast)(S.intl.string(S.t.EDYbS0), c.ToastType.FAILURE))
     }, []),
     {
-      rejectAll: x
+      rejectAll: Z
     } = (0, b.m)({
       onError: A
     }),
-    Z = i.useCallback(() => {
-      x(t.map(e => e.channel.id))
-    }, [t, x]);
+    x = i.useCallback(() => {
+      Z(t.map(e => e.channel.id))
+    }, [t, Z]);
   (0, d.ZP)(() => {
     g.default.track(C.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: n
@@ -55,12 +55,12 @@ function T() {
       name: s.V.SPAM_MESSAGE_REQUEST_VIEW
     })
   });
-  let w = i.useCallback(e => {
+  let L = i.useCallback(e => {
       var n, i;
       let {
         row: o
       } = e, s = t[o], c = null == (i = t[o + 1]) || null == (n = i.channel) ? void 0 : n.id, u = s.channel.id;
-      return (0, r.jsx)(y.Z, {
+      return (0, r.jsx)(I.Z, {
         index: o,
         className: a()({
           [N.selected]: null != j && j === u,
@@ -71,7 +71,7 @@ function T() {
         hasSingleMessageRequest: l
       }, u)
     }, [t, l, j]),
-    L = i.useCallback(() => (0, r.jsxs)(h.Z, {
+    w = i.useCallback(() => (0, r.jsxs)(h.Z, {
       className: N.sectionTitle,
       children: [S.intl.format(S.t.C79Edn, {
         count: n
@@ -83,7 +83,7 @@ function T() {
           tag: "span",
           children: "•"
         }), (0, r.jsx)(c.zxk, {
-          onClick: Z,
+          onClick: x,
           look: c.iLD.LINK,
           color: c.Ttl.LINK,
           size: c.PhG.SMALL,
@@ -92,8 +92,8 @@ function T() {
           children: S.intl.string(S.t.p6t7RE)
         })]
       }) : null]
-    }, "message-requests-spam-title"), [n, Z, T]);
-  return 0 === t.length ? (0, r.jsx)(I.Z, {
+    }, "message-requests-spam-title"), [n, x, T]);
+  return 0 === t.length ? (0, r.jsx)(y.Z, {
     section: v.pS.SPAM
   }) : (0, r.jsx)(o.bG, {
     navigator: P,
@@ -146,8 +146,8 @@ function T() {
           paddingBottom: 24,
           sectionHeight: v.oi,
           rowHeight: v.WN,
-          renderSection: L,
-          renderRow: w,
+          renderSection: w,
+          renderRow: L,
           sections: [t.length],
           chunkSize: 30,
           fade: !0

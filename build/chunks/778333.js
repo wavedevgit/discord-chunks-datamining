@@ -24,10 +24,10 @@ function E(e) {
   let {
     invite: n,
     message: E,
-    getAcceptInviteContext: x
-  } = e, y = (0, l.e7)([p.default], () => p.default.getId()), v = (null == (t = n.inviter) ? void 0 : t.id) === y, O = n.state === g.r2o.ACCEPTING, {
-    analyticsLocations: j
-  } = (0, c.ZP)(s.Z.INVITE_EMBED), C = (0, l.e7)([f.Z], () => {
+    getAcceptInviteContext: y
+  } = e, x = (0, l.e7)([p.default], () => p.default.getId()), v = (null == (t = n.inviter) ? void 0 : t.id) === x, O = n.state === g.r2o.ACCEPTING, {
+    analyticsLocations: C
+  } = (0, c.ZP)(s.Z.INVITE_EMBED), j = (0, l.e7)([f.Z], () => {
     var e;
     return null != n.inviter && f.Z.isFriend(null == (e = n.inviter) ? void 0 : e.id)
   }), S = i.useCallback(() => {
@@ -39,25 +39,25 @@ function E(e) {
       action: e,
       inviter_id: E.author.id,
       invite_message_id: E.id
-    }, j)
-  }, [n, E, j]), I = i.useCallback(() => {
+    }, C)
+  }, [n, E, C]), I = i.useCallback(() => {
     (0, o.r$)({
       invite: n,
       action: "accept",
       inviter_id: E.author.id,
       invite_message_id: E.id
-    }, j);
-    let e = x("Invite Button Embed");
+    }, C);
+    let e = y("Invite Button Embed");
     o.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, E, j, x]);
+  }, [n, E, C, y]);
   if (null == n.inviter) return null;
-  let N = C ? S : I,
+  let N = j ? S : I,
     T = _.intl.string(_.t.ib7Ng4),
     P = u.Z.Button.Colors.GREEN;
-  C ? (T = _.intl.string(_.t.xhxnPj), P = u.Z.Button.Colors.PRIMARY) : v && (T = _.intl.string(_.t.ib7Ng4), P = u.Z.Button.Colors.PRIMARY);
+  j ? (T = _.intl.string(_.t.xhxnPj), P = u.Z.Button.Colors.PRIMARY) : v && (T = _.intl.string(_.t.ib7Ng4), P = u.Z.Button.Colors.PRIMARY);
   let A = v ? _.intl.string(_.t.eQyu1N) : _.intl.string(_.t.PYJHW1),
     w = null != n.inviter ? "".concat(n.inviter.username) : "",
     Z = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
@@ -69,10 +69,10 @@ function E(e) {
         className: b.headerLine,
         children: [(0, r.jsx)(u.Z.Icon, {
           user: new d.Z(n.inviter),
-          onClick: C ? N : void 0
+          onClick: j ? N : void 0
         }), (0, r.jsx)(u.Z.Info, {
           title: w,
-          onClick: C ? N : void 0,
+          onClick: j ? N : void 0,
           children: Z
         })]
       }), (0, r.jsx)(u.Z.Button, {

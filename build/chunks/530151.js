@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(112724),
   E = n(812206),
   O = n(44315),
-  I = n(600164),
-  y = n(167533),
+  y = n(600164),
+  I = n(167533),
   v = n(925329),
   C = n(707409),
   S = n(210887),
@@ -30,10 +30,10 @@ var r = n(255367),
   P = n(941128),
   j = n(451478),
   A = n(424218),
-  x = n(780570),
-  Z = n(353042),
-  w = n(86826),
-  L = n(981631),
+  Z = n(780570),
+  x = n(353042),
+  L = n(86826),
+  w = n(981631),
   R = n(388032),
   D = n(292926);
 
@@ -91,10 +91,10 @@ let M = e => {
 
 function V(e, t) {
   switch (t) {
-    case L.f07.POST_INSTALL_SCRIPTS:
-    case L.f07.PLANNING:
-    case L.f07.FINALIZING:
-    case L.f07.ALLOCATING_DISK:
+    case w.f07.POST_INSTALL_SCRIPTS:
+    case w.f07.PLANNING:
+    case w.f07.FINALIZING:
+    case w.f07.ALLOCATING_DISK:
       return "".concat(e);
     default:
       return (0, A.BU)(e, {
@@ -103,7 +103,7 @@ function V(e, t) {
   }
 }
 let B = {
-  [L.vxO.INSTALLING]: {
+  [w.vxO.INSTALLING]: {
     [C.J6.NONE]: (e, t, n, r) => R.intl.formatToPlainString(R.t.JfJt9f, {
       percent: e,
       progress: t,
@@ -128,7 +128,7 @@ let B = {
       timeRemaining: r
     })
   },
-  [L.vxO.UPDATING]: {
+  [w.vxO.UPDATING]: {
     [C.J6.NONE]: (e, t, n, r) => R.intl.formatToPlainString(R.t.JsqXXF, {
       percent: e,
       progress: t,
@@ -153,7 +153,7 @@ let B = {
       timeRemaining: r
     })
   },
-  [L.vxO.REPAIRING]: {
+  [w.vxO.REPAIRING]: {
     [C.J6.NONE]: (e, t, n, r) => R.intl.formatToPlainString(R.t.JfJt9f, {
       percent: e,
       progress: t,
@@ -204,47 +204,47 @@ function F(e) {
     secondsRemaining: a
   } = e, o = V(l, n), s = V(i, n);
   switch (n) {
-    case L.f07.QUEUED:
+    case w.f07.QUEUED:
       if (0 === i) return R.intl.string(R.t.RpfBqa);
       return R.intl.formatToPlainString(R.t.uNjCXV, {
         percent: r,
         progress: s,
         total: o
       });
-    case L.f07.PLANNING:
+    case w.f07.PLANNING:
       return R.intl.formatToPlainString(R.t.sfuCUV, {
         percent: r
       });
-    case L.f07.ALLOCATING_DISK:
+    case w.f07.ALLOCATING_DISK:
       return R.intl.formatToPlainString(R.t.XigoJy, {
         percent: r
       });
-    case L.f07.PATCHING:
+    case w.f07.PATCHING:
       return H(a, t, r, s, o);
-    case L.f07.FINALIZING:
+    case w.f07.FINALIZING:
       return R.intl.formatToPlainString(R.t["6PHDUF"], {
         percent: r
       });
-    case L.f07.PAUSING:
+    case w.f07.PAUSING:
       return R.intl.formatToPlainString(R.t.vjxhWl, {
         percent: r,
         progress: s,
         total: o
       });
-    case L.f07.VERIFYING:
+    case w.f07.VERIFYING:
       return R.intl.formatToPlainString(R.t.bbilvr, {
         percent: r,
         progress: s,
         total: o
       });
-    case L.f07.POST_INSTALL_SCRIPTS:
+    case w.f07.POST_INSTALL_SCRIPTS:
       return R.intl.formatToPlainString(R.t.c5vRUl, {
         percent: r,
         progress: s,
         total: o
       });
-    case L.f07.REPAIRING:
-      if (t === L.vxO.REPAIRING) return H(a, t, r, s, o);
+    case w.f07.REPAIRING:
+      if (t === w.vxO.REPAIRING) return H(a, t, r, s, o);
       return R.intl.formatToPlainString(R.t.OCzETU, {
         percent: r,
         progress: s,
@@ -267,8 +267,8 @@ class z extends i.PureComponent {
       foregroundGradientColor: i,
       message: l
     } = e;
-    return (0, r.jsxs)(I.Z, {
-      direction: I.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(y.Z, {
+      direction: y.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(p.Exd, {
         percent: t,
         size: p.Exd.Sizes.SMALL,
@@ -286,8 +286,8 @@ class z extends i.PureComponent {
       percents: t,
       message: n
     } = e;
-    return (0, r.jsxs)(I.Z, {
-      direction: I.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(y.Z, {
+      direction: y.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(p.yGy, {
         percents: t,
         size: p.yGy.Sizes.SMALL,
@@ -307,7 +307,7 @@ class z extends i.PureComponent {
       message: R.intl.format(R.t.z1oxGB, {
         remove: () => g.wi(e.applicationId, e.branchId)
       }),
-      foregroundColor: (0, d.ap)(e.theme) ? L.Ilk.PRIMARY_300 : L.Ilk.PRIMARY_500,
+      foregroundColor: (0, d.ap)(e.theme) ? w.Ilk.PRIMARY_300 : w.Ilk.PRIMARY_500,
       percent: 100
     })
   }
@@ -327,8 +327,8 @@ class z extends i.PureComponent {
       if (null != r && null != i) {
         let n = V(i, l),
           a = V(r, l),
-          o = Math.floor(t = x.xI(r, i));
-        e = l === L.f07.PAUSING ? R.intl.formatToPlainString(R.t.vjxhWl, {
+          o = Math.floor(t = Z.xI(r, i));
+        e = l === w.f07.PAUSING ? R.intl.formatToPlainString(R.t.vjxhWl, {
           percent: o,
           progress: a,
           total: n
@@ -341,7 +341,7 @@ class z extends i.PureComponent {
     }
     return (null == t || null == e) && (t = 0, e = R.intl.string(R.t["qS+iKS"])), this.renderBody({
       percent: t,
-      foregroundColor: (0, d.ap)(r) ? L.Ilk.PRIMARY_300 : L.Ilk.PRIMARY_500,
+      foregroundColor: (0, d.ap)(r) ? w.Ilk.PRIMARY_300 : w.Ilk.PRIMARY_500,
       message: e
     })
   }
@@ -358,7 +358,7 @@ class z extends i.PureComponent {
       total: r
     } = e;
     if (null == n || null == r) return null;
-    let i = x.xI(n, r),
+    let i = Z.xI(n, r),
       l = Math.floor(i),
       a = 0 === n && 1 === r ? R.intl.string(R.t["+pfsFR"]) : R.intl.formatToPlainString(R.t["+feX8f"], {
         percent: l,
@@ -367,12 +367,12 @@ class z extends i.PureComponent {
       });
     return this.renderBody({
       message: a,
-      foregroundColor: (0, d.ap)(t) ? L.Ilk.PRIMARY_300 : L.Ilk.PRIMARY_500,
+      foregroundColor: (0, d.ap)(t) ? w.Ilk.PRIMARY_300 : w.Ilk.PRIMARY_500,
       percent: i
     })
   }
   renderProgressPatching() {
-    return (0, r.jsx)(Z.Z, {
+    return (0, r.jsx)(x.Z, {
       getHistoricalTotalBytes: T.Z.getHistoricalTotalBytesWritten,
       updateInterval: 5e3,
       children: this.renderProgressPatchingBody
@@ -390,7 +390,7 @@ class z extends i.PureComponent {
       type: i
     } = e;
     if (null == t || null == n || null == r) return null;
-    let l = x.xI(n, t),
+    let l = Z.xI(n, t),
       a = Math.floor(l);
     return this.renderBody({
       percent: l,
@@ -401,7 +401,7 @@ class z extends i.PureComponent {
         progress: n,
         total: t
       }),
-      foregroundColor: L.Ilk.BLUE_345
+      foregroundColor: w.Ilk.BLUE_345
     })
   }
   renderProgress() {
@@ -409,8 +409,8 @@ class z extends i.PureComponent {
       state: e
     } = this.props.item;
     switch (null != e ? e.stage : null) {
-      case L.f07.PATCHING:
-      case L.f07.REPAIRING:
+      case w.f07.PATCHING:
+      case w.f07.REPAIRING:
         return this.renderProgressPatching();
       default:
         return this.renderProgressDefault()
@@ -423,7 +423,7 @@ class z extends i.PureComponent {
     } = this.props;
     if (e.finished) return this.renderFinished();
     if (e.index > 0) return this.renderQueued();
-    if (null != e.state && (e.state.type === L.vxO.UPDATING || e.state.type === L.vxO.REPAIRING || e.state.type === L.vxO.INSTALLING))
+    if (null != e.state && (e.state.type === w.vxO.UPDATING || e.state.type === w.vxO.REPAIRING || e.state.type === w.vxO.INSTALLING))
       if (null != t && t.paused) return this.renderPaused();
       else return this.renderProgress();
     return null
@@ -444,8 +444,8 @@ class z extends i.PureComponent {
         readerProgress: o
       } = n;
       if (null == i || null == l || null == r) return null;
-      let s = x.xI(i, l),
-        c = x.xI(null != o ? o : 0, l),
+      let s = Z.xI(i, l),
+        c = Z.xI(null != o ? o : 0, l),
         u = e[e.length - 1] / t * 1e3,
         d = l - i,
         p = F({
@@ -496,8 +496,8 @@ let W = () => (0, r.jsx)(G, {
   Q = [{
     key: "name",
     cellClassName: D.nameCell,
-    render: e => (0, r.jsxs)(I.Z, {
-      align: I.Z.Align.CENTER,
+    render: e => (0, r.jsxs)(y.Z, {
+      align: y.Z.Align.CENTER,
       children: [(0, r.jsx)(v.Z, {
         game: e.application,
         className: D.__invalid_gameIcon,
@@ -525,8 +525,8 @@ let W = () => (0, r.jsx)(G, {
         libraryApplication: e.libraryApplication,
         size: p.zxk.Sizes.SMALL,
         className: D.gameActionButton,
-        source: L.Sbl.APPLICATION_LIBRARY_UPDATES
-      }) : null : null != e.state ? e.state.type !== L.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(K, {
+        source: w.Sbl.APPLICATION_LIBRARY_UPDATES
+      }) : null : null != e.state ? e.state.type !== w.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(K, {
         item: e
       }) : null != t && t.paused ? (0, r.jsx)(W, {}) : (0, r.jsx)(Y, {
         item: e
@@ -534,8 +534,8 @@ let W = () => (0, r.jsx)(G, {
         item: e
       })) : i = (0, r.jsx)(q, {
         item: e
-      }), (0, r.jsxs)(I.Z, {
-        justify: I.Z.Justify.END,
+      }), (0, r.jsxs)(y.Z, {
+        justify: y.Z.Justify.END,
         children: [n, i]
       })
     }
@@ -569,20 +569,20 @@ class X extends i.PureComponent {
       className: D.gameUpdates,
       children: [(0, r.jsxs)("div", {
         className: D.headerRow,
-        children: [(0, r.jsx)(w.Z, {
+        children: [(0, r.jsx)(L.Z, {
           className: a()(D.headerCell, D.networkProgress),
           title: R.intl.string(R.t.ytoXKi),
           getHistoricalTotalBytes: T.Z.getHistoricalTotalBytesDownloaded,
-          color: L.Ilk.GREEN_360,
+          color: w.Ilk.GREEN_360,
           animate: i
-        }), (0, r.jsx)(w.Z, {
+        }), (0, r.jsx)(L.Z, {
           className: a()(D.headerCell, D.diskProgress),
           title: R.intl.string(R.t.SjohhI),
           getHistoricalTotalBytes: T.Z.getHistoricalTotalBytesWritten,
-          color: L.Ilk.BLUE_345,
+          color: w.Ilk.BLUE_345,
           animate: i
         })]
-      }), (0, r.jsx)(y.Z, {
+      }), (0, r.jsx)(I.Z, {
         hasHeader: !1,
         columns: Q,
         data: e,

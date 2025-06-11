@@ -16,12 +16,12 @@ var r, i, l, a = n(392711),
   _ = n(580130),
   b = n(55563),
   E = n(981631);
-let x = "DetectedOffPlatformPremiumPerksStore",
-  y = {},
+let y = "DetectedOffPlatformPremiumPerksStore",
+  x = {},
   v = {},
   O = [];
 
-function j() {
+function C() {
   let e = !1;
   for (let {
       skuId: t,
@@ -39,42 +39,42 @@ function j() {
       b.Z.isFetching(t) || b.Z.didFetchingSkuFail(t) || p.$N(r.id, t);
       continue
     }
-    _.Z.applicationIdsFetching.has(r.id) || _.Z.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != y[t] && (delete y[t], e = !0) : (y[t] = {
+    _.Z.applicationIdsFetching.has(r.id) || _.Z.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != x[t] && (delete x[t], e = !0) : (x[t] = {
       skuId: t,
       applicationId: n
     }, e = !0)
   }
   return e
 }
-class C extends(r = s.ZP.Store) {
+class j extends(r = s.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(h.ZP, b.Z, _.Z), O = null != (e = c.K.get(x)) ? e : O
+    this.waitFor(h.ZP, b.Z, _.Z), O = null != (e = c.K.get(y)) ? e : O
   }
   getDetectedOffPlatformPremiumPerks() {
-    return o().values(y)
+    return o().values(x)
   }
 }
-l = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in C ? Object.defineProperty(C, i, {
+l = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in j ? Object.defineProperty(j, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : C[i] = l;
-let S = new C(u.Z, {
+}) : j[i] = l;
+let S = new j(u.Z, {
   LOGOUT: function() {
-    y = {}, v = {}
+    x = {}, v = {}
   },
-  SKU_FETCH_SUCCESS: j,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: j,
-  ENTITLEMENT_CREATE: j,
-  APPLICATION_FETCH_SUCCESS: j,
+  SKU_FETCH_SUCCESS: C,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: C,
+  ENTITLEMENT_CREATE: C,
+  APPLICATION_FETCH_SUCCESS: C,
   DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: function(e) {
     let {
       skuId: t
     } = e;
-    if (delete y[t], O.includes(t)) return !1;
-    O.push(t), c.K.set(x, O)
+    if (delete x[t], O.includes(t)) return !1;
+    O.push(t), c.K.set(y, O)
   },
   RUNNING_GAMES_CHANGE: function() {
     let e = !1;
@@ -92,6 +92,6 @@ let S = new C(u.Z, {
           skuId: n,
           applicationId: r
         }, e = !0);
-    return e && j(), e
+    return e && C(), e
   }
 })

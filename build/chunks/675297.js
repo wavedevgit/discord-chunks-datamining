@@ -25,12 +25,12 @@ function E(e) {
     guildProductListing: t,
     guildId: n,
     location: E,
-    shouldShowFullDescriptionButton: x = !0,
-    hideRoleTag: y = !1,
+    shouldShowFullDescriptionButton: y = !0,
+    hideRoleTag: x = !1,
     lineClamp: v = 1,
     cardWidth: O,
-    cardHeight: j,
-    thumbnailHeight: C,
+    cardHeight: C,
+    thumbnailHeight: j,
     descriptionTextVariant: S = "text-sm/normal",
     showOpaqueBackground: I = !1
   } = e, N = (0, i.e7)([s.Z], () => s.Z.getGuild(n), [n]), T = (0, i.e7)([s.Z], () => {
@@ -81,16 +81,16 @@ function E(e) {
       sourceAnalyticsLocations: E
     }),
     productType: A,
-    shouldShowFullDescriptionButton: x,
+    shouldShowFullDescriptionButton: y,
     onShowFullDescription: k,
     onTapCard: k,
     actionMenu: D,
     showOpaqueBackground: I,
-    hideRoleTag: y,
+    hideRoleTag: x,
     lineClamp: v,
     cardWidth: O,
-    cardHeight: j,
-    thumbnailHeight: C,
+    cardHeight: C,
+    thumbnailHeight: j,
     descriptionTextVariant: S,
     isDraft: !t.published
   }, t.id)

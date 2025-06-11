@@ -56,13 +56,13 @@ let b = {
     lastSeen: null
   },
   E = b,
-  x = {},
-  y = null,
+  y = {},
+  x = null,
   v = 864e5;
 var O = ((i = O || {}).IS_OWNER = "is_owner", i.IS_ADMIN = "is_admin", i.IS_COMMUNITY = "is_community", i.GUILD_SIZE = "guild_size", i.IS_HUB = "is_hub", i.IS_VIEWING = "is_viewing", i.GUILD_PERMISSIONS = "guild_permissions", i.GUILD_SIZE_ALL = "guild_size_all", i);
-let j = new Set(Object.values(O));
+let C = new Set(Object.values(O));
 
-function C(e) {
+function j(e) {
   var t;
   return t = 0, !0,
     function(e) {
@@ -73,7 +73,7 @@ function C(e) {
       } = e;
       if (0 === t.length) return !0;
       for (let e of t)
-        if (!j.has(e)) return !1;
+        if (!C.has(e)) return !1;
       let i = t.includes("guild_size_all"),
         a = !0;
       for (let o of Object.values(u.Z.getGuilds())) {
@@ -101,7 +101,7 @@ function C(e) {
           u = (null == s ? void 0 : s.id) === o.ownerId,
           h = d.Z.can(f.Plq.ADMINISTRATOR, o);
         if (t.includes("is_owner") && !u || t.includes("is_admin") && !h) continue;
-        null == (x = null != x ? x : {})[e.key] && (x[e.key] = e);
+        null == (y = null != y ? y : {})[e.key] && (y[e.key] = e);
         let g = p.Z.getGuildId(),
           _ = null != g && g === o.id;
         if ((!t.includes("is_viewing") || _) && !i) return !0
@@ -115,18 +115,18 @@ function S(e) {
     survey: t
   } = e;
   if (E.lastFetched = Date.now(), null == E.hiddenSurveys && (E.hiddenSurveys = {}), null != t && null == E.hiddenSurveys[t.key]) {
-    if (!C(t)) return;
-    y = t
+    if (!j(t)) return;
+    x = t
   }
 }
 
 function I() {
-  if (null != y && (C(y) || (y = null, 0))) return !1;
-  let e = Object.values(x = null != x ? x : {})[0];
-  null != e && C(e) ? S({
+  if (null != x && (j(x) || (x = null, 0))) return !1;
+  let e = Object.values(y = null != y ? y : {})[0];
+  null != e && j(e) ? S({
     type: "SURVEY_FETCHED",
     survey: e
-  }) : null != y && (y = null)
+  }) : null != x && (x = null)
 }
 class N extends(r = a.ZP.PersistedStore) {
   initialize(e) {
@@ -136,7 +136,7 @@ class N extends(r = a.ZP.PersistedStore) {
     return E
   }
   getCurrentSurvey() {
-    return y
+    return x
   }
   getSurveyOverride() {
     return E.surveyOverride
@@ -169,7 +169,7 @@ let T = new N(o.Z, {
     let {
       key: t
     } = e;
-    E.hiddenSurveys[t] = !0, y = null, x = null != x ? x : {}, delete x[t]
+    E.hiddenSurveys[t] = !0, x = null, y = null != y ? y : {}, delete y[t]
   },
   SURVEY_OVERRIDE: function(e) {
     let {

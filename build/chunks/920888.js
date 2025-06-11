@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -51,11 +51,11 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = (e, t) => null == e && null == t || e === t,
-  y = (e, t) => e.findIndex(e => x(e.emoji.id, null == t ? void 0 : t.id) && x(e.emoji.name, null == t ? void 0 : t.name)),
+let y = (e, t) => null == e && null == t || e === t,
+  x = (e, t) => e.findIndex(e => y(e.emoji.id, null == t ? void 0 : t.id) && y(e.emoji.name, null == t ? void 0 : t.name)),
   v = (e, t) => {
     if (null == t) return e;
-    let n = y(e, t);
+    let n = x(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
 class O extends i.PureComponent {
@@ -78,22 +78,22 @@ class O extends i.PureComponent {
       isPendingMember: _,
       isForumToolbar: b,
       channel: E,
-      className: x,
-      forceAddReactions: y,
+      className: y,
+      forceAddReactions: x,
       reactionClassName: v,
       useChatFontScaling: O,
-      forceHideReactionCreates: j,
-      remainingReactions: C,
+      forceHideReactionCreates: C,
+      remainingReactions: j,
       combinedReactions: S,
       visibleReactionsCount: I
     } = this.props, {
       disableTransitionAppear: N
     } = this.state, T = O ? g : h, P = I > 0;
-    if (!P && !y) return null;
-    let A = y || P;
+    if (!P && !x) return null;
+    let A = x || P;
     return (0, r.jsxs)(o.W, {
       component: "div",
-      className: a()(T.reactions, x),
+      className: a()(T.reactions, y),
       transitionAppear: !N,
       role: "group",
       transitionLeave: !1,
@@ -114,7 +114,7 @@ class O extends i.PureComponent {
         isForumToolbar: b,
         useChatFontScaling: O,
         className: v
-      }), C > 0 && (0, r.jsx)(s.P3F, {
+      }), j > 0 && (0, r.jsx)(s.P3F, {
         onClick: t => {
           t.stopPropagation(), (0, m.op)(E, e)
         },
@@ -123,9 +123,9 @@ class O extends i.PureComponent {
         children: (0, r.jsxs)(s.Text, {
           className: T.reactionInner,
           variant: "text-sm/normal",
-          children: ["+", C]
+          children: ["+", j]
         })
-      }), !t && !j && (0, r.jsx)(u.X, {
+      }), !t && !C && (0, r.jsx)(u.X, {
         tabIndex: A || this.state.isHovered ? 0 : -1,
         type: c.O.NORMAL,
         message: e,
@@ -146,7 +146,7 @@ class O extends i.PureComponent {
     })
   }
 }
-let j = e => {
+let C = e => {
   let {
     message: t,
     maxReactions: n,

@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => y
+  Z: () => I
 });
 var r = n(255367);
 n(73800);
@@ -42,7 +42,7 @@ function O() {
     })
   })
 }
-let I = {
+let y = {
   [f.D5.Error]: {
     textColor: "text-primary",
     buttonLook: o.zxk.Looks.FILLED,
@@ -80,7 +80,7 @@ let I = {
   }
 };
 
-function y() {
+function I() {
   let {
     decoupledClipsEnabled: e,
     clipsError: t
@@ -95,7 +95,7 @@ function y() {
     buttonColor: u,
     buttonLook: d,
     containerClass: g
-  } = I[n];
+  } = y[n];
   return (0, r.jsxs)("div", {
     className: g,
     children: [(0, r.jsx)(o.Text, {

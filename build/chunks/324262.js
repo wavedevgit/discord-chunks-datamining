@@ -47,8 +47,8 @@ let m = a().debounce(s.ZP.trackWithMetadata, 500),
       undismissable: _,
       onDismissed: E,
       onClick: O,
-      cta: I,
-      ctaColor: y
+      cta: y,
+      ctaColor: I
     } = e;
     i.useEffect(() => {
       m(p.rMx.CHANNEL_NOTICE_VIEWED, {
@@ -57,7 +57,7 @@ let m = a().debounce(s.ZP.trackWithMetadata, 500),
       })
     }, [t.id, u]);
     let v = null;
-    "function" == typeof I ? v = I() : null != I && (v = (0, r.jsx)(o.zxk, {
+    "function" == typeof y ? v = y() : null != y && (v = (0, r.jsx)(o.zxk, {
       className: f.btn,
       size: o.zxk.Sizes.SMALL,
       onClick: () => {
@@ -68,8 +68,8 @@ let m = a().debounce(s.ZP.trackWithMetadata, 500),
         }), null == O || O()
       },
       fullWidth: !0,
-      color: y,
-      children: I
+      color: I,
+      children: y
     }));
     let C = null != d ? "".concat(d, "px") : "16px";
     return (0, r.jsxs)("div", {

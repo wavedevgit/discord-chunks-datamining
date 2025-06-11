@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 let r, i;
 n.d(t, {
-  Z: () => Z
+  Z: () => x
 }), n(49124), n(388685), n(35282), n(65234), n(111804), n(490233), n(97749), n(539854), n(415506);
 var l = n(836560),
   a = n(392711),
@@ -34,8 +34,8 @@ try {
     r = p.ZP.requireModule("erlpack")
   } catch (e) {}
 }
-let I = p.ZP.requireModule("discord_rpc").RPCWebSocket,
-  y = window.GLOBAL_ENV.MARKETING_ENDPOINT,
+let y = p.ZP.requireModule("discord_rpc").RPCWebSocket,
+  I = window.GLOBAL_ENV.MARKETING_ENDPOINT,
   v = new c.Z("RPCServer:WSS"),
   C = [];
 
@@ -119,7 +119,7 @@ class A extends g.Z {
     this._sendCallback = e, this._closeCallback = t
   }
 }
-class x extends l.EventEmitter {
+class Z extends l.EventEmitter {
   handleRequest(e, t) {
     let [n, r] = S(e.url).split("?"), i = S(e.method);
     if ("/rpc" === n && "OPTIONS" === i) return void T(e, t, {
@@ -135,7 +135,7 @@ class x extends l.EventEmitter {
             protocol: i,
             host: l
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
-          i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", y), t.writeHead(301), t.end()
+          i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", I), t.writeHead(301), t.end()
         },
         s = new A(!l ? o : T.bind(null, e, t), !l ? o : P.bind(null, e, t, 400), Number(n.get("v")), i);
       if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
@@ -193,14 +193,14 @@ class x extends l.EventEmitter {
     var e;
     super();
     let t = 0;
-    (i = I.http.createServer()).on("error", e => {
+    (i = y.http.createServer()).on("error", e => {
       v.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => N(++t), 1e3)
     }), i.on("request", this.handleRequest.bind(this)), N(t);
     let n = {
       instanceId: null != (e = i.instanceId) ? e : 0,
       server: i
     };
-    new I.ws.Server(n).on("connection", e => this.handleConnection(e))
+    new y.ws.Server(n).on("connection", e => this.handleConnection(e))
   }
 }
-let Z = new x
+let x = new Z

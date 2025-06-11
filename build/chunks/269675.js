@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(730647),
   E = n(772021),
   O = n(396828),
-  I = n(293423),
-  y = n(20967),
+  y = n(293423),
+  I = n(20967),
   v = n(504762),
   C = n(807152),
   S = n(176505),
@@ -31,22 +31,22 @@ var r = n(255367),
 function P(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([f.Z], () => f.Z.isConnected()), j = (0, p.Z)(t), A = (0, E.Z)(t), x = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
-    shouldHideGuildPurchaseEntryPoints: w,
-    restrictionsLoading: L
-  } = (0, h.uP)(t), R = null == n || !Z || x || L;
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([f.Z], () => f.Z.isConnected()), j = (0, p.Z)(t), A = (0, E.Z)(t), Z = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), x = (0, _.f)(), {
+    shouldHideGuildPurchaseEntryPoints: L,
+    restrictionsLoading: w
+  } = (0, h.uP)(t), R = null == n || !x || Z || w;
   (0, u.Tt)({
     subsection: N.intl.string(N.t["KzCF//"]),
     location: null == n ? void 0 : n.name
   }), (0, c.Z)(l.tq ? "role-subscriptions-overview" : void 0);
-  let D = P && (null == n || !(j || A) || w && !L);
+  let D = P && (null == n || !(j || A) || L && !w);
   if (i.useEffect(() => {
       s.jg()
     }, []), i.useEffect(() => {
       D && !l.tq && (0, d.M)(t, S.oC.ROLE_SUBSCRIPTIONS)
     }, [t, D]), l.tq && D) {
-    let e = null == n ? y.J.NOT_GUILD_MEMBER : y.J.GUILD_NOT_ELIGIBLE;
-    return (0, r.jsx)(y.z, {
+    let e = null == n ? I.J.NOT_GUILD_MEMBER : I.J.GUILD_NOT_ELIGIBLE;
+    return (0, r.jsx)(I.z, {
       errorType: e
     })
   }
@@ -69,7 +69,7 @@ function P(e) {
         className: T.scroller,
         children: (0, r.jsx)("div", {
           className: T.scrollerContent,
-          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(I.Z, {
+          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(y.Z, {
             guild: n
           })
         })

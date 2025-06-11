@@ -26,8 +26,8 @@ function _(e) {
     onUserContextMenu: E
   } = e, {
     priorityMembers: O,
-    guildContext: I
-  } = _, y = O[0], v = function(e) {
+    guildContext: y
+  } = _, I = O[0], v = function(e) {
     let {
       priorityMembers: t,
       partiedMembers: n
@@ -62,12 +62,12 @@ function _(e) {
       partiedMembers: c,
       voiceChannels: u,
       currentActivities: p
-    } = e, _ = i.length, E = c.length - _, O = p[0], I = null == O ? void 0 : O.activity, y = null == O ? void 0 : O.startedPlayingTime, v = {
-      name: null != (t = null == I ? void 0 : I.name) ? t : ""
+    } = e, _ = i.length, E = c.length - _, O = p[0], y = null == O ? void 0 : O.activity, I = null == O ? void 0 : O.startedPlayingTime, v = {
+      name: null != (t = null == y ? void 0 : y.name) ? t : ""
     };
-    if ((0, a.Z)(I) && null != I) return {
+    if ((0, a.Z)(y) && null != y) return {
       subtitle: (0, r.jsx)(d.ZP, {
-        start: y,
+        start: I,
         location: d.ZP.Locations.ACTIVITY_FEED_NEW,
         messageProps: v
       }),
@@ -77,15 +77,15 @@ function _(e) {
       let {
         game: e
       } = O;
-      if (null == I) return {
+      if (null == y) return {
         subtitle: null,
         icon: null
       };
-      let t = h.dc(I);
+      let t = h.dc(y);
       if (null != t) return t;
-      switch (I.type) {
+      switch (y.type) {
         case m.IIU.PLAYING:
-          if ((0, s.Z)(I)) return {
+          if ((0, s.Z)(y)) return {
             subtitle: b.intl.string(b.t.tO8wOz),
             icon: (0, r.jsx)(f.Z.Header.Icon, {
               src: f.Z.Header.Icon.Src.XBOX
@@ -93,7 +93,7 @@ function _(e) {
           };
           return {
             subtitle: (0, r.jsx)(d.ZP, {
-              start: y,
+              start: I,
               location: d.ZP.Locations.ACTIVITY_FEED_NEW,
               messageProps: v
             }), icon: null != e ? (0, r.jsx)(f.Z.Header.Icon, {
@@ -108,7 +108,7 @@ function _(e) {
           };
         case m.IIU.LISTENING:
           let i;
-          return i = (0, o.Z)(I) ? (0, r.jsx)(f.Z.Header.Icon, {
+          return i = (0, o.Z)(y) ? (0, r.jsx)(f.Z.Header.Icon, {
             src: f.Z.Header.Icon.Src.SPOTIFY
           }) : null != e.getIconURL(g.Z) ? (0, r.jsx)(f.Z.Header.Icon, {
             src: e.getIconURL(g.Z)
@@ -116,14 +116,14 @@ function _(e) {
             src: n(211827)
           }), {
             subtitle: b.intl.formatToPlainString(b.t.NF5xoq, {
-              name: I.name
+              name: y.name
             }),
             icon: i
           };
         case m.IIU.WATCHING:
           return {
             subtitle: b.intl.formatToPlainString(b.t.pW3Ip6, {
-              name: I.name
+              name: y.name
             }), icon: null != e && null != e.getIconURL(g.Z) ? (0, r.jsx)(f.Z.Header.Icon, {
               src: e.getIconURL(g.Z)
             }) : null
@@ -189,13 +189,13 @@ function _(e) {
     source: c.m1.FriendsActivityFeed
   });
   return (0, r.jsx)(f.Z.Header, {
-    priorityUser: y,
-    guildId: null == I ? void 0 : I.id,
+    priorityUser: I,
+    guildId: null == y ? void 0 : y.id,
     title: v,
     subtitle: C,
     icon: S,
     onSubtitleClick: N,
     onIconClick: N,
-    onContextMenu: e => E(e, y.user)
+    onContextMenu: e => E(e, I.user)
   })
 }

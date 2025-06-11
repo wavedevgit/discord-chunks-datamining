@@ -19,8 +19,8 @@ var r, i = n(255367),
   _ = n(833664),
   E = n(503438),
   O = n(420660),
-  I = n(74433),
-  y = n(906732),
+  y = n(74433),
+  I = n(906732),
   v = n(812206),
   C = n(933557),
   S = n(194082),
@@ -29,10 +29,10 @@ var r, i = n(255367),
   P = n(925329),
   j = n(102172),
   A = n(871118),
-  x = n(707409),
-  Z = n(359110),
-  w = n(769654),
-  L = n(849171),
+  Z = n(707409),
+  x = n(359110),
+  L = n(769654),
+  w = n(849171),
   R = n(314897),
   D = n(592125),
   k = n(594174),
@@ -94,10 +94,10 @@ class $ extends l.Component {
       } = t;
     return null == n || !(0, _.Z)(t) || (0, E.Z)(t) ? null : Q((0, b.Z)(t) ? (0, i.jsx)(X, {
       timestamps: n
-    }) : (0, i.jsx)(x.ZP, {
+    }) : (0, i.jsx)(Z.ZP, {
       start: n.start,
       end: n.end,
-      location: x.ZP.Locations.USER_ACTIVITY,
+      location: Z.ZP.Locations.USER_ACTIVITY,
       className: W.__invalid_playTime
     }))
   }
@@ -321,7 +321,7 @@ er.Header = en, er.Body = e => {
       ref: h,
       onContextMenu: e => p(e, a),
       children: [(0, i.jsx)(u.P3F, {
-        onClick: () => (0, w.X)(r.id),
+        onClick: () => (0, L.X)(r.id),
         "aria-hidden": !0,
         tabIndex: -1,
         children: (0, i.jsxs)("div", {
@@ -350,7 +350,7 @@ er.Header = en, er.Body = e => {
         })
       }), (0, i.jsx)(u.P3F, {
         onClick: () => {
-          d.default.selectVoiceChannel(a.id), (0, Z.Kh)(a.id)
+          d.default.selectVoiceChannel(a.id), (0, x.Kh)(a.id)
         },
         focusProps: {
           ringTarget: h
@@ -517,7 +517,7 @@ er.Header = en, er.Body = e => {
       color: "always-white",
       children: (0, j.P9)(h)
     })]
-  }), g = null != (n = null == (t = (0, I.Z)(r, a)) ? void 0 : t.activityText) ? n : z.intl.string(z.t.eXan7O);
+  }), g = null != (n = null == (t = (0, y.Z)(r, a)) ? void 0 : t.activityText) ? n : z.intl.string(z.t.eXan7O);
   return (0, i.jsxs)(J, {
     children: [(0, i.jsxs)("div", {
       className: W.applicationStreamingSection,
@@ -550,7 +550,7 @@ er.Header = en, er.Body = e => {
     f = (0, h.O)(),
     {
       analyticsLocations: m
-    } = (0, y.ZP)();
+    } = (0, I.ZP)();
   if (null == d) return null;
   let b = v.Z.getApplication(d);
   if (null == b) return null;
@@ -589,7 +589,7 @@ er.Header = en, er.Body = e => {
         className: W.embeddedActivityImage
       }) : null, (0, i.jsxs)("div", {
         className: W.embeddedActivityImageOverlay,
-        children: [(0, i.jsx)(L.OV, {
+        children: [(0, i.jsx)(w.OV, {
           users: p,
           guildId: r,
           channelId: n.id

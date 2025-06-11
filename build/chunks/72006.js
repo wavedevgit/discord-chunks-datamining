@@ -14,7 +14,7 @@ n.d(t, {
   lv: () => T,
   nR: () => P,
   q0: () => l.a,
-  x0: () => C,
+  x0: () => j,
   xb: () => F,
   yd: () => S
 }), n(388685), n(539854);
@@ -35,12 +35,12 @@ var r = n(399834),
   _ = n.n(g),
   b = n(803068),
   E = n.n(b),
-  x = n(561099),
-  y = n.n(x),
+  y = n(561099),
+  x = n.n(y),
   v = n(655e3),
   O = n.n(v);
 
-function j(e, t, n, i) {
+function C(e, t, n, i) {
   let l = i.getCurrentContent(),
     a = null;
   null != e && (a = (l = l.createEntity(...e)).getLastCreatedEntityKey());
@@ -56,7 +56,7 @@ function j(e, t, n, i) {
   })
 }
 
-function C(e, t, n, i) {
+function j(e, t, n, i) {
   let l, a, s = t.getCurrentContent(),
     c = s.getFirstBlock(),
     u = c.getText();
@@ -74,7 +74,7 @@ function C(e, t, n, i) {
 function S(e, t) {
   switch (e) {
     case "delete":
-      return y()(t);
+      return x()(t);
     case "delete-word":
       return m()(t);
     case "backspace":
@@ -129,14 +129,14 @@ function T(e, t) {
           start: l,
           end: a
         } = e, o = e.getFullMatch();
-        !n.processed && (n.type === i && n.start === l && n.text === o ? (n.processed = !0, r = !0) : (l >= n.start && l < n.end || a > n.start && a <= n.end) && (n.processed = !0, t = j(null, n.start, n.end, t)))
+        !n.processed && (n.type === i && n.start === l && n.text === o ? (n.processed = !0, r = !0) : (l >= n.start && l < n.end || a > n.start && a <= n.end) && (n.processed = !0, t = C(null, n.start, n.end, t)))
       }), r) return;
     let i = n[e.type];
-    t = j([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
+    t = C([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
       token: e
     }], e.start, e.end, t)
   }), a.forEach(e => {
-    e.processed || (t = j(null, e.start, e.end, t))
+    e.processed || (t = C(null, e.start, e.end, t))
   }), t
 }
 
@@ -152,7 +152,7 @@ function A(e) {
 
 function w(e, t) {
   let n = N(t);
-  return C(e, t, 0, n.length)
+  return j(e, t, 0, n.length)
 }
 
 function Z(e, t) {
@@ -184,7 +184,7 @@ function M(e) {
     n = N(e);
   if (n.length > t) {
     let i = e.getSelection();
-    e = C("", e, t, n.length), i.getAnchorOffset() > t && (i = i.set("anchorOffset", t)), i.getFocusOffset() > t && (i = i.set("focusOffset", t)), e = r.EditorState.forceSelection(e, i)
+    e = j("", e, t, n.length), i.getAnchorOffset() > t && (i = i.set("anchorOffset", t)), i.getFocusOffset() > t && (i = i.set("focusOffset", t)), e = r.EditorState.forceSelection(e, i)
   }
   return e
 }

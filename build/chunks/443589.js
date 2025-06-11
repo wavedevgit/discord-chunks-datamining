@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(522558),
   E = n(441623),
   O = n(317271),
-  I = n(674701),
-  y = n(474936),
+  y = n(674701),
+  I = n(474936),
   v = n(981631),
   C = n(388032),
   S = n(26725),
@@ -41,11 +41,11 @@ function P(e) {
     analyticsLocations: j
   } = (0, d.ZP)(), {
     isHovered: A,
-    setIsHovered: x,
-    onMouseEnter: Z,
-    onMouseLeave: w
+    setIsHovered: Z,
+    onMouseEnter: x,
+    onMouseLeave: L
   } = (0, f.Z)(200, 300), {
-    enableEmojiCTA: L
+    enableEmojiCTA: w
   } = _.w.useExperiment({
     location: "GiftIntentActionButton"
   }, {
@@ -63,8 +63,8 @@ function P(e) {
     })
   }, [t, n]);
   let R = i.useCallback(e => {
-      "focus" !== e.type && Z()
-    }, [Z]),
+      "focus" !== e.type && x()
+    }, [x]),
     D = e => {
       e.stopPropagation();
       let r = g.Z.getUserAffinity(t.id);
@@ -86,12 +86,12 @@ function P(e) {
         giftMessage: k()
       })
     },
-    k = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/Nz"], {
+    k = () => n === I.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/Nz"], {
       numberOfYears: E.Z.getFriendAnniversaryYears(t.id)
     }) : (0, b.Ou)(n),
-    M = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, b.Ou)(n),
+    M = () => n === I.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, b.Ou)(n),
     U = i.useRef(null),
-    G = () => L ? (0, r.jsx)(u.P3F, {
+    G = () => w ? (0, r.jsx)(u.P3F, {
       innerRef: U,
       "aria-label": M(),
       onClick: D,
@@ -100,7 +100,7 @@ function P(e) {
         [N.actionButtonMobile]: c.tq
       }),
       onMouseEnter: R,
-      onMouseLeave: w,
+      onMouseLeave: L,
       children: (0, r.jsx)(o.animated.div, {
         className: S.spriteContainer,
         children: (0, r.jsx)("div", {
@@ -111,7 +111,7 @@ function P(e) {
       buttonRef: U,
       onClick: D,
       onMouseEnter: R,
-      onMouseLeave: w,
+      onMouseLeave: L,
       children: (0, r.jsxs)("div", {
         className: S.pillContentContainer,
         children: [(0, r.jsx)(u.OgN, {
@@ -137,18 +137,18 @@ function P(e) {
     align: "top",
     spacing: 9,
     onRequestClose: () => {
-      x(!1)
+      Z(!1)
     },
-    renderPopout: e => (0, r.jsx)(I.Z, {
+    renderPopout: e => (0, r.jsx)(y.Z, {
       giftIntentType: n,
-      premiumGiftIntentCardType: I.U.COACHMARK,
+      premiumGiftIntentCardType: y.U.COACHMARK,
       recipientUser: t,
-      onMouseEnter: Z,
-      onMouseLeave: w,
+      onMouseEnter: x,
+      onMouseLeave: L,
       popoutPosition: e.position,
       analyticsPage: l,
       analyticsSection: v.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
-      giftIntentSecondaryAction: y.X2.SEND_MESSAGE,
+      giftIntentSecondaryAction: I.X2.SEND_MESSAGE,
       glow: !0
     }),
     children: () => G()

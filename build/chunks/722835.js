@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => I
+  Z: () => y
 });
 var r = n(209739),
   i = n.n(r),
@@ -21,7 +21,7 @@ var r = n(209739),
   E = n(989941),
   O = n(70722);
 
-function I() {
+function y() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   if (!(0, b.Z)(d.Z) || null != s.Z.getCurrentUserActiveStream()) return !1;
   let t = h.Z.getVoiceChannelId(),

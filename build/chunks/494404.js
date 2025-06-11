@@ -21,12 +21,12 @@ var r = n(255367),
   _ = n(294218),
   b = n(703656),
   E = n(592125),
-  x = n(375954),
-  y = n(496675),
+  y = n(375954),
+  x = n(496675),
   v = n(933429),
   O = n(451478),
-  j = n(626135),
-  C = n(585483),
+  C = n(626135),
+  j = n(585483),
   S = n(981631),
   I = n(388032),
   N = n(555565);
@@ -143,12 +143,12 @@ class Z extends i.PureComponent {
     })
   }
 }
-let R = u.ZP.connectStores([y.Z], e => {
+let R = u.ZP.connectStores([x.Z], e => {
   let {
     channel: t
   } = e;
   return {
-    canManageMessages: null != t && y.Z.can(S.Plq.MANAGE_MESSAGES, t)
+    canManageMessages: null != t && x.Z.can(S.Plq.MANAGE_MESSAGES, t)
   }
 })(Z);
 
@@ -163,12 +163,12 @@ function k(e) {
     renderEmptyState: _,
     renderItem: b,
     getProTip: E,
-    scrollerClassName: x,
-    className: y,
+    scrollerClassName: y,
+    className: x,
     listName: A
   } = e, w = i.useRef(null), Z = (0, m.Z)(A, w), R = (0, u.e7)([v.ZP], () => v.ZP.hasNotice()), k = (0, u.e7)([O.Z], () => O.Z.windowSize()), D = (0, h.Q3)("ItemsPopout");
   i.useEffect(() => {
-    j.default.track(S.rMx.OPEN_POPOUT, {
+    C.default.track(S.rMx.OPEN_POPOUT, {
       type: t
     })
   }, [t]), i.useEffect(() => {
@@ -185,8 +185,8 @@ function k(e) {
         animate: !0
       })
     }
-    return C.S.subscribe(S.CkL.SCROLL_PAGE_DOWN, t), C.S.subscribe(S.CkL.SCROLL_PAGE_UP, e), () => {
-      C.S.unsubscribe(S.CkL.SCROLL_PAGE_DOWN, t), C.S.unsubscribe(S.CkL.SCROLL_PAGE_UP, e)
+    return j.S.subscribe(S.CkL.SCROLL_PAGE_DOWN, t), j.S.subscribe(S.CkL.SCROLL_PAGE_UP, e), () => {
+      j.S.unsubscribe(S.CkL.SCROLL_PAGE_DOWN, t), j.S.unsubscribe(S.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
   let L = i.useCallback(() => {
@@ -239,7 +239,7 @@ function k(e) {
   R && (H.maxHeight -= 40), D && (H.maxHeight -= 48);
   let V = null != p && l;
   return (0, r.jsx)("div", {
-    className: a()(y, N.messagesPopoutWrap),
+    className: a()(x, N.messagesPopoutWrap),
     style: H,
     onClick: P,
     onDoubleClick: P,
@@ -247,7 +247,7 @@ function k(e) {
     children: (0, r.jsxs)(d.y5t, {
       component: g(),
       children: [(0, r.jsxs)(d.Den, {
-        className: a()(N.messagesPopout, x),
+        className: a()(N.messagesPopout, y),
         onScroll: V ? L : void 0,
         ref: w,
         children: [(0, r.jsx)(c.bG, {
@@ -318,14 +318,14 @@ function D(e) {
     canCloseAllMessages: m = !1,
     renderHeader: f,
     renderEmptyState: h,
-    renderMessage: y,
+    renderMessage: x,
     getProTip: v,
     scrollerClassName: O,
-    className: j,
-    onCloseMessage: C,
+    className: C,
+    onCloseMessage: j,
     listName: I
-  } = e, T = (0, u.e7)([x.Z], () => {
-    let e = null != l ? x.Z.getMessages(l.id) : null;
+  } = e, T = (0, u.e7)([y.Z], () => {
+    let e = null != l ? y.Z.getMessages(l.id) : null;
     return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
   });
 
@@ -346,7 +346,7 @@ function D(e) {
     channel: l
   })), [a, l]);
   return (0, r.jsx)(k, {
-    className: j,
+    className: C,
     scrollerClassName: O,
     items: A,
     loading: s,
@@ -362,7 +362,7 @@ function D(e) {
         channel: n
       } = e;
       if (null == t) return [];
-      if (null != y) return y(t, e => P(t, e));
+      if (null != x) return x(t, e => P(t, e));
       let i = [];
       return null == n ? [] : (i.push((0, r.jsxs)("div", {
         className: N.messageGroupWrapper,
@@ -376,7 +376,7 @@ function D(e) {
           jumping: T,
           canCloseAllMessages: m,
           jumpTo: P,
-          onCloseMessage: C
+          onCloseMessage: j
         })]
       }, t.id)), i)
     },

@@ -19,12 +19,12 @@ var r = n(255367),
   _ = n(78839),
   b = n(55935),
   E = n(63063),
-  x = n(74538),
-  y = n(276444),
+  y = n(74538),
+  x = n(276444),
   v = n(93237),
   O = n(786397),
-  j = n(474936),
-  C = n(981631),
+  C = n(474936),
+  j = n(981631),
   S = n(388032),
   I = n(271818);
 
@@ -68,7 +68,7 @@ class P extends i.Component {
       trialOffer: r
     } = this.props;
     return e && !n && void 0 === r.redeemed_at ? S.intl.format(S.t.LwCwT0, {
-      helpdeskArticle: E.Z.getArticleURL(C.BhN.REFERRAL_PROGRAM)
+      helpdeskArticle: E.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM)
     }) : t ? null : S.intl.string(S.t.lQLlOT)
   }
   renderActions(e, t, n) {
@@ -82,7 +82,7 @@ class P extends i.Component {
         this.handleStartTrial(a, s)
       },
       color: d.zxk.Colors.BRAND
-    }, u = o.id !== a.user_id || (0, x.I5)(o) || !o.verified || (0, O.B)(a), p = this.renderExpirationDate(e, t, n);
+    }, u = o.id !== a.user_id || (0, y.I5)(o) || !o.verified || (0, O.B)(a), p = this.renderExpirationDate(e, t, n);
     return c.disabled = u, (0, r.jsxs)("div", {
       className: I.buttonContainer,
       children: [(0, r.jsx)("div", {
@@ -91,7 +91,7 @@ class P extends i.Component {
           onClick: () => {
             (0, h.Z)({
               initialPlanId: null,
-              subscriptionTier: j.Si.TIER_2,
+              subscriptionTier: C.Si.TIER_2,
               analyticsLocations: s,
               trialId: a.trial_id,
               referralTrialOfferId: a.id
@@ -163,7 +163,7 @@ class P extends i.Component {
     super(...e), N(this, "handleStartTrial", (e, t) => {
       (0, h.Z)({
         initialPlanId: null,
-        subscriptionTier: j.Si.TIER_2,
+        subscriptionTier: C.Si.TIER_2,
         analyticsLocations: t,
         trialId: e.trial_id
       })
@@ -178,10 +178,10 @@ function A(e) {
   } = e, {
     trialOffer: i,
     isResolving: l
-  } = (0, u.cj)([y.Z], () => ({
-    trialOffer: n ? y.Z.getRelevantUserTrialOffer(t) : null,
-    isResolving: !!n && y.Z.isResolving(t)
-  }), [n, t]), a = g.default.getCurrentUser(), o = (0, u.e7)([g.default], () => null != i && (0, x.I5)(void 0 !== a && i.user_id === a.id ? a : g.default.getUser(i.user_id))), s = (0, u.e7)([_.ZP], () => {
+  } = (0, u.cj)([x.Z], () => ({
+    trialOffer: n ? x.Z.getRelevantUserTrialOffer(t) : null,
+    isResolving: !!n && x.Z.isResolving(t)
+  }), [n, t]), a = g.default.getCurrentUser(), o = (0, u.e7)([g.default], () => null != i && (0, y.I5)(void 0 !== a && i.user_id === a.id ? a : g.default.getUser(i.user_id))), s = (0, u.e7)([_.ZP], () => {
     var e;
     return o ? null == (e = _.ZP.getPremiumTypeSubscription()) ? void 0 : e.trialEndsAt : null
   }), {
