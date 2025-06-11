@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: 927359445fb16d44
+  Original File Name: 976c5de92f39c834
 **/
 .errorBanner__3405b {
     color: var(--status-danger-text)
@@ -126,7 +126,6 @@
     bottom: 6px;
     display: flex;
     flex-direction: row;
-    padding: 1px 5px;
     position: absolute;
     z-index: var(--custom-zindex-emoji-studio-top)
 }
@@ -145,32 +144,41 @@
 
 .zoomControls_ab2592 {
     align-items: center;
-    -moz-column-gap: 8px;
-    column-gap: 8px;
+    border-left: 1px solid var(--border-subtle);
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    height: 40px;
     justify-content: center;
-    margin: 0 auto
+    padding: 4px
 }
 
-.zoomIcon_ab2592 {
-    color: var(--interactive-normal);
-    width: 24px
+.zoomControls_ab2592 svg {
+    height: 20px;
+    margin: 7px;
+    width: 20px
 }
 
 .slider_ab2592 {
-    width: 128px
+    margin: 0 4px;
+    width: 100px
+}
+
+@media (min-width:485px) and (min-height:550px) {
+    .slider_ab2592 {
+        width: 220px
+    }
 }
 
 .rotateButton_ab2592 {
     box-sizing: content-box;
     color: var(--interactive-normal);
     cursor: pointer;
-    height: 24px;
-    padding: 6px;
+    height: 32px;
+    padding: 4px;
     position: relative;
     transition: color var(--custom-button-transition-duration) ease;
-    width: 24px
+    width: 32px
 }
 
 .rotateButton_ab2592:hover {
@@ -1422,4 +1430,4 @@
     }
 }
 
-/*# sourceMappingURL=927359445fb16d44.css.map*/
+/*# sourceMappingURL=976c5de92f39c834.css.map*/
