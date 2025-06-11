@@ -3,9 +3,9 @@ o.d(t, {
   X: () => c
 });
 var n = o(818083),
-  r = o(984134);
+  i = o(984134);
 
-function i(e) {
+function r(e) {
   for (var t = 1; t < arguments.length; t++) {
     var o = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(o);
@@ -49,20 +49,20 @@ let a = {
     treatments: [{
       id: 1,
       label: "Show form-style survey without neutral",
-      config: l(i({}, a), {
+      config: l(r({}, a), {
         showFormStyleSurvey: !0,
         hideNeutralOption: !0
       })
     }, {
       id: 2,
       label: "Show survey without neutral",
-      config: l(i({}, a), {
+      config: l(r({}, a), {
         hideNeutralOption: !0
       })
     }, {
       id: 3,
       label: "Show survey without neutral, and with vibes honeypot",
-      config: l(i({}, a), {
+      config: l(r({}, a), {
         hideNeutralOption: !0,
         showVibesHoneypot: !0
       })
@@ -75,7 +75,7 @@ function c(e) {
     autoTrackExposure: o = !0
   } = e, {
     isInHoldout: n
-  } = r.h.useExperiment({
+  } = i.h.useExperiment({
     location: t
   }, {
     autoTrackExposure: o

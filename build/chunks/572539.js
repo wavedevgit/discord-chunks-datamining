@@ -1,6 +1,6 @@
 /** Chunk was on 60137 **/
 n.d(t, {
-  Z: () => c
+  Z: () => o
 });
 var l = n(255367);
 n(73800);
@@ -10,12 +10,12 @@ var a = n(120356),
   s = n(259580),
   u = n(474e3);
 
-function c(e) {
+function o(e) {
   let {
     options: t,
     onClick: n,
     className: a,
-    hideCaret: c
+    hideCaret: o
   } = e;
   return (0, l.jsx)("div", {
     className: i()(u.root, a),
@@ -27,7 +27,7 @@ function c(e) {
         color: "none",
         variant: "text-md/normal",
         children: e.label
-      }), !(null == c ? void 0 : c(e)) && (0, l.jsx)(s.Z, {
+      }), !(null == o ? void 0 : o(e)) && (0, l.jsx)(s.Z, {
         className: u.caret,
         direction: s.Z.Directions.RIGHT
       })]

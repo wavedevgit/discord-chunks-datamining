@@ -8,18 +8,18 @@ var l = n(255367),
   r = n(481060),
   s = n(572539),
   u = n(531578),
-  c = n(722771);
-let o = {
+  o = n(722771);
+let c = {
   [u.aZ.BAD]: {
-    face: c.sadFace,
-    thumb: c.thumbsDown
+    face: o.sadFace,
+    thumb: o.thumbsDown
   },
   [u.aZ.NEUTRAL]: {
-    face: c.neutralFace
+    face: o.neutralFace
   },
   [u.aZ.GOOD]: {
-    face: c.happyFace,
-    thumb: c.thumbsUp
+    face: o.happyFace,
+    thumb: o.thumbsUp
   }
 };
 
@@ -32,28 +32,28 @@ function d(e) {
     onChangeRating: b
   } = e;
   return null != a ? (0, l.jsx)("div", {
-    className: c.textLabels,
+    className: o.textLabels,
     children: (0, l.jsx)(s.Z, {
       options: t.map(e => ({
         label: (0, l.jsxs)("div", {
-          className: c.textLabel,
+          className: o.textLabel,
           children: [(0, l.jsx)("div", {
-            className: o[e][n]
+            className: c[e][n]
           }), a[e]]
         }),
         value: e,
-        className: i()(c.emojiContainer, d === e ? c.selected : null)
+        className: i()(o.emojiContainer, d === e ? o.selected : null)
       })),
       onClick: e => b(e.value)
     })
   }) : (0, l.jsx)("div", {
-    className: i()(c.ratingSelector, c.emojis),
+    className: i()(o.ratingSelector, o.emojis),
     children: t.map(e => (0, l.jsx)(r.P3F, {
       onClick: () => b(e),
       "aria-label": e,
-      className: c.emojiContainer,
+      className: o.emojiContainer,
       children: (0, l.jsx)("div", {
-        className: i()(o[e][n], d === e ? c.selected : null)
+        className: i()(c[e][n], d === e ? o.selected : null)
       })
     }, e))
   })

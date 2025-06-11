@@ -3,8 +3,8 @@ o.d(t, {
   m: () => l
 });
 var n = o(818083),
-  r = o(984134);
-let i = (0, n.B)({
+  i = o(984134);
+let r = (0, n.B)({
   kind: "user",
   id: "2025-05_av_survey_taxonomy_refresh",
   label: "AV survey taxonomy refresh",
@@ -26,12 +26,12 @@ function l(e) {
     autoTrackExposure: o = !0
   } = e, {
     isInHoldout: n
-  } = r.h.useExperiment({
+  } = i.h.useExperiment({
     location: t
   }, {
     autoTrackExposure: o
   });
-  return i.useExperiment({
+  return r.useExperiment({
     location: t
   }, {
     disable: n,
