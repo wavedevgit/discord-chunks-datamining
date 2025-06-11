@@ -8,11 +8,12 @@ var i = n(255367),
 let l = e => {
   let {
     children: t,
-    header: n
+    header: n,
+    notice: l
   } = e;
   return (0, i.jsxs)("div", {
     className: s.settingsPage,
-    children: [(0, i.jsx)(r.y5t, {
+    children: [l, (0, i.jsx)(r.y5t, {
       children: (0, i.jsx)(r.X6q, {
         variant: "heading-xl/semibold",
         color: "header-primary",

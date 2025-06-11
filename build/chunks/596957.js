@@ -141,11 +141,11 @@ let D = function(e) {
           isFocused: w
         }), t)
     }
-  }, [w, c]), B = i.useCallback(e => {
+  }, [w, c]), V = i.useCallback(e => {
     U(x(A({}, M), {
       [c]: e
     }))
-  }, [M, c]), V = i.useCallback(() => {
+  }, [M, c]), B = i.useCallback(() => {
     U(x(A({}, M), {
       [c]: ""
     }))
@@ -237,8 +237,8 @@ let D = function(e) {
       children: [k && (0, r.jsx)(v.R, {}), (0, r.jsx)(s.E1j, {
         className: a()(j.searchBar, $ ? j.searchEmptyState : null),
         query: M[c],
-        onChange: B,
-        onClear: V,
+        onChange: V,
+        onClear: B,
         size: s.E1j.Sizes.MEDIUM
       }), (0, r.jsx)(y.Z, {
         rows: Y,

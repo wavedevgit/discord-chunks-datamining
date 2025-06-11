@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.r(t), n.d(t, {
-  default: () => B,
+  default: () => V,
   useAppSidebarState: () => U
 });
 var r = n(255367),
@@ -113,7 +113,7 @@ function G() {
     })]
   })
 }
-let B = i.memo(function() {
+let V = i.memo(function() {
   i.useLayoutEffect(() => {
     j.ZP.setMinimumSize(w.J, w.N)
   }, []);
@@ -149,7 +149,7 @@ let B = i.memo(function() {
                 isOpen: !U.getState().isOpen
               })
             },
-            children: (0, r.jsx)(V, {})
+            children: (0, r.jsx)(B, {})
           })), (0, r.jsx)(s.P3F, {
             className: D.button,
             onClick: () => {
@@ -183,7 +183,7 @@ let B = i.memo(function() {
   })
 });
 
-function V() {
+function B() {
   return (0, r.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     className: D.icon,
