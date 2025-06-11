@@ -18,7 +18,7 @@ var i = n(255367),
   f = n(276444),
   b = n(520540),
   _ = n(796634),
-  x = n(767714),
+  x = n(736519),
   E = n(119269),
   j = n(938736),
   C = n(981631),
@@ -206,9 +206,7 @@ let N = e => {
               },
               className: l()(S.expandedProgressBarGiftingCTA, {
                 [S.expandedProgressBarGiftingCTALayout]: !t
-              }),
-              look: o.iLD.OUTLINED,
-              isGift: !0
+              })
             }), (0, i.jsx)(o.gtL, {
               className: S.expandedProgressBarSelectFriendsCTA,
               color: o.Ttl.CUSTOM,

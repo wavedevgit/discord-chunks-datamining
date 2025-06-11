@@ -23,6 +23,5 @@ e.exports = {
   giftingContainerHighVisIcon: "giftingContainerHighVisIcon__3ce43",
   giftingContainerHighVisDescription: "giftingContainerHighVisDescription__3ce43",
   giftingContainerHighVisButtonContainer: "giftingContainerHighVisButtonContainer__3ce43",
-  giftingContainerHighVisButton: "giftingContainerHighVisButton__3ce43",
-  giftingContainerHighVisButtonText: "giftingContainerHighVisButtonText__3ce43"
+  giftingContainerHighVisButton: "giftingContainerHighVisButton__3ce43"
 }

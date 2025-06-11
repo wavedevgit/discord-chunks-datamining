@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: ecd3af798947ba3b
+  Original File Name: 76459308225265a9
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -5786,6 +5786,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .expandedProgressBarButtonContainer_a61c56 {
     display: flex;
+    gap: 8px;
     margin-top: 16px
 }
 
@@ -8987,14 +8988,10 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     margin-right: 8px
 }
 
-.giftingContainerHighVisButton__3ce43 {
+.giftingContainerHighVisButtonContainer__3ce43 .giftingContainerHighVisButton__3ce43 {
     color: var(--brand-500);
+    font-weight: 700;
     height: 50px
-}
-
-.giftingContainerHighVisButtonText__3ce43 {
-    color: var(--brand-500);
-    font-weight: 700
 }
 
 .container__6f73d {
@@ -19468,4 +19465,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=ecd3af798947ba3b.css.map*/
+/*# sourceMappingURL=76459308225265a9.css.map*/

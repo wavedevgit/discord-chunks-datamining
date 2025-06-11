@@ -9,7 +9,7 @@ var r = n(120356),
   l = n(481060),
   a = n(906732),
   o = n(646476),
-  c = n(767714),
+  c = n(736519),
   d = n(388032),
   u = n(944680),
   m = n(568147),
@@ -42,9 +42,7 @@ let p = e => {
           variant: "text-sm/medium",
           children: b ? d.intl.string(d.t.u49cn5) : d.intl.string(d.t.yQ06u7)
         }), (0, i.jsx)(c.Z, {
-          isGift: !0,
           className: u.giftCardButton,
-          look: l.zxk.Looks.OUTLINED,
           textOptions: {
             textOverride: d.intl.string(d.t.Ve9Ge3),
             textClassName: u.giftButtonCTA

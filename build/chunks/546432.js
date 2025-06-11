@@ -384,45 +384,33 @@ let k = function(e) {
     width: p,
     height: y,
     type: I
-  } = n, x = a(n, (0, g.v)(l)), [j, E] = i.useState(null != x && O.Xh.has(x));
-  i.useEffect(() => {
-    E(null != x && O.Xh.has(x))
-  }, [x]);
-  let b = u === v.hV.MOSAIC,
-    P = !b && (null != p && p < 200 || null != y && y < 50),
-    T = "IMAGE" === I || "VIDEO" === I,
-    M = (0, C.R_)(I),
-    S = c && null != x && (0, f.yf)(p, y),
-    [_, k] = i.useState(!1),
-    W = () => {
-      k(!0)
-    },
-    F = () => {
-      k(!1)
-    },
-    G = function() {
-      let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      return (0, r.jsx)(D, L(A({}, m), {
-        item: n,
-        message: l,
-        getObscureReason: a,
-        hiddenSpoilers: e,
-        className: o()(t, N.mosaicItemContent, {
-          [N.obscured]: j && !P,
-          [N.hiddenSpoiler]: j && x === O.wk.SPOILER,
-          [N.hiddenExplicit]: j,
-          [N.hiddenMosaicItem]: j && e,
-          [N.inline]: j && P
-        }),
-        focusable: !e,
-        mediaLayoutType: u,
-        hasFooter: null != d,
-        useFullWidth: !!S || s,
-        isVisualMediaType: M,
-        onVideoControlsShow: W,
-        onVideoControlsHide: F
-      }))
-    };
+  } = n, x = a(n, (0, g.v)(l)), [j, E] = i.useState(null != x), b = u === v.hV.MOSAIC, P = !b && (null != p && p < 200 || null != y && y < 50), T = "IMAGE" === I || "VIDEO" === I, M = (0, C.R_)(I), S = c && null != x && (0, f.yf)(p, y), [_, k] = i.useState(!1), W = () => {
+    k(!0)
+  }, F = () => {
+    k(!1)
+  }, G = function() {
+    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+    return (0, r.jsx)(D, L(A({}, m), {
+      item: n,
+      message: l,
+      getObscureReason: a,
+      hiddenSpoilers: e,
+      className: o()(t, N.mosaicItemContent, {
+        [N.obscured]: j && !P,
+        [N.hiddenSpoiler]: j && x === O.wk.SPOILER,
+        [N.hiddenExplicit]: j && null != x && O.Xh.has(x),
+        [N.hiddenMosaicItem]: j && e,
+        [N.inline]: j && P
+      }),
+      focusable: !e,
+      mediaLayoutType: u,
+      hasFooter: null != d,
+      useFullWidth: !!S || s,
+      isVisualMediaType: M,
+      onVideoControlsShow: W,
+      onVideoControlsHide: F
+    }))
+  };
   return (0, r.jsxs)("div", {
     className: o()(N.mosaicItem, {
       [N.mosaicItemNoJustify]: T,

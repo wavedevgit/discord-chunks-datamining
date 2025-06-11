@@ -18,18 +18,19 @@ let g = e => {
     className: t,
     textOptions: n,
     color: r,
-    hideIcon: g,
-    subscriptionTier: p,
-    premiumModalAnalyticsLocation: h,
-    giftMessage: f,
-    onClick: b
-  } = e, _ = (0, o.ZP)(), x = p === d.Si.TIER_0 ? u.intl.string(u.t.rk4Uu7) : u.intl.string(u.t.Ve9Ge3);
+    look: g,
+    hideIcon: p,
+    subscriptionTier: h,
+    premiumModalAnalyticsLocation: f,
+    giftMessage: b,
+    onClick: _
+  } = e, x = (0, o.ZP)(), E = h === d.Si.TIER_0 ? u.intl.string(u.t.rk4Uu7) : u.intl.string(u.t.Ve9Ge3);
   return (0, i.jsx)(c.Z, {
     isGift: !0,
-    subscriptionTier: p,
-    premiumModalAnalyticsLocation: h,
-    giftMessage: f,
-    onClick: b,
+    subscriptionTier: h,
+    premiumModalAnalyticsLocation: f,
+    giftMessage: b,
+    onClick: _,
     children: e => {
       var o;
       let {
@@ -37,17 +38,17 @@ let g = e => {
       } = e;
       return (0, i.jsxs)(a.zxk, {
         innerClassName: m.innerGiftButton,
-        color: null != r ? r : (0, l.wj)(_) ? a.Ttl.WHITE : a.Ttl.BRAND,
-        look: a.iLD.OUTLINED,
+        color: null != r ? r : (0, l.wj)(x) ? a.Ttl.WHITE : a.Ttl.BRAND,
+        look: null != g ? g : a.iLD.OUTLINED,
         className: s()(t, m.giftButton),
         onClick: c,
-        children: [!g && (0, i.jsx)(a.OgN, {
+        children: [!p && (0, i.jsx)(a.OgN, {
           size: "md",
           color: "currentColor",
           className: m.giftIcon
         }), (0, i.jsx)("span", {
           className: s()(m.buttonText, null == n ? void 0 : n.textClassName),
-          children: null != (o = null == n ? void 0 : n.textOverride) ? o : x
+          children: null != (o = null == n ? void 0 : n.textOverride) ? o : E
         })]
       })
     }

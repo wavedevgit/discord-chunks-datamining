@@ -26,8 +26,8 @@ var r = n(120356),
   O = n(104494),
   S = n(639119),
   v = n(533525),
-  T = n(784238),
-  I = n(767714),
+  T = n(736519),
+  I = n(784238),
   N = n(382791),
   y = n(184176),
   A = n(386733),
@@ -61,15 +61,13 @@ let M = () => {
         })]
       }), (0, i.jsx)("div", {
         className: Z.giftingContainerHighVisButtonContainer,
-        children: (0, i.jsx)(I.Z, {
+        children: (0, i.jsx)(T.Z, {
+          look: a.iLD.FILLED,
           color: a.Ttl.WHITE,
           textOptions: {
-            textOverride: D.intl.string(D.t.GyAbk5),
-            textClassName: Z.giftingContainerHighVisButtonText
+            textOverride: D.intl.string(D.t.GyAbk5)
           },
-          className: Z.giftingContainerHighVisButton,
-          giftIconClassName: Z.giftingContainerHighVisButton,
-          isGift: !0
+          className: Z.giftingContainerHighVisButton
         })
       })]
     })
@@ -80,14 +78,13 @@ let M = () => {
     } = e;
     return t === j.XS.Control ? (0, i.jsx)("div", {
       className: Z.premiumSubscribeButton,
-      children: (0, i.jsx)(I.Z, {
-        showGradient: !0,
+      children: (0, i.jsx)(T.Z, {
+        look: a.iLD.FILLED,
         color: a.Ttl.BRAND,
         textOptions: {
           textOverride: D.intl.string(D.t["3KomGR"])
         },
-        className: Z.button,
-        isGift: !0
+        className: Z.button
       })
     }) : t === j.XS.Variant1 ? (0, i.jsx)(M, {}) : void 0
   },
@@ -116,7 +113,7 @@ let M = () => {
           children: c
         }), (0, i.jsxs)("div", {
           className: Z.heroHeadingOriginalButtonContainer,
-          children: [C && (0, i.jsx)(T.Z, {
+          children: [C && (0, i.jsx)(I.Z, {
             color: a.Ttl.BRAND,
             className: s()(Z.button, Z.subscribeButton),
             subscriptionTier: null != (n = null == f || null == (t = f.subscription_trial) ? void 0 : t.sku_id) ? n : _

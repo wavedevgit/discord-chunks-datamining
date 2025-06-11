@@ -367,6 +367,10 @@ let eA = (0, u.Un)({
         return (0, r.jsx)(s.l_, {
           to: eI.Z5c.POWERUP_STORE(n)
         });
+      case "boost-settings":
+        return (0, r.jsx)(s.l_, {
+          to: eI.Z5c.SETTINGS("guild-boosting")
+        });
       default:
         return (0, r.jsx)(s.l_, {
           to: eI.Z5c.ME
