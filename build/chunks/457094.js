@@ -122,7 +122,7 @@ function e4(e, t, n) {
   }) : e[t] = n, e
 }
 
-function e7(e) {
+function e2(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -135,7 +135,7 @@ function e7(e) {
   return e
 }
 n(117240), n(801077), n(967368), n(272053), n(974180), n(574254), n(551428), n(55563), n(882029), n(959457), n(653255), n(663389), n(25990), n(778825), n(999382), n(388610), n(533947), n(277053), n(371398), n(141233), n(471073), n(606206);
-let e2 = !1;
+let e7 = !1;
 (0, S.DL)(), o.ZP.initialize(), ey.Z.loadServer(), eJ.isPlatformEmbedded && (e$.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
   eF.Z.getLayers().includes(e1.S9g.USER_SETTINGS) || f.Z.open(null != t ? t : e1.oAB.ACCOUNT)
 }), e$.ZP.on("LAUNCH_APPLICATION", (e, t) => {
@@ -345,7 +345,7 @@ let ti = [{
         } = await Promise.all([n.e("5863"), n.e("95626")]).then(n.bind(n, 751212));
         return t => {
           var n, l;
-          return (0, r.jsx)(e, (n = e7({}, t), l = l = {
+          return (0, r.jsx)(e, (n = e2({}, t), l = l = {
             guildId: i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -480,7 +480,7 @@ class to extends i.PureComponent {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 650233));
-        return t => (0, r.jsx)(e, e7({}, t))
+        return t => (0, r.jsx)(e, e2({}, t))
       })
     }), U.Z.init(), el.Z.initialize(), e_.Z.initialize(), eg.Z.initialize(), k.Z.initialize(), A.Z.initialize(), x.Z.initialize(), C.Z.initialize(), this.rewriterUnlisten = eE.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eE.Z.addRouteChangeListener(this.handleHistoryChange)
   }
@@ -522,8 +522,8 @@ class to extends i.PureComponent {
       if (c && g && d.Z.selectGuild(r), c && u) {
         let n = eW.Z.getChannelId(f),
           a = n !== i;
-        if (!e2 || g || a || null != o) {
-          e2 = !0, p.default.selectChannel({
+        if (!e7 || g || a || null != o) {
+          e7 = !0, p.default.selectChannel({
             guildId: r,
             channelId: i,
             messageId: o

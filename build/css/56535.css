@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: 6e58e48048ede5bc
+  Original File Name: 6e142a0955d2a0b4
 **/
 .errorBanner__3405b {
     color: var(--status-danger-text)
@@ -940,11 +940,11 @@
     font-weight: var(--custom-weight)
 }
 
-.wrapInput__38eb6.empty__38eb6:hover .ghost__38eb6 {
+.wrapInput__38eb6.blur__38eb6:hover .ghost__38eb6 {
     background: var(--bg-mod-subtle)
 }
 
-.wrapInput__38eb6.empty__38eb6:hover .ghost__38eb6 svg path {
+.wrapInput__38eb6.blur__38eb6:hover .ghost__38eb6 svg path {
     fill: var(--interactive-normal)
 }
 
@@ -1459,4 +1459,4 @@
     }
 }
 
-/*# sourceMappingURL=6e58e48048ede5bc.css.map*/
+/*# sourceMappingURL=6e142a0955d2a0b4.css.map*/

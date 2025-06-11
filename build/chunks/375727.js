@@ -17,8 +17,8 @@ var n = r(255367),
   m = r(384694),
   f = r(273391),
   v = r(793972),
-  x = r(981631),
-  b = r(388032),
+  b = r(981631),
+  x = r(388032),
   _ = r(139797);
 let O = new o.Z("EmojiStudio"),
   j = e => {
@@ -29,18 +29,18 @@ let O = new o.Z("EmojiStudio"),
     } = e, j = (0, l.e7)([c.Z, d.Z, u.Z], () => {
       let e = d.Z.getGuildId(),
         t = c.Z.getGuild(e);
-      return u.Z.can(x.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
-    }), [N, I] = a.useState(null != r ? r : j), [D, y] = a.useState(null), [S, C] = a.useState(""), [w, A] = a.useState(null), k = async () => {
-      if (y(null), null == N) return void y(h.ze.MISSING_GUILD);
-      if (null == t || (null == t ? void 0 : t.file) == null || null == w) return void y(h.ze.MISSING_IMAGE_DATA);
+      return u.Z.can(b.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
+    }), [N, I] = a.useState(null != r ? r : j), [D, S] = a.useState(null), [y, C] = a.useState(""), [w, A] = a.useState(null), k = async () => {
+      if (S(null), null == N) return void S(h.ze.MISSING_GUILD);
+      if (null == t || (null == t ? void 0 : t.file) == null || null == w) return void S(h.ze.MISSING_IMAGE_DATA);
       try {
         await (0, i.rS)({
           image: w,
           guildId: N,
-          name: S
+          name: y
         })
       } catch (e) {
-        y((0, g.z)(e)), O.error("Failed to upload emoji.", e);
+        S((0, g.z)(e)), O.error("Failed to upload emoji.", e);
         return
       }(0, s.Mr3)(h.Hj)
     }, M = a.useRef(0), R = a.useCallback(e => {
@@ -49,7 +49,7 @@ let O = new o.Z("EmojiStudio"),
         imageDataTimestamp: r = 0,
         error: n
       } = e, a = null;
-      null != t && p.ZP.isDataTooBig(t) && (a = h.ze.TOO_BIG), y(null != n ? n : a), r < M.current || null != t && (A(t), M.current = r)
+      null != t && p.ZP.isDataTooBig(t) && (a = h.ze.TOO_BIG), S(null != n ? n : a), r < M.current || null != t && (A(t), M.current = r)
     }, []);
     return (0, n.jsxs)("main", {
       className: _.main,
@@ -79,21 +79,21 @@ let O = new o.Z("EmojiStudio"),
               onChange: e => {
                 C(e.length < 2 ? e : p.ZP.sanitizeEmojiName(e))
               },
-              value: S
+              value: y
             })]
           }), (0, n.jsx)("div", {
             className: _.selector,
             children: (0, n.jsx)(m.q, {
               onChange: I,
               selected: N,
-              onError: () => y(h.ze.NO_PERMISSIONS)
+              onError: () => S(h.ze.NO_PERMISSIONS)
             })
           }), (0, n.jsx)(s.zxk, {
             className: _.submit,
             onClick: k,
             fullWidth: !0,
-            disabled: null == t || null == N || S.length < 2,
-            children: b.intl.string(b.t.DU0dy8)
+            disabled: null == t || null == N || y.length < 2,
+            children: x.intl.string(x.t.DU0dy8)
           })]
         })]
       }), (0, n.jsx)(E, {
@@ -106,7 +106,7 @@ let O = new o.Z("EmojiStudio"),
       back: t
     } = e;
     return (0, n.jsx)(s.zxk, {
-      "aria-label": b.intl.string(b.t["13/7kZ"]),
+      "aria-label": x.intl.string(x.t["13/7kZ"]),
       onClick: t,
       look: s.zxk.Looks.BLANK,
       innerClassName: _.backButtonInnner,

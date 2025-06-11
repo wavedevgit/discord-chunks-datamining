@@ -1,59 +1,64 @@
 /** Chunk was on 56535 **/
 r.d(t, {
-  R: () => c
-});
+  R: () => u
+}), r(388685);
 var n = r(255367),
-  a = r(120356),
-  l = r.n(a),
-  s = r(481060),
-  i = r(192360),
-  o = r(954292);
-let c = e => {
+  a = r(73800),
+  l = r(120356),
+  s = r.n(l),
+  i = r(481060),
+  o = r(192360),
+  c = r(954292);
+let u = e => {
     let {
       onChange: t,
       value: r
-    } = e;
+    } = e, [l, u] = a.useState(!1);
     return (0, n.jsxs)("div", {
-      className: i.nameInput,
+      className: o.nameInput,
       children: [(0, n.jsxs)("div", {
-        className: l()(i.wrapInput, {
-          [i.empty]: "" === r
+        className: s()(o.wrapInput, {
+          [o.blur]: l
         }),
-        children: [(0, n.jsx)(u, {}), (0, n.jsx)(d, {
-          value: r
+        children: [(0, n.jsx)(d, {}), (0, n.jsx)(p, {
+          value: r,
+          showPencilIcon: l
         }), (0, n.jsx)("input", {
           value: r,
           onChange: e => {
             t(e.currentTarget.value)
           },
+          onFocus: () => u(!1),
+          onBlur: () => u(!0),
           placeholder: "emoji_name",
-          className: o["text-md/semibold"]
+          className: c["text-md/semibold"]
         })]
-      }), (0, n.jsx)(s.Text, {
+      }), (0, n.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "header-muted",
         children: "Min. 2 characters (letters, numbers & underscores only)."
       })]
     })
   },
-  u = () => (0, n.jsx)("span", {
-    className: i.bookend,
+  d = () => (0, n.jsx)("span", {
+    className: o.bookend,
     "aria-hidden": !0,
     children: ":"
   }),
-  d = e => {
+  p = e => {
     let {
-      value: t
+      value: t,
+      showPencilIcon: r
     } = e;
-    return (0, n.jsxs)(s.Text, {
+    return (0, n.jsxs)(i.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
-      className: i.ghost,
+      className: o.ghost,
       "aria-hidden": !0,
-      children: [(0, n.jsx)(u, {}), (0, n.jsx)("span", {
-        className: i.spacer,
+      children: [(0, n.jsx)(d, {}), (0, n.jsx)("span", {
+        className: o.spacer,
         children: "" === t ? "emoji_name" : t
-      }), (0, n.jsx)(u, {}), "" === t && (0, n.jsx)(s.vdY, {
+      }), (0, n.jsx)(d, {}), r && (0, n.jsx)(i.vdY, {
         size: "xs"
       })]
     })
