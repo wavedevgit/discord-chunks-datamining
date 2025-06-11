@@ -1,6 +1,6 @@
 /**
   Module ID: 98787
-  Original File Name: 1d8c496c615b73a6
+  Original File Name: 49e71575686b1a93
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -4706,8 +4706,9 @@ div:has(>.positionLayer_fc71d3) {
 .textItem_aaa08b {
     align-items: center;
     display: flex;
+    height: 100%;
     justify-content: center;
-    transform: scale(.42)
+    width: 100%
 }
 
 .guildIconList_aaa08b {
@@ -6475,4 +6476,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=1d8c496c615b73a6.css.map*/
+/*# sourceMappingURL=49e71575686b1a93.css.map*/

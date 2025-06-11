@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: d334c50934ece9b5
+  Original File Name: 79a2031ec1e10ecc
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -13584,21 +13584,11 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     padding: 16px
 }
 
-.activitySharingSwitch_eda416 {
-    margin-bottom: 0
-}
-
 .formSection_eda416 {
-    display: flex;
-    flex-direction: column;
     gap: 32px
 }
 
-.joinRequestSwitch_eda416 {
-    margin-bottom: 0
-}
-
-.myServersContainer_eda416 {
+.formSection_eda416,.myServersContainer_eda416 {
     display: flex;
     flex-direction: column
 }
@@ -13617,6 +13607,18 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
+}
+
+.settingSwitch_eda416 {
+    display: flex;
+    gap: 16px
+}
+
+.settingSwitchLabel_eda416 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2px
 }
 
 .switchRowContainer__6de8b {
@@ -19452,4 +19454,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=d334c50934ece9b5.css.map*/
+/*# sourceMappingURL=79a2031ec1e10ecc.css.map*/
