@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => S
-}), n(388685);
+  Z: () => A
+}), n(539854), n(388685);
 var r = n(704215),
   i = n(283693),
   a = n(147913),
@@ -59,23 +59,40 @@ function v(e, t) {
   }), e
 }
 let I = new o.Z("VoiceFilterManager");
-class T extends a.Z {
+
+function T(e) {
+  var t;
+  let n = u.ZP.getVoiceFilters();
+  return null != n.getModelIdsForVoiceId ? n.getModelIdsForVoiceId(e.id) : Object.values(null != (t = e.modelIds) ? t : {})
+}
+class S extends a.Z {
   handleVoiceFilterRequestSwitch(e) {
     let {
       newVoiceFilterId: t,
       analyticsContext: n
     } = e;
     if (__OVERLAY__) return;
-    let r = null != t ? f.Z.getVoiceFilter(t) : void 0;
-    if (null == r && null != t) return void I.error("requested Voice Filter is missing in VoiceFilterStore");
-    if ((null == r ? void 0 : r.modelIds) != null) {
+    if (null == t) return void(0, p.rk)(null, n);
+    let r = f.Z.getVoiceFilter(t);
+    if (null == r) return void I.error("requested Voice Filter is missing in VoiceFilterStore");
+    let i = T(r);
+    if (i.length > 0) {
       let e = f.Z.getVoiceFilterModels(),
-        t = Object.values(r.modelIds).map(t => ({
+        t = [];
+      for (let n of i) {
+        var a;
+        let i = null == (a = e[n]) ? void 0 : a.url;
+        if (null == i) {
+          I.error("Missing model url for voice filter", r.id, n);
+          continue
+        }
+        t.push({
           voiceFilterId: r.id,
-          modelId: t,
-          url: e[t].url,
-          fileName: (0, m.i)(t)
-        }));
+          modelId: n,
+          url: i,
+          fileName: (0, m.i)(n)
+        })
+      }
       for (let e of (I.info("Ensuring we have dependencies for voice filter", r.id, t), t))(0, p.fz)(e, n)
     } else(0, p.rk)(t, n)
   }
@@ -84,9 +101,8 @@ class T extends a.Z {
     let t = f.Z.getVoiceFilters(),
       n = f.Z.getVoiceFilterModels(),
       r = new Set;
-    for (let e of Object.values(t)) {
-      var i;
-      for (let t of Object.values(null != (i = e.modelIds) ? i : {})) r.has(t) || (r.add(t), (0, p.fz)({
+    for (let e of Object.values(t))
+      for (let t of T(e)) r.has(t) || (r.add(t), (0, p.fz)({
         voiceFilterId: e.id,
         modelId: t,
         url: n[t].url,
@@ -94,7 +110,6 @@ class T extends a.Z {
       }, {
         reason: d.W.AUTO_PREFETCH
       }))
-    }
   }
   handleVoiceFilterFileReady(e) {
     let {
@@ -116,7 +131,7 @@ class T extends a.Z {
     if (s && null != a) {
       let e = f.Z.getVoiceFilter(a);
       if (null == e) return void I.error("the VF in mostRecentlyRequestedVoiceFilter is missing. Has the store been cleared?");
-      let n = e.modelIds,
+      let n = T(e),
         r = Object.values(null != n ? n : {}).filter(e => !f.Z.isModelDownloaded(e)).filter(e => e !== t);
       if (r.length > 0) return void I.info("waiting for more dependencies", {
         mostRecentlyRequestedVoiceFilter: a,
@@ -212,4 +227,4 @@ class T extends a.Z {
     })
   }
 }
-let S = new T
+let A = new S
