@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: 070da912f3a6ede2
+  Original File Name: 6e58e48048ede5bc
 **/
 .errorBanner__3405b {
     color: var(--status-danger-text)
@@ -1363,6 +1363,7 @@
     border-radius: var(--radius-md);
     flex-grow: 1;
     gap: var(--space-lg);
+    justify-content: center;
     overflow: hidden;
     padding: var(--space-xl);
     position: relative
@@ -1374,6 +1375,7 @@
 
 @media (min-width:485px) and (min-height:550px) {
     .dropZone__43278 {
+        justify-content: start;
         padding: 48px
     }
 }
@@ -1457,4 +1459,4 @@
     }
 }
 
-/*# sourceMappingURL=070da912f3a6ede2.css.map*/
+/*# sourceMappingURL=6e58e48048ede5bc.css.map*/
