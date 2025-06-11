@@ -280,7 +280,7 @@ function U(e) {
   }), {
     showPerGuildActivityStatusSetting: s
   } = (0, b.c)("activity privacy tab"), {
-    isEnabled: l
+    showUpdatedSettingsPage: l
   } = (0, f.D)("activity privacy tab");
   return s || l ? (0, i.jsx)(_.Z, {}) : (0, i.jsxs)(m.hjN, {
     className: t,

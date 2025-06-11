@@ -1,19 +1,20 @@
 /** Chunk was on 85372 **/
 n.d(t, {
-  v: () => u
+  v: () => c
 });
 var r = n(73800),
   i = n(442837),
   l = n(581883),
   o = n(592125),
   a = n(699516),
-  s = n(629710);
+  s = n(629710),
+  u = n(721360);
 
-function u(e) {
+function c(e) {
   let {
     channelId: t,
     authorId: n
-  } = null == e ? {} : (0, s.px)(e), u = (0, s.AT)(), c = (0, i.e7)([o.Z, a.Z], () => (0, s.hi)(t, n, [o.Z, a.Z])), d = (0, i.cj)([l.Z], () => u.reduce((e, t) => {
+  } = null == e ? {} : (0, s.px)(e), c = (0, s.AT)(), d = (0, i.e7)([o.Z, a.Z], () => (0, s.hi)(t, n, [o.Z, a.Z])), m = (0, i.e7)([l.Z], () => c.reduce((e, t) => {
     var n, r;
     return n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -44,10 +45,10 @@ function u(e) {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
     }), n
-  }, {})), m = r.useMemo(() => u.map(e => {
-    let t = d[e.harmType],
-      n = null == c ? null : e.getUserSettingsWithDefaults(t)[c];
+  }, {}), [c], u.l), h = r.useMemo(() => c.map(e => {
+    let t = m[e.harmType],
+      n = null == d ? null : e.getUserSettingsWithDefaults(t)[d];
     return (0, s.aQ)(n) ? e.harmType : null
-  }).filter(e => null != e), [c, u, d]);
-  return (0, s.Hz)(m)
+  }).filter(e => null != e), [d, c, m]);
+  return (0, s.Hz)(h)
 }

@@ -21,8 +21,8 @@ var r = n(255367),
   g = n(262777),
   y = n(947849),
   I = n(124347),
-  j = n(976853),
-  x = n(592125),
+  x = n(976853),
+  j = n(592125),
   E = n(626135),
   b = n(630388),
   w = n(956664),
@@ -96,10 +96,10 @@ let _ = e => {
     null != t && g(Math.floor((t - 8) / 32))
   });
   let y = [],
-    [I, j] = i.useState(!1),
-    x = i.useCallback(() => j(e => !e), []);
+    [I, x] = i.useState(!1),
+    j = i.useCallback(() => x(e => !e), []);
   c && y.push((0, r.jsx)(m.Z, {
-    toggleShowMenu: x,
+    toggleShowMenu: j,
     showMenu: I,
     channelId: h,
     className: o()(M.hoverButton, {
@@ -189,7 +189,7 @@ function D(e) {
     spoiler: Y,
     type: K,
     contentType: Q
-  } = n, [$, ee] = i.useState(!1), [et, en] = i.useState(!1), er = t.getChannelId(), ei = x.Z.getChannel(er), el = (0, j.Z)(er), eo = d.P.useExperiment({
+  } = n, [$, ee] = i.useState(!1), [et, en] = i.useState(!1), er = t.getChannelId(), ei = j.Z.getChannel(er), el = (0, x.Z)(er), eo = d.P.useExperiment({
     location: "MediaMosaicItem"
   }, {
     autoTrackExposure: !0
@@ -384,15 +384,15 @@ let k = function(e) {
     width: p,
     height: y,
     type: I
-  } = n, j = a(n, (0, g.v)(l)), [x, E] = i.useState(null != j && O.Xh.has(j));
+  } = n, x = a(n, (0, g.v)(l)), [j, E] = i.useState(null != x && O.Xh.has(x));
   i.useEffect(() => {
-    E(null != j && O.Xh.has(j))
-  }, [j]);
+    E(null != x && O.Xh.has(x))
+  }, [x]);
   let b = u === v.hV.MOSAIC,
     P = !b && (null != p && p < 200 || null != y && y < 50),
     T = "IMAGE" === I || "VIDEO" === I,
     M = (0, C.R_)(I),
-    S = c && null != j && (0, f.yf)(p, y),
+    S = c && null != x && (0, f.yf)(p, y),
     [_, k] = i.useState(!1),
     W = () => {
       k(!0)
@@ -408,11 +408,11 @@ let k = function(e) {
         getObscureReason: a,
         hiddenSpoilers: e,
         className: o()(t, N.mosaicItemContent, {
-          [N.obscured]: x && !P,
-          [N.hiddenSpoiler]: x && j === O.wk.SPOILER,
-          [N.hiddenExplicit]: x,
-          [N.hiddenMosaicItem]: x && e,
-          [N.inline]: x && P
+          [N.obscured]: j && !P,
+          [N.hiddenSpoiler]: j && x === O.wk.SPOILER,
+          [N.hiddenExplicit]: j,
+          [N.hiddenMosaicItem]: j && e,
+          [N.inline]: j && P
         }),
         focusable: !e,
         mediaLayoutType: u,
@@ -431,12 +431,12 @@ let k = function(e) {
       [N.hideOverflow]: b && M,
       [N.mosaicItemWithFooter]: null != d
     }),
-    children: [null != j ? (0, r.jsx)(h.ZP, {
+    children: [null != x ? (0, r.jsx)(h.ZP, {
       type: h.ZP.Types.ATTACHMENT,
       inline: P,
-      reason: j,
+      reason: x,
       isSingleMosaicItem: c,
-      obscured: x,
+      obscured: j,
       containerStyles: function(e, t, n) {
         if (!t) return;
         let r = e.width;
@@ -460,7 +460,7 @@ let k = function(e) {
         })
       }(n, T, u),
       obscurityControlClassName: o()({
-        [N.obscureVideoSpacing]: "VIDEO" === I && c && !x && _
+        [N.obscureVideoSpacing]: "VIDEO" === I && c && !j && _
       }),
       onToggleObscurity: () => E(e => !e),
       children: e => G(e)
