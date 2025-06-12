@@ -86,7 +86,7 @@ let h = function(e) {
   }), S = t === O.aZ.BAD, x = i.useMemo(() => {
     let e = [];
     return S && e.push(h), e.push(p), e.every(c.cp)
-  }, [S, p, h]), m = i.useCallback(() => {
+  }, [S, p, h]), T = i.useCallback(() => {
     x && (s.ZP.trackWithMetadata(f.rMx.SEARCH_RESULTS_FEEDBACK_SUBMITTED, {
       rating: t,
       unsatisfied_question_option: S ? (0, c.HO)(h) : null,
@@ -131,7 +131,7 @@ let h = function(e) {
         children: v.intl.string(v.t["13/7kZ"])
       }), (0, l.jsx)(u.zxk, {
         size: u.zxk.Sizes.MEDIUM,
-        onClick: m,
+        onClick: T,
         disabled: !x,
         children: v.intl.string(v.t["4Zpxtr"])
       })]

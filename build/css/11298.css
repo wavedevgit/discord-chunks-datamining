@@ -1,6 +1,6 @@
 /**
   Module ID: 11298
-  Original File Name: b466144afd744018
+  Original File Name: 150a01563424c1e9
 **/
 .content__7ca6b {
     display: flex;
@@ -12,17 +12,13 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 16px
-}
-
-.radioBar__7ca6b {
-    padding-bottom: 8px!important;
-    padding-left: 4px!important;
-    padding-top: 8px!important
+    margin-bottom: 24px;
+    padding-top: 24px
 }
 
 .footer__7ca6b {
-    gap: 12px
+    gap: 12px;
+    padding: 24px
 }
 
 .freeformTextArea__7ca6b {
@@ -42,4 +38,4 @@
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=b466144afd744018.css.map*/
+/*# sourceMappingURL=150a01563424c1e9.css.map*/
