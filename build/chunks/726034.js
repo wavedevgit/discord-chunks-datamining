@@ -285,7 +285,8 @@ function K(e) {
     }) : (0, r.jsx)(m.Z, {
       className: D.coachmarkSecondButton,
       premiumModalAnalyticsLocation: {
-        page: N.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES
+        page: N.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES,
+        section: N.jXE.CUSTOM_THEMES_COACHMARK_FOOTER
       },
       textOptions: {
         subscribeText: w.intl.string(w.t.JST6jo)
@@ -328,6 +329,10 @@ function z(e) {
         size: c.zxk.Sizes.NONE,
         subscriptionTier: R.Si.TIER_2,
         showGradient: !0,
+        premiumModalAnalyticsLocation: {
+          page: N.ZY5.PREMIUM_UPSELL_CUSTOM_THEMES,
+          section: N.jXE.CUSTOM_THEMES_FOOTER
+        },
         textOptions: {
           textOverride: w.intl.string(w.t.pj0XBA)
         }
