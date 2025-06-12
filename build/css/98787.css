@@ -1,6 +1,6 @@
 /**
   Module ID: 98787
-  Original File Name: 49e71575686b1a93
+  Original File Name: 17144d5350939fb2
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1504,6 +1504,7 @@
     font-weight: 400;
     line-height: 20px;
     max-height: 20px;
+    padding-right: 2px;
     pointer-events: none;
     text-overflow: ellipsis;
     -webkit-user-select: none;
@@ -6476,4 +6477,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=49e71575686b1a93.css.map*/
+/*# sourceMappingURL=17144d5350939fb2.css.map*/

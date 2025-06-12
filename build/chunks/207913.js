@@ -269,11 +269,12 @@ function H(e) {
 function F(e) {
   let {
     message: t,
-    isUnread: n,
-    isSelected: l
+    channel: n,
+    isUnread: l,
+    isSelected: s
   } = e, {
-    previewContent: s,
-    Icon: a
+    previewContent: a,
+    Icon: c
   } = function(e) {
     let {
       message: t,
@@ -302,21 +303,22 @@ function F(e) {
         h = t.isPoll(),
         p = t.type === L.uaV.POLL_RESULT,
         f = t.hasFlag(L.iLy.IS_VOICE_MESSAGE),
-        g = null;
-      1 === a ? g = u.XBm : a > 1 ? g = u.Ka2 : c ? g = O.Z : h || p ? g = u.QDj : d ? g = u.SlE : f && (g = u.gj8);
-      let m = !0,
-        b = null;
+        g = t.type === L.uaV.USER_JOIN,
+        m = null;
+      1 === a ? m = u.XBm : a > 1 ? m = u.Ka2 : c ? m = O.Z : h || p ? m = u.QDj : d ? m = u.SlE : f && (m = u.gj8);
+      let b = !0,
+        v = null;
       if (e)
-        if (c) b = M.intl.string(M.t["9ddYKi"]);
+        if (c) v = M.intl.string(M.t["9ddYKi"]);
         else if (h) {
-        var v;
-        m = !1, b = null == (v = t.poll) ? void 0 : v.question.text
-      } else b = p ? M.intl.string(M.t.sad2PD) : i ? M.intl.string(M.t.p0oZm5) : a > 1 ? M.intl.formatToPlainString(M.t.rtfTKi, {
+        var _;
+        b = !1, v = null == (_ = t.poll) ? void 0 : _.question.text
+      } else v = p ? M.intl.string(M.t.sad2PD) : i ? M.intl.string(M.t.p0oZm5) : a > 1 ? M.intl.formatToPlainString(M.t.rtfTKi, {
         count: a
       }) : 1 === a ? M.intl.string(M.t.tCcq5u) : d ? M.intl.format(M.t.zY4v1N, {
         stickerName: t.stickerItems[0].name
-      }) : f ? M.intl.string(M.t.slFYgo) : M.intl.string(M.t.sDqZHB);
-      else m = !1, b = (0, r.jsx)(C.ZP, {
+      }) : f ? M.intl.string(M.t.slFYgo) : g ? M.intl.string(M.t.Yvvfw8) : M.intl.string(M.t.sDqZHB);
+      else b = !1, v = (0, r.jsx)(C.ZP, {
         content: s,
         message: t,
         compact: !1,
@@ -325,35 +327,36 @@ function F(e) {
           [k.selected]: l
         })
       });
-      return e && (b = (0, r.jsx)("div", {
+      return e && (v = (0, r.jsx)("div", {
         className: o()(k.message, {
           [k.unread]: n,
           [k.selected]: l,
-          [k.descriptionMessage]: m
+          [k.descriptionMessage]: b
         }),
-        children: b
+        children: v
       })), {
-        previewContent: b,
-        Icon: g
+        previewContent: v,
+        Icon: m
       }
     }, [t, s, n, l])
   }({
     message: t,
-    isUnread: n,
-    isSelected: l
+    channel: n,
+    isUnread: l,
+    isSelected: s
   });
   return (0, r.jsxs)(u.Kqy, {
     direction: "horizontal",
     gap: 4,
     align: "center",
-    children: [null != a && (0, r.jsx)(a, {
+    children: [null != c && (0, r.jsx)(c, {
       size: "xxs",
       className: k.inlineIcon
     }), (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
       lineClamp: 1,
       className: k.message,
-      children: s
+      children: a
     })]
   })
 }

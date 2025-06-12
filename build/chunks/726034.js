@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => K
+  Z: () => z
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -123,6 +123,18 @@ function U() {
 
 function G(e) {
   let {
+    markAsDismissed: t,
+    isCoachmark: n
+  } = e;
+  return (0, p.wE)(l.z.CUSTOM_THEME_COACHMARK) ? n ? (0, r.jsx)(B, {
+    markAsDismissed: t
+  }) : (0, r.jsx)(U, {}) : (0, r.jsx)(B, {
+    markAsDismissed: () => (0, p.EW)(l.z.CUSTOM_THEME_COACHMARK)
+  })
+}
+
+function B(e) {
+  let {
     markAsDismissed: t
   } = e;
   return (0, r.jsxs)("div", {
@@ -149,7 +161,7 @@ function G(e) {
   })
 }
 
-function B(e) {
+function V(e) {
   let {
     gradientAngle: t,
     setGradientAngle: n
@@ -176,7 +188,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     chassisMixAmount: t,
     setChassisMixAmount: n
@@ -202,7 +214,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function Z(e) {
   let {
     type: t
   } = e, n = i.useCallback(() => {
@@ -231,7 +243,7 @@ function F(e) {
   })
 }
 
-function Z(e) {
+function H(e) {
   let {
     onApply: t,
     disabled: n,
@@ -246,7 +258,7 @@ function Z(e) {
   })
 }
 
-function H() {
+function Y() {
   var e, t, n;
   let r = b.L1.getSetting().customUserThemeSettings;
   y.I.setState({
@@ -256,16 +268,16 @@ function H() {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     onSaveTheme: t,
     canApply: n
   } = e, i = (0, g.m)(C.p9.TIER_2);
   return (0, I.hf)(i, _.Z.CUSTOM_THEMES_EDITOR_COACHMARK), (0, r.jsxs)("div", {
     className: w.coachmarkFooterContainer,
-    children: [(0, r.jsx)(F, {
+    children: [(0, r.jsx)(Z, {
       type: "with-text"
-    }), i ? (0, r.jsx)(Z, {
+    }), i ? (0, r.jsx)(H, {
       className: w.coachmarkSecondButton,
       disabled: !n,
       onApply: t
@@ -284,7 +296,7 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function K(e) {
   let {
     onSaveTheme: t,
     canApply: n,
@@ -292,11 +304,11 @@ function W(e) {
   } = e, a = (0, g.m)(C.p9.TIER_2);
   (0, I.hf)(a, _.Z.CUSTOM_THEMES_EDITOR);
   let o = () => {
-    (0, I.Vb)(), (null == i ? void 0 : i.from) === f.tE.SETTING ? (d.Z.open(), (0, f.Ll)()) : (null == i ? void 0 : i.from) === f.tE.CLIENT_THEMES_EDITOR ? (0, f.XO)(f.wh.CLIENT_THEMES) : (0, f.Ll)()
+    (0, I.Vb)(), (0, p.EW)(l.z.CUSTOM_THEME_COACHMARK), (null == i ? void 0 : i.from) === f.tE.SETTING ? (d.Z.open(), (0, f.Ll)()) : (null == i ? void 0 : i.from) === f.tE.CLIENT_THEMES_EDITOR ? (0, f.XO)(f.wh.CLIENT_THEMES) : (0, f.Ll)()
   };
   return (0, r.jsxs)("div", {
     className: w.footerContainer,
-    children: [(0, r.jsx)(F, {
+    children: [(0, r.jsx)(Z, {
       type: "no-text"
     }), (0, r.jsxs)("div", {
       className: w.footerRightButtons,
@@ -306,7 +318,7 @@ function W(e) {
         look: c.zxk.Looks.BLANK,
         onClick: o,
         children: P.intl.string(P.t["13/7kZ"])
-      }), a ? (0, r.jsx)(Z, {
+      }), a ? (0, r.jsx)(H, {
         className: w.applyButton,
         disabled: !n,
         onApply: t
@@ -323,7 +335,7 @@ function W(e) {
   })
 }
 
-function K(e) {
+function z(e) {
   var t;
   let {
     metadata: n,
@@ -349,9 +361,9 @@ function K(e) {
       }
     }), null == a || a(N.L.TAKE_ACTION), D || (0, p.EW)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, f.Ll)()
   }, x = () => {
-    H(), (0, I.uf)()
+    Y(), (0, I.uf)()
   }, M = _.length > 0;
-  return (i.useEffect(() => H, []), d) ? (0, r.jsx)("div", {
+  return (i.useEffect(() => Y, []), d) ? (0, r.jsx)("div", {
     className: w.container,
     "data-app-right-panel": !0,
     children: (0, r.jsxs)("div", {
@@ -359,19 +371,20 @@ function K(e) {
       children: [(0, r.jsx)(c.Ttm, {
         children: (0, r.jsxs)("div", {
           className: w.editorBody,
-          children: [o ? (0, r.jsx)(G, {
-            markAsDismissed: a
-          }) : (0, r.jsx)(U, {}), (0, r.jsx)(S.o, {}), (0, r.jsx)(T.U, {
+          children: [(0, r.jsx)(G, {
+            markAsDismissed: a,
+            isCoachmark: o
+          }), (0, r.jsx)(S.o, {}), (0, r.jsx)(T.U, {
             onChange: e => {
               C(e), 0 === _.length && g([e])
             },
             value: A,
             colors: _,
             setColors: g
-          }), _.length > 1 && (0, r.jsx)(B, {
+          }), _.length > 1 && (0, r.jsx)(V, {
             gradientAngle: m,
             setGradientAngle: O
-          }), (0, r.jsx)(V, {
+          }), (0, r.jsx)(F, {
             chassisMixAmount: h,
             setChassisMixAmount: e => {
               b(e), 0 === _.length && g([A])
@@ -387,10 +400,10 @@ function K(e) {
             }), P.intl.string(P.t.yBZMsb)]
           })]
         })
-      }), o ? (0, r.jsx)(Y, {
+      }), o ? (0, r.jsx)(W, {
         onSaveTheme: L,
         canApply: M
-      }) : (0, r.jsx)(W, {
+      }) : (0, r.jsx)(K, {
         onSaveTheme: L,
         canApply: M,
         metadata: n
