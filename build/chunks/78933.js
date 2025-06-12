@@ -168,9 +168,6 @@ function ee(e) {
               onCloseProfile: n,
               prompt: eE ? eO : null
             })]
-          }), eI && (0, i.jsx)(b.Z, {
-            profileEffectId: null == er ? void 0 : er.profileEffectId,
-            isHovering: eo
           }), (0, i.jsxs)(a.Ttm, {
             className: Q.body,
             style: {
@@ -348,6 +345,9 @@ function ee(e) {
                 })
               })]
             })]
+          }), eI && (0, i.jsx)(b.Z, {
+            profileEffectId: null == er ? void 0 : er.profileEffectId,
+            isHovering: eo
           })]
         }), (0, i.jsx)(w.Z, {})]
       })

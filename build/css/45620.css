@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 0d2192a02d834a97
+  Original File Name: 9e36ccf733e97ee3
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -1255,10 +1255,6 @@
     right: 0
 }
 
-.visual-refresh .shopFullscreen__08415 {
-    margin-top: calc((var(--custom-channel-header-height) + var(--custom-app-top-bar-height))*-1)
-}
-
 .bannerImage__08415 {
     background-position: top;
     background-repeat: no-repeat;
@@ -1747,4 +1743,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=0d2192a02d834a97.css.map*/
+/*# sourceMappingURL=9e36ccf733e97ee3.css.map*/
