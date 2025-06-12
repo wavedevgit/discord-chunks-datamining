@@ -28,17 +28,17 @@ let x = e => {
     channel: o,
     messageId: x,
     reportedTimestamp: v
-  } = e, O = f.default.getUser(t), C = i.useMemo(() => l ? (0, p.Z)((0, h.vc)(s()(), "LT")) : null, [l]), j = (0, m.l)({
+  } = e, O = f.default.getUser(t), j = i.useMemo(() => l ? (0, p.Z)((0, h.vc)(s()(), "LT")) : null, [l]), C = (0, m.l)({
     user: O,
     channelId: o.id,
     guildId: n,
     messageId: x
   })((0, u.JZ)(O, o)), S = null != O ? O.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : y, I = null != O ? _.intl.format(g.default["+zqXZm"], {
     username: O.username,
-    onUserClick: j
+    onUserClick: C
   }) : _.intl.string(g.default.xpRjfX);
   return (0, r.jsxs)("div", {
-    className: a()(E.messageSpine, E.repliedMessage, C),
+    className: a()(E.messageSpine, E.repliedMessage, j),
     children: [(0, r.jsx)(c.qEK, {
       src: S,
       size: c.EFr.SIZE_16,

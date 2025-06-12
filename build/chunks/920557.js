@@ -49,11 +49,11 @@ function v(e) {
   } = e, s = (0, p.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, b.pE)(), [g, _] = i.useState(""), [E, v] = i.useState(!1), O = "" !== g && E, C = i.useCallback(() => {
+  } = (0, b.pE)(), [g, _] = i.useState(""), [E, v] = i.useState(!1), O = "" !== g && E, j = i.useCallback(() => {
     _((0, h.e1)(u, c, a))
-  }, [u, c, a]), j = i.useCallback(() => {
-    C(), v(!0)
-  }, [C]), S = i.useCallback(() => {
+  }, [u, c, a]), C = i.useCallback(() => {
+    j(), v(!0)
+  }, [j]), S = i.useCallback(() => {
     v(!1)
   }, []), I = i.useCallback(() => {
     (0, f.n)({
@@ -63,10 +63,10 @@ function v(e) {
     })
   }, [c, u, a]);
   i.useEffect(() => {
-    if (E) return m.Z.addReactChangeListener(C), () => {
-      m.Z.removeReactChangeListener(C)
+    if (E) return m.Z.addReactChangeListener(j), () => {
+      m.Z.removeReactChangeListener(j)
     }
-  }, [E, C]);
+  }, [E, j]);
   let N = (0, r.jsx)(d.Text, {
     variant: "text-xs/semibold",
     color: "none",
@@ -89,9 +89,9 @@ function v(e) {
         children: e => {
           var t, n;
           return (0, r.jsx)(d.zxk, (t = x({}, e), n = n = {
-            onMouseEnter: j,
+            onMouseEnter: C,
             onMouseLeave: S,
-            onFocus: j,
+            onFocus: C,
             onBlur: S,
             onClick: I,
             className: y.voteCountButton,
@@ -146,7 +146,7 @@ function O(e) {
   })
 }
 
-function C(e) {
+function j(e) {
   let {
     answersInteraction: t,
     isSelected: n,
@@ -181,7 +181,7 @@ function C(e) {
   })).otherwise(() => null)
 }
 
-function j(e) {
+function C(e) {
   let {
     answer: t,
     isExpired: n,
@@ -213,7 +213,7 @@ function j(e) {
       label: t.votes,
       canShowVoterDetails: s,
       answerId: t.answerId
-    }), (0, r.jsx)(C, {
+    }), (0, r.jsx)(j, {
       answersInteraction: i,
       isSelected: c,
       didSelfVote: u,
@@ -250,7 +250,7 @@ function S(e) {
     answerClassName: y.answer,
     answersInteraction: n,
     canTapAnswers: l,
-    renderAnswerContent: e => (0, r.jsx)(j, {
+    renderAnswerContent: e => (0, r.jsx)(C, {
       answer: e,
       isExpired: t,
       answersInteraction: n,

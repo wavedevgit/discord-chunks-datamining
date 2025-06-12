@@ -29,12 +29,12 @@ function y(e) {
       onAcceptInstantInvite: v
     } = e,
     O = y === l.author.id,
-    C = n.state === _.r2o.ACCEPTING,
-    j = (0, o.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
-  a()(null == j || j.isPrivate(), "must be a private channel");
+    j = n.state === _.r2o.ACCEPTING,
+    C = (0, o.e7)([m.Z], () => null != n.channel ? m.Z.getChannel(n.channel.id) : null, [n]);
+  a()(null == C || C.isPrivate(), "must be a private channel");
   let {
     analyticsLocations: S
-  } = (0, u.ZP)(c.Z.INVITE_EMBED), I = null != j, N = i.useCallback(() => {
+  } = (0, u.ZP)(c.Z.INVITE_EMBED), I = null != C, N = i.useCallback(() => {
     let e = "noop";
     I ? (x(), e = "transition") : (v(), e = "accept"), (0, s.r$)({
       invite: n,
@@ -43,18 +43,18 @@ function y(e) {
       invite_message_id: l.id
     }, S)
   }, [n, l, S, I, x, v]);
-  if (null == j) {
+  if (null == C) {
     if (null == n.channel) return (0, r.jsx)(g.Z, {});
-    j = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
+    C = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
   } else {
-    t = j.recipients.reduce((e, t) => {
+    t = C.recipients.reduce((e, t) => {
       let n = f.default.getUser(t);
       return null != n && e.push(n), e
     }, []);
     let e = f.default.getCurrentUser();
     I && null != e && t.push(e)
   }
-  let T = j.name;
+  let T = C.name;
   (null == T || "" === T) && (T = t.length > 0 ? t.filter(h.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRE));
   let P = b.intl.string(b.t.XpeFYm),
     A = d.Z.Button.Colors.GREEN;
@@ -67,7 +67,7 @@ function y(e) {
       children: [(0, r.jsxs)("div", {
         className: E.headerLine,
         children: [(0, r.jsx)(d.Z.Icon, {
-          channel: j,
+          channel: C,
           onClick: I ? N : void 0
         }), (0, r.jsx)(d.Z.Info, {
           title: T,
@@ -78,7 +78,7 @@ function y(e) {
         })]
       }), (0, r.jsx)(d.Z.Button, {
         onClick: N,
-        submitting: C,
+        submitting: j,
         isDisabled: I,
         color: A,
         children: P

@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -24,7 +24,7 @@ var r = n(255367),
   v = n(388032),
   O = n(28007);
 
-function C(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function C(e) {
   }
   return e
 }
-let j = i.memo(function(e) {
+let C = i.memo(function(e) {
     let {
       channel: t,
       deleteChannel: n
@@ -80,7 +80,7 @@ let j = i.memo(function(e) {
     return (0, r.jsx)(o.animated.div, {
       ref: l,
       style: f,
-      children: (0, r.jsx)(S, C({}, e))
+      children: (0, r.jsx)(S, j({}, e))
     })
   }),
   S = i.memo(function(e) {
@@ -114,7 +114,7 @@ let j = i.memo(function(e) {
           channelState: t,
           children: [(0, r.jsx)(_.Z, {
             channel: o
-          }), (0, r.jsx)(I, C({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(N, C({}, e))]
+          }), (0, r.jsx)(I, j({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(N, j({}, e))]
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(y.Z, {
           channel: t,
@@ -177,7 +177,7 @@ function N(e) {
     text: v.intl.string(v.t.iTcumZ),
     children: e => {
       var n, i;
-      return (0, r.jsx)(c.P3F, (n = C({}, e), i = i = {
+      return (0, r.jsx)(c.P3F, (n = j({}, e), i = i = {
         className: a()(O.collapseButton, {
           [O.collapsed]: t.collapsed
         }),

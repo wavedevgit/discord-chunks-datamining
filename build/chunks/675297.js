@@ -29,8 +29,8 @@ function E(e) {
     hideRoleTag: x = !1,
     lineClamp: v = 1,
     cardWidth: O,
-    cardHeight: C,
-    thumbnailHeight: j,
+    cardHeight: j,
+    thumbnailHeight: C,
     descriptionTextVariant: S = "text-sm/normal",
     showOpaqueBackground: I = !1
   } = e, N = (0, i.e7)([s.Z], () => s.Z.getGuild(n), [n]), T = (0, i.e7)([s.Z], () => {
@@ -89,8 +89,8 @@ function E(e) {
     hideRoleTag: x,
     lineClamp: v,
     cardWidth: O,
-    cardHeight: C,
-    thumbnailHeight: j,
+    cardHeight: j,
+    thumbnailHeight: C,
     descriptionTextVariant: S,
     isDraft: !t.published
   }, t.id)

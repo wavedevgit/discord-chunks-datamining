@@ -24,8 +24,8 @@ var r = n(255367),
   x = n(847033),
   v = n(544978),
   O = n(893182),
-  C = n(388032),
-  j = n(414521);
+  j = n(388032),
+  C = n(414521);
 
 function S(e) {
   let {
@@ -33,17 +33,17 @@ function S(e) {
   } = e;
   return (0, r.jsxs)(s.P3F, {
     onClick: t,
-    className: j.showMoreButton,
+    className: C.showMoreButton,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "header-primary",
-      children: C.intl.string(C.t.J4cw1t)
+      children: j.intl.string(j.t.J4cw1t)
     }), (0, r.jsx)(s.LZC, {
       size: 4,
       horizontal: !0
     }), (0, r.jsx)(_.Z, {
       direction: _.Z.Directions.RIGHT,
-      className: j.showMoreArrow
+      className: C.showMoreArrow
     })]
   })
 }
@@ -55,22 +55,22 @@ function I(e) {
   } = e, i = f.QK.useSetting(), l = (0, E.n)() && i, [a, o] = (0, m.Z)(t, l), s = l ? (0, r.jsx)(d.Z, {
     autoPlay: !0,
     loop: !0,
-    className: j.coverImage,
+    className: C.coverImage,
     width: 655,
     poster: (0, u.b)("server_products/storefront/default-header.png"),
     src: (0, u.b)("server_products/storefront/default-header.mov")
   }) : (0, r.jsx)("img", {
     src: (0, u.b)("server_products/storefront/default-header.png"),
     alt: "",
-    className: j.coverImage
+    className: C.coverImage
   });
   return (0, r.jsx)("div", {
     ref: a,
-    className: j.coverImageContainer,
+    className: C.coverImageContainer,
     children: null == o || n ? s : (0, r.jsx)("img", {
       src: o,
       alt: "",
-      className: j.coverImage
+      className: C.coverImage
     })
   })
 }
@@ -98,7 +98,7 @@ function N(e) {
   } = (0, y.s)(), T = (null != (n = null == d || null == (t = d.description) ? void 0 : t.trim().length) ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: Z,
     isPhantomPreview: R
-  } = (0, x.m)(), k = Z === v.y.GUILD_PRODUCTS_PREVIEW ? C.intl.string(C.t["LvXy/P"]) : C.intl.string(C.t.XyqKh4), D = T ? (0, r.jsxs)(r.Fragment, {
+  } = (0, x.m)(), k = Z === v.y.GUILD_PRODUCTS_PREVIEW ? j.intl.string(j.t["LvXy/P"]) : j.intl.string(j.t.XyqKh4), D = T ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(N, {
       lineClamp: w || 2 === P ? 2 : 3,
       children: (0, r.jsx)(s.Text, {
@@ -118,12 +118,12 @@ function N(e) {
   }) : (0, r.jsx)(s.Text, {
     variant: "text-sm/normal",
     color: "text-normal",
-    children: R ? k : C.intl.string(C.t["NY/FIS"])
+    children: R ? k : j.intl.string(j.t["NY/FIS"])
   });
   return (0, r.jsxs)("div", {
-    className: j.container,
+    className: C.container,
     children: [(0, r.jsxs)("div", {
-      className: j.infoContainer,
+      className: C.infoContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(p.Z, {
           guild: l,
@@ -142,7 +142,7 @@ function N(e) {
             variant: "heading-xl/semibold",
             color: "header-primary",
             lineClamp: 2,
-            children: R ? C.intl.string(C.t.rtgp7u) : C.intl.formatToPlainString(C.t.NZeik5, {
+            children: R ? j.intl.string(j.t.rtgp7u) : j.intl.formatToPlainString(j.t.NZeik5, {
               guildName: l.name
             })
           })
@@ -151,7 +151,7 @@ function N(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-normal",
-          children: C.intl.format(C.t["7JwrlJ"], {
+          children: j.intl.format(j.t["7JwrlJ"], {
             username: f,
             usernameHook: function(e, t) {
               return (0, r.jsx)("span", {

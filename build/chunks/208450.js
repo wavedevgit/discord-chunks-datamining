@@ -23,8 +23,8 @@ var r = n(255367),
   x = n(903488),
   v = n(416638),
   O = n(592125),
-  C = n(984933),
-  j = n(768119),
+  j = n(984933),
+  C = n(768119),
   S = n(944486),
   I = n(585483),
   N = n(72006),
@@ -238,7 +238,7 @@ class B extends i.PureComponent {
       let n = S.Z.getChannelId(),
         r = O.Z.getChannel(n);
       if ((null == r ? void 0 : r.isThread()) && (r = O.Z.getChannel(null == r ? void 0 : r.parent_id)), null == r || r.isPrivate()) return void this.focusEditor();
-      let i = C.ZP.getTextChannelNameDisambiguations(r.getGuildId())[r.id],
+      let i = j.ZP.getTextChannelNameDisambiguations(r.getGuildId())[r.id],
         l = null != i ? i.name : r.name;
       Promise.resolve().then(() => {
         let {
@@ -268,9 +268,9 @@ class B extends i.PureComponent {
       } = this.props;
       this.setState({
         focused: !0
-      }), null == e || j.Z.isActive(e) || (0, w.I1)({
+      }), null == e || C.Z.isActive(e) || (0, w.I1)({
         searchId: e,
-        searchType: null != t ? t : (0, j.g)(e)
+        searchType: null != t ? t : (0, C.g)(e)
       })
     }), M(this, "onBlur", () => {
       let {
@@ -280,9 +280,9 @@ class B extends i.PureComponent {
       this.setState({
         focused: !1
       }, () => {
-        null == e || j.Z.isActive(e) || (0, w.IZ)({
+        null == e || C.Z.isActive(e) || (0, w.IZ)({
           searchId: e,
-          searchType: null != t ? t : (0, j.g)(e)
+          searchType: null != t ? t : (0, C.g)(e)
         }), N.xb(this.props.editorState) && this.clearSearch()
       })
     }), M(this, "handleReturn", e => {
@@ -415,7 +415,7 @@ function H(e) {
     editorState: l
   } = e, a = i.useMemo(() => ({
     type: R.aib.DMS
-  }), []), o = (0, u.e7)([j.Z], () => j.Z.getSearchResultsQueryString(R.aib.DMS)), s = (0, v.jj)(a, k.sR.MESSAGES, o), c = (0, u.e7)([x.Z], () => {
+  }), []), o = (0, u.e7)([C.Z], () => C.Z.getSearchResultsQueryString(R.aib.DMS)), s = (0, v.jj)(a, k.sR.MESSAGES, o), c = (0, u.e7)([x.Z], () => {
     let e = x.Z.getTotalCount(s);
     return null != e && e > 0
   }), d = (0, u.e7)([x.Z], () => x.Z.getIsFetching(s));
@@ -433,7 +433,7 @@ function H(e) {
       searchTabs: [k.sR.MESSAGES],
       searchQueryString: t,
       getLimit: () => k.m$[k.sR.MESSAGES],
-      onFetchMessagesStart: e => {
+      onFetchStart: e => {
         let {
           searchContext: t,
           searchQueryString: n,
@@ -460,7 +460,7 @@ function V(e) {
     className: t,
     keyboardModeEnabled: n,
     editorState: l
-  } = e, a = (0, u.e7)([j.Z], () => j.Z.getCurrentSearchId()), o = (0, u.e7)([j.Z], () => j.Z.getSearchType()), s = (0, u.e7)([j.Z], () => j.Z.isActive(a)), c = (0, u.e7)([j.Z], () => j.Z.hasResults(a)), d = (0, u.e7)([j.Z], () => null != a && j.Z.isSearching(a));
+  } = e, a = (0, u.e7)([C.Z], () => C.Z.getCurrentSearchId()), o = (0, u.e7)([C.Z], () => C.Z.getSearchType()), s = (0, u.e7)([C.Z], () => C.Z.isActive(a)), c = (0, u.e7)([C.Z], () => C.Z.hasResults(a)), d = (0, u.e7)([C.Z], () => null != a && C.Z.isSearching(a));
   G({
     isSearchActive: s,
     searchId: a,
@@ -489,7 +489,7 @@ function V(e) {
 function z(e) {
   let {
     className: t
-  } = e, n = (0, u.e7)([j.Z], () => j.Z.getCurrentSearchId()), l = (0, u.e7)([_.Z], () => _.Z.keyboardModeEnabled), a = (0, u.e7)([j.Z], () => null != n ? j.Z.getEditorState(n) : null), o = i.useMemo(() => null != a ? a : N.nR(P.Jl(h.ZP)), [a]), s = (0, y.U)({
+  } = e, n = (0, u.e7)([C.Z], () => C.Z.getCurrentSearchId()), l = (0, u.e7)([_.Z], () => _.Z.keyboardModeEnabled), a = (0, u.e7)([C.Z], () => null != n ? C.Z.getEditorState(n) : null), o = i.useMemo(() => null != a ? a : N.nR(P.Jl(h.ZP)), [a]), s = (0, y.U)({
     location: "Search"
   });
   return n === R.aib.DMS && s ? (0, r.jsx)(H, {

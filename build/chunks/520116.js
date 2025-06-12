@@ -23,8 +23,8 @@ var r = n(255367),
   x = n(655354),
   v = n(809780),
   O = n(981631),
-  C = n(388032),
-  j = n(563142);
+  j = n(388032),
+  C = n(563142);
 let S = {
   left: 4,
   right: -12
@@ -65,17 +65,17 @@ function I(e) {
       }
       return e
     }({
-      className: j.messageContainer,
+      className: C.messageContainer,
       onKeyDown: g
     }, f), l = l = {
       children: [(0, r.jsx)(x.Z, {
-        className: j.jumpButton,
+        className: C.jumpButton,
         onJump: e => m(e, s.id)
       }), (0, r.jsx)(h.Z, {
         id: s.id,
         message: s,
         channel: a,
-        className: j.message,
+        className: C.message,
         compact: u,
         animateAvatar: !1,
         isGroupStart: d,
@@ -117,7 +117,7 @@ function N(e) {
         if (!P && (null == e || !e.isSame(n.timestamp, "day"))) {
           let t = (0, y.vc)(n.timestamp, "LL");
           w.push((0, r.jsx)(f.Z, {
-            className: j.divider,
+            className: C.divider,
             children: t
           }, t)), e = a()(n.timestamp)
         }
@@ -135,13 +135,13 @@ function N(e) {
       color: c.zxk.Colors.LINK,
       look: c.zxk.Looks.LINK,
       onClick: e => o(e, n[n.length - 1].id),
-      children: [C.intl.string(C.t["9OB9ho"]), " ›"]
+      children: [j.intl.string(j.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === w.length && (w = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
   return T && N && u.Z.trackExposure({
     location: "20e3b0_2"
   }), (0, r.jsx)("div", {
-    className: j.messages,
+    className: C.messages,
     children: w
   })
 }

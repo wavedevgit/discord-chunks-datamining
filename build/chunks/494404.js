@@ -25,8 +25,8 @@ var r = n(255367),
   x = n(496675),
   v = n(933429),
   O = n(451478),
-  C = n(626135),
-  j = n(585483),
+  j = n(626135),
+  C = n(585483),
   S = n(981631),
   I = n(388032),
   N = n(555565);
@@ -168,7 +168,7 @@ function k(e) {
     listName: A
   } = e, w = i.useRef(null), Z = (0, m.Z)(A, w), R = (0, u.e7)([v.ZP], () => v.ZP.hasNotice()), k = (0, u.e7)([O.Z], () => O.Z.windowSize()), D = (0, h.Q3)("ItemsPopout");
   i.useEffect(() => {
-    C.default.track(S.rMx.OPEN_POPOUT, {
+    j.default.track(S.rMx.OPEN_POPOUT, {
       type: t
     })
   }, [t]), i.useEffect(() => {
@@ -185,8 +185,8 @@ function k(e) {
         animate: !0
       })
     }
-    return j.S.subscribe(S.CkL.SCROLL_PAGE_DOWN, t), j.S.subscribe(S.CkL.SCROLL_PAGE_UP, e), () => {
-      j.S.unsubscribe(S.CkL.SCROLL_PAGE_DOWN, t), j.S.unsubscribe(S.CkL.SCROLL_PAGE_UP, e)
+    return C.S.subscribe(S.CkL.SCROLL_PAGE_DOWN, t), C.S.subscribe(S.CkL.SCROLL_PAGE_UP, e), () => {
+      C.S.unsubscribe(S.CkL.SCROLL_PAGE_DOWN, t), C.S.unsubscribe(S.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
   let L = i.useCallback(() => {
@@ -321,8 +321,8 @@ function D(e) {
     renderMessage: x,
     getProTip: v,
     scrollerClassName: O,
-    className: C,
-    onCloseMessage: j,
+    className: j,
+    onCloseMessage: C,
     listName: I
   } = e, T = (0, u.e7)([y.Z], () => {
     let e = null != l ? y.Z.getMessages(l.id) : null;
@@ -346,7 +346,7 @@ function D(e) {
     channel: l
   })), [a, l]);
   return (0, r.jsx)(k, {
-    className: C,
+    className: j,
     scrollerClassName: O,
     items: A,
     loading: s,
@@ -376,7 +376,7 @@ function D(e) {
           jumping: T,
           canCloseAllMessages: m,
           jumpTo: P,
-          onCloseMessage: j
+          onCloseMessage: C
         })]
       }, t.id)), i)
     },

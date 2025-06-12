@@ -55,8 +55,8 @@ function O(e) {
   let {
     title: v,
     header: O,
-    info: C,
-    staticBannerSrc: j,
+    info: j,
+    staticBannerSrc: C,
     videoBannerSrc: S,
     bannerAspectRatio: I = 0,
     iconSrc: N,
@@ -76,7 +76,7 @@ function O(e) {
   let {
     primaryColor: Z,
     secondaryColor: R
-  } = (0, p.Z)(null != N ? N : j), k = "linear-gradient(45deg, ".concat(Z, ", ").concat(R, ")"), D = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), L = l.useRef(!1), M = (0, u.O)(e => {
+  } = (0, p.Z)(null != N ? N : C), k = "linear-gradient(45deg, ".concat(Z, ", ").concat(R, ")"), D = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), L = l.useRef(!1), M = (0, u.O)(e => {
     if (!1 === L.current && e) {
       var t;
       null == w || null == (t = w.onView) || t.call(w), (0, g.GF)(w.id, w.linkType, w.referrerId, w.activityCustomId), L.current = !0
@@ -101,7 +101,7 @@ function O(e) {
       size: "xs",
       color: c.TVs.colors.WHITE.css
     })
-  }) : null, B = null != j, G = null != S && !1 === D, H = B || G, V = 0 === I ? E.bannerAspectRatioBot : E.bannerAspectRatioActivity, z = l.useRef(null), W = l.useCallback(() => {
+  }) : null, B = null != C, G = null != S && !1 === D, H = B || G, V = 0 === I ? E.bannerAspectRatioBot : E.bannerAspectRatioActivity, z = l.useRef(null), W = l.useCallback(() => {
     let e = z.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), K = l.useMemo(() => !!G && new URL(S).pathname.endsWith(".gif"), [G, S]);
@@ -127,7 +127,7 @@ function O(e) {
       })), B && (0, i.jsx)("div", {
         className: E.staticBanner,
         style: {
-          backgroundImage: "url(".concat(j, ")")
+          backgroundImage: "url(".concat(C, ")")
         },
         onTransitionEnd: W
       })]
@@ -157,7 +157,7 @@ function O(e) {
             color: "none",
             lineClamp: 1,
             children: v
-          }), C]
+          }), j]
         }), null == O && (null != U ? U : F)]
       }), A.length > 0 && (0, i.jsx)("div", {
         className: E.actionWrapper,

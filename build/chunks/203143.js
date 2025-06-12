@@ -24,8 +24,8 @@ var r = n(512722),
   x = n(592125),
   v = n(703558),
   O = n(607744),
-  C = n(375954),
-  j = n(117530),
+  j = n(375954),
+  C = n(117530),
   S = n(553803),
   I = n(467531),
   N = n(798628),
@@ -112,7 +112,7 @@ function D(e) {
     title: A.intl.string(A.t["7LpysL"]),
     body: A.intl.string(A.t["5sHHo6"])
   });
-  let l = C.Z.getMessage(t, n);
+  let l = j.Z.getMessage(t, n);
   if (null == l || null == l.poll || 0 === l.poll.answers.length) return;
   let a = null != r ? r : String(l.poll.answers[0].answer_id);
   S.A({
@@ -143,7 +143,7 @@ function M(e) {
   let {
     channelId: t,
     messageId: n
-  } = e, r = C.Z.getMessage(t, n);
+  } = e, r = j.Z.getMessage(t, n);
   return null == r ? [] : r.reactions.flatMap(e => !0 === e.me_vote ? e.emoji.name : [])
 }
 async function U(e) {
@@ -292,7 +292,7 @@ async function G(e) {
         (0, N.eu)(t, n, e => {
           var r, i;
           let l = null == e || !e.showResults,
-            a = C.Z.getMessage(t, n),
+            a = j.Z.getMessage(t, n),
             o = null != a ? a.reactions.reduce((e, t) => {
               var n, r;
               return e + (null != (r = null == (n = t.count_details) ? void 0 : n.vote) ? r : 0)
@@ -338,7 +338,7 @@ let H = {
       let {
         channelId: t,
         messageId: n
-      } = e, r = C.Z.getMessage(t, n);
+      } = e, r = j.Z.getMessage(t, n);
       if (null != r) return {
         message: r,
         channelId: t,
@@ -431,7 +431,7 @@ let H = {
       duration: l,
       layout: a,
       onClose: s
-    } = e, c = j.Z.getUploads(t.id, v.d.Poll), u = r.map(e => {
+    } = e, c = C.Z.getUploads(t.id, v.d.Poll), u = r.map(e => {
       var t, n;
       let r = null == c ? void 0 : c.findIndex(t => t.id === e.localCreationAnswerId),
         i = {

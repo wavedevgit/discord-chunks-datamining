@@ -25,7 +25,7 @@ var i = n(120356),
   v = n(653072);
 
 function O(e) {
-  var t, n, i, O, C, j, S, I, N, T;
+  var t, n, i, O, j, C, S, I, N, T;
   let {
     message: P,
     channel: A
@@ -34,7 +34,7 @@ function O(e) {
       rawName: t
     } = e;
     return "guild_id" === t
-  })) ? void 0 : t.rawValue, Z = null == (j = P.embeds[0]) || null == (C = j.fields) || null == (O = C.find(e => {
+  })) ? void 0 : t.rawValue, Z = null == (C = P.embeds[0]) || null == (j = C.fields) || null == (O = j.find(e => {
     let {
       rawName: t
     } = e;

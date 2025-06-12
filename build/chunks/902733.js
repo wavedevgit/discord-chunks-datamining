@@ -19,16 +19,19 @@ function u(e) {
   }, [n, t]);
   return (0, r.jsx)(a.P3F, {
     onClick: u,
-    className: c.icon,
+    className: c.iconContainer,
     children: (0, r.jsx)(s, {
       size: "md",
-      color: a.TVs.colors.ICON_SECONDARY
+      color: "currentColor",
+      className: c.icon
     })
   })
 }
-let d = function() {
-  let e = i.useCallback(e => {
-    (0, a.ZDy)(async () => {
+let d = function(e) {
+  let {
+    dismissFeedbackEntrypoint: t
+  } = e, l = i.useCallback(e => {
+    t(), (0, a.ZDy)(async () => {
       let {
         default: t
       } = await n.e("11298").then(n.bind(n, 229612));
@@ -65,7 +68,7 @@ let d = function() {
         }), i))
       }
     })
-  }, []);
+  }, [t]);
   return (0, r.jsxs)("div", {
     className: c.container,
     children: [(0, r.jsx)(a.Text, {
@@ -76,10 +79,10 @@ let d = function() {
       className: c.icons,
       children: [(0, r.jsx)(u, {
         rating: o.aZ.GOOD,
-        onClick: e
+        onClick: l
       }), (0, r.jsx)(u, {
         rating: o.aZ.BAD,
-        onClick: e
+        onClick: l
       })]
     })]
   })

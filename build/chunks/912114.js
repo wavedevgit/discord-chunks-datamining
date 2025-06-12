@@ -118,31 +118,31 @@ let E = function(e) {
     closeOrShowDiscardChangesAlert: h,
     location: E
   } = e, I = (0, m.Dt)(), P = (0, o.e7)([g.Z], () => g.Z.getChannel(t)), S = null == P ? void 0 : P.name, Z = (0, f.cO)(P), [N, T] = i.useState(null != S ? S : ""), [A, w] = i.useState(void 0), R = void 0 !== A, {
-    analyticsLocations: M
-  } = (0, p.ZP)(E, d.Z.GROUP_DM_EDIT_MODAL), k = {
+    analyticsLocations: k
+  } = (0, p.ZP)(E, d.Z.GROUP_DM_EDIT_MODAL), M = {
     channel_id: t,
     channel_type: null == P ? void 0 : P.type,
     location: E,
-    location_stack: M,
+    location_stack: k,
     old_name_set: "" !== S,
     old_icon_set: (null == P ? void 0 : P.icon) != null
   };
   return (i.useEffect(() => {
     a(N !== S || R)
-  }, [N, S, R, a]), (0, u.ZP)(() => (b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, k), {
+  }, [N, S, R, a]), (0, u.ZP)(() => (b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, M), {
     action: "opened"
   })), () => {
-    b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, k), {
+    b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, M), {
       action: "dismissed"
     }))
   })), null == P) ? null : (0, r.jsx)(p.Gt, {
-    value: M,
+    value: k,
     children: (0, r.jsx)("form", {
       onSubmit: e => {
         e.preventDefault();
         let r = N !== S,
           i = void 0 !== A;
-        if (b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, k), {
+        if (b.default.track(y.rMx.GDM_EDIT_INTERACTED, j(v({}, M), {
             action: "saved",
             new_name_set: "" !== N,
             new_icon_set: (i ? A : null == P ? void 0 : P.icon) != null,
@@ -178,7 +178,7 @@ let E = function(e) {
             previewIcon: A,
             onIconChange: e => w(e.imageUri),
             onIconRemove: () => w(null),
-            analyticsLocations: M
+            analyticsLocations: k
           }), (0, r.jsx)(s.oil, {
             "aria-label": C.intl.string(C.t.GEGW3N),
             placeholder: null != Z ? Z : "",

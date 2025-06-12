@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  ZP: () => k
+  ZP: () => M
 });
 var r = n(255367);
 n(73800);
@@ -161,7 +161,7 @@ function R(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     user: t,
     member: i,
@@ -181,7 +181,7 @@ function M(e) {
     targetUserId: t.id,
     location: S,
     locations: P
-  }), M = (0, a.e7)([g.default], () => g.default.getId() === (null == t ? void 0 : t.id)), k = (0, a.e7)([v.Z, b.Z], () => {
+  }), k = (0, a.e7)([g.default], () => g.default.getId() === (null == t ? void 0 : t.id)), M = (0, a.e7)([v.Z, b.Z], () => {
     var e;
     let t = v.Z.getChannelId(l);
     return null != t && (null == (e = b.Z.getChannel(t)) ? void 0 : e.isModeratorReportChannel()) != null ? t : void 0
@@ -189,7 +189,7 @@ function M(e) {
   return (0, r.jsxs)("div", {
     className: N.bottomRow,
     children: [(0, r.jsx)(R, {
-      disabled: M,
+      disabled: k,
       text: Z.intl.string(Z.t["g33r/P"]),
       onClick: () => {
         s.Z.openPrivateChannel({
@@ -214,7 +214,7 @@ function M(e) {
             location: S,
             guildId: l,
             user: t,
-            modReportId: k
+            modReportId: M
           }))
         })
       },
@@ -236,7 +236,7 @@ function M(e) {
             location: S,
             guildId: l,
             user: t,
-            modReportId: k
+            modReportId: M
           }))
         })
       },
@@ -258,7 +258,7 @@ function M(e) {
           guildId: i.guildId,
           userId: i.userId,
           anaylticsLocations: P,
-          modReportId: k
+          modReportId: M
         })
       },
       children: (0, r.jsx)(o.YlB, {
@@ -283,7 +283,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     userId: t,
     guildId: n,
@@ -295,7 +295,7 @@ function k(e) {
       user: l,
       guildId: n,
       onClose: i
-    }), (0, r.jsx)(M, {
+    }), (0, r.jsx)(k, {
       user: l,
       member: o,
       guildId: n

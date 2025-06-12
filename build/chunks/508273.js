@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -24,7 +24,7 @@ var r = n(255367),
   v = n(388032),
   O = n(583136);
 
-function C(e) {
+function j(e) {
   let {
     invite: t,
     isMemberOfGuild: n,
@@ -32,7 +32,7 @@ function C(e) {
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d,
     currentUserId: p
-  } = e, h = i.useRef(null), [_, C] = i.useState(!0), [S, I] = i.useState(!1), N = t.state === x.r2o.ACCEPTING, T = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), {
+  } = e, h = i.useRef(null), [_, j] = i.useState(!0), [S, I] = i.useState(!1), N = t.state === x.r2o.ACCEPTING, T = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), {
     updateButton: P,
     updateCopy: A
   } = (0, f.n2)(), w = p === l.author.id, Z = A ? 326 : 292;
@@ -42,10 +42,10 @@ function C(e) {
   }, [Z, I]);
   let R = (0, m.PC)(t),
     k = i.useCallback(() => {
-      S && _ && C(!1)
+      S && _ && j(!1)
     }, [_, S]),
     D = i.useCallback(() => {
-      S && (_ || C(!0))
+      S && (_ || j(!0))
     }, [_, S]),
     L = i.useMemo(() => {
       var e;
@@ -105,7 +105,7 @@ function C(e) {
         }),
         children: (0, r.jsx)("div", {
           className: O.buttonContainer,
-          children: (0, r.jsx)(j, {
+          children: (0, r.jsx)(C, {
             invite: t,
             profile: R,
             isMemberOfGuild: n,
@@ -121,7 +121,7 @@ function C(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     invite: t,
     profile: n,

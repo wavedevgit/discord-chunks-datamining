@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -92,7 +92,7 @@ function w(e) {
     }), c.Z.startTyping(o.id)
   }, R = (0, m.K)({
     user: t
-  }), [M, k] = i.useState(!1);
+  }), [k, M] = i.useState(!1);
   return (0, r.jsx)(g.Z, {
     targetElementRef: Z,
     user: t,
@@ -100,8 +100,8 @@ function w(e) {
     position: l.tq ? "window_center" : "left",
     spacing: 16,
     onShiftClick: w,
-    shouldShow: M,
-    onRequestClose: () => k(!1),
+    shouldShow: k,
+    onRequestClose: () => M(!1),
     children: e => {
       var {
         onClick: n,
@@ -134,15 +134,15 @@ function w(e) {
         applicationStream: E,
         channel: o,
         onContextMenu: T,
-        selected: M,
+        selected: k,
         isMobile: x,
         nick: j,
         nameplate: R,
         onClick: e => {
-          e.shiftKey ? null == w || w() : k(e => !e)
+          e.shiftKey ? null == w || w() : M(e => !e)
         },
         onMouseDown: e => {
-          M ? e.stopPropagation() : null == i || i(e)
+          k ? e.stopPropagation() : null == i || i(e)
         }
       }, l), t.id)
     }
@@ -159,7 +159,7 @@ function R(e, t) {
   return !0
 }
 
-function M(e) {
+function k(e) {
   let {
     channel: t
   } = e, n = C.default.getCurrentUser(), l = null == n ? void 0 : n.isStaff(), {

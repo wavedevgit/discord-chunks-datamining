@@ -38,7 +38,7 @@ function I(e) {
     totalNumberOfParticipants: T
   } = e, A = (0, c.bp)() === O.IlC.POPOUT, w = (0, o.e7)([_.Z], () => _.Z.getGuild(S.guild_id), [S.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
-  } = (0, v.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(S.id), [S]), k = (0, b.bt)(S.id, t), L = i.useCallback(() => {
+  } = (0, v.d)(), k = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(S.id), [S]), M = (0, b.bt)(S.id, t), L = i.useCallback(() => {
     (0, a.j)(() => {
       v.d.setState({
         dismissedActivityEntryPointTileChannel: S.id
@@ -59,7 +59,7 @@ function I(e) {
     G = (0, f.wE)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     H = (0, d.KF)(S.id) !== d.jy.CAN_LAUNCH,
     V = null != R && R === S.id,
-    z = k.map(e => t => (0, r.jsx)(x.ZP, {
+    z = M.map(e => t => (0, r.jsx)(x.ZP, {
       participant: e,
       channel: S,
       className: E.tile,
@@ -81,13 +81,13 @@ function I(e) {
     }
   }, {
     trackOnInitialLoad: !0
-  }, []), null != w && !U && (!(M >= 2) || !F || H || G || V ? B && 1 === M && D && (F && !H ? z.push(e => (0, r.jsx)(C.h, {
+  }, []), null != w && !U && (!(k >= 2) || !F || H || G || V ? B && 1 === k && D && (F && !H ? z.push(e => (0, r.jsx)(C.h, {
     channel: S,
     guild: w,
     width: e,
     inPopout: A,
     handleClose: L,
-    userParticipantCount: M
+    userParticipantCount: k
   })) : z.push(e => (0, r.jsx)(j.Z, {
     width: e,
     channel: S,
@@ -99,12 +99,12 @@ function I(e) {
     width: e,
     inPopout: A,
     handleClose: L,
-    userParticipantCount: M
+    userParticipantCount: k
   })));
   let W = i.useCallback(e => {
     var t, n;
-    return null != (n = null == (t = k[e]) ? void 0 : t.id) ? n : "empty-tile"
-  }, [k]);
+    return null != (n = null == (t = M[e]) ? void 0 : t.id) ? n : "empty-tile"
+  }, [M]);
   return (0, r.jsx)(g.Z, {
     className: Z,
     keyExtractor: W,

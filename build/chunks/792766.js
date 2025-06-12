@@ -105,8 +105,8 @@ let g = e => {
       topic: y,
       speaker_count: x,
       participant_count: v
-    } = n, O = null != (t = n.members) ? t : [], C = _ ? O.slice(0, 3) : O, j = x - C.length;
-    return _ && (j += O.length - C.length), (0, r.jsxs)("div", {
+    } = n, O = null != (t = n.members) ? t : [], j = _ ? O.slice(0, 3) : O, C = x - j.length;
+    return _ && (C += O.length - j.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: h.flex,
         children: [(0, r.jsxs)("div", {
@@ -165,13 +165,13 @@ let g = e => {
         className: a()(h.members, {
           [h.embed]: _
         }),
-        children: [C.length > 0 && (0, r.jsxs)("div", {
+        children: [j.length > 0 && (0, r.jsxs)("div", {
           className: h.speakers,
-          children: [C.map(e => (0, r.jsx)(g, {
+          children: [j.map(e => (0, r.jsx)(g, {
             speaker: e,
             guildId: E.id,
             isEmbed: _
-          }, e.user.id)), j > 0 ? (0, r.jsxs)("div", {
+          }, e.user.id)), C > 0 ? (0, r.jsxs)("div", {
             className: h.speaker,
             children: [(0, r.jsx)("div", {
               className: a()(h.icon, {
@@ -187,7 +187,7 @@ let g = e => {
               size: _ ? c.Z.Sizes.SIZE_12 : c.Z.Sizes.SIZE_14,
               color: c.Z.Colors.HEADER_SECONDARY,
               children: ["+", f.intl.format(f.t.L1pCBQ, {
-                count: j
+                count: C
               })]
             })]
           }) : null]

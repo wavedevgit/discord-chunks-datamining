@@ -35,9 +35,9 @@ var r = n(255367),
   A = n(248400),
   w = n(981631),
   R = n(354459),
-  M = n(820573);
+  k = n(820573);
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -93,7 +93,7 @@ let D = 16 / 9,
       guildId: a,
       channelId: l.id,
       clickTrap: !0,
-      children: e => (0, r.jsx)(c.P3F, L(k({
+      children: e => (0, r.jsx)(c.P3F, L(M({
         innerRef: h,
         onContextMenu: e => d(n, e)
       }, e), {
@@ -103,7 +103,7 @@ let D = 16 / 9,
           blocked: m,
           ignored: g,
           channel: l,
-          className: M.tile,
+          className: k.tile,
           inCall: !0,
           inPopout: p,
           pulseSpeakingIndicator: !f.enabled,
@@ -150,7 +150,7 @@ let D = 16 / 9,
       blocked: g,
       ignored: _,
       channel: l,
-      className: M.tile,
+      className: k.tile,
       inCall: !0,
       inPopout: h,
       onClick: N,
@@ -193,7 +193,7 @@ let D = 16 / 9,
               let {
                 default: t
               } = await n.e("22183").then(n.bind(n, 987281));
-              return n => (0, r.jsx)(t, L(k({}, n), {
+              return n => (0, r.jsx)(t, L(M({}, n), {
                 stream: e.stream,
                 appContext: p,
                 exitFullscreen: () => {},
@@ -223,7 +223,7 @@ let D = 16 / 9,
               let {
                 default: e
               } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
-              return t => (0, r.jsx)(e, L(k({}, t), {
+              return t => (0, r.jsx)(e, L(M({}, t), {
                 user: x,
                 guildId: y,
                 channel: l,

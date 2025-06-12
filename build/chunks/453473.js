@@ -24,8 +24,8 @@ var r = n(255367),
   x = n(695346),
   v = n(496675),
   O = n(626135),
-  C = n(585483),
-  j = n(70956),
+  j = n(585483),
+  C = n(70956),
   S = n(324701),
   I = n(575016),
   N = n(768943),
@@ -123,7 +123,7 @@ function G(e) {
   }, [n, s]), p = i.useCallback(() => {
     c(!s), s ? null == n || n() : null == t || t()
   }, [n, t, s]);
-  i.useEffect(() => (C.S.subscribe(R.CkL.TOGGLE_FOR_LATER, p), () => void C.S.unsubscribe(R.CkL.TOGGLE_FOR_LATER, p)), [p]);
+  i.useEffect(() => (j.S.subscribe(R.CkL.TOGGLE_FOR_LATER, p), () => void j.S.unsubscribe(R.CkL.TOGGLE_FOR_LATER, p)), [p]);
   let h = (0, m.e7)([N.Z], () => N.Z.hasOverdueReminder(), []);
   return (0, r.jsx)(f.yRy, {
     targetElementRef: u,
@@ -154,7 +154,7 @@ function H(e) {
     closePopout: n
   } = e, l = i.useRef(null), a = (0, _.Z)("for-later", l), [o, s] = i.useState(new Date);
   return i.useEffect(() => {
-    let e = setInterval(() => s(new Date), j.Z.Millis.MINUTE);
+    let e = setInterval(() => s(new Date), C.Z.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }

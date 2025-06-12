@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -82,8 +82,8 @@ class O extends i.PureComponent {
       forceAddReactions: x,
       reactionClassName: v,
       useChatFontScaling: O,
-      forceHideReactionCreates: C,
-      remainingReactions: j,
+      forceHideReactionCreates: j,
+      remainingReactions: C,
       combinedReactions: S,
       visibleReactionsCount: I
     } = this.props, {
@@ -114,7 +114,7 @@ class O extends i.PureComponent {
         isForumToolbar: b,
         useChatFontScaling: O,
         className: v
-      }), j > 0 && (0, r.jsx)(s.P3F, {
+      }), C > 0 && (0, r.jsx)(s.P3F, {
         onClick: t => {
           t.stopPropagation(), (0, m.op)(E, e)
         },
@@ -123,9 +123,9 @@ class O extends i.PureComponent {
         children: (0, r.jsxs)(s.Text, {
           className: T.reactionInner,
           variant: "text-sm/normal",
-          children: ["+", j]
+          children: ["+", C]
         })
-      }), !t && !C && (0, r.jsx)(u.X, {
+      }), !t && !j && (0, r.jsx)(u.X, {
         tabIndex: A || this.state.isHovered ? 0 : -1,
         type: c.O.NORMAL,
         message: e,
@@ -146,7 +146,7 @@ class O extends i.PureComponent {
     })
   }
 }
-let C = e => {
+let j = e => {
   let {
     message: t,
     maxReactions: n,

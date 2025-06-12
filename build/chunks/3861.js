@@ -40,8 +40,8 @@ let v = (0, o.Z)(e => {
     height: A,
     idle: w,
     mode: R,
-    popoutWindow: M,
-    awaitingRemoteSessionInfo: k,
+    popoutWindow: k,
+    awaitingRemoteSessionInfo: M,
     callContainerDimensions: L
   } = e;
   i.useEffect(() => {
@@ -49,7 +49,7 @@ let v = (0, o.Z)(e => {
   }, [T, A, L.width, L.height]);
   let D = (0, d.Q3)("ChannelCallContent"),
     U = i.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, o]);
-  return (null == k ? void 0 : k.channelId) === I.id ? (0, r.jsx)(f.Z, {
+  return (null == M ? void 0 : M.channelId) === I.id ? (0, r.jsx)(f.Z, {
     height: A
   }) : (null == I ? void 0 : I.isGuildVocal()) && !Z ? (0, r.jsx)(h.Z, {
     channel: I,
@@ -88,7 +88,7 @@ let v = (0, o.Z)(e => {
     selectedParticipant: l,
     filteredParticipants: U,
     participants: t,
-    popoutWindow: M,
+    popoutWindow: k,
     className: S,
     idle: w,
     height: A,

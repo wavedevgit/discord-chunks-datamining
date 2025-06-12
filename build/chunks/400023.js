@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(255269),
   w = n(47481),
   R = n(977391),
-  M = n(959258),
-  k = n(73274),
+  k = n(959258),
+  M = n(73274),
   L = n(419388),
   D = n(406534),
   U = n(981631),
@@ -111,7 +111,7 @@ let z = i.memo(function(e) {
       hideSummaries: N = !1,
       jumpBarClassName: A,
       typingGradient: w
-    } = e, [M, z] = i.useState(!1), W = i.useMemo(() => y ? (0, R.aJ)({
+    } = e, [k, z] = i.useState(!1), W = i.useMemo(() => y ? (0, R.aJ)({
       compact: !0,
       messageGroups: 30,
       groupRange: 4,
@@ -135,7 +135,7 @@ let z = i.memo(function(e) {
       canLoadMore: null == S,
       handleScrollToBottom: i.useCallback(() => z(!0), [z]),
       handleScrollFromBottom: i.useCallback(() => z(!1), [z])
-    }), q = (0, k.Z)({
+    }), q = (0, M.Z)({
       scrollerRef: Y.ref,
       isEditing: null != O,
       keyboardModeEnabled: I,
@@ -160,7 +160,7 @@ let z = i.memo(function(e) {
       filterAfterTimestamp: null != S ? S : K,
       showingQuarantineBanner: Z,
       hideSummaries: N,
-      isAtBottom: M,
+      isAtBottom: k,
       jumpToPresent: () => {
         if (g.hasPresent()) {
           var e;
@@ -218,7 +218,7 @@ let z = i.memo(function(e) {
           maskOpacity: 0
         },
         to: {
-          fadeStart: M ? 28 : 84,
+          fadeStart: k ? 28 : 84,
           maskOpacity: +!w
         },
         config: {
@@ -302,7 +302,7 @@ let z = i.memo(function(e) {
     }(t), {
       messageGroupSpacing: T,
       fontSize: R,
-      messageDisplayCompact: k,
+      messageDisplayCompact: M,
       renderSpoilers: L,
       keyboardModeEnabled: D
     } = function() {
@@ -388,12 +388,12 @@ let z = i.memo(function(e) {
     }(t);
     return (0, r.jsx)(b.aQ.Provider, {
       value: (0, A.Z)(L, d),
-      children: (0, r.jsx)(M.v, {
+      children: (0, r.jsx)(k.v, {
         children: (0, r.jsx)(z, H(G({}, u), {
           messageGroupSpacing: T,
           showNewMessagesBar: !0,
           channel: t,
-          messageDisplayCompact: !o && (a || k),
+          messageDisplayCompact: !o && (a || M),
           messages: B,
           channelStream: F,
           permissionVersion: h,

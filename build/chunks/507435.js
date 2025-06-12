@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -137,7 +137,7 @@ function O(e) {
   })
 }
 
-function C(e) {
+function j(e) {
   let {
     className: t,
     data: n,
@@ -196,7 +196,7 @@ function C(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   var t;
   let {
     message: n,
@@ -208,7 +208,7 @@ function j(e) {
     channelId: l.id,
     guildId: l.guild_id,
     messageId: n.id
-  }), O = n.messageReference, j = i.useCallback(() => {
+  }), O = n.messageReference, C = i.useCallback(() => {
     null != O && c.Z.jumpToMessage({
       channelId: O.channel_id,
       messageId: O.message_id,
@@ -227,12 +227,12 @@ function j(e) {
         username: x.nick,
         usernameHook: v(x),
         title: _,
-        titleOnClick: j
+        titleOnClick: C
       })
-    }), (0, r.jsx)(C, {
+    }), (0, r.jsx)(j, {
       className: y.embed,
       data: p,
-      onClickPollLink: u ? void 0 : j
+      onClickPollLink: u ? void 0 : C
     })]
   })
 }

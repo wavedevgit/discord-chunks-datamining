@@ -21,7 +21,7 @@ let y = "DetectedOffPlatformPremiumPerksStore",
   v = {},
   O = [];
 
-function C() {
+function j() {
   let e = !1;
   for (let {
       skuId: t,
@@ -46,7 +46,7 @@ function C() {
   }
   return e
 }
-class j extends(r = s.ZP.Store) {
+class C extends(r = s.ZP.Store) {
   initialize() {
     var e;
     this.waitFor(h.ZP, b.Z, _.Z), O = null != (e = c.K.get(y)) ? e : O
@@ -55,20 +55,20 @@ class j extends(r = s.ZP.Store) {
     return o().values(x)
   }
 }
-l = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in j ? Object.defineProperty(j, i, {
+l = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in C ? Object.defineProperty(C, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : j[i] = l;
-let S = new j(u.Z, {
+}) : C[i] = l;
+let S = new C(u.Z, {
   LOGOUT: function() {
     x = {}, v = {}
   },
-  SKU_FETCH_SUCCESS: C,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: C,
-  ENTITLEMENT_CREATE: C,
-  APPLICATION_FETCH_SUCCESS: C,
+  SKU_FETCH_SUCCESS: j,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: j,
+  ENTITLEMENT_CREATE: j,
+  APPLICATION_FETCH_SUCCESS: j,
   DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: function(e) {
     let {
       skuId: t
@@ -92,6 +92,6 @@ let S = new j(u.Z, {
           skuId: n,
           applicationId: r
         }, e = !0);
-    return e && C(), e
+    return e && j(), e
   }
 })

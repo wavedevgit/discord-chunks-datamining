@@ -21,7 +21,7 @@ let h = {},
   v = {},
   O = new Set;
 
-function C(e) {
+function j(e) {
   let t = p.Z.createFromServer(e),
     n = t.code;
   if (g.has(n)) g.set(n, g.get(n).merge(t));
@@ -42,7 +42,7 @@ function C(e) {
   }
 }
 
-function j(e) {
+function C(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   if (t && !O.has(e.channel_id)) return !1;
   let n = (0, m.Fp)(e) ? (0, m.Q_)((null == e ? void 0 : e.embeds) != null ? null == e ? void 0 : e.embeds[0].url : void 0) : (0, m.Q_)(e.content);
@@ -64,7 +64,7 @@ function I(e) {
   let {
     message: t
   } = e;
-  return j(t, !0)
+  return C(t, !0)
 }
 
 function N(e) {
@@ -72,7 +72,7 @@ function N(e) {
     channelId: t,
     messages: n
   } = e;
-  O.add(t), n.forEach(e => j(e, !0))
+  O.add(t), n.forEach(e => C(e, !0))
 }
 
 function T(e) {
@@ -80,7 +80,7 @@ function T(e) {
     firstMessages: t
   } = e;
   if (null == t) return !1;
-  null == t || t.forEach(e => j(e))
+  null == t || t.forEach(e => C(e))
 }
 class P extends(r = s.ZP.Store) {
   get(e) {
@@ -139,7 +139,7 @@ let A = new P(u.Z, {
       let {
         giftCode: t
       } = e;
-      return _ = _.filter(e => e !== t.code), E.includes(t.code) || (E = [...E, t.code]), C(t)
+      return _ = _.filter(e => e !== t.code), E.includes(t.code) || (E = [...E, t.code]), j(t)
     },
     GIFT_CODE_RESOLVE_FAILURE: function(e) {
       let {
@@ -191,7 +191,7 @@ let A = new P(u.Z, {
       let {
         giftCode: t
       } = e;
-      C(t)
+      j(t)
     },
     GIFT_CODES_FETCH: function(e) {
       let {
@@ -206,7 +206,7 @@ let A = new P(u.Z, {
         skuId: n,
         subscriptionPlanId: r
       } = e;
-      t.forEach(C);
+      t.forEach(j);
       let i = (0, m.Bg)(n, r);
       x[i] = Date.now(), y.delete(i)
     },
@@ -226,7 +226,7 @@ let A = new P(u.Z, {
       let {
         messages: t
       } = e;
-      t.forEach(e => j(e))
+      t.forEach(e => C(e))
     },
     LOAD_PINNED_MESSAGES_SUCCESS: function(e) {
       let {
@@ -236,12 +236,12 @@ let A = new P(u.Z, {
         let {
           message: t
         } = e;
-        return j(t)
+        return C(t)
       })
     },
     SEARCH_FINISH: function(e) {
       e.messages.forEach(e => {
-        e.forEach(e => j(e))
+        e.forEach(e => C(e))
       })
     },
     GIFT_CODE_UPDATE: function(e) {
@@ -261,7 +261,7 @@ let A = new P(u.Z, {
         let {
           first_message: t
         } = e;
-        return null != t && j(t)
+        return null != t && C(t)
       })
     }
   }),

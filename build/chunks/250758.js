@@ -73,7 +73,7 @@ function v(e, t) {
   } = i, {
     autocompletes: p
   } = i;
-  p = j(e, c), E[e] = x({
+  p = C(e, c), E[e] = x({
     searchId: e,
     query: s,
     mode: c,
@@ -123,7 +123,7 @@ function O(e, t, n) {
   }
 }
 
-function C(e) {
+function j(e) {
   let t = (null != e ? e.getFullMatch() : "").trim(),
     n = {
       [b.dCx.FILTER_FROM]: !g.Z.hidePersonalInformation,
@@ -142,7 +142,7 @@ function C(e) {
   }
 }
 
-function j(e, t) {
+function C(e, t) {
   let n = [];
   return t.type === b.Sap.FILTER ? n.push(O(t.filter, t.token, e, 10)) : t.type === b.Sap.FILTER_ALL ? n = function(e, t) {
     let n = (null != e ? e.getFullMatch() : "").trim(),
@@ -167,8 +167,8 @@ function j(e, t) {
           results: [e, a, o]
         }
       }
-    }(e, t))), 5 > (0, p.BU)(r) && r.push(C(e)), r
-  }(t.token, e) : t.type === b.Sap.EMPTY && (n.push(C(t.token)), n.push(function(e) {
+    }(e, t))), 5 > (0, p.BU)(r) && r.push(j(e)), r
+  }(t.token, e) : t.type === b.Sap.EMPTY && (n.push(j(t.token)), n.push(function(e) {
     if (g.Z.hidePersonalInformation) return null;
     let t = h.Z.getHistory(e);
     return null == t ? null : {
@@ -219,7 +219,7 @@ function N() {
     mode: n,
     tokens: r,
     cursorScope: i,
-    autocompletes: j(e, n)
+    autocompletes: C(e, n)
   })
 }
 class T extends(r = a.ZP.Store) {
@@ -253,14 +253,14 @@ let P = new T(o.Z, {
         c = y[r],
         u = !0;
       if (a === s.query && (null == s.mode || s.mode.filter === o.filter)) n = s.autocompletes, u = !1;
-      else if (o.type === b.Sap.EMPTY || o.type === b.Sap.FILTER && o.filter !== b.dCx.FILTER_FROM && o.filter !== b.dCx.FILTER_MENTIONS) null != c && (c.context.clearQuery(), c.results = []), n = j(r, o);
+      else if (o.type === b.Sap.EMPTY || o.type === b.Sap.FILTER && o.filter !== b.dCx.FILTER_FROM && o.filter !== b.dCx.FILTER_MENTIONS) null != c && (c.context.clearQuery(), c.results = []), n = C(r, o);
       else if (null != c) {
         let {
           token: e
         } = o;
         null != e && e.getFullMatch().trim().length > 0 ? (d.Z.requestMembers(r, e.getFullMatch().trim(), 10), c.context.setQuery(e.getFullMatch().trim(), {
           guild: r
-        }), n = s.autocompletes, u = !1) : (c.context.clearQuery(), n = j(r, o))
+        }), n = s.autocompletes, u = !1) : (c.context.clearQuery(), n = C(r, o))
       }
       return E[r] = x({
         searchId: r,

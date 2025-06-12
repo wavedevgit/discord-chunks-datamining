@@ -23,8 +23,8 @@ var r = n(255367),
   x = n(471445),
   v = n(778877),
   O = n(592125),
-  C = n(271383),
-  j = n(699516),
+  j = n(271383),
+  C = n(699516),
   S = n(250758),
   I = n(944486),
   N = n(914010),
@@ -105,8 +105,8 @@ let H = p()("2015-05-15").local(),
     });
     let c = P.default.getUser(o.id),
       u = O.Z.getChannel(e),
-      d = (null == u ? void 0 : u.isPrivate()) ? j.Z.getNickname(o.id) : null,
-      p = null != (l = null != (i = C.ZP.getNick(e, o.id)) ? i : d) ? l : R.ZP.getName(o),
+      d = (null == u ? void 0 : u.isPrivate()) ? C.Z.getNickname(o.id) : null,
+      p = null != (l = null != (i = j.ZP.getNick(e, o.id)) ? i : d) ? l : R.ZP.getName(o),
       m = null != (a = null == c ? void 0 : c.getAvatarURL(e, 20)) ? a : o.getAvatarURL(null == u ? void 0 : u.guild_id, 20);
     return [(0, r.jsx)("img", {
       alt: "",
@@ -137,10 +137,10 @@ let H = p()("2015-05-15").local(),
       children: [null != o ? (0, r.jsx)(o, {
         className: M.searchResultChannelIcon
       }) : null, (0, r.jsx)("strong", {
-        children: (0, y.F6)(i, P.default, j.Z)
+        children: (0, y.F6)(i, P.default, C.Z)
       }), null != a ? (0, r.jsx)("span", {
         className: M.searchResultChannelCategory,
-        children: (0, y.F6)(a, P.default, j.Z)
+        children: (0, y.F6)(a, P.default, C.Z)
       }) : null]
     })
   },

@@ -34,9 +34,9 @@ var r = n(255367),
   A = n(531578),
   w = n(862825),
   R = n(388032),
-  M = n(682065);
+  k = n(682065);
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -61,7 +61,7 @@ class D extends i.Component {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, k(this, "autoAnalytics", function() {
+    super(...e), t = this, M(this, "autoAnalytics", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
       if (null == t.props.searchAnalyticsId || t.props.isSearching) return;
       let n = 0,
@@ -103,9 +103,9 @@ let U = e => {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: M.emptyResultsWrap,
+    className: k.emptyResultsWrap,
     children: (0, r.jsx)("div", {
-      className: M.emptyResultsContent,
+      className: k.emptyResultsContent,
       children: t
     })
   })
@@ -149,11 +149,11 @@ class B extends i.PureComponent {
       isSearching: c
     } = this.props.search;
     return (0, r.jsxs)("section", {
-      className: M.searchResultsWrap,
+      className: k.searchResultsWrap,
       "aria-label": R.intl.string(R.t.zkoeq6),
       children: [this.renderHeader(), (0, r.jsx)(u.Den, {
         ref: this.scrollerRef,
-        className: M.scroller,
+        className: k.scroller,
         children: this.renderContent()
       }), this.renderFooter(), (0, r.jsx)(D, {
         searchId: i,
@@ -170,10 +170,10 @@ class B extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "state", {
+    super(...e), M(this, "state", {
       searchMode: T.QIO.NEWEST,
       searchQuery: null
-    }), k(this, "scrollerRef", i.createRef()), k(this, "scrollTo", (e, t, n) => {
+    }), M(this, "scrollerRef", i.createRef()), M(this, "scrollTo", (e, t, n) => {
       let r = this.scrollerRef.current;
       if (null == r) return;
       let i = r.getScrollerState().scrollTop - e;
@@ -182,9 +182,9 @@ class B extends i.PureComponent {
         animate: t,
         callback: n
       })
-    }), k(this, "selectChannel", e => {
+    }), M(this, "selectChannel", e => {
       e !== x.Z.getChannelId() && d.ZP.transitionToInviteChannelSync(e)
-    }), k(this, "searchPrevious", () => {
+    }), M(this, "searchPrevious", () => {
       let {
         searchId: e,
         search: {
@@ -195,7 +195,7 @@ class B extends i.PureComponent {
         let t = L(e);
         p.jn(e, T.vpv, t)
       }
-    }), k(this, "searchNext", () => {
+    }), M(this, "searchNext", () => {
       let {
         searchId: e,
         search: {
@@ -206,12 +206,12 @@ class B extends i.PureComponent {
         let t = L(e);
         p.m$(e, T.vpv, t)
       }
-    }), k(this, "handleSearchResultsClose", () => {
+    }), M(this, "handleSearchResultsClose", () => {
       let {
         searchId: e
       } = this.props;
       p.qt(e)
-    }), k(this, "searchByMode", e => {
+    }), M(this, "searchByMode", e => {
       let {
         searchId: t,
         searchType: n,
@@ -235,7 +235,7 @@ class B extends i.PureComponent {
           searchMode: e
         })
       }
-    }), k(this, "toggleShowBlockedMessages", () => {
+    }), M(this, "toggleShowBlockedMessages", () => {
       let {
         searchId: e,
         search: {
@@ -243,7 +243,9 @@ class B extends i.PureComponent {
         }
       } = this.props;
       p.QY(e, !t)
-    }), k(this, "renderFooter", () => this.props.isFeedbackVisible ? (0, r.jsx)(N.Z, {}) : null), k(this, "renderHeader", () => {
+    }), M(this, "renderFooter", () => this.props.isFeedbackVisible ? (0, r.jsx)(N.Z, {
+      dismissFeedbackEntrypoint: this.props.dismissFeedbackEntrypoint
+    }) : null), M(this, "renderHeader", () => {
       let {
         searchMode: e
       } = this.state, {
@@ -260,38 +262,38 @@ class B extends i.PureComponent {
         isIndexing: i,
         documentsIndexed: l
       })
-    }), k(this, "renderIndexing", () => {
+    }), M(this, "renderIndexing", () => {
       let e = C.Z.getSearchType(this.props.searchId) === T.aib.GUILD ? R.intl.string(R.t.AXPbZm) : R.intl.string(R.t.Q0JJjo);
       return (0, r.jsxs)(U, {
         children: [(0, r.jsx)(S.Z, {}), (0, r.jsx)("div", {
-          className: (M.emptyResultsText, M.stillIndexing),
+          className: (k.emptyResultsText, k.stillIndexing),
           children: e
         })]
       })
-    }), k(this, "renderNoResults", () => {
+    }), M(this, "renderNoResults", () => {
       let {
         showNoResultsAlt: e
       } = this.props.search, t = e ? R.intl.string(R.t["VrK/2d"]) : R.intl.string(R.t.V6nAfH);
       return (0, r.jsxs)(U, {
         children: [(0, r.jsx)("div", {
-          className: a()(M.noResultsImage, {
-            [M.alt]: e
+          className: a()(k.noResultsImage, {
+            [k.alt]: e
           })
         }), (0, r.jsx)("div", {
-          className: a()(M.emptyResultsText, M.noResults, {
-            [M.alt]: e
+          className: a()(k.emptyResultsText, k.noResults, {
+            [k.alt]: e
           }),
           children: t
         })]
       })
-    }), k(this, "renderError", () => (0, r.jsxs)(U, {
+    }), M(this, "renderError", () => (0, r.jsxs)(U, {
       children: [(0, r.jsx)("div", {
-        className: M.errorImage
+        className: k.errorImage
       }), (0, r.jsx)("div", {
-        className: a()(M.emptyResultsText, M.errorMessage),
+        className: a()(k.emptyResultsText, k.errorMessage),
         children: R.intl.string(R.t.uvDZBQ)
       })]
-    })), k(this, "handleSearchResultClick", (e, t) => {
+    })), M(this, "handleSearchResultClick", (e, t) => {
       let n = y.Z.getChannel(e.channel_id),
         r = null != n ? n.getGuildId() : null,
         {
@@ -318,7 +320,7 @@ class B extends i.PureComponent {
         searchQueryString: L(i),
         searchQuery: C.Z.getQuery(i)
       })
-    }), k(this, "renderContent", () => {
+    }), M(this, "renderContent", () => {
       let {
         searchResults: e,
         blockCount: t,
@@ -347,69 +349,73 @@ function F(e) {
   let {
     searchId: t,
     isFeedbackVisible: n,
-    theme: i
-  } = e, l = (0, c.cj)([C.Z], () => C.Z.getResultsState(t), [t]), {
-    searchAnalyticsId: a,
-    searchType: o
+    theme: i,
+    dismissFeedbackEntrypoint: l
+  } = e, a = (0, c.cj)([C.Z], () => C.Z.getResultsState(t), [t]), {
+    searchAnalyticsId: o,
+    searchType: s
   } = (0, c.cj)([C.Z], () => ({
     searchAnalyticsId: C.Z.getAnalyticsId(t),
     searchType: C.Z.getSearchType()
   }), [t]), {
-    searchResults: s,
-    ignoreCount: u,
-    blockCount: d
+    searchResults: u,
+    ignoreCount: d,
+    blockCount: p
   } = (0, I.Z)(t);
   return (0, r.jsx)(B, {
     searchId: t,
-    search: l,
-    searchAnalyticsId: a,
-    searchType: o,
-    searchResults: s,
-    ignoreCount: u,
-    blockCount: d,
+    search: a,
+    searchAnalyticsId: o,
+    searchType: s,
+    searchResults: u,
+    ignoreCount: d,
+    blockCount: p,
     renderEmbeds: _.NA.useSetting(),
     developerMode: _.Sb.useSetting(),
     theme: i,
-    isFeedbackVisible: n
+    isFeedbackVisible: n,
+    dismissFeedbackEntrypoint: l
   })
 }
 
 function G(e) {
   let {
     theme: t,
-    isFeedbackVisible: n
-  } = e, l = i.useMemo(() => ({
+    isFeedbackVisible: n,
+    dismissFeedbackEntrypoint: l
+  } = e, a = i.useMemo(() => ({
     type: T.aib.DMS
-  }), []), a = (0, b.WJ)(l), o = (0, c.e7)([C.Z], () => C.Z.getSearchResultsQueryString(a)), s = (0, b.jj)(l, w.sR.MESSAGES, o), u = (0, c.cj)([g.Z], () => {
+  }), []), o = (0, b.WJ)(a), s = (0, c.e7)([C.Z], () => C.Z.getSearchResultsQueryString(o)), u = (0, b.jj)(a, w.sR.MESSAGES, s), d = (0, c.cj)([g.Z], () => {
     var e, t, n, r;
     return {
-      isSearching: null != (e = g.Z.getIsFetching(s)) && e,
-      isIndexing: null != (t = g.Z.getIsIndexing(s)) && t,
-      isHistoricalIndexing: null != (n = g.Z.getIsHistoricalIndexing(s)) && n,
-      documentsIndexed: g.Z.getDocumentsIndexed(s),
+      isSearching: null != (e = g.Z.getIsFetching(u)) && e,
+      isIndexing: null != (t = g.Z.getIsIndexing(u)) && t,
+      isHistoricalIndexing: null != (n = g.Z.getIsHistoricalIndexing(u)) && n,
+      documentsIndexed: g.Z.getDocumentsIndexed(u),
       offset: 0,
-      totalResults: null != (r = g.Z.getTotalCount(s)) ? r : 0,
-      hasError: null != g.Z.getError(s),
+      totalResults: null != (r = g.Z.getTotalCount(u)) ? r : 0,
+      hasError: null != g.Z.getError(u),
       showBlockedResults: !1,
-      showNoResultsAlt: g.Z.getShowNoResultsAlt(s)
+      showNoResultsAlt: g.Z.getShowNoResultsAlt(u)
     }
-  }), d = (0, c.e7)([g.Z], () => g.Z.getLastSearchAnalyticsId()), {
-    searchResults: p,
-    ignoreCount: h,
-    blockCount: f
-  } = (0, I.G)(l);
+  }), p = (0, c.e7)([g.Z], () => g.Z.getLastSearchAnalyticsId()), {
+    searchResults: h,
+    ignoreCount: f,
+    blockCount: m
+  } = (0, I.G)(a);
   return (0, r.jsx)(B, {
     searchId: T.aib.DMS,
-    search: u,
-    searchAnalyticsId: d,
+    search: d,
+    searchAnalyticsId: p,
     searchType: T.aib.DMS,
-    searchResults: p,
-    ignoreCount: h,
-    blockCount: f,
+    searchResults: h,
+    ignoreCount: f,
+    blockCount: m,
     renderEmbeds: _.NA.useSetting(),
     developerMode: _.Sb.useSetting(),
     theme: t,
-    isFeedbackVisible: n
+    isFeedbackVisible: n,
+    dismissFeedbackEntrypoint: l
   })
 }
 
@@ -424,16 +430,22 @@ function H(e) {
   } = (0, O.f)({
     location: "SearchResults"
   });
-  return (i.useEffect(() => {
+  i.useEffect(() => {
     c && u && s(!0)
   }, [u, c]), i.useEffect(() => {
     c && (u || t !== a.current && (a.current = t, f.Z.possiblyShowFeedbackModal(A.nw.SEARCH_RESULTS, () => s(!0), () => s(!1))))
-  }, [c, u, t]), l && t === T.aib.DMS) ? (0, r.jsx)(G, {
+  }, [c, u, t]);
+  let d = i.useCallback(() => {
+    s(!1)
+  }, []);
+  return l && t === T.aib.DMS ? (0, r.jsx)(G, {
     theme: n,
-    isFeedbackVisible: o
+    isFeedbackVisible: o,
+    dismissFeedbackEntrypoint: d
   }) : (0, r.jsx)(F, {
     theme: n,
     searchId: t,
-    isFeedbackVisible: o
+    isFeedbackVisible: o,
+    dismissFeedbackEntrypoint: d
   })
 }

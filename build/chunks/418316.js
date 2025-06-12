@@ -31,7 +31,7 @@ function f(e) {
 }
 
 function h(e) {
-  var t, n, r, h, g, _, b, E, y, x, v, O, C, j, S;
+  var t, n, r, h, g, _, b, E, y, x, v, O, j, C, S;
   let {
     item: I,
     renderApplication: N
@@ -55,9 +55,9 @@ function h(e) {
       let D = I.guild_scheduled_event_id,
         L = null != D ? l.ZP.getGuildScheduledEvent(D) : null,
         M = null == L ? void 0 : L.name,
-        U = null == (C = a.Z.getGuild(null == L ? void 0 : L.guild_id)) ? void 0 : C.name,
+        U = null == (j = a.Z.getGuild(null == L ? void 0 : L.guild_id)) ? void 0 : j.name,
         F = (0, l.Z2)(null != L ? L : void 0);
-      return (0, c.Ew)(U) || (0, c.Ew)(M) || !F ? null != (j = I.body) ? j : "" : m.intl.format(m.t.AyvfXV, {
+      return (0, c.Ew)(U) || (0, c.Ew)(M) || !F ? null != (C = I.body) ? C : "" : m.intl.format(m.t.AyvfXV, {
         event_name: M,
         guild_name: U
       });

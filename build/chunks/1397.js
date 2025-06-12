@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(607744),
   w = n(496675),
   R = n(594174),
-  M = n(700785),
-  k = n(862679),
+  k = n(700785),
+  M = n(862679),
   L = n(981631),
   D = n(815660),
   U = n(388032),
@@ -162,7 +162,7 @@ class V extends i.PureComponent {
         shouldShowLurkerModeSuccessPopout: !1
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, r.jsx)(k.Z, H(G({}, E), {
+      children: e => (0, r.jsx)(M.Z, H(G({}, E), {
         children: (0, r.jsxs)("div", {
           ref: this.textAreaContainerRef,
           children: [this.renderMemberVerificationSuccessModal(), b ? (0, r.jsx)(c.yRy, {
@@ -341,7 +341,7 @@ function z(e) {
     isLurking: p,
     isFollowable: u,
     shouldShowLurkerModeSuccessPopout: x,
-    showLurkerModeUpsellPopout: p && null != s && M.Uu(L.Plq.SEND_MESSAGES, i),
+    showLurkerModeUpsellPopout: p && null != s && k.Uu(L.Plq.SEND_MESSAGES, i),
     theme: S.Z.theme,
     canSendMessages: O,
     channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,

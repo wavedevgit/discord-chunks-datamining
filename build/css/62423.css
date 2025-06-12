@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 56d360363af8e657
+  Original File Name: a87ddf0387385e4f
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -11320,8 +11320,16 @@ div.profileThemedContainer__656be {
     justify-content: flex-end
 }
 
-.icon__3379f {
+.iconContainer__3379f {
     cursor: pointer
+}
+
+.icon__3379f {
+    color: var(--interactive-normal)
+}
+
+.icon__3379f:hover {
+    color: var(--interactive-hover)
 }
 
 .searchResultsWrap_a9e706 {
@@ -13263,4 +13271,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=56d360363af8e657.css.map*/
+/*# sourceMappingURL=a87ddf0387385e4f.css.map*/

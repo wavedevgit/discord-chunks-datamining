@@ -23,7 +23,7 @@ var r = n(255367),
 
 function x(e) {
   var t, x, v;
-  let O, C, j, {
+  let O, j, C, {
       onTransitionToInviteChannel: S,
       onAcceptInstantInvite: I,
       guild: N,
@@ -76,7 +76,7 @@ function x(e) {
     isStage: B,
     isStream: !1
   });
-  return C = (0, r.jsxs)("span", {
+  return j = (0, r.jsxs)("span", {
     className: y.infoTitle,
     children: [(0, r.jsx)(u.Z, {
       guildId: N.id,
@@ -96,7 +96,7 @@ function x(e) {
         disableBoostClick: !0
       })
     })]
-  }), G && (j = (0, r.jsx)(a.DY3, {
+  }), G && (C = (0, r.jsx)(a.DY3, {
     className: y.tooltipContainer,
     text: E.intl.string(E.t["/FeTKy"]),
     children: (0, r.jsx)(a.d3s, {
@@ -104,7 +104,7 @@ function x(e) {
       color: "currentColor",
       className: y.infoIcon
     })
-  })), F ? (C = (0, r.jsx)(p.Z.Channel, {
+  })), F ? (j = (0, r.jsx)(p.Z.Channel, {
     channel: L
   }), O = (0, r.jsxs)("span", {
     className: y.infoTitle,
@@ -128,14 +128,14 @@ function x(e) {
       guild: N
     }), (0, r.jsx)(p.Z.Header, {
       text: J,
-      extra: j
+      extra: C
     }), (0, r.jsxs)(p.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: y.headerLine,
         children: [(0, r.jsx)(p.Z.Icon, {
           guild: N
         }), (0, r.jsx)(p.Z.Info, {
-          title: C,
+          title: j,
           onClick: q,
           children: O
         })]

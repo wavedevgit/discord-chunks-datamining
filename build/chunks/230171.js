@@ -24,8 +24,8 @@ var r = n(255367),
   x = n(914010),
   v = n(594174),
   O = n(768581),
-  C = n(433534),
-  j = n(506895),
+  j = n(433534),
+  C = n(506895),
   S = n(758199),
   I = n(943762),
   N = n(914498),
@@ -51,7 +51,7 @@ function R(e) {
     icon: t.icon,
     bot: b
   }), {
-    staticBannerSrc: C,
+    staticBannerSrc: j,
     videoBannerSrc: I,
     bannerAspectRatio: Z
   } = (0, P.E)(t), R = (0, o.e7)([E.default], () => null != s ? s : E.default.getId(), [s]), {
@@ -61,7 +61,7 @@ function R(e) {
     instanceId: U,
     isCurrentlyInInstance: F,
     canLaunchInChannel: B
-  } = (0, j.c)(t.id), G = (0, u.Z)(), H = (0, h.ms)({
+  } = (0, C.c)(t.id), G = (0, u.Z)(), H = (0, h.ms)({
     context: {
       type: "contextless"
     },
@@ -104,7 +104,7 @@ function R(e) {
   });
   return (0, r.jsx)(S.W, {
     title: _,
-    staticBannerSrc: C,
+    staticBannerSrc: j,
     videoBannerSrc: I,
     bannerAspectRatio: Z,
     iconSrc: v,
@@ -125,7 +125,7 @@ function k(e) {
   var t, n, a;
   let {
     app: c
-  } = e, u = (0, C.Eb)({
+  } = e, u = (0, j.Eb)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig

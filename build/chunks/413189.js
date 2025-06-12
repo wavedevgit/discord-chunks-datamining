@@ -24,8 +24,8 @@ var r = n(255367),
   v = n(510064);
 
 function O(e) {
-  var t, n, O, C;
-  let j, S, I, {
+  var t, n, O, j;
+  let C, S, I, {
       message: N,
       channel: T,
       compact: P
@@ -58,13 +58,13 @@ function O(e) {
     V = h.t(T);
   return (i.useEffect(() => {
     null == D && f.Z.shouldFetchWallpapers && g.k9()
-  }, [D]), null == A) ? null : (j = G ? x.intl.format(x.t.z847Tk, {
+  }, [D]), null == A) ? null : (C = G ? x.intl.format(x.t.z847Tk, {
     wallpaper_name: null != (n = null == D ? void 0 : D.label) ? n : x.intl.string(x.t["UQMV/P"])
   }) : x.intl.format(x.t["+lKndX"], {
     username: null == R ? void 0 : R.nick,
     wallpaper_name: null != (O = null == D ? void 0 : D.label) ? O : x.intl.string(x.t["UQMV/P"])
   }), w ? k || Z ? V && F ? S = x.intl.formatToPlainString(x.t.PzTpVV, {
-    wallpaperName: null != (C = null == D ? void 0 : D.label) ? C : x.intl.string(x.t["UQMV/P"])
+    wallpaperName: null != (j = null == D ? void 0 : D.label) ? j : x.intl.string(x.t["UQMV/P"])
   }) : G || H || !F || (S = x.intl.format(x.t.JwUhHh, {
     onClickNitro: () => {
       (0, u.uL)(E.Z5c.NITRO_HOME)
@@ -85,7 +85,7 @@ function O(e) {
     children: x.intl.string(V ? x.t.o6850d : x.t["/ubFp6"])
   })), (0, r.jsx)(b.Z, {
     channel: T,
-    content: j,
+    content: C,
     subtitle: S,
     action: I,
     compact: P,

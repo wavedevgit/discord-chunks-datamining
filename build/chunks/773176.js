@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(995774),
   w = n(931651),
   R = n(280845),
-  M = n(2818),
-  k = n(768943),
+  k = n(2818),
+  M = n(768943),
   L = n(665906),
   D = n(695346),
   U = n(314897),
@@ -236,10 +236,10 @@ function ef(e) {
       q = (0, C.a)(n),
       {
         enabled: $
-      } = M.Z.useExperiment({
+      } = k.Z.useExperiment({
         location: "message_utilities"
       }),
-      ee = (0, c.e7)([k.Z], () => null != k.Z.getSavedMessage(t.id, n.id)),
+      ee = (0, c.e7)([M.Z], () => null != M.Z.getSavedMessage(t.id, n.id)),
       et = (0, er.Z)(),
       en = (0, c.e7)([h.Z], () => h.Z.keyboardModeEnabled);
     return {

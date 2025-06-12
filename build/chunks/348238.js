@@ -38,8 +38,8 @@ var r = n(255367),
   x = n(358085),
   v = n(51144),
   O = n(91047),
-  C = n(50284),
-  j = n(804063),
+  j = n(50284),
+  C = n(804063),
   S = n(981631);
 
 function I(e, t, n) {
@@ -207,7 +207,7 @@ function B(e, t) {
     id: r
   } = t;
   return i.useCallback(e => {
-    e.altKey && (e.preventDefault(), (0, C.Z)(r, n))
+    e.altKey && (e.preventDefault(), (0, j.Z)(r, n))
   }, [r, n])
 }
 
@@ -280,7 +280,7 @@ function V(e, t) {
     let {
       messageReference: n
     } = e;
-    (null == t || (0, j.Z)(t)) && a.Z.jumpToMessage({
+    (null == t || (0, C.Z)(t)) && a.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.message_id,
       flash: !0,

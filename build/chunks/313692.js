@@ -36,7 +36,7 @@ function E(e) {
   } = e, Z = i.useRef(null), N = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == N ? void 0 : N.details.additionalSearchQuery) ? t : {}), R = (0, C.z0)(l, E, {
     addtionalQuery: A,
     shouldDispatch: !0
-  }), M = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), k = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
+  }), k = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), M = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
   (0, u.Ng)(() => {
     let e = null == N ? void 0 : N.details.scrollOffset;
     if (null != e) {
@@ -135,7 +135,7 @@ function E(e) {
         showNoResultsAlt: !1
       }
     }, [R.result, B]);
-  return null == M || null == k || null == G ? null : (0, r.jsxs)("div", {
+  return null == k || null == M || null == G ? null : (0, r.jsxs)("div", {
     className: a()(j.container, P),
     children: [(0, r.jsx)(x.Z, {
       guildId: E,

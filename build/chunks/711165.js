@@ -23,8 +23,8 @@ var r = n(255367),
   x = n(23750),
   v = n(592125),
   O = n(594174),
-  C = n(823379),
-  j = n(324081),
+  j = n(823379),
+  C = n(324081),
   S = n(240126),
   I = n(791914),
   N = n(981631),
@@ -148,7 +148,7 @@ function R(e) {
       }] = e;
       return (0, r.jsxs)("div", {
         className: P.channelRow,
-        children: [(0, r.jsx)(j.Z, {
+        children: [(0, r.jsx)(C.Z, {
           channel: n,
           gotoChannel: () => (0, h.uL)(N.Z5c.CHANNEL(n.getGuildId(), n.id)),
           children: null
@@ -205,7 +205,7 @@ let k = i.memo(function(e) {
           isError: !0, stateMessage: T.intl.string(T.t.j8uIfH)
         };
       default:
-        (0, C.vE)(e)
+        (0, j.vE)(e)
     }
   }(t.state), d = i.useCallback(() => {
     (0, g.gD)(t.scheduledMessageId).then(() => {

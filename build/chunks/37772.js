@@ -23,8 +23,8 @@ var r = n(255367),
   x = n(750030),
   v = n(493892),
   O = n(901461),
-  C = n(739566),
-  j = n(443877),
+  j = n(739566),
+  C = n(443877),
   S = n(492593),
   I = n(938353),
   N = n(25015),
@@ -95,7 +95,7 @@ let G = i.memo(function e(t) {
     en = (0, d.Z)(null == l ? void 0 : l.id),
     {
       disableReactionCreates: er
-    } = (0, j.Z)(l),
+    } = (0, C.Z)(l),
     {
       content: ei,
       hasSpoilerEmbeds: el
@@ -106,7 +106,7 @@ let G = i.memo(function e(t) {
       allowLinks: !0,
       previewLinkTarget: !0
     }),
-    ea = (0, C.ZP)(s),
+    ea = (0, j.ZP)(s),
     eo = (0, x.k)(s),
     es = (0, m.Z)(ea),
     ec = (0, o.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
