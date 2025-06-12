@@ -317,8 +317,8 @@ function eu(e) {
     })
   }, [eX]), eJ = i.useCallback(e => 0 === e ? ei : eq(e, t) ? er : en, [t, eq]), e$ = i.useCallback(e => {
     let t = e === eU.length - 1;
-    return eB && e === eG ? t ? 60 : 20 : eB && t && eP.enabled ? 70 : 0
-  }, [eU.length, eB, eG, eP.enabled]), e0 = i.useCallback((e, n) => {
+    return eB && t ? 60 : eB && e === eG ? 20 : 0
+  }, [eU.length, eB, eG]), e0 = i.useCallback((e, n) => {
     let i = "".concat(e.key),
       a = Q && es(e.categoryInfo, eT, t),
       o = eq(n, t);
@@ -331,15 +331,16 @@ function eu(e) {
       showNitroDivider: o && eB
     }, "header-".concat(i))
   }, [eF, eY, t, eq, Q, eT, eB]), e1 = i.useCallback((e, t) => {
-    let n = t === eU.length - 1;
-    return eB && t === eG ? (0, r.jsx)("div", {
-      className: o()(z.nitroFooter, {
-        [z.lastSection]: n
+    let n = t === eU.length - 1,
+      i = t === eG;
+    return eB && n ? (0, r.jsx)("div", {
+      className: o()(z.lastSectionFooter, {
+        [z.nitroLocked]: i
       })
-    }) : eB && n && eP.enabled ? (0, r.jsx)("div", {
-      className: z.nonNitroFooter
+    }) : eB && t === eG ? (0, r.jsx)("div", {
+      className: o()(z.smallPaddingFooter, z.nitroLocked)
     }) : null
-  }, [eG, eB, eU.length, eP.enabled]), e2 = i.useCallback(e => eM((0, G.cK)(e, Array.from(eD.values()).flat(), eI, a, eg)), [a, eI, eD, eg]), e3 = i.useCallback(e => {
+  }, [eG, eB, eU.length]), e2 = i.useCallback(e => eM((0, G.cK)(e, Array.from(eD.values()).flat(), eI, a, eg)), [a, eI, eD, eg]), e3 = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -376,13 +377,13 @@ function eu(e) {
     guildId: t,
     inExpressionPicker: ep
   }), [ew, eB, ed, t, ep]), e6 = i.useCallback(() => eB ? (0, r.jsx)(v.p, {
-    showUpsell: !!eP.enabled || ek,
+    showUpsell: eP.alwaysStickyUpsell || ek,
     text: eQ(),
     button: K.intl.string(K.t.pj0XBA),
     buttonAnalyticsObject: {
       section: Y.jXE.SOUND_PICKER_FLOATING_UPSELL
     }
-  }) : null, [eQ, eB, eP.enabled, ek]), e8 = i.useCallback(e => {
+  }) : null, [eQ, eB, eP.alwaysStickyUpsell, ek]), e8 = i.useCallback(e => {
     var t;
     return (null == e ? void 0 : e.item.type) !== M.vB.SOUND ? null : (0, r.jsx)(F.Z, {
       closePicker: g,
