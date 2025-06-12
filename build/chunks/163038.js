@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => B
+  Z: () => H
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -34,11 +34,13 @@ var r = n(255367),
   w = n(699516),
   Z = n(944486),
   R = n(594174),
-  k = n(22665),
-  D = n(959517),
-  L = n(995717);
+  k = n(626135),
+  D = n(22665),
+  L = n(981631),
+  M = n(959517),
+  U = n(995717);
 
-function M(e) {
+function F(e) {
   let {
     message: t,
     snapshot: n,
@@ -55,17 +57,21 @@ function M(e) {
       channelId: r.id,
       baseChannelId: l,
       guildId: r.guild_id
-    }), (0, j.Kh)(l))
+    }), (0, j.Kh)(l), k.default.track(L.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+      moderator_report_id: t.channel_id,
+      destination_channel_id: l,
+      destination_message_id: t.id
+    }))
   }, [t]);
   return null == f ? null : (0, r.jsxs)(c.P3F, {
-    className: L.footerContainer,
+    className: U.footerContainer,
     onClick: h,
     children: [null != f.originIconUrl ? (0, r.jsx)("img", {
-      className: L.originIcon,
+      className: U.originIcon,
       src: f.originIconUrl,
       alt: ""
     }) : null, (0, r.jsx)(l.xv, {
-      className: L.footerText,
+      className: U.footerText,
       variant: "text-sm/medium",
       color: "none",
       children: "".concat(f.originLabel, "  •  ").concat(f.timestampLabel)
@@ -76,7 +82,7 @@ function M(e) {
   })
 }
 
-function U(e) {
+function B(e) {
   let {
     mergedMessageRecord: t,
     content: n,
@@ -93,7 +99,7 @@ function U(e) {
     let {
       popouts: n,
       setPopout: r
-    } = (0, x.Z)(e.id, D.d$), {
+    } = (0, x.Z)(e.id, M.d$), {
       usernameProfile: l,
       avatarProfile: a
     } = n, o = (0, y.XO)(e, t, l, r);
@@ -110,7 +116,7 @@ function U(e) {
     }
   }(t, l);
   return (0, r.jsx)(g.Z, {
-    childrenExecutedCommand: (0, r.jsx)(k.Z, {
+    childrenExecutedCommand: (0, r.jsx)(D.Z, {
       reportingUserId: a,
       guildId: l.guild_id,
       channel: l,
@@ -140,11 +146,11 @@ function U(e) {
     }),
     disableInteraction: !0,
     compact: !1,
-    className: L.message
+    className: U.message
   })
 }
 
-function F(e) {
+function G(e) {
   var t, n, l;
   let {
     message: o,
@@ -181,10 +187,10 @@ function F(e) {
     }),
     j = (0, a.e7)([N.Z], () => N.Z.getChannel(o.channel_id));
   return null == j ? null : (0, r.jsx)("div", {
-    className: L.container,
+    className: U.container,
     children: (0, r.jsxs)("div", {
-      className: L.content,
-      children: [(0, r.jsx)(U, {
+      className: U.content,
+      children: [(0, r.jsx)(B, {
         mergedMessageRecord: h,
         content: y,
         channel: j,
@@ -200,8 +206,8 @@ function F(e) {
         isInteracting: !1,
         isMessageSnapshot: !0,
         renderThreadAccessory: !1,
-        className: L.nestedAccessories
-      }), (0, r.jsx)(M, {
+        className: U.nestedAccessories
+      }), (0, r.jsx)(F, {
         message: o,
         snapshot: s,
         index: c
@@ -210,12 +216,12 @@ function F(e) {
   }, c)
 }
 
-function B(e) {
+function H(e) {
   let {
     message: t
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.messageSnapshots.map((e, n) => (0, r.jsx)(F, {
+    children: t.messageSnapshots.map((e, n) => (0, r.jsx)(G, {
       message: t,
       snapshot: e,
       index: n

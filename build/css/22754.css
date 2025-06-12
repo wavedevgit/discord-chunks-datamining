@@ -1,6 +1,6 @@
 /**
   Module ID: 22754
-  Original File Name: bde6e0053058b2ee
+  Original File Name: 397d2bb9f4e7090b
 **/
 .container__5537c {
     display: flex;
@@ -138,6 +138,7 @@
 }
 
 .iconButton__270b2 {
+    align-self: stretch;
     justify-content: center
 }
 
@@ -1324,4 +1325,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=bde6e0053058b2ee.css.map*/
+/*# sourceMappingURL=397d2bb9f4e7090b.css.map*/

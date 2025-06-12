@@ -1,6 +1,6 @@
 /**
   Module ID: 74367
-  Original File Name: 98d7b48711f45922
+  Original File Name: 68c74bb0c351a232
 **/
 .container__5537c {
     display: flex;
@@ -138,6 +138,7 @@
 }
 
 .iconButton__270b2 {
+    align-self: stretch;
     justify-content: center
 }
 
@@ -1507,4 +1508,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=98d7b48711f45922.css.map*/
+/*# sourceMappingURL=68c74bb0c351a232.css.map*/

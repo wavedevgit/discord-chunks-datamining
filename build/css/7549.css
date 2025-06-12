@@ -1,6 +1,6 @@
 /**
   Module ID: 7549
-  Original File Name: 5ab8c1a7673ed1ed
+  Original File Name: 97a9418912f3cf0e
 **/
 .container__270b2 {
     flex-direction: row;
@@ -13,6 +13,7 @@
 }
 
 .iconButton__270b2 {
+    align-self: stretch;
     justify-content: center
 }
 
@@ -501,4 +502,4 @@
     padding-bottom: 8px
 }
 
-/*# sourceMappingURL=5ab8c1a7673ed1ed.css.map*/
+/*# sourceMappingURL=97a9418912f3cf0e.css.map*/

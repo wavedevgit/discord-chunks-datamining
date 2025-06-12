@@ -1,6 +1,6 @@
 /**
   Module ID: 70657
-  Original File Name: c6bc797936fc0c6a
+  Original File Name: 3416bf4b6abb3c4c
 **/
 .container__270b2 {
     flex-direction: row;
@@ -13,6 +13,7 @@
 }
 
 .iconButton__270b2 {
+    align-self: stretch;
     justify-content: center
 }
 
@@ -1190,4 +1191,4 @@
     background-color: unset
 }
 
-/*# sourceMappingURL=c6bc797936fc0c6a.css.map*/
+/*# sourceMappingURL=3416bf4b6abb3c4c.css.map*/
