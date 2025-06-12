@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(179360),
   u = n(40851),
   d = n(906732),
-  f = n(975298),
-  _ = n(125529),
+  _ = n(975298),
+  f = n(125529),
   p = n(124570),
   h = n(404380),
   m = n(594174),
@@ -94,14 +94,14 @@ let w = e => {
     pauseAnimation: D = !1,
     applicationId: L,
     handleSubscribeModalClose: x,
-    withHighlight: k = !1,
-    icon: M,
+    withHighlight: M = !1,
+    icon: k,
     intent: j
   } = e, U = R(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
     analyticsLocations: G
-  } = (0, d.ZP)(), B = (0, u.bp)() === O.IlC.POPOUT, [F, V] = i.useState(!1), Z = (0, s.e7)([m.default], () => m.default.getCurrentUser()), {
+  } = (0, d.ZP)(), B = (0, u.bp)() === O.IlC.POPOUT, [V, F] = i.useState(!1), Z = (0, s.e7)([m.default], () => m.default.getCurrentUser()), {
     fractionalState: H
-  } = (0, f.Z)(), Y = (0, p.y)("guild_boosting_subscribe_button", Z, H), W = (0, s.e7)([g.Z], () => g.Z.hasFetched);
+  } = (0, _.Z)(), Y = (0, p.y)("guild_boosting_subscribe_button", Z, H), W = (0, s.e7)([g.Z], () => g.Z.hasFetched);
   i.useEffect(() => {
     W || (0, c.X8)()
   }, [W]);
@@ -111,7 +111,7 @@ let w = e => {
       isBoostManagementDisabledForFractionalPremium: Y
     }),
     X = async () => {
-      V(!0), await (0, y.u)({
+      F(!0), await (0, y.u)({
         analyticsLocations: G,
         analyticsLocation: t,
         analyticsSourceLocation: n,
@@ -123,10 +123,10 @@ let w = e => {
         applicationId: L,
         handleSubscribeModalClose: x,
         intent: j
-      }), V(!1)
+      }), F(!1)
     }, Q = E.ZP.getPremiumTypeSubscription(), J = (0, r.jsxs)("div", {
       className: T.button,
-      children: [M, null != S ? S : I.intl.string(I.t.gKmQ1N)]
+      children: [k, null != S ? S : I.intl.string(I.t.gKmQ1N)]
     }), $ = (0, h.o)("GuildBoostingSubscribeButton", Z, H), ee = !1;
   return ((ee = null !== Q && !(K.length > 0) && (null == Q ? void 0 : Q.isPausedOrPausePending) && (H === v.a$.NONE || $)) && (J = (0, r.jsxs)("div", {
     className: T.button,
@@ -134,7 +134,7 @@ let w = e => {
       size: "xs",
       className: T.buttonIcon
     }), " ", J]
-  }), U.disabled = !0), null != q) ? (0, r.jsx)(_.Z, {
+  }), U.disabled = !0), null != q) ? (0, r.jsx)(f.Z, {
     text: q,
     "aria-label": !1,
     children: e => (0, r.jsx)(l.gtL, C(A(C(A({}, e), {
@@ -148,9 +148,9 @@ let w = e => {
     size: l.zxk.Sizes.SMALL
   }, U), {
     className: o()(U.className, {
-      [T.buttonHighlighted]: k
+      [T.buttonHighlighted]: M
     }),
-    submitting: F,
+    submitting: V,
     onClick: X,
     pauseAnimation: D,
     children: J

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k,
+  Z: () => M,
   d: () => E
 }), n(388685), n(781311);
 var r, i = n(392711),
@@ -12,9 +12,9 @@ var r, i = n(392711),
   c = n(709054),
   u = n(314897),
   d = n(592125),
-  f = n(486472);
+  _ = n(486472);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -123,7 +123,7 @@ function S(e, t) {
 
 function A() {
   let e = u.default.getId();
-  if (null == e || f.Z.totalUnavailableGuilds > 0) return;
+  if (null == e || _.Z.totalUnavailableGuilds > 0) return;
   let t = O(e);
   for (let e in t) null == d.Z.getChannel(e) && delete t[e]
 }
@@ -189,7 +189,7 @@ function L() {
 }
 class x extends(r = o.ZP.PersistedStore) {
   initialize(e) {
-    b = null != e ? e : {}, L(), this.waitFor(u.default, d.Z, f.Z)
+    b = null != e ? e : {}, L(), this.waitFor(u.default, d.Z, _.Z)
   }
   getState() {
     return b
@@ -242,7 +242,7 @@ class x extends(r = o.ZP.PersistedStore) {
     return null == n ? null : n[1]
   }
 }
-_(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migrations", [e => {
+f(x, "displayName", "DraftStore"), f(x, "persistKey", "DraftStore"), f(x, "migrations", [e => {
   if (null == e) return {};
   for (let t in e) "timestamp" in e[t] && (e[t] = {
     0: e[t]
@@ -256,7 +256,7 @@ _(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migra
   for (let t in e) r[t] = e[t];
   return n
 }]);
-let k = new x(s.Z, {
+let M = new x(s.Z, {
   CONNECTION_OPEN: N,
   LOGOUT: w,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: D,

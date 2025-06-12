@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(481060),
   u = n(355467),
   d = n(37234),
-  f = n(410030),
-  _ = n(174609),
+  _ = n(410030),
+  f = n(174609),
   p = n(703656),
   h = n(626135),
   m = n(74538),
@@ -45,30 +45,30 @@ function R(e) {
     onClose: D,
     onDisplay: L,
     onLearnMore: x,
-    isEmojiPickerOverlay: k = !1
-  } = e, M = (0, s.e7)([g.Z], () => g.Z.affinities), j = (0, s.e7)([g.Z], () => g.Z.hasFetched);
+    isEmojiPickerOverlay: M = !1
+  } = e, k = (0, s.e7)([g.Z], () => g.Z.affinities), j = (0, s.e7)([g.Z], () => g.Z.hasFetched);
   i.useEffect(() => {
     !j && R && u.MH()
   }, [j, R]), i.useEffect(() => {
     h.default.track(I.rMx.PREMIUM_UPSELL_VIEWED, w), null == L || L()
   }, [L, w]);
-  let U = M.length > 1 && R,
+  let U = k.length > 1 && R,
     G = () => 2 === t ? A.hasTabParentContainer : 1 === t ? A.hasParentContainer : A.noParentContainer,
     B = () => {
       h.default.track(I.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: P,
         location_object: I.qAy.NAVIGATION_LINK
-      }), null == x || x(), (0, _.Z)(), D(), (0, d.xf)(), (0, p.uL)(I.Z5c.APPLICATION_STORE)
+      }), null == x || x(), (0, f.Z)(), D(), (0, d.xf)(), (0, p.uL)(I.Z5c.APPLICATION_STORE)
     },
-    F = (0, b.N)(),
-    V = i.useCallback(() => {
+    V = (0, b.N)(),
+    F = i.useCallback(() => {
       var e;
-      return null != (e = (0, m.fr)(F)) ? e : T.intl.string(T.t.pj0XBA)
-    }, [F]),
-    Z = (0, l.ap)((0, f.ZP)()),
+      return null != (e = (0, m.fr)(V)) ? e : T.intl.string(T.t.pj0XBA)
+    }, [V]),
+    Z = (0, l.ap)((0, _.ZP)()),
     H = (0, E.Z)({
       location: "PremiumUpsellPickerOverlay"
-    }) && k;
+    }) && M;
   return H ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.ZMr, {
       onClick: D,
@@ -124,7 +124,7 @@ function R(e) {
               D()
             },
             textOptions: {
-              expressiveButtonText: V()
+              expressiveButtonText: F()
             },
             useExpressiveButton: H
           })]
@@ -155,7 +155,7 @@ function R(e) {
           variant: "heading-xl/bold",
           children: a
         }), U && (0, r.jsx)(O.Z, {
-          affinities: M
+          affinities: k
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           className: A.body,
@@ -183,7 +183,7 @@ function R(e) {
             D()
           },
           textOptions: {
-            textOverride: V()
+            textOverride: F()
           }
         })]
       })]

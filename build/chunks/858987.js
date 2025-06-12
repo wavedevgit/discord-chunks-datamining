@@ -14,8 +14,8 @@ var i = n(512722),
   c = n(563132),
   u = n(630388),
   d = n(74538),
-  f = n(296848),
-  _ = n(244923),
+  _ = n(296848),
+  f = n(244923),
   p = n(981631),
   h = n(231338),
   m = n(388032),
@@ -72,14 +72,14 @@ function I(e) {
     isPrepaidPaymentSource: l,
     inReverseTrial: c,
     paymentSourceId: u,
-    hasPaymentSources: _
+    hasPaymentSources: f
   } = e;
-  if (null === u && _) return m.intl.string(m.t.CpOiEB);
+  if (null === u && f) return m.intl.string(m.t.CpOiEB);
   if (t === h.GZ.ONE_TIME) return o ? m.intl.string(m.t.ouo4FB) : m.intl.string(m.t.ExD0Nj);
   if (a()(null != n, "Subscription plan must be selected to render SubscriptionReviewButton"), i === p.POd.BOOST) return m.intl.string(m.t.eUEeCg);
   if (o) return m.intl.string(m.t.ouo4FB);
   if (c) return m.intl.string(m.t.LQVQIi);
-  if ((0, d.PV)(n.id)) return l ? m.intl.string(m.t.cRCCJy) : null != r ? r.isPausedAllowsResumeButNotUpdates ? m.intl.string(m.t.zpi5pq) : (0, f.R4)(r, n.id, s) ? m.intl.string(m.t.IJI7ys) : m.intl.string(m.t.VPuTc3) : (0, d.W_)(null, n);
+  if ((0, d.PV)(n.id)) return l ? m.intl.string(m.t.cRCCJy) : null != r ? r.isPausedAllowsResumeButNotUpdates ? m.intl.string(m.t.zpi5pq) : (0, _.R4)(r, n.id, s) ? m.intl.string(m.t.IJI7ys) : m.intl.string(m.t.VPuTc3) : (0, d.W_)(null, n);
   return m.intl.string(m.t.YScQSE)
 }
 
@@ -96,7 +96,7 @@ function S(e) {
     invoiceError: i,
     planError: a,
     disablePurchase: d,
-    flashLegalTerms: f,
+    flashLegalTerms: _,
     isSubmitting: h,
     premiumSubscription: b,
     isGift: O,
@@ -111,14 +111,14 @@ function S(e) {
   } = e, {
     application: L,
     selectedPlan: x,
-    hasAcceptedTerms: k,
-    purchaseType: M,
+    hasAcceptedTerms: M,
+    purchaseType: k,
     paymentSourceId: j,
     activeSubscription: U,
     devShelfFetchState: G,
     hasPaymentSources: B
-  } = (0, c.JL)(), F = I({
-    purchaseType: M,
+  } = (0, c.JL)(), V = I({
+    purchaseType: k,
     plan: x,
     premiumSubscription: b,
     isGift: O,
@@ -128,12 +128,12 @@ function S(e) {
     paymentSourceId: j,
     hasPaymentSources: B
   }), {
-    analyticsLocations: V
+    analyticsLocations: F
   } = (0, l.ZP)();
   if (null != i || null != a || d) return (0, r.jsx)(o.zxk, {
     color: o.zxk.Colors.GREEN,
     disabled: !0,
-    children: F
+    children: V
   });
   if (R && B) return (0, r.jsx)(o.ua7, {
     text: m.intl.string(m.t.L7jbQU),
@@ -142,7 +142,7 @@ function S(e) {
       type: "submit",
       "data-testid": "submitButton",
       onClick: D,
-      children: F
+      children: V
     }))
   });
   if (R && !B) return (0, r.jsx)(o.ua7, {
@@ -152,7 +152,7 @@ function S(e) {
       type: "submit",
       "data-testid": "submitButton",
       disabled: !0,
-      children: F
+      children: V
     }))
   });
   if ((0, u.yE)(null != (t = null == L ? void 0 : L.flags) ? t : 0, p.udG.EMBEDDED) && G === s.O.LOADING) return (0, r.jsx)(o.ua7, {
@@ -162,44 +162,44 @@ function S(e) {
       type: "submit",
       "data-testid": "submitButton",
       disabled: !0,
-      children: F
+      children: V
     }))
   });
   if (N) return (0, r.jsxs)(o.gtL, {
     innerClassName: g.innerButton,
-    "data-testid": k ? "purchase" : "submitButton",
-    onClick: k ? C : () => T(n, f),
+    "data-testid": M ? "purchase" : "submitButton",
+    onClick: M ? C : () => T(n, _),
     color: o.zxk.Colors.GREEN,
     submitting: h,
     children: [(0, r.jsx)("img", {
       alt: "",
       className: g.nitroIcon,
       src: E
-    }), F]
+    }), V]
   });
-  else if (!k) return (0, r.jsx)(o.ua7, {
+  else if (!M) return (0, r.jsx)(o.ua7, {
     text: m.intl.string(m.t.XdvBLS),
     children: e => (0, r.jsx)(o.zxk, v(y({}, e), {
       color: o.zxk.Colors.GREEN,
       type: "submit",
-      onClick: () => T(n, f),
+      onClick: () => T(n, _),
       "data-testid": "submitButton",
-      children: F
+      children: V
     }))
   });
-  else if (P && null != U && null != j) return (0, r.jsx)(_.Z, {
+  else if (P && null != U && null != j) return (0, r.jsx)(f.Z, {
     activeSubscription: U,
     onNext: w,
     isSubmitting: h,
     paymentSourceId: j,
-    buttonLabel: F,
-    analyticsLocations: V
+    buttonLabel: V,
+    analyticsLocations: F
   });
   else return (0, r.jsx)(o.zxk, {
     "data-testid": "purchase",
     onClick: C,
     color: o.zxk.Colors.GREEN,
     submitting: h,
-    children: F
+    children: V
   })
 }

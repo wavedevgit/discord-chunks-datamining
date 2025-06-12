@@ -25,7 +25,7 @@ var r = n(392711),
   u = n(981631),
   d = n(388032);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,14 +34,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -227,7 +227,7 @@ function C(e, t) {
 }
 
 function R() {
-  (0, o.Pe)(), T.reset(), i()(o.ZP).forOwn((e, t) => T.addRule(_({
+  (0, o.Pe)(), T.reset(), i()(o.ZP).forOwn((e, t) => T.addRule(f({
     type: t
   }, e)))
 }

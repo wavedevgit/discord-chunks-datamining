@@ -1,14 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  DH: () => F,
+  DH: () => V,
   Ks: () => B,
   Ws: () => Z,
   g2: () => j,
-  hf: () => k,
+  hf: () => M,
   k3: () => U,
-  qN: () => V,
-  tP: () => M
+  qN: () => F,
+  tP: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,8 +19,8 @@ var r = n(255367),
   c = n(335131),
   u = n(594190),
   d = n(98278),
-  f = n(507808),
-  _ = n(594174),
+  _ = n(507808),
+  f = n(594174),
   p = n(78839),
   h = n(617136),
   m = n(915750),
@@ -78,13 +78,13 @@ function x(e, t) {
   }), e
 }
 
-function k(e) {
+function M(e) {
   let {
     quest: t,
     location: n,
     questContentPosition: r,
     questContentRowIndex: a
-  } = e, s = (0, o.e7)([_.default], () => _.default.getCurrentUser()), l = null == s ? void 0 : s.hasVerifiedEmailOrPhone(), c = null == s ? void 0 : s.verified, u = (0, h.O5)();
+  } = e, s = (0, o.e7)([f.default], () => f.default.getCurrentUser()), l = null == s ? void 0 : s.hasVerifiedEmailOrPhone(), c = null == s ? void 0 : s.verified, u = (0, h.O5)();
   return i.useCallback(() => {
     null != t && (u({
       questId: t.id,
@@ -100,7 +100,7 @@ function k(e) {
   }, [t, u, n, r, a, l, c])
 }
 
-function M(e) {
+function k(e) {
   var t;
   let n = (0, o.Wu)([u.ZP], () => u.ZP.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
   return null != n && Date.now() - 2592e7 <= (null != (t = n.lastLaunched) ? t : 0)
@@ -177,7 +177,7 @@ function B(e) {
     location: o,
     questContentPosition: s,
     questContentRowIndex: u,
-    inGiftInventory: _,
+    inGiftInventory: f,
     isVideoQuest: p,
     inGameQuest: b
   } = e, v = N.dr.CONFLICT_CHECKS;
@@ -191,7 +191,7 @@ function B(e) {
     default:
       v = N.dr.CONFLICT_CHECKS
   }
-  let T = k({
+  let T = M({
       quest: n,
       location: o,
       questContentPosition: s,
@@ -204,8 +204,8 @@ function B(e) {
     L = i.useCallback(() => {
       (0, d.$)()
     }, []),
-    M = i.useCallback(() => {
-      (0, f.Y)({
+    k = i.useCallback(() => {
+      (0, _.Y)({
         pageType: C.ZY5.GLOBAL_DISCOVERY_QUESTS,
         sectionType: C.jXE.QUEST_TILE_CTA,
         ctaObject: C.qAy.CTA_TO_ORBS_SHOP
@@ -251,7 +251,7 @@ function B(e) {
         };
       case E.OH.ACCEPTED:
       case E.OH.IN_PROGRESS:
-        if (S && _) return {
+        if (S && f) return {
           text: P.intl.string(P.t.Cfye4u),
           tooltipText: null,
           onClick: () => (0, O.gI)({
@@ -307,23 +307,23 @@ function B(e) {
         else if ((0, O.xN)(n.config)) return {
           tooltipText: null,
           text: P.intl.string(P.t.WYchdX),
-          onClick: M
+          onClick: k
         };
         return x(D({}, i), {
           text: P.intl.string(P.t.bAGFz8)
         })
     }
-  }, [r, p, S, _, T, a, n, o, s, u, j, w, L, M, b, U, B])
+  }, [r, p, S, f, T, a, n, o, s, u, j, w, L, k, b, U, B])
 }
 
-function F() {
+function V() {
   return (0, o.e7)([b.Z], () => {
     var e, t;
     return null != (t = null != (e = b.Z.questDeliveryOverride) ? e : (0, O.PM)(b.Z.quests, b.Z.questToDeliverForPlacement, y.Ok.DESKTOP_ACCOUNT_PANEL_AREA)) ? t : null
   })
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     location: n,
@@ -376,9 +376,9 @@ function Z(e) {
     location: t
   } = e, {
     isQuestBarVisible: n
-  } = V({
+  } = F({
     location: t,
-    quest: F()
+    quest: V()
   }), {
     lastFetchedCurrentQuests: r,
     lastFetchedQuestToDeliver: i

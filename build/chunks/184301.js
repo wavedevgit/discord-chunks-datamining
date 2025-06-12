@@ -38,13 +38,13 @@ async function l() {
   else throw Error("Invalid arguments");
   if (null == e) return Promise.resolve();
   let {
-    waitForRefetch: f
+    waitForRefetch: _
   } = (0, i.x)({
     location: "preloadUserProfileForPopout"
   });
   await (0, a.Z)(e, t, s({
     withMutualFriends: !0,
     withMutualGuilds: !0,
-    waitForRefetch: f
+    waitForRefetch: _
   }, n))
 }

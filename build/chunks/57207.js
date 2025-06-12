@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => f,
+  B: () => _,
   i: () => d
 });
 var r = n(399606),
@@ -59,7 +59,7 @@ function d(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   var t;
   return !l.Z.newUserMinAgeRequiredOverridden && (null != a.default.getId() ? s.default.age(a.default.getId()) : 0) < (null != (t = c[e]) ? t : u)
 }

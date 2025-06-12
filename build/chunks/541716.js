@@ -223,7 +223,7 @@ let s = {
     showSlowmodeIndicator: !0,
     showTypingIndicator: !0
   },
-  f = {
+  _ = {
     analyticsName: "voice_channel_status",
     drafts: {
       type: i.d.ChannelMessage
@@ -252,7 +252,7 @@ let s = {
     showCharacterCount: !0,
     layout: 1
   },
-  _ = {
+  f = {
     analyticsName: "thread_creation",
     attachments: !0,
     drafts: {
@@ -486,8 +486,8 @@ let s = {
     SIDEBAR: c,
     EDIT: u,
     FORM: d,
-    VOICE_CHANNEL_STATUS: f,
-    THREAD_CREATION: _,
+    VOICE_CHANNEL_STATUS: _,
+    THREAD_CREATION: f,
     USER_PROFILE: m,
     USER_PROFILE_REPLY: E,
     PROFILE_BIO_INPUT: b,

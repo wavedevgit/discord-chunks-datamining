@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(906732),
   u = n(335131),
   d = n(927513),
-  f = n(768865),
-  _ = n(617136),
+  _ = n(768865),
+  f = n(617136),
   p = n(569984),
   h = n(497505),
   m = n(703656),
@@ -45,7 +45,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,7 +70,7 @@ function M(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -96,13 +96,13 @@ function G(e) {
     badgeClassName: d,
     displayProfile: E,
     onClose: x,
-    shouldOpenBadgeTooltip: M,
+    shouldOpenBadgeTooltip: k,
     shouldGlowTenureBadge: G
   } = e, {
     analyticsLocations: B
   } = (0, c.ZP)(l.Z.BADGE), {
-    context: F,
-    trackUserProfileAction: V
+    context: V,
+    trackUserProfileAction: F
   } = (0, I.KZ)(), Z = b.default.getCurrentUser(), H = (0, O.yd)(null == Z ? void 0 : Z.premiumType, P.p9.TIER_2), Y = (0, A.Of)(null != (t = null == Z ? void 0 : Z.id) ? t : null), W = (0, S.Z)(Y).some(e => e.id === g.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
     className: a()(L.container, i),
@@ -114,12 +114,12 @@ function G(e) {
         c = (0, v.fv)(e.id),
         b = null != c || e.id === w.a,
         O = t => {
-          if (V({
+          if (F({
               action: "PRESS_BADGE"
-            }), (0, T.NE)(k({
+            }), (0, T.NE)(M({
               badge: e.id,
               analyticsLocations: B
-            }, F)), i) return void(0, u.mK)({
+            }, V)), i) return void(0, u.mK)({
             openInLayer: !1,
             tab: R.AW.ORBS,
             analyticsLocations: B,
@@ -131,7 +131,7 @@ function G(e) {
                 premium_type: H,
                 viewed_user_id: null == E ? void 0 : E.userId
               }), H) {
-              (null == E ? void 0 : E.userId) === (null == Z ? void 0 : Z.id) ? (0, m.uL)(C.Z5c.NITRO_HOME) : (0, f.k)({
+              (null == E ? void 0 : E.userId) === (null == Z ? void 0 : Z.id) ? (0, m.uL)(C.Z5c.NITRO_HOME) : (0, _.k)({
                 analyticsLocations: B,
                 displayProfile: E
               }), null == x || x();
@@ -144,7 +144,7 @@ function G(e) {
               if (null == n) return;
               return null == x || x(), n(t)
             }
-            return (0, f.k)({
+            return (0, _.k)({
               analyticsLocations: B,
               displayProfile: E
             }), void(null == x || x())
@@ -155,15 +155,15 @@ function G(e) {
           if (null != n) return null == x || x(), n(t)
         },
         I = () => {
-          e.id === S.i && y.default.track(C.rMx.QUEST_CONTENT_VIEWED, j(k({}, (0, _.mH)(h.jn.QUEST_BADGE)), {
+          e.id === S.i && y.default.track(C.rMx.QUEST_CONTENT_VIEWED, j(M({}, (0, f.mH)(h.jn.QUEST_BADGE)), {
             google_advertising_id: p.Z.googleAdvertisingId,
             is_targeted: !1
-          })), V({
+          })), F({
             action: "HOVER_BADGE"
-          }), (0, T.Qf)(k({
+          }), (0, T.Qf)(M({
             badge: e.id,
             analyticsLocations: B
-          }, F))
+          }, V))
         },
         A = U({
           badge: e,
@@ -173,7 +173,7 @@ function G(e) {
       return (0, r.jsx)(o.DY3, {
         text: A,
         "aria-label": e.description,
-        forceOpen: null != M && M(e.id),
+        forceOpen: null != k && k(e.id),
         delay: N.vB,
         children: (0, r.jsx)(o.eee, {
           onClick: O,

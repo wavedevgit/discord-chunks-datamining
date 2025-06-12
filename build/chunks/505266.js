@@ -115,15 +115,15 @@ function d(e, t) {
   }
   u(e, t), e.prototype = null === t ? Object.create(t) : (n.prototype = t.prototype, new n)
 }
-var f = function() {
-  return (f = Object.assign || function(e) {
+var _ = function() {
+  return (_ = Object.assign || function(e) {
     for (var t, n = 1, r = arguments.length; n < r; n++)
       for (var i in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
     return e
   }).apply(this, arguments)
 };
 
-function _(e, t, n, r) {
+function f(e, t, n, r) {
   return new(n || (n = Promise))(function(i, a) {
     function o(e) {
       try {
@@ -269,7 +269,7 @@ var h = function(e) {
       e.prototype.update.call(this, t), this._z.update(t)
     }, t.prototype.previewUpdate = function(t) {
       var n = e.prototype.previewUpdate.call(this, t);
-      return f(f({}, n), {
+      return _(_({}, n), {
         z: this._z.previewUpdate(t)
       })
     }, Object.defineProperty(t.prototype, "z", {
@@ -372,7 +372,7 @@ function A(e) {
       case "oscillating-random":
         return new y(O(e.minValue, e.maxValue), O(e.minStart, e.maxStart), O(e.minFinal, e.maxFinal), O(e.minDuration, e.maxDuration), I(e.minDirection, e.maxDirection), v(e.easingFunctions)[0])
     }
-  }(f(f({}, e), {
+  }(_(_({}, e), {
     valueType: "number"
   }))
 }
@@ -406,16 +406,16 @@ function N(e) {
       case "oscillating-random":
         n = T(e.minValue), r = T(e.maxValue);
         var d = T(e.minStart),
-          f = T(e.maxStart),
-          _ = T(e.minFinal),
+          _ = T(e.maxStart),
+          f = T(e.minFinal),
           p = T(e.maxFinal),
           h = T(e.minDuration),
           g = T(e.maxDuration),
           S = T(e.minDirection),
           A = T(e.maxDirection);
-        return new m(new y(O(n.x, r.x), O(d.x, f.x), O(_.x, p.x), O(h.x, g.x), I(S.x, A.x), v(e.easingFunctions)[0]), new y(O(n.y, r.y), O(d.y, f.y), O(_.y, p.y), O(h.y, g.y), I(S.y, A.y), v(e.easingFunctions)[0]), e.uniformVectorValues)
+        return new m(new y(O(n.x, r.x), O(d.x, _.x), O(f.x, p.x), O(h.x, g.x), I(S.x, A.x), v(e.easingFunctions)[0]), new y(O(n.y, r.y), O(d.y, _.y), O(f.y, p.y), O(h.y, g.y), I(S.y, A.y), v(e.easingFunctions)[0]), e.uniformVectorValues)
     }
-  }(f(f({}, e), {
+  }(_(_({}, e), {
     valueType: "Vector2"
   }))
 }
@@ -449,23 +449,23 @@ function C(e) {
       case "oscillating-random":
         n = S(e.minValue), r = S(e.maxValue);
         var d = S(e.minStart),
-          f = S(e.maxStart),
-          _ = S(e.minFinal),
+          _ = S(e.maxStart),
+          f = S(e.minFinal),
           p = S(e.maxFinal),
           h = S(e.minDuration),
           m = S(e.maxDuration),
           T = S(e.minDirection),
           A = S(e.maxDirection);
-        return new g(new y(O(n.x, r.x), O(d.x, f.x), O(_.x, p.x), O(h.x, m.x), I(T.x, A.x), v(e.easingFunctions)[0]), new y(O(n.y, r.y), O(d.y, f.y), O(_.y, p.y), O(h.y, m.y), I(T.y, A.y), v(e.easingFunctions)[0]), new y(O(n.z, r.z), O(d.z, f.z), O(_.z, p.z), O(h.z, m.z), I(T.z, A.z), v(e.easingFunctions)[0]), e.uniformVectorValues)
+        return new g(new y(O(n.x, r.x), O(d.x, _.x), O(f.x, p.x), O(h.x, m.x), I(T.x, A.x), v(e.easingFunctions)[0]), new y(O(n.y, r.y), O(d.y, _.y), O(f.y, p.y), O(h.y, m.y), I(T.y, A.y), v(e.easingFunctions)[0]), new y(O(n.z, r.z), O(d.z, _.z), O(f.z, p.z), O(h.z, m.z), I(T.z, A.z), v(e.easingFunctions)[0]), e.uniformVectorValues)
     }
-  }(f(f({}, e), {
+  }(_(_({}, e), {
     valueType: "Vector3"
   }))
 }
 
 function R(e, t, n, r, i) {
   var a = function(e, t) {
-      return f(f({
+      return _(_({
         id: t
       }, l), e)
     }(t, e),
@@ -539,7 +539,7 @@ var w = r.forwardRef(function(e, t) {
       c = e.onMouseDown,
       u = e.onMouseMove,
       d = e.onMouseUp,
-      _ = e.onBeforeRender,
+      f = e.onBeforeRender,
       p = e.onAfterRender,
       h = e.requestAnimationFrame,
       m = void 0 === h ? window.requestAnimationFrame : h,
@@ -569,7 +569,7 @@ var w = r.forwardRef(function(e, t) {
         if (null != e) {
           var t = e.getContext("2d");
           if (null != t) {
-            t.clearRect(0, 0, e.width, e.height), null == _ || _(t), A.current.forEach(function(n, r) {
+            t.clearRect(0, 0, e.width, e.height), null == f || f(t), A.current.forEach(function(n, r) {
               var i = n.confetti,
                 a = n.spriteCanvas;
               i.update(s), i.draw(a, t), i.shouldDestroy(e, s) && A.current.delete(r)
@@ -578,7 +578,7 @@ var w = r.forwardRef(function(e, t) {
             0 !== C.current && (w.current = 1e3 / (n - C.current)), C.current = n
           }
         }
-      }, [s, p, _, m]);
+      }, [s, p, f, m]);
     r.useEffect(function() {
       null != N.current && (E(N.current), N.current = m(D))
     }, [E, D, m]);
@@ -592,10 +592,10 @@ var w = r.forwardRef(function(e, t) {
         var o, s = R(null != (o = e.id) ? o : (0, i.Z)(), e, n, r, a);
         return L(s, t), s
       }, [L]),
-      k = r.useCallback(function(e) {
+      M = r.useCallback(function(e) {
         A.current.delete(e)
       }, []),
-      M = r.useCallback(function() {
+      k = r.useCallback(function() {
         return A.current.clear()
       }, []),
       j = r.useCallback(function() {
@@ -605,14 +605,14 @@ var w = r.forwardRef(function(e, t) {
       return {
         createConfetti: x,
         addConfetti: L,
-        deleteConfetti: k,
-        clearConfetti: M,
+        deleteConfetti: M,
+        clearConfetti: k,
         getCanvas: j,
         addReadyListener: I,
         removeReadyListener: T,
         isReady: v
       }
-    }, [x, L, k, M, j, I, T, v]);
+    }, [x, L, M, k, j, I, T, v]);
     var U = r.useCallback(function(e, t) {
         var n, r, i = t.clickHandler,
           o = t.mouseHandler;
@@ -668,12 +668,12 @@ var w = r.forwardRef(function(e, t) {
           clickHandler: c
         })
       }, [U, c]),
-      F = r.useCallback(function(e) {
+      V = r.useCallback(function(e) {
         return U(e, {
           mouseHandler: u
         })
       }, [U, u]),
-      V = r.useCallback(function(e) {
+      F = r.useCallback(function(e) {
         return U(e, {
           mouseHandler: d
         })
@@ -682,11 +682,11 @@ var w = r.forwardRef(function(e, t) {
       var e = function(e, t, n) {
         null != n && window.addEventListener(e, t)
       };
-      return e("click", G, l), e("mousedown", B, c), e("mousemove", F, u), e("mouseup", V, d),
+      return e("click", G, l), e("mousedown", B, c), e("mousemove", V, u), e("mouseup", F, d),
         function() {
-          window.removeEventListener("click", G), window.removeEventListener("mousedown", B), window.removeEventListener("mousemove", F), window.removeEventListener("mouseup", F)
+          window.removeEventListener("click", G), window.removeEventListener("mousedown", B), window.removeEventListener("mousemove", V), window.removeEventListener("mouseup", V)
         }
-    }, [G, B, F, V, l, c, u, d]), r.useEffect(function() {
+    }, [G, B, V, F, l, c, u, d]), r.useEffect(function() {
       var e = y.current,
         t = new ResizeObserver(function() {
           ! function(e) {
@@ -702,7 +702,7 @@ var w = r.forwardRef(function(e, t) {
         function() {
           null != e && t.unobserve(e)
         }
-    }, [S]), r.createElement("canvas", f({}, b, {
+    }, [S]), r.createElement("canvas", _({}, b, {
       className: o,
       ref: y
     }))
@@ -724,11 +724,11 @@ var w = r.forwardRef(function(e, t) {
       c = e.spriteHeight,
       u = r.useRef(null),
       d = r.useRef([]),
-      f = P(),
-      h = f.isReady,
-      m = f.addReadyListener,
-      g = f.removeReadyListener,
-      E = f.setIsReady;
+      _ = P(),
+      h = _.isReady,
+      m = _.addReadyListener,
+      g = _.removeReadyListener,
+      E = _.setIsReady;
     r.useImperativeHandle(t, function() {
       return {
         getCanvas: function() {
@@ -803,7 +803,7 @@ var w = r.forwardRef(function(e, t) {
         })
       }, [o]),
       O = r.useCallback(function() {
-        return _(void 0, void 0, void 0, function() {
+        return f(void 0, void 0, void 0, function() {
           return p(this, function(e) {
             switch (e.label) {
               case 0:
@@ -851,14 +851,14 @@ function x(e, t) {
         l = null == t ? void 0 : t.getCanvas();
       if (null != l && null != s && 0 !== s.sprites.length) return null == e ? void 0 : e.createConfetti(n, l, s, a, o)
     }, [e, t]),
-    f = r.useCallback(function(e, t, n) {
+    _ = r.useCallback(function(e, t, n) {
       for (var r = [], i = 0; i < t; i++) {
         var a = d(e, n);
         a && r.push(a)
       }
       return r
     }, [d]),
-    _ = r.useCallback(function(n) {
+    f = r.useCallback(function(n) {
       var r = null == t ? void 0 : t.getCanvas();
       null != r && (null == e || e.addConfetti(n, r))
     }, [e, t]),
@@ -871,11 +871,11 @@ function x(e, t) {
   return r.useMemo(function() {
     return {
       createConfetti: d,
-      createMultipleConfetti: f,
-      addConfetti: _,
+      createMultipleConfetti: _,
+      addConfetti: f,
       clearConfetti: h,
       deleteConfetti: p,
       isReady: null != t && null != e && c && o
     }
-  }, [_, h, e, d, f, p, c, o, t])
+  }, [f, h, e, d, _, p, c, o, t])
 }

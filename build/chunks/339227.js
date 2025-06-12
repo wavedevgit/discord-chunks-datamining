@@ -12,8 +12,8 @@ var r = n(512722),
   c = n(710845),
   u = n(772096),
   d = n(428595),
-  f = n(594199),
-  _ = n(364458),
+  _ = n(594199),
+  f = n(364458),
   p = n(70956),
   h = n(364964),
   m = n(40786),
@@ -227,7 +227,7 @@ let v = new c.Z("MarkdownToSlate"),
 for (let e in d.Z.RULES) {
   if (!(e in I)) throw Error("Slate: Unknown markdown rule: ".concat(e, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
   let t = I[e];
-  "skip" !== t.type && (S[e] = N(d.Z.RULES[e])), "skip" !== t.type && "inlineObject" !== t.type && (A[e] = N("text" === e ? f.ZP : d.Z.RULES[e]))
+  "skip" !== t.type && (S[e] = N(d.Z.RULES[e])), "skip" !== t.type && "inlineObject" !== t.type && (A[e] = N("text" === e ? _.ZP : d.Z.RULES[e]))
 }
 
 function N(e) {
@@ -292,17 +292,17 @@ let R = {
     }
   },
   P = /(-# +)/,
-  w = (0, _.Z)([S, R]),
-  D = (0, _.Z)([A, R]),
+  w = (0, f.Z)([S, R]),
+  D = (0, f.Z)([A, R]),
   L = l._p(w),
   x = l._p(D),
-  k = {
+  M = {
     max: 1 / 0,
     maxAge: +p.Z.Millis.MINUTE,
     updateAgeOnGet: !0
   },
-  M = new(o())(k),
-  j = new(o())(k);
+  k = new(o())(M),
+  j = new(o())(M);
 
 function U(e, t, n) {
   let r = [],
@@ -313,7 +313,7 @@ function U(e, t, n) {
       isSlate: !0
     },
     a = n ? x : L,
-    o = n ? j : M,
+    o = n ? j : k,
     s = o.get(e);
   if (null != s) return s;
   let l = e.replace(/\r\n/g, " \n").replace(/[\r\f]/g, " ").replace(/\t/g, " ") + "\n\n",
@@ -325,7 +325,7 @@ function U(e, t, n) {
       type: "paragraph",
       content: a(l, !0, i)
     };
-  F(r, l, c, 0, []);
+  V(r, l, c, 0, []);
   let u = B(r);
   return o.set(e, u), u
 }
@@ -372,7 +372,7 @@ function B(e) {
   return t
 }
 
-function F(e, t, n, r, a) {
+function V(e, t, n, r, a) {
   let {
     content: o,
     type: s,
@@ -489,7 +489,7 @@ function F(e, t, n, r, a) {
       let {
         before: n,
         after: i
-      } = V(t, s, r, l);
+      } = F(t, s, r, l);
       return r = H(e, t, n, r, "syntaxBefore"), a.push(s), r = Z(e, t, null != o ? o : "", r, a), a.pop(), r = H(e, t, i, r, "syntaxAfter"), W(t, r)
     }
     default:
@@ -497,7 +497,7 @@ function F(e, t, n, r, a) {
   }
 }
 
-function V(e, t, n, r) {
+function F(e, t, n, r) {
   if ("inlineCode" === t) return {
     before: r[1],
     after: r[1]
@@ -524,7 +524,7 @@ function Z(e, t, n, r, i) {
     attributes: i,
     data: null
   }) : (n instanceof Array || (n = [n]), n.forEach(n => {
-    r = F(e, t, n, r, i)
+    r = V(e, t, n, r, i)
   })), W(t, r)
 }
 

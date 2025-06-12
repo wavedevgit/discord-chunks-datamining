@@ -42,12 +42,12 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = "daily_cap",
+let f = "daily_cap",
   p = 3,
   h = {
     numberOfDCsShownToday: 0,
@@ -60,7 +60,7 @@ let _ = "daily_cap",
   };
 
 function m() {
-  h = f(u({}, h), {
+  h = _(u({}, h), {
     dismissibleContentSeenDuringSession: new Set,
     renderedAtTimestamps: new Map
   })
@@ -90,7 +90,7 @@ function b(e) {
       e.setHours(0, 0, 0, 0), h.dailyCapPeriodStart = e.getTime()
     }
     h.numberOfDCsShownToday += 1, h.numberOfDCsShownToday > p && o.default.track(l.rMx.DCF_CAP_EXCEEDED, {
-      cap_type: _,
+      cap_type: f,
       dismissible_content: t,
       shown_dcs: h.numberOfDCsShownToday
     })

@@ -14,8 +14,8 @@ var r = n(255367),
   c = n(481060),
   u = n(951394),
   d = n(605236),
-  f = n(314897),
-  _ = n(837411),
+  _ = n(314897),
+  f = n(837411),
   p = n(510659),
   h = n(652853),
   m = n(228168),
@@ -83,7 +83,7 @@ function N(e) {
     targetRef: I,
     onAction: T,
     renderMoreButtonPopout: N
-  } = e, C = i.useRef(null), R = (0, s.e7)([f.default], () => f.default.getId() === t.id), P = (0, _.Z)(t.id), {
+  } = e, C = i.useRef(null), R = (0, s.e7)([_.default], () => _.default.getId() === t.id), P = (0, f.Z)(t.id), {
     themeType: w
   } = (0, h.z)(), {
     onInteraction: D,
@@ -103,7 +103,7 @@ function N(e) {
         interactionSourceId: O
       }), w === m.lY.POPOUT && (0, d.EW)(l.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
-    k = () => {
+    M = () => {
       L(I), n === m.n_.AVATAR ? T({
         action: "PRESS_REPLY_AVATAR"
       }) : n === m.n_.STATUS ? T({
@@ -147,7 +147,7 @@ function N(e) {
       delay: 0,
       "aria-label": !1,
       children: (0, r.jsx)(u.zx, {
-        onClick: k,
+        onClick: M,
         className: E.button,
         "aria-label": A[n](),
         "aria-haspopup": "dialog",

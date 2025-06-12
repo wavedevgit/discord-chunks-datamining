@@ -14,7 +14,7 @@ var r = n(255367),
   u = n(709692),
   d = n(115589);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -39,8 +39,8 @@ function _(e) {
 function p(e) {
   let t, n, {
       header: a,
-      children: f,
-      confirmText: _,
+      children: _,
+      confirmText: f,
       cancelText: p,
       className: h,
       onConfirm: m,
@@ -73,7 +73,7 @@ function p(e) {
     },
     autoFocus: T,
     children: p
-  })), null != _ && (n = (0, r.jsx)(s.zx, {
+  })), null != f && (n = (0, r.jsx)(s.zx, {
     buttonRef: A,
     type: "submit",
     size: s.zx.Sizes.MEDIUM,
@@ -87,7 +87,7 @@ function p(e) {
       }
     },
     autoFocus: !T,
-    children: _
+    children: f
   })), (0, r.jsxs)(u.Y0, {
     className: h,
     transitionState: O,
@@ -101,7 +101,7 @@ function p(e) {
       })
     }) : null, (0, r.jsx)(u.hz, {
       className: o()(d.content, y),
-      children: f
+      children: _
     }), (0, r.jsxs)(u.mz, {
       children: [n, t]
     })]
@@ -111,6 +111,6 @@ function p(e) {
 function h(e) {
   return (0, r.jsx)(u.u_, {
     onCloseRequest: e.dismissable ? e.onCancel : null,
-    renderModal: t => (0, r.jsx)(p, _({}, t, e))
+    renderModal: t => (0, r.jsx)(p, f({}, t, e))
   })
 }

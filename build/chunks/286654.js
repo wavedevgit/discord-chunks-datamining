@@ -43,19 +43,19 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t, i, o) {
+function f(e, t, i, o) {
   let c = s.default.getCurrentUser();
   (null != t || l.ZP.canUseCustomCallSounds(c)) && (0, a.jW)(e, async () => {
     let {
       default: e
     } = await n.e("93741").then(n.bind(n, 547652));
-    return n => (0, r.jsx)(e, f(u({}, n), {
+    return n => (0, r.jsx)(e, _(u({}, n), {
       soundGuild: t,
       activeCallGuildId: o,
       sound: i
@@ -68,6 +68,6 @@ function p(e, t) {
     n.stopPropagation();
     let r = o.Z.getGuild(e.guildId),
       i = s.default.getCurrentUser();
-    (null != r || l.ZP.canUseCustomCallSounds(i)) && _(n, r, e, t)
+    (null != r || l.ZP.canUseCustomCallSounds(i)) && f(n, r, e, t)
   }, [e, t])
 }

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(240872),
   d = n(19780),
-  f = n(942389),
-  _ = n(572004),
+  _ = n(942389),
+  f = n(572004),
   p = n(63063),
   h = n(358085),
   m = n(145022),
@@ -29,11 +29,11 @@ function O(e) {
   let {
     url: t
   } = e, [n, a] = i.useState(!1), s = i.useRef(void 0), l = i.useCallback(() => {
-    n || (0, _.JG)(t, () => {
+    n || (0, f.JG)(t, () => {
       a(!0), s.current = setTimeout(() => a(!1), 2e3)
     })
   }, [t, n]);
-  return i.useEffect(() => () => clearTimeout(s.current), []), _.wS ? (0, r.jsxs)(c.P3F, {
+  return i.useEffect(() => () => clearTimeout(s.current), []), f.wS ? (0, r.jsxs)(c.P3F, {
     className: o()(b.copyLink, n ? b.copied : null),
     onClick: l,
     children: [(0, r.jsx)(c.xPt, {
@@ -98,11 +98,11 @@ function T(e) {
       linkMeta: a,
       applyBuildOverride: o,
       clearBuildOverride: s,
-      submitting: f
+      submitting: _
     } = e,
-    _ = ["discord_web"];
-  h.isPlatformEmbedded || _.push("discord_marketing", "discord_developers");
-  let p = (0, m.Z)(a, _);
+    f = ["discord_web"];
+  h.isPlatformEmbedded || f.push("discord_marketing", "discord_developers");
+  let p = (0, m.Z)(a, f);
   if (!p.valid) return S(p.reason);
   l()(null != a, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
   let {
@@ -125,7 +125,7 @@ function T(e) {
     buttonClick: v,
     buttonText: n,
     buttonColor: r,
-    submitting: f
+    submitting: _
   })
 }
 
@@ -172,20 +172,20 @@ let N = e => {
     clearBuildOverride: l
   } = e, [c, u] = i.useState(!1), d = i.useCallback(() => {
     c || (u(!0), s().catch(() => u(!1)))
-  }, [s, c]), _ = i.useCallback(() => {
+  }, [s, c]), f = i.useCallback(() => {
     c || (u(!0), l().catch(() => u(!1)))
   }, [l, c]);
   return (0, r.jsxs)("div", {
     className: b.wrapper,
     children: [A(a, o, t), (0, r.jsxs)("div", {
       className: b.content,
-      children: [(0, r.jsx)(f.Z, {
+      children: [(0, r.jsx)(_.Z, {
         className: b.icon
       }), t ? v() : T({
         currentOverrides: n,
         linkMeta: a,
         applyBuildOverride: d,
-        clearBuildOverride: _,
+        clearBuildOverride: f,
         submitting: c
       })]
     })]

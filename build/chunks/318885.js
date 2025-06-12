@@ -13,9 +13,9 @@ var r = n(615287),
   c = n(449224),
   u = n(626135),
   d = n(367907),
-  f = n(981631);
+  _ = n(981631);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,7 +31,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -57,19 +57,19 @@ function h() {
 function m(e, t) {
   var n;
   let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    _ = __OVERLAY__ ? c.Z.getGame() : (0, o.pL)(),
-    h = i.ZP.getRunningGames().find(e => e.name === (null == _ ? void 0 : _.name)),
+    f = __OVERLAY__ ? c.Z.getGame() : (0, o.pL)(),
+    h = i.ZP.getRunningGames().find(e => e.name === (null == f ? void 0 : f.name)),
     m = null != (n = a.default.getRenderMethod(null == h ? void 0 : h.pid)) ? n : null;
   switch (t = p({}, {
-      overlay_game_name: null != _ ? _.name : "Unknown Game",
-      overlay_app_id: null != _ ? _.id : null,
+      overlay_game_name: null != f ? f.name : "Unknown Game",
+      overlay_app_id: null != f ? f.id : null,
       overlay_render_method: null != m ? r.gl[m] : null,
       media_session_id: l.Z.getMediaSessionId()
     }, t), e) {
-    case f.rMx.VOICE_CHANNEL_SELECTED:
-    case f.rMx.SETTINGS_PANE_VIEWED:
-    case f.rMx.GUILD_VIEWED:
-    case f.rMx.CHANNEL_OPENED:
+    case _.rMx.VOICE_CHANNEL_SELECTED:
+    case _.rMx.SETTINGS_PANE_VIEWED:
+    case _.rMx.GUILD_VIEWED:
+    case _.rMx.CHANNEL_OPENED:
       return (0, d.yw)(e, t, s);
     default:
       return u.default.track(e, t, {

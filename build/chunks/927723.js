@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   V: () => p,
-  k: () => _
+  k: () => f
 });
 var r = n(255367);
 n(73800);
@@ -45,13 +45,13 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e) {
+function f(e) {
   let {
     kind: t
   } = e;
@@ -59,7 +59,7 @@ function _(e) {
     let {
       default: e
     } = await n.e("7285").then(n.bind(n, 951269));
-    return n => (0, r.jsx)(e, f(u({}, n), {
+    return n => (0, r.jsx)(e, _(u({}, n), {
       kind: t
     }))
   })
@@ -70,7 +70,7 @@ function p() {
     let {
       ConfirmModal: e
     } = await Promise.resolve().then(n.bind(n, 878678));
-    return t => (0, r.jsx)(e, f(u({}, t), {
+    return t => (0, r.jsx)(e, _(u({}, t), {
       header: s.intl.string(l.default.odgSTk),
       confirmText: s.intl.string(s.t.BddRzc),
       confirmButtonColor: i.zxk.Colors.BRAND,

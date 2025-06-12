@@ -39,7 +39,7 @@ function d(e) {
   }), t
 }
 
-function f(e) {
+function _(e) {
   switch (e) {
     case "sign-auto":
       return {
@@ -78,7 +78,7 @@ function f(e) {
   }
 }
 
-function _(e) {
+function f(e) {
   var t;
   if ("E" === e[0] && "E" === e[1] ? (t = {
       notation: "engineering"
@@ -94,7 +94,7 @@ function _(e) {
 
 function p(e) {
   var t = {},
-    n = f(e);
+    n = _(e);
   return n || t
 }
 
@@ -214,9 +214,9 @@ function h(e) {
       t = (0, r.pi)((0, r.pi)({}, t), d(a.stem));
       continue
     }
-    var m = f(a.stem);
+    var m = _(a.stem);
     m && (t = (0, r.pi)((0, r.pi)({}, t), m));
-    var g = _(a.stem);
+    var g = f(a.stem);
     g && (t = (0, r.pi)((0, r.pi)({}, t), g))
   }
   return t

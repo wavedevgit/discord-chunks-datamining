@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(37234),
-  f = n(194359),
-  _ = n(700582),
+  _ = n(194359),
+  f = n(700582),
   p = n(925329),
   h = n(479446),
   m = n(717401),
@@ -43,19 +43,19 @@ function x(e) {
     subscriptionPlan: s,
     selectedGiftStyle: l,
     onClose: d,
-    hasSentMessage: f,
+    hasSentMessage: _,
     giftRecipient: h,
     giftMessageError: E,
     isSendingMessage: b
-  } = e, [O, I] = i.useState(u.kO8.Modes.DEFAULT), x = (0, c.e7)([v.Z], () => v.Z.enabled), M = f || null != l && null != h, j = (null == a ? void 0 : a.productLine) === R.POd.COLLECTIBLES, U = (0, g.Z)(), {
+  } = e, [O, I] = i.useState(u.kO8.Modes.DEFAULT), x = (0, c.e7)([v.Z], () => v.Z.enabled), k = _ || null != l && null != h, j = (null == a ? void 0 : a.productLine) === R.POd.COLLECTIBLES, U = (0, g.Z)(), {
     selectedGiftingPromotionReward: G
-  } = (0, C.wD)(), B = null == U ? void 0 : U.giftPurchaseConfirmation, F = (0, m.tK)(null == G ? void 0 : G.skuId), V = (0, m.a5)(s) && null != F && null != B, Z = () => null != s ? s.skuId : null != a ? a.id : null, H = () => {
+  } = (0, C.wD)(), B = null == U ? void 0 : U.giftPurchaseConfirmation, V = (0, m.tK)(null == G ? void 0 : G.skuId), F = (0, m.a5)(s) && null != V && null != B, Z = () => null != s ? s.skuId : null != a ? a.id : null, H = () => {
     let e;
-    return null != E ? w.intl.string(w.t.qB8ayc) : null == s ? null : (e = s.interval === P.rV.MONTH ? M ? V ? B.monthGiftText : w.t["4ZJ+7e"] : w.t["P+z55e"] : M ? V ? B.yearGiftText : w.t.p0pZXF : w.t.bXqk3t, w.intl.format(e, {
+    return null != E ? w.intl.string(w.t.qB8ayc) : null == s ? null : (e = s.interval === P.rV.MONTH ? k ? F ? B.monthGiftText : w.t["4ZJ+7e"] : w.t["P+z55e"] : k ? F ? B.yearGiftText : w.t.p0pZXF : w.t.bXqk3t, w.intl.format(e, {
       skuName: (0, A.aq)(s.id),
       intervalCount: s.intervalCount
     }))
-  }, Y = () => null != h || f && null == E ? w.intl.string(w.t.zOmK9P) : null != E ? w.intl.string(w.t.d1lrmZ) : w.intl.string(w.t["/s1xR0"]), W = (e, t) => {
+  }, Y = () => null != h || _ && null == E ? w.intl.string(w.t.zOmK9P) : null != E ? w.intl.string(w.t.d1lrmZ) : w.intl.string(w.t["/s1xR0"]), W = (e, t) => {
     null != a && (0, S.dM)(new y.Z({
       code: t,
       maxUses: 1
@@ -98,14 +98,14 @@ function x(e) {
     children: [(0, r.jsx)("div", {
       className: D.blurb,
       children: H()
-    }), null == E && (0, r.jsx)(k, {
+    }), null == E && (0, r.jsx)(M, {
       giftCode: t,
       onClose: d
     }), (0, r.jsx)("div", {
       className: D.divider
     }), K()]
   }), q = () => (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_.Z, {
+    children: [(0, r.jsx)(f.Z, {
       user: h,
       className: D.giftRecipient,
       size: u.EFr.SIZE_80
@@ -133,7 +133,7 @@ function x(e) {
     })]
   }) : (0, r.jsxs)("div", {
     className: o()(D.confirmation, {
-      [D.seasonalConfirmationPadding]: V
+      [D.seasonalConfirmationPadding]: F
     }),
     children: [null != n ? (0, r.jsx)(p.Z, {
       game: n,
@@ -147,16 +147,16 @@ function x(e) {
         [D.headerCustomGifting]: null != l && !j
       }),
       children: Y()
-    }), f && null != h && null == E || M ? q() : z()]
+    }), _ && null != h && null == E || k ? q() : z()]
   })
 }
-let k = e => {
+let M = e => {
   let {
     giftCode: t,
     onClose: n
   } = e;
   i.useEffect(() => {
-    f.Z.fetchRelationships(), (0, E._)()
+    _.Z.fetchRelationships(), (0, E._)()
   }, []);
   let [a, o] = i.useState(), [s, p] = i.useState(!1), [m, g] = i.useState(!1), {
     userAffinities: y,
@@ -177,7 +177,7 @@ let k = e => {
         placeholder: w.intl.string(w.t.J019jY),
         wrapperClassName: D.giftRecipientInputWrapper,
         className: s ? D.giftRecipientInputError : void 0,
-        renderOptionPrefix: e => (null == e ? void 0 : e.value) == null ? null : (0, r.jsx)(_.Z, {
+        renderOptionPrefix: e => (null == e ? void 0 : e.value) == null ? null : (0, r.jsx)(f.Z, {
           user: e.value,
           size: u.EFr.SIZE_20
         }),

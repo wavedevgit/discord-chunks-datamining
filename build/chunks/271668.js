@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(788911),
   u = n(911969),
   d = n(367907),
-  f = n(588468),
-  _ = n(30465),
+  _ = n(588468),
+  f = n(30465),
   p = n(218867),
   h = n(313201),
   m = n(806966),
@@ -35,19 +35,19 @@ var r = n(255367),
 let D = 512,
   L = 7,
   x = 56,
-  k = 16,
-  M = 32,
+  M = 16,
+  k = 32,
   j = 20,
   U = 420,
   G = [8, 8, 0, 8],
   B = l().debounce(() => {
     (0, d.yw)(C.rMx.APPLICATION_COMMAND_BROWSER_SCROLLED)
   }, 300),
-  F = i.forwardRef(function(e, t) {
+  V = i.forwardRef(function(e, t) {
     let {
       channel: n,
       canOnlyUseTextCommands: a
-    } = e, s = i.useRef(!1), l = i.useRef(0), [F, Z] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(!1), K = m.Xn.useStore(e => e.activeCategoryIndex);
+    } = e, s = i.useRef(!1), l = i.useRef(0), [V, Z] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(!1), K = m.Xn.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.yw)(C.rMx.APPLICATION_COMMAND_BROWSER_OPENED)
     }, []);
@@ -90,7 +90,7 @@ let D = 512,
       scrollOffset: j,
       searchQuery: ""
     }), er = e => {
-      let t = q.length * (M + k) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? L : 0)) * x - D;
+      let t = q.length * (k + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? L : 0)) * x - D;
       Q && e + U > t && ee(), en(e), B(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
@@ -98,11 +98,11 @@ let D = 512,
     }), i.useEffect(() => {
       ei.current(l.current)
     }, [J]);
-    let ea = i.useCallback(e => e !== q.length - 1 || Q ? k : 0, [q.length, Q]),
+    let ea = i.useCallback(e => e !== q.length - 1 || Q ? M : 0, [q.length, Q]),
       eo = X.map(e => e.data.length);
     i.useEffect(() => {
-      null != H.current && Y && null != F && H.current.scrollRowIntoView(F)
-    }, [Y, F]), i.useLayoutEffect(() => {
+      null != H.current && Y && null != V && H.current.scrollRowIntoView(V)
+    }, [Y, V]), i.useLayoutEffect(() => {
       if (null != $) {
         var e;
         null == (e = H.current) || e.scrollToSectionTop(0)
@@ -125,13 +125,13 @@ let D = 512,
       }, [n.id]);
     i.useImperativeHandle(t, () => ({
       onTabOrEnter: e => {
-        if (null == F) return !e && (Z(0), !0);
-        if (null == F) return !1;
+        if (null == V) return !e && (Z(0), !0);
+        if (null == V) return !1;
         let t = 0,
           n = 0;
         for (let e of X)
-          if (t = n, F < (n += e.data.length)) {
-            let n = e.data[F - t],
+          if (t = n, V < (n += e.data.length)) {
+            let n = e.data[V - t],
               r = z.find(e => e.id === n.applicationId);
             el(n, r, (0, I.tI)(e.section));
             break
@@ -141,10 +141,10 @@ let D = 512,
         if (0 === J.length) return !0;
         let t = Q ? L : 0,
           n = J.length + t,
-          r = null == F ? 0 : F + e;
+          r = null == V ? 0 : V + e;
         return r >= n ? r = n - 1 : r < 0 && (r = 0), Z(r), W(!0), !0
       }
-    }), [J.length, X, Q, z, el, F]);
+    }), [J.length, X, Q, z, el, V]);
     let ec = i.useCallback(e => {
         let t = q[e];
         if (null == t) return null;
@@ -190,12 +190,12 @@ let D = 512,
           s = "".concat(a.section.id, ":").concat(null != (i = null == o ? void 0 : o.id) ? i : e);
         if (null == o || a.section.id !== o.applicationId && a.section.id !== N.bi.FRECENCY || o.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(S.Z, {}, s);
         let l = z.find(e => e.id === o.applicationId);
-        return (0, r.jsx)(f.ZP.NewCommand, {
+        return (0, r.jsx)(_.ZP.NewCommand, {
           index: e,
           command: o,
           channel: n,
           className: P.itemWrapper,
-          selected: F === e,
+          selected: V === e,
           showImage: a.section.id !== o.applicationId,
           section: l,
           onClick: () => el(o, l, (0, I.tI)(a.section)),
@@ -203,15 +203,15 @@ let D = 512,
             Z(null), W(!1)
           }
         }, s)
-      }, [n, X, el, z, F]),
-      ef = (0, h.Dt)();
-    return (0, _.KR)(ef, !0, (0, f.DJ)(F)), i.useEffect(() => () => {
-      (0, _.sJ)()
-    }, []), (0, r.jsxs)(f.ZP, {
-      id: ef,
+      }, [n, X, el, z, V]),
+      e_ = (0, h.Dt)();
+    return (0, f.KR)(e_, !0, (0, _.DJ)(V)), i.useEffect(() => () => {
+      (0, f.sJ)()
+    }, []), (0, r.jsxs)(_.ZP, {
+      id: e_,
       className: P.outerWrapper,
       innerClassName: P.wrapper,
-      onMouseDown: V,
+      onMouseDown: F,
       children: [(0, r.jsx)(T.Z, {
         className: P.rail,
         channel: n,
@@ -231,7 +231,7 @@ let D = 512,
         rowCount: q.length,
         rowCountBySection: eo,
         rowHeight: x,
-        sectionHeaderHeight: M,
+        sectionHeaderHeight: k,
         sectionMarginBottom: ea,
         ref: H,
         stickyHeaders: !0
@@ -239,6 +239,6 @@ let D = 512,
     })
   });
 
-function V(e) {
+function F(e) {
   e.preventDefault()
 }

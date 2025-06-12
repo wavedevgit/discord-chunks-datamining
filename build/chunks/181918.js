@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   $V: () => d,
-  OC: () => f,
+  OC: () => _,
   QZ: () => u
 });
 var r = n(442837),
@@ -52,7 +52,7 @@ function d(e, t) {
   return n && i
 }
 
-function f(e, t) {
+function _(e, t) {
   let n = a.Z.getGuild(e);
   return u(t) && null != n && n.hasFeature(o.oNc.ENHANCED_ROLE_COLORS)
 }

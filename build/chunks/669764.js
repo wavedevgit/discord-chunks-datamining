@@ -31,7 +31,7 @@ function d(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     applicationIds: t,
     supplementalGameData: n
@@ -50,8 +50,8 @@ function f(e) {
       artwork_urls: c,
       screenshot_urls: u,
       cover_image_url: d,
-      first_release_date: f,
-      summary_localized: _,
+      first_release_date: _,
+      summary_localized: f,
       publisher_names: p,
       developer_names: h
     } = e;
@@ -59,7 +59,7 @@ function f(e) {
       applicationId: t,
       name: n,
       summary: r,
-      summaryLocalized: _,
+      summaryLocalized: f,
       websites: i,
       themes: a,
       genres: o,
@@ -67,14 +67,14 @@ function f(e) {
       artwork: c,
       screenshots: u,
       coverImageUrl: d,
-      firstReleaseDate: f,
+      firstReleaseDate: _,
       publishers: null != p ? p : [],
       developers: null != h ? h : []
     })
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     applicationIds: t
   } = e;
@@ -113,6 +113,6 @@ o(p, "displayName", "DetectableGameSupplementalStore");
 let h = new p(a.Z, {
   LOGOUT: u,
   DETECTABLE_GAME_SUPPLEMENTAL_FETCH: d,
-  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_SUCCESS: f,
-  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_FAILURE: _
+  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_SUCCESS: _,
+  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_FAILURE: f
 })

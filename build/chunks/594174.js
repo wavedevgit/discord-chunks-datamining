@@ -16,8 +16,8 @@ var r = n(392711),
   c = n(502087),
   u = n(168232),
   d = n(598077),
-  f = n(630388),
-  _ = n(823379),
+  _ = n(630388),
+  f = n(823379),
   p = n(314897),
   h = n(412788),
   m = n(981631),
@@ -83,10 +83,10 @@ function S(e) {
   }
   let d = e.purchased_flags;
   void 0 !== d && (e.purchasedFlags = d, delete e.purchased_flags);
-  let f = e.premium_usage_flags;
-  void 0 !== f && (e.premiumUsageFlags = f, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
-  let _ = e.avatar_decoration_data;
-  void 0 !== _ && (e.avatarDecorationData = (0, o.FG)(_), delete e.avatar_decoration_data);
+  let _ = e.premium_usage_flags;
+  void 0 !== _ && (e.premiumUsageFlags = _, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
+  let f = e.avatar_decoration_data;
+  void 0 !== f && (e.avatarDecorationData = (0, o.FG)(f), delete e.avatar_decoration_data);
   let p = e.collectibles;
   void 0 !== p && (delete e.collectibles, e.collectibles = (0, s.Xm)(p));
   let h = e.global_name;
@@ -198,14 +198,14 @@ function x(e) {
     for (let t of e.users) t.id in b && L(t) || (b[t.id] = new d.Z(t))
 }
 
-function k(e) {
+function M(e) {
   let {
     user: t
   } = e;
   t.id !== p.default.getId() && N(t)
 }
 
-function M(e) {
+function k(e) {
   let {
     user: t
   } = e;
@@ -245,7 +245,7 @@ function B(e) {
   return null == t || t.forEach(e => P(e, !1)), !1
 }
 
-function F(e) {
+function V(e) {
   let {
     messages: t
   } = e;
@@ -254,7 +254,7 @@ function F(e) {
   })), !1
 }
 
-function V(e) {
+function F(e) {
   let {
     firstMessages: t,
     owners: n
@@ -325,9 +325,9 @@ function z(e) {
   let {
     message: t
   } = e;
-  if (P(t, !0), null != t.flags && f.yE(t.flags, m.iLy.URGENT)) {
+  if (P(t, !0), null != t.flags && _.yE(t.flags, m.iLy.URGENT)) {
     let e = b[p.default.getId()];
-    return null != e && (b[p.default.getId()] = e.set("flags", f.mB(e.flags, m.xW$.HAS_UNREAD_URGENT_MESSAGES, !0)), !0)
+    return null != e && (b[p.default.getId()] = e.set("flags", _.mB(e.flags, m.xW$.HAS_UNREAD_URGENT_MESSAGES, !0)), !0)
   }
   return !1
 }
@@ -482,11 +482,11 @@ function ed(e) {
   return N(e.relationship.user)
 }
 
-function ef(e) {
+function e_(e) {
   return N(e.gameRelationship.user)
 }
 
-function e_(e) {
+function ef(e) {
   let {
     relationships: t
   } = e;
@@ -629,7 +629,7 @@ class eP extends h.Z {
     return {
       version: eP.LATEST_SNAPSHOT_VERSION,
       data: {
-        users: [e].filter(_.lm)
+        users: [e].filter(f.lm)
       }
     }
   }
@@ -683,11 +683,11 @@ class eP extends h.Z {
       UPDATE_CLIENT_PREMIUM_TYPE: j,
       OVERLAY_INITIALIZE: x,
       CACHE_LOADED: e => this.handleLoadCache(e),
-      USER_UPDATE: k,
-      CURRENT_USER_UPDATE: M,
+      USER_UPDATE: M,
+      CURRENT_USER_UPDATE: k,
       PRESENCE_UPDATES: J,
-      SEARCH_FINISH: F,
-      MOD_VIEW_SEARCH_FINISH: F,
+      SEARCH_FINISH: V,
+      MOD_VIEW_SEARCH_FINISH: V,
       LOAD_MESSAGES_SUCCESS: U,
       LOAD_MESSAGES_AROUND_SUCCESS: U,
       LOAD_RECENT_MENTIONS_SUCCESS: U,
@@ -713,16 +713,16 @@ class eP extends h.Z {
       CHANNEL_CREATE: q,
       CHANNEL_UPDATES: X,
       RELATIONSHIP_ADD: ed,
-      GAME_RELATIONSHIP_ADD: ef,
-      LOAD_RELATIONSHIPS_SUCCESS: e_,
+      GAME_RELATIONSHIP_ADD: e_,
+      LOAD_RELATIONSHIPS_SUCCESS: ef,
       FRIEND_SUGGESTION_CREATE: ep,
       LOAD_FRIEND_SUGGESTIONS_SUCCESS: eh,
       AUDIT_LOG_FETCH_SUCCESS: em,
       AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: em,
       GIFT_CODE_RESOLVE_SUCCESS: eg,
       GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: eE,
-      LOAD_THREADS_SUCCESS: V,
-      LOAD_ARCHIVED_THREADS_SUCCESS: V,
+      LOAD_THREADS_SUCCESS: F,
+      LOAD_ARCHIVED_THREADS_SUCCESS: F,
       LOAD_FORUM_POSTS: Z,
       GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS: Y,
       LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: W,

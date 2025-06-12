@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(570220),
   u = n(540059),
   d = n(28546),
-  f = n(443603),
-  _ = n(957825),
+  _ = n(443603),
+  f = n(957825),
   p = n(388032),
   h = n(302195);
 
@@ -60,8 +60,8 @@ function y(e, t) {
   let {
     disabled: n,
     type: a
-  } = e, [m, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), y = i.useContext(c.ZP), O = !1, [v, I] = i.useState(!1), T = m === _.X1.STICKER, S = !1, A = i.useCallback(() => {
-    (0, d.RO)(_.X1.STICKER, a)
+  } = e, [m, E] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), y = i.useContext(c.ZP), O = !1, [v, I] = i.useState(!1), T = m === f.X1.STICKER, S = !1, A = i.useCallback(() => {
+    (0, d.RO)(f.X1.STICKER, a)
   }, [a]);
   i.useEffect(() => {
     let e = () => {
@@ -86,9 +86,9 @@ function y(e, t) {
   if (n) return null;
   let w = v;
   return (0, r.jsx)("div", {
-    className: o()(_.CT, h.buttonContainer),
+    className: o()(f.CT, h.buttonContainer),
     ref: t,
-    children: (0, r.jsx)(f.Z, b(g({
+    children: (0, r.jsx)(_.Z, b(g({
       innerClassName: o()(h.button, h.stickerButton, {
         [h.stickerButtonTilted]: w && !T
       })
@@ -102,7 +102,7 @@ function y(e, t) {
       "aria-haspopup": "dialog",
       "aria-controls": E,
       sparkle: O,
-      notification: S ? f.j.UPDATE : null,
+      notification: S ? _.j.UPDATE : null,
       children: (0, r.jsx)(N, {
         size: P ? "refresh_sm" : void 0,
         color: "currentColor"

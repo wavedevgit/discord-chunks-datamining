@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(541716),
   u = n(752305),
   d = n(893718),
-  f = n(131704),
-  _ = n(823379),
+  _ = n(131704),
+  f = n(823379),
   p = n(5192),
   h = n(51144),
   m = n(698305),
@@ -24,7 +24,7 @@ var r = n(255367),
   O = n(420212),
   v = n(388032),
   I = n(42328);
-let T = (0, f.kt)({
+let T = (0, _.kt)({
     id: "1",
     type: s.d.DM
   }),
@@ -54,7 +54,7 @@ let T = (0, f.kt)({
           c = "\n> ".concat(i);
         return null != i ? "".concat(E.jd).concat(l, "*").concat(c, "\n").concat(t) : "".concat(E.jd).concat(l, "*\n").concat(t);
       default:
-        (0, _.vE)(r)
+        (0, f.vE)(r)
     }
   },
   A = e => {
@@ -66,7 +66,7 @@ let T = (0, f.kt)({
       case y.n_.STATUS:
         return v.t.g9BTCA;
       default:
-        (0, _.vE)(e)
+        (0, f.vE)(e)
     }
   };
 
@@ -76,8 +76,8 @@ function N(e) {
     guildId: n,
     channelId: a,
     sourceType: s,
-    sourceDetails: f,
-    setPopoutRef: _,
+    sourceDetails: _,
+    setPopoutRef: f,
     modalKey: E,
     onAction: N,
     onClose: C,
@@ -87,12 +87,12 @@ function N(e) {
     setInteractionToast: w
   } = (0, g.Xo)(), {
     primaryColor: D
-  } = (0, b.z)(), [L, x] = i.useState(""), [k, M] = i.useState((0, u.JM)(L)), j = i.useRef(!1), U = i.useRef(null), G = i.useCallback(e => {
+  } = (0, b.z)(), [L, x] = i.useState(""), [M, k] = i.useState((0, u.JM)(L)), j = i.useRef(!1), U = i.useRef(null), G = i.useCallback(e => {
     e.key === O.vn.ESCAPE && (e.stopPropagation(), P())
   }, [P]);
   i.useEffect(() => {
-    null == _ || _(null == U ? void 0 : U.current)
-  }, [U, _]);
+    null == f || f(null == U ? void 0 : U.current)
+  }, [U, f]);
   let B = async e => {
     if (null == e) return;
     s === y.n_.AVATAR ? N({
@@ -106,7 +106,7 @@ function N(e) {
       input: e,
       username: h.ZP.getName(t),
       sourceType: s,
-      sourceDetails: f
+      sourceDetails: _
     });
     w(null);
     try {
@@ -120,7 +120,7 @@ function N(e) {
       })
     } catch (e) {}
     w(y.P.REPLY)
-  }, F = {
+  }, V = {
     [I.status]: s === y.n_.STATUS,
     [I.avatar]: s === y.n_.AVATAR,
     [I.activity]: s === y.n_.ACTIVITY
@@ -129,7 +129,7 @@ function N(e) {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: o()(I.container, F, {
+      className: o()(I.container, V, {
         [I.customProfileTheme]: null != D
       }),
       children: (0, r.jsx)(d.Z, {
@@ -144,9 +144,9 @@ function N(e) {
         }),
         channel: T,
         textValue: L,
-        richValue: k,
+        richValue: M,
         onChange: (e, t, n) => {
-          t !== L && (x(t), M(n))
+          t !== L && (x(t), k(n))
         },
         focused: j.current,
         onFocus: () => {

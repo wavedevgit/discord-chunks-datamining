@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(952164),
   u = n(768419),
   d = n(424678),
-  f = n(239470),
-  _ = n(894344),
+  _ = n(239470),
+  f = n(894344),
   p = n(314897),
   h = n(908841),
   m = n(5192),
@@ -102,8 +102,8 @@ function x(e) {
   let n, m, T, {
       channel: R,
       entry: x,
-      closePopout: k,
-      onReaction: M,
+      closePopout: M,
+      onReaction: k,
       onVoiceChannelPreview: j
     } = e,
     {
@@ -114,8 +114,8 @@ function x(e) {
     {
       activity: G,
       currentEntry: B,
-      artist: F,
-      title: V,
+      artist: V,
+      title: F,
       user: Z
     } = (0, v.pi)(x),
     {
@@ -123,7 +123,7 @@ function x(e) {
       secondaryColor: Y
     } = (0, O.Z)(null == U ? void 0 : U.src),
     W = (0, y.Z)(A.ABu.SPOTIFY),
-    K = (0, o.e7)([u.Z, p.default], () => (null == G ? void 0 : G.type) === A.IIU.LISTENING && null != Z ? (0, f.Z)(u.Z, p.default, Z, G) : void 0, [G, Z], s.Z),
+    K = (0, o.e7)([u.Z, p.default], () => (null == G ? void 0 : G.type) === A.IIU.LISTENING && null != Z ? (0, _.Z)(u.Z, p.default, Z, G) : void 0, [G, Z], s.Z),
     z = i.useCallback(() => {
       var e;
       if (null == R || null == Z) return;
@@ -135,19 +135,19 @@ function x(e) {
         user: Z,
         channel: R,
         mediaImageSrc: null == U ? void 0 : U.src,
-        artist: F,
+        artist: V,
         description: D({
-          artist: F,
-          media: V
+          artist: V,
+          media: F
         }, R, Z),
         colors: [H, Y],
         badges: (0, b.jE)({
           timestamp: n
         })
       })
-    }, [G, F, R, x, null == U ? void 0 : U.src, H, Y, V, Z]);
+    }, [G, V, R, x, null == U ? void 0 : U.src, H, Y, F, Z]);
   if (null == G || null == B) return null;
-  let q = F,
+  let q = V,
     X = [];
   if (B.media.provider === a.p.SPOTIFY) {
     m = () => {
@@ -162,13 +162,13 @@ function x(e) {
       (0, c.d$)(G, Z.id, e)
     };
     if (q = (0, r.jsx)(d.Z, {
-        artists: F,
+        artists: V,
         canOpen: null != G.sync_id,
         linkClassName: P.popoutTextSecondary,
         onOpenSpotifyArtist: e
       }), (null == K ? void 0 : K.syncDisabled) === !1) {
       let e = () => {
-        (0, _.Z)(K, N.kG.USER_ACTIVITY_SYNC), k()
+        (0, f.Z)(K, N.kG.USER_ACTIVITY_SYNC), M()
       };
       X.push((0, r.jsx)(I.Ll, {
         onClick: e,
@@ -187,7 +187,7 @@ function x(e) {
       Icon: h.Z
     }) : null,
     userDescription: (0, E.kr)(x) ? C.t.Tzx5Dw : C.t.CcVI1d,
-    title: V,
+    title: F,
     onClickTitle: m,
     subtitle: q,
     badges: null,
@@ -198,12 +198,12 @@ function x(e) {
   return (0, r.jsxs)(I.yR, {
     children: [Q, (0, r.jsx)(I.St, {
       children: (0, r.jsx)(I.WT, {
-        onReaction: M,
+        onReaction: k,
         onVoiceChannelPreview: j,
         user: Z,
         channel: R,
         generateReactionImage: z,
-        reactionImageAltText: w(F, Z),
+        reactionImageAltText: w(V, Z),
         entry: x,
         buttons: X
       })

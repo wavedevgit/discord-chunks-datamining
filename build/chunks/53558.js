@@ -22,7 +22,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -57,8 +57,8 @@ function h(e) {
   var {
     user: t,
     onClick: n
-  } = e, i = _(e, ["user", "onClick"]);
-  return (0, s.q)(t.id), (0, r.jsx)(c.tG, f({
+  } = e, i = f(e, ["user", "onClick"]);
+  return (0, s.q)(t.id), (0, r.jsx)(c.tG, _({
     action: "PRESS_APP_STOREFRONT",
     icon: a.EOn,
     text: u.intl.string(u.t.V7j5aW),
@@ -73,7 +73,7 @@ function m(e) {
       user: s,
       guildId: c
     } = e,
-    u = _(e, ["user", "guildId"]);
+    u = f(e, ["user", "guildId"]);
   let d = (0, i.e7)([l.Z], () => {
       var e;
       return null == (e = l.Z.getUserProfile(s.id)) ? void 0 : e.application
@@ -85,13 +85,13 @@ function m(e) {
       let {
         default: e
       } = await Promise.all([n.e("74891"), n.e("77803"), n.e("53458")]).then(n.bind(n, 7225));
-      return t => (0, r.jsx)(e, f({
+      return t => (0, r.jsx)(e, _({
         appId: d.id,
         guildId: c
       }, t))
     })
   };
-  return (0, r.jsx)(h, f({
+  return (0, r.jsx)(h, _({
     user: s,
     guildId: c,
     onClick: m

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  e: () => _
+  e: () => f
 });
 var r = n(255367);
 n(73800);
@@ -50,7 +50,7 @@ function u(e, t) {
 
 function d(e, t) {
   if (null == e) return {};
-  var n, r, i = f(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -58,25 +58,25 @@ function d(e, t) {
   return i
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let f = e => {
   var t, n, {
       size: s = "md",
       width: c,
-      height: f,
-      color: _ = i.Z.colors.INTERACTIVE_NORMAL,
+      height: _,
+      color: f = i.Z.colors.INTERACTIVE_NORMAL,
       colorClass: p = ""
     } = e,
     h = d(e, ["size", "width", "height", "color", "colorClass"]);
   let m = (0, o.m)(s),
     g = null != (t = null == m ? void 0 : m.width) ? t : c,
-    E = null != (n = null == m ? void 0 : m.height) ? n : f;
+    E = null != (n = null == m ? void 0 : m.height) ? n : _;
   return (0, r.jsxs)("svg", u(l({}, (0, a.Z)(h)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,
@@ -84,11 +84,11 @@ let _ = e => {
     fill: "none",
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("path", {
-      fill: "string" == typeof _ ? _ : _.css,
+      fill: "string" == typeof f ? f : f.css,
       d: "M4 5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v.18a1 1 0 1 0 2 0V5a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h.18a1 1 0 1 0 0-2H5a1 1 0 0 1-1-1V5Z",
       className: p
     }), (0, r.jsx)("path", {
-      fill: "string" == typeof _ ? _ : _.css,
+      fill: "string" == typeof f ? f : f.css,
       fillRule: "evenodd",
       d: "M8 11a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-8a3 3 0 0 1-3-3v-8Zm2 0a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-8a1 1 0 0 1-1-1v-8Z",
       clipRule: "evenodd",

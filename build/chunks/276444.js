@@ -19,8 +19,8 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = 5,
-  f = null,
-  _ = new Set,
+  _ = null,
+  f = new Set,
   p = new Map,
   h = !1,
   m = new Set,
@@ -35,7 +35,7 @@ let d = 5,
   S = null;
 
 function A() {
-  f = null, _ = new Set, h = !1, m = new Set, g = new Set, E = new Map, b = 0, y = null, O = [], v = !1, I = 0, T = !1, S = null, p = new Map
+  _ = null, f = new Set, h = !1, m = new Set, g = new Set, E = new Map, b = 0, y = null, O = [], v = !1, I = 0, T = !1, S = null, p = new Map
 }
 let N = () => !0;
 
@@ -52,7 +52,7 @@ function R(e) {
     recipient_status: i,
     has_eligible_friends: a
   } = e;
-  T = null == r && a, h = !1, f = t, _ = new Set(n), S = r, p = i
+  T = null == r && a, h = !1, _ = t, f = new Set(n), S = r, p = i
 }
 
 function P(e) {
@@ -64,14 +64,14 @@ function w(e) {
   let {
     userTrialOffer: t
   } = e;
-  (0, l.C$)(), E.set(t.id, t), _.add(t.user_id)
+  (0, l.C$)(), E.set(t.id, t), f.add(t.user_id)
 }
 
 function D(e) {
   let {
     userTrialOffers: t
   } = e;
-  for (let e of ((0, l.C$)(), t)) E.set(e.id, e), _.add(e.user_id)
+  for (let e of ((0, l.C$)(), t)) E.set(e.id, e), f.add(e.user_id)
 }
 
 function L(e) {
@@ -85,14 +85,14 @@ function x(e) {
   null != t && (m.delete(t.id), g.add(t.id), E.set(t.id, t))
 }
 
-function k(e) {
+function M(e) {
   let {
     userTrialOfferId: t
   } = e;
   m.delete(t), g.add(t)
 }
 
-function M(e) {
+function k(e) {
   let {
     message: t
   } = e;
@@ -123,7 +123,7 @@ function B() {
   v = !0
 }
 
-function F(e) {
+function V(e) {
   let {
     users: t,
     nextIndex: n
@@ -131,7 +131,7 @@ function F(e) {
   v = !1, O = t, I = n
 }
 
-function V() {
+function F() {
   v = !1
 }
 class Z extends(r = a.ZP.Store) {
@@ -139,13 +139,13 @@ class Z extends(r = a.ZP.Store) {
     this.waitFor(s.default), this.syncWith([s.default], N)
   }
   checkAndFetchReferralsRemaining() {
-    null == f && !h && b < d && (null == y || y < Date.now()) && (0, l.C$)()
+    null == _ && !h && b < d && (null == y || y < Date.now()) && (0, l.C$)()
   }
   getReferralsRemaining() {
-    return this.checkAndFetchReferralsRemaining(), f
+    return this.checkAndFetchReferralsRemaining(), _
   }
   getSentUserIds() {
-    return this.checkAndFetchReferralsRemaining(), Array.from(_.values())
+    return this.checkAndFetchReferralsRemaining(), Array.from(f.values())
   }
   isFetchingReferralsRemaining() {
     return h
@@ -187,12 +187,12 @@ let H = new Z(o.Z, {
   BILLING_CREATE_REFERRAL_SUCCESS: w,
   CREATE_REFERRALS_SUCCESS: D,
   BILLING_REFERRAL_RESOLVE_SUCCESS: x,
-  BILLING_REFERRAL_RESOLVE_FAIL: k,
+  BILLING_REFERRAL_RESOLVE_FAIL: M,
   REFERRALS_FETCH_ELIGIBLE_USER_START: B,
-  REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: F,
-  REFERRALS_FETCH_ELIGIBLE_USER_FAIL: V,
+  REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: V,
+  REFERRALS_FETCH_ELIGIBLE_USER_FAIL: F,
   LOAD_MESSAGES_SUCCESS: j,
-  MESSAGE_CREATE: M,
+  MESSAGE_CREATE: k,
   LOAD_MESSAGES_AROUND_SUCCESS: j,
   LOGOUT: A
 })

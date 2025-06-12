@@ -49,7 +49,7 @@ function u(e, t) {
 
 function d(e, t) {
   if (null == e) return {};
-  var n, r, i = f(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -57,14 +57,14 @@ function d(e, t) {
   return i
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => null == e ? e : {
+let f = e => null == e ? e : {
   backgroundColors: e.background_colors.map(e => i()((0, a.Rf)(e))),
   buttonColors: e.button_colors.map(e => i()((0, a.Rf)(e))),
   confettiColors: e.confetti_colors.map(e => i()((0, a.Rf)(e)))
@@ -84,7 +84,7 @@ class p extends o.Z {
       skuId: n,
       unpublishedAt: s,
       bannerAsset: i,
-      styles: _(a)
+      styles: f(a)
     }))
   }
   constructor(e) {

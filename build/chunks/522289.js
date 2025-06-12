@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367);
 n(73800);
@@ -26,7 +26,7 @@ function d() {
   }
 }
 
-function f() {
+function _() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : c.Z.Sizes.SMALLER;
   switch (e) {
     case c.Z.Sizes.SMOL:
@@ -38,13 +38,13 @@ function f() {
   }
 }
 
-function _(e) {
+function f(e) {
   let {
     className: t,
     maxGuilds: n,
     guilds: i,
     onFocus: o,
-    onClick: _,
+    onClick: f,
     size: p = c.Z.Sizes.SMALLER,
     hideOverflowCount: h = !1,
     disableGuildNameTooltip: m = !1
@@ -63,7 +63,7 @@ function _(e) {
           className: o,
           children: (0, r.jsx)(c.Z, {
             guild: e,
-            onClick: _,
+            onClick: f,
             size: p,
             showTooltip: !1
           })
@@ -72,17 +72,17 @@ function _(e) {
           className: o,
           children: (0, r.jsx)(c.Z, {
             guild: e,
-            onClick: _,
+            onClick: f,
             size: p
           })
         }, e.id)
       }).value();
     if (d) {
-      let e = f(p);
+      let e = _(p);
       b[b.length - 1] = (0, r.jsx)(l.zxk, {
         className: a()(u.overflow, g),
         onFocus: o,
-        onClick: e => null == _ ? void 0 : _(e),
+        onClick: e => null == f ? void 0 : f(e),
         look: l.zxk.Looks.BLANK,
         size: l.zxk.Sizes.NONE,
         children: (0, r.jsx)(l.Text, {

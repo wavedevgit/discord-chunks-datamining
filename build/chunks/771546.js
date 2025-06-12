@@ -102,7 +102,7 @@ e.exports = function(e) {
       }],
       relevance: 0
     },
-    f = {
+    _ = {
       begin: "(?!%\\})(" + e.RE_STARTERS_RE + "|\\n|\\b(case|if|select|unless|until|when|while)\\b)\\s*",
       keywords: "case if select unless until when while",
       contains: [{
@@ -118,7 +118,7 @@ e.exports = function(e) {
       }],
       relevance: 0
     },
-    _ = [l, u, d, {
+    f = [l, u, d, {
       className: "regexp",
       contains: [e.BACKSLASH_ESCAPE, o],
       variants: [{
@@ -142,7 +142,7 @@ e.exports = function(e) {
         end: "\\|"
       }],
       relevance: 0
-    }, f, {
+    }, _, {
       className: "meta",
       begin: "@\\[",
       end: "\\]",
@@ -218,10 +218,10 @@ e.exports = function(e) {
       }],
       relevance: 0
     }];
-  return o.contains = _, l.contains = _.slice(1), {
+  return o.contains = f, l.contains = f.slice(1), {
     name: "Crystal",
     aliases: ["cr"],
     keywords: a,
-    contains: _
+    contains: f
   }
 }

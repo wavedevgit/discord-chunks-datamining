@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367);
 n(73800);
@@ -13,13 +13,13 @@ var i = n(120356),
   c = n(533432),
   u = n(149203),
   d = n(185923),
-  f = n(539490);
-let _ = e => {
+  _ = n(539490);
+let f = e => {
   let {
     accessory: t,
     pickerIntention: n,
     headerClassName: i,
-    emojiListRef: _,
+    emojiListRef: f,
     onKeyDown: p,
     onFocus: h,
     autoFocus: m,
@@ -31,30 +31,30 @@ let _ = e => {
     renderHeader: v
   } = e, I = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
-      emojiListRef: _,
+      emojiListRef: f,
       gridNavigatorId: u.Vr,
       onKeyDown: p,
-      className: f.searchBar,
+      className: _.searchBar,
       ref: g,
       isFullRow: !1,
       onFocus: h,
       autoFocus: m,
       defaultSearchPlaceholder: (0, s.nV)(n, y)
     }), n === d.Hz.REACTION ? (0, r.jsx)("div", {
-      className: f.burstToggle,
+      className: _.burstToggle,
       children: (0, r.jsx)(o.Z, {
         checked: y,
         onClick: O
       })
     }) : null, null != t ? t : (0, r.jsx)(l.Z, {
       searchBarRef: g,
-      className: f.diversitySelector,
+      className: _.diversitySelector,
       hasTabWrapper: E,
       selectedSurrogate: b
     })]
   });
   return (0, r.jsx)("div", {
-    className: a()(f.header, i),
+    className: a()(_.header, i),
     children: null != v ? v(I) : I
   })
 }

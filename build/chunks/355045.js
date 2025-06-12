@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(906732),
   d = n(975298),
-  f = n(565138),
-  _ = n(963249),
+  _ = n(565138),
+  f = n(963249),
   p = n(317169),
   h = n(199778),
   m = n(594174),
@@ -43,7 +43,7 @@ let A = function(e) {
   }).length, [C, n.id]), D = i.useMemo(() => (0, b.vx)(C).length > 0, [C]), L = (0, p.Z)(e.guild.id).total;
 
   function x() {
-    (0, _.Z)({
+    (0, f.Z)({
       initialPlanId: null,
       subscriptionTier: I.Si.TIER_2,
       analyticsLocations: R,
@@ -57,8 +57,8 @@ let A = function(e) {
     })
   }
 
-  function k() {
-    (0, _.Z)({
+  function M() {
+    (0, f.Z)({
       initialPlanId: null,
       subscriptionTier: I.Si.TIER_2,
       isGift: !0,
@@ -74,10 +74,10 @@ let A = function(e) {
   }
   return (0, r.jsxs)("div", {
     className: S.guildStatus,
-    children: [(0, r.jsx)(f.Z, {
+    children: [(0, r.jsx)(_.Z, {
       className: S.guildIcon,
       guild: n,
-      size: f.Z.Sizes.LARGER
+      size: _.Z.Sizes.LARGER
     }), (0, r.jsx)(c.X6q, {
       className: S.guildName,
       color: "always-white",
@@ -139,7 +139,7 @@ let A = function(e) {
         innerClassName: o()(S.__invalid_guildBoostCtaContent, S.guildBoostCtaGiftContent),
         look: c.zxk.Looks.OUTLINED,
         color: c.zxk.Colors.WHITE,
-        onClick: k,
+        onClick: M,
         size: c.zxk.Sizes.LARGE,
         children: [(0, r.jsx)(c.OgN, {
           size: "md",

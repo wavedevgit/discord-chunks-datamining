@@ -4,7 +4,7 @@ n.d(t, {
   Iu: () => G,
   Jw: () => j,
   _r: () => B,
-  cX: () => V,
+  cX: () => F,
   lv: () => U,
   v: () => x
 });
@@ -17,8 +17,8 @@ var r = n(392711),
   c = n(624833),
   u = n(944314),
   d = n(399358),
-  f = n(945835),
-  _ = n(912931),
+  _ = n(945835),
+  f = n(912931),
   p = n(966552),
   h = n(561763),
   m = n(529306),
@@ -43,11 +43,11 @@ let x = {
     start: 10,
     end: 15
   },
-  k = [a],
-  M = [o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S, A],
+  M = [a],
+  k = [o, s, l, c, u, d, _, f, p, h, m, g, E, b, y, O, v, I, T, S, A],
   j = {
-    [D.q.BASIC]: k,
-    [D.q.PREMIUM]: M
+    [D.q.BASIC]: M,
+    [D.q.PREMIUM]: k
   },
   U = i().memoize(e => new Promise(t => {
     let n = new Image;
@@ -85,18 +85,18 @@ function B(e) {
   return null != i ? w.ZP.getURL(i.surrogates) : ""
 }
 
-function F(e, t) {
+function V(e, t) {
   return i()(e).map(e => {
     var n;
     return null != (n = e[t]) ? n : null
   }).filter(e => null != e).uniq().value()
 }
 
-function V(e) {
+function F(e) {
   var t, n, r, i, a, o;
   if (e.length < 1) return "";
-  let s = F(e, "userId"),
-    l = F(e, "emojiName"),
+  let s = V(e, "userId"),
+    l = V(e, "emojiName"),
     c = l.length < 2 ? null != (t = null == l ? void 0 : l[0]) ? t : "" : l.join(", ");
   return s.length < 1 ? "" : 1 === s.length ? L.intl.formatToPlainString(L.t.yZYxzM, {
     firstUsername: null == (n = R.default.getUser(s[0])) ? void 0 : n.username,

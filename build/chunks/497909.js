@@ -41,7 +41,7 @@ function d() {
   }
 }
 
-function f() {
+function _() {
   s.o.forEach(e => {
     let t = (0, a.B)({
       kind: "user",
@@ -67,13 +67,13 @@ function f() {
     e.setDiscordExperiment(t)
   })
 }
-class _ extends i.Z {
+class f extends i.Z {
   _initialize() {
-    f(), d()
+    _(), d()
   }
   _terminate() {}
   constructor(...e) {
     super(...e), l(this, "actions", {}), l(this, "stores", new Map().set(o.Z, d))
   }
 }
-let p = new _
+let p = new f

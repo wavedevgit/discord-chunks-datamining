@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Dz: () => _,
+  Dz: () => f,
   SW: () => w,
-  T_: () => k,
-  _v: () => M,
+  T_: () => M,
+  _v: () => k,
   jd: () => x,
   pz: () => D,
   s5: () => R
@@ -38,8 +38,8 @@ function u(e) {
   return e
 }
 let d = new a.Yd("KeyboardLayoutMapUtils"),
-  f = (0, s.isLinux)() ? l.HsE : (0, s.isMac)() ? l.REU : (0, s.isWindows)() || __OVERLAY__ ? l.iC$ : i().codes,
-  _ = new Set([192, 220, 222, 223, 229]),
+  _ = (0, s.isLinux)() ? l.HsE : (0, s.isMac)() ? l.REU : (0, s.isWindows)() || __OVERLAY__ ? l.iC$ : i().codes,
+  f = new Set([192, 220, 222, 223, 229]),
   p = Object.freeze({
     KeyA: "a",
     KeyB: "b",
@@ -368,7 +368,7 @@ let N = null,
 
 function R() {
   return null != C ? C : C = new Promise(async e => {
-    await E(), N = new A(f), document.addEventListener("keydown", e => {
+    await E(), N = new A(_), document.addEventListener("keydown", e => {
       try {
         null == N || N.addEvent(e)
       } catch (t) {
@@ -410,7 +410,7 @@ function x(e) {
   return null
 }
 
-function k(e) {
+function M(e) {
   var t, n, r, i;
   let a = null != e ? h(e) : void 0;
   if (null == a) return null;
@@ -431,7 +431,7 @@ function k(e) {
   }
 }
 
-function M(e) {
+function k(e) {
   var t, n, r, i;
   let a = null != (n = null == (t = P()) ? void 0 : t.findKeyboardEventByKeyCode(e)) ? n : null;
   if (null != a) return a;

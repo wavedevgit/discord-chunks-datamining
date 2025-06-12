@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(895924),
   u = n(124072),
   d = n(665906),
-  f = n(695346),
-  _ = n(592125),
+  _ = n(695346),
+  f = n(592125),
   p = n(703558),
   h = n(496675),
   m = n(944486),
@@ -67,7 +67,7 @@ function A(e, t) {
 function N(e, t, n, i, a) {
   if (null == e) return;
   let u = () => {
-    let r = _.Z.getChannel(e);
+    let r = f.Z.getChannel(e);
     if (null == r) return;
     let {
       command: o,
@@ -77,7 +77,7 @@ function N(e, t, n, i, a) {
       type: "channel"
     }, n, a);
     if (null != o && o.untranslatedName === t) {
-      var d, f;
+      var d, _;
       g.S.dispatch(E.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       });
@@ -85,7 +85,7 @@ function N(e, t, n, i, a) {
         type: c.Qi.APPLICATION,
         id: u.id,
         icon: u.icon,
-        name: null != (f = null == u || null == (d = u.bot) ? void 0 : d.username) ? f : u.name,
+        name: null != (_ = null == u || null == (d = u.bot) ? void 0 : d.username) ? _ : u.name,
         application: u
       } : null;
       s.Po({
@@ -125,9 +125,9 @@ function C(e) {
     node: n,
     output: s,
     state: p
-  } = e, g = (0, a.e7)([_.Z, m.Z], () => {
+  } = e, g = (0, a.e7)([f.Z, m.Z], () => {
     var e;
-    return _.Z.getChannel(null != (e = n.channelId) ? e : m.Z.getChannelId())
+    return f.Z.getChannel(null != (e = n.channelId) ? e : m.Z.getChannelId())
   }, [n.channelId]), {
     hasSendMessagePerm: O,
     hasUseAppCommandsPerm: v
@@ -141,7 +141,7 @@ function C(e) {
     type: "contextless"
   }, {
     command: T
-  } = l.YZ(I, null != (t = n.commandKey) ? t : ""), S = f.dN.useSetting(), A = i.useMemo(() => {
+  } = l.YZ(I, null != (t = n.commandKey) ? t : ""), S = _.dN.useSetting(), A = i.useMemo(() => {
     if (null == T || null == g || T.untranslatedName !== n.commandName || S) return !1;
     let e = g.isPrivate();
     if ((0, d.xl)(g) || !e && !O) return !1;

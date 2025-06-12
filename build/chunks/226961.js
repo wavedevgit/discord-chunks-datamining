@@ -15,7 +15,7 @@ var r, i = n(442837),
   u = n(981631),
   d = n(65154);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -79,10 +79,10 @@ class v {
   }
   put(e, t, n, r) {
     if ("" === r) {
-      let r = _({}, this.state);
+      let r = f({}, this.state);
       return delete r[y(e, t, n)], new v(r)
     }
-    return new v(_({
+    return new v(f({
       [y(e, t, n)]: r
     }, this.state))
   }
@@ -91,7 +91,7 @@ class v {
     return null != r ? r : null
   }
   constructor(e) {
-    f(this, "state", void 0), this.state = e
+    _(this, "state", void 0), this.state = e
   }
 }
 let I = v.empty(),
@@ -144,7 +144,7 @@ function x(e) {
   h = e.section
 }
 
-function k(e) {
+function M(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : Date.now(),
     r = {};
@@ -157,12 +157,12 @@ function k(e) {
         for (let e = 0; e < a.length; e++) {
           let r = t[e],
             i = "object" == typeof r ? r : {};
-          o.push(k(a[e], i, n))
+          o.push(M(a[e], i, n))
         }
       } else r[i] = a;
     else if ("object" == typeof a && null !== a) {
       let t = "object" == typeof e && null !== e ? e : {};
-      r[i] = k(a, t, n)
+      r[i] = M(a, t, n)
     } else if (i in E && "number" == typeof a) {
       let t = r[i] = Array.isArray(e) ? e : [];
       t.push({
@@ -174,7 +174,7 @@ function k(e) {
   return r
 }
 
-function M(e) {
+function k(e) {
   let {
     connectionStats: t
   } = e;
@@ -210,7 +210,7 @@ function j(e) {
       } = n;
       Object.keys(e).includes(a) || (h = p)
     }
-    i[r] = k(n, i[r])
+    i[r] = M(n, i[r])
   } else delete i[r]
 }
 
@@ -239,14 +239,14 @@ function B(e) {
   I = I.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
 }
 
-function F(e) {
+function V(e) {
   let {
     value: t
   } = e;
   T = t
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t,
     context: n,
@@ -296,7 +296,7 @@ class Z extends(r = i.ZP.Store) {
     return g.has(n) ? g.get(n) : d.Z.NO_OVERRIDE
   }
 }
-f(Z, "displayName", "RTCDebugStore");
+_(Z, "displayName", "RTCDebugStore");
 let H = new Z(o.Z, {
   RTC_DEBUG_MODAL_OPEN: P,
   RTC_DEBUG_MODAL_CLOSE: w,
@@ -304,9 +304,9 @@ let H = new Z(o.Z, {
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
   RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: B,
-  RTC_DEBUG_SET_RECORDING_FLAG: F,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: V,
+  RTC_DEBUG_SET_RECORDING_FLAG: V,
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
   VOICE_CHANNEL_SELECT: D,
   RTC_CONNECTION_VIDEO: L,
-  MEDIA_ENGINE_CONNECTION_STATS: M
+  MEDIA_ENGINE_CONNECTION_STATS: k
 })

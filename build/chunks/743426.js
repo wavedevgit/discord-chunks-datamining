@@ -12,8 +12,8 @@ var r = n(264344),
   c = n(997545),
   u = n(501950),
   d = n(992774),
-  f = n(656795),
-  _ = n(650886),
+  _ = n(656795),
+  f = n(650886),
   p = n(65154),
   h = n(149396);
 
@@ -265,8 +265,8 @@ class v extends o.Z {
       id: l,
       soundshareId: c,
       useLoopback: u,
-      useVideoHook: f,
-      useGraphicsCapture: _,
+      useVideoHook: _,
+      useGraphicsCapture: f,
       useQuartzCapturer: p,
       allowScreenCaptureKit: m,
       hdrCaptureMode: g
@@ -274,8 +274,8 @@ class v extends o.Z {
     n.setOnClipsRecordingEvent(t => {
       this.logger.info("Clips recording event: ".concat(h.Pf[t], " received for stream ").concat(l, " and sound ").concat(c, ".")), t === h.Pf.GoLiveEnded ? this.emit(s.aB.ClipsRecordingRestartNeeded) : t === h.Pf.Error ? this.emit(s.aB.ClipsInitFailure, "Failed to set clips source in media engine", e.applicationName) : (t === h.Pf.Ended || t === h.Pf.StoppedByGoLive) && this.emit(s.aB.ClipsRecordingEnded, l, c)
     }), null == (t = n.applyClipsSettings) || t.call(n, {
-      useVideoHook: f,
-      useGraphicsCapture: _,
+      useVideoHook: _,
+      useGraphicsCapture: f,
       useQuartzCapturer: p,
       allowScreenCaptureKit: m,
       hdrCaptureMode: g,
@@ -453,7 +453,7 @@ class v extends o.Z {
     }), this.connections.add(n), (0, d.p8)(h.uJ.HIGH), this.emit(s.aB.Connection, n), n)
   }
   setOnVideoContainerResized(e) {
-    _.Z.onContainerResized = e
+    f.Z.onContainerResized = e
   }
   setMaxSyncDelayOverride(e) {
     let {
@@ -546,7 +546,7 @@ class v extends o.Z {
   }
   constructor() {
     var e, t, n, r, i, o, c, p;
-    super(), e = this, m(this, "Video", _.Z), m(this, "Camera", f.Z), m(this, "videoInputDeviceId", h.Av), m(this, "connections", new Set), m(this, "lastVoiceActivity", -1), m(this, "audioSubsystem", "standard"), m(this, "audioLayer", ""), m(this, "deviceChangeGeneration", 0), m(this, "consecutiveWatchdogFailures", 0), m(this, "codecSurvey", null), m(this, "logger", new a.Yd("MediaEngineNative")), m(this, "handleDeviceChange", function() {
+    super(), e = this, m(this, "Video", f.Z), m(this, "Camera", _.Z), m(this, "videoInputDeviceId", h.Av), m(this, "connections", new Set), m(this, "lastVoiceActivity", -1), m(this, "audioSubsystem", "standard"), m(this, "audioLayer", ""), m(this, "deviceChangeGeneration", 0), m(this, "consecutiveWatchdogFailures", 0), m(this, "codecSurvey", null), m(this, "logger", new a.Yd("MediaEngineNative")), m(this, "handleDeviceChange", function() {
       let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
         n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
         r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];

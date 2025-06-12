@@ -18,22 +18,22 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let f = null,
-  _ = null,
+let _ = null,
+  f = null,
   p = null;
 
 function h(e) {
   let {
     client: t
   } = e;
-  f = t
+  _ = t
 }
 
 function m(e) {
   let {
     paypalClient: t
   } = e;
-  _ = t
+  f = t
 }
 
 function g(e) {
@@ -67,7 +67,7 @@ function b(e) {
 }
 
 function y() {
-  _ = null
+  f = null
 }
 
 function O() {
@@ -83,10 +83,10 @@ function O() {
 });
 class v extends(a = o.ZP.Store) {
   getClient() {
-    return f
+    return _
   }
   getPayPalClient() {
-    return _
+    return f
   }
   getVenmoClient() {
     return p

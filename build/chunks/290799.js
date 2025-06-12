@@ -12,7 +12,7 @@ var r = n(255367),
   c = n(981631),
   u = n(388032),
   d = n(388272);
-let f = [{
+let _ = [{
     getQuestion: () => u.intl.string(u.t.C4J8UF),
     getAnswer: () => u.intl.string(u.t.nhkk6u)
   }, {
@@ -27,7 +27,7 @@ let f = [{
     getQuestion: () => u.intl.string(u.t.kYmXWF),
     getAnswer: () => u.intl.string(u.t["+OURPj"])
   }],
-  _ = [...f, {
+  f = [..._, {
     getQuestion: () => u.intl.string(u.t["LsX/vb"]),
     getAnswer: () => u.intl.string(u.t["3TeauL"])
   }, {
@@ -47,7 +47,7 @@ let f = [{
     let {
       className: t,
       isGuildPowerupsExperimentEnabled: n
-    } = e, [a, l] = i.useState(null), c = n ? _ : f;
+    } = e, [a, l] = i.useState(null), c = n ? f : _;
     return (0, r.jsxs)("div", {
       className: o()(d.wrapper, t),
       children: [(0, r.jsx)(s.X6q, {

@@ -5,7 +5,7 @@ n.d(t, {
   $J: () => e5,
   AV: () => ed,
   B2: () => ty,
-  B3: () => tf,
+  B3: () => t_,
   BM: () => e7,
   Bg: () => eg,
   Bz: () => e8,
@@ -16,7 +16,7 @@ n.d(t, {
   FI: () => th,
   FX: () => eh,
   Fs: () => tl,
-  GN: () => ef,
+  GN: () => e_,
   Gd: () => tp,
   HJ: () => e4,
   Jg: () => eS,
@@ -47,7 +47,7 @@ n.d(t, {
   b7: () => eK,
   bA: () => tb,
   f$: () => tu,
-  f2: () => eM,
+  f2: () => ek,
   fY: () => te,
   gI: () => tt,
   hF: () => tv,
@@ -55,7 +55,7 @@ n.d(t, {
   iQ: () => z,
   il: () => eW,
   lQ: () => W,
-  nc: () => ek,
+  nc: () => eM,
   o9: () => ex,
   oo: () => eA,
   pO: () => eP,
@@ -63,7 +63,7 @@ n.d(t, {
   q8: () => e1,
   qe: () => tO,
   t2: () => eu,
-  u7: () => t_,
+  u7: () => tf,
   vQ: () => ey,
   vR: () => eI,
   xN: () => eE,
@@ -71,7 +71,7 @@ n.d(t, {
   yH: () => tc,
   yI: () => er,
   ys: () => eT,
-  zE: () => e_,
+  zE: () => ef,
   zK: () => eL,
   zi: () => K
 }), n(388685), n(314940), n(953529), n(415506), n(642613), n(784620), n(973216), n(539854);
@@ -84,9 +84,9 @@ var r = n(991998),
   c = n(887003),
   u = n(570140),
   d = n(230711),
-  f = n(782568);
+  _ = n(782568);
 n(597688);
-var _ = n(231757),
+var f = n(231757),
   p = n(706454),
   h = n(866960),
   m = n(572004),
@@ -118,7 +118,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -131,7 +131,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -143,7 +143,7 @@ function M(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -160,14 +160,14 @@ function B(e) {
     return console.error("Unknown config version '".concat(null == e || null == (t = e.config) ? void 0 : t.config_version, "'"), n), !1
   }
 }
-let F = e => e.application_id === D.Ev || e.platform === w.M7m.XBOX,
-  V = e => e.platform === w.M7m.PS4 || e.platform === w.M7m.PS5;
+let V = e => e.application_id === D.Ev || e.platform === w.M7m.XBOX,
+  F = e => e.platform === w.M7m.PS4 || e.platform === w.M7m.PS5;
 
 function Z(e, t) {
   if (null == e) return !1;
   let n = e.name.toLowerCase(),
     r = C.r.build(t.config).application.name.toLowerCase();
-  return F(e) || V(e) ? n === r : null != e.application_id && Y(e.application_id, t)
+  return V(e) || F(e) ? n === r : null != e.application_id && Y(e.application_id, t)
 }
 
 function H(e, t) {
@@ -407,12 +407,12 @@ function ed(e) {
   })
 }
 
-function ef(e) {
+function e_(e) {
   return Object.keys(P.a_).includes(S.jn[e])
 }
 
-function e_(e, t) {
-  if (!ef(t)) return !1;
+function ef(e, t) {
+  if (!e_(t)) return !1;
   let n = S.jn[t];
   return (0, b.yE)(e.dismissedQuestContent, P.a_[n])
 }
@@ -487,8 +487,8 @@ function eI(e, t) {
 }
 
 function eT(e, t) {
-  O.Z.captureException(e, j(k({}, t), {
-    tags: j(k({}, null == t ? void 0 : t.tags), {
+  O.Z.captureException(e, j(M({}, t), {
+    tags: j(M({}, null == t ? void 0 : t.tags), {
       app_context: "quests"
     })
   }))
@@ -559,7 +559,7 @@ function ex(e) {
   return r.type === c.w.REWARD_CODE ? r : null
 }
 
-function ek(e, t) {
+function eM(e, t) {
   let n = C.r.build(e.config).application.link;
   (0, v._3)({
     questId: e.id,
@@ -567,9 +567,9 @@ function ek(e, t) {
     questContentCTA: t.ctaContent,
     questContentPosition: t.position,
     impressionId: t.impressionId
-  }), g.S.dispatch(w.CkL.QUEST_GAME_LINK_OPENED), (0, f.Z)(n)
+  }), g.S.dispatch(w.CkL.QUEST_GAME_LINK_OPENED), (0, _.Z)(n)
 }
-let eM = (e, t) => {
+let ek = (e, t) => {
     (0, v._3)({
       questId: e,
       questContent: t.content,
@@ -597,12 +597,12 @@ let eM = (e, t) => {
     }
     return l + eG(e, t)
   },
-  eF = .99,
-  eV = (e, t) => {
+  eV = .99,
+  eF = (e, t) => {
     var n;
     let r = t.target;
     if ((null == (n = e.userStatus) ? void 0 : n.completedAt) != null) return r;
-    let a = Math.min(r * eF, eB(e, t));
+    let a = Math.min(r * eV, eB(e, t));
     return Math.max((0, i.floor)(a, 2), 0)
   },
   eZ = e => {
@@ -614,7 +614,7 @@ let eM = (e, t) => {
     } = e, s = r.config.taskConfigV2, l = null != i ? i : null == (t = Object.values(s.tasks).filter(e => a.has(e.type))[0]) ? void 0 : t.type, c = null != (n = s.tasks[l]) ? n : s.tasks[o.X.STREAM_ON_DESKTOP];
     if (null == c) throw Error("No task with type ".concat(i, " found for quest ").concat(r.id, "!"));
     let u = c.target,
-      d = eV(r, c);
+      d = eF(r, c);
     return {
       progressSeconds: d,
       targetSeconds: u,
@@ -742,7 +742,7 @@ function e8(e) {
 }
 
 function e7(e) {
-  return !!e1(e) && (0, n(952265).nf)(t_(e.id))
+  return !!e1(e) && (0, n(952265).nf)(tf(e.id))
 }
 
 function e9() {
@@ -759,7 +759,7 @@ function te(e, t) {
     questContent: t.content,
     questContentCTA: t.ctaContent,
     impressionId: t.impressionId
-  }), (0, _.Z)({
+  }), (0, f.Z)({
     platformType: n,
     location: t.ctaContent
   })
@@ -777,13 +777,13 @@ function tt(e, t) {
     questContentCTA: t.ctaContent,
     impressionId: t.impressionId
   });
-  let r = tf(n);
-  if (1 === r.length) return (0, _.Z)({
+  let r = t_(n);
+  if (1 === r.length) return (0, f.Z)({
     platformType: r.at(0)
   });
   u.Z.dispatch({
     type: "CONNECTIONS_GRID_MODAL_SHOW",
-    onComplete: e => (0, _.Z)({
+    onComplete: e => (0, f.Z)({
       platformType: e
     }),
     includedPlatformTypes: new Set(r)
@@ -834,8 +834,8 @@ function ts(e) {
   }), u = null != s ? s : null == o ? void 0 : o.platform, d = c ? ex({
     quest: a,
     idx: null != (r = null == o ? void 0 : o.tier) ? r : null == (t = a.userStatus) ? void 0 : t.claimedTier
-  }) : null, f = null != (i = null == d || null == (n = d.messages) ? void 0 : n.redemptionInstructionsByPlatform) ? i : l.defaultRewardRedemptionInstructionsByPlatform;
-  return null != u ? f[u] : void 0
+  }) : null, _ = null != (i = null == d || null == (n = d.messages) ? void 0 : n.redemptionInstructionsByPlatform) ? i : l.defaultRewardRedemptionInstructionsByPlatform;
+  return null != u ? _[u] : void 0
 }
 
 function tl(e) {
@@ -878,7 +878,7 @@ function td(e) {
   return tu(e) && (null == (t = ep(e)) ? void 0 : t.expirationMode) === l.n.PREMIUM_PERMANENT
 }
 
-function tf(e) {
+function t_(e) {
   let t = Object.keys(e.config.taskConfigV2.tasks),
     n = [];
   for (let e of t) switch (e) {
@@ -891,7 +891,7 @@ function tf(e) {
   return n
 }
 
-function t_(e) {
+function tf(e) {
   return "VIDEO-QUEST-".concat(e)
 }
 

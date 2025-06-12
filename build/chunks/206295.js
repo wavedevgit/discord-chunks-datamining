@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(73800),
   i = n(688619),
@@ -13,21 +13,21 @@ var o = n(442837),
   c = n(220082),
   u = n(981631);
 let d = 8,
-  f = .725,
-  _ = e => {
-    var t, i, _, p, h, m;
+  _ = .725,
+  f = e => {
+    var t, i, f, p, h, m;
     let g;
     g = n(481060).TVs;
     let E = (0, o.e7)([l.Z], () => l.Z.saturation),
-      [b, y] = (0, c.Cf)(e, null != (m = null == g || null == (h = g.colors) || null == (p = h.BACKGROUND_FLOATING) || null == (_ = p.resolve) || null == (i = _.call(p, {
+      [b, y] = (0, c.Cf)(e, null != (m = null == g || null == (h = g.colors) || null == (p = h.BACKGROUND_FLOATING) || null == (f = p.resolve) || null == (i = f.call(p, {
         theme: u.BRd.DARK,
         saturation: E
       })) || null == (t = i.hex) ? void 0 : t.call(i)) ? m : "#000");
     return r.useMemo(() => {
       let e = (0, s._i)(b),
         t = (0, s._i)(y);
-      for (let t = 1; t < d && !((0, s.Bd)(e) >= f); t++) e = a()(e).darken(.5).num();
-      for (let e = 1; e < d && !((0, s.Bd)(t) >= f); e++) t = a()(t).darken(.5).num();
+      for (let t = 1; t < d && !((0, s.Bd)(e) >= _); t++) e = a()(e).darken(.5).num();
+      for (let e = 1; e < d && !((0, s.Bd)(t) >= _); e++) t = a()(t).darken(.5).num();
       return {
         primaryColor: (0, s.Rf)(e),
         secondaryColor: (0, s.Rf)(t)

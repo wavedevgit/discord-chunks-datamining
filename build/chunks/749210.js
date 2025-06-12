@@ -13,8 +13,8 @@ var r = n(990547),
   c = n(336197),
   u = n(280837),
   d = n(895886),
-  f = n(35225),
-  _ = n(703656),
+  _ = n(35225),
+  f = n(703656),
   p = n(314897),
   h = n(664915),
   m = n(984933),
@@ -94,7 +94,7 @@ let x = e => {
       })
     })
   },
-  k = e => {
+  M = e => {
     o.Z.dispatch({
       type: "GUILD_DELETE",
       guild: {
@@ -102,7 +102,7 @@ let x = e => {
       }
     })
   },
-  M = () => {
+  k = () => {
     S.Z.show({
       title: N.intl.string(N.t.ZZlox8),
       body: N.intl.string(N.t.ZUEGFh)
@@ -117,7 +117,7 @@ function j(e) {
 }
 
 function U(e, t) {
-  return null != t ? t : (0, f.V)(e)
+  return null != t ? t : (0, _.V)(e)
 }
 let G = {
   joinGuild: async function(e) {
@@ -125,7 +125,7 @@ let G = {
     let c = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
       {
         source: u,
-        loadId: f,
+        loadId: _,
         lurkLocation: h
       } = c,
       m = null != (t = c.lurker) && t,
@@ -136,7 +136,7 @@ let G = {
       guildId: e,
       lurker: m,
       source: u,
-      loadId: f
+      loadId: _
     }));
     try {
       let t = b.Z.getGuildId(),
@@ -146,7 +146,7 @@ let G = {
           query: {
             lurker: m,
             session_id: m ? p.default.getSessionId() : null,
-            recommendation_load_id: f,
+            recommendation_load_id: _,
             location: m && null != h ? h : null
           },
           context: {
@@ -160,7 +160,7 @@ let G = {
           type: "USER_GUILD_JOIN_REQUEST_UPDATE",
           guildId: e,
           request: i.body.join_request
-        }), null == g.Z.getGuild(e) && i.body.show_verification_form) return (0, _.uL)(A.Z5c.GUILD_MEMBER_VERIFICATION(e)), i;
+        }), null == g.Z.getGuild(e) && i.body.show_verification_form) return (0, f.uL)(A.Z5c.GUILD_MEMBER_VERIFICATION(e)), i;
       if (null != i.body.welcome_screen && o.Z.dispatch({
           type: "WELCOME_SCREEN_UPDATE",
           guildId: i.body.id,
@@ -184,7 +184,7 @@ let G = {
         let e = y.default.getCurrentUser();
         I.ZP.canUseIncreasedGuildCap(e) || (null == e ? void 0 : e.isStaff()) ? x(A.tHP) : x(A.DZw)
       }
-      throw (null == (s = t.body) ? void 0 : s.code) === A.evJ.GUILD_AT_CAPACITY && M(), m && (null == (l = t.body) ? void 0 : l.code) === A.evJ.UNKNOWN_GUILD && k(e), t
+      throw (null == (s = t.body) ? void 0 : s.code) === A.evJ.GUILD_AT_CAPACITY && k(), m && (null == (l = t.body) ? void 0 : l.code) === A.evJ.UNKNOWN_GUILD && M(e), t
     }
   },
   waitForGuild: j,
@@ -195,7 +195,7 @@ let G = {
       welcomeModalChannelId: null != i ? i : void 0
     })), (0, c.Z)(A.Z5c.CHANNEL(e, i, r), a), await new Promise(setImmediate)
   },
-  deleteGuild: k,
+  deleteGuild: M,
   selectGuild(e) {
     (0, u.a)(e)
   },
@@ -495,13 +495,13 @@ let G = {
     })
   },
   nsfwReturnToSafety(e) {
-    if (null == e) return void(0, _.uL)(A.Z5c.FRIENDS);
+    if (null == e) return void(0, f.uL)(A.Z5c.FRIENDS);
     let t = m.ZP.getDefaultChannel(e);
-    null == t || t.isNSFW() ? (0, _.uL)(A.Z5c.FRIENDS) : (0, _.uL)(A.Z5c.CHANNEL(e, t.id))
+    null == t || t.isNSFW() ? (0, f.uL)(A.Z5c.FRIENDS) : (0, f.uL)(A.Z5c.CHANNEL(e, t.id))
   },
   escapeToDefaultChannel(e) {
     let t = m.ZP.getDefaultChannel(e);
-    null != t ? (0, _.uL)(A.Z5c.CHANNEL(e, t.id)) : (0, _.uL)(A.Z5c.FRIENDS)
+    null != t ? (0, f.uL)(A.Z5c.CHANNEL(e, t.id)) : (0, f.uL)(A.Z5c.FRIENDS)
   },
   async fetchApplications(e, t) {
     let n = {

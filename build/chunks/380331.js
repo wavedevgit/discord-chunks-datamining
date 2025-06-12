@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(91192),
   u = n(442837),
   d = n(477690),
-  f = n(481060),
-  _ = n(2052),
+  _ = n(481060),
+  f = n(2052),
   p = n(607070),
   h = n(806966),
   m = n(254494),
@@ -70,17 +70,17 @@ function L(e, t) {
   }), e
 }
 let x = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
-  k = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
-  M = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
+  M = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
+  k = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
   j = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
   U = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
   G = (0, y.Mg)(R.__invalid_unicodeCategoryShortcutHeight),
   B = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
-  F = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-  V = M + k + 2 * U,
-  Z = x + k,
-  H = Z + (B + 2 * F),
-  Y = M + j + 2 * U,
+  V = (0, y.Mg)(d.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
+  F = k + M + 2 * U,
+  Z = x + M,
+  H = Z + (B + 2 * V),
+  Y = k + j + 2 * U,
   W = 7;
 
 function K(e) {
@@ -92,8 +92,8 @@ function K(e) {
     category: l,
     handleCategorySelect: u,
     isWindowFocused: d,
-    useReducedMotion: _
-  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === S.En.GUILD ? null : l.id, m = t === n, E = l.type === S.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, L(w({}, p), {
+    useReducedMotion: f
+  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === S.En.GUILD ? null : l.id, m = t === n, E = l.type === S.En.GUILD ? l.guild : null, y = (0, r.jsxs)(_.P3F, L(w({}, p), {
     "aria-label": (0, O.Nf)(l, E),
     className: o()({
       [R.categoryItemGuildCategory]: null != E,
@@ -111,13 +111,13 @@ function K(e) {
     children: [null != E ? (0, r.jsx)(I.Z, {
       guild: E,
       isSelected: m,
-      shouldAnimate: !_ && d,
+      shouldAnimate: !f && d,
       isLocked: l.isNitroLocked
     }) : null, null == E && null != h ? (0, r.jsx)(v.Z, {
       categoryId: h,
       className: R.categoryIcon,
-      height: M,
-      width: M,
+      height: k,
+      width: k,
       size: "custom"
     }) : null]
   })), T = s[n + 1], C = null != T && l.type === S.En.GUILD && T.type !== S.En.GUILD;
@@ -145,7 +145,7 @@ let z = e => {
   } = e, b = h.kJ.useStore(e => e.activeCategoryIndex), y = (0, T.Ni)({
     sectionDescriptors: a,
     emojiListRef: n
-  }), v = (0, _.O)(), I = (0, O.kI)(s, c, null == c ? void 0 : c.guild_id, d), A = i.useMemo(() => g ? (0, O.ZF)() : I, [I, g]), N = i.useRef(null), P = (0, u.e7)([E.Z], () => E.Z.isFocused()), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), D = i.useMemo(() => l().memoize((e, t) => {
+  }), v = (0, f.O)(), I = (0, O.kI)(s, c, null == c ? void 0 : c.guild_id, d), A = i.useMemo(() => g ? (0, O.ZF)() : I, [I, g]), N = i.useRef(null), P = (0, u.e7)([E.Z], () => E.Z.isFocused()), w = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), D = i.useMemo(() => l().memoize((e, t) => {
     let n = A[t];
     if (null != n) return (0, r.jsx)(K, {
       activeIndex: b,
@@ -159,7 +159,7 @@ let z = e => {
     }, t)
   }), [b, v, A, y, P, w]), L = i.useMemo(() => [8, 8, 0, 8], []), x = i.useCallback((e, t) => {
     let n = A[t];
-    if (n.type === S.En.RECENT) return V;
+    if (n.type === S.En.RECENT) return F;
     if (n.type === S.En.GUILD) {
       let e = A[t + 1];
       return null != e && e.type !== S.En.GUILD ? H : Z
@@ -178,7 +178,7 @@ let z = e => {
     A.forEach(i => {
       i.type === S.En.GUILD ? (t += 1, n += 1) : i.type === S.En.UNICODE ? r += 1 : (e += 1, t += 1)
     });
-    let i = V + t * Z + H;
+    let i = F + t * Z + H;
     return {
       nonUnicodeCategoryCount: t,
       firstUnicodeCategoryIndex: t,
@@ -205,9 +205,9 @@ let z = e => {
       if (n.type === S.En.RECENT) return t ? 0 : j;
       if (n.type === S.En.GUILD) {
         let n = A[e + 1];
-        return null != n && n.type !== S.En.GUILD ? t ? B + -2 * F + k + r : k : t ? r : k
+        return null != n && n.type !== S.En.GUILD ? t ? B + -2 * V + M + r : M : t ? r : M
       }
-      return t ? k + r : 2 * k
+      return t ? M + r : 2 * M
     }, [A, Q]),
     en = i.useMemo(() => function(e, t) {
       return (0, r.jsx)(i.Fragment, {
@@ -229,7 +229,7 @@ let z = e => {
     categoryHeight: x,
     getScrollOffsetForIndex: et,
     rowCountBySection: X,
-    children: e => U >= W && (0, r.jsx)(f.P3F, {
+    children: e => U >= W && (0, r.jsx)(_.P3F, {
       "aria-hidden": !Q,
       "aria-label": C.intl.string(C.t.dT0ct7),
       className: o()(R.unicodeShortcut, {
@@ -237,11 +237,11 @@ let z = e => {
       }),
       tabIndex: Q ? 0 : -1,
       onClick: () => ee(e),
-      children: (0, r.jsx)(f.EO4, {
+      children: (0, r.jsx)(_.EO4, {
         size: "custom",
         color: "currentColor",
-        height: M,
-        width: M
+        height: k,
+        width: k
       })
     }, er)
   })

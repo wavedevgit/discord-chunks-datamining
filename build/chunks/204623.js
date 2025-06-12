@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(336317),
   u = n(481060),
   d = n(596454),
-  f = n(406128),
-  _ = n(451478),
+  _ = n(406128),
+  f = n(451478),
   p = n(176354),
   h = n(63063),
   m = n(358085),
@@ -37,8 +37,8 @@ function v() {
     e.isMaximized() ? e.unmaximize() : e.maximize()
   }, g.ZP.close = () => e.close()
 }
-let I = l.ZP.connectStores([_.Z], () => ({
-  focused: _.Z.isFocused()
+let I = l.ZP.connectStores([f.Z], () => ({
+  focused: f.Z.isFocused()
 }))(E.Z);
 class T extends i.PureComponent {
   getPlatform() {
@@ -71,7 +71,7 @@ class T extends i.PureComponent {
         })
       }), (0, r.jsx)(I, {
         type: this.getPlatform()
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(_.Z, {
         title: y.intl.string(y.t["3h+n+/"]),
         note: e,
         action: t

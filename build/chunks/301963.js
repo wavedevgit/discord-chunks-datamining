@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.r(t), n.d(t, {
-  default: () => f
+  default: () => _
 }), n(49124);
 var r, i = n(442837),
   a = n(668757),
@@ -30,7 +30,7 @@ class d extends(r = i.ZP.Store) {
   }
 }
 s(d, "displayName", "NoteStore");
-let f = new d(o.Z, {
+let _ = new d(o.Z, {
   CONNECTION_OPEN: u,
   OVERLAY_INITIALIZE: u,
   USER_NOTE_UPDATE: c,

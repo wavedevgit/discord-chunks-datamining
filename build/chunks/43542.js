@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(706454),
   u = n(314897),
   d = n(271383),
-  f = n(411198),
-  _ = n(709054),
+  _ = n(411198),
+  f = n(709054),
   p = n(997431),
   h = n(388032),
   m = n(50172);
@@ -81,21 +81,21 @@ function I(e) {
     disableGuildNameClick: n
   } = e, s = O(e, ["profile", "disableGuildNameClick"]);
   let c = t.id,
-    f = (0, a.e7)([d.ZP, u.default], () => {
+    _ = (0, a.e7)([d.ZP, u.default], () => {
       var e;
       return (null == (e = d.ZP.getMember(c, u.default.getId())) ? void 0 : e.joinedAt) != null
     }, [c]),
-    _ = i.useCallback(e => {
-      f && (e.stopPropagation(), (0, l.X)(t.id))
-    }, [f, t.id]);
-  return !f || n ? (0, r.jsx)(o.X6q, y(E({}, s), {
+    f = i.useCallback(e => {
+      _ && (e.stopPropagation(), (0, l.X)(t.id))
+    }, [_, t.id]);
+  return !_ || n ? (0, r.jsx)(o.X6q, y(E({}, s), {
     className: m.guildName,
     variant: "heading-md/semibold",
     color: "header-primary",
     children: t.name
   })) : (0, r.jsx)(o.P3F, y(E({}, s), {
     className: m.guildNameContainer,
-    onClick: _,
+    onClick: f,
     children: (0, r.jsx)(o.X6q, {
       className: m.guildName,
       variant: "heading-md/semibold",
@@ -109,8 +109,8 @@ function T(e) {
   let {
     profile: t,
     disableGuildNameClick: n
-  } = e, l = (0, a.e7)([c.default], () => c.default.locale), u = (0, p.M)(_.default.extractTimestamp(t.id), l), d = i.useMemo(() => {
-    let e = (0, f.$5)(t);
+  } = e, l = (0, a.e7)([c.default], () => c.default.locale), u = (0, p.M)(f.default.extractTimestamp(t.id), l), d = i.useMemo(() => {
+    let e = (0, _.$5)(t);
     return (0, r.jsx)(s.Z, {
       guild: e,
       isBannerVisible: !1

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(996146),
   u = n(481060),
   d = n(100527),
-  f = n(906732),
-  _ = n(605236),
+  _ = n(906732),
+  f = n(605236),
   p = n(243778),
   h = n(963249),
   m = n(599659),
@@ -114,20 +114,20 @@ function x(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     disabled: t,
     channel: n
   } = e, {
     analyticsLocations: a
-  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [o, u] = i.useState(!1), y = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = null != R ? O.default.age(R.id) : 0, k = !t && y && w >= L, {
-    enabled: M
+  } = (0, _.ZP)(d.Z.GIFT_BUTTON), [o, u] = i.useState(!1), y = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = null != R ? O.default.age(R.id) : 0, M = !t && y && w >= L, {
+    enabled: k
   } = m.O.useExperiment({
     location: "gift-button"
   }), j = [];
-  M && k && j.push(l.z.NITROWEEN_COACHMARKS);
-  let [U, G] = (0, p.US)(j), B = null != U, F = (0, v.Ft)(n), {
-    Component: V,
+  k && M && j.push(l.z.NITROWEEN_COACHMARKS);
+  let [U, G] = (0, p.US)(j), B = null != U, V = (0, v.Ft)(n), {
+    Component: F,
     events: Z,
     play: H
   } = (0, c.$)();
@@ -135,7 +135,7 @@ function k(e) {
   let Y = () => {
     (0, h.Z)({
       isGift: !0,
-      giftRecipient: null == F ? void 0 : F,
+      giftRecipient: null == V ? void 0 : V,
       giftMessage: A.intl.string(A.t["rX/m/f"]),
       initialPlanId: null,
       analyticsLocations: a,
@@ -164,17 +164,17 @@ function k(e) {
       "aria-label": A.intl.string(A.t.Z1RnTk),
       isActive: !1,
       onClick: () => {
-        H(), u(!1), (0, _.EW)(l.z.NITROWEEN_ANIMATED_GIFTING_ICON, {
+        H(), u(!1), (0, f.EW)(l.z.NITROWEEN_ANIMATED_GIFTING_ICON, {
           dismissAction: S.L.TAKE_ACTION
         }), Y()
       }
     }, Z), {
       children: (0, r.jsx)(x, {
-        animatedIconComponent: V,
+        animatedIconComponent: F,
         hovered: o,
         isCoachmarkDismissed: !B
       })
     }))]
   })
 }
-let M = i.memo(k)
+let k = i.memo(M)

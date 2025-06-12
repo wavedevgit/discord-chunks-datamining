@@ -14,9 +14,9 @@ var s = n(159635),
   c = n(830121),
   u = n(823379),
   d = n(172244),
-  f = n(571989);
+  _ = n(571989);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,7 +32,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -62,8 +62,8 @@ function E(e) {
   let t = e,
     n = g.get(t);
   if (null != n) return n;
-  let r = (0, f.yx)(e),
-    i = (0, f.zq)(r),
+  let r = (0, _.yx)(e),
+    i = (0, _.zq)(r),
     a = {
       whitespaceSanitized: r,
       fullySanitized: i
@@ -136,9 +136,9 @@ function N(e) {
       r = null != (t = n.protocol) ? t : "";
     if (!b.includes(r.toLowerCase())) throw Error("Provided protocol is not allowed: " + r);
     if (("http:" === r || "https:" === r) && (null == n.hostname || 0 === n.hostname.length)) throw Error("no hostname");
-    let i = (0, f.MO)(n);
+    let i = (0, _.MO)(n);
     n.username = "", n.password = "";
-    let a = (0, f.MO)(n);
+    let a = (0, _.MO)(n);
     return {
       target: i,
       displayTarget: a
@@ -153,7 +153,7 @@ let C = m(p({}, l().defaultRules.link), {
     let [r, a, o, s] = e, u = () => ({
       type: d.b.TEXT,
       content: r
-    }), f = E(o), _ = E(a), h = E(null != s ? s : ""), g = f.whitespaceSanitized, b = _.fullySanitized, C = h.fullySanitized, R = b.trim();
+    }), _ = E(o), f = E(a), h = E(null != s ? s : ""), g = _.whitespaceSanitized, b = f.fullySanitized, C = h.fullySanitized, R = b.trim();
     if (0 === g.trim().length || 0 === R.length) return u();
     let P = N(l().unescapeUrl(o)),
       w = null == P,
@@ -164,21 +164,21 @@ let C = m(p({}, l().defaultRules.link), {
         parseInlineCodeChildContent: !0
       }),
       x = n.allowEmojiLinks ? O : y,
-      k = [...x, ...v],
-      M = [...I, ...T],
-      j = S(t(b, L), k, [d.b.EMOJI]),
-      U = S(t(C, L), M);
+      M = [...x, ...v],
+      k = [...I, ...T],
+      j = S(t(b, L), M, [d.b.EMOJI]),
+      U = S(t(C, L), k);
     if (null == j || null == U || 0 === A(j).trim().length) return u();
     let G = i().pick(t.rules, x),
-      B = l().parserFor(G)(_.whitespaceSanitized, L),
-      F = h.whitespaceSanitized,
+      B = l().parserFor(G)(f.whitespaceSanitized, L),
+      V = h.whitespaceSanitized,
       {
-        target: V
+        target: F
       } = P;
     return {
       content: B,
-      target: V,
-      title: F
+      target: F,
+      title: V
     }
   }
 })

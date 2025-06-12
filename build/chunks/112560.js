@@ -24,23 +24,23 @@ function u(e) {
     description: c,
     errorCodeMessage: u,
     size: d,
-    className: f,
-    artURL: _,
+    className: _,
+    artURL: f,
     noArt: p = !1,
     selected: h = !1
   } = e;
   return (0, r.jsxs)(s.Z, {
-    className: f,
+    className: _,
     justify: s.Z.Justify.CENTER,
     align: s.Z.Align.CENTER,
     direction: s.Z.Direction.VERTICAL,
     style: {
       padding: 4
     },
-    children: [!p && null != _ && (0, r.jsx)("div", {
+    children: [!p && null != f && (0, r.jsx)("div", {
       className: a()(l.art, l[d]),
       style: {
-        backgroundImage: "url(".concat(_, ")")
+        backgroundImage: "url(".concat(f, ")")
       }
     }), null != i ? (0, r.jsx)(o.Text, {
       color: "none",

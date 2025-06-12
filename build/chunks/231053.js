@@ -3,7 +3,7 @@
 n.d(t, {
   Fi: () => p,
   JO: () => h,
-  w6: () => _
+  w6: () => f
 }), n(953529), n(388685);
 var r = n(544891),
   i = n(81825),
@@ -45,12 +45,12 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var _ = function(e) {
+var f = function(e) {
   return e.GUILD = "GUILD", e.APPLICATION = "APPLICATION", e
 }({});
 let p = async e => {
@@ -115,7 +115,7 @@ class h extends i.Z {
     }
   }
   static createFromGuildRecord(e) {
-    return new h(f(u({}, h._mapCommon(e)), {
+    return new h(_(u({}, h._mapCommon(e)), {
       premiumTier: e.premiumTier,
       premiumSubscriberCount: e.premiumSubscriberCount,
       presenceCount: null,
@@ -124,7 +124,7 @@ class h extends i.Z {
     }))
   }
   static createFromDiscoverableGuild(e) {
-    return new h(f(u({}, h._mapCommon(e)), {
+    return new h(_(u({}, h._mapCommon(e)), {
       premiumTier: null,
       premiumSubscriberCount: e.premiumSubscriptionCount,
       presenceCount: e.presenceCount,
@@ -133,7 +133,7 @@ class h extends i.Z {
     }))
   }
   static createFromServer(e) {
-    return new h(f(u({}, h._mapCommon(e)), {
+    return new h(_(u({}, h._mapCommon(e)), {
       premiumTier: e.premium_tier,
       premiumSubscriberCount: e.premium_subscription_count,
       presenceCount: e.approximate_presence_count,

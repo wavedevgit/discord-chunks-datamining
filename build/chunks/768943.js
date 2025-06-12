@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(415506), n(388685);
 var r, i = n(442837),
   a = n(759174),
@@ -31,10 +31,10 @@ function d(e) {
   }
   return e
 }
-let f = 1e13;
+let _ = 1e13;
 
-function _(e) {
-  if (null == e) return f;
+function f(e) {
+  if (null == e) return _;
   try {
     return new Date(e).getTime()
   } catch (t) {
@@ -43,7 +43,7 @@ function _(e) {
 }
 
 function p(e) {
-  return _(e.dueAt) - _(e.savedAt)
+  return f(e.dueAt) - f(e.savedAt)
 }
 let h = new a.h(e => {
     let {
@@ -179,7 +179,7 @@ function x() {
   m = !0
 }
 
-function k(e) {
+function M(e) {
   let {
     channel: t
   } = e;
@@ -187,7 +187,7 @@ function k(e) {
   m = !0
 }
 
-function M(e) {
+function k(e) {
   let {
     channels: t
   } = e;
@@ -268,7 +268,7 @@ class B extends(r = i.ZP.Store) {
   }
 }
 u(B, "displayName", "SavedMessagesStore");
-let F = new B(o.Z, {
+let V = new B(o.Z, {
   POST_CONNECTION_OPEN: S,
   LOGOUT: A,
   SAVED_MESSAGES_UPDATE: N,
@@ -280,8 +280,8 @@ let F = new B(o.Z, {
   GUILD_CREATE: x,
   GUILD_UPDATE: x,
   GUILD_DELETE: x,
-  CHANNEL_CREATE: k,
-  CHANNEL_UPDATES: M,
+  CHANNEL_CREATE: M,
+  CHANNEL_UPDATES: k,
   CHANNEL_DELETE: j,
   GUILD_MEMBER_UPDATE: U,
   GUILD_ROLE_CREATE: x,

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  C1: () => _,
-  Ni: () => f,
+  C1: () => f,
+  Ni: () => _,
   TC: () => u,
   TT: () => c,
   qF: () => d
@@ -57,7 +57,7 @@ function c(e) {
 }
 
 function u() {
-  let e = i.useContext(f);
+  let e = i.useContext(_);
   if (null == e) throw Error("useThemeContext must be used within a ThemeContext.Provider");
   return e
 }
@@ -73,9 +73,9 @@ let d = c({
     disableAdaptiveTheme: !1,
     reduceAdaptiveTheme: !1
   }),
-  f = i.createContext(d);
+  _ = i.createContext(d);
 
-function _(e) {
+function f(e) {
   let {
     children: t
   } = e, n = u();

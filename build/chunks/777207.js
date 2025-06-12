@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(39300),
   d = n(954292);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -76,7 +76,7 @@ let E = Object.fromEntries(Object.keys(c.Z.colors).map(e => [l()(e), e])),
         variant: a,
         tag: s = "div",
         selectable: l = !1,
-        className: f,
+        className: _,
         lineClamp: p,
         color: g,
         tabularNumbers: b = !1,
@@ -102,17 +102,17 @@ let E = Object.fromEntries(Object.keys(c.Z.colors).map(e => [l()(e), e])),
       default:
         n = null == (i = c.Z.colors[E[g]]) ? void 0 : i.css
     }
-    let S = _({
+    let S = f({
       color: n
     }, T, O.style);
-    return (0, r.jsx)(v, h(_({
+    return (0, r.jsx)(v, h(f({
       ref: t,
       className: o()({
         [u.defaultColor]: void 0 === g,
         [u.selectable]: l,
         [u.tabularNumbers]: b,
         [d.fontScaling]: y
-      }, I, d[a], f)
+      }, I, d[a], _)
     }, O), {
       style: Object.values(S).filter(Boolean).length > 0 ? S : void 0,
       "data-text-variant": a

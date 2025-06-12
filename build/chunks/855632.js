@@ -29,7 +29,7 @@ e.exports = function(e) {
       end: "'",
       illegal: "."
     },
-    f = {
+    _ = {
       className: "string",
       begin: '"',
       contains: [{
@@ -38,7 +38,7 @@ e.exports = function(e) {
       }],
       end: '"[cwd]?'
     },
-    _ = {
+    f = {
       className: "string",
       begin: '[rq]"',
       end: '"[cwd]?',
@@ -82,6 +82,6 @@ e.exports = function(e) {
   return {
     name: "D",
     keywords: t,
-    contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, y, h, f, _, p, m, u, c, d, g, E, b]
+    contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, y, h, _, f, p, m, u, c, d, g, E, b]
   }
 }

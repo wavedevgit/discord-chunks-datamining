@@ -13,8 +13,8 @@ var i = n(481060),
   c = n(594174),
   u = n(626135),
   d = n(760729),
-  f = n(74538),
-  _ = n(981631),
+  _ = n(74538),
+  f = n(981631),
   p = n(388032);
 
 function h(e, t, n) {
@@ -47,7 +47,7 @@ function g(e, t) {
       maxLength: t
     }),
     confirmText: p.intl.string(p.t.BddRzc)
-  }, n))), u.default.track(_.rMx.OPEN_MODAL, {
+  }, n))), u.default.track(f.rMx.OPEN_MODAL, {
     type: "Message Too Long Alert",
     message_content_length: e
   })
@@ -59,7 +59,7 @@ function E(e) {
     openWarningPopout: n,
     type: c,
     content: u,
-    stickers: f,
+    stickers: _,
     uploads: h,
     channel: E,
     restrictMentions: b,
@@ -67,11 +67,11 @@ function E(e) {
     userCanUsePremiumMessageLength: O,
     resolve: v
   } = e;
-  if (0 === u.length && !(null == (t = c.submit) ? void 0 : t.allowEmptyMessage) && (null == f || 0 === f.length) && (null == h || 0 === h.length)) return void v({
+  if (0 === u.length && !(null == (t = c.submit) ? void 0 : t.allowEmptyMessage) && (null == _ || 0 === _.length) && (null == h || 0 === h.length)) return void v({
     valid: !1,
-    failureReason: _.zYc.EMPTY_MESSAGE
+    failureReason: f.zYc.EMPTY_MESSAGE
   });
-  let I = O ? _.en1 : _.J6R,
+  let I = O ? f.en1 : f.J6R,
     T = !O;
   if (u.length > I) {
     T && null != E ? a.Z.dispatch({
@@ -80,14 +80,14 @@ function E(e) {
       content: u
     }) : g(u.length, I), v({
       valid: !1,
-      failureReason: _.zYc.MESSAGE_TOO_LONG
+      failureReason: f.zYc.MESSAGE_TOO_LONG
     });
     return
   }
   if (null != E) {
     if (null != E.getGuildId() && y && l.Z.getSlowmodeCooldownGuess(E.id) > 0) return void v({
       valid: !1,
-      failureReason: _.zYc.SLOWMODE_COOLDOWN
+      failureReason: f.zYc.SLOWMODE_COOLDOWN
     });
     if (null != n)
       for (let {
@@ -102,7 +102,7 @@ function E(e) {
           channel: E,
           onCancel: () => v({
             valid: !1,
-            failureReason: _.zYc.SHOUTING_CANCELLED
+            failureReason: f.zYc.SHOUTING_CANCELLED
           }),
           onConfirm: () => v({
             valid: !0
@@ -118,10 +118,10 @@ function E(e) {
       body: p.intl.string(p.t.gi6XHh),
       confirmText: p.intl.string(p.t.Z4U1g4)
     }, e)), {
-      onCloseRequest: _.dG4
+      onCloseRequest: f.dG4
     }), v({
       valid: !1,
-      failureReason: _.zYc.RATE_LIMITED
+      failureReason: f.zYc.RATE_LIMITED
     });
     return
   }
@@ -140,7 +140,7 @@ function b(e) {
     channel: o,
     restrictMentions: s = !0,
     respectCooldown: l = !0
-  } = e, u = f.ZP.canUseIncreasedMessageLength(c.default.getCurrentUser());
+  } = e, u = _.ZP.canUseIncreasedMessageLength(c.default.getCurrentUser());
   return new Promise(e => E({
     openWarningPopout: t,
     type: n,

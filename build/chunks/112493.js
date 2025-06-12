@@ -6,14 +6,14 @@ var r, i, a, o = n(621523),
   c = n(713411),
   u = n(961050),
   d = n(556585),
-  f = n(751736),
-  _ = n(511696),
-  p = f("iterator"),
+  _ = n(751736),
+  f = n(511696),
+  p = _("iterator"),
   h = !1;
 [].keys && ("next" in (a = [].keys()) ? (i = u(u(a))) !== Object.prototype && (r = i) : h = !0), !l(r) || o(function() {
   var e = {};
   return r[p].call(e) !== e
-}) ? r = {} : _ && (r = c(r)), s(r[p]) || d(r, p, function() {
+}) ? r = {} : f && (r = c(r)), s(r[p]) || d(r, p, function() {
   return this
 }), e.exports = {
   IteratorPrototype: r,

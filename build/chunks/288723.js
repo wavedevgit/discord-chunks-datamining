@@ -25,7 +25,7 @@ let d = {
       n = e.options,
       a = e.name;
     if (!t.modifiersData[a]._skip) {
-      for (var d = n.mainAxis, f = void 0 === d || d, _ = n.altAxis, p = void 0 === _ || _, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = void 0 === y || y, v = n.allowedAutoPlacements, I = t.options.placement, T = (0, i.Z)(I), S = T === I, A = h || (S || !O ? [(0, r.Z)(I)] : u(I)), N = [I].concat(A).reduce(function(e, n) {
+      for (var d = n.mainAxis, _ = void 0 === d || d, f = n.altAxis, p = void 0 === f || f, h = n.fallbackPlacements, m = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = void 0 === y || y, v = n.allowedAutoPlacements, I = t.options.placement, T = (0, i.Z)(I), S = T === I, A = h || (S || !O ? [(0, r.Z)(I)] : u(I)), N = [I].concat(A).reduce(function(e, n) {
           return e.concat((0, i.Z)(n) === l.d7 ? (0, s.Z)(t, {
             placement: n,
             boundary: g,
@@ -36,9 +36,9 @@ let d = {
           }) : n)
         }, []), C = t.rects.reference, R = t.rects.popper, P = new Map, w = !0, D = N[0], L = 0; L < N.length; L++) {
         var x = N[L],
-          k = (0, i.Z)(x),
-          M = (0, c.Z)(x) === l.BL,
-          j = [l.we, l.I].indexOf(k) >= 0,
+          M = (0, i.Z)(x),
+          k = (0, c.Z)(x) === l.BL,
+          j = [l.we, l.I].indexOf(M) >= 0,
           U = j ? "width" : "height",
           G = (0, o.Z)(t, {
             placement: x,
@@ -47,17 +47,17 @@ let d = {
             altBoundary: b,
             padding: m
           }),
-          B = j ? M ? l.F2 : l.t$ : M ? l.I : l.we;
+          B = j ? k ? l.F2 : l.t$ : k ? l.I : l.we;
         C[U] > R[U] && (B = (0, r.Z)(B));
-        var F = (0, r.Z)(B),
-          V = [];
-        if (f && V.push(G[k] <= 0), p && V.push(G[B] <= 0, G[F] <= 0), V.every(function(e) {
+        var V = (0, r.Z)(B),
+          F = [];
+        if (_ && F.push(G[M] <= 0), p && F.push(G[B] <= 0, G[V] <= 0), F.every(function(e) {
             return e
           })) {
           D = x, w = !1;
           break
         }
-        P.set(x, V)
+        P.set(x, F)
       }
       if (w)
         for (var Z = O ? 3 : 1, H = function(e) {

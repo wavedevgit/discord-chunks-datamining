@@ -13,9 +13,9 @@ var i = n(772848),
   c = n(626135),
   u = n(409813),
   d = n(608579),
-  f = n(981631);
+  _ = n(981631);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,7 +31,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -79,7 +79,7 @@ function v(e) {
   let t, {
       skuId: n,
       isGift: u = !1,
-      giftMessage: _,
+      giftMessage: f,
       giftingOrigin: h,
       onClose: E,
       onComplete: v,
@@ -103,7 +103,7 @@ function v(e) {
       loadId: C,
       skuId: n,
       isGift: u,
-      giftMessage: _,
+      giftMessage: f,
       giftingOrigin: h,
       analyticsLocations: I,
       giftRecipient: S,
@@ -119,9 +119,9 @@ function v(e) {
   }, {
     modalKey: P,
     onCloseCallback: () => {
-      N || c.default.track(f.rMx.PAYMENT_FLOW_CANCELED, {
+      N || c.default.track(_.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: C,
-        payment_type: f.Zuq[f.GZQ.ONE_TIME],
+        payment_type: _.Zuq[_.GZQ.ONE_TIME],
         location: T,
         is_gift: u,
         sku_id: n,

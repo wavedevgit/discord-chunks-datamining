@@ -12,8 +12,8 @@ var r, i = n(255367),
   c = n.n(l),
   u = n(866442),
   d = n(692547),
-  f = n(84735),
-  _ = n(481060),
+  _ = n(84735),
+  f = n(481060),
   p = n(540059),
   h = n(981631),
   m = n(883658);
@@ -85,7 +85,7 @@ class S extends(r = a.PureComponent) {
       size: c,
       reverse: u,
       displayOnly: d,
-      type: _,
+      type: f,
       onClick: p
     } = this.props, g = null != l ? (0, i.jsx)("div", {
       className: s()(m.label, e ? m.labelDisabled : m.labelClickable, u ? m.labelReversed : m.labelForward),
@@ -96,10 +96,10 @@ class S extends(r = a.PureComponent) {
     }) : null, b = d ? "span" : "label", y = this.props.disabled ? m.inputDisabled : this.props.readOnly ? m.inputReadonly : m.inputDefault;
     return (0, i.jsxs)(b, {
       className: s()(e ? m.checkboxWrapperDisabled : m.checkboxWrapper, T[r], a, {
-        [m.row]: "row" === _,
+        [m.row]: "row" === f,
         [m.checked]: n
       }),
-      children: [u ? g : null, !d && (0, i.jsx)(f.t, {
+      children: [u ? g : null, !d && (0, i.jsx)(_.t, {
         children: (0, i.jsx)("input", {
           className: s()(o, y),
           type: "checkbox",
@@ -170,15 +170,15 @@ function N(e) {
       shape: l,
       checkboxColor: c,
       type: u,
-      color: f,
-      disabled: _
+      color: _,
+      disabled: f
     } = e,
     h = A(e, t),
-    g = a.useMemo(() => r ? t || "inverted" === u || "row" === u ? d.Z.colors.WHITE.css : null != f ? f : d.Z.unsafe_rawColors.BRAND_500.css : d.Z.unsafe_rawColors.TRANSPARENT.css, [r, u, f, t]);
+    g = a.useMemo(() => r ? t || "inverted" === u || "row" === u ? d.Z.colors.WHITE.css : null != _ ? _ : d.Z.unsafe_rawColors.BRAND_500.css : d.Z.unsafe_rawColors.TRANSPARENT.css, [r, u, _, t]);
   return (0, i.jsx)("div", {
     className: s()(m.checkbox, l, n, {
       [m.checked]: r,
-      [m.checkboxDisabled]: _
+      [m.checkboxDisabled]: f
     }),
     style: E({
       width: o,
@@ -198,7 +198,7 @@ function C(e) {
   var {
     isVisualRefreshEnabled: t
   } = e, n = b(e, ["isVisualRefreshEnabled"]);
-  return t ? (0, i.jsx)(_.kSu, E({}, n)) : (0, i.jsx)(_.dz2, E({}, n))
+  return t ? (0, i.jsx)(f.kSu, E({}, n)) : (0, i.jsx)(f.dz2, E({}, n))
 }
 g(S, "Types", O), g(S, "Shapes", I), g(S, "Aligns", v), g(S, "defaultProps", {
   size: 24,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(147913),
   i = n(430824),
@@ -20,7 +20,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = 0;
-class f extends r.Z {
+class _ extends r.Z {
   constructor(...e) {
     super(...e), u(this, "actions", {
       POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e),
@@ -47,4 +47,4 @@ class f extends r.Z {
     })
   }
 }
-let _ = new f
+let f = new _

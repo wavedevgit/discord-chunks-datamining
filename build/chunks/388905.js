@@ -9,12 +9,12 @@ n.d(t, {
   II: () => R,
   MC: () => C,
   Vj: () => N,
-  ZP: () => M,
+  ZP: () => k,
   gO: () => P,
   i_: () => w,
   jQ: () => x,
   qE: () => A,
-  v6: () => k,
+  v6: () => M,
   zx: () => S
 }), n(953529), n(472816), n(794429);
 var r = n(255367);
@@ -27,8 +27,8 @@ var i = n(120356),
   c = n(600164),
   u = n(313201),
   d = n(565138),
-  f = n(361207),
-  _ = n(63063),
+  _ = n(361207),
+  f = n(63063),
   p = n(981631),
   h = n(388032),
   m = n(270313);
@@ -178,8 +178,8 @@ let R = e => {
       className: l,
       inputClassName: c,
       setRef: d,
-      type: f = "text",
-      onChange: _,
+      type: _ = "text",
+      onChange: f,
       autoComplete: p,
       autoFocus: h,
       maxLength: g,
@@ -199,7 +199,7 @@ let R = e => {
       htmlFor: T,
       children: [(0, r.jsx)(o.oil, {
         name: b,
-        type: f,
+        type: _,
         value: s,
         inputRef: d,
         placeholder: i,
@@ -207,7 +207,7 @@ let R = e => {
           [m.inputError]: null != n
         }),
         "aria-label": t,
-        onChange: _,
+        onChange: f,
         autoComplete: p,
         autoFocus: h,
         maxLength: g,
@@ -321,26 +321,26 @@ let R = e => {
       })]
     })
   },
-  k = e => {
+  M = e => {
     let {
       className: t
     } = e;
     return (0, r.jsxs)(P, {
       className: t,
       children: [(0, r.jsx)(S, {
-        onClick: () => window.open((0, f.t3)()),
+        onClick: () => window.open((0, _.t3)()),
         children: h.intl.format(h.t.JoS1i4, {
-          platform: (0, f.DW)()
+          platform: (0, _.DW)()
         })
       }), (0, r.jsx)(w, {
         className: m.downloadButtonSubtext,
         children: h.intl.format(h.t.wO1VBg, {
-          supportedBrowserURL: _.Z.getArticleURL(p.BhN.SUPPORTED_BROWSERS)
+          supportedBrowserURL: f.Z.getArticleURL(p.BhN.SUPPORTED_BROWSERS)
         })
       })]
     })
   },
-  M = e => {
+  k = e => {
     let {
       className: t,
       contentClassName: n,

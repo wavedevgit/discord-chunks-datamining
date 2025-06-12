@@ -15,8 +15,8 @@ var i = n(120356),
   c = n(60034),
   u = n(137162),
   d = n(15210),
-  f = n(43542),
-  _ = n(686369),
+  _ = n(43542),
+  f = n(686369),
   p = n(486324),
   h = n(248217);
 
@@ -46,7 +46,7 @@ function E(e) {
   let {
     profile: t,
     className: n
-  } = e, i = (0, _.TK)(t);
+  } = e, i = (0, f.TK)(t);
   return null != i ? (0, r.jsx)("div", {
     className: a()(n, h.banner),
     style: {
@@ -63,7 +63,7 @@ function b(e) {
   let {
     profile: n,
     className: i
-  } = e, o = (0, _.nv)(), s = (0, _.qw)({
+  } = e, o = (0, f.nv)(), s = (0, f.qw)({
     profile: n,
     defaultColor: o.hex(),
     forceDefaultColor: null != n.brandColorPrimary
@@ -71,7 +71,7 @@ function b(e) {
   return (0, r.jsx)("div", {
     className: a()(i, h.banner),
     style: {
-      background: (0, _.dG)(l)
+      background: (0, f.dG)(l)
     }
   })
 }
@@ -159,8 +159,8 @@ function O(e) {
     CTAOverride: s,
     onClose: l,
     disableGuildNameClick: c
-  } = e, _ = null;
-  return null != s ? _ = s : o || (_ = (0, r.jsx)(d.Z, {
+  } = e, f = null;
+  return null != s ? f = s : o || (f = (0, r.jsx)(d.Z, {
     profile: t,
     onComplete: l
   })), (0, r.jsxs)("div", {
@@ -170,14 +170,14 @@ function O(e) {
     }), (0, r.jsx)(y, {
       onIconChange: n,
       profile: t
-    }), (0, r.jsx)(f.Z, {
+    }), (0, r.jsx)(_.Z, {
       profile: t,
       disableGuildNameClick: c
     }), (0, r.jsx)(u.E, {
       profile: t
-    }), null != _ && (0, r.jsx)("div", {
+    }), null != f && (0, r.jsx)("div", {
       className: h.buttonContainer,
-      children: _
+      children: f
     })]
   })
 }

@@ -14,8 +14,8 @@ let s = e => {
     layerConfig: c,
     animationType: u,
     ticking: d,
-    time: f,
-    accessibilityLabel: _,
+    time: _,
+    accessibilityLabel: f,
     hasPlayedThrough: p,
     setHasPlayedThrough: h,
     urlQueryString: m,
@@ -23,10 +23,10 @@ let s = e => {
     loopEnd: E,
     bannerAdjustment: b
   } = e, y = !0;
-  if (d || (y = !1), f < c.start && (y = !1), !c.loop && f > c.duration + c.start && (y = !1), u === a.Q.PERSISTENT && !p && null != g && f >= E && h(!0), c.loop && void 0 !== c.loopDelay && c.loopDelay > 0) {
+  if (d || (y = !1), _ < c.start && (y = !1), !c.loop && _ > c.duration + c.start && (y = !1), u === a.Q.PERSISTENT && !p && null != g && _ >= E && h(!0), c.loop && void 0 !== c.loopDelay && c.loopDelay > 0) {
     let e = c.duration + c.loopDelay,
-      t = Math.floor((f - c.start) / e);
-    f - c.start - t * e > c.duration && (u === a.Q.INTERMITTENT && !p && null != g && t >= g && h(!0), y = !1)
+      t = Math.floor((_ - c.start) / e);
+    _ - c.start - t * e > c.duration && (u === a.Q.INTERMITTENT && !p && null != g && t >= g && h(!0), y = !1)
   }
   return y ? (0, r.jsx)("img", {
     src: null != m ? "".concat(c.src, "?query=").concat(m) : c.src,
@@ -35,9 +35,9 @@ let s = e => {
       top: (null != (s = null == (t = c.position) ? void 0 : t.y) ? s : 0) - b,
       left: null != (l = null == (n = c.position) ? void 0 : n.x) ? l : 0
     },
-    alt: _
+    alt: f
   }) : (0, r.jsx)("img", {
     src: i.td,
-    alt: _
+    alt: f
   })
 }

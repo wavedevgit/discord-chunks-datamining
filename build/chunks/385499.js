@@ -22,7 +22,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,7 +47,7 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -56,7 +56,7 @@ let h = e => {
       invertColor: n = !1,
       type: i = l.Hb.BOT,
       className: d,
-      verified: _,
+      verified: f,
       hideIcon: h = !1,
       useRemSizes: m = !1,
       children: g = []
@@ -66,7 +66,7 @@ let h = e => {
   switch (i) {
     case l.Hb.SYSTEM_DM:
     case l.Hb.OFFICIAL:
-      _ = !0, b = c.intl.string(c.t["7s687u"]), E = c.intl.string(c.t.lKQ7Wl);
+      f = !0, b = c.intl.string(c.t["7s687u"]), E = c.intl.string(c.t.lKQ7Wl);
       break;
     case l.Hb.SERVER:
       E = c.intl.string(c.t.PuJGuL);
@@ -78,10 +78,10 @@ let h = e => {
       E = c.intl.string(c.t.oMx98P);
       break;
     case l.Hb.AI:
-      _ = !0, b = c.intl.string(c.t.d5YwQE), E = c.intl.string(c.t.pLTJZG);
+      f = !0, b = c.intl.string(c.t.d5YwQE), E = c.intl.string(c.t.pLTJZG);
       break;
     case l.Hb.REMIX:
-      _ = !1, E = c.intl.string(c.t.uXDG39);
+      f = !1, E = c.intl.string(c.t.uXDG39);
       break;
     case l.Hb.BOT:
     default:
@@ -90,16 +90,16 @@ let h = e => {
   let y = i === l.Hb.ORIGINAL_POSTER,
     O = i === l.Hb.REMIX,
     v = null;
-  _ && (v = (0, r.jsx)(o.u, {
+  f && (v = (0, r.jsx)(o.u, {
     text: b,
     align: "center",
     position: "top",
-    children: e => (0, r.jsx)(s.kSu, p(f({}, e), {
+    children: e => (0, r.jsx)(s.kSu, p(_({}, e), {
       className: u.botTagVerified,
       color: s.TVs.colors.WHITE
     }))
   })), t = i === l.Hb.AI ? u.botTagAI : n ? u.botTagInvert : u.botTagRegular;
-  let I = e => (0, r.jsxs)("span", p(f({}, e), {
+  let I = e => (0, r.jsxs)("span", p(_({}, e), {
     className: a()(d, t, m ? u.rem : u.px, {
       [u.botTagOP]: y,
       [u.botTagRemix]: O

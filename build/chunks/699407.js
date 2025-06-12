@@ -11,9 +11,9 @@ var l = n(756647),
   c = n(442837),
   u = n(544891),
   d = n(761609),
-  f = n(231338);
+  _ = n(231338);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -69,16 +69,16 @@ let g = "x-science-test",
   D = 0,
   L = null,
   x = 0,
-  k = Number.MAX_SAFE_INTEGER,
-  M = 0,
+  M = Number.MAX_SAFE_INTEGER,
+  k = 0,
   j = 0,
   U = null,
   G = !1,
   B = null,
-  F = null;
+  V = null;
 
-function V() {
-  R = 0, P = 0, w = 0, x = 0, k = Number.MAX_SAFE_INTEGER, M = 0, j = 0, L = Date.now(), D = N
+function F() {
+  R = 0, P = 0, w = 0, x = 0, M = Number.MAX_SAFE_INTEGER, k = 0, j = 0, L = Date.now(), D = N
 }
 
 function Z(e) {
@@ -136,7 +136,7 @@ let H = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
       let e = K.slice();
       K = [], x = Z(x);
       let t = e.length;
-      k = Math.min(k, t), M = Math.max(M, t), j = Z(j, t);
+      M = Math.min(M, t), k = Math.max(k, t), j = Z(j, t);
       let n = et(e);
       return n.then(() => {
         e.forEach(e => {
@@ -161,7 +161,7 @@ let H = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
           })
         })),
         a = {};
-      return G || (F = (0, s.Z)(), a[g] = F, G = !0), u.tn.post({
+      return G || (V = (0, s.Z)(), a[g] = V, G = !0), u.tn.post({
         url: t,
         headers: a,
         body: {
@@ -181,7 +181,7 @@ let H = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
 
     function en() {
       let e = {
-        type: f.cN.CLIENT_TELEMETRY,
+        type: _.cN.CLIENT_TELEMETRY,
         properties: {
           client_track_timestamp: Date.now(),
           client_heartbeat_session_id: r,
@@ -193,14 +193,14 @@ let H = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
           telemetry_period_end_timestamp: Date.now(),
           event_queue_rejection_count: R,
           event_queue_batch_count: x,
-          event_queue_batch_min_size: k === Number.MAX_SAFE_INTEGER ? 0 : k,
-          event_queue_batch_max_size: M,
+          event_queue_batch_min_size: M === Number.MAX_SAFE_INTEGER ? 0 : M,
+          event_queue_batch_max_size: k,
           event_queue_batch_avg_size: x > 0 ? j / x : 0,
-          science_request_id: F,
+          science_request_id: V,
           science_response: B
         }
       };
-      return V(), et([e], f.tx.CLIENT_TELEMETRY)
+      return F(), et([e], _.tx.CLIENT_TELEMETRY)
     }
 
     function er() {
@@ -264,7 +264,7 @@ let H = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
         let {
           sessionId: s
         } = e;
-        (s !== r || N >= C) && (N = 0, r = s, G = !1, B = null, F = null, V());
+        (s !== r || N >= C) && (N = 0, r = s, G = !1, B = null, V = null, F());
         let l = {
             type: t,
             fingerprint: a,
@@ -292,8 +292,8 @@ let H = null != (o = window.requestIdleCallback) ? o : e => setImmediate(() => e
         null != v && this.waitFor(...v)
       }
       constructor(...e) {
-        super(...e), _(this, "submitEventsImmediately", et)
+        super(...e), f(this, "submitEventsImmediately", et)
       }
     }
-    return _(eo, "displayName", "AnalyticsTrackingStore"), new eo(n, o)
+    return f(eo, "displayName", "AnalyticsTrackingStore"), new eo(n, o)
   }

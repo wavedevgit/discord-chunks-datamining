@@ -3,7 +3,7 @@
 n.d(t, {
   DJ: () => B,
   ZP: () => ea,
-  rp: () => F
+  rp: () => V
 }), n(415506), n(953529), n(388685);
 var r, i = n(255367),
   a = n(73800),
@@ -13,8 +13,8 @@ var r, i = n(255367),
   c = n.n(l),
   u = n(91192),
   d = n(481060),
-  f = n(607070),
-  _ = n(895924),
+  _ = n(607070),
+  f = n(895924),
   p = n(237375),
   h = n(342687),
   m = n(933557),
@@ -45,7 +45,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,7 +70,7 @@ function M(e, t) {
 }
 
 function j(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -97,10 +97,10 @@ function B(e) {
   return null != e ? "autocomplete-".concat(e) : null
 }
 
-function F(e) {
+function V(e) {
   return "autocomplete-".concat(e, "-title")
 }
-let V = a.createContext(null);
+let F = a.createContext(null);
 class Z extends a.PureComponent {
   isSelectable() {
     return this.selectable
@@ -118,7 +118,7 @@ class Z extends a.PureComponent {
         selected: o
       }
     } = this, l = this.isSelectable();
-    return (0, i.jsx)(d.P3F, j(k({}, e), {
+    return (0, i.jsx)(d.P3F, j(M({}, e), {
       className: s()(L.clickable, r, n),
       id: null != (t = B(a)) ? t : void 0,
       onClick: l ? this.handleClick : void 0,
@@ -210,11 +210,11 @@ function W(e) {
     title: t,
     className: n,
     children: r
-  } = e, o = a.useContext(V);
+  } = e, o = a.useContext(F);
   return (0, i.jsx)("div", {
     className: L.base,
     children: (0, i.jsxs)(d.X6q, {
-      id: F(o.id),
+      id: V(o.id),
       className: s()(L.contentTitle, n),
       variant: "heading-deprecated-12/semibold",
       children: [t, r]
@@ -277,17 +277,17 @@ class q extends Z {
     } = this.props, {
       colorString: r,
       colorStrings: a
-    } = e, o = "dot" === f.Z.roleStyle, l = "username" === f.Z.roleStyle && (null != r || null != a), c = (0, b.OC)(n, "AutocompleteRow") && null != a && null != a.primaryColor && null != a.secondaryColor, u = c && l, {
-      gradientStyle: _,
+    } = e, o = "dot" === _.Z.roleStyle, l = "username" === _.Z.roleStyle && (null != r || null != a), c = (0, b.OC)(n, "AutocompleteRow") && null != a && null != a.primaryColor && null != a.secondaryColor, u = c && l, {
+      gradientStyle: f,
       gradientClassname: p
     } = (0, d.JUn)({
       primaryColor: null == a ? void 0 : a.primaryColor,
       secondaryColor: null == a ? void 0 : a.secondaryColor,
       tertiaryColor: null == a ? void 0 : a.tertiaryColor,
-      useReducedMotion: f.Z.useReducedMotion,
+      useReducedMotion: _.Z.useReducedMotion,
       roleStyle: "username",
       includeConvenienceGlow: !0
-    }), h = l ? k({}, u ? _ : {
+    }), h = l ? M({}, u ? f : {
       color: null != r ? r : void 0
     }) : void 0;
     return (0, i.jsxs)(R.RX, {
@@ -359,7 +359,7 @@ class Q extends Z {
 }
 class J extends Z {
   isSelectable() {
-    return this.props.command.inputType !== _.iw.PLACEHOLDER
+    return this.props.command.inputType !== f.iw.PLACEHOLDER
   }
   renderContent() {
     let {
@@ -371,7 +371,7 @@ class J extends Z {
     } = this.props, {
       hovered: o
     } = this.state, s = this.isSelectable();
-    return e.inputType === _.iw.PLACEHOLDER ? (0, i.jsx)(h.Z, {}) : (0, i.jsx)(p.Z, {
+    return e.inputType === f.iw.PLACEHOLDER ? (0, i.jsx)(h.Z, {}) : (0, i.jsx)(p.Z, {
       command: e,
       channel: t,
       showImage: n,
@@ -474,7 +474,7 @@ class en extends Z {
 }
 class er extends Z {
   renderContent() {
-    return (0, i.jsx)(y.Z, k({}, this.props))
+    return (0, i.jsx)(y.Z, M({}, this.props))
   }
 }
 class ei extends(r = a.PureComponent) {
@@ -487,13 +487,13 @@ class ei extends(r = a.PureComponent) {
         id: o
       } = e,
       l = U(e, ["children", "className", "innerClassName", "id"]);
-    return a.Children.count(t) > 0 ? (0, i.jsx)(V.Provider, {
+    return a.Children.count(t) > 0 ? (0, i.jsx)(F.Provider, {
       value: {
         id: null != o ? o : ""
       },
       children: (0, i.jsx)("div", {
         className: s()(L.autocomplete, n),
-        children: (0, i.jsx)("div", j(k({
+        children: (0, i.jsx)("div", j(M({
           className: s()(L.autocompleteInner, r)
         }, l), {
           children: t

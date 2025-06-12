@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,7 +61,7 @@ function m(e, t, n) {
     location: u + " auto off",
     autoTrackExposure: !1
   });
-  let f = (0, i.e7)([o.Z], () => o.Z.hasLoadedExperiments),
+  let _ = (0, i.e7)([o.Z], () => o.Z.hasLoadedExperiments),
     m = null == e ? void 0 : e.includeBundles,
     g = (0, c.hv)("useMaybeFetchCollectiblesCategoriesShared"),
     [E, b, y, O, v, I, T] = (0, i.Wu)([l.Z], () => {
@@ -69,10 +69,10 @@ function m(e, t, n) {
       return [l.Z.isFetchingCategories, l.Z.lastFetchOptions, l.Z.error, null != (e = l.Z.lastErrorTimestamp) ? e : 0, null != (t = l.Z.lastSuccessfulFetch) ? t : 0, l.Z.categories, l.Z.skipNumCategories]
     });
   return (0, r.useEffect)(() => {
-    if (!f || E) return;
+    if (!_ || E) return;
     let r = Date.now() - O < h;
     if (y && r) return;
-    let i = _(d({}, e), {
+    let i = f(d({}, e), {
         includeBundles: m,
         variantsReturnStyle: g,
         skipNumCategories: T
@@ -80,12 +80,12 @@ function m(e, t, n) {
       a = !(0, s.oc)(b, i),
       o = Date.now() - v < p;
     (a || !o) && (0, s.F$)(i, t, n)
-  }, [f, E, b, v, e, y, m, O, g, t, n, T]), {
+  }, [_, E, b, v, e, y, m, O, g, t, n, T]), {
     isFetching: E,
     categories: I,
     fetchCategoriesError: y,
     refreshCategories: (0, r.useCallback)(() => {
-      let t = _(d({}, e), {
+      let t = f(d({}, e), {
         includeBundles: m,
         skipNumCategories: T
       });

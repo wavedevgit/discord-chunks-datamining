@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(385499),
   u = n(768581),
   d = n(630388),
-  f = n(489863),
-  _ = n(713938),
+  _ = n(489863),
+  f = n(713938),
   p = n(981631),
   h = n(182294),
   m = n(388032),
@@ -32,7 +32,7 @@ function E(e) {
   } = e, T = u.ZP.getApplicationIconURL({
     id: E.id,
     icon: E.icon
-  }), S = u.ZP.getUserAvatarURL(n), A = i.useMemo(() => I.some(e => (0, _.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
+  }), S = u.ZP.getUserAvatarURL(n), A = i.useMemo(() => I.some(e => (0, f.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.x, {
       variant: "text-lg/normal",
       color: "header-secondary",
@@ -103,7 +103,7 @@ function E(e) {
         }), (0, r.jsx)(s.P, {
           tag: "a",
           className: g.logoutLink,
-          onClick: () => (0, f.c$)(v, "oauth2_logout"),
+          onClick: () => (0, _.c$)(v, "oauth2_logout"),
           children: m.intl.string(m.t["yV/hjI"])
         })]
       })

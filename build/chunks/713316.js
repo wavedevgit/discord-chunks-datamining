@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  w: () => _
+  w: () => f
 });
 var r = n(255367);
 n(73800);
@@ -13,35 +13,35 @@ var i = n(512722),
   c = n(844068),
   u = n(614277),
   d = n(388032),
-  f = n(419667);
+  _ = n(419667);
 
-function _(e) {
+function f(e) {
   let {
     handleClose: t
   } = e, {
     skusById: n,
     selectedSkuId: i,
-    application: _
+    application: f
   } = (0, s.JL)();
-  a()(null != i, "Expected selectedSkuId"), a()(null != _, "Expected application");
+  a()(null != i, "Expected selectedSkuId"), a()(null != f, "Expected application");
   let p = n[i];
   a()(null != p, "Expected sku");
   let h = d.intl.formatToPlainString(d.t.wK0IbG, {
-    applicationName: _.name,
+    applicationName: f.name,
     itemName: p.name
   });
   return (0, r.jsxs)(u.C3, {
     children: [(0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsxs)("div", {
-      className: f.confirmation,
+      className: _.confirmation,
       children: [(0, r.jsx)(o.X6q, {
         variant: "heading-xxl/bold",
-        className: f.confirmationHeader,
+        className: _.confirmationHeader,
         children: "Success!"
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         children: h
       }), (0, r.jsx)("div", {
-        className: f.divider
+        className: _.divider
       }), (0, r.jsx)(o.zxk, {
         onClick: t,
         children: d.intl.string(d.t.cpT0Cg)

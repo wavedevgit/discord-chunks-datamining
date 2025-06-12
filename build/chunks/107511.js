@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(433517),
   i = n(570140),
@@ -20,7 +20,7 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class f extends a.Z {
+class _ extends a.Z {
   _initialize() {
     i.Z.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
@@ -40,4 +40,4 @@ class f extends a.Z {
     })
   }
 }
-let _ = new f
+let f = new _

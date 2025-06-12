@@ -3,7 +3,7 @@
 n.d(t, {
   Jr: () => m,
   O6: () => h,
-  _i: () => f,
+  _i: () => _,
   v6: () => g
 });
 var r = n(73800),
@@ -35,7 +35,7 @@ function d(e) {
   }
   return e
 }
-let f = e => {
+let _ = e => {
     let {
       setting: t,
       isDm: n = !1,
@@ -46,12 +46,12 @@ let f = e => {
     return (null == a ? void 0 : a.nsfwAllowed) === !1 ? p({
       isDm: n,
       isFriend: r
-    }) : _({
+    }) : f({
       isDm: n,
       isFriend: r
     })
   },
-  _ = e => {
+  f = e => {
     let {
       isDm: t = !1,
       isFriend: n = !1
@@ -68,14 +68,14 @@ let f = e => {
   h = e => {
     let t = null != e ? e : a.j7.getSetting();
     return {
-      goreContentGuilds: f({
+      goreContentGuilds: _({
         setting: null == t ? void 0 : t.goreContentGuilds
       }),
-      goreContentNonFriendDm: f({
+      goreContentNonFriendDm: _({
         setting: null == t ? void 0 : t.goreContentNonFriendDm,
         isDm: !0
       }),
-      goreContentFriendDm: f({
+      goreContentFriendDm: _({
         setting: null == t ? void 0 : t.goreContentFriendDm,
         isDm: !0,
         isFriend: !0

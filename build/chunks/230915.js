@@ -35,8 +35,8 @@ var r, i = "https://js.stripe.com/v3",
   },
   u = null,
   d = null,
-  f = null,
-  _ = function(e) {
+  _ = null,
+  f = function(e) {
     return function() {
       e(Error("Failed to load Stripe.js"))
     }
@@ -52,7 +52,7 @@ var r, i = "https://js.stripe.com/v3",
       if (window.Stripe && e && console.warn(o), window.Stripe) return void t(window.Stripe);
       try {
         var r, i = s();
-        i && e ? console.warn(o) : i ? i && null !== f && null !== d && (i.removeEventListener("load", f), i.removeEventListener("error", d), null == (r = i.parentNode) || r.removeChild(i), i = l(e)) : i = l(e), f = p(t, n), d = _(n), i.addEventListener("load", f), i.addEventListener("error", d)
+        i && e ? console.warn(o) : i ? i && null !== _ && null !== d && (i.removeEventListener("load", _), i.removeEventListener("error", d), null == (r = i.parentNode) || r.removeChild(i), i = l(e)) : i = l(e), _ = p(t, n), d = f(n), i.addEventListener("load", _), i.addEventListener("error", d)
       } catch (e) {
         n(e);
         return

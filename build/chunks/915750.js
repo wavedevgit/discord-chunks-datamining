@@ -3,8 +3,8 @@
 n.d(t, {
   B5: () => D,
   PI: () => C,
-  WD: () => k,
-  aM: () => M,
+  WD: () => M,
+  aM: () => k,
   ui: () => j
 }), n(388685), n(642613), n(415506);
 var r = n(255367),
@@ -16,8 +16,8 @@ var r = n(255367),
   c = n(110924),
   u = n(516796),
   d = n(186102),
-  f = n(797614),
-  _ = n(358085),
+  _ = n(797614),
+  f = n(358085),
   p = n(617136),
   h = n(113434),
   m = n(569984),
@@ -110,7 +110,7 @@ class w {
             google_advertising_id: m.Z.googleAdvertisingId
           }, (0, d.Z)(), this.commonProperties(e)),
           i = (0, u.S)();
-        null != i && (0, _.isIOS)() && (r.apple_advertising_id = i.advertisingId), (0, p.dA)({
+        null != i && (0, f.isIOS)() && (r.apple_advertising_id = i.advertisingId), (0, p.dA)({
           questId: e.id,
           event: O.rMx.QUEST_CONTENT_VIEWED,
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
@@ -168,7 +168,7 @@ class w {
           }, this.commonProperties(e)),
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata
         })
-      }), (0, E.a)("QuestImpressionTracker") && f.Z.increment({
+      }), (0, E.a)("QuestImpressionTracker") && _.Z.increment({
         name: o.V.QUEST_CONTENT_IMPRESSION,
         tags: ["quest_content:".concat((0, p._b)(this.questContent))]
       }), this.isRunning = !0
@@ -189,14 +189,14 @@ let D = (e, t) => {
   },
   x = i.createContext(void 0);
 
-function k() {
+function M() {
   let e = i.useContext(x);
   return null == e ? void 0 : e.current
 }
 
-function M() {
+function k() {
   var e;
-  return null == (e = k()) ? void 0 : e.getId()
+  return null == (e = M()) ? void 0 : e.getId()
 }
 
 function j(e) {
@@ -206,14 +206,14 @@ function j(e) {
     focused: a,
     reference: o,
     focusedChanged: c
-  } = e, u = L(e.questOrQuests), d = (0, h.KZ)(e.questContent), f = i.useRef(null), _ = (0, s.e7)([m.Z], () => null != m.Z.questEnrollmentBlockedUntil, []);
+  } = e, u = L(e.questOrQuests), d = (0, h.KZ)(e.questContent), _ = i.useRef(null), f = (0, s.e7)([m.Z], () => null != m.Z.questEnrollmentBlockedUntil, []);
   return (0, l.ZP)(() => () => {
-    null != f.current && f.current.stop()
+    null != _.current && _.current.stop()
   }), i.useEffect(() => {
     let r = a && t,
       i = (n || c || u) && r,
       o = (n || c) && !r || u;
-    (i || o) && null != f.current && f.current.stop(), i && (f.current = new w({
+    (i || o) && null != _.current && _.current.stop(), i && (_.current = new w({
       adDecisionData: d,
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,
@@ -222,10 +222,10 @@ function j(e) {
       triggeredByStatusChange: u,
       trackGuildAndChannelMetadata: e.trackGuildAndChannelMetadata,
       minViewTimeSeconds: e.minViewTimeSeconds,
-      isQuestEnrollmentBlocked: _
-    }), f.current.start())
-  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, u, e.minViewTimeSeconds, d, _]), (0, r.jsx)(x.Provider, {
-    value: f,
-    children: e.children(o, f)
+      isQuestEnrollmentBlocked: f
+    }), _.current.start())
+  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, u, e.minViewTimeSeconds, d, f]), (0, r.jsx)(x.Provider, {
+    value: _,
+    children: e.children(o, _)
   })
 }

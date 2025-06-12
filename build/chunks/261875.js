@@ -20,7 +20,7 @@ function c(e, t, n) {
 }
 let u = new o.Z("DatabaseManager"),
   d = !1;
-class f extends r.ZP.Store {
+class _ extends r.ZP.Store {
   initialize() {
     this.waitFor(s.default), this.carefullySpeculativelyOpen(l.n()), this.handleAuthenticationStoreChanged(), s.default.addChangeListener(() => this.handleAuthenticationStoreChanged())
   }
@@ -87,7 +87,7 @@ class f extends r.ZP.Store {
   }
 }
 
-function _(e, t) {
+function f(e, t) {
   for (let n = 0; n < e; n++) try {
     return t()
   } catch (e) {
@@ -104,7 +104,7 @@ function h(e) {
   if (d) {
     let t = 50,
       n = p(e);
-    return u.verbose("synchronously opening ".concat(n)), _(t, () => i.vo.openSyncUnsafe(n, {
+    return u.verbose("synchronously opening ".concat(n)), f(t, () => i.vo.openSyncUnsafe(n, {
       invalidateDisabledHandles: !0
     }))
   }
@@ -122,4 +122,4 @@ async function m(e) {
   }
   return null
 }
-let g = new f
+let g = new _

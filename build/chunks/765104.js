@@ -8,8 +8,8 @@ var s, l = n(392711),
   c = n.n(l),
   u = n(442837),
   d = n(570140),
-  f = n(902840),
-  _ = n(212819),
+  _ = n(902840),
+  f = n(212819),
   p = n(353926),
   h = n(823385),
   m = n(592125),
@@ -66,20 +66,20 @@ let P = {},
   D = {},
   L = [],
   x = {},
-  k = {
+  M = {
     status: "ok",
     lastRequest: null,
     lastResponse: null
   },
-  M = [],
+  k = [],
   j = [],
   U = 75,
   G = 25;
 
 function B() {
-  M = h.Z.getProps().results.filter(e => e.type === _.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
+  k = h.Z.getProps().results.filter(e => e.type === f.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
 }
-class F extends(s = u.ZP.PersistedStore) {
+class V extends(s = u.ZP.PersistedStore) {
   getState() {
     return {
       shouldShowTopicsBar: r
@@ -123,7 +123,7 @@ class F extends(s = u.ZP.PersistedStore) {
     var n, r;
     let i = w[e],
       a = m.Z.getChannel(e);
-    if (!(0, f.Lp)(a)) return !1;
+    if (!(0, _.Lp)(a)) return !1;
     if (null != t) {
       let e = null != (n = null == i ? void 0 : i.summaryIdLastRequestedAt) ? n : 0,
         r = Date.now() - e;
@@ -139,10 +139,10 @@ class F extends(s = u.ZP.PersistedStore) {
     return x
   }
   channelAffinitiesStatus() {
-    return k
+    return M
   }
   shouldFetchChannelAffinities() {
-    return !("fetching" === k.status || null != k.lastResponse && Date.now() - k.lastResponse < 30 * v.Z.Millis.SECOND)
+    return !("fetching" === M.status || null != M.lastResponse && Date.now() - M.lastResponse < 30 * v.Z.Millis.SECOND)
   }
   defaultChannelIds(e) {
     let {
@@ -151,12 +151,12 @@ class F extends(s = u.ZP.PersistedStore) {
       withUnreads: r,
       numChannels: i = G
     } = e, a = [];
-    return t && (a = a.concat(M)), n && (a = a.concat(L.map(e => e.channel_id))), r && (a = a.filter(e => {
+    return t && (a = a.concat(k)), n && (a = a.concat(L.map(e => e.channel_id))), r && (a = a.filter(e => {
       let t = m.Z.getChannel(e);
       return null != t && !y.ZP.isChannelMuted(t.guild_id, e) && E.ZP.hasUnread(e)
     })), (a = a.filter(e => {
       let t = m.Z.getChannel(e);
-      return (0, f.Lp)(t, !1, !1)
+      return (0, _.Lp)(t, !1, !1)
     })).slice(0, i)
   }
   visibleSummaryIndex() {
@@ -164,12 +164,12 @@ class F extends(s = u.ZP.PersistedStore) {
   }
 }
 
-function V(e, t, n, r) {
+function F(e, t, n, r) {
   let i = null == t || t < n;
   return !(null == e || e > r) && !i
 }
-A(F, "persistKey", "SummaryStore");
-let Z = new F(d.Z, {
+A(V, "persistKey", "SummaryStore");
+let Z = new V(d.Z, {
   CONNECTION_OPEN: () => !1,
   CHANNEL_SELECT(e) {
     let {
@@ -263,7 +263,7 @@ let Z = new F(d.Z, {
         a = null == e ? void 0 : e.findIndex(e => e.id === (null == i ? void 0 : i.summaryId))
       } else {
         var n;
-        a = null == (n = P[t]) ? void 0 : n.findIndex(t => V(e.topVisibleMessage, e.bottomVisibleMessage, t.startId, t.endId))
+        a = null == (n = P[t]) ? void 0 : n.findIndex(t => F(e.topVisibleMessage, e.bottomVisibleMessage, t.startId, t.endId))
       }
   },
   SET_SELECTED_SUMMARY(e) {
@@ -282,7 +282,7 @@ let Z = new F(d.Z, {
     null != n ? D[t.id] = n : delete D[t.id]
   },
   REQUEST_CHANNEL_AFFINITIES() {
-    k = R(N({}, k), {
+    M = R(N({}, M), {
       status: "fetching",
       lastRequest: Date.now()
     })
@@ -294,13 +294,13 @@ let Z = new F(d.Z, {
       error: r
     } = e;
     if (null != r) {
-      L = [], x = {}, k = R(N({}, k), {
+      L = [], x = {}, M = R(N({}, M), {
         status: "error",
         lastResponse: Date.now()
       });
       return
     }
-    L = null != n ? n : [], x = null != (t = null == n ? void 0 : n.reduce((e, t) => (e[t.channel_id] = t.affinity, e), {})) ? t : {}, k = R(N({}, k), {
+    L = null != n ? n : [], x = null != (t = null == n ? void 0 : n.reduce((e, t) => (e[t.channel_id] = t.affinity, e), {})) ? t : {}, M = R(N({}, M), {
       status: "ok",
       lastResponse: Date.now()
     })

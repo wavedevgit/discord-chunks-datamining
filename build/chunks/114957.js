@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 }), n(388685);
 var r = n(224706),
   i = n(978085),
@@ -20,7 +20,7 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class f extends a.Z {
+class _ extends a.Z {
   handlePostConnectionOpen() {
     ((0, u.isDesktop)() || (0, o.l)()) && (l.Z.fetched || (0, i.b8)(), r.Z.getDetectableGames(), this.intervalId = setInterval(r.Z.getDetectableGames, s.Z.detectableGamesTtl + Math.random() * c.Z.Millis.HOUR))
   }
@@ -33,4 +33,4 @@ class f extends a.Z {
     })
   }
 }
-let _ = new f
+let f = new _

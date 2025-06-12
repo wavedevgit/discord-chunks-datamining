@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => F
 });
 var r = n(255367);
 n(73800);
@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(833664),
   u = n(420660),
   d = n(100527),
-  f = n(906732),
-  _ = n(379357),
+  _ = n(906732),
+  f = n(379357),
   p = n(358696),
   h = n(649700),
   m = n(313201),
@@ -36,8 +36,8 @@ var i = n(120356),
   D = n(881530),
   L = n(228168),
   x = n(981631),
-  k = n(701488),
-  M = n(388032),
+  M = n(701488),
+  k = n(388032),
   j = n(227832);
 
 function U(e, t, n) {
@@ -73,26 +73,26 @@ function B(e, t) {
   return n
 }
 
-function F(e, t) {
+function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function V(e) {
+function F(e) {
   let {
     user: t,
     currentUser: n,
     activity: i,
     application: U,
     voiceGuild: B,
-    voiceChannel: V,
+    voiceChannel: F,
     className: Z,
     onClose: H,
     appContext: Y
   } = e, W = (0, m.Dt)(), K = (0, m.Dt)(), {
     analyticsLocations: z
-  } = (0, f.ZP)(d.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
+  } = (0, _.ZP)(d.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     themeType: q
   } = (0, I.z)(), X = (0, h.Z)({
     activity: i,
@@ -109,7 +109,7 @@ function V(e) {
   }), $ = (0, O.Z)(i), ee = null != $.text && "" !== $.text, {
     largeImage: et,
     smallImage: en
-  } = (0, _.FO)(i, U), er = (0, D.Z)({
+  } = (0, f.FO)(i, U), er = (0, D.Z)({
     location: "UserProfileActivityCard",
     user: t,
     currentUser: n,
@@ -140,7 +140,7 @@ function V(e) {
     })
   }, ea = () => {
     var e;
-    return (0, u.Z)(i) && null != V ? (0, r.jsxs)("div", {
+    return (0, u.Z)(i) && null != F ? (0, r.jsxs)("div", {
       className: j.voiceChannelText,
       children: [(0, r.jsx)(o.gj8, {
         size: "xxs",
@@ -148,7 +148,7 @@ function V(e) {
         className: j.voiceIcon
       }), (0, r.jsx)(C.f, {
         variant: "heading-sm/semibold",
-        text: V.name,
+        text: F.name,
         id: W
       })]
     }) : (0, c.Z)(i) || (0, E.dS)(i) ? (0, r.jsx)(C.f, {
@@ -163,7 +163,7 @@ function V(e) {
   }, eo = () => {
     if ((0, u.Z)(i) && null != B) return (0, r.jsx)(C.Z, {
       variant: "text-xs/normal",
-      text: M.intl.formatToPlainString(M.t["hq/Qzc"], {
+      text: k.intl.formatToPlainString(k.t["hq/Qzc"], {
         guildName: B.name
       }),
       onClick: () => {
@@ -192,7 +192,7 @@ function V(e) {
     if (i.type === x.IIU.WATCHING) return null;
     if ((0, c.Z)(i)) return el();
     if ((0, E.dS)(i) && (null == (e = i.party) ? void 0 : e.size) != null && (null == (t = i.party) ? void 0 : t.size.length) >= 2) {
-      let e = M.intl.formatToPlainString(M.t["JC/3x8"], {
+      let e = k.intl.formatToPlainString(k.t["JC/3x8"], {
         numSpeakers: null == (a = i.party) ? void 0 : a.size[0],
         numListeners: (null == (o = i.party) ? void 0 : o.size[1]) - (null == (s = i.party) ? void 0 : s.size[0])
       });
@@ -207,14 +207,14 @@ function V(e) {
     })
   }, el = () => {
     var e, t, n, a;
-    return (null == (e = i.party) ? void 0 : e.size) == null && i.application_id === k.Zc ? (0, r.jsxs)("div", {
+    return (null == (e = i.party) ? void 0 : e.size) == null && i.application_id === M.Zc ? (0, r.jsxs)("div", {
       className: j.gameState,
       children: [(0, r.jsx)(C.Z, {
         variant: "text-xs/normal",
         text: i.state
       }), (0, r.jsx)(C.Z, {
         variant: "text-xs/normal",
-        text: M.intl.formatToPlainString(M.t["u//9Bw"], {
+        text: k.intl.formatToPlainString(k.t["u//9Bw"], {
           count: "0",
           max: null != (a = null == U ? void 0 : U.getMaxParticipants()) ? a : 0
         })
@@ -226,9 +226,9 @@ function V(e) {
         text: i.state
       }), (0, r.jsx)(C.Z, {
         variant: "text-xs/normal",
-        text: 0 === i.party.size[1] ? M.intl.formatToPlainString(M.t.IM4J4e, {
+        text: 0 === i.party.size[1] ? k.intl.formatToPlainString(k.t.IM4J4e, {
           count: i.party.size[0]
-        }) : M.intl.formatToPlainString(M.t["u//9Bw"], {
+        }) : k.intl.formatToPlainString(k.t["u//9Bw"], {
           count: i.party.size[0],
           max: i.party.size[1]
         })
@@ -257,13 +257,13 @@ function V(e) {
       }), er(e)
     },
     children: [ea(), eo(), es()]
-  }), ed = () => null == B || null == V ? null : (0, r.jsx)(R.Z, {
+  }), ed = () => null == B || null == F ? null : (0, r.jsx)(R.Z, {
     user: t,
     guild: B,
-    channel: V,
+    channel: F,
     onAction: Q,
     onClose: H
-  }), ef = () => t.id === n.id ? null : (0, r.jsx)("div", {
+  }), e_ = () => t.id === n.id ? null : (0, r.jsx)("div", {
     className: j.actions,
     children: (0, r.jsx)(T.Z, {
       activity: i,
@@ -272,7 +272,7 @@ function V(e) {
       onClose: H
     })
   });
-  return (0, r.jsx)(f.Gt, {
+  return (0, r.jsx)(_.Gt, {
     value: z,
     children: (0, r.jsxs)(A.Z, {
       ref: J,
@@ -280,7 +280,7 @@ function V(e) {
       onAction: Q,
       onClose: H,
       "aria-labelledby": ee ? "".concat(K, " ").concat(W) : W,
-      children: [(0, r.jsx)(N.Z, F(G({
+      children: [(0, r.jsx)(N.Z, V(G({
         textId: K
       }, $), {
         contextMenu: (0, r.jsx)(w.Z, {
@@ -301,10 +301,10 @@ function V(e) {
               user: t,
               activity: i,
               className: j.badges
-            }), ec(), q === L.lY.MODAL_V2 && ef()]
-          }), q === L.lY.MODAL && ef()]
+            }), ec(), q === L.lY.MODAL_V2 && e_()]
+          }), q === L.lY.MODAL && e_()]
         }), ed()]
-      }), q !== L.lY.MODAL && q !== L.lY.MODAL_V2 && ef()]
+      }), q !== L.lY.MODAL && q !== L.lY.MODAL_V2 && e_()]
     })
   })
 }

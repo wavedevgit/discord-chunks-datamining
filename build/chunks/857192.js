@@ -11,8 +11,8 @@ var r, i = n(261470),
   c = n(570140),
   u = n(179658),
   d = n(70956),
-  f = n(960048),
-  _ = n(981631);
+  _ = n(960048),
+  f = n(981631);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -106,9 +106,9 @@ function v(e) {
 
 function I(e) {
   var t;
-  let n = ((null != (t = e.user.flags) ? t : 0) & _.xW$.STAFF) === _.xW$.STAFF,
+  let n = ((null != (t = e.user.flags) ? t : 0) & f.xW$.STAFF) === f.xW$.STAFF,
     r = n || null != e.user.personal_connection_id;
-  n && m.set(b.sourceMapsEnabled), f.Z.setTags({
+  n && m.set(b.sourceMapsEnabled), _.Z.setTags({
     isStaff: r.toString()
   })
 }

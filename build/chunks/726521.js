@@ -29,7 +29,7 @@ var r = n(367907),
   u = n(443599),
   d = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -38,14 +38,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -293,7 +293,7 @@ function P(e, t) {
 }
 
 function w(e, t) {
-  r.ZP.trackWithMetadata(d.rMx.IAR_MODAL_OPEN, _({
+  r.ZP.trackWithMetadata(d.rMx.IAR_MODAL_OPEN, f({
     report_type: e
   }, t))
 }

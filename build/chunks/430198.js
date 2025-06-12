@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685);
 var r, i = n(149765),
   a = n(442837),
@@ -11,8 +11,8 @@ var r, i = n(149765),
   c = n(644542),
   u = n(923726),
   d = n(973542),
-  f = n(790285),
-  _ = n(160404),
+  _ = n(790285),
+  f = n(160404),
   p = n(131704),
   h = n(592125),
   m = n(271383),
@@ -50,7 +50,7 @@ function T(e) {
 
 function S(e, t) {
   if (!t.hasFeature(b.oNc.CREATOR_MONETIZABLE) && !t.hasFeature(b.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) return !1;
-  let n = _.Z.isViewingServerShop(t.id);
+  let n = f.Z.isViewingServerShop(t.id);
   for (let r of Object.keys(e.permissionOverwrites)) {
     let i = g.Z.getRole(t.id, r);
     if (!T({
@@ -59,18 +59,18 @@ function S(e, t) {
         isPreviewingRoles: n
       })) continue;
     let a = e.permissionOverwrites[r];
-    if ((0, f.TG)(e, a)) return !0
+    if ((0, _.TG)(e, a)) return !0
   }
   let r = g.Z.getRole(t.id, t.getEveryoneRoleId()),
     a = null != r && !i.e$(r.permissions, b.Plq.VIEW_CHANNEL),
-    o = (0, f.wB)(e, e.permissionOverwrites[t.id]);
+    o = (0, _.wB)(e, e.permissionOverwrites[t.id]);
   if (a && !o) {
     for (let e of Object.values(g.Z.getRoles(t.id)))
       if (T({
           guildId: t.id,
           role: e,
           isPreviewingRoles: n
-        }) && (0, f.MT)(e)) return !0
+        }) && (0, _.MT)(e)) return !0
   }
   return !1
 }
@@ -146,9 +146,9 @@ function x(e) {
   } = e;
   v.add(t)
 }
-class k extends(r = a.ZP.Store) {
+class M extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(g.Z, h.Z, _.Z), c.Zo.subscribe({
+    this.waitFor(g.Z, h.Z, f.Z), c.Zo.subscribe({
       location: "1"
     }, () => C())
   }
@@ -167,8 +167,8 @@ class k extends(r = a.ZP.Store) {
     return !!(null != n && null != n.parent_id && p.Ec.has(null == n ? void 0 : n.type)) && this.isChannelOrThreadParentGated(e, n.parent_id)
   }
 }
-y(k, "displayName", "GatedChannelStore");
-let M = new k(o.Z, {
+y(M, "displayName", "GatedChannelStore");
+let k = new M(o.Z, {
   CONNECTION_OPEN: C,
   OVERLAY_INITIALIZE: C,
   CACHE_LOADED_LAZY: C,

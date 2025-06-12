@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(321051),
   u = n(669079),
   d = n(479446),
-  f = n(646476),
-  _ = n(599659),
+  _ = n(646476),
+  f = n(599659),
   p = n(981632),
   h = n(96848),
   m = n(703926),
@@ -94,18 +94,18 @@ let A = e => {
     orientation: "horizontal"
   }), {
     ref: x
-  } = L, k = T(L, ["ref"]), M = (0, u.MY)(y, t), j = M === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== u.xr.DEFAULT, G = (0, f.rK)(), {
+  } = L, M = T(L, ["ref"]), k = (0, u.MY)(y, t), j = k === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = k !== u.xr.DEFAULT, G = (0, _.rK)(), {
     enabled: B
-  } = f.ZP.useExperiment({
+  } = _.ZP.useExperiment({
     location: "premiumGiftSelect_GiftAnimationOptions"
   }, {
     autoTrackExposure: G
   }), {
-    enabled: F
-  } = _.O.useExperiment({
+    enabled: V
+  } = f.O.useExperiment({
     location: "gift card"
-  }), V = null;
-  U && (V = G && B ? g.kJ : g.QI), F && (V = g.RQ);
+  }), F = null;
+  U && (F = G && B ? g.kJ : g.QI), V && (F = g.RQ);
   let Z = e => {
     null != R && R(null == e ? void 0 : e)
   };
@@ -145,8 +145,8 @@ let A = e => {
       className: o()(b.giftBoxOptionContainer, a),
       "aria-label": E.intl.string(E.t.v54NrK),
       ref: x
-    }, k), {
-      children: null != V && V.map((e, t) => (0, r.jsx)(m.m, {
+    }, M), {
+      children: null != F && F.map((e, t) => (0, r.jsx)(m.m, {
         isSelected: v === e,
         giftStyle: e,
         setSelectedGiftStyle: S,

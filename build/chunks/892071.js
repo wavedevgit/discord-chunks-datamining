@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  cE: () => f,
+  cE: () => _,
   vP: () => d
 }), n(415506);
 var r = n(255367),
@@ -23,14 +23,14 @@ function d() {
   return e
 }
 
-function f(e) {
+function _(e) {
   let {
     rootClassName: t,
     lang: n,
     theme: a,
     density: d,
-    focused: f,
-    fontScale: _,
+    focused: _,
+    fontScale: f,
     fontScaleClass: p,
     mouseMode: h,
     keyboardModeEnabled: m,
@@ -42,7 +42,7 @@ function f(e) {
     alwaysShowLinkDecorations: v,
     hardwareAccelerationEnabled: I,
     children: T
-  } = e, S = window.CSS.supports("selector(::-webkit-scrollbar)"), A = "font-size: ".concat(_, "%; --saturation-factor: ").concat(g, ";"), N = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(d), p, {
+  } = e, S = window.CSS.supports("selector(::-webkit-scrollbar)"), A = "font-size: ".concat(f, "%; --saturation-factor: ").concat(g, ";"), N = o()((0, c.Z)(), (0, l.QeD)(a), "density-".concat(d), p, {
     "low-saturation": g <= l.AEw,
     "keyboard-mode": m,
     "decorate-links": v,
@@ -52,7 +52,7 @@ function f(e) {
     "reduce-motion": O,
     "full-motion": !O,
     "is-mobile": s.tq,
-    "app-focused": f,
+    "app-focused": _,
     "desaturate-user-colors": E,
     "disable-forced-colors": !b && "active" === y,
     "enable-forced-colors": b,

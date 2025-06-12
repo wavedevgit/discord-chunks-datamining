@@ -6,7 +6,7 @@ n.d(t, {
   Q2: () => p,
   Rt: () => u,
   eC: () => c,
-  fh: () => f
+  fh: () => _
 }), n(35282), n(784620), n(973216), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(887003);
 n(591759);
@@ -34,7 +34,7 @@ function d(e, t) {
   return null != e ? e : t
 }
 
-function f(e, t, n) {
+function _(e, t, n) {
   var s, l;
   let c;
   switch (t) {
@@ -79,20 +79,20 @@ function f(e, t, n) {
     case "logo_type":
       c = e.config.assets.logotype
   }
-  let f = e.config.features.includes(a.S7.QUESTS_CDN);
+  let _ = e.config.features.includes(a.S7.QUESTS_CDN);
   return u(e.id, c, {
     theme: n,
-    newCdn: f
+    newCdn: _
   })
 }
 
-function _(e) {
+function f(e) {
   var t;
   return null != (t = e.split("?", 1).at(0)) ? t : e
 }
 
 function p(e, t, n) {
-  if (t.startsWith("blob:")) return _(t);
+  if (t.startsWith("blob:")) return f(t);
   let r = (null == n ? void 0 : n.newCdn) ? a.tD : a.Uo;
   return "".concat(r).concat(e).concat((null == n ? void 0 : n.theme) != null ? "/".concat(n.theme) : "", "/").concat(t)
 }

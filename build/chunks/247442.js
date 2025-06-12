@@ -72,8 +72,8 @@ function d(e) {
     className: s,
     background: u,
     foreground: d
-  } = e, f = c(e, ["width", "height", "color", "className", "background", "foreground"]);
-  return (0, r.jsxs)("svg", l(o({}, (0, i.Z)(f)), {
+  } = e, _ = c(e, ["width", "height", "color", "className", "background", "foreground"]);
+  return (0, r.jsxs)("svg", l(o({}, (0, i.Z)(_)), {
     className: s,
     width: t,
     height: n,

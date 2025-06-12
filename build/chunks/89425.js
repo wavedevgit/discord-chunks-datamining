@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(415506);
 var r = n(430198),
   i = n(557135),
@@ -12,16 +12,16 @@ var r = n(430198),
   c = n(979651);
 let u = 1e4;
 class d extends Error {}
-async function f(e) {
+async function _(e) {
   let {
     channelId: t,
     timeoutMs: n = u,
-    bypassChangeModal: f = !1
-  } = e, _ = o.Z.getChannel(t);
-  if (null == _ || !await i.Z.handleVoiceConnect({
+    bypassChangeModal: _ = !1
+  } = e, f = o.Z.getChannel(t);
+  if (null == f || !await i.Z.handleVoiceConnect({
       bypassGuildIdCheck: !0,
-      bypassChangeModal: f,
-      channel: _,
+      bypassChangeModal: _,
+      channel: f,
       connected: c.Z.isInChannel(t),
       needSubscriptionToAccess: (0, a.$)(t, o.Z, r.Z, s.Z).needSubscriptionToAccess
     })) return !1;

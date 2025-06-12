@@ -22,8 +22,8 @@ var r = n(73800),
   c = n(375954),
   u = n(594174),
   d = n(168107),
-  f = n(352138),
-  _ = n(981631),
+  _ = n(352138),
+  f = n(981631),
   p = n(484710);
 
 function h() {
@@ -54,7 +54,7 @@ var b = function(e) {
 
 function O(e, t) {
   let n = c.Z.getMessage(e, t);
-  if (null == n || null == n.embeds || 0 === n.embeds.length || null == n.embeds[0].fields || n.embeds[0].type !== _.hBH.AGE_VERIFICATION_SYSTEM_NOTIFICATION) return !1;
+  if (null == n || null == n.embeds || 0 === n.embeds.length || null == n.embeds[0].fields || n.embeds[0].type !== f.hBH.AGE_VERIFICATION_SYSTEM_NOTIFICATION) return !1;
   let r = n.embeds[0].fields.find(e => "ctas" === e.rawName);
   return null == r ? void 0 : r.rawValue.split(",").includes("retry")
 }
@@ -86,7 +86,7 @@ function T(e) {
         a.Z.dispatch({
           type: "INITIATE_AGE_VERIFICATION"
         });
-        let t = await (0, f.K)();
+        let t = await (0, _.K)();
         d.Z.showAgeVerification({
           webviewUrl: t.verification_webview_url,
           onComplete: e,

@@ -20,7 +20,7 @@ e.exports = function(e) {
       end: /\}/,
       keywords: c
     },
-    f = [e.BINARY_NUMBER_MODE, e.inherit(e.C_NUMBER_MODE, {
+    _ = [e.BINARY_NUMBER_MODE, e.inherit(e.C_NUMBER_MODE, {
       starts: {
         end: "(\\s*/)?",
         relevance: 0
@@ -70,8 +70,8 @@ e.exports = function(e) {
         end: "`"
       }]
     }];
-  d.contains = f;
-  let _ = e.inherit(e.TITLE_MODE, {
+  d.contains = _;
+  let f = e.inherit(e.TITLE_MODE, {
       begin: u
     }),
     p = "(\\(.*\\)\\s*)?\\B[-=]>",
@@ -83,7 +83,7 @@ e.exports = function(e) {
         begin: /\(/,
         end: /\)/,
         keywords: c,
-        contains: ["self"].concat(f)
+        contains: ["self"].concat(_)
       }]
     },
     m = {
@@ -103,12 +103,12 @@ e.exports = function(e) {
     aliases: ["coffee", "cson", "iced"],
     keywords: c,
     illegal: /\/\*/,
-    contains: [...f, e.COMMENT("###", "###"), e.HASH_COMMENT_MODE, {
+    contains: [..._, e.COMMENT("###", "###"), e.HASH_COMMENT_MODE, {
       className: "function",
       begin: "^\\s*" + u + "\\s*=\\s*" + p,
       end: "[-=]>",
       returnBegin: !0,
-      contains: [_, h]
+      contains: [f, h]
     }, {
       begin: /[:\(,=]\s*/,
       relevance: 0,

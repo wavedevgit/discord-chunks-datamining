@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  y: () => _
+  y: () => f
 }), n(388685), n(583741);
 var r = n(255367);
 n(73800);
@@ -33,19 +33,19 @@ function d(e) {
   }
   return e
 }
-var f = function(e) {
+var _ = function(e) {
   return e.XSMALL = "xsmall", e.SMALL = "small", e.LARGE = "large", e
-}(f || {});
+}(_ || {});
 
-function _(e) {
+function f(e) {
   let {
     className: t,
     percents: n,
     size: i = "small",
     foregroundColors: o = [l.Z.unsafe_rawColors.BRAND_500.css],
     backgroundColor: u = "var(--background-modifier-active)",
-    animate: f = !0
-  } = e, _ = s().zip(n, o).map((e, t) => {
+    animate: _ = !0
+  } = e, f = s().zip(n, o).map((e, t) => {
     let n, [o, s] = e;
     return n = Array.isArray(s) ? {
       background: "linear-gradient(to right, ".concat(s[0], ", ").concat(s[1], ")")
@@ -53,7 +53,7 @@ function _(e) {
       backgroundColor: s
     }, (0, r.jsx)("div", {
       className: a()(c.progressBar, c[i], {
-        [c.animating]: f
+        [c.animating]: _
       }),
       style: d({
         transform: "translate3d(".concat(Math.min(Math.max(0, o), 100) - 100, "%, 0, 0)")
@@ -65,7 +65,7 @@ function _(e) {
     style: {
       backgroundColor: u
     },
-    children: _
+    children: f
   })
 }
-_.Sizes = f
+f.Sizes = _

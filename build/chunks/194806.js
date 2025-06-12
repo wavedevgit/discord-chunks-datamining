@@ -120,7 +120,7 @@ class d {
     return this.lastState
   }
   transaction(e, t) {
-    let n = new f(this);
+    let n = new _(this);
     return Promise.resolve(e(n)).then(() => n.operations.length > 0 ? this.execute({
       type: "db.transaction",
       operations: n.complete()
@@ -132,7 +132,7 @@ class d {
     })
   }
 }
-class f {
+class _ {
   add(e) {
     this.operations.push(e)
   }

@@ -9,8 +9,8 @@ var r, i = n(98405),
   c = n(46015),
   u = n(556585),
   d = n(573078),
-  f = n(170322),
-  _ = n(77025),
+  _ = n(170322),
+  f = n(77025),
   p = n(445667),
   h = n(865494),
   m = n(992174),
@@ -32,14 +32,14 @@ var r, i = n(98405),
   D = Math.pow,
   L = c("".charAt),
   x = c(/./.exec),
-  k = c([].join),
-  M = c(1..toString),
+  M = c([].join),
+  k = c(1..toString),
   j = c([].pop),
   U = c([].push),
   G = c("".replace),
   B = c([].shift),
-  F = c("".split),
-  V = c("".slice),
+  V = c("".split),
+  F = c("".slice),
   Z = c("".toLowerCase),
   H = c([].unshift),
   Y = "Invalid authority",
@@ -59,11 +59,11 @@ var r, i = n(98405),
   ea = /(^|[^\u0000-\u0020])[\u0000-\u0020]+$/,
   eo = /[\t\n\r]/g,
   es = function(e) {
-    var t, n, r, i, a, o, s, l = F(e, ".");
+    var t, n, r, i, a, o, s, l = V(e, ".");
     if (l.length && "" === l[l.length - 1] && l.length--, (t = l.length) > 4) return e;
     for (r = 0, n = []; r < t; r++) {
       if ("" === (i = l[r])) return e;
-      if (a = 10, i.length > 1 && "0" === L(i, 0) && (a = x(J, i) ? 16 : 8, i = V(i, 8 === a ? 1 : 2)), "" === i) o = 0;
+      if (a = 10, i.length > 1 && "0" === L(i, 0) && (a = x(J, i) ? 16 : 8, i = F(i, 8 === a ? 1 : 2)), "" === i) o = 0;
       else {
         if (!x(10 === a ? ee : 8 === a ? $ : et, i)) return e;
         o = P(i, a)
@@ -82,30 +82,30 @@ var r, i = n(98405),
       c = 0,
       u = null,
       d = 0,
-      f = function() {
+      _ = function() {
         return L(e, d)
       };
-    if (":" === f()) {
+    if (":" === _()) {
       if (":" !== L(e, 1)) return;
       d += 2, u = ++c
     }
-    for (; f();) {
+    for (; _();) {
       if (8 === c) return;
-      if (":" === f()) {
+      if (":" === _()) {
         if (null !== u) return;
         d++, u = ++c;
         continue
       }
-      for (t = n = 0; n < 4 && x(et, f());) t = 16 * t + P(f(), 16), d++, n++;
-      if ("." === f()) {
+      for (t = n = 0; n < 4 && x(et, _());) t = 16 * t + P(_(), 16), d++, n++;
+      if ("." === _()) {
         if (0 === n || (d -= n, c > 6)) return;
-        for (r = 0; f();) {
+        for (r = 0; _();) {
           if (i = null, r > 0)
-            if ("." !== f() || !(r < 4)) return;
+            if ("." !== _() || !(r < 4)) return;
             else d++;
-          if (!x(Q, f())) return;
-          for (; x(Q, f());) {
-            if (a = P(f(), 10), null === i) i = a;
+          if (!x(Q, _())) return;
+          for (; x(Q, _());) {
+            if (a = P(_(), 10), null === i) i = a;
             else {
               if (0 === i) return;
               i = 10 * i + a
@@ -118,9 +118,9 @@ var r, i = n(98405),
         if (4 !== r) return;
         break
       }
-      if (":" === f()) {
-        if (d++, !f()) return
-      } else if (f()) return;
+      if (":" === _()) {
+        if (d++, !_()) return
+      } else if (_()) return;
       l[c++] = t
     }
     if (null !== u)
@@ -136,29 +136,29 @@ var r, i = n(98405),
     var t, n, r, i;
     if ("number" == typeof e) {
       for (n = 0, t = []; n < 4; n++) H(t, e % 256), e = w(e / 256);
-      return k(t, ".")
+      return M(t, ".")
     }
     if ("object" == typeof e) {
-      for (n = 0, t = "", r = ec(e); n < 8; n++)(!i || 0 !== e[n]) && (i && (i = !1), r === n ? (t += n ? ":" : "::", i = !0) : (t += M(e[n], 16), n < 7 && (t += ":")));
+      for (n = 0, t = "", r = ec(e); n < 8; n++)(!i || 0 !== e[n]) && (i && (i = !1), r === n ? (t += n ? ":" : "::", i = !0) : (t += k(e[n], 16), n < 7 && (t += ":")));
       return "[" + t + "]"
     }
     return e
   },
   ed = {},
-  ef = p({}, ed, {
+  e_ = p({}, ed, {
     " ": 1,
     '"': 1,
     "<": 1,
     ">": 1,
     "`": 1
   }),
-  e_ = p({}, ef, {
+  ef = p({}, e_, {
     "#": 1,
     "?": 1,
     "{": 1,
     "}": 1
   }),
-  ep = p({}, e_, {
+  ep = p({}, ef, {
     "/": 1,
     ":": 1,
     ";": 1,
@@ -172,7 +172,7 @@ var r, i = n(98405),
   }),
   eh = function(e, t) {
     var n = g(e, 0);
-    return n > 32 && n < 127 && !_(t, e) ? e : encodeURIComponent(e)
+    return n > 32 && n < 127 && !f(t, e) ? e : encodeURIComponent(e)
   },
   em = {
     ftp: 21,
@@ -188,7 +188,7 @@ var r, i = n(98405),
   },
   eE = function(e) {
     var t;
-    return e.length > 1 && eg(V(e, 0, 2)) && (2 === e.length || "/" === (t = L(e, 2)) || "\\" === t || "?" === t || "#" === t)
+    return e.length > 1 && eg(F(e, 0, 2)) && (2 === e.length || "/" === (t = L(e, 2)) || "\\" === t || "?" === t || "#" === t)
   },
   eb = function(e) {
     return "." === e || "%2e" === Z(e)
@@ -210,31 +210,31 @@ var r, i = n(98405),
   eD = {},
   eL = {},
   ex = {},
-  ek = {},
   eM = {},
+  ek = {},
   ej = {},
   eU = {},
   eG = {},
   eB = {},
-  eF = {},
-  eV = function(e, t, n) {
+  eV = {},
+  eF = function(e, t, n) {
     var r, i, a, o = b(e);
     if (t) {
       if (i = this.parse(o)) throw new R(i);
       this.searchParams = null
     } else {
-      if (void 0 !== n && (r = new eV(n, !0)), i = this.parse(o, null, r)) throw new R(i);
+      if (void 0 !== n && (r = new eF(n, !0)), i = this.parse(o, null, r)) throw new R(i);
       (a = N(new A)).bindURL(this), this.searchParams = a
     }
   };
-eV.prototype = {
+eF.prototype = {
   type: "URL",
   parse: function(e, t, n) {
     var i, a, o, s, l = this,
       c = t || eO,
       u = 0,
       d = "",
-      f = !1,
+      _ = !1,
       p = !1,
       g = !1;
     for (e = b(e), t || (l.scheme = "", l.username = "", l.password = "", l.host = null, l.port = null, l.path = [], l.query = null, l.fragment = null, l.cannotBeABaseURL = !1, e = G(e, ei, ""), e = G(e, ea, "$1")), i = h(e = G(e, eo, "")); u <= i.length;) {
@@ -250,7 +250,7 @@ eV.prototype = {
         case ev:
           if (a && (x(X, a) || "+" === a || "-" === a || "." === a)) d += Z(a);
           else if (":" === a) {
-            if (t && (l.isSpecial() !== _(em, d) || "file" === d && (l.includesCredentials() || null !== l.port) || "file" === l.scheme && !l.host)) return;
+            if (t && (l.isSpecial() !== f(em, d) || "file" === d && (l.includesCredentials() || null !== l.port) || "file" === l.scheme && !l.host)) return;
             if (l.scheme = d, t) {
               l.isSpecial() && em[l.scheme] === l.port && (l.port = null);
               return
@@ -265,7 +265,7 @@ eV.prototype = {
         case eI:
           if (!n || n.cannotBeABaseURL && "#" !== a) return W;
           if (n.cannotBeABaseURL && "#" === a) {
-            l.scheme = n.scheme, l.path = m(n.path), l.query = n.query, l.fragment = "", l.cannotBeABaseURL = !0, c = eF;
+            l.scheme = n.scheme, l.path = m(n.path), l.query = n.query, l.fragment = "", l.cannotBeABaseURL = !0, c = eV;
             break
           }
           c = "file" === n.scheme ? ex : eA;
@@ -288,7 +288,7 @@ eV.prototype = {
           if (l.scheme = n.scheme, a === r) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = m(n.path), l.query = n.query;
           else if ("/" === a || "\\" === a && l.isSpecial()) c = eN;
           else if ("?" === a) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = m(n.path), l.query = "", c = eB;
-          else if ("#" === a) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = m(n.path), l.query = n.query, l.fragment = "", c = eF;
+          else if ("#" === a) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = m(n.path), l.query = n.query, l.fragment = "", c = eV;
           else {
             l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = m(n.path), l.path.length--, c = eU;
             continue
@@ -314,7 +314,7 @@ eV.prototype = {
           break;
         case eP:
           if ("@" === a) {
-            f && (d = "%40" + d), f = !0, o = h(d);
+            _ && (d = "%40" + d), _ = !0, o = h(d);
             for (var E = 0; E < o.length; E++) {
               var y = o[E];
               if (":" === y && !g) {
@@ -326,14 +326,14 @@ eV.prototype = {
             }
             d = ""
           } else if (a === r || "/" === a || "?" === a || "#" === a || "\\" === a && l.isSpecial()) {
-            if (f && "" === d) return Y;
+            if (_ && "" === d) return Y;
             u -= h(d).length + 1, d = "", c = ew
           } else d += a;
           break;
         case ew:
         case eD:
           if (t && "file" === l.scheme) {
-            c = eM;
+            c = ek;
             continue
           }
           if (":" !== a || p)
@@ -365,7 +365,7 @@ eV.prototype = {
           }
           break;
         case ex:
-          if (l.scheme = "file", "/" === a || "\\" === a) c = ek;
+          if (l.scheme = "file", "/" === a || "\\" === a) c = eM;
           else if (n && "file" === n.scheme) switch (a) {
             case r:
               l.host = n.host, l.path = m(n.path), l.query = n.query;
@@ -374,24 +374,24 @@ eV.prototype = {
               l.host = n.host, l.path = m(n.path), l.query = "", c = eB;
               break;
             case "#":
-              l.host = n.host, l.path = m(n.path), l.query = n.query, l.fragment = "", c = eF;
+              l.host = n.host, l.path = m(n.path), l.query = n.query, l.fragment = "", c = eV;
               break;
             default:
-              eE(k(m(i, u), "")) || (l.host = n.host, l.path = m(n.path), l.shortenPath()), c = eU;
+              eE(M(m(i, u), "")) || (l.host = n.host, l.path = m(n.path), l.shortenPath()), c = eU;
               continue
           } else {
             c = eU;
             continue
           }
           break;
-        case ek:
+        case eM:
           if ("/" === a || "\\" === a) {
-            c = eM;
+            c = ek;
             break
           }
-          n && "file" === n.scheme && !eE(k(m(i, u), "")) && (eg(n.path[0], !0) ? U(l.path, n.path[0]) : l.host = n.host), c = eU;
+          n && "file" === n.scheme && !eE(M(m(i, u), "")) && (eg(n.path[0], !0) ? U(l.path, n.path[0]) : l.host = n.host), c = eU;
           continue;
-        case eM:
+        case ek:
           if (a === r || "/" === a || "\\" === a || "?" === a || "#" === a) {
             if (!t && eg(d)) c = eU;
             else if ("" === d) {
@@ -412,24 +412,24 @@ eV.prototype = {
           } else if (t || "?" !== a)
             if (t || "#" !== a) {
               if (a !== r && (c = eU, "/" !== a)) continue
-            } else l.fragment = "", c = eF;
+            } else l.fragment = "", c = eV;
           else l.query = "", c = eB;
           break;
         case eU:
           if (a === r || "/" === a || "\\" === a && l.isSpecial() || !t && ("?" === a || "#" === a)) {
             if (ey(d) ? (l.shortenPath(), "/" === a || "\\" === a && l.isSpecial() || U(l.path, "")) : eb(d) ? "/" === a || "\\" === a && l.isSpecial() || U(l.path, "") : ("file" === l.scheme && !l.path.length && eg(d) && (l.host && (l.host = ""), d = L(d, 0) + ":"), U(l.path, d)), d = "", "file" === l.scheme && (a === r || "?" === a || "#" === a))
               for (; l.path.length > 1 && "" === l.path[0];) B(l.path);
-            "?" === a ? (l.query = "", c = eB) : "#" === a && (l.fragment = "", c = eF)
-          } else d += eh(a, e_);
+            "?" === a ? (l.query = "", c = eB) : "#" === a && (l.fragment = "", c = eV)
+          } else d += eh(a, ef);
           break;
         case eG:
-          "?" === a ? (l.query = "", c = eB) : "#" === a ? (l.fragment = "", c = eF) : a !== r && (l.path[0] += eh(a, ed));
+          "?" === a ? (l.query = "", c = eB) : "#" === a ? (l.fragment = "", c = eV) : a !== r && (l.path[0] += eh(a, ed));
           break;
         case eB:
-          t || "#" !== a ? a !== r && ("'" === a && l.isSpecial() ? l.query += "%27" : "#" === a ? l.query += "%23" : l.query += eh(a, ed)) : (l.fragment = "", c = eF);
+          t || "#" !== a ? a !== r && ("'" === a && l.isSpecial() ? l.query += "%27" : "#" === a ? l.query += "%23" : l.query += eh(a, ed)) : (l.fragment = "", c = eV);
           break;
-        case eF:
-          a !== r && (l.fragment += eh(a, ef))
+        case eV:
+          a !== r && (l.fragment += eh(a, e_))
       }
       u++
     }
@@ -437,7 +437,7 @@ eV.prototype = {
   parseHost: function(e) {
     var t, n, r;
     if ("[" === L(e, 0)) {
-      if ("]" !== L(e, e.length - 1) || !(t = el(V(e, 1, -1)))) return K;
+      if ("]" !== L(e, e.length - 1) || !(t = el(F(e, 1, -1)))) return K;
       this.host = t
     } else if (this.isSpecial()) {
       if (x(en, e = E(e)) || null === (t = es(e))) return K;
@@ -455,7 +455,7 @@ eV.prototype = {
     return "" !== this.username || "" !== this.password
   },
   isSpecial: function() {
-    return _(em, this.scheme)
+    return f(em, this.scheme)
   },
   shortenPath: function() {
     var e = this.path,
@@ -473,7 +473,7 @@ eV.prototype = {
       s = e.query,
       l = e.fragment,
       c = t + ":";
-    return null !== i ? (c += "//", e.includesCredentials() && (c += n + (r ? ":" + r : "") + "@"), c += eu(i), null !== a && (c += ":" + a)) : "file" === t && (c += "//"), c += e.cannotBeABaseURL ? o[0] : o.length ? "/" + k(o, "/") : "", null !== s && (c += "?" + s), null !== l && (c += "#" + l), c
+    return null !== i ? (c += "//", e.includesCredentials() && (c += n + (r ? ":" + r : "") + "@"), c += eu(i), null !== a && (c += ":" + a)) : "file" === t && (c += "//"), c += e.cannotBeABaseURL ? o[0] : o.length ? "/" + M(o, "/") : "", null !== s && (c += "?" + s), null !== l && (c += "#" + l), c
   },
   setHref: function(e) {
     var t = this.parse(e);
@@ -540,7 +540,7 @@ eV.prototype = {
   },
   getPathname: function() {
     var e = this.path;
-    return this.cannotBeABaseURL ? e[0] : e.length ? "/" + k(e, "/") : ""
+    return this.cannotBeABaseURL ? e[0] : e.length ? "/" + M(e, "/") : ""
   },
   setPathname: function(e) {
     this.cannotBeABaseURL || (this.path = [], this.parse(e, ej))
@@ -550,7 +550,7 @@ eV.prototype = {
     return e ? "?" + e : ""
   },
   setSearch: function(e) {
-    "" === (e = b(e)) ? this.query = null: ("?" === L(e, 0) && (e = V(e, 1)), this.query = "", this.parse(e, eB)), this.searchParams.update()
+    "" === (e = b(e)) ? this.query = null: ("?" === L(e, 0) && (e = F(e, 1)), this.query = "", this.parse(e, eB)), this.searchParams.update()
   },
   getSearchParams: function() {
     return this.searchParams.facade
@@ -564,16 +564,16 @@ eV.prototype = {
       this.fragment = null;
       return
     }
-    "#" === L(e, 0) && (e = V(e, 1)), this.fragment = "", this.parse(e, eF)
+    "#" === L(e, 0) && (e = F(e, 1)), this.fragment = "", this.parse(e, eV)
   },
   update: function() {
     this.query = this.searchParams.serialize() || null
   }
 };
 var eZ = function(e) {
-    var t = f(this, eH),
+    var t = _(this, eH),
       n = O(arguments.length, 1) > 1 ? arguments[1] : void 0,
-      r = T(t, new eV(e, !1, n));
+      r = T(t, new eF(e, !1, n));
     a || (t.href = r.serialize(), t.origin = r.getOrigin(), t.protocol = r.getProtocol(), t.username = r.getUsername(), t.password = r.getPassword(), t.host = r.getHost(), t.hostname = r.getHostname(), t.port = r.getPort(), t.pathname = r.getPathname(), t.search = r.getSearch(), t.searchParams = r.getSearchParams(), t.hash = r.getHash())
   },
   eH = eZ.prototype,

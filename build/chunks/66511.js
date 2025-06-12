@@ -34,7 +34,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,8 +45,8 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,7 +72,7 @@ let p = () => {
         let {
           default: t
         } = await Promise.all([n.e("54408"), n.e("77025")]).then(n.bind(n, 645264));
-        return n => (0, r.jsx)(t, _(d({}, n), {
+        return n => (0, r.jsx)(t, f(d({}, n), {
           guildId: e,
           inviteKey: a,
           onComplete: c,
@@ -101,7 +101,7 @@ let p = () => {
         let {
           default: t
         } = await Promise.all([n.e("54408"), n.e("77025")]).then(n.bind(n, 645264));
-        return n => (0, r.jsx)(t, _(d({}, n), {
+        return n => (0, r.jsx)(t, f(d({}, n), {
           guildId: e,
           isPreview: !0
         }))

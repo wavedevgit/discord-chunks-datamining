@@ -22,8 +22,8 @@ var r = n(392711),
   c = n(706454),
   u = n(675478),
   d = n(598077),
-  f = n(486472),
-  _ = n(594174),
+  _ = n(486472),
+  f = n(594174),
   p = n(73346),
   h = n(926491),
   m = n(981631),
@@ -166,7 +166,7 @@ let I = async (e, t) => {
     type: "GUILD_STICKERS_CREATE_SUCCESS",
     guildId: t,
     sticker: v(y({}, n.body), {
-      user: _.default.getCurrentUser()
+      user: f.default.getCurrentUser()
     })
   }), n.body
 }, R = async (e, t, n) => (await a.tn.patch({
@@ -193,7 +193,7 @@ function w(e, t) {
 }
 
 function D(e) {
-  return f.Z.totalUnavailableGuilds > 0 || !l.Z.isConnected() ? e : e.filter(e => null != h.Z.getStickerById(e))
+  return _.Z.totalUnavailableGuilds > 0 || !l.Z.isConnected() ? e : e.filter(e => null != h.Z.getStickerById(e))
 }
 
 function L(e) {

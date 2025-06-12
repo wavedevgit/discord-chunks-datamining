@@ -11,8 +11,8 @@ var r, i = n(392711),
   c = n(271383),
   u = n(430824),
   d = n(594174),
-  f = n(979651),
-  _ = n(700785),
+  _ = n(979651),
+  f = n(700785),
   p = n(146085),
   h = n(590415);
 
@@ -31,12 +31,12 @@ let g = {},
   };
 
 function b(e, t) {
-  let n = f.Z.getVoiceStateForChannel(t, e);
+  let n = _.Z.getVoiceStateForChannel(t, e);
   return (0, h.gf)(n) === h.xO.ON_STAGE
 }
 
 function y(e, t, n) {
-  return _.BT({
+  return f.BT({
     permission: p.yP,
     user: e,
     context: t,
@@ -138,7 +138,7 @@ function D(e) {
 }
 class L extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(c.ZP, l.Z, u.Z, d.default, f.Z)
+    this.waitFor(c.ZP, l.Z, u.Z, d.default, _.Z)
   }
   isSpeaker(e, t) {
     return this.getPermissionsForUser(e, t).speaker

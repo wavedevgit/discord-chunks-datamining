@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  J: () => e_,
+  J: () => ef,
   Z: () => ep
 }), n(997841), n(388685), n(539854), n(953529), n(781311), n(642613);
 var r = n(255367),
@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(512722),
   u = n.n(c),
   d = n(97519),
-  f = n(243814),
-  _ = n(442837),
+  _ = n(243814),
+  f = n(442837),
   p = n(921072),
   h = n(524437),
   m = n(1561),
@@ -36,14 +36,14 @@ var r = n(255367),
   D = n(726721),
   L = n(240991),
   x = n(713938),
-  k = n(973616),
-  M = n(881998),
+  M = n(973616),
+  k = n(881998),
   j = n(592125),
   U = n(944486),
   G = n(246946),
   B = n(9156),
-  F = n(768581),
-  V = n(630388),
+  V = n(768581),
+  F = n(630388),
   Z = n(49012),
   H = n(621600),
   Y = n(709054),
@@ -82,7 +82,7 @@ function eo(e) {
   }
   return e
 }
-let es = _.ZP.connectStores([K.Z], () => ({
+let es = f.ZP.connectStores([K.Z], () => ({
   theme: K.Z.theme
 }))(E.ubH);
 
@@ -210,7 +210,7 @@ let ec = e => {
       }) : null]
     }) : null
   },
-  ef = e => {
+  e_ = e => {
     let {
       scopes: t,
       application: a,
@@ -220,15 +220,15 @@ let ec = e => {
       disclosures: d,
       locale: p,
       id: g
-    } = e, b = a.id, v = i.useMemo(() => k.ZP.createFromServer(a), [a]), I = (0, V.yE)(v.flags, $.udG.EMBEDDED), T = (0, _.e7)([q.Z], () => {
+    } = e, b = a.id, v = i.useMemo(() => M.ZP.createFromServer(a), [a]), I = (0, F.yE)(v.flags, $.udG.EMBEDDED), T = (0, f.e7)([q.Z], () => {
       var e, t, n, r;
       return null == (r = q.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? void 0 : e.allowMobilePush
     }, [b]), S = C.w.useExperiment({
       location: "oauth2_authorize"
-    }), A = a.bot, P = (0, _.e7)([j.Z], () => j.Z.getDMFromUserId(null == A ? void 0 : A.id)), {
-      appDMChannelMuteConfig: M,
+    }), A = a.bot, P = (0, f.e7)([j.Z], () => j.Z.getDMFromUserId(null == A ? void 0 : A.id)), {
+      appDMChannelMuteConfig: k,
       dmChannelMuted: U
-    } = (0, _.cj)([B.ZP], () => null == P ? {
+    } = (0, f.cj)([B.ZP], () => null == P ? {
       appDMChannelMuteConfig: null,
       dmChannelMuted: !1
     } : {
@@ -240,7 +240,7 @@ let ec = e => {
       autoTrackExposure: !0
     }).enabled, ea = () => {
       let e = [];
-      for (let n of t) e.push(...(0, x.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(et.intl.string(et.t.Ls2XRk));
+      for (let n of t) e.push(...(0, x.CI)(n, t)), n === _.x.APPLICATIONS_COMMANDS && e.push(et.intl.string(et.t.Ls2XRk));
       if (e.length > 0 || null != d && d.length > 0) return (0, r.jsx)(E.zF9, {
         className: en.appDetailsSection,
         isExpanded: W,
@@ -304,7 +304,7 @@ let ec = e => {
         color: "text-normal",
         children: (0, L.parseBioReact)(a.description)
       })
-    }, [a.description]), ef = () => {
+    }, [a.description]), e_ = () => {
       let e = null != a.description && "" !== a.description,
         t = null != a.terms_of_service_url || null != a.privacy_policy_url;
       return e || t ? (0, r.jsx)(E.zF9, {
@@ -340,8 +340,8 @@ let ec = e => {
           })
         }
       }) : null
-    }, e_ = () => {
-      let e = F.ZP.getApplicationIconURL({
+    }, ef = () => {
+      let e = V.ZP.getApplicationIconURL({
           id: a.id,
           icon: a.icon
         }),
@@ -415,8 +415,8 @@ let ec = e => {
         hideBorder: !0,
         onChange: eh,
         className: en.dmSettingsSwitch,
-        note: (null == M ? void 0 : M.end_time) != null ? et.intl.format(et.t.j7h4AA, {
-          endTime: new Date(M.end_time).toLocaleString(et.intl.currentLocale, {
+        note: (null == k ? void 0 : k.end_time) != null ? et.intl.format(et.t.j7h4AA, {
+          endTime: new Date(k.end_time).toLocaleString(et.intl.currentLocale, {
             month: "numeric",
             day: "numeric",
             hour: "numeric",
@@ -459,29 +459,29 @@ let ec = e => {
     return (0, r.jsx)("div", {
       className: en.authedAppV2,
       children: (0, r.jsx)(E.y5t, {
-        component: e_(),
+        component: ef(),
         children: (0, r.jsxs)("div", {
           className: en.appDetailsContainer,
-          children: [ef(), ea(), em(), eE()]
+          children: [e_(), ea(), em(), eE()]
         })
       })
     })
   },
-  e_ = (0, d.U)(() => ({
+  ef = (0, d.U)(() => ({
     searchQuery: ""
   })),
   ep = () => {
-    let e = (0, _.e7)([G.Z], () => G.Z.hidePersonalInformation),
-      t = (0, _.e7)([M.Z], () => M.Z.getApps()),
-      a = (0, _.e7)([W.default], () => W.default.locale),
-      o = (0, _.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities()),
-      s = (0, _.e7)([j.Z, U.Z], () => j.Z.getChannel(U.Z.getChannelId())),
+    let e = (0, f.e7)([G.Z], () => G.Z.hidePersonalInformation),
+      t = (0, f.e7)([k.Z], () => k.Z.getApps()),
+      a = (0, f.e7)([W.default], () => W.default.locale),
+      o = (0, f.e7)([S.ZP], () => S.ZP.getSelfEmbeddedActivities()),
+      s = (0, f.e7)([j.Z, U.Z], () => j.Z.getChannel(U.Z.getChannelId())),
       c = null == s ? void 0 : s.getGuildId(),
       u = (0, g.C)("user-settings-authed-apps");
     i.useEffect(() => {
       b.Z.fetch()
     }, []), i.useEffect(() => () => {
-      e_.setState({
+      ef.setState({
         searchQuery: ""
       })
     }, []);
@@ -498,8 +498,8 @@ let ec = e => {
           showFeedback: !1
         })
       },
-      f = e_(e => e.searchQuery),
-      p = e => e_.setState({
+      _ = ef(e => e.searchQuery),
+      p = e => ef.setState({
         searchQuery: e
       }),
       h = e => {
@@ -512,7 +512,7 @@ let ec = e => {
         className: en.searchContainer,
         children: (0, r.jsx)(E.E1j, {
           size: E.E1j.Sizes.MEDIUM,
-          query: f,
+          query: _,
           onChange: h,
           onClear: m,
           placeholder: et.intl.string(et.t["5prvKS"]),
@@ -532,16 +532,16 @@ let ec = e => {
         })]
       }),
       v = i.useMemo(() => {
-        let e = f.trim().toLowerCase();
+        let e = _.trim().toLowerCase();
         return "" === e || null == t ? t : t.length < 100 ? t.filter(t => l()(e, t.application.name.toLowerCase())) : t.filter(t => t.application.name.toLowerCase().includes(e))
-      }, [t, f]),
+      }, [t, _]),
       T = () => null == t || null == v ? (0, r.jsx)(E.$jN, {
         className: ei.marginTop20,
         type: E.$jN.Type.SPINNING_CIRCLE
       }) : 0 === t.length ? O(et.intl.string(et.t.CpPv5u), et.intl.string(et.t["E+SM6e"])) : 0 === v.length ? (0, r.jsxs)(r.Fragment, {
         children: [y(), O(null, et.intl.string(et.t.EVWFNj))]
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [y(), v.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(ef, eo({
+        children: [y(), v.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(e_, eo({
           locale: a,
           onDelete: () => d(e),
           selectedChannelId: null == s ? void 0 : s.id,

@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -57,7 +57,7 @@ function h(e) {
     color: n = "default",
     isFocused: a = !1,
     disabled: d = !1,
-    keepItemStyles: _ = !1,
+    keepItemStyles: f = !1,
     menuItemProps: h,
     action: m,
     dontCloseOnActionIfHoldingShiftKey: g,
@@ -71,10 +71,10 @@ function h(e) {
       if (null == m) return !1;
       e.shiftKey && g || E || b(), e.persist(), requestAnimationFrame(() => m(e))
     }, [m, b, g, E]),
-    v = _ ? o()(u.item, c._[n], {
+    v = f ? o()(u.item, c._[n], {
       [u.focused]: a
     }) : u.customItem;
-  return (0, r.jsx)(s.P, p(f({
+  return (0, r.jsx)(s.P, p(_({
     innerRef: y,
     className: v,
     onClick: d ? void 0 : O,

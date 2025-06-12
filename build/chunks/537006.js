@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(906732),
   d = n(335131),
-  f = n(211644),
-  _ = n(605236),
+  _ = n(211644),
+  f = n(605236),
   p = n(767714),
   h = n(703656),
   m = n(914010),
@@ -124,10 +124,10 @@ function C(e) {
     className: a
   } = e, {
     themeType: u
-  } = (0, E.z)(), d = u === y.lY.MODAL, p = (0, _.wE)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), h = (0, s.e7)([m.Z], () => m.Z.getGuildId());
+  } = (0, E.z)(), d = u === y.lY.MODAL, p = (0, f.wE)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), h = (0, s.e7)([m.Z], () => m.Z.getGuildId());
   if (i.useEffect(() => {
-      if (!p) return (0, _.kk)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), () => {
-        (0, f.gE)({
+      if (!p) return (0, f.kk)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), () => {
+        (0, _.gE)({
           content: l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS
         }, !1)
       }
@@ -140,7 +140,7 @@ function C(e) {
     }),
     b = (0, r.jsx)(A, {
       onClose: () => {
-        (0, _.EW)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS, {
+        (0, f.EW)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS, {
           dismissAction: v.L.USER_DISMISS,
           guildId: h,
           forceTrack: !0

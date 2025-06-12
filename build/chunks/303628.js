@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(570140),
   d = n(166459),
-  f = n(911969),
-  _ = n(607070),
+  _ = n(911969),
+  f = n(607070),
   p = n(209613),
   h = n(998698),
   m = n(540059),
@@ -89,7 +89,7 @@ function L(e) {
   let {
     channelId: t,
     type: n
-  } = e, a = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled), A = (0, p.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([b.Z], () => b.Z.getUploads(t, n.drafts.type)), {
+  } = e, a = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled), A = (0, p.Z)("attachments", l.hy.HORIZONTAL), C = (0, c.e7)([b.Z], () => b.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: w,
     commandOptions: L,
     commandOptionStates: x
@@ -106,13 +106,13 @@ function L(e) {
       commandOptions: e.options,
       commandOptionStates: n
     }
-  }), k = i.useMemo(() => {
+  }), M = i.useMemo(() => {
     var e;
     return null != (e = null == L ? void 0 : L.filter(e => {
       var t;
-      return e.type === f.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? void 0 : t.hasValue)
+      return e.type === _.jw.ATTACHMENT && (null == x || null == (t = x[e.name]) ? void 0 : t.hasValue)
     })) ? e : []
-  }, [L, x]), [M, j] = i.useState([]);
+  }, [L, x]), [k, j] = i.useState([]);
   i.useEffect(() => {
     let e = () => {
       d.Z.clearAll(t, n.drafts.type)
@@ -128,8 +128,8 @@ function L(e) {
   });
   let G = {
       isApplicationCommand: w,
-      previousUploadOptions: M,
-      uploadOptions: k
+      previousUploadOptions: k,
+      uploadOptions: M
     },
     B = i.useRef(G);
   i.useEffect(() => {
@@ -148,9 +148,9 @@ function L(e) {
         d.Z.remove(t, e.name, n.drafts.type)
       }), j(i)
     }
-  }, [t, k.length, n]);
-  let F = (0, m.Q3)("ChannelAttachmentArea");
-  return !w && 0 === C.length || w && 0 === k.length ? null : (0, r.jsxs)(i.Fragment, {
+  }, [t, M.length, n]);
+  let V = (0, m.Q3)("ChannelAttachmentArea");
+  return !w && 0 === C.length || w && 0 === M.length ? null : (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(s.bG, {
       navigator: A,
       children: (0, r.jsx)(s.SJ, {
@@ -162,7 +162,7 @@ function L(e) {
             ref: i
           }, s), {
             className: o()(T.channelAttachmentArea, S.scrollbarGhost),
-            children: w ? k.map(e => (0, r.jsx)(O.Z, {
+            children: w ? M.map(e => (0, r.jsx)(O.Z, {
               channelId: t,
               keyboardModeEnabled: a,
               option: e
@@ -176,7 +176,7 @@ function L(e) {
           }))
         }
       })
-    }), n.drafts.type === E.d.FirstThreadMessage || F ? null : (0, r.jsx)(g.Z, {})]
+    }), n.drafts.type === E.d.FirstThreadMessage || V ? null : (0, r.jsx)(g.Z, {})]
   })
 }
 
@@ -191,4 +191,4 @@ function x(e) {
     type: n
   }) : null
 }
-let k = i.memo(x)
+let M = i.memo(x)

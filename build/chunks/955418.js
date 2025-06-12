@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(131704),
   u = n(5192),
   d = n(785717),
-  f = n(698305),
-  _ = n(981631),
+  _ = n(698305),
+  f = n(981631),
   p = n(388032),
   h = n(582970);
 
@@ -57,7 +57,7 @@ function b(e, t) {
 }
 let y = (0, c.kt)({
   id: "1",
-  type: _.d4z.DM
+  type: f.d4z.DM
 });
 
 function O(e) {
@@ -65,7 +65,7 @@ function O(e) {
     user: t,
     guildId: n,
     channelId: c,
-    onClose: _,
+    onClose: f,
     disableAutoFocus: m = !1
   } = e, {
     newestAnalyticsLocation: E
@@ -101,11 +101,11 @@ function O(e) {
       try {
         return O({
           action: "SEND_DIRECT_MESSAGE"
-        }), await (0, f.Z)({
+        }), await (0, _.Z)({
           userId: t.id,
           content: n.trim(),
           location: E
-        }), null == _ || _(), {
+        }), null == f || f(), {
           shouldClear: !0,
           shouldRefocus: !1
         }

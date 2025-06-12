@@ -8,11 +8,11 @@ n.d(t, {
   _N: () => w,
   cS: () => L,
   cZ: () => G,
-  e1: () => V,
+  e1: () => F,
   eQ: () => R,
   fw: () => C,
   uY: () => x,
-  x9: () => M
+  x9: () => k
 }), n(704826), n(35282), n(388685), n(781311);
 var r = n(392711),
   i = n.n(r),
@@ -23,8 +23,8 @@ var r = n(392711),
   c = n(333023),
   u = n(566006),
   d = n(739566),
-  f = n(592125),
-  _ = n(542578),
+  _ = n(592125),
+  f = n(542578),
   p = n(375954),
   h = n(496675),
   m = n(699516),
@@ -123,11 +123,11 @@ function x(e, t) {
   return t === o.C.DEFAULT && null != e.image && (null == r || 0 === r.length)
 }
 
-function k(e) {
+function M(e) {
   return new Date(Date.now() + e * g.Z.Millis.HOUR).toISOString()
 }
 
-function M(e) {
+function k(e) {
   var t;
   if (null == e) return;
   let n = null == e || null == (t = e.answers) ? void 0 : t.map((e, t) => {
@@ -144,7 +144,7 @@ function M(e) {
         poll_media: a
       })
     }),
-    r = (null == e ? void 0 : e.duration) != null ? k(e.duration) : "0";
+    r = (null == e ? void 0 : e.duration) != null ? M(e.duration) : "0";
   return S(I({}, e), {
     expiry: r,
     answers: n
@@ -181,13 +181,13 @@ function B(e, t) {
       animated: !1
     },
     a = e.getChannelId(),
-    o = _.Z.getReactions(a, e.id, r, b.$J, u.O.VOTE),
-    s = f.Z.getChannel(a),
+    o = f.Z.getReactions(a, e.id, r, b.$J, u.O.VOTE),
+    s = _.Z.getChannel(a),
     l = null == s || s.isPrivate() ? null : s.getGuildId();
   return i()(Array.from(null != (n = null == o ? void 0 : o.values()) ? n : [])).reject(e => m.Z.isBlockedOrIgnored(e.id)).take(b.$J).map(e => E.ZP.getName(l, null == s ? void 0 : s.id, e)).value()
 }
 
-function F(e, t) {
+function V(e, t) {
   let n = Math.max(0, t - e.length);
   if (1 === e.length)
     if (n > 0) return O.intl.formatToPlainString(O.t["SV/iZm"], {
@@ -219,7 +219,7 @@ function F(e, t) {
   })
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   var r, i;
   let a = p.Z.getMessage(t, e);
   if (null == a) return "";
@@ -230,5 +230,5 @@ function V(e, t, n) {
     }),
     s = null != (i = null == o || null == (r = o.count_details) ? void 0 : r.vote) ? i : 0,
     l = B(a, n);
-  return 0 === l.length ? "" : F(l, s)
+  return 0 === l.length ? "" : V(l, s)
 }

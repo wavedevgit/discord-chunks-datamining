@@ -12,8 +12,8 @@ var r, i = n(255367),
   c = n(686546),
   u = n(670188),
   d = n(598077),
-  f = n(594174),
-  _ = n(426563),
+  _ = n(594174),
+  f = n(426563),
   p = n(472840);
 
 function h(e, t, n) {
@@ -173,7 +173,7 @@ class T extends(r = a.PureComponent) {
       children: [this.renderIcon(), this.renderUsers()]
     });
     let c = n.find(e => null != e && e.id === l),
-      d = o && null == f.default.getUser(l);
+      d = o && null == _.default.getUser(l);
     return (0, i.jsx)(u.Z, {
       targetElementRef: this._ref,
       userId: l,
@@ -210,8 +210,8 @@ class T extends(r = a.PureComponent) {
           })
         });
         else {
-          let e = (null != n ? n : 0) % _.Z.DEFAULT_AVATARS.length,
-            t = _.Z.DEFAULT_AVATARS[e];
+          let e = (null != n ? n : 0) % f.Z.DEFAULT_AVATARS.length,
+            t = f.Z.DEFAULT_AVATARS[e];
           return (0, i.jsx)("img", {
             src: t,
             alt: "",

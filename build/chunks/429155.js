@@ -15,8 +15,8 @@ let u = 20,
     let {
       categories: n,
       store: d,
-      hasSearchResults: f,
-      listPadding: _,
+      hasSearchResults: _,
+      listPadding: f,
       renderRow: p,
       renderSection: h,
       renderSectionHeader: m,
@@ -91,9 +91,9 @@ let u = 20,
       }
     }), []), (0, r.jsxs)("div", {
       className: c.wrapper,
-      children: [R.length > 0 && !f && null != b ? b() : (0, r.jsx)(a.Z, {
+      children: [R.length > 0 && !_ && null != b ? b() : (0, r.jsx)(a.Z, {
         role: "none presentation",
-        listPadding: _,
+        listPadding: f,
         onScroll: x,
         renderRow: p,
         renderSection: h,

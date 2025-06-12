@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(998698),
   u = n(117530),
   d = n(459273),
-  f = n(585483),
-  _ = n(541716),
+  _ = n(585483),
+  f = n(541716),
   p = n(91313),
   h = n(53529),
   m = n(288897),
@@ -39,14 +39,14 @@ let D = i.forwardRef(function(e, t) {
     channel: D,
     className: L,
     id: x,
-    disabled: k,
-    submitting: M,
+    disabled: M,
+    submitting: k,
     placeholder: j,
     required: U,
     textAreaPaddingClassName: G,
     onChange: B,
-    onPaste: F,
-    onResize: V,
+    onPaste: V,
+    onResize: F,
     onFocus: Z,
     onBlur: H,
     onKeyDown: Y,
@@ -70,16 +70,16 @@ let D = i.forwardRef(function(e, t) {
     "aria-controls": ec,
     "aria-invalid": eu,
     "aria-describedby": ed,
-    "aria-labelledby": ef,
-    "aria-autocomplete": e_
-  } = e, ep = i.useRef(null), eh = i.useRef(null), em = i.useRef(!0), eg = i.useRef(!0), eE = k || M, eb = i.useCallback((e, t, n) => {
+    "aria-labelledby": e_,
+    "aria-autocomplete": ef
+  } = e, ep = i.useRef(null), eh = i.useRef(null), em = i.useRef(!0), eg = i.useRef(!0), eE = M || k, eb = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
       selection: a
     } = n, o = b.bN.richValue(e), s = e.selection, l = !1;
     if (void 0 !== i && i !== o) {
-      if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === _.Ie.EDIT) {
+      if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === f.Ie.EDIT) {
         try {
           e.previewMarkdown = !0, (0, N.KH)(e, D.guild_id, D.id)
         } finally {
@@ -142,7 +142,7 @@ let D = i.forwardRef(function(e, t) {
       if (a.length > 0) {
         var n, r;
         let e = a[0];
-        E.Q.selectCommandOption(ev, e.name), f.S.dispatch(P.CkL.SHAKE_APP, {
+        E.Q.selectCommandOption(ev, e.name), _.S.dispatch(P.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
         }), (0, l.yw)(P.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
@@ -159,7 +159,7 @@ let D = i.forwardRef(function(e, t) {
       ignoreTrailingEmptyNodes: !0
     }), t, e)
   }, [D.id, ev, q, eI, ee]);
-  (0, v.Z)(t, ev, D, eT), (0, S.Z)(ev, ep, V);
+  (0, v.Z)(t, ev, D, eT), (0, S.Z)(ev, ep, F);
   let {
     handleKeyDown: eS,
     handleKeyUp: eA
@@ -178,7 +178,7 @@ let D = i.forwardRef(function(e, t) {
   }), {
     handlePaste: eN,
     handleGlobalPaste: eC
-  } = (0, T.Z)(ev, eE, F), eR = i.useCallback(e => {
+  } = (0, T.Z)(ev, eE, V), eR = i.useCallback(e => {
     null == X || X()
   }, [X]), eP = i.useCallback(e => {
     e !== eh.current ? eg.current && (null == B || B(null, (0, g.sk)(e, {
@@ -217,7 +217,7 @@ let D = i.forwardRef(function(e, t) {
         readOnly: eE,
         spellCheck: $,
         autoFocus: !en,
-        canFocus: !k,
+        canFocus: !M,
         onChange: eP,
         onFocus: Z,
         onBlur: H,
@@ -233,10 +233,10 @@ let D = i.forwardRef(function(e, t) {
         "aria-expanded": eo,
         "aria-activedescendant": el,
         "aria-controls": ec,
-        "aria-labelledby": ef,
+        "aria-labelledby": e_,
         "aria-describedby": ed,
         "aria-invalid": eu,
-        "aria-autocomplete": e_,
+        "aria-autocomplete": ef,
         "aria-required": U
       })
     })]

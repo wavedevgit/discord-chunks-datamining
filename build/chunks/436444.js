@@ -14,8 +14,8 @@ var i = n(120356),
   c = n(975298),
   u = n(471885),
   d = n(267642),
-  f = n(879892),
-  _ = n(198466),
+  _ = n(879892),
+  f = n(198466),
   p = n(981631),
   h = n(474936),
   m = n(388032),
@@ -92,7 +92,7 @@ let T = {
       totalAvailableBoostsCount: C
     } = e, {
       analyticsLocations: R
-    } = (0, l.ZP)(), P = (0, c.Z)(), w = p.oCV[A], D = w - C, L = A <= N || b, x = L && A <= i.premiumTier, k = L && A < i.premiumTier, M = L && A === i.premiumTier, j = i.premiumTier < A && C >= w, {
+    } = (0, l.ZP)(), P = (0, c.Z)(), w = p.oCV[A], D = w - C, L = A <= N || b, x = L && A <= i.premiumTier, M = L && A < i.premiumTier, k = L && A === i.premiumTier, j = i.premiumTier < A && C >= w, {
       scaleFactor: U
     } = (0, s.q_F)({
       from: {
@@ -123,7 +123,7 @@ let T = {
     });
 
     function B() {
-      L && (j || (0, f.u)({
+      L && (j || (0, _.u)({
         analyticsLocations: R,
         analyticsLocation: {
           page: p.ZY5.PREMIUM_GUILD_USER_MODAL,
@@ -135,9 +135,9 @@ let T = {
         guild: i
       }))
     }
-    let F = !x && P.fractionalState === h.a$.NONE,
-      V = F ? s.P3F : "div",
-      Z = F ? {
+    let V = !x && P.fractionalState === h.a$.NONE,
+      F = V ? s.P3F : "div",
+      Z = V ? {
         onClick: B
       } : {};
     return (0, r.jsx)(s.ua7, {
@@ -157,12 +157,12 @@ let T = {
         })
       }),
       shouldShow: A !== p.Eu4.NONE,
-      children: e => (0, r.jsxs)(V, v(y({
+      children: e => (0, r.jsxs)(F, v(y({
         className: a()(E.progressBarMarker, {
           [E.progressBarMarkerUnlocked]: x,
-          [E.progressBarMarkerLocked]: F,
-          [E.progressBarMarkerLower]: k,
-          [E.progressBarMarkerCurrent]: M
+          [E.progressBarMarkerLocked]: V,
+          [E.progressBarMarkerLower]: M,
+          [E.progressBarMarkerCurrent]: k
         }),
         style: {
           left: "".concat(100 * T[A], "%")
@@ -170,7 +170,7 @@ let T = {
       }, e, Z), {
         children: [!x && (0, r.jsx)("div", {
           className: E.boostedTierIconBackground
-        }), x && A === p.Eu4.TIER_3 ? (0, r.jsx)(_.m, {
+        }), x && A === p.Eu4.TIER_3 ? (0, r.jsx)(f.m, {
           confettiTriggerRef: n,
           setConfettiCount: O,
           setShouldFireConfetti: S,

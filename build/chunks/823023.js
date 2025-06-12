@@ -33,7 +33,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,8 +44,8 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -64,12 +64,12 @@ let p = 200,
       duration: 200
     }
   },
-  m = _(d({}, h), {
+  m = f(d({}, h), {
     config: {
       duration: 50
     }
   }),
-  g = _(d({}, h), {
+  g = f(d({}, h), {
     config: (e, t) => t ? {
       duration: 800
     } : {
@@ -82,7 +82,7 @@ function E(e) {
     readyState: t,
     placeholderImg: n,
     placeholderStyle: s
-  } = e, u = t === l.zo9.LOADING, [f] = i.useState(() => Date.now()), _ = t === l.zo9.READY && Date.now() - f < p, g = (0, o.Yzy)(u && null != n, _ ? m : h);
+  } = e, u = t === l.zo9.LOADING, [_] = i.useState(() => Date.now()), f = t === l.zo9.READY && Date.now() - _ < p, g = (0, o.Yzy)(u && null != n, f ? m : h);
   return (0, r.jsx)(r.Fragment, {
     children: g((e, t) => t && (0, r.jsx)(a.animated.img, {
       style: d({}, s, e),
@@ -99,8 +99,8 @@ function b(e) {
     aspectRatio: n,
     placeholder: u,
     placeholderVersion: d,
-    placeholderStyle: f,
-    children: _
+    placeholderStyle: _,
+    children: f
   } = e, p = t === l.zo9.LOADING, [h] = i.useState(p), [m, b] = i.useState(!1), y = (0, s.L)(u, d, h);
   i.useEffect(() => {
     let e = setTimeout(() => {
@@ -116,10 +116,10 @@ function b(e) {
     style: {
       aspectRatio: n
     },
-    children: [_, null != y && (0, r.jsx)(E, {
+    children: [f, null != y && (0, r.jsx)(E, {
       readyState: t,
       placeholderImg: y,
-      placeholderStyle: f
+      placeholderStyle: _
     }), O((e, t) => t && (0, r.jsx)(a.animated.div, {
       style: e,
       className: c.imageLoadingOverlay,

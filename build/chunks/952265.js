@@ -49,7 +49,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,8 +60,8 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -115,12 +115,12 @@ async function O(e) {
     a = null != t.modalKey ? t.modalKey : i()(),
     o = !1,
     s = setTimeout(() => {
-      o = !0, v(m, _(d({}, r), {
+      o = !0, v(m, f(d({}, r), {
         modalKey: a
       }), n)
     }, 300),
     l = await e();
-  return clearTimeout(s), o ? L(a, n) && S(a, l, r.onCloseRequest, r.onCloseCallback, n) : v(l, _(d({}, r), {
+  return clearTimeout(s), o ? L(a, n) && S(a, l, r.onCloseRequest, r.onCloseCallback, n) : v(l, f(d({}, r), {
     modalKey: a
   }), n), a
 }
@@ -136,7 +136,7 @@ function v(e) {
       onCloseCallback: c,
       backdropStyle: u
     } = t,
-    f = null != r ? r : i()();
+    _ = null != r ? r : i()();
   return (0, o.j)(() => {
     y.setState(t => {
       let r = t[n];
@@ -144,20 +144,20 @@ function v(e) {
         let {
           key: t
         } = e;
-        return t === f
-      }) ? t : _(d({}, t), {
+        return t === _
+      }) ? t : f(d({}, t), {
         [n]: [...r, {
-          key: f,
+          key: _,
           Layer: s,
           render: e,
-          onCloseRequest: null != l ? l : () => I(f, n),
+          onCloseRequest: null != l ? l : () => I(_, n),
           onCloseCallback: c,
           instant: a,
           backdropStyle: u
         }]
       })
     })
-  }), f
+  }), _
 }
 
 function I(e) {
@@ -170,7 +170,7 @@ function I(e) {
       return n === e
     }) : null;
   (0, o.j)(() => {
-    y.setState(n => void 0 === n[t] ? n : _(d({}, n), {
+    y.setState(n => void 0 === n[t] ? n : f(d({}, n), {
       [t]: n[t].filter(t => {
         let {
           key: n
@@ -217,8 +217,8 @@ function T(e) {
 function S(e, t, n, r) {
   let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : E();
   (0, o.j)(() => {
-    y.setState(a => void 0 === a[i] ? a : _(d({}, a), {
-      [i]: a[i].map(a => a.key === e ? _(d({}, a), {
+    y.setState(a => void 0 === a[i] ? a : f(d({}, a), {
+      [i]: a[i].map(a => a.key === e ? f(d({}, a), {
         render: t,
         onCloseRequest: null == n ? () => I(e, i) : n,
         onCloseCallback: r

@@ -47,7 +47,7 @@ e.exports = function(e) {
     d = e.inherit(u, {
       illegal: /\n/
     }),
-    f = {
+    _ = {
       className: "string",
       begin: /\$"/,
       end: '"',
@@ -58,7 +58,7 @@ e.exports = function(e) {
         begin: /\}\}/
       }, e.BACKSLASH_ESCAPE, d]
     },
-    _ = {
+    f = {
       className: "string",
       begin: /\$@"/,
       end: '"',
@@ -70,7 +70,7 @@ e.exports = function(e) {
         begin: '""'
       }, u]
     },
-    p = e.inherit(_, {
+    p = e.inherit(f, {
       illegal: /\n/,
       contains: [{
         begin: /\{\{/
@@ -80,11 +80,11 @@ e.exports = function(e) {
         begin: '""'
       }, d]
     });
-  u.contains = [_, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.C_BLOCK_COMMENT_MODE], d.contains = [p, f, c, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.inherit(e.C_BLOCK_COMMENT_MODE, {
+  u.contains = [f, _, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.C_BLOCK_COMMENT_MODE], d.contains = [p, _, c, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.inherit(e.C_BLOCK_COMMENT_MODE, {
     illegal: /\n/
   })];
   let h = {
-      variants: [s, _, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
+      variants: [s, f, _, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
     },
     m = {
       begin: "<",

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Gq: () => _,
+  Gq: () => f,
   SN: () => E,
   Zu: () => h,
   gA: () => p,
@@ -18,11 +18,11 @@ var r = n(544891),
   c = n(287941),
   u = n(235894),
   d = n(981631);
-let f = {
+let _ = {
     [l.D1]: d.ANM.FETCH_MESSAGE_CONFETTI_ENTITLEMENT,
     [l.FX]: d.ANM.FETCH_HD_STREAMING_ENTITLEMENT
   },
-  _ = async e => {
+  f = async e => {
     a.Z.dispatch({
       type: "CONSUMABLES_PRICE_FETCH_STARTED",
       skuId: e
@@ -56,13 +56,13 @@ let f = {
     if (a.Z.dispatch({
         type: "CONSUMABLES_ENTITLEMENT_FETCH_STARTED",
         skuId: e
-      }), null == f[e]) throw a.Z.dispatch({
+      }), null == _[e]) throw a.Z.dispatch({
       type: "CONSUMABLES_ENTITLEMENT_FETCH_FAILED",
       skuId: e
     }), Error("Invalid consumable skuId: ".concat(e));
     try {
       let t = await r.tn.get({
-          url: f[e],
+          url: _[e],
           rejectWithError: !1
         }),
         n = null != t.body.entitlement ? o.Z.createFromServer(t.body.entitlement) : null,

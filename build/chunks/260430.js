@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(481060),
   u = n(211266),
   d = n(713938),
-  f = n(388032),
-  _ = n(965323);
+  _ = n(388032),
+  f = n(965323);
 
 function p(e) {
   let {
@@ -23,17 +23,17 @@ function p(e) {
     isFake: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: _.scope,
+    className: f.scope,
     children: [i ? (0, r.jsx)(c.k$p, {
       size: "md",
       color: "currentColor",
-      className: a()(_.icon, _.fakeScopeIcon)
+      className: a()(f.icon, f.fakeScopeIcon)
     }) : (0, r.jsx)(c.owK, {
       size: "md",
       color: "currentColor",
-      className: a()(_.icon, _.scopeIcon)
+      className: a()(f.icon, f.scopeIcon)
     }), (0, r.jsxs)("div", {
-      className: _.scopeInner,
+      className: f.scopeInner,
       children: [(0, r.jsx)(l.x, {
         variant: "text-md/normal",
         color: i ? "text-muted" : void 0,
@@ -60,14 +60,14 @@ function h(e) {
   } = e, b = (0, u.Z)(() => d.ZW[Math.floor(Math.random() * d.ZW.length)]);
   if (0 === i.length) return null;
   let y = b(),
-    O = g ? f.t.PZpY9f : f.t["1Hz+Sk"],
+    O = g ? _.t.PZpY9f : _.t["1Hz+Sk"],
     v = h === o.Y.USER_INSTALL && l.includes(s.x.APPLICATIONS_COMMANDS);
   return (0, r.jsxs)("div", {
-    className: a()(_.scopes, E ? _.noDivider : void 0),
+    className: a()(f.scopes, E ? f.noDivider : void 0),
     children: [(0, r.jsx)(c.X6q, {
       variant: "heading-sm/normal",
-      className: _.sectionLabel,
-      children: f.intl.format(O, {
+      className: f.sectionLabel,
+      children: _.intl.format(O, {
         application: null != (t = null == n ? void 0 : n.name) ? t : ""
       })
     }), i.map(e => (0, d.CI)(e, i).map((t, n) => {
@@ -77,7 +77,7 @@ function h(e) {
         error: 0 === n ? null == m || null == (i = m[e]) ? void 0 : i[0] : void 0
       }, "".concat(e, "-").concat(n))
     })).flat(), v && (0, r.jsx)(p, {
-      text: f.intl.string(f.t.Ls2XRk)
+      text: _.intl.string(_.t.Ls2XRk)
     }), (0, r.jsx)(p, {
       text: y,
       isFake: !0

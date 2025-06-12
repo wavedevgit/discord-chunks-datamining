@@ -3,7 +3,7 @@
 n.d(t, {
   DG: () => o,
   me: () => s,
-  nP: () => f,
+  nP: () => _,
   sA: () => c,
   wm: () => u,
   zO: () => l
@@ -100,7 +100,7 @@ let d = (0, r.B)({
   }]
 });
 
-function f(e) {
+function _(e) {
   return d.getCurrentConfig({
     location: e
   }, {

@@ -84,9 +84,9 @@ async function u(e) {
       aborted: !0
     })
   });
-  let f = await u.uploadFilesSimple(o);
+  let _ = await u.uploadFilesSimple(o);
   if (!u._aborted) return {
-    attachments: f,
+    attachments: _,
     uploader: u
   }
 }

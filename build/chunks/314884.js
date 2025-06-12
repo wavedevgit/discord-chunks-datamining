@@ -46,39 +46,39 @@ function u(e, t) {
   }), e
 }
 let d = !1,
-  f = !1,
-  _ = {};
+  _ = !1,
+  f = {};
 
 function p() {
-  f = !0
+  _ = !0
 }
 
 function h(e) {
   let {
     guildBoostSlots: t
   } = e;
-  _ = {}, t.forEach(e => {
-    _[e.id] = e
-  }), f = !1, d = !0
+  f = {}, t.forEach(e => {
+    f[e.id] = e
+  }), _ = !1, d = !0
 }
 
 function m(e) {
   let {
     guildBoostSlot: t
   } = e;
-  _ = u(l({}, _), {
+  f = u(l({}, f), {
     [t.id]: t
   })
 }
 
 function g() {
-  _ = {}, d = !1, f = !1
+  f = {}, d = !1, _ = !1
 }
 
 function E() {
   let e = {};
-  for (let t of Object.values(_)) e[t.id] = t, t.subscription = o.ZP.getSubscriptionById(t.subscriptionId);
-  _ = e
+  for (let t of Object.values(f)) e[t.id] = t, t.subscription = o.ZP.getSubscriptionById(t.subscriptionId);
+  f = e
 }
 class b extends(r = i.ZP.Store) {
   initialize() {
@@ -88,13 +88,13 @@ class b extends(r = i.ZP.Store) {
     return d
   }
   get isFetching() {
-    return f
-  }
-  get boostSlots() {
     return _
   }
+  get boostSlots() {
+    return f
+  }
   getGuildBoostSlot(e) {
-    return _[e]
+    return f[e]
   }
 }
 s(b, "displayName", "GuildBoostSlotStore");

@@ -4,8 +4,8 @@ n.d(t, {
   BB: () => j,
   C$: () => A,
   H9: () => S,
-  Kd: () => M,
-  d2: () => k,
+  Kd: () => k,
+  d2: () => M,
   dU: () => I
 }), n(388685), n(704826), n(35282), n(415506), n(539854), n(781311);
 var r = n(921738),
@@ -18,7 +18,7 @@ var r = n(921738),
   u = n(378799),
   d = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,14 +27,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -206,7 +206,7 @@ function x(e) {
   return e + "Key"
 }
 
-function k(e) {
+function M(e) {
   let t = {
     keyCode: 0,
     key: "",
@@ -218,8 +218,8 @@ function k(e) {
   };
   return null == e ? [] : e.reduce((e, n) => {
     let r = S(n),
-      i = _({}, t);
-    if (null == r) return e.push(h(_({}, i), {
+      i = f({}, t);
+    if (null == r) return e.push(h(f({}, i), {
       combo: n
     })), e;
     if (D.test(r) && L(r)) return t[x(r)] = !0, e.map(e => (e[x(r)] = !0, e));
@@ -230,7 +230,7 @@ function k(e) {
   }, [])
 }
 
-function M(e) {
+function k(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : I(),
     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : d.MoX.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.Z.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {

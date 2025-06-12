@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(539854), n(388685), n(997841);
 var r, i = n(348327),
   a = n.n(i),
@@ -11,8 +11,8 @@ var r, i = n(348327),
   c = n(570140),
   u = n(317381),
   d = n(212517),
-  f = n(676035),
-  _ = n(594190),
+  _ = n(676035),
+  f = n(594190),
   p = n(406066),
   h = n(768419),
   m = n(695346),
@@ -66,7 +66,7 @@ let A = [],
 function C() {
   let e = [],
     t = m.Ok.getSetting();
-  null != t && ("0" === t.expiresAtMs || new Date(Number(t.expiresAtMs)).getTime() - new Date().getTime() > 0) && e.push((0, f.I)(t));
+  null != t && ("0" === t.expiresAtMs || new Date(Number(t.expiresAtMs)).getTime() - new Date().getTime() > 0) && e.push((0, _.I)(t));
   let n = p.Z.getActivities();
   e.push(...n);
   let r = b.Z.getStream();
@@ -78,7 +78,7 @@ function C() {
     let [, n] = t;
     null != n.application_id && (i.add(n.name), e.push(n))
   });
-  let o = _.ZP.getVisibleGame(),
+  let o = f.ZP.getVisibleGame(),
     l = null != o && null != o.name && i.has(o.name),
     c = null != o && o.isLauncher,
     u = null != E.Z.getCurrentUserActiveStream(),
@@ -145,9 +145,9 @@ function L() {
 function x() {
   L(), C()
 }
-class k extends(r = l.ZP.Store) {
+class M extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(_.ZP, u.ZP, b.Z, E.Z, h.Z, g.Z, y.Z), this.syncWith([p.Z], () => C())
+    this.waitFor(f.ZP, u.ZP, b.Z, E.Z, h.Z, g.Z, y.Z), this.syncWith([p.Z], () => C())
   }
   getActivities() {
     return A
@@ -173,8 +173,8 @@ class k extends(r = l.ZP.Store) {
     return null
   }
 }
-v(k, "displayName", "LocalActivityStore");
-let M = new k(c.Z, {
+v(M, "displayName", "LocalActivityStore");
+let k = new M(c.Z, {
   OVERLAY_INITIALIZE: D,
   START_SESSION: R,
   LOCAL_ACTIVITY_UPDATE: P,

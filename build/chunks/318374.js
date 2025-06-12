@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(239091),
   d = n(751688),
-  f = n(5192),
-  _ = n(51144),
+  _ = n(5192),
+  f = n(51144),
   p = n(223390);
 
 function h(e, t, n) {
@@ -98,9 +98,9 @@ function O(e) {
     onFocus: R,
     onUserClick: P,
     onUserPopoutRequestClose: w
-  } = e, [D, L] = i.useState(!1), x = b(O), k = i.useRef(null);
+  } = e, [D, L] = i.useState(!1), x = b(O), M = i.useRef(null);
 
-  function M() {
+  function k() {
     return (0, r.jsx)(c.VqE, {
       className: p.popoutWrapper,
       children: (0, r.jsx)(c.Ttm, {
@@ -109,7 +109,7 @@ function O(e) {
           user: e,
           guildId: s,
           channelId: h,
-          nick: f.ZP.getNickname(s, h, e),
+          nick: _.ZP.getNickname(s, h, e),
           disablePopout: "function" == typeof N ? N(e.id) : N,
           onClick: P,
           onPopoutRequestClose: () => {
@@ -138,7 +138,7 @@ function O(e) {
       i = e > 0 && !S,
       u = Math.min(t.length, a) - 1,
       d = l()(t).take(a).map((e, t) => {
-        let n = _.ZP.getName(e),
+        let n = f.ZP.getName(e),
           a = t === u && !i,
           l = o()(p.avatar, x, a && p.isLast);
         return A ? (0, r.jsx)("div", {
@@ -161,13 +161,13 @@ function O(e) {
     if (i) {
       let e = null != v ? v : y(O);
       d[d.length - 1] = (0, r.jsx)(c.yRy, {
-        targetElementRef: k,
-        renderPopout: M,
+        targetElementRef: M,
+        renderPopout: k,
         shouldShow: D,
         position: "bottom",
         onRequestClose: () => L(!1),
         children: () => (0, r.jsx)(c.zxk, {
-          buttonRef: k,
+          buttonRef: M,
           className: o()(p.overflow, x, T),
           onFocus: R,
           onClick: e => {

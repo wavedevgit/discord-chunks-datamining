@@ -3,7 +3,7 @@
 n.d(t, {
   F6: () => p,
   ZP: () => g,
-  cO: () => _,
+  cO: () => f,
   le: () => h,
   mA: () => m,
   pT: () => d
@@ -27,12 +27,12 @@ function d(e, t, n) {
   })
 }
 
-function f(e, t, n) {
+function _(e, t, n) {
   return d(e.recipients, t, n)
 }
 
-function _(e) {
-  return (0, r.e7)([o.default, a.Z], () => null != e && e.isMultiUserDM() ? f(e, o.default, a.Z) : null)
+function f(e) {
+  return (0, r.e7)([o.default, a.Z], () => null != e && e.isMultiUserDM() ? _(e, o.default, a.Z) : null)
 }
 
 function p(e, t, n) {
@@ -49,7 +49,7 @@ function p(e, t, n) {
       return r ? "@".concat(d) : d;
     case c.d4z.GROUP_DM:
       if ("" !== e.name) return e.name;
-      return f(e, t, n);
+      return _(e, t, n);
     case c.d4z.GUILD_ANNOUNCEMENT:
     case c.d4z.GUILD_TEXT:
     case c.d4z.GUILD_FORUM:

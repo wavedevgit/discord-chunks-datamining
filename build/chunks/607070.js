@@ -11,9 +11,9 @@ var r, i = n(442837),
   c = n(581883),
   u = n(12647),
   d = n(981631),
-  f = n(959517);
+  _ = n(959517);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -163,11 +163,11 @@ function x() {
   (y = p({}, y)).submitButtonEnabled = !y.submitButtonEnabled
 }
 
-function k() {
+function M() {
   (y = p({}, y)).syncProfileThemeWithUserTheme = !y.syncProfileThemeWithUserTheme
 }
 
-function M(e) {
+function k(e) {
   if (y.systemPrefersReducedMotion === e.systemPrefersReducedMotion) return !1;
   y = m(p({}, y), {
     systemPrefersReducedMotion: e.systemPrefersReducedMotion
@@ -201,14 +201,14 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   var t;
   return y = m(p({}, y), {
     systemForcedColors: null != (t = e.systemForcedColors) ? t : "none"
   }), !0
 }
 
-function V() {
+function F() {
   y.forcedColorsModalSeen = !0
 }
 
@@ -237,7 +237,7 @@ function Y(e) {
 }
 class W extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(c.Z), isNaN((y = p({}, b, null != e ? e : null)).fontSize) && (y.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > f.fP.indexOf(null != y.messageGroupSpacing ? y.messageGroupSpacing : -1) && (y.messageGroupSpacing = null)
+    this.waitFor(c.Z), isNaN((y = p({}, b, null != e ? e : null)).fontSize) && (y.fontSize = d.yqN.FONT_SIZE_DEFAULT), 0 > _.fP.indexOf(null != y.messageGroupSpacing ? y.messageGroupSpacing : -1) && (y.messageGroupSpacing = null)
   }
   get fontScale() {
     return y.fontSize / d.yqN.FONT_SIZE_DEFAULT * 100
@@ -290,14 +290,14 @@ class W extends(r = i.ZP.DeviceSettingsStore) {
     return y.keyboardNavigationExplainerModalSeen
   }
   get messageGroupSpacing() {
-    return null != y.messageGroupSpacing ? y.messageGroupSpacing : l.jU.getSetting() ? f.c8 : f.pq
+    return null != y.messageGroupSpacing ? y.messageGroupSpacing : l.jU.getSetting() ? _.c8 : _.pq
   }
   get isMessageGroupSpacingIncreased() {
-    let e = l.jU.getSetting() ? f.c8 : f.pq;
+    let e = l.jU.getSetting() ? _.c8 : _.pq;
     return this.messageGroupSpacing > e
   }
   get isMessageGroupSpacingDecreased() {
-    let e = l.jU.getSetting() ? f.c8 : f.pq;
+    let e = l.jU.getSetting() ? _.c8 : _.pq;
     return this.messageGroupSpacing < e
   }
   get isSubmitButtonEnabled() {
@@ -347,7 +347,7 @@ class W extends(r = i.ZP.DeviceSettingsStore) {
     return y
   }
 }
-_(W, "displayName", "AccessibilityStore"), _(W, "persistKey", "AccessibilityStore"), _(W, "migrations", [() => {
+f(W, "displayName", "AccessibilityStore"), f(W, "persistKey", "AccessibilityStore"), f(W, "migrations", [() => {
   let e = "a11yFontScale",
     t = "a11yZoom",
     n = "a11yColorblindMode",
@@ -418,18 +418,18 @@ let K = new W(s.Z, {
   ACCESSIBILITY_LOW_CONTRAST_TOGGLE: R,
   ACCESSIBILITY_SET_SATURATION: w,
   ACCESSIBILITY_DESATURATE_ROLES_TOGGLE: D,
-  ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: F,
+  ACCESSIBILITY_SYSTEM_COLOR_PREFERENCES_CHANGED: V,
   ACCESSIBILITY_SYSTEM_PREFERS_CONTRAST_CHANGED: G,
-  ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: M,
+  ACCESSIBILITY_SYSTEM_PREFERS_REDUCED_MOTION_CHANGED: k,
   ACCESSIBILITY_SYSTEM_PREFERS_CROSSFADES_CHANGED: j,
   ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION: U,
   ACCESSIBILITY_SET_SYNC_FORCED_COLORS: P,
   ACCESSIBILITY_SET_ALWAYS_SHOW_LINK_DECORATIONS: B,
   ACCESSIBILITY_SET_ROLE_STYLE: L,
-  ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN: V,
+  ACCESSIBILITY_FORCED_COLORS_MODAL_SEEN: F,
   KEYBOARD_NAVIGATION_EXPLAINER_MODAL_SEEN: Z,
   ACCESSIBILITY_SET_MESSAGE_GROUP_SPACING: H,
   ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: x,
-  ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE: k,
+  ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE: M,
   ACCESSIBILITY_SET_CONTRAST: Y
 })

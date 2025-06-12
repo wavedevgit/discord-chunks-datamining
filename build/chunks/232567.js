@@ -17,8 +17,8 @@ var r = n(512722),
   c = n(881052),
   u = n(598077),
   d = n(594174),
-  f = n(573261),
-  _ = n(981631);
+  _ = n(573261),
+  f = n(981631);
 let p = new o.Yd("UserProfileModalActionCreators");
 
 function h() {
@@ -27,7 +27,7 @@ function h() {
       withAnalyticsToken: t = !1
     } = e;
   return s.tn.get({
-    url: _.ANM.ME,
+    url: f.ANM.ME,
     query: {
       with_analytics_token: t
     },
@@ -43,8 +43,8 @@ function h() {
 function m() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
     t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-  return f.Z.patch({
-    url: _.ANM.USER_AGREEMENTS,
+  return _.Z.patch({
+    url: f.ANM.USER_AGREEMENTS,
     trackedActionData: {
       event: a.a.USER_ACCEPT_AGREEMENTS
     },
@@ -62,7 +62,7 @@ function g(e, t) {
   i()(null != n, "setFlag: user cannot be undefined");
   let r = t ? n.flags | e : n.flags & ~e;
   return s.tn.patch({
-    url: _.ANM.ME,
+    url: f.ANM.ME,
     oldFormErrors: !0,
     body: {
       flags: r
@@ -74,7 +74,7 @@ function g(e, t) {
 function E(e) {
   let t = d.default.getUser(e);
   return null != t ? Promise.resolve(t) : s.tn.get({
-    url: _.ANM.USER(e),
+    url: f.ANM.USER(e),
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(t => (l.Z.dispatch({
@@ -92,7 +92,7 @@ async function b(e) {
     connectionsRoleId: o,
     joinRequestId: u,
     abortSignal: d
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, f = arguments.length > 2 ? arguments[2] : void 0, h = Date.now();
+  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, _ = arguments.length > 2 ? arguments[2] : void 0, h = Date.now();
   l.Z.dispatch({
     type: "USER_PROFILE_FETCH_START",
     userId: e,
@@ -101,7 +101,7 @@ async function b(e) {
   });
   try {
     let c = await s.tn.get({
-      url: _.ANM.USER_PROFILE(e),
+      url: f.ANM.USER_PROFILE(e),
       query: {
         type: t,
         with_mutual_guilds: n,
@@ -114,7 +114,7 @@ async function b(e) {
       signal: d,
       rejectWithError: !0
     });
-    null == f || f(c.body, a), l.Z.dispatch({
+    null == _ || _(c.body, a), l.Z.dispatch({
       type: "USER_UPDATE",
       user: c.body.user
     }), l.Z.dispatch({
@@ -143,7 +143,7 @@ async function y(e, t) {
   });
   try {
     let n = await s.tn.get({
-      url: _.ANM.USER_RELATIONSHIPS(e),
+      url: f.ANM.USER_RELATIONSHIPS(e),
       oldFormErrors: !0,
       signal: t,
       rejectWithError: !1

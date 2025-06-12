@@ -17,8 +17,8 @@ function c(e) {
       return -1 !== e.input.indexOf(n, t)
     },
     d = t,
-    f = "<>",
-    _ = "</>",
+    _ = "<>",
+    f = "</>",
     p = /<[A-Za-z0-9\\._:-]+\s*\/>/,
     h = /<[A-Za-z0-9\\._:-]+/,
     m = /\/[A-Za-z0-9\\._:-]+>|\/>/,
@@ -183,13 +183,13 @@ function c(e) {
         _: [...i, ...a]
       }
     },
-    k = {
+    M = {
       label: "use_strict",
       className: "meta",
       relevance: 10,
       begin: /^\s*['"]use (strict|asm)['"]/
     },
-    M = {
+    k = {
       variants: [{
         match: [/function/, /\s+/, d, /(?=\s*\()/]
       }, {
@@ -225,7 +225,7 @@ function c(e) {
       className: "property",
       relevance: 0
     },
-    F = {
+    V = {
       match: [/get|set/, /\s+/, d, /(?=\()/],
       className: {
         1: "keyword",
@@ -235,9 +235,9 @@ function c(e) {
         begin: /\(\)/
       }, D]
     },
-    V = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
+    F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
     Z = {
-      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(V)],
+      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(F)],
       keywords: "async",
       className: {
         1: "keyword",
@@ -258,7 +258,7 @@ function c(e) {
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), k, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, C, {
+    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, C, {
       match: /\$\d+/
     }, v, x, {
       scope: "attr",
@@ -270,7 +270,7 @@ function c(e) {
       relevance: 0,
       contains: [C, e.REGEXP_MODE, {
         className: "function",
-        begin: V,
+        begin: F,
         returnBegin: !0,
         end: "\\s*=>",
         contains: [{
@@ -299,8 +299,8 @@ function c(e) {
         relevance: 0
       }, {
         variants: [{
-          begin: f,
-          end: _
+          begin: _,
+          end: f
         }, {
           match: p
         }, {
@@ -316,7 +316,7 @@ function c(e) {
           contains: ["self"]
         }]
       }]
-    }, M, {
+    }, k, {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
@@ -338,7 +338,7 @@ function c(e) {
         1: "title.function"
       },
       contains: [D]
-    }, G, j, L, F, {
+    }, G, j, L, V, {
       match: /\$[(.]/
     }]
   }
@@ -355,7 +355,7 @@ e.exports = function(e) {
         3: "title.class"
       }
     },
-    f = {
+    _ = {
       beginKeywords: "interface",
       end: /\{/,
       excludeEnd: !0,
@@ -365,7 +365,7 @@ e.exports = function(e) {
       },
       contains: [a.exports.CLASS_REFERENCE]
     },
-    _ = {
+    f = {
       className: "meta",
       relevance: 10,
       begin: /^\s*['"]use strict['"]/
@@ -392,7 +392,7 @@ e.exports = function(e) {
     b = Object.assign({}, E, {
       match: i.concat(o, i.lookahead(/\s*\?:/))
     });
-  return a.exports.PARAMS_CONTAINS.push([a.exports.CLASS_REFERENCE, E, b]), a.contains = a.contains.concat([m, d, f, b]), g(a, "shebang", e.SHEBANG()), g(a, "use_strict", _), a.contains.find(e => "func.def" === e.label).relevance = 0, Object.assign(a, {
+  return a.exports.PARAMS_CONTAINS.push([a.exports.CLASS_REFERENCE, E, b]), a.contains = a.contains.concat([m, d, _, b]), g(a, "shebang", e.SHEBANG()), g(a, "use_strict", f), a.contains.find(e => "func.def" === e.label).relevance = 0, Object.assign(a, {
     name: "TypeScript",
     aliases: ["ts", "tsx", "mts", "cts"]
   }), a

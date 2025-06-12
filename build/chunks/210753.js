@@ -20,7 +20,7 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = 20;
-class f {
+class _ {
   request(e) {
     this._pending.has(e) || this._fetched.has(e) || (this._pending.add(e), this._flushHandler.delay(!1))
   }
@@ -36,11 +36,11 @@ class f {
     u(this, "_fetched", new Set), u(this, "_pending", new Set), u(this, "_flushHandler", new s.sW(0, () => this._flush()))
   }
 }
-let _ = new f;
+let f = new _;
 
 function p(e, t) {
   r.useEffect(() => {
-    null != e && _.request(e)
+    null != e && f.request(e)
   }, [e]);
   let n = r.useMemo(() => null != t ? {
     width: t.coverImageWidth,

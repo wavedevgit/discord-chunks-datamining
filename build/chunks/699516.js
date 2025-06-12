@@ -12,7 +12,7 @@ var r, i = n(392711),
   u = n(594174),
   d = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,14 +21,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -81,18 +81,18 @@ function D(e) {
 }
 
 function L(e) {
-  g = _({}, e.relationships), w()
+  g = f({}, e.relationships), w()
 }
 
 function x(e) {
   let t = g[e.relationship.id];
-  g = h(_({}, g), {
+  g = h(f({}, g), {
     [e.relationship.id]: e.relationship.type
-  }), null != e.relationship.nickname && (E = h(_({}, E), {
+  }), null != e.relationship.nickname && (E = h(f({}, E), {
     [e.relationship.id]: e.relationship.nickname
-  })), null != e.relationship.since && (b = h(_({}, b), {
+  })), null != e.relationship.since && (b = h(f({}, b), {
     [e.relationship.id]: e.relationship.since
-  })), null != e.relationship.originApplicationId && (I = h(_({}, I), {
+  })), null != e.relationship.originApplicationId && (I = h(f({}, I), {
     [e.relationship.id]: e.relationship.originApplicationId
   })), e.relationship.isSpamRequest ? y.add(e.relationship.id) : y.delete(e.relationship.id), e.relationship.userIgnored ? (O.add(e.relationship.id), e.relationship.type === d.OGo.PENDING_INCOMING ? v.add(e.relationship.id) : e.relationship.type === d.OGo.FRIEND && v.delete(e.relationship.id)) : (O.delete(e.relationship.id), v.delete(e.relationship.id)), w(), e.relationship.type === d.OGo.FRIEND && t === d.OGo.PENDING_OUTGOING && s.Z.dispatch({
     type: "FRIEND_REQUEST_ACCEPTED",
@@ -100,21 +100,21 @@ function x(e) {
   })
 }
 
-function k(e) {
-  g = _({}, g), delete g[e.relationship.id], null != E[e.relationship.id] && (E = _({}, E), delete E[e.relationship.id]), null != b[e.relationship.id] && (b = _({}, b), delete b[e.relationship.id]), null != I[e.relationship.id] && (I = _({}, I), delete I[e.relationship.id]), e.relationship.userIgnored || (O.delete(e.relationship.id), v.delete(e.relationship.id)), y.delete(e.relationship.id), w()
+function M(e) {
+  g = f({}, g), delete g[e.relationship.id], null != E[e.relationship.id] && (E = f({}, E), delete E[e.relationship.id]), null != b[e.relationship.id] && (b = f({}, b), delete b[e.relationship.id]), null != I[e.relationship.id] && (I = f({}, I), delete I[e.relationship.id]), e.relationship.userIgnored || (O.delete(e.relationship.id), v.delete(e.relationship.id)), y.delete(e.relationship.id), w()
 }
 
-function M(e) {
+function k(e) {
   let {
     relationship: t
   } = e;
-  g = h(_({}, g), {
+  g = h(f({}, g), {
     [t.id]: t.type
   }), null == t.since ? delete b[t.id] : b[t.id] = t.since, null == t.nickname ? delete E[t.id] : E[t.id] = t.nickname, t.isSpamRequest ? y.add(t.id) : y.delete(t.id), null != T[t.id] && delete T[t.id], null == t.originApplicationId ? delete I[t.id] : I[t.id] = t.originApplicationId, t.userIgnored ? (O.add(t.id), t.type === d.OGo.PENDING_INCOMING && v.add(t.id)) : (O.delete(t.id), v.delete(t.id)), w()
 }
 
 function j(e) {
-  g = _({}, g), c.default.keys(g).forEach(e => {
+  g = f({}, g), c.default.keys(g).forEach(e => {
     g[e] === d.OGo.PENDING_INCOMING && (delete g[e], y.delete(e), v.delete(e), delete T[e])
   }), w()
 }
@@ -219,13 +219,13 @@ class G extends(r = o.ZP.Store) {
     if (null != T[e]) return T[e].expiry < Date.now() ? void delete T[e] : T[e].isStranger
   }
 }
-f(G, "displayName", "RelationshipStore");
+_(G, "displayName", "RelationshipStore");
 let B = new G(s.Z, {
   CONNECTION_OPEN: D,
   OVERLAY_INITIALIZE: L,
   RELATIONSHIP_ADD: x,
-  RELATIONSHIP_REMOVE: k,
-  RELATIONSHIP_UPDATE: M,
+  RELATIONSHIP_REMOVE: M,
+  RELATIONSHIP_UPDATE: k,
   RELATIONSHIP_PENDING_INCOMING_REMOVED: j,
   UPDATE_STRANGER_STATUS: U
 })

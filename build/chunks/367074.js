@@ -14,8 +14,8 @@ var r = n(913527),
   c = n(594174),
   u = n(78839),
   d = n(431),
-  f = n(580130),
-  _ = n(74538),
+  _ = n(580130),
+  f = n(74538),
   p = n(937579),
   h = n(617799),
   m = n(84053),
@@ -45,10 +45,10 @@ function N(e) {
   if (null != n) {
     let e = n.hasPremiumAtLeast(T.p9.TIER_2),
       t = c.default.getCurrentUser(),
-      r = !!(null == n ? void 0 : n.hasActiveTrial) && _.ZP.isPremiumExactly(t, T.p9.TIER_0);
+      r = !!(null == n ? void 0 : n.hasActiveTrial) && f.ZP.isPremiumExactly(t, T.p9.TIER_0);
     if (e || r) return !1
   }
-  return !(a.tq && f.Z.isFractionalPremiumActive())
+  return !(a.tq && _.Z.isFractionalPremiumActive())
 }
 
 function C() {
@@ -77,8 +77,8 @@ function C() {
       mostRecentSubscription: u.ZP.getMostRecentPremiumTypeSubscription(),
       premiumSubscription: u.ZP.getPremiumTypeSubscription()
     })),
-    f = (0, b.N)(),
-    _ = (0, E.Ng)(),
+    _ = (0, b.N)(),
+    f = (0, E.Ng)(),
     p = new Date(null != (e = null == r ? void 0 : r.endDate) ? e : 0).valueOf(),
     O = Date.now(),
     I = O > p;
@@ -91,7 +91,7 @@ function C() {
       premiumSubscription: d,
       mostRecentSubscription: c
     }),
-    A = T && S && null == f && null != r && !n && null == _,
+    A = T && S && null == _ && null != r && !n && null == f,
     {
       enabled: C
     } = h.Z.useExperiment({
@@ -118,7 +118,7 @@ async function R() {
       enabled: o
     } = (0, g.aW)(),
     {
-      enabled: f
+      enabled: _
     } = (0, m.oW)(),
     {
       enabled: E
@@ -127,8 +127,8 @@ async function R() {
     }, {
       autoTrackExposure: !1
     }),
-    b = !a.tq || f;
-  if (r || i || !o || t && !E || !b || (d.Z.shouldFetchOffer() && !(0, _.I5)(n) && await (0, p.T)("BogoPromotionUtils"), d.Z.hasFetchedOffer() && (d.Z.hasAnyUnexpiredOffer() || d.Z.hasAnyUnexpiredDiscountOffer()))) return !1;
+    b = !a.tq || _;
+  if (r || i || !o || t && !E || !b || (d.Z.shouldFetchOffer() && !(0, f.I5)(n) && await (0, p.T)("BogoPromotionUtils"), d.Z.hasFetchedOffer() && (d.Z.hasAnyUnexpiredOffer() || d.Z.hasAnyUnexpiredDiscountOffer()))) return !1;
   !u.ZP.hasFetchedMostRecentPremiumTypeSubscription() && (null == (e = c.default.getCurrentUser()) ? void 0 : e.hasPurchasedFlag(T.in.PREMIUM_TIER_2)) && await (0, s.ou)(), u.ZP.hasFetchedSubscriptions() || await (0, s.jg)();
   let y = u.ZP.getMostRecentPremiumTypeSubscription();
   return N({

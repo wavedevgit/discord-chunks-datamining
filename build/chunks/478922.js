@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -72,7 +72,7 @@ function m(e, t) {
 function g(e, t, n) {
   let a = (0, c.G6)(e),
     d = new Map,
-    _ = new n(e => {
+    f = new n(e => {
       e.forEach(e => {
         var t;
         let {
@@ -100,15 +100,15 @@ function g(e, t, n) {
         padding: D,
         paddingVertical: L,
         paddingHorizontal: x,
-        fade: k = !1,
-        className: M,
+        fade: M = !1,
+        className: k,
         style: j,
         maxContentWidth: U,
         renderAccessory: G,
         onItemVisibilityChange: B
       } = n,
-      F = h(n, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]);
-    let V = i.useRef(null),
+      V = h(n, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]);
+    let F = i.useRef(null),
       Z = i.useRef(null),
       H = i.useRef({}),
       [Y, W] = i.useState(!1),
@@ -119,7 +119,7 @@ function g(e, t, n) {
       } = (0, c.T4)();
     (0, c.tT)({
       scrollerRef: K,
-      className: M,
+      className: k,
       specs: a,
       orientation: "vertical",
       dir: b
@@ -164,31 +164,31 @@ function g(e, t, n) {
       ref: K,
       key: "container",
       onUpdate: es,
-      resizeObserver: _,
+      resizeObserver: f,
       listenerMap: d
-    }), (0, i.useImperativeHandle)(m, () => f({
+    }), (0, i.useImperativeHandle)(m, () => _({
       getScrollerNode: () => K.current,
       getItemGrid: ea,
       getCoordsMap: eo,
       getScrollerState: q
     }, (0, c.Ue)(K, q, ei)), [K, q, ea, ei, eo]);
     let el = (0, i.useCallback)(e => {
-      er(1), null == V.current ? W(!0) : clearTimeout(V.current), V.current = setTimeout(() => {
-        V.current = null, W(!1)
+      er(1), null == F.current ? W(!0) : clearTimeout(F.current), F.current = setTimeout(() => {
+        F.current = null, W(!1)
       }, 200), null != E && E(e)
     }, [E, er]);
     return i.useLayoutEffect(() => {
       2 !== z.current.dirty && (z.current.dirty = 2)
-    }, [ee, z]), (0, r.jsxs)("div", p(f({
+    }, [ee, z]), (0, r.jsxs)("div", p(_({
       ref: K,
       onScroll: el,
-      className: o()(M, {
+      className: o()(k, {
         [e]: !0,
-        [t]: k,
+        [t]: M,
         [u.scrolling]: Y
       }),
       style: (0, c.uT)(j)
-    }, F), {
+    }, V), {
       children: [null != (g = null == G ? void 0 : G(ee)) ? g : null, (0, i.useMemo)(() => (0, r.jsx)(l.J, {
         containerRef: Z,
         children: (0, r.jsx)("div", {
@@ -204,8 +204,8 @@ function g(e, t, n) {
               a = $[e],
               o = Q[(0, c.DP)(n)],
               s = null == C ? void 0 : C(n);
-            return null != i && null != a ? (0, r.jsxs)("div", p(f({}, s), {
-              style: f({}, i, null != (t = null == s ? void 0 : s.style) ? t : {}),
+            return null != i && null != a ? (0, r.jsxs)("div", p(_({}, s), {
+              style: _({}, i, null != (t = null == s ? void 0 : s.style) ? t : {}),
               children: [null != A && null != o && A(n, o, e), a.map(e => {
                 let [t, n, r] = e, i = Q[t];
                 return null != i ? N(n, r, i, t, J) : null

@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(468026),
   u = n(269647),
   d = n(981631),
-  f = n(388032);
+  _ = n(388032);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -44,17 +44,17 @@ function h() {
     null !== t.current && ((0, o.Mr3)(t.current), t.current = null)
   }
 
-  function _() {
+  function f() {
     l.Z.clearVADWarning()
   }
   return i.useEffect(() => (e ? t.current = (0, o.h7j)(e => (0, r.jsx)(c.default, p({
-    title: f.intl.string(f.t.NYklho),
-    body: f.intl.string(f.t.EJ26Oj),
-    onCancel: _,
-    cancelText: f.intl.string(f.t.UYW0d3),
-    confirmText: f.intl.string(f.t.E3Y7ND),
+    title: _.intl.string(_.t.NYklho),
+    body: _.intl.string(_.t.EJ26Oj),
+    onCancel: f,
+    cancelText: _.intl.string(_.t.UYW0d3),
+    confirmText: _.intl.string(_.t.E3Y7ND),
     onConfirm: () => {
-      s.Z.setMode(d.pM4.PUSH_TO_TALK), _()
+      s.Z.setMode(d.pM4.PUSH_TO_TALK), f()
     }
   }, e))) : n(), () => {
     n()

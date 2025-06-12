@@ -13,8 +13,8 @@ var i = n(481060),
   c = n(652853),
   u = n(475413),
   d = n(228168),
-  f = n(981631),
-  _ = n(388032),
+  _ = n(981631),
+  f = n(388032),
   p = n(227832);
 
 function h(e) {
@@ -26,7 +26,7 @@ function h(e) {
   } = e, {
     themeType: y
   } = (0, c.z)(), O = (0, s.Ih)(E, g), v = (0, s.Fe)(E, g);
-  if (!(0, o.Z)(E) || !(0, a.Z)(E, f.xjy.PLAY) && !(0, a.Z)(E, f.xjy.SYNC)) return null;
+  if (!(0, o.Z)(E) || !(0, a.Z)(E, _.xjy.PLAY) && !(0, a.Z)(E, _.xjy.SYNC)) return null;
   let I = e => {
       null == e || e.stopPropagation(), null == b || b({
         action: "PRESS_PLAY_ON_SPOTIFY_BUTTON"
@@ -41,7 +41,7 @@ function h(e) {
     children: [(0, r.jsx)(i.DY3, {
       text: v.tooltip,
       children: (0, r.jsx)(u.tG, {
-        text: null != (t = v.label) ? t : _.intl.string(_.t.eU3inJ),
+        text: null != (t = v.label) ? t : f.intl.string(f.t.eU3inJ),
         disabled: v.disabled,
         submitting: v.loading,
         size: i.PhG.TINY,
@@ -51,7 +51,7 @@ function h(e) {
     }), (0, r.jsx)(i.DY3, {
       text: O.tooltip,
       children: (0, r.jsx)(u.tG, {
-        text: null != (n = O.label) ? n : _.intl.string(_.t.rRffNz),
+        text: null != (n = O.label) ? n : f.intl.string(f.t.rRffNz),
         disabled: O.disabled,
         submitting: O.loading,
         size: i.PhG.TINY,
@@ -65,7 +65,7 @@ function h(e) {
       className: p.primaryButton,
       children: (0, r.jsx)(u.tG, {
         icon: () => (0, r.jsx)(l.Z, {}),
-        text: null != (h = O.label) ? h : _.intl.string(_.t.rRffNz),
+        text: null != (h = O.label) ? h : f.intl.string(f.t.rRffNz),
         disabled: O.disabled,
         submitting: O.loading,
         wrapperClassName: p.primaryButton,
@@ -75,7 +75,7 @@ function h(e) {
       })
     }), (0, r.jsx)(u.ef, {
       icon: i.iOO,
-      tooltipText: null != (m = v.tooltip) ? m : _.intl.string(_.t.eU3inJ),
+      tooltipText: null != (m = v.tooltip) ? m : f.intl.string(f.t.eU3inJ),
       disabled: v.disabled,
       submitting: v.loading,
       themeColor: "secondary",

@@ -7,7 +7,7 @@ n.d(t, {
   Xg: () => d,
   dw: () => g,
   ej: () => c,
-  i4: () => f,
+  i4: () => _,
   jX: () => u,
   ld: () => o,
   uv: () => l
@@ -21,8 +21,8 @@ let a = "--theme-base-color-amount",
   c = "--theme-base-color-light-hsl",
   u = "--theme-base-color-dark",
   d = "--theme-text-color-dark",
-  f = "--theme-base-color-dark-hsl",
-  _ = 50,
+  _ = "--theme-base-color-dark-hsl",
+  f = 50,
   p = 38;
 
 function h(e) {
@@ -34,8 +34,8 @@ function h(e) {
   (0 === c || Number.isNaN(c)) && (l = s);
   let u = r ? s.set("hsl.s", 1) : l.set("hsl.s", 1),
     d = u.get("hsl.h"),
-    f = d >= 200 && d <= 300 ? r ? .8 : .25 : r ? .95 : .15;
-  return u = u.set("hsl.l", f), {
+    _ = d >= 200 && d <= 300 ? r ? .8 : .25 : r ? .95 : .15;
+  return u = u.set("hsl.l", _), {
     base: r ? l.set("hsl.s", 1).set("hsl.l", .05) : s.set("hsl.s", 1).set("hsl.l", .9),
     text: u
   }
@@ -46,7 +46,7 @@ function m(e) {
     enabled: t,
     primaryColor: n,
     secondaryColor: r,
-    baseMixAmount: i = _,
+    baseMixAmount: i = f,
     textMixAmount: m = p
   } = e, {
     base: E,
@@ -67,7 +67,7 @@ function m(e) {
     [c]: g(y),
     [s]: y.css(),
     [l]: O.css(),
-    [f]: g(E),
+    [_]: g(E),
     [u]: E.css(),
     [d]: b.css(),
     [a]: "".concat(t ? i : 0, "%"),

@@ -13,7 +13,7 @@ var r = n(544891),
   u = n(959517),
   d = n(388032);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -105,8 +105,8 @@ class m extends o.Z {
     let u, d = [];
     if (this.files.forEach((e, t) => {
         let n = (0, c.B)(e, t);
-        e.item.platform === a.ow.WEB && d.push(_({}, n))
-      }), null != (u = null != n && null != t ? this._addAttachmentsToPayload(t, n, d) : h(_({}, t), {
+        e.item.platform === a.ow.WEB && d.push(f({}, n))
+      }), null != (u = null != n && null != t ? this._addAttachmentsToPayload(t, n, d) : h(f({}, t), {
         attachments: d
       })).scheduled_timestamp) {
       try {
@@ -134,7 +134,7 @@ class m extends o.Z {
       }
       return
     }
-    let f = {
+    let _ = {
         url: this._url,
         body: u,
         signal: e,
@@ -142,7 +142,7 @@ class m extends o.Z {
       },
       p = "POST" === this._method ? r.tn.post : r.tn.patch;
     try {
-      let e = await p(f);
+      let e = await p(_);
       return this._handleComplete(e.body), e.body
     } catch (e) {
       if (this._raiseEndpointErrors) throw new i.Hx(e);

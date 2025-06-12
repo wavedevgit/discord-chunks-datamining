@@ -50,9 +50,9 @@ function d(e, t) {
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +60,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -90,12 +90,12 @@ function m(e) {
     disabled: i,
     selectable: l,
     children: u,
-    style: _
-  } = e, m = f(e, ["type", "className", "disabled", "selectable", "children", "style"]);
+    style: f
+  } = e, m = _(e, ["type", "className", "disabled", "selectable", "children", "style"]);
   let g = h.DEFAULT;
   return i ? g = h.DISABLED : l && (g = h.SELECTABLE), (0, r.jsx)(o.Z, d(c({
     className: a()(s[t], n, s[g]),
-    style: _
+    style: f
   }, m), {
     children: u
   }))

@@ -11,8 +11,8 @@ var r, i = n(255367),
   c = n(442837),
   u = n(692547),
   d = n(481060),
-  f = n(891819),
-  _ = n(372769),
+  _ = n(891819),
+  f = n(372769),
   p = n(451478),
   h = n(956664),
   m = n(153066),
@@ -123,7 +123,7 @@ class N extends a.PureComponent {
       badgeTooltipColor: r,
       badgeTooltipDelay: a
     } = this.props;
-    return e && null != t.hasFeature ? (0, i.jsx)(_.Z, {
+    return e && null != t.hasFeature ? (0, i.jsx)(f.Z, {
       className: g.guildIconBadge,
       guild: t,
       badgeStrokeColor: n,
@@ -141,8 +141,8 @@ class N extends a.PureComponent {
         active: l,
         size: c,
         style: u = {},
-        textScale: f,
-        showTooltip: _,
+        textScale: _,
+        showTooltip: f,
         tooltipPosition: p,
         onClick: h,
         to: E,
@@ -165,7 +165,7 @@ class N extends a.PureComponent {
       }),
       "aria-hidden": N,
       style: null == r.icon ? b({
-        fontSize: (null != (t = w[r.acronym.length]) ? t : w[w.length - 1]) * f
+        fontSize: (null != (t = w[r.acronym.length]) ? t : w[w.length - 1]) * _
       }, u) : u,
       onClick: null != E || null == h ? void 0 : h,
       tabIndex: T
@@ -223,7 +223,7 @@ let C = c.ZP.connectStores([p.Z], e => {
       backgroundImage: (0, h.rv)(null != r ? r : t.getIconURL(null != o ? o : S[a], n && p.Z.isFocused(), s))
     })
   }
-})((0, f.N)(e => (0, i.jsx)(N, b({}, e))));
+})((0, _.N)(e => (0, i.jsx)(N, b({}, e))));
 class R extends(r = a.PureComponent) {
   render() {
     return (0, i.jsx)(C, b({}, this.props))

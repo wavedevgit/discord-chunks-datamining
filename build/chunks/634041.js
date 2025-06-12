@@ -12,7 +12,7 @@ var r, i = n(442837),
   u = n(594174),
   d = n(647177);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,14 +21,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -66,7 +66,7 @@ function O(e) {
   let {
     videoFilterAsset: t
   } = e;
-  b = h(_({}, b), {
+  b = h(f({}, b), {
     [t.id]: t
   })
 }
@@ -75,7 +75,7 @@ function v(e) {
   let {
     videoFilterAsset: t
   } = e;
-  b = _({}, b), delete b[t.id]
+  b = f({}, b), delete b[t.id]
 }
 
 function I(e) {
@@ -121,7 +121,7 @@ class C extends(r = i.ZP.Store) {
     return E
   }
 }
-f(C, "displayName", "VideoBackgroundStore");
+_(C, "displayName", "VideoBackgroundStore");
 let R = new C(o.Z, {
   VIDEO_FILTER_ASSETS_FETCH_SUCCESS: y,
   VIDEO_FILTER_ASSET_UPLOAD_SUCCESS: O,

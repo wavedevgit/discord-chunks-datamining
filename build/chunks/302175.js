@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(434650),
-  f = n(100527),
-  _ = n(906732),
+  _ = n(100527),
+  f = n(906732),
   p = n(377171),
   h = n(879892),
   m = n(245004),
@@ -66,20 +66,20 @@ function x(e, t) {
   return n
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t,
     powerup: n,
     onClose: a
   } = e, {
     analyticsLocations: l
-  } = (0, _.ZP)(), c = null != (0, I.Z)(t, n), p = (0, T.Z)(t), [E, b] = i.useState(!1), [y, O] = i.useState(!1), A = y, D = i.useCallback(() => {
+  } = (0, f.ZP)(), c = null != (0, I.Z)(t, n), p = (0, T.Z)(t), [E, b] = i.useState(!1), [y, O] = i.useState(!1), A = y, D = i.useCallback(() => {
     let e = g.Z.getGuild(t);
     null != e && (0, h.u)({
       analyticsLocation: {
@@ -91,25 +91,25 @@ function M(e) {
       guild: e
     })
   }, [t, l]), x = i.useCallback(() => {
-    a(), (0, S.Z)(t, f.Z.GUILD_POWERUPS_MARKETING, n.skuId)
-  }, [t, n.skuId, a]), M = {
+    a(), (0, S.Z)(t, _.Z.GUILD_POWERUPS_MARKETING, n.skuId)
+  }, [t, n.skuId, a]), k = {
     tension: 400,
     friction: 30
   }, j = (0, u.q_F)({
     transform: A ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
     borderRadius: "0px",
     transformOrigin: "center 0%",
-    config: M
+    config: k
   }), U = (0, u.q_F)({
     y: A ? -25 : 0,
-    config: M
+    config: k
   }), G = (0, u.q_F)({
     opacity: +!!A,
     transform: A ? "translateY(0)" : "translateY(20px)",
-    config: M
+    config: k
   }), B = i.useCallback(e => {
     e && b(!0)
-  }, []), F = (0, d.O)(B), V = (0, v.Z)(n, y);
+  }, []), V = (0, d.O)(B), F = (0, v.Z)(n, y);
   return (0, r.jsxs)("div", {
     className: o()(w.topPerksCard, w.animatedTopPerksCard, P.powerupCard, {
       [w.animate]: E
@@ -118,17 +118,17 @@ function M(e) {
     onMouseLeave: () => O(!1),
     children: [(0, r.jsx)("div", {
       className: w.intObserver,
-      ref: F
+      ref: V
     }), (0, r.jsx)("div", {
       className: w.topPerksCardImageWrapper,
       children: (0, r.jsx)(s.animated.img, {
         className: o()(w.topPerksCardImage, P.image),
-        src: V,
+        src: F,
         alt: "",
         style: j
       })
     }), (0, r.jsxs)(s.animated.div, {
-      style: k(L({}, U), {
+      style: M(L({}, U), {
         transform: U.y.to(e => "translateY(".concat(e, "px)"))
       }),
       className: o()(w.contentContainer, P.contentContainer),
@@ -173,9 +173,9 @@ let j = i.forwardRef((e, t) => {
   i.useEffect(() => {
     d && (y.Z.shouldFetchCatalogForGuild(o.id) && (0, b.Sn)(o.id), y.Z.shouldFetchPowerupsForGuild(o.id) && (0, b.Fm)(o.id))
   }, [d, o.id]);
-  let f = (0, c.e7)([y.Z], () => y.Z.getStateForGuild(o.id)),
-    _ = null != (a = null == f || null == (n = f.powerupCatalog) ? void 0 : n[A.Us.PERK]) ? a : [];
-  return d && 0 !== _.length ? (0, r.jsxs)("div", {
+  let _ = (0, c.e7)([y.Z], () => y.Z.getStateForGuild(o.id)),
+    f = null != (a = null == _ || null == (n = _.powerupCatalog) ? void 0 : n[A.Us.PERK]) ? a : [];
+  return d && 0 !== f.length ? (0, r.jsxs)("div", {
     ref: t,
     className: P.container,
     children: [(0, r.jsxs)("div", {
@@ -194,7 +194,7 @@ let j = i.forwardRef((e, t) => {
       })
     }), (0, r.jsx)("div", {
       className: P.powerupsContainer,
-      children: _.map(e => (0, r.jsx)(M, {
+      children: f.map(e => (0, r.jsx)(k, {
         guildId: o.id,
         powerup: e,
         onClose: s

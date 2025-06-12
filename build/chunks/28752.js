@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(520315),
   u = n(688465),
   d = n(388032),
-  f = n(639746),
-  _ = n(73433),
+  _ = n(639746),
+  f = n(73433),
   p = n(413097);
 
 function h(e, t, n) {
@@ -45,7 +45,7 @@ function E(e) {
     onSelect: n,
     onClose: c
   } = e, {
-    iconURL: _
+    iconURL: f
   } = i.useMemo(() => (0, s.sl)(t, {
     fakeAppIconURL: p,
     size: g
@@ -66,20 +66,20 @@ function E(e) {
     return (null == (r = t.integrationTypesConfig) || null == (n = r[e.type]) ? void 0 : n.oauth2InstallParams) != null
   }), [t.integrationTypesConfig]);
   return (0, r.jsxs)("div", {
-    className: f.container,
+    className: _.container,
     children: [(0, r.jsxs)("div", {
-      className: f.header,
+      className: _.header,
       children: [null != c ? (0, r.jsx)(o.P3F, {
         onClick: c,
-        className: f.closeButton,
+        className: _.closeButton,
         "aria-label": d.intl.string(d.t.cpT0Cg),
         children: (0, r.jsx)(o.Dio, {
           size: "md",
           color: "currentColor"
         })
       }) : null, (0, r.jsx)(l.Z, {
-        src: _,
-        className: f.appIcon,
+        src: f,
+        className: _.appIcon,
         rendersPlaceholder: !0
       }), (0, r.jsx)(y, {
         application: t
@@ -87,19 +87,19 @@ function E(e) {
         application: t
       })]
     }), (0, r.jsx)("ul", {
-      className: f.rows,
+      className: _.rows,
       children: h.map(e => (0, r.jsxs)(o.P3F, {
         tag: "li",
-        className: f.row,
+        className: _.row,
         onClick: () => n(e.type),
         children: [(0, r.jsx)(e.icon, {
           size: "md",
           color: "currentColor",
-          className: f.leftIcon
+          className: _.leftIcon
         }), (0, r.jsxs)("div", {
-          className: f.rowInner,
+          className: _.rowInner,
           children: [(0, r.jsxs)("div", {
-            className: f.rowDetails,
+            className: _.rowDetails,
             children: [(0, r.jsx)(o.Text, {
               variant: "text-md/medium",
               color: "interactive-active",
@@ -112,7 +112,7 @@ function E(e) {
           }), e.beta && (0, r.jsx)(u.Z, {}), (0, r.jsx)(o.Fbu, {
             size: "md",
             color: "currentColor",
-            className: f.rightIcon
+            className: _.rightIcon
           })]
         })]
       }, e.type))
@@ -125,9 +125,9 @@ function b(e) {
     application: t
   } = e, n = t.description;
   return null == n || 0 === n.length ? null : (0, r.jsx)("div", {
-    className: f.detailsContainer,
+    className: _.detailsContainer,
     children: (0, r.jsx)("div", {
-      className: f.overviewContainerNoVideo,
+      className: _.overviewContainerNoVideo,
       children: null != n && n.length > 0 ? (0, r.jsx)(v, {
         description: n
       }) : null
@@ -140,13 +140,13 @@ function y(e) {
     application: t
   } = e, n = t.name, i = (0, s.vJ)(t);
   return (0, r.jsxs)("div", {
-    className: f.titleContainer,
+    className: _.titleContainer,
     children: [(0, r.jsx)(o.X6q, {
       variant: "heading-xl/extrabold",
       lineClamp: 1,
       children: n
     }), i ? (0, r.jsx)("div", {
-      className: f.partnerLabelContainer,
+      className: _.partnerLabelContainer,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-normal",
@@ -193,14 +193,14 @@ function v(e) {
     }, g)),
     v = a || b;
   return (0, r.jsxs)("div", {
-    className: f.descriptionContainer,
+    className: _.descriptionContainer,
     children: [(0, r.jsx)("div", {
       ref: E,
-      className: f.overflowHidden,
+      className: _.overflowHidden,
       onTransitionEnd: y,
       children: (0, r.jsx)(o.Text, {
         ref: u,
-        className: _.markup,
+        className: f.markup,
         variant: "text-sm/medium",
         lineClamp: v ? void 0 : O,
         style: {
@@ -209,7 +209,7 @@ function v(e) {
         children: l
       })
     }), null != h && h > O ? (0, r.jsxs)(o.P3F, {
-      className: f.expandableDescriptionClickable,
+      className: _.expandableDescriptionClickable,
       onClick: () => s(e => !e),
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",

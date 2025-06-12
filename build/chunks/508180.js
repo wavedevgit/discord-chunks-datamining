@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +33,7 @@ function f(e) {
   }
   return e
 }
-let _ = () => {
+let f = () => {
   let e = (0, a.e7)([c.Z], () => c.Z.isInteractionRequired(), []),
     t = i.useRef(null);
 
@@ -44,7 +44,7 @@ let _ = () => {
   function d() {
     s.Z.interact()
   }
-  return i.useEffect(() => (e ? t.current = (0, o.h7j)(e => (0, r.jsx)(l.default, f({
+  return i.useEffect(() => (e ? t.current = (0, o.h7j)(e => (0, r.jsx)(l.default, _({
     title: u.intl.string(u.t.dLLxCw),
     body: u.intl.string(u.t["64lmt7"]),
     onConfirm: d,

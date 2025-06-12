@@ -18,8 +18,8 @@ var r = n(392711),
   c = n(339085),
   u = n(633302),
   d = n(856985),
-  f = n(38618),
-  _ = n(675478),
+  _ = n(38618),
+  f = n(675478),
   p = n(486472),
   h = n(823379),
   m = n(668781),
@@ -28,7 +28,7 @@ var r = n(392711),
   b = n(388032);
 
 function y(e) {
-  _.hW.updateAsync("textAndImages", t => {
+  f.hW.updateAsync("textAndImages", t => {
     t.diversitySurrogate = o.Gm.create(), t.diversitySurrogate.value = e
   }, E.fy.FREQUENT_USER_ACTION)
 }
@@ -113,7 +113,7 @@ async function T(e) {
 }
 
 function S(e) {
-  if (p.Z.totalUnavailableGuilds > 0 || !f.Z.isConnected()) return e;
+  if (p.Z.totalUnavailableGuilds > 0 || !_.Z.isConnected()) return e;
   let t = e.map(e => {
     var t;
     return null != (t = c.ZP.getCustomEmojiById(e)) ? t : u.ZP.getByName(e)
@@ -128,7 +128,7 @@ function A(e) {
 
 function N(e) {
   let t = A(e);
-  null != t && _.DZ.updateAsync("favoriteEmojis", e => (e.emojis = S(e.emojis), i().size(e.emojis) >= E.oX) ? (m.Z.show({
+  null != t && f.DZ.updateAsync("favoriteEmojis", e => (e.emojis = S(e.emojis), i().size(e.emojis) >= E.oX) ? (m.Z.show({
     title: b.intl.string(b.t["+XYXtb"]),
     body: b.intl.formatToPlainString(b.t.JaIyFh, {
       count: E.oX
@@ -138,7 +138,7 @@ function N(e) {
 
 function C(e) {
   let t = A(e);
-  null != t && _.DZ.updateAsync("favoriteEmojis", e => {
+  null != t && f.DZ.updateAsync("favoriteEmojis", e => {
     if (e.emojis = S(e.emojis), !e.emojis.includes(t)) return !1;
     e.emojis = e.emojis.filter(e => t !== e)
   }, E.fy.INFREQUENT_USER_ACTION)

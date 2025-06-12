@@ -3,7 +3,7 @@
 n.d(t, {
   L9: () => u,
   LY: () => o,
-  ND: () => f,
+  ND: () => _,
   WC: () => p,
   aW: () => s,
   af: () => b,
@@ -82,7 +82,7 @@ let d = {
     }],
     3: []
   },
-  f = [{
+  _ = [{
     resolution: 0,
     fps: 60,
     quality: i.ys.HIGH_STREAMING_QUALITY
@@ -158,7 +158,7 @@ let d = {
     fps: 5
   }];
 
-function _(e, t) {
+function f(e, t) {
   return {
     value: e,
     get label() {
@@ -166,17 +166,17 @@ function _(e, t) {
     }
   }
 }
-let p = [_(720), _(1080), _(1440), _(0, () => a.intl.string(a.t.XjXqzs))],
-  h = [_(720), _(1080), _(1440)],
+let p = [f(720), f(1080), f(1440), f(0, () => a.intl.string(a.t.XjXqzs))],
+  h = [f(720), f(1080), f(1440)],
   m = e => 0 === e ? a.intl.string(a.t.XjXqzs) : a.intl.formatToPlainString(a.t.TEOC0N, {
     resolution: e
   }),
-  g = [_(480, () => m(480)), _(720, () => m(720)), _(1080, () => m(1080)), _(1440, () => m(1440)), _(0, () => m(0))],
-  E = [_(15), _(30), _(60)],
-  b = [_(15, () => a.intl.formatToPlainString(a.t["bW+JCQ"], {
+  g = [f(480, () => m(480)), f(720, () => m(720)), f(1080, () => m(1080)), f(1440, () => m(1440)), f(0, () => m(0))],
+  E = [f(15), f(30), f(60)],
+  b = [f(15, () => a.intl.formatToPlainString(a.t["bW+JCQ"], {
     value: 15
-  })), _(30, () => a.intl.formatToPlainString(a.t["bW+JCQ"], {
+  })), f(30, () => a.intl.formatToPlainString(a.t["bW+JCQ"], {
     value: 30
-  })), _(60, () => a.intl.formatToPlainString(a.t["bW+JCQ"], {
+  })), f(60, () => a.intl.formatToPlainString(a.t["bW+JCQ"], {
     value: 60
   }))]

@@ -19,7 +19,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +32,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,7 +44,7 @@ function _(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -105,20 +105,20 @@ class v extends(r = o.PureComponent) {
         style: c,
         wrap: d
       } = e,
-      _ = h(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]),
-      m = f({
-        style: f({
+      f = h(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]),
+      m = _({
+        style: _({
           flexGrow: i,
           flexShrink: r,
           flexBasis: s
         }, c),
         className: n === u.flexChild ? n : l()(u.flexChild, n)
-      }, _);
+      }, f);
     if (!d && "string" != typeof t && 1 === o.Children.count(t)) {
       let e = o.Children.only(t);
-      return m.style = f({}, m.style, e.props.style), m.className = l()(e.props.className, n), o.cloneElement(e, m)
+      return m.style = _({}, m.style, e.props.style), m.className = l()(e.props.className, n), o.cloneElement(e, m)
     }
-    return (0, a.jsx)("div", p(f({}, m), {
+    return (0, a.jsx)("div", p(_({}, m), {
       children: t
     }))
   }
@@ -140,17 +140,17 @@ class I extends(i = o.PureComponent) {
         wrap: s,
         shrink: c,
         grow: d,
-        basis: _,
+        basis: f,
         style: m,
         gutter: g
       } = e,
       E = h(e, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
-      b = f({
+      b = _({
         flexShrink: c,
         flexGrow: d,
-        flexBasis: _
+        flexBasis: f
       }, m);
-    return (0, a.jsx)("div", p(f({
+    return (0, a.jsx)("div", p(_({
       style: b,
       className: l()(u.flex, r, i, o, s, g, n)
     }, E), {

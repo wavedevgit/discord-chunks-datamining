@@ -12,7 +12,7 @@ var r, i = n(255367),
   u = n(388032),
   d = n(24008);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,7 +20,7 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = 150;
+let f = 150;
 class p extends(r = a.PureComponent) {
   componentDidMount() {
     this.updateMediaBar()
@@ -44,7 +44,7 @@ class p extends(r = a.PureComponent) {
       sliderWrapperClassName: r,
       sliderClassName: a,
       currentWindow: o,
-      muted: f,
+      muted: _,
       minValue: p,
       maxValue: h,
       value: m,
@@ -55,7 +55,7 @@ class p extends(r = a.PureComponent) {
       focused: y,
       dragging: O
     } = this.state, v = l.gj8;
-    return f || m === p ? v = l.OyP : m < h / 2 && (v = l.X2j), (0, i.jsxs)("div", {
+    return _ || m === p ? v = l.OyP : m < h / 2 && (v = l.X2j), (0, i.jsxs)("div", {
       className: s()(n, d.container),
       onMouseEnter: () => {
         clearTimeout(this._hoverTimeout), this.setState({
@@ -67,7 +67,7 @@ class p extends(r = a.PureComponent) {
           this.setState({
             hovered: !1
           }), null == E || E()
-        }, _)
+        }, f)
       },
       onFocus: () => this.setState({
         focused: !0
@@ -88,7 +88,7 @@ class p extends(r = a.PureComponent) {
         onMouseLeave: () => {
           clearTimeout(this._hoverTimeout), this._hoverTimeout = setTimeout(() => this.setState({
             hovered: !1
-          }), _)
+          }), f)
         },
         children: (0, i.jsx)(c.Z, {
           sliderClassName: a,
@@ -114,22 +114,22 @@ class p extends(r = a.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_mediaBar", a.createRef()), f(this, "_hoverTimeout", void 0), f(this, "state", {
+    super(...e), _(this, "_mediaBar", a.createRef()), _(this, "_hoverTimeout", void 0), _(this, "state", {
       hovered: !1,
       focused: !1,
       dragging: !1
-    }), f(this, "handleValueChange", e => {
+    }), _(this, "handleValueChange", e => {
       let {
         maxValue: t,
         onValueChange: n
       } = this.props, r = e * t;
       null == n || n(r)
-    }), f(this, "handleToggleMute", () => {
+    }), _(this, "handleToggleMute", () => {
       let {
         onToggleMute: e
       } = this.props;
       null == e || e()
-    }), f(this, "handleKeyDown", e => {
+    }), _(this, "handleKeyDown", e => {
       let {
         minValue: t,
         value: n,
@@ -143,22 +143,22 @@ class p extends(r = a.PureComponent) {
         case "ArrowDown":
           e.stopPropagation(), e.preventDefault(), null == i || i(Math.max(t, n - a))
       }
-    }), f(this, "handleDragStart", () => {
+    }), _(this, "handleDragStart", () => {
       this.setState({
         dragging: !0
       })
-    }), f(this, "handleDragEnd", () => {
+    }), _(this, "handleDragEnd", () => {
       this.setState({
         dragging: !1
       })
-    }), f(this, "blur", () => {
+    }), _(this, "blur", () => {
       this.setState({
         focused: !1
       })
     })
   }
 }
-f(p, "defaultProps", {
+_(p, "defaultProps", {
   minValue: 0,
   maxValue: 100,
   handleSize: 16

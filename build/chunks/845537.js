@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   EK: () => G,
-  Io: () => M,
+  Io: () => k,
   NY: () => j,
   Ox: () => L,
-  Vq: () => k,
+  Vq: () => M,
   Wf: () => U,
   cB: () => x,
   dy: () => w,
@@ -21,8 +21,8 @@ var i = n(442837),
   c = n(797610),
   u = n(754688),
   d = n(699450),
-  f = n(303694),
-  _ = n(124072),
+  _ = n(303694),
+  f = n(124072),
   p = n(891984),
   h = n(884902);
 n(763296);
@@ -115,7 +115,7 @@ function L(e) {
     channelId: n,
     guildId: i
   } = e, a = g.Z.getGuild(i), o = m.Z.getChannel(n), s = (0, c.Ib)(a, o) && "@Clyde" === t ? I.jM : null;
-  return (0, r.jsx)(_.Z, {
+  return (0, r.jsx)(f.Z, {
     color: s,
     children: t
   })
@@ -126,7 +126,7 @@ function x(e) {
     id: t,
     guildId: n,
     channelId: o
-  } = e, l = (0, i.e7)([b.default], () => b.default.getUser(t)), c = (0, i.e7)([E.Z], () => E.Z.hidePersonalInformation), u = O.ZP.useName(n, o, l), d = (0, r.jsx)(_.Z, {
+  } = e, l = (0, i.e7)([b.default], () => b.default.getUser(t)), c = (0, i.e7)([E.Z], () => E.Z.hidePersonalInformation), u = O.ZP.useName(n, o, l), d = (0, r.jsx)(f.Z, {
     children: null == u ? "<@".concat(t, ">") : "@".concat(u)
   });
   if (null != l) {
@@ -162,7 +162,7 @@ function x(e) {
   return d
 }
 
-function k(e) {
+function M(e) {
   let {
     id: t,
     guildId: n
@@ -172,10 +172,10 @@ function k(e) {
   });
   let u = null != o.color && 0 !== o.color,
     d = "dot" === s,
-    f = "username" === s && u;
-  return (0, r.jsxs)(_.Z, {
-    color: f ? o.color : null,
-    roleColors: f ? c : null,
+    _ = "username" === s && u;
+  return (0, r.jsxs)(f.Z, {
+    color: _ ? o.color : null,
+    roleColors: _ ? c : null,
     children: [d && (0, r.jsx)(a.FhE, {
       color: o.colorString,
       colors: c,
@@ -185,7 +185,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     id: t
   } = e, n = (0, i.e7)([m.Z], () => m.Z.getChannel(t)), a = T.intl.string(T.t.zLZPmp).toLowerCase(), o = "text", s = !0;
@@ -193,7 +193,7 @@ function M(e) {
     var l;
     a = (0, u.YO)(n) ? n.name : T.intl.string(T.t["/YzI6+"]), o = (0, u.YO)(n) ? null != (l = (0, y.wl)(n)) ? l : "text" : "locked", s = (0, d.B)(n.type)
   }
-  return s ? (0, r.jsx)(_.Z, {
+  return s ? (0, r.jsx)(f.Z, {
     iconType: o,
     children: a
   }) : (0, r.jsx)("span", {
@@ -206,8 +206,8 @@ function j(e) {
     id: t,
     itemId: n,
     guildId: i
-  } = e, a = (0, f.l)(t), o = (0, f.W)(t, n, i);
-  return (0, r.jsxs)(_.Z, {
+  } = e, a = (0, _.l)(t), o = (0, _.W)(t, n, i);
+  return (0, r.jsxs)(f.Z, {
     iconType: t,
     children: [a, null != o && (0, r.jsx)(p.Z, {}), o]
   })
@@ -218,7 +218,7 @@ function U(e) {
     text: t,
     id: n
   } = e;
-  return (0, r.jsxs)(_.Z, {
+  return (0, r.jsxs)(f.Z, {
     children: [t, "(", n, ")"]
   })
 }

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $H: () => F,
+  $H: () => V,
   AB: () => U,
-  JS: () => M,
+  JS: () => k,
   ZP: () => H,
   hH: () => x,
-  kO: () => V,
+  kO: () => F,
   oG: () => Z,
   v_: () => j,
   yw: () => B
@@ -20,8 +20,8 @@ var r = n(392711),
   c = n(314897),
   u = n(592125),
   d = n(984933),
-  f = n(650774),
-  _ = n(271383),
+  _ = n(650774),
+  f = n(271383),
   p = n(430824),
   h = n(131951),
   m = n(496675),
@@ -75,14 +75,14 @@ function x(e) {
   if (null == n) return null;
   let r = p.Z.getRoles(n.id),
     i = c.default.getId(),
-    a = _.ZP.getMember(e, i),
+    a = f.ZP.getMember(e, i),
     o = d.ZP.getChannels(e),
     s = o[d.sH].length,
     l = o[d.Zb].length,
     u = T.Z.getVoiceStates(e);
   return {
     guild_id: n.id,
-    guild_size_total: f.Z.getMemberCount(e),
+    guild_size_total: _.Z.getMemberCount(e),
     guild_num_channels: s + l,
     guild_num_text_channels: s,
     guild_num_voice_channels: l,
@@ -95,14 +95,14 @@ function x(e) {
   }
 }
 
-function k(e, t) {
+function M(e, t) {
   return {
     channel_static_route: t,
     channel_hidden: !1
   }
 }
 
-function M(e) {
+function k(e) {
   if (null == e) return null;
   let t = u.Z.getChannel(e);
   return null == t ? null : j(t)
@@ -141,7 +141,7 @@ function U(e) {
     channel_type: t.type,
     guild_id: t.getGuildId(),
     media_session_id: r
-  }, V(t.getGuildId(), t.id, n), (0, C.V)())
+  }, F(t.getGuildId(), t.id, n), (0, C.V)())
 }
 
 function G(e, t) {
@@ -157,13 +157,13 @@ function B(e) {
     i = "guild_id" in t ? t.guild_id : r ? O.Z.getGuildId() : null,
     a = "channel_id" in t ? t.channel_id : r ? y.Z.getChannelId(i) : null,
     o = u.Z.getChannel(a),
-    s = D({}, t, x(G(o, i)), null != i && null != a && (0, P.AB)(a) ? k(i, a) : j(o));
+    s = D({}, t, x(G(o, i)), null != i && null != a && (0, P.AB)(a) ? M(i, a) : j(o));
   S.default.track(e, s, {
     flush: n
   })
 }
 
-function F(e) {
+function V(e) {
   if ((0, P.AB)(e)) return {
     channel_static_route: e
   };
@@ -206,7 +206,7 @@ function F(e) {
   }
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   let r = {
     voice_state_count: 0,
     video_stream_count: 0,
@@ -227,5 +227,5 @@ function Z(e, t) {
 }
 let H = {
   trackWithMetadata: B,
-  getVoiceStateMetadata: V
+  getVoiceStateMetadata: F
 }

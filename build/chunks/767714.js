@@ -8,13 +8,13 @@ n(73800);
 var i = n(120356),
   a = n.n(i),
   o = n(442837),
-  s = n(844477),
+  s = n(680018),
   l = n(481060),
   c = n(451478),
   u = n(648613),
   d = n(433390),
-  f = n(474936),
-  _ = n(163882);
+  _ = n(474936),
+  f = n(163882);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -95,12 +95,12 @@ let y = function(e) {
     useExpressiveButton: D
   } = e, L = E(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner", "color", "iconColor", "useExpressiveButton"]);
   let x = (0, o.e7)([c.Z], () => c.Z.isFocused()),
-    k = (0, d.Z)({
+    M = (0, d.Z)({
       subscriptionTier: t,
       buttonTextOverride: null == m ? void 0 : m.textOverride,
       defaultTextOverride: null == m ? void 0 : m.subscribeText
     }),
-    M = {
+    k = {
       onClick: n,
       subscriptionTier: t,
       postSuccessGuild: y,
@@ -110,7 +110,7 @@ let y = function(e) {
       confirmationFooter: C,
       paymentModalBanner: R
     };
-  if (D && (null == m ? void 0 : m.expressiveButtonText) != null) return (0, r.jsx)(u.Z, g(h({}, M), {
+  if (D && (null == m ? void 0 : m.expressiveButtonText) != null) return (0, r.jsx)(u.Z, g(h({}, k), {
     children: e => {
       var t;
       let {
@@ -126,40 +126,40 @@ let y = function(e) {
   }));
 
   function j(e) {
-    let n = null != P ? P : t === f.Si.TIER_1 ? l.zxk.Colors.PRIMARY : l.zxk.Colors.GREEN;
-    return (0, r.jsx)(u.Z, g(h({}, M), {
+    let n = null != P ? P : t === _.Si.TIER_1 ? l.zxk.Colors.PRIMARY : l.zxk.Colors.GREEN;
+    return (0, r.jsx)(u.Z, g(h({}, k), {
       children: o => {
         let {
           onClick: s
         } = o;
         return (0, r.jsxs)(l.gtL, g(h({
-          disabled: k.disabled,
+          disabled: M.disabled,
           onClick: s,
-          innerClassName: _.premiumSubscribeButton,
+          innerClassName: f.premiumSubscribeButton,
           color: n,
           size: i,
           className: A,
           wrapperClassName: a()({
-            [_.tier2Gradient]: N && t === f.Si.TIER_2,
-            [_.tier1Gradient]: N && t === f.Si.TIER_1
+            [f.tier2Gradient]: N && t === _.Si.TIER_2,
+            [f.tier1Gradient]: N && t === _.Si.TIER_1
           }, p),
-          buttonShineClassName: "buttonShineClassName" in L ? L.buttonShineClassName : n === l.Ttl.BRAND_INVERTED ? _.brandShine : void 0,
+          buttonShineClassName: "buttonShineClassName" in L ? L.buttonShineClassName : n === l.Ttl.BRAND_INVERTED ? f.brandShine : void 0,
           pauseAnimation: !x || T
         }, L, e), {
           children: [I && (0, r.jsx)(l.SrA, {
             size: "md",
             color: w,
-            className: a()(_.premiumIcon, b)
+            className: a()(f.premiumIcon, b)
           }), (0, r.jsx)("span", {
-            className: a()(_.buttonText, null == m ? void 0 : m.textClassName),
-            children: k.buttonText
+            className: a()(f.buttonText, null == m ? void 0 : m.textClassName),
+            children: M.buttonText
           })]
         }))
       }
     }))
   }
-  return null != k.buttonTooltipText ? (0, r.jsx)(l.ua7, {
-    text: k.buttonTooltipText,
+  return null != M.buttonTooltipText ? (0, r.jsx)(l.ua7, {
+    text: M.buttonTooltipText,
     children: j
   }) : j()
 }

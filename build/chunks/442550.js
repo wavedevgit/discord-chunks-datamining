@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(388032),
   d = n(980362);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -57,7 +57,7 @@ function m(e) {
     src: t,
     size: n,
     constrain: a = "height",
-    className: f,
+    className: _,
     alt: p,
     fallbackSrc: m,
     "aria-hidden": g,
@@ -71,7 +71,7 @@ function m(e) {
     style: {
       maxWidth: y
     },
-    className: o()(d.contentImage, f)
+    className: o()(d.contentImage, _)
   });
   let A = "height" === a ? {
     maxWidth: y,
@@ -84,9 +84,9 @@ function m(e) {
     "aria-label": p,
     text: p,
     shouldShow: E,
-    children: e => (0, r.jsx)("img", h(_({}, e), {
+    children: e => (0, r.jsx)("img", h(f({}, e), {
       style: A,
-      className: o()(d.contentImage, f),
+      className: o()(d.contentImage, _),
       src: O && null != m ? m : t,
       "aria-hidden": g,
       alt: null != p ? p : g ? void 0 : u.intl.string(u.t["2B/phI"]),

@@ -15,7 +15,7 @@ var i = n(120356),
   u = n(388032),
   d = n(484618);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,14 +24,14 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -99,7 +99,7 @@ function b(e) {
     transitionState: i,
     modalSize: a
   } = e, s = m(e, ["children", "footer", "transitionState", "modalSize"]);
-  return (0, r.jsxs)(o.Y0, h(_({
+  return (0, r.jsxs)(o.Y0, h(f({
     size: null != a ? a : o.Cg.DYNAMIC,
     transitionState: i,
     className: d.oauth2ModalWrapper

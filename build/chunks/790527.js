@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(355467),
   u = n(100527),
   d = n(906732),
-  f = n(688465),
-  _ = n(678558),
+  _ = n(688465),
+  f = n(678558),
   p = n(626135),
   h = n(74538),
   m = n(357355),
@@ -69,14 +69,14 @@ function P(e) {
       analyticsSource: D,
       analyticsLocation: L,
       body: x,
-      context: k,
-      glowUp: M,
+      context: M,
+      glowUp: k,
       modalClassName: j,
       modalContentClassName: U,
       artContainerClassName: G,
       artClassName: B,
-      headerClassName: F,
-      bodyClassName: V,
+      headerClassName: V,
+      bodyClassName: F,
       transitionState: Z,
       onClose: H,
       onSubscribeClick: Y,
@@ -100,9 +100,9 @@ function P(e) {
       LeadingComponent: ec,
       backgroundElements: eu,
       smallText: ed = !1,
-      footerClassName: ef
+      footerClassName: e_
     } = e,
-    e_ = N(e, ["title", "type", "guildBoostProps", "analyticsSource", "analyticsLocation", "body", "context", "glowUp", "modalClassName", "modalContentClassName", "artContainerClassName", "artClassName", "headerClassName", "bodyClassName", "transitionState", "onClose", "onSubscribeClick", "onSubscribeFinish", "onSecondaryClick", "secondaryCTA", "secondaryCTAClassName", "subscribeButtonText", "showNewBadge", "showBetaBadge", "enableArtBoxShadow", "subscriptionTier", "isLoading", "hideBackButton", "backButtonText", "showEnhancedUpsell", "useSubscribeButtonGradient", "subscribeButtonClassname", "hidePremiumOfferUpsell", "children", "LeadingComponent", "backgroundElements", "smallText", "footerClassName"]);
+    ef = N(e, ["title", "type", "guildBoostProps", "analyticsSource", "analyticsLocation", "body", "context", "glowUp", "modalClassName", "modalContentClassName", "artContainerClassName", "artClassName", "headerClassName", "bodyClassName", "transitionState", "onClose", "onSubscribeClick", "onSubscribeFinish", "onSecondaryClick", "secondaryCTA", "secondaryCTAClassName", "subscribeButtonText", "showNewBadge", "showBetaBadge", "enableArtBoxShadow", "subscriptionTier", "isLoading", "hideBackButton", "backButtonText", "showEnhancedUpsell", "useSubscribeButtonGradient", "subscribeButtonClassname", "hidePremiumOfferUpsell", "children", "LeadingComponent", "backgroundElements", "smallText", "footerClassName"]);
   let ep = null != w,
     eh = (0, E.N)(),
     em = (0, g.Ng)(),
@@ -150,7 +150,7 @@ function P(e) {
     eI || c.MH()
   }, [eI]);
   let eT = () => {
-      if (ep) return (0, r.jsx)(_.Z, {
+      if (ep) return (0, r.jsx)(f.Z, {
         analyticsLocation: L,
         guild: w.guild,
         onClose: H
@@ -184,11 +184,11 @@ function P(e) {
     },
     eS = $ ? o()(S.artContainer, S.artContainerBoxShadow, G) : o()(S.artContainer, G),
     eA = null;
-  return null != e_.artURL ? eA = (0, r.jsx)("img", {
+  return null != ef.artURL ? eA = (0, r.jsx)("img", {
     className: o()(B, S.art),
     alt: "",
-    src: e_.artURL
-  }) : null != e_.artElement && (eA = e_.artElement), (0, r.jsxs)(l.Y0X, {
+    src: ef.artURL
+  }) : null != ef.artElement && (eA = ef.artElement), (0, r.jsxs)(l.Y0X, {
     className: o()(S.root, !eg && j),
     "aria-label": C,
     transitionState: Z,
@@ -208,11 +208,11 @@ function P(e) {
         type: P,
         subscriptionTier: null != (a = null == eh || null == (n = eh.subscription_trial) ? void 0 : n.sku_id) ? a : v.Si.TIER_2,
         headingText: C,
-        context: k,
+        context: M,
         analyticsLocationObject: L,
         discountOffer: em,
         trialOffer: eh,
-        children: M
+        children: k
       }) : (0, r.jsxs)("div", {
         className: S.contentContainer,
         children: [ec, (0, r.jsxs)("div", {
@@ -220,22 +220,22 @@ function P(e) {
           children: [(0, r.jsxs)(l.X6q, {
             className: o()(S.header, {
               [S.enhancedHeader]: ei
-            }, F),
+            }, V),
             variant: "heading-xl/bold",
-            children: [C, J ? (0, r.jsx)(f.Z, {
+            children: [C, J ? (0, r.jsx)(_.Z, {
               className: S.betaTag
             }) : null]
           }), ev ? (0, r.jsx)(O.Z, {
             affinities: eO
           }) : void 0, el, (0, r.jsx)(l.Text, {
             variant: ed ? "text-sm/normal" : "text-md/normal",
-            className: o()(V, S.subHeader),
+            className: o()(F, S.subHeader),
             children: x
           })]
         })]
       })
     }), (0, r.jsxs)(l.mzw, {
-      className: o()(S.footer, ef, {
+      className: o()(S.footer, e_, {
         [S.enhancedFooter]: ei
       }),
       children: [(0, r.jsxs)("div", {

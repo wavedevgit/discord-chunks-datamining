@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  KM: () => f,
-  R2: () => _,
+  KM: () => _,
+  R2: () => f,
   TG: () => p,
   Zc: () => d
 });
@@ -49,7 +49,7 @@ function d(e, t, n, i) {
   }
 }
 
-function f(e, t, n) {
+function _(e, t, n) {
   let o = () => {
     var r;
     let i = a.Z.getState()[t];
@@ -78,7 +78,7 @@ function f(e, t, n) {
   }
 }
 
-function _(e, t, n, r) {
+function f(e, t, n, r) {
   let a = () => {
     var t;
     return null != (t = n()) ? t : e.getSetting()

@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(809206),
-  f = n(230711),
-  _ = n(607070),
+  _ = n(230711),
+  f = n(607070),
   p = n(235400),
   h = n(204418),
   m = n(975298),
@@ -36,8 +36,8 @@ var r = n(255367),
   D = n(566078),
   L = n(114732),
   x = n(46140),
-  k = n(981631),
-  M = n(675654),
+  M = n(981631),
+  k = n(675654),
   j = n(474936),
   U = n(388032),
   G = n(335626);
@@ -51,7 +51,7 @@ function B(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -64,7 +64,7 @@ function F(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -76,7 +76,7 @@ function V(e, t) {
 }
 
 function Z(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,7 +88,7 @@ function H() {
 }
 
 function Y() {
-  f.Z.open(k.oAB.PREMIUM, null, {})
+  _.Z.open(M.oAB.PREMIUM, null, {})
 }
 
 function W(e) {
@@ -112,21 +112,21 @@ function K(e) {
     onClose: a,
     quest: l,
     location: d,
-    reward: f,
+    reward: _,
     decoration: p,
     onUseNow: h,
     preview: m
-  } = e, g = i.useRef(null), [b, y] = i.useState(null), O = i.useRef(new s.qA), v = (0, c.e7)([_.Z], () => _.Z.useReducedMotion), I = (0, c.e7)([S.default], () => S.default.getCurrentUser()), T = (null == (t = l.userStatus) ? void 0 : t.claimedAt) != null, [A, C] = i.useState(!0 === m || T ? "claimed" : "loading");
+  } = e, g = i.useRef(null), [b, y] = i.useState(null), O = i.useRef(new s.qA), v = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), I = (0, c.e7)([S.default], () => S.default.getCurrentUser()), T = (null == (t = l.userStatus) ? void 0 : t.claimedAt) != null, [A, C] = i.useState(!0 === m || T ? "claimed" : "loading");
   i.useEffect(() => {
     T || !0 === m || (0, N.QB)(l.id, R.y$.CROSS_PLATFORM, d).then(() => C("claimed")).catch(() => C("error"))
   }, [l, d, T, m]);
   let P = () => {
       C("applying"), h().finally(a)
     },
-    w = !0 === m && null === p && (null == f ? void 0 : f.skuId) !== "",
+    w = !0 === m && null === p && (null == _ ? void 0 : _.skuId) !== "",
     D = null == p && !0 !== m,
     x = null == I || D || w || "loading" === A,
-    k = !v && !T && "claimed" === A;
+    M = !v && !T && "claimed" === A;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: y,
@@ -159,11 +159,11 @@ function K(e) {
           onConfirm: P
         })
       })
-    }), k && (0, r.jsx)(E.Z, {
+    }), M && (0, r.jsx)(E.Z, {
       confettiTarget: g.current,
       confettiCanvas: b,
-      sprites: M.CA,
-      colors: M.Br
+      sprites: k.CA,
+      colors: k.Br
     })]
   })
 }
@@ -197,9 +197,9 @@ function q(e) {
     useReducedMotion: o,
     onClose: s,
     onConfirm: l
-  } = e, c = (0, w.fh)(t, w.eC.HERO), d = c.isAnimated && !o, f = (0, w.fh)(t, w.eC.REWARD).url, _ = (0, P.f$)(t.config), {
+  } = e, c = (0, w.fh)(t, w.eC.HERO), d = c.isAnimated && !o, _ = (0, w.fh)(t, w.eC.REWARD).url, f = (0, P.f$)(t.config), {
     fractionalState: p
-  } = (0, m.Z)(), g = p === j.a$.FP_ONLY, E = (0, C.Qy)(t.config), y = _ && !g;
+  } = (0, m.Z)(), g = p === j.a$.FP_ONLY, E = (0, C.Qy)(t.config), y = f && !g;
   return (0, r.jsxs)("div", {
     className: G.claimedRootContainer,
     children: [(0, r.jsxs)("div", {
@@ -232,7 +232,7 @@ function q(e) {
             guildId: null,
             avatarDecorationOverride: i,
             avatarSize: u.EFr.SIZE_152,
-            questPreviewRewardAssetUrl: f
+            questPreviewRewardAssetUrl: _
           })
         }), (0, r.jsx)(u.X6q, {
           variant: "heading-lg/bold",
@@ -258,7 +258,7 @@ function q(e) {
             }
           }),
           buttonAnalyticsObject: {
-            section: k.jXE.PERMADECOS_MARKETING_UPSELL
+            section: M.jXE.PERMADECOS_MARKETING_UPSELL
           }
         })]
       })
@@ -274,7 +274,7 @@ function X(e) {
     onClose: s,
     transitionState: l,
     preview: c
-  } = e, u = i.useMemo(() => (0, P.xn)(a.config), [a]), [d, f] = W(null != (n = null == u ? void 0 : u.skuId) ? n : null);
+  } = e, u = i.useMemo(() => (0, P.xn)(a.config), [a]), [d, _] = W(null != (n = null == u ? void 0 : u.skuId) ? n : null);
   return null == u ? null : (null == (t = a.userStatus) ? void 0 : t.claimedAt) != null ? (0, r.jsx)(p.default, {
     transitionState: l,
     onCloseModal: H,
@@ -288,7 +288,7 @@ function X(e) {
     location: o,
     reward: u,
     decoration: d,
-    onUseNow: f,
+    onUseNow: _,
     preview: c
   })
 }
@@ -298,7 +298,7 @@ function Q(e, t, i) {
     let {
       default: a
     } = await Promise.resolve().then(n.bind(n, 920916));
-    return n => (0, r.jsx)(a, Z(F({}, n), {
+    return n => (0, r.jsx)(a, Z(V({}, n), {
       quest: e,
       location: t,
       preview: i

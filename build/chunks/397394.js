@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Jh: () => k,
+  Jh: () => M,
   Lk: () => j,
   Xg: () => U,
   ZP: () => L,
-  _Z: () => M,
+  _Z: () => k,
   c7: () => x,
   j3: () => G
 }), n(358797), n(35282);
@@ -18,8 +18,8 @@ var r = n(255367),
   c = n(442837),
   u = n(922770),
   d = n(993365),
-  f = n(481060),
-  _ = n(252618),
+  _ = n(481060),
+  f = n(252618),
   p = n(258971),
   h = n(703656),
   m = n(769654),
@@ -99,13 +99,13 @@ function L(e) {
     showsCloseWindowText: a,
     spinner: s
   } = e;
-  return (0, _.Tt)({
+  return (0, f.Tt)({
     location: S.intl.string(S.t["3S249/"])
   }), (0, r.jsxs)("div", {
     className: A.wrapper,
     children: [s ? (0, r.jsx)(u.$, {}) : null, (0, r.jsx)("div", {
       className: o()(A.header, i)
-    }), (0, r.jsx)(f.X6q, {
+    }), (0, r.jsx)(_.X6q, {
       variant: "heading-lg/bold",
       className: A.text,
       children: t
@@ -124,7 +124,7 @@ function x(e) {
   }))
 }
 
-function k(e) {
+function M(e) {
   var {
     guild: t,
     application: n
@@ -155,7 +155,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   var {
     guild: t,
     application: n
@@ -179,28 +179,28 @@ function M(e) {
         application_id: n.id
       })
     }))
-  }, [null == n ? void 0 : n.id, a, s]), _ = (0, c.e7)([b.Z, g.Z], () => g.Z.getChannel(b.Z.getChannelId())), v = (0, c.e7)([E.Z], () => E.Z.can(T.Plq.SEND_MESSAGES, _)), I = null != t, N = null == t && v && (!u || null != s);
+  }, [null == n ? void 0 : n.id, a, s]), f = (0, c.e7)([b.Z, g.Z], () => g.Z.getChannel(b.Z.getChannelId())), v = (0, c.e7)([E.Z], () => E.Z.can(T.Plq.SEND_MESSAGES, f)), I = null != t, N = null == t && v && (!u || null != s);
   return null != t || null != a ? (0, r.jsxs)("div", {
     className: A.buttonsContainer,
-    children: [null != a ? I || N ? (0, r.jsx)(f.zxk, {
-      size: f.zxk.Sizes.SMALL,
-      look: f.zxk.Looks.LINK,
-      color: f.zxk.Colors.PRIMARY,
+    children: [null != a ? I || N ? (0, r.jsx)(_.zxk, {
+      size: _.zxk.Sizes.SMALL,
+      look: _.zxk.Looks.LINK,
+      color: _.zxk.Colors.PRIMARY,
       onClick: l,
       children: S.intl.string(S.t.cpT0Cg)
-    }) : (0, r.jsx)(f.zxk, {
+    }) : (0, r.jsx)(_.zxk, {
       fullWidth: !0,
-      color: f.zxk.Colors.PRIMARY,
+      color: _.zxk.Colors.PRIMARY,
       onClick: l,
       children: S.intl.string(S.t.cpT0Cg)
-    }) : void 0, I && (0, r.jsx)(f.zxk, {
-      color: f.zxk.Colors.BRAND,
+    }) : void 0, I && (0, r.jsx)(_.zxk, {
+      color: _.zxk.Colors.BRAND,
       onClick: o,
       children: (null == t ? void 0 : t.name.length) > 30 ? S.intl.string(S.t.M35zFB) : S.intl.format(S.t.UdYYPz, {
         guildName: null == t ? void 0 : t.name
       })
-    }), N && (0, r.jsx)(f.zxk, {
-      color: f.zxk.Colors.BRAND,
+    }), N && (0, r.jsx)(_.zxk, {
+      color: _.zxk.Colors.BRAND,
       onClick: d,
       children: S.intl.string(S.t["0cCDKC"])
     })]
@@ -217,7 +217,7 @@ function U() {
   var e, t;
   let n = (0, l.TH)();
   return (0, r.jsx)(I.G, {
-    children: (0, r.jsx)(k, {
+    children: (0, r.jsx)(M, {
       guild: null == (e = n.state) ? void 0 : e.guild,
       application: null == (t = n.state) ? void 0 : t.application,
       showsCloseWindowText: !0

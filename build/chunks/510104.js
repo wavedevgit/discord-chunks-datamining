@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(685516),
   i = n(285363),
@@ -13,11 +13,11 @@ var r = n(685516),
   u = n(544338),
   d = n(581206);
 
-function f(e, t) {
+function _(e, t) {
   void 0 === t && (t = {});
   var n = t,
-    f = n.placement,
-    _ = void 0 === f ? e.placement : f,
+    _ = n.placement,
+    f = void 0 === _ ? e.placement : _,
     p = n.strategy,
     h = void 0 === p ? e.strategy : p,
     m = n.boundary,
@@ -40,24 +40,24 @@ function f(e, t) {
       reference: w,
       element: C,
       strategy: "absolute",
-      placement: _
+      placement: f
     }),
     L = (0, s.Z)(Object.assign({}, C, D)),
     x = O === l.k5 ? L : w,
-    k = {
+    M = {
       top: P.top - x.top + A.top,
       bottom: x.bottom - P.bottom + A.bottom,
       left: P.left - x.left + A.left,
       right: x.right - P.right + A.right
     },
-    M = e.modifiersData.offset;
-  if (O === l.k5 && M) {
-    var j = M[_];
-    Object.keys(k).forEach(function(e) {
+    k = e.modifiersData.offset;
+  if (O === l.k5 && k) {
+    var j = k[f];
+    Object.keys(M).forEach(function(e) {
       var t = [l.F2, l.I].indexOf(e) >= 0 ? 1 : -1,
         n = [l.we, l.I].indexOf(e) >= 0 ? "y" : "x";
-      k[e] += j[n] * t
+      M[e] += j[n] * t
     })
   }
-  return k
+  return M
 }

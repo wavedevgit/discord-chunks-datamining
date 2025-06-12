@@ -16,8 +16,8 @@ e.exports = function(e) {
       return -1 !== e.input.indexOf(n, t)
     },
     d = t,
-    f = "<>",
-    _ = "</>",
+    _ = "<>",
+    f = "</>",
     p = /<[A-Za-z0-9\\._:-]+\s*\/>/,
     h = /<[A-Za-z0-9\\._:-]+/,
     m = /\/[A-Za-z0-9\\._:-]+>|\/>/,
@@ -182,13 +182,13 @@ e.exports = function(e) {
         _: [...i, ...a]
       }
     },
-    k = {
+    M = {
       label: "use_strict",
       className: "meta",
       relevance: 10,
       begin: /^\s*['"]use (strict|asm)['"]/
     },
-    M = {
+    k = {
       variants: [{
         match: [/function/, /\s+/, d, /(?=\s*\()/]
       }, {
@@ -224,7 +224,7 @@ e.exports = function(e) {
       className: "property",
       relevance: 0
     },
-    F = {
+    V = {
       match: [/get|set/, /\s+/, d, /(?=\()/],
       className: {
         1: "keyword",
@@ -234,9 +234,9 @@ e.exports = function(e) {
         begin: /\(\)/
       }, D]
     },
-    V = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
+    F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
     Z = {
-      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(V)],
+      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(F)],
       keywords: "async",
       className: {
         1: "keyword",
@@ -257,7 +257,7 @@ e.exports = function(e) {
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), k, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, C, {
+    }), M, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, T, S, A, N, C, {
       match: /\$\d+/
     }, v, x, {
       scope: "attr",
@@ -269,7 +269,7 @@ e.exports = function(e) {
       relevance: 0,
       contains: [C, e.REGEXP_MODE, {
         className: "function",
-        begin: V,
+        begin: F,
         returnBegin: !0,
         end: "\\s*=>",
         contains: [{
@@ -298,8 +298,8 @@ e.exports = function(e) {
         relevance: 0
       }, {
         variants: [{
-          begin: f,
-          end: _
+          begin: _,
+          end: f
         }, {
           match: p
         }, {
@@ -315,7 +315,7 @@ e.exports = function(e) {
           contains: ["self"]
         }]
       }]
-    }, M, {
+    }, k, {
       beginKeywords: "while if switch catch for"
     }, {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
@@ -337,7 +337,7 @@ e.exports = function(e) {
         1: "title.function"
       },
       contains: [D]
-    }, G, j, L, F, {
+    }, G, j, L, V, {
       match: /\$[(.]/
     }]
   }

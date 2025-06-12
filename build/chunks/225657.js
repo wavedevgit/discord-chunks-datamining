@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -13,12 +13,12 @@ var i = n(442837),
   c = n(594174),
   u = n(51144),
   d = n(388032);
-let f = e => {
+let _ = e => {
   let {
     selectedSkuId: t,
     validateSelectedGift: n,
-    className: f
-  } = e, _ = (0, i.Wu)([l.Z], () => l.Z.getFriendIDs()), p = (0, i.Wu)([c.default], () => c.default.filter(e => _.includes(e.id) && !e.bot), [_]), {
+    className: _
+  } = e, f = (0, i.Wu)([l.Z], () => l.Z.getFriendIDs()), p = (0, i.Wu)([c.default], () => c.default.filter(e => f.includes(e.id) && !e.bot), [f]), {
     giftRecipient: h,
     setGiftRecipient: m
   } = (0, s.wD)();
@@ -27,7 +27,7 @@ let f = e => {
     n(e, t), m(e)
   };
   return (0, r.jsxs)("div", {
-    className: f,
+    className: _,
     children: [(0, r.jsx)(a.vwX, {
       children: d.intl.string(d.t.xFn72t)
     }), (0, r.jsx)(a.VcW, {

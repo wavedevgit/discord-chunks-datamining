@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(35282);
 var r = n(255367),
   i = n(73800),
@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(100527),
   u = n(906732),
   d = n(379357),
-  f = n(358696),
-  _ = n(649700),
+  _ = n(358696),
+  f = n(649700),
   p = n(313201),
   h = n(952164),
   m = n(960870),
@@ -44,7 +44,7 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,21 +57,21 @@ function k(e) {
   return e
 }
 
-function M(e) {
+function k(e) {
   var t;
   let {
     user: n,
     currentUser: a,
     activity: x,
-    profileGuildId: M,
+    profileGuildId: k,
     className: j,
     onClose: U
-  } = e, G = (0, p.Dt)(), B = (0, p.Dt)(), F = i.useRef(null), {
-    themeType: V
+  } = e, G = (0, p.Dt)(), B = (0, p.Dt)(), V = i.useRef(null), {
+    themeType: F
   } = (0, I.z)(), {
     interactionSource: Z,
     interactionSourceId: H
-  } = (0, y.Xo)(), Y = (0, _.Z)({
+  } = (0, y.Xo)(), Y = (0, f.Z)({
     activity: x,
     user: n
   }), W = (0, E.Z)(x), K = null != W.text && "" !== W.text, {
@@ -132,26 +132,26 @@ function M(e) {
         onAction: X
       })
     });
-  if (null === V) return null;
+  if (null === F) return null;
   let et = null != (t = x.application_id) ? t : x.name,
     en = Z === D.n_.ACTIVITY && H === et;
   return (0, r.jsx)(u.Gt, {
     value: q,
     children: (0, r.jsx)(T.Z, {
-      targetElementRef: F,
+      targetElementRef: V,
       sourceType: D.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(O.Z, {
         user: n,
-        guildId: M,
-        themeType: V,
+        guildId: k,
+        themeType: F,
         sourceId: et,
         sourceDetails: null == Y ? (0, b.Z)(x) : null,
         entry: Y,
         sourceType: D.n_.ACTIVITY,
         onAction: X,
         children: () => (0, r.jsx)(v.Z, {
-          ref: F,
+          ref: V,
           user: n,
           className: L.toolbarContainer,
           sourceType: D.n_.ACTIVITY,
@@ -176,15 +176,15 @@ function M(e) {
             onAction: X,
             onClose: U,
             "aria-labelledby": K ? "".concat(B, " ").concat(G) : G,
-            children: [(0, r.jsx)(N.Z, k({
+            children: [(0, r.jsx)(N.Z, M({
               textId: B
             }, W)), (0, r.jsx)("div", {
               className: L.body,
               children: (0, r.jsxs)("div", {
                 className: L.content,
-                children: [(0, r.jsx)(f.E, {
+                children: [(0, r.jsx)(_.E, {
                   image: z,
-                  size: V === D.lY.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
+                  size: F === D.lY.MODAL_V2 ? _.J.SIZE_100 : _.J.SIZE_60,
                   className: L.clickableImage,
                   onClick: e => {
                     e.stopPropagation(), X({
@@ -208,10 +208,10 @@ function M(e) {
                     user: n,
                     activity: x,
                     className: L.badges
-                  }), $(), V === D.lY.MODAL_V2 && ee()]
-                }), V === D.lY.MODAL && ee()]
+                  }), $(), F === D.lY.MODAL_V2 && ee()]
+                }), F === D.lY.MODAL && ee()]
               })
-            }), V !== D.lY.MODAL && V !== D.lY.MODAL_V2 && ee()]
+            }), F !== D.lY.MODAL && F !== D.lY.MODAL_V2 && ee()]
           })
         })
       })

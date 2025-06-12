@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(254494),
   u = n(895924),
   d = n(826298),
-  f = n(700969);
+  _ = n(700969);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -80,7 +80,7 @@ function I(e) {
     className: t,
     channel: n,
     sections: a,
-    activeCategoryIndex: _,
+    activeCategoryIndex: f,
     filteredSectionId: h,
     onSectionClick: E,
     applicationCommandListRef: I
@@ -100,7 +100,7 @@ function I(e) {
       b = (0, r.jsx)(o, {
         channel: n,
         section: i,
-        isSelected: null != h ? i.id === h : _ === t,
+        isSelected: null != h ? i.id === h : f === t,
         padding: l,
         width: c,
         height: c,
@@ -108,7 +108,7 @@ function I(e) {
       }),
       v = i.type !== u.Qi.BUILT_IN && t < a.length - 1 && a[t + 1].type === u.Qi.BUILT_IN;
     return (0, r.jsxs)("div", {
-      className: f.section,
+      className: _.section,
       children: [(0, r.jsx)(s.ua7, {
         text: i.name,
         position: "right",
@@ -126,18 +126,18 @@ function I(e) {
           }))
         }
       }), v ? (0, r.jsx)("hr", {
-        className: f.builtInSeparator
+        className: _.builtInSeparator
       }) : null]
     }, i.id)
-  }, [_, n, E, a, h]);
+  }, [f, n, E, a, h]);
   return 0 === a.length ? null : (0, r.jsx)("div", {
-    className: o()(t, f.wrapper),
+    className: o()(t, _.wrapper),
     children: (0, r.jsx)(c.Z, {
       categoryListRef: T,
       expressionsListRef: I,
       store: l.Xn,
       categories: a,
-      className: f.list,
+      className: _.list,
       renderCategoryListItem: N,
       rowCount: a.length,
       categoryHeight: S,
