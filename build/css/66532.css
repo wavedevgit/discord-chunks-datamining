@@ -1,6 +1,6 @@
 /**
   Module ID: 66532
-  Original File Name: c15abef86c49ecfb
+  Original File Name: 1ca6e4ccaaba851e
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -228,7 +228,7 @@
 }
 
 .pillContainer__18dd3 {
-    background: var(--background-primary);
+    background: var(--background-base-lowest);
     border-radius: var(--radius-md);
     left: 50%;
     position: absolute;
@@ -391,14 +391,14 @@
 
 .premiumRebrandHeader_e50a4d {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-lowest);
     display: flex;
     justify-content: space-between;
     padding: var(--spacing-24) var(--spacing-16) 0
 }
 
 .skuSelectModalContent_e50a4d.premiumRebrandContent_e50a4d.premiumRebrandContent_e50a4d {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-md);
     height: unset;
     padding: var(--spacing-24) var(--spacing-16) var(--spacing-16) var(--spacing-16);
@@ -684,4 +684,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=c15abef86c49ecfb.css.map*/
+/*# sourceMappingURL=1ca6e4ccaaba851e.css.map*/

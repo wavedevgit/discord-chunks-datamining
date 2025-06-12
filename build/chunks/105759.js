@@ -2,8 +2,8 @@
 t.d(n, {
   Z: () => d
 });
-var l = t(73800),
-  i = t(442837),
+var i = t(73800),
+  l = t(442837),
   r = t(598077),
   s = t(699516),
   a = t(431),
@@ -12,7 +12,7 @@ var l = t(73800),
 
 function d() {
   let e = (0, o.w)(C.a7),
-    n = (0, i.e7)([a.Z], () => a.Z.getReferrer(null == e ? void 0 : e.trial_id)),
-    t = (0, i.e7)([s.Z], () => null == n || s.Z.isBlockedOrIgnored(n.id));
-  return l.useMemo(() => t || null == n ? null : new r.Z(n), [n, t])
+    n = (0, l.e7)([a.Z], () => a.Z.getReferrer(null == e ? void 0 : e.trial_id)),
+    t = (0, l.e7)([s.Z], () => null == n || s.Z.isBlockedOrIgnored(n.id));
+  return i.useMemo(() => t || null == n ? null : new r.Z(n), [n, t])
 }

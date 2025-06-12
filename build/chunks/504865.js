@@ -35,7 +35,7 @@ let p = function(e) {
     let e = n === m.rV.YEAR;
     return (0, i.jsxs)("div", {
       children: [(0, i.jsx)(o.Text, {
-        variant: e ? "heading-md/semibold" : "heading-xxl/semibold",
+        variant: e ? "heading-md/semibold" : "heading-xxl/bold",
         color: e ? "text-muted" : I ? "header-primary" : "always-white",
         tag: "span",
         children: (0, i.jsx)("span", {

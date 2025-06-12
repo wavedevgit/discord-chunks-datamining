@@ -1,6 +1,6 @@
 /**
   Module ID: 94421
-  Original File Name: 61a76f79eb347d85
+  Original File Name: 79c0946fd06ff07c
 **/
 .badgeContainer__98c7b {
     display: flex;
@@ -1926,8 +1926,8 @@
 }
 
 .tier0__61870 {
-    background: var(--background-secondary);
-    border: 1px solid var(--bg-mod-strong);
+    background: var(--background-surface-high);
+    border: 1px solid var(--border-subtle);
     margin-top: var(--spacing-12)
 }
 
@@ -1935,12 +1935,8 @@
     margin-top: var(--spacing-24)
 }
 
-.theme-light .tier2__61870 {
-    background: radial-gradient(100% 100% at 50% 100%,#fff 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-nitro-1-start) 0,var(--background-modal-gradient-nitro-1-end) 100%)
-}
-
 .tier2__61870 {
-    background: radial-gradient(100% 100% at 50% 100%,#0f0b16 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-nitro-1-start) 0,var(--background-modal-gradient-nitro-1-end) 100%);
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-base-lowest) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-nitro-1-start) 0,var(--background-modal-gradient-nitro-1-end) 100%);
     box-shadow: inset 0 0 0 1px var(--border-subtle)
 }
 
@@ -2027,4 +2023,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=61a76f79eb347d85.css.map*/
+/*# sourceMappingURL=79c0946fd06ff07c.css.map*/
