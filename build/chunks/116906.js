@@ -42,18 +42,18 @@ function I(e) {
   }), {
     live: A,
     recent: C,
-    stream: _
+    stream: w
   } = (0, f.Z)(n.id), {
-    voiceChannel: w,
-    voiceActivity: M
+    voiceChannel: _,
+    voiceActivity: R
   } = (0, p.Z)({
     userId: n.id,
     guildId: P
-  }), R = (0, r.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), U = n.id === t.id, L = (0, r.e7)([c.Z, a.Z], () => {
+  }), M = (0, r.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), U = n.id === t.id, L = (0, r.e7)([c.Z, a.Z], () => {
     let e = U ? c.Z.getStatus() : a.Z.getStatus(n.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), D = A.length > 0 || null != _, B = T && null == _ && null == M && null != w, G = !L && (D || B), k = C.length > 0;
-  return G || k || !R ? (0, l.jsxs)(i.zJl, {
+  }), D = A.length > 0 || null != w, B = T && null == w && null == R && null != _, G = !L && (D || B), k = C.length > 0;
+  return G || k || !M ? (0, l.jsxs)(i.zJl, {
     className: y.scroller,
     fade: !0,
     children: [G ? (0, l.jsx)(g.Z, {
@@ -64,15 +64,15 @@ function I(e) {
           children: (0, l.jsx)(m.Z, {
             user: n,
             currentUser: t,
-            voiceChannel: w,
+            voiceChannel: _,
             onClose: S
           })
-        }), null != _ && (0, l.jsx)("li", {
+        }), null != w && (0, l.jsx)("li", {
           children: (0, l.jsx)(h.Z, {
             location: "UserProfileModalActivity",
             user: n,
             currentUser: t,
-            stream: _,
+            stream: w,
             onClose: S,
             profileGuildId: null == I ? void 0 : I.guildId
           })

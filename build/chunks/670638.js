@@ -24,7 +24,7 @@ var r = n(255367),
   y = n(231338),
   O = n(388032);
 
-function T(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function T(e) {
   return e
 }
 
-function N(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,8 +60,8 @@ function E(e) {
   var t;
   let n = (0, i.e7)([h.Z], () => h.Z.questDeliveryOverride, []),
     c = (0, j.GN)(e.questContent),
-    T = [f.jn.QUEST_BAR_V2, f.jn.QUEST_BAR].includes(e.questContent),
-    N = (0, m.O5)(),
+    N = [f.jn.QUEST_BAR_V2, f.jn.QUEST_BAR].includes(e.questContent),
+    T = (0, m.O5)(),
     E = (0, p.aM)(),
     q = (0, g.Yj)(e.quest),
     {
@@ -121,7 +121,7 @@ function E(e) {
         id: "learn-more",
         label: O.intl.string(O.t.Ws2Bl5),
         action: () => {
-          N({
+          T({
             questId: e.quest.id,
             questContent: e.questContent,
             questContentPosition: e.questContentPosition,
@@ -147,12 +147,12 @@ function E(e) {
         id: "hide-entrypoint",
         label: O.intl.string(O.t.NN79Ex),
         action: () => {
-          N({
+          T({
             questId: e.quest.id,
             questContent: e.questContent,
             questContentPosition: e.questContentPosition,
             questContentCTA: m.jZ.CONTEXT_MENU_HIDE_CONTENT
-          }), (0, j.GN)(e.questContent) && ((0, x.gl)(e.quest.id, e.questContent), T && (0, b.maybeShowSurveyForQuest)(e.quest))
+          }), (0, j.GN)(e.questContent) && ((0, x.gl)(e.quest.id, e.questContent), N && (0, b.maybeShowSurveyForQuest)(e.quest))
         },
         subtext: O.intl.string(O.t["1u3YPD"])
       })]
@@ -245,13 +245,13 @@ function q(e) {
         closePopout: t
       } = e;
       return a ? (0, r.jsx)(c.Z, {
-        children: (0, r.jsx)(E, N(T({}, p), {
+        children: (0, r.jsx)(E, T(N({}, p), {
           quest: l,
           questContent: u,
           questContentPosition: d,
           onClose: t
         }))
-      }) : (0, r.jsx)(E, N(T({}, p), {
+      }) : (0, r.jsx)(E, T(N({}, p), {
         quest: l,
         questContent: u,
         questContentPosition: d,

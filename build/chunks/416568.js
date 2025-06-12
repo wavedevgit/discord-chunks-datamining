@@ -1,6 +1,6 @@
 /** Chunk was on 98787 **/
 n.d(t, {
-  Z: () => ep
+  Z: () => ef
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -109,7 +109,11 @@ function es(e, t) {
   return i
 }
 let ea = (0, M.isWindows)() ? 4 : 12 * !(0, M.isMac)();
-class ec {
+
+function ec(e) {
+  return e.startsWith(et.Z5c.GUILD_DISCOVERY) || e.startsWith(et.Z5c.GLOBAL_DISCOVERY)
+}
+class eu {
   setGuildsTree(e) {
     this.guildsTree = e
   }
@@ -123,7 +127,7 @@ class ec {
       null == (e = this.observer) || e.disconnect(), this.observer = void 0
     }, this.scrollToGuild = (e, t) => {
       let n = this.scrollerRef.current;
-      if (null == n || null == e && window.location.pathname.startsWith(et.Z5c.GUILD_DISCOVERY) || e === et.x8Z.SERVER_DISCOVERY_BADGE || e === et.x8Z.E3_SERVER_DISCOVERY_BADGE) return;
+      if (null == n || null == e && ec(window.location.pathname) || e === et.x8Z.SERVER_DISCOVERY_BADGE || e === et.x8Z.E3_SERVER_DISCOVERY_BADGE) return;
       if (null == e) return void n.scrollTo({
         to: 0,
         animate: t
@@ -181,7 +185,7 @@ class ec {
   }
 }
 
-function eu(e) {
+function ed(e) {
   let {
     hideDms: t,
     scrollToTop: n,
@@ -204,7 +208,7 @@ function eu(e) {
   })
 }
 
-function ed(e) {
+function eh(e) {
   let {
     guildDiscoveryButton: t,
     disableAppDownload: n,
@@ -232,7 +236,7 @@ function ed(e) {
   })
 }
 
-function eh(e) {
+function ep(e) {
   let {
     disableAppDownload: t = M.isPlatformEmbedded,
     isOverlay: n = !1,
@@ -243,7 +247,7 @@ function eh(e) {
     return [e, e.version]
   }), p = (0, h.e7)([E.Z], () => E.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), O = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, x] = i.useState(!1), P = i.useCallback(() => x(!0), []), I = i.useCallback(() => x(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), k = i.useRef(null), V = i.useRef(null), H = (0, u.OP)(), {
     ref: F
-  } = H, z = es(H, ["ref"]), K = (0, m.mFp)(), [Y, Q] = i.useState(!1), [$, ee] = i.useState(!1), ei = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), eh = (0, m.dQu)(g.Z.space.SPACE_XS), ep = i.useMemo(() => new ec(d, Q, ee, () => {
+  } = H, z = es(H, ["ref"]), K = (0, m.mFp)(), [Y, Q] = i.useState(!1), [$, ee] = i.useState(!1), et = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), ei = (0, m.dQu)(g.Z.space.SPACE_XS), ep = i.useMemo(() => new eu(d, Q, ee, () => {
     var e, t;
     null == (e = k.current) || e.calculateState(), null == (t = V.current) || t.calculateState()
   }, function(e, t, n) {
@@ -257,7 +261,7 @@ function eh(e) {
       separatorSize: l,
       heightBeforeIcons: ea + l
     }
-  }(ei, a, eh)), [ei, eh, d, a]);
+  }(et, a, ei)), [et, ei, d, a]);
   i.useEffect(() => (ep.setResizeObserver(), () => {
     ep.clearResizeObserver()
   }), [ep]);
@@ -265,11 +269,10 @@ function eh(e) {
     analyticsLocations: ef
   } = (0, _.ZP)(v.Z.GUILDS_LIST), {
     pathname: eg
-  } = (0, c.TH)(), em = eg.startsWith(et.Z5c.GUILD_DISCOVERY) || eg.startsWith(et.Z5c.GLOBAL_DISCOVERY);
+  } = (0, c.TH)(), em = ec(eg);
   (0, y.Ng)(() => {
     if (!R.current && 0 !== d.size) {
-      if (em) ep.scrollToGuild(null, !1);
-      else {
+      if (!em) {
         let {
           scrollTop: e
         } = A.Z.getGuildListDimensions();
@@ -392,10 +395,10 @@ function eh(e) {
               gap: "xs",
               ref: ep.scrollerRef,
               onScroll: ep.handleScroll,
-              children: [(0, r.jsx)(eu, {
+              children: [(0, r.jsx)(ed, {
                 scrollToTop: eb,
                 lurkingGuildIds: b
-              }), (0, r.jsx)(q.Z, {}), (0, r.jsx)(ed, {
+              }), (0, r.jsx)(q.Z, {}), (0, r.jsx)(eh, {
                 guildDiscoveryButton: eI,
                 disableAppDownload: t,
                 isOverlay: n,
@@ -418,10 +421,10 @@ function eh(e) {
     })
   })
 }
-let ep = i.memo(function(e) {
+let ef = i.memo(function(e) {
   let t = (0, O.Z)("guildsnav");
   return (0, r.jsx)(u.bG, {
     navigator: t,
-    children: (0, r.jsx)(eh, el({}, e))
+    children: (0, r.jsx)(ep, el({}, e))
   })
 }, (e, t) => !1 === t.isVisible || (0, p.Z)(e, t))
