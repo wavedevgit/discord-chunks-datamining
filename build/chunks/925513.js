@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Jr: () => m,
-  O6: () => h,
+  Jr: () => g,
+  O6: () => m,
   _i: () => _,
-  v6: () => g
+  v6: () => E
 });
 var r = n(73800),
   i = n(524437),
@@ -43,10 +43,13 @@ let _ = e => {
     } = e;
     if (null != t && t !== i.Q4.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
     let a = o.default.getCurrentUser();
-    return (null == a ? void 0 : a.nsfwAllowed) === !1 ? p({
+    return (0, s.bc)("resolveSettingWithDefaults") ? f({
       isDm: n,
       isFriend: r
-    }) : f({
+    }) : (0, s.g2)("resolveSettingWithDefaults") ? i.Q4.BLUR : (null == a ? void 0 : a.nsfwAllowed) === !1 ? h({
+      isDm: n,
+      isFriend: r
+    }) : p({
       isDm: n,
       isFriend: r
     })
@@ -56,16 +59,23 @@ let _ = e => {
       isDm: t = !1,
       isFriend: n = !1
     } = e;
-    return t && n ? i.Q4.SHOW : t ? i.Q4.BLOCK : i.Q4.SHOW
+    return t && !n ? i.Q4.BLOCK : i.Q4.BLUR
   },
   p = e => {
     let {
       isDm: t = !1,
       isFriend: n = !1
     } = e;
-    return t && n ? i.Q4.BLUR : t ? i.Q4.BLOCK : i.Q4.BLUR
+    return t && n ? i.Q4.SHOW : t ? i.Q4.BLOCK : i.Q4.SHOW
   },
   h = e => {
+    let {
+      isDm: t = !1,
+      isFriend: n = !1
+    } = e;
+    return t && n ? i.Q4.BLUR : t ? i.Q4.BLOCK : i.Q4.BLUR
+  },
+  m = e => {
     let t = null != e ? e : a.j7.getSetting();
     return {
       goreContentGuilds: _({
@@ -82,11 +92,11 @@ let _ = e => {
       })
     }
   },
-  m = e => {
-    let t = h();
+  g = e => {
+    let t = m();
     a.j7.updateSetting(d({}, t, e))
   },
-  g = () => {
+  E = () => {
     let e = (0, l.pn)("SensitiveContentFilterSetting"),
       t = (0, s.UQ)("SensitiveContentFilterSetting");
     return r.useMemo(() => e && t ? c.BhN.EXPLICIT_MEDIA_REDACTION_UK_ONLY : c.BhN.EXPLICIT_MEDIA_REDACTION, [e, t])
