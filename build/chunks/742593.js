@@ -24,7 +24,7 @@ var l = n(120356),
   j = n(388032),
   h = n(274569);
 
-function y(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function y(e) {
   return e
 }
 
-function x(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,21 +70,21 @@ function P(e) {
   w = null == N || null != w ? w : (0, p.DK)(N);
   let {
     startTime: T
-  } = (0, f.ZP)(null != v ? v : P, w), D = (0, d.Z)(w, v.id), Z = (null == N ? void 0 : N.scheduled_start_time) != null ? (0, p.lh)(D, T, new Date(N.scheduled_start_time)) : null;
+  } = (0, f.ZP)(null != v ? v : P, w), Z = (0, d.Z)(w, v.id), D = (null == N ? void 0 : N.scheduled_start_time) != null ? (0, p.lh)(Z, T, new Date(N.scheduled_start_time)) : null;
   if (null == N) return null;
   let {
     entity_type: I,
     status: _,
-    recurrence_rule: C
+    recurrence_rule: L
   } = N;
   return (0, r.jsxs)("div", {
     className: i()(h.statusContainer, t),
     children: [(0, r.jsx)(O.z, {
       startTime: T.toISOString(),
-      status: null != Z ? Z : _,
+      status: null != D ? D : _,
       eventType: I,
       isNew: s,
-      recurrenceRule: (0, m.KV)(C),
+      recurrenceRule: (0, m.KV)(L),
       guildEventId: v.id,
       recurrenceId: w
     }), (0, r.jsx)("div", {
@@ -93,7 +93,7 @@ function P(e) {
       text: j.intl.formatToPlainString(j.t["+3iypa"], {
         username: null != S ? S : u.ZP.getName(n)
       }),
-      children: e => (0, r.jsx)(c.qEK, x(y({}, e), {
+      children: e => (0, r.jsx)(c.qEK, y(x({}, e), {
         src: n.getAvatarURL(l, 20),
         size: c.EFr.SIZE_20,
         "aria-label": null != S ? S : n.username,
@@ -103,7 +103,7 @@ function P(e) {
       text: j.intl.formatToPlainString(j.t["+DLsDw"], {
         count: E
       }),
-      children: e => (0, r.jsxs)("div", x(y({
+      children: e => (0, r.jsxs)("div", y(x({
         className: h.rsvpCount
       }, e), {
         children: [(0, r.jsx)(c.BFJ, {

@@ -28,7 +28,7 @@ function d(e) {
   } = e, f = o.Z.getMessage(u, d.id);
   if ((null == f || null == (n = f.embeds) || null == (t = n[0]) ? void 0 : t.type) === r.h.AGE_VERIFICATION_SYSTEM_NOTIFICATION) {
     let e = null == (i = f.embeds[0].fields) ? void 0 : i.find(e => e.rawName === l.g0.CONTENT_TYPE);
-    (null == e ? void 0 : e.rawValue) === l.L0.ERROR ? (a.Z.showFailedToast(c.w.TIGGER_PAWTECT_ERROR), (0, s.zi)(s.o6.ERROR)) : (null == e ? void 0 : e.rawValue) === l.L0.VERIFIED_ADULT ? (a.Z.showSuccessToast(c.w.TIGGER_PAWTECT_VERIFIED), (0, s.zi)(s.o6.VERIFIED_ADULT)) : (null == e ? void 0 : e.rawValue) === l.L0.VERIFIED_TEEN && (a.Z.showSuccessToast(c.w.TIGGER_PAWTECT_VERIFIED), (0, s.zi)(s.o6.VERIFIED_TEEN))
+    (null == e ? void 0 : e.rawValue) === l.L0.ERROR ? (a.Z.showFailedToast(c.wQ.TIGGER_PAWTECT_ERROR), (0, s.zi)(s.o6.ERROR)) : (null == e ? void 0 : e.rawValue) === l.L0.VERIFIED_ADULT ? (a.Z.showSuccessToast(c.wQ.TIGGER_PAWTECT_VERIFIED), (0, s.zi)(s.o6.VERIFIED_ADULT)) : (null == e ? void 0 : e.rawValue) === l.L0.VERIFIED_TEEN && (a.Z.showSuccessToast(c.wQ.TIGGER_PAWTECT_VERIFIED), (0, s.zi)(s.o6.VERIFIED_TEEN))
   }
 }
 class f extends i.Z {

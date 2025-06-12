@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 9f185f7c70b007c1
+  Original File Name: 4e21479e920d7286
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -467,6 +467,10 @@
     min-height: 0;
     position: relative;
     --custom-chat-input-margin-bottom: 24px
+}
+
+.visual-refresh.align-chat-input .content__0bd4a {
+    --custom-chat-input-margin-bottom: 8px
 }
 
 .container_a51e6d {
@@ -3605,4 +3609,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=9f185f7c70b007c1.css.map*/
+/*# sourceMappingURL=4e21479e920d7286.css.map*/

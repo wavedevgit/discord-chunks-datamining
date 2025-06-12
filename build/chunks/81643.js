@@ -94,7 +94,7 @@ function T(e) {
           onCancel: c
         })
       } catch (e) {
-        l.Z.showFailedToast(p.w.TIGGER_PAWTECT_ERROR), c()
+        l.Z.showFailedToast(p.wQ.TIGGER_PAWTECT_ERROR), c()
       } finally {
         n(!1)
       }

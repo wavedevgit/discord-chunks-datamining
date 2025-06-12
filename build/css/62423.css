@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 90bdc57b17c242c0
+  Original File Name: 56d360363af8e657
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -424,6 +424,10 @@ strong {
     min-height: 0;
     position: relative;
     --custom-chat-input-margin-bottom: 24px
+}
+
+.visual-refresh.align-chat-input .content__0bd4a {
+    --custom-chat-input-margin-bottom: 8px
 }
 
 @keyframes placeholderPulse_c8ffbb {
@@ -13259,4 +13263,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=90bdc57b17c242c0.css.map*/
+/*# sourceMappingURL=56d360363af8e657.css.map*/

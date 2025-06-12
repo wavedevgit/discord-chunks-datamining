@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 4d1f395b81a0d0b1
+  Original File Name: be4e1bb75c64caad
 **/
 .container__74da2 {
     align-items: center;
@@ -4644,10 +4644,6 @@
     --custom-chat-input-margin-bottom: 24px
 }
 
-.visual-refresh.align-chat-input .panels_c48ade {
-    overflow: hidden
-}
-
 .visual-refresh.align-chat-input .container_c48ade {
     --custom-chat-input-margin-bottom: var(--space-xs)
 }
@@ -8682,4 +8678,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=4d1f395b81a0d0b1.css.map*/
+/*# sourceMappingURL=be4e1bb75c64caad.css.map*/

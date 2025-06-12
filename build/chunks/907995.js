@@ -1,39 +1,51 @@
 /** Chunk was on 22472 **/
 n.d(t, {
-  f: () => c
+  f: () => m
 });
-var i = n(255367);
-n(73800);
-var r = n(120356),
-  s = n.n(r),
-  l = n(481060),
-  a = n(388032),
-  o = n(98199);
+var i = n(255367),
+  r = n(73800),
+  s = n(120356),
+  l = n.n(s),
+  a = n(481060),
+  o = n(711703),
+  c = n(484710),
+  d = n(388032),
+  u = n(98199);
 
-function c(e) {
+function m(e) {
   let {
     label: t,
     labelHook: n,
-    dismissNotice: r,
-    className: c
-  } = e;
+    dismissNotice: s,
+    className: m,
+    noticeType: g
+  } = e, p = null != s;
+  r.useEffect(() => {
+    (0, o.l)(g, c.up.VIEWED)
+  }, [g]);
+  let h = r.useCallback(() => {
+      null != s && (s(), (0, o.l)(g, c.up.DISMISS))
+    }, [g, s]),
+    f = r.useCallback(() => {
+      n(), (0, o.l)(g, c.up.LEARN_MORE)
+    }, [g, n]);
   return (0, i.jsxs)("div", {
-    className: s()(o.safetySettingsNotice, c),
-    children: [(0, i.jsx)(l.d3s, {
+    className: l()(u.safetySettingsNotice, m),
+    children: [(0, i.jsx)(a.d3s, {
       size: "md"
-    }), (0, i.jsx)(l.Text, {
+    }), (0, i.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "interactive-active",
-      children: a.intl.format(t, {
-        hook: (e, t) => (0, i.jsx)(l.eee, {
-          onClick: n,
+      children: d.intl.format(t, {
+        hook: (e, t) => (0, i.jsx)(a.eee, {
+          onClick: f,
           children: e
         }, t)
       })
-    }), null != r && (0, i.jsx)(l.P3F, {
-      className: o.closeButton,
-      onClick: r,
-      children: (0, i.jsx)(l.Dio, {})
+    }), p && (0, i.jsx)(a.P3F, {
+      className: u.closeButton,
+      onClick: h,
+      children: (0, i.jsx)(a.Dio, {})
     })]
   })
 }

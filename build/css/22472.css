@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: 76459308225265a9
+  Original File Name: da16568eab7d9e04
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4439,9 +4439,15 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .visual-refresh.align-chat-input .container__37e49 {
+    border-radius: 7px;
     height: 56px;
     margin-left: -1px;
     padding: 12px
+}
+
+.visual-refresh.align-chat-input .containerListenAlongVisible__37e49,.visual-refresh.align-chat-input .containerQuestBarVisible__37e49,.visual-refresh.align-chat-input .containerRtcOpened__37e49 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
 }
 
 .visual-refresh.align-chat-input .panelTitleContainer__37e49 {
@@ -19465,4 +19471,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=76459308225265a9.css.map*/
+/*# sourceMappingURL=da16568eab7d9e04.css.map*/

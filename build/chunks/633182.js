@@ -17,41 +17,41 @@ function u(e, t, n) {
     f = r.Z.getChannel(n),
     _ = null != (u = a.ZP.getName(null == f ? void 0 : f.guild_id, null == f ? void 0 : f.id, d)) ? u : o.ZP.getGlobalName(d);
   switch (e) {
-    case s.w.IGNORE_SUCCESS:
+    case s.wQ.IGNORE_SUCCESS:
       return l.intl.formatToPlainString(l.t["+joqrK"], {
         username: _
       });
-    case s.w.UNIGNORE_SUCCESS:
+    case s.wQ.UNIGNORE_SUCCESS:
       return l.intl.formatToPlainString(l.t.THExKS, {
         username: _
       });
-    case s.w.BLOCK_SUCCESS:
+    case s.wQ.BLOCK_SUCCESS:
       return l.intl.formatToPlainString(l.t.XXPrIi, {
         username: _
       });
-    case s.w.UNBLOCK_SUCCESS:
+    case s.wQ.UNBLOCK_SUCCESS:
       return l.intl.formatToPlainString(l.t.uExcGR, {
         username: _
       });
-    case s.w.MUTE_SUCCESS:
+    case s.wQ.MUTE_SUCCESS:
       return l.intl.formatToPlainString(l.t.X4NtYW, {
         username: _
       });
-    case s.w.UNMUTE_SUCCESS:
+    case s.wQ.UNMUTE_SUCCESS:
       return l.intl.formatToPlainString(l.t.tRaBfX, {
         username: _
       });
-    case s.w.REPORT_SUCCESS:
+    case s.wQ.REPORT_SUCCESS:
       return l.intl.formatToPlainString(l.t.FOptFR, {
         username: _
       });
-    case s.w.TIGGER_PAWTECT_ERROR:
+    case s.wQ.TIGGER_PAWTECT_ERROR:
       return l.intl.string(l.t.c6kn6O);
-    case s.w.TIGGER_PAWTECT_VERIFIED:
+    case s.wQ.TIGGER_PAWTECT_VERIFIED:
       return l.intl.string(l.t.XwKo1t);
-    case s.w.GENERIC_ERROR:
+    case s.wQ.GENERIC_ERROR:
       return l.intl.string(l.t.zBpoc3);
-    case s.w.REPORT_TO_MOD_SUCCESS:
+    case s.wQ.REPORT_TO_MOD_SUCCESS:
       return l.intl.string(c.default.iBypeX);
     default:
       return l.intl.string(l.t["+c5xtb"])

@@ -135,7 +135,7 @@ function S(e, t, n) {
     url: x(t),
     body: r,
     rejectWithError: !1
-  }).then(e => (d.Z.showSuccessToast(p.w.REPORT_TO_MOD_SUCCESS), (null == r ? void 0 : r.channel_id) != null && (null == r ? void 0 : r.message_id) != null && l.Z.dispatch({
+  }).then(e => (d.Z.showSuccessToast(p.wQ.REPORT_TO_MOD_SUCCESS), (null == r ? void 0 : r.channel_id) != null && (null == r ? void 0 : r.message_id) != null && l.Z.dispatch({
     type: "REPORT_TO_MOD_REPORT_MESSAGE_SUCCESS",
     channelId: r.channel_id,
     messageId: r.message_id

@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 4e6b543b5a38a78c
+  Original File Name: 084ffea0ba01882e
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -209,6 +209,10 @@
     min-height: 0;
     position: relative;
     --custom-chat-input-margin-bottom: 24px
+}
+
+.visual-refresh.align-chat-input .content__0bd4a {
+    --custom-chat-input-margin-bottom: 8px
 }
 
 .wrapper__00943 {
@@ -3263,4 +3267,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=4e6b543b5a38a78c.css.map*/
+/*# sourceMappingURL=084ffea0ba01882e.css.map*/
