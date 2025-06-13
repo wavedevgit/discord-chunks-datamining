@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 9f0f5e368db1a023
+  Original File Name: 8a3f506de2ffd4ef
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -500,13 +500,6 @@
     flex-direction: column
 }
 
-.headerContainer__89463 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: var(--spacing-8)
-}
-
 .powerupContainer__89463 {
     display: flex;
     flex-wrap: wrap;
@@ -547,4 +540,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=9f0f5e368db1a023.css.map*/
+/*# sourceMappingURL=8a3f506de2ffd4ef.css.map*/

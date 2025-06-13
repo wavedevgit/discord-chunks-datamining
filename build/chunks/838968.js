@@ -11,8 +11,8 @@ var i = t(120356),
   a = t(477415),
   l = t(690786),
   c = t(192371),
-  d = t(279604),
-  u = t(93841),
+  u = t(279604),
+  d = t(93841),
   p = t(388032),
   m = t(117172);
 
@@ -28,7 +28,7 @@ function _(e) {
     }), (0, r.jsx)(s.Text, {
       color: "status-warning",
       variant: "text-sm/bold",
-      children: p.intl.formatToMarkdownString(u.default["ol/ao6"], {
+      children: p.intl.formatToMarkdownString(d.default["ol/ao6"], {
         dateString: (0, c.Z)(n)
       })
     })]
@@ -67,7 +67,7 @@ function x(e) {
       }), (0, r.jsx)(s.Text, {
         color: "text-positive",
         variant: "text-sm/bold",
-        children: p.intl.string(u.default.FFLkm5)
+        children: p.intl.string(d.default.FFLkm5)
       })]
     }))]
   })
@@ -79,10 +79,10 @@ function f(e) {
     powerup: t,
     className: i,
     onHover: c,
-    children: u
+    children: d
   } = e, p = (0, a.Z)(n, t), _ = (0, l.Z)(n, t), x = null != _ || p, f = (null == _ ? void 0 : _.ends_at) != null, {
     onShowMore: v
-  } = (0, d.ZP)(n, t);
+  } = (0, u.ZP)(n, t);
   return (0, r.jsx)("div", {
     className: m.parentContainer,
     children: (0, r.jsx)(s.kL8, {
@@ -94,7 +94,7 @@ function f(e) {
         [m.active]: x,
         [m.warning]: f
       }, i),
-      children: u
+      children: d
     })
   })
 }
