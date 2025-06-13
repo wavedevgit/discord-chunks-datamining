@@ -64,13 +64,13 @@ function O(e) {
     channelId: O,
     messageId: P,
     roleId: N
-  }), D = [{
+  }), L = [{
     icon: i.owK,
     description: j.intl.string(j.t.kcuWvb)
   }, {
     icon: i.owK,
     description: j.intl.string(S ? j.t.QxrDY2 : j.t.W6fjkZ)
-  }], L = (0, m.ZP)(t.id, w), U = u.ZP.getName(null == L ? void 0 : L.guildId, O, t), k = (0, r.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)) ? j.intl.formatToPlainString(j.t.KRe1Fh, {
+  }], D = (0, m.ZP)(t.id, w), U = u.ZP.getName(null == D ? void 0 : D.guildId, O, t), k = (0, r.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)) ? j.intl.formatToPlainString(j.t.KRe1Fh, {
     name: U
   }) : j.intl.string(j.t["3N/J2t"]);
   return (0, o.jsx)(l.Gt, {
@@ -78,9 +78,9 @@ function O(e) {
     children: (0, o.jsx)(f.Mt, {
       value: B,
       openedAt: T,
-      fetchStartedAt: null == L ? void 0 : L.fetchStartedAt,
-      fetchEndedAt: null == L ? void 0 : L.fetchEndedAt,
-      isLoaded: null == L ? void 0 : L.isLoaded,
+      fetchStartedAt: null == D ? void 0 : D.fetchStartedAt,
+      fetchEndedAt: null == D ? void 0 : D.fetchEndedAt,
+      isLoaded: null == D ? void 0 : D.isLoaded,
       children: (0, o.jsx)(i.Y0X, {
         transitionState: A,
         className: I.root,
@@ -88,7 +88,7 @@ function O(e) {
         parentComponent: "RestrictedUserProfileModalV2",
         children: (0, o.jsxs)(_.Z, {
           user: t,
-          displayProfile: L,
+          displayProfile: D,
           themeType: h.lY.MODAL_V2,
           children: [(0, o.jsx)("div", {
             className: I.background
@@ -113,7 +113,7 @@ function O(e) {
               })]
             }), (0, o.jsx)("div", {
               className: I.safetyTable,
-              children: D.map((e, t) => {
+              children: L.map((e, t) => {
                 let {
                   icon: n,
                   description: r

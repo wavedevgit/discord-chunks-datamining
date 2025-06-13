@@ -34,8 +34,8 @@ var o = n(255367),
   S = n(648052),
   E = n(867176),
   B = n(280885),
-  D = n(537006),
-  L = n(681837),
+  L = n(537006),
+  D = n(681837),
   U = n(78806),
   k = n(91433),
   M = n(451834),
@@ -187,7 +187,7 @@ function et(e) {
                   onClose: eu,
                   className: ee.profileSection,
                   nickname: O.ZP.useName(null == ej ? void 0 : ej.guildId, en, n),
-                  nicknameIcons: (0, o.jsx)(L.Z, {
+                  nicknameIcons: (0, o.jsx)(D.Z, {
                     size: "sm",
                     userId: n.id
                   }),
@@ -239,7 +239,7 @@ function et(e) {
                         variant: "text-sm/normal"
                       })
                     })
-                  }), n.id === i.id && (0, o.jsx)(D.Z, {
+                  }), n.id === i.id && (0, o.jsx)(L.Z, {
                     className: ee.profileSection,
                     isPremiumUser: (0, P.I5)(i),
                     onInteraction: eu

@@ -12,7 +12,7 @@ var r = n(481060),
   s = n(806729),
   d = n(821179),
   u = n(264481),
-  f = n(274151);
+  f = n(714905);
 
 function p(e) {
   let {
@@ -30,7 +30,7 @@ function p(e) {
     children: null == m && b ? Array.from({
       length: 10
     }).map((e, t) => (0, o.jsxs)("div", {
-      className: f.loadingItem,
+      className: f.guildsLoadingItem,
       children: [(0, o.jsx)(c.ZT, {
         width: 40,
         opacity: .08

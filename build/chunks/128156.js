@@ -46,15 +46,15 @@ function P(e) {
     recent: E,
     stream: B
   } = (0, p.Z)(t.id), {
-    voiceChannel: D,
-    voiceActivity: L
+    voiceChannel: L,
+    voiceActivity: D
   } = (0, m.Z)({
     userId: t.id,
     guildId: N
   }), U = (0, r.e7)([l.Z], () => l.Z.isFetchingUserOutbox(t.id)), k = t.id === n.id, M = (0, r.e7)([d.Z, s.Z], () => {
     let e = k ? d.Z.getStatus() : s.Z.getStatus(t.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), R = S.length > 0 || null != B, G = C && null == B && null == L && null != D, V = !M && (R || G), F = E.length > 0;
+  }), R = S.length > 0 || null != B, G = C && null == B && null == D && null != L, V = !M && (R || G), F = E.length > 0;
   if (!V && !F && U) return (0, o.jsx)("div", {
     className: O.cards,
     children: Array.from({
@@ -92,7 +92,7 @@ function P(e) {
           children: (0, o.jsx)(x.Z, {
             user: t,
             currentUser: n,
-            voiceChannel: D,
+            voiceChannel: L,
             onClose: Z
           })
         }), null != B && (0, o.jsx)("li", {
@@ -116,7 +116,7 @@ function P(e) {
           children: (0, o.jsx)(x.Z, {
             user: t,
             currentUser: n,
-            voiceChannel: D,
+            voiceChannel: L,
             onClose: Z
           })
         })]

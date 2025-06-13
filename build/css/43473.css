@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 1a75e6ef6575112a
+  Original File Name: 1ba4121c065fc203
 **/
 .scroller__95bea {
     display: flex;
@@ -1140,7 +1140,7 @@
     margin: 0
 }
 
-.scroller__9498a {
+.scroller__28fdc {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -1149,7 +1149,7 @@
     padding-bottom: 12px
 }
 
-.loadingItem__9498a {
+.friendsLoadingItem__28fdc {
     align-items: center;
     display: flex;
     gap: 10px;
@@ -1157,8 +1157,22 @@
     padding: 4px
 }
 
-.loadingItem__9498a>:first-child {
+.friendsLoadingItem__28fdc>:first-child {
     border-radius: var(--radius-round);
+    height: 40px;
+    margin: 0
+}
+
+.guildsLoadingItem__28fdc {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin: 1px 0 1px 8px;
+    padding: 4px
+}
+
+.guildsLoadingItem__28fdc>:first-child {
+    border-radius: var(--radius-lg);
     height: 40px;
     margin: 0
 }
@@ -1168,14 +1182,15 @@
     flex-direction: column;
     gap: 24px;
     height: calc(100% - 20px);
-    overflow: hidden;
+    overflow: visible;
     padding-top: 20px;
     width: 100%
 }
 
 .scroller__37bfc {
     flex: 0 1 auto;
-    margin-bottom: -10px
+    margin: -4px -4px -14px;
+    padding: 4px
 }
 
 .visual-refresh .tabBarItem__37bfc {
@@ -1379,4 +1394,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=1a75e6ef6575112a.css.map*/
+/*# sourceMappingURL=1ba4121c065fc203.css.map*/

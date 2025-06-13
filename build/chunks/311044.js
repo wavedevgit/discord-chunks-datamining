@@ -14,7 +14,7 @@ var o = n(255367),
   f = n(892001),
   p = n(252417),
   m = n(264481),
-  b = n(274151);
+  b = n(714905);
 
 function _(e) {
   let {
@@ -39,7 +39,7 @@ function _(e) {
     children: null == j ? Array.from({
       length: null != I ? I : 10
     }).map((e, t) => (0, o.jsxs)("div", {
-      className: b.loadingItem,
+      className: b.friendsLoadingItem,
       children: [(0, o.jsx)(a.ZT, {
         width: 40,
         opacity: .08

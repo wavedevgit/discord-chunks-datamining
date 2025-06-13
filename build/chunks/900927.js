@@ -1,14 +1,14 @@
 /** Chunk was on 1268 **/
 r.d(t, {
-  Z: () => f
+  Z: () => j
 });
 var n = r(255367);
 r(73800);
 var i = r(399606),
   l = r(481060),
   a = r(275759),
-  s = r(565138),
-  o = r(706454),
+  o = r(565138),
+  s = r(706454),
   c = r(271383),
   u = r(430824),
   d = r(709054),
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function j(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,17 +47,17 @@ function j(e, t) {
   }), e
 }
 
-function f(e) {
+function j(e) {
   let {
     userId: t,
     guildId: r,
-    textClassName: f,
+    textClassName: j,
     tooltipDelay: x
-  } = e, v = (0, i.e7)([o.default], () => o.default.locale), y = (0, i.e7)([u.Z], () => null != r ? u.Z.getGuild(r) : null), O = (0, i.e7)([c.ZP], () => null != r ? c.ZP.getMember(r, t) : null), h = (0, a.FI)(d.default.extractTimestamp(t), v), g = (0, a.FI)(null == O ? void 0 : O.joinedAt, v);
-  return null == y || null == O ? (0, n.jsx)(l.Text, {
+  } = e, v = (0, i.e7)([s.default], () => s.default.locale), O = (0, i.e7)([u.Z], () => null != r ? u.Z.getGuild(r) : null), h = (0, i.e7)([c.ZP], () => null != r ? c.ZP.getMember(r, t) : null), y = (0, a.FI)(d.default.extractTimestamp(t), v), g = (0, a.FI)(null == h ? void 0 : h.joinedAt, v);
+  return null == O || null == h ? (0, n.jsx)(l.Text, {
     variant: "text-sm/normal",
-    className: f,
-    children: h
+    className: j,
+    children: y
   }) : (0, n.jsxs)("div", {
     className: b.memberSinceWrapper,
     children: [(0, n.jsxs)("div", {
@@ -65,7 +65,7 @@ function f(e) {
       children: [(0, n.jsx)(l.ua7, {
         text: m.intl.string(m.t.uvGmCw),
         delay: x,
-        children: e => (0, n.jsx)(l.gw7, j(p({
+        children: e => (0, n.jsx)(l.gw7, f(p({
           size: "custom",
           width: 28,
           height: 28,
@@ -75,24 +75,24 @@ function f(e) {
         }))
       }), (0, n.jsx)(l.Text, {
         variant: "text-sm/normal",
-        className: f,
-        children: h
+        className: j,
+        children: y
       })]
     }), (0, n.jsx)("div", {
       className: b.divider
     }), (0, n.jsxs)("div", {
       className: b.memberSince,
       children: [(0, n.jsx)(l.ua7, {
-        text: y.name,
+        text: O.name,
         delay: x,
-        children: e => (0, n.jsx)(s.Z, j(p({}, e), {
-          guild: y,
-          size: s.Z.Sizes.SMOL,
+        children: e => (0, n.jsx)(o.Z, f(p({}, e), {
+          guild: O,
+          size: o.Z.Sizes.SMOL,
           className: b.guildIcon
         }))
       }), (0, n.jsx)(l.Text, {
         variant: "text-sm/normal",
-        className: f,
+        className: j,
         children: g
       })]
     })]
