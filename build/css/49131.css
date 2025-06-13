@@ -1,6 +1,6 @@
 /**
   Module ID: 49131
-  Original File Name: d810ede91f5ade56
+  Original File Name: 36da6009a693866d
 **/
 .footer_fc958f {
     align-items: center;
@@ -366,6 +366,11 @@
     .highlightVideo_c6ad88 {
         display: none
     }
+}
+
+.container_cba043 {
+    box-sizing: border-box;
+    height: clamp(256px,75vh,440px)
 }
 
 .header_cba043 {
@@ -2328,4 +2333,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=d810ede91f5ade56.css.map*/
+/*# sourceMappingURL=36da6009a693866d.css.map*/
