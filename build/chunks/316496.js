@@ -10,7 +10,8 @@ let i = (0, n(818083).B)({
     isEnabled: !1,
     showActivitySharingIndicatorWhenSharing: !1,
     showUpdatedSettingsPage: !1,
-    showLinkToSettings: !1
+    showLinkToSettings: !1,
+    variantName: "control"
   },
   treatments: [{
     id: 1,
@@ -19,7 +20,8 @@ let i = (0, n(818083).B)({
       isEnabled: !0,
       showActivitySharingIndicatorWhenSharing: !1,
       showUpdatedSettingsPage: !0,
-      showLinkToSettings: !0
+      showLinkToSettings: !0,
+      variantName: "treatment_1"
     }
   }, {
     id: 2,
@@ -28,7 +30,8 @@ let i = (0, n(818083).B)({
       isEnabled: !0,
       showActivitySharingIndicatorWhenSharing: !0,
       showUpdatedSettingsPage: !0,
-      showLinkToSettings: !0
+      showLinkToSettings: !0,
+      variantName: "treatment_2"
     }
   }, {
     id: 3,
@@ -37,7 +40,8 @@ let i = (0, n(818083).B)({
       isEnabled: !0,
       showActivitySharingIndicatorWhenSharing: !1,
       showUpdatedSettingsPage: !1,
-      showLinkToSettings: !1
+      showLinkToSettings: !1,
+      variantName: "treatment_3"
     }
   }]
 });
