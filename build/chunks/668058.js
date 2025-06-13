@@ -10,21 +10,21 @@ function o(t) {
     onError: e,
     onSuccess: n,
     report: o
-  } = t, [r, s] = a.useState(!1);
+  } = t, [s, r] = a.useState(!1);
   return {
     reportFalsePositive: a.useCallback(async () => {
-      if (!r) {
-        s(!0);
+      if (!s) {
+        r(!0);
         try {
           await o(), null == n || n()
         } catch (n) {
           let t = new i.Hx(n);
           null == e || e(t)
         } finally {
-          s(!1)
+          r(!1)
         }
       }
-    }, [r, e, n, o]),
-    isReportFalsePositiveLoading: r
+    }, [s, e, n, o]),
+    isReportFalsePositiveLoading: s
   }
 }

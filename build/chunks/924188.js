@@ -1,54 +1,55 @@
 /** Chunk was on 57539 **/
 n.d(e, {
-  default: () => c
+  default: () => u
 });
-var a = n(255367);
-n(73800);
-var i = n(481060),
-  o = n(313201),
+var a = n(255367),
+  i = n(73800),
+  o = n(481060),
+  s = n(313201),
   r = n(468706),
-  s = n(388032),
-  l = n(782410);
+  l = n(470734),
+  c = n(388032),
+  d = n(782410);
 
-function c(t) {
+function u(t) {
   let {
     channelId: e,
     messageId: n,
-    onClose: c,
-    transitionState: d
-  } = t, u = (0, o.Dt)();
-  return (0, a.jsx)(i.Y0X, {
-    transitionState: d,
-    "aria-labelledby": u,
-    size: i.CgR.SMALL,
+    onClose: u,
+    transitionState: m
+  } = t, x = (0, s.Dt)(), h = (0, l.pn)("ForumExplicitMediaModal"), _ = i.useMemo(() => h ? c.intl.string(c.t.i4AbAQ) : c.intl.string(c.t.bNMQVF), [h]);
+  return (0, a.jsx)(o.Y0X, {
+    transitionState: m,
+    "aria-labelledby": x,
+    size: o.CgR.SMALL,
     parentComponent: "ForumExplicitMediaModal",
-    children: (0, a.jsxs)(i.hzk, {
-      className: l.container,
-      children: [(0, a.jsx)(i.X6q, {
-        id: u,
+    children: (0, a.jsxs)(o.hzk, {
+      className: d.container,
+      children: [(0, a.jsx)(o.X6q, {
+        id: x,
         variant: "heading-lg/bold",
         color: "header-primary",
-        className: l.header,
-        children: s.intl.string(s.t.B3vFdX)
-      }), (0, a.jsx)(i.Text, {
+        className: d.header,
+        children: c.intl.string(c.t.B3vFdX)
+      }), (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        className: l.__invalid_subheader,
-        children: s.intl.string(s.t.i4AbAQ)
+        className: d.__invalid_subheader,
+        children: _
       }), (0, a.jsxs)("div", {
-        className: l.buttonContainer,
-        children: [(0, a.jsx)(i.zxk, {
-          className: l.button,
-          size: i.zxk.Sizes.MEDIUM,
-          color: i.zxk.Colors.BRAND,
-          onClick: c,
-          children: s.intl.string(s.t.WAI6xs)
-        }), (0, a.jsx)(i.Text, {
+        className: d.buttonContainer,
+        children: [(0, a.jsx)(o.zxk, {
+          className: d.button,
+          size: o.zxk.Sizes.MEDIUM,
+          color: o.zxk.Colors.BRAND,
+          onClick: u,
+          children: c.intl.string(c.t.WAI6xs)
+        }), (0, a.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: s.intl.format(s.t.Ge0HUl, {
+          children: c.intl.format(c.t.Ge0HUl, {
             handleFalsePositiveHook: () => {
-              c(), (0, r.e)(e, n)
+              u(), (0, r.e)(e, n)
             }
           })
         })]

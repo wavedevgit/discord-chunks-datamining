@@ -32,8 +32,8 @@ var r = n(255367),
   T = n(543015),
   I = n(359110),
   E = n(344185),
-  R = n(235449),
-  k = n(665906),
+  k = n(235449),
+  R = n(665906),
   Z = n(488131),
   M = n(433355),
   A = n(592125),
@@ -228,7 +228,7 @@ function eS(e) {
     activeThreadsLoading: _,
     archivedThreadsLoading: y,
     loading: P,
-    isSearchLoading: k,
+    isSearchLoading: R,
     layoutType: F
   } = function(e) {
     let {
@@ -251,7 +251,7 @@ function eS(e) {
       canLoadMore: o,
       loadMore: c,
       loading: d
-    } = (0, R.qQ)(e, t, n, l), {
+    } = (0, k.qQ)(e, t, n, l), {
       searchResults: u,
       isSearchLoading: m
     } = (0, W.XZ)({
@@ -332,24 +332,24 @@ function eS(e) {
     null != t.id && V.Z.clearForumSearch(t.id)
   }, [t.id]);
   let {
-    columns: eR
-  } = l.useMemo(() => es ? ej.getRenderOptions(eI) : ea.eU, [es, eI]), ek = l.useMemo(() => P ? Math.round((window.innerHeight - 200) / 118) : 0, [P]), eZ = l.useMemo(() => {
-    let e = Math.ceil(window.innerHeight / (0, ea.KW)(ej.getWidth(eI))) * eR;
+    columns: ek
+  } = l.useMemo(() => es ? ej.getRenderOptions(eI) : ea.eU, [es, eI]), eR = l.useMemo(() => P ? Math.round((window.innerHeight - 200) / 118) : 0, [P]), eZ = l.useMemo(() => {
+    let e = Math.ceil(window.innerHeight / (0, ea.KW)(ej.getWidth(eI))) * ek;
     return _ ? e : 0
-  }, [eI, eR, _]), eM = l.useMemo(() => {
-    let e = Math.ceil(window.innerHeight / (0, ea.KW)(ej.getWidth(eI))) * eR;
+  }, [eI, ek, _]), eM = l.useMemo(() => {
+    let e = Math.ceil(window.innerHeight / (0, ea.KW)(ej.getWidth(eI))) * ek;
     return y ? e : 0
-  }, [eI, eR, y]), eA = l.useMemo(() => {
-    let e = Math.ceil(window.innerHeight / (0, ea.KW)(ej.getWidth(eI))) * eR;
-    return k && eb ? e : 0
-  }, [eI, eR, k, eb]), eL = l.useMemo(() => {
+  }, [eI, ek, y]), eA = l.useMemo(() => {
+    let e = Math.ceil(window.innerHeight / (0, ea.KW)(ej.getWidth(eI))) * ek;
+    return R && eb ? e : 0
+  }, [eI, ek, R, eb]), eL = l.useMemo(() => {
     if (es)
       if (!$ && eb) return [1, 0];
       else if (!en) return [1, m.length + eZ, 0];
     else if (eb) return [1, b.length + eA, 0];
     else return [1, m.length + eZ, f.length + eM];
-    return !$ && eb ? [1, 1] : en ? eb ? [1, b.length, 0, ek] : [1, m.length, f.length, ek] : [1, m.length, 1]
-  }, [es, eb, m.length, f.length, $, en, ek, b, eZ, eM, eA]), eF = l.useMemo(() => !$ && eb ? [
+    return !$ && eb ? [1, 1] : en ? eb ? [1, b.length, 0, eR] : [1, m.length, f.length, eR] : [1, m.length, 1]
+  }, [es, eb, m.length, f.length, $, en, eR, b, eZ, eM, eA]), eF = l.useMemo(() => !$ && eb ? [
     [],
     []
   ] : en ? eb ? [
@@ -374,7 +374,7 @@ function eS(e) {
   }, [t.guild_id, t.id, e_]), [ez, eB] = l.useState(i + s - 24), eH = l.useCallback((e, n, l) => 0 === e ? (0, r.jsx)(eE, {
     channel: t,
     isEmpty: !z,
-    isSearchLoading: k,
+    isSearchLoading: R,
     numResults: null == b ? void 0 : b.length,
     coords: n,
     onHeightChange: eB,
@@ -389,7 +389,7 @@ function eS(e) {
   }, "archive-or-search-result") : l() : (0, r.jsx)(eN, {
     channel: t,
     coords: n
-  }, "archived-missing-reading-history-perm"), [eb, en, b, $, t, z, k, P, B]), eU = (0, g.e7)([U.Z], () => U.Z.hasHidden(t.id)), eV = {
+  }, "archived-missing-reading-history-perm"), [eb, en, b, $, t, z, R, P, B]), eU = (0, g.e7)([U.Z], () => U.Z.hasHidden(t.id)), eV = {
     editorHeight: i,
     isGridLayout: es
   }, eG = l.useRef(eV);
@@ -685,7 +685,7 @@ function eS(e) {
             itemGutter: 16,
             padding: 24,
             className: eg.grid,
-            columns: eR,
+            columns: ek,
             sections: eL,
             getItemKey: e$,
             getSectionHeight: e8,
@@ -797,7 +797,7 @@ function eE(e) {
   } = e, {
     name: I,
     formOpen: E,
-    titleFocused: R,
+    titleFocused: k,
     hasClickedForm: Z,
     textAreaState: M,
     onboardingExpanded: A,
@@ -824,7 +824,7 @@ function eE(e) {
   }, c.X), {
     tagFilter: U,
     layoutType: G
-  } = (0, q.H)(s.id), X = (0, et.AF)(), K = (0, q.v)(), Y = (0, g.e7)([F.Z], () => F.Z.canChatInGuild(s.guild_id)), ee = (0, W.r_)(s), er = (0, k.cD)(s), [el, ea] = l.useState(er), [, eo] = (0, _.AB)(null != (i = s.getGuildId()) ? i : void 0), ec = (0, P.HL)(s), ed = Y && (er || el && eo) && !ec, em = s.isMediaChannel();
+  } = (0, q.H)(s.id), X = (0, et.AF)(), K = (0, q.v)(), Y = (0, g.e7)([F.Z], () => F.Z.canChatInGuild(s.guild_id)), ee = (0, W.r_)(s), er = (0, R.cD)(s), [el, ea] = l.useState(er), [, eo] = (0, _.AB)(null != (i = s.getGuildId()) ? i : void 0), ec = (0, P.HL)(s), ed = Y && (er || el && eo) && !ec, em = s.isMediaChannel();
   l.useEffect(() => {
     er && ea(!0)
   }, [er]);
@@ -876,13 +876,13 @@ function eE(e) {
       eS(r)
     }
   }, [s.availableTags, eN, eP, U]);
-  let ek = I.length > 0 && !E && (v || null != O),
-    eZ = !__OVERLAY__ && !Z && !E && R && (0 === M.textValue.trim().length || M.textValue.trim() === e_) && 0 === eC.length && !ec;
+  let eR = I.length > 0 && !E && (v || null != O),
+    eZ = !__OVERLAY__ && !Z && !E && k && (0 === M.textValue.trim().length || M.textValue.trim() === e_) && 0 === eC.length && !ec;
   l.useLayoutEffect(() => {
-    let e = ek || eZ;
+    let e = eR || eZ;
     if (!e) return D(0);
     null != eT.current && D(e ? eT.current.clientHeight : 0)
-  }, [D, ek, eZ, eT]);
+  }, [D, eR, eZ, eT]);
   let eM = e => {
       (0, J.e7)({
         guildId: s.guild_id,
@@ -945,7 +945,7 @@ function eE(e) {
         channel: s
       }) : null, (0, r.jsx)("div", {
         className: a()(eg.mainCard, eg.header, {
-          [eg.headerWithMatchingPosts]: ek || eZ
+          [eg.headerWithMatchingPosts]: eR || eZ
         }),
         children: (0, r.jsx)(en.Z, {
           parentChannel: s,
@@ -955,10 +955,10 @@ function eE(e) {
           canCreatePost: ed,
           inputRef: eB
         })
-      }), (ek || eZ) && (0, r.jsxs)("div", {
+      }), (eR || eZ) && (0, r.jsxs)("div", {
         className: eg.matchingPostsRow,
         ref: eT,
-        children: [ek && (0, r.jsxs)("div", {
+        children: [eR && (0, r.jsxs)("div", {
           className: eg.matchingPosts,
           children: [(0, r.jsx)(x.X6q, {
             variant: "text-xs/normal",
@@ -1020,7 +1020,7 @@ function eE(e) {
       }), (0, r.jsxs)("div", {
         className: eg.tagsContainer,
         ref: ey,
-        children: [(0, r.jsx)(eR, {
+        children: [(0, r.jsx)(ek, {
           channel: s
         }), eV.length > 0 ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
@@ -1136,7 +1136,7 @@ function eE(e) {
   }), "create-form")
 }
 
-function eR(e) {
+function ek(e) {
   let {
     channel: t
   } = e, n = t.isMediaChannel(), i = l.useRef(null);

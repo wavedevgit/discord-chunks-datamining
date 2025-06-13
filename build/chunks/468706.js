@@ -6,14 +6,14 @@ var a = n(255367);
 n(73800);
 var i = n(481060),
   o = n(240872),
-  r = n(923500),
-  s = n(247206),
+  s = n(923500),
+  r = n(247206),
   l = n(774863),
   c = n(388032);
 
 function d(t, e) {
-  if ((0, s.aP)({
-      action: s.Yy.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED,
+  if ((0, r.aP)({
+      action: r.Yy.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED,
       messageId: e,
       channelId: t
     }), !l.Z.canSubmitFpReport(e)) {
@@ -21,7 +21,7 @@ function d(t, e) {
       title: c.intl.string(c.t["iS/eFB"]),
       body: c.intl.string(c.t.YrjcgY),
       confirmText: c.intl.string(c.t.BddRzc)
-    }), r.Z.disableFalsePositiveButton(t, e);
+    }), s.Z.disableFalsePositiveButton(t, e);
     return
   }(0, i.ZDy)(async () => {
     let {

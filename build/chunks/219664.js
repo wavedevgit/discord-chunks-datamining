@@ -32,8 +32,8 @@ var r = n(255367),
   T = n(404616),
   I = n(510060),
   E = n(983200),
-  R = n(196255),
-  k = n(858543),
+  k = n(196255),
+  R = n(858543),
   Z = n(482062),
   M = n(883728),
   A = n(710352),
@@ -194,7 +194,7 @@ function U(e) {
         className: D.authorRow,
         children: [(0, r.jsxs)("div", {
           className: D.rowGroup,
-          children: [(0, r.jsx)(R.Z, {
+          children: [(0, r.jsx)(k.Z, {
             channel: n,
             message: E
           }), (0, r.jsx)(d.Text, {
@@ -238,7 +238,7 @@ function U(e) {
             shouldMaintainAspectRatio: eu
           }), (0, r.jsx)("div", {
             className: D.tagsRow,
-            children: (0, r.jsx)(k.ZP, {
+            children: (0, r.jsx)(R.ZP, {
               channel: n,
               tagsClassName: D.tagPill
             })
@@ -447,7 +447,7 @@ function K(e) {
     noStyleAndInteraction: !0
   }), {
     shouldRenderTagsRow: g
-  } = (0, k.DM)({
+  } = (0, R.DM)({
     channel: t,
     isNew: !1
   }), f = l.useMemo(() => ({
@@ -473,7 +473,7 @@ function K(e) {
       className: a()(D.textContentFooter, {
         [D.noTags]: !g
       }),
-      children: g ? (0, r.jsx)(k.ZP, {
+      children: g ? (0, r.jsx)(R.ZP, {
         channel: t,
         tagsClassName: D.tagPill,
         className: D.__invalid_row

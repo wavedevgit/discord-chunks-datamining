@@ -49,6 +49,24 @@ let c = function(e, t) {
   resetSelectionToEnd(e) {
     r.YR.select(e, a.bN.end(e, []))
   },
+  makeSelectionToStart(e) {
+    let {
+      selection: t
+    } = e;
+    null != t ? r.YR.select(e, {
+      anchor: t.focus.offset > t.anchor.offset ? t.focus : t.anchor,
+      focus: a.bN.start(e, [])
+    }) : r.YR.select(e, a.bN.start(e, []))
+  },
+  makeSelectionToEnd(e) {
+    let {
+      selection: t
+    } = e;
+    null != t ? r.YR.select(e, {
+      anchor: t.focus.offset < t.anchor.offset ? t.focus : t.anchor,
+      focus: a.bN.end(e, [])
+    }) : r.YR.select(e, a.bN.end(e, []))
+  },
   delete(e, t) {
     let {
       at: n,

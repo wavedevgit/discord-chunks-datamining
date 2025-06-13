@@ -85,7 +85,7 @@ let T = e => {
       requireConfirm: !0,
       isThumbnail: !0
     }), e.currentTarget.value = null
-  }, [i, C]), R = e => {
+  }, [i, C]), k = e => {
     e.stopPropagation(), (null == C ? void 0 : C.upload) != null && (0, u.ZDy)(async () => {
       let e = C.upload;
       o()(null != e, "upload should not be null");
@@ -140,7 +140,7 @@ let T = e => {
         }), l))
       }
     })
-  }, k = (0, r.jsx)(j.Z, {
+  }, R = (0, r.jsx)(j.Z, {
     color: u.Ttl.CUSTOM,
     className: w.uploadFileInputContainer,
     innerClassName: w.uploadThumbnailContainer,
@@ -191,7 +191,7 @@ let T = e => {
         children: [(0, r.jsx)(f.Z, {
           className: w.action,
           tooltip: O.intl.string(O.t.Y8ujqq),
-          onClick: R,
+          onClick: k,
           children: (0, r.jsx)(u.vdY, {
             size: "xs",
             color: "currentColor"
@@ -210,11 +210,11 @@ let T = e => {
       draftType: g.Ie.CREATE_FORUM_POST.drafts.type,
       id: C.id,
       channelId: i.id,
-      handleEditModal: R,
+      handleEditModal: k,
       keyboardModeEnabled: p,
       size: x.q.SMALL,
       className: w.attachmentListItem,
-      children: k
-    }) : k
+      children: R
+    }) : R
   })
 }
