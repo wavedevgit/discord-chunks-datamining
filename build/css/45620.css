@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 9e36ccf733e97ee3
+  Original File Name: 8e38740500f47981
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -1333,15 +1333,29 @@
     filter: drop-shadow(0 8px 10px rgba(0,0,0,.14))
 }
 
-.featuredBlockBodyText__08415 {
-    align-self: center;
-    max-width: 240px;
+.featuredBlockTextContainer__08415 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    justify-content: center;
     padding: 54px 0 72px 24px
 }
 
-.featuredBlockNameplate__08415 {
+.featuredBlockTitleText__08415 {
     font-family: var(--font-headline);
-    font-size: 28px
+    max-width: 320px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.featuredBlockTitleTextNameplate__08415 {
+    margin: calc(var(--space-8)*-1);
+    padding: var(--space-8);
+    text-shadow: 0 0 var(--space-8) #2c737a
+}
+
+.featuredBlockBodyText__08415 {
+    max-width: 300px
 }
 
 .featuredBlockBadge__08415 {
@@ -1743,4 +1757,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=9e36ccf733e97ee3.css.map*/
+/*# sourceMappingURL=8e38740500f47981.css.map*/
