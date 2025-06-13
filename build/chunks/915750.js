@@ -91,7 +91,7 @@ class w {
     minViewTimeSeconds: c = N,
     isQuestEnrollmentBlocked: h
   }) {
-    var T = this;
+    var m = this;
     v(this, "id", void 0), v(this, "quests", void 0), v(this, "questContent", void 0), v(this, "triggeredByStatusChange", void 0), v(this, "trackGuildAndChannelMetadata", void 0), v(this, "questContentPosition", void 0), v(this, "questContentRowIndex", void 0), v(this, "adDecisionData", void 0), v(this, "heartbeatTimeoutId", void 0), v(this, "lastBeatTime", void 0), v(this, "minViewTimeReachedTimeoutId", void 0), v(this, "minViewTimeSeconds", void 0), v(this, "minViewportPercentage", void 0), v(this, "isQuestEnrollmentBlocked", void 0), v(this, "isRunning", !1), v(this, "onMinViewTimeReached", () => {
       this.quests.forEach(e => {
         (0, b.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, p._b)(this.questContent)), {
@@ -106,11 +106,10 @@ class w {
         let r = I({
             min_view_time_seconds: this.minViewTimeSeconds,
             min_viewport_percentage: this.minViewportPercentage,
-            triggered_by_status_change: this.triggeredByStatusChange,
-            google_advertising_id: m.Z.googleAdvertisingId
+            triggered_by_status_change: this.triggeredByStatusChange
           }, (0, d.Z)(), this.commonProperties(e)),
           i = (0, u.S)();
-        null != i && (0, f.isIOS)() && (r.apple_advertising_id = i.advertisingId), (0, p.dA)({
+        null != i && ((0, f.isIOS)() ? r.apple_advertising_id = i.advertisingId : (0, f.isAndroid)() && (r.android_advertising_id = i.advertisingId)), (0, p.dA)({
           questId: e.id,
           event: O.rMx.QUEST_CONTENT_VIEWED,
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
@@ -120,23 +119,23 @@ class w {
       })
     }), v(this, "beat", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      T.quests.forEach(t => {
-        if (null != T.lastBeatTime) {
-          let n = Math.round(Date.now() - T.lastBeatTime);
+      m.quests.forEach(t => {
+        if (null != m.lastBeatTime) {
+          let n = Math.round(Date.now() - m.lastBeatTime);
           (0, b.T)().info("".concat(t.config.messages.questName, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
-            impressionId: T.id
+            impressionId: m.id
           }), (0, p.dA)({
             questId: t.id,
             event: O.rMx.QUEST_CONTENT_VIEW_TIME,
             properties: I({
               is_termination_beat: e,
               viewed_time_ms: n,
-              triggered_by_status_change: T.triggeredByStatusChange
-            }, T.commonProperties(t)),
-            trackGuildAndChannelMetadata: T.trackGuildAndChannelMetadata
+              triggered_by_status_change: m.triggeredByStatusChange
+            }, m.commonProperties(t)),
+            trackGuildAndChannelMetadata: m.trackGuildAndChannelMetadata
           })
         }
-      }), T.lastBeatTime = Date.now()
+      }), m.lastBeatTime = Date.now()
     }), v(this, "commonProperties", e => I(S(I({
       impression_id: this.id
     }, this.adDecisionData), {
@@ -174,7 +173,7 @@ class w {
       }), this.isRunning = !0
     }), v(this, "stop", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-      e && T.beat(!0), T.lastBeatTime = void 0, clearInterval(T.heartbeatTimeoutId), clearTimeout(T.minViewTimeReachedTimeoutId), T.isRunning = !1
+      e && m.beat(!0), m.lastBeatTime = void 0, clearInterval(m.heartbeatTimeoutId), clearTimeout(m.minViewTimeReachedTimeoutId), m.isRunning = !1
     }), this.id = (0, a.Z)(), this.adDecisionData = null != n ? n : y.Jp, this.questContent = t, this.questContentPosition = s, this.minViewTimeSeconds = c, this.minViewportPercentage = C, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = i, this.triggeredByStatusChange = r, this.questContentRowIndex = l, this.isQuestEnrollmentBlocked = h
   }
 }
