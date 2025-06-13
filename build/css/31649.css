@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: 12b87336ee2b327c
+  Original File Name: 7e51103117b931c2
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -308,6 +308,11 @@
     min-width: 200px
 }
 
+.clearAfterSelectOption_dbc4b7:has(>.disabled_dbc4b7) {
+    color: var(--text-tertiary);
+    pointer-events: none
+}
+
 .clearAfterSelectOptionLabel_dbc4b7:only-child {
     padding-right: 28px
 }
@@ -342,4 +347,4 @@
     text-transform: uppercase
 }
 
-/*# sourceMappingURL=12b87336ee2b327c.css.map*/
+/*# sourceMappingURL=7e51103117b931c2.css.map*/

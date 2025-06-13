@@ -1,6 +1,6 @@
 /** Chunk was on 31649 **/
 n.d(e, {
-  Z: () => b
+  Z: () => p
 });
 var l = n(255367);
 n(73800);
@@ -15,13 +15,13 @@ var r = n(481060),
   m = n(4517),
   f = n(5192),
   h = n(228168),
-  p = n(200051);
+  b = n(200051);
 
-function b(t) {
+function p(t) {
   let {
     user: e,
     previewText: n,
-    previewEmoji: b,
+    previewEmoji: p,
     previewStatus: S,
     placeHolderText: j,
     transitionState: g,
@@ -31,7 +31,7 @@ function b(t) {
     user: e,
     displayProfile: x,
     themeType: h.lY.POPOUT,
-    className: p.profilePreviewContainer,
+    className: b.profilePreviewContainer,
     children: [(0, l.jsxs)("header", {
       children: [(0, l.jsx)(u.Z, {
         user: e,
@@ -44,14 +44,14 @@ function b(t) {
           displayProfile: x,
           themeType: h.lY.POPOUT,
           previewStatus: S,
-          className: p.avatar
+          className: b.avatar
         })
       }), (0, l.jsx)(m.Z, {
         location: "CustomStatusUserProfilePreview",
         user: e,
         themeType: h.lY.POPOUT,
         previewText: n,
-        previewEmoji: b,
+        previewEmoji: p,
         placeholderText: j,
         hasEntered: g === r.Dvm.ENTERED,
         previewLabel: O
@@ -59,7 +59,7 @@ function b(t) {
     }), (null == x ? void 0 : x.profileEffectId) != null && (0, l.jsx)(a.Z, {
       profileEffectId: x.profileEffectId
     }), (0, l.jsx)("div", {
-      className: p.usernameContainer,
+      className: b.usernameContainer,
       inert: !0,
       children: (0, l.jsx)(d.Z, {
         user: e,

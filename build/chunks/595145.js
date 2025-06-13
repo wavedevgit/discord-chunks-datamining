@@ -15,8 +15,8 @@ var o = n(255367),
   p = n(100527),
   m = n(906732),
   b = n(368326),
-  y = n(429467),
-  _ = n(320582),
+  _ = n(429467),
+  y = n(320582),
   x = n(246016),
   h = n(680295),
   g = n(189156),
@@ -84,7 +84,7 @@ function et(e) {
     messageId: eo,
     roleId: er,
     showGuildProfile: ef
-  }), ey = r.useRef(null), e_ = (0, u.Z)(ey), ex = (0, C.$m)(), eh = (0, s.q_F)({
+  }), e_ = r.useRef(null), ey = (0, u.Z)(e_), ex = (0, C.$m)(), eh = (0, s.q_F)({
     opacity: +(null != ex.interactionType),
     config: {
       duration: 150
@@ -110,7 +110,7 @@ function et(e) {
     eA = (0, b.p)({
       location: "UserProfileModalV2"
     }),
-    eT = r.useMemo(() => null != es ? es : (0, y.Z)(), [es]),
+    eT = r.useMemo(() => null != es ? es : (0, _.Z)(), [es]),
     eZ = (0, q.Z)({
       user: n,
       currentUser: i
@@ -118,7 +118,7 @@ function et(e) {
     eC = (0, x.Y)({
       userId: n.id
     }),
-    ew = (0, _.vh)(n.id),
+    ew = (0, y.vh)(n.id),
     eS = (0, Z.Z)(n.id),
     eE = (0, a.e7)([j.default], () => ["en-US", "en-GB"].includes(j.default.locale)) ? $.intl.formatToPlainString($.t.KRe1Fh, {
       name: eI
@@ -140,7 +140,7 @@ function et(e) {
           "aria-label": eE,
           parentComponent: "UserProfileModalV2",
           children: (0, o.jsxs)(V.Z, {
-            ref: (null == ej ? void 0 : ej.profileEffectId) != null ? ey : void 0,
+            ref: (null == ej ? void 0 : ej.profileEffectId) != null ? e_ : void 0,
             user: n,
             displayProfile: ej,
             themeType: J.lY.MODAL_V2,
@@ -288,7 +288,8 @@ function et(e) {
                       scrollIntoView: el === J.Tb.CONNECTIONS,
                       children: (0, o.jsx)(W.Z, {
                         connections: eS,
-                        userId: n.id
+                        userId: n.id,
+                        className: ee.profileAppConnections
                       })
                     }), (0, o.jsx)(z.Z, {
                       heading: $.intl.string($.t["mQKv+v"]),
@@ -323,7 +324,7 @@ function et(e) {
                 })]
               }), (null == ej ? void 0 : ej.profileEffectId) != null && (0, o.jsx)(h.Z, {
                 profileEffectId: null == ej ? void 0 : ej.profileEffectId,
-                isHovering: e_
+                isHovering: ey
               })]
             }), (0, o.jsx)(s.y5t, {
               children: (0, o.jsx)(X.Z, {

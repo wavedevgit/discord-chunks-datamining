@@ -1,6 +1,6 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 });
 var o = n(255367),
   r = n(73800),
@@ -16,12 +16,12 @@ var o = n(255367),
   m = n(264481),
   b = n(274151);
 
-function y(e) {
+function _(e) {
   let {
     user: t,
     guildId: n,
-    channelId: y,
-    onClose: _
+    channelId: _,
+    onClose: y
   } = e, {
     analyticsLocations: x
   } = (0, l.ZP)(), {
@@ -57,10 +57,10 @@ function y(e) {
         user: r,
         status: i,
         guildId: n,
-        channelId: y,
+        channelId: _,
         onSelect: () => {
           var e, t;
-          null == _ || _(), g({
+          null == y || y(), g({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, f.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {

@@ -1,6 +1,6 @@
 /** Chunk was on 37447 **/
 n.d(t, {
-  Z: () => x
+  Z: () => g
 }), n(388685);
 var r = n(255367),
   s = n(73800),
@@ -14,25 +14,25 @@ var a = n(497505),
   u = n(372113),
   d = n(206044),
   m = n(266843),
-  p = n(463910);
+  x = n(463910);
 
-function x(e) {
+function g(e) {
   let {
     quest: t,
     location: n,
-    initiallyExpanded: x,
-    contentPosition: g
-  } = e, [h, f] = s.useState(!1), j = s.useCallback(() => f(!0), []), b = s.useCallback(() => f(!1), []), C = (0, o.tP)(t), {
+    initiallyExpanded: g,
+    contentPosition: p
+  } = e, [h, j] = s.useState(!1), f = s.useCallback(() => j(!0), []), b = s.useCallback(() => j(!1), []), C = (0, o.tP)(t), {
     containerRef: v,
     size: y,
     height: O
   } = (0, m.h)(), {
-    expansionSpring: N,
-    isAnimating: T,
+    expansionSpring: T,
+    isAnimating: N,
     isExpanded: E,
     toggleExpanded: q
   } = (0, m.O)({
-    initiallyExpanded: x || (0, c.iM)({
+    initiallyExpanded: g || (0, c.iM)({
       location: n,
       quest: t
     })
@@ -40,18 +40,18 @@ function x(e) {
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: n,
-    questContentPosition: g,
+    questContentPosition: p,
     trackGuildAndChannelMetadata: n === a.jn.QUESTS_EMBED,
     children: e => (0, r.jsx)(i.animated.div, {
       style: {
-        maxHeight: n === a.jn.QUESTS_EMBED ? void 0 : N.to({
+        maxHeight: n === a.jn.QUESTS_EMBED ? void 0 : T.to({
           range: [0, 1],
           output: [c.DJ, S]
         })
       },
-      className: p.questsCard,
-      onFocus: j,
-      onMouseEnter: j,
+      className: x.questsCard,
+      onFocus: f,
+      onMouseEnter: f,
       onBlur: b,
       onMouseLeave: b,
       children: (0, r.jsxs)("div", {
@@ -63,10 +63,10 @@ function x(e) {
           location: n,
           quest: t,
           size: y,
-          expansionSpring: N,
-          isAnimating: T,
+          expansionSpring: T,
+          isAnimating: N,
           isExpanded: E,
-          contentPosition: g,
+          contentPosition: p,
           toggleExpanded: q
         }), (0, r.jsx)(u.Z, {
           quest: t,
@@ -75,8 +75,8 @@ function x(e) {
           size: y,
           isFocused: h,
           isExpanded: E,
-          isAnimating: T,
-          contentPosition: g
+          isAnimating: N,
+          contentPosition: p
         })]
       })
     })

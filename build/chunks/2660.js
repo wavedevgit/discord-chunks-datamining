@@ -17,19 +17,19 @@ let d = e => {
       fallback: n,
       isFocused: d
     } = e, m = (0, s.e7)([a.default], () => a.default.getCurrentUser()), {
-      avatarDecoration: p,
-      isFetching: x
+      avatarDecoration: x,
+      isFetching: g
     } = (0, l.DU)(t);
-    return x ? (0, r.jsx)("div", {
+    return g ? (0, r.jsx)("div", {
       className: u.questsCollectibleReward,
       children: (0, r.jsx)(i.$jN, {})
-    }) : null == m || null == p ? n : (0, r.jsx)("div", {
+    }) : null == m || null == x ? n : (0, r.jsx)("div", {
       className: u.questsCollectibleReward,
       children: (0, r.jsx)(o.Z, {
         avatarSize: c.EF.SIZE_56,
         user: m,
         guildId: null,
-        avatarDecorationOverride: p,
+        avatarDecorationOverride: x,
         animateOnHover: !d
       })
     })

@@ -18,8 +18,8 @@ let d = function(e) {
     quest: s,
     isInventory: d
   } = e, m = (0, l.qb)(e.quest), {
-    percentComplete: p,
-    completedRatioDisplay: x
+    percentComplete: x,
+    completedRatioDisplay: g
   } = (0, l.I)(s);
   return !d && m.length > 0 ? (0, r.jsx)(c.Z, {
     children: m.at(0)
@@ -34,21 +34,21 @@ let d = function(e) {
         variant: "text-xs/semibold",
         className: u.percentCompleteLabel,
         color: "none",
-        children: x
+        children: g
       }), (0, r.jsx)("div", {
         className: u.percentCompleteLabelOffset,
         style: {
-          width: "".concat(100 - p, "%")
+          width: "".concat(100 - x, "%")
         }
       })]
     }), (0, r.jsx)("div", {
       className: u.progressBar,
       role: "progressbar",
-      "aria-valuenow": p,
+      "aria-valuenow": x,
       children: (0, r.jsx)("div", {
         className: u.progressBarFill,
         style: {
-          width: "".concat(p, "%")
+          width: "".concat(x, "%")
         }
       })
     }), m.length > 0 && (0, r.jsx)(c.Z, {

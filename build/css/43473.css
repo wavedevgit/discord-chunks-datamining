@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 750281c5e8e3f0eb
+  Original File Name: 1a75e6ef6575112a
 **/
 .scroller__95bea {
     display: flex;
@@ -852,10 +852,22 @@
     justify-content: center
 }
 
-.platformIcon__9bfb9 {
+.platformIconContainer__9bfb9 {
+    align-items: center;
+    background-color: var(--white-500);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    box-sizing: border-box;
+    display: flex;
     flex-shrink: 0;
     height: 24px;
+    justify-content: center;
     width: 24px
+}
+
+.platformIcon__9bfb9 {
+    height: 18px;
+    width: 18px
 }
 
 .accountName__9bfb9 {
@@ -1323,7 +1335,7 @@
 }
 
 .profileAppConnections__9c3be {
-    margin-top: 0
+    margin-top: 4px
 }
 
 .profileNote__9c3be {
@@ -1367,4 +1379,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=750281c5e8e3f0eb.css.map*/
+/*# sourceMappingURL=1a75e6ef6575112a.css.map*/

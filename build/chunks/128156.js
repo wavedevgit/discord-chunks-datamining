@@ -16,8 +16,8 @@ var r = n(442837),
   p = n(369566),
   m = n(29899),
   b = n(151545),
-  y = n(744802),
-  _ = n(493043),
+  _ = n(744802),
+  y = n(493043),
   x = n(864141),
   h = n(264481),
   g = n(693408),
@@ -96,7 +96,7 @@ function P(e) {
             onClose: Z
           })
         }), null != B && (0, o.jsx)("li", {
-          children: (0, o.jsx)(_.Z, {
+          children: (0, o.jsx)(y.Z, {
             location: "UserProfileModalV2Activity",
             user: t,
             currentUser: n,
@@ -133,7 +133,7 @@ function P(e) {
       children: (0, o.jsx)("ul", {
         className: O.cards,
         children: E.map(e => (0, o.jsx)("li", {
-          children: (0, o.jsx)(y.Z, {
+          children: (0, o.jsx)(_.Z, {
             location: "UserProfileModalV2Activity",
             user: t,
             currentUser: n,
