@@ -1,6 +1,6 @@
 /**
   Module ID: 85668
-  Original File Name: b649635bb01ad33f
+  Original File Name: abe03647d5569119
 **/
 .title_ad9c52 {
     font-weight: 700;
@@ -10,8 +10,11 @@
 }
 
 .warningText_ad9c52 {
-    margin-bottom: 16px;
     text-align: center
+}
+
+.warningText_ad9c52,.warningTextMana_ad9c52 {
+    margin-bottom: 16px
 }
 
 .linkCalloutContainer_ad9c52 {
@@ -31,4 +34,8 @@
     margin-bottom: 24px
 }
 
-/*# sourceMappingURL=b649635bb01ad33f.css.map*/
+.checkbox_ad9c52,.checkboxMana_ad9c52 {
+    overflow-wrap: anywhere
+}
+
+/*# sourceMappingURL=abe03647d5569119.css.map*/

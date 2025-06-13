@@ -1,75 +1,75 @@
-/** Chunk was on 22472 **/
+/** Chunk was on 85668 **/
 n.d(t, {
-  u: () => o
+  u: () => c
 });
-var i = n(255367);
+var r = n(255367);
 n(73800);
-var r = n(257465),
-  s = n(369585),
-  l = n(530392),
-  a = n(37148);
+var l = n(257465),
+  i = n(369585),
+  a = n(530392),
+  o = n(37148);
 
-function o(e) {
+function c(e) {
   var t, n, {
-      title: o,
-      headerBody: c,
+      title: c,
+      headerBody: s,
       input: d,
       preview: u,
-      actions: m,
-      actionBarInput: g,
-      children: p
+      actions: h,
+      actionBarInput: x,
+      children: m
     } = e,
-    h = function(e, t) {
+    b = function(e, t) {
       if (null == e) return {};
-      var n, i, r = function(e, t) {
+      var n, r, l = function(e, t) {
         if (null == e) return {};
-        var n, i, r = {},
-          s = Object.keys(e);
-        for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-        return r
+        var n, r, l = {},
+          i = Object.keys(e);
+        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+        return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var i = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
-      return r
+      return l
     }(e, ["title", "headerBody", "input", "preview", "actions", "actionBarInput", "children"]);
-  return (0, i.jsxs)(r.IX, (t = function(e) {
+  return (0, r.jsxs)(l.IX, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = n[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = i
+        }) : e[t] = r
       })
     }
     return e
-  }({}, h), n = n = {
-    children: [(0, i.jsx)(a.x, {
-      title: o,
-      body: c
-    }), (0, i.jsx)(l.h, {
+  }({}, b), n = n = {
+    children: [(0, r.jsx)(o.x, {
+      title: c,
+      body: s
+    }), (0, r.jsx)(a.h, {
       controls: d,
-      children: p
-    }), (0, i.jsx)(l.m, {
+      children: m
+    }), (0, r.jsx)(a.m, {
       children: u
-    }), (0, i.jsx)(s.G, {
-      leading: g,
-      actions: m,
-      actionsFullWidth: null == g
+    }), (0, r.jsx)(i.G, {
+      leading: x,
+      actions: h,
+      actionsFullWidth: null == x
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(n)).forEach(function(e) {

@@ -61,12 +61,12 @@ function O() {
     if (0 === t.trim().length) return void o(e);
     o(e.filter(e => c()(t, e.experiment.title.toLowerCase())))
   }, [e, t]);
-  let d = i.useMemo(() => l.filter(e => {
+  let d = i.useMemo(() => e.filter(e => {
       let {
         currentBucket: t
       } = e;
       return -1 !== t
-    }), [l]),
+    }), [e]),
     g = i.useMemo(() => l.filter(e => {
       let {
         currentBucket: t
@@ -74,43 +74,51 @@ function O() {
       return -1 === t
     }), [l]),
     O = i.useMemo(() => d.map(y), [d]),
-    f = i.useMemo(() => g.map(y), [g]);
-  return [(0, r.jsx)(u.II_, {
-    id: "experiments-search",
-    control: (e, i) => {
-      var l, a;
-      return (0, r.jsx)(u.ne, (l = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: !0,
-              configurable: !0,
-              writable: !0
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({}, e), a = a = {
-        query: t,
-        onChange: n,
-        ref: i,
-        placeholder: b.intl.string(b.t["5h0QOD"])
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
-      }), l))
-    }
-  }, "experiments-search"), (0, r.jsx)(u.Clw, {}, "separator"), ...O, O.length > 0 ? (0, r.jsx)(u.Clw, {}, "separator-2") : null, ...f]
+    f = i.useMemo(() => g.map(y), [g]),
+    h = (0, r.jsx)(u.II_, {
+      id: "experiments-search",
+      control: (e, i) => {
+        var l, a;
+        return (0, r.jsx)(u.ne, (l = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+              }) : e[t] = r
+            })
+          }
+          return e
+        }({}, e), a = a = {
+          query: t,
+          onChange: n,
+          ref: i,
+          placeholder: b.intl.string(b.t["5h0QOD"])
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
+        }), l))
+      }
+    }, "experiments-search");
+  return O.length > 0 ? [(0, r.jsx)(u.kSQ, {
+    label: "Overridden Experiments",
+    children: O
+  }, "overridden-group"), (0, r.jsx)(u.Clw, {}, "separator-2"), (0, r.jsxs)(u.sNh, {
+    id: "other-experiments",
+    label: "Other Experiments",
+    children: [h, f]
+  }, "other-experiments")] : [h, ...f]
 }

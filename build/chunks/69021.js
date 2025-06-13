@@ -54,8 +54,8 @@ function f() {
     isStaff: t,
     isDeveloper: n,
     isLoggingGatewayEvents: f,
-    isLoggingOverlayEvents: j,
-    isLoggingAnalyticsEvents: h,
+    isLoggingOverlayEvents: h,
+    isLoggingAnalyticsEvents: j,
     isAnalyticsDebuggerEnabled: v,
     isTracingRequests: S,
     isForcedCanary: E,
@@ -91,8 +91,8 @@ function f() {
     maxVerticalSpacing: I
   } = (0, c.i)(), {
     setHorizontalSpacing: T,
-    setVerticalSpacing: _
-  } = c.i.getState(), N = p.zY.useSetting(), R = [];
+    setVerticalSpacing: N
+  } = c.i.getState(), _ = p.zY.useSetting(), R = [];
   return t && n && (R.push((0, r.jsx)(l.sNh, {
     id: "overrides",
     label: "Overrides",
@@ -132,9 +132,9 @@ function f() {
     }, "forced-canary"), (0, r.jsx)(l.S89, {
       id: "always-deliver",
       label: "Ads auto-targeting",
-      checked: N,
+      checked: _,
       action: () => {
-        p.zY.updateSetting(!N)
+        p.zY.updateSetting(!_)
       }
     }, "always-deliver"), (0, r.jsx)(l.S89, {
       id: "source-maps",
@@ -209,19 +209,19 @@ function f() {
     }, "gateway-events"), (0, r.jsx)(l.S89, {
       id: "overlay-events",
       label: "Overlay RPC Events",
-      checked: j,
+      checked: h,
       action: () => {
         (0, a.y)({
-          logOverlayEvents: !j
+          logOverlayEvents: !h
         })
       }
     }, "overlay-events"), (0, r.jsx)(l.S89, {
       id: "analytics-events",
       label: "Analytics Events",
-      checked: h,
+      checked: j,
       action: () => {
         (0, a.y)({
-          logAnalyticsEvents: !h
+          logAnalyticsEvents: !j
         })
       }
     }, "analytics-events"), (0, r.jsx)(l.S89, {
@@ -270,7 +270,7 @@ function f() {
       value: A,
       minValue: 0,
       maxValue: I,
-      onChange: e => _(e),
+      onChange: e => N(e),
       "aria-label": "Horizontal Spacing",
       renderValue: e => "".concat(Math.round(e), "px")
     }))
