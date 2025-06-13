@@ -273,7 +273,6 @@ class v extends i.PureComponent {
           default: e
         } = await n.e("99989").then(n.bind(n, 889662));
         return t => (0, r.jsx)(e, b(g({}, t), {
-          isChannelTextArea: !0,
           text: (0, f.getSelectionText)()
         }))
       }, {

@@ -88,7 +88,8 @@ function w(e) {
     children: e => (0, r.jsx)(o.Z, C({
       src: t.src,
       emojiName: t.name,
-      animated: !1
+      animated: !1,
+      surrogate: t.surrogate
     }, e))
   })
 }

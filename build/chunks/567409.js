@@ -14,8 +14,11 @@ let u = new Set([l.s.PLAYED_GAME, l.s.LAUNCHED_ACTIVITY]),
 
 function m(e) {
   let t = (0, s.Z)({
-    id: c.YN.GLOBAL_FEED,
-    unrankedEntries: !0
-  });
-  return n.useMemo(() => a()(t).filter(d).filter(t => t.extra.application_id === e).orderBy(e => o.default.extractTimestamp(e.id), "desc").uniqWith((e, t) => e.author_id === t.author_id && e.extra.application_id === t.extra.application_id).value(), [t, e])
+      id: c.YN.GLOBAL_FEED
+    }),
+    r = (0, s.Z)({
+      id: c.YN.GLOBAL_FEED,
+      unrankedEntries: !0
+    });
+  return n.useMemo(() => a()(r).unionBy(t, e => e.id).filter(d).filter(t => t.extra.application_id === e).orderBy(e => o.default.extractTimestamp(e.id), "desc").uniqWith((e, t) => e.author_id === t.author_id && e.extra.application_id === t.extra.application_id).value(), [r, e, t])
 }

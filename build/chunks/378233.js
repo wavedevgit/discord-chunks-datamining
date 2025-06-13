@@ -17,14 +17,14 @@ n.d(t, {
   sM: () => C,
   z: () => w
 }), n(413496), n(433524), n(35282), n(415506), n(781311);
-var r = n(606301),
-  i = n(134432),
-  a = n(581883),
-  o = n(430824),
-  s = n(117530),
-  l = n(768581),
-  c = n(358085),
-  u = n(913663),
+var r = n(134432),
+  i = n(581883),
+  a = n(430824),
+  o = n(117530),
+  s = n(768581),
+  l = n(358085),
+  c = n(913663),
+  u = n(11513),
   d = n(373228),
   _ = n(611480),
   f = n(981631);
@@ -43,7 +43,7 @@ let {
 }, T = e => {
   switch (e) {
     case d.u3.PNG:
-      return l.$k ? d.og.WEBP : d.og.PNG;
+      return s.$k ? d.og.WEBP : d.og.PNG;
     case d.u3.APNG:
       return d.og.APNG;
     case d.u3.LOTTIE:
@@ -73,23 +73,23 @@ let {
     size: n = _.lE
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
   if (null == e.format_type) return null;
-  let r = e.format_type;
-  e.format_type === d.u3.GIF && t && (r = d.u3.PNG);
-  let a = T(r),
+  let i = e.format_type;
+  e.format_type === d.u3.GIF && t && (i = d.u3.PNG);
+  let a = T(i),
     o = f.ANM.STICKER_ASSET(e.id, a),
     s = a === d.og.WEBP ? "&quality=lossless" : "";
   if ("development" !== m) {
     if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(g).concat(o);
-    let r = e.format_type === d.u3.APNG && t && !(0, c.isAndroid)() ? "&passthrough=false" : "",
-      a = Math.min(2, (0, i.x_)());
-    return "".concat(location.protocol).concat(h).concat(o, "?size=").concat((0, i.oO)(n * a)).concat(r).concat(s)
+    let i = e.format_type === d.u3.APNG && t && !(0, l.isAndroid)() ? "&passthrough=false" : "",
+      a = Math.min(2, (0, r.x_)());
+    return "".concat(location.protocol).concat(h).concat(o, "?size=").concat((0, r.oO)(n * a)).concat(i).concat(s)
   }
   return "".concat(location.protocol).concat(p).concat(o)
 }, C = (e, t) => {
-  let n, r = e.banner_asset_id;
-  if (null == r) return null;
-  let a = l.$k ? "webp" : "png";
-  return n = null != E ? "https://".concat(E, "/app-assets/").concat(_.Ks, "/store/").concat(r, ".").concat(a) : "".concat(location.protocol).concat(p).concat(f.ANM.STORE_ASSET(_.Ks, r, a)), null != t && (n += "?size=".concat((0, i.oO)(t))), n
+  let n, i = e.banner_asset_id;
+  if (null == i) return null;
+  let a = s.$k ? "webp" : "png";
+  return n = null != E ? "https://".concat(E, "/app-assets/").concat(_.Ks, "/store/").concat(i, ".").concat(a) : "".concat(location.protocol).concat(p).concat(f.ANM.STORE_ASSET(_.Ks, i, a)), null != t && (n += "?size=".concat((0, r.oO)(t))), n
 }, R = e => null != e.match("development" !== m ? O : v), P = e => e.stickers.some(e => {
   let {
     format_type: t
@@ -101,16 +101,15 @@ let {
   name: e.name,
   stickers: e.stickers,
   previewSticker: I(e)
-}), D = (e, t) => e === _.yr.ANIMATE_ON_INTERACTION ? t : e !== _.yr.NEVER_ANIMATE, L = (e, t, n, i) => {
-  if (s.Z.getUploadCount(n, i) > 0) return !0;
-  let a = u.Z.getStickerPreview(n, i);
-  if (null != a && a.length > 0) return !0;
+}), D = (e, t) => e === _.yr.ANIMATE_ON_INTERACTION ? t : e !== _.yr.NEVER_ANIMATE, L = (e, t, n, r) => {
+  if (o.Z.getUploadCount(n, r) > 0) return !0;
+  let i = c.Z.getStickerPreview(n, r);
+  if (null != i && i.length > 0) return !0;
   switch (e) {
     case d.V0.STICKER_PICKER:
       return "" !== t.trim();
     case d.V0.AUTOCOMPLETE:
-    case d.V0.EXPRESSION_SUGGESTIONS:
-      return (0, r.wN)(t).length > 1;
+      return (0, u.w)(t).length > 1;
     case d.V0.BUILT_IN_INTEGRATION:
     default:
       return !1
@@ -118,12 +117,12 @@ let {
 }, x = e => e.type === d.n0.GUILD, M = e => e.type === d.n0.STANDARD, k = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
   if (null === e) return !1;
   let t = e.guild_id;
-  return void 0 !== o.Z.getGuild(t)
+  return void 0 !== a.Z.getGuild(t)
 }, U = [];
 
 function G() {
   var e, t;
-  return null != (t = null == (e = a.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? void 0 : e.stickerIds) ? t : U
+  return null != (t = null == (e = i.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? void 0 : e.stickerIds) ? t : U
 }
 
 function B(e) {
