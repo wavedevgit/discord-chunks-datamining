@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => C,
-  yw: () => N
-}), n(388685), n(35282), n(415506), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(781311);
+  ZP: () => P,
+  yw: () => R
+}), n(388685), n(35282), n(415506), n(49124), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(781311);
 var r = n(392711),
   i = n.n(r),
   a = n(31775),
@@ -127,11 +127,16 @@ function A(e) {
   }
   return t
 }
+let N = [/\\/, /[\x00-\x08\x0A-\x1F\x7F]/, /[\u200B-\u200D\u2060\u2062-\u2064\u202A-\u202E\uFEFF]/, /%25[0-9A-Fa-f]/];
 
-function N(e) {
+function C(e) {
+  return N.some(t => t.test(e))
+}
+
+function R(e) {
   try {
     var t;
-    if (/\\/.test(e)) throw Error("Rejected due to backslash obfuscation: " + e);
+    if (C(e)) throw Error("Rejected due to suspicious characters in URL: " + JSON.stringify(e));
     let n = new URL(e),
       r = null != (t = n.protocol) ? t : "";
     if (!b.includes(r.toLowerCase())) throw Error("Provided protocol is not allowed: " + r);
@@ -147,38 +152,46 @@ function N(e) {
     return null
   }
 }
-let C = m(p({}, l().defaultRules.link), {
+let P = m(p({}, l().defaultRules.link), {
   match: (e, t, n) => t.allowLinks ? l().defaultRules.link.match(e, t, n) : null,
   parse(e, t, n) {
     let [r, a, o, s] = e, u = () => ({
       type: d.b.TEXT,
       content: r
-    }), _ = E(o), f = E(a), h = E(null != s ? s : ""), g = _.whitespaceSanitized, b = f.fullySanitized, C = h.fullySanitized, R = b.trim();
-    if (0 === g.trim().length || 0 === R.length) return u();
-    let P = N(l().unescapeUrl(o)),
-      w = null == P,
-      D = (0, c.ZP)(a).length > 0 || (0, c.ZP)(s).length > 0;
-    if (w || D) return u();
-    let L = m(p({}, n), {
+    });
+    if (C(o)) return u();
+    let _ = E(o),
+      f = E(a),
+      h = E(null != s ? s : ""),
+      g = _.whitespaceSanitized,
+      b = f.fullySanitized,
+      N = h.fullySanitized,
+      P = b.trim();
+    if (0 === g.trim().length || 0 === P.length) return u();
+    let w = R(l().unescapeUrl(o)),
+      D = null == w,
+      L = (0, c.ZP)(a).length > 0 || (0, c.ZP)(s).length > 0;
+    if (D || L) return u();
+    let x = m(p({}, n), {
         allowEscape: !1,
         parseInlineCodeChildContent: !0
       }),
-      x = n.allowEmojiLinks ? O : y,
-      M = [...x, ...v],
-      k = [...I, ...T],
-      j = S(t(b, L), M, [d.b.EMOJI]),
-      U = S(t(C, L), k);
-    if (null == j || null == U || 0 === A(j).trim().length) return u();
-    let G = i().pick(t.rules, x),
-      B = l().parserFor(G)(f.whitespaceSanitized, L),
-      V = h.whitespaceSanitized,
+      M = n.allowEmojiLinks ? O : y,
+      k = [...M, ...v],
+      j = [...I, ...T],
+      U = S(t(b, x), k, [d.b.EMOJI]),
+      G = S(t(N, x), j);
+    if (null == U || null == G || 0 === A(U).trim().length) return u();
+    let B = i().pick(t.rules, M),
+      V = l().parserFor(B)(f.whitespaceSanitized, x),
+      F = h.whitespaceSanitized,
       {
-        target: F
-      } = P;
+        target: Z
+      } = w;
     return {
-      content: B,
-      target: F,
-      title: V
+      content: V,
+      target: Z,
+      title: F
     }
   }
 })

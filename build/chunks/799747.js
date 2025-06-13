@@ -1,2 +1,2 @@
 /** Chunk was on 2038 **/
-e.exports = JSON.parse('{"M6cPwM":"Boule de neige"}')
+e.exports = JSON.parse('{"+utqa2":["Option d\'arri\xe8re-plan des cadeaux\xa0: ",[1,"giftStyle"]],"B9XqQk":"Bo\xeete","AJ4iio":"G\xe2teau","P5keo6":"Coffre","w84vER":"Caf\xe9","6dCq/v":"Coupe","+HMF8v":"Nitroween","vd1fu7":"Bo\xeete festive","aubYGR":"G\xe2teau festif","vjxYqa":"Coffre festif","bHuJLS":"Caf\xe9 festif","M6cPwM":"Boule de neige","GzPel5":"Bo\xeete"}')
