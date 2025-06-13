@@ -1,6 +1,6 @@
 /**
   Module ID: 80144
-  Original File Name: 7cbe21c1dac31ba3
+  Original File Name: 41f40e238bd07638
 **/
 .row__19fd1 {
     align-items: center;
@@ -113,12 +113,6 @@
     width: 16px
 }
 
-.root_a2e66b {
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
-    min-width: fit-content
-}
-
 .content_a2e66b,.headersContainer_a2e66b {
     padding: var(--spacing-16)
 }
@@ -156,4 +150,4 @@ html:not(.visual-refresh) .modalFooter_a2e66b {
     padding-left: 0
 }
 
-/*# sourceMappingURL=7cbe21c1dac31ba3.css.map*/
+/*# sourceMappingURL=41f40e238bd07638.css.map*/

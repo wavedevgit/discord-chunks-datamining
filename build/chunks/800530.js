@@ -1,5 +1,5 @@
 /** Chunk was on 80144 **/
-n.d(t, {
+t.d(n, {
   Cg: () => m,
   Cp: () => M,
   Cs: () => b,
@@ -19,16 +19,16 @@ n.d(t, {
   sQ: () => u,
   wo: () => I
 });
-var o, i, r, s, l, a, c, _ = n(990547),
-  d = n(981631);
+var o, i, r, s, l, a, c, _ = t(990547),
+  d = t(981631);
 
-function E(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
+function E(e, n, t) {
+  return n in e ? Object.defineProperty(e, n, {
+    value: t,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = n, e
+  }) : e[n] = t, e
 }
 class u {}
 E(u, "TOS_LINK", "https://discord.com/terms"), E(u, "COMMUNITY_GUIDELINES", "https://discord.com/guidelines"), E(u, "APPEALS_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731"), E(u, "WARNING_SYSTEM_HELPCENTER_LINK", "https://support.discord.com/hc/articles/18210965981847"), E(u, "AGE_VERIFICATION_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731"), E(u, "SPAM_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731&tf_360055270593=__dc.ticket_form-tnsv1_appeals_other_questions__"), E(u, "LEARN_MORE_UU_APPEAL_LINK", "https://support.discord.com/hc/articles/360041820932");

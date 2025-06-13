@@ -1,36 +1,35 @@
 /** Chunk was on 80144 **/
-n.d(t, {
+t.d(n, {
   default: () => C
-}), n(953529);
-var o = n(255367),
-  i = n(73800),
-  r = n(772848),
-  s = n(481060),
-  l = n(600164),
-  a = n(138201),
-  c = n(63063),
-  _ = n(168107),
-  d = n(480916),
-  E = n(81643),
-  u = n(469775),
-  m = n(981631),
-  I = n(800530),
-  N = n(388032),
-  L = n(631843);
+}), t(953529);
+var o = t(255367),
+  i = t(73800),
+  r = t(772848),
+  s = t(481060),
+  l = t(600164),
+  a = t(138201),
+  c = t(63063),
+  _ = t(168107),
+  d = t(480916),
+  E = t(81643),
+  u = t(469775),
+  m = t(981631),
+  I = t(800530),
+  N = t(388032),
+  L = t(631843);
 let C = function(e) {
   let {
-    transitionState: t,
-    entryPoint: n,
+    transitionState: n,
+    entryPoint: t,
     onClose: C
   } = e, {
     loading: A,
     initiateAgeVerification: S
   } = (0, E.WD)(C), x = i.useMemo(() => (0, r.Z)(), []);
   return i.useEffect(() => {
-    (0, d.lA)(x, d.d_.PRIMARY, n)
-  }, [x, n]), (0, o.jsxs)(s.Y0X, {
-    transitionState: t,
-    className: L.root,
+    (0, d.lA)(x, d.d_.PRIMARY, t)
+  }, [x, t]), (0, o.jsxs)(s.Y0X, {
+    transitionState: n,
     parentComponent: "AgeVerificationGetStartedModal",
     children: [(0, o.jsxs)(s.hzk, {
       className: L.content,
@@ -47,17 +46,17 @@ let C = function(e) {
           className: L.modalClose,
           onClick: C
         })]
-      }), (0, u.u)(x).map((e, t) => {
+      }), (0, u.u)(x).map((e, n) => {
         let {
-          title: n,
+          title: t,
           description: i
         } = e;
         return (0, o.jsx)(a.ZP, {
-          title: n,
+          title: t,
           description: i,
           listType: "numbered",
-          index: t
-        }, t)
+          index: n
+        }, n)
       }), (0, o.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
