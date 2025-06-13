@@ -56,5 +56,8 @@ let c = new a(l.Z, {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), s = t
+  },
+  APPLIED_GUILD_BOOST_COUNT_RESET: function() {
+    s = {}
   }
 })

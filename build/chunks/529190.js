@@ -1,4 +1,4 @@
-/** Chunk was on 66532 **/
+/** Chunk was on 96584 **/
 e.exports = {
   bodyColumnLeft: "bodyColumnLeft_d64c23",
   bodyColumnRight: "bodyColumnRight_d64c23",

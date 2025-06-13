@@ -1,6 +1,6 @@
 /** Chunk was on 98787 **/
 n.d(t, {
-  j: () => _
+  j: () => v
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,12 +19,12 @@ var r = n(255367),
   b = n(55185),
   y = n(981631),
   O = n(921944),
-  v = n(46140);
-let _ = e => {
+  _ = n(46140);
+let v = e => {
   let {
     children: t,
     isForceShowSharingPopout: n,
-    setIsForceShowSharingPopout: _
+    setIsForceShowSharingPopout: v
   } = e, [C, j] = (0, i.useState)(!1), S = function(e) {
     let {
       isForceShowSharingPopout: t
@@ -32,7 +32,7 @@ let _ = e => {
       isEnabled: n,
       showActivitySharingIndicatorWhenSharing: r
     } = (0, m.D)("SharingPrivacyPopout"), i = (0, d.Ws)({
-      location: v.dr.CONFLICT_CHECKS
+      location: _.dr.CONFLICT_CHECKS
     }), o = h.G6.useSetting(), s = (0, l.e7)([p.Z], () => p.Z.getLayers().includes(y.S9g.USER_SETTINGS)), a = (0, l.e7)([f.Z], () => f.Z.getStatus()), {
       isOpen: c
     } = (0, u.Z)();
@@ -60,7 +60,7 @@ let _ = e => {
         let e = () => {
           (0, a.EW)(o.z.SHARE_ACTIVITY_COACHMARK_V2, {
             dismissAction: O.L.USER_DISMISS
-          }), _(!1), j(!1)
+          }), v(!1), j(!1)
         };
         return (0, r.jsx)(s.yRy, {
           targetElementRef: x,

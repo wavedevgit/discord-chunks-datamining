@@ -67,8 +67,8 @@ let y = i.memo(function(e) {
   }(e, ["folderNode"]);
   let {
     id: O,
-    name: v,
-    color: _,
+    name: _,
+    color: v,
     children: C
   } = t, j = C.map(e => e.id), S = (0, a.Z)(e => e.guildId), x = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), E = function(e) {
     let t = e.children.map(e => {
@@ -97,12 +97,12 @@ let y = i.memo(function(e) {
       } = await n.e("52590").then(n.bind(n, 205784));
       return t => (0, r.jsx)(e, b(m({}, t), {
         folderId: O,
-        folderName: v,
-        folderColor: _,
+        folderName: _,
+        folderColor: v,
         unread: N || I > 0
       }))
     })
-  }, [O, v, _, N, I]);
+  }, [O, _, v, N, I]);
   return (0, r.jsx)(p.Z, b(m({}, y), {
     folderNode: t,
     expanded: x,

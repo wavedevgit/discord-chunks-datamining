@@ -1,8 +1,8 @@
 /** Chunk was on 98787 **/
 n.d(t, {
-  ZP: () => _,
+  ZP: () => v,
   jd: () => O,
-  wt: () => v
+  wt: () => _
 }), n(361932), n(187205), n(539854), n(388685), n(642613);
 var r, i = n(73800),
   l = n(106351),
@@ -21,7 +21,7 @@ var r, i = n(73800),
   y = n(982183),
   O = ((r = {}).Loading = "loading", r.Loaded = "loaded", r.Done = "done", r);
 
-function v() {
+function _() {
   let e = (0, o.Wu)([g.ZP], () => g.ZP.getFlattenedGuildIds()),
     t = (0, o.Wu)([h.ZP], () => e.flatMap(e => h.ZP.getSelectableChannelIds(e)), [e]),
     n = (0, o.cj)([u.Z], () => u.Z.getAllActiveJoinedThreads());
@@ -45,8 +45,8 @@ function v() {
   }, [t, n])
 }
 
-function _() {
-  let [e, t] = i.useState(!1), [n, r] = i.useState("loading"), l = v(), u = (0, o.Wu)([p.Z], () => (0, c.K)(l.map(e => p.Z.getMessages(e))), [l]), d = i.useCallback(async e => {
+function v() {
+  let [e, t] = i.useState(!1), [n, r] = i.useState("loading"), l = _(), u = (0, o.Wu)([p.Z], () => (0, c.K)(l.map(e => p.Z.getMessages(e))), [l]), d = i.useCallback(async e => {
     r("loading");
     let n = async () => {
       let t = !1,

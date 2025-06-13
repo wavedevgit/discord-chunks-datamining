@@ -65,14 +65,14 @@ function O(e, t) {
   }
   return i
 }
-let v = () => {
+let _ = () => {
     let e = (0, s.e7)([d.Z], () => d.Z.getSavedMessageCount());
     return (0, i.useMemo)(() => {
       let t = [f.V5.ALL, f.V5.MENTIONS];
       return ((0, h.Z)() || e > 0) && t.push(f.V5.BOOKMARKS), t.push(f.V5.ANNOUNCEMENTS), t
     }, [e])
   },
-  _ = {
+  v = {
     [f.V5.ALL]: !1,
     [f.V5.BOOKMARKS]: !1,
     [f.V5.MENTIONS]: !1,
@@ -83,7 +83,7 @@ function C(e) {
   let {
     selectedFilter: t,
     setSelectedFilter: n
-  } = e, l = f.by, s = v(), [c, u] = (0, i.useState)(_), d = s.filter(e => !c[e]);
+  } = e, l = f.by, s = _(), [c, u] = (0, i.useState)(v), d = s.filter(e => !c[e]);
   return (0, r.jsxs)("div", {
     className: m.filters,
     children: [(0, r.jsx)(a.njP, {
@@ -185,7 +185,7 @@ function x(e) {
     selectedFilter: t,
     setSelectedFilter: n,
     className: l
-  } = e, o = v(), s = (0, i.useRef)(null), [c, d] = (0, i.useState)(!1), [h, m] = (0, i.useState)(!1), _ = f.by;
+  } = e, o = _(), s = (0, i.useRef)(null), [c, d] = (0, i.useState)(!1), [h, m] = (0, i.useState)(!1), v = f.by;
   return 0 === o.length ? null : (0, r.jsx)(a.yRy, {
     position: "bottom",
     align: "left",
@@ -212,7 +212,7 @@ function x(e) {
               enabled: !0
             })
           },
-          label: _[e],
+          label: v[e],
           dontCloseOnAction: !0,
           icon: e === t ? (0, r.jsx)(a.dz2, {
             size: "sm"

@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(540059),
   y = n(35225),
   O = n(703656),
-  v = n(769654),
-  _ = n(271383),
+  _ = n(769654),
+  v = n(271383),
   C = n(771845),
   j = n(727258),
   S = n(276952),
@@ -138,14 +138,14 @@ let k = i.memo(function(e) {
     [eg, em] = i.useState(!1),
     eb = !ee && eg,
     [ey, eO] = i.useState(!1),
-    [ev, e_] = i.useState(!1),
-    [eC] = i.useState(() => new d.sW(70, () => e_(!0)));
+    [e_, ev] = i.useState(!1),
+    [eC] = i.useState(() => new d.sW(70, () => ev(!0)));
   i.useEffect(() => () => eC.cancel(), [eC]);
   let ej = i.useCallback(() => {
       if (null != H) return void(0, O.uL)(H, {
         state: L
       });
-      (0, v.X)(eo, {
+      (0, _.X)(eo, {
         state: L
       })
     }, [eo, H]),
@@ -154,7 +154,7 @@ let k = i.memo(function(e) {
       let e = (0, y.V)(F.id);
       null != e && p.Z.preload(F.id, e)
     }, [H, F, q, et]),
-    ex = (0, u.e7)([_.ZP], () => _.ZP.isCurrentUserGuest(eo)),
+    ex = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
     eE = i.useCallback(e => {
       null == F || ex || J(e, F)
     }, [F, J, ex]),
@@ -166,22 +166,22 @@ let k = i.memo(function(e) {
     }, [es]),
     eI = i.useCallback(e => {
       if (e) return void eC.delay();
-      eC.cancel(), e_(!1)
+      eC.cancel(), ev(!1)
     }, [eC]),
     ew = i.useCallback(e => {
       null == G || G(eo, e)
     }, [eo, G]),
     eN = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == F) return null;
-  let eZ = ev || ey ? (0, r.jsx)(x.Z, {
+  let eZ = e_ || ey ? (0, r.jsx)(x.Z, {
       guild: F,
-      show: ev,
+      show: e_,
       active: W,
       onAnimationStart: function() {
-        eO(ev)
+        eO(e_)
       },
       onAnimationRest: function() {
-        ev || eO(!1)
+        e_ || eO(!1)
       }
     }) : (0, r.jsx)(h.LYs, D(R({
       ariaLabel: T.intl.formatToPlainString(T.t["/uzRsr"], {
@@ -216,14 +216,14 @@ let k = i.memo(function(e) {
       style: {
         scale: null == er ? 1 : er
       },
-      "data-drop-hovering": ev,
+      "data-drop-hovering": e_,
       className: o()(A.blobContainer, {
         [A.sorting]: ee,
-        [A.wobble]: ev,
-        [A.selected]: ev || W
+        [A.wobble]: e_,
+        [A.selected]: e_ || W
       }),
       children: (0, r.jsx)(h.aRk, {
-        selected: !!ea || ev || W || eb,
+        selected: !!ea || e_ || W || eb,
         upperBadge: ec,
         lowerBadge: eu,
         lowerBadgeSize: ed,

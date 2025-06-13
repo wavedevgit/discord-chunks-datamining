@@ -1,5 +1,6 @@
 /** Chunk was on 98787 **/
 n.d(t, {
+  q: () => l,
   v: () => i
 });
 var r = n(570140);
@@ -10,5 +11,11 @@ let i = (e, t) => {
       guildId: e,
       premiumCount: t
     })
+  })
+};
+
+function l() {
+  r.Z.dispatch({
+    type: "APPLIED_GUILD_BOOST_COUNT_RESET"
   })
 }

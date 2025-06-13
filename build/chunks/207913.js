@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(111028),
   y = n(978003),
   O = n(245216),
-  v = n(172751),
-  _ = n(739566),
+  _ = n(172751),
+  v = n(739566),
   C = n(930282),
   j = n(318713),
   S = n(47930),
@@ -83,7 +83,7 @@ function B(e) {
     nick: y,
     colorString: O,
     primaryGuild: C
-  } = (0, _.ZP)(t), {
+  } = (0, v.ZP)(t), {
     avatarDecorationSrc: j,
     avatarSrc: E,
     eventHandlers: P
@@ -106,7 +106,7 @@ function B(e) {
       hideGuildTag: !0,
       hideSystemTag: !0,
       className: k.username
-    }), null != C && (0, r.jsx)(v.ZP, {
+    }), null != C && (0, r.jsx)(_.ZP, {
       primaryGuild: C,
       userId: t.author.id,
       inline: !0,
@@ -307,18 +307,18 @@ function F(e) {
         m = null;
       1 === a ? m = u.XBm : a > 1 ? m = u.Ka2 : c ? m = O.Z : h || p ? m = u.QDj : d ? m = u.SlE : f && (m = u.gj8);
       let b = !0,
-        v = null;
+        _ = null;
       if (e)
-        if (c) v = M.intl.string(M.t["9ddYKi"]);
+        if (c) _ = M.intl.string(M.t["9ddYKi"]);
         else if (h) {
-        var _;
-        b = !1, v = null == (_ = t.poll) ? void 0 : _.question.text
-      } else v = p ? M.intl.string(M.t.sad2PD) : i ? M.intl.string(M.t.p0oZm5) : a > 1 ? M.intl.formatToPlainString(M.t.rtfTKi, {
+        var v;
+        b = !1, _ = null == (v = t.poll) ? void 0 : v.question.text
+      } else _ = p ? M.intl.string(M.t.sad2PD) : i ? M.intl.string(M.t.p0oZm5) : a > 1 ? M.intl.formatToPlainString(M.t.rtfTKi, {
         count: a
       }) : 1 === a ? M.intl.string(M.t.tCcq5u) : d ? M.intl.format(M.t.zY4v1N, {
         stickerName: t.stickerItems[0].name
       }) : f ? M.intl.string(M.t.slFYgo) : g ? M.intl.string(M.t.Yvvfw8) : M.intl.string(M.t.sDqZHB);
-      else b = !1, v = (0, r.jsx)(C.ZP, {
+      else b = !1, _ = (0, r.jsx)(C.ZP, {
         content: s,
         message: t,
         compact: !1,
@@ -327,15 +327,15 @@ function F(e) {
           [k.selected]: l
         })
       });
-      return e && (v = (0, r.jsx)("div", {
+      return e && (_ = (0, r.jsx)("div", {
         className: o()(k.message, {
           [k.unread]: n,
           [k.selected]: l,
           [k.descriptionMessage]: b
         }),
-        children: v
+        children: _
       })), {
-        previewContent: v,
+        previewContent: _,
         Icon: m
       }
     }, [t, s, n, l])

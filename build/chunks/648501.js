@@ -20,8 +20,8 @@ var i = n(442837),
   b = n(790901),
   y = n(714794),
   O = n(355363),
-  v = n(687352),
-  _ = n(876548),
+  _ = n(687352),
+  v = n(876548),
   C = n(25601),
   j = n(981631),
   S = n(490897),
@@ -76,14 +76,14 @@ function P(e) {
     children: (0, o.NGo)(z)
   });
   let K = null != (t = null == w ? void 0 : w.length) ? t : 0;
-  return null != N && N && H ? (0, r.jsx)(_.Z, {
+  return null != N && N && H ? (0, r.jsx)(v.Z, {
     userCount: K,
     video: B || V,
     channel: n
   }) : I && (0, m.a)(w) && W ? (0, r.jsx)(o.IGR, {
     text: x.intl.string(x.t.dI3q4u),
     color: l.Z.unsafe_rawColors.RED_400.css
-  }) : null != Z && Z && (0, b.u)(U) ? (0, r.jsx)(v.Z, {
+  }) : null != Z && Z && (0, b.u)(U) ? (0, r.jsx)(_.Z, {
     embeddedApps: U,
     muted: D
   }) : null

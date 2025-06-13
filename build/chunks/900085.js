@@ -18,8 +18,8 @@ var r, i = n(255367),
   b = n(576855),
   y = n(313201),
   O = n(991346),
-  v = n(592125),
-  _ = n(888369),
+  _ = n(592125),
+  v = n(888369),
   C = n(430824),
   j = n(306680),
   S = n(944486),
@@ -100,7 +100,7 @@ class V extends(r = l.Component) {
 M(V, "defaultProps", {
   unread: !1
 });
-let H = c.ZP.connectStores([j.ZP, v.Z], e => {
+let H = c.ZP.connectStores([j.ZP, _.Z], e => {
     let {
       channel: t
     } = e;
@@ -108,7 +108,7 @@ let H = c.ZP.connectStores([j.ZP, v.Z], e => {
       unread: j.ZP.hasUnread(t.id),
       mentions: j.ZP.getMentionCount(t.id),
       isMentionLowImportance: j.ZP.getIsMentionLowImportance(t.id),
-      category: v.Z.getChannel(t.parent_id)
+      category: _.Z.getChannel(t.parent_id)
     }
   })(V),
   F = c.ZP.connectStores([x.ZP], e => {
@@ -120,12 +120,12 @@ let H = c.ZP.connectStores([j.ZP, v.Z], e => {
       voiceStates: x.ZP.getVoiceStates(t.guild_id)[t.id]
     }
   })(V),
-  z = c.ZP.connectStores([_.default], e => {
+  z = c.ZP.connectStores([v.default], e => {
     let {
       guild: t
     } = e;
     return {
-      unread: _.default.hasUnread(t.id)
+      unread: v.default.hasUnread(t.id)
     }
   })(Z.ic),
   W = c.ZP.connectStores([j.ZP], e => {
@@ -136,10 +136,10 @@ let H = c.ZP.connectStores([j.ZP, v.Z], e => {
       mentions: j.ZP.getMentionCount(t.id)
     }
   })(Z.PZ),
-  K = c.ZP.connectStores([v.Z, j.ZP], e => {
+  K = c.ZP.connectStores([_.Z, j.ZP], e => {
     let {
       user: t
-    } = e, n = v.Z.getDMFromUserId(t.id);
+    } = e, n = _.Z.getDMFromUserId(t.id);
     return {
       mentions: null != n ? j.ZP.getMentionCount(n) : 0
     }

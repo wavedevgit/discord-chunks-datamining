@@ -55,8 +55,8 @@ function f(e) {
       selected: b,
       trailing: y,
       background: O,
-      showUnread: v = !1,
-      ref: _
+      showUnread: _ = !1,
+      ref: v
     } = e,
     C = function(e, t) {
       if (null == e) return {};
@@ -76,7 +76,7 @@ function f(e) {
   let j = (0, o.JA)(n),
     S = null != (t = (0, s.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
-    ref: _,
+    ref: v,
     children: (0, r.jsxs)(a.kL8, p(h({}, C), {
       buttonProps: p(h({}, j), {
         id: n,
@@ -97,7 +97,7 @@ function f(e) {
       className: l()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [O, v ? (0, r.jsx)("div", {
+      children: [O, _ ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
         className: l()([d.link, d.basicChannelRowLink, f]),

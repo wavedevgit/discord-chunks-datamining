@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(979651),
   y = n(823379),
   O = n(355363),
-  v = n(449932),
-  _ = n(561788),
+  _ = n(449932),
+  v = n(561788),
   C = n(876548),
   j = n(543432),
   S = n(981631),
@@ -37,7 +37,7 @@ function I(e) {
     voiceStates: g,
     isChannelSelected: b,
     shouldShowSettingNudge: O
-  } = e, _ = i.useMemo(() => {
+  } = e, v = i.useMemo(() => {
     var e;
     return null == g || g.length > 50 ? {} : {
       [o.getGuildId()]: null != (e = g.map(e => {
@@ -48,7 +48,7 @@ function I(e) {
       })) ? e : []
     }
   }, [o, g]);
-  (0, c.$)(_);
+  (0, c.$)(v);
   let C = (0, u.ZP)(o),
     j = Array.from((0, u.uF)(C).values()),
     P = null != (t = null == g ? void 0 : g.filter(y.lm)) ? t : [],
@@ -78,7 +78,7 @@ function I(e) {
       className: E.headerDivider
     }), j.map((e, t) => {
       var n;
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(_.Z, {
         embeddedApp: e,
         presenceActivity: null != (n = e.presenceActivity) ? n : void 0,
         channel: o,
@@ -89,7 +89,7 @@ function I(e) {
         members: n,
         activity: i
       } = e;
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(_.Z, {
         presenceActivity: i,
         channel: o,
         members: n,
@@ -163,7 +163,7 @@ function w(e) {
   }), u = (0, s.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
   return null == (0, p.KS)(t, u) ? null : (0, r.jsxs)("div", {
     className: o()(E.popoutHeaderContainer, P.popoutHeaderContainer),
-    children: [(0, r.jsx)(_.Z, {
+    children: [(0, r.jsx)(v.Z, {
       channel: t
     }), c ? (0, r.jsx)(C.Z, {
       userCount: i,

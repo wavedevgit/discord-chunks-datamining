@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(821020),
   y = n(370774),
   O = n(961040),
-  v = n(739340),
-  _ = n(932711),
+  _ = n(739340),
+  v = n(932711),
   C = n(981631),
   j = n(522458);
 
@@ -35,7 +35,7 @@ function S(e) {
     anyUnread: T,
     unreadRecentMentionsCount: A
   } = function() {
-    let e = (0, v.wt)(),
+    let e = (0, _.wt)(),
       t = (0, o.e7)([g.ZP], () => e.some(e => g.ZP.hasUnread(e))),
       n = (0, o.e7)([h.Z], () => h.Z.getSettingsFilteredMentions());
     return {
@@ -68,7 +68,7 @@ function S(e) {
       hovered: I,
       unread: T,
       className: j.pill
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(v.Z, {
       children: (0, r.jsx)(s.aRk, {
         selected: Z || I,
         lowerBadge: R,

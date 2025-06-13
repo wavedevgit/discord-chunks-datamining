@@ -18,8 +18,8 @@ var r, i = n(255367),
   b = n(199902),
   y = n(19780),
   O = n(306680),
-  v = n(944486),
-  _ = n(594174),
+  _ = n(944486),
+  v = n(594174),
   C = n(451478),
   j = n(276952),
   S = n(682662),
@@ -144,7 +144,7 @@ class D extends(r = l.PureComponent) {
   getChannelIcon() {
     let {
       channel: e
-    } = this.props, t = e.type === P.d4z.DM ? _.default.getUser(e.getRecipientId()) : null;
+    } = this.props, t = e.type === P.d4z.DM ? v.default.getUser(e.getRecipientId()) : null;
     return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, h.x)(e)
   }
   render() {
@@ -231,7 +231,7 @@ class D extends(r = l.PureComponent) {
     }), N(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === P.d4z.DM ? _.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === P.d4z.DM ? v.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
@@ -265,8 +265,8 @@ let L = l.forwardRef(function(e, t) {
     o = (0, a.e7)([y.Z], () => y.Z.getChannelId(), []),
     u = (0, a.e7)([d.Z], () => null != o ? d.Z.getMode(o) : P.WtW.VOICE, [o]),
     h = (0, a.e7)([b.Z], () => b.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    m = (0, a.e7)([v.Z], () => v.Z.getChannelId(), []),
-    _ = (0, a.e7)([O.ZP], () => O.ZP.getMentionCount(n), [n]),
+    m = (0, a.e7)([_.Z], () => _.Z.getChannelId(), []),
+    v = (0, a.e7)([O.ZP], () => O.ZP.getMentionCount(n), [n]),
     {
       isFacepileEnabled: C
     } = g.Z.useExperiment({
@@ -283,9 +283,9 @@ let L = l.forwardRef(function(e, t) {
   return (0, i.jsx)(D, T(Z({}, e), {
     ref: t,
     channelName: r,
-    unread: _ > 0,
+    unread: v > 0,
     selected: m === n,
-    badge: _,
+    badge: v,
     audio: S,
     video: x,
     stream: h,

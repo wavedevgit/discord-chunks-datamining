@@ -1,5 +1,4 @@
-/** Chunk was on 94421 **/
-"use strict";
+/** Chunk was on 96584 **/
 e.exports = {
   card: "card__61870",
   tier0: "tier0__61870",

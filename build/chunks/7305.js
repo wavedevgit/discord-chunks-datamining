@@ -53,9 +53,9 @@ function A(e) {
   }
   return e
 }
-let k = [j.h8.PLAN_SELECT, j.h8.ADD_PAYMENT_STEPS, j.h8.REVIEW, j.h8.CONFIRM];
+let N = [j.h8.PLAN_SELECT, j.h8.ADD_PAYMENT_STEPS, j.h8.REVIEW, j.h8.CONFIRM];
 
-function N(e) {
+function k(e) {
   let {
     analyticsLocation: n,
     analyticsObject: t,
@@ -78,8 +78,8 @@ function N(e) {
     guildId: M,
     referralTrialOfferId: T,
     skuId: A,
-    returnRef: k,
-    skipConfirm: N = !1,
+    returnRef: N,
+    skipConfirm: k = !1,
     continueSessionToInitialStep: U
   } = e, {
     analyticsLocations: R
@@ -123,8 +123,8 @@ function N(e) {
     skuId: A,
     shakeWhilePurchasing: !0,
     isDynamicModal: D,
-    returnRef: k,
-    skipConfirm: N,
+    returnRef: N,
+    skipConfirm: k,
     continueSessionToInitialStep: U
   })
 }
@@ -148,7 +148,7 @@ function U(e) {
     referralTrialOfferId: s
   }), f = (0, v.Fv)(p), _ = (0, d.id)(C, c, u);
   return (0, i.jsx)(m.J, (n = A({}, e), t = t = {
-    breadcrumbSteps: k,
+    breadcrumbSteps: N,
     onReturn: () => {
       let e = Object.values(a),
         n = e.length < 1 && null == l ? j.h8.PLAN_SELECT : j.h8.REVIEW;
@@ -263,7 +263,7 @@ function F(e) {
           giftMessage: d,
           giftStyle: p,
           giftingOrigin: a,
-          children: (0, i.jsx)(N, A({}, e))
+          children: (0, i.jsx)(k, A({}, e))
         })
       })
     })

@@ -5,7 +5,8 @@ n.d(t, {
   KC: () => l,
   Nj: () => s,
   Vr: () => a,
-  cm: () => i
+  cm: () => i,
+  pR: () => c
 });
 var r = n(570140);
 let i = e => {
@@ -35,5 +36,11 @@ let i = e => {
     r.Z.dispatch({
       type: "DCF_NEW_USER_MIN_AGE_REQUIRED_OVERRIDE",
       value: e
+    })
+  },
+  c = e => {
+    r.Z.dispatch({
+      type: "DCF_OVERRIDE_LAST_DC_DISMISSED",
+      dismissibleContent: e
     })
   }

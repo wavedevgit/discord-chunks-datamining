@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(727258),
   y = n(276952),
   O = n(199540),
-  v = n(40153),
-  _ = n(252686),
+  _ = n(40153),
+  v = n(252686),
   C = n(682662),
   j = n(662146),
   S = n(981631),
@@ -116,7 +116,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             [P.wobble]: !$ && q && !a
           }),
           "data-dnd-name": er,
-          children: $ ? (0, r.jsx)(_.Z, {
+          children: $ ? (0, r.jsx)(v.Z, {
             isFolder: !0
           }) : (0, r.jsx)(O.Z, {
             folderNode: t,
@@ -137,7 +137,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
             "aria-posinset": H
           })
         })
-      }), A ? (0, r.jsx)(v.ZP, {
+      }), A ? (0, r.jsx)(_.ZP, {
         name: er,
         targetNode: t,
         onDragOverChanged: et
@@ -171,7 +171,7 @@ let I = (0, m.Mg)(d.Z.FOLDER_ITEM_ANIMATION_DURATION),
           "aria-label": t.name,
           children: W.map((t, n) => U(t, n, W.length, e.height))
         }, l)
-      }), A && a ? (0, r.jsx)(v.Zu, {
+      }), A && a ? (0, r.jsx)(_.Zu, {
         name: er,
         targetNode: t
       }) : null]

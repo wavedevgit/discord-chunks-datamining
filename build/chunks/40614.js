@@ -1,6 +1,6 @@
 /** Chunk was on 98787 **/
 n.d(t, {
-  V: () => _
+  V: () => v
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -28,7 +28,7 @@ function O() {
   })
 }
 
-function v() {
+function _() {
   var e;
   let t = (0, s.e7)([c.Z], () => c.Z.getFakeGameData()),
     n = (0, s.e7)([h.ZP], () => h.ZP.getVisibleGame()),
@@ -39,17 +39,17 @@ function v() {
     now: g
   } = (0, u.tS)(), O = (0, i.useMemo)(() => (0, d.T_)({
     start: l
-  }, g), [l, g]), v = [...f ? [b.intl.string(m.default.jfDsyM)] : [], b.intl.string(b.t.BMTj29), O];
+  }, g), [l, g]), _ = [...f ? [b.intl.string(m.default.jfDsyM)] : [], b.intl.string(b.t.BMTj29), O];
   return (0, r.jsx)(a.Text, {
     className: y.textContent,
     variant: "text-xs/medium",
     color: "text-positive",
     lineClamp: 1,
-    children: v.join(" \xb7 ")
+    children: _.join(" \xb7 ")
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     onClick: t
   } = e, {
@@ -59,7 +59,7 @@ function _(e) {
   return n ? l && o !== a.Skl.INVISIBLE ? i ? (0, r.jsx)(a.P3F, {
     className: y.container,
     onClick: t,
-    children: (0, r.jsx)(v, {})
+    children: (0, r.jsx)(_, {})
   }) : null : (0, r.jsx)(a.P3F, {
     className: y.container,
     onClick: t,

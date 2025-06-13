@@ -24,8 +24,8 @@ let p = function(e) {
     priceOptions: x,
     isApplicationHome: f,
     enablePremiumRebrandDesign: h
-  } = e, v = (0, a.e7)([u.Z], () => u.Z.isLoadedForPremiumSKUs()), I = (0, s.ap)((0, c.ZP)());
-  if (!v) return (0, i.jsx)(o.$jN, {
+  } = e, I = (0, a.e7)([u.Z], () => u.Z.isLoadedForPremiumSKUs()), v = (0, s.ap)((0, c.ZP)());
+  if (!I) return (0, i.jsx)(o.$jN, {
     type: o.$jN.Type.PULSING_ELLIPSIS,
     className: C.priceSpinner
   });
@@ -36,7 +36,7 @@ let p = function(e) {
     return (0, i.jsxs)("div", {
       children: [(0, i.jsx)(o.Text, {
         variant: e ? "heading-md/semibold" : "heading-xxl/bold",
-        color: e ? "text-muted" : I ? "header-primary" : "always-white",
+        color: e ? "text-muted" : v ? "header-primary" : "always-white",
         tag: "span",
         children: (0, i.jsx)("span", {
           children: j

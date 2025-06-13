@@ -59,7 +59,7 @@ let y = {
     return t ? ["ACK", ...n] : n
   }, [e, t]);
 
-function v(e) {
+function _(e) {
   let {
     label: t,
     onClick: n,
@@ -89,7 +89,7 @@ function v(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     channel: t,
     message: n,
@@ -229,11 +229,11 @@ function S(e) {
       let i = C[e];
       switch (i.type) {
         case "standard":
-          return (0, r.jsx)(v, b(m({}, i), {
+          return (0, r.jsx)(_, b(m({}, i), {
             message: t
           }), e);
         case "menu":
-          return (0, r.jsx)(_, b(m({}, i), {
+          return (0, r.jsx)(v, b(m({}, i), {
             channel: n,
             message: t
           }), e)

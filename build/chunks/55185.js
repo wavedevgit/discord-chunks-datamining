@@ -19,8 +19,8 @@ var r, i = n(255367),
   b = n(29953),
   y = n(388032),
   O = n(22275),
-  v = n(354810);
-async function _(e) {
+  _ = n(354810);
+async function v(e) {
   await d.hW.updateAsync("status", t => {
     t.status = a.Gm.create({
       value: e
@@ -38,7 +38,7 @@ function C(e) {
     size: c.zxk.Sizes.SMALL,
     color: c.zxk.Colors.BRAND,
     onClick: () => {
-      t(), _(c.Skl.ONLINE)
+      t(), v(c.Skl.ONLINE)
     },
     fullWidth: !0,
     children: y.intl.string(b.default.Poezn5)
@@ -77,7 +77,7 @@ function j(e) {
       })]
     }), (0, i.jsx)(c.rsf, {
       onChange: e => {
-        u.G6.updateSetting(e), n && _(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
+        u.G6.updateSetting(e), n && v(e ? c.Skl.ONLINE : c.Skl.INVISIBLE)
       },
       checked: t
     })]
@@ -112,7 +112,7 @@ function S(e) {
           })
         }), (0, i.jsx)("img", {
           alt: "",
-          src: v.Z,
+          src: _.Z,
           className: O.controllerImage
         }), (0, i.jsx)(o.X6, {
           variant: "heading-md/bold",

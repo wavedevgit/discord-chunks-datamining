@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: 42ae68924cf15b71
+  Original File Name: 3d0544be4cf904bd
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4039,6 +4039,54 @@ html:not(.visual-refresh).theme-dark .container_a3e8db.selected_a3e8db {
     right: -243px;
     top: -175px;
     width: 420px
+}
+
+.popup__49a20 {
+    background: var(--background-primary);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-high);
+    box-sizing: border-box;
+    position: relative;
+    width: 265px
+}
+
+.popup__49a20:after {
+    border: 8px solid transparent;
+    border-top: 8px solid var(--background-primary);
+    content: " ";
+    left: 50%;
+    margin-left: -8px;
+    position: absolute;
+    top: 100%
+}
+
+.closeIcon__49a20 {
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 8px
+}
+
+.title__49a20 {
+    margin-bottom: var(--space-4)
+}
+
+.asset__49a20 {
+    height: 103px
+}
+
+.content__49a20 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+    padding: var(--space-16);
+    position: relative;
+    text-align: center
+}
+
+.button__49a20 {
+    width: 100%
 }
 
 button.button__67645,span.button__67645 {
@@ -19645,4 +19693,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=42ae68924cf15b71.css.map*/
+/*# sourceMappingURL=3d0544be4cf904bd.css.map*/
