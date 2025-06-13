@@ -1,2 +1,2 @@
 /** Chunk was on 93554 **/
-s.exports = JSON.parse('{"8ZcEfn":"Barvy","AsmU8/":"Přizpůsob si svůj motiv","xRdYAQ":"Vlastn\xed motivy [Beta] nejsou na mobilu dostupn\xe9.","2hAz8f":"Přizpůsob si svůj motiv","23QUzs":"Nov\xe9! Vlastn\xed motivy","TRCE4u":"Slaď svou n\xe1ladu s\xa0nekonečn\xfdmi barevn\xfdmi kombinacemi. Zkus to hned teď, pouze s\xa0Nitrem."}')
+s.exports = JSON.parse('{"+tTysr":"Přidat barvu","8ZcEfn":"Barvy","xlXkaG":"Intenzita barvy","dZkwg4":"Směr přechodu","AsmU8/":"Přizpůsob si svůj motiv","xRdYAQ":"Vlastn\xed motivy [Beta] nejsou na mobilu dostupn\xe9.","2hAz8f":"Přizpůsob si svůj motiv","23QUzs":"Nov\xe9! Vlastn\xed motivy","TRCE4u":"Slaď svou n\xe1ladu s\xa0nekonečn\xfdmi barevn\xfdmi kombinacemi. Zkus to hned teď, pouze s\xa0Nitrem."}')
