@@ -1,6 +1,6 @@
 /** Chunk was on 86797 **/
 n.d(e, {
-  Z: () => h
+  Z: () => b
 }), n(388685);
 var i = n(255367);
 n(73800);
@@ -14,10 +14,10 @@ var r = n(913527),
   d = n(776568),
   f = n(388032);
 
-function h(t) {
-  let [e, n, r] = (0, a.Wu)([s.Z], () => [s.Z.isMuted(t.id), s.Z.getMuteConfig(t.id), s.Z.hasJoined(t.id)]), h = (0, c.U)(n);
+function b(t) {
+  let [e, n, r] = (0, a.Wu)([s.Z], () => [s.Z.isMuted(t.id), s.Z.getMuteConfig(t.id), s.Z.hasJoined(t.id)]), b = (0, c.U)(n);
 
-  function b(e) {
+  function h(e) {
     u.Z.setNotificationSettings(t, {
       muted: e
     })
@@ -25,12 +25,12 @@ function h(t) {
   return r ? e ? (0, i.jsx)(o.sNh, {
     id: "unmute-channel",
     label: t.isForumPost() ? f.intl.string(f.t["0JQfsL"]) : f.intl.string(f.t["Cq/TzM"]),
-    subtext: h,
-    action: () => b(!1)
+    subtext: b,
+    action: () => h(!1)
   }) : (0, i.jsx)(o.sNh, {
     id: "mute-channel",
     label: t.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
-    action: () => b(!0),
+    action: () => h(!0),
     children: (0, d.k)().map(e => {
       let {
         value: n,

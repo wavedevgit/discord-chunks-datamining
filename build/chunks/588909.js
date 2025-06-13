@@ -24,9 +24,9 @@ var r = n(704215),
   E = n(701488),
   _ = n(388032),
   x = n(560226),
-  S = n(19782);
+  I = n(19782);
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -91,7 +91,7 @@ function N(e, t) {
           let {
             default: e
           } = await Promise.all([n.e("46746"), n.e("32087")]).then(n.bind(n, 60594));
-          return t => (0, i.jsx)(e, j(I({}, t), {
+          return t => (0, i.jsx)(e, j(S({}, t), {
             selectSource: !1,
             sourcePID: (0, h.getPID)(),
             guildId: r.type === O.nc.GO_LIVE_VOICE ? r.voiceGuild.id : void 0,
@@ -107,7 +107,7 @@ function N(e, t) {
       (0, f.Rb)("welcomeNotification").allowActivityWidget && (E.renderFooter = () => (0, i.jsx)(m.lX, {
         gamingId: null == e ? void 0 : e.id,
         maxUserShowCount: 5,
-        className: S.container
+        className: I.container
       }), E.onNotificationShow = () => {
         a.Z.track(v.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
           user_ids: r.entries.map(e => e.author_id),
@@ -125,7 +125,7 @@ function N(e, t) {
       className: x.icon,
       alt: ""
     });
-  return j(I({
+  return j(S({
     icon: P,
     title: w,
     body: Z,

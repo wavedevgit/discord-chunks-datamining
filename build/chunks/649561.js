@@ -25,8 +25,8 @@ var i = n(255367),
   S = n(518084),
   x = n(987650),
   C = n(981631),
-  Z = n(388032),
-  j = n(137180);
+  j = n(388032),
+  Z = n(137180);
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -80,29 +80,29 @@ class N extends r.PureComponent {
         theme: C.BRd.DARK,
         children: r => (0, i.jsxs)(h.P3F, {
           innerRef: this.contentDomRef,
-          className: l()(r, j.container),
+          className: l()(r, Z.container),
           onClick: e => e.stopPropagation(),
           children: [(0, i.jsx)(m.ZP, {
             expand: !0,
             icon: (0, i.jsx)(O.Z, {
               width: 40,
               height: 40,
-              className: j.notificationIcon
+              className: Z.notificationIcon
             }),
-            title: Z.intl.string(Z.t.U38qZm),
-            confirmText: Z.intl.string(Z.t.TzAl1d),
+            title: j.intl.string(j.t.U38qZm),
+            confirmText: j.intl.string(j.t.TzAl1d),
             onNotificationClick: this.handleNotificationClick,
             onConfirmClick: this.handleReload,
             onDismissClick: this.hideNotification,
             locked: !1
           }), n && null != e ? (0, i.jsxs)(S.ZP, {
-            className: j.stackTrace,
+            className: Z.stackTrace,
             children: [(0, i.jsx)(S.ZP.Bar, {
               children: "Error Details"
             }), (0, i.jsx)(S.ZP.Content, {
-              className: j.stackTraceCode,
+              className: Z.stackTraceCode,
               children: (0, i.jsx)("code", {
-                className: j.code,
+                className: Z.code,
                 children: (0, i.jsx)("pre", {
                   children: t.stack
                 })

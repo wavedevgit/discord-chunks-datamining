@@ -23,8 +23,8 @@ var i = n(255367),
   E = n(839662),
   _ = n(199902),
   x = n(314897),
-  S = n(131951),
-  I = n(594174),
+  I = n(131951),
+  S = n(594174),
   j = n(5192),
   C = n(444295),
   N = n(1226),
@@ -51,7 +51,7 @@ function T(e) {
   return e
 }
 
-function k(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function k(e, t) {
   }), e
 }
 
-function D(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -83,9 +83,9 @@ function D(e, t) {
 function A(e) {
   let {
     participant: t
-  } = e, n = t.user.id, o = (0, a.e7)([S.Z], () => {
+  } = e, n = t.user.id, o = (0, a.e7)([I.Z], () => {
     let e = (0, m.Z)(t.type);
-    return S.Z.isLocalMute(t.user.id, e)
+    return I.Z.isLocalMute(t.user.id, e)
   }, [t]), l = (0, a.e7)([x.default], () => x.default.getId()), {
     hasVideo: d
   } = (0, E.Z)(t, l), p = o && d, h = r.useCallback(() => {
@@ -96,8 +96,8 @@ function A(e) {
     children: e => {
       var {
         onClick: n
-      } = e, r = D(e, ["onClick"]);
-      return (0, i.jsx)(c.P3F, k(T({}, r), {
+      } = e, r = k(e, ["onClick"]);
+      return (0, i.jsx)(c.P3F, D(T({}, r), {
         className: P.controlAction,
         onClick: e => {
           e.stopPropagation(), (0, C.Ws)(w.Odu.GO_LIVE, {
@@ -128,7 +128,7 @@ function R(e, t, r) {
       let {
         default: r
       } = await n.e("5704").then(n.bind(n, 360429));
-      return n => (0, i.jsx)(r, k(T({}, n), {
+      return n => (0, i.jsx)(r, D(T({}, n), {
         stream: e.stream,
         exitFullscreen: () => {},
         appContext: t
@@ -142,9 +142,9 @@ function L(e) {
     hasActiveStream: t,
     participant: n,
     onEnablePin: r
-  } = e, o = (0, f.bp)(), s = n.user, u = (0, a.e7)([I.default], () => {
+  } = e, o = (0, f.bp)(), s = n.user, u = (0, a.e7)([S.default], () => {
     var e;
-    return null != (e = I.default.getUser(s.id)) ? e : s
+    return null != (e = S.default.getUser(s.id)) ? e : s
   }, [s]), d = t ? Z.intl.string(Z.t.tLxK4u) : Z.intl.string(Z.t.E5RDnJ);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
@@ -155,7 +155,7 @@ function L(e) {
       className: P.watchActionContainer,
       children: (0, i.jsx)(c.ua7, {
         text: d,
-        children: e => (0, i.jsxs)(c.P3F, k(T({}, e), {
+        children: e => (0, i.jsxs)(c.P3F, D(T({}, e), {
           className: P.watchButton,
           onClick: () => {
             var t;
@@ -216,8 +216,8 @@ function L(e) {
             children: e => {
               var {
                 onClick: t
-              } = e, r = D(e, ["onClick"]);
-              return (0, i.jsx)(c.P3F, k(T({}, r), {
+              } = e, r = k(e, ["onClick"]);
+              return (0, i.jsx)(c.P3F, D(T({}, r), {
                 className: P.controlAction,
                 onClick: R(n, o, t),
                 children: (0, i.jsx)(c.xhG, {

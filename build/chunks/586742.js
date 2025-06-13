@@ -24,8 +24,8 @@ var i = n(255367),
   E = n(136015),
   _ = n(444295),
   x = n(906037),
-  S = n(353038),
-  I = n(804570),
+  I = n(353038),
+  S = n(804570),
   j = n(461393),
   C = n(340101),
   N = n(501787),
@@ -34,7 +34,7 @@ var i = n(255367),
   P = n(388032),
   T = n(884751);
 
-function k(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -53,7 +53,7 @@ function k(e) {
   return e
 }
 
-function D(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,7 +72,7 @@ let A = r.memo(function(e) {
       channel: r,
       context: o
     } = e, l = null == (t = n.user) ? void 0 : t.id;
-    return (0, a.e7)([O.Z], () => null != n.user && null != o && null != r && O.Z.isLocalVideoDisabled(l, o), [l, n.user, o, r]) ? null : (0, i.jsx)(m.ZP, k({}, e))
+    return (0, a.e7)([O.Z], () => null != n.user && null != o && null != r && O.Z.isLocalVideoDisabled(l, o), [l, n.user, o, r]) ? null : (0, i.jsx)(m.ZP, D({}, e))
   }),
   R = r.memo(function(e) {
     let {
@@ -93,7 +93,7 @@ let A = r.memo(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
-        return n => (0, i.jsx)(e, D(k({}, n), {
+        return n => (0, i.jsx)(e, k(D({}, n), {
           user: o,
           mediaEngineContext: t,
           onWatchStream: () => {
@@ -185,7 +185,7 @@ let A = r.memo(function(e) {
       })
     }) : h ? (0, i.jsx)("div", {
       ref: f,
-      children: (0, i.jsx)(I.E, {
+      children: (0, i.jsx)(S.E, {
         emptyText: P.intl.string(P.t["aTiM4+"]),
         icon: s.Odl,
         absolute: !0
@@ -229,7 +229,7 @@ function z(e) {
     {
       width: _ = e.width - c,
       height: x = e.height - c,
-      ref: I
+      ref: S
     } = (0, d.ZP)(e.locked, e.widget.pinned),
     {
       participantTileWidth: j,
@@ -292,9 +292,9 @@ function z(e) {
       let {
         width: s,
         height: c
-      } = M(D(k({}, a), {
+      } = M(k(D({}, a), {
         widget: o,
-        operation: S.B.RESIZE_NORTH,
+        operation: I.B.RESIZE_NORTH,
         computedSize: {
           width: r,
           height: i
@@ -317,12 +317,12 @@ function z(e) {
     horizontal: b,
     widget: e.widget,
     widgetLayoutSpecs: Z
-  }), (0, i.jsx)(L, D(k({}, e), {
+  }), (0, i.jsx)(L, k(D({}, e), {
     channel: s,
     participants: C,
     participantsVersion: O,
     width: b ? j : null != _ ? _ : e.width,
     height: b ? null != x ? x : e.height : j,
-    containerRef: I
+    containerRef: S
   }))
 }

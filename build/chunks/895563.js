@@ -14,15 +14,15 @@ var r = n(392711),
   u = n(117984),
   d = n(593214),
   f = n(362658),
-  h = n(981631),
-  b = n(388032);
+  b = n(981631),
+  h = n(388032);
 
 function g(t, e) {
-  return t.type === h.d4z.GROUP_DM ? e ? b.intl.string(b.t["0BWmSE"]) : b.intl.string(b.t.uuVTOD) : t.type === h.d4z.DM ? e ? b.intl.string(b.t["2wfKGh"]) : b.intl.string(b.t.wPbAsb) : e ? b.intl.string(b.t.Bou7lZ) : b.intl.string(b.t["4wcdEx"])
+  return t.type === b.d4z.GROUP_DM ? e ? h.intl.string(h.t["0BWmSE"]) : h.intl.string(h.t.uuVTOD) : t.type === b.d4z.DM ? e ? h.intl.string(h.t["2wfKGh"]) : h.intl.string(h.t.wPbAsb) : e ? h.intl.string(h.t.Bou7lZ) : h.intl.string(h.t["4wcdEx"])
 }
 
 function O(t) {
-  let e = (0, a.e7)([c.ZP], () => c.ZP.getChannels(h.I_8))[h.d4z.GUILD_CATEGORY],
+  let e = (0, a.e7)([c.ZP], () => c.ZP.getChannels(b.I_8))[b.d4z.GUILD_CATEGORY],
     {
       isFavoritesPerk: n
     } = (0, f.z)("58e21a_1"),
@@ -31,13 +31,13 @@ function O(t) {
     } = (0, d.up)();
   if (!(0, d.li)(t)) return null;
   let [
-    [s], b
+    [s], h
   ] = l().partition(e, t => "null" === t.channel.id);
 
   function O(e) {
     r(), (0, u.kj)(t.id, e)
   }
-  return 0 === b.length ? (0, i.jsx)(o.sNh, {
+  return 0 === h.length ? (0, i.jsx)(o.sNh, {
     id: "favorite-channel",
     label: g(t, !1),
     action: () => O(null)
@@ -52,7 +52,7 @@ function O(t) {
         action: () => O("null" === s.channel.id ? null : s.channel.id)
       }, s.channel.id)
     }), (0, i.jsx)(o.kSQ, {
-      children: b.map(t => (0, i.jsx)(o.sNh, {
+      children: h.map(t => (0, i.jsx)(o.sNh, {
         id: "favorite-".concat(t.channel.id),
         label: t.channel.name,
         action: () => O(t.channel.id)
@@ -67,7 +67,7 @@ function Z(t) {
     id: "favorite-channel",
     label: g(t, !0),
     color: "danger",
-    action: () => t.type === h.d4z.GUILD_CATEGORY ? (0, o.ZDy)(async () => {
+    action: () => t.type === b.d4z.GUILD_CATEGORY ? (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("37720").then(n.bind(n, 357632));

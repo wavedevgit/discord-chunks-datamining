@@ -389,7 +389,11 @@ function ed(e) {
       context: "Mark As Read"
     })
   }, [n]), l = i.useCallback(() => {
-    (0, f.In)(n)
+    (0, f.In)(n, {
+      section: G.jXE.NEW_MESSAGES_BANNER,
+      object: G.qAy.MARK_CHANNEL_AS_READ_BUTTON,
+      objectType: G.Qqv.ACK_MANUAL
+    })
   }, [n]), {
     disableInteractions: c
   } = i.useContext(b.G);
@@ -572,7 +576,11 @@ function e_(e) {
       })
     }, [s.id]),
     en = i.useCallback(() => {
-      (0, f.In)(s.id)
+      (0, f.In)(s.id, {
+        section: G.jXE.NEW_TOPICS_BAR,
+        object: G.qAy.MARK_CHANNEL_AS_READ_BUTTON,
+        objectType: G.Qqv.ACK_MANUAL
+      })
     }, [s.id]),
     er = F.intl.string(F.t["38qwgI"]);
   return P.length > 0 && (er = "" === H || null == H ? F.intl.string(F.t.DwnFuL) : H), E ? null : (0, r.jsxs)("div", {

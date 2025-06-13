@@ -1,6 +1,6 @@
 /** Chunk was on 89298 **/
 n.d(t, {
-  Z: () => S
+  Z: () => I
 });
 var i = n(255367),
   r = n(73800),
@@ -53,13 +53,13 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = r.memo(function(e) {
+let I = r.memo(function(e) {
   let {
     widget: t,
     renderWidget: n,
     renderTitle: o,
-    renderButtons: S,
-    resizeValidation: I,
+    renderButtons: I,
+    resizeValidation: S,
     className: j,
     dragContainerClassName: C
   } = e, N = u.Z.getWidgetConfig(t.type), w = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), Z = (0, v.Z)(), P = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(Z))), T = r.useCallback((e, t, n, i, r) => {
@@ -84,10 +84,10 @@ let S = r.memo(function(e) {
       widget_left: f.left,
       widget_top: f.top
     })
-  }, []), k = r.useCallback(e => {
+  }, []), D = r.useCallback(e => {
     (0, s.Os)(e)
   }, []), {
-    id: D,
+    id: k,
     pinned: A,
     zIndex: R,
     size: L,
@@ -106,21 +106,21 @@ let S = r.memo(function(e) {
     widget: t,
     dragging: null != e.dragOperation,
     className: j
-  })), [t, n, j]), Q = r.useCallback(e => null != o || null != S ? (0, i.jsxs)("div", {
+  })), [t, n, j]), Q = r.useCallback(e => null != o || null != I ? (0, i.jsxs)("div", {
     className: E.extrasContainer,
-    children: [null == o ? void 0 : o(t), null == S ? void 0 : S(t, e)]
-  }) : null, [t, o, S]), K = (0, a.e7)([O.ZP], () => O.ZP.hasRenderDebugMode(y.G.WidgetAreas)), X = r.useMemo(() => {
-    if (null != I) return e => I(x(_({}, e), {
+    children: [null == o ? void 0 : o(t), null == I ? void 0 : I(t, e)]
+  }) : null, [t, o, I]), K = (0, a.e7)([O.ZP], () => O.ZP.hasRenderDebugMode(y.G.WidgetAreas)), X = r.useMemo(() => {
+    if (null != S) return e => S(x(_({}, e), {
       widget: t
     }))
-  }, [I, t]);
+  }, [S, t]);
   return (0, i.jsx)(g.Z, {
     className: l()({
       [E.debug]: K,
       [E.debugUnpinned]: K && !A,
       [E.debugPinned]: K && A
     }, C),
-    id: D,
+    id: k,
     size: U,
     anchor: V,
     container: H,
@@ -138,7 +138,7 @@ let S = r.memo(function(e) {
     dragAnywhere: null != F && F,
     active: !w,
     onUpdate: T,
-    onClick: k,
+    onClick: D,
     targetWindow: Z,
     renderExtras: Q,
     resizeValidation: X,

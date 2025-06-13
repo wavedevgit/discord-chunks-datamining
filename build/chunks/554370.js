@@ -23,8 +23,8 @@ var i = n(255367),
   E = n(556296),
   _ = n(808506),
   x = n(237997),
-  S = n(451478),
-  I = n(585483),
+  I = n(451478),
+  S = n(585483),
   j = n(358085),
   C = n(13140),
   N = n(145597),
@@ -32,8 +32,8 @@ var i = n(255367),
   Z = n(486016),
   P = n(32300),
   T = n(681603),
-  k = n(915614),
-  D = n(268861),
+  D = n(915614),
+  k = n(268861),
   A = n(690336),
   R = n(333031),
   L = n(371651),
@@ -122,7 +122,7 @@ let q = r.memo(function(e) {
       onContextMenu: J,
       children: r ? null : (0, i.jsx)(R.Z, {
         className: H.closeContainer,
-        children: (0, i.jsx)(k.Z, {
+        children: (0, i.jsx)(D.Z, {
           keybind: t,
           onClick: n,
           IconComponent: c.Uz9
@@ -137,7 +137,7 @@ let q = r.memo(function(e) {
     } = e;
     return t && n ? (0, i.jsx)(R.Z, {
       className: H.closeContainer,
-      children: (0, i.jsx)(k.Z, {
+      children: (0, i.jsx)(D.Z, {
         onClick: () => d.Z.setInputLocked(!1, (0, N.getPID)()),
         IconComponent: c.d$P
       })
@@ -158,9 +158,9 @@ function en() {
 
 function ei(e) {
   let t = z.ZP.isInputLocked((0, N.getPID)());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? I.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? S.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !0
-  }) : "keydown" === e.type.toLowerCase() && I.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && S.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !1
   }))
 }
@@ -173,9 +173,9 @@ function er(e) {
     focused: u,
     incompatibleApp: f,
     hasZeroSizeDimension: j,
-    keybind: k
-  } = (0, a.cj)([z.ZP, x.default, S.Z, E.ZP], () => {
-    let e = S.Z.windowSize((0, w.ZY)(n)),
+    keybind: D
+  } = (0, a.cj)([z.ZP, x.default, I.Z, E.ZP], () => {
+    let e = I.Z.windowSize((0, w.ZY)(n)),
       t = E.ZP.getOverlayKeybind(),
       i = (0, N.getPID)();
     return {
@@ -244,7 +244,7 @@ function er(e) {
       }), 0 !== h.length && d.Z.overlayMounted(...h)
     }, [a, s, c, t, n, o, u])
   }(), r.useEffect(() => {
-    if (I.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+    if (S.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: !0
       }), o) {
       if ((0, s.Ay)(c.u1M), n.addEventListener("contextmenu", X, !1), null != K) {
@@ -267,7 +267,7 @@ function er(e) {
         className: l()(H.overlay, e),
         children: [!t && Q, (0, i.jsx)(q, {
           locked: o,
-          keybind: k,
+          keybind: D,
           onClick: ee
         }), (0, i.jsx)(A.Z, {
           className: l()({
@@ -277,7 +277,7 @@ function er(e) {
         }), (0, i.jsx)(V.Z, {}), !t && Y && (0, i.jsx)($, {
           locked: o,
           focused: u
-        }), (0, i.jsx)(T.Z, {}), (0, i.jsx)(D.Z, {
+        }), (0, i.jsx)(T.Z, {}), (0, i.jsx)(k.Z, {
           locked: o
         }), (0, i.jsx)(c.Ixi, {})]
       })

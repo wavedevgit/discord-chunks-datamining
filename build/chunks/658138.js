@@ -28,13 +28,13 @@ function h(e) {
   } = (0, f.m)({
     location: "useChannelWallpaperItem",
     selectedChannelId: e.id
-  }), y = e.isPrivate() && h;
+  }), _ = e.isPrivate() && h;
   return ((0, c.Z)({
     type: l.ImpressionTypes.MENU,
     name: l.ImpressionNames.CHAT_WALLPAPER_DM_CONTEXT_MENU_ENTRY_POINT
   }, {
-    disableTrack: !y
-  }), y) ? (0, r.jsx)(a.sNh, {
+    disableTrack: !_
+  }), _) ? (0, r.jsx)(a.sNh, {
     id: "set-wallpaper",
     label: (0, r.jsxs)("div", {
       className: p.label,

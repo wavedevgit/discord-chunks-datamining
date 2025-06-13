@@ -25,8 +25,8 @@ var i = n(255367),
   S = n(1397),
   x = n(541716),
   C = n(752305),
-  Z = n(974251),
-  j = n(893718),
+  j = n(974251),
+  Z = n(893718),
   I = n(249458),
   P = n(552062),
   w = n(957730),
@@ -146,7 +146,7 @@ class el extends r.Component {
             onClose: t
           }, s))
         },
-        children: () => (0, i.jsx)(j.Z, ei(en({}, r), {
+        children: () => (0, i.jsx)(Z.Z, ei(en({}, r), {
           ref: this.textAreaRef,
           renderAttachButton: this.renderAttachButton,
           channel: t,
@@ -248,7 +248,7 @@ class el extends r.Component {
       this.setState({
         focused: !1
       })
-    }), et(this, "renderAttachButton", (e, t) => (0, i.jsx)(Z.Z, {
+    }), et(this, "renderAttachButton", (e, t) => (0, i.jsx)(j.Z, {
       className: t,
       channel: this.props.channel,
       draftType: R.d.ChannelMessage,

@@ -13,15 +13,15 @@ var r = n(442837),
   u = n(131704),
   d = n(324067),
   f = n(306680),
-  h = n(981631),
-  b = n(388032);
+  b = n(981631),
+  h = n(388032);
 
 function g(t) {
   let e = function(t) {
     let e = (0, o.n2)(t.guild_id, t.id),
       n = (0, r.e7)([f.ZP, d.Z, c.Z, s.Z], () => {
         if (t.isForumPost()) return f.ZP.isForumPostUnread(t.id);
-        if (t.type !== h.d4z.GUILD_CATEGORY) return f.ZP.hasUnreadOrMentions(t.id);
+        if (t.type !== b.d4z.GUILD_CATEGORY) return f.ZP.hasUnreadOrMentions(t.id);
         {
           let e = d.Z.getCategories(t.getGuildId());
           if (null == e[t.id]) return !1;
@@ -44,9 +44,13 @@ function g(t) {
   }(t);
   return (0, i.jsx)(l.sNh, {
     id: "mark-channel-read",
-    label: b.intl.string(b.t.e6RscX),
+    label: h.intl.string(h.t.e6RscX),
     action: function() {
-      (0, a.U6)(t)
+      (0, a.U6)(t, {
+        section: b.jXE.CHANNEL_CONTEXT_MENU,
+        object: b.qAy.MARK_CHANNEL_AS_READ_BUTTON,
+        objectType: b.Qqv.ACK_MANUAL
+      })
     },
     disabled: !e
   })

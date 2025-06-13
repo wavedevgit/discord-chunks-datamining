@@ -1,7 +1,7 @@
 /** Chunk was on 89298 **/
 n.d(t, {
   IV: () => _,
-  ZP: () => S,
+  ZP: () => I,
   bt: () => v,
   fd: () => b
 }), n(388685);
@@ -94,7 +94,7 @@ let x = {
     friction: 18,
     clamp: !0
   },
-  S = r.memo(function(e) {
+  I = r.memo(function(e) {
     let {
       widgetId: t,
       tileWidth: n,
@@ -103,8 +103,8 @@ let x = {
       locked: v,
       activeStreams: b,
       streamParticipants: _,
-      participantsVersion: S,
-      pinned: I,
+      participantsVersion: I,
+      pinned: S,
       padding: j,
       sizeOffset: C
     } = e, N = _.map(e => ({
@@ -114,12 +114,12 @@ let x = {
       height: o,
       locked: v,
       widgetId: t,
-      pinned: I
-    })), w = (0, c.Z)(n), Z = (0, c.Z)(v), P = h === f.C5.VERTICAL, T = v || Z !== v || w !== n, k = 0, D = 0, A = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
-      y: (k += e.height + (t > 0 ? j : 0)) - e.height,
+      pinned: S
+    })), w = (0, c.Z)(n), Z = (0, c.Z)(v), P = h === f.C5.VERTICAL, T = v || Z !== v || w !== n, D = 0, k = 0, A = (0, s.Yzy)(P ? N.map((e, t) => O(y({}, e), {
+      y: (D += e.height + (t > 0 ? j : 0)) - e.height,
       x: 0
     })) : N.map((e, t) => O(y({}, e), {
-      x: (D += e.width + (t > 0 ? j : 0)) - e.width,
+      x: (k += e.width + (t > 0 ? j : 0)) - e.width,
       y: 0
     })), {
       key: e => e.key,
@@ -162,7 +162,7 @@ let x = {
       },
       config: x,
       trail: 100 * !T
-    }, T ? "animate-never" : "respect-motion-settings"), R = (0, p.ee)(() => new Set(_.map(e => e.user.id)), [_, S]), L = (0, p.ee)(() => new Set(_.filter(e => b.has((0, u.V9)(e.stream))).map(e => e.user.id)), [_, b, S]);
+    }, T ? "animate-never" : "respect-motion-settings"), R = (0, p.ee)(() => new Set(_.map(e => e.user.id)), [_, I]), L = (0, p.ee)(() => new Set(_.filter(e => b.has((0, u.V9)(e.stream))).map(e => e.user.id)), [_, b, I]);
     return r.useEffect(() => {
       0 !== R.size && (0, p.zi)(m.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
@@ -177,9 +177,9 @@ let x = {
         [g.horizontal]: !P
       }),
       style: P ? {
-        height: k
+        height: D
       } : {
-        width: D
+        width: k
       },
       children: A((e, t, r, l) => (0, i.jsx)(a.animated.div, {
         className: g.gridItem,

@@ -1,6 +1,6 @@
 /** Chunk was on 2286 **/
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(388685);
 var l, i = n(442837),
   r = n(570140),
@@ -59,7 +59,7 @@ class h extends(l = i.ZP.PersistedStore) {
   }
 }
 o(h, "displayName", "FavoritesSuggestionStore"), o(h, "persistKey", "FavoritesSuggestionStore");
-let p = new h(r.Z, {
+let _ = new h(r.Z, {
   DISMISS_FAVORITE_SUGGESTION: function(e) {
     let {
       guildId: t,

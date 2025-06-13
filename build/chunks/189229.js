@@ -1,6 +1,6 @@
 /** Chunk was on 54076 **/
 d.r(e), d.d(e, {
-  default: () => o
+  default: () => s
 });
 var n = d(367907),
   a = d(592125),
@@ -9,12 +9,12 @@ var n = d(367907),
   c = d(9156),
   l = d(981631);
 
-function o(t) {
-  let e = a.Z.getChannel(t);
+function s(t, e) {
+  let d = a.Z.getChannel(t);
   (0, n.yw)(l.rMx.ACK_MESSAGES, {
     channel_id: t,
-    guild_id: null == e ? void 0 : e.getGuildId(),
-    location,
+    guild_id: null == d ? void 0 : d.getGuildId(),
+    location: e,
     guild_unread_statuses: Object.values(u.Z.getGuilds()).map(t => {
       let e = i.default.hasUnread(t.id),
         d = i.default.getMentionCount(t.id),

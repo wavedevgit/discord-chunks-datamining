@@ -1,6 +1,6 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => E
+  Z: () => y
 }), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
@@ -16,15 +16,16 @@ var r = n(255367),
   f = n(592125),
   h = n(823379),
   g = n(709054),
-  _ = n(124368),
-  b = n(572198);
+  _ = n(981631),
+  b = n(124368),
+  E = n(572198);
 
-function E(e) {
+function y(e) {
   let {
     channel: t,
     channelRecord: n,
     deleteChannel: l
-  } = e, E = (0, o.Wu)([p.Z, f.Z], () => a()(p.Z.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
+  } = e, y = (0, o.Wu)([p.Z, f.Z], () => a()(p.Z.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
     let {
       id: n
     } = e;
@@ -34,21 +35,25 @@ function E(e) {
       id: t
     } = e;
     return f.Z.getChannel(t)
-  }).filter(h.lm).sort((e, t) => g.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), y = i.useCallback((e, t) => {
-    (0, m.ok)(e, t, _.on.INBOX)
+  }).filter(h.lm).sort((e, t) => g.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), x = i.useCallback((e, t) => {
+    (0, m.ok)(e, t, b.on.INBOX)
   }, []);
   return i.useEffect(() => {
-    null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== E.length || s.Z.wait(() => {
-      (0, c.In)(t.channelId, !0), l(t.channelId)
+    null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== y.length || s.Z.wait(() => {
+      (0, c.In)(t.channelId, {
+        section: _.jXE.INBOX,
+        object: _.qAy.ACK_INBOX_FORUM_NO_POSTS,
+        objectType: _.Qqv.ACK_AUTOMATIC
+      }, !0), l(t.channelId)
     })
   }), (0, r.jsx)("div", {
-    className: b.container,
-    children: E.map(e => (0, r.jsx)(d.oL, {
+    className: E.container,
+    children: y.map(e => (0, r.jsx)(d.oL, {
       channel: n,
       children: (0, r.jsx)(u.ZP, {
-        className: b.forumPost,
+        className: E.forumPost,
         threadId: e.id,
-        goToThread: y
+        goToThread: x
       })
     }, e.id))
   })

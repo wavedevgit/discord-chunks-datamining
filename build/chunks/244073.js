@@ -25,8 +25,8 @@ var i = n(255367),
   S = n(594174),
   x = n(979651),
   C = n(362446),
-  Z = n(518084),
-  j = n(981631),
+  j = n(518084),
+  Z = n(981631),
   I = n(388032),
   P = n(738901),
   w = n(566177);
@@ -72,9 +72,9 @@ class D extends r.PureComponent {
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, p.F6)(e, S.default, E.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, o = null != t ? t.id : j.ME;
+    } = this.props, n = (0, p.F6)(e, S.default, E.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, o = null != t ? t.id : Z.ME;
     return (0, i.jsx)(s.rU, {
-      to: j.Z5c.CHANNEL(o),
+      to: Z.Z5c.CHANNEL(o),
       onClick: t => {
         t.stopPropagation(), u.Z.channelListScrollTo(o, e.id)
       },
@@ -99,11 +99,11 @@ class D extends r.PureComponent {
       mute: p,
       changeLeaveCallAndActivityIcons: g
     } = this.props;
-    return null == o ? null : (0, i.jsx)(Z.ZP.Bar, {
+    return null == o ? null : (0, i.jsx)(j.ZP.Bar, {
       className: l()(e, P.controls, {
         [P.unpinned]: !n
       }),
-      children: (0, i.jsxs)(Z.ZP.Content, {
+      children: (0, i.jsxs)(j.ZP.Content, {
         className: l()(t, P.content),
         dynamicSize: !0,
         children: [(0, i.jsx)("div", {

@@ -84,7 +84,7 @@ function x(e) {
   return "auto" === e || null == e ? "auto" : "".concat(e, "px")
 }
 
-function S(e, t) {
+function I(e, t) {
   let n = 0,
     i = 0;
   return {
@@ -93,7 +93,7 @@ function S(e, t) {
   }
 }
 
-function I(e, t) {
+function S(e, t) {
   let {
     top: n,
     left: i,
@@ -182,12 +182,12 @@ class C extends(i = l.Component) {
     let {
       width: m,
       height: g
-    } = S(n, this.size), y = t - h, O = e - d, v = (0, p.ou)((0, p.PY)({
+    } = I(n, this.size), y = t - h, O = e - d, v = (0, p.ou)((0, p.PY)({
       top: y,
       left: O,
       bottom: void 0,
       right: void 0
-    }, r, o, m, g)), b = u ? (0, p.R)(v) : I("RESIZE_SOUTH_EAST", v);
+    }, r, o, m, g)), b = u ? (0, p.R)(v) : S("RESIZE_SOUTH_EAST", v);
     this.setDOMPositions(b), this.setState({
       operationStarted: !0,
       anchorTopOverride: null != b.top,
@@ -514,7 +514,7 @@ class C extends(i = l.Component) {
       let {
         width: s,
         height: c
-      } = S(i, this.size), u = (0, p.PY)(this.anchor, l, a, s, c);
+      } = I(i, this.size), u = (0, p.PY)(this.anchor, l, a, s, c);
       if ("MOVE" === e) {
         let {
           x: e,
@@ -536,7 +536,7 @@ class C extends(i = l.Component) {
           offsetY: n - i
         })
       } else {
-        let i = I(e, u);
+        let i = S(e, u);
         this.setDOMPositions(i), this.dragState = y(g({}, this.dragState), {
           startX: t,
           startY: n,
@@ -565,7 +565,7 @@ class C extends(i = l.Component) {
           onUpdate: t,
           id: n
         } = this.props;
-        t(e, n, this.anchor, this.size, S(this.ref.current, this.size))
+        t(e, n, this.anchor, this.size, I(this.ref.current, this.size))
       } : void 0;
       if (t) {
         let {
@@ -574,7 +574,7 @@ class C extends(i = l.Component) {
         } = this.props.container, {
           width: n,
           height: r
-        } = S(this.ref.current, this.size), o = (0, p.PY)(this.anchor, e, t, n, r), l = (0, p.R)(o);
+        } = I(this.ref.current, this.size), o = (0, p.PY)(this.anchor, e, t, n, r), l = (0, p.R)(o);
         this.setDOMPositions(l), this.setDOMSize({
           width: n,
           height: r,

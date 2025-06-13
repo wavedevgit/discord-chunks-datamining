@@ -92,7 +92,11 @@ let C = i.memo(function(e) {
     } = e, o = (0, s.e7)([h.Z], () => h.Z.getChannel(t.channelId));
     if (i.useEffect(() => {
         null == o || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || u.Z.wait(() => {
-          (0, d.In)(t.channelId, !0), l(t.channelId)
+          (0, d.In)(t.channelId, {
+            section: x.jXE.INBOX,
+            object: x.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
+            objectType: x.Qqv.ACK_AUTOMATIC
+          }, !0), l(t.channelId)
         })
       }), null == o || !t.hasLoadedAnything) return null;
     let m = (e, r) => {
