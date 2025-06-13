@@ -67,16 +67,16 @@ function T(e) {
     baseChannelId: l,
     channelViewSource: T = "Split View"
   } = e, A = (0, o.e7)([C.Z], () => C.Z.getChannel(t)), w = (0, o.e7)([v.Z], () => v.Z.getGuild(null == A ? void 0 : A.getGuildId())), R = (0, f.ZP)(A);
-  var k = A;
-  let M = (0, o.e7)([j.Z], () => null != k && !a().isEmpty(j.Z.getVoiceStatesForChannel(k.id)));
+  var M = A;
+  let k = (0, o.e7)([j.Z], () => null != M && !a().isEmpty(j.Z.getVoiceStatesForChannel(M.id)));
   i.useEffect(() => {
-    M && null != k && (s.Z.dispatch({
+    k && null != M && (s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
-      baseChannelId: k.parent_id
-    }), (0, y.ad)(k, {
+      baseChannelId: M.parent_id
+    }), (0, y.ad)(M, {
       source: E.on.VOICE_AUTO_OPEN
     }))
-  }, [M, k]);
+  }, [k, M]);
   let L = i.useRef(!1);
   if (i.useEffect(() => {
       if (null == A || L.current) return;

@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(474936),
   w = n(526761),
   R = n(388032),
-  k = n(934680);
-let M = T.Hz.CHAT,
+  M = n(934680);
+let k = T.Hz.CHAT,
   L = {
     section: Z.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "voice_channel_effect_emoji_picker"
@@ -51,7 +51,7 @@ function U(e) {
   } = e, T = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, a.e7)([b.default], () => b.default.getCurrentUser()), B = C.ZP.canUseFancyVoiceChannelReactions(U), F = (0, a.e7)([v.Z], () => v.Z.getState().animationType), G = i.useRef(!1), H = i.useRef(null), V = (0, f.wC)(n.guild_id), z = (0, l.uniqBy)([...V, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: n,
-    intention: M
+    intention: k
   })).slice(0, N.e5), W = (null != (t = j.Z.recentlyUsedEmojis) ? t : []).filter(e => !z.slice(0, N.e5 - 1).some(t => t.name === e.name));
   W.length > 0 && z.splice(z.length - 1, 1, W[0]);
   let Y = (0, O.Iu)(F),
@@ -110,7 +110,7 @@ function U(e) {
         renderPopout: () => (0, r.jsx)("div", {
           onMouseEnter: y,
           children: (0, r.jsx)(g.ZP, {
-            className: k.reducedMotionTooltip,
+            className: M.reducedMotionTooltip,
             header: R.intl.string(R.t["6gGHnZ"]),
             content: R.intl.string(R.t.S2RGUF),
             onClick: () => {

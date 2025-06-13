@@ -66,7 +66,7 @@ let E = i.memo(function(e) {
     setPopout: N,
     isReplySpineClickable: T,
     showReplySpine: A
-  } = e, w = E.state === h.Y.LOADED ? E.message : void 0, R = (0, b.Uj)(w), k = (0, c.p)(), M = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), L = i.useMemo(() => {
+  } = e, w = E.state === h.Y.LOADED ? E.message : void 0, R = (0, b.Uj)(w), M = (0, c.p)(), k = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), L = i.useMemo(() => {
     if (null == w) return null;
     let e = (0, o.Z)(w);
     if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(v.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id), {
@@ -95,7 +95,7 @@ let E = i.memo(function(e) {
       let t = {
           formatInline: !0,
           allowLinks: !0,
-          shouldFilterKeywords: k
+          shouldFilterKeywords: M
         },
         n = e.isFirstMessageInForumPost(I) ? O(j({}, t), {
           noStyleAndInteraction: !0,
@@ -103,13 +103,13 @@ let E = i.memo(function(e) {
           allowList: !0
         }) : O(j({}, t), {
           formatInline: !0,
-          allowHeading: M,
-          allowList: M
+          allowHeading: k,
+          allowList: k
         });
       return (0, g.ZP)(e, n).content
     }
     return null
-  }, [w, R, I, M, k]), {
+  }, [w, R, I, k, M]), {
     isReplyAuthorBlocked: D,
     isReplyAuthorIgnored: U
   } = (0, l.cj)([f.Z], () => ({

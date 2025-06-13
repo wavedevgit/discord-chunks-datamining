@@ -36,7 +36,7 @@ function P(e) {
     specMap: C,
     categoryTitle: x,
     userId: E
-  } = e, P = (0, c.e7)([b.Z], () => b.Z.getRoles(y.id)), S = j.Plq[s], Z = null != (l = null == (t = C[S.toString()]) ? void 0 : t.title) ? l : (0, m.wt)(S), N = null != (o = null == (n = C[S.toString()]) ? void 0 : n.description) ? o : "", T = v._o.has(S), A = v.Qn.includes(s), w = g.length, R = (0, c.e7)([_.Z], () => _.Z.can(j.Plq.MANAGE_ROLES, y), [y]), k = i.useCallback(async e => {
+  } = e, P = (0, c.e7)([b.Z], () => b.Z.getRoles(y.id)), S = j.Plq[s], Z = null != (l = null == (t = C[S.toString()]) ? void 0 : t.title) ? l : (0, m.wt)(S), N = null != (o = null == (n = C[S.toString()]) ? void 0 : n.description) ? o : "", T = v._o.has(S), A = v.Qn.includes(s), w = g.length, R = (0, c.e7)([_.Z], () => _.Z.can(j.Plq.MANAGE_ROLES, y), [y]), M = i.useCallback(async e => {
     R && (await f.Z.open(y.id, j.pNK.ROLES), await f.Z.selectRole(e))
   }, [R, y.id]);
   return (0, r.jsxs)("div", {
@@ -155,7 +155,7 @@ function P(e) {
         className: a()(I.roleTooltipItem, {
           [I.editable]: R && !(0, d.pM)(y.id, e)
         }),
-        onClick: () => k(e),
+        onClick: () => M(e),
         children: (0, r.jsx)(h.Z, {
           role: P[e],
           guildId: y.id,
@@ -177,10 +177,10 @@ function Z(e) {
     location: l,
     className: o,
     onNavigate: d
-  } = e, p = (0, c.e7)([y.default], () => y.default.getUser(t), [t]), h = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]), f = (0, c.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]), _ = (0, v.B2)(t, n, v.pd), Z = Object.keys(_).length, N = i.useMemo(() => null != h ? C.Z.getGuildPermissionSpecMap(h) : null, [h]), T = i.useMemo(() => null != h ? C.Z.generateGuildPermissionSpec(h) : null, [h]), [A, w] = i.useState(""), [R, k] = i.useState(""), M = i.useMemo(() => s()(k, 300), []), L = i.useCallback(e => {
-    w(e), M(e)
-  }, [M]), D = i.useCallback(() => {
-    w(""), k("")
+  } = e, p = (0, c.e7)([y.default], () => y.default.getUser(t), [t]), h = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]), f = (0, c.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]), _ = (0, v.B2)(t, n, v.pd), Z = Object.keys(_).length, N = i.useMemo(() => null != h ? C.Z.getGuildPermissionSpecMap(h) : null, [h]), T = i.useMemo(() => null != h ? C.Z.generateGuildPermissionSpec(h) : null, [h]), [A, w] = i.useState(""), [R, M] = i.useState(""), k = i.useMemo(() => s()(M, 300), []), L = i.useCallback(e => {
+    w(e), k(e)
+  }, [k]), D = i.useCallback(() => {
+    w(""), M("")
   }, []), U = i.useMemo(() => {
     if (null == h || null == N || null == f) return null;
     if (0 === Z) return (0, r.jsx)(u.Text, {

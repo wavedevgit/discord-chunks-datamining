@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685), n(997841);
 var r = n(570140),
   i = n(430742),
@@ -64,10 +64,10 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = {
+let M = {
   uploadFiles: async function(e) {
-    var t, n, S, k;
-    let M, {
+    var t, n, S, M;
+    let k, {
         channelId: L,
         uploads: D,
         draftType: U,
@@ -94,7 +94,7 @@ let k = {
       K = (0, f.ZP)({
         channelId: L,
         content: z.content,
-        tts: null != (k = null == B ? void 0 : B.tts) && k,
+        tts: null != (M = null == B ? void 0 : B.tts) && M,
         type: z.type,
         messageReference: z.message_reference,
         flags: z.flags,
@@ -102,13 +102,13 @@ let k = {
         poll: (0, b.x9)(F.poll)
       });
     return z.nonce = q, H.on("start", e => {
-      M = (0, h.e5)(R(w({}, K), {
+      k = (0, h.e5)(R(w({}, K), {
         id: e.id
       })), r.Z.dispatch({
         type: "UPLOAD_START",
         channelId: L,
         file: e,
-        message: M,
+        message: k,
         uploader: H
       })
     }), H.on("progress", e => {
@@ -122,7 +122,7 @@ let k = {
           type: "UPLOAD_FAIL",
           channelId: L,
           file: e,
-          messageId: null == M ? void 0 : M.id
+          messageId: null == k ? void 0 : k.id
         }), (0, g.x)({
           fileItems: e.items,
           failureCode: t,
@@ -133,9 +133,9 @@ let k = {
             code: t,
             message: null == n ? void 0 : n.message
           },
-          r = null == M ? null : {
+          r = null == k ? null : {
             type: c.$V.SEND,
-            message: R(w({}, M), {
+            message: R(w({}, k), {
               channelId: L
             })
           };

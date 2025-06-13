@@ -2,7 +2,7 @@
 n.d(t, {
   TS: () => L,
   ud: () => w,
-  v0: () => k
+  v0: () => M
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -199,14 +199,14 @@ function w(e) {
     case S.d4z.GUILD_MEDIA:
       return null != t.linkedLobby ? (0, r.jsxs)(A, {
         channel: t,
-        children: [M(b, t.type === S.d4z.GUILD_ANNOUNCEMENT ? N.intl.string(N.t.l1dkSE) : N.intl.string(N.t.Pnajj4)), (0, r.jsx)(I.Z.Title, {
+        children: [k(b, t.type === S.d4z.GUILD_ANNOUNCEMENT ? N.intl.string(N.t.l1dkSE) : N.intl.string(N.t.Pnajj4)), (0, r.jsx)(I.Z.Title, {
           level: x,
           onContextMenu: d,
           onClick: u,
           children: v
         })]
       }) : (0, r.jsxs)(i.Fragment, {
-        children: [M(b, t.type === S.d4z.GUILD_ANNOUNCEMENT ? N.intl.string(N.t.l1dkSE) : N.intl.string(N.t.Pnajj4)), (0, r.jsx)(I.Z.Title, {
+        children: [k(b, t.type === S.d4z.GUILD_ANNOUNCEMENT ? N.intl.string(N.t.l1dkSE) : N.intl.string(N.t.Pnajj4)), (0, r.jsx)(I.Z.Title, {
           level: x,
           onContextMenu: d,
           onClick: u,
@@ -215,7 +215,7 @@ function w(e) {
       });
     case S.d4z.GUILD_VOICE:
       return (0, r.jsxs)(i.Fragment, {
-        children: [M(b, N.intl.string(N.t.BVZqJi)), (0, r.jsx)(I.Z.Title, {
+        children: [k(b, N.intl.string(N.t.BVZqJi)), (0, r.jsx)(I.Z.Title, {
           level: x,
           onContextMenu: d,
           onClick: u,
@@ -224,7 +224,7 @@ function w(e) {
       });
     case S.d4z.GUILD_STAGE_VOICE:
       return (0, r.jsxs)(i.Fragment, {
-        children: [M(b, N.intl.string(N.t.EErMzM)), (0, r.jsx)(I.Z.Title, {
+        children: [k(b, N.intl.string(N.t.EErMzM)), (0, r.jsx)(I.Z.Title, {
           level: x,
           onContextMenu: d,
           onClick: u,
@@ -238,7 +238,7 @@ function w(e) {
       if (!s && null != l) {
         let e = (0, h.KS)(l, o);
         j = (0, r.jsxs)(i.Fragment, {
-          children: [M(e, N.intl.string(N.t.Pnajj4)), (0, r.jsx)(I.Z.Title, {
+          children: [k(e, N.intl.string(N.t.Pnajj4)), (0, r.jsx)(I.Z.Title, {
             level: x,
             onContextMenu: m,
             onClick: f,
@@ -249,7 +249,7 @@ function w(e) {
       }
       let E = (null == l ? void 0 : l.type) != null && S.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, r.jsxs)(i.Fragment, {
-        children: [j, M(E ? null : b, N.intl.string(N.t["7Xm5QE"])), (0, r.jsx)(I.Z.Title, {
+        children: [j, k(E ? null : b, N.intl.string(N.t["7Xm5QE"])), (0, r.jsx)(I.Z.Title, {
           level: x,
           onContextMenu: d,
           onClick: u,
@@ -291,7 +291,7 @@ let R = e => {
   }) : null
 };
 
-function k(e, t) {
+function M(e, t) {
   switch (e.type) {
     case S.d4z.DM:
       return (0, r.jsxs)(r.Fragment, {
@@ -315,7 +315,7 @@ function k(e, t) {
   }
 }
 
-function M(e, t) {
+function k(e, t) {
   return (0, r.jsxs)(r.Fragment, {
     children: [null !== e && (0, r.jsx)(I.Z.Icon, {
       iconClassName: T.__invalid_icon,

@@ -1,6 +1,6 @@
 /**
   Module ID: 98787
-  Original File Name: 17144d5350939fb2
+  Original File Name: c446e4cce12c30ff
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -5128,6 +5128,10 @@ div:has(>.positionLayer_fc71d3) {
     border-top-right-radius: var(--radius-sm)
 }
 
+.visual-refresh.align-chat-input .panel__5dec7 {
+    padding: var(--spacing-12)
+}
+
 .channel__5dec7:hover {
     text-decoration: underline
 }
@@ -6477,4 +6481,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=17144d5350939fb2.css.map*/
+/*# sourceMappingURL=c446e4cce12c30ff.css.map*/

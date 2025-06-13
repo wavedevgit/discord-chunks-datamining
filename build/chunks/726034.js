@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => q
+  Z: () => z
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -20,9 +20,9 @@ var r = n(255367),
   g = n(767714),
   E = n(612659),
   b = n(210887),
-  y = n(695346),
-  O = n(233398),
-  v = n(263198),
+  y = n(233398),
+  O = n(263198),
+  v = n(866419),
   I = n(803038),
   T = n(507962),
   S = n(877865),
@@ -204,7 +204,7 @@ function Z(e) {
       children: w.intl.string(P.default.xlXkaG)
     }), (0, r.jsx)(c.iRW, {
       initialValue: t,
-      defaultValue: O.B,
+      defaultValue: y.B,
       minValue: 0,
       maxValue: 100,
       onValueChange: e => {
@@ -221,10 +221,10 @@ function H(e) {
   } = e, n = i.useCallback(() => {
     var e;
     (0, T.Om)();
-    let t = (0, v.C)();
-    O.I.setState({
+    let t = (0, O.C)();
+    y.I.getState().setAll({
       colors: t.colors,
-      gradientAngle: null != (e = t.angle) ? e : O.I.getState().gradientAngle,
+      gradientAngle: null != (e = t.angle) ? e : y.I.getState().gradientAngle,
       chassisMixAmount: t.intensity
     })
   }, []);
@@ -259,17 +259,7 @@ function Y(e) {
   })
 }
 
-function W() {
-  var e, t, n;
-  let r = y.L1.getSetting().customUserThemeSettings;
-  O.I.setState({
-    colors: null != (e = null == r ? void 0 : r.colors) ? e : [],
-    gradientAngle: null != (t = null == r ? void 0 : r.gradientAngle) ? t : 0,
-    chassisMixAmount: null != (n = null == r ? void 0 : r.baseMix) ? n : O.B
-  })
-}
-
-function K(e) {
+function W(e) {
   let {
     onSaveTheme: t,
     canApply: n
@@ -298,7 +288,7 @@ function K(e) {
   })
 }
 
-function z(e) {
+function K(e) {
   let {
     onSaveTheme: t,
     canApply: n,
@@ -341,7 +331,7 @@ function z(e) {
   })
 }
 
-function q(e) {
+function z(e) {
   var t;
   let {
     metadata: n,
@@ -349,29 +339,29 @@ function q(e) {
     isCoachmark: o
   } = e, d = I.M.useExperiment({
     location: "ClientThemeColorPickerTools"
-  }).enabled, {
-    colors: m,
-    chassisMixAmount: g,
-    gradientAngle: E,
-    setColors: y,
-    setChassisMixAmount: v,
-    setGradientAngle: N
-  } = (0, O.I)(), [R, P] = i.useState(null != (t = m[0]) ? t : "#4394D4"), L = (0, s.e7)([b.Z], () => b.Z.theme), x = (0, h.wE)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
-    analyticsLocations: M
-  } = (0, f.ZP)(_.Z.CUSTOM_THEMES_EDITOR), k = () => {
+  }).enabled, m = (0, v.j)(), {
+    colors: g,
+    chassisMixAmount: E,
+    gradientAngle: O,
+    setColors: N,
+    setChassisMixAmount: R,
+    setGradientAngle: P
+  } = (0, y.I)(), [L, x] = i.useState(null != (t = g[0]) ? t : "#4394D4"), M = (0, s.e7)([b.Z], () => b.Z.theme), k = (0, h.wE)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+    analyticsLocations: j
+  } = (0, f.ZP)(_.Z.CUSTOM_THEMES_EDITOR), U = () => {
     (0, u.ZI)({
-      theme: L,
+      theme: M,
       customUserThemeSettings: {
-        colors: m,
+        colors: g,
         gradientColorStops: [],
-        gradientAngle: E,
-        baseMix: g
+        gradientAngle: O,
+        baseMix: E
       }
-    }), (0, T.u7)(m, g, E, L, M), null == a || a(C.L.TAKE_ACTION), x || (0, h.EW)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, p.Ll)()
-  }, j = () => {
-    W(), (0, T.uf)()
-  }, U = m.length > 0;
-  return (i.useEffect(() => W, []), d) ? (0, r.jsx)("div", {
+    }), (0, T.u7)(g, E, O, M, j), null == a || a(C.L.TAKE_ACTION), k || (0, h.EW)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, p.Ll)()
+  }, G = () => {
+    m(), (0, T.uf)()
+  }, V = g.length > 0;
+  return (i.useEffect(() => m, [m]), d) ? (0, r.jsx)("div", {
     className: D.container,
     "data-app-right-panel": !0,
     children: (0, r.jsxs)("div", {
@@ -384,36 +374,36 @@ function q(e) {
             isCoachmark: o
           }), (0, r.jsx)(A.o, {}), (0, r.jsx)(S.U, {
             onChange: e => {
-              P(e), 0 === m.length && y([e])
+              x(e), 0 === g.length && N([e])
             },
-            value: R,
-            colors: m,
-            setColors: y
-          }), m.length > 1 && (0, r.jsx)(F, {
-            gradientAngle: E,
-            setGradientAngle: N
+            value: L,
+            colors: g,
+            setColors: N
+          }), g.length > 1 && (0, r.jsx)(F, {
+            gradientAngle: O,
+            setGradientAngle: P
           }), (0, r.jsx)(Z, {
-            chassisMixAmount: g,
+            chassisMixAmount: E,
             setChassisMixAmount: e => {
-              v(e), 0 === m.length && y([R])
+              R(e), 0 === g.length && N([L])
             }
           }), (0, r.jsxs)(c.zxk, {
             className: D.resetButton,
             innerClassName: D.resetButtonContent,
             look: c.zxk.Looks.FILLED,
             color: c.zxk.Colors.CUSTOM,
-            onClick: j,
+            onClick: G,
             children: [(0, r.jsx)(c.Oe7, {
               size: "xs"
             }), w.intl.string(w.t.yBZMsb)]
           })]
         })
-      }), o ? (0, r.jsx)(K, {
-        onSaveTheme: k,
-        canApply: U
-      }) : (0, r.jsx)(z, {
-        onSaveTheme: k,
-        canApply: U,
+      }), o ? (0, r.jsx)(W, {
+        onSaveTheme: U,
+        canApply: V
+      }) : (0, r.jsx)(K, {
+        onSaveTheme: U,
+        canApply: V,
         metadata: n
       })]
     })
