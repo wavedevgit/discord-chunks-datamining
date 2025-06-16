@@ -64,9 +64,9 @@ function O(e) {
     isEnabled: n,
     showActivitySharingIndicatorWhenSharing: i
   } = (0, p.D)("not sharing link"), s = d.G6.useSetting(), a = (0, l.e7)([h.Z], () => h.Z.getStatus());
-  return n ? s && a !== o.Skl.INVISIBLE ? i ? (0, r.jsx)(y, {
+  return !n || __OVERLAY__ ? null : s && a !== o.Skl.INVISIBLE ? i ? (0, r.jsx)(y, {
     onClick: t
   }) : null : (0, r.jsx)(b, {
     onClick: t
-  }) : null
+  })
 }
