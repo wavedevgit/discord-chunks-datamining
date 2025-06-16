@@ -71,10 +71,10 @@ let O = e => {
         searchResults: f.Z.getSearchResults(O.id, e)
       }
     }),
-    [M, k] = i.useState(A),
-    D = "" !== A,
+    [k, M] = i.useState(A),
+    L = "" !== A,
     {
-      showHubEventsList: L
+      showHubEventsList: D
     } = c.Z.useExperiment({
       guildId: null != (t = E.id) ? t : "",
       location: "6f7fb0_1"
@@ -83,7 +83,7 @@ let O = e => {
     }),
     U = {
       mostRecentQuery: A,
-      showHubEventsList: L
+      showHubEventsList: D
     },
     B = i.useRef(U);
   i.useEffect(() => {
@@ -93,7 +93,7 @@ let O = e => {
       mostRecentQuery: e,
       showHubEventsList: t
     } = B.current;
-    h.c$(O.id), h.YZ(O.id), t && p.c(O.id), k(e)
+    h.c$(O.id), h.YZ(O.id), t && p.c(O.id), M(e)
   }, [O.id]), i.useEffect(() => {
     d.default.track(v.rMx.GUILD_DIRECTORY_CHANNEL_VIEWED, {
       directory_channel_id: O.id,
@@ -144,17 +144,17 @@ let O = e => {
       })
     } : void 0,
     G = e => {
-      0 !== M.trim().length && e.charCode === v.yXg.ENTER && (h.Rq(O.id, M), d.default.track(v.rMx.GUILD_DIRECTORY_SEARCH, {
+      0 !== k.trim().length && e.charCode === v.yXg.ENTER && (h.Rq(O.id, k), d.default.track(v.rMx.GUILD_DIRECTORY_SEARCH, {
         directory_channel_id: O.id,
         directory_guild_id: E.id
       }))
     },
     H = () => {
-      k(""), h.So(O.id)
+      M(""), h.So(O.id)
     };
-  return D ? (0, r.jsx)(C.Z, {
-    searchQuery: M,
-    setSearchQuery: k,
+  return L ? (0, r.jsx)(C.Z, {
+    searchQuery: k,
+    setSearchQuery: M,
     mostRecentQuery: A,
     handleSearchKeyPress: G,
     handleClearSearch: H,
@@ -174,8 +174,8 @@ let O = e => {
     })
   }) : (0, r.jsx)(_.Z, {
     channel: O,
-    searchQuery: M,
-    setSearchQuery: k,
+    searchQuery: k,
+    setSearchQuery: M,
     handleSearchKeyPress: G,
     handleClearSearch: H,
     handleCreateOrAddGuild: F,

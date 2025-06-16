@@ -34,10 +34,10 @@ var r = n(255367),
   A = n(390322),
   w = n(871499),
   R = n(88479),
-  M = n(386e3),
-  k = n(25827),
-  D = n(314897),
-  L = n(131951),
+  k = n(386e3),
+  M = n(25827),
+  L = n(314897),
+  D = n(131951),
   U = n(496675),
   B = n(944486),
   F = n(594174),
@@ -124,7 +124,7 @@ function eu(e) {
     canManageGuildEvent: h
   } = (0, O.XJ)(t), f = (0, o.e7)([q.Z], () => q.Z.getStageInstanceByChannel(t.id), [t.id]), m = (0, o.e7)([x.ZP], () => x.ZP.getGuildScheduledEvent(null == f ? void 0 : f.guild_scheduled_event_id)), g = (0, o.e7)([B.Z], () => B.Z.getVoiceChannelId() === t.id, [t.id]), {
     suppress: y
-  } = (0, S.Z)(t), C = D.default.getId(), [v] = (0, en.Z)(t), j = Y.ZP.isModerator(C, t.id), E = (0, z.B)(t.id), I = h(m), {
+  } = (0, S.Z)(t), C = L.default.getId(), [v] = (0, en.Z)(t), j = Y.ZP.isModerator(C, t.id), E = (0, z.B)(t.id), I = h(m), {
     parentAnalyticsLocation: P
   } = (0, p.ZP)(), Z = i.useRef(null);
   if (!g) return (0, r.jsx)(s.zxk, {
@@ -267,7 +267,7 @@ let eh = i.memo(function(e) {
   } = (0, E.Z)(), v = (0, P.Z)(t), {
     limit: j,
     reachedLimit: O
-  } = (0, I.Z)(t), w = (0, o.e7)([F.default], () => F.default.getCurrentUser()), R = (0, o.e7)([L.Z], () => (0, C.Z)(L.Z)), D = (0, o.e7)([B.Z], () => B.Z.getVoiceChannelId() === t.id, [t.id]), U = (0, o.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), G = (0, K.PK)(t.id), H = j > 0, V = O && !G || null != U && U.user.id !== (null == w ? void 0 : w.id), W = (0, _.u)("AudioDeviceMenu", n, {
+  } = (0, I.Z)(t), w = (0, o.e7)([F.default], () => F.default.getCurrentUser()), R = (0, o.e7)([D.Z], () => (0, C.Z)(D.Z)), L = (0, o.e7)([B.Z], () => B.Z.getVoiceChannelId() === t.id, [t.id]), U = (0, o.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), G = (0, K.PK)(t.id), H = j > 0, V = O && !G || null != U && U.user.id !== (null == w ? void 0 : w.id), W = (0, _.u)("AudioDeviceMenu", n, {
     entrypoint: ei.A5.CARET
   }), Y = i.useRef(null), q = i.useRef(null);
   if (null == w) return null;
@@ -297,7 +297,7 @@ let eh = i.memo(function(e) {
       } = e, {
         isShown: i
       } = t;
-      return (0, r.jsx)(k.C, {
+      return (0, r.jsx)(M.C, {
         ref: Y,
         centerButton: !0,
         hasPermission: v,
@@ -314,7 +314,7 @@ let eh = i.memo(function(e) {
   });
   return (0, r.jsxs)("div", {
     className: ea.wrapper,
-    children: [D && !l ? (0, r.jsxs)("div", {
+    children: [L && !l ? (0, r.jsxs)("div", {
       className: ea.buttonSection,
       children: [(0, r.jsx)(s.yRy, {
         targetElementRef: q,
@@ -346,7 +346,7 @@ let eh = i.memo(function(e) {
           } = e, {
             isShown: i
           } = t;
-          return (0, r.jsx)(M.Z, {
+          return (0, r.jsx)(k.Z, {
             ref: q,
             centerButton: !0,
             onPopoutClick: n,
@@ -361,7 +361,7 @@ let eh = i.memo(function(e) {
       }), H && X]
     }) : null, (0, r.jsxs)("div", {
       className: ea.buttonSection,
-      children: [D && !l && H ? (0, r.jsx)(Z.NZ, {
+      children: [L && !l && H ? (0, r.jsx)(Z.NZ, {
         channel: t,
         currentUser: w,
         exitFullScreen: () => null,
@@ -370,11 +370,11 @@ let eh = i.memo(function(e) {
         disabled: V
       }) : null, (0, r.jsx)(ep, {
         channelId: t.id
-      }), D && (0, r.jsx)(eo, {
+      }), L && (0, r.jsx)(eo, {
         channel: t
-      }), D && u && l && (0, r.jsx)(ec, {
+      }), L && u && l && (0, r.jsx)(ec, {
         channel: t
-      }), D && !l && (0, r.jsx)(ed, {
+      }), L && !l && (0, r.jsx)(ed, {
         channel: t
       }), (0, r.jsx)(N.Z, {
         channel: t

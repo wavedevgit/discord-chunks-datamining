@@ -150,9 +150,8 @@ class b extends r.EventEmitter {
       items: t
     }
   }
-  constructor(e, t = "POST", n) {
-    var r;
-    super(), p(this, "id", void 0), p(this, "_file", void 0), p(this, "_aborted", !1), p(this, "_errored", !1), p(this, "_url", void 0), p(this, "_method", void 0), p(this, "_raiseEndpointErrors", !1), p(this, "processingMessageChangeInterval", void 0), p(this, "files", []), p(this, "_lastUpdate", 0), p(this, "_loaded", 0), p(this, "alreadyStarted", !1), p(this, "_cancel", void 0), p(this, "_handleStart", e => {
+  constructor() {
+    super(), p(this, "id", void 0), p(this, "_file", void 0), p(this, "_aborted", !1), p(this, "_errored", !1), p(this, "processingMessageChangeInterval", void 0), p(this, "files", []), p(this, "_lastUpdate", 0), p(this, "_loaded", 0), p(this, "alreadyStarted", !1), p(this, "_cancel", void 0), p(this, "_handleStart", e => {
       this._cancel = e, this.alreadyStarted || this.emit("start", this._file), this.alreadyStarted = !0
     }), p(this, "_handleProgress", (e, t, n) => {
       let r = Date.now(),
@@ -187,7 +186,7 @@ class b extends r.EventEmitter {
       this.clearProcessingMessageInterval(), this._aborted || (this._errored = !0, E.log("_handleError: ".concat(t, " (").concat(JSON.stringify(n), ") for ").concat(this.id)), this.emit("error", this._file, t, r, n), this.removeAllListeners())
     }), p(this, "_handleComplete", e => {
       this.clearProcessingMessageInterval(), E.log("_handleComplete for ".concat(this.id)), this.emit("complete", this._file, e), this.removeAllListeners()
-    }), this.id = a().uniqueId("Uploader"), this._url = e, this._method = t, this._raiseEndpointErrors = null != (r = null == n ? void 0 : n.raiseEndpointErrors) && r, this._file = {
+    }), this.id = a().uniqueId("Uploader"), this._file = {
       id: this.id,
       name: "",
       currentSize: 0,

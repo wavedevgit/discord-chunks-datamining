@@ -1,8 +1,8 @@
 /** Chunk was on 62423 **/
 n.d(t, {
   XX: () => R,
-  ZP: () => k,
-  ul: () => M
+  ZP: () => M,
+  ul: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -80,7 +80,7 @@ function R(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     numAudience: t,
     collapsed: n
@@ -105,16 +105,16 @@ function M(e) {
     })]
   })
 }
-let k = (0, p.$)(function(e) {
+let M = (0, p.$)(function(e) {
   var t;
   let {
     collapsed: l,
     user: p,
     channel: R,
-    mute: M,
-    localMute: k,
-    localVideoDisabled: D,
-    deaf: L,
+    mute: k,
+    localMute: M,
+    localVideoDisabled: L,
+    deaf: D,
     video: U,
     embeddedApplication: B,
     serverMute: F,
@@ -181,15 +181,15 @@ let k = (0, p.$)(function(e) {
         user: p,
         speaking: z,
         disconnected: W,
-        mute: M,
-        localMute: k,
-        localVideoDisabled: D,
+        mute: k,
+        localMute: M,
+        localVideoDisabled: L,
         isStreaming: K,
         isGuest: Q,
         video: U,
         priority: J,
         ringing: V,
-        deaf: L,
+        deaf: D,
         nick: H,
         collapsed: l,
         overlap: l,

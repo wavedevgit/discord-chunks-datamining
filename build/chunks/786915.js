@@ -74,24 +74,24 @@ function y(e) {
       parentAnalyticsLocation: w
     } = (0, u.ZP)(),
     R = null == y ? void 0 : y.getGuildId(),
-    M = (0, a.e7)([p.Z], () => null != R ? p.Z.getGuild(R) : null, [R]),
-    k = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : void 0),
-    D = null == t || O ? o.ejJ : o.gQj,
-    L = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
-  return null != k && E ? (0, r.jsx)(m.Z, {
+    k = (0, a.e7)([p.Z], () => null != R ? p.Z.getGuild(R) : null, [R]),
+    M = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : void 0),
+    L = null == t || O ? o.ejJ : o.gQj,
+    D = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
+  return null != M && E ? (0, r.jsx)(m.Z, {
     onClick: () => {
-      null != w && (0, d.v)(w, d.d.INVITE), s.h7(k, !1, A)
+      null != w && (0, d.v)(w, d.d.INVITE), s.h7(M, !1, A)
     },
-    iconComponent: D,
-    label: L,
+    iconComponent: L,
+    label: D,
     iconClassName: I,
     look: P,
     size: S,
     buttonText: Z,
     color: null != N ? N : void 0
-  }) : null != M && null != y && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(m.Z, _({
+  }) : null != k && null != y && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(m.Z, _({
     onClick: () => {
-      l()(null != M, "guild cannot be null"), l()(null != y, "channel cannot be null"), null != w && (0, d.v)(w, d.d.INVITE),
+      l()(null != k, "guild cannot be null"), l()(null != y, "channel cannot be null"), null != w && (0, d.v)(w, d.d.INVITE),
         function(e) {
           let {
             guild: t,
@@ -133,7 +133,7 @@ function y(e) {
             contextKey: s === g.IlC.POPOUT ? o.u1M : o.z1l
           })
         }({
-          guild: M,
+          guild: k,
           channel: y,
           streamUserId: null == i ? void 0 : i.ownerId,
           applicationId: t,
@@ -143,8 +143,8 @@ function y(e) {
           guildScheduledEvent: j
         })
     },
-    iconComponent: D,
-    label: L,
+    iconComponent: L,
+    label: D,
     iconClassName: I,
     look: P,
     size: S,

@@ -34,10 +34,10 @@ var r = n(255367),
   A = n(117530),
   w = n(459273),
   R = n(838440),
-  M = n(127654),
-  k = n(241309),
-  D = n(928477),
-  L = n(456077),
+  k = n(127654),
+  M = n(241309),
+  L = n(928477),
+  D = n(456077),
   U = n(488131),
   B = n(602034),
   F = n(981631),
@@ -158,7 +158,7 @@ function q(e) {
       textAreaState: n,
       setTextAreaState: r
     }
-  }(t, m), C = (0, D.vH)(t), {
+  }(t, m), C = (0, L.vH)(t), {
     nameError: j,
     messageError: O,
     submit: P,
@@ -193,7 +193,7 @@ function q(e) {
         let m = null != (s = r.name) ? s : "",
           g = null == n && 0 === m.length,
           b = "" === e && (null == i || 0 === i.length) && 0 === l.length;
-        if (c(g ? (0, k.V_)() : null), d(b ? (0, k.T4)() : null), g || b) return h(!1), {
+        if (c(g ? (0, M.V_)() : null), d(b ? (0, M.T4)() : null), g || b) return h(!1), {
           shouldClear: !1,
           shouldRefocus: !0
         };
@@ -215,7 +215,7 @@ function q(e) {
         try {
           await f(e, i, l)
         } catch (e) {
-          return (null == (u = e.body) ? void 0 : u.code) === F.evJ.AUTOMOD_TITLE_BLOCKED && c((0, k.Gx)(e.body, t)), h(!1), {
+          return (null == (u = e.body) ? void 0 : u.code) === F.evJ.AUTOMOD_TITLE_BLOCKED && c((0, M.Gx)(e.body, t)), h(!1), {
             shouldClear: !1,
             shouldRefocus: !0
           }
@@ -234,7 +234,7 @@ function q(e) {
     privateThreadMode: C,
     textAreaState: _,
     location: l
-  }), N = (0, D.oD)(f, C) ? s.qtY : s.or_, T = (0, x.R6)("CreateThreadSidebar");
+  }), N = (0, L.oD)(f, C) ? s.qtY : s.or_, T = (0, x.R6)("CreateThreadSidebar");
   return (0, r.jsx)("div", {
     className: H.chat,
     onMouseDown: p,
@@ -302,7 +302,7 @@ function K(e) {
     threadSettings: n,
     updateThreadSettings: i,
     privateThreadMode: l
-  } = e, a = (0, D.oD)(n, l), o = (0, r.jsx)("div", {
+  } = e, a = (0, L.oD)(n, l), o = (0, r.jsx)("div", {
     className: H.privateThreadFormTitle,
     children: (0, r.jsx)("span", {
       className: H.privateThreadFormTitleText,
@@ -311,7 +311,7 @@ function K(e) {
   }), c = (0, r.jsx)(s.XZJ, {
     className: H.checkbox,
     type: s.XZJ.Types.INVERTED,
-    disabled: l === D.Jw.PrivateOnly,
+    disabled: l === L.Jw.PrivateOnly,
     value: a,
     onChange: (e, t) => i({
       isPrivate: t
@@ -322,7 +322,7 @@ function K(e) {
       children: G.intl.string(G.t.TRPp3t)
     })
   });
-  return t || l === D.Jw.Disabled ? null : (0, r.jsxs)(s.hjN, {
+  return t || l === L.Jw.Disabled ? null : (0, r.jsxs)(s.hjN, {
     title: o,
     className: H.formSection,
     children: [c, a ? (0, r.jsx)(s.Text, {
@@ -343,9 +343,9 @@ function X(e) {
     updateThreadSettings: a,
     error: o,
     disabled: c
-  } = e, d = null != (t = l.name) ? t : "", p = (0, k.Op)(o, {
+  } = e, d = null != (t = l.name) ? t : "", p = (0, M.Op)(o, {
     content: d
-  }), h = (0, D.Od)(n, i), f = null != i, m = (0, C.Dt)();
+  }), h = (0, L.Od)(n, i), f = null != i, m = (0, C.Dt)();
   return (0, r.jsx)(s.hjN, {
     tag: "label",
     htmlFor: m,
@@ -358,11 +358,11 @@ function X(e) {
       maxLength: F.HN8,
       onChange: e => {
         a({
-          name: (0, L.Z)(e, !1)
+          name: (0, D.Z)(e, !1)
         }), "" !== e ? u.Z.startTyping(n.id) : u.Z.stopTyping(n.id)
       },
       onBlur: () => {
-        let e = (0, L.Z)(d, !0);
+        let e = (0, D.Z)(d, !0);
         e !== d && a({
           name: e
         })
@@ -402,7 +402,7 @@ function Q(e) {
     handler: b
   });
   let v = (0, o.e7)([T.Z], () => T.Z.can(F.Plq.ATTACH_FILES, t)),
-    j = (0, k.Op)(p, {
+    j = (0, M.Op)(p, {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -432,7 +432,7 @@ function Q(e) {
       onBlur: b,
       onChange: C,
       onSubmit: x,
-      promptToUpload: M.d
+      promptToUpload: k.d
     })]
   })
 }

@@ -42,9 +42,9 @@ function O(e) {
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: R
-  } = (0, _.Z)(t), M = (0, l.e7)([y.Z], () => y.Z.isDeaf()), k = w || R || M, D = (0, m.sR)({
-    isSoundboardButtonDisabled: k
-  }), [L, U] = (0, h.cv)(D), {
+  } = (0, _.Z)(t), k = (0, l.e7)([y.Z], () => y.Z.isDeaf()), M = w || R || k, L = (0, m.sR)({
+    isSoundboardButtonDisabled: M
+  }), [D, U] = (0, h.cv)(L), {
     analyticsLocations: B
   } = (0, u.ZP)(), {
     isHovered: F,
@@ -115,7 +115,7 @@ function O(e) {
       let {
         closePopout: n
       } = e;
-      return k ? null : (0, r.jsx)(C.Z, {
+      return M ? null : (0, r.jsx)(C.Z, {
         children: (0, r.jsx)("div", {
           onMouseEnter: H,
           onMouseLeave: V,
@@ -123,7 +123,7 @@ function O(e) {
             guildId: A,
             channel: t,
             onClose: n,
-            gridNotice: L === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
+            gridNotice: D === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
               onClose: n,
               markAsDismissed: U
             }),
@@ -136,9 +136,9 @@ function O(e) {
       ref: Y,
       isTrayButton: !0,
       themeable: O,
-      label: w ? j.intl.string(j.t["Ox4/zc"]) : R ? j.intl.string(j.t["+YBKYG"]) : M ? j.intl.string(j.t.X1lQlp) : void 0,
+      label: w ? j.intl.string(j.t["Ox4/zc"]) : R ? j.intl.string(j.t["+YBKYG"]) : k ? j.intl.string(j.t.X1lQlp) : void 0,
       iconComponent: S,
-      disabled: k,
+      disabled: M,
       onContextMenu: z,
       onClick: W,
       onMouseEnter: () => {

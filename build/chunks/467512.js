@@ -51,7 +51,7 @@ async function u(e) {
     message: n,
     items: o,
     shouldUploadFailureSendNotification: l
-  } = e, u = new i.Z("missing"), d = (0, a.e5)(c(s({}, n), {
+  } = e, u = new i.Z, d = (0, a.e5)(c(s({}, n), {
     id: u._file.id
   }));
   u.on("start", e => {

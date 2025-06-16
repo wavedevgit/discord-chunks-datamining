@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Q: () => L,
+  Q: () => D,
   Z: () => F
 });
 var r = n(255367),
@@ -35,9 +35,9 @@ var r = n(255367),
   A = n(248400),
   w = n(981631),
   R = n(354459),
-  M = n(820573);
+  k = n(820573);
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function k(e) {
   return e
 }
 
-function D(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = 16 / 9,
+let D = 16 / 9,
   U = e => {
     let {
       stageParticipant: t,
@@ -93,17 +93,17 @@ let L = 16 / 9,
       guildId: a,
       channelId: l.id,
       clickTrap: !0,
-      children: e => (0, r.jsx)(c.P3F, D(k({
+      children: e => (0, r.jsx)(c.P3F, L(M({
         innerRef: h,
         onContextMenu: e => d(n, e)
       }, e), {
         children: (0, r.jsx)(T.Z, {
           participant: n,
-          aspectRatio: L,
+          aspectRatio: D,
           blocked: m,
           ignored: g,
           channel: l,
-          className: M.tile,
+          className: k.tile,
           inCall: !0,
           inPopout: p,
           pulseSpeakingIndicator: !f.enabled,
@@ -145,12 +145,12 @@ let L = 16 / 9,
     }, [j, l, O, I]);
     return (0, r.jsx)(T.Z, {
       participant: n,
-      aspectRatio: L,
+      aspectRatio: D,
       fit: n.type === R.fO.USER ? v.L.COVER : void 0,
       blocked: g,
       ignored: _,
       channel: l,
-      className: M.tile,
+      className: k.tile,
       inCall: !0,
       inPopout: h,
       onClick: N,
@@ -193,7 +193,7 @@ let L = 16 / 9,
               let {
                 default: t
               } = await n.e("22183").then(n.bind(n, 987281));
-              return n => (0, r.jsx)(t, D(k({}, n), {
+              return n => (0, r.jsx)(t, L(M({}, n), {
                 stream: e.stream,
                 appContext: p,
                 exitFullscreen: () => {},
@@ -223,7 +223,7 @@ let L = 16 / 9,
               let {
                 default: e
               } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
-              return t => (0, r.jsx)(e, D(k({}, t), {
+              return t => (0, r.jsx)(e, L(M({}, t), {
                 user: x,
                 guildId: y,
                 channel: l,

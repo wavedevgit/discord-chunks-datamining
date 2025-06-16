@@ -56,8 +56,8 @@ function w(e) {
     user: t,
     currentUser: n,
     channel: w
-  } = e, R = __OVERLAY__, M = (0, m.ZP)(t.id), k = (0, c.ZP)(), D = i.useRef(Date.now()), {
-    analyticsLocations: L
+  } = e, R = __OVERLAY__, k = (0, m.ZP)(t.id), M = (0, c.ZP)(), L = i.useRef(Date.now()), {
+    analyticsLocations: D
   } = (0, d.ZP)(u.Z.USER_PROFILE_SIDEBAR), U = (0, h.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
@@ -69,26 +69,26 @@ function w(e) {
     }
   }), V = e => {
     (0, b.openUserProfileModal)(A({
-      sourceAnalyticsLocations: L,
+      sourceAnalyticsLocations: D,
       hideRestrictedProfile: !0
     }, U, e))
   };
   return (0, r.jsx)(d.Gt, {
-    value: L,
+    value: D,
     children: (0, r.jsx)(h.Mt, {
       value: U,
-      openedAt: D.current,
-      fetchStartedAt: null == M ? void 0 : M.fetchStartedAt,
-      fetchEndedAt: null == M ? void 0 : M.fetchEndedAt,
-      isLoaded: null == M ? void 0 : M.isLoaded,
+      openedAt: L.current,
+      fetchStartedAt: null == k ? void 0 : k.fetchStartedAt,
+      fetchEndedAt: null == k ? void 0 : k.fetchEndedAt,
+      isLoaded: null == k ? void 0 : k.isLoaded,
       children: (0, r.jsx)(g.NJ, {
         value: G,
         children: (0, r.jsxs)(x.Z, {
           ref: B,
           user: t,
-          displayProfile: M,
+          displayProfile: k,
           themeType: Z.lY.SIDEBAR,
-          themeOverride: k,
+          themeOverride: M,
           children: [null != G.interactionType && (0, r.jsx)(l.animated.div, {
             style: H,
             className: T.backdrop
@@ -108,7 +108,7 @@ function w(e) {
               className: T.header,
               children: [(0, r.jsx)(y.Z, {
                 user: t,
-                displayProfile: M,
+                displayProfile: k,
                 themeType: Z.lY.SIDEBAR,
                 animateOnHover: !F,
                 className: T.banner
@@ -118,7 +118,7 @@ function w(e) {
               }), (0, r.jsx)(_.Z, {
                 location: "UserProfileSiebar",
                 user: t,
-                displayProfile: M,
+                displayProfile: k,
                 channelId: w.id,
                 themeType: Z.lY.SIDEBAR,
                 onOpenProfile: R ? void 0 : V
@@ -132,7 +132,7 @@ function w(e) {
             }), (0, r.jsx)(P.Z, {
               user: t,
               currentUser: n,
-              displayProfile: M,
+              displayProfile: k,
               channel: w,
               isHovering: null == G.interactionType && F,
               onOpenProfile: R ? void 0 : V
@@ -150,13 +150,13 @@ function w(e) {
               onClick: () => {
                 V(), (0, f.pQ)(A({
                   action: "PRESS_VIEW_PROFILE",
-                  analyticsLocations: L
+                  analyticsLocations: D
                 }, U))
               },
               children: N.intl.string(N.t["+Xp3ho"])
             })
-          }), (null == M ? void 0 : M.profileEffectId) != null && (0, r.jsx)(p.Z, {
-            profileEffectId: null == M ? void 0 : M.profileEffectId,
+          }), (null == k ? void 0 : k.profileEffectId) != null && (0, r.jsx)(p.Z, {
+            profileEffectId: null == k ? void 0 : k.profileEffectId,
             isHovering: F,
             urlQueryString: "dmView"
           })]

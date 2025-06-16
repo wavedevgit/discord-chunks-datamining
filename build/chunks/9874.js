@@ -6,5 +6,5 @@ n.d(t, {
 var r = n(680287);
 
 function i() {
-  return new r.Z("unused")
+  return new r.Z
 }

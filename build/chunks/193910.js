@@ -64,14 +64,14 @@ function A(e) {
     draftType: A,
     editorTextContent: w,
     setValue: R,
-    openClips: M
+    openClips: k
   } = e, {
-    analyticsLocations: k
-  } = (0, p.ZP)(), D = (0, g.Dt)({
+    analyticsLocations: M
+  } = (0, p.ZP)(), L = (0, g.Dt)({
     channel: t
   });
 
-  function L() {
+  function D() {
     (0, b.R6)(t, void 0, "Plus Button")
   }
 
@@ -80,7 +80,7 @@ function A(e) {
   }
 
   function B() {
-    M()
+    k()
   }
 
   function F() {
@@ -135,7 +135,7 @@ function A(e) {
     }), (0, d.Z)({
       channel: t,
       openInPopout: !1,
-      analyticsLocations: k
+      analyticsLocations: M
     }), (0, u.w1)({
       guildId: t.guild_id
     })
@@ -216,7 +216,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.JOIN,
                 activity: n,
-                location: k[k.length - 1]
+                location: M[M.length - 1]
               })
             }
           }, "play");
@@ -230,7 +230,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.LISTEN,
                 activity: n,
-                location: k[k.length - 1]
+                location: M[M.length - 1]
               })
             }
           }, "listen");
@@ -244,7 +244,7 @@ function A(e) {
                 channelId: t.id,
                 type: E.mFx.WATCH,
                 activity: n,
-                location: k[k.length - 1]
+                location: M[M.length - 1]
               })
             }
           }, "watch");
@@ -252,7 +252,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "THREAD",
             label: i,
-            action: L
+            action: D
           }, "THREAD");
         case O.r.SLASH_COMMAND:
           return (0, r.jsx)(s.sNh, {
@@ -274,7 +274,7 @@ function A(e) {
             action: () => (0, g.$f)({
               channel: t
             }),
-            children: D
+            children: L
           }, "scheduled_message");
         default:
           return null

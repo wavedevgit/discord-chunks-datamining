@@ -36,7 +36,7 @@ function E(e) {
   } = e, Z = i.useRef(null), N = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == N ? void 0 : N.details.additionalSearchQuery) ? t : {}), R = (0, C.z0)(l, E, {
     addtionalQuery: A,
     shouldDispatch: !0
-  }), M = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), k = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
+  }), k = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), M = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
   (0, u.Ng)(() => {
     let e = null == N ? void 0 : N.details.scrollOffset;
     if (null != e) {
@@ -47,14 +47,14 @@ function E(e) {
       })
     }
   });
-  let D = i.useCallback(e => {
+  let L = i.useCallback(e => {
       null != N && (T.current = e.target.scrollTop, (0, y.r)(E, l, N.baseChannelId, {
         modViewPanel: v.k.MESSAGE_HISTORY,
         additionalSearchQuery: A,
         scrollOffset: T.current
       }))
     }, [E, l, N, A]),
-    L = (0, o.throttle)(D, 300),
+    D = (0, o.throttle)(L, 300),
     U = i.useCallback(e => {
       var t, n;
       if (null == N) return;
@@ -135,7 +135,7 @@ function E(e) {
         showNoResultsAlt: !1
       }
     }, [R.result, B]);
-  return null == M || null == k || null == G ? null : (0, r.jsxs)("div", {
+  return null == k || null == M || null == G ? null : (0, r.jsxs)("div", {
     className: a()(j.container, P),
     children: [(0, r.jsx)(x.Z, {
       guildId: E,
@@ -144,7 +144,7 @@ function E(e) {
     }), (0, r.jsx)(c.Den, {
       className: O.innerContainer,
       ref: Z,
-      onScroll: L,
+      onScroll: D,
       children: (0, r.jsx)(m.Z, {
         searchResults: F,
         search: G,

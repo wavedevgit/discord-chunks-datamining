@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -41,7 +41,7 @@ let w = i.memo(e => {
     channel: g,
     sessionId: x,
     nick: A
-  } = e, w = s.id, R = (0, o.e7)([_.default], () => _.default.getId() === w, [w]), [M, k, D] = (0, o.Wu)([C.Z], () => R ? [!C.Z.isSupported() || C.Z.isSelfMute() || C.Z.isSelfMutedTemporarily(), C.Z.isSelfDeaf(), !1] : [!C.Z.isSupported() || C.Z.isLocalMute(w), !1, C.Z.isLocalVideoDisabled(w)], [R, w]), L = (0, o.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), U = (0, c.Z)({
+  } = e, w = s.id, R = (0, o.e7)([_.default], () => _.default.getId() === w, [w]), [k, M, L] = (0, o.Wu)([C.Z], () => R ? [!C.Z.isSupported() || C.Z.isSelfMute() || C.Z.isSelfMutedTemporarily(), C.Z.isSelfDeaf(), !1] : [!C.Z.isSupported() || C.Z.isLocalMute(w), !1, C.Z.isLocalVideoDisabled(w)], [R, w]), D = (0, o.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), U = (0, c.Z)({
     userId: w,
     checkSoundSharing: !0
   }), B = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(g.guild_id, w)), F = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), G = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
@@ -79,14 +79,14 @@ let w = i.memo(e => {
       canDrag: e.canDrag && !B,
       otherClientSessionType: null == K || null == (t = K.clientInfo) ? void 0 : t.os,
       voicePlatform: Q,
-      localMute: M && !R,
-      localVideoDisabled: D,
-      mute: l || M,
-      deaf: a || k,
+      localMute: k && !R,
+      localVideoDisabled: L,
+      mute: l || k,
+      deaf: a || M,
       speaking: U,
       ringing: F,
       disconnected: J,
-      priority: L,
+      priority: D,
       embeddedApplication: H[0],
       isStreaming: null != Y && Y.channelId === g.id,
       isWatching: null != q && q.state !== N.jm8.ENDED,
@@ -107,7 +107,7 @@ let w = i.memo(e => {
 });
 w.displayName = "ConnectedVoiceUser";
 let R = [],
-  M = function(e) {
+  k = function(e) {
     let {
       allowPreviews: t = !0,
       allowDragging: n = !0,
@@ -121,18 +121,18 @@ let R = [],
       withGuildIcon: C = !1,
       className: j,
       children: O
-    } = e, [E, I] = i.useState(null), [P, S] = i.useState(!1), T = i.useRef(null), M = (0, m.Es)(l.id, null != c ? c : R), k = i.useRef(new s.sW(50, () => {
+    } = e, [E, I] = i.useState(null), [P, S] = i.useState(!1), T = i.useRef(null), k = (0, m.Es)(l.id, null != c ? c : R), M = i.useRef(new s.sW(50, () => {
       I(T.current), T.current = null
-    })), D = i.useRef(new s.sW(175, () => {
+    })), L = i.useRef(new s.sW(175, () => {
       I(null)
-    })), L = i.useCallback(e => {
-      t && (S(!0), D.current.cancel(), T.current = e, k.current.delay())
+    })), D = i.useCallback(e => {
+      t && (S(!0), L.current.cancel(), T.current = e, M.current.delay())
     }, [t]), U = i.useCallback(e => {
-      t && (k.current.cancel(), E === e && (S(!1), D.current.delay()))
+      t && (M.current.cancel(), E === e && (S(!1), L.current.delay()))
     }, [t, E]), B = (0, o.Wu)([v.Z], () => {
       if (u) return [];
       let e = new Set;
-      return null == M || M.forEach(t => {
+      return null == k || k.forEach(t => {
         let {
           user: n
         } = t;
@@ -143,8 +143,8 @@ let R = [],
     });
     (0, p.Z)(B);
     let F = (() => {
-      if (null == M || 0 === M.length) return null;
-      let e = u && M.length > d + 1 ? M.slice(0, d) : M,
+      if (null == k || 0 === k.length) return null;
+      let e = u && k.length > d + 1 ? k.slice(0, d) : k,
         t = h.Z.getGuildRingingUsers(l.id),
         i = e.map(e => {
           var i;
@@ -166,7 +166,7 @@ let R = [],
             channel: l,
             collapsed: u,
             canDrag: n && x.Z.can(N.Plq.MOVE_MEMBERS, l),
-            showPreview: L,
+            showPreview: D,
             hidePreview: U,
             previewIsOpen: P,
             shouldShowPreview: E === a.id,
@@ -177,8 +177,8 @@ let R = [],
       return null != y && y > 0 ? i.push((0, r.jsx)(Z.ul, {
         collapsed: u,
         numAudience: y
-      })) : u && M.length > d + 1 && i.push((0, r.jsx)(Z.XX, {
-        numUsers: M.length - d
+      })) : u && k.length > d + 1 && i.push((0, r.jsx)(Z.XX, {
+        numUsers: k.length - d
       })), i
     })();
     return null == F && null == O ? null : (0, r.jsxs)(g.eJ, {

@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => L
+  Z: () => D
 }), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -35,7 +35,7 @@ var r = n(255367),
   w = n(388032),
   R = n(232989);
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function M(e) {
   return e
 }
 
-function k(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ function k(e, t) {
   }), e
 }
 
-function D(e) {
+function L(e) {
   let {
     channelId: t,
     guildId: n
@@ -82,7 +82,7 @@ function D(e) {
       text: w.intl.formatToPlainString(w.t.JjdizM, {
         username: e.user.username
       }),
-      children: l => (0, r.jsx)(P.ZP, k(M({}, l), {
+      children: l => (0, r.jsx)(P.ZP, M(k({}, l), {
         className: a()(R.speaker, {
           [R.last]: t === i.length - 1
         }),
@@ -95,7 +95,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function D(e) {
   let {
     inPopout: t,
     channel: n,
@@ -106,7 +106,7 @@ function L(e) {
     voiceParticipantsHidden: P,
     selectedParticipant: S,
     userParticipantCount: w,
-    participantsListOpen: L
+    participantsListOpen: D
   } = (0, c.cj)([Z.Z], () => ({
     selectedParticipant: Z.Z.getSelectedParticipant(x),
     voiceParticipantsHidden: Z.Z.getVoiceParticipantsHidden(x),
@@ -116,13 +116,13 @@ function L(e) {
     hasParticipantsPanel: B
   } = (0, T.Z)({
     location: "ChannelCallHeaderToolbar"
-  }), F = !L && B && (n.isGuildVoice() || n.isGroupDM()), {
+  }), F = !D && B && (n.isGuildVoice() || n.isGroupDM()), {
     enabled: G,
     inInbox: H
   } = y.Z.useExperiment({
     location: "ChannelCallHeaderToolbar"
   }), V = (0, b.Q3)("ChannelCallHeaderToolbar"), z = [];
-  return P && z.push((0, r.jsx)(D, {
+  return P && z.push((0, r.jsx)(L, {
     channelId: x,
     guildId: n.guild_id
   }, "current-speaker")), z.push((0, r.jsx)(g.Z, {
@@ -152,7 +152,7 @@ function L(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.createElement)(I.Z, k(M({}, e), {
+      return (0, i.createElement)(I.Z, M(k({}, e), {
         buttonRef: o,
         isActive: n,
         count: w,
@@ -168,11 +168,11 @@ function L(e) {
     className: a()(R.button, {
       [R.lastButton]: l
     }),
-    onClick: () => d.Z.toggleParticipantsList(n.id, !L)
+    onClick: () => d.Z.toggleParticipantsList(n.id, !D)
   }, "participants-list-button")), U && z.push((0, r.jsx)(E.T, {
     channelId: n.id,
     className: a()(R.button, {
-      [R.lastButton]: L
+      [R.lastButton]: D
     }),
     disabled: l
   }, "chat-spacer")), (0, r.jsx)(h.Gt, {

@@ -140,27 +140,27 @@ function d(e) {
         R = r.useCallback(() => {
           E || (g ? S(C(t, d), d) : T(!0))
         }, [C, t, S, g, E, d, T]),
-        M = r.useCallback(e => {
+        k = r.useCallback(e => {
           e.currentTarget.contains(e.relatedTarget) || requestAnimationFrame(() => {
             if (null == c(s(C, t, d))) return void S(t);
             I(!1)
           })
         }, [C, t, d, S]),
-        k = r.useRef(null);
+        M = r.useRef(null);
       r.useLayoutEffect(() => {
-        let e = k.current;
-        if (null != e) return e.addEventListener("focusin", w), e.addEventListener("focus", R), e.addEventListener("focusout", M), () => {
-          e.removeEventListener("focusin", w), e.removeEventListener("focus", R), e.removeEventListener("focusout", M)
+        let e = M.current;
+        if (null != e) return e.addEventListener("focusin", w), e.addEventListener("focus", R), e.addEventListener("focusout", k), () => {
+          e.removeEventListener("focusin", w), e.removeEventListener("focus", R), e.removeEventListener("focusout", k)
         }
-      }, [R, w, M]);
-      let D = r.useCallback(() => ({
+      }, [R, w, k]);
+      let L = r.useCallback(() => ({
           role: "list",
           tabIndex: E && g ? -1 : 0,
           id: t,
           onKeyDown: A,
-          ref: k
+          ref: M
         }), [t, E, A, g]),
-        L = r.useCallback(e => {
+        D = r.useCallback(e => {
           let {
             index: n
           } = e;
@@ -175,9 +175,9 @@ function d(e) {
         }, [C, t, d, g, P, b]);
       return r.useMemo(() => ({
         dispatch: m,
-        getContainerProps: D,
-        getItemProps: L
-      }), [m, D, L])
+        getContainerProps: L,
+        getItemProps: D
+      }), [m, L, D])
     }({
       navId: t,
       itemCount: j,

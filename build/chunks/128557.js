@@ -35,10 +35,10 @@ var r = n(255367),
   A = n(881454),
   w = n(435921),
   R = n(538548),
-  M = n(753033),
-  k = n(15717);
+  k = n(753033),
+  M = n(15717);
 
-function D(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -137,7 +137,7 @@ function B(e) {
           let {
             default: t
           } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
-          return n => (0, r.jsx)(t, L(D({}, n), {
+          return n => (0, r.jsx)(t, D(L({}, n), {
             guild: e,
             source: S.t4x.CHANNEL_WELCOME,
             analyticsLocation: {
@@ -175,7 +175,7 @@ function B(e) {
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 431583));
-          return t => (0, r.jsx)(e, D({
+          return t => (0, r.jsx)(e, L({
             source: S.jXE.CHANNEL_WELCOME_CTA
           }, t))
         })
@@ -190,7 +190,7 @@ function B(e) {
           } = await n.e("77046").then(n.bind(n, 272509));
           return n => {
             var i;
-            return (0, r.jsx)(t, L(D({
+            return (0, r.jsx)(t, D(L({
               guildId: null != (i = e.id) ? i : ""
             }, n), {
               analyticsType: c.z.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL
@@ -266,7 +266,7 @@ function B(e) {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(U, {
-      iconUrl: ei ? u.$_T : M,
+      iconUrl: ei ? u.$_T : k,
       header: N.intl.string(N.t.c5kxPj),
       completed: W,
       onClick: K
@@ -277,7 +277,7 @@ function B(e) {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(U, {
-      iconUrl: ei ? u.qMX : k,
+      iconUrl: ei ? u.qMX : M,
       header: N.intl.string(N.t["SoP7+v"]),
       completed: z,
       onClick: q

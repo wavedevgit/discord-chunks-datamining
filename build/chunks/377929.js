@@ -103,7 +103,7 @@ function S(e) {
   } = e, l = (0, c.Z)(t), C = (0, f.Z)(t), E = (0, b.Z)(t.id), I = (0, g.Z)(t), P = (0, y.Z)({
     id: t.id,
     label: O.intl.string(O.t.DQ797u)
-  }), S = (0, u.Z)(t), Z = (0, d.Z)(t), N = (0, p.Z)(t, "Toolbar Overflow"), T = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, _.Z)(t), R = x.vF.useSetting(), M = (0, o.e7)([v.Z], () => !a().isEmpty(v.Z.getVoiceStatesForChannel(t.id)));
+  }), S = (0, u.Z)(t), Z = (0, d.Z)(t), N = (0, p.Z)(t, "Toolbar Overflow"), T = (0, m.Z)(t), A = (0, h.Z)(t), w = (0, _.Z)(t), R = x.vF.useSetting(), k = (0, o.e7)([v.Z], () => !a().isEmpty(v.Z.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(s.v2r, {
     navId: "thread-context",
     onClose: n,
@@ -112,7 +112,7 @@ function S(e) {
     children: [(0, r.jsxs)(s.kSQ, {
       children: [N, A]
     }), (0, r.jsxs)(s.kSQ, {
-      children: [I, T, E, R && !M ? (0, r.jsx)(s.sNh, {
+      children: [I, T, E, R && !k ? (0, r.jsx)(s.sNh, {
         id: "open",
         label: O.intl.string(O.t.bX7EaG),
         action: function() {

@@ -39,7 +39,7 @@ async function A(e) {
       onClose: g
     } = e,
     h = y.default.castChannelIdAsMessageId(r.id),
-    v = new d.Z(j.ANM.MESSAGE(r.id, h), "PATCH");
+    v = new d.Z;
   v.on("progress", e => {
     let t = (0, b.dg)(p.id);
     e.currentSize > t && (v.cancel(), u(!1), g(), (0, T.G)(r, (0, C.KZ)(o)))
