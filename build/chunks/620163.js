@@ -1699,6 +1699,12 @@ let e$ = () => {
         parent: eH.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
         predicate: () => H.Z.isDeveloper
       },
+      [eH.s6.DEVELOPER_OPTIONS_LOG_KEYBOARD_MISMATCHES]: {
+        section: eY.oAB.DEVELOPER_OPTIONS,
+        searchableTitles: ["Log Keyboard Mismatches"],
+        parent: eH.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
+        predicate: () => H.Z.isDeveloper
+      },
       [eH.s6.DEVELOPER_OPTIONS_GATEWAY_EVENTS_TO_CONSOLE]: {
         section: eY.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Gateway Events To Console"],

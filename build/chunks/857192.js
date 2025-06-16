@@ -85,7 +85,8 @@ let m = (() => {
     onlyShowPreviewAppCollections: !1,
     disableAppCollectionsCache: !1,
     isStreamInfoOverlayEnabled: !1,
-    preventPopoutClose: !1
+    preventPopoutClose: !1,
+    logKeyboardMismatches: !1
   },
   b = h({}, E);
 
@@ -164,6 +165,9 @@ class T extends(r = o.ZP.Store) {
   }
   get preventPopoutClose() {
     return b.preventPopoutClose
+  }
+  get logKeyboardMismatches() {
+    return b.logKeyboardMismatches
   }
   getDebugOptionsHeaderValue() {
     return Object.keys(b).map(e => b[e]), Object.keys(b).filter(e => b[e]).join(",")
