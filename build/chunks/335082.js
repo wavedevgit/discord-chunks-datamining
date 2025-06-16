@@ -192,7 +192,7 @@ let E = function(e) {
         className: p.formTitle,
         variant: "heading-xl/semibold",
         color: "header-primary",
-        children: g.intl.string(g.t["6x5uWV"])
+        children: g.intl.string(g.t.Cq98yM)
       }),
       children: [(0, i.jsx)(_, {}), (0, i.jsx)(s.$i$, {
         className: p.divider

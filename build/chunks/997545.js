@@ -381,6 +381,9 @@ class L extends _.Z {
       noiseCancellation: this.noiseCancellation
     })
   }
+  getNoiseCancellation() {
+    return this.noiseCancellation
+  }
   getVoiceFilterId() {
     return this.voiceFilterId
   }

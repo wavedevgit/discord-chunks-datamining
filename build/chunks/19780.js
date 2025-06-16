@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => Y
+  Z: () => W
 }), n(415506);
 var a, o = n(442837),
   s = n(570140),
@@ -223,15 +223,19 @@ function U(e) {
   return e.state === p.hes.RTC_CONNECTED && (T = !0), !0
 }
 
-function G() {
+function G(e) {
+  null == r || r.setNoiseCancellationEnabled(e.enabled)
+}
+
+function B() {
   return !0
 }
 
-function B(e) {
+function V(e) {
   return e.connection === r
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t,
     context: n,
@@ -240,7 +244,7 @@ function V(e) {
   null == r || r.setSimulcastDebugOverride(t, n, i)
 }
 
-function F(e) {
+function Z(e) {
   let {
     streamId: t,
     width: n,
@@ -248,7 +252,7 @@ function F(e) {
   } = e;
   null == r || r.setVideoSize(t, n, i)
 }
-class Z extends(a = o.ZP.Store) {
+class H extends(a = o.ZP.Store) {
   initialize() {
     this.waitFor(_.ZP), (0, d.r)(this.getRTCConnectionId, this.getMediaSessionId)
   }
@@ -336,20 +340,21 @@ class Z extends(a = o.ZP.Store) {
     return null == t ? void 0 : t.get(e)
   }
 }
-m(Z, "displayName", "RTCConnectionStore");
-let H = new Z(s.Z, __OVERLAY__ ? {} : {
+m(H, "displayName", "RTCConnectionStore");
+let Y = new H(s.Z, __OVERLAY__ ? {} : {
   CONNECTION_OPEN: N,
   CONNECTION_CLOSED: C,
   RTC_CONNECTION_STATE: U,
-  RTC_CONNECTION_PING: G,
-  RTC_CONNECTION_LOSS_RATE: G,
-  RTC_CONNECTION_UPDATE_ID: B,
-  RTC_CONNECTION_SECURE_FRAMES_UPDATE: G,
-  RTC_CONNECTION_CLIENT_CONNECT: G,
-  RTC_CONNECTION_CLIENT_DISCONNECT: G,
-  VIDEO_SIZE_UPDATE: F,
+  RTC_CONNECTION_PING: B,
+  RTC_CONNECTION_LOSS_RATE: B,
+  RTC_CONNECTION_UPDATE_ID: V,
+  RTC_CONNECTION_SECURE_FRAMES_UPDATE: B,
+  RTC_CONNECTION_CLIENT_CONNECT: B,
+  RTC_CONNECTION_CLIENT_DISCONNECT: B,
+  VIDEO_SIZE_UPDATE: Z,
   VOICE_STATE_UPDATES: R,
   VOICE_CHANNEL_SELECT: M,
+  AUDIO_SET_NOISE_CANCELLATION: G,
   VOICE_SERVER_UPDATE: P,
   CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: w,
   REMOTE_SESSION_CONNECT: w,
@@ -359,14 +364,14 @@ let H = new Z(s.Z, __OVERLAY__ ? {} : {
   THREAD_DELETE: k,
   CALL_DELETE: x,
   APP_STATE_UPDATE: j,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: V
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F
 });
 Promise.resolve().then(n.bind(n, 626135)).then(e => {
   let {
     addExtraAnalyticsDecorator: t
   } = e;
   t(e => {
-    e.client_rtc_state = H.getState()
+    e.client_rtc_state = Y.getState()
   })
 });
-let Y = H
+let W = Y
