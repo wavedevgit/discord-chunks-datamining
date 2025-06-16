@@ -32,8 +32,8 @@ function u(e) {
     })
   };
   if ((0, o.Z)(e) && t && null != d) {
-    var _;
-    let e = null == (_ = d.split(";")) ? void 0 : _.join(", ");
+    var f;
+    let e = null == (f = d.split(";")) ? void 0 : f.join(", ");
     return {
       text: c.intl.format(c.t.Vnuxub, {
         name: e

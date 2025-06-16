@@ -13,8 +13,8 @@ var i = n(442837),
   c = n(170579),
   u = n(696515),
   d = n(616030),
-  _ = n(474936),
-  f = n(388032),
+  f = n(474936),
+  _ = n(388032),
   p = n(451316);
 
 function h(e) {
@@ -32,16 +32,16 @@ function h(e) {
     giftRecipient: I,
     isEligibleForTrial: T,
     enablePremiumRebrandDesign: S
-  } = e, A = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), N = g ? _.nL.WINTER : _.nL.DEFAULT, C = () => {
+  } = e, A = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), N = g ? f.nL.WINTER : f.nL.DEFAULT, C = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
-        return m === _.p9.TIER_0 ? f.intl.string(f.t.rk4Uu7) : f.intl.string(f.t["7YWj6+"]);
+        return m === f.p9.TIER_0 ? _.intl.string(_.t.rk4Uu7) : _.intl.string(_.t["7YWj6+"]);
       case s.h8.ADD_PAYMENT_STEPS:
-        return f.intl.string(f.t.vHqbJC);
+        return _.intl.string(_.t.vHqbJC);
       case s.h8.REVIEW:
-        return f.intl.string(f.t.wKaVLC);
+        return _.intl.string(_.t.wKaVLC);
       default:
-        return f.intl.string(f.t["7YWj6+"])
+        return _.intl.string(_.t["7YWj6+"])
     }
   };
   return v && (0, l.pO)(I) && t !== s.h8.CONFIRM ? (0, r.jsxs)(a.xBx, {
@@ -70,12 +70,12 @@ function h(e) {
       hideCloseButton: b,
       shouldShowPrice: !0,
       upgradeToPremiumType: m,
-      renderAnimation: () => m === _.p9.TIER_0 ? (0, r.jsx)(d.zC, {
+      renderAnimation: () => m === f.p9.TIER_0 ? (0, r.jsx)(d.zC, {
         className: p.headerAnimation,
         currentStep: t,
         purchaseState: h,
         pause: A
-      }) : m === _.p9.TIER_1 ? (0, r.jsx)(d.tK, {
+      }) : m === f.p9.TIER_1 ? (0, r.jsx)(d.tK, {
         className: p.headerAnimation,
         currentStep: t,
         purchaseState: h,

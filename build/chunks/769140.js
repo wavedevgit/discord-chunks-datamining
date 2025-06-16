@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(872810),
   u = n(110924),
   d = n(833664),
-  _ = n(579630),
-  f = n(100527),
+  f = n(579630),
+  _ = n(100527),
   p = n(906732),
   h = n(194082),
   m = n(318374),
@@ -36,8 +36,8 @@ var i = n(120356),
   D = n(670451),
   L = n(228168),
   x = n(981631),
-  M = n(388032),
-  k = n(227832),
+  k = n(388032),
+  M = n(227832),
   j = n(162509),
   U = n(924482),
   G = n(774797);
@@ -57,9 +57,9 @@ function B(e) {
       user: t
     } = e;
     return t
-  }) : []), K = (0, o.e7)([v.Z], () => v.Z.findActivity(t.id, e => (0, d.Z)(e) && !(0, _.Z)(e))), {
+  }) : []), K = (0, o.e7)([v.Z], () => v.Z.findActivity(t.id, e => (0, d.Z)(e) && !(0, f.Z)(e))), {
     analyticsLocations: z
-  } = (0, p.ZP)(f.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), q = (0, T.Z)({
+  } = (0, p.ZP)(_.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), q = (0, T.Z)({
     display: "live",
     voiceChannelId: null == Y ? void 0 : Y.id,
     user: t,
@@ -98,7 +98,7 @@ function B(e) {
             children: (0, E.P9)(ee)
           }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
-            children: et ? M.intl.string(M.t.uQZTBQ) : M.intl.string(M.t.pgUTZG)
+            children: et ? k.intl.string(k.t.uQZTBQ) : k.intl.string(k.t.pgUTZG)
           })]
         })]
       }) : (0, r.jsxs)(s.P3F, {
@@ -125,7 +125,7 @@ function B(e) {
       })
     },
     ea = () => F !== L.lY.MODAL && F !== L.lY.MODAL_V2 ? null : (0, r.jsxs)("div", {
-      className: k.details,
+      className: M.details,
       children: [(0, r.jsx)(R.Z, {
         channel: Y,
         guild: H,
@@ -155,16 +155,16 @@ function B(e) {
       onClose: V
     }),
     es = () => t.id === n.id ? null : (0, r.jsx)("div", {
-      className: k.actions,
+      className: M.actions,
       children: (0, r.jsx)(w.Z, {
         channel: Y,
         onAction: q,
         onClose: V
       })
     }),
-    el = null != K ? M.intl.formatToPlainString(M.t["4CQq9f"], {
+    el = null != K ? k.intl.formatToPlainString(k.t["4CQq9f"], {
       name: K.name
-    }) : M.intl.string(M.t["Jpkr/v"]);
+    }) : k.intl.string(k.t["Jpkr/v"]);
   return (0, r.jsx)(p.Gt, {
     value: z,
     children: (0, r.jsxs)(N.Z, {
@@ -184,9 +184,9 @@ function B(e) {
           onClose: V
         })
       }), (0, r.jsxs)("div", {
-        className: k.body,
+        className: M.body,
         children: [(0, r.jsxs)("div", {
-          className: k.content,
+          className: M.content,
           children: [ei(), ea(), F === L.lY.MODAL && es()]
         }), eo()]
       }), F !== L.lY.MODAL && F !== L.lY.MODAL_V2 && es()]

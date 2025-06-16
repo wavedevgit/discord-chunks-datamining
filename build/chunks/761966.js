@@ -44,13 +44,13 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -74,8 +74,8 @@ function h(e) {
     className: n,
     size: i = o.zxk.Sizes.MEDIUM,
     onlyShineOnHover: c = !1
-  } = e, d = f(e, ["children", "className", "size", "onlyShineOnHover"]);
-  return (0, r.jsx)(o.gtL, _(u({}, d), {
+  } = e, d = _(e, ["children", "className", "size", "onlyShineOnHover"]);
+  return (0, r.jsx)(o.gtL, f(u({}, d), {
     color: o.zxk.Colors.CUSTOM,
     size: i,
     className: a()(l.button, n),

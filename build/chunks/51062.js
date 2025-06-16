@@ -12,8 +12,8 @@ var r = n(73800),
   c = n(271383),
   u = n(496675),
   d = n(246946),
-  _ = n(594174),
-  f = n(106824),
+  f = n(594174),
+  _ = n(106824),
   p = n(691841),
   h = n(981631),
   m = n(185923);
@@ -62,9 +62,9 @@ function O(e, t, n) {
   let {
     channel: A,
     type: N
-  } = e, [C, R] = r.useState(() => (0, f.P)()), P = (0, i.Z)(), w = (0, a.e7)([c.ZP, _.default], () => {
+  } = e, [C, R] = r.useState(() => (0, _.P)()), P = (0, i.Z)(), w = (0, a.e7)([c.ZP, f.default], () => {
     var e, t;
-    let n = _.default.getCurrentUser();
+    let n = f.default.getCurrentUser();
     return null != (t = null != A.guild_id && null != n ? null == (e = c.ZP.getMember(A.guild_id, n.id)) ? void 0 : e.isPending : null) && t
   }), {
     canMentionEveryone: D,
@@ -74,19 +74,19 @@ function O(e, t, n) {
     hidePersonalInformation: d.Z.hidePersonalInformation
   }), [A, N, w]), {
     activeCommand: x,
-    activeCommandOption: M
+    activeCommandOption: k
   } = (0, a.cj)([s.Z], () => ({
     activeCommand: s.Z.getActiveCommand(A.id),
     activeCommandOption: s.Z.getActiveOption(A.id)
-  })), k = (0, p.Z)({
+  })), M = (0, p.Z)({
     navId: "channel-autocomplete",
     scrollerRef: n,
     state: C,
     onFocus: e => G.setSelectedIndex(e)
   }), j = null == (g = e.editorRef.current) ? void 0 : g.getCurrentWord(), U = y(E({}, e), {
-    navigator: k,
+    navigator: M,
     activeCommand: x,
-    activeCommandOption: M,
+    activeCommandOption: k,
     canMentionUsers: null != (I = null == (b = N.users) ? void 0 : b.allowMentioning) && I,
     canMentionEveryone: D,
     hidePersonalInformation: L,
@@ -94,10 +94,10 @@ function O(e, t, n) {
     emojiIntention: N === l.Ie.RULES_INPUT ? m.Hz.COMMUNITY_CONTENT : m.Hz.CHAT,
     currentWord: null != (T = null == j ? void 0 : j.word) ? T : "",
     currentWordIsAtStart: (null == j ? void 0 : j.isAtStart) === !0,
-    optionText: null != M ? (0, o.KF)({
-      [M.name]: null != (S = null == (O = e.editorRef.current) ? void 0 : O.getCurrentCommandOptionValue()) ? S : []
-    }, M.name) : ""
-  }), [G] = r.useState(() => new f.Z(U));
+    optionText: null != k ? (0, o.KF)({
+      [k.name]: null != (S = null == (O = e.editorRef.current) ? void 0 : O.getCurrentCommandOptionValue()) ? S : []
+    }, k.name) : ""
+  }), [G] = r.useState(() => new _.Z(U));
   return r.useEffect(() => {
     G.updateProps(U)
   }), r.useImperativeHandle(t, () => G, [G]), r.useEffect(() => {
@@ -115,5 +115,5 @@ function O(e, t, n) {
         for (let n of t) n.removeChangeListener(e)
       }
     }
-  }, [G, null == (v = C.query) ? void 0 : v.typeInfo]), [C, G, k]
+  }, [G, null == (v = C.query) ? void 0 : v.typeInfo]), [C, G, M]
 }

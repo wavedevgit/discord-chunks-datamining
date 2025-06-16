@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(539854);
 var r = n(979554),
   i = n(778787),
@@ -63,8 +63,8 @@ function d(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => e === r.Z.VARIANTS_GROUP || e === r.Z.EXTERNAL_SKU;
-class f extends a.Z {
+let f = e => e === r.Z.VARIANTS_GROUP || e === r.Z.EXTERNAL_SKU;
+class _ extends a.Z {
   static fromServer(e) {
     var {
       products: t,
@@ -80,10 +80,10 @@ class f extends a.Z {
       hero_logo: g,
       banner_text_color: E
     } = e, b = u(e, ["products", "logo", "hero_ranking", "pdp_bg", "mobile_bg", "success_modal_bg", "mobile_banner", "hero_banner", "hero_banner_asset", "featured_block", "hero_logo", "banner_text_color"]);
-    return new f(c(s({}, super.fromServer(b)), {
+    return new _(c(s({}, super.fromServer(b)), {
       products: t.reduce((e, t) => {
         let n = i.Z.fromServer(t);
-        return (_(n.type) || 0 !== n.items.length) && e.push(n), e
+        return (f(n.type) || 0 !== n.items.length) && e.push(n), e
       }, []),
       logo: n,
       heroRanking: r,

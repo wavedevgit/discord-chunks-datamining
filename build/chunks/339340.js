@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(481060),
   u = n(787014),
   d = n(904245),
-  _ = n(12498),
-  f = n(541716),
+  f = n(12498),
+  _ = n(541716),
   p = n(752305),
   h = n(893718),
   m = n(600164),
@@ -35,7 +35,7 @@ function N(e) {
     transitionState: n,
     sourceAnalyticsLocations: a,
     onClose: N
-  } = e, C = (0, s.e7)([_.Z], () => _.Z.getChannelStatus(t)), R = (0, s.e7)([b.Z], () => b.Z.getMediaSessionId()), [P, w] = i.useState(null != C ? C : ""), [D, L] = i.useState(!1), [x, M] = i.useState(null), k = (0, s.e7)([y.default], () => y.default.getCurrentUser()), j = P.length > A, U = (0, g.Q3)("VoiceChannelStatusModal");
+  } = e, C = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), R = (0, s.e7)([b.Z], () => b.Z.getMediaSessionId()), [P, w] = i.useState(null != C ? C : ""), [D, L] = i.useState(!1), [x, k] = i.useState(null), M = (0, s.e7)([y.default], () => y.default.getCurrentUser()), j = P.length > A, U = (0, g.Q3)("VoiceChannelStatusModal");
   i.useEffect(() => {
     O.default.track(v.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -44,7 +44,7 @@ function N(e) {
     })
   }, [t.guild_id, a]);
   let G = e => {
-      M(new l.Hx(e, e.status).getAnyErrorMessage())
+      k(new l.Hx(e, e.status).getAnyErrorMessage())
     },
     B = e => {
       let {
@@ -53,8 +53,8 @@ function N(e) {
       if (null != n && n.length > 0) {
         let {
           errorMessage: e
-        } = d.Z.validateMessage(n, k, t.id);
-        return M(e), L(!1), {
+        } = d.Z.validateMessage(n, M, t.id);
+        return k(e), L(!1), {
           hasErrors: !0
         }
       }
@@ -63,7 +63,7 @@ function N(e) {
       }
     },
     V = async e => {
-      P === C && N(), null == e || e.preventDefault(), M(null), L(!0);
+      P === C && N(), null == e || e.preventDefault(), k(null), L(!0);
       let n = P.length,
         r = P.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = E.ZP.parse(void 0, P),
@@ -134,7 +134,7 @@ function N(e) {
             channel: t,
             onChange: H,
             onSubmit: Y,
-            type: f.Ie.VOICE_CHANNEL_STATUS,
+            type: _.Ie.VOICE_CHANNEL_STATUS,
             canMentionRoles: !1,
             canMentionChannels: !1,
             allowNewLines: !1,

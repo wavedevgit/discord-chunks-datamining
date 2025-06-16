@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  T: () => _,
-  z: () => f
+  T: () => f,
+  z: () => _
 });
 var r = n(493683),
   i = n(529103),
@@ -23,7 +23,7 @@ function d(e, t, n) {
   })
 }
 
-function _(e) {
+function f(e) {
   d(e, u.intl.string(u.t["t3+Af3"]), () => {
     {
       let {
@@ -37,7 +37,7 @@ function _(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   d(e, u.intl.string(u.t.MYr3KS), () => {
     r.Z.openPrivateChannel({
       recipientIds: e.id

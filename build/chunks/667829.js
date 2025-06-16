@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(218887),
   u = n.n(c),
   d = n(729594),
-  _ = n(873546),
-  f = n(430742),
+  f = n(873546),
+  _ = n(430742),
   p = n(166459),
   h = n(911969),
   m = n(476326),
@@ -71,10 +71,10 @@ function x(e, t) {
   }), e
 }
 new E.Z("ChannelEditor.tsx");
-let M = function() {
+let k = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
-  k = {
+  M = {
     12: P.fontSize12Padding,
     14: P.fontSize14Padding,
     15: P.fontSize15Padding,
@@ -141,7 +141,7 @@ class j extends i.Component {
     this.setState({
       focused: !0,
       submitting: !1
-    }), f.Z.saveDraft(e.id, "", t.drafts.type)
+    }), _.Z.saveDraft(e.id, "", t.drafts.type)
   }
   getCurrentWord() {
     var e;
@@ -203,7 +203,7 @@ class j extends i.Component {
       richValue: c,
       disabled: u,
       onChange: d,
-      onKeyDown: f,
+      onKeyDown: _,
       onResize: p,
       onSubmit: h,
       channel: m,
@@ -216,7 +216,7 @@ class j extends i.Component {
       className: R,
       id: w,
       required: L,
-      maxCharacterCount: M,
+      maxCharacterCount: k,
       allowNewLines: j,
       "aria-describedby": U,
       "aria-labelledby": G,
@@ -248,9 +248,9 @@ class j extends i.Component {
       allowNewLines: j,
       onChange: d,
       onResize: p,
-      onKeyDown: f,
+      onKeyDown: _,
       onSubmit: h,
-      textAreaPaddingClassName: o()(k[E], {
+      textAreaPaddingClassName: o()(M[E], {
         [P.textAreaWithoutAttachmentButton]: g !== v.Ie.NORMAL && g !== v.Ie.OVERLAY && g !== v.Ie.THREAD_CREATION && g !== v.Ie.SIDEBAR,
         [P.textAreaForPostCreation]: g === v.Ie.CREATE_FORUM_POST,
         [P.textAreaCustomGift]: g === v.Ie.CUSTOM_GIFT,
@@ -259,13 +259,13 @@ class j extends i.Component {
       }),
       spellcheckEnabled: O,
       useNewSlashCommands: T,
-      disableAutoFocus: _.tq || null != (n = g.disableAutoFocus) && n,
+      disableAutoFocus: f.tq || null != (n = g.disableAutoFocus) && n,
       disableEnterToSubmit: null != (i = null == (e = g.submit) ? void 0 : e.disableEnterToSubmit) && i,
       "aria-controls": null != (a = F.id) ? a : void 0,
       "aria-haspopup": "listbox",
       "aria-expanded": null !== F.id || void 0,
       "aria-activedescendant": null != (s = F.activeDescendant) ? s : void 0,
-      "aria-invalid": l.length > M,
+      "aria-invalid": l.length > k,
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
@@ -331,7 +331,7 @@ class j extends i.Component {
       var e, t;
       return null == (e = (t = this.props).onHideAutocomplete) ? void 0 : e.call(t)
     }), w(this, "handleSaveCurrentText", e => {
-      f.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
+      _.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
     }), w(this, "handleClearText", () => {
       var e, t;
       null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, I.JM)(""))
@@ -397,7 +397,7 @@ class j extends i.Component {
         {
           files: c
         } = U(e.clipboardData, o.uploadLongMessages ? l : null);
-      return M("onPaste", [...e.clipboardData.items].map(e => {
+      return k("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type

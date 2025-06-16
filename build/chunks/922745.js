@@ -14,8 +14,8 @@ var i = n(120356),
   c = n(481060),
   u = n(600164),
   d = n(528144),
-  _ = n(312956),
-  f = n(501967),
+  f = n(312956),
+  _ = n(501967),
   p = n(19780),
   h = n(540028),
   m = n(507675),
@@ -70,12 +70,12 @@ function T(e) {
     onHide: i,
     idle: a,
     preventIdleComponent: l
-  } = e, u = (0, o.e7)([p.Z], () => p.Z.getChannelId()), f = null != u ? (0, r.jsx)(h.Z, {
+  } = e, u = (0, o.e7)([p.Z], () => p.Z.getChannelId()), _ = null != u ? (0, r.jsx)(h.Z, {
     voiceChannelId: u,
     idle: a
   }) : null, {
     enabled: m
-  } = _.Z.useExperiment({
+  } = f.Z.useExperiment({
     location: "PictureInPicturePlayer"
   });
   return (0, r.jsxs)(l, {
@@ -99,7 +99,7 @@ function T(e) {
     }), m && null != i ? (0, r.jsx)(g.Z, {
       onClick: i,
       label: E.intl.string(E.t.BEuDEh)
-    }) : null, f]
+    }) : null, _]
   })
 }
 
@@ -112,7 +112,7 @@ function S(e) {
     backgroundKey: s,
     onActive: c,
     onForceIdle: d,
-    renderBottomLeftControls: _,
+    renderBottomLeftControls: f,
     renderBottomRightControls: p,
     screenMessage: h,
     hideControls: g = !1,
@@ -129,7 +129,7 @@ function S(e) {
     }, E),
     onDoubleClick: i,
     children: [(0, r.jsx)(l.W, {
-      children: (0, r.jsx)(f.B, {
+      children: (0, r.jsx)(_.B, {
         className: y,
         children: t
       }, s)
@@ -152,7 +152,7 @@ function S(e) {
           basis: "50%",
           align: u.Z.Align.CENTER,
           className: b.bottomLeftControls,
-          children: null == _ ? void 0 : _()
+          children: null == f ? void 0 : f()
         }), (0, r.jsx)(u.Z, {
           grow: 0,
           shrink: 1,

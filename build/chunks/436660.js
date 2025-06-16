@@ -81,15 +81,15 @@ let c = function(e, t) {
       if (null == e.selection) return;
       n = e.selection
     }
-    let [d, _] = a.M8.isRange(n) ? a.M8.edges(n) : a.bN.edges(e, n);
+    let [d, f] = a.M8.isRange(n) ? a.M8.edges(n) : a.bN.edges(e, n);
     if (null != i || null != o) {
-      var f, p, h;
+      var _, p, h;
       if (s) {
-        let t = null != (f = a.bN.before(e, d, {
+        let t = null != (_ = a.bN.before(e, d, {
           distance: i,
           unit: o
-        })) ? f : a.bN.start(e, []);
-        if ("character" === o && (null != i ? i : 1) === 1 && a.C0.equals(d.path, _.path)) {
+        })) ? _ : a.bN.start(e, []);
+        if ("character" === o && (null != i ? i : 1) === 1 && a.C0.equals(d.path, f.path)) {
           let n = a.bN.leaf(e, d.path),
             r = null != n ? n[0].text : "";
           r.length > 0 && null != r[r.length - 1].match(/[\u0E00-\u0E7F]/) && (t = null != (p = a.bN.before(e, d, {
@@ -98,18 +98,18 @@ let c = function(e, t) {
           })) ? p : a.bN.start(e, []))
         }
         d = t
-      } else _ = null != (h = a.bN.after(e, _, {
+      } else f = null != (h = a.bN.after(e, f, {
         distance: i,
         unit: o
       })) ? h : a.bN.end(e, [])
     }
     if (null != c) {
       let [e, t] = a.M8.edges(c);
-      a.Jz.isBefore(d, e) && (d = e), a.Jz.isAfter(_, t) && (_ = t)
-    }!a.Jz.equals(d, _) && (r.YR.delete(e, {
+      a.Jz.isBefore(d, e) && (d = e), a.Jz.isAfter(f, t) && (f = t)
+    }!a.Jz.equals(d, f) && (r.YR.delete(e, {
       at: {
         anchor: d,
-        focus: _
+        focus: f
       },
       hanging: !0,
       voids: u

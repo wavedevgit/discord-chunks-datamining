@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => k
 }), n(388685), n(35282), n(415506);
 var r = n(664751),
   i = n(990547),
@@ -12,8 +12,8 @@ var r = n(664751),
   c = n(638880),
   u = n(812206),
   d = n(439849),
-  _ = n(669764),
-  f = n(706454),
+  f = n(669764),
+  _ = n(706454),
   p = n(757266),
   h = n(77498),
   m = n(283595),
@@ -128,12 +128,12 @@ async function x(e) {
     if (null == e) throw Error("Missing dispatch game when launching");
     let i = m.Z.getLibraryApplication(t, n);
     if (null == i) throw Error("Missing library application when launching");
-    d = L(t).then(t => y.Z.launchDispatchApplication(e, t, f.default.locale, i.getBranchName(), r))
+    d = L(t).then(t => y.Z.launchDispatchApplication(e, t, _.default.locale, i.getBranchName(), r))
   } else {
     let e = u.Z.getApplication(t);
     d = null != e ? y.Z.launch(e) : y.Z.launchGame(t)
   }
-  let _ = Error("game not found");
+  let f = Error("game not found");
   return null != d ? (l.Z.dispatch({
     type: "LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE",
     applicationId: t,
@@ -151,15 +151,15 @@ async function x(e) {
     S.Z.show(A.kVF.LAUNCH_GAME_FAILURE, C.intl.string(C.t.YZEBdn)), l.Z.dispatch({
       type: "GAME_LAUNCH_FAIL",
       applicationId: t,
-      error: _
+      error: f
     })
   })) : (l.Z.dispatch({
     type: "GAME_LAUNCH_FAIL",
     applicationId: t,
-    error: _
-  }), Promise.reject(_))
+    error: f
+  }), Promise.reject(f))
 }
-let M = {
+let k = {
   addGame(e, t) {
     l.Z.dispatch({
       type: "RUNNING_GAME_ADD_OVERRIDE",
@@ -214,7 +214,7 @@ let M = {
       forceFetch: t
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
       forceFetch: !1
-    }, n = t ? e : e.filter(_.Z.canFetch);
+    }, n = t ? e : e.filter(f.Z.canFetch);
     if (0 === n.length) return;
     l.Z.dispatch({
       type: "DETECTABLE_GAME_SUPPLEMENTAL_FETCH",

@@ -13,8 +13,8 @@ var i = n(481060),
   c = n(626135),
   u = n(74538),
   d = n(981631),
-  _ = n(388032);
-let f = "guild-boost-purchase-modal";
+  f = n(388032);
+let _ = "guild-boost-purchase-modal";
 async function p(e) {
   let {
     analyticsLocations: t,
@@ -33,10 +33,10 @@ async function p(e) {
   } = e, A = I ? i.u1M : i.z1l, N = l.ZP.getPremiumTypeSubscription();
   if (null != N && N.isPurchasedExternally && null != N.paymentGateway) {
     null != g && g(), a.Z.show({
-      title: _.intl.formatToPlainString(_.t.rTk9v7, {
+      title: f.intl.formatToPlainString(f.t.rTk9v7, {
         paymentGatewayName: d.Vzj[N.paymentGateway]
       }),
-      body: _.intl.format(_.t.NY03WF, {
+      body: f.intl.format(f.t.NY03WF, {
         paymentGatewayName: d.Vzj[N.paymentGateway],
         subscriptionManagementLink: (0, u.JE)(N.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
       })
@@ -78,10 +78,10 @@ async function p(e) {
       })
     }
   }, {
-    modalKey: f,
+    modalKey: _,
     onCloseCallback: C,
     onCloseRequest: () => {
-      (0, i.Mr3)(f), null == E || E(!1)
+      (0, i.Mr3)(_), null == E || E(!1)
     },
     contextKey: A
   })

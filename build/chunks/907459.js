@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(230711),
   u = n(351773),
   d = n(607070),
-  _ = n(100527),
-  f = n(906732),
+  f = n(100527),
+  _ = n(906732),
   p = n(550385),
   h = n(639119),
   m = n(767714),
@@ -97,7 +97,7 @@ function D(e) {
     markAsDismissed: n
   } = e, {
     analyticsLocations: a
-  } = (0, f.ZP)(_.Z.APP_ICON_EDITOR), c = (0, s.e7)([E.default], () => E.default.getCurrentUser()), {
+  } = (0, _.ZP)(f.Z.APP_ICON_EDITOR), c = (0, s.e7)([E.default], () => E.default.getCurrentUser()), {
     isUpsellPreview: h,
     shouldEditorAnimate: m
   } = (0, s.cj)([v.Z, d.Z], () => ({
@@ -113,7 +113,7 @@ function D(e) {
   let y = (0, u.Z)(null, h ? O.O : T.dG4);
   return (i.useEffect(() => {
     if (h && !g) return O.O
-  }, [h, g]), null == c) ? null : (0, r.jsx)(f.Gt, {
+  }, [h, g]), null == c) ? null : (0, r.jsx)(_.Gt, {
     value: a,
     children: (0, r.jsx)("div", {
       ref: y,

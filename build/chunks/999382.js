@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, _;
+let r, i, a, o, s, l, c, u, d, f;
 n.d(t, {
   Z: () => e9
 }), n(388685), n(997841);
-var f, p = n(392711),
+var _, p = n(392711),
   h = n.n(p),
   m = n(913527),
   g = n.n(m),
@@ -25,8 +25,8 @@ var f, p = n(392711),
   D = n(330010),
   L = n(621319),
   x = n(978946),
-  M = n(981631),
-  k = n(128449),
+  k = n(981631),
+  M = n(128449),
   j = n(135899);
 
 function U(e, t, n) {
@@ -72,7 +72,7 @@ let F = !0,
   H = ["brandColorPrimary", "description", "icon", "name", "traits", "visibility", "gameApplicationIds", "customBanner", "tag", "badge", "badgeColorPrimary", "badgeColorSecondary"],
   Y = new Set(["icon", "splash", "banner", "discoverySplash", "homeHeader"]),
   W = !1,
-  K = M.QZA.CLOSED,
+  K = k.QZA.CLOSED,
   z = {},
   q = null,
   X = !1,
@@ -82,10 +82,10 @@ let F = !0,
   ee = null,
   et = null,
   en = 0,
-  er = M.BpS.NONE,
+  er = k.BpS.NONE,
   ei = null,
   ea = {
-    primaryCategoryId: k.o3,
+    primaryCategoryId: M.o3,
     secondaryCategoryIds: [],
     keywords: [],
     emojiDiscoverabilityEnabled: F,
@@ -102,8 +102,8 @@ let F = !0,
   ec = null,
   eu = 0,
   ed = null,
-  e_ = null,
-  ef = null;
+  ef = null,
+  e_ = null;
 
 function ep(e) {
   if (null == s || null == o || o.id !== e) return !1;
@@ -122,17 +122,17 @@ function em(e) {
     section: i,
     subsection: a,
     location: d
-  } = e, f = C.Z.getGuild(n);
-  if (null == f) return eg();
+  } = e, _ = C.Z.getGuild(n);
+  if (null == _) return eg();
   let p = I.Z.getProfile(n);
-  o = s = f, l = c = p, J = Q, ee = $, K = M.QZA.OPEN, z = {}, q = null, u = P.default.castGuildIdAsEveryoneGuildRoleId(n), er = s.mfaLevel, el = es, _ = null, ei = d, eb({
+  o = s = _, l = c = p, J = Q, ee = $, K = k.QZA.OPEN, z = {}, q = null, u = P.default.castGuildIdAsEveryoneGuildRoleId(n), er = s.mfaLevel, el = es, f = null, ei = d, eb({
     section: null != (t = null != i ? i : r) ? t : (0, x.r)(),
     subsection: null != a ? a : null
   })
 }
 
 function eg() {
-  W = !1, K = M.QZA.CLOSED, o = s = null, X = !1, J = !1, ee = null, et = null, en = 0, ec = null, e_ = null, ef = null, r = null, i = null, a = null, er = M.BpS.NONE, d = void 0
+  W = !1, K = k.QZA.CLOSED, o = s = null, X = !1, J = !1, ee = null, et = null, en = 0, ec = null, ef = null, e_ = null, r = null, i = null, a = null, er = k.BpS.NONE, d = void 0
 }
 
 function eE(e) {
@@ -145,7 +145,7 @@ function eE(e) {
 function eb(e) {
   if (null == s) return !1;
   let t = r;
-  if (r = e.section, i = e.subsection, r === M.pNK.BANS) {
+  if (r = e.section, i = e.subsection, r === k.pNK.BANS) {
     let {
       enabled: e
     } = w.T.getCurrentConfig({
@@ -153,8 +153,8 @@ function eb(e) {
       location: "7f0c91_1"
     });
     e || v.Z.fetchGuildBans(s.id)
-  } else if (r === M.pNK.INSTANT_INVITES || r === M.pNK.INVITES) b.tn.get({
-    url: M.ANM.GUILD_INSTANT_INVITES(s.id),
+  } else if (r === k.pNK.INSTANT_INVITES || r === k.pNK.INVITES) b.tn.get({
+    url: k.ANM.GUILD_INSTANT_INVITES(s.id),
     oldFormErrors: !0,
     rejectWithError: !0
   }).then(e => {
@@ -163,11 +163,11 @@ function eb(e) {
       invites: e.body
     })
   });
-  else if (r === M.pNK.INTEGRATIONS || r === M.pNK.ROLES) {
+  else if (r === k.pNK.INTEGRATIONS || r === k.pNK.ROLES) {
     if (u = null, t !== e.section) return eK(e)
-  } else r === M.pNK.MEMBERS ? u = s.getEveryoneRoleId() : r === M.pNK.VANITY_URL ? (0, L.U5)(s.id) : r === M.pNK.SAFETY && O.Z.dispatch({
+  } else r === k.pNK.MEMBERS ? u = s.getEveryoneRoleId() : r === k.pNK.VANITY_URL ? (0, L.U5)(s.id) : r === k.pNK.SAFETY && O.Z.dispatch({
     type: "GUILD_SETTINGS_SAFETY_SET_SUBSECTION",
-    subsection: null == i ? M.KsC.SAFETY_OVERVIEW : i
+    subsection: null == i ? k.KsC.SAFETY_OVERVIEW : i
   })
 }
 
@@ -185,16 +185,16 @@ function eO(e) {
 }
 
 function ev() {
-  K = M.QZA.SUBMITTING, z = {}
+  K = k.QZA.SUBMITTING, z = {}
 }
 
 function eI() {
-  K = M.QZA.OPEN
+  K = k.QZA.OPEN
 }
 
 function eT(e) {
   var t;
-  K = M.QZA.OPEN, r = null != r ? r : (0, x.r)(), i = null, z = null != (t = e.errors) ? t : {}
+  K = k.QZA.OPEN, r = null != r ? r : (0, x.r)(), i = null, z = null != (t = e.errors) ? t : {}
 }
 
 function eS() {
@@ -244,15 +244,15 @@ function eC(e) {
 }
 
 function eR(e) {
-  e_ = e.invites.reduce((e, t) => (e[t.code] = eC(t), e), {})
+  ef = e.invites.reduce((e, t) => (e[t.code] = eC(t), e), {})
 }
 
 function eP(e) {
-  e_ = G({}, e_), delete e_[e.code]
+  ef = G({}, ef), delete ef[e.code]
 }
 
 function ew(e) {
-  e_ = V(G({}, e_), {
+  ef = V(G({}, ef), {
     [e.invite.code]: eC(e.invite)
   })
 }
@@ -281,7 +281,7 @@ function ex(e) {
   }), eu++
 }
 
-function eM(e) {
+function ek(e) {
   let {
     user: t,
     guildId: n
@@ -290,12 +290,12 @@ function eM(e) {
   ec.delete(t.id), eu++
 }
 
-function ek(e) {
+function eM(e) {
   if (null == s || s.id !== e.guild.id) return !1;
   {
     let e = C.Z.getGuild(s.id);
     if (null == e) return !1;
-    if (l = I.Z.getProfile(s.id), r !== M.pNK.PROFILE && r !== M.pNK.TAG && (c = l), r === M.pNK.PROFILE) {
+    if (l = I.Z.getProfile(s.id), r !== k.pNK.PROFILE && r !== k.pNK.TAG && (c = l), r === k.pNK.PROFILE) {
       o = e, s = e;
       return
     }
@@ -372,31 +372,31 @@ function eY(e) {
 }
 
 function eW(e) {
-  ef = e.integrations
+  e_ = e.integrations
 }
 
 function eK(e) {
-  if (null == s || K !== M.QZA.OPEN || "GUILD_INTEGRATIONS_UPDATE" === e.type && e.guildId !== s.id) return !1;
+  if (null == s || K !== k.QZA.OPEN || "GUILD_INTEGRATIONS_UPDATE" === e.type && e.guildId !== s.id) return !1;
   (0, D.i)(s.id)
 }
 
 function ez(e) {
   var t, n, r, i, a, o, l, c, u, d;
   let {
-    guildId: _,
-    metadata: f
+    guildId: f,
+    metadata: _
   } = e;
-  null != s && _ === s.id && (!1 === eo && (eo = !0), el = es = {
-    primaryCategoryId: null != (t = f.primaryCategoryId) ? t : k.o3,
-    secondaryCategoryIds: null != (n = f.secondaryCategoryIds) ? n : [],
-    keywords: null != (r = f.keywords) ? r : [],
-    emojiDiscoverabilityEnabled: null != (i = f.emojiDiscoverabilityEnabled) ? i : F,
-    partnerActionedTimestamp: null != (a = f.partnerActionedTimestamp) ? a : null,
-    partnerApplicationTimestamp: null != (o = f.partnerApplicationTimestamp) ? o : null,
-    isPublished: null != (l = f.isPublished) && l,
-    reasonsToJoin: null != (c = f.reasonsToJoin) ? c : [],
-    socialLinks: null != (u = f.socialLinks) ? u : [],
-    about: null != (d = f.about) ? d : ""
+  null != s && f === s.id && (!1 === eo && (eo = !0), el = es = {
+    primaryCategoryId: null != (t = _.primaryCategoryId) ? t : M.o3,
+    secondaryCategoryIds: null != (n = _.secondaryCategoryIds) ? n : [],
+    keywords: null != (r = _.keywords) ? r : [],
+    emojiDiscoverabilityEnabled: null != (i = _.emojiDiscoverabilityEnabled) ? i : F,
+    partnerActionedTimestamp: null != (a = _.partnerActionedTimestamp) ? a : null,
+    partnerApplicationTimestamp: null != (o = _.partnerApplicationTimestamp) ? o : null,
+    isPublished: null != (l = _.isPublished) && l,
+    reasonsToJoin: null != (c = _.reasonsToJoin) ? c : [],
+    socialLinks: null != (u = _.socialLinks) ? u : [],
+    about: null != (d = _.about) ? d : ""
   }, z = {})
 }
 
@@ -408,12 +408,12 @@ function eX(e) {
   let {
     slug: t
   } = e;
-  _ = t
+  f = t
 }
 
 function eQ(e) {
   let {} = e;
-  _ = null
+  f = null
 }
 
 function eJ(e) {
@@ -518,7 +518,7 @@ function e8(e) {
   if ((null == c ? void 0 : c.id) == null || !ep(c.id)) return !1;
   t === (null == s ? void 0 : s.id) && (l = c = I.Z.getProfile(t), q = null)
 }
-class e7 extends(f = E.ZP.Store) {
+class e7 extends(_ = E.ZP.Store) {
   initialize() {
     this.waitFor(C.Z, I.Z, R.default)
   }
@@ -562,7 +562,7 @@ class e7 extends(f = E.ZP.Store) {
     }
   }
   isSubmitting() {
-    return K === M.QZA.SUBMITTING
+    return K === k.QZA.SUBMITTING
   }
   isGuildMetadataLoaded() {
     return eo
@@ -581,7 +581,7 @@ class e7 extends(f = E.ZP.Store) {
     return u
   }
   getSlug() {
-    return _
+    return f
   }
   getBans() {
     return [ec, eu]
@@ -589,14 +589,14 @@ class e7 extends(f = E.ZP.Store) {
   getProps() {
     return {
       submitting: this.isSubmitting(),
-      integrations: ef,
+      integrations: e_,
       section: r,
       subsection: i,
       errors: z,
       guild: s,
       bans: ec,
       bansVersion: eu,
-      invites: e_,
+      invites: ef,
       selectedRoleId: u,
       fetchedEmbed: X,
       embedEnabled: J,
@@ -638,11 +638,11 @@ let e9 = new e7(O.Z, __OVERLAY__ ? {} : {
   GUILD_SETTINGS_ROLE_SELECT: eU,
   GUILD_SETTINGS_LOADED_INTEGRATIONS: eW,
   GUILD_BAN_ADD: ex,
-  GUILD_BAN_REMOVE: eM,
+  GUILD_BAN_REMOVE: ek,
   GUILD_ROLE_CREATE: eG,
   GUILD_ROLE_UPDATE: eB,
   GUILD_ROLE_DELETE: eV,
-  GUILD_UPDATE: ek,
+  GUILD_UPDATE: eM,
   GUILD_DELETE: ej,
   GUILD_PROFILE_FETCH_SUCCESS: e3,
   GUILD_PROFILE_UPDATE: e4,

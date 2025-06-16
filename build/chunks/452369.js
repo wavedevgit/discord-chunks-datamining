@@ -16,7 +16,7 @@ function d() {
   l = {}, c = {}
 }
 
-function _() {
+function f() {
   d();
   let e = o.Z.getAllVoiceStates(),
     t = !1;
@@ -25,7 +25,7 @@ function _() {
   return t
 }
 
-function f(e) {
+function _(e) {
   let {
     relationship: t
   } = e, n = o.Z.getVoiceStateForUser(t.id);
@@ -71,9 +71,9 @@ class m extends r.ZP.Store {
 let g = new m(i.Z, {
   CONNECTION_OPEN: d,
   LOGOUT: d,
-  OVERLAY_INITIALIZE: _,
+  OVERLAY_INITIALIZE: f,
   VOICE_STATE_UPDATES: p,
-  RELATIONSHIP_ADD: f,
-  RELATIONSHIP_REMOVE: f,
-  RELATIONSHIP_UPDATE: f
+  RELATIONSHIP_ADD: _,
+  RELATIONSHIP_REMOVE: _,
+  RELATIONSHIP_UPDATE: _
 })

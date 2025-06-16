@@ -3,7 +3,7 @@
 n.d(t, {
   Gi: () => E,
   P0: () => m,
-  UD: () => f,
+  UD: () => _,
   WF: () => g,
   gT: () => h,
   iZ: () => p,
@@ -32,11 +32,11 @@ function d(e) {
   return r && null != i
 }
 
-function _(e) {
+function f(e) {
   return m(l.Z.getChannel(e))
 }
 
-function f(e) {
+function _(e) {
   return p(l.Z.getChannel(e))
 }
 
@@ -53,7 +53,7 @@ function m(e) {
 }
 
 function g(e) {
-  if (null == e || !(0, s.U)() || !_(e)) return !0;
+  if (null == e || !(0, s.U)() || !f(e)) return !0;
   let {
     loaded: t,
     firstMessage: n

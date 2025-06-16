@@ -30,9 +30,9 @@ function l(e, t) {
 let c = "com.discord",
   u = 0x3ac14d3a,
   d = "com.hammerandchisel.discord",
-  _ = "https://discordapp.page.link";
+  f = "https://discordapp.page.link";
 
-function f() {
+function _() {
   var e, t;
   let n = ["WebView", "(iPhone|iPod|iPad)(?!.*Safari/)"],
     r = RegExp("(".concat(n.join("|"), ")"), "ig"),
@@ -46,7 +46,7 @@ function p() {
 }
 
 function h(e) {
-  if (!e.startsWith(_)) return null;
+  if (!e.startsWith(f)) return null;
   try {
     var t;
     let n = new URL(e).searchParams,
@@ -76,9 +76,9 @@ function m(e, t) {
   }
   let p = encodeURIComponent(l.toString()),
     h = encodeURIComponent((0, o.Z)()),
-    m = +!!f(),
+    m = +!!_(),
     g = null != r ? encodeURIComponent(r) : null,
     E = null != i ? encodeURIComponent(i) : null,
-    b = "".concat(_, "/?link=").concat(p, "&utm_source=").concat(n, "&apn=").concat(c, "&isi=").concat(u, "&ibi=").concat(d, "&sd=").concat(h, "&efr=").concat(m);
+    b = "".concat(f, "/?link=").concat(p, "&utm_source=").concat(n, "&apn=").concat(c, "&isi=").concat(u, "&ibi=").concat(d, "&sd=").concat(h, "&efr=").concat(m);
   return null != g && (b += "&afl=".concat(g)), null != E && (b += "&ifl=".concat(E)), b
 }

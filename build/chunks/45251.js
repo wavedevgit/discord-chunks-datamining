@@ -4,7 +4,7 @@ n.d(t, {
   PV: () => u,
   _e: () => p,
   gD: () => d,
-  kg: () => f,
+  kg: () => _,
   pO: () => h
 }), n(415506), n(388685), n(997841);
 var r = n(544891),
@@ -38,7 +38,7 @@ async function u(e) {
       flags: a.flags
     });
     null != u && (o = await c(u));
-    let _ = await r.tn.post({
+    let f = await r.tn.post({
       url: l.ANM.SCHEDULED_MESSAGES,
       body: {
         channel_id: t,
@@ -51,16 +51,16 @@ async function u(e) {
       },
       rejectWithError: !0
     });
-    if (!_.ok) throw Error("Failed to create scheduled message");
+    if (!f.ok) throw Error("Failed to create scheduled message");
     return i.Z.dispatch({
       type: "SCHEDULED_MESSAGES_CREATE_SUCCESS",
       channelId: t,
-      scheduledMessageSend: (0, s.IR)(_.body)
-    }), _
+      scheduledMessageSend: (0, s.IR)(f.body)
+    }), f
   } catch (n) {
-    var d, _;
+    var d, f;
     s.GO.error("Failed to create scheduled message", n);
-    let e = null != (_ = null == (d = n.body) ? void 0 : d.message) ? _ : n.message;
+    let e = null != (f = null == (d = n.body) ? void 0 : d.message) ? f : n.message;
     throw i.Z.dispatch({
       type: "SCHEDULED_MESSAGES_CREATE_FAILURE",
       channelId: t,
@@ -93,7 +93,7 @@ async function d(e) {
     }), Error(r)
   }
 }
-async function _() {
+async function f() {
   let e = await r.tn.get({
     url: l.ANM.SCHEDULED_MESSAGES,
     rejectWithError: !0
@@ -101,12 +101,12 @@ async function _() {
   if (!e.ok) throw Error("Failed to fetch scheduled messages");
   return e.body.map(s.IR)
 }
-async function f() {
+async function _() {
   i.Z.dispatch({
     type: "FETCH_SCHEDULED_MESSAGES"
   });
   try {
-    let e = await _();
+    let e = await f();
     s.GO.info("Fetched scheduled messages", e), i.Z.dispatch({
       type: "FETCH_SCHEDULED_MESSAGES_SUCCESS",
       messages: e

@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(748780),
   u = n(793030),
   d = n(143450),
-  _ = n(186325),
-  f = n(507274),
+  f = n(186325),
+  _ = n(507274),
   p = n(667137),
   h = n(946598);
 let m = 200;
@@ -37,7 +37,7 @@ function g(e) {
     onClose: O
   }), [T, O]), A = 0 === t || 1 === t, {
     reducedMotion: N
-  } = i.useContext(_.S), C = (0, d.q)({
+  } = i.useContext(f.S), C = (0, d.q)({
     opacity: +!!A,
     transform: A || N.enabled || "subtle" === n ? "scale(1)" : "scale(0.7)",
     config: {
@@ -48,7 +48,7 @@ function g(e) {
   }, "animate-always");
   return (0, r.jsx)(p.t.Provider, {
     value: S,
-    children: (0, r.jsx)(f.V, {
+    children: (0, r.jsx)(_.V, {
       id: T,
       role: b,
       "aria-label": y,

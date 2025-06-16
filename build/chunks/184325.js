@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(100527),
   u = n(906732),
   d = n(335131),
-  _ = n(927513),
-  f = n(768865),
+  f = n(927513),
+  _ = n(768865),
   p = n(617136),
   h = n(497505),
   m = n(703656),
@@ -37,7 +37,7 @@ var i = n(120356),
   L = n(388032),
   x = n(286020);
 
-function M(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -46,14 +46,14 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      k(e, t, n[t])
     })
   }
   return e
@@ -83,7 +83,7 @@ let G = e => {
   } = e;
   return t.id === g.l.ORB_PROFILE_BADGE ? (0, r.jsx)(E.Z, {
     showSubtext: !i && !t.isPreviewMode
-  }) : void 0 !== n && t.id !== D.a ? (0, r.jsx)(_.Z, {
+  }) : void 0 !== n && t.id !== D.a ? (0, r.jsx)(f.Z, {
     profileBadge: t,
     tenureBadge: n
   }) : t.description
@@ -94,9 +94,9 @@ function B(e) {
   let {
     badges: n,
     className: i,
-    badgeClassName: _,
+    badgeClassName: f,
     displayProfile: E,
-    onClose: M,
+    onClose: k,
     shouldOpenBadgeTooltip: j,
     shouldGlowTenureBadge: B
   } = e, {
@@ -117,7 +117,7 @@ function B(e) {
         v = t => {
           if (Z({
               action: "PRESS_BADGE"
-            }), (0, S.NE)(k({
+            }), (0, S.NE)(M({
               badge: e.id,
               analyticsLocations: V
             }, F)), i) return void(0, d.mK)({
@@ -132,10 +132,10 @@ function B(e) {
                 premium_type: Y,
                 viewed_user_id: null == E ? void 0 : E.userId
               }), Y) {
-              (null == E ? void 0 : E.userId) === (null == H ? void 0 : H.id) ? (0, m.uL)(R.Z5c.NITRO_HOME) : (0, f.k)({
+              (null == E ? void 0 : E.userId) === (null == H ? void 0 : H.id) ? (0, m.uL)(R.Z5c.NITRO_HOME) : (0, _.k)({
                 analyticsLocations: V,
                 displayProfile: E
-              }), null == M || M();
+              }), null == k || k();
               return
             }
             if ((null == E ? void 0 : E.userId) === (null == H ? void 0 : H.id)) {
@@ -143,29 +143,29 @@ function B(e) {
                 analyticsLocations: V
               }) : null;
               if (null == n) return;
-              return null == M || M(), n(t)
+              return null == k || k(), n(t)
             }
-            return (0, f.k)({
+            return (0, _.k)({
               analyticsLocations: V,
               displayProfile: E
-            }), void(null == M || M())
+            }), void(null == k || k())
           }
           let n = null != e.link ? (0, s.default)(e.link, {
             analyticsLocations: V
           }) : null;
-          if (null != n) return null == M || M(), n(t)
+          if (null != n) return null == k || k(), n(t)
         },
         T = () => {
           if (e.id === A.i) {
             let e = (0, l.S)();
-            y.default.track(R.rMx.QUEST_CONTENT_VIEWED, U(k({}, (0, p.mH)(h.jn.QUEST_BADGE)), {
+            y.default.track(R.rMx.QUEST_CONTENT_VIEWED, U(M({}, (0, p.mH)(h.jn.QUEST_BADGE)), {
               android_advertising_id: null != e && (0, O.isAndroid)() ? e.advertisingId : null,
               is_targeted: !1
             }))
           }
           Z({
             action: "HOVER_BADGE"
-          }), (0, S.Qf)(k({
+          }), (0, S.Qf)(M({
             badge: e.id,
             analyticsLocations: V
           }, F))
@@ -191,7 +191,7 @@ function B(e) {
             alt: " ",
             "aria-hidden": !0,
             src: null != (n = e.iconSrc) ? n : (0, C.Ej)(e.icon),
-            className: a()(x.badge, _)
+            className: a()(x.badge, f)
           })
         })
       }, "".concat(e.id, "-").concat(t))

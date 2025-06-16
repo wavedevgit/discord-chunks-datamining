@@ -1,6 +1,6 @@
 /**
   Module ID: 49131
-  Original File Name: 36da6009a693866d
+  Original File Name: eedfd9e865e484de
 **/
 .footer_fc958f {
     align-items: center;
@@ -959,7 +959,7 @@
 }
 
 .newPostsButton_f369db {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border: 1px solid var(--background-modifier-accent);
     border-radius: 36px;
     bottom: 16px;
@@ -1307,7 +1307,7 @@
 }
 
 .popout__94439 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border: 1px solid var(--background-modifier-accent);
     border-radius: var(--radius-lg);
     box-shadow: var(--elevation-medium);
@@ -1459,7 +1459,7 @@
 }
 
 .container__5808f {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: var(--radius-xs);
     box-shadow: var(--elevation-high);
     padding: 8px;
@@ -2333,4 +2333,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=36da6009a693866d.css.map*/
+/*# sourceMappingURL=eedfd9e865e484de.css.map*/

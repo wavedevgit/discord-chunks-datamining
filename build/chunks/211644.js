@@ -53,8 +53,8 @@ function c(e, t) {
 }
 let u = new(n(499303)).I,
   d = 3e5,
-  _ = 36e5,
-  f = () => ({
+  f = 36e5,
+  _ = () => ({
     candidates: new Map,
     shownFatigableCandidate: null,
     prevFatigableCandidate: null,
@@ -63,7 +63,7 @@ let u = new(n(499303)).I,
     currentlyShownGroup: new Set,
     lastWinnerTime: 0
   }),
-  p = (0, r.F)(f),
+  p = (0, r.F)(_),
   h = e => c(s({}, e), {
     candidates: new Map(e.candidates),
     currentlyShown: new Set(e.currentlyShown),
@@ -98,7 +98,7 @@ let u = new(n(499303)).I,
     if (I(e) && !t) return u.unschedule(), y(e, O(e));
     if (null != e.shownFatigableCandidate && !t || u.scheduled()) return e;
     let n = new Date().getTime();
-    return null == e.shownFatigableCandidate && n - e.lastWinnerTime < _ || u.schedule(() => {
+    return null == e.shownFatigableCandidate && n - e.lastWinnerTime < f || u.schedule(() => {
       (0, i.j)(() => {
         p.setState(e => {
           let t = h(e);
@@ -131,7 +131,7 @@ let u = new(n(499303)).I,
     return [p.getState().currentlyShown.size, e]
   },
   P = () => {
-    (0, i.j)(() => p.setState(f)), u.unschedule()
+    (0, i.j)(() => p.setState(_)), u.unschedule()
   };
 
 function w(e, t) {

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367);
 n(73800);
@@ -48,7 +48,7 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {
+let f = {
   handleUserContextMenu(e, t, a, o) {
     let l = s.Z.getChannel(t);
     null != l && (0, i.jW)(o, async () => {
@@ -68,10 +68,10 @@ let _ = {
       channelId: s,
       parsedUserId: l,
       roleId: u,
-      roleName: _,
-      viewingChannelId: f
+      roleName: f,
+      viewingChannelId: _
     } = e;
-    return null == i && (null != u || "@everyone" === _ || "@here" === _) ? (0, r.jsx)(a.Z, d(c({
+    return null == i && (null != u || "@everyone" === f || "@here" === f) ? (0, r.jsx)(a.Z, d(c({
       inlinePreview: n.formatInline
     }, e), {
       children: t(e.content, n)
@@ -79,7 +79,7 @@ let _ = {
       className: "mention",
       userId: i,
       channelId: s,
-      viewingChannelId: f,
+      viewingChannelId: _,
       parsedUserId: l,
       content: t(e.content, n),
       inlinePreview: n.noStyleAndInteraction

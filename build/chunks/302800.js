@@ -16,8 +16,8 @@ var r = n(691324),
   c = n(252802),
   u = n(452823),
   d = n(744709),
-  _ = n(39934),
-  f = n(12981);
+  f = n(39934),
+  _ = n(12981);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -32,7 +32,7 @@ var h = function(e) {
 }({});
 let m = e => e === i.T.TIDE ? {
   label: () => s.intl.string(s.t["h/uBCQ"]),
-  iconSrc: f.Z,
+  iconSrc: _.Z,
   style: {
     background: "linear-gradient(180deg, #103A8B -7.5%, #3390FD 128.75%)",
     boxShadow: "0px 0px 15.4px 0px rgba(23, 160, 236, 0.5)",
@@ -72,7 +72,7 @@ let E = {
       }
     }),
     STORM: new g({
-      src: _.Z,
+      src: f.Z,
       style: {
         position: "absolute",
         width: "850px",

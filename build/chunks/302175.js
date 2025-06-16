@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(434650),
-  _ = n(100527),
-  f = n(906732),
+  f = n(100527),
+  _ = n(906732),
   p = n(879892),
   h = n(245004),
   m = n(430824),
@@ -71,14 +71,14 @@ function x(e, t) {
   }), e
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t,
     powerup: n,
     onClose: a
   } = e, {
     analyticsLocations: l
-  } = (0, f.ZP)(), c = null != (0, v.Z)(t, n), g = (0, I.Z)(t), [E, b] = i.useState(!1), [y, S] = i.useState(!1), w = y, L = i.useCallback(() => {
+  } = (0, _.ZP)(), c = null != (0, v.Z)(t, n), g = (0, I.Z)(t), [E, b] = i.useState(!1), [y, S] = i.useState(!1), w = y, L = i.useCallback(() => {
     let e = m.Z.getGuild(t);
     null != e && (0, p.u)({
       analyticsLocation: {
@@ -89,23 +89,23 @@ function M(e) {
       analyticsLocations: l,
       guild: e
     })
-  }, [t, l]), M = i.useCallback(() => {
-    a(), (0, T.Z)(t, _.Z.GUILD_POWERUPS_MARKETING, n.skuId)
-  }, [t, n.skuId, a]), k = {
+  }, [t, l]), k = i.useCallback(() => {
+    a(), (0, T.Z)(t, f.Z.GUILD_POWERUPS_MARKETING, n.skuId)
+  }, [t, n.skuId, a]), M = {
     tension: 400,
     friction: 30
   }, j = (0, u.q_F)({
     transform: w ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
     borderRadius: "0px",
     transformOrigin: "center 0%",
-    config: k
+    config: M
   }), U = (0, u.q_F)({
     y: w ? -25 : 0,
-    config: k
+    config: M
   }), G = (0, u.q_F)({
     opacity: +!!w,
     transform: w ? "translateY(0)" : "translateY(20px)",
-    config: k
+    config: M
   }), B = i.useCallback(e => {
     e && b(!0)
   }, []), V = (0, d.O)(B), F = (0, O.Z)(n, y);
@@ -149,7 +149,7 @@ function M(e) {
           children: C.intl.string(C.t["oPAx7+"])
         }), g && (0, r.jsx)(u.zxk, {
           grow: !0,
-          onClick: M,
+          onClick: k,
           color: u.zxk.Colors.PRIMARY,
           className: P.button,
           children: C.intl.string(C.t.GoCQxc)
@@ -163,7 +163,7 @@ function M(e) {
     })]
   })
 }
-let k = i.forwardRef((e, t) => {
+let M = i.forwardRef((e, t) => {
   var n, a;
   let {
     guild: o,
@@ -173,8 +173,8 @@ let k = i.forwardRef((e, t) => {
     u && (b.Z.shouldFetchCatalogForGuild(o.id) && (0, E.Sn)(o.id), b.Z.shouldFetchPowerupsForGuild(o.id) && (0, E.Fm)(o.id))
   }, [u, o.id]);
   let d = (0, c.e7)([b.Z], () => b.Z.getStateForGuild(o.id)),
-    _ = null != (a = null == d || null == (n = d.powerupCatalog) ? void 0 : n[S.Us.PERK]) ? a : [];
-  return u && 0 !== _.length ? (0, r.jsxs)("div", {
+    f = null != (a = null == d || null == (n = d.powerupCatalog) ? void 0 : n[S.Us.PERK]) ? a : [];
+  return u && 0 !== f.length ? (0, r.jsxs)("div", {
     ref: t,
     className: R.container,
     children: [(0, r.jsx)(l.X6, {
@@ -187,7 +187,7 @@ let k = i.forwardRef((e, t) => {
       })
     }), (0, r.jsx)("div", {
       className: R.powerupsContainer,
-      children: _.map(e => (0, r.jsx)(M, {
+      children: f.map(e => (0, r.jsx)(k, {
         guildId: o.id,
         powerup: e,
         onClose: s
@@ -195,5 +195,5 @@ let k = i.forwardRef((e, t) => {
     })]
   }) : null
 });
-k.displayName = "GuildPowerupsMarketingPowerupCards";
-let j = k
+M.displayName = "GuildPowerupsMarketingPowerupCards";
+let j = M

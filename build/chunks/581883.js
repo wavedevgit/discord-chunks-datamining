@@ -11,8 +11,8 @@ var r, i = n(512722),
   c = n(377108),
   u = n(524437),
   d = n(835913),
-  _ = n(570140),
-  f = n(262847),
+  f = n(570140),
+  _ = n(262847),
   p = n(48481),
   h = n(526761);
 
@@ -64,7 +64,7 @@ function v(e) {
     proto: n,
     isDirty: r,
     cleanupFuncs: i
-  } = (0, p.xt)(E.proto, f.Z[h.yP.PRELOADED_USER_SETTINGS]);
+  } = (0, p.xt)(E.proto, _.Z[h.yP.PRELOADED_USER_SETTINGS]);
   r && A(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = !0, Object.values(y).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = !1, e.editInfo.loading = !1)
   }), S()
@@ -210,7 +210,7 @@ class D extends(r = l.ZP.PersistedStore) {
   }
 }
 m(D, "displayName", "UserSettingsProtoStore"), m(D, "persistKey", "UserSettingsProtoStore-Cache");
-let L = new D(_.Z, {
+let L = new D(f.Z, {
   CACHE_LOADED: P,
   USER_SETTINGS_PROTO_UPDATE: C,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: C,

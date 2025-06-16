@@ -14,8 +14,8 @@ var r = n(255367),
   c = n(944611),
   u = n(377108),
   d = n(692547),
-  _ = n(481060),
-  f = n(68405),
+  f = n(481060),
+  _ = n(68405),
   p = n(527429),
   h = n(788911),
   m = n(40851),
@@ -86,13 +86,13 @@ function x(e) {
   return e === u.EO.VIDEO
 }
 
-function M(e) {
+function k(e) {
   return ((0, g._M)(e) || (0, g.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
-function k(e) {
+function M(e) {
   let t = b.Z.toURLSafe(e);
-  return null != t && M(t) ? (t.searchParams.set("animated", "true"), t.toString()) : e
+  return null != t && k(t) ? (t.searchParams.set("animated", "true"), t.toString()) : e
 }
 class j extends i.PureComponent {
   componentDidMount() {
@@ -141,7 +141,7 @@ class j extends i.PureComponent {
       loaded: i
     } = this.state;
     return i ? (0, r.jsx)("img", {
-      src: k(e),
+      src: M(e),
       width: t,
       height: n,
       className: I.gif,
@@ -159,7 +159,7 @@ class j extends i.PureComponent {
       color: o,
       loaded: s
     } = this.state;
-    return (0, r.jsxs)(_.P3F, {
+    return (0, r.jsxs)(f.P3F, {
       tabIndex: -1,
       innerRef: e => {
         this.ref = e
@@ -205,7 +205,7 @@ class U extends i.PureComponent {
       resultType: e,
       data: t
     } = this.props;
-    e === O.wI2.FAVORITES && ((0, f.t1)(O.wI2.FAVORITES), (0, f.hM)(t, O.wI2.FAVORITES, {
+    e === O.wI2.FAVORITES && ((0, _.t1)(O.wI2.FAVORITES), (0, _.hM)(t, O.wI2.FAVORITES, {
       limit: null
     }))
   }
@@ -216,7 +216,7 @@ class U extends i.PureComponent {
       data: i,
       resultQuery: a
     } = this.props;
-    null != n && n(e), (0, f.R7)({
+    null != n && n(e), (0, _.R7)({
       type: r,
       index: t,
       offset: this.props.searchOffset,
@@ -236,7 +236,7 @@ class U extends i.PureComponent {
       className: I.emptyHint,
       children: null != e ? (0, r.jsxs)("div", {
         className: I.emptyHintCard,
-        children: [t ? (0, r.jsx)(_.r7p, {
+        children: [t ? (0, r.jsx)(f.r7p, {
           size: "xs",
           color: "currentColor",
           className: I.emptyHintFavorite
@@ -250,7 +250,7 @@ class U extends i.PureComponent {
     })
   }
   renderEmptyFavorites() {
-    return (0, r.jsx)(_.Ttm, {
+    return (0, r.jsx)(f.Ttm, {
       className: I.results,
       fade: !0,
       children: (0, r.jsxs)("div", {
@@ -322,7 +322,7 @@ class U extends i.PureComponent {
         scrollTop: n,
         scrollHeight: r
       } = t.getScrollerState();
-      r - n <= C && (e !== this.prevResultQuery && (0, f.mO)(e), this.prevResultQuery = e)
+      r - n <= C && (e !== this.prevResultQuery && (0, _.mO)(e), this.prevResultQuery = e)
     }), T(this, "renderItem", (e, t, n, i) => {
       if (e > 0) return null;
       let {
@@ -365,10 +365,10 @@ class U extends i.PureComponent {
             children: v.intl.string(v.t["3JGJo6"])
           }), (0, r.jsx)("div", {
             className: I.searchSuggestions,
-            children: o.map(e => (0, r.jsx)(_.zxk, {
-              look: _.zxk.Looks.OUTLINED,
-              color: _.zxk.Colors.PRIMARY,
-              size: _.zxk.Sizes.SMALL,
+            children: o.map(e => (0, r.jsx)(f.zxk, {
+              look: f.zxk.Looks.OUTLINED,
+              color: f.zxk.Colors.PRIMARY,
+              size: f.zxk.Sizes.SMALL,
               className: I.searchSuggestion,
               onClick: () => {
                 a(e)
@@ -386,7 +386,7 @@ class U extends i.PureComponent {
         query: l,
         resultType: c
       } = this.props;
-      return 0 === a.length && (s !== l || c === O.wI2.TRENDING_GIFS) ? (0, r.jsx)(_.GMG, {
+      return 0 === a.length && (s !== l || c === O.wI2.TRENDING_GIFS) ? (0, r.jsx)(f.GMG, {
         fade: !0,
         className: o()(I.results, i),
         sections: [R.length],
@@ -396,7 +396,7 @@ class U extends i.PureComponent {
         getItemHeight: w,
         renderItem: D,
         chunkSize: 128
-      }, s) : (0, r.jsx)(_.GMG, {
+      }, s) : (0, r.jsx)(f.GMG, {
         ref: this._masonryRef,
         fade: !0,
         itemGutter: 12,

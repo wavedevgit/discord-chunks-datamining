@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  p: () => _,
-  t: () => f
+  p: () => f,
+  t: () => _
 });
 var r = n(468343),
   i = n(559972),
@@ -20,7 +20,7 @@ var r = n(468343),
   },
   u = ["resize", "load", "transitionend", "animationend", "animationstart", "animationiteration", "keyup", "keydown", "mouseup", "mousedown", "mouseover", "mouseout", "blur", "focus"],
   d = !1,
-  _ = new(function() {
+  f = new(function() {
     function e() {
       var e = this;
       this.stopped = !0, this.listener = function() {
@@ -58,6 +58,6 @@ var r = n(468343),
       }), this.stopped = !0)
     }, e
   }()),
-  f = function(e) {
-    !o && e > 0 && _.start(), (o += e) || _.stop()
+  _ = function(e) {
+    !o && e > 0 && f.start(), (o += e) || f.stop()
   }

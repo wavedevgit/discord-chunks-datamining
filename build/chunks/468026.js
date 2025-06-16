@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(466377),
   u = n(993365),
   d = n(481060),
-  _ = n(600164),
-  f = n(540059),
+  f = n(600164),
+  _ = n(540059),
   p = n(388032),
   h = n(551988);
 let m = e => {
@@ -32,7 +32,7 @@ let m = e => {
       transitionState: N,
       titleClassName: C
     } = e,
-    R = (0, f.Q3)("ConfirmModal"),
+    R = (0, _.Q3)("ConfirmModal"),
     P = R ? s.zx.Sizes.MEDIUM : s.zx.Sizes.LARGE,
     [w, D] = i.useState(!1);
   i.useEffect(() => () => {
@@ -88,9 +88,9 @@ let m = e => {
         })
       }), (0, r.jsx)(c.hz, {
         className: h.modalContent,
-        children: (0, r.jsx)(_.Z, {
-          direction: _.Z.Direction.VERTICAL,
-          justify: R ? _.Z.Justify.START : _.Z.Justify.CENTER,
+        children: (0, r.jsx)(f.Z, {
+          direction: f.Z.Direction.VERTICAL,
+          justify: R ? f.Z.Justify.START : f.Z.Justify.CENTER,
           className: h.content,
           children: null != m && (0, r.jsx)(u.x, {
             variant: "text-md/normal",
@@ -100,8 +100,8 @@ let m = e => {
           })
         })
       }), (0, r.jsxs)(c.mz, {
-        justify: R ? void 0 : _.Z.Justify.BETWEEN,
-        wrap: _.Z.Wrap.WRAP,
+        justify: R ? void 0 : f.Z.Justify.BETWEEN,
+        wrap: f.Z.Wrap.WRAP,
         className: h.modalFooter,
         children: [n, t, a]
       })]

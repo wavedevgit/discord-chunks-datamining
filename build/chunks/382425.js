@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(287734),
   u = n(872810),
   d = n(110924),
-  _ = n(833664),
-  f = n(579630),
+  f = n(833664),
+  _ = n(579630),
   p = n(100527),
   h = n(906732),
   m = n(194082),
@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(336383),
   L = n(194811),
   x = n(265386),
-  M = n(668700),
-  k = n(384298),
+  k = n(668700),
+  M = n(384298),
   j = n(386019),
   U = n(228168),
   G = n(981631),
@@ -65,7 +65,7 @@ function Y(e) {
       user: t
     } = e;
     return t
-  }) : []), en = (0, s.e7)([I.Z], () => I.Z.findActivity(t.id, e => (0, _.Z)(e) && !(0, f.Z)(e))), {
+  }) : []), en = (0, s.e7)([I.Z], () => I.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
     analyticsLocations: er
   } = (0, h.ZP)(p.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), ei = (0, S.Z)({
     display: "live",
@@ -79,18 +79,18 @@ function Y(e) {
   }), [eo, es] = (0, b.wq)(ee), {
     previewUrl: el,
     isLoading: ec
-  } = (0, E.Z)(a.guildId, a.channelId, a.ownerId), eu = (0, s.e7)([v.Z], () => null != ee && v.Z.canBasicChannel(G.S7T.CONNECT, ee)), ed = (0, d.Z)(ec ? null : el), e_ = ec || null == el ? ed : el;
+  } = (0, E.Z)(a.guildId, a.channelId, a.ownerId), eu = (0, s.e7)([v.Z], () => null != ee && v.Z.canBasicChannel(G.S7T.CONNECT, ee)), ed = (0, d.Z)(ec ? null : el), ef = ec || null == el ? ed : el;
   if (null == $ || null == ee || !1 === a.discoverable || null === q) return null;
-  let ef = () => {
+  let e_ = () => {
       let e = e => {
         e.stopPropagation(), eo && (ei({
           action: "PRESS_IMAGE"
         }), c.default.selectVoiceChannel(a.channelId), (0, u.iV)(a), null == W || W())
       };
-      return null == e_ && ec ? (0, r.jsx)("div", {
+      return null == ef && ec ? (0, r.jsx)("div", {
         className: F.preview,
         children: (0, r.jsx)(l.$jN, {})
-      }) : null == e_ ? (0, r.jsxs)(l.P3F, {
+      }) : null == ef ? (0, r.jsxs)(l.P3F, {
         className: o()(F.preview, F.overlay, eo ? F.clickable : F.disabled),
         onClick: e,
         "aria-label": (0, b.gR)(es),
@@ -116,7 +116,7 @@ function Y(e) {
         "aria-disabled": !eo,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: e_,
+          src: ef,
           className: F.image
         }), q !== U.lY.MODAL && q !== U.lY.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
@@ -143,7 +143,7 @@ function Y(e) {
         users: et,
         guildId: $.id,
         channelId: ee.id,
-        maxUsers: M.W,
+        maxUsers: k.W,
         size: l.EFr.SIZE_16,
         onClick: e => {
           null == e || e.stopPropagation(), null == ei || ei({
@@ -155,7 +155,7 @@ function Y(e) {
         overflowCountColor: "text-muted"
       }), q === U.lY.MODAL_V2 && em()]
     }),
-    eh = () => q === U.lY.MODAL || q === U.lY.MODAL_V2 ? null : (0, r.jsx)(M.Z, {
+    eh = () => q === U.lY.MODAL || q === U.lY.MODAL_V2 ? null : (0, r.jsx)(k.Z, {
       user: t,
       guild: $,
       channel: ee,
@@ -164,7 +164,7 @@ function Y(e) {
     }),
     em = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: V.actions,
-      children: (0, r.jsx)(k.Z, {
+      children: (0, r.jsx)(M.Z, {
         channel: ee,
         onAction: ei,
         onClose: W
@@ -222,7 +222,7 @@ function Y(e) {
               className: V.body,
               children: [(0, r.jsxs)("div", {
                 className: V.content,
-                children: [ef(), ep(), q === U.lY.MODAL && em()]
+                children: [e_(), ep(), q === U.lY.MODAL && em()]
               }), eh()]
             }), q !== U.lY.MODAL && q !== U.lY.MODAL_V2 && em()]
           })

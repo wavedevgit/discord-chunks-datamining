@@ -18,21 +18,21 @@ var r = n(239189),
         c = new Set,
         u = new Set,
         d = new Set,
-        _ = function(e) {
+        f = function(e) {
           var t = s.indexOf(e);
           t < 0 && (t = s.findIndex(function(t) {
             return t.priority > e.priority
           }), s.splice(~t ? t : s.length, 0, e))
         },
-        f = function() {
+        _ = function() {
           if (!t) try {
-            m(), e(f)
+            m(), e(_)
           } catch (e) {
             console.error(e)
           }
         },
         p = function() {
-          t && (t = !1, 0 == a && (a = r.now(), e(f)))
+          t && (t = !1, 0 == a && (a = r.now(), e(_)))
         },
         h = [];
       this.setTimeout = function(e, t) {
@@ -55,7 +55,7 @@ var r = n(239189),
       };
       var m = this.advance = function() {
         var e = r.now();
-        if (c.size && (c.forEach(_), c.clear()), h.length && r.batchedUpdates(function() {
+        if (c.size && (c.forEach(f), c.clear()), h.length && r.batchedUpdates(function() {
             var t = o(h, function(t) {
               return t.time > e
             });
@@ -76,7 +76,7 @@ var r = n(239189),
         }
       };
       this.start = function(e) {
-        l > e.priority ? c.add(e) : (_(e), p())
+        l > e.priority ? c.add(e) : (f(e), p())
       }, this.onFrame = function(e) {
         u.add(e), p()
       }, this.onWrite = function(e) {

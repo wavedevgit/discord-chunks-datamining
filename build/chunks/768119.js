@@ -12,8 +12,8 @@ var r, i = n(392711),
   c = n(840877),
   u = n(778877),
   d = n(952537),
-  _ = n(592125),
-  f = n(430824),
+  f = n(592125),
+  _ = n(430824),
   p = n(981631);
 
 function h(e, t, n) {
@@ -52,7 +52,7 @@ function E(e) {
 }
 
 function b(e) {
-  return e === p.aib.DMS ? p.aib.DMS : e === p.I_8 ? p.aib.FAVORITES : null != f.Z.getGuild(e) ? p.aib.GUILD : null != _.Z.getChannel(e) ? p.aib.CHANNEL : null
+  return e === p.aib.DMS ? p.aib.DMS : e === p.I_8 ? p.aib.FAVORITES : null != _.Z.getGuild(e) ? p.aib.GUILD : null != f.Z.getChannel(e) ? p.aib.CHANNEL : null
 }
 
 function y(e, t) {
@@ -91,14 +91,14 @@ function C(e) {
   } = e, s = E(i);
   null != s.searchFetcher && (s.searchFetcher.cancel(), s.searchFetcher = null);
   let u = i,
-    f = s.searchType,
-    h = new c.ZP(u, f, o);
+    _ = s.searchType,
+    h = new c.ZP(u, _, o);
   s.searchFetcher = h, s.isSearching = !0, s.rawResults = null, s.analyticsId = null, s.query = a().omit(o, "type"), s.offset = null != (n = o.offset) ? n : 0, s.showBlockedResults = !1, s.searchResultsQueryString = r, R({
     type: "SEARCH_ADD_HISTORY",
     searchId: i,
     query: r
   });
-  let m = i === p.I_8 ? null == (t = _.Z.getChannel(u)) ? void 0 : t.guild_id : f === p.aib.GUILD ? i : null;
+  let m = i === p.I_8 ? null == (t = f.Z.getChannel(u)) ? void 0 : t.guild_id : _ === p.aib.GUILD ? i : null;
   h.fetch(e => {
     var t, n;
     l.Z.dispatch({
@@ -186,14 +186,14 @@ function x(e) {
   }) ? L(p.aib.DMS) : L(null != t ? t : n)
 }
 
-function M(e) {
+function k(e) {
   let {
     searchId: t
   } = e;
   L(t)
 }
 
-function k(e) {
+function M(e) {
   let {
     searchId: t
   } = e;
@@ -252,7 +252,7 @@ function Z(e) {
 }
 class H extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(f.Z, _.Z);
+    this.waitFor(_.Z, f.Z);
     let e = s.K.get(O);
     (null == e ? void 0 : e.history) != null && (T = U(e.history)), I = !!s.K.get(v)
   }
@@ -355,10 +355,10 @@ let Y = new H(l.Z, {
   SEARCH_ENSURE_SEARCH_STATE: N,
   SEARCH_EDITOR_STATE_CHANGE: A,
   SEARCH_SET_SHOW_BLOCKED_RESULTS: G,
-  SEARCH_SCREEN_OPEN: M,
+  SEARCH_SCREEN_OPEN: k,
   CHANNEL_SELECT: x,
   CHANNEL_TOGGLE_MEMBERS_SECTION: F,
-  SEARCH_CLEAR_HISTORY: k,
+  SEARCH_CLEAR_HISTORY: M,
   SEARCH_REMOVE_HISTORY: j,
   SEARCH_ADD_HISTORY: R,
   LOGOUT: V,

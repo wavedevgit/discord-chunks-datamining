@@ -1,6 +1,6 @@
 /**
   Module ID: 18417
-  Original File Name: f11a9f6f72569fcd
+  Original File Name: ca1c1d4820591aef
 **/
 .container_ee8e87 {
     background-color: var(--background-secondary-alt);
@@ -77,7 +77,7 @@
 }
 
 .previewContainer_ee8e87 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 0 12px 12px 0;
     display: flex;
     flex-shrink: 0;
@@ -240,4 +240,4 @@
     gap: 8px
 }
 
-/*# sourceMappingURL=f11a9f6f72569fcd.css.map*/
+/*# sourceMappingURL=ca1c1d4820591aef.css.map*/

@@ -21,7 +21,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,7 +46,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,7 +75,7 @@ let g = 1,
       trusted: n,
       title: a,
       href: d,
-      children: f,
+      children: _,
       messageId: m,
       channelId: E
     } = e, b = h(e, ["onClick", "trusted", "title", "href", "children", "messageId", "channelId"]), {
@@ -83,13 +83,13 @@ let g = 1,
     } = (0, c.ZP)(l.Z.MASKED_LINK), O = i.useCallback(t => (0, u.q)(e, t, y), [y, e]), v = i.useCallback(e => {
       e.button === g && O(e)
     }, [O]), I = o().sanitizeUrl(d);
-    return (0, r.jsx)(s.eee, p(_({}, b), {
+    return (0, r.jsx)(s.eee, p(f({}, b), {
       title: a,
       target: "_blank",
       rel: "noreferrer noopener",
       href: I,
       onClick: O,
       onAuxClick: v,
-      children: null != f ? f : a
+      children: null != _ ? _ : a
     }))
   })

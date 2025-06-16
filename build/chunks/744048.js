@@ -13,8 +13,8 @@ var i = n(442837),
   c = n(724145),
   u = n(507962),
   d = n(726034),
-  _ = n(605236),
-  f = n(243778),
+  f = n(605236),
+  _ = n(243778),
   p = n(819640),
   h = n(594174),
   m = n(74538),
@@ -32,11 +32,11 @@ let y = function() {
     } = (0, g.oq)(),
     I = [];
   !e && null == O && (n && !t && I.push(a.z.CLIENT_THEMES_COACHMARK), y && I.push(a.z.CUSTOM_THEME_COACHMARK));
-  let [T, S] = (0, f.US)(I, b.R.SIDEBAR, !0), A = T === a.z.CLIENT_THEMES_COACHMARK, N = T === a.z.CUSTOM_THEME_COACHMARK;
+  let [T, S] = (0, _.US)(I, b.R.SIDEBAR, !0), A = T === a.z.CLIENT_THEMES_COACHMARK, N = T === a.z.CUSTOM_THEME_COACHMARK;
   return ((0, u.HA)(y, T), e) ? null : (0, r.jsxs)(r.Fragment, {
     children: [(O === g.wh.CLIENT_THEMES || A) && (0, r.jsx)(c.Z, {
       markAsDismissed: A ? S : () => {
-        (0, _.EW)(a.z.CLIENT_THEMES_COACHMARK, {
+        (0, f.EW)(a.z.CLIENT_THEMES_COACHMARK, {
           dismissAction: b.L.INDIRECT_ACTION,
           forceTrack: !0
         })

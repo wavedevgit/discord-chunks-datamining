@@ -1,6 +1,6 @@
 /**
   Module ID: 53512
-  Original File Name: 589f2f172d66e289
+  Original File Name: 9ed7fbd988b63060
 **/
 .container__84aed {
     display: flex;
@@ -594,7 +594,7 @@
 }
 
 .bigMenu__8683b,.menu__8683b {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 8px;
     box-sizing: border-box;
     display: flex;
@@ -803,4 +803,4 @@
     rotate: -90deg
 }
 
-/*# sourceMappingURL=589f2f172d66e289.css.map*/
+/*# sourceMappingURL=9ed7fbd988b63060.css.map*/

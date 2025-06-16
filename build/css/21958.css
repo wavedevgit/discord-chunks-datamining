@@ -1,6 +1,6 @@
 /**
   Module ID: 21958
-  Original File Name: 1e3b920cf43249a2
+  Original File Name: 78a5c76bc4020066
 **/
 @use postcss-pxtorem;
 
@@ -1008,7 +1008,7 @@
 
 .closeCircle_a2c9e8 {
     align-items: center;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -1114,4 +1114,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=1e3b920cf43249a2.css.map*/
+/*# sourceMappingURL=78a5c76bc4020066.css.map*/

@@ -9,10 +9,10 @@ n.d(t, {
   gC: () => em,
   kv: () => el,
   mW: () => eo,
-  pu: () => e_,
+  pu: () => ef,
   sN: () => ed,
   tg: () => eh,
-  ux: () => ef,
+  ux: () => e_,
   w1: () => eu
 }), n(997841), n(388685), n(415506);
 var r = n(990547),
@@ -24,8 +24,8 @@ var r = n(990547),
   c = n(475179),
   u = n(447543),
   d = n(904245),
-  _ = n(479531),
-  f = n(911969),
+  f = n(479531),
+  _ = n(911969),
   p = n(213459),
   h = n(667204),
   m = n(812236),
@@ -47,8 +47,8 @@ var r = n(990547),
   D = n(979651),
   L = n(626135),
   x = n(585483),
-  M = n(630388),
-  k = n(823379),
+  k = n(630388),
+  M = n(823379),
   j = n(573261),
   U = n(595519),
   G = n(317381),
@@ -106,7 +106,7 @@ async function en(e) {
     locationObject: c,
     embeddedActivitiesManager: u,
     componentId: d,
-    commandOrigin: f,
+    commandOrigin: _,
     sectionName: p,
     source: h,
     onExecutedCallback: m,
@@ -126,7 +126,7 @@ async function en(e) {
       componentId: d,
       analyticsLocations: l,
       source: h,
-      commandOrigin: f,
+      commandOrigin: _,
       inviterUserId: b,
       launchParams: {
         customId: E,
@@ -153,7 +153,7 @@ async function en(e) {
         nonce: A,
         channelId: r,
         guildId: S,
-        commandOrigin: f,
+        commandOrigin: _,
         sectionName: p,
         source: h,
         onExecutedCallback: m,
@@ -186,7 +186,7 @@ async function en(e) {
       channelId: null != r ? r : null,
       guildId: null != S ? S : null,
       isStart: s,
-      error: t instanceof O.Z || t instanceof _.Z || t instanceof v.Z ? t : new _.Z(t),
+      error: t instanceof O.Z || t instanceof f.Z || t instanceof v.Z ? t : new f.Z(t),
       locationKind: e
     }), !1
   }
@@ -196,7 +196,7 @@ async function en(e) {
 function er(e, t) {
   let n = (null == t ? void 0 : t.type) === q.d4z.GUILD_VOICE,
     r = g.Z.getApplication(e),
-    i = null != r && (0, M.yE)(r.flags, q.udG.EMBEDDED),
+    i = null != r && (0, k.yE)(r.flags, q.udG.EMBEDDED),
     a = (0, U.l5)(t);
   return n && i || a
 }
@@ -222,7 +222,7 @@ async function ei(e) {
     };
     throw e
   }
-  let b = d.handler !== f.VC.APP_HANDLER;
+  let b = d.handler !== _.VC.APP_HANDLER;
   if (!(b || X.Yq.includes(t))) {
     null != r && await (0, p.FN)({
       type: "channel",
@@ -295,7 +295,7 @@ async function ei(e) {
             error_status: a,
             error_reason_code: o,
             source: s
-          }), null != e && null != n && null != a ? c(new _.Z({
+          }), null != e && null != n && null != a ? c(new f.Z({
             status: a,
             body: {
               message: n,
@@ -324,8 +324,8 @@ async function ea(e) {
     result: "failure",
     reason: 1
   };
-  let _ = await (0, F.Z)(d, i);
-  if (null == u || null == _) return {
+  let f = await (0, F.Z)(d, i);
+  if (null == u || null == f) return {
     result: "failure",
     reason: 2
   };
@@ -335,8 +335,8 @@ async function ea(e) {
     result: "failure",
     reason: 3
   };
-  let f = C.Z.getChannel(i);
-  if (null == f) return {
+  let _ = C.Z.getChannel(i);
+  if (null == _) return {
     result: "failure",
     reason: 3
   };
@@ -361,8 +361,8 @@ async function ea(e) {
   let h = G.ZP.getCurrentEmbeddedActivity();
   if ((null == h ? void 0 : h.applicationId) != null && (t = g.Z.getApplication(null == h ? void 0 : h.applicationId)), !(!o || await (0, B.p)({
       applicationId: n,
-      application: _,
-      channel: f,
+      application: f,
+      channel: _,
       currentEmbeddedApplication: t,
       embeddedActivitiesManager: a,
       user: u
@@ -370,18 +370,18 @@ async function ea(e) {
     result: "failure",
     reason: 7
   };
-  if (null != f) {
-    let e = (0, H.Z)(f.id),
-      n = K.wP.includes(f.type);
+  if (null != _) {
+    let e = (0, H.Z)(_.id),
+      n = K.wP.includes(_.type);
     if (e) {
       if (!await (0, Y.Z)({
-          channelId: f.id,
+          channelId: _.id,
           bypassChangeModal: null != t
         })) return {
         result: "failure",
         reason: 8
       }
-    } else if (!(0, U.WS)(f) || !n) return {
+    } else if (!(0, U.WS)(_) || !n) return {
       result: "failure",
       reason: 9
     }
@@ -492,7 +492,7 @@ async function el(e, t, n) {
   } catch (e) {
     return o.Z.dispatch({
       type: "UPLOAD_ACTIVITY_IMAGE_ATTACHMENT_FAIL"
-    }), new _.Z(e)
+    }), new f.Z(e)
   }
 }
 let ec = (e, t, n) => {
@@ -506,7 +506,7 @@ async function eu(e) {
   let {
     guildId: s,
     force: l = !1
-  } = e, c = G.ZP.getShelfActivities(s), u = c.map(e => g.Z.getApplication(e.application_id)).filter(k.lm);
+  } = e, c = G.ZP.getShelfActivities(s), u = c.map(e => g.Z.getApplication(e.application_id)).filter(M.lm);
   if (!l && !G.ZP.shouldFetchShelf(s)) {
     if (null == (t = G.ZP.getShelfFetchStatus(s)) ? void 0 : t.isFetching) {
       let e, t, n = new Promise(t => {
@@ -581,7 +581,7 @@ async function ed(e) {
   }, i);
   null != C.Z.getChannel(n) && d.Z.sendInvite(n, a.code, i, null)
 }
-async function e_(e) {
+async function ef(e) {
   let {
     channelId: t,
     applicationId: n,
@@ -599,7 +599,7 @@ async function e_(e) {
   })
 }
 
-function ef() {
+function e_() {
   o.Z.dispatch({
     type: "EMBEDDED_ACTIVITY_DISMISS_NEW_INDICATOR"
   })

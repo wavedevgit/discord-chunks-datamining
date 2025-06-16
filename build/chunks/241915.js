@@ -12,8 +12,8 @@ var r, i = n(255367),
   c = n(347469),
   u = n(689425),
   d = n(358085),
-  _ = n(981631),
-  f = n(354459),
+  f = n(981631),
+  _ = n(354459),
   p = n(189152);
 
 function h(e, t, n) {
@@ -46,16 +46,16 @@ let g = 200,
     left: 80
   },
   O = {
-    [_.VD2.TOP_RIGHT]: p.resizeHandleTopRight,
-    [_.VD2.TOP_LEFT]: p.resizeHandleTopLeft,
-    [_.VD2.BOTTOM_LEFT]: p.resizeHandleBottomLeft,
-    [_.VD2.BOTTOM_RIGHT]: p.resizeHandleBottomRight
+    [f.VD2.TOP_RIGHT]: p.resizeHandleTopRight,
+    [f.VD2.TOP_LEFT]: p.resizeHandleTopLeft,
+    [f.VD2.BOTTOM_LEFT]: p.resizeHandleBottomLeft,
+    [f.VD2.BOTTOM_RIGHT]: p.resizeHandleBottomRight
   },
   v = {
-    [_.VD2.TOP_RIGHT]: c.y.HORIZONTAL_LEFT,
-    [_.VD2.TOP_LEFT]: c.y.HORIZONTAL_RIGHT,
-    [_.VD2.BOTTOM_LEFT]: c.y.HORIZONTAL_RIGHT,
-    [_.VD2.BOTTOM_RIGHT]: c.y.HORIZONTAL_LEFT
+    [f.VD2.TOP_RIGHT]: c.y.HORIZONTAL_LEFT,
+    [f.VD2.TOP_LEFT]: c.y.HORIZONTAL_RIGHT,
+    [f.VD2.BOTTOM_LEFT]: c.y.HORIZONTAL_RIGHT,
+    [f.VD2.BOTTOM_RIGHT]: c.y.HORIZONTAL_LEFT
   };
 
 function I(e, t) {
@@ -115,7 +115,7 @@ class S extends(r = a.PureComponent) {
       maxX: o,
       maxY: s,
       dockedRect: l
-    } = this.props, c = Math.round(n), u = Math.round(s - i - this._boundHeight), f = Math.round(r), p = Math.round(o - a - this._boundWidth), h = (0, d.getPlatform)() !== d.PlatformTypes.WEB && this.inPopout ? E : 0;
+    } = this.props, c = Math.round(n), u = Math.round(s - i - this._boundHeight), _ = Math.round(r), p = Math.round(o - a - this._boundWidth), h = (0, d.getPlatform)() !== d.PlatformTypes.WEB && this.inPopout ? E : 0;
     if (null != l) {
       var m, g;
       return {
@@ -124,15 +124,15 @@ class S extends(r = a.PureComponent) {
       }
     }
     switch (e) {
-      case _.VD2.TOP_LEFT:
+      case f.VD2.TOP_LEFT:
         return {
-          y: c, x: f
+          y: c, x: _
         };
-      case _.VD2.BOTTOM_LEFT:
+      case f.VD2.BOTTOM_LEFT:
         return {
-          y: u, x: f
+          y: u, x: _
         };
-      case _.VD2.TOP_RIGHT:
+      case f.VD2.TOP_RIGHT:
         return {
           y: c, x: p
         };
@@ -171,8 +171,8 @@ class S extends(r = a.PureComponent) {
       edgeOffsetRight: n
     } = this.props;
     switch (e) {
-      case _.VD2.TOP_LEFT:
-      case _.VD2.BOTTOM_LEFT:
+      case f.VD2.TOP_LEFT:
+      case f.VD2.BOTTOM_LEFT:
         return -t;
       default:
         return n
@@ -185,8 +185,8 @@ class S extends(r = a.PureComponent) {
       edgeOffsetBottom: n
     } = this.props;
     switch (e) {
-      case _.VD2.TOP_LEFT:
-      case _.VD2.TOP_RIGHT:
+      case f.VD2.TOP_LEFT:
+      case f.VD2.TOP_RIGHT:
         return -t;
       default:
         return n
@@ -197,10 +197,10 @@ class S extends(r = a.PureComponent) {
     let {
       width: n
     } = this.props;
-    return null != (t = null != (e = this._width) ? e : n) ? t : f.l8[f.cL.VIDEO]
+    return null != (t = null != (e = this._width) ? e : n) ? t : _.l8[_.cL.VIDEO]
   }
   get inPopout() {
-    return this.props.appContext === _.IlC.POPOUT
+    return this.props.appContext === f.IlC.POPOUT
   }
   render() {
     let {
@@ -212,12 +212,12 @@ class S extends(r = a.PureComponent) {
       className: o,
       position: l,
       resizeConfig: c
-    } = this.props, d = this.getWidth(), _ = {};
-    return null != n ? _ = {
+    } = this.props, d = this.getWidth(), f = {};
+    return null != n ? f = {
       transform: "translate3d(".concat(n.x, ", ").concat(n.y, ", 0)"),
       width: n.width,
       height: n.height
-    } : null != c && (_ = {
+    } : null != c && (f = {
       width: d,
       transition: this.state.isResizing ? "none" : "width 0.2s ease-in-out"
     }), (0, i.jsxs)(u.Z, {
@@ -235,7 +235,7 @@ class S extends(r = a.PureComponent) {
       onDragEnd: this.handleDragEnd,
       children: [(0, i.jsx)("div", {
         ref: this.handleSetInnerDivRef,
-        style: _,
+        style: f,
         children: this.props.children
       }), null != c ? (0, i.jsx)(T, {
         onResize: this.handleResize,
@@ -301,7 +301,7 @@ class S extends(r = a.PureComponent) {
         s = this.calculateDecayingPosition(e, t, this._velocityX, this._velocityY),
         l = !0,
         c = !0;
-      if (s.x > a / 2 && (c = !1), s.y > o / 2 && (l = !1), i = l && c ? _.VD2.TOP_LEFT : l && !c ? _.VD2.TOP_RIGHT : !l && c ? _.VD2.BOTTOM_LEFT : _.VD2.BOTTOM_RIGHT, this.animateToPosition(i, this.ensureIsInPosition), i !== this.props.position) {
+      if (s.x > a / 2 && (c = !1), s.y > o / 2 && (l = !1), i = l && c ? f.VD2.TOP_LEFT : l && !c ? f.VD2.TOP_RIGHT : !l && c ? f.VD2.BOTTOM_LEFT : f.VD2.BOTTOM_RIGHT, this.animateToPosition(i, this.ensureIsInPosition), i !== this.props.position) {
         let {
           id: e,
           onMove: t
@@ -326,21 +326,21 @@ let A = e => {
       onWindowMove: c,
       onWindowResize: u,
       dockedRect: d,
-      pictureInPictureComponents: f,
+      pictureInPictureComponents: _,
       appContext: h,
       roundCorners: g,
       resizeConfig: E
     } = e, [b, O] = a.useState(!1), v = a.useMemo(() => null == t ? null : n.map(e => {
-      if (e.id !== t.id && e.component !== _.NYg.EMBED_IFRAME) return null;
-      let n = "string" == typeof e.component ? f[e.component] : e.component;
+      if (e.id !== t.id && e.component !== f.NYg.EMBED_IFRAME) return null;
+      let n = "string" == typeof e.component ? _[e.component] : e.component;
       return (0, i.jsx)(n, m({
         width: r
       }, e.props), e.id)
-    }), [n, t, r, f]), I = a.useCallback(() => {
+    }), [n, t, r, _]), I = a.useCallback(() => {
       O(!0)
     }, []), T = a.useCallback(() => {
       O(!1)
-    }, []), A = a.useMemo(() => n.some(e => e.component === _.NYg.EMBED_IFRAME), [n]);
+    }, []), A = a.useMemo(() => n.some(e => e.component === f.NYg.EMBED_IFRAME), [n]);
     return null == t ? (0, i.jsx)("div", {
       className: p.pictureInPicture
     }) : (0, i.jsx)("div", {

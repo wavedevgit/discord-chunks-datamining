@@ -1,6 +1,6 @@
 /**
   Module ID: 19370
-  Original File Name: b796efac6757b7f0
+  Original File Name: 4866c8ec44c669b7
 **/
 @use postcss-pxtorem;
 
@@ -972,7 +972,7 @@
 }
 
 .visual-refresh .actionButtons_cc1819 {
-    background-color: var(--background-floating)
+    background-color: var(--background-surface-high)
 }
 
 .actionButton_cc1819 {
@@ -1073,4 +1073,4 @@
     top: 0
 }
 
-/*# sourceMappingURL=b796efac6757b7f0.css.map*/
+/*# sourceMappingURL=4866c8ec44c669b7.css.map*/

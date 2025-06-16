@@ -12,8 +12,8 @@ var r = n(697988),
   c = n(555573),
   u = n(131704),
   d = n(314897),
-  _ = n(592125),
-  f = n(496675),
+  f = n(592125),
+  _ = n(496675),
   p = n(823379),
   h = n(920303),
   m = n(569471),
@@ -94,8 +94,8 @@ let T = {
   },
   async unarchiveThreadIfNecessary(e) {
     var t;
-    let n = _.Z.getChannel(e),
-      r = f.Z.can(b.Plq.MANAGE_THREADS, n);
+    let n = f.Z.getChannel(e),
+      r = _.Z.can(b.Plq.MANAGE_THREADS, n);
     null != n && n.isArchivedThread() && (r || (null == (t = n.threadMetadata) ? void 0 : t.locked) !== !0) && await this.unarchiveThread(n, !1)
   },
   setInvitable: (e, t) => v(e, {
@@ -307,7 +307,7 @@ let T = {
           members: c,
           has_more: u,
           first_messages: d,
-          most_recent_messages: _
+          most_recent_messages: f
         }
       } = e;
       null == i ? a.Z.dispatch({
@@ -326,7 +326,7 @@ let T = {
         tagSetting: s,
         threads: i,
         firstMessages: d,
-        mostRecentMessages: _,
+        mostRecentMessages: f,
         members: (null != c ? c : []).map(e => (0, E.Z)(e)),
         owners: i.map(e => e.owner).filter(p.lm),
         hasMore: u
@@ -349,7 +349,7 @@ let T = {
           threads: c,
           members: u,
           first_messages: d,
-          most_recent_messages: _
+          most_recent_messages: f
         }
       } = await i.tn.get({
         url: b.ANM.THREAD_SEARCH(t),
@@ -366,7 +366,7 @@ let T = {
       members: u,
       guildId: e,
       firstMessages: d,
-      mostRecentMessages: _
+      mostRecentMessages: f
     }), c.map(e => e.id)
   }
 }

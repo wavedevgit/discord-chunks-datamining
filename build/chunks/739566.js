@@ -3,9 +3,9 @@
 n.d(t, {
   JZ: () => h,
   Sw: () => m,
-  Uj: () => f,
+  Uj: () => _,
   ZH: () => p,
-  ZP: () => _,
+  ZP: () => f,
   ij: () => g
 });
 var r = n(512722),
@@ -18,19 +18,19 @@ var r = n(512722),
   u = n(594174),
   d = n(51144);
 
-function _(e, t) {
-  let n = f(e);
+function f(e, t) {
+  let n = _(e);
   return i()(null != n, "Result cannot be null because the message is not null"), null != t ? t : n
 }
 
-function f(e) {
+function _(e) {
   var t;
   let n = (0, a.e7)([o.Z], () => null == e ? null : o.Z.getChannel(e.channel_id)),
     r = null == e || null == (t = e.author) ? void 0 : t.id,
     i = null == n ? void 0 : n.guild_id,
-    _ = (0, a.e7)([s.ZP], () => null == i || null == r ? null : s.ZP.getMember(i, r)),
-    f = (0, a.e7)([u.default], () => u.default.getUser(r), [r]),
-    p = d.ZP.useName((null == e ? void 0 : e.author.bot) ? null == e ? void 0 : e.author : f),
+    f = (0, a.e7)([s.ZP], () => null == i || null == r ? null : s.ZP.getMember(i, r)),
+    _ = (0, a.e7)([u.default], () => u.default.getUser(r), [r]),
+    p = d.ZP.useName((null == e ? void 0 : e.author.bot) ? null == e ? void 0 : e.author : _),
     {
       guild: h,
       guildRoles: m
@@ -49,7 +49,7 @@ function f(e) {
     guild: h,
     guildRoles: m,
     userName: p,
-    member: _,
+    member: f,
     friendNickname: g
   })
 }
@@ -79,16 +79,16 @@ function m(e, t) {
         guildRoles: t
       }
     }, [r]),
-    _ = (0, a.e7)([c.Z], () => null != n && (null == t ? void 0 : t.isPrivate()) ? c.Z.getNickname(n) : null),
-    f = d.ZP.useName(e);
+    f = (0, a.e7)([c.Z], () => null != n && (null == t ? void 0 : t.isPrivate()) ? c.Z.getNickname(n) : null),
+    _ = d.ZP.useName(e);
   return E({
     user: e,
     channel: t,
     guild: o,
     guildRoles: u,
     member: i,
-    userName: f,
-    friendNickname: _
+    userName: _,
+    friendNickname: f
   })
 }
 
@@ -117,15 +117,15 @@ function E(e) {
     guild: l,
     guildRoles: c,
     member: u,
-    userName: _,
-    friendNickname: f
-  } = e, p = null == o ? "???" : null != _ ? _ : d.ZP.getName(o);
+    userName: f,
+    friendNickname: _
+  } = e, p = null == o ? "???" : null != f ? f : d.ZP.getName(o);
   return (null == o ? void 0 : o.id) == null || null == s ? {
     nick: p,
     colorString: void 0,
     colorStrings: void 0
   } : (null == l ? void 0 : l.id) == null ? {
-    nick: null != f ? f : p,
+    nick: null != _ ? _ : p,
     colorString: void 0,
     colorStrings: void 0
   } : null == u ? {

@@ -46,8 +46,8 @@ function u(e, t) {
   }), e
 }
 let d = [],
-  _ = {},
   f = {},
+  _ = {},
   p = {},
   h = {},
   m = {},
@@ -57,15 +57,15 @@ let d = [],
   E = 10;
 
 function b(e) {
-  let t = _[e.id];
+  let t = f[e.id];
   h[e.id] = Date.now();
   let n = e;
-  for (let r of (null != t && (n = t.mergeFromApplicationUpdate(e)), _[e.id] = n, p[e.name.toLowerCase()] = n, e.aliases)) p[r.toLowerCase()] = n;
+  for (let r of (null != t && (n = t.mergeFromApplicationUpdate(e)), f[e.id] = n, p[e.name.toLowerCase()] = n, e.aliases)) p[r.toLowerCase()] = n;
   delete m[e.id]
 }
 
 function y() {
-  _ = {}, f = {}, p = {}, h = {}, m = {}
+  f = {}, _ = {}, p = {}, h = {}, m = {}
 }
 
 function O(e) {
@@ -198,7 +198,7 @@ function x(e) {
   return n
 }
 
-function M(e) {
+function k(e) {
   let {
     entitlements: t
   } = e, n = !1;
@@ -209,13 +209,13 @@ function M(e) {
   return n
 }
 
-function k(e) {
+function M(e) {
   let {
     guildId: t,
     applications: n
   } = e, r = [];
   for (let e of n) r.push(e.id), b(o.ZP.createFromServer(e));
-  f[t] = r
+  _[t] = r
 }
 
 function j(e) {
@@ -311,23 +311,23 @@ class W extends(r = i.ZP.PersistedStore) {
     return g
   }
   _getAllApplications() {
-    return Object.values(_)
+    return Object.values(f)
   }
   getApplications() {
-    return _
+    return f
   }
   getGuildApplication(e, t) {
     if (null != e) {
-      for (let n of Object.values(_))
+      for (let n of Object.values(f))
         if (n.guildId === e && n.type === t) return n
     }
   }
   getGuildApplicationIds(e) {
     var t;
-    return null == e ? d : null != (t = f[e]) ? t : d
+    return null == e ? d : null != (t = _[e]) ? t : d
   }
   getApplication(e) {
-    if (null != e) return _[e]
+    if (null != e) return f[e]
   }
   getApplicationByName(e) {
     if (null == e) return;
@@ -362,10 +362,10 @@ let K = new W(a.Z, {
   APPLICATIONS_FETCH_SUCCESS: P,
   APPLICATIONS_FETCH_FAIL: x,
   APPLICATION_UPDATE: I,
-  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: M,
-  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: M,
-  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: M,
-  GUILD_APPLICATIONS_FETCH_SUCCESS: k,
+  APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: k,
+  ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: k,
+  ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: k,
+  GUILD_APPLICATIONS_FETCH_SUCCESS: M,
   BILLING_PAYMENTS_FETCH_SUCCESS: j,
   PAYMENT_UPDATE: U,
   INVITE_RESOLVE_SUCCESS: B,

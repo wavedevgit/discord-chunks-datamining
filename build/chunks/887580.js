@@ -14,8 +14,8 @@ var r = n(255367),
   c = n(499533),
   u = n(492435),
   d = n(389494),
-  _ = n(353926),
-  f = n(405548);
+  f = n(353926),
+  _ = n(405548);
 let p = RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 
 function h(e) {
@@ -47,7 +47,7 @@ function b(e) {
     }))
   }, [t]);
   return (0, r.jsx)(o.P3F, {
-    className: f.copyLinkButton,
+    className: _.copyLinkButton,
     onClick: n,
     children: (0, r.jsx)(o.xPt, {
       size: "sm",
@@ -59,7 +59,7 @@ function b(e) {
 function y(e) {
   let {
     url: t
-  } = e, n = m(t), i = g(t), l = (0, a.e7)([_.Z], () => _.Z.getRegisteredExperiments()), p = (0, a.e7)([_.Z], () => null == n ? null : _.Z.getLoadedUserExperiment(n)), h = (0, a.cj)([_.Z], () => _.Z.getAllExperimentOverrideDescriptors()), E = (0, a.e7)([s.default], () => {
+  } = e, n = m(t), i = g(t), l = (0, a.e7)([f.Z], () => f.Z.getRegisteredExperiments()), p = (0, a.e7)([f.Z], () => null == n ? null : f.Z.getLoadedUserExperiment(n)), h = (0, a.cj)([f.Z], () => f.Z.getAllExperimentOverrideDescriptors()), E = (0, a.e7)([s.default], () => {
     let e = s.default.getCurrentUser();
     return (null == e ? void 0 : e.isStaff()) || (null == e ? void 0 : e.isStaffPersonal())
   });
@@ -86,10 +86,10 @@ function y(e) {
     color: "text-muted",
     children: ["Server Config: ", c.Z.getExperimentBucketName(p.bucket)]
   })), E) ? (0, r.jsxs)("div", {
-    className: f.root,
+    className: _.root,
     children: [(0, r.jsx)("div", {
       children: (0, r.jsx)("div", {
-        className: f.header,
+        className: _.header,
         children: (0, r.jsxs)(o.Kqy, {
           direction: "horizontal",
           align: "start",
@@ -123,7 +123,7 @@ function y(e) {
           children: T ? "Clear Treatment ".concat(v.value) : "Apply Treatment ".concat(v.value)
         })
       }) : (0, r.jsx)("div", {
-        className: f.experimentOverride,
+        className: _.experimentOverride,
         children: (0, r.jsx)(d.y, {
           experiment: y,
           experimentId: n,

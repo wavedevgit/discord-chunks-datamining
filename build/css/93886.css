@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 4e21479e920d7286
+  Original File Name: e09e2fba8c96722e
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -998,7 +998,7 @@
 }
 
 .errorIcon_a81334 {
-    color: var(--info-danger-foreground);
+    color: var(--status-danger);
     height: 22px;
     margin-right: 8px;
     vertical-align: bottom;
@@ -3609,4 +3609,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=4e21479e920d7286.css.map*/
+/*# sourceMappingURL=e09e2fba8c96722e.css.map*/

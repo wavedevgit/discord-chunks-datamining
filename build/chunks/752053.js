@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => p,
-  i: () => f
+  i: () => _
 }), n(953529);
 var r = n(255367);
 n(73800);
@@ -14,15 +14,15 @@ var i = n(442837),
   c = n(388032),
   u = n(373063),
   d = n(982240),
-  _ = n(533854),
-  f = function(e) {
+  f = n(533854),
+  _ = function(e) {
     return e[e.SHOP_PAGE = 0] = "SHOP_PAGE", e[e.GIFT_MODAL = 1] = "GIFT_MODAL", e
   }({});
 let p = e => {
   let {
     onRetry: t,
     errorOrigin: n,
-    errorMessage: f
+    errorMessage: _
   } = e, p = (0, s.ZP)(), h = (0, i.e7)([l.default], () => {
     let e = l.default.getCurrentUser();
     return (null == e ? void 0 : e.isStaff()) || (null == e ? void 0 : e.isStaffPersonal())
@@ -31,7 +31,7 @@ let p = e => {
     className: m,
     children: [(0, r.jsx)("img", {
       className: u.__invalid_loadIssueImg,
-      src: (0, a.wj)(p) ? d : _,
+      src: (0, a.wj)(p) ? d : f,
       alt: ""
     }), (0, r.jsx)(o.X6q, {
       className: u.heading1,
@@ -41,9 +41,9 @@ let p = e => {
       className: u.description,
       variant: "text-md/normal",
       children: g
-    }), h && null != f && (0, r.jsx)(o.Text, {
+    }), h && null != _ && (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: "staff-only debug: " + f
+      children: "staff-only debug: " + _
     }), (0, r.jsx)(o.zxk, {
       className: u.reload,
       size: o.zxk.Sizes.MEDIUM,

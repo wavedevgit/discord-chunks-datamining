@@ -31,14 +31,14 @@ function d(e) {
   c[t] = !0
 }
 
-function _(e) {
+function f(e) {
   let {
     guildId: t,
     topEmojisMetadata: n
   } = e;
   l.topEmojisByGuildId[t] = n.map(e => e.emojiId), c[t] = !1
 }
-class f extends(r = i.ZP.PersistedStore) {
+class _ extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     l = null != e ? e : s
   }
@@ -52,9 +52,9 @@ class f extends(r = i.ZP.PersistedStore) {
     return c[e]
   }
 }
-o(f, "displayName", "TopEmojiStore"), o(f, "persistKey", "TopEmojiStore");
-let p = new f(a.Z, {
+o(_, "displayName", "TopEmojiStore"), o(_, "persistKey", "TopEmojiStore");
+let p = new _(a.Z, {
   LOGOUT: u,
   TOP_EMOJIS_FETCH: d,
-  TOP_EMOJIS_FETCH_SUCCESS: _
+  TOP_EMOJIS_FETCH_SUCCESS: f
 })

@@ -9,7 +9,7 @@ n.d(t, {
   aC: () => L,
   pI: () => T,
   sR: () => D,
-  tt: () => k
+  tt: () => M
 }), n(539854);
 var r = n(399606),
   i = n(704215),
@@ -20,8 +20,8 @@ var r = n(399606),
   c = n(294629),
   u = n(401062),
   d = n(131704),
-  _ = n(496675),
-  f = n(594174),
+  f = n(496675),
+  _ = n(594174),
   p = n(626135),
   h = n(74538),
   m = n(51144),
@@ -40,7 +40,7 @@ function T() {
 }
 
 function S(e, t) {
-  return (null == t ? void 0 : t.guild_id) == null || _.Z.can(I.Plq.USE_EXTERNAL_SOUNDS, t) || e.guildId === v.X8 || e.guildId === (null == t ? void 0 : t.guild_id)
+  return (null == t ? void 0 : t.guild_id) == null || f.Z.can(I.Plq.USE_EXTERNAL_SOUNDS, t) || e.guildId === v.X8 || e.guildId === (null == t ? void 0 : t.guild_id)
 }
 
 function A(e, t, n) {
@@ -71,7 +71,7 @@ function P() {
   return Object.values(null != (t = null == (e = l.Z.settings.guilds) ? void 0 : e.guilds) ? t : {}).some(e => null != e.joinSound)
 }
 async function w(e) {
-  let t = f.default.getCurrentUser(),
+  let t = _.default.getCurrentUser(),
     n = (0, a.Z)(),
     r = (0, O.k9)(e);
   if (null == n || d.Lr.has(n.type) || null == r || !h.ZP.canUseCustomCallSounds(t) || !(0, y.D)()) return;
@@ -87,7 +87,7 @@ async function w(e) {
 function D(e) {
   let {
     isSoundboardButtonDisabled: t = !1
-  } = e, n = (0, r.e7)([f.default], () => f.default.getCurrentUser()), a = [];
+  } = e, n = (0, r.e7)([_.default], () => _.default.getCurrentUser()), a = [];
   if (!t && !P()) {
     a.push(i.z.CUSTOM_CALL_SOUNDS_SPARKLES);
     let e = (0, m.Fc)(n);
@@ -98,7 +98,7 @@ function D(e) {
 
 function L(e, t) {
   (0, s.PS)(e, n => {
-    n.joinSound = void 0, M({
+    n.joinSound = void 0, k({
       guildId: e,
       changeType: b.MW.REMOVED,
       soundType: b.jy.ENTRY,
@@ -115,7 +115,7 @@ function x(e, t, n) {
     r.joinSound = {
       soundId: t.soundId,
       guildId: i ? v.hY : t.guildId
-    }, M({
+    }, k({
       guildId: e,
       changeType: o,
       soundSource: a,
@@ -125,7 +125,7 @@ function x(e, t, n) {
   }, s.fy.INFREQUENT_USER_ACTION)
 }
 
-function M(e) {
+function k(e) {
   let {
     guildId: t,
     changeType: n,
@@ -142,7 +142,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     location: t
   } = e;

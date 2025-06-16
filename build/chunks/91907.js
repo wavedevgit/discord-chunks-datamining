@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r = n(255367),
   i = n(73800),
@@ -48,19 +48,19 @@ function d(e, t) {
   }), e
 }
 
-function _(e) {
+function f(e) {
   let {
     user: t,
     text: n,
     channel: l,
     textClassName: u,
-    onPopoutClosed: _
-  } = e, f = i.useMemo(() => [t], [t]), p = i.useRef(null);
+    onPopoutClosed: f
+  } = e, _ = i.useMemo(() => [t], [t]), p = i.useRef(null);
   return (0, r.jsx)(s.Z, {
     targetElementRef: p,
-    participants: f,
+    participants: _,
     channel: l,
-    onPopoutClosed: _,
+    onPopoutClosed: f,
     children: e => (0, r.jsx)(o.Z, d(c({}, e), {
       tag: "span",
       children: (0, r.jsx)(a.xv, {

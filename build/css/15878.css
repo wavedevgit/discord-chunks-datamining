@@ -1,6 +1,6 @@
 /**
   Module ID: 15878
-  Original File Name: bb289262ce4c6983
+  Original File Name: 39c08a2c4c614d8d
 **/
 .section__82d84 {
     margin-bottom: 16px
@@ -640,7 +640,7 @@
 
 .playButton__76084 {
     align-items: center;
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: 50%;
     display: flex;
     height: 32px;
@@ -755,4 +755,4 @@
     width: 20px
 }
 
-/*# sourceMappingURL=bb289262ce4c6983.css.map*/
+/*# sourceMappingURL=39c08a2c4c614d8d.css.map*/

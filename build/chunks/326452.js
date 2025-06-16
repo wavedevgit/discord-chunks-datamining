@@ -11,8 +11,8 @@ var r, i = n(255367),
   c = n(84735),
   u = n(922770),
   d = n(481060),
-  _ = n(388032),
-  f = n(559122);
+  f = n(388032),
+  _ = n(559122);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,9 +71,9 @@ function b(e, t) {
   return i
 }
 let y = Object.freeze({
-    SMALL: f.small,
-    MEDIUM: f.medium,
-    LARGE: f.large
+    SMALL: _.small,
+    MEDIUM: _.medium,
+    LARGE: _.large
   }),
   O = e => {
     let {
@@ -84,8 +84,8 @@ let y = Object.freeze({
       size: c = y.SMALL
     } = e;
     return (0, i.jsx)(l.P, {
-      className: s()(r, f.iconLayout, c, {
-        [f.pointer]: t
+      className: s()(r, _.iconLayout, c, {
+        [_.pointer]: t
       }),
       onClick: e => {
         e.stopPropagation(), null != n && n(e)
@@ -96,25 +96,25 @@ let y = Object.freeze({
         e.preventDefault(), e.stopPropagation()
       },
       children: (0, i.jsx)("div", {
-        className: f.iconContainer,
+        className: _.iconContainer,
         children: o ? (0, i.jsx)(u.$, {
           type: u.$.Type.SPINNING_CIRCLE,
-          className: s()(f.icon, f.visible)
+          className: s()(_.icon, _.visible)
         }) : (0, i.jsxs)(a.Fragment, {
           children: [(0, i.jsx)(d._Ve, {
             size: "md",
             color: "currentColor",
-            className: s()(f.icon, {
-              [f.visible]: !t
+            className: s()(_.icon, {
+              [_.visible]: !t
             }),
-            "aria-label": _.intl.string(_.t["5h0QOD"])
+            "aria-label": f.intl.string(f.t["5h0QOD"])
           }), (0, i.jsx)(d.Dio, {
             size: "md",
             color: "currentColor",
-            className: s()(f.clear, {
-              [f.visible]: t
+            className: s()(_.clear, {
+              [_.visible]: t
             }),
-            "aria-label": _.intl.string(_.t.VkKicX)
+            "aria-label": f.intl.string(f.t.VkKicX)
           })]
         })
       })
@@ -141,7 +141,7 @@ class v extends(r = a.PureComponent) {
         autoFocus: n,
         onClear: r,
         className: a,
-        placeholder: o = _.intl.string(_.t["5h0QOD"]),
+        placeholder: o = f.intl.string(f.t["5h0QOD"]),
         iconClassName: l,
         onKeyDown: u,
         onKeyUp: d,
@@ -155,24 +155,24 @@ class v extends(r = a.PureComponent) {
         autoComplete: S,
         inputProps: A,
         hideSearchIcon: N,
-        "aria-label": C = _.intl.string(_.t["5h0QOD"])
+        "aria-label": C = f.intl.string(f.t["5h0QOD"])
       } = e,
       R = E(e, ["query", "autoFocus", "onClear", "className", "placeholder", "iconClassName", "onKeyDown", "onKeyUp", "onKeyPress", "isLoading", "size", "disabled", "onChange", "onBlur", "onFocus", "autoComplete", "inputProps", "hideSearchIcon", "aria-label"]);
     return (0, i.jsx)(c.t, {
       focusTarget: this.inputRef,
       ringTarget: this.containerRef,
       children: (0, i.jsx)("div", g(h({
-        className: s()(a, f.container, b, {
-          [f.disabled]: y
+        className: s()(a, _.container, b, {
+          [_.disabled]: y
         }),
         ref: this.containerRef
       }, R), {
         children: (0, i.jsxs)("div", {
-          className: f.inner,
+          className: _.inner,
           children: [(0, i.jsx)("input", g(h({}, A), {
             onFocus: T,
             onBlur: I,
-            className: f.input,
+            className: _.input,
             value: t,
             onChange: this.handleOnChange,
             onKeyDown: u,

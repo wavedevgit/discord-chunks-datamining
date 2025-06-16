@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(388685);
 var r, i = n(255367),
   a = n(73800),
@@ -19,7 +19,7 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class _ extends(r = a.PureComponent) {
+class f extends(r = a.PureComponent) {
   render() {
     var e;
     let {
@@ -28,8 +28,8 @@ class _ extends(r = a.PureComponent) {
       children: r,
       error: o,
       isLoading: d,
-      maxLength: _,
-      transitionState: f,
+      maxLength: f,
+      transitionState: _,
       helpMessage: p,
       retryPrompt: h,
       retrySuccessMessage: m
@@ -63,7 +63,7 @@ class _ extends(r = a.PureComponent) {
       })
     }) : null;
     return (0, i.jsx)(l.Y0X, {
-      transitionState: f,
+      transitionState: _,
       parentComponent: "MFAConfirm",
       children: (0, i.jsxs)("form", {
         onSubmit: this.handleSubmit,
@@ -86,7 +86,7 @@ class _ extends(r = a.PureComponent) {
               inputRef: this.setRef,
               onChange: this.handleCodeChange,
               placeholder: null != (e = this.getPlaceholder()) ? e : void 0,
-              maxLength: null != _ ? _ : 10,
+              maxLength: null != f ? f : 10,
               value: g,
               autoComplete: "one-time-code",
               autoFocus: !0
@@ -157,11 +157,11 @@ class _ extends(r = a.PureComponent) {
     })
   }
 }
-d(_, "defaultProps", {
+d(f, "defaultProps", {
   btnClass: "",
   isLoading: !1,
   disallowBackupCodes: !1,
   error: null,
   forceNoPlaceholder: !1
 });
-let f = _
+let _ = f

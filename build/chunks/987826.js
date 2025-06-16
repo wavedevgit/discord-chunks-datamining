@@ -19,15 +19,15 @@ function c(e) {
     state: c,
     isInline: u,
     onClick: d
-  } = e, _ = n + (u ? ":" : ""), f = null, p = s.Z.Colors.HEADER_PRIMARY;
-  (null == c ? void 0 : c.isActive) && !u ? f = l.active : (null == c || null == (t = c.lastValidationResult) ? void 0 : t.success) === !1 ? f = l.error : (null == c ? void 0 : c.hasValue) && !u && (f = l.set);
+  } = e, f = n + (u ? ":" : ""), _ = null, p = s.Z.Colors.HEADER_PRIMARY;
+  (null == c ? void 0 : c.isActive) && !u ? _ = l.active : (null == c || null == (t = c.lastValidationResult) ? void 0 : t.success) === !1 ? _ = l.error : (null == c ? void 0 : c.hasValue) && !u && (_ = l.set);
   let h = (0, r.jsx)(s.Z, {
     size: u ? s.Z.Sizes.SIZE_16 : s.Z.Sizes.SIZE_14,
     color: p,
     className: a()(l.option, {
       [l.inline]: u
-    }, f, i),
-    children: _
+    }, _, i),
+    children: f
   });
   return null == d ? h : (0, r.jsx)(o.P3F, {
     className: l.clickable,

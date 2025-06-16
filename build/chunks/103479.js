@@ -14,8 +14,8 @@ var i = n(481060),
   c = n(652853),
   u = n(475413),
   d = n(228168),
-  _ = n(388032),
-  f = n(227832);
+  f = n(388032),
+  _ = n(227832);
 async function p(e) {
   let {
     activity: t,
@@ -48,7 +48,7 @@ function h(e) {
   let l = (0, o.Z)(n);
   return s === d.lY.MODAL_V2 ? (0, r.jsx)(r.Fragment, {
     children: n.buttons.map((e, o) => (0, r.jsx)(u.tG, {
-      text: l ? _.intl.string(_.t["I6JG4+"]) : e,
+      text: l ? f.intl.string(f.t["I6JG4+"]) : e,
       size: i.PhG.TINY,
       themeColor: "secondary",
       onClick: e => {
@@ -63,8 +63,8 @@ function h(e) {
     }, o))
   }) : (0, r.jsx)(r.Fragment, {
     children: n.buttons.map((e, i) => (0, r.jsx)(u.tG, {
-      text: l ? _.intl.string(_.t["I6JG4+"]) : e,
-      className: f.customButton,
+      text: l ? f.intl.string(f.t["I6JG4+"]) : e,
+      className: _.customButton,
       themeColor: "secondary",
       fullWidth: !0,
       onClick: e => {

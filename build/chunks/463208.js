@@ -12,8 +12,8 @@ var r, i = n(255367),
   c = n(84735),
   u = n(15127),
   d = n(481060),
-  _ = n(699682),
-  f = n(540059),
+  f = n(699682),
+  _ = n(540059),
   p = n(388032),
   h = n(953100);
 
@@ -81,7 +81,7 @@ let v = {
 function I(e) {
   let {
     error: t
-  } = e, n = (0, f.Q3)("TextInputError"), r = (0, d.Yzy)(t, {
+  } = e, n = (0, _.Q3)("TextInputError"), r = (0, d.Yzy)(t, {
     config: {
       tension: 250,
       clamp: !0
@@ -104,7 +104,7 @@ function I(e) {
       opacity: 0,
       transform: "translate3d(0, -100%, 0)"
     }
-  }), a = (0, _.Z)(t);
+  }), a = (0, f.Z)(t);
   return (0, i.jsx)(i.Fragment, {
     children: r((e, r, o) => {
       let {
@@ -155,15 +155,15 @@ class T extends(r = a.Component) {
         disabled: l,
         size: u,
         editable: d,
-        inputRef: _,
-        prefixElement: f,
+        inputRef: f,
+        prefixElement: _,
         focusProps: p
       } = n,
       m = y(n, ["className", "inputClassName", "inputPrefix", "disabled", "size", "editable", "inputRef", "prefixElement", "focusProps"]),
       E = null != (t = m["aria-labelledby"]) ? t : null == (e = this.context) ? void 0 : e.titleId;
     return (0, i.jsxs)("div", {
       className: s()(h.inputWrapper, r),
-      children: [null != f && f, null != o ? (0, i.jsx)("span", {
+      children: [null != _ && _, null != o ? (0, i.jsx)("span", {
         className: h.inputPrefix,
         children: o
       }) : null, (0, i.jsx)(c.t, b(g({}, p), {
@@ -180,7 +180,7 @@ class T extends(r = a.Component) {
           onChange: this.onChange,
           onBlur: this.onBlur,
           onFocus: this.onFocus,
-          ref: _
+          ref: f
         }))
       })), (0, i.jsx)(I, {
         error: this.getError()

@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 084ffea0ba01882e
+  Original File Name: 4944c2df61ad39c1
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -1824,7 +1824,7 @@
 }
 
 .container__50387 {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: var(--elevation-high);
     box-sizing: border-box;
@@ -1857,7 +1857,7 @@
 }
 
 .debugPanelStandalone__50387 {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: var(--elevation-high);
     width: 290px
@@ -2696,7 +2696,7 @@
 }
 
 .voiceChannelEffectEmojiContainer__66db8 {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: 50%;
     box-shadow: 0 0 16px rgba(0,0,0,.24);
     position: absolute;
@@ -3204,7 +3204,7 @@
 }
 
 .chatWheelDeadZone_adfa30 {
-    fill: var(--background-floating);
+    fill: var(--background-surface-high);
     opacity: 0
 }
 
@@ -3213,7 +3213,7 @@
 }
 
 .chatWheelCenter_adfa30 {
-    fill: var(--background-floating);
+    fill: var(--background-surface-high);
     opacity: .6
 }
 
@@ -3250,7 +3250,7 @@
 
 .chatWheelBackground_adfa30 {
     fill: none;
-    stroke: var(--background-floating);
+    stroke: var(--background-surface-high);
     opacity: .9
 }
 
@@ -3267,4 +3267,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=084ffea0ba01882e.css.map*/
+/*# sourceMappingURL=4944c2df61ad39c1.css.map*/

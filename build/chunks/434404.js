@@ -12,8 +12,8 @@ var r = n(990547),
   c = n(408987),
   u = n(962086),
   d = n(160404),
-  _ = n(41776),
-  f = n(703656),
+  f = n(41776),
+  _ = n(703656),
   p = n(6025),
   h = n(314897),
   m = n(271383),
@@ -214,8 +214,8 @@ let R = new s.Z("GuildSettingsActionCreators"),
         splash: s,
         banner: u,
         homeHeader: d,
-        afkChannelId: _,
-        afkTimeout: f,
+        afkChannelId: f,
+        afkTimeout: _,
         systemChannelId: p,
         verificationLevel: h,
         defaultMessageNotifications: m,
@@ -238,8 +238,8 @@ let R = new s.Z("GuildSettingsActionCreators"),
         home_header: d,
         features: E,
         preferred_locale: y,
-        afk_channel_id: _,
-        afk_timeout: f,
+        afk_channel_id: f,
+        afk_timeout: _,
         system_channel_id: p,
         verification_level: h,
         default_message_notifications: m,
@@ -347,7 +347,7 @@ let R = new s.Z("GuildSettingsActionCreators"),
     }),
     async leaveGuild(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-        n = _.Z.isLurking(e);
+        n = f.Z.isLurking(e);
       await i.tn.del({
         url: O.ANM.GUILD_LEAVE(e),
         body: {
@@ -355,7 +355,7 @@ let R = new s.Z("GuildSettingsActionCreators"),
         },
         oldFormErrors: !0,
         rejectWithError: !1
-      }), P.close(), t && n && (0, f.uL)(O.Z5c.GUILD_DISCOVERY)
+      }), P.close(), t && n && (0, _.uL)(O.Z5c.GUILD_DISCOVERY)
     },
     async updateMemberRoles(e, t, n, r, o) {
       if (d.Z.isFullServerPreview(e) && t === h.default.getId()) return void(0, u.og)(e, n);

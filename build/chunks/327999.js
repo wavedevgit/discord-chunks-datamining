@@ -21,16 +21,16 @@ function d(e, t) {
   return e + t
 }
 
-function _(e, t) {
+function f(e, t) {
   return t.map(t => d(e, t))
 }
 
-function f(e) {
+function _(e) {
   return e.split("-")[1]
 }
 
 function p(e) {
-  return e.filter(e => u[e] <= 1).map(f)
+  return e.filter(e => u[e] <= 1).map(_)
 }
 
 function h(e, t) {
@@ -100,7 +100,7 @@ function v(e) {
   }
 }
 async function I(e, t) {
-  let n = _(e, t),
+  let n = f(e, t),
     i = p(n);
   if (0 === i.length) return [];
   h(n, 2);
@@ -121,9 +121,9 @@ async function I(e, t) {
       } = e;
       return o.push(t)
     });
-    let s = _(e, o),
+    let s = f(e, o),
       c = i.filter(e => !o.includes(e)),
-      u = _(e, c);
+      u = f(e, c);
     return h(s, 3), h(u, 0), a
   } catch (e) {
     h(n, 0)

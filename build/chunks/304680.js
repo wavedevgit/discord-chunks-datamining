@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  MS: () => _,
+  MS: () => f,
   TC: () => d,
   bA: () => s,
-  gl: () => f,
+  gl: () => _,
   xv: () => l,
   z4: () => c,
   zc: () => u
@@ -49,7 +49,7 @@ function d(e) {
   })
 }
 
-function _(e, t, n) {
+function f(e, t, n) {
   r.Z.dispatch({
     type: "RTC_DEBUG_SET_SIMULCAST_OVERRIDE",
     userId: e,
@@ -58,7 +58,7 @@ function _(e, t, n) {
   })
 }
 
-function f() {
+function _() {
   i.Z.fileManager.showOpenDialog({
     filters: [{
       name: "All Files",

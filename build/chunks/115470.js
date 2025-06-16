@@ -47,7 +47,7 @@ function u(e, t) {
 }
 let d = {};
 
-function _(e) {
+function f(e) {
   let {
     feedbackType: t,
     cooldown: n,
@@ -59,7 +59,7 @@ function _(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     feedbackType: t
   } = e;
@@ -73,6 +73,6 @@ class p extends(r = i.ZP.Store) {
 }
 s(p, "displayName", "FeedbackOverrideStore"), s(p, "persistKey", "feedbackOverrides");
 let h = new p(a.Z, {
-  FEEDBACK_OVERRIDE_SET: _,
-  FEEDBACK_OVERRIDE_CLEAR: f
+  FEEDBACK_OVERRIDE_SET: f,
+  FEEDBACK_OVERRIDE_CLEAR: _
 })

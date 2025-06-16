@@ -1,10 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  I4: () => _,
+  I4: () => f,
   Sn: () => u,
   U3: () => p,
-  Ui: () => f,
+  Ui: () => _,
   W4: () => c,
   gq: () => d,
   kZ: () => l
@@ -74,14 +74,14 @@ async function d(e, t, n) {
   })
 }
 
-function _(e) {
+function f(e) {
   i.Z.dispatch({
     applicationId: e,
     type: "INTEGRATION_PERMISSION_SETTINGS_INIT"
   })
 }
 
-function f(e) {
+function _(e) {
   i.Z.dispatch({
     commandId: e,
     type: "INTEGRATION_PERMISSION_SETTINGS_RESET"

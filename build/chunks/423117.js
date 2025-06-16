@@ -23,7 +23,7 @@ var r = n(379649),
   u = n(295141),
   d = n(981631);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,14 +32,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -142,7 +142,7 @@ async function T(e) {
     analyticsContext: a,
     onBeforeDispatchNewListing: o
   } = e, c = await u.aG(t, n, r);
-  return l.default.track(d.rMx.ROLE_SUBSCRIPTION_LISTING_CREATED, f({
+  return l.default.track(d.rMx.ROLE_SUBSCRIPTION_LISTING_CREATED, _({
     role_subscription_listing_id: c.id,
     role_subscription_group_listing_id: n,
     template_name: a.templateCategory,

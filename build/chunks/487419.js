@@ -12,7 +12,7 @@ var r, i = n(442837),
   u = n(709054),
   d = n(533244);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,14 +21,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -41,7 +41,7 @@ function m() {
   let t = null != (e = s.Z.getGuildsProto()) ? e : {},
     n = l.Z.getGuilds(),
     r = u.default.keys(n);
-  for (let e of (h = {}, r)) h[e] = f({
+  for (let e of (h = {}, r)) h[e] = _({
     guildId: e,
     guildName: n[e].name
   }, t[e])
@@ -103,7 +103,7 @@ class I extends(r = i.ZP.Store) {
     return h
   }
 }
-_(I, "displayName", "GuildIncidentsStore");
+f(I, "displayName", "GuildIncidentsStore");
 let T = new I(a.Z, {
   CONNECTION_OPEN: E,
   GUILD_CREATE: b,

@@ -1,6 +1,6 @@
 /**
   Module ID: 98787
-  Original File Name: 754014e3b5df544f
+  Original File Name: e920305480e88117
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -3003,7 +3003,7 @@ div:has(>.positionLayer_fc71d3) {
 }
 
 .theme-dark .progressBarContainer_eff079 {
-    background-color: var(--background-floating)
+    background-color: var(--background-surface-high)
 }
 
 .theme-light .tier1Icon_eff079,.theme-light .tier2Icon_eff079 {
@@ -4110,7 +4110,7 @@ div:has(>.positionLayer_fc71d3) {
 
 .container__349bd {
     align-items: flex-start;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 8px;
     box-shadow: var(--elevation-high),var(--elevation-stroke);
     display: flex;
@@ -4201,7 +4201,7 @@ div:has(>.positionLayer_fc71d3) {
 }
 
 .popout__76f04 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: var(--elevation-medium);
     box-sizing: border-box;
@@ -4474,7 +4474,7 @@ div:has(>.positionLayer_fc71d3) {
 }
 
 .container__4e30a {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 5px;
     box-shadow: var(--elevation-high);
     margin-left: 16px;
@@ -4527,7 +4527,7 @@ div:has(>.positionLayer_fc71d3) {
 
 .bar__7aaec {
     align-items: center;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 20px;
     box-shadow: var(--shadow-high);
     cursor: pointer;
@@ -6031,7 +6031,7 @@ div:has(>.positionLayer_fc71d3) {
 }
 
 .container__50387 {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: var(--elevation-high);
     box-sizing: border-box;
@@ -6064,7 +6064,7 @@ div:has(>.positionLayer_fc71d3) {
 }
 
 .debugPanelStandalone__50387 {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: var(--elevation-high);
     width: 290px
@@ -6228,7 +6228,7 @@ div:has(>.positionLayer_fc71d3) {
 }
 
 .noiseCancellationPopout_e131a9 {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: var(--elevation-high);
     padding: 16px;
@@ -6464,7 +6464,7 @@ div:has(>.positionLayer_fc71d3) {
 
 .viewAsRolesWarning_e131a9 {
     align-items: center;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 4px;
     bottom: 96px;
     display: flex;
@@ -6520,7 +6520,7 @@ div:has(>.positionLayer_fc71d3) {
 }
 
 .chatWheelDeadZone_adfa30 {
-    fill: var(--background-floating);
+    fill: var(--background-surface-high);
     opacity: 0
 }
 
@@ -6529,7 +6529,7 @@ div:has(>.positionLayer_fc71d3) {
 }
 
 .chatWheelCenter_adfa30 {
-    fill: var(--background-floating);
+    fill: var(--background-surface-high);
     opacity: .6
 }
 
@@ -6566,7 +6566,7 @@ div:has(>.positionLayer_fc71d3) {
 
 .chatWheelBackground_adfa30 {
     fill: none;
-    stroke: var(--background-floating);
+    stroke: var(--background-surface-high);
     opacity: .9
 }
 
@@ -6583,4 +6583,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=754014e3b5df544f.css.map*/
+/*# sourceMappingURL=e920305480e88117.css.map*/

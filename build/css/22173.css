@@ -1,6 +1,6 @@
 /**
   Module ID: 22173
-  Original File Name: f6164c2b26affc67
+  Original File Name: 04b95f86d3db973b
 **/
 .effect_a9ddb3 {
     bottom: 0;
@@ -255,7 +255,7 @@
 
 .container__7e919 {
     align-items: flex-start;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 8px;
     box-shadow: var(--elevation-high),var(--elevation-stroke);
     display: flex;
@@ -927,7 +927,7 @@
 }
 
 .reactionTooltip_b49891 {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: var(--radius-xs);
     box-shadow: var(--elevation-high);
     color: var(--text-normal);
@@ -1421,4 +1421,4 @@
     background-color: var(--background-tertiary)
 }
 
-/*# sourceMappingURL=f6164c2b26affc67.css.map*/
+/*# sourceMappingURL=04b95f86d3db973b.css.map*/

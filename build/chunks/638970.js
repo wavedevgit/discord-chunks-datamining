@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(493773),
   u = n(468363),
   d = n(906732),
-  _ = n(158776),
-  f = n(885110),
+  f = n(158776),
+  _ = n(885110),
   p = n(823379),
   h = n(785717),
   m = n(369566),
@@ -107,22 +107,22 @@ function x(e) {
   } = (0, d.ZP)(), {
     trackUserProfileAction: x
   } = (0, h.KZ)(), {
-    live: M,
-    stream: k
+    live: k,
+    stream: M
   } = (0, m.Z)(t.id), {
     voiceChannel: j,
     voiceActivity: U
   } = (0, g.Z)({
     userId: t.id,
     guildId: p
-  }), G = t.id === n.id, B = (0, s.e7)([f.Z, _.Z], () => {
-    let e = G ? f.Z.getStatus() : _.Z.getStatus(t.id, p);
+  }), G = t.id === n.id, B = (0, s.e7)([_.Z, f.Z], () => {
+    let e = G ? _.Z.getStatus() : f.Z.getStatus(t.id, p);
     return e === I.Sk.OFFLINE || e === I.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: V
   } = (0, u.U)({
     location: "UserProfileStackedActivity"
-  }), F = V && null == k && null == U && null != j, Z = (0, E.yi)(), H = (null == Z ? void 0 : Z.interactionSource) === v.n_.ACTIVITY, Y = i.useRef(null), W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), [q, X] = i.useReducer(D, L), {
+  }), F = V && null == M && null == U && null != j, Z = (0, E.yi)(), H = (null == Z ? void 0 : Z.interactionSource) === v.n_.ACTIVITY, Y = i.useRef(null), W = i.useRef(null), K = i.useRef(null), z = i.useRef(null), [q, X] = i.useReducer(D, L), {
     height: Q,
     animationPhase: J
   } = q, $ = "awaitingInput" !== J, ee = "animating" === J || "done" === J, et = [], en = {
@@ -131,11 +131,11 @@ function x(e) {
     className: S.card,
     onClose: C
   };
-  null != k && et.push((0, r.jsx)(y.Z, N({
+  null != M && et.push((0, r.jsx)(y.Z, N({
     location: "UserProfileStackedActivity",
-    stream: k,
+    stream: M,
     profileGuildId: null == a ? void 0 : a.guildId
-  }, en), "stream")), M.forEach((e, t) => {
+  }, en), "stream")), k.forEach((e, t) => {
     et.push((0, r.jsx)(b.Z, N({
       activity: e,
       profileGuildId: null == a ? void 0 : a.guildId

@@ -49,9 +49,9 @@ function d(e, t) {
   }), e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
-  var n, r, i = f(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +59,7 @@ function _(e, t) {
   return i
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -73,9 +73,9 @@ function p(e) {
     muted: n = !1,
     selected: i = !1,
     className: l
-  } = e, u = _(e, ["as", "muted", "selected", "className"]);
-  let f = null != t ? t : o.P;
-  return (0, r.jsx)(f, d(c({}, u), {
+  } = e, u = f(e, ["as", "muted", "selected", "className"]);
+  let _ = null != t ? t : o.P;
+  return (0, r.jsx)(_, d(c({}, u), {
     className: a()(s.interactive, l, {
       [s.muted]: n,
       [s.selected]: i

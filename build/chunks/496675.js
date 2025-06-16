@@ -11,8 +11,8 @@ var r, i = n(392711),
   c = n(160404),
   u = n(41776),
   d = n(427679),
-  _ = n(569471),
-  f = n(195663),
+  f = n(569471),
+  _ = n(195663),
   p = n(131704),
   h = n(601964),
   m = n(598077),
@@ -86,11 +86,11 @@ function x() {
   R += 1
 }
 
-function M() {
+function k() {
   x()
 }
 
-function k() {
+function M() {
   J()
 }
 
@@ -153,7 +153,7 @@ function F(e) {
 }
 
 function Z(e) {
-  return !!(0, f.s)(e) && (L(e.guildId), !0)
+  return !!(0, _.s)(e) && (L(e.guildId), !0)
 }
 
 function H(e) {
@@ -219,7 +219,7 @@ function X(e, t, n, r) {
   if (e instanceof p.Sf) {
     if (p.Ec.has(e.type)) {
       let i = b.Z.getChannel(e.parent_id);
-      return null == i ? E.Hn : E.Og(e, X(i, t, n, r), _.Z.hasJoined(e.id))
+      return null == i ? E.Hn : E.Og(e, X(i, t, n, r), f.Z.hasJoined(e.id))
     }
     i = D(e.id)
   } else e instanceof h.ZP && (i = P(e.id));
@@ -234,7 +234,7 @@ function X(e, t, n, r) {
 }
 class Q extends(r = s.ZP.Store) {
   initialize() {
-    this.waitFor(v.default, O.Z, b.Z, y.ZP, _.Z, d.Z, c.Z)
+    this.waitFor(v.default, O.Z, b.Z, y.ZP, f.Z, d.Z, c.Z)
   }
   getChannelPermissions(e) {
     return p.Ec.has(e.type) ? w(e.id) : D(e.id)
@@ -322,12 +322,12 @@ function J() {
 }
 S(Q, "displayName", "PermissionStore");
 let $ = new Q(l.Z, {
-  BACKGROUND_SYNC: M,
-  CONNECTION_OPEN: M,
-  OVERLAY_INITIALIZE: M,
-  CACHE_LOADED: M,
-  CACHE_LOADED_LAZY: M,
-  CONNECTION_CLOSED: k,
+  BACKGROUND_SYNC: k,
+  CONNECTION_OPEN: k,
+  OVERLAY_INITIALIZE: k,
+  CACHE_LOADED: k,
+  CACHE_LOADED_LAZY: k,
+  CONNECTION_CLOSED: M,
   GUILD_CREATE: j,
   GUILD_UPDATE: j,
   GUILD_DELETE: j,

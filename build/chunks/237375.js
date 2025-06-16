@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(118012),
   u = n(987826),
   d = n(826298),
-  _ = n(761652),
-  f = n(388032),
+  f = n(761652),
+  _ = n(388032),
   p = n(893541);
 
 function h(e, t, n) {
@@ -95,11 +95,11 @@ function O(e) {
       variant: "text-sm/normal",
       children: e.displayName
     }, e.name))
-  }), _ = o.map(e => y(e, null == n ? void 0 : n[e.name], a)), h = l.length > 0 ? (0, r.jsxs)(r.Fragment, {
+  }), f = o.map(e => y(e, null == n ? void 0 : n[e.name], a)), h = l.length > 0 ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.X6q, {
       className: p.optionalHeader,
       variant: "heading-deprecated-12/semibold",
-      children: f.intl.string(f.t["5C107O"])
+      children: _.intl.string(_.t["5C107O"])
     }), l.map(e => y(e, null == n ? void 0 : n[e.name], a))]
   }) : null, g = u.length > 0 ? (0, r.jsx)(s.ua7, {
     text: d,
@@ -109,15 +109,15 @@ function O(e) {
       className: p.optionalCount,
       color: c.Z.Colors.MUTED
     }, e), {
-      children: 0 === l.length ? f.intl.formatToPlainString(f.t["0mI72t"], {
+      children: 0 === l.length ? _.intl.formatToPlainString(_.t["0mI72t"], {
         count: u.length
-      }) : f.intl.formatToPlainString(f.t.BP8N0N, {
+      }) : _.intl.formatToPlainString(_.t.BP8N0N, {
         count: u.length
       })
     }))
   }) : null;
   return (0, r.jsxs)(r.Fragment, {
-    children: [_, null != h || null != g ? (0, r.jsxs)("div", {
+    children: [f, null != h || null != g ? (0, r.jsxs)("div", {
       className: p.optionals,
       children: [h, g]
     }) : null]
@@ -129,7 +129,7 @@ function v(e) {
   let s, {
       command: c,
       activeOptionName: u,
-      channel: f,
+      channel: _,
       showOptions: h,
       showImage: m,
       optionStates: g,
@@ -148,7 +148,7 @@ function v(e) {
     className: o()(p.wrapper, y ? null : p.disabled),
     children: [null != T ? (0, r.jsx)(T, {
       className: p.image,
-      channel: f,
+      channel: _,
       section: b,
       width: 32,
       height: 32
@@ -158,7 +158,7 @@ function v(e) {
         className: p.usageWrapper,
         children: [(0, r.jsx)(l.BR, {
           className: p.title,
-          children: _.GI + c.displayName
+          children: f.GI + c.displayName
         }), h ? (0, r.jsx)(O, {
           command: c,
           optionStates: g,

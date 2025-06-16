@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(570140),
   u = n(794295),
   d = n(663993),
-  _ = n(95398),
-  f = n(339085),
+  f = n(95398),
+  _ = n(339085),
   p = n(779699),
   h = n(359875),
   m = n(124072),
@@ -35,8 +35,8 @@ var r = n(255367),
   D = n(311739),
   L = n(981631),
   x = n(176505),
-  M = n(73433),
-  k = n(283574);
+  k = n(73433),
+  M = n(283574);
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -115,7 +115,7 @@ function F(e) {
         channelId: l,
         messageId: c,
         isInteracting: u
-      } = a, d = f.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
+      } = a, d = _.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
       if (null != d) {
         let t = d.require_colons;
         e = B(U({}, e), {
@@ -192,9 +192,9 @@ n(484944);
 let Y = {
   blockQuote: {
     react: (e, t, n) => (0, r.jsxs)("div", {
-      className: M.blockquoteContainer,
+      className: k.blockquoteContainer,
       children: [(0, r.jsx)("div", {
-        className: M.blockquoteDivider
+        className: k.blockquoteDivider
       }), (0, r.jsx)("blockquote", {
         children: t(e.content, n)
       })]
@@ -225,14 +225,14 @@ let Y = {
   codeBlock: {
     react(e, t, i) {
       let a = () => (0, r.jsx)("code", {
-        className: o()(k.scrollbarGhostHairline, "hljs"),
+        className: o()(M.scrollbarGhostHairline, "hljs"),
         children: (0, S.S)(e, t, i)
       });
       return (0, r.jsx)("pre", {
         children: (0, r.jsxs)("div", {
-          className: M.codeContainer,
+          className: k.codeContainer,
           children: [T.wS ? (0, r.jsx)("div", {
-            className: M.codeActions,
+            className: k.codeActions,
             children: (0, r.jsx)(H, {
               text: e.content
             })
@@ -245,7 +245,7 @@ let Y = {
               {
                 let n = t.highlight(e.lang, e.content, !0);
                 return null == n ? a() : (0, r.jsx)("code", {
-                  className: o()(k.scrollbarGhostHairline, "hljs", n.language),
+                  className: o()(M.scrollbarGhostHairline, "hljs", n.language),
                   dangerouslySetInnerHTML: {
                     __html: n.value
                   }
@@ -265,8 +265,8 @@ let Y = {
     }, n.key)
   },
   spoiler: {
-    react: (e, t, n) => (0, r.jsx)(_.ZP, {
-      type: _.ZP.Types.TEXT,
+    react: (e, t, n) => (0, r.jsx)(f.ZP, {
+      type: f.ZP.Types.TEXT,
       inline: n.formatInline,
       renderTextElement: (e, t) => null == e || e.type !== u.Z || t ? e : i.cloneElement(e, {
         tabIndex: -1
@@ -308,7 +308,7 @@ let Y = {
         a = null == e.start ? void 0 : (e.start + (e.items.length - 1)).toString().length;
       return (0, s.reactElement)(i, "".concat(n.key), {
         start: e.start,
-        className: n.formatInline ? M.inlineFormat : null,
+        className: n.formatInline ? k.inlineFormat : null,
         style: {
           "--totalCharacters": a
         },
@@ -334,7 +334,7 @@ let Y = {
         children: [i, (0, r.jsx)(l.nn4, {
           children: ","
         }, "screen-reader-pause")],
-        className: n.formatInline ? M.inlineFormat : null
+        className: n.formatInline ? k.inlineFormat : null
       })
     }
   },
@@ -363,7 +363,7 @@ let Y = {
       });
       return (0, s.reactElement)("small", (null == n ? void 0 : n.key) != null ? "".concat(n.key) : null, {
         children: r,
-        className: n.formatInline ? M.inlineFormat : null
+        className: n.formatInline ? k.inlineFormat : null
       })
     }
   },

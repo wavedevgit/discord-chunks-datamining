@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: 6f71a4033fd21a39
+  Original File Name: 990bb883baf3acfb
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -3501,7 +3501,7 @@ html:not(.visual-refresh).theme-dark .container_a3e8db.selected_a3e8db {
 }
 
 .actionButton_d9752c.actionDeny_d9752c:hover {
-    color: var(--info-danger-foreground)
+    color: var(--status-danger)
 }
 
 .icon_d9752c {
@@ -4580,7 +4580,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .notches__06283.black__06283 {
-    color: var(--background-floating)
+    color: var(--background-surface-high)
 }
 
 .theme-dark .progress__06283 {
@@ -8357,7 +8357,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .seeAllPerksButton_ca1a02 {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: 0 12px 36px 0 var(--opacity-black-16);
     color: var(--text-normal);
@@ -9854,7 +9854,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .paymentBanner_e335a7 {
     align-items: center;
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: 4px;
     display: flex;
     margin-bottom: 14px;
@@ -15217,7 +15217,7 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
 
 .themes__6fdb8 {
     align-items: center;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border: 1px solid var(--border-strong);
     border-radius: var(--radius-md);
     bottom: var(--space-24);
@@ -17548,7 +17548,7 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
 }
 
 .container__37c99 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 5px;
     box-shadow: var(--elevation-high);
     padding: 2px 4px
@@ -19705,4 +19705,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=6f71a4033fd21a39.css.map*/
+/*# sourceMappingURL=990bb883baf3acfb.css.map*/

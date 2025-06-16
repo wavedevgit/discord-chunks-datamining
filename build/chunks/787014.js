@@ -5,8 +5,8 @@ n.d(t, {
   ZP: () => g,
   pW: () => p,
   wk: () => h,
-  xv: () => _,
-  zc: () => f,
+  xv: () => f,
+  zc: () => _,
   zz: () => m
 }), n(997841);
 var r = n(544891),
@@ -32,13 +32,13 @@ function d(e, t, n) {
   u(e, t, n), (0, l.jN)(c.S9g.CHANNEL_SETTINGS)
 }
 
-function _() {
+function f() {
   i.Z.dispatch({
     type: "CHANNEL_SETTINGS_CLOSE"
   })
 }
 
-function f(e) {
+function _(e) {
   i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SET_SECTION",
     section: e
@@ -57,8 +57,8 @@ function p(e) {
     rateLimitPerUser: c,
     defaultThreadRateLimitPerUser: u,
     defaultAutoArchiveDuration: d,
-    template: _,
-    defaultReactionEmoji: f,
+    template: f,
+    defaultReactionEmoji: _,
     rtcRegion: p,
     videoQualityMode: h,
     autoArchiveDuration: m,
@@ -83,8 +83,8 @@ function p(e) {
     rateLimitPerUser: c,
     defaultThreadRateLimitPerUser: u,
     defaultAutoArchiveDuration: d,
-    template: _,
-    defaultReactionEmoji: f,
+    template: f,
+    defaultReactionEmoji: _,
     rtcRegion: p,
     videoQualityMode: h,
     autoArchiveDuration: m,
@@ -104,8 +104,8 @@ async function h(e, t) {
     type: l,
     position: u,
     topic: d,
-    bitrate: _,
-    userLimit: f,
+    bitrate: f,
+    userLimit: _,
     nsfw: p,
     flags: h,
     permissionOverwrites: m,
@@ -135,8 +135,8 @@ async function h(e, t) {
       type: l,
       position: u,
       topic: d,
-      bitrate: _,
-      user_limit: f,
+      bitrate: f,
+      user_limit: _,
       nsfw: p,
       flags: h,
       permission_overwrites: m,
@@ -192,14 +192,14 @@ function m(e) {
     rejectWithError: !0
   }).then(() => {
     let e = null == t ? void 0 : t.getGuildId();
-    null == e || (null == t ? void 0 : t.isThread()) || a.Z.checkGuildTemplateDirty(e), _()
+    null == e || (null == t ? void 0 : t.isThread()) || a.Z.checkGuildTemplateDirty(e), f()
   })
 }
 let g = {
   init: u,
   open: d,
-  close: _,
-  setSection: f,
+  close: f,
+  setSection: _,
   selectPermissionOverwrite: function(e) {
     i.Z.dispatch({
       type: "CHANNEL_SETTINGS_OVERWRITE_SELECT",

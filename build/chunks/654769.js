@@ -11,8 +11,8 @@ var r, i = n(392711),
   c = n(933557),
   u = n(710845),
   d = n(811627),
-  _ = n(330619),
-  f = n(691294),
+  f = n(330619),
+  _ = n(691294),
   p = n(460181),
   h = n(474873),
   m = n(135906),
@@ -46,7 +46,7 @@ if (P && !w) {
 }
 let L = new u.Z("NotificationUtils"),
   x = P && D || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
-async function M() {
+async function k() {
   if (null === l.Z || void 0 === l.Z ? void 0 : l.Z.features.supports("notifications")) try {
     return await N.ZP.invoke("NOTIFICATIONS_GET_SETTINGS")
   } catch (e) {
@@ -54,8 +54,8 @@ async function M() {
   }
   return null
 }
-async function k() {
-  let e = await M();
+async function M() {
+  let e = await k();
   return (null == e ? void 0 : e.authorizationStatus) === "authorized" && (null == e ? void 0 : e.sound) === !0
 }
 
@@ -66,7 +66,7 @@ function j(e, t) {
 async function U(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
     n = arguments.length > 2 ? arguments[2] : void 0;
-  if (await k()) try {
+  if (await M()) try {
     await N.ZP.invoke("NOTIFICATIONS_SEND_NOTIFICATION", {
       sound: j(e, n)
     });
@@ -144,7 +144,7 @@ function Z(e) {
 }
 async function H() {
   if (null === l.Z || void 0 === l.Z ? void 0 : l.Z.features.supports("notifications")) {
-    let e = await M();
+    let e = await k();
     return (null == e ? void 0 : e.authorizationStatus) === "authorized" || (null == e ? void 0 : e.authorizationStatus) === "provisional"
   }
   return null != V && "granted" === V.permission
@@ -152,7 +152,7 @@ async function H() {
 async function Y() {
   if (null === l.Z || void 0 === l.Z ? void 0 : l.Z.features.supports("notifications")) {
     var e;
-    return (null == (e = await M()) ? void 0 : e.authorizationStatus) !== "undetermined"
+    return (null == (e = await k()) ? void 0 : e.authorizationStatus) !== "undetermined"
   }
   return null != V && "default" !== V.permission
 }
@@ -164,15 +164,15 @@ function W(e) {
 }
 async function K(e, t, n, r, i) {
   var a, o, s, l, u, p, h;
-  let m, R = await M(),
+  let m, R = await k(),
     w = (null == R ? void 0 : R.authorizationStatus) === "authorized" || (null == R ? void 0 : R.authorizationStatus) === "provisional",
-    k = null != R ? w : await H(),
-    U = w && (!P || (0, _.R)({
+    M = null != R ? w : await H(),
+    U = w && (!P || (0, f.R)({
       location: "showNotification"
     }).enabled),
     G = O.Z.disableNotifications && null == i.overrideStreamerMode,
     B = !A.isPlatformEmbedded || (0, A.isMac)() && U || N.ZP.shouldDisplayNotifications();
-  if (!(!G && k && B)) {
+  if (!(!G && M && B)) {
     null != i.sound && !1 !== i.playSoundIfDisabled && W(i.sound, null != (a = i.volume) ? a : 1, i.soundpack);
     return
   }
@@ -183,7 +183,7 @@ async function K(e, t, n, r, i) {
       var t;
       null == (t = i.onShown) || t.call(i), i.omitViewTracking || I.default.track(C.rMx.NOTIFICATION_VIEWED, r), x && setTimeout(() => e.close(), 5e3)
     };
-  if (null == i.sound || Y || W(i.sound, null != (s = i.volume) ? s : 1, i.soundpack), i.isUserAvatar && null != e && (e = await (0, f.D)(e)), P && b.Z.taskbarFlash && N.ZP.flashFrame(!0), U) {
+  if (null == i.sound || Y || W(i.sound, null != (s = i.volume) ? s : 1, i.soundpack), i.isUserAvatar && null != e && (e = await (0, _.D)(e)), P && b.Z.taskbarFlash && N.ZP.flashFrame(!0), U) {
     let a = {
       title: t,
       body: n

@@ -1,6 +1,6 @@
 /**
   Module ID: 6850
-  Original File Name: 7a062052978feacc
+  Original File Name: 0d0ef12d17fade5f
 **/
 .searchContainer__6ae25 {
     position: relative
@@ -17,7 +17,7 @@
 }
 
 .resultsListContainer__6ae25 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border: 1px solid var(--background-tertiary);
     border-radius: 0 0 5px 5px;
     box-shadow: var(--elevation-high);
@@ -1472,7 +1472,7 @@
 }
 
 .rolePopout__31b61 {
-    background-color: var(--background-floating)
+    background-color: var(--background-surface-high)
 }
 
 .roleNameContainer__31b61 {
@@ -2450,4 +2450,4 @@
     margin-left: 4px
 }
 
-/*# sourceMappingURL=7a062052978feacc.css.map*/
+/*# sourceMappingURL=0d0ef12d17fade5f.css.map*/

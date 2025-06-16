@@ -12,9 +12,9 @@ var r = n(255367),
   c = n(607070),
   u = n(921944),
   d = n(388032),
-  _ = n(671821);
+  f = n(671821);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,7 +30,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -58,40 +58,40 @@ function g(e) {
     onComplete: t,
     onCheckItOutClick: n,
     config: i
-  } = e, u = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), f = (0, l.ZP)();
+  } = e, u = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), _ = (0, l.ZP)();
   return (0, r.jsxs)("div", {
-    className: _.container,
+    className: f.container,
     children: [(0, r.jsx)("img", {
       alt: d.intl.string(d.t.X4IxWF),
-      src: i.getImageUrl((0, o.wj)(f), u),
-      className: _.coachmark
+      src: i.getImageUrl((0, o.wj)(_), u),
+      className: f.coachmark
     }), (0, r.jsxs)("div", {
-      className: _.body,
+      className: f.body,
       children: [(0, r.jsx)(s.X6q, {
-        className: _.text,
+        className: f.text,
         variant: "heading-md/extrabold",
         children: i.title()
       }), (0, r.jsx)(s.Text, {
-        className: _.text,
+        className: f.text,
         variant: "text-sm/normal",
         children: i.description()
       })]
     }), (0, r.jsx)(s.zxk, {
-      className: _.button,
+      className: f.button,
       color: s.zxk.Colors.BRAND_INVERTED,
       onClick: () => n(),
       children: i.cta()
     }), (0, r.jsx)(s.P3F, {
       onClick: t,
-      className: _.closeButton,
+      className: f.closeButton,
       "aria-label": d.intl.string(d.t.cpT0Cg),
       children: (0, r.jsx)(s.Dio, {
         size: "md",
         color: "currentColor",
-        className: _.closeIcon
+        className: f.closeIcon
       })
     }), (0, r.jsx)("div", {
-      className: _.pointer
+      className: f.pointer
     })]
   })
 }

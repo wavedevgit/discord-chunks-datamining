@@ -1,6 +1,6 @@
 /**
   Module ID: 49286
-  Original File Name: 255eae3482e0e069
+  Original File Name: 7df469be71f4042e
 **/
 .imageUploader_e4d0bf {
     font-size: 12px;
@@ -662,7 +662,7 @@
 
 .iconWrapper__4a3a5 {
     align-self: flex-start;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 50%;
     height: 48px;
     width: 48px
@@ -696,7 +696,7 @@
 }
 
 .iconWrapper__83361 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 50%;
     height: 32px;
     margin-right: 8px;
@@ -1010,7 +1010,7 @@
 }
 
 .iconWrapper__9e732 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 50%;
     height: 48px;
     width: 48px
@@ -2028,4 +2028,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=255eae3482e0e069.css.map*/
+/*# sourceMappingURL=7df469be71f4042e.css.map*/

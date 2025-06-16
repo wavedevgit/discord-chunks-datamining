@@ -1,6 +1,6 @@
 /**
   Module ID: 74367
-  Original File Name: 68c74bb0c351a232
+  Original File Name: 0dbe37852a17747b
 **/
 .container__5537c {
     display: flex;
@@ -701,8 +701,8 @@
 }
 
 .theme-dark .previewCard_f70348 {
-    background-color: var(--background-floating);
-    border: 1px solid var(--background-floating)
+    background-color: var(--background-surface-high);
+    border: 1px solid var(--background-surface-high)
 }
 
 .visual-refresh .previewCard_f70348 {
@@ -911,7 +911,7 @@
 }
 
 .container__26abc {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: var(--elevation-high);
     max-height: 300px;
@@ -1508,4 +1508,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=68c74bb0c351a232.css.map*/
+/*# sourceMappingURL=0dbe37852a17747b.css.map*/

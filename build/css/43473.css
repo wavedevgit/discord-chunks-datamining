@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 1ba4121c065fc203
+  Original File Name: 7c0cdf24a1c8e57a
 **/
 .scroller__95bea {
     display: flex;
@@ -790,7 +790,7 @@
 }
 
 .background_fdf9c0:after {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     left: 0;
     opacity: .7;
     right: 0;
@@ -1394,4 +1394,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=1ba4121c065fc203.css.map*/
+/*# sourceMappingURL=7c0cdf24a1c8e57a.css.map*/

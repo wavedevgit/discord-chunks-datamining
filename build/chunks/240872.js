@@ -56,8 +56,8 @@ let d = {
       confirmText: s,
       cancelText: c,
       onConfirm: d,
-      onCancel: _,
-      onCloseCallback: f,
+      onCancel: f,
+      onCloseCallback: _,
       secondaryConfirmText: p,
       onConfirmSecondary: h,
       className: m,
@@ -71,13 +71,13 @@ let d = {
       confirmText: s,
       cancelText: c,
       onConfirm: d,
-      onCancel: _,
+      onCancel: f,
       secondaryConfirmText: p,
       onConfirmSecondary: h,
       className: m,
       titleClassName: g
     })), {
-      onCloseCallback: f
+      onCloseCallback: _
     }, E)
   },
   close() {},

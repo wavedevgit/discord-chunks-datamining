@@ -13,8 +13,8 @@ var i = n(570140),
   c = n(285651),
   u = n(268350),
   d = n(926491),
-  _ = n(373228),
-  f = n(419922),
+  f = n(373228),
+  _ = n(419922),
   p = n(483360),
   h = n(877565),
   m = n(590921),
@@ -29,7 +29,7 @@ let b = 8,
   };
 
 function O(e, t) {
-  return (0, r.jsx)(f.Z, {
+  return (0, r.jsx)(_.Z, {
     sticker: e,
     isInteracting: t,
     size: 40
@@ -106,7 +106,7 @@ let v = {
       options: c,
       channel: u,
       guild: d,
-      queryText: f
+      queryText: _
     } = e;
     if (null == n || l >= r.length) return {
       type: null
@@ -127,7 +127,7 @@ let v = {
       source: o.Z.getSource(u.id)
     }));
     let h = r[l];
-    return c.sendSticker(h.sticker, _.V0.BUILT_IN_INTEGRATION), h.sticker.type === _.n0.GUILD && (t = h.sticker.guild_id), a.ZP.trackWithMetadata(g.rMx.SEARCH_RESULT_SELECTED, {
+    return c.sendSticker(h.sticker, f.V0.BUILT_IN_INTEGRATION), h.sticker.type === f.n0.GUILD && (t = h.sticker.guild_id), a.ZP.trackWithMetadata(g.rMx.SEARCH_RESULT_SELECTED, {
       load_id: h.sticker.id,
       search_type: g.aib.STICKER,
       source_object: "/".concat(n),
@@ -135,7 +135,7 @@ let v = {
       index_num: l,
       expression_guild_id: t,
       sticker_id: h.sticker.id,
-      query: f
+      query: _
     }), {
       type: m.z2.STICKER,
       metadata: {

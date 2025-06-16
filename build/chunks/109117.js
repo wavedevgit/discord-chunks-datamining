@@ -13,7 +13,7 @@ var r = n(268146),
   u = n(729345),
   d = n(981631);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -88,7 +88,7 @@ async function y() {
 }
 
 function O(e, t, n) {
-  var i, a, o, s, l, c, u, d, _, p, h, m, g, E, b, y, O, v, I;
+  var i, a, o, s, l, c, u, d, f, p, h, m, g, E, b, y, O, v, I;
 
   function T(e) {
     return (null == n ? void 0 : n.storedInformation) != null && 1 === n.storedInformation[e]
@@ -111,14 +111,14 @@ function O(e, t, n) {
     was_receiving_stream: T(r.X4.IsReceivingStream),
     video_media_session_id: S(r.X4.VideoMediaSessionId),
     stream_media_session_id: S(r.X4.StreamMediaSessionId),
-    last_memory_usage_kb: null != (_ = null == n || null == (i = n.lastMemoryInformation) ? void 0 : i.memoryUsageKB) ? _ : null,
+    last_memory_usage_kb: null != (f = null == n || null == (i = n.lastMemoryInformation) ? void 0 : i.memoryUsageKB) ? f : null,
     last_used_js_heap_size_kb: null != (p = null == n || null == (a = n.lastMemoryInformation) ? void 0 : a.usedJSHeapSizeKB) ? p : null,
     last_memory_usage_uptime: null != (h = null == n || null == (o = n.lastMemoryInformation) ? void 0 : o.uptimeSeconds) ? h : null,
     highest_memory_usage_kb: null != (m = null == n || null == (s = n.highestMemoryInformation) ? void 0 : s.memoryUsageKB) ? m : null,
     highest_used_js_heap_size_kb: null != (g = null == n || null == (l = n.highestMemoryInformation) ? void 0 : l.usedJSHeapSizeKB) ? g : null,
     highest_memory_usage_uptime: null != (E = null == n || null == (c = n.highestMemoryInformation) ? void 0 : c.uptimeSeconds) ? E : null
   };
-  if (!e || null == n) return f({
+  if (!e || null == n) return _({
     electron_crash_reporter_did_crash: !1,
     minidump_exception_type: null,
     minidump_exception_module_name: null,
@@ -128,7 +128,7 @@ function O(e, t, n) {
   }, A);
   console.log("AppCrashedFatalReport lastCrash:", n, e);
   let N = null == n ? void 0 : n.minidumpInformation;
-  return f({
+  return _({
     electron_crash_reporter_did_crash: e,
     minidump_exception_type: null != (b = null == N ? void 0 : N.exceptionString) ? b : null,
     minidump_exception_module_name: null != (y = null == N ? void 0 : N.exceptionModuleName) ? y : null,

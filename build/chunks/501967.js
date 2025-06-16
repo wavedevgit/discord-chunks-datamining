@@ -11,8 +11,8 @@ var r, i = n(255367),
   c = n(846519),
   u = n(215569),
   d = n(600164),
-  _ = n(981631),
-  f = n(68379);
+  f = n(981631),
+  _ = n(68379);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -24,10 +24,10 @@ function p(e, t, n) {
 }
 let h = 3e3,
   m = {
-    [_.AEg.NORMAL]: f.normal,
-    [_.AEg.MINIMUM]: f.minimum,
-    [_.AEg.NO_CHAT]: f.noChat,
-    [_.AEg.FULL_SCREEN]: f.fullScreen
+    [f.AEg.NORMAL]: _.normal,
+    [f.AEg.MINIMUM]: _.minimum,
+    [f.AEg.NO_CHAT]: _.noChat,
+    [f.AEg.FULL_SCREEN]: _.fullScreen
   };
 class g extends a.PureComponent {
   componentDidAppear() {
@@ -50,7 +50,7 @@ class g extends a.PureComponent {
   }
   render() {
     return (0, i.jsx)(l.Z.div, {
-      className: s()(f.videoBackgroundTransition, this.props.className),
+      className: s()(_.videoBackgroundTransition, this.props.className),
       style: {
         opacity: this.state.animation
       },
@@ -88,7 +88,7 @@ class E extends(r = a.PureComponent) {
       layout: n
     } = this.props, r = "".concat(n, "-").concat(null != t ? t : "");
     return (0, i.jsx)(u.W, {
-      className: f.videoBackground,
+      className: _.videoBackground,
       component: "div",
       children: (0, i.jsx)(g, {
         children: e
@@ -106,29 +106,29 @@ class E extends(r = a.PureComponent) {
       idle: o
     } = this.state;
     return (0, i.jsx)(d.Z, {
-      className: s()(f.video, m[r], {
-        [f.idle]: o
+      className: s()(_.video, m[r], {
+        [_.idle]: o
       }),
       direction: d.Z.Direction.VERTICAL,
       justify: d.Z.Justify.CENTER,
       children: (0, i.jsxs)(d.Z, {
-        className: f.videoWrapper,
+        className: _.videoWrapper,
         direction: d.Z.Direction.VERTICAL,
         children: [this.renderBackground(), (0, i.jsxs)(d.Z, {
-          className: s()(f.videoInner, {
-            [f.focused]: a
+          className: s()(_.videoInner, {
+            [_.focused]: a
           }),
           direction: d.Z.Direction.VERTICAL,
           justify: d.Z.Justify.BETWEEN,
           children: [(0, i.jsx)(d.Z, {
-            className: f.videoTop,
+            className: _.videoTop,
             grow: 0,
             children: e
           }), (0, i.jsx)(d.Z, {
-            className: f.videoCenter,
+            className: _.videoCenter,
             children: t
           }), (0, i.jsx)(d.Z, {
-            className: f.videoBottom,
+            className: _.videoBottom,
             grow: 0,
             children: n
           })]
@@ -143,8 +143,8 @@ class E extends(r = a.PureComponent) {
       animated: n
     } = this.props;
     return (0, i.jsx)("div", {
-      className: s()(f.videoHeight, m[e], t, {
-        [f.animated]: n
+      className: s()(_.videoHeight, m[e], t, {
+        [_.animated]: n
       }),
       children: this.renderContents()
     })
@@ -154,7 +154,7 @@ class E extends(r = a.PureComponent) {
       let {
         layout: e
       } = this.props;
-      (e === _.AEg.FULL_SCREEN || e === _.AEg.NO_CHAT) && (this._timeout.start(h, () => this.setState({
+      (e === f.AEg.FULL_SCREEN || e === f.AEg.NO_CHAT) && (this._timeout.start(h, () => this.setState({
         idle: !0
       })), this.state.idle && this.setState({
         idle: !1
@@ -167,6 +167,6 @@ class E extends(r = a.PureComponent) {
   }
 }
 p(E, "defaultProps", {
-  layout: _.AEg.MINIMUM,
+  layout: f.AEg.MINIMUM,
   animated: !0
 })

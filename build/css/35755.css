@@ -1,6 +1,6 @@
 /**
   Module ID: 35755
-  Original File Name: acad9e7672dd60d5
+  Original File Name: 23f87b27ddad69f3
 **/
 .brokenImageIcon_f68fcb {
     color: var(--background-accent);
@@ -52,7 +52,7 @@
 
 .sortDropdown__27f60 {
     align-items: center;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: var(--radius-xxl);
     display: flex;
     gap: var(--spacing-4);
@@ -1320,4 +1320,4 @@
     border: 3px solid CanvasText
 }
 
-/*# sourceMappingURL=acad9e7672dd60d5.css.map*/
+/*# sourceMappingURL=23f87b27ddad69f3.css.map*/

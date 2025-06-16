@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: 6e142a0955d2a0b4
+  Original File Name: 50f5a4ce2289562b
 **/
 .errorBanner__3405b {
     color: var(--status-danger-text)
@@ -135,7 +135,7 @@
 
 .toolsContainer_ab2592 {
     align-items: center;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border: 1px solid var(--border-subtle);
     border-radius: 12px;
     bottom: 6px;
@@ -1027,7 +1027,7 @@
 }
 
 .footer__4d307 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 0 0 var(--radius-md) var(--radius-md);
     border-top: 1px solid var(--border-subtle);
     grid-area: footer;
@@ -1459,4 +1459,4 @@
     }
 }
 
-/*# sourceMappingURL=6e142a0955d2a0b4.css.map*/
+/*# sourceMappingURL=50f5a4ce2289562b.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 58914
-  Original File Name: 04286d18cc49088d
+  Original File Name: 3b16d617f30a45e2
 **/
 .ctaButtons_a77fde {
     display: grid;
@@ -156,7 +156,7 @@
 }
 
 .modalBg_de2fa0 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 12px;
     overflow: hidden
 }
@@ -929,4 +929,4 @@
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=04286d18cc49088d.css.map*/
+/*# sourceMappingURL=3b16d617f30a45e2.css.map*/

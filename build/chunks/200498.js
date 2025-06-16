@@ -3,7 +3,7 @@
 n.d(t, {
   B: () => m,
   Os: () => p,
-  _L: () => f,
+  _L: () => _,
   jU: () => g,
   nG: () => h
 });
@@ -17,9 +17,9 @@ var o = n(592125),
   c = n(700785),
   u = n(146085),
   d = n(427679),
-  _ = n(981631);
+  f = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   var i, a;
   let o = null == n ? void 0 : n.permissionOverwrites[e];
   return {
@@ -42,12 +42,12 @@ function h(e) {
   return (0, i.e7)([l.Z, s.Z, o.Z], () => {
     let t = o.Z.getChannel(e),
       n = s.Z.getGuild(null == t ? void 0 : t.getGuildId());
-    return !!(l.Z.can(_.Plq.ADMINISTRATOR, n) || l.Z.can(_.Plq.MANAGE_ROLES, t, void 0, void 0, !0) || l.Z.can(u.N, t))
+    return !!(l.Z.can(f.Plq.ADMINISTRATOR, n) || l.Z.can(f.Plq.MANAGE_ROLES, t, void 0, void 0, !0) || l.Z.can(u.N, t))
   }, [e])
 }
 
 function m(e) {
-  return (0, i.e7)([o.Z, l.Z], () => null != e && l.Z.can(_.Plq.MUTE_MEMBERS, o.Z.getChannel(e)), [e])
+  return (0, i.e7)([o.Z, l.Z], () => null != e && l.Z.can(f.Plq.MUTE_MEMBERS, o.Z.getChannel(e)), [e])
 }
 
 function g(e) {

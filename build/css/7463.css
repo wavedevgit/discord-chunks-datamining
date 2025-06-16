@@ -1,6 +1,6 @@
 /**
   Module ID: 7463
-  Original File Name: 658844d8cf145f34
+  Original File Name: 192f231021b5c400
 **/
 .left_caab99 {
     transform: rotate(270deg)
@@ -23,7 +23,7 @@
 }
 
 .container__09ccc {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: var(--elevation-high);
     margin-top: 4px;
@@ -61,7 +61,7 @@
 }
 
 .role__09ccc.disabled__09ccc:hover {
-    background-color: var(--background-floating)
+    background-color: var(--background-surface-high)
 }
 
 .label__09ccc {
@@ -190,7 +190,7 @@
 
 .rolesList_c9e42f {
     align-items: flex-start;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -1391,4 +1391,4 @@
     background-color: var(--bg-mod-subtle)
 }
 
-/*# sourceMappingURL=658844d8cf145f34.css.map*/
+/*# sourceMappingURL=192f231021b5c400.css.map*/

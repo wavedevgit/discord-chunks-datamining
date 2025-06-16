@@ -49,9 +49,9 @@ function d(e, t) {
   }), e
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
-  var n, r, i = f(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +59,7 @@ function _(e, t) {
   return i
 }
 
-function f(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -99,10 +99,10 @@ let p = Object.freeze({
       tag: s = "div",
       selectable: l = !1,
       strong: u = !1,
-      children: f,
+      children: _,
       style: m,
       "aria-label": g
-    } = e, E = _(e, ["className", "color", "size", "tag", "selectable", "strong", "children", "style", "aria-label"]);
+    } = e, E = f(e, ["className", "color", "size", "tag", "selectable", "strong", "children", "style", "aria-label"]);
     return (0, r.jsx)(s, d(c({
       "aria-label": g,
       className: a()(n, i, t, {
@@ -111,7 +111,7 @@ let p = Object.freeze({
       }),
       style: m
     }, E), {
-      children: f
+      children: _
     }))
   };
 m.Colors = p, m.Sizes = h;

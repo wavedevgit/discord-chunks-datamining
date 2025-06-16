@@ -175,7 +175,7 @@ function d(e) {
     }
   }]
 });
-class _ extends i.Z {
+class f extends i.Z {
   _initialize() {
     r.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen)
   }
@@ -186,7 +186,7 @@ class _ extends i.Z {
     d("SearchExperimentManager", !1)
   }
 }
-new _, (0, a.B)({
+new f, (0, a.B)({
   kind: "user",
   id: "2025-05_icymi_new_conversation_summaries",
   label: "New conversation summary in ICYMI",

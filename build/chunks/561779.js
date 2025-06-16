@@ -11,8 +11,8 @@ var r, i = n(255367),
   c = n.n(l),
   u = n(524979),
   d = n(374470),
-  _ = n(143450),
-  f = n(84735),
+  f = n(143450),
+  _ = n(84735),
   p = n(981729),
   h = n(607070),
   m = n(540059),
@@ -141,7 +141,7 @@ class S extends(r = a.PureComponent) {
       closestMarkerIndex: l,
       newClosestIndex: c,
       min: d,
-      max: _
+      max: f
     } = this.state, {
       disabled: m,
       stickToMarkers: E,
@@ -158,8 +158,8 @@ class S extends(r = a.PureComponent) {
       getAriaValueText: D,
       barClassName: L,
       grabberClassName: x,
-      grabberStyles: M = {},
-      markerPosition: k = 0,
+      grabberStyles: k = {},
+      markerPosition: M = 0,
       "aria-hidden": j,
       "aria-label": U,
       "aria-labelledby": G,
@@ -174,8 +174,8 @@ class S extends(r = a.PureComponent) {
         return (0, i.jsx)("div", {
           className: s()(g.mark, {
             [g.defaultValue]: r,
-            [g.markAbove]: 0 === k,
-            [g.markBelow]: 1 === k
+            [g.markAbove]: 0 === M,
+            [g.markBelow]: 1 === M
           }),
           style: {
             left: "".concat(e, "%")
@@ -197,7 +197,7 @@ class S extends(r = a.PureComponent) {
       keyboardFocused: r && h.Z.keyboardModeEnabled,
       children: e => {
         var a;
-        return (0, i.jsx)(f.t, {
+        return (0, i.jsx)(_.t, {
           focusTarget: this.containerRef,
           ringTarget: this.grabberRef,
           children: (0, i.jsxs)(u.animated.div, {
@@ -208,7 +208,7 @@ class S extends(r = a.PureComponent) {
             }),
             style: null == e ? void 0 : e.sliderStyles,
             "aria-valuemin": d,
-            "aria-valuemax": _,
+            "aria-valuemax": f,
             "aria-valuenow": t,
             "aria-disabled": m,
             "aria-orientation": R,
@@ -251,7 +251,7 @@ class S extends(r = a.PureComponent) {
                 forceOpen: n || r && h.Z.keyboardModeEnabled,
                 children: e => (0, i.jsx)("div", O(b({}, e), {
                   className: s()(g.grabber, x),
-                  style: O(b({}, M), {
+                  style: O(b({}, k), {
                     left: F
                   }),
                   onMouseDown: this.handleMouseDown,
@@ -301,8 +301,8 @@ class S extends(r = a.PureComponent) {
     if (e.clientX <= l || e.clientX >= c) return;
     let u = c - l,
       d = (e.clientX - r) / u,
-      _ = a[i] + 100 * d;
-    null != (t = this.props.equidistant ? v(_, a) : v(this.unscaleValue(_), o)) && (null == s || s(o[t])), this.setState({
+      f = a[i] + 100 * d;
+    null != (t = this.props.equidistant ? v(f, a) : v(this.unscaleValue(f), o)) && (null == s || s(o[t])), this.setState({
       newClosestIndex: t
     })
   }
@@ -343,13 +343,13 @@ class S extends(r = a.PureComponent) {
       if (n) return;
       let {
         clientX: u,
-        currentTarget: _
+        currentTarget: f
       } = e;
-      if (!(0, d.k)(_)) return;
+      if (!(0, d.k)(f)) return;
       let {
-        left: f,
+        left: _,
         width: p
-      } = _.getBoundingClientRect(), h = (u - f) / p;
+      } = f.getBoundingClientRect(), h = (u - _) / p;
       if (s) {
         let {
           nextClosestMarkerIndex: e
@@ -464,7 +464,7 @@ function A(e) {
     active: t,
     keyboardFocused: n,
     children: r
-  } = e, i = (0, m.Q3)("Slider"), [o, s] = a.useState(!1), l = (0, _.q)({
+  } = e, i = (0, m.Q3)("Slider"), [o, s] = a.useState(!1), l = (0, f.q)({
     "--grabber-size": n || t || o ? "20px" : "16px",
     "--bar-size": n || t || o ? "6px" : "4px",
     config: O(b({}, u.config.stiff), {

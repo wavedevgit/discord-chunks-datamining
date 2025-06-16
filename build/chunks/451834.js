@@ -13,8 +13,8 @@ var i = n(120356),
   c = n(493683),
   u = n(607070),
   d = n(785717),
-  _ = n(510659),
-  f = n(228168),
+  f = n(510659),
+  _ = n(228168),
   p = n(388032),
   h = n(158744),
   m = n(986449);
@@ -72,7 +72,7 @@ let g = e => {
     } = e, {
       interactionTypeSent: c,
       showInteractionToast: d
-    } = (0, _.Xo)(), m = c === f.P.REPLY ? p.intl.string(p.t.BPaiaW) : p.intl.string(p.t.Ry2EtL), b = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), y = (0, l.Yzy)(d, {
+    } = (0, f.Xo)(), m = c === _.P.REPLY ? p.intl.string(p.t.BPaiaW) : p.intl.string(p.t.Ry2EtL), b = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), y = (0, l.Yzy)(d, {
       from: {
         transform: b ? "translateY(0)" : "translateY(16px)",
         opacity: 0

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(596454),
   u = n(727637),
   d = n(607070),
-  _ = n(176354),
-  f = n(942466);
+  f = n(176354),
+  _ = n(942466);
 
 function p(e) {
   let {
@@ -21,9 +21,9 @@ function p(e) {
     shouldAnimate: n
   } = e;
   if (null == t) return null;
-  let i = _.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
+  let i = f.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
   return (0, r.jsx)(c.Z, {
-    className: f.traitEmoji,
+    className: _.traitEmoji,
     emojiId: t.id,
     emojiName: i,
     animated: t.animated,
@@ -35,18 +35,18 @@ function h(e) {
   let {
     trait: t,
     ellipsize: n
-  } = e, a = i.useRef(null), c = (0, u.Z)(a), _ = !(0, s.e7)([d.Z], () => d.Z.useReducedMotion) && c;
+  } = e, a = i.useRef(null), c = (0, u.Z)(a), f = !(0, s.e7)([d.Z], () => d.Z.useReducedMotion) && c;
   return null == t.label || t.label.length <= 0 ? null : (0, r.jsxs)("div", {
     ref: a,
-    className: o()(f.trait, {
-      [f.ellipsize]: n
+    className: o()(_.trait, {
+      [_.ellipsize]: n
     }),
     children: [(0, r.jsx)(p, {
       emoji: t.emoji,
-      shouldAnimate: _
+      shouldAnimate: f
     }), (0, r.jsx)(l.Text, {
       tag: "span",
-      className: n ? f.ellipsize : void 0,
+      className: n ? _.ellipsize : void 0,
       variant: "text-sm/normal",
       color: "text-normal",
       children: t.label
@@ -58,8 +58,8 @@ function m(e) {
   let {
     items: t
   } = e, n = i.useCallback((e, t) => "string" == typeof e ? (0, r.jsx)("div", {
-    className: o()(f.trait, {
-      [f.ellipsize]: t.ellipsize
+    className: o()(_.trait, {
+      [_.ellipsize]: t.ellipsize
     }),
     children: (0, r.jsx)(l.Text, {
       tag: "span",
@@ -79,7 +79,7 @@ function m(e) {
     renderItem: s
   }), [s]);
   return 0 === t.length ? null : (0, r.jsx)(l.Epb, {
-    className: f.container,
+    className: _.container,
     items: t,
     renderItem: a,
     renderOverflow: c,

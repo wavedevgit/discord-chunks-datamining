@@ -30,12 +30,12 @@ let u = () => ({
       description: c.intl.string(c.t["94l3Ul"])
     }
   },
-  _ = () => ({
+  f = () => ({
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css,
     icon: i.Ka2,
     description: c.intl.string(c.t["n/HqCg"])
   }),
-  f = () => ({
+  _ = () => ({
     color: r.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css,
     icon: i.OUq,
     description: c.intl.string(c.t.AU0zcX)
@@ -123,7 +123,7 @@ let u = () => ({
   };
 
 function S() {
-  return [p(), _(), h(), v()]
+  return [p(), f(), h(), v()]
 }
 
 function A() {
@@ -135,7 +135,7 @@ function N() {
 }
 
 function C() {
-  return [g(), f(), m(l.Eu4.TIER_3), v()]
+  return [g(), _(), m(l.Eu4.TIER_3), v()]
 }
 
 function R() {

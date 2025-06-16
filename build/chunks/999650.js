@@ -17,8 +17,8 @@ var r = n(658722),
   c = n(984933),
   u = n(699516),
   d = n(768119),
-  _ = n(944486),
-  f = n(914010),
+  f = n(944486),
+  _ = n(914010),
   p = n(246946),
   h = n(594174),
   m = n(483360),
@@ -104,8 +104,8 @@ function w() {
 let D = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",
   L = "\\d{4}",
   x = "([0-9]{4})-([0-9]{1,2})",
-  M = "([^\\d\\s]+)",
-  k = RegExp("(?:\\s*(".concat(D, "|").concat(x, "|").concat(L, "|").concat(M, "))"), "i"),
+  k = "([^\\d\\s]+)",
+  M = RegExp("(?:\\s*(".concat(D, "|").concat(x, "|").concat(L, "|").concat(k, "))"), "i"),
   j = RegExp("\\s*(true|false)", "i");
 
 function U(e) {
@@ -130,7 +130,7 @@ function V(e, t) {
 
 function F(e) {
   let t = e.getMatch(1),
-    n = f.Z.getGuildId(),
+    n = _.Z.getGuildId(),
     r = c.ZP.getChannels(n)[c.sH].concat(c.ZP.getChannels(n)[c.Zb]),
     i = c.ZP.getTextChannelNameDisambiguations(n),
     a = o().chain(r).map(e => {
@@ -211,7 +211,7 @@ function z(e, t) {
   let s = h.default.getCurrentUser(),
     l = e.toLowerCase().replace(/^@/, ""),
     c = null != s && e.length > 0 && (y.intl.string(y.t.Qf3ptr).startsWith(l) || b.ME.substr(1).startsWith(l)),
-    _ = n.filter(e => {
+    f = n.filter(e => {
       let {
         record: t
       } = e;
@@ -225,10 +225,10 @@ function z(e, t) {
         user: t
       }
     });
-  return c && _.unshift({
+  return c && f.unshift({
     text: b.ME,
     user: s
-  }), _
+  }), f
 }
 
 function q() {
@@ -340,21 +340,21 @@ function $() {
       getAutocompletions: (e, t, n) => W(e, n, b.dCx.FILTER_AFTER)
     },
     [b.dCx.ANSWER_BEFORE]: {
-      regex: k,
+      regex: M,
       follows: [b.dCx.FILTER_BEFORE],
       componentType: "ANSWER",
       mutable: !0,
       validator: e => V(e, "before")
     },
     [b.dCx.ANSWER_ON]: {
-      regex: k,
+      regex: M,
       follows: [b.dCx.FILTER_ON],
       componentType: "ANSWER",
       mutable: !0,
       validator: e => V(e, "on")
     },
     [b.dCx.ANSWER_AFTER]: {
-      regex: k,
+      regex: M,
       follows: [b.dCx.FILTER_AFTER],
       componentType: "ANSWER",
       mutable: !0,
@@ -385,7 +385,7 @@ function $() {
           return t
         }).filter(e => !e.isThread());
         if ("" === e.trim()) {
-          let e = _.Z.getChannelId(t),
+          let e = f.Z.getChannelId(t),
             n = r.find(t => t.id === e);
           null != n && (r.splice(r.indexOf(n), 1), r.unshift(n))
         }

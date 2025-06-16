@@ -1,6 +1,6 @@
 /**
   Module ID: 61526
-  Original File Name: e91f8003dea66dfc
+  Original File Name: 7946363b2914148e
 **/
 .modalContent__38295 {
     display: flex;
@@ -58,7 +58,7 @@
 
 .playPauseButtonWrapper__10841 {
     align-items: center;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
     display: flex;
@@ -353,4 +353,4 @@
     min-height: 0
 }
 
-/*# sourceMappingURL=e91f8003dea66dfc.css.map*/
+/*# sourceMappingURL=7946363b2914148e.css.map*/

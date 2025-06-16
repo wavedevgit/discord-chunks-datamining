@@ -20,12 +20,12 @@ let u = e => {
     className: a,
     minValue: u,
     maxValue: d
-  } = e, [_, f] = i.useState(t), p = c(_) || null != u && _ <= u, h = c(_) || null != d && _ >= d, m = e => {
-    n(c(e) ? null != u ? u : 0 : e), f(e)
+  } = e, [f, _] = i.useState(t), p = c(f) || null != u && f <= u, h = c(f) || null != d && f >= d, m = e => {
+    n(c(e) ? null != u ? u : 0 : e), _(e)
   }, g = e => {
-    e.stopPropagation(), p || m(_ - 1)
+    e.stopPropagation(), p || m(f - 1)
   }, E = e => {
-    e.stopPropagation(), h || m(_ + 1)
+    e.stopPropagation(), h || m(f + 1)
   }, b = e => {
     if (c(e)) return m(e);
     let t = parseInt(e);
@@ -49,7 +49,7 @@ let u = e => {
           })
         })
       }), (0, r.jsx)(s.oil, {
-        value: "".concat(_),
+        value: "".concat(f),
         onChange: b,
         inputClassName: l.value
       }), (0, r.jsx)(s.P3F, {

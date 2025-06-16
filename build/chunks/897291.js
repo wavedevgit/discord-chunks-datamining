@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(540059),
   u = n(963249),
   d = n(109213),
-  _ = n(51144),
-  f = n(443603),
+  f = n(51144),
+  _ = n(443603),
   p = n(981631),
   h = n(388032),
   m = n(302195);
@@ -63,7 +63,7 @@ function O(e) {
     channel: i
   } = e, {
     analyticsLocations: g
-  } = (0, l.ZP)(s.Z.GIFT_BUTTON), b = (0, _.Ft)(i), {
+  } = (0, l.ZP)(s.Z.GIFT_BUTTON), b = (0, f.Ft)(i), {
     Component: O,
     events: v,
     play: I
@@ -105,7 +105,7 @@ function O(e) {
   };
   return (0, r.jsx)(o.ua7, {
     text: h.intl.string(h.t.sWtWDQ),
-    children: e => (0, r.jsx)(f.Z, y(E(y(E({}, e), {
+    children: e => (0, r.jsx)(_.Z, y(E(y(E({}, e), {
       innerClassName: m.button,
       isActive: !1,
       "aria-label": h.intl.string(h.t.Z1RnTk),

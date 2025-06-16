@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: 9c6edde2ca84bb85
+  Original File Name: 986780812a29f5cf
 **/
 .buttonContent_a83ec9 {
     align-items: center;
@@ -147,7 +147,7 @@
 }
 
 .collectibleInfoContainer_c50f62 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -248,7 +248,7 @@
 }
 
 .nameplateRightPanePreviewContainer_c50f62 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: var(--radius-lg);
     height: auto;
     margin-left: 60px;
@@ -535,4 +535,4 @@
     width: 350px
 }
 
-/*# sourceMappingURL=9c6edde2ca84bb85.css.map*/
+/*# sourceMappingURL=986780812a29f5cf.css.map*/

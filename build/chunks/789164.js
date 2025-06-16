@@ -31,8 +31,8 @@ let d = i.forwardRef(function(e, t) {
   var n, {
       children: u,
       className: d,
-      titleClassName: _,
-      title: f,
+      titleClassName: f,
+      title: _,
       icon: p,
       disabled: h,
       htmlFor: m,
@@ -44,16 +44,16 @@ let d = i.forwardRef(function(e, t) {
   return (0, r.jsx)("div", {
     ref: t,
     className: d,
-    children: null != f ? (0, r.jsx)(a.y5t, {
+    children: null != _ ? (0, r.jsx)(a.y5t, {
       component: (0, r.jsxs)("div", {
         className: l.sectionTitle,
-        children: [p, null != f ? (0, r.jsx)(s.v, {
+        children: [p, null != _ ? (0, r.jsx)(s.v, {
           tag: g,
           id: y,
           htmlFor: m,
           disabled: h,
-          className: _,
-          children: f
+          className: f,
+          children: _
         }) : null]
       }),
       children: (0, r.jsx)("div", {

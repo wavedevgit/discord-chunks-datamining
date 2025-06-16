@@ -47,15 +47,15 @@ function d(e, t) {
   })(e, t)
 }
 
-function _(e) {
+function f(e) {
   var t = h();
   return function() {
     var n, r = m(e);
-    return n = t ? Reflect.construct(r, arguments, m(this).constructor) : r.apply(this, arguments), f(this, n)
+    return n = t ? Reflect.construct(r, arguments, m(this).constructor) : r.apply(this, arguments), _(this, n)
   }
 }
 
-function f(e, t) {
+function _(e, t) {
   return t && ("object" === o(t) || "function" == typeof t) ? t : p(e)
 }
 
@@ -90,7 +90,7 @@ function g(e, t, n) {
 }
 var E = function(e) {
   u(n, e);
-  var t = _(n);
+  var t = f(n);
 
   function n() {
     var e;

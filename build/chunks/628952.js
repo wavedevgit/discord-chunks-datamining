@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(481060),
   u = n(987209),
   d = n(678135),
-  _ = n(484459),
-  f = n(594174),
+  f = n(484459),
+  _ = n(594174),
   p = n(583434),
   h = n(905357),
   m = n(473608),
@@ -71,7 +71,7 @@ let I = e => {
   } = (0, p.T)(t), {
     giftRecipient: S,
     giftRecipientError: A
-  } = (0, u.wD)(), N = (0, l.e7)([f.default], () => f.default.getCurrentUser()), C = (0, h.k)(T), R = i.useRef(null);
+  } = (0, u.wD)(), N = (0, l.e7)([_.default], () => _.default.getCurrentUser()), C = (0, h.k)(T), R = i.useRef(null);
   if (null == T) return null;
   let [P] = T.items, w = () => {
     switch (P.type) {
@@ -96,7 +96,7 @@ let I = e => {
         children: g.intl.string(g.t.PpoJzs)
       }), D && (0, r.jsx)(c.yRy, {
         targetElementRef: R,
-        preload: () => (0, _.Z)(S.id, S.getAvatarURL(null, 80)),
+        preload: () => (0, f.Z)(S.id, S.getAvatarURL(null, 80)),
         renderPopout: e => (0, r.jsx)(d.Z, v(y({}, e), {
           user: S,
           pendingAvatar: S.getAvatarURL(null, (0, c.pxk)(c.EFr.SIZE_80)),

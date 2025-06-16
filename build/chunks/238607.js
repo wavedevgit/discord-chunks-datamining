@@ -13,9 +13,9 @@ var i = n(481060),
   c = n(475413),
   u = n(614716),
   d = n(228168),
-  _ = n(388032);
+  f = n(388032);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,7 +31,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -58,7 +58,7 @@ function g(e) {
   let {
     user: t,
     activity: n,
-    onAction: f,
+    onAction: _,
     onClose: h
   } = e, {
     themeType: g
@@ -79,12 +79,12 @@ function g(e) {
   }), O = y ? i.iWm : i.jje;
   if (null == b && null != n && (0, o.Z)(n)) return (0, r.jsx)(c.tG, {
     icon: O,
-    text: _.intl.string(_.t.RscU7O),
+    text: f.intl.string(f.t.RscU7O),
     size: g === d.lY.MODAL_V2 ? i.PhG.TINY : void 0,
     fullWidth: g !== d.lY.MODAL_V2,
     themeColor: "secondary",
     onClick: e => {
-      e.stopPropagation(), null == f || f({
+      e.stopPropagation(), null == _ || _({
         action: "PRESS_PLAY_BUTTON"
       }), E()
     }
@@ -109,7 +109,7 @@ function g(e) {
       fullWidth: g !== d.lY.MODAL_V2,
       themeColor: "secondary",
       onClick: e => {
-        e.stopPropagation(), null == f || f({
+        e.stopPropagation(), null == _ || _({
           action: "PRESS_JOIN_BUTTON"
         }), I()
       }
@@ -125,7 +125,7 @@ function g(e) {
       fullWidth: g !== d.lY.MODAL_V2,
       themeColor: "secondary",
       onClick: e => {
-        e.stopPropagation(), null == f || f({
+        e.stopPropagation(), null == _ || _({
           action: "PRESS_ASK_TO_JOIN_BUTTON"
         }), I()
       }

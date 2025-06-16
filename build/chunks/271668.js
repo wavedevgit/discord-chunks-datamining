@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(788911),
   u = n(911969),
   d = n(367907),
-  _ = n(588468),
-  f = n(30465),
+  f = n(588468),
+  _ = n(30465),
   p = n(218867),
   h = n(313201),
   m = n(806966),
@@ -35,8 +35,8 @@ var r = n(255367),
 let D = 512,
   L = 7,
   x = 56,
-  M = 16,
-  k = 32,
+  k = 16,
+  M = 32,
   j = 20,
   U = 420,
   G = [8, 8, 0, 8],
@@ -90,7 +90,7 @@ let D = 512,
       scrollOffset: j,
       searchQuery: ""
     }), er = e => {
-      let t = q.length * (k + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? L : 0)) * x - D;
+      let t = q.length * (M + k) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? L : 0)) * x - D;
       Q && e + U > t && ee(), en(e), B(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
@@ -98,7 +98,7 @@ let D = 512,
     }), i.useEffect(() => {
       ei.current(l.current)
     }, [J]);
-    let ea = i.useCallback(e => e !== q.length - 1 || Q ? M : 0, [q.length, Q]),
+    let ea = i.useCallback(e => e !== q.length - 1 || Q ? k : 0, [q.length, Q]),
       eo = X.map(e => e.data.length);
     i.useEffect(() => {
       null != H.current && Y && null != V && H.current.scrollRowIntoView(V)
@@ -190,7 +190,7 @@ let D = 512,
           s = "".concat(a.section.id, ":").concat(null != (i = null == o ? void 0 : o.id) ? i : e);
         if (null == o || a.section.id !== o.applicationId && a.section.id !== N.bi.FRECENCY || o.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(S.Z, {}, s);
         let l = z.find(e => e.id === o.applicationId);
-        return (0, r.jsx)(_.ZP.NewCommand, {
+        return (0, r.jsx)(f.ZP.NewCommand, {
           index: e,
           command: o,
           channel: n,
@@ -204,11 +204,11 @@ let D = 512,
           }
         }, s)
       }, [n, X, el, z, V]),
-      e_ = (0, h.Dt)();
-    return (0, f.KR)(e_, !0, (0, _.DJ)(V)), i.useEffect(() => () => {
-      (0, f.sJ)()
-    }, []), (0, r.jsxs)(_.ZP, {
-      id: e_,
+      ef = (0, h.Dt)();
+    return (0, _.KR)(ef, !0, (0, f.DJ)(V)), i.useEffect(() => () => {
+      (0, _.sJ)()
+    }, []), (0, r.jsxs)(f.ZP, {
+      id: ef,
       className: P.outerWrapper,
       innerClassName: P.wrapper,
       onMouseDown: F,
@@ -231,7 +231,7 @@ let D = 512,
         rowCount: q.length,
         rowCountBySection: eo,
         rowHeight: x,
-        sectionHeaderHeight: k,
+        sectionHeaderHeight: M,
         sectionMarginBottom: ea,
         ref: H,
         stickyHeaders: !0

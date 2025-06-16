@@ -13,8 +13,8 @@ var i = n(442837),
   c = n(29899),
   u = n(151545),
   d = n(493043),
-  _ = n(864141),
-  f = n(231338);
+  f = n(864141),
+  _ = n(231338);
 
 function p(e) {
   let {
@@ -34,13 +34,13 @@ function p(e) {
     guildId: h
   }), v = t.id === n.id, I = (0, i.e7)([s.Z, o.Z], () => {
     let e = v ? s.Z.getStatus() : o.Z.getStatus(t.id, h);
-    return e === f.Sk.OFFLINE || e === f.Sk.INVISIBLE
+    return e === _.Sk.OFFLINE || e === _.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: T
   } = (0, a.U)({
     location: "UserProfileFeaturedActivity"
   });
-  return I || null == b ? I || null == y ? T && !I && null != O ? (0, r.jsx)(_.Z, {
+  return I || null == b ? I || null == y ? T && !I && null != O ? (0, r.jsx)(f.Z, {
     user: t,
     currentUser: n,
     voiceChannel: O,

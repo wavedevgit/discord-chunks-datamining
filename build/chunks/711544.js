@@ -41,16 +41,16 @@ let s = {
         altBoundary: !0
       }),
       d = a(c, r),
-      _ = a(u, s, l),
-      f = o(d),
-      p = o(_);
+      f = a(u, s, l),
+      _ = o(d),
+      p = o(f);
     t.modifiersData[n] = {
       referenceClippingOffsets: d,
-      popperEscapeOffsets: _,
-      isReferenceHidden: f,
+      popperEscapeOffsets: f,
+      isReferenceHidden: _,
       hasPopperEscaped: p
     }, t.attributes.popper = Object.assign({}, t.attributes.popper, {
-      "data-popper-reference-hidden": f,
+      "data-popper-reference-hidden": _,
       "data-popper-escaped": p
     })
   }

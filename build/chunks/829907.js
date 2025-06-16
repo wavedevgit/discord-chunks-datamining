@@ -6,12 +6,12 @@ n.d(t, {
   HD: () => d,
   PD: () => C,
   P_: () => g,
-  X8: () => _,
+  X8: () => f,
   hj: () => I,
   qT: () => R,
   qc: () => T,
   sS: () => m,
-  tY: () => f
+  tY: () => _
 }), n(388685);
 var r = n(615287),
   i = n(593472),
@@ -22,8 +22,8 @@ var r = n(615287),
   c = n(998502);
 let u = new a.Z("OverlayRenderUtils"),
   d = 5e3,
-  _ = 8e3,
-  f = 12e3;
+  f = 8e3,
+  _ = 12e3;
 
 function p(e) {
   let [t] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [o.ZP], n = t.getGameForPID(e);

@@ -1,6 +1,6 @@
 /**
   Module ID: 36087
-  Original File Name: 556726a30ec445bd
+  Original File Name: 4b6085d09a342ffa
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -5233,7 +5233,7 @@ html .progress__61462 {
 }
 
 .thumbnailContainer__419e3 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     max-height: 288px;
     overflow: hidden;
     position: relative
@@ -6179,7 +6179,7 @@ html .progress__61462 {
 }
 
 .theme-light .popoutContent_dfa983,.theme-light .popoutLoader_dfa983 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     box-shadow: var(--elevation-high)
 }
 
@@ -7801,7 +7801,7 @@ html .progress__61462 {
 }
 
 .contentCoachmark__75e8e {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border: 1.4px solid hsl(var(--brand-500-hsl)/.25)
 }
 
@@ -7839,7 +7839,7 @@ html .progress__61462 {
 }
 
 .recipientUserAvatarCoachmark__75e8e {
-    background-color: var(--background-floating)
+    background-color: var(--background-surface-high)
 }
 
 .currentUserAvatar__75e8e {
@@ -7851,8 +7851,8 @@ html .progress__61462 {
 }
 
 .currentUserAvatarCoachmark__75e8e {
-    background-color: var(--background-floating);
-    border: 2px solid var(--background-floating);
+    background-color: var(--background-surface-high);
+    border: 2px solid var(--background-surface-high);
     bottom: -3px;
     position: absolute;
     right: -2px
@@ -8450,7 +8450,7 @@ html .progress__61462 {
 }
 
 .container__09ccc {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: var(--elevation-high);
     margin-top: 4px;
@@ -8488,7 +8488,7 @@ html .progress__61462 {
 }
 
 .role__09ccc.disabled__09ccc:hover {
-    background-color: var(--background-floating)
+    background-color: var(--background-surface-high)
 }
 
 .label__09ccc {
@@ -8617,7 +8617,7 @@ html .progress__61462 {
 
 .rolesList_c9e42f {
     align-items: flex-start;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -9079,7 +9079,7 @@ html .progress__61462 {
 }
 
 .tooltip_c530da {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 5px;
     box-shadow: var(--elevation-high);
     color: var(--primary-200);
@@ -9091,7 +9091,7 @@ html .progress__61462 {
 
 .tooltipPointer_c530da {
     border: 5px solid transparent;
-    border-top: 5px solid var(--background-floating);
+    border-top: 5px solid var(--background-surface-high);
     height: 0;
     left: 50%;
     margin-left: -5px;
@@ -9738,7 +9738,7 @@ html .progress__61462 {
 }
 
 .friendRequestsButton__523aa:hover {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     color: var(--interactive-active)
 }
 
@@ -10604,7 +10604,7 @@ html .progress__61462 {
 }
 
 .divider__5519a {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     height: 1px;
     opacity: .2;
     width: 100%
@@ -10794,7 +10794,7 @@ html .progress__61462 {
 }
 
 .container__55c99 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 3px;
     box-shadow: var(--shadow-border),var(--shadow-high);
     box-sizing: border-box;
@@ -10934,8 +10934,8 @@ html .progress__61462 {
 }
 
 .content__56fec {
-    -webkit-mask-image: linear-gradient(to right,var(--background-floating) 90%,transparent 100%);
-    mask-image: linear-gradient(to right,var(--background-floating) 90%,transparent 100%);
+    -webkit-mask-image: linear-gradient(to right,var(--background-surface-high) 90%,transparent 100%);
+    mask-image: linear-gradient(to right,var(--background-surface-high) 90%,transparent 100%);
     width: 100%
 }
 
@@ -10966,8 +10966,8 @@ html .progress__61462 {
 }
 
 .option__56fec:hover .content__56fec,.option__56fec[aria-selected=true] .content__56fec {
-    -webkit-mask-image: linear-gradient(to right,var(--background-floating) 90%,transparent 95%);
-    mask-image: linear-gradient(to right,var(--background-floating) 90%,transparent 95%)
+    -webkit-mask-image: linear-gradient(to right,var(--background-surface-high) 90%,transparent 95%);
+    mask-image: linear-gradient(to right,var(--background-surface-high) 90%,transparent 95%)
 }
 
 .option__56fec:hover .plusIcon__56fec,.option__56fec[aria-selected=true] .plusIcon__56fec {
@@ -11709,4 +11709,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=556726a30ec445bd.css.map*/
+/*# sourceMappingURL=4b6085d09a342ffa.css.map*/

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  B: () => _
+  B: () => f
 }), n(539854), n(953529);
 var r = n(55e3),
   i = n(693824),
@@ -47,14 +47,14 @@ let u = (e, t, n) => c({
       text: t
     }), n
   },
-  _ = async e => {
+  f = async e => {
     let {
       mediaImageSrc: t,
       entry: n,
       avatarSrc: l,
       description: c,
-      timestamp: _,
-      episodeDescription: f,
+      timestamp: f,
+      episodeDescription: _,
       colors: p,
       channelId: h
     } = e, m = n.extra.media_title, g = u(l, t), E = e => {
@@ -112,7 +112,7 @@ let u = (e, t, n) => c({
         h: 32,
         w: s.kC
       }, !0);
-      let a = d(_, f);
+      let a = d(f, _);
       (0, o.J)({
         canvas: e,
         badges: a,

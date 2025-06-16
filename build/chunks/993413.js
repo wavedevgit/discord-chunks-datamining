@@ -13,14 +13,14 @@ var r = n(255367),
   u = n(504983),
   d = n(396032);
 
-function _(e) {
+function f(e) {
   return e.replace(/[0-9.,]+ ?kb/g, e => {
     let t = 1024 * parseInt(e, 10);
     return isNaN(t) ? e : (0, l.Ng)(t)
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     errors: t
   } = e;
@@ -29,7 +29,7 @@ function f(e) {
       variant: "text-xs/normal",
       color: "text-danger",
       className: d.errorMessage,
-      children: _(e)
+      children: f(e)
     }, t))
   })
 }
@@ -39,7 +39,7 @@ let p = i.forwardRef(function(e, t) {
     titleIcon: i,
     titleId: a,
     description: l,
-    children: _,
+    children: f,
     className: p,
     errors: h,
     disabled: m = !1,
@@ -72,7 +72,7 @@ let p = i.forwardRef(function(e, t) {
         type: s.R94.Types.DESCRIPTION,
         className: d.sectionDescription,
         children: l
-      }) : null, _, null != h && (0, r.jsx)(f, {
+      }) : null, f, null != h && (0, r.jsx)(_, {
         errors: h
       })]
     })

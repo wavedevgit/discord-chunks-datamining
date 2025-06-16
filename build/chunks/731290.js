@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => f
 });
 var r, i = n(442837),
   a = n(433517),
@@ -34,6 +34,6 @@ class d extends(r = i.ZP.Store) {
   }
 }
 s(d, "displayName", "GuildNSFWAgreeStore");
-let _ = new d(o.Z, {
+let f = new d(o.Z, {
   GUILD_NSFW_AGREE: u
 })

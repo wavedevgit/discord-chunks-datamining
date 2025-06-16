@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(956664),
   d = n(592697);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -48,11 +48,11 @@ function m(e) {
     delta: i
   } = e, a = t > window.innerWidth, o = n > window.innerHeight, s = (window.innerWidth - t) / 2 + r.x, l = (window.innerHeight - n) / 2 + r.y, c = (window.innerWidth + t) / 2 + r.x, u = (window.innerHeight + n) / 2 + r.y, {
     x: d,
-    y: _
+    y: f
   } = r;
-  return a && (d += i.x, s + i.x > 0 && (d = (t - window.innerWidth) / 2), c + i.x < window.innerWidth && (d = (window.innerWidth - t) / 2)), o && (_ += i.y, l + i.y > 0 && (_ = (n - window.innerHeight) / 2), u + i.y < window.innerHeight && (_ = (window.innerHeight - n) / 2)), {
+  return a && (d += i.x, s + i.x > 0 && (d = (t - window.innerWidth) / 2), c + i.x < window.innerWidth && (d = (window.innerWidth - t) / 2)), o && (f += i.y, l + i.y > 0 && (f = (n - window.innerHeight) / 2), u + i.y < window.innerHeight && (f = (window.innerHeight - n) / 2)), {
     x: d,
-    y: _
+    y: f
   }
 }
 
@@ -79,7 +79,7 @@ function E(e) {
     children: t,
     active: n,
     onClick: a,
-    className: _,
+    className: f,
     width: E,
     height: b,
     maxWidth: y,
@@ -112,7 +112,7 @@ function E(e) {
       immediate: e
     }))
   }, [n, N, I, C, R]);
-  let M = (e, t) => {
+  let k = (e, t) => {
       var n;
       let r = null == T ? null == (n = v.current) ? void 0 : n.getBoundingClientRect() : null,
         i = m({
@@ -129,7 +129,7 @@ function E(e) {
         });
       C.x.set(i.x), C.y.set(i.y)
     },
-    k = e => {
+    M = e => {
       n && 0 === e.button && (e.preventDefault(), w(!0), L({
         x: e.clientX,
         y: e.clientY
@@ -143,17 +143,17 @@ function E(e) {
     };
   return (0, r.jsx)(s.animated.div, {
     ref: v,
-    onMouseDown: k,
+    onMouseDown: M,
     onMouseUp: j,
-    onMouseMove: e => P && M(e.movementX, e.movementY),
-    onWheel: e => !e.ctrlKey && M(-e.deltaX, -e.deltaY),
+    onMouseMove: e => P && k(e.movementX, e.movementY),
+    onWheel: e => !e.ctrlKey && k(-e.deltaX, -e.deltaY),
     onMouseLeave: () => w(!1),
     onClick: e => e.stopPropagation(),
-    className: o()(_, d.wrapper, {
+    className: o()(f, d.wrapper, {
       [d.panning]: n && P,
       [d.pannable]: n && x
     }),
-    style: f({}, A, C),
+    style: _({}, A, C),
     children: t
   })
 }

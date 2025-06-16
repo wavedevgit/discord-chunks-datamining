@@ -13,8 +13,8 @@ var r = n(255367),
   c = n(686546),
   u = n(540059),
   d = n(855981),
-  _ = n(55543),
-  f = n(504684);
+  f = n(55543),
+  _ = n(504684);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -105,22 +105,22 @@ function v(e) {
     "aria-expanded": D,
     "aria-haspopup": L,
     "aria-controls": x
-  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), k = (0, l.Yzy)(null != E, g(h({}, O), {
+  } = e, k = (0, u.Q3)("ChannelTextAreaButton"), M = (0, l.Yzy)(null != E, g(h({}, O), {
     keys: e => e ? "children" : "icon"
   })), j = e => {
     let {
       component: t
     } = e;
     return null != P ? (0, r.jsxs)("div", {
-      className: f.buttonContent,
+      className: _.buttonContent,
       children: [(0, r.jsx)(c.ZP, {
-        className: f.iconMask,
+        className: _.iconMask,
         mask: c.QS.CHAT_INPUT_BUTTON_NOTIFICATION,
-        width: M ? y : b,
-        height: M ? y : b,
+        width: k ? y : b,
+        height: k ? y : b,
         children: t
       }), (0, r.jsx)("span", {
-        className: f.notificationDot
+        className: _.notificationDot
       })]
     }) : t
   };
@@ -133,10 +133,10 @@ function v(e) {
     "aria-controls": x,
     disabled: n,
     className: o()(t, {
-      [f.active]: I
+      [_.active]: I
     }),
-    innerClassName: o()(f.button, i, {
-      [f.pulseButton]: C
+    innerClassName: o()(_.button, i, {
+      [_.pulseButton]: C
     }),
     onClick: v,
     onMouseEnter: T,
@@ -149,34 +149,34 @@ function v(e) {
         bottom: 4
       }
     },
-    children: [k((e, t, n) => {
+    children: [M((e, t, n) => {
       let {
         key: i
       } = n;
       return t ? (0, r.jsx)(s.animated.div, {
         style: e,
-        className: o()(f.buttonWrapper, a),
+        className: o()(_.buttonWrapper, a),
         children: j({
           component: E
         })
       }, i) : null != m ? (0, r.jsx)(s.animated.div, {
         style: e,
-        className: o()(f.buttonWrapper, a),
+        className: o()(_.buttonWrapper, a),
         children: j({
           component: (0, r.jsx)(m, {
-            className: o()(f.icon, p, {
-              [f.pulseIcon]: C
+            className: o()(_.icon, p, {
+              [_.pulseIcon]: C
             }),
             color: "currentColor"
           })
         })
       }, i) : void 0
     }), R && (0, r.jsxs)("div", {
-      className: f.sparkleContainer,
-      children: [(0, r.jsx)(_.Z, {
-        className: f.sparkleStar
+      className: _.sparkleContainer,
+      children: [(0, r.jsx)(f.Z, {
+        className: _.sparkleStar
       }), (0, r.jsx)(d.Z, {
-        className: f.sparklePlus
+        className: _.sparklePlus
       })]
     })]
   })

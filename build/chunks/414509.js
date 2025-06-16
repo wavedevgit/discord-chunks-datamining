@@ -23,8 +23,8 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 n(334431);
-let _ = +s.Z.Millis.HOUR,
-  f = 3 * s.Z.Millis.DAY;
+let f = +s.Z.Millis.HOUR,
+  _ = 3 * s.Z.Millis.DAY;
 
 function p(e) {
   let {
@@ -50,11 +50,11 @@ function h(e) {
 }
 
 function m(e) {
-  return (0, l.Iu)(e) > Date.now() - _
+  return (0, l.Iu)(e) > Date.now() - f
 }
 
 function g(e) {
-  return (0, l.Iu)(e) > Date.now() - f
+  return (0, l.Iu)(e) > Date.now() - _
 }
 class E extends r.Z {
   handleBlockedOrIgnoredUserVoiceChannelJoin(e, t) {

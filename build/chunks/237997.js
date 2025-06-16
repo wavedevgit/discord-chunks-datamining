@@ -11,8 +11,8 @@ var i, a = n(442837),
   c = n(490029),
   u = n(710845),
   d = n(48481),
-  _ = n(131704),
-  f = n(314897),
+  f = n(131704),
+  _ = n(314897),
   p = n(592125),
   h = n(984933),
   m = n(355863),
@@ -100,8 +100,8 @@ let P = Object.freeze({
   D = {},
   L = null,
   x = new Set,
-  M = !1,
   k = !1,
+  M = !1,
   j = !1,
   U = new Set,
   G = !1,
@@ -130,8 +130,8 @@ function W(e) {
       case "THREAD_UPDATE":
       case "CHANNEL_DELETE":
       case "THREAD_DELETE":
-        let o = (0, _.kt)(e.channel);
-        if (!_.AW.has(o.type)) break;
+        let o = (0, f.kt)(e.channel);
+        if (!f.AW.has(o.type)) break;
         s.Z.dispatch({
           type: e.type,
           channel: o
@@ -140,19 +140,19 @@ function W(e) {
       case "CHANNEL_UPDATES":
         s.Z.dispatch({
           type: e.type,
-          channels: e.channels.map(e => (0, _.kt)(e))
+          channels: e.channels.map(e => (0, f.kt)(e))
         });
         break;
       case "CONNECTION_OPEN_SUPPLEMENTAL":
-        e.lazyPrivateChannels = (null != (t = e.lazyPrivateChannels) ? t : []).map(e => (0, _.kt)(e)), s.Z.dispatch(e);
+        e.lazyPrivateChannels = (null != (t = e.lazyPrivateChannels) ? t : []).map(e => (0, f.kt)(e)), s.Z.dispatch(e);
         break;
       case "THREAD_LIST_SYNC":
         s.Z.dispatch(N(S({}, e), {
-          threads: e.threads.map(e => (0, _.kt)(e))
+          threads: e.threads.map(e => (0, f.kt)(e))
         }));
         break;
       case "GUILD_CREATE":
-        let l = e => (0, _.kt)(e),
+        let l = e => (0, f.kt)(e),
           c = e.guild;
         c.channels = null != (i = null == (n = c.channels) ? void 0 : n.map(l)) ? i : null, c.threads = null == (r = c.threads) ? void 0 : r.map(l), null != c.channelUpdates && (c.channelUpdates.writes = null == (a = c.channelUpdates.writes) ? void 0 : a.map(l)), s.Z.dispatch({
           type: "GUILD_CREATE",
@@ -290,14 +290,14 @@ function ed(e) {
   F.avatarSizeMode = t
 }
 
-function e_(e) {
+function ef(e) {
   let {
     mode: t
   } = e;
   F.notificationPositionMode = t
 }
 
-function ef(e) {
+function e_(e) {
   let {
     disable: t
   } = e;
@@ -337,12 +337,12 @@ function eE() {
 }
 
 function eb() {
-  M = !0
+  k = !0
 }
 
 function ey() {
   s.Z.addInterceptor(e => {
-    if (k || !H.has(e.type)) return !1;
+    if (M || !H.has(e.type)) return !1;
     if ("CHANNEL_SELECT" === e.type) {
       let {
         guildId: t,
@@ -380,7 +380,7 @@ function eO(e) {
       a.ZP.PersistedStore.initializeAll(e.states);
       break;
     case v.BmY.DISPATCH:
-      null != e.payloads && (k = !0, e.payloads.forEach(e => W(e)), k = !1)
+      null != e.payloads && (M = !0, e.payloads.forEach(e => W(e)), M = !1)
   }
 }
 
@@ -397,8 +397,8 @@ function eI(e) {
 }
 class eT extends(i = a.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(f.default), this.syncWith([f.default], () => {
-        let e = f.default.getId();
+    if (this.waitFor(_.default), this.syncWith([_.default], () => {
+        let e = _.default.getId();
         F = null != e ? V(e) : S({}, P)
       }), __OVERLAY__) {
       if (E.isPlatformEmbedded) {
@@ -409,7 +409,7 @@ class eT extends(i = a.ZP.PersistedStore) {
     }
     if (null != e) {
       D = e;
-      let t = f.default.getId();
+      let t = _.default.getId();
       null != t && (null == (F = V(t)).textChatNotifications && (F.textChatNotifications = P.textChatNotifications), null == F.textWidgetOpacity && (F.textWidgetOpacity = P.textWidgetOpacity), null == F.disableClickableRegions && (F.disableClickableRegions = P.disableClickableRegions))
     }
   }
@@ -481,7 +481,7 @@ class eT extends(i = a.ZP.PersistedStore) {
     return j
   }
   get incompatibleApp() {
-    return M
+    return k
   }
   getActiveRegions() {
     return U
@@ -504,7 +504,7 @@ T(eT, "displayName", "OverlayStore"), T(eT, "persistKey", "OverlayStoreV2"), T(e
     a = C(e, ["pinnedWidgets", "positions", "sizes", "v"]);
   return S({}, P, 5 === i ? a : null)
 }, e => {
-  let t = f.default.getId();
+  let t = _.default.getId();
   return null == e || null == t ? {} : {
     [t]: S({}, e)
   }
@@ -524,8 +524,8 @@ let eS = new eT(s.Z, {
   OVERLAY_SET_DISPLAY_NAME_MODE: ec,
   OVERLAY_SET_DISPLAY_USER_MODE: eu,
   OVERLAY_SET_AVATAR_SIZE_MODE: ed,
-  OVERLAY_SET_NOTIFICATION_POSITION_MODE: e_,
-  OVERLAY_SET_DISABLE_CLICKABLE_REGIONS: ef,
+  OVERLAY_SET_NOTIFICATION_POSITION_MODE: ef,
+  OVERLAY_SET_DISABLE_CLICKABLE_REGIONS: e_,
   OVERLAY_SET_SHOW_KEYBIND_INDICATORS: ep,
   OVERLAY_SET_INVITE_MESSAGE: eh,
   OVERLAY_SET_GAME_INVITE_NOTIFICATION: eg,

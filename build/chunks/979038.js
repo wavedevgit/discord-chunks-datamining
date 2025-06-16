@@ -13,8 +13,8 @@ var i = n(40851),
   c = n(420660),
   u = n(750154),
   d = n(374129),
-  _ = n(639351),
-  f = n(892001),
+  f = n(639351),
+  _ = n(892001),
   p = n(103479),
   h = n(238607),
   m = n(414402),
@@ -34,7 +34,7 @@ let T = e => {
     let {
       action: t
     } = e;
-    o.dispatch(y.CkL.POPOUT_CLOSE), (0, f.closeUserProfileModal)(), null == a || a({
+    o.dispatch(y.CkL.POPOUT_CLOSE), (0, _.closeUserProfileModal)(), null == a || a({
       action: t
     })
   };
@@ -50,7 +50,7 @@ function S(e) {
     user: t,
     activity: n,
     onAction: i,
-    onClose: f
+    onClose: _
   } = e;
   return null != n && n.application_id === O.bO ? (n.buttons = [v.intl.string(I.default["Fv/2Oz"])], n.metadata = {
     button_urls: [O.U8]
@@ -60,7 +60,7 @@ function S(e) {
     onAction: i
   })) : (0, l.Z)(n) ? (0, r.jsx)(g.Z, {
     platformType: y.ABu.XBOX,
-    icon: () => (0, r.jsx)(_.Z, {}),
+    icon: () => (0, r.jsx)(f.Z, {}),
     onAction: i
   }) : (0, s.Z)(n) ? (0, r.jsx)(g.Z, {
     platformType: y.ABu.PLAYSTATION,
@@ -73,7 +73,7 @@ function S(e) {
     user: t,
     activity: n,
     onAction: i,
-    onClose: f
+    onClose: _
   }) : (null == n ? void 0 : n.buttons) != null && (null == n ? void 0 : n.buttons.length) >= 1 ? (0, r.jsx)(p.Z, {
     user: t,
     activity: n,
@@ -85,6 +85,6 @@ function S(e) {
   }) : (0, u.dS)(n) ? (0, r.jsx)(E.Z, {
     activity: n,
     onAction: i,
-    onClose: f
+    onClose: _
   }) : null
 }

@@ -34,7 +34,7 @@ function d() {
   c.fetchState = 1
 }
 
-function _(e) {
+function f(e) {
   let {
     applicationId: t,
     guildId: n
@@ -42,7 +42,7 @@ function _(e) {
   null == c.applicationIdToGuildIds[t] && (c.applicationIdToGuildIds[t] = new Set), c.applicationIdToGuildIds[t].add(n), c.applicationIdToGuildIds[t] = new Set(c.applicationIdToGuildIds[t])
 }
 
-function f(e) {
+function _(e) {
   let {
     applicationId: t,
     guildId: n
@@ -55,7 +55,7 @@ function p(e) {
     guildIdToApplicationIds: t
   } = e;
   for (let e in c.fetchState = 2, c.lastFetchTimeMs = Date.now(), c.applicationIdToGuildIds = {}, c.nextFetchRetryTimeMs = null, t)
-    for (let n of t[e]) _({
+    for (let n of t[e]) f({
       applicationId: n,
       guildId: e
     })
@@ -76,7 +76,7 @@ function m(e) {
     application: t,
     guildId: n
   } = e;
-  null != t && _({
+  null != t && f({
     applicationId: t.id,
     guildId: n
   })
@@ -87,7 +87,7 @@ function g(e) {
     applicationId: t,
     guildId: n
   } = e;
-  null != t && f({
+  null != t && _({
     applicationId: t,
     guildId: n
   })

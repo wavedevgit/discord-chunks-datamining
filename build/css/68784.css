@@ -1,6 +1,6 @@
 /**
   Module ID: 68784
-  Original File Name: 8a90becc94afa74f
+  Original File Name: bb7399cecdc8968f
 **/
 .answerRow__7b848 {
     align-items: center;
@@ -105,7 +105,7 @@
 }
 
 .altBadge__7b848,.altTextPreview__7b848 {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     position: absolute
 }
 
@@ -303,7 +303,7 @@
 }
 
 .option__20987:hover,.optionSelected__20987 {
-    background-color: var(--background-floating)
+    background-color: var(--background-surface-high)
 }
 
 .optionSelected__20987 {
@@ -384,7 +384,7 @@
 }
 
 .addAnswerButton_d97f89:hover {
-    background-color: var(--background-floating)
+    background-color: var(--background-surface-high)
 }
 
 .addAnswerButtonDefault_d97f89 {
@@ -479,4 +479,4 @@
     background-color: var(--background-mod-normal)
 }
 
-/*# sourceMappingURL=8a90becc94afa74f.css.map*/
+/*# sourceMappingURL=bb7399cecdc8968f.css.map*/

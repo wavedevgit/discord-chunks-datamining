@@ -14,9 +14,9 @@ var i = n(120356),
   c = n(355314),
   u = n(310752),
   d = n(731994),
-  _ = n(948979);
+  f = n(948979);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,7 +32,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -44,10 +44,10 @@ function h(e) {
     help: n,
     showPremiumUpsell: i,
     transitionState: o,
-    icons: f,
+    icons: _,
     fileSize: p,
     onClose: h
-  } = e, m = (0, l.Dt)(), g = null != f ? f : d.J6;
+  } = e, m = (0, l.Dt)(), g = null != _ ? _ : d.J6;
   return i ? (0, r.jsx)(c.Z, {
     transitionState: o,
     onClose: h,
@@ -58,17 +58,17 @@ function h(e) {
     transitionState: o,
     parentComponent: "UploadError",
     children: (0, r.jsx)("div", {
-      className: a()(_.uploadDropModal, _.error),
+      className: a()(f.uploadDropModal, f.error),
       children: (0, r.jsxs)("div", {
-        className: _.inner,
+        className: f.inner,
         children: [(0, r.jsx)(u.Z, {
           icons: g
         }), (0, r.jsx)("div", {
           id: m,
-          className: _.title,
+          className: f.title,
           children: t
         }), (0, r.jsx)("div", {
-          className: _.instructions,
+          className: f.instructions,
           children: n
         })]
       })

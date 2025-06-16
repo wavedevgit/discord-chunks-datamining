@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(114101),
   u = n(481060),
   d = n(540059),
-  _ = n(28546),
-  f = n(581883),
+  f = n(28546),
+  _ = n(581883),
   p = n(459273),
   h = n(443603),
   m = n(981631),
@@ -64,10 +64,10 @@ function T(e, t) {
   let {
     disabled: n,
     type: a
-  } = e, [y, v] = i.useState(!1), T = (0, l.e7)([f.Z], () => {
+  } = e, [y, v] = i.useState(!1), T = (0, l.e7)([_.Z], () => {
     var e, t;
-    return y && Object.values(null != (t = null == (e = f.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? void 0 : e.gifs) ? t : {}).length <= 2
-  }), [S, A, N] = (0, _.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), C = i.useRef(0), R = i.useCallback(() => {
+    return y && Object.values(null != (t = null == (e = _.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? void 0 : e.gifs) ? t : {}).length <= 2
+  }), [S, A, N] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), C = i.useRef(0), R = i.useCallback(() => {
     v(!0), clearTimeout(C.current), C.current = setTimeout(() => {
       v(!1), C.current = 0
     }, 2e3)
@@ -77,7 +77,7 @@ function T(e, t) {
     handler: R
   });
   let P = i.useCallback(() => {
-      (0, _.RO)(g.X1.GIF, a)
+      (0, f.RO)(g.X1.GIF, a)
     }, [a]),
     {
       Component: w,
@@ -86,7 +86,7 @@ function T(e, t) {
     } = (0, c.V)(),
     x = (0, d.Q3)("ChannelGIFPickerButton");
   if (n) return null;
-  let M = S === g.X1.GIF && A === a;
+  let k = S === g.X1.GIF && A === a;
   return (0, r.jsx)(u.ua7, {
     text: T ? E.intl.string(E.t.mE2e8P) : null,
     forceOpen: !0,
@@ -101,10 +101,10 @@ function T(e, t) {
         onClick: () => {
           P(), L()
         },
-        isActive: M,
+        isActive: k,
         pulse: y,
         "aria-label": E.intl.string(E.t.PtVpk5),
-        "aria-expanded": M,
+        "aria-expanded": k,
         "aria-haspopup": "dialog",
         "aria-controls": N,
         children: (0, r.jsx)(w, {

@@ -19,12 +19,12 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = {};
-class f {
+let f = {};
+class _ {
   static ensure(e, t, n) {
     var r, i;
     let a = "".concat(e, ":").concat(t.name, ":").concat(null != (r = t.id) ? r : "", ":").concat(n);
-    return _[a] = null != (i = _[a]) ? i : new f
+    return f[a] = null != (i = f[a]) ? i : new _
   }
   constructor() {
     d(this, "users", void 0), d(this, "fetched", void 0), this.fetched = !1, this.users = new Map
@@ -32,7 +32,7 @@ class f {
 }
 
 function p() {
-  _ = {}
+  f = {}
 }
 
 function h(e) {
@@ -42,7 +42,7 @@ function h(e) {
     userId: r,
     emoji: i,
     reactionType: a
-  } = e, o = f.ensure(n, i, a);
+  } = e, o = _.ensure(n, i, a);
   if ("MESSAGE_REACTION_ADD" === t) {
     let e = u.default.getUser(r);
     null != e && o.users.set(r, e)
@@ -55,12 +55,12 @@ function m(e) {
     users: n,
     emoji: r,
     reactionType: i
-  } = e, a = f.ensure(t, r, i);
+  } = e, a = _.ensure(t, r, i);
   n.forEach(e => a.users.set(e.id, new l.Z(e)))
 }
 class g extends(r = i.ZP.Store) {
   getReactions(e, t, n, r, i) {
-    let a = f.ensure(t, n, i);
+    let a = _.ensure(t, n, i);
     if (!a.fetched) {
       let l = c.Z.getChannel(e),
         u = null != l ? l.getGuildId() : null;

@@ -11,8 +11,8 @@ var i, a = n(512722),
   c = n(442837),
   u = n(570140),
   d = n(594190),
-  _ = n(444852),
-  f = n(569545),
+  f = n(444852),
+  _ = n(569545),
   p = n(687516),
   h = n(139656),
   m = n(358085),
@@ -39,7 +39,7 @@ let I = {},
   R = {};
 
 function P(e, t, n) {
-  return o()(null != r, "Creating RTCConnection without session."), new _.Z({
+  return o()(null != r, "Creating RTCConnection without session."), new f.Z({
     sessionId: r,
     streamKey: e,
     serverId: t,
@@ -74,7 +74,7 @@ function x(e) {
     sourceId: o,
     nativePickerStyleUsed: s,
     goLiveModalDurationMs: c
-  } = e, u = (0, f.V9)({
+  } = e, u = (0, _.V9)({
     streamType: t,
     guildId: n,
     channelId: r,
@@ -98,7 +98,7 @@ function x(e) {
   null != c ? N[u] = c : delete N[u]
 }
 
-function M(e) {
+function k(e) {
   let {
     appContext: t,
     streamKey: n
@@ -112,7 +112,7 @@ function M(e) {
   }), A[n] = null, S[n] = null, delete N[n]
 }
 
-function k(e) {
+function M(e) {
   let {
     streamKey: t,
     rtcServerId: n,
@@ -121,9 +121,9 @@ function k(e) {
   } = e, a = R[t];
   if (null == a && null != n) {
     null == S[t] && (T[t] = null);
-    let e = (0, f.my)(t);
+    let e = (0, _.my)(t);
     null == T[t] && null == A[t] && (T[t] = (0, p.L2)(e, b.Z));
-    let o = new _.A({
+    let o = new f.A({
       streamRegion: r,
       streamApplication: T[t],
       streamSourceType: W(A[t]),
@@ -300,8 +300,8 @@ let z = new K(u.Z, !E.Z.isSupported() || __OVERLAY__ ? {} : {
   RTC_CONNECTION_UPDATE_ID: Z,
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: F,
   STREAM_START: x,
-  STREAM_STOP: M,
-  STREAM_CREATE: k,
+  STREAM_STOP: k,
+  STREAM_CREATE: M,
   STREAM_SERVER_UPDATE: j,
   STREAM_UPDATE: G,
   STREAM_DELETE: B,

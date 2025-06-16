@@ -10,8 +10,8 @@ var i, a, o = n(442837),
   c = n(642047),
   u = n(695346),
   d = n(973616),
-  _ = n(70956),
-  f = n(358085);
+  f = n(70956),
+  _ = n(358085);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,7 +23,7 @@ function p(e, t, n) {
 }
 let h = "GameStoreReportedGames",
   m = 0x80000000,
-  g = _.Z.Millis.DAY,
+  g = f.Z.Millis.DAY,
   E = new c.Z,
   b = {},
   y = {},
@@ -65,7 +65,7 @@ function S(e) {
 function A(e) {
   let t = e instanceof d.ZP ? S(e) : e;
   for (let n of (E.set(e.id, t), b[e.name.toLowerCase()] = t, e.aliases)) b[n.toLowerCase()] = t;
-  if ((0, f.isDesktop)())
+  if ((0, _.isDesktop)())
     for (let n of e.executables) y[n.name] = t
 }
 
@@ -98,7 +98,7 @@ class w extends(a = o.ZP.PersistedStore) {
     null != e && (null != e.detectableGamesEtag && (v = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => A(e)))
   }
   getState() {
-    return (0, f.isDesktop)() ? {
+    return (0, _.isDesktop)() ? {
       detectableGamesEtag: v,
       detectableGames: E.values()
     } : {
@@ -170,7 +170,7 @@ p(w, "displayName", "GameStore"), p(w, "persistKey", "GameStore"), p(w, "migrati
     detectableGamesEtag: e.detectableGamesEtag,
     detectableGames: null != (n = null == (t = e.detectableGames) ? void 0 : t.map(e => S(new d.ZP(e)))) ? n : []
   }
-}, e => (0, f.isDesktop)() ? e : {
+}, e => (0, _.isDesktop)() ? e : {
   detectableGamesEtag: "",
   detectableGames: []
 }]);

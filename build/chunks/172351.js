@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(785717),
   u = n(678738),
   d = n(981631),
-  _ = n(388032),
-  f = n(175354);
+  f = n(388032),
+  _ = n(175354);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,9 +68,9 @@ function m(e) {
     }, (0, a.JS)(m.id)))
   };
   return (0, r.jsx)(u.Z, {
-    heading: _.intl.string(_.t["0hKkS0"]),
+    heading: f.intl.string(f.t["0hKkS0"]),
     children: (0, r.jsx)("ul", {
-      className: f.list,
+      className: _.list,
       children: O.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(s.wz, {
           commandId: e.id,

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(987032),
   u = n(219929),
   d = n(46141),
-  _ = n(63063),
-  f = n(981631),
+  f = n(63063),
+  _ = n(981631),
   p = n(231338),
   h = n(388032),
   m = n(500452);
@@ -24,7 +24,7 @@ let g = "***@***.***",
   O = new d.dm({
     id: y,
     brand: u.ZP.Types.UNKNOWN,
-    type: f.HeQ.CARD
+    type: _.HeQ.CARD
   });
 
 function v(e, t) {
@@ -107,7 +107,7 @@ function v(e, t) {
 function I(e, t) {
   let n = null;
   return e && null != t && !t.canRedeemTrial() ? n = h.intl.string(h.t.SvheW1) : e && null != t && t.hasFlag(p.Cw.NEW) && (n = h.intl.format(h.t.d7ZLKC, {
-    helpDeskArticle: _.Z.getArticleURL(f.BhN.PAYMENT_AUTHORIZATION_CHARGE)
+    helpDeskArticle: f.Z.getArticleURL(_.BhN.PAYMENT_AUTHORIZATION_CHARGE)
   })), n
 }
 
@@ -117,8 +117,8 @@ function T(e) {
     paymentSources: n,
     prependOption: a,
     hidePersonalInformation: c,
-    onChange: _,
-    onPaymentSourceAdd: f,
+    onChange: f,
+    onPaymentSourceAdd: _,
     isTrial: p = !1,
     disabled: g = !1,
     className: E,
@@ -126,10 +126,10 @@ function T(e) {
     dropdownLoading: T,
     paymentGatewayRestrictions: S
   } = e, A = 0 === n.length, N = e => {
-    if (e === y) null != f && f();
+    if (e === y) null != _ && _();
     else {
       let t = n.find(t => t.id === e);
-      null != _ && _(t)
+      null != f && f(t)
     }
   }, C = [...null != a ? [a] : [], ...n, O].map((e, t) => {
     if (e instanceof d.ZP) {
@@ -170,7 +170,7 @@ function T(e) {
     children: [A ? (0, r.jsx)(l.zxk, {
       color: l.Ttl.BRAND,
       fullWidth: !0,
-      onClick: f,
+      onClick: _,
       children: h.intl.string(h.t.eQ2bLi)
     }) : (0, r.jsx)(l.q4e, {
       options: C,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -35,7 +35,7 @@ function u(e) {
 
 function d(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -43,7 +43,7 @@ function d(e, t) {
   return i
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -51,13 +51,13 @@ function _(e, t) {
   return i
 }
 
-function f(e) {
+function _(e) {
   var {
     channel: t
   } = e, n = d(e, ["channel"]);
   let c = (0, i.e7)([s.Z], () => t.isPrivate() || s.Z.can(l.Pl.CONNECT, t));
   if (t.isDM() || t.isGroupDM()) return (0, r.jsx)(a.Csw, u({}, n));
-  let _ = t.isGuildStageVoice(),
-    f = !c || (0, o.Z)(t);
-  return _ && f ? (0, r.jsx)(a.pki, u({}, n)) : _ ? (0, r.jsx)(a.ewx, u({}, n)) : t.isNSFW() ? (0, r.jsx)(a.BVY, u({}, n)) : f ? (0, r.jsx)(a.gjC, u({}, n)) : (0, r.jsx)(a.gj8, u({}, n))
+  let f = t.isGuildStageVoice(),
+    _ = !c || (0, o.Z)(t);
+  return f && _ ? (0, r.jsx)(a.pki, u({}, n)) : f ? (0, r.jsx)(a.ewx, u({}, n)) : t.isNSFW() ? (0, r.jsx)(a.BVY, u({}, n)) : _ ? (0, r.jsx)(a.gjC, u({}, n)) : (0, r.jsx)(a.gj8, u({}, n))
 }

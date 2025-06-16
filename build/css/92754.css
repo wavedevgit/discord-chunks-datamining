@@ -1,6 +1,6 @@
 /**
   Module ID: 92754
-  Original File Name: 069e1f5262737d57
+  Original File Name: 0ea09aad8c8864c3
 **/
 .editCard_a25a68 {
     background-color: var(--background-secondary);
@@ -856,7 +856,7 @@
 }
 
 .chipletContainer__3b3ff.isError__3b3ff {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-color: var(--status-danger-background);
     border-radius: var(--radius-sm)
 }
@@ -951,7 +951,7 @@
 }
 
 .errorTooltip__3b3ff {
-    background-color: var(--background-floating)!important;
+    background-color: var(--background-surface-high)!important;
     border: 2px solid var(--status-danger-background)
 }
 
@@ -985,7 +985,7 @@
 
 .textArea_c615b7 {
     background: var(--background-tertiary);
-    border: 1px solid var(--background-floating);
+    border: 1px solid var(--background-surface-high);
     border-radius: 4px;
     color: var(--text-normal);
     cursor: text;
@@ -1070,7 +1070,7 @@
 
 .keywordsTextArea__2097e {
     background: var(--background-tertiary);
-    border: 1px solid var(--background-floating);
+    border: 1px solid var(--background-surface-high);
     border-radius: 4px;
     box-sizing: border-box;
     color: var(--text-normal);
@@ -5069,7 +5069,7 @@
 }
 
 .educationUpsell__4a4f2 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: var(--radius-sm);
     bottom: 88px;
     left: -16px;
@@ -5079,7 +5079,7 @@
 
 .educationUpsellArrow__4a4f2 {
     border: 8px solid transparent;
-    border-bottom: 8px solid var(--background-floating);
+    border-bottom: 8px solid var(--background-surface-high);
     height: 0;
     left: 54px;
     pointer-events: none;
@@ -6993,7 +6993,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .addFormField_eaaeee:hover {
-    background-color: var(--background-floating)
+    background-color: var(--background-surface-high)
 }
 
 .addFormFieldText_eaaeee {
@@ -7990,7 +7990,7 @@ html:not(.visual-refresh) .bannedUserModal_cdb2b0 .reasonHeader_cdb2b0 {
 }
 
 .exampleContainer_b34334 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     background-image: url(/assets/743fe5a17c7f084f.svg);
     background-position: 50%;
     background-repeat: no-repeat;
@@ -10693,7 +10693,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .browserUnsupportedDialog__15634 {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: var(--radius-xs);
     box-shadow: var(--elevation-high);
     color: var(--text-normal);
@@ -12879,4 +12879,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=069e1f5262737d57.css.map*/
+/*# sourceMappingURL=0ea09aad8c8864c3.css.map*/

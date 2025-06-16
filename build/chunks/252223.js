@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(833664),
-  _ = n(545957),
-  f = n(933557),
+  f = n(545957),
+  _ = n(933557),
   p = n(359588),
   h = n(74340),
   m = n(19391),
@@ -66,13 +66,13 @@ function x(e, t) {
   return n
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e) {
+function M(e) {
   let t = (null == e ? void 0 : e.name) === "" ? null : null == e ? void 0 : e.name;
   return null != t ? P.intl.formatToPlainString(P.t["0wJXSk"], {
     name: t
@@ -96,8 +96,8 @@ function U(e) {
     enableTopNavButton: o
   } = (0, g.Cq)({
     location: "StackedActivityStatus"
-  }), s = (0, f.ZP)(r), l = a || o;
-  return null != t && i.push(k(t)), n.forEach(e => {
+  }), s = (0, _.ZP)(r), l = a || o;
+  return null != t && i.push(M(t)), n.forEach(e => {
     let {
       tooltip: t
     } = (0, O.Z)(e, l);
@@ -137,16 +137,16 @@ function V(e) {
     user: t,
     activities: n,
     applicationStream: a,
-    voiceChannel: f,
+    voiceChannel: _,
     textClassName: g,
     iconClassName: y,
     textSize: O = "xs",
     animateEmoji: P = !0,
     hasQuest: D = !1,
     hideEmoji: x = !1,
-    hideTooltip: k = !1
+    hideTooltip: M = !1
   } = e;
-  (0, _.Z)(null == t ? void 0 : t.id);
+  (0, f.Z)(null == t ? void 0 : t.id);
   let j = (null == a ? void 0 : a.discoverable) !== !1 ? a : null,
     V = (0, E.Cf)(j),
     F = i.useMemo(() => {
@@ -179,19 +179,19 @@ function V(e) {
     }) && null != F ? (0, h.Z)(F) : null,
     z = (null == F ? void 0 : F.state) != null || null != K,
     q = null != j,
-    X = !q && null != f,
+    X = !q && null != _,
     Q = Z.length + (q || X ? 1 : 0),
     J = Q > 1,
     $ = (null == F ? void 0 : F.state) != null && "xs" === O,
     ee = U({
       streamActivity: H,
       otherActivities: Z,
-      voiceActivityChannel: X ? f : null
+      voiceActivityChannel: X ? _ : null
     });
   if (W) return null;
   let et = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-        t = !0 === e || k;
+        t = !0 === e || M;
       if (null != j) return (0, r.jsx)(S.Z, {
         stream: j,
         game: H,
@@ -211,8 +211,8 @@ function V(e) {
         hideText: $,
         hideIcon: Y,
         hideTooltip: t
-      }) : null != f ? (0, r.jsx)(N.Z, {
-        channel: f,
+      }) : null != _ ? (0, r.jsx)(N.Z, {
+        channel: _,
         textVariant: "text-".concat(O, "/medium"),
         textClassName: g,
         iconClassName: y,
@@ -229,7 +229,7 @@ function V(e) {
           hideText: !1,
           canTruncate: !1
         };
-      return null != j && e.push((0, r.jsx)(S.Z, M(L({
+      return null != j && e.push((0, r.jsx)(S.Z, k(L({
         stream: j,
         game: null == n ? void 0 : n.find(d.Z)
       }, t), {
@@ -238,8 +238,8 @@ function V(e) {
         e.push((0, r.jsx)(A.Z, L({
           activity: n
         }, t), "activity-".concat(i)))
-      }), X && e.push((0, r.jsx)(N.Z, M(L({
-        channel: f
+      }), X && e.push((0, r.jsx)(N.Z, k(L({
+        channel: _
       }, t), {
         showChannelName: !0
       }), "voice")), e
@@ -250,7 +250,7 @@ function V(e) {
       hasCustomStatusText: z,
       totalActivityCount: Q
     }),
-    ei = () => 0 === Q ? null : J && !Y ? k ? (0, r.jsxs)("div", {
+    ei = () => 0 === Q ? null : J && !Y ? M ? (0, r.jsxs)("div", {
       className: o()(w.activityContainer, $ && w.iconOnly),
       children: [et(), er()]
     }) : (0, r.jsx)(u.ua7, {
@@ -258,7 +258,7 @@ function V(e) {
       delay: C.X,
       text: en(),
       "aria-label": ee,
-      children: e => (0, r.jsxs)("div", M(L({
+      children: e => (0, r.jsxs)("div", k(L({
         className: o()(w.activityContainer, $ && w.iconOnly)
       }, e), {
         children: [et(!0), er()]
@@ -278,12 +278,12 @@ function V(e) {
         }), null != e && !x && (0, r.jsx)(v.Z, {
           emoji: e,
           animate: P,
-          hideTooltip: k,
+          hideTooltip: M,
           className: y
         }), null != t && (0, r.jsx)(T.Z, {
           variant: "text-".concat(O, "/medium"),
           className: g,
-          hideTooltip: k,
+          hideTooltip: M,
           children: t
         })]
       })

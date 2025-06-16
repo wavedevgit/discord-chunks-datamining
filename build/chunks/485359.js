@@ -13,9 +13,9 @@ var i = n(525654),
   c = n(317770),
   u = n(63063),
   d = n(981631),
-  _ = n(388032);
+  f = n(388032);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,7 +31,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -44,7 +44,7 @@ class h extends c.Z {
     s.Z.unsubscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
   }
   constructor(...e) {
-    super(...e), f(this, "handlePermission", e => {
+    super(...e), _(this, "handlePermission", e => {
       let {
         kind: t,
         granted: n
@@ -52,10 +52,10 @@ class h extends c.Z {
       if (!n) {
         let e = "audio" !== t;
         (0, o.h7j)(t => (0, r.jsx)(l.default, p({
-          title: e ? _.intl.string(_.t.OqloHx) : _.intl.string(_.t["kI+OOT"]),
-          body: e ? _.intl.string(_.t.l3P7Ky) : _.intl.string(_.t.l3jwOT),
+          title: e ? f.intl.string(f.t.OqloHx) : f.intl.string(f.t["kI+OOT"]),
+          body: e ? f.intl.string(f.t.l3P7Ky) : f.intl.string(f.t.l3jwOT),
           onConfirm: () => window.open(u.Z.getArticleURL(i), "_blank"),
-          confirmText: _.intl.string(_.t.psXQHB)
+          confirmText: f.intl.string(f.t.psXQHB)
         }, t)))
       }
     })

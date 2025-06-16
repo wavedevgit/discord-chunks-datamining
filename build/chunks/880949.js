@@ -17,9 +17,9 @@ let u = e => {
     isSelected: a = !0,
     width: u = 32,
     height: d = 32,
-    shouldAnimate: _ = !0,
-    isLocked: f = !1
-  } = e, [p, h] = i.useState(!1), m = n.getIconURL(32, _ && a), g = () => h(!0), E = () => h(!1);
+    shouldAnimate: f = !0,
+    isLocked: _ = !1
+  } = e, [p, h] = i.useState(!1), m = n.getIconURL(32, f && a), g = () => h(!0), E = () => h(!1);
   return (0, r.jsxs)("div", {
     onFocus: g,
     onBlur: E,
@@ -41,7 +41,7 @@ let u = e => {
         src: m,
         className: c.guildIcon
       })
-    }), f ? (0, r.jsx)("div", {
+    }), _ ? (0, r.jsx)("div", {
       className: c.categoryItemLockIconContainer,
       children: (0, r.jsx)(s.mBM, {
         size: "custom",

@@ -53,8 +53,8 @@ e.exports = function(e) {
       let a = "\\1" === i ? i : t.concat(i, r);
       return t.concat(t.concat("(?:", e, ")"), r, /(?:\\.|[^\\\/])*?/, a, /(?:\\.|[^\\\/])*?/, i, n)
     },
-    _ = (e, r, i) => t.concat(t.concat("(?:", e, ")"), r, /(?:\\.|[^\\\/])*?/, i, n),
-    f = [s, e.HASH_COMMENT_MODE, e.COMMENT(/^=\w/, /=cut/, {
+    f = (e, r, i) => t.concat(t.concat("(?:", e, ")"), r, /(?:\\.|[^\\\/])*?/, i, n),
+    _ = [s, e.HASH_COMMENT_MODE, e.COMMENT(/^=\w/, /=cut/, {
       endsWithParent: !0
     }), a, {
       className: "string",
@@ -125,17 +125,17 @@ e.exports = function(e) {
           begin: /(m|qr)\/\//,
           relevance: 0
         }, {
-          begin: _("(?:m|qr)?", /\//, /\//)
+          begin: f("(?:m|qr)?", /\//, /\//)
         }, {
-          begin: _("m|qr", t.either(...u, {
+          begin: f("m|qr", t.either(...u, {
             capture: !0
           }), /\1/)
         }, {
-          begin: _("m|qr", /\(/, /\)/)
+          begin: f("m|qr", /\(/, /\)/)
         }, {
-          begin: _("m|qr", /\[/, /\]/)
+          begin: f("m|qr", /\[/, /\]/)
         }, {
-          begin: _("m|qr", /\{/, /\}/)
+          begin: f("m|qr", /\{/, /\}/)
         }]
       }]
     }, {
@@ -165,10 +165,10 @@ e.exports = function(e) {
         className: "comment"
       }]
     }];
-  return i.contains = f, a.contains = f, {
+  return i.contains = _, a.contains = _, {
     name: "Perl",
     aliases: ["pl", "pm"],
     keywords: r,
-    contains: f
+    contains: _
   }
 }

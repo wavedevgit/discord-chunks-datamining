@@ -1,6 +1,6 @@
 /**
   Module ID: 73628
-  Original File Name: 65009feba7cb27d9
+  Original File Name: d5abfaeacd018c95
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -47,7 +47,7 @@
 }
 
 .container_fcf29c {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 5px;
     box-shadow: var(--legacy-elevation-high);
     overflow: hidden;
@@ -921,4 +921,4 @@
     gap: 16px
 }
 
-/*# sourceMappingURL=65009feba7cb27d9.css.map*/
+/*# sourceMappingURL=d5abfaeacd018c95.css.map*/

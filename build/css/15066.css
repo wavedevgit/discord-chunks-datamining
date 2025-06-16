@@ -1,6 +1,6 @@
 /**
   Module ID: 15066
-  Original File Name: 2a3e8cb87019dd11
+  Original File Name: 2d31be02b7bd0e60
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -319,7 +319,7 @@
 }
 
 .popout__86331 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: var(--elevation-high);
     overflow: hidden
@@ -588,7 +588,7 @@
 
 .closeCircle_a2c9e8 {
     align-items: center;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -1325,4 +1325,4 @@ h1.title_feb59c,h2.title_feb59c {
     margin-right: var(--spacing-32)
 }
 
-/*# sourceMappingURL=2a3e8cb87019dd11.css.map*/
+/*# sourceMappingURL=2d31be02b7bd0e60.css.map*/

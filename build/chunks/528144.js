@@ -44,12 +44,12 @@ function d(e, t) {
   return n
 }
 
-function _(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = Object.freeze({
+let _ = Object.freeze({
     SIZE_10: l.size10,
     SIZE_12: l.size12,
     SIZE_14: l.size14,
@@ -63,7 +63,7 @@ let f = Object.freeze({
       id: t,
       muted: n = !1,
       className: i = s.wrapper,
-      size: l = f.SIZE_14,
+      size: l = _.SIZE_14,
       selectable: c = !1,
       children: d,
       color: p,
@@ -86,11 +86,11 @@ let f = Object.freeze({
         [s.uppercase]: b
       }),
       title: E,
-      style: null != p ? _(u({}, g), {
+      style: null != p ? f(u({}, g), {
         color: p
       }) : g,
       children: d
     })
   };
-p.Sizes = f;
+p.Sizes = _;
 let h = p

@@ -43,12 +43,12 @@ function _(e) {
           size: "custom",
           width: f.Mn,
           height: f.Mn,
-          color: a.TVs.colors.INFO_POSITIVE_FOREGROUND
+          color: a.TVs.colors.STATUS_POSITIVE
         }) : (0, r.jsx)(a.CTb, {
           size: "custom",
           width: f.Mn,
           height: f.Mn,
-          color: a.TVs.colors.INFO_DANGER_FOREGROUND
+          color: a.TVs.colors.STATUS_DANGER
         })
       }), y !== c.qc.NO_GATE && (0, r.jsx)(f._2, {
         icon: (0, r.jsx)(a.snC, {
@@ -65,12 +65,12 @@ function _(e) {
           size: "custom",
           width: f.Mn,
           height: f.Mn,
-          color: a.TVs.colors.INFO_POSITIVE_FOREGROUND
+          color: a.TVs.colors.STATUS_POSITIVE
         }) : (0, r.jsx)(a.CTb, {
           size: "custom",
           width: f.Mn,
           height: f.Mn,
-          color: a.TVs.colors.INFO_DANGER_FOREGROUND
+          color: a.TVs.colors.STATUS_DANGER
         })
       }), (0, r.jsx)(f._2, {
         icon: (0, r.jsx)(a.gw7, {

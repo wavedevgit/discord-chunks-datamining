@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   Ic: () => d,
-  Pb: () => _,
+  Pb: () => f,
   jq: () => c,
   up: () => u,
-  yF: () => f
+  yF: () => _
 });
 var r = n(442837),
   i = n(715903),
@@ -34,7 +34,7 @@ function d(e, t) {
   return "https://".concat(r, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(i)
 }
 
-function _(e) {
+function f(e) {
   return null != e && e.identityEnabled ? {
     guildId: e.identityGuildId,
     tag: e.tag,
@@ -42,7 +42,7 @@ function _(e) {
   } : {}
 }
 
-function f(e, t) {
+function _(e, t) {
   let n = (0, r.e7)([o.default], () => o.default.getUser(e), [e]),
     s = (0, r.e7)([a.ZP], () => {
       if (null == t || null == e) return null;
@@ -52,6 +52,6 @@ function f(e, t) {
     {
       tag: l,
       guildId: c
-    } = _(null == n ? void 0 : n.primaryGuild);
+    } = f(null == n ? void 0 : n.primaryGuild);
   return null != c && null != l && !s
 }

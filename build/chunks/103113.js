@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(580552),
   u = n(680295),
   d = n(5192),
-  _ = n(785717),
-  f = n(221292),
+  f = n(785717),
+  _ = n(221292),
   p = n(687158),
   h = n(892001),
   m = n(899007),
@@ -61,11 +61,11 @@ function R(e) {
     setPopoutRef: D,
     closePopout: L,
     disableUserProfileLink: x = __OVERLAY__,
-    newAnalyticsLocations: M = [],
-    disableAutoFocus: k = !1
+    newAnalyticsLocations: k = [],
+    disableAutoFocus: M = !1
   } = e, j = (0, p.ZP)(t.id, n), {
     analyticsLocations: U
-  } = (0, l.ZP)([...M, s.Z.USER_PROFILE_POPOUT]), G = (0, _.ZB)({
+  } = (0, l.ZP)([...k, s.Z.USER_PROFILE_POPOUT]), G = (0, f.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
@@ -87,16 +87,16 @@ function R(e) {
       id: "view-profile",
       label: S.intl.string(S.t["+Xp3ho"]),
       action: () => {
-        F(), (0, f.pQ)(C({
+        F(), (0, _.pQ)(C({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: U
         }, G))
       }
     }) : null,
-    Y = k ? "div" : a.VqE;
+    Y = M ? "div" : a.VqE;
   return (0, r.jsx)(l.Gt, {
     value: U,
-    children: (0, r.jsx)(_.Mt, {
+    children: (0, r.jsx)(f.Mt, {
       value: G,
       openedAt: w,
       fetchStartedAt: null == j ? void 0 : j.fetchStartedAt,

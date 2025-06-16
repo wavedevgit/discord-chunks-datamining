@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(255367),
   i = n(73800),
@@ -34,7 +34,7 @@ function u(e) {
 
 function d(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -42,7 +42,7 @@ function d(e, t) {
   return i
 }
 
-function _(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -50,14 +50,14 @@ function _(e, t) {
   return i
 }
 
-function f(e) {
+function _(e) {
   var {
     streamId: t,
     paused: n = !1,
     onReady: a,
     onResize: c,
-    className: _
-  } = e, f = d(e, ["streamId", "paused", "onReady", "onResize", "className"]);
+    className: f
+  } = e, _ = d(e, ["streamId", "paused", "onReady", "onResize", "className"]);
   let p = i.useRef(null),
     h = i.useRef({
       width: 0,
@@ -99,11 +99,11 @@ function f(e) {
       n || e.currentTarget.play()
     }, [n]);
   return (0, r.jsx)("video", u({
-    className: o()("media-engine-video", _),
+    className: o()("media-engine-video", f),
     ref: p,
     autoPlay: !0,
     onPause: E,
     onCanPlayThrough: g,
     muted: !0
-  }, f))
+  }, _))
 }

@@ -66,7 +66,7 @@ function d(e) {
   return t
 }
 
-function _(e, t) {
+function f(e, t) {
   let n = e,
     r = [];
   for (let e = 0; e < t.length && null != n; e++) {
@@ -82,12 +82,12 @@ function _(e, t) {
   return r
 }
 
-function f(e, t) {
+function _(e, t) {
   let {
     items: n
   } = t, r = s(a({}, e), {
     items: n,
-    focusPath: _(n, e.focusPath)
+    focusPath: f(n, e.focusPath)
   });
   return s(a({}, r), {
     focusIndex: b(r)
@@ -98,7 +98,7 @@ function p(e, t) {
   let {
     path: n
   } = t, r = s(a({}, e), {
-    focusPath: _(e.items, n)
+    focusPath: f(e.items, n)
   });
   return s(a({}, r), {
     focusIndex: b(r)
@@ -141,11 +141,11 @@ function g(e, t) {
   let o = i[c(i, r)],
     l = null == o || null == (n = o.children) ? void 0 : n[0];
   if (null == l) return e;
-  let _ = s(a({}, e), {
+  let f = s(a({}, e), {
     focusPath: [...e.focusPath, l.key]
   });
-  return s(a({}, _), {
-    focusIndex: b(_)
+  return s(a({}, f), {
+    focusIndex: b(f)
   })
 }
 
@@ -176,7 +176,7 @@ function y(e, t) {
     case r.Us.NAVIGATE_OUT:
       return E(e, t);
     case "UPDATE_ITEMS":
-      return f(e, t);
+      return _(e, t);
     case "SET_FOCUS_PATH":
       return p(e, t);
     case r.Us.SELECT_FOCUSED_ITEM:

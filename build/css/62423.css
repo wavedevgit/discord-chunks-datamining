@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: a87ddf0387385e4f
+  Original File Name: 9ea0e98684f64e38
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -2122,7 +2122,7 @@ html:not(.visual-refresh) .header_cba592 {
 
 .popoutContainer__02e2b {
     align-items: center;
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: var(--radius-lg);
     box-shadow: var(--elevation-high);
     box-sizing: border-box;
@@ -2314,7 +2314,7 @@ html:not(.visual-refresh) .header_cba592 {
 
 .container__9fa5a {
     align-items: flex-start;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 16px;
     box-shadow: var(--shadow-border),var(--shadow-high);
     display: flex;
@@ -2379,7 +2379,7 @@ html:not(.visual-refresh) .header_cba592 {
 .wumpusRocketInnerContainer__9fa5a {
     animation: slide__9fa5a .5s forwards;
     animation-timing-function: cubic-bezier(0,.3,1,.7);
-    background: linear-gradient(270deg,var(--background-floating) 0,var(--background-floating) 90%,transparent 100%);
+    background: linear-gradient(270deg,var(--background-surface-high) 0,var(--background-surface-high) 90%,transparent 100%);
     height: 100px;
     position: absolute;
     right: 0;
@@ -2433,7 +2433,7 @@ html:not(.visual-refresh) .header_cba592 {
 }
 
 .maskPopout__148e9 {
-    border: 2px solid var(--background-floating)
+    border: 2px solid var(--background-surface-high)
 }
 
 .maskPrimary__148e9 {
@@ -2821,7 +2821,7 @@ input[type=checked]:focus-visible+.label_df4aaf {
 }
 
 .voiceChannelEffectEmojiContainer__66db8 {
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: 50%;
     box-shadow: 0 0 16px rgba(0,0,0,.24);
     position: absolute;
@@ -4802,7 +4802,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .recentClipsPopout__20c92 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 8px;
     box-shadow: var(--elevation-medium);
     box-sizing: border-box;
@@ -4813,7 +4813,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .recentClipsPopout__20c92:after {
     border: 8px solid transparent;
-    border-top: 8px solid var(--background-floating);
+    border-top: 8px solid var(--background-surface-high);
     content: " ";
     left: 50%;
     margin-left: -8px;
@@ -4990,7 +4990,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .attachPopout__0923f {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 8px;
     box-shadow: var(--elevation-high);
     font-size: .75rem;
@@ -5151,7 +5151,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .container__65338 {
     align-items: flex-start;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 8px;
     bottom: 84px;
     box-shadow: var(--elevation-high),var(--elevation-stroke);
@@ -5848,7 +5848,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .safetyBanner__51e4d {
     align-items: center;
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: 6px;
     box-shadow: var(--elevation-low);
     display: flex;
@@ -9449,7 +9449,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .root_d529e9 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -9591,7 +9591,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .popoutContainer__7169b {
     align-items: center;
-    background: var(--background-floating);
+    background: var(--background-surface-high);
     border-radius: var(--radius-lg);
     box-shadow: var(--elevation-high);
     box-sizing: border-box;
@@ -9710,7 +9710,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .wrapper_cb9592.minimum_cb9592 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     height: 240px
 }
 
@@ -13271,4 +13271,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=a87ddf0387385e4f.css.map*/
+/*# sourceMappingURL=9ea0e98684f64e38.css.map*/

@@ -23,7 +23,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,7 +48,7 @@ function f(e, t) {
 }
 
 function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -95,7 +95,7 @@ function b(e) {
   let {
     image: i,
     smallImage: d,
-    aspectRatio: f,
+    aspectRatio: _,
     onClick: m,
     size: b,
     className: y
@@ -108,14 +108,14 @@ function b(e) {
     src: void 0,
     alt: c.intl.string(c.t["2B/phI"]),
     size: O,
-    className: a()(u.contentImage, h[null != f ? f : "default"], y),
+    className: a()(u.contentImage, h[null != _ ? _ : "default"], y),
     constrain: "width"
   });
   let T = (0, r.jsx)(l.f, {
     src: i.src,
     alt: null != (n = null != (t = i.alt) ? t : i.text) ? n : c.intl.string(c.t["2B/phI"]),
     size: O,
-    className: a()(u.contentImage, h[null != f ? f : "default"]),
+    className: a()(u.contentImage, h[null != _ ? _ : "default"]),
     constrain: "width"
   });
   return (0, r.jsxs)("div", {
@@ -124,13 +124,13 @@ function b(e) {
       text: i.text,
       children: e => (0, r.jsx)(E, {
         onClick: m,
-        children: null != d ? (0, r.jsx)(s.ZP, p(_({}, e), {
+        children: null != d ? (0, r.jsx)(s.ZP, p(f({}, e), {
           className: u.imageContainer,
           mask: I,
           width: O,
           height: O,
           children: T
-        })) : (0, r.jsx)("div", p(_({}, e), {
+        })) : (0, r.jsx)("div", p(f({}, e), {
           className: u.imageContainer,
           children: T
         }))
@@ -139,7 +139,7 @@ function b(e) {
       text: d.text,
       children: e => {
         var t;
-        return (0, r.jsx)("div", p(_({}, e), {
+        return (0, r.jsx)("div", p(f({}, e), {
           className: u.smallImageContainer,
           children: (0, r.jsx)(l.f, {
             src: d.src,

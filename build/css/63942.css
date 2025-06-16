@@ -1,6 +1,6 @@
 /**
   Module ID: 63942
-  Original File Name: 22222503e024442d
+  Original File Name: 7b6d31061b395d1f
 **/
 .modalRoot_de2fa0 {
     border: none!important;
@@ -17,7 +17,7 @@
 }
 
 .modalBg_de2fa0 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 12px;
     overflow: hidden
 }
@@ -790,4 +790,4 @@
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=22222503e024442d.css.map*/
+/*# sourceMappingURL=7b6d31061b395d1f.css.map*/

@@ -12,8 +12,8 @@ var r = n(544891),
   c = n(70956),
   u = n(358085),
   d = n(960048),
-  _ = n(998502),
-  f = n(185075);
+  f = n(998502),
+  _ = n(185075);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,16 +30,16 @@ let h = +c.Z.Millis.HOUR,
   b = new l.Z("AutoUpdateManager");
 class y extends o.Z {
   _initialize() {
-    u.isPlatformEmbedded && (_.ZP.on("CHECKING_FOR_UPDATES", this._handleCheckingForUpdates), _.ZP.on("UPDATE_NOT_AVAILABLE", this._handleNativeUpdateNotAvailable), _.ZP.on("UPDATE_AVAILABLE", () => this._handleUpdateAvailable(!0)), _.ZP.on("UPDATE_ERROR", this._handleUpdateError), _.ZP.on("UPDATE_DOWNLOADED", () => this._handleUpdateDownloaded(!0)), _.ZP.on("UPDATE_MANUALLY", this._handleUpdateManually))
+    u.isPlatformEmbedded && (f.ZP.on("CHECKING_FOR_UPDATES", this._handleCheckingForUpdates), f.ZP.on("UPDATE_NOT_AVAILABLE", this._handleNativeUpdateNotAvailable), f.ZP.on("UPDATE_AVAILABLE", () => this._handleUpdateAvailable(!0)), f.ZP.on("UPDATE_ERROR", this._handleUpdateError), f.ZP.on("UPDATE_DOWNLOADED", () => this._handleUpdateDownloaded(!0)), f.ZP.on("UPDATE_MANUALLY", this._handleUpdateManually))
   }
   _terminate() {
     clearInterval(this._checkInterval)
   }
   quitAndInstall() {
-    this.updateAvailable && (this.nativeUpdateAvailable ? null != this._bootstrapper ? this._bootstrapper.finishBootstrap() : _.ZP.send("QUIT_AND_INSTALL") : location.reload(!0))
+    this.updateAvailable && (this.nativeUpdateAvailable ? null != this._bootstrapper ? this._bootstrapper.finishBootstrap() : f.ZP.send("QUIT_AND_INSTALL") : location.reload(!0))
   }
   handlePostConnectionOpen() {
-    this.nativeUpdateCountThreshold = (0, f.W)({
+    this.nativeUpdateCountThreshold = (0, _.W)({
       location: "post_connection_open"
     }).nativeUpdateCount, this.checkForUpdates(), this._checkInterval = setInterval(this.checkForUpdates, h)
   }
@@ -47,13 +47,13 @@ class y extends o.Z {
     let e;
     b.log("Bootstrapping new updater host...");
     try {
-      await _.ZP.ensureModule("discord_updater_bootstrap"), e = _.ZP.requireModule("discord_updater_bootstrap"), this._bootstrapper = e
+      await f.ZP.ensureModule("discord_updater_bootstrap"), e = f.ZP.requireModule("discord_updater_bootstrap"), this._bootstrapper = e
     } catch (e) {
       this._handleNativeUpdateNotAvailable();
       return
     }
     try {
-      this._handleCheckingForUpdates(), await e.bootstrap(_.ZP.releaseChannel, "win"), this.updateAvailable = !0, this.nativeUpdateAvailable = !0, this._handleUpdateDownloaded(!0)
+      this._handleCheckingForUpdates(), await e.bootstrap(f.ZP.releaseChannel, "win"), this.updateAvailable = !0, this.nativeUpdateAvailable = !0, this._handleUpdateDownloaded(!0)
     } catch (e) {
       b.log("Failed to bootstrap new updater:", e), this._handleNativeUpdateNotAvailable(), d.Z.captureException(e)
     }
@@ -70,7 +70,7 @@ class y extends o.Z {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         n = "win32" === (0, u.getPlatformName)(),
         r = n && t.nativeUpdatesDownloaded < t.nativeUpdateCountThreshold;
-      return (e || !t.nativeUpdateAvailable || r) && (u.isPlatformEmbedded ? n && _.ZP.canBootstrapNewUpdater ? t._requestNewUpdaterBootstrap() : _.ZP.send("CHECK_FOR_UPDATES", {
+      return (e || !t.nativeUpdateAvailable || r) && (u.isPlatformEmbedded ? n && f.ZP.canBootstrapNewUpdater ? t._requestNewUpdaterBootstrap() : f.ZP.send("CHECK_FOR_UPDATES", {
         allowMultipleUpdates: !1
       }) : t._handleNativeUpdateNotAvailable()), new Promise(e => {
         t.updateAvailable ? e(!0) : t._callbacks.push(e)
@@ -88,7 +88,7 @@ class y extends o.Z {
         oldFormErrors: !0,
         rejectWithError: !0
       }).then(e => {
-        if (null == e.body || "a85d6a163e6f0145e8dbfbe768f96a4d8d462b9d" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "f76e008cbe32250cd4dd396af63e18db02354157" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, s.fD)()) return this._handleUpdateDownloaded(!1);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? m : g;
         if (Date.now() - E > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(!1)

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  De: () => e_,
+  De: () => ef,
   ZP: () => eV
 }), n(388685), n(825670), n(413496), n(433524), n(35282), n(539854), n(642613), n(804061), n(704826);
 var r, i = n(392711),
@@ -12,8 +12,8 @@ var r, i = n(392711),
   c = n(442837),
   u = n(570140),
   d = n(704907),
-  _ = n(287328),
-  f = n(86670),
+  f = n(287328),
+  _ = n(86670),
   p = n(489033),
   h = n(188742),
   m = n(353926),
@@ -35,8 +35,8 @@ var r, i = n(392711),
   D = n(709054),
   L = n(906411),
   x = n(689789),
-  M = n(407477),
-  k = n(633302),
+  k = n(407477),
+  M = n(633302),
   j = n(396352),
   U = n(856985),
   G = n(185923),
@@ -83,7 +83,7 @@ function W(e, t) {
   }), e
 }
 let K = "original",
-  z = [V.UX.TOP_GUILD_EMOJI.toString(), V.UX.FAVORITES.toString(), V.UX.RECENT.toString(), V.UX.CUSTOM.toString()].concat(k.ZP.getCategories()),
+  z = [V.UX.TOP_GUILD_EMOJI.toString(), V.UX.FAVORITES.toString(), V.UX.RECENT.toString(), V.UX.CUSTOM.toString()].concat(M.ZP.getCategories()),
   q = {
     pendingUsages: [],
     emojiReactionPendingUsages: [],
@@ -153,10 +153,10 @@ function el() {
 }
 async function ec() {
   if (0 !== ee) return;
-  let e = _.Z.database();
+  let e = f.Z.database();
   if (null == e) return;
   ee = 2;
-  let t = await (0, f.gs)("EmojiStore.loadSavedEmojis", () => l.Z.timeAsync("\uD83D\uDCBE", "loadSavedEmojis", () => p.Z.getAsync(e)));
+  let t = await (0, _.gs)("EmojiStore.loadSavedEmojis", () => l.Z.timeAsync("\uD83D\uDCBE", "loadSavedEmojis", () => p.Z.getAsync(e)));
   ee = 3, null != t && u.Z.dispatch({
     type: "CACHED_EMOJIS_LOADED",
     emojis: t
@@ -180,7 +180,7 @@ function ed(e) {
     },
     lookupKey: e => {
       var t;
-      return null != (t = k.ZP.getByName(e)) ? t : es(e)
+      return null != (t = M.ZP.getByName(e)) ? t : es(e)
     },
     afterCompute: () => {
       e(), et = z.slice(0), a().some(en, e => e.usableEmojis.length > 0) || et.splice(z.indexOf(V.UX.CUSTOM), 1)
@@ -188,24 +188,24 @@ function ed(e) {
     numFrequentlyItems: Q
   })
 }
-class e_ {
+class ef {
   static get(e) {
-    return void 0 === e && (e = null), (null == e_._lastInstance || e_._lastInstance.guildId !== e) && (e_._lastInstance = new e_(e)), e_._lastInstance
+    return void 0 === e && (e = null), (null == ef._lastInstance || ef._lastInstance.guildId !== e) && (ef._lastInstance = new ef(e)), ef._lastInstance
   }
   static reset() {
-    e_._lastInstance = null
+    ef._lastInstance = null
   }
   static resetFrequentlyUsed() {
-    null != e_._lastInstance && (e_._lastInstance.frequentlyUsed = null)
+    null != ef._lastInstance && (ef._lastInstance.frequentlyUsed = null)
   }
   static resetFrequentlyUsedReactionEmojis() {
-    null != e_._lastInstance && (e_._lastInstance.frequentlyUsedReactionEmojis = null)
+    null != ef._lastInstance && (ef._lastInstance.frequentlyUsedReactionEmojis = null)
   }
   static resetFavorites() {
-    null != e_._lastInstance && (e_._lastInstance.favorites = null, e_._lastInstance.favoriteNamesAndIds = null)
+    null != ef._lastInstance && (ef._lastInstance.favorites = null, ef._lastInstance.favoriteNamesAndIds = null)
   }
   static clear(e) {
-    null != e_._lastInstance && e_._lastInstance.guildId === e && (e_._lastInstance = null)
+    null != ef._lastInstance && ef._lastInstance.guildId === e && (ef._lastInstance = null)
   }
   ensureDisambiguated() {
     null == this.disambiguatedEmoji && this._buildDisambiguatedCustomEmoji()
@@ -237,13 +237,13 @@ class e_ {
   }
   getFrequentlyUsedEmojisWithoutFetchingLatest() {
     if (this.ensureDisambiguated(), null != this.frequentlyUsed) return this.frequentlyUsed;
-    let e = ef.frequently.map(e => null != e.id ? this.getById(e.id) : k.ZP.getByName(e.name)).filter(P.lm),
+    let e = e_.frequently.map(e => null != e.id ? this.getById(e.id) : M.ZP.getByName(e.name)).filter(P.lm),
       t = (0, U.Z)(e);
     return this.frequentlyUsed = [...t.values()], this.frequentlyUsed
   }
   getFrequentlyUsedReactionEmojisWithoutFetchingLatest() {
     if (this.ensureDisambiguated(), null != this.frequentlyUsedReactionEmojis) return this.frequentlyUsedReactionEmojis;
-    let e = ep.frequently.map(e => null != e.id ? this.getById(e.id) : k.ZP.getByName(e.name)).filter(P.lm),
+    let e = ep.frequently.map(e => null != e.id ? this.getById(e.id) : M.ZP.getByName(e.name)).filter(P.lm),
       t = (0, U.Z)(e);
     return this.frequentlyUsedReactionEmojis = [...t.values()], this.frequentlyUsedReactionEmojis
   }
@@ -255,7 +255,7 @@ class e_ {
     };
     let n = (null != (t = null == (e = v.Z.frecencyWithoutFetchingLatest.favoriteEmojis) ? void 0 : e.emojis) ? t : []).map(e => {
         var t;
-        return null != (t = this.getById(e)) ? t : k.ZP.getByName(e)
+        return null != (t = this.getById(e)) ? t : M.ZP.getByName(e)
       }).filter(P.lm),
       r = (0, U.Z)(n);
     return this.favorites = [...r.values()], this.favoriteNamesAndIds = new Set(r.keys()), {
@@ -267,11 +267,11 @@ class e_ {
     return this.rebuildFavoriteEmojisWithoutFetchingLatest().favorites
   }
   getEmojiInPriorityOrderWithoutFetchingLatest() {
-    let e = (0, M.E2)({
+    let e = (0, k.E2)({
       location: "getEmojiInPriorityOrderWithoutFetchingLatest",
       autoTrackExposure: !0
     });
-    M.Xb.trackExposure({
+    k.Xb.trackExposure({
       location: "getEmojiInPriorityOrderWithoutFetchingLatest"
     });
     let t = e ? this.getFrequentlyUsedReactionEmojisWithoutFetchingLatest() : this.getFrequentlyUsedEmojisWithoutFetchingLatest(),
@@ -286,7 +286,7 @@ class e_ {
       if (null == n && null == r) return $;
       let i = (null != (t = null == n ? void 0 : n.emojiIds) ? t : r).map(e => {
           var t;
-          return null != (t = this.getById(e)) ? t : k.ZP.getByName(k.ZP.convertSurrogateToName(e, !1))
+          return null != (t = this.getById(e)) ? t : M.ZP.getByName(M.ZP.convertSurrogateToName(e, !1))
         }),
         a = [];
       i.forEach(e => {
@@ -339,7 +339,7 @@ class e_ {
       r = e => {
         Object.prototype.hasOwnProperty.call(this.emoticonsByName, e.name) || (t.push(w.Z.escape(e.name)), this.emoticonsByName[e.name] = e)
       };
-    k.ZP.forEach(n);
+    M.ZP.forEach(n);
     let i = e => {
       let t = en[null == e ? B.kod : e];
       null != t && (a().each(t.usableEmojis, n), a().each(t.emoticons, r))
@@ -357,17 +357,17 @@ class e_ {
         favoriteNamesAndIds: n
       } = this.rebuildFavoriteEmojisWithoutFetchingLatest();
       if (null != e.id) return n.has(e.id);
-      let r = null != (t = k.ZP.convertSurrogateToBase(e.surrogates)) ? t : e;
+      let r = null != (t = M.ZP.convertSurrogateToBase(e.surrogates)) ? t : e;
       return n.has(r.name)
     }), this.guildId = e
   }
 }
-Z(e_, "_lastInstance", null);
-let ef = ed(e_.resetFrequentlyUsed),
-  ep = ed(e_.resetFrequentlyUsedReactionEmojis);
+Z(ef, "_lastInstance", null);
+let e_ = ed(ef.resetFrequentlyUsed),
+  ep = ed(ef.resetFrequentlyUsedReactionEmojis);
 
 function eh() {
-  en = {}, er = {}, e_.reset(), ea.clear(), ee = 3
+  en = {}, er = {}, ef.reset(), ea.clear(), ee = 3
 }
 
 function em(e) {
@@ -375,11 +375,11 @@ function em(e) {
 }
 
 function eg() {
-  er = null, e_.reset(), (3 === ee || 1 === ee) && (ef.compute(), ep.compute())
+  er = null, ef.reset(), (3 === ee || 1 === ee) && (e_.compute(), ep.compute())
 }
 
 function eE(e, t) {
-  if (em(e), e_.clear(e), null == t) return;
+  if (em(e), ef.clear(e), null == t) return;
   let n = N.default.getCurrentUser();
   if (null == n) return;
   let r = (0, y.r)(e);
@@ -440,9 +440,9 @@ function eN(e) {
 
 function eC(e) {
   if (!e.optimistic) return !1;
-  let t = null != e.emoji.id && "0" !== e.emoji.id ? e.emoji : k.ZP.getByName(k.ZP.convertSurrogateToName(e.emoji.name, !1));
+  let t = null != e.emoji.id && "0" !== e.emoji.id ? e.emoji : M.ZP.getByName(M.ZP.convertSurrogateToName(e.emoji.name, !1));
   if (null == t) return !1;
-  eM([t]), ex([t])
+  ek([t]), ex([t])
 }
 
 function eR(e, t) {
@@ -452,14 +452,14 @@ function eR(e, t) {
     location: "populateInitialFrecencyData"
   }, {
     autoTrackExposure: !0
-  }), r = (0, M.E2)({
+  }), r = (0, k.E2)({
     location: "populateInitialFrecencyData",
     autoTrackExposure: !0
   });
-  if (M.Xb.trackExposure({
+  if (k.Xb.trackExposure({
       location: "populateInitialFrecencyData"
     }), a().isEmpty(e) && a().isEmpty(q.pendingUsages) && v.Z.hasLoaded(F.yP.FRECENCY_AND_FAVORITES_SETTINGS))
-    for (let e of ["thumbsup", "thumbsup", "eyes", "eyes", "laughing", "laughing", "watermelon", "fork_and_knife", "yum", "weary", "tired_face", "poop", "100"]) ef.track(e);
+    for (let e of ["thumbsup", "thumbsup", "eyes", "eyes", "laughing", "laughing", "watermelon", "fork_and_knife", "yum", "weary", "tired_face", "poop", "100"]) e_.track(e);
   if ((n || r) && a().isEmpty(t) && a().isEmpty(q.emojiReactionPendingUsages) && v.Z.hasLoaded(F.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["100", "100", "thumbsup", "thumbsup", "thumbsdown", "thumbsdown", "heart", "point_up", "eyes", "weary", "laughing", "white_check_mark", "x"]) ep.track(e)
 }
@@ -467,11 +467,11 @@ function eR(e, t) {
 function eP() {
   var e, t, n, r, i, o;
   let s = null == (t = v.Z.settings.textAndImages) || null == (e = t.diversitySurrogate) ? void 0 : e.value;
-  null != s && k.ZP.setDefaultDiversitySurrogate(s), e_.reset();
+  null != s && M.ZP.setDefaultDiversitySurrogate(s), ef.reset();
   let l = v.Z.frecencyWithoutFetchingLatest,
     c = null != (i = null == (n = l.emojiFrecency) ? void 0 : n.emojis) ? i : {},
     u = null != (o = null == (r = l.emojiReactionFrecency) ? void 0 : r.emojis) ? o : {};
-  ef.overwriteHistory(a().mapValues(c, e => W(H({}, e), {
+  e_.overwriteHistory(a().mapValues(c, e => W(H({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), q.pendingUsages), ep.overwriteHistory(a().mapValues(u, e => W(H({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
@@ -493,7 +493,7 @@ function eD() {
   if (!m.Z.hasLoadedExperiments) return;
   let {
     frecencyAlgorithm: e
-  } = M.ZP.getCurrentConfig({
+  } = k.ZP.getCurrentConfig({
     location: "handleExperimentsChange"
   }, {
     autoTrackExposure: !0
@@ -513,16 +513,16 @@ function ex(e) {
   for (let r of e) {
     var t, n;
     let e = null != (n = null != (t = r.id) ? t : r.uniqueName) ? n : r.name;
-    null != e && (ef.track(e), q.pendingUsages.push({
+    null != e && (e_.track(e), q.pendingUsages.push({
       key: e,
       timestamp: Date.now()
     }))
   }
   let r = e.length > 0;
-  return r && (3 === ee || 1 === ee) && ef.compute(), r
+  return r && (3 === ee || 1 === ee) && e_.compute(), r
 }
 
-function eM(e) {
+function ek(e) {
   if (null == e) return !1;
   for (let r of e) {
     var t, n;
@@ -536,7 +536,7 @@ function eM(e) {
   return r && (3 === ee || 1 === ee) && ep.compute(), r
 }
 
-function ek(e) {
+function eM(e) {
   let {
     guildId: t,
     role: n
@@ -576,7 +576,7 @@ function eG(e) {
 }
 class eB extends(r = c.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(_.Z, T.Z, I.ZP, S.Z, O.default, b.Z, j.Z, N.default, m.Z), null != e && (null != e.pendingUsages && (q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([v.Z], eP), this.syncWith([m.Z], eD)
+    this.waitFor(f.Z, T.Z, I.ZP, S.Z, O.default, b.Z, j.Z, N.default, m.Z), null != e && (null != e.pendingUsages && (q.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (q.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (q.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([v.Z], eP), this.syncWith([m.Z], eD)
   }
   getState() {
     return q
@@ -595,10 +595,10 @@ class eB extends(r = c.ZP.PersistedStore) {
   }
   get diversitySurrogate() {
     var e;
-    return null != (e = k.ZP.getDefaultDiversitySurrogate()) ? e : ""
+    return null != (e = M.ZP.getDefaultDiversitySurrogate()) ? e : ""
   }
   get emojiFrecencyWithoutFetchingLatest() {
-    return ef
+    return e_
   }
   get emojiReactionFrecencyWithoutFetchingLatest() {
     return ep
@@ -619,7 +619,7 @@ class eB extends(r = c.ZP.PersistedStore) {
     return en
   }
   getDisambiguatedEmojiContext(e) {
-    return ec(), e_.get(e)
+    return ec(), ef.get(e)
   }
   getSearchResultsOrder(e, t, n, r) {
     let i = t.toLowerCase(),
@@ -631,11 +631,11 @@ class eB extends(r = c.ZP.PersistedStore) {
       }, {
         autoTrackExposure: !0
       }),
-      l = (0, M.E2)({
+      l = (0, k.E2)({
         location: "getSearchResultsOrder",
         autoTrackExposure: !0
       });
-    if (M.Xb.trackExposure({
+    if (k.Xb.trackExposure({
         location: "getSearchResultsOrder"
       }), e.length > 0) {
       let t = RegExp("^".concat(o), "i"),
@@ -647,7 +647,7 @@ class eB extends(r = c.ZP.PersistedStore) {
           if (null == e || null == t) return 0;
           let n = e.toLowerCase(),
             a = 1 + 4 * (n === i) + (c(n) || c(e) ? 2 : 0) + +!!u(e),
-            o = r === G.Hz.REACTION && (s || l) ? ep.getScore(t) : ef.getScore(t);
+            o = r === G.Hz.REACTION && (s || l) ? ep.getScore(t) : e_.getScore(t);
           return null != o && (a *= o / 100), a
         };
       e = a().orderBy(e, [e => null != e.names ? d(e.names[0]) : d(e.name, e.id), e => null != e.names ? e.names[0] : e.name], ["desc", "asc"])
@@ -672,7 +672,7 @@ class eB extends(r = c.ZP.PersistedStore) {
       t = t => e.test(t.replaceAll("_", ""))
     } else t = s;
     let d = null != n ? n.getGuildId() : null,
-      _ = e_.get(d).nameMatchesChain(t).reduce((e, t) => {
+      f = ef.get(d).nameMatchesChain(t).reduce((e, t) => {
         let r = R.ZP.getEmojiUnavailableReason({
           emoji: t,
           channel: n,
@@ -685,8 +685,8 @@ class eB extends(r = c.ZP.PersistedStore) {
         locked: []
       });
     return {
-      unlocked: this.getSearchResultsOrder(_.unlocked, r, i, a),
-      locked: this.getSearchResultsOrder(_.locked, r, 0, a)
+      unlocked: this.getSearchResultsOrder(f.unlocked, r, i, a),
+      locked: this.getSearchResultsOrder(f.locked, r, 0, a)
     }
   }
   getUsableCustomEmojiById(e) {
@@ -696,10 +696,10 @@ class eB extends(r = c.ZP.PersistedStore) {
     return ec(), eo(e)
   }
   getTopEmoji(e) {
-    return null == e ? $ : (ec(), e_.get(e).getTopEmojiWithoutFetchingLatest(e))
+    return null == e ? $ : (ec(), ef.get(e).getTopEmojiWithoutFetchingLatest(e))
   }
   getNewlyAddedEmoji(e) {
-    return null == e ? $ : (ec(), e_.get(e).getNewlyAddedEmojiForGuild(e))
+    return null == e ? $ : (ec(), ef.get(e).getNewlyAddedEmojiForGuild(e))
   }
   getTopEmojisMetadata(e) {
     return ea.get(e)
@@ -723,7 +723,7 @@ class eB extends(r = c.ZP.PersistedStore) {
     return ec(), D.default.keys(en).some(e => en[e].usableEmojis.length > 0)
   }
   hasFavoriteEmojis(e) {
-    let t = e_.get(e);
+    let t = ef.get(e);
     return null != t && t.favoriteEmojisWithoutFetchingLatest.length > 0
   }
 }
@@ -742,8 +742,8 @@ let eV = new eB(u.Z, {
   MESSAGE_REACTION_ADD: eC,
   EMOJI_TRACK_USAGE: eL,
   USER_SETTINGS_PROTO_UPDATE: ew,
-  GUILD_ROLE_CREATE: ek,
-  GUILD_ROLE_UPDATE: ek,
+  GUILD_ROLE_CREATE: eM,
+  GUILD_ROLE_UPDATE: eM,
   TOP_EMOJIS_FETCH_SUCCESS: eU,
   EMOJI_AUTOSUGGESTION_UPDATE: eG,
   TOGGLE_GUILD_EXPANDED_STATE: ej

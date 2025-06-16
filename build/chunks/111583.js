@@ -11,9 +11,9 @@ var i, a = n(442837),
   c = n(70956),
   u = n(314897),
   d = n(300429),
-  _ = n(981631);
+  f = n(981631);
 
-function f(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function p(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -56,7 +56,7 @@ function O(e) {
   if (null != r && (null != r.timeout || r.prevSend + a > i)) return !1;
   let c = setTimeout(() => {
     null != r && r.channelId === t && n === u.default.getId() && null != r.timeout && (r.timeout = null, R(t) > g || o.tn.post({
-      url: _.ANM.TYPING(t),
+      url: f.ANM.TYPING(t),
       oldFormErrors: !0,
       rejectWithError: !0
     }).then(e => {
@@ -161,7 +161,7 @@ class P extends(i = a.ZP.Store) {
     return null != y(e)[t]
   }
 }
-f(P, "displayName", "TypingStore");
+_(P, "displayName", "TypingStore");
 let w = new P(s.Z, {
   TYPING_START: S,
   TYPING_STOP: A,

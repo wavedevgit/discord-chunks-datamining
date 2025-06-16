@@ -13,8 +13,8 @@ var i = n(780384),
   c = n(639119),
   u = n(767714),
   d = n(474936),
-  _ = n(388032),
-  f = n(136021);
+  f = n(388032),
+  _ = n(136021);
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,14 +64,14 @@ let E = e => {
       shouldShowReferralTrialCopy: a,
       subscriptionTrial: o
     } = e;
-    return t && a ? _.intl.string(_.t.bXTClZ) : t && (n === d.Si.TIER_2 || i) ? (0, s.Rt)({
+    return t && a ? f.intl.string(f.t.bXTClZ) : t && (n === d.Si.TIER_2 || i) ? (0, s.Rt)({
       intervalType: null == o ? void 0 : o.interval,
       intervalCount: null == o ? void 0 : o.interval_count
-    }) : t ? _.intl.formatToPlainString(_.t.nTmm2t, {
+    }) : t ? f.intl.formatToPlainString(f.t.nTmm2t, {
       freeTrialText: r
     }) : void 0
   },
-  b = (e, t, n, r) => t || n ? _.intl.string(_.t.fkPGam) : e === d.Si.TIER_2 ? _.intl.formatToPlainString(_.t.bkQ4bG, {
+  b = (e, t, n, r) => t || n ? f.intl.string(f.t.fkPGam) : e === d.Si.TIER_2 ? f.intl.formatToPlainString(f.t.bkQ4bG, {
     percent: r
   }) : void 0,
   y = e => {
@@ -96,7 +96,7 @@ let E = e => {
       P = (0, l.Ng)(),
       w = null != C && n === C.sku_id,
       D = (null == N ? void 0 : N.trial_id) === d.a7,
-      L = p ? _.intl.string(_.t.J61px8) : null != P ? b(n, y, g, P.discount.amount) : E({
+      L = p ? f.intl.string(f.t.J61px8) : null != P ? b(n, y, g, P.discount.amount) : E({
         showTrialCTA: w,
         subscriptionTier: n,
         trialDurationCopy: R,
@@ -109,7 +109,7 @@ let E = e => {
       color: x,
       textOptions: h({
         textOverride: L,
-        textClassName: w ? f.freeTrialText : void 0
+        textClassName: w ? _.freeTrialText : void 0
       }, t),
       onlyShineOnHover: !0,
       subscriptionTier: n,

@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(835473),
   u = n(925329),
   d = n(743056),
-  _ = n(5192),
-  f = n(785717),
+  f = n(5192),
+  _ = n(785717),
   p = n(652853),
   h = n(228168),
   m = n(388032),
@@ -29,9 +29,9 @@ function E(e) {
     className: y
   } = e, {
     themeType: O
-  } = (0, p.z)(), v = O === h.lY.MODAL_V2, I = _.ZP.getName(n, a, t), {
+  } = (0, p.z)(), v = O === h.lY.MODAL_V2, I = f.ZP.getName(n, a, t), {
     trackUserProfileAction: T
-  } = (0, f.KZ)(), {
+  } = (0, _.KZ)(), {
     newestAnalyticsLocation: S
   } = (0, l.ZP)(), {
     acceptFriendRequest: A,

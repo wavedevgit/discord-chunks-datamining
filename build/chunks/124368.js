@@ -4,14 +4,14 @@ n.d(t, {
   AX: () => a,
   M3: () => s,
   RN: () => p,
-  SX: () => f,
+  SX: () => _,
   dg: () => c,
   fZ: () => h,
   iN: () => u,
   on: () => d,
   vw: () => o,
   yX: () => l,
-  zb: () => _
+  zb: () => f
 }), n(388685);
 var r = n(981631),
   i = n(388032);
@@ -30,7 +30,7 @@ var d = function(e) {
   return e.EMBED = "Embed", e.BROWSER = "Thread Browser", e.POPOUT = "Active Threads Popout", e.CHANNEL_LIST = "Channel List", e.GUILD_ACTIVE_THREADS_MODAL = "Guild Active Threads Modal", e.INBOX = "Inbox", e.FORUM = "Forum", e.VOICE_AUTO_OPEN = "Voice Auto Open", e
 }({});
 
-function _() {
+function f() {
   return [{
     setting: u.ALL_MESSAGES,
     label: i.intl.string(i.t["n/bTaW"])
@@ -42,7 +42,7 @@ function _() {
     label: i.intl.string(i.t.CtVGyc)
   }]
 }
-var f = function(e) {
+var _ = function(e) {
   return e.LATEST_ACTIVITY = "Last Message", e.CREATION_DATE = "Creation", e
 }({});
 let p = new Set([r.evJ.TOO_MANY_ATTACHMENTS, r.evJ.EXPLICIT_CONTENT, r.evJ.ENTITY_TOO_LARGE, r.evJ.EXPLICIT_CONTENT]),

@@ -11,7 +11,7 @@ n.d(t, {
   AM: () => W,
   B: () => ea,
   B8: () => A,
-  BQ: () => e_,
+  BQ: () => ef,
   C2: () => eO,
   Cn: () => z,
   D7: () => eg,
@@ -22,7 +22,7 @@ n.d(t, {
   H0: () => F,
   Hh: () => eC,
   IK: () => e$,
-  IU: () => ek,
+  IU: () => eM,
   KD: () => Y,
   KE: () => eT,
   Mc: () => Q,
@@ -52,7 +52,7 @@ n.d(t, {
   dE: () => eW,
   dJ: () => x,
   dN: () => ei,
-  eD: () => ef,
+  eD: () => e_,
   eW: () => v,
   ej: () => eS,
   ex: () => ep,
@@ -77,7 +77,7 @@ n.d(t, {
   of: () => eK,
   p0: () => ez,
   pC: () => V,
-  pj: () => eM,
+  pj: () => ek,
   qb: () => en,
   qt: () => e8,
   r3: () => em,
@@ -85,7 +85,7 @@ n.d(t, {
   s5: () => e0,
   sB: () => eY,
   up: () => eN,
-  vz: () => k,
+  vz: () => M,
   w7: () => ex,
   xQ: () => e2,
   xb: () => eq,
@@ -126,12 +126,12 @@ function u(e, t) {
 function d(e) {
   return null == e
 }
-let _ = 0,
-  f = new("undefined" == typeof TextEncoder ? (0, module.require)("util").TextEncoder : TextEncoder)("utf-8"),
-  p = "function" == typeof f.encodeInto ? function(e, t) {
-    return f.encodeInto(e, t)
+let f = 0,
+  _ = new("undefined" == typeof TextEncoder ? (0, module.require)("util").TextEncoder : TextEncoder)("utf-8"),
+  p = "function" == typeof _.encodeInto ? function(e, t) {
+    return _.encodeInto(e, t)
   } : function(e, t) {
-    let n = f.encode(e);
+    let n = _.encode(e);
     return t.set(n), {
       read: e.length,
       written: n.length
@@ -140,9 +140,9 @@ let _ = 0,
 
 function h(e, t, n) {
   if (void 0 === n) {
-    let n = f.encode(e),
+    let n = _.encode(e),
       r = t(n.length, 1) >>> 0;
-    return s().subarray(r, r + n.length).set(n), _ = n.length, r
+    return s().subarray(r, r + n.length).set(n), f = n.length, r
   }
   let r = e.length,
     i = t(r, 1) >>> 0,
@@ -158,7 +158,7 @@ function h(e, t, n) {
     let t = p(e, s().subarray(i + o, i + r));
     o += t.written, i = n(i, r, o, 1) >>> 0
   }
-  return _ = o, i
+  return f = o, i
 }
 let m = null;
 
@@ -244,7 +244,7 @@ function T(e, t) {
     let r = c(e[t]);
     g().setUint32(n + 4 * t, r, !0)
   }
-  return _ = e.length, n
+  return f = e.length, n
 }
 
 function S() {
@@ -287,24 +287,24 @@ class x {
   }
   static isBlockedDomain(e) {
     let t, n = h(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
-      i = _,
+      i = f,
       a = r.blockeddomainsstore_isBlockedDomain(n, i);
     return 0 !== a[0] && (t = l(a[0], a[1]).slice(), r.__wbindgen_free(a[0], +a[1], 1)), t
   }
   static startFetchingBlockedDomains(e) {
     let t = h(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
-      n = _;
+      n = f;
     r.blockeddomainsstore_startFetchingBlockedDomains(t, n)
   }
 }
-let M = "undefined" == typeof FinalizationRegistry ? {
+let k = "undefined" == typeof FinalizationRegistry ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => r.__wbg_experimentcacher_free(e >>> 0, 1));
-class k {
+class M {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, M.unregister(this), e
+    return this.__wbg_ptr = 0, k.unregister(this), e
   }
   free() {
     let e = this.__destroy_into_raw();
@@ -312,7 +312,7 @@ class k {
   }
   static isExperimentIdEnabled(e) {
     let t = h(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
-      n = _;
+      n = f;
     return 0 !== r.experimentcacher_isExperimentIdEnabled(t, n)
   }
   static getEnabledExperimentIds() {
@@ -322,7 +322,7 @@ class k {
   }
   static flushToCache(e) {
     let t = T(e, r.__wbindgen_malloc),
-      n = _;
+      n = f;
     r.experimentcacher_flushToCache(t, n)
   }
 }
@@ -341,12 +341,12 @@ class U {
   }
   static getNote(e) {
     let t = h(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
-      n = _;
+      n = f;
     return r.notestore_getNote(t, n)
   }
   static handleAction(e) {
     let t = h(e, r.__wbindgen_malloc, r.__wbindgen_realloc),
-      n = _;
+      n = f;
     return r.notestore_handleAction(t, n)
   }
   static handleReset() {
@@ -513,13 +513,13 @@ function ed(e) {
   return new Uint8Array(e)
 }
 
-function e_() {
+function ef() {
   return u(function() {
     return new AbortController
   }, arguments)
 }
 
-function ef(e, t) {
+function e_(e, t) {
   return Function(l(e, t))
 }
 
@@ -619,11 +619,11 @@ function ex(e, t) {
   e.headers = t
 }
 
-function eM(e, t, n) {
+function ek(e, t, n) {
   e.method = l(t, n)
 }
 
-function ek(e, t) {
+function eM(e, t) {
   e.mode = D[t]
 }
 
@@ -679,7 +679,7 @@ function eK(e, t, n) {
 
 function ez(e, t) {
   let n = h(t.url, r.__wbindgen_malloc, r.__wbindgen_realloc),
-    i = _;
+    i = f;
   g().setInt32(e + 4, i, !0), g().setInt32(e + 0, n, !0)
 }
 
@@ -710,7 +710,7 @@ function e0(e, t, n) {
 
 function e1(e, t) {
   let n = h(y(t), r.__wbindgen_malloc, r.__wbindgen_realloc),
-    i = _;
+    i = f;
   g().setInt32(e + 4, i, !0), g().setInt32(e + 0, n, !0)
 }
 
@@ -741,7 +741,7 @@ function e8(e, t) {
   let n = t,
     i = "string" == typeof n ? n : void 0;
   var a = d(i) ? 0 : h(i, r.__wbindgen_malloc, r.__wbindgen_realloc),
-    o = _;
+    o = f;
   g().setInt32(e + 4, o, !0), g().setInt32(e + 0, a, !0)
 }
 

@@ -1,6 +1,6 @@
 /**
   Module ID: 24231
-  Original File Name: 1815e2669192eb2a
+  Original File Name: f285074fcf5c25a6
 **/
 .container__05cdc {
     display: flex
@@ -240,7 +240,7 @@
 }
 
 .previewCard__68bd0 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border: 1px solid var(--background-modifier-accent);
     border-radius: 8px;
     box-sizing: border-box;
@@ -331,7 +331,7 @@
 }
 
 .container__26abc {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: var(--elevation-high);
     max-height: 300px;
@@ -530,4 +530,4 @@
     max-height: clamp(200px,calc(100vh - 80px),660px)
 }
 
-/*# sourceMappingURL=1815e2669192eb2a.css.map*/
+/*# sourceMappingURL=f285074fcf5c25a6.css.map*/

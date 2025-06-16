@@ -17,8 +17,8 @@ function l(e) {
     showPending: c = !1,
     showTryItOut: u = !1,
     animateOnHover: d = !1,
-    avatarDecorationOverride: _,
-    avatarOverride: f
+    avatarDecorationOverride: f,
+    avatarOverride: _
   } = e, {
     avatarSrc: p,
     isAvatarAnimating: h,
@@ -29,7 +29,7 @@ function l(e) {
     size: (0, i.pxk)(l),
     showPending: c,
     animateOnHover: d,
-    avatarOverride: f
+    avatarOverride: _
   }), {
     avatarPlaceholderSrc: g,
     avatarDecorationSrc: E,
@@ -40,7 +40,7 @@ function l(e) {
     size: (0, a.y9)(l),
     showPending: c,
     onlyAnimateOnHover: d,
-    avatarDecorationOverride: _,
+    avatarDecorationOverride: f,
     showTryItOut: u
   });
   return {

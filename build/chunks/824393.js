@@ -3,7 +3,7 @@
 n.d(t, {
   default: () => U,
   h: () => j,
-  j: () => k
+  j: () => M
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -14,8 +14,8 @@ var r = n(255367),
   c = n(481060),
   u = n(230711),
   d = n(211266),
-  _ = n(410030),
-  f = n(607070),
+  f = n(410030),
+  _ = n(607070),
   p = n(975298),
   h = n(530618),
   m = n(688465),
@@ -39,11 +39,11 @@ var r = n(255367),
 function L(e) {
   var t, n, a, u, d;
   let {
-    transitionState: _,
+    transitionState: f,
     onClose: p,
     quest: m,
     location: g
-  } = e, E = i.useRef(null), [b, y] = i.useState(null), O = i.useRef(new s.qA), v = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), S = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, [N, C] = i.useState({
+  } = e, E = i.useRef(null), [b, y] = i.useState(null), O = i.useRef(new s.qA), v = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), S = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, [N, C] = i.useState({
     state: "loading"
   });
   i.useEffect(() => {
@@ -74,7 +74,7 @@ function L(e) {
     }), (0, r.jsx)("div", {
       ref: E,
       children: (0, r.jsx)(c.Y0X, {
-        transitionState: _,
+        transitionState: f,
         size: c.CgR.DYNAMIC,
         className: o()(R.rootContainer, {
           [R.rootContainerLoading]: P
@@ -86,11 +86,11 @@ function L(e) {
         }) : "error" === N.state ? (0, r.jsx)(x, {
           errorReason: N.errorReason,
           onClose: p
-        }) : D ? (0, r.jsx)(k, {
-          duration: M(null != (u = null == (n = N.entitlements) ? void 0 : n.items) ? u : []),
+        }) : D ? (0, r.jsx)(M, {
+          duration: k(null != (u = null == (n = N.entitlements) ? void 0 : n.items) ? u : []),
           onClose: p
         }) : (0, r.jsx)(j, {
-          duration: M(null != (d = null == (a = N.entitlements) ? void 0 : a.items) ? d : []),
+          duration: k(null != (d = null == (a = N.entitlements) ? void 0 : a.items) ? d : []),
           onClose: p
         })
       })
@@ -137,7 +137,7 @@ function x(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let t = (0, v.xG)(e.map(e => e.skuId));
   return t % 24 == 0 ? C.intl.formatToPlainString(C.t["Cz1G9/"], {
     days: t / 24
@@ -146,7 +146,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     duration: t,
     onClose: n
@@ -212,7 +212,7 @@ function j(e) {
     onClose: n
   } = e, a = (0, p.Z)({
     forceFetch: !0
-  }), s = (0, _.ZP)(), l = i.useCallback(() => {
+  }), s = (0, f.ZP)(), l = i.useCallback(() => {
     u.Z.open(S.oAB.SUBSCRIPTIONS, null, {}), n()
   }, [n]);
   if (!a.fetched) return (0, r.jsx)("div", {

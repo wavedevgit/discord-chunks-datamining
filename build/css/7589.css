@@ -1,6 +1,6 @@
 /**
   Module ID: 7589
-  Original File Name: 7c0b9fe5118c4419
+  Original File Name: 99cb726599be3d03
 **/
 .badgeContainer__98c7b {
     display: flex;
@@ -470,7 +470,7 @@
 }
 
 .container_fcf29c {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 5px;
     box-shadow: var(--legacy-elevation-high);
     overflow: hidden;
@@ -881,7 +881,7 @@
 }
 
 .ctaButtonText__1066d {
-    color: var(--background-floating)
+    color: var(--background-surface-high)
 }
 
 .badge__436c9 {
@@ -1449,7 +1449,7 @@
 }
 
 .popout__86331 {
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: var(--elevation-high);
     overflow: hidden
@@ -1706,7 +1706,7 @@
 
 .closeCircle_a2c9e8 {
     align-items: center;
-    background-color: var(--background-floating);
+    background-color: var(--background-surface-high);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -2036,4 +2036,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=7c0b9fe5118c4419.css.map*/
+/*# sourceMappingURL=99cb726599be3d03.css.map*/

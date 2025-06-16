@@ -12,8 +12,8 @@ var r = n(255367),
   c = n(328908),
   u = n(992970),
   d = n(317951),
-  _ = n(135793),
-  f = n(883998),
+  f = n(135793),
+  _ = n(883998),
   p = n(576645),
   h = n(981631),
   m = n(388032),
@@ -59,7 +59,7 @@ let b = function(e) {
       O(e), N(!1)
     }, [O]),
     P = i.useCallback(() => {
-      (0, _.s)({
+      (0, f.s)({
         channelId: t.id,
         onRedeem: () => {},
         buttonUseState: "apply",
@@ -69,7 +69,7 @@ let b = function(e) {
     w = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: g.bar,
-    children: [(0, r.jsx)(f.Z, {
+    children: [(0, r.jsx)(_.Z, {
       channel: t,
       shouldShow: A,
       onRequestClose: C,

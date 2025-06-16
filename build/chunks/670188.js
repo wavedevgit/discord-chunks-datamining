@@ -14,7 +14,7 @@ var r = n(255367),
   u = n(228168),
   d = n(231338);
 
-function _(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,14 +23,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
@@ -90,7 +90,7 @@ function O(e) {
     currentUser: a,
     guildId: s,
     channelId: d,
-    messageId: _,
+    messageId: f,
     roleId: p,
     disableUserProfileLink: g,
     newAnalyticsLocations: b,
@@ -112,13 +112,13 @@ function O(e) {
       guildId: s,
       channelId: d
     }), [v, a, n, O, s, d]),
-    D = i.useCallback(e => (P.current = Date.now(), null != I) ? I(e, P.current) : (0, r.jsx)(c.Z, h(f({}, e), {
+    D = i.useCallback(e => (P.current = Date.now(), null != I) ? I(e, P.current) : (0, r.jsx)(c.Z, h(_({}, e), {
       user: n,
       currentUser: a,
       guildId: s,
       channelId: d,
       roleId: p,
-      messageId: _,
+      messageId: f,
       disableUserProfileLink: g,
       newAnalyticsLocations: b,
       appContext: y,
@@ -126,8 +126,8 @@ function O(e) {
       closePopout: () => {
         e.closePopout(), null == A || A()
       }
-    })), [n, a, I, s, d, p, _, g, b, y, A]);
-  return (0, r.jsx)(o.yRy, h(f({
+    })), [n, a, I, s, d, p, f, g, b, y, A]);
+  return (0, r.jsx)(o.yRy, h(_({
     popoutKey: u.Tg,
     shouldShow: N,
     preload: C ? w : void 0,
@@ -147,7 +147,7 @@ function v(e) {
   } = e, o = m(e, ["children", "userId", "user"]);
   let l = (0, a.e7)([s.default], () => s.default.getCurrentUser()),
     c = (0, a.e7)([s.default], () => null != i ? i : s.default.getUser(n));
-  return null == c || null == l ? t(b, y) : (0, r.jsx)(O, h(f({}, o), {
+  return null == c || null == l ? t(b, y) : (0, r.jsx)(O, h(_({}, o), {
     user: c,
     currentUser: l,
     children: t
