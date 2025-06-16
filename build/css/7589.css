@@ -1,6 +1,6 @@
 /**
   Module ID: 7589
-  Original File Name: 99cb726599be3d03
+  Original File Name: 5a4ef74be5880fc2
 **/
 .badgeContainer__98c7b {
     display: flex;
@@ -1949,7 +1949,7 @@
 }
 
 .tier2__61870 {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-base-lowest) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-nitro-1-start) 0,var(--background-modal-gradient-nitro-1-end) 100%);
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-surface-high) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-nitro-1-start) 0,var(--background-modal-gradient-nitro-1-end) 100%);
     box-shadow: inset 0 0 0 1px var(--border-subtle)
 }
 
@@ -2036,4 +2036,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=99cb726599be3d03.css.map*/
+/*# sourceMappingURL=5a4ef74be5880fc2.css.map*/

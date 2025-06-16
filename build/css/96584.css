@@ -1,6 +1,6 @@
 /**
   Module ID: 96584
-  Original File Name: fd8b7229f1397fd8
+  Original File Name: 23964e0b0e9ef8a3
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -241,17 +241,16 @@
 }
 
 .pillContainer__18dd3 {
-    background: var(--background-base-lowest);
-    border-radius: var(--radius-md);
+    background: var(--background-base-lower);
+    border-radius: var(--radius-lg);
     left: 50%;
     position: absolute;
-    top: 0;
+    top: 1px;
     transform: translate(-50%,-50%)
 }
 
 .pill__18dd3 {
     align-items: center;
-    background: linear-gradient(90deg,rgba(155,29,165,.34),rgba(30,35,83,.34) 120%);
     border: 1px solid var(--border-normal);
     border-radius: inherit;
     display: flex;
@@ -259,7 +258,17 @@
     padding: var(--spacing-8) var(--spacing-12)
 }
 
+.pillGradient__18dd3 {
+    background: linear-gradient(90deg,rgba(155,29,165,.35),rgba(30,35,83,.35) 120%)
+}
+
+.theme-light .pillGradient__18dd3 {
+    background: linear-gradient(90deg,rgba(155,29,165,.1),rgba(30,35,83,.1) 120%)
+}
+
 .pillText__18dd3 {
+    line-height: 1;
+    padding-top: .75px;
     text-transform: uppercase
 }
 
@@ -367,7 +376,7 @@
 }
 
 .tier2__61870 {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-base-lowest) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-nitro-1-start) 0,var(--background-modal-gradient-nitro-1-end) 100%);
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-surface-high) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-nitro-1-start) 0,var(--background-modal-gradient-nitro-1-end) 100%);
     box-shadow: inset 0 0 0 1px var(--border-subtle)
 }
 
@@ -573,14 +582,14 @@
 
 .premiumRebrandHeader_e50a4d {
     align-items: center;
-    background-color: var(--background-base-lowest);
+    background-color: var(--background-base-lower);
     display: flex;
     justify-content: space-between;
     padding: var(--spacing-24) var(--spacing-16) 0
 }
 
 .skuSelectModalContent_e50a4d.premiumRebrandContent_e50a4d.premiumRebrandContent_e50a4d {
-    background-color: var(--background-base-lowest);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-md);
     height: unset;
     padding: var(--spacing-24) var(--spacing-16) var(--spacing-16) var(--spacing-16);
@@ -866,4 +875,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=fd8b7229f1397fd8.css.map*/
+/*# sourceMappingURL=23964e0b0e9ef8a3.css.map*/
