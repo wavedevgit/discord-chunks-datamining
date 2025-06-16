@@ -157,7 +157,7 @@ function Y(e) {
           } {
             let {
               default: e
-            } = await Promise.all([n.e("75492"), n.e("42758")]).then(n.bind(n, 2702));
+            } = await n.e("42758").then(n.bind(n, 2702));
             return t => (0, i.jsx)(e, F({}, t))
           }
         }),

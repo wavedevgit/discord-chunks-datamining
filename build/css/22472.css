@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: 3d0544be4cf904bd
+  Original File Name: f949bb4519f41326
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -12511,6 +12511,12 @@ html .invoiceCancelRow_b9f95d {
     margin-left: 8px
 }
 
+.formItem_b7233e>div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px
+}
+
 .loader_b7233e {
     align-items: center;
     display: flex;
@@ -19693,4 +19699,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=3d0544be4cf904bd.css.map*/
+/*# sourceMappingURL=f949bb4519f41326.css.map*/
