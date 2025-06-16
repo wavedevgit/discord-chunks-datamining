@@ -148,6 +148,10 @@ function q(e) {
         className: A.heroAssetVideo
       } : void 0,
       videoActive: !l && n,
+      imageDimensions: {
+        width: 1320,
+        height: 370
+      },
       onLoadComplete: c
     })
   })
