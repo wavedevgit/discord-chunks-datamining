@@ -1,6 +1,6 @@
 /**
   Module ID: 86258
-  Original File Name: b9b7675b0620cf51
+  Original File Name: 15bb705e832f26f8
 **/
 .partialOwnStateContainer__0d2da {
     align-items: center;
@@ -259,6 +259,8 @@
     flex-direction: column;
     grid-column: auto;
     height: 374px;
+    margin: 0 auto;
+    max-width: 350px;
     overflow: hidden;
     position: relative;
     width: 100%
@@ -750,4 +752,4 @@
     background-clip: padding-box
 }
 
-/*# sourceMappingURL=b9b7675b0620cf51.css.map*/
+/*# sourceMappingURL=15bb705e832f26f8.css.map*/

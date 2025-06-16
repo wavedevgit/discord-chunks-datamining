@@ -39,7 +39,7 @@ let s = {
     }
   },
   l = {
-    responsive: !1,
+    responsive: void 0,
     backgroundStyle: void 0,
     hideSideShadow: !1
   },

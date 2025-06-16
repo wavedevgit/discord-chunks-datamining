@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 131a538a54a6b43a
+  Original File Name: 09f4ff93d5bee226
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -352,6 +352,8 @@
     flex-direction: column;
     grid-column: auto;
     height: 374px;
+    margin: 0 auto;
+    max-width: 350px;
     overflow: hidden;
     position: relative;
     width: 100%
@@ -1263,6 +1265,13 @@
     width: 100%
 }
 
+.responsiveHero__08415 .bannerAsset__08415 {
+    left: 50%;
+    max-width: 1120px;
+    position: absolute;
+    transform: translate(-50%)
+}
+
 .responsiveHero__08415 .bannerImage__08415 {
     background-position: top;
     background-size: contain
@@ -1300,16 +1309,16 @@
     background: linear-gradient(284deg,hsla(0,0%,100%,0) 29.64%,hsla(0,0%,8%,.6) 68.69%);
     bottom: 0;
     left: 0;
-    right: 45%;
-    top: 0
+    top: 0;
+    width: 50%
 }
 
 .bannerShadow__08415.right__08415 {
     background: linear-gradient(76deg,hsla(0,0%,100%,0) 29.64%,hsla(0,0%,8%,.5) 68.69%);
     bottom: 0;
-    left: 55%;
     right: 0;
-    top: 0
+    top: 0;
+    width: 50%
 }
 
 .bannerShadow__08415.darker__08415 {
@@ -1730,6 +1739,43 @@
     flex-direction: column
 }
 
+.heroBannerSheenContainer__08415 {
+    height: 100%;
+    position: absolute;
+    width: 100%
+}
+
+.heroBannerSheenContainer__08415.responsive__08415 {
+    height: 350px;
+    left: 50%;
+    max-width: 1320px;
+    transform: translate(-50%)
+}
+
+.heroBannerSheenContainer__08415.responsive__08415 .bannerShadow__08415.left__08415:after,.heroBannerSheenContainer__08415.responsive__08415 .bannerShadow__08415.right__08415:after {
+    content: "";
+    position: absolute;
+    width: 250px
+}
+
+.heroBannerSheenContainer__08415.responsive__08415 .bannerShadow__08415.left__08415:after {
+    background: linear-gradient(76deg,hsla(0,0%,100%,0) 29.64%,hsla(0,0%,8%,.6) 68.69%);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: translateX(-250px)
+}
+
+.heroBannerSheenContainer__08415.responsive__08415 .bannerShadow__08415.right__08415:after {
+    background: linear-gradient(284deg,hsla(0,0%,100%,0) 29.64%,hsla(0,0%,8%,.5) 68.69%);
+    bottom: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    transform: translateX(250px)
+}
+
 .jumbleWrapper__014df {
     --custom-guild-gutter: 72px;
     --custom-channel-gutter: 240px;
@@ -1757,4 +1803,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=131a538a54a6b43a.css.map*/
+/*# sourceMappingURL=09f4ff93d5bee226.css.map*/
