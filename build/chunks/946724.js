@@ -338,7 +338,7 @@ let W = new H(g.Z, __OVERLAY__ ? {} : {
         currentStyle: r
       } = e, i = F(t);
       if (null == i) return !1;
-      let l = (0, f.D)(n),
+      let l = (0, f.DX)(n),
         s = k.get(t);
       return null != s && (s.styleColors[r] = n, s.currentStyle = r, k.set(t, s), B(i, {
         color: null != n.primary_color ? n.primary_color : void 0,
@@ -393,7 +393,7 @@ let W = new H(g.Z, __OVERLAY__ ? {} : {
         styleColors: l.styleColors
       });
       let s = l.styleColors[r],
-        a = (0, f.D)(s);
+        a = (0, f.DX)(s);
       return B(i, {
         color: null != (t = s.primary_color) ? t : void 0,
         colors: s,

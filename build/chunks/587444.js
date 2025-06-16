@@ -7,8 +7,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  o = n(692547),
-  a = n(481060),
+  a = n(692547),
+  o = n(481060),
   s = n(388905),
   c = n(600164),
   u = n(981631),
@@ -32,9 +32,9 @@ function m(e) {
     }), (0, r.jsx)(s.DK, {
       className: p.marginBottom40,
       children: d.intl.string(d.t["poAv6+"])
-    }), (0, r.jsxs)(a.Zbd, {
+    }), (0, r.jsxs)(o.Zbd, {
       className: h.card,
-      type: a.Zbd.Types.CUSTOM,
+      type: o.Zbd.Types.CUSTOM,
       children: [(0, r.jsx)("img", {
         alt: "",
         className: h.cardAccentLeft,
@@ -48,12 +48,12 @@ function m(e) {
         direction: c.Z.Direction.VERTICAL,
         align: c.Z.Align.STRETCH,
         grow: 0,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           tag: "strong",
           className: h.buttonTitle,
           variant: "text-md/normal",
           style: {
-            color: o.Z.unsafe_rawColors.PRIMARY_300.css
+            color: a.Z.unsafe_rawColors.PRIMARY_300.css
           },
           children: t
         }), (0, r.jsx)(s.zx, {

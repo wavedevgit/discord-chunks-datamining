@@ -185,7 +185,7 @@ function O() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
-  } = (0, m.Z)();
+  } = (0, m.Z)(!0);
   return (0, i.jsx)(g.Z, {
     children: e ? (0, i.jsx)(l.$jN, {}) : t.length > 0 ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(E, {

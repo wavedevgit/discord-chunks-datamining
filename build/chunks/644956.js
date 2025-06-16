@@ -224,7 +224,7 @@ function B(e) {
     inlinePreview: f = !1
   } = e, {
     analyticsLocations: g
-  } = (0, m.ZP)(h.Z.ROLE_MENTION), E = (0, l.e7)([p.Z], () => p.Z.roleStyle), b = (0, I.Z)(d, "RoleMention"), T = (null != t && 0 !== t || null != n && null != n.primaryColor) && !f, S = T && "dot" === E, A = T && "username" === E, N = b && null != n && null != n.secondaryColor ? (0, v.f)(n) : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, k(x({
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), E = (0, l.e7)([p.Z], () => p.Z.roleStyle), b = (0, I.Z)(d, "RoleMention"), T = (null != t && 0 !== t || null != n && null != n.primaryColor) && !f, S = T && "dot" === E, A = T && "username" === E, N = b && null != n && null != n.secondaryColor ? (0, v.ft)(n) : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, k(x({
     ref: C,
     className: w.roleMention,
     color: A ? t : null,

@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D: () => i,
-  f: () => a
+  DX: () => i,
+  S2: () => o,
+  ft: () => a
 });
 var r = n(866442);
 
@@ -20,4 +21,8 @@ function a(e) {
     secondaryColor: null == e.secondaryColor ? void 0 : (0, r.Rf)(e.secondaryColor),
     tertiaryColor: null == e.tertiaryColor ? void 0 : (0, r.Rf)(e.tertiaryColor)
   }
+}
+
+function o(e) {
+  return null != e && null != e.colorStrings && null != e.colorStrings.primaryColor && null != e.colorStrings.secondaryColor
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 62134 **/
+/** Chunk was on 31978 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(388685);
 var r = n(255367),
   o = n(73800),
@@ -9,10 +9,11 @@ var r = n(255367),
   i = n.n(l),
   s = n(573385),
   a = n(481060),
-  c = n(402235),
-  u = n(848697);
+  c = n(606318),
+  u = n(402235),
+  d = n(848697);
 
-function d(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -31,7 +32,7 @@ function d(e) {
   return e
 }
 
-function p(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -43,34 +44,33 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = function(e) {
+let g = function(e) {
   var {
     className: t,
     compact: n = !1,
     contentOnly: l = !1,
-    zalgo: m = !0,
-    preview: g = !1,
-    disableInteraction: f = !1,
-    childrenRepliedMessage: b,
-    childrenExecutedCommand: h,
-    childrenHeader: O,
-    childrenSystemMessage: y,
-    childrenButtons: j,
-    childrenMessageContent: v,
-    childrenAccessories: P,
-    messageRef: x,
-    focusProps: C = {
+    zalgo: g = !0,
+    preview: f = !1,
+    disableInteraction: b = !1,
+    childrenRepliedMessage: h,
+    childrenExecutedCommand: O,
+    childrenHeader: y,
+    childrenSystemMessage: j,
+    childrenButtons: v,
+    childrenMessageContent: P,
+    childrenAccessories: x,
+    messageRef: C,
+    focusProps: w = {
       offset: {
         left: 4,
         right: 4
       }
     },
-    hasThread: w,
-    isSystemMessage: S,
-    hasReply: N,
-    authorHasGradientRole: E = !1,
-    guildId: R,
-    onMouseEnter: T,
+    hasThread: S,
+    isSystemMessage: N,
+    hasReply: E,
+    author: T,
+    onMouseEnter: R,
     onMouseLeave: Z
   } = e, _ = function(e, t) {
     if (null == e) return {};
@@ -86,12 +86,12 @@ let m = function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
     }
     return o
-  }(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "authorHasGradientRole", "guildId", "onMouseEnter", "onMouseLeave"]);
-  let k = (0, c.Z)(R, "BaseMessage"),
+  }(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
+  let k = (0, u.Z)(null == T ? void 0 : T.guildId, "BaseMessage") && (0, c.S2)(T),
     [I, M] = o.useState(!1),
     D = o.useCallback(e => {
-      M(!0), null == T || T(e)
-    }, [T]),
+      M(!0), null == R || R(e)
+    }, [R]),
     A = o.useCallback(e => {
       M(!1), null == Z || Z(e)
     }, [Z]),
@@ -100,36 +100,36 @@ let m = function(e) {
         animate: I,
         setAnimate: M
       },
-      children: (0, r.jsx)(a.tEY, p(d({}, C), {
-        children: (0, r.jsxs)("div", p(d({
+      children: (0, r.jsx)(a.tEY, m(p({}, w), {
+        children: (0, r.jsxs)("div", m(p({
           className: i()(t, {
-            [u.gradient]: !!k && E,
-            [u.wrapper]: !0,
-            [u.contentOnly]: l,
-            [u.compact]: n,
-            [u.preview]: g,
-            [u.cozy]: !n,
-            [u.zalgo]: m,
-            [u.hasThread]: w,
-            [u.isSystemMessage]: S,
-            [u.hasReply]: N
+            [d.gradient]: k,
+            [d.wrapper]: !0,
+            [d.contentOnly]: l,
+            [d.compact]: n,
+            [d.preview]: f,
+            [d.cozy]: !n,
+            [d.zalgo]: g,
+            [d.hasThread]: S,
+            [d.isSystemMessage]: N,
+            [d.hasReply]: E
           }),
-          ref: x
+          ref: C
         }, _), {
           role: "article",
           onMouseEnter: D,
           onMouseLeave: A,
-          children: [b, h, (0, r.jsxs)("div", {
-            className: u.contents,
-            children: [y, O, null == y && v]
-          }), P, null != j ? (0, r.jsx)("div", {
-            className: u.buttonContainer,
-            children: j
+          children: [h, O, (0, r.jsxs)("div", {
+            className: d.contents,
+            children: [j, y, null == j && P]
+          }), x, null != v ? (0, r.jsx)("div", {
+            className: d.buttonContainer,
+            children: v
           }) : null]
         }))
       }))
     });
-  return f ? (0, r.jsx)(a.Rny, {
+  return b ? (0, r.jsx)(a.Rny, {
     children: L
   }) : L
 }

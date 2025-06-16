@@ -1,4 +1,4 @@
-/** Chunk was on 62134 **/
+/** Chunk was on 31978 **/
 "use strict";
 n.d(t, {
   Z: () => G
@@ -29,8 +29,8 @@ var r = n(255367),
   S = n(977392),
   N = n(134433),
   E = n(753194),
-  R = n(458034),
-  T = n(856651),
+  T = n(458034),
+  R = n(856651),
   Z = n(981631),
   _ = n(228168),
   k = n(388032),
@@ -64,13 +64,13 @@ function D(e) {
     description: s
   } = e;
   if (null != s) switch (l) {
-    case T.iO.LESS_THAN:
+    case R.iO.LESS_THAN:
       t = k.intl.format(k.t["2p7dAw"], {
         description: s,
         count: Math.max(0, Number(i) - 1)
       });
       break;
-    case T.iO.GREATER_THAN:
+    case R.iO.GREATER_THAN:
       t = k.intl.format(k.t["2p7dAw"], {
         description: s,
         count: Math.max(0, Number(i) + 1)
@@ -235,7 +235,7 @@ function G(e) {
           channelId: s.id,
           guildId: l.id,
           onGetRolesClicked: () => {
-            (0, R.Am)(l.id)
+            (0, T.Am)(l.id)
           },
           onOpenProfile: () => {
             (0, j.openUserProfileModal)({

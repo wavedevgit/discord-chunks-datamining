@@ -231,9 +231,9 @@ let P = e => {
       isDsaEligible: C,
       source: r,
       violationType: S
-    }, R = a.useRef(M);
+    }, Y = a.useRef(M);
     return (a.useEffect(() => {
-      R.current = M
+      Y.current = M
     }), a.useEffect(() => {
       let {
         accountStanding: e,
@@ -242,7 +242,7 @@ let P = e => {
         isDsaEligible: i,
         source: a,
         violationType: l
-      } = R.current;
+      } = Y.current;
       U && u.default.track(O.rMx.SAFETY_HUB_ACTION, {
         action: b.n0.ViewViolationDetail,
         account_standing: e.state,

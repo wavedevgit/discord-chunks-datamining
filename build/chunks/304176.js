@@ -1,4 +1,4 @@
-/** Chunk was on 62134 **/
+/** Chunk was on 31978 **/
 "use strict";
 n.d(t, {
   Z: () => S
@@ -72,12 +72,12 @@ let S = e => {
   });
   let N = (0, o.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : void 0),
     E = (0, p.Z)(N),
-    R = E ? P.intl.formatToPlainString(P.t.t0928f, {
+    T = E ? P.intl.formatToPlainString(P.t.t0928f, {
       name: S
     }) : P.intl.formatToPlainString(P.t.UDDkGx, {
       name: S
     }),
-    T = w(C({}, t), {
+    R = w(C({}, t), {
       src: null == t.src ? t.src : (0, u.o)(t.src, 40),
       size: 40
     }),
@@ -99,7 +99,7 @@ let S = e => {
           className: x.mainContent,
           children: [(0, r.jsx)("div", {
             className: x.roleIconContainer,
-            children: (0, r.jsx)(c.Z, w(C({}, T), {
+            children: (0, r.jsx)(c.Z, w(C({}, R), {
               enableTooltip: !1,
               className: x.__invalid_roleIcon,
               enableHeight: !1
@@ -114,7 +114,7 @@ let S = e => {
               })
             }), (0, r.jsx)(l.Text, {
               variant: "text-sm/normal",
-              children: R
+              children: T
             })]
           })]
         }), (0, r.jsxs)(l.zxk, {
