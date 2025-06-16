@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: f949bb4519f41326
+  Original File Name: 6f71a4033fd21a39
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -13549,6 +13549,12 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     gap: 16px
 }
 
+.guildsList__7db08 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
 .guildRowTextContainer__7db08 {
     flex: 1;
     margin-right: 32px;
@@ -19699,4 +19705,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=f949bb4519f41326.css.map*/
+/*# sourceMappingURL=6f71a4033fd21a39.css.map*/

@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => to
+  Z: () => ta
 }), n(388685), n(35282), n(781311), n(997841);
 var r = n(255367),
   i = n(73800),
@@ -150,45 +150,42 @@ function e9(e, t) {
   }), e
 }
 
-function te(e, t) {
-  if (null == e) return {};
-  var n, r, i = function(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-      l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-    return i
-  }(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function tt(e) {
+function te(e) {
   e.preventDefault()
 }
-let tn = /^\+(?!\w+):?(?!:)(\w+)?:?$/;
+let tt = /^\+(?!\w+):?(?!:)(\w+)?:?$/;
 
-function tr(e) {
+function tn(e) {
   var {
     isSidebar: t
-  } = e, n = te(e, ["isSidebar"]);
+  } = e, n = function(e, t) {
+    if (null == e) return {};
+    var n, r, i = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    }
+    return i
+  }(e, ["isSidebar"]);
   return t ? (0, r.jsx)("section", e9(e6({}, n), {
     role: "complementary"
   })) : (0, r.jsx)("main", e6({}, n))
 }
-let ti = e => {
-  let {
-    ref: t
-  } = e, n = te(e, ["ref"]);
-  return (0, r.jsx)(tl, e9(e6({}, n), {
-    refInstance: t
-  }))
-};
-ti.displayName = "ChannelTextAreaForm";
-class tl extends i.PureComponent {
+let tr = i.forwardRef((e, t) => (0, r.jsx)(ti, e9(e6({}, e), {
+  ref: t
+})));
+tr.displayName = "ChannelTextAreaForm";
+class ti extends i.PureComponent {
+  focusEditor() {
+    var e;
+    null == (e = this.editorRef) || e.focus()
+  }
   componentDidMount() {
     eT.Z.addChangeListener(this.draftDidChange)
   }
@@ -388,7 +385,7 @@ class tl extends i.PureComponent {
       } = this.props;
       h.Z.changeDraft(i, t, eT.d.ChannelMessage);
       let l = "" !== t && n !== this.state.richValue,
-        a = l && !tn.test(t) && !t.startsWith("/") && (!this.isFirstChange || t !== this.state.textValue);
+        a = l && !tt.test(t) && !t.startsWith("/") && (!this.isFirstChange || t !== this.state.textValue);
       this.isFirstChange = !1, a && this.state.textValue.length < t.length && this.handleIncrementCombo(), a ? m.Z.startTyping(i) : "" === t && m.Z.stopTyping(i), l && r && (0, v.rf)(), this.setState({
         textValue: t,
         richValue: n
@@ -622,7 +619,7 @@ class tl extends i.PureComponent {
     }))
   }
 }
-class ta extends i.PureComponent {
+class tl extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let {
       channel: n
@@ -685,12 +682,13 @@ class ta extends i.PureComponent {
       L = (0, r.jsxs)("div", {
         className: e8.channelBottomBarArea,
         children: [(0, r.jsx)(eI.Z, {
-          childRef: this.channelTextAreaFormRef,
+          childRef: this.containerDomRef,
           tutorialId: "writing-messages",
           position: "left",
           offsetX: 75,
-          children: (0, r.jsx)(ti, {
-            ref: this.channelTextAreaFormRef,
+          children: (0, r.jsx)(tr, {
+            ref: this.refToChannelTextAreaFormComponent,
+            refInstance: this.containerDomRef,
             focused: R,
             highlighted: M,
             channel: i,
@@ -747,7 +745,7 @@ class ta extends i.PureComponent {
             }), (0, r.jsx)(eF.d9, {
               event: e2.CkL.OPEN_APP_LAUNCHER,
               handler: this.handleOpenAppLauncher
-            }), (0, r.jsxs)(tr, {
+            }), (0, r.jsxs)(tn, {
               isSidebar: k,
               className: a()(e8.chatContent, {
                 [e8.hasWallpaper]: null == T ? void 0 : T.isViewable,
@@ -793,7 +791,7 @@ class ta extends i.PureComponent {
                   showAutomodUserProfileChatBlocker: j
                 })) ? t : (0, r.jsxs)("form", {
                   ref: this.inputFormRef,
-                  onSubmit: tt,
+                  onSubmit: te,
                   className: a()(e8.form, {
                     [e8.formWithLoadedChatInput]: !U
                   }),
@@ -818,14 +816,18 @@ class ta extends i.PureComponent {
     }, "messages-".concat(i.id))
   }
   constructor(...e) {
-    super(...e), e4(this, "channelTextAreaFormRef", i.createRef()), e4(this, "inputFormRef", i.createRef()), e4(this, "state", {
+    super(...e), e4(this, "containerDomRef", i.createRef()), e4(this, "refToChannelTextAreaFormComponent", i.createRef()), e4(this, "inputFormRef", i.createRef()), e4(this, "state", {
       textAreaFocused: !1,
       textAreaHighlighted: !1,
       currentChannelId: this.props.channel.id
     }), e4(this, "dispatchGroupRef", i.createRef()), e4(this, "appIconAnimateRef", i.createRef()), e4(this, "handleRequestFocus", e => {
-      e.channelId === this.props.channel.id && this.setState({
-        textAreaFocused: !0
-      })
+      if (e.channelId === this.props.channel.id)
+        if (this.state.textAreaFocused) {
+          var t;
+          null == (t = this.refToChannelTextAreaFormComponent.current) || t.focusEditor()
+        } else this.setState({
+          textAreaFocused: !0
+        })
     }), e4(this, "handleInputFocus", e => {
       var t;
       null == (t = this.dispatchGroupRef.current) || t.bumpDispatchPriority(), (null == e ? void 0 : e.highlight) != null ? this.setState({
@@ -931,7 +933,7 @@ class ta extends i.PureComponent {
     })
   }
 }
-let to = i.memo(function(e) {
+let ta = i.memo(function(e) {
   let {
     channel: t,
     guild: n,
@@ -977,7 +979,7 @@ let to = i.memo(function(e) {
     z = (0, d.e7)([em.ZP, eS.default], () => em.ZP.getUserCombo(eS.default.getId(), t.id)),
     Y = (0, _.i)(t).length > 0 || t.rateLimitPerUser > 0 || null != z,
     q = (0, W.Z)("ChannelChat");
-  return (0, r.jsx)(ta, {
+  return (0, r.jsx)(tl, {
     channel: t,
     isEditing: null != (0, d.e7)([eA.Z], () => eA.Z.getEditingMessageId(t.id)),
     hasModalOpen: (0, p.s9z)(p.JQI),

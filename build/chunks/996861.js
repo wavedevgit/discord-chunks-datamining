@@ -87,7 +87,9 @@ function A(e, t, n) {
     message: t,
     shouldMention: !n.shiftKey && !r,
     showMentionToggle: !i && !r
-  }), b.S.dispatchToLastSubscribed(j.CkL.TEXTAREA_FOCUS)
+  }), b.S.dispatch(j.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+    channelId: e.id
+  })
 }
 
 function M(e, t) {
