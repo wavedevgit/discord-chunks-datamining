@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Q: () => D,
+  Q: () => L,
   Z: () => F
 });
 var r = n(255367),
@@ -56,7 +56,7 @@ function k(e) {
   return e
 }
 
-function L(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ function L(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = 16 / 9,
+let L = 16 / 9,
   U = e => {
     let {
       stageParticipant: t,
@@ -93,13 +93,13 @@ let D = 16 / 9,
       guildId: a,
       channelId: l.id,
       clickTrap: !0,
-      children: e => (0, r.jsx)(c.P3F, L(k({
+      children: e => (0, r.jsx)(c.P3F, D(k({
         innerRef: h,
         onContextMenu: e => d(n, e)
       }, e), {
         children: (0, r.jsx)(T.Z, {
           participant: n,
-          aspectRatio: D,
+          aspectRatio: L,
           blocked: m,
           ignored: g,
           channel: l,
@@ -145,7 +145,7 @@ let D = 16 / 9,
     }, [j, l, O, I]);
     return (0, r.jsx)(T.Z, {
       participant: n,
-      aspectRatio: D,
+      aspectRatio: L,
       fit: n.type === R.fO.USER ? v.L.COVER : void 0,
       blocked: g,
       ignored: _,
@@ -193,7 +193,7 @@ let D = 16 / 9,
               let {
                 default: t
               } = await n.e("22183").then(n.bind(n, 987281));
-              return n => (0, r.jsx)(t, L(k({}, n), {
+              return n => (0, r.jsx)(t, D(k({}, n), {
                 stream: e.stream,
                 appContext: p,
                 exitFullscreen: () => {},
@@ -223,7 +223,7 @@ let D = 16 / 9,
               let {
                 default: e
               } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
-              return t => (0, r.jsx)(e, L(k({}, t), {
+              return t => (0, r.jsx)(e, D(k({}, t), {
                 user: x,
                 guildId: y,
                 channel: l,

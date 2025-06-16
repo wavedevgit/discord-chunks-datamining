@@ -153,14 +153,14 @@ function d(e) {
           e.removeEventListener("focusin", w), e.removeEventListener("focus", R), e.removeEventListener("focusout", M)
         }
       }, [R, w, M]);
-      let L = r.useCallback(() => ({
+      let D = r.useCallback(() => ({
           role: "list",
           tabIndex: E && g ? -1 : 0,
           id: t,
           onKeyDown: A,
           ref: k
         }), [t, E, A, g]),
-        D = r.useCallback(e => {
+        L = r.useCallback(e => {
           let {
             index: n
           } = e;
@@ -175,9 +175,9 @@ function d(e) {
         }, [C, t, d, g, P, b]);
       return r.useMemo(() => ({
         dispatch: m,
-        getContainerProps: L,
-        getItemProps: D
-      }), [m, L, D])
+        getContainerProps: D,
+        getItemProps: L
+      }), [m, D, L])
     }({
       navId: t,
       itemCount: j,

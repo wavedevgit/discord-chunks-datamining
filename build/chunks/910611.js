@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  TS: () => L,
+  TS: () => D,
   ud: () => w,
   v0: () => M
 }), n(388685);
@@ -327,7 +327,7 @@ function k(e, t) {
   })
 }
 
-function L(e) {
+function D(e) {
   let {
     guild: t,
     channel: n,

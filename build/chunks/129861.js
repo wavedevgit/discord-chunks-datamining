@@ -74,7 +74,7 @@ function b(e, t) {
 }
 
 function y(e) {
-  return e.isSystemUser() ? c.J.SYSTEM_DM : e.isClyde() ? c.J.AI : e.bot ? c.J.BOT : null
+  return e.isSystemUser() ? c.J.SYSTEM_DM : e.bot ? c.J.BOT : null
 }
 let O = e => {
     let {

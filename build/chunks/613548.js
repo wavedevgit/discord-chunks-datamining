@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => D
+  Z: () => L
 }), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -67,7 +67,7 @@ function k(e, t) {
   }), e
 }
 
-function L(e) {
+function D(e) {
   let {
     channelId: t,
     guildId: n
@@ -95,7 +95,7 @@ function L(e) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     inPopout: t,
     channel: n,
@@ -106,7 +106,7 @@ function D(e) {
     voiceParticipantsHidden: P,
     selectedParticipant: S,
     userParticipantCount: w,
-    participantsListOpen: D
+    participantsListOpen: L
   } = (0, c.cj)([Z.Z], () => ({
     selectedParticipant: Z.Z.getSelectedParticipant(x),
     voiceParticipantsHidden: Z.Z.getVoiceParticipantsHidden(x),
@@ -116,13 +116,13 @@ function D(e) {
     hasParticipantsPanel: B
   } = (0, T.Z)({
     location: "ChannelCallHeaderToolbar"
-  }), F = !D && B && (n.isGuildVoice() || n.isGroupDM()), {
+  }), F = !L && B && (n.isGuildVoice() || n.isGroupDM()), {
     enabled: G,
     inInbox: H
   } = y.Z.useExperiment({
     location: "ChannelCallHeaderToolbar"
   }), V = (0, b.Q3)("ChannelCallHeaderToolbar"), z = [];
-  return P && z.push((0, r.jsx)(L, {
+  return P && z.push((0, r.jsx)(D, {
     channelId: x,
     guildId: n.guild_id
   }, "current-speaker")), z.push((0, r.jsx)(g.Z, {
@@ -168,11 +168,11 @@ function D(e) {
     className: a()(R.button, {
       [R.lastButton]: l
     }),
-    onClick: () => d.Z.toggleParticipantsList(n.id, !D)
+    onClick: () => d.Z.toggleParticipantsList(n.id, !L)
   }, "participants-list-button")), U && z.push((0, r.jsx)(E.T, {
     channelId: n.id,
     className: a()(R.button, {
-      [R.lastButton]: D
+      [R.lastButton]: L
     }),
     disabled: l
   }, "chat-spacer")), (0, r.jsx)(h.Gt, {

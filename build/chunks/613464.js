@@ -35,7 +35,7 @@ function E(e) {
     style: P
   } = e, S = (0, x.m)(n), Z = (0, o.e7)([C.default], () => C.default.getUser(t), [t]), N = (0, o.e7)([y.ZP], () => y.ZP.getMember(n, t), [n, t]), [T, A] = i.useState(null == Z || null == N), w = (0, u.Z)(N), R = i.useRef(null), {
     analyticsLocations: M
-  } = (0, f.ZP)(h.Z.GUILD_MEMBER_MOD_VIEW), k = (0, g.ZP)(t, n), L = (0, d.ZP)();
+  } = (0, f.ZP)(h.Z.GUILD_MEMBER_MOD_VIEW), k = (0, g.ZP)(t, n), D = (0, d.ZP)();
   return (i.useEffect(() => {
     S || l()
   }, [S, l]), i.useEffect(() => {
@@ -73,7 +73,7 @@ function E(e) {
         user: Z,
         displayProfile: k,
         themeType: null,
-        themeOverride: L,
+        themeOverride: D,
         forceShowPremium: !0,
         className: O.profileThemedContainer,
         children: (0, r.jsxs)("div", {

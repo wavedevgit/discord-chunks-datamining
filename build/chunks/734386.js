@@ -39,7 +39,7 @@ function w(e) {
   } = e, [n, l] = i.useState(!1), o = (0, m.ZP)(t, !0), w = t.guild_id, R = (0, d.e7)([v.Z], () => null != w ? v.Z.getRoles(w) : void 0), M = (0, d.e7)([O.default, v.Z], () => {
     var e;
     return O.default.getUser(null == (e = v.Z.getGuild(w)) ? void 0 : e.ownerId)
-  }), k = i.useMemo(() => null != w ? s()(R).sortBy(e => -e.position).filter(e => !(0, g.pM)(w, e.id)).value() : [], [w, R]), L = i.useMemo(() => s()(k).filter(e => {
+  }), k = i.useMemo(() => null != w ? s()(R).sortBy(e => -e.position).filter(e => !(0, g.pM)(w, e.id)).value() : [], [w, R]), D = i.useMemo(() => s()(k).filter(e => {
     if (null == w) return !1;
     let n = E.I0({
       forceRoles: {
@@ -48,7 +48,7 @@ function w(e) {
       context: t
     });
     return c.e$(n, N.Plq.ADMINISTRATOR) || c.e$(n, N.Plq.VIEW_CHANNEL)
-  }).value(), [t, w, k]), D = (0, d.Wu)([O.default], () => {
+  }).value(), [t, w, k]), L = (0, d.Wu)([O.default], () => {
     let e = {};
     for (let n of (null != M && (e[M.id] = M), Object.values(t.permissionOverwrites))) {
       if (n.type !== f.BN.MEMBER || null != e[n.id]) continue;
@@ -105,13 +105,13 @@ function w(e) {
     }) : null, (0, r.jsxs)("div", {
       className: A.members,
       children: [function() {
-        if (1 !== D.length || L.length > 0) return (0, r.jsx)(Z.Z, {
+        if (1 !== L.length || D.length > 0) return (0, r.jsx)(Z.Z, {
           guildId: t.guild_id,
           className: A.avatars,
           maxUsers: 5,
-          users: D
+          users: L
         });
-        let e = D[0],
+        let e = L[0],
           n = I.ZP.getName(e);
         return (0, r.jsxs)("div", {
           className: A.avatars,
@@ -131,13 +131,13 @@ function w(e) {
             children: T.intl.string(T.t.rt0ERU)
           })]
         })
-      }(), L.map((e, n) => {
+      }(), D.map((e, n) => {
         var i, l;
         let o = null != (l = e.colorString) ? l : (0, u.Rf)(N.p6O),
           s = (null == (i = e.tags) ? void 0 : i.guild_connections) !== void 0;
         return U ? (0, r.jsx)(_.Z, {
           className: a()(A.role, {
-            [A.last]: n === L.length - 1
+            [A.last]: n === D.length - 1
           }),
           roleName: e.name,
           roleColor: o,
@@ -148,7 +148,7 @@ function w(e) {
           }
         }, e.id) : (0, r.jsx)(y.Z, {
           className: a()(A.role, {
-            [A.last]: n === L.length - 1
+            [A.last]: n === D.length - 1
           }),
           roleName: e.name,
           roleColor: o,

@@ -105,9 +105,7 @@ function m(e, t, n) {
         attributes: u,
         className: b,
         children: [(0, r.jsx)(s.Ox, {
-          text: p.name,
-          channelId: n,
-          guildId: t
+          text: p.name
         }), _]
       });
     case "userMention":

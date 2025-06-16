@@ -177,9 +177,9 @@ function Z(e) {
     location: l,
     className: o,
     onNavigate: d
-  } = e, p = (0, c.e7)([y.default], () => y.default.getUser(t), [t]), h = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]), f = (0, c.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]), _ = (0, v.B2)(t, n, v.pd), Z = Object.keys(_).length, N = i.useMemo(() => null != h ? C.Z.getGuildPermissionSpecMap(h) : null, [h]), T = i.useMemo(() => null != h ? C.Z.generateGuildPermissionSpec(h) : null, [h]), [A, w] = i.useState(""), [R, M] = i.useState(""), k = i.useMemo(() => s()(M, 300), []), L = i.useCallback(e => {
+  } = e, p = (0, c.e7)([y.default], () => y.default.getUser(t), [t]), h = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]), f = (0, c.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]), _ = (0, v.B2)(t, n, v.pd), Z = Object.keys(_).length, N = i.useMemo(() => null != h ? C.Z.getGuildPermissionSpecMap(h) : null, [h]), T = i.useMemo(() => null != h ? C.Z.generateGuildPermissionSpec(h) : null, [h]), [A, w] = i.useState(""), [R, M] = i.useState(""), k = i.useMemo(() => s()(M, 300), []), D = i.useCallback(e => {
     w(e), k(e)
-  }, [k]), D = i.useCallback(() => {
+  }, [k]), L = i.useCallback(() => {
     w(""), M("")
   }, []), U = i.useMemo(() => {
     if (null == h || null == N || null == f) return null;
@@ -237,8 +237,8 @@ function Z(e) {
             className: I.searchBar,
             query: A,
             placeholder: O.intl.string(O.t["yD9+dH"]),
-            onChange: L,
-            onClear: D,
+            onChange: D,
+            onClear: L,
             autoComplete: "off",
             inputProps: {
               autoCapitalize: "none",

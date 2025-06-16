@@ -251,7 +251,7 @@ function J(e) {
         user: e
       })
     },
-    onFilterResults: (e, t) => 0 === t ? s()(d).filter(t => null == l[t.id] && e(t.name)).sortBy(e => -e.position).value() : s()(u).map(T.default.getUser).filter(R.lm).filter(e => !e.isClyde()).filter(t => null == l[t.id] && e(t.username.toLowerCase())).sortBy(e => e.username.toLowerCase()).value(),
+    onFilterResults: (e, t) => 0 === t ? s()(d).filter(t => null == l[t.id] && e(t.name)).sortBy(e => -e.position).value() : s()(u).map(T.default.getUser).filter(R.lm).filter(t => null == l[t.id] && e(t.username.toLowerCase())).sortBy(e => e.username.toLowerCase()).value(),
     onQueryChange: e => {
       I.Z.requestMembers(t.id, e, 20)
     },

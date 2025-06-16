@@ -66,7 +66,7 @@ let E = i.memo(function(e) {
     setPopout: N,
     isReplySpineClickable: T,
     showReplySpine: A
-  } = e, w = E.state === h.Y.LOADED ? E.message : void 0, R = (0, b.Uj)(w), M = (0, c.p)(), k = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), L = i.useMemo(() => {
+  } = e, w = E.state === h.Y.LOADED ? E.message : void 0, R = (0, b.Uj)(w), M = (0, c.p)(), k = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), D = i.useMemo(() => {
     if (null == w) return null;
     let e = (0, o.Z)(w);
     if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(v.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id), {
@@ -110,7 +110,7 @@ let E = i.memo(function(e) {
     }
     return null
   }, [w, R, I, k, M]), {
-    isReplyAuthorBlocked: D,
+    isReplyAuthorBlocked: L,
     isReplyAuthorIgnored: U
   } = (0, l.cj)([f.Z], () => ({
     isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
@@ -127,9 +127,9 @@ let E = i.memo(function(e) {
     channel: I,
     baseAuthor: z,
     referencedMessage: E,
-    content: L,
+    content: D,
     compact: P,
-    isReplyAuthorBlocked: D,
+    isReplyAuthorBlocked: L,
     isReplyAuthorIgnored: U,
     showAvatarPopout: Z,
     showUsernamePopout: S,

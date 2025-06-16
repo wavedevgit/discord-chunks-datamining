@@ -1,14 +1,14 @@
 /** Chunk was on 64679 **/
 n.d(i, {
-  FX: () => I,
+  FX: () => a,
   Ny: () => P,
   WV: () => N,
   WW: () => s,
   _u: () => R,
   aW: () => T,
-  kv: () => a,
+  kv: () => M,
   s4: () => o,
-  uu: () => M,
+  uu: () => I,
   vq: () => _,
   xU: () => g,
   zO: () => A
@@ -179,11 +179,6 @@ function s(t) {
       description: r.t.pDuyi4,
       flag: l.Pl.SEND_VOICE_MESSAGES
     },
-    [l.Pl.USE_CLYDE_AI.toString()]: {
-      title: r.intl.string(r.t["8eeEZm"]),
-      description: r.t.Tx5TjI,
-      flag: l.Pl.USE_CLYDE_AI
-    },
     [l.Pl.SEND_POLLS.toString()]: {
       title: r.intl.string(r.t.UMQ7W1),
       description: r.t["Xl6W+P"],
@@ -285,11 +280,6 @@ function s(t) {
       description: t.showForumPermissions ? r.t.C2ZPEx : r.t["6pyXvr"],
       flag: l.Pl.SEND_MESSAGES_IN_THREADS
     },
-    [l.Pl.USE_CLYDE_AI.toString()]: {
-      title: r.intl.string(r.t["8eeEZm"]),
-      description: r.t.Tx5TjI,
-      flag: l.Pl.USE_CLYDE_AI
-    },
     [l.Pl.SET_VOICE_CHANNEL_STATUS.toString()]: {
       title: r.intl.string(r.t.VBwkUV),
       description: r.t.C6BzX1,
@@ -312,7 +302,7 @@ function o(t) {
         title: r.intl.string(r.t.Ny49TE),
         permissions: S(i, t)
       })
-    }(n), (i = [l.Pl.SEND_MESSAGES, l.Pl.SEND_MESSAGES_IN_THREADS, l.Pl.CREATE_PUBLIC_THREADS, l.Pl.CREATE_PRIVATE_THREADS, l.Pl.EMBED_LINKS, l.Pl.ATTACH_FILES, l.Pl.ADD_REACTIONS, l.Pl.USE_EXTERNAL_EMOJIS, l.Pl.USE_EXTERNAL_STICKERS, l.Pl.USE_EXTERNAL_SOUNDS, l.Pl.MENTION_EVERYONE, l.Pl.MANAGE_MESSAGES, l.Pl.MANAGE_THREADS, l.Pl.READ_MESSAGE_HISTORY, l.Pl.SEND_TTS_MESSAGES, l.Pl.SEND_VOICE_MESSAGES, l.Pl.USE_CLYDE_AI, l.Pl.SEND_POLLS], t.inSoundmojiExperiment || (i = i.filter(t => t !== l.Pl.USE_EXTERNAL_SOUNDS)), t.showClydeAIPermissions || (i = i.filter(t => t !== l.Pl.USE_CLYDE_AI)), e({
+    }(n), (i = [l.Pl.SEND_MESSAGES, l.Pl.SEND_MESSAGES_IN_THREADS, l.Pl.CREATE_PUBLIC_THREADS, l.Pl.CREATE_PRIVATE_THREADS, l.Pl.EMBED_LINKS, l.Pl.ATTACH_FILES, l.Pl.ADD_REACTIONS, l.Pl.USE_EXTERNAL_EMOJIS, l.Pl.USE_EXTERNAL_STICKERS, l.Pl.USE_EXTERNAL_SOUNDS, l.Pl.MENTION_EVERYONE, l.Pl.MANAGE_MESSAGES, l.Pl.MANAGE_THREADS, l.Pl.READ_MESSAGE_HISTORY, l.Pl.SEND_TTS_MESSAGES, l.Pl.SEND_VOICE_MESSAGES, l.Pl.SEND_POLLS], t.inSoundmojiExperiment || (i = i.filter(t => t !== l.Pl.USE_EXTERNAL_SOUNDS)), e({
       title: r.intl.string(r.t.cKobOz),
       permissions: S(i, n)
     })), function(t, i) {
@@ -358,8 +348,8 @@ function P(t, i) {
 }
 
 function _(t, i, n) {
-  let E = [l.Pl.SEND_MESSAGES, l.Pl.SEND_MESSAGES_IN_THREADS, l.Pl.CREATE_PUBLIC_THREADS, l.Pl.CREATE_PRIVATE_THREADS, l.Pl.EMBED_LINKS, l.Pl.ATTACH_FILES, l.Pl.ADD_REACTIONS, l.Pl.USE_EXTERNAL_EMOJIS, l.Pl.USE_EXTERNAL_STICKERS, l.Pl.USE_EXTERNAL_SOUNDS, l.Pl.MENTION_EVERYONE, l.Pl.MANAGE_MESSAGES, l.Pl.MANAGE_THREADS, l.Pl.READ_MESSAGE_HISTORY, l.Pl.SEND_TTS_MESSAGES, l.Pl.SEND_VOICE_MESSAGES, l.Pl.USE_CLYDE_AI, l.Pl.SEND_POLLS];
-  return n.inSoundmojiExperiment || (E = E.filter(t => t !== l.Pl.USE_EXTERNAL_SOUNDS)), n.showPrivateThreads && n.showCreateThreads || (E = E.filter(t => t !== l.Pl.CREATE_PRIVATE_THREADS)), n.showCreateThreads || (E = E.filter(t => t !== l.Pl.CREATE_PUBLIC_THREADS)), n.showClydeAIPermissions || (E = E.filter(t => t !== l.Pl.USE_CLYDE_AI)), {
+  let E = [l.Pl.SEND_MESSAGES, l.Pl.SEND_MESSAGES_IN_THREADS, l.Pl.CREATE_PUBLIC_THREADS, l.Pl.CREATE_PRIVATE_THREADS, l.Pl.EMBED_LINKS, l.Pl.ATTACH_FILES, l.Pl.ADD_REACTIONS, l.Pl.USE_EXTERNAL_EMOJIS, l.Pl.USE_EXTERNAL_STICKERS, l.Pl.USE_EXTERNAL_SOUNDS, l.Pl.MENTION_EVERYONE, l.Pl.MANAGE_MESSAGES, l.Pl.MANAGE_THREADS, l.Pl.READ_MESSAGE_HISTORY, l.Pl.SEND_TTS_MESSAGES, l.Pl.SEND_VOICE_MESSAGES, l.Pl.SEND_POLLS];
+  return n.inSoundmojiExperiment || (E = E.filter(t => t !== l.Pl.USE_EXTERNAL_SOUNDS)), n.showPrivateThreads && n.showCreateThreads || (E = E.filter(t => t !== l.Pl.CREATE_PRIVATE_THREADS)), n.showCreateThreads || (E = E.filter(t => t !== l.Pl.CREATE_PUBLIC_THREADS)), {
     title: i,
     description: n.sectionDescription,
     permissions: S(E, t)
@@ -392,21 +382,21 @@ function g(t, i) {
   }
 }
 
-function I(t, i, n) {
+function a(t, i, n) {
   return {
     title: i,
     permissions: S(n ? [l.Pl.CONNECT, l.Pl.STREAM, l.Pl.MUTE_MEMBERS, l.Pl.MOVE_MEMBERS] : [l.Pl.CONNECT, l.Pl.MUTE_MEMBERS, l.Pl.MOVE_MEMBERS], t)
   }
 }
 
-function a(t, i) {
+function M(t, i) {
   return {
     title: i,
     permissions: S([l.Pl.REQUEST_TO_SPEAK, l.Pl.MENTION_EVERYONE], t)
   }
 }
 
-function M(t, i) {
+function I(t, i) {
   return {
     title: i,
     permissions: S([l.Pl.CREATE_EVENTS, l.Pl.MANAGE_EVENTS], t)

@@ -113,10 +113,10 @@ let A = i.memo(function(e) {
       (0, x.DT)(t, l.user.id, !1)
     }
 
-    function L() {
+    function D() {
       (0, x.DT)(t, l.user.id, !0)
     }
-    let D = e => {
+    let L = e => {
       (0, d.jW)(e, async () => {
         let {
           default: e
@@ -144,7 +144,7 @@ let A = i.memo(function(e) {
           return (0, r.jsxs)(u.P3F, T(N({
             innerRef: m,
             className: Z.participantMemberContainer,
-            onContextMenu: D
+            onContextMenu: L
           }, e), {
             children: [(0, r.jsx)(p.Z, {
               size: u.EFr.SIZE_40,
@@ -186,7 +186,7 @@ let A = i.memo(function(e) {
           innerClassName: a()(Z.buttonContainer, Z.buttonMargin),
           look: u.zxk.Looks.BLANK,
           size: u.zxk.Sizes.NONE,
-          onClick: L,
+          onClick: D,
           children: (0, r.jsx)(u.Dio, {
             size: "xs",
             color: "currentColor"

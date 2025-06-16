@@ -37,7 +37,7 @@ var r = n(255367),
   M = n(388032),
   k = n(378869);
 
-function L(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function L(e) {
   return e
 }
 
-function D(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -164,7 +164,7 @@ function U(e) {
   }, [f]);
   let K = (0, s.mFp)();
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)("div", D(L({
+    children: [(0, r.jsx)("div", L(D({
       ref: q
     }, H.getContainerProps(), K), {
       "aria-busy": j,
@@ -283,7 +283,7 @@ function F(e) {
           }), (0, r.jsx)(s.ua7, {
             text: H,
             shouldShow: Q,
-            children: e => (0, r.jsxs)("span", D(L({}, e), {
+            children: e => (0, r.jsxs)("span", L(D({}, e), {
               ref: X,
               className: k.channelNameText,
               children: [M && null !== V && "".concat(V, " : "), K]

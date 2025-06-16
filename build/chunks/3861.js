@@ -42,12 +42,12 @@ let v = (0, o.Z)(e => {
     mode: R,
     popoutWindow: M,
     awaitingRemoteSessionInfo: k,
-    callContainerDimensions: L
+    callContainerDimensions: D
   } = e;
   i.useEffect(() => {
     p.S.dispatch(y.CkL.REMEASURE_TARGET)
-  }, [T, A, L.width, L.height]);
-  let D = (0, d.Q3)("ChannelCallContent"),
+  }, [T, A, D.width, D.height]);
+  let L = (0, d.Q3)("ChannelCallContent"),
     U = i.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, o]);
   return (null == k ? void 0 : k.channelId) === I.id ? (0, r.jsx)(f.Z, {
     height: A
@@ -61,7 +61,7 @@ let v = (0, o.Z)(e => {
     className: x.voiceCallWrapper,
     participants: t,
     onContextMenu: O
-  }) : (n = Z ? n : t, null == l) ? 0 === n.length ? D ? (0, r.jsx)(_.Z, {
+  }) : (n = Z ? n : t, null == l) ? 0 === n.length ? L ? (0, r.jsx)(_.Z, {
     channelId: I.id
   }) : (0, r.jsx)(b.Z, {
     className: a()(x.videoGrid, x.hiddenParticipants),

@@ -26,18 +26,15 @@ let N = function(e) {
     (0, E.nfh)(c.z) && u()
   }, [u]);
   (0, a.F5)(T);
-  let C = l.useCallback(e => {
+  let d = l.useCallback(e => {
     if (A && "" !== L) {
       var t;
-      if ("string" == typeof e.data) try {
-        var n = JSON.parse(e.data);
-        "AGE_CHECK_COMPLETE" === n.status && u()
-      } catch (e) {} else(null == e || null == (t = e.data) ? void 0 : t.eventType) === "Verification.Result" && u()
+      (null == e || null == (t = e.data) ? void 0 : t.eventType) === "Verification.Result" && u()
     }
   }, [L, u, A]);
-  return l.useEffect(() => (window.addEventListener("message", C), () => {
-    window.removeEventListener("message", C)
-  }), [C]), (0, i.jsxs)(E.Y0X, {
+  return l.useEffect(() => (window.addEventListener("message", d), () => {
+    window.removeEventListener("message", d)
+  }), [d]), (0, i.jsxs)(E.Y0X, {
     transitionState: N,
     className: I.root,
     parentComponent: "AgeVerificationModal",

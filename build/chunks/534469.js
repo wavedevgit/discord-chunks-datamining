@@ -38,8 +38,8 @@ var r = n(255367),
   R = n(492593),
   M = n(453687),
   k = n(348238),
-  L = n(62072),
-  D = n(38267),
+  D = n(62072),
+  L = n(38267),
   U = n(25015),
   B = n(689674),
   F = n(438075),
@@ -137,7 +137,7 @@ function ei(e) {
     {
       popouts: f,
       setPopout: m
-    } = (0, D.Z)(i.id, K.d$),
+    } = (0, L.Z)(i.id, K.d$),
     g = (0, A.ZP)(i),
     b = (0, M.iG)(i),
     _ = (0, M.Gx)(i),
@@ -199,7 +199,7 @@ function el(e) {
     popouts: G,
     selected: H,
     setPopout: W
-  } = (0, D.Z)(o.id, K.d$), $ = j.RS.useSetting(), er = j.NA.useSetting(), ei = (0, u.e7)([x.Z], () => x.Z.getMessageByReference(E)), el = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
+  } = (0, L.Z)(o.id, K.d$), $ = j.RS.useSetting(), er = j.NA.useSetting(), ei = (0, u.e7)([x.Z], () => x.Z.getMessageByReference(E)), el = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
     handleMouseEnter: ea,
     handleMouseLeave: eo,
     isHovered: es
@@ -220,7 +220,7 @@ function el(e) {
     allowLinks: !0,
     previewLinkTarget: !0,
     viewingChannelId: O
-  }), ef = (0, L.Z)(s, h, ec), em = (0, A.ZP)(o), eg = (0, M.iG)(o, C), eb = (0, M.Gx)(o), e_ = (0, z.Z)(e, ep, !1), ey = i.useCallback(() => (0, v.XU)(g, h, s), [g, h, s]), eC = (0, f.p9)({
+  }), ef = (0, D.Z)(s, h, ec), em = (0, A.ZP)(o), eg = (0, M.iG)(o, C), eb = (0, M.Gx)(o), e_ = (0, z.Z)(e, ep, !1), ey = i.useCallback(() => (0, v.XU)(g, h, s), [g, h, s]), eC = (0, f.p9)({
     guildId: g,
     roleId: em.iconRoleId
   }), ex = (0, y.Z)(em);
@@ -318,7 +318,7 @@ let ea = i.memo(function(e) {
       popouts: eg,
       selected: eb,
       setPopout: e_
-    } = (0, D.Z)(v.id, K.d$),
+    } = (0, L.Z)(v.id, K.d$),
     ey = (0, k.qo)(v, N, e_),
     eC = (0, k.Go)(v, N),
     {
@@ -350,8 +350,8 @@ let ea = i.memo(function(e) {
     eR = ew || eO,
     eM = (0, u.e7)([O.Z], () => v.hasFlag(X.iLy.HAS_THREAD) && O.Z.getChannel(P.default.castMessageIdAsChannelId(v.id))),
     ek = v.isFirstMessageInForumPost(N),
-    eL = (0, m.A)((null != (n = v.editedTimestamp) ? n : v.timestamp).valueOf()),
-    eD = (0, u.e7)([E.Z], () => E.Z.isDeveloper),
+    eD = (0, m.A)((null != (n = v.editedTimestamp) ? n : v.timestamp).valueOf()),
+    eL = (0, u.e7)([E.Z], () => E.Z.isDeveloper),
     {
       content: eU,
       hasSpoilerEmbeds: eB
@@ -359,13 +359,13 @@ let ea = i.memo(function(e) {
       hideSimpleEmbedContent: eh && ef,
       isInteracting: eR,
       formatInline: !1,
-      allowList: ek || eL,
-      allowHeading: ek || eL,
+      allowList: ek || eD,
+      allowHeading: ek || eD,
       allowLinks: !0,
-      allowDevLinks: eD,
+      allowDevLinks: eL,
       previewLinkTarget: !0
     }),
-    eF = (0, L.Z)(Z, $, eA),
+    eF = (0, D.Z)(Z, $, eA),
     eG = (0, A.ZP)(v),
     eH = (0, u.e7)([C.Z], () => C.Z.getPendingReply($)),
     eV = function(e) {

@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(193910),
   M = n(951211),
   k = n(981631),
-  L = n(356659),
-  D = n(921944),
+  D = n(356659),
+  L = n(921944),
   U = n(388032),
   B = n(911777);
 
@@ -87,7 +87,7 @@ let H = i.memo(function(e) {
     location: "ChannelAttachButton"
   }, {
     autoTrackExposure: !1
-  }), ei = (0, o.e7)([C.qc], () => C.qc.hasHotspot(C.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), el = (0, c.s9z)(e => (0, c.DEQ)(e, L.Qr)), ea = (0, o.e7)([I.Z], () => I.Z.hasLayers()), eo = (0, o.e7)([g.Z], () => g.Z.hasClips()), [es, ec] = i.useState(null), eu = (0, m.Go)() && ($ || eo), ed = V.isPrivate(), ep = (0, o.e7)([S.Z], () => ed || S.Z.can(k.Plq.ATTACH_FILES, V) && S.Z.can(k.Plq.SEND_MESSAGES, V)), eh = (0, d.Z)(ee);
+  }), ei = (0, o.e7)([C.qc], () => C.qc.hasHotspot(C.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), el = (0, c.s9z)(e => (0, c.DEQ)(e, D.Qr)), ea = (0, o.e7)([I.Z], () => I.Z.hasLayers()), eo = (0, o.e7)([g.Z], () => g.Z.hasClips()), [es, ec] = i.useState(null), eu = (0, m.Go)() && ($ || eo), ed = V.isPrivate(), ep = (0, o.e7)([S.Z], () => ed || S.Z.can(k.Plq.ATTACH_FILES, V) && S.Z.can(k.Plq.SEND_MESSAGES, V)), eh = (0, d.Z)(ee);
   (null == eh ? void 0 : eh.newClipIds.length) !== (null == ee ? void 0 : ee.newClipIds.length) && (null != (t = null == ee ? void 0 : ee.newClipIds.length) ? t : 0) > 0 && null == es && ei && en && !el && !er && !ea && ec("recentClips");
   let ef = (e, t, n) => {
       null != t && "ETOOLARGE" === t.code ? (0, A.G)(V, []) : (0, A.d)(e, V, z, {
@@ -106,7 +106,7 @@ let H = i.memo(function(e) {
         channelId: V.id
       }))
     }, {
-      modalKey: L.Qr
+      modalKey: D.Qr
     }), ec(null)
   }
   i.useEffect(() => {
@@ -170,12 +170,12 @@ let H = i.memo(function(e) {
       positionKey: null != es ? es : "null",
       onRequestOpen: () => {
         em && (0, y.EW)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
-          dismissAction: D.L.TAKE_ACTION
+          dismissAction: L.L.TAKE_ACTION
         }), ec("attachMenu")
       },
       onRequestClose: () => {
         (0, c.$sL)() || (em && (0, y.EW)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-          dismissAction: D.L.TAKE_ACTION
+          dismissAction: L.L.TAKE_ACTION
         }), ec(null))
       },
       renderPopout: e => {

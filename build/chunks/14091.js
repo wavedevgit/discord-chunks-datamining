@@ -45,11 +45,11 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function D(e) {
   let t = null != e ? C.Z.getEditorState(e) : null;
   return null != t ? j.Sq(t) : null
 }
-class D extends i.Component {
+class L extends i.Component {
   componentDidMount() {
     this.autoAnalytics()
   }
@@ -74,7 +74,7 @@ class D extends i.Component {
         searchId: t.props.searchId,
         searchType: t.props.searchType,
         searchAnalyticsId: t.props.searchAnalyticsId,
-        searchQueryString: L(t.props.searchId),
+        searchQueryString: D(t.props.searchId),
         searchQuery: C.Z.getQuery(t.props.searchId)
       }) : (0, E.hM)({
         searchType: t.props.searchType,
@@ -92,7 +92,7 @@ class D extends i.Component {
         pageNumLinks: l,
         pageNumEmbeds: i,
         pageNumAttachments: r,
-        searchQueryString: L(t.props.searchId),
+        searchQueryString: D(t.props.searchId),
         searchQuery: C.Z.getQuery(t.props.searchId)
       })
     })
@@ -155,7 +155,7 @@ class B extends i.PureComponent {
         ref: this.scrollerRef,
         className: M.scroller,
         children: this.renderContent()
-      }), this.renderFooter(), (0, r.jsx)(D, {
+      }), this.renderFooter(), (0, r.jsx)(L, {
         searchId: i,
         searchType: t,
         searchAnalyticsId: e,
@@ -192,7 +192,7 @@ class B extends i.PureComponent {
         }
       } = this.props;
       if (!t) {
-        let t = L(e);
+        let t = D(e);
         p.jn(e, T.vpv, t)
       }
     }), k(this, "searchNext", () => {
@@ -203,7 +203,7 @@ class B extends i.PureComponent {
         }
       } = this.props;
       if (!t) {
-        let t = L(e);
+        let t = D(e);
         p.m$(e, T.vpv, t)
       }
     }), k(this, "handleSearchResultsClose", () => {
@@ -317,7 +317,7 @@ class B extends i.PureComponent {
         page: Math.floor(o / T.vpv) + 1,
         offset: o,
         index: t,
-        searchQueryString: L(i),
+        searchQueryString: D(i),
         searchQuery: C.Z.getQuery(i)
       })
     }), k(this, "renderContent", () => {
