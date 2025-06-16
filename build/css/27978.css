@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 3e0358b15ef4cf8d
+  Original File Name: ae2f5a0f4a52bba9
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -3159,10 +3159,9 @@ html:not(.visual-refresh) .footer__7c901 {
     color: var(--text-positive)
 }
 
-.birthdayText_d332d2 {
-    color: var(--text-secondary);
+.inviteBirthdayInput_d332d2 {
     margin-bottom: 32px;
-    margin-top: 4px
+    margin-top: 20px
 }
 
 .consentBox_d332d2 {
@@ -3363,4 +3362,4 @@ html:not(.visual-refresh) .footer__7c901 {
     height: 100px
 }
 
-/*# sourceMappingURL=3e0358b15ef4cf8d.css.map*/
+/*# sourceMappingURL=ae2f5a0f4a52bba9.css.map*/

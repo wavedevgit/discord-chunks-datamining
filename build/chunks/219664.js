@@ -25,8 +25,8 @@ var r = n(255367),
   _ = n(433355),
   y = n(592125),
   O = n(496675),
-  w = n(456269),
-  S = n(109590),
+  S = n(456269),
+  w = n(109590),
   N = n(368844),
   P = n(73315),
   T = n(404616),
@@ -111,18 +111,18 @@ function U(e) {
   } = e, p = (0, o.e7)([y.Z], () => y.Z.getChannel(n.parent_id)), j = n.id, v = l.useRef(null), P = (0, o.e7)([_.ZP], () => _.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
     firstMessage: E,
     loaded: B
-  } = (0, S.cl)(n), {
+  } = (0, w.cl)(n), {
     firstMedia: H
-  } = (0, w.mX)({
+  } = (0, S.mX)({
     firstMessage: E,
     formatInline: !1,
     noStyleAndInteraction: !1
   }), {
     messageCountText: U
-  } = (0, w.nP)(n), {
+  } = (0, S.nP)(n), {
     isNew: G,
     hasUnreads: q
-  } = (0, w.J$)(n), X = l.useRef(null), {
+  } = (0, S.J$)(n), X = l.useRef(null), {
     handleLeftClick: J,
     handleRightClick: Y
   } = (0, M.Z)({
@@ -139,7 +139,7 @@ function U(e) {
     et = (0, b.Z)(ee, Q),
     en = (0, N.aU)(E, p, !1),
     [er, el] = (0, I.rI)(h.width - 2 * I.LT),
-    ei = (0, w.xw)(n, s.z.CREATION_DATE, A.R6.POSTED_DURATION_AGO),
+    ei = (0, S.xw)(n, s.z.CREATION_DATE, A.R6.POSTED_DURATION_AGO),
     ea = (0, T.NN)(n),
     es = (null == E ? void 0 : E.blocked) || null == (null != u ? u : H),
     eo = (0, Z.nX)({
@@ -441,7 +441,7 @@ function K(e) {
     hasUnreads: o
   } = e, c = C.jU.useSetting(), [u, m] = (0, I.rI)(s - 2 * I.LT), {
     content: h
-  } = (0, w.mX)({
+  } = (0, S.mX)({
     firstMessage: n,
     formatInline: !1,
     noStyleAndInteraction: !0

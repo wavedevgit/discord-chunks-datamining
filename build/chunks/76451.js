@@ -32,11 +32,11 @@ let y = {
     scale: 1,
     opacity: 1
   },
-  w = {
+  S = {
     scale: 1,
     opacity: 1
   },
-  S = {
+  w = {
     tension: 2400,
     friction: 52
   };
@@ -93,8 +93,8 @@ function P(e) {
     reducedMotion: d
   } = l.useContext(c.Sfi), f = (0, c.q_F)({
     from: d.enabled ? O : y,
-    to: w,
-    config: S
+    to: S,
+    config: w
   }, "animate-always"), x = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type));
   return (0, r.jsx)(s.animated.div, {
     className: _.popoutContainer,

@@ -25,8 +25,8 @@ var r = n(255367),
   _ = n(284182),
   y = n(795639),
   O = n(957730),
-  w = n(25015),
-  S = n(252032),
+  S = n(25015),
+  w = n(252032),
   N = n(216572),
   P = n(913663),
   T = n(268350),
@@ -117,7 +117,7 @@ function es(e) {
     }
   }, c.X), [p, b] = l.useState(null), j = l.useContext(D.oo), v = l.useCallback(() => {
     j.bumpDispatchPriority()
-  }, [j]), C = (0, h.e7)([M.Z], () => M.Z.can(ee.Plq.ATTACH_FILES, t)), w = (0, h.Wu)([L.Z], () => L.Z.getUploads(t.id, Z.d.FirstThreadMessage)), S = f && C && u, I = (null == t ? void 0 : t.isMediaChannel()) === !0, R = function(e, t) {
+  }, [j]), C = (0, h.e7)([M.Z], () => M.Z.can(ee.Plq.ATTACH_FILES, t)), S = (0, h.Wu)([L.Z], () => L.Z.getUploads(t.id, Z.d.FirstThreadMessage)), w = f && C && u, I = (null == t ? void 0 : t.isMediaChannel()) === !0, R = function(e, t) {
     let n = (0, K.AF)(),
       r = (0, G.ql)(e);
     return l.useCallback(() => {
@@ -246,7 +246,7 @@ function es(e) {
       }
     }, [r, i, e, n])
   }(t);
-  return l.useLayoutEffect(s, [f, m, w, s]), (0, r.jsx)(r.Fragment, {
+  return l.useLayoutEffect(s, [f, m, S, s]), (0, r.jsx)(r.Fragment, {
     children: (0, r.jsx)("div", {
       "aria-label": u ? en.intl.string(en.t.dq7mAQ) : en.intl.string(en.t["5h0QOD"]),
       className: a()(er.container, {
@@ -281,14 +281,14 @@ function es(e) {
               submit: A,
               disabled: !u
             }), x && (0, r.jsx)(eh, {})]
-          }), S && (I ? (0, r.jsx)(y._, {
+          }), w && (I ? (0, r.jsx)(y._, {
             parentChannel: t
           }) : (0, r.jsx)(X.Z, {
             channelId: t.id
           }))]
         }), (0, r.jsxs)("div", {
           className: er.form,
-          children: [S && I && (0, r.jsx)(_.Z, {
+          children: [w && I && (0, r.jsx)(_.Z, {
             parentChannel: t
           }), f && (0, r.jsx)(ef, {
             className: er.horizontalPadding,
@@ -517,7 +517,7 @@ let eu = l.memo(function(e) {
       content: n
     }), {
       content: i
-    } = (0, w.Z)(l, {
+    } = (0, S.Z)(l, {
       hideSimpleEmbedContent: !0,
       isInteracting: !1,
       formatInline: !1,
@@ -525,7 +525,7 @@ let eu = l.memo(function(e) {
       allowHeading: !0,
       previewLinkTarget: !0,
       allowLinks: !0
-    }), s = (0, S.Z)({
+    }), s = (0, w.Z)({
       message: l,
       channel: t,
       compact: !1
@@ -585,7 +585,7 @@ let eu = l.memo(function(e) {
           richValue: n
         })
       }, [v]),
-      w = l.useCallback(e => {
+      S = l.useCallback(e => {
         let {
           value: t,
           uploads: r,
@@ -600,7 +600,7 @@ let eu = l.memo(function(e) {
       event: ee.CkL.TEXTAREA_BLUR,
       handler: y
     });
-    let S = (0, H.Op)(m, {
+    let w = (0, H.Op)(m, {
       content: x.textValue
     });
     return (0, r.jsx)("div", {
@@ -622,10 +622,10 @@ let eu = l.memo(function(e) {
             focused: p,
             className: er.channelTextArea,
             innerClassName: a()(er.channelTextAreaInner, {
-              [er.channelTextAreaInnerError]: null != S
+              [er.channelTextAreaInnerError]: null != w
             }),
             onChange: O,
-            onSubmit: w,
+            onSubmit: S,
             promptToUpload: B.d,
             disabled: i,
             onKeyDown: e => {
@@ -641,7 +641,7 @@ let eu = l.memo(function(e) {
             autoCompletePosition: "bottom"
           })
         }), (0, r.jsx)(g.pdY, {
-          error: S
+          error: w
         })]
       })
     })

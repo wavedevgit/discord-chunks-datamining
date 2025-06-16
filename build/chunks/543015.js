@@ -25,8 +25,8 @@ var r = n(255367),
   _ = n(95398),
   y = n(247206),
   O = n(109434),
-  w = n(456269),
-  S = n(109590),
+  S = n(456269),
+  w = n(109590),
   N = n(368844),
   P = n(660189),
   T = n(73315),
@@ -104,7 +104,7 @@ let ec = l.memo(function(e) {
     let i = (0, h.e7)([q.ZP], () => q.ZP.getCurrentSidebarChannelId(r.parent_id) === r.id),
       {
         firstMessage: a
-      } = (0, S.cl)(r),
+      } = (0, w.cl)(r),
       s = function(e) {
         let {
           firstMessage: t,
@@ -136,7 +136,7 @@ let ec = l.memo(function(e) {
       d = null == s ? void 0 : s.firstMedia,
       {
         messageCountText: u
-      } = (0, w.nP)(r);
+      } = (0, S.nP)(r);
     return {
       channel: r,
       isOpen: i,
@@ -262,7 +262,7 @@ function ed(e) {
     originalAuthor: s
   } = e, {
     hasUnreads: o
-  } = (0, w.J$)(t);
+  } = (0, S.J$)(t);
   return (0, r.jsxs)("div", {
     className: a()(ei.body, ea.body),
     children: [(0, r.jsx)(E.ZP, {
@@ -337,7 +337,7 @@ function em(e) {
     firstMessage: l
   } = e, {
     isNew: i
-  } = (0, w.J$)(t), a = (0, C.Q)(t.id), s = (null == l ? void 0 : l.reactions) != null && l.reactions.length > 0;
+  } = (0, S.J$)(t), a = (0, C.Q)(t.id), s = (null == l ? void 0 : l.reactions) != null && l.reactions.length > 0;
   return (0, r.jsxs)("div", {
     className: ei.footer,
     children: [(0, r.jsxs)("div", {
@@ -397,7 +397,7 @@ function eh(e) {
   } = e, {
     messageCountText: i,
     unreadCount: s
-  } = (0, w.nP)(t);
+  } = (0, S.nP)(t);
   return (0, r.jsxs)("div", {
     className: a()(ea.messageCountBox, {
       [ea.hasRead]: l && null == s
@@ -432,7 +432,7 @@ function eg(e) {
   let {
     firstMessage: t,
     channel: n
-  } = e, l = (0, h.e7)([W.Z], () => W.Z.getChannel(n.parent_id)), i = (0, w.Bs)(l), {
+  } = e, l = (0, h.e7)([W.Z], () => W.Z.getChannel(n.parent_id)), i = (0, S.Bs)(l), {
     disableReactionCreates: a,
     isLurking: s,
     isPendingMember: o
@@ -462,7 +462,7 @@ function ef(e) {
     channel: n
   } = e, {
     sortOrder: l
-  } = (0, O.H)(n.parent_id), i = (0, w.xw)(n, l), a = null == (t = n.threadMetadata) ? void 0 : t.createTimestamp, s = null == a ? null : el.intl.formatToPlainString(el.t["13euCQ"], {
+  } = (0, O.H)(n.parent_id), i = (0, S.xw)(n, l), a = null == (t = n.threadMetadata) ? void 0 : t.createTimestamp, s = null == a ? null : el.intl.formatToPlainString(el.t["13euCQ"], {
     timestamp: (0, $.vc)(d()(a), "LLLL")
   });
   return (0, r.jsx)(g.ua7, {
@@ -495,7 +495,7 @@ function ex(e) {
     channel: t,
     userIds: n,
     facepileRef: l
-  } = e, i = (0, w.iM)(t, n);
+  } = e, i = (0, S.iM)(t, n);
   return (0, r.jsx)("div", {
     ref: l,
     children: (0, r.jsx)(p.Z, {
