@@ -1,7 +1,7 @@
 /** Chunk was on 11298 **/
 n.d(t, {
   default: () => h
-}), n(539854);
+}), n(539854), n(388685);
 var l = n(255367),
   i = n(73800),
   r = n(120356),
@@ -18,25 +18,6 @@ var l = n(255367),
   _ = n(925126);
 
 function E(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
-      var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
-        value: l,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-      }) : e[t] = l
-    })
-  }
-  return e
-}
-
-function g(e) {
   let {
     title: t,
     options: n,
@@ -81,20 +62,58 @@ let h = function(e) {
     onClose: r
   } = e, a = (0, b.Dt)(), h = (0, d.e)({
     getOptions: c.bM
-  }), p = (0, d.e)({
+  }), g = (0, d.e)({
     getOptions: c.cc
-  }), S = t === O.aZ.BAD, T = i.useMemo(() => {
-    let e = [];
-    return S && e.push(h), e.push(p), e.every(c.cp)
-  }, [S, p, h]), x = i.useCallback(() => {
-    T && (s.ZP.trackWithMetadata(f.rMx.SEARCH_RESULTS_FEEDBACK_SUBMITTED, {
+  }), p = t === O.aZ.BAD, {
+    questionItems: S,
+    questionTitles: T
+  } = i.useMemo(() => {
+    let e = [],
+      t = [];
+    return p && (e.push(h), t.push(v.intl.string(v.t.UyBQFx))), e.push(g), t.push(v.intl.string(v.t.LhMLCg)), {
+      questionItems: e,
+      questionTitles: t
+    }
+  }, [p, g, h]), [m, x] = i.useState(0), D = i.useMemo(() => m === S.length - 1, [m, S.length]), I = i.useMemo(() => {
+    let e = S[m],
+      t = T[m];
+    return (0, l.jsx)(E, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          l = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), l.forEach(function(t) {
+          var l;
+          l = n[t], t in e ? Object.defineProperty(e, t, {
+            value: l,
+            enumerable: !0,
+            configurable: !0,
+            writable: !0
+          }) : e[t] = l
+        })
+      }
+      return e
+    }({
+      title: t
+    }, e))
+  }, [S, T, m]), N = i.useMemo(() => S.every(c.cp), [S]), y = i.useMemo(() => {
+    let e = S[m];
+    return (0, c.cp)(e)
+  }, [S, m]), C = i.useCallback(() => {
+    N && (s.ZP.trackWithMetadata(f.rMx.SEARCH_RESULTS_FEEDBACK_SUBMITTED, {
       rating: t,
-      unsatisfied_question_option: S ? (0, c.HO)(h) : null,
-      unsatisfied_question_text: S ? (0, c.sG)(h) : null,
-      describe_search_question_option: (0, c.HO)(p),
-      describe_search_question_text: (0, c.sG)(p)
+      unsatisfied_question_option: p ? (0, c.HO)(h) : null,
+      unsatisfied_question_text: p ? (0, c.sG)(h) : null,
+      describe_search_question_option: (0, c.HO)(g),
+      describe_search_question_text: (0, c.sG)(g)
     }), r())
-  }, [h, S, T, r, t, p]);
+  }, [h, p, N, r, t, g]), k = i.useCallback(() => {
+    if (0 === m) return void r();
+    x(m - 1)
+  }, [m, r]), j = i.useCallback(() => {
+    x(m + 1)
+  }, [m]);
   return (0, l.jsxs)(u.Y0X, {
     size: u.CgR.MEDIUM,
     transitionState: n,
@@ -111,13 +130,9 @@ let h = function(e) {
       }), (0, l.jsx)(u.olH, {
         onClick: r
       })]
-    }), (0, l.jsxs)(u.hzk, {
+    }), (0, l.jsx)(u.hzk, {
       className: _.content,
-      children: [S && (0, l.jsx)(g, E({
-        title: v.intl.string(v.t.UyBQFx)
-      }, h)), (0, l.jsx)(g, E({
-        title: v.intl.string(v.t.LhMLCg)
-      }, p))]
+      children: I
     }), (0, l.jsxs)(u.mzw, {
       separator: !0,
       className: _.footer,
@@ -127,13 +142,18 @@ let h = function(e) {
         size: u.zxk.Sizes.MEDIUM,
         look: u.zxk.Looks.FILLED,
         color: u.zxk.Colors.PRIMARY,
-        onClick: r,
+        onClick: k,
         children: v.intl.string(v.t["13/7kZ"])
-      }), (0, l.jsx)(u.zxk, {
+      }), D ? (0, l.jsx)(u.zxk, {
         size: u.zxk.Sizes.MEDIUM,
-        onClick: x,
-        disabled: !T,
+        onClick: C,
+        disabled: !N,
         children: v.intl.string(v.t["4Zpxtr"])
+      }) : (0, l.jsx)(u.zxk, {
+        size: u.zxk.Sizes.MEDIUM,
+        onClick: j,
+        disabled: !y,
+        children: v.intl.string(v.t.PDTjLC)
       })]
     })]
   })
