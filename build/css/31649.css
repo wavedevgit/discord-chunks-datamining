@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: 7e51103117b931c2
+  Original File Name: b00ddb57c4bf1f2f
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -310,6 +310,7 @@
 
 .clearAfterSelectOption_dbc4b7:has(>.disabled_dbc4b7) {
     color: var(--text-tertiary);
+    opacity: unset;
     pointer-events: none
 }
 
@@ -347,4 +348,4 @@
     text-transform: uppercase
 }
 
-/*# sourceMappingURL=7e51103117b931c2.css.map*/
+/*# sourceMappingURL=b00ddb57c4bf1f2f.css.map*/
