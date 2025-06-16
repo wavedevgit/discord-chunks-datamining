@@ -18,7 +18,7 @@ var r, i = n(255367),
   T = n(385499),
   p = n(372900),
   N = n(172751),
-  S = n(477747),
+  S = n(402235),
   A = n(477734),
   f = n(670188),
   R = n(768581),
@@ -81,8 +81,8 @@ function M(e) {
     userOverride: T,
     compact: h = !1,
     withMentionPrefix: M = !1,
-    showPopout: v = !1,
-    hideGuildTag: k = !1,
+    showPopout: k = !1,
+    hideGuildTag: v = !1,
     hideSystemTag: L = !1,
     className: Z,
     onClick: j,
@@ -131,16 +131,16 @@ function M(e) {
     onContextMenu: x,
     children: eu,
     "data-text": q + X
-  }, e_ = l.useMemo(() => h && !k ? (0, i.jsx)(N.ZP, {
+  }, e_ = l.useMemo(() => h && !v ? (0, i.jsx)(N.ZP, {
     primaryGuild: n.primaryGuild,
     userId: r.author.id,
     contextGuildId: Y,
     className: y.clanTagChiplet
-  }) : null, [h, n.primaryGuild, Y, r.author.id, k]), eE = null != T ? T : r.author, eI = null != G && null != v ? (0, i.jsx)(f.Z, {
+  }) : null, [h, n.primaryGuild, Y, r.author.id, v]), eE = null != T ? T : r.author, eI = null != G && null != k ? (0, i.jsx)(f.Z, {
     targetElementRef: z,
     user: eE,
     renderPopout: G,
-    shouldShow: v,
+    shouldShow: k,
     shouldPreload: ei,
     position: c.tq ? "window_center" : "right",
     avatarUrl: null != n.guildMemberAvatar && null != Y ? (0, R.JM)({
@@ -150,7 +150,7 @@ function M(e) {
       size: 80
     }) : void 0,
     onRequestClose: F,
-    clickTrap: v,
+    clickTrap: k,
     children: e => {
       var {
         onClick: t
@@ -193,7 +193,7 @@ function M(e) {
       name: $,
       className: y.roleDot,
       hoverOverride: null == el ? void 0 : el.animate
-    }) : null, eI, !h && !k && (0, i.jsx)(N.ZP, {
+    }) : null, eI, !h && !v && (0, i.jsx)(N.ZP, {
       primaryGuild: n.primaryGuild,
       userId: r.author.id,
       contextGuildId: Y,

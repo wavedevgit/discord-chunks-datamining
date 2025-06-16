@@ -1,6 +1,6 @@
 /** Chunk was on 91315 **/
 n.d(t, {
-  Z: () => p
+  Z: () => b
 }), n(388685);
 var r = n(255367),
   a = n(73800),
@@ -20,12 +20,12 @@ var r = n(255367),
   v = n(388032),
   Z = n(269932);
 
-function p(e) {
+function b(e) {
   let {
     channel: t,
     className: n,
     onClose: l
-  } = e, p = (0, i.e7)([c.Z], () => c.Z.can(j.Plq.READ_MESSAGE_HISTORY, t)), N = (0, u.cD)(t), T = () => {
+  } = e, b = (0, i.e7)([c.Z], () => c.Z.can(j.Plq.READ_MESSAGE_HISTORY, t)), N = (0, u.cD)(t), T = () => {
     l(), (0, f.R6)(t, void 0, "Thread Browser Empty State")
   }, y = a.useCallback((e, t) => {
     l(), (0, f.ok)(e, !t, x.on.BROWSER)
@@ -67,10 +67,10 @@ function p(e) {
           variant: "heading-md/semibold",
           className: Z.title,
           children: v.intl.string(v.t.E3H5lJ)
-        }), p ? (0, r.jsxs)(r.Fragment, {
+        }), b ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
             className: Z.divider
-          }), (0, r.jsx)(b, function(e) {
+          }), (0, r.jsx)(p, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -121,7 +121,7 @@ function p(e) {
   })
 }
 
-function b(e) {
+function p(e) {
   let {
     query: t,
     setQuery: n,

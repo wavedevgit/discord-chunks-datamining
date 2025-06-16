@@ -36,7 +36,7 @@ let M = e => {
   let {
     dismissibleContent: t,
     noticeType: M
-  } = e, v = (0, i.e7)([R.ZP], () => R.ZP.getNotice()), k = (0, i.e7)([S.default], () => S.default.locale), L = (0, i.e7)([f.default], () => f.default.getCurrentUser()), Z = (0, i.e7)([A.Z], () => A.Z.getGuildId());
+  } = e, k = (0, i.e7)([R.ZP], () => R.ZP.getNotice()), v = (0, i.e7)([S.default], () => S.default.locale), L = (0, i.e7)([f.default], () => f.default.getCurrentUser()), Z = (0, i.e7)([A.Z], () => A.Z.getGuildId());
   return (0, r.jsx)(g.ZP, {
     contentTypes: [t],
     groupName: P.R.NOTICE_BAR,
@@ -188,7 +188,7 @@ let M = e => {
           });
         case l.z.NAGBAR_NOTICE_LOCALIZED_PRICING:
           return (0, r.jsx)(T.Z, {
-            notice: v,
+            notice: k,
             noticeType: M,
             dismissCurrentNotice: () => i(P.L.UNKNOWN)
           });
@@ -240,7 +240,7 @@ let M = e => {
               onClick: () => i(P.L.UNKNOWN),
               noticeType: M
             }), h.intl.format(h.t.zT1hgo, {
-              date: (0, I.IE)(k)
+              date: (0, I.IE)(v)
             }), (0, r.jsx)(o.NoS, {
               onClick: () => (0, O.Z)(D.Kq.NOTICE),
               noticeType: M,

@@ -214,7 +214,7 @@ let G = l.memo(function(e) {
       analyticsLocations: i
     } = (0, p.ZP)(), a = l.useCallback(e => {
       null != n && (e.stopPropagation(), e.preventDefault(), (0, k.RE)(n, i))
-    }, [n, i]), s = (0, O.X)(null == n ? void 0 : n.guildId, null == n ? void 0 : n.colorStrings);
+    }, [n, i]), s = (0, O.X)(null == n ? void 0 : n.guildId, null == n ? void 0 : n.colorStrings, "MembersTableRow");
     return null == o || null == n ? null : (0, r.jsxs)("div", {
       className: F.memberNameContainer,
       children: [(0, r.jsx)(C.P3F, {

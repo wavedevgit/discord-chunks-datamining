@@ -61,7 +61,7 @@ function O(e) {
     channel: _
   } = e, y = i.useRef(null), {
     analyticsLocations: C
-  } = (0, d.ZP)(u.Z.USERNAME), O = (0, o.e7)([g.default], () => g.default.getUser(p)), E = (0, o.e7)([m.ZP], () => null != p ? m.ZP.getMember(_.guild_id, p) : null), I = (0, h.X)(_.guild_id, null == E ? void 0 : E.colorStrings);
+  } = (0, d.ZP)(u.Z.USERNAME), O = (0, o.e7)([g.default], () => g.default.getUser(p)), E = (0, o.e7)([m.ZP], () => null != p ? m.ZP.getMember(_.guild_id, p) : null), I = (0, h.X)(_.guild_id, null == E ? void 0 : E.colorStrings, "ThreadEmptyMessage");
 
   function P(e) {
     if (null == O) return null;

@@ -157,7 +157,7 @@ function b(e) {
   let {
     guildId: r,
     role: s
-  } = e, l = (0, o.dQu)(u.Z.colors.BORDER_SUBTLE).hex(), a = null == s.color ? l : (0, d.Rf)(s.color), c = (0, x.X)(r, s.colorStrings);
+  } = e, l = (0, o.dQu)(u.Z.colors.BORDER_SUBTLE).hex(), a = null == s.color ? l : (0, d.Rf)(s.color), c = (0, x.X)(r, s.colorStrings, "AcceptGuildTemplate");
   return (0, i.jsxs)("li", {
     className: Z.role,
     style: {

@@ -1,6 +1,6 @@
 /** Chunk was on 48057 **/
 n.d(t, {
-  O: () => v,
+  O: () => k,
   Z: () => j
 }), n(35282);
 var r = n(255367);
@@ -64,7 +64,7 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function v() {
+async function k() {
   if ((0, R.isMac)() && R.isPlatformEmbedded) {
     var e, t, n;
     let r = null != (n = await (null == (e = (t = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) ? void 0 : e.call(t))) ? n : "Maximize";
@@ -72,7 +72,7 @@ async function v() {
   }
 }
 
-function k(e) {
+function v(e) {
   let {
     children: t,
     className: n,
@@ -84,7 +84,7 @@ function k(e) {
     toolbar: m,
     mobileToolbar: U,
     "aria-label": M,
-    "aria-labelledby": k,
+    "aria-labelledby": v,
     scrollable: L,
     role: Z,
     hideSearch: j,
@@ -125,9 +125,9 @@ function k(e) {
       })
     }(),
     transparent: R,
-    onDoubleClick: v,
+    onDoubleClick: k,
     "aria-label": M,
-    "aria-labelledby": k,
+    "aria-labelledby": v,
     role: Z,
     scrollable: L,
     children: t
@@ -144,7 +144,7 @@ function L(e) {
   } = e;
   return (0, r.jsx)(C.ZP, {
     className: n,
-    onDoubleClick: v,
+    onDoubleClick: k,
     "aria-label": i,
     "aria-labelledby": l,
     role: o,
@@ -177,7 +177,7 @@ function Z(e) {
   });
   return (0, r.jsx)(u.Gt, {
     value: i,
-    children: t ? (0, r.jsx)(k, M(U({}, n), {
+    children: t ? (0, r.jsx)(v, M(U({}, n), {
       className: o
     })) : (0, r.jsx)(L, M(U({}, n), {
       className: o

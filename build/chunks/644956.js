@@ -23,7 +23,7 @@ var r = n(255367),
   y = n(480608),
   O = n(124072),
   v = n(606318),
-  I = n(181918),
+  I = n(402235),
   T = n(670188),
   S = n(592125),
   A = n(271383),
@@ -224,7 +224,7 @@ function B(e) {
     inlinePreview: f = !1
   } = e, {
     analyticsLocations: g
-  } = (0, m.ZP)(h.Z.ROLE_MENTION), E = (0, l.e7)([p.Z], () => p.Z.roleStyle), b = (0, I.$V)(d, "RoleMention"), T = (null != t && 0 !== t || null != n && null != n.primaryColor) && !f, S = T && "dot" === E, A = T && "username" === E, N = b && null != n && null != n.secondaryColor ? (0, v.f)(n) : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, k(x({
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), E = (0, l.e7)([p.Z], () => p.Z.roleStyle), b = (0, I.Z)(d, "RoleMention"), T = (null != t && 0 !== t || null != n && null != n.primaryColor) && !f, S = T && "dot" === E, A = T && "username" === E, N = b && null != n && null != n.secondaryColor ? (0, v.f)(n) : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, k(x({
     ref: C,
     className: w.roleMention,
     color: A ? t : null,

@@ -1,6 +1,6 @@
 /** Chunk was on 7717 **/
 n.d(l, {
-  default: () => V
+  default: () => H
 });
 var t = n(255367);
 n(73800);
@@ -43,29 +43,29 @@ var r = n(442837),
   L = n(332031),
   D = n(981631),
   Q = n(388032);
-let V = (0, o.Z)((0, s.Z)(function(e) {
+let H = (0, o.Z)((0, s.Z)(function(e) {
   let {
     user: l,
     guildId: n,
     channel: s,
     showMediaItems: o = !1,
     showChatItems: u = !0,
-    showChannelCallItems: V = !1,
-    showModalItems: H = !0,
+    showChannelCallItems: H = !1,
+    showModalItems: V = !0,
     showStageChannelItems: B = !1,
     context: F,
     onSelect: X,
     onHeightUpdate: Y,
     viewingChannelId: K,
     onInteraction: W
-  } = e, $ = s.id, J = {
+  } = e, J = s.id, $ = {
     page: D.ZY5.GUILD_CHANNEL,
     section: D.jXE.CHAT_USERNAME,
     object: D.qAy.CONTEXT_MENU_ITEM
   }, z = (0, G.Z)({
     userId: l.id,
     guildId: n,
-    channelId: $,
+    channelId: J,
     showGuildProfile: !0
   }), ee = (0, R.Z)(l, n, F), el = (0, k.Z)(l.id, F), en = (0, L.Z)(l.id), et = (0, y.Z)({
     user: l,
@@ -73,18 +73,18 @@ let V = (0, o.Z)((0, s.Z)(function(e) {
   }), er = (0, C.Z)({
     user: l,
     guildId: n,
-    channelId: $,
+    channelId: J,
     context: F
   }), ei = (0, m.Z)({
     user: l
   }), ed = (0, q.Z)(l.id), es = (0, T.Z)(l.id), eo = (0, f.B)({
     userId: l.id,
-    channelId: $,
+    channelId: J,
     guildId: s.getGuildId()
   }), ea = (0, p.Z)({
     guildId: n,
     userId: l.id,
-    analyticsLocation: J,
+    analyticsLocation: $,
     context: F
   }), ec = (0, I.Z)({
     user: l,
@@ -94,17 +94,17 @@ let V = (0, o.Z)((0, s.Z)(function(e) {
   }), eg = (0, S.Z)({
     user: l,
     guildId: n,
-    channelId: $,
+    channelId: J,
     location: "GuildChannelUserContextMenu"
   }), eh = (0, _.Z)({
     user: l,
     guildId: n,
-    channelId: $,
+    channelId: J,
     location: "GuildChannelUserContextMenu"
-  }), ef = (0, x.Z)(l, n, $), eO = (0, w.Z)(l.id, n), ep = (0, A.Z)(l, n), eb = (0, O.Z)({
+  }), ef = (0, x.Z)(l, n, J), eO = (0, w.Z)(l.id, n), ep = (0, A.Z)(l, n), eb = (0, O.Z)({
     id: l.id,
     label: Q.intl.string(Q.t["/AXYnJ"])
-  }), ej = (0, v.Z)(l.id, $), eE = (0, g.Z)(l.id), eN = (0, Z.Z)($), eP = (0, b.Z)(l), em = (0, j.Z)(l, n, $), eC = (0, r.e7)([E.Z], () => null != K ? E.Z.getChannel(K) : null), ex = (0, M.Z)({
+  }), ej = (0, v.Z)(l.id, J), eE = (0, g.Z)(l.id), eN = (0, Z.Z)(J), eP = (0, b.Z)(l), em = (0, j.Z)(l, n, J), eC = (0, r.e7)([E.Z], () => null != K ? E.Z.getChannel(K) : null), ex = (0, M.Z)({
     commandType: a.yU.USER,
     commandTargetId: l.id,
     channel: null != eC ? eC : s,
@@ -122,18 +122,18 @@ let V = (0, o.Z)((0, s.Z)(function(e) {
       children: [(0, t.jsxs)(i.kSQ, {
         children: [eP, B && em]
       }), (0, t.jsxs)(i.kSQ, {
-        children: [H && z, u && ee, el, et, ey, H && er, H && ei, en]
+        children: [V && z, u && ee, el, et, ey, V && er, V && ei, en]
       }), o && (0, t.jsx)(i.kSQ, {
         children: ed
       }), (0, t.jsx)(i.kSQ, {
-        children: H && eu
+        children: V && eu
       }), (0, t.jsxs)(i.kSQ, {
-        children: [o && es, o && eo, o && ej, H && ea, ex, H && ec, eZ, H && eh, H && eg, V && eM]
+        children: [o && es, o && eo, o && ej, V && ea, ex, V && ec, eZ, V && eh, V && eg, H && eM]
       }), (0, t.jsx)(i.kSQ, {
         children: ef
       }), (0, t.jsxs)(i.kSQ, {
         children: [eO, ep]
-      }), V && (0, t.jsxs)(i.kSQ, {
+      }), H && (0, t.jsxs)(i.kSQ, {
         children: [eN, eE]
       })]
     }), (0, t.jsx)(i.kSQ, {

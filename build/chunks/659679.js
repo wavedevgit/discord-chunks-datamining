@@ -30,7 +30,7 @@ function _(e) {
       roleColor: null == r ? void 0 : r.colorString,
       roleColorStrings: null == r ? void 0 : r.colorStrings
     }
-  }, [n]), v = (0, u.X)(n.guildId, f);
+  }, [n]), v = (0, u.X)(n.guildId, f, "GuildPowerupsRecentActivityRow");
   return (0, r.jsx)(a.Z, {
     className: m.systemMessageContainer,
     contentClassName: m.systemMessageContent,

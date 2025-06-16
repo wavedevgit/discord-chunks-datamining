@@ -1,7 +1,7 @@
 /** Chunk was on 48057 **/
 n.d(t, {
   Z: () => M,
-  d: () => v
+  d: () => k
 });
 var r = n(255367),
   i = n(73800),
@@ -76,7 +76,7 @@ function M() {
       isServerShopPreview: null != t && R.Z.isViewingServerShop(t)
     }));
   if (null == l || null == t) return null;
-  let v = function(e) {
+  let k = function(e) {
       switch (e) {
         case C.pNK.INTEGRATIONS:
           return D.intl.string(D.t.k7LGdn);
@@ -88,7 +88,7 @@ function M() {
           return D.intl.string(D.t.MTIXho)
       }
     }(o),
-    k = o === C.pNK.ROLE_SUBSCRIPTIONS ? D.intl.string(D.t.hZUCzc) : D.intl.string(D.t["/djIh4"]),
+    v = o === C.pNK.ROLE_SUBSCRIPTIONS ? D.intl.string(D.t.hZUCzc) : D.intl.string(D.t["/djIh4"]),
     L = n === g.oC.GUILD_ONBOARDING,
     Z = e => {
       let {
@@ -109,7 +109,7 @@ function M() {
         height: 16,
         direction: N.Z.Directions.LEFT,
         className: b.backArrow
-      }), v]
+      }), k]
     }), L && A ? (0, r.jsx)("div", {
       className: b.noticeContents,
       children: (0, r.jsx)("div", {
@@ -138,7 +138,7 @@ function M() {
           return (0, r.jsxs)(h, {
             onClick: n,
             buttonRef: e,
-            children: [k, (0, r.jsx)(S.Z, {
+            children: [v, (0, r.jsx)(S.Z, {
               width: 16,
               height: 16,
               direction: S.Z.Directions.DOWN,
@@ -172,7 +172,7 @@ function M() {
   })
 }
 
-function v(e) {
+function k(e) {
   let {
     guildId: t
   } = e;

@@ -171,7 +171,7 @@ function C(e) {
     joinSourceType: E,
     className: _,
     onClickInviter: A
-  } = e, T = (0, a.e7)([d.ZP], () => null == s ? null : d.ZP.getMember(n, s.id), [s, n]), I = (0, c.X)(null == T ? void 0 : T.guildId, null == T ? void 0 : T.colorStrings), N = l.useCallback(e => {
+  } = e, T = (0, a.e7)([d.ZP], () => null == s ? null : d.ZP.getMember(n, s.id), [s, n]), I = (0, c.X)(null == T ? void 0 : T.guildId, null == T ? void 0 : T.colorStrings, "GuildMemberJoinMethodTag"), N = l.useCallback(e => {
     e.stopPropagation(), e.preventDefault(), null != s && (null == A || A(s))
   }, [s, A]);
   return null == s ? null : (0, r.jsxs)("div", {

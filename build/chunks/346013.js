@@ -82,7 +82,7 @@ function M(e) {
   }, [H]), ee = (0, c.e7)([j.ZP], () => (null == H ? void 0 : H.authorId) != null ? j.ZP.getMember(H.guildId, H.authorId) : null), et = (0, f.Z)((null == ee ? void 0 : ee.avatarDecoration) != null ? null == ee ? void 0 : ee.avatarDecoration : null == H || null == (t = H.user) ? void 0 : t.avatarDecoration), [en, er, ei] = i.useMemo(() => {
     var e;
     return [null != (e = null == ee ? void 0 : ee.colorString) ? e : "inherit", null == ee ? void 0 : ee.colorStrings, null == ee ? void 0 : ee.colorRoleId]
-  }, [ee]), el = (0, x.X)(null == ee ? void 0 : ee.guildId, er), {
+  }, [ee]), el = (0, x.X)(null == ee ? void 0 : ee.guildId, er, "MediaPostEmbed"), {
     reducedMotion: ea
   } = i.useContext(u.Sfi), [eo, es] = i.useState(!1), ec = i.useCallback(() => {
     X(!0)

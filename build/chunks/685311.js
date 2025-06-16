@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(536285),
+  o = n.n(l),
+  a = n(536285),
   s = n(857458),
   c = n(388905),
   u = n(703656),
@@ -19,11 +19,11 @@ let g = function(e) {
     attemptDeepLink: l
   } = e, [g, p] = i.useState(0);
   i.useEffect(() => {
-    o.default.once("connected", () => {
+    a.default.once("connected", () => {
       p(1)
-    }), o.default.once("disconnected", () => {
+    }), a.default.once("disconnected", () => {
       (0, u.uL)((0, s.M)())
-    }), o.default.connect()
+    }), a.default.connect()
   }, []), i.useEffect(() => {
     if (0 !== g) return;
     let e = setTimeout(() => (0, u.uL)((0, s.M)()), 3e3);
@@ -50,7 +50,7 @@ let g = function(e) {
           onClick: () => m(t, n),
           children: d.intl.string(d.t.UQvCf3)
         }), (0, r.jsx)(c.zx, {
-          className: a()(h.marginTop8, h.marginCenterHorz),
+          className: o()(h.marginTop8, h.marginCenterHorz),
           color: c.zx.Colors.LINK,
           look: c.zx.Looks.LINK,
           onClick: () => (0, u.uL)((0, s.M)()),

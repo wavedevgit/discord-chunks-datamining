@@ -43,8 +43,8 @@ var i = n(255367),
   B = n(131704),
   V = n(314897),
   W = n(388610),
-  U = n(430824),
-  G = n(496675),
+  G = n(430824),
+  U = n(496675),
   H = n(903223),
   F = n(594174),
   z = n(934415),
@@ -415,7 +415,7 @@ class ew extends l.PureComponent {
           className: s()(ea.marginTop40, ea.marginBottom40)
         })]
       }) : null,
-      U = e.isForumChannel() ? (0, i.jsxs)("div", {
+      G = e.isForumChannel() ? (0, i.jsxs)("div", {
         children: [(0, i.jsxs)("div", {
           className: es.twoColumnSettings,
           children: [(0, i.jsxs)(g.xJW, {
@@ -447,7 +447,7 @@ class ew extends l.PureComponent {
           className: s()(ea.marginTop40, ea.marginBottom40)
         })]
       }) : null,
-      G = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
+      U = e.isForumLikeChannel() ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(g.xJW, {
           children: (0, i.jsx)(g.hjN, {
             title: er.intl.string(er.t.gePre3),
@@ -687,7 +687,7 @@ class ew extends l.PureComponent {
         })
       }), (0, i.jsx)(g.$i$, {
         className: s()(ea.marginTop40, ea.marginBottom40)
-      }), D, k, V, W, X, J, U, G, H, $, en, eo, ej, ef, ex]
+      }), D, k, V, W, X, J, G, U, H, $, en, eo, ej, ef, ex]
     })
   }
   renderBitrate(e) {
@@ -1101,12 +1101,12 @@ function eT() {
   } = (0, d.cj)([W.Z], () => W.Z.getProps()), s = (0, d.e7)([H.Z], () => {
     var e;
     return H.Z.getRegions(null != (e = null == t ? void 0 : t.getGuildId()) ? e : null)
-  }), a = (0, d.e7)([k.Z], () => k.Z.theme), o = (0, d.e7)([U.Z], () => U.Z.getGuild(null == t ? void 0 : t.getGuildId())), c = (0, L.C7)(t), u = (0, L.Xb)(t), {
+  }), a = (0, d.e7)([k.Z], () => k.Z.theme), o = (0, d.e7)([G.Z], () => G.Z.getGuild(null == t ? void 0 : t.getGuildId())), c = (0, L.C7)(t), u = (0, L.Xb)(t), {
     canManageChannels: h,
     canSendMessages: g
-  } = (0, d.cj)([G.Z], () => ({
-    canManageChannels: G.Z.can(ee.Plq.MANAGE_CHANNELS, t),
-    canSendMessages: G.Z.can(ee.Plq.SEND_MESSAGES, t)
+  } = (0, d.cj)([U.Z], () => ({
+    canManageChannels: U.Z.can(ee.Plq.MANAGE_CHANNELS, t),
+    canSendMessages: U.Z.can(ee.Plq.SEND_MESSAGES, t)
   })), m = (0, y.ZP)(t), p = V.default.getId(), f = (0, I.v)(), j = null == t ? void 0 : t.id, C = (0, b.ts)(t, !1, !0), N = x.Z.useExperiment({
     guildId: null == t ? void 0 : t.guild_id,
     location: "ChannelSettingsOverview"

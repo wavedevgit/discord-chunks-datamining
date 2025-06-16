@@ -82,11 +82,11 @@ let P = e => {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)
     })
-  }, [U, h]), v = i.useCallback(() => {
+  }, [U, h]), k = i.useCallback(() => {
     s.Z.open(R.oAB.INVENTORY), T.ZP.dismissOutboundPromotionNotice()
-  }, []), k = i.useCallback(() => {
-    N.default.track(R.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), D ? M() : v()
-  }, [D, M, v]);
+  }, []), v = i.useCallback(() => {
+    N.default.track(R.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), D ? M() : k()
+  }, [D, M, k]);
   if (null == n) return null;
   let L = e => (0, r.jsxs)(c.qXd, {
     color: c.DM8.PREMIUM_TIER_2,
@@ -103,12 +103,12 @@ let P = e => {
       variant: "text-sm/normal",
       className: g.text,
       children: [C.intl.string(C.t["5JMiOj"]), " ", C.intl.format(C.t.fjSvsL, {
-        onClick: v
+        onClick: k
       })]
     }) : C.intl.string(C.t["5JMiOj"]) : C.intl.string(C.t["Pzh+Gx"]), (0, r.jsx)(c.NoS, {
       noticeType: R.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        k(), null !== e && e(f.L.TAKE_ACTION)
+        v(), null !== e && e(f.L.TAKE_ACTION)
       },
       children: D ? C.intl.string(C.t.pj0XBA) : C.intl.string(C.t.jVcuVV)
     })]

@@ -21,7 +21,7 @@ var l = t(255367),
   C = t(44315),
   j = t(160404),
   b = t(240991),
-  v = t(181918),
+  v = t(402235),
   y = t(703656),
   O = t(687158),
   I = t(287008),
@@ -92,7 +92,7 @@ function en(e) {
     user: o,
     size: (0, x.y9)($),
     onlyAnimateOnHover: !p
-  }), C = (0, d.e7)([Z.ZP], () => Z.ZP.getSelfMember(i.id)), j = (0, d.Wu)([Z.ZP], () => Z.ZP.getMemberRoleWithPendingUpdates(i.id, o.id)), y = (0, d.e7)([w.Z], () => w.Z.getRoles(i.id)), P = (0, v.$V)(i.id, "UserProfile"), E = s()(j).filter(e => y.hasOwnProperty(e)).map(e => y[e]).orderBy("position", "desc").value(), S = (0, O.ZP)(o.id, i.id);
+  }), C = (0, d.e7)([Z.ZP], () => Z.ZP.getSelfMember(i.id)), j = (0, d.Wu)([Z.ZP], () => Z.ZP.getMemberRoleWithPendingUpdates(i.id, o.id)), y = (0, d.e7)([w.Z], () => w.Z.getRoles(i.id)), P = (0, v.Z)(i.id, "UserProfile"), E = s()(j).filter(e => y.hasOwnProperty(e)).map(e => y[e]).orderBy("position", "desc").value(), S = (0, O.ZP)(o.id, i.id);
   (0, f.ZP)(() => {
     (0, N.Z)(o.id, o.getAvatarURL(i.id, (0, m.pxk)($)), {
       guildId: i.id

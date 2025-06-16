@@ -4,8 +4,8 @@ n.d(t, {
 }), n(35282), n(388685);
 var r, i = n(255367),
   l = n(73800),
-  a = n(593473),
-  o = n(442837),
+  o = n(593473),
+  a = n(442837),
   s = n(544891),
   c = n(481060),
   u = n(129293),
@@ -26,11 +26,11 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-o.ZP.initialize();
+a.ZP.initialize();
 class b extends(r = l.PureComponent) {
   componentDidMount() {
     let e = (0, u.Z)(this.props.location),
-      t = (0, a.parse)(this.props.location.search);
+      t = (0, o.parse)(this.props.location.search);
     s.tn.post({
       url: m.ANM.DISABLE_EMAIL_NOTIFICATIONS,
       body: {
@@ -158,6 +158,6 @@ class b extends(r = l.PureComponent) {
 E(b, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let v = o.ZP.connectStores([p.Z], () => ({
+let v = a.ZP.connectStores([p.Z], () => ({
   defaultRoute: p.Z.defaultRoute
 }))(b)

@@ -8,7 +8,7 @@ var n = r(255367),
   o = r(481060),
   i = r(100527),
   u = r(906732),
-  a = r(181918),
+  a = r(402235),
   s = r(670188),
   c = r(592125),
   d = r(91047);
@@ -42,7 +42,7 @@ function p(e) {
     ariaLabel: g
   } = e, O = l.useRef(null), {
     analyticsLocations: h
-  } = (0, u.ZP)(i.Z.USERNAME), m = (0, a.$V)(p, "useUsernameHook"), y = l.useCallback(e => {
+  } = (0, u.ZP)(i.Z.USERNAME), m = (0, a.Z)(p, "useUsernameHook"), y = l.useCallback(e => {
     let n = c.Z.getChannel(r);
     null != n && null != t && (0, d.Pv)(e, t, n)
   }, [t, r]);

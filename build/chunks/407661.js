@@ -98,7 +98,7 @@ function S(e) {
     colorString: v,
     colorStrings: S,
     colorRoleName: A
-  } = (0, u.ZP)(a), N = (0, d.X)(h, S), C = I(i, a), R = (0, p.NE)(i, a), P = n.showThreadPromptOnReply && C >= O && R, w = () => (0, f.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+  } = (0, u.ZP)(a), N = (0, d.X)(h, S, "ChannelReplyingBar"), C = I(i, a), R = (0, p.NE)(i, a), P = n.showThreadPromptOnReply && C >= O && R, w = () => (0, f.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
   function D(e) {
     e.stopPropagation(), (0, _.qx)(i.id, !s)

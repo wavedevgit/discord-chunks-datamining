@@ -36,7 +36,7 @@ function S(e) {
     guild: o
   } = e, {
     analyticsLocations: d
-  } = (0, p.ZP)(), m = g.nm(n), C = g.QM(n), v = null == (t = g.V$(j.zUn.REASON, n)) ? void 0 : t.newValue, P = g.J5(n), S = (0, h.LJ)(n.id), Z = (0, c.e7)([y.ZP], () => null != n.userId ? y.ZP.getMember(l.guildId, n.userId) : null, [l.guildId, n.userId]), N = (0, _.X)(null == Z ? void 0 : Z.guildId, null == Z ? void 0 : Z.colorStrings), T = i.useCallback(e => t => {
+  } = (0, p.ZP)(), m = g.nm(n), C = g.QM(n), v = null == (t = g.V$(j.zUn.REASON, n)) ? void 0 : t.newValue, P = g.J5(n), S = (0, h.LJ)(n.id), Z = (0, c.e7)([y.ZP], () => null != n.userId ? y.ZP.getMember(l.guildId, n.userId) : null, [l.guildId, n.userId]), N = (0, _.X)(null == Z ? void 0 : Z.guildId, null == Z ? void 0 : Z.colorStrings, "UserModInfoAuditLog"), T = i.useCallback(e => t => {
     t.preventDefault(), t.stopPropagation(), null != e && (0, f.RE)(e, d)
   }, [d]), A = i.useCallback(() => null == n.user ? null : (0, r.jsx)(u.ua7, {
     text: O.intl.string(O.t.mvsi9v),

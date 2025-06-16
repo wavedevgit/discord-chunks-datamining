@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(893776),
   c = n(493773),
   u = n(129293),
@@ -27,7 +27,7 @@ function b(e) {
   let {
     location: t,
     transitionTo: l = E
-  } = e, [o, b] = i.useState("submitting"), v = i.useRef(void 0);
+  } = e, [a, b] = i.useState("submitting"), v = i.useRef(void 0);
   (0, c.ZP)(() => {
     (0, g.e)("verify_email");
     let e = (0, u.Z)(t);
@@ -51,10 +51,10 @@ function b(e) {
         verifying_user_id: v.current
       }), (0, h.Z)("verify_email")
     }, []);
-  return "failed" === o ? (0, r.jsxs)(d.ZP, {
+  return "failed" === a ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(375673),
-      className: a()(_.image, x.marginBottom20)
+      className: o()(_.image, x.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: x.marginBottom8,
       children: f.intl.string(f.t.PCgG39)
@@ -65,10 +65,10 @@ function b(e) {
       onClick: I,
       children: f.intl.string(f.t.dKhVQE)
     })]
-  }) : "succeeded" === o ? (0, r.jsxs)(d.ZP, {
+  }) : "succeeded" === a ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(73962),
-      className: a()(_.image, x.marginBottom20)
+      className: o()(_.image, x.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: x.marginBottom40,
       children: f.intl.string(f.t.dAfGb2)
@@ -79,7 +79,7 @@ function b(e) {
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
       src: n(892235),
-      className: a()(_.image, x.marginBottom20)
+      className: o()(_.image, x.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: x.marginBottom8,
       children: f.intl.string(f.t["0c8+5u"])
@@ -92,4 +92,4 @@ function b(e) {
     })]
   })
 }
-o.ZP.initialize()
+a.ZP.initialize()
