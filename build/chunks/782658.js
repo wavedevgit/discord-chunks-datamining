@@ -162,11 +162,16 @@ function R(e) {
               onAcceptInstantInvite: z
             });
             break
-          }(0, h.P1)(M) && (W = (0, r.jsx)(v.Z, {
-            invite: M,
-            getAcceptInviteContext: R,
-            message: n
-          })), F && (0, p.l)(M) && (W = (0, r.jsx)(I.Z, {
+          }
+          if ((0, h.P1)(M)) {
+            W = (0, r.jsx)(v.Z, {
+              invite: M,
+              getAcceptInviteContext: R,
+              message: n
+            });
+            break
+          }
+          F && (0, p.l)(M) && (W = (0, r.jsx)(I.Z, {
             onTransitionToInviteChannel: V,
             onAcceptInstantInvite: z,
             isMemberOfGuild: null != B,

@@ -1,7 +1,7 @@
 /** Chunk was on 86915 **/
 "use strict";
 n.d(t, {
-  Z: () => $,
+  Z: () => Y,
   n: () => H
 }), n(539854), n(415506);
 var i = n(255367),
@@ -391,7 +391,7 @@ function q() {
   })
 }
 
-function $() {
+function Y() {
   let {
     channel: e,
     permissionOverwrites: t,

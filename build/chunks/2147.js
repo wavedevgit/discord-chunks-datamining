@@ -51,9 +51,9 @@ var i = n(255367),
   X = n(70956),
   J = n(630388),
   q = n(63063),
-  $ = n(129724),
-  Q = n(732335),
-  Y = n(296146),
+  Y = n(129724),
+  $ = n(732335),
+  Q = n(296146),
   K = n(564735),
   ee = n(981631),
   et = n(176505),
@@ -261,10 +261,10 @@ class ew extends l.PureComponent {
     return null == t ? void 0 : t[e]
   }
   getCooldownSliderMarker(e) {
-    return (0, $.A)(e, !0)
+    return (0, Y.A)(e, !0)
   }
   getAutoArchiveDurationSliderMarker(e) {
-    return (0, $.A)(e * X.Z.Seconds.MINUTE, !0)
+    return (0, Y.A)(e * X.Z.Seconds.MINUTE, !0)
   }
   renderChannelInfo(e, t) {
     var n, l, r, d, h, m;
@@ -438,7 +438,7 @@ class ew extends l.PureComponent {
               type: g.R94.Types.DESCRIPTION,
               children: er.intl.string(er.t.mOSViY)
             })]
-          }), e.defaultForumLayout === a.X.GRID ? (0, i.jsx)(Y.Z, {
+          }), e.defaultForumLayout === a.X.GRID ? (0, i.jsx)(Q.Z, {
             className: es.defaultImageView
           }) : (0, i.jsx)(K.Z, {
             className: es.defaultImageView
@@ -505,7 +505,7 @@ class ew extends l.PureComponent {
           }), T ? (0, i.jsx)(g.vwX, {
             className: ea.marginTop20,
             children: er.intl.string(er.t.O1c02t)
-          }) : null, !0 === Z ? (0, i.jsx)(Q.Z, {
+          }) : null, !0 === Z ? (0, i.jsx)($.Z, {
             channel: e,
             onChange: this.handleChangeSlowmode
           }) : (0, i.jsx)(g.iRW, {
@@ -563,7 +563,7 @@ class ew extends l.PureComponent {
           children: E ? er.intl.string(er.t["3aJN9P"]) : er.intl.string(er.t.YUXr4e)
         })]
       }) : null,
-      $ = e.type === ee.d4z.PRIVATE_THREAD && null != e.threadMetadata ? (0, i.jsx)("div", {
+      Y = e.type === ee.d4z.PRIVATE_THREAD && null != e.threadMetadata ? (0, i.jsx)("div", {
         children: (0, i.jsx)(g.j7V, {
           note: er.intl.string(er.t.cSyXJi),
           onChange: this.handleInvitableChanged,
@@ -687,7 +687,7 @@ class ew extends l.PureComponent {
         })
       }), (0, i.jsx)(g.$i$, {
         className: s()(ea.marginTop40, ea.marginBottom40)
-      }), D, k, V, W, X, J, G, U, H, $, en, eo, ej, ef, ex]
+      }), D, k, V, W, X, J, G, U, H, Y, en, eo, ej, ef, ex]
     })
   }
   renderBitrate(e) {
