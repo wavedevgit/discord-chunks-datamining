@@ -1,4 +1,4 @@
-/** Chunk was on 66349 **/
+/** Chunk was on 89744 **/
 n.d(t, {
   P: () => l,
   W: () => c
@@ -13,7 +13,7 @@ async function l() {
       event: r.NetworkActionNames.USER_VERIFY
     },
     rejectWithError: !1
-  })).body
+  })).body || null
 }
 async function c(e) {
   return (await i.Z.post({

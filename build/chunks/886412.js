@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  VJ: () => i
+  bu: () => i
 });
 let r = (0, n(818083).B)({
   id: "2025-05_safety_flows",
