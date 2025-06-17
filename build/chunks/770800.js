@@ -22,8 +22,8 @@ var n = r(255367),
   b = r(513547),
   E = r(65154),
   C = r(388032),
-  j = r(442122),
-  P = r(20493);
+  P = r(442122),
+  j = r(20493);
 class R extends a.PureComponent {
   render() {
     var e, t;
@@ -110,9 +110,9 @@ class R extends a.PureComponent {
     return (0, n.jsxs)(o.hjN, {
       tag: o.RB0.H2,
       title: C.intl.string(C.t.wU9INz) + (null != a ? " - " + a : ""),
-      className: j.allowSelection,
+      className: P.allowSelection,
       children: [(0, v.a)(u), 0 === g.length ? null : (0, n.jsx)(o.$i$, {
-        className: P.marginBottom20
+        className: j.marginBottom20
       }), (0, v.a)(g)]
     })
   }

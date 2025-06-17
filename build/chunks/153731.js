@@ -22,8 +22,8 @@ var n = r(255367),
   b = r(189648),
   E = r(775194),
   C = r(499848),
-  j = r(724392),
-  P = r(442580),
+  P = r(724392),
+  j = r(442580),
   R = r(770800),
   Z = r(981631),
   N = r(65154),
@@ -86,7 +86,7 @@ function k(e, t, r, n, a) {
     }), null == d || l().isEmpty(d) || i.push({
       section: (0, g.J$)(e, Z._s_.OUTBOUND, r),
       label: x.intl.string(x.t["3u0gIC"]),
-      element: j.Z,
+      element: P.Z,
       elementProps: {
         context: e,
         index: r
@@ -151,7 +151,7 @@ function B() {
     return null != i && (p.push(y), p.push({
       section: Z._s_.SCREENSHARE,
       label: x.intl.string(x.t["gWbr/f"]),
-      element: P.Z,
+      element: j.Z,
       elementProps: {
         screenshare: i
       }

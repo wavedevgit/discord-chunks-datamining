@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
 r.d(t, {
   al: () => b,
-  ck: () => P
+  ck: () => j
 }), r(388685), r(539854), r(784620), r(973216);
 var n = r(255367),
   a = r(73800),
@@ -268,7 +268,7 @@ let b = {
     }
   },
   C = e => e,
-  j = e => {
+  P = e => {
     let [t] = a.useState([]);
     return t.push({
       value: e.value,
@@ -280,7 +280,7 @@ let b = {
     })
   };
 
-function P(e) {
+function j(e) {
   var t, r, a;
   let {
     label: i,
@@ -290,7 +290,7 @@ function P(e) {
     dataPoints: l,
     width: 300,
     height: 100
-  }) : "number" == typeof l ? (0, n.jsx)(j, {
+  }) : "number" == typeof l ? (0, n.jsx)(P, {
     value: l,
     width: 300,
     height: 100
