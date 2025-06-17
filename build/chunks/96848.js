@@ -44,7 +44,6 @@ function _(e) {
     shouldShow: s,
     position: "bottom",
     align: "left",
-    nudgeAlignIntoViewport: !0,
     onRequestClose: () => l(!1),
     renderPopout: e => {
       let {
@@ -68,35 +67,36 @@ function _(e) {
         })
       })
     },
-    children: () => (0, r.jsx)("div", {
+    children: () => (0, r.jsx)(a.P3F, {
       className: u.container,
-      ref: _,
-      children: (0, r.jsx)(a.P3F, {
-        className: u.emoji,
-        onClick: () => l(!0),
-        children: (null == n ? void 0 : n.name) == null ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(a.EO4, {
-            size: "custom",
-            color: "currentColor",
-            className: u.emojiIcon,
-            width: 14,
-            height: 14
-          }), (0, r.jsx)(a.Text, {
-            className: u.text,
-            variant: "text-sm/semibold",
-            children: c.intl.string(c.t.Hl2IgY)
-          })]
-        }) : (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(a.Text, {
-            className: u.textSelected,
-            variant: "text-sm/semibold",
-            children: null == n.guildId ? n.optionallyDiverseSequence : null
-          }), (0, r.jsx)(a.Text, {
-            className: u.text,
-            variant: "text-sm/semibold",
-            children: n.name.replace(/_/g, " ")
-          })]
-        })
+      onClick: () => l(!0),
+      innerRef: _,
+      children: (null == n ? void 0 : n.name) == null ? (0, r.jsxs)("div", {
+        className: u.contentContainer,
+        children: [(0, r.jsx)(a.EO4, {
+          size: "custom",
+          color: "currentColor",
+          className: u.emojiIcon,
+          width: 14,
+          height: 14
+        }), (0, r.jsx)(a.Text, {
+          className: u.text,
+          variant: "text-sm/semibold",
+          lineClamp: 1,
+          children: c.intl.string(c.t.Hl2IgY)
+        })]
+      }) : (0, r.jsxs)("div", {
+        className: u.contentContainer,
+        children: [(0, r.jsx)(a.Text, {
+          className: u.textSelected,
+          variant: "text-sm/semibold",
+          children: null == n.guildId ? n.optionallyDiverseSequence : null
+        }), (0, r.jsx)(a.Text, {
+          className: u.text,
+          variant: "text-sm/semibold",
+          lineClamp: 1,
+          children: n.name.replace(/_/g, " ")
+        })]
       })
     })
   })
