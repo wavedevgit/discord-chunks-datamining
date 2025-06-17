@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => x
+  Z: () => _
 });
 var r = t(255367);
 t(73800);
@@ -15,13 +15,13 @@ var i = t(793030),
   p = t(388032),
   m = t(326319);
 
-function x(e) {
+function _(e) {
   let {
     boost: n
   } = e, t = new Date(c.default.extractTimestamp(n.id)), {
-    username: x,
-    roleColor: f,
-    roleColorStrings: _
+    username: _,
+    roleColor: x,
+    roleColorStrings: f
   } = (0, o.cj)([l.ZP], () => {
     var e, t;
     let r = l.ZP.getMember(n.guildId, n.userId);
@@ -30,7 +30,7 @@ function x(e) {
       roleColor: null == r ? void 0 : r.colorString,
       roleColorStrings: null == r ? void 0 : r.colorStrings
     }
-  }, [n]), v = (0, u.X)(n.guildId, _, "GuildPowerupsRecentActivityRow");
+  }, [n]), v = (0, u.X)(n.guildId, f, "GuildPowerupsRecentActivityRow");
   return (0, r.jsx)(a.Z, {
     className: m.systemMessageContainer,
     contentClassName: m.systemMessageContent,
@@ -49,8 +49,8 @@ function x(e) {
       children: [(0, r.jsx)(s.PUh, {
         className: m.boostMessageUser,
         variant: "text-md/semibold",
-        name: x,
-        color: null != f ? f : void 0,
+        name: _,
+        color: null != x ? x : void 0,
         roleColors: v
       }), (0, r.jsx)(i.xv, {
         variant: "text-md/medium",

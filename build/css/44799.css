@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 8a3f506de2ffd4ef
+  Original File Name: bef84d3671608bd8
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -348,31 +348,31 @@
     display: flex
 }
 
-.container__25ea7 {
+.container__58c46 {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-8);
     padding: var(--spacing-16)
 }
 
-.headerContainer__25ea7 {
+.headerContainer__58c46 {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between
 }
 
-.contentContainer__25ea7 {
+.contentContainer__58c46 {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-8)
 }
 
-.learnMore__25ea7 {
+.learnMore__58c46 {
     cursor: pointer
 }
 
-.boostButton__25ea7 {
+.boostButton__58c46 {
     background-color: var(--bg-mod-faint);
     border-color: var(--border-faint);
     border-radius: var(--radius-sm);
@@ -381,12 +381,55 @@
     color: var(--text-normal)
 }
 
-.boostButton__25ea7:hover {
+.boostButton__58c46:hover {
     background-color: var(--bg-mod-strong)
 }
 
-.boostButtonIcon__25ea7 {
+.boostButtonIcon__58c46 {
     margin-right: 2px
+}
+
+.container__6c253 {
+    align-items: center;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-low);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    margin: var(--spacing-16);
+    overflow: hidden;
+    padding: var(--spacing-16);
+    position: relative
+}
+
+.background__6c253 {
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-secondary) 60%,var(--transparent) 100%),linear-gradient(90deg,rgba(22,26,138,.5) 0,rgba(0,1,56,.5) 100%);
+    inset: 0;
+    position: absolute;
+    z-index: 1
+}
+
+.content__6c253,.image__6c253 {
+    z-index: 2
+}
+
+.image__6c253 {
+    box-sizing: border-box;
+    height: 60px;
+    object-fit: contain;
+    object-position: center;
+    width: 110px
+}
+
+.textContainer__6c253 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    text-align: center
+}
+
+.button__6c253,.textContainer__6c253 {
 }
 
 .row_df65b5 {
@@ -540,4 +583,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=8a3f506de2ffd4ef.css.map*/
+/*# sourceMappingURL=bef84d3671608bd8.css.map*/
