@@ -244,6 +244,8 @@ class B extends i.PureComponent {
       } = this.props;
       p.QY(e, !t)
     }), M(this, "renderFooter", () => this.props.isFeedbackVisible ? (0, r.jsx)(N.Z, {
+      searchId: this.props.searchId,
+      searchType: this.props.searchType,
       dismissFeedbackEntrypoint: this.props.dismissFeedbackEntrypoint
     }) : null), M(this, "renderHeader", () => {
       let {

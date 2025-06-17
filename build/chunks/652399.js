@@ -3,6 +3,8 @@ n.d(t, {
   I1: () => y,
   IZ: () => x,
   Qb: () => E,
+  Yc: () => j,
+  bo: () => C,
   cy: () => v,
   hM: () => g,
   sL: () => _,
@@ -230,6 +232,32 @@ function O(e) {
     search_type: t,
     num_modifiers: s.length,
     modifiers: d
+  })
+}
+
+function j(e) {
+  let {
+    rating: t,
+    searchId: n,
+    searchType: r
+  } = e;
+  i.ZP.trackWithMetadata(u.rMx.SEARCH_RESULTS_FEEDBACK_MODAL_VIEWED, {
+    rating: t,
+    search_id: null != n ? o.Z.getAnalyticsId(n) : null,
+    search_type: r,
+    search_session_id: m(n)
+  })
+}
+
+function C(e) {
+  let {
+    searchId: t,
+    searchType: n
+  } = e;
+  i.ZP.trackWithMetadata(u.rMx.SEARCH_RESULTS_FEEDBACK_ENTRYPOINT_VIEWED, {
+    search_id: null != t ? o.Z.getAnalyticsId(t) : null,
+    search_type: n,
+    search_session_id: m(t)
   })
 }
 new l.Z("SearchTracking")
