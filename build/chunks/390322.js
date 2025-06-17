@@ -1,16 +1,16 @@
 /** Chunk was on 37447 **/
 n.d(t, {
-  Z: () => i
+  Z: () => s
 });
 var r = n(73800),
-  s = n(618158);
+  i = n(618158);
 
-function i(e) {
+function s(e) {
   let {
     children: t
   } = e, {
     preventIdle: n,
-    allowIdle: i
-  } = (0, s.Y)("popup");
-  return r.useEffect(() => (n(), () => i()), [i, n]), t
+    allowIdle: s
+  } = (0, i.Y)("popup");
+  return r.useEffect(() => (n(), () => s()), [s, n]), t
 }

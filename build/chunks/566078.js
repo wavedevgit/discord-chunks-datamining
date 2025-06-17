@@ -1,13 +1,14 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  r: () => u
+  r: () => d
 }), n(415506), n(388685);
 var r = n(754700),
   i = n(319245),
-  a = n(918701);
+  a = n(918701),
+  o = n(502288);
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,20 +17,20 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
 }
 
-function l(e, t) {
+function c(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -40,15 +41,15 @@ function l(e, t) {
   return n
 }
 
-function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+function u(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class u {
+class d {
   static build(e) {
     if (2 !== e.configVersion) throw Error("Cannot build SharedQuestFields when [configVersion !== 2]");
-    return new u(e)
+    return new d(e)
   }
   get features() {
     return new Set(this.quest.features)
@@ -59,6 +60,12 @@ class u {
   get defaultReward() {
     return this._defaultRewardV2(this.quest)
   }
+  get defaultRewardNameWithArticle() {
+    return (0, a.Bg)(this.quest) ? (0, o.o8)(this.quest) : this.defaultReward.messages.nameWithArticle
+  }
+  get defaultRewardName() {
+    return (0, a.Bg)(this.quest) ? (0, o.o8)(this.quest) : this.defaultReward.messages.name
+  }
   get defaultRewardRedemptionInstructionsByPlatform() {
     return this._defaultRewardV2(this.quest).messages.redemptionInstructionsByPlatform
   }
@@ -66,7 +73,7 @@ class u {
     return this.quest.rewardsConfig.rewardsExpireAt
   }
   get application() {
-    return c(s({}, this.quest.application), {
+    return u(l({}, this.quest.application), {
       ids: [this.quest.application.id]
     })
   }
@@ -92,6 +99,6 @@ class u {
     return null != t && null != n ? t : null != (e = null != n ? n : t) ? e : null
   }
   constructor(e) {
-    o(this, "quest", void 0), this.quest = e
+    s(this, "quest", void 0), this.quest = e
   }
 }

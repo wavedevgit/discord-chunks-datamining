@@ -93,7 +93,7 @@ function L(e) {
       ctaContent: m.jZ.OPEN_GAME_LINK,
       impressionId: Q
     })
-  }, el = l.useMemo(() => h.r.build(T.config).defaultReward.messages.name, [T]), eo = k.intl.formatToPlainString(k.t["12IWPz"], {
+  }, el = l.useMemo(() => h.r.build(T.config).defaultRewardName, [T]), eo = k.intl.formatToPlainString(k.t["12IWPz"], {
     rewardName: el
   });
   return (0, r.jsx)(c.Y0X, {

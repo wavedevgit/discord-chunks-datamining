@@ -40,7 +40,7 @@ function P(e) {
     onReceiveErrorHints: D
   } = e, M = (0, g.j)({
     location: C.dr.QUESTS_BAR_MOBILE
-  }), L = o.useMemo(() => x.r.build(A.config), [A.config]), V = L.defaultReward.messages.name, W = L.defaultReward.messages.nameWithArticle, Z = M ? V : W, Q = (null == (t = A.userStatus) ? void 0 : t.enrolledAt) != null, {
+  }), L = o.useMemo(() => x.r.build(A.config), [A.config]), V = L.defaultRewardName, W = L.defaultRewardNameWithArticle, Z = M ? V : W, Q = (null == (t = A.userStatus) ? void 0 : t.enrolledAt) != null, {
     ref: U,
     scrollHeight: H
   } = (0, d.kE)(), z = 104 !== H, {

@@ -63,7 +63,7 @@ function g(e) {
     rewardName: n,
     rewardDuration: s
   } = o.useMemo(() => ({
-    rewardName: d.r.build(t.config).defaultReward.messages.name,
+    rewardName: d.r.build(t.config).defaultRewardName,
     rewardDuration: (0, l.Kr)(t.config)
   }), [t.config]), a = (0, c.mK)(t.config);
   return (0, r.jsxs)("div", {

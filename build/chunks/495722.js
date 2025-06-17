@@ -165,7 +165,7 @@ function K(e) {
       tag: "li",
       variant: "text-xs/normal",
       children: Z.intl.formatToPlainString(Z.t["W8/b3d"], {
-        rewardName: s.defaultReward.messages.name
+        rewardName: s.defaultRewardName
       })
     })]
   })

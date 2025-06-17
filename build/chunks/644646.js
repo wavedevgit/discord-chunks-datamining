@@ -87,7 +87,7 @@ let v = function(e) {
     id: "QuestRewardTile_rewardTileStatic",
     children: t => (0, r.jsx)("img", {
       ref: t,
-      alt: m.r.build(a.config).defaultReward.messages.name,
+      alt: m.r.build(a.config).defaultRewardName,
       className: o()(O.questRewardTileAsset, O.questRewardTileAssetStatic),
       src: N.url,
       onLoad: e.onLoadComplete

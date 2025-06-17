@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  default: () => U,
-  h: () => j,
-  j: () => M
+  default: () => j,
+  h: () => M,
+  j: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -24,9 +24,9 @@ var r = n(255367),
   b = n(931331),
   y = n(55935),
   O = n(63063),
-  v = n(74538),
-  I = n(272008),
-  T = n(497505),
+  v = n(272008),
+  I = n(497505),
+  T = n(502288),
   S = n(981631),
   A = n(675654),
   N = n(474936),
@@ -43,29 +43,29 @@ function L(e) {
     onClose: p,
     quest: m,
     location: g
-  } = e, E = i.useRef(null), [b, y] = i.useState(null), O = i.useRef(new s.qA), v = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), S = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, [N, C] = i.useState({
+  } = e, E = i.useRef(null), [b, y] = i.useState(null), O = i.useRef(new s.qA), S = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), N = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, [C, P] = i.useState({
     state: "loading"
   });
   i.useEffect(() => {
-    S || (0, I.QB)(m.id, T.y$.CROSS_PLATFORM, g).then(e => {
-      if ((null == e ? void 0 : e.claimedAt) != null) return void C({
+    N || (0, v.QB)(m.id, I.y$.CROSS_PLATFORM, g).then(e => {
+      if ((null == e ? void 0 : e.claimedAt) != null) return void P({
         state: "claimed",
         entitlements: e
       });
-      C({
+      P({
         state: "error",
         errorReason: 0
       })
     }).catch(() => {
-      C({
+      P({
         state: "error",
         errorReason: 0
       })
     })
-  }, [m, g, S]);
-  let P = "loading" === N.state,
-    w = !v && !S && "claimed" === N.state,
-    D = "claimed" === N.state && null != N.entitlements && N.entitlements.items.some(e => e.consumed);
+  }, [m, g, N]);
+  let w = "loading" === C.state,
+    D = !S && !N && "claimed" === C.state,
+    L = "claimed" === C.state && null != C.entitlements && C.entitlements.items.some(e => e.consumed);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: y,
@@ -77,24 +77,24 @@ function L(e) {
         transitionState: f,
         size: c.CgR.DYNAMIC,
         className: o()(R.rootContainer, {
-          [R.rootContainerLoading]: P
+          [R.rootContainerLoading]: w
         }),
         hideShadow: !0,
         parentComponent: "QuestsNitroRewardModal",
-        children: P ? (0, r.jsx)(c.$jN, {
+        children: w ? (0, r.jsx)(c.$jN, {
           type: c.$jN.Type.SPINNING_CIRCLE
-        }) : "error" === N.state ? (0, r.jsx)(x, {
-          errorReason: N.errorReason,
+        }) : "error" === C.state ? (0, r.jsx)(x, {
+          errorReason: C.errorReason,
           onClose: p
-        }) : D ? (0, r.jsx)(M, {
-          duration: k(null != (u = null == (n = N.entitlements) ? void 0 : n.items) ? u : []),
+        }) : L ? (0, r.jsx)(k, {
+          duration: (0, T.kb)(null != (u = null == (n = C.entitlements) ? void 0 : n.items) ? u : []),
           onClose: p
-        }) : (0, r.jsx)(j, {
-          duration: k(null != (d = null == (a = N.entitlements) ? void 0 : a.items) ? d : []),
+        }) : (0, r.jsx)(M, {
+          duration: (0, T.kb)(null != (d = null == (a = C.entitlements) ? void 0 : a.items) ? d : []),
           onClose: p
         })
       })
-    }), w && (0, r.jsx)(h.Z, {
+    }), D && (0, r.jsx)(h.Z, {
       confettiTarget: E.current,
       confettiCanvas: b,
       sprites: A.CA,
@@ -138,15 +138,6 @@ function x(e) {
 }
 
 function k(e) {
-  let t = (0, v.xG)(e.map(e => e.skuId));
-  return t % 24 == 0 ? C.intl.formatToPlainString(C.t["Cz1G9/"], {
-    days: t / 24
-  }) : C.intl.formatToPlainString(C.t.J9Lu4u, {
-    hours: t
-  })
-}
-
-function M(e) {
   let {
     duration: t,
     onClose: n
@@ -206,7 +197,7 @@ function M(e) {
   })
 }
 
-function j(e) {
+function M(e) {
   let {
     duration: t,
     onClose: n
@@ -273,7 +264,7 @@ function j(e) {
   })
 }
 
-function U(e) {
+function j(e) {
   let {
     quest: t,
     location: n,

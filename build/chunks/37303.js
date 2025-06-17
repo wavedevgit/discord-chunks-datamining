@@ -1,10 +1,10 @@
 /** Chunk was on 37447 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 }), n(388685);
 var r = n(255367),
-  s = n(73800),
-  i = n(524979);
+  i = n(73800),
+  s = n(524979);
 n(442837);
 var o = n(113434);
 n(569984);
@@ -16,35 +16,35 @@ var a = n(497505),
   m = n(266843),
   x = n(463910);
 
-function g(e) {
+function p(e) {
   let {
     quest: t,
     location: n,
-    initiallyExpanded: g,
-    contentPosition: p
-  } = e, [h, j] = s.useState(!1), f = s.useCallback(() => j(!0), []), b = s.useCallback(() => j(!1), []), C = (0, o.tP)(t), {
+    initiallyExpanded: p,
+    contentPosition: h
+  } = e, [g, j] = i.useState(!1), f = i.useCallback(() => j(!0), []), b = i.useCallback(() => j(!1), []), C = (0, o.tP)(t), {
     containerRef: v,
     size: y,
-    height: O
+    height: N
   } = (0, m.h)(), {
-    expansionSpring: T,
-    isAnimating: N,
+    expansionSpring: O,
+    isAnimating: T,
     isExpanded: E,
     toggleExpanded: q
   } = (0, m.O)({
-    initiallyExpanded: g || (0, c.iM)({
+    initiallyExpanded: p || (0, c.iM)({
       location: n,
       quest: t
     })
-  }), S = null != O ? O : c.U0;
+  }), S = null != N ? N : c.U0;
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: n,
-    questContentPosition: p,
+    questContentPosition: h,
     trackGuildAndChannelMetadata: n === a.jn.QUESTS_EMBED,
-    children: e => (0, r.jsx)(i.animated.div, {
+    children: e => (0, r.jsx)(s.animated.div, {
       style: {
-        maxHeight: n === a.jn.QUESTS_EMBED ? void 0 : T.to({
+        maxHeight: n === a.jn.QUESTS_EMBED ? void 0 : O.to({
           range: [0, 1],
           output: [c.DJ, S]
         })
@@ -63,20 +63,20 @@ function g(e) {
           location: n,
           quest: t,
           size: y,
-          expansionSpring: T,
-          isAnimating: N,
+          expansionSpring: O,
+          isAnimating: T,
           isExpanded: E,
-          contentPosition: p,
+          contentPosition: h,
           toggleExpanded: q
         }), (0, r.jsx)(u.Z, {
           quest: t,
           isQuestExpired: C,
           location: n,
           size: y,
-          isFocused: h,
+          isFocused: g,
           isExpanded: E,
-          isAnimating: N,
-          contentPosition: p
+          isAnimating: T,
+          contentPosition: h
         })]
       })
     })

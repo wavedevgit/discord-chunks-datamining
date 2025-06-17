@@ -72,7 +72,7 @@ function v(e) {
       hasNitro: a,
       collectibleRewardDuration: o
     } = e,
-    s = f.r.build(n.config).defaultReward.messages.nameWithArticle,
+    s = f.r.build(n.config).defaultRewardNameWithArticle,
     {
       targetMinutes: c
     } = r,
@@ -96,7 +96,7 @@ function I(e) {
       hasNitro: a,
       collectibleRewardDuration: o
     } = e,
-    s = f.r.build(n.config).defaultReward.messages.nameWithArticle,
+    s = f.r.build(n.config).defaultRewardNameWithArticle,
     {
       targetMinutes: c
     } = r,
@@ -120,7 +120,7 @@ function T(e) {
       hasNitro: a,
       collectibleRewardDuration: o
     } = e,
-    s = f.r.build(n.config).defaultReward.messages.nameWithArticle,
+    s = f.r.build(n.config).defaultRewardNameWithArticle,
     {
       targetMinutes: c
     } = r,
@@ -154,7 +154,7 @@ function A(e, t, n, r) {
   var i;
   let a, o = f.r.build(e.config).defaultWatchVideoTask,
     s = null != (i = null == o ? void 0 : o.messages.videoTitle) ? i : "video",
-    c = f.r.build(e.config).defaultReward.messages.nameWithArticle,
+    c = f.r.build(e.config).defaultRewardNameWithArticle,
     u = (0, l.f$)(e.config),
     d = (0, l._p)(e.config);
   return O(a = u && n ? d ? h.t["xqX+r6"] : h.t["vs/xBg"] : u || null != t ? h.t["W/HkLC"] : e.id === _.V6 ? h.t.Rsd5bG : h.t.yMsQ7e, {
@@ -169,7 +169,7 @@ function N(e) {
     quest: t,
     taskDetails: n,
     withoutMarkdown: r
-  } = e, i = n.targetMinutes, a = f.r.build(t.config).defaultReward.messages.nameWithArticle;
+  } = e, i = n.targetMinutes, a = f.r.build(t.config).defaultRewardNameWithArticle;
   return O(h.t.VYwSSk, {
     streamingDurationRequirement: i,
     questReward: a
@@ -184,7 +184,7 @@ function C(e) {
       hasNitro: a,
       collectibleRewardDuration: o
     } = e,
-    s = f.r.build(n.config).defaultReward.messages.nameWithArticle,
+    s = f.r.build(n.config).defaultRewardNameWithArticle,
     {
       targetMinutes: c
     } = r,

@@ -67,7 +67,7 @@ function z(e) {
     } = e, d = (null == (t = a.userStatus) ? void 0 : t.claimedAt) != null || null != s, c = i ? "" : M.intl.string(M.t.UUKbio), u = i ? (0, R.o9)({
       quest: a,
       idx: null != (n = null == s ? void 0 : s.tier) ? n : null == (r = a.userStatus) ? void 0 : r.claimedTier
-    }) : null, p = D.r.build(a.config), _ = null != u && null != (o = u.messages.name) ? o : p.defaultReward.messages.name, m = i ? l : p.defaultReward.messages.name;
+    }) : null, p = D.r.build(a.config), _ = null != u && null != (o = u.messages.name) ? o : p.defaultRewardName, m = i ? l : p.defaultRewardName;
     return {
       subHeader: d ? M.intl.string(M.t.YpswQk) : c,
       header: d ? _ : m
@@ -235,7 +235,7 @@ function F(e) {
         color: "text-normal",
         className: W.bodyCopy,
         children: s ? M.intl.format(M.t.m0btAQ, {}) : M.intl.format(M.t["ZUA/Ul"], {
-          rewardName: i.defaultReward.messages.name
+          rewardName: i.defaultRewardName
         })
       });
       let l = (0, R.C1)({
