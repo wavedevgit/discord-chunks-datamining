@@ -1,6 +1,6 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  Z: () => p
+  Z: () => h
 });
 var i = n(255367),
   r = n(73800),
@@ -15,10 +15,10 @@ var i = n(255367),
   g = n(981631),
   m = n(388032);
 
-function p(e, t) {
+function h(e, t) {
   let n = (0, d.Z)(t, e),
-    p = e.hasPotions(),
-    h = (0, u.Nt)(),
+    h = e.hasPotions(),
+    p = (0, u.Nt)(),
     b = r.useCallback(n => {
       try {
         (0, a.qc)(t.id, e.id, n)
@@ -37,7 +37,7 @@ function p(e, t) {
         source: s.YD.MessageContextMenu
       })
     }, [t.id, e, b]);
-  return n && !p && h ? (0, i.jsx)(l.sNh, {
+  return n && !h && p ? (0, i.jsx)(l.sNh, {
     id: "add-confetti-potion",
     label: m.intl.string(m.t.icaJW1),
     icon: l.l22,

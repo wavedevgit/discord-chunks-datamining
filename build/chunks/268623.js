@@ -1,6 +1,6 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  Z: () => h,
+  Z: () => p,
   x: () => b
 }), n(388685);
 var i = n(255367),
@@ -15,9 +15,9 @@ var i = n(255367),
   f = n(175006),
   g = n(898150),
   m = n(70956),
-  p = n(388032);
+  h = n(388032);
 
-function h(e) {
+function p(e) {
   let {
     enabled: t
   } = s.Z.useExperiment({
@@ -28,7 +28,7 @@ function h(e) {
   });
   return t ? null != n || (0, f.Z)() ? (0, i.jsxs)(a.sNh, {
     id: "save-for-later",
-    label: p.intl.string(p.t.tpxJtr),
+    label: h.intl.string(h.t.tpxJtr),
     action: () => null == n ? (0, c.z)({
       channelId: e.channel_id,
       messageId: e.id,
@@ -41,7 +41,7 @@ function h(e) {
     }),
     children: [null != n ? (0, i.jsx)(a.sNh, {
       id: "remove-from-for-later",
-      label: p.intl.string(p.t.SvXS1d),
+      label: h.intl.string(h.t.SvXS1d),
       icon: a.plf,
       action: () => (0, c.x)({
         channelId: e.channel_id,
@@ -51,7 +51,7 @@ function h(e) {
       })
     }) : (0, i.jsx)(a.sNh, {
       id: "create-bookmark",
-      label: p.intl.string(p.t["9p3D9v"]),
+      label: h.intl.string(h.t["9p3D9v"]),
       icon: a.gt9,
       action: () => (0, c.z)({
         channelId: e.channel_id,
@@ -61,7 +61,7 @@ function h(e) {
     }), (0, i.jsx)(a.Clw, {}), r]
   }) : (0, i.jsx)(a.sNh, {
     id: "save-for-later-upsell",
-    label: p.intl.string(p.t.tpxJtr),
+    label: h.intl.string(h.t.tpxJtr),
     icon: a.SrA,
     iconProps: {
       color: o.JX.PREMIUM_TIER_2
@@ -102,13 +102,13 @@ function b(e) {
       type: u.hQ.LONG
     });
   return (null == n ? void 0 : n.saveData.dueAt) == null ? (0, i.jsx)(a.kSQ, {
-    label: p.intl.string(p.t.roMu1N),
+    label: h.intl.string(h.t.roMu1N),
     children: d
   }) : (0, i.jsxs)(a.kSQ, {
     label: f,
     children: [(0, i.jsx)(a.sNh, {
       id: "mark-complete",
-      label: p.intl.string(p.t.yjGtdH),
+      label: h.intl.string(h.t.yjGtdH),
       icon: a.kmB,
       action: () => (0, c.z)({
         channelId: t.channel_id,
@@ -117,7 +117,7 @@ function b(e) {
       })
     }), (0, i.jsx)(a.sNh, {
       id: "edit-reminder",
-      label: p.intl.string(p.t.vrbqs7),
+      label: h.intl.string(h.t.vrbqs7),
       children: d
     })]
   })

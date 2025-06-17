@@ -15,8 +15,8 @@ var r = n(120356),
   f = n(695346),
   g = n(496675),
   m = n(768581),
-  p = n(176354),
-  h = n(981631),
+  h = n(176354),
+  p = n(981631),
   b = n(185923),
   O = n(388032),
   E = n(933070);
@@ -68,7 +68,7 @@ function S(e) {
     id: n.id,
     animated: !!a,
     size: 20
-  }) : null == s && (s = p.ZP.getURL(c)), (0, i.jsx)(o.ua7, {
+  }) : null == s && (s = h.ZP.getURL(c)), (0, i.jsx)(o.ua7, {
     text: n.allNamesString,
     hideOnClick: !0,
     spacing: 16,
@@ -97,7 +97,7 @@ function S(e) {
 function _(e, t) {
   let n = (0, s.MZ)(t.guild_id).filter(e => {
     var n;
-    return !(e.useSpriteSheet && j.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !p.ZP.isEmojiPremiumLocked({
+    return !(e.useSpriteSheet && j.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !h.ZP.isEmojiPremiumLocked({
       emoji: e,
       channel: t,
       intention: b.Hz.REACTION
@@ -106,7 +106,7 @@ function _(e, t) {
   n.length > 4 && (n.length = 4);
   let r = f.nc.useSetting(),
     l = (0, d.$R)(t),
-    m = (0, a.e7)([g.Z], () => r && l && (t.isPrivate() || g.Z.can(h.Plq.ADD_REACTIONS, t)), [t, l, r]),
+    m = (0, a.e7)([g.Z], () => r && l && (t.isPrivate() || g.Z.can(p.Plq.ADD_REACTIONS, t)), [t, l, r]),
     O = n => {
       (0, c.rU)(t.id, e.id, (0, u.g1)(n), c.TW.MESSAGE_CONTEXT_MENU)
     };
