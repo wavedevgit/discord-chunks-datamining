@@ -382,7 +382,7 @@ let et = l.memo(function(e) {
     appContext: h = q.IlC.APP
   } = e, [m, E] = l.useState([J.SUGGESTIONS, J.FRIEND_REQUESTS]), S = l.useRef(null), y = (0, O.Z)("friends-popout", S), I = function() {
     let e = (0, o.Wu)([U.Z, x.default, R.Z], () => {
-        let e = U.Z.getRelationships(),
+        let e = U.Z.getMutableRelationships(),
           t = [];
         for (let [n, i] of Object.entries(e)) {
           if (i !== q.OGo.PENDING_INCOMING && i !== q.OGo.PENDING_OUTGOING) continue;

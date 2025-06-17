@@ -95,7 +95,7 @@ class P extends c.Z {
 class j {
   reset() {
     let e = new Set,
-      t = l().map(_.Z.getRelationships(), (t, n) => (t === O.OGo.FRIEND && e.add(n), new P(C(v({
+      t = l().map(_.Z.getMutableRelationships(), (t, n) => (t === O.OGo.FRIEND && e.add(n), new P(C(v({
         key: n,
         type: t,
         userId: n,

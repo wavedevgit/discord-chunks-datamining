@@ -35,7 +35,7 @@ let h = {
           })
         }
         return e
-      }({}, o.Z.getRelationships()), e => e !== p.OGo.NONE);
+      }({}, o.Z.getMutableRelationships()), e => e !== p.OGo.NONE);
       return {
         relationships: i().map(t, (t, n) => {
           let r = s.default.getUser(n);
