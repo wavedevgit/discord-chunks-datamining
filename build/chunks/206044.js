@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => I
 }), n(388685);
 var r = n(255367),
-  i = n(73800),
-  s = n(120356),
-  o = n.n(s),
+  s = n(73800),
+  i = n(120356),
+  o = n.n(i),
   a = n(524979),
   l = n(722770),
   c = n(846519),
@@ -66,24 +66,24 @@ let _ = (0, a.animated)(u.CJ0),
     var {
       quest: t,
       location: n,
-      questContentPosition: s
+      questContentPosition: i
     } = e, o = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
+      var n, r, s = function(e, t) {
         if (null == e) return {};
-        var n, r, i = {},
-          s = Object.keys(e);
-        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
+        var n, r, s = {},
+          i = Object.keys(e);
+        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
+        return s
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var i = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
       }
-      return i
+      return s
     }(e, ["quest", "location", "questContentPosition"]);
-    let [a, l] = i.useState(!1), d = i.useRef(new c.V7), m = (0, h.O5)();
-    i.useEffect(() => {
+    let [a, l] = s.useState(!1), d = s.useRef(new c.V7), m = (0, h.O5)();
+    s.useEffect(() => {
       let e = d.current;
       return function() {
         e.stop()
@@ -94,7 +94,7 @@ let _ = (0, a.animated)(u.CJ0),
         questId: t.id,
         questContent: n,
         questContentCTA: h.jZ.COPY_QUEST_URL,
-        questContentPosition: s
+        questContentPosition: i
       }), (0, p.JG)((0, f.Rs)(t.id), () => {
         l(!0), d.current.start(1e3, () => l(!1))
       })
@@ -117,7 +117,7 @@ let _ = (0, a.animated)(u.CJ0),
     var t;
     let {
       isQuestExpired: n,
-      quest: s,
+      quest: i,
       location: c,
       size: p,
       expansionSpring: f,
@@ -128,20 +128,20 @@ let _ = (0, a.animated)(u.CJ0),
     } = e, {
       ref: Z,
       height: L
-    } = (0, d.ZP)(), [B, U] = i.useState(null), [Q, W] = i.useState(null), z = (0, x.Z)(e => {
+    } = (0, d.ZP)(), [B, U] = s.useState(null), [Q, W] = s.useState(null), z = (0, x.Z)(e => {
       let t = e.target;
       U(t.offsetWidth), W(t.scrollWidth)
-    }), G = (0, m.y)(z), F = (0, T.uq)(c), H = c === j.jn.QUESTS_EMBED, X = (0, g.t5)(s, E.dr.QUESTS_CARD, c), Y = (null == (t = s.userStatus) ? void 0 : t.completedAt) != null, V = (0, h.O5)(), K = (0, g.B6)(s.config.expiresAt, {
+    }), G = (0, m.y)(z), F = (0, T.uq)(c), H = c === j.jn.QUESTS_EMBED, X = (0, g.t5)(i, E.dr.QUESTS_CARD, c), Y = (null == (t = i.userStatus) ? void 0 : t.completedAt) != null, V = (0, h.O5)(), K = (0, g.B6)(i.config.expiresAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
-    }), J = (0, g.B6)(b.r.build(s.config).rewardsExpireAt, {
+    }), J = (0, g.B6)(b.r.build(i.config).rewardsExpireAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
-    }), $ = i.useMemo(() => null != s.config.cosponsorMetadata, [s]), ee = e => {
+    }), $ = s.useMemo(() => null != i.config.cosponsorMetadata, [i]), ee = e => {
       e.stopPropagation(), e.currentTarget.blur(), k(), V({
-        questId: s.id,
+        questId: i.id,
         questContent: c,
         questContentCTA: M ? h.jZ.COLLAPSE : h.jZ.EXPAND,
         questContentPosition: A
@@ -150,10 +150,10 @@ let _ = (0, a.animated)(u.CJ0),
       className: P.partnerBranding,
       logotypeClassName: $ ? P.partnerBrandingLogotypes : void 0,
       gameTileSize: C.fF.MEDIUM,
-      quest: s,
+      quest: i,
       separatorSpacing: C.US.MEDIUM,
       theme: q.BR.DARK,
-      withGameTile: !H || null == s.config.cosponsorMetadata
+      withGameTile: !H || null == i.config.cosponsorMetadata
     });
     return (0, r.jsxs)("div", {
       className: o()(P.outerContainer, {
@@ -166,7 +166,7 @@ let _ = (0, a.animated)(u.CJ0),
         height: F ? L : void 0
       },
       children: [(0, r.jsx)(N.Z, {
-        quest: s,
+        quest: i,
         dimensions: {
           width: 660,
           height: 185
@@ -202,7 +202,7 @@ let _ = (0, a.animated)(u.CJ0),
               children: [(0, r.jsx)("div", {
                 className: P.headerCollapsedContentRewardWrapper,
                 children: (0, r.jsx)(y.Z, {
-                  quest: s,
+                  quest: i,
                   questContent: c,
                   className: P.headerCollapsedRewardTile,
                   location: E.dr.QUESTS_CARD
@@ -246,7 +246,7 @@ let _ = (0, a.animated)(u.CJ0),
               }), (0, r.jsxs)("div", {
                 className: P.questInfo,
                 children: [(0, r.jsx)(u.ua7, {
-                  text: s.config.messages.questName,
+                  text: i.config.messages.questName,
                   shouldShow: null != B && null != Q && B < Q,
                   children: e => (0, r.jsx)(u.X6q, R(w({
                     ref: G,
@@ -255,7 +255,7 @@ let _ = (0, a.animated)(u.CJ0),
                     color: "always-white"
                   }, e), {
                     children: S.intl.format(S.t.EAYZAg, {
-                      questName: s.config.messages.questName
+                      questName: i.config.messages.questName
                     })
                   }))
                 }), (0, r.jsx)(u.Text, {
@@ -271,7 +271,7 @@ let _ = (0, a.animated)(u.CJ0),
                 })]
               })]
             }), !n && F && (0, r.jsx)(D, {
-              quest: s,
+              quest: i,
               location: c,
               questContentPosition: A
             })]
@@ -286,7 +286,7 @@ let _ = (0, a.animated)(u.CJ0),
           },
           children: [(0, r.jsx)(O.r, {
             questContent: c,
-            quest: s,
+            quest: i,
             questContentPosition: A,
             shouldShowDisclosure: !0,
             hideLearnMore: F,

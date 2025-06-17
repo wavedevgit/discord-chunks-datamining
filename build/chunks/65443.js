@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => h
 });
 var r = n(255367),
-  i = n(73800),
-  s = n(120356),
-  o = n.n(s),
+  s = n(73800),
+  i = n(120356),
+  o = n.n(i),
   a = n(481060),
   l = n(918701),
   c = n(467628),
@@ -19,13 +19,13 @@ function h(e) {
   let {
     orientation: t = "horizontal",
     headingColor: n = "text-normal",
-    textColor: s = "text-normal",
+    textColor: i = "text-normal",
     withRewardName: h = !1,
     withPremiumHighlight: g = !0,
     quest: j
   } = e, f = (0, c.j)({
     location: m.dr.QUESTS_BAR_MOBILE
-  }), b = i.useMemo(() => d.r.build(j.config), [j.config]), C = b.defaultRewardName, v = b.defaultRewardNameWithArticle, y = (0, l.Kr)(j.config), N = (0, u.mK)(j.config);
+  }), b = s.useMemo(() => d.r.build(j.config), [j.config]), C = b.defaultRewardName, v = b.defaultRewardNameWithArticle, y = (0, l.Kr)(j.config), N = (0, u.mK)(j.config);
   return (0, r.jsxs)("div", {
     children: [h && (0, r.jsx)(a.Text, {
       color: n,
@@ -42,7 +42,7 @@ function h(e) {
         className: o()({
           [p.rewardsDisclosuresDurationPremiumExtendable]: null != N
         }),
-        color: s,
+        color: i,
         tag: "li",
         variant: "text-xs/medium",
         children: x.intl.formatToPlainString(x.t.coKAb2, {
@@ -53,7 +53,7 @@ function h(e) {
           [p.rewardsDisclosuresItemPremiumHighlight]: g
         }),
         tag: "li",
-        color: g ? void 0 : s,
+        color: g ? void 0 : i,
         variant: "text-xs/medium",
         children: N
       })]

@@ -1,8 +1,8 @@
 /** Chunk was on 99014 **/
 n.d(t, {
-  Nn: () => v,
-  ZP: () => x,
-  ms: () => g
+  Nn: () => y,
+  ZP: () => E,
+  ms: () => x
 });
 var r = n(255367),
   o = n(73800),
@@ -11,14 +11,25 @@ var r = n(255367),
   s = n(481060),
   l = n(762762),
   c = n(690786),
-  u = n(827397),
-  d = n(279604),
-  p = n(535396),
-  f = n(93841),
-  b = n(388032),
-  m = n(503945);
+  u = n(639777),
+  d = n(827397),
+  p = n(279604),
+  f = n(535396),
+  b = n(93841),
+  m = n(388032),
+  O = n(503945);
 
-function O(e) {
+function j() {
+  return (j = Object.assign || function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = arguments[t];
+      for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+    }
+    return e
+  }).apply(this, arguments)
+}
+
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +48,7 @@ function O(e) {
   return e
 }
 
-function j(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +61,7 @@ function j(e, t) {
   }), e
 }
 
-function _(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, o = function(e, t) {
     if (null == e) return {};
@@ -66,7 +77,7 @@ function _(e, t) {
   return o
 }
 
-function I(e) {
+function _(e) {
   let {
     powerup: t,
     isActive: n,
@@ -77,10 +88,10 @@ function I(e) {
   }) : (0, r.jsx)(s.$Eu, {
     size: "sm",
     color: "currentColor"
-  }), i = b.intl.string(n ? f.default.TZsu1d : f.default.gSxlHR);
+  }), i = m.intl.string(n ? b.default.TZsu1d : b.default.gSxlHR);
   return (0, r.jsxs)(r.Fragment, {
     children: [!o && i, !o && (0, r.jsx)("span", {
-      className: m.dot,
+      className: O.dot,
       children: "•"
     }), a, (0, r.jsx)("span", {
       children: t.cost
@@ -88,43 +99,43 @@ function I(e) {
   })
 }
 
-function g(e) {
+function x(e) {
   var {
     guildId: t,
     powerup: n,
     onClick: o
-  } = e, a = _(e, ["guildId", "powerup", "onClick"]);
-  let i = (0, u.Z)(t, n),
+  } = e, a = I(e, ["guildId", "powerup", "onClick"]);
+  let i = (0, d.Z)(t, n),
     {
       onShowMore: l
-    } = (0, d.ZP)(t, n),
-    c = p.uc.has(n.skuId);
-  return (0, r.jsx)(s.zxk, j(O({
-    className: m.primaryButton,
-    innerClassName: m.buttonInner,
-    wrapperClassName: m.buttonWrapper,
+    } = (0, p.ZP)(t, n),
+    c = f.uc.has(n.skuId);
+  return (0, r.jsx)(s.zxk, v(g({
+    className: O.primaryButton,
+    innerClassName: O.buttonInner,
+    wrapperClassName: O.buttonWrapper,
     grow: !0,
     onClick: e => {
       null == o || o(e), c ? null == i || i(e) : null == l || l()
     }
   }, a), {
-    children: c ? b.intl.string(f.default["g5Ds6+"]) : b.intl.string(b.t["0Q61kJ"])
+    children: c ? m.intl.string(b.default["g5Ds6+"]) : m.intl.string(m.t["0Q61kJ"])
   }))
 }
 
-function v(e) {
+function y(e) {
   var {
     guildId: t,
     powerup: n,
     compact: a,
     onError: u
-  } = e, p = _(e, ["guildId", "powerup", "compact", "onError"]);
+  } = e, d = I(e, ["guildId", "powerup", "compact", "onError"]);
   let {
-    onActivate: g,
-    isLoading: v,
+    onActivate: f,
+    isLoading: j,
     error: x,
     onShowDeactivate: y
-  } = (0, d.ZP)(t, n), k = null != (0, c.Z)(t, n), {
+  } = (0, p.ZP)(t, n), k = null != (0, c.Z)(t, n), {
     disabled: h,
     reason: E
   } = (0, l.Z)(t, n, k);
@@ -132,32 +143,32 @@ function v(e) {
     null == u || u(x)
   }, [x, u]), (0, r.jsx)(s.ua7, {
     delay: 100,
-    "aria-label": null != E ? E : k ? b.intl.string(f.default.TZsu1d) : void 0,
+    "aria-label": null != E ? E : k ? m.intl.string(b.default.TZsu1d) : void 0,
     text: null != E ? E : k ? (0, r.jsxs)("div", {
-      className: m.tooltipContainer,
+      className: O.tooltipContainer,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/semibold",
-        children: b.intl.string(f.default.TZsu1d)
+        children: m.intl.string(b.default.TZsu1d)
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
-        children: b.intl.formatToPlainString(f.default["5HQUzM"], {
+        children: m.intl.formatToPlainString(b.default["5HQUzM"], {
           boostCount: n.cost
         })
       })]
     }) : void 0,
-    children: e => (0, r.jsx)(s.zxk, j(O(j(O({}, e), {
-      className: m.secondaryButton,
-      innerClassName: m.buttonInner,
-      wrapperClassName: i()(m.secondaryButton, {
-        [m.buttonWrapper]: !0 === p.grow
+    children: e => (0, r.jsx)(s.zxk, v(g(v(g({}, e), {
+      className: O.secondaryButton,
+      innerClassName: O.buttonInner,
+      wrapperClassName: i()(O.secondaryButton, {
+        [O.buttonWrapper]: !0 === d.grow
       }),
       color: k ? s.Ttl.PRIMARY : s.Ttl.BRAND,
-      "aria-label": b.intl.string(k ? f.default.TZsu1d : f.default.gSxlHR),
+      "aria-label": m.intl.string(k ? b.default.TZsu1d : b.default.gSxlHR),
       disabled: h,
-      onClick: k ? y : g,
-      submitting: v
-    }), p), {
-      children: (0, r.jsx)(I, {
+      onClick: k ? y : f,
+      submitting: j
+    }), d), {
+      children: (0, r.jsx)(_, {
         powerup: n,
         isActive: k,
         compact: a
@@ -166,7 +177,28 @@ function v(e) {
   })
 }
 
-function x(e) {
+function k(e) {
+  let {
+    className: t,
+    guildId: n,
+    powerup: o
+  } = e, {
+    onShowMore: a
+  } = (0, p.ZP)(n, o);
+  return (0, r.jsx)("div", {
+    className: i()(O.container, t),
+    children: (0, r.jsx)(s.zxk, {
+      className: O.primaryButton,
+      innerClassName: O.buttonInner,
+      wrapperClassName: O.buttonWrapper,
+      grow: !0,
+      onClick: a,
+      children: o.type === f.Us.LEVEL ? m.intl.string(m.t["0Q61kJ"]) : m.intl.string(m.t.Xa11Eh)
+    })
+  })
+}
+
+function h(e) {
   let {
     className: t,
     guildId: n,
@@ -174,16 +206,24 @@ function x(e) {
     onError: a
   } = e, s = null != (0, c.Z)(n, o), l = !s;
   return (0, r.jsxs)("div", {
-    className: i()(m.container, t),
-    children: [(0, r.jsx)(v, {
+    className: i()(O.container, t),
+    children: [(0, r.jsx)(y, {
       guildId: n,
       powerup: o,
       onError: a,
       grow: l,
       compact: !l
-    }), s && (0, r.jsx)(g, {
+    }), s && (0, r.jsx)(x, {
       guildId: n,
       powerup: o
     })]
   })
+}
+
+function E(e) {
+  var t = j({}, function(e) {
+    if (null == e) throw TypeError("Cannot destructure " + e);
+    return e
+  }(e));
+  return (0, u.Z)(t.guildId) ? (0, r.jsx)(h, g({}, t)) : (0, r.jsx)(k, g({}, t))
 }

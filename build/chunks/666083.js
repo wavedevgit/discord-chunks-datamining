@@ -1,6 +1,6 @@
 /** Chunk was on 13965 **/
 n.d(t, {
-  default: () => j
+  default: () => O
 }), n(388685), n(953529);
 var r = n(255367),
   o = n(73800),
@@ -11,15 +11,15 @@ var r = n(255367),
   c = n(530618),
   u = n(372654),
   d = n(262212),
-  f = n(795338),
-  p = n(535396),
+  p = n(795338),
+  f = n(535396),
   b = n(93841),
   m = n(388032),
-  O = n(548197);
+  j = n(548197);
 
-function j(e) {
+function O(e) {
   var t, n, {
-      guildId: j,
+      guildId: O,
       powerup: g
     } = e,
     y = function(e, t) {
@@ -39,14 +39,14 @@ function j(e) {
     }(e, ["guildId", "powerup"]);
   let v = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
     x = o.useRef(null),
-    _ = o.useRef(new l.qA),
+    h = o.useRef(new l.qA),
     [C, w] = o.useState(null),
-    P = p.uc.has(g.skuId);
+    _ = f.uc.has(g.skuId);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.O_, {
       ref: w,
-      className: O.confettiCanvas,
-      environment: _.current
+      className: j.confettiCanvas,
+      environment: h.current
     }), (0, r.jsxs)(a.Y0X, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -65,46 +65,46 @@ function j(e) {
       }
       return e
     }({
-      className: O.modal,
+      className: j.modal,
       size: a.CgR.DYNAMIC
     }, y), n = n = {
       parentComponent: "GuildPowerupActivateModal",
       children: [(0, r.jsx)(a.hzk, {
-        className: O.modalContentContainer,
+        className: j.modalContentContainer,
         scrollbarType: "none",
         children: (0, r.jsxs)("div", {
-          className: O.container,
+          className: j.container,
           ref: x,
-          children: [(0, r.jsx)(f.m, {
-            className: O.image,
+          children: [(0, r.jsx)(p.m, {
+            className: j.image,
             powerup: g
           }), (0, r.jsxs)("div", {
-            className: O.contentContainer,
+            className: j.contentContainer,
             children: [(0, r.jsx)(a.X6q, {
               variant: "heading-xl/extrabold",
               children: m.intl.formatToPlainString(b.default.lFuOFB, {
                 perkName: g.title
               })
             }), (0, r.jsx)(a.Text, {
-              className: O.description,
+              className: j.description,
               variant: "text-sm/normal",
               children: m.intl.formatToPlainString(b.default.y3wHoq, {
                 perkName: g.title
               })
-            }), P ? (0, r.jsx)(d.ms, {
-              className: O.button,
-              guildId: j,
+            }), _ ? (0, r.jsx)(d.ms, {
+              className: j.button,
+              guildId: O,
               powerup: g,
               onClick: y.onClose
             }) : (0, r.jsx)(a.zxk, {
-              className: O.button,
+              className: j.button,
               onClick: y.onClose,
               children: m.intl.string(m.t.cpT0Cg)
             })]
           })]
         })
       }), (0, r.jsx)(a.olH, {
-        className: O.close,
+        className: j.close,
         onClick: y.onClose
       }), !v && (0, r.jsx)(c.Z, {
         confettiTarget: x.current,

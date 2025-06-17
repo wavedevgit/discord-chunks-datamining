@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => _
+  Z: () => x
 });
 var r = t(255367),
   i = t(73800),
@@ -14,18 +14,18 @@ var r = t(255367),
   p = t(388032),
   m = t(45355);
 
-function _(e) {
+function x(e) {
   let {
     guildId: n,
     powerups: t
-  } = e, _ = (0, a.e7)([u.Z], () => {
+  } = e, x = (0, a.e7)([u.Z], () => {
     var e, t;
     return null != (t = null == (e = u.Z.getStateForGuild(n)) ? void 0 : e.appliedBoosts) ? t : 0
-  }), x = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]), f = _ - i.useMemo(() => {
+  }), f = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]), _ = x - i.useMemo(() => {
     var e, n, t;
-    return null != (t = null == x || null == (n = x.filter) || null == (e = n.call(x, e => !e.ended && null == e.endsAt)) ? void 0 : e.length) ? t : 0
-  }, [x]);
-  return f <= 0 ? null : (0, r.jsxs)("div", {
+    return null != (t = null == f || null == (n = f.filter) || null == (e = n.call(f, e => !e.ended && null == e.endsAt)) ? void 0 : e.length) ? t : 0
+  }, [f]);
+  return _ <= 0 ? null : (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(o.P4T, {
       color: l.Z.colors.TEXT_WARNING,
@@ -37,7 +37,7 @@ function _(e) {
     }), (0, r.jsx)(s.xv, {
       variant: "text-sm/medium",
       children: p.intl.formatToPlainString(d.default.iAaAiI, {
-        boostCount: f,
+        boostCount: _,
         perksString: t.map(e => e.title).join(", ")
       })
     })]

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(539854), n(388685);
 var r = n(255367);
 n(73800);
-var i = n(120356),
-  s = n.n(i),
+var s = n(120356),
+  i = n.n(s),
   o = n(959078),
   a = n(442837),
   l = n(481060),
@@ -30,34 +30,34 @@ let C = e => 0 === e.length ? b.warning : b.danger,
     let {
       quest: t,
       location: n,
-      errors: i,
-      gameTitle: s,
+      errors: s,
+      gameTitle: i,
       consoleHelpArticle: a,
       expiredCredentialsInteractable: c,
       impressionId: x
     } = e;
-    if (0 === i.length) return (0, r.jsx)(l.Text, {
+    if (0 === s.length) return (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
       children: f.intl.format(f.t.GXqvCw, {
-        gameTitle: s
+        gameTitle: i
       })
     });
     let p = [];
     (0, g.Nj)({
       quest: t
     }) && p.push((0, d.isWeb)() ? f.intl.string(f.t["0UTkPz"]) : f.intl.string(f.t.XGRUho));
-    let h = [...p, ...i.map(e => {
+    let h = [...p, ...s.map(e => {
       if (e.type !== o.K.EXPIRED_CREDENTIAL || !c) return e.message;
       let r = u.Z.getAccount(e.connected_account_id, e.connected_account_type),
-        i = (0, g.C9)(e),
-        s = (0, g._j)(e);
-      return f.intl.format(i, {
+        s = (0, g.C9)(e),
+        i = (0, g._j)(e);
+      return f.intl.format(s, {
         account_name: null == r ? void 0 : r.name,
         onClick: () => {
           (0, g.fY)({
             quest: t,
-            platformType: s
+            platformType: i
           }, {
             content: n,
             ctaContent: m.jZ.DEFIBRILLATOR_RECONNECT_CONSOLE,
@@ -75,7 +75,7 @@ let C = e => 0 === e.length ? b.warning : b.danger,
   N = function(e) {
     let t = e.quest.config.messages.gameTitle,
       n = (0, a.e7)([c.Z], () => c.Z.useReducedMotion),
-      i = (0, j.k3)(e.quest.id, e.location),
+      s = (0, j.k3)(e.quest.id, e.location),
       o = (0, p.n)(),
       u = (0, m.O5)(),
       d = (0, x.aM)(),
@@ -99,7 +99,7 @@ let C = e => 0 === e.length ? b.warning : b.danger,
         afterRequest: g.stopAnimation
       });
     return (0, r.jsxs)("div", {
-      className: s()(b.container, {
+      className: i()(b.container, {
         [b.inFlight]: O
       }),
       children: [(0, r.jsxs)("div", {
@@ -107,7 +107,7 @@ let C = e => 0 === e.length ? b.warning : b.danger,
         children: [(0, r.jsxs)("div", {
           className: b.header,
           children: [(0, r.jsx)(l.P4T, {
-            className: s()(b.headerIcon, C(N)),
+            className: i()(b.headerIcon, C(N)),
             size: "custom",
             color: "currentColor",
             width: 16,
@@ -121,7 +121,7 @@ let C = e => 0 === e.length ? b.warning : b.danger,
           errors: N,
           gameTitle: t,
           location: e.location,
-          consoleHelpArticle: i,
+          consoleHelpArticle: s,
           expiredCredentialsInteractable: o,
           impressionId: d
         })]

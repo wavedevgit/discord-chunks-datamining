@@ -83,6 +83,25 @@ let {
         opacity: .12156862745098039
       }
     },
+    APP_MESSAGE_EMBED_SECONDARY_TEXT: {
+      category: "text",
+      [r.DARK]: {
+        raw: "WHITE",
+        opacity: .7
+      },
+      [r.LIGHT]: {
+        raw: "WHITE",
+        opacity: .7
+      },
+      [r.MIDNIGHT]: {
+        raw: "WHITE",
+        opacity: .7
+      },
+      [r.DARKER]: {
+        raw: "WHITE",
+        opacity: .7
+      }
+    },
     AUTOCOMPLETE_BG: {
       category: "background",
       [r.DARK]: {

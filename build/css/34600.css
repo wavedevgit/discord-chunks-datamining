@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: f7dbfa0084b9a1d2
+  Original File Name: a473ab89500c55d2
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3323,6 +3323,7 @@
     --android-ripple: hsla(0,0%,100%,.07);
     --app-background-frame: #262629;
     --app-border-frame: hsla(240,4%,61%,.12);
+    --app-message-embed-secondary-text: hsla(0,0%,100%,.7);
     --autocomplete-bg: #383b40;
     --background-accent: #40424a;
     --background-base-low: #36383d;
@@ -3893,6 +3894,7 @@
     --android-ripple: rgba(0,0,0,.12);
     --app-background-frame: #e8e8e8;
     --app-border-frame: hsla(240,4%,61%,.28);
+    --app-message-embed-secondary-text: hsla(0,0%,100%,.7);
     --autocomplete-bg: #fff;
     --background-accent: #6e7078;
     --background-base-low: #fafafa;
@@ -4463,6 +4465,7 @@
     --android-ripple: hsla(0,0%,100%,.07);
     --app-background-frame: #000;
     --app-border-frame: hsla(240,4%,61%,.24);
+    --app-message-embed-secondary-text: hsla(0,0%,100%,.7);
     --autocomplete-bg: #131416;
     --background-accent: #2b2e36;
     --background-base-low: #0c0c0e;
@@ -5033,6 +5036,7 @@
     --android-ripple: hsla(0,0%,100%,.07);
     --app-background-frame: #070709;
     --app-border-frame: hsla(240,4%,61%,.12);
+    --app-message-embed-secondary-text: hsla(0,0%,100%,.7);
     --autocomplete-bg: #242429;
     --background-accent: #383b42;
     --background-base-low: #212124;
@@ -5593,4 +5597,4 @@
     --white: #fff
 }
 
-/*# sourceMappingURL=f7dbfa0084b9a1d2.css.map*/
+/*# sourceMappingURL=a473ab89500c55d2.css.map*/

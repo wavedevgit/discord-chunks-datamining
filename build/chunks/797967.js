@@ -154,10 +154,10 @@ function m(e) {
   let D = o.useCallback(e => {
       null == i || i(e), w(null)
     }, [i, w]),
-    R = o.useCallback(e => {
+    N = o.useCallback(e => {
       null == i || i(e), w(e)
     }, [i, w]),
-    N = o.useCallback((e, t) => {
+    R = o.useCallback((e, t) => {
       S({
         start: e,
         end: t
@@ -201,7 +201,7 @@ function m(e) {
           position: m,
           onRequestClose: () => B("showStart", !1),
           onShowPopout: () => B("showStart", !0),
-          onColorChange: e => N(e, k.end),
+          onColorChange: e => R(e, k.end),
           disabled: d
         }), (0, n.jsx)(_, {
           isStart: !1,
@@ -213,16 +213,16 @@ function m(e) {
           onShowPopout: () => B("showEnd", !0),
           onColorChange: e => {
             var t;
-            return N(null != (t = k.start) ? t : c.p6O, e)
+            return R(null != (t = k.start) ? t : c.p6O, e)
           },
           disabled: d
         })]
       })
-    }, [m, d, k, I, N, B]),
+    }, [m, d, k, I, R, B]),
     Z = o.useCallback(() => (0, n.jsx)(s.Z$W, {
-      onChange: R,
+      onChange: N,
       value: P
-    }), [R, P]),
+    }), [N, P]),
     G = o.useCallback(e => {
       let t = (0, n.jsx)(s.jHW, b(f({}, e), {
         "aria-label": u.intl.string(u.t["FHBa//"])
@@ -243,7 +243,7 @@ function m(e) {
         })
       })
     }, [m, d, Z]),
-    A = o.useCallback(e => {
+    L = o.useCallback(e => {
       let t = (0, n.jsx)(s.AGO, f({}, e));
       return d ? t : (0, n.jsx)(s.ua7, {
         text: u.intl.string(u.t.bBvAEB),
@@ -254,11 +254,11 @@ function m(e) {
       })
     }, [d]);
   return (0, n.jsx)(s.zH8, b(f({}, e), {
-    renderDefaultButton: A,
+    renderDefaultButton: L,
     renderCustomButton: G,
     renderGradientCustomButton: T,
     isGradient: O,
     customColor: P,
-    onChange: O ? N : D
+    onChange: O ? R : D
   }))
 }
