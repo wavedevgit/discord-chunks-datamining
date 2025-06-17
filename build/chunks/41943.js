@@ -1,2 +1,2 @@
 /** Chunk was on 5525 **/
-p.exports = JSON.parse('{"M6cPwM":"Cầu Tuyết"}')
+n.exports = JSON.parse('{"+utqa2":["T\xf9y chọn ảnh nền Qu\xe0 tặng: ",[1,"giftStyle"]],"B9XqQk":"Hộp","AJ4iio":"B\xe1nh Ngọt","P5keo6":"Rương","w84vER":"C\xe0 Ph\xea","6dCq/v":"Cốc","+HMF8v":"Nitroween","vd1fu7":"Hộp Ng\xe0y Lễ","aubYGR":"B\xe1nh Ng\xe0y Lễ","vjxYqa":"Rương Ng\xe0y Lễ","bHuJLS":"C\xe0 Ph\xea Ng\xe0y Lễ","M6cPwM":"Cầu Tuyết","GzPel5":"Hộp"}')

@@ -1,2 +1,2 @@
 /** Chunk was on 3949 **/
-p.exports = JSON.parse('{"M6cPwM":"スノードーム"}')
+i.exports = JSON.parse('{"+utqa2":["ギフト背景オプション：",[1,"giftStyle"]],"B9XqQk":"ボックス","AJ4iio":"ケーキ","P5keo6":"宝箱","w84vER":"コーヒー","6dCq/v":"カップ","+HMF8v":"ニトロウィーン","vd1fu7":"ホリデーボックス","aubYGR":"ホリデーケーキ","vjxYqa":"ホリデー宝箱","bHuJLS":"ホリデーコーヒー","M6cPwM":"スノードーム","GzPel5":"ボックス"}')
