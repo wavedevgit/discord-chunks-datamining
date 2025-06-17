@@ -16,7 +16,7 @@ var r = n(255367),
   p = n(217702),
   f = n(400003);
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function O(e) {
   return e
 }
 
-function g(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,7 +47,7 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = Math.round((p.Jj - 4) / 2);
+let g = Math.round((p.Jj - 4) / 2);
 
 function I(e) {
   let {
@@ -156,7 +156,7 @@ function E(e) {
           children: (0, r.jsx)(P, {
             props: e,
             maxWidth: l,
-            maxHeight: y
+            maxHeight: g
           })
         }, e.item.uniqueId))
       })
@@ -174,7 +174,8 @@ function b(e) {
     children: t.map(e => (0, r.jsx)(P, {
       props: e,
       maxWidth: i,
-      maxHeight: y
+      maxHeight: g,
+      displayGridItem: !0
     }, e.item.uniqueId))
   })
 }
@@ -189,7 +190,8 @@ function w(e) {
     children: t.map(e => (0, r.jsx)(P, {
       props: e,
       maxWidth: i,
-      maxHeight: i
+      maxHeight: i,
+      displayGridItem: !0
     }, e.item.uniqueId))
   })
 }
@@ -209,8 +211,10 @@ function P(e) {
     maxHeight: i = p.Jj,
     useFullWidth: l = !0,
     isSingleItem: o = !1,
-    footer: a
-  } = e, s = t.item.type, u = g(O({}, t, "IMAGE" === s && C(t.className), "VIDEO" === s && v(t.className)), {
+    footer: a,
+    displayGridItem: s
+  } = e, u = t.item.type, c = O(y({}, t, "IMAGE" === u && C(t.className), "VIDEO" === u && v(t.className)), {
+    displayGridItem: s,
     mediaLayoutType: p.hV.MOSAIC,
     maxWidth: n,
     maxHeight: i,
@@ -219,7 +223,7 @@ function P(e) {
   });
   return (0, r.jsx)(d.h.Provider, {
     value: t.gifFavoriteButton,
-    children: (0, r.jsx)(h.ZP, g(O({}, u), {
+    children: (0, r.jsx)(h.ZP, O(y({}, c), {
       footer: a
     }))
   })

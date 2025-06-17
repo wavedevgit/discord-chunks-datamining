@@ -4,14 +4,14 @@ n.d(t, {
   b: () => V
 }), n(388685), n(314940);
 var r = n(255367),
-  o = n(73800),
-  s = n(512722),
-  a = n.n(s),
+  s = n(73800),
+  o = n(512722),
+  a = n.n(o),
   i = n(278074),
   l = n(754700),
   c = n(887003),
-  d = n(742635),
-  u = n(458708),
+  u = n(742635),
+  d = n(458708),
   p = n(481060),
   m = n(70956),
   f = n(497505),
@@ -21,10 +21,10 @@ var r = n(255367),
   b = n(415104),
   j = n(78826),
   v = n(37303),
-  y = n(134483),
-  _ = n(683650),
-  C = n(920916),
-  O = n(341907),
+  _ = n(134483),
+  y = n(683650),
+  O = n(920916),
+  C = n(341907),
   w = n(478977),
   S = n(456799),
   E = n(210851),
@@ -70,8 +70,8 @@ function I(e, t) {
   }), e
 }
 let D = ["png", "gif", "webp"],
-  M = [...D, "jpg", "jpeg"],
-  L = Array.from(new Set([...M, "gif", "mp4", "webm"]));
+  L = [...D, "jpg", "jpeg"],
+  M = Array.from(new Set([...L, "gif", "mp4", "webm"]));
 
 function V(e) {
   var t, n;
@@ -91,14 +91,14 @@ function W() {
       streamProgressSeconds: t = 0,
       completedAt: n = null,
       enrolledAt: r = null,
-      claimedAt: o = null
+      claimedAt: s = null
     } = e;
   return {
     userId: "123",
     questId: "1193992107035983872",
     enrolledAt: r,
     completedAt: n,
-    claimedAt: o,
+    claimedAt: s,
     claimedTier: null,
     lastStreamHeartbeatAt: null,
     streamProgressSeconds: t,
@@ -160,8 +160,8 @@ let Z = "1193992107035983872",
         logotype: "game_logotype.png"
       },
       taskConfig: {
-        type: d.L.FIRST_PARTY,
-        joinOperator: u.r.AND,
+        type: u.L.FIRST_PARTY,
+        joinOperator: d.r.AND,
         tasks: {
           [l.X.PLAY_ON_DESKTOP]: {
             eventName: l.X.PLAY_ON_DESKTOP,
@@ -171,7 +171,7 @@ let Z = "1193992107035983872",
         }
       },
       taskConfigV2: {
-        joinOperator: u.r.AND,
+        joinOperator: d.r.AND,
         tasks: {
           [l.X.PLAY_ON_DESKTOP]: {
             type: l.X.PLAY_ON_DESKTOP,
@@ -185,21 +185,21 @@ let Z = "1193992107035983872",
     targetedContent: []
   };
 
-function U() {
-  var e, t, s, d, u, B, V, Z, U, H, z, F, K, X;
-  let [Y, G] = o.useState(Q), J = o.useCallback(e => {
-    G(I(q({}, e), {
+function H() {
+  var e, t, o, u, d, B, V, Z;
+  let [H, U] = s.useState(Q), z = s.useCallback(e => {
+    U(I(q({}, e), {
       preview: !0
     }))
-  }, []), [$, ee] = o.useState(R.a.UNENROLLED), [et, en] = o.useState(!1), [er, eo] = o.useState(!1), [es, ea] = o.useState(null), ei = (X = Y.config, (0, i.EQ)(X).with({
+  }, []), [F, X] = s.useState(R.a.UNENROLLED), [K, Y] = s.useState(!1), [G, J] = s.useState(!1), [$, ee] = s.useState(null), et = (Z = H.config, (0, i.EQ)(Z).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
-  function el(e, t) {
+  function en(e, t) {
     if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
       var n, r;
-      J(I(q({}, Y), {
-        config: (n = Y.config, r = {
+      z(I(q({}, H), {
+        config: (n = H.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
           configVersion: 2
@@ -210,36 +210,36 @@ function U() {
     }
   }
 
-  function ec(e, t) {
-    let n = Y.config.taskConfigV2.tasks,
+  function er(e, t) {
+    let n = H.config.taskConfigV2.tasks,
       r = n[l.X.WATCH_VIDEO];
     if (null == r) return;
-    let o = q({}, r.assets);
+    let s = q({}, r.assets);
     switch (e) {
       case "videoPlayerVideo":
-        o.video = {
+        s.video = {
           url: t
         };
         break;
       case "videoPlayerVideoLowRes":
-        o.videoLowRes = {
+        s.videoLowRes = {
           url: t
         };
         break;
       case "videoPlayerThumbnail":
-        o.video = I(q({}, o.video), {
+        s.video = I(q({}, s.video), {
           thumbnail: t
         });
         break;
       default:
         return
     }
-    J(I(q({}, Y), {
-      config: I(q({}, Y.config), {
-        taskConfigV2: I(q({}, Y.config.taskConfigV2), {
+    z(I(q({}, H), {
+      config: I(q({}, H.config), {
+        taskConfigV2: I(q({}, H.config.taskConfigV2), {
           tasks: I(q({}, n), {
             [l.X.WATCH_VIDEO]: I(q({}, r), {
-              assets: o
+              assets: s
             })
           })
         })
@@ -247,13 +247,13 @@ function U() {
     }))
   }
 
-  function ed(e, t) {
-    var n, r, o;
-    J(I(q({}, Y), {
-      config: I(q({}, Y.config), {
-        videoMetadata: I(q({}, Y.config.videoMetadata), {
-          messages: null != (o = null == (n = Y.config.videoMetadata) ? void 0 : n.messages) ? o : {},
-          assets: I(q({}, null == (r = Y.config.videoMetadata) ? void 0 : r.assets), {
+  function es(e, t) {
+    var n, r, s;
+    z(I(q({}, H), {
+      config: I(q({}, H.config), {
+        videoMetadata: I(q({}, H.config.videoMetadata), {
+          messages: null != (s = null == (n = H.config.videoMetadata) ? void 0 : n.messages) ? s : {},
+          assets: I(q({}, null == (r = H.config.videoMetadata) ? void 0 : r.assets), {
             [e]: t
           })
         })
@@ -261,11 +261,11 @@ function U() {
     }))
   }
 
-  function eu(e, t) {
+  function eo(e, t) {
     if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
       var n, r;
-      J(I(q({}, Y), {
-        config: (n = Y.config, r = {
+      z(I(q({}, H), {
+        config: (n = H.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
           configVersion: 2
@@ -276,32 +276,38 @@ function U() {
     }
   }
 
-  function ep(e, t) {
-    var n, r, o;
-    J(I(q({}, Y), {
-      config: I(q({}, Y.config), {
-        videoMetadata: I(q({}, Y.config.videoMetadata), {
-          assets: null != (o = null == (n = Y.config.videoMetadata) ? void 0 : n.assets) ? o : {},
-          messages: I(q({}, null == (r = Y.config.videoMetadata) ? void 0 : r.messages), {
-            [e]: t
+  function ea(e, t) {
+    let n = H.config.taskConfigV2.tasks,
+      r = n[l.X.WATCH_VIDEO];
+    if (null == r) return;
+    let s = I(q({}, r.messages), {
+      [e]: t
+    });
+    z(I(q({}, H), {
+      config: I(q({}, H.config), {
+        taskConfigV2: I(q({}, H.config.taskConfigV2), {
+          tasks: I(q({}, n), {
+            [l.X.WATCH_VIDEO]: I(q({}, r), {
+              messages: s
+            })
           })
         })
       })
     }))
   }
 
-  function em(e, t, n) {
+  function ei(e, t, n) {
     if ("name" === e || "nameWithArticle" === e) {
-      var r, o;
-      J(I(q({}, Y), {
-        config: (r = Y.config, o = {
+      var r, s;
+      z(I(q({}, H), {
+        config: (r = H.config, s = {
           [e]: t
         }, (0, i.EQ)(r).with({
           configVersion: 2
         }, e => I(q({}, e), {
           rewardsConfig: I(q({}, e.rewardsConfig), {
             rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? I(q({}, e), {
-              messages: q({}, e.messages, o)
+              messages: q({}, e.messages, s)
             }) : e)
           })
         })).exhaustive())
@@ -309,31 +315,33 @@ function U() {
     }
   }
 
-  function ef(e, t) {
-    J(I(q({}, Y), {
-      config: I(q({}, Y.config), {
-        colors: I(q({}, Y.config.colors), {
+  function el(e, t) {
+    z(I(q({}, H), {
+      config: I(q({}, H.config), {
+        colors: I(q({}, H.config.colors), {
           [e]: t
         })
       })
     }))
   }
 
-  function eg() {
-    (0, g.Xv)(Y.config) ? (0, C.m)(Y, f.jn.GIFT_INVENTORY_FOR_YOU, !0) : (0, O.openQuestsRewardCodeModal)({
-      questId: Y.id,
+  function ec() {
+    (0, g.Xv)(H.config) ? (0, O.m)(H, f.jn.GIFT_INVENTORY_FOR_YOU, !0) : (0, C.openQuestsRewardCodeModal)({
+      questId: H.id,
       location: f.jn.GIFT_INVENTORY_FOR_YOU,
       preview: !0,
-      previewQuest: Y
+      previewQuest: H
     })
   }
-  let ex = o.useMemo(() => {
-      for (let [e, t] of Object.entries(Y.config.taskConfig.tasks))
+  let eu = s.useMemo(() => {
+      for (let [e, t] of Object.entries(H.config.taskConfigV2.tasks))
         if (null != t.target) return t.target;
       return 10 * m.Z.Seconds.MINUTE
-    }, [Y.config.taskConfig.tasks]),
-    eh = o.useMemo(() => l.X.WATCH_VIDEO in Y.config.taskConfig.tasks, [Y.config.taskConfig.tasks]);
-  return a()(!1 !== Y.preview && null != Y.preview, "Preview config must have property preview: true"), (0, r.jsxs)("div", {
+    }, [H.config.taskConfigV2.tasks]),
+    ed = s.useMemo(() => l.X.WATCH_VIDEO in H.config.taskConfigV2.tasks, [H.config.taskConfigV2.tasks]);
+  a()(!1 !== H.preview && null != H.preview, "Preview config must have property preview: true");
+  let ep = H.config.taskConfigV2.tasks[l.X.WATCH_VIDEO];
+  return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(p.X6q, {
       variant: "heading-lg/bold",
       className: k.heading,
@@ -342,7 +350,7 @@ function U() {
       className: k.fields,
       children: (0, r.jsx)(T.Z, {
         onSelect: function(e) {
-          ea(e), null != e && (ee(function(e) {
+          ee(e), null != e && (X(function(e) {
             if (null == e.userStatus) return R.a.UNENROLLED;
             if (null != e.userStatus.claimedAt) return R.a.CLAIMED;
             if (null != e.userStatus.completedAt) return R.a.COMPLETED_100;
@@ -350,9 +358,9 @@ function U() {
               n = t.progressSeconds,
               r = t.targetSeconds;
             return n / r >= 1 ? R.a.COMPLETED_100 : n / r >= .75 ? R.a.COMPLETED_75 : n / r >= .5 ? R.a.COMPLETED_50 : n / r >= .25 ? R.a.COMPLETED_25 : R.a.ENROLLED
-          }(e)), J(e))
+          }(e)), z(e))
         },
-        quest: es
+        quest: $
       })
     }), (0, r.jsx)(p.X6q, {
       variant: "heading-md/semibold",
@@ -361,12 +369,12 @@ function U() {
     }), (0, r.jsx)("div", {
       className: k.fields,
       children: (0, r.jsx)(N.Z, {
-        taskDuration: ex,
-        taskConfig: Y.config.taskConfig,
+        taskDuration: eu,
+        taskConfigV2: H.config.taskConfigV2,
         onSelect: function(e) {
-          J(I(q({}, Y), {
-            config: I(q({}, Y.config), {
-              taskConfig: e
+          z(I(q({}, H), {
+            config: I(q({}, H.config), {
+              taskConfigV2: e
             })
           }))
         }
@@ -380,34 +388,34 @@ function U() {
       children: [(0, r.jsx)(P.Z, {
         title: "Quest Name",
         assetKey: "questName",
-        onMessageChange: eu,
-        initialValue: Y.config.messages.questName
+        onMessageChange: eo,
+        initialValue: H.config.messages.questName
       }), (0, r.jsx)(P.Z, {
         title: "Game Title",
         assetKey: "gameTitle",
-        onMessageChange: eu,
-        initialValue: Y.config.messages.gameTitle
+        onMessageChange: eo,
+        initialValue: H.config.messages.gameTitle
       }), (0, r.jsx)(P.Z, {
         title: "Game Publisher",
         assetKey: "gamePublisher",
-        onMessageChange: eu,
-        initialValue: Y.config.messages.gamePublisher
-      }), eh && (0, r.jsxs)(r.Fragment, {
+        onMessageChange: eo,
+        initialValue: H.config.messages.gamePublisher
+      }), ed && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(P.Z, {
           title: "Video Title",
           assetKey: "videoTitle",
-          onMessageChange: ep,
-          initialValue: null == (e = Y.config.videoMetadata) ? void 0 : e.messages.videoTitle
+          onMessageChange: ea,
+          initialValue: null == ep ? void 0 : ep.messages.videoTitle
         }), (0, r.jsx)(P.Z, {
           title: "End CTA Title",
           assetKey: "videoEndCtaTitle",
-          onMessageChange: ep,
-          initialValue: null == (t = Y.config.videoMetadata) ? void 0 : t.messages.videoEndCtaTitle
+          onMessageChange: ea,
+          initialValue: null == ep ? void 0 : ep.messages.videoEndCtaTitle
         }), (0, r.jsx)(P.Z, {
           title: "End CTA Subtitle",
           assetKey: "videoEndCtaSubtitle",
-          onMessageChange: ep,
-          initialValue: null == (s = Y.config.videoMetadata) ? void 0 : s.messages.videoEndCtaSubtitle
+          onMessageChange: ea,
+          initialValue: null == ep ? void 0 : ep.messages.videoEndCtaSubtitle
         })]
       })]
     }), (0, r.jsx)(p.X6q, {
@@ -419,73 +427,73 @@ function U() {
       children: [(0, r.jsx)(E.Z, {
         title: "Hero",
         assetKey: "hero",
-        onFileChange: el,
-        filters: L,
-        initialValue: Y.config.assets.hero
+        onFileChange: en,
+        filters: M,
+        initialValue: H.config.assets.hero
       }), (0, r.jsx)(E.Z, {
         title: "Hero Video (optional)",
         assetKey: "heroVideo",
-        onFileChange: el,
-        filters: L,
-        initialValue: null != (F = Y.config.assets.heroVideo) ? F : void 0
+        onFileChange: en,
+        filters: M,
+        initialValue: null != (B = H.config.assets.heroVideo) ? B : void 0
       }), (0, r.jsx)(E.Z, {
         title: "Quest Bar Hero",
         assetKey: "questBarHero",
-        onFileChange: el,
-        filters: L,
-        initialValue: Y.config.assets.questBarHero
+        onFileChange: en,
+        filters: M,
+        initialValue: H.config.assets.questBarHero
       }), (0, r.jsx)(E.Z, {
         title: "Quest Bar Hero Video (optional)",
         assetKey: "questBarHeroVideo",
-        onFileChange: el,
-        filters: L,
-        initialValue: null != (K = Y.config.assets.questBarHeroVideo) ? K : void 0
+        onFileChange: en,
+        filters: M,
+        initialValue: null != (V = H.config.assets.questBarHeroVideo) ? V : void 0
       }), (0, r.jsx)(E.Z, {
         title: "Game Tile",
         assetKey: "gameTile",
-        onFileChange: el,
-        filters: [...M, "svg"],
-        initialValue: Y.config.assets.gameTile
+        onFileChange: en,
+        filters: [...L, "svg"],
+        initialValue: H.config.assets.gameTile
       }), (0, r.jsx)(E.Z, {
         title: "Logotype",
         assetKey: "logotype",
-        onFileChange: el,
+        onFileChange: en,
         filters: [...D, "svg"],
-        initialValue: Y.config.assets.logotype
-      }), eh && (0, r.jsxs)(r.Fragment, {
+        initialValue: H.config.assets.logotype
+      }), ed && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(E.Z, {
           title: "Quest Video",
           assetKey: "videoPlayerVideo",
-          onFileChange: ec,
-          filters: L,
-          initialValue: null == (d = Y.config.videoMetadata) ? void 0 : d.assets.videoPlayerVideo
+          onFileChange: er,
+          filters: M,
+          initialValue: null == ep ? void 0 : ep.assets.video.url
         }), (0, r.jsx)(E.Z, {
           title: "Quest Video (Low Resolution)",
           assetKey: "videoPlayerVideoLowRes",
-          onFileChange: ec,
-          filters: L,
-          initialValue: null == (u = Y.config.videoMetadata) ? void 0 : u.assets.videoPlayerVideoLowRes
+          onFileChange: er,
+          filters: M,
+          initialValue: null == ep || null == (e = ep.assets.videoLowRes) ? void 0 : e.url
         }), (0, r.jsx)(E.Z, {
           title: "Video Player Thumbnail (optional)",
           assetKey: "videoPlayerThumbnail",
-          onFileChange: ec,
-          filters: M,
-          initialValue: null == (V = Y.config.videoMetadata) || null == (B = V.assets) ? void 0 : B.videoPlayerThumbnail
+          onFileChange: er,
+          filters: L,
+          initialValue: null == ep ? void 0 : ep.assets.video.thumbnail
         }), (0, r.jsx)(E.Z, {
           title: "Quest Bar Preview Video (optional)",
           assetKey: "questBarPreviewVideo",
-          onFileChange: ed,
-          filters: L,
-          initialValue: null == (Z = Y.config.videoMetadata) ? void 0 : Z.assets.questBarPreviewVideo
+          onFileChange: es,
+          filters: M,
+          initialValue: null == (t = H.config.videoMetadata) ? void 0 : t.assets.questBarPreviewVideo
         }), (0, r.jsx)(E.Z, {
           title: "Quest Home Video (optional)",
           assetKey: "questHomeVideo",
-          onFileChange: ed,
-          filters: L,
-          initialValue: null == (U = Y.config.videoMetadata) ? void 0 : U.assets.questHomeVideo
+          onFileChange: es,
+          filters: M,
+          initialValue: null == (o = H.config.videoMetadata) ? void 0 : o.assets.questHomeVideo
         })]
       })]
-    }), ei.map((e, t) => (0, r.jsxs)("div", {
+    }), et.map((e, t) => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)(p.X6q, {
         variant: "heading-md/semibold",
         className: k.subheading,
@@ -495,12 +503,12 @@ function U() {
         children: [(0, r.jsx)(P.Z, {
           title: "Name",
           assetKey: "name",
-          onMessageChange: (e, n) => em(e, n, t),
+          onMessageChange: (e, n) => ei(e, n, t),
           initialValue: e.messages.name
         }), (0, r.jsx)(P.Z, {
           title: "Name With Article",
           assetKey: "nameWithArticle",
-          onMessageChange: (e, n) => em(e, n, t),
+          onMessageChange: (e, n) => ei(e, n, t),
           initialValue: e.messages.nameWithArticle
         }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(E.Z, {
           title: "Asset",
@@ -508,8 +516,8 @@ function U() {
           onFileChange: (e, n) => (function(e, t, n) {
             if ("asset" === e) {
               var r;
-              J(I(q({}, Y), {
-                config: (r = Y.config, (0, i.EQ)(r).with({
+              z(I(q({}, H), {
+                config: (r = H.config, (0, i.EQ)(r).with({
                   configVersion: 2
                 }, e => I(q({}, e), {
                   rewardsConfig: I(q({}, e.rewardsConfig), {
@@ -522,14 +530,14 @@ function U() {
               }))
             }
           })(e, n, t),
-          filters: L,
+          filters: M,
           initialValue: e.asset
         }), (0, r.jsxs)(p.xJW, {
           children: [(0, r.jsx)(p.vwX, {
             children: "Claim Modal"
           }), (0, r.jsx)(p.zxk, {
             color: p.Ttl.BRAND,
-            onClick: eg,
+            onClick: ec,
             children: "Open Reward Modal"
           })]
         })]
@@ -548,77 +556,77 @@ function U() {
         children: [(0, r.jsx)(w.Z, {
           title: "Primary",
           colorKey: "primary",
-          onChange: ef,
-          value: Y.config.colors.primary
+          onChange: el,
+          value: H.config.colors.primary
         }), (0, r.jsx)(w.Z, {
           title: "Secondary",
           colorKey: "secondary",
-          onChange: ef,
-          value: Y.config.colors.secondary
+          onChange: el,
+          value: H.config.colors.secondary
         })]
       }), (0, r.jsx)("div", {
         className: k.fields,
         children: (0, r.jsx)(A.Z, {})
       }), (0, r.jsx)(R.Z, {
         onChange: function(e) {
-          switch (ee(e), e) {
+          switch (X(e), e) {
             case R.a.UNENROLLED:
-              J(I(q({}, Y), {
+              z(I(q({}, H), {
                 userStatus: null
               }));
               break;
             case R.a.ENROLLED:
-              J(I(q({}, Y), {
+              z(I(q({}, H), {
                 userStatus: W({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
             case R.a.COMPLETED_25:
-              J(I(q({}, Y), {
+              z(I(q({}, H), {
                 userStatus: W({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .25 * ex
+                  streamProgressSeconds: .25 * eu
                 })
               }));
               break;
             case R.a.COMPLETED_50:
-              J(I(q({}, Y), {
+              z(I(q({}, H), {
                 userStatus: W({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .5 * ex
+                  streamProgressSeconds: .5 * eu
                 })
               }));
               break;
             case R.a.COMPLETED_75:
-              J(I(q({}, Y), {
+              z(I(q({}, H), {
                 userStatus: W({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .75 * ex
+                  streamProgressSeconds: .75 * eu
                 })
               }));
               break;
             case R.a.COMPLETED_100:
-              J(I(q({}, Y), {
+              z(I(q({}, H), {
                 userStatus: W({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: ex
+                  streamProgressSeconds: eu
                 })
               }));
               break;
             case R.a.CLAIMED:
-              J(I(q({}, Y), {
+              z(I(q({}, H), {
                 userStatus: W({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: ex
+                  streamProgressSeconds: eu
                 })
               }))
           }
         },
-        value: $
+        value: F
       })]
     }), (0, r.jsx)(p.X6q, {
       variant: "heading-lg/bold",
@@ -632,7 +640,7 @@ function U() {
           children: "Quest Bar"
         }), (0, r.jsxs)("div", {
           className: k.questBarPreviewWrapper,
-          children: [(null == (H = Y.userStatus) ? void 0 : H.claimedAt) != null && (0, r.jsx)(p.Text, {
+          children: [(null == (u = H.userStatus) ? void 0 : u.claimedAt) != null && (0, r.jsx)(p.Text, {
             color: "text-secondary",
             variant: "text-sm/normal",
             children: "The Quest Bar is hidden when the user has claimed the reward."
@@ -644,7 +652,7 @@ function U() {
               questId: "0",
               children: (0, r.jsx)(h.Z, {
                 children: (0, r.jsx)(x.P, {
-                  quest: Y
+                  quest: H
                 })
               })
             })
@@ -659,7 +667,7 @@ function U() {
           source: "preview",
           questId: "0",
           children: (0, r.jsx)(b.Z, {
-            quest: Y,
+            quest: H,
             className: k.questTile,
             questContent: f.jn.QUEST_HOME_DESKTOP,
             contentPosition: 0,
@@ -670,7 +678,7 @@ function U() {
         withBorder: !0,
         children: [(0, r.jsx)(p.vwX, {
           children: "Channel Call Header"
-        }), (null == (z = Y.userStatus) ? void 0 : z.claimedAt) != null && (0, r.jsx)(p.Text, {
+        }), (null == (d = H.userStatus) ? void 0 : d.claimedAt) != null && (0, r.jsx)(p.Text, {
           color: "text-secondary",
           variant: "text-sm/normal",
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
@@ -682,10 +690,10 @@ function U() {
             questId: "0",
             children: (0, r.jsx)("div", {
               className: k.questChannelCallHeaderPreview,
-              children: (0, r.jsx)(y.Z, {
+              children: (0, r.jsx)(_.Z, {
                 channelId: "123",
-                previewQuest: Y,
-                isParticipatingOverride: et
+                previewQuest: H,
+                isParticipatingOverride: K
               })
             })
           })
@@ -694,9 +702,9 @@ function U() {
         className: k.toggleSwitch,
         children: (0, r.jsx)(p.xJW, {
           children: (0, r.jsx)(p.j7V, {
-            value: et,
+            value: K,
             onChange: function(e) {
-              en(e)
+              Y(e)
             },
             hideBorder: !0,
             children: "Is Participating:"
@@ -706,23 +714,23 @@ function U() {
         withBorder: !0,
         children: [(0, r.jsx)(p.vwX, {
           children: "Quest Card Embed"
-        }), er ? (0, r.jsx)(_.o, {
-          questId: Y.id
+        }), G ? (0, r.jsx)(y.o, {
+          questId: H.id
         }) : (0, r.jsx)(v.Z, {
-          quest: Y,
+          quest: H,
           location: f.jn.QUESTS_EMBED
-        }, Y.id)]
+        }, H.id)]
       }), (0, r.jsx)("div", {
         className: k.toggleSwitch,
         children: (0, r.jsx)(p.xJW, {
           children: (0, r.jsx)(p.j7V, {
-            value: er,
-            onChange: eo,
+            value: G,
+            onChange: J,
             hideBorder: !0,
             children: "Invalid Quests Embed:"
           })
         })
-      }), eh && (0, r.jsxs)(S.Z, {
+      }), ed && (0, r.jsxs)(S.Z, {
         withBorder: !0,
         allowClicks: !0,
         children: [(0, r.jsx)(p.vwX, {
@@ -738,8 +746,8 @@ function U() {
                 return (0, r.jsx)(e, I(q({}, t), {
                   openStartClockTime: performance.now(),
                   videoSessionId: "fake-quest-session-id",
-                  questId: null != (n = Y.id) ? n : "fake-quest-id",
-                  overrideQuest: Y,
+                  questId: null != (n = H.id) ? n : "fake-quest-id",
+                  overrideQuest: H,
                   autoplay: !0
                 }))
               }
@@ -751,7 +759,7 @@ function U() {
     })]
   })
 }
-class H extends o.Component {
+class U extends s.Component {
   componentDidCatch(e) {
     this.setState({
       error: e
@@ -780,7 +788,7 @@ class H extends o.Component {
           children: e.message
         })
       })]
-    }) : (0, r.jsx)(U, {}, t)
+    }) : (0, r.jsx)(H, {}, t)
   }
   constructor(...e) {
     super(...e), B(this, "state", {
@@ -794,4 +802,4 @@ class H extends o.Component {
     })
   }
 }
-let z = H
+let z = U

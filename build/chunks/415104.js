@@ -3,14 +3,14 @@ n.d(t, {
   Z: () => v
 }), n(388685);
 var r = n(255367),
-  o = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  s = n(73800),
+  o = n(120356),
+  a = n.n(o),
   i = n(617136),
   l = n(113434),
   c = n(497505),
-  d = n(918701),
-  u = n(602667),
+  u = n(918701),
+  d = n(602667),
   p = n(341907),
   m = n(672188),
   f = n(466962),
@@ -22,29 +22,29 @@ var r = n(255367),
 function j(e) {
   var t, n;
   let {
-    quest: s,
+    quest: o,
     className: c,
-    questContent: u,
+    questContent: d,
     contentPosition: j,
     rowIndex: v,
-    impressionRef: y
-  } = e, [_, C] = o.useState(!1), [O, w] = o.useState([]), S = (0, l.qb)(s), E = o.useMemo(() => (0, d.q8)(s), [s]), P = (0, i._F)(), T = o.useCallback(() => {
-    C(!0), P({
-      questId: s.id,
+    impressionRef: _
+  } = e, [y, O] = s.useState(!1), [C, w] = s.useState([]), S = (0, l.qb)(o), E = s.useMemo(() => (0, u.q8)(o), [o]), P = (0, i._F)(), T = s.useCallback(() => {
+    O(!0), P({
+      questId: o.id,
       event: h.rMx.QUEST_HOVER,
-      properties: (0, i.mH)(u)
+      properties: (0, i.mH)(d)
     }), E && (0, p.loadVideoQuestModal)()
-  }, [P, s.id, u, E]), N = o.useCallback(() => {
-    C(!1), P({
-      questId: s.id,
+  }, [P, o.id, d, E]), N = s.useCallback(() => {
+    O(!1), P({
+      questId: o.id,
       event: h.rMx.QUEST_HOVER_OFF,
-      properties: (0, i.mH)(u)
+      properties: (0, i.mH)(d)
     })
-  }, [P, s.id, u]), A = o.useContext(f.t), {
+  }, [P, o.id, d]), A = s.useContext(f.t), {
     visibilityElementRef: R,
     almostVisibleInViewport: k
   } = function(e) {
-    let [t, n] = o.useState(!1), r = o.useCallback(e => {
+    let [t, n] = s.useState(!1), r = s.useCallback(e => {
       e.isIntersecting && n(!0)
     }, []);
     return {
@@ -57,9 +57,9 @@ function j(e) {
     }
   }(null != (n = null == A || null == (t = A.current) ? void 0 : t.getScrollerNode()) ? n : null);
   return (0, r.jsxs)("div", {
-    id: "quest-tile-".concat(s.id),
+    id: "quest-tile-".concat(o.id),
     ref: e => {
-      y.current = e, R.current = e
+      _.current = e, R.current = e
     },
     className: a()(b.container, c),
     onMouseEnter: T,
@@ -67,15 +67,15 @@ function j(e) {
     onFocus: T,
     onBlur: N,
     children: [(0, r.jsx)(g.Z, {
-      quest: s,
-      isHovering: _,
-      errorHints: O,
+      quest: o,
+      isHovering: y,
+      errorHints: C,
       warningHints: S,
       isVisibleInViewport: k
     }), (0, r.jsx)(x.Z, {
-      quest: s,
-      questContent: u,
-      isHovering: _,
+      quest: o,
+      questContent: d,
+      isHovering: y,
       contentPosition: j,
       rowIndex: v,
       onReceiveErrorHints: w,
@@ -85,14 +85,14 @@ function j(e) {
 }
 
 function v(e) {
-  return (0, r.jsx)(u.A, {
+  return (0, r.jsx)(d.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,
     questContentPosition: e.contentPosition,
     questContentRowIndex: e.rowIndex,
     trackGuildAndChannelMetadata: e.questContent === c.jn.QUESTS_EMBED,
     children: t => {
-      var n, o;
+      var n, s;
       return (0, r.jsx)(j, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -110,17 +110,17 @@ function v(e) {
           })
         }
         return e
-      }({}, e), o = o = {
+      }({}, e), s = s = {
         impressionRef: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
+      })(Object(s)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(s, e))
       }), n))
     }
   })

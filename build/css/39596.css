@@ -1,6 +1,6 @@
 /**
   Module ID: 39596
-  Original File Name: 67c03bd35836aba3
+  Original File Name: 9ed757857d7460ce
 **/
 .container__4216d {
     align-items: center;
@@ -954,7 +954,7 @@
 .threeByThreeGrid_f4758a {
     display: grid;
     flex-direction: row;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,minmax(0,1fr));
     grid-gap: 4px
 }
 
@@ -965,8 +965,8 @@
 .twoByTwoGrid_f4758a {
     display: grid;
     flex-direction: row;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-rows: repeat(2,minmax(0,1fr));
     grid-gap: 4px;
     max-height: 350px
 }
@@ -1267,4 +1267,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=67c03bd35836aba3.css.map*/
+/*# sourceMappingURL=9ed757857d7460ce.css.map*/

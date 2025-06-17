@@ -1,6 +1,6 @@
 /**
   Module ID: 59458
-  Original File Name: 15c1f4a3be25072d
+  Original File Name: ba70390d87ff7769
 **/
 @use postcss-pxtorem;
 
@@ -1239,7 +1239,7 @@
 .threeByThreeGrid_f4758a {
     display: grid;
     flex-direction: row;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,minmax(0,1fr));
     grid-gap: 4px
 }
 
@@ -1250,8 +1250,8 @@
 .twoByTwoGrid_f4758a {
     display: grid;
     flex-direction: row;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-rows: repeat(2,minmax(0,1fr));
     grid-gap: 4px;
     max-height: 350px
 }
@@ -1906,4 +1906,4 @@ html:not(.visual-refresh) .classificationContainer_a48d6b {
     margin: 0 var(--spacing-40)
 }
 
-/*# sourceMappingURL=15c1f4a3be25072d.css.map*/
+/*# sourceMappingURL=ba70390d87ff7769.css.map*/

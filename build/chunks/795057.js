@@ -5,27 +5,27 @@ n.d(t, {
   y3: () => f
 });
 var r = n(255367),
-  o = n(73800),
-  s = n(120356),
-  a = n.n(s),
+  s = n(73800),
+  o = n(120356),
+  a = n.n(o),
   i = n(481060),
   l = n(918701),
   c = n(373370),
-  d = n(566078),
-  u = n(388032),
+  u = n(566078),
+  d = n(388032),
   p = n(141572);
 
 function m(e) {
   let {
     children: t,
     isComplete: n,
-    hasNextStep: o
+    hasNextStep: s
   } = e;
   return (0, r.jsxs)("li", {
     className: a()(p.stepWrapper, {
       [p.stepWrapperComplete]: n
     }, {
-      [p.stepWrapperWithNextStep]: o
+      [p.stepWrapperWithNextStep]: s
     }),
     children: [(0, r.jsxs)("div", {
       className: p.stepIndicator,
@@ -35,7 +35,7 @@ function m(e) {
           className: p.stepIcon,
           color: i.TVs.colors.WHITE
         })
-      }), o && (0, r.jsx)("div", {
+      }), s && (0, r.jsx)("div", {
         className: p.stepConnector
       })]
     }), (0, r.jsx)("div", {
@@ -61,9 +61,9 @@ function g(e) {
     quest: t
   } = e, {
     rewardName: n,
-    rewardDuration: s
-  } = o.useMemo(() => ({
-    rewardName: d.r.build(t.config).defaultRewardName,
+    rewardDuration: o
+  } = s.useMemo(() => ({
+    rewardName: u.r.build(t.config).defaultRewardName,
     rewardDuration: (0, l.Kr)(t.config)
   }), [t.config]), a = (0, c.mK)(t.config);
   return (0, r.jsxs)("div", {
@@ -71,8 +71,8 @@ function g(e) {
     children: [(0, r.jsx)(i.X6q, {
       color: "header-primary",
       variant: "text-xs/semibold",
-      children: null == s ? u.intl.string(u.t["7Rdjmp"]) : u.intl.formatToPlainString(u.t.coKAb2, {
-        rewardsDuration: s
+      children: null == o ? d.intl.string(d.t["7Rdjmp"]) : d.intl.formatToPlainString(d.t.coKAb2, {
+        rewardsDuration: o
       })
     }), (0, r.jsx)("ul", {
       className: p.rewardsListBody,
@@ -93,7 +93,7 @@ let x = function(e) {
   let {
     children: t,
     heading: n,
-    steps: o
+    steps: s
   } = e;
   return (0, r.jsxs)("div", {
     className: p.wrapper,
@@ -108,9 +108,9 @@ let x = function(e) {
     }), (0, r.jsx)("div", {
       className: p.stepsWrapper,
       children: (0, r.jsx)("ul", {
-        children: o.map((e, t) => (0, r.jsx)(m, {
+        children: s.map((e, t) => (0, r.jsx)(m, {
           isComplete: e.isComplete,
-          hasNextStep: t < o.length - 1,
+          hasNextStep: t < s.length - 1,
           children: e.renderContent()
         }, t))
       })

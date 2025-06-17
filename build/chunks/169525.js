@@ -1,11 +1,11 @@
 /** Chunk was on 85372 **/
 n.d(t, {
-  As: () => y,
-  BP: () => O,
+  As: () => g,
+  BP: () => y,
   MC: () => x,
   dn: () => f,
   hL: () => I,
-  lK: () => g
+  lK: () => O
 }), n(997841);
 var r = n(399606),
   i = n(991621),
@@ -32,7 +32,7 @@ let f = (e, t) => {
     }, t);
     return a.length > 0 ? a[0] : s ? l.wk.POTENTIAL_EXPLICIT_CONTENT : n || (0, d.yE)(r, h.J0y.IS_SPOILER) ? l.wk.SPOILER : null
   },
-  O = (e, t, n, r, a) => {
+  y = (e, t, n, r, a) => {
     let s = u.Z.getMessage(t, n);
     if (null == s) return null;
     let c = (0, o.LD)({
@@ -45,7 +45,7 @@ let f = (e, t) => {
       }, a);
     return c.length > 0 ? c[0] : d ? l.wk.POTENTIAL_EXPLICIT_CONTENT : r ? l.wk.SPOILER : null
   },
-  g = function(e, t) {
+  O = function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
       r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
       a = (0, o.LD)({
@@ -59,7 +59,7 @@ let f = (e, t) => {
     return a.includes(l.wk.EXPLICIT_CONTENT) ? l.wk.EXPLICIT_CONTENT : a.includes(l.wk.GORE_CONTENT) ? l.wk.GORE_CONTENT : s ? l.wk.POTENTIAL_EXPLICIT_CONTENT : n ? l.wk.SPOILER : null
   };
 
-function y(e, t, n) {
+function g(e, t, n) {
   if (null == e) return [!1, void 0];
   let r = function(e) {
     switch (e.type) {
@@ -90,7 +90,7 @@ function I(e) {
     channel: t,
     media: n
   } = e, l = (0, r.e7)([c.Z], () => null != t && c.Z.can(h.Plq.MANAGE_MESSAGES, t)), a = s.cC.useSetting(), u = (0, o.kh)(i.n.GUILD);
-  return y(n, !(0, m.Z)(a, l), u)
+  return g(n, !(0, m.Z)(a, l), u)
 }
 let x = e => {
   switch (e) {
