@@ -1,13 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  i: () => u
+  i: () => f
 });
 var r = n(255367),
   i = n(481060),
-  a = n(598117);
+  a = n(626135),
+  o = n(598117),
+  s = n(981631);
 
-function o(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,20 +18,20 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      l(e, t, n[t])
     })
   }
   return e
 }
 
-function l(e, t) {
+function u(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -40,25 +42,29 @@ function l(e, t) {
   return n
 }
 
-function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = async function() {
+let f = async function() {
   let {
     userImage: e = null,
-    guildId: t = null
+    guildId: t = null,
+    analyticsLocation: l = null
   } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-  await (0, i.ZDy)(async () => {
+  a.default.track(s.rMx.OPEN_MODAL, {
+    type: "Emoji Studio",
+    source: l
+  }), await (0, i.ZDy)(async () => {
     let {
       EmojiStudioModal: i
     } = await Promise.all([n.e("20087"), n.e("56535")]).then(n.bind(n, 546200));
-    return n => (0, r.jsx)(i, c(s({}, n), {
+    return n => (0, r.jsx)(i, d(c({}, n), {
       userImage: e,
       guildId: t
     }))
   }, {
-    modalKey: a.Hj
+    modalKey: o.Hj
   })
 }
