@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(481060),
   d = n(607070),
   p = n(70097),
-  b = n(688465),
-  f = n(341907),
+  f = n(688465),
+  b = n(341907),
   g = n(507808),
   h = n(594174),
   m = n(451478),
@@ -159,7 +159,7 @@ let N = {
                 variant: "heading-xxl/bold",
                 className: w.title,
                 color: "header-primary",
-                children: [U.title, F === I.AW.ORBS && (0, r.jsx)(b.Z, {})]
+                children: [U.title, F === I.AW.ORBS && (0, r.jsx)(f.Z, {})]
               }), (0, r.jsx)(u.Text, {
                 variant: F === I.AW.ORBS ? "text-lg/medium" : "text-md/normal",
                 className: F === I.AW.ORBS ? w.orbsSubHeaderText : (null == z ? void 0 : z.showDarkBannerText) ? w.subHeaderTextDark : w.subHeaderText,
@@ -179,7 +179,7 @@ let N = {
                   pageType: L.ZY5.SHOP_ORBS_TAB,
                   sectionType: L.jXE.ORBS_SHOP_HERO_BLOCK,
                   ctaObject: L.qAy.CTA_TO_QUEST_HOME
-                }), (0, f.navigateToQuestHome)({
+                }), (0, b.navigateToQuestHome)({
                   fromContent: o.j.ORBS_SHOP_HERO_CTA
                 })) : (O("shop latest category hero", U.categorySkuId), _.default.track(L.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == V ? void 0 : V.sessionId,

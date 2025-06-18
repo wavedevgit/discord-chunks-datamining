@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(952265),
   d = n(4738),
   p = n(481060),
-  b = n(150063),
-  f = n(211266),
+  f = n(150063),
+  b = n(211266),
   g = n(906732),
   h = n(702486),
   m = n(977395),
@@ -76,7 +76,7 @@ let K = e => {
       tab: a = U.AW.HOME
     } = e;
     (0, _.z)(m.f);
-    let u = (0, f.Z)((0, o.Z)()),
+    let u = (0, b.Z)((0, o.Z)()),
       z = (0, c.e7)([x.default], () => x.default.getCurrentUser()),
       $ = (0, k.R)("CollectiblesShop"),
       X = l.useRef(null),
@@ -109,8 +109,8 @@ let K = e => {
         onClose: ep
       } = (0, Z.Db)(),
       {
-        categories: eb,
-        isFetchingCategories: ef,
+        categories: ef,
+        isFetchingCategories: eb,
         fetchCategoriesError: eg,
         fetchPurchasesError: eh,
         claimError: em,
@@ -125,15 +125,15 @@ let K = e => {
       }),
       eC = null != (t = null != eg ? eg : eh) ? t : em;
     (0, C.P)();
-    let ev = (0, L.O)(eb),
+    let ev = (0, L.O)(ef),
       eO = l.useRef(null),
       [ex, eS] = l.useState(!1);
     (0, N.Kp)({
-      isFetchingCategories: ef,
+      isFetchingCategories: eb,
       isLayer: ed,
       initialItemCardRef: eO
     }), (0, T.q3)(u, J, el, Q, ei), (0, T.EB)(J, z), (0, D.Z)(), l.useEffect(() => {
-      n || (0, b.Y)(G.Z5c.COLLECTIBLES_SHOP)
+      n || (0, f.Y)(G.Z5c.COLLECTIBLES_SHOP)
     }, [n]);
     let eE = l.useCallback(() => {
         e_()
@@ -235,7 +235,7 @@ let K = e => {
                         handleTransition: ew,
                         numVisibleItems: en,
                         tab: e,
-                        isFetchingCategories: ef
+                        isFetchingCategories: eb
                       });
                     case U.AW.AVATAR_DECORATIONS:
                     case U.AW.PROFILE_EFFECTS:
@@ -248,7 +248,7 @@ let K = e => {
                             [q.pageFullscreen]: n
                           }),
                           children: (0, r.jsx)(W.Z, {
-                            isFetchingCategories: ef,
+                            isFetchingCategories: eb,
                             isFullScreen: n,
                             scrollerRef: X,
                             tab: e
@@ -263,7 +263,7 @@ let K = e => {
                             [q.pageFullscreen]: n
                           }),
                           children: [(0, r.jsx)(w.Z, {
-                            isFetchingCategories: ef,
+                            isFetchingCategories: eb,
                             sortedCategories: eA,
                             setCategoryRef: ey,
                             isPremiumUser: S.ZP.canUseCollectibles(z),

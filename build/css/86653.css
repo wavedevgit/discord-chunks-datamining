@@ -1,10 +1,10 @@
 /**
   Module ID: 86653
-  Original File Name: 1c289746646d33cc
+  Original File Name: c8d95ecdd1153d0f
 **/
 .root__2a5c7 {
     background: var(--black);
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     height: 660px;
     overflow: hidden;
     position: relative;
@@ -187,4 +187,4 @@
     color: var(--black-500)
 }
 
-/*# sourceMappingURL=1c289746646d33cc.css.map*/
+/*# sourceMappingURL=c8d95ecdd1153d0f.css.map*/

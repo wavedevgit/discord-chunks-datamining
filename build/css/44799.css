@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 5863e58ecb612da2
+  Original File Name: fdd9e1b8d3d84c02
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -389,8 +389,75 @@
     margin-right: 2px
 }
 
-.container__6c253 {
+.container__11014 {
+    background-color: var(--background-tertiary);
+    border-radius: var(--radius-xs);
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-12);
+    row-gap: var(--spacing-12);
+    width: 288px
+}
+
+.unfocusedMessage__11014 {
+    opacity: .2
+}
+
+.badgeContainer__11014 {
+    height: 100%
+}
+
+.badgeContainer__11014,.tagText__11014 {
     align-items: center;
+    display: flex
+}
+
+.tagText__11014 {
+    flex-direction: row;
+    gap: 2px
+}
+
+.badgePreview__11014 {
+    margin-right: 2px
+}
+
+.messageContainer__11014 {
+    display: flex;
+    flex-direction: row
+}
+
+.avatarContainer__11014 {
+    background-color: var(--bg-brand);
+    height: 40px;
+    margin-right: var(--spacing-12);
+    width: 40px
+}
+
+.avatar__11014,.avatarContainer__11014 {
+    border-radius: var(--radius-round)
+}
+
+.avatar__11014 {
+    overflow: hidden
+}
+
+.contentContainer__11014 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.decorationsContainer__11014,.usernameContainer__11014 {
+    display: flex;
+    flex-direction: row
+}
+
+.decorationsContainer__11014 {
+    align-items: center;
+    margin-left: var(--spacing-4)
+}
+
+.container__6c253 {
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-low);
@@ -415,6 +482,7 @@
 }
 
 .image__6c253 {
+    align-self: center;
     box-sizing: border-box;
     height: 60px;
     object-fit: contain;
@@ -422,14 +490,24 @@
     width: 110px
 }
 
+.boostIcon__6c253 {
+    color: var(--guild-boosting-pink);
+    height: 14px;
+    width: 14px
+}
+
+.exampleMessage__6c253 {
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    display: flex;
+    padding: var(--spacing-12)
+}
+
 .textContainer__6c253 {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-4);
     text-align: center
-}
-
-.button__6c253,.textContainer__6c253 {
 }
 
 .row_df65b5 {
@@ -485,6 +563,7 @@
 
 .container__2281b {
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: var(--spacing-8);
     overflow-y: auto;
@@ -583,4 +662,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=5863e58ecb612da2.css.map*/
+/*# sourceMappingURL=fdd9e1b8d3d84c02.css.map*/

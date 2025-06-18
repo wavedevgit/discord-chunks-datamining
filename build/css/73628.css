@@ -1,6 +1,6 @@
 /**
   Module ID: 73628
-  Original File Name: d5abfaeacd018c95
+  Original File Name: ace38d12fff410d7
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -47,8 +47,9 @@
 }
 
 .container_fcf29c {
-    background-color: var(--background-surface-high);
-    border-radius: 5px;
+    background-color: var(--background-surface-highest);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
     box-shadow: var(--legacy-elevation-high);
     overflow: hidden;
     padding: 10px 10px 10px 16px;
@@ -58,8 +59,9 @@
 }
 
 .container_fcf29c[data-emphasized=true] {
-    background-color: var(--status-danger);
-    color: var(--white-500)
+    background-color: var(--background-feedback-critical);
+    border-color: var(--border-feedback-critical);
+    color: var(--text-feedback-critical)
 }
 
 .flexContainer_fcf29c {
@@ -105,18 +107,6 @@
 
 .theme-dark .message_fcf29c {
     color: var(--white-500)
-}
-
-.visual-refresh .container_fcf29c {
-    background-color: var(--background-surface-highest);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm)
-}
-
-.visual-refresh .container_fcf29c[data-emphasized=true] {
-    background-color: var(--background-feedback-critical);
-    border-color: var(--border-feedback-critical);
-    color: var(--text-feedback-critical)
 }
 
 .enable-forced-colors .container_fcf29c {
@@ -921,4 +911,4 @@
     gap: 16px
 }
 
-/*# sourceMappingURL=d5abfaeacd018c95.css.map*/
+/*# sourceMappingURL=ace38d12fff410d7.css.map*/

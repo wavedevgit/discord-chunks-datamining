@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 09f4ff93d5bee226
+  Original File Name: 7f33e59b5f29abec
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -938,7 +938,9 @@
     background-color: var(--bg-base-secondary);
     border-bottom: 1px solid var(--border-subtle);
     height: 48px;
-    padding: 0 12px;
+    padding-bottom: 0;
+    padding-right: var(--space-12);
+    padding-top: 0;
     position: -webkit-sticky;
     position: sticky;
     top: 0
@@ -960,7 +962,7 @@
     height: 80px;
     justify-content: center;
     margin: 0 auto;
-    padding: 0 72px
+    padding-right: 72px
 }
 
 .visual-refresh .fullscreenHeaderBar__80679 {
@@ -1803,4 +1805,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=09f4ff93d5bee226.css.map*/
+/*# sourceMappingURL=7f33e59b5f29abec.css.map*/

@@ -30,7 +30,7 @@ let c = (e, t, n, r) => {
   u = (e, t, n, i) => {
     let {
       analyticsSource: u
-    } = (0, a.MV)(n), [d, p] = r.useState(s.IV), [b, f] = r.useState(!1), g = (0, l.h)(c, 5e3, [], {
+    } = (0, a.MV)(n), [d, p] = r.useState(s.IV), [f, b] = r.useState(!1), g = (0, l.h)(c, 5e3, [], {
       trailing: !0
     });
     return {
@@ -44,10 +44,10 @@ let c = (e, t, n, r) => {
             scrollWidth: n.scrollWidth
           });
           let r = e.current.getDistanceFromBottom();
-          d >= i ? f(r < 20) : r <= 200 && p(e => e + s.IV)
+          d >= i ? b(r < 20) : r <= 200 && p(e => e + s.IV)
         }
       }, [g, u, t, d, i]),
       numVisibleItems: d,
-      scrollerAtBottom: b
+      scrollerAtBottom: f
     }
   }

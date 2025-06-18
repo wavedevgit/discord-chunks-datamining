@@ -1,6 +1,6 @@
 /**
   Module ID: 66868
-  Original File Name: 868919f3d3f53a5a
+  Original File Name: 9f576f958a3ddc63
 **/
 .container__11014 {
     background-color: var(--background-tertiary);
@@ -60,12 +60,13 @@
     justify-content: space-between
 }
 
-.usernameContainer__11014 {
+.decorationsContainer__11014,.usernameContainer__11014 {
     display: flex;
     flex-direction: row
 }
 
 .decorationsContainer__11014 {
+    align-items: center;
     margin-left: var(--spacing-4)
 }
 
@@ -130,4 +131,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=868919f3d3f53a5a.css.map*/
+/*# sourceMappingURL=9f576f958a3ddc63.css.map*/

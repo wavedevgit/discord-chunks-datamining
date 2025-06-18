@@ -1,6 +1,6 @@
 /**
   Module ID: 92754
-  Original File Name: 0ea09aad8c8864c3
+  Original File Name: ad6a80eb2baff2fe
 **/
 .editCard_a25a68 {
     background-color: var(--background-secondary);
@@ -11661,7 +11661,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .inputWrapper_a97616:focus-within {
-    border-color: var(--brand-500)
+    border-color: var(--text-link)
 }
 
 .inputOuter_a97616 {
@@ -11676,15 +11676,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     padding: 4px
 }
 
-:where(.visual-refresh) .inputWrapper_a97616:focus-within {
-    border-color: var(--text-link)
-}
-
-:where(.visual-refresh) .inputInner_a97616 {
-    border: none
-}
-
-:where(.visual-refresh) .inputInner_a97616:hover {
+.inputInner_a97616:hover {
     border: none
 }
 
@@ -12816,12 +12808,13 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     justify-content: space-between
 }
 
-.usernameContainer__11014 {
+.decorationsContainer__11014,.usernameContainer__11014 {
     display: flex;
     flex-direction: row
 }
 
 .decorationsContainer__11014 {
+    align-items: center;
     margin-left: var(--spacing-4)
 }
 
@@ -12879,4 +12872,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=0ea09aad8c8864c3.css.map*/
+/*# sourceMappingURL=ad6a80eb2baff2fe.css.map*/

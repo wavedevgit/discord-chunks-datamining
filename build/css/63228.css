@@ -1,6 +1,6 @@
 /**
   Module ID: 63228
-  Original File Name: 5ec97b56118ed2f2
+  Original File Name: b8815696e525c333
 **/
 .modalRoot__7169d {
     height: 478px
@@ -25,13 +25,9 @@
 }
 
 .modal_ac72c6 {
-    width: 460px;
     border-radius: 12px;
     overflow: hidden;
-    overflow-y: scroll
-}
-
-.visual-refresh .modal_ac72c6 {
+    overflow-y: scroll;
     width: 496px
 }
 
@@ -106,11 +102,6 @@
 
 .closeButton_ac72c6 {
     position: absolute;
-    right: 8px;
-    top: 16px
-}
-
-.visual-refresh .closeButton_ac72c6 {
     right: calc(var(--modal-horizontal-padding) - var(--space-8));
     top: var(--modal-vertical-padding)
 }
@@ -159,7 +150,7 @@
     color: var(--text-normal);
     left: 8px;
     position: absolute;
-    top: 12px
+    top: 14px
 }
 
 .switchIcon_ac72c6 {
@@ -247,8 +238,4 @@
     color: var(--text-normal)
 }
 
-:where(.visual-refresh) .inputPrefix_ac72c6 {
-    top: 14px
-}
-
-/*# sourceMappingURL=5ec97b56118ed2f2.css.map*/
+/*# sourceMappingURL=b8815696e525c333.css.map*/

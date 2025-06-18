@@ -1,6 +1,6 @@
 /**
   Module ID: 55867
-  Original File Name: 297374b3c4219f40
+  Original File Name: 334df9b4254b2e35
 **/
 .searchBar__3e00d {
     background-color: var(--background-secondary);
@@ -145,13 +145,9 @@
 }
 
 .modal_ac72c6 {
-    width: 460px;
     border-radius: 12px;
     overflow: hidden;
-    overflow-y: scroll
-}
-
-.visual-refresh .modal_ac72c6 {
+    overflow-y: scroll;
     width: 496px
 }
 
@@ -226,11 +222,6 @@
 
 .closeButton_ac72c6 {
     position: absolute;
-    right: 8px;
-    top: 16px
-}
-
-.visual-refresh .closeButton_ac72c6 {
     right: calc(var(--modal-horizontal-padding) - var(--space-8));
     top: var(--modal-vertical-padding)
 }
@@ -279,7 +270,7 @@
     color: var(--text-normal);
     left: 8px;
     position: absolute;
-    top: 12px
+    top: 14px
 }
 
 .switchIcon_ac72c6 {
@@ -367,10 +358,6 @@
     color: var(--text-normal)
 }
 
-:where(.visual-refresh) .inputPrefix_ac72c6 {
-    top: 14px
-}
-
 .closeButton_f9ff5f {
     position: absolute;
     right: 12px;
@@ -424,4 +411,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=297374b3c4219f40.css.map*/
+/*# sourceMappingURL=334df9b4254b2e35.css.map*/

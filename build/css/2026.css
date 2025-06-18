@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: 986780812a29f5cf
+  Original File Name: e508ecf7c97671a4
 **/
 .buttonContent_a83ec9 {
     align-items: center;
@@ -117,7 +117,7 @@
 }
 
 .modalContent_c50f62 {
-    border-radius: inherit;
+    border-radius: var(--radius-md);
     display: flex;
     padding: 0
 }
@@ -535,4 +535,4 @@
     width: 350px
 }
 
-/*# sourceMappingURL=986780812a29f5cf.css.map*/
+/*# sourceMappingURL=e508ecf7c97671a4.css.map*/

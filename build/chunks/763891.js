@@ -13,8 +13,8 @@ var r = n(255367),
   u = n(594174),
   d = n(381585),
   p = n(597688),
-  b = n(370039),
-  f = n(937510),
+  f = n(370039),
+  b = n(937510),
   g = n(303952),
   h = n(38900),
   m = n(709999),
@@ -57,10 +57,10 @@ function I(e) {
       case C.AW.BUNDLES:
         return [v.intl.string(v.t.FYFppq), V ? S.Z : x.Z, a.Z.BUNDLE]
     }
-  }, [B, V]), q = (0, b.a)(), K = l.useMemo(() => q(F.filter(e => {
+  }, [B, V]), q = (0, f.a)(), K = l.useMemo(() => q(F.filter(e => {
     var t;
     return e.type === z || e.type === a.Z.VARIANTS_GROUP && (null == (t = e.variants) ? void 0 : t.some(e => e.type === z)) === !0
-  })), [F, z, q]), Y = (0, f.l)(K);
+  })), [F, z, q]), Y = (0, b.l)(K);
   return (l.useEffect(() => {
     (0, g.n)({
       sessionId: N,

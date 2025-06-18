@@ -6,8 +6,8 @@ var r = t(255367);
 t(73800);
 var i = t(793030),
   o = t(442837),
-  s = t(481060),
-  a = t(834129),
+  a = t(481060),
+  s = t(834129),
   l = t(271383),
   c = t(709054),
   u = t(884902),
@@ -20,8 +20,8 @@ function _(e) {
     boost: n
   } = e, t = new Date(c.default.extractTimestamp(n.id)), {
     username: _,
-    roleColor: x,
-    roleColorStrings: f
+    roleColor: f,
+    roleColorStrings: x
   } = (0, o.cj)([l.ZP], () => {
     var e, t;
     let r = l.ZP.getMember(n.guildId, n.userId);
@@ -30,11 +30,11 @@ function _(e) {
       roleColor: null == r ? void 0 : r.colorString,
       roleColorStrings: null == r ? void 0 : r.colorStrings
     }
-  }, [n]), v = (0, u.X)(n.guildId, f, "GuildPowerupsRecentActivityRow");
-  return (0, r.jsx)(a.Z, {
+  }, [n]), b = (0, u.X)(n.guildId, x, "GuildPowerupsRecentActivityRow");
+  return (0, r.jsx)(s.Z, {
     className: m.systemMessageContainer,
     contentClassName: m.systemMessageContent,
-    iconNode: (0, r.jsx)(s.$Eu, {
+    iconNode: (0, r.jsx)(a.$Eu, {
       className: m.icon,
       color: "currentColor",
       size: "sm"
@@ -46,12 +46,12 @@ function _(e) {
     compact: !0,
     children: (0, r.jsxs)("span", {
       className: m.boostMessage,
-      children: [(0, r.jsx)(s.PUh, {
+      children: [(0, r.jsx)(a.PUh, {
         className: m.boostMessageUser,
         variant: "text-md/semibold",
         name: _,
-        color: null != x ? x : void 0,
-        roleColors: v
+        color: null != f ? f : void 0,
+        roleColors: b
       }), (0, r.jsx)(i.xv, {
         variant: "text-md/medium",
         lineClamp: 1,

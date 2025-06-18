@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 9ea0e98684f64e38
+  Original File Name: f3f8e7f33b598590
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -617,7 +617,7 @@ strong {
     margin-top: 8px
 }
 
-.visual-refresh .container__7641b {
+.container__7641b {
     background-color: var(--background-base-lower);
     border-left: 1px solid var(--border-subtle)
 }
@@ -713,14 +713,11 @@ strong {
 }
 
 .scroller__28a87 {
+    background-color: var(--background-base-lower);
     flex: 1 1 auto;
     height: auto;
     min-height: 1px;
     min-width: 1px
-}
-
-.visual-refresh .scroller__28a87 {
-    background-color: var(--background-base-lower)
 }
 
 .wrapper__28a87 {
@@ -1242,7 +1239,7 @@ strong {
 }
 
 .friend_bbd192 {
-    border-radius: 3px;
+    border-radius: var(--radius-sm);
     box-sizing: border-box;
     color: var(--text-muted-on-default);
     font-size: 14px;
@@ -1290,15 +1287,7 @@ strong {
     background-color: hsl(var(--primary-200-hsl)/.3)
 }
 
-.visual-refresh .friend_bbd192 {
-    border-radius: var(--radius-sm)
-}
-
-.visual-refresh .friendSelected_bbd192 {
-    background-color: var(--background-mod-subtle)
-}
-
-.full-motion.visual-refresh .friend_bbd192 {
+.full-motion .friend_bbd192 {
     transition: background-color .2s ease
 }
 
@@ -1307,6 +1296,7 @@ strong {
 }
 
 .friendSelected_bbd192 {
+    background-color: var(--background-mod-subtle);
     color: var(--header-primary)
 }
 
@@ -1323,10 +1313,6 @@ strong {
     height: -moz-fit-content;
     height: fit-content;
     max-height: 440px
-}
-
-html:not(.visual-refresh) .header_cba592 {
-    padding-bottom: var(--space-8)
 }
 
 .header_cba592 {
@@ -6674,10 +6660,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .visual-refresh .icon_aae012 {
-    height: var(--space-20);
-    min-height: var(--space-20);
-    min-width: var(--space-20);
-    width: var(--space-20)
+    height: var(--space-24);
+    min-height: var(--space-24);
+    min-width: var(--space-24);
+    width: var(--space-24)
 }
 
 .visual-refresh .arrow_aae012 {
@@ -8544,7 +8530,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .channelName__754bd div,.channelName__754bd input {
     font-family: var(--font-display);
-    font-weight: 600
+    font-weight: 500
 }
 
 .newWrapper__754bd {
@@ -8635,10 +8621,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .explainer__754bd .visibleLink__754bd a {
     color: var(--text-link)
-}
-
-.visual-refresh .channelName__754bd div,.visual-refresh .channelName__754bd input {
-    font-weight: 500
 }
 
 .heading-sm\/normal__6ec1a {
@@ -9348,7 +9330,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .topic__6ec1a {
-    color: var(--header-secondary);
     flex: 1 1 auto;
     font-size: 14px;
     font-weight: 500;
@@ -9358,7 +9339,8 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     overflow: hidden;
     position: relative;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
+    color: var(--text-tertiary)
 }
 
 .topic__6ec1a a {
@@ -9367,10 +9349,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .topic__6ec1a a:hover {
     text-decoration: underline
-}
-
-.visual-refresh .topic__6ec1a {
-    color: var(--text-tertiary)
 }
 
 .topicClickTarget__6ec1a {
@@ -13271,4 +13249,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=9ea0e98684f64e38.css.map*/
+/*# sourceMappingURL=f3f8e7f33b598590.css.map*/

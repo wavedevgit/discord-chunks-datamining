@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: f3ad1edfb2beb23f
+  Original File Name: 309f394275ca7464
 **/
 @value headerBarHeight 60px;
 
@@ -163,7 +163,9 @@
     background-color: var(--bg-base-secondary);
     border-bottom: 1px solid var(--border-subtle);
     height: var(--custom-channel-header-height);
-    padding: 0 12px;
+    padding-bottom: 0;
+    padding-right: var(--space-12);
+    padding-top: 0;
     position: -webkit-sticky;
     position: sticky;
     top: 0
@@ -2586,4 +2588,4 @@
     width: 22px
 }
 
-/*# sourceMappingURL=f3ad1edfb2beb23f.css.map*/
+/*# sourceMappingURL=309f394275ca7464.css.map*/

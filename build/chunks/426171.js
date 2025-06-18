@@ -15,8 +15,8 @@ var r = n(73800),
   u = n(328347),
   d = n(429368),
   p = n(410127),
-  b = n(237031),
-  f = n(956472),
+  f = n(237031),
+  b = n(956472),
   g = n(981631);
 let h = "".concat("#").concat("itemSkuId", "="),
   m = new RegExp("^".concat(h, "(\\d+)$")),
@@ -46,7 +46,7 @@ let h = "".concat("#").concat("itemSkuId", "="),
         inline: "center"
       });
       let e = o,
-        p = (0, f.oQ)({
+        p = (0, b.oQ)({
           product: o
         }),
         g = setTimeout(() => {
@@ -59,7 +59,7 @@ let h = "".concat("#").concat("itemSkuId", "="),
               let r = null == (u = n.variants) ? void 0 : u.findIndex(e => e.skuId === t);
               null != r && r > -1 && (0, d.$)(n, r)
             }
-          }(0, b.T)({
+          }(0, f.T)({
             product: e,
             category: s,
             analyticsSource: r,
@@ -78,19 +78,19 @@ let h = "".concat("#").concat("itemSkuId", "="),
       isFetchingCategories: t,
       isLayer: n,
       initialItemCardRef: c
-    } = e, d = (0, a.e7)([i.Z], () => i.Z.useReducedMotion), b = r.useRef(null), f = (0, l.TH)(), h = f.pathname === g.Z5c.COLLECTIBLES_SHOP ? o.Z.HOME_PAGE_SHOP_TAB : f.pathname === g.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? o.Z.COLLECTIBLES_SHOP_FULLSCREEN : o.Z.COLLECTIBLES_SHOP, {
+    } = e, d = (0, a.e7)([i.Z], () => i.Z.useReducedMotion), f = r.useRef(null), b = (0, l.TH)(), h = b.pathname === g.Z5c.COLLECTIBLES_SHOP ? o.Z.HOME_PAGE_SHOP_TAB : b.pathname === g.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? o.Z.COLLECTIBLES_SHOP_FULLSCREEN : o.Z.COLLECTIBLES_SHOP, {
       analyticsLocations: _
     } = (0, s.ZP)(h), C = (0, p.Z)();
     r.useEffect(() => {
       if (n) return;
-      let e = m.exec(f.hash);
-      null != e ? b.current = e[1] : b.current = null
-    }, [C, n, f.hash]);
+      let e = m.exec(b.hash);
+      null != e ? f.current = e[1] : f.current = null
+    }, [C, n, b.hash]);
     let O = (0, a.e7)([u.Z], () => u.Z.initialProductSkuId);
     r.useEffect(() => {
       if (t) return;
       let e = null;
-      if (null != (e = n ? O : b.current)) {
+      if (null != (e = n ? O : f.current)) {
         let t = [],
           n = setTimeout(() => {
             let n = v({

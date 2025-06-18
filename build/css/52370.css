@@ -1,6 +1,6 @@
 /**
   Module ID: 52370
-  Original File Name: 6243b3b68c5f4753
+  Original File Name: f6b0781397c415a5
 **/
 .container__6f9f7 {
     display: flex;
@@ -385,12 +385,13 @@
     justify-content: space-between
 }
 
-.usernameContainer__11014 {
+.decorationsContainer__11014,.usernameContainer__11014 {
     display: flex;
     flex-direction: row
 }
 
 .decorationsContainer__11014 {
+    align-items: center;
     margin-left: var(--spacing-4)
 }
 
@@ -504,4 +505,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=6243b3b68c5f4753.css.map*/
+/*# sourceMappingURL=f6b0781397c415a5.css.map*/

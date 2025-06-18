@@ -1,6 +1,6 @@
 /**
   Module ID: 49078
-  Original File Name: e97fb0b2e166344a
+  Original File Name: 73cd6e5c112d7256
 **/
 .addFriendInputWrapper__72ba7 {
     align-items: center;
@@ -26,7 +26,17 @@
 }
 
 .addFriendWumpusWrapper__72ba7 {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding-right: var(--space-128);
     position: relative
+}
+
+.addFriendWumpusWrapper__72ba7 img {
+    bottom: calc(var(--space-16)*-1);
+    position: absolute;
+    right: var(--space-16)
 }
 
 .inputText__72ba7 {
@@ -67,7 +77,7 @@
     padding: 0
 }
 
-.visual-refresh .input__72ba7:focus,.visual-refresh .input__72ba7:focus-within,.visual-refresh .input__72ba7:hover {
+.input__72ba7:focus,.input__72ba7:focus-within,.input__72ba7:hover {
     border: none
 }
 
@@ -92,21 +102,8 @@
     border-color: Highlight
 }
 
-:where(.visual-refresh) .addFriendWumpusWrapper__72ba7 {
-    align-items: flex-start;
-    display: flex;
-    justify-content: space-between;
-    padding-right: var(--space-128)
-}
-
-:where(.visual-refresh) .addFriendWumpusWrapper__72ba7 img {
-    bottom: calc(var(--space-16)*-1);
-    position: absolute;
-    right: var(--space-16)
-}
-
 .content__16b50 {
     padding-top: var(--space-16)
 }
 
-/*# sourceMappingURL=e97fb0b2e166344a.css.map*/
+/*# sourceMappingURL=73cd6e5c112d7256.css.map*/

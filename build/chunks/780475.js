@@ -15,8 +15,8 @@ var r = n(73800),
   u = n(328347),
   d = n(215023),
   p = n(981631),
-  b = n(474936);
-let f = e => {
+  f = n(474936);
+let b = e => {
     switch (e) {
       case d.AW.ORBS:
         return a.Z.COLLECTIBLES_SHOP_ORBS_TAB;
@@ -38,7 +38,7 @@ let f = e => {
     let {
       analyticsSource: t,
       analyticsLocations: n
-    } = (0, l.cj)([u.Z], () => u.Z.getAnalytics()), r = f(e), {
+    } = (0, l.cj)([u.Z], () => u.Z.getAnalytics()), r = b(e), {
       analyticsLocations: o,
       newestAnalyticsLocation: s
     } = (0, i.ZP)([...n, a.Z.COLLECTIBLES_SHOP, r]);
@@ -54,20 +54,20 @@ let f = e => {
       analyticsLocations: i,
       analyticsSource: s,
       currentTabLocation: u,
-      newestAnalyticsLocation: b
+      newestAnalyticsLocation: f
     } = g(t);
     r.useEffect(() => {
       var r;
-      if (l !== d.f7.VISIBLE || b !== u) return;
-      let f = t === d.AW.CATALOG ? a : s;
+      if (l !== d.f7.VISIBLE || f !== u) return;
+      let b = t === d.AW.CATALOG ? a : s;
       o.default.track(p.rMx.COLLECTIBLES_SHOP_VIEWED, {
         location_stack: i,
-        source: f,
+        source: b,
         page_session_id: e,
         page_type: t === d.AW.CATALOG ? "full" : t,
         category: t === d.AW.HOME || null == (r = c.Z.getCategory(n)) ? void 0 : r.name
       })
-    }, [i, e, t, n, u, l, a, s, b])
+    }, [i, e, t, n, u, l, a, s, f])
   },
   m = (e, t) => {
     let {
@@ -75,7 +75,7 @@ let f = e => {
     } = g(e);
     r.useEffect(() => {
       null == t || s.ZP.canUseCollectibles(t) || o.default.track(p.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: b.cd.COLLECTIBLES_SHOP,
+        type: f.cd.COLLECTIBLES_SHOP,
         location_stack: n
       })
     }, [n, t])

@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: 031f986e6af5f9a5
+  Original File Name: 0dcd27e5eeba2ff8
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4645,16 +4645,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .channel__972a0 {
     margin-left: 8px;
-    max-width: 224px;
+    max-width: var(--custom-guild-sidebar-width);
     position: relative
 }
 
 .channel__972a0.fullWidth__972a0 {
     max-width: 100%
-}
-
-.visual-refresh .channel__972a0 {
-    max-width: var(--custom-guild-sidebar-width)
 }
 
 .unreadPill__972a0 {
@@ -4675,7 +4671,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .interactive__972a0 {
     align-items: center;
     box-sizing: border-box;
-    color: var(--channels-default);
+    color: var(--text-tertiary);
     display: flex;
     position: relative;
     width: 100%;
@@ -4716,6 +4712,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: 8px;
     min-width: 0;
     overflow: hidden;
+    padding: 0 var(--space-16) 0 var(--space-xs);
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%
@@ -4726,10 +4723,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .linkButton__972a0 {
-    padding-right: 8px
+    padding-right: 0
 }
 
 .linkButtonIcon__972a0 {
+    color: var(--icon-tertiary);
     height: 24px;
     width: 24px
 }
@@ -4791,7 +4789,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 16px
 }
 
-:where(.visual-refresh) .closeButton__972a0,:where(.visual-refresh) .favoriteIcon__972a0 {
+.closeButton__972a0,.favoriteIcon__972a0 {
     margin: 0;
     padding-right: var(--space-xs)
 }
@@ -4831,53 +4829,33 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     }
 }
 
-:where(.visual-refresh) .interactive__972a0 {
-    color: var(--text-tertiary)
-}
-
-:where(.visual-refresh) .linkButton__972a0 {
-    padding-right: 0
-}
-
-:where(.visual-refresh) .linkButtonIcon__972a0 {
-    color: var(--icon-tertiary)
-}
-
-:where(.visual-refresh) .interactive__972a0:hover {
+.interactive__972a0:hover {
     background: var(--bg-overlay-selected,var(--background-mod-subtle))
 }
 
-:where(.visual-refresh) .interactive__972a0:active,:where(.visual-refresh) .interactiveSelected__972a0 {
+.interactive__972a0:active,.interactiveSelected__972a0 {
     background: var(--bg-overlay-selected,var(--background-mod-normal));
     color: var(--text-default)
 }
 
-:where(.visual-refresh) .interactive__972a0:active .linkButtonIcon__972a0,:where(.visual-refresh) .interactiveSelected__972a0 .linkButtonIcon__972a0 {
+.interactive__972a0:active .linkButtonIcon__972a0,.interactiveSelected__972a0 .linkButtonIcon__972a0 {
     color: var(--icon-primary)
 }
 
-:where(.visual-refresh) .link__972a0 {
-    padding: 0 var(--space-16) 0 var(--space-xs)
-}
-
-:where(.visual-refresh) .linkPlated__972a0 {
-    padding-right: 36px
-}
-
-:where(.visual-refresh) .channel__972a0:not(.dm__972a0) {
+.channel__972a0:not(.dm__972a0) {
     height: auto
 }
 
-:where(.visual-refresh) .channel__972a0:not(.dm__972a0) .link__972a0 {
+.channel__972a0:not(.dm__972a0) .link__972a0 {
     padding: var(--space-8) var(--space-16) var(--space-8) var(--space-xs)
 }
 
-:where(.visual-refresh) .channel__972a0:not(.dm__972a0) .avatarWithText__972a0 {
+.channel__972a0:not(.dm__972a0) .avatarWithText__972a0 {
     height: unset;
     padding: 1px 0
 }
 
-:where(.visual-refresh) .channel__972a0:not(.dm__972a0) svg {
+.channel__972a0:not(.dm__972a0) svg {
     height: 20px;
     width: 20px
 }
@@ -19691,4 +19669,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=031f986e6af5f9a5.css.map*/
+/*# sourceMappingURL=0dcd27e5eeba2ff8.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 77025
-  Original File Name: 4ac733d53f9848a7
+  Original File Name: 7e9c6dc4768ea480
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -47,8 +47,9 @@
 }
 
 .container_fcf29c {
-    background-color: var(--background-surface-high);
-    border-radius: 5px;
+    background-color: var(--background-surface-highest);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
     box-shadow: var(--legacy-elevation-high);
     overflow: hidden;
     padding: 10px 10px 10px 16px;
@@ -58,8 +59,9 @@
 }
 
 .container_fcf29c[data-emphasized=true] {
-    background-color: var(--status-danger);
-    color: var(--white-500)
+    background-color: var(--background-feedback-critical);
+    border-color: var(--border-feedback-critical);
+    color: var(--text-feedback-critical)
 }
 
 .flexContainer_fcf29c {
@@ -105,18 +107,6 @@
 
 .theme-dark .message_fcf29c {
     color: var(--white-500)
-}
-
-.visual-refresh .container_fcf29c {
-    background-color: var(--background-surface-highest);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm)
-}
-
-.visual-refresh .container_fcf29c[data-emphasized=true] {
-    background-color: var(--background-feedback-critical);
-    border-color: var(--border-feedback-critical);
-    color: var(--text-feedback-critical)
 }
 
 .enable-forced-colors .container_fcf29c {
@@ -511,25 +501,25 @@ div:has(>div>.container_b962dc) {
 .container_b962dc {
     align-items: center;
     background-color: var(--bg-surface-overlay)!important;
-    border: none;
     border-radius: 0;
     flex-direction: row;
     height: 100vh;
     justify-content: center;
+    padding: var(--space-12);
     position: relative;
     width: 100vw
 }
 
 .container_b962dc,.guildSidebar_b962dc {
     box-sizing: border-box;
-    display: flex;
-    padding: 12px
+    display: flex
 }
 
 .guildSidebar_b962dc {
     flex-direction: column;
     height: 100%;
     min-width: 400px;
+    padding: 12px;
     width: 33%
 }
 
@@ -760,4 +750,4 @@ div:has(>div>.container_b962dc) {
     background-color: var(--bg-base-tertiary)!important
 }
 
-/*# sourceMappingURL=4ac733d53f9848a7.css.map*/
+/*# sourceMappingURL=7e9c6dc4768ea480.css.map*/

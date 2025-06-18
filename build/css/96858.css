@@ -1,6 +1,6 @@
 /**
   Module ID: 96858
-  Original File Name: 6a93e050b7998066
+  Original File Name: 04ef33b4a1a420ed
 **/
 .logo__11f7b {
     background: url(/assets/bbbc3d376d38e7bc.svg) no-repeat;
@@ -117,17 +117,6 @@
     }
 }
 
-.platform-osx:not(.visual-refresh) .splashBackground_eb4069:before {
-    content: "";
-    height: 32px;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    -webkit-app-region: drag
-}
-
 .platform-win .splashBackground_eb4069:before {
     background: var(--opacity-black-28);
     border-bottom-left-radius: 3px;
@@ -197,4 +186,4 @@
     }
 }
 
-/*# sourceMappingURL=6a93e050b7998066.css.map*/
+/*# sourceMappingURL=04ef33b4a1a420ed.css.map*/

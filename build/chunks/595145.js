@@ -140,7 +140,6 @@ function et(e) {
           "aria-label": eE,
           parentComponent: "UserProfileModalV2",
           children: (0, o.jsxs)(V.Z, {
-            ref: (null == ej ? void 0 : ej.profileEffectId) != null ? e_ : void 0,
             user: n,
             displayProfile: ej,
             themeType: J.lY.MODAL_V2,
@@ -154,6 +153,7 @@ function et(e) {
               className: ee.backdrop
             }), (0, o.jsxs)("div", {
               className: ee.profile,
+              ref: (null == ej ? void 0 : ej.profileEffectId) != null ? e_ : void 0,
               children: [(0, o.jsxs)("div", {
                 className: ee.profileHeader,
                 children: [(0, o.jsx)(E.Z, {

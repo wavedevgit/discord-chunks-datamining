@@ -1,6 +1,6 @@
 /**
   Module ID: 22173
-  Original File Name: 7d27eaae4a934632
+  Original File Name: 4e0971cc4e655341
 **/
 .effect_a9ddb3 {
     bottom: 0;
@@ -25,6 +25,9 @@
 }
 
 .scroller_cc2dff {
+    background: var(--background-mod-subtle);
+    border-bottom-left-radius: var(--radius-sm);
+    border-top-left-radius: var(--radius-sm);
     flex: 0 0 auto;
     padding: 8px;
     width: 90px
@@ -52,6 +55,10 @@
 
 .reactionDefault_cc2dff {
     cursor: pointer
+}
+
+.reactionDefault_cc2dff:hover {
+    background-color: var(--background-mod-subtle)
 }
 
 .emoji_cc2dff {
@@ -141,15 +148,16 @@
 
 .remove_cc2dff {
     border-radius: 3px;
-    color: var(--text-muted-on-default);
+    color: var(--icon-secondary);
     cursor: pointer;
     display: none;
     font-size: 16px;
-    opacity: .3;
+    opacity: 1;
     padding: 3px
 }
 
 .remove_cc2dff:hover {
+    color: var(--icon-primary);
     opacity: 1
 }
 
@@ -158,8 +166,8 @@
 }
 
 .container_cc2dff,.reactors_cc2dff {
-    background-color: var(--background-primary);
-    border-radius: 4px
+    background-color: var(--modal-background);
+    border-radius: var(--radius-sm)
 }
 
 .scroller_cc2dff {
@@ -169,7 +177,11 @@
 }
 
 .reactionSelected_cc2dff {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-mod-normal)
+}
+
+.reactionSelected_cc2dff:hover {
+    background-color: var(--background-mod-strong)
 }
 
 .reactionDefault_cc2dff:hover {
@@ -193,49 +205,13 @@
 }
 
 .reactionSeparator_cc2dff {
-    background-color: var(--interactive-muted);
+    background-color: var(--border-subtle);
     border: none;
     display: inline-block;
     height: 1px;
     margin-bottom: 4px;
     margin-top: 4px;
     width: 100%
-}
-
-.visual-refresh .container_cc2dff,.visual-refresh .reactors_cc2dff {
-    background-color: var(--modal-background);
-    border-radius: var(--radius-sm)
-}
-
-.visual-refresh .scroller_cc2dff {
-    background: var(--background-mod-subtle);
-    border-bottom-left-radius: var(--radius-sm);
-    border-top-left-radius: var(--radius-sm)
-}
-
-.visual-refresh .remove_cc2dff {
-    color: var(--icon-secondary);
-    opacity: 1
-}
-
-.visual-refresh .remove_cc2dff:hover {
-    color: var(--icon-primary)
-}
-
-.visual-refresh .reactionSeparator_cc2dff {
-    background-color: var(--border-subtle)
-}
-
-.visual-refresh .reactionDefault_cc2dff:hover {
-    background-color: var(--background-mod-subtle)
-}
-
-.visual-refresh .reactionSelected_cc2dff {
-    background-color: var(--background-mod-normal)
-}
-
-.visual-refresh .reactionSelected_cc2dff:hover {
-    background-color: var(--background-mod-strong)
 }
 
 .emojiContainer__0524a {
@@ -1404,4 +1380,4 @@
     background-color: var(--background-tertiary)
 }
 
-/*# sourceMappingURL=7d27eaae4a934632.css.map*/
+/*# sourceMappingURL=4e0971cc4e655341.css.map*/

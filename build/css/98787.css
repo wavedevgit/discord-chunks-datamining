@@ -1,6 +1,6 @@
 /**
   Module ID: 98787
-  Original File Name: 19be99c839c17fbe
+  Original File Name: c53d6fa52766d5ba
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -5815,15 +5815,23 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .headerText__99e7c {
+    display: grid;
     flex: 1;
+    grid-template-columns: 1fr auto;
     overflow: hidden;
     text-overflow: ellipsis
 }
 
 .privateChannelsHeaderContainer__99e7c {
+    align-items: center;
     display: flex;
-    height: 40px;
-    padding: 18px 8px 4px 18px
+    height: var(--size-24);
+    justify-content: space-between;
+    padding: 18px 8px 4px 18px;
+    padding-bottom: var(--space-4);
+    padding-left: var(--space-md);
+    padding-right: var(--space-xs);
+    padding-top: 0
 }
 
 .privateChannelsHeaderContainer__99e7c:hover {
@@ -5831,41 +5839,21 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .privateChannelRecipientsInviteButtonIcon__99e7c {
-    flex: 0;
+    flex: unset;
     height: 16px;
     margin-left: 0;
-    margin-right: 2px;
+    margin-right: 0;
     width: 16px
 }
 
-.visual-refresh .headerText__99e7c {
-    display: grid;
-    grid-template-columns: 1fr auto
-}
-
-.visual-refresh .privateChannelRecipientsInviteButtonIcon__99e7c,.visual-refresh .privateChannelRecipientsInviteButtonIconContainer__99e7c {
+.privateChannelRecipientsInviteButtonIcon__99e7c,.privateChannelRecipientsInviteButtonIconContainer__99e7c {
     height: 16px;
     width: 16px
 }
 
-.visual-refresh .privateChannelRecipientsInviteButtonIcon__99e7c {
-    flex: unset;
-    margin-right: 0
-}
-
-.visual-refresh .scroller__99e7c {
+.scroller__99e7c {
     background: var(--bg-overlay-4,var(--background-base-lowest));
     margin-bottom: calc(var(--custom-app-panels-height, 0) + 8px)
-}
-
-.visual-refresh .privateChannelsHeaderContainer__99e7c {
-    align-items: center;
-    height: var(--size-24);
-    justify-content: space-between;
-    padding-bottom: var(--space-4);
-    padding-left: var(--space-md);
-    padding-right: var(--space-xs);
-    padding-top: 0
 }
 
 .enable-forced-colors .privateChannelsHeaderContainer__99e7c {
@@ -6613,4 +6601,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=19be99c839c17fbe.css.map*/
+/*# sourceMappingURL=c53d6fa52766d5ba.css.map*/

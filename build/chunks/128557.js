@@ -299,7 +299,7 @@ function B(e) {
       opacity: ee[el.length]
     } : {},
     children: (0, r.jsx)(U, {
-      iconUrl: ei ? u.vdZ : A,
+      iconUrl: ei ? u.Tg$ : A,
       header: N.intl.string(N.t.IhHDEB),
       completed: er,
       onClick: Q
