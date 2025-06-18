@@ -1,6 +1,6 @@
 /**
   Module ID: 86350
-  Original File Name: f382594d928bc16b
+  Original File Name: 42cf9b45d494d608
 **/
 .menu__43313 {
     max-height: 70vh
@@ -942,7 +942,9 @@
 
 .assetsLargeMaskStreamPreview__2ef49,.assetsLargeMaskVoiceChannel__2ef49 {
     -webkit-mask: url(/assets/f86a4d3ee1fc9ef0.svg);
-    mask: url(/assets/f86a4d3ee1fc9ef0.svg)
+    mask: url(/assets/f86a4d3ee1fc9ef0.svg);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%
 }
 
 .assetsLargeMaskActivityFeed__2ef49 {
@@ -1787,4 +1789,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=f382594d928bc16b.css.map*/
+/*# sourceMappingURL=42cf9b45d494d608.css.map*/
