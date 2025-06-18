@@ -1,6 +1,6 @@
 /**
   Module ID: 7589
-  Original File Name: 5a4ef74be5880fc2
+  Original File Name: 8d781205cbc19153
 **/
 .badgeContainer__98c7b {
     display: flex;
@@ -1930,7 +1930,7 @@
 }
 
 .card__61870 {
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-sm);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2036,4 +2036,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=5a4ef74be5880fc2.css.map*/
+/*# sourceMappingURL=8d781205cbc19153.css.map*/

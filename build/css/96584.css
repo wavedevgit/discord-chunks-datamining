@@ -1,6 +1,6 @@
 /**
   Module ID: 96584
-  Original File Name: 23964e0b0e9ef8a3
+  Original File Name: 5e1dbade7088da2a
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -357,7 +357,7 @@
 }
 
 .card__61870 {
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-sm);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -875,4 +875,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=23964e0b0e9ef8a3.css.map*/
+/*# sourceMappingURL=5e1dbade7088da2a.css.map*/
