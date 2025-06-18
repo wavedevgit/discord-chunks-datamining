@@ -49,7 +49,7 @@ function C(e) {
       width: "".concat(E, "%")
     })
   }, [E, I]);
-  let w = x >= C;
+  let N = x >= C;
   return (0, r.jsx)(u.P3F, {
     "aria-label": void 0,
     role: "button",
@@ -130,7 +130,7 @@ function C(e) {
           children: [(0, r.jsx)(a.xv, {
             className: v.text,
             variant: "text-xs/semibold",
-            children: w ? _.intl.formatToPlainString(O.default["Ehpq+/"], {
+            children: N ? _.intl.formatToPlainString(O.default["Ehpq+/"], {
               appliedBoostCount: x
             }) : _.intl.formatToPlainString(O.default["/rbPDg"], {
               appliedBoostCount: x,

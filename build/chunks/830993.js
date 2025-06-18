@@ -53,7 +53,7 @@ function I(e) {
     j = Array.from((0, u.uF)(C).values()),
     P = null != (t = null == g ? void 0 : g.filter(y.lm)) ? t : [],
     I = e => t => [S.IIU.PLAYING, S.IIU.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId) || t.type === S.IIU.LISTENING,
-    N = (0, s.e7)([m.Z], () => {
+    w = (0, s.e7)([m.Z], () => {
       let e = {};
       return P.forEach(t => {
         let n = m.Z.findActivity(t.user.id, I(t));
@@ -68,9 +68,9 @@ function I(e) {
         }
       }), Object.values(e)
     }, [P], s.pF);
-  return N.length + j.length === 0 ? null : (0, r.jsxs)(a.Ttm, {
+  return w.length + j.length === 0 ? null : (0, r.jsxs)(a.Ttm, {
     className: E.container,
-    children: [(0, r.jsx)(w, {
+    children: [(0, r.jsx)(N, {
       channel: o,
       isChannelSelected: b,
       voiceStatesCount: null != (l = null == g ? void 0 : g.length) ? l : 0
@@ -84,7 +84,7 @@ function I(e) {
         channel: o,
         onAction: f
       }, t)
-    }), N.map((e, t) => {
+    }), w.map((e, t) => {
       let {
         members: n,
         activity: i
@@ -150,7 +150,7 @@ function I(e) {
   })
 }
 
-function w(e) {
+function N(e) {
   let {
     channel: t,
     isChannelSelected: n,

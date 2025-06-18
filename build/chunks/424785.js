@@ -28,8 +28,8 @@ var r = n(255367),
   E = n(680089),
   P = n(592125),
   I = n(430824),
-  w = n(607744),
-  N = n(496675),
+  N = n(607744),
+  w = n(496675),
   Z = n(306680),
   T = n(9156),
   A = n(979651),
@@ -325,15 +325,15 @@ function q(e) {
   } = e, c = (0, s.cj)([Z.ZP], () => ({
     unread: Z.ZP.hasUnread(n.id),
     mentionCount: Z.ZP.getMentionCount(n.id)
-  })), u = (0, s.e7)([T.ZP], () => T.ZP.resolveUnreadSetting(n)), d = (0, s.cj)([P.Z, w.Z, N.Z], () => {
+  })), u = (0, s.e7)([T.ZP], () => T.ZP.resolveUnreadSetting(n)), d = (0, s.cj)([P.Z, N.Z, w.Z], () => {
     let e = P.Z.getChannel(n.parent_id),
-      r = w.Z.getCheck(n.guild_id);
+      r = N.Z.getCheck(n.guild_id);
     return {
-      canManageChannel: null != t && N.Z.can(U.Plq.MANAGE_CHANNELS, n),
-      canReorderChannel: !0 !== i && (t.id === G._ || (null != e ? N.Z.can(U.Plq.MANAGE_CHANNELS, e) : N.Z.can(U.Plq.MANAGE_CHANNELS, t))),
-      canMoveMembers: N.Z.can(U.Plq.MOVE_MEMBERS, n),
-      locked: !N.Z.can(U.Plq.CONNECT, n),
-      bypassLimit: N.Z.can(U.Plq.MOVE_MEMBERS, n),
+      canManageChannel: null != t && w.Z.can(U.Plq.MANAGE_CHANNELS, n),
+      canReorderChannel: !0 !== i && (t.id === G._ || (null != e ? w.Z.can(U.Plq.MANAGE_CHANNELS, e) : w.Z.can(U.Plq.MANAGE_CHANNELS, t))),
+      canMoveMembers: w.Z.can(U.Plq.MOVE_MEMBERS, n),
+      locked: !w.Z.can(U.Plq.CONNECT, n),
+      bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
   }), h = (0, s.e7)([E.Z], () => E.Z.isCollapsed(n.parent_id)), p = (0, x.ZP)(n.id), f = (0, s.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, C.pV.AUDIENCE), {

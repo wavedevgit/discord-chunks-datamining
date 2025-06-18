@@ -1,6 +1,6 @@
 /**
   Module ID: 98787
-  Original File Name: 1906b471f576c599
+  Original File Name: 19be99c839c17fbe
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1982,6 +1982,10 @@ div:has(>.positionLayer_fc71d3) {
     display: block
 }
 
+div:has(>.positionLayer__4f4b6) {
+    translate: 0 -3rem
+}
+
 .container__3b95d {
     height: 24px;
     overflow: hidden;
@@ -2624,6 +2628,10 @@ div:has(>.positionLayer_fc71d3) {
     height: 1px
 }
 
+.fullWidth__252b6 {
+    width: 100%
+}
+
 .guildsError_e8d03f {
     align-items: center;
     background-color: var(--background-primary);
@@ -2781,6 +2789,10 @@ div:has(>.positionLayer_fc71d3) {
     height: 100%
 }
 
+.itemsContainer_ef3116 {
+    justify-content: space-between
+}
+
 .scroller_ef3116 {
     flex: 0 1 auto;
     padding: 12px 0 0;
@@ -2891,6 +2903,32 @@ div:has(>.positionLayer_fc71d3) {
 
 .custom-theme-background .itemsContainer_ef3116 {
     background: var(--bg-overlay-app-frame,var(--background-tertiary))
+}
+
+.bottomRailNotifCenterButton_ef3116 {
+    padding-bottom: 12px;
+    padding-top: 8px
+}
+
+.bottomRailNotifCenterButton_ef3116:before {
+    background: linear-gradient(to bottom,transparent,var(--bg-base-tertiary) 75%,var(--bg-base-tertiary) 100%);
+    content: "";
+    height: 16px;
+    position: absolute;
+    translate: 0 -22px;
+    width: 100%
+}
+
+.custom-theme-background .bottomRailNotifCenterButton_ef3116 {
+    padding-top: 12px
+}
+
+.custom-theme-background .bottomRailNotifCenterButton_ef3116:before {
+    display: none
+}
+
+.unreadMentionsFixedFooterBottomNotifCenterEntrypoint_ef3116 {
+    bottom: 60px
 }
 
 @keyframes progressPulse_eff079 {
@@ -6575,4 +6613,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=1906b471f576c599.css.map*/
+/*# sourceMappingURL=19be99c839c17fbe.css.map*/

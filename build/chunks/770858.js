@@ -1,6 +1,6 @@
 /** Chunk was on 98787 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -12,40 +12,61 @@ var r = n(255367),
   u = n(682662),
   d = n(593364),
   h = n(455199),
-  p = n(592125),
-  f = n(430824),
-  g = n(306680),
-  m = n(944486),
-  b = n(821020),
-  y = n(370774),
-  O = n(961040),
-  _ = n(739340),
-  v = n(932711),
-  C = n(981631),
-  j = n(522458);
+  p = n(178088),
+  f = n(592125),
+  g = n(430824),
+  m = n(306680),
+  b = n(944486),
+  y = n(594174),
+  O = n(821020),
+  _ = n(370774),
+  v = n(961040),
+  C = n(739340),
+  j = n(932711),
+  S = n(981631),
+  x = n(490897),
+  E = n(522458);
 
-function S(e) {
+function P() {
+  let e = (0, o.e7)([y.default], () => y.default.getCurrentUser());
+  return (0, o.e7)([m.ZP], () => (null == e ? void 0 : e.id) != null && m.ZP.getMentionCount(e.id, x.W.NOTIFICATION_CENTER) > 0)
+}
+
+function I(e) {
   var t, n;
   let {
-    onClick: O,
-    selectedOverride: S = !1,
-    popoutProps: x,
-    ref: E
-  } = e, P = (0, l.Ie)("notifications-inbox"), [I, w] = i.useState(!1), N = (0, y.D)(), Z = S || N, {
-    anyUnread: T,
-    unreadRecentMentionsCount: A
+    onClick: p,
+    selectedOverride: y = !1,
+    popoutProps: v,
+    ref: x
+  } = e, I = (0, l.Ie)("notifications-inbox"), [N, w] = i.useState(!1), Z = (0, _.D)(), T = y || Z, {
+    anyUnread: A,
+    unreadRecentMentionsCount: R
   } = function() {
-    let e = (0, _.wt)(),
-      t = (0, o.e7)([g.ZP], () => e.some(e => g.ZP.hasUnread(e))),
+    let e = (0, C.wt)(),
+      t = (0, o.e7)([m.ZP], () => e.some(e => m.ZP.hasUnread(e))),
       n = (0, o.e7)([h.Z], () => h.Z.getSettingsFilteredMentions());
     return {
       anyUnread: t,
-      unreadRecentMentionsCount: (0, o.e7)([g.ZP, p.Z, f.Z], () => {
+      unreadRecentMentionsCount: (0, o.e7)([m.ZP, f.Z, g.Z], () => {
         var e, t;
-        return null != (t = null == n || null == (e = n.filter(e => (0, y.YH)(e, f.Z, p.Z, g.ZP))) ? void 0 : e.length) ? t : 0
+        return null != (t = null == n || null == (e = n.filter(e => (0, _.YH)(e, g.Z, f.Z, m.ZP))) ? void 0 : e.length) ? t : 0
       }, [n])
     }
-  }(), R = A > 0 ? (0, d.N)(A) : T ? (0, r.jsx)(s.fWl, {
+  }(), {
+    notificationCenterVariant: D
+  } = O.Lk.useExperiment({
+    location: "NotificationsInboxButtonInner"
+  }), L = P(), M = D === O.jP.LEGACY ? L ? (0, r.jsx)(s.fWl, {
+    style: {
+      height: 12,
+      width: 12,
+      top: -2,
+      left: -2,
+      position: "relative"
+    },
+    color: a.Z.STATUS_DANGER
+  }) : null : R > 0 ? (0, d.N)(R) : A ? (0, r.jsx)(s.fWl, {
     style: {
       height: 12,
       width: 12,
@@ -54,24 +75,20 @@ function S(e) {
       position: "relative"
     },
     color: a.Z.BG_BRAND
-  }) : null, {
-    notificationCenterVariant: D
-  } = b.L.useExperiment({
-    location: "NotificationsInboxButtonInner"
-  }), L = (0, o.e7)([m.Z], () => m.Z.getChannelId()), M = i.useMemo(() => {
-    if ("sidebar" === D) return C.Z5c.NOTIFICATIONS_INBOX(null != L ? L : void 0)
-  }, [D, L]);
+  }) : null, k = D === O.jP.LEGACY ? s.xx7 : s.Dkj, U = (0, o.e7)([b.Z], () => b.Z.getChannelId()), G = i.useMemo(() => {
+    if (D === O.jP.SIDEBAR) return S.Z5c.NOTIFICATIONS_INBOX(null != U ? U : void 0)
+  }, [D, U]);
   return (0, r.jsxs)(u.H, {
-    ref: E,
-    children: ["sidebar" === D && (0, r.jsx)(c.Z, {
-      selected: Z,
-      hovered: I,
-      unread: T,
-      className: j.pill
-    }), (0, r.jsx)(v.Z, {
+    ref: x,
+    children: [D === O.jP.SIDEBAR && (0, r.jsx)(c.Z, {
+      selected: T,
+      hovered: N,
+      unread: A,
+      className: E.pill
+    }), (0, r.jsx)(j.Z, {
       children: (0, r.jsx)(s.aRk, {
-        selected: Z || I,
-        lowerBadge: R,
+        selected: T || N,
+        lowerBadge: M,
         children: (0, r.jsx)(s.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -89,16 +106,16 @@ function S(e) {
             })
           }
           return e
-        }({}, P, x), n = n = {
-          onClick: O,
-          to: M,
-          selected: Z || I,
+        }({}, I, v), n = n = {
+          onClick: p,
+          to: G,
+          selected: T || N,
           onMouseEnter: () => w(!0),
           onMouseLeave: () => w(!1),
-          children: (0, r.jsx)(s.Dkj, {
+          children: (0, r.jsx)(k, {
             size: "custom",
             color: "currentColor",
-            className: j.notificationsIcon,
+            className: E.notificationsIcon,
             width: 20,
             height: 20
           })
@@ -117,18 +134,34 @@ function S(e) {
   })
 }
 
-function x() {
+function N() {
   let e = i.useRef(null),
     {
       notificationCenterVariant: t
-    } = b.L.useExperiment({
+    } = O.Lk.useExperiment({
       location: "NotificationsInboxButton"
-    });
-  return "sidebar" === t ? (0, r.jsx)(S, {}) : "popout" === t ? (0, r.jsx)(O.Z, {
+    }),
+    n = P();
+  return t === O.jP.SIDEBAR ? (0, r.jsx)(I, {}) : t === O.jP.POPOUT ? (0, r.jsx)(v.Z, {
     targetElementRef: e,
     popoutPosition: "right",
     popoutAlign: "bottom",
-    children: (t, n, i) => (0, r.jsx)(S, {
+    children: (t, n, i) => (0, r.jsx)(I, {
+      ref: e,
+      selectedOverride: n,
+      onClick: t,
+      popoutProps: i
+    })
+  }) : t === O.jP.LEGACY ? (0, r.jsx)(p.k, {
+    spacing: 0,
+    badgeState: {
+      badgeForYou: n
+    },
+    targetElementRef: e,
+    popoutPosition: "right",
+    popoutAlign: "top",
+    dialogClassName: E.positionLayer,
+    children: (t, n, i) => (0, r.jsx)(I, {
       ref: e,
       selectedOverride: n,
       onClick: t,

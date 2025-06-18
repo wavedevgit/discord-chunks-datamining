@@ -2,7 +2,7 @@
 n.d(t, {
   FJ: () => en,
   RE: () => G,
-  T5: () => B,
+  T5: () => V,
   Xb: () => H,
   YK: () => ee,
   YS: () => J,
@@ -97,12 +97,12 @@ function G(e) {
   return /^http/.test(e) ? e : "".concat(location.protocol, "//").concat(location.host).concat("/" === e.charAt(0) ? "" : "/").concat(e)
 }
 
-function V(e) {
+function B(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
   return t.indexOf(e) > -1
 }
 
-function B(e, t) {
+function V(e, t) {
   let n = [],
     r = e.getGuildId();
   return [Z.d4z.GUILD_CATEGORY, ...g.tx].includes(e.type) || n.push(new Promise(t => {
@@ -259,12 +259,12 @@ async function J(e, t, n) {
   if ("string" == typeof n)
     if (e.transport === A.He.POST_MESSAGE) {
       let e = (0, u.ZP)(t);
-      if (null == e || !V(n, [e])) throw new P.Z({
+      if (null == e || !B(n, [e])) throw new P.Z({
         closeCode: Z.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
       let e = await X(t);
-      if (r = f.ZP.createFromServer(e), !V(n, e.rpc_origins)) throw new P.Z({
+      if (r = f.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new P.Z({
         closeCode: Z.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } null == r && (r = f.ZP.createFromServer(await X(t)));

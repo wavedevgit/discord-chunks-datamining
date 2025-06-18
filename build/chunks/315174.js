@@ -60,7 +60,7 @@ function I(e, t) {
   }), e
 }
 
-function w(e) {
+function N(e) {
   var t;
   let {
     isRefreshEnabled: n,
@@ -99,7 +99,7 @@ function w(e) {
   })
 }
 
-function N(e) {
+function w(e) {
   let {
     guild: t,
     controller: n,
@@ -398,13 +398,13 @@ let M = i.memo(function(e) {
             })) : (0, r.jsx)(R, I(P({}, J), {
               children: x
             }))
-          }), U && (0, r.jsx)(N, {
+          }), U && (0, r.jsx)(w, {
             guild: v,
             controller: l,
             hasBanner: null != j,
             hasSubheader: null != A && A
           })]
-        }), null != j ? (0, r.jsx)(w, {
+        }), null != j ? (0, r.jsx)(N, {
           guild: v,
           controller: l,
           guildBanner: j,

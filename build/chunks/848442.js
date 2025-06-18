@@ -48,7 +48,7 @@ function I(e) {
   return e
 }
 
-function w(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,17 +61,17 @@ function w(e, t) {
   }), e
 }
 
-function N(e) {
+function w(e) {
   let {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([_.Z], () => _.Z.getGuild(t)), S = (null == g ? void 0 : g.hasFeature(j.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, N = "false" === a.K.get(x.tM, "false"), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = e, u = (0, f.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([_.Z], () => _.Z.getGuild(t)), S = (null == g ? void 0 : g.hasFeature(j.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === !0, w = "false" === a.K.get(x.tM, "false"), Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(C.m, {
     id: "shop-".concat(t),
     className: l()(P.previewChannelRow, {
       [P.selected]: n,
-      [P.phantomPreview]: N
+      [P.phantomPreview]: w
     }),
     innerClassName: P.previewChannelRowContent,
     renderIcon: e => (0, r.jsx)(m.Z, {
@@ -95,7 +95,7 @@ function N(e) {
       }), n && (0, r.jsx)(c.P3F, {
         className: P.closeButton,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.EW)(s.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(j.rMx.GUILD_SHOP_PREVIEW_CLICK, w(I({}, (0, h.hH)(t)), {
+          if (e.stopPropagation(), (0, b.EW)(s.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(j.rMx.GUILD_SHOP_PREVIEW_CLICK, N(I({}, (0, h.hH)(t)), {
               action_taken: x.mz.DISMISS_CHANNEL_ROW
             })), !u || !S) {
             var n;
@@ -119,7 +119,7 @@ function Z(e) {
   } = e, l = (0, g.g)(t, "guild_shop_channel_row"), o = () => {
     a.K.set(x.tM, "true"), (0, y.uL)(j.Z5c.CHANNEL(t.id, S.oC.GUILD_SHOP))
   };
-  return l ? (0, r.jsx)(N, {
+  return l ? (0, r.jsx)(w, {
     guildId: t.id,
     selected: i,
     handleClick: o
@@ -138,7 +138,7 @@ function Z(e) {
         let {
           default: e
         } = await n.e("66050").then(n.bind(n, 376573));
-        return n => (0, r.jsx)(e, w(I({}, n), {
+        return n => (0, r.jsx)(e, N(I({}, n), {
           guild: t
         }))
       })

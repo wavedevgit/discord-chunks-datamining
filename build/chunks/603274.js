@@ -1,6 +1,6 @@
 /** Chunk was on 98787 **/
 n.d(t, {
-  Z: () => N
+  Z: () => w
 }), n(388685), n(361932), n(187205), n(539854);
 var r = n(255367);
 n(73800);
@@ -75,8 +75,8 @@ function I() {
       return n
     }, [t]),
     I = (0, a.Wu)([y.default], () => E.map(e => y.default.getUser(e)), [E]),
-    w = (0, a.Wu)([y.default], () => S.map(e => y.default.getUser(e)), [S]),
-    N = P(c.gj8, l.filter(e => !S.includes(e.id) && !E.includes(e.id))),
+    N = (0, a.Wu)([y.default], () => S.map(e => y.default.getUser(e)), [S]),
+    w = P(c.gj8, l.filter(e => !S.includes(e.id) && !E.includes(e.id))),
     Z = 0 === o.length ? null : (0, r.jsxs)("div", {
       className: x.row,
       children: [(0, r.jsx)(c.ewx, {
@@ -100,7 +100,7 @@ function I() {
         })]
       })]
     }),
-    T = P(c.hGI, w.filter(e => null != e && !E.includes(e.id))),
+    T = P(c.hGI, N.filter(e => null != e && !E.includes(e.id))),
     {
       enabled: A
     } = u.c.useExperiment({
@@ -110,11 +110,11 @@ function I() {
     }),
     R = P(A ? c.iWm : c.nG3, I);
   return (0, r.jsxs)(r.Fragment, {
-    children: [Z, N, T, R]
+    children: [Z, w, T, R]
   })
 }
 
-function w() {
+function N() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: l()(x.row, x.rowGuildName),
@@ -126,7 +126,7 @@ function w() {
   })
 }
 
-function N(e) {
+function w(e) {
   let {
     "aria-label": t = !1,
     onShow: n,
@@ -136,7 +136,7 @@ function N(e) {
     hideOnClick: !0,
     spacing: l ? 12 : 20,
     position: "right",
-    text: (0, r.jsx)(w, {}),
+    text: (0, r.jsx)(N, {}),
     "aria-label": t,
     tooltipClassName: E.listItemTooltip,
     onTooltipShow: n,

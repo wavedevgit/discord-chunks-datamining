@@ -107,10 +107,10 @@ function b(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e.treeItemProps, ["onFocus"]), [I, w] = i.useState(!1), N = i.useCallback(() => {
-    s || w(!0), null == C || C(!0)
+  }(e.treeItemProps, ["onFocus"]), [I, N] = i.useState(!1), w = i.useCallback(() => {
+    s || N(!0), null == C || C(!0)
   }, [s, C]), Z = i.useCallback(() => {
-    s || w(!1), null == C || C(!1)
+    s || N(!1), null == C || C(!1)
   }, [s, C]), T = o || null == u ? null : (0, h.Or)(u), A = !o && d > 0 ? (0, h.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
   return (0, r.jsx)(a.tEY, {
     children: (0, r.jsx)(a.P3F, (t = function(e) {
@@ -134,7 +134,7 @@ function b(e) {
       className: f.folderButton,
       onClick: _,
       onContextMenu: v,
-      onMouseEnter: N,
+      onMouseEnter: w,
       onMouseLeave: Z,
       onKeyDown: j,
       onFocus: S,

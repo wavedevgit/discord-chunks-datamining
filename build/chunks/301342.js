@@ -1,8 +1,8 @@
 /** Chunk was on 98787 **/
 n.d(t, {
-  P: () => N,
+  P: () => w,
   Qo: () => Z,
-  ZP: () => w,
+  ZP: () => N,
   kw: () => A,
   rj: () => T
 });
@@ -71,15 +71,15 @@ let I = i.memo(function(e) {
         connectChannelDropTarget: _,
         disableManageChannels: v,
         position: I,
-        sortingPosition: w,
-        hideIcon: N,
+        sortingPosition: N,
+        hideIcon: w,
         children: Z
       } = e,
       T = (0, g.Q3)("CategoryChannel"),
       A = (0, a.e7)([O.ZP], () => O.ZP.isChannelMuted(l.getGuildId(), l.id)),
       R = (0, a.e7)([m.Z], () => m.Z.isCollapsed(l.id)),
       D = (0, a.e7)([y.Z], () => y.Z.can(C.Plq.MANAGE_CHANNELS, l));
-    t = null != w ? I > w ? S.containerDragAfter : S.containerDragBefore : S.containerDefault;
+    t = null != N ? I > N ? S.containerDragAfter : S.containerDragBefore : S.containerDefault;
     let L = i.useCallback(() => {
         R ? (0, u.mJ)(l.id) : (0, u.c4)(l.id)
       }, [l.id, R]),
@@ -164,7 +164,7 @@ let I = i.memo(function(e) {
               focusProps: {
                 enabled: !1
               },
-              children: [T || N ? null : (0, r.jsx)(c.CJ0, {
+              children: [T || w ? null : (0, r.jsx)(c.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: S.icon
@@ -173,7 +173,7 @@ let I = i.memo(function(e) {
                 children: (0, r.jsx)(f.Z, {
                   children: l.name
                 })
-              }), T && !N ? (0, r.jsx)(c.CJ0, {
+              }), T && !w ? (0, r.jsx)(c.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: S.icon
@@ -223,8 +223,8 @@ let I = i.memo(function(e) {
       });
     return null != _ && null != h ? _(h(z)) : z
   }),
-  w = (0, h.B)(I),
-  N = i.memo(function(e) {
+  N = (0, h.B)(I),
+  w = i.memo(function(e) {
     let {
       name: t,
       onDismiss: n,

@@ -179,7 +179,7 @@ let D = e => {
       })]
     })
   }),
-  V = e => {
+  B = e => {
     let t, n;
     var l, c, u, h, f, g, m, b, _, O, y, I, {
         displayOptions: v
@@ -194,10 +194,10 @@ let D = e => {
     let U = i.useCallback(e => {
         T(e => (e + 1) % v.assetIds.length), j(!0), null == e || e()
       }, [v.assetIds.length]),
-      V = i.useCallback(e => {
+      B = i.useCallback(e => {
         j(!1), null == e || e()
       }, []),
-      B = v.title();
+      V = v.title();
     return (0, r.jsx)(s.ua7, {
       text: (0, r.jsx)(G, {
         displayOptions: v,
@@ -209,14 +209,14 @@ let D = e => {
       delay: 100,
       allowOverflow: !0,
       hideOnClick: !1,
-      "aria-label": "string" == typeof B ? B : Z.intl.string(Z.t.rSXaxc),
+      "aria-label": "string" == typeof V ? V : Z.intl.string(Z.t.rSXaxc),
       children: e => (0, r.jsxs)(M, w(L(w(L({
         className: null != v.entryPointClassName ? (0, E.l)(x, v.entryPointClassName) : void 0
       }, C), {
         icon: v.entryPointIcon
       }), e), {
         onMouseEnter: () => U(e.onMouseEnter),
-        onMouseLeave: () => V(e.onMouseLeave),
+        onMouseLeave: () => B(e.onMouseLeave),
         children: [(0, r.jsx)("div", {
           className: x.marketingButtonBackground,
           style: {
@@ -234,7 +234,7 @@ let D = e => {
       }))
     })
   },
-  B = e => {
+  V = e => {
     var {
       displayOptions: t
     } = e, n = R(e, ["displayOptions"]);
@@ -346,11 +346,11 @@ let D = e => {
     }));
     if (null != s) switch (s.type) {
       case T.k2.TOOLTIP:
-        return (0, r.jsx)(B, w(L({}, d), {
+        return (0, r.jsx)(V, w(L({}, d), {
           displayOptions: s
         }));
       case T.k2.COACHTIP:
-        return (0, r.jsx)(V, w(L({}, d), {
+        return (0, r.jsx)(B, w(L({}, d), {
           displayOptions: s
         }));
       case T.k2.BADGE:

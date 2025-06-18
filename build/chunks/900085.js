@@ -27,8 +27,8 @@ var r, i = n(255367),
   E = n(483360),
   P = n(585483),
   I = n(63063),
-  w = n(51596),
-  N = n(823385),
+  N = n(51596),
+  w = n(823385),
   Z = n(415795),
   T = n(670512),
   A = n(558631),
@@ -179,12 +179,12 @@ class q extends l.PureComponent {
     }))
   }
   close() {
-    (0, w.Cp)()
+    (0, N.Cp)()
   }
   search(e) {
     this.setState({
       query: e
-    }), (0, w.yC)(e)
+    }), (0, N.yC)(e)
   }
   renderInput() {
     let {
@@ -302,9 +302,9 @@ class q extends l.PureComponent {
         mouseFocusDisabled: !1
       })
     }), M(this, "focusResult", e => {
-      this.state.mouseFocusDisabled || (0, w.tF)(this.props.results.indexOf(e))
+      this.state.mouseFocusDisabled || (0, N.tF)(this.props.results.indexOf(e))
     }), M(this, "selectResult", e => {
-      (0, w.Se)(e, this.props.queryMode === f.h8.TEXT_CHANNEL)
+      (0, N.Se)(e, this.props.queryMode === f.h8.TEXT_CHANNEL)
     }), M(this, "handleContextMenu", e => {
       let t = this.props.results[this.props.selectedIndex];
       switch (t.type) {
@@ -315,7 +315,7 @@ class q extends l.PureComponent {
             } = await Promise.all([n.e("7654"), n.e("44156"), n.e("55616"), n.e("49286"), n.e("6850"), n.e("58227"), n.e("32652"), n.e("54408"), n.e("20087"), n.e("92754"), n.e("56534"), n.e("87154"), n.e("33213"), n.e("40407")]).then(n.bind(n, 545135));
             return n => (0, i.jsx)(e, U(k({}, n), {
               guild: t.record,
-              onSelect: w.Cp,
+              onSelect: N.Cp,
               hideSettings: !0
             }))
           });
@@ -336,7 +336,7 @@ class q extends l.PureComponent {
                 return t => (0, i.jsx)(e, U(k({}, t), {
                   channel: r,
                   guild: l,
-                  onSelect: w.Cp
+                  onSelect: N.Cp
                 }))
               });
             case R.d4z.GUILD_VOICE:
@@ -348,7 +348,7 @@ class q extends l.PureComponent {
                 return t => (0, i.jsx)(e, U(k({}, t), {
                   channel: r,
                   guild: l,
-                  onSelect: w.Cp
+                  onSelect: N.Cp
                 }))
               });
             case R.d4z.ANNOUNCEMENT_THREAD:
@@ -360,7 +360,7 @@ class q extends l.PureComponent {
                 } = await n.e("40157").then(n.bind(n, 422200));
                 return t => (0, i.jsx)(e, U(k({}, t), {
                   channel: r,
-                  onSelect: w.Cp
+                  onSelect: N.Cp
                 }))
               });
             case R.d4z.GUILD_STORE:
@@ -371,7 +371,7 @@ class q extends l.PureComponent {
                 return t => (0, i.jsx)(e, U(k({}, t), {
                   channel: r,
                   guild: l,
-                  onSelect: w.Cp
+                  onSelect: N.Cp
                 }))
               });
             case R.d4z.GUILD_DIRECTORY:
@@ -393,7 +393,7 @@ class q extends l.PureComponent {
             return n => (0, i.jsx)(e, U(k({}, n), {
               channel: t.record,
               selected: S.Z.getChannelId() === t.record.id,
-              onSelect: w.Cp
+              onSelect: N.Cp
             }))
           });
         case f.h8.USER:
@@ -403,7 +403,7 @@ class q extends l.PureComponent {
             } = await Promise.all([n.e("79695"), n.e("69220"), n.e("86423")]).then(n.bind(n, 881351));
             return n => (0, i.jsx)(e, U(k({}, n), {
               user: t.record,
-              onSelect: w.Cp
+              onSelect: N.Cp
             }))
           })
       }
@@ -423,10 +423,10 @@ class q extends l.PureComponent {
         } = this.props;
       switch (i) {
         case "escape":
-          e.preventDefault(), e.stopPropagation(), n.length > 0 ? this.search("") : (0, w.Cp)();
+          e.preventDefault(), e.stopPropagation(), n.length > 0 ? this.search("") : (0, N.Cp)();
           return;
         case "k":
-          (!0 === e.ctrlKey || !0 === e.metaKey) && (e.preventDefault(), e.stopPropagation(), (0, w.Cp)());
+          (!0 === e.ctrlKey || !0 === e.metaKey) && (e.preventDefault(), e.stopPropagation(), (0, N.Cp)());
           return;
         case "enter": {
           if (-1 === l) return;
@@ -452,7 +452,7 @@ class q extends l.PureComponent {
         default:
           return
       }
-      e.preventDefault(), (0, w.tF)(l)
+      e.preventDefault(), (0, N.tF)(l)
     }), M(this, "renderRow", e => {
       let {
         row: t
@@ -569,7 +569,7 @@ class q extends l.PureComponent {
 }
 
 function Q(e) {
-  let t = (0, c.cj)([N.Z], () => N.Z.getProps()),
+  let t = (0, c.cj)([w.Z], () => w.Z.getProps()),
     n = (0, O.Pt)(),
     r = A.Z.useExperiment({
       location: "QuickSwitcher"

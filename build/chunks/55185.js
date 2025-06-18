@@ -216,7 +216,7 @@ function I(e) {
   })
 }
 
-function w(e) {
+function N(e) {
   let {
     closePopout: t
   } = e;
@@ -238,7 +238,7 @@ function w(e) {
   })
 }
 
-function N(e) {
+function w(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting(), {
@@ -290,11 +290,11 @@ function T(e) {
         closePopout: n
       });
     case 4:
-      return (0, i.jsx)(w, {
+      return (0, i.jsx)(N, {
         closePopout: n
       });
     case 5:
-      return (0, i.jsx)(N, {
+      return (0, i.jsx)(w, {
         closePopout: n
       });
     default:

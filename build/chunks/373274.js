@@ -28,8 +28,8 @@ var r, i = n(255367),
   E = n(742139),
   P = n(486311),
   I = n(620304),
-  w = n(220444),
-  N = n(31022),
+  N = n(220444),
+  w = n(31022),
   Z = n(10401),
   T = n(131704),
   A = n(592125),
@@ -188,7 +188,7 @@ class eg extends(r = l.PureComponent) {
         channel: o,
         category: s
       } = l;
-      return !!(0, T.vc)(o.record.type) && (!s.isCollapsed || !s.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, !0) && (0, w.d)(o.record)
+      return !!(0, T.vc)(o.record.type) && (!s.isCollapsed || !s.isMuted) && !o.isMuted && !!t.isItemVisible(r, i, !0) && (0, N.d)(o.record)
     })
   }
   renderTopUnread() {
@@ -673,7 +673,7 @@ class eg extends(r = l.PureComponent) {
             }) : null]
           }, x);
         case eo.d4z.GUILD_STAGE_VOICE:
-          var E, w;
+          var E, N;
           return (0, i.jsx)(X.Z, {
             channel: S,
             guild: r,
@@ -682,7 +682,7 @@ class eg extends(r = l.PureComponent) {
             connected: c === O.id,
             collapsed: O.isCollapsed || y.isCollapsed,
             voiceStates: null != (E = d[O.id]) ? E : [],
-            speakerVoiceStates: null != (w = p[O.id]) ? w : [],
+            speakerVoiceStates: null != (N = p[O.id]) ? N : [],
             disableManageChannels: h,
             isFavoriteCategory: _
           }, x);
@@ -820,8 +820,8 @@ let em = e => {
   l.useEffect(() => {
     null != n && P(n)
   }, [n, P]);
-  let I = (0, N.Z)(t),
-    w = (0, O.Q3)("NavigableChannels"),
+  let I = (0, w.Z)(t),
+    N = (0, O.Q3)("NavigableChannels"),
     Z = (0, E.V)("NavigableChannels");
   return (0, i.jsx)(b.Gt, {
     value: s,
@@ -837,7 +837,7 @@ let em = e => {
           stageChannelSpeakerVoiceStates: I,
           selectedGuildId: p,
           optInEnabled: y,
-          isRefreshEnabled: w,
+          isRefreshEnabled: N,
           isNewGuildPowerupsProgressBarEnabled: Z
         }))
       })

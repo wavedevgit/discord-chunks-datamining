@@ -1,7 +1,7 @@
 /** Chunk was on 98787 **/
 n.d(t, {
   E: () => I,
-  Z: () => w
+  Z: () => N
 }), n(388685), n(539854);
 var r, i = n(255367),
   l = n(73800),
@@ -241,7 +241,7 @@ function I(e, t) {
 j(P, "defaultProps", {
   strokeSize: h._3P.StrokeSizes.MEDIUM
 });
-let w = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
+let N = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
   let e = b.Z.activeItems,
     t = I(e, m.Z),
     {

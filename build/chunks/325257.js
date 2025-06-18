@@ -28,8 +28,8 @@ var r = n(255367),
   E = n(40153),
   P = n(593618),
   I = n(252686),
-  w = n(682662),
-  N = n(674552),
+  N = n(682662),
+  w = n(674552),
   Z = n(981631),
   T = n(388032),
   A = n(335426);
@@ -110,8 +110,8 @@ let k = i.memo(function(e) {
   } = e, {
     id: eo,
     parentId: es
-  } = U, ea = (0, b.Q3)("GuildItem"), ec = null != (t = e.upperBadge) ? t : q ? (0, N.Ny)() : null != Y ? (0, N.Or)(Y) : void 0, eu = null != (n = e.lowerBadge) ? n : void 0;
-  null == eu && Q > 0 ? eu = null != (l = (0, N.Ne)(Q, X ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : void 0 : null == eu && null != en && (eu = null != (f = (0, N.jt)({
+  } = U, ea = (0, b.Q3)("GuildItem"), ec = null != (t = e.upperBadge) ? t : q ? (0, w.Ny)() : null != Y ? (0, w.Or)(Y) : void 0, eu = null != (n = e.lowerBadge) ? n : void 0;
+  null == eu && Q > 0 ? eu = null != (l = (0, w.Ne)(Q, X ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER)) ? l : void 0 : null == eu && null != en && (eu = null != (f = (0, w.jt)({
     guildJoinRequestStatus: en
   })) ? f : void 0);
   let ed = null != (k = e.lowerBadgeSize) ? k : {
@@ -168,10 +168,10 @@ let k = i.memo(function(e) {
       if (e) return void eC.delay();
       eC.cancel(), ev(!1)
     }, [eC]),
-    ew = i.useCallback(e => {
+    eN = i.useCallback(e => {
       null == G || G(eo, e)
     }, [eo, G]),
-    eN = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE);
+    ew = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == F) return null;
   let eZ = e_ || ey ? (0, r.jsx)(x.Z, {
       guild: F,
@@ -199,7 +199,7 @@ let k = i.memo(function(e) {
       onMouseDown: eS,
       onContextMenu: eE,
       onKeyDown: eP,
-      icon: F.getIconURL(2 * eN, eb && z, ea),
+      icon: F.getIconURL(2 * ew, eb && z, ea),
       selected: W || eb
     }, ef), {
       "aria-setsize": ei,
@@ -230,8 +230,8 @@ let k = i.memo(function(e) {
         children: eZ
       })
     });
-  return (0, r.jsxs)(w.H, {
-    ref: ew,
+  return (0, r.jsxs)(N.H, {
+    ref: eN,
     children: [(0, r.jsx)(S.Z, {
       hovered: !eh && eb,
       selected: !eh && W,

@@ -34,8 +34,8 @@ function P(e) {
     channel: n,
     isChannelSelected: P,
     isChannelCollapsed: I,
-    voiceStates: w,
-    enableConnectedUserLimit: N,
+    voiceStates: N,
+    enableConnectedUserLimit: w,
     enableActivities: Z,
     isSubscriptionGated: T,
     needSubscriptionToAccess: A,
@@ -75,12 +75,12 @@ function P(e) {
     color: "text-muted",
     children: (0, o.NGo)(z)
   });
-  let K = null != (t = null == w ? void 0 : w.length) ? t : 0;
-  return null != N && N && H ? (0, r.jsx)(v.Z, {
+  let K = null != (t = null == N ? void 0 : N.length) ? t : 0;
+  return null != w && w && H ? (0, r.jsx)(v.Z, {
     userCount: K,
     video: B || V,
     channel: n
-  }) : I && (0, m.a)(w) && W ? (0, r.jsx)(o.IGR, {
+  }) : I && (0, m.a)(N) && W ? (0, r.jsx)(o.IGR, {
     text: x.intl.string(x.t.dI3q4u),
     color: l.Z.unsafe_rawColors.RED_400.css
   }) : null != Z && Z && (0, b.u)(U) ? (0, r.jsx)(_.Z, {

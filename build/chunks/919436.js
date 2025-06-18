@@ -27,9 +27,9 @@ var r, i = n(255367),
   E = n(674552),
   P = n(981631),
   I = n(388032),
-  w = n(223203);
+  N = n(223203);
 
-function N(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -45,7 +45,7 @@ function Z(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -172,7 +172,7 @@ class D extends(r = l.PureComponent) {
           hovered: !b && g,
           selected: !b && n,
           unread: !b && d,
-          className: w.pill
+          className: N.pill
         }), (0, i.jsx)(x.Z, {
           text: null != t ? t : "",
           selected: n,
@@ -219,7 +219,7 @@ class D extends(r = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), N(this, "state", {
+    super(...e), w(this, "state", {
       hovered: !1,
       animating: !0,
       controller: new o.Controller({
@@ -228,7 +228,7 @@ class D extends(r = l.PureComponent) {
         opacity: 0,
         config: R
       })
-    }), N(this, "handleContextMenu", e => {
+    }), w(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, r = t.type === P.d4z.DM ? v.default.getUser(t.getRecipientId()) : null;
@@ -252,7 +252,7 @@ class D extends(r = l.PureComponent) {
     })
   }
 }
-N(D, "defaultProps", {
+w(D, "defaultProps", {
   badge: 0,
   audio: !1,
   video: !1,

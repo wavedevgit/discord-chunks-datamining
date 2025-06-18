@@ -40,8 +40,8 @@ var r = n(255367),
   M = n(385956),
   U = n(610697),
   G = n(26373),
-  V = n(486622),
-  B = n(488634),
+  B = n(486622),
+  V = n(488634),
   H = n(899740),
   F = n(177033),
   z = n(355350),
@@ -67,13 +67,13 @@ function en() {
     }, []),
     {
       rejectAll: p
-    } = (0, V.m)({
+    } = (0, B.m)({
       onError: u
     }),
     h = (0, _.Z)("message-requests-list"),
     {
       channelId: f
-    } = (0, B._)(),
+    } = (0, V._)(),
     m = i.useCallback(() => {
       p(n.map(e => e.channel.id))
     }, [n, p]),

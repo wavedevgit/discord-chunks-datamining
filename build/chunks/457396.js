@@ -47,8 +47,8 @@ let U = e => {
   },
   G = e => {
     let t, n, E;
-    var G, V, {
-        selected: B,
+    var G, B, {
+        selected: V,
         route: H,
         locationState: F
       } = e,
@@ -97,9 +97,9 @@ let U = e => {
     es && eu.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), J && eu.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2);
     let [ed, ep] = (0, h.US)(eu, void 0, !0);
     if (i.useEffect(() => {
-        !0 === B && null != ed && ep(D.L.AUTO_DISMISS)
-      }, [ep, B, ed]), !U({
-        selected: B
+        !0 === V && null != ed && ep(D.L.AUTO_DISMISS)
+      }, [ep, V, ed]), !U({
+        selected: V
       })) return null;
     er === w.a$.NONE || J || (E = 7, n = (0, r.jsx)(v.Z, {
       className: "",
@@ -108,7 +108,7 @@ let U = e => {
       messageStyle: u.aj.SHORT_TIME,
       upperCase: !0
     })), ee ? (n = (0, r.jsx)(N.Z, {}), E = 0) : ed === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(P._y, {
-      isTabSelected: B,
+      isTabSelected: V,
       badgeCopy: k.intl.string(k.t.y2b7CA),
       offerExpiresAt: null
     }), E = 2) : J ? (n = (0, r.jsx)(A.S, {
@@ -118,18 +118,18 @@ let U = e => {
       showStars: !1
     }), E = 1) : null != X ? (n = (0, r.jsx)(P.GN, {
       userDiscount: X,
-      isTabSelected: B,
+      isTabSelected: V,
       includesAmountOff: !1
     }), E = 3) : null == Q || ec ? en ? (n = (0, r.jsx)(j.l, {
-      isSelected: B,
+      isSelected: V,
       onSelect: () => (0, p.EW)(o.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: D.L.TAKE_ACTION
       })
     }), E = 6) : $ && (n = (0, r.jsx)(T.k, {
       entryPoint: T.U.PrivateMessages
-    }), B || (t = M.localizeBadge), E = 5) : (n = (0, r.jsx)(P.$H, {
+    }), V || (t = M.localizeBadge), E = 5) : (n = (0, r.jsx)(P.$H, {
       trialOffer: Q,
-      isTabSelected: B
+      isTabSelected: V
     }), E = 4);
     let eh = (0, r.jsx)(c.Qj, (G = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -149,7 +149,7 @@ let U = e => {
       }
       return e
     }({
-      selected: B,
+      selected: V,
       route: H,
       icon: s.SrA,
       text: k.intl.string(k.t.Ipxkoq),
@@ -160,18 +160,18 @@ let U = e => {
           has_premium: K
         }), null != ed && ep(D.L.USER_DISMISS)
       }
-    }, z, q), V = V = {
+    }, z, q), B = B = {
       className: t,
       children: n
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(G, Object.getOwnPropertyDescriptors(V)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(G, Object.getOwnPropertyDescriptors(B)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(V)).forEach(function(e) {
-      Object.defineProperty(G, e, Object.getOwnPropertyDescriptor(V, e))
+    })(Object(B)).forEach(function(e) {
+      Object.defineProperty(G, e, Object.getOwnPropertyDescriptor(B, e))
     }), G));
     return en ? (0, r.jsx)(j.C, {
       children: eh
