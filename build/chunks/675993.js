@@ -22,8 +22,8 @@ var i = n(255367),
   x = n(783097),
   y = n(695676),
   g = n(520315),
-  N = n(29380),
-  j = n(783685),
+  j = n(29380),
+  N = n(783685),
   P = n(981631),
   E = n(388032),
   A = n(449549),
@@ -216,7 +216,7 @@ function w(e) {
     className: A.entrypointContainer,
     children: [(0, i.jsx)("div", {
       className: A.entryPointContainerFlexChild,
-      children: (0, i.jsx)(N.Z, {
+      children: (0, i.jsx)(j.Z, {
         context: n,
         application: l,
         sectionName: o,
@@ -225,7 +225,7 @@ function w(e) {
       })
     }), _ && null != b ? (0, i.jsx)("div", {
       className: A.entryPointContainerFlexChild,
-      children: (0, i.jsx)(j.Z, {
+      children: (0, i.jsx)(N.Z, {
         botUserId: b,
         applicationId: l.id,
         buttonSize: y,

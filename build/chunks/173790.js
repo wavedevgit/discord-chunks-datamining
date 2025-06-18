@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => N
+  Z: () => j
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -23,22 +23,22 @@ var i = n(255367),
   y = n(189102),
   g = n(413097);
 
-function N(e) {
+function j(e) {
   var t;
   let {
     context: n,
     application: c,
     sectionName: s
-  } = e, N = "channel" === n.type ? n.channel : void 0, P = (0, l.e7)([p.Z], () => p.Z.entrypoint()), E = null != (t = (0, d.q)(c.id === v.bi.BUILT_IN ? null : c.id)) ? t : c, A = (0, f.ye)(E) ? j : C.Z, I = r.useRef(null), [O, S] = r.useState(!1), {
+  } = e, j = "channel" === n.type ? n.channel : void 0, P = (0, l.e7)([p.Z], () => p.Z.entrypoint()), E = null != (t = (0, d.q)(c.id === v.bi.BUILT_IN ? null : c.id)) ? t : c, A = (0, f.ye)(E) ? N : C.Z, I = r.useRef(null), [O, S] = r.useState(!1), {
     iconURL: T,
     name: L
   } = r.useMemo(() => (0, f.sl)(E, {
     fakeAppIconURL: g,
     size: 84
-  }), [E]), R = (0, u.PL)(!0, !0), w = (0, u.LD)(null == N ? void 0 : N.guild_id, !0), Z = r.useMemo(() => (0, u.If)(n, E.id), [R, w, n, E.id]), k = !Z.isGuildInstalled && !Z.isUserInstalled;
+  }), [E]), R = (0, u.PL)(!0, !0), w = (0, u.LD)(null == j ? void 0 : j.guild_id, !0), Z = r.useMemo(() => (0, u.If)(n, E.id), [R, w, n, E.id]), k = !Z.isGuildInstalled && !Z.isUserInstalled;
   return r.useEffect(() => {
-    k && u.ZP.queryInstallOnDemandApp(E.id, null == N ? void 0 : N.id)
-  }, [E.id, null == N ? void 0 : N.id, k]), (0, i.jsxs)(a.u2D, {
+    k && u.ZP.queryInstallOnDemandApp(E.id, null == j ? void 0 : j.id)
+  }, [E.id, null == j ? void 0 : j.id, k]), (0, i.jsxs)(a.u2D, {
     className: y.container,
     fade: !0,
     ref: I,
@@ -73,7 +73,7 @@ function N(e) {
   })
 }
 
-function j(e) {
+function N(e) {
   let {
     context: t,
     application: n,

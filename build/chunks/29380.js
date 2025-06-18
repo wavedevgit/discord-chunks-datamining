@@ -26,18 +26,18 @@ function v(e) {
     sectionName: v,
     primaryEntryPointCommand: x,
     buttonSize: y = l.PhG.MEDIUM
-  } = e, g = r.useId(), N = r.useCallback(() => {
+  } = e, g = r.useId(), j = r.useCallback(() => {
     s.yT(d.ti.ACTIVITY)
-  }, []), j = r.useCallback(() => {
-    u.Z.shouldShowModal() && N()
-  }, [N]), {
+  }, []), N = r.useCallback(() => {
+    u.Z.shouldShowModal() && j()
+  }, [j]), {
     submitting: P,
     wasSubmitting: E
   } = (0, f.Z)({
     applicationId: n.id,
     context: t,
     launchingComponentId: g,
-    onSubmissionComplete: N
+    onSubmissionComplete: j
   }), [A, I] = r.useState(!1), O = (0, o.Qv)({
     applicationId: n.id,
     context: t
@@ -54,7 +54,7 @@ function v(e) {
     autoDismissOnClick: O === o.JS.LEAVE,
     launchingComponentId: g,
     submitting: null != E ? E : P,
-    onConfirmActivityLaunchChecksAlertOpen: j
+    onConfirmActivityLaunchChecksAlertOpen: N
   }), {
     disabled: w,
     reason: Z

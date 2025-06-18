@@ -1,7 +1,7 @@
 /** Chunk was on 49131 **/
 "use strict";
 n.d(t, {
-  q: () => w
+  q: () => S
 });
 var r = n(255367),
   l = n(73800),
@@ -58,7 +58,7 @@ function O(e) {
   })
 }
 
-function S(e) {
+function w(e) {
   let {
     containerRef: t,
     text: n
@@ -110,7 +110,7 @@ function S(e) {
   })
 }
 
-function w() {
+function S() {
   let e = l.useRef(null);
   return (0, r.jsxs)(o.Kqy, {
     className: y.container,
@@ -139,7 +139,7 @@ function w() {
         variant: "text-md/medium",
         color: "text-secondary",
         children: _.intl.format(C.default["8N4c5+"], {
-          airhornHook: t => (0, r.jsx)(S, {
+          airhornHook: t => (0, r.jsx)(w, {
             containerRef: e,
             text: t
           })

@@ -31,7 +31,7 @@ function _(e) {
     iconURL: C,
     scrollerRef: v,
     sectionName: x
-  } = e, y = (0, o.ap)((0, c.ZP)()), g = r.useRef(null), N = r.useRef(null), j = r.useRef(null), P = r.useRef(null), E = (0, a.dQu)(a.TVs.colors.BG_BASE_PRIMARY).hex(), A = (0, s.ZP)("number" == typeof C ? "" : C, null != E ? E : ""), I = r.useMemo(() => {
+  } = e, y = (0, o.ap)((0, c.ZP)()), g = r.useRef(null), j = r.useRef(null), N = r.useRef(null), P = r.useRef(null), E = (0, a.dQu)(a.TVs.colors.BG_BASE_PRIMARY).hex(), A = (0, s.ZP)("number" == typeof C ? "" : C, null != E ? E : ""), I = r.useMemo(() => {
     var e, t;
     let n = (0, l.compact)([u.Z.parseHexString(A), u.Z.parseHexString(y ? "#000000" : "#ffffff")]);
     return null != (t = null == (e = (0, d.k8)({
@@ -39,11 +39,11 @@ function _(e) {
       ratio: 5,
       saturationFactor: .6
     })) ? void 0 : e.toHexString()) ? t : A
-  }, [A, y]), O = b(g), S = b(N), T = r.useCallback(() => {
+  }, [A, y]), O = b(g), S = b(j), T = r.useCallback(() => {
     var e, t, n, i;
     let r = v.current,
       o = g.current,
-      a = j.current,
+      a = N.current,
       c = null == P ? void 0 : P.current,
       s = parseInt(null != (e = null == O ? void 0 : O.height) ? e : ""),
       u = parseInt(null != (t = null == S ? void 0 : S.height) ? t : "");
@@ -84,7 +84,7 @@ function _(e) {
       }), (0, i.jsx)("div", {
         className: h.nameContainer,
         children: (0, i.jsx)(a.X6q, {
-          ref: j,
+          ref: N,
           className: h.textApplicationName,
           variant: "heading-lg/extrabold",
           children: _
@@ -100,7 +100,7 @@ function _(e) {
         sectionName: x
       })
     }) : null, (0, i.jsx)("div", {
-      ref: N,
+      ref: j,
       className: h.bannerBackground,
       style: {
         backgroundColor: A

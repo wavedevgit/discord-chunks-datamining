@@ -95,19 +95,22 @@ class P extends c.Z {
 class j {
   reset() {
     let e = new Set,
-      t = l().map(_.Z.getMutableRelationships(), (t, n) => (t === O.OGo.FRIEND && e.add(n), new P(C(v({
-        key: n,
-        type: t,
-        userId: n,
-        nickname: _.Z.getNickname(n)
-      }, S(n), N(n), T(n)), {
-        spam: _.Z.isSpam(n),
-        ignoredUser: _.Z.isIgnored(n),
-        giftIntentType: t === O.OGo.FRIEND && h.Z.isTopAffinityFriendAnniversary({
-          userId: n
-        }) ? y.hX.FRIEND_ANNIVERSARY : void 0,
-        applicationId: _.Z.getOriginApplicationId(n)
-      })))),
+      t = Array.from(_.Z.getMutableRelationships().entries()).map(t => {
+        let [n, r] = t;
+        return r === O.OGo.FRIEND && e.add(n), new P(C(v({
+          key: n,
+          type: r,
+          userId: n,
+          nickname: _.Z.getNickname(n)
+        }, S(n), N(n), T(n)), {
+          spam: _.Z.isSpam(n),
+          ignoredUser: _.Z.isIgnored(n),
+          giftIntentType: r === O.OGo.FRIEND && h.Z.isTopAffinityFriendAnniversary({
+            userId: n
+          }) ? y.hX.FRIEND_ANNIVERSARY : void 0,
+          applicationId: _.Z.getOriginApplicationId(n)
+        }))
+      }),
       n = [],
       r = p.Z.getGameRelationships().values(),
       i = new Set;

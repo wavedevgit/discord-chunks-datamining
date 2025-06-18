@@ -24,8 +24,8 @@ var i, r = n(255367),
   x = n(182906),
   y = n(556505),
   g = n(367907),
-  N = n(220082),
-  j = n(70097),
+  j = n(220082),
+  N = n(70097),
   P = n(973616),
   E = n(594174),
   A = n(695103),
@@ -240,9 +240,9 @@ function Q(e) {
     description: C
   } = l.useMemo(() => (0, T.sl)(t, {
     fakeAppIconURL: H
-  }), [t]), v = l.useMemo(() => null == C ? null : (0, R.ae)(C), [C]), x = (0, N.ZP)(b, ""), [g, j] = l.useState(!1), P = l.useCallback(() => {
-    !0 === o && j(!0)
-  }, [o]), E = h || (0, T.lf)(t), I = "large_banner" === n || "medium_banner" === n, O = l.useCallback(() => j(!1), []), S = (0, c.e7)([f.Z, A.Z], () => f.Z.inDevModeForApplication(t.id) || A.Z.inTestModeForApplication(t.id), [t.id]), L = (0, T.WA)(t);
+  }), [t]), v = l.useMemo(() => null == C ? null : (0, R.ae)(C), [C]), x = (0, j.ZP)(b, ""), [g, N] = l.useState(!1), P = l.useCallback(() => {
+    !0 === o && N(!0)
+  }, [o]), E = h || (0, T.lf)(t), I = "large_banner" === n || "medium_banner" === n, O = l.useCallback(() => N(!1), []), S = (0, c.e7)([f.Z, A.Z], () => f.Z.inDevModeForApplication(t.id) || A.Z.inTestModeForApplication(t.id), [t.id]), L = (0, T.WA)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [I ? (0, r.jsxs)("div", {
       onMouseEnter: P,
@@ -412,7 +412,7 @@ function ee(e) {
           [B.videoFadeOut]: !n
         }),
         onAnimationEnd: () => n ? null : u(!1),
-        children: (0, r.jsx)(j.Z, {
+        children: (0, r.jsx)(N.Z, {
           src: c,
           mediaLayoutType: D.hV.MOSAIC,
           loop: !0,

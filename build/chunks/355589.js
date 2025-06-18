@@ -25,15 +25,15 @@ var r = n(255367),
   _ = n(474366),
   y = n(430824),
   O = n(186523),
-  S = n(585483),
-  w = n(70956),
+  w = n(585483),
+  S = n(70956),
   N = n(709054),
   P = n(961675),
   T = n(883429),
   I = n(993259),
   E = n(109434),
-  k = n(456269),
-  R = n(228392),
+  R = n(456269),
+  k = n(228392),
   Z = n(432771),
   M = n(538366),
   A = n(470623),
@@ -86,7 +86,7 @@ let V = {
     borderRadius: 10
   },
   q = e => {
-    (0, R.e5)({
+    (0, k.e5)({
       onboardingCTA: e
     })
   };
@@ -158,7 +158,7 @@ let X = e => {
     name: D.intl.string(D.t["6A0O6+"]),
     description: t ? D.intl.string(D.t["8hI5vr"]) : D.intl.format(D.t.ysxcAw, {
       onClick: e => {
-        null != l && (e.preventDefault(), e.stopPropagation(), (0, R.qz)(), (0, g.ZDy)(async () => {
+        null != l && (e.preventDefault(), e.stopPropagation(), (0, k.qz)(), (0, g.ZDy)(async () => {
           let {
             default: e
           } = await n.e("18417").then(n.bind(n, 740696));
@@ -169,7 +169,7 @@ let X = e => {
       }
     }),
     clickHandler: () => {
-      q(L.ZI.CREATE_POST), S.S.dispatch(F.CkL.FOCUS_COMPOSER_TITLE)
+      q(L.ZI.CREATE_POST), w.S.dispatch(F.CkL.FOCUS_COMPOSER_TITLE)
     },
     isDone: e
   }),
@@ -187,7 +187,7 @@ let X = e => {
     let i = l.useRef(0);
     l.useEffect(() => (n || !e || t ? clearTimeout(i.current) : i.current = setTimeout(() => {
       r()
-    }, 60 * w.Z.Millis.SECOND), () => clearTimeout(i.current)), [e, t, r, n])
+    }, 60 * S.Z.Millis.SECOND), () => clearTimeout(i.current)), [e, t, r, n])
   },
   en = (e, t, n) => {
     (0, p.ZP)(() => {
@@ -202,7 +202,7 @@ let X = e => {
       guildId: i,
       channel: a
     } = e, s = (0, h.e7)([y.Z], () => null != i ? y.Z.getRoles(i) : void 0), o = l.useCallback(() => {
-      S.S.dispatch(F.CkL.REMEASURE_TARGET)
+      w.S.dispatch(F.CkL.REMEASURE_TARGET)
     }, []);
     l.useEffect(() => {
       o()
@@ -376,11 +376,11 @@ let X = e => {
       }
     }, d.X), {
       tagFilter: s
-    } = (0, E.H)(l.id), o = (0, h.e7)([y.Z], () => y.Z.getGuild(l.getGuildId())), m = (0, k.r_)(l), {
+    } = (0, E.H)(l.id), o = (0, h.e7)([y.Z], () => y.Z.getGuild(l.getGuildId())), m = (0, R.r_)(l), {
       transitions: f,
       setVisible: x
-    } = el(), b = ei(i), j = ec(), S = Q(l.id, x), {
-      onboardingSteps: w,
+    } = el(), b = ei(i), j = ec(), w = Q(l.id, x), {
+      onboardingSteps: S,
       isDismissed: N,
       isHidden: P,
       isAllDone: T
@@ -388,9 +388,9 @@ let X = e => {
       guild: o,
       channel: l,
       hasAnyThread: t,
-      handleHide: S
-    }), I = !P && !N, R = (0, A.AF)(), Z = l.isMediaChannel(), L = e => R.getState().setOnboardingExpanded(e);
-    return (en(T, I, S), er({
+      handleHide: w
+    }), I = !P && !N, k = (0, A.AF)(), Z = l.isMediaChannel(), L = e => k.getState().setOnboardingExpanded(e);
+    return (en(T, I, w), er({
       isAllDone: T,
       isVisible: I,
       canManageChannel: m,
@@ -417,8 +417,8 @@ let X = e => {
                 variant: "heading-md/medium",
                 className: z.header,
                 children: D.intl.format(D.t["9L+8b2"], {
-                  numCompleted: w.completedSteps.toString(),
-                  numSteps: w.steps.length.toString()
+                  numCompleted: S.completedSteps.toString(),
+                  numSteps: S.steps.length.toString()
                 })
               }), (0, r.jsxs)(g.Text, {
                 variant: "text-xs/normal",
@@ -432,7 +432,7 @@ let X = e => {
                 expanded: i,
                 onClick: () => L(!i)
               }), (0, r.jsx)(ed, {
-                handleHide: S
+                handleHide: w
               })]
             })
           }), b((e, t) => t ? (0, r.jsx)(c.animated.div, {
@@ -440,7 +440,7 @@ let X = e => {
             className: z.listContainer,
             children: (0, r.jsx)("ol", {
               className: z.checklist,
-              children: w.getSteps().map(e => (0, r.jsxs)(g.P3F, {
+              children: S.getSteps().map(e => (0, r.jsxs)(g.P3F, {
                 tag: "li",
                 "aria-label": e.name,
                 onClick: () => j(e),

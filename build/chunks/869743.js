@@ -54,11 +54,10 @@ let h = e => {
     let {
       appRecord: t,
       closePopout: n,
-      showAppReportingOption: i,
-      selectedGuildId: l,
-      selectedChannelId: u,
-      children: d = null
-    } = e, f = (0, o.Z)({
+      selectedGuildId: i,
+      selectedChannelId: l,
+      children: u = null
+    } = e, d = (0, o.Z)({
       id: t.id,
       label: c.intl.string(c.t["+NP/b2"])
     });
@@ -67,17 +66,17 @@ let h = e => {
       onClose: n,
       "aria-label": c.intl.string(c.t.tKobzc),
       onSelect: void 0,
-      children: [i ? (0, r.jsx)(a.sNh, {
+      children: [(0, r.jsx)(a.sNh, {
         id: "report",
         label: c.intl.string(c.t["+78Pfn"]),
         color: "danger",
         action: () => (0, s.uu)({
           application: t,
           entrypoint: "authorized_apps_settings",
-          contextualGuildId: l,
-          contextualChannelId: u
+          contextualGuildId: i,
+          contextualChannelId: l
         })
-      }) : null, d, f]
+      }), u, d]
     })
   },
   m = e => {
@@ -85,16 +84,14 @@ let h = e => {
       appRecord: t,
       botUser: n,
       closePopout: i,
-      showAppReportingOption: a,
-      selectedGuildId: o,
-      selectedChannelId: s
+      selectedGuildId: a,
+      selectedChannelId: o
     } = e;
     return (0, r.jsx)(h, {
       appRecord: t,
       closePopout: i,
-      showAppReportingOption: a,
-      selectedGuildId: o,
-      selectedChannelId: s,
+      selectedGuildId: a,
+      selectedChannelId: o,
       children: (0, l.Z)({
         user: n,
         location: "UserSettingsAuthedApps",
@@ -105,12 +102,11 @@ let h = e => {
   g = e => {
     let {
       appRecord: t,
-      showAppReportingOption: n,
-      selectedGuildId: o,
-      selectedChannelId: s
-    } = e, l = i.useRef(null);
+      selectedGuildId: n,
+      selectedChannelId: o
+    } = e, s = i.useRef(null);
     return (0, r.jsx)(a.yRy, {
-      targetElementRef: l,
+      targetElementRef: s,
       renderPopout: e => {
         let {
           closePopout: i
@@ -118,22 +114,20 @@ let h = e => {
         return null == t.bot ? (0, r.jsx)(h, {
           appRecord: t,
           closePopout: i,
-          showAppReportingOption: n,
-          selectedGuildId: o,
-          selectedChannelId: s
+          selectedGuildId: n,
+          selectedChannelId: o
         }) : (0, r.jsx)(m, {
           appRecord: t,
           botUser: t.bot,
           closePopout: i,
-          showAppReportingOption: n,
-          selectedGuildId: o,
-          selectedChannelId: s
+          selectedGuildId: n,
+          selectedChannelId: o
         })
       },
       align: "right",
       position: "bottom",
       children: e => (0, r.jsx)(a.P3F, p(f({
-        innerRef: l,
+        innerRef: s,
         className: u.actionMenuButton,
         "aria-label": c.intl.string(c.t.UKOtz8)
       }, e), {

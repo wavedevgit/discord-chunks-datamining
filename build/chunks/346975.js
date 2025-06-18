@@ -25,15 +25,15 @@ var r = n(255367),
   _ = n(71619),
   y = n(898188),
   O = n(41776),
-  S = n(256413),
-  w = n(292853),
+  w = n(256413),
+  S = n(292853),
   N = n(982168),
   P = n(216572),
   T = n(543015),
   I = n(359110),
   E = n(897473),
-  k = n(344185),
-  R = n(235449),
+  R = n(344185),
+  k = n(235449),
   Z = n(665906),
   M = n(488131),
   A = n(433355),
@@ -184,11 +184,11 @@ function eO(e) {
   }, l) : null
 }
 
-function eS(e, t) {
+function ew(e, t) {
   return "card-".concat(e, "-").concat(t)
 }
 
-function ew(e) {
+function eS(e) {
   if ("string" == typeof e) {
     let t = e.match(/card-{\d+}-({\d+})$/);
     return null == t ? null : t[1]
@@ -243,8 +243,8 @@ function eN(e) {
       tagFilter: n,
       tagSetting: l,
       shouldAutomaticallyAck: !0
-    }), a = (0, g.e7)([k.Z, O.Z], () => {
-      let t = k.Z.hasLoaded(e.guild_id),
+    }), a = (0, g.e7)([R.Z, O.Z], () => {
+      let t = R.Z.hasLoaded(e.guild_id),
         n = O.Z.isLurking(e.guild_id);
       return !t && !n
     }), {
@@ -252,7 +252,7 @@ function eN(e) {
       canLoadMore: o,
       loadMore: c,
       loading: d
-    } = (0, R.qQ)(e, t, n, l), {
+    } = (0, k.qQ)(e, t, n, l), {
       searchResults: u,
       isSearchLoading: m
     } = (0, X.XZ)({
@@ -270,7 +270,7 @@ function eN(e) {
       isSearchLoading: m,
       layoutType: r
     }
-  }(t), B = m.length > 0, H = B || f.length > 0, U = (0, S.Z)(t), {
+  }(t), B = m.length > 0, H = B || f.length > 0, U = (0, w.Z)(t), {
     tagFilter: q,
     tagSetting: $
   } = (0, W.H)(t.id);
@@ -338,17 +338,17 @@ function eN(e) {
     }
   }, [t.id]);
   let {
-    columns: eR
+    columns: ek
   } = l.useMemo(() => eo ? ev.getRenderOptions(eE) : es.eU, [eo, eE]), eZ = l.useMemo(() => P ? Math.round((window.innerHeight - 200) / 118) : 0, [P]), eM = l.useMemo(() => {
-    let e = Math.ceil(window.innerHeight / (0, es.KW)(ev.getWidth(eE))) * eR;
+    let e = Math.ceil(window.innerHeight / (0, es.KW)(ev.getWidth(eE))) * ek;
     return _ ? e : 0
-  }, [eE, eR, _]), eA = l.useMemo(() => {
-    let e = Math.ceil(window.innerHeight / (0, es.KW)(ev.getWidth(eE))) * eR;
+  }, [eE, ek, _]), eA = l.useMemo(() => {
+    let e = Math.ceil(window.innerHeight / (0, es.KW)(ev.getWidth(eE))) * ek;
     return y ? e : 0
-  }, [eE, eR, y]), eL = l.useMemo(() => {
-    let e = Math.ceil(window.innerHeight / (0, es.KW)(ev.getWidth(eE))) * eR;
+  }, [eE, ek, y]), eL = l.useMemo(() => {
+    let e = Math.ceil(window.innerHeight / (0, es.KW)(ev.getWidth(eE))) * ek;
     return Z && ej ? e : 0
-  }, [eE, eR, Z, ej]), eF = l.useMemo(() => {
+  }, [eE, ek, Z, ej]), eF = l.useMemo(() => {
     if (eo)
       if (!ee && ej) return [1, 0];
       else if (!er) return [1, m.length + eM, 0];
@@ -377,7 +377,7 @@ function eN(e) {
     }), n ? (0, I.ad)(e, {
       source: eh.on.BROWSER
     }) : (ey.current = e.id, (0, M.ok)(e))
-  }, [t.guild_id, t.id, ey]), [eB, eH] = l.useState(i + s - 24), eU = l.useCallback((e, n, l) => 0 === e ? (0, r.jsx)(ek, {
+  }, [t.guild_id, t.id, ey]), [eB, eH] = l.useState(i + s - 24), eU = l.useCallback((e, n, l) => 0 === e ? (0, r.jsx)(eR, {
     channel: t,
     isEmpty: !B,
     isSearchLoading: Z,
@@ -521,9 +521,9 @@ function eN(e) {
             })
           })
         }
-      }), h.current = ew(n)
+      }), h.current = eS(n)
     }, [t, h]), b = l.useCallback(e => {
-      let t = ew(e);
+      let t = eS(e);
       if (null == t) return;
       let n = L.Z.getChannel(t);
       null != n && i(n, !0)
@@ -532,7 +532,7 @@ function eN(e) {
       if (0 === n[e].length) return "section-".concat(e, "-").concat(t);
       {
         let r = n[e][t];
-        return null == r ? eS(e, t) : eS(e, r)
+        return null == r ? ew(e, t) : ew(e, r)
       }
     }, [n]), v = l.useCallback((e, t, n) => s(e, t, eO({
       section: e,
@@ -605,7 +605,7 @@ function eN(e) {
           let n = i.findIndex(t => t.find(t => t === e)),
             r = t.current.getCoordsMap(),
             l = r["__section__".concat(n)],
-            o = r[eS(n, e)];
+            o = r[ew(n, e)];
           null != l && null != o && t.current.scrollIntoViewRect({
             start: l.top + o.top - 100,
             end: l.top + o.top + o.height + 50
@@ -675,7 +675,7 @@ function eN(e) {
           })
         }), U ? (0, r.jsx)("div", {
           className: ef.optInNotice,
-          children: (0, r.jsx)(w.Z, {
+          children: (0, r.jsx)(S.Z, {
             channel: t
           })
         }) : null, eo ? (0, r.jsx)(ed.KT, {
@@ -688,7 +688,7 @@ function eN(e) {
             itemGutter: 16,
             padding: 24,
             className: ef.grid,
-            columns: eR,
+            columns: ek,
             sections: eF,
             getItemKey: e0,
             getSectionHeight: e6,
@@ -787,21 +787,21 @@ function eE() {
   return Promise.resolve()
 }
 
-function ek(e) {
+function eR(e) {
   var t, n, i;
   let {
     channel: s,
     isEmpty: p,
     isSearchLoading: v,
     numResults: O,
-    children: S,
-    coords: w,
+    children: w,
+    coords: S,
     onHeightChange: T
   } = e, {
     name: I,
     formOpen: E,
-    titleFocused: k,
-    hasClickedForm: R,
+    titleFocused: R,
+    hasClickedForm: k,
     textAreaState: M,
     onboardingExpanded: A,
     setEditorAdditionRowHeight: L
@@ -851,7 +851,7 @@ function ek(e) {
     e_ = (0, X.ql)(s),
     ey = l.useRef(null),
     eO = l.useRef(null),
-    [eS, ew] = l.useState(0),
+    [ew, eS] = l.useState(0),
     {
       width: eN
     } = (0, g.e7)([H.Z], () => H.Z.windowSize()),
@@ -876,16 +876,16 @@ function ek(e) {
         if (i - t > a) break;
         n - e > r && (r = n - e)
       }
-      ew(r)
+      eS(r)
     }
   }, [s.availableTags, eN, eP, z]);
-  let ek = I.length > 0 && !E && (v || null != O),
-    eZ = !__OVERLAY__ && !R && !E && k && (0 === M.textValue.trim().length || M.textValue.trim() === e_) && 0 === eC.length && !ec;
+  let eR = I.length > 0 && !E && (v || null != O),
+    eZ = !__OVERLAY__ && !k && !E && R && (0 === M.textValue.trim().length || M.textValue.trim() === e_) && 0 === eC.length && !ec;
   l.useLayoutEffect(() => {
-    let e = ek || eZ;
+    let e = eR || eZ;
     if (!e) return L(0);
     null != eT.current && L(e ? eT.current.clientHeight : 0)
-  }, [L, ek, eZ, eT]);
+  }, [L, eR, eZ, eT]);
   let eM = e => {
       (0, Y.e7)({
         guildId: s.guild_id,
@@ -935,7 +935,7 @@ function ek(e) {
     ref: eh,
     onFocus: eU
   }, ez), {
-    style: ep(ex({}, w), {
+    style: ep(ex({}, S), {
       position: V === h.X.GRID ? "absolute" : "static",
       height: "auto"
     }),
@@ -948,7 +948,7 @@ function ek(e) {
         channel: s
       }) : null, (0, r.jsx)("div", {
         className: a()(ef.mainCard, ef.header, {
-          [ef.headerWithMatchingPosts]: ek || eZ
+          [ef.headerWithMatchingPosts]: eR || eZ
         }),
         children: (0, r.jsx)(er.Z, {
           parentChannel: s,
@@ -958,10 +958,10 @@ function ek(e) {
           canCreatePost: ed,
           inputRef: eB
         })
-      }), (ek || eZ) && (0, r.jsxs)("div", {
+      }), (eR || eZ) && (0, r.jsxs)("div", {
         className: ef.matchingPostsRow,
         ref: eT,
-        children: [ek && (0, r.jsxs)("div", {
+        children: [eR && (0, r.jsxs)("div", {
           className: ef.matchingPosts,
           children: [(0, r.jsx)(x.X6q, {
             variant: "text-xs/normal",
@@ -1023,7 +1023,7 @@ function ek(e) {
       }), (0, r.jsxs)("div", {
         className: ef.tagsContainer,
         ref: ey,
-        children: [(0, r.jsx)(eR, {
+        children: [(0, r.jsx)(ek, {
           channel: s
         }), eV.length > 0 ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
@@ -1079,7 +1079,7 @@ function ek(e) {
                   [ef.tagsButtonWithCount]: z.size > 0
                 }),
                 style: {
-                  left: eS
+                  left: ew
                 },
                 innerClassName: ef.tagsButtonInner,
                 "aria-label": z.size > 0 ? eg.intl.string(eg.t.IkpM1d) : eg.intl.string(eg.t["9vKK/P"]),
@@ -1123,7 +1123,7 @@ function ek(e) {
             })]
           })]
         }) : null]
-      }), S, Q && !eu && !ec && (0, r.jsx)(C.ZP, {
+      }), w, Q && !eu && !ec && (0, r.jsx)(C.ZP, {
         contentTypes: [f.z.FORUM_CHANNEL_HELPER_CARD],
         children: e => {
           let {
@@ -1139,7 +1139,7 @@ function ek(e) {
   }), "create-form")
 }
 
-function eR(e) {
+function ek(e) {
   let {
     channel: t
   } = e, n = t.isMediaChannel(), i = l.useRef(null);

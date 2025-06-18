@@ -22,8 +22,8 @@ var i = n(255367),
   x = n(427996),
   y = n(367907),
   g = n(10718),
-  N = n(895924),
-  j = n(835473),
+  j = n(895924),
+  N = n(835473),
   P = n(568100),
   E = n(471518),
   A = n(425986),
@@ -72,7 +72,7 @@ function et(e) {
     setSearchQuery: o,
     setScroller: a,
     isScrollCloseToBottom: c
-  } = e, s = (0, m.e7)([b.Z], () => b.Z.getIsEnabled(), []), u = n === R._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, M.Yn)(n), p = !(0, M.Yn)(n), h = n === R._b.TEXT, [C, v] = es(!0), [x, y] = es(u), [g, N] = es(d), [j, P] = es(p), E = C && x && g && j, A = (d || u) && !E, I = p && s;
+  } = e, s = (0, m.e7)([b.Z], () => b.Z.getIsEnabled(), []), u = n === R._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, M.Yn)(n), p = !(0, M.Yn)(n), h = n === R._b.TEXT, [C, v] = es(!0), [x, y] = es(u), [g, j] = es(d), [N, P] = es(p), E = C && x && g && N, A = (d || u) && !E, I = p && s;
   r.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null == (e = t.channel) ? void 0 : e.guild_id : void 0;
@@ -110,7 +110,7 @@ function et(e) {
         }), d && (0, i.jsx)(ea, {
           context: t,
           entrypoint: n,
-          onEmptyState: N
+          onEmptyState: j
         }), p && (0, i.jsx)(el, {
           context: t,
           onEmptyState: P
@@ -145,7 +145,7 @@ function ei(e) {
     (0, y.yw)(q.rMx.APP_LAUNCHER_SEARCH_QUERY_TYPED, {
       query: e,
       source: L.Z.entrypoint(),
-      location: N.Vh.APP_LAUNCHER_HOME
+      location: j.Vh.APP_LAUNCHER_HOME
     })
   }, 400, {
     leading: !1,
@@ -153,7 +153,7 @@ function ei(e) {
   }), []), d = r.useCallback(() => n(""), [n]), p = r.useCallback(() => {
     s(!0), (0, y.yw)(q.rMx.APP_LAUNCHER_SEARCH_FOCUSED, {
       source: L.Z.entrypoint(),
-      location: N.Vh.APP_LAUNCHER_HOME
+      location: j.Vh.APP_LAUNCHER_HOME
     })
   }, []), m = r.useCallback(() => {
     s(!1)
@@ -239,7 +239,7 @@ function er(e) {
       } = e;
       return t.id
     }) : [], [t, n]);
-    (0, j.Z)(i)
+    (0, N.Z)(i)
   }({
     apps: p,
     onlyActivityApps: o
@@ -319,7 +319,7 @@ function el(e) {
           context: n,
           application: r,
           look: a,
-          location: N.Vh.APP_LAUNCHER_HOME,
+          location: j.Vh.APP_LAUNCHER_HOME,
           sectionName: R.L3.ACTIVITIES,
           resultsPosition: t,
           sectionOverallPosition: 0,
@@ -382,7 +382,7 @@ function eo(e) {
           look: U.U4.ROW,
           sectionName: l,
           resultsPosition: n,
-          location: N.Vh.APP_LAUNCHER_HOME
+          location: j.Vh.APP_LAUNCHER_HOME
         }, r.id) : null
       })
     })]
@@ -591,7 +591,7 @@ function ec(e) {
           look: t,
           sectionName: b,
           resultsPosition: n,
-          location: N.Vh.APP_LAUNCHER_HOME,
+          location: j.Vh.APP_LAUNCHER_HOME,
           installOnDemand: c,
           enableVideoBanner: x,
           sectionOverallPosition: u,

@@ -24,12 +24,12 @@ var i = n(73800),
   y = n(689079),
   g = n(761652);
 
-function N(e, t) {
+function j(e, t) {
   let n = h.Z.getScoreWithoutLoadingLatest(e.id);
   return h.Z.getScoreWithoutLoadingLatest(t.id) - n
 }
 
-function j(e, t) {
+function N(e, t) {
   let n = (0, x.$d)(e),
     i = (0, x.$d)(t);
   return (0, p.un)(n, i)
@@ -281,7 +281,7 @@ function E(e) {
         let i = null == (t = (0, x.jD)(e)) ? void 0 : t.toLocaleLowerCase();
         return null != (n = null == i ? void 0 : i.includes(a.toLocaleLowerCase())) && n
       })],
-      sortComparers: [N, j]
+      sortComparers: [j, N]
     })
   }, [c, h, o, t, n, E, A]), T = O.length > 0, L = S.length > 0;
   return {
@@ -355,7 +355,7 @@ function A(e) {
   }), [h, d, n, p, u]), y = i.useCallback(() => {
     let e = x.length;
     h === _.M.FETCHED && e === f.current && e > 0 && e < C && e < l && x[e - 1].length > 0 && (f.current++, m(e => e + 1))
-  }, [h, l, x, C]), N = i.useCallback(e => {
+  }, [h, l, x, C]), j = i.useCallback(e => {
     let {
       query: t,
       page: n,
@@ -376,12 +376,12 @@ function A(e) {
     })
   }, [u]);
   return i.useEffect(() => {
-    r && N({
+    r && j({
       query: n,
       page: p,
       guildId: d
     })
-  }, [n, d, N, p, r]), i.useEffect(() => {
+  }, [n, d, j, p, r]), i.useEffect(() => {
     m(1)
   }, [d, n]), {
     fetchState: h,

@@ -53,12 +53,12 @@ function h(e) {
     description: g
   } = r.useMemo(() => (0, c.sl)(h, {
     fakeAppIconURL: f
-  }), [h]), N = r.useMemo(() => {
+  }), [h]), j = r.useMemo(() => {
     var e;
     let t = null != (e = null == n ? void 0 : n.displayDescription) ? e : g;
     return null == t ? null : (0, s.ae)(t, void 0)
   }, [g, null == n ? void 0 : n.displayDescription]), {
-    trackSearchResultsItemImpressionRef: j
+    trackSearchResultsItemImpressionRef: N
   } = (0, p.Z)({
     applicationId: h.id,
     commandId: null == n ? void 0 : n.id,
@@ -68,7 +68,7 @@ function h(e) {
   return (0, i.jsx)(l.P3F, {
     className: m.clickable,
     innerRef: e => {
-      j.current = e
+      N.current = e
     },
     onClick: b,
     onContextMenu: v,
@@ -90,7 +90,7 @@ function h(e) {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: N
+          children: j
         })]
       }), null != n ? (0, i.jsx)(l.Text, {
         className: m.cmdAppName,
