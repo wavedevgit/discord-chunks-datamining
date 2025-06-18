@@ -20,7 +20,7 @@ function m(e) {
     onClose: m,
     guild: b,
     transitionState: x
-  } = e, N = (0, t.KS)(n, b), k = (0, i.ZP)(n, !1), u = (0, c.q)(null == (a = n.linkedLobby) ? void 0 : a.application_id);
+  } = e, k = (0, t.KS)(n, b), N = (0, i.ZP)(n, !1), u = (0, c.q)(null == (a = n.linkedLobby) ? void 0 : a.application_id);
   return (0, l.jsxs)(o.Y0X, {
     transitionState: x,
     "aria-label": p.intl.string(p.t.X8jMDg),
@@ -31,14 +31,14 @@ function m(e) {
       separator: !1,
       children: [(0, l.jsxs)("div", {
         className: h.header,
-        children: [null != N && (0, l.jsx)(N, {
+        children: [null != k && (0, l.jsx)(k, {
           size: "md",
           color: "currentColor",
           className: h.channelIcon
         }), (0, l.jsx)(o.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: k
+          children: N
         })]
       }), (0, l.jsx)(o.olH, {
         onClick: m
@@ -60,7 +60,7 @@ function m(e) {
           color: "header-secondary",
           children: p.intl.format(p.t.Ud5rys, {
             applicationName: u.name,
-            helpdeskArticle: s.Z.getArticleURL(d.BhN.CHANNEL_LINKED_LOBBIES),
+            helpdeskArticle: s.Z.getArticleURL(d.BhN.LINKED_LOBBIES),
             separatorHook: (e, a) => (0, l.jsx)("span", {
               className: h.linkedLobbyNoticeSeparator,
               children: e

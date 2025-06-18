@@ -56,7 +56,7 @@ function A(e) {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: N.intl.format(N.t["16agur"], {
-          helpdeskArticle: v.Z.getArticleURL(S.BhN.CHANNEL_LINKED_LOBBIES)
+          helpdeskArticle: v.Z.getArticleURL(S.BhN.LINKED_LOBBIES)
         })
       }), (0, r.jsx)(c.P3F, {
         className: T.linkedLobbyEducationTooltipCloseClickContainer,
