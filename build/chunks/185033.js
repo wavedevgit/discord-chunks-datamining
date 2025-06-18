@@ -1,11 +1,12 @@
-/** Chunk was on 89398 **/
+/** Chunk was on web.js **/
+"use strict";
 n.r(t), n.d(t, {
-  default: () => b,
+  default: () => o,
   messagesLoader: () => i
 });
 let {
-  createLoader: h
-} = n(515149), i = h({
+  createLoader: r
+} = n(515149), i = r({
   bg: () => n.e("83662").then(n.t.bind(n, 238839, 19)),
   cs: () => n.e("22471").then(n.t.bind(n, 217555, 19)),
   da: () => n.e("42586").then(n.t.bind(n, 764434, 19)),
@@ -38,5 +39,5 @@ let {
   "zh-TW": () => n.e("48743").then(n.t.bind(n, 875641, 19)),
   "en-US": () => n.e("46129").then(n.bind(n, 665572))
 }, "en-US"), {
-  makeMessagesProxy: d
-} = n(515149), b = d(i)
+  makeMessagesProxy: a
+} = n(515149), o = a(i)

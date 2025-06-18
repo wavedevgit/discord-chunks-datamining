@@ -1,25 +1,25 @@
-/** Chunk was on 45873 **/
+/** Chunk was on 94363 **/
 n.d(t, {
-  Bo: () => c,
-  Ct: () => a,
-  LA: () => i,
-  NB: () => o,
-  cP: () => l
+  Bo: () => a,
+  Ct: () => o,
+  LA: () => l,
+  NB: () => s,
+  cP: () => i
 });
 var r = n(570140);
 
-function l(e, t, n, l, i) {
+function i(e, t, n, i, l) {
   r.Z.dispatch({
     type: "SPEAK_TEXT",
     text: e,
     interrupt: t,
     maxLength: n,
-    onStart: l,
-    onEnd: i
+    onStart: i,
+    onEnd: l
   })
 }
 
-function i(e, t) {
+function l(e, t) {
   r.Z.dispatch({
     type: "SPEAK_MESSAGE",
     channel: e,
@@ -27,7 +27,7 @@ function i(e, t) {
   })
 }
 
-function c(e, t) {
+function a(e, t) {
   r.Z.dispatch({
     type: "SPEAKING_MESSAGE",
     channelId: e,
@@ -35,13 +35,13 @@ function c(e, t) {
   })
 }
 
-function o() {
+function s() {
   r.Z.dispatch({
     type: "STOP_SPEAKING"
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "SET_TTS_SPEECH_RATE",
     speechRate: e

@@ -1,52 +1,52 @@
 /** Chunk was on 85668 **/
-n.d(t, {
-  X: () => a,
+n.d(e, {
+  X: () => r,
   h: () => i
 }), n(704826), n(35282), n(388685);
-var r = n(73800),
+var a = n(73800),
   l = n(902676);
 
-function i(e) {
+function i(t) {
   let {
-    protocol: t,
+    protocol: e,
     hostname: n
-  } = r.useMemo(() => ({
-    protocol: (0, l.E)(e),
-    hostname: (0, l.F)(e)
-  }), [e]), i = "//" === e.substr(t.length, 2) ? "//" : "", a = "".concat(t).concat(i).concat(n);
+  } = a.useMemo(() => ({
+    protocol: (0, l.E)(t),
+    hostname: (0, l.F)(t)
+  }), [t]), i = "//" === t.substr(e.length, 2) ? "//" : "", r = "".concat(e).concat(i).concat(n);
   return {
-    protocol: t,
+    protocol: e,
     authorityPrefix: i,
     hostname: n,
-    theRestOfTheUrl: e.replace(a, "")
+    theRestOfTheUrl: t.replace(r, "")
   }
 }
 
-function a(e) {
+function r(t) {
   let {
-    url: t,
+    url: e,
     trustUrl: n,
     onConfirm: l,
-    onCancel: a,
+    onCancel: r,
     onClose: o
-  } = e, [c, s] = r.useState(!1), {
-    protocol: d,
-    authorityPrefix: u,
-    hostname: h,
-    theRestOfTheUrl: x
-  } = i(t), m = r.useCallback(() => {
-    c && n(t), null == o || o(), l()
-  }, [t, c, n, l, o]);
+  } = t, [s, c] = a.useState(!1), {
+    protocol: x,
+    authorityPrefix: d,
+    hostname: m,
+    theRestOfTheUrl: h
+  } = i(e), u = a.useCallback(() => {
+    s && n(e), null == o || o(), l()
+  }, [e, s, n, l, o]);
   return {
-    protocol: d,
-    authorityPrefix: u,
-    hostname: h,
-    theRestOfTheUrl: x,
-    shouldTrustUrl: c,
-    setShouldTrustUrl: s,
-    handleConfirm: m,
-    handleCancel: r.useCallback(() => {
-      null == o || o(), a()
-    }, [a, o])
+    protocol: x,
+    authorityPrefix: d,
+    hostname: m,
+    theRestOfTheUrl: h,
+    shouldTrustUrl: s,
+    setShouldTrustUrl: c,
+    handleConfirm: u,
+    handleCancel: a.useCallback(() => {
+      null == o || o(), r()
+    }, [r, o])
   }
 }

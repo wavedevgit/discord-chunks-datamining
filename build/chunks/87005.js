@@ -1,4 +1,4 @@
-/** Chunk was on 91367 **/
+/** Chunk was on 94363 **/
 n.d(t, {
   f: () => C
 }), n(388685), n(539854);
@@ -31,8 +31,8 @@ function C(e) {
     allowCommandFetch: s,
     includeAuthorizedAppsAndFetch: C
   } = e, {
-    sectionDescriptors: v,
-    loading: b
+    sectionDescriptors: _,
+    loading: v
   } = o.wi({
     context: t,
     filters: h,
@@ -40,7 +40,7 @@ function C(e) {
     allowFetch: s
   });
   return {
-    loading: b,
+    loading: v,
     frecentApps: function(e) {
       let {
         sectionDescriptors: t,
@@ -56,15 +56,15 @@ function C(e) {
           return o && null != (t = null == (e = u.Z.getApps()) ? void 0 : e.filter(e => e.scopes.includes(i.x.APPLICATIONS_COMMANDS))) ? t : []
         }),
         C = t.filter(e => e.id !== f.bi.FRECENCY && e.id !== f.bi.BUILT_IN),
-        v = "contextless" === n.type,
-        b = r.useMemo(() => {
+        _ = "contextless" === n.type,
+        v = r.useMemo(() => {
           let e = [];
-          return v && e.push(p.jT), e
-        }, [v]),
-        _ = (0, d.h)(C, g);
-      return r.useMemo(() => s ? _.filter(e => null != e.application && (0, m.ye)(e.application) && null != (0, c.Xu)(n, e.id)).filter(e => !b.includes(e.id)) : _.filter(e => !b.includes(e.id)), [s, _, n, b])
+          return _ && e.push(p.jT), e
+        }, [_]),
+        b = (0, d.h)(C, g);
+      return r.useMemo(() => s ? b.filter(e => null != e.application && (0, m.ye)(e.application) && null != (0, c.Xu)(n, e.id)).filter(e => !v.includes(e.id)) : b.filter(e => !v.includes(e.id)), [s, b, n, v])
     }({
-      sectionDescriptors: v,
+      sectionDescriptors: _,
       context: t,
       onlyActivityApps: n,
       includeAuthorizedAppsAndFetch: C

@@ -1,15 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => d
-});
+  Z: () => p
+}), n(539854);
 var r = n(255367);
 n(73800);
 var i = n(952265),
-  a = n(468026),
-  o = n(388032);
+  a = n(82659),
+  o = n(481060),
+  s = n(468026),
+  l = n(724723),
+  c = n(388032);
 
-function s(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -18,20 +21,20 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function c(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -42,52 +45,80 @@ function c(e, t) {
   return n
 }
 
-function u(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let d = {
+let p = {
   show(e) {
     let {
       title: t,
       body: n,
-      confirmColor: o,
-      confirmText: s,
-      cancelText: c,
-      onConfirm: d,
-      onCancel: f,
-      onCloseCallback: _,
-      secondaryConfirmText: p,
-      onConfirmSecondary: h,
-      className: m,
-      titleClassName: g,
-      contextKey: E
-    } = e;
-    (0, i.h7)(e => (0, r.jsx)(a.default, u(l({}, e), {
-      title: t,
-      body: n,
-      confirmColor: o,
-      confirmText: s,
-      cancelText: c,
-      onConfirm: d,
-      onCancel: f,
-      secondaryConfirmText: p,
-      onConfirmSecondary: h,
-      className: m,
-      titleClassName: g
-    })), {
-      onCloseCallback: _
-    }, E)
+      confirmColor: u,
+      confirmText: f,
+      confirmVariant: p,
+      cancelText: h,
+      onConfirm: m,
+      onCancel: g,
+      onCloseCallback: E,
+      secondaryConfirmText: b,
+      onConfirmSecondary: y,
+      className: O,
+      titleClassName: v,
+      contextKey: I
+    } = e, T = l.Z.getCurrentConfig({
+      location: "AlertActionCreators"
+    }, {
+      autoTrackExposure: !0
+    }).enabled;
+    (0, i.h7)(e => {
+      if (null == b && T) {
+        let i = [];
+        return null != h && "" !== h && i.push({
+          text: h,
+          onClick: () => {
+            null == g || g(), e.onClose()
+          },
+          variant: "secondary"
+        }), i.push({
+          text: null != f ? f : c.intl.string(c.t.BddRzc),
+          onClick: () => {
+            null == m || m(), e.onClose()
+          },
+          variant: null != p ? p : u === o.Ttl.RED ? "destructive-primary" : "primary"
+        }), (0, r.jsx)(a.u, _(d({}, e), {
+          size: "sm",
+          title: t,
+          headerBody: n,
+          actions: i
+        }))
+      }
+      return (0, r.jsx)(s.default, _(d({}, e), {
+        title: t,
+        body: n,
+        confirmColor: u,
+        confirmText: f,
+        cancelText: h,
+        onConfirm: m,
+        onCancel: g,
+        secondaryConfirmText: b,
+        onConfirmSecondary: y,
+        className: O,
+        titleClassName: v
+      }))
+    }, {
+      onCloseCallback: E
+    }, I)
   },
   close() {},
   confirm(e) {
     return new Promise(t => {
-      this.show(l({
+      this.show(d({
         onConfirm() {
           t(!0)
         },
-        cancelText: o.intl.string(o.t["ETE/oK"]),
+        cancelText: c.intl.string(c.t["ETE/oK"]),
         onCancel() {
           t(!1)
         }

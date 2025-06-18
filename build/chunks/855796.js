@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => f
 });
 var r = n(544891),
   i = n(780384),
@@ -11,30 +11,32 @@ var r = n(544891),
   l = n(388032);
 
 function c(e) {
+  let t = new o.Hx(e).getAnyErrorMessage();
+  a.Z.show({
+    title: l.intl.string(l.t["328j/P"]),
+    body: null != t ? t : l.intl.string(l.t.fEptJC)
+  })
+}
+
+function u(e) {
   let {
     userId: t,
     applicationId: n,
     onSuccess: i,
-    type: c
+    type: a
   } = e;
   return r.tn.put({
     url: s.ANM.USER_GAME_RELATIONSHIP(t, n),
     body: {
-      type: c
+      type: a
     },
     oldFormErrors: !0,
     rejectWithError: !1
   }).then(() => {
     i()
-  }).catch(e => {
-    let t = new o.Hx(e);
-    return a.Z.show({
-      title: l.intl.string(l.t["328j/P"]),
-      body: t.getAnyErrorMessage()
-    }), Promise.reject(e)
-  })
+  }).catch(e => (c(e), Promise.reject(e)))
 }
-async function u(e) {
+async function d(e) {
   let {
     userId: t,
     applicationId: n,
@@ -46,21 +48,17 @@ async function u(e) {
       oldFormErrors: !0,
       rejectWithError: !1
     }), i()
-  } catch (t) {
-    let e = new o.Hx(t);
-    a.Z.show({
-      title: l.intl.string(l.t["328j/P"]),
-      body: e.getAnyErrorMessage()
-    })
+  } catch (e) {
+    c(e)
   }
 }
-let d = {
+let f = {
   removeGameFriend: async function(e) {
     let {
       userId: t,
       applicationId: n
     } = e;
-    await u({
+    await d({
       userId: t,
       applicationId: n,
       onSuccess: () => {
@@ -73,7 +71,7 @@ let d = {
       userId: t,
       applicationId: n
     } = e;
-    return c({
+    return u({
       userId: t,
       applicationId: n,
       type: s.OGo.FRIEND,
@@ -87,7 +85,7 @@ let d = {
       userId: t,
       applicationId: n
     } = e;
-    await u({
+    await d({
       userId: t,
       applicationId: n,
       onSuccess: () => {
