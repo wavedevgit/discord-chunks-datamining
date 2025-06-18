@@ -30,17 +30,29 @@ let d = [{
     } = e;
     return "".concat(t)
   }
+}, {
+  key: "vcProbability",
+  header: "VOICE AFFINITY",
+  cellClassName: o.affinityCell,
+  render(e) {
+    let {
+      vcProbability: t
+    } = e;
+    return "".concat(t)
+  }
 }];
 
 function u() {
   let e = (0, r.Wu)([l.Z, i.default], () => l.Z.getUserAffinities().map(e => {
     let {
       otherUserId: t,
-      communicationProbability: n
+      communicationProbability: n,
+      vcProbability: a
     } = e;
     return {
       user: i.default.getUser(t),
       affinity: n,
+      vcProbability: a,
       key: t
     }
   }));
