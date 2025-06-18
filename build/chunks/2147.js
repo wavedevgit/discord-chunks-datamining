@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   G: () => eO,
-  Z: () => eT
+  Z: () => ew
 }), n(997841), n(953529), n(290780);
 var i = n(255367),
   l = n(73800),
@@ -29,8 +29,8 @@ var i = n(255367),
   E = n(600164),
   O = n(313201),
   Z = n(318766),
-  w = n(907040),
-  T = n(906411),
+  T = n(907040),
+  w = n(906411),
   R = n(633302),
   I = n(109434),
   _ = n(162389),
@@ -198,7 +198,7 @@ function eZ(e) {
     let {
       closePopout: l
     } = e;
-    return (0, i.jsx)(w.Z, {
+    return (0, i.jsx)(T.Z, {
       channel: n,
       guildId: r,
       pickerIntention: en.Hz.CHANNEL_NAME,
@@ -209,7 +209,7 @@ function eZ(e) {
           emoji: n,
           willClose: i
         } = e;
-        null != n && n.type === T.B.UNICODE && t(n.surrogates), i && l()
+        null != n && n.type === w.B.UNICODE && t(n.surrogates), i && l()
       },
       showOnlyUnicode: !0,
       analyticsOverride: eS
@@ -242,7 +242,7 @@ function eZ(e) {
     }
   })
 }
-class ew extends l.PureComponent {
+class eT extends l.PureComponent {
   componentDidMount() {
     null == this.props.regions && null != this.props.guild && p.Z.fetchRegions(this.props.guild.id)
   }
@@ -278,15 +278,15 @@ class ew extends l.PureComponent {
         isOwner: O,
         showAdvancedSlowModeSetting: Z
       } = this.props,
-      w = B.Ec.has(e.type),
-      T = e.isForumLikeChannel(),
-      I = T && (null == (n = e.availableTags) ? void 0 : n.every(e => e.moderated)),
+      T = B.Ec.has(e.type),
+      w = e.isForumLikeChannel(),
+      I = w && (null == (n = e.availableTags) ? void 0 : n.every(e => e.moderated)),
       L = (null == (l = F.default.getCurrentUser()) ? void 0 : l.isStaff()) === !0,
       D = B.TK.has(e.type) ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(g.xJW, {
-          title: T ? er.intl.string(er.t.yR6Hwc) : er.intl.string(er.t.X8jMDg),
+          title: w ? er.intl.string(er.t.yR6Hwc) : er.intl.string(er.t.X8jMDg),
           className: ea.marginTop20,
-          children: T ? (0, i.jsx)(S.Z, {
+          children: w ? (0, i.jsx)(S.Z, {
             innerClassName: es.forumGuidelines,
             characterCountClassName: es.forumGuidelinesCharacterCount,
             maxCharacterCount: et.Z7,
@@ -323,7 +323,7 @@ class ew extends l.PureComponent {
           className: s()(ea.marginTop40, ea.marginBottom40)
         })]
       }) : null,
-      k = T && L ? (0, i.jsxs)("div", {
+      k = w && L ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(g.xJW, {
           title: er.intl.string(er.t.qk2jdX),
           className: ea.marginTop20,
@@ -495,14 +495,14 @@ class ew extends l.PureComponent {
           className: s()(ea.marginTop40, ea.marginBottom40)
         })]
       }) : null,
-      z = w ? v : x,
+      z = T ? v : x,
       X = B.X_.has(e.type) ? (0, i.jsxs)("div", {
         children: [(0, i.jsxs)(g.xJW, {
           children: [(0, i.jsx)(g.vwX, {
             id: em,
             className: ea.marginBottom8,
             children: er.intl.string(er.t["tTHx9/"])
-          }), T ? (0, i.jsx)(g.vwX, {
+          }), w ? (0, i.jsx)(g.vwX, {
             className: ea.marginTop20,
             children: er.intl.string(er.t.O1c02t)
           }) : null, !0 === Z ? (0, i.jsx)($.Z, {
@@ -522,8 +522,8 @@ class ew extends l.PureComponent {
           }), (0, i.jsx)(g.R94, {
             id: ep,
             type: g.R94.Types.DESCRIPTION,
-            children: T ? er.intl.string(er.t["a+1pdH"]) : w ? er.intl.string(er.t.OMmNCg) : er.intl.string(er.t["HEA/DQ"])
-          }), T ? (0, i.jsxs)(i.Fragment, {
+            children: w ? er.intl.string(er.t["a+1pdH"]) : T ? er.intl.string(er.t.OMmNCg) : er.intl.string(er.t["HEA/DQ"])
+          }), w ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(g.vwX, {
               className: ea.marginTop20,
               children: er.intl.string(er.t["fkY5+v"])
@@ -547,7 +547,7 @@ class ew extends l.PureComponent {
           className: s()(ea.marginTop40, ea.marginBottom40)
         })]
       }) : null,
-      J = w && null != e.threadMetadata ? (0, i.jsxs)("div", {
+      J = T && null != e.threadMetadata ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(g.xJW, {
           children: (0, i.jsx)(f.Z, {
             page: ee.ZY5.CHANNEL_SETTINGS,
@@ -647,7 +647,7 @@ class ew extends l.PureComponent {
           children: er.intl.string(er.t.u8LZOj)
         })]
       }) : null;
-    return e.type === ee.d4z.GUILD_CATEGORY ? (j = er.intl.string(er.t.OCAkGB), p = "category-name") : e.isForumPost() ? (j = er.intl.string(er.t.uyVrTE), p = "post-title") : w ? (j = er.intl.string(er.t.j3XWjI), p = "thread-name") : (j = er.intl.string(er.t.PVbHDg), p = "channel-name"), (0, i.jsxs)("div", {
+    return e.type === ee.d4z.GUILD_CATEGORY ? (j = er.intl.string(er.t.OCAkGB), p = "category-name") : e.isForumPost() ? (j = er.intl.string(er.t.uyVrTE), p = "post-title") : T ? (j = er.intl.string(er.t.j3XWjI), p = "thread-name") : (j = er.intl.string(er.t.PVbHDg), p = "channel-name"), (0, i.jsxs)("div", {
       children: [(0, i.jsx)(g.xJW, {
         title: j,
         children: this.props.isEmojiInChannelNamesEnabled ? (0, i.jsxs)("div", {
@@ -901,7 +901,7 @@ class ew extends l.PureComponent {
       } = e, {
         channel: n
       } = this.props;
-      return (0, i.jsx)(w.Z, {
+      return (0, i.jsx)(T.Z, {
         guildId: null == n ? void 0 : n.guild_id,
         closePopout: t,
         onSelectEmoji: e => {
@@ -1092,7 +1092,7 @@ class ew extends l.PureComponent {
   }
 }
 
-function eT() {
+function ew() {
   let {
     errors: e,
     channel: t,
@@ -1116,7 +1116,7 @@ function eT() {
   }), E = l.useCallback(e => {
     null != j && f.getState().setLayoutType(j, e)
   }, [j, f]);
-  return (0, i.jsx)(ew, {
+  return (0, i.jsx)(eT, {
     errors: e,
     channel: t,
     channelName: m,

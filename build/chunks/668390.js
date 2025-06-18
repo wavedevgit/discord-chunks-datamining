@@ -95,8 +95,8 @@ function x(e) {
     showContextMenu: E,
     theme: O,
     roleStyle: Z,
-    "aria-label": w
-  } = e, T = (0, h.X)(d.id, null == s ? void 0 : s.colorStrings, "GuildRole"), R = l.useCallback(e => {
+    "aria-label": T
+  } = e, w = (0, h.X)(d.id, null == s ? void 0 : s.colorStrings, "GuildRole"), R = l.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -115,19 +115,19 @@ function x(e) {
     selectedItem: v,
     onItemSelect: y,
     itemType: C,
-    "aria-label": null != S ? "".concat(w, ", ").concat(S) : w,
+    "aria-label": null != S ? "".concat(T, ", ").concat(S) : T,
     children: (0, i.jsxs)("div", {
       className: m.roleContent,
       onContextMenu: R,
       children: ["dot" === Z ? (0, i.jsx)(o.FhE, {
         color: null != t ? t : void 0,
-        colors: T,
+        colors: w,
         className: m.roleDot,
         background: !1,
         tooltip: !1
       }) : (0, i.jsx)(o.xko, {
         color: null != t ? t : void 0,
-        colors: T,
+        colors: w,
         className: m.roleCircle
       }), function() {
         if (!N) return null;
