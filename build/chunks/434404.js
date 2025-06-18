@@ -228,8 +228,9 @@ let R = new s.Z("GuildSettingsActionCreators"),
         discoverySplash: S,
         publicUpdatesChannelId: N,
         premiumProgressBarEnabled: C,
-        profile: P
-      } = t, w = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, D = A(T({
+        profile: P,
+        moderatorReportingEnabled: w
+      } = t, D = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, L = A(T({
         name: n,
         description: r,
         icon: o,
@@ -252,16 +253,17 @@ let R = new s.Z("GuildSettingsActionCreators"),
       }, null != C ? {
         premium_progress_bar_enabled: C
       } : null), {
-        profile: null != P ? (0, l.n)(P) : P
+        profile: null != P ? (0, l.n)(P) : P,
+        moderator_reporting_enabled: w
       });
       return a.Z.dispatch({
         type: "GUILD_SETTINGS_SUBMIT"
       }), i.tn.patch({
         url: O.ANM.GUILD(e),
         query: {
-          for_discovery: w.isForDiscovery
+          for_discovery: D.isForDiscovery
         },
-        body: D,
+        body: L,
         oldFormErrors: !0,
         rejectWithError: !1
       }).then(t => {
@@ -275,7 +277,7 @@ let R = new s.Z("GuildSettingsActionCreators"),
             errors: e.body
           }), R.error("Failed to save guild settings", {
             errors: e.body
-          }), w.throwErr) throw e.body
+          }), D.throwErr) throw e.body
       })
     },
     updateGuildModeration: (e, t) => i.tn.patch({
