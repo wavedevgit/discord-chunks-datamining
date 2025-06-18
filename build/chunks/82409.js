@@ -200,7 +200,7 @@ function D(e) {
       listName: "notifications-inbox",
       loadMore: function(e) {
         let t = null != a && a.length > 0 ? a[a.length - 1].id : null;
-        d && !p && L(null, t), D !== E.jd.Done && D !== E.jd.Loading && V(e)
+        [N.V5.ALL, N.V5.MENTIONS, N.V5.ANNOUNCEMENTS].includes(g) && d && !p && L(null, t), [N.V5.ALL, N.V5.ANNOUNCEMENTS].includes(g) && D !== E.jd.Done && D !== E.jd.Loading && V(e)
       },
       renderLoadingState: M,
       setInboxReadState: P,

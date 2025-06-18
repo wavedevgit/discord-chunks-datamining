@@ -1,6 +1,6 @@
 /**
   Module ID: 98787
-  Original File Name: 21442f92780d5830
+  Original File Name: 1906b471f576c599
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1393,7 +1393,7 @@
 }
 
 .avatar__9897f {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--bg-mod-strong);
     border-radius: 50%;
     flex-shrink: 0;
     height: 32px;
@@ -1410,7 +1410,7 @@
 }
 
 .line__9897f {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--bg-mod-strong);
     border-radius: 8px;
     height: 16px;
     overflow: hidden;
@@ -6575,4 +6575,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=21442f92780d5830.css.map*/
+/*# sourceMappingURL=1906b471f576c599.css.map*/
