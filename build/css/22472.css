@@ -1,6 +1,6 @@
 /**
   Module ID: 22472
-  Original File Name: 990bb883baf3acfb
+  Original File Name: 031f986e6af5f9a5
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4260,9 +4260,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .avatarWrapper__37e49 .nameTag__37e49 {
-    padding-bottom: 4px;
-    padding-left: 8px;
-    padding-top: 4px
+    margin: 0;
+    padding: 0
 }
 
 .avatarWrapper__37e49 .avatar__37e49:hover {
@@ -4387,14 +4386,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     width: 48px
 }
 
-.theme-dark .container__37e49 {
-    background: var(--bg-overlay-1,var(--background-secondary-alt))
-}
-
-.theme-light .container__37e49 {
-    background: var(--bg-overlay-3,var(--background-secondary-alt))
-}
-
 .buttons__37e49 {
     display: flex
 }
@@ -4446,11 +4437,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .visual-refresh .avatarWrapper__37e49:hover {
     background-color: var(--background-mod-normal)
-}
-
-.visual-refresh .nameTag__37e49 {
-    margin: 0;
-    padding: 0
 }
 
 .visual-refresh .buttons__37e49 {
@@ -19705,4 +19691,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=990bb883baf3acfb.css.map*/
+/*# sourceMappingURL=031f986e6af5f9a5.css.map*/

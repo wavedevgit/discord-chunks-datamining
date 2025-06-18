@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => j
+  Z: () => M
 }), n(388685), n(539854), n(35282);
 var r = n(255367),
   i = n(73800),
@@ -72,18 +72,9 @@ function x(e, t) {
 }
 new E.Z("ChannelEditor.tsx");
 let k = function() {
-    for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
-  },
-  M = {
-    12: P.fontSize12Padding,
-    14: P.fontSize14Padding,
-    15: P.fontSize15Padding,
-    16: P.fontSize16Padding,
-    18: P.fontSize18Padding,
-    20: P.fontSize20Padding,
-    24: P.fontSize24Padding
-  };
-class j extends i.Component {
+  for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
+};
+class M extends i.Component {
   componentDidMount() {
     this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload)
   }
@@ -208,34 +199,33 @@ class j extends i.Component {
       onSubmit: h,
       channel: m,
       type: g,
-      fontSize: E,
-      useSlate: b,
-      spellcheckEnabled: O,
-      useNewSlashCommands: T,
-      canOnlyUseTextCommands: N,
-      className: R,
-      id: w,
-      required: L,
-      maxCharacterCount: k,
-      allowNewLines: j,
-      "aria-describedby": U,
-      "aria-labelledby": G,
-      accessibilityLabel: B
+      useSlate: E,
+      spellcheckEnabled: b,
+      useNewSlashCommands: O,
+      canOnlyUseTextCommands: T,
+      className: N,
+      id: R,
+      required: w,
+      maxCharacterCount: L,
+      allowNewLines: k,
+      "aria-describedby": M,
+      "aria-labelledby": j,
+      accessibilityLabel: U
     } = this.props, {
-      submitting: V,
-      popup: F
-    } = this.state, Z = {
+      submitting: G,
+      popup: B
+    } = this.state, V = {
       channel: m,
-      className: o()(R, P.textArea, {
-        [P.textAreaSlate]: b,
-        [P.textAreaDisabled]: u || V
+      className: o()(N, P.textArea, {
+        [P.textAreaSlate]: E,
+        [P.textAreaDisabled]: u || G
       }),
-      id: w,
+      id: R,
       placeholder: this.getPlaceholder(),
-      required: L,
-      accessibilityLabel: B,
+      required: w,
+      accessibilityLabel: U,
       disabled: u || !1,
-      submitting: V,
+      submitting: G,
       isEdit: g === v.Ie.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
@@ -245,40 +235,40 @@ class j extends i.Component {
       moveSelection: this.handleMoveSelection,
       maybeShowAutocomplete: this.maybeShowAutocomplete,
       hideAutocomplete: this.hideAutocomplete,
-      allowNewLines: j,
+      allowNewLines: k,
       onChange: d,
       onResize: p,
       onKeyDown: _,
       onSubmit: h,
-      textAreaPaddingClassName: o()(M[E], {
+      textAreaPaddingClassName: o()({
         [P.textAreaWithoutAttachmentButton]: g !== v.Ie.NORMAL && g !== v.Ie.OVERLAY && g !== v.Ie.THREAD_CREATION && g !== v.Ie.SIDEBAR,
         [P.textAreaForPostCreation]: g === v.Ie.CREATE_FORUM_POST,
         [P.textAreaCustomGift]: g === v.Ie.CUSTOM_GIFT,
         [P.textAreaForUserProfile]: g === v.Ie.USER_PROFILE,
         [P.textAreaForOverlayInlineReply]: g === v.Ie.OVERLAY_INLINE_REPLY
       }),
-      spellcheckEnabled: O,
-      useNewSlashCommands: T,
+      spellcheckEnabled: b,
+      useNewSlashCommands: O,
       disableAutoFocus: f.tq || null != (n = g.disableAutoFocus) && n,
       disableEnterToSubmit: null != (i = null == (e = g.submit) ? void 0 : e.disableEnterToSubmit) && i,
-      "aria-controls": null != (a = F.id) ? a : void 0,
+      "aria-controls": null != (a = B.id) ? a : void 0,
       "aria-haspopup": "listbox",
-      "aria-expanded": null !== F.id || void 0,
-      "aria-activedescendant": null != (s = F.activeDescendant) ? s : void 0,
-      "aria-invalid": l.length > k,
-      "aria-describedby": U,
-      "aria-labelledby": G,
+      "aria-expanded": null !== B.id || void 0,
+      "aria-activedescendant": null != (s = B.activeDescendant) ? s : void 0,
+      "aria-invalid": l.length > L,
+      "aria-describedby": M,
+      "aria-labelledby": j,
       "aria-autocomplete": "list"
-    }, H = b ? (0, r.jsx)(A.Z, x(D({
+    }, F = E ? (0, r.jsx)(A.Z, x(D({
       ref: this.ref
-    }, Z), {
+    }, V), {
       type: g,
       value: u ? (0, I.JM)("") : c,
       canUseCommands: null == (t = g.commands) ? void 0 : t.enabled,
-      canOnlyUseTextCommands: N
+      canOnlyUseTextCommands: T
     })) : (0, r.jsx)(S.Z, x(D({
       ref: this.ref
-    }, Z), {
+    }, V), {
       value: u ? "" : l
     }));
     return (0, r.jsxs)(r.Fragment, {
@@ -288,7 +278,7 @@ class j extends i.Component {
       }), (0, r.jsx)(y.d9, {
         event: C.CkL.CLEAR_TEXT,
         handler: this.handleClearText
-      }), H]
+      }), F]
     })
   }
   constructor(e) {
@@ -396,7 +386,7 @@ class j extends i.Component {
         l = null != r ? r : a,
         {
           files: c
-        } = U(e.clipboardData, o.uploadLongMessages ? l : null);
+        } = j(e.clipboardData, o.uploadLongMessages ? l : null);
       return k("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
@@ -426,7 +416,7 @@ class j extends i.Component {
   }
 }
 
-function U(e, t) {
+function j(e, t) {
   let n = [],
     r = [],
     i = null,
@@ -444,7 +434,7 @@ function U(e, t) {
     if (1 === r.length && "image/png" === r[0].type && null != a) {
       var o;
       let t = r[0],
-        n = null != (o = G(e.getData(a.type))) ? o : t.name;
+        n = null != (o = U(e.getData(a.type))) ? o : t.name;
       return {
         files: [(0, O.dp)(t, n, t.type)]
       }
@@ -470,7 +460,7 @@ function U(e, t) {
   }
 }
 
-function G(e) {
+function U(e) {
   let t = new DOMParser().parseFromString(e, "text/html").querySelector("img");
   if (null != t) {
     let e;

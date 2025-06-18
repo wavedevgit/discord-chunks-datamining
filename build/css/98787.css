@@ -1,6 +1,6 @@
 /**
   Module ID: 98787
-  Original File Name: e920305480e88117
+  Original File Name: 21442f92780d5830
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -5815,14 +5815,6 @@ div:has(>.positionLayer_fc71d3) {
     margin-right: 0
 }
 
-.theme-dark .scroller__99e7c {
-    background: var(--bg-overlay-3,var(--background-secondary))
-}
-
-.theme-light .scroller__99e7c {
-    background: var(--bg-overlay-2,var(--background-secondary))
-}
-
 .visual-refresh .scroller__99e7c {
     background: var(--bg-overlay-4,var(--background-base-lowest));
     margin-bottom: calc(var(--custom-app-panels-height, 0) + 8px)
@@ -6583,4 +6575,4 @@ div:has(>.positionLayer_fc71d3) {
     width: 96px
 }
 
-/*# sourceMappingURL=e920305480e88117.css.map*/
+/*# sourceMappingURL=21442f92780d5830.css.map*/

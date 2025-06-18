@@ -94,7 +94,7 @@ function k(e) {
     decorations: B,
     previewGuildId: W,
     subscribeToGroupId: z
-  } = e, H = l.useRef(null), Y = l.useContext(p.Z), K = null != (t = null == o ? void 0 : o.guild_id) ? t : Y, {
+  } = e, Y = l.useRef(null), H = l.useContext(p.Z), K = null != (t = null == o ? void 0 : o.guild_id) ? t : H, {
     analyticsLocations: q
   } = (0, O.ZP)(I.Z.USERNAME), X = k ? "@" : "", {
     nick: J,
@@ -138,7 +138,7 @@ function k(e) {
     contextGuildId: K,
     className: D.clanTagChiplet
   }) : null, [U, n.primaryGuild, K, r.author.id, L]), eI = null != T ? T : r.author, eO = null != V && null != v ? (0, i.jsx)(R.Z, {
-    targetElementRef: H,
+    targetElementRef: Y,
     user: eI,
     renderPopout: V,
     shouldShow: v,
@@ -173,7 +173,7 @@ function k(e) {
       return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(_.P3F, h(b({
           tag: "span",
-          innerRef: H
+          innerRef: Y
         }, n, e_), {
           className: a()(e_.className, D.clickable, j)
         })), eE]

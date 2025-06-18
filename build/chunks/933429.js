@@ -47,8 +47,8 @@ var r, i = n(913527),
   B = n(590415),
   W = n(581883),
   z = n(199902),
-  H = n(314897),
-  Y = n(881998),
+  Y = n(314897),
+  H = n(881998),
   K = n(463395),
   q = n(592125),
   X = n(553795),
@@ -637,7 +637,7 @@ let eB = [eC.kVF.QUARANTINED, eC.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, eC.kVF.VI
     }
   };
 
-function eH() {
+function eY() {
   var e, t, n;
   if (!f.Z.isConnected()) return !1;
   eF = null;
@@ -696,12 +696,12 @@ function eH() {
   }
 }
 
-function eY() {
-  return ec.Z.enabled || delete eZ[eC.kVF.STREAMER_MODE], eH()
+function eH() {
+  return ec.Z.enabled || delete eZ[eC.kVF.STREAMER_MODE], eY()
 }
 class eK extends(r = o.ZP.Store) {
   initialize() {
-    this.syncWith([es.Z, er.Z, J.Z, eo.Z, L.Z, eT.Z, Y.Z, X.Z, W.Z, C.Z, x.Z, z.Z], eH), this.waitFor(ed.default, ea.Z, $.Z, Q.ZP, ei.Z, ee.Z, ec.Z, S.Z, eo.Z, eu.Z, w.Z, A.ZP, er.Z, ef.Z, eR.Z, eN.Z, et.Z, eO.ZP, em.Z, J.Z, eI.Z, en.Z, L.Z, ep.Z, eT.Z, X.Z, D.Z, O.Z, j.Z, x.Z, z.Z)
+    this.syncWith([es.Z, er.Z, J.Z, eo.Z, L.Z, eT.Z, H.Z, X.Z, W.Z, C.Z, x.Z, z.Z], eY), this.waitFor(ed.default, ea.Z, $.Z, Q.ZP, ei.Z, ee.Z, ec.Z, S.Z, eo.Z, eu.Z, w.Z, A.ZP, er.Z, ef.Z, eR.Z, eN.Z, et.Z, eO.ZP, em.Z, J.Z, eI.Z, en.Z, L.Z, ep.Z, eT.Z, X.Z, D.Z, O.Z, j.Z, x.Z, z.Z)
   }
   hasNotice() {
     return null != eF && null != eF.type
@@ -715,47 +715,47 @@ class eK extends(r = o.ZP.Store) {
 }
 eh(eK, "displayName", "NoticeStore");
 let eq = new eK(u.Z, {
-  CURRENT_USER_UPDATE: eH,
-  MEDIA_ENGINE_SET_AUDIO_ENABLED: eH,
-  CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: eH,
-  CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: eH,
-  STATUS_PAGE_SCHEDULED_MAINTENANCE: eH,
-  STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: eH,
-  GUILD_CREATE: eH,
-  GUILD_DELETE: eH,
-  AUDIO_INPUT_DETECTED: eH,
-  AUDIO_SET_DISPLAY_SILENCE_WARNING: eH,
-  CERTIFIED_DEVICES_SET: eH,
-  AUDIO_SET_INPUT_DEVICE: eH,
-  AUDIO_SET_OUTPUT_DEVICE: eH,
-  MEDIA_ENGINE_DEVICES: eH,
-  RTC_CONNECTION_STATE: eH,
-  RPC_APP_AUTHENTICATED: eH,
-  RPC_APP_DISCONNECTED: eH,
-  USER_CONNECTIONS_UPDATE: eH,
-  WINDOW_FOCUS: eH,
-  INSTANT_INVITE_CREATE: eH,
-  INSTANT_INVITE_REVOKE_SUCCESS: eH,
-  SPOTIFY_PLAYER_PAUSE: eH,
-  RUNNING_GAMES_CHANGE: eH,
-  EXPERIMENTS_FETCH_SUCCESS: eH,
-  PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: eH,
-  DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: eH,
-  DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: eH,
-  DEVELOPER_TEST_MODE_RESET: eH,
-  BILLING_SUBSCRIPTION_FETCH_SUCCESS: eH,
-  DISPATCH_APPLICATION_INSTALL: eH,
-  IMPERSONATE_STOP: eH,
-  IMPERSONATE_UPDATE: eH,
+  CURRENT_USER_UPDATE: eY,
+  MEDIA_ENGINE_SET_AUDIO_ENABLED: eY,
+  CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: eY,
+  CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: eY,
+  STATUS_PAGE_SCHEDULED_MAINTENANCE: eY,
+  STATUS_PAGE_SCHEDULED_MAINTENANCE_ACK: eY,
+  GUILD_CREATE: eY,
+  GUILD_DELETE: eY,
+  AUDIO_INPUT_DETECTED: eY,
+  AUDIO_SET_DISPLAY_SILENCE_WARNING: eY,
+  CERTIFIED_DEVICES_SET: eY,
+  AUDIO_SET_INPUT_DEVICE: eY,
+  AUDIO_SET_OUTPUT_DEVICE: eY,
+  MEDIA_ENGINE_DEVICES: eY,
+  RTC_CONNECTION_STATE: eY,
+  RPC_APP_AUTHENTICATED: eY,
+  RPC_APP_DISCONNECTED: eY,
+  USER_CONNECTIONS_UPDATE: eY,
+  WINDOW_FOCUS: eY,
+  INSTANT_INVITE_CREATE: eY,
+  INSTANT_INVITE_REVOKE_SUCCESS: eY,
+  SPOTIFY_PLAYER_PAUSE: eY,
+  RUNNING_GAMES_CHANGE: eY,
+  EXPERIMENTS_FETCH_SUCCESS: eY,
+  PREMIUM_PAYMENT_SUBSCRIBE_SUCCESS: eY,
+  DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS: eY,
+  DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL: eY,
+  DEVELOPER_TEST_MODE_RESET: eY,
+  BILLING_SUBSCRIPTION_FETCH_SUCCESS: eY,
+  DISPATCH_APPLICATION_INSTALL: eY,
+  IMPERSONATE_STOP: eY,
+  IMPERSONATE_UPDATE: eY,
   GUILD_MEMBER_ADD: function(e) {
-    return e.user.id === H.default.getId() && eH()
+    return e.user.id === Y.default.getId() && eY()
   },
-  GUILD_MEMBER_UPDATE: eH,
-  SURVEY_FETCHED: eH,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: eH,
-  BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: eH,
-  BILLING_SUBSCRIPTION_UPDATE_SUCCESS: eH,
-  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: eH,
+  GUILD_MEMBER_UPDATE: eY,
+  SURVEY_FETCHED: eY,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: eY,
+  BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: eY,
+  BILLING_SUBSCRIPTION_UPDATE_SUCCESS: eY,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: eY,
   VOICE_STATE_UPDATES: function(e) {
     let {
       voiceStates: t
@@ -764,41 +764,41 @@ let eq = new eK(u.Z, {
       let {
         userId: t
       } = e;
-      return t !== H.default.getId()
-    }) && eH()
+      return t !== Y.default.getId()
+    }) && eY()
   },
-  STREAMER_MODE_UPDATE: eY,
-  RUNNING_STREAMER_TOOLS_CHANGE: eY,
+  STREAMER_MODE_UPDATE: eH,
+  RUNNING_STREAMER_TOOLS_CHANGE: eH,
   DISPATCH_APPLICATION_ERROR: function() {
-    return delete eZ[eC.kVF.DISPATCH_ERROR], eH()
+    return delete eZ[eC.kVF.DISPATCH_ERROR], eY()
   },
   DISPATCH_APPLICATION_LAUNCH_SETUP_START: function() {
-    return delete eZ[eC.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS], eH()
+    return delete eZ[eC.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS], eY()
   },
   DISPATCH_APPLICATION_INSTALL_SCRIPTS_PROGRESS_UPDATE: function() {
-    return eH()
+    return eY()
   },
   DISPATCH_APPLICATION_LAUNCH_SETUP_COMPLETE: function() {
-    return eH()
+    return eY()
   },
   NOTICE_SHOW: function(e) {
     eF = e.notice
   },
   NOTICE_DISMISS: function(e) {
-    return null != eF && (null == e.id || e.id === eF.id) && (eV(eF.type, e.isTemporary, e.untilAtLeast), eH())
+    return null != eF && (null == e.id || e.id === eF.id) && (eV(eF.type, e.isTemporary, e.untilAtLeast), eY())
   },
   NOTICE_DISABLE: function(e) {
     let {
       noticeType: t
     } = e;
-    return eV(t), eH()
+    return eV(t), eY()
   },
   LOGOUT: function() {
     eZ = {}, ej = {}, eF = null
   },
-  SUBSCRIPTION_PLANS_FETCH_SUCCESS: eH,
-  AUTO_MODERATION_MENTION_RAID_DETECTION: eH,
-  CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS: eH,
-  PROXY_BLOCKED_REQUEST: eH,
-  REPORT_AV_ERROR: eH
+  SUBSCRIPTION_PLANS_FETCH_SUCCESS: eY,
+  AUTO_MODERATION_MENTION_RAID_DETECTION: eY,
+  CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS: eY,
+  PROXY_BLOCKED_REQUEST: eY,
+  REPORT_AV_ERROR: eY
 })
