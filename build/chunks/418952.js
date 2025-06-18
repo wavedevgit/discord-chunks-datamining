@@ -1,4 +1,5 @@
-/** Chunk was on 22472 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   content: "content_b00844",
   contentNoArt: "contentNoArt_b00844",
