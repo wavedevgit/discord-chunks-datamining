@@ -1,16 +1,14 @@
 /** Chunk was on 36087 **/
 n.d(t, {
-  Z: () => p
+  Z: () => u
 }), n(415506), n(388685);
 var r = n(147913),
   i = n(840877),
-  l = n(695346),
-  a = n(903488),
-  o = n(416638),
-  s = n(862825),
-  c = n(981631);
+  l = n(416638),
+  a = n(862825),
+  o = n(981631);
 
-function u(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -18,12 +16,18 @@ function u(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class d extends r.Z {
-  createSearchTabsPayload(e, t, n, r, i) {
+class c extends r.Z {
+  createSearchTabsPayload(e) {
     let {
-      include_nsfw: c,
-      channel_id: d
-    } = t, p = function(e, t) {
+      searchQuery: t,
+      searchTabs: n,
+      getLimit: r,
+      pagination: i,
+      trackExactTotalHits: l
+    } = e, {
+      include_nsfw: o,
+      channel_id: c
+    } = t, u = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -37,75 +41,100 @@ class d extends r.Z {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(t, ["include_nsfw", "channel_id"]), m = {
-      include_nsfw: c,
-      channel_ids: d,
+    }(t, ["include_nsfw", "channel_id"]), d = {
+      include_nsfw: o,
+      channel_ids: c,
       tabs: {},
-      track_exact_total_hits: l.In.getSetting()
+      track_exact_total_hits: l
     };
-    return r.forEach(t => {
-      var r, l;
-      let c = (0, o.jj)(e, t, n),
-        d = a.Z.getCursor(c),
-        f = i(t),
-        h = s.yY[t],
-        g = null != h ? s.SO[h] : {};
-      m.tabs[t] = (r = function(e) {
+    return n.forEach(e => {
+      var t, n;
+      let l = r(e),
+        o = a.yY[e],
+        c = null != o ? a.SO[o] : {};
+      d.tabs[e] = (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            u(e, t, n[t])
+            s(e, t, n[t])
           })
         }
         return e
-      }({}, s.E2, g, p), l = l = {
-        cursor: d,
-        limit: f
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }({}, a.E2, c, u, i), n = n = {
+        limit: l
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-      }), r)
-    }), m
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), t)
+    }), d
   }
-  createSearchTabFetcher(e, t, n, r, l) {
-    let a = this.createSearchTabsPayload(e, t, n, r, l);
-    switch (e.type) {
-      case c.aib.GUILD:
-      case c.aib.GUILD_CHANNEL:
-        return new i.tJ(e.guildId, e.type, t, a);
-      case c.aib.CHANNEL:
-        return new i.tJ(e.channelId, e.type, t, a);
-      case c.aib.DMS:
-        return new i.tJ(e.type, e.type, t, a);
+  createSearchTabFetcher(e) {
+    let {
+      searchContext: t,
+      searchQuery: n,
+      searchTabs: r,
+      getLimit: l,
+      pagination: a,
+      trackExactTotalHits: s
+    } = e, c = this.createSearchTabsPayload({
+      searchQuery: n,
+      searchTabs: r,
+      getLimit: l,
+      pagination: a,
+      trackExactTotalHits: s
+    });
+    switch (t.type) {
+      case o.aib.GUILD:
+      case o.aib.GUILD_CHANNEL:
+        return new i.tJ(t.guildId, t.type, n, c);
+      case o.aib.CHANNEL:
+        return new i.tJ(t.channelId, t.type, n, c);
+      case o.aib.DMS:
+        return new i.tJ(t.type, t.type, n, c);
       default:
-        throw Error("[SearchFetchManager] Unsupported search context type: ".concat(e.type))
+        throw Error("[SearchFetchManager] Unsupported search context type: ".concat(t.type))
     }
   }
   _terminate() {
-    Object.values(this.searchTabFetchers).forEach(e => null == e ? void 0 : e.cancel()), this.searchTabFetchers = {}
+    this.searchTabFetchers.forEach(e => null == e ? void 0 : e.cancel()), this.searchTabFetchers.clear()
   }
   cancelInFlightRequests(e) {
     var t;
-    let n = (0, o.Tm)(e);
-    null == (t = this.searchTabFetchers[n]) || t.cancel()
+    let n = (0, l.Tm)(e);
+    null == (t = this.searchTabFetchers.get(n)) || t.cancel()
   }
-  getSearchTabFetcher(e, t, n, r, i) {
-    this.cancelInFlightRequests(e);
-    let l = this.createSearchTabFetcher(e, t, n, r, i),
-      a = (0, o.Tm)(e);
-    return this.searchTabFetchers[a] = l, l
+  getSearchTabFetcher(e) {
+    let {
+      searchContext: t,
+      searchQuery: n,
+      searchTabs: r,
+      getLimit: i,
+      pagination: a,
+      trackExactTotalHits: o
+    } = e;
+    this.cancelInFlightRequests(t);
+    let s = this.createSearchTabFetcher({
+        searchContext: t,
+        searchQuery: n,
+        searchTabs: r,
+        getLimit: i,
+        pagination: a,
+        trackExactTotalHits: o
+      }),
+      c = (0, l.Tm)(t);
+    return this.searchTabFetchers.set(c, s), s
   }
   constructor(...e) {
-    super(...e), u(this, "searchTabFetchers", {})
+    super(...e), s(this, "searchTabFetchers", new Map)
   }
 }
-let p = new d
+let u = new c

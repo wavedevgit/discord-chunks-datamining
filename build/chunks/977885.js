@@ -16,27 +16,36 @@ let d = {
       searchContext: t,
       searchTabs: n,
       searchQueryString: r,
-      getLimit: u,
-      onFetchStart: d,
-      onFetchSuccess: p
-    } = e, m = o.kG(r), f = o.$G(m), h = (0, c.s5)(t);
-    null != h && o.jW(f, h);
-    let g = s.Z.getSearchTabFetcher(t, f, r, n, u),
-      _ = n.map(e => (0, c.jj)(t, e, r));
+      pagination: u,
+      trackExactTotalHits: d,
+      getLimit: p,
+      onFetchStart: m,
+      onFetchSuccess: f
+    } = e, h = o.kG(r), g = o.$G(h), _ = (0, c.s5)(t);
+    null != _ && o.jW(g, _);
+    let b = s.Z.getSearchTabFetcher({
+        searchContext: t,
+        searchQuery: g,
+        searchTabs: n,
+        getLimit: p,
+        pagination: u,
+        trackExactTotalHits: d
+      }),
+      E = n.map(e => (0, c.jj)(t, e, r));
     return l.Z.dispatch({
       type: "SEARCH_MESSAGES_START",
-      ids: _
-    }), null == d || d({
+      ids: E
+    }), null == m || m({
       searchContext: t,
       searchQueryString: r,
-      searchQuery: f
-    }), g.fetch(e => {
+      searchQuery: g
+    }), b.fetch(e => {
       let {
         body: n
       } = e, o = Object.entries(n.tabs);
       l.Z.dispatch({
         type: "SEARCH_MESSAGES_SUCCESS",
-        guildId: h,
+        guildId: _,
         data: o.map(e => {
           var l, o, s;
           let [u, d] = e, p = (0, c.jj)(t, u, r), m = d.cursor;
@@ -70,19 +79,19 @@ let d = {
           doingHistoricalIndex: n.doing_deep_historical_index,
           documentsIndexed: n.documents_indexed
         })
-      }), null == p || p({
+      }), null == f || f({
         searchContext: t,
         tabEntries: o
       })
     }, () => {
       l.Z.dispatch({
         type: "SEARCH_MESSAGES_INDEXING",
-        ids: _
+        ids: E
       })
     }, e => {
       l.Z.dispatch({
         type: "SEARCH_MESSAGES_FAILURE",
-        ids: _,
+        ids: E,
         error: e
       })
     }), !0

@@ -1,26 +1,28 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
-var r = n(255367);
-n(73800);
-var i = n(481060),
-  l = n(930362);
+var r = n(255367),
+  i = n(73800),
+  l = n(481060),
+  a = n(930362);
 
-function a(e) {
+function o(e) {
   let {
-    changePage: t,
+    onPageChange: t,
     offset: n,
-    totalResults: a,
-    pageLength: o
-  } = e, s = Math.floor(n / o) + 1;
+    totalCount: o,
+    pageSize: s
+  } = e, c = Math.floor(n / s) + 1, u = i.useCallback(e => {
+    t(e - 1)
+  }, [t]);
   return (0, r.jsx)("div", {
-    className: l.container,
-    children: (0, r.jsx)(i.DsT, {
-      currentPage: s,
-      totalCount: a,
-      pageSize: o,
-      onPageChange: t,
+    className: a.container,
+    children: (0, r.jsx)(l.DsT, {
+      currentPage: c,
+      totalCount: o,
+      pageSize: s,
+      onPageChange: u,
       maxVisiblePages: 5
     })
   })

@@ -1,6 +1,6 @@
 /** Chunk was on 62423 **/
 n.d(t, {
-  Z: () => U
+  Z: () => D
 }), n(35282), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -30,14 +30,13 @@ var r = n(255367),
   S = n(768119),
   Z = n(944486),
   N = n(594174),
-  T = n(72006),
-  A = n(101695),
-  w = n(683101),
-  R = n(981631),
-  k = n(388032),
-  M = n(378869);
+  T = n(101695),
+  A = n(683101),
+  w = n(981631),
+  R = n(388032),
+  k = n(378869);
 
-function L(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +55,7 @@ function L(e) {
   return e
 }
 
-function D(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,7 +68,7 @@ function D(e, t) {
   }), e
 }
 
-function U(e) {
+function D(e) {
   var t;
   let {
     search: n,
@@ -79,29 +78,22 @@ function U(e) {
     searchResults: f,
     blockCount: m,
     ignoreCount: g,
-    onChangePage: b,
+    onPageChange: b,
     onClick: _
   } = e, {
     offset: x,
     totalResults: v,
     isSearching: j,
     showBlockedResults: E
-  } = n, I = i.useCallback(e => {
-    if (j) return;
-    let t = e - 1;
-    null == b || b(t);
-    let n = null != l ? S.Z.getEditorState(l) : null,
-      r = null != n ? T.Sq(n) : null;
-    u.oO(l, t, r)
-  }, [l, j, b]), Z = i.useCallback((e, t) => {
+  } = n, I = i.useCallback((e, t) => {
     if (null == _ || _(e, t), (0, y.Z)(e)) {
       let t = O.Z.getChannel(e.channel_id),
         n = null != t ? t.getGuildId() : null;
       c.Z.trackJump(e.channel_id, e.id, "Search Results", {
         search_id: S.Z.getAnalyticsId(l)
-      }), (0, C.uL)(R.Z5c.CHANNEL(n, e.channel_id, e.id))
+      }), (0, C.uL)(w.Z5c.CHANNEL(n, e.channel_id, e.id))
     }
-  }, [_, l]), N = i.useMemo(() => {
+  }, [_, l]), Z = i.useMemo(() => {
     let e;
     if (null == f) return [];
     let t = 0;
@@ -115,9 +107,9 @@ function U(e) {
         startIndex: t
       }), t += 1, n[n.length - 1].results.push(r), e = null == l ? void 0 : l.id), n
     }, [])
-  }, [f, E]), w = i.useRef([]), U = N.reduce((e, t) => e + 1 + t.results.length, 0), B = i.useCallback((e, t) => {
+  }, [f, E]), N = i.useRef([]), A = Z.reduce((e, t) => e + 1 + t.results.length, 0), D = i.useCallback((e, t) => {
     if (!p.Z.keyboardModeEnabled) return;
-    let n = w.current,
+    let n = N.current,
       r = null != t ? n[t] : void 0;
     if (null == r || null == r.hitRef.current) return;
     let i = r.hitRef.current.getClientRects()[0];
@@ -125,82 +117,82 @@ function U(e) {
       var t;
       null == (t = document.getElementById(e)) || t.focus()
     })
-  }, [h]), G = i.useCallback(e => {
-    let t = w.current[e];
+  }, [h]), U = i.useCallback(e => {
+    let t = N.current[e];
     null == t || t.jumpTo()
-  }, []), H = (0, o.ZP)({
+  }, []), F = (0, o.ZP)({
     navId: "search-results",
-    itemCount: U,
+    itemCount: A,
     focusedIndex: 0,
-    setFocus: B,
-    onSelect: G
-  }), V = S.Z.getQuery(l), z = S.Z.getSearchType(l) === R.aib.FAVORITES, W = (0, d.nC)(null != (t = null == V ? void 0 : V.content) ? t : ""), Y = N.map(e => {
+    setFocus: D,
+    onSelect: U
+  }), G = S.Z.getQuery(l), H = S.Z.getSearchType(l) === w.aib.FAVORITES, V = (0, d.nC)(null != (t = null == G ? void 0 : G.content) ? t : ""), z = Z.map(e => {
     let {
       channel: t,
       results: n,
       startIndex: i
     } = e;
-    return (0, r.jsx)(F, {
+    return (0, r.jsx)(B, {
       channel: t,
       results: n,
-      highlighter: W,
+      highlighter: V,
       startIndex: i,
-      resultRefs: w,
+      resultRefs: N,
       totalResults: v,
       scrollTo: h,
       searchId: l,
       renderEmbeds: a,
       offset: x,
-      jumpToMessage: Z,
-      listNavigator: H,
-      favoriteSearch: z
+      jumpToMessage: I,
+      listNavigator: F,
+      favoriteSearch: H
     }, "".concat(t.id, "-").concat(i))
   });
-  Y.push();
-  let q = i.useRef(null);
+  z.push();
+  let W = i.useRef(null);
   i.useLayoutEffect(() => {
     var e;
-    null == (e = q.current) || e.focus()
+    null == (e = W.current) || e.focus()
   }, [f]);
-  let K = (0, s.mFp)();
+  let Y = (0, s.mFp)();
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)("div", D(L({
-      ref: q
-    }, H.getContainerProps(), K), {
+    children: [(0, r.jsx)("div", L(M({
+      ref: W
+    }, F.getContainerProps(), Y), {
       "aria-busy": j,
-      children: Y
+      children: z
     })), m > 0 || g > 0 ? (0, r.jsxs)(s.P3F, {
       tag: "div",
-      className: M.resultsBlocked,
+      className: k.resultsBlocked,
       onClick: () => u.QY(l, !E),
       children: [(0, r.jsx)("div", {
-        className: M.resultsBlockedImage
+        className: k.resultsBlockedImage
       }), (0, r.jsx)("div", {
-        className: M.__invalid_resultsBlockedText,
-        children: E ? m > 0 && g > 0 ? k.intl.formatToPlainString(k.t["OvJs9/"], {
+        className: k.__invalid_resultsBlockedText,
+        children: E ? m > 0 && g > 0 ? R.intl.formatToPlainString(R.t["OvJs9/"], {
           count: m + g
-        }) : m > 0 ? k.intl.formatToPlainString(k.t["n/1QFR"], {
+        }) : m > 0 ? R.intl.formatToPlainString(R.t["n/1QFR"], {
           count: m
-        }) : k.intl.formatToPlainString(k.t.ypezTE, {
+        }) : R.intl.formatToPlainString(R.t.ypezTE, {
           count: g
-        }) : m > 0 && g > 0 ? k.intl.formatToPlainString(k.t.EJHRcX, {
+        }) : m > 0 && g > 0 ? R.intl.formatToPlainString(R.t.EJHRcX, {
           count: m + g
-        }) : m > 0 ? k.intl.formatToPlainString(k.t.HTE8JC, {
+        }) : m > 0 ? R.intl.formatToPlainString(R.t.HTE8JC, {
           count: m
-        }) : k.intl.formatToPlainString(k.t.e7f8r6, {
+        }) : R.intl.formatToPlainString(R.t.e7f8r6, {
           count: g
         })
       })]
-    }) : null, !j && !z && (0, r.jsx)(A.Z, {
-      changePage: I,
+    }) : null, !j && !H && (0, r.jsx)(T.Z, {
+      onPageChange: b,
       offset: x,
-      totalResults: v,
-      pageLength: R.vpv
+      totalCount: v,
+      pageSize: w.vpv
     })]
   })
 }
 
-function B(e) {
+function U(e) {
   let {
     parentChannel: t,
     onSelectChannel: n
@@ -210,29 +202,29 @@ function B(e) {
   if (null == i) return null;
   let l = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i, {
-      className: M.parentChannelNameIcon,
+      className: k.parentChannelNameIcon,
       size: "xxs",
       color: "currentColor"
     }), (0, r.jsx)(s.Text, {
-      className: M.parentChannelNameText,
+      className: k.parentChannelNameText,
       variant: "text-xs/medium",
       color: "header-secondary",
       children: t.name
     })]
   });
   return (0, j.Em)(t.type) ? (0, r.jsx)(s.P3F, {
-    className: a()(M.parentChannelName, M.parentChannelNameClickable),
+    className: a()(k.parentChannelName, k.parentChannelNameClickable),
     onClick: e => {
       e.stopPropagation(), n(t.id)
     },
     children: l
   }) : (0, r.jsx)("div", {
-    className: M.parentChannelName,
+    className: k.parentChannelName,
     children: l
   })
 }
 
-function F(e) {
+function B(e) {
   var t, n, l;
   let {
     channel: a,
@@ -246,13 +238,13 @@ function F(e) {
     renderEmbeds: j,
     offset: S,
     jumpToMessage: T,
-    listNavigator: A,
-    favoriteSearch: k
-  } = e, U = v.cC.useSetting(), F = (0, g.p)(), G = i.useCallback(e => {
+    listNavigator: R,
+    favoriteSearch: D
+  } = e, B = v.cC.useSetting(), F = (0, g.p)(), G = i.useCallback(e => {
     if (e === Z.Z.getChannelId()) return;
     let t = O.Z.getChannel(e);
-    null != t && I.Z.can(R.Plq.VIEW_CHANNEL, t) && (0, x.Kh)(t.id)
-  }, []), H = null != a ? (0, h.F6)(a, N.default, P.Z, !1) : "???", V = k && null != a.guild_id ? null == (t = E.Z.getGuild(a.guild_id)) ? void 0 : t.name : null, z = (null == a ? void 0 : a.parent_id) != null ? O.Z.getChannel(a.parent_id) : null, W = null != (n = null == z ? void 0 : z.name) ? n : null, Y = null != (l = (0, f.KS)(a)) ? l : s.VL1, q = I.Z.can(R.Plq.MANAGE_MESSAGES, a), {
+    null != t && I.Z.can(w.Plq.VIEW_CHANNEL, t) && (0, x.Kh)(t.id)
+  }, []), H = null != a ? (0, h.F6)(a, N.default, P.Z, !1) : "???", V = D && null != a.guild_id ? null == (t = E.Z.getGuild(a.guild_id)) ? void 0 : t.name : null, z = (null == a ? void 0 : a.parent_id) != null ? O.Z.getChannel(a.parent_id) : null, W = null != (n = null == z ? void 0 : z.name) ? n : null, Y = null != (l = (0, f.KS)(a)) ? l : s.VL1, q = I.Z.can(w.Plq.MANAGE_MESSAGES, a), {
     content: K
   } = (0, _.ZP)({
     content: H,
@@ -267,35 +259,35 @@ function F(e) {
   }, []);
   let $ = [H, W, V].filter(e => null != e).join(", ");
   return (0, r.jsx)(m.aQ.Provider, {
-    value: (0, b.Z)(U, q),
+    value: (0, b.Z)(B, q),
     children: (0, r.jsxs)("ul", {
       role: "group",
-      className: M.searchResultGroup,
+      className: k.searchResultGroup,
       "aria-label": $,
       children: [(0, r.jsx)(s.P3F, {
         onClick: () => G(a.id),
         children: (0, r.jsxs)("div", {
-          className: M.channelNameContainer,
+          className: k.channelNameContainer,
           children: [(0, r.jsx)(Y, {
-            className: M.channelNameIcon,
+            className: k.channelNameIcon,
             size: "xs",
             color: "currentColor"
           }), (0, r.jsx)(s.ua7, {
             text: H,
             shouldShow: Q,
-            children: e => (0, r.jsxs)("span", D(L({}, e), {
+            children: e => (0, r.jsxs)("span", L(M({}, e), {
               ref: X,
-              className: M.channelNameText,
-              children: [k && null !== V && "".concat(V, " : "), K]
+              className: k.channelNameText,
+              children: [D && null !== V && "".concat(V, " : "), K]
             }))
-          }), (0, r.jsx)(B, {
+          }), (0, r.jsx)(U, {
             parentChannel: z,
             onSelectChannel: G
           })]
         })
       }), o.map((e, t) => {
         let n = u + t;
-        return (0, r.jsx)(w.Z, {
+        return (0, r.jsx)(A.Z, {
           ref: e => {
             d.current[n] = e
           },
@@ -308,7 +300,7 @@ function F(e) {
           result: e,
           index: n,
           onJump: T,
-          listItemProps: A.getItemProps({
+          listItemProps: R.getItemProps({
             index: n
           })
         }, "search-result-".concat(n))
