@@ -72,21 +72,21 @@ function b(e, t) {
   return !1
 }
 
-function y(e) {
-  var t, n;
-  let r = h(e);
-  if (r === f.qn.NONE) return !1;
-  if ((null == (t = e.attachments) ? void 0 : t.some(e => T({
+function y(e, t) {
+  var n, r;
+  let i = null != t ? t : h(e);
+  if (i === f.qn.NONE) return !1;
+  if ((null == (n = e.attachments) ? void 0 : n.some(e => T({
       type: u.l.Attachment,
       media: e
-    }, r))) || (null == (n = e.embeds) ? void 0 : n.some(e => T({
+    }, i))) || (null == (r = e.embeds) ? void 0 : r.some(e => T({
       type: u.l.Embed,
       media: e
-    }, r)))) return !0;
-  let i = null;
-  if ("messageSnapshots" in e ? i = e.messageSnapshots : "message_snapshots" in e && (i = e.message_snapshots), null == i || 0 === i.length) return !1;
-  for (let e of i)
-    if (y(e.message)) return !0;
+    }, i)))) return !0;
+  let a = null;
+  if ("messageSnapshots" in e ? a = e.messageSnapshots : "message_snapshots" in e && (a = e.message_snapshots), null == a || 0 === a.length) return !1;
+  for (let e of a)
+    if (y(e.message, i)) return !0;
   return !1
 }
 
