@@ -933,12 +933,13 @@ function tb(e) {
   return null != (n = null != (t = null == r ? void 0 : r.messages.videoEndCtaButtonLabel) ? t : null == r ? void 0 : r.messages.videoEndCtaTitle) ? n : D.intl.string(D.t.iiTtpK)
 }
 
-function ty(e) {
-  var t;
-  let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : T.Z,
-    r = th(e),
-    i = null != r ? n.questToDeliverForPlacement.get(r) : void 0;
-  return null != (t = null == i ? void 0 : i.adDecisionData) ? t : R.Jp
+function ty(e, t) {
+  var n;
+  let {
+    quest: r,
+    adDecisionData: i
+  } = null != (n = T.Z.questToDeliverForPlacement.get(th(t))) ? n : {};
+  return null != i && (null == r ? void 0 : r.id) === e ? i : R.Jp
 }
 
 function tO(e) {

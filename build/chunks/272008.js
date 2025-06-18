@@ -230,7 +230,7 @@ async function D(e, t) {
         url: y.ANM.QUESTS_ENROLL(e),
         body: I({
           location: t.questContent
-        }, (0, m.qe)(t.questContent)),
+        }, (0, m.qe)(e, t.questContent)),
         rejectWithError: !0
       });
       a.Z.dispatch({

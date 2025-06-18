@@ -134,7 +134,7 @@ function L(e) {
     questContentRowIndex: s,
     impressionId: c,
     trackGuildAndChannelMetadata: u = !1
-  } = e, d = (0, m.qe)(n), _ = p.Z.getQuest(t), h = (0, a.S)();
+  } = e, d = (0, m.qe)(t, n), _ = p.Z.getQuest(t), h = (0, a.S)();
   w({
     questId: t,
     event: y.rMx.QUEST_CONTENT_CLICKED,
@@ -205,7 +205,7 @@ function M() {
     e({
       questId: n,
       event: y.rMx.QUEST_CONTENT_CLICKED,
-      properties: T(v({}, (0, m.qe)(r), P(r, s, c), (0, l.Z)()), {
+      properties: T(v({}, (0, m.qe)(n, r), P(r, s, c), (0, l.Z)()), {
         cta_name: o,
         quest_status: null != d ? C(d) : null,
         click_id: (0, i.Z)(),
