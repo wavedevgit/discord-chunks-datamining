@@ -235,7 +235,8 @@ function _(e, t, n, i) {
         encryptMaxAttempts: e.encryptMaxAttempts,
         encryptMissingKeyCount: e.encryptMissingKeyCount,
         pttQueueLatencyMicrosSamples: e.pttQueueLatencyMicrosSamples,
-        sampleRateMismatchPercent: e.sampleRateMismatchPercent
+        sampleRateMismatchPercent: e.sampleRateMismatchPercent,
+        currentSampleRate: e.currentSampleRate
       })), null != i) i.forEach(e => {
       let t = d(e, n);
       null != t && (g = (null != g ? g : 0) + t.bytesSent, b.push(t))
@@ -271,6 +272,7 @@ function _(e, t, n, i) {
         fecPacketsDiscarded: l.fecPacketsDiscarded,
         audioLevel: o(l.audioLevel),
         audioDetected: l.speaking,
+        currentSampleRate: l.currentSampleRate,
         jitter: l.jitter,
         jitterBuffer: l.jitterBuffer,
         jitterBufferPreferred: l.jitterBufferPreferred,

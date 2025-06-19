@@ -15,8 +15,8 @@ var r = n(255367),
   p = n(100527),
   m = n(906732),
   g = n(659580),
-  b = n(795318),
-  _ = n(53691),
+  _ = n(795318),
+  b = n(53691),
   v = n(457165),
   h = n(594174),
   y = n(626135),
@@ -78,8 +78,8 @@ function B(e) {
     wide: n,
     showOutputDevices: l = !1,
     showSearchBar: B = !0
-  } = e, [Y, W] = i.useState(""), {
-    analyticsLocations: z,
+  } = e, [Y, z] = i.useState(""), {
+    analyticsLocations: W,
     newestAnalyticsLocation: G
   } = (0, m.ZP)(p.Z.VOICE_FILTER_POPOUT), H = i.useRef(null), J = (0, d.Z)({
     minDimension: 400,
@@ -98,7 +98,7 @@ function B(e) {
       activeVoice: et
     } = (0, P.o)(),
     en = (0, x.HM)({
-      location: z[0],
+      location: W[0],
       autoTrackExposure: !0
     }),
     er = (0, c.q_F)({
@@ -136,11 +136,11 @@ function B(e) {
       active_voice_filter_id: null != et ? et : null
     })
   });
-  let eo = i.useCallback(() => W(""), [W]),
+  let eo = i.useCallback(() => z(""), [z]),
     es = i.useRef(null),
     ec = (0, f.bp)() !== D.IlC.OVERLAY;
   return (0, r.jsx)(m.Gt, {
-    value: z,
+    value: W,
     children: (0, r.jsxs)("div", {
       ref: H,
       className: a()(F.voiceFiltersPopout, {
@@ -161,7 +161,7 @@ function B(e) {
         placeholder: R.intl.string(R.t.hHCZJS),
         className: F.voiceFiltersHeader,
         autoFocus: !0,
-        onChange: W,
+        onChange: z,
         query: Y,
         onClear: eo
       }), (0, r.jsx)(A.w, {
@@ -195,7 +195,7 @@ function B(e) {
               y: ei.y,
               opacity: ei.y.to(e => +(50 !== e))
             },
-            children: (0, r.jsx)(_.p, {
+            children: (0, r.jsx)(b.p, {
               showUpsell: !0,
               text: R.intl.format(R.t["XMDm8/"], {
                 nitroTierName: (0, j.Px)(L.p9.TIER_2),
@@ -229,7 +229,7 @@ function B(e) {
             renderOutputDevices: l,
             renderOutputVolume: l,
             onClose: t,
-            onInteraction: (0, b.u)("AudioDeviceMenu", G, {
+            onInteraction: (0, _.u)("AudioDeviceMenu", G, {
               entrypoint: k.A5.THREE_DOT
             }),
             minimal: !0

@@ -1,0 +1,1 @@
+{"id":"679613","type":"experiment","data":{"kind":"user","id":"2025-06_device_affinity","label":"Device affinity experiment","defaultConfig":{"sortDevicesByFrecency":false},"treatments":[{"id":1,"label":"Sort devices by frecency","config":{"sortDevicesByFrecency":false}}]},"fromModule":{"id":"86350"}}

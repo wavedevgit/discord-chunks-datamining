@@ -43,14 +43,14 @@ let D = {
 };
 
 function b(e, t, r, a, b) {
-  return e.map((E, C) => {
+  return e.map((C, E) => {
     let P = [];
-    for (let e of Object.keys(E).sort((e, t) => {
+    for (let e of Object.keys(C).sort((e, t) => {
         let r = D[e],
           n = D[t];
         return r !== n ? void 0 === r ? 1 : void 0 === n ? -1 : r - n : m.Pz[e] !== m.Pz[t] ? m.Pz[e] ? 1 : -1 : e > t ? 1 : -1
       })) {
-      let t = E[e];
+      let t = C[e];
       p.al[e] || void 0 === t || P.push((0, n.jsx)(p.ck, {
         section: a,
         label: e,
@@ -59,9 +59,9 @@ function b(e, t, r, a, b) {
     }
     return (0, n.jsxs)(l.hjN, {
       className: f.marginBottom40,
-      title: E.type,
+      title: C.type,
       titleClassName: y.sectionHeader,
-      children: ["video" === E.type && null != r && null != a && null != b && function(e, t, r, a) {
+      children: ["video" === C.type && null != r && null != a && null != b && function(e, t, r, a) {
         let l = a.get(t, r, e.ssrc);
         return null != l ? (0, n.jsx)("div", {
           className: i()(y.videoWrapper, f.marginBottom40),
@@ -73,7 +73,7 @@ function b(e, t, r, a, b) {
             userId: r
           })
         }) : null
-      }(E, r, a, b), v(P), "video" === E.type && C === e.length - 1 && null != r && null != a && null != b && (0, n.jsx)(c.Z, {
+      }(C, r, a, b), v(P), "video" === C.type && E === e.length - 1 && null != r && null != a && null != b && (0, n.jsx)(c.Z, {
         className: f.marginBottom20,
         children: (0, n.jsxs)(c.Z.Child, {
           basis: "100%",
@@ -93,6 +93,6 @@ function b(e, t, r, a, b) {
           })]
         })
       })]
-    }, "".concat(E.type, " + ").concat(E.ssrc))
+    }, "".concat(C.type, " + ").concat(C.ssrc))
   })
 }

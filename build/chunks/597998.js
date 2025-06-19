@@ -17,8 +17,8 @@ var r = n(255367),
   p = n(367907),
   m = n(906732),
   g = n(522651),
-  b = n(795318),
-  _ = n(194082),
+  _ = n(795318),
+  b = n(194082),
   v = n(925329),
   h = n(340044),
   y = n(880395),
@@ -79,7 +79,7 @@ function L(e) {
     collapsed: p,
     video: m,
     isStreaming: g,
-    disabled: b,
+    disabled: _,
     isWatching: v,
     iconClassName: h,
     embeddedApplication: y,
@@ -97,7 +97,7 @@ function L(e) {
   }, {
     autoTrackExposure: !0
   });
-  if (p || b) return null;
+  if (p || _) return null;
   let M = [],
     U = (0, r.jsx)(F, {
       iconClassName: h,
@@ -161,8 +161,8 @@ function L(e) {
     })
   }, "watch")), g && M.push((0, r.jsx)("div", {
     className: a()(A.iconSpacing, A.liveIconSpacing),
-    children: (0, r.jsx)(_.ZP, {
-      size: _.ZP.Sizes.SMALL
+    children: (0, r.jsx)(b.ZP, {
+      size: b.ZP.Sizes.SMALL
     })
   }, "stream"));
   let B = null != S && !(0, C.yE)(S.flags, w.udG.EMBEDDED);
@@ -190,7 +190,7 @@ let M = i.forwardRef(function(e, t) {
       size: d = w.ipw.SMALL,
       selected: f = !1,
       disabled: p = !1,
-      isOverlay: _ = !1
+      isOverlay: b = !1
     } = e,
     v = function(e, t) {
       if (null == e) return {};
@@ -220,8 +220,8 @@ let M = i.forwardRef(function(e, t) {
     mute: V,
     serverMute: B,
     guildId: Y,
-    nick: W,
-    isGuest: z,
+    nick: z,
+    isGuest: W,
     flipped: G,
     className: H,
     overlap: J,
@@ -266,7 +266,7 @@ let M = i.forwardRef(function(e, t) {
       null == M || M(e, K)
     },
     onKeyDown: P,
-    "aria-label": null != (n = null != X ? X : W) ? n : K.username,
+    "aria-label": null != (n = null != X ? X : z) ? n : K.username,
     focusProps: {
       offset: {
         right: 4
@@ -299,7 +299,7 @@ let M = i.forwardRef(function(e, t) {
               [A.username]: !0,
               [A.usernameSpeaking]: !V && !B && F
             }),
-            children: [null != W ? W : E.ZP.getName(K), z ? (0, r.jsxs)("span", {
+            children: [null != z ? z : E.ZP.getName(K), W ? (0, r.jsxs)("span", {
               className: A.guestSuffix,
               children: ["\xa0", Z.intl.string(Z.t["pFO/Pj"])]
             }) : ""]
@@ -308,14 +308,14 @@ let M = i.forwardRef(function(e, t) {
             primaryGuild: K.primaryGuild,
             userId: K.id,
             contextGuildId: Y,
-            isOverlay: _,
+            isOverlay: b,
             disableTooltip: !0,
-            className: a()(A.clanTag, _ && A.isOverlay),
+            className: a()(A.clanTag, b && A.isOverlay),
             profileViewedAnalytics: {
-              source: _ ? w.jXE.OVERLAY : w.Sbl.VOICE_PANEL
+              source: b ? w.jXE.OVERLAY : w.Sbl.VOICE_PANEL
             }
           };
-        return !U || _ ? (0, r.jsx)(h.Z, (e = D({}, i), t = t = {
+        return !U || b ? (0, r.jsx)(h.Z, (e = D({}, i), t = t = {
           children: n
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -342,7 +342,7 @@ let M = i.forwardRef(function(e, t) {
             null != Y && null != et && ((0, g.v)($, g.d.MORE), ei(!0), (0, y.D)(e, K, et, {
               context: ee
             }, (e, t) => {
-              (0, b.o)({
+              (0, _.o)({
                 menuName: e,
                 menuItemProps: t,
                 entrypoint: T.A5.THREE_DOT,

@@ -163,15 +163,15 @@ function A(e) {
     location: U
   } = (0, f.O)(), G = (0, m.Zq)({
     autoTrackExposure: !1
-  }), W = (0, x.B4)(), z = j.default.getUser(null == D ? void 0 : D.hdStreamingBuyerId), F = null != D && null != D.hdStreamingUntil && new Date(D.hdStreamingUntil) > new Date && null != z, H = !B && !G, [V, Y] = i.useState(!1), J = M ? y.z8 : y.WC, X = E(T({}, U), {
+  }), z = (0, x.B4)(), W = j.default.getUser(null == D ? void 0 : D.hdStreamingBuyerId), F = null != D && null != D.hdStreamingUntil && new Date(D.hdStreamingUntil) > new Date && null != W, H = !B && !G, [V, Y] = i.useState(!1), X = M ? y.z8 : y.WC, J = E(T({}, U), {
     section: O.jXE.STREAM_SETTINGS
   }), K = (0, r.jsx)(d.hE2, {
-    buttons: J.map(e => k({
+    buttons: X.map(e => k({
       type: e,
       selected: e.value === l,
       needsPremium: !(0, b.Z)(n, e.value, s, L, A, D),
-      needsDemo: W && e.value !== y.LY.RESOLUTION_720,
-      analyticsLocation: X,
+      needsDemo: z && e.value !== y.LY.RESOLUTION_720,
+      analyticsLocation: J,
       onClick: () => o(e.value),
       onClose: t,
       setIsHovering: Y
@@ -181,8 +181,8 @@ function A(e) {
       type: e,
       selected: e.value === s,
       needsPremium: !(0, b.Z)(n, l, e.value, L, A, D),
-      needsDemo: W && e.value === y.ws.FPS_60,
-      analyticsLocation: X,
+      needsDemo: z && e.value === y.ws.FPS_60,
+      analyticsLocation: J,
       onClick: () => p(e.value),
       onClose: t,
       setIsHovering: Y
@@ -213,9 +213,9 @@ function A(e) {
       message: Z.intl.string(Z.t.deDogI),
       onClose: t,
       openStreamUpsellModal: P
-    }) : null, W && (0, r.jsx)(C.c, {}), F && null != D.hdStreamingUntil && (0, r.jsx)(g.Z, {
+    }) : null, z && (0, r.jsx)(C.c, {}), F && null != D.hdStreamingUntil && (0, r.jsx)(g.Z, {
       streamingUntil: D.hdStreamingUntil,
-      user: z,
+      user: W,
       channel: D
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -235,13 +235,13 @@ function A(e) {
       onClose: t,
       openStreamUpsellModal: P,
       glow: V
-    }) : null, W && (0, r.jsx)(C.c, {}), F && null != D.hdStreamingUntil && (0, r.jsx)(g.Z, {
+    }) : null, z && (0, r.jsx)(C.c, {}), F && null != D.hdStreamingUntil && (0, r.jsx)(g.Z, {
       streamingUntil: null == D ? void 0 : D.hdStreamingUntil,
-      user: z,
+      user: W,
       channel: D
     })]
   });
-  return (0, r.jsx)(u.Z, E(T({}, X), {
+  return (0, r.jsx)(u.Z, E(T({}, J), {
     children: (0, r.jsx)(d.xJW, {
       title: Z.intl.string(Z.t.ax4FnZ),
       titleClassName: I.formItemTitle,

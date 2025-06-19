@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 n.d(t, {
   Hu: () => Y,
-  oA: () => z,
+  oA: () => W,
   se: () => V
 }), n(388685), n(642613), n(539854);
 var r = n(255367),
@@ -62,13 +62,13 @@ function G(e) {
   return e
 }
 
-function W(e) {
+function z(e) {
   let t = (0, y.isWindows)() ? (0, T.Z)(x.ZP, C.Z) : null,
     n = x.ZP.getRunningGames();
   return null != t && (0, Z.Z)(e.id, t.windowHandle) ? 2 : +(null != n.find(t => (0, Z.Z)(e.id, t.windowHandle)))
 }
 
-function z(e) {
+function W(e) {
   let {
     selectedSource: t,
     onChangeSelectedSource: n
@@ -76,7 +76,7 @@ function z(e) {
     enableGoLiveCaptureCard: l
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = b.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [C, y] = i.useState(null), [I, w] = i.useState(null), T = null != I && I.length > 0, [E, R] = i.useState(c.vA.WINDOW), [A, G] = i.useState(!1), z = i.useRef(null), F = i.useRef(new u.Xp), H = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
+  }), o = b.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [C, y] = i.useState(null), [I, w] = i.useState(null), T = null != I && I.length > 0, [E, R] = i.useState(c.vA.WINDOW), [A, G] = i.useState(!1), W = i.useRef(null), F = i.useRef(new u.Xp), H = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, j.Zy)({
       location: L.dr.STREAM_SOURCE_SELECT
     });
@@ -94,7 +94,7 @@ function z(e) {
       }
       return null
     }, [r, e, t, n])
-  }((0, d.e7)([_.Z], () => _.Z.quests), H, C), Y = i.useMemo(() => null == C ? null : [...C].sort((e, t) => (null == V ? void 0 : V.source.id) === e.id ? -1 : (null == V ? void 0 : V.source.id) === t.id ? 1 : W(t) - W(e)), [V, C]);
+  }((0, d.e7)([_.Z], () => _.Z.quests), H, C), Y = i.useMemo(() => null == C ? null : [...C].sort((e, t) => (null == V ? void 0 : V.source.id) === e.id ? -1 : (null == V ? void 0 : V.source.id) === t.id ? 1 : z(t) - z(e)), [V, C]);
   i.useEffect(() => {
     let e = F.current;
     return (0, N.t)({
@@ -121,10 +121,10 @@ function z(e) {
       e.stop()
     }
   }, []);
-  let J = i.useCallback(e => {
-      null !== e && (z.current = e, G(!e.isScrolledToTop()))
+  let X = i.useCallback(e => {
+      null !== e && (W.current = e, G(!e.isScrolledToTop()))
     }, []),
-    [X, K] = i.useState(void 0);
+    [J, K] = i.useState(void 0);
   i.useEffect(() => {
     g.Z.hasPermission(M.Eu.SCREEN_RECORDING, {
       showAuthorizationError: !1
@@ -140,7 +140,7 @@ function z(e) {
         return I
     }
   }(E);
-  if (null == q) return !1 === X ? (0, r.jsxs)(f.Text, {
+  if (null == q) return !1 === J ? (0, r.jsxs)(f.Text, {
     className: U.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",
@@ -196,10 +196,10 @@ function z(e) {
         optionClassName: U.segmentControlOption
       })]
     }), (0, r.jsxs)(f.Den, {
-      ref: J,
+      ref: X,
       className: U.sourceScroller,
       onScroll: function() {
-        let e = z.current;
+        let e = W.current;
         null != e && G(!e.isScrolledToTop())
       },
       children: [E === c.vA.WINDOW && null != V && (0, r.jsx)(S.Z, {

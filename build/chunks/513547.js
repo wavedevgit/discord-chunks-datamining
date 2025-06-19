@@ -29,6 +29,7 @@ let d = {
   capturedFramesStdev: "Captured Frames Standard Deviation (ms)",
   codec: "Codec",
   cpuLimitedResolution: "CPU Limited Resolution",
+  currentSampleRate: "Current Sample Rate",
   currentDelay: "Current Delay",
   decoderImplementationName: "Decoder",
   decodingCNG: "Decoding CNG",
@@ -202,7 +203,7 @@ let b = {
     videoJitterTarget: !0,
     voiceActivityDetectorProcessTime: !0
   },
-  E = {
+  C = {
     accelerateRate: y,
     audioDetected: f,
     audioLevel: g,
@@ -223,6 +224,9 @@ let b = {
       return r = null != (r = "" === r ? "unknown" : r) ? r : "unknown", "".concat(r[0].toUpperCase()).concat(r.slice(1), " (").concat(t, ")")
     },
     cpuLimitedResolution: f,
+    currentSampleRate: function(e) {
+      return e % 100 == 0 ? "".concat(e / 1e3, " kHz") : "".concat(e, " Hz")
+    },
     currentDelay: h,
     decoderImplementationName: p,
     delayEstimate: h,
@@ -267,7 +271,7 @@ let b = {
       return e < t.length ? t[e] : "Unknown"
     }
   },
-  C = e => e,
+  E = e => e,
   P = e => {
     let [t] = a.useState([]);
     return t.push({
@@ -286,7 +290,7 @@ function j(e) {
     label: i,
     value: l,
     section: u
-  } = e, m = null != (r = E[i]) ? r : C, p = s.Pz[i] && (Array.isArray(l) && l.length > 0 && "number" == typeof l[0].value ? (0, n.jsx)(o.Z, {
+  } = e, m = null != (r = C[i]) ? r : E, p = s.Pz[i] && (Array.isArray(l) && l.length > 0 && "number" == typeof l[0].value ? (0, n.jsx)(o.Z, {
     dataPoints: l,
     width: 300,
     height: 100

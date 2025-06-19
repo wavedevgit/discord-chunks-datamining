@@ -1,6 +1,6 @@
 /** Chunk was on 86350 **/
 n.d(t, {
-  Y: () => _,
+  Y: () => b,
   a: () => v
 }), n(388685);
 var r = n(255367),
@@ -17,7 +17,7 @@ var r = n(255367),
   m = n(65154),
   g = n(521361);
 
-function b(e) {
+function _(e) {
   let {
     label: t,
     Icon: n
@@ -38,7 +38,7 @@ function b(e) {
   })
 }
 
-function _() {
+function b() {
   let {
     analyticsLocations: e
   } = (0, u.ZP)(), {
@@ -47,7 +47,7 @@ function _() {
   } = (0, o.cj)([d.Z], () => ({
     canSetInputDevice: d.Z.supports(m.AN.AUDIO_INPUT_DEVICE),
     inputDeviceId: d.Z.getInputDeviceId()
-  })), l = (0, o.e7)([d.Z], () => d.Z.getInputDevices()), _ = i.useCallback(t => {
+  })), l = (0, o.e7)([d.Z], () => d.Z.getInputDevices()), b = i.useCallback(t => {
     var n;
     c.Z.setInputDevice(t, {
       analyticsLocations: e
@@ -64,7 +64,7 @@ function _() {
   return (0, r.jsx)(s.q4e, {
     value: n,
     onOpen: v,
-    onChange: _,
+    onChange: b,
     options: a().map(l, e => {
       let {
         id: t,
@@ -81,7 +81,7 @@ function _() {
     popoutPosition: "top",
     renderOptionValue: e => {
       let [t] = e;
-      return (0, r.jsx)(b, {
+      return (0, r.jsx)(_, {
         label: t.label,
         Icon: s.S6n
       })
@@ -120,7 +120,7 @@ function v() {
     popoutPosition: "top",
     renderOptionValue: e => {
       let [t] = e;
-      return (0, r.jsx)(b, {
+      return (0, r.jsx)(_, {
         label: t.label,
         Icon: s.VWR
       })

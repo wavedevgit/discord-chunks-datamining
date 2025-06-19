@@ -20,8 +20,8 @@ var n = r(255367),
   v = r(481250),
   D = r(206314),
   b = r(513547),
-  E = r(65154),
-  C = r(388032),
+  C = r(65154),
+  E = r(388032),
   P = r(442122),
   j = r(20493);
 class R extends a.PureComponent {
@@ -109,7 +109,7 @@ class R extends a.PureComponent {
       })(e.displayName, e.bitrate, e.lost));
     return (0, n.jsxs)(o.hjN, {
       tag: o.RB0.H2,
-      title: C.intl.string(C.t.wU9INz) + (null != a ? " - " + a : ""),
+      title: E.intl.string(E.t.wU9INz) + (null != a ? " - " + a : ""),
       className: P.allowSelection,
       children: [(0, v.a)(u), 0 === g.length ? null : (0, n.jsx)(o.$i$, {
         className: j.marginBottom20
@@ -122,7 +122,7 @@ let Z = s.ZP.connectStores([u.ZP, d.Z, h.Z, p.Z], e => {
   let {
     context: r,
     index: n
-  } = e, a = u.ZP.getAllStats(r)[n], i = r === E.Yn.STREAM ? Object.values(p.Z.getRTCConnections()).find(e => e.getMediaEngineConnectionId() === a.mediaEngineConnectionId) : null, l = null != (t = null == i ? void 0 : i.hostname) ? t : "";
+  } = e, a = u.ZP.getAllStats(r)[n], i = r === C.Yn.STREAM ? Object.values(p.Z.getRTCConnections()).find(e => e.getMediaEngineConnectionId() === a.mediaEngineConnectionId) : null, l = null != (t = null == i ? void 0 : i.hostname) ? t : "";
   return {
     hidePersonalInformation: h.Z.hidePersonalInformation,
     transport: null != a ? a.transport : null,

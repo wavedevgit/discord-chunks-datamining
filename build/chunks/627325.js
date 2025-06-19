@@ -15,8 +15,8 @@ var r = n(255367),
   p = n(111361),
   m = n(778033),
   g = n(709706),
-  b = n(358820),
-  _ = n(990525),
+  _ = n(358820),
+  b = n(990525),
   v = n(388032),
   h = n(92609);
 let y = [51],
@@ -65,7 +65,7 @@ function j(e) {
       variant: "text-sm/normal",
       color: "header-muted",
       children: v.intl.format(v.t["5afO9f"], {
-        onClick: E ? b.wV : b.r5
+        onClick: E ? _.wV : _.r5
       })
     })]
   }) : w || null == T ? (0, r.jsx)("div", {
@@ -81,7 +81,7 @@ function j(e) {
       let n = e * t,
         i = I.slice(n, n + t);
       return (0, r.jsx)(S, {
-        children: i.map((n, i) => (0, r.jsx)(_.J, {
+        children: i.map((n, i) => (0, r.jsx)(b.J, {
           voiceFilter: n,
           hasNitro: j,
           analyticsContext: {

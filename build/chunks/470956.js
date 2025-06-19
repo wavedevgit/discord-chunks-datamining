@@ -1,6 +1,6 @@
 /** Chunk was on 86350 **/
 n.d(t, {
-  Es: () => _,
+  Es: () => b,
   Eu: () => h,
   bt: () => v
 }), n(388685), n(539854);
@@ -17,14 +17,14 @@ var r = n(73800),
   p = n(19780),
   m = n(594174),
   g = n(979651),
-  b = n(823379);
+  _ = n(823379);
 
-function _(e, t) {
+function b(e, t) {
   let n = (0, l.e7)([f.Z, p.Z], () => e === p.Z.getChannelId() ? f.Z.getDesyncedVoiceStates() : null),
     a = (0, l.Wu)([o.Z], () => null == e ? [] : [...o.Z.getGuildRingingUsers(e)]),
-    c = (0, l.Wu)([m.default], () => a.map(e => m.default.getUser(e)).filter(b.lm)),
+    c = (0, l.Wu)([m.default], () => a.map(e => m.default.getUser(e)).filter(_.lm)),
     g = (0, l.e7)([u.Z], () => u.Z.getBasicChannel(e)),
-    _ = r.useMemo(() => c.map(e => ({
+    b = r.useMemo(() => c.map(e => ({
       voiceState: new s.Z(e.id),
       user: e,
       member: (null == g ? void 0 : g.guild_id) != null ? d.ZP.getMember(null == g ? void 0 : g.guild_id, e.id) : null,
@@ -52,7 +52,7 @@ function _(e, t) {
         return t
       }), 0, e)
     }), r
-  })(n, t, _), [n, t, _])
+  })(n, t, b), [n, t, b])
 }
 
 function v(e, t) {

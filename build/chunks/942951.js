@@ -1,4 +1,4 @@
-/** Chunk was on 79887 **/
+/** Chunk was on 66467 **/
 "use strict";
 r.d(t, {
   l: () => p
@@ -40,19 +40,19 @@ function p(e) {
     messageId: b,
     stopPropagation: v = !1,
     ariaLabel: g
-  } = e, O = l.useRef(null), {
-    analyticsLocations: h
-  } = (0, u.ZP)(i.Z.USERNAME), m = (0, a.Z)(p, "useUsernameHook"), y = l.useCallback(e => {
+  } = e, h = l.useRef(null), {
+    analyticsLocations: m
+  } = (0, u.ZP)(i.Z.USERNAME), O = (0, a.Z)(p, "useUsernameHook"), y = l.useCallback(e => {
     let n = c.Z.getChannel(r);
     null != n && null != t && (0, d.Pv)(e, t, n)
   }, [t, r]);
   return l.useCallback(e => (l, i) => {
     let a = null == e ? void 0 : e.colorStrings,
-      c = m && null != a && null != a.primaryColor && null != a.secondaryColor,
+      c = O && null != a && null != a.primaryColor && null != a.secondaryColor,
       d = t => {
         var r, i;
         return (0, n.jsx)(o.rz2, (r = f({}, null != t ? t : {}), i = i = {
-          ref: O,
+          ref: h,
           onContextMenu: y,
           name: (0, o.qgQ)(l),
           color: null == e ? void 0 : e.colorString,
@@ -74,9 +74,9 @@ function p(e) {
         v && null != t && t.stopPropagation(), e(t)
       };
     return (0, n.jsx)(u.Gt, {
-      value: h,
+      value: m,
       children: null != t ? (0, n.jsx)(s.Z, {
-        targetElementRef: O,
+        targetElementRef: h,
         user: t,
         guildId: p,
         channelId: r,
@@ -107,5 +107,5 @@ function p(e) {
         }
       }) : d(void 0)
     }, i)
-  }, [h, t, r, p, b, y, v, g, m])
+  }, [m, t, r, p, b, y, v, g, O])
 }
