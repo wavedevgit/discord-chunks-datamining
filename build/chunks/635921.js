@@ -35,21 +35,31 @@ let I = e => {
       containerClassName: r,
       buttonClassName: s,
       isApplicationHome: a,
-      isDarkMode: c
-    } = e, d = (0, i.jsx)(E.Z, {
+      isDarkMode: c,
+      isEligibleForBogoPromotion: d
+    } = e, u = d ? (0, i.jsx)(E.Z, {
+      color: c ? o.Ttl.BRAND_INVERTED : void 0,
+      className: l()(T.button, T.subButton, s, {
+        [T.extendedButton]: t && a,
+        [T.whiteSubButton]: a && !c
+      }),
+      shinyButtonClassName: c ? void 0 : T.tier2Gradient,
+      subscriptionTier: n,
+      hasActivePromotion: !0
+    }) : (0, i.jsx)(E.Z, {
       color: c || !a ? o.Ttl.BRAND_INVERTED : void 0,
       className: l()(T.button, T.subButton, s, {
         [T.extendedButton]: t && a,
         [T.whiteSubButton]: a && !c
       }),
       subscriptionTier: n
-    }), u = t && a ? null : (0, i.jsx)(x.Z, {
+    }), m = t && a ? null : (0, i.jsx)(x.Z, {
       className: l()(T.button, s),
       color: a ? void 0 : o.Ttl.WHITE
     });
     return (0, i.jsxs)("div", {
       className: l()(T.buttonContainer, r),
-      children: [d, " ", u]
+      children: [u, " ", m]
     })
   },
   N = e => {

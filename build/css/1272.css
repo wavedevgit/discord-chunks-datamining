@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 90c72fd05f31e13d
+  Original File Name: 16671979daaa325b
 **/
 .container__74da2 {
     align-items: center;
@@ -6653,6 +6653,48 @@
     margin-right: 2px
 }
 
+.badgeContainer__98c7b {
+    display: flex;
+    flex-direction: row;
+    position: relative
+}
+
+.newBadge__98c7b {
+    align-items: center;
+    background-image: linear-gradient(to right,var(--premium-tier-2-purple-for-gradients),var(--premium-tier-2-pink-for-gradients));
+    border-radius: 19px;
+    color: var(--white-500);
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    padding: 0 6px;
+    pointer-events: all;
+    text-transform: uppercase
+}
+
+.star__98c7b {
+    color: var(--white);
+    position: relative
+}
+
+.starLeft__98c7b {
+    bottom: -6px;
+    left: -6px
+}
+
+.starRight__98c7b {
+    bottom: 0;
+    left: -4px
+}
+
+.theme-light .starLeft__98c7b {
+    color: var(--premium-tier-2-purple-for-gradients)
+}
+
+.theme-light .starRight__98c7b {
+    color: var(--premium-tier-2-pink-for-gradients)
+}
+
 .theme-light .customCircleAnimation__83ef9 {
     animation: glow__83ef9 5s ease-in-out infinite,pulse__83ef9 5s ease-in-out infinite;
     transition: stroke-dashoffset .5s ease-out
@@ -8606,4 +8648,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=90c72fd05f31e13d.css.map*/
+/*# sourceMappingURL=16671979daaa325b.css.map*/

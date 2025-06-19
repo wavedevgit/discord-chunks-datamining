@@ -181,7 +181,7 @@ let v = e => {
       timeToLoadMs: c,
       timeToFetchMs: d
     } = e;
-    u.default.track(m.rMx.USER_PROFILE_UI_VIEWED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
+    (null != l ? l : 0) <= 0 || (null != c ? c : 0) <= 0 || (null != d ? d : 0) <= 0 || u.default.track(m.rMx.USER_PROFILE_UI_VIEWED, O(b({}, (0, r.hH)(t), (0, r.JS)(n), S(e), A(e)), {
       location_stack: i,
       profile_ui: a,
       view_started_at: o,

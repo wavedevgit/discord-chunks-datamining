@@ -16,7 +16,8 @@ function l(e) {
     copy: n,
     bannerImage: i,
     textColor: l = "always-white",
-    hideGiftIcon: c = !1
+    hideGiftIcon: c = !1,
+    hideNitroIcon: u = !1
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(s.bannerContainer, t),
@@ -30,12 +31,16 @@ function l(e) {
         size: "md",
         color: "currentColor",
         className: s.giftIcon
+      }), !1 === u && (0, r.jsx)(o.SrA, {
+        size: "md",
+        color: o.TVs.colors.TEXT_INVERT,
+        className: s.nitroIcon
       }), (0, r.jsx)(o.X6q, {
         className: a()(s.textHeader, {
-          [s.textHeaderWithGiftIcon]: !c
+          [s.textHeaderWithIcon]: !c
         }),
         color: l,
-        variant: "eyebrow",
+        variant: "heading-md/bold",
         children: n
       })]
     })]

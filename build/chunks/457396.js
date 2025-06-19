@@ -94,7 +94,7 @@ let U = e => {
       }),
       ec = (null == Q ? void 0 : Q.trial_id) === w.a7,
       eu = [];
-    es && eu.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), J && eu.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2);
+    es && eu.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), J && eu.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), ee && eu.push(o.z.BOGO_2025_NITRO_TAB_BADGE);
     let [ed, ep] = (0, h.US)(eu, void 0, !0);
     if (i.useEffect(() => {
         !0 === V && null != ed && ep(D.L.AUTO_DISMISS)

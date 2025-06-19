@@ -117,9 +117,10 @@ let C = e => {
         isExpanded: p,
         className: h,
         ctaLabel: v,
-        onClick: O
+        onClick: O,
+        location: C = m.jn.QUEST_BAR_V2
       } = e,
-      C = function(e, t) {
+      w = function(e, t) {
         if (null == e) return {};
         var n, r, s = function(e, t) {
           if (null == e) return {};
@@ -133,30 +134,30 @@ let C = e => {
           for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
         }
         return s
-      }(e, ["quest", "useReducedMotion", "isExpanded", "className", "ctaLabel", "onClick"]);
-    let w = (0, x.hf)({
+      }(e, ["quest", "useReducedMotion", "isExpanded", "className", "ctaLabel", "onClick", "location"]);
+    let S = (0, x.hf)({
         quest: u,
-        location: m.jn.QUEST_BAR_V2
+        location: C
       }),
-      S = (0, g.up)(b.dr.QUESTS_BAR),
-      E = s.useCallback(e => {
+      E = (0, g.up)(b.dr.QUESTS_BAR),
+      P = s.useCallback(e => {
         var t;
         null == O || O(e), (0, f.xN)(u.config) && (null == (t = u.userStatus) ? void 0 : t.claimedAt) != null ? (0, c.mK)({
           openInLayer: !1,
           tab: j.AW.ORBS,
           analyticsLocations: [],
           analyticsSource: l.Z.QUEST_HOME_PAGE
-        }) : w()
-      }, [O, u.config, null == (o = u.userStatus) ? void 0 : o.claimedAt, w]);
+        }) : S()
+      }, [O, u.config, null == (o = u.userStatus) ? void 0 : o.claimedAt, S]);
     return (0, r.jsx)(i.gtL, (t = y({
       fullWidth: !0,
       size: i.zxk.Sizes.SMALL,
-      onClick: E,
+      onClick: P,
       pauseAnimation: d || !p,
       className: a()(_.cta, h),
       buttonShineClassName: _.shine
-    }, C), n = n = {
-      children: null != v ? v : S
+    }, w), n = n = {
+      children: null != v ? v : E
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

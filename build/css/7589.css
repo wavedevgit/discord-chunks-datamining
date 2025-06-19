@@ -1,47 +1,30 @@
 /**
   Module ID: 7589
-  Original File Name: 76f41d1ca516efac
+  Original File Name: ffda02a71eb0a9ae
 **/
-.badgeContainer__98c7b {
-    display: flex;
-    flex-direction: row;
-    position: relative
-}
-
-.newBadge__98c7b {
+.premiumTrialBadge_e4ef22 {
     align-items: center;
-    background-image: linear-gradient(to right,var(--premium-tier-2-purple-for-gradients),var(--premium-tier-2-pink-for-gradients));
-    border-radius: 19px;
-    color: var(--white-500);
+    border-radius: var(--radius-md);
     display: flex;
-    justify-content: center;
     margin-left: auto;
     padding: 0 6px;
     pointer-events: all;
     text-transform: uppercase
 }
 
-.star__98c7b {
-    color: var(--white);
-    position: relative
+.backgroundGradient_e4ef22 {
+    background: linear-gradient(90deg,#db00a4,#5968f0)
 }
 
-.starLeft__98c7b {
-    bottom: -6px;
-    left: -6px
+.premiumTrialAcknowledgedBadge_e4ef22 {
+    background-color: var(--background-mod-strong)
 }
 
-.starRight__98c7b {
-    bottom: 0;
-    left: -4px
-}
-
-.theme-light .starLeft__98c7b {
-    color: var(--premium-tier-2-purple-for-gradients)
-}
-
-.theme-light .starRight__98c7b {
-    color: var(--premium-tier-2-pink-for-gradients)
+.BogoBadgeClockIcon_e4ef22 {
+    color: var(--icon-secondary);
+    height: 14px;
+    margin-right: 4px;
+    width: 14px
 }
 
 .badgeIconPrivateMessages__80f39 {
@@ -1988,4 +1971,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=76f41d1ca516efac.css.map*/
+/*# sourceMappingURL=ffda02a71eb0a9ae.css.map*/
