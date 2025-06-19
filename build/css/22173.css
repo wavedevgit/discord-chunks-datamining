@@ -1,6 +1,6 @@
 /**
   Module ID: 22173
-  Original File Name: 4e0971cc4e655341
+  Original File Name: bfc435b0d0ef5bde
 **/
 .effect_a9ddb3 {
     bottom: 0;
@@ -376,6 +376,8 @@
 .reaction_f8896c .emoji-text {
     color: var(--text-normal);
     display: inline-block;
+    font-size: 20px;
+    font-variant-emoji: emoji;
     vertical-align: -2px
 }
 
@@ -667,6 +669,8 @@
 .reaction__23977 .emoji-text {
     color: var(--text-normal);
     display: inline-block;
+    font-size: 1.25rem;
+    font-variant-emoji: emoji;
     vertical-align: -.125rem
 }
 
@@ -1380,4 +1384,4 @@
     background-color: var(--background-tertiary)
 }
 
-/*# sourceMappingURL=4e0971cc4e655341.css.map*/
+/*# sourceMappingURL=bfc435b0d0ef5bde.css.map*/
