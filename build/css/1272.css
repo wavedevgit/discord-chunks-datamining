@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 16671979daaa325b
+  Original File Name: e204ed6e9a745e2f
 **/
 .container__74da2 {
     align-items: center;
@@ -278,7 +278,7 @@
     color: var(--text-muted)
 }
 
-.visual-refresh .title__85643 {
+.title__85643 {
     align-items: center;
     display: inline-flex;
     gap: var(--space-8);
@@ -286,22 +286,22 @@
     max-width: 50vw
 }
 
-.visual-refresh .icon__85643 {
+.icon__85643 {
     height: 16px;
     width: 16px
 }
 
-.visual-refresh .appIcon__85643 {
+.appIcon__85643 {
     border-radius: 6px;
     height: 20px;
     width: 20px
 }
 
-.visual-refresh .guildIcon__85643 {
+.guildIcon__85643 {
     border-radius: var(--radius-xs)
 }
 
-.visual-refresh .button__85643 {
+.button__85643 {
     align-items: center;
     color: var(--interactive-normal);
     cursor: pointer;
@@ -312,16 +312,14 @@
     width: var(--space-32)
 }
 
-.visual-refresh .button__85643:hover {
+.button__85643:hover {
     color: var(--interactive-hover)
 }
 
-.visual-refresh .button__85643 svg {
+.button__85643 svg {
     height: var(--chat-input-icon-size);
     width: var(--chat-input-icon-size)
-}
-
-.visual-refresh.enable-forced-colors .button__85643 {
+}&.enable-forced-colors .button__85643 {
     background-color: ButtonFace;
     color: ButtonText
 }
@@ -3342,7 +3340,7 @@
 }
 
 .outer_bf1984 {
-    background-color: var(--activity-card-background)
+    background-color: var(--background-surface-high)
 }
 
 .padded_bf1984 {
@@ -3361,11 +3359,7 @@
     background-color: var(--background-secondary-alt)
 }
 
-.visual-refresh .outer_bf1984 {
-    background-color: var(--background-surface-high)
-}
-
-.visual-refresh .outer_bf1984.active_bf1984,.visual-refresh .outer_bf1984.interactive_bf1984:hover {
+.outer_bf1984.active_bf1984,.outer_bf1984.interactive_bf1984:hover {
     background-color: var(--background-surface-higher)
 }
 
@@ -7823,7 +7817,7 @@ html .tabBadge__35e86 {
 }
 
 .bg__960e4 {
-    background: var(--bg-overlay-app-frame,var(--background-tertiary));
+    background: var(--bg-overlay-app-frame,var(--bg-base-tertiary));
     bottom: 0;
     left: 0;
     position: absolute;
@@ -7831,11 +7825,7 @@ html .tabBadge__35e86 {
     top: 0
 }
 
-.visual-refresh .bg__960e4 {
-    background: var(--bg-overlay-app-frame,var(--bg-base-tertiary))
-}
-
-.visual-refresh.refresh-fast-follow-guild-bg .bg__960e4 {
+.refresh-fast-follow-guild-bg .bg__960e4 {
     background: var(--bg-overlay-app-frame,var(--app-background-frame))
 }
 
@@ -8009,7 +7999,6 @@ html .tabBadge__35e86 {
 
 .container_a2f514 {
     align-items: center;
-    background: var(--bg-overlay-2,var(--background-secondary));
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -8018,6 +8007,7 @@ html .tabBadge__35e86 {
     right: 0;
     top: 0;
     z-index: 3000;
+    background: var(--bg-overlay-2,var(--background-base-lowest));
     opacity: 1;
     overflow: hidden;
     transition: opacity var(--connecting-container-fade-duration,.2s) ease-out
@@ -8038,10 +8028,6 @@ html .tabBadge__35e86 {
 
 .container_a2f514 video.ready_a2f514 {
     visibility: visible
-}
-
-.visual-refresh .container_a2f514 {
-    background: var(--bg-overlay-2,var(--background-base-lowest))
 }
 
 .full-motion .container_a2f514[data-fade=true] .spinner_a2f514 {
@@ -8648,4 +8634,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=16671979daaa325b.css.map*/
+/*# sourceMappingURL=e204ed6e9a745e2f.css.map*/

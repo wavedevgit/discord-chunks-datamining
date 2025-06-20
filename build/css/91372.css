@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: 4f52e7018cd39283
+  Original File Name: a654db52e14c1df2
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4416,15 +4416,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .container_e45859 {
-    border-radius: 4px;
+    border-radius: 8px;
     box-sizing: border-box;
     display: block;
     padding: 1px 0;
     transition: none
-}
-
-:where(.visual-refresh) .container_e45859 {
-    border-radius: 8px
 }
 
 .channel__972a0 {
@@ -16009,10 +16005,6 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
 }
 
 .body_fedacc {
-    background-color: var(--background-secondary)
-}
-
-.visual-refresh .body_fedacc {
     background-color: var(--background-secondary-alt)
 }
 
@@ -19591,4 +19583,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=4f52e7018cd39283.css.map*/
+/*# sourceMappingURL=a654db52e14c1df2.css.map*/

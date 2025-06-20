@@ -1,7 +1,7 @@
 /** Chunk was on 61007 **/
 n.r(t), n.d(t, {
   openCreateGuildModal: () => d,
-  updateCreateGuildModal: () => p
+  updateCreateGuildModal: () => m
 });
 var r = n(255367);
 n(73800);
@@ -76,7 +76,7 @@ let d = e => {
       modalKey: s.PU
     })
   },
-  p = e => {
+  m = e => {
     let {
       slide: t,
       location: n

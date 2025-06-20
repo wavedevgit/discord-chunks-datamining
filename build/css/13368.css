@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 4944c2df61ad39c1
+  Original File Name: 4f0c2b28ce8bffa8
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -2880,7 +2880,7 @@
 
 .tip__30cbe {
     line-height: 16px;
-    opacity: .6
+    opacity: 1
 }
 
 .block__30cbe .pro__30cbe,.block__30cbe .tip__30cbe,.tip__30cbe {
@@ -2894,10 +2894,6 @@
 
 .inline__30cbe .pro__30cbe {
     margin-right: 3px
-}
-
-.visual-refresh .tip__30cbe {
-    opacity: 1
 }
 
 .enable-forced-colors .tip__30cbe {
@@ -3267,4 +3263,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=4944c2df61ad39c1.css.map*/
+/*# sourceMappingURL=4f0c2b28ce8bffa8.css.map*/

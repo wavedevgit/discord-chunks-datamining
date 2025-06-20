@@ -1,7 +1,6 @@
 /** Chunk was on web.js **/
 "use strict";
 e.exports = {
-  spoilerMarkdownContent: "spoilerMarkdownContent__54ab5",
   spoilerContent: "spoilerContent__54ab5",
   hidden: "hidden__54ab5",
   opaque: "opaque__54ab5",
@@ -16,6 +15,7 @@ e.exports = {
   explicitContentWarningText: "explicitContentWarningText__54ab5",
   spoilerWarning: "spoilerWarning__54ab5 obscureWarning__54ab5",
   embed: "embed__54ab5",
+  spoilerMarkdownContent: "spoilerMarkdownContent__54ab5",
   obscuredTextContent: "obscuredTextContent__54ab5",
   obscuredTextContentInner: "obscuredTextContentInner__54ab5",
   obscureButtonContainer: "obscureButtonContainer__54ab5",

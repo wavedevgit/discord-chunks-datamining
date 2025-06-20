@@ -1,6 +1,6 @@
 /**
   Module ID: 64648
-  Original File Name: 5e26fb7b18d1bf2e
+  Original File Name: 4776767b4babbcd2
 **/
 .bugReporterSubmitModalRoot__341b5 {
     background-color: transparent!important;
@@ -8,13 +8,10 @@
     background-position: 50%!important;
     background-repeat: no-repeat!important;
     background-size: contain!important;
+    border: none;
     box-shadow: none!important;
     height: auto;
     width: 720px
-}
-
-.visual-refresh .bugReporterSubmitModalRoot__341b5 {
-    border: none
 }
 
 .modalContent__341b5 {
@@ -41,4 +38,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=5e26fb7b18d1bf2e.css.map*/
+/*# sourceMappingURL=4776767b4babbcd2.css.map*/

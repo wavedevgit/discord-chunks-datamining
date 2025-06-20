@@ -1,6 +1,6 @@
 /**
   Module ID: 17153
-  Original File Name: bd093ee60e2b2a3c
+  Original File Name: 06636deb5e7d7641
 **/
 .container_fea832 {
     background-color: var(--input-background);
@@ -289,7 +289,7 @@
 .addMemberRow__01dab {
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 12px;
+    margin-left: 0;
     margin-right: 4px;
     padding: 8px 6px
 }
@@ -349,16 +349,12 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-300-hsl)/.3)
 }
 
-.visual-refresh .roleMemberList__01dab,.visual-refresh .searchBox__01dab {
+.roleMemberList__01dab,.searchBox__01dab {
     padding-left: var(--modal-horizontal-padding);
     padding-right: calc(var(--modal-horizontal-padding) - var(--space-8))
 }
 
-.visual-refresh .addMemberRow__01dab {
-    margin-left: 0
-}
-
-.visual-refresh .scrollSeparator__01dab {
+.scrollSeparator__01dab {
     border-bottom: 1px solid var(--border-subtle);
     box-shadow: none
 }
@@ -599,4 +595,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=bd093ee60e2b2a3c.css.map*/
+/*# sourceMappingURL=06636deb5e7d7641.css.map*/

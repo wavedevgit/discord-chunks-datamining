@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: e508ecf7c97671a4
+  Original File Name: 94803f89b092b859
 **/
 .buttonContent_a83ec9 {
     align-items: center;
@@ -119,6 +119,7 @@
 .modalContent_c50f62 {
     border-radius: var(--radius-md);
     display: flex;
+    margin: -1px;
     padding: 0
 }
 
@@ -500,11 +501,6 @@
     margin-right: 16px
 }
 
-.visual-refresh .modalContent_c50f62 {
-    margin: -1px;
-    padding: 0
-}
-
 .errorMessageLine_c50f62 {
     align-items: center;
     background: var(--status-danger);
@@ -535,4 +531,4 @@
     width: 350px
 }
 
-/*# sourceMappingURL=e508ecf7c97671a4.css.map*/
+/*# sourceMappingURL=94803f89b092b859.css.map*/

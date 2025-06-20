@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 7f33e59b5f29abec
+  Original File Name: a3ae1454ab29cb92
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -153,7 +153,9 @@
 }
 
 .shop__6db1d {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-lower);
+    border-top: 1px solid var(--border-subtle);
+    box-sizing: border-box;
     flex: 1;
     height: 100%;
     min-width: 575px
@@ -163,12 +165,6 @@
     .shop__6db1d {
         min-width: 0
     }
-}
-
-.visual-refresh .shop__6db1d {
-    background-color: var(--background-base-lower);
-    border-top: 1px solid var(--border-subtle);
-    box-sizing: border-box
 }
 
 .shopScroll__6db1d {
@@ -342,8 +338,7 @@
 
 .shopCard_c3d04b {
     background-color: var(--background-secondary);
-    border: 2px solid transparent;
-    border-color: var(--chat-border);
+    border: 1px solid var(--border-subtle);
     border-radius: 16px;
     box-shadow: none;
     box-sizing: border-box;
@@ -568,6 +563,7 @@
 }
 
 .productName_c3d04b {
+    color: var(--header-primary);
     overflow: hidden;
     position: relative;
     text-overflow: ellipsis;
@@ -664,25 +660,17 @@
     mask-image: linear-gradient(0deg,transparent 0,#000 40%)
 }
 
-.visual-refresh .shopCard_c3d04b {
-    border: 1px solid var(--border-subtle)
-}
-
-.visual-refresh .shopCardDark_c3d04b,.visual-refresh .shopCardLight_c3d04b {
+.shopCardDark_c3d04b,.shopCardLight_c3d04b {
     background-color: var(--background-surface-high)
 }
 
-.visual-refresh .darkCardBackground_c3d04b,.visual-refresh .lightCardBackground_c3d04b {
+.darkCardBackground_c3d04b,.lightCardBackground_c3d04b {
     background-color: var(--background-surface-higher);
     border-top: 1px solid var(--border-faint)
 }
 
-.visual-refresh .shopCardDarkHighlighted_c3d04b,.visual-refresh .shopCardHighlighted_c3d04b {
+.shopCardDarkHighlighted_c3d04b,.shopCardHighlighted_c3d04b {
     box-shadow: var(--shadow-high)
-}
-
-.visual-refresh .productName_c3d04b {
-    color: var(--header-primary)
 }
 
 .externalProductDimmed_c3d04b {
@@ -935,9 +923,9 @@
 }
 
 .headerBar__80679 {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-bottom: 1px solid var(--border-subtle);
-    height: 48px;
+    height: var(--custom-channel-header-height);
     padding-bottom: 0;
     padding-right: var(--space-12);
     padding-top: 0;
@@ -950,24 +938,15 @@
     overflow: visible
 }
 
-.visual-refresh .headerBar__80679 {
-    background-color: var(--background-base-lower);
-    border-bottom: 1px solid var(--border-subtle);
-    height: var(--custom-channel-header-height)
-}
-
 .fullscreenHeaderBar__80679 {
+    border: none;
     box-sizing: border-box;
     display: flex;
-    height: 80px;
+    height: calc(64px + var(--custom-app-top-bar-height))!important;
     justify-content: center;
     margin: 0 auto;
-    padding-right: 72px
-}
-
-.visual-refresh .fullscreenHeaderBar__80679 {
-    border: none;
-    height: calc(64px + var(--custom-app-top-bar-height));
+    padding-bottom: 0;
+    padding-right: 72px;
     padding-top: var(--custom-app-top-bar-height)
 }
 
@@ -1051,7 +1030,7 @@
     margin-right: 36px
 }
 
-.visual-refresh .closeIcon__80679 {
+.closeIcon__80679 {
     margin-top: 24px
 }
 
@@ -1238,15 +1217,12 @@
     --custom-spacing: 16px;
     --custom-gap: 24px;
     background: var(--background-primary);
+    background-color: var(--background-base-lower);
     overflow-x: hidden;
     overflow-y: auto;
     padding-bottom: calc(var(--custom-gap) + 162px);
     position: relative;
     width: 100%
-}
-
-.visual-refresh .shop__08415 {
-    background-color: var(--background-base-lower)
 }
 
 .banner__08415 {
@@ -1405,7 +1381,7 @@
     width: 100%
 }
 
-.visual-refresh .shopFullscreen__08415 .heroBlockContent__08415 {
+.shopFullscreen__08415 .heroBlockContent__08415 {
     margin-top: calc(32px + var(--custom-channel-header-height) + var(--custom-app-top-bar-height))
 }
 
@@ -1532,13 +1508,9 @@
 
 .feed__08415 {
     display: grid;
-    grid-gap: 24px;
     grid-template-columns: repeat(auto-fill,minmax(246px,1fr));
     overflow: visible;
-    width: 100%
-}
-
-.visual-refresh .feed__08415 {
+    width: 100%;
     grid-gap: var(--space-xl)
 }
 
@@ -1805,4 +1777,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=7f33e59b5f29abec.css.map*/
+/*# sourceMappingURL=a3ae1454ab29cb92.css.map*/

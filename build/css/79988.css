@@ -1,6 +1,6 @@
 /**
   Module ID: 79988
-  Original File Name: 4d64babd6be0b79c
+  Original File Name: 0eafc8dca6e68e61
 **/
 .searchBar__3e00d {
     background-color: var(--background-secondary);
@@ -48,7 +48,7 @@
 .addMemberRow__01dab {
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 12px;
+    margin-left: 0;
     margin-right: 4px;
     padding: 8px 6px
 }
@@ -108,16 +108,12 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-300-hsl)/.3)
 }
 
-.visual-refresh .roleMemberList__01dab,.visual-refresh .searchBox__01dab {
+.roleMemberList__01dab,.searchBox__01dab {
     padding-left: var(--modal-horizontal-padding);
     padding-right: calc(var(--modal-horizontal-padding) - var(--space-8))
 }
 
-.visual-refresh .addMemberRow__01dab {
-    margin-left: 0
-}
-
-.visual-refresh .scrollSeparator__01dab {
+.scrollSeparator__01dab {
     border-bottom: 1px solid var(--border-subtle);
     box-shadow: none
 }
@@ -358,4 +354,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=4d64babd6be0b79c.css.map*/
+/*# sourceMappingURL=0eafc8dca6e68e61.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 86258
-  Original File Name: 15bb705e832f26f8
+  Original File Name: da7b78ed05a6581b
 **/
 .partialOwnStateContainer__0d2da {
     align-items: center;
@@ -249,8 +249,7 @@
 
 .shopCard_c3d04b {
     background-color: var(--background-secondary);
-    border: 2px solid transparent;
-    border-color: var(--chat-border);
+    border: 1px solid var(--border-subtle);
     border-radius: 16px;
     box-shadow: none;
     box-sizing: border-box;
@@ -475,6 +474,7 @@
 }
 
 .productName_c3d04b {
+    color: var(--header-primary);
     overflow: hidden;
     position: relative;
     text-overflow: ellipsis;
@@ -571,25 +571,17 @@
     mask-image: linear-gradient(0deg,transparent 0,#000 40%)
 }
 
-.visual-refresh .shopCard_c3d04b {
-    border: 1px solid var(--border-subtle)
-}
-
-.visual-refresh .shopCardDark_c3d04b,.visual-refresh .shopCardLight_c3d04b {
+.shopCardDark_c3d04b,.shopCardLight_c3d04b {
     background-color: var(--background-surface-high)
 }
 
-.visual-refresh .darkCardBackground_c3d04b,.visual-refresh .lightCardBackground_c3d04b {
+.darkCardBackground_c3d04b,.lightCardBackground_c3d04b {
     background-color: var(--background-surface-higher);
     border-top: 1px solid var(--border-faint)
 }
 
-.visual-refresh .shopCardDarkHighlighted_c3d04b,.visual-refresh .shopCardHighlighted_c3d04b {
+.shopCardDarkHighlighted_c3d04b,.shopCardHighlighted_c3d04b {
     box-shadow: var(--shadow-high)
-}
-
-.visual-refresh .productName_c3d04b {
-    color: var(--header-primary)
 }
 
 .externalProductDimmed_c3d04b {
@@ -752,4 +744,4 @@
     background-clip: padding-box
 }
 
-/*# sourceMappingURL=15bb705e832f26f8.css.map*/
+/*# sourceMappingURL=da7b78ed05a6581b.css.map*/

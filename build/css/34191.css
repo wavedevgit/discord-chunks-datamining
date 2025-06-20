@@ -1,6 +1,6 @@
 /**
   Module ID: 34191
-  Original File Name: 47502318736011d2
+  Original File Name: 69516d71501a568e
 **/
 .header_b917ac {
     overflow: hidden;
@@ -9,12 +9,8 @@
 
 .closeButton_b917ac {
     position: absolute;
-    right: 12px;
+    right: 14px;
     top: 12px
-}
-
-.visual-refresh .closeButton_b917ac {
-    right: 14px
 }
 
 .title_b917ac {
@@ -68,4 +64,4 @@
     margin-top: 16px
 }
 
-/*# sourceMappingURL=47502318736011d2.css.map*/
+/*# sourceMappingURL=69516d71501a568e.css.map*/

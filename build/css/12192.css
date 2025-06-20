@@ -1,6 +1,6 @@
 /**
   Module ID: 12192
-  Original File Name: 10625b227b61936f
+  Original File Name: 267ee8e09aa0ceef
 **/
 .modal_deee3a {
     max-height: 600px;
@@ -18,9 +18,13 @@
 
 .container_deee3a {
     align-items: center;
-    background-color: var(--background-primary);
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-blue-end) 0,var(--background-modal-gradient-blue-start) 100%);
+    border-radius: 12px;
+    box-shadow: inset 0 0 0 1px var(--border-subtle);
     display: flex;
     justify-content: center;
+    min-height: 425px;
+    padding: 0;
     position: relative
 }
 
@@ -54,16 +58,8 @@
     margin-top: var(--space-16)
 }
 
-:where(.visual-refresh) .container_deee3a {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-blue-end) 0,var(--background-modal-gradient-blue-start) 100%);
-    border-radius: 12px;
-    box-shadow: inset 0 0 0 1px var(--border-subtle);
-    min-height: 425px;
-    padding: 0
-}
-
-:where(.visual-refresh) .modal_deee3a.gradientBorder_deee3a {
+.modal_deee3a.gradientBorder_deee3a {
     border: none
 }
 
-/*# sourceMappingURL=10625b227b61936f.css.map*/
+/*# sourceMappingURL=267ee8e09aa0ceef.css.map*/

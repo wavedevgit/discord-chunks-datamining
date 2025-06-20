@@ -1,6 +1,6 @@
 /** Chunk was on 80144 **/
 t.d(n, {
-  Cg: () => m,
+  Cg: () => I,
   Cp: () => M,
   Cs: () => b,
   EY: () => T,
@@ -17,9 +17,9 @@ t.d(n, {
   qS: () => h,
   s: () => C,
   sQ: () => u,
-  wo: () => I
+  wo: () => m
 });
-var o, i, r, s, l, a, c, _ = t(990547),
+var i, o, r, s, l, a, c, _ = t(990547),
   d = t(981631);
 
 function E(e, n, t) {
@@ -32,12 +32,12 @@ function E(e, n, t) {
 }
 class u {}
 E(u, "TOS_LINK", "https://discord.com/terms"), E(u, "COMMUNITY_GUIDELINES", "https://discord.com/guidelines"), E(u, "APPEALS_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731"), E(u, "WARNING_SYSTEM_HELPCENTER_LINK", "https://support.discord.com/hc/articles/18210965981847"), E(u, "AGE_VERIFICATION_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731"), E(u, "SPAM_LINK", "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731&tf_360055270593=__dc.ticket_form-tnsv1_appeals_other_questions__"), E(u, "LEARN_MORE_UU_APPEAL_LINK", "https://support.discord.com/hc/articles/360041820932");
-class m {}
-E(m, "CLASSIFICATION_ID", "classification_id"), E(m, "INCIDENT_TIMESTAMP", "incident_time");
-var I = ((o = {}).POLICY_VIOLATION_DETAIL = "policy_violation_detail", o.LEARN_MORE_LINK = "learn_more_link", o);
+class I {}
+E(I, "CLASSIFICATION_ID", "classification_id"), E(I, "INCIDENT_TIMESTAMP", "incident_time");
+var m = ((i = {}).POLICY_VIOLATION_DETAIL = "policy_violation_detail", i.LEARN_MORE_LINK = "learn_more_link", i);
 class N {}
 E(N, "ICON_TYPE", "icon_type"), E(N, "HEADER", "header"), E(N, "BODY", "body"), E(N, "CTAS", "ctas"), E(N, "TIMESTAMP", "timestamp"), E(N, "THEME", "theme"), E(N, "CLIENT_VERSION_MESSAGE", "client_version_message"), E(N, "LEARN_MORE_LINK", "learn_more_link"), E(N, "CLASSIFICATION_ID", "classification_id");
-var L = ((i = {})[i.ViewViolationDetail = 0] = "ViewViolationDetail", i[i.ViewViolationsDropdown = 1] = "ViewViolationsDropdown", i[i.ClickLetUsKnow = 2] = "ClickLetUsKnow", i[i.ClickAgeVerificationLink = 3] = "ClickAgeVerificationLink", i[i.ClickSpamWebformLink = 4] = "ClickSpamWebformLink", i[i.ClickLearnMoreLink = 5] = "ClickLearnMoreLink", i[i.ClickCommunityGuidelinesLink = 6] = "ClickCommunityGuidelinesLink", i[i.ClickWarningSystemHelpcenterLink = 7] = "ClickWarningSystemHelpcenterLink", i),
+var L = ((o = {})[o.ViewViolationDetail = 0] = "ViewViolationDetail", o[o.ViewViolationsDropdown = 1] = "ViewViolationsDropdown", o[o.ClickLetUsKnow = 2] = "ClickLetUsKnow", o[o.ClickAgeVerificationLink = 3] = "ClickAgeVerificationLink", o[o.ClickSpamWebformLink = 4] = "ClickSpamWebformLink", o[o.ClickLearnMoreLink = 5] = "ClickLearnMoreLink", o[o.ClickCommunityGuidelinesLink = 6] = "ClickCommunityGuidelinesLink", o[o.ClickWarningSystemHelpcenterLink = 7] = "ClickWarningSystemHelpcenterLink", o),
   C = ((r = {})[r.SystemDM = 0] = "SystemDM", r[r.StandingTab = 1] = "StandingTab", r[r.AppealIngestion = 2] = "AppealIngestion", r);
 Object.freeze({
   SPEED_BUMP: d.jXE.APPEAL_INGESTION_SPEED_BUMP,

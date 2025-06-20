@@ -1,6 +1,6 @@
 /**
   Module ID: 79764
-  Original File Name: b027b6a2a33411c4
+  Original File Name: 9f17c3e993b528e1
 **/
 .iconContainer__98cf7 {
     filter: saturate(var(--saturation-factor,1));
@@ -23,12 +23,8 @@
 
 .closeButton_b917ac {
     position: absolute;
-    right: 12px;
+    right: 14px;
     top: 12px
-}
-
-.visual-refresh .closeButton_b917ac {
-    right: 14px
 }
 
 .title_b917ac {
@@ -240,8 +236,8 @@
 
 .container_eb2cd2 {
     align-items: center;
-    background-color: var(--background-primary);
-    border: 1px solid var(--background-modifier-accent);
+    background-color: var(--background-mod-faint);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
     display: flex;
@@ -264,10 +260,11 @@
 
 .icon_eb2cd2 {
     filter: saturate(var(--saturation-factor,1));
-    margin: 8px 8px 8px 16px
+    margin: var(--space-16) var(--space-16) var(--space-16) var(--space-16)
 }
 
 .text_eb2cd2 {
+    font-weight: 400;
     overflow: hidden;
     text-overflow: ellipsis
 }
@@ -275,19 +272,6 @@
 .arrow_eb2cd2 {
     margin-left: auto;
     margin-right: 16px
-}
-
-:where(.visual-refresh) .icon_eb2cd2 {
-    margin: var(--space-16) var(--space-16) var(--space-16) var(--space-16)
-}
-
-:where(.visual-refresh) .text_eb2cd2 {
-    font-weight: 400
-}
-
-:where(.visual-refresh) .container_eb2cd2 {
-    background-color: var(--background-mod-faint);
-    border: 1px solid var(--border-subtle)
 }
 
 .header__1f657 {
@@ -345,4 +329,4 @@
     }
 }
 
-/*# sourceMappingURL=b027b6a2a33411c4.css.map*/
+/*# sourceMappingURL=9f17c3e993b528e1.css.map*/
