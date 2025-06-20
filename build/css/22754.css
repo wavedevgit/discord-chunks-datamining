@@ -1,6 +1,6 @@
 /**
   Module ID: 22754
-  Original File Name: 27424275bd2c4838
+  Original File Name: b6dcc350043b6664
 **/
 .container__5537c {
     display: flex;
@@ -238,10 +238,6 @@
 .recurrences__4fb8c {
     display: flex;
     flex-direction: column;
-    padding: 4px 12px 12px
-}
-
-.visual-refresh .recurrences__4fb8c {
     padding: var(--space-4) var(--space-12) var(--space-12)
 }
 
@@ -370,23 +366,15 @@
 }
 
 .card__88264 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-mod-subtle);
     border: 1px solid var(--background-secondary);
+    border-color: var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
     transition: border-color .5s
 }
 
 .card__88264:hover {
-    background-color: var(--background-secondary-alt)
-}
-
-.visual-refresh .card__88264 {
-    background-color: var(--background-mod-subtle);
-    border-color: var(--border-subtle)
-}
-
-.visual-refresh .card__88264:hover {
     background-color: var(--background-mod-normal)
 }
 
@@ -533,18 +521,10 @@
 }
 
 .previewCard_f70348 {
-    cursor: default
-}
-
-.theme-dark .previewCard_f70348 {
-    background-color: var(--background-surface-high);
-    border: 1px solid var(--background-surface-high)
-}
-
-.visual-refresh .previewCard_f70348 {
     background-color: var(--background-mod-subtle);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    cursor: default
 }
 
 .imageUploader_e4d0bf {
@@ -1325,4 +1305,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=27424275bd2c4838.css.map*/
+/*# sourceMappingURL=b6dcc350043b6664.css.map*/

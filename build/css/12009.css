@@ -1,14 +1,10 @@
 /**
   Module ID: 12009
-  Original File Name: a291b888c3e2724f
+  Original File Name: 27073638b529198e
 **/
 .header__553a5 {
-    margin-top: -32px;
+    margin-top: -16px;
     width: 100%
-}
-
-.visual-refresh .header__553a5 {
-    margin-top: -16px
 }
 
 .headerArtWrapper__553a5 {
@@ -164,10 +160,6 @@
     padding: 16px
 }
 
-html:not(.visual-refresh) .sidebarCardWrapper__7449f {
-    background-color: var(--background-primary)
-}
-
 .sidebarCard__7449f {
     width: 100%
 }
@@ -252,6 +244,7 @@ html:not(.visual-refresh) .sidebarCardWrapper__7449f {
 }
 
 .title__7449f {
+    border-top: 1px solid var(--app-border-frame);
     flex: 0 0 auto;
     position: relative;
     z-index: 100
@@ -262,7 +255,7 @@ html:not(.visual-refresh) .sidebarCardWrapper__7449f {
 }
 
 .background__7449f {
-    background-color: var(--home-background)
+    background-color: var(--background-base-lower)
 }
 
 .theme-dark .headerBarInner__7449f:after {
@@ -275,14 +268,6 @@ html:not(.visual-refresh) .sidebarCardWrapper__7449f {
 
 .theme-midnight .background__7449f {
     background-color: var(--home-background)
-}
-
-.visual-refresh .background__7449f {
-    background-color: var(--background-base-lower)
-}
-
-.visual-refresh .title__7449f {
-    border-top: 1px solid var(--app-border-frame)
 }
 
 .container_c66e86 {
@@ -304,14 +289,6 @@ html:not(.visual-refresh) .sidebarCardWrapper__7449f {
 }
 
 .clickableAction_c66e86:hover {
-    background-color: var(--background-modifier-accent)
-}
-
-html:not(.visual-refresh) .action_c66e86,html:not(.visual-refresh) .clickableAction_c66e86 {
-    background-color: var(--background-primary)
-}
-
-html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clickableAction_c66e86:hover {
     background-color: var(--background-modifier-accent)
 }
 
@@ -369,7 +346,8 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .row_d13feb {
-    background-color: var(--background-primary);
+    background-color: var(--background-surface-high);
+    border: 1px solid var(--border-subtle);
     cursor: pointer;
     flex-direction: row;
     padding: 16px;
@@ -378,11 +356,6 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 
 .row_d13feb:hover {
     background-color: var(--background-modifier-accent)
-}
-
-.visual-refresh .row_d13feb {
-    background-color: var(--background-surface-high);
-    border: 1px solid var(--border-subtle)
 }
 
 .content_d13feb {
@@ -462,16 +435,16 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .welcomeMessageProfileContainer__6f212 {
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-md);
     overflow: visible
 }
 
 .welcomeMessageProfileContainer__6f212.custom-user-profile-theme {
-    padding: 2px
+    padding: 1px
 }
 
 .welcomeMessageProfileContainer__6f212>div {
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-md);
     flex-grow: 0
 }
 
@@ -494,11 +467,11 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 
 .avatarBorder__6f212 {
     border-radius: 1000px;
-    height: 52px;
-    left: 18px;
+    height: 50px;
+    left: 19px;
     position: absolute;
-    top: -22px;
-    width: 52px;
+    top: -21px;
+    width: 50px;
     z-index: -1
 }
 
@@ -525,27 +498,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     top: 1px
 }
 
-html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
-    background-color: var(--background-primary)
-}
-
-.visual-refresh .avatarBorder__6f212 {
-    height: 50px;
-    left: 19px;
-    top: -21px;
-    width: 50px
-}
-
-.visual-refresh .welcomeMessageProfileContainer__6f212 {
-    border-radius: var(--radius-md)
-}
-
-.visual-refresh .welcomeMessageProfileContainer__6f212.custom-user-profile-theme {
-    padding: 1px
-}
-
-.visual-refresh .welcomeMessageProfileContainer__6f212>div {
-    border-radius: var(--radius-md)
-}
-
-/*# sourceMappingURL=a291b888c3e2724f.css.map*/
+/*# sourceMappingURL=27073638b529198e.css.map*/

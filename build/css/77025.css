@@ -1,6 +1,6 @@
 /**
   Module ID: 77025
-  Original File Name: 7e9c6dc4768ea480
+  Original File Name: affa9a2bf414e481
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -494,13 +494,9 @@ div:has(>div>.container_b962dc) {
     padding: 0
 }
 
-.visual-refresh div:has(>div>.container_b962dc) {
-    padding: 0
-}
-
 .container_b962dc {
     align-items: center;
-    background-color: var(--bg-surface-overlay)!important;
+    background-color: var(--bg-base-tertiary)!important;
     border-radius: 0;
     flex-direction: row;
     height: 100vh;
@@ -746,8 +742,4 @@ div:has(>div>.container_b962dc) {
     z-index: 0
 }
 
-.visual-refresh .container_b962dc {
-    background-color: var(--bg-base-tertiary)!important
-}
-
-/*# sourceMappingURL=7e9c6dc4768ea480.css.map*/
+/*# sourceMappingURL=affa9a2bf414e481.css.map*/

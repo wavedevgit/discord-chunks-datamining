@@ -1,6 +1,6 @@
 /**
   Module ID: 37709
-  Original File Name: d28bd39ddd55f3db
+  Original File Name: 51acbb4b3f9288c3
 **/
 .coverContainer__2f300 {
     align-items: center;
@@ -101,14 +101,14 @@
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
     height: 100%;
     justify-content: center;
     z-index: 1
 }
 
 .coverContent__2f300 {
-    max-width: 400px;
+    max-width: 500px;
     padding: 24px;
     text-align: center
 }
@@ -136,73 +136,44 @@
 }
 
 .coverTitle__2f300 {
-    margin-bottom: 8px;
-    opacity: .6
+    margin-bottom: var(--spacing-16);
+    opacity: 1
 }
 
 .coverButton__2f300 {
     margin-top: 24px
 }
 
-:where(.visual-refresh) .coverTitle__2f300 {
-    margin-bottom: var(--spacing-16);
-    opacity: 1
-}
-
-:where(.visual-refresh) .guildImage__2f300 {
+.guildImage__2f300 {
     border-radius: 42px
-}
-
-:where(.visual-refresh) .centerContent__2f300 {
-    gap: 12px
-}
-
-:where(.visual-refresh) .coverContent__2f300 {
-    max-width: 500px
 }
 
 .optionButtonWrapper__270d7 {
     align-items: center;
-    border: 2px solid var(--background-modifier-accent);
+    background-color: var(--background-mod-faint);
+    border: 1px solid var(--border-subtle);
     border-radius: 12px;
     display: flex;
     position: relative
 }
 
 .optionButtonWrapper__270d7:hover {
+    background-color: var(--background-mod-subtle);
     border-color: var(--interactive-muted)
 }
 
 .optionButtonWrapper__270d7.selected__270d7 {
-    background-color: var(--background-tertiary);
-    border-color: var(--background-tertiary)
-}
-
-.optionButtonWrapper__270d7.pressed__270d7 {
-    transform: scale(1.02)
-}
-
-.visual-refresh .optionButtonWrapper__270d7 {
-    background-color: var(--background-mod-faint);
-    border: 1px solid var(--border-subtle)
-}
-
-.visual-refresh .optionButtonWrapper__270d7:hover {
-    background-color: var(--background-mod-subtle)
-}
-
-.visual-refresh .optionButtonWrapper__270d7.pressed__270d7 {
-    background-color: var(--background-mod-normal);
-    transform: none
-}
-
-.visual-refresh .optionButtonWrapper__270d7.selected__270d7 {
     background-color: var(--opacity-blurple-8);
     border-color: var(--bg-brand)
 }
 
-.visual-refresh .optionButtonWrapper__270d7.selected__270d7.pressed__270d7 {
+.optionButtonWrapper__270d7.selected__270d7.pressed__270d7 {
     background-color: var(--opacity-blurple-12)
+}
+
+.optionButtonWrapper__270d7.pressed__270d7 {
+    background-color: var(--background-mod-normal);
+    transform: none
 }
 
 .optionButton__270d7 {
@@ -432,4 +403,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=d28bd39ddd55f3db.css.map*/
+/*# sourceMappingURL=51acbb4b3f9288c3.css.map*/

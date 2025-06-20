@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: 309f394275ca7464
+  Original File Name: e40e6ba99f8df670
 **/
 @value headerBarHeight 60px;
 
@@ -9,7 +9,7 @@
     box-sizing: border-box;
     display: flex;
     gap: 20px;
-    height: 60px;
+    height: var(--custom-channel-header-height);
     padding: 0 16px;
     width: 100%;
     z-index: 100
@@ -27,10 +27,6 @@
     left: 0;
     width: 100%;
     z-index: 0
-}
-
-.visual-refresh .headerBar__8a7fc {
-    height: var(--custom-channel-header-height)
 }
 
 .relative__8a7fc {
@@ -51,7 +47,7 @@
     z-index: -1
 }
 
-.visual-refresh .background__8a7fc {
+.background__8a7fc {
     background: var(--bg-overlay-2,var(--background-base-lower))
 }
 
@@ -121,32 +117,24 @@
 }
 
 .tabWrapper__26669 {
-    align-items: center;
-    display: flex;
-    height: 100%;
     justify-content: center
 }
 
-.tab__26669 {
-    cursor: pointer;
+.tab__26669,.tabWrapper__26669 {
+    align-items: center;
+    display: flex;
     height: 100%
+}
+
+.tab__26669 {
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 0
 }
 
 .tab__26669:hover {
     border-bottom: 2px solid var(--brand-500);
     margin-bottom: -2px
-}
-
-:where(.visual-refresh) .tabs__26669 {
-    gap: 24px
-}
-
-:where(.visual-refresh) .tab__26669 {
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    height: 100%;
-    margin-top: 0
 }
 
 .more__26669 {
@@ -160,7 +148,7 @@
 }
 
 .headerBar__1a9ce {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-bottom: 1px solid var(--border-subtle);
     height: var(--custom-channel-header-height);
     padding-bottom: 0;
@@ -175,24 +163,14 @@
     overflow: visible
 }
 
-.visual-refresh .headerBar__1a9ce {
-    background-color: var(--background-base-lower);
-    border-bottom: 1px solid var(--border-subtle);
-    height: var(--custom-channel-header-height)
-}
-
 .fullscreenHeaderBar__1a9ce {
+    border: none;
     box-sizing: border-box;
     display: flex;
-    height: 80px;
+    height: calc(64px + var(--custom-app-top-bar-height));
     justify-content: center;
     margin: 0 auto;
-    padding: 0 72px
-}
-
-.visual-refresh .fullscreenHeaderBar__1a9ce {
-    border: none;
-    height: calc(64px + var(--custom-app-top-bar-height));
+    padding: 0 72px;
     padding-top: var(--custom-app-top-bar-height)
 }
 
@@ -224,7 +202,7 @@
     z-index: 1
 }
 
-.visual-refresh .closeIcon__1a9ce {
+.closeIcon__1a9ce {
     margin-top: 24px
 }
 
@@ -244,6 +222,8 @@
 .measurements__65d41 {
     align-items: center;
     bottom: 0;
+    display: flex;
+    gap: 20px;
     left: 0;
     pointer-events: none;
     position: absolute;
@@ -252,42 +232,34 @@
     visibility: hidden
 }
 
-.measurements__65d41,.tabs__65d41 {
-    display: flex;
-    gap: 20px
-}
-
 .tabs__65d41 {
+    border-bottom: none;
     flex: 1;
     flex-direction: row;
+    gap: 0;
     height: 60px
 }
 
+.tab__65d41,.tabs__65d41 {
+    display: flex
+}
+
 .tab__65d41 {
-    cursor: pointer;
-    margin-top: 20px
-}
-
-:where(.visual-refresh) .tabs__65d41 {
-    border-bottom: none;
-    gap: 0
-}
-
-:where(.visual-refresh) .container__65d41,:where(.visual-refresh) .tabs__65d41 {
-    height: var(--custom-channel-header-height)
-}
-
-:where(.visual-refresh) .tab__65d41 {
     align-items: center;
     box-sizing: border-box;
-    display: flex;
+    cursor: pointer;
     height: var(--custom-channel-header-height);
     margin-top: 0;
-    padding-top: 16px
+    padding-top: 16px;
+    --selected-tab-item-color: var(--text-default)!important
 }
 
-.visual-refresh .tab__65d41:hover,.visual-refresh .tab__65d41[aria-selected=true] {
+.tab__65d41:hover,.tab__65d41[aria-selected=true] {
     --selected-tab-item-color: var(--text-default)
+}
+
+.container__65d41,.tabs__65d41 {
+    height: var(--custom-channel-header-height)
 }
 
 .more__65d41 {
@@ -472,14 +444,10 @@
 }
 
 .scroller__23746 {
-    background: var(--bg-overlay-chat,var(--background-primary));
+    background: var(--bg-overlay-chat,var(--background-base-lower));
     display: flex;
     flex: 1;
     flex-direction: column
-}
-
-.visual-refresh .scroller__23746 {
-    background: var(--bg-overlay-chat,var(--background-base-lower))
 }
 
 .container__2abba {
@@ -629,16 +597,12 @@
 .theme-light .card__84e3e:focus,.theme-light .card__84e3e:hover {
     background-color: var(--background-tertiary);
     box-shadow: var(--elevation-high)
-}
-
-.visual-refresh.theme-dark .card__84e3e,.visual-refresh.theme-light .card__84e3e {
+}&.theme-dark .card__84e3e,&.theme-light .card__84e3e {
     background-color: var(--background-base-low);
     border: 1px solid transparent;
     border-color: var(--border-subtle);
     box-shadow: none
-}
-
-.visual-refresh.theme-dark .card__84e3e:focus,.visual-refresh.theme-dark .card__84e3e:hover,.visual-refresh.theme-light .card__84e3e:focus,.visual-refresh.theme-light .card__84e3e:hover {
+}&.theme-dark .card__84e3e:focus,&.theme-dark .card__84e3e:hover,&.theme-light .card__84e3e:focus,&.theme-light .card__84e3e:hover {
     background-color: var(--background-surface-high);
     border-color: var(--border-strong);
     box-shadow: var(--shadow-low);
@@ -760,8 +724,8 @@
 }
 
 .card_f215b9:hover .avatar_f215b9 {
-    background: var(--background-tertiary);
-    border-color: var(--background-tertiary)
+    background: var(--background-surface-high);
+    border-color: var(--background-surface-high)
 }
 
 .card_f215b9:hover .contextMenu_f215b9 {
@@ -774,7 +738,9 @@
 
 .avatar_f215b9 {
     -webkit-user-drag: none;
+    background: var(--background-base-low);
     border: solid;
+    border-color: var(--background-base-low);
     border-radius: var(--radius-md);
     transform: translateY(-50%)
 }
@@ -838,16 +804,6 @@
 .theme-light .avatar_f215b9 {
     background: var(--background-secondary);
     border-color: var(--background-secondary)
-}
-
-.visual-refresh .avatar_f215b9 {
-    background: var(--background-base-low);
-    border-color: var(--background-base-low)
-}
-
-.visual-refresh .card_f215b9:hover .avatar_f215b9 {
-    background: var(--background-surface-high);
-    border-color: var(--background-surface-high)
 }
 
 @value minCardWidth 254px;
@@ -2588,4 +2544,4 @@
     width: 22px
 }
 
-/*# sourceMappingURL=309f394275ca7464.css.map*/
+/*# sourceMappingURL=e40e6ba99f8df670.css.map*/

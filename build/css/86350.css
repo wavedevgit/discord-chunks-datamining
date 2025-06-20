@@ -1,6 +1,6 @@
 /**
   Module ID: 86350
-  Original File Name: 42cf9b45d494d608
+  Original File Name: 60bbe1c3d777a6c7
 **/
 .menu__43313 {
     max-height: 70vh
@@ -1352,15 +1352,11 @@
 }
 
 .streamPreview__6da2d {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-surface-high);
     border-radius: 5px;
     box-shadow: var(--elevation-high);
     overflow: hidden;
     width: 252px
-}
-
-.visual-refresh .streamPreview__6da2d {
-    background-color: var(--background-surface-high)
 }
 
 .previewContainer__6da2d {
@@ -1789,4 +1785,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=42cf9b45d494d608.css.map*/
+/*# sourceMappingURL=60bbe1c3d777a6c7.css.map*/

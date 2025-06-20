@@ -1,9 +1,10 @@
 /**
   Module ID: 86872
-  Original File Name: 5782f91027978664
+  Original File Name: a90468861b05da14
 **/
 .editProfileContainer__42179 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-surface-highest);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     display: flex;
     flex-direction: column;
@@ -15,11 +16,6 @@
 
 .full-motion .editProfileContainer__42179 {
     transition: margin-bottom .5s cubic-bezier(.16,1,.3,1)
-}
-
-.visual-refresh .editProfileContainer__42179 {
-    background-color: var(--background-surface-highest);
-    border: 1px solid var(--border-subtle)
 }
 
 .editProfileContainer__42179.opened__42179 {
@@ -350,4 +346,4 @@
     min-width: 16px
 }
 
-/*# sourceMappingURL=5782f91027978664.css.map*/
+/*# sourceMappingURL=a90468861b05da14.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 30057
-  Original File Name: e4349dfaa94e37c1
+  Original File Name: 811364a4e896c7eb
 **/
 .container__270b2 {
     flex-direction: row;
@@ -113,10 +113,6 @@
 .recurrences__4fb8c {
     display: flex;
     flex-direction: column;
-    padding: 4px 12px 12px
-}
-
-.visual-refresh .recurrences__4fb8c {
     padding: var(--space-4) var(--space-12) var(--space-12)
 }
 
@@ -245,23 +241,15 @@
 }
 
 .card__88264 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-mod-subtle);
     border: 1px solid var(--background-secondary);
+    border-color: var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
     transition: border-color .5s
 }
 
 .card__88264:hover {
-    background-color: var(--background-secondary-alt)
-}
-
-.visual-refresh .card__88264 {
-    background-color: var(--background-mod-subtle);
-    border-color: var(--border-subtle)
-}
-
-.visual-refresh .card__88264:hover {
     background-color: var(--background-mod-normal)
 }
 
@@ -435,4 +423,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=e4349dfaa94e37c1.css.map*/
+/*# sourceMappingURL=811364a4e896c7eb.css.map*/

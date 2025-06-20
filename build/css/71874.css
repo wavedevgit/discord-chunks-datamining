@@ -1,6 +1,6 @@
 /**
   Module ID: 71874
-  Original File Name: 52350deeded48fcf
+  Original File Name: 79c30135392cde93
 **/
 .container__5537c {
     display: flex;
@@ -179,23 +179,15 @@
 }
 
 .card__88264 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-mod-subtle);
     border: 1px solid var(--background-secondary);
+    border-color: var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
     transition: border-color .5s
 }
 
 .card__88264:hover {
-    background-color: var(--background-secondary-alt)
-}
-
-.visual-refresh .card__88264 {
-    background-color: var(--background-mod-subtle);
-    border-color: var(--border-subtle)
-}
-
-.visual-refresh .card__88264:hover {
     background-color: var(--background-mod-normal)
 }
 
@@ -342,18 +334,10 @@
 }
 
 .previewCard_f70348 {
-    cursor: default
-}
-
-.theme-dark .previewCard_f70348 {
-    background-color: var(--background-surface-high);
-    border: 1px solid var(--background-surface-high)
-}
-
-.visual-refresh .previewCard_f70348 {
     background-color: var(--background-mod-subtle);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    cursor: default
 }
 
 .imageUploader_e4d0bf {
@@ -1134,4 +1118,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=52350deeded48fcf.css.map*/
+/*# sourceMappingURL=79c30135392cde93.css.map*/

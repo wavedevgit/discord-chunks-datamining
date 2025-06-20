@@ -1,25 +1,29 @@
 /**
   Module ID: 37332
-  Original File Name: 0ff6e1b24551c88b
+  Original File Name: a285eadcc01c6bd3
 **/
 .root__66e7e {
     background: var(--background-secondary);
+    background-color: var(--background-surface-higher);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     overflow: hidden
 }
 
 .option__66e7e {
     align-items: center;
+    background-color: none;
     border-bottom: 1px solid var(--background-modifier-accent);
     color: var(--interactive-active);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    padding: 12px
+    padding: var(--space-16) var(--space-12)
 }
 
 .option__66e7e:hover {
     background: var(--background-modifier-hover);
+    background-color: var(--background-mod-normal);
     border-bottom-color: transparent
 }
 
@@ -37,20 +41,6 @@
     height: 24px;
     margin-left: 8px;
     width: 24px
-}
-
-.visual-refresh .root__66e7e {
-    background-color: var(--background-surface-higher);
-    border: 1px solid var(--border-subtle)
-}
-
-.visual-refresh .option__66e7e {
-    background-color: none;
-    padding: var(--space-16) var(--space-12)
-}
-
-.visual-refresh .option__66e7e:hover {
-    background-color: var(--background-mod-normal)
 }
 
 .ratingSelector__5c58b {
@@ -158,7 +148,7 @@
 }
 
 .problemInfo__6c12c {
-    margin-bottom: var(--space-24);
+    margin-bottom: 0;
     margin-top: var(--space-8)
 }
 
@@ -182,7 +172,7 @@
     opacity: .6
 }
 
-.visual-refresh .emoji__6c12c {
+.emoji__6c12c {
     opacity: 1
 }
 
@@ -190,12 +180,8 @@
     color: var(--text-normal)
 }
 
-:where(.visual-refresh) .problemInfo__6c12c {
-    margin-bottom: 0
-}
-
 .marginBottom16__6c12c {
     margin-bottom: var(--space-16)
 }
 
-/*# sourceMappingURL=0ff6e1b24551c88b.css.map*/
+/*# sourceMappingURL=a285eadcc01c6bd3.css.map*/

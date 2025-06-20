@@ -1,6 +1,6 @@
 /**
   Module ID: 39627
-  Original File Name: 0a98701a75b3e038
+  Original File Name: 5826e7a9f44bbe95
 **/
 .modal__45314 {
     border-radius: var(--radius-sm)
@@ -13,12 +13,7 @@
     overflow: visible
 }
 
-html:not(.visual-refresh) .header__45314 {
-    background: var(--channeltextarea-background);
-    padding-bottom: 32px
-}
-
-.headerIconContainer__45314,.visual-refresh .headerIconContainer__45314 {
+.headerIconContainer__45314 {
     flex: 0;
     height: auto;
     position: absolute;
@@ -59,14 +54,11 @@ html:not(.visual-refresh) .header__45314 {
 
 .tableContainer__45314 {
     background-color: var(--background-secondary);
+    border: 1px solid var(--border-faint);
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: column;
     padding: 16px 20px
-}
-
-.visual-refresh .tableContainer__45314 {
-    border: 1px solid var(--border-faint)
 }
 
 .tableHeader__45314 {
@@ -104,4 +96,4 @@ html:not(.visual-refresh) .header__45314 {
     gap: 4px
 }
 
-/*# sourceMappingURL=0a98701a75b3e038.css.map*/
+/*# sourceMappingURL=5826e7a9f44bbe95.css.map*/

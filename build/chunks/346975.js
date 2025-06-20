@@ -483,8 +483,8 @@ function eN(e) {
     getItemKey: e0,
     renderGridSection: e3,
     renderGridItem: e1,
-    getGridSectionHeight: e6,
-    getSectionProps: e8,
+    getGridSectionHeight: e8,
+    getSectionProps: e6,
     handleGridFocus: e9
   } = function(e) {
     let {
@@ -691,11 +691,11 @@ function eN(e) {
             columns: ek,
             sections: eF,
             getItemKey: e0,
-            getSectionHeight: e6,
+            getSectionHeight: e8,
             getItemHeight: e_,
             renderSection: e3,
             renderItem: e1,
-            getSectionProps: e8,
+            getSectionProps: e6,
             onScroll: v ? e4 : void 0,
             chunkSize: 350
           }, tn, e), D)
@@ -1043,7 +1043,6 @@ function eR(e) {
                     ref: t
                   }, n), {
                     children: eV.map(e => (0, r.jsx)(ea.Z, {
-                      className: ef.tag,
                       tag: e,
                       onClick: () => eM(e.id),
                       selected: z.has(e.id)

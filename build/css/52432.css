@@ -1,25 +1,29 @@
 /**
   Module ID: 52432
-  Original File Name: ca419c6ed9a46b5e
+  Original File Name: 22d185c0e5170665
 **/
 .root__66e7e {
     background: var(--background-secondary);
+    background-color: var(--background-surface-higher);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     overflow: hidden
 }
 
 .option__66e7e {
     align-items: center;
+    background-color: none;
     border-bottom: 1px solid var(--background-modifier-accent);
     color: var(--interactive-active);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    padding: 12px
+    padding: var(--space-16) var(--space-12)
 }
 
 .option__66e7e:hover {
     background: var(--background-modifier-hover);
+    background-color: var(--background-mod-normal);
     border-bottom-color: transparent
 }
 
@@ -37,20 +41,6 @@
     height: 24px;
     margin-left: 8px;
     width: 24px
-}
-
-.visual-refresh .root__66e7e {
-    background-color: var(--background-surface-higher);
-    border: 1px solid var(--border-subtle)
-}
-
-.visual-refresh .option__66e7e {
-    background-color: none;
-    padding: var(--space-16) var(--space-12)
-}
-
-.visual-refresh .option__66e7e:hover {
-    background-color: var(--background-mod-normal)
 }
 
 .ratingSelector__5c58b {
@@ -184,4 +174,4 @@
     background-image: url(/assets/8f1e1e90bea53650.svg)
 }
 
-/*# sourceMappingURL=ca419c6ed9a46b5e.css.map*/
+/*# sourceMappingURL=22d185c0e5170665.css.map*/

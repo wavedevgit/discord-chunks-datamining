@@ -1,6 +1,6 @@
 /**
   Module ID: 77046
-  Original File Name: 88c06e3b94637dc9
+  Original File Name: be44bc860c7ad75b
 **/
 .animation_bdbb1b {
     height: 150px;
@@ -12,7 +12,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 24px
+    margin: 0
 }
 
 .subheader_bdbb1b {
@@ -39,13 +39,16 @@
 }
 
 .listContainer_bdbb1b {
-    background-color: var(--background-secondary);
+    background-color: var(--background-surface-higher);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 8px;
     margin-top: 16px;
-    padding: 8px 16px
+    padding: 8px 16px;
+    width: 100%
 }
 
 .listItem_bdbb1b {
@@ -60,23 +63,8 @@
 }
 
 .divider_bdbb1b {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-faint);
     opacity: .5
 }
 
-.visual-refresh .modalContent_bdbb1b {
-    margin: 0
-}
-
-.visual-refresh .listContainer_bdbb1b {
-    background-color: var(--background-surface-higher);
-    border: 1px solid var(--border-subtle);
-    box-sizing: border-box;
-    width: 100%
-}
-
-.visual-refresh .divider_bdbb1b {
-    background-color: var(--border-faint)
-}
-
-/*# sourceMappingURL=88c06e3b94637dc9.css.map*/
+/*# sourceMappingURL=be44bc860c7ad75b.css.map*/

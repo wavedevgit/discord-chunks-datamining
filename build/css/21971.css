@@ -1,6 +1,6 @@
 /**
   Module ID: 21971
-  Original File Name: fe6c00e31ea2335b
+  Original File Name: 97b7e784d4c6c30b
 **/
 .footer__1c948 {
     display: flex;
@@ -67,12 +67,8 @@
 }
 
 .moderatedCheckbox__1c948 {
-    margin-bottom: var(--modal-vertical-padding);
+    margin-bottom: 0;
     margin-left: var(--modal-horizontal-padding)
 }
 
-.visual-refresh .moderatedCheckbox__1c948 {
-    margin-bottom: 0
-}
-
-/*# sourceMappingURL=fe6c00e31ea2335b.css.map*/
+/*# sourceMappingURL=97b7e784d4c6c30b.css.map*/

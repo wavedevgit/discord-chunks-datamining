@@ -115,7 +115,6 @@ function D(e) {
     }), (0, r.jsxs)(o.hzk, {
       className: P.content,
       children: [(0, r.jsx)(o.Text, {
-        className: P.reasonHeader,
         variant: "text-md/medium",
         children: T.intl.string(T.t["9Ki66O"])
       }), (0, r.jsx)(o.Text, {

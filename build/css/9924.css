@@ -1,6 +1,6 @@
 /**
   Module ID: 9924
-  Original File Name: b9b909db2a05607f
+  Original File Name: 4d9699f53a8f7801
 **/
 .formItem_d48a51 {
     margin-bottom: 24px;
@@ -360,19 +360,14 @@
 }
 
 .mainTableContainer__09a38 {
-    background: var(--bg-overlay-2,var(--background-primary));
+    background: var(--background-base-low);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-border),var(--shadow-low);
+    box-shadow: none;
     display: flex;
     flex: 1;
     flex-direction: column;
     width: 100%
-}
-
-.visual-refresh .mainTableContainer__09a38 {
-    background: var(--background-base-low);
-    border: 1px solid var(--border-subtle);
-    box-shadow: none
 }
 
 .horizatonalScroller__09a38 {
@@ -549,27 +544,16 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 24px
+    padding: var(--spacing-16)
 }
 
 .page_c791b2 {
-    background: var(--bg-overlay-home,var(--home-background))!important
+    background: var(--bg-overlay-home,var(--home-background))!important;
+    background-color: var(--background-base-lower)!important
 }
 
 .header_c791b2 {
     background-color: var(--background-secondary);
-    box-shadow: var(--elevation-low)
-}
-
-.visual-refresh .container_c791b2 {
-    padding: var(--spacing-16)
-}
-
-.visual-refresh .page_c791b2 {
-    background-color: var(--background-base-lower)!important
-}
-
-.visual-refresh .header_c791b2 {
     border-top: 1px solid var(--app-border-frame);
     box-shadow: none;
     height: calc(var(--custom-channel-header-height) + 1px);
@@ -610,4 +594,4 @@
     position: relative
 }
 
-/*# sourceMappingURL=b9b909db2a05607f.css.map*/
+/*# sourceMappingURL=4d9699f53a8f7801.css.map*/

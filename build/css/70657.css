@@ -1,6 +1,6 @@
 /**
   Module ID: 70657
-  Original File Name: 3416bf4b6abb3c4c
+  Original File Name: ff1f60ac4494cac2
 **/
 .container__270b2 {
     flex-direction: row;
@@ -64,13 +64,9 @@
 .container__652b4 {
     background-position: 50%;
     background-size: cover;
-    border-radius: 8px 8px 0 0;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
     height: 164px;
     margin: -17px -17px 16px
-}
-
-.visual-refresh .container__652b4 {
-    border-radius: var(--radius-sm) var(--radius-sm) 0 0
 }
 
 .container__6cf35 {
@@ -156,8 +152,12 @@
 }
 
 .closeIconBanner__4efb4 {
-    background-color: var(--opacity-black-40);
-    color: var(--white-500)
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background-color: var(--opacity-black-60);
+    border-radius: var(--radius-round);
+    color: var(--white-500);
+    padding: var(--space-8)
 }
 
 .closeButton__4efb4 {
@@ -176,22 +176,8 @@
 
 .closeButton__4efb4:focus .closeIconBanner__4efb4,.closeButton__4efb4:hover .closeIconBanner__4efb4 {
     background-color: var(--opacity-black-80)
-}
-
-.visual-refresh .closeIconBanner__4efb4 {
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    background-color: var(--opacity-black-60);
-    border-radius: var(--radius-round);
-    padding: var(--space-8)
-}
-
-.visual-refresh.full-motion .closeIconBanner__4efb4 {
+}&.full-motion .closeIconBanner__4efb4 {
     transition: background-color .2s ease
-}
-
-.visual-refresh .closeButton__4efb4:focus .closeIconBanner__4efb4,.visual-refresh .closeButton__4efb4:hover .closeIconBanner__4efb4 {
-    background-color: var(--opacity-black-80)
 }
 
 .enable-forced-colors .tabBar__4efb4 {
@@ -315,10 +301,6 @@
 .recurrences__4fb8c {
     display: flex;
     flex-direction: column;
-    padding: 4px 12px 12px
-}
-
-.visual-refresh .recurrences__4fb8c {
     padding: var(--space-4) var(--space-12) var(--space-12)
 }
 
@@ -771,12 +753,6 @@
 
 .thumbnail_b5010b {
     border-radius: 8px;
-    height: 92px;
-    margin: 0 0 0 16px;
-    width: 230px
-}
-
-.visual-refresh .thumbnail_b5010b {
     height: 120px;
     margin: -16px -16px 16px;
     width: calc(100% + 32px)
@@ -916,7 +892,7 @@
 .header__4591d {
     padding-left: calc(var(--custom-event-detail-info-tab-base-spacing)*2);
     padding-right: var(--custom-event-detail-info-tab-base-spacing);
-    padding-top: calc(var(--custom-event-detail-info-tab-base-spacing)*3)
+    padding-top: var(--space-12)
 }
 
 .description__4591d,.title__4591d {
@@ -945,18 +921,9 @@
     padding: var(--custom-event-detail-info-tab-base-spacing) var(--custom-event-detail-info-tab-base-spacing) calc(var(--custom-event-detail-info-tab-base-spacing)*3) calc(var(--custom-event-detail-info-tab-base-spacing)*2)
 }
 
-.visual-refresh .body__4591d,.visual-refresh .header__4591d {
+.body__4591d,.header__4591d {
     padding-left: 0;
     padding-right: 0
-}
-
-.visual-refresh .header__4591d {
-    padding-top: var(--space-12)
-}
-
-.visual-refresh .divider__4591d {
-    margin-left: 0;
-    margin-right: 0
 }
 
 .channelIcon__4591d,.icon__4591d {
@@ -1021,8 +988,8 @@
     background-color: var(--background-modifier-accent);
     border: none;
     height: 1px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: calc(var(--custom-event-detail-info-tab-base-spacing)*-1)
 }
 
@@ -1094,13 +1061,8 @@
     color: var(--text-normal);
     display: flex;
     line-height: 30px;
-    margin: 0 0 1px 8px;
-    padding: 8px
-}
-
-.visual-refresh .listRow__60626 {
-    margin-left: 0;
-    padding-left: 0
+    margin: 0 0 1px;
+    padding: 8px 8px 8px 0
 }
 
 .interactiveRow__60626 {
@@ -1162,20 +1124,16 @@
 }
 
 .contentContainer__4325e {
-    background-color: var(--background-primary);
+    background-color: unset;
     max-height: 516px;
     min-height: 230px;
-    padding-left: 0;
+    padding-left: var(--space-24);
     padding-right: 0
-}
-
-.visual-refresh .contentContainer__4325e {
-    background-color: unset
 }
 
 .footer__4325e {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: unset;
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -1183,12 +1141,4 @@
     padding: 16px
 }
 
-.visual-refresh .contentContainer__4325e {
-    padding-left: var(--space-24)
-}
-
-.visual-refresh .footer__4325e {
-    background-color: unset
-}
-
-/*# sourceMappingURL=3416bf4b6abb3c4c.css.map*/
+/*# sourceMappingURL=ff1f60ac4494cac2.css.map*/

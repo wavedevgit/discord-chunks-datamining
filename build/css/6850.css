@@ -1,6 +1,6 @@
 /**
   Module ID: 6850
-  Original File Name: 0d0ef12d17fade5f
+  Original File Name: e428c1fddc5f9e55
 **/
 .searchContainer__6ae25 {
     position: relative
@@ -1035,7 +1035,7 @@
     color: var(--text-normal);
     font-family: var(--font-primary);
     font-weight: 500;
-    padding: 8px;
+    padding: var(--space-xs);
     position: relative;
     vertical-align: middle
 }
@@ -1061,10 +1061,6 @@
 
 .memberRowContainer__71c22:first-child td:after {
     content: none
-}
-
-.visual-refresh .memberRowContainer__71c22 td {
-    padding: var(--space-xs)
 }
 
 .xsmallCol__71c22 {
@@ -2331,10 +2327,6 @@
     flex-direction: row;
     gap: 8px;
     justify-content: flex-end;
-    padding: 12px 0
-}
-
-.visual-refresh .pageSizeSelection_e8f197 {
     padding: var(--space-sm) 0
 }
 
@@ -2383,23 +2375,19 @@
 }
 
 .searchHeaderContainer__98d1c {
-    align-items: center;
-    display: flex;
     flex-direction: row;
-    gap: 8px;
-    padding: 8px 16px
-}
-
-.visual-refresh .searchHeaderContainer__98d1c {
     padding: var(--space-xs) var(--space-sm)
 }
 
-.searchHeader__98d1c {
+.searchHeader__98d1c,.searchHeaderContainer__98d1c {
     align-items: center;
     display: flex;
-    flex: 1;
-    flex-direction: row;
     gap: 8px
+}
+
+.searchHeader__98d1c {
+    flex: 1;
+    flex-direction: row
 }
 
 .searchInput__98d1c {
@@ -2450,4 +2438,4 @@
     margin-left: 4px
 }
 
-/*# sourceMappingURL=0d0ef12d17fade5f.css.map*/
+/*# sourceMappingURL=e428c1fddc5f9e55.css.map*/

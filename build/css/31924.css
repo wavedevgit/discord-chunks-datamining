@@ -1,13 +1,13 @@
 /**
   Module ID: 31924
-  Original File Name: fc57a86d5b8e2253
+  Original File Name: d813b4be7ff908d8
 **/
 .icon_f4b9b5 {
     filter: saturate(var(--saturation-factor,1))
 }
 
 .unlocked_f4b9b5 {
-    color: var(--green-360)
+    color: var(--status-positive)
 }
 
 .emoji_f4b9b5 {
@@ -56,10 +56,6 @@
 
 .soundboard_f4b9b5 {
     color: var(--premium-perk-light-blue)
-}
-
-.visual-refresh .unlocked_f4b9b5 {
-    color: var(--status-positive)
 }
 
 .levelContainer__3dcc3 {
@@ -148,4 +144,4 @@
     border-radius: var(--radius-sm)
 }
 
-/*# sourceMappingURL=fc57a86d5b8e2253.css.map*/
+/*# sourceMappingURL=d813b4be7ff908d8.css.map*/

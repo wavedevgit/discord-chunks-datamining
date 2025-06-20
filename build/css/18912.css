@@ -1,6 +1,6 @@
 /**
   Module ID: 18912
-  Original File Name: 4b51a2778b032316
+  Original File Name: 3c68fb1fb74cebf0
 **/
 .art_cb3c76 {
     background-position: 50%;
@@ -22,21 +22,21 @@
     color: var(--header-primary)
 }
 
-.visual-refresh .modalHeader_cb3c76 {
+.modalHeader_cb3c76 {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between
 }
 
-.visual-refresh .modalInnerCloseButton_cb3c76 {
+.modalInnerCloseButton_cb3c76 {
     height: 24px
 }
 
 .closeButton__6ee2f {
-    position: absolute;
-    right: 14px;
-    top: 14px
+    position: relative;
+    right: unset;
+    top: unset
 }
 
 .title__6ee2f {
@@ -52,10 +52,4 @@
     margin-bottom: 24px
 }
 
-.visual-refresh .closeButton__6ee2f {
-    position: relative;
-    right: unset;
-    top: unset
-}
-
-/*# sourceMappingURL=4b51a2778b032316.css.map*/
+/*# sourceMappingURL=3c68fb1fb74cebf0.css.map*/

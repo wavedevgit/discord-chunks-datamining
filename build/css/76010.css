@@ -1,6 +1,6 @@
 /**
   Module ID: 76010
-  Original File Name: b7b877c6b8d2b803
+  Original File Name: 8a99d9731e59cb2d
 **/
 .container__5537c {
     display: flex;
@@ -163,18 +163,10 @@
 }
 
 .previewCard_f70348 {
-    cursor: default
-}
-
-.theme-dark .previewCard_f70348 {
-    background-color: var(--background-surface-high);
-    border: 1px solid var(--background-surface-high)
-}
-
-.visual-refresh .previewCard_f70348 {
     background-color: var(--background-mod-subtle);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    cursor: default
 }
 
 .imageUploader_e4d0bf {
@@ -955,4 +947,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=b7b877c6b8d2b803.css.map*/
+/*# sourceMappingURL=8a99d9731e59cb2d.css.map*/

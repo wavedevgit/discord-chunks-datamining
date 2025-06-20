@@ -1,25 +1,29 @@
 /**
   Module ID: 10620
-  Original File Name: 5a96cde8773cb27f
+  Original File Name: 9ef12962443bc92c
 **/
 .root__66e7e {
     background: var(--background-secondary);
+    background-color: var(--background-surface-higher);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     overflow: hidden
 }
 
 .option__66e7e {
     align-items: center;
+    background-color: none;
     border-bottom: 1px solid var(--background-modifier-accent);
     color: var(--interactive-active);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    padding: 12px
+    padding: var(--space-16) var(--space-12)
 }
 
 .option__66e7e:hover {
     background: var(--background-modifier-hover);
+    background-color: var(--background-mod-normal);
     border-bottom-color: transparent
 }
 
@@ -37,20 +41,6 @@
     height: 24px;
     margin-left: 8px;
     width: 24px
-}
-
-.visual-refresh .root__66e7e {
-    background-color: var(--background-surface-higher);
-    border: 1px solid var(--border-subtle)
-}
-
-.visual-refresh .option__66e7e {
-    background-color: none;
-    padding: var(--space-16) var(--space-12)
-}
-
-.visual-refresh .option__66e7e:hover {
-    background-color: var(--background-mod-normal)
 }
 
 .modalRoot__6c12c {
@@ -86,7 +76,7 @@
 }
 
 .problemInfo__6c12c {
-    margin-bottom: var(--space-24);
+    margin-bottom: 0;
     margin-top: var(--space-8)
 }
 
@@ -110,16 +100,12 @@
     opacity: .6
 }
 
-.visual-refresh .emoji__6c12c {
+.emoji__6c12c {
     opacity: 1
 }
 
 .header__6c12c {
     color: var(--text-normal)
-}
-
-:where(.visual-refresh) .problemInfo__6c12c {
-    margin-bottom: 0
 }
 
 .marginBottom16__6c12c {
@@ -136,11 +122,11 @@
 
 .modalContent__4da69 {
     margin-bottom: var(--spacing-8);
-    padding: 0 var(--spacing-32)
+    padding: 0 var(--modal-horizontal-padding)
 }
 
 .modalFooter__4da69 {
-    padding: 20px
+    padding: var(--modal-vertical-padding) var(--modal-horizontal-padding)
 }
 
 .submitFooter__4da69 {
@@ -156,12 +142,4 @@
     padding: 0
 }
 
-.visual-refresh .modalContent__4da69 {
-    padding: 0 var(--modal-horizontal-padding)
-}
-
-.visual-refresh .modalFooter__4da69 {
-    padding: var(--modal-vertical-padding) var(--modal-horizontal-padding)
-}
-
-/*# sourceMappingURL=5a96cde8773cb27f.css.map*/
+/*# sourceMappingURL=9ef12962443bc92c.css.map*/

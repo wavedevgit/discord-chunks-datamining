@@ -1,6 +1,6 @@
 /**
   Module ID: 99014
-  Original File Name: 3bb3c4219d5325a1
+  Original File Name: 7e617e8b967c7de0
 **/
 .container__6f9f7 {
     display: flex;
@@ -58,7 +58,7 @@
 }
 
 .unlocked_f4b9b5 {
-    color: var(--green-360)
+    color: var(--status-positive)
 }
 
 .emoji_f4b9b5 {
@@ -107,10 +107,6 @@
 
 .soundboard_f4b9b5 {
     color: var(--premium-perk-light-blue)
-}
-
-.visual-refresh .unlocked_f4b9b5 {
-    color: var(--status-positive)
 }
 
 .levelContainer__3dcc3 {
@@ -173,4 +169,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=3bb3c4219d5325a1.css.map*/
+/*# sourceMappingURL=7e617e8b967c7de0.css.map*/

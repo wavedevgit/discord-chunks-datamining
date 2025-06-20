@@ -1,6 +1,6 @@
 /**
   Module ID: 37805
-  Original File Name: 7c5553eae3923f77
+  Original File Name: 5644ba02ed613abb
 **/
 .grid__28d93 {
     display: grid;
@@ -54,23 +54,15 @@
 }
 
 .card__88264 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-mod-subtle);
     border: 1px solid var(--background-secondary);
+    border-color: var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
     transition: border-color .5s
 }
 
 .card__88264:hover {
-    background-color: var(--background-secondary-alt)
-}
-
-.visual-refresh .card__88264 {
-    background-color: var(--background-mod-subtle);
-    border-color: var(--border-subtle)
-}
-
-.visual-refresh .card__88264:hover {
     background-color: var(--background-mod-normal)
 }
 
@@ -244,4 +236,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=7c5553eae3923f77.css.map*/
+/*# sourceMappingURL=5644ba02ed613abb.css.map*/
