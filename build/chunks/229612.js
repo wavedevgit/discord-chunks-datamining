@@ -1,6 +1,6 @@
 /** Chunk was on 11298 **/
 n.d(t, {
-  default: () => h
+  default: () => g
 }), n(539854), n(388685);
 var l = n(255367),
   i = n(73800),
@@ -25,13 +25,10 @@ function E(e) {
     isFreeformEnabled: o,
     selectOption: b,
     onFreeformTextChange: d
-  } = e, O = i.useMemo(() => n.map(c.Wo), [n]), E = i.useCallback(e => {
+  } = e, E = i.useMemo(() => n.map(c.Wo), [n]), g = i.useCallback(e => {
     let t = (0, c.xx)(e, n);
     null != t && b(t)
-  }, [b, n]), h = i.useCallback(() => {
-    let e = n.find(c.A6);
-    null != e && b(e)
-  }, [n, b]);
+  }, [b, n]);
   return (0, l.jsxs)("div", {
     className: v.question,
     children: [(0, l.jsx)(u.X6q, {
@@ -40,9 +37,14 @@ function E(e) {
       className: v.questionTitle,
       children: t
     }), (0, l.jsx)(u.FXm, {
-      options: O,
+      options: E,
       value: null == r ? void 0 : r.value,
-      onChange: E
+      onChange: g
+    }), (0, l.jsx)(u.X6q, {
+      variant: "heading-lg/semibold",
+      color: "text-primary",
+      className: v.textAreaTitle,
+      children: O.intl.string(O.t.oV10fn)
     }), (0, l.jsx)(u.Kx8, {
       className: a()(v.freeformTextArea, {
         [v.freeformTextAreaDisabled]: !o
@@ -50,32 +52,32 @@ function E(e) {
       value: s,
       maxLength: f.iF,
       onChange: d,
-      onFocus: h
+      disabled: !o
     })]
   })
 }
-let h = function(e) {
+let g = function(e) {
   let {
     searchId: t,
     searchType: n,
     rating: r,
     transitionState: a,
-    onClose: h
-  } = e, g = (0, o.Dt)(), _ = (0, d.e)({
+    onClose: g
+  } = e, h = (0, o.Dt)(), _ = (0, d.e)({
     getOptions: c.bM
   }), p = (0, d.e)({
     getOptions: c.cc
-  }), S = r === f.aZ.BAD, {
-    questionItems: m,
+  }), x = r === f.aZ.BAD, {
+    questionItems: S,
     questionTitles: T
   } = i.useMemo(() => {
     let e = [],
       t = [];
-    return S && (e.push(_), t.push(O.intl.string(O.t.UyBQFx))), e.push(p), t.push(O.intl.string(O.t.LhMLCg)), {
+    return x && (e.push(_), t.push(O.intl.string(O.t.UyBQFx))), e.push(p), t.push(O.intl.string(O.t.LhMLCg)), {
       questionItems: e,
       questionTitles: t
     }
-  }, [S, p, _]);
+  }, [x, p, _]);
   i.useEffect(() => {
     (0, b.Yc)({
       rating: r,
@@ -83,9 +85,9 @@ let h = function(e) {
       searchType: n
     })
   }, [r, t, n]);
-  let [x, N] = i.useState(0), y = i.useMemo(() => x === m.length - 1, [x, m.length]), D = i.useMemo(() => {
-    let e = m[x],
-      t = T[x];
+  let [m, N] = i.useState(0), y = 0 === m, D = m === S.length - 1, I = i.useMemo(() => {
+    let e = S[m],
+      t = T[m];
     return (0, l.jsx)(E, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -106,44 +108,44 @@ let h = function(e) {
     }({
       title: t
     }, e))
-  }, [m, T, x]), I = i.useMemo(() => m.every(c.cp), [m]), C = i.useMemo(() => {
-    let e = m[x];
+  }, [S, T, m]), C = i.useMemo(() => S.every(c.cp), [S]), k = i.useMemo(() => {
+    let e = S[m];
     return (0, c.cp)(e)
-  }, [m, x]), k = i.useCallback(() => {
-    I && ((0, b.z4)({
+  }, [S, m]), j = i.useCallback(() => {
+    C && ((0, b.z4)({
       rating: r,
       searchId: t,
       searchType: n,
-      unsatisfiedQuestionOption: S ? (0, c.HO)(_) : null,
-      unsatisfiedQuestionText: S ? (0, c.sG)(_) : null,
+      unsatisfiedQuestionOption: x ? (0, c.HO)(_) : null,
+      unsatisfiedQuestionText: x ? (0, c.sG)(_) : null,
       describeSearchQuestionOption: (0, c.HO)(p),
       describeSearchQuestionText: (0, c.sG)(p)
-    }), h())
-  }, [_, S, I, h, r, p, t, n]), j = i.useCallback(() => {
-    if (0 === x) return void h();
-    N(x - 1)
-  }, [x, h]), L = i.useCallback(() => {
-    N(x + 1)
-  }, [x]);
+    }), g())
+  }, [_, x, C, g, r, p, t, n]), L = i.useCallback(() => {
+    if (y) return void g();
+    N(m - 1)
+  }, [y, m, g]), R = i.useCallback(() => {
+    N(m + 1)
+  }, [m]);
   return (0, l.jsxs)(u.Y0X, {
     size: u.CgR.MEDIUM,
     transitionState: a,
-    "aria-labelledby": g,
+    "aria-labelledby": h,
     parentComponent: "SearchResultsFeedbackModal",
     children: [(0, l.jsxs)(u.xBx, {
       separator: !1,
       className: v.header,
       children: [(0, l.jsx)(u.X6q, {
-        id: g,
+        id: h,
         variant: "heading-xl/semibold",
         color: "text-primary",
         children: O.intl.string(O.t.LRGdV1)
       }), (0, l.jsx)(u.olH, {
-        onClick: h
+        onClick: g
       })]
     }), (0, l.jsx)(u.hzk, {
       className: v.content,
-      children: D
+      children: I
     }), (0, l.jsxs)(u.mzw, {
       separator: !0,
       className: v.footer,
@@ -153,17 +155,17 @@ let h = function(e) {
         size: u.zxk.Sizes.MEDIUM,
         look: u.zxk.Looks.FILLED,
         color: u.zxk.Colors.PRIMARY,
-        onClick: j,
-        children: O.intl.string(O.t["13/7kZ"])
-      }), y ? (0, l.jsx)(u.zxk, {
+        onClick: L,
+        children: y ? O.intl.string(O.t["ETE/oK"]) : O.intl.string(O.t["13/7kZ"])
+      }), D ? (0, l.jsx)(u.zxk, {
         size: u.zxk.Sizes.MEDIUM,
-        onClick: k,
-        disabled: !I,
+        onClick: j,
+        disabled: !C,
         children: O.intl.string(O.t["4Zpxtr"])
       }) : (0, l.jsx)(u.zxk, {
         size: u.zxk.Sizes.MEDIUM,
-        onClick: L,
-        disabled: !C,
+        onClick: R,
+        disabled: !k,
         children: O.intl.string(O.t.PDTjLC)
       })]
     })]

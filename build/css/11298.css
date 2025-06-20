@@ -1,6 +1,6 @@
 /**
   Module ID: 11298
-  Original File Name: 150a01563424c1e9
+  Original File Name: 3e5cdece10cfccea
 **/
 .content__7ca6b {
     display: flex;
@@ -22,7 +22,7 @@
 }
 
 .freeformTextArea__7ca6b {
-    margin-top: 4px
+    margin-top: 16px
 }
 
 .freeformTextAreaDisabled__7ca6b {
@@ -38,4 +38,8 @@
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=150a01563424c1e9.css.map*/
+.textAreaTitle__7ca6b {
+    margin-top: 16px
+}
+
+/*# sourceMappingURL=3e5cdece10cfccea.css.map*/

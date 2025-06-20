@@ -13,7 +13,7 @@ function a(e) {
     let e = t();
     return (0, i.Bi)(e, r.Ef)
   }, [t]), [a, u] = l.useState(null), [s, o] = l.useState(""), [b, c] = l.useState(!1), d = l.useCallback(e => {
-    c((0, r.A6)(e)), u(e)
+    c(!0), u(e)
   }, []), f = l.useCallback(e => {
     o(e)
   }, []);
