@@ -1,6 +1,6 @@
 /**
   Module ID: 16967
-  Original File Name: c2f995e40e6fed22
+  Original File Name: 7eeabbcbb75721f1
 **/
 .closeButton__47998 {
     position: absolute;
@@ -377,7 +377,8 @@
 
 .messageInput__62280 {
     background-color: var(--input-background);
-    max-height: 88px
+    max-height: 88px;
+    padding-left: 16px
 }
 
 .forwardPreviewWrapper__62280 {
@@ -510,4 +511,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=c2f995e40e6fed22.css.map*/
+/*# sourceMappingURL=7eeabbcbb75721f1.css.map*/
