@@ -1,6 +1,6 @@
 /**
   Module ID: 10165
-  Original File Name: 630aef11c7a48295
+  Original File Name: 38189c4547c91443
 **/
 .header_cd8d1b {
     padding: 0 50px
@@ -18,7 +18,7 @@
 }
 
 .modal_cd8d1b {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-purple-end) 0,var(--background-modal-gradient-purple-start) 100%);
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--expressive-gradient-purple-end) 0,var(--expressive-gradient-purple-start) 100%);
     overflow: hidden;
     position: relative
 }
@@ -44,4 +44,4 @@
     padding: 20px 16px
 }
 
-/*# sourceMappingURL=630aef11c7a48295.css.map*/
+/*# sourceMappingURL=38189c4547c91443.css.map*/

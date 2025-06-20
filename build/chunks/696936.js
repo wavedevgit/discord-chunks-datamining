@@ -1,7 +1,7 @@
 /** Chunk was on 7589 **/
 "use strict";
 n.d(t, {
-  W: () => a,
+  W: () => l,
   Z: () => c
 });
 var r = n(255367);
@@ -9,11 +9,11 @@ n(73800);
 var i = n(120356),
   s = n.n(i),
   o = n(481060),
-  l = n(956542);
-let a = {
-  RED: l.redMessageBlock,
-  YELLOW: l.yellowMessageBlock,
-  BROWN: l.brownMessageBlock
+  a = n(956542);
+let l = {
+  RED: a.redMessageBlock,
+  YELLOW: a.yellowMessageBlock,
+  BROWN: a.brownMessageBlock
 };
 
 function c(e) {
@@ -21,7 +21,7 @@ function c(e) {
     color: t,
     icon: n,
     children: i,
-    className: a
+    className: l
   } = e;
   return (0, r.jsx)(o.kzN, {
     icon: e => (0, r.jsx)(n, function(e) {
@@ -45,8 +45,8 @@ function c(e) {
       height: 20,
       width: 20
     }, e)),
-    iconClassName: l.messageBlockIcon,
-    className: s()(t, a),
+    iconClassName: a.messageBlockIcon,
+    className: s()(t, l),
     children: i
   })
 }

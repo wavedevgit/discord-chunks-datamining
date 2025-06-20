@@ -1,20 +1,20 @@
 /** Chunk was on 7589 **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(73800),
   i = n(817460),
   s = n(293810),
   o = n(474936),
-  l = n(388032);
+  a = n(388032);
 
-function a(e) {
+function l(e) {
   return r.useMemo(() => {
     var t;
     let n = s.DN.map(e => ({
         value: e,
-        label: e.interval === o.rV.DAY && 7 === e.interval_count ? l.intl.formatToPlainString(l.t.XfSsr6, {
+        label: e.interval === o.rV.DAY && 7 === e.interval_count ? a.intl.formatToPlainString(a.t.XfSsr6, {
           defaultLimit: (0, i.iG)(e)
         }) : (0, i.iG)(e),
         isDefault: e.interval === o.rV.DAY && 7 === e.interval_count

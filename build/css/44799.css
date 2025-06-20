@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: fdd9e1b8d3d84c02
+  Original File Name: 49d66c232862d071
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -471,7 +471,7 @@
 }
 
 .background__6c253 {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--background-modal-gradient-purple-end) 0,var(--background-modal-gradient-purple-start) 100%);
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--expressive-gradient-purple-end) 0,var(--expressive-gradient-purple-start) 100%);
     inset: 0;
     position: absolute;
     z-index: 1
@@ -662,4 +662,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=fdd9e1b8d3d84c02.css.map*/
+/*# sourceMappingURL=49d66c232862d071.css.map*/

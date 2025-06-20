@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: a473ab89500c55d2
+  Original File Name: 7da576e30bcd96cc
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3350,18 +3350,6 @@
     --background-mod-normal: hsla(240,4%,61%,.16);
     --background-mod-strong: hsla(240,4%,61%,.2);
     --background-mod-subtle: hsla(240,4%,61%,.08);
-    --background-modal-gradient-blue-end: rgba(22,26,138,.45);
-    --background-modal-gradient-blue-start: rgba(89,102,242,.45);
-    --background-modal-gradient-green-end: rgba(0,102,56,.45);
-    --background-modal-gradient-green-start: rgba(33,186,99,.45);
-    --background-modal-gradient-nitro-1-end: rgba(20,20,204,.5);
-    --background-modal-gradient-nitro-1-start: rgba(140,19,130,.5);
-    --background-modal-gradient-nitro-2-end: rgba(20,20,204,.5);
-    --background-modal-gradient-nitro-2-start: rgba(33,186,99,.5);
-    --background-modal-gradient-pink-end: rgba(102,0,102,.45);
-    --background-modal-gradient-pink-start: rgba(179,38,156,.45);
-    --background-modal-gradient-purple-end: rgba(61,22,138,.45);
-    --background-modal-gradient-purple-start: rgba(161,87,242,.45);
     --background-modifier-accent: hsla(240,4%,61%,.12);
     --background-modifier-active: hsla(240,4%,61%,.16);
     --background-modifier-hover: hsla(240,4%,61%,.08);
@@ -3664,6 +3652,18 @@
     --embed-title: #fff;
     --experimental-avatar-embed-bg: rgba(0,0,0,.52);
     --expression-picker-bg: #333338;
+    --expressive-gradient-blue-end: rgba(22,26,138,.45);
+    --expressive-gradient-blue-start: rgba(89,102,242,.45);
+    --expressive-gradient-green-end: rgba(0,102,56,.45);
+    --expressive-gradient-green-start: rgba(33,186,99,.45);
+    --expressive-gradient-nitro-green-end: rgba(20,20,204,.5);
+    --expressive-gradient-nitro-green-start: rgba(33,186,99,.5);
+    --expressive-gradient-nitro-pink-end: rgba(20,20,204,.5);
+    --expressive-gradient-nitro-pink-start: rgba(140,19,130,.5);
+    --expressive-gradient-pink-end: rgba(102,0,102,.45);
+    --expressive-gradient-pink-start: rgba(179,38,156,.45);
+    --expressive-gradient-purple-end: rgba(61,22,138,.45);
+    --expressive-gradient-purple-start: rgba(161,87,242,.45);
     --focus-primary: #00abfc;
     --forum-post-extra-media-count-container-background: rgba(36,36,41,.8);
     --forum-post-tag-background: rgba(36,36,41,.9);
@@ -3921,18 +3921,6 @@
     --background-mod-normal: hsla(240,4%,61%,.16);
     --background-mod-strong: hsla(240,4%,61%,.24);
     --background-mod-subtle: hsla(240,4%,61%,.12);
-    --background-modal-gradient-blue-end: rgba(161,168,250,.8);
-    --background-modal-gradient-blue-start: rgba(230,232,255,.8);
-    --background-modal-gradient-green-end: rgba(138,247,181,.8);
-    --background-modal-gradient-green-start: rgba(230,255,240,.8);
-    --background-modal-gradient-nitro-1-end: rgba(89,102,242,.9);
-    --background-modal-gradient-nitro-1-start: rgba(252,153,232,.9);
-    --background-modal-gradient-nitro-2-end: rgba(89,102,242,.9);
-    --background-modal-gradient-nitro-2-start: rgba(230,255,240,.9);
-    --background-modal-gradient-pink-end: rgba(252,153,232,.8);
-    --background-modal-gradient-pink-start: rgba(250,230,255,.8);
-    --background-modal-gradient-purple-end: rgba(201,158,250,.8);
-    --background-modal-gradient-purple-start: rgba(242,230,255,.8);
     --background-modifier-accent: hsla(240,4%,61%,.28);
     --background-modifier-active: hsla(240,4%,61%,.16);
     --background-modifier-hover: hsla(240,4%,61%,.12);
@@ -4235,6 +4223,18 @@
     --embed-title: #2e3036;
     --experimental-avatar-embed-bg: rgba(0,0,0,.52);
     --expression-picker-bg: #fafafa;
+    --expressive-gradient-blue-end: rgba(161,168,250,.8);
+    --expressive-gradient-blue-start: rgba(230,232,255,.8);
+    --expressive-gradient-green-end: rgba(138,247,181,.8);
+    --expressive-gradient-green-start: rgba(230,255,240,.8);
+    --expressive-gradient-nitro-green-end: rgba(89,102,242,.9);
+    --expressive-gradient-nitro-green-start: rgba(230,255,240,.9);
+    --expressive-gradient-nitro-pink-end: rgba(89,102,242,.9);
+    --expressive-gradient-nitro-pink-start: rgba(252,153,232,.9);
+    --expressive-gradient-pink-end: rgba(252,153,232,.8);
+    --expressive-gradient-pink-start: rgba(250,230,255,.8);
+    --expressive-gradient-purple-end: rgba(201,158,250,.8);
+    --expressive-gradient-purple-start: rgba(242,230,255,.8);
     --focus-primary: #0096f2;
     --forum-post-extra-media-count-container-background: rgba(235,237,240,.8);
     --forum-post-tag-background: rgba(235,237,240,.9);
@@ -4492,18 +4492,6 @@
     --background-mod-normal: hsla(240,4%,61%,.2);
     --background-mod-strong: hsla(240,4%,61%,.24);
     --background-mod-subtle: hsla(240,4%,61%,.12);
-    --background-modal-gradient-blue-end: rgba(22,26,138,.25);
-    --background-modal-gradient-blue-start: rgba(89,102,242,.25);
-    --background-modal-gradient-green-end: rgba(0,102,56,.25);
-    --background-modal-gradient-green-start: rgba(33,186,99,.25);
-    --background-modal-gradient-nitro-1-end: rgba(20,20,204,.3);
-    --background-modal-gradient-nitro-1-start: rgba(140,19,130,.3);
-    --background-modal-gradient-nitro-2-end: rgba(20,20,204,.3);
-    --background-modal-gradient-nitro-2-start: rgba(33,186,99,.3);
-    --background-modal-gradient-pink-end: rgba(102,0,102,.25);
-    --background-modal-gradient-pink-start: rgba(179,38,156,.25);
-    --background-modal-gradient-purple-end: rgba(61,22,138,.25);
-    --background-modal-gradient-purple-start: rgba(161,87,242,.25);
     --background-modifier-accent: hsla(240,4%,61%,.24);
     --background-modifier-active: hsla(240,4%,61%,.2);
     --background-modifier-hover: hsla(240,4%,61%,.12);
@@ -4806,6 +4794,18 @@
     --embed-title: #e3e3e6;
     --experimental-avatar-embed-bg: rgba(0,0,0,.52);
     --expression-picker-bg: #070709;
+    --expressive-gradient-blue-end: rgba(22,26,138,.25);
+    --expressive-gradient-blue-start: rgba(89,102,242,.25);
+    --expressive-gradient-green-end: rgba(0,102,56,.25);
+    --expressive-gradient-green-start: rgba(33,186,99,.25);
+    --expressive-gradient-nitro-green-end: rgba(20,20,204,.3);
+    --expressive-gradient-nitro-green-start: rgba(33,186,99,.3);
+    --expressive-gradient-nitro-pink-end: rgba(20,20,204,.3);
+    --expressive-gradient-nitro-pink-start: rgba(140,19,130,.3);
+    --expressive-gradient-pink-end: rgba(102,0,102,.25);
+    --expressive-gradient-pink-start: rgba(179,38,156,.25);
+    --expressive-gradient-purple-end: rgba(61,22,138,.25);
+    --expressive-gradient-purple-start: rgba(161,87,242,.25);
     --focus-primary: #00abfc;
     --forum-post-extra-media-count-container-background: rgba(33,33,41,.8);
     --forum-post-tag-background: rgba(33,33,41,.9);
@@ -5063,18 +5063,6 @@
     --background-mod-normal: hsla(240,4%,61%,.16);
     --background-mod-strong: hsla(240,4%,61%,.2);
     --background-mod-subtle: hsla(240,4%,61%,.08);
-    --background-modal-gradient-blue-end: rgba(22,26,138,.3);
-    --background-modal-gradient-blue-start: rgba(89,102,242,.3);
-    --background-modal-gradient-green-end: rgba(0,102,56,.3);
-    --background-modal-gradient-green-start: rgba(33,186,99,.3);
-    --background-modal-gradient-nitro-1-end: rgba(20,20,204,.4);
-    --background-modal-gradient-nitro-1-start: rgba(140,19,130,.4);
-    --background-modal-gradient-nitro-2-end: rgba(20,20,204,.4);
-    --background-modal-gradient-nitro-2-start: rgba(33,186,99,.4);
-    --background-modal-gradient-pink-end: rgba(102,0,102,.3);
-    --background-modal-gradient-pink-start: rgba(179,38,156,.3);
-    --background-modal-gradient-purple-end: rgba(61,22,138,.3);
-    --background-modal-gradient-purple-start: rgba(161,87,242,.3);
     --background-modifier-accent: hsla(240,4%,61%,.12);
     --background-modifier-active: hsla(240,4%,61%,.16);
     --background-modifier-hover: hsla(240,4%,61%,.08);
@@ -5377,6 +5365,18 @@
     --embed-title: #fafafa;
     --experimental-avatar-embed-bg: rgba(0,0,0,.52);
     --expression-picker-bg: #1a1a1f;
+    --expressive-gradient-blue-end: rgba(22,26,138,.3);
+    --expressive-gradient-blue-start: rgba(89,102,242,.3);
+    --expressive-gradient-green-end: rgba(0,102,56,.3);
+    --expressive-gradient-green-start: rgba(33,186,99,.3);
+    --expressive-gradient-nitro-green-end: rgba(20,20,204,.4);
+    --expressive-gradient-nitro-green-start: rgba(33,186,99,.4);
+    --expressive-gradient-nitro-pink-end: rgba(20,20,204,.4);
+    --expressive-gradient-nitro-pink-start: rgba(140,19,130,.4);
+    --expressive-gradient-pink-end: rgba(102,0,102,.3);
+    --expressive-gradient-pink-start: rgba(179,38,156,.3);
+    --expressive-gradient-purple-end: rgba(61,22,138,.3);
+    --expressive-gradient-purple-start: rgba(161,87,242,.3);
     --focus-primary: #00abfc;
     --forum-post-extra-media-count-container-background: rgba(33,33,41,.8);
     --forum-post-tag-background: rgba(33,33,41,.9);
@@ -5597,4 +5597,4 @@
     --white: #fff
 }
 
-/*# sourceMappingURL=a473ab89500c55d2.css.map*/
+/*# sourceMappingURL=7da576e30bcd96cc.css.map*/

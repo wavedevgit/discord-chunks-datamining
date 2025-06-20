@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: a654db52e14c1df2
+  Original File Name: 7f5e38962318d492
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -7852,7 +7852,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .nitroGradientBackground_b5493b {
-    background: radial-gradient(100% 100% at 50% 0,var(--background-secondary-alt) 60%,var(--transparent) 100%),linear-gradient(90deg,var(--background-modal-gradient-green-end) 0,var(--background-modal-gradient-green-start) 100%)
+    background: radial-gradient(100% 100% at 50% 0,var(--background-secondary-alt) 60%,var(--transparent) 100%),linear-gradient(90deg,var(--expressive-gradient-green-end) 0,var(--expressive-gradient-green-start) 100%)
 }
 
 .section_efc71f {
@@ -19583,4 +19583,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=a654db52e14c1df2.css.map*/
+/*# sourceMappingURL=7f5e38962318d492.css.map*/

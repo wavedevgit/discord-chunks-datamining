@@ -7,8 +7,8 @@ var r = n(255367),
   i = n(73800),
   s = n(120356),
   o = n.n(s),
-  l = n(628238),
-  a = n(750030),
+  a = n(628238),
+  l = n(750030),
   c = n(492593),
   u = n(25015),
   d = n(963550),
@@ -27,7 +27,7 @@ let g = i.memo(function(e) {
     previewGuildId: h,
     preview: O,
     author: y
-  } = e, j = null != h ? h : (0, a.k)(n), x = (0, l.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
+  } = e, j = null != h ? h : (0, l.k)(n), x = (0, a.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
     content: S
   } = (0, u.Z)(n, {
     hideSimpleEmbedContent: _,

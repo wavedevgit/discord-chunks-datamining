@@ -14,13 +14,13 @@ function o(e) {
     onClick: t,
     className: n,
     children: o
-  } = e, l = i.useRef(null);
+  } = e, a = i.useRef(null);
   return (0, r.jsx)("div", {
     onClick: t,
-    ref: l,
+    ref: a,
     className: n,
     children: o({
-      areaRef: l,
+      areaRef: a,
       handleStopPropagation: s
     })
   })
