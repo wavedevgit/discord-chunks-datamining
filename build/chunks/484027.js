@@ -1,4 +1,5 @@
-/** Chunk was on 96584 **/
+/** Chunk was on 7589 **/
+"use strict";
 e.exports = {
   firstPromotionalAvatar: "firstPromotionalAvatar__55414",
   container: "container__55414"

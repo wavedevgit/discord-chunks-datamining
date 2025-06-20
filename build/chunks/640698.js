@@ -1,28 +1,27 @@
-/** Chunk was on 54433 **/
-t.d(n, {
-  F: () => o
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  F: () => l
 });
-var i = t(255367);
-t(73800);
-var l = t(120356),
-  r = t.n(l),
-  s = t(481060),
-  a = t(487292);
+var r = n(255367);
+n(73800);
+var i = n(120356),
+  a = n.n(i),
+  o = n(481060),
+  s = n(487292);
 
-function o(e) {
+function l(e) {
   let {
-    text: n
+    text: t,
+    className: n
   } = e;
-  return (0, i.jsx)("div", {
-    className: a.pillContainer,
-    children: (0, i.jsx)("div", {
-      className: r()(a.pill, a.pillGradient),
-      children: (0, i.jsx)(s.Text, {
-        variant: "text-xxs/bold",
-        color: "text-primary",
-        className: a.pillText,
-        children: n
-      })
+  return (0, r.jsx)("div", {
+    className: a()(s.pill, s.pillGradient, n),
+    children: (0, r.jsx)(o.Text, {
+      variant: "text-xxs/bold",
+      color: "text-primary",
+      className: s.pillText,
+      children: t
     })
   })
 }

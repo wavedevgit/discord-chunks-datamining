@@ -1,6 +1,6 @@
-/** Chunk was on 96584 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
-  pillContainer: "pillContainer__18dd3",
   pill: "pill__18dd3",
   pillGradient: "pillGradient__18dd3",
   pillText: "pillText__18dd3"

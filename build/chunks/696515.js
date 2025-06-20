@@ -131,7 +131,6 @@ let A = function(e) {
         })
       })]
     }), (A || N) && (0, r.jsx)(h.Z, {
-      isTier2: !!R,
       discountAmount: D
     }), V && (0, r.jsx)(T, {
       isOneStepCheckout: P,

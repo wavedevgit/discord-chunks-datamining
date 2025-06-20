@@ -1,4 +1,5 @@
-/** Chunk was on 96584 **/
+/** Chunk was on 7589 **/
+"use strict";
 e.exports = {
   card: "card__61870",
   tier0: "tier0__61870",
@@ -10,5 +11,6 @@ e.exports = {
   smallCloud: "smallCloud__61870",
   divider: "divider__61870",
   featureItem: "featureItem__61870",
-  priceHeader: "priceHeader__61870"
+  priceHeader: "priceHeader__61870",
+  pill: "pill__61870"
 }

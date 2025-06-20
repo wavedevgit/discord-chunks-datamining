@@ -1,6 +1,6 @@
 /**
   Module ID: 7589
-  Original File Name: 38884ff847bd6202
+  Original File Name: 7047eb97e38153f6
 **/
 .premiumTrialBadge_e4ef22 {
     align-items: center;
@@ -1940,6 +1940,13 @@
     margin-top: var(--spacing-4)
 }
 
+.pill__61870 {
+    left: 50%;
+    position: absolute;
+    top: 1px;
+    transform: translate(-50%,-50%)
+}
+
 .card_b846e5 {
     position: relative
 }
@@ -1962,4 +1969,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=38884ff847bd6202.css.map*/
+/*# sourceMappingURL=7047eb97e38153f6.css.map*/

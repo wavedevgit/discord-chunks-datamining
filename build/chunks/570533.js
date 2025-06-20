@@ -1,15 +1,15 @@
 /** Chunk was on 7589 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(73800),
   i = n(442837),
   s = n(339085),
   o = n(889564);
-let a = [];
+let l = [];
 
-function l(e) {
+function a(e) {
   let t = (0, i.e7)([s.ZP], () => s.ZP.getGuildEmoji(e), [e]);
-  return r.useMemo(() => null == t ? a : t.filter(t => (0, o.Kt)(t, e)), [t, e])
+  return r.useMemo(() => null == t ? l : t.filter(t => (0, o.Kt)(t, e)), [t, e])
 }

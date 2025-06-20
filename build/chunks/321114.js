@@ -1,13 +1,13 @@
 /** Chunk was on 7589 **/
 "use strict";
 n.d(t, {
-  c: () => a
+  c: () => l
 });
 var r = n(544891),
   i = n(570140),
   s = n(594174),
   o = n(981631);
-async function a(e, t) {
+async function l(e, t) {
   try {
     let n = await r.tn.put({
       url: o.ANM.USER_SET_GUILD_IDENTITY,
