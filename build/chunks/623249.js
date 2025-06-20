@@ -10,8 +10,8 @@ var r = n(255367),
   i = n(442837),
   l = n(780384),
   c = n(481060),
-  u = n(607070),
-  d = n(600164),
+  d = n(607070),
+  u = n(600164),
   p = n(210887),
   m = n(617136),
   f = n(915750),
@@ -53,7 +53,7 @@ function w(e) {
     onClose: E
   } = e, P = (0, g.sf)(n);
   null == P && E();
-  let [T, N] = (0, s.useState)(o), A = (0, g.KX)(), R = (0, m.O5)(), k = null == (t = (0, f.WD)()) ? void 0 : t.getId(), B = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, j.g2)({
+  let [T, N] = (0, s.useState)(o), A = (0, g.KX)(), k = (0, m.O5)(), R = null == (t = (0, f.WD)()) ? void 0 : t.getId(), B = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), q = (0, j.g2)({
     useReducedMotion: B,
     className: y.colorTransition
   }), I = T.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(P), L = (0, i.e7)([p.Z], () => p.Z.getState().theme), M = (0, l.wj)(L) ? v.BRd.DARK : v.BRd.LIGHT, {
@@ -62,7 +62,7 @@ function w(e) {
   } = (0, g.GI)({
     questId: P.id,
     beforeRequest: () => {
-      q.startAnimation(), R({
+      q.startAnimation(), k({
         questId: P.id,
         questContent: x.jn.CONNECTIONS_MODAL,
         questContentCTA: m.jZ.DEFIBRILLATOR
@@ -78,7 +78,7 @@ function w(e) {
     className: y.modalRoot,
     parentComponent: "QuestConsoleConnectionErrorsModal",
     children: [(0, r.jsxs)(c.xBx, {
-      direction: d.Z.Direction.VERTICAL,
+      direction: u.Z.Direction.VERTICAL,
       separator: !1,
       className: y.modalHeader,
       children: [(0, r.jsxs)("div", {
@@ -185,7 +185,7 @@ function w(e) {
           }, {
             content: x.jn.CONNECTIONS_MODAL,
             ctaContent: m.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-            impressionId: k
+            impressionId: R
           })
         },
         children: _.intl.string(_.t["qiS+xs"])

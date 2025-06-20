@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(524979),
   l = n(481060),
   c = n(617136),
-  u = n(915750),
-  d = n(497505),
+  d = n(915750),
+  u = n(497505),
   p = n(918701),
   m = n(685613),
   f = n(670638),
@@ -28,14 +28,14 @@ let j = e => {
     useReducedMotion: _,
     isExpanded: y,
     isExpansionAnimationComplete: O
-  } = e, C = (0, u.aM)(), w = s.useCallback(() => {
+  } = e, C = (0, d.aM)(), w = s.useCallback(() => {
     (0, g.openDisclosureModal)(t, {
-      content: d.jn.QUEST_BAR_V2,
+      content: u.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_DISCLOSURE
     })
   }, [t]), S = s.useCallback(() => {
     (0, p.nc)(t, {
-      content: d.jn.QUEST_BAR_V2,
+      content: u.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_GAME_LINK,
       impressionId: C
     })
@@ -97,7 +97,7 @@ let j = e => {
         onOpen: j,
         onClose: v,
         onSelect: o,
-        questContent: d.jn.QUEST_BAR_V2,
+        questContent: u.jn.QUEST_BAR_V2,
         quest: t,
         shouldShowDisclosure: !0,
         showShareLink: !0,

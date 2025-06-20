@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(613087),
   l = n(457153),
   c = n(495722),
-  u = n(321025),
-  d = n(62753);
+  d = n(321025),
+  u = n(62753);
 let p = function(e) {
   var t;
   let {
@@ -31,7 +31,7 @@ let p = function(e) {
     expansionSpring: p,
     children: [(0, r.jsx)(l.Z, {
       ref: _,
-      className: d.content,
+      className: u.content,
       expansionSpring: p,
       isExpanded: m,
       isExpansionAnimationComplete: f,
@@ -40,7 +40,7 @@ let p = function(e) {
       taskDetails: C
     }), (0, r.jsx)(c.Z, {
       expansionSpring: p,
-      className: d.content,
+      className: u.content,
       collapsedHeight: v,
       onCtxMenuOpen: g,
       onCtxMenuClose: x,
@@ -53,7 +53,7 @@ let p = function(e) {
       ref: n,
       taskDetails: C,
       children: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(u.Z, {
+        children: [(0, r.jsx)(d.Z, {
           expansionSpring: p,
           isExpanded: m
         }), !O && (0, r.jsx)(a.Z, {
@@ -69,7 +69,7 @@ let p = function(e) {
       })
     }), (0, r.jsx)("div", {
       ref: y,
-      className: d.overlay
+      className: u.overlay
     })]
   })
 }

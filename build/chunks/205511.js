@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(959078),
   l = n(442837),
   c = n(481060),
-  u = n(607070),
-  d = n(553795),
+  d = n(607070),
+  u = n(553795),
   p = n(617136),
   m = n(915750),
   f = n(111382),
@@ -38,7 +38,7 @@ function S(e) {
   let {
     quest: t,
     useReducedMotion: n
-  } = e, o = (0, f.n)(), l = (0, j.k3)(t.id, x.jn.QUEST_BAR_V2), u = (0, j.g2)({
+  } = e, o = (0, f.n)(), l = (0, j.k3)(t.id, x.jn.QUEST_BAR_V2), d = (0, j.g2)({
     useReducedMotion: n
   }), b = (0, p.O5)(), v = (0, m.aM)(), {
     errorHints: _,
@@ -51,9 +51,9 @@ function S(e) {
         questId: t.id,
         questContent: x.jn.QUEST_BAR_V2,
         questContentCTA: p.jZ.DEFIBRILLATOR
-      }), u.startAnimation()
+      }), d.startAnimation()
     },
-    afterRequest: u.stopAnimation
+    afterRequest: d.stopAnimation
   }), {
     header: E,
     renderBody: P
@@ -69,7 +69,7 @@ function S(e) {
       renderBody: e ? () => (0, r.jsx)(r.Fragment, {
         children: _.map((e, n) => {
           if (e.type === i.K.EXPIRED_CREDENTIAL && o) {
-            let s = d.Z.getAccount(e.connected_account_id, e.connected_account_type),
+            let s = u.Z.getAccount(e.connected_account_id, e.connected_account_type),
               o = (0, h.C9)(e),
               a = (0, h._j)(e);
             return (0, r.jsx)(w, {
@@ -120,7 +120,7 @@ function S(e) {
           [C.disabled]: y
         }),
         onClick: () => S(),
-        children: u.render()
+        children: d.render()
       })]
     }), (0, r.jsxs)("div", {
       className: a()({
@@ -136,10 +136,10 @@ let E = function(e) {
   let {
     quest: t,
     taskDetails: n
-  } = e, o = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), a = (0, g.z6)(), i = (0, b.j)({
+  } = e, o = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), a = (0, g.z6)(), i = (0, b.j)({
     location: y.dr.QUESTS_BAR
   }), c = s.useMemo(() => (0, h.B3)(t).filter(e => a.xboxAndPlaystationAccounts.find(t => t.type === e)), [a.xboxAndPlaystationAccounts, t]), {
-    steps: d,
+    steps: u,
     hasConnectedAccounts: p,
     isProgressingQuestForLaunchedGame: m,
     isQuestComplete: f
@@ -206,7 +206,7 @@ let E = function(e) {
   }, [a, c.length, t, n.targetMinutes]);
   return (0, r.jsxs)(_.ZP, {
     heading: O.intl.string(O.t.UPWlJi),
-    steps: d,
+    steps: u,
     children: [i && (0, r.jsx)(_.Om, {
       quest: t
     }), p && !m && !f && (0, r.jsx)(S, {

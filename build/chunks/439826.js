@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(524979),
   l = n(780384),
   c = n(481060),
-  u = n(393238),
-  d = n(410030),
+  d = n(393238),
+  u = n(410030),
   p = n(44315),
   m = n(617136),
   f = n(272008),
@@ -32,7 +32,7 @@ var r = n(255367),
   N = n(388032),
   A = n(508936);
 
-function R(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function R(e) {
   return e
 }
 
-function k(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,9 +72,9 @@ function B(e) {
     warningHints: a,
     isDarkTheme: l
   } = e, {
-    ref: d,
+    ref: u,
     height: m = 0
-  } = (0, u.ZP)([o]), f = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, x = (0, g.z)(n), {
+  } = (0, d.ZP)([o]), f = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, x = (0, g.z)(n), {
     type: h,
     hints: b
   } = s.useMemo(() => f || x ? {
@@ -97,7 +97,7 @@ function B(e) {
   return (0, r.jsx)(i.animated.div, {
     style: v,
     children: (0, r.jsxs)("div", {
-      ref: d,
+      ref: u,
       className: A.hints,
       children: [(0, r.jsxs)("div", {
         className: A.hintsContainer,
@@ -158,7 +158,7 @@ function q(e) {
 }
 
 function I(e) {
-  var t, n, o, i, u;
+  var t, n, o, i, d;
   let {
     quest: p,
     isHovering: b,
@@ -168,7 +168,7 @@ function I(e) {
     onCtxMenuClose: E,
     onCtxMenuOpen: P,
     onCtxMenuSelect: I
-  } = e, D = (0, h.PB)(p), L = (0, d.ZP)(), M = ((0, l.wj)(L) ? T.BRd.DARK : T.BRd.LIGHT) === T.BRd.DARK, V = (0, g.tP)(p), W = (null == (t = p.userStatus) ? void 0 : t.claimedAt) != null, Z = (0, g.B6)(p.config.expiresAt, {
+  } = e, D = (0, h.PB)(p), L = (0, u.ZP)(), M = ((0, l.wj)(L) ? T.BRd.DARK : T.BRd.LIGHT) === T.BRd.DARK, V = (0, g.tP)(p), W = (null == (t = p.userStatus) ? void 0 : t.claimedAt) != null, Z = (0, g.B6)(p.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), Q = (null == (n = p.userStatus) ? void 0 : n.enrolledAt) != null, H = (null == (o = p.userStatus) ? void 0 : o.completedAt) != null, {
@@ -209,7 +209,7 @@ function I(e) {
             })
           }), D && (0, r.jsx)(c.ua7, {
             text: H ? N.intl.string(N.t.YsCuyM) : Q ? N.intl.string(N.t["74Kqra"]) : (0, h.zi)(p) ? N.intl.string(N.t["I6JG4+"]) : N.intl.string(N.t.umdNio),
-            children: e => (0, r.jsx)(c.P3F, k(R({}, e), {
+            children: e => (0, r.jsx)(c.P3F, R(k({}, e), {
               className: A.utilButtonWrapper,
               "aria-label": N.intl.string(N.t.RscU7O),
               onClick: z,
@@ -227,7 +227,7 @@ function I(e) {
             hideLearnMore: !0,
             shouldShowDisclosure: !0,
             showShareLink: !0,
-            children: e => (0, r.jsx)(c.P3F, k(R({}, e), {
+            children: e => (0, r.jsx)(c.P3F, R(k({}, e), {
               className: A.utilButtonWrapper,
               "aria-label": N.intl.string(N.t.DEoVWV),
               children: (0, r.jsx)(c.xhG, {
@@ -256,7 +256,7 @@ function I(e) {
             variant: "text-sm/medium",
             color: M ? "text-muted" : "always-white",
             children: N.intl.format(N.t.buEvBw, {
-              brandName: null != (u = null == (i = p.config.cosponsorMetadata) ? void 0 : i.name) ? u : p.config.messages.gamePublisher
+              brandName: null != (d = null == (i = p.config.cosponsorMetadata) ? void 0 : i.name) ? d : p.config.messages.gamePublisher
             })
           }), V || W ? null : (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",

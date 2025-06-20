@@ -69,6 +69,7 @@ let p = e => {
             file: r,
             image: n
           }), Promise.resolve(void 0)),
+          multiple: !1,
           title: ""
         })]
       })

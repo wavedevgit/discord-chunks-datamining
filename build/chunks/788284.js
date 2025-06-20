@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(392711),
   l = n.n(i),
   c = n(442837),
-  u = n(481060),
-  d = n(451478),
+  d = n(481060),
+  u = n(451478),
   p = n(302221),
   m = n(464121);
 let f = [0, .5, 1],
@@ -40,7 +40,7 @@ function h(e) {
     className: o,
     quest: i,
     useReducedMotion: l
-  } = e, g = (0, c.e7)([d.Z], () => d.Z.isFocused()), h = s.useRef(null), [b, j] = s.useState(!1), v = s.useMemo(() => {
+  } = e, g = (0, c.e7)([u.Z], () => u.Z.isFocused()), h = s.useRef(null), [b, j] = s.useState(!1), v = s.useMemo(() => {
     if (null == i) return null;
     let e = (0, p.oo)(i.config.colors.primary),
       t = {
@@ -65,7 +65,7 @@ function h(e) {
     }
   }) : (0, r.jsx)("div", {
     className: a()(m.lottieAnimationBackgroundWrapper, o),
-    children: (0, r.jsx)(u.Fmz, {
+    children: (0, r.jsx)(d.Fmz, {
       ref: h,
       onComplete: O,
       importData: () => v,

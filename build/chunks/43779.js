@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(524979),
   l = n(442837),
   c = n(481060),
-  u = n(393238),
-  d = n(607070),
+  d = n(393238),
+  u = n(607070),
   p = n(960919),
   m = n(113434),
   f = n(918701),
@@ -32,8 +32,8 @@ function P(e) {
   var t, n, o, P, N;
   let {
     quest: A,
-    questContent: R,
-    isHovering: k,
+    questContent: k,
+    isHovering: R,
     contentPosition: B,
     rowIndex: q,
     isVisibleInViewport: I,
@@ -43,12 +43,12 @@ function P(e) {
   }), M = s.useMemo(() => x.r.build(A.config), [A.config]), V = M.defaultRewardName, W = M.defaultRewardNameWithArticle, Z = L ? V : W, Q = (null == (t = A.userStatus) ? void 0 : t.enrolledAt) != null, {
     ref: H,
     scrollHeight: U
-  } = (0, u.kE)(), z = 104 !== U, {
+  } = (0, d.kE)(), z = 104 !== U, {
     onAssetLoadComplete: F
   } = s.useContext(j.k), {
     expansionSpring: X
   } = (0, c.q_F)({
-    expansionSpring: +!!k,
+    expansionSpring: +!!R,
     config: (P = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -112,7 +112,7 @@ function P(e) {
       className: S.description,
       children: et
     })
-  }, [et]), es = (0, l.e7)([d.Z], () => d.Z.useReducedMotion);
+  }, [et]), es = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   return (0, r.jsxs)("div", {
     className: S.container,
     children: [(0, r.jsxs)(i.animated.div, {
@@ -140,23 +140,23 @@ function P(e) {
               quest: A,
               size: 76,
               percentComplete: $,
-              percentCompleteText: k && !(0, f.zi)(A) ? ee : void 0,
+              percentCompleteText: R && !(0, f.zi)(A) ? ee : void 0,
               children: (0, r.jsx)("div", {
                 className: S.circularRewardTileWrapper,
                 children: (0, r.jsx)(b.Z, {
                   quest: A,
-                  questContent: R,
+                  questContent: k,
                   className: S.circularQuestRewardTileAsset,
                   location: O.dr.QUEST_HOME_DESKTOP,
-                  autoplay: k,
+                  autoplay: R,
                   onLoadComplete: F
                 })
               })
             })]
           }) : (0, r.jsx)(b.Z, {
             quest: A,
-            autoplay: k,
-            questContent: R,
+            autoplay: R,
+            questContent: k,
             className: S.questRewardTileAsset,
             location: O.dr.QUEST_HOME_DESKTOP,
             onLoadComplete: F
@@ -193,7 +193,7 @@ function P(e) {
       })]
     }), (0, r.jsx)(y.Z, {
       quest: A,
-      location: R,
+      location: k,
       contentPosition: B,
       rowIndex: q,
       onReceiveErrorHints: D

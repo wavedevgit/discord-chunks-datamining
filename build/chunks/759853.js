@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(505266),
   l = n(867309),
   c = n(524979),
-  u = n(442837),
-  d = n(110924),
+  d = n(442837),
+  u = n(110924),
   p = n(607070),
   m = n(819640),
   f = n(569379),
@@ -29,10 +29,10 @@ let b = ["#51BC9D"],
     } = e, {
       completionSpring: y,
       startCompletionAnimation: O
-    } = (0, f.G)(), C = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = s.useRef(!1), S = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), E = s.useRef(null), P = (0, u.e7)([m.Z], () => m.Z.hasLayers()), T = (0, d.Z)(P), [N, A] = s.useState(null), [R, k] = s.useState(null), B = s.useRef(new i.qA({
+    } = (0, f.G)(), C = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = s.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), E = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), T = (0, u.Z)(P), [N, A] = s.useState(null), [k, R] = s.useState(null), B = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), q = (0, i.uR)(N, R), I = s.useCallback(() => {
+    })), q = (0, i.uR)(N, k), I = s.useCallback(() => {
       if (S) return;
       let e = v.current,
         t = E.current;
@@ -42,10 +42,10 @@ let b = ["#51BC9D"],
           x: l,
           y: c
         } = e.getBoundingClientRect(), {
-          x: u,
-          y: d
+          x: d,
+          y: u
         } = t.getBoundingClientRect();
-        q.createMultipleConfetti((n = l - u, r = c - d, s = e.clientHeight, o = e.clientWidth, a = function(e) {
+        q.createMultipleConfetti((n = l - d, r = c - u, s = e.clientHeight, o = e.clientWidth, a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -110,7 +110,7 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [v, E, q, S]), D = (0, d.Z)(_);
+    }, [v, E, q, S]), D = (0, u.Z)(_);
     return (s.useEffect(() => {
       C && _ && !D && (O(), I())
     }, [_, C, O, I, D]), s.useEffect(() => {
@@ -146,7 +146,7 @@ let b = ["#51BC9D"],
           className: x.confetti,
           environment: B.current
         }), (0, r.jsx)(i.Ji, {
-          ref: k,
+          ref: R,
           sprites: [h],
           colors: b,
           spriteWidth: g.Ko,

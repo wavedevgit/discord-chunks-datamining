@@ -10,8 +10,8 @@ var r = n(255367),
   i = n(278074),
   l = n(754700),
   c = n(887003),
-  u = n(742635),
-  d = n(458708),
+  d = n(742635),
+  u = n(458708),
   p = n(481060),
   m = n(70956),
   f = n(497505),
@@ -32,8 +32,8 @@ var r = n(255367),
   T = n(916028),
   N = n(749912),
   A = n(815183),
-  R = n(899457),
-  k = n(409667);
+  k = n(899457),
+  R = n(409667);
 
 function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -160,8 +160,8 @@ let Z = "1193992107035983872",
         logotype: "game_logotype.png"
       },
       taskConfig: {
-        type: u.L.FIRST_PARTY,
-        joinOperator: d.r.AND,
+        type: d.L.FIRST_PARTY,
+        joinOperator: u.r.AND,
         tasks: {
           [l.X.PLAY_ON_DESKTOP]: {
             eventName: l.X.PLAY_ON_DESKTOP,
@@ -171,7 +171,7 @@ let Z = "1193992107035983872",
         }
       },
       taskConfigV2: {
-        joinOperator: d.r.AND,
+        joinOperator: u.r.AND,
         tasks: {
           [l.X.PLAY_ON_DESKTOP]: {
             type: l.X.PLAY_ON_DESKTOP,
@@ -186,12 +186,12 @@ let Z = "1193992107035983872",
   };
 
 function H() {
-  var e, t, o, u, d, B, V, Z;
+  var e, t, o, d, u, B, V, Z;
   let [H, U] = s.useState(Q), z = s.useCallback(e => {
     U(I(q({}, e), {
       preview: !0
     }))
-  }, []), [F, X] = s.useState(R.a.UNENROLLED), [K, Y] = s.useState(!1), [G, J] = s.useState(!1), [$, ee] = s.useState(null), et = (Z = H.config, (0, i.EQ)(Z).with({
+  }, []), [F, X] = s.useState(k.a.UNENROLLED), [K, Y] = s.useState(!1), [G, J] = s.useState(!1), [$, ee] = s.useState(null), et = (Z = H.config, (0, i.EQ)(Z).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -333,43 +333,43 @@ function H() {
       previewQuest: H
     })
   }
-  let eu = s.useMemo(() => {
+  let ed = s.useMemo(() => {
       for (let [e, t] of Object.entries(H.config.taskConfigV2.tasks))
         if (null != t.target) return t.target;
       return 10 * m.Z.Seconds.MINUTE
     }, [H.config.taskConfigV2.tasks]),
-    ed = s.useMemo(() => l.X.WATCH_VIDEO in H.config.taskConfigV2.tasks, [H.config.taskConfigV2.tasks]);
+    eu = s.useMemo(() => l.X.WATCH_VIDEO in H.config.taskConfigV2.tasks, [H.config.taskConfigV2.tasks]);
   a()(!1 !== H.preview && null != H.preview, "Preview config must have property preview: true");
   let ep = H.config.taskConfigV2.tasks[l.X.WATCH_VIDEO];
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(p.X6q, {
       variant: "heading-lg/bold",
-      className: k.heading,
+      className: R.heading,
       children: "Quest Preview Tool"
     }), (0, r.jsx)("div", {
-      className: k.fields,
+      className: R.fields,
       children: (0, r.jsx)(T.Z, {
         onSelect: function(e) {
           ee(e), null != e && (X(function(e) {
-            if (null == e.userStatus) return R.a.UNENROLLED;
-            if (null != e.userStatus.claimedAt) return R.a.CLAIMED;
-            if (null != e.userStatus.completedAt) return R.a.COMPLETED_100;
+            if (null == e.userStatus) return k.a.UNENROLLED;
+            if (null != e.userStatus.claimedAt) return k.a.CLAIMED;
+            if (null != e.userStatus.completedAt) return k.a.COMPLETED_100;
             let t = (0, g.il)(e),
               n = t.progressSeconds,
               r = t.targetSeconds;
-            return n / r >= 1 ? R.a.COMPLETED_100 : n / r >= .75 ? R.a.COMPLETED_75 : n / r >= .5 ? R.a.COMPLETED_50 : n / r >= .25 ? R.a.COMPLETED_25 : R.a.ENROLLED
+            return n / r >= 1 ? k.a.COMPLETED_100 : n / r >= .75 ? k.a.COMPLETED_75 : n / r >= .5 ? k.a.COMPLETED_50 : n / r >= .25 ? k.a.COMPLETED_25 : k.a.ENROLLED
           }(e)), z(e))
         },
         quest: $
       })
     }), (0, r.jsx)(p.X6q, {
       variant: "heading-md/semibold",
-      className: k.subheading,
+      className: R.subheading,
       children: "Task Config"
     }), (0, r.jsx)("div", {
-      className: k.fields,
+      className: R.fields,
       children: (0, r.jsx)(N.Z, {
-        taskDuration: eu,
+        taskDuration: ed,
         taskConfigV2: H.config.taskConfigV2,
         onSelect: function(e) {
           z(I(q({}, H), {
@@ -381,10 +381,10 @@ function H() {
       })
     }), (0, r.jsx)(p.X6q, {
       variant: "heading-md/semibold",
-      className: k.subheading,
+      className: R.subheading,
       children: "Messages"
     }), (0, r.jsxs)("div", {
-      className: k.fields,
+      className: R.fields,
       children: [(0, r.jsx)(P.Z, {
         title: "Quest Name",
         assetKey: "questName",
@@ -400,7 +400,7 @@ function H() {
         assetKey: "gamePublisher",
         onMessageChange: eo,
         initialValue: H.config.messages.gamePublisher
-      }), ed && (0, r.jsxs)(r.Fragment, {
+      }), eu && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(P.Z, {
           title: "Video Title",
           assetKey: "videoTitle",
@@ -420,10 +420,10 @@ function H() {
       })]
     }), (0, r.jsx)(p.X6q, {
       variant: "heading-md/semibold",
-      className: k.subheading,
+      className: R.subheading,
       children: "Assets"
     }), (0, r.jsxs)("div", {
-      className: k.fields,
+      className: R.fields,
       children: [(0, r.jsx)(E.Z, {
         title: "Hero",
         assetKey: "hero",
@@ -460,7 +460,7 @@ function H() {
         onFileChange: en,
         filters: [...D, "svg"],
         initialValue: H.config.assets.logotype
-      }), ed && (0, r.jsxs)(r.Fragment, {
+      }), eu && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(E.Z, {
           title: "Quest Video",
           assetKey: "videoPlayerVideo",
@@ -496,10 +496,10 @@ function H() {
     }), et.map((e, t) => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)(p.X6q, {
         variant: "heading-md/semibold",
-        className: k.subheading,
+        className: R.subheading,
         children: ["Reward #", t + 1]
       }), (0, r.jsxs)("div", {
-        className: k.fields,
+        className: R.fields,
         children: [(0, r.jsx)(P.Z, {
           title: "Name",
           assetKey: "name",
@@ -544,12 +544,12 @@ function H() {
       })]
     }, t)), (0, r.jsx)(p.X6q, {
       variant: "heading-md/semibold",
-      className: k.subheading,
+      className: R.subheading,
       children: "Colors & Quest States"
     }), (0, r.jsxs)("div", {
-      className: k.fields,
+      className: R.fields,
       children: [(0, r.jsxs)("div", {
-        className: k.fields,
+        className: R.fields,
         style: {
           marginBottom: 0
         },
@@ -565,63 +565,63 @@ function H() {
           value: H.config.colors.secondary
         })]
       }), (0, r.jsx)("div", {
-        className: k.fields,
+        className: R.fields,
         children: (0, r.jsx)(A.Z, {})
-      }), (0, r.jsx)(R.Z, {
+      }), (0, r.jsx)(k.Z, {
         onChange: function(e) {
           switch (X(e), e) {
-            case R.a.UNENROLLED:
+            case k.a.UNENROLLED:
               z(I(q({}, H), {
                 userStatus: null
               }));
               break;
-            case R.a.ENROLLED:
+            case k.a.ENROLLED:
               z(I(q({}, H), {
                 userStatus: W({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
-            case R.a.COMPLETED_25:
+            case k.a.COMPLETED_25:
               z(I(q({}, H), {
                 userStatus: W({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .25 * eu
+                  streamProgressSeconds: .25 * ed
                 })
               }));
               break;
-            case R.a.COMPLETED_50:
+            case k.a.COMPLETED_50:
               z(I(q({}, H), {
                 userStatus: W({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .5 * eu
+                  streamProgressSeconds: .5 * ed
                 })
               }));
               break;
-            case R.a.COMPLETED_75:
+            case k.a.COMPLETED_75:
               z(I(q({}, H), {
                 userStatus: W({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .75 * eu
+                  streamProgressSeconds: .75 * ed
                 })
               }));
               break;
-            case R.a.COMPLETED_100:
+            case k.a.COMPLETED_100:
               z(I(q({}, H), {
                 userStatus: W({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: eu
+                  streamProgressSeconds: ed
                 })
               }));
               break;
-            case R.a.CLAIMED:
+            case k.a.CLAIMED:
               z(I(q({}, H), {
                 userStatus: W({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: eu
+                  streamProgressSeconds: ed
                 })
               }))
           }
@@ -630,22 +630,22 @@ function H() {
       })]
     }), (0, r.jsx)(p.X6q, {
       variant: "heading-lg/bold",
-      className: k.heading,
+      className: R.heading,
       children: "Component Previews"
     }), (0, r.jsxs)("div", {
-      className: k.componentPreviews,
+      className: R.componentPreviews,
       children: [(0, r.jsxs)(S.Z, {
         withBorder: !0,
         children: [(0, r.jsx)(p.vwX, {
           children: "Quest Bar"
         }), (0, r.jsxs)("div", {
-          className: k.questBarPreviewWrapper,
-          children: [(null == (u = H.userStatus) ? void 0 : u.claimedAt) != null && (0, r.jsx)(p.Text, {
+          className: R.questBarPreviewWrapper,
+          children: [(null == (d = H.userStatus) ? void 0 : d.claimedAt) != null && (0, r.jsx)(p.Text, {
             color: "text-secondary",
             variant: "text-sm/normal",
             children: "The Quest Bar is hidden when the user has claimed the reward."
           }), (0, r.jsx)("div", {
-            className: k.questBarPreview,
+            className: R.questBarPreview,
             children: (0, r.jsx)(j.p, {
               isPreview: !0,
               source: "preview",
@@ -668,7 +668,7 @@ function H() {
           questId: "0",
           children: (0, r.jsx)(b.Z, {
             quest: H,
-            className: k.questTile,
+            className: R.questTile,
             questContent: f.jn.QUEST_HOME_DESKTOP,
             contentPosition: 0,
             rowIndex: 0
@@ -678,18 +678,18 @@ function H() {
         withBorder: !0,
         children: [(0, r.jsx)(p.vwX, {
           children: "Channel Call Header"
-        }), (null == (d = H.userStatus) ? void 0 : d.claimedAt) != null && (0, r.jsx)(p.Text, {
+        }), (null == (u = H.userStatus) ? void 0 : u.claimedAt) != null && (0, r.jsx)(p.Text, {
           color: "text-secondary",
           variant: "text-sm/normal",
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
         }), (0, r.jsx)("div", {
-          className: k.questBarPreviewWrapper,
+          className: R.questBarPreviewWrapper,
           children: (0, r.jsx)(j.p, {
             isPreview: !0,
             source: "preview",
             questId: "0",
             children: (0, r.jsx)("div", {
-              className: k.questChannelCallHeaderPreview,
+              className: R.questChannelCallHeaderPreview,
               children: (0, r.jsx)(_.Z, {
                 channelId: "123",
                 previewQuest: H,
@@ -699,7 +699,7 @@ function H() {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: k.toggleSwitch,
+        className: R.toggleSwitch,
         children: (0, r.jsx)(p.xJW, {
           children: (0, r.jsx)(p.j7V, {
             value: K,
@@ -721,7 +721,7 @@ function H() {
           location: f.jn.QUESTS_EMBED
         }, H.id)]
       }), (0, r.jsx)("div", {
-        className: k.toggleSwitch,
+        className: R.toggleSwitch,
         children: (0, r.jsx)(p.xJW, {
           children: (0, r.jsx)(p.j7V, {
             value: G,
@@ -730,7 +730,7 @@ function H() {
             children: "Invalid Quests Embed:"
           })
         })
-      }), ed && (0, r.jsxs)(S.Z, {
+      }), eu && (0, r.jsxs)(S.Z, {
         withBorder: !0,
         allowClicks: !0,
         children: [(0, r.jsx)(p.vwX, {
@@ -771,9 +771,9 @@ class U extends s.Component {
       renderKey: t
     } = this.state;
     return null != e ? (0, r.jsxs)("div", {
-      className: k.errorBoundary,
+      className: R.errorBoundary,
       children: [(0, r.jsx)(p.P4T, {
-        className: k.errorBoundaryIcon
+        className: R.errorBoundaryIcon
       }), (0, r.jsx)(p.X6q, {
         variant: "heading-lg/semibold",
         children: "Something broke in the Quest preview tool :("
@@ -782,9 +782,9 @@ class U extends s.Component {
         onClick: this.handleResetState,
         children: "Reset"
       }), null != e.message && (0, r.jsx)(p.Zbd, {
-        className: k.errorMessageWrapper,
+        className: R.errorMessageWrapper,
         children: (0, r.jsx)("code", {
-          className: k.errorMessage,
+          className: R.errorMessage,
           children: e.message
         })
       })]
