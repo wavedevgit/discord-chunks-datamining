@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   O: () => _
 }), n(642613), n(472816), n(794429);
@@ -58,8 +58,8 @@ async function _(e, t) {
     return
   }
   let O = y.filter(e => e.type === c.n0.STANDARD),
-    j = [O[Math.floor(Math.random() * O.length)].id];
-  r.Z.sendStickers(t.id, j, "", {
+    C = [O[Math.floor(Math.random() * O.length)].id];
+  r.Z.sendStickers(t.id, C, "", {
     messageReference: {
       guild_id: null != (_ = t.getGuildId()) ? _ : void 0,
       channel_id: t.id,

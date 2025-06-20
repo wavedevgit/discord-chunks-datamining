@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   W: () => O,
   u: () => v
@@ -55,8 +55,8 @@ function O(e) {
   let {
     title: v,
     header: O,
-    info: j,
-    staticBannerSrc: C,
+    info: C,
+    staticBannerSrc: j,
     videoBannerSrc: S,
     bannerAspectRatio: I = 0,
     iconSrc: N,
@@ -76,10 +76,10 @@ function O(e) {
   let {
     primaryColor: Z,
     secondaryColor: R
-  } = (0, p.Z)(null != N ? N : C), k = "linear-gradient(45deg, ".concat(Z, ", ").concat(R, ")"), D = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), L = l.useRef(!1), M = (0, u.O)(e => {
-    if (!1 === L.current && e) {
+  } = (0, p.Z)(null != N ? N : j), k = "linear-gradient(45deg, ".concat(Z, ", ").concat(R, ")"), D = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), M = l.useRef(!1), L = (0, u.O)(e => {
+    if (!1 === M.current && e) {
       var t;
-      null == w || null == (t = w.onView) || t.call(w), (0, g.GF)(w.id, w.linkType, w.referrerId, w.activityCustomId), L.current = !0
+      null == w || null == (t = w.onView) || t.call(w), (0, g.GF)(w.id, w.linkType, w.referrerId, w.activityCustomId), M.current = !0
     }
   }, void 0), U = h.wS && null != T ? (0, i.jsx)(c.zxk, {
     look: c.zxk.Looks.BLANK,
@@ -101,12 +101,12 @@ function O(e) {
       size: "xs",
       color: c.TVs.colors.WHITE.css
     })
-  }) : null, B = null != C, G = null != S && !1 === D, H = B || G, V = 0 === I ? E.bannerAspectRatioBot : E.bannerAspectRatioActivity, z = l.useRef(null), W = l.useCallback(() => {
+  }) : null, B = null != j, G = null != S && !1 === D, H = B || G, V = 0 === I ? E.bannerAspectRatioBot : E.bannerAspectRatioActivity, z = l.useRef(null), W = l.useCallback(() => {
     let e = z.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), K = l.useMemo(() => !!G && new URL(S).pathname.endsWith(".gif"), [G, S]);
   return (0, i.jsxs)("div", {
-    ref: M,
+    ref: L,
     className: o()(E.embed, {
       [E.showVideoOnFocus]: G
     }),
@@ -127,7 +127,7 @@ function O(e) {
       })), B && (0, i.jsx)("div", {
         className: E.staticBanner,
         style: {
-          backgroundImage: "url(".concat(C, ")")
+          backgroundImage: "url(".concat(j, ")")
         },
         onTransitionEnd: W
       })]
@@ -157,7 +157,7 @@ function O(e) {
             color: "none",
             lineClamp: 1,
             children: v
-          }), j]
+          }), C]
         }), null == O && (null != U ? U : F)]
       }), A.length > 0 && (0, i.jsx)("div", {
         className: E.actionWrapper,

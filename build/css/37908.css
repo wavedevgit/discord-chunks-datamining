@@ -1,6 +1,6 @@
 /**
   Module ID: 37908
-  Original File Name: 9bb4a737f4001976
+  Original File Name: 0ee9e3985f841a32
 **/
 .header__7c901 {
     flex-grow: 0;
@@ -41,10 +41,6 @@
 
 .footer__7c901 {
     justify-content: space-between
-}
-
-html:not(.visual-refresh) .footer__7c901 {
-    padding-left: var(--space-8)
 }
 
 .listItemContainer__7c901 {
@@ -162,14 +158,11 @@ html:not(.visual-refresh) .footer__7c901 {
 
 .input_d64f22 {
     align-items: center;
-    display: flex
-}
-
-.visual-refresh .input_d64f22 {
+    display: flex;
     padding: 0
 }
 
-.visual-refresh .inputField_d64f22:hover {
+.inputField_d64f22:hover {
     border: none
 }
 
@@ -367,4 +360,4 @@ html:not(.visual-refresh) .footer__7c901 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=9bb4a737f4001976.css.map*/
+/*# sourceMappingURL=0ee9e3985f841a32.css.map*/

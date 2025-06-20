@@ -1,10 +1,10 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   I1: () => y,
   IZ: () => x,
   Qb: () => E,
-  Yc: () => j,
-  bo: () => C,
+  Yc: () => C,
+  bo: () => j,
   cy: () => v,
   hM: () => g,
   sL: () => _,
@@ -236,7 +236,7 @@ function O(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     rating: t,
     searchId: n,
@@ -250,7 +250,7 @@ function j(e) {
   })
 }
 
-function C(e) {
+function j(e) {
   let {
     searchId: t,
     searchType: n

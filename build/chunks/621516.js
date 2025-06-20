@@ -153,7 +153,7 @@ let E = e => {
       style: e,
       className: O.container,
       children: [(0, r.jsxs)("div", {
-        className: a()(O.__invalid_wrapper, O.headerRow),
+        className: O.headerRow,
         children: [(0, r.jsxs)(d.Text, {
           variant: "text-xs/normal",
           className: O.visibilityInfo,
@@ -188,7 +188,7 @@ let E = e => {
                 messageCount: "34",
                 reactionCount: "84",
                 reaction: "\uD83D\uDC9E",
-                classname: a()(O.backgroundVideo, O.secondaryVideo)
+                classname: O.backgroundVideo
               }), (0, r.jsx)(I, {
                 username: y.intl.string(y.t.KIele3),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_scientist_wumpus.mp4",
@@ -219,7 +219,6 @@ let E = e => {
               children: [(0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
                 color: "text-link",
-                className: O.__invalid_helpCenterLinkText,
                 children: y.intl.string(y.t.OahzBQ)
               }), (0, r.jsx)(d.rgF, {
                 size: "xs",
@@ -247,7 +246,7 @@ let E = e => {
               children: [(0, r.jsx)("img", {
                 src: E ? N : P,
                 alt: "",
-                className: a()(O.previewEmbedImage, O.secondaryImage)
+                className: O.previewEmbedImage
               }), (0, r.jsx)("img", {
                 src: E ? w : S,
                 alt: "",

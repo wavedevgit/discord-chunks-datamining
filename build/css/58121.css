@@ -1,6 +1,6 @@
 /**
   Module ID: 58121
-  Original File Name: 0cd7bf042b23261b
+  Original File Name: 51f77fccb4487082
 **/
 .coverContainer__2f300 {
     align-items: center;
@@ -581,10 +581,6 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 24px 0 8px
-}
-
-.visual-refresh .categoryRow_e4503a {
     padding: var(--space-md) 0 var(--space-xs)
 }
 
@@ -593,10 +589,6 @@
 }
 
 .categoryText_e4503a {
-    text-transform: uppercase
-}
-
-.visual-refresh .categoryText_e4503a {
     text-transform: none
 }
 
@@ -624,12 +616,14 @@
 
 .channelRow_e4503a {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
+    border: 1px solid var(--border-subtle);
+    border-bottom: none;
     display: flex;
     justify-content: space-between;
     max-width: 100%;
     min-height: 36px;
-    padding: 12px 16px
+    padding: var(--space-xs) var(--space-sm)
 }
 
 .channelRow_e4503a:not(.disabled_e4503a) {
@@ -637,46 +631,18 @@
 }
 
 .channelRow_e4503a:hover:not(.disabled_e4503a) {
-    background-color: var(--background-secondary)
-}
-
-.visual-refresh .channelRow_e4503a {
-    padding: var(--space-xs) var(--space-sm)
+    background-color: var(--background-mod-subtle)
 }
 
 .firstChannel_e4503a {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px
-}
-
-.lastChannel_e4503a {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px
-}
-
-.visual-refresh .channelRow_e4503a {
-    background-color: var(--background-mod-subtle);
-    border: 1px solid var(--border-subtle);
-    border-bottom: none
-}
-
-.visual-refresh .channelRow_e4503a:hover:not(.disabled_e4503a) {
-    background-color: var(--background-mod-normal)
-}
-
-.visual-refresh .firstChannel_e4503a {
     border-top-left-radius: var(--radius-sm);
     border-top-right-radius: var(--radius-sm)
 }
 
-.visual-refresh .lastChannel_e4503a {
+.lastChannel_e4503a {
     border-bottom: 1px solid var(--border-subtle);
     border-bottom-left-radius: var(--radius-sm);
     border-bottom-right-radius: var(--radius-sm)
-}
-
-.visual-refresh .separator_e4503a {
-    display: none
 }
 
 .channelInfo_e4503a {
@@ -704,9 +670,9 @@
 
 .subtitleSeparator_e4503a {
     align-self: center;
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 4px;
-    color: var(--background-modifier-accent);
+    color: var(--border-subtle);
     flex-shrink: 0;
     height: 4px;
     margin: 0 8px;
@@ -721,34 +687,15 @@
 .channelName_e4503a {
     align-items: center;
     display: flex;
+    gap: var(--space-xs);
     margin-right: 8px
 }
 
-.visual-refresh .channelName_e4503a {
-    gap: var(--space-xs)
-}
-
 .separator_e4503a {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
+    display: none;
     height: 1px;
     margin: -1px 16px 0
-}
-
-.visual-refresh .channelRow_e4503a {
-    background-color: var(--background-base-low)
-}
-
-.visual-refresh .channelRow_e4503a:hover:not(.disabled_e4503a) {
-    background-color: var(--background-mod-subtle)
-}
-
-.visual-refresh .separator_e4503a {
-    background-color: var(--border-subtle)
-}
-
-.visual-refresh .subtitleSeparator_e4503a {
-    background-color: var(--border-subtle);
-    color: var(--border-subtle)
 }
 
 .viewChannelButton_e4503a {
@@ -765,10 +712,6 @@
 }
 
 .scrollerInner_e4503a {
-    padding: 0 16px 16px
-}
-
-.visual-refresh .scrollerInner_e4503a {
     padding: 0 var(--spacing-8)
 }
 
@@ -778,32 +721,25 @@
 
 .pageBody__41ed7 {
     background: var(--bg-overlay-chat,var(--home-background));
+    background-color: var(--background-base-lower);
     display: flex;
     flex-direction: column;
     min-height: 0;
-    padding: 16px 0 0 16px
+    padding: var(--spacing-16) var(--spacing-8)
 }
 
 .header__41ed7 {
     display: flex;
-    margin: 0 32px 16px 16px
+    margin: 0 32px 16px 16px;
+    margin-bottom: var(--space-md);
+    margin-left: var(--spacing-8);
+    margin-right: var(--spacing-24)
 }
 
 .search__41ed7 {
     border-radius: 8px;
     flex-grow: 1;
     flex-shrink: 0
-}
-
-.visual-refresh .pageBody__41ed7 {
-    background-color: var(--background-base-lower);
-    padding: var(--spacing-16) var(--spacing-8)
-}
-
-.visual-refresh .header__41ed7 {
-    margin-bottom: var(--space-md);
-    margin-left: var(--spacing-8);
-    margin-right: var(--spacing-24)
 }
 
 .createButton__41ed7 {
@@ -1253,4 +1189,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=0cd7bf042b23261b.css.map*/
+/*# sourceMappingURL=51f77fccb4487082.css.map*/

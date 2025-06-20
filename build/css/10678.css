@@ -1,6 +1,6 @@
 /**
   Module ID: 10678
-  Original File Name: 301573b4d35896bb
+  Original File Name: bb671afa46ee9761
 **/
 .list_c47777 {
     max-height: 500px
@@ -68,10 +68,11 @@
 
 .wrapper_f563df {
     display: grid;
+    gap: 4px;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr;
     justify-items: center;
-    padding: 4px 0 6px 2px
+    padding: 8px
 }
 
 .button_f563df,.wrapper_f563df {
@@ -79,15 +80,23 @@
 }
 
 .button_f563df {
-    background-color: var(--background-tertiary);
-    border-radius: 50%;
+    background-color: var(--bg-mod-subtle);
+    border-radius: 8px;
     cursor: pointer;
     display: flex;
     flex: 0 0 auto;
-    height: 32px;
+    height: 44px;
     justify-content: center;
-    padding: 4px;
-    width: 32px
+    padding: 0;
+    width: 44px
+}
+
+.button_f563df:hover {
+    background-color: var(--bg-mod-strong)
+}
+
+.button_f563df:active {
+    background-color: var(--bg-mod-faint)
 }
 
 .button_f563df:hover {
@@ -106,30 +115,9 @@
     width: 20px
 }
 
-:where(.visual-refresh) .wrapper_f563df {
-    gap: 4px;
-    padding: 8px
-}
-
-:where(.visual-refresh) .button_f563df {
-    background-color: var(--bg-mod-subtle);
-    border-radius: 8px;
-    height: 44px;
-    padding: 0;
-    width: 44px
-}
-
-:where(.visual-refresh) .button_f563df:hover {
-    background-color: var(--bg-mod-strong)
-}
-
-:where(.visual-refresh) .button_f563df:active {
-    background-color: var(--bg-mod-faint)
-}
-
 .interactionInfoMenuItem_e1195d {
     align-items: flex-start;
     opacity: 1
 }
 
-/*# sourceMappingURL=301573b4d35896bb.css.map*/
+/*# sourceMappingURL=bb671afa46ee9761.css.map*/

@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   $: () => w,
   Z: () => A
@@ -23,8 +23,8 @@ var r, i = n(255367),
   x = n(551428),
   v = n(73346),
   O = n(981631),
-  j = n(388032),
-  C = n(228016);
+  C = n(388032),
+  j = n(228016);
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,10 +79,10 @@ class I extends(r = l.Component) {
   renderViewInStoreButton() {
     return (0, i.jsx)(s.zxk.Link, {
       to: this.getStoreListingLocation(),
-      className: C.actionButton,
+      className: j.actionButton,
       color: s.zxk.Colors.GREEN,
       size: s.zxk.Sizes.SMALL,
-      children: j.intl.string(j.t["W+NB9/"])
+      children: C.intl.string(C.t["W+NB9/"])
     })
   }
   render() {
@@ -173,19 +173,19 @@ class I extends(r = l.Component) {
         renderCustomActions: a
       } = this.props;
       if (null != a) return (0, i.jsx)("div", {
-        className: C.tileActions,
+        className: j.tileActions,
         children: a()
       });
       if (null == n) return null;
       let o = null != n && n.primarySkuId === r,
         c = null != l && l.hasFlag(O.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
-        className: C.tileActions,
+        className: j.tileActions,
         children: [!o || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
           application: n,
           customDisabledColor: s.zxk.Colors.PRIMARY,
           size: s.zxk.Sizes.SMALL,
-          className: C.actionButton,
+          className: j.actionButton,
           source: O.Sbl.MESSAGE_EMBED,
           onClick: this.handleActionButtonClick
         }), t && !c || e.premium ? null : (0, i.jsx)(p.Z, {

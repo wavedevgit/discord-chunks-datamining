@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   Z: () => h
 }), n(35282);
@@ -31,7 +31,7 @@ function f(e) {
 }
 
 function h(e) {
-  var t, n, r, h, g, _, b, E, y, x, v, O, j, C, S;
+  var t, n, r, h, g, _, b, E, y, x, v, O, C, j, S;
   let {
     item: I,
     renderApplication: N
@@ -53,12 +53,12 @@ function h(e) {
       return o.Z.getRelationshipType(T), p.OGo.PENDING_OUTGOING, null != (O = I.body) ? O : "";
     case d.DY.GUILD_SCHEDULED_EVENT_STARTED:
       let D = I.guild_scheduled_event_id,
-        L = null != D ? l.ZP.getGuildScheduledEvent(D) : null,
-        M = null == L ? void 0 : L.name,
-        U = null == (j = a.Z.getGuild(null == L ? void 0 : L.guild_id)) ? void 0 : j.name,
-        F = (0, l.Z2)(null != L ? L : void 0);
-      return (0, c.Ew)(U) || (0, c.Ew)(M) || !F ? null != (C = I.body) ? C : "" : m.intl.format(m.t.AyvfXV, {
-        event_name: M,
+        M = null != D ? l.ZP.getGuildScheduledEvent(D) : null,
+        L = null == M ? void 0 : M.name,
+        U = null == (C = a.Z.getGuild(null == M ? void 0 : M.guild_id)) ? void 0 : C.name,
+        F = (0, l.Z2)(null != M ? M : void 0);
+      return (0, c.Ew)(U) || (0, c.Ew)(L) || !F ? null != (j = I.body) ? j : "" : m.intl.format(m.t.AyvfXV, {
+        event_name: L,
         guild_name: U
       });
     case d.O7.INCOMING_FRIEND_REQUESTS:

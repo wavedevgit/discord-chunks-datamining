@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   J: () => b
 });
@@ -30,8 +30,8 @@ function b(e, t) {
     {
       rawMediaPostEmbedData: v,
       guild: O,
-      parentChannel: j,
-      user: C,
+      parentChannel: C,
+      user: j,
       selectedGuildId: S,
       canAccess: I
     } = (0, i.cj)([h.Z, u.Z, s.Z, p.default, d.Z], () => {
@@ -56,8 +56,8 @@ function b(e, t) {
       let n = (0, g.ku)({
         mediaPostEmbedData: v,
         guild: O,
-        parentChannel: j,
-        user: C,
+        parentChannel: C,
+        user: j,
         selectedGuildId: S,
         canAccess: I
       });
@@ -79,7 +79,7 @@ function b(e, t) {
         }
         return e
       }({}, n), t = t = {
-        user: C
+        user: j
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -90,7 +90,7 @@ function b(e, t) {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e)
-    }, [v, O, j, C, S, I]);
+    }, [v, O, C, j, S, I]);
   return r.useEffect(() => {
     if ((null == b ? void 0 : b.threadId) != null) {
       let e = h.Z.getEmbedFetchState(b.threadId);

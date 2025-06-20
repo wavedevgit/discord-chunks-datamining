@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   $3: () => V,
   Go: () => B,
@@ -11,11 +11,11 @@ n.d(t, {
   XO: () => T,
   Xn: () => z,
   bb: () => H,
-  qo: () => L,
+  qo: () => M,
   rY: () => k,
   sR: () => F,
   tn: () => G,
-  wq: () => M
+  wq: () => L
 }), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -38,8 +38,8 @@ var r = n(255367),
   x = n(358085),
   v = n(51144),
   O = n(91047),
-  j = n(50284),
-  C = n(804063),
+  C = n(50284),
+  j = n(804063),
   S = n(981631);
 
 function I(e, t, n) {
@@ -104,7 +104,7 @@ function D(e, t) {
   return Z(I("interactionAvatarProfile", e, t))
 }
 
-function L(e, t, a, o) {
+function M(e, t, a, o) {
   let {
     id: c
   } = t, {
@@ -172,7 +172,7 @@ function L(e, t, a, o) {
   }, [p, c, u, a, m, o])
 }
 
-function M(e, t) {
+function L(e, t) {
   return i.useCallback(n => {
     let r = _.default.getUser(e),
       i = f.Z.getChannel(t);
@@ -207,7 +207,7 @@ function B(e, t) {
     id: r
   } = t;
   return i.useCallback(e => {
-    e.altKey && (e.preventDefault(), (0, j.Z)(r, n))
+    e.altKey && (e.preventDefault(), (0, C.Z)(r, n))
   }, [r, n])
 }
 
@@ -280,7 +280,7 @@ function V(e, t) {
     let {
       messageReference: n
     } = e;
-    (null == t || (0, C.Z)(t)) && a.Z.jumpToMessage({
+    (null == t || (0, j.Z)(t)) && a.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.message_id,
       flash: !0,

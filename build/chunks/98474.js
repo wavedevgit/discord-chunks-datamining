@@ -4,18 +4,18 @@ n.d(t, {
 }), n(388685);
 var i = n(255367),
   r = n(73800),
-  o = n(505266),
-  a = n(524979),
+  l = n(505266),
+  o = n(524979),
   s = n(748780),
-  l = n(481060),
+  a = n(481060),
   c = n(596454),
   u = n(745510),
   d = n(314910),
   h = n(912893),
   p = n(768581),
   m = n(176354),
-  f = n(675654),
-  g = n(403122);
+  g = n(675654),
+  f = n(403122);
 
 function b(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -56,21 +56,21 @@ function O(e) {
     emoji: n,
     startPosition: O,
     targetPosition: y
-  } = e, [x, T] = r.useState(0), [S, _] = r.useState(0), [C, R] = r.useState(null), {
-    confettiCanvas: P
-  } = r.useContext(u.h), E = (0, o.uR)(P, C), I = r.useMemo(() => [{
+  } = e, [x, S] = r.useState(0), [T, P] = r.useState(0), [C, E] = r.useState(null), {
+    confettiCanvas: N
+  } = r.useContext(u.h), R = (0, l.uR)(N, C), I = r.useMemo(() => [{
     src: null == n.id ? m.ZP.getURL(n.name) : p.ZP.getEmojiURL({
       id: n.id,
       animated: !1,
       size: 22
     }),
     colorize: !1
-  }], [n.name, n.id]), N = y.x - y.width / 2 * .5, w = y.y - y.height / 2 * .5, Z = (0, l.q_F)({
+  }], [n.name, n.id]), w = y.x - y.width / 2 * .5, Z = y.y - y.height / 2 * .5, A = (0, a.q_F)({
     from: {
       y: O.y
     },
     to: {
-      y: w
+      y: Z
     },
     config: {
       duration: 450,
@@ -80,16 +80,16 @@ function O(e) {
       let {
         y: t
       } = e;
-      _(t)
+      P(t)
     }
-  }), A = (0, l.q_F)({
+  }), M = (0, a.q_F)({
     from: {
       x: O.x,
       scale: 1,
       opacity: 1
     },
     to: {
-      x: N,
+      x: w,
       scale: .5,
       opacity: .4
     },
@@ -104,36 +104,36 @@ function O(e) {
       let {
         x: t
       } = e;
-      T(t)
+      S(t)
     }
   });
   return r.useEffect(() => {
-    x > 0 && S > 0 && E.createConfetti(j(b({}, f.We), {
+    x > 0 && T > 0 && R.createConfetti(j(b({}, g.We), {
       position: {
         type: "static",
         value: {
           x: x,
-          y: S
+          y: T
         }
       }
     }))
-  }, [E, x, S]), (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(o.Ji, {
-      ref: R,
+  }, [R, x, T]), (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(l.Ji, {
+      ref: E,
       sprites: I,
       colors: v,
-      spriteWidth: f.Ko,
-      spriteHeight: f.Ko
+      spriteWidth: g.Ko,
+      spriteHeight: g.Ko
     }), (0, i.jsx)(d.ZP, {
-      children: (0, i.jsx)(a.animated.div, {
-        style: b({}, Z),
-        className: g.emojiContainer,
-        children: (0, i.jsx)(a.animated.div, {
-          style: j(b({}, A), {
-            opacity: A.opacity
+      children: (0, i.jsx)(o.animated.div, {
+        style: b({}, A),
+        className: f.emojiContainer,
+        children: (0, i.jsx)(o.animated.div, {
+          style: j(b({}, M), {
+            opacity: M.opacity
           }),
           children: (0, i.jsx)(c.Z, {
-            className: g.emoji,
+            className: f.emoji,
             emojiId: n.id,
             emojiName: n.name,
             animated: n.animated,

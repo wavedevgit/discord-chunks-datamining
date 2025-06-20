@@ -1,6 +1,6 @@
 /**
   Module ID: 49286
-  Original File Name: 7df469be71f4042e
+  Original File Name: 61b009e4953fecaa
 **/
 .imageUploader_e4d0bf {
     font-size: 12px;
@@ -41,7 +41,7 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50%;
+    border-radius: var(--radius-md);
     box-sizing: border-box;
     display: inline-block;
     flex-shrink: 0;
@@ -78,10 +78,6 @@
 
 .imageUploaderInner_e4d0bf:focus-within+.imageUploaderHint_e4d0bf,.imageUploaderInner_e4d0bf:hover+.imageUploaderHint_e4d0bf {
     visibility: visible
-}
-
-.visual-refresh .imageUploaderInner_e4d0bf {
-    border-radius: 30px
 }
 
 .imageUploaderFileInput_e4d0bf {
@@ -1047,6 +1043,8 @@
 }
 
 .card_dc2e44 {
+    background-color: var(--card-primary-bg);
+    border-radius: var(--radius-sm);
     margin-bottom: 16px;
     padding: 20px 16px
 }
@@ -1074,11 +1072,6 @@
 
 .theme-dark .card_dc2e44 {
     border-color: var(--background-secondary-alt)
-}
-
-.visual-refresh .card_dc2e44 {
-    background-color: var(--card-primary-bg);
-    border-radius: var(--radius-sm)
 }
 
 .headerDivider__774bc {
@@ -2028,4 +2021,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=7df469be71f4042e.css.map*/
+/*# sourceMappingURL=61b009e4953fecaa.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 70657
-  Original File Name: ff1f60ac4494cac2
+  Original File Name: a8bd81d466b4b4d8
 **/
 .container__270b2 {
     flex-direction: row;
@@ -323,8 +323,9 @@
 }
 
 .wrapper_d5f3cd {
-    background-color: var(--background-secondary);
-    border-radius: 4px;
+    background-color: var(--background-surface-high);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
     box-sizing: border-box;
     cursor: default;
     display: flex;
@@ -354,7 +355,7 @@
 }
 
 .guildIcon_d5f3cd {
-    background-color: var(--background-primary);
+    background-color: var(--background-mod-subtle);
     flex: 0 0 auto
 }
 
@@ -368,20 +369,6 @@
 }
 
 .guildIconImage_d5f3cd {
-    background-color: var(--background-secondary-alt)
-}
-
-.visual-refresh .wrapper_d5f3cd {
-    background-color: var(--background-surface-high);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm)
-}
-
-.visual-refresh .guildIcon_d5f3cd {
-    background-color: var(--background-mod-subtle)
-}
-
-.visual-refresh .guildIconImage_d5f3cd {
     background-color: var(--background-mod-subtle)
 }
 
@@ -1141,4 +1128,4 @@
     padding: 16px
 }
 
-/*# sourceMappingURL=ff1f60ac4494cac2.css.map*/
+/*# sourceMappingURL=a8bd81d466b4b4d8.css.map*/

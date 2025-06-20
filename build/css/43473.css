@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: dfb9e6e445a4dd6e
+  Original File Name: eece83d49f4a15d4
 **/
 .scroller__95bea {
     display: flex;
@@ -919,7 +919,7 @@
     box-sizing: border-box;
     position: relative;
     word-wrap: break-word;
-    background: var(--bg-overlay-chat,var(--background-primary));
+    background: var(--bg-overlay-chat,var(--background-base-lower));
     contain: paint layout;
     flex: 0 0 auto;
     overflow: hidden;
@@ -927,10 +927,6 @@
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
-}
-
-.visual-refresh .wrapper_fc8177 {
-    background: var(--bg-overlay-chat,var(--background-base-lower))
 }
 
 .compact_fc8177.wrapper_fc8177 {
@@ -1390,4 +1386,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=dfb9e6e445a4dd6e.css.map*/
+/*# sourceMappingURL=eece83d49f4a15d4.css.map*/

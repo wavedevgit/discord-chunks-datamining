@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   r: () => h
 });
@@ -54,11 +54,11 @@ class h {
         messageSnapshot: v
       } = this,
       O = (0, d.Xf)(v.message.timestamp),
-      j = m.getChannel(this.parentMessage.channel_id);
-    if (null != j && j.guild_id === (null == (e = x.messageReference) ? void 0 : e.guild_id)) {
+      C = m.getChannel(this.parentMessage.channel_id);
+    if (null != C && C.guild_id === (null == (e = x.messageReference) ? void 0 : e.guild_id)) {
       let e = m.getChannel(null == (n = x.messageReference) ? void 0 : n.channel_id);
       if (null == e) {
-        let e = b.getGuild(j.guild_id);
+        let e = b.getGuild(C.guild_id);
         return null == e ? {
           snapshotIndex: y
         } : {
@@ -82,11 +82,11 @@ class h {
         }
       }
     }
-    let C = null == (t = x.messageReference) ? void 0 : t.guild_id;
-    if (null == C) return {
+    let j = null == (t = x.messageReference) ? void 0 : t.guild_id;
+    if (null == j) return {
       snapshotIndex: y
     };
-    let S = null != (u = b.getGuild(C)) ? u : E.getGuild(C);
+    let S = null != (u = b.getGuild(j)) ? u : E.getGuild(j);
     return null == S ? {
       snapshotIndex: y
     } : {

@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   Z: () => F
 });
@@ -23,8 +23,8 @@ var r = n(255367),
   x = n(901461),
   v = n(739566),
   O = n(443877),
-  j = n(492593),
-  C = n(938353),
+  C = n(492593),
+  j = n(938353),
   S = n(25015),
   I = n(689674),
   N = n(963550),
@@ -36,9 +36,9 @@ var r = n(255367),
   R = n(981631),
   k = n(388032),
   D = n(758010),
-  L = n(30804);
+  M = n(30804);
 
-function M(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -116,7 +116,7 @@ let F = i.memo(function e(t) {
     ec = (0, c.v)(s),
     eu = (0, b.ro)(s.id, s.channel_id),
     ed = (0, p.Z)(s);
-  return ea ? (0, r.jsx)(e, U(M({}, t), {
+  return ea ? (0, r.jsx)(e, U(L({}, t), {
     message: K.message,
     channel: Y,
     hasThread: !1
@@ -125,19 +125,19 @@ let F = i.memo(function e(t) {
     compact: Z,
     count: 1,
     collapsedReason: i
-  }) : (0, r.jsx)(j.Z, {
+  }) : (0, r.jsx)(C.Z, {
     compact: Z,
     className: a()(D, {
-      [L.ephemeral]: (0, E.Pv)(s),
-      [L.disableInteraction]: H,
-      [L.groupStart]: t.isGroupStart
+      [M.ephemeral]: (0, E.Pv)(s),
+      [M.disableInteraction]: H,
+      [M.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, w.Z)(s, l, W, K, Z),
-    childrenHeader: (0, T.Z)(U(M({}, t), {
+    childrenHeader: (0, T.Z)(U(L({}, t), {
       author: ei,
       guildId: l.guild_id
     })),
-    childrenAccessories: (0, r.jsx)(C.BB, {
+    childrenAccessories: (0, r.jsx)(j.BB, {
       channel: l,
       message: s,
       hasSpoilerEmbeds: er,
@@ -180,7 +180,7 @@ function B(e) {
     compact: i,
     collapsedReason: l
   } = e;
-  return (0, r.jsx)(j.Z, {
+  return (0, r.jsx)(C.Z, {
     className: t,
     compact: i,
     role: "group",

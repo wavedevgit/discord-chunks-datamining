@@ -4,10 +4,10 @@ n.d(t, {
 }), n(388685);
 var i = n(442837),
   r = n(715903),
-  o = n(71619),
-  a = n(41776),
+  l = n(71619),
+  o = n(41776),
   s = n(665906),
-  l = n(271383),
+  a = n(271383),
   c = n(607744),
   u = n(496675),
   d = n(432376),
@@ -17,11 +17,11 @@ function p(e) {
   var t, n;
   let p = null == e ? void 0 : e.guild_id,
     m = (0, i.e7)([c.Z], () => null == p || c.Z.canChatInGuild(p), [p]),
-    f = (0, i.e7)([a.Z], () => null != p && a.Z.isLurking(p), [p]),
-    g = (0, i.e7)([l.ZP], () => null != p && l.ZP.isCurrentUserGuest(p), [p]),
+    g = (0, i.e7)([o.Z], () => null != p && o.Z.isLurking(p), [p]),
+    f = (0, i.e7)([a.ZP], () => null != p && a.ZP.isCurrentUserGuest(p), [p]),
     b = (0, i.e7)([u.Z], () => m && u.Z.can(h.Plq.ADD_REACTIONS, e), [m, e]),
     j = (0, r.ux)(p),
-    [, v] = (0, o.AB)(p),
+    [, v] = (0, l.AB)(p),
     O = (0, s.$R)(e);
   return null == e ? {
     disableReactionReads: !0,
@@ -52,14 +52,14 @@ function p(e) {
     canChat: m,
     renderReactions: !0,
     canAddNewReactions: b,
-    isLurking: f,
-    isGuest: g,
+    isLurking: g,
+    isGuest: f,
     communicationDisabled: v,
     isActiveChannelOrUnarchivableThread: O,
     isAutomodQuarantined: j
   })), n = n = {
-    isLurking: f,
-    isGuest: g,
+    isLurking: g,
+    isGuest: f,
     isPendingMember: !1
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

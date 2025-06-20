@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 6034678cba96264c
+  Original File Name: 07d7e13944003162
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -211,13 +211,15 @@
     --custom-chat-input-margin-bottom: 24px
 }
 
-.visual-refresh.align-chat-input .content__0bd4a {
+.align-chat-input .content__0bd4a {
     --custom-chat-input-margin-bottom: 8px
 }
 
 .wrapper__00943 {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-modifier-accent)
+    background-color: none;
+    border: 1px solid var(--background-modifier-accent);
+    padding-left: calc(var(--space-16) - 1px);
+    padding-right: calc(var(--space-16) - 2px)
 }
 
 .overlay__00943 {
@@ -245,7 +247,8 @@
 }
 
 .section__00943 {
-    background-color: var(--background-primary);
+    background-color: var(--background-mod-subtle);
+    border: 1px solid var(--border-faint);
     padding: 12px;
     position: relative
 }
@@ -277,32 +280,13 @@
 }
 
 .separator__00943 {
-    background-color: var(--background-secondary-alt);
+    background-color: var(--border-faint);
     height: 1px
 }
 
 .separator__00943.inset__00943 {
     margin-left: 12px;
     margin-right: 12px
-}
-
-.visual-refresh .wrapper__00943 {
-    background-color: none;
-    padding-left: calc(var(--space-16) - 1px);
-    padding-right: calc(var(--space-16) - 2px)
-}
-
-.visual-refresh .section__00943 {
-    background-color: var(--background-mod-subtle);
-    border: 1px solid var(--border-faint)
-}
-
-.visual-refresh .separator__00943 {
-    background-color: var(--border-faint)
-}
-
-.visual-refresh .body__00943 {
-    background-color: unset
 }
 
 .header__00943 {
@@ -354,6 +338,10 @@
 .body__00943 .separator__00943 {
     margin-bottom: 0;
     margin-top: 0
+}
+
+.wrapper__00943 .body__00943 {
+    background: none
 }
 
 .voiceSection__00943 {
@@ -667,14 +655,14 @@
     background: var(--background-nested-floating);
     border: 1px solid var(--border-faint);
     border-radius: 8px;
-    box-shadow: var(--shadow-low);
+    box-shadow: var(--shadow-low)!important;
     height: auto;
     padding: 2px
 }
 
 .popoverReactionHoverBar_f84418:hover {
     border: 1px solid var(--border-subtle);
-    box-shadow: var(--shadow-medium)
+    box-shadow: var(--shadow-medium)!important
 }
 
 .hoverBarButton_f84418 {
@@ -734,14 +722,6 @@
     height: 24px;
     margin: 2px 4px;
     width: 1px
-}
-
-.visual-refresh .popoverReactionHoverBar_f84418 {
-    box-shadow: var(--shadow-low)!important
-}
-
-.visual-refresh .popoverReactionHoverBar_f84418:hover {
-    box-shadow: var(--shadow-medium)!important
 }
 
 .container_e73f2a {
@@ -3194,4 +3174,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=6034678cba96264c.css.map*/
+/*# sourceMappingURL=07d7e13944003162.css.map*/

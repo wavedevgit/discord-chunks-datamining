@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   Z: () => w
 });
@@ -23,8 +23,8 @@ var r = n(255367),
   x = n(689674),
   v = n(438075),
   O = n(963550),
-  j = n(845080),
-  C = n(295790),
+  C = n(845080),
+  j = n(295790),
   S = n(145807),
   I = n(56744),
   N = n(981631),
@@ -71,8 +71,8 @@ let w = i.memo(function(e) {
     onClick: R,
     hideSimpleEmbedContent: k = !0,
     channel: D,
-    isGroupStart: L,
-    animateAvatar: M,
+    isGroupStart: M,
+    animateAvatar: L,
     subscribeToComponentDispatch: U,
     renderThreadAccessory: F,
     trackAnnouncementViews: B = !1
@@ -119,14 +119,14 @@ let w = i.memo(function(e) {
     disableInteraction: H,
     childrenRepliedMessage: (0, I.Z)(i, D, Y, X, l),
     childrenExecutedCommand: (0, S.Z)(i, D, l),
-    childrenHeader: (0, j.Z)(A(P({}, e), {
+    childrenHeader: (0, C.Z)(A(P({}, e), {
       guildId: D.guild_id,
       author: Q,
       roleIcon: $
     })),
     childrenAccessories: e.hideAccessories ? void 0 : (0, v.Q)(e, K),
     childrenMessageContent: (0, O.Z)(e, W),
-    childrenSystemMessage: (0, C.Z)(A(P({}, e), {
+    childrenSystemMessage: (0, j.Z)(A(P({}, e), {
       disableInteraction: H
     })),
     onContextMenu: Z,

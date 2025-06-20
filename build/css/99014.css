@@ -1,6 +1,6 @@
 /**
   Module ID: 99014
-  Original File Name: 7e617e8b967c7de0
+  Original File Name: 778e7805f8733081
 **/
 .container__6f9f7 {
     display: flex;
@@ -137,7 +137,7 @@
     top: var(--spacing-16)
 }
 
-.modal_b30d08 {
+.modal_b30d08,.modalContentContainer_b30d08 {
     margin: 0;
     overflow: hidden
 }
@@ -145,12 +145,7 @@
 .modalContentContainer_b30d08 {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     padding: 0!important
-}
-
-.visual-refresh .modalContentContainer_b30d08 {
-    margin: 0
 }
 
 .contentContainer_b30d08 {
@@ -169,4 +164,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=7e617e8b967c7de0.css.map*/
+/*# sourceMappingURL=778e7805f8733081.css.map*/

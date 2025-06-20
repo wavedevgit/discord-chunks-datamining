@@ -5,9 +5,9 @@ n.d(t, {
 var s = n(392711),
   i = n.n(s),
   r = n(981631),
-  o = n(388032);
+  l = n(388032);
 let {
-  CAPTCHA: l,
+  CAPTCHA: o,
   EMAIL: a,
   PHONE: c,
   REVERIFY_EMAIL: h,
@@ -21,7 +21,7 @@ let {
   [r.c2C.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE]: [c, h],
   [r.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE]: [a, u],
   [r.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE]: [h, u],
-  [r.c2C.REQUIRE_CAPTCHA]: [l],
+  [r.c2C.REQUIRE_CAPTCHA]: [o],
   [r.c2C.AGREEMENTS]: [],
   [r.c2C.REQUIRE_SAFETY_FLOWS]: []
 }, E = {
@@ -34,15 +34,15 @@ let {
   getButtonTitle(e) {
     switch (e) {
       case r.PUi.EMAIL:
-        return o.intl.string(o.t["1MPz29"]);
+        return l.intl.string(l.t["1MPz29"]);
       case r.PUi.PHONE:
-        return o.intl.string(o.t.mjJecn);
+        return l.intl.string(l.t.mjJecn);
       case r.PUi.REVERIFY_EMAIL:
-        return o.intl.string(o.t.nmdPFR);
+        return l.intl.string(l.t.nmdPFR);
       case r.PUi.REVERIFY_PHONE:
-        return o.intl.string(o.t.of2129);
+        return l.intl.string(l.t.of2129);
       default:
-        return o.intl.string(o.t["oF6+W1"])
+        return l.intl.string(l.t["oF6+W1"])
     }
   },
   areVerificationTypesEqual: (e, t) => i().isEqual(e, t)

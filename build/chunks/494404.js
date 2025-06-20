@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   ZP: () => D,
   h4: () => A,
@@ -25,8 +25,8 @@ var r = n(255367),
   x = n(496675),
   v = n(933429),
   O = n(451478),
-  j = n(626135),
-  C = n(585483),
+  C = n(626135),
+  j = n(585483),
   S = n(981631),
   I = n(388032),
   N = n(555565);
@@ -168,7 +168,7 @@ function k(e) {
     listName: A
   } = e, w = i.useRef(null), Z = (0, m.Z)(A, w), R = (0, u.e7)([v.ZP], () => v.ZP.hasNotice()), k = (0, u.e7)([O.Z], () => O.Z.windowSize()), D = (0, h.Q3)("ItemsPopout");
   i.useEffect(() => {
-    j.default.track(S.rMx.OPEN_POPOUT, {
+    C.default.track(S.rMx.OPEN_POPOUT, {
       type: t
     })
   }, [t]), i.useEffect(() => {
@@ -185,24 +185,24 @@ function k(e) {
         animate: !0
       })
     }
-    return C.S.subscribe(S.CkL.SCROLL_PAGE_DOWN, t), C.S.subscribe(S.CkL.SCROLL_PAGE_UP, e), () => {
-      C.S.unsubscribe(S.CkL.SCROLL_PAGE_DOWN, t), C.S.unsubscribe(S.CkL.SCROLL_PAGE_UP, e)
+    return j.S.subscribe(S.CkL.SCROLL_PAGE_DOWN, t), j.S.subscribe(S.CkL.SCROLL_PAGE_UP, e), () => {
+      j.S.unsubscribe(S.CkL.SCROLL_PAGE_DOWN, t), j.S.unsubscribe(S.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
-  let L = i.useCallback(() => {
+  let M = i.useCallback(() => {
       var e;
       let t = null == (e = w.current) ? void 0 : e.getScrollerState();
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 250 && l && !o && (null == p || p())
     }, [l, p, o]),
-    M = [],
+    L = [],
     U = !0;
-  null == n || o && 0 === n.length ? M = [(0, r.jsx)("div", {
+  null == n || o && 0 === n.length ? L = [(0, r.jsx)("div", {
     className: a()(N.emptyPlaceholder, N.loadingPlaceholder),
     children: (0, r.jsx)(d.$jN, {})
-  }, "spinner")] : 0 === n.length ? M.push((0, r.jsx)(i.Fragment, {
+  }, "spinner")] : 0 === n.length ? L.push((0, r.jsx)(i.Fragment, {
     children: _()
-  }, "empty-state")) : (U = !1, M = [], s().each(n, e => {
-    M.push(...b(e))
+  }, "empty-state")) : (U = !1, L = [], s().each(n, e => {
+    L.push(...b(e))
   }));
   let F = null;
   null != n && n.length > 0 && null != p && (F = o ? (0, r.jsx)("div", {
@@ -248,7 +248,7 @@ function k(e) {
       component: g(),
       children: [(0, r.jsxs)(d.Den, {
         className: a()(N.messagesPopout, y),
-        onScroll: V ? L : void 0,
+        onScroll: V ? M : void 0,
         ref: w,
         children: [(0, r.jsx)(c.bG, {
           navigator: Z,
@@ -286,7 +286,7 @@ function k(e) {
               }({
                 ref: i
               }, l), n = n = {
-                children: M
+                children: L
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -321,8 +321,8 @@ function D(e) {
     renderMessage: x,
     getProTip: v,
     scrollerClassName: O,
-    className: j,
-    onCloseMessage: C,
+    className: C,
+    onCloseMessage: j,
     listName: I
   } = e, T = (0, u.e7)([y.Z], () => {
     let e = null != l ? y.Z.getMessages(l.id) : null;
@@ -346,7 +346,7 @@ function D(e) {
     channel: l
   })), [a, l]);
   return (0, r.jsx)(k, {
-    className: j,
+    className: C,
     scrollerClassName: O,
     items: A,
     loading: s,
@@ -376,7 +376,7 @@ function D(e) {
           jumping: T,
           canCloseAllMessages: m,
           jumpTo: P,
-          onCloseMessage: C
+          onCloseMessage: j
         })]
       }, t.id)), i)
     },

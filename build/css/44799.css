@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 49d66c232862d071
+  Original File Name: 78726e51cce770a1
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -580,7 +580,10 @@
 }
 
 .toolbar__89463 {
-    box-shadow: var(--shadow-ledge)
+    border-top: 1px solid var(--app-border-frame);
+    box-shadow: none;
+    height: calc(var(--custom-channel-header-height) + 1px);
+    padding-left: 20px
 }
 
 .contentContainer__89463 {
@@ -603,6 +606,7 @@
 
 .sidebarContainer__89463 {
     background-color: var(--background-secondary);
+    border-left: 1px solid var(--border-subtle);
     overflow: hidden;
     width: 375px
 }
@@ -643,17 +647,6 @@
     z-index: 100
 }
 
-.visual-refresh .toolbar__89463 {
-    border-top: 1px solid var(--app-border-frame);
-    box-shadow: none;
-    height: calc(var(--custom-channel-header-height) + 1px);
-    padding-left: 20px
-}
-
-.visual-refresh .sidebarContainer__89463 {
-    border-left: 1px solid var(--border-subtle)
-}
-
 .powerupsLevelContainer__89463 {
     flex-wrap: nowrap
 }
@@ -662,4 +655,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=49d66c232862d071.css.map*/
+/*# sourceMappingURL=78726e51cce770a1.css.map*/

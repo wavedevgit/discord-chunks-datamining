@@ -1,6 +1,6 @@
 /**
   Module ID: 90688
-  Original File Name: 6e4dc507ce4d48a8
+  Original File Name: 7804908af4ecea22
 **/
 .qrCodeOverlay_c28498 {
     align-items: center;
@@ -763,7 +763,8 @@
 .buttonContainer__8a2c0 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-8)
+    gap: var(--spacing-8);
+    padding-bottom: var(--spacing-16)
 }
 
 .qrCodeContainer__8a2c0 {
@@ -793,17 +794,4 @@
     margin-top: var(--spacing-16)
 }
 
-.visual-refresh .buttonContainer__8a2c0 {
-    padding-bottom: var(--spacing-16)
-}
-
-html:not(.visual-refresh) .modalRoot__8a2c0 {
-    border-radius: var(--spacing-8);
-    width: 368px
-}
-
-html:not(.visual-refresh) .content__8a2c0 {
-    padding: var(--spacing-32) var(--spacing-40)
-}
-
-/*# sourceMappingURL=6e4dc507ce4d48a8.css.map*/
+/*# sourceMappingURL=7804908af4ecea22.css.map*/

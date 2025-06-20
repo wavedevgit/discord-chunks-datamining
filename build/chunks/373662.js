@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   ZP: () => _,
   fO: () => g,
@@ -63,8 +63,8 @@ let h = i.forwardRef(function(e, t) {
     disabled: x,
     dangerous: v,
     separator: O,
-    sparkle: j,
-    showNewBadge: C,
+    sparkle: C,
+    showNewBadge: j,
     buttonClassName: S,
     children: I
   } = e, N = f(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
@@ -115,7 +115,7 @@ let h = i.forwardRef(function(e, t) {
           }, _)) : null, null != I ? (0, r.jsx)("div", {
             className: a()(p.icon, p.buttonContent),
             children: I
-          }) : null, j && (0, r.jsx)(o.K1N, {}), C && (0, r.jsx)(o.IGR, {
+          }) : null, C && (0, r.jsx)(o.K1N, {}), j && (0, r.jsx)(o.IGR, {
             text: d.intl.string(d.t.y2b7CA),
             color: s.Z.BG_BRAND,
             className: p.newBadge

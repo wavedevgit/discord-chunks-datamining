@@ -1,6 +1,6 @@
 /**
   Module ID: 72891
-  Original File Name: dca55c0fd810c79d
+  Original File Name: ae725720b410a77f
 **/
 .header__6e6ad {
     align-items: center;
@@ -106,16 +106,12 @@
 }
 
 .gifPicker__6c39d {
+    background-color: transparent;
     box-sizing: border-box;
     height: 100%;
-    max-height: 560px;
+    max-height: 536px;
     padding-top: 16px;
     width: 440px
-}
-
-.visual-refresh .gifPicker__6c39d {
-    background-color: transparent;
-    max-height: 536px
 }
 
 .modalHeader__6c39d {
@@ -155,4 +151,4 @@
     inset: auto var(--spacing-12) var(--spacing-16) var(--spacing-12)
 }
 
-/*# sourceMappingURL=dca55c0fd810c79d.css.map*/
+/*# sourceMappingURL=ae725720b410a77f.css.map*/

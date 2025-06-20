@@ -1,6 +1,6 @@
 /**
   Module ID: 2707
-  Original File Name: c771086062c526a5
+  Original File Name: 562e8a8f2df9d716
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -75,7 +75,7 @@
 
 .bodyColumnRight_d64c23 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: unset;
     display: flex;
     justify-content: center;
     min-height: 300px;
@@ -99,7 +99,7 @@
 
 .giftSelectItem_d64c23 {
     cursor: pointer;
-    margin-bottom: 10px
+    margin-bottom: unset
 }
 
 .modalFooter_d64c23 {
@@ -115,16 +115,8 @@
     right: 0
 }
 
-.visual-refresh .container_d64c23 {
+.container_d64c23 {
     min-width: 440px
-}
-
-.visual-refresh .bodyColumnRight_d64c23 {
-    background-color: unset
-}
-
-.visual-refresh .giftSelectItem_d64c23 {
-    margin-bottom: unset
 }
 
 .firstPromotionalAvatar__55414 {
@@ -517,11 +509,13 @@
 }
 
 .skuSelectModalHeader_e50a4d {
-    border-radius: 4px 4px 0 0
+    border-radius: 4px 4px 0 0;
+    border-top-left-radius: calc(var(--radius-md) - 1px);
+    border-top-right-radius: calc(var(--radius-md) - 1px)
 }
 
 .skuSelectModalContent_e50a4d {
-    border-radius: 0 0 4px 4px
+    border-radius: 0 0 var(--radius-md) var(--radius-md)
 }
 
 .skuSelectModalContent_e50a4d.modalPadding_e50a4d {
@@ -544,15 +538,6 @@
 
 .closeInner_e50a4d {
     height: var(--spacing-24)
-}
-
-.visual-refresh .skuSelectModalHeader_e50a4d {
-    border-top-left-radius: calc(var(--radius-md) - 1px);
-    border-top-right-radius: calc(var(--radius-md) - 1px)
-}
-
-.visual-refresh .skuSelectModalContent_e50a4d {
-    border-radius: 0 0 var(--radius-md) var(--radius-md)
 }
 
 .premiumRebrandHeader_e50a4d {
@@ -850,4 +835,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=c771086062c526a5.css.map*/
+/*# sourceMappingURL=562e8a8f2df9d716.css.map*/

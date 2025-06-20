@@ -1,6 +1,6 @@
 /**
   Module ID: 84575
-  Original File Name: 1c41b5b3ad247e2e
+  Original File Name: 1609480737e3ffe7
 **/
 .card__594f1,.spacing__594f1 {
     margin-bottom: 20px
@@ -83,8 +83,9 @@
 
 .phoneField_a0c54f {
     background-color: var(--input-background);
-    border: 1px solid var(--deprecated-text-input-border);
-    border-radius: 5px;
+    border: 1px solid var(--input-border);
+    border-radius: var(--radius-md);
+    box-shadow: none;
     position: relative
 }
 
@@ -114,7 +115,7 @@
 }
 
 .phoneField_a0c54f .inputField_a0c54f {
-    background-color: var(--input-background);
+    background-color: transparent;
     border: none;
     box-sizing: border-box;
     color: var(--text-normal);
@@ -126,40 +127,6 @@
 
 .phoneField_a0c54f .sendButton_a0c54f {
     margin-right: var(--spacing-4)
-}
-
-.visual-refresh .phoneField_a0c54f {
-    border: 1px solid var(--input-border);
-    border-radius: var(--radius-md);
-    box-shadow: none
-}
-
-.visual-refresh .phoneField_a0c54f .inputField_a0c54f {
-    background-color: transparent
-}
-
-.visual-refresh .phoneField_a0c54f .countryCode_a0c54f {
-    text-align: center
-}
-
-html:not(.visual-refresh) .phoneField_a0c54f {
-    padding: 2px
-}
-
-html:not(.visual-refresh) .phoneField_a0c54f .countryButton_a0c54f {
-    border-radius: 3px
-}
-
-html:not(.visual-refresh) .phoneField_a0c54f .plusSign_a0c54f {
-    color: var(--white-500)
-}
-
-html:not(.visual-refresh) .phoneField_a0c54f .countryCode_a0c54f {
-    color: var(--white-500)
-}
-
-html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
-    stroke: var(--white-500)
 }
 
 .phoneVerificationModal_db41ea {
@@ -199,4 +166,4 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     align-self: stretch
 }
 
-/*# sourceMappingURL=1c41b5b3ad247e2e.css.map*/
+/*# sourceMappingURL=1609480737e3ffe7.css.map*/

@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   Z: () => b
 });
@@ -69,9 +69,9 @@ function g(e) {
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(v), j = null != (t = m[g]) ? t : null;
-  if (null == j) return null;
-  let C = p.intl.format(j(), {
+  })(v), C = null != (t = m[g]) ? t : null;
+  if (null == C) return null;
+  let j = p.intl.format(C(), {
     actorName: _.nick,
     actorHook: x,
     targetName: null == v ? void 0 : v.nick,
@@ -83,7 +83,7 @@ function g(e) {
     }),
     timestamp: n.timestamp,
     compact: a,
-    children: C
+    children: j
   })
 }
 

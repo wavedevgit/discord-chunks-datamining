@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   Z: () => H
 }), n(388685);
@@ -23,8 +23,8 @@ var r = n(255367),
   x = n(38267),
   v = n(25015),
   O = n(438075),
-  j = n(359110),
-  C = n(6025),
+  C = n(359110),
+  j = n(6025),
   S = n(695346),
   I = n(433355),
   N = n(592125),
@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(594174),
   k = n(626135),
   D = n(22665),
-  L = n(981631),
-  M = n(959517),
+  M = n(981631),
+  L = n(959517),
   U = n(995717);
 
 function F(e) {
@@ -53,11 +53,11 @@ function F(e) {
       a = Z.Z.getCurrentlySelectedChannelId(),
       o = I.ZP.getCurrentSidebarChannelId(null == (n = t.messageReference) ? void 0 : n.channel_id),
       s = a === l && o === (null == r ? void 0 : r.id);
-    null == r || null == i || s || null == l || (C.Z.openThreadAsSidebar({
+    null == r || null == i || s || null == l || (j.Z.openThreadAsSidebar({
       channelId: r.id,
       baseChannelId: l,
       guildId: r.guild_id
-    }), (0, j.Kh)(l), k.default.track(L.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+    }), (0, C.Kh)(l), k.default.track(M.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
       moderator_report_id: t.channel_id,
       destination_channel_id: l,
       destination_message_id: t.id
@@ -99,7 +99,7 @@ function B(e) {
     let {
       popouts: n,
       setPopout: r
-    } = (0, x.Z)(e.id, M.d$), {
+    } = (0, x.Z)(e.id, L.d$), {
       usernameProfile: l,
       avatarProfile: a
     } = n, o = (0, y.XO)(e, t, l, r);
@@ -186,21 +186,21 @@ function G(e) {
       allowDevLinks: b,
       previewLinkTarget: !0
     }),
-    j = (0, a.e7)([N.Z], () => N.Z.getChannel(o.channel_id));
-  return null == j ? null : (0, r.jsx)("div", {
+    C = (0, a.e7)([N.Z], () => N.Z.getChannel(o.channel_id));
+  return null == C ? null : (0, r.jsx)("div", {
     className: U.container,
     children: (0, r.jsxs)("div", {
       className: U.content,
       children: [(0, r.jsx)(B, {
         mergedMessageRecord: h,
         content: y,
-        channel: j,
+        channel: C,
         reportingUserId: null == s || null == (n = s.moderatorReport) ? void 0 : n.reporting_user_id,
         reportedTimestamp: o.timestamp
       }), (0, O.Z)({
         channelMessageProps: {
           message: h,
-          channel: j,
+          channel: C,
           compact: !1
         },
         hasSpoilerEmbeds: x,

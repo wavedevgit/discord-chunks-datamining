@@ -1,6 +1,6 @@
 /**
   Module ID: 55183
-  Original File Name: 77183e80f0364ca7
+  Original File Name: 8079a3483c50da71
 **/
 .previewContainer__92e52 {
     align-items: center;
@@ -221,10 +221,7 @@
 }
 
 .goToShopButton__20a09 {
-    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
-}
-
-.visual-refresh .goToShopButton__20a09 {
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
     background-clip: padding-box
 }
 
@@ -249,4 +246,4 @@
     margin-right: 6px
 }
 
-/*# sourceMappingURL=77183e80f0364ca7.css.map*/
+/*# sourceMappingURL=8079a3483c50da71.css.map*/

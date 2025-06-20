@@ -1,6 +1,6 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
@@ -24,7 +24,7 @@ var r = n(255367),
   v = n(929968),
   O = n(413813);
 
-function j(e) {
+function C(e) {
   let {
     onClick: t
   } = e;
@@ -40,7 +40,7 @@ function j(e) {
   })
 }
 
-function C(e) {
+function j(e) {
   let {
     setTab: t,
     badgeState: n,
@@ -49,7 +49,7 @@ function C(e) {
     initialized: c,
     items: x,
     loading: O,
-    loadMore: C
+    loadMore: j
   } = (0, m.y6)(), S = (0, o.e7)([u.Z], () => u.Z.localItems), I = (0, h.Us)({
     location: "ForYou"
   }), N = i.useMemo(() => [...[...x, ...S].sort((e, t) => -1 * b.default.compare(e.id, t.id))], [x, S]), T = x.length > 0 ? x[0] : null, P = g.d$.useSetting(), A = i.useMemo(() => {
@@ -69,7 +69,7 @@ function C(e) {
       setTab: t,
       badgeState: n,
       closePopout: l,
-      children: A ? (0, r.jsx)(j, {
+      children: A ? (0, r.jsx)(C, {
         onClick: () => {
           null != T && (g.d$.updateSetting(T.id), _.default.track(y.rMx.NOTIFICATION_CENTER_ACTION, {
             action_type: d.ud.MARK_ALL_READ
@@ -80,7 +80,7 @@ function C(e) {
       initialized: c,
       items: N,
       loading: O,
-      loadMore: C
+      loadMore: j
     })]
   })
 }

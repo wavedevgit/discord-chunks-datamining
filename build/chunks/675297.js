@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   H: () => E
 }), n(953529);
@@ -29,8 +29,8 @@ function E(e) {
     hideRoleTag: x = !1,
     lineClamp: v = 1,
     cardWidth: O,
-    cardHeight: j,
-    thumbnailHeight: C,
+    cardHeight: C,
+    thumbnailHeight: j,
     descriptionTextVariant: S = "text-sm/normal",
     showOpaqueBackground: I = !1
   } = e, N = (0, i.e7)([s.Z], () => s.Z.getGuild(n), [n]), T = (0, i.e7)([s.Z], () => {
@@ -89,8 +89,8 @@ function E(e) {
     hideRoleTag: x,
     lineClamp: v,
     cardWidth: O,
-    cardHeight: j,
-    thumbnailHeight: C,
+    cardHeight: C,
+    thumbnailHeight: j,
     descriptionTextVariant: S,
     isDraft: !t.published
   }, t.id)

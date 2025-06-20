@@ -1,6 +1,6 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
-  Z: () => C
+  Z: () => j
 }), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -23,14 +23,14 @@ var r = n(255367),
   x = n(886176),
   v = n(981631),
   O = n(388032),
-  j = n(24665);
+  C = n(24665);
 
-function C(e) {
+function j(e) {
   var t;
   let {
     guildId: n
   } = e, l = (0, c.e7)([_.Z], () => _.Z.getGuild(n)), {
-    loading: C,
+    loading: j,
     subscriptionsSettings: S
   } = (0, E.H)(n), {
     listingsLoaded: I
@@ -63,17 +63,17 @@ function C(e) {
     disableTrack: null == l
   });
   let P = N.length > 0 ? new Date(Math.min(...N.map(e => Date.parse(e.published_at)))) : void 0;
-  return C || !I ? (0, r.jsx)("div", {
-    className: a()(j.guildShopEmbed, j.spinnerContainer),
+  return j || !I ? (0, r.jsx)("div", {
+    className: a()(C.guildShopEmbed, C.spinnerContainer),
     children: (0, r.jsx)(u.$jN, {})
   }) : null == l || null == S ? null : (0, r.jsxs)("div", {
-    className: j.guildShopEmbed,
+    className: C.guildShopEmbed,
     children: [(0, r.jsx)(y.Z, {
       coverImageAsset: null != (t = S.cover_image_asset) ? t : null
     }), (0, r.jsx)(u.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: j.serverShopLabel,
+      className: C.serverShopLabel,
       children: [(0, r.jsx)(x.Z, {
         height: "16px",
         width: "16px",
@@ -81,7 +81,7 @@ function C(e) {
       }), (0, r.jsx)(u.X6q, {
         variant: "heading-sm/semibold",
         color: "interactive-normal",
-        className: j.serverShopLabelText,
+        className: C.serverShopLabelText,
         children: O.intl.string(O.t.al5EXF)
       })]
     }), (0, r.jsx)(u.LZC, {
@@ -104,11 +104,11 @@ function C(e) {
     }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(u.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
-      className: j.guildShopEmbedFooter,
+      className: C.guildShopEmbedFooter,
       children: [(0, r.jsx)(m.Z, {
         guild: l
       }), (0, r.jsxs)("ul", {
-        className: j.guildShopSummary,
+        className: C.guildShopSummary,
         children: [(0, r.jsx)("li", {
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
@@ -127,10 +127,10 @@ function C(e) {
           })
         })]
       }), (0, r.jsx)(u.zxk, {
-        className: j.guildShopEmbedCta,
+        className: C.guildShopEmbedCta,
         onClick: T,
         children: (0, r.jsxs)("div", {
-          className: j.guildShopEmbedCtaContent,
+          className: C.guildShopEmbedCtaContent,
           children: [(0, r.jsx)(x.Z, {
             height: "18px",
             width: "18px"

@@ -1,6 +1,6 @@
 /**
   Module ID: 48057
-  Original File Name: 970312478d537aa5
+  Original File Name: d24836dcadca8d0b
 **/
 @use postcss-pxtorem;
 
@@ -388,10 +388,6 @@
     word-wrap: pre-wrap
 }
 
-.visual-refresh .cozy_c19a55 .header_c19a55 {
-    color: var(--chat-text-muted)
-}
-
 .zalgo_c19a55.cozy_c19a55 .header_c19a55 {
     overflow: hidden
 }
@@ -530,14 +526,10 @@
 }
 
 .cozy_c19a55 .timestamp_c19a55 {
-    color: var(--text-muted);
+    color: var(--chat-text-muted);
     font-size: .75rem;
     line-height: 1.375rem;
     vertical-align: baseline
-}
-
-.visual-refresh .cozy_c19a55 .timestamp_c19a55 {
-    color: var(--chat-text-muted)
 }
 
 .background-opacity-high .cozy_c19a55 .timestamp_c19a55,.background-opacity-low .cozy_c19a55 .timestamp_c19a55,.background-opacity-medium .cozy_c19a55 .timestamp_c19a55 {
@@ -743,11 +735,6 @@
     width: 2rem
 }
 
-.visual-refresh .cozy_c19a55.hasThread_c19a55:after {
-    left: calc(var(--custom-message-margin-horizontal) + var(--chat-avatar-size)/2 - 1px);
-    width: calc(var(--custom-message-margin-left-content-cozy) - var(--custom-message-margin-horizontal) - var(--chat-avatar-size)/2 - var(--space-4))
-}
-
 .font-size-12 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-14 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-15 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-16 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-18 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-20 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-24 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after {
     top: 1.75rem
 }
@@ -795,7 +782,7 @@
     top: 1.75rem
 }
 
-.visual-refresh .compact_c19a55.hasThread_c19a55 .contents_c19a55:before {
+.compact_c19a55.hasThread_c19a55 .contents_c19a55:before {
     background-color: var(--border-subtle)
 }
 
@@ -1344,4 +1331,4 @@
     margin-left: var(--spacing-12)
 }
 
-/*# sourceMappingURL=970312478d537aa5.css.map*/
+/*# sourceMappingURL=d24836dcadca8d0b.css.map*/

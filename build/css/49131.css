@@ -1,6 +1,6 @@
 /**
   Module ID: 49131
-  Original File Name: e735c874f7e35a9e
+  Original File Name: f38a8a162049484d
 **/
 .footer_fc958f {
     align-items: center;
@@ -163,12 +163,6 @@
     border-radius: 4px;
     filter: var(--shadow-high-filter);
     min-width: 0
-}
-
-@media (max-width:1420px) {
-    .secondaryImage_c6ad88 {
-        display: none
-    }
 }
 
 .serverSubPill_c6ad88 {
@@ -341,12 +335,6 @@
 @media (max-width:2065px) {
     .backgroundVideo_c6ad88 {
         opacity: 1
-    }
-}
-
-@media (max-width:1750px) {
-    .secondaryVideo_c6ad88 {
-        display: none
     }
 }
 
@@ -2265,4 +2253,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=e735c874f7e35a9e.css.map*/
+/*# sourceMappingURL=f38a8a162049484d.css.map*/

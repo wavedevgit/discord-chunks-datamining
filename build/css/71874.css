@@ -1,6 +1,6 @@
 /**
   Module ID: 71874
-  Original File Name: 79c30135392cde93
+  Original File Name: 2e56bad495effb0c
 **/
 .container__5537c {
     display: flex;
@@ -379,7 +379,7 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50%;
+    border-radius: var(--radius-md);
     box-sizing: border-box;
     display: inline-block;
     flex-shrink: 0;
@@ -416,10 +416,6 @@
 
 .imageUploaderInner_e4d0bf:focus-within+.imageUploaderHint_e4d0bf,.imageUploaderInner_e4d0bf:hover+.imageUploaderHint_e4d0bf {
     visibility: visible
-}
-
-.visual-refresh .imageUploaderInner_e4d0bf {
-    border-radius: 30px
 }
 
 .imageUploaderFileInput_e4d0bf {
@@ -507,7 +503,6 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 4px;
     height: 180px;
     width: 100%
 }
@@ -1118,4 +1113,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=79c30135392cde93.css.map*/
+/*# sourceMappingURL=2e56bad495effb0c.css.map*/

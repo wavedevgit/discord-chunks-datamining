@@ -1,6 +1,6 @@
 /**
   Module ID: 36833
-  Original File Name: 1b88367208dfb6b4
+  Original File Name: 656b0c6d5afbdf23
 **/
 .header__7c901 {
     flex-grow: 0;
@@ -41,10 +41,6 @@
 
 .footer__7c901 {
     justify-content: space-between
-}
-
-html:not(.visual-refresh) .footer__7c901 {
-    padding-left: var(--space-8)
 }
 
 .listItemContainer__7c901 {
@@ -89,4 +85,4 @@ html:not(.visual-refresh) .footer__7c901 {
     margin-right: 16px
 }
 
-/*# sourceMappingURL=1b88367208dfb6b4.css.map*/
+/*# sourceMappingURL=656b0c6d5afbdf23.css.map*/

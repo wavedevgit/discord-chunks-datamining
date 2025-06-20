@@ -7,6 +7,5 @@ e.exports = {
   plusSign: "plusSign_a0c54f",
   countryCode: "countryCode_a0c54f",
   inputField: "inputField_a0c54f",
-  sendButton: "sendButton_a0c54f",
-  phoneFieldExpand: "phoneFieldExpand_a0c54f"
+  sendButton: "sendButton_a0c54f"
 }

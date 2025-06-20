@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   Z: () => _
 });
@@ -29,12 +29,12 @@ function _(e) {
     avatarSrc: v,
     eventHandlers: {
       onMouseEnter: O,
-      onMouseLeave: j
+      onMouseLeave: C
     }
   } = (0, p.m)(!0);
   return (0, r.jsx)("div", {
     onMouseEnter: O,
-    onMouseLeave: j,
+    onMouseLeave: C,
     children: (0, r.jsx)(m.Z, {
       className: l()(g.mainContainer, {
         [g.compact]: i

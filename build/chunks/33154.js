@@ -1,30 +1,30 @@
 /** Chunk was on 22173 **/
 n.d(t, {
-  Z: () => g,
-  s: () => f
+  Z: () => f,
+  s: () => g
 }), n(388685);
 var i, r = n(255367),
-  o = n(73800),
-  a = n(442837),
+  l = n(73800),
+  o = n(442837),
   s = n(481060),
-  l = n(749210),
+  a = n(749210),
   c = n(313201),
   u = n(823379),
   d = n(41776),
   h = n(981631),
   p = n(388032),
   m = n(695256),
-  f = ((i = {})[i.CHAT = 0] = "CHAT", i[i.REACTIONS = 1] = "REACTIONS", i);
-let g = e => {
+  g = ((i = {})[i.CHAT = 0] = "CHAT", i[i.REACTIONS = 1] = "REACTIONS", i);
+let f = e => {
   let {
     type: t,
     guild: i,
-    closePopout: f,
-    ctaRef: g
-  } = e, b = (0, c.Dt)(), [j, v] = o.useState(!1), O = (0, a.e7)([d.Z], () => d.Z.isLurking(i.id), [i.id]);
-  o.useEffect(() => {
-    j && !O && f()
-  }, [j, O, f]);
+    closePopout: g,
+    ctaRef: f
+  } = e, b = (0, c.Dt)(), [j, v] = l.useState(!1), O = (0, o.e7)([d.Z], () => d.Z.isLurking(i.id), [i.id]);
+  l.useEffect(() => {
+    j && !O && g()
+  }, [j, O, g]);
   let y = null,
     x = p.intl.string(p.t.d7b1p6);
   switch (t) {
@@ -38,12 +38,12 @@ let g = e => {
       return (0, u.vE)(t)
   }
   if (null == y) return null;
-  let T = async () => {
+  let S = async () => {
     v(!0);
     try {
-      await l.Z.joinGuild(i.id, {
+      await a.Z.joinGuild(i.id, {
         source: h.vtS.CHAT_INPUT_BLOCKER
-      }), f()
+      }), g()
     } catch (e) {
       v(!1)
     }
@@ -68,12 +68,12 @@ let g = e => {
       }), (0, r.jsxs)("div", {
         className: m.buttonContainer,
         children: [(0, r.jsx)(s.zxk, {
-          buttonRef: g,
-          onClick: T,
+          buttonRef: f,
+          onClick: S,
           submitting: j,
           children: p.intl.string(p.t["9VLmlZ"])
         }), (0, r.jsx)(s.zxk, {
-          onClick: f,
+          onClick: g,
           look: s.zxk.Looks.BLANK,
           className: m.cancel,
           children: p.intl.string(p.t["2m+Sqq"])

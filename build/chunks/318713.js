@@ -1,107 +1,106 @@
-/** Chunk was on 31978 **/
-"use strict";
+/** Chunk was on 94495 **/
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
-var r = n(255367),
-  o = n(73800),
-  l = n(120356),
-  i = n.n(l),
-  s = n(481060),
-  a = n(55935),
-  c = n(543388),
-  u = n(223021),
-  d = n(388032),
-  p = n(848697);
-let m = o.memo(function(e) {
+var a = n(255367),
+  i = n(73800),
+  o = n(120356),
+  r = n.n(o),
+  c = n(481060),
+  l = n(55935),
+  s = n(543388),
+  d = n(223021),
+  u = n(388032),
+  m = n(848697);
+let p = i.memo(function(e) {
     let {
       children: t,
       className: n,
-      compact: l = !1,
-      timestamp: m,
-      timestampFormat: f,
-      isVisibleOnlyOnHover: b = !1,
-      cozyAlt: h = !1,
-      isInline: O = !0,
+      compact: o = !1,
+      timestamp: p,
+      timestampFormat: _,
+      isVisibleOnlyOnHover: g = !1,
+      cozyAlt: b = !1,
+      isInline: h = !0,
       id: y,
-      isEdited: j = !1,
-      application: v,
-      tooltipPosition: P
-    } = e, x = o.useMemo(() => new Date(m), [m]), C = o.useMemo(() => (0, a.Hg)(x), [x]), w = o.useMemo(() => null != f ? (0, a.vc)(x, f) : l ? (0, a.vc)(x, "LT") : (0, a.Y4)(x, !0), [x, f, l]), S = o.useMemo(() => l ? (0, u.Z)(w) : null, [l, w]), N = o.useMemo(() => j ? d.intl.formatToPlainString(d.t.CDzOFR, {
-      timeFormatted: C
-    }) : C, [j, C]);
-    return (0, r.jsx)("span", {
-      className: i()(n, S, {
-        [p.timestamp]: !0,
-        [p.timestampVisibleOnHover]: b,
-        [p.timestampInline]: O,
-        [p.alt]: h
+      isEdited: T = !1,
+      application: C,
+      tooltipPosition: O
+    } = e, x = i.useMemo(() => new Date(p), [p]), j = i.useMemo(() => (0, l.Hg)(x), [x]), v = i.useMemo(() => null != _ ? (0, l.vc)(x, _) : o ? (0, l.vc)(x, "LT") : (0, l.Y4)(x, !0), [x, _, o]), I = i.useMemo(() => o ? (0, d.Z)(v) : null, [o, v]), E = i.useMemo(() => T ? u.intl.formatToPlainString(u.t.CDzOFR, {
+      timeFormatted: j
+    }) : j, [T, j]);
+    return (0, a.jsx)("span", {
+      className: r()(n, I, {
+        [m.timestamp]: !0,
+        [m.timestampVisibleOnHover]: g,
+        [m.timestampInline]: h,
+        [m.alt]: b
       }),
-      children: null == v ? (0, r.jsx)(s.ua7, {
-        text: () => (0, a.vc)(x, "LLLL"),
-        "aria-label": N,
-        tooltipClassName: p.timestampTooltip,
-        position: P,
+      children: null == C ? (0, a.jsx)(c.ua7, {
+        text: () => (0, l.vc)(x, "LLLL"),
+        "aria-label": E,
+        tooltipClassName: m.timestampTooltip,
+        position: O,
         delay: 750,
-        children: e => (0, r.jsx)(g, {
+        children: e => (0, a.jsx)(f, {
           tooltipProps: e,
-          timeFormatted: w,
+          timeFormatted: v,
           timestamp: x,
           id: y,
-          compact: l,
+          compact: o,
           children: t
         })
-      }) : (0, r.jsx)(c.Z, {
-        application: v,
+      }) : (0, a.jsx)(s.Z, {
+        application: C,
         timestamp: x,
-        compact: l,
-        children: (0, r.jsx)(g, {
-          timeFormatted: w,
+        compact: o,
+        children: (0, a.jsx)(f, {
+          timeFormatted: v,
           timestamp: x,
           id: y,
-          compact: l,
+          compact: o,
           children: t
         })
       })
     })
   }),
-  g = o.memo(function(e) {
+  f = i.memo(function(e) {
     var t, n;
     let {
-      tooltipProps: o,
-      timeFormatted: l,
-      children: i,
-      compact: s,
-      timestamp: a,
-      id: c
+      tooltipProps: i,
+      timeFormatted: o,
+      children: r,
+      compact: c,
+      timestamp: l,
+      id: s
     } = e;
-    return (0, r.jsx)("time", (t = function(e) {
+    return (0, a.jsx)("time", (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          a = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), a.forEach(function(t) {
+          var a;
+          a = n[t], t in e ? Object.defineProperty(e, t, {
+            value: a,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : e[t] = r
+          }) : e[t] = a
         })
       }
       return e
-    }({}, o), n = n = {
-      id: c,
-      dateTime: a.toISOString(),
-      children: null != i ? i : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)("i", {
-          className: p.separator,
+    }({}, i), n = n = {
+      id: s,
+      dateTime: l.toISOString(),
+      children: null != r ? r : (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)("i", {
+          className: m.separator,
           "aria-hidden": !0,
-          children: s ? "[" : " — "
-        }), l, s && (0, r.jsxs)("i", {
-          className: p.separator,
+          children: c ? "[" : " — "
+        }), o, c && (0, a.jsxs)("i", {
+          className: m.separator,
           "aria-hidden": !0,
           children: ["]", " "]
         })]
@@ -109,12 +108,12 @@ let m = o.memo(function(e) {
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var a = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, a)
       }
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }),
-  f = m
+  _ = p

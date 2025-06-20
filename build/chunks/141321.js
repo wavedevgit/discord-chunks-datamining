@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   Z: () => E
 });
@@ -25,7 +25,7 @@ function E(e) {
     onClose: n,
     className: E,
     "data-jump-section": y
-  } = e, x = i.useRef(null), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), O = (0, o.Q3)("RecentsButton"), j = i.useRef(null), C = (0, l.e7)([p.ZP], () => (null == v ? void 0 : v.id) != null && p.ZP.getMentionCount(v.id, g.W.NOTIFICATION_CENTER) > 0), {
+  } = e, x = i.useRef(null), v = (0, l.e7)([m.default], () => m.default.getCurrentUser()), O = (0, o.Q3)("RecentsButton"), C = i.useRef(null), j = (0, l.e7)([p.ZP], () => (null == v ? void 0 : v.id) != null && p.ZP.getMentionCount(v.id, g.W.NOTIFICATION_CENTER) > 0), {
     enabled: S
   } = c.Z.useExperiment({
     location: "RecentsButton"
@@ -33,21 +33,21 @@ function E(e) {
     autoTrackExposure: !1
   }), I = (0, l.e7)([s.Z], () => S && s.Z.getUnseenInviteCount() > 0), N = (0, a.dQu)(a.TVs.modules.chat.INPUT_ICON_SIZE);
   return (0, r.jsx)(f.k, {
-    targetElementRef: j,
+    targetElementRef: C,
     onOpen: t,
     onClose: n,
     badgeState: {
-      badgeForYou: C
+      badgeForYou: j
     },
     popoutPosition: "bottom",
     popoutAlign: "right",
     children: (e, t, n, i) => {
       var l, o;
       return (0, r.jsxs)("div", {
-        ref: j,
+        ref: C,
         className: b.recentsIcon,
         children: [S && (0, r.jsx)(h.Z, {
-          inboxIconRef: j,
+          inboxIconRef: C,
           recentsPopoutShown: t
         }), (0, r.jsx)(d.U, {
           location: "inbox-button",
@@ -78,7 +78,7 @@ function E(e) {
             "aria-label": _.intl.string(_.t.GSmTKC),
             tooltip: t ? null : _.intl.string(_.t.GSmTKC),
             selected: t,
-            showBadge: C || I || i,
+            showBadge: j || I || i,
             "data-jump-section": y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);

@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   Z: () => E
 });
@@ -39,9 +39,9 @@ let E = e => {
     }
   }, [d, n, E]), x = (0, a.l)(), v = b(d), {
     data: O
-  } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), j = null != O ? O : v;
-  return null != j && x ? (0, r.jsx)(o.c, {
-    app: j,
+  } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), C = null != O ? O : v;
+  return null != C && x ? (0, r.jsx)(o.c, {
+    app: C,
     channel: n,
     message: d,
     hideParty: p,

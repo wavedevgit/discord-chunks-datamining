@@ -1,6 +1,6 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -24,7 +24,7 @@ var r = n(255367),
   v = n(388032),
   O = n(583136);
 
-function j(e) {
+function C(e) {
   let {
     invite: t,
     isMemberOfGuild: n,
@@ -32,7 +32,7 @@ function j(e) {
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d,
     currentUserId: p
-  } = e, h = i.useRef(null), [_, j] = i.useState(!0), [S, I] = i.useState(!1), N = t.state === x.r2o.ACCEPTING, T = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), {
+  } = e, h = i.useRef(null), [_, C] = i.useState(!0), [S, I] = i.useState(!1), N = t.state === x.r2o.ACCEPTING, T = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), {
     updateButton: P,
     updateCopy: A
   } = (0, f.n2)(), w = p === l.author.id, Z = A ? 326 : 292;
@@ -42,12 +42,12 @@ function j(e) {
   }, [Z, I]);
   let R = (0, m.PC)(t),
     k = i.useCallback(() => {
-      S && _ && j(!1)
+      S && _ && C(!1)
     }, [_, S]),
     D = i.useCallback(() => {
-      S && (_ || j(!0))
+      S && (_ || C(!0))
     }, [_, S]),
-    L = i.useMemo(() => {
+    M = i.useMemo(() => {
       var e;
       return S && (null == (e = h.current) ? void 0 : e.clientHeight) != null ? {
         height: _ ? Z : h.current.clientHeight + 36 + 48,
@@ -59,7 +59,7 @@ function j(e) {
       [O.clickable]: S && _
     }),
     onClick: k,
-    style: L,
+    style: M,
     children: [(0, r.jsxs)("div", {
       className: O.cardHeightMeasure,
       ref: h,
@@ -105,7 +105,7 @@ function j(e) {
         }),
         children: (0, r.jsx)("div", {
           className: O.buttonContainer,
-          children: (0, r.jsx)(C, {
+          children: (0, r.jsx)(j, {
             invite: t,
             profile: R,
             isMemberOfGuild: n,
@@ -121,7 +121,7 @@ function j(e) {
   })
 }
 
-function C(e) {
+function j(e) {
   let {
     invite: t,
     profile: n,

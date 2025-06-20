@@ -1,6 +1,6 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
-  Z: () => j
+  Z: () => C
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -33,29 +33,29 @@ function O(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     guildId: t
   } = e, n = (0, u.e7)([f.default], () => f.default.getCurrentUser()), l = (0, u.e7)([m.Z], () => m.Z.getGuild(t)), o = (0, u.e7)([m.Z], () => m.Z.getRoles(t)), {
-    impersonateType: j,
-    viewingRoles: C
+    impersonateType: C,
+    viewingRoles: j
   } = (0, u.cj)([b.Z], () => ({
     impersonateType: b.Z.getImpersonateType(t),
     viewingRoles: b.Z.getViewingRoles(t)
-  })), S = j === E.z.SERVER_SHOP, I = (0, u.e7)([p.ZP], () => null != n ? p.ZP.getTrueMember(t, n.id) : null), [N, T] = (0, d.A7R)(null == C ? [] : g.default.keys(C)), P = i.useRef(l);
+  })), S = C === E.z.SERVER_SHOP, I = (0, u.e7)([p.ZP], () => null != n ? p.ZP.getTrueMember(t, n.id) : null), [N, T] = (0, d.A7R)(null == j ? [] : g.default.keys(j)), P = i.useRef(l);
   i.useEffect(() => {
     let e = {},
       t = P.current;
-    if (null != t && null != j) {
+    if (null != t && null != C) {
       for (let t of N) {
         let n = o[t];
         null != n && (e[t] = n)
       }(0, _.Zm)(t.id, {
-        type: j,
+        type: C,
         roles: e
       })
     }
-  }, [N, j, o]);
+  }, [N, C, o]);
   let A = null != l && null != n && null != I ? s()(o).filter(e => -1 !== I.roles.indexOf(e.id)).sortBy(e => -e.position).first() : void 0,
     w = i.useMemo(() => null != l && null != n ? Object.values(o).filter(e => e.id !== l.id).filter(e => {
       var t;

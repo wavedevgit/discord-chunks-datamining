@@ -1,6 +1,6 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
-  default: () => j,
+  default: () => C,
   k: () => O
 }), n(388685);
 var r = n(255367),
@@ -50,11 +50,11 @@ let O = (e, t) => {
       channel: e
     }, n))
   }, {
-    modalKey: C
+    modalKey: j
   })
 };
 
-function j(e) {
+function C(e) {
   let {
     transitionState: t,
     channel: n
@@ -68,7 +68,7 @@ function j(e) {
     })
   })
 }
-let C = "HD_STREAMING_POTION_MODAL_KEY";
+let j = "HD_STREAMING_POTION_MODAL_KEY";
 
 function S(e) {
   let {
@@ -83,29 +83,29 @@ function S(e) {
     error: x
   } = (0, m.t6)(f.FX), v = _ || x, {
     analyticsLocations: O
-  } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), j = null != E && !E.consumed;
+  } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), C = null != E && !E.consumed;
   (0, i.useEffect)(() => () => {
     v && (0, p.SN)(f.FX)
   }, [E, t, a, v]);
-  let C = (0, i.useCallback)(() => {
+  let j = (0, i.useCallback)(() => {
       (0, p.Zu)(t.id), (0, o.pTH)()
     }, [t.id]),
     S = (0, i.useCallback)(() => {
       (0, d.Z)({
         skuId: f.FX,
         analyticsLocations: O,
-        onComplete: C,
+        onComplete: j,
         variantsReturnStyle: l.v.INDIVIDUAL_PRODUCTS
       })
-    }, [O, C]),
-    N = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == E ? void 0 : E.type) === b.qc2.DEVELOPER_GIFT ? 1 : 2 * !!j : 3, [t.isHDStreamSplashed, n, null == E ? void 0 : E.type, j]),
+    }, [O, j]),
+    N = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == E ? void 0 : E.type) === b.qc2.DEVELOPER_GIFT ? 1 : 2 * !!C : 3, [t.isHDStreamSplashed, n, null == E ? void 0 : E.type, C]),
     T = (0, i.useMemo)(() => N(), [N]);
   return (0, r.jsx)(I, {
     channel: t,
     buttonState: T,
     price: h,
     onActionClick: () => {
-      u(!0), (j ? C : S)()
+      u(!0), (C ? j : S)()
     },
     loading: g || !y
   })
@@ -186,7 +186,7 @@ let I = e => {
       className: y.footer,
       children: [(0, r.jsx)(o.zxk, {
         onClick: () => {
-          (0, o.Mr3)(C)
+          (0, o.Mr3)(j)
         },
         color: o.zxk.Colors.PRIMARY,
         children: E.intl.string(E.t.Avt5KS)

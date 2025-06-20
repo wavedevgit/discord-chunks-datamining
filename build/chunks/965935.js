@@ -1,4 +1,4 @@
-/** Chunk was on 85634 **/
+/** Chunk was on 94495 **/
 e.exports = {
   gameIcon: "gameIcon__5a366",
   gameMessageTooltip: "gameMessageTooltip__5a366",

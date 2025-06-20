@@ -1,9 +1,10 @@
 /**
   Module ID: 50872
-  Original File Name: 6c9eea1d9f58ac06
+  Original File Name: f3e928f4e3d84576
 **/
 .header__8f3be {
     gap: var(--spacing-16);
+    margin-bottom: var(--spacing-24);
     text-align: center
 }
 
@@ -27,8 +28,9 @@
 
 .notice__8f3be {
     background-color: var(--background-secondary);
+    border: 1px solid var(--border-faint);
     border-radius: var(--radius-sm);
-    box-shadow: var(--elevation-low);
+    box-shadow: none;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-4);
@@ -42,27 +44,8 @@
     border-top-right-radius: var(--radius-xs)
 }
 
-.visual-refresh .notice__8f3be {
-    border: 1px solid var(--border-faint);
-    box-shadow: none
-}
-
-.visual-refresh .header__8f3be {
-    margin-bottom: var(--spacing-24)
-}
-
-.visual-refresh .content__8f3be {
+.content__8f3be {
     margin-bottom: var(--spacing-16)
-}
-
-html:not(.visual-refresh) .header__8f3be {
-    padding: var(--spacing-24)
-}
-
-html:not(.visual-refresh) .content__8f3be {
-    margin-bottom: var(--spacing-24);
-    padding-left: var(--spacing-24);
-    padding-right: var(--spacing-24)
 }
 
 .heading-sm\/normal_ec3eb0 {
@@ -783,4 +766,4 @@ html:not(.visual-refresh) .content__8f3be {
     color: var(--text-danger)
 }
 
-/*# sourceMappingURL=6c9eea1d9f58ac06.css.map*/
+/*# sourceMappingURL=f3e928f4e3d84576.css.map*/

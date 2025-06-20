@@ -1,6 +1,6 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
-  k: () => C
+  k: () => j
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -23,13 +23,13 @@ var r = n(255367),
   x = n(946443),
   v = n(264233),
   O = n(981631),
-  j = n(388032);
+  C = n(388032);
 
-function C(e) {
+function j(e) {
   let {
     onOpen: t,
     onClose: n,
-    children: C,
+    children: j,
     badgeState: S,
     popoutPosition: I,
     popoutAlign: N,
@@ -47,8 +47,8 @@ function C(e) {
       t.currentTab = e
     }, f.fy.FREQUENT_USER_ACTION)
   }, [])], {
-    showTutorial: L,
-    setSeenTutorial: M
+    showTutorial: M,
+    setSeenTutorial: L
   } = function(e) {
     let t = (0, a.e7)([h.Z], () => {
         var e, t;
@@ -97,7 +97,7 @@ function C(e) {
       onRequestClose: U,
       renderPopout: function() {
         return (0, r.jsx)(s.VqE, {
-          "aria-label": j.intl.string(j.t.GSmTKC),
+          "aria-label": C.intl.string(C.t.GSmTKC),
           className: A,
           children: k === o.X.FOR_YOU ? (0, r.jsx)(b.Z, {
             setTab: D,
@@ -128,8 +128,8 @@ function C(e) {
             children: (0, r.jsx)(x.Z, {
               setTab: D,
               onJump: z,
-              showTutorial: L,
-              setSeenTutorial: M,
+              showTutorial: M,
+              setSeenTutorial: L,
               closePopout: U,
               badgeState: S
             })
@@ -143,7 +143,7 @@ function C(e) {
         let {
           isShown: n
         } = t;
-        return C(F, n, e, H)
+        return j(F, n, e, H)
       }
     })
   })

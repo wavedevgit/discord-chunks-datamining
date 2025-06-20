@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 e.exports = {
   questsCollectibleReward: "questsCollectibleReward__16be0"
 }

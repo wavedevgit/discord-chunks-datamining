@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   Z: () => O
 });
@@ -24,8 +24,8 @@ var r = n(255367),
   v = n(510064);
 
 function O(e) {
-  var t, n, O, j;
-  let C, S, I, {
+  var t, n, O, C;
+  let j, S, I, {
       message: N,
       channel: T,
       compact: P
@@ -43,28 +43,28 @@ function O(e) {
     k = (0, a.wjy)((0, o.ZP)()),
     {
       chatWallpaper: D,
-      isUpdatingChatWallpaperFlag: L,
-      lastSetMessageId: M
+      isUpdatingChatWallpaperFlag: M,
+      lastSetMessageId: L
     } = (0, l.cj)([f.Z], () => ({
       chatWallpaper: f.Z.getWallpaperById(A),
       isUpdatingChatWallpaperFlag: f.Z.isUpdatingChatWallpaperFlagForChannel(T.id),
       lastSetMessageId: f.Z.getLastSetWallpaperMessageIdForChannel(T.id)
     })),
     U = (0, _.Z)(T.id),
-    F = M === N.id,
+    F = L === N.id,
     B = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
     G = (null == B ? void 0 : B.id) === N.author.id,
     H = (0, c.m)(y.p9.TIER_2),
     V = h.t(T);
   return (i.useEffect(() => {
     null == D && f.Z.shouldFetchWallpapers && g.k9()
-  }, [D]), null == A) ? null : (C = G ? x.intl.format(x.t.z847Tk, {
+  }, [D]), null == A) ? null : (j = G ? x.intl.format(x.t.z847Tk, {
     wallpaper_name: null != (n = null == D ? void 0 : D.label) ? n : x.intl.string(x.t["UQMV/P"])
   }) : x.intl.format(x.t["+lKndX"], {
     username: null == R ? void 0 : R.nick,
     wallpaper_name: null != (O = null == D ? void 0 : D.label) ? O : x.intl.string(x.t["UQMV/P"])
   }), w ? k || Z ? V && F ? S = x.intl.formatToPlainString(x.t.PzTpVV, {
-    wallpaperName: null != (j = null == D ? void 0 : D.label) ? j : x.intl.string(x.t["UQMV/P"])
+    wallpaperName: null != (C = null == D ? void 0 : D.label) ? C : x.intl.string(x.t["UQMV/P"])
   }) : G || H || !F || (S = x.intl.format(x.t.JwUhHh, {
     onClickNitro: () => {
       (0, u.uL)(E.Z5c.NITRO_HOME)
@@ -81,11 +81,11 @@ function O(e) {
         }
       })
     },
-    submitting: L,
+    submitting: M,
     children: x.intl.string(V ? x.t.o6850d : x.t["/ubFp6"])
   })), (0, r.jsx)(b.Z, {
     channel: T,
-    content: C,
+    content: j,
     subtitle: S,
     action: I,
     compact: P,

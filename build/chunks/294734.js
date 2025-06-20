@@ -1,4 +1,4 @@
-/** Chunk was on 36087 **/
+/** Chunk was on 21741 **/
 n.d(t, {
   Z: () => A
 });
@@ -23,15 +23,15 @@ var r = n(255367),
   x = n(594174),
   v = n(100604),
   O = n(694784),
-  j = n(39154),
-  C = n(245216),
+  C = n(39154),
+  j = n(245216),
   S = n(388032),
   I = n(752386);
 
 function N() {
   return (0, r.jsxs)("div", {
     className: I.headerContainer,
-    children: [(0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(j.Z, {
       size: "xs",
       className: I.headerIcon,
       color: s.Z.colors.TEXT_LOW_CONTRAST
@@ -77,7 +77,7 @@ function P(e) {
     message: n,
     snapshot: l,
     index: o
-  } = e, s = i.useMemo(() => (0, j.Z)(n, l), [n, l]), c = h.RS.useSetting(), u = h.NA.useSetting(), b = (0, a.e7)([_.Z], () => _.Z.isDeveloper), E = (0, d.A)((null != (t = s.editedTimestamp) ? t : s.timestamp).valueOf()), {
+  } = e, s = i.useMemo(() => (0, C.Z)(n, l), [n, l]), c = h.RS.useSetting(), u = h.NA.useSetting(), b = (0, a.e7)([_.Z], () => _.Z.isDeveloper), E = (0, d.A)((null != (t = s.editedTimestamp) ? t : s.timestamp).valueOf()), {
     content: y,
     hasSpoilerEmbeds: x
   } = (0, m.Z)(s, {
