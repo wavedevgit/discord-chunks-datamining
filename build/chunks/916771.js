@@ -1,50 +1,47 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
 var i = n(46973),
-  a = n(844168),
-  o = n(878001),
-  s = n(458725),
-  l = n(386146),
-  c = n(803647),
-  u = n(63063),
-  d = n(112560),
-  f = n(981631),
-  _ = n(388032);
-let p = n(66737);
+  a = n(878001),
+  o = n(458725),
+  s = n(386146),
+  l = n(803647),
+  c = n(63063),
+  u = n(112560),
+  d = n(981631),
+  f = n(388032);
 
-function h(e) {
+function _(e) {
   var t;
   let {
     stream: n,
-    width: h,
-    avError: m,
-    selected: g = !1,
-    noArt: E = !1
+    width: _,
+    avError: p,
+    selected: h = !1,
+    noArt: m = !1
   } = e, {
-    avErrorUIEnabled: b
-  } = (0, l.JN)({
+    avErrorUIEnabled: g
+  } = (0, s.JN)({
     location: "StreamWarning"
-  }), y = (0, a.C)("stream-failed"), O = null == (t = (0, s.hp)(null != m ? m : s.u.STREAM_FAILED_TO_START)) ? void 0 : t.errorCode;
-  return (0, r.jsx)(d.Z, {
-    artURL: y ? null : p,
-    header: _.intl.string(_.t.rSlOen),
-    size: (0, d.L)(h),
-    noArt: E,
-    selected: g,
-    description: _.intl.format(_.t.sXsgsL, {
-      helpUrl: u.Z.getArticleURL(f.BhN.STREAM_FAILED)
+  }), E = null == (t = (0, o.hp)(null != p ? p : o.u.STREAM_FAILED_TO_START)) ? void 0 : t.errorCode;
+  return (0, r.jsx)(u.Z, {
+    header: f.intl.string(f.t.rSlOen),
+    size: (0, u.L)(_),
+    noArt: m,
+    selected: h,
+    description: f.intl.format(f.t.sXsgsL, {
+      helpUrl: c.Z.getArticleURL(d.BhN.STREAM_FAILED)
     }),
-    errorCodeMessage: b ? _.intl.formatToPlainString(_.t["ejOT9/"], {
-      errorCode: O
+    errorCodeMessage: g ? f.intl.formatToPlainString(f.t["ejOT9/"], {
+      errorCode: E
     }) : void 0,
     onCTAClick: () => {
-      (0, o.w)(i.Yn.STREAM, n.ownerId), (0, c.Z)(n)
+      (0, a.w)(i.Yn.STREAM, n.ownerId), (0, l.Z)(n)
     },
-    callToAction: _.intl.string(_.t["4EGMWF"])
+    callToAction: f.intl.string(f.t["4EGMWF"])
   })
 }
