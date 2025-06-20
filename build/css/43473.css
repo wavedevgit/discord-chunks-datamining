@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 7e4e4a97d11ce999
+  Original File Name: dfb9e6e445a4dd6e
 **/
 .scroller__95bea {
     display: flex;
@@ -1309,12 +1309,16 @@
     flex: 1;
     flex-direction: column;
     gap: 24px;
+    margin-top: -4px;
     overflow: hidden;
+    padding: 4px 32px 32px;
     position: relative
 }
 
-.profileSection__9c3be {
-    padding: 0 32px
+@media (max-width:960px) {
+    .profileBody__9c3be {
+        padding: 4px 24px 24px
+    }
 }
 
 .profileOverlay__9c3be {
@@ -1334,14 +1338,6 @@
 
 .profileButtons__9c3be:empty {
     display: none
-}
-
-.profileScroller__9c3be {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-top: -4px;
-    padding: 4px 32px 32px
 }
 
 .profileRolesSection__9c3be {
@@ -1394,4 +1390,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=7e4e4a97d11ce999.css.map*/
+/*# sourceMappingURL=dfb9e6e445a4dd6e.css.map*/
