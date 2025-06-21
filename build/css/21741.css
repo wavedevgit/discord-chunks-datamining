@@ -1,6 +1,6 @@
 /**
   Module ID: 21741
-  Original File Name: d8278e7011f3e3b2
+  Original File Name: ef7e379b1c85fb37
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -9883,7 +9883,6 @@ html .progress__61462 {
 }
 
 .messageGroupWrapper__45690 {
-    background: var(--background-primary);
     background-color: var(--background-surface-higher);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
@@ -9897,7 +9896,7 @@ html .progress__61462 {
     user-select: none
 }
 
-.messageGroupWrapper__45690 .messageGroupCozy__45690 {
+.messagesPopout__45690 .messageGroupWrapper__45690 .messageGroupCozy__45690 {
     margin-left: -4px;
     padding-bottom: var(--space-16);
     padding-top: var(--space-16)
@@ -12687,4 +12686,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=d8278e7011f3e3b2.css.map*/
+/*# sourceMappingURL=ef7e379b1c85fb37.css.map*/
