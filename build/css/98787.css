@@ -1,6 +1,6 @@
 /**
   Module ID: 98787
-  Original File Name: 24f37deb68b2b73c
+  Original File Name: f258f17024b0cc17
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -6077,10 +6077,6 @@ div:has(>.positionLayer__4f4b6) {
     min-height: 28px
 }
 
-.theme-dark.custom-theme-background .container_e131a9 {
-    background: var(--bg-overlay-1,var(--background-secondary-alt))
-}
-
 .theme-dark .button_e131a9 .buttonColor_e131a9.buttonActive_e131a9,.theme-dark .button_e131a9.buttonColor_e131a9.buttonActive_e131a9,.theme-dark.custom-theme-background .button_e131a9 .buttonColor_e131a9.buttonActive_e131a9,.theme-dark.custom-theme-background .button_e131a9.buttonColor_e131a9.buttonActive_e131a9 {
     background-color: hsl(var(--green-400-hsl)/.1);
     border: 1px solid hsl(var(--green-400-hsl)/.1);
@@ -6093,10 +6089,6 @@ div:has(>.positionLayer__4f4b6) {
 
 .theme-dark .button_e131a9 .buttonColor_e131a9.buttonActive_e131a9:active,.theme-dark .button_e131a9.buttonColor_e131a9.buttonActive_e131a9:active,.theme-dark.custom-theme-background .button_e131a9 .buttonColor_e131a9.buttonActive_e131a9:active,.theme-dark.custom-theme-background .button_e131a9.buttonColor_e131a9.buttonActive_e131a9:active {
     background-color: hsl(var(--green-400-hsl)/.3)
-}
-
-.theme-light.custom-theme-background .container_e131a9 {
-    background: var(--bg-overlay-3,var(--background-secondary-alt))
 }
 
 .theme-light .button_e131a9 .buttonColor_e131a9.buttonActive_e131a9,.theme-light .button_e131a9.buttonColor_e131a9.buttonActive_e131a9,.theme-light.custom-theme-background .button_e131a9 .buttonColor_e131a9.buttonActive_e131a9,.theme-light.custom-theme-background .button_e131a9.buttonColor_e131a9.buttonActive_e131a9 {
@@ -6303,4 +6295,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=24f37deb68b2b73c.css.map*/
+/*# sourceMappingURL=f258f17024b0cc17.css.map*/

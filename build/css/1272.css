@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 8fdc1ff4b5a375cf
+  Original File Name: 02c75f4fdc55d0c5
 **/
 .container__74da2 {
     align-items: center;
@@ -4578,14 +4578,14 @@
 }
 
 @supports not ((grid-template-columns:subgrid) and (white-space-collapse:collapse)) {
-    .visual-refresh .sidebar_c48ade {
+    .sidebar_c48ade {
         display: flex;
         flex-direction: row
     }
 }
 
 @supports (grid-template-columns:subgrid) and (white-space-collapse:collapse) {
-    .visual-refresh .base_c48ade {
+    .base_c48ade {
         display: grid;
         grid-template-areas: "titleBar titleBar titleBar" "guildsList notice notice" "guildsList channelsList page";
         grid-template-columns: [start] -webkit-min-content [guildsEnd] -webkit-min-content [channelsEnd] 1fr [end];
@@ -4594,12 +4594,12 @@
         grid-template-rows: [top] var(--custom-app-top-bar-height) [titleBarEnd] min-content [noticeEnd] 1fr [end]
     }
 
-    .visual-refresh .base_c48ade[data-fullscreen=true] {
+    .base_c48ade[data-fullscreen=true] {
         grid-template-rows: [top] -webkit-min-content [titleBarEnd] -webkit-min-content [noticeEnd] 1fr [end];
         grid-template-rows: [top] min-content [titleBarEnd] min-content [noticeEnd] 1fr [end]
     }
 
-    .visual-refresh .content_c48ade {
+    .content_c48ade {
         display: grid;
         grid-column: start/end;
         grid-row: titleBarEnd/end;
@@ -4607,12 +4607,12 @@
         grid-template-rows: subgrid
     }
 
-    .visual-refresh .page_c48ade {
+    .page_c48ade {
         grid-area: page;
         overflow: auto
     }
 
-    .visual-refresh .sidebar_c48ade {
+    .sidebar_c48ade {
         display: grid;
         grid-column: start/channelsEnd;
         grid-row: titleBarEnd/end;
@@ -4620,7 +4620,7 @@
         grid-template-rows: subgrid
     }
 
-    .visual-refresh .sidebarList_c48ade {
+    .sidebarList_c48ade {
         grid-area: channelsList
     }
 }&.custom-theme-background .sidebar_c48ade:after {
@@ -8457,4 +8457,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=8fdc1ff4b5a375cf.css.map*/
+/*# sourceMappingURL=02c75f4fdc55d0c5.css.map*/
