@@ -220,7 +220,8 @@ function R(e) {
             className: b.iconButton,
             children: (0, r.jsx)(u.i, {
               size: "xs",
-              colorClass: b.iconWithHover
+              colorClass: b.iconWithHover,
+              className: b.icon
             })
           }))
         }), U && (0, r.jsx)(f.ua7, {
@@ -232,7 +233,8 @@ function R(e) {
             className: b.iconButton,
             children: (0, r.jsx)(d.X, {
               size: "xs",
-              colorClass: b.iconWithHover
+              colorClass: b.iconWithHover,
+              className: b.icon
             })
           }))
         })]
