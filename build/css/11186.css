@@ -1,6 +1,6 @@
 /**
   Module ID: 11186
-  Original File Name: 1471ff45bd3e79cd
+  Original File Name: b2fb7fb63d892e3c
 **/
 .partnerBranding__83420 {
     align-items: center;
@@ -362,15 +362,7 @@
     margin-top: 4px
 }
 
-.theme-light .root__2055a {
-    background: var(--background-tertiary)
-}
-
-.theme-dark .root__2055a {
-    background: var(--background-secondary)
-}
-
-.visual-refresh .root__2055a {
+.root__2055a {
     background-color: var(--background-surface-high)
 }
 
@@ -619,14 +611,11 @@
 
 .questsCard__72a00 {
     border-radius: 8px;
+    box-shadow: var(--shadow-low);
     max-width: 660px;
     min-width: 280px;
     overflow: hidden;
     width: 100%
-}
-
-.visual-refresh .questsCard__72a00 {
-    box-shadow: var(--shadow-low)
 }
 
 .questsCard__72a00+.questsCard__72a00 {
@@ -849,4 +838,4 @@
     margin-top: 0
 }
 
-/*# sourceMappingURL=1471ff45bd3e79cd.css.map*/
+/*# sourceMappingURL=b2fb7fb63d892e3c.css.map*/

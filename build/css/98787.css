@@ -1,6 +1,6 @@
 /**
   Module ID: 98787
-  Original File Name: f258f17024b0cc17
+  Original File Name: 3f75d03651d05352
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -803,6 +803,7 @@
 
 .container_ac6cb0 {
     background: none!important;
+    border: none;
     box-shadow: none!important;
     height: 365px;
     width: 570px
@@ -816,9 +817,10 @@
 
 .quickswitcher_ac6cb0 {
     align-items: stretch;
-    background-color: var(--background-secondary);
+    background-color: var(--background-surface-high);
+    border: 1px solid var(--border-normal);
     border-radius: 8px;
-    box-shadow: 0 2px 10px var(--opacity-black-20),0 0 0 1px #1c242b99;
+    box-shadow: none;
     color: var(--text-normal);
     display: flex;
     flex-direction: column;
@@ -837,8 +839,8 @@
 
 .input_ac6cb0 {
     background-color: var(--input-background);
-    border: none;
-    border-radius: 5px;
+    border: 1px solid var(--input-border);
+    border-radius: var(--radius-sm);
     color: var(--text-normal);
     display: block;
     flex: 0 0 auto;
@@ -866,7 +868,7 @@
 }
 
 .scroller_ac6cb0 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-surface-high);
     margin-right: -17px;
     margin-top: 16px;
     max-height: 236px;
@@ -902,7 +904,7 @@
 .emptyStateCTA_ac6cb0 {
     font-size: 14px;
     line-height: 16px;
-    opacity: .6
+    opacity: 1
 }
 
 .emptyStateCTA_ac6cb0:hover {
@@ -916,29 +918,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
-}
-
-.visual-refresh .container_ac6cb0 {
-    border: none
-}
-
-.visual-refresh .quickswitcher_ac6cb0 {
-    background-color: var(--background-surface-high);
-    border: 1px solid var(--border-normal);
-    box-shadow: none
-}
-
-.visual-refresh .scroller_ac6cb0 {
-    background-color: var(--background-surface-high)
-}
-
-.visual-refresh .emptyStateCTA_ac6cb0 {
-    opacity: 1
-}
-
-.visual-refresh .input_ac6cb0 {
-    border: 1px solid var(--input-border);
-    border-radius: var(--radius-sm)
 }
 
 .enable-forced-colors .input_ac6cb0 {
@@ -5849,7 +5828,7 @@ div:has(>.positionLayer__4f4b6) {
     align-items: center;
     display: flex;
     overflow: hidden;
-    padding-bottom: 2px;
+    padding-bottom: 0;
     text-overflow: ellipsis;
     white-space: nowrap
 }
@@ -5859,7 +5838,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .rtcConnectionStatusConnected__06d62 {
-    color: var(--text-positive)
+    color: var(--text-feedback-positive)
 }
 
 .rtcConnectionStatusConnecting__06d62 {
@@ -5886,26 +5865,18 @@ div:has(>.positionLayer__4f4b6) {
     overflow: hidden
 }
 
-.visual-refresh .rtcConnectionStatusWrapper__06d62 {
+.rtcConnectionStatusWrapper__06d62 {
     display: flex;
     flex-direction: column;
     padding-bottom: 0
 }
 
-.visual-refresh .rtcConnectionStatusConnected__06d62 {
-    color: var(--text-feedback-positive)
-}
-
-.visual-refresh .rtcConnectionStatus__06d62 {
-    padding-bottom: 0
-}
-
-.visual-refresh.align-chat-input .rtcConnectionStatusLabel__06d62 {
+.align-chat-input .rtcConnectionStatusLabel__06d62 {
     height: 20px;
     margin-top: -1px
 }
 
-.visual-refresh.align-chat-input .rtcConnectionStatus__06d62 {
+.align-chat-input .rtcConnectionStatus__06d62 {
     height: 32px
 }
 
@@ -6295,4 +6266,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=f258f17024b0cc17.css.map*/
+/*# sourceMappingURL=3f75d03651d05352.css.map*/

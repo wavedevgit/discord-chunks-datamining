@@ -264,8 +264,8 @@ let N = e => {
       subscriptionsRequired: t
     } = e;
     return (0, l.jsxs)(l.Fragment, {
-      children: [(0, l.jsx)("div", {
-        className: j.tierRequirement,
+      children: [(0, l.jsx)(u.Text, {
+        variant: "text-md/normal",
         children: b.intl.format(b.t.t2Wbo6, {
           required: t
         })

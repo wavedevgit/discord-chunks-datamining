@@ -1,22 +1,15 @@
 /**
   Module ID: 86653
-  Original File Name: c8d95ecdd1153d0f
+  Original File Name: 0930fce1db32965b
 **/
 .root__2a5c7 {
     background: var(--black);
+    border: 1px solid var(--border-normal);
     border-radius: var(--radius-md);
     height: 660px;
     overflow: hidden;
     position: relative;
     width: 680px
-}
-
-.visual-refresh .root__2a5c7 {
-    border: 1px solid var(--border-normal)
-}
-
-.visual-refresh .featureCard__2a5c7 {
-    background: var(--background-base-lowest)
 }
 
 .heroAsset__2a5c7 {
@@ -121,7 +114,7 @@
 .featureCard__2a5c7 {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background: hsl(var(--primary-400-hsl)/.08);
+    background: var(--background-base-lowest);
     border: 1px solid var(--border-subtle);
     border-radius: 20px;
     box-shadow: 0 4px 42px 0 hsl(var(--black-hsl)/.4);
@@ -187,4 +180,4 @@
     color: var(--black-500)
 }
 
-/*# sourceMappingURL=c8d95ecdd1153d0f.css.map*/
+/*# sourceMappingURL=0930fce1db32965b.css.map*/

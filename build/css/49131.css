@@ -1,7 +1,11 @@
 /**
   Module ID: 49131
-  Original File Name: f38a8a162049484d
+  Original File Name: b0da9feb34b78223
 **/
+.container_fc958f {
+    padding: 0
+}
+
 .footer_fc958f {
     align-items: center;
     background-color: var(--background-surface-highest);
@@ -17,10 +21,6 @@
     align-items: center;
     display: flex;
     gap: var(--spacing-4)
-}
-
-.container_fc958f,.visual-refresh .container_fc958f {
-    padding: 0
 }
 
 .body_fc958f {
@@ -2253,4 +2253,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=f38a8a162049484d.css.map*/
+/*# sourceMappingURL=b0da9feb34b78223.css.map*/

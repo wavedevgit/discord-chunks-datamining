@@ -1,6 +1,6 @@
 /**
   Module ID: 48192
-  Original File Name: 1aeed664f004bd16
+  Original File Name: cb5670e390c47237
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -1533,6 +1533,8 @@
     border-radius: 4px;
     flex-shrink: 0;
     height: 207px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 24px;
     overflow: hidden;
     position: relative;
@@ -1549,9 +1551,4 @@
     width: 440px
 }
 
-:where(.visual-refresh) .cameraPreview__19236 {
-    margin-left: auto;
-    margin-right: auto
-}
-
-/*# sourceMappingURL=1aeed664f004bd16.css.map*/
+/*# sourceMappingURL=cb5670e390c47237.css.map*/

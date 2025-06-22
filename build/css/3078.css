@@ -1,6 +1,6 @@
 /**
   Module ID: 3078
-  Original File Name: 903c383d9cbd7cac
+  Original File Name: a9d70f3dc5bea741
 **/
 .container_ea1e0b {
     padding-top: 20px
@@ -45,7 +45,7 @@
 }
 
 .icon_ea1e0b {
-    background-color: var(--modal-background);
+    background-color: var(--background-surface-high);
     border-radius: var(--radius-round);
     bottom: -8px;
     padding: var(--spacing-4);
@@ -53,12 +53,4 @@
     right: -8px
 }
 
-html:not(.visual-refresh) .container_ea1e0b {
-    padding: var(--spacing-16)
-}
-
-.visual-refresh .icon_ea1e0b {
-    background-color: var(--background-surface-high)
-}
-
-/*# sourceMappingURL=903c383d9cbd7cac.css.map*/
+/*# sourceMappingURL=a9d70f3dc5bea741.css.map*/

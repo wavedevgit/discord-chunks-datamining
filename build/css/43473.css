@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: eece83d49f4a15d4
+  Original File Name: a7484a81a21f0860
 **/
 .scroller__95bea {
     display: flex;
@@ -116,6 +116,8 @@
 
 .note_fcb628 {
     margin: -4px
+}&:focus,&:focus:hover {
+    border-color: var(--input-focused-border)
 }
 
 .note_fcb628 textarea {
@@ -149,10 +151,6 @@
 
 .note_fcb628 textarea:focus::placeholder {
     color: transparent
-}
-
-.visual-refresh .note_fcb628 textarea:focus,.visual-refresh .note_fcb628 textarea:focus:hover {
-    border-color: var(--input-focused-border)
 }
 
 .scroller_ac477d {
@@ -564,11 +562,6 @@
     width: unset
 }
 
-.visual-refresh .root__24502 {
-    border: none;
-    border-radius: var(--radius-sm)
-}
-
 .headerInner__24502 {
     margin-right: 16px;
     position: relative
@@ -644,6 +637,7 @@
 .row__19fd1 {
     align-items: center;
     border-bottom: 1px solid var(--background-modifier-accent);
+    border-color: var(--border-faint);
     display: flex;
     gap: var(--spacing-16);
     margin: 0 var(--spacing-16);
@@ -667,10 +661,6 @@
     left: calc(var(--spacing-16) + var(--spacing-24));
     position: absolute;
     right: calc(var(--spacing-16)*-1)
-}
-
-.visual-refresh & .safetyRow__19fd1 {
-    border: none
 }
 
 .row__19fd1:last-child {
@@ -732,11 +722,7 @@
     padding: 0
 }
 
-.visual-refresh .row__19fd1 {
-    border-color: var(--border-faint)
-}
-
-.visual-refresh .content__19fd1 {
+.content__19fd1 {
     border: 1px solid var(--border-faint)
 }
 
@@ -757,11 +743,6 @@
     overflow: hidden;
     position: relative;
     width: unset
-}
-
-.visual-refresh .root_fdf9c0 {
-    border: none;
-    border-radius: var(--radius-lg)
 }
 
 .background_fdf9c0 {
@@ -1189,12 +1170,12 @@
     padding: 4px
 }
 
-.visual-refresh .tabBarItem__37bfc {
+.tabBarItem__37bfc {
     --selected-tab-item-color: var(--text-brand);
     color: var(--text-secondary)
 }
 
-.visual-refresh .tabBarItem__37bfc:hover {
+.tabBarItem__37bfc:hover {
     color: var(--text-primary)
 }
 
@@ -1218,12 +1199,6 @@
     overflow: hidden;
     position: relative;
     width: 100%
-}
-
-.visual-refresh .root__9c3be {
-    background: none;
-    border: none;
-    border-radius: var(--radius-lg)
 }
 
 .toast__9c3be {
@@ -1343,6 +1318,8 @@
 
 .profileAppConnections__9c3be {
     margin-top: 4px
+}&:focus,&:focus:hover {
+    border-color: var(--input-focused-border)
 }
 
 .profileNote__9c3be {
@@ -1382,8 +1359,4 @@
     color: transparent
 }
 
-.visual-refresh .profileNote__9c3be textarea:focus,.visual-refresh .profileNote__9c3be textarea:focus:hover {
-    border-color: var(--input-focused-border)
-}
-
-/*# sourceMappingURL=eece83d49f4a15d4.css.map*/
+/*# sourceMappingURL=a7484a81a21f0860.css.map*/

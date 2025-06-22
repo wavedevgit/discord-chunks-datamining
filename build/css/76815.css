@@ -1,6 +1,6 @@
 /**
   Module ID: 76815
-  Original File Name: c299af8f77556cff
+  Original File Name: 7f22485f5ea70d39
 **/
 .body__7ce16 {
     padding-top: var(--spacing-16)
@@ -73,13 +73,4 @@
     color: var(--interactive-normal)
 }
 
-.visual-refresh .body__7ce16 {
-    padding-top: var(--spacing-16)
-}
-
-html:not(.visual-refresh) .body__7ce16 {
-    padding-bottom: var(--spacing-16);
-    padding-top: var(--spacing-16)
-}
-
-/*# sourceMappingURL=c299af8f77556cff.css.map*/
+/*# sourceMappingURL=7f22485f5ea70d39.css.map*/

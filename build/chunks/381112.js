@@ -1,10 +1,10 @@
 /** Chunk was on 49131 **/
 "use strict";
 e.exports = {
+  container: "container_fc958f",
   footer: "footer_fc958f",
   footerChannelTitle: "footerChannelTitle_fc958f",
   footerMessageSummary: "footerMessageSummary_fc958f",
-  container: "container_fc958f",
   body: "body_fc958f",
   contentAndMedia: "contentAndMedia_fc958f",
   bodyMedia: "bodyMedia_fc958f",

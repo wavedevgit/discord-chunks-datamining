@@ -1,6 +1,6 @@
 /**
   Module ID: 70675
-  Original File Name: 46fdf8da7da0cd4d
+  Original File Name: fe5e7cf5cf0e56a3
 **/
 .labelWrapper_abe771 {
     align-items: center;
@@ -49,7 +49,7 @@
 }
 
 .menuItem__3751b:hover .channelName__3751b,.menuItem__3751b:hover .subtext__3751b {
-    color: var(--white)
+    color: var(--header-primary)
 }
 
 .label__3751b,.subtext__3751b {
@@ -67,14 +67,6 @@
     color: var(--text-secondary)
 }
 
-:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b {
-    color: var(--header-primary)
-}
-
-:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
-    color: var(--header-primary)
-}
-
 .roleRow_b82947 {
     align-items: center;
     display: flex;
@@ -85,4 +77,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=46fdf8da7da0cd4d.css.map*/
+/*# sourceMappingURL=fe5e7cf5cf0e56a3.css.map*/

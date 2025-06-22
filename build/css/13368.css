@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 07d7e13944003162
+  Original File Name: 1b5f226ce5e0444e
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -1911,7 +1911,7 @@
     align-items: center;
     display: flex;
     overflow: hidden;
-    padding-bottom: 2px;
+    padding-bottom: 0;
     text-overflow: ellipsis;
     white-space: nowrap
 }
@@ -1921,7 +1921,7 @@
 }
 
 .rtcConnectionStatusConnected__06d62 {
-    color: var(--text-positive)
+    color: var(--text-feedback-positive)
 }
 
 .rtcConnectionStatusConnecting__06d62 {
@@ -1948,26 +1948,18 @@
     overflow: hidden
 }
 
-.visual-refresh .rtcConnectionStatusWrapper__06d62 {
+.rtcConnectionStatusWrapper__06d62 {
     display: flex;
     flex-direction: column;
     padding-bottom: 0
 }
 
-.visual-refresh .rtcConnectionStatusConnected__06d62 {
-    color: var(--text-feedback-positive)
-}
-
-.visual-refresh .rtcConnectionStatus__06d62 {
-    padding-bottom: 0
-}
-
-.visual-refresh.align-chat-input .rtcConnectionStatusLabel__06d62 {
+.align-chat-input .rtcConnectionStatusLabel__06d62 {
     height: 20px;
     margin-top: -1px
 }
 
-.visual-refresh.align-chat-input .rtcConnectionStatus__06d62 {
+.align-chat-input .rtcConnectionStatus__06d62 {
     height: 32px
 }
 
@@ -3174,4 +3166,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=07d7e13944003162.css.map*/
+/*# sourceMappingURL=1b5f226ce5e0444e.css.map*/

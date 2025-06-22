@@ -1,6 +1,6 @@
 /**
   Module ID: 4266
-  Original File Name: 878131fa9e80f14a
+  Original File Name: 06701460418ac309
 **/
 .modalRoot__3297f {
     background-color: var(--background-secondary);
@@ -9,7 +9,7 @@
 
 .modalHeader__3297f {
     gap: 24px;
-    overflow: visible;
+    overflow: hidden;
     padding-bottom: 12px
 }
 
@@ -23,15 +23,6 @@
 }
 
 .iconFrame__3297f {
-    height: 60px;
-    transform: translateY(-70px)
-}
-
-.visual-refresh .modalHeader__3297f {
-    overflow: hidden
-}
-
-.visual-refresh .iconFrame__3297f {
     height: auto;
     transform: translateY(0)
 }
@@ -78,4 +69,4 @@
     background-color: var(--background-secondary-alt)
 }
 
-/*# sourceMappingURL=878131fa9e80f14a.css.map*/
+/*# sourceMappingURL=06701460418ac309.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 59385
-  Original File Name: 62508f286b9b4bf0
+  Original File Name: 0cb106a5a6fd0686
 **/
 .feedback__4c857 {
     align-items: center;
@@ -19,7 +19,7 @@
 .buttonsBackground__4c857 {
     align-items: center;
     background-color: var(--background-secondary);
-    border: 1px solid transparent;
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-round);
     display: flex;
     padding: 6px
@@ -53,14 +53,13 @@
     fill: var(--interactive-hover)
 }
 
-.visual-refresh .buttonsBackground__4c857 {
-    border: 1px solid var(--border-subtle)
-}
-
 .modalHeader__3fee9 {
     background: linear-gradient(270deg,rgba(88,101,242,0) 0,var(--brand-500) 70.8%),url(/assets/ac6a68103ec2c223.jpg);
     background-size: cover;
-    padding: var(--spacing-32)
+    border-top-left-radius: var(--radius-md);
+    border-top-right-radius: var(--radius-md);
+    padding: var(--spacing-32);
+    padding-bottom: var(--spacing-24)
 }
 
 .modalHeaderText__3fee9 {
@@ -75,8 +74,10 @@
 }
 
 .modalContent__3fee9 {
-    gap: var(--spacing-32);
-    padding: var(--spacing-32)
+    gap: var(--spacing-24);
+    padding: var(--spacing-32);
+    padding-bottom: var(--spacing-16);
+    padding-top: var(--spacing-24)
 }
 
 .closeButton__3fee9 {
@@ -152,16 +153,4 @@
     min-width: 32px
 }
 
-.visual-refresh .modalHeader__3fee9 {
-    border-top-left-radius: var(--radius-md);
-    border-top-right-radius: var(--radius-md);
-    padding-bottom: var(--spacing-24)
-}
-
-.visual-refresh .modalContent__3fee9 {
-    gap: var(--spacing-24);
-    padding-bottom: var(--spacing-16);
-    padding-top: var(--spacing-24)
-}
-
-/*# sourceMappingURL=62508f286b9b4bf0.css.map*/
+/*# sourceMappingURL=0cb106a5a6fd0686.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 59458
-  Original File Name: 4176a05d5639cf33
+  Original File Name: 6f3651400918cd14
 **/
 @use postcss-pxtorem;
 
@@ -1729,20 +1729,17 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-12);
-    margin-top: var(--spacing-40)
-}
-
-.visual-refresh .classificationEvidenceContainer_a2ffaf {
     margin-top: var(--spacing-32)
 }
 
 .classificationContainer_a48d6b {
     display: flex;
     flex-direction: column;
-    margin: auto var(--spacing-40)
+    margin: auto var(--spacing-12)
 }
 
 .classificationHeader_a48d6b {
+    padding-top: var(--space-16);
     text-align: center
 }
 
@@ -1837,25 +1834,12 @@
     margin-left: auto
 }
 
-.visual-refresh .classificationHeader_a48d6b {
-    padding-top: var(--space-16)
-}
-
-.visual-refresh .classificationActionExplanationContainer_a48d6b,.visual-refresh .classificationActionsTakenContainer_a48d6b {
+.classificationActionExplanationContainer_a48d6b,.classificationActionsTakenContainer_a48d6b {
     margin-top: var(--spacing-24)
 }
 
-.visual-refresh .classificationContainer_a48d6b {
-    display: flex;
-    flex-direction: column;
-    margin: auto var(--spacing-12)
-}
-
-html:not(.visual-refresh) .classificationContainer_a48d6b {
-    width: 460px
-}
-
 .image__859a7 {
+    display: none;
     filter: var(--shadow-ledge-filter);
     margin: -40px auto 12px;
     width: 141px
@@ -1885,12 +1869,8 @@ html:not(.visual-refresh) .classificationContainer_a48d6b {
     z-index: 999
 }
 
-.visual-refresh .image__859a7 {
-    display: none
-}
-
-.visual-refresh .modalHeader__859a7 {
+.modalHeader__859a7 {
     margin: 0 var(--spacing-40)
 }
 
-/*# sourceMappingURL=4176a05d5639cf33.css.map*/
+/*# sourceMappingURL=6f3651400918cd14.css.map*/

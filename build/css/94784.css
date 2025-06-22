@@ -1,6 +1,6 @@
 /**
   Module ID: 94784
-  Original File Name: 2deea055894d1b8e
+  Original File Name: 2af32cbc66c2e00a
 **/
 .clickable_a3e8db {
     box-sizing: border-box;
@@ -72,52 +72,16 @@
     visibility: hidden
 }
 
-.visual-refresh .container_a3e8db.default_a3e8db {
+.container_a3e8db.default_a3e8db {
     background-color: var(--background-mod-subtle)
 }
 
-.visual-refresh .container_a3e8db.highlighted_a3e8db {
+.container_a3e8db.highlighted_a3e8db,.container_a3e8db.selected_a3e8db {
     background-color: var(--background-mod-normal)
 }
 
-.visual-refresh .container_a3e8db.selected_a3e8db {
-    background-color: var(--background-mod-normal)
-}
-
-.visual-refresh .inModalOverlay_a3e8db.container_a3e8db.default_a3e8db {
+.inModalOverlay_a3e8db.container_a3e8db.default_a3e8db,.inModalOverlay_a3e8db.container_a3e8db.highlighted_a3e8db,.inModalOverlay_a3e8db.container_a3e8db.selected_a3e8db {
     background-color: var(--modal-background)
-}
-
-.visual-refresh .inModalOverlay_a3e8db.container_a3e8db.highlighted_a3e8db {
-    background-color: var(--modal-background)
-}
-
-.visual-refresh .inModalOverlay_a3e8db.container_a3e8db.selected_a3e8db {
-    background-color: var(--modal-background)
-}
-
-html:not(.visual-refresh).theme-light .container_a3e8db.default_a3e8db {
-    background-color: var(--primary-100)
-}
-
-html:not(.visual-refresh).theme-light .container_a3e8db.highlighted_a3e8db {
-    background-color: var(--primary-130)
-}
-
-html:not(.visual-refresh).theme-light .container_a3e8db.selected_a3e8db {
-    background-color: var(--primary-130)
-}
-
-html:not(.visual-refresh).theme-dark .container_a3e8db.default_a3e8db {
-    background: var(--primary-700)
-}
-
-html:not(.visual-refresh).theme-dark .container_a3e8db.highlighted_a3e8db {
-    background: var(--primary-630)
-}
-
-html:not(.visual-refresh).theme-dark .container_a3e8db.selected_a3e8db {
-    background: var(--primary-630)
 }
 
 .notificationBadge_a3e8db {
@@ -302,4 +266,4 @@ html:not(.visual-refresh).theme-dark .container_a3e8db.selected_a3e8db {
     top: 2.5px
 }
 
-/*# sourceMappingURL=2deea055894d1b8e.css.map*/
+/*# sourceMappingURL=2af32cbc66c2e00a.css.map*/

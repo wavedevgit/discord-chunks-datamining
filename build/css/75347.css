@@ -1,6 +1,6 @@
 /**
   Module ID: 75347
-  Original File Name: 185153ccbb62cb52
+  Original File Name: 7cb11975db0f3914
 **/
 .avatarBackground_eb2508 {
     align-items: center;
@@ -24,14 +24,14 @@
 }
 
 .container_d878e7 {
-    background-color: var(--background-secondary);
     border: none;
     display: flex;
     flex-direction: row;
     gap: var(--spacing-16);
     margin-bottom: var(--spacing-32);
     padding-top: var(--spacing-8);
-    width: 100%
+    width: 100%;
+    --__card-accent-color: transparent
 }
 
 .profile_d878e7 {
@@ -60,7 +60,7 @@
 }
 
 .line_d878e7 {
-    background-color: var(--background-secondary);
+    background-color: var(--bg-mod-strong);
     height: 4px;
     position: absolute;
     top: var(--spacing-12);
@@ -123,23 +123,10 @@
 }
 
 .marker_d878e7 .empty_d878e7 {
-    background-color: var(--background-secondary);
+    background-color: var(--bg-mod-strong);
     border-radius: 50%;
     height: 16px;
     width: 16px
-}
-
-.visual-refresh .container_d878e7 {
-    background-color: transparent;
-    border: none
-}
-
-.visual-refresh .line_d878e7 {
-    background-color: var(--bg-mod-strong)
-}
-
-.visual-refresh .marker_d878e7 .empty_d878e7 {
-    background-color: var(--bg-mod-strong)
 }
 
 .dropdown_edf232 {
@@ -350,4 +337,4 @@ div.nagbar_d74ef8 {
     display: flex
 }
 
-/*# sourceMappingURL=185153ccbb62cb52.css.map*/
+/*# sourceMappingURL=7cb11975db0f3914.css.map*/

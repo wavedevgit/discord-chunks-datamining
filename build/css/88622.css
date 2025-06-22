@@ -1,6 +1,6 @@
 /**
   Module ID: 88622
-  Original File Name: 74bac283b39c5101
+  Original File Name: 45c737089c4fd745
 **/
 .wrapper_b76891 {
     align-items: center;
@@ -469,13 +469,9 @@
 }
 
 .utilButtonIcon_b5b7aa {
-    color: var(--interactive-normal);
+    color: var(--interactive-active);
     height: 16px;
     width: 16px
-}
-
-.visual-refresh .utilButtonIcon_b5b7aa {
-    color: var(--interactive-active)
 }
 
 .partnerBranding_b5b7aa {
@@ -653,14 +649,6 @@
 
 .button__960ef {
     flex: 1
-}&:not(.visual-refresh) .button__960ef {
-    align-items: center;
-    border-radius: 4px;
-    box-sizing: border-box;
-    display: flex;
-    height: 18px;
-    justify-content: center;
-    padding: 10px 16px
 }
 
 .buttonTooltip__960ef {
@@ -703,17 +691,13 @@
 
 .container__956c6 {
     align-items: flex-start;
-    background-color: var(--background-secondary);
+    background-color: var(--background-surface-high);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     transition: max-height .2s ease-out,height .2s ease-in;
     width: 100%;
     z-index: 2
-}
-
-.visual-refresh .container__956c6 {
-    background-color: var(--background-surface-high)
 }
 
 .reduce-motion .container__956c6 {
@@ -888,9 +872,10 @@
 
 .container_cec934 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-surface-high);
     border: 1px solid var(--border-faint);
     border-radius: 10px;
+    box-shadow: var(--shadow-low);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -898,12 +883,6 @@
     max-height: 336px;
     min-width: 336px;
     width: 100%
-}
-
-.visual-refresh .container_cec934 {
-    background-color: var(--background-surface-high);
-    border: 1px solid var(--border-faint);
-    box-shadow: var(--shadow-low)
 }
 
 .wrapper_a86e4f {
@@ -1676,29 +1655,23 @@
 }
 
 .heroAssetWrapper__636a2 {
-    border-radius: 12px 12px 0 0;
-    height: 100%;
-    left: 0;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
     overflow: hidden;
-    position: absolute;
     right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 1
+    top: 0
 }
 
-.visual-refresh .heroAssetWrapper__636a2 {
-    border-radius: var(--radius-sm) var(--radius-sm) 0 0
+.heroAssetWrapper__636a2,.legibilityGradient__636a2 {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1
 }
 
 .legibilityGradient__636a2 {
     background-image: linear-gradient(180deg,transparent,#fff);
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 1
+    bottom: 0
 }
 
 .legibilityGradientDark__636a2 {
@@ -1706,15 +1679,13 @@
 }
 
 .heroAsset__636a2 {
-    height: 270px;
     object-fit: cover;
-    position: absolute;
-    width: 240px;
     z-index: 0
 }
 
-.visual-refresh .heroAsset__636a2 {
+.heroAsset__636a2,.heroAssetTint__636a2 {
     height: 100%;
+    position: absolute;
     width: 100%
 }
 
@@ -1723,15 +1694,12 @@
     z-index: 2
 }
 
-.heroAssetDarken__636a2,.heroAssetTint__636a2 {
-    height: 100%;
-    position: absolute;
-    width: 100%
-}
-
 .heroAssetDarken__636a2 {
     background-color: var(--primary-760);
+    height: 100%;
     opacity: 1;
+    position: absolute;
+    width: 100%;
     z-index: 1
 }
 
@@ -1919,7 +1887,7 @@
 }
 
 .contentCollapsedBackgroundWrapper__636a2 {
-    border-radius: 12px 12px 0 0;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
     height: 100%;
     left: 0;
     overflow: hidden;
@@ -1941,10 +1909,6 @@
     position: absolute;
     right: 0;
     top: 0
-}
-
-.visual-refresh .contentCollapsedBackgroundWrapper__636a2 {
-    border-radius: var(--radius-sm) var(--radius-sm) 0 0
 }
 
 .contentCollapsedBackground__636a2 {
@@ -2285,15 +2249,12 @@
 
 .wrapper__0d616 {
     background: var(--background-secondary);
+    border-top-left-radius: var(--radius-sm);
+    border-top-right-radius: var(--radius-sm);
     isolation: isolate;
     pointer-events: all;
     position: relative;
     z-index: 0
-}
-
-.visual-refresh .wrapper__0d616 {
-    border-top-left-radius: var(--radius-sm);
-    border-top-right-radius: var(--radius-sm)
 }
 
 .theme-dark .wrapper__0d616 {
@@ -2605,4 +2566,4 @@
     padding-top: 10px
 }
 
-/*# sourceMappingURL=74bac283b39c5101.css.map*/
+/*# sourceMappingURL=45c737089c4fd745.css.map*/

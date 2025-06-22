@@ -1,15 +1,12 @@
 /**
   Module ID: 65652
-  Original File Name: 53ecacca8f80a5db
+  Original File Name: 300b7d20a360fc44
 **/
 .modalContent__2379f {
     margin-bottom: var(--spacing-16);
     min-height: -webkit-min-content;
     min-height: -moz-min-content;
-    min-height: min-content
-}
-
-.visual-refresh .modalContent__2379f {
+    min-height: min-content;
     padding-top: var(--spacing-16)
 }
 
@@ -29,12 +26,8 @@
     z-index: 1000
 }
 
-.visual-refresh .modalContent__3847f {
+.modalContent__3847f {
     padding-top: var(--spacing-16)
-}
-
-html:not(.visual-refresh) .modalContent__3847f {
-    margin-bottom: 16px
 }
 
 .title__3847f {
@@ -199,4 +192,4 @@ html:not(.visual-refresh) .modalContent__3847f {
     }
 }
 
-/*# sourceMappingURL=53ecacca8f80a5db.css.map*/
+/*# sourceMappingURL=300b7d20a360fc44.css.map*/

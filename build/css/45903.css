@@ -1,6 +1,6 @@
 /**
   Module ID: 45903
-  Original File Name: baf48fec1a535711
+  Original File Name: f9a0de6966270a60
 **/
 .label__33095 {
     gap: var(--spacing-8)
@@ -81,7 +81,7 @@
 }
 
 .menuItem__3751b:hover .channelName__3751b,.menuItem__3751b:hover .subtext__3751b {
-    color: var(--white)
+    color: var(--header-primary)
 }
 
 .label__3751b,.subtext__3751b {
@@ -99,14 +99,6 @@
     color: var(--text-secondary)
 }
 
-:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b {
-    color: var(--header-primary)
-}
-
-:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
-    color: var(--header-primary)
-}
-
 .videoPaused_afb275 {
     align-items: center;
     display: flex;
@@ -117,4 +109,4 @@
     margin-right: 4px
 }
 
-/*# sourceMappingURL=baf48fec1a535711.css.map*/
+/*# sourceMappingURL=f9a0de6966270a60.css.map*/

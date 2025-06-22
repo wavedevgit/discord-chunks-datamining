@@ -1,6 +1,6 @@
 /**
   Module ID: 74800
-  Original File Name: c55537ed9cb1dec2
+  Original File Name: 3fa2d1566258e728
 **/
 .labelWrapper_abe771 {
     align-items: center;
@@ -49,7 +49,7 @@
 }
 
 .menuItem__3751b:hover .channelName__3751b,.menuItem__3751b:hover .subtext__3751b {
-    color: var(--white)
+    color: var(--header-primary)
 }
 
 .label__3751b,.subtext__3751b {
@@ -65,14 +65,6 @@
 
 .channelName__3751b {
     color: var(--text-secondary)
-}
-
-:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b {
-    color: var(--header-primary)
-}
-
-:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
-    color: var(--header-primary)
 }
 
 .videoPaused_afb275 {
@@ -95,4 +87,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=c55537ed9cb1dec2.css.map*/
+/*# sourceMappingURL=3fa2d1566258e728.css.map*/

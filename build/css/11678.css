@@ -1,6 +1,6 @@
 /**
   Module ID: 11678
-  Original File Name: 6a49e5f68e23feb7
+  Original File Name: d5a2121330f196ca
 **/
 .scroller__95bea {
     display: flex;
@@ -116,6 +116,8 @@
 
 .note_fcb628 {
     margin: -4px
+}&:focus,&:focus:hover {
+    border-color: var(--input-focused-border)
 }
 
 .note_fcb628 textarea {
@@ -149,10 +151,6 @@
 
 .note_fcb628 textarea:focus::placeholder {
     color: transparent
-}
-
-.visual-refresh .note_fcb628 textarea:focus,.visual-refresh .note_fcb628 textarea:focus:hover {
-    border-color: var(--input-focused-border)
 }
 
 .scroller_ac477d {
@@ -564,11 +562,6 @@
     width: unset
 }
 
-.visual-refresh .root__24502 {
-    border: none;
-    border-radius: var(--radius-sm)
-}
-
 .headerInner__24502 {
     margin-right: 16px;
     position: relative
@@ -644,6 +637,7 @@
 .row__19fd1 {
     align-items: center;
     border-bottom: 1px solid var(--background-modifier-accent);
+    border-color: var(--border-faint);
     display: flex;
     gap: var(--spacing-16);
     margin: 0 var(--spacing-16);
@@ -667,10 +661,6 @@
     left: calc(var(--spacing-16) + var(--spacing-24));
     position: absolute;
     right: calc(var(--spacing-16)*-1)
-}
-
-.visual-refresh & .safetyRow__19fd1 {
-    border: none
 }
 
 .row__19fd1:last-child {
@@ -732,11 +722,7 @@
     padding: 0
 }
 
-.visual-refresh .row__19fd1 {
-    border-color: var(--border-faint)
-}
-
-.visual-refresh .content__19fd1 {
+.content__19fd1 {
     border: 1px solid var(--border-faint)
 }
 
@@ -809,4 +795,4 @@
     gap: 8px
 }
 
-/*# sourceMappingURL=6a49e5f68e23feb7.css.map*/
+/*# sourceMappingURL=d5a2121330f196ca.css.map*/

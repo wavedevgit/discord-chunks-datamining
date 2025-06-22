@@ -1,10 +1,11 @@
 /**
   Module ID: 80144
-  Original File Name: a972fcedfc558936
+  Original File Name: c49cbded76111e22
 **/
 .row__19fd1 {
     align-items: center;
     border-bottom: 1px solid var(--background-modifier-accent);
+    border-color: var(--border-faint);
     display: flex;
     gap: var(--spacing-16);
     margin: 0 var(--spacing-16);
@@ -28,10 +29,6 @@
     left: calc(var(--spacing-16) + var(--spacing-24));
     position: absolute;
     right: calc(var(--spacing-16)*-1)
-}
-
-.visual-refresh & .safetyRow__19fd1 {
-    border: none
 }
 
 .row__19fd1:last-child {
@@ -93,11 +90,7 @@
     padding: 0
 }
 
-.visual-refresh .row__19fd1 {
-    border-color: var(--border-faint)
-}
-
-.visual-refresh .content__19fd1 {
+.content__19fd1 {
     border: 1px solid var(--border-faint)
 }
 
@@ -145,4 +138,4 @@
     padding-left: 0
 }
 
-/*# sourceMappingURL=a972fcedfc558936.css.map*/
+/*# sourceMappingURL=c49cbded76111e22.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 94904
-  Original File Name: 07f5c932eb15114c
+  Original File Name: 04a6f4be02271f7b
 **/
 .code__1a1f5 {
     background-color: var(--background-modifier-accent);
@@ -68,22 +68,21 @@
 }
 
 .shieldIconContainer_d43202 {
+    display: flex;
+    justify-content: center;
     left: 0;
     position: absolute;
     right: 0;
     top: -50px
 }
 
-.shieldIcon_d43202,.shieldIconContainer_d43202 {
-    display: flex;
-    justify-content: center
-}
-
 .shieldIcon_d43202 {
     align-items: center;
     background-color: var(--background-secondary-alt);
     border-radius: 50px;
+    display: none;
     height: 100px;
+    justify-content: center;
     width: 100px
 }
 
@@ -95,6 +94,7 @@
 
 .header_d43202 {
     background-color: var(--background-secondary-alt);
+    border: 1px solid var(--border-faint);
     border-top-left-radius: var(--radius-md);
     border-top-right-radius: var(--radius-md);
     padding: var(--spacing-8) var(--spacing-16)
@@ -112,8 +112,11 @@
 }
 
 .code_d43202 {
+    border-bottom: 1px solid var(--border-faint);
     border-bottom-left-radius: var(--radius-md);
-    border-bottom-right-radius: var(--radius-md)
+    border-bottom-right-radius: var(--radius-md);
+    border-left: 1px solid var(--border-faint);
+    border-right: 1px solid var(--border-faint)
 }
 
 .footer_d43202 {
@@ -140,18 +143,4 @@
     margin-bottom: var(--spacing-16)
 }
 
-.visual-refresh .header_d43202 {
-    border: 1px solid var(--border-faint)
-}
-
-.visual-refresh .code_d43202 {
-    border-bottom: 1px solid var(--border-faint);
-    border-left: 1px solid var(--border-faint);
-    border-right: 1px solid var(--border-faint)
-}
-
-.visual-refresh .shieldIcon_d43202 {
-    display: none
-}
-
-/*# sourceMappingURL=07f5c932eb15114c.css.map*/
+/*# sourceMappingURL=04a6f4be02271f7b.css.map*/
