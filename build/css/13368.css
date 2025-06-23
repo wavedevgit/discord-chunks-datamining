@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 1b5f226ce5e0444e
+  Original File Name: a28958a86f6ded10
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -12,7 +12,7 @@
 }
 
 .dismissButton_dd40b0 {
-    background-color: var(--bg-base-primary);
+    background-color: var(--background-base-low);
     border: 1px solid var(--border-subtle);
     border-radius: 16px;
     box-shadow: var(--shadow-border) var(--shadow-high);
@@ -217,7 +217,7 @@
 
 .wrapper__00943 {
     background-color: none;
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     padding-left: calc(var(--space-16) - 1px);
     padding-right: calc(var(--space-16) - 2px)
 }
@@ -754,7 +754,7 @@
 }
 
 .searchContainer_e73f2a {
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     padding: 16px
 }
 
@@ -1630,14 +1630,14 @@
 }
 
 .graphContainer_effb26 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     margin-bottom: 8px;
     padding-bottom: 2px
 }
 
 .separator_effb26 {
     border: none;
-    border-top: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--border-subtle);
     margin: 16px 0
 }
 
@@ -1695,7 +1695,7 @@
 }
 
 .secured_effb26 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     display: flex;
     flex: 1;
     font-size: 12px;
@@ -1715,7 +1715,7 @@
 }
 
 .code__1a1f5 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     display: grid;
     grid-template-columns: repeat(var(--secure-frames-columns),1fr);
     overflow: hidden;
@@ -1765,7 +1765,7 @@
 
 .tag__9351a {
     align-self: flex-start;
-    background-color: var(--bg-base-primary);
+    background-color: var(--background-base-low);
     border-radius: 4px;
     padding: 4px
 }
@@ -1933,7 +1933,7 @@
 }
 
 .rtcConnectionQualityFine__06d62 .pingForeground__06d62 {
-    color: var(--text-positive)
+    color: var(--text-feedback-positive)
 }
 
 .rtcConnectionQualityAverage__06d62 .pingForeground__06d62:not(:last-child) {
@@ -1971,7 +1971,7 @@
 }
 
 .iconWithGuildIcon__2894c {
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: var(--radius-round);
     color: var(--text-secondary);
     height: 12px;
@@ -1989,7 +1989,7 @@
 
 .acronym__2894c {
     align-items: center;
-    background-color: var(--bg-mod-strong);
+    background-color: var(--background-mod-strong);
     color: var(--text-normal);
     display: flex;
     font-weight: 500;
@@ -2113,7 +2113,7 @@
 }
 
 .iconLive_c69b6d {
-    color: var(--text-positive)!important
+    color: var(--text-feedback-positive)!important
 }
 
 .summary_c69b6d {
@@ -2222,7 +2222,7 @@
 }
 
 .favoritesSuggestion__2ea32 {
-    border: 2px dashed var(--background-modifier-accent);
+    border: 2px dashed var(--border-subtle);
     border-radius: var(--radius-md);
     box-sizing: border-box
 }
@@ -2312,7 +2312,7 @@
 }
 
 .modeMuted__2ea32 .acronym__2ea32,.modeMuted__2ea32 .iconWithGuildIcon__2ea32 {
-    background: var(--bg-mod-faint);
+    background: var(--background-mod-faint);
     color: var(--text-muted)
 }
 
@@ -2342,7 +2342,7 @@
 
 .modeSelected__2ea32 .iconWithGuildIcon__2ea32,.modeSelected__2ea32:hover .iconWithGuildIcon__2ea32 {
     background: var(--interactive-normal);
-    color: var(--background-secondary)
+    color: var(--background-base-lower)
 }
 
 .modeSelected__2ea32 .acronym__2ea32,.modeSelected__2ea32:hover .acronym__2ea32 {
@@ -2394,7 +2394,7 @@
 }
 
 .activeEvent__2ea32 {
-    color: var(--text-positive)!important
+    color: var(--text-feedback-positive)!important
 }
 
 [data-favorites=true] .iconContainer__2ea32:has(.iconWithGuildIcon__2ea32) {
@@ -2836,7 +2836,7 @@
 
 .container__394db.isOverlayContainer__394db {
     align-content: center;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: 4px;
     display: flex;
     flex: none;
@@ -3166,4 +3166,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=1b5f226ce5e0444e.css.map*/
+/*# sourceMappingURL=a28958a86f6ded10.css.map*/

@@ -127,7 +127,7 @@ let T = e => [e.userId, ... function(e) {
       onMouseOver: p,
       onMouseLeave: h,
       query: f
-    } = e, m = (0, a.e7)([b.Z], () => b.Z.getChannel(n), [n]), g = null == m ? void 0 : m.getGuildId(), y = (0, a.e7)([_.Z], () => _.Z.getGuild(g), [g]), O = (0, u.KS)(m, y), v = (null == o ? void 0 : o.id) === n, E = v ? "text-positive" : r ? "interactive-active" : "text-muted", x = v ? s.TVs.colors.TEXT_POSITIVE : r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED;
+    } = e, m = (0, a.e7)([b.Z], () => b.Z.getChannel(n), [n]), g = null == m ? void 0 : m.getGuildId(), y = (0, a.e7)([_.Z], () => _.Z.getGuild(g), [g]), O = (0, u.KS)(m, y), v = (null == o ? void 0 : o.id) === n, E = v ? "text-positive" : r ? "interactive-active" : "text-muted", x = v ? s.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED;
     return null == m ? null : (0, i.jsxs)(s.kL8, {
       className: l()(P.channelItemContainer, r && P.channelItemHighlighted),
       "aria-label": m.name,

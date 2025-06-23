@@ -1,6 +1,6 @@
 /**
   Module ID: 54597
-  Original File Name: ee4aac6bb9eb2c0a
+  Original File Name: 4ed7ddd6c6524699
 **/
 .modal_f0dcaf {
     border-radius: 8px
@@ -25,7 +25,7 @@
 
 .acronym_f0dcaf {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 50%;
     color: var(--text-normal);
     display: flex;
@@ -128,7 +128,7 @@
 }
 
 .tableContainer_f0dcaf {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     padding: 16px 20px
 }
@@ -176,4 +176,4 @@
     gap: 4px
 }
 
-/*# sourceMappingURL=ee4aac6bb9eb2c0a.css.map*/
+/*# sourceMappingURL=4ed7ddd6c6524699.css.map*/

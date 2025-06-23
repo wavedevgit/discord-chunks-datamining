@@ -426,7 +426,7 @@ function eS(e) {
   (0, O.ZP)(() => {
     f.Z.getDetectableGames()
   });
-  let [en, ei] = r.useMemo(() => Y ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : z && X ? ["text-warning", h.TVs.colors.TEXT_WARNING.css] : z && K ? ["text-positive", h.TVs.colors.TEXT_POSITIVE.css] : z && Q ? ["text-primary", h.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [Y, z, X, K, Q]);
+  let [en, ei] = r.useMemo(() => Y ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : z && X ? ["text-warning", h.TVs.colors.TEXT_FEEDBACK_WARNING.css] : z && K ? ["text-positive", h.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : z && Q ? ["text-primary", h.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [Y, z, X, K, Q]);
   return null == l ? null : (0, i.jsxs)(ej, {
     onExpand: T,
     className: v ? ed.expandedContainer : void 0,
@@ -967,7 +967,7 @@ function eD() {
           },
           markers: eb,
           barStyles: {
-            background: h.TVs.colors.BG_MOD_STRONG.css
+            background: h.TVs.colors.BACKGROUND_MOD_STRONG.css
           },
           fillStyles: {
             background: h.TVs.colors.BG_BRAND.css

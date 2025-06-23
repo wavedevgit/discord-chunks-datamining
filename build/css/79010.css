@@ -1,6 +1,6 @@
 /**
   Module ID: 79010
-  Original File Name: 401a78eb2c592a21
+  Original File Name: fc076ccecdc82c86
 **/
 .container__270b2 {
     flex-direction: row;
@@ -73,11 +73,11 @@
 }
 
 .container__04119:hover:not(.canceled__04119) {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .container__04119.active__04119,.container__04119:hover.active__04119 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .timeStatus__04119 {
@@ -209,7 +209,7 @@
 }
 
 .iconMicrophone__28d93,.speakerCount__28d93 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .iconMicrophone__28d93 {
@@ -242,7 +242,7 @@
 
 .card__88264 {
     background-color: var(--background-mod-subtle);
-    border: 1px solid var(--background-secondary);
+    border: 1px solid var(--background-base-lower);
     border-color: var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
@@ -327,7 +327,7 @@
 }
 
 .divider__88264 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border: none;
     height: 1px;
     margin: 16px -16px 12px
@@ -372,7 +372,7 @@
 }
 
 .circle__710ee {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     height: 64px;
     width: 64px
@@ -417,7 +417,7 @@
 }
 
 .divider_d0b769 {
-    color: var(--background-modifier-accent);
+    color: var(--border-subtle);
     margin: 0 16px
 }
 
@@ -455,4 +455,4 @@
     border-color: ButtonText
 }
 
-/*# sourceMappingURL=401a78eb2c592a21.css.map*/
+/*# sourceMappingURL=fc076ccecdc82c86.css.map*/

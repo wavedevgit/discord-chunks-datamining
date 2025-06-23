@@ -122,9 +122,9 @@ function O(e) {
     date: n
   }) : null, Z = o.useCallback(() => {
     S(!0), y()
-  }, [y]), R = o.useCallback(e => {
+  }, [y]), L = o.useCallback(e => {
     _(e)
-  }, [_]), L = o.useCallback(e => {
+  }, [_]), R = o.useCallback(e => {
     H(e)
   }, [H]), P = o.useCallback(() => {
     null == i && null == r && O(0, null), S(!1)
@@ -162,7 +162,7 @@ function O(e) {
             render: e => (0, l.jsx)(x, h(f({}, e), {
               calendarClassName: p.calendar,
               value: u && null != r ? c()(r) : void 0,
-              onSelect: R,
+              onSelect: L,
               maxDate: c()().local(),
               minDate: g
             }))
@@ -177,7 +177,7 @@ function O(e) {
             render: e => (0, l.jsx)(x, h(f({}, e), {
               calendarClassName: p.calendar,
               value: u && null != i ? c()(i) : void 0,
-              onSelect: L,
+              onSelect: R,
               maxDate: c()().local(),
               minDate: u && null != r ? c()(r) : g
             }))

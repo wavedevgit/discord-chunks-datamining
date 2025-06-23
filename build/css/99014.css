@@ -1,6 +1,6 @@
 /**
   Module ID: 99014
-  Original File Name: 778e7805f8733081
+  Original File Name: c9cbbe9ec73c14e1
 **/
 .container__6f9f7 {
     display: flex;
@@ -110,7 +110,7 @@
 }
 
 .levelContainer__3dcc3 {
-    background: var(--bg-base-tertiary);
+    background: var(--background-base-lowest);
     border-radius: var(--radius-sm);
     display: grid;
     gap: var(--spacing-12);
@@ -164,4 +164,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=778e7805f8733081.css.map*/
+/*# sourceMappingURL=c9cbbe9ec73c14e1.css.map*/

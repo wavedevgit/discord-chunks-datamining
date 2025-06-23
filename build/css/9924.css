@@ -1,6 +1,6 @@
 /**
   Module ID: 9924
-  Original File Name: 4d9699f53a8f7801
+  Original File Name: f29e44444d3aec57
 **/
 .formItem_d48a51 {
     margin-bottom: 24px;
@@ -18,8 +18,8 @@
 }
 
 .formFieldWrapper_d48a51 {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary)
+    background-color: var(--background-base-lower);
+    border: 1px solid var(--background-base-lowest)
 }
 
 .verificationFieldWrapper_d48a51 {
@@ -39,7 +39,7 @@
 }
 
 .verificationCheckmark_d48a51 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     height: 16px;
     margin-right: 8px;
     width: 16px
@@ -53,7 +53,7 @@
 
 .termsRow_d48a51 {
     align-items: flex-start;
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     display: flex;
     padding: 16px 4px
 }
@@ -95,11 +95,11 @@
 }
 
 .radioItem_d48a51 {
-    border: 1px solid var(--background-modifier-accent)
+    border: 1px solid var(--border-subtle)
 }
 
 .disabledFieldBackground_d48a51 {
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .termsFieldBody_d48a51 {
@@ -137,11 +137,11 @@
 }
 
 .multipleChoiceItem_d48a51 {
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .sidebar__6b102 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     height: 100%;
     margin: 0 0 0 8px;
     min-width: 400px;
@@ -161,7 +161,7 @@
 }
 
 .cardContainer__6b102 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: var(--radius-sm);
     box-shadow: var(--elevation-low);
     display: flex;
@@ -217,7 +217,7 @@
 }
 
 .userInfoContainer__6b102 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     display: flex;
@@ -244,7 +244,7 @@
 }
 
 .actionContainer__6b102 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     gap: 12px;
@@ -350,7 +350,7 @@
 
 .checkmark_ce03f4 {
     align-self: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     color: var(--interactive-normal);
     height: 48px;
@@ -553,7 +553,7 @@
 }
 
 .header_c791b2 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-top: 1px solid var(--app-border-frame);
     box-shadow: none;
     height: calc(var(--custom-channel-header-height) + 1px);
@@ -594,4 +594,4 @@
     position: relative
 }
 
-/*# sourceMappingURL=4d9699f53a8f7801.css.map*/
+/*# sourceMappingURL=f29e44444d3aec57.css.map*/

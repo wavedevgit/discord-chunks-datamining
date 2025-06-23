@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(430824),
   m = n(306680),
   b = n(944486),
-  y = n(594174),
-  O = n(821020),
+  O = n(594174),
+  y = n(821020),
   _ = n(370774),
   v = n(961040),
   C = n(739340),
@@ -28,7 +28,7 @@ var r = n(255367),
   E = n(522458);
 
 function P() {
-  let e = (0, o.e7)([y.default], () => y.default.getCurrentUser());
+  let e = (0, o.e7)([O.default], () => O.default.getCurrentUser());
   return (0, o.e7)([m.ZP], () => (null == e ? void 0 : e.id) != null && m.ZP.getMentionCount(e.id, x.W.NOTIFICATION_CENTER) > 0)
 }
 
@@ -36,10 +36,10 @@ function I(e) {
   var t, n;
   let {
     onClick: p,
-    selectedOverride: y = !1,
+    selectedOverride: O = !1,
     popoutProps: v,
     ref: x
-  } = e, I = (0, l.Ie)("notifications-inbox"), [N, w] = i.useState(!1), Z = (0, _.D)(), T = y || Z, {
+  } = e, I = (0, l.Ie)("notifications-inbox"), [N, w] = i.useState(!1), Z = (0, _.D)(), T = O || Z, {
     anyUnread: A,
     unreadRecentMentionsCount: R
   } = function() {
@@ -55,9 +55,9 @@ function I(e) {
     }
   }(), {
     notificationCenterVariant: D
-  } = O.Lk.useExperiment({
+  } = y.Lk.useExperiment({
     location: "NotificationsInboxButtonInner"
-  }), L = P(), M = D === O.jP.LEGACY ? L ? (0, r.jsx)(s.fWl, {
+  }), L = P(), M = D === y.jP.LEGACY ? L ? (0, r.jsx)(s.fWl, {
     style: {
       height: 12,
       width: 12,
@@ -75,12 +75,12 @@ function I(e) {
       position: "relative"
     },
     color: a.Z.BG_BRAND
-  }) : null, k = D === O.jP.LEGACY ? s.xx7 : s.Dkj, U = (0, o.e7)([b.Z], () => b.Z.getChannelId()), G = i.useMemo(() => {
-    if (D === O.jP.SIDEBAR) return S.Z5c.NOTIFICATIONS_INBOX(null != U ? U : void 0)
+  }) : null, k = D === y.jP.LEGACY ? s.xx7 : s.Dkj, U = (0, o.e7)([b.Z], () => b.Z.getChannelId()), G = i.useMemo(() => {
+    if (D === y.jP.SIDEBAR) return S.Z5c.NOTIFICATIONS_INBOX(null != U ? U : void 0)
   }, [D, U]);
   return (0, r.jsxs)(u.H, {
     ref: x,
-    children: [D === O.jP.SIDEBAR && (0, r.jsx)(c.Z, {
+    children: [D === y.jP.SIDEBAR && (0, r.jsx)(c.Z, {
       selected: T,
       hovered: N,
       unread: A,
@@ -138,11 +138,11 @@ function N() {
   let e = i.useRef(null),
     {
       notificationCenterVariant: t
-    } = O.Lk.useExperiment({
+    } = y.Lk.useExperiment({
       location: "NotificationsInboxButton"
     }),
     n = P();
-  return t === O.jP.SIDEBAR ? (0, r.jsx)(I, {}) : t === O.jP.POPOUT ? (0, r.jsx)(v.Z, {
+  return t === y.jP.SIDEBAR ? (0, r.jsx)(I, {}) : t === y.jP.POPOUT ? (0, r.jsx)(v.Z, {
     targetElementRef: e,
     popoutPosition: "right",
     popoutAlign: "bottom",
@@ -152,7 +152,7 @@ function N() {
       onClick: t,
       popoutProps: i
     })
-  }) : t === O.jP.LEGACY ? (0, r.jsx)(p.k, {
+  }) : t === y.jP.LEGACY ? (0, r.jsx)(p.k, {
     spacing: 0,
     badgeState: {
       badgeForYou: n

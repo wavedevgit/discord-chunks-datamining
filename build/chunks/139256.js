@@ -345,7 +345,7 @@ function L(e) {
     isVictor: !1
   }, () => ({
     color: d.Z.ICON_PRIMARY,
-    backgroundColor: d.Z.BG_MOD_FAINT
+    backgroundColor: d.Z.BACKGROUND_MOD_FAINT
   })).otherwise(() => ({
     color: (0, u.Lq)(v.Ilk.BRAND_500),
     backgroundColor: (0, u.Lq)(v.Ilk.WHITE_500)

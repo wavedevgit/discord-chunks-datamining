@@ -20,8 +20,8 @@ var r, i = n(255367),
   g = n(427679),
   m = n(155409),
   b = n(131704),
-  y = n(199902),
-  O = n(430824),
+  O = n(199902),
+  y = n(430824),
   _ = n(496675),
   v = n(914010),
   C = n(281029),
@@ -160,12 +160,12 @@ function A(e) {
     entrypoints: v
   } = (0, h._k)({
     location: "channel_base"
-  }), C = (0, a.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), E = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, a.e7)([_.Z], () => (0, p.b)(_.Z, C, t, E)), Z = (0, a.e7)([_.Z], () => _.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? S.intl.string(S.t.zJrgTE) : S.intl.string(S.t.Sd8Ix8)), T = v ? S.intl.string(S.t["EE+P0N"]) : Z, A = l.useRef(null);
+  }), C = (0, a.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), E = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, a.e7)([_.Z], () => (0, p.b)(_.Z, C, t, E)), Z = (0, a.e7)([_.Z], () => _.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? S.intl.string(S.t.zJrgTE) : S.intl.string(S.t.Sd8Ix8)), T = v ? S.intl.string(S.t["EE+P0N"]) : Z, A = l.useRef(null);
   if (o || !w || t.isModeratorReportChannel()) return null;
 
   function R() {
     if (null != C) {
-      let e = y.Z.getAllActiveStreams().filter(e => e.state !== j.jm8.ENDED && e.channelId === t.id);
+      let e = O.Z.getAllActiveStreams().filter(e => e.state !== j.jm8.ENDED && e.channelId === t.id);
       (0, c.ZDy)(async () => {
         let {
           default: r

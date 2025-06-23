@@ -1,6 +1,6 @@
 /**
   Module ID: 72891
-  Original File Name: ae725720b410a77f
+  Original File Name: 84df798e7d2a38ae
 **/
 .header__6e6ad {
     align-items: center;
@@ -46,7 +46,7 @@
 
 .container_aea6af {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     display: flex;
     height: 44px
 }
@@ -64,7 +64,7 @@
 
 .notice_d37fb3 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 4px;
     display: flex
 }
@@ -151,4 +151,4 @@
     inset: auto var(--spacing-12) var(--spacing-16) var(--spacing-12)
 }
 
-/*# sourceMappingURL=ae725720b410a77f.css.map*/
+/*# sourceMappingURL=84df798e7d2a38ae.css.map*/

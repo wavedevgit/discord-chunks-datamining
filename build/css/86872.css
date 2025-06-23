@@ -1,6 +1,6 @@
 /**
   Module ID: 86872
-  Original File Name: a90468861b05da14
+  Original File Name: c74c8ca52173da91
 **/
 .editProfileContainer__42179 {
     background-color: var(--background-surface-highest);
@@ -38,7 +38,7 @@
 }
 
 .customizationSection__42179.opened__42179 {
-    border-top: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--border-subtle);
     margin-top: var(--spacing-16);
     max-height: 220px;
     padding-top: var(--spacing-16)
@@ -59,7 +59,7 @@
 }
 
 .headerIconWrapper__42179 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-xl);
     height: 40px;
     justify-content: center;
@@ -189,7 +189,7 @@
 
 @media (max-width:720px) {
     .contentWrapper__9b0f4 {
-        background: var(--background-secondary);
+        background: var(--background-base-lower);
         border-radius: 5px
     }
 }
@@ -199,7 +199,7 @@
 }
 
 .stage__9b0f4 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     padding: 16px
 }
@@ -240,7 +240,7 @@
 
 .experimentUpsellError__9b0f4 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--spacing-4);
     cursor: pointer;
     display: flex;
@@ -315,7 +315,7 @@
 }
 
 .iconLink__9b0f4 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     color: var(--text-normal);
     padding: 20px
@@ -346,4 +346,4 @@
     min-width: 16px
 }
 
-/*# sourceMappingURL=a90468861b05da14.css.map*/
+/*# sourceMappingURL=c74c8ca52173da91.css.map*/

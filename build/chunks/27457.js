@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(414910),
   m = n(415635),
   b = n(578976),
-  y = n(649739),
-  O = n(37091),
+  O = n(649739),
+  y = n(37091),
   _ = n(6572),
   v = n(352978),
   C = n(936847),
@@ -107,8 +107,8 @@ let el = [X.fO.ACTIVITY],
       inPopout: eg,
       onVideoResize: em,
       inCall: eb = !1,
-      selected: ey = !1,
-      noBorder: eO = !1,
+      selected: eO = !1,
+      noBorder: ey = !1,
       noVideoRender: e_ = !1,
       focused: ev = !1,
       blocked: eC = !1,
@@ -118,7 +118,7 @@ let el = [X.fO.ACTIVITY],
       pulseSpeakingIndicator: eE = !1,
       forceIdle: eP = !1,
       inOverlayPopout: eI = !1
-    } = e, eN = i.useContext(I.h9) || eP, [ew, eZ] = i.useState(!1), eT = P.Sb.useSetting(), eA = (0, s.e7)([T.default], () => T.default.isStreamInfoOverlayEnabled), [eR, eD] = i.useState(!1), eL = (0, s.e7)([Z.default], () => Z.default.getId()), eM = (0, s.e7)([L.default], () => L.default.getCurrentUser()), ek = U.type === X.fO.ACTIVITY ? null : null == (t = U.user) ? void 0 : t.id, [eU] = (0, f.Z)(U.type === X.fO.ACTIVITY ? [U.applicationId] : []), eG = (0, s.e7)([O.Z], () => O.Z.getEnabled()), eB = (0, s.e7)([R.Z], () => null != ek && R.Z.isLocalVideoDisabled(ek, (0, g.Z)(U.type)), [ek, U.type]), eV = (0, s.e7)([R.Z], () => null != ek ? R.Z.getVideoToggleState(ek, (0, g.Z)(U.type)) : Q.ZUi.NONE, [ek, U.type]), eH = eV === Q.ZUi.AUTO_PROBING, {
+    } = e, eN = i.useContext(I.h9) || eP, [ew, eZ] = i.useState(!1), eT = P.Sb.useSetting(), eA = (0, s.e7)([T.default], () => T.default.isStreamInfoOverlayEnabled), [eR, eD] = i.useState(!1), eL = (0, s.e7)([Z.default], () => Z.default.getId()), eM = (0, s.e7)([L.default], () => L.default.getCurrentUser()), ek = U.type === X.fO.ACTIVITY ? null : null == (t = U.user) ? void 0 : t.id, [eU] = (0, f.Z)(U.type === X.fO.ACTIVITY ? [U.applicationId] : []), eG = (0, s.e7)([y.Z], () => y.Z.getEnabled()), eB = (0, s.e7)([R.Z], () => null != ek && R.Z.isLocalVideoDisabled(ek, (0, g.Z)(U.type)), [ek, U.type]), eV = (0, s.e7)([R.Z], () => null != ek ? R.Z.getVideoToggleState(ek, (0, g.Z)(U.type)) : Q.ZUi.NONE, [ek, U.type]), eH = eV === Q.ZUi.AUTO_PROBING, {
       speaking: eF,
       ringing: ez,
       hasVideo: eW
@@ -169,7 +169,7 @@ let el = [X.fO.ACTIVITY],
       eX = (0, s.e7)([M.Z], () => M.Z.getVoicePlatformForChannel(ep.id, null != ek ? ek : Q.lds)),
       {
         showGameIcon: eJ
-      } = y.ZP.useExperiment({
+      } = O.ZP.useExperiment({
         location: "voice_users"
       }, {
         autoTrackExposure: !1
@@ -212,7 +212,7 @@ let el = [X.fO.ACTIVITY],
       case X.fO.STREAM:
         tn = (0, r.jsx)(W.Z, {
           participant: U,
-          selected: ey,
+          selected: eO,
           width: ef,
           fit: eS,
           onVideoResize: em,
@@ -222,7 +222,7 @@ let el = [X.fO.ACTIVITY],
           inOverlayPopout: eI
         }), tr = (0, r.jsx)(W._, {
           participant: U,
-          selected: ey,
+          selected: eO,
           width: ef,
           focused: ev,
           idle: eN,
@@ -239,7 +239,7 @@ let el = [X.fO.ACTIVITY],
           fit: eS,
           onVideoResize: em,
           paused: ex,
-          selected: ey,
+          selected: eO,
           width: ef,
           blocked: eC,
           ignored: ej,
@@ -257,7 +257,7 @@ let el = [X.fO.ACTIVITY],
         tn = (0, r.jsx)(F.ZP, {
           interactible: ev,
           participant: U,
-          selected: ey,
+          selected: eO,
           channel: ep,
           width: ef
         }), ti = et.intl.formatToPlainString(et.t.YCvOsL, {
@@ -267,7 +267,7 @@ let el = [X.fO.ACTIVITY],
       case X.fO.HIDDEN_STREAM:
         tn = (0, r.jsx)(W.Z, {
           participant: U,
-          selected: ey,
+          selected: eO,
           width: ef,
           fit: eS,
           onVideoResize: em,
@@ -302,11 +302,11 @@ let el = [X.fO.ACTIVITY],
           children: [(0, r.jsx)(z.Z, {
             ref: tl,
             className: o()(en.tile, {
-              [en.noBorder]: eO,
+              [en.noBorder]: ey,
               [en.noInteraction]: null == eo,
               [en.idle]: eN
             }),
-            noBorder: eO,
+            noBorder: ey,
             style: ed,
             participantUserId: ek,
             children: (0, r.jsxs)(c.kL8, {
@@ -335,10 +335,10 @@ let el = [X.fO.ACTIVITY],
                     height: null != (k = null == tl || null == (l = tl.current) ? void 0 : l.clientHeight) ? k : 0
                   }
                 })
-              }) : null, tn, eO ? null : (0, r.jsx)("div", {
+              }) : null, tn, ey ? null : (0, r.jsx)("div", {
                 className: en.indicators,
                 children: tr
-              }), ey ? (0, r.jsx)("div", {
+              }), eO ? (0, r.jsx)("div", {
                 className: en.selectedScreen,
                 children: (0, r.jsx)(to, {
                   size: "md",
@@ -369,7 +369,7 @@ let el = [X.fO.ACTIVITY],
               })), U.type === X.fO.USER && eG ? (0, r.jsx)(_.Z, {
                 userId: U.id,
                 channelId: ep.id
-              }) : null, eb && !eO ? (0, r.jsx)("div", {
+              }) : null, eb && !ey ? (0, r.jsx)("div", {
                 className: o()(en.border, {
                   [en.voiceChannelEffect]: !ev && null != eQ,
                   [en.speaking]: eF && !ev && null == eQ
@@ -482,8 +482,8 @@ let ec = i.memo(e => {
     participantType: f,
     participantUserId: m,
     platform: b,
-    secureFramesVerified: y,
-    onContextMenu: O,
+    secureFramesVerified: O,
+    onContextMenu: y,
     muted: _,
     deafened: v,
     localMuted: C,
@@ -583,7 +583,7 @@ let ec = i.memo(e => {
         }), null == n || "" === n || t ? null : (0, r.jsx)("span", {
           className: en.overlayTitleText,
           children: n
-        }), y && (0, r.jsx)(c.ua7, {
+        }), O && (0, r.jsx)(c.ua7, {
           text: et.intl.string(et.t.ZEem6O),
           children: e => (0, r.jsx)(c.tQf, ei(er({}, e), {
             className: en.secureFramesIcon,
@@ -596,7 +596,7 @@ let ec = i.memo(e => {
         className: en.overlayButtonContainer,
         children: [(0, r.jsx)(ea, {
           onClick: e => {
-            e.stopPropagation(), T(!0), O(e, !0, X.A5.THREE_DOT)
+            e.stopPropagation(), T(!0), y(e, !0, X.A5.THREE_DOT)
           },
           tooltipText: et.intl.string(et.t["+1H47u"]),
           icon: c.xhG,

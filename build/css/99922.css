@@ -1,6 +1,6 @@
 /**
   Module ID: 99922
-  Original File Name: 103c1df25e072d1f
+  Original File Name: cf9bd529af9ef711
 **/
 .container__6b668 {
     align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .containerActive__6b668 {
-    border-color: var(--text-positive)
+    border-color: var(--text-feedback-positive)
 }
 
 .playButton__6b668 {
@@ -30,7 +30,7 @@
 
 .container_a9b435 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: row;
@@ -76,7 +76,7 @@
 }
 
 .warningContainer__654c5 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: row;
@@ -105,7 +105,7 @@
 }
 
 .optionRedesign__654c5 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .optionPlaying__654c5 {
@@ -171,8 +171,8 @@
 }
 
 .channels__4126d {
-    background-color: var(--bg-base-secondary);
-    border-color: var(--bg-mod-subtle);
+    background-color: var(--background-base-lower);
+    border-color: var(--background-mod-subtle);
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -208,7 +208,7 @@
 }
 
 .separator__4126d {
-    border-color: var(--bg-mod-subtle);
+    border-color: var(--background-mod-subtle);
     border-style: solid;
     border-width: 1px;
     margin: 0 12px
@@ -372,7 +372,7 @@
 }
 
 .separator__9c019 {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     height: 1px
 }
 
@@ -381,7 +381,7 @@
 }
 
 .header_da32a8 {
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     justify-content: space-between
 }
 
@@ -395,7 +395,7 @@
 }
 
 .sectionContent_da32a8 {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 12px;
     margin-bottom: 24px
 }
@@ -632,4 +632,4 @@
     padding-bottom: var(--spacing-12)
 }
 
-/*# sourceMappingURL=103c1df25e072d1f.css.map*/
+/*# sourceMappingURL=cf9bd529af9ef711.css.map*/

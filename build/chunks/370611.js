@@ -281,7 +281,7 @@ function G(e) {
       className: R.badgesContainer,
       children: [D && (0, r.jsx)(o.iWm, {
         size: "xs",
-        color: o.TVs.colors.TEXT_POSITIVE,
+        color: o.TVs.colors.TEXT_FEEDBACK_POSITIVE,
         className: R.liveIcon
       }), m.isPlatformEmbedded && (0, r.jsx)(o.ua7, {
         text: U,

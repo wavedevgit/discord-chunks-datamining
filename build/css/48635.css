@@ -1,6 +1,6 @@
 /**
   Module ID: 48635
-  Original File Name: e4f540dce82388c9
+  Original File Name: e043fc4a72a76173
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -210,7 +210,7 @@
 
 .replyBadge_c19a55 {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     color: var(--header-secondary);
     display: flex;
     justify-content: center
@@ -234,7 +234,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55>span {
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: 4px;
     padding: 1px 4px 0
 }
@@ -244,7 +244,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55:hover>span {
-    background: var(--bg-mod-faint)
+    background: var(--background-mod-faint)
 }
 
 .ticketIcon_c19a55,.userJoinSystemMessageIcon_c19a55 {
@@ -496,7 +496,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -1417,7 +1417,7 @@
 
 .container__394db.isOverlayContainer__394db {
     align-content: center;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: 4px;
     display: flex;
     flex: none;
@@ -1450,7 +1450,7 @@
 
 .upsellFooter__5e07c {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
@@ -1505,4 +1505,4 @@
     padding-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=e4f540dce82388c9.css.map*/
+/*# sourceMappingURL=e043fc4a72a76173.css.map*/

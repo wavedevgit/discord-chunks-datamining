@@ -1,6 +1,6 @@
 /**
   Module ID: 10125
-  Original File Name: d0c0e6f1d76a51bf
+  Original File Name: 76db357715ec438e
 **/
 .page__4c945 {
     align-items: center;
@@ -34,7 +34,7 @@
 }
 
 .card__4c945 {
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0,0,0,.2);
     grid-column: 1;
@@ -54,7 +54,7 @@
 }
 
 .gameTile__4c945 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 8px;
     height: 75px;
     margin: auto auto 16px;
@@ -104,4 +104,4 @@
     margin-bottom: 12px
 }
 
-/*# sourceMappingURL=d0c0e6f1d76a51bf.css.map*/
+/*# sourceMappingURL=76db357715ec438e.css.map*/

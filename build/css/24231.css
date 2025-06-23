@@ -1,6 +1,6 @@
 /**
   Module ID: 24231
-  Original File Name: f285074fcf5c25a6
+  Original File Name: f6168607ece17478
 **/
 .container__05cdc {
     display: flex
@@ -41,7 +41,7 @@
 }
 
 .iconMicrophone__28d93,.speakerCount__28d93 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .iconMicrophone__28d93 {
@@ -74,7 +74,7 @@
 
 .container_e74d28 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 12px;
     display: flex;
     flex-direction: row;
@@ -170,7 +170,7 @@
 }
 
 .divider_e4e1bb {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border: none;
     height: 1px;
     margin: 16px -16px 12px
@@ -215,7 +215,7 @@
 }
 
 .iconContainer__68bd0 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     color: var(--interactive-normal);
     display: flex;
@@ -223,7 +223,7 @@
 }
 
 .badgeIconBackground__68bd0 {
-    color: var(--background-tertiary)
+    color: var(--background-base-lowest)
 }
 
 .badgeIconForeground__68bd0 {
@@ -241,7 +241,7 @@
 
 .previewCard__68bd0 {
     background-color: var(--background-surface-high);
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     box-sizing: border-box;
     display: flex;
@@ -418,7 +418,7 @@
 }
 
 .textInput__327b5 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     margin-bottom: 8px
 }
@@ -499,7 +499,7 @@
 }
 
 .stageIconBackground__4c084 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     height: 60px;
     justify-content: center;
@@ -530,4 +530,4 @@
     max-height: clamp(200px,calc(100vh - 80px),660px)
 }
 
-/*# sourceMappingURL=f285074fcf5c25a6.css.map*/
+/*# sourceMappingURL=f6168607ece17478.css.map*/

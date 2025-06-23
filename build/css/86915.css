@@ -1,6 +1,6 @@
 /**
   Module ID: 86915
-  Original File Name: 76adbf9f43300f69
+  Original File Name: b9369baa653ebd6c
 **/
 .iconButton_aa66d3 {
     background-color: transparent;
@@ -308,7 +308,7 @@
 }
 
 .container_d5ae15 {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .container_d5ae15 .input_d5ae15 {
@@ -439,7 +439,7 @@
 }
 
 .card_b651ff {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border: none;
     border-radius: 8px;
     margin-top: 16px;
@@ -456,7 +456,7 @@
 }
 
 .settingCard__1a4ef {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 8px;
     margin-top: 16px
 }
@@ -473,7 +473,7 @@
 }
 
 .cardFolder__1a4ef {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px
 }
@@ -606,7 +606,7 @@
 }
 
 .container_db5301 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     display: flex;
     flex: 1;
@@ -641,7 +641,7 @@
 }
 
 .placeholderLine_db5301,.placeholderMedia_db5301 {
-    background-color: var(--background-modifier-accent)
+    background-color: var(--border-subtle)
 }
 
 .placeholderMedia_db5301 {
@@ -656,7 +656,7 @@
 
 .reaction_db5301 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     display: flex;
     flex-direction: row;
     margin-right: 8px;
@@ -671,7 +671,7 @@
 }
 
 .dot_db5301 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 50%;
     height: 4px;
     margin: 0 8px;
@@ -824,4 +824,4 @@
     vertical-align: top
 }
 
-/*# sourceMappingURL=76adbf9f43300f69.css.map*/
+/*# sourceMappingURL=b9369baa653ebd6c.css.map*/

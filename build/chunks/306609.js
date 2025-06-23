@@ -78,8 +78,8 @@ function B(e) {
     wide: n,
     showOutputDevices: l = !1,
     showSearchBar: B = !0
-  } = e, [Y, z] = i.useState(""), {
-    analyticsLocations: W,
+  } = e, [Y, W] = i.useState(""), {
+    analyticsLocations: z,
     newestAnalyticsLocation: G
   } = (0, m.ZP)(p.Z.VOICE_FILTER_POPOUT), H = i.useRef(null), J = (0, d.Z)({
     minDimension: 400,
@@ -98,7 +98,7 @@ function B(e) {
       activeVoice: et
     } = (0, P.o)(),
     en = (0, x.HM)({
-      location: W[0],
+      location: z[0],
       autoTrackExposure: !0
     }),
     er = (0, c.q_F)({
@@ -136,11 +136,11 @@ function B(e) {
       active_voice_filter_id: null != et ? et : null
     })
   });
-  let eo = i.useCallback(() => z(""), [z]),
+  let eo = i.useCallback(() => W(""), [W]),
     es = i.useRef(null),
     ec = (0, f.bp)() !== D.IlC.OVERLAY;
   return (0, r.jsx)(m.Gt, {
-    value: W,
+    value: z,
     children: (0, r.jsxs)("div", {
       ref: H,
       className: a()(F.voiceFiltersPopout, {
@@ -161,7 +161,7 @@ function B(e) {
         placeholder: R.intl.string(R.t.hHCZJS),
         className: F.voiceFiltersHeader,
         autoFocus: !0,
-        onChange: z,
+        onChange: W,
         query: Y,
         onClear: eo
       }), (0, r.jsx)(A.w, {

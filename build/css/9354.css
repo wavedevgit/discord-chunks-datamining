@@ -1,6 +1,6 @@
 /**
   Module ID: 9354
-  Original File Name: f53012040d2c5716
+  Original File Name: 8c2e166f4c86c2f6
 **/
 .mainCheckboxContainer__16db0 {
     align-items: stretch;
@@ -14,7 +14,7 @@
 
 .checkboxContainer__16db0 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -32,4 +32,4 @@
     flex-grow: 0
 }
 
-/*# sourceMappingURL=f53012040d2c5716.css.map*/
+/*# sourceMappingURL=8c2e166f4c86c2f6.css.map*/

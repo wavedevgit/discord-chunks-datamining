@@ -1,6 +1,6 @@
 /**
   Module ID: 85634
-  Original File Name: b76af2767abc81e6
+  Original File Name: e9d3009744b82ea9
 **/
 .actionButton__5d9ef {
     margin-left: auto
@@ -12,7 +12,7 @@
 }
 
 .appContainer_f37514 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     padding: 12px
 }
@@ -49,7 +49,7 @@
 
 .row__19fd1 {
     align-items: center;
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     border-color: var(--border-faint);
     display: flex;
     gap: var(--spacing-16);
@@ -109,7 +109,7 @@
 
 .number__19fd1 {
     align-items: center;
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: var(--radius-round);
     height: 32px;
     justify-content: center;
@@ -127,7 +127,7 @@
 }
 
 .tableRowGroup__19fd1 .content__19fd1 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     flex-grow: 1;
     flex-shrink: 0;
@@ -165,7 +165,7 @@
 }
 
 .breadcrumbContainer__0e308:not(:last-child):after {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     content: "";
     height: calc(100% + 4px);
     left: 1px;
@@ -263,7 +263,7 @@
 
 .childButton__3ed08 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -359,7 +359,7 @@
 
 .linkButton_b1585f {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -407,7 +407,7 @@
 }
 
 .guildContainer_f0c729 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     padding: 16px
 }
@@ -435,7 +435,7 @@
 }
 
 .guildContainer__14de9 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     padding: 16px
 }
@@ -468,7 +468,7 @@
 }
 
 .guildContainer__7c626 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     padding: var(--spacing-16)
 }
@@ -492,7 +492,7 @@
 }
 
 .guildContainer__631c2 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     padding: 16px
 }
@@ -681,7 +681,7 @@
 
 .replyBadge_c19a55 {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     color: var(--header-secondary);
     display: flex;
     justify-content: center
@@ -705,7 +705,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55>span {
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: 4px;
     padding: 1px 4px 0
 }
@@ -715,7 +715,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55:hover>span {
-    background: var(--bg-mod-faint)
+    background: var(--background-mod-faint)
 }
 
 .ticketIcon_c19a55,.userJoinSystemMessageIcon_c19a55 {
@@ -967,7 +967,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -1547,14 +1547,14 @@
 }
 
 .popoutCheckIcon__86331 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     height: 18px;
     margin-right: 8px;
     width: 18px
 }
 
 .popoutHeaderContainer__86331 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     padding: 10px
 }
 
@@ -1597,7 +1597,7 @@
 }
 
 .iconContainer_c00127 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     margin-right: var(--custom-message-helpers-popout-padding-width);
     width: 40px
 }
@@ -1615,7 +1615,7 @@
 }
 
 .newMemberBadge_f80704 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     cursor: pointer;
     display: inline-block;
     height: calc(1rem + 4px);
@@ -1866,7 +1866,7 @@
 }
 
 .messagePreviewContainer_f96002 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     max-height: 100px;
     padding: 16px 16px 16px 0
@@ -1931,7 +1931,7 @@
 }
 
 .upsellsContainer__2c3b4 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--spacing-8)
 }
 
@@ -1944,7 +1944,7 @@
 }
 
 .guildContainer__3eeee {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     padding: 16px
 }
@@ -2000,7 +2000,7 @@
 
 .smsNumberContainer_dba137 {
     align-items: center;
-    border: 1px solid var(--background-tertiary);
+    border: 1px solid var(--background-base-lowest);
     border-radius: 4px;
     display: flex;
     flex-direction: row;
@@ -2017,7 +2017,7 @@
 }
 
 .userContainer__7bd4e {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     padding: 16px
 }
@@ -2048,4 +2048,4 @@
     }
 }
 
-/*# sourceMappingURL=b76af2767abc81e6.css.map*/
+/*# sourceMappingURL=e9d3009744b82ea9.css.map*/

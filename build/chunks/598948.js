@@ -43,8 +43,8 @@ let w = {
     tension: 260
   },
   Z = e => e.shiftKey || e.key === _.vn.SHIFT,
-  R = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
-  L = l.memo(function(e) {
+  L = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
+  R = l.memo(function(e) {
     let {
       members: t,
       guild: n,
@@ -53,15 +53,15 @@ let w = {
       compact: s,
       onSelectRow: m,
       onResetForNewMembers: b
-    } = e, f = (0, c.e7)([C.Z], () => C.Z.useReducedMotion), _ = (0, u.f9)(), L = (0, p.n)(), [P, I] = l.useState(!1), [M, V] = l.useState(!1), E = !_ && P && M;
+    } = e, f = (0, c.e7)([C.Z], () => C.Z.useReducedMotion), _ = (0, u.f9)(), R = (0, p.n)(), [P, I] = l.useState(!1), [M, V] = l.useState(!1), E = !_ && P && M;
     l.useEffect(() => {
-      L || (I(!1), V(!1))
-    }, [L]), l.useLayoutEffect(() => {
+      R || (I(!1), V(!1))
+    }, [R]), l.useLayoutEffect(() => {
       let e = e => {
-          Z(e) && I(!0), R(e) && V(!0)
+          Z(e) && I(!0), L(e) && V(!0)
         },
         t = e => {
-          Z(e) && I(!1), R(e) && V(!1)
+          Z(e) && I(!1), L(e) && V(!1)
         };
       return window.addEventListener("keydown", e), window.addEventListener("keyup", t), () => {
         window.removeEventListener("keydown", e), window.removeEventListener("keyup", t)
@@ -138,7 +138,7 @@ let w = {
       v = null != (n = null == x ? void 0 : x[0]) ? n : null;
     return l.useEffect(() => {
       (0, f.h1)(o.id, v)
-    }, [o.id, v]), (0, r.jsx)(L, {
+    }, [o.id, v]), (0, r.jsx)(R, {
       members: g,
       guild: o,
       className: i,

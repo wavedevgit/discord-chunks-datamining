@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function y(e, t) {
   }), e
 }
 
-function O(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -101,7 +101,7 @@ function C(e) {
         disableItemStyles: !0,
         children: (0, r.jsx)(j, {
           setIsVisible: t => {
-            u(n => y(b({}, n), {
+            u(n => O(b({}, n), {
               [e]: t
             }))
           },
@@ -143,8 +143,8 @@ function S(e) {
     renderPopout: e => {
       var {
         closePopout: i
-      } = e, o = O(e, ["closePopout"]);
-      return (0, r.jsx)(a.v2r, y(b({
+      } = e, o = y(e, ["closePopout"]);
+      return (0, r.jsx)(a.v2r, O(b({
         onSelect: () => {},
         navId: "notifications-sidebar-filters",
         "aria-label": "Notifications Sidebar Filters"
@@ -166,7 +166,7 @@ function S(e) {
         }, e))
       }))
     },
-    children: e => (0, r.jsx)(a.P3F, y(b({}, e), {
+    children: e => (0, r.jsx)(a.P3F, O(b({}, e), {
       className: m.filterButton,
       innerRef: o,
       onMouseEnter: () => h(!0),
@@ -197,8 +197,8 @@ function x(e) {
     renderPopout: e => {
       var {
         closePopout: i
-      } = e, l = O(e, ["closePopout"]);
-      return (0, r.jsx)(a.v2r, y(b({
+      } = e, l = y(e, ["closePopout"]);
+      return (0, r.jsx)(a.v2r, O(b({
         onSelect: () => {},
         navId: "notifications-sidebar-filters",
         "aria-label": "Notifications Sidebar Filters"
@@ -226,7 +226,7 @@ function x(e) {
       forceOpen: h,
       shouldShow: h && !c,
       text: g.intl.string(g.t.UdhTtr),
-      children: () => (0, r.jsx)(a.P3F, y(b({}, e), {
+      children: () => (0, r.jsx)(a.P3F, O(b({}, e), {
         className: l,
         innerRef: s,
         onClick: t => {

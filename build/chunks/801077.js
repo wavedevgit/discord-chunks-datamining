@@ -14,8 +14,8 @@ var r, l = n(392711),
   h = n(420660),
   p = n(728345),
   g = n(812206),
-  y = n(710845),
-  O = n(38618),
+  O = n(710845),
+  y = n(38618),
   b = n(656063),
   N = n(761282),
   m = n(752048),
@@ -75,8 +75,8 @@ let B = !1,
   V = [],
   F = [],
   W = {},
-  Y = {},
-  K = new Set,
+  K = {},
+  Y = new Set,
   H = new Set;
 
 function Q() {
@@ -97,15 +97,15 @@ function X(e) {
 }
 
 function J(e) {
-  return null == Y[e] && (Y = L(M({}, Y), {
+  return null == K[e] && (K = L(M({}, K), {
     [e]: new x.Z({
       url: e
     })
-  })), Y[e]
+  })), K[e]
 }
 
 function q(e) {
-  H.has(e) || K.add(e)
+  H.has(e) || Y.add(e)
 }
 
 function $(e) {
@@ -128,7 +128,7 @@ function et(e) {
 function en(e, t, n) {
   var r, l, o, a, d, f;
   let h, p = w.default.getCurrentUser(),
-    O = null != (r = null == p ? void 0 : p.nsfwAllowed) && r,
+    y = null != (r = null == p ? void 0 : p.nsfwAllowed) && r,
     m = t.map(e => e.id),
     T = t.filter(t => e.has(t.id)),
     A = !1,
@@ -139,7 +139,7 @@ function en(e, t, n) {
   for (let e of t) {
     let n = C.Z.getAnyStreamForUser(e.id),
       r = I.Z.getChannel(null == n ? void 0 : n.channelId);
-    if ((null == r ? void 0 : r.isNSFW()) && (!O || !S.Z.didAgree(null == r ? void 0 : r.getGuildId()))) continue;
+    if ((null == r ? void 0 : r.isNSFW()) && (!y || !S.Z.didAgree(null == r ? void 0 : r.getGuildId()))) continue;
     let f = z(e.id);
     if (null != n && L.push({
         stream: n,
@@ -151,7 +151,7 @@ function en(e, t, n) {
     M = h === v.XB;
     let m = function(e) {
       let t = g.Z.getApplication(e);
-      return null != t ? t : "string" != typeof e ? (new y.Z("NowPlayingViewStore").error("Unknown type for applicationId: ".concat(typeof e, ", value: ").concat(e), {
+      return null != t ? t : "string" != typeof e ? (new O.Z("NowPlayingViewStore").error("Unknown type for applicationId: ".concat(typeof e, ", value: ").concat(e), {
         tags: {
           source: "ACTIVITIES"
         }
@@ -246,13 +246,13 @@ function er(e) {
 }
 
 function el() {
-  return B && O.Z.isConnected()
+  return B && y.Z.isConnected()
 }
 let ei = i().throttle(() => {
   ! function() {
     var e;
     if (el()) {
-      if (K.clear(), F = (V = (function(e) {
+      if (Y.clear(), F = (V = (function(e) {
           let t = Q(),
             n = en.bind(null, t);
           return i()(e).mapValues(n)
@@ -276,9 +276,9 @@ let ei = i().throttle(() => {
         })).map(e => ({
           type: U.GOo.USER,
           party: e
-        })), K.size > 0) {
-        let e = Array.from(K);
-        p.ZP.fetchApplications(e), e.forEach(e => H.add(e)), K.clear()
+        })), Y.size > 0) {
+        let e = Array.from(Y);
+        p.ZP.fetchApplications(e), e.forEach(e => H.add(e)), Y.clear()
       }
       G = !0
     }
@@ -290,7 +290,7 @@ function eo() {
 }
 class ea extends(r = o.ZP.Store) {
   initialize() {
-    this.syncWith([w.default, g.Z, Z.Z, j.Z, R.Z, C.Z, A.Z, T.Z, m.Z], eo), this.waitFor(O.Z, P.Z, g.Z, w.default, m.Z)
+    this.syncWith([w.default, g.Z, Z.Z, j.Z, R.Z, C.Z, A.Z, T.Z, m.Z], eo), this.waitFor(y.Z, P.Z, g.Z, w.default, m.Z)
   }
   get currentActivityParties() {
     return V
@@ -308,7 +308,7 @@ class ea extends(r = o.ZP.Store) {
 k(ea, "displayName", "NowPlayingViewStore");
 let es = new ea(a.Z, {
     LOGOUT: function() {
-      B = !1, V = [], F = [], K.clear()
+      B = !1, V = [], F = [], Y.clear()
     },
     NOW_PLAYING_MOUNTED: function() {
       B = !0, ei()

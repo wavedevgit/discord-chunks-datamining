@@ -1,6 +1,6 @@
 /**
   Module ID: 5551
-  Original File Name: 7f10b6b2679d2ef2
+  Original File Name: 6c1045f5ab9d372f
 **/
 .closeButton__915cb {
     position: absolute;
@@ -26,8 +26,8 @@
 }
 
 .action__915cb {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-base-lower);
+    border: 1px solid var(--background-base-lowest);
     border-radius: var(--radius-xs);
     padding: 8px
 }
@@ -41,4 +41,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=7f10b6b2679d2ef2.css.map*/
+/*# sourceMappingURL=6c1045f5ab9d372f.css.map*/

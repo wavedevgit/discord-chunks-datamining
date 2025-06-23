@@ -1,6 +1,6 @@
 /**
   Module ID: 10880
-  Original File Name: 4f2c20e781dad149
+  Original File Name: eb7e5379d85c9e4c
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -470,7 +470,7 @@
 
 .wrapper_b76891 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
@@ -493,7 +493,7 @@
 
 .wrapper_e9b191 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 8px;
     box-shadow: var(--elevation-high);
     box-sizing: border-box;
@@ -636,7 +636,7 @@
 
 .container__394db.isOverlayContainer__394db {
     align-content: center;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: 4px;
     display: flex;
     flex: none;
@@ -695,7 +695,7 @@
 }
 
 .draftBadgeContainer_ea81a9 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -816,14 +816,14 @@
 }
 
 .container__24a95 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     display: flex;
     padding: 16px
 }
 
 .container__24a95:hover {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     cursor: pointer
 }
 
@@ -880,7 +880,7 @@
 }
 
 .headerImageEmpty__4dd8e {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     height: 100%;
     width: 100%
 }
@@ -906,7 +906,7 @@
 }
 
 .tierImageContainer__4dd8e {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 50%;
     bottom: -48px;
     height: 80px;
@@ -961,7 +961,7 @@
 }
 
 .emojiBenefitsRow__4dd8e {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     display: flex;
     padding: 16px
@@ -1049,13 +1049,13 @@
 }
 
 .subscriptionPerks__3efc4 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     padding: 16px
 }
 
 .roleMessagePreview__3efc4 {
-    background-color: var(--background-primary);
-    border: 1px solid var(--background-modifier-accent);
+    background-color: var(--background-base-low);
+    border: 1px solid var(--border-subtle);
     border-radius: 4px;
     padding: 12px 0
 }
@@ -1121,4 +1121,4 @@
     align-items: stretch
 }
 
-/*# sourceMappingURL=4f2c20e781dad149.css.map*/
+/*# sourceMappingURL=eb7e5379d85c9e4c.css.map*/

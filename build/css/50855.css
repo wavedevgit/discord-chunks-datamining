@@ -1,6 +1,6 @@
 /**
   Module ID: 50855
-  Original File Name: 274a5f3e9ac35ad1
+  Original File Name: a6c654048f855a40
 **/
 .heading-sm\/normal_a76279 {
     font-family: var(--font-display);
@@ -780,7 +780,7 @@
 }
 
 .infoIcon_a76279 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 50%;
     color: var(--interactive-normal);
     height: 40px;
@@ -850,7 +850,7 @@
 }
 
 .accountProfileCard_a76279 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .header_a76279 {
@@ -880,7 +880,7 @@
 }
 
 .formMessagePositive_a76279 {
-    color: var(--text-positive)
+    color: var(--text-feedback-positive)
 }
 
 .messageContainer_a76279 {
@@ -1014,4 +1014,4 @@
     width: 480px
 }
 
-/*# sourceMappingURL=274a5f3e9ac35ad1.css.map*/
+/*# sourceMappingURL=a6c654048f855a40.css.map*/

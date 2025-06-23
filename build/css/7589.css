@@ -1,6 +1,6 @@
 /**
   Module ID: 7589
-  Original File Name: 7047eb97e38153f6
+  Original File Name: 61ff72a7a3a21ba1
 **/
 .premiumTrialBadge_e4ef22 {
     align-items: center;
@@ -71,7 +71,7 @@
 }
 
 .premiumTrialBadgeSelected__4c1e4 {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .premiumOfferBadgeCopy__4c1e4 {
@@ -79,11 +79,11 @@
 }
 
 .theme-light .premiumTrialBadge__4c1e4 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .theme-light .premiumTrialBadgeSelected__4c1e4 {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .premiumLabel_e681d1 {
@@ -234,7 +234,7 @@
 
 .contentRegion__23e6b {
     align-items: flex-start;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     display: flex;
     flex: 1 1 800px;
     position: relative
@@ -839,7 +839,7 @@
 }
 
 .productCardClickable__8d9f6 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 8px;
     cursor: pointer;
     overflow: hidden
@@ -925,7 +925,7 @@
 
 .iconWrapper_e2461d {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     color: var(--interactive-normal);
     display: flex;
@@ -1419,14 +1419,14 @@
 }
 
 .popoutCheckIcon__86331 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     height: 18px;
     margin-right: 8px;
     width: 18px
 }
 
 .popoutHeaderContainer__86331 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     padding: 10px
 }
 
@@ -1469,7 +1469,7 @@
 }
 
 .iconContainer_c00127 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     margin-right: var(--custom-message-helpers-popout-padding-width);
     width: 40px
 }
@@ -1487,7 +1487,7 @@
 }
 
 .newMemberBadge_f80704 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     cursor: pointer;
     display: inline-block;
     height: calc(1rem + 4px);
@@ -1741,7 +1741,7 @@
 }
 
 .default_e18686:hover {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .filled_e18686 {
@@ -1969,4 +1969,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=7047eb97e38153f6.css.map*/
+/*# sourceMappingURL=61ff72a7a3a21ba1.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 68720
-  Original File Name: 0648f5eee045aaa5
+  Original File Name: bdcfd84ceba807b4
 **/
 .errors__7962e {
     display: flex;
@@ -12,7 +12,7 @@
 
 .emojiErrorItem__7962e {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -66,4 +66,4 @@
     margin-left: auto
 }
 
-/*# sourceMappingURL=0648f5eee045aaa5.css.map*/
+/*# sourceMappingURL=bdcfd84ceba807b4.css.map*/

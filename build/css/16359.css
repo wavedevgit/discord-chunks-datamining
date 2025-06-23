@@ -1,6 +1,6 @@
 /**
   Module ID: 16359
-  Original File Name: a5e3fb85c619a228
+  Original File Name: c616f45ff6e07f38
 **/
 .container__1ff2f {
     align-items: center;
@@ -33,7 +33,7 @@
 }
 
 .container_fe72c8 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     padding: 16px 0
 }
 
@@ -59,7 +59,7 @@
 }
 
 .purchaseSummaryContainer_fe72c8 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     display: flex;
     gap: 12px;
@@ -71,7 +71,7 @@
 }
 
 .purchaseSummaryImage_fe72c8 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 4px;
     height: 56px;
     object-fit: cover;
@@ -79,7 +79,7 @@
 }
 
 .footer_fe72c8 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     display: flex;
     justify-content: flex-end;
     padding: 16px
@@ -110,7 +110,7 @@
 }
 
 .benefitsContainer_fe72c8 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     padding: 16px
 }
@@ -137,4 +137,4 @@
     gap: 10px
 }
 
-/*# sourceMappingURL=a5e3fb85c619a228.css.map*/
+/*# sourceMappingURL=c616f45ff6e07f38.css.map*/

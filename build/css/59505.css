@@ -1,6 +1,6 @@
 /**
   Module ID: 59505
-  Original File Name: f29c29896916cf7e
+  Original File Name: 9c0d13bc6af72d38
 **/
 .container__1b24f {
     align-items: center;
@@ -26,7 +26,7 @@
 }
 
 .icon__1b24f {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 80px;
     color: var(--interactive-normal);
     display: inline-block;
@@ -52,7 +52,7 @@
 
 .container__6764b {
     background-color: var(--background-surface-higher);
-    border: 1px solid var(--background-primary);
+    border: 1px solid var(--background-base-low);
     border-color: var(--border-subtle);
     border-radius: 8px;
     box-sizing: border-box;
@@ -117,7 +117,7 @@
 
 .noAvatarIcon__6764b {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 16px;
     display: flex;
     height: 16px;
@@ -232,7 +232,7 @@
 }
 
 .container_d9c882 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     box-sizing: border-box;
     cursor: default;
@@ -242,7 +242,7 @@
 
 .header_d9c882 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-bottom: 1px solid var(--border-subtle);
     display: flex;
     height: 48px;
@@ -275,7 +275,7 @@
 }
 
 .divider_d9c882 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     height: 24px;
     width: 1px
 }
@@ -318,12 +318,12 @@
 }
 
 .searchBox_d9c882 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     margin-right: 16px
 }
 
 .modal__9a792 {
-    background-color: var(--background-secondary)!important;
+    background-color: var(--background-base-lower)!important;
     border-radius: 8px;
     height: 60vh;
     min-height: 400px;
@@ -334,4 +334,4 @@
     overflow: hidden
 }
 
-/*# sourceMappingURL=f29c29896916cf7e.css.map*/
+/*# sourceMappingURL=9c0d13bc6af72d38.css.map*/

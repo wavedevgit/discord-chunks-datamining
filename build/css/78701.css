@@ -1,6 +1,6 @@
 /**
   Module ID: 78701
-  Original File Name: 51756ee674b008d0
+  Original File Name: b0a19961b487937f
 **/
 .availabilityIndicator__40463 {
     display: flex;
@@ -43,7 +43,7 @@
 }
 
 .previewContainerParent__038c3 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-top-left-radius: var(--radius-md);
     margin-top: -8px;
     overflow-y: clip;
@@ -143,7 +143,7 @@
 }
 
 .deleteButton__1df30 {
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     color: var(--text-danger);
     cursor: pointer;
     height: 28px;
@@ -389,4 +389,4 @@
     margin: 0
 }
 
-/*# sourceMappingURL=51756ee674b008d0.css.map*/
+/*# sourceMappingURL=b0a19961b487937f.css.map*/

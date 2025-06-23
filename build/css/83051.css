@@ -1,6 +1,6 @@
 /**
   Module ID: 83051
-  Original File Name: a3573d3bbacc7a98
+  Original File Name: eee7b77dff24e42c
 **/
 .formPriorityImageContainer__2cf82 {
     display: flex;
@@ -35,7 +35,7 @@
 }
 
 .attachment__2cf82 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     display: flex;
@@ -51,4 +51,4 @@
     top: var(--space-4)
 }
 
-/*# sourceMappingURL=a3573d3bbacc7a98.css.map*/
+/*# sourceMappingURL=eee7b77dff24e42c.css.map*/

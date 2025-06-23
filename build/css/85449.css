@@ -1,6 +1,6 @@
 /**
   Module ID: 85449
-  Original File Name: f4b958aa54ba1926
+  Original File Name: 640daa6786450527
 **/
 .availabilityIndicator__40463 {
     display: flex;
@@ -119,7 +119,7 @@
 }
 
 .deleteButton__1df30 {
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     color: var(--text-danger);
     cursor: pointer;
     height: 28px;
@@ -365,4 +365,4 @@
     margin: 0
 }
 
-/*# sourceMappingURL=f4b958aa54ba1926.css.map*/
+/*# sourceMappingURL=640daa6786450527.css.map*/

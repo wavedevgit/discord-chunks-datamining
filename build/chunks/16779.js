@@ -36,7 +36,7 @@ function _(e) {
   return (0, r.jsxs)(s.m7, {
     children: [(0, r.jsx)(p, {
       size: "xxs",
-      color: i.TVs.colors.TEXT_POSITIVE
+      color: i.TVs.colors.TEXT_FEEDBACK_POSITIVE
     }), (0, r.jsx)(l.x3, {
       entry: {
         start: _,

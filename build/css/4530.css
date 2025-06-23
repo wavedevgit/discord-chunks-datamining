@@ -1,9 +1,9 @@
 /**
   Module ID: 4530
-  Original File Name: 8f6e17873609bf18
+  Original File Name: dfd6fa2d23370658
 **/
 .modalRoot__4a43b {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     overflow: hidden
 }
@@ -21,7 +21,7 @@
 }
 
 .modalContent__4a43b {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     padding: 16px 0
 }
 
@@ -30,7 +30,7 @@
 }
 
 .rowDivider__4a43b {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     height: 2px
 }
 
@@ -41,7 +41,7 @@
 
 .rowContainer__4a43b {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -140,4 +140,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=8f6e17873609bf18.css.map*/
+/*# sourceMappingURL=dfd6fa2d23370658.css.map*/

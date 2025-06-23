@@ -1,6 +1,6 @@
 /**
   Module ID: 60301
-  Original File Name: 6cdb53a610eab071
+  Original File Name: 9c461f7d7e5c23e6
 **/
 .outer_ac6414 {
     position: relative
@@ -37,7 +37,7 @@
 
 .modalHeader_ea9caa {
     border-bottom: 1px solid var(--border-subtle);
-    color: var(--background-primary);
+    color: var(--background-base-low);
     padding: 12px 16px
 }
 
@@ -78,4 +78,4 @@
     flex-direction: row
 }
 
-/*# sourceMappingURL=6cdb53a610eab071.css.map*/
+/*# sourceMappingURL=9c461f7d7e5c23e6.css.map*/

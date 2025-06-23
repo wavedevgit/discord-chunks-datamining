@@ -1,6 +1,6 @@
 /**
   Module ID: 15066
-  Original File Name: bb989eb0315008ad
+  Original File Name: 65364dbf4c208427
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -199,7 +199,7 @@
 }
 
 .productCardClickable__8d9f6 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 8px;
     cursor: pointer;
     overflow: hidden
@@ -354,14 +354,14 @@
 }
 
 .popoutCheckIcon__86331 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     height: 18px;
     margin-right: 8px;
     width: 18px
 }
 
 .popoutHeaderContainer__86331 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     padding: 10px
 }
 
@@ -404,7 +404,7 @@
 }
 
 .iconContainer_c00127 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     margin-right: var(--custom-message-helpers-popout-padding-width);
     width: 40px
 }
@@ -422,7 +422,7 @@
 }
 
 .newMemberBadge_f80704 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     cursor: pointer;
     display: inline-block;
     height: calc(1rem + 4px);
@@ -955,7 +955,7 @@ h1.title_feb59c,h2.title_feb59c {
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     text-size-adjust: none;
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     color: var(--text-normal)
 }
 
@@ -1156,7 +1156,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -1282,7 +1282,7 @@ h1.title_feb59c,h2.title_feb59c {
 
 .container__19cf2 {
     align-items: center;
-    background-color: var(--bg-mod-faint);
+    background-color: var(--background-mod-faint);
     border-radius: var(--radius-lg);
     display: flex;
     flex-direction: row;
@@ -1305,4 +1305,4 @@ h1.title_feb59c,h2.title_feb59c {
     margin-right: var(--spacing-32)
 }
 
-/*# sourceMappingURL=bb989eb0315008ad.css.map*/
+/*# sourceMappingURL=65364dbf4c208427.css.map*/

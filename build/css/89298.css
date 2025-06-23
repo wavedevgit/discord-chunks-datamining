@@ -1,6 +1,6 @@
 /**
   Module ID: 89298
-  Original File Name: acbd9dd54ab09745
+  Original File Name: a0945e830f5de3bc
 **/
 .buttonContainer__7e329 {
     align-items: center;
@@ -46,7 +46,7 @@
 }
 
 .key__98feb {
-    background: var(--bg-base-primary);
+    background: var(--background-base-low);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-xs);
     box-sizing: border-box;
@@ -357,7 +357,7 @@
 }
 
 .contentInventoryContainer__2af41 {
-    border-top: 1px solid var(--bg-mod-strong);
+    border-top: 1px solid var(--background-mod-strong);
     margin-top: var(--spacing-12);
     padding-top: var(--spacing-12)
 }
@@ -371,7 +371,7 @@
 }
 
 .activityCard__2af41+.row__2af41,.inviteFriendsButton__2af41+.row__2af41 {
-    border-top: 1px solid var(--bg-mod-strong);
+    border-top: 1px solid var(--background-mod-strong);
     margin-top: var(--spacing-12);
     padding-top: var(--spacing-12)
 }
@@ -630,7 +630,7 @@
 
 .watchButton__8151b {
     align-items: center;
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: var(--radius-lg);
     cursor: pointer;
     display: flex;
@@ -697,7 +697,7 @@
 }
 
 .panelGroup_ef5082 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 8px;
     gap: 4px;
     padding: 12px
@@ -759,8 +759,8 @@
 }
 
 .tabBar_fe7ab2 {
-    background: var(--background-secondary);
-    border-bottom: 1px solid var(--background-tertiary);
+    background: var(--background-base-lower);
+    border-bottom: 1px solid var(--background-base-lowest);
     flex-shrink: 0;
     height: 36px;
     overflow: hidden;
@@ -820,7 +820,7 @@
 }
 
 .tableHeader_fe7ab2 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     height: 24px;
     text-transform: uppercase
 }
@@ -861,7 +861,7 @@
 
 .properties_fe7ab2 {
     align-items: baseline;
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     box-shadow: var(--elevation-low);
     display: grid;
     gap: 16px 8px;
@@ -904,7 +904,7 @@
 
 .toolbar_fe7ab2 {
     align-items: center;
-    border-bottom: 1px solid var(--background-tertiary);
+    border-bottom: 1px solid var(--background-base-lowest);
     display: flex;
     flex-direction: row;
     height: 34px
@@ -996,7 +996,7 @@
 }
 
 .nowPlayingNotificationAnimationWrapper__81a05 {
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 300px!important;
     left: auto;
     opacity: .9;
@@ -1059,7 +1059,7 @@
 }
 
 .textArea_ab8e5c {
-    background: var(--bg-base-primary);
+    background: var(--background-base-low);
     border: 1px solid hsla(0,0%,100%,.08);
     border-radius: 6px
 }
@@ -1070,7 +1070,7 @@
 }
 
 .container__32c39 {
-    border-top: 1px solid var(--bg-mod-strong);
+    border-top: 1px solid var(--background-mod-strong);
     margin-top: var(--spacing-12);
     padding-top: var(--spacing-12);
     width: 100%
@@ -1153,7 +1153,7 @@
 }
 
 .channelItemContainer__711d3.channelItemHighlighted__711d3,.channelItemContainer__711d3:hover {
-    background-color: var(--bg-mod-strong)
+    background-color: var(--background-mod-strong)
 }
 
 .searchBarContainer__711d3 {
@@ -1161,7 +1161,7 @@
 }
 
 .searchBar__711d3 {
-    background-color: var(--bg-mod-subtle)!important;
+    background-color: var(--background-mod-subtle)!important;
     border-color: var(--border-strong)!important;
     border-radius: 12px!important
 }
@@ -1239,7 +1239,7 @@
 
 .cutoutContainer__46219 {
     align-items: center;
-    background: var(--bg-mod-subtle);
+    background: var(--background-mod-subtle);
     border: 3px solid var(--black);
     border-radius: var(--radius-round);
     bottom: -2px;
@@ -1257,7 +1257,7 @@
 }
 
 .separatorDot__46219 {
-    background: var(--bg-mod-faint);
+    background: var(--background-mod-faint);
     border-radius: var(--radius-round);
     height: 4px;
     width: 4px
@@ -1336,7 +1336,7 @@
 }
 
 .buttonSection_a83780 {
-    background: var(--bg-mod-subtle);
+    background: var(--background-mod-subtle);
     border: 1px solid var(--border-faint);
     border-radius: 12px;
     padding: 4px
@@ -1480,4 +1480,4 @@
     pointer-events: auto
 }
 
-/*# sourceMappingURL=acbd9dd54ab09745.css.map*/
+/*# sourceMappingURL=a0945e830f5de3bc.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 37194
-  Original File Name: 0b2570a721788050
+  Original File Name: 261472fd2701419b
 **/
 .content__03273 {
     display: flex;
@@ -19,7 +19,7 @@
 
 .iconContainer__03273 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -64,4 +64,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=0b2570a721788050.css.map*/
+/*# sourceMappingURL=261472fd2701419b.css.map*/

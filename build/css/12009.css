@@ -1,6 +1,6 @@
 /**
   Module ID: 12009
-  Original File Name: 27073638b529198e
+  Original File Name: 6462338386e244ec
 **/
 .header__553a5 {
     margin-top: -16px;
@@ -29,11 +29,11 @@
 }
 
 .theme-dark .headerArtPlaceholder__553a5 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .theme-light .headerArtPlaceholder__553a5 {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .editButton__553a5 {
@@ -56,8 +56,8 @@
 }
 
 .headerIcon__553a5 {
-    background-color: var(--background-primary);
-    border: 4px solid var(--background-primary);
+    background-color: var(--background-base-low);
+    border: 4px solid var(--background-base-low);
     margin-bottom: 16px;
     margin-top: -50px
 }
@@ -78,7 +78,7 @@
 }
 
 .container__7449f {
-    background: var(--bg-overlay-chat,var(--background-primary));
+    background: var(--bg-overlay-chat,var(--background-base-low));
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -208,7 +208,7 @@
 }
 
 .resourceChannel__7449f:hover {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     color: var(--interactive-hover)
 }
 
@@ -225,7 +225,7 @@
 
 .placeholderImage__7449f {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     display: flex;
     justify-content: center
 }
@@ -289,7 +289,7 @@
 }
 
 .clickableAction_c66e86:hover {
-    background-color: var(--background-modifier-accent)
+    background-color: var(--border-subtle)
 }
 
 .actionInfo_c66e86 {
@@ -308,7 +308,7 @@
 
 .channelIconContainer_c66e86,.rulesIconContainer_c66e86,.tagIconContainer_c66e86 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 20px;
     display: flex;
     height: 40px;
@@ -355,7 +355,7 @@
 }
 
 .row_d13feb:hover {
-    background-color: var(--background-modifier-accent)
+    background-color: var(--border-subtle)
 }
 
 .content_d13feb {
@@ -406,7 +406,7 @@
 
 .emptyContainer_d13feb {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -459,7 +459,7 @@
 }
 
 .avatarBackground__6f212 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 1000px;
     height: 48px;
     width: 48px
@@ -498,4 +498,4 @@
     top: 1px
 }
 
-/*# sourceMappingURL=27073638b529198e.css.map*/
+/*# sourceMappingURL=6462338386e244ec.css.map*/

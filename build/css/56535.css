@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: 50f5a4ce2289562b
+  Original File Name: 6e4027dcb0d447ad
 **/
 .errorBanner__3405b {
     color: var(--status-danger-text)
@@ -128,7 +128,7 @@
 
 .overlay_ab2592 {
     border: 2px solid var(--white-500);
-    box-shadow: color-mix(in srgb,var(--background-tertiary) 70%,transparent) 0 0 0 9999px;
+    box-shadow: color-mix(in srgb,var(--background-base-lowest) 70%,transparent) 0 0 0 9999px;
     box-sizing: content-box;
     pointer-events: none
 }
@@ -941,7 +941,7 @@
 }
 
 .wrapInput__38eb6.blur__38eb6:hover .ghost__38eb6 {
-    background: var(--bg-mod-subtle)
+    background: var(--background-mod-subtle)
 }
 
 .wrapInput__38eb6.blur__38eb6:hover .ghost__38eb6 svg path {
@@ -998,7 +998,7 @@
 }
 
 .main__4d307:after {
-    background: linear-gradient(180deg,var(--background-secondary),transparent 50px);
+    background: linear-gradient(180deg,var(--background-base-lower),transparent 50px);
     content: "";
     display: block;
     height: 100%;
@@ -1012,13 +1012,13 @@
 
 @media (min-width:485px) and (min-height:550px) {
     .main__4d307:after {
-        background: linear-gradient(180deg,var(--background-secondary),transparent 80px)
+        background: linear-gradient(180deg,var(--background-base-lower),transparent 80px)
     }
 }
 
 @media (min-width:820px) and (min-height:720px) {
     .main__4d307:after {
-        background: linear-gradient(180deg,var(--background-secondary),transparent 112px),linear-gradient(0deg,var(--background-secondary) 88px,transparent 200px)
+        background: linear-gradient(180deg,var(--background-base-lower),transparent 112px),linear-gradient(0deg,var(--background-base-lower) 88px,transparent 200px)
     }
 }
 
@@ -1154,7 +1154,7 @@
 
 .emojiErrorItem__67954 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -1459,4 +1459,4 @@
     }
 }
 
-/*# sourceMappingURL=50f5a4ce2289562b.css.map*/
+/*# sourceMappingURL=6e4027dcb0d447ad.css.map*/

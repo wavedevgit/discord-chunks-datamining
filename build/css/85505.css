@@ -1,6 +1,6 @@
 /**
   Module ID: 85505
-  Original File Name: d323933a1da82aa0
+  Original File Name: f4f5f794a376080d
 **/
 .header_f549e5 {
     align-items: center;
@@ -51,7 +51,7 @@
 }
 
 .infoGroup_f549e5 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     margin-bottom: var(--spacing-24);
     width: 100%
@@ -105,4 +105,4 @@
     min-width: 32px
 }
 
-/*# sourceMappingURL=d323933a1da82aa0.css.map*/
+/*# sourceMappingURL=f4f5f794a376080d.css.map*/

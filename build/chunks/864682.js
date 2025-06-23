@@ -22,7 +22,7 @@ function f() {
     g = (0, p.aW)(t),
     m = t !== u.aH.DEFAULT && (n || f),
     b = e ? 24 : 30,
-    y = (0, r.jsx)(l.gw7, {
+    O = (0, r.jsx)(l.gw7, {
       size: "custom",
       color: "currentColor",
       width: b,
@@ -31,5 +31,5 @@ function f() {
   return null != g && m ? (0, r.jsx)(d.Z, {
     id: t,
     width: 48
-  }) : y
+  }) : O
 }

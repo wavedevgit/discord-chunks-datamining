@@ -1,6 +1,6 @@
 /**
   Module ID: 38062
-  Original File Name: 1165a5f49b65ce8e
+  Original File Name: 27bcad4e3aa2e718
 **/
 .container__1ff2f {
     align-items: center;
@@ -51,7 +51,7 @@
 }
 
 .contentsContainer__6eb1d {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     display: flex;
     flex-direction: column;
     padding: 16px
@@ -74,7 +74,7 @@
 }
 
 .body__6fa2e {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     padding-bottom: 40px;
     padding-top: 16px
 }
@@ -111,4 +111,4 @@
     transition: opacity .3s ease
 }
 
-/*# sourceMappingURL=1165a5f49b65ce8e.css.map*/
+/*# sourceMappingURL=27bcad4e3aa2e718.css.map*/

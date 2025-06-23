@@ -1,6 +1,6 @@
 /**
   Module ID: 17439
-  Original File Name: d9f70920f220b08e
+  Original File Name: 7f4cb63bf373e1d8
 **/
 .footer__6be55 {
     display: flex;
@@ -19,7 +19,7 @@
 }
 
 .inviteIcon__6be55 {
-    background-color: var(--bg-mod-faint);
+    background-color: var(--background-mod-faint);
     border-radius: 8px;
     justify-content: center
 }
@@ -80,11 +80,11 @@
 }
 
 .settingsButton__6be55.settingsOpen__6be55,.settingsButton__6be55:hover {
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .advancedOptions__6be55 {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 8px
 }
 
@@ -99,7 +99,7 @@
 }
 
 .advancedOption__6be55:hover {
-    background-color: var(--bg-mod-faint)
+    background-color: var(--background-mod-faint)
 }
 
 .advancedOption__6be55:first-child {
@@ -336,7 +336,7 @@
 }
 
 .footer__67dba {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .copied__67dba {
@@ -548,7 +548,7 @@
 }
 
 .selectedIcon_e81c2b {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
-/*# sourceMappingURL=d9f70920f220b08e.css.map*/
+/*# sourceMappingURL=7f4cb63bf373e1d8.css.map*/

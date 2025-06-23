@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(460181),
   m = n(155409),
   b = n(944486),
-  y = n(594174),
-  O = n(431),
+  O = n(594174),
+  y = n(431),
   _ = n(774343),
   v = n(417363),
   C = n(941128),
@@ -53,19 +53,19 @@ function D(e) {
     user: p,
     badge: f,
     link: b,
-    showProgressBadge: y
-  } = e, [O, _] = i.useState(!1), [v, C] = i.useState(!1), [j, S] = i.useState(null), [w, D] = i.useState(0), L = (0, l.Ie)("home"), M = (0, h.Q3)("DefaultHomeButton"), k = (0, d.oq)().activePanel === d.wh.APP_ICON, U = () => {
+    showProgressBadge: O
+  } = e, [y, _] = i.useState(!1), [v, C] = i.useState(!1), [j, S] = i.useState(null), [w, D] = i.useState(0), L = (0, l.Ie)("home"), M = (0, h.Q3)("DefaultHomeButton"), k = (0, d.oq)().activePanel === d.wh.APP_ICON, U = () => {
     S(null), D(0), clearTimeout(j)
   };
   if (null == p) return null;
   let G = T.intl.string(T.t.YUU0RE);
   v && (G = s.K.get(N.wli) ? T.intl.string(T.t.nkq1l5) : T.intl.string(T.t.Be8Q5O));
   let B = null;
-  !o && y && (B = (0, r.jsx)(c.Z, {
+  !o && O && (B = (0, r.jsx)(c.Z, {
     className: A.downloadProgress,
     determineOwnVisibility: !1
   }));
-  let V = o || O || k,
+  let V = o || y || k,
     H = (0, r.jsx)(a.aRk, {
       selected: M || V,
       lowerBadge: f > 0 ? (0, I.Ne)(f) : null,
@@ -138,7 +138,7 @@ function D(e) {
       children: (0, r.jsxs)(E.H, {
         children: [(0, r.jsx)(x.Z, {
           selected: o,
-          hovered: O,
+          hovered: y,
           className: A.pill
         }), (0, r.jsx)(P.Z, {
           color: a.ua7.Colors.PRIMARY,
@@ -168,12 +168,12 @@ function L() {
     {
       unviewedTrialCount: l,
       unviewedDiscountCount: s
-    } = (0, o.cj)([O.Z], () => ({
-      unviewedTrialCount: O.Z.getUnacknowledgedOffers(i).length,
-      unviewedDiscountCount: O.Z.getUnacknowledgedDiscountOffers().length
+    } = (0, o.cj)([y.Z], () => ({
+      unviewedTrialCount: y.Z.getUnacknowledgedOffers(i).length,
+      unviewedDiscountCount: y.Z.getUnacknowledgedDiscountOffers().length
     })),
     a = l + s,
-    u = (0, o.e7)([y.default], () => y.default.getCurrentUser()),
+    u = (0, o.e7)([O.default], () => O.default.getCurrentUser()),
     d = (0, p.q)(),
     h = n + a + d,
     g = h === a && a > 0 && n + d === 0,

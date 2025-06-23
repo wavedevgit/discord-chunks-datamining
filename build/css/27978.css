@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: b4ca06d0a19cc972
+  Original File Name: d8cebd4a118a1203
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -18,7 +18,7 @@
 }
 
 .listContainer__2215e {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     margin-bottom: 16px;
     margin-top: 8px;
@@ -33,18 +33,18 @@
 }
 
 .divider__2215e {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     opacity: .5
 }
 
 .whatList__2215e {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     margin-bottom: 8px
 }
 
 .whatItem__2215e {
-    border-top: 1px solid var(--background-modifier-accent)
+    border-top: 1px solid var(--border-subtle)
 }
 
 .outerContainer__310be {
@@ -66,7 +66,7 @@
 }
 
 .separator__310be {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     margin: 8px 4px;
     width: 1px
 }
@@ -368,7 +368,7 @@
 }
 
 .divider__4591d {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border: none;
     height: 1px;
     margin-left: 0;
@@ -500,7 +500,7 @@
 }
 
 .inviteCard__742a4 {
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0,0,0,.2);
     margin: 8px;
@@ -852,7 +852,7 @@
 }
 
 .usagePill__8d70a {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 16px;
     font-size: 14px;
     margin-top: 16px;
@@ -889,7 +889,7 @@
 }
 
 .usagePill__74f72 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     display: inline-block
 }
 
@@ -936,8 +936,8 @@
 
 .listItemContainer__7c901 {
     align-items: center;
-    background-color: var(--background-primary);
-    border: 1px solid var(--background-modifier-accent);
+    background-color: var(--background-base-low);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
     display: flex;
@@ -999,7 +999,7 @@
 
 .list__920b8 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     display: flex;
     flex-direction: column
@@ -1012,7 +1012,7 @@
 }
 
 .separator__920b8 {
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     margin-left: 16px;
     width: calc(100% - 16px)
 }
@@ -1290,7 +1290,7 @@
 
 .replyBadge_c19a55 {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     color: var(--header-secondary);
     display: flex;
     justify-content: center
@@ -1314,7 +1314,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55>span {
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: 4px;
     padding: 1px 4px 0
 }
@@ -1324,7 +1324,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55:hover>span {
-    background: var(--bg-mod-faint)
+    background: var(--background-mod-faint)
 }
 
 .ticketIcon_c19a55,.userJoinSystemMessageIcon_c19a55 {
@@ -1576,7 +1576,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -2497,7 +2497,7 @@
 
 .container__394db.isOverlayContainer__394db {
     align-content: center;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: 4px;
     display: flex;
     flex: none;
@@ -2530,7 +2530,7 @@
 
 .upsellFooter__5e07c {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
@@ -2616,7 +2616,7 @@
 }
 
 .customizationSection__42179.opened__42179 {
-    border-top: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--border-subtle);
     margin-top: var(--spacing-16);
     max-height: 220px;
     padding-top: var(--spacing-16)
@@ -2637,7 +2637,7 @@
 }
 
 .headerIconWrapper__42179 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-xl);
     height: 40px;
     justify-content: center;
@@ -2867,11 +2867,11 @@
 }
 
 .column__1e128:nth-child(odd) {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .column__1e128:nth-child(2n) {
-    background-color: var(--background-primary)
+    background-color: var(--background-base-low)
 }
 
 .column__1e128:first-child {
@@ -3075,7 +3075,7 @@
 }
 
 .divider_d332d2 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     height: 1px;
     margin-bottom: 16px;
     margin-top: 16px;
@@ -3101,7 +3101,7 @@
 }
 
 .messagePositive_d332d2 {
-    color: var(--text-positive)
+    color: var(--text-feedback-positive)
 }
 
 .inviteBirthdayInput_d332d2 {
@@ -3159,7 +3159,7 @@
 }
 
 .divider__5c799 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     margin: 24px 0
 }
 
@@ -3168,7 +3168,7 @@
 }
 
 .channelsWrapper__5c799,.rolesWrapper__5c799 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px
 }
 
@@ -3177,7 +3177,7 @@
 }
 
 .protipText__5c799 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     font-weight: 600;
     text-transform: uppercase
 }
@@ -3286,12 +3286,12 @@
 
 .container_bba364,.reportButton_bba364 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     display: flex
 }
 
 .reportButton_bba364 {
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     cursor: pointer;
     justify-content: space-between;
     margin: 0 var(--spacing-16);
@@ -3307,4 +3307,4 @@
     height: 100px
 }
 
-/*# sourceMappingURL=b4ca06d0a19cc972.css.map*/
+/*# sourceMappingURL=d8cebd4a118a1203.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 19370
-  Original File Name: 08268c45491f2b14
+  Original File Name: 1a387ad116c964fc
 **/
 @use postcss-pxtorem;
 
@@ -187,7 +187,7 @@
 
 .replyBadge_c19a55 {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     color: var(--header-secondary);
     display: flex;
     justify-content: center
@@ -211,7 +211,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55>span {
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: 4px;
     padding: 1px 4px 0
 }
@@ -221,7 +221,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55:hover>span {
-    background: var(--bg-mod-faint)
+    background: var(--background-mod-faint)
 }
 
 .ticketIcon_c19a55,.userJoinSystemMessageIcon_c19a55 {
@@ -473,7 +473,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -967,12 +967,12 @@
 }
 
 .actionButton_cc1819:hover {
-    background-color: var(--bg-mod-faint);
+    background-color: var(--background-mod-faint);
     color: var(--interactive-hover)
 }
 
 .actionButton_cc1819.selected_cc1819,.actionButton_cc1819:active {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     color: var(--interactive-active)
 }
 
@@ -1056,4 +1056,4 @@
     top: 0
 }
 
-/*# sourceMappingURL=08268c45491f2b14.css.map*/
+/*# sourceMappingURL=1a387ad116c964fc.css.map*/

@@ -1,13 +1,13 @@
 /**
   Module ID: 26545
-  Original File Name: 4c930a3eb25807d7
+  Original File Name: 97d4a624eef0a3e9
 **/
 .content_d7fb2d {
     padding: 16px
 }
 
 .card_d7fb2d {
-    background: var(--bg-mod-faint);
+    background: var(--background-mod-faint);
     border-radius: var(--radius-sm);
     margin-top: 16px;
     pointer-events: none
@@ -27,4 +27,4 @@
     padding: 8px
 }
 
-/*# sourceMappingURL=4c930a3eb25807d7.css.map*/
+/*# sourceMappingURL=97d4a624eef0a3e9.css.map*/

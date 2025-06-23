@@ -1,6 +1,6 @@
 /**
   Module ID: 73628
-  Original File Name: ace38d12fff410d7
+  Original File Name: 1fd0a64d7e4c77bd
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -156,7 +156,7 @@
 }
 
 .solidBackground__79d38 {
-    background: var(--background-secondary)
+    background: var(--background-base-lower)
 }
 
 .theme-dark .opaqueBackground__79d38 {
@@ -164,7 +164,7 @@
 }
 
 .theme-light .opaqueBackground__79d38 {
-    background: var(--background-secondary)
+    background: var(--background-base-lower)
 }
 
 .productThumbnailContainer__79d38 {
@@ -217,7 +217,7 @@
 
 .productDetails__79d38 {
     align-content: flex-start;
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     display: flex;
     flex-direction: row;
     flex-grow: 1;
@@ -565,7 +565,7 @@
 }
 
 .customImageActionContainer_da21bd {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-xs);
     box-shadow: var(--elevation-stroke);
     display: flex;
@@ -748,7 +748,7 @@
 
 .attachedRoleContainer_e3f977 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--background-modifier-active);
     border-radius: 6px;
     display: inline-flex;
@@ -795,7 +795,7 @@
 }
 
 .modalHeader__7fffd {
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     gap: 8px;
     justify-content: space-between;
     padding: 24px 16px 24px 24px
@@ -808,7 +808,7 @@
 }
 
 .modalContent__7fffd {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     display: grid;
     grid-template-columns: 1fr 1px 388px;
     padding: 0
@@ -911,4 +911,4 @@
     gap: 16px
 }
 
-/*# sourceMappingURL=ace38d12fff410d7.css.map*/
+/*# sourceMappingURL=1fd0a64d7e4c77bd.css.map*/

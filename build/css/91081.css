@@ -1,6 +1,6 @@
 /**
   Module ID: 91081
-  Original File Name: 86cb86acc32a730c
+  Original File Name: 49937277fe8dbaf9
 **/
 .closeButton__47998 {
     position: absolute;
@@ -20,7 +20,7 @@
 }
 
 .conflictButton__47998 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid;
     height: 100px;
     justify-content: flex-start;
@@ -184,4 +184,4 @@
     grid-template-columns: auto 1fr
 }
 
-/*# sourceMappingURL=86cb86acc32a730c.css.map*/
+/*# sourceMappingURL=49937277fe8dbaf9.css.map*/

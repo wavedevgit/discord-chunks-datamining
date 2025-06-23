@@ -1,6 +1,6 @@
 /**
   Module ID: 92241
-  Original File Name: 66c6fb1944271aa4
+  Original File Name: 4cadfd8805d017f4
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -429,7 +429,7 @@
 
 .container__394db.isOverlayContainer__394db {
     align-content: center;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: 4px;
     display: flex;
     flex: none;
@@ -462,7 +462,7 @@
 
 .upsellFooter__5e07c {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
@@ -517,4 +517,4 @@
     padding-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=66c6fb1944271aa4.css.map*/
+/*# sourceMappingURL=4cadfd8805d017f4.css.map*/

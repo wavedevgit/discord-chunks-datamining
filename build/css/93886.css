@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: b6146bb6576031cf
+  Original File Name: dd93c0e74a4879e1
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -42,8 +42,8 @@
 }
 
 .tabBar_fe7ab2 {
-    background: var(--background-secondary);
-    border-bottom: 1px solid var(--background-tertiary);
+    background: var(--background-base-lower);
+    border-bottom: 1px solid var(--background-base-lowest);
     flex-shrink: 0;
     height: 36px;
     overflow: hidden;
@@ -103,7 +103,7 @@
 }
 
 .tableHeader_fe7ab2 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     height: 24px;
     text-transform: uppercase
 }
@@ -144,7 +144,7 @@
 
 .properties_fe7ab2 {
     align-items: baseline;
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     box-shadow: var(--elevation-low);
     display: grid;
     gap: 16px 8px;
@@ -187,7 +187,7 @@
 
 .toolbar_fe7ab2 {
     align-items: center;
-    border-bottom: 1px solid var(--background-tertiary);
+    border-bottom: 1px solid var(--background-base-lowest);
     display: flex;
     flex-direction: row;
     height: 34px
@@ -219,7 +219,7 @@
 }
 
 .locatorEntry__19739 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -270,7 +270,7 @@
 }
 
 .dismissButton_dd40b0 {
-    background-color: var(--bg-base-primary);
+    background-color: var(--background-base-low);
     border: 1px solid var(--border-subtle);
     border-radius: 16px;
     box-shadow: var(--shadow-border) var(--shadow-high);
@@ -474,8 +474,8 @@
 }
 
 .container_a51e6d {
-    background: var(--background-primary);
-    border-top: 1px solid var(--background-tertiary);
+    background: var(--background-base-low);
+    border-top: 1px solid var(--background-base-lowest);
     color: var(--text-normal);
     position: relative
 }
@@ -519,7 +519,7 @@
 }
 
 .inspectorContainer__583eb {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     flex: 1;
     padding: 8px
 }
@@ -581,7 +581,7 @@
 
 .toolbar_fb48ea {
     align-items: center;
-    border-bottom: 1px solid var(--background-tertiary);
+    border-bottom: 1px solid var(--background-base-lowest);
     display: flex;
     flex-direction: row;
     height: 34px
@@ -593,7 +593,7 @@
 }
 
 .toolbarButton_fb48ea:hover {
-    background: var(--background-secondary)
+    background: var(--background-base-lower)
 }
 
 .toolbarDivider_fb48ea {
@@ -768,7 +768,7 @@
 }
 
 .override__0b90c {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     display: flex;
@@ -941,7 +941,7 @@
 
 .toolbar_a81334 {
     align-items: center;
-    border-bottom: 1px solid var(--background-tertiary);
+    border-bottom: 1px solid var(--background-base-lowest);
     display: flex;
     flex-direction: row;
     height: 34px;
@@ -986,14 +986,14 @@
 }
 
 .inspectorContainer_a81334 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     flex: 1;
     padding: 8px
 }
 
 .actionProperties_a81334 {
-    background: var(--background-primary);
-    border-bottom: 1px solid var(--background-tertiary);
+    background: var(--background-base-low);
+    border-bottom: 1px solid var(--background-base-lowest);
     box-shadow: var(--elevation-high)
 }
 
@@ -1006,7 +1006,7 @@
 }
 
 .errorToolbar_a81334 {
-    border-top: 1px solid var(--background-tertiary);
+    border-top: 1px solid var(--background-base-lowest);
     flex: 0 0 auto
 }
 
@@ -1057,7 +1057,7 @@
 
 .card__23012 {
     align-items: flex-start;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-medium);
     display: flex;
@@ -1076,7 +1076,7 @@
 }
 
 .clickableGroup__23012:hover {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     cursor: pointer
 }
 
@@ -1141,7 +1141,7 @@
 
 .card_b4dcd9 {
     align-items: flex-start;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-medium);
     margin: var(--spacing-4) 0;
@@ -1327,7 +1327,7 @@
 }
 
 .container_f4e6be {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     padding: var(--spacing-16)
 }
@@ -1342,14 +1342,14 @@
 
 .safetyFlow__300a2 {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     display: flex;
     height: 100%;
     justify-content: center
 }
 
 .container__300a2 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-lg);
     box-shadow: var(--elevation-high);
     max-width: 600px;
@@ -1365,7 +1365,7 @@
 }
 
 .verification_dede4b {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     height: 100%;
     width: 100%
 }
@@ -1450,7 +1450,7 @@
 }
 
 .verificationBlock_dede4b:hover {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .theme-light .verificationBlock_dede4b {
@@ -1524,7 +1524,7 @@
 }
 
 .panelGroup_b6e84c {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 8px;
     gap: 8px
 }
@@ -1544,7 +1544,7 @@
 }
 
 .countryOption_b9da6a:has(.header_b9da6a) {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     cursor: default
 }
 
@@ -1569,7 +1569,7 @@
 }
 
 .panelGroup_ef5082 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 8px;
     gap: 4px;
     padding: 12px
@@ -1614,14 +1614,14 @@
 }
 
 .code_f1a68f {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     color: var(--text-secondary);
     font-family: monospace;
     font-size: 11px;
     line-height: 14px;
     overflow-x: auto;
     padding: 8px;
-    scrollbar-color: var(--background-primary) var(--background-tertiary);
+    scrollbar-color: var(--background-base-low) var(--background-base-lowest);
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text;
@@ -1931,7 +1931,7 @@
 
 .replyBadge_c19a55 {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     color: var(--header-secondary);
     display: flex;
     justify-content: center
@@ -1955,7 +1955,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55>span {
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: 4px;
     padding: 1px 4px 0
 }
@@ -1965,7 +1965,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55:hover>span {
-    background: var(--bg-mod-faint)
+    background: var(--background-mod-faint)
 }
 
 .ticketIcon_c19a55,.userJoinSystemMessageIcon_c19a55 {
@@ -2217,7 +2217,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -3152,7 +3152,7 @@
 
 .container__394db.isOverlayContainer__394db {
     align-content: center;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: 4px;
     display: flex;
     flex: none;
@@ -3185,7 +3185,7 @@
 
 .upsellFooter__5e07c {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
@@ -3470,7 +3470,7 @@
 
 .toolbar__0939d {
     align-items: center;
-    border-bottom: 1px solid var(--background-tertiary);
+    border-bottom: 1px solid var(--background-base-lowest);
     display: flex;
     flex-direction: row;
     height: 34px;
@@ -3500,7 +3500,7 @@
 }
 
 .inspectorContainer__0939d {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     flex: 1;
     padding: 8px
 }
@@ -3548,7 +3548,7 @@
 }
 
 .container_db0ccb {
-    background: var(--background-primary);
+    background: var(--background-base-low);
     color: var(--text-normal);
     position: relative
 }
@@ -3563,7 +3563,7 @@
 }
 
 .sidebarContent_db0ccb {
-    border-left: 1px solid var(--background-tertiary);
+    border-left: 1px solid var(--background-base-lowest);
     display: flex;
     flex-direction: column;
     height: 100%
@@ -3587,7 +3587,7 @@
 }
 
 .popoutContainer_db0ccb {
-    background: var(--background-primary);
+    background: var(--background-base-low);
     color: var(--text-normal);
     display: flex;
     flex-direction: column;
@@ -3596,4 +3596,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=b6146bb6576031cf.css.map*/
+/*# sourceMappingURL=dd93c0e74a4879e1.css.map*/

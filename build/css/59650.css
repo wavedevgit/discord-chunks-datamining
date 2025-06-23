@@ -1,6 +1,6 @@
 /**
   Module ID: 59650
-  Original File Name: a482074b09295ce6
+  Original File Name: 3faed597182c1f5c
 **/
 .buttonContainer__3e6b4 {
     margin-top: var(--spacing-32)
@@ -57,7 +57,7 @@
 }
 
 .tipNumber__5bc4e {
-    background: var(--bg-mod-subtle);
+    background: var(--background-mod-subtle);
     border-radius: var(--radius-round);
     flex-direction: column;
     justify-content: center;
@@ -83,7 +83,7 @@
 }
 
 .tipsSection__5bc4e {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 0 0 var(--radius-sm) var(--radius-sm);
     text-align: start
 }
@@ -105,4 +105,4 @@
     text-decoration: underline
 }
 
-/*# sourceMappingURL=a482074b09295ce6.css.map*/
+/*# sourceMappingURL=3faed597182c1f5c.css.map*/

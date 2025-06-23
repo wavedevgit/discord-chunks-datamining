@@ -1,6 +1,6 @@
 /**
   Module ID: 958
-  Original File Name: 2873618f977956e6
+  Original File Name: 85d3eb9f13a3846e
 **/
 .header__8f3be {
     gap: var(--spacing-16);
@@ -27,7 +27,7 @@
 }
 
 .notice__8f3be {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--border-faint);
     border-radius: var(--radius-sm);
     box-shadow: none;
@@ -58,4 +58,4 @@
     color: var(--text-danger)
 }
 
-/*# sourceMappingURL=2873618f977956e6.css.map*/
+/*# sourceMappingURL=85d3eb9f13a3846e.css.map*/

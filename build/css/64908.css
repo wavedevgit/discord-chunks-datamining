@@ -1,6 +1,6 @@
 /**
   Module ID: 64908
-  Original File Name: fad4108afb1898da
+  Original File Name: ece2051d0d23d307
 **/
 .header__81f73 {
     text-align: center;
@@ -32,12 +32,12 @@
 }
 
 .searchBar__81f73 {
-    background-color: var(--background-secondary);
-    border-color: var(--background-tertiary);
+    background-color: var(--background-base-lower);
+    border-color: var(--background-base-lowest);
     flex-shrink: 0;
     margin-bottom: 16px;
     margin-left: var(--custom-add-permissions-modal-focus-ring-width);
     margin-right: 16px
 }
 
-/*# sourceMappingURL=fad4108afb1898da.css.map*/
+/*# sourceMappingURL=ece2051d0d23d307.css.map*/

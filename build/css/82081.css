@@ -1,6 +1,6 @@
 /**
   Module ID: 82081
-  Original File Name: 24ce14b3a0487252
+  Original File Name: d33a5ac1a5012798
 **/
 .closeButton_b425c1 {
     align-items: center;
@@ -192,7 +192,7 @@
 }
 
 .secondaryButton__4d8b6 {
-    background: var(--bg-mod-subtle);
+    background: var(--background-mod-subtle);
     border: 1px solid var(--border-faint);
     border-radius: var(--radius-sm);
     color: var(--text-primary);
@@ -212,4 +212,4 @@
     gap: 12px
 }
 
-/*# sourceMappingURL=24ce14b3a0487252.css.map*/
+/*# sourceMappingURL=d33a5ac1a5012798.css.map*/

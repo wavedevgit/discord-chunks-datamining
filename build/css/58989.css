@@ -1,6 +1,6 @@
 /**
   Module ID: 58989
-  Original File Name: 1106b7c2b0040108
+  Original File Name: 82df9450b3e6ed6e
 **/
 .header__6e6ad {
     align-items: center;
@@ -46,7 +46,7 @@
 
 .container_aea6af {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     display: flex;
     height: 44px
 }
@@ -64,7 +64,7 @@
 
 .notice_d37fb3 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 4px;
     display: flex
 }
@@ -259,4 +259,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=1106b7c2b0040108.css.map*/
+/*# sourceMappingURL=82df9450b3e6ed6e.css.map*/

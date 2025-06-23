@@ -1,6 +1,6 @@
 /**
   Module ID: 95140
-  Original File Name: 1dd0d53ccb9c6050
+  Original File Name: f27e4be3fb442769
 **/
 .formItem_d48a51 {
     margin-bottom: 24px;
@@ -18,8 +18,8 @@
 }
 
 .formFieldWrapper_d48a51 {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary)
+    background-color: var(--background-base-lower);
+    border: 1px solid var(--background-base-lowest)
 }
 
 .verificationFieldWrapper_d48a51 {
@@ -39,7 +39,7 @@
 }
 
 .verificationCheckmark_d48a51 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     height: 16px;
     margin-right: 8px;
     width: 16px
@@ -53,7 +53,7 @@
 
 .termsRow_d48a51 {
     align-items: flex-start;
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     display: flex;
     padding: 16px 4px
 }
@@ -95,11 +95,11 @@
 }
 
 .radioItem_d48a51 {
-    border: 1px solid var(--background-modifier-accent)
+    border: 1px solid var(--border-subtle)
 }
 
 .disabledFieldBackground_d48a51 {
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .termsFieldBody_d48a51 {
@@ -137,7 +137,7 @@
 }
 
 .multipleChoiceItem_d48a51 {
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
-/*# sourceMappingURL=1dd0d53ccb9c6050.css.map*/
+/*# sourceMappingURL=f27e4be3fb442769.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 63141
-  Original File Name: 6243c015000ac982
+  Original File Name: d7b6b56baee0816c
 **/
 .key__1728a {
     background-color: var(--brand-500);
@@ -431,7 +431,7 @@
 }
 
 .iconContainer__3371b {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-xs);
     box-sizing: border-box;
     height: 100%;
@@ -624,7 +624,7 @@
 
 .sidebar__9835e {
     align-items: stretch;
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     flex-direction: column;
     overflow: hidden;
     width: 240px
@@ -643,7 +643,7 @@
 
 .header__9835e {
     align-items: center;
-    background-color: var(--background-secondary)!important;
+    background-color: var(--background-base-lower)!important;
     border-radius: 0!important;
     box-sizing: border-box;
     flex-shrink: 0;
@@ -715,7 +715,7 @@
 }
 
 .searchBar_ee924e .searchBarComponent_ee924e {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 4px;
     box-shadow: none;
     color: var(--text-muted);
@@ -736,7 +736,7 @@
 }
 
 .base_e3f659 {
-    background: var(--background-tertiary)!important;
+    background: var(--background-base-lowest)!important;
     display: flex;
     flex-direction: row;
     width: 312px
@@ -1128,7 +1128,7 @@
 }
 
 .locked__99ff4 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 4px;
     color: var(--text-normal)
 }
@@ -1443,4 +1443,4 @@
     transform: translateX(-50%)
 }
 
-/*# sourceMappingURL=6243c015000ac982.css.map*/
+/*# sourceMappingURL=d7b6b56baee0816c.css.map*/

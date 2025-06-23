@@ -14,8 +14,8 @@ var l, i = n(442837),
   h = n(158776),
   p = n(699516),
   g = n(594174),
-  y = n(55589),
-  O = n(981631);
+  O = n(55589),
+  y = n(981631);
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,10 +89,10 @@ let S = new j(o.Z, {
       m = e.activity, v = e.resolve, x = [], null == r && (r = new s.ZP((e, t) => {
         E = ("" === t.trim() ? function() {
           let e = [];
-          return y.Z.getPrivateChannelIds().forEach(t => {
+          return O.Z.getPrivateChannelIds().forEach(t => {
             let n = u.Z.getChannel(t);
             if (null != n)
-              if (n.type === O.d4z.DM) {
+              if (n.type === y.d4z.DM) {
                 let t = n.getRecipientId(),
                   r = null != t ? g.default.getUser(t) : null;
                 null != r && e.push({
@@ -159,12 +159,12 @@ let S = new j(o.Z, {
         n = e.userId;
       null != t ? a.Z.sendActivityInvite({
         channelId: t,
-        type: O.mFx.JOIN,
+        type: y.mFx.JOIN,
         activity: m,
         location: "Channel Text Area - Invite to Join Modal"
       }).then(() => C(t)) : null != n && a.Z.sendActivityInviteUser({
         userId: n,
-        type: O.mFx.JOIN,
+        type: y.mFx.JOIN,
         activity: m,
         location: "Channel Text Area - Invite to Join Modal"
       }).then(() => C(n))

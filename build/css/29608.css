@@ -1,6 +1,6 @@
 /**
   Module ID: 29608
-  Original File Name: d59ef702c56cf975
+  Original File Name: bfb22586d9c40016
 **/
 .modalHeader_d295eb {
     display: flex;
@@ -48,7 +48,7 @@
 }
 
 .channelIconContainer_d295eb {
-    background: var(--bg-mod-subtle);
+    background: var(--background-mod-subtle);
     border-radius: var(--radius-round);
     height: 32px;
     width: 32px
@@ -70,4 +70,4 @@
     color: var(--interactive-normal)
 }
 
-/*# sourceMappingURL=d59ef702c56cf975.css.map*/
+/*# sourceMappingURL=bfb22586d9c40016.css.map*/

@@ -62,19 +62,19 @@ let w = l.forwardRef(function(e, t) {
     null != n && N && (0, C.ZDy)(async () => e => (0, r.jsx)(m.Z, H(_({}, e), {
       guild: n
     })))
-  }, [n, N]), D = (0, u.e7)([j.Z], () => j.Z.getSearchStateByGuildId(n.id), [n.id], s()), Z = (0, f.gm)(n.id), [R, L] = l.useState(D.query), P = null != D.selectedSort && D.selectedSort !== h.d$.ORDER_BY_GUILD_JOINED_AT_DESC && D.selectedSort !== h.d$.ORDER_BY_UNSPECIFIED, I = l.useCallback(e => {
+  }, [n, N]), D = (0, u.e7)([j.Z], () => j.Z.getSearchStateByGuildId(n.id), [n.id], s()), Z = (0, f.gm)(n.id), [L, R] = l.useState(D.query), P = null != D.selectedSort && D.selectedSort !== h.d$.ORDER_BY_GUILD_JOINED_AT_DESC && D.selectedSort !== h.d$.ORDER_BY_UNSPECIFIED, I = l.useCallback(e => {
     let t = e.trim();
     t.length > 0 && Z(), (0, g.Dr)(n.id, {
       query: t
     })
   }, [n.id, Z]), M = l.useMemo(() => i()(I, 300), [I]), V = l.useCallback(e => {
-    L(e), M(e)
+    R(e), M(e)
   }, [M]), E = l.useCallback(() => {
-    L(""), I("")
+    R(""), I("")
   }, [I]);
   return l.useImperativeHandle(t, () => ({
     resetSearchText() {
-      L("")
+      R("")
     }
   })), (0, r.jsxs)("div", {
     className: y.searchHeaderContainer,
@@ -93,7 +93,7 @@ let w = l.forwardRef(function(e, t) {
         className: y.searchHeader,
         children: (0, r.jsx)(C.E1j, {
           className: y.searchBar,
-          query: R,
+          query: L,
           placeholder: O.intl.string(O.t.NVoAMz),
           onChange: V,
           onClear: E,

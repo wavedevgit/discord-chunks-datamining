@@ -1,9 +1,9 @@
 /**
   Module ID: 83098
-  Original File Name: 028ee2b1ac4770b1
+  Original File Name: 11419e6356c75fb0
 **/
 .modalRoot__85e39 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     overflow: hidden
 }
@@ -46,7 +46,7 @@
 }
 
 .modalContent__85e39 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     padding: 16px 0
 }
 
@@ -201,4 +201,4 @@
     width: 4px
 }
 
-/*# sourceMappingURL=028ee2b1ac4770b1.css.map*/
+/*# sourceMappingURL=11419e6356c75fb0.css.map*/

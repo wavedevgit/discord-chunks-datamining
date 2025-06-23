@@ -1,6 +1,6 @@
 /**
   Module ID: 11678
-  Original File Name: d5a2121330f196ca
+  Original File Name: 42e3dfd4be1ab269
 **/
 .scroller__95bea {
     display: flex;
@@ -58,7 +58,7 @@
 }
 
 .textarea__9daae:focus {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .memberSinceWrapper_c4eb81 {
@@ -247,7 +247,7 @@
 }
 
 .connectedAccountVanityMetadataTag_fffe42 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 12px;
     padding: 1px 8px
 }
@@ -636,7 +636,7 @@
 
 .row__19fd1 {
     align-items: center;
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     border-color: var(--border-faint);
     display: flex;
     gap: var(--spacing-16);
@@ -696,7 +696,7 @@
 
 .number__19fd1 {
     align-items: center;
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: var(--radius-round);
     height: 32px;
     justify-content: center;
@@ -714,7 +714,7 @@
 }
 
 .tableRowGroup__19fd1 .content__19fd1 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     flex-grow: 1;
     flex-shrink: 0;
@@ -795,4 +795,4 @@
     gap: 8px
 }
 
-/*# sourceMappingURL=d5a2121330f196ca.css.map*/
+/*# sourceMappingURL=42e3dfd4be1ab269.css.map*/

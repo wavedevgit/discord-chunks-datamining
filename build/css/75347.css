@@ -1,10 +1,10 @@
 /**
   Module ID: 75347
-  Original File Name: 7cb11975db0f3914
+  Original File Name: 3d8af7d4c65576aa
 **/
 .avatarBackground_eb2508 {
     align-items: center;
-    background-color: var(--bg-mod-strong);
+    background-color: var(--background-mod-strong);
     border-radius: 50%;
     height: 92px;
     justify-content: center;
@@ -60,7 +60,7 @@
 }
 
 .line_d878e7 {
-    background-color: var(--bg-mod-strong);
+    background-color: var(--background-mod-strong);
     height: 4px;
     position: absolute;
     top: var(--spacing-12);
@@ -113,7 +113,7 @@
 
 .marker_d878e7 {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 50%;
     display: flex;
     height: 28px;
@@ -123,14 +123,14 @@
 }
 
 .marker_d878e7 .empty_d878e7 {
-    background-color: var(--bg-mod-strong);
+    background-color: var(--background-mod-strong);
     border-radius: 50%;
     height: 16px;
     width: 16px
 }
 
 .dropdown_edf232 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-md);
     margin-bottom: 8px
 }
@@ -149,7 +149,7 @@
 }
 
 .headerIconWrapper_edf232 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-xl);
     height: 40px;
     justify-content: center;
@@ -186,7 +186,7 @@
 }
 
 .itemDetail_edf232 {
-    background-color: var(--bg-mod-strong);
+    background-color: var(--background-mod-strong);
     border-radius: var(--radius-md);
     cursor: pointer;
     height: -webkit-max-content;
@@ -216,7 +216,7 @@
 }
 
 .timestamp_edf232 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .newBadge_edf232,.timestamp_edf232 {
@@ -232,7 +232,7 @@
 }
 
 .content_edf232 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     min-height: 100px;
     min-width: 200px;
@@ -240,7 +240,7 @@
 }
 
 .paginationButton_edf232 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-bottom-left-radius: var(--radius-md);
     border-bottom-right-radius: var(--radius-md);
     color: var(--white);
@@ -269,7 +269,7 @@
 }
 
 .iconBackground_edf232 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 36px;
     display: inline-block;
     padding: 10px
@@ -305,7 +305,7 @@ div.nagbar_d74ef8 {
 
 .container__3167a {
     align-items: center;
-    background: var(--background-primary)
+    background: var(--background-base-low)
 }
 
 .container__3167a,.pageContainer__3167a {
@@ -337,4 +337,4 @@ div.nagbar_d74ef8 {
     display: flex
 }
 
-/*# sourceMappingURL=7cb11975db0f3914.css.map*/
+/*# sourceMappingURL=3d8af7d4c65576aa.css.map*/

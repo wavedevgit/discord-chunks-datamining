@@ -176,7 +176,7 @@ function G(e) {
     header: (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(f.bgT, {
         size: "xs",
-        color: m.Z.colors.TEXT_POSITIVE.css
+        color: m.Z.colors.TEXT_FEEDBACK_POSITIVE.css
       }), (0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-positive",

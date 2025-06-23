@@ -1,6 +1,6 @@
 /**
   Module ID: 29922
-  Original File Name: d71999fbf6f3db84
+  Original File Name: dd5721f7fbb5d5fa
 **/
 .header__7e090 {
     background-image: url(/assets/cb4131669938b6ad.svg);
@@ -43,7 +43,7 @@
 
 .upsellFooter__5e07c {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
@@ -136,7 +136,7 @@
 }
 
 .planSelectDivider__945b8 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     height: 1px;
     margin: 16px 0
 }
@@ -191,7 +191,7 @@
 
 .existingSlotNotice__945b8 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
@@ -223,7 +223,7 @@
 }
 
 .reverseTrialContextInfoDivider__945b8 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     height: 1px
 }
 
@@ -302,7 +302,7 @@
 }
 
 .perksList__3bf54 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     margin: 16px 0
 }
@@ -348,7 +348,7 @@
 }
 
 .breadcrumbsWrapper__65b48 {
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     padding: 0 16px 16px
 }
 
@@ -385,4 +385,4 @@
     padding-top: 16px
 }
 
-/*# sourceMappingURL=d71999fbf6f3db84.css.map*/
+/*# sourceMappingURL=dd5721f7fbb5d5fa.css.map*/

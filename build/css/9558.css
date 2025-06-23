@@ -1,9 +1,9 @@
 /**
   Module ID: 9558
-  Original File Name: 64828e4786897e78
+  Original File Name: 0c0156021010d7e4
 **/
 .container_fa0751 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     display: flex;
     flex-direction: column;
     padding: 40px 28px 24px 24px;
@@ -62,7 +62,7 @@
 }
 
 .divider_fa0751 {
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     margin-bottom: 16px;
     margin-top: 16px
 }
@@ -118,7 +118,7 @@
 }
 
 .container_afa88e {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     display: flex;
     flex-direction: column;
     max-width: 279px;
@@ -148,7 +148,7 @@
 }
 
 .selected_afa88e {
-    background-color: var(--background-modifier-accent)
+    background-color: var(--border-subtle)
 }
 
 .circle_afa88e {
@@ -175,7 +175,7 @@
 }
 
 .modalContent__6f8c0 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 12px;
     display: flex;
     flex-direction: row;
@@ -236,7 +236,7 @@
 
 .templateNameRow__6f8c0 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     display: flex;
     flex-direction: row;
     height: 24px;
@@ -276,4 +276,4 @@
     z-index: 100
 }
 
-/*# sourceMappingURL=64828e4786897e78.css.map*/
+/*# sourceMappingURL=0c0156021010d7e4.css.map*/

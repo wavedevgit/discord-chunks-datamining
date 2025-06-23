@@ -1,6 +1,6 @@
 /**
   Module ID: 29328
-  Original File Name: 1edc749257a2b2d9
+  Original File Name: 7e3459648d860e60
 **/
 .icon__2894c {
     display: block;
@@ -10,7 +10,7 @@
 }
 
 .iconWithGuildIcon__2894c {
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: var(--radius-round);
     color: var(--text-secondary);
     height: 12px;
@@ -28,7 +28,7 @@
 
 .acronym__2894c {
     align-items: center;
-    background-color: var(--bg-mod-strong);
+    background-color: var(--background-mod-strong);
     color: var(--text-normal);
     display: flex;
     font-weight: 500;
@@ -54,7 +54,7 @@
 }
 
 .inviteIcon__6be55 {
-    background-color: var(--bg-mod-faint);
+    background-color: var(--background-mod-faint);
     border-radius: 8px;
     justify-content: center
 }
@@ -115,11 +115,11 @@
 }
 
 .settingsButton__6be55.settingsOpen__6be55,.settingsButton__6be55:hover {
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .advancedOptions__6be55 {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 8px
 }
 
@@ -134,7 +134,7 @@
 }
 
 .advancedOption__6be55:hover {
-    background-color: var(--bg-mod-faint)
+    background-color: var(--background-mod-faint)
 }
 
 .advancedOption__6be55:first-child {
@@ -371,7 +371,7 @@
 }
 
 .footer__67dba {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .copied__67dba {
@@ -583,7 +583,7 @@
 }
 
 .selectedIcon_e81c2b {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
-/*# sourceMappingURL=1edc749257a2b2d9.css.map*/
+/*# sourceMappingURL=7e3459648d860e60.css.map*/

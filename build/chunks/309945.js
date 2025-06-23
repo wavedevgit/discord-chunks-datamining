@@ -28,7 +28,7 @@ function _(e) {
   return x <= 0 ? null : (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(o.P4T, {
-      color: l.Z.colors.TEXT_WARNING,
+      color: l.Z.colors.TEXT_FEEDBACK_WARNING,
       className: m.icon
     }), (0, r.jsx)(a.xv, {
       variant: "text-md/semibold",

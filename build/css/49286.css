@@ -1,6 +1,6 @@
 /**
   Module ID: 49286
-  Original File Name: 61b009e4953fecaa
+  Original File Name: 09908d16820cb673
 **/
 .imageUploader_e4d0bf {
     font-size: 12px;
@@ -155,7 +155,7 @@
 }
 
 .group__344e6 {
-    border: 1px solid var(--background-tertiary);
+    border: 1px solid var(--background-base-lowest);
     border-radius: 4px;
     box-sizing: border-box;
     display: grid;
@@ -166,7 +166,7 @@
 
 .item__344e6 {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     display: flex;
     justify-content: center
 }
@@ -183,7 +183,7 @@
 .allow__344e6 {
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    color: var(--text-positive)
+    color: var(--text-feedback-positive)
 }
 
 .allow__344e6.selected__344e6 {
@@ -203,7 +203,7 @@
 }
 
 .passthrough__344e6.selected__344e6 {
-    background-color: var(--bg-mod-strong);
+    background-color: var(--background-mod-strong);
     color: var(--text-primary)
 }
 
@@ -264,7 +264,7 @@
 }
 
 .scroller__53543 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto
@@ -294,7 +294,7 @@
 }
 
 .iconBackground_b28dff {
-    fill: var(--background-secondary)
+    fill: var(--background-base-lower)
 }
 
 .icon_b28dff {
@@ -423,7 +423,7 @@
 }
 
 .group_f5fff4 {
-    border: 1px solid var(--background-tertiary);
+    border: 1px solid var(--background-base-lowest);
     border-radius: var(--radius-xs);
     box-sizing: border-box;
     cursor: pointer;
@@ -440,7 +440,7 @@
 
 .item_f5fff4 {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     display: flex;
     justify-content: center
 }
@@ -448,7 +448,7 @@
 .allow_f5fff4 {
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    color: var(--text-positive)
+    color: var(--text-feedback-positive)
 }
 
 .allow_f5fff4.selected_f5fff4 {
@@ -568,7 +568,7 @@
 }
 
 .modalSection__9c74b,.section__9c74b {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 0
 }
 
@@ -717,7 +717,7 @@
 }
 
 .theme-light .card__83361 {
-    border-color: var(--background-tertiary)
+    border-color: var(--background-base-lowest)
 }
 
 .theme-dark .rolePills__83361 {
@@ -802,7 +802,7 @@
 }
 
 .theme-light .card_ebafdd {
-    border-color: var(--background-tertiary)
+    border-color: var(--background-base-lowest)
 }
 
 .theme-dark .card_ebafdd {
@@ -869,7 +869,7 @@
 }
 
 .theme-light .card_eafb9c {
-    border-color: var(--background-tertiary)
+    border-color: var(--background-base-lowest)
 }
 
 .theme-dark .card_eafb9c {
@@ -985,7 +985,7 @@
 }
 
 .theme-light .card__24585 {
-    border-color: var(--background-tertiary)
+    border-color: var(--background-base-lowest)
 }
 
 .theme-dark .card__24585 {
@@ -1067,7 +1067,7 @@
 }
 
 .theme-light .card_dc2e44 {
-    border-color: var(--background-tertiary)
+    border-color: var(--background-base-lowest)
 }
 
 .theme-dark .card_dc2e44 {
@@ -1358,7 +1358,7 @@
 }
 
 .inviteIcon__6be55 {
-    background-color: var(--bg-mod-faint);
+    background-color: var(--background-mod-faint);
     border-radius: 8px;
     justify-content: center
 }
@@ -1419,11 +1419,11 @@
 }
 
 .settingsButton__6be55.settingsOpen__6be55,.settingsButton__6be55:hover {
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .advancedOptions__6be55 {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 8px
 }
 
@@ -1438,7 +1438,7 @@
 }
 
 .advancedOption__6be55:hover {
-    background-color: var(--bg-mod-faint)
+    background-color: var(--background-mod-faint)
 }
 
 .advancedOption__6be55:first-child {
@@ -1675,7 +1675,7 @@
 }
 
 .footer__67dba {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .copied__67dba {
@@ -1887,7 +1887,7 @@
 }
 
 .selectedIcon_e81c2b {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .eyebrow__72025 {
@@ -2021,4 +2021,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=61b009e4953fecaa.css.map*/
+/*# sourceMappingURL=09908d16820cb673.css.map*/

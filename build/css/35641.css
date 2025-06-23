@@ -1,6 +1,6 @@
 /**
   Module ID: 35641
-  Original File Name: a51e2c2bbaea9654
+  Original File Name: 1298ee1eadbfd4ed
 **/
 .modalHeader_e6fa8e {
     align-items: center;
@@ -12,7 +12,7 @@
 }
 
 .modalFooter_e6fa8e {
-    border-top: 1px solid var(--background-modifier-accent)
+    border-top: 1px solid var(--border-subtle)
 }
 
 .modalImage_e6fa8e {
@@ -36,7 +36,7 @@
 }
 
 .iconWrapper_e6fa8e {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     height: 24px;
     padding: 8px;
@@ -44,7 +44,7 @@
 }
 
 .deprivateTableBody_e6fa8e {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     margin: 8px 0;
     overflow: hidden
@@ -81,7 +81,7 @@
 }
 
 .selectableChannelRow_e6fa8e:after {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     content: "";
     height: 1px;
     margin-top: 54px;
@@ -116,4 +116,4 @@
     gap: 4px
 }
 
-/*# sourceMappingURL=a51e2c2bbaea9654.css.map*/
+/*# sourceMappingURL=1298ee1eadbfd4ed.css.map*/

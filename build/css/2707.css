@@ -1,6 +1,6 @@
 /**
   Module ID: 2707
-  Original File Name: 562e8a8f2df9d716
+  Original File Name: 6df63f35077b9d7b
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -13,7 +13,7 @@
 
 .gradientInnerBorder__8f49b {
     align-items: center;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: calc(var(--radius-sm) - 2px);
     display: flex;
     padding: var(--spacing-12) var(--spacing-16)
@@ -191,7 +191,7 @@
 }
 
 .planSelectSeparatorLower__7ec3a,.planSelectSeparatorUpper__7ec3a {
-    background: var(--background-modifier-accent);
+    background: var(--border-subtle);
     border: 0;
     height: 1px;
     width: 100%
@@ -660,7 +660,7 @@
 }
 
 .whatYouLoseItem__89307 {
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: 8px;
     box-sizing: border-box;
     display: flex;
@@ -705,7 +705,7 @@
 }
 
 .profileCardTier1__89307 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 8px
 }
 
@@ -780,7 +780,7 @@
 }
 
 .boostCard__89307 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 8px;
     box-sizing: border-box;
     flex-grow: 1;
@@ -835,4 +835,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=562e8a8f2df9d716.css.map*/
+/*# sourceMappingURL=6df63f35077b9d7b.css.map*/

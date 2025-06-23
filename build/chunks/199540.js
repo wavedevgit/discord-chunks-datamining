@@ -82,8 +82,8 @@ function b(e) {
     mentionCount: d = 0,
     isMentionLowImportance: g,
     tooltipName: b,
-    folderGroupId: y,
-    folderButtonContent: O,
+    folderGroupId: O,
+    folderButtonContent: y,
     onClick: _,
     onContextMenu: v,
     onHoverChange: C,
@@ -146,7 +146,7 @@ function b(e) {
       "aria-setsize": x,
       "aria-posinset": E,
       "aria-expanded": o,
-      "aria-owns": y,
+      "aria-owns": O,
       children: (0, r.jsxs)(a.aRk, {
         isFolder: !0,
         upperBadge: T,
@@ -161,9 +161,9 @@ function b(e) {
           })
         }), (0, r.jsx)("div", {
           className: f.folderButtonInner,
-          children: null != O ? (0, r.jsx)("div", {
+          children: null != y ? (0, r.jsx)("div", {
             className: f.folderIconWrapper,
-            children: O
+            children: y
           }) : (0, r.jsx)(m, {
             folderNode: l,
             hovered: I,

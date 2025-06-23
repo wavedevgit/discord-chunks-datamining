@@ -1,6 +1,6 @@
 /**
   Module ID: 2634
-  Original File Name: c432ab2be80dd0f2
+  Original File Name: 02b49f3fa3c016a8
 **/
 .container__05cdc {
     display: flex
@@ -31,7 +31,7 @@
 
 .iconBackground__33efa {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     display: flex;
     height: 64px;
@@ -51,4 +51,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=c432ab2be80dd0f2.css.map*/
+/*# sourceMappingURL=02b49f3fa3c016a8.css.map*/

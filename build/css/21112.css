@@ -1,6 +1,6 @@
 /**
   Module ID: 21112
-  Original File Name: 855c467e8e82cdc5
+  Original File Name: b22323050499fae4
 **/
 .closeButton__9cef2 {
     position: absolute;
@@ -27,11 +27,11 @@
 }
 
 .emojiRow__9cef2:hover {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .emojiRow__9cef2+.emojiRow__9cef2:before {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     content: "";
     height: 1px;
     left: 0;
@@ -74,4 +74,4 @@
     padding: 0
 }
 
-/*# sourceMappingURL=855c467e8e82cdc5.css.map*/
+/*# sourceMappingURL=b22323050499fae4.css.map*/

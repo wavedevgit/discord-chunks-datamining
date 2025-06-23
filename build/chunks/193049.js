@@ -68,9 +68,9 @@ function A(e) {
       let e = f.default.getCurrentUser();
       return s()(null != e, "PomeloModal: user cannot be undefined"), e
     }),
-    Y = (0, S.CC)(),
+    K = (0, S.CC)(),
     {
-      usernameSuggestion: K,
+      usernameSuggestion: Y,
       usernameSuggestionLoading: Q
     } = (0, b.G)(M ? v.en : void 0);
   i.useEffect(() => {
@@ -79,10 +79,10 @@ function A(e) {
       step: G
     })
   }, [G, r]), i.useEffect(() => {
-    F || z || null == K || !(K.length > 0) || $(e => {
+    F || z || null == Y || !(Y.length > 0) || $(e => {
       var t, r;
       return t = C({}, e), r = r = {
-        username: K
+        username: Y
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -94,7 +94,7 @@ function A(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), t
     })
-  }, [K, F, z]);
+  }, [Y, F, z]);
   let [J, $] = i.useState({
     username: (0, y.e$)(X),
     globalName: O.ZP.getName(X)
@@ -193,7 +193,7 @@ function A(e) {
     }
   }, [G]), !z && null == Z && (G === v.Wq.EDIT_USERNAME ? t = I.intl.formatToPlainString(I.t.AJh8BQ, {
     source: X.username
-  }) : G === v.Wq.SUGGESTION && (Q || null != K) && (t = I.intl.string(I.t["i/2SgI"]))), (0, n.jsxs)(c.Y0X, {
+  }) : G === v.Wq.SUGGESTION && (Q || null != Y) && (t = I.intl.string(I.t["i/2SgI"]))), (0, n.jsxs)(c.Y0X, {
     className: _.modalRoot,
     impression: {
       impressionName: l.ImpressionNames.POMELO_LANDING,
@@ -208,7 +208,7 @@ function A(e) {
     parentComponent: "PomeloModal",
     children: [(0, n.jsx)(c.zxk, {
       onClick: () => {
-        Y && (L === T.A.SUGGESTIONS || L === T.A.EDIT_SCREEN) ? k(T.A.FINISH_LATER) : A()
+        K && (L === T.A.SUGGESTIONS || L === T.A.EDIT_SCREEN) ? k(T.A.FINISH_LATER) : A()
       },
       size: c.zxk.Sizes.MIN,
       look: c.zxk.Looks.BLANK,

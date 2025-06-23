@@ -1,6 +1,6 @@
 /**
   Module ID: 21741
-  Original File Name: 31eb62b3adc56dcc
+  Original File Name: 5ea4ade4a9b3cc72
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -38,7 +38,7 @@
 }
 
 .eventStatusGreen__29021 {
-    color: var(--text-positive)
+    color: var(--text-feedback-positive)
 }
 
 .eventStatusBrand__29021 {
@@ -101,7 +101,7 @@
 
 .rsvpCount_b5010b {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 12px;
     display: flex;
     flex-shrink: 0;
@@ -321,7 +321,7 @@
 }
 
 .inviteSplash_d5f3cd {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 4px 4px 0 0;
     height: 64px;
     margin: -16px -16px 16px;
@@ -362,7 +362,7 @@
 }
 
 .guildIconExpired_d5f3cd {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 50px 26px;
@@ -472,7 +472,7 @@
 }
 
 .theme-dark .overlay-unlocked .wrapper_d5f3cd {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .theme-dark .overlay-unlocked .header_d5f3cd {
@@ -769,7 +769,7 @@
 }
 
 .normalStylesDefault_a1443c {
-    --custom-poll-style-vote-background: var(--background-tertiary);
+    --custom-poll-style-vote-background: var(--background-base-lowest);
     --custom-poll-style-vote-percentage: var(--background-modifier-active);
     --custom-poll-style-label: var(--text-normal);
     --custom-poll-style-border: transparent
@@ -781,13 +781,13 @@
 
 .victorStyles_a1443c {
     --custom-poll-style-vote-percentage: var(--polls-victor-fill);
-    --custom-poll-style-image-background: var(--info-warning-background);
+    --custom-poll-style-image-background: var(--background-feedback-warning);
     --custom-poll-style-border: var(--status-positive)
 }
 
 .votedStyles_a1443c {
     --custom-poll-style-vote-percentage: var(--polls-voted-fill);
-    --custom-poll-style-image-background: var(--info-positive-background);
+    --custom-poll-style-image-background: var(--background-feedback-positive);
     --custom-poll-style-border: var(--control-brand-foreground)
 }
 
@@ -822,7 +822,7 @@
 
 .imageContainer_e512ac {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 9.6px;
     display: flex;
     height: 128px;
@@ -859,7 +859,7 @@
 }
 
 .conflictButton__47998 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid;
     height: 100px;
     justify-content: flex-start;
@@ -1112,7 +1112,7 @@
 }
 
 .loadingImage_a8b53f {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     padding-top: 56%;
     width: 100%
 }
@@ -2014,7 +2014,7 @@ html .progress__61462 {
 }
 
 .bumpBox_cacd02 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     flex: 0 0 max-content;
     margin-right: 16px;
@@ -2145,12 +2145,12 @@ html .progress__61462 {
 }
 
 .embed__623de code {
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border: none
 }
 
 .embed__623de .no-webkit-scrollbar code {
-    scrollbar-color: var(--background-secondary) var(--background-tertiary)
+    scrollbar-color: var(--background-base-lower) var(--background-base-lowest)
 }
 
 .embed__623de blockquote {
@@ -2638,7 +2638,7 @@ html .progress__61462 {
 }
 
 .custom-theme-background .embedFull__623de {
-    background-color: var(--bg-mod-faint)
+    background-color: var(--background-mod-faint)
 }
 
 .hiddenEmbed__623de.isHidden__623de {
@@ -2748,7 +2748,7 @@ html .progress__61462 {
 }
 
 .hoverButtonGroup__06ab4 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 5px;
     display: flex;
     opacity: 0;
@@ -2760,7 +2760,7 @@ html .progress__61462 {
 }
 
 .nonMediaMosaicItem__06ab4 {
-    outline: 1px solid var(--background-secondary);
+    outline: 1px solid var(--background-base-lower);
     right: -8px;
     top: -8px
 }
@@ -2775,7 +2775,7 @@ html .progress__61462 {
 }
 
 .container_adb50a {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border: 1px solid var(--background-message-highlight-hover);
     border-radius: 12px;
     box-shadow: var(--shadow-low);
@@ -2848,7 +2848,7 @@ html .progress__61462 {
 }
 
 .theme-dark .guildShopEmbed__86fa6 {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .theme-light .guildShopEmbed__86fa6 {
@@ -2948,7 +2948,7 @@ html .progress__61462 {
 }
 
 .mediaContainer_d93468 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     margin-bottom: var(--spacing-16);
     margin-top: var(--spacing-12);
     padding: var(--spacing-16)
@@ -3065,7 +3065,7 @@ html .progress__61462 {
 }
 
 .solidBackground__79d38 {
-    background: var(--background-secondary)
+    background: var(--background-base-lower)
 }
 
 .theme-dark .opaqueBackground__79d38 {
@@ -3073,7 +3073,7 @@ html .progress__61462 {
 }
 
 .theme-light .opaqueBackground__79d38 {
-    background: var(--background-secondary)
+    background: var(--background-base-lower)
 }
 
 .productThumbnailContainer__79d38 {
@@ -3126,7 +3126,7 @@ html .progress__61462 {
 
 .productDetails__79d38 {
     align-content: flex-start;
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     display: flex;
     flex-direction: row;
     flex-grow: 1;
@@ -3187,7 +3187,7 @@ html .progress__61462 {
 }
 
 .separator_ae2544 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     height: 1px;
     margin-bottom: 16px;
     margin-top: 16px
@@ -3281,7 +3281,7 @@ html .progress__61462 {
 
 .partyMemberOverflow_e45a82 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 12px;
     color: var(--header-secondary);
     display: flex;
@@ -3312,7 +3312,7 @@ html .progress__61462 {
 }
 
 .card_a8610c {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 12px;
     margin-bottom: 8px;
     min-width: 300px;
@@ -4102,7 +4102,7 @@ html .progress__61462 {
 }
 
 .contentContainer_c55cae {
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: 8px 0 0 8px;
     display: flex;
     flex: 1;
@@ -4131,7 +4131,7 @@ html .progress__61462 {
 
 .imgContainer_c55cae {
     align-items: center;
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 0 8px 8px 0;
     display: flex;
     flex: 1;
@@ -4146,7 +4146,7 @@ html .progress__61462 {
 }
 
 .theme-light .contentContainer_c55cae {
-    background: var(--background-secondary)
+    background: var(--background-base-lower)
 }
 
 .theme-light .imgContainer_c55cae {
@@ -4154,11 +4154,11 @@ html .progress__61462 {
 }
 
 .theme-dark .contentContainer_c55cae {
-    background: var(--background-tertiary)
+    background: var(--background-base-lowest)
 }
 
 .theme-dark .imgContainer_c55cae {
-    background: var(--background-secondary)
+    background: var(--background-base-lower)
 }
 
 .container__4216d {
@@ -4176,7 +4176,7 @@ html .progress__61462 {
 }
 
 .modal__49777 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 12px;
     max-height: calc(100vh - 60px);
     max-width: 1028px;
@@ -4185,7 +4185,7 @@ html .progress__61462 {
 }
 
 .modalHeader__49777 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     color: var(--interactive-active);
     justify-content: space-between;
     padding: 12px 16px
@@ -4513,7 +4513,7 @@ html .progress__61462 {
 
 .optionTag_b08511 {
     align-items: center;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: 3px;
     box-sizing: border-box;
     color: var(--interactive-active);
@@ -4730,7 +4730,7 @@ html .progress__61462 {
 }
 
 .nonMediaMosaicItem__6c706 {
-    outline: 1px solid var(--background-secondary);
+    outline: 1px solid var(--background-base-lower);
     right: -8px;
     top: -8px
 }
@@ -4918,7 +4918,7 @@ html .progress__61462 {
 }
 
 .divider__1fcac {
-    border-bottom: 1px solid var(--bg-mod-strong)
+    border-bottom: 1px solid var(--background-mod-strong)
 }
 
 .spacingLarge__1fcac {
@@ -5205,7 +5205,7 @@ html .progress__61462 {
 }
 
 .descriptionContainer__419e3 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     position: relative
 }
 
@@ -5383,7 +5383,7 @@ html .progress__61462 {
 }
 
 .mediaMissing__10758 {
-    background-color: var(--background-primary)
+    background-color: var(--background-base-low)
 }
 
 .selectedIcon__10758 {
@@ -5427,7 +5427,7 @@ html .progress__61462 {
 
 .answerInner__4c520 {
     align-items: center;
-    background-color: var(--bg-mod-faint);
+    background-color: var(--background-mod-faint);
     border-radius: var(--radius-sm);
     box-sizing: border-box;
     color: var(--text-normal);
@@ -5751,7 +5751,7 @@ html .progress__61462 {
 }
 
 .contentContainer__3dd8b {
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: 8px 0 0 8px;
     display: flex;
     flex: 1;
@@ -5780,7 +5780,7 @@ html .progress__61462 {
 
 .imgContainer__3dd8b {
     align-items: center;
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 0 8px 8px 0;
     display: flex;
     flex: 1;
@@ -5795,7 +5795,7 @@ html .progress__61462 {
 }
 
 .theme-light .contentContainer__3dd8b {
-    background: var(--background-secondary)
+    background: var(--background-base-lower)
 }
 
 .theme-light .imgContainer__3dd8b {
@@ -5803,11 +5803,11 @@ html .progress__61462 {
 }
 
 .theme-dark .contentContainer__3dd8b {
-    background: var(--background-tertiary)
+    background: var(--background-base-lowest)
 }
 
 .theme-dark .imgContainer__3dd8b {
-    background: var(--background-secondary)
+    background: var(--background-base-lower)
 }
 
 .spinner__65252 {
@@ -5815,7 +5815,7 @@ html .progress__61462 {
 }
 
 .popout_d5c2c4 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     box-shadow: var(--legacy-elevation-high),var(--legacy-elevation-border);
     box-sizing: border-box;
@@ -5941,7 +5941,7 @@ html .progress__61462 {
 }
 
 .safetyPolicyNoticeContainer_e80b85 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: var(--radius-sm);
     display: flex;
     flex-direction: column
@@ -6239,7 +6239,7 @@ html .progress__61462 {
 }
 
 .custom-theme-background .container__9271d {
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .infoWrapper_c44293 {
@@ -6500,7 +6500,7 @@ html .progress__61462 {
 
 .background__708d1,.icon__708d1 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     display: flex
 }
 
@@ -7155,7 +7155,7 @@ html .progress__61462 {
 }
 
 .reactionBtn_f8896c.forceShow_f8896c {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid transparent;
     border-radius: 8px;
     margin-bottom: 4px;
@@ -7165,7 +7165,7 @@ html .progress__61462 {
 }
 
 .reactionBtn_f8896c.forceShow_f8896c:hover {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-color: var(--opacity-white-20)
 }
 
@@ -7174,7 +7174,7 @@ html .progress__61462 {
 }
 
 .reaction_f8896c {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     background-color: var(--background-mod-subtle);
     border: 1px solid transparent;
     border-radius: 8px;
@@ -7443,7 +7443,7 @@ html .progress__61462 {
 }
 
 .reaction__23977 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     background-color: var(--background-mod-subtle);
     border: .0625rem solid transparent;
     border-radius: .5rem;
@@ -7624,7 +7624,7 @@ html .progress__61462 {
 }
 
 .custom-theme-background .reaction__23977 {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-color: var(--border-strong)
 }
 
@@ -7806,7 +7806,7 @@ html .progress__61462 {
 }
 
 .scroller_cc2dff {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px
 }
@@ -7984,7 +7984,7 @@ html .progress__61462 {
 }
 
 .burstReactionTooltipSpacer_b49891 {
-    border-top: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--border-subtle);
     margin-top: 8px;
     padding-top: 8px
 }
@@ -8738,7 +8738,7 @@ html .progress__61462 {
 }
 
 .footer_de9b99 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     box-sizing: border-box;
@@ -8791,7 +8791,7 @@ html .progress__61462 {
 
 .embed_fb5def {
     align-items: flex-start;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: var(--radius-md);
     cursor: pointer;
     display: flex;
@@ -8829,7 +8829,7 @@ html .progress__61462 {
 }
 
 .theme-light .container__85015 {
-    background: var(--background-primary)
+    background: var(--background-base-low)
 }
 
 .buttonContainer__85015 {
@@ -8870,7 +8870,7 @@ html .progress__61462 {
 }
 
 .embedCard__44c9a {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     padding: 12px
 }
@@ -8955,7 +8955,7 @@ html .progress__61462 {
 }
 
 .messageContent__44492 .channelNameContainer__44492 .channelName__44492 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     color: var(--text-muted)
 }
 
@@ -9010,7 +9010,7 @@ html .progress__61462 {
 
 .avatarContainer__44492 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     display: flex;
     height: 40px;
@@ -9073,7 +9073,7 @@ html .progress__61462 {
 }
 
 .dot__44492 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 50%;
     height: 4px;
     width: 4px
@@ -9091,7 +9091,7 @@ html .progress__61462 {
 }
 
 .footerContainer__44492 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 0 0 8px 8px;
     line-height: 20px;
     padding: 2px 18px 4px
@@ -9116,7 +9116,7 @@ html .progress__61462 {
 }
 
 .alertActionSetCompletedIcon__44492 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     vertical-align: middle
 }
 
@@ -9159,7 +9159,7 @@ html .progress__61462 {
 }
 
 .role__09ccc:hover {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .role__09ccc.disabled__09ccc {
@@ -9405,7 +9405,7 @@ html .progress__61462 {
 }
 
 .embedCard_b99f57 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -9571,7 +9571,7 @@ html .progress__61462 {
 }
 
 .dot_b99f57 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 50%;
     height: 4px;
     width: 4px
@@ -10154,7 +10154,7 @@ html .progress__61462 {
 
 .channelHeader__06fb5 {
     align-items: center;
-    border-bottom: var(--background-modifier-accent) 1px;
+    border-bottom: var(--border-subtle) 1px;
     border-style: solid;
     display: flex;
     gap: 6px;
@@ -10170,7 +10170,7 @@ html .progress__61462 {
 }
 
 .dmIcon__06fb5 {
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     justify-content: center;
     padding: 6px
 }
@@ -10228,7 +10228,7 @@ html .progress__61462 {
 
 .upsellContainer__4a7f0 {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: 4px;
     display: flex;
     padding: 12px
@@ -10239,7 +10239,7 @@ html .progress__61462 {
 }
 
 .container_ea9851 {
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     flex-grow: 1;
     gap: 6px;
     padding: 12px
@@ -10251,7 +10251,7 @@ html .progress__61462 {
 }
 
 .icon_ea9851 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 6px;
     height: 24px;
     justify-content: center;
@@ -10327,7 +10327,7 @@ html .progress__61462 {
 }
 
 .deleteIcon__4ad69 {
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: 6px;
     height: 24px;
     justify-content: center;
@@ -10635,7 +10635,7 @@ html .progress__61462 {
 }
 
 .messagePreviewContainer__6fddf {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 8px;
     display: flex;
     margin-bottom: 2px;
@@ -10652,7 +10652,7 @@ html .progress__61462 {
 }
 
 .calloutContainer__6fddf {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 8px;
     margin-bottom: 2px;
     margin-top: 4px;
@@ -10829,7 +10829,7 @@ html .progress__61462 {
 }
 
 .icon_d404a3 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 80px;
     color: var(--text-muted);
     padding: 22px
@@ -10854,7 +10854,7 @@ html .progress__61462 {
 }
 
 .messageContainer_f6bd5f {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border: 1px solid transparent;
     border-radius: var(--radius-sm);
     display: flex;
@@ -10925,7 +10925,7 @@ html .progress__61462 {
 }
 
 .channelRow_f6bd5f {
-    border-bottom: 1px solid var(--background-modifier-accent)
+    border-bottom: 1px solid var(--border-subtle)
 }
 
 .cannotSendMessage_f6bd5f {
@@ -10987,7 +10987,7 @@ html .progress__61462 {
 }
 
 .container_faa96b:hover .dots_faa96b {
-    border-color: var(--background-primary)
+    border-color: var(--background-base-low)
 }
 
 .container_faa96b:active {
@@ -11113,7 +11113,7 @@ html .progress__61462 {
 }
 
 .obscuredThumbnailPlaceholder_faa96b {
-    background-color: var(--bg-mod-strong)
+    background-color: var(--background-mod-strong)
 }
 
 .body_faa96b {
@@ -11134,7 +11134,7 @@ html .progress__61462 {
 }
 
 .bullet_faa96b {
-    color: var(--background-modifier-accent)
+    color: var(--border-subtle)
 }
 
 .headerText_faa96b {
@@ -11185,8 +11185,8 @@ html .progress__61462 {
 }
 
 .dots_faa96b {
-    background-color: var(--background-tertiary);
-    border: 3px solid var(--background-primary);
+    background-color: var(--background-base-lowest);
+    border: 3px solid var(--background-base-low);
     border-radius: var(--radius-md);
     height: 16px;
     justify-content: center;
@@ -11313,11 +11313,11 @@ html .progress__61462 {
 }
 
 .tagFiltered__08166 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .forumPost__7d15e {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 8px;
     margin: 0 0 16px
 }
@@ -11429,7 +11429,7 @@ html .progress__61462 {
 }
 
 .tutorial__2692d {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 8px;
     display: flex;
     margin: 16px 0;
@@ -11438,7 +11438,7 @@ html .progress__61462 {
 
 .tutorialIcon__2692d {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 40px;
     color: var(--interactive-normal);
     display: flex;
@@ -11458,7 +11458,7 @@ html .progress__61462 {
 }
 
 .expandedMarkAllReadContainer__2692d {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     padding: 16px
 }
 
@@ -11468,7 +11468,7 @@ html .progress__61462 {
 
 .container__5519a {
     align-items: flex-start;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
@@ -11564,7 +11564,7 @@ html .progress__61462 {
 }
 
 .container__03885 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-border),var(--shadow-high);
     box-sizing: border-box;
@@ -11740,7 +11740,7 @@ html .progress__61462 {
 }
 
 .queryContainer__55c99 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-bottom-color: var(--border-faint);
     color: var(--text-primary)
 }
@@ -11750,7 +11750,7 @@ html .progress__61462 {
 }
 
 .focused__55c99 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .refresh-fast-follow-distinct-borders .container__55c99 {
@@ -12561,4 +12561,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=31eb62b3adc56dcc.css.map*/
+/*# sourceMappingURL=5ea4ade4a9b3cc72.css.map*/

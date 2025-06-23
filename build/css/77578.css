@@ -1,6 +1,6 @@
 /**
   Module ID: 77578
-  Original File Name: 75eb0236d96b83e8
+  Original File Name: 9cee828e56004256
 **/
 .headerGuildName__949ab {
     color: var(--header-primary)
@@ -17,7 +17,7 @@
 
 .main__949ab {
     align-items: center;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@
 
 .optionContainer__949ab {
     align-items: center;
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 8px;
     display: flex;
     flex-direction: row;
@@ -126,4 +126,4 @@
     }
 }
 
-/*# sourceMappingURL=75eb0236d96b83e8.css.map*/
+/*# sourceMappingURL=9cee828e56004256.css.map*/

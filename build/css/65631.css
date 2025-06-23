@@ -1,6 +1,6 @@
 /**
   Module ID: 65631
-  Original File Name: 838a3245cb37d651
+  Original File Name: b64818025991ef22
 **/
 .modal_ca6911 {
     font-size: 13px;
@@ -27,7 +27,7 @@
 
 .linkedLobbyNotice_ca6911 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     display: flex;
     gap: 8px;
@@ -48,4 +48,4 @@
     color: var(--interactive-normal)
 }
 
-/*# sourceMappingURL=838a3245cb37d651.css.map*/
+/*# sourceMappingURL=b64818025991ef22.css.map*/

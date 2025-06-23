@@ -1,6 +1,6 @@
 /**
   Module ID: 78704
-  Original File Name: d9bc4f462e4a598c
+  Original File Name: 8c8cfd1affeaef18
 **/
 .container_f0aa37 {
     margin-left: -16px;
@@ -30,8 +30,8 @@
 }
 
 .roleSelector_f0aa37 {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary)
+    background-color: var(--background-base-lower);
+    border: 1px solid var(--background-base-lowest)
 }
 
 .roleCircle_f0aa37 {
@@ -55,4 +55,4 @@
     margin-left: 8px
 }
 
-/*# sourceMappingURL=d9bc4f462e4a598c.css.map*/
+/*# sourceMappingURL=8c8cfd1affeaef18.css.map*/

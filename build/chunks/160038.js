@@ -15,8 +15,8 @@ var r = n(255367),
   h = n(626135),
   p = n(572004),
   g = n(63063),
-  y = n(476221),
-  O = n(981631),
+  O = n(476221),
+  y = n(981631),
   b = n(65154),
   N = n(388032),
   m = n(684680);
@@ -43,7 +43,7 @@ let v = () => {
   },
   x = function(e) {
     (0, l.useEffect)(() => {
-      h.default.track(O.rMx.OPEN_POPOUT, {
+      h.default.track(y.rMx.OPEN_POPOUT, {
         type: "RTC Connection"
       })
     }, []);
@@ -72,7 +72,7 @@ let v = () => {
             }), (0, r.jsx)("div", {
               className: m.popoutText,
               children: (0, r.jsx)("strong", {
-                children: y.Z.getShortHostname(t)
+                children: O.Z.getShortHostname(t)
               })
             })]
           }), (0, r.jsx)("div", {
@@ -107,24 +107,24 @@ let v = () => {
       } = e,
       p = d.Sb.getSetting(),
       x = {
-        [O.hes.AWAITING_ENDPOINT]: N.intl.format(N.t.Eu2vUV, {
-          url: O.yXt.STATUS
+        [y.hes.AWAITING_ENDPOINT]: N.intl.format(N.t.Eu2vUV, {
+          url: y.yXt.STATUS
         }),
-        [O.hes.CONNECTING]: N.intl.string(N.t["y+E8aG"]),
-        [O.hes.AUTHENTICATING]: N.intl.string(N.t["5lGIZG"]),
-        [O.hes.DISCONNECTED]: N.intl.string(N.t.fOX25O),
-        [O.hes.RTC_CONNECTING]: N.intl.string(N.t.b5Ubd3),
-        [O.hes.ICE_CHECKING]: N.intl.format(N.t.SyoYUV, {
-          url: g.Z.getArticleURL(O.BhN.VOICE_CONNECTION_ERRORS)
+        [y.hes.CONNECTING]: N.intl.string(N.t["y+E8aG"]),
+        [y.hes.AUTHENTICATING]: N.intl.string(N.t["5lGIZG"]),
+        [y.hes.DISCONNECTED]: N.intl.string(N.t.fOX25O),
+        [y.hes.RTC_CONNECTING]: N.intl.string(N.t.b5Ubd3),
+        [y.hes.ICE_CHECKING]: N.intl.format(N.t.SyoYUV, {
+          url: g.Z.getArticleURL(y.BhN.VOICE_CONNECTION_ERRORS)
         }),
-        [O.hes.DTLS_CONNECTING]: N.intl.format(N.t.SyoYUV, {
-          url: g.Z.getArticleURL(O.BhN.VOICE_CONNECTION_ERRORS)
+        [y.hes.DTLS_CONNECTING]: N.intl.format(N.t.SyoYUV, {
+          url: g.Z.getArticleURL(y.BhN.VOICE_CONNECTION_ERRORS)
         }),
-        [O.hes.RTC_CONNECTED]: n,
-        [O.hes.NO_ROUTE]: N.intl.format(N.t["2tgQnp"], {
-          url: g.Z.getArticleURL(O.BhN.VOICE_CONNECTION_ERRORS)
+        [y.hes.RTC_CONNECTED]: n,
+        [y.hes.NO_ROUTE]: N.intl.format(N.t["2tgQnp"], {
+          url: g.Z.getArticleURL(y.BhN.VOICE_CONNECTION_ERRORS)
         }),
-        [O.hes.RTC_DISCONNECTED]: N.intl.string(N.t.fOX25O)
+        [y.hes.RTC_DISCONNECTED]: N.intl.string(N.t.fOX25O)
       } [i];
     return (0, r.jsxs)(r.Fragment, {
       children: ["function" == typeof x ? x() : (0, r.jsx)("p", {
@@ -138,7 +138,7 @@ let v = () => {
           className: o()(m.secured, m.textWithIcon),
           children: [(0, r.jsx)(s.mBM, {
             size: "xxs",
-            color: s.TVs.colors.TEXT_POSITIVE.css,
+            color: s.TVs.colors.TEXT_FEEDBACK_POSITIVE.css,
             className: m.__invalid_icon
           }), a]
         }), p && f.Z.supports(b.AN.DIAGNOSTICS) && !__OVERLAY__ && (0, r.jsxs)(r.Fragment, {
@@ -162,7 +162,7 @@ let v = () => {
           })]
         }), !p && !__OVERLAY__ && (0, r.jsx)(s.eee, {
           className: m.debugButton,
-          href: g.Z.getArticleURL(O.BhN.VOICE_VIDEO_TROUBLESHOOTING),
+          href: g.Z.getArticleURL(y.BhN.VOICE_VIDEO_TROUBLESHOOTING),
           children: N.intl.string(N.t.hvVgAQ)
         })]
       })]

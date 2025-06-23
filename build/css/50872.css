@@ -1,6 +1,6 @@
 /**
   Module ID: 50872
-  Original File Name: f3e928f4e3d84576
+  Original File Name: 6ab3461058ed4036
 **/
 .header__8f3be {
     gap: var(--spacing-16);
@@ -27,7 +27,7 @@
 }
 
 .notice__8f3be {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--border-faint);
     border-radius: var(--radius-sm);
     box-shadow: none;
@@ -766,4 +766,4 @@
     color: var(--text-danger)
 }
 
-/*# sourceMappingURL=f3e928f4e3d84576.css.map*/
+/*# sourceMappingURL=6ab3461058ed4036.css.map*/

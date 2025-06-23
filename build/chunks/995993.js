@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(306680),
   m = n(709054),
   b = n(540126),
-  y = n(434479),
-  O = n(981631),
+  O = n(434479),
+  y = n(981631),
   _ = n(176505),
   v = n(490897),
   C = n(388032),
@@ -35,7 +35,7 @@ function S(e) {
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
   }), Z = i.useCallback(() => {
-    (0, f.uL)(O.Z5c.CHANNEL(t.id, x ? _.oC.CUSTOMIZE_COMMUNITY : _.oC.CHANNEL_BROWSER))
+    (0, f.uL)(y.Z5c.CHANNEL(t.id, x ? _.oC.CUSTOMIZE_COMMUNITY : _.oC.CHANNEL_BROWSER))
   }, [t.id, x]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
@@ -79,7 +79,7 @@ function S(e) {
     color: s.Z.colors.BADGE_BRAND_BG.css,
     text: C.intl.string(C.t.y2b7CA),
     className: j.newChannel
-  })), (0, r.jsx)(y.m, {
+  })), (0, r.jsx)(O.m, {
     id: "channels-".concat(t.id),
     renderIcon: e => (0, r.jsx)(a.H$4, {
       size: "md",

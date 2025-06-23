@@ -1,6 +1,6 @@
 /** Chunk was on 98787 **/
 n.d(t, {
-  Z: () => y
+  Z: () => O
 }), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -47,10 +47,10 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = i.memo(function(e) {
+let O = i.memo(function(e) {
   var {
     folderNode: t
-  } = e, y = function(e, t) {
+  } = e, O = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -66,11 +66,11 @@ let y = i.memo(function(e) {
     return i
   }(e, ["folderNode"]);
   let {
-    id: O,
+    id: y,
     name: _,
     color: v,
     children: C
-  } = t, j = C.map(e => e.id), S = (0, a.Z)(e => e.guildId), x = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), E = function(e) {
+  } = t, j = C.map(e => e.id), S = (0, a.Z)(e => e.guildId), x = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), E = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -89,21 +89,21 @@ let y = i.memo(function(e) {
     isMentionLowImportance: j.every(e => u.default.getIsMentionLowImportance(e)),
     unread: j.some(e => u.default.hasUnread(e))
   })), Z = i.useCallback(() => {
-    s.Z.toggleGuildFolderExpand(O)
-  }, [O]), T = i.useCallback(e => {
+    s.Z.toggleGuildFolderExpand(y)
+  }, [y]), T = i.useCallback(e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
       } = await n.e("52590").then(n.bind(n, 205784));
       return t => (0, r.jsx)(e, b(m({}, t), {
-        folderId: O,
+        folderId: y,
         folderName: _,
         folderColor: v,
         unread: w || I > 0
       }))
     })
-  }, [O, _, v, w, I]);
-  return (0, r.jsx)(p.Z, b(m({}, y), {
+  }, [y, _, v, w, I]);
+  return (0, r.jsx)(p.Z, b(m({}, O), {
     folderNode: t,
     expanded: x,
     selected: null != S && j.includes(S),

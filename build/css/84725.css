@@ -1,6 +1,6 @@
 /**
   Module ID: 84725
-  Original File Name: 98c293a6aaab32e8
+  Original File Name: 4b14bb5889204ddf
 **/
 .marker__9d896 {
     margin-left: 4px
@@ -43,7 +43,7 @@
 }
 
 .separator_e45886 {
-    background: var(--background-modifier-accent);
+    background: var(--border-subtle);
     height: 1px;
     margin: 24px 0
 }
@@ -70,7 +70,7 @@
 .uploadImage_e45886 {
     background: var(--background-secondary-alt);
     background-size: 72px 72px;
-    border: 1px solid var(--background-tertiary);
+    border: 1px solid var(--background-base-lowest);
     border-radius: var(--radius-xs);
     height: 72px;
     width: 72px
@@ -105,7 +105,7 @@
 
 .iconUpload_e45886 {
     background-color: var(--background-secondary-alt);
-    border: 1px solid var(--background-tertiary);
+    border: 1px solid var(--background-base-lowest);
     border-radius: var(--radius-sm);
     color: var(--interactive-normal);
     cursor: pointer;
@@ -136,4 +136,4 @@
     top: 0
 }
 
-/*# sourceMappingURL=98c293a6aaab32e8.css.map*/
+/*# sourceMappingURL=4b14bb5889204ddf.css.map*/

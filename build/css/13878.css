@@ -1,6 +1,6 @@
 /**
   Module ID: 13878
-  Original File Name: 022ecf4b3c85d788
+  Original File Name: 6621dc70194d0b2c
 **/
 .container_f08fc1 {
     border-radius: 8px;
@@ -20,7 +20,7 @@
 }
 
 .iconBackground_f08fc1 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 50%;
     height: 64px;
     justify-content: center;
@@ -67,4 +67,4 @@
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=022ecf4b3c85d788.css.map*/
+/*# sourceMappingURL=6621dc70194d0b2c.css.map*/

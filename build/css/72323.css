@@ -1,6 +1,6 @@
 /**
   Module ID: 72323
-  Original File Name: ce1d83aa59f8af85
+  Original File Name: 8c0e6026b1c58db5
 **/
 .container__6b668 {
     align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .containerActive__6b668 {
-    border-color: var(--text-positive)
+    border-color: var(--text-feedback-positive)
 }
 
 .playButton__6b668 {
@@ -46,4 +46,4 @@
     row-gap: var(--spacing-8)
 }
 
-/*# sourceMappingURL=ce1d83aa59f8af85.css.map*/
+/*# sourceMappingURL=8c0e6026b1c58db5.css.map*/

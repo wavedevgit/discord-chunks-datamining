@@ -1,6 +1,6 @@
 /**
   Module ID: 75613
-  Original File Name: 9c3c7949f2ea033a
+  Original File Name: 8eebcdcb4459323a
 **/
 .perkRow_c609c8 {
     align-items: center;
@@ -64,7 +64,7 @@
 }
 
 .perks__7b551 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px
 }
 
@@ -111,4 +111,4 @@
     justify-content: flex-end
 }
 
-/*# sourceMappingURL=9c3c7949f2ea033a.css.map*/
+/*# sourceMappingURL=8eebcdcb4459323a.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 58121
-  Original File Name: 51f77fccb4487082
+  Original File Name: 6824da02f4a0bdee
 **/
 .coverContainer__2f300 {
     align-items: center;
@@ -149,7 +149,7 @@
 }
 
 .testimonialContainer__3e7e2 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 12px;
     padding: 32px;
     position: relative;
@@ -165,7 +165,7 @@
 }
 
 .quotes__3e7e2 {
-    color: var(--background-tertiary);
+    color: var(--background-base-lowest);
     font-size: 64px;
     left: 12px;
     position: absolute;
@@ -252,7 +252,7 @@
 }
 
 .clickableAction_c66e86:hover {
-    background-color: var(--background-modifier-accent)
+    background-color: var(--border-subtle)
 }
 
 .actionInfo_c66e86 {
@@ -271,7 +271,7 @@
 
 .channelIconContainer_c66e86,.rulesIconContainer_c66e86,.tagIconContainer_c66e86 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 20px;
     display: flex;
     height: 40px;
@@ -327,7 +327,7 @@
 }
 
 .avatarBackground__6f212 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 1000px;
     height: 48px;
     width: 48px
@@ -435,7 +435,7 @@
 }
 
 .upsellPreview_d9161f {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     flex-basis: 50%;
     padding: 16px
@@ -452,7 +452,7 @@
 }
 
 .previewListItem_d9161f.selected_d9161f {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .spacingSmall_d9161f {
@@ -524,7 +524,7 @@
 }
 
 .container_bc0d35 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 8px;
     gap: 16px;
     justify-content: space-between;
@@ -1031,7 +1031,7 @@
 }
 
 .sectionSeparator__5d7c9 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     margin: 16px 0;
     min-height: 1px
 }
@@ -1067,7 +1067,7 @@
 }
 
 .profileCard__5d7c9 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 8px;
     margin-top: 16px;
     padding: 16px;
@@ -1075,7 +1075,7 @@
 }
 
 .separator__5d7c9 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border: 0;
     height: 1px;
     margin: 16px 0
@@ -1147,7 +1147,7 @@
 }
 
 .tabBar__0b563 {
-    border-bottom: 2px solid var(--background-modifier-accent);
+    border-bottom: 2px solid var(--border-subtle);
     gap: 24px;
     margin: 32px 32px 0
 }
@@ -1189,4 +1189,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=51f77fccb4487082.css.map*/
+/*# sourceMappingURL=6824da02f4a0bdee.css.map*/

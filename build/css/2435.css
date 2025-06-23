@@ -1,6 +1,6 @@
 /**
   Module ID: 2435
-  Original File Name: e817bec8c18e005f
+  Original File Name: 4b0fc83533cffd04
 **/
 .title_a0b371 {
     font-weight: 700;
@@ -23,7 +23,7 @@
 
 .linkCalloutContainer_a0b371 {
     align-items: center;
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     justify-content: space-between;
     margin-bottom: 12px;
@@ -34,4 +34,4 @@
     padding: 16px
 }
 
-/*# sourceMappingURL=e817bec8c18e005f.css.map*/
+/*# sourceMappingURL=4b0fc83533cffd04.css.map*/

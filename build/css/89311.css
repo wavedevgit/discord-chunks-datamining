@@ -1,6 +1,6 @@
 /**
   Module ID: 89311
-  Original File Name: 6b140bb84d8e8c4d
+  Original File Name: 635c0ab278d9e1d6
 **/
 .fallback_b789ab {
     align-items: center;
@@ -242,7 +242,7 @@
 }
 
 .gameArtwork_a1cc72 {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     object-fit: cover
 }
@@ -300,7 +300,7 @@
 
 .profileEntryCard__655fa {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-bottom: 1px solid var(--border-faint);
     cursor: pointer;
     display: flex;
@@ -343,7 +343,7 @@
 }
 
 .friends_b37a75 {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     overflow: hidden
 }
@@ -397,12 +397,12 @@
 }
 
 .loadingArtwork_a02225 {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     width: 210px
 }
 
 .loadingHeading_a02225 {
-    background-color: var(--bg-mod-strong);
+    background-color: var(--background-mod-strong);
     border-radius: 8px;
     height: 16px;
     width: 136px
@@ -412,4 +412,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=6b140bb84d8e8c4d.css.map*/
+/*# sourceMappingURL=635c0ab278d9e1d6.css.map*/

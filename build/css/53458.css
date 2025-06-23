@@ -1,6 +1,6 @@
 /**
   Module ID: 53458
-  Original File Name: af94e3d55b64cd7a
+  Original File Name: 7c157f1a4cb79e82
 **/
 .containerScrollGradient_a54921 {
     background: linear-gradient(0deg,var(--background-primary) 0,transparent 100%);
@@ -335,7 +335,7 @@
 }
 
 .modal__49777 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 12px;
     max-height: calc(100vh - 60px);
     max-width: 1028px;
@@ -344,7 +344,7 @@
 }
 
 .modalHeader__49777 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     color: var(--interactive-active);
     justify-content: space-between;
     padding: 12px 16px
@@ -379,4 +379,4 @@
     padding: 0 var(--spacing-16)
 }
 
-/*# sourceMappingURL=af94e3d55b64cd7a.css.map*/
+/*# sourceMappingURL=7c157f1a4cb79e82.css.map*/

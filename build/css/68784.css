@@ -1,6 +1,6 @@
 /**
   Module ID: 68784
-  Original File Name: 4afaecb3020d4e74
+  Original File Name: 3685d5e94b503395
 **/
 .answerRow__7b848 {
     align-items: center;
@@ -65,7 +65,7 @@
 }
 
 .imageOnlyAnswerActionBar__7b848 {
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: var(--radius-xs);
     box-shadow: var(--shadow-low);
     display: flex;
@@ -296,7 +296,7 @@
 }
 
 .container_d97f89 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm)
 }
 
@@ -444,4 +444,4 @@
     margin-bottom: 24px
 }
 
-/*# sourceMappingURL=4afaecb3020d4e74.css.map*/
+/*# sourceMappingURL=3685d5e94b503395.css.map*/

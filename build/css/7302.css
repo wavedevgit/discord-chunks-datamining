@@ -1,6 +1,6 @@
 /**
   Module ID: 7302
-  Original File Name: 9af1aa1eeb4a9621
+  Original File Name: 991afcea867f310e
 **/
 .header__89b2b {
     align-items: flex-start;
@@ -9,7 +9,7 @@
 }
 
 .divider__89b2b {
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     margin: 0 16px
 }
 
@@ -41,4 +41,4 @@
     margin-right: 24px
 }
 
-/*# sourceMappingURL=9af1aa1eeb4a9621.css.map*/
+/*# sourceMappingURL=991afcea867f310e.css.map*/

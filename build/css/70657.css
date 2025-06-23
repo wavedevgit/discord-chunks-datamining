@@ -1,6 +1,6 @@
 /**
   Module ID: 70657
-  Original File Name: a8bd81d466b4b4d8
+  Original File Name: 67c7c8cd70c518ac
 **/
 .container__270b2 {
     flex-direction: row;
@@ -137,7 +137,7 @@
 }
 
 .container__4efb4 {
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     display: flex;
     padding-bottom: 1px;
     padding-left: 16px;
@@ -216,7 +216,7 @@
 }
 
 .eventStatusGreen__29021 {
-    color: var(--text-positive)
+    color: var(--text-feedback-positive)
 }
 
 .eventStatusBrand__29021 {
@@ -261,11 +261,11 @@
 }
 
 .container__04119:hover:not(.canceled__04119) {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .container__04119.active__04119,.container__04119:hover.active__04119 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .timeStatus__04119 {
@@ -487,7 +487,7 @@
 }
 
 .inviteSplash_d5f3cd {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 4px 4px 0 0;
     height: 64px;
     margin: -16px -16px 16px;
@@ -528,7 +528,7 @@
 }
 
 .guildIconExpired_d5f3cd {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 50px 26px;
@@ -638,7 +638,7 @@
 }
 
 .theme-dark .overlay-unlocked .wrapper_d5f3cd {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .theme-dark .overlay-unlocked .header_d5f3cd {
@@ -695,7 +695,7 @@
 
 .rsvpCount_b5010b {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 12px;
     display: flex;
     flex-shrink: 0;
@@ -972,7 +972,7 @@
 }
 
 .divider__4591d {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border: none;
     height: 1px;
     margin-left: 0;
@@ -1031,7 +1031,7 @@
 
 .circle__60626,.listRowCircle__60626 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     display: flex;
     justify-content: center
@@ -1128,4 +1128,4 @@
     padding: 16px
 }
 
-/*# sourceMappingURL=a8bd81d466b4b4d8.css.map*/
+/*# sourceMappingURL=67c7c8cd70c518ac.css.map*/

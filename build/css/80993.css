@@ -1,6 +1,6 @@
 /**
   Module ID: 80993
-  Original File Name: ccf6e1d32982ca5c
+  Original File Name: 80b755631c6decca
 **/
 .connectedAccountVanityMetadata_fffe42 {
     margin-top: 4px
@@ -11,7 +11,7 @@
 }
 
 .connectedAccountVanityMetadataTag_fffe42 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 12px;
     padding: 1px 8px
 }
@@ -244,7 +244,7 @@
 
 .connectionsChecksGroup_a470b4 {
     align-items: center;
-    border: 2px solid var(--background-modifier-accent);
+    border: 2px solid var(--border-subtle);
     border-radius: 12px;
     -moz-column-gap: 16px;
     column-gap: 16px;
@@ -265,22 +265,22 @@
 }
 
 .connectionsChecksGroupPassed_a470b4 {
-    background-color: var(--background-tertiary);
-    border: 2px solid var(--background-tertiary);
+    background-color: var(--background-base-lowest);
+    border: 2px solid var(--background-base-lowest);
     cursor: unset
 }
 
 .connectionsChecksGroupPassed_a470b4:hover {
-    border-color: var(--background-tertiary)
+    border-color: var(--background-base-lowest)
 }
 
 .connectionsChecksGroupPlatformDisabled_a470b4 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     cursor: not-allowed
 }
 
 .connectionsChecksGroupPlatformDisabled_a470b4:hover {
-    border-color: var(--background-modifier-accent)
+    border-color: var(--border-subtle)
 }
 
 .connectionsChecksGroupTextContainer_a470b4 {
@@ -319,7 +319,7 @@
 }
 
 .connectionsChecksGroupCheckmark_a470b4 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     height: 20px;
     width: 20px
 }
@@ -359,12 +359,12 @@
 }
 
 .accountConnectedPreviewConnectedUserAccount_a470b4 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     margin-top: 8px!important
 }
 
 .accountConnectedPrivacyOptionsContainer_a470b4 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -383,7 +383,7 @@
 
 .roleGranted_a470b4 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 4px 4px 0 0;
     display: flex;
     flex-direction: row;
@@ -433,4 +433,4 @@
     white-space: nowrap
 }
 
-/*# sourceMappingURL=ccf6e1d32982ca5c.css.map*/
+/*# sourceMappingURL=80b755631c6decca.css.map*/

@@ -54,21 +54,21 @@ function j(e) {
     guild: n,
     prompts: j,
     completeOnboarding: v,
-    setCurrentStep: _,
-    disableTracking: b,
+    setCurrentStep: b,
+    disableTracking: _,
     previousPromptIndex: N
-  } = e, C = l.useRef(null), O = (0, i.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [E, I] = l.useState(null != (t = null == O ? void 0 : O.response) && t), k = (0, i.e7)([c.Z], () => c.Z.get(n.id)), Z = l.useRef(null), y = l.useRef(null), P = l.useCallback(async () => {
-    if (null != k && null != O) {
+  } = e, C = l.useRef(null), E = (0, i.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [O, I] = l.useState(null != (t = null == E ? void 0 : E.response) && t), k = (0, i.e7)([c.Z], () => c.Z.get(n.id)), Z = l.useRef(null), y = l.useRef(null), P = l.useCallback(async () => {
+    if (null != k && null != E) {
       try {
         await a.ZP.submitVerificationForm(n.id, g(x({}, k), {
-          formFields: [g(x({}, O), {
-            response: E
+          formFields: [g(x({}, E), {
+            response: O
           })]
         }))
       } catch (e) {}
       v()
     }
-  }, [n.id, k, O, E, v]);
+  }, [n.id, k, E, O, v]);
 
   function w(e) {
     let [t] = e;
@@ -84,7 +84,7 @@ function j(e) {
     return null != t && null != t.lastElementChild && e.observe(t.lastElementChild), () => {
       null != t && null != t.lastElementChild && e.unobserve(t.lastElementChild)
     }
-  }, [y, Z]), null == O) ? null : (0, r.jsx)("div", {
+  }, [y, Z]), null == E) ? null : (0, r.jsx)("div", {
     className: p.prompt,
     children: (0, r.jsxs)("div", {
       className: p.promptContent,
@@ -102,7 +102,7 @@ function j(e) {
         }), (0, r.jsx)("div", {
           className: p.termsFieldBody,
           ref: y,
-          children: O.values.map((e, t) => (0, r.jsxs)("div", {
+          children: E.values.map((e, t) => (0, r.jsxs)("div", {
             className: p.termsRow,
             children: [(0, r.jsx)(o.Text, {
               variant: "text-sm/normal",
@@ -126,7 +126,7 @@ function j(e) {
           children: -1 !== N && (0, r.jsxs)(o.zxk, {
             innerClassName: p.buttonInner,
             onClick: () => {
-              !b && (m.default.track(f.rMx.GUILD_ONBOARDING_STEP_COMPLETED, g(x({}, (0, s.hH)(n.id)), {
+              !_ && (m.default.track(f.rMx.GUILD_ONBOARDING_STEP_COMPLETED, g(x({}, (0, s.hH)(n.id)), {
                 step: -1,
                 skipped: !1,
                 back: !0,
@@ -136,7 +136,7 @@ function j(e) {
               })), N >= 0 && m.default.track(f.rMx.GUILD_ONBOARDING_STEP_VIEWED, g(x({}, (0, s.hH)(n.id)), {
                 step: N,
                 required: j[N].required
-              }))), _(N)
+              }))), b(N)
             },
             size: o.zxk.Sizes.MEDIUM,
             look: o.zxk.Looks.OUTLINED,
@@ -153,11 +153,11 @@ function j(e) {
             className: p.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: E ? h.intl.string(h.t.arAe3N) : h.intl.string(h.t.D0CVAQ)
+            children: O ? h.intl.string(h.t.arAe3N) : h.intl.string(h.t.D0CVAQ)
           }), (0, r.jsxs)(o.zxk, {
             innerClassName: p.buttonInner,
             onClick: P,
-            disabled: !E,
+            disabled: !O,
             size: o.zxk.Sizes.MEDIUM,
             look: o.zxk.Looks.FILLED,
             grow: !1,

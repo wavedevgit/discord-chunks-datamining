@@ -1,6 +1,6 @@
 /**
   Module ID: 17153
-  Original File Name: 06636deb5e7d7641
+  Original File Name: 9165d2c5d06d9cf1
 **/
 .container_fea832 {
     background-color: var(--input-background);
@@ -244,8 +244,8 @@
 }
 
 .searchBar__3e00d {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-base-lower);
+    border: 1px solid var(--background-base-lowest);
     margin-bottom: 8px
 }
 
@@ -595,4 +595,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=06636deb5e7d7641.css.map*/
+/*# sourceMappingURL=9165d2c5d06d9cf1.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 2026
-  Original File Name: 94803f89b092b859
+  Original File Name: 8a64a5ad046ab16d
 **/
 .buttonContent_a83ec9 {
     align-items: center;
@@ -307,7 +307,7 @@
 
 .chatPreview_c50f62 {
     align-items: stretch;
-    background: var(--bg-overlay-chat,var(--background-primary));
+    background: var(--bg-overlay-chat,var(--background-base-low));
     border-radius: var(--radius-sm);
     bottom: 44px;
     display: flex;
@@ -531,4 +531,4 @@
     width: 350px
 }
 
-/*# sourceMappingURL=94803f89b092b859.css.map*/
+/*# sourceMappingURL=8a64a5ad046ab16d.css.map*/

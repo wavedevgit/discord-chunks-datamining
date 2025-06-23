@@ -1,6 +1,6 @@
 /**
   Module ID: 94495
-  Original File Name: 3585ff972fe3775e
+  Original File Name: d77601ceb15fbc15
 **/
 .effect_a9ddb3 {
     bottom: 0;
@@ -171,7 +171,7 @@
 }
 
 .scroller_cc2dff {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px
 }
@@ -346,7 +346,7 @@
 }
 
 .reactionBtn_f8896c.forceShow_f8896c {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid transparent;
     border-radius: 8px;
     margin-bottom: 4px;
@@ -356,7 +356,7 @@
 }
 
 .reactionBtn_f8896c.forceShow_f8896c:hover {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-color: var(--opacity-white-20)
 }
 
@@ -365,7 +365,7 @@
 }
 
 .reaction_f8896c {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     background-color: var(--background-mod-subtle);
     border: 1px solid transparent;
     border-radius: 8px;
@@ -634,7 +634,7 @@
 }
 
 .reaction__23977 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     background-color: var(--background-mod-subtle);
     border: .0625rem solid transparent;
     border-radius: .5rem;
@@ -815,7 +815,7 @@
 }
 
 .custom-theme-background .reaction__23977 {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-color: var(--border-strong)
 }
 
@@ -888,7 +888,7 @@
 }
 
 .burstReactionTooltipSpacer_b49891 {
-    border-top: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--border-subtle);
     margin-top: 8px;
     padding-top: 8px
 }
@@ -1108,7 +1108,7 @@
 
 .replyBadge_c19a55 {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     color: var(--header-secondary);
     display: flex;
     justify-content: center
@@ -1132,7 +1132,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55>span {
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: 4px;
     padding: 1px 4px 0
 }
@@ -1142,7 +1142,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55:hover>span {
-    background: var(--bg-mod-faint)
+    background: var(--background-mod-faint)
 }
 
 .ticketIcon_c19a55,.userJoinSystemMessageIcon_c19a55 {
@@ -1394,7 +1394,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -2017,7 +2017,7 @@
 }
 
 .container_faa96b:hover .dots_faa96b {
-    border-color: var(--background-primary)
+    border-color: var(--background-base-low)
 }
 
 .container_faa96b:active {
@@ -2143,7 +2143,7 @@
 }
 
 .obscuredThumbnailPlaceholder_faa96b {
-    background-color: var(--bg-mod-strong)
+    background-color: var(--background-mod-strong)
 }
 
 .body_faa96b {
@@ -2164,7 +2164,7 @@
 }
 
 .bullet_faa96b {
-    color: var(--background-modifier-accent)
+    color: var(--border-subtle)
 }
 
 .headerText_faa96b {
@@ -2215,8 +2215,8 @@
 }
 
 .dots_faa96b {
-    background-color: var(--background-tertiary);
-    border: 3px solid var(--background-primary);
+    background-color: var(--background-base-lowest);
+    border: 3px solid var(--background-base-low);
     border-radius: var(--radius-md);
     height: 16px;
     justify-content: center;
@@ -2343,7 +2343,7 @@
 }
 
 .tagFiltered__08166 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .modalRoot__02068 {
@@ -2363,7 +2363,7 @@
 }
 
 .forumPost__02068 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     margin-top: 16px;
     pointer-events: none
@@ -2383,4 +2383,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=3585ff972fe3775e.css.map*/
+/*# sourceMappingURL=d77601ceb15fbc15.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 48389
-  Original File Name: 387d894609944647
+  Original File Name: 3ae65fb4c8843c4c
 **/
 .header__6e6ad {
     align-items: center;
@@ -46,7 +46,7 @@
 
 .container_aea6af {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     display: flex;
     height: 44px
 }
@@ -64,7 +64,7 @@
 
 .notice_d37fb3 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 4px;
     display: flex
 }
@@ -111,7 +111,7 @@
 }
 
 .previewContainerParent__038c3 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-top-left-radius: var(--radius-md);
     margin-top: -8px;
     overflow-y: clip;
@@ -288,4 +288,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=387d894609944647.css.map*/
+/*# sourceMappingURL=3ae65fb4c8843c4c.css.map*/

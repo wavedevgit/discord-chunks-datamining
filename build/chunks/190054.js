@@ -65,7 +65,7 @@ function u(e) {
           return e
         }({}, u, e), n = n = {
           size: "xxs",
-          color: h ? l.TVs.colors.TEXT_POSITIVE : l.TVs.colors.INTERACTIVE_NORMAL
+          color: h ? l.TVs.colors.TEXT_FEEDBACK_POSITIVE : l.TVs.colors.INTERACTIVE_NORMAL
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

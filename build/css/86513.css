@@ -1,6 +1,6 @@
 /**
   Module ID: 86513
-  Original File Name: 9ff112c7e3e47a10
+  Original File Name: 9b0c773570e65a0e
 **/
 .confirmationContainer_f473af {
     margin-top: 56px
@@ -37,7 +37,7 @@
 }
 
 .breadcrumbs__99854:after {
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     content: "";
     display: block;
     margin-top: 16px;
@@ -56,4 +56,4 @@
     padding: 16px
 }
 
-/*# sourceMappingURL=9ff112c7e3e47a10.css.map*/
+/*# sourceMappingURL=9b0c773570e65a0e.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 86350
-  Original File Name: 39fb35c36789818b
+  Original File Name: 8dd460b87ba78001
 **/
 .menu__43313 {
     max-height: 70vh
@@ -225,7 +225,7 @@
 }
 
 .digitContainer__8fece {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 4px;
     color: var(--header-primary);
     width: 16px
@@ -308,7 +308,7 @@
 }
 
 .iconCircle_ed0705 {
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: 20px;
     bottom: -7px;
     display: flex;
@@ -324,8 +324,8 @@
 }
 
 .lockedCircle_ed0705 {
-    background: linear-gradient(0deg,var(--bg-mod-subtle) 0,var(--bg-mod-subtle) 100%),var(--background-secondary-alt);
-    border: 3px solid var(--background-tertiary);
+    background: linear-gradient(0deg,var(--background-mod-subtle) 0,var(--background-mod-subtle) 100%),var(--background-secondary-alt);
+    border: 3px solid var(--background-base-lowest);
     border-radius: 20px;
     height: 18px;
     width: 18px
@@ -407,7 +407,7 @@
 }
 
 .filter_ed0705:hover .iconCircle_ed0705 {
-    background: linear-gradient(0deg,var(--background-modifier-hover),var(--background-modifier-hover)),linear-gradient(0deg,var(--background-tertiary),var(--background-tertiary))
+    background: linear-gradient(0deg,var(--background-modifier-hover),var(--background-modifier-hover)),linear-gradient(0deg,var(--background-base-lowest),var(--background-base-lowest))
 }
 
 .filter_ed0705.selected_ed0705 .profile_ed0705 {
@@ -706,7 +706,7 @@
 }
 
 .voiceFiltersPopout_e2f668 {
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: 16px;
     box-shadow: var(--shadow-high);
     display: flex;
@@ -752,7 +752,7 @@
 }
 
 .voiceFiltersFooterButton_e2f668 {
-    background: var(--bg-mod-faint);
+    background: var(--background-mod-faint);
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
     flex-grow: 0;
@@ -761,7 +761,7 @@
 }
 
 .voiceFiltersFooterButton_e2f668:hover {
-    background: var(--bg-mod-strong)
+    background: var(--background-mod-strong)
 }
 
 .resizeHandle_e2f668,.voiceFiltersFooterButton_e2f668 .voiceFiltersFooterButtonInner_e2f668 {
@@ -1525,7 +1525,7 @@
 }
 
 .overlap__07f91 .avatar__07f91 {
-    border: 4px solid var(--background-secondary);
+    border: 4px solid var(--background-base-lower);
     border-color: var(--background-base-lowest);
     margin: 0
 }
@@ -1551,7 +1551,7 @@
 }
 
 .avatarSpeaking__07f91 {
-    box-shadow: inset 0 0 0 2px var(--green-360),inset 0 0 0 3px var(--background-secondary)
+    box-shadow: inset 0 0 0 2px var(--green-360),inset 0 0 0 3px var(--background-base-lower)
 }
 
 .username__07f91 {
@@ -1684,14 +1684,14 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 span.clanTag__07f91 {
-    background: var(--bg-mod-subtle);
+    background: var(--background-mod-subtle);
     flex: 0;
     text-overflow: ellipsis;
     white-space: nowrap
 }
 
 span.clanTag__07f91.isOverlay__07f91 {
-    background: var(--background-tertiary)
+    background: var(--background-base-lowest)
 }
 
 .listDefault__07f91 .clickable__07f91:hover .clanTag__07f91 {
@@ -1699,7 +1699,7 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .theme-light .listDefault__07f91 .clickable__07f91:hover .clanTag__07f91 {
-    background: var(--bg-mod-strong)
+    background: var(--background-mod-strong)
 }
 
 .listDefault__07f91 .clickable__07f91.selected__07f91 .username__07f91,.usernameSpeaking__07f91 {
@@ -1733,7 +1733,7 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .guestSuffix__07f91 {
-    color: var(--text-positive)
+    color: var(--text-feedback-positive)
 }
 
 .userAvatar__07f91 {
@@ -1751,4 +1751,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=39fb35c36789818b.css.map*/
+/*# sourceMappingURL=8dd460b87ba78001.css.map*/

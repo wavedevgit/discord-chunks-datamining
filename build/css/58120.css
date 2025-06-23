@@ -1,6 +1,6 @@
 /**
   Module ID: 58120
-  Original File Name: f017f82fac99409f
+  Original File Name: 15d49de47cb5648d
 **/
 .container_f89b2c {
     background-color: var(--input-background);
@@ -230,8 +230,8 @@
 }
 
 .action__915cb {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-base-lower);
+    border: 1px solid var(--background-base-lowest);
     border-radius: var(--radius-xs);
     padding: 8px
 }
@@ -245,4 +245,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=f017f82fac99409f.css.map*/
+/*# sourceMappingURL=15d49de47cb5648d.css.map*/

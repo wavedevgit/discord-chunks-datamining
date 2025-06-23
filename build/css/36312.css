@@ -1,6 +1,6 @@
 /**
   Module ID: 36312
-  Original File Name: 8d08fe04e6cb472f
+  Original File Name: 78f4b31092c20a65
 **/
 .modal__2bb83 {
     min-height: 150px
@@ -38,7 +38,7 @@
 }
 
 .spamRequest__2bb83:not(:nth-last-of-type(2)) {
-    border-bottom: 1px solid var(--background-modifier-accent)
+    border-bottom: 1px solid var(--border-subtle)
 }
 
 .spamRequest__2bb83:not(:nth-last-of-type(2)):hover {
@@ -77,4 +77,4 @@
     margin-left: auto
 }
 
-/*# sourceMappingURL=8d08fe04e6cb472f.css.map*/
+/*# sourceMappingURL=78f4b31092c20a65.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 78431
-  Original File Name: 88be745eac51151f
+  Original File Name: a858498a6937faf0
 **/
 .cardContainer__8833c {
     display: grid;
@@ -177,7 +177,7 @@
 }
 
 .pill__3dc42 {
-    background: var(--background-modifier-accent);
+    background: var(--border-subtle);
     border: 1px solid var(--background-modifier-selected);
     border-radius: 100px;
     box-shadow: var(--custom-guild-shop-preview-pill-shadow-dark);
@@ -234,7 +234,7 @@
 }
 
 .theme-light .container__3dc42 {
-    background: var(--background-secondary)
+    background: var(--background-base-lower)
 }
 
 .theme-light .pill__3dc42 {
@@ -357,7 +357,7 @@
 }
 
 .container__49668 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -418,4 +418,4 @@
     }
 }
 
-/*# sourceMappingURL=88be745eac51151f.css.map*/
+/*# sourceMappingURL=a858498a6937faf0.css.map*/

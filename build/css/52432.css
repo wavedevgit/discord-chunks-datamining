@@ -1,9 +1,9 @@
 /**
   Module ID: 52432
-  Original File Name: 22d185c0e5170665
+  Original File Name: 4d85c1305520c5db
 **/
 .root__66e7e {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     background-color: var(--background-surface-higher);
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
@@ -13,7 +13,7 @@
 .option__66e7e {
     align-items: center;
     background-color: none;
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     color: var(--interactive-active);
     cursor: pointer;
     display: flex;
@@ -174,4 +174,4 @@
     background-image: url(/assets/8f1e1e90bea53650.svg)
 }
 
-/*# sourceMappingURL=22d185c0e5170665.css.map*/
+/*# sourceMappingURL=4d85c1305520c5db.css.map*/

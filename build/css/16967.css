@@ -1,6 +1,6 @@
 /**
   Module ID: 16967
-  Original File Name: 7ff52e2ea8270ed0
+  Original File Name: 687bd1f0c7b704c6
 **/
 .closeButton__47998 {
     position: absolute;
@@ -20,7 +20,7 @@
 }
 
 .conflictButton__47998 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid;
     height: 100px;
     justify-content: flex-start;
@@ -177,7 +177,7 @@
 }
 
 .iconWithGuildIcon__2894c {
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: var(--radius-round);
     color: var(--text-secondary);
     height: 12px;
@@ -195,7 +195,7 @@
 
 .acronym__2894c {
     align-items: center;
-    background-color: var(--bg-mod-strong);
+    background-color: var(--background-mod-strong);
     color: var(--text-normal);
     display: flex;
     font-weight: 500;
@@ -466,7 +466,7 @@
 
 .overflowCount__68334 {
     align-items: center;
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: 8px;
     bottom: 0;
     display: flex;
@@ -478,4 +478,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=7ff52e2ea8270ed0.css.map*/
+/*# sourceMappingURL=687bd1f0c7b704c6.css.map*/

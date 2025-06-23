@@ -1,10 +1,10 @@
 /**
   Module ID: 49027
-  Original File Name: 9ee7a5d80cc1cff5
+  Original File Name: 56497745ff232937
 **/
 .subscription_d970da {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     display: flex;
     padding: 16px
@@ -41,7 +41,7 @@
 }
 
 .guildIcon_d970da {
-    background-color: var(--background-primary)
+    background-color: var(--background-base-low)
 }
 
 .guildName_d970da {
@@ -122,7 +122,7 @@
 
 .pendingCancellation__2cbe8 {
     align-items: center;
-    background: var(--info-warning-background);
+    background: var(--background-feedback-warning);
     border: 1px solid var(--info-warning-foreground);
     border-radius: 4px;
     display: flex;
@@ -234,7 +234,7 @@
 
 .upsellFooter__5e07c {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
@@ -327,7 +327,7 @@
 }
 
 .planSelectDivider__945b8 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     height: 1px;
     margin: 16px 0
 }
@@ -382,7 +382,7 @@
 
 .existingSlotNotice__945b8 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
@@ -414,7 +414,7 @@
 }
 
 .reverseTrialContextInfoDivider__945b8 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     height: 1px
 }
 
@@ -507,4 +507,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=9ee7a5d80cc1cff5.css.map*/
+/*# sourceMappingURL=56497745ff232937.css.map*/

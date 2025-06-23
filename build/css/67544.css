@@ -1,6 +1,6 @@
 /**
   Module ID: 67544
-  Original File Name: 4165942f27a1f73d
+  Original File Name: b27709f4d24eaa41
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -12,7 +12,7 @@
 }
 
 .dismissButton_dd40b0 {
-    background-color: var(--bg-base-primary);
+    background-color: var(--background-base-low);
     border: 1px solid var(--border-subtle);
     border-radius: 16px;
     box-shadow: var(--shadow-border) var(--shadow-high);
@@ -425,7 +425,7 @@
 
 .achievement__79a24 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-md);
     display: flex;
     height: 90px;
@@ -653,7 +653,7 @@
 }
 
 .container__0ec99 {
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -697,7 +697,7 @@
 }
 
 .response__0ec99 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     padding: 8px
 }
@@ -1221,4 +1221,4 @@
     cursor: url(/assets/dfb72fed71c8e261.svg),pointer
 }
 
-/*# sourceMappingURL=4165942f27a1f73d.css.map*/
+/*# sourceMappingURL=b27709f4d24eaa41.css.map*/

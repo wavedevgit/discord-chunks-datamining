@@ -1,6 +1,6 @@
 /**
   Module ID: 59385
-  Original File Name: 0cb106a5a6fd0686
+  Original File Name: 57a341f3fcb973ff
 **/
 .feedback__4c857 {
     align-items: center;
@@ -18,7 +18,7 @@
 
 .buttonsBackground__4c857 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-round);
     display: flex;
@@ -128,7 +128,7 @@
 }
 
 .tipsSection__3fee9 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: var(--radius-sm);
     flex-grow: 0;
     gap: var(--spacing-16);
@@ -144,7 +144,7 @@
 
 .tipNumber__3fee9 {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: var(--radius-round);
     display: flex;
     flex-direction: column;
@@ -153,4 +153,4 @@
     min-width: 32px
 }
 
-/*# sourceMappingURL=0cb106a5a6fd0686.css.map*/
+/*# sourceMappingURL=57a341f3fcb973ff.css.map*/

@@ -58,8 +58,8 @@ function I(e) {
     V = (0, f.Z)(k),
     B = (0, p.Z)(k),
     Y = (0, g.Z)(k),
-    z = a.Yn.DEFAULT,
-    W = _.Z.isSelfDeaf(z),
+    W = a.Yn.DEFAULT,
+    z = _.Z.isSelfDeaf(W),
     G = (0, l.e7)([_.Z], () => _.Z.getMode()),
     H = G === O.pM4.VOICE_ACTIVITY ? O.pM4.PUSH_TO_TALK : O.pM4.VOICE_ACTIVITY;
   return (0, r.jsx)(c.Z, {
@@ -79,10 +79,10 @@ function I(e) {
           id: "deafen",
           label: S.intl.string(S.t.wjcRFR),
           action: () => s.Z.toggleSelfDeaf({
-            context: z,
+            context: W,
             location: "AudioDeviceMenu"
           }),
-          checked: W
+          checked: z
         }, "self-deafen") : null, N && I && b.isPlatformEmbedded ? (0, r.jsx)(o.S89, {
           checked: G === O.pM4.PUSH_TO_TALK,
           id: "input-mode",

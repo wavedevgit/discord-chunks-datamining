@@ -1,6 +1,6 @@
 /**
   Module ID: 64386
-  Original File Name: 2bc37e4651ae61f3
+  Original File Name: 37cb8234f62668ed
 **/
 .section__82d84 {
     margin-bottom: 16px
@@ -156,7 +156,7 @@
 }
 
 .preview__4e29d {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     display: flex;
     height: 214px;
@@ -224,4 +224,4 @@
     min-height: 0
 }
 
-/*# sourceMappingURL=2bc37e4651ae61f3.css.map*/
+/*# sourceMappingURL=37cb8234f62668ed.css.map*/

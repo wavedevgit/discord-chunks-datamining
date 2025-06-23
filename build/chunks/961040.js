@@ -21,7 +21,7 @@ function p(e) {
     targetElementRef: f
   } = e, [g, m] = i.useState(!1), b = i.useCallback(() => {
     m(!1)
-  }, []), y = i.useCallback(() => {
+  }, []), O = i.useCallback(() => {
     m(!g)
   }, [g]);
   return (0, s.ZP)(() => {
@@ -29,7 +29,7 @@ function p(e) {
       m(!1)
     };
     return o.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => o.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-  }), i.useEffect(() => (a.S.subscribe(u.CkL.TOGGLE_INBOX, y), () => void a.S.unsubscribe(u.CkL.TOGGLE_INBOX, y)), [y]), (0, r.jsx)(l.yRy, {
+  }), i.useEffect(() => (a.S.subscribe(u.CkL.TOGGLE_INBOX, O), () => void a.S.unsubscribe(u.CkL.TOGGLE_INBOX, O)), [O]), (0, r.jsx)(l.yRy, {
     targetElementRef: f,
     shouldShow: g,
     align: p,
@@ -57,7 +57,7 @@ function p(e) {
       let {
         isShown: r
       } = n;
-      return t(y, r, e)
+      return t(O, r, e)
     }
   })
 }

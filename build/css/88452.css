@@ -1,6 +1,6 @@
 /**
   Module ID: 88452
-  Original File Name: 2d3e0c87f1f250f1
+  Original File Name: b65b0a5d32cd6932
 **/
 .modal__36aad {
     border-radius: var(--radius-sm);
@@ -16,7 +16,7 @@
 
 .body__36aad {
     align-items: center;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -26,7 +26,7 @@
 }
 
 .footer__36aad {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-bottom-left-radius: var(--radius-sm);
     border-bottom-right-radius: var(--radius-sm);
     display: flex;
@@ -35,4 +35,4 @@
     padding: 16px
 }
 
-/*# sourceMappingURL=2d3e0c87f1f250f1.css.map*/
+/*# sourceMappingURL=b65b0a5d32cd6932.css.map*/

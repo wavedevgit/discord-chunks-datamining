@@ -1,6 +1,6 @@
 /**
   Module ID: 59458
-  Original File Name: 6f3651400918cd14
+  Original File Name: 75f3de68d6658fe0
 **/
 @use postcss-pxtorem;
 
@@ -157,7 +157,7 @@
 
 .replyBadge_c19a55 {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     color: var(--header-secondary);
     display: flex;
     justify-content: center
@@ -181,7 +181,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55>span {
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: 4px;
     padding: 1px 4px 0
 }
@@ -191,7 +191,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55:hover>span {
-    background: var(--bg-mod-faint)
+    background: var(--background-mod-faint)
 }
 
 .ticketIcon_c19a55,.userJoinSystemMessageIcon_c19a55 {
@@ -443,7 +443,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -1084,7 +1084,7 @@
 }
 
 .nonMediaMosaicItem__6c706 {
-    outline: 1px solid var(--background-secondary);
+    outline: 1px solid var(--background-base-lower);
     right: -8px;
     top: -8px
 }
@@ -1137,7 +1137,7 @@
 }
 
 .hoverButtonGroup__06ab4 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 5px;
     display: flex;
     opacity: 0;
@@ -1149,7 +1149,7 @@
 }
 
 .nonMediaMosaicItem__06ab4 {
-    outline: 1px solid var(--background-secondary);
+    outline: 1px solid var(--background-base-lower);
     right: -8px;
     top: -8px
 }
@@ -1541,14 +1541,14 @@
 }
 
 .popoutCheckIcon__86331 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     height: 18px;
     margin-right: 8px;
     width: 18px
 }
 
 .popoutHeaderContainer__86331 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     padding: 10px
 }
 
@@ -1591,7 +1591,7 @@
 }
 
 .iconContainer_c00127 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     margin-right: var(--custom-message-helpers-popout-padding-width);
     width: 40px
 }
@@ -1609,7 +1609,7 @@
 }
 
 .newMemberBadge_f80704 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     cursor: pointer;
     display: inline-block;
     height: calc(1rem + 4px);
@@ -1714,7 +1714,7 @@
 
 .classificationEvidenceCard_f57acb {
     background: var(--channeltextarea-background);
-    border: 1px solid var(--bg-base-tertiary);
+    border: 1px solid var(--background-base-lowest);
     border-radius: var(--radius-sm);
     display: flex;
     flex-direction: row;
@@ -1763,7 +1763,7 @@
 
 .classificationActionsTakenRowIcon_a48d6b {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     display: flex;
     height: 24px;
@@ -1803,7 +1803,7 @@
 
 .classificationPolicyCard_a48d6b {
     align-items: center;
-    background: var(--bg-base-secondary);
+    background: var(--background-base-lower);
     border-radius: 8px;
     display: flex;
     margin-top: 14px;
@@ -1816,7 +1816,7 @@
 
 .classificationPolicyCardIcon_a48d6b {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 200px;
     display: flex;
     height: 40px;
@@ -1873,4 +1873,4 @@
     margin: 0 var(--spacing-40)
 }
 
-/*# sourceMappingURL=6f3651400918cd14.css.map*/
+/*# sourceMappingURL=75f3de68d6658fe0.css.map*/

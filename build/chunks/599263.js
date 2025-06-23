@@ -19,12 +19,12 @@ var r = n(255367),
   g = n(160404),
   j = n(703656),
   v = n(546247),
-  _ = n(430824),
-  b = n(768581),
+  b = n(430824),
+  _ = n(768581),
   N = n(302221),
   C = n(549817),
-  O = n(45966),
-  E = n(819553),
+  E = n(45966),
+  O = n(819553),
   I = n(548473),
   k = n(15320),
   Z = n(973051),
@@ -39,20 +39,20 @@ function D(e) {
     ref: n,
     width: i,
     height: D
-  } = (0, m.ZP)(), T = (0, p.Q3)("GuildOnboardingPage"), R = (0, a.Wu)([O.Z], () => O.Z.getOnboardingPromptsForOnboarding(t)), M = (0, a.e7)([O.Z], () => O.Z.getEnabled(t)), A = l.useCallback((e, n, r) => {
+  } = (0, m.ZP)(), T = (0, p.Q3)("GuildOnboardingPage"), R = (0, a.Wu)([E.Z], () => E.Z.getOnboardingPromptsForOnboarding(t)), M = (0, a.e7)([E.Z], () => E.Z.getEnabled(t)), A = l.useCallback((e, n, r) => {
     C.Z.selectOption(t, e, n, r)
   }, [t]), S = l.useCallback(() => {
     C.Z.completeOnboarding(t, R)
-  }, [t, R]), B = (0, a.e7)([_.Z], () => _.Z.getGuild(t)), F = l.useMemo(() => null == B ? null : b.ZP.getGuildSplashURL({
+  }, [t, R]), B = (0, a.e7)([b.Z], () => b.Z.getGuild(t)), F = l.useMemo(() => null == B ? null : _.ZP.getGuildSplashURL({
     id: B.id,
     splash: B.splash
-  }), [B]), L = (0, h.N)(F), z = (0, a.e7)([E.ZP], () => E.ZP.getCurrentOnboardingStep(t)), [U, G] = l.useState(null != F ? null : "cover"), V = l.useCallback(e => {
+  }), [B]), L = (0, h.N)(F), z = (0, a.e7)([O.ZP], () => O.ZP.getCurrentOnboardingStep(t)), [U, G] = l.useState(null != F ? null : "cover"), V = l.useCallback(e => {
     G(z), C.Z.setUserOnboardingStep(t, e)
-  }, [t, z]), q = (0, a.e7)([g.Z], () => g.Z.isFullServerPreview(t)), H = (0, a.e7)([E.ZP], () => E.ZP.getOnboardingStatus(t)), W = null != R && R.length > 0, X = l.useCallback(() => {
-    (0, E.kp)(H) && M && W ? V(0) : S()
+  }, [t, z]), q = (0, a.e7)([g.Z], () => g.Z.isFullServerPreview(t)), H = (0, a.e7)([O.ZP], () => O.ZP.getOnboardingStatus(t)), W = null != R && R.length > 0, X = l.useCallback(() => {
+    (0, O.kp)(H) && M && W ? V(0) : S()
   }, [H, M, W, V, S]);
   l.useEffect(() => {
-    if (!E.ZP.shouldShowOnboarding(t)) return u.Z.escapeToDefaultChannel(t);
+    if (!O.ZP.shouldShowOnboarding(t)) return u.Z.escapeToDefaultChannel(t);
     (0, x.E)(t)
   }, [t]);
   let Y = (0, c.Yzy)(z, {
@@ -66,22 +66,22 @@ function D(e) {
         opacity: 1
       }
     }, "cover" !== U && null !== U ? "animate-never" : "respect-motion-settings"),
-    K = E.ZP.shouldShowOnboarding(t),
-    J = null == B;
+    J = O.ZP.shouldShowOnboarding(t),
+    K = null == B;
   if (l.useEffect(() => {
-      if (!K || J) {
+      if (!J || K) {
         let e = setTimeout(() => {
           (0, j.uL)(y.Z5c.CHANNEL(t))
         }, 1e3);
         return () => clearTimeout(e)
       }
-    }, [K, J, t]), !E.ZP.shouldShowOnboarding(t) || null == B) return null;
+    }, [J, K, t]), !O.ZP.shouldShowOnboarding(t) || null == B) return null;
   let Q = () => {
     switch (z) {
       case "cover":
         return (0, r.jsx)(I.ZP, {
           guild: B,
-          onboardingStatus: E.uX.READY,
+          onboardingStatus: O.uX.READY,
           onStart: X,
           disableTracking: q
         });

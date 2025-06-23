@@ -1,6 +1,6 @@
 /**
   Module ID: 22942
-  Original File Name: 5f4a4163e43f9d75
+  Original File Name: a373b8ca401a84e6
 **/
 .modalRoot_d507dd {
     height: 100%;
@@ -8,7 +8,7 @@
 }
 
 .contentWrapper_d507dd {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-border),var(--shadow-high);
     box-sizing: border-box;
@@ -85,7 +85,7 @@
 }
 
 .uploadIconInnerContainer_d507dd {
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: var(--radius-sm);
     padding: 8px;
     position: absolute
@@ -107,4 +107,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=5f4a4163e43f9d75.css.map*/
+/*# sourceMappingURL=a373b8ca401a84e6.css.map*/

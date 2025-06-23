@@ -1,6 +1,6 @@
 /**
   Module ID: 37709
-  Original File Name: 51acbb4b3f9288c3
+  Original File Name: 18b78407f1b1a308
 **/
 .coverContainer__2f300 {
     align-items: center;
@@ -287,9 +287,9 @@
 
 .headerSeparator_fe70ca {
     align-self: center;
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 4px;
-    color: var(--background-modifier-accent);
+    color: var(--border-subtle);
     flex-shrink: 0;
     height: 4px;
     margin: 0 8px;
@@ -305,7 +305,7 @@
 }
 
 .selectValuePill_fe70ca {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 4px;
     margin-right: 8px;
     padding: 4px 8px
@@ -332,7 +332,7 @@
 
 .navButtons_fe70ca {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     display: flex;
@@ -345,7 +345,7 @@
 }
 
 .termsFieldBody_fe70ca {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 12px;
     margin-top: 32px;
     padding: 0 16px
@@ -353,7 +353,7 @@
 
 .termsRow_fe70ca {
     align-items: flex-start;
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -403,4 +403,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=51acbb4b3f9288c3.css.map*/
+/*# sourceMappingURL=18b78407f1b1a308.css.map*/

@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(507808),
   m = n(822857),
   b = n(479766),
-  y = n(331663),
-  O = n(981631),
+  O = n(331663),
+  y = n(981631),
   _ = n(921944),
   v = n(46140);
 let C = "orb-announcement-modal-key";
@@ -36,7 +36,7 @@ function j() {
     enabled: j
   } = (0, m.hl)({
     location: "virtual_currency_announcement_modal"
-  }), [S, x] = (0, h.US)(j ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...y.b.useSelectedDismissibleContent), E = (0, c.s9z)(c.JQI);
+  }), [S, x] = (0, h.US)(j ? [s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...O.b.useSelectedDismissibleContent), E = (0, c.s9z)(c.JQI);
   i.useEffect(() => {
     j && !t && S === s.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || E || (u.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
@@ -62,9 +62,9 @@ function j() {
               dismissAction: _.L.INDIRECT_ACTION,
               groupName: _.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, g.Y)({
-              pageType: O.ZY5.ORBS_ANNOUNCEMENT_MODAL,
-              sectionType: O.jXE.ORBS_ANNOUNCEMENT_MODAL,
-              ctaObject: O.qAy.CTA_TO_ORB_INTRO_QUEST
+              pageType: y.ZY5.ORBS_ANNOUNCEMENT_MODAL,
+              sectionType: y.jXE.ORBS_ANNOUNCEMENT_MODAL,
+              ctaObject: y.qAy.CTA_TO_ORB_INTRO_QUEST
             }), (0, p.navigateToQuestHome)({
               questId: v.V6,
               fromContent: l.j.ORBS_ANNOUNCEMENT_MODAL

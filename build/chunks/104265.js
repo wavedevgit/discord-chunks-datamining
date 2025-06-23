@@ -37,7 +37,7 @@ function _(e) {
     config: {
       duration: 150
     }
-  }, "animate-always"), T = (0, u.dQu)(c.Z.colors.BACKGROUND_MODIFIER_ACCENT), B = (0, u.dQu)(c.Z.unsafe_rawColors.BRAND_500), k = (0, u.q_F)({
+  }, "animate-always"), T = (0, u.dQu)(c.Z.colors.BORDER_SUBTLE), B = (0, u.dQu)(c.Z.unsafe_rawColors.BRAND_500), k = (0, u.q_F)({
     from: {
       color: B.spring()
     },

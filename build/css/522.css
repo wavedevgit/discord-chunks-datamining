@@ -1,6 +1,6 @@
 /**
   Module ID: 522
-  Original File Name: d7e6e053a8e14c42
+  Original File Name: c13e0d38b316cb2d
 **/
 .qrCodeOverlay_c28498 {
     align-items: center;
@@ -59,7 +59,7 @@
 }
 
 .card__3988c {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
@@ -121,4 +121,4 @@
     opacity: .6
 }
 
-/*# sourceMappingURL=d7e6e053a8e14c42.css.map*/
+/*# sourceMappingURL=c13e0d38b316cb2d.css.map*/

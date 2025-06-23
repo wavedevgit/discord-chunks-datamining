@@ -17,9 +17,9 @@ var r = n(255367),
   g = n(179809),
   m = n(588275),
   b = n(388032),
-  y = n(315268);
+  O = n(315268);
 
-function O(e) {
+function y(e) {
   let {
     onActivate: t,
     children: n
@@ -32,17 +32,17 @@ function O(e) {
       t(), null == (l = f.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
   }, [f, d, p, t]), (0, r.jsxs)("div", {
-    className: y.container,
+    className: O.container,
     children: [(0, r.jsx)(o.yRy, {
       ref: f,
       targetElementRef: a,
       shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
-        className: y.popoutContainer,
+        className: O.popoutContainer,
         children: [(0, r.jsxs)("div", {
-          className: y.popoutContent,
+          className: O.popoutContent,
           children: [(0, r.jsxs)("div", {
-            className: y.coachmarkTextContainer,
+            className: O.coachmarkTextContainer,
             children: [(0, r.jsx)(o.X6q, {
               variant: "heading-md/medium",
               children: b.intl.string(b.t["0YV0YG"])
@@ -59,7 +59,7 @@ function O(e) {
             children: b.intl.string(b.t["4r+amZ"])
           })]
         }), (0, r.jsx)("div", {
-          className: y.popoutCaretLeft
+          className: O.popoutCaretLeft
         })]
       }),
       position: "right",
@@ -86,7 +86,7 @@ function O(e) {
           }
           return e
         }({}, e), n = n = {
-          className: y.popoutAnchor,
+          className: O.popoutAnchor,
           ref: a
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -122,7 +122,7 @@ function _(e) {
   let E = null != v && j.includes(v);
   return (i.useEffect(() => {
     !n && E && S !== v && _(!0)
-  }, [n, E, S, v]), 0 === j.length) ? null : (0, r.jsx)(O, {
+  }, [n, E, S, v]), 0 === j.length) ? null : (0, r.jsx)(y, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
       folderNode: x,
@@ -135,7 +135,7 @@ function _(e) {
       },
       folderButtonSize: "icon",
       folderButtonContent: (0, r.jsx)("div", {
-        className: y.pendingFolderButtonIcon,
+        className: O.pendingFolderButtonIcon,
         children: (0, r.jsx)(o.wGF, {
           size: "sm",
           color: "currentColor"

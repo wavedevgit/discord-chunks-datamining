@@ -1,6 +1,6 @@
 /**
   Module ID: 35755
-  Original File Name: dae61193f552263a
+  Original File Name: af1cd867b44dbfdb
 **/
 .brokenImageIcon_f68fcb {
     color: var(--background-accent);
@@ -40,7 +40,7 @@
 }
 
 .container__5f4c1 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: var(--radius-sm);
     box-shadow: var(--elevation-medium);
     width: 180px
@@ -154,7 +154,7 @@
 }
 
 .rowDivider_ccbbbb {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     bottom: 0;
     height: 1px;
     left: calc(var(--custom-row-padding) + var(--custom-row-icon-size) + var(--spacing-12));
@@ -173,7 +173,7 @@
 }
 
 .bannerImage_ccbbbb {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     display: none;
     overflow: hidden;
     width: 100%
@@ -191,7 +191,7 @@
 
 .iconPlaceholder_ccbbbb {
     --custom-app-icon-size: 38px;
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 25%;
     height: var(--custom-app-icon-size);
     width: var(--custom-app-icon-size)
@@ -222,7 +222,7 @@
 
 .textPlaceholder_ccbbbb {
     align-self: flex-start;
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: var(--radius-round)
 }
 
@@ -253,7 +253,7 @@
 }
 
 .commandContainer_c94584 {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     display: flex;
     flex-direction: column
@@ -265,7 +265,7 @@
 }
 
 .commandContainer_c94584 .command_c94584:not(:last-child) {
-    border-bottom: 1px solid var(--background-modifier-accent)
+    border-bottom: 1px solid var(--border-subtle)
 }
 
 .commandContainer_c94584 .command_c94584:last-child {
@@ -285,7 +285,7 @@
 }
 
 .command_c94584 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     padding: var(--spacing-8) var(--spacing-12)
 }
 
@@ -321,7 +321,7 @@
 
 .commandTextPlaceholder_c94584 {
     align-self: flex-start;
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: var(--radius-round)
 }
 
@@ -487,7 +487,7 @@
 }
 
 .overviewContainerWithVideo__95856 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-bottom-left-radius: var(--radius-sm);
     border-bottom-right-radius: var(--radius-sm);
     display: flex;
@@ -506,7 +506,7 @@
 }
 
 .overviewContainerNoVideo__95856 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: var(--radius-sm);
     display: flex;
     flex-direction: column;
@@ -541,7 +541,7 @@
 
 .tagContainer__95856 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--spacing-4);
     flex-direction: row;
     padding: 2px var(--spacing-4)
@@ -633,11 +633,11 @@
 }
 
 .appIcon__7bdb0,.container__7bdb0 {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .appIcon__7bdb0 {
-    border: var(--spacing-4) solid var(--background-secondary);
+    border: var(--spacing-4) solid var(--background-base-lower);
     border-radius: var(--radius-xl);
     height: 80px;
     left: var(--spacing-12);
@@ -688,7 +688,7 @@
 }
 
 .rowDivider_cb32c7 {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     bottom: 0;
     height: 1px;
     left: 0;
@@ -939,7 +939,7 @@
 }
 
 .loadingHeader__32c75 {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: var(--radius-round);
     display: flex
 }
@@ -954,7 +954,7 @@
 
 .container__19cf2 {
     align-items: center;
-    background-color: var(--bg-mod-faint);
+    background-color: var(--background-mod-faint);
     border-radius: var(--radius-lg);
     display: flex;
     flex-direction: row;
@@ -1041,7 +1041,7 @@
 }
 
 .underline__761e5 {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     bottom: 0;
     height: 1px;
     left: 0;
@@ -1132,7 +1132,7 @@
 }
 
 .iconPlaceholder__1729d {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 25%;
     height: var(--custom-app-icon-size);
     width: var(--custom-app-icon-size)
@@ -1147,7 +1147,7 @@
 
 .textPlaceholder__1729d {
     align-self: flex-start;
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: var(--radius-round)
 }
 
@@ -1165,7 +1165,7 @@
 }
 
 .underline__1729d {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     bottom: 0;
     height: 1px;
     left: calc(var(--custom-container-padding) + var(--custom-app-icon-size) + var(--spacing-12));
@@ -1259,7 +1259,7 @@
 }
 
 .backButton_c3787a {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     margin-right: auto
 }
 
@@ -1296,7 +1296,7 @@
 }
 
 .contentWrapper__9c62c {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--custom-app-launcher-container-border-radius);
     box-shadow: var(--shadow-border),var(--shadow-high);
     box-sizing: border-box;
@@ -1320,4 +1320,4 @@
     border: 3px solid CanvasText
 }
 
-/*# sourceMappingURL=dae61193f552263a.css.map*/
+/*# sourceMappingURL=af1cd867b44dbfdb.css.map*/

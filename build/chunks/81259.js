@@ -14,7 +14,7 @@ var i = r(120356),
 let d = () => (0, n.jsx)(c.Z, {
     width: 13,
     height: 13,
-    backgroundColor: l.Z.colors.TEXT_POSITIVE.css
+    backgroundColor: l.Z.colors.TEXT_FEEDBACK_POSITIVE.css
   }),
   m = () => (0, n.jsx)(a.k$p, {
     size: "custom",
@@ -26,7 +26,7 @@ let d = () => (0, n.jsx)(c.Z, {
     size: "custom",
     width: 13,
     height: 13,
-    color: l.Z.colors.TEXT_WARNING.css
+    color: l.Z.colors.TEXT_FEEDBACK_WARNING.css
   });
 
 function f(e) {

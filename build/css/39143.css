@@ -1,11 +1,11 @@
 /**
   Module ID: 39143
-  Original File Name: f8539259da29ceb2
+  Original File Name: ad39016a234d44f1
 **/
 .container_cd2100 {
     align-items: center;
     background-color: var(--background-secondary-alt);
-    border: 1px solid var(--background-tertiary);
+    border: 1px solid var(--background-base-lowest);
     border-radius: 4px;
     display: flex;
     height: 40px;
@@ -107,4 +107,4 @@
     vertical-align: middle
 }
 
-/*# sourceMappingURL=f8539259da29ceb2.css.map*/
+/*# sourceMappingURL=ad39016a234d44f1.css.map*/

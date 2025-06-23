@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 78726e51cce770a1
+  Original File Name: b70921756b6e3121
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -178,7 +178,7 @@
 }
 
 .progress__823e1 {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     flex: 1;
     height: 6px
 }
@@ -188,11 +188,11 @@
 }
 
 .progress__823e1.half__823e1 {
-    background: linear-gradient(90deg,hsl(var(--guild-boosting-pink-hsl)/.65),var(--bg-mod-subtle))
+    background: linear-gradient(90deg,hsl(var(--guild-boosting-pink-hsl)/.65),var(--background-mod-subtle))
 }
 
 .progress__823e1.none__823e1 {
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .progress__823e1.start__823e1 {
@@ -289,8 +289,8 @@
 
 .container__1656b {
     align-items: center;
-    background-color: var(--info-warning-background);
-    border-color: var(--info-warning-background);
+    background-color: var(--background-feedback-warning);
+    border-color: var(--background-feedback-warning);
     border-radius: var(--radius-sm);
     border-style: solid;
     border-width: 1px;
@@ -315,7 +315,7 @@
 }
 
 .staffContainer__10ca6 {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     padding: var(--spacing-12)
@@ -327,7 +327,7 @@
 }
 
 .container__3f864 {
-    background-color: var(--bg-mod-faint);
+    background-color: var(--background-mod-faint);
     border-color: var(--border-faint);
     border-radius: var(--radius-sm);
     border-style: solid;
@@ -373,7 +373,7 @@
 }
 
 .boostButton__58c46 {
-    background-color: var(--bg-mod-faint);
+    background-color: var(--background-mod-faint);
     border-color: var(--border-faint);
     border-radius: var(--radius-sm);
     border-width: 1px;
@@ -382,7 +382,7 @@
 }
 
 .boostButton__58c46:hover {
-    background-color: var(--bg-mod-strong)
+    background-color: var(--background-mod-strong)
 }
 
 .boostButtonIcon__58c46 {
@@ -390,7 +390,7 @@
 }
 
 .container__11014 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: column;
@@ -471,7 +471,7 @@
 }
 
 .background__6c253 {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--expressive-gradient-purple-end) 0,var(--expressive-gradient-purple-start) 100%);
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-base-low) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--expressive-gradient-purple-end) 0,var(--expressive-gradient-purple-start) 100%);
     inset: 0;
     position: absolute;
     z-index: 1
@@ -572,7 +572,7 @@
 }
 
 .container__89463 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -587,7 +587,7 @@
 }
 
 .contentContainer__89463 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     display: flex;
     flex: 1;
     overflow: hidden
@@ -605,7 +605,7 @@
 }
 
 .sidebarContainer__89463 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-left: 1px solid var(--border-subtle);
     overflow: hidden;
     width: 375px
@@ -655,4 +655,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=78726e51cce770a1.css.map*/
+/*# sourceMappingURL=b70921756b6e3121.css.map*/

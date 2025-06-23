@@ -1,6 +1,6 @@
 /**
   Module ID: 99617
-  Original File Name: 64346d9ccf68c774
+  Original File Name: 6daca93c16ce57f0
 **/
 .contentPadding__1db97 {
     padding-left: 16px;
@@ -54,7 +54,7 @@
 
 .channelRow__1db97 {
     align-items: center;
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 3px;
     cursor: pointer;
     display: flex;
@@ -68,7 +68,7 @@
 }
 
 .divider__1db97 {
-    background: var(--background-modifier-accent);
+    background: var(--border-subtle);
     height: 1px;
     width: 100%
 }
@@ -85,4 +85,4 @@
     justify-content: center
 }
 
-/*# sourceMappingURL=64346d9ccf68c774.css.map*/
+/*# sourceMappingURL=6daca93c16ce57f0.css.map*/

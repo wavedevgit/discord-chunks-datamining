@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(709054),
   m = n(821020),
   b = n(538397),
-  y = n(389160),
-  O = n(370774),
+  O = n(389160),
+  y = n(370774),
   _ = n(982183),
   v = n(981631),
   C = n(388032),
@@ -73,7 +73,7 @@ function P() {
           size: "custom",
           height: 40,
           width: 40,
-          color: u.TVs.colors.BG_MOD_STRONG
+          color: u.TVs.colors.BACKGROUND_MOD_STRONG
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/medium",
           color: v.tPk.TEXT_MUTED,
@@ -83,7 +83,7 @@ function P() {
           children: C.intl.string(C.t["O+racX"])
         })]
       }), (0, r.jsx)(u.zxk, {
-        onClick: () => (0, O.j4)(e),
+        onClick: () => (0, y.j4)(e),
         color: u.zxk.Colors.PRIMARY,
         style: {
           fontWeight: 600
@@ -114,7 +114,7 @@ function I(e) {
   }), {
     messageCategoryOpenStates: D,
     toggleOpenState: L
-  } = (0, y.Z)();
+  } = (0, O.Z)();
   i.useEffect(() => {
     function e() {
       var e;
@@ -136,10 +136,10 @@ function I(e) {
   let M = i.useCallback(() => {
       var e;
       let t = null == (e = T.current) ? void 0 : e.getScrollerState(),
-        n = (0, O.s)(D);
+        n = (0, y.s)(D);
       null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && (null == s || s(n))
     }, [s, D]),
-    k = (0, O.fW)(null != t ? t : []),
+    k = (0, y.fW)(null != t ? t : []),
     U = i.useMemo(() => {
       if (null == t || n) return null;
       let e = {
@@ -209,7 +209,7 @@ function I(e) {
         messagesByCategory: n
       } = e, r = i.useRef(!1), l = null != n && n.UNREAD.length > 0, o = null == n || t, {
         setOpenStateFromUnreads: s
-      } = (0, y.Z)();
+      } = (0, O.Z)();
       i.useEffect(() => {
         o || r.current || (s(l), r.current = !0)
       }, [s, l, o])

@@ -41,19 +41,19 @@ function d(e) {
     forceOpen: g,
     selected: m = !1,
     tooltipClass: b,
-    tooltipContentClass: y
-  } = e, O = (0, a.Q3)("ListItemTooltip");
+    tooltipContentClass: O
+  } = e, y = (0, a.Q3)("ListItemTooltip");
   return (0, r.jsx)(s.ua7, {
     shouldShow: f,
     forceOpen: g,
-    spacing: O ? 12 : 20,
+    spacing: y ? 12 : 20,
     hideOnClick: p,
     text: h ? null : n,
     position: "right",
     color: l,
     "aria-label": !1,
     tooltipClassName: o()(c.listItemTooltip, b),
-    tooltipContentClassName: y,
+    tooltipContentClassName: O,
     children: e => {
       var n, l;
       return d ? i.cloneElement(i.Children.only(t), u({}, e)) : (0, r.jsx)("div", (n = u({

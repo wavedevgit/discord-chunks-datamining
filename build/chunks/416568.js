@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(692547),
   m = n(481060),
   b = n(925549),
-  y = n(493773),
-  O = n(209613),
+  O = n(493773),
+  y = n(209613),
   _ = n(100527),
   v = n(906732),
   C = n(358221),
@@ -245,7 +245,7 @@ function ep(e) {
   } = e, a = (0, j.Q3)("GuildsBar"), [d] = (0, h.Wu)([L.ZP], () => {
     let e = L.ZP.getGuildsTree();
     return [e, e.version]
-  }), p = (0, h.e7)([E.Z], () => E.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), O = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, x] = i.useState(!1), R = i.useCallback(() => x(!0), []), D = i.useCallback(() => x(!1), []), k = i.useRef(!1), [V] = i.useState(() => new f.V7), H = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
+  }), p = (0, h.e7)([E.Z], () => E.Z.lurkingGuildIds()), b = i.useMemo(() => n ? [] : p, [p, n]), y = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [S, x] = i.useState(!1), R = i.useCallback(() => x(!0), []), D = i.useCallback(() => x(!1), []), k = i.useRef(!1), [V] = i.useState(() => new f.V7), H = i.useRef(null), F = i.useRef(null), z = (0, u.OP)(), {
     ref: K
   } = z, Y = es(z, ["ref"]), Q = (0, m.mFp)(), [$, ee] = i.useState(!1), ei = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), ep = (0, m.dQu)(g.Z.space.SPACE_XS), ef = i.useMemo(() => {
     let e = function(e, t, n) {
@@ -273,7 +273,7 @@ function ep(e) {
   } = (0, v.ZP)(_.Z.GUILDS_LIST), {
     pathname: em
   } = (0, c.TH)(), eb = ec(em);
-  (0, y.Ng)(() => {
+  (0, O.Ng)(() => {
     if (!k.current && 0 !== d.size) {
       if (!eb) {
         let {
@@ -298,14 +298,14 @@ function ep(e) {
       n !== t && (t = n, ef.scrollToGuild(t, !1))
     })
   }, [d, ef]);
-  let ey = i.useCallback(() => {
+  let eO = i.useCallback(() => {
     ef.scrollTo({
       to: 0,
       animate: !1
     })
   }, [ef]);
   (0, G.Z)(ef.scrollToGuild);
-  let eO = i.useCallback(function e(t, n, i) {
+  let ey = i.useCallback(function e(t, n, i) {
       switch (t.type) {
         case U.eD.FOLDER:
           return (0, r.jsx)(X.Z, {
@@ -378,7 +378,7 @@ function ep(e) {
       theme: s,
       children: e => (0, r.jsxs)("nav", {
         className: o()(er.wrapper, l, e, {
-          [er.hidden]: O
+          [er.hidden]: y
         }),
         "aria-label": en.intl.string(en.t.PjnF2t),
         children: [(0, r.jsx)(B.Z, {
@@ -404,13 +404,13 @@ function ep(e) {
               ref: ef.scrollerRef,
               onScroll: ef.handleScroll,
               children: [(0, r.jsx)(ed, {
-                scrollToTop: ey,
+                scrollToTop: eO,
                 lurkingGuildIds: b
               }), (0, r.jsx)(q.Z, {}), (0, r.jsx)(eh, {
                 guildDiscoveryButton: eN,
                 disableAppDownload: t,
                 isOverlay: n,
-                renderTreeNode: eO,
+                renderTreeNode: ey,
                 lurkingGuildIds: b
               })]
             }), eZ && (0, r.jsxs)("div", {
@@ -438,7 +438,7 @@ function ep(e) {
   })
 }
 let ef = i.memo(function(e) {
-  let t = (0, O.Z)("guildsnav");
+  let t = (0, y.Z)("guildsnav");
   return (0, r.jsx)(u.bG, {
     navigator: t,
     children: (0, r.jsx)(ep, el({}, e))

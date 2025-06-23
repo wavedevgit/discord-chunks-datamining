@@ -1,6 +1,6 @@
 /**
   Module ID: 39511
-  Original File Name: 67e5180f03cc8349
+  Original File Name: dc23fa466fa8630a
 **/
 .header_fefb6d {
     align-items: flex-start;
@@ -53,7 +53,7 @@
 }
 
 .feature_fefb6d {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 10px;
     color: var(--interactive-normal);
     margin-left: 4px
@@ -182,4 +182,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=67e5180f03cc8349.css.map*/
+/*# sourceMappingURL=dc23fa466fa8630a.css.map*/

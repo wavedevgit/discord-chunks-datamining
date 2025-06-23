@@ -1,6 +1,6 @@
 /**
   Module ID: 89650
-  Original File Name: 3d8419a3b8498626
+  Original File Name: 87cf8a20abafe6db
 **/
 .modalContent__55d91 {
     margin-bottom: 0
@@ -27,7 +27,7 @@
 }
 
 .actionGroup__83fb3 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     padding-left: var(--spacing-16);
     padding-right: var(--spacing-16)
@@ -47,7 +47,7 @@
 }
 
 .actionRow__83fb3+.actionRow__83fb3 {
-    border-top: 1px solid var(--background-modifier-accent)
+    border-top: 1px solid var(--border-subtle)
 }
 
 .actionButtonDetails__83fb3 {
@@ -74,7 +74,7 @@
 }
 
 .tipNumber__5bc4e {
-    background: var(--bg-mod-subtle);
+    background: var(--background-mod-subtle);
     border-radius: var(--radius-round);
     flex-direction: column;
     justify-content: center;
@@ -100,7 +100,7 @@
 }
 
 .tipsSection__5bc4e {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 0 0 var(--radius-sm) var(--radius-sm);
     text-align: start
 }
@@ -118,4 +118,4 @@
     text-decoration: underline
 }
 
-/*# sourceMappingURL=3d8419a3b8498626.css.map*/
+/*# sourceMappingURL=87cf8a20abafe6db.css.map*/

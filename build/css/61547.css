@@ -1,6 +1,6 @@
 /**
   Module ID: 61547
-  Original File Name: 3267efe8e7b42884
+  Original File Name: 204d7ec3fc1e6e68
 **/
 .button_e18686 {
     background-position: 50% 50%;
@@ -29,7 +29,7 @@
 }
 
 .default_e18686:hover {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .filled_e18686 {
@@ -200,7 +200,7 @@
 }
 
 .preview__4e29d {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     display: flex;
     height: 214px;
@@ -268,4 +268,4 @@
     min-height: 0
 }
 
-/*# sourceMappingURL=3267efe8e7b42884.css.map*/
+/*# sourceMappingURL=204d7ec3fc1e6e68.css.map*/

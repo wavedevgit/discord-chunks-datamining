@@ -17,8 +17,8 @@ var r, i = n(255367),
   g = n(703656),
   m = n(417363),
   b = n(941128),
-  y = n(780570),
-  O = n(353042),
+  O = n(780570),
+  y = n(353042),
   _ = n(981631),
   v = n(388032),
   C = n(496614);
@@ -105,7 +105,7 @@ class E extends l.PureComponent {
     } = this.props;
     if (e.type === _.vxO.UPDATING || e.type === _.vxO.REPAIRING || e.type === _.vxO.INSTALLING) {
       if (t) return v.intl.string(v.t["5oxtFR"]);
-      else if (e.stage === _.f07.PATCHING || e.stage === _.f07.REPAIRING) return (0, i.jsx)(O.Z, {
+      else if (e.stage === _.f07.PATCHING || e.stage === _.f07.REPAIRING) return (0, i.jsx)(y.Z, {
         getHistoricalTotalBytes: m.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
@@ -247,9 +247,9 @@ let N = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
     {
       total: n,
       progress: r
-    } = y.lK(t);
+    } = O.lK(t);
   return {
-    percent: y.xI(r, n),
+    percent: O.xI(r, n),
     isPaused: b.Z.paused,
     firstApplication: e.length > 0 ? p.Z.getApplication(e[0].applicationId) : null,
     firstState: t.length > 0 ? t[0] : null

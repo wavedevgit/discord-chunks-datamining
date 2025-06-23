@@ -1,6 +1,6 @@
 /**
   Module ID: 89129
-  Original File Name: f45a8af70c282b85
+  Original File Name: 143c5c388e335241
 **/
 .clipItem__1d12e {
     background: var(--background-modifier-hover);
@@ -64,7 +64,7 @@
 }
 
 .clipThumb__1d12e {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-sm);
     bottom: 0;
     height: 100%;
@@ -131,7 +131,7 @@
 
 .button__1d12e {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-xs);
     display: flex;
     height: 40px;
@@ -288,4 +288,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=f45a8af70c282b85.css.map*/
+/*# sourceMappingURL=143c5c388e335241.css.map*/

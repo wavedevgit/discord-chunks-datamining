@@ -1,6 +1,6 @@
 /**
   Module ID: 55183
-  Original File Name: 8079a3483c50da71
+  Original File Name: 8e9ee45ee9698bd2
 **/
 .previewContainer__92e52 {
     align-items: center;
@@ -23,7 +23,7 @@
 }
 
 .effectDescriptionBorderWithGradient__92e52 {
-    background: linear-gradient(var(--background-primary),var(--background-primary)) padding-box,var(--custom-premium-colors-premium-gradient-tier-2-diagonal) border-box
+    background: linear-gradient(var(--background-base-low),var(--background-base-low)) padding-box,var(--custom-premium-colors-premium-gradient-tier-2-diagonal) border-box
 }
 
 .effectDescriptionNoGradient__92e52 {
@@ -31,7 +31,7 @@
 }
 
 .effectDescriptionContainer__92e52 {
-    background: var(--background-secondary) padding-box;
+    background: var(--background-base-lower) padding-box;
     border-radius: 2px;
     padding-right: 4px;
     position: relative
@@ -96,7 +96,7 @@
 
 .effectGridItem_b4019a {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 4px;
     color: var(--header-primary);
     cursor: pointer;
@@ -246,4 +246,4 @@
     margin-right: 6px
 }
 
-/*# sourceMappingURL=8079a3483c50da71.css.map*/
+/*# sourceMappingURL=8e9ee45ee9698bd2.css.map*/

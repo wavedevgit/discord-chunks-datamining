@@ -16,8 +16,8 @@ var r, i = n(255367),
   g = n(100527),
   m = n(367907),
   b = n(906732),
-  y = n(453542),
-  O = n(702321),
+  O = n(453542),
+  y = n(702321),
   _ = n(46148),
   v = n(82295),
   C = n(313201),
@@ -322,12 +322,12 @@ class V extends(r = l.Component) {
       let o = Math.round((t.offsetHeight - 44 * i) / 44),
         s = o > n.length ? n.slice(0, o + 1) : n,
         a = s.map(e => null != r[e] ? r[e].getRecipientId() : null),
-        c = n.some(e => (0, O.Z)(e)),
+        c = n.some(e => (0, y.Z)(e)),
         u = {
           num_users_visible: s.length,
           num_users_visible_with_mobile_indicator: a.filter(e => null != e && T.Z.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = !0, m.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, G(U({}, u, (0, y.X)()), {
+      this.hasReportedAnalytics = !0, m.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, G(U({}, u, (0, O.X)()), {
         visible_user_ids: a.filter(e => null != e),
         changelog_dm_visible: c
       }))
@@ -442,8 +442,8 @@ let H = e => {
       showDMHeader: p
     } = e,
     m = l.Children.count(d),
-    y = Z.Z.getMutablePrivateChannels(),
-    O = (0, I.k1)(y),
+    O = Z.Z.getMutablePrivateChannels(),
+    y = (0, I.k1)(O),
     _ = (0, u.Wu)([A.Z, P.Z, N.Z], () => {
       let e = A.Z.getPrivateChannelIds();
       return (0, I.tU)(e, [P.Z, N.Z])
@@ -498,7 +498,7 @@ let H = e => {
       children: (0, i.jsx)(V, U(G(U({
         density: r,
         isVisualRefreshEnabled: n,
-        channels: O,
+        channels: y,
         privateChannelIds: _,
         listRef: R,
         theme: s,

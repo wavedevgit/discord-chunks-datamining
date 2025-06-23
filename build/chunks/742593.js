@@ -70,21 +70,21 @@ function P(e) {
   w = null == N || null != w ? w : (0, p.DK)(N);
   let {
     startTime: T
-  } = (0, f.ZP)(null != v ? v : P, w), Z = (0, d.Z)(w, v.id), D = (null == N ? void 0 : N.scheduled_start_time) != null ? (0, p.lh)(Z, T, new Date(N.scheduled_start_time)) : null;
+  } = (0, f.ZP)(null != v ? v : P, w), D = (0, d.Z)(w, v.id), Z = (null == N ? void 0 : N.scheduled_start_time) != null ? (0, p.lh)(D, T, new Date(N.scheduled_start_time)) : null;
   if (null == N) return null;
   let {
     entity_type: I,
     status: _,
-    recurrence_rule: L
+    recurrence_rule: C
   } = N;
   return (0, r.jsxs)("div", {
     className: i()(h.statusContainer, t),
     children: [(0, r.jsx)(O.z, {
       startTime: T.toISOString(),
-      status: null != D ? D : _,
+      status: null != Z ? Z : _,
       eventType: I,
       isNew: s,
-      recurrenceRule: (0, m.KV)(L),
+      recurrenceRule: (0, m.KV)(C),
       guildEventId: v.id,
       recurrenceId: w
     }), (0, r.jsx)("div", {

@@ -1,6 +1,6 @@
 /**
   Module ID: 84686
-  Original File Name: 932912c2a9287481
+  Original File Name: 32a61e03962fe8c9
 **/
 .container__26abc {
     background-color: var(--background-surface-high);
@@ -91,7 +91,7 @@
 }
 
 .stageIconBackground__17403 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     height: 80px;
     justify-content: center;
@@ -134,4 +134,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=932912c2a9287481.css.map*/
+/*# sourceMappingURL=32a61e03962fe8c9.css.map*/

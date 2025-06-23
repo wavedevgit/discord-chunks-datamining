@@ -1,6 +1,6 @@
 /**
   Module ID: 39596
-  Original File Name: 3ff42efa50262019
+  Original File Name: 74148b71a6fd3fd2
 **/
 .container__4216d {
     align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .modal__49777 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 12px;
     max-height: calc(100vh - 60px);
     max-width: 1028px;
@@ -26,7 +26,7 @@
 }
 
 .modalHeader__49777 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     color: var(--interactive-active);
     justify-content: space-between;
     padding: 12px 16px
@@ -503,7 +503,7 @@
 
 .optionTag_b08511 {
     align-items: center;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-radius: 3px;
     box-sizing: border-box;
     color: var(--interactive-active);
@@ -778,7 +778,7 @@
 }
 
 .nonMediaMosaicItem__6c706 {
-    outline: 1px solid var(--background-secondary);
+    outline: 1px solid var(--background-base-lower);
     right: -8px;
     top: -8px
 }
@@ -831,7 +831,7 @@
 }
 
 .hoverButtonGroup__06ab4 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 5px;
     display: flex;
     opacity: 0;
@@ -843,7 +843,7 @@
 }
 
 .nonMediaMosaicItem__06ab4 {
-    outline: 1px solid var(--background-secondary);
+    outline: 1px solid var(--background-base-lower);
     right: -8px;
     top: -8px
 }
@@ -1014,7 +1014,7 @@
 }
 
 .divider__1fcac {
-    border-bottom: 1px solid var(--bg-mod-strong)
+    border-bottom: 1px solid var(--background-mod-strong)
 }
 
 .spacingLarge__1fcac {
@@ -1263,4 +1263,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=3ff42efa50262019.css.map*/
+/*# sourceMappingURL=74148b71a6fd3fd2.css.map*/

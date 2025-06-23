@@ -1,10 +1,10 @@
 /**
   Module ID: 82961
-  Original File Name: 344046b514484fd3
+  Original File Name: 67bad863dd09c80f
 **/
 .row__19fd1 {
     align-items: center;
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     border-color: var(--border-faint);
     display: flex;
     gap: var(--spacing-16);
@@ -64,7 +64,7 @@
 
 .number__19fd1 {
     align-items: center;
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: var(--radius-round);
     height: 32px;
     justify-content: center;
@@ -82,7 +82,7 @@
 }
 
 .tableRowGroup__19fd1 .content__19fd1 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     flex-grow: 1;
     flex-shrink: 0;
@@ -123,7 +123,7 @@
 
 .footer_f476f9 {
     align-items: center;
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     gap: var(--spacing-8)
 }
 
@@ -134,7 +134,7 @@
 }
 
 .table_f476f9 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 8px;
     width: 408px
 }
@@ -172,4 +172,4 @@
     justify-content: center
 }
 
-/*# sourceMappingURL=344046b514484fd3.css.map*/
+/*# sourceMappingURL=67bad863dd09c80f.css.map*/

@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(117358),
   m = n(201895),
   b = n(718589),
-  y = n(933557),
-  O = n(557135),
+  O = n(933557),
+  y = n(557135),
   _ = n(873696),
   v = n(446226),
   C = n(305325),
@@ -207,8 +207,8 @@ class en extends H.ZP {
       connectChannelDragSource: p,
       connectUserDropTarget: f,
       connectDragPreview: g,
-      canReorderChannel: y,
-      canMoveMembers: O,
+      canReorderChannel: O,
+      canMoveMembers: y,
       showTutorial: _,
       hasActiveEvent: v,
       embeddedApps: C,
@@ -310,7 +310,7 @@ class en extends H.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return O && (A = f(A)), y && (A = h(p(A))), _ && (A = (0, r.jsx)(Z.Z, {
+    return y && (A = f(A)), O && (A = h(p(A))), _ && (A = (0, r.jsx)(Z.Z, {
       childRef: this.ref,
       tutorialId: "voice-conversations",
       position: "right",
@@ -337,7 +337,7 @@ class en extends H.ZP {
       } = this.props;
       r && this.setState({
         shouldShowGuildVerificationPopout: !0
-      }), O.Z.handleVoiceConnect({
+      }), y.Z.handleVoiceConnect({
         channel: n,
         connected: t,
         needSubscriptionToAccess: i,
@@ -478,15 +478,15 @@ function ei(e) {
       bypassLimit: M.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, y.ZP)(n), b = (0, x.qY)(n.id), {
-    isSubscriptionGated: O,
+  }), p = (0, s.e7)([G.Z], () => G.Z.hasVideo(n.id)), g = (0, f.ZP)(n), m = (0, O.ZP)(n), b = (0, x.qY)(n.id), {
+    isSubscriptionGated: y,
     needSubscriptionToAccess: _
   } = (0, S.Z)(n.id), C = (0, v.Z)(), j = (0, s.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), E = e.connected || (null == C ? void 0 : C.channelId) === n.id, P = (0, F.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: a,
     voiceStates: c,
-    isSubscriptionGated: O,
+    isSubscriptionGated: y,
     needSubscriptionToAccess: _,
     enableConnectedUserLimit: !0,
     enableActivities: !0
@@ -497,7 +497,7 @@ function ei(e) {
     embeddedActivityType: q.IIU.PLAYING,
     video: p,
     hasActiveEvent: null != b,
-    isSubscriptionGated: O,
+    isSubscriptionGated: y,
     needSubscriptionToAccess: _
   }, u, h, e), {
     connected: E,

@@ -1,6 +1,6 @@
 /**
   Module ID: 6284
-  Original File Name: b6d7446d8c01d642
+  Original File Name: cf4a110a4b40ad20
 **/
 .headerContainer__6d90b {
     flex-direction: column
@@ -27,7 +27,7 @@
 }
 
 .answerChoicesContainer__6d90b {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     margin-bottom: 16px
 }
@@ -71,4 +71,4 @@
     max-height: clamp(200px,calc(100vh - 80px),660px)
 }
 
-/*# sourceMappingURL=b6d7446d8c01d642.css.map*/
+/*# sourceMappingURL=cf4a110a4b40ad20.css.map*/

@@ -1,9 +1,9 @@
 /**
   Module ID: 80404
-  Original File Name: 25e4cd71dbadc915
+  Original File Name: 6b666c0253149770
 **/
 .container_db5301 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     display: flex;
     flex: 1;
@@ -38,7 +38,7 @@
 }
 
 .placeholderLine_db5301,.placeholderMedia_db5301 {
-    background-color: var(--background-modifier-accent)
+    background-color: var(--border-subtle)
 }
 
 .placeholderMedia_db5301 {
@@ -53,7 +53,7 @@
 
 .reaction_db5301 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     display: flex;
     flex-direction: row;
     margin-right: 8px;
@@ -68,7 +68,7 @@
 }
 
 .dot_db5301 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 50%;
     height: 4px;
     margin: 0 8px;
@@ -98,4 +98,4 @@
     margin-left: 8px
 }
 
-/*# sourceMappingURL=25e4cd71dbadc915.css.map*/
+/*# sourceMappingURL=6b666c0253149770.css.map*/

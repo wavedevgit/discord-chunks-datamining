@@ -47,15 +47,15 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = {
+let O = {
     MENTION: ["BOOKMARK", "SETTINGS"],
     REPLY: ["SETTINGS"],
     REACTION: ["SETTINGS"],
     ANNOUNCEMENT: ["SETTINGS"],
     MESSAGE: ["SETTINGS"]
   },
-  O = (e, t) => (0, i.useMemo)(() => {
-    let n = y[j(e)];
+  y = (e, t) => (0, i.useMemo)(() => {
+    let n = O[j(e)];
     return t ? ["ACK", ...n] : n
   }, [e, t]);
 
@@ -97,14 +97,14 @@ function v(e) {
     Icon: s,
     Menu: a,
     interactionType: c
-  } = e, [u, d] = (0, i.useState)(!1), [p, f] = (0, i.useState)(!1), y = (0, i.useRef)(null);
+  } = e, [u, d] = (0, i.useState)(!1), [p, f] = (0, i.useState)(!1), O = (0, i.useRef)(null);
   return (0, r.jsx)(o.yRy, {
     shouldShow: p,
     animation: o.yRy.Animation.NONE,
     position: "right",
     align: "top",
     autoInvert: !1,
-    targetElementRef: y,
+    targetElementRef: O,
     onRequestClose: () => f(!1),
     renderPopout: e => (0, r.jsx)(o.P3F, {
       onClick: e => e.stopPropagation(),
@@ -121,7 +121,7 @@ function v(e) {
       onTooltipShow: () => d(!0),
       onTooltipHide: () => d(!1),
       children: t => (0, r.jsx)(o.P3F, b(m({}, t), {
-        innerRef: y,
+        innerRef: O,
         className: g.action,
         onClick: e => {
           (0, h.Qz)({
@@ -218,7 +218,7 @@ function S(e) {
     message: t,
     channel: n,
     isUnread: i
-  } = e, l = O(t, i);
+  } = e, l = y(t, i);
   return (0, r.jsx)(o.Kqy, {
     direction: "horizontal",
     gap: 4,

@@ -1,6 +1,6 @@
 /**
   Module ID: 69773
-  Original File Name: 4cf95e35789d914a
+  Original File Name: 6b81aac8ff83067e
 **/
 .logo__11f7b {
     background: url(/assets/bbbc3d376d38e7bc.svg) no-repeat;
@@ -318,7 +318,7 @@
 }
 
 .content__8cc35 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     box-shadow: var(--elevation-high);
     margin: 16px;
@@ -342,4 +342,4 @@
     top: 24px
 }
 
-/*# sourceMappingURL=4cf95e35789d914a.css.map*/
+/*# sourceMappingURL=6b81aac8ff83067e.css.map*/

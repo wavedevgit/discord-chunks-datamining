@@ -20,8 +20,8 @@ var i = n(120356),
   g = n(795338),
   m = n(279604),
   b = n(981631),
-  y = n(921944),
-  O = n(93841),
+  O = n(921944),
+  y = n(93841),
   _ = n(388032),
   v = n(423151),
   C = n(928381);
@@ -36,10 +36,10 @@ function j(e) {
     asset: (0, r.jsx)(g.g, {
       className: v.image
     }),
-    header: _.intl.formatToPlainString(O.default["Zg/m9P"], {
+    header: _.intl.formatToPlainString(y.default["Zg/m9P"], {
       perkName: n.title
     }),
-    content: _.intl.formatToPlainString(O.default["1EGXSE"], {
+    content: _.intl.formatToPlainString(y.default["1EGXSE"], {
       perkName: n.title
     }),
     buttonCTA: _.intl.string(_.t.RzWDqa),
@@ -59,8 +59,8 @@ function S(e) {
       src: C.Z,
       className: l()(v.image, v.newPerksImage)
     }),
-    header: _.intl.string(O.default.QpQBPT),
-    content: i ? _.intl.string(O.default["6hn0xM"]) : _.intl.string(O.default.RDuvXl),
+    header: _.intl.string(y.default.QpQBPT),
+    content: i ? _.intl.string(y.default["6hn0xM"]) : _.intl.string(y.default.RDuvXl),
     buttonCTA: _.intl.string(_.t.RzWDqa),
     onClick: () => i ? (0, f.Z)(t, c.Z.GUILD_POWERUPS_COACHMARK_NEW_PERKS) : (0, u.f)({
       guildId: t,
@@ -94,15 +94,15 @@ function x(e) {
     }) : (0, r.jsx)(g.g, {
       className: v.image
     }),
-    header: _.intl.formatToPlainString(O.default.LmpChI, {
+    header: _.intl.formatToPlainString(y.default.LmpChI, {
       guildName: l
     }),
-    content: n.length > 1 ? _.intl.formatToPlainString(O.default.wcQOqK, {
+    content: n.length > 1 ? _.intl.formatToPlainString(y.default.wcQOqK, {
       perks: a
-    }) : _.intl.formatToPlainString(O.default.ZF8NT0, {
+    }) : _.intl.formatToPlainString(y.default.ZF8NT0, {
       perk: a
     }),
-    buttonCTA: u ? _.intl.string(O.default.gSxlHR) : _.intl.string(_.t.RzWDqa),
+    buttonCTA: u ? _.intl.string(y.default.gSxlHR) : _.intl.string(_.t.RzWDqa),
     onClick: e => u ? o(e) : (0, f.Z)(t, c.Z.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS),
     markAsDismissed: i
   })
@@ -154,7 +154,7 @@ function E(e) {
       className: v.imageContainer,
       children: [t, (0, r.jsx)(a.olH, {
         className: v.close,
-        onClick: () => null == c ? void 0 : c(y.L.USER_DISMISS)
+        onClick: () => null == c ? void 0 : c(O.L.USER_DISMISS)
       })]
     }),
     header: (0, r.jsx)(o.xv, {

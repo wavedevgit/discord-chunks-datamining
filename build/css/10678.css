@@ -1,6 +1,6 @@
 /**
   Module ID: 10678
-  Original File Name: bb671afa46ee9761
+  Original File Name: 006bdd1c462b20fa
 **/
 .list_c47777 {
     max-height: 500px
@@ -52,7 +52,7 @@
 }
 
 .message__89466 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 3px;
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high);
     overflow: hidden;
@@ -80,7 +80,7 @@
 }
 
 .button_f563df {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 8px;
     cursor: pointer;
     display: flex;
@@ -92,11 +92,11 @@
 }
 
 .button_f563df:hover {
-    background-color: var(--bg-mod-strong)
+    background-color: var(--background-mod-strong)
 }
 
 .button_f563df:active {
-    background-color: var(--bg-mod-faint)
+    background-color: var(--background-mod-faint)
 }
 
 .button_f563df:hover {
@@ -120,4 +120,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=bb671afa46ee9761.css.map*/
+/*# sourceMappingURL=006bdd1c462b20fa.css.map*/

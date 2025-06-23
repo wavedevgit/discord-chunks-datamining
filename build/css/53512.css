@@ -1,6 +1,6 @@
 /**
   Module ID: 53512
-  Original File Name: 9ed7fbd988b63060
+  Original File Name: 12de6cfec874648e
 **/
 .container__84aed {
     display: flex;
@@ -15,7 +15,7 @@
 }
 
 .column__84aed {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 16px;
     height: 390px;
     overflow: hidden;
@@ -23,7 +23,7 @@
 }
 
 .header__84aed {
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     box-sizing: border-box;
@@ -56,8 +56,8 @@
 }
 
 .checkmark__84aed {
-    background-color: var(--bg-base-secondary);
-    border: 2px solid var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
+    border: 2px solid var(--background-base-lower);
     border-radius: 100%;
     color: var(--brand-500);
     display: none;
@@ -72,7 +72,7 @@
 }
 
 .guildIcon__84aed {
-    background-color: var(--bg-base-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .container_adcef2 {
@@ -86,7 +86,7 @@
 }
 
 .tabs_adcef2 {
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 12px;
     box-sizing: border-box;
     height: 40px;
@@ -105,7 +105,7 @@
 }
 
 .tabBackground_adcef2 {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     height: 32px;
     margin: 0 4px;
@@ -116,7 +116,7 @@
 
 .previewContainer_adcef2 {
     align-items: flex-start;
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 12px;
     display: flex;
     height: 268px;
@@ -156,7 +156,7 @@
 }
 
 .channels_adcef2 {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-bottom-right-radius: 12px;
     border-top-right-radius: 12px;
     box-sizing: border-box;
@@ -335,7 +335,7 @@
 
 .hackyTip__7c233 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -344,7 +344,7 @@
 }
 
 .hackyText__7c233 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     box-sizing: border-box;
@@ -379,7 +379,7 @@
 }
 
 .tabs__8683b {
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 12px;
     box-sizing: border-box;
     height: 40px;
@@ -402,7 +402,7 @@
 }
 
 .tabBackground__8683b {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     height: 32px;
     margin: 0 4px;
@@ -412,7 +412,7 @@
 }
 
 .container__8683b {
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 16px;
     height: 270px;
     margin: 0 auto;
@@ -439,8 +439,8 @@
 
 .guildName__8683b {
     align-items: center;
-    background-color: var(--background-secondary);
-    border-bottom: 1px solid var(--bg-base-tertiary);
+    background-color: var(--background-base-lower);
+    border-bottom: 1px solid var(--background-base-lowest);
     color: var(--interactive-normal);
     display: flex;
     flex-shrink: 0;
@@ -458,7 +458,7 @@
 }
 
 .channels__8683b {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     box-sizing: border-box;
     display: flex;
@@ -511,7 +511,7 @@
 }
 
 .channel__8683b.selected__8683b {
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .channel__8683b.grey__8683b:before {
@@ -642,14 +642,14 @@
 }
 
 .divider__8683b {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 2px;
     height: 1px;
     margin: 4px 0
 }
 
 .notifModal__8683b {
-    background-color: var(--bg-base-primary);
+    background-color: var(--background-base-low);
     border-radius: 8px;
     box-sizing: border-box;
     display: flex;
@@ -679,7 +679,7 @@
 }
 
 .notifTabs__8683b {
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 12px;
     display: flex;
     gap: 4px;
@@ -698,13 +698,13 @@
 }
 
 .activeNotifTab__8683b {
-    background-color: var(--bg-base-primary);
+    background-color: var(--background-base-low);
     border-radius: 16px;
     color: var(--interactive-active)
 }
 
 .controls__8683b {
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 12px;
     display: flex;
     flex-direction: column
@@ -719,7 +719,7 @@
 }
 
 .controlPlaceholder__8683b {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: 8px;
     height: 8px;
     width: 120px
@@ -803,4 +803,4 @@
     rotate: -90deg
 }
 
-/*# sourceMappingURL=9ed7fbd988b63060.css.map*/
+/*# sourceMappingURL=12de6cfec874648e.css.map*/

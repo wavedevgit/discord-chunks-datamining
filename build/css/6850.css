@@ -1,6 +1,6 @@
 /**
   Module ID: 6850
-  Original File Name: e428c1fddc5f9e55
+  Original File Name: 3d29b553d480abf4
 **/
 .searchContainer__6ae25 {
     position: relative
@@ -18,7 +18,7 @@
 
 .resultsListContainer__6ae25 {
     background-color: var(--background-surface-high);
-    border: 1px solid var(--background-tertiary);
+    border: 1px solid var(--background-base-lowest);
     border-radius: 0 0 5px 5px;
     box-shadow: var(--elevation-high);
     height: auto;
@@ -146,7 +146,7 @@
 
 .requirementContainer__0a749 {
     align-items: center;
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
     display: flex;
@@ -1041,7 +1041,7 @@
 }
 
 .memberRowContainer__71c22 td:after {
-    background: var(--background-modifier-accent);
+    background: var(--border-subtle);
     content: "";
     height: 1px;
     left: 0;
@@ -1126,7 +1126,7 @@
 
 .button__71c22 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-round);
     cursor: pointer;
     display: flex;
@@ -1157,7 +1157,7 @@
 
 .otherRoles__71c22 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-xs);
     cursor: pointer;
     display: flex;
@@ -1210,7 +1210,7 @@
 }
 
 .subheaderContainer__6f7ce {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0,0,0,.14);
     display: flex;
@@ -1517,7 +1517,7 @@
 }
 
 .footerContainer__31b61 {
-    border-top: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--border-subtle);
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -2289,7 +2289,7 @@
 .table_b4ec0b {
     border: 0;
     border-spacing: 0;
-    border-top: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--border-subtle);
     padding: 0 8px 8px;
     position: relative;
     width: 100%
@@ -2297,7 +2297,7 @@
 
 .paginationContainer_e8f197 {
     align-items: center;
-    border-top: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--border-subtle);
     display: flex;
     flex-direction: row;
     padding: 0 16px
@@ -2336,7 +2336,7 @@
 }
 
 .emptyPagination_e8f197 {
-    border-top: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--border-subtle);
     display: none
 }
 
@@ -2438,4 +2438,4 @@
     margin-left: 4px
 }
 
-/*# sourceMappingURL=e428c1fddc5f9e55.css.map*/
+/*# sourceMappingURL=3d29b553d480abf4.css.map*/

@@ -1,6 +1,6 @@
 /** Chunk was on 9924 **/
 n.r(t), n.d(t, {
-  default: () => K
+  default: () => Y
 }), n(388685);
 var r = n(255367),
   l = n(73800),
@@ -27,8 +27,8 @@ var r = n(255367),
   E = n(892001),
   S = n(433355),
   I = n(592125),
-  P = n(984933),
-  R = n(430824),
+  R = n(984933),
+  P = n(430824),
   O = n(944486),
   y = n(384433),
   w = n(241559),
@@ -47,7 +47,7 @@ var r = n(255367),
   V = n(86931),
   J = n(100658);
 
-function Y(e) {
+function K(e) {
   let {
     guild: t,
     previousChannel: n,
@@ -105,13 +105,13 @@ function Y(e) {
   })
 }
 
-function K(e) {
+function Y(e) {
   var t;
   let {
     guildId: n
   } = e, i = null != (t = (0, C.A)({
     guildId: n
-  })) ? t : 0, [u, m] = l.useState(i > 0 ? y.e.PENDING : y.e.ALL_MEMBERS), f = (0, o.e7)([R.Z], () => R.Z.getGuild(n)), {
+  })) ? t : 0, [u, m] = l.useState(i > 0 ? y.e.PENDING : y.e.ALL_MEMBERS), f = (0, o.e7)([P.Z], () => P.Z.getGuild(n)), {
     analyticsLocations: _
   } = (0, d.ZP)(c.Z.MEMBER_SAFETY_PAGE), T = (0, g.C)({
     guildId: n
@@ -126,7 +126,7 @@ function K(e) {
     (null == f ? void 0 : f.hasFeature(F.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) || m(y.e.ALL_MEMBERS)
   }, [f]);
   let q = (0, w.n2)(n),
-    K = (0, h.m)(n),
+    Y = (0, h.m)(n),
     H = (0, o.e7)([O.Z], () => O.Z.getLastSelectedChannelId(n)),
     W = (0, o.e7)([I.Z], () => I.Z.getChannel(H)),
     X = l.useRef(null);
@@ -147,7 +147,7 @@ function K(e) {
   l.useEffect(() => {
     if (!q && null != f) {
       var e;
-      let t = null == (e = P.ZP.getDefaultChannel(f.id)) ? void 0 : e.id;
+      let t = null == (e = R.ZP.getDefaultChannel(f.id)) ? void 0 : e.id;
       (0, N.XU)(f.id, t)
     }
   }, [f, q]);
@@ -167,7 +167,7 @@ function K(e) {
       className: a()(J.chat, V.page, {
         [J.threadSidebarOpen]: et
       }),
-      children: [(0, r.jsx)(Y, {
+      children: [(0, r.jsx)(K, {
         guild: f,
         previousChannel: W,
         currentTab: u,
@@ -193,7 +193,7 @@ function K(e) {
       }), (0, r.jsx)(B.Z, {
         guildId: f.id
       })]
-    }), K && (u === y.e.ALL_MEMBERS ? (0, r.jsx)(L.Z, {
+    }), Y && (u === y.e.ALL_MEMBERS ? (0, r.jsx)(L.Z, {
       guildId: f.id
     }) : (0, r.jsx)(M.Z, {
       guildId: f.id

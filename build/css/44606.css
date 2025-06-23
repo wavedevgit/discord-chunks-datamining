@@ -1,6 +1,6 @@
 /**
   Module ID: 44606
-  Original File Name: 22087c6fc545bc79
+  Original File Name: f5ed509d212c40bf
 **/
 .actionContainer_bc4513 {
     background-color: var(--background-secondary-alt);
@@ -540,7 +540,7 @@
 }
 
 .inviteContainer__23437 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: var(--radius-xs);
     cursor: pointer;
     overflow: hidden;
@@ -601,7 +601,7 @@
 }
 
 .iconWithGuildIcon__2894c {
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: var(--radius-round);
     color: var(--text-secondary);
     height: 12px;
@@ -619,7 +619,7 @@
 
 .acronym__2894c {
     align-items: center;
-    background-color: var(--bg-mod-strong);
+    background-color: var(--background-mod-strong);
     color: var(--text-normal);
     display: flex;
     font-weight: 500;
@@ -928,7 +928,7 @@
 }
 
 .iconLive_c69b6d {
-    color: var(--text-positive)!important
+    color: var(--text-feedback-positive)!important
 }
 
 .summary_c69b6d {
@@ -1037,7 +1037,7 @@
 }
 
 .favoritesSuggestion__2ea32 {
-    border: 2px dashed var(--background-modifier-accent);
+    border: 2px dashed var(--border-subtle);
     border-radius: var(--radius-md);
     box-sizing: border-box
 }
@@ -1127,7 +1127,7 @@
 }
 
 .modeMuted__2ea32 .acronym__2ea32,.modeMuted__2ea32 .iconWithGuildIcon__2ea32 {
-    background: var(--bg-mod-faint);
+    background: var(--background-mod-faint);
     color: var(--text-muted)
 }
 
@@ -1157,7 +1157,7 @@
 
 .modeSelected__2ea32 .iconWithGuildIcon__2ea32,.modeSelected__2ea32:hover .iconWithGuildIcon__2ea32 {
     background: var(--interactive-normal);
-    color: var(--background-secondary)
+    color: var(--background-base-lower)
 }
 
 .modeSelected__2ea32 .acronym__2ea32,.modeSelected__2ea32:hover .acronym__2ea32 {
@@ -1209,7 +1209,7 @@
 }
 
 .activeEvent__2ea32 {
-    color: var(--text-positive)!important
+    color: var(--text-feedback-positive)!important
 }
 
 [data-favorites=true] .iconContainer__2ea32:has(.iconWithGuildIcon__2ea32) {
@@ -1308,4 +1308,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=22087c6fc545bc79.css.map*/
+/*# sourceMappingURL=f5ed509d212c40bf.css.map*/

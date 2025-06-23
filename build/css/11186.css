@@ -1,6 +1,6 @@
 /**
   Module ID: 11186
-  Original File Name: b2fb7fb63d892e3c
+  Original File Name: 4ef3f83c0ae781f4
 **/
 .partnerBranding__83420 {
     align-items: center;
@@ -642,7 +642,7 @@
 }
 
 .contentContainer_c55cae {
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: 8px 0 0 8px;
     display: flex;
     flex: 1;
@@ -671,7 +671,7 @@
 
 .imgContainer_c55cae {
     align-items: center;
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: 0 8px 8px 0;
     display: flex;
     flex: 1;
@@ -686,7 +686,7 @@
 }
 
 .theme-light .contentContainer_c55cae {
-    background: var(--background-secondary)
+    background: var(--background-base-lower)
 }
 
 .theme-light .imgContainer_c55cae {
@@ -694,11 +694,11 @@
 }
 
 .theme-dark .contentContainer_c55cae {
-    background: var(--background-tertiary)
+    background: var(--background-base-lowest)
 }
 
 .theme-dark .imgContainer_c55cae {
-    background: var(--background-secondary)
+    background: var(--background-base-lower)
 }
 
 .modalBody_b83a17 {
@@ -838,4 +838,4 @@
     margin-top: 0
 }
 
-/*# sourceMappingURL=b2fb7fb63d892e3c.css.map*/
+/*# sourceMappingURL=4ef3f83c0ae781f4.css.map*/

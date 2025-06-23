@@ -1,6 +1,6 @@
 /**
   Module ID: 76815
-  Original File Name: 7f22485f5ea70d39
+  Original File Name: 23f0f05e0ced6e5d
 **/
 .body__7ce16 {
     padding-top: var(--spacing-16)
@@ -50,7 +50,7 @@
 
 .iconButton__7ce16 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-round);
     display: flex;
     justify-content: center;
@@ -73,4 +73,4 @@
     color: var(--interactive-normal)
 }
 
-/*# sourceMappingURL=7f22485f5ea70d39.css.map*/
+/*# sourceMappingURL=23f0f05e0ced6e5d.css.map*/

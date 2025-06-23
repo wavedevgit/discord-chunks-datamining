@@ -1,11 +1,11 @@
 /**
   Module ID: 1862
-  Original File Name: 20dec41aa544248b
+  Original File Name: 8e496c8d9e5065dc
 **/
 .container_cd2100 {
     align-items: center;
     background-color: var(--background-secondary-alt);
-    border: 1px solid var(--background-tertiary);
+    border: 1px solid var(--background-base-lowest);
     border-radius: 4px;
     display: flex;
     height: 40px;
@@ -51,7 +51,7 @@
 
 .nameContainer_d03e0c {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-xs);
     display: flex;
     margin-top: 8px;
@@ -135,4 +135,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=20dec41aa544248b.css.map*/
+/*# sourceMappingURL=8e496c8d9e5065dc.css.map*/

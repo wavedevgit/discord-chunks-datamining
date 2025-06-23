@@ -1,6 +1,6 @@
 /**
   Module ID: 52370
-  Original File Name: 11f30a2fdcf2a069
+  Original File Name: 813197c7ba0186f3
 **/
 .container__6f9f7 {
     display: flex;
@@ -160,7 +160,7 @@
 
 .enableSwitchContainer__69ef9 {
     align-items: center;
-    background-color: var(--bg-base-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: row;
@@ -196,7 +196,7 @@
 }
 
 .tagInputWrapper__69ef9 {
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     border-color: var(--border-subtle);
     border-radius: var(--radius-xs);
     border-style: solid;
@@ -240,7 +240,7 @@
 
 .pickerItem__69ef9 {
     align-items: center;
-    background-color: var(--bg-mod-faint);
+    background-color: var(--background-mod-faint);
     border-color: var(--border-subtle);
     border-radius: var(--radius-xs);
     border-style: solid;
@@ -328,7 +328,7 @@
 }
 
 .container__11014 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: column;
@@ -396,7 +396,7 @@
 }
 
 .container__935ef {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: column;
@@ -405,7 +405,7 @@
 }
 
 .divider__935ef {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     height: 1px
 }
 
@@ -430,7 +430,7 @@
 }
 
 .messageContainer__93e55 {
-    background-color: var(--bg-mod-faint);
+    background-color: var(--background-mod-faint);
     border-color: var(--border-subtle);
     border-radius: var(--radius-sm);
     border-style: solid;
@@ -463,7 +463,7 @@
 }
 
 .sidebar__61aee {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--expressive-gradient-purple-end) 0,var(--expressive-gradient-purple-start) 100%);
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-base-low) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--expressive-gradient-purple-end) 0,var(--expressive-gradient-purple-start) 100%);
     display: flex;
     flex-direction: column;
     width: 350px
@@ -489,7 +489,7 @@
 
 .exampleImage__61aee {
     align-items: center;
-    background: var(--bg-base-tertiary);
+    background: var(--background-base-lowest);
     display: flex;
     flex: 1;
     justify-content: center;
@@ -500,4 +500,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=11f30a2fdcf2a069.css.map*/
+/*# sourceMappingURL=813197c7ba0186f3.css.map*/

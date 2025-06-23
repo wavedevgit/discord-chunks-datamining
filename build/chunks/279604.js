@@ -2,7 +2,7 @@
 n.d(t, {
   KE: () => b,
   KT: () => m,
-  ZP: () => y
+  ZP: () => O
 }), n(388685), n(457542);
 var r = n(255367),
   i = n(73800),
@@ -68,11 +68,11 @@ function b(e, t) {
   })
 }
 
-function y(e, t) {
+function O(e, t) {
   var m;
   let {
-    analyticsLocations: y
-  } = (0, s.ZP)(), [O, _] = i.useState(!1), [v, C] = i.useState(void 0), j = (0, l.e7)([h.Z], () => {
+    analyticsLocations: O
+  } = (0, s.ZP)(), [y, _] = i.useState(!1), [v, C] = i.useState(void 0), j = (0, l.e7)([h.Z], () => {
     var t, n;
     return null != (n = null == (t = h.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts) ? n : 0
   }), S = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), x = Math.max((null != (m = null == S ? void 0 : S.premiumSubscriberCount) ? m : 0) - j, 0), E = i.useCallback(n => {
@@ -90,7 +90,7 @@ function y(e, t) {
         section: f.jXE.GUILD_POWERUPS_OVERVIEW_CARD
       },
       numberOfBoostsToAdd: t.cost - x,
-      analyticsLocations: y,
+      analyticsLocations: O,
       guild: S,
       intent: t.type === p.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
       onSubscribeComplete: () => E(!0).then(() => {
@@ -115,9 +115,9 @@ function y(e, t) {
         }, n))
       })
     })
-  }, [E, t, x, y, S]), I = i.useCallback(e => (e.stopPropagation(), E(!1)), [E]);
+  }, [E, t, x, O, S]), I = i.useCallback(e => (e.stopPropagation(), E(!1)), [E]);
   return {
-    isLoading: O,
+    isLoading: y,
     error: v,
     onActivate: P,
     onDeactivate: I,

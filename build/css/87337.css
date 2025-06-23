@@ -1,6 +1,6 @@
 /**
   Module ID: 87337
-  Original File Name: 9f6056cf7937f6f9
+  Original File Name: 69a4494018dc6ed8
 **/
 .container__1ce5d {
     position: relative
@@ -63,7 +63,7 @@
 }
 
 .infoGroup_f549e5 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     margin-bottom: var(--spacing-24);
     width: 100%
@@ -93,4 +93,4 @@
     display: inline
 }
 
-/*# sourceMappingURL=9f6056cf7937f6f9.css.map*/
+/*# sourceMappingURL=69a4494018dc6ed8.css.map*/

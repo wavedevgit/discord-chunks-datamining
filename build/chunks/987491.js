@@ -27,8 +27,8 @@ var r = n(255367),
   E = n(430824),
   S = n(51144),
   I = n(388032),
-  P = n(555405),
-  R = n(710931),
+  R = n(555405),
+  P = n(710931),
   O = n(771429),
   y = n(350381);
 
@@ -47,11 +47,11 @@ function w(e) {
       t = I.t["/wqiSk"], n = I.t.o47YZm
   }
   return (0, r.jsxs)("div", {
-    className: P.emptyContainer,
+    className: R.emptyContainer,
     children: [(0, r.jsx)(d.dz2, {
       size: "md",
       color: "currentColor",
-      className: P.checkmark
+      className: R.checkmark
     }), (0, r.jsx)(d.X6q, {
       variant: "heading-md/medium",
       children: I.intl.string(t)
@@ -72,31 +72,31 @@ function A(e) {
     children: (0, r.jsxs)("tr", {
       className: O.tableHeaderRow,
       children: [(0, r.jsx)("th", {
-        className: P.headerCell,
+        className: R.headerCell,
         children: (0, r.jsx)(d.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
           children: I.intl.string(I.t.Es7n9f)
         })
       }), (0, r.jsx)("th", {
-        className: a()(P.headerCell, y.mediumCol),
+        className: a()(R.headerCell, y.mediumCol),
         children: (0, r.jsxs)(d.P3F, {
-          className: P.sortItem,
+          className: R.sortItem,
           onClick: n,
           children: [(0, r.jsx)(d.Text, {
             variant: "eyebrow",
             color: "interactive-normal",
             children: I.intl.string(I.t.EZ5QWF)
           }), t === b.Nw.TIMESTAMP_ASC ? (0, r.jsx)(_.Z, {
-            className: P.sortIcon,
+            className: R.sortIcon,
             direction: _.Z.Directions.UP
           }) : (0, r.jsx)(_.Z, {
-            className: P.sortIcon,
+            className: R.sortIcon,
             direction: _.Z.Directions.DOWN
           })]
         })
       }), (0, r.jsx)("th", {
-        className: a()(P.headerCell, P.moreOptionsCol),
+        className: a()(R.headerCell, R.moreOptionsCol),
         children: (0, r.jsx)(d.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
@@ -231,7 +231,7 @@ let M = l.memo(function(e) {
           children: s()(m).format("lll")
         })
       }), (0, r.jsx)("td", {
-        className: P.moreOptionsCol,
+        className: R.moreOptionsCol,
         children: g && (0, r.jsx)(d.ua7, {
           text: I.intl.string(I.t.x8Nn4O),
           children: e => {
@@ -266,11 +266,11 @@ let M = l.memo(function(e) {
         children: (0, r.jsxs)("div", {
           className: y.memberNameContainer,
           children: [(0, r.jsx)("div", {
-            className: a()(P.placeholderAvatar, y.memberAvatar)
+            className: a()(R.placeholderAvatar, y.memberAvatar)
           }), (0, r.jsx)("div", {
             className: y.memberName,
             children: (0, r.jsx)("div", {
-              className: P.placeholderText,
+              className: R.placeholderText,
               style: {
                 width: e
               }
@@ -278,7 +278,7 @@ let M = l.memo(function(e) {
           }), (0, r.jsx)("div", {
             className: y.memberGlobalName,
             children: (0, r.jsx)("div", {
-              className: P.placeholderTextSmall,
+              className: R.placeholderTextSmall,
               style: {
                 width: t
               }
@@ -288,13 +288,13 @@ let M = l.memo(function(e) {
       }), (0, r.jsx)("td", {
         className: y.mediumCol,
         children: (0, r.jsx)("div", {
-          className: P.placeholderText,
+          className: R.placeholderText,
           style: {
             width: n
           }
         })
       }), (0, r.jsx)("td", {
-        className: P.moreOptionsCol
+        className: R.moreOptionsCol
       })]
     })
   };
@@ -321,13 +321,13 @@ function D(e) {
     h.Z.setSelectedSortOrder(t, e), await m(e, n)
   }, [o, t, m, n]);
   return null == a ? null : (0, r.jsx)("div", {
-    className: R.mainTableContainer,
+    className: P.mainTableContainer,
     children: (0, r.jsx)(d.Den, {
-      className: R.horizatonalScroller,
+      className: P.horizatonalScroller,
       ref: i,
       orientation: "horizontal",
       children: (0, r.jsxs)("table", {
-        className: P.table,
+        className: R.table,
         children: [(0, r.jsx)(A, {
           sortOrder: o,
           onSortChange: x

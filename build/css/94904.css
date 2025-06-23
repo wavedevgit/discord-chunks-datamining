@@ -1,9 +1,9 @@
 /**
   Module ID: 94904
-  Original File Name: 04a6f4be02271f7b
+  Original File Name: e337aec17964e20f
 **/
 .code__1a1f5 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     display: grid;
     grid-template-columns: repeat(var(--secure-frames-columns),1fr);
     overflow: hidden;
@@ -143,4 +143,4 @@
     margin-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=04a6f4be02271f7b.css.map*/
+/*# sourceMappingURL=e337aec17964e20f.css.map*/

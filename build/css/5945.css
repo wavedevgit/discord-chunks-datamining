@@ -1,6 +1,6 @@
 /**
   Module ID: 5945
-  Original File Name: 13303d456e3dc194
+  Original File Name: 5e2d088e904b8a66
 **/
 .modal__0651b {
     max-height: 100%;
@@ -86,7 +86,7 @@
 }
 
 .divider__0651b {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     height: 1px;
     margin: 24px 0
 }
@@ -117,4 +117,4 @@
     color: var(--interactive-normal)
 }
 
-/*# sourceMappingURL=13303d456e3dc194.css.map*/
+/*# sourceMappingURL=5e2d088e904b8a66.css.map*/

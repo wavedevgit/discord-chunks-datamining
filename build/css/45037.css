@@ -1,10 +1,10 @@
 /**
   Module ID: 45037
-  Original File Name: 4a4ad40195de98c0
+  Original File Name: 10d8587dfc51b2a5
 **/
 .searchBar__3e00d {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-base-lower);
+    border: 1px solid var(--background-base-lowest);
     margin-bottom: 8px
 }
 
@@ -187,4 +187,4 @@
     padding-left: 0
 }
 
-/*# sourceMappingURL=4a4ad40195de98c0.css.map*/
+/*# sourceMappingURL=10d8587dfc51b2a5.css.map*/

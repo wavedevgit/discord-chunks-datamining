@@ -1,6 +1,6 @@
 /**
   Module ID: 10667
-  Original File Name: 22e94d30427234b3
+  Original File Name: 5c82cf3fb520126a
 **/
 .modal__4b2e7 {
     width: 408px
@@ -52,7 +52,7 @@
 
 .footer__4b2e7 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     flex-direction: column
 }
 
@@ -66,7 +66,7 @@
 }
 
 .valueProps__4b2e7 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     margin-top: 24px
 }
@@ -93,7 +93,7 @@
 }
 
 .valuePropDivider__4b2e7 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     flex: 1;
     height: 1px;
     margin-left: 56px;
@@ -106,4 +106,4 @@
     max-height: clamp(200px,calc(100vh - 80px),720px)
 }
 
-/*# sourceMappingURL=22e94d30427234b3.css.map*/
+/*# sourceMappingURL=5c82cf3fb520126a.css.map*/

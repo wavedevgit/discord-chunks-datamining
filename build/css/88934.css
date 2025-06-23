@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: e40e6ba99f8df670
+  Original File Name: 9271da1929b99479
 **/
 @value headerBarHeight 60px;
 
@@ -30,7 +30,7 @@
 }
 
 .relative__8a7fc {
-    background: var(--bg-overlay-chat,var(--background-primary));
+    background: var(--bg-overlay-chat,var(--background-base-low));
     box-shadow: var(--shadow-low);
     -webkit-clip-path: inset(0 0 -4px 0);
     clip-path: inset(0 0 -4px 0);
@@ -38,7 +38,7 @@
 }
 
 .backdrop__8a7fc {
-    background: var(--bg-overlay-3,var(--background-secondary));
+    background: var(--bg-overlay-3,var(--background-base-lower));
     height: 100%;
     left: 0;
     position: absolute;
@@ -282,7 +282,7 @@
 }
 
 .searchBar__1ac1c {
-    background: var(--bg-overlay-3,var(--background-tertiary));
+    background: var(--bg-overlay-3,var(--background-base-lowest));
     color: var(--text-normal);
     flex: 1 1 240px;
     max-width: 240px;
@@ -586,16 +586,16 @@
 }
 
 .theme-dark .card__84e3e:hover {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .theme-light .card__84e3e {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     box-shadow: var(--legacy-elevation-border),var(--elevation-medium)
 }
 
 .theme-light .card__84e3e:focus,.theme-light .card__84e3e:hover {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     box-shadow: var(--elevation-high)
 }&.theme-dark .card__84e3e,&.theme-light .card__84e3e {
     background-color: var(--background-base-low);
@@ -635,7 +635,7 @@
 
 .cardPlaceholder__84e3e {
     animation: placeholderPulse__84e3e 1.8s ease-in-out infinite;
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .transitionItem__84e3e {
@@ -802,8 +802,8 @@
 }
 
 .theme-light .avatar_f215b9 {
-    background: var(--background-secondary);
-    border-color: var(--background-secondary)
+    background: var(--background-base-lower);
+    border-color: var(--background-base-lower)
 }
 
 @value minCardWidth 254px;
@@ -1233,7 +1233,7 @@
 
 .errorContainer__03498 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -1265,7 +1265,7 @@
 }
 
 .contentContainer_c6b177 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
     display: flex;
@@ -1282,7 +1282,7 @@
 }
 
 .commandName_c6b177 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border: 1px solid var(--border-subtle);
     border-radius: 4px;
     font-size: 14px;
@@ -1297,7 +1297,7 @@
 }
 
 .contentContainer__8f46b {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
     padding: 16px
@@ -1361,7 +1361,7 @@
 }
 
 .moreGuilds_bb856d {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     box-sizing: border-box;
     color: var(--text-normal);
     font-weight: 500;
@@ -1784,7 +1784,7 @@
 }
 
 .contentContainer_f8758b {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
     padding: 16px
@@ -1870,9 +1870,9 @@
 
 .avatar_efaad4 {
     -webkit-user-drag: none;
-    background: var(--bg-overlay-chat,var(--background-primary));
+    background: var(--bg-overlay-chat,var(--background-base-low));
     border: solid;
-    border-color: var(--bg-overlay-chat,var(--background-primary));
+    border-color: var(--bg-overlay-chat,var(--background-base-low));
     border-radius: var(--radius-xl);
     transform: translateY(-50%)
 }
@@ -1924,7 +1924,7 @@
 }
 
 .appContainer__5a4b6 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
@@ -1941,7 +1941,7 @@
 }
 
 .appContainer__5a4b6:focus,.appContainer__5a4b6:hover {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .full-motion .appContainer__5a4b6:focus,.full-motion .appContainer__5a4b6:hover {
@@ -2298,7 +2298,7 @@
 }
 
 .filterBackground__72086 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 4px;
     padding: 4px 8px
 }
@@ -2363,7 +2363,7 @@
 
 .container__5682d {
     align-items: center;
-    background: var(--bg-overlay-3,var(--background-secondary));
+    background: var(--bg-overlay-3,var(--background-base-lower));
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -2544,4 +2544,4 @@
     width: 22px
 }
 
-/*# sourceMappingURL=e40e6ba99f8df670.css.map*/
+/*# sourceMappingURL=9271da1929b99479.css.map*/

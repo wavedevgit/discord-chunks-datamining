@@ -1,11 +1,11 @@
 /**
   Module ID: 46746
-  Original File Name: 1c0b6b10059d7339
+  Original File Name: d262f542ffea88d6
 **/
 .card__4bb93 {
     align-items: center;
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-base-lower);
+    border: 1px solid var(--background-base-lowest);
     border-radius: 3px;
     color: var(--header-primary);
     display: flex;
@@ -207,7 +207,7 @@
 }
 
 .userListOverflow__248f3 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     box-sizing: border-box;
     color: var(--text-normal);
     font-size: 12px;
@@ -305,7 +305,7 @@
 
 .attribution__83f6c {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: var(--radius-sm);
     display: flex;
     gap: 12px;
@@ -497,7 +497,7 @@
 }
 
 .selectorButton_c6d3dc {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     flex: 1 1 auto;
     min-width: 36px;
     overflow: hidden;
@@ -678,7 +678,7 @@
 }
 
 .guildRow__1dfb8:hover {
-    background-color: var(--background-modifier-accent)
+    background-color: var(--border-subtle)
 }
 
 .guildIcon__1dfb8 {
@@ -1715,7 +1715,7 @@
 }
 
 .sourceThumbnail_a2de16 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1833,7 +1833,7 @@
 }
 
 .nativeSourceSingleTypeButton_a2de16 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     color: var(--interactive-normal);
     cursor: pointer;
     display: block;
@@ -1878,7 +1878,7 @@
 
 .nativeSourceTypeButton_a2de16 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     color: var(--interactive-normal);
     cursor: pointer;
     display: flex;
@@ -1968,7 +1968,7 @@
 }
 
 .channelResult__32fe1:hover {
-    background-color: var(--bg-mod-strong);
+    background-color: var(--background-mod-strong);
     cursor: pointer
 }
 
@@ -2096,7 +2096,7 @@
 
 .nativeSourceTypeButton__0b85a {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     color: var(--interactive-normal);
     cursor: pointer;
     display: flex;
@@ -2160,7 +2160,7 @@
 }
 
 .source_febe19:hover:not(.selectedSource_febe19) .sourcePreviewContainer_febe19:before {
-    border-color: var(--bg-mod-strong)
+    border-color: var(--background-mod-strong)
 }
 
 .selectedSource_febe19 .sourcePreviewContainer_febe19:before {
@@ -2372,7 +2372,7 @@
 }
 
 .ellipsis__0a8d6 {
-    color: var(--bg-mod-subtle)
+    color: var(--background-mod-subtle)
 }
 
 .sourceOrPresetName__0a8d6 {
@@ -2383,7 +2383,7 @@
 }
 
 .screenArrowIcon__0a8d6 {
-    background-color: var(--bg-mod-subtle);
+    background-color: var(--background-mod-subtle);
     border-radius: var(--radius-sm);
     color: var(--icon-muted);
     flex-shrink: 0;
@@ -2396,7 +2396,7 @@
 }
 
 .root__7f727 {
-    background-color: var(--bg-base-primary);
+    background-color: var(--background-base-low);
     height: calc(100vh - 80px);
     max-height: 720px;
     overflow: hidden;
@@ -2462,4 +2462,4 @@
     margin-bottom: 0
 }
 
-/*# sourceMappingURL=1c0b6b10059d7339.css.map*/
+/*# sourceMappingURL=d262f542ffea88d6.css.map*/

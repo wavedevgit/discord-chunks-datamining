@@ -31,7 +31,7 @@ function _(e) {
     iconURL: C,
     scrollerRef: v,
     sectionName: x
-  } = e, y = (0, o.ap)((0, c.ZP)()), g = r.useRef(null), j = r.useRef(null), N = r.useRef(null), P = r.useRef(null), E = (0, a.dQu)(a.TVs.colors.BG_BASE_PRIMARY).hex(), A = (0, s.ZP)("number" == typeof C ? "" : C, null != E ? E : ""), I = r.useMemo(() => {
+  } = e, y = (0, o.ap)((0, c.ZP)()), g = r.useRef(null), j = r.useRef(null), N = r.useRef(null), P = r.useRef(null), E = (0, a.dQu)(a.TVs.colors.BACKGROUND_BASE_LOW).hex(), A = (0, s.ZP)("number" == typeof C ? "" : C, null != E ? E : ""), I = r.useMemo(() => {
     var e, t;
     let n = (0, l.compact)([u.Z.parseHexString(A), u.Z.parseHexString(y ? "#000000" : "#ffffff")]);
     return null != (t = null == (e = (0, d.k8)({

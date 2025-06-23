@@ -1,7 +1,7 @@
 /** Chunk was on 98787 **/
 n.d(t, {
   ZP: () => v,
-  jd: () => O,
+  jd: () => y,
   wt: () => _
 }), n(361932), n(187205), n(539854), n(388685), n(642613);
 var r, i = n(73800),
@@ -18,8 +18,8 @@ var r, i = n(73800),
   g = n(771845),
   m = n(9156),
   b = n(709054),
-  y = n(982183),
-  O = ((r = {}).Loading = "loading", r.Loaded = "loaded", r.Done = "done", r);
+  O = n(982183),
+  y = ((r = {}).Loading = "loading", r.Loaded = "loaded", r.Done = "done", r);
 
 function _() {
   let e = (0, o.Wu)([g.ZP], () => g.ZP.getFlattenedGuildIds()),
@@ -40,7 +40,7 @@ function _() {
         }
     return r.map(e => e.id).sort((e, t) => b.default.compare(f.ZP.lastMessageId(t), f.ZP.lastMessageId(e))).filter(e => {
       let t = f.ZP.lastMessageId(e);
-      return null == t || b.default.age(t) < y.ib
+      return null == t || b.default.age(t) < O.ib
     })
   }, [t, n])
 }

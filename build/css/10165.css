@@ -1,6 +1,6 @@
 /**
   Module ID: 10165
-  Original File Name: 38189c4547c91443
+  Original File Name: 3ea6b1871f604f9a
 **/
 .header_cd8d1b {
     padding: 0 50px
@@ -18,7 +18,7 @@
 }
 
 .modal_cd8d1b {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--expressive-gradient-purple-end) 0,var(--expressive-gradient-purple-start) 100%);
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-base-low) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--expressive-gradient-purple-end) 0,var(--expressive-gradient-purple-start) 100%);
     overflow: hidden;
     position: relative
 }
@@ -44,4 +44,4 @@
     padding: 20px 16px
 }
 
-/*# sourceMappingURL=38189c4547c91443.css.map*/
+/*# sourceMappingURL=3ea6b1871f604f9a.css.map*/

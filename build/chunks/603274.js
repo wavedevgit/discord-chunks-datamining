@@ -18,8 +18,8 @@ var i = n(120356),
   g = n(501655),
   m = n(199902),
   b = n(592125),
-  y = n(594174),
-  O = n(938475),
+  O = n(594174),
+  y = n(938475),
   _ = n(823379),
   v = n(709054),
   C = n(853856),
@@ -47,7 +47,7 @@ function I() {
     t = e.map(e => e.id),
     n = e.filter(e => e.type === j.d4z.GUILD_VOICE),
     i = e.filter(e => e.type === j.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    l = (0, a.Wu)([O.ZP], () => s().flatMap(n, e => O.ZP.getVoiceStatesForChannel(e).map(e => {
+    l = (0, a.Wu)([y.ZP], () => s().flatMap(n, e => y.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
@@ -74,8 +74,8 @@ function I() {
       }
       return n
     }, [t]),
-    I = (0, a.Wu)([y.default], () => E.map(e => y.default.getUser(e)), [E]),
-    N = (0, a.Wu)([y.default], () => S.map(e => y.default.getUser(e)), [S]),
+    I = (0, a.Wu)([O.default], () => E.map(e => O.default.getUser(e)), [E]),
+    N = (0, a.Wu)([O.default], () => S.map(e => O.default.getUser(e)), [S]),
     w = P(c.gj8, l.filter(e => !S.includes(e.id) && !E.includes(e.id))),
     Z = 0 === o.length ? null : (0, r.jsxs)("div", {
       className: x.row,

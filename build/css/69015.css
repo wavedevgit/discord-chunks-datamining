@@ -1,6 +1,6 @@
 /**
   Module ID: 69015
-  Original File Name: e6d396e4ad7caa8e
+  Original File Name: f3fc1ad30ac56b26
 **/
 .header__8f3be {
     gap: var(--spacing-16);
@@ -27,7 +27,7 @@
 }
 
 .notice__8f3be {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--border-faint);
     border-radius: var(--radius-sm);
     box-shadow: none;
@@ -52,4 +52,4 @@
     color: var(--text-danger)
 }
 
-/*# sourceMappingURL=e6d396e4ad7caa8e.css.map*/
+/*# sourceMappingURL=f3fc1ad30ac56b26.css.map*/

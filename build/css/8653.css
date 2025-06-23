@@ -1,9 +1,9 @@
 /**
   Module ID: 8653
-  Original File Name: 634dbc9e839ba1a5
+  Original File Name: 7118efcc680edb68
 **/
 .akaBadge__910e1 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     color: var(--header-secondary);
     display: inline-block;
     vertical-align: middle
@@ -59,7 +59,7 @@
 }
 
 .to__910e1 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     position: relative;
     z-index: 1
 }
@@ -88,4 +88,4 @@
     background-image: url(/assets/8b0b7b6309375fb9.svg)
 }
 
-/*# sourceMappingURL=634dbc9e839ba1a5.css.map*/
+/*# sourceMappingURL=7118efcc680edb68.css.map*/

@@ -58,7 +58,7 @@ function g(e) {
     onMouseLeave: g,
     className: m,
     ariaHidden: b,
-    avatarDecoration: y,
+    avatarDecoration: O,
     specs: _,
     cornerIconUrl: v,
     cornerIconOffsetX: C,
@@ -67,7 +67,7 @@ function g(e) {
   } = e, x = {
     width: (0, a.pxk)(n),
     height: (0, a.pxk)(n)
-  }, E = (0, i.useId)(), P = _.size * d.hs, I = null != y && (0, r.jsxs)("svg", {
+  }, E = (0, i.useId)(), P = _.size * d.hs, I = null != O && (0, r.jsxs)("svg", {
     width: P,
     height: P,
     viewBox: "0 0 ".concat(P, " ").concat(P),
@@ -95,7 +95,7 @@ function g(e) {
               width: l,
               x: o,
               y: s
-            } = O(e, n, r), a = (t - e.size) / 2;
+            } = y(e, n, r), a = (t - e.size) / 2;
             return {
               width: l,
               height: i,
@@ -123,7 +123,7 @@ function g(e) {
         className: h.avatarStack,
         children: (0, r.jsx)("img", {
           className: h.avatar,
-          src: y,
+          src: O,
           alt: " ",
           "aria-hidden": !0
         })
@@ -189,7 +189,7 @@ function m(e) {
             width: l,
             x: o,
             y: s
-          } = O(e, t, n);
+          } = y(e, t, n);
           return (0, r.jsx)("rect", {
             mask: "url(#".concat(c.QS.SQUIRCLE, ")"),
             height: i,
@@ -210,7 +210,7 @@ function m(e) {
           className: d,
           isSpeaking: !1
         })
-      }), null != m && (0, r.jsx)("foreignObject", f(p({}, y(v, b, _)), {
+      }), null != m && (0, r.jsx)("foreignObject", f(p({}, O(v, b, _)), {
         mask: "url(#".concat(c.QS.SQUIRCLE, ")"),
         children: (0, r.jsx)("img", {
           src: m,
@@ -232,7 +232,7 @@ function b(e) {
     cornerIconUrl: a,
     cornerIconOffsetX: d = 0,
     cornerIconOffsetY: m = 0
-  } = e, b = (0, i.useId)(), _ = (0, i.useId)(), v = (0, u.UC)(n), C = v.size + d, j = v.size + m, S = O(v, d, m), x = y(v, d, m);
+  } = e, b = (0, i.useId)(), _ = (0, i.useId)(), v = (0, u.UC)(n), C = v.size + d, j = v.size + m, S = y(v, d, m), x = O(v, d, m);
   return (0, r.jsx)(g, f(p({}, e), {
     ariaLabel: s,
     ariaHidden: l,
@@ -294,7 +294,7 @@ function b(e) {
   }))
 }
 
-function y(e, t, n) {
+function O(e, t, n) {
   return {
     width: 16,
     height: 16,
@@ -303,8 +303,8 @@ function y(e, t, n) {
   }
 }
 
-function O(e, t, n) {
-  let r = y(e, t, n),
+function y(e, t, n) {
+  let r = O(e, t, n),
     i = r.x - 2,
     l = r.y - 2;
   return {

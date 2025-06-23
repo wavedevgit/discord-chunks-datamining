@@ -1,6 +1,6 @@
 /**
   Module ID: 57486
-  Original File Name: 661b383c7b56d7ad
+  Original File Name: 54ff53a5fcab9ac8
 **/
 .noScroll_afb566 {
     overflow-y: visible!important;
@@ -207,7 +207,7 @@
 }
 
 .tableContainer_ef2eb4 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     padding: 16px 20px
 }
@@ -246,4 +246,4 @@
     margin-left: 16px
 }
 
-/*# sourceMappingURL=661b383c7b56d7ad.css.map*/
+/*# sourceMappingURL=54ff53a5fcab9ac8.css.map*/

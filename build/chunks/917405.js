@@ -24,7 +24,7 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function y(e) {
   }
   return e
 }
-let O = {
+let y = {
     [h.IE4.UNKNOWN]: a.ua7.Colors.BLACK,
     [h.IE4.BAD]: a.ua7.Colors.RED,
     [h.IE4.AVERAGE]: a.ua7.Colors.YELLOW,
@@ -105,8 +105,8 @@ class m extends l.PureComponent {
     } = this.props;
     return i === h.hes.RTC_CONNECTED && (e = (0, r.jsx)(a.ua7, {
       text: t !== h.IE4.UNKNOWN && null != l ? "".concat(l.toFixed(0), " ms") : null,
-      color: O[t],
-      children: e => (0, r.jsx)(v, y({
+      color: y[t],
+      children: e => (0, r.jsx)(v, O({
         quality: t,
         smallPing: !u && n,
         largePing: u
@@ -125,7 +125,7 @@ class m extends l.PureComponent {
   constructor(...e) {
     super(...e), g(this, "statusButtonRef", l.createRef()), g(this, "renderPopout", e => t => {
       var n, l;
-      return (0, r.jsx)(d.Z, (n = y({}, t), l = l = {
+      return (0, r.jsx)(d.Z, (n = O({}, t), l = l = {
         channelId: e
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
@@ -167,7 +167,7 @@ function v(e) {
     [h.IE4.BAD]: a.mbS,
     [h.IE4.UNKNOWN]: a._3e
   } [t];
-  return (0, r.jsx)(s, y({
+  return (0, r.jsx)(s, O({
     className: o()(p.ping, {
       [p.smallPing]: n,
       [p.largePing]: l

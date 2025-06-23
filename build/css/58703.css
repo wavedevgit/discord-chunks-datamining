@@ -1,9 +1,9 @@
 /**
   Module ID: 58703
-  Original File Name: 60cdc299fd6dc457
+  Original File Name: 02b0f1951b78af58
 **/
 .root__66e7e {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     background-color: var(--background-surface-higher);
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
@@ -13,7 +13,7 @@
 .option__66e7e {
     align-items: center;
     background-color: none;
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     color: var(--interactive-active);
     cursor: pointer;
     display: flex;
@@ -253,4 +253,4 @@
     margin-bottom: var(--space-16)
 }
 
-/*# sourceMappingURL=60cdc299fd6dc457.css.map*/
+/*# sourceMappingURL=02b0f1951b78af58.css.map*/

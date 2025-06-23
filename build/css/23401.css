@@ -1,6 +1,6 @@
 /**
   Module ID: 23401
-  Original File Name: 1d22d13fc1137973
+  Original File Name: 377520e85ad8b896
 **/
 .content__60d39 {
     padding: 24px
@@ -15,7 +15,7 @@
 }
 
 .separator__60d39 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     height: 1px;
     margin: 24px 0;
     width: 100%
@@ -38,7 +38,7 @@
 }
 
 .progressBackground__60d39 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     width: 100%
 }
 
@@ -65,4 +65,4 @@
     font-weight: 600
 }
 
-/*# sourceMappingURL=1d22d13fc1137973.css.map*/
+/*# sourceMappingURL=377520e85ad8b896.css.map*/

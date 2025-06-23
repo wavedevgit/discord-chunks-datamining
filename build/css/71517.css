@@ -1,6 +1,6 @@
 /**
   Module ID: 71517
-  Original File Name: 4c69fb9705475dd7
+  Original File Name: 1d00a444ee411527
 **/
 .modalRoot__91f7b {
     max-width: 440px
@@ -64,7 +64,7 @@
 }
 
 .badge__91f7b {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-round);
     justify-content: center;
     min-height: 40px;
@@ -90,4 +90,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=4c69fb9705475dd7.css.map*/
+/*# sourceMappingURL=1d00a444ee411527.css.map*/

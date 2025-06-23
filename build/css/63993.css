@@ -1,6 +1,6 @@
 /**
   Module ID: 63993
-  Original File Name: a0c3a8e61909ff42
+  Original File Name: 6e5f8b6384c07f3a
 **/
 .modal__038c3 {
     width: 650px
@@ -12,7 +12,7 @@
 }
 
 .previewContainerParent__038c3 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-top-left-radius: var(--radius-md);
     margin-top: -8px;
     overflow-y: clip;
@@ -112,7 +112,7 @@
 }
 
 .deleteButton__1df30 {
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--background-base-lowest);
     color: var(--text-danger);
     cursor: pointer;
     height: 28px;
@@ -358,4 +358,4 @@
     margin: 0
 }
 
-/*# sourceMappingURL=a0c3a8e61909ff42.css.map*/
+/*# sourceMappingURL=6e5f8b6384c07f3a.css.map*/

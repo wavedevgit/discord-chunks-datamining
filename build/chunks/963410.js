@@ -43,10 +43,10 @@ function C(e) {
     userId: n,
     channelId: C,
     onClose: Z
-  } = e, O = (0, i.e7)([o.default], () => o.default.getUser(n)), j = (0, i.e7)([a.Z], () => {
+  } = e, O = (0, i.e7)([o.default], () => o.default.getUser(n)), A = (0, i.e7)([a.Z], () => {
     var e;
     return null == (e = a.Z.getChannel(C)) ? void 0 : e.getGuildId()
-  }), A = c.ZP.useName(j, null, O), {
+  }), j = c.ZP.useName(A, null, O), {
     fingerprint: x,
     userKey: w
   } = (0, m.q)({
@@ -67,7 +67,7 @@ function C(e) {
   (0, g.i)({
     channelId: C,
     userId: n,
-    nickname: A,
+    nickname: j,
     onAlertOpen: Z
   });
   let {
@@ -83,8 +83,8 @@ function C(e) {
   }, [w, n, D, Z]), [L, Y] = l.useMemo(() => k ? [I.intl.string(I.t.UNUuen), s.Z.BG_BRAND] : [I.intl.string(I.t.y2b7CA), s.Z.STATUS_DANGER], [k]), z = l.useMemo(() => (0, f.kK)({
     isCurrentUserKeyPersistent: P,
     isOtherUserKeyPersistent: D,
-    otherUserNickname: A
-  }), [P, D, A]), G = (0, S.P)({
+    otherUserNickname: j
+  }), [P, D, j]), B = (0, S.P)({
     userId: n,
     keyToOmit: w
   });
@@ -97,15 +97,15 @@ function C(e) {
     transitionState: t,
     title: I.intl.string(I.t["/WPGnJ"]),
     subtitle: I.intl.format(I.t.oc2kcX, {
-      username: A
+      username: j
     }),
     children: [(0, r.jsxs)("div", {
       className: v.verification,
-      children: [G > 0 && (0, r.jsx)(u.Wn, {
+      children: [B > 0 && (0, r.jsx)(u.Wn, {
         messageType: u.QYI.INFO,
         className: v.helpMessage,
         children: I.intl.format(I.t.uZDkz8, {
-          count: G
+          count: B
         })
       }), (0, r.jsxs)("div", {
         className: v.header,

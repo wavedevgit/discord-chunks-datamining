@@ -1,9 +1,9 @@
 /**
   Module ID: 21863
-  Original File Name: 10affddbf0699735
+  Original File Name: c11628037f53dbab
 **/
 .container__54e17 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     margin: 0 auto;
     max-width: 560px;
@@ -12,7 +12,7 @@
 
 .header__54e17 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     display: flex;
     padding: 18px 16px 16px
 }
@@ -70,7 +70,7 @@
 
 .eligibilityHeader__17e0d {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     display: flex;
     padding: 24px 16px
 }
@@ -93,4 +93,4 @@
     padding: 15px 0
 }
 
-/*# sourceMappingURL=10affddbf0699735.css.map*/
+/*# sourceMappingURL=c11628037f53dbab.css.map*/

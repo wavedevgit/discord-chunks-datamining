@@ -1,6 +1,6 @@
 /**
   Module ID: 57539
-  Original File Name: 3f2b925d3877d894
+  Original File Name: ec0ed33dc8fe6b88
 **/
 .toast__1562f {
     gap: var(--spacing-8)
@@ -37,7 +37,7 @@
 }
 
 .mediaContainer_d93468 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     margin-bottom: var(--spacing-16);
     margin-top: var(--spacing-12);
     padding: var(--spacing-16)
@@ -66,4 +66,4 @@
     margin-bottom: var(--spacing-8)
 }
 
-/*# sourceMappingURL=3f2b925d3877d894.css.map*/
+/*# sourceMappingURL=ec0ed33dc8fe6b88.css.map*/

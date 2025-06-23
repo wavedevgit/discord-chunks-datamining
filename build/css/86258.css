@@ -1,6 +1,6 @@
 /**
   Module ID: 86258
-  Original File Name: 3689e7c4362b3f80
+  Original File Name: 1cc6a2ba3b0cafba
 **/
 .partialOwnStateContainer__0d2da {
     align-items: center;
@@ -152,7 +152,7 @@
 
 .colorSwatch__6f029 {
     align-items: center;
-    border: 2px solid var(--background-tertiary);
+    border: 2px solid var(--background-base-lowest);
     border-radius: var(--radius-round);
     display: flex;
     flex-direction: row;
@@ -210,7 +210,7 @@
 }
 
 .minimalState__6f029 .colorSwatch__6f029 {
-    border: 1px solid var(--background-tertiary);
+    border: 1px solid var(--background-base-lowest);
     height: 11px;
     left: 0;
     top: 0;
@@ -236,7 +236,7 @@
 }
 
 .theme-light .colorSwatch__6f029 {
-    border-color: var(--background-primary)
+    border-color: var(--background-base-low)
 }
 
 .theme-light .alternativeColor__6f029 .colorSwatch__6f029 {
@@ -248,7 +248,7 @@
 }
 
 .shopCard_c3d04b {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--border-subtle);
     border-radius: 16px;
     box-shadow: none;
@@ -328,11 +328,11 @@
 }
 
 .darkCardBackground_c3d04b {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .lightCardBackground_c3d04b {
-    background: var(--background-primary)
+    background: var(--background-base-low)
 }
 
 .description_c3d04b {
@@ -530,7 +530,7 @@
 }
 
 .nameplatePlaceholderAvatar_c3d04b {
-    background-color: var(--background-modifier-accent)
+    background-color: var(--border-subtle)
 }
 
 .placeholderItem_c3d04b {
@@ -540,7 +540,7 @@
 }
 
 .placeholderBar_c3d04b {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 8px;
     flex-grow: 1;
     height: 14px;
@@ -596,7 +596,7 @@
 }
 
 .previewBox__36852 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     height: 190px;
@@ -664,7 +664,7 @@
 
 .inventoryControlsButton__6980e {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-xs);
     color: var(--header-primary);
     cursor: pointer;
@@ -741,4 +741,4 @@
     background-clip: padding-box
 }
 
-/*# sourceMappingURL=3689e7c4362b3f80.css.map*/
+/*# sourceMappingURL=1cc6a2ba3b0cafba.css.map*/

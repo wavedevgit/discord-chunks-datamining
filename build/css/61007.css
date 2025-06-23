@@ -1,6 +1,6 @@
 /**
   Module ID: 61007
-  Original File Name: fcd0b0890ff0cecf
+  Original File Name: d0687b9adff785e3
 **/
 .header__9f397 {
     padding: 24px 16px 0
@@ -308,7 +308,7 @@
 
 .rowContainer__991a0 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     cursor: pointer;
     display: flex;
@@ -356,4 +356,4 @@
     }
 }
 
-/*# sourceMappingURL=fcd0b0890ff0cecf.css.map*/
+/*# sourceMappingURL=d0687b9adff785e3.css.map*/

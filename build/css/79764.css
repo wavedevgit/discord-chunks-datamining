@@ -1,6 +1,6 @@
 /**
   Module ID: 79764
-  Original File Name: 9f17c3e993b528e1
+  Original File Name: 02c2c009eb01a6a5
 **/
 .iconContainer__98cf7 {
     filter: saturate(var(--saturation-factor,1));
@@ -91,7 +91,7 @@
 
 .tabBar__66057 {
     align-items: center;
-    border-bottom: 2px solid var(--background-modifier-accent);
+    border-bottom: 2px solid var(--border-subtle);
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -124,8 +124,8 @@
 
 .guildRow__66057 {
     align-items: center;
-    background-color: var(--background-primary);
-    border: 1px solid var(--background-modifier-accent);
+    background-color: var(--background-base-low);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     display: flex;
     flex-direction: row;
@@ -329,4 +329,4 @@
     }
 }
 
-/*# sourceMappingURL=9f17c3e993b528e1.css.map*/
+/*# sourceMappingURL=02c2c009eb01a6a5.css.map*/

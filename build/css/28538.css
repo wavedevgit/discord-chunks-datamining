@@ -1,6 +1,6 @@
 /**
   Module ID: 28538
-  Original File Name: fcf8132f15a5398f
+  Original File Name: 0d1890a216a765c5
 **/
 .container__750de {
     min-height: 160px;
@@ -41,7 +41,7 @@
 }
 
 .accountBtnInner__750de {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: none
 }
 
@@ -64,7 +64,7 @@
 
 .application__750de {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     display: flex;
     gap: 12px;
@@ -96,4 +96,4 @@
     white-space: nowrap
 }
 
-/*# sourceMappingURL=fcf8132f15a5398f.css.map*/
+/*# sourceMappingURL=0d1890a216a765c5.css.map*/

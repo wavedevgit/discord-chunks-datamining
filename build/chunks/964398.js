@@ -1,6 +1,6 @@
 /** Chunk was on 40814 **/
 n.d(t, {
-  Z: () => y
+  Z: () => O
 }), n(388685), n(415506);
 var r = n(255367),
   l = n(73800),
@@ -100,12 +100,12 @@ let g = (e, t) => {
       y: Math.max(l * Math.sin(2 * Math.PI * r / 360), 0)
     }
   },
-  y = l.memo(function(e) {
+  O = l.memo(function(e) {
     let {
       wheelWidth: t,
       wheelHeight: n,
-      itemWidth: y,
-      itemHeight: O,
+      itemWidth: O,
+      itemHeight: y,
       showDeadZoneIndicator: b,
       activeItem: N,
       onItemSelect: m,
@@ -172,20 +172,20 @@ let g = (e, t) => {
     }, [x, P, R, U, k]), F = l.useMemo(() => R[P].map((e, l) => {
       let i = f[l];
       if (null == i) throw Error("Too many items supplied ".concat(C.length, " expected max of ").concat(f.length));
-      let o = p(i.x, t, y),
-        a = p(i.y, n, O);
+      let o = p(i.x, t, O),
+        a = p(i.y, n, y);
       return (0, r.jsx)("div", {
         ref: e => D(e, l),
         className: u.chatWheelItem,
         style: {
           left: o,
           top: a,
-          width: y,
-          height: O
+          width: O,
+          height: y
         },
         children: e
       }, l)
-    }), [R, P, t, y, n, O, C.length, D]);
+    }), [R, P, t, O, n, y, C.length, D]);
     return (0, r.jsx)(a.P3F, {
       className: u.chatWheelMouseInput,
       onMouseMove: G,

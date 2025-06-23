@@ -1,6 +1,6 @@
 /**
   Module ID: 40390
-  Original File Name: 319f4338f38ac014
+  Original File Name: 680430562a86f8d4
 **/
 .headerContainer__56d15 {
     align-items: center;
@@ -18,8 +18,8 @@
 
 .statusContainer__56d15 {
     align-items: center;
-    background-color: var(--background-primary);
-    border: 3px solid var(--background-primary);
+    background-color: var(--background-base-low);
+    border: 3px solid var(--background-base-low);
     border-radius: 50%;
     bottom: -4px;
     display: flex;
@@ -43,4 +43,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=319f4338f38ac014.css.map*/
+/*# sourceMappingURL=680430562a86f8d4.css.map*/

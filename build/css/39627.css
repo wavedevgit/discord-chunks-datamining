@@ -1,6 +1,6 @@
 /**
   Module ID: 39627
-  Original File Name: 5826e7a9f44bbe95
+  Original File Name: d9d11442ca700bad
 **/
 .modal__45314 {
     border-radius: var(--radius-sm)
@@ -23,7 +23,7 @@
 
 .acronym__45314 {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 50%;
     color: var(--text-normal);
     display: flex;
@@ -53,7 +53,7 @@
 }
 
 .tableContainer__45314 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--border-faint);
     border-radius: var(--radius-xs);
     display: flex;
@@ -96,4 +96,4 @@
     gap: 4px
 }
 
-/*# sourceMappingURL=5826e7a9f44bbe95.css.map*/
+/*# sourceMappingURL=d9d11442ca700bad.css.map*/

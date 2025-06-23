@@ -1,6 +1,6 @@
 /**
   Module ID: 7463
-  Original File Name: b8f41fd3af37c93d
+  Original File Name: 7226a769e1de4fb3
 **/
 .left_caab99 {
     transform: rotate(270deg)
@@ -53,7 +53,7 @@
 }
 
 .role__09ccc:hover {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .role__09ccc.disabled__09ccc {
@@ -450,7 +450,7 @@
 
 .replyBadge_c19a55 {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     color: var(--header-secondary);
     display: flex;
     justify-content: center
@@ -474,7 +474,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55>span {
-    background: var(--bg-mod-strong);
+    background: var(--background-mod-strong);
     border-radius: 4px;
     padding: 1px 4px 0
 }
@@ -484,7 +484,7 @@
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55:hover>span {
-    background: var(--bg-mod-faint)
+    background: var(--background-mod-faint)
 }
 
 .ticketIcon_c19a55,.userJoinSystemMessageIcon_c19a55 {
@@ -736,7 +736,7 @@
 }
 
 .avatar_c19a55:before {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     content: "";
     display: block;
     height: 100%;
@@ -1256,8 +1256,8 @@
 }
 
 .formFieldWrapper_d48a51 {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary)
+    background-color: var(--background-base-lower);
+    border: 1px solid var(--background-base-lowest)
 }
 
 .verificationFieldWrapper_d48a51 {
@@ -1277,7 +1277,7 @@
 }
 
 .verificationCheckmark_d48a51 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     height: 16px;
     margin-right: 8px;
     width: 16px
@@ -1291,7 +1291,7 @@
 
 .termsRow_d48a51 {
     align-items: flex-start;
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     display: flex;
     padding: 16px 4px
 }
@@ -1333,11 +1333,11 @@
 }
 
 .radioItem_d48a51 {
-    border: 1px solid var(--background-modifier-accent)
+    border: 1px solid var(--border-subtle)
 }
 
 .disabledFieldBackground_d48a51 {
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
 .termsFieldBody_d48a51 {
@@ -1375,7 +1375,7 @@
 }
 
 .multipleChoiceItem_d48a51 {
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--background-mod-subtle)
 }
 
-/*# sourceMappingURL=b8f41fd3af37c93d.css.map*/
+/*# sourceMappingURL=7226a769e1de4fb3.css.map*/

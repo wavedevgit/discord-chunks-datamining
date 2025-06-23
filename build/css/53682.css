@@ -1,6 +1,6 @@
 /**
   Module ID: 53682
-  Original File Name: 6cc7898da5dbd5c8
+  Original File Name: b649fb41624c7450
 **/
 .previewContainer__9a244 {
     align-items: center;
@@ -221,7 +221,7 @@
 
 .command__506b8 {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -242,4 +242,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=6cc7898da5dbd5c8.css.map*/
+/*# sourceMappingURL=b649fb41624c7450.css.map*/

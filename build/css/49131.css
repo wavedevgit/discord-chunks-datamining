@@ -1,6 +1,6 @@
 /**
   Module ID: 49131
-  Original File Name: b0da9feb34b78223
+  Original File Name: 0b05e0016fa07da7
 **/
 .container_fc958f {
     padding: 0
@@ -70,7 +70,7 @@
 }
 
 .container_c6ad88 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 12px;
     color: var(--interactive-normal);
     display: block;
@@ -83,7 +83,7 @@
 
 .headerRow_c6ad88 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 12px 12px 0 0;
     display: flex;
     justify-content: flex-end;
@@ -133,7 +133,7 @@
 }
 
 .contentMediaContainer_c6ad88 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 12px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -239,7 +239,7 @@
 }
 
 .videoPreview_c6ad88 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 12px;
     display: flex;
     flex: 1;
@@ -317,7 +317,7 @@
 }
 
 .reactionBox_c6ad88 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     gap: 5px;
     height: 24px;
@@ -422,7 +422,7 @@
 
 .container__93db4 {
     align-items: center;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: var(--radius-md);
     box-sizing: border-box;
     display: flex;
@@ -439,7 +439,7 @@
 }
 
 .icon__93db4 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 80px;
     color: var(--interactive-normal);
     display: inline-block;
@@ -529,7 +529,7 @@
 
 .stepContainer_a68543 {
     align-items: start;
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-radius: var(--radius-sm);
     color: var(--header-secondary);
     cursor: pointer;
@@ -580,7 +580,7 @@
 
 .rolePill_a68543 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border: 1px solid var(--border-subtle);
     display: flex;
     height: inherit;
@@ -676,12 +676,12 @@
 }
 
 .gradient_ca49a1 {
-    background: linear-gradient(to top,var(--background-secondary),transparent);
+    background: linear-gradient(to top,var(--background-base-lower),transparent);
     height: 28px
 }
 
 .linkContainer_ca49a1 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     display: flex;
     justify-content: flex-end;
     width: 100%
@@ -845,7 +845,7 @@
 
 .sortContainer_f369db {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border: none;
     border-radius: 50%;
     display: flex;
@@ -900,7 +900,7 @@
 
 .newPostsButton_f369db {
     background-color: var(--background-surface-high);
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 36px;
     bottom: 16px;
     box-shadow: var(--elevation-high);
@@ -915,7 +915,7 @@
 }
 
 .loadingCard_f369db {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: var(--radius-md);
     height: 102px;
     margin-bottom: 8px
@@ -965,7 +965,7 @@
 
 .missingReadHistoryPermission_f369db {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-xs);
     display: flex;
     height: 40px;
@@ -975,7 +975,7 @@
 }
 
 .divider_f369db {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: var(--radius-xs);
     height: 24px;
     margin: 0 12px;
@@ -1009,7 +1009,7 @@
 }
 
 .tagsButton_f369db {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 20px;
     height: 32px;
     justify-content: flex-start;
@@ -1038,7 +1038,7 @@
 
 .sortDropdown_f369db {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-xl);
     display: flex;
     gap: 4px;
@@ -1183,7 +1183,7 @@
 
 .separator__56dee {
     align-self: stretch;
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border: 0;
     height: 1px;
     margin: 12px -12px
@@ -1243,7 +1243,7 @@
 
 .popout__94439 {
     background-color: var(--background-surface-high);
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-lg);
     box-shadow: var(--elevation-medium);
     display: flex;
@@ -1268,7 +1268,7 @@
 .badge__94439 {
     align-items: center;
     background-color: var(--brand-500);
-    border: 2px solid var(--background-primary);
+    border: 2px solid var(--background-base-low);
     border-radius: var(--radius-lg);
     color: var(--white-500);
     display: flex;
@@ -1284,7 +1284,7 @@
 }
 
 .container__16689 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     padding-bottom: 16px;
     padding-left: var(--custom-media-post-attachments-horizontal-padding);
     padding-right: var(--custom-media-post-attachments-horizontal-padding);
@@ -1303,7 +1303,7 @@
 }
 
 .thumbnailContainer__8bb30 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px;
     position: relative
 }
@@ -1326,7 +1326,7 @@
 
 .uploadFileInputContainer__8bb30 {
     border-radius: 8px;
-    color: var(--background-secondary);
+    color: var(--background-base-lower);
     display: flex;
     height: 100%;
     position: relative;
@@ -1456,7 +1456,7 @@
 }
 
 .separator__5808f {
-    border-top: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--border-subtle);
     font-size: 0;
     margin: 0 4px 8px
 }
@@ -1515,7 +1515,7 @@
 }
 
 .previewForm_d9be46 {
-    background: var(--background-modifier-accent);
+    background: var(--border-subtle);
     border: 1px solid var(--background-modifier-selected);
     border-radius: 8px;
     margin-bottom: 12px;
@@ -1794,7 +1794,7 @@
 }
 
 .tagsDivider_d9be46 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     height: 1px;
     left: -12px;
     position: relative;
@@ -1921,7 +1921,7 @@
 }
 
 .bullet__9a337 {
-    color: var(--background-modifier-accent);
+    color: var(--border-subtle);
     line-height: 24px
 }
 
@@ -1935,8 +1935,8 @@
 }
 
 .dots__9a337 {
-    background-color: var(--background-tertiary);
-    border: 3px solid var(--background-primary);
+    background-color: var(--background-base-lowest);
+    border: 3px solid var(--background-base-low);
     border-radius: var(--radius-md);
     height: 16px;
     justify-content: center;
@@ -2013,7 +2013,7 @@
 }
 
 .container__9a337:hover .dots__9a337 {
-    border-color: var(--background-primary)
+    border-color: var(--background-base-low)
 }
 
 .container__9a337:active {
@@ -2123,8 +2123,8 @@
 }
 
 .contentPreview__9a337 {
-    background-color: var(--background-primary);
-    border: 1px solid var(--background-modifier-accent);
+    background-color: var(--background-base-low);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     box-sizing: border-box;
     margin: 0 12px;
@@ -2243,7 +2243,7 @@
 }
 
 .container_f8b2d2 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: var(--radius-sm);
     box-shadow: var(--elevation-medium);
     width: 180px
@@ -2253,4 +2253,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=b0da9feb34b78223.css.map*/
+/*# sourceMappingURL=0b05e0016fa07da7.css.map*/

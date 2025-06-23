@@ -1,6 +1,6 @@
 /**
   Module ID: 50331
-  Original File Name: ebe84b931f44db61
+  Original File Name: cb1d19da2dd39c53
 **/
 .mainChannelContainer__3e027 {
     align-items: stretch;
@@ -15,7 +15,7 @@
 .enableAlertsContainer__3e027 {
     align-items: center;
     background-color: var(--background-secondary-alt);
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -28,7 +28,7 @@
 }
 
 .enableAlertsContainer__3e027:hover {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--background-modifier-hover)
 }
 
@@ -38,13 +38,13 @@
 
 .channelSelect__3e027 {
     background-color: var(--background-secondary-alt)!important;
-    border: 1px solid var(--background-modifier-accent)!important;
+    border: 1px solid var(--border-subtle)!important;
     transition: background-color .1s,border-color .1s
 }
 
 .channelSelect__3e027:hover {
-    background-color: var(--background-secondary)!important;
+    background-color: var(--background-base-lower)!important;
     border: 1px solid var(--background-modifier-hover)!important
 }
 
-/*# sourceMappingURL=ebe84b931f44db61.css.map*/
+/*# sourceMappingURL=cb1d19da2dd39c53.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: a3ae1454ab29cb92
+  Original File Name: 23ced08ff475148c
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -59,7 +59,7 @@
 }
 
 .shopWrapper__6db1d {
-    background: var(--background-primary);
+    background: var(--background-base-low);
     overflow-y: scroll;
     position: relative;
     width: 100%
@@ -100,7 +100,7 @@
 
 .pageWrapper__6db1d {
     align-items: stretch;
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     justify-content: center;
     position: relative
 }
@@ -168,7 +168,7 @@
 }
 
 .shopScroll__6db1d {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     height: 100%
 }
 
@@ -242,7 +242,7 @@
 }
 
 .paginationContainer__6db1d {
-    border-top: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--border-subtle);
     display: flex;
     justify-content: center;
     margin-bottom: 0;
@@ -292,7 +292,7 @@
 }
 
 .bannerBody__72fa0,.cardBody__72fa0 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-lg);
     display: flex;
     height: inherit
@@ -304,7 +304,7 @@
 }
 
 .cardAvatar__72fa0 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: 50%;
     height: 96px;
     margin-top: 32px;
@@ -317,7 +317,7 @@
 }
 
 .cardDescription__72fa0,.cardTitle__72fa0 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: var(--radius-sm);
     height: 16px
 }
@@ -328,7 +328,7 @@
 }
 
 .cardSummary__72fa0 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     border-radius: var(--radius-sm);
     height: 32px;
     margin-bottom: 16px;
@@ -337,7 +337,7 @@
 }
 
 .shopCard_c3d04b {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border: 1px solid var(--border-subtle);
     border-radius: 16px;
     box-shadow: none;
@@ -417,11 +417,11 @@
 }
 
 .darkCardBackground_c3d04b {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .lightCardBackground_c3d04b {
-    background: var(--background-primary)
+    background: var(--background-base-low)
 }
 
 .description_c3d04b {
@@ -619,7 +619,7 @@
 }
 
 .nameplatePlaceholderAvatar_c3d04b {
-    background-color: var(--background-modifier-accent)
+    background-color: var(--border-subtle)
 }
 
 .placeholderItem_c3d04b {
@@ -629,7 +629,7 @@
 }
 
 .placeholderBar_c3d04b {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border-radius: 8px;
     flex-grow: 1;
     height: 14px;
@@ -827,7 +827,7 @@
 
 .colorSwatch__6f029 {
     align-items: center;
-    border: 2px solid var(--background-tertiary);
+    border: 2px solid var(--background-base-lowest);
     border-radius: var(--radius-round);
     display: flex;
     flex-direction: row;
@@ -885,7 +885,7 @@
 }
 
 .minimalState__6f029 .colorSwatch__6f029 {
-    border: 1px solid var(--background-tertiary);
+    border: 1px solid var(--background-base-lowest);
     height: 11px;
     left: 0;
     top: 0;
@@ -911,7 +911,7 @@
 }
 
 .theme-light .colorSwatch__6f029 {
-    border-color: var(--background-primary)
+    border-color: var(--background-base-low)
 }
 
 .theme-light .alternativeColor__6f029 .colorSwatch__6f029 {
@@ -1216,7 +1216,7 @@
 .shop__08415 {
     --custom-spacing: 16px;
     --custom-gap: 24px;
-    background: var(--background-primary);
+    background: var(--background-base-low);
     background-color: var(--background-base-lower);
     overflow-x: hidden;
     overflow-y: auto;
@@ -1635,7 +1635,7 @@
 }
 
 .skeletonBody__08415 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-lg);
     display: flex;
     height: inherit;
@@ -1650,7 +1650,7 @@
 }
 
 .wideBannerBackgroundImg__08415 {
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: var(--radius-lg);
     display: flex;
     justify-content: center;
@@ -1777,4 +1777,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=a3ae1454ab29cb92.css.map*/
+/*# sourceMappingURL=23ced08ff475148c.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 89839
-  Original File Name: adbd76dbcf8332e2
+  Original File Name: a91c956c35aba73c
 **/
 .container_a92dc5 {
     align-items: center;
@@ -93,8 +93,8 @@
 }
 
 .earnedBadge_a92dc5 {
-    background-color: var(--bg-mod-strong);
-    border: 1px solid var(--bg-mod-strong);
+    background-color: var(--background-mod-strong);
+    border: 1px solid var(--background-mod-strong);
     border-radius: var(--radius-md);
     margin: calc(var(--spacing-12)*-1);
     padding: var(--spacing-12)
@@ -105,4 +105,4 @@
     max-width: 100px
 }
 
-/*# sourceMappingURL=adbd76dbcf8332e2.css.map*/
+/*# sourceMappingURL=a91c956c35aba73c.css.map*/

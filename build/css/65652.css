@@ -1,6 +1,6 @@
 /**
   Module ID: 65652
-  Original File Name: 300b7d20a360fc44
+  Original File Name: 0b730fb56fb5dd35
 **/
 .modalContent__2379f {
     margin-bottom: var(--spacing-16);
@@ -52,7 +52,7 @@
 }
 
 .policyContainer__3847f {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     margin-bottom: 8px;
     padding: 16px
@@ -117,7 +117,7 @@
 
 .childButton__3ed08 {
     align-items: center;
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -192,4 +192,4 @@
     }
 }
 
-/*# sourceMappingURL=300b7d20a360fc44.css.map*/
+/*# sourceMappingURL=0b730fb56fb5dd35.css.map*/

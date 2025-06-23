@@ -1,6 +1,6 @@
 /**
   Module ID: 46923
-  Original File Name: 6f014cae94c40993
+  Original File Name: 79cfc2171e921cb1
 **/
 .content__50a6f {
     align-items: center;
@@ -29,7 +29,7 @@
 }
 
 .applicationSearch__50a6f {
-    border-top: 1px solid var(--background-modifier-accent);
+    border-top: 1px solid var(--border-subtle);
     padding-top: 20px
 }
 
@@ -47,7 +47,7 @@
 }
 
 .gameSuggestionRadioItem__50a6f:hover {
-    background-color: var(--background-modifier-accent)
+    background-color: var(--border-subtle)
 }
 
 .otherFeedbackInput__50a6f {
@@ -95,4 +95,4 @@
     color: hsla(0,0%,100%,.85)
 }
 
-/*# sourceMappingURL=6f014cae94c40993.css.map*/
+/*# sourceMappingURL=79cfc2171e921cb1.css.map*/

@@ -1,7 +1,7 @@
 /** Chunk was on 98787 **/
 n.d(t, {
   NQ: () => m,
-  U1: () => O,
+  U1: () => y,
   XW: () => u,
   _J: () => g,
   aP: () => p,
@@ -9,7 +9,7 @@ n.d(t, {
   h6: () => b,
   oE: () => h,
   pB: () => d,
-  y: () => y,
+  y: () => O,
   yS: () => _
 });
 var r = n(97519),
@@ -122,6 +122,6 @@ let u = (0, r.U)(e => ({
   g = () => u.getState().guildId,
   m = () => u.getState().touched,
   b = () => u.getState().dmsAllowed,
-  y = () => u.getState().nickname,
-  O = () => u.getState().showActivity,
+  O = () => u.getState().nickname,
+  y = () => u.getState().showActivity,
   _ = () => u.getState().mutedServer

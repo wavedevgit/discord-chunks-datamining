@@ -1,6 +1,6 @@
 /**
   Module ID: 44044
-  Original File Name: 37e384cd3df05ee0
+  Original File Name: 506699615836a817
 **/
 .iconContainer__98cf7 {
     filter: saturate(var(--saturation-factor,1));
@@ -58,7 +58,7 @@
 }
 
 .usagePill__8d70a {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 16px;
     font-size: 14px;
     margin-top: 16px;
@@ -98,7 +98,7 @@
 }
 
 .divider__5c799 {
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     margin: 24px 0
 }
 
@@ -107,7 +107,7 @@
 }
 
 .channelsWrapper__5c799,.rolesWrapper__5c799 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 8px
 }
 
@@ -116,7 +116,7 @@
 }
 
 .protipText__5c799 {
-    color: var(--text-positive);
+    color: var(--text-feedback-positive);
     font-weight: 600;
     text-transform: uppercase
 }
@@ -208,7 +208,7 @@
 }
 
 .usagePill__74f72 {
-    background-color: var(--background-primary);
+    background-color: var(--background-base-low);
     display: inline-block
 }
 
@@ -222,7 +222,7 @@
 }
 
 .ctaSection_fc200b {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     border-top-left-radius: 5px;
     justify-content: center;
     min-height: 450px
@@ -236,7 +236,7 @@
 }
 
 .formSection_fc200b {
-    background: var(--background-primary);
+    background: var(--background-base-low);
     border-top-right-radius: 5px;
     position: relative
 }
@@ -253,7 +253,7 @@
 }
 
 .modalRoot_fc200b .modalFooter_fc200b {
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     flex-direction: row;
     justify-content: space-between
 }
@@ -264,4 +264,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=37e384cd3df05ee0.css.map*/
+/*# sourceMappingURL=506699615836a817.css.map*/

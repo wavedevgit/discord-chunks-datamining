@@ -1,6 +1,6 @@
 /**
   Module ID: 78786
-  Original File Name: 47f8b25cdc23d4b2
+  Original File Name: 30695df7fcd82845
 **/
 .headerDescription_ababa2 {
     margin-left: 14px
@@ -11,12 +11,12 @@
 }
 
 .modalBody_ababa2 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     padding-top: 16px
 }
 
 .modalFooter_ababa2 {
-    background-color: var(--background-tertiary)!important
+    background-color: var(--background-base-lowest)!important
 }
 
 .modalHeader_ababa2 {
@@ -28,4 +28,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=47f8b25cdc23d4b2.css.map*/
+/*# sourceMappingURL=30695df7fcd82845.css.map*/

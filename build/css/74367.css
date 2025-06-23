@@ -1,6 +1,6 @@
 /**
   Module ID: 74367
-  Original File Name: 03952bf6e5e40384
+  Original File Name: 23f9630939732cc1
 **/
 .container__5537c {
     display: flex;
@@ -41,7 +41,7 @@
 }
 
 .container__03b47 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@
 }
 
 .content__03b47 {
-    border-bottom: 1px solid var(--background-modifier-accent);
+    border-bottom: 1px solid var(--border-subtle);
     display: flex;
     flex-direction: row;
     padding: 12px
@@ -222,7 +222,7 @@
 }
 
 .eventStatusGreen__29021 {
-    color: var(--text-positive)
+    color: var(--text-feedback-positive)
 }
 
 .eventStatusBrand__29021 {
@@ -285,7 +285,7 @@
 
 .rsvpCount_b5010b {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 12px;
     display: flex;
     flex-shrink: 0;
@@ -352,11 +352,11 @@
 }
 
 .container__04119:hover:not(.canceled__04119) {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .container__04119.active__04119,.container__04119:hover.active__04119 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .timeStatus__04119 {
@@ -488,7 +488,7 @@
 }
 
 .iconMicrophone__28d93,.speakerCount__28d93 {
-    background-color: var(--background-tertiary)
+    background-color: var(--background-base-lowest)
 }
 
 .iconMicrophone__28d93 {
@@ -521,7 +521,7 @@
 
 .card__88264 {
     background-color: var(--background-mod-subtle);
-    border: 1px solid var(--background-secondary);
+    border: 1px solid var(--background-base-lower);
     border-color: var(--border-subtle);
     border-radius: 8px;
     cursor: pointer;
@@ -606,7 +606,7 @@
 }
 
 .divider__88264 {
-    background-color: var(--background-modifier-accent);
+    background-color: var(--border-subtle);
     border: none;
     height: 1px;
     margin: 16px -16px 12px
@@ -1005,7 +1005,7 @@
 }
 
 .textInput__97cfe {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: 4px;
     margin-bottom: 8px
 }
@@ -1284,7 +1284,7 @@
 }
 
 .footer__67dba {
-    background-color: var(--background-secondary)
+    background-color: var(--background-base-lower)
 }
 
 .copied__67dba {
@@ -1407,7 +1407,7 @@
 
 .iconContainer_a2844c {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -1473,4 +1473,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=03952bf6e5e40384.css.map*/
+/*# sourceMappingURL=23f9630939732cc1.css.map*/

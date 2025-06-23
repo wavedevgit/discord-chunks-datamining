@@ -1,10 +1,10 @@
 /**
   Module ID: 79988
-  Original File Name: 0eafc8dca6e68e61
+  Original File Name: fab8b1053b55ca7f
 **/
 .searchBar__3e00d {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-base-lower);
+    border: 1px solid var(--background-base-lowest);
     margin-bottom: 8px
 }
 
@@ -354,4 +354,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=0eafc8dca6e68e61.css.map*/
+/*# sourceMappingURL=fab8b1053b55ca7f.css.map*/

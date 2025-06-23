@@ -18,8 +18,8 @@ var r = n(255367),
   g = n(340541),
   m = n(159300),
   b = n(210887),
-  y = n(695346),
-  O = n(496675),
+  O = n(695346),
+  y = n(496675),
   _ = n(768581),
   v = n(358555),
   C = n(981631),
@@ -70,7 +70,7 @@ function N(e) {
     animate: u
   } = e, {
     value: d
-  } = l.springs, h = y.QK.getSetting();
+  } = l.springs, h = O.QK.getSetting();
   return (0, r.jsx)(s.animated.div, {
     className: E.animatedContainer,
     style: {
@@ -239,8 +239,8 @@ function L(e) {
         })
       })
     }
-  }, [l, p]), y = (0, c.e7)([O.Z], () => (0, m.b)(O.Z, l)), _ = i.useCallback(() => {
-    y ? (0, u.ZDy)(async () => {
+  }, [l, p]), O = (0, c.e7)([y.Z], () => (0, m.b)(y.Z, l)), _ = i.useCallback(() => {
+    O ? (0, u.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
@@ -254,7 +254,7 @@ function L(e) {
       } = await n.e("88358").then(n.bind(n, 598402));
       return t => (0, r.jsx)(e, P({}, t))
     })
-  }, [y, l]);
+  }, [O, l]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.KeG, {
       targetElementRef: h,
@@ -327,7 +327,7 @@ let M = i.memo(function(e) {
     onMouseDown: f,
     disableBannerAnimation: m,
     "aria-expanded": b,
-    "aria-controls": O,
+    "aria-controls": y,
     guild: v,
     guildBanner: j,
     animationOverlayHeight: S,
@@ -335,7 +335,7 @@ let M = i.memo(function(e) {
     headerClassName: Z,
     communityInfoVisible: T,
     hasSubheader: A
-  } = e, D = v.hasFeature(C.oNc.ANIMATED_BANNER), M = (0, p.Z)(v), U = !M && v.hasCommunityInfoSubheader(), G = !M && T, B = (0, _.xR)(j) && D && !m, [V, H] = i.useState(!1), F = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(void 0), Y = y.QK.getSetting();
+  } = e, D = v.hasFeature(C.oNc.ANIMATED_BANNER), M = (0, p.Z)(v), U = !M && v.hasCommunityInfoSubheader(), G = !M && T, B = (0, _.xR)(j) && D && !m, [V, H] = i.useState(!1), F = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(void 0), Y = O.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !F.current && Y) return H(!0), K.current = setTimeout(() => {
       H(!1)
@@ -363,7 +363,7 @@ let M = i.memo(function(e) {
       guild: v,
       onClick: c,
       onContextMenu: d,
-      ariaControls: O,
+      ariaControls: y,
       ariaExpanded: b,
       guildHeaderRef: W
     };

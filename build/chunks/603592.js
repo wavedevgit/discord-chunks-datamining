@@ -20,8 +20,8 @@ let f = i.forwardRef(function(e, t) {
     onClick: g,
     onContextMenu: m,
     icon: b,
-    selected: y,
-    tooltip: O,
+    selected: O,
+    tooltip: y,
     upperBadge: _,
     lowerBadge: v,
     lowerBadgeSize: C,
@@ -38,13 +38,13 @@ let f = i.forwardRef(function(e, t) {
       className: p.pill,
       children: (0, r.jsx)(u.Z, {
         hovered: T,
-        selected: y
+        selected: O
       })
     }) : null, (0, r.jsx)(h.Z, {
-      text: O,
-      selected: y,
+      text: y,
+      selected: O,
       children: (0, r.jsx)(a.aRk, {
-        selected: !!w || y || T,
+        selected: !!w || O || T,
         upperBadge: _,
         lowerBadge: v,
         lowerBadgeSize: C,
@@ -75,11 +75,11 @@ let f = i.forwardRef(function(e, t) {
           },
           onMouseDown: N,
           className: o()(p.circleIconButton, S, {
-            [p.selected]: y || T
+            [p.selected]: O || T
           }),
           onClick: g,
-          "aria-label": "string" == typeof O && null == x ? O : x,
-          "aria-selected": y,
+          "aria-label": "string" == typeof y && null == x ? y : x,
+          "aria-selected": O,
           onContextMenu: m,
           focusProps: {
             enabled: !1
