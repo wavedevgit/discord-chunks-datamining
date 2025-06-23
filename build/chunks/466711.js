@@ -71,6 +71,7 @@ function P(e) {
     innerClassName: S.button,
     "aria-label": I.intl.string(I.t.Z1RnTk),
     isActive: !1,
+    noHover: !0,
     onClick: e.onClick,
     children: (0, r.jsx)("div", {
       className: T.iconContainer,
@@ -95,6 +96,7 @@ function w(e) {
     innerClassName: S.button,
     "aria-label": I.intl.string(I.t.Z1RnTk),
     isActive: !1,
+    noHover: !0,
     onClick: a
   }, n), {
     children: (0, r.jsxs)("div", {

@@ -104,10 +104,11 @@ function v(e) {
     "aria-label": w,
     "aria-expanded": D,
     "aria-haspopup": L,
-    "aria-controls": x
-  } = e, k = (0, u.Q3)("ChannelTextAreaButton"), M = (0, l.Yzy)(null != E, g(h({}, O), {
+    "aria-controls": x,
+    noHover: k
+  } = e, M = (0, u.Q3)("ChannelTextAreaButton"), j = (0, l.Yzy)(null != E, g(h({}, O), {
     keys: e => e ? "children" : "icon"
-  })), j = e => {
+  })), U = e => {
     let {
       component: t
     } = e;
@@ -116,8 +117,8 @@ function v(e) {
       children: [(0, r.jsx)(c.ZP, {
         className: _.iconMask,
         mask: c.QS.CHAT_INPUT_BUTTON_NOTIFICATION,
-        width: k ? y : b,
-        height: k ? y : b,
+        width: M ? y : b,
+        height: M ? y : b,
         children: t
       }), (0, r.jsx)("span", {
         className: _.notificationDot
@@ -136,7 +137,8 @@ function v(e) {
       [_.active]: I
     }),
     innerClassName: o()(_.button, i, {
-      [_.pulseButton]: C
+      [_.pulseButton]: C,
+      [_.noHover]: k
     }),
     onClick: v,
     onMouseEnter: T,
@@ -149,20 +151,20 @@ function v(e) {
         bottom: 4
       }
     },
-    children: [M((e, t, n) => {
+    children: [j((e, t, n) => {
       let {
         key: i
       } = n;
       return t ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: o()(_.buttonWrapper, a),
-        children: j({
+        children: U({
           component: E
         })
       }, i) : null != m ? (0, r.jsx)(s.animated.div, {
         style: e,
         className: o()(_.buttonWrapper, a),
-        children: j({
+        children: U({
           component: (0, r.jsx)(m, {
             className: o()(_.icon, p, {
               [_.pulseIcon]: C
