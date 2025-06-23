@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: e5760ed4800d3d3b
+  Original File Name: dc0843941e5d7b6f
 **/
 .scroller__95bea {
     display: flex;
@@ -116,8 +116,6 @@
 
 .note_fcb628 {
     margin: -4px
-}&:focus,&:focus:hover {
-    border-color: var(--input-focused-border)
 }
 
 .note_fcb628 textarea {
@@ -151,6 +149,10 @@
 
 .note_fcb628 textarea:focus::placeholder {
     color: transparent
+}
+
+.note_fcb628 textarea:focus:focus,.note_fcb628 textarea:focus:focus:hover {
+    border-color: var(--input-focused-border)
 }
 
 .scroller_ac477d {
@@ -555,6 +557,7 @@
 }
 
 .root__24502 {
+    border: none;
     border-radius: var(--radius-sm);
     max-height: unset;
     overflow: hidden;
@@ -739,6 +742,8 @@
 }
 
 .root_fdf9c0 {
+    border: none;
+    border-radius: var(--radius-lg);
     max-height: unset;
     overflow: hidden;
     position: relative;
@@ -1195,6 +1200,9 @@
 }
 
 .root__9c3be {
+    background: none;
+    border: none;
+    border-radius: var(--radius-lg);
     max-height: 100%;
     overflow: hidden;
     position: relative;
@@ -1318,8 +1326,6 @@
 
 .profileAppConnections__9c3be {
     margin-top: 4px
-}&:focus,&:focus:hover {
-    border-color: var(--input-focused-border)
 }
 
 .profileNote__9c3be {
@@ -1359,4 +1365,8 @@
     color: transparent
 }
 
-/*# sourceMappingURL=e5760ed4800d3d3b.css.map*/
+.profileNote__9c3be textarea:focus:focus,.profileNote__9c3be textarea:focus:focus:hover {
+    border-color: var(--input-focused-border)
+}
+
+/*# sourceMappingURL=dc0843941e5d7b6f.css.map*/

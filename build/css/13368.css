@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: a28958a86f6ded10
+  Original File Name: b4b3618d73315e72
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -2320,6 +2320,14 @@
     color: var(--primary-330)
 }
 
+.theme-dark.custom-theme-background.client-theme-color-picker .modeMuted__2ea32 .icon__2ea32,.theme-dark.custom-theme-background.client-theme-color-picker .modeMuted__2ea32 .name__2ea32 {
+    color: color-mix(in oklab,var(--text-muted) 40%,transparent)
+}
+
+.theme-dark.custom-theme-background.client-theme-color-picker .modeMuted__2ea32:hover .icon__2ea32,.theme-dark.custom-theme-background.client-theme-color-picker .modeMuted__2ea32:hover .name__2ea32 {
+    color: var(--interactive-hover)
+}
+
 .modeSelected__2ea32 .icon__2ea32,.modeSelected__2ea32:hover .icon__2ea32 {
     color: var(--channel-icon)
 }
@@ -3166,4 +3174,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=a28958a86f6ded10.css.map*/
+/*# sourceMappingURL=b4b3618d73315e72.css.map*/

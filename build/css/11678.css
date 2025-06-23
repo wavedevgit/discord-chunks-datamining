@@ -1,6 +1,6 @@
 /**
   Module ID: 11678
-  Original File Name: 42e3dfd4be1ab269
+  Original File Name: 6e8c3b005505d74b
 **/
 .scroller__95bea {
     display: flex;
@@ -116,8 +116,6 @@
 
 .note_fcb628 {
     margin: -4px
-}&:focus,&:focus:hover {
-    border-color: var(--input-focused-border)
 }
 
 .note_fcb628 textarea {
@@ -151,6 +149,10 @@
 
 .note_fcb628 textarea:focus::placeholder {
     color: transparent
+}
+
+.note_fcb628 textarea:focus:focus,.note_fcb628 textarea:focus:focus:hover {
+    border-color: var(--input-focused-border)
 }
 
 .scroller_ac477d {
@@ -555,6 +557,7 @@
 }
 
 .root__24502 {
+    border: none;
     border-radius: var(--radius-sm);
     max-height: unset;
     overflow: hidden;
@@ -739,6 +742,7 @@
 }
 
 .root__1f3e3 {
+    border: none;
     border-radius: var(--radius-sm);
     max-height: unset;
     overflow: hidden;
@@ -795,4 +799,4 @@
     gap: 8px
 }
 
-/*# sourceMappingURL=42e3dfd4be1ab269.css.map*/
+/*# sourceMappingURL=6e8c3b005505d74b.css.map*/
