@@ -22,7 +22,7 @@ class s {
     }, "Invalid Version: ".concat(e))
   }
   constructor(e, t, n) {
-    o(this, "transport", void 0), o(this, "version", void 0), o(this, "encoding", void 0), o(this, "id", void 0), o(this, "authorization", void 0), o(this, "application", void 0), this.transport = e, this.version = t, this.encoding = n, this.id = i().uniqueId(), this.authorization = {
+    o(this, "transport", void 0), o(this, "version", void 0), o(this, "encoding", void 0), o(this, "id", void 0), o(this, "authorization", void 0), o(this, "application", void 0), o(this, "abortController", void 0), this.transport = e, this.version = t, this.encoding = n, this.id = i().uniqueId(), this.authorization = {
       authing: !1,
       scopes: [],
       accessToken: null,
@@ -31,6 +31,6 @@ class s {
       id: null,
       name: null,
       icon: null
-    }, this.checkRpcVersion(t)
+    }, this.abortController = new AbortController, this.checkRpcVersion(t)
   }
 }
