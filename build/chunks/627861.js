@@ -74,6 +74,9 @@ function $(e) {
     partySize: c
   });
   let u = [...n];
+  for (; u.length < i;) u.push(new T.Z({
+    discriminator: "0005"
+  }));
   for (; u.length < l;) u.push(null);
   return (0, r.jsxs)("div", {
     className: J.partyStatusWrapper,

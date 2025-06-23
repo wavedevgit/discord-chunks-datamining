@@ -212,15 +212,17 @@ class D extends(r = l.PureComponent) {
   }
   getAnimatedStyle() {
     let {
-      opacity: e,
-      scale: t
+      baseLayer: e
+    } = this.props, {
+      opacity: t,
+      scale: n
     } = this.state, {
-      reducedMotion: n
+      reducedMotion: r
     } = this.context;
     return {
-      opacity: e,
-      transform: n.enabled ? void 0 : [{
-        scale: t
+      opacity: t,
+      transform: r.enabled || e ? void 0 : [{
+        scale: n
       }, {
         translateZ: 0
       }]
