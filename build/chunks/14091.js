@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(981631),
   w = n(531578),
   R = n(862825),
-  k = n(388032),
-  M = n(682065);
+  M = n(388032),
+  k = n(682065);
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -104,9 +104,9 @@ let B = e => {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: M.emptyResultsWrap,
+    className: k.emptyResultsWrap,
     children: (0, r.jsx)("div", {
-      className: M.emptyResultsContent,
+      className: k.emptyResultsContent,
       children: t
     })
   })
@@ -150,11 +150,11 @@ class F extends i.PureComponent {
       isSearching: c
     } = this.props.search;
     return (0, r.jsxs)("section", {
-      className: M.searchResultsWrap,
-      "aria-label": k.intl.string(k.t.zkoeq6),
+      className: k.searchResultsWrap,
+      "aria-label": M.intl.string(M.t.zkoeq6),
       children: [this.renderHeader(), (0, r.jsx)(u.Den, {
         ref: this.scrollerRef,
-        className: M.scroller,
+        className: k.scroller,
         children: this.renderContent()
       }), this.renderFooter(), (0, r.jsx)(U, {
         searchId: i,
@@ -245,35 +245,35 @@ class F extends i.PureComponent {
         documentsIndexed: l
       })
     }), L(this, "renderIndexing", () => {
-      let e = x.Z.getSearchType(this.props.searchId) === A.aib.GUILD ? k.intl.string(k.t.AXPbZm) : k.intl.string(k.t.Q0JJjo);
+      let e = x.Z.getSearchType(this.props.searchId) === A.aib.GUILD ? M.intl.string(M.t.AXPbZm) : M.intl.string(M.t.Q0JJjo);
       return (0, r.jsxs)(B, {
         children: [(0, r.jsx)(Z.Z, {}), (0, r.jsx)("div", {
-          className: (M.emptyResultsText, M.stillIndexing),
+          className: (k.emptyResultsText, k.stillIndexing),
           children: e
         })]
       })
     }), L(this, "renderNoResults", () => {
       let {
         showNoResultsAlt: e
-      } = this.props.search, t = e ? k.intl.string(k.t["VrK/2d"]) : k.intl.string(k.t.V6nAfH);
+      } = this.props.search, t = e ? M.intl.string(M.t["VrK/2d"]) : M.intl.string(M.t.V6nAfH);
       return (0, r.jsxs)(B, {
         children: [(0, r.jsx)("div", {
-          className: a()(M.noResultsImage, {
-            [M.alt]: e
+          className: a()(k.noResultsImage, {
+            [k.alt]: e
           })
         }), (0, r.jsx)("div", {
-          className: a()(M.emptyResultsText, M.noResults, {
-            [M.alt]: e
+          className: a()(k.emptyResultsText, k.noResults, {
+            [k.alt]: e
           }),
           children: t
         })]
       })
     }), L(this, "renderError", () => (0, r.jsxs)(B, {
       children: [(0, r.jsx)("div", {
-        className: M.errorImage
+        className: k.errorImage
       }), (0, r.jsx)("div", {
-        className: a()(M.emptyResultsText, M.errorMessage),
-        children: k.intl.string(k.t.uvDZBQ)
+        className: a()(k.emptyResultsText, k.errorMessage),
+        children: M.intl.string(M.t.uvDZBQ)
       })]
     })), L(this, "handleSearchResultClick", (e, t) => {
       let n = C.Z.getChannel(e.channel_id),

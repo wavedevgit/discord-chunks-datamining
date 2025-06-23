@@ -22,7 +22,7 @@ function u(e) {
     userCount: h,
     onClick: f,
     highlight: m
-  } = e, g = (0, o.Q3)("GuildEventPrompt"), b = (0, a._q$)("GuildEventPrompt");
+  } = e, g = (0, o.Q3)("GuildEventPrompt");
   return (0, r.jsxs)(a.P3F, {
     className: l()(c.container, t, null != m && {
       [c.pulse]: m
@@ -38,22 +38,22 @@ function u(e) {
       className: c.textContainer,
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-md/semibold",
-        color: b ? "text-primary" : "header-secondary",
+        color: "text-primary",
         children: d
       }), (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
-        color: b ? "text-primary" : "header-secondary",
+        color: "text-primary",
         className: c.inline,
         children: p
       }), null != h && h > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
-          color: b ? "text-primary" : "header-secondary",
+          color: "text-primary",
           className: c.dot,
           children: "•"
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
-          color: b ? "text-primary" : "header-secondary",
+          color: "text-primary",
           className: c.inline,
           children: s.intl.format(s.t.NywdIi, {
             count: h

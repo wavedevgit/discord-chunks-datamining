@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(403404),
   w = n(981631),
   R = n(388032),
-  k = n(210408);
-let M = c.Y.APP_LAUNCHER_IN_VOICE_BANNER,
+  M = n(210408);
+let k = c.Y.APP_LAUNCHER_IN_VOICE_BANNER,
   L = "vc-activities-".concat((0, o.Z)());
 
 function D(e) {
@@ -52,16 +52,16 @@ function D(e) {
       let e = (0, d.e7)([E.default], () => E.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE;
       return i.useEffect(() => {
         (0, x.XK)({
-          surface: M,
+          surface: k,
           activeState: e
         })
       }, [e]), {
         fetchState: (0, d.e7)([v.Z], () => v.Z.getFetchState({
-          surface: M,
+          surface: k,
           activeState: e
         })),
         voiceBannerCollection: (0, d.e7)([v.Z], () => v.Z.getCollections({
-          surface: M,
+          surface: k,
           activeState: e
         }))[0]
       }
@@ -86,7 +86,7 @@ function D(e) {
     hash: g.image_hash,
     containerWidth: 584
   })), (0, r.jsxs)(p.P3F, {
-    className: k.clickableBanner,
+    className: M.clickableBanner,
     innerRef: C,
     onClick: () => {
       o(), (0, y.Z)({
@@ -104,9 +104,9 @@ function D(e) {
     children: [(0, r.jsx)("img", {
       alt: g.description,
       src: n,
-      className: k.poster
+      className: M.poster
     }), (0, r.jsx)("div", {
-      className: k.posterDivider
+      className: M.posterDivider
     })]
   }))
 }
@@ -136,7 +136,7 @@ let U = i.forwardRef(function(e, t) {
     {
       analyticsLocations: E
     } = (0, g.ZP)(m.Z.ACTIVITIES_MINI_SHELF),
-    M = j === w.IlC.POPOUT,
+    k = j === w.IlC.POPOUT,
     U = (n = l.getGuildId(), (0, Z.Z)({
       guildId: n
     }).slice(0, 5));
@@ -153,10 +153,10 @@ let U = i.forwardRef(function(e, t) {
   }), F = i.useCallback(() => {
     (0, A.Z)({
       channel: l,
-      openInPopout: M,
+      openInPopout: k,
       analyticsLocations: E
     }), u(), b()
-  }, [E, l, b, u, M]), G = i.useCallback(e => {
+  }, [E, l, b, u, k]), G = i.useCallback(e => {
     c(), I.default.track(w.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: l.id,
       guild_id: l.getGuildId()
@@ -178,23 +178,23 @@ let U = i.forwardRef(function(e, t) {
             })
           })
         }), (0, r.jsxs)("div", {
-          className: k.container,
+          className: M.container,
           onMouseEnter: G,
           onMouseLeave: u,
           children: [(0, r.jsxs)("div", {
-            className: k.titleContainer,
+            className: M.titleContainer,
             children: [(0, r.jsxs)("div", {
-              className: k.titleLeft,
+              className: M.titleLeft,
               children: [(0, r.jsx)(H, {
                 size: "md",
-                className: k.titleLeftIcon,
+                className: M.titleLeftIcon,
                 color: "var(--interactive-active)"
               }), (0, r.jsx)(p.Text, {
                 variant: "eyebrow",
                 children: R.intl.string(R.t.f3Cz29)
               })]
             }), (0, r.jsxs)(p.P3F, {
-              className: k.titleRight,
+              className: M.titleRight,
               onClick: F,
               children: [(0, r.jsx)(p.Text, {
                 variant: "eyebrow",
@@ -204,17 +204,17 @@ let U = i.forwardRef(function(e, t) {
                 width: 12,
                 height: 12,
                 color: "var(--interactive-active)",
-                className: k.titleRightIcon
+                className: M.titleRightIcon
               })]
             })]
           }), (0, r.jsx)(D, {
-            openInPopout: M,
+            openInPopout: k,
             channel: l,
             onClick: () => {
               b(), s()
             }
           }), (0, r.jsxs)("div", {
-            className: k.activityContainer,
+            className: M.activityContainer,
             children: [U.map(e => (0, r.jsx)(N.Y, {
               context: {
                 channel: l,
@@ -225,16 +225,16 @@ let U = i.forwardRef(function(e, t) {
                 s(), b()
               },
               aspectRatio: N.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
-              animatedDivClass: k.activitySuggestion,
+              animatedDivClass: M.activitySuggestion,
               commandOrigin: C.bB.MINI_SHELF
             }, e.application.id)), (0, r.jsx)("div", {
-              className: a()(k.wumpusRocketOuterContainer, {
-                [k.wumpusReducedMotion]: y
+              className: a()(M.wumpusRocketOuterContainer, {
+                [M.wumpusReducedMotion]: y
               }),
               children: (0, r.jsx)("div", {
-                className: k.wumpusRocketInnerContainer,
+                className: M.wumpusRocketInnerContainer,
                 children: (0, r.jsx)(T.Z, {
-                  className: k.wumpusRocket
+                  className: M.wumpusRocket
                 })
               })
             })]

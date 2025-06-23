@@ -34,9 +34,9 @@ var r = n(255367),
   A = n(683101),
   w = n(981631),
   R = n(388032),
-  k = n(378869);
+  M = n(378869);
 
-function M(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -156,19 +156,19 @@ function D(e) {
   }, [f]);
   let Y = (0, s.mFp)();
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)("div", L(M({
+    children: [(0, r.jsx)("div", L(k({
       ref: W
     }, F.getContainerProps(), Y), {
       "aria-busy": j,
       children: z
     })), m > 0 || g > 0 ? (0, r.jsxs)(s.P3F, {
       tag: "div",
-      className: k.resultsBlocked,
+      className: M.resultsBlocked,
       onClick: () => u.QY(l, !E),
       children: [(0, r.jsx)("div", {
-        className: k.resultsBlockedImage
+        className: M.resultsBlockedImage
       }), (0, r.jsx)("div", {
-        className: k.__invalid_resultsBlockedText,
+        className: M.__invalid_resultsBlockedText,
         children: E ? m > 0 && g > 0 ? R.intl.formatToPlainString(R.t["OvJs9/"], {
           count: m + g
         }) : m > 0 ? R.intl.formatToPlainString(R.t["n/1QFR"], {
@@ -202,24 +202,24 @@ function U(e) {
   if (null == i) return null;
   let l = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i, {
-      className: k.parentChannelNameIcon,
+      className: M.parentChannelNameIcon,
       size: "xxs",
       color: "currentColor"
     }), (0, r.jsx)(s.Text, {
-      className: k.parentChannelNameText,
+      className: M.parentChannelNameText,
       variant: "text-xs/medium",
       color: "header-secondary",
       children: t.name
     })]
   });
   return (0, j.Em)(t.type) ? (0, r.jsx)(s.P3F, {
-    className: a()(k.parentChannelName, k.parentChannelNameClickable),
+    className: a()(M.parentChannelName, M.parentChannelNameClickable),
     onClick: e => {
       e.stopPropagation(), n(t.id)
     },
     children: l
   }) : (0, r.jsx)("div", {
-    className: k.parentChannelName,
+    className: M.parentChannelName,
     children: l
   })
 }
@@ -262,22 +262,22 @@ function B(e) {
     value: (0, b.Z)(B, q),
     children: (0, r.jsxs)("ul", {
       role: "group",
-      className: k.searchResultGroup,
+      className: M.searchResultGroup,
       "aria-label": $,
       children: [(0, r.jsx)(s.P3F, {
         onClick: () => G(a.id),
         children: (0, r.jsxs)("div", {
-          className: k.channelNameContainer,
+          className: M.channelNameContainer,
           children: [(0, r.jsx)(Y, {
-            className: k.channelNameIcon,
+            className: M.channelNameIcon,
             size: "xs",
             color: "currentColor"
           }), (0, r.jsx)(s.ua7, {
             text: H,
             shouldShow: Q,
-            children: e => (0, r.jsxs)("span", L(M({}, e), {
+            children: e => (0, r.jsxs)("span", L(k({}, e), {
               ref: X,
-              className: k.channelNameText,
+              className: M.channelNameText,
               children: [D && null !== V && "".concat(V, " : "), K]
             }))
           }), (0, r.jsx)(U, {

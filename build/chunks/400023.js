@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(459273),
   w = n(255269),
   R = n(47481),
-  k = n(977391),
-  M = n(959258),
+  M = n(977391),
+  k = n(959258),
   L = n(73274),
   D = n(419388),
   U = n(406534),
@@ -111,15 +111,15 @@ let W = i.memo(function(e) {
       showingQuarantineBanner: T,
       hideSummaries: w = !1,
       jumpBarClassName: R,
-      typingGradient: M
-    } = e, [W, Y] = i.useState(null == (n = O.Z.isAtBottom(g.id)) || n), q = i.useMemo(() => x ? (0, k.aJ)({
+      typingGradient: k
+    } = e, [W, Y] = i.useState(null == (n = O.Z.isAtBottom(g.id)) || n), q = i.useMemo(() => x ? (0, M.aJ)({
       compact: !0,
       messageGroups: 30,
       groupRange: 4,
       attachments: 8,
       fontSize: P,
       groupSpacing: p
-    }) : (0, k.aJ)({
+    }) : (0, M.aJ)({
       compact: !1,
       messageGroups: 26,
       groupRange: 4,
@@ -214,7 +214,7 @@ let W = i.memo(function(e) {
         maskOpacity: ec
       } = (0, u.q_F)({
         fadeStart: W ? 28 : 84,
-        maskOpacity: M && !W ? 0 : 1,
+        maskOpacity: k && !W ? 0 : 1,
         config: {
           tension: 100,
           friction: 20,
@@ -296,7 +296,7 @@ let W = i.memo(function(e) {
     }(t), {
       messageGroupSpacing: O,
       fontSize: A,
-      messageDisplayCompact: k,
+      messageDisplayCompact: M,
       renderSpoilers: L,
       keyboardModeEnabled: D
     } = function() {
@@ -382,12 +382,12 @@ let W = i.memo(function(e) {
     }(t);
     return (0, r.jsx)(b.aQ.Provider, {
       value: (0, w.Z)(L, d),
-      children: (0, r.jsx)(M.v, {
+      children: (0, r.jsx)(k.v, {
         children: (0, r.jsx)(W, V(H({}, u), {
           messageGroupSpacing: O,
           showNewMessagesBar: !0,
           channel: t,
-          messageDisplayCompact: !o && (a || k),
+          messageDisplayCompact: !o && (a || M),
           messages: U,
           channelStream: F,
           permissionVersion: h,

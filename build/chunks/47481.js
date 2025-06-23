@@ -91,10 +91,10 @@ function d(e) {
     n === e.id && (d = w);
     let {
       jumpSequenceId: R,
-      jumpFlash: k,
-      jumpTargetId: M
+      jumpFlash: M,
+      jumpTargetId: k
     } = h;
-    k && e.id === M && null != R && (w.flashKey = R), h.jumpTargetId === e.id && (w.jumpTarget = !0), null != b && e.id === b.startId && b.count > 1 && _.push({
+    M && e.id === k && null != R && (w.flashKey = R), h.jumpTargetId === e.id && (w.jumpTarget = !0), null != b && e.id === b.startId && b.count > 1 && _.push({
       type: u.ys_.DIVIDER,
       content: b.topic,
       contentKey: b.startId,

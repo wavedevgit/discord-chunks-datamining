@@ -35,7 +35,7 @@ var r = n(255367),
   w = n(388032),
   R = n(232989);
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function k(e) {
   return e
 }
 
-function M(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -82,7 +82,7 @@ function L(e) {
       text: w.intl.formatToPlainString(w.t.JjdizM, {
         username: e.user.username
       }),
-      children: l => (0, r.jsx)(P.ZP, M(k({}, l), {
+      children: l => (0, r.jsx)(P.ZP, k(M({}, l), {
         className: a()(R.speaker, {
           [R.last]: t === i.length - 1
         }),
@@ -152,7 +152,7 @@ function D(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.createElement)(I.Z, M(k({}, e), {
+      return (0, i.createElement)(I.Z, k(M({}, e), {
         buttonRef: o,
         isActive: n,
         count: w,

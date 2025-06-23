@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(734386),
   w = n(184279),
   R = n(438306),
-  k = n(544142),
-  M = n(128557),
+  M = n(544142),
+  k = n(128557),
   L = n(981631),
   D = n(176505),
   U = n(388032),
@@ -51,10 +51,10 @@ function G(e) {
   if (n.isForumPost()) return (0, r.jsx)(P.Z, {
     channel: n
   });
-  if (y.Ec.has(n.type)) return (0, r.jsx)(k.Z, {
+  if (y.Ec.has(n.type)) return (0, r.jsx)(M.Z, {
     channel: n
   });
-  if (a) return (0, r.jsx)(M.Z, {
+  if (a) return (0, r.jsx)(k.Z, {
     channel: n
   });
   if (i) return (0, r.jsx)(A.Z, {
@@ -74,11 +74,11 @@ function H(e) {
     type: x
   } = p, P = (0, l.e7)([j.default], () => p.isPrivate() ? j.default.getUser(p.getRecipientId()) : null), A = O.ZP.useUserTag(P), {
     canManageRoles: R,
-    canReadMessageHistory: k
+    canReadMessageHistory: M
   } = (0, l.cj)([v.Z], () => ({
     canManageRoles: v.Z.can(L.Plq.MANAGE_ROLES, p),
     canReadMessageHistory: v.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
-  })), M = (0, l.e7)([b.Z], () => x === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, x]), {
+  })), k = (0, l.e7)([b.Z], () => x === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, x]), {
     systemDMRedesignEnabled: H
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
@@ -97,10 +97,10 @@ function H(e) {
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {
-      x === L.d4z.DM && null == M && null != P && o.Z.wait(() => (0, _.Z)(p.getRecipientId(), P.getAvatarURL(null, 80), {
+      x === L.d4z.DM && null == k && null != P && o.Z.wait(() => (0, _.Z)(p.getRecipientId(), P.getAvatarURL(null, 80), {
         withMutualGuilds: !0
       }))
-    }, [M, x, p, P]), i.useEffect(() => {
+    }, [k, x, p, P]), i.useEffect(() => {
       (null == P ? void 0 : P.bot) && W === C.M.NOT_FETCHED && s.Z.fetch()
     }, [null == P ? void 0 : P.bot, W]), p.isSystemDM()) return H ? (0, r.jsx)(w.Z, {
     channel: p
@@ -165,7 +165,7 @@ function H(e) {
       name: y
     })
   });
-  return k ? (0, r.jsx)(G, {
+  return M ? (0, r.jsx)(G, {
     channel: p,
     canManageRoles: R
   }) : (0, r.jsx)(I.ZP, {

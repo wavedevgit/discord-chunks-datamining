@@ -24,15 +24,13 @@ let _ = function(e) {
     hasConnectPermission: l
   } = e, _ = t.filter(m.Io), y = (0, d.J)(n.guild_id), C = i.useCallback(() => {
     y ? (0, u.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
-  }, [n.id, n.guild_id, y]), x = (0, c.Q3)("ChannelCallEmpty"), v = (0, o._q$)("ChannelCallEmpty"), j = 4 === _.length ? 2 : 3;
+  }, [n.id, n.guild_id, y]), x = (0, c.Q3)("ChannelCallEmpty"), v = 4 === _.length ? 2 : 3;
   return (0, r.jsxs)("div", {
-    className: a()(b.container, {
-      [b.withRive]: v
-    }),
+    className: b.container,
     children: [x && (0, r.jsx)(f.Z, {}), (0, r.jsx)("div", {
       className: b.tiles,
       style: {
-        maxWidth: 168 * j
+        maxWidth: 168 * v
       },
       children: _.slice(0, 5).map(e => (0, r.jsx)(h.ZP, {
         participant: e,

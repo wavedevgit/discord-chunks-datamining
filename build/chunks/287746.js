@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(10718),
   w = n(998698),
   R = n(895924),
-  k = n(581364),
-  M = n(667204),
+  M = n(581364),
+  k = n(667204),
   L = n(404295),
   D = n(104919),
   U = n(541716),
@@ -88,8 +88,8 @@ var r = n(255367),
   eA = n(375954),
   ew = n(496675),
   eR = n(944486),
-  ek = n(117530),
-  eM = n(594174),
+  eM = n(117530),
+  ek = n(594174),
   eL = n(626135),
   eD = n(934415),
   eU = n(459273),
@@ -216,7 +216,7 @@ class tn extends i.PureComponent {
     } = this.props, {
       commandKey: n,
       interactionOptions: r
-    } = (0, k.XA)(e.interactionData), {
+    } = (0, M.XA)(e.interactionData), {
       command: i,
       application: l
     } = A.Xq({
@@ -345,7 +345,7 @@ class tn extends i.PureComponent {
           return void this.handleIncrementCombo("", 1);
         case e0.yXg.ARROW_UP:
           if (i || l) return;
-          if (e.preventDefault(), t) ek.Z.getUploadCount(r.id, eZ.d.ChannelMessage) > 0 ? eB.S.dispatchToLastSubscribed(e0.CkL.FOCUS_ATTACHMENT_AREA) : eB.S.dispatchToLastSubscribed(e0.CkL.FOCUS_MESSAGES, {
+          if (e.preventDefault(), t) eM.Z.getUploadCount(r.id, eZ.d.ChannelMessage) > 0 ? eB.S.dispatchToLastSubscribed(e0.CkL.FOCUS_ATTACHMENT_AREA) : eB.S.dispatchToLastSubscribed(e0.CkL.FOCUS_MESSAGES, {
             atEnd: !0
           });
           else {
@@ -358,7 +358,7 @@ class tn extends i.PureComponent {
         case e0.yXg.ESCAPE:
           if (i || e.target !== e.currentTarget) return;
           if (e.preventDefault(), t) return void(0, x.rf)();
-          if (ek.Z.getUploadCount(r.id, eZ.d.ChannelMessage) > 0) return void g.Z.clearAll(r.id, eZ.d.ChannelMessage)
+          if (eM.Z.getUploadCount(r.id, eZ.d.ChannelMessage) > 0) return void g.Z.clearAll(r.id, eZ.d.ChannelMessage)
       }
       null == n || n(e, l)
     }), e8(this, "handleIncrementCombo", (e, t) => {
@@ -452,7 +452,7 @@ class tn extends i.PureComponent {
           });
           (0, eY.SC)(l)
         }
-        let n = await (0, M.Z)({
+        let n = await (0, k.Z)({
           command: l,
           optionValues: null != a ? a : {},
           context: {
@@ -528,7 +528,7 @@ class tn extends i.PureComponent {
               analyticsLocations: [],
               code: r,
               reason: i
-            }) && ("" !== t && "" === eZ.Z.getDraft(c.id, eZ.d.ChannelMessage) && h.Z.saveDraft(c.id, t, eZ.d.ChannelMessage), 0 === ek.Z.getUploadCount(c.id, eZ.d.ChannelMessage) && g.Z.setUploads({
+            }) && ("" !== t && "" === eZ.Z.getDraft(c.id, eZ.d.ChannelMessage) && h.Z.saveDraft(c.id, t, eZ.d.ChannelMessage), 0 === eM.Z.getUploadCount(c.id, eZ.d.ChannelMessage) && g.Z.setUploads({
               channelId: c.id,
               uploads: n,
               draftType: eZ.d.ChannelMessage
@@ -632,10 +632,10 @@ class tr extends i.PureComponent {
       } = this.props,
       {
         textAreaFocused: R,
-        textAreaHighlighted: k
+        textAreaHighlighted: M
       } = this.state,
-      M = d === U.Ie.SIDEBAR;
-    n = M && i.type === e0.d4z.GUILD_VOICE ? e2.t.pnnyFR : M && i.type === e0.d4z.GUILD_STAGE_VOICE ? e2.t.YInSkp : u.T.THREADS.has(i.type) ? e2.t["OkzL+f"] : e2.t.UbNmGR;
+      k = d === U.Ie.SIDEBAR;
+    n = k && i.type === e0.d4z.GUILD_VOICE ? e2.t.pnnyFR : k && i.type === e0.d4z.GUILD_STAGE_VOICE ? e2.t.YInSkp : u.T.THREADS.has(i.type) ? e2.t["OkzL+f"] : e2.t.UbNmGR;
     let L = (0, r.jsx)("div", {
         className: e3.channelBottomBarArea,
         children: (0, r.jsx)(eX.Z, {})
@@ -651,7 +651,7 @@ class tr extends i.PureComponent {
             ref: this.refToChannelTextAreaFormComponent,
             refInstance: this.containerDomRef,
             focused: R,
-            highlighted: k,
+            highlighted: M,
             channel: i,
             guild: l,
             keyboardModeEnabled: o,
@@ -707,7 +707,7 @@ class tr extends i.PureComponent {
               event: e0.CkL.OPEN_APP_LAUNCHER,
               handler: this.handleOpenAppLauncher
             }), (0, r.jsxs)(te, {
-              isSidebar: M,
+              isSidebar: k,
               className: a()(e3.chatContent, {
                 [e3.hasWallpaper]: null == T ? void 0 : T.isViewable,
                 [X.e3]: V ? null == T ? void 0 : T.isViewable : void 0,
@@ -728,7 +728,7 @@ class tr extends i.PureComponent {
               }), (0, r.jsx)(eq.Z, {
                 channel: i,
                 guild: l,
-                narrow: M
+                narrow: k
               }), (0, r.jsxs)(p.y5t, {
                 component: (0, r.jsx)(p.nn4, {
                   children: (0, r.jsx)(p.H, {
@@ -905,7 +905,7 @@ let ti = i.memo(function(e) {
     accessibilityLabel: s
   } = (0, ez.Z)({
     channel: t
-  }), c = (0, eg.S)(eM.default.getCurrentUser(), t), [u] = (0, et.AB)(null == n ? void 0 : n.id), h = (0, J.Ux)(null == n ? void 0 : n.id), f = (0, d.e7)([eM.default], () => eM.default.getCurrentUser()), m = (0, d.e7)([eT.ZP], () => {
+  }), c = (0, eg.S)(ek.default.getCurrentUser(), t), [u] = (0, et.AB)(null == n ? void 0 : n.id), h = (0, J.Ux)(null == n ? void 0 : n.id), f = (0, d.e7)([ek.default], () => ek.default.getCurrentUser()), m = (0, d.e7)([eT.ZP], () => {
     var e, t, r;
     return null != f && null != (r = null == (e = eT.ZP.getMember(null != (t = null == n ? void 0 : n.id) ? t : e0.lds, null == f ? void 0 : f.id)) ? void 0 : e.isPending) && r
   }), g = (0, d.e7)([ep.Z], () => ep.Z.isEnabled()), _ = (0, em.Z)(t.id), y = (0, er.Z)(t.id), x = (0, Z.R)({
@@ -915,8 +915,8 @@ let ti = i.memo(function(e) {
     isInitialLoading: A,
     primaryEntryPointCommand: w,
     isProfileFetching: R,
-    wasProfileFetching: k,
-    applicationId: M,
+    wasProfileFetching: M,
+    applicationId: k,
     channelId: D,
     commands: U
   } = (0, O.Z)({
@@ -927,8 +927,8 @@ let ti = i.memo(function(e) {
   });
   (0, E.Z)({
     isProfileFetching: R,
-    wasProfileFetching: k,
-    applicationId: M,
+    wasProfileFetching: M,
+    applicationId: k,
     channelId: D,
     commands: U
   });
@@ -936,7 +936,7 @@ let ti = i.memo(function(e) {
     F = (0, d.e7)([P.Z], () => P.Z.appDMChannelsWithFailedLoads().has(t.id)),
     G = (0, d.e7)([eR.Z], () => eR.Z.getVoiceChannelId()),
     H = (0, d.e7)([eS.Z], () => eS.Z.getChannel(G)),
-    V = (0, d.e7)([eM.default], () => t.type !== e0.d4z.DM ? null : eM.default.getUser(t.getRecipientId())),
+    V = (0, d.e7)([ek.default], () => t.type !== e0.d4z.DM ? null : ek.default.getUser(t.getRecipientId())),
     W = (0, d.e7)([eh.ZP, eI.default], () => eh.ZP.getUserCombo(eI.default.getId(), t.id)),
     Y = (0, b.i)(t).length > 0 || t.rateLimitPerUser > 0 || null != W,
     X = (0, z.Z)("ChannelChat");

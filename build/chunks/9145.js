@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(884338),
   w = n(617552),
   R = n(719296),
-  k = n(225639),
-  M = n(651612),
+  M = n(225639),
+  k = n(651612),
   L = n(918559),
   D = n(981631),
   U = n(388032),
@@ -144,7 +144,7 @@ function H(e) {
         }), r) : l
       }, [s, e, n, t])
     }(et, en, H),
-    eb = (0, k.y)({
+    eb = (0, M.y)({
       location: "Activity Panel"
     });
   if (null == W) return null;
@@ -208,7 +208,7 @@ function H(e) {
             className: B.footerButtons,
             children: [(0, r.jsxs)("div", {
               className: B.buttonSection,
-              children: [(0, r.jsx)(M.Z, {
+              children: [(0, r.jsx)(k.Z, {
                 channelId: eh
               }), (0, r.jsx)(g.d, {
                 isTrayButton: !0,

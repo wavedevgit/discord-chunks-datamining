@@ -40,8 +40,8 @@ function w(e) {
     currentUser: n,
     displayProfile: w,
     channel: R,
-    isHovering: k,
-    onOpenProfile: M
+    isHovering: M,
+    onOpenProfile: k
   } = e, {
     relationshipType: L,
     originApplicationId: D
@@ -62,7 +62,7 @@ function w(e) {
       user: t,
       nickname: p.ZP.getName(null, R.id, t),
       pronouns: null == w ? void 0 : w.pronouns,
-      onOpenProfile: M,
+      onOpenProfile: k,
       tags: (0, r.jsx)(g.Z, {
         displayProfile: w,
         themeType: Z.lY.SIDEBAR
@@ -72,8 +72,8 @@ function w(e) {
           userId: t.id
         }), !F && (0, r.jsx)(S.Z, {
           userId: t.id,
-          isHovering: k,
-          onOpenProfile: M
+          isHovering: M,
+          onOpenProfile: k
         })]
       })
     }), L === N.OGo.PENDING_INCOMING && (0, r.jsx)(I.Z.Overlay, {
@@ -109,7 +109,7 @@ function w(e) {
       user: t,
       currentUser: n,
       displayProfile: w,
-      onOpenUserProfileModal: M
+      onOpenUserProfileModal: k
     }) : (0, r.jsx)(_.Z, {
       user: t,
       currentUser: n,
@@ -123,7 +123,7 @@ function w(e) {
         children: (0, r.jsx)(b.Z, {
           userBio: w.bio,
           animateOnHover: !0,
-          isHovering: k,
+          isHovering: M,
           userId: t.id
         })
       }), (null == G ? void 0 : G.popularApplicationCommandIds) != null && (0, r.jsx)(m.Z, {

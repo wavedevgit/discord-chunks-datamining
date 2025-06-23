@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 2111e435d551bf52
+  Original File Name: c1e0601e40a5f52c
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -3719,8 +3719,10 @@ input[type=checked]:focus-visible+.label_df4aaf {
 }
 
 .container__5aa3a {
+    border-radius: 0;
     flex-direction: column;
     height: 100%;
+    margin: 0;
     overflow: hidden;
     width: 100%
 }
@@ -3766,13 +3768,6 @@ input[type=checked]:focus-visible+.label_df4aaf {
 
 .roundButton__5aa3a {
     border-radius: 999px
-}
-
-.withRive__5aa3a {
-    border-radius: 0;
-    height: 100%;
-    margin: 0;
-    width: 100%
 }
 
 .buttonContainer__5aa3a {
@@ -11814,23 +11809,18 @@ div.profileThemedContainer__656be {
 
 .container__0b34e {
     align-items: center;
+    border-radius: 0;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
+    margin: 0;
     overflow: hidden;
     width: 100%
 }
 
 .container__0b34e,.content__0b34e {
     position: relative
-}
-
-.withRive__0b34e {
-    border-radius: 0;
-    height: 100%;
-    margin: 0;
-    width: 100%
 }
 
 .container__722ff {
@@ -12786,4 +12776,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=2111e435d551bf52.css.map*/
+/*# sourceMappingURL=c1e0601e40a5f52c.css.map*/
