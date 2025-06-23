@@ -95,7 +95,7 @@ function _(t) {
       startingFractionalPremiumEndsAt: v
     } = t,
     {
-      enablePremiumRebrandDesign: P
+      enablePremiumBrandRefresh: P
     } = (0, c.JL)(),
     {
       theme: U

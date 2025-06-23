@@ -69,7 +69,7 @@ let h = e => {
     secondaryText: y,
     onSecondary: O
   } = e, {
-    premiumRebrandBackgroundClassName: v
+    premiumBrandRefreshBackgroundClassName: v
   } = (0, o.JL)(), I = () => {
     if (null == f || null == h) return null;
     let e = 2 === f ? i.gtL : i.zxk,

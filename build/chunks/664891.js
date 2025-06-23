@@ -108,7 +108,7 @@ function K(e) {
       isPremium: en,
       startedPaymentFlowWithPaymentSourcesRef: er,
       hasPaymentSources: ei,
-      enablePremiumRebrandDesign: ea
+      enablePremiumBrandRefresh: ea
     } = (0, y.JL)(),
     {
       isGift: eo
@@ -200,7 +200,7 @@ function K(e) {
         disabled: e_,
         paymentGatewayRestrictions: null == n ? void 0 : n.eligiblePaymentGateways,
         className: o()({
-          [F.premiumRebrandInputBackground]: ea
+          [F.premiumBrandRefreshInputBackground]: ea
         })
       })]
     }), (0, r.jsxs)(f.b, {
@@ -296,7 +296,7 @@ function q(e) {
       selectedSkuId: _,
       startedPaymentFlowWithPaymentSourcesRef: p,
       setInvoicePreview: h,
-      premiumRebrandBackgroundClassName: m
+      premiumBrandRefreshBackgroundClassName: m
     } = (0, y.JL)(),
     {
       isGift: E
@@ -430,7 +430,7 @@ function Q(e) {
     onInvoiceError: s
   } = e, {
     setInvoicePreview: l,
-    premiumRebrandBackgroundClassName: c
+    premiumBrandRefreshBackgroundClassName: c
   } = (0, y.JL)(), {
     analyticsLocations: u
   } = (0, g.ZP)(), [f, _] = (0, P.ED)({
@@ -496,7 +496,7 @@ function J(e) {
     } = e,
     {
       setInvoicePreview: f,
-      premiumRebrandBackgroundClassName: _
+      premiumBrandRefreshBackgroundClassName: _
     } = (0, y.JL)(),
     {
       analyticsLocations: p

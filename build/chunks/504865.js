@@ -23,7 +23,7 @@ let p = function(e) {
     variant: g,
     priceOptions: x,
     isApplicationHome: f,
-    enablePremiumRebrandDesign: h
+    enablePremiumBrandRefresh: h
   } = e, I = (0, a.e7)([u.Z], () => u.Z.isLoadedForPremiumSKUs()), v = (0, s.ap)((0, c.ZP)());
   if (!I) return (0, i.jsx)(o.$jN, {
     type: o.$jN.Type.PULSING_ELLIPSIS,

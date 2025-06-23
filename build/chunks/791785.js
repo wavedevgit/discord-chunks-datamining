@@ -147,7 +147,7 @@ function $(e) {
     paymentSources: ej,
     purchaseType: eU,
     defaultPlanId: eG,
-    premiumRebrandBackgroundClassName: eB
+    premiumBrandRefreshBackgroundClassName: eB
   } = (0, L.JL)(), eV = (0, M.Z)(), eF = c.CgR.SMALL;
   e_ || (null == eV ? void 0 : eV.isLargeModal) ? eF = c.CgR.LARGE : (eP === x.h8.ADD_PAYMENT_STEPS || ep || (null == eV ? void 0 : eV.isDynamicModal)) && (eF = c.CgR.DYNAMIC);
   let {

@@ -32,7 +32,7 @@ var r = n(255367),
   R = n(474936),
   P = n(231338),
   w = n(388032),
-  D = n(262531);
+  D = n(348987);
 let L = 500;
 
 function x(e) {
@@ -77,7 +77,7 @@ function x(e) {
       startedPaymentFlowWithPaymentSourcesRef: ep,
       invoicePreview: eh,
       inReverseTrial: em,
-      enablePremiumRebrandDesign: eg
+      enablePremiumBrandRefresh: eg
     } = (0, g.JL)(),
     {
       isGift: eE,

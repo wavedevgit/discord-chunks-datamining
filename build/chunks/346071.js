@@ -16,7 +16,7 @@ function u(e) {
   let {
     fractionalPremiumInfo: t,
     variant: n = "default",
-    enablePremiumRebrandDesign: u = !1,
+    enablePremiumBrandRefresh: u = !1,
     style: d
   } = e, f = t.fractionalState === o.a$.FP_SUB_PAUSED, _ = (0, a.Z)(t.endsAt, f), p = "", h = {
     trial: {
@@ -38,12 +38,12 @@ function u(e) {
   }) : _.hours > 0 && (p = s.intl.format(h[n].hours, {
     hours: _.hours
   })), "" === p) ? null : u ? (0, r.jsxs)("div", {
-    className: l.premiumRebrandContainer,
+    className: l.premiumBrandRefreshContainer,
     style: d,
     children: [(0, r.jsx)("img", {
       src: c,
       alt: "Nitro Icon",
-      className: l.premiumRebrandIcon
+      className: l.premiumBrandRefreshIcon
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/medium",
       children: p

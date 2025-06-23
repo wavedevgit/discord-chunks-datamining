@@ -10,8 +10,8 @@ var i = n(442837),
   o = n(607070),
   s = n(409813),
   l = n(669079),
-  c = n(170579),
-  u = n(696515),
+  c = n(709093),
+  u = n(170579),
   d = n(616030),
   f = n(474936),
   _ = n(388032),
@@ -31,7 +31,7 @@ function h(e) {
     isGift: v,
     giftRecipient: I,
     isEligibleForTrial: T,
-    enablePremiumRebrandDesign: S
+    enablePremiumBrandRefresh: S
   } = e, A = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), N = g ? f.nL.WINTER : f.nL.DEFAULT, C = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
@@ -55,7 +55,7 @@ function h(e) {
       className: p.closeButton,
       innerClassName: p.closeButtonInner
     })]
-  }) : S ? (0, r.jsx)(u.Z, {
+  }) : S ? (0, r.jsx)(c.Z, {
     hideCloseOnFullScreen: !0,
     hideCloseButton: b,
     upgradeToPremiumType: m,
@@ -65,7 +65,7 @@ function h(e) {
     showDiscountBadge: O
   }) : (0, r.jsx)("div", {
     className: n,
-    children: (0, r.jsx)(c.Z, {
+    children: (0, r.jsx)(u.Z, {
       hideCloseOnFullScreen: !0,
       hideCloseButton: b,
       shouldShowPrice: !0,

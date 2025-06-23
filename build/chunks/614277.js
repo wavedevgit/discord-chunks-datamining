@@ -60,7 +60,7 @@ function g(e) {
     setFooterNode: v,
     setModalOverlayNode: I,
     setReadySlideId: T,
-    premiumRebrandBackgroundClassName: S
+    premiumBrandRefreshBackgroundClassName: S
   } = (0, d.JL)(), A = y.find(e => e.key === b);
   i.useEffect(() => {
     I(null)

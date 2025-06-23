@@ -1,4 +1,4 @@
-/** Chunk was on 7589 **/
+/** Chunk was on 98245 **/
 "use strict";
 n.d(t, {
   Z: () => o
@@ -12,7 +12,7 @@ function o(e) {
   var t, n, {
       isSelected: o
     } = e,
-    l = function(e, t) {
+    a = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -27,7 +27,7 @@ function o(e) {
       }
       return i
     }(e, ["isSelected"]);
-  let a = (0, s.Dt)();
+  let l = (0, s.Dt)();
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -45,12 +45,12 @@ function o(e) {
       })
     }
     return e
-  }({}, l), n = n = {
+  }({}, a), n = n = {
     width: "16",
     height: "16",
     viewBox: "0 0 16 16",
     xmlns: "http://www.w3.org/2000/svg",
-    fill: "url(#".concat(a, ")"),
+    fill: "url(#".concat(l, ")"),
     children: [(0, r.jsx)("path", {
       d: "M10 9.33332C10.7364 9.33332 11.3334 8.73637 11.3334 7.99999C11.3334 7.26361 10.7364 6.66666 10 6.66666C9.26364 6.66666 8.66669 7.26361 8.66669 7.99999C8.66669 8.73637 9.26364 9.33332 10 9.33332Z",
       fill: "url(#paint0_linear_6413_12612)"

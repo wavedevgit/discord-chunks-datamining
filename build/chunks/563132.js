@@ -202,7 +202,7 @@ function X(e) {
     tv = (0, E.Z)({
       location: "PaymentModal"
     }) && e9,
-    tI = tv ? F.premiumRebrandBackground : void 0,
+    tI = tv ? F.premiumBrandRefreshBackground : void 0,
     {
       enabled: tT
     } = (0, g.I9)({
@@ -295,8 +295,8 @@ function X(e) {
       invoicePreview: tb,
       setInvoicePreview: ty,
       inReverseTrial: tO,
-      enablePremiumRebrandDesign: tv,
-      premiumRebrandBackgroundClassName: tI
+      enablePremiumBrandRefresh: tv,
+      premiumBrandRefreshBackgroundClassName: tI
     }),
     children: (0, r.jsx)(a.Elements, {
       options: H({}, B.OBo, tT && tS),

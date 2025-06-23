@@ -1,12 +1,12 @@
 /** Chunk was on 54433 **/
 t.d(n, {
-  Z: () => j
+  Z: () => f
 });
-var i = t(255367);
+var l = t(255367);
 t(73800);
-var l = t(442837),
-  s = t(481060),
-  r = t(607070),
+var i = t(442837),
+  r = t(481060),
+  s = t(607070),
   a = t(906732),
   o = t(821982),
   C = t(832149),
@@ -17,25 +17,25 @@ var l = t(442837),
   x = t(215023),
   h = t(317112);
 
-function j(e) {
+function f(e) {
   let {
     onClose: n,
     selectedPromotionalDecoPurchaseRecord: t,
-    selectedGiftingPromotionReward: j
-  } = e, f = (0, l.e7)([u.default], () => u.default.getCurrentUser()), _ = (0, l.e7)([r.Z], () => r.Z.useReducedMotion), {
+    selectedGiftingPromotionReward: f
+  } = e, j = (0, i.e7)([u.default], () => u.default.getCurrentUser()), _ = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), {
     analyticsLocations: m
-  } = (0, a.ZP)(), L = s.EFr.SIZE_32, g = (0, o.Z)(null == j ? void 0 : j.assetId, L, !_), y = (0, c.Z)(), S = null == y ? void 0 : y.giftPurchaseConfirmation;
-  return null == t || null == S ? null : (0, i.jsx)(p.O3, {
-    children: (0, i.jsx)(s.mzw, {
+  } = (0, a.ZP)(), L = r.EFr.SIZE_32, g = (0, o.Z)(null == f ? void 0 : f.assetId, L, !_), y = (0, c.Z)(), S = null == y ? void 0 : y.giftPurchaseConfirmation;
+  return null == t || null == S ? null : (0, l.jsx)(p.O3, {
+    children: (0, l.jsx)(r.mzw, {
       align: d.Z.Align.CENTER,
-      children: (0, i.jsxs)("div", {
+      children: (0, l.jsxs)("div", {
         className: h.promotionalFooter,
-        children: [(0, i.jsx)(s.Xo$, {
-          "aria-label": null == f ? void 0 : f.username,
+        children: [(0, l.jsx)(r.Xo$, {
+          "aria-label": null == j ? void 0 : j.username,
           size: L,
-          src: null == f ? void 0 : f.getAvatarURL(void 0, (0, s.pxk)(L), !_),
+          src: null == j ? void 0 : j.getAvatarURL(void 0, (0, r.pxk)(L), !_),
           avatarDecoration: g
-        }), (0, i.jsx)(s.zxk, {
+        }), (0, l.jsx)(r.zxk, {
           onClick: () => {
             n(), (0, C.Z)({
               product: t,

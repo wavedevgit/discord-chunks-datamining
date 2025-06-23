@@ -65,7 +65,7 @@ function A(e) {
     contextMetadata: et,
     invoicePreview: en,
     inReverseTrial: er,
-    premiumRebrandBackgroundClassName: ei
+    premiumBrandRefreshBackgroundClassName: ei
   } = (0, b.JL)(), {
     isGift: ea,
     selectedGiftStyle: eo,

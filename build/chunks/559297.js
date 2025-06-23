@@ -1,4 +1,5 @@
-/** Chunk was on 94495 **/
+/** Chunk was on 98245 **/
+"use strict";
 n.r(e.exports = {
   pill: "pill_a2c9e8",
   clickable: "clickable_a2c9e8",

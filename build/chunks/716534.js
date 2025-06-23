@@ -111,8 +111,8 @@ function Q(e) {
       inReverseTrial: eN,
       setPurchaseError: eC,
       hasPaymentSources: eR,
-      enablePremiumRebrandDesign: eP,
-      premiumRebrandBackgroundClassName: ew
+      enablePremiumBrandRefresh: eP,
+      premiumBrandRefreshBackgroundClassName: ew
     } = (0, b.JL)(),
     {
       isGift: eD,
@@ -258,7 +258,7 @@ function Q(e) {
     em && eH.subscriptionPeriodEnd !== eW.subscriptionPeriodEnd && (W = eH.subscriptionPeriodEnd), Q = (0, r.jsxs)(r.Fragment, {
       children: [tt && (0, r.jsx)(j.n, {
         fractionalPremiumInfo: te,
-        enablePremiumRebrandDesign: eP
+        enablePremiumBrandRefresh: eP
       }), (0, r.jsxs)(M.aO, {
         className: o()(q.invoice, ew),
         children: [(0, r.jsx)(M.Z9, {
@@ -362,7 +362,7 @@ function Q(e) {
         isTrial: em,
         paymentGatewayRestrictions: eZ,
         className: o()({
-          [q.premiumRebrandInputBackground]: eP
+          [q.premiumBrandRefreshInputBackground]: eP
         })
       }), e3 && null == e1 ? (0, r.jsx)("div", {
         className: q.paymentSourceOptionalWarning,

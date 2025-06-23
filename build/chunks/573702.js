@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(255367);
 n(73800);
 var i = n(639119),
-  a = n(640698),
+  a = n(947390),
   o = n(474936),
   s = n(388032),
   l = n(856045);
@@ -18,7 +18,7 @@ let c = e => {
     percent: t
   }) : c && (u = s.intl.string(s.t.gtNqJS)), (0, r.jsx)("div", {
     className: l.badgeContainer,
-    children: (0, r.jsx)(a.F, {
+    children: (0, r.jsx)(a.E, {
       text: u
     })
   })

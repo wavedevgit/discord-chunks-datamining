@@ -1,4 +1,4 @@
-/** Chunk was on 7589 **/
+/** Chunk was on 98245 **/
 "use strict";
 n.d(t, {
   Z: () => v
@@ -7,8 +7,8 @@ var r = n(255367),
   i = n(73800),
   s = n(120356),
   o = n.n(s),
-  l = n(442837),
-  a = n(481060),
+  a = n(442837),
+  l = n(481060),
   c = n(518738),
   u = n(786761),
   d = n(3148),
@@ -27,7 +27,7 @@ function v(e) {
     theme: v,
     content: h = m.intl.string(m.t["6OSasb"]),
     className: O
-  } = e, y = (0, l.e7)([f.default], () => f.default.getCurrentUser()), j = g.ZP.useName(n, null, y), x = (0, c.Kz)(s), S = i.useMemo(() => {
+  } = e, y = (0, a.e7)([f.default], () => f.default.getCurrentUser()), j = g.ZP.useName(n, null, y), x = (0, c.Kz)(s), S = i.useMemo(() => {
     var e, t;
     return (0, u.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -71,7 +71,7 @@ function v(e) {
     nick: j,
     colorString: null != (t = s.colorString) ? t : void 0
   };
-  return (0, r.jsx)(a.f6W, {
+  return (0, r.jsx)(l.f6W, {
     theme: v,
     children: e => (0, r.jsx)("div", {
       className: o()(e, _.container, O),

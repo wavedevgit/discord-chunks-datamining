@@ -179,7 +179,7 @@ function et(e) {
     selectedSkuId: eu,
     selectedPlan: ed,
     priceOptions: ef,
-    enablePremiumRebrandDesign: e_
+    enablePremiumBrandRefresh: e_
   } = (0, m.JL)(), {
     isGift: ep,
     giftRecipient: eh,
@@ -333,7 +333,7 @@ function et(e) {
     }),
     children: [e8 && (0, r.jsx)(k.n, {
       fractionalPremiumInfo: ek,
-      enablePremiumRebrandDesign: e_
+      enablePremiumBrandRefresh: e_
     }), (0, r.jsxs)("div", {
       className: eI ? e1 : void 0,
       children: [(0, r.jsx)(L.Z, {

@@ -20,7 +20,7 @@ function u(e) {
     step: i,
     breadcrumbs: u,
     startedPaymentFlowWithPaymentSourcesRef: d,
-    enablePremiumRebrandDesign: f
+    enablePremiumBrandRefresh: f
   } = (0, s.JL)();
   if (f || null == u || 0 === u.length) return null;
   let _ = u.flatMap(e => {
