@@ -335,7 +335,7 @@ function ec(e) {
     bot: null
   }, eh = i.useMemo(() => null != ep && null != ef && null != em && (0, p.ye)(em) ? {
     label: "Play via Cloud",
-    icon: (0, r.jsx)(o.nMW, {
+    icon: (0, r.jsx)(o.v3n, {
       size: "xs",
       color: "currentColor"
     }),
