@@ -250,10 +250,12 @@ function eE(e) {
       entry: o,
       whenReady: a
     }), null == r || r(i, n)
-  }, Y = null != p ? p : null != N ? N : null != P ? P : void 0;
-  return i.useEffect(() => {
-    x && (null == E || E.focus())
-  }, [E, m, x]), (0, r.jsxs)("div", {
+  }, Y = null != p ? p : null != N ? N : null != P ? P : void 0, K = () => {
+    g(e => !e), x && (null == E || E.focus())
+  }, z = e => {
+    k(e), e && (null == E || E.focus())
+  };
+  return (0, r.jsxs)("div", {
     style: {
       pointerEvents: I ? "none" : "all"
     },
@@ -280,11 +282,12 @@ function eE(e) {
         channel: m ? t : void 0,
         showEmojiButton: null != Y,
         className: el.replyInput,
+        autoFocus: !1,
         renderAttachButton: O ? () => (0, r.jsx)(f.ua7, {
           text: B,
           children: e => (0, r.jsx)(f.P3F, ef(eu({}, e), {
             className: el.shareToChannelButton,
-            onClick: () => g(e => !e),
+            onClick: K,
             children: m ? (0, r.jsx)(f.VL1, {
               size: "custom",
               width: 20,
@@ -297,7 +300,7 @@ function eE(e) {
           }))
         }) : void 0
       }), D && (0, r.jsx)(f.P3F, {
-        onClick: () => k(!1),
+        onClick: () => z(!1),
         className: el.primaryActionPopoutMessageCloseIcon,
         children: (0, r.jsx)(f.Dio, {
           size: "custom",
@@ -312,7 +315,7 @@ function eE(e) {
         className: el.secondaryButton,
         color: f.zxk.Colors.PRIMARY,
         look: f.zxk.Looks.FILLED,
-        onClick: () => k(!0),
+        onClick: () => z(!0),
         innerClassName: el.iconButton,
         size: L ? f.zxk.Sizes.MIN : f.zxk.Sizes.MEDIUM,
         children: !L && (0, r.jsx)(f.Text, {
