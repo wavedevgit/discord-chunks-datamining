@@ -37,8 +37,9 @@ let f = (e, t, n, r) => (o.default.track(m.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
       uploadId: x,
       roles: b,
       image: j,
-      hideErrorModal: _
-    } = e, v = c.ZP.sanitizeEmojiName(n.name.split(".")[0]);
+      hideErrorModal: _,
+      analyticsLocation: v
+    } = e, O = c.ZP.sanitizeEmojiName(n.name.split(".")[0]);
     if (c.ZP.isFileTooBig(n)) {
       if ("image/gif" === n.type || "image/webp" === n.type || "image/avif" === n.type) return f(n.name, n.size, d, x);
       else if (null != j) {
@@ -56,8 +57,9 @@ let f = (e, t, n, r) => (o.default.track(m.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
       await (0, s.rS)({
         guildId: d,
         image: t,
-        name: v,
-        roles: b
+        name: O,
+        roles: b,
+        analyticsLocation: v
       }), o.default.track(m.rMx.EMOJI_UPLOAD_COMPLETED, {
         guild_id: d,
         upload_id: x

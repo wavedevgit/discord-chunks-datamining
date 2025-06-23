@@ -1,9 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  h: () => i
+  h: () => a
 });
-let r = (0, n(818083).B)({
+var r = n(931084);
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2025-04_emoji_studio",
   label: "Emoji Studio",
@@ -21,16 +22,17 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n
-  } = e, {
-    enabled: i
-  } = r.getCurrentConfig({
+  } = e, a = (0, r.$u)(t), {
+    enabled: o
+  } = i.getCurrentConfig({
     location: t
   }, {
-    autoTrackExposure: n
+    autoTrackExposure: n,
+    disable: a
   });
-  return i
+  return o
 }
