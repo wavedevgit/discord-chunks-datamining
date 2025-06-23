@@ -217,7 +217,9 @@ function ea(e) {
             start: t,
             end: null == _ || null == (l = _.timestamps) ? void 0 : l.end
           },
-          bold: !0
+          textColor: "currentColor",
+          textTabularNumbers: !1,
+          textFontCode: !1
         })]
       }) : null,
       u = (0, r.jsxs)(r.Fragment, {
@@ -508,7 +510,9 @@ function ec(e) {
           start: eN,
           end: null == R || null == (_ = R.timestamps) ? void 0 : _.end
         },
-        bold: !0
+        textColor: "currentColor",
+        textTabularNumbers: !1,
+        textFontCode: !1
       })]
     }) : null,
     eP = (0, r.jsxs)(o.Text, {

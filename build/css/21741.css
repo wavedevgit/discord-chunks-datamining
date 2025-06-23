@@ -1,6 +1,6 @@
 /**
   Module ID: 21741
-  Original File Name: 5ea4ade4a9b3cc72
+  Original File Name: 3e2ea2e2d73d3825
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -1731,7 +1731,7 @@ html .progress__61462 {
 
 .embed__98ba8 {
     border-radius: var(--radius-md);
-    color: var(--primary-230);
+    color: var(--white-500);
     container-type: inline-size;
     max-width: 343px;
     overflow: hidden;
@@ -1791,6 +1791,7 @@ html .progress__61462 {
 
 .header__98ba8 {
     align-items: center;
+    color: var(--app-message-embed-secondary-text);
     display: flex;
     justify-content: space-between
 }
@@ -1827,6 +1828,10 @@ html .progress__61462 {
     flex-direction: column;
     justify-content: center;
     overflow: hidden
+}
+
+.contentInfoWrapper__98ba8,.linkIcon__98ba8 {
+    color: var(--app-message-embed-secondary-text)
 }
 
 .linkIcon__98ba8 {
@@ -12561,4 +12566,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=5ea4ade4a9b3cc72.css.map*/
+/*# sourceMappingURL=3e2ea2e2d73d3825.css.map*/

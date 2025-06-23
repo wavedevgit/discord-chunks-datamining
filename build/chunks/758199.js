@@ -99,7 +99,7 @@ function O(e) {
     href: P,
     children: (0, i.jsx)(c.d3s, {
       size: "xs",
-      color: c.TVs.colors.WHITE.css
+      color: c.TVs.colors.APP_MESSAGE_EMBED_SECONDARY_TEXT.css
     })
   }) : null, B = null != j, G = null != S && !1 === D, H = B || G, V = 0 === I ? E.bannerAspectRatioBot : E.bannerAspectRatioActivity, z = l.useRef(null), W = l.useCallback(() => {
     let e = z.current;
@@ -139,7 +139,7 @@ function O(e) {
       children: [null != O && (0, i.jsxs)("div", {
         className: E.header,
         children: [(0, i.jsx)(c.Text, {
-          variant: "eyebrow",
+          variant: "text-sm/semibold",
           color: "none",
           children: O
         }), null != U ? U : F]
@@ -157,7 +157,10 @@ function O(e) {
             color: "none",
             lineClamp: 1,
             children: v
-          }), C]
+          }), (0, i.jsx)("div", {
+            className: E.contentInfoWrapper,
+            children: C
+          })]
         }), null == O && (null != U ? U : F)]
       }), A.length > 0 && (0, i.jsx)("div", {
         className: E.actionWrapper,
