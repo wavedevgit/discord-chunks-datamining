@@ -535,13 +535,11 @@ function eL(e, t) {
       onClick: tQ,
       ref: tX,
       children: [(0, r.jsxs)("div", {
-        className: ef.accessoryBarLeft,
         children: [null == ed ? void 0 : ed(), tB, tK ? (0, r.jsx)(m.Z, {
           channel: Z,
           poggermodeEnabled: !1
         }) : null]
       }), (0, r.jsxs)("div", {
-        className: ef.accessoryBarRight,
         children: [t$, tJ]
       })]
     }) : null;
@@ -640,7 +638,6 @@ function eL(e, t) {
                 "aria-labelledby": eZ
               })
             }), e$ ? (0, r.jsxs)("div", {
-              className: ef.rightAccessories,
               children: [tW ? (0, r.jsx)(A.Z, {
                 channel: Z
               }) : null, null != (O = null == en ? void 0 : en()) ? O : null, (null == (l = Y.submit) ? void 0 : l.button) != null && ((null == (u = Y.submit) ? void 0 : u.ignorePreference) || td) ? (0, r.jsx)(ee.Z, {

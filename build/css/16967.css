@@ -1,6 +1,6 @@
 /**
   Module ID: 16967
-  Original File Name: 7eeabbcbb75721f1
+  Original File Name: 7ff52e2ea8270ed0
 **/
 .closeButton__47998 {
     position: absolute;
@@ -386,39 +386,6 @@
     padding: 12px 16px
 }
 
-.visual-refresh-chat-input .header__62280 {
-    border-bottom: 1px solid var(--border-subtle);
-    padding: var(--space-24)
-}
-
-.visual-refresh-chat-input .messageInput__62280 {
-    background-color: revert
-}
-
-.visual-refresh-chat-input .footerWarningWrapper__62280 {
-    border-top: 1px solid var(--border-subtle);
-    margin: 0;
-    padding: var(--space-24)
-}
-
-.visual-refresh-chat-input .destinationRow__62280 {
-    margin-left: 12px;
-    margin-right: 4px;
-    padding: 0 12px
-}
-
-.visual-refresh-chat-input .forwardPreviewWrapper__62280 {
-    border: 1px solid var(--border-faint);
-    border-radius: 12px;
-    box-shadow: var(--shadow-border),var(--shadow-high);
-    margin: 3px 12px 12px;
-    padding: 12px
-}
-
-.visual-refresh-chat-input .sendWithMessage__62280 {
-    max-height: 46px
-}
-
 .forwardPreview__68334 {
     align-items: center;
     display: flex;
@@ -511,4 +478,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=7eeabbcbb75721f1.css.map*/
+/*# sourceMappingURL=7ff52e2ea8270ed0.css.map*/

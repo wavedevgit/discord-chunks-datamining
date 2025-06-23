@@ -1,6 +1,6 @@
 /**
   Module ID: 62423
-  Original File Name: 304b0d3e92ead050
+  Original File Name: 4556eca4e588c0c7
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -4810,19 +4810,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     fill: currentColor!important
 }
 
-.visual-refresh-chat-input .attachButton__0923f,.visual-refresh-chat-input .attachWrapper__0923f {
-    display: flex;
-    position: static
-}
-
-.visual-refresh-chat-input .attachButton__0923f {
-    border-radius: 0;
-    height: auto;
-    margin-left: calc(var(--space-16)*-1);
-    padding: var(--space-4) var(--space-12) var(--space-4) var(--space-md);
-    padding-left: calc(var(--custom-message-margin-horizontal) - var(--space-xs) + var(--custom-chat-aligned-icon-offset) - 1px)
-}
-
 .attachButtonInner__0923f {
     height: var(--chat-input-icon-size)
 }
@@ -7173,16 +7160,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-.visual-refresh-chat-input .channelAppLauncher_e6e74f {
-    margin: 0;
-    padding: 0
-}
-
-.visual-refresh-chat-input .button_e6e74f {
-    min-height: var(--space-32);
-    min-width: var(--space-32)
-}
-
 .entrypointAnimation_e6e74f {
     height: 44px;
     width: 44px
@@ -7780,36 +7757,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .refresh-fast-follow-avatars .form_f75fb0 {
     padding-left: min(var(--space-xs),var(--space-8));
     padding-right: min(var(--space-xs),var(--space-8))
-}
-
-.visual-refresh-chat-input .channelBottomBarArea_f75fb0 {
-    margin-bottom: var(--space-xs);
-    margin-left: var(--space-xs);
-    margin-right: var(--space-xs)
-}
-
-.visual-refresh-chat-input .channelTextArea_f75fb0 {
-    margin-bottom: 0
-}
-
-.visual-refresh-chat-input .form_f75fb0 {
-    margin-bottom: 0
-}
-
-.visual-refresh-chat-input .formWithLoadedChatInput_f75fb0 {
-    margin-top: 0;
-    padding-left: 0;
-    padding-right: 0
-}
-
-.visual-refresh-chat-input .formWithLoadedChatInput_f75fb0:before {
-    background: linear-gradient(to bottom,transparent,var(--background-base-lower) 100%);
-    top: .5rem;
-    width: 100%
-}
-
-.visual-refresh-chat-input .entryPointButtonContainer_f75fb0 {
-    margin-bottom: 0
 }
 
 .titleWrapper_f75fb0 {
@@ -12822,4 +12769,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=304b0d3e92ead050.css.map*/
+/*# sourceMappingURL=4556eca4e588c0c7.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 98787
-  Original File Name: 3f75d03651d05352
+  Original File Name: 861367d64e53d1e0
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -2672,7 +2672,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 @supports (grid-template-columns:subgrid) and (white-space-collapse:collapse) {
-    .visual-refresh .wrapper_ef3116 {
+    .wrapper_ef3116 {
         grid-area: guildsList
     }
 }
@@ -6266,4 +6266,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=3f75d03651d05352.css.map*/
+/*# sourceMappingURL=861367d64e53d1e0.css.map*/

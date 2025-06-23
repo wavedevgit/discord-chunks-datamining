@@ -1,6 +1,6 @@
 /**
   Module ID: 21741
-  Original File Name: 8bf2781c827b7cf4
+  Original File Name: 31eb62b3adc56dcc
 **/
 .descriptionText__535f5 {
     color: var(--header-secondary);
@@ -12137,7 +12137,7 @@ html .progress__61462 {
     flex-wrap: nowrap
 }
 
-.theme-dark,.visual-refresh.theme-light {
+.theme-dark,.theme-light {
     --search-popout-option-user-nickname: var(--text-primary);
     --search-popout-option-user-username: var(--text-secondary);
     --search-popout-option-filter-text: var(--text-secondary);
@@ -12561,4 +12561,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=8bf2781c827b7cf4.css.map*/
+/*# sourceMappingURL=31eb62b3adc56dcc.css.map*/

@@ -13,7 +13,6 @@ e.exports = {
   noChat: "noChat_f75fb0",
   channelBottomBarArea: "channelBottomBarArea_f75fb0",
   channelTextArea: "channelTextArea_f75fb0",
-  entryPointButtonContainer: "entryPointButtonContainer_f75fb0",
   avatar: "avatar_f75fb0",
   parentChannelName: "parentChannelName_f75fb0",
   title: "title_f75fb0",
@@ -32,5 +31,6 @@ e.exports = {
   linkedLobbyEducationTooltip: "linkedLobbyEducationTooltip_f75fb0",
   linkedLobbyEducationTooltipCloseClickContainer: "linkedLobbyEducationTooltipCloseClickContainer_f75fb0",
   linkedLobbyEducationTooltipCloseIcon: "linkedLobbyEducationTooltipCloseIcon_f75fb0",
+  entryPointButtonContainer: "entryPointButtonContainer_f75fb0",
   hasWallpaper: "hasWallpaper_f75fb0"
 }
