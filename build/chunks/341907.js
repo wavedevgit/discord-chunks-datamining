@@ -82,10 +82,11 @@ let P = "in-app",
 function D(e) {
   let {
     questId: t,
-    location: i,
+    questContent: i,
     questContentPosition: a,
     preview: o = !1,
-    previewQuest: l = null
+    previewQuest: l = null,
+    sourceQuestContent: c
   } = e;
   (0, s.ZDy)(async () => {
     let {
@@ -94,9 +95,10 @@ function D(e) {
     return n => (0, r.jsx)(e, R(N({}, n), {
       questId: t,
       questContentPosition: a,
-      location: i,
+      questContent: i,
       preview: o,
-      previewQuest: l
+      previewQuest: l,
+      sourceQuestContent: c
     }))
   })
 }
@@ -114,14 +116,15 @@ function L(e, t) {
   }) : (0, u.$)()
 }
 
-function x(e, t) {
+function x(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
-      default: i
+      default: a
     } = await n.e("88938").then(n.bind(n, 390238));
-    return n => (0, r.jsx)(i, R(N({}, n), {
+    return n => (0, r.jsx)(a, R(N({}, n), {
       quest: e,
-      location: t
+      location: t,
+      sourceQuestContent: i
     }))
   })
 }
@@ -138,14 +141,15 @@ function k(e, t) {
   })
 }
 
-function M(e, t) {
+function M(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
-      default: i
+      default: a
     } = await n.e("58641").then(n.bind(n, 828664));
-    return n => (0, r.jsx)(i, R(N({}, n), {
+    return n => (0, r.jsx)(a, R(N({}, n), {
       quest: e,
-      location: t
+      location: t,
+      sourceQuestContent: i
     }))
   })
 }
@@ -156,7 +160,8 @@ function j(e, t) {
     questContent: t.content,
     questContentPosition: t.position,
     questContentCTA: t.ctaContent,
-    impressionId: t.impressionId
+    impressionId: t.impressionId,
+    sourceQuestContent: t.sourceQuestContent
   }), (0, s.ZDy)(async () => {
     let {
       default: i
@@ -207,24 +212,29 @@ function B() {
 }
 
 function V(e) {
-  let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    n = (0, i.Z)();
+  let {
+    quest: t,
+    sourceQuestContent: n,
+    autoplay: a = !0
+  } = e, o = (0, i.Z)();
   (0, s.ZDy)(async () => {
     let {
-      default: i
+      default: e
     } = await B();
-    return a => (0, r.jsx)(i, R(N({}, a), {
+    return i => (0, r.jsx)(e, R(N({}, i), {
       openStartClockTime: performance.now(),
-      questId: e.id,
-      autoplay: t,
-      videoSessionId: n
+      questId: t.id,
+      autoplay: a,
+      videoSessionId: o,
+      sourceQuestContent: n
     }))
   }, {
-    modalKey: (0, g.u7)(e.id),
+    modalKey: (0, g.u7)(t.id),
     backdropStyle: s.fCB.IMMERSIVE,
     onCloseCallback: () => (0, g.Mo)({
-      questId: e.id,
-      videoSessionId: n
+      questId: t.id,
+      sourceQuestContent: n,
+      videoSessionId: o
     })
   })
 }

@@ -27,50 +27,52 @@ let v = function(e) {
       className: n,
       quest: a,
       autoplay: v = !0,
-      learnMoreStyle: I = null
+      learnMoreStyle: I = null,
+      sourceQuestContent: T
     } = e,
-    T = (0, _.O5)(),
-    S = (0, l.e7)([f.Z], () => f.Z.isFocused()),
-    A = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
-    N = i.useMemo(() => (0, h.fh)(a, h.eC.REWARD), [a]),
-    C = i.useCallback(t => {
+    S = (0, _.O5)(),
+    A = (0, l.e7)([f.Z], () => f.Z.isFocused()),
+    N = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
+    C = i.useMemo(() => (0, h.fh)(a, h.eC.REWARD), [a]),
+    R = i.useCallback(t => {
       var n;
-      (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), T({
+      (0, s.k)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), S({
         questId: a.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
-        questContentCTA: _.jZ.REWARD_LEARN_MORE
+        questContentCTA: _.jZ.REWARD_LEARN_MORE,
+        sourceQuestContent: T
       }), (0, b.navigateToQuestHome)({
         fromContent: e.questContent,
         questId: a.id
       }), null == (n = e.onClick) || n.call(e, t)
-    }, [T, a.id, e]),
-    R = i.useRef(null),
-    P = i.useRef(v),
-    w = (0, p.Bg)(a.config);
+    }, [S, a.id, e, T]),
+    P = i.useRef(null),
+    w = i.useRef(v),
+    D = (0, p.Bg)(a.config);
   return i.useEffect(() => {
-    if (null != R.current) {
-      if (!N.isAnimated || A) {
-        R.current.currentTime = 0, R.current.pause();
+    if (null != P.current) {
+      if (!C.isAnimated || N) {
+        P.current.currentTime = 0, P.current.pause();
         return
       }
-      v && !P.current ? R.current.play() : !v && P.current && (R.current.currentTime = 0, R.current.pause()), P.current = v
+      v && !w.current ? P.current.play() : !v && w.current && (P.current.currentTime = 0, P.current.pause()), w.current = v
     }
-  }, [v, N, A]), t = w ? (0, r.jsx)(E.Fl, {
+  }, [v, C, N]), t = D ? (0, r.jsx)(E.Fl, {
     id: "QuestRewardTile_rewardTileNitro",
     children: e => (0, r.jsx)(g.Z, {
       ref: e,
       className: O.questRewardTileAsset
     })
-  }) : N.isAnimated ? (0, r.jsx)(E.Fl, {
+  }) : C.isAnimated ? (0, r.jsx)(E.Fl, {
     id: "QuestRewardTile_rewardTileAnimated",
     children: t => {
       var n;
       return (0, r.jsx)(d.Z, {
         ref: e => {
-          t.current = e, R.current = e
+          t.current = e, P.current = e
         },
-        autoPlay: !A && v,
+        autoPlay: !N && v,
         loop: !0,
         muted: !0,
         playsInline: !0,
@@ -78,8 +80,8 @@ let v = function(e) {
         controls: !1,
         onProgress: e.onLoadComplete,
         children: (0, r.jsx)("source", {
-          src: N.url,
-          type: null != (n = N.mimetype) ? n : void 0
+          src: C.url,
+          type: null != (n = C.mimetype) ? n : void 0
         })
       })
     }
@@ -89,7 +91,7 @@ let v = function(e) {
       ref: t,
       alt: m.r.build(a.config).defaultRewardName,
       className: o()(O.questRewardTileAsset, O.questRewardTileAssetStatic),
-      src: N.url,
+      src: C.url,
       onLoad: e.onLoadComplete
     })
   }), null == I ? (0, r.jsx)("div", {
@@ -97,11 +99,11 @@ let v = function(e) {
     children: t
   }) : (0, r.jsxs)(c.P3F, {
     className: o()(O.questRewardTileInteractive, O.questRewardTile, O.rewardHighlight, n),
-    onClick: C,
+    onClick: R,
     children: [t, (0, r.jsx)(c.ZX5, {
       className: O.shine,
       shineSize: c.rHe.SMALL,
-      shinePaused: !S || A
+      shinePaused: !A || N
     }), "text" === I && (0, r.jsx)(c.Text, {
       color: "always-white",
       variant: "text-xs/normal",

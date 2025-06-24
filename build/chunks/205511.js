@@ -1,6 +1,6 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => P
+  Z: () => w
 });
 var r = n(255367),
   s = n(73800),
@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(959078),
   l = n(442837),
   c = n(481060),
-  d = n(607070),
-  u = n(553795),
+  u = n(607070),
+  d = n(553795),
   p = n(617136),
   m = n(915750),
   f = n(111382),
@@ -19,61 +19,62 @@ var r = n(255367),
   h = n(918701),
   b = n(467628),
   j = n(667105),
-  v = n(585857),
-  _ = n(795057),
+  _ = n(585857),
+  v = n(795057),
   y = n(46140),
-  O = n(388032),
-  C = n(22559);
+  C = n(388032),
+  O = n(22559);
 
-function w(e) {
+function S(e) {
   return (0, r.jsx)(c.Text, {
-    className: C.microphoneUnitBodyText,
+    className: O.microphoneUnitBodyText,
     color: "text-muted",
     variant: "text-xxs/normal",
     children: e.children
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     quest: t,
     useReducedMotion: n
-  } = e, o = (0, f.n)(), l = (0, j.k3)(t.id, x.jn.QUEST_BAR_V2), d = (0, j.g2)({
+  } = e, o = (0, f.n)(), l = (0, j.k3)(t.id, x.jn.QUEST_BAR_V2, x.jn.QUEST_BAR_V2), u = (0, j.g2)({
     useReducedMotion: n
-  }), b = (0, p.O5)(), v = (0, m.aM)(), {
-    errorHints: _,
+  }), b = (0, p.O5)(), _ = (0, m.aM)(), {
+    errorHints: v,
     startingConsoleQuest: y,
-    startConsoleQuest: S
+    startConsoleQuest: E
   } = (0, g.GI)({
     questId: t.id,
     beforeRequest: () => {
       b({
         questId: t.id,
         questContent: x.jn.QUEST_BAR_V2,
-        questContentCTA: p.jZ.DEFIBRILLATOR
-      }), d.startAnimation()
+        questContentCTA: p.jZ.DEFIBRILLATOR,
+        sourceQuestContent: x.jn.QUEST_BAR_V2
+      }), u.startAnimation()
     },
-    afterRequest: d.stopAnimation
+    afterRequest: u.stopAnimation
   }), {
-    header: P,
-    renderBody: E
+    header: w,
+    renderBody: T
   } = s.useMemo(() => {
-    let e = _.length > 0,
+    let e = v.length > 0,
       n = t.config.messages.gameTitle;
     return {
-      header: e ? O.intl.formatToPlainString(O.t["28Ql29"], {
+      header: e ? C.intl.formatToPlainString(C.t["28Ql29"], {
         gameTitle: n
-      }) : O.intl.formatToPlainString(O.t.gX0Qc3, {
+      }) : C.intl.formatToPlainString(C.t.gX0Qc3, {
         gameTitle: n
       }),
       renderBody: e ? () => (0, r.jsx)(r.Fragment, {
-        children: _.map((e, n) => {
+        children: v.map((e, n) => {
           if (e.type === i.K.EXPIRED_CREDENTIAL && o) {
-            let s = u.Z.getAccount(e.connected_account_id, e.connected_account_type),
+            let s = d.Z.getAccount(e.connected_account_id, e.connected_account_type),
               o = (0, h.C9)(e),
               a = (0, h._j)(e);
-            return (0, r.jsx)(w, {
-              children: O.intl.format(o, {
+            return (0, r.jsx)(S, {
+              children: C.intl.format(o, {
                 account_name: null == s ? void 0 : s.name,
                 onClick: () => {
                   (0, h.fY)({
@@ -82,64 +83,65 @@ function S(e) {
                   }, {
                     content: x.jn.QUEST_BAR,
                     ctaContent: p.jZ.DEFIBRILLATOR_RECONNECT_CONSOLE,
-                    impressionId: v
+                    impressionId: _,
+                    sourceQuestContent: x.jn.QUEST_BAR_V2
                   })
                 }
               })
             }, n)
           }
-          return (0, r.jsx)(w, {
+          return (0, r.jsx)(S, {
             children: e.message
           }, n)
         })
       }) : () => (0, r.jsx)(c.Text, {
-        className: C.microphoneUnitBodyText,
+        className: O.microphoneUnitBodyText,
         color: "text-muted",
         variant: "text-xxs/normal",
-        children: O.intl.format(O.t.GXqvCw, {
+        children: C.intl.format(C.t.GXqvCw, {
           gameTitle: n
         })
       })
     }
-  }, [_, t, o, v]);
+  }, [v, t, o, _]);
   return (0, r.jsxs)("div", {
-    className: C.microphoneUnit,
+    className: O.microphoneUnit,
     children: [(0, r.jsxs)("div", {
-      className: C.microphoneUnitHeader,
+      className: O.microphoneUnitHeader,
       children: [(0, r.jsx)(c.P4T, {
         size: "custom",
         color: "currentColor",
-        className: 0 === _.length ? C.warningCircle : C.errorCircle,
+        className: 0 === v.length ? O.warningCircle : O.errorCircle,
         width: 16,
         height: 16
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/medium",
-        children: P
+        children: w
       }), (0, r.jsx)(c.P3F, {
-        className: a()(C.microphoneUnitRefreshIconWrapper, {
-          [C.disabled]: y
+        className: a()(O.microphoneUnitRefreshIconWrapper, {
+          [O.disabled]: y
         }),
-        onClick: () => S(),
-        children: d.render()
+        onClick: () => E(),
+        children: u.render()
       })]
     }), (0, r.jsxs)("div", {
       className: a()({
-        [C.opacity_50]: y
+        [O.opacity_50]: y
       }),
-      children: [E(), 0 === _.length ? null : (0, r.jsx)(w, {
+      children: [T(), 0 === v.length ? null : (0, r.jsx)(S, {
         children: l
       })]
     })]
   })
 }
-let P = function(e) {
+let w = function(e) {
   let {
     quest: t,
     taskDetails: n
-  } = e, o = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), a = (0, g.z6)(), i = (0, b.j)({
+  } = e, o = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), a = (0, g.z6)(), i = (0, b.j)({
     location: y.dr.QUESTS_BAR
   }), c = s.useMemo(() => (0, h.B3)(t).filter(e => a.xboxAndPlaystationAccounts.find(t => t.type === e)), [a.xboxAndPlaystationAccounts, t]), {
-    steps: u,
+    steps: d,
     hasConnectedAccounts: p,
     isProgressingQuestForLaunchedGame: m,
     isQuestComplete: f
@@ -153,7 +155,7 @@ let P = function(e) {
       steps: [{
         renderContent: () => {
           var e, n;
-          return (0, r.jsx)(v.Q, (e = function(e) {
+          return (0, r.jsx)(_.Q, (e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -171,7 +173,8 @@ let P = function(e) {
             }
             return e
           }({}, a), n = n = {
-            quest: t
+            quest: t,
+            sourceQuestContent: x.jn.QUEST_BAR_V2
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -185,15 +188,15 @@ let P = function(e) {
         },
         isComplete: s || o || l
       }, {
-        renderContent: () => (0, r.jsx)(_.y3, {
-          children: O.intl.formatToPlainString(O.t["+8JB6e"], {
+        renderContent: () => (0, r.jsx)(v.y3, {
+          children: C.intl.formatToPlainString(C.t["+8JB6e"], {
             gameTitle: i
           })
         }),
         isComplete: o || l
       }, {
-        renderContent: () => (0, r.jsx)(_.y3, {
-          children: O.intl.formatToPlainString(O.t.HhfrYW, {
+        renderContent: () => (0, r.jsx)(v.y3, {
+          children: C.intl.formatToPlainString(C.t.HhfrYW, {
             numMinutes: n.targetMinutes
           })
         }),
@@ -204,12 +207,12 @@ let P = function(e) {
       isQuestComplete: l
     }
   }, [a, c.length, t, n.targetMinutes]);
-  return (0, r.jsxs)(_.ZP, {
-    heading: O.intl.string(O.t.UPWlJi),
-    steps: u,
-    children: [i && (0, r.jsx)(_.Om, {
+  return (0, r.jsxs)(v.ZP, {
+    heading: C.intl.string(C.t.UPWlJi),
+    steps: d,
+    children: [i && (0, r.jsx)(v.Om, {
       quest: t
-    }), p && !m && !f && (0, r.jsx)(S, {
+    }), p && !m && !f && (0, r.jsx)(E, {
       useReducedMotion: o,
       quest: t
     })]

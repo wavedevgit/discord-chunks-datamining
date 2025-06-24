@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(377171),
   b = n(633302),
   _ = n(856555),
-  O = n(153066),
-  E = n(335131),
+  E = n(153066),
+  O = n(335131),
   y = n(744112),
   I = n(267097),
   v = n(364111),
@@ -115,20 +115,20 @@ let D = e => {
     let b = (0, l.JA)("shop"),
       _ = h.Z.HOME_PAGE_SHOP_TAB,
       {
-        analyticsLocations: O
+        analyticsLocations: E
       } = (0, f.ZP)(_),
       [y, I] = i.useState(!1),
       v = i.useCallback(() => {
-        void 0 !== o && o(), void 0 !== c && (0, E.mK)({
+        void 0 !== o && o(), void 0 !== c && (0, O.mK)({
           openInLayer: !1,
           tab: c,
-          analyticsLocations: O,
+          analyticsLocations: E,
           analyticsSource: _
-        }), I(!0), (0, E.Sm)({
+        }), I(!0), (0, O.Sm)({
           analyticsSource: _,
-          analyticsLocations: O
+          analyticsLocations: E
         })
-      }, [_, O, o, I, c]),
+      }, [_, E, o, I, c]),
       C = j.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
       children: [y && (0, r.jsx)(k, {}), (0, r.jsx)(u.Qj, L(w({
@@ -181,7 +181,7 @@ let D = e => {
   }),
   B = e => {
     let t, n;
-    var l, c, u, h, f, g, m, b, _, E, y, I, {
+    var l, c, u, h, f, g, m, b, _, O, y, I, {
         displayOptions: v
       } = e,
       C = R(e, ["displayOptions"]);
@@ -190,7 +190,7 @@ let D = e => {
       [P, j] = i.useState(!1),
       A = (0, d.ZP)(),
       k = (0, o.wj)(A);
-    P ? k ? (t = null == (l = v.entryPointBackgroundAssets) ? void 0 : l.srcDarkHovered, n = null == (u = v.entrypointBackgroundStyle) || null == (c = u.hovered) ? void 0 : c.dark) : (t = null == (h = v.entryPointBackgroundAssets) ? void 0 : h.srcLightHovered, n = null == (g = v.entrypointBackgroundStyle) || null == (f = g.hovered) ? void 0 : f.light) : k ? (t = null == (m = v.entryPointBackgroundAssets) ? void 0 : m.srcDark, n = null == (_ = v.entrypointBackgroundStyle) || null == (b = _.resting) ? void 0 : b.dark) : (t = null == (E = v.entryPointBackgroundAssets) ? void 0 : E.srcLight, n = null == (I = v.entrypointBackgroundStyle) || null == (y = I.resting) ? void 0 : y.light);
+    P ? k ? (t = null == (l = v.entryPointBackgroundAssets) ? void 0 : l.srcDarkHovered, n = null == (u = v.entrypointBackgroundStyle) || null == (c = u.hovered) ? void 0 : c.dark) : (t = null == (h = v.entryPointBackgroundAssets) ? void 0 : h.srcLightHovered, n = null == (g = v.entrypointBackgroundStyle) || null == (f = g.hovered) ? void 0 : f.light) : k ? (t = null == (m = v.entryPointBackgroundAssets) ? void 0 : m.srcDark, n = null == (_ = v.entrypointBackgroundStyle) || null == (b = _.resting) ? void 0 : b.dark) : (t = null == (O = v.entryPointBackgroundAssets) ? void 0 : O.srcLight, n = null == (I = v.entrypointBackgroundStyle) || null == (y = I.resting) ? void 0 : y.light);
     let U = i.useCallback(e => {
         T(e => (e + 1) % v.assetIds.length), j(!0), null == e || e()
       }, [v.assetIds.length]),
@@ -211,7 +211,7 @@ let D = e => {
       hideOnClick: !1,
       "aria-label": "string" == typeof V ? V : Z.intl.string(Z.t.rSXaxc),
       children: e => (0, r.jsxs)(M, L(w(L(w({
-        className: null != v.entryPointClassName ? (0, O.l)(x, v.entryPointClassName) : void 0
+        className: null != v.entryPointClassName ? (0, E.l)(x, v.entryPointClassName) : void 0
       }, C), {
         icon: v.entryPointIcon
       }), e), {

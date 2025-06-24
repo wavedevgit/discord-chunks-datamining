@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(919285),
   b = n(50101),
   _ = n(118470),
-  O = n(413307),
-  E = n(374023),
+  E = n(413307),
+  O = n(374023),
   y = n(661599),
   I = n(617899),
   v = n(8521),
@@ -104,7 +104,7 @@ let Z = e => {
   } = e;
   switch ((0, S.Z)(t)) {
     case S.R.ENABLE_PUBLIC_GUILD:
-      return (0, r.jsx)(O.Z, {
+      return (0, r.jsx)(E.Z, {
         guild: t
       });
     case S.R.APPLIED_GUILD_BOOST_GRACE_PERIOD:
@@ -136,7 +136,7 @@ let Z = e => {
         guild: t
       })
   }
-  return E.s.isDisallowPopupsSet() ? null : (0, r.jsx)(A, {
+  return O.s.isDisallowPopupsSet() ? null : (0, r.jsx)(A, {
     guild: e.guild
   })
 }

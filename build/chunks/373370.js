@@ -295,19 +295,21 @@ function D(e) {
   let {
     quest: t,
     location: n,
-    questContent: r
-  } = e, o = (0, s.uA)({
+    questContent: r,
+    sourceQuestContent: o
+  } = e, l = (0, s.uA)({
     quest: t,
-    questContent: r
-  }), l = (0, i.e7)([a.default], () => a.default.getCurrentUser()), u = (0, s.Jf)(t);
+    questContent: r,
+    sourceQuestContent: o
+  }), u = (0, i.e7)([a.default], () => a.default.getCurrentUser()), d = (0, s.Jf)(t);
   return w(b(g({}, e), {
-    connectedConsoleLinkOnClick: o,
+    connectedConsoleLinkOnClick: l,
     withoutMarkdown: !1,
     withSimplifiedCopy: (0, c.j)({
       location: n
     }),
-    currentUser: l,
-    thirdPartyTaskDetails: null != u ? u : void 0
+    currentUser: u,
+    thirdPartyTaskDetails: null != d ? d : void 0
   }))
 }
 

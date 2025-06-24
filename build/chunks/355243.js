@@ -31,8 +31,8 @@ function v(e) {
     duration: b,
     maxSeekableTime: E,
     onClick: O,
-    onScrubBack: h,
-    onScrubForward: C
+    onScrubBack: C,
+    onScrubForward: h
   } = e, [S, j] = l.useState(null), [y, _] = l.useState(null), [x, D] = l.useState(null), [T, P] = l.useState(!1), N = l.useRef(null), k = e => {
     N.current = e, j(e)
   };
@@ -58,8 +58,8 @@ function v(e) {
       let {
         key: t
       } = e;
-      t === d.mR.ArrowLeft && null != h ? (e.preventDefault(), e.stopPropagation(), h()) : t === d.mR.ArrowRight && null != C && (e.preventDefault(), e.stopPropagation(), C())
-    }, [h, C]),
+      t === d.mR.ArrowLeft && null != C ? (e.preventDefault(), e.stopPropagation(), C()) : t === d.mR.ArrowRight && null != h && (e.preventDefault(), e.stopPropagation(), h())
+    }, [C, h]),
     R = null != y && null != S ? f(y, S, b) : 0,
     M = (0, u.yv)(R),
     V = null != S ? S.right - p(t / 100 * b, b, S) : null,

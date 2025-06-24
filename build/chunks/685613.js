@@ -4,10 +4,10 @@ n.d(t, {
   ZP: () => f,
   fF: () => g
 });
-var r, s, i = n(255367);
+var r, s, o = n(255367);
 n(73800);
-var o = n(120356),
-  a = n.n(o),
+var i = n(120356),
+  a = n.n(i),
   l = n(692547),
   c = n(780384),
   u = n(481060),
@@ -24,21 +24,21 @@ let f = function(e) {
     logotypeClassName: n,
     gameTileSize: r = 24,
     quest: s,
-    separatorSpacing: o = 2,
+    separatorSpacing: i = 2,
     theme: g = p.BRd.DARK,
     withCosponsor: j = !0,
     withGameTile: f = !0,
-    onLoadComplete: b
-  } = e, C = (0, c.wj)(g) ? p.BRd.DARK : p.BRd.LIGHT, v = (0, d.Gd)(s.id, C), y = j && null != s.config.cosponsorMetadata && null != v;
-  return (0, i.jsxs)("div", {
+    onLoadComplete: C
+  } = e, b = (0, c.wj)(g) ? p.BRd.DARK : p.BRd.LIGHT, v = (0, d.Gd)(s.id, b), y = j && null != s.config.cosponsorMetadata && null != v;
+  return (0, o.jsxs)("div", {
     className: a()(h.partnerBranding, t),
-    children: [f && (0, i.jsx)(x.Fl, {
+    children: [f && (0, o.jsx)(x.Fl, {
       id: "QuestPartnerBranding_gameTile",
-      children: e => (0, i.jsx)("img", {
+      children: e => (0, o.jsx)("img", {
         ref: e,
         className: h.partnerBrandingGameTile,
         alt: "",
-        src: (0, m.fh)(s, m.eC.GAME_TILE, C).url,
+        src: (0, m.fh)(s, m.eC.GAME_TILE, b).url,
         style: {
           borderRadius: function(e) {
             switch (e) {
@@ -51,39 +51,39 @@ let f = function(e) {
           width: r,
           height: r
         },
-        onLoad: b
+        onLoad: C
       })
-    }), (0, i.jsx)(x.Fl, {
+    }), (0, o.jsx)(x.Fl, {
       id: "QuestPartnerBranding_gameLogotype",
-      children: e => (0, i.jsx)("img", {
+      children: e => (0, o.jsx)("img", {
         ref: e,
         className: a()(h.partnerBrandingLogotype, n, {
           [h.partnerBrandingLogotypeWithCosponsor]: y
         }),
         alt: s.config.messages.gameTitle,
-        src: (0, m.fh)(s, m.eC.LOGO_TYPE, C).url,
-        onLoad: b
+        src: (0, m.fh)(s, m.eC.LOGO_TYPE, b).url,
+        onLoad: C
       })
-    }), y && (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)("div", {
+    }), y && (0, o.jsxs)(o.Fragment, {
+      children: [(0, o.jsx)("div", {
         className: h.cosponsorBrandSeparatorWrapper,
         style: {
-          margin: "0 ".concat(o, "px")
+          margin: "0 ".concat(i, "px")
         },
-        children: (0, i.jsx)(u.P$X, {
+        children: (0, o.jsx)(u.P$X, {
           className: h.cosponsorBrandSeparator,
           color: l.Z.colors.WHITE
         })
-      }), (0, i.jsx)(x.Fl, {
+      }), (0, o.jsx)(x.Fl, {
         id: "QuestPartnerBranding_cosponsorLogotype",
         children: e => {
           var t, r;
-          return (0, i.jsx)("img", {
+          return (0, o.jsx)("img", {
             ref: e,
             className: a()(h.partnerBrandingLogotype, h.partnerBrandingLogotypeWithCosponsor, n),
             alt: null != (r = null == (t = s.config.cosponsorMetadata) ? void 0 : t.name) ? r : "",
             src: v.url,
-            onLoad: b
+            onLoad: C
           })
         }
       })]

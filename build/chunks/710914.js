@@ -69,7 +69,8 @@ function p(e) {
         className: a()(d.questTile, {
           [d.selected]: p && e.id === l,
           [d.unselected]: p && e.id !== l
-        })
+        }),
+        sourceQuestContent: s.jn.QUEST_HOME_DESKTOP
       }, e.id)
     })
   }, null != l ? l : "")

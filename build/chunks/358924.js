@@ -17,8 +17,8 @@ var r, i = n(255367),
   m = n(655922),
   b = n(122810),
   _ = n(833664),
-  O = n(503438),
-  E = n(420660),
+  E = n(503438),
+  O = n(420660),
   y = n(74433),
   I = n(906732),
   v = n(812206),
@@ -92,7 +92,7 @@ class $ extends l.Component {
       {
         timestamps: n
       } = t;
-    return null == n || !(0, _.Z)(t) || (0, O.Z)(t) ? null : X((0, b.Z)(t) ? (0, i.jsx)(Q, {
+    return null == n || !(0, _.Z)(t) || (0, E.Z)(t) ? null : X((0, b.Z)(t) ? (0, i.jsx)(Q, {
       timestamps: n
     }) : (0, i.jsx)(Z.ZP, {
       start: n.start,
@@ -456,7 +456,7 @@ er.Header = en, er.Body = e => {
       assets: p,
       application_id: h
     } = r;
-  if (null != p && (0, E.Z)(r)) {
+  if (null != p && (0, O.Z)(r)) {
     var g;
     t = (0, i.jsx)(N.Z, {
       className: W.twitchSectionPreviewWrapper,
@@ -557,7 +557,7 @@ er.Header = en, er.Body = e => {
   let _ = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : void 0,
-    O = (0, G.xF)(b.id, o, 300);
+    E = (0, G.xF)(b.id, o, 300);
   return (0, i.jsxs)(J, {
     children: [(0, i.jsxs)("div", {
       className: W.embeddedActivityTopRow,
@@ -583,8 +583,8 @@ er.Header = en, er.Body = e => {
       }) : null]
     }), (0, i.jsxs)("div", {
       className: W.embeddedActivityPlayerContainer,
-      children: [null != O ? (0, i.jsx)("img", {
-        src: O,
+      children: [null != E ? (0, i.jsx)("img", {
+        src: E,
         alt: b.name,
         className: W.embeddedActivityImage
       }) : null, (0, i.jsxs)("div", {

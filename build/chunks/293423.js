@@ -29,8 +29,8 @@ let b = e => {
     relevantSubscriptionListingIds: null == _ ? void 0 : _.subscription_listings_ids
   });
   let {
-    activeSubscription: O
-  } = (0, o.Z)(null == _ ? void 0 : _.id), E = (0, l.YB)(b.id), y = null == E ? void 0 : E.description, {
+    activeSubscription: E
+  } = (0, o.Z)(null == _ ? void 0 : _.id), O = (0, l.YB)(b.id), y = null == O ? void 0 : O.description, {
     editStateIds: I
   } = a.B7(null != (t = null == _ ? void 0 : _.id) ? t : null, b.id);
   return (0, r.jsxs)(r.Fragment, {
@@ -39,14 +39,14 @@ let b = e => {
         serverName: b.toString()
       }),
       description: null != y ? y : null,
-      coverImageAsset: null != (n = null == E ? void 0 : E.cover_image_asset) ? n : null,
+      coverImageAsset: null != (n = null == O ? void 0 : O.cover_image_asset) ? n : null,
       guild: b,
       children: [null != _ ? (0, r.jsx)(c.Z, {
         className: m.pendingPlanChangeNotice,
         groupListingId: _.id,
-        subscription: O
+        subscription: E
       }) : null, (0, r.jsx)(u.Z, {
-        subscription: O
+        subscription: E
       })]
     }), (0, r.jsx)(i.y5t, {
       children: (0, r.jsx)(d.Z, {

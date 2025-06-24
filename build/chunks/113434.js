@@ -242,44 +242,48 @@ function ei(e) {
 let ea = e => {
   let {
     quest: t,
-    questContent: n
-  } = e, r = e_({
+    questContent: n,
+    sourceQuestContent: r
+  } = e, i = e_({
     quest: t
-  }), i = (0, S.WD)();
+  }), a = (0, S.WD)();
   return () => {
-    r ? (0, R.gI)({
+    i ? (0, R.gI)({
       quest: t
     }, {
       content: n,
       ctaContent: T.jZ.CONNECT_CONSOLE_LINK,
-      impressionId: null == i ? void 0 : i.getId()
+      impressionId: null == a ? void 0 : a.getId(),
+      sourceQuestContent: r
     }) : (0, R.V$)({
       quest: t
     }, {
       content: n,
       ctaContent: T.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-      impressionId: null == i ? void 0 : i.getId()
+      impressionId: null == a ? void 0 : a.getId(),
+      sourceQuestContent: r
     })
   }
 };
 
-function eo(e, t, n) {
+function eo(e, t, n, r) {
   let {
-    targetMinutes: r
-  } = er(e), i = ei(e), a = ea({
+    targetMinutes: i
+  } = er(e), a = ei(e), o = ea({
     quest: e,
-    questContent: n
+    questContent: n,
+    sourceQuestContent: r
   });
   if ((0, R.$J)(e) && !(0, R.Nj)({
       quest: e
     })) return j.intl.format(j.t["l4S+cX"], {
-    minutes: r,
-    onClick: a,
+    minutes: i,
+    onClick: o,
     gameTitle: L.r.build(e.config).application.name
   });
   if ((0, R.$J)(e)) return j.intl.format(j.t.Ajlcd3, {
-    minutes: r,
-    onClick: a,
+    minutes: i,
+    onClick: o,
     gameTitle: L.r.build(e.config).application.name
   });
   if ((0, R.q8)(e)) {
@@ -289,15 +293,15 @@ function eo(e, t, n) {
       videoTitle: n
     })
   }
-  if (null != i) return i.title;
+  if (null != a) return a.title;
   if ((0, R.pO)(e) && (0, R.KM)(e)) return j.intl.format(j.t["1NaRSk"], {
-    minutes: r
+    minutes: i
   });
-  let o = j.t["6zWtV1"];
+  let s = j.t["6zWtV1"];
   return (0, R.Nj)({
     quest: e
-  }) && (o = j.t["wmOh/v"]), j.intl.format(o, {
-    minutes: r,
+  }) && (s = j.t["wmOh/v"]), j.intl.format(s, {
+    minutes: i,
     gameTitle: e.config.messages.gameTitle
   })
 }
@@ -472,21 +476,22 @@ function eg(e) {
   }
 }
 
-function eE(e) {
-  var t, n;
-  let r = er(e),
-    i = (0, R.b7)(e),
-    a = (0, w.DD)({
+function eE(e, t) {
+  var n, r;
+  let i = er(e),
+    a = (0, R.b7)(e),
+    o = (0, w.DD)({
       quest: e,
-      taskDetails: r,
+      taskDetails: i,
       location: x.dr.QUEST_HOME_DESKTOP,
-      questContent: C.jn.QUEST_HOME_DESKTOP
+      questContent: C.jn.QUEST_HOME_DESKTOP,
+      sourceQuestContent: t
     }),
-    o = (null == (t = e.userStatus) ? void 0 : t.claimedAt) != null,
-    s = Q(null == (n = e.userStatus) ? void 0 : n.claimedAt);
-  return o ? j.intl.formatToPlainString(j.t.lOVr0N, {
-    claimDate: s
-  }) : null != i ? i.description : null != a ? a : null
+    s = (null == (n = e.userStatus) ? void 0 : n.claimedAt) != null,
+    l = Q(null == (r = e.userStatus) ? void 0 : r.claimedAt);
+  return s ? j.intl.formatToPlainString(j.t.lOVr0N, {
+    claimDate: l
+  }) : null != a ? a.description : null != o ? o : null
 }
 
 function eb(e) {
@@ -578,25 +583,28 @@ function eT(e) {
   let {
     mode: t,
     questContent: n,
-    questId: i
-  } = e, a = r.useRef(null);
+    sourceQuestContent: i,
+    questId: a
+  } = e, o = r.useRef(null);
   r.useEffect(() => {
-    null != i && a.current !== t && ((0, T.Ic)({
+    null != a && o.current !== t && ((0, T.Ic)({
       mode: t,
-      prevMode: a.current,
+      prevMode: o.current,
       questContent: n,
-      questId: i
-    }), a.current = t)
-  }, [i, n, t]), r.useEffect(() => {
-    if (null != i) return () => {
+      questId: a,
+      sourceQuestContent: i
+    }), o.current = t)
+  }, [a, n, t, i]), r.useEffect(() => {
+    if (null != a) return () => {
       (0, T.Ic)({
         mode: null,
-        prevMode: a.current,
+        prevMode: o.current,
         questContent: n,
-        questId: i
+        questId: a,
+        sourceQuestContent: i
       })
     }
-  }, [i, n])
+  }, [a, n, i])
 }
 
 function eS(e) {
@@ -619,33 +627,33 @@ function eS(e) {
   return a === C.LI.SELECT ? j.intl.string(j.t.EMrUHR) : (0, R.$J)(e) ? j.intl.string(j.t.mOrpXF) : j.intl.string(j.t["7e5k7O"])
 }
 
-function eA(e, t, n) {
-  var i;
-  let a = Q(r.useMemo(() => L.r.build(e.config).rewardsExpireAt, [e.config])),
-    o = er(e),
-    s = ei(e),
-    l = (null == (i = e.userStatus) ? void 0 : i.completedAt) != null,
-    c = et(e),
-    u = (0, w.DD)({
-      quest: e,
-      location: x.dr.QUESTS_BAR,
-      questContent: C.jn.QUEST_BAR_V2,
-      taskDetails: o
-    }),
-    d = null != s ? s.percentComplete : o.percentComplete;
-  if (l) return j.intl.formatToPlainString(j.t.APddvL, {
-    expirationDate: a
+function eA(e) {
+  var t;
+  let {
+    quest: n,
+    isExpanded: i,
+    sourceQuestContent: a,
+    activeScreen: o
+  } = e, s = Q(r.useMemo(() => L.r.build(n.config).rewardsExpireAt, [n.config])), l = er(n), c = ei(n), u = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, d = et(n), f = (0, w.DD)({
+    quest: n,
+    location: x.dr.QUESTS_BAR,
+    questContent: C.jn.QUEST_BAR_V2,
+    taskDetails: l,
+    sourceQuestContent: a
+  }), _ = null != c ? c.percentComplete : l.percentComplete;
+  if (u) return j.intl.formatToPlainString(j.t.APddvL, {
+    expirationDate: s
   });
-  if (t)
-    if (n === C.LI.SELECT) return j.intl.string(j.t.sWUpNz);
-    else return u;
-  if ((0, R.q8)(e)) return j.intl.string(j.t["o+e9ys"]);
-  if (d > 0)
-    if (!c) return j.intl.string(j.t.mOrpXF);
+  if (i)
+    if (o === C.LI.SELECT) return j.intl.string(j.t.sWUpNz);
+    else return f;
+  if ((0, R.q8)(n)) return j.intl.string(j.t["o+e9ys"]);
+  if (_ > 0)
+    if (!d) return j.intl.string(j.t.mOrpXF);
     else return (0, R.AV)({
-      quest: e,
-      taskDetails: o,
-      thirdPartyTaskDetails: null != s ? s : void 0
+      quest: n,
+      taskDetails: l,
+      thirdPartyTaskDetails: null != c ? c : void 0
     });
   return j.intl.string(j.t.S6UUc3)
 }

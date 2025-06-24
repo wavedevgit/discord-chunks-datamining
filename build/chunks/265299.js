@@ -35,6 +35,7 @@ function m(e) {
     reason: d.X.MOBILE_ONLY
   }) : (0, r.jsx)(c.Z, {
     quest: h,
-    location: o.jn.QUESTS_EMBED
+    location: o.jn.QUESTS_EMBED,
+    sourceQuestContent: o.jn.QUESTS_EMBED
   }, h.id)
 }

@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(626135),
   b = n(960048),
   _ = n(981631),
-  O = n(921944),
-  E = n(388032),
+  E = n(921944),
+  O = n(388032),
   y = n(937976);
 
 function I(e) {
@@ -177,7 +177,7 @@ function T(e) {
         change_log_id: L,
         seconds_open: Math.round((Date.now() - e) / 1e3)
       }), null != T && (0, f.EW)(T, {
-        dismissAction: O.L.DISMISS
+        dismissAction: E.L.DISMISS
       })
     }
   }, [T, L]), (0, r.jsxs)(s.Y0X, {
@@ -219,7 +219,7 @@ function T(e) {
         },
         disablePictureInPicture: !0,
         children: null == er ? void 0 : er.map(e => {
-          let t = (0, E.getLanguages)().find(t => t.code === e.locale);
+          let t = (0, O.getLanguages)().find(t => t.code === e.locale);
           return null == t ? null : (0, r.jsx)("track", {
             label: t.englishName,
             kind: "captions",

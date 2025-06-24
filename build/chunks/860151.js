@@ -1,59 +1,62 @@
 /** Chunk was on 64838 **/
-l.d(t, {
-  Z: () => p
+n.d(t, {
+  Z: () => m
 });
-var n = l(255367);
-l(73800);
-var r = l(120356),
-  s = l.n(r),
-  i = l(481060),
-  a = l(192023),
-  o = l(467628),
-  u = l(373370),
-  c = l(65443),
-  d = l(644646),
-  m = l(46140),
-  E = l(817447);
-let p = function(e) {
+var l = n(255367);
+n(73800);
+var s = n(120356),
+  r = n.n(s),
+  i = n(481060),
+  o = n(192023),
+  u = n(467628),
+  a = n(373370),
+  c = n(65443),
+  d = n(644646),
+  E = n(46140),
+  S = n(817447);
+let m = function(e) {
   let {
     className: t,
-    autoplay: l,
-    quest: r,
-    questContent: p,
-    taskDetails: A,
-    location: S
-  } = e, f = (0, u.DD)({
-    quest: r,
-    taskDetails: A,
-    location: S,
-    questContent: p
-  }), j = (0, o.j)({
-    location: m.dr.QUESTS_BAR_MOBILE
-  }), T = (0, a.h)({
-    location: S,
-    questConfig: r.config
+    autoplay: n,
+    quest: s,
+    questContent: m,
+    taskDetails: T,
+    location: A,
+    sourceQuestContent: j
+  } = e, _ = (0, a.DD)({
+    quest: s,
+    taskDetails: T,
+    location: A,
+    questContent: m,
+    sourceQuestContent: j
+  }), p = (0, u.j)({
+    location: E.dr.QUESTS_BAR_MOBILE
+  }), f = (0, o.h)({
+    location: A,
+    questConfig: s.config
   });
-  return (0, n.jsxs)("div", {
-    className: s()(E.wrapper, t),
-    style: T ? void 0 : {
-      color: r.config.colors.primary
+  return (0, l.jsxs)("div", {
+    className: r()(S.wrapper, t),
+    style: f ? void 0 : {
+      color: s.config.colors.primary
     },
-    children: [(0, n.jsx)(d.Z, {
-      autoplay: l,
-      className: E.rewardTile,
-      quest: r,
-      questContent: p,
-      location: S
-    }), (0, n.jsxs)("div", {
-      className: E.copy,
-      children: [(0, n.jsx)(i.Text, {
+    children: [(0, l.jsx)(d.Z, {
+      autoplay: n,
+      className: S.rewardTile,
+      quest: s,
+      questContent: m,
+      location: A,
+      sourceQuestContent: j
+    }), (0, l.jsxs)("div", {
+      className: S.copy,
+      children: [(0, l.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-normal",
-        children: f
-      }), j && (0, n.jsx)(c.Z, {
+        children: _
+      }), p && (0, l.jsx)(c.Z, {
         textColor: "text-muted",
         withRewardName: !0,
-        quest: r
+        quest: s
       })]
     })]
   })

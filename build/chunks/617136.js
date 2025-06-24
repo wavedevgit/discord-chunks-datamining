@@ -108,17 +108,18 @@ function w(e) {
     event: n,
     properties: r,
     trackGuildAndChannelMetadata: i = !1,
-    shouldExtendSession: a = !1
-  } = e, o = p.Z.quests.get(t);
-  if (null == o || (0, g.X7)({
+    shouldExtendSession: a = !1,
+    sourceQuestContent: o
+  } = e, l = p.Z.quests.get(t);
+  if (null == l || (0, g.X7)({
       location: b.dr.QUEST_PREVIEW_TOOL
     }) && u.Z.getLayers().includes(y.S9g.USER_SETTINGS)) return;
-  let l = v({}, R(o, a), r);
-  if (c.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, l), o.preview) return;
-  let f = A.has(n);
-  if (i) return s.ZP.trackWithMetadata(n, l, f);
-  d.default.track(n, l, {
-    flush: f
+  let f = v({}, R(l, a), (0, m.qe)(t, o), r);
+  if (c.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, f), l.preview) return;
+  let _ = A.has(n);
+  if (i) return s.ZP.trackWithMetadata(n, f, _);
+  d.default.track(n, f, {
+    flush: _
   })
 }
 var D = function(e) {
@@ -133,12 +134,13 @@ function L(e) {
     questContentPosition: o,
     questContentRowIndex: s,
     impressionId: c,
-    trackGuildAndChannelMetadata: u = !1
-  } = e, d = (0, m.qe)(t, n), _ = p.Z.getQuest(t), h = (0, a.S)();
+    trackGuildAndChannelMetadata: u = !1,
+    sourceQuestContent: d
+  } = e, _ = p.Z.getQuest(t), h = (0, a.S)();
   w({
     questId: t,
     event: y.rMx.QUEST_CONTENT_CLICKED,
-    properties: T(v({}, d, P(n, o, s), (0, l.Z)()), {
+    properties: T(v({}, P(n, o, s), (0, l.Z)()), {
       cta_name: r,
       quest_status: null != _ ? C(_) : null,
       impression_id: c,
@@ -146,24 +148,27 @@ function L(e) {
       click_id: (0, i.Z)()
     }),
     trackGuildAndChannelMetadata: u,
-    shouldExtendSession: (0, m.VB)(n)
+    shouldExtendSession: (0, m.VB)(n),
+    sourceQuestContent: d
   })
 }
 
 function x(e) {
   let {
     questContent: t,
-    questId: n,
-    mode: r,
-    prevMode: i
+    sourceQuestContent: n,
+    questId: r,
+    mode: i,
+    prevMode: a
   } = e;
   w({
-    questId: n,
+    questId: r,
     event: y.rMx.QUEST_BAR_MODE_CHANGED,
     properties: T(v({}, P(t)), {
-      mode: r,
-      previous_mode: i
-    })
+      mode: i,
+      previous_mode: a
+    }),
+    sourceQuestContent: n
   })
 }
 
@@ -176,7 +181,8 @@ function k() {
       event: r,
       properties: i,
       trackGuildAndChannelMetadata: a = !1,
-      shouldExtendSession: o = !1
+      shouldExtendSession: o = !1,
+      sourceQuestContent: s
     } = t;
     w({
       questId: n,
@@ -185,7 +191,8 @@ function k() {
         impression_id: null == e ? void 0 : e.getId()
       }),
       trackGuildAndChannelMetadata: a,
-      shouldExtendSession: o
+      shouldExtendSession: o,
+      sourceQuestContent: s
     })
   }
   return r.useCallback(t, [e])
@@ -200,19 +207,21 @@ function M() {
       questContentCTA: o,
       questContentPosition: s,
       questContentRowIndex: c,
-      trackGuildAndChannelMetadata: u = !1
-    } = t, d = p.Z.getQuest(n), _ = (0, a.S)();
+      trackGuildAndChannelMetadata: u = !1,
+      sourceQuestContent: d
+    } = t, _ = p.Z.getQuest(n), h = (0, a.S)();
     e({
       questId: n,
       event: y.rMx.QUEST_CONTENT_CLICKED,
-      properties: T(v({}, (0, m.qe)(n, r), P(r, s, c), (0, l.Z)()), {
+      properties: T(v({}, P(r, s, c), (0, l.Z)()), {
         cta_name: o,
-        quest_status: null != d ? C(d) : null,
+        quest_status: null != _ ? C(_) : null,
         click_id: (0, i.Z)(),
-        android_advertising_id: null != _ && (0, f.isAndroid)() ? _.advertisingId : null
+        android_advertising_id: null != h && (0, f.isAndroid)() ? h.advertisingId : null
       }),
       trackGuildAndChannelMetadata: u,
-      shouldExtendSession: (0, m.VB)(r)
+      shouldExtendSession: (0, m.VB)(r),
+      sourceQuestContent: d
     })
   }, [e])
 }

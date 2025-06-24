@@ -19,8 +19,8 @@ var i = n(481060),
   m = n(22382),
   b = n(747071),
   _ = n(49230),
-  O = n(981631),
-  E = n(65154);
+  E = n(981631),
+  O = n(65154);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,7 +40,7 @@ class I extends p.Z {
   constructor(...e) {
     var t;
     super(...e), t = this, y(this, "playingSoundsWeb", new Map), y(this, "_stopAndClearSounds", () => {
-      c.Z.supports(E.AN.SAMPLE_PLAYBACK) && c.Z.getMediaEngine().eachConnection(e => {
+      c.Z.supports(O.AN.SAMPLE_PLAYBACK) && c.Z.getMediaEngine().eachConnection(e => {
         e.stopAllSamplesLocalPlayback()
       }), this.playingSoundsWeb.forEach(e => {
         e.pause(), e.src = ""
@@ -57,7 +57,7 @@ class I extends p.Z {
           soundVolume: (0, b.Z)(n),
           reportSoundStartedPlaying: () => (0, h.xR)(e, r)
         };
-        c.Z.supports(E.AN.SAMPLE_PLAYBACK) ? await (0, _.$)(i) : await (0, _.h)(i, t.playingSoundsWeb)
+        c.Z.supports(O.AN.SAMPLE_PLAYBACK) ? await (0, _.$)(i) : await (0, _.h)(i, t.playingSoundsWeb)
       } finally {
         (0, h.R)(e, r)
       }
@@ -66,7 +66,7 @@ class I extends p.Z {
     }), y(this, "_handleOpenEducationModal", (e, t) => {
       if (null == e) return;
       let l = s.Z.getChannel(t),
-        c = d.ZP.getKeybindForAction(O.kg4.SOUNDBOARD_HOLD);
+        c = d.ZP.getKeybindForAction(E.kg4.SOUNDBOARD_HOLD);
       null != l && (0, g.Z)(l) && null != c && o.Z.hasHotspot(a.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
         let {
           default: t

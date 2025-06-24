@@ -82,7 +82,8 @@ function F(e) {
     return null != (e = E.Z.getChannel(null == M ? void 0 : M.channelId)) ? e : null
   }), z = (0, R.hf)({
     quest: O,
-    location: T.jn.MEMBERS_LIST
+    questContent: T.jn.MEMBERS_LIST,
+    sourceQuestContent: T.jn.MEMBERS_LIST
   }), q = (0, I.tP)(O), X = (null == O || null == (t = O.userStatus) ? void 0 : t.claimedAt) != null, Q = (null == O || null == (h = O.userStatus) ? void 0 : h.enrolledAt) != null, J = (null == O || null == (m = O.userStatus) ? void 0 : m.completedAt) != null, $ = (0, s.e7)([g.Z], () => g.Z.getState().theme), ee = (0, l.wj)($) ? L.BR.DARK : L.BR.LIGHT, et = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     ref: en,
     height: er
@@ -135,10 +136,12 @@ function F(e) {
         questId: O.id,
         questContent: T.jn.MEMBERS_LIST,
         questContentCTA: v.jZ.OPEN_DISCLOSURE,
-        trackGuildAndChannelMetadata: !0
+        trackGuildAndChannelMetadata: !0,
+        sourceQuestContent: T.jn.MEMBERS_LIST
       }), (0, P.openDisclosureModal)(O, {
         content: T.jn.MEMBERS_LIST,
-        ctaContent: v.jZ.OPEN_DISCLOSURE
+        ctaContent: v.jZ.OPEN_DISCLOSURE,
+        sourceQuestContent: T.jn.MEMBERS_LIST
       })
     },
     ep = () => {
@@ -146,7 +149,8 @@ function F(e) {
         questId: O.id,
         questContent: T.jn.MEMBERS_LIST,
         questContentCTA: v.jZ.LEARN_MORE,
-        trackGuildAndChannelMetadata: !0
+        trackGuildAndChannelMetadata: !0,
+        sourceQuestContent: T.jn.MEMBERS_LIST
       }), (0, P.navigateToQuestHome)({
         fromContent: T.jn.MEMBERS_LIST,
         questId: O.id
@@ -160,7 +164,8 @@ function F(e) {
         questId: O.id,
         questContent: T.jn.MEMBERS_LIST,
         questContentCTA: v.jZ.WATCH_STREAM,
-        trackGuildAndChannelMetadata: !0
+        trackGuildAndChannelMetadata: !0,
+        sourceQuestContent: T.jn.MEMBERS_LIST
       }), (0, c.ZDy)(async () => {
         let {
           default: e
@@ -171,7 +176,8 @@ function F(e) {
             questId: O.id,
             questContent: T.jn.MEMBERS_LIST,
             questContentCTA: v.jZ.WATCH_STREAM_CONFIRM,
-            trackGuildAndChannelMetadata: !0
+            trackGuildAndChannelMetadata: !0,
+            sourceQuestContent: T.jn.MEMBERS_LIST
           }), u.default.selectVoiceChannel(K.id), (0, d.iV)(M))
         }, t))
       })) : ep()
@@ -264,7 +270,8 @@ function F(e) {
               questContent: T.jn.MEMBERS_LIST,
               learnMoreStyle: "icon",
               location: w.dr.MEMBERS_LIST,
-              onClick: ed
+              onClick: ed,
+              sourceQuestContent: T.jn.MEMBERS_LIST
             })]
           })
         })]
@@ -285,6 +292,7 @@ function Z(e) {
     questOrQuests: e.quest,
     questContent: T.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: !0,
+    sourceQuestContent: T.jn.MEMBERS_LIST,
     children: t => (0, r.jsx)(F, j({
       impressionRef: t
     }, e))

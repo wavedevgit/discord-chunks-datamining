@@ -9,8 +9,8 @@ var r = n(255367),
   i = n(613087),
   l = n(457153),
   c = n(495722),
-  d = n(321025),
-  u = n(62753);
+  u = n(321025),
+  d = n(62753);
 let p = function(e) {
   var t;
   let {
@@ -23,25 +23,25 @@ let p = function(e) {
     onCtxMenuSelection: h,
     quest: b,
     useReducedMotion: j,
-    collapsedHeight: v
-  } = e, _ = s.useRef(null), y = s.useRef(null), O = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, C = (0, o.Rf)(b);
+    collapsedHeight: _
+  } = e, v = s.useRef(null), y = s.useRef(null), C = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, O = (0, o.Rf)(b);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: n,
-    collapsedContentRef: _,
+    collapsedContentRef: v,
     expansionSpring: p,
     children: [(0, r.jsx)(l.Z, {
-      ref: _,
-      className: u.content,
+      ref: v,
+      className: d.content,
       expansionSpring: p,
       isExpanded: m,
       isExpansionAnimationComplete: f,
       quest: b,
       useReducedMotion: j,
-      taskDetails: C
+      taskDetails: O
     }), (0, r.jsx)(c.Z, {
       expansionSpring: p,
-      className: u.content,
-      collapsedHeight: v,
+      className: d.content,
+      collapsedHeight: _,
       onCtxMenuOpen: g,
       onCtxMenuClose: x,
       onCtxMenuSelect: h,
@@ -51,12 +51,12 @@ let p = function(e) {
       quest: b,
       useReducedMotion: j,
       ref: n,
-      taskDetails: C,
+      taskDetails: O,
       children: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(d.Z, {
+        children: [(0, r.jsx)(u.Z, {
           expansionSpring: p,
           isExpanded: m
-        }), !O && (0, r.jsx)(a.Z, {
+        }), !C && (0, r.jsx)(a.Z, {
           quest: b,
           expansionSpring: p,
           useReducedMotion: j,
@@ -69,7 +69,7 @@ let p = function(e) {
       })
     }), (0, r.jsx)("div", {
       ref: y,
-      className: u.overlay
+      className: d.overlay
     })]
   })
 }

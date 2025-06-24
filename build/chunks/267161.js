@@ -19,8 +19,8 @@ var r = n(255367),
   m = n(300986),
   b = n(314451),
   _ = n(35583),
-  O = n(821020),
-  E = n(370774),
+  E = n(821020),
+  O = n(370774),
   y = n(522474),
   I = n(141321),
   v = n(210887),
@@ -81,7 +81,7 @@ function G() {
     c = null != i ? i : null == a ? void 0 : a.guild_id,
     u = (0, o.e7)([S.Z], () => S.Z.getGuild(c), [c]),
     d = (0, h.Z)(),
-    p = (0, E.D)(),
+    p = (0, O.D)(),
     f = null;
   return p && (e = L.intl.string(L.t.HcoRu7), f = (0, r.jsx)(s.Dkj, {
     size: "xs"
@@ -133,7 +133,7 @@ let B = i.memo(function() {
     a = (0, o.e7)([P.Z, y.Z], () => (0, A.rB)()),
     {
       notificationCenterVariant: h
-    } = O.Lk.useExperiment({
+    } = E.Lk.useExperiment({
       location: "AppTitleBar"
     });
   return a ? null : (0, r.jsx)(s.Wdt, {

@@ -86,10 +86,11 @@ class R {
     questContentPosition: i,
     questContentRowIndex: s,
     minViewTimeSeconds: l = S,
-    isQuestEnrollmentBlocked: c
+    isQuestEnrollmentBlocked: c,
+    sourceQuestContent: h
   }) {
-    var h = this;
-    y(this, "id", void 0), y(this, "quests", void 0), y(this, "questContent", void 0), y(this, "triggeredByStatusChange", void 0), y(this, "trackGuildAndChannelMetadata", void 0), y(this, "questContentPosition", void 0), y(this, "questContentRowIndex", void 0), y(this, "heartbeatTimeoutId", void 0), y(this, "lastBeatTime", void 0), y(this, "minViewTimeReachedTimeoutId", void 0), y(this, "minViewTimeSeconds", void 0), y(this, "minViewportPercentage", void 0), y(this, "isQuestEnrollmentBlocked", void 0), y(this, "isRunning", !1), y(this, "onMinViewTimeReached", () => {
+    var v = this;
+    y(this, "id", void 0), y(this, "quests", void 0), y(this, "questContent", void 0), y(this, "triggeredByStatusChange", void 0), y(this, "trackGuildAndChannelMetadata", void 0), y(this, "questContentPosition", void 0), y(this, "questContentRowIndex", void 0), y(this, "sourceQuestContent", void 0), y(this, "heartbeatTimeoutId", void 0), y(this, "lastBeatTime", void 0), y(this, "minViewTimeReachedTimeoutId", void 0), y(this, "minViewTimeSeconds", void 0), y(this, "minViewportPercentage", void 0), y(this, "isQuestEnrollmentBlocked", void 0), y(this, "isRunning", !1), y(this, "onMinViewTimeReached", () => {
       this.quests.forEach(e => {
         (0, E.T)().info("".concat(e.config.messages.questName, " Quest viewed for at least ").concat(this.minViewTimeSeconds, "s at ").concat((0, p._b)(this.questContent)), {
           impressionId: this.id
@@ -111,28 +112,30 @@ class R {
           event: b.rMx.QUEST_CONTENT_VIEWED,
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
           properties: r,
-          shouldExtendSession: t
+          shouldExtendSession: t,
+          sourceQuestContent: this.sourceQuestContent
         })
       })
     }), y(this, "beat", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      h.quests.forEach(t => {
-        if (null != h.lastBeatTime) {
-          let n = Math.round(Date.now() - h.lastBeatTime);
+      v.quests.forEach(t => {
+        if (null != v.lastBeatTime) {
+          let n = Math.round(Date.now() - v.lastBeatTime);
           (0, E.T)().info("".concat(t.config.messages.questName, " Quest impression ").concat(e ? "terminal " : "", "heartbeat: ").concat(n, "ms since last heartbeat"), {
-            impressionId: h.id
+            impressionId: v.id
           }), (0, p.dA)({
             questId: t.id,
             event: b.rMx.QUEST_CONTENT_VIEW_TIME,
             properties: O({
               is_termination_beat: e,
               viewed_time_ms: n,
-              triggered_by_status_change: h.triggeredByStatusChange
-            }, h.commonProperties(t)),
-            trackGuildAndChannelMetadata: h.trackGuildAndChannelMetadata
+              triggered_by_status_change: v.triggeredByStatusChange
+            }, v.commonProperties(t)),
+            trackGuildAndChannelMetadata: v.trackGuildAndChannelMetadata,
+            sourceQuestContent: v.sourceQuestContent
           })
         }
-      }), h.lastBeatTime = Date.now()
+      }), v.lastBeatTime = Date.now()
     }), y(this, "commonProperties", e => O(I(O({
       impression_id: this.id
     }, (0, m.qe)(e.id, this.questContent)), {
@@ -149,7 +152,8 @@ class R {
         questContentPosition: this.questContentPosition,
         trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
         triggeredByStatusChange: t,
-        isQuestEnrollmentBlocked: this.isQuestEnrollmentBlocked
+        isQuestEnrollmentBlocked: this.isQuestEnrollmentBlocked,
+        sourceQuestContent: this.sourceQuestContent
       })
     }), y(this, "start", () => {
       this.stop(!1), this.lastBeatTime = Date.now(), this.heartbeatTimeoutId = window.setInterval(() => this.beat(), 1e3 * T), this.minViewTimeReachedTimeoutId = window.setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSeconds), this.quests.forEach(e => {
@@ -161,7 +165,8 @@ class R {
           properties: O({
             triggered_by_status_change: this.triggeredByStatusChange
           }, this.commonProperties(e)),
-          trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata
+          trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
+          sourceQuestContent: this.sourceQuestContent
         })
       }), (0, g.a)("QuestImpressionTracker") && f.Z.increment({
         name: o.V.QUEST_CONTENT_IMPRESSION,
@@ -169,8 +174,8 @@ class R {
       }), this.isRunning = !0
     }), y(this, "stop", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-      e && h.beat(!0), h.lastBeatTime = void 0, clearInterval(h.heartbeatTimeoutId), clearTimeout(h.minViewTimeReachedTimeoutId), h.isRunning = !1
-    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = A, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c
+      e && v.beat(!0), v.lastBeatTime = void 0, clearInterval(v.heartbeatTimeoutId), clearTimeout(v.minViewTimeReachedTimeoutId), v.isRunning = !1
+    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = A, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = h
   }
 }
 let P = (e, t) => {
@@ -200,26 +205,28 @@ function k(e) {
     visibleChanged: n,
     focused: a,
     reference: o,
-    focusedChanged: c
-  } = e, u = w(e.questOrQuests), d = i.useRef(null), f = (0, s.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []);
+    focusedChanged: c,
+    sourceQuestContent: u
+  } = e, d = w(e.questOrQuests), f = i.useRef(null), _ = (0, s.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []);
   return (0, l.ZP)(() => () => {
-    null != d.current && d.current.stop()
+    null != f.current && f.current.stop()
   }), i.useEffect(() => {
     let r = a && t,
-      i = (n || c || u) && r,
-      o = (n || c) && !r || u;
-    (i || o) && null != d.current && d.current.stop(), i && (d.current = new R({
+      i = (n || c || d) && r,
+      o = (n || c) && !r || d;
+    (i || o) && null != f.current && f.current.stop(), i && (f.current = new R({
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,
       questContentPosition: e.questContentPosition,
       questContentRowIndex: e.questContentRowIndex,
-      triggeredByStatusChange: u,
+      triggeredByStatusChange: d,
       trackGuildAndChannelMetadata: e.trackGuildAndChannelMetadata,
       minViewTimeSeconds: e.minViewTimeSeconds,
-      isQuestEnrollmentBlocked: f
-    }), d.current.start())
-  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, u, e.minViewTimeSeconds, f]), (0, r.jsx)(D.Provider, {
-    value: d,
-    children: e.children(o, d)
+      isQuestEnrollmentBlocked: _,
+      sourceQuestContent: u
+    }), f.current.start())
+  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, _, u]), (0, r.jsx)(D.Provider, {
+    value: f,
+    children: e.children(o, f)
   })
 }

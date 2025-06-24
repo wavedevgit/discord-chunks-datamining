@@ -565,7 +565,8 @@ function ex(e, t) {
     questContent: t.content,
     questContentCTA: t.ctaContent,
     questContentPosition: t.position,
-    impressionId: t.impressionId
+    impressionId: t.impressionId,
+    sourceQuestContent: t.sourceQuestContent
   }), g.S.dispatch(P.CkL.QUEST_GAME_LINK_OPENED), (0, f.Z)(n)
 }
 let ek = (e, t) => {
@@ -574,7 +575,8 @@ let ek = (e, t) => {
       questContent: t.content,
       questContentCTA: t.ctaContent,
       questContentPosition: t.position,
-      impressionId: t.impressionId
+      impressionId: t.impressionId,
+      sourceQuestContent: t.sourceQuestContent
     }), (0, m.JG)(es(e))
   },
   eM = (e, t) => e > 0 ? (0, i.floor)(Math.min(t / e, 1), 4) : 0,
@@ -756,6 +758,7 @@ function e9(e, t) {
   (0, v._3)({
     questId: r.id,
     questContent: t.content,
+    sourceQuestContent: t.sourceQuestContent,
     questContentCTA: t.ctaContent,
     impressionId: t.impressionId
   }), (0, _.Z)({
@@ -774,7 +777,8 @@ function te(e, t) {
     questContentPosition: t.position,
     questContentRowIndex: t.rowIndex,
     questContentCTA: t.ctaContent,
-    impressionId: t.impressionId
+    impressionId: t.impressionId,
+    sourceQuestContent: t.sourceQuestContent
   });
   let r = td(n);
   if (1 === r.length) return (0, _.Z)({
@@ -798,7 +802,8 @@ function tt(e, t) {
     questContent: t.content,
     questContentPosition: t.position,
     questContentCTA: t.ctaContent,
-    impressionId: t.impressionId
+    impressionId: t.impressionId,
+    sourceQuestContent: t.sourceQuestContent
   }), e7()
 }
 
@@ -966,27 +971,30 @@ function tT(e) {
   var t, n;
   let {
     questId: r,
-    videoSessionId: i
-  } = e, a = A.ZP.getState().getVideoProgress(r);
-  if (null == a) return;
-  let o = T.Z.getQuest(r);
-  null != o && (null == (t = o.userStatus) ? void 0 : t.enrolledAt) != null && (null == (n = o.userStatus) ? void 0 : n.completedAt) == null && tp(o, a.maxTimestampSec);
-  let s = tE(a.maxTimestampSec, a.duration);
+    sourceQuestContent: i,
+    videoSessionId: a
+  } = e, o = A.ZP.getState().getVideoProgress(r);
+  if (null == o) return;
+  let s = T.Z.getQuest(r);
+  null != s && (null == (t = s.userStatus) ? void 0 : t.enrolledAt) != null && (null == (n = s.userStatus) ? void 0 : n.completedAt) == null && tp(s, o.maxTimestampSec);
+  let l = tE(o.maxTimestampSec, o.duration);
   (0, v.dA)({
     questId: r,
     event: P.rMx.QUEST_VIDEO_PROGRESSED,
     properties: {
-      progress: s,
-      video_timestamp_seconds: a.maxTimestampSec,
-      video_session_id: i
-    }
+      progress: l,
+      video_timestamp_seconds: o.maxTimestampSec,
+      video_session_id: a
+    },
+    sourceQuestContent: i
   }), (0, v.dA)({
     questId: r,
     event: P.rMx.QUEST_VIDEO_MODAL_CLOSED,
     properties: {
-      video_progress: s,
-      video_session_id: i,
+      video_progress: l,
+      video_session_id: a,
       network_connection_speed: h.Z.getEffectiveConnectionSpeed()
-    }
+    },
+    sourceQuestContent: i
   })
 }

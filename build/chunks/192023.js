@@ -1,11 +1,11 @@
 /** Chunk was on 64838 **/
-l.d(t, {
-  h: () => a
+n.d(t, {
+  h: () => o
 });
-var n = l(73800),
-  r = l(818083);
-let s = new Date(Date.UTC(2025, 5, 16)),
-  i = (0, r.B)({
+var l = n(73800),
+  s = n(818083);
+let r = new Date(Date.UTC(2025, 5, 16)),
+  i = (0, s.B)({
     id: "2025-06_quest_brand_color_removal",
     kind: "user",
     label: "Quest Brand Color Removal",
@@ -21,14 +21,14 @@ let s = new Date(Date.UTC(2025, 5, 16)),
     }]
   });
 
-function a(e) {
+function o(e) {
   let {
     questConfig: t,
-    location: l
-  } = e, r = n.useMemo(() => new Date(t.startsAt), [t.startsAt]) >= s;
+    location: n
+  } = e, s = l.useMemo(() => new Date(t.startsAt), [t.startsAt]) >= r;
   return i.useExperiment({
-    location: l
+    location: n
   }, {
-    autoTrackExposure: r
-  }).enabled && r
+    autoTrackExposure: s
+  }).enabled && s
 }

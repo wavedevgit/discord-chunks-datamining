@@ -56,35 +56,40 @@ function d(e) {
     questContentPosition: _,
     requiresPlatformSelection: m,
     selectedPlatformType: f,
-    redemptionLink: C
-  } = e, g = (0, s.O5)();
+    redemptionLink: C,
+    sourceQuestContent: g
+  } = e, b = (0, s.O5)();
   return n.useCallback(() => {
     var e;
-    m && null != f ? (r(c.id, f, u), g({
+    m && null != f ? (r(c.id, f, u), b({
       questId: c.id,
       questContent: u,
       questContentCTA: p,
-      questContentPosition: _
-    })) : l ? (null == (e = c.userStatus) ? void 0 : e.claimedAt) != null ? i(c.id) : null != f && (r(c.id, f, u), g({
+      questContentPosition: _,
+      sourceQuestContent: g
+    })) : l ? (null == (e = c.userStatus) ? void 0 : e.claimedAt) != null ? i(c.id) : null != f && (r(c.id, f, u), b({
       questId: c.id,
       questContent: u,
       questContentCTA: p,
-      questContentPosition: _
-    })) : (null != C && (g({
+      questContentPosition: _,
+      sourceQuestContent: g
+    })) : (null != C && (b({
       questId: c.id,
       questContent: u,
       questContentCTA: s.jZ.REDEEM_REWARD,
-      questContentPosition: _
+      questContentPosition: _,
+      sourceQuestContent: g
     }), (0, a.q)({
       href: C,
       onConfirm: () => {
-        g({
+        b({
           questId: c.id,
           questContent: u,
           questContentCTA: s.jZ.VISIT_REDEMPTION_LINK,
-          questContentPosition: _
+          questContentPosition: _,
+          sourceQuestContent: g
         }), (0, o.Z)(C)
       }
     })), d())
-  }, [r, i, l, d, c.id, null == (t = c.userStatus) ? void 0 : t.claimedAt, u, p, _, m, f, g, C])
+  }, [r, i, l, d, c.id, null == (t = c.userStatus) ? void 0 : t.claimedAt, u, p, _, m, f, b, C, g])
 }
