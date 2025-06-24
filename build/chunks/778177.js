@@ -402,8 +402,8 @@ class X extends i.PureComponent {
       } = e;
       if (l.type !== o.mode.type) this.setSelectedIndex(-1);
       else if (t.selectedIndex >= 0 && (t.selectedIndex === n || o.autocompletes.length !== a.length)) {
-        let e = Z.zV(o.autocompletes, o.mode.type)[t.selectedIndex],
-          n = Z.zV(a, l.type).indexOf(e); - 1 !== n ? this.setSelectedIndex(n) : t.selectedIndex >= i && this.setSelectedIndex(i - 1)
+        let e = Z.zV(o.autocompletes, o.mode)[t.selectedIndex],
+          n = Z.zV(a, l).indexOf(e); - 1 !== n ? this.setSelectedIndex(n) : t.selectedIndex >= i && this.setSelectedIndex(i - 1)
       }
     }), U(this, "focusNextOption", () => {
       this.focusOtherOption(1)
@@ -431,7 +431,7 @@ class X extends i.PureComponent {
         mode: r
       } = this.props.resultsState;
       if (Z.Fz(r.filter)) return;
-      let i = Z.zV(n, r.type);
+      let i = Z.zV(n, r);
       if (t >= i.length) return !1;
       let l = i[t],
         a = function(e) {
