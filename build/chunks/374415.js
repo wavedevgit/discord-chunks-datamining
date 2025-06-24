@@ -1,36 +1,37 @@
-/** Chunk was on 91372 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  h: () => a
+  h: () => s
 });
-var i = n(255367),
-  r = n(73800),
-  s = n(793030),
-  l = n(974223);
+var r = n(255367),
+  i = n(73800),
+  a = n(793030),
+  o = n(974223);
 
-function a(e) {
+function s(e) {
   let {
     size: t = "md",
     direction: n = "horizontal",
-    justify: a,
-    align: o,
+    justify: s,
+    align: l,
     padding: c,
-    className: d,
-    children: u,
-    fullWidth: m = !1
-  } = e, g = r.useMemo(() => ({
+    className: u,
+    children: d,
+    fullWidth: f = !1
+  } = e, _ = i.useMemo(() => ({
     size: t,
-    fullWidth: m
-  }), [t, m]);
-  return (0, i.jsx)(s.Kq, {
+    fullWidth: f
+  }), [t, f]);
+  return (0, r.jsx)(a.Kq, {
     direction: n,
     gap: 8,
-    justify: a,
-    align: o,
+    justify: s,
+    align: l,
     padding: c,
-    className: d,
-    children: (0, i.jsx)(l.u.Provider, {
-      value: g,
-      children: u
+    className: u,
+    children: (0, r.jsx)(o.u.Provider, {
+      value: _,
+      children: d
     })
   })
 }
