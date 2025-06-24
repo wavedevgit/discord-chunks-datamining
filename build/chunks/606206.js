@@ -7,8 +7,8 @@ var l, i = n(442837),
   o = n(570140),
   a = n(278323),
   s = n(212819),
-  c = n(933557),
-  u = n(592125),
+  u = n(933557),
+  c = n(592125),
   d = n(430824),
   f = n(293273),
   h = n(158776),
@@ -90,7 +90,7 @@ let S = new j(o.Z, {
         E = ("" === t.trim() ? function() {
           let e = [];
           return O.Z.getPrivateChannelIds().forEach(t => {
-            let n = u.Z.getChannel(t);
+            let n = c.Z.getChannel(t);
             if (null != n)
               if (n.type === y.d4z.DM) {
                 let t = n.getRecipientId(),
@@ -122,11 +122,11 @@ let S = new j(o.Z, {
             case s.h8.TEXT_CHANNEL: {
               let {
                 record: t
-              } = e, n = u.Z.getChannel(t.parent_id), r = d.Z.getGuild(t.guild_id);
+              } = e, n = c.Z.getChannel(t.parent_id), r = d.Z.getGuild(t.guild_id);
               return {
                 type: s.h8.TEXT_CHANNEL,
                 sent: x.includes(t.id),
-                categoryName: null != n ? (0, c.F6)(n, g.default, p.Z) : "",
+                categoryName: null != n ? (0, u.F6)(n, g.default, p.Z) : "",
                 guildName: null != r ? r.toString() : "",
                 data: e
               }

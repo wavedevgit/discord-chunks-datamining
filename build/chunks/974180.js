@@ -46,8 +46,8 @@ var i, l = n(392711),
   Y = n(430824),
   z = n(375954),
   q = n(292959),
-  B = n(496675),
-  X = n(699516),
+  X = n(496675),
+  B = n(699516),
   J = n(944486),
   Q = n(885110),
   j = n(246946),
@@ -96,28 +96,43 @@ let es = "message1",
     }
   };
 
-function eN(e, t, n) {
-  let i = e.filter(e => e.type === ea.IIU.PLAYING && null != e.application_id).map(e => e.application_id);
-  return n === u.Tv.ONLY_GAMES_PLAYED ? i.filter(e => T.Z.currentUserApplicationIds.has(e)) : i
+function eN(e, t) {
+  let {
+    gameActivityNotificationType: n,
+    excludeSteamGames: i
+  } = t, l = e;
+  i && (l = e.filter(e => {
+    var t;
+    return null == (t = e.metadata) || !t.distributor || e.metadata.distributor !== ea.GQo.STEAM
+  }));
+  let a = l.filter(e => e.type === ea.IIU.PLAYING && null != e.application_id).map(e => e.application_id);
+  return n === u.Tv.ONLY_GAMES_PLAYED && (a = a.filter(e => T.Z.currentUserApplicationIds.has(e))), a
 }
 async function eI(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-    n = new Set,
-    i = (0, Z.W7)(e),
-    a = (0, A.MH)();
-  t && (i.forEach(e => {
+    n = (0, A.MH)(),
+    i = (0, A.j4)(),
+    a = (0, Z.X)(e);
+  if (t) {
+    let e = new Set;
+    a.forEach(t => {
+      let {
+        activities: l,
+        user: a
+      } = t;
+      if (0 === l.length || B.Z.isIgnored(a.id)) return;
+      let r = eN(l, {
+        gameActivityNotificationType: n,
+        excludeSteamGames: i
+      });
+      0 !== r.length && (e = new Set([...e, ...r]))
+    }), await p.ZP.fetchApplications([...e], !1)
+  }
+  a.forEach(e => {
     let {
-      activities: t,
-      user: i
-    } = e;
-    if (0 === t.length || X.Z.isIgnored(i.id)) return;
-    let l = eN(t, i, a);
-    0 !== l.length && (n = new Set([...n, ...l]))
-  }), await p.ZP.fetchApplications([...n], !1)), i.forEach(e => {
-    let {
-      activities: n,
-      user: i,
-      guildId: r
+      activities: a,
+      user: r,
+      guildId: u
     } = e;
     ! function(e, t, n, i) {
       let a = eh(t);
@@ -156,7 +171,10 @@ async function eI(e) {
           }))
         }
       }), 0 === eh(t).length && delete eS[t]
-    }(eN(n, i, a), i.id, t, null != r ? r : 0)
+    }(eN(a, {
+      gameActivityNotificationType: n,
+      excludeSteamGames: i
+    }), r.id, t, null != u ? u : 0)
   })
 }
 
@@ -174,7 +192,7 @@ function eZ(e) {
 }
 class eA extends(i = r.ZP.Store) {
   initialize() {
-    this.waitFor(K.default, x.Z, q.Z, Y.Z, F.Z, X.Z, B.Z, $.Z, P.Z)
+    this.waitFor(K.default, x.Z, q.Z, Y.Z, F.Z, B.Z, X.Z, $.Z, P.Z)
   }
 }
 eo(eA, "displayName", "NotificationStore"), new eA(s.Z, __OVERLAY__ ? {} : {
@@ -346,7 +364,7 @@ eo(eA, "displayName", "NotificationStore"), new eA(s.Z, __OVERLAY__ ? {} : {
       s = x.Z.getChannel(l),
       d = F.Z.getStageInstanceByChannel(l);
     null != o && null != s && null != d && et.Z.showNotification(o.getIconURL(128), s.name, eu.intl.formatToPlainString(eu.t.sqnsSE, {
-      channelName: (0, h.F6)(s, K.default, X.Z),
+      channelName: (0, h.F6)(s, K.default, B.Z),
       channelTopic: null == d ? void 0 : d.topic
     }), {
       notif_type: "Stage Speak Invite"
@@ -363,7 +381,7 @@ eo(eA, "displayName", "NotificationStore"), new eA(s.Z, __OVERLAY__ ? {} : {
       i = Y.Z.getGuild(t.guild_id),
       l = x.Z.getChannel(t.channel_id),
       r = K.default.getUser(t.host_id);
-    if (null == n || null == l || null == i || null == r || !(0, R.LL)(n, r, l) || !B.Z.can(a.$e(ea.Plq.CONNECT, ea.Plq.VIEW_CHANNEL), l) || eE.has(t.id)) return !1;
+    if (null == n || null == l || null == i || null == r || !(0, R.LL)(n, r, l) || !X.Z.can(a.$e(ea.Plq.CONNECT, ea.Plq.VIEW_CHANNEL), l) || eE.has(t.id)) return !1;
     eE.add(t.id), et.Z.showNotification(i.getIconURL(128), eu.intl.formatToPlainString(eu.t.bZ4OkZ, {
       guildName: i.name
     }), eu.intl.formatToPlainString(eu.t.qTelnJ, {
@@ -399,7 +417,7 @@ eo(eA, "displayName", "NotificationStore"), new eA(s.Z, __OVERLAY__ ? {} : {
         i = Y.Z.getGuild(e.guild_id),
         l = x.Z.getChannel(e.channel_id),
         r = K.default.getUser(e.host_id);
-      if (null != n && null != l && null != i && null != r && B.Z.can(a.$e(ea.Plq.CONNECT, ea.Plq.VIEW_CHANNEL), l)) et.Z.showNotification(i.getIconURL(128), eu.intl.formatToPlainString(eu.t.bOu6Wl, {
+      if (null != n && null != l && null != i && null != r && X.Z.can(a.$e(ea.Plq.CONNECT, ea.Plq.VIEW_CHANNEL), l)) et.Z.showNotification(i.getIconURL(128), eu.intl.formatToPlainString(eu.t.bOu6Wl, {
         guildName: i.name
       }), eu.intl.formatToPlainString(eu.t.GV9L8v, {
         topic: e.name,

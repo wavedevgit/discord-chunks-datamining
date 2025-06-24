@@ -5,11 +5,11 @@ n.d(t, {
 var r, l, i, o = n(442837),
   a = n(570140),
   s = n(981631);
-let c = {};
+let u = {};
 
-function u(e) {
-  let t = c[e = null != e ? e : "null"];
-  return null == t && (t = c[e] = {
+function c(e) {
+  let t = u[e = null != e ? e : "null"];
+  return null == t && (t = u[e] = {
     state: s.hes.DISCONNECTED,
     quality: s.IE4.UNKNOWN,
     pings: [],
@@ -19,7 +19,7 @@ function u(e) {
 }
 
 function d(e, t, n) {
-  let r = c[e = null != e ? e : "null"];
+  let r = u[e = null != e ? e : "null"];
   return null != r ? t(r) : n
 }
 class f extends(i = o.ZP.Store) {
@@ -81,18 +81,18 @@ l = "OverlayRTCConnectionStore", (r = "displayName") in f ? Object.definePropert
 }) : f[r] = l;
 let h = new f(a.Z, {
   OVERLAY_INITIALIZE: function(e) {
-    c = e.rtcConnectionStates
+    u = e.rtcConnectionStates
   },
   RTC_CONNECTION_STATE: function(e) {
     if (null != e.streamKey) return !1;
-    let t = u(e.lobbyId);
+    let t = c(e.lobbyId);
     t.state = e.state, t.hostname = e.hostname
   },
   RTC_CONNECTION_PING: function(e) {
-    let t = u(e.lobbyId);
+    let t = c(e.lobbyId);
     t.pings = e.pings, t.quality = e.quality
   },
   RTC_CONNECTION_LOSS_RATE: function(e) {
-    u(e.lobbyId).lossRate = e.lossRate
+    c(e.lobbyId).lossRate = e.lossRate
   }
 })

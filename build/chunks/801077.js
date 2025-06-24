@@ -1,14 +1,14 @@
 /** Chunk was on 40814 **/
 n.d(t, {
-  Z: () => ec
+  Z: () => eu
 }), n(388685), n(539854);
 var r, l = n(392711),
   i = n.n(l),
   o = n(442837),
   a = n(570140),
   s = n(790920),
-  c = n(527805),
-  u = n(841784),
+  u = n(527805),
+  c = n(841784),
   d = n(503438),
   f = n(802856),
   h = n(420660),
@@ -157,9 +157,9 @@ function en(e, t, n) {
         }
       }), null) : e === v.XB ? v.r9 : e.startsWith(E.H) ? X(e.slice(E.H.length)) : e.startsWith(x._) ? J(e.slice(x._.length)) : (q(e), null)
     }(h);
-    if ((0, u.Z)(f)) {
+    if ((0, c.Z)(f)) {
       let t = (0, s.a)();
-      if ((0, c.ZP)({
+      if ((0, u.ZP)({
           activity: f,
           userId: e.id,
           application: m,
@@ -170,7 +170,7 @@ function en(e, t, n) {
           VoiceStateStore: R.Z,
           PermissionStore: _.Z,
           GuildStore: P.Z
-        }) !== c.Fw.CAN_JOIN) continue
+        }) !== u.Fw.CAN_JOIN) continue
     }
     if (!N.JE(f) || null == m || k.has(m.id)) continue;
     let T = null != f ? $(f) : null;
@@ -317,4 +317,4 @@ let es = new ea(a.Z, {
       B = !1
     }
   }),
-  ec = es
+  eu = es

@@ -2,6 +2,7 @@
 n.d(t, {
   BH: () => s,
   MH: () => o,
+  j4: () => u,
   nC: () => d
 });
 var a = n(442837),
@@ -23,4 +24,8 @@ function c(e, t) {
 
 function d() {
   return i.Qq.useSetting()
+}
+
+function u() {
+  return i.Qq.getSetting()
 }

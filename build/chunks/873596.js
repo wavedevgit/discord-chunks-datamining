@@ -8,8 +8,8 @@ var r = n(255367),
   o = n(481060),
   a = n(313201),
   s = n(19780),
-  c = n(979651),
-  u = n(362446),
+  u = n(979651),
+  c = n(362446),
   d = n(571826),
   f = n(277642),
   h = n(441894),
@@ -56,13 +56,13 @@ function v(e) {
     lobbyId: t,
     connectionTypeText: n,
     closePopout: l
-  } = e, o = (0, i.cj)([u.Z], () => ({
-    connectionState: u.Z.getConnectionState(t),
-    hostname: u.Z.getHostname(t),
-    averagePing: u.Z.getAveragePing(t),
-    lastPing: u.Z.getLastPing(t),
-    pings: u.Z.getPings(),
-    outboundLossRate: u.Z.getOutboundLossRate(t)
+  } = e, o = (0, i.cj)([c.Z], () => ({
+    connectionState: c.Z.getConnectionState(t),
+    hostname: c.Z.getHostname(t),
+    averagePing: c.Z.getAveragePing(t),
+    lastPing: c.Z.getLastPing(t),
+    pings: c.Z.getPings(),
+    outboundLossRate: c.Z.getOutboundLossRate(t)
   }));
   return (0, r.jsx)(p.Z, m(N({}, o), {
     closePopout: l,
@@ -108,9 +108,9 @@ function E(e) {
 }
 
 function C(e) {
-  let t = (0, i.e7)([c.Z], () => c.Z.hasVideo(e.channelId)),
+  let t = (0, i.e7)([u.Z], () => u.Z.hasVideo(e.channelId)),
     [n, s] = l.useState(O.tu.RTC_DEBUG_PANEL),
-    u = (0, a.Dt)(),
+    c = (0, a.Dt)(),
     h = l.useMemo(() => {
       switch (n) {
         case O.tu.RTC_DEBUG_PANEL:
@@ -154,7 +154,7 @@ function C(e) {
       })]
     }), (0, r.jsx)(o.njP.Panel, {
       id: n,
-      "aria-labelledby": u,
+      "aria-labelledby": c,
       children: h
     })]
   })

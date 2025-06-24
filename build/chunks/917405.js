@@ -8,8 +8,8 @@ var r = n(255367),
   o = n.n(i),
   a = n(481060),
   s = n(100527),
-  c = n(522651),
-  u = n(476221),
+  u = n(522651),
+  c = n(476221),
   d = n(873596),
   f = n(423516),
   h = n(981631),
@@ -71,7 +71,7 @@ class m extends l.PureComponent {
     } = this.props, {
       connectionStatus: l,
       connectionStatusText: i
-    } = u.Z.getStatus(t, e);
+    } = c.Z.getStatus(t, e);
     return this.renderPopoutTarget(e => {
       let {
         onClick: t
@@ -81,7 +81,7 @@ class m extends l.PureComponent {
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
         onClick: e => {
-          (0, c.v)(s.Z.RTC_PANEL, c.d.CONNECTION_STATUS), null == t || t(e)
+          (0, u.v)(s.Z.RTC_PANEL, u.d.CONNECTION_STATUS), null == t || t(e)
         },
         children: (0, r.jsx)(f.Z, {
           text: i,
@@ -100,16 +100,16 @@ class m extends l.PureComponent {
       lastPing: l,
       state: i,
       className: s,
-      children: c,
-      childrenAsSubtitle: u
+      children: u,
+      childrenAsSubtitle: c
     } = this.props;
     return i === h.hes.RTC_CONNECTED && (e = (0, r.jsx)(a.ua7, {
       text: t !== h.IE4.UNKNOWN && null != l ? "".concat(l.toFixed(0), " ms") : null,
       color: y[t],
       children: e => (0, r.jsx)(v, O({
         quality: t,
-        smallPing: !u && n,
-        largePing: u
+        smallPing: !c && n,
+        largePing: c
       }, e))
     })), (0, r.jsxs)("div", {
       className: p.rtcConnectionStatusWrapper,
@@ -117,9 +117,9 @@ class m extends l.PureComponent {
         className: o()(p.rtcConnectionStatus, N[t], s),
         children: [e, (0, r.jsxs)("div", {
           className: p.labelWrapper,
-          children: [this.renderStatus(), u ? c : null]
+          children: [this.renderStatus(), c ? u : null]
         })]
-      }), u ? null : c]
+      }), c ? null : u]
     })
   }
   constructor(...e) {

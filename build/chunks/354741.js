@@ -1,6 +1,6 @@
 /** Chunk was on 32325 **/
 n.r(t), n.d(t, {
-  default: () => A
+  default: () => S
 }), n(388685);
 var i = n(255367);
 n(73800);
@@ -18,8 +18,8 @@ var r = n(481060),
   O = n(212205),
   _ = n(62420),
   N = n(641360),
-  y = n(769409),
-  g = n(140106),
+  g = n(769409),
+  y = n(140106),
   T = n(122074),
   E = n(314897),
   h = n(626135),
@@ -47,28 +47,28 @@ function v(e) {
   }
   return e
 }
-let A = (0, c.Z)((0, l.Z)(function(e) {
+let S = (0, c.Z)((0, l.Z)(function(e) {
   let {
     channel: t,
     selected: l,
     onSelect: c
-  } = e, A = t.isOwner(E.default.getId()), S = (0, P.Z)(t), Z = (0, I.ZP)(t), U = (0, T.Uf)(C.aIL, t.id, "top"), w = (0, j.Z)(t, l), x = (0, b.Z)({
+  } = e, S = t.isOwner(E.default.getId()), A = (0, P.Z)(t), Z = (0, I.ZP)(t), U = (0, T.Uf)(C.aIL, t.id, "top"), w = (0, j.Z)(t, l), x = (0, b.Z)({
     id: t.id,
     label: m.intl.string(m.t.gFHI3t)
   }), M = (0, s.Z)(t), D = (0, p.l)(t), R = (0, p.P)(t), k = (0, O.Z)(t), F = (0, _.Z)(t), G = (0, d.D)(t), {
     analyticsLocations: X
-  } = (0, u.ZP)(f.Z.GROUP_DM_CONTEXT_MENU), L = (0, N.p1)(f.Z.GROUP_DM_CONTEXT_MENU, t.id), Q = (0, N.I3)(f.Z.GROUP_DM_CONTEXT_MENU, t.id);
+  } = (0, u.ZP)(f.Z.GROUP_DM_CONTEXT_MENU), Q = (0, N.p1)(f.Z.GROUP_DM_CONTEXT_MENU, t.id), L = (0, N.I3)(f.Z.GROUP_DM_CONTEXT_MENU, t.id);
   return null == t || t.isManaged() ? null : (0, i.jsxs)(r.v2r, {
     navId: "gdm-context",
     "aria-label": m.intl.string(m.t.Xm41aW),
     onClose: a.Zy,
     onSelect: c,
     children: [(0, i.jsx)(r.kSQ, {
-      children: S
+      children: A
     }), (0, i.jsxs)(r.kSQ, {
       children: [D, k, F]
     }), (0, i.jsxs)(r.kSQ, {
-      children: [A ? (0, i.jsx)(r.sNh, {
+      children: [S ? (0, i.jsx)(r.sNh, {
         id: "instant-invites",
         label: m.intl.string(m.t.ngRFjY),
         action: () => (0, r.ZDy)(async () => {
@@ -79,10 +79,10 @@ let A = (0, c.Z)((0, l.Z)(function(e) {
             channelId: t.id
           }, n))
         })
-      }) : null, L && (Q ? (0, i.jsx)(r.sNh, {
+      }) : null, Q && (L ? (0, i.jsx)(r.sNh, {
         id: "change-icon",
         label: m.intl.string(m.t["6yrpFR"]),
-        action: () => (0, g.P5)(t.id, f.Z.GROUP_DM_CONTEXT_MENU)
+        action: () => (0, y.P5)(t.id, f.Z.GROUP_DM_CONTEXT_MENU)
       }) : (0, i.jsx)(r.II_, {
         id: "change-icon",
         showDefaultFocus: !0,
@@ -122,7 +122,7 @@ let A = (0, c.Z)((0, l.Z)(function(e) {
           }), a))
         },
         label: m.intl.string(m.t["6yrpFR"])
-      })), L && null != t.icon ? (0, i.jsx)(r.sNh, {
+      })), Q && null != t.icon ? (0, i.jsx)(r.sNh, {
         id: "remove-icon",
         label: m.intl.string(m.t["uY+Nk5"]),
         action: () => {
@@ -134,10 +134,10 @@ let A = (0, c.Z)((0, l.Z)(function(e) {
             location_stack: [...X, f.Z.GROUP_DM_CONTEXT_MENU_REMOVE_ICON]
           }), o.Z.setIcon(t.id, null)
         }
-      }) : null, Q && (0, i.jsx)(r.sNh, {
+      }) : null, L && (0, i.jsx)(r.sNh, {
         id: "edit-gdm",
         label: m.intl.string(m.t["5Q9+/P"]),
-        action: () => (0, y.B)(t.id, f.Z.GROUP_DM_CONTEXT_MENU)
+        action: () => (0, g.B)(t.id, f.Z.GROUP_DM_CONTEXT_MENU)
       }), G]
     }), (0, i.jsx)(r.kSQ, {
       children: M
