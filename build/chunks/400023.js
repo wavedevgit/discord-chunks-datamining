@@ -141,8 +141,8 @@ let W = i.memo(function(e) {
       isEditing: null != I,
       keyboardModeEnabled: Z,
       hasMoreAfter: b.hasMoreAfter
-    }), J = (0, c.e7)([x.Z], () => P.Z.can(B.Plq.READ_MESSAGE_HISTORY, g) ? null : x.Z.getViewingRolesTimestamp(g.getGuildId())), {
-      channelStreamMarkup: Q,
+    }), Q = (0, c.e7)([x.Z], () => P.Z.can(B.Plq.READ_MESSAGE_HISTORY, g) ? null : x.Z.getViewingRolesTimestamp(g.getGuildId())), {
+      channelStreamMarkup: J,
       newMessagesBar: $,
       jumpToPresentBar: ee,
       forumPostActionBar: et,
@@ -158,7 +158,7 @@ let W = i.memo(function(e) {
       loadMore: K.loadMore,
       scrollManager: K,
       specs: q,
-      filterAfterTimestamp: null != N ? N : J,
+      filterAfterTimestamp: null != N ? N : Q,
       showingQuarantineBanner: T,
       hideSummaries: w,
       jumpToPresent: () => {
@@ -253,7 +253,7 @@ let W = i.memo(function(e) {
               id: "messagesNavigationDescription",
               "aria-hidden": !0,
               children: F.intl.string(F.t.Spb3s7)
-            }), Q, (0, r.jsx)("div", {
+            }), J, (0, r.jsx)("div", {
               className: a()({
                 [G.scrollerSpacer]: !T,
                 [G.empty]: 0 === b.length && !b.loadingMore,

@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(895924),
   M = n(581364),
   k = n(667204),
-  D = n(404295),
-  L = n(104919),
+  D = n(104919),
+  L = n(307508),
   U = n(541716),
   B = n(752305),
   F = n(516887),
@@ -50,8 +50,8 @@ var r = n(255367),
   q = n(355888),
   K = n(680783),
   X = n(168551),
-  J = n(28546),
-  Q = n(295474),
+  Q = n(28546),
+  J = n(295474),
   $ = n(521476),
   ee = n(69882),
   et = n(71619),
@@ -104,8 +104,8 @@ var r = n(255367),
   eq = n(25007),
   eK = n(685006),
   eX = n(685722),
-  eJ = n(199649),
-  eQ = n(1397),
+  eQ = n(199649),
+  eJ = n(1397),
   e$ = n(641861),
   e0 = n(981631),
   e1 = n(959517),
@@ -420,7 +420,7 @@ class tn extends i.PureComponent {
         if (null == e || e === R.bB.CHAT) {
           let {
             isAuthorized: e
-          } = await (0, L.L)({
+          } = await (0, D.L)({
             applicationId: l.applicationId,
             channel: c,
             commandIntegrationTypes: l.integration_types
@@ -436,7 +436,7 @@ class tn extends i.PureComponent {
             sectionName: n
           } = null != (m = (0, eY._U)(l)) ? m : {}, r = e === R.bB.APPLICATION_LAUNCHER ? S.Z.lastShownEntrypoint() : P._b.TEXT, {
             isAuthorized: i
-          } = await (0, L.L)({
+          } = await (0, D.L)({
             applicationId: l.applicationId,
             channel: c,
             commandIntegrationTypes: l.integration_types,
@@ -758,10 +758,10 @@ class tr extends i.PureComponent {
                   }),
                   children: [C && (0, r.jsx)(ef.Z, {
                     channelId: i.id
-                  }), i.isPrivate() ? (0, r.jsx)(eJ.Z, {
+                  }), i.isPrivate() ? (0, r.jsx)(eQ.Z, {
                     channel: i,
                     children: F
-                  }) : (0, r.jsx)(eQ.Z, {
+                  }) : (0, r.jsx)(eJ.Z, {
                     channel: i,
                     children: F
                   }), (0, r.jsx)(b.Z, {
@@ -830,7 +830,7 @@ class tr extends i.PureComponent {
       let {
         activeView: t
       } = e;
-      (0, J.PG)(t, this.props.chatInputType)
+      (0, Q.PG)(t, this.props.chatInputType)
     }), e8(this, "handleOpenAppLauncher", e => {
       let {
         applicationId: t
@@ -905,19 +905,19 @@ let ti = i.memo(function(e) {
     accessibilityLabel: s
   } = (0, ez.Z)({
     channel: t
-  }), c = (0, eg.S)(ek.default.getCurrentUser(), t), [u] = (0, et.AB)(null == n ? void 0 : n.id), h = (0, Q.Ux)(null == n ? void 0 : n.id), f = (0, d.e7)([ek.default], () => ek.default.getCurrentUser()), m = (0, d.e7)([eT.ZP], () => {
+  }), c = (0, eg.S)(ek.default.getCurrentUser(), t), [u] = (0, et.AB)(null == n ? void 0 : n.id), h = (0, J.Ux)(null == n ? void 0 : n.id), f = (0, d.e7)([ek.default], () => ek.default.getCurrentUser()), m = (0, d.e7)([eT.ZP], () => {
     var e, t, r;
     return null != f && null != (r = null == (e = eT.ZP.getMember(null != (t = null == n ? void 0 : n.id) ? t : e0.lds, null == f ? void 0 : f.id)) ? void 0 : e.isPending) && r
   }), g = (0, d.e7)([ep.Z], () => ep.Z.isEnabled()), _ = (0, em.Z)(t.id), y = (0, er.Z)(t.id), C = (0, Z.R)({
     channel: t,
     chatInputType: l
-  }), j = (0, D.h9)(t.id), I = (0, eC.k)(t.id), P = (0, x.ZP)(), N = (0, K.Z)(t.id), T = (0, q.Z)(null == N ? void 0 : N.wallpaperId), {
+  }), j = (0, L.Q)(t.id), I = (0, eC.k)(t.id), P = (0, x.ZP)(), N = (0, K.Z)(t.id), T = (0, q.Z)(null == N ? void 0 : N.wallpaperId), {
     isInitialLoading: A,
     primaryEntryPointCommand: w,
     isProfileFetching: R,
     wasProfileFetching: M,
     applicationId: k,
-    channelId: L,
+    channelId: D,
     commands: U
   } = (0, O.Z)({
     context: {
@@ -929,7 +929,7 @@ let ti = i.memo(function(e) {
     isProfileFetching: R,
     wasProfileFetching: M,
     applicationId: k,
-    channelId: L,
+    channelId: D,
     commands: U
   });
   let B = i.useRef(null),

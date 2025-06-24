@@ -127,8 +127,8 @@ function H(e) {
     firstMessage: q
   } = (0, w.cl)(Y), K = (0, o.e7)([S.Z], () => S.Z.hasJoined(t)), {
     disableReactionUpdates: X,
-    disableReactionCreates: J,
-    isLurking: Q,
+    disableReactionCreates: Q,
+    isLurking: J,
     isGuest: $,
     isPendingMember: ee
   } = (0, b.Z)(Y), et = (0, E.nw)(Y), en = (0, o.e7)([Z.Z], () => Z.Z.getChannel(s)), er = (0, A.Bs)(en), ei = (0, o.e7)([f.Z], () => f.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = i.useCallback(e => {
@@ -190,13 +190,13 @@ function H(e) {
         className: a()(L.reactButtons, {
           [L.loading]: ea
         }),
-        children: [!es && !J && null != er && (0, r.jsx)("div", {
+        children: [!es && !Q && null != er && (0, r.jsx)("div", {
           className: U.reactions,
           children: (0, r.jsx)(C.le, {
             message: q,
             readOnly: !1,
             useChatFontScaling: !1,
-            isLurking: Q,
+            isLurking: J,
             isGuest: $,
             isPendingMember: ee,
             emoji: er,
@@ -213,7 +213,7 @@ function H(e) {
           channel: Y,
           disableReactionCreates: !0,
           disableReactionUpdates: X,
-          isLurking: Q,
+          isLurking: J,
           isGuest: $,
           isPendingMember: ee,
           maxReactions: O,
@@ -221,7 +221,7 @@ function H(e) {
           useChatFontScaling: !1,
           isForumToolbar: !0,
           forceHideReactionCreates: !0
-        }), !J && (0, r.jsx)(_.X, {
+        }), !Q && (0, r.jsx)(_.X, {
           type: g.O.NORMAL,
           message: q,
           channel: Y,

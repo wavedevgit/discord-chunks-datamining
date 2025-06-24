@@ -270,7 +270,7 @@ function Y(e) {
                 updateThreadSettings: g,
                 privateThreadMode: x
               }) : null]
-            }), (0, r.jsx)(J, {
+            }), (0, r.jsx)(Q, {
               parentChannel: t,
               parentMessageId: n
             })]
@@ -432,7 +432,7 @@ function X(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   let {
     parentChannel: t,
     parentMessageId: n

@@ -51,8 +51,8 @@ var r = n(255367),
   q = n(302270),
   K = n(308177),
   X = n(700483),
-  J = n(686468),
-  Q = n(801405),
+  Q = n(686468),
+  J = n(801405),
   $ = n(903108),
   ee = n(981631),
   et = n(354459),
@@ -102,7 +102,7 @@ function ec(e) {
   } = (0, g.ZP)(), d = t.getGuildId(), p = (0, s.e7)([L.Z], () => L.Z.getMostRecentSelectedTextChannelId(d), [d]), h = R.default.getId(), f = !(0, s.e7)([b.Z], () => b.Z.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && B.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS)), m = null != c && c.type !== et.fO.ACTIVITY && c.user.id !== h, y = i.useMemo(() => {
     var e;
     return null != (e = null == a ? void 0 : a.window) ? e : window
-  }, [a]), x = (0, Q.Z)({
+  }, [a]), x = (0, J.Z)({
     channel: t,
     appContext: n,
     popoutOpen: l,
@@ -175,7 +175,7 @@ function ed(e) {
   (0, z.MV)(c);
   let R = (0, s.e7)([M.Z], () => M.Z.getToastsEnabled(c.id)),
     k = (0, $.Z)(c) ? null != S ? "84px" : "124px" : null != S ? "0px" : "48px";
-  return w && (k = "0px"), l = w ? (0, r.jsx)(J.Z, {
+  return w && (k = "0px"), l = w ? (0, r.jsx)(Q.Z, {
     channel: c,
     onContinueClick: () => {
       (0, z.Ku)(!1), O || (0, F.TM)(c)

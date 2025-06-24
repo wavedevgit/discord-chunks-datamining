@@ -232,7 +232,7 @@ function R(e) {
       } : {},
       opacities: r
     }
-  }(W), [K, X] = i.useState([]), J = K.length > 0;
+  }(W), [K, X] = i.useState([]), Q = K.length > 0;
   if (i.useEffect(() => {
       (async () => {
         try {
@@ -242,11 +242,11 @@ function R(e) {
         } catch (e) {}
       })()
     }, [null == l ? void 0 : l.id]), null == l) return null;
-  let Q = [];
-  p || (R && Q.push((0, r.jsx)(o.Z.div, {
+  let J = [];
+  p || (R && J.push((0, r.jsx)(o.Z.div, {
     className: N.cardWrapper,
     style: W ? {
-      opacity: q[Q.length]
+      opacity: q[J.length]
     } : {},
     children: (0, r.jsx)(w, {
       iconUrl: u.YvY,
@@ -254,10 +254,10 @@ function R(e) {
       completed: L,
       onClick: F
     })
-  }, "invite")), M && Q.push((0, r.jsx)(o.Z.div, {
+  }, "invite")), M && J.push((0, r.jsx)(o.Z.div, {
     className: N.cardWrapper,
     style: W ? {
-      opacity: q[Q.length]
+      opacity: q[J.length]
     } : {},
     children: (0, r.jsx)(w, {
       iconUrl: u.$_T,
@@ -265,10 +265,10 @@ function R(e) {
       completed: B,
       onClick: H
     })
-  }, "customize")), k && Q.push((0, r.jsx)(o.Z.div, {
+  }, "customize")), k && J.push((0, r.jsx)(o.Z.div, {
     className: N.cardWrapper,
     style: W ? {
-      opacity: q[Q.length]
+      opacity: q[J.length]
     } : {},
     children: (0, r.jsx)(w, {
       iconUrl: u.qMX,
@@ -276,10 +276,10 @@ function R(e) {
       completed: U,
       onClick: G
     })
-  }, "message")), (0, O.isWeb)() && Q.push((0, r.jsx)(o.Z.div, {
+  }, "message")), (0, O.isWeb)() && J.push((0, r.jsx)(o.Z.div, {
     className: N.cardWrapper,
     style: W ? {
-      opacity: q[Q.length]
+      opacity: q[J.length]
     } : {},
     children: (0, r.jsx)(w, {
       iconUrl: u.yIb,
@@ -287,15 +287,15 @@ function R(e) {
       completed: D,
       onClick: V
     })
-  }, "download")), Q.push((0, r.jsx)(o.Z.div, {
+  }, "download")), J.push((0, r.jsx)(o.Z.div, {
     className: N.cardWrapper,
     style: W ? {
-      opacity: q[Q.length]
+      opacity: q[J.length]
     } : {},
     children: (0, r.jsx)(w, {
       iconUrl: u.Tg$,
       header: Z.intl.string(Z.t.IhHDEB),
-      completed: J,
+      completed: Q,
       onClick: z
     })
   }, "addapp")));
@@ -320,14 +320,14 @@ function R(e) {
             color: "header-secondary",
             className: a()({
               [N.subtitle]: !0,
-              [N.noChildren]: 0 === Q.length
+              [N.noChildren]: 0 === J.length
             }),
             variant: "text-sm/normal",
-            children: [$, " ", Q.length > 0 ? Z.intl.format(Z.t.UOtD39, {
+            children: [$, " ", J.length > 0 ? Z.intl.format(Z.t.UOtD39, {
               guideURL: ee
             }) : null]
           })]
-        }), Q]
+        }), J]
       })
     })
   })

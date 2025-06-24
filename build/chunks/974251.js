@@ -80,13 +80,13 @@ let G = i.memo(function(e) {
     editorTextContent: z,
     setValue: W,
     canOnlyUseTextCommands: Y
-  } = e, q = (0, p.bp)(), K = i.useRef(null), X = i.useRef(null), J = (0, o.e7)([P.Z], () => P.Z.getActivities()), Q = (0, o.e7)([g.Z], () => g.Z.getSettings().clipsEnabled), $ = (0, o.e7)([g.Z], () => g.Z.getLastClipsSession()), ee = (0, o.Wu)([g.Z], () => g.Z.getNewClipIds()), et = (0, o.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(H.id)), {
+  } = e, q = (0, p.bp)(), K = i.useRef(null), X = i.useRef(null), Q = (0, o.e7)([P.Z], () => P.Z.getActivities()), J = (0, o.e7)([g.Z], () => g.Z.getSettings().clipsEnabled), $ = (0, o.e7)([g.Z], () => g.Z.getLastClipsSession()), ee = (0, o.Wu)([g.Z], () => g.Z.getNewClipIds()), et = (0, o.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(H.id)), {
     showClipsHeaderEntrypoint: en
   } = m.NV.useExperiment({
     location: "ChannelAttachButton"
   }, {
     autoTrackExposure: !1
-  }), er = (0, o.e7)([y.qc], () => y.qc.hasHotspot(y.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), ei = (0, c.s9z)(e => (0, c.DEQ)(e, k.Qr)), el = (0, o.e7)([E.Z], () => E.Z.hasLayers()), ea = (0, o.e7)([g.Z], () => g.Z.hasClips()), [eo, es] = i.useState(null), ec = (0, m.Go)() && (Q || ea), eu = H.isPrivate(), ed = (0, o.e7)([S.Z], () => eu || S.Z.can(M.Plq.ATTACH_FILES, H) && S.Z.can(M.Plq.SEND_MESSAGES, H)), ep = (0, d.Z)($);
+  }), er = (0, o.e7)([y.qc], () => y.qc.hasHotspot(y.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), ei = (0, c.s9z)(e => (0, c.DEQ)(e, k.Qr)), el = (0, o.e7)([E.Z], () => E.Z.hasLayers()), ea = (0, o.e7)([g.Z], () => g.Z.hasClips()), [eo, es] = i.useState(null), ec = (0, m.Go)() && (J || ea), eu = H.isPrivate(), ed = (0, o.e7)([S.Z], () => eu || S.Z.can(M.Plq.ATTACH_FILES, H) && S.Z.can(M.Plq.SEND_MESSAGES, H)), ep = (0, d.Z)($);
   (null == ep ? void 0 : ep.newClipIds.length) !== (null == $ ? void 0 : $.newClipIds.length) && (null != (t = null == $ ? void 0 : $.newClipIds.length) ? t : 0) > 0 && null == eo && er && et && !ei && !en && !el && es("recentClips");
   let eh = (e, t, n) => {
       null != t && "ETOOLARGE" === t.code ? (0, T.G)(H, []) : (0, T.d)(e, H, V, {
@@ -133,7 +133,7 @@ let G = i.memo(function(e) {
       hasClips: ec,
       canUseApplicationCommands: !Y,
       channel: H,
-      activities: J,
+      activities: Q,
       newClipsCount: ev,
       canPostPolls: ey,
       canLaunchActivities: ex,

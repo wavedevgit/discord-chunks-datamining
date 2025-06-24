@@ -52,8 +52,8 @@ var r = n(255367),
   q = n(386e3),
   K = n(331197),
   X = n(698877),
-  J = n(25827),
-  Q = n(875527),
+  Q = n(25827),
+  J = n(875527),
   $ = n(540650),
   ee = n(199902),
   et = n(523746),
@@ -396,7 +396,7 @@ function eZ(e) {
   });
   return (0, r.jsxs)("div", {
     className: eC.wrapper,
-    children: [(0, r.jsx)(J.C, {
+    children: [(0, r.jsx)(Q.C, {
       enabled: !0,
       centerButton: !0,
       join: !0,
@@ -458,7 +458,7 @@ let eT = function(e) {
     limit: W
   } = (0, eo.Z)(n), {
     analyticsLocations: Y
-  } = (0, v.ZP)(C.Z.VOICE_CONTROL_TRAY), X = (0, ea.Z)(n), ee = (0, Q.Hu)({
+  } = (0, v.ZP)(C.Z.VOICE_CONTROL_TRAY), X = (0, ea.Z)(n), ee = (0, J.Hu)({
     location: C.Z.VOICE_CONTROL_TRAY,
     autoTrackExposure: !0
   }), et = (0, F.Z)(n), eu = i.useRef(null), eh = i.useRef(null), em = ee ? e => {
@@ -549,7 +549,7 @@ let eT = function(e) {
               } = e, {
                 isShown: i
               } = t;
-              return (0, r.jsx)(J.C, {
+              return (0, r.jsx)(Q.C, {
                 ref: eh,
                 centerButton: !0,
                 hasPermission: P,

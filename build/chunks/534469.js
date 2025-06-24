@@ -53,8 +53,8 @@ var r = n(255367),
   K = n(388032),
   X = n(30804);
 
-function J() {
-  return (J = Object.assign || function(e) {
+function Q() {
+  return (Q = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -63,7 +63,7 @@ function J() {
   }).apply(this, arguments)
 }
 
-function Q(e) {
+function J(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -127,7 +127,7 @@ function en(e) {
     className: d
   } = e;
   s()(i.type === q.uaV.THREAD_STARTER_MESSAGE, "Message must be a thread starter message");
-  let p = J({}, function(e) {
+  let p = Q({}, function(e) {
       if (null == e) throw TypeError("Cannot destructure " + e);
       return e
     }((0, c.JA)(null != (t = e.id) ? t : ""))),
@@ -139,11 +139,11 @@ function en(e) {
     g = (0, N.ZP)(i),
     b = (0, w.iG)(i),
     _ = (0, w.Gx)(i);
-  return i.type === q.uaV.THREAD_STARTER_MESSAGE && null != h && h.state === x.Y.LOADED ? (0, r.jsx)(er, $(Q({}, e), {
+  return i.type === q.uaV.THREAD_STARTER_MESSAGE && null != h && h.state === x.Y.LOADED ? (0, r.jsx)(er, $(J({}, e), {
     viewingChannelId: i.channel_id,
     message: h.message,
     groupId: h.message.id
-  })) : (0, r.jsx)(A.Z, $(Q({}, p), {
+  })) : (0, r.jsx)(A.Z, $(J({}, p), {
     id: n,
     compact: o,
     className: a()(d, {
@@ -193,7 +193,7 @@ function er(e) {
   } = (0, R.bb)(I), {
     popouts: F,
     selected: V,
-    setPopout: J
+    setPopout: Q
   } = (0, k.Z)(o.id, Y.d$), et = v.RS.useSetting(), en = v.NA.useSetting(), er = (0, u.e7)([x.Z], () => x.Z.getMessageByReference(O)), ei = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
     handleMouseEnter: el,
     handleMouseLeave: ea,
@@ -226,7 +226,7 @@ function er(e) {
       onClick: e_,
       "aria-label": K.intl.string(K.t.k5WiPT),
       children: K.intl.string(K.t.k5WiPT)
-    }), (0, r.jsx)(A.Z, $(Q({}, P), {
+    }), (0, r.jsx)(A.Z, $(J({}, P), {
       id: l,
       compact: b,
       className: a()(_, {
@@ -242,8 +242,8 @@ function er(e) {
       onKeyDown: eh,
       onFocus: L,
       onBlur: B,
-      childrenRepliedMessage: o.type === q.uaV.REPLY && (0, z.Z)($(Q({}, e), {
-        setPopout: J,
+      childrenRepliedMessage: o.type === q.uaV.REPLY && (0, z.Z)($(J({}, e), {
+        setPopout: Q,
         referencedUsernameProfile: F.referencedUsernameProfile,
         referencedAvatarProfile: F.referencedAvatarProfile,
         replyReference: O,
@@ -252,7 +252,7 @@ function er(e) {
       })),
       childrenHeader: (0, G.Z)({
         messageProps: e,
-        setPopout: J,
+        setPopout: Q,
         messagePopouts: F,
         replyReference: O,
         author: ef,
@@ -287,7 +287,7 @@ let ei = i.memo(function(e) {
     message: {
       id: P
     },
-    channel: J,
+    channel: Q,
     channel: {
       id: et
     },
@@ -313,8 +313,8 @@ let ei = i.memo(function(e) {
       selected: eg,
       setPopout: eb
     } = (0, k.Z)(C.id, Y.d$),
-    e_ = (0, R.qo)(C, J, eb),
-    ey = (0, R.Go)(C, J),
+    e_ = (0, R.qo)(C, Q, eb),
+    ey = (0, R.Go)(C, Q),
     {
       handleMouseEnter: ex,
       handleMouseLeave: eC,
@@ -343,7 +343,7 @@ let ei = i.memo(function(e) {
     eA = eg || eN || eT && eO,
     ew = eA || ej,
     eR = (0, u.e7)([j.Z], () => C.hasFlag(q.iLy.HAS_THREAD) && j.Z.getChannel(I.default.castMessageIdAsChannelId(C.id))),
-    eM = C.isFirstMessageInForumPost(J),
+    eM = C.isFirstMessageInForumPost(Q),
     ek = (0, m.A)((null != (n = C.editedTimestamp) ? n : C.timestamp).valueOf()),
     eD = (0, u.e7)([O.Z], () => O.Z.isDeveloper),
     {
@@ -369,7 +369,7 @@ let ei = i.memo(function(e) {
       }), null != e ? e : t.current
     }(ei),
     eV = (0, f.p9)({
-      guildId: J.guild_id,
+      guildId: Q.guild_id,
       roleId: eF.iconRoleId
     }),
     ez = (0, w.iG)(C, el),
@@ -377,13 +377,13 @@ let ei = i.memo(function(e) {
     eY = (0, u.e7)([h.Z], () => h.Z.getMessage(P), [P]),
     eq = (0, L.Z)({
       message: C,
-      channel: J
+      channel: Q
     }),
     eK = null != eY,
     eX = i.useMemo(() => Object.values(em).some(e => e), [em]);
   l = C.type === q.uaV.CUSTOM_GIFT ? "" : !eN && eK ? (0, B.Z)(e, eL) : (0, H.Z)(e, eL, eN);
-  let eJ = C.id === el,
-    eQ = (0, r.jsx)(d.tEY, {
+  let eQ = C.id === el,
+    eJ = (0, r.jsx)(d.tEY, {
       offset: {
         left: 4,
         right: 4
@@ -396,7 +396,7 @@ let ei = i.memo(function(e) {
           compact: en,
           message: C,
           hovering: ej && !eN && !eX
-        }), (0, r.jsx)(A.Z, $(Q({}, eu), {
+        }), (0, r.jsx)(A.Z, $(J({}, eu), {
           "aria-setsize": -1,
           "aria-roledescription": K.intl.string(K.t.BAB0yM),
           "aria-labelledby": ez,
@@ -415,7 +415,7 @@ let ei = i.memo(function(e) {
             [X.ephemeral]: (0, S.Pv)(C),
             [X.nitroMessage]: C.type === q.uaV.NITRO_NOTIFICATION || C.type === q.uaV.CHAT_WALLPAPER_SET || C.type === q.uaV.CHAT_WALLPAPER_REMOVED,
             [X.systemMessage]: (0, Z.Z)(C),
-            [X.groupStart]: !ea && (eJ || C.type === q.uaV.REPLY),
+            [X.groupStart]: !ea && (eQ || C.type === q.uaV.REPLY),
             [X.selected]: eA,
             [X.replying]: (null == eG ? void 0 : eG.message.id) === C.id,
             [X.interactionSending]: C.isCommandType() && C.state === q.yb.SENDING,
@@ -425,7 +425,7 @@ let ei = i.memo(function(e) {
             [X.potioned]: (0, _.Uw)(C) && ed
           }),
           zalgo: !eN,
-          childrenRepliedMessage: ea || C.type !== q.uaV.REPLY ? void 0 : (0, z.Z)($(Q({}, e), {
+          childrenRepliedMessage: ea || C.type !== q.uaV.REPLY ? void 0 : (0, z.Z)($(J({}, e), {
             setPopout: eb,
             referencedUsernameProfile: em.referencedUsernameProfile,
             referencedAvatarProfile: em.referencedAvatarProfile,
@@ -474,6 +474,6 @@ let ei = i.memo(function(e) {
       [X.backgroundFlash]: !0,
       [X.groupStart]: !en && C.id === el
     }),
-    children: eQ
-  }, "bg-flash-".concat(o)) : eQ
+    children: eJ
+  }, "bg-flash-".concat(o)) : eJ
 })

@@ -50,8 +50,8 @@ var r = n(255367),
   q = n(3861),
   K = n(493754),
   X = n(937995),
-  J = n(618158),
-  Q = n(880831),
+  Q = n(618158),
+  J = n(880831),
   $ = n(73563),
   ee = n(751843),
   et = n(268353),
@@ -602,7 +602,7 @@ class eW extends i.PureComponent {
             className: eB.badge,
             count: t
           }) : null]
-        }) : null, (null == o ? void 0 : o.type) !== eD.fO.STREAM && (null == o ? void 0 : o.type) !== eD.fO.ACTIVITY || s ? null : (0, r.jsx)(J.Z, {
+        }) : null, (null == o ? void 0 : o.type) !== eD.fO.STREAM && (null == o ? void 0 : o.type) !== eD.fO.ACTIVITY || s ? null : (0, r.jsx)(Q.Z, {
           children: (0, r.jsx)(eN.Z, {
             className: a()(eB.leftTrayIcon, eB.viewersButton),
             participant: o,
@@ -669,7 +669,7 @@ class eW extends i.PureComponent {
         inCall: i
       } = this.props;
       return !e || t || this.popoutOpen && !this.inPopout && i ? null : (0, r.jsx)(eI.ZP, {
-        children: (0, r.jsx)(Q.Z, {
+        children: (0, r.jsx)(J.Z, {
           className: eB.chatToasts,
           channelId: n.id
         })
@@ -698,7 +698,7 @@ class eW extends i.PureComponent {
         canSelectRegion: s,
         renderHeader: c
       } = this.viewProperties;
-      return c ? (0, r.jsxs)(J.Z, {
+      return c ? (0, r.jsxs)(Q.Z, {
         children: [(0, r.jsx)("div", {
           className: eB.headerWrapper,
           children: o ? null == e ? void 0 : e() : (0, r.jsx)(eP.Z, {
@@ -764,11 +764,11 @@ let eY = function(e) {
     selectedStream: null != F ? eo.Z.getActiveStreamForStreamKey(F.id) : null
   }), [F]), z = (0, u.e7)([ed.Z], () => ed.Z.getGuild(n.getGuildId())), Y = (0, u.e7)([eu.Z], () => eu.Z.getCall(n.id), [n.id]), q = (0, u.e7)([eh.ZP], () => eh.ZP.getMentionCount(n.id), [n.id]), K = (0, u.e7)([es.default], () => es.default.getId()), {
     popoutWindow: X,
-    popoutWindowAlwaysOnTop: J
+    popoutWindowAlwaysOnTop: Q
   } = (0, u.cj)([G.Z], () => ({
     popoutWindow: G.Z.getWindow(eL.KJ3.CHANNEL_CALL_POPOUT),
     popoutWindowAlwaysOnTop: G.Z.getIsAlwaysOnTop(eL.KJ3.CHANNEL_CALL_POPOUT)
-  })), Q = (0, u.e7)([ep.Z], () => ep.Z.can(eL.Plq.CONNECT, n)), $ = (0, u.e7)([ec.Z], () => ec.Z.getToastsEnabled(n.id)), ee = (0, u.e7)([k.Z], () => k.Z.getAwaitingRemoteSessionInfo()), et = (0, u.e7)([W.ZP], () => W.ZP.callHeaderHeight), en = i.useCallback(e => {
+  })), J = (0, u.e7)([ep.Z], () => ep.Z.can(eL.Plq.CONNECT, n)), $ = (0, u.e7)([ec.Z], () => ec.Z.getToastsEnabled(n.id)), ee = (0, u.e7)([k.Z], () => k.Z.getAwaitingRemoteSessionInfo()), et = (0, u.e7)([W.ZP], () => W.ZP.callHeaderHeight), en = i.useCallback(e => {
     y.ZP.updatedUnsyncedSettings({
       callHeaderHeight: e
     })
@@ -810,14 +810,14 @@ let eY = function(e) {
           children: [(0, r.jsx)(eW, {
             channel: n,
             guild: z,
-            hasConnectPermission: Q,
+            hasConnectPermission: J,
             participantsOpen: R,
             participantsListOpen: U && e_,
             renderExternalHeader: l,
             appContext: g,
             call: Y,
             popoutWindow: X,
-            popoutWindowAlwaysOnTop: J,
+            popoutWindowAlwaysOnTop: Q,
             mentionCount: q,
             selectedStream: V,
             mode: T,

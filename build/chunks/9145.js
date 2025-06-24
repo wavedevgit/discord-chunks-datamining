@@ -52,7 +52,7 @@ function H(e) {
     maxHeight: H,
     connectedLocation: V,
     renderExternalHeader: z
-  } = e, W = (0, N.Z)(), Y = (0, o.Wu)([I.ZP], () => I.ZP.getEmbeddedActivitiesForLocation(V), [V]), q = (0, Z.p)(V), K = (0, o.e7)([y.Z], () => y.Z.getChannel(q)), X = (0, S.gb)(Y), J = (0, S.uF)(X), Q = i.useCallback(() => {
+  } = e, W = (0, N.Z)(), Y = (0, o.Wu)([I.ZP], () => I.ZP.getEmbeddedActivitiesForLocation(V), [V]), q = (0, Z.p)(V), K = (0, o.e7)([y.Z], () => y.Z.getChannel(q)), X = (0, S.gb)(Y), Q = (0, S.uF)(X), J = i.useCallback(() => {
     (0, E.tg)(D.Ez.PIP)
   }, []), $ = i.useRef(null), ee = (0, o.e7)([I.ZP], () => I.ZP.getFocusedLayout()), et = ee !== D.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : H) ? n : null), ei = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
@@ -82,7 +82,7 @@ function H(e) {
       t = ea.height;
     es ? ((t = ea.width / D.I0) > ea.height && (e = (t = ea.height) * D.I0), eu = (ea.height - t) / 2) : ((e = Math.min(ea.height * D.I0)) > ea.width && (t = (e = ea.width) / D.I0), ec = (ea.width - e) / 2)
   }
-  let ep = J.get(null != (l = null == W ? void 0 : W.id) ? l : ""),
+  let ep = Q.get(null != (l = null == W ? void 0 : W.id) ? l : ""),
     eh = (0, o.e7)([C.Z], () => C.Z.getChannelId()),
     ef = (0, o.Wu)([x.ZP], () => {
       var e;
@@ -213,7 +213,7 @@ function H(e) {
               }), (0, r.jsx)(g.d, {
                 isTrayButton: !0,
                 label: U.intl.string(U.t.brPQ5e),
-                onClick: Q,
+                onClick: J,
                 iconComponent: c.dOc,
                 themeable: !0
               })]

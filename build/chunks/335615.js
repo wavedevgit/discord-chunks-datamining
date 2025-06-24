@@ -51,7 +51,7 @@ var r = n(255367),
   K = n(388032),
   X = n(11847);
 
-function J(e, t, n) {
+function Q(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -60,14 +60,14 @@ function J(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Q(e) {
+function J(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      J(e, t, n[t])
+      Q(e, t, n[t])
     })
   }
   return e
@@ -138,7 +138,7 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387)), t = H.Z.isInChannel(B.Z.getVoiceChannelId(), u.id);
-        return n => (0, r.jsx)(e, $(Q({}, n), {
+        return n => (0, r.jsx)(e, $(J({}, n), {
           user: u,
           guildId: x,
           channel: y,
@@ -183,7 +183,7 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
           onClick: n,
           onMouseDown: i
         } = e, o = ee(e, ["onClick", "onMouseDown"]);
-        return (0, r.jsx)(_.Z, Q({
+        return (0, r.jsx)(_.Z, J({
           ref: I,
           className: X.member,
           onContextMenu: N,
@@ -230,7 +230,7 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
     }, [i, t]), p = (0, R.K)({
       user: l
     });
-    return (0, r.jsx)(er, $(Q({}, n, o), {
+    return (0, r.jsx)(er, $(J({}, n, o), {
       isTyping: s,
       currentUser: u,
       colorRoleName: d,
@@ -262,7 +262,7 @@ let et = Y.ZP.getEnableHardwareAcceleration(),
         })
       }), (0, r.jsxs)("span", {
         "aria-hidden": !0,
-        children: [null != a ? (0, r.jsx)(Z.Z, Q({
+        children: [null != a ? (0, r.jsx)(Z.Z, J({
           className: X.roleIcon
         }, a)) : null, n, " — ", o]
       })]
@@ -347,7 +347,7 @@ class eo extends i.Component {
                   ref: o,
                   role: s
                 } = n, c = ee(n, ["ref", "role"]);
-                return (0, r.jsx)(f.aVo, Q({
+                return (0, r.jsx)(f.aVo, J({
                   innerRole: s,
                   innerAriaLabel: K.intl.string(K.t["9Oq93t"]),
                   ref: e => {
@@ -375,16 +375,16 @@ class eo extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), J(this, "_list", null), J(this, "_areActivitiesExperimentallyHidden", !1), J(this, "lastReportedAnalyticsChannel", void 0), J(this, "setList", e => {
+    super(...e), Q(this, "_list", null), Q(this, "_areActivitiesExperimentallyHidden", !1), Q(this, "lastReportedAnalyticsChannel", void 0), Q(this, "setList", e => {
       this._list = e, this.props.listRef.current = e
-    }), J(this, "renderSection", e => {
+    }), Q(this, "renderSection", e => {
       let {
         section: t
       } = e, {
         groups: n,
         channel: l
       } = this.props, a = n[t];
-      if ((0, O.R)(a)) return (0, i.createElement)(O.Z, $(Q({}, a), {
+      if ((0, O.R)(a)) return (0, i.createElement)(O.Z, $(J({}, a), {
         key: "section-".concat(t)
       }));
       if (0 === t) {
@@ -395,17 +395,17 @@ class eo extends i.Component {
           tutorialId: "whos-online",
           position: "left",
           inlineSpecs: en,
-          children: (0, i.createElement)(el, $(Q({}, a), {
+          children: (0, i.createElement)(el, $(J({}, a), {
             key: "section-".concat(e),
             guildId: l.guild_id
           }))
         }, "section-".concat(t))
       }
-      return (0, i.createElement)(el, $(Q({}, a), {
+      return (0, i.createElement)(el, $(J({}, a), {
         key: "section-".concat(t),
         guildId: l.guild_id
       }))
-    }), J(this, "getRowProps", e => {
+    }), Q(this, "getRowProps", e => {
       let {
         groups: t,
         rows: n
@@ -415,7 +415,7 @@ class eo extends i.Component {
         index: i
       } = r;
       return null == i || "row" !== e.type ? null : n[i + 1 + e.row]
-    }), J(this, "renderRow", e => {
+    }), Q(this, "renderRow", e => {
       let {
         section: t,
         row: n,
@@ -458,7 +458,7 @@ class eo extends i.Component {
         if (a.type === L.so.CONTENT_INVENTORY) {
           let e = "content-inventory-".concat(a.entry.id);
           null != a.entry.original_id && (e += "-".concat(a.entry.original_id));
-          let t = (0, r.jsx)(I.ZP, $(Q({}, a), {
+          let t = (0, r.jsx)(I.ZP, $(J({}, a), {
             channel: this.props.channel,
             index: i
           }), e);
@@ -471,9 +471,9 @@ class eo extends i.Component {
       return (0, r.jsx)(ea, {
         index: i
       }, "placeholder-".concat(t, ":").concat(n))
-    }), J(this, "handleScroll", () => {
+    }), Q(this, "handleScroll", () => {
       this.updateSubscription(), this.updateMaxContentFeedRowSeen()
-    }), J(this, "updateMaxContentFeedRowSeen", s().debounce(() => {
+    }), Q(this, "updateMaxContentFeedRowSeen", s().debounce(() => {
       let e = this._list;
       if (null == e) return;
       let {
@@ -481,10 +481,10 @@ class eo extends i.Component {
         scrollTop: n
       } = e.getScrollerState(), r = n + t - this.props.sectionHeight;
       this.props.updateMaxContentFeedRowSeen(r)
-    }, 50)), J(this, "getContentFeedGroup", () => {
+    }, 50)), Q(this, "getContentFeedGroup", () => {
       let e = this.props.groups[S.T];
       if ((0, O.R)(e)) return e
-    }), J(this, "hasContentFeed", () => null != this.getContentFeedGroup()), J(this, "getRowHeightComputer", () => {
+    }), Q(this, "hasContentFeed", () => null != this.getContentFeedGroup()), Q(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
           rowHeight: t
@@ -502,10 +502,10 @@ class eo extends i.Component {
         }
       }
       return t
-    }), J(this, "getContentFeedHeight", () => {
+    }), Q(this, "getContentFeedHeight", () => {
       let e = this.getContentFeedGroup();
       return null != e ? e.feedHeight + this.props.sectionHeight : 0
-    }), J(this, "updateSubscription", s().debounce(() => {
+    }), Q(this, "updateSubscription", s().debounce(() => {
       if (null == this._list) return;
       let {
         channel: e
@@ -521,7 +521,7 @@ class eo extends i.Component {
         height: r,
         rowHeight: t
       })
-    }, 50)), J(this, "trackMemberListViewed", () => {
+    }, 50)), Q(this, "trackMemberListViewed", () => {
       var e;
       if (this.lastReportedAnalyticsChannel === this.props.channel.id) return;
       let t = null == (e = this._list) ? void 0 : e.getItems(),
@@ -543,7 +543,7 @@ class eo extends i.Component {
         num_users_visible_with_avatar_decoration: 0,
         num_users_visible_with_nameplate: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, C.ZP.trackWithMetadata(q.rMx.MEMBER_LIST_VIEWED, Q({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, C.ZP.trackWithMetadata(q.rMx.MEMBER_LIST_VIEWED, J({}, i))
     })
   }
 }
@@ -608,7 +608,7 @@ function es(e) {
       className: a()(X.container, n),
       children: (0, r.jsx)(c.bG, {
         navigator: E,
-        children: (0, r.jsx)(eo, $(Q({}, e, s), {
+        children: (0, r.jsx)(eo, $(J({}, e, s), {
           version: m,
           groups: p,
           rows: d,

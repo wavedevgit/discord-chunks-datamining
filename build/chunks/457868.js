@@ -1,6 +1,6 @@
 /** Chunk was on 16703 **/
 n.d(t, {
-  Z: () => J
+  Z: () => Q
 }), n(388685), n(583741);
 var r = n(255367),
   i = n(73800),
@@ -121,7 +121,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
       user: b
     }), [K, X] = i.useState(!1);
     if (null == b) return null;
-    let J = null == h ? void 0 : h.premiumSince;
+    let Q = null == h ? void 0 : h.premiumSince;
     return (0, r.jsx)(I.Z, {
       targetElementRef: s,
       user: b,
@@ -169,7 +169,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
           isMobile: v,
           selected: K,
           applicationStream: R,
-          premiumSince: null == J ? null : new Date(J),
+          premiumSince: null == Q ? null : new Date(Q),
           onClickPremiumGuildIcon: Y,
           itemProps: M,
           lostPermissionTooltipText: D ? void 0 : G.intl.string(G.t["/QcoT0"]),
@@ -239,7 +239,7 @@ let W = U.ZP.getEnableHardwareAcceleration(),
     }) : null
   });
 
-function J(e) {
+function Q(e) {
   let {
     channel: t,
     guild: n
@@ -304,7 +304,7 @@ function J(e) {
         channel_type: t.type,
         guild_id: t.guild_id
       })
-    }, [t.guild_id, t.id, t.type]), x) return (0, r.jsx)(Q, {
+    }, [t.guild_id, t.id, t.type]), x) return (0, r.jsx)(J, {
     channel: t
   });
   let C = s().omit(m.containerProps, ["ref"]),
@@ -363,7 +363,7 @@ function J(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   let {
     channel: t
   } = e;
