@@ -148,7 +148,7 @@ let U = i.memo(function(e) {
       submitting: er
     }];
   return null != ea && em.push(ea), (0, r.jsx)(b.W, {
-    header: P.name,
+    header: L.intl.string(L.t.pkq6Vl),
     title: ed,
     iconSrc: eo,
     embedUrl: (0, _.H)({
