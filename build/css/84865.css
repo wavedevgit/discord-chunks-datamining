@@ -1,6 +1,6 @@
 /**
   Module ID: 84865
-  Original File Name: a2cca21f229f2565
+  Original File Name: d78a2d1377339361
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -6199,7 +6199,7 @@ div:has(>.positionLayer__4f4b6) {
     padding: var(--spacing-4)
 }
 
-.clickableGameWrapper__5dec7.clickableGameWrapperForceHover__5dec7,.clickableGameWrapper__5dec7:hover {
+.clickableGameWrapper__5dec7:hover {
     background-color: var(--button-secondary-background-hover);
     border-radius: var(--spacing-8)
 }
@@ -7521,4 +7521,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=a2cca21f229f2565.css.map*/
+/*# sourceMappingURL=d78a2d1377339361.css.map*/

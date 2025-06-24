@@ -1,9 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  BD: () => m,
   DF: () => p,
-  ZP: () => y,
+  ZP: () => b,
   _F: () => h
 });
 var r = n(255367);
@@ -58,24 +57,21 @@ var p = function(e) {
   }({}),
   h = function(e) {
     return e[e.ADJACENT = 0] = "ADJACENT", e[e.STACKED = 1] = "STACKED", e
-  }({}),
-  m = function(e) {
-    return e.BRAND = "brand", e.PRIMARY = "primary", e
   }({});
-let g = Object.freeze({
+let m = Object.freeze({
     brand: c.colorBrand,
     primary: c.colorPrimary
   }),
-  E = Object.freeze({
+  g = Object.freeze({
     brand: "always-white",
     primary: "header-primary"
   }),
-  b = Object.freeze({
+  E = Object.freeze({
     brand: "always-white",
     primary: "text-normal"
   });
 
-function y(e) {
+function b(e) {
   let {
     color: t = "brand",
     className: n,
@@ -84,7 +80,7 @@ function y(e) {
     content: f,
     contentClassName: p,
     buttonCTA: h,
-    secondaryButtonCTA: m,
+    secondaryButtonCTA: b,
     onClick: y,
     onSecondaryClick: O,
     buttonProps: v = {
@@ -103,7 +99,7 @@ function y(e) {
   (0, s.ZP)(() => {
     null == T || T()
   });
-  let R = null != m,
+  let R = null != b,
     P = e => {
       y(e), null == A || A(l.L.PRIMARY)
     },
@@ -111,14 +107,14 @@ function y(e) {
       null == O || O(), null == A || A(l.L.SECONDARY)
     };
   return (0, r.jsxs)("div", {
-    className: a()(n, g[t], c.upsellTooltipWrapper, c[N]),
+    className: a()(n, m[t], c.upsellTooltipWrapper, c[N]),
     children: [S, null == i ? null : (0, r.jsx)(o.X6q, {
-      color: E[t],
+      color: g[t],
       className: a()(u, c.upsellTooltipHeader),
       variant: "heading-md/semibold",
       children: i
     }), (0, r.jsx)(o.Text, {
-      color: b[t],
+      color: E[t],
       className: a()(p, c.content),
       variant: "text-sm/normal",
       children: f
@@ -130,7 +126,7 @@ function y(e) {
       children: [R ? (0, r.jsx)(o.zxk, _(d({}, I), {
         fullWidth: 1 === C,
         onClick: w,
-        children: m
+        children: b
       })) : null, null == h ? null : (0, r.jsx)(o.zxk, _(d({}, v), {
         fullWidth: !R || 1 === C,
         onClick: P,
@@ -139,4 +135,4 @@ function y(e) {
     }) : null]
   })
 }
-y.CaretPosition = p, y.ButtonLayout = h
+b.CaretPosition = p, b.ButtonLayout = h
