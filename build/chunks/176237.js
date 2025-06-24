@@ -1,20 +1,28 @@
 /** Chunk was on 89839 **/
-n.d(t, {
-  w: () => s,
-  x: () => l
+t.d(n, {
+  $: () => a,
+  D: () => r
 });
-var a = n(818083);
-let i = (0, n(427164).le)({
-    id: "2025-04_apex_app_sdk_aa",
+var l = t(818083);
+let r = (0, t(427164).le)({
+    name: "2025-06-apex-aa-evolving-tenure-badge-web",
     kind: "user",
     defaultConfig: {
-      value: "default"
+      value: "blue"
+    },
+    variations: {
+      0: {
+        value: "blue"
+      },
+      1: {
+        value: "green"
+      }
     }
   }),
-  r = (0, a.B)({
-    id: "2025-04_apex_start_session",
+  a = (0, l.B)({
+    id: "2025-06_apex_client_aa_rollout",
     kind: "user",
-    label: "Apex App SDK Rollout",
+    label: "Apex Client SDK AA Test Rollout",
     defaultConfig: {
       enabled: !1
     },
@@ -25,24 +33,4 @@ let i = (0, n(427164).le)({
         enabled: !0
       }
     }]
-  });
-
-function l(e) {
-  let {
-    location: t
-  } = e;
-  return i.useCurrentConfig({
-    location: t
   })
-}
-
-function s(e) {
-  let {
-    location: t
-  } = e;
-  return r.useExperiment({
-    location: t
-  }, {
-    autoTrackExposure: !1
-  })
-}

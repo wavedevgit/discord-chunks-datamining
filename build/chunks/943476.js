@@ -1,74 +1,58 @@
 /** Chunk was on 89839 **/
-n.d(t, {
-  Z: () => s
-}), n(388685);
-var a = n(73800),
-  i = n(314897),
-  r = n(823379),
-  l = n(633289);
+t.d(n, {
+  Z: () => d
+}), t(388685);
+var l = t(73800),
+  r = t(442837),
+  a = t(314897),
+  i = t(823379),
+  u = t(633289);
 
-function s(e) {
-  let t = e.id,
-    n = e.kind,
-    i = e.defaultConfig,
-    r = l.Z.registerExperiment(t, n, i);
-  return {
+function d(e) {
+  let {
+    name: n,
+    kind: t,
+    variations: a,
+    defaultConfig: i
+  } = e, d = u.Z.getHash(n);
+  return u.Z.registerExperiment(e), {
     definition: e,
-    useCurrentConfig: function(e) {
-      let s = d(n, e),
-        u = l.Z.getEvaluation(n, s),
-        [o, c] = (0, a.useState)(l.Z.getAssignedConfig({
-          experimentId: t,
-          unitId: s,
-          kind: n
-        }, r));
-      return (0, a.useEffect)(() => {
-        null != u && l.Z.trackEvaluationExposure({
-          evaluationId: u,
-          kind: n,
-          experimentId: t,
-          location: e.location
-        })
-      }, [s, u, e.location]), (0, a.useEffect)(() => {
-        let e = function(e, t, n) {
-          function a() {
-            n(l.Z.getAssignedConfig(e, t))
-          }
-          return l.Z.addReactChangeListener(a), () => {
-            l.Z.removeReactChangeListener(a)
-          }
-        }({
-          experimentId: t,
-          unitId: s,
-          kind: n
-        }, r, e => c(null != e ? e : i));
-        return () => e()
-      }, [s, u]), o
+    useConfig: function(e) {
+      let o = s(t, e),
+        [c, m] = (0, r.Wu)([u.Z], () => u.Z.getEvaluationAndAssignment(t, o, d), [o]),
+        g = null == m ? void 0 : m.variantId,
+        v = null == m ? void 0 : m.revision,
+        b = null == m ? void 0 : m.isOverride;
+      if ((0, l.useEffect)(() => {
+          null != c && null != g && null != v && !1 === b && u.Z.trackExperimentExposure(c, n, e.location, t, v, g)
+        }, [o, c, g, v, e.location, b]), null == g) return i;
+      {
+        let e = a[g];
+        return null != e ? e : i
+      }
     },
-    getCurrentConfig: function(e) {
-      let a = d(n, e),
-        i = l.Z.getEvaluation(n, a);
-      return null != i && l.Z.trackEvaluationExposure({
-        evaluationId: i,
-        kind: n,
-        experimentId: t,
-        location: e.location
-      }), l.Z.getAssignedConfig({
-        experimentId: t,
-        unitId: a,
-        kind: n
-      }, r)
+    getConfig: function(e) {
+      let l = s(t, e),
+        [r, o] = u.Z.getEvaluationAndAssignment(t, l, d),
+        c = null == o ? void 0 : o.variantId,
+        m = null == o ? void 0 : o.revision,
+        g = null == o ? void 0 : o.isOverride;
+      if (null != r && null != c && null != m && !1 === g && u.Z.trackExperimentExposure(r, n, e.location, t, m, c), null == c) return i;
+      {
+        let e = a[c];
+        return null != e ? e : i
+      }
     }
   }
 }
 
-function d(e, t) {
+function s(e, n) {
   switch (e) {
     case "guild":
-      return t.guildId;
+      return n.guildId;
     case "user":
-      return i.default.getId();
+      return a.default.getId();
     default:
-      (0, r.vE)(e)
+      (0, i.vE)(e)
   }
 }
