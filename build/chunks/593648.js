@@ -589,16 +589,17 @@ function es() {
 function el() {
   let e = (0, x._x)("notification_settings"),
     t = (0, E.BH)(),
-    n = (0, c.e7)([f.Z], () => f.Z.currentUserApplicationIds.size > 0);
+    n = (0, E.nC)(),
+    r = (0, c.e7)([f.Z], () => f.Z.currentUserApplicationIds.size > 0);
   if (!e) return null;
-  let r = [{
+  let s = [{
     name: H.intl.string(H.t.PCRbS0),
     value: d.Tv.ACTIVITY_NOTIFICATIONS_ENABLED
   }, {
     name: H.intl.string(H.t.UBa6pa),
     value: d.Tv.ONLY_GAMES_PLAYED,
-    disabled: !n,
-    desc: n ? null : H.intl.string(H.t.XIH6xM)
+    disabled: !r,
+    desc: r ? null : H.intl.string(H.t.XIH6xM)
   }, {
     name: H.intl.string(H.t.TCxJ8v),
     value: d.Tv.ACTIVITY_NOTIFICATIONS_DISABLED
@@ -607,19 +608,24 @@ function el() {
     setting: V.s6.NOTIFICATIONS_GAME_ACTIVITY,
     children: [(0, i.jsxs)(u.xJW, {
       title: H.intl.string(H.t.omtoJy),
+      className: Y.marginBottom20,
       children: [(0, i.jsx)(u.R94, {
         type: u.geA.DESCRIPTION,
         className: Y.marginBottom8,
         children: H.intl.string(H.t.ncS4CA)
       }), (0, i.jsx)(u.FXm, {
-        options: r,
+        options: s,
         onChange: e => {
           B.YT.updateSetting(e.value)
         },
         value: t
       })]
-    }), (0, i.jsx)(u.$i$, {
-      className: l()(Y.marginTop40, Y.marginBottom40)
+    }), (0, i.jsx)(u.j7V, {
+      onChange: () => {
+        B.Qq.updateSetting(!n)
+      },
+      value: n,
+      children: H.intl.string(H.t.SZue3N)
     })]
   })
 }

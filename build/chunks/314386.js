@@ -17,16 +17,16 @@ function u(e) {
     user: n,
     guildId: t,
     channelId: u,
-    displayProfile: f,
-    onClose: _
+    displayProfile: _,
+    onClose: f
   } = e, {
     interactionType: p
   } = (0, i.Xo)(), m = (0, c.Z)({
     user: n,
     guildId: t,
     channelId: u,
-    displayProfile: f,
-    onClose: _
+    displayProfile: _,
+    onClose: f
   });
   return (0, o.jsxs)(a.Z, {
     children: [(0, o.jsx)(d.Z, {
@@ -34,7 +34,7 @@ function u(e) {
       user: n,
       guildId: t,
       channelId: u,
-      onClose: _
+      onClose: f
     }), (0, o.jsx)(r.Z, {
       shouldShowTooltip: null === p,
       themeType: s.lY.MODAL,

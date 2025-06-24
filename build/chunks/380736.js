@@ -192,41 +192,42 @@ function j(e) {
     notification: l,
     index: o,
     locked: s,
-    transitionState: c,
-    cleanUp: a
+    pinned: c,
+    transitionState: a,
+    cleanUp: d
   } = e, {
-    id: d,
+    id: h,
     props: {
-      onNotificationShow: h,
-      onDismissClick: p,
-      onNotificationClick: m,
-      onConfirmClick: f,
-      onCancelClick: v,
-      renderFooter: g,
-      animationWrapperClassName: y
+      onNotificationShow: p,
+      onDismissClick: m,
+      onNotificationClick: f,
+      onConfirmClick: v,
+      onCancelClick: g,
+      renderFooter: y,
+      animationWrapperClassName: j
     }
-  } = l, j = r.useCallback(() => {
-    h(d)
-  }, [h, d]), w = r.useCallback(e => {
-    u.Z.updateNotificationStatus(d), null == p || p(e, d)
-  }, [d, p]), k = r.useCallback(e => {
-    null == m || m(e, d)
-  }, [m, d]), P = r.useCallback(e => {
-    null == f || f(e, d)
-  }, [f, d]), Z = r.useCallback(e => {
-    null == v || v(e, d)
-  }, [v, d]), E = r.useCallback((e, t) => null == g ? void 0 : g(e, d, t), [g, d]), {
+  } = l, w = r.useCallback(() => {
+    p(h)
+  }, [p, h]), k = r.useCallback(e => {
+    u.Z.updateNotificationStatus(h), null == m || m(e, h)
+  }, [h, m]), P = r.useCallback(e => {
+    null == f || f(e, h)
+  }, [f, h]), Z = r.useCallback(e => {
+    null == v || v(e, h)
+  }, [v, h]), E = r.useCallback(e => {
+    null == g || g(e, h)
+  }, [g, h]), S = r.useCallback((e, t) => null == y ? void 0 : y(e, h, t), [y, h]), {
     props: {
-      onNotificationShow: S,
-      onDismissClick: z,
-      renderFooter: N,
-      onNotificationClick: D,
-      onConfirmClick: T,
-      onCancelClick: M,
-      disableClickableRegions: L = !1
+      onNotificationShow: z,
+      onDismissClick: N,
+      renderFooter: D,
+      onNotificationClick: T,
+      onConfirmClick: M,
+      onCancelClick: L,
+      disableClickableRegions: R = !1
     },
-    status: R
-  } = l, I = function(e, t) {
+    status: I
+  } = l, W = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -240,18 +241,18 @@ function j(e) {
       for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
-  }(l.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), {
-    ref: W,
-    springs: _
-  } = (0, b.X4)(l.id, c, a);
+  }(l.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), _ = !c && s, A = 0 === o && !R && !_, {
+    ref: U,
+    springs: F
+  } = (0, b.X4)(l.id, a, d);
   return (0, i.jsx)(x, {
-    transitionState: c,
-    springs: _,
+    transitionState: a,
+    springs: F,
     index: o,
     locked: s,
-    animationWrapperClassName: y,
+    animationWrapperClassName: j,
     children: (0, i.jsx)(C, {
-      observe: 0 === o && !L,
+      observe: A,
       children: (0, i.jsx)(O, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -269,21 +270,21 @@ function j(e) {
           })
         }
         return e
-      }({}, I), n = n = {
-        title: "function" == typeof I.title ? I.title(w) : I.title,
-        containerRef: W,
+      }({}, W), n = n = {
+        title: "function" == typeof W.title ? W.title(k) : W.title,
+        containerRef: U,
         notificationId: l.id,
-        onNotificationShow: 0 === o ? j : void 0,
-        onDismissClick: w,
-        onNotificationClick: null != m ? k : void 0,
-        onConfirmClick: null != f ? P : void 0,
-        onCancelClick: null != v ? Z : void 0,
-        renderFooter: E,
+        onNotificationShow: 0 === o ? w : void 0,
+        onDismissClick: k,
+        onNotificationClick: null != f ? P : void 0,
+        onConfirmClick: null != v ? Z : void 0,
+        onCancelClick: null != g ? E : void 0,
+        renderFooter: S,
         expand: !1,
         index: o,
         locked: s,
-        status: R,
-        contentOpacity: _.contentOpacity
+        status: I,
+        contentOpacity: F.contentOpacity
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

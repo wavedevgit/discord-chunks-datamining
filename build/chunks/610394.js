@@ -560,7 +560,7 @@ class eZ extends(r = i.ZP.Store) {
   }
   getFocusedRunningGame() {
     var e;
-    return null == V ? null : null != (e = d.ZP.getRunningGames().find(e => e.pid === V)) ? e : null
+    return null == V ? null : null != (e = d.ZP.getGameForPID(V)) ? e : null
   }
   isReady(e) {
     return k.has(e)

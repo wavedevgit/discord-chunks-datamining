@@ -32,9 +32,9 @@ function I(e) {
     displayProfile: I,
     guildId: P,
     subsection: E,
-    onClose: S
+    onClose: T
   } = e, {
-    voiceActivityStatusEnabled: T
+    voiceActivityStatusEnabled: S
   } = (0, o.U)({
     location: "UserProfileModalActivity"
   }), N = (0, d.b)({
@@ -52,11 +52,11 @@ function I(e) {
   }), M = (0, r.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), U = n.id === t.id, L = (0, r.e7)([c.Z, a.Z], () => {
     let e = U ? c.Z.getStatus() : a.Z.getStatus(n.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE
-  }), D = A.length > 0 || null != w, B = T && null == w && null == R && null != _, G = !L && (D || B), k = C.length > 0;
-  return G || k || !M ? (0, l.jsxs)(i.zJl, {
+  }), D = A.length > 0 || null != w, B = S && null == w && null == R && null != _, k = !L && (D || B), G = C.length > 0;
+  return k || G || !M ? (0, l.jsxs)(i.zJl, {
     className: y.scroller,
     fade: !0,
-    children: [G ? (0, l.jsx)(g.Z, {
+    children: [k ? (0, l.jsx)(g.Z, {
       "aria-label": O.intl.string(O.t.J6STd3),
       children: (0, l.jsxs)("ul", {
         className: y.activityList,
@@ -65,7 +65,7 @@ function I(e) {
             user: n,
             currentUser: t,
             voiceChannel: _,
-            onClose: S
+            onClose: T
           })
         }), null != w && (0, l.jsx)("li", {
           children: (0, l.jsx)(h.Z, {
@@ -73,7 +73,7 @@ function I(e) {
             user: n,
             currentUser: t,
             stream: w,
-            onClose: S,
+            onClose: T,
             profileGuildId: null == I ? void 0 : I.guildId
           })
         }), A.map((e, r) => (0, l.jsx)("li", {
@@ -81,12 +81,12 @@ function I(e) {
             user: n,
             currentUser: t,
             activity: e,
-            onClose: S,
+            onClose: T,
             profileGuildId: null == I ? void 0 : I.guildId
           })
         }, "live-".concat(r)))]
       })
-    }) : null, k ? (0, l.jsx)(g.Z, {
+    }) : null, G ? (0, l.jsx)(g.Z, {
       heading: O.intl.string(O.t.M0zgnZ),
       introText: U ? O.intl.format(O.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, l.jsx)(i.eee, {
@@ -104,7 +104,7 @@ function I(e) {
             currentUser: t,
             entry: e,
             profileGuildId: null == I ? void 0 : I.guildId,
-            onClose: S
+            onClose: T
           })
         }, e.id))
       })

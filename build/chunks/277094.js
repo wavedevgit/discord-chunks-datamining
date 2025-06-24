@@ -1,6 +1,6 @@
 /** Chunk was on 11678 **/
 t.d(n, {
-  Z: () => _
+  Z: () => f
 });
 var o = t(255367);
 t(73800);
@@ -12,13 +12,13 @@ var c = t(481060),
   l = t(821706),
   s = t(562831),
   u = t(981631),
-  f = t(887910);
+  _ = t(887910);
 
-function _(e) {
+function f(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: _,
+    guildId: f,
     relationshipType: p,
     onClose: m
   } = e, {
@@ -32,15 +32,15 @@ function _(e) {
   });
   if (p === u.OGo.BLOCKED) return null;
   if (n.id === t.id) return (0, o.jsx)("div", {
-    className: f.container,
+    className: _.container,
     children: (0, o.jsx)(r.Z, {
       user: n,
-      guildId: _,
+      guildId: f,
       onClose: m
     })
   });
   if (p === u.OGo.FRIEND || n.bot) return (0, o.jsx)("div", {
-    className: f.container,
+    className: _.container,
     children: (0, o.jsx)(d.Z, {
       type: "text",
       userId: n.id,
@@ -49,7 +49,7 @@ function _(e) {
     })
   });
   if (p === u.OGo.PENDING_OUTGOING || p === u.OGo.PENDING_INCOMING) return (0, o.jsxs)("div", {
-    className: f.container,
+    className: _.container,
     children: [(0, o.jsx)(l.g, {
       type: "icon",
       user: n,
@@ -65,7 +65,7 @@ function _(e) {
   });
   let y = h.length > 0 || b || x;
   return p === u.OGo.NONE && y ? (0, o.jsxs)("div", {
-    className: f.container,
+    className: _.container,
     children: [(0, o.jsx)(l.k9, {
       type: "icon",
       user: n,
@@ -81,7 +81,7 @@ function _(e) {
       autoFocus: !0
     })]
   }) : (0, o.jsxs)("div", {
-    className: f.container,
+    className: _.container,
     children: [(0, o.jsx)(d.Z, {
       type: "icon",
       userId: n.id,

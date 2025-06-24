@@ -267,9 +267,11 @@ let x = {
     renderWidget(e) {
       let {
         locked: t,
-        showEmpty: n
+        showEmpty: n,
+        widget: r
       } = e;
       return (0, i.jsx)(y.Z, {
+        pinned: r.pinned,
         locked: t,
         showEmpty: n
       })

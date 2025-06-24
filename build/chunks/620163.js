@@ -1432,7 +1432,7 @@ let eJ = () => {
       },
       [eF.s6.NOTIFICATIONS_GAME_ACTIVITY]: {
         section: ez.oAB.NOTIFICATIONS,
-        searchableTitles: [eK.intl.string(eK.t.omtoJy)],
+        searchableTitles: [eK.intl.string(eK.t.omtoJy), eK.intl.string(eK.t.SZue3N)],
         parent: eF.s6.NOTIFICATIONS,
         predicate: () => (0, N.uw)("SettingsRendererConfig")
       },

@@ -49,8 +49,8 @@ function s(e) {
   }(e, ["hideRestrictedProfile"]);
   let {
     user: s
-  } = t, [u, f] = (0, c.Z)(s.id);
+  } = t, [u, _] = (0, c.Z)(s.id);
   return u && !n ? (0, o.jsx)(r.Z, l({
-    onHide: f
+    onHide: _
   }, t)) : s.isNonUserBot() ? (0, o.jsx)(a.Z, l({}, t)) : s.bot ? (0, o.jsx)(i.Z, l({}, t)) : (0, o.jsx)(d.Z, l({}, t))
 }

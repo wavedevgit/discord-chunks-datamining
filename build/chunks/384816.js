@@ -33,8 +33,8 @@ function I(e) {
     subsection: P,
     onClose: E
   } = e, {
-    trackUserProfileAction: S
-  } = (0, f.KZ)(), T = (0, r.e7)([u.Z], () => u.Z.getGuildId()), N = (0, s.Y)({
+    trackUserProfileAction: T
+  } = (0, f.KZ)(), S = (0, r.e7)([u.Z], () => u.Z.getGuildId()), N = (0, s.Y)({
     userId: n.id
   }), A = (0, r.e7)([d.Z], () => d.Z.hidePersonalInformation), C = (0, r.e7)([c.default], () => c.default.locale), w = (0, g.Z)(n.id), _ = (0, p.Z)(n.id);
   return (0, l.jsxs)(i.zJl, {
@@ -86,11 +86,11 @@ function I(e) {
         applicationRoleConnection: e,
         locale: C,
         onApplicationClicked: () => {
-          S({
+          T({
             action: "PRESS_APP_CONNECTION"
           }), E()
         },
-        selectedGuildId: null != T ? T : void 0
+        selectedGuildId: null != S ? S : void 0
       }, e.application.id))
     }), (0, l.jsx)(b.Z, {
       heading: y.intl.string(y.t["mQKv+v"]),
@@ -99,7 +99,7 @@ function I(e) {
         userId: n.id,
         className: Z.note,
         autoFocus: P === O.Tb.NOTE,
-        onUpdate: () => S({
+        onUpdate: () => T({
           action: "SET_NOTE"
         })
       })

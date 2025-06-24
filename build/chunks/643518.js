@@ -11,8 +11,8 @@ var o = t(442837),
   l = t(806729),
   s = t(29899),
   u = t(708108),
-  f = t(146078),
-  _ = t(228168),
+  _ = t(146078),
+  f = t(228168),
   p = t(981631),
   m = t(388032);
 
@@ -30,34 +30,34 @@ function I(e) {
     live: x,
     recent: y,
     stream: v,
-    outbox: g
+    outbox: Z
   } = (0, d.Z)(n.id), {
-    voiceChannel: Z,
+    voiceChannel: g,
     voiceActivity: j
   } = (0, s.Z)({
     userId: n.id,
     guildId: I
-  }), A = n.id === (null == t ? void 0 : t.id), N = (0, o.e7)([a.Z, i.Z], () => {
+  }), A = n.id === (null == t ? void 0 : t.id), O = (0, o.e7)([a.Z, i.Z], () => {
     let e = A ? a.Z.getStatus() : i.Z.getStatus(n.id);
     return e === p.Skl.OFFLINE || e === p.Skl.INVISIBLE
-  }), O = null != v || x.length > 0, C = y.length > 0, {
+  }), N = null != v || x.length > 0, C = y.length > 0, {
     mutualFriendsCount: P,
     mutualGuilds: T
   } = (0, l.Z)(n), w = null == T ? void 0 : T.length, S = (0, r.Z)(n), E = [{
-    section: _.oh.USER_INFO,
+    section: f.oh.USER_INFO,
     text: m.intl.string(m.t.jGoPJS)
   }];
-  return !N && (O || b && null == v && null == j && null != Z) ? E.push({
-    section: _.oh.ACTIVITY,
+  return !O && (N || b && null == v && null == j && null != g) ? E.push({
+    section: f.oh.ACTIVITY,
     text: m.intl.string(m.t.chq59f)
-  }) : (C || null == g && h === _.Tb.RECENT_ACTIVITY) && E.push({
-    section: _.oh.ACTIVITY,
+  }) : (C || null == Z && h === f.Tb.RECENT_ACTIVITY) && E.push({
+    section: f.oh.ACTIVITY,
     text: m.intl.string(m.t.chq59f)
   }), !A && S && (E.push({
-    section: _.oh.MUTUAL_FRIENDS,
+    section: f.oh.MUTUAL_FRIENDS,
     text: (0, u.Z)(P)
   }), E.push({
-    section: _.oh.MUTUAL_GUILDS,
-    text: (0, f.Z)(w)
+    section: f.oh.MUTUAL_GUILDS,
+    text: (0, _.Z)(w)
   })), E
 }
