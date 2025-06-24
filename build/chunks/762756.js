@@ -1,21 +1,21 @@
 /** Chunk was on 89744 **/
 n.d(t, {
-  Z: () => E
+  Z: () => v
 }), n(388685);
 var r, i = n(255367),
   a = n(73800),
   l = n(120356),
-  c = n.n(l),
-  o = n(873546),
+  o = n.n(l),
+  c = n(873546),
   s = n(481060),
   u = n(599857),
   d = n(600164),
   f = n(63063),
   p = n(1964),
   m = n(981631),
-  g = n(388032),
-  h = n(816676),
-  y = n(20493);
+  h = n(388032),
+  y = n(816676),
+  g = n(20493);
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,8 +25,8 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let j = f.Z.getArticleURL(m.BhN.VERIFICATION_FAQ);
-class v extends(r = a.PureComponent) {
+let E = f.Z.getArticleURL(m.BhN.VERIFICATION_FAQ);
+class j extends(r = a.PureComponent) {
   renderFields() {
     let {
       types: e,
@@ -39,7 +39,7 @@ class v extends(r = a.PureComponent) {
         onVerify: r,
         theme: n
       }, t) : (0, i.jsx)(s.zxk, {
-        className: y.marginBottom20,
+        className: g.marginBottom20,
         onClick: () => this.handleClick(e),
         children: p.Z.getButtonTitle(e)
       }, e))
@@ -47,25 +47,25 @@ class v extends(r = a.PureComponent) {
   }
   render() {
     return (0, i.jsxs)(d.Z, {
-      className: h.verification,
+      className: y.verification,
       align: d.Z.Align.CENTER,
       direction: d.Z.Direction.VERTICAL,
       children: [(0, i.jsxs)(d.Z, {
-        className: c()(h.container, {
-          [h.isMobile]: o.tq
+        className: o()(y.container, {
+          [y.isMobile]: c.tq
         }),
         direction: d.Z.Direction.VERTICAL,
         align: d.Z.Align.CENTER,
         justify: d.Z.Justify.CENTER,
         children: [(0, i.jsx)("div", {
-          className: h.image
+          className: y.image
         }), (0, i.jsx)("div", {
-          className: c()(h.title, y.marginTop20),
-          children: g.intl.string(g.t.Iz0kDg)
+          className: o()(y.title, g.marginTop20),
+          children: h.intl.string(h.t.Iz0kDg)
         }), (0, i.jsx)("div", {
-          className: c()(h.body, y.marginTop4, y.marginBottom20),
-          children: g.intl.format(g.t["0rqMV1"], {
-            helpCenterURL: j
+          className: o()(y.body, g.marginTop4, g.marginBottom20),
+          children: h.intl.format(h.t["0rqMV1"], {
+            helpCenterURL: E
           })
         }), (0, i.jsx)(d.Z, {
           grow: 0,
@@ -74,22 +74,22 @@ class v extends(r = a.PureComponent) {
           children: this.renderFields()
         })]
       }), (0, i.jsx)("div", {
-        className: c()(h.footer, y.marginTop20),
-        children: g.intl.string(g.t.qqYun5)
+        className: o()(y.footer, g.marginTop20),
+        children: h.intl.string(h.t.qqYun5)
       }), (0, i.jsxs)(d.Z, {
-        className: c()(y.marginTop4, y.marginBottom20),
+        className: o()(g.marginTop4, g.marginBottom20),
         grow: 0,
         children: [(0, i.jsx)("div", {
-          className: c()(h.footer, h.footerAction),
-          children: g.intl.format(g.t.WL51ZW, {
+          className: o()(y.footer, y.footerAction),
+          children: h.intl.format(h.t.WL51ZW, {
             supportURL: f.Z.getSubmitRequestURL()
           })
         }), (0, i.jsx)("div", {
-          className: c()(h.footer, h.footerBullet),
+          className: o()(y.footer, y.footerBullet),
           children: "•"
         }), (0, i.jsx)("div", {
-          className: c()(h.footer, h.footerAction),
-          children: g.intl.format(g.t.Hv7ztb, {
+          className: o()(y.footer, y.footerAction),
+          children: h.intl.format(h.t.Hv7ztb, {
             logoutOnClick: this.props.onLogout
           })
         })]
@@ -105,9 +105,9 @@ class v extends(r = a.PureComponent) {
     })
   }
 }
-b(v, "defaultProps", {
+b(j, "defaultProps", {
   types: [m.PUi.CAPTCHA],
   onCaptchaVerify: m.dG4,
   onLogout: m.dG4
 });
-let E = v
+let v = j

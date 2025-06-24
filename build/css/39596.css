@@ -1,6 +1,6 @@
 /**
   Module ID: 39596
-  Original File Name: 74148b71a6fd3fd2
+  Original File Name: 94c9f78c82487612
 **/
 .container__4216d {
     align-items: center;
@@ -1225,7 +1225,8 @@
 
 .accessory_c3d3d9 {
     align-items: flex-start;
-    display: flex
+    display: flex;
+    min-width: 0
 }
 
 .accessory_c3d3d9.restrictWidth_c3d3d9 {
@@ -1235,7 +1236,6 @@
 .container__5e208 {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     row-gap: 6px;
     width: 100%
 }
@@ -1263,4 +1263,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=74148b71a6fd3fd2.css.map*/
+/*# sourceMappingURL=94c9f78c82487612.css.map*/

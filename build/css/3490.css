@@ -1,6 +1,6 @@
 /**
   Module ID: 3490
-  Original File Name: 2eaef61357ecb19d
+  Original File Name: 373b859f40762887
 **/
 .tooltipTextContainer__0ca35 {
     align-items: center;
@@ -5018,7 +5018,8 @@ html .progress__61462 {
 
 .accessory_c3d3d9 {
     align-items: flex-start;
-    display: flex
+    display: flex;
+    min-width: 0
 }
 
 .accessory_c3d3d9.restrictWidth_c3d3d9 {
@@ -5028,7 +5029,6 @@ html .progress__61462 {
 .container__5e208 {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     row-gap: 6px;
     width: 100%
 }
@@ -11103,4 +11103,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=2eaef61357ecb19d.css.map*/
+/*# sourceMappingURL=373b859f40762887.css.map*/
