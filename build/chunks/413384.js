@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 e.exports = {
   root: "root__4ad81",
   art: "art__4ad81",
@@ -14,7 +14,6 @@ e.exports = {
   clickableTile: "clickableTile__4ad81",
   iconContainer: "iconContainer__4ad81",
   shelfButtonCloseButton: "shelfButtonCloseButton__4ad81",
-  button: "button__4ad81",
   closeButtonIcon: "closeButtonIcon__4ad81",
   singleUserRoot: "singleUserRoot__4ad81"
 }

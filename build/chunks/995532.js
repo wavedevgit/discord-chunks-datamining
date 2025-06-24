@@ -7,8 +7,8 @@ var r, l, s, i = n(442837),
   a = n(570140);
 let o = {},
   E = {},
-  u = {},
-  c = !1,
+  c = {},
+  u = !1,
   _ = !1,
   d = !1;
 
@@ -38,7 +38,7 @@ class I extends(s = i.ZP.Store) {
   }
   hasSeen(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    return null != e && (t ? c : u[e] || !1)
+    return null != e && (t ? u : c[e] || !1)
   }
   isEmpty(e) {
     if (null == e) return !0;
@@ -62,10 +62,10 @@ let O = new I(a.Z, {
       guildId: t,
       isLurking: n
     } = e;
-    u[t] = !0, n && (c = !0)
+    c[t] = !0, n && (u = !0)
   },
   GUILD_STOP_LURKING: function() {
-    c = !1
+    u = !1
   },
   GUILD_DELETE: function(e) {
     let {
@@ -73,7 +73,7 @@ let O = new I(a.Z, {
         id: t
       }
     } = e;
-    u[t] = !1
+    c[t] = !1
   },
   WELCOME_SCREEN_FETCH_START: function() {
     _ = !0, d = !1

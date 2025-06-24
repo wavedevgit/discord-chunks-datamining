@@ -1,6 +1,6 @@
-/** Chunk was on 83976 **/
+/** Chunk was on 94357 **/
 n.d(t, {
-  j: () => o
+  j: () => u
 });
 var r = n(255367),
   l = n(73800),
@@ -12,19 +12,19 @@ let a = {
       duration: 66
     }
   },
-  o = () => {
+  u = () => {
     let e = l.useRef(null),
       t = l.useCallback(() => {
         null != e.current && e.current.play("all")
       }, []),
-      o = l.useCallback(() => {
+      u = l.useCallback(() => {
         null != e.current && e.current.play("all")
       }, []),
-      u = l.useCallback(() => {
+      o = l.useCallback(() => {
         null != e.current && e.current.stopIfPlaying("all")
       }, []),
       s = l.useCallback(t => {
-        var l, o;
+        var l, u;
         return (0, r.jsx)(i.L, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -42,26 +42,26 @@ let a = {
             })
           }
           return e
-        }({}, t), o = o = {
+        }({}, t), u = u = {
           src: () => n.e("66944").then(n.t.bind(n, 166174, 19)),
           ref: e,
           markers: a
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(o)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+        })(Object(u)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(u, e))
         }), l))
       }, []);
     return {
       events: {
         onClick: t,
-        onMouseEnter: o,
-        onMouseLeave: u
+        onMouseEnter: u,
+        onMouseLeave: o
       },
       play: t,
       getDuration: l.useCallback(() => {

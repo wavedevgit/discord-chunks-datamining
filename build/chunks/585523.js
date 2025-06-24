@@ -1,4 +1,4 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 e.exports = {
   containerDefault: "containerDefault__29444",
   containerDragAfter: "containerDragAfter__29444",
@@ -20,7 +20,6 @@ e.exports = {
   dismissWrapper: "dismissWrapper__29444",
   dismissButton: "dismissButton__29444",
   dismiss: "dismiss__29444",
-  voiceChannelsButton: "voiceChannelsButton__29444",
   voiceChannelsToggleIcon: "voiceChannelsToggleIcon__29444",
   refreshVoiceChannelsButton: "refreshVoiceChannelsButton__29444",
   refreshVoiceChannelsButtonInner: "refreshVoiceChannelsButtonInner__29444"

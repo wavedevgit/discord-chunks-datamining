@@ -17,8 +17,8 @@ function o(e) {
       onChange: d,
       "aria-label": u,
       "aria-describedby": m,
-      filters: x,
-      multiple: p = !1,
+      filters: p,
+      multiple: x = !1,
       disabled: h = !1,
       submitting: b = !1
     } = e,
@@ -78,8 +78,8 @@ function o(e) {
       }), (0, a.jsx)(s.Z, {
         tabIndex: 0,
         onChange: d,
-        filters: x,
-        multiple: p,
+        filters: p,
+        multiple: x,
         "aria-label": u,
         "aria-describedby": m,
         disabled: h

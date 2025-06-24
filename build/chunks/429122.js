@@ -1,6 +1,6 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
-  ZP: () => O,
+  ZP: () => _,
   dt: () => m,
   eo: () => b
 }), n(539854), n(388685);
@@ -60,7 +60,7 @@ function b(e, t, n) {
   } = (0, d.ie)(t, n, e);
   return "section-footer-".concat(e).concat(r ? "-divider" : "").concat(i ? "-voice-summary" : "")
 }
-let O = i.memo(function(e) {
+let _ = i.memo(function(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
@@ -68,12 +68,12 @@ let O = i.memo(function(e) {
     voiceStates: p,
     guildId: m,
     selectedChannelId: b,
-    selectedVoiceChannelId: O,
-    optInEnabled: y
+    selectedVoiceChannelId: _,
+    optInEnabled: O
   } = e, {
-    hasDivider: _,
+    hasDivider: y,
     canHaveVoiceSummary: v
-  } = i.useMemo(() => (0, d.ie)(n, y, t), [n, y, t, h]), C = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, h]), j = (0, s.DM)(m), S = (0, l.Wu)([a.ZP], () => {
+  } = i.useMemo(() => (0, d.ie)(n, O, t), [n, O, t, h]), C = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, h]), j = (0, s.DM)(m), E = (0, l.Wu)([a.ZP], () => {
     if (null == C || !C.isCollapsed || !v) return [];
     let e = C.getChannelRecords(),
       t = [];
@@ -83,29 +83,29 @@ let O = i.memo(function(e) {
       (!j || e) && t.push(n)
     }
     return t
-  }, [C, v, m, j]), x = i.useMemo(() => (0, c.c4)({
-    channels: S,
+  }, [C, v, m, j]), S = i.useMemo(() => (0, c.c4)({
+    channels: E,
     selectedChannelId: b,
-    selectedVoiceChannelId: O,
+    selectedVoiceChannelId: _,
     voiceStates: p
-  }), [S, b, O, p]);
+  }), [E, b, _, p]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(g, {
     guildChannels: n,
     guildChannelsVersion: h
   });
-  let E = _ ? (0, r.jsx)("div", {
+  let x = y ? (0, r.jsx)("div", {
     className: f.sectionDivider
   }) : null;
-  return v && 0 !== x.length ? (0, r.jsxs)(r.Fragment, {
+  return v && 0 !== S.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.voiceUserSummary,
       children: (0, r.jsx)(o.Z, {
         renderIcon: !0,
-        users: x,
+        users: S,
         max: 8,
         showUserPopout: !0,
         guildId: m
       })
-    }), E]
-  }) : E
+    }), x]
+  }) : x
 })

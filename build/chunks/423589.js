@@ -1,62 +1,62 @@
-/** Chunk was on 98350 **/
-n.d(t, {
-  Mn: () => E,
-  OD: () => O,
-  W9: () => g
+/** Chunk was on 68294 **/
+n.d(e, {
+  Mn: () => h,
+  OD: () => f,
+  W9: () => _
 }), n(388685), n(997841);
 var i = n(442837),
   l = n(798140),
   r = n(9156),
-  a = n(630388),
-  o = n(709054),
-  u = n(312400),
-  s = n(981631),
-  c = n(969943),
-  d = n(526761),
-  f = n(388032);
+  s = n(630388),
+  a = n(709054),
+  o = n(312400),
+  d = n(981631),
+  u = n(969943),
+  c = n(526761),
+  g = n(388032);
 
-function g() {
+function _() {
   return [{
-    label: f.intl.string(f.t["8ot6go"]),
-    value: c.Oe.MINUTES_15
+    label: g.intl.string(g.t["8ot6go"]),
+    value: u.Oe.MINUTES_15
   }, {
-    label: f.intl.string(f.t.UMWBZm),
-    value: c.Oe.HOURS_1
+    label: g.intl.string(g.t.UMWBZm),
+    value: u.Oe.HOURS_1
   }, {
-    label: f.intl.string(f.t.QmYWtr),
-    value: c.Oe.HOURS_3
+    label: g.intl.string(g.t.QmYWtr),
+    value: u.Oe.HOURS_3
   }, {
-    label: f.intl.string(f.t.EpAXPD),
-    value: c.Oe.HOURS_8
+    label: g.intl.string(g.t.EpAXPD),
+    value: u.Oe.HOURS_8
   }, {
-    label: f.intl.string(f.t["755t4u"]),
-    value: c.Oe.HOURS_24
+    label: g.intl.string(g.t["755t4u"]),
+    value: u.Oe.HOURS_24
   }, {
-    label: f.intl.string(f.t.r3LawM),
-    value: c.Oe.ALWAYS
+    label: g.intl.string(g.t.r3LawM),
+    value: u.Oe.ALWAYS
   }]
 }
-let p = {
+let S = {
   ignoreMute: !1,
   ignoreUnreadSetting: !0,
   ignoreNotificationSetting: !1
 };
 
-function O(e) {
-  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : p;
-  return o.default.keys(e).filter(n => {
+function f(t) {
+  let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : S;
+  return a.default.keys(t).filter(n => {
     var i, r;
-    let o = e[n].message_notifications !== s.bL.NULL,
-      u = a.yE(null != (i = e[n].flags) ? i : 0, d.ic.UNREADS_ALL_MESSAGES) || a.yE(null != (r = e[n].flags) ? r : 0, d.ic.UNREADS_ONLY_MENTIONS);
-    return !t.ignoreUnreadSetting && u || !t.ignoreNotificationSetting && o || !t.ignoreMute && (0, l.m$)(e[n])
+    let a = t[n].message_notifications !== d.bL.NULL,
+      o = s.yE(null != (i = t[n].flags) ? i : 0, c.ic.UNREADS_ALL_MESSAGES) || s.yE(null != (r = t[n].flags) ? r : 0, c.ic.UNREADS_ONLY_MENTIONS);
+    return !e.ignoreUnreadSetting && o || !e.ignoreNotificationSetting && a || !e.ignoreMute && (0, l.m$)(t[n])
   })
 }
 
-function E(e) {
-  let t = (0, i.e7)([r.ZP], () => r.ZP.useNewNotifications);
-  return u.xT.useExperiment({
-    location: e
+function h(t) {
+  let e = (0, i.e7)([r.ZP], () => r.ZP.useNewNotifications);
+  return o.xT.useExperiment({
+    location: t
   }, {
     autoTrackExposure: !1
-  }).enabled && t
+  }).enabled && e
 }

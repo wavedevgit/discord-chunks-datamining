@@ -1,20 +1,19 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
+/** Chunk was on 56179 **/
+i.d(e, {
   Z: () => o
 });
-var r = n(570140),
-  i = n(626135),
-  a = n(981631);
+var n = i(570140),
+  r = i(626135),
+  s = i(981631);
 let o = {
-  dismissForApplicationId(e) {
-    r.Z.dispatch({
+  dismissForApplicationId(t) {
+    n.Z.dispatch({
       type: "ACTIVITY_INVITE_EDUCATION_DISMISS",
-      key: e,
+      key: t,
       value: !0
-    }), i.default.track(a.rMx.CLOSE_TUTORIAL, {
+    }), r.default.track(s.rMx.CLOSE_TUTORIAL, {
       tutorial: "activity-invite-nux-inline",
-      application_id: e,
+      application_id: t,
       acknowledged: !0
     })
   }

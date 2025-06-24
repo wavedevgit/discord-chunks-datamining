@@ -16,7 +16,7 @@ var r = n(255367),
   h = n(388032),
   g = n(886141);
 
-function _(e) {
+function f(e) {
   let {
     applicationId: t,
     similarApplications: n,
@@ -42,7 +42,7 @@ function _(e) {
   return (0, r.jsx)("div", {
     className: g.contentContainer,
     ref: o,
-    children: n.map((e, n) => (0, r.jsx)(f, {
+    children: n.map((e, n) => (0, r.jsx)(_, {
       applicationId: t,
       similarApplication: e,
       onSelectApplication: i,
@@ -52,14 +52,14 @@ function _(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   var t, n, l;
   let {
     applicationId: o,
     similarApplication: u,
     onSelectApplication: h,
-    position: _,
-    similarLoadId: f
+    position: f,
+    similarLoadId: _
   } = e, b = (0, p.Z)({
     application: u
   }), x = null == (t = u.categories) ? void 0 : t[0], v = a.useMemo(() => s.ZP.getApplicationIconURL({
@@ -71,11 +71,11 @@ function f(e) {
       current_page: "product",
       application_id: o,
       suggested_application_id: u.id,
-      position: _,
-      load_id: f,
+      position: f,
+      load_id: _,
       shown_mutual_guilds_count: b.length
     }), h(u.id)
-  }, [h, u.id, o, b.length, f, _]);
+  }, [h, u.id, o, b.length, _, f]);
   return (0, r.jsxs)(i.P3F, {
     onClick: C,
     className: g.appContainer,
@@ -143,7 +143,7 @@ let b = function(e) {
       children: h.intl.string(h.t.E8wCnp)
     }), (0, r.jsx)(u.Z, {
       loading: n === o.M.FETCHING,
-      children: null != a ? (0, r.jsx)(_, {
+      children: null != a ? (0, r.jsx)(f, {
         applicationId: t,
         similarApplications: a,
         onSelectApplication: l,

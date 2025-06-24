@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   M: () => v
 }), n(953529);
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(276060),
   _ = n(870991),
   y = n(981631),
-  C = n(134612),
-  x = n(388032);
+  x = n(134612),
+  C = n(388032);
 
 function v(e) {
   let {
@@ -30,8 +30,8 @@ function v(e) {
   } = e, O = (0, _.E4)(), E = i.useCallback(() => {
     (0, p.T)(t, [v])
   }, [t, v]), I = (0, b.t)({
-    location: C.zr
-  }), P = e => {
+    location: x.zr
+  }), S = e => {
     o.Z.updateChannelOverrideSettings(null, t, {
       muted: !0
     }, g.ZB.Muted), c.Z.showMuteSuccessToast(j, t), (0, f.qc)({
@@ -41,7 +41,7 @@ function v(e) {
       warningType: h.pj.LIKELY_ATO,
       cta: e
     }), E()
-  }, S = () => {
+  }, P = () => {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -57,7 +57,7 @@ function v(e) {
           channelId: t,
           warningId: v,
           senderId: j,
-          description: x.intl.string(x.t["/uid3t"]),
+          description: C.intl.string(C.t["/uid3t"]),
           safetyTipRows: O.map((e, t) => (0, r.jsx)(u.q, {
             listType: "numbered",
             index: t,
@@ -65,11 +65,11 @@ function v(e) {
             description: e.description
           }, t)),
           actionRows: [(0, r.jsx)(d.ZP, {
-            title: x.intl.string(x.t.ftIK2N),
-            description: x.intl.string(x.t.w2ve0t),
-            buttonText: x.intl.string(x.t.ftIK2N),
+            title: C.intl.string(C.t.ftIK2N),
+            description: C.intl.string(C.t.w2ve0t),
+            buttonText: C.intl.string(C.t.ftIK2N),
             onButtonPress: () => {
-              P(f.NM.USER_MODAL_MUTE), l()
+              S(f.NM.USER_MODAL_MUTE), l()
             }
           }, "likely-ato-mute")],
           learnMore: (0, r.jsx)(a.P3F, {
@@ -83,7 +83,7 @@ function v(e) {
             children: (0, r.jsx)(a.X6q, {
               variant: "heading-sm/medium",
               color: "text-link",
-              children: x.intl.format(x.t.UkH129, {
+              children: C.intl.format(C.t.UkH129, {
                 learnMoreLink: _.D8
               })
             })
@@ -106,14 +106,14 @@ function v(e) {
     warningId: v,
     senderId: j,
     warningType: h.pj.LIKELY_ATO,
-    header: x.intl.string(x.t.R8UsiI),
-    description: x.intl.string(x.t.lI8nQk),
+    header: C.intl.string(C.t.R8UsiI),
+    description: C.intl.string(C.t.lI8nQk),
     onDismiss: E,
     buttons: [{
-      text: x.intl.string(x.t.tC1pvL),
+      text: C.intl.string(C.t.tC1pvL),
       color: a.zxk.Colors.BRAND,
       onclick: () => {
-        S(), (0, f.qc)({
+        P(), (0, f.qc)({
           channelId: t,
           warningId: v,
           senderId: j,
@@ -122,9 +122,9 @@ function v(e) {
         })
       }
     }, {
-      text: x.intl.string(x.t.ftIK2N),
+      text: C.intl.string(C.t.ftIK2N),
       color: a.zxk.Colors.PRIMARY,
-      onclick: () => P(f.NM.USER_BANNER_MUTE)
+      onclick: () => S(f.NM.USER_BANNER_MUTE)
     }]
   }) : null
 }

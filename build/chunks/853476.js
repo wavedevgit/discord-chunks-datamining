@@ -1,4 +1,4 @@
-/** Chunk was on 83976 **/
+/** Chunk was on 94357 **/
 n.d(t, {
   Z: () => s
 });
@@ -7,8 +7,8 @@ n(73800);
 var l = n(458725),
   i = n(386146),
   a = n(502053),
-  o = n(42326),
-  u = n(388032);
+  u = n(42326),
+  o = n(388032);
 
 function s(e) {
   let {
@@ -20,8 +20,8 @@ function s(e) {
     location: "VideoWarning"
   });
   if (null == s) return null;
-  let d = s === l.u.CAMERA_SEND_LOW_FPS ? u.intl.string(u.t["1NyoVl"]) : void 0;
-  return null != d ? (0, r.jsx)(o.Z, {
+  let d = s === l.u.CAMERA_SEND_LOW_FPS ? o.intl.string(o.t["1NyoVl"]) : void 0;
+  return null != d ? (0, r.jsx)(u.Z, {
     className: n,
     errorMessage: d,
     avError: c ? s : null

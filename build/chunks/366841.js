@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  G: () => S
+  G: () => T
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -18,12 +18,11 @@ var r = n(255367),
   h = n(314897),
   m = n(70956),
   g = n(709054),
-  E = n(540059),
-  b = n(596401),
-  y = n(921944),
-  O = n(231338);
+  E = n(596401),
+  b = n(921944),
+  y = n(231338);
 
-function v(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,30 +31,30 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
 }
-let T = 1e3;
+let I = 1e3;
 
-function S() {
-  let [e, t] = i.useState(!1), v = (0, l.VXO)(b.Xd), S = (0, E.Q3)("useDesktopRefreshOnboarding"), A = i.useMemo(() => S ? [o.z.DESKTOP_REFRESH_ONBOARDING_MODAL] : [], [S]), [N, C] = (0, _.US)(A), R = N === o.z.DESKTOP_REFRESH_ONBOARDING_MODAL, P = (0, a.e7)([h.default], () => h.default.getId());
+function T() {
+  let [e, t] = i.useState(!1), O = (0, l.VXO)(E.Xd), T = i.useMemo(() => [o.z.DESKTOP_REFRESH_ONBOARDING_MODAL], []), [S, A] = (0, _.US)(T), N = S === o.z.DESKTOP_REFRESH_ONBOARDING_MODAL, C = (0, a.e7)([h.default], () => h.default.getId());
   i.useLayoutEffect(() => {
-    S && null != P && g.default.age(P) < m.Z.Millis.DAY && (0, f.EW)(o.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
+    null != C && g.default.age(C) < m.Z.Millis.DAY && (0, f.EW)(o.z.DESKTOP_REFRESH_ONBOARDING_MODAL);
     let e = "desktop_refresh_theme_migration_key",
       t = "true" === s.K.get(e);
-    R && S && !t && p.Z.theme === O.BR.DARK && null == d.Z.gradientPreset && !t && (s.K.set(e, "true"), (0, u.ZI)({
-      theme: O.BR.DARKER
+    !N || t || p.Z.theme !== y.BR.DARK || null != d.Z.gradientPreset || t || (s.K.set(e, "true"), (0, u.ZI)({
+      theme: y.BR.DARKER
     }))
-  }, [R, S, P]), i.useLayoutEffect(() => {
+  }, [N, C]), i.useLayoutEffect(() => {
     function e() {
       t(!0)
     }
@@ -63,25 +62,25 @@ function S() {
       c.Z.unsubscribe("CHANGE_LOG_RESOLVED", e)
     }
   }, []);
-  let w = i.useCallback(() => {
-    S && (0, l.ZDy)(async () => {
+  let R = i.useCallback(() => {
+    (0, l.ZDy)(async () => {
       let {
         DesktopRefreshOnboardingModal: e
       } = await n.e("49910").then(n.bind(n, 239191));
-      return t => (0, r.jsx)(e, I({}, t))
+      return t => (0, r.jsx)(e, v({}, t))
     }, {
       backdropStyle: l.fCB.TOP_RADIAL,
       onCloseCallback: () => {
-        C(y.L.USER_DISMISS)
+        A(b.L.USER_DISMISS)
       }
     })
-  }, [S, C]);
+  }, [A]);
   i.useEffect(() => {
-    if (S && R && !v && e) {
+    if (N && !O && e) {
       let e = setTimeout(() => {
-        w()
-      }, T);
+        R()
+      }, I);
       return () => clearTimeout(e)
     }
-  }, [e, v, R, S, w])
+  }, [e, O, N, R])
 }

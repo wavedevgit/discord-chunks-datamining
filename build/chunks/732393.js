@@ -1,75 +1,75 @@
-/** Chunk was on 77564 **/
-t.d(e, {
+/** Chunk was on 78650 **/
+n.d(t, {
   Z: () => Z
-}), t(388685);
-var i = t(255367);
-t(73800);
-var r = t(442837),
-  a = t(481060),
-  l = t(239091),
-  o = t(596454),
-  s = t(339085),
-  d = t(883429),
-  u = t(456269),
-  c = t(665906),
-  f = t(592125),
-  h = t(710352),
-  v = t(388032),
-  p = t(939852);
+}), n(388685);
+var i = n(255367);
+n(73800);
+var r = n(442837),
+  l = n(481060),
+  a = n(239091),
+  o = n(596454),
+  s = n(339085),
+  d = n(883429),
+  u = n(456269),
+  c = n(665906),
+  f = n(592125),
+  h = n(710352),
+  g = n(388032),
+  b = n(939852);
 
-function g(n) {
+function v(e) {
   let {
-    tag: e
-  } = n, {
-    name: t,
-    emojiId: a,
-    emojiName: l
-  } = e, d = (0, r.e7)([s.ZP], () => null != a ? s.ZP.getUsableCustomEmojiById(a) : null);
+    tag: t
+  } = e, {
+    name: n,
+    emojiId: l,
+    emojiName: a
+  } = t, d = (0, r.e7)([s.ZP], () => null != l ? s.ZP.getUsableCustomEmojiById(l) : null);
   return (0, i.jsxs)(i.Fragment, {
-    children: [null != l || null != a ? (0, i.jsx)(o.Z, {
-      className: p.emoji,
-      emojiId: a,
-      emojiName: l,
+    children: [null != a || null != l ? (0, i.jsx)(o.Z, {
+      className: b.emoji,
+      emojiId: l,
+      emojiName: a,
       animated: !!(null == d ? void 0 : d.animated)
-    }) : null, t]
+    }) : null, n]
   })
 }
 
-function Z(n) {
-  let e = (0, r.e7)([f.Z], () => f.Z.getChannel(n), [n]),
-    t = (0, c.C7)(e),
-    o = (0, r.e7)([f.Z], () => f.Z.getChannel(null == e ? void 0 : e.parent_id), [e]),
+function Z(e) {
+  let t = (0, r.e7)([f.Z], () => f.Z.getChannel(e), [e]),
+    n = (0, c.C7)(t),
+    o = (0, r.e7)([f.Z], () => f.Z.getChannel(null == t ? void 0 : t.parent_id), [t]),
     s = (0, u.Vm)(o),
-    p = (0, u.eV)(e),
-    Z = p.length >= h.Cn,
-    C = (0, c.$R)(e);
-  if (null == e) return (0, l.Zy)(), null;
-  if (!t || __OVERLAY__ || !e.isForumPost() || (null == s ? void 0 : s.length) === 0 || !C || e.isModeratorReportChannel()) return null;
-  let b = n => {
-      let t = new Set(p);
-      if (t.has(n)) t.delete(n);
+    b = (0, u.eV)(t),
+    Z = b.length >= h.Cn,
+    p = (0, c.$R)(t);
+  if (null == t) return (0, a.Zy)(), null;
+  if (!n || __OVERLAY__ || !t.isForumPost() || (null == s ? void 0 : s.length) === 0 || !p || t.isModeratorReportChannel()) return null;
+  let m = e => {
+      let n = new Set(b);
+      if (n.has(e)) n.delete(e);
       else {
         if (Z) return;
-        t.add(n)
+        n.add(e)
       }
-      let i = Array.from(t).map(n => n.id);
-      d.Z.updateForumPostTags(e.id, i)
+      let i = Array.from(n).map(e => e.id);
+      d.Z.updateForumPostTags(t.id, i)
     },
-    m = null == s ? void 0 : s.map(n => {
-      let e = p.includes(n);
-      return (0, i.jsx)(a.S89, {
-        id: n.id,
-        label: (0, i.jsx)(g, {
-          tag: n
+    O = null == s ? void 0 : s.map(e => {
+      let t = b.includes(e);
+      return (0, i.jsx)(l.S89, {
+        id: e.id,
+        label: (0, i.jsx)(v, {
+          tag: e
         }),
-        disabled: Z && !e,
-        action: () => b(n),
-        checked: e
-      }, n.id)
+        disabled: Z && !t,
+        action: () => m(e),
+        checked: t
+      }, e.id)
     });
-  return (0, i.jsx)(a.sNh, {
+  return (0, i.jsx)(l.sNh, {
     id: "edit-tags",
-    label: v.intl.string(v.t["436ZFx"]),
-    children: m
+    label: g.intl.string(g.t["436ZFx"]),
+    children: O
   })
 }

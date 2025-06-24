@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(151864),
   b = n(725436),
   _ = n(497656),
-  E = n(554747),
-  O = n(230900),
+  O = n(554747),
+  E = n(230900),
   y = n(854698),
   I = n(703656),
   v = n(922482),
@@ -32,15 +32,15 @@ var r = n(255367),
   A = n(594174),
   Z = n(662868),
   x = n(981631),
-  L = n(765305),
-  w = n(388032),
+  w = n(765305),
+  L = n(388032),
   R = n(29504);
 
 function D(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = !1
-  } = e, l = (0, _.y)(t.id), d = (0, E.k5)(t.id), P = (0, o.e7)([N.Z], () => N.Z.getStageInstanceByChannel(null == l ? void 0 : l.id), [l]), {
+  } = e, l = (0, _.y)(t.id), d = (0, O.k5)(t.id), P = (0, o.e7)([N.Z], () => N.Z.getStageInstanceByChannel(null == l ? void 0 : l.id), [l]), {
     isStageNoticeHidden: D,
     isEventNoticeHidden: M
   } = (0, o.cj)([m.Z], () => ({
@@ -59,8 +59,8 @@ function D(e) {
     title: Y,
     location: K,
     locationIcon: q,
-    canListenIn: Q,
-    buttonText: X,
+    canListenIn: X,
+    buttonText: Q,
     users: J,
     overflowUsers: $,
     onClose: ee
@@ -77,28 +77,28 @@ function D(e) {
       isEventNoticeHidden: d,
       isStageNoticeHidden: h,
       isStudyRoomNotice: m
-    } = e, _ = null != n && null != i && !h, E = null != t ? (0, y.DK)(t) : null;
+    } = e, _ = null != n && null != i && !h, O = null != t ? (0, y.DK)(t) : null;
     if (m && null != i) {
       let e = (0, p.KS)(i);
       return {
         noticeType: 3,
         title: "\uD83D\uDCDA☕ ".concat(i.name),
-        location: w.intl.string(w.t.LZA6NT),
+        location: L.intl.string(L.t.LZA6NT),
         locationIcon: null != e ? (0, r.jsx)(e, {
           size: "xs",
           color: "currentColor",
           className: R.locationIcon
         }) : null,
         canListenIn: l,
-        buttonText: w.intl.string(w.t.wBoE6O),
+        buttonText: L.intl.string(L.t.wBoE6O),
         users: [],
         overflowUsers: null
       }
     }
     if (null == t || d) {
       if (_) {
-        let e = w.intl.string(w.t.ZYO5OD);
-        return (null == a ? void 0 : a.speaker) ? e = w.intl.string(w.t["/cnSFR"]) : null != a && (e = w.intl.string(w.t.btSGOj)), {
+        let e = L.intl.string(L.t.ZYO5OD);
+        return (null == a ? void 0 : a.speaker) ? e = L.intl.string(L.t["/cnSFR"]) : null != a && (e = L.intl.string(L.t.btSGOj)), {
           noticeType: 0,
           title: n.topic,
           location: i.name,
@@ -132,9 +132,9 @@ function D(e) {
           })
         }
       }
-    } else if (t.entity_type === L.WX.STAGE_INSTANCE && _) {
-      let e = w.intl.string(w.t.ZYO5OD);
-      return (null == a ? void 0 : a.speaker) ? e = w.intl.string(w.t["/cnSFR"]) : null != a && (e = w.intl.string(w.t.btSGOj)), {
+    } else if (t.entity_type === w.WX.STAGE_INSTANCE && _) {
+      let e = L.intl.string(L.t.ZYO5OD);
+      return (null == a ? void 0 : a.speaker) ? e = L.intl.string(L.t["/cnSFR"]) : null != a && (e = L.intl.string(L.t.btSGOj)), {
         noticeType: 0,
         title: n.topic,
         location: i.name,
@@ -167,12 +167,12 @@ function D(e) {
           })]
         })
       }
-    } else if (t.entity_type === L.WX.EXTERNAL) {
-      let e = (0, O.cS)(t);
+    } else if (t.entity_type === w.WX.EXTERNAL) {
+      let e = (0, E.cS)(t);
       if (null == e) return {
         noticeType: null
       };
-      let n = f.ZP.getUserCount(t.id, E);
+      let n = f.ZP.getUserCount(t.id, O);
       return {
         noticeType: 1,
         title: t.name,
@@ -185,7 +185,7 @@ function D(e) {
           className: R.locationIcon
         }),
         canListenIn: !1,
-        buttonText: w.intl.string(w.t.iW6Xur),
+        buttonText: L.intl.string(L.t.iW6Xur),
         onClose: () => (0, g.ji)({
           eventId: null == t ? void 0 : t.id
         }),
@@ -206,9 +206,9 @@ function D(e) {
           })]
         })
       }
-    } else if (t.entity_type === L.WX.VOICE && null != i) {
+    } else if (t.entity_type === w.WX.VOICE && null != i) {
       let e = (0, p.KS)(i),
-        n = f.ZP.getUserCount(t.id, E);
+        n = f.ZP.getUserCount(t.id, O);
       return {
         noticeType: 2,
         title: t.name,
@@ -219,7 +219,7 @@ function D(e) {
           className: R.locationIcon
         }) : null,
         canListenIn: l,
-        buttonText: w.intl.string(w.t.nxUtoa),
+        buttonText: L.intl.string(L.t.nxUtoa),
         onClose: () => (0, g.ji)({
           eventId: null == t ? void 0 : t.id
         }),
@@ -262,7 +262,7 @@ function D(e) {
     children: [null != ee ? (0, r.jsx)(c.P3F, {
       onClick: ee,
       className: R.close,
-      "aria-label": w.intl.string(w.t.WAI6xs),
+      "aria-label": L.intl.string(L.t.WAI6xs),
       children: (0, r.jsx)(c.Dio, {
         size: "md",
         color: "currentColor",
@@ -277,7 +277,7 @@ function D(e) {
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/semibold",
         color: "text-positive",
-        children: w.intl.string(w.t.dI3q4u)
+        children: L.intl.string(L.t.dI3q4u)
       })]
     }), (J.length > 0 || null != $) && (0, r.jsxs)("div", {
       className: R.participants,
@@ -298,11 +298,11 @@ function D(e) {
         className: R.location,
         children: K
       })]
-    }), Q || 1 === W ? (0, r.jsx)(c.zxk, {
+    }), X || 1 === W ? (0, r.jsx)(c.zxk, {
       size: c.zxk.Sizes.SMALL,
       color: c.zxk.Colors.GREEN,
       onClick: () => {
-        if (Q) null != l && null != l.getGuildId() && ((0, v.Cq)(l), (0, I.XU)(l.getGuildId(), l.id));
+        if (X) null != l && null != l.getGuildId() && ((0, v.Cq)(l), (0, I.XU)(l.getGuildId(), l.id));
         else {
           if (null == d) return;
           (0, h.bO)({
@@ -312,7 +312,7 @@ function D(e) {
       },
       className: R.button,
       fullWidth: !0,
-      children: X
+      children: Q
     }) : null]
   })
 }

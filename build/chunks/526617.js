@@ -377,7 +377,7 @@ function eu(e) {
     guildId: t,
     inExpressionPicker: ep
   }), [ew, eF, ed, t, ep]), e7 = i.useCallback(() => eF ? (0, r.jsx)(v.p, {
-    showUpsell: eP.moveDefaultToBottom ? eG : eP.alwaysStickyUpsell || eM,
+    showUpsell: eP.alwaysStickyUpsell || (eP.moveDefaultToBottom ? eG : eM),
     text: e$(),
     button: K.intl.string(K.t.pj0XBA),
     buttonAnalyticsObject: {

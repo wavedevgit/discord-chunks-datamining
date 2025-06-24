@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => b
+  Z: () => _
 });
 var r = n(255367),
   i = n(73800),
@@ -12,44 +12,44 @@ var r = n(255367),
   u = n(131951),
   d = n(924557),
   p = n(435064),
-  m = n(779618),
+  h = n(779618),
   f = n(175470),
-  h = n(203259),
-  g = n(356659),
-  _ = n(388032);
+  g = n(203259),
+  m = n(356659),
+  b = n(388032);
 
-function b(e) {
+function _(e) {
   let {
     canShowReminder: t = !1,
-    className: b
-  } = e, E = (0, m.Z)(u.Z), {
-    showClipsHeaderEntrypoint: y
+    className: _
+  } = e, O = (0, h.Z)(u.Z), {
+    showClipsHeaderEntrypoint: E
   } = d.NV.useExperiment({
     location: "ClipsButton"
   }, {
     autoTrackExposure: !1
   }), {
-    hasClips: x,
-    hasNewClips: v,
-    lastClipsSession: O,
+    hasClips: y,
+    hasNewClips: I,
+    lastClipsSession: v,
     remindersEnabled: C,
-    hasAnyClipAnimations: j
+    hasAnyClipAnimations: S
   } = (0, l.cj)([p.Z], () => ({
     hasClips: p.Z.hasClips(),
     hasNewClips: p.Z.getNewClipIds().length > 0,
     lastClipsSession: p.Z.getLastClipsSession(),
     remindersEnabled: p.Z.getSettings().remindersEnabled,
     hasAnyClipAnimations: p.Z.hasAnyClipAnimations()
-  })), S = null != O && O.newClipIds.length > 0, I = (0, f.n)(e => e.clipsButtonRef), N = (0, f.n)(e => e.setClipsButtonRef), T = (0, l.e7)([c.Z], () => c.Z.hasLayers()), {
-    preventIdle: P,
-    allowIdle: A
+  })), N = null != v && v.newClipIds.length > 0, T = (0, f.n)(e => e.clipsButtonRef), P = (0, f.n)(e => e.setClipsButtonRef), j = (0, l.e7)([c.Z], () => c.Z.hasLayers()), {
+    preventIdle: A,
+    allowIdle: Z
   } = (0, s.Y)("animation");
 
-  function w() {
+  function x() {
     (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("2668"), n.e("89129")]).then(n.bind(n, 542055));
+      } = await Promise.all([n.e("2668"), n.e("71248")]).then(n.bind(n, 542055));
       return t => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -69,22 +69,22 @@ function b(e) {
         return e
       }({}, t))
     }, {
-      modalKey: g.Qr
+      modalKey: m.Qr
     })
   }
-  return (i.useEffect(() => (j ? P() : A(), () => A()), [j, P, A]), y && E && x) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != I && t && C && S && !(0, a.$sL)() && !T && (0, r.jsx)(h.Z, {
-      clipIconRef: I,
-      lastClipsSession: O,
-      onOpenClipsGallery: w
+  return (i.useEffect(() => (S ? A() : Z(), () => Z()), [S, A, Z]), E && O && y) ? (0, r.jsxs)(r.Fragment, {
+    children: [null != T && t && C && N && !(0, a.$sL)() && !j && (0, r.jsx)(g.Z, {
+      clipIconRef: T,
+      lastClipsSession: v,
+      onOpenClipsGallery: x
     }), (0, r.jsx)("div", {
-      ref: N,
+      ref: P,
       children: (0, r.jsx)(o.JO, {
-        className: b,
+        className: _,
         icon: a.AlX,
-        showBadge: v,
-        tooltip: _.intl.string(_.t.MXaLEB),
-        onClick: w
+        showBadge: I,
+        tooltip: b.intl.string(b.t.MXaLEB),
+        onClick: x
       })
     })]
   }) : null

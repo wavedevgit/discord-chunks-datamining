@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -23,11 +23,11 @@ function b(e) {
     code: t,
     message: n,
     embedUrl: b
-  } = e, [E, y, x] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), v = (0, a.e7)([d.Z], () => {
+  } = e, [x, y, E] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), v = (0, a.e7)([d.Z], () => {
     var e;
     return null != (e = d.Z.getGuildId()) ? e : void 0
-  }), [O, C] = i.useState(!1), j = i.useCallback(e => {
-    e && C(!0)
+  }), [C, O] = i.useState(!1), j = i.useCallback(e => {
+    e && O(!0)
   }, []), S = (0, o.O)(j), I = i.useCallback(() => {
     p.default.track(h.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
@@ -40,15 +40,15 @@ function b(e) {
   return (i.useEffect(() => {
     (0, m.gZ)(t)
   }, [t]), i.useEffect(() => {
-    O && x === f.M.FETCHED && I()
-  }, [O, x, I]), i.useEffect(() => {
-    O && y && p.default.track(h.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    C && E === f.M.FETCHED && I()
+  }, [C, E, I]), i.useEffect(() => {
+    C && y && p.default.track(h.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: l.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: v,
       channel_id: n.channel_id
     })
-  }, [O, v, y, n.author.id, n.channel_id]), y) ? (0, r.jsxs)(c.Z, {
+  }, [C, v, y, n.author.id, n.channel_id]), y) ? (0, r.jsxs)(c.Z, {
     containerRef: S,
     children: [(0, r.jsx)(c.Z.Header, {
       text: g.intl.string(g.t.j4KtLS)
@@ -64,7 +64,7 @@ function b(e) {
         })]
       })
     })]
-  }) : null == E || x === f.M.FETCHING ? (0, r.jsxs)(c.Z, {
+  }) : null == x || E === f.M.FETCHING ? (0, r.jsxs)(c.Z, {
     containerRef: S,
     children: [(0, r.jsx)(c.Z.Header, {
       text: g.intl.string(g.t.m9hXGR)
@@ -72,7 +72,7 @@ function b(e) {
       resolving: !0
     })]
   }) : (0, r.jsx)(s.O, {
-    app: u.ZP.createFromServer(E),
+    app: u.ZP.createFromServer(x),
     embedUrl: b,
     linkType: s.U.APP_DISCOVERY,
     onView: I

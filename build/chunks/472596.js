@@ -1,6 +1,6 @@
 /** Chunk was on 44606 **/
 n.d(t, {
-  RE: () => c,
+  RE: () => u,
   RN: () => d,
   po: () => T,
   vN: () => _,
@@ -13,8 +13,8 @@ var r, l = n(73800),
   a = n(892001),
   o = n(430824),
   E = n(594174),
-  u = n(91047);
-let c = (e, t) => {
+  c = n(91047);
+let u = (e, t) => {
   let {
     guildId: n,
     userId: r,
@@ -35,7 +35,7 @@ function _(e, t, n, r) {
   return l.useCallback(l => {
     if (null == e) return;
     let i = E.default.getUser(e.userId);
-    null != i && (l.stopPropagation(), (0, u.nm)(l, {
+    null != i && (l.stopPropagation(), (0, c.nm)(l, {
       user: i,
       guildId: e.guildId,
       analyticsLocations: null != n ? [n] : s,
@@ -52,7 +52,7 @@ function d(e, t, n) {
   return l.useCallback(l => {
     if (null == e) return;
     let s = E.default.getUser(e.userId);
-    null != s && (l.stopPropagation(), (0, u._j)(l, {
+    null != s && (l.stopPropagation(), (0, c._j)(l, {
       user: s,
       guildId: e.guildId,
       analyticsLocations: null != t ? [t] : r,

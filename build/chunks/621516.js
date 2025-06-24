@@ -1,12 +1,12 @@
-/** Chunk was on 49131 **/
+/** Chunk was on 71879 **/
 "use strict";
 n.d(t, {
   Z: () => E
 });
 var r = n(255367),
-  l = n(73800),
-  i = n(120356),
-  a = n.n(i),
+  a = n(73800),
+  l = n(120356),
+  i = n.n(l),
   s = n(524979),
   o = n(442837),
   c = n(780384),
@@ -50,14 +50,14 @@ function I(e) {
   let {
     username: t,
     title: n,
-    videoSrc: l,
-    messageCount: i,
+    videoSrc: a,
+    messageCount: l,
     reaction: s,
     reactionCount: o,
     classname: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(O.videoPreview, c),
+    className: i()(O.videoPreview, c),
     children: [(0, r.jsx)("div", {
       className: O.authorRow,
       children: (0, r.jsxs)("div", {
@@ -84,7 +84,7 @@ function I(e) {
       size: 10
     }), (0, r.jsx)(h.Z, {
       className: O.video,
-      src: l,
+      src: a,
       autoPlay: !0,
       loop: !0,
       muted: !0
@@ -105,7 +105,7 @@ function I(e) {
           }), (0, r.jsx)(d.Text, {
             variant: "text-xs/normal",
             color: "interactive-normal",
-            children: i
+            children: l
           })]
         }), (0, r.jsxs)("div", {
           className: O.reactionBox,
@@ -126,23 +126,23 @@ function I(e) {
 let E = e => {
   var t, n;
   let {
-    channel: i
-  } = e, h = (0, u.ZP)(), E = (0, c.wj)(h), R = (0, o.e7)([j.Z], () => j.Z.getGuild(i.guild_id)), k = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, o.e7)([g.Z], () => g.Z.hasHidden(i.id)), M = (0, p.C)({
-    guildId: i.guild_id,
-    channelId: i.id
+    channel: l
+  } = e, h = (0, u.ZP)(), E = (0, c.wj)(h), R = (0, o.e7)([j.Z], () => j.Z.getGuild(l.guild_id)), k = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), M = (0, o.e7)([g.Z], () => g.Z.hasHidden(l.id)), Z = (0, p.C)({
+    guildId: l.guild_id,
+    channelId: l.id
   }), {
     transitions: A,
     setVisible: L
-  } = (0, C.H)(), F = l.useCallback(() => {
-    L(!1), f.Z.hideAdminOnboarding(i.id, !0)
-  }, [i, L]);
-  l.useEffect(() => {
-    (0, x.c)(i.id) || L(!Z)
-  }, [i, L, Z]);
-  let D = l.useMemo(() => [y.intl.string(y.t["8pEGAw"]), y.intl.string(y.t.jwfgDQ), y.intl.string(y.t.mPKs29), y.intl.string(y.t.StRbvL)], []),
-    z = l.useMemo(() => [y.intl.string(y.t["m/b58P"]), y.intl.string(y.t.MuJSKy), y.intl.string(y.t["d/Wqvr"]), y.intl.string(y.t.GJklAw)], []),
+  } = (0, C.H)(), F = a.useCallback(() => {
+    L(!1), f.Z.hideAdminOnboarding(l.id, !0)
+  }, [l, L]);
+  a.useEffect(() => {
+    (0, x.c)(l.id) || L(!M)
+  }, [l, L, M]);
+  let D = a.useMemo(() => [y.intl.string(y.t["8pEGAw"]), y.intl.string(y.t.jwfgDQ), y.intl.string(y.t.mPKs29), y.intl.string(y.t.StRbvL)], []),
+    z = a.useMemo(() => [y.intl.string(y.t["m/b58P"]), y.intl.string(y.t.MuJSKy), y.intl.string(y.t["d/Wqvr"]), y.intl.string(y.t.GJklAw)], []),
     B = () => {
-      b.Z.open(i.guild_id, _.pNK.ROLE_SUBSCRIPTIONS)
+      b.Z.open(l.guild_id, _.pNK.ROLE_SUBSCRIPTIONS)
     },
     H = null != (t = null == R ? void 0 : R.hasFeature(_.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) && t ? y.intl.string(y.t.n0q7sL) : y.intl.string(y.t.QoYdiY),
     U = null != (n = (null == R ? void 0 : R.hasFeature(_.oNc.CREATOR_MONETIZABLE)) || (null == R ? void 0 : R.hasFeature(_.oNc.CREATOR_MONETIZABLE_PROVISIONAL))) && n,
@@ -168,7 +168,7 @@ let E = e => {
       }), (0, r.jsxs)("div", {
         className: O.contentContainer,
         children: [(0, r.jsxs)("div", {
-          className: a()(O.contentRow, U && O.contentRowOne),
+          className: i()(O.contentRow, U && O.contentRowOne),
           children: [(0, r.jsx)("div", {
             className: O.contentMediaContainer,
             children: (0, r.jsxs)("div", {
@@ -238,7 +238,7 @@ let E = e => {
             })]
           })]
         }), U && (0, r.jsxs)("div", {
-          className: a()(O.contentRow, O.contentRowTwo),
+          className: i()(O.contentRow, O.contentRowTwo),
           children: [(0, r.jsx)("div", {
             className: O.contentMediaContainer,
             children: (0, r.jsxs)("div", {
@@ -287,7 +287,7 @@ let E = e => {
               }, e))
             }), (0, r.jsx)(d.LZC, {
               size: 16
-            }), 0 === M.length && (0, r.jsx)(d.gtL, {
+            }), 0 === Z.length && (0, r.jsx)(d.gtL, {
               size: d.zxk.Sizes.MEDIUM,
               pauseAnimation: k,
               onClick: B,

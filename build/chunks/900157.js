@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => T
 });
@@ -19,15 +19,15 @@ var r = n(255367),
   b = n(665149),
   _ = n(910611),
   y = n(359110),
-  C = n(592125),
-  x = n(703558),
+  x = n(592125),
+  C = n(703558),
   v = n(430824),
   j = n(979651),
   O = n(664342),
   E = n(124368),
   I = n(981631),
-  P = n(388032),
-  S = n(591837);
+  S = n(388032),
+  P = n(591837);
 
 function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -66,7 +66,7 @@ function T(e) {
     channelId: t,
     baseChannelId: l,
     channelViewSource: T = "Split View"
-  } = e, A = (0, o.e7)([C.Z], () => C.Z.getChannel(t)), w = (0, o.e7)([v.Z], () => v.Z.getGuild(null == A ? void 0 : A.getGuildId())), R = (0, f.ZP)(A);
+  } = e, A = (0, o.e7)([x.Z], () => x.Z.getChannel(t)), w = (0, o.e7)([v.Z], () => v.Z.getGuild(null == A ? void 0 : A.getGuildId())), R = (0, f.ZP)(A);
   var M = A;
   let k = (0, o.e7)([j.Z], () => null != M && !a().isEmpty(j.Z.getVoiceStatesForChannel(M.id)));
   i.useEffect(() => {
@@ -77,28 +77,28 @@ function T(e) {
       source: E.on.VOICE_AUTO_OPEN
     }))
   }, [k, M]);
-  let L = i.useRef(!1);
+  let D = i.useRef(!1);
   if (i.useEffect(() => {
-      if (null == A || L.current) return;
-      L.current = !0;
-      let e = (0, p.K)(C.Z.getChannel(A.id), !0);
+      if (null == A || D.current) return;
+      D.current = !0;
+      let e = (0, p.K)(x.Z.getChannel(A.id), !0);
       (0, d.yw)(I.rMx.CHANNEL_OPENED, N(Z({}, e, (0, d.$H)(A.id)), {
         channel_view: T
       })), (0, h.a)(I.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: A.id
       })
     }, [A, T]), null == A || null == w) return null;
-  let D = (0, r.jsx)(O.Z, {
+  let L = (0, r.jsx)(O.Z, {
     channel: A,
     baseChannelId: l
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Z, {
       channel: A,
-      draftType: x.d.ChannelMessage
+      draftType: C.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
-      toolbar: D,
-      "aria-label": P.intl.string(P.t.Pwe8tL),
+      toolbar: L,
+      "aria-label": S.intl.string(S.t.Pwe8tL),
       children: (0, _.ud)({
         channel: A,
         channelName: R,
@@ -119,7 +119,7 @@ function T(e) {
         }
       })
     }), (0, r.jsx)("div", {
-      className: S.chat,
+      className: P.chat,
       children: (0, r.jsx)(m.Z, {
         channel: A,
         guild: w,

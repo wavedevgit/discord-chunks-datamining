@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => u
 });
@@ -37,8 +37,8 @@ function u(e) {
   }(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]);
   let {
     parentAnalyticsLocation: b
-  } = (0, l.ZP)(), _ = t || n || u, y = d ? c.d : c.Z, C = (0, a.Z)(t, n, u, p), {
-    events: x,
+  } = (0, l.ZP)(), _ = t || n || u, y = d ? c.d : c.Z, x = (0, a.Z)(t, n, u, p), {
+    events: C,
     play: v,
     Component: j
   } = (0, s.b)(_);
@@ -64,12 +64,12 @@ function u(e) {
     isTrayButton: !0,
     caretColor: _ ? "red" : "primaryDark",
     color: _ ? "red" : void 0,
-    label: C,
+    label: x,
     onMouseEnter: e => {
-      null == h || h(e), x.onMouseEnter()
+      null == h || h(e), C.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == f || f(e), x.onMouseLeave()
+      null == f || f(e), C.onMouseLeave()
     },
     onClick: e => {
       null == m || m(e), (0, o.v)(b, o.d.MIC, t)

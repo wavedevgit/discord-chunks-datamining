@@ -1,4 +1,4 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
   m: () => f
 });
@@ -53,9 +53,9 @@ function f(e) {
       renderIcon: g,
       text: m,
       selected: b,
-      trailing: O,
-      background: y,
-      showUnread: _ = !1,
+      trailing: _,
+      background: O,
+      showUnread: y = !1,
       ref: v
     } = e,
     C = function(e, t) {
@@ -74,7 +74,7 @@ function f(e) {
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
   let j = (0, o.JA)(n),
-    S = null != (t = (0, s.qg)(m)) ? t : "";
+    E = null != (t = (0, s.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
     ref: v,
     children: (0, r.jsxs)(a.kL8, p(h({}, C), {
@@ -83,7 +83,7 @@ function f(e) {
         role: "button"
       }),
       tag: "div",
-      "aria-label": S,
+      "aria-label": E,
       focusProps: {
         offset: {
           top: 1,
@@ -97,7 +97,7 @@ function f(e) {
       className: l()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [y, _ ? (0, r.jsx)("div", {
+      children: [O, y ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
         className: l()([d.link, d.basicChannelRowLink, f]),
@@ -110,7 +110,7 @@ function f(e) {
             className: d.name,
             "aria-hidden": !0,
             children: m
-          }), O]
+          }), _]
         })
       })]
     }))

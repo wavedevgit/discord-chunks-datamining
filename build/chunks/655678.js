@@ -1,45 +1,44 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => h
 });
 var r = n(255367),
   i = n(73800),
   a = n(120356),
   o = n.n(a),
   s = n(481060),
-  l = n(540059),
-  c = n(328908),
-  u = n(992970),
-  d = n(443603),
-  f = n(957825),
-  _ = n(388032),
-  p = n(302195);
+  l = n(328908),
+  c = n(992970),
+  u = n(443603),
+  d = n(957825),
+  f = n(388032),
+  _ = n(302195);
 
-function h(e, t) {
+function p(e, t) {
   let {
     disabled: n,
     channel: a
-  } = e, h = (0, l.Q3)("ChannelMessageConfettiButton"), m = (0, c.LN)(a.id), g = i.useCallback(() => {
-    (0, c.Rg)(a.id, u.MG.MessageComposerButtons)
+  } = e, p = (0, l.LN)(a.id), h = i.useCallback(() => {
+    (0, l.Rg)(a.id, c.MG.MessageComposerButtons)
   }, [a.id]);
   return n ? null : (0, r.jsx)("div", {
-    className: o()(f.CT, p.buttonContainer),
+    className: o()(d.CT, _.buttonContainer),
     ref: t,
-    children: (0, r.jsx)(d.Z, {
-      innerClassName: o()(p.button, p.messageConfettiButton),
-      childClassName: o()(p.messageConfettiIcon, {
-        [p.active]: m
+    children: (0, r.jsx)(u.Z, {
+      innerClassName: o()(_.button, _.messageConfettiButton),
+      childClassName: o()(_.messageConfettiIcon, {
+        [_.active]: p
       }),
-      onClick: g,
-      isActive: m,
-      "aria-label": _.intl.string(_.t.yvN8bG),
+      onClick: h,
+      isActive: p,
+      "aria-label": f.intl.string(f.t.yvN8bG),
       "aria-haspopup": "false",
       children: (0, r.jsx)(s.l22, {
-        size: h ? "refresh_sm" : void 0,
+        size: "refresh_sm",
         color: "currentColor"
       })
     })
   })
 }
-let m = i.memo(i.forwardRef(h))
+let h = i.memo(i.forwardRef(p))

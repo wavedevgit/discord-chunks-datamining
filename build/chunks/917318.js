@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
   Z: () => b
 });
@@ -59,23 +59,23 @@ function g(e) {
     author: d,
     mentions: f,
     type: g
-  } = n, _ = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, o.JZ)(d, i), x = (0, s.l)({
+  } = n, _ = (0, o.ZP)(n), b = n.getChannelId(), x = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, o.JZ)(d, i), E = (0, s.l)({
     user: d,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(y), v = (0, o.Sw)(E, i), O = (0, s.l)({
-    user: E,
+  })(y), v = (0, o.Sw)(x, i), C = (0, s.l)({
+    user: x,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(v), C = null != (t = m[g]) ? t : null;
-  if (null == C) return null;
-  let j = p.intl.format(C(), {
+  })(v), O = null != (t = m[g]) ? t : null;
+  if (null == O) return null;
+  let j = p.intl.format(O(), {
     actorName: _.nick,
-    actorHook: x,
+    actorHook: E,
     targetName: null == v ? void 0 : v.nick,
-    targetHook: O
+    targetHook: C
   });
   return (0, r.jsx)(c.Z, {
     iconNode: (0, r.jsx)(h, {
@@ -103,7 +103,7 @@ function _(e) {
     messageId: n.id
   })(g), b = null != (t = f[u]) ? t : null;
   if (null == b) return null;
-  let E = p.intl.format(b(), {
+  let x = p.intl.format(b(), {
     actorName: d.nick,
     actorHook: _
   });
@@ -113,7 +113,7 @@ function _(e) {
     }),
     timestamp: n.timestamp,
     compact: l,
-    children: E
+    children: x
   })
 }
 

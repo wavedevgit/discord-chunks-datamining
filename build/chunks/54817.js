@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
   Z: () => g
 });
@@ -25,10 +25,10 @@ function g(e) {
   } = e, g = (0, s.ZP)(t), _ = i(g), {
     avatarSrc: b,
     eventHandlers: {
-      onMouseEnter: E,
+      onMouseEnter: x,
       onMouseLeave: y
     }
-  } = (0, u.m)(!0), x = "" !== t.content ? new Date(t.content).toLocaleString(f.intl.currentLocale, {
+  } = (0, u.m)(!0), E = "" !== t.content ? new Date(t.content).toLocaleString(f.intl.currentLocale, {
     hour: "numeric",
     minute: "2-digit",
     month: "2-digit",
@@ -36,7 +36,7 @@ function g(e) {
     year: "numeric"
   }) : "";
   return (0, r.jsx)("div", {
-    onMouseEnter: E,
+    onMouseEnter: x,
     onMouseLeave: y,
     children: (0, r.jsx)(d.Z, {
       className: l()(h.mainContainer, {
@@ -79,7 +79,7 @@ function g(e) {
           children: t.type === p.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED ? f.intl.format(f.t["+m8eDw"], {
             username: g.nick,
             usernameHook: _,
-            time: x
+            time: E
           }) : f.intl.format(f.t.BHeke3, {
             username: g.nick,
             usernameHook: _

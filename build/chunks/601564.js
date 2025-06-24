@@ -19,8 +19,8 @@ var r = n(255367),
   m = n(663993),
   b = n(628123),
   _ = n(703656),
-  E = n(108427),
-  O = n(911314),
+  O = n(108427),
+  E = n(911314),
   y = n(429899),
   I = n(843445),
   v = n(981631),
@@ -48,7 +48,7 @@ class j extends i.PureComponent {
   componentDidMount() {
     (0, s.Y)(this.props.location), this.stopListeningToHistory = (0, _.s1)().listen(e => {
       e.pathname.startsWith(v.Z5c.APPLICATION_STORE) && (0, s.Y)(e)
-    }), this.props.isAuthenticated && (0, c.tZ)(), g.Z.disable(), g.Z.setLayout(h.r), g.Z.enable(), (0, E.e)("application_store")
+    }), this.props.isAuthenticated && (0, c.tZ)(), g.Z.disable(), g.Z.setLayout(h.r), g.Z.enable(), (0, O.e)("application_store")
   }
   componentWillUnmount() {
     null != this.stopListeningToHistory && this.stopListeningToHistory(), g.Z.disable(), g.Z.setLayout(f.oT), g.Z.enable()
@@ -112,7 +112,7 @@ class j extends i.PureComponent {
         render: () => (0, r.jsx)(u.Z, {
           page: v.ZY5.STORE_DIRECTORY_HOME,
           root: !0,
-          children: (0, r.jsx)(O.Z, {})
+          children: (0, r.jsx)(E.Z, {})
         })
       }), (0, r.jsx)(a.AW, {
         path: v.Z5c.APPLICATION_STORE_LISTING_APPLICATION(":applicationId", ":slug"),

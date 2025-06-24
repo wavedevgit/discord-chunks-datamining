@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   V: () => j,
   Z: () => O
@@ -21,7 +21,7 @@ var r = n(255367),
   _ = n(10401),
   y = n(652148);
 
-function C(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,14 +30,14 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
@@ -127,7 +127,7 @@ class j extends i.PureComponent {
     } = l, {
       offsetX: b,
       offsetY: _
-    } = this.state, C = {
+    } = this.state, x = {
       left: null != b ? i.x + b : void 0,
       top: null != _ ? i.y + _ : void 0
     }, j = e => {
@@ -153,7 +153,7 @@ class j extends i.PureComponent {
         [y.highPriority]: u
       }
     }, E = this.getTutorialPopoutText();
-    return (0, r.jsx)(h.ZP, v(x({
+    return (0, r.jsx)(h.ZP, v(C({
       innerRef: this.contentRef,
       position: m,
       renderMedia: o,
@@ -170,9 +170,9 @@ class j extends i.PureComponent {
         let {
           isShown: n
         } = t;
-        return (0, r.jsx)(d.P3F, v(x({}, e), {
+        return (0, r.jsx)(d.P3F, v(C({}, e), {
           className: y.indicator,
-          style: C,
+          style: x,
           innerRef: this.contentRef,
           children: (0, r.jsxs)("div", {
             className: a()(y.animationContainer, O(n)),
@@ -187,10 +187,10 @@ class j extends i.PureComponent {
     }))
   }
   constructor(...e) {
-    super(...e), C(this, "state", {
+    super(...e), x(this, "state", {
       offsetX: null,
       offsetY: null
-    }), C(this, "contentRef", i.createRef()), C(this, "handleDismiss", () => {
+    }), x(this, "contentRef", i.createRef()), x(this, "handleDismiss", () => {
       p.Z.dismiss(this.props.tutorialId)
     })
   }
@@ -210,7 +210,7 @@ let O = 12633 == n.j ? function() {
   return i ? (0, r.jsx)(r.Fragment, {
     children: Object.entries(e).map(e => {
       let [i, l] = e, a = t[i];
-      return s()(null != a, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(j, x({
+      return s()(null != a, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(j, C({
         tutorialId: i,
         tutorialDefinition: a,
         focused: n

@@ -22,14 +22,14 @@ var i = n(120356),
   v = n(388032),
   j = n(326879);
 
-function S() {
+function b() {
   return (0, r.jsx)("span", {
     className: j.ellipsis,
     children: "•"
   })
 }
 
-function b(e) {
+function S(e) {
   let {
     source: t
   } = e;
@@ -77,7 +77,7 @@ function C(e) {
   }), [R, k] = null != (i = (0, x.Z)(C)) ? i : [y, O], A = (0, f.L)(C), M = (0, m.M)(R), L = w === s.vA.CAMERA, D = null != I || !!T && (!h || L), B = null != I ? null == I || null == (t = I.id) ? void 0 : t.startsWith(s.vA.CAMERA) : L, U = D ? void 0 : C === g.tI.PRESET_VIDEO ? v.intl.string(_.default.MuHUFR) : C === g.tI.PRESET_DOCUMENTS ? v.intl.string(_.default.y0JuYW) : void 0;
   return (0, r.jsxs)("div", {
     className: j.root,
-    children: [D && (0, r.jsx)(b, {
+    children: [D && (0, r.jsx)(S, {
       source: I
     }), (0, r.jsxs)("div", {
       className: j.summary,
@@ -98,17 +98,17 @@ function C(e) {
               size: "xxs",
               color: "currentColor"
             }), A]
-          }), (0, r.jsx)(S, {})]
+          }), (0, r.jsx)(b, {})]
         }), null != U && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("span", {
             children: U
-          }), (0, r.jsx)(S, {})]
+          }), (0, r.jsx)(b, {})]
         }), (0, r.jsx)("span", {
           children: M
-        }), (0, r.jsx)(S, {}), (0, r.jsx)("span", {
+        }), (0, r.jsx)(b, {}), (0, r.jsx)("span", {
           children: "".concat(k, "fps")
         }), Z && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(S, {}), (0, r.jsxs)("span", {
+          children: [(0, r.jsx)(b, {}), (0, r.jsxs)("span", {
             className: j.iconSummaryContainer,
             children: [(0, r.jsx)(o.OyP, {
               className: l()(j.icon, j.mutedIcon),
@@ -117,7 +117,7 @@ function C(e) {
             }), v.intl.string(_.default.FzMGWV)]
           })]
         }), B ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(S, {}), (0, r.jsx)("span", {
+          children: [(0, r.jsx)(b, {}), (0, r.jsx)("span", {
             children: null == (n = P.find(e => {
               let {
                 id: t

@@ -15,8 +15,8 @@ var r = n(255367),
   m = n(768581),
   h = n(829409),
   g = n(619980);
-let _ = 16 / 9,
-  f = 325 / 72;
+let f = 16 / 9,
+  _ = 325 / 72;
 
 function b(e) {
   let {
@@ -33,18 +33,18 @@ function b(e) {
     let e = (0, u.yJ)(t);
     return null != e && null != e.activity_preview_video_asset_id ? (0, c.Z)(t.id, e.activity_preview_video_asset_id) : null
   }, [t]), {
-    imageUrl: _,
-    imageUrlAnimated: f
+    imageUrl: f,
+    imageUrlAnimated: _
   } = a.useMemo(() => "fetched" === m.state && null != m.url ? {
     imageUrl: m.url
   } : {
     imageUrl: i,
     imageUrlAnimated: s
-  }, [m.state, m.url, i, s]), b = null != _, j = null != h;
+  }, [m.state, m.url, i, s]), b = null != f, j = null != h;
   return "loading" === m.state ? null : j ? (0, r.jsxs)(r.Fragment, {
     children: [b ? (0, r.jsx)(x, {
       isHovered: n,
-      url: _,
+      url: f,
       animatedUrl: void 0
     }) : (0, r.jsx)(p.Z, {
       src: h,
@@ -57,8 +57,8 @@ function b(e) {
     })]
   }) : b ? (0, r.jsx)(x, {
     isHovered: n,
-    url: _,
-    animatedUrl: f
+    url: f,
+    animatedUrl: _
   }) : (0, r.jsx)(C, {
     iconURL: o
   })
@@ -159,7 +159,7 @@ let j = function(e) {
   return (0, r.jsx)("div", {
     className: g.bannerContainer,
     style: {
-      aspectRatio: "card" === n ? _ : f
+      aspectRatio: "card" === n ? f : _
     },
     onMouseEnter: p,
     onFocus: p,

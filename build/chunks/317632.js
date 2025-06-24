@@ -1,13 +1,13 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 84865 **/
 n.d(t, {
-  Z: () => g
+  Z: () => m
 }), n(388685);
 var r, i = n(442837),
   l = n(570140),
-  a = n(823379),
-  o = n(981631);
+  o = n(823379),
+  s = n(981631);
 
-function s(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,15 +23,15 @@ function c(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
 }
 let u = [],
   d = {},
-  p = null,
-  m = 0;
+  h = null,
+  p = 0;
 
 function f(e) {
   let t = null;
@@ -40,7 +40,7 @@ function f(e) {
   } catch (e) {
     return null
   }
-  if (e.platform_type === o.ABu.XBOX) {
+  if (e.platform_type === s.ABu.XBOX) {
     var n, r;
     let i = null == t ? void 0 : t.titleId,
       l = null == t ? void 0 : t.inviteToken;
@@ -62,7 +62,7 @@ function f(e) {
   }
   return null
 }
-class h extends(r = i.ZP.Store) {
+class g extends(r = i.ZP.Store) {
   getInvites() {
     return u
   }
@@ -78,25 +78,25 @@ class h extends(r = i.ZP.Store) {
     return null == (t = d[e.invite_id]) ? void 0 : t.joinable
   }
   getLastUnseenInvite() {
-    return p
+    return h
   }
   getUnseenInviteCount() {
-    return m
+    return p
   }
 }
-s(h, "displayName", "GameInviteStore");
-let g = new h(l.Z, {
+a(g, "displayName", "GameInviteStore");
+let m = new g(l.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
       gameInvites: t
     } = e;
-    u = t.map(f).filter(a.lm)
+    u = t.map(f).filter(o.lm)
   },
   GAME_INVITE_CREATE: function(e) {
     let {
       gameInvite: t
     } = e, n = f(t);
-    null != n && (u = [n, ...u], p = t, m += 1)
+    null != n && (u = [n, ...u], h = t, p += 1)
   },
   GAME_INVITE_DELETE: function(e) {
     let {
@@ -117,6 +117,6 @@ let g = new h(l.Z, {
     }
   },
   GAME_INVITE_CLEAR_UNSEEN: function(e) {
-    p = null, m = 0
+    h = null, p = 0
   }
 })

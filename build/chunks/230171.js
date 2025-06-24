@@ -1,7 +1,7 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
   O: () => R,
-  U: () => N.Un
+  U: () => T.Un
 }), n(539854), n(784620), n(973216), n(953529), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,17 +19,17 @@ var r = n(255367),
   g = n(561308),
   _ = n(567409),
   b = n(706454),
-  E = n(314897),
+  x = n(314897),
   y = n(699516),
-  x = n(914010),
+  E = n(914010),
   v = n(594174),
-  O = n(768581),
-  C = n(433534),
+  C = n(768581),
+  O = n(433534),
   j = n(506895),
   S = n(758199),
   I = n(943762),
-  N = n(914498),
-  T = n(172109),
+  T = n(914498),
+  N = n(172109),
   P = n(880251),
   A = n(208444),
   w = n(388032),
@@ -46,18 +46,18 @@ function R(e) {
   } = e, {
     name: _,
     bot: b
-  } = t = (0, T.O)(t), y = null == b ? void 0 : b.id, x = (0, f.ye)(t), v = O.ZP.getApplicationIconURL({
+  } = t = (0, N.O)(t), y = null == b ? void 0 : b.id, E = (0, f.ye)(t), v = C.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: b
   }), {
-    staticBannerSrc: C,
+    staticBannerSrc: O,
     videoBannerSrc: I,
     bannerAspectRatio: Z
-  } = (0, P.E)(t), R = (0, o.e7)([E.default], () => null != s ? s : E.default.getId(), [s]), {
-    analyticsLocations: M
+  } = (0, P.E)(t), R = (0, o.e7)([x.default], () => null != s ? s : x.default.getId(), [s]), {
+    analyticsLocations: D
   } = (0, p.ZP)(d.Z.APP_MESSAGE_EMBED), {
-    currentChannelId: L,
+    currentChannelId: M,
     instanceId: U,
     isCurrentlyInInstance: F,
     canLaunchInChannel: B
@@ -67,44 +67,44 @@ function R(e) {
     },
     applicationId: t.id,
     botUserId: null == b ? void 0 : b.id
-  }), V = null != y && x && H, z = B && x, W = (0, A.z)(t), K = i.useMemo(() => {
+  }), V = null != y && E && H, z = B && E, W = (0, A.z)(t), K = i.useMemo(() => {
     let e = [];
     return z && e.push({
       label: null == U ? w.intl.string(w.t.cnBQPD) : w.intl.string(w.t.VJlc0d),
-      trackingArea: N.j_.PLAY,
+      trackingArea: T.j_.PLAY,
       onClick() {
         (0, c.G6)({
-          channelId: null != L ? L : void 0,
+          channelId: null != M ? M : void 0,
           applicationId: t.id,
           isStart: null == U,
           embeddedActivitiesManager: G,
           customId: a,
           referrerId: R,
-          analyticsLocations: M
+          analyticsLocations: D
         })
       },
       disabledReason: F ? w.intl.string(w.t.wJNK8P) : void 0
     }), !z && V && e.push({
       label: w.intl.string(w.t.JeK1Wl),
-      trackingArea: N.j_.PLAY,
+      trackingArea: T.j_.PLAY,
       onClick() {
         (0, m.W)({
           appId: t.id,
           botId: y,
-          analyticsLocations: M,
+          analyticsLocations: D,
           customId: a,
           referrerId: R
         })
       }
     }), null != W && e.push(W), e
-  }, [z, V, W, U, F, L, t.id, G, a, R, M, y]), Y = x ? (0, r.jsx)(D, {
+  }, [z, V, W, U, F, M, t.id, G, a, R, D, y]), Y = E ? (0, r.jsx)(L, {
     app: t
   }) : (0, r.jsx)(k, {
     app: t
   });
   return (0, r.jsx)(S.W, {
     title: _,
-    staticBannerSrc: C,
+    staticBannerSrc: O,
     videoBannerSrc: I,
     bannerAspectRatio: Z,
     iconSrc: v,
@@ -125,7 +125,7 @@ function k(e) {
   var t, n, a;
   let {
     app: c
-  } = e, u = (0, C.Eb)({
+  } = e, u = (0, O.Eb)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig
@@ -160,15 +160,15 @@ function k(e) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     app: t
   } = e, {
     tags: n,
     maxParticipants: l
-  } = t, c = (0, o.e7)([x.Z], () => {
+  } = t, c = (0, o.e7)([E.Z], () => {
     var e;
-    return null != (e = x.Z.getGuildId()) ? e : void 0
+    return null != (e = E.Z.getGuildId()) ? e : void 0
   }, []), u = (0, _.N)(t.id), d = (0, o.Wu)([v.default, y.Z], () => {
     let e = [];
     for (let [t, n] of u.entries()) {

@@ -15,8 +15,8 @@ var r = n(255367),
   m = n(523311),
   h = n(797908),
   g = n(292191),
-  _ = n(258971),
-  f = n(979007),
+  f = n(258971),
+  _ = n(979007),
   b = n(981631),
   x = n(175457);
 let v = {
@@ -36,28 +36,28 @@ let v = {
     a.useEffect(() => {
       I(1)
     }, [n]);
-    let P = a.useMemo(() => ({
-        query: f.EMPTY_QUERY,
+    let S = a.useMemo(() => ({
+        query: _.EMPTY_QUERY,
         page: y,
-        pageSize: f.PAGE_SIZE,
+        pageSize: _.PAGE_SIZE,
         categoryId: n
       }), [y, n]),
-      S = (0, l.e7)([u.Z], () => u.Z.getFetchState({
-        query: f.EMPTY_QUERY,
+      P = (0, l.e7)([u.Z], () => u.Z.getFetchState({
+        query: _.EMPTY_QUERY,
         page: y,
-        pageSize: f.PAGE_SIZE,
+        pageSize: _.PAGE_SIZE,
         categoryId: n
       })),
       E = (0, l.cj)([u.Z], () => {
         var e;
-        return null != (e = u.Z.getSearchResults(P)) ? e : v
+        return null != (e = u.Z.getSearchResults(S)) ? e : v
       }),
       N = null != (t = (0, o.Z)(E)) ? t : v,
       {
         results: T,
         totalPages: A,
         loadId: L
-      } = a.useMemo(() => S === d.M.FETCHING ? N : E, [S, N, E]),
+      } = a.useMemo(() => P === d.M.FETCHING ? N : E, [P, N, E]),
       R = a.useMemo(() => null == T ? void 0 : T.filter(e => e.type === i.s.APPLICATION), [T]),
       Z = a.useCallback(e => {
         let {
@@ -68,14 +68,14 @@ let v = {
           fetchCounts: i
         } = e;
         i && c.yC({
-          query: f.EMPTY_QUERY,
+          query: _.EMPTY_QUERY,
           guildId: a
         }), c.yC({
-          query: f.EMPTY_QUERY,
+          query: _.EMPTY_QUERY,
           guildId: a,
           options: {
             page: t,
-            pageSize: f.PAGE_SIZE,
+            pageSize: _.PAGE_SIZE,
             categoryId: n
           },
           onSuccessCallback: r
@@ -90,19 +90,19 @@ let v = {
     }, [n, j, Z, y]);
     let k = a.useCallback((e, t) => {
       (0, p.zZ)(b.rMx.APP_DIRECTORY_SEARCH_RESULT_CLICKED, {
-        current_page: _.m_.SEARCH,
+        current_page: f.m_.SEARCH,
         application_id: e,
         load_id: L,
         position: t
       }), C(e)
     }, [L, C]);
-    return S === d.M.ERROR ? (0, r.jsx)("div", {
+    return P === d.M.ERROR ? (0, r.jsx)("div", {
       className: x.errorContainer,
       children: (0, r.jsx)(g.Z, {
         className: x.error
       })
     }) : (0, r.jsxs)(m.Z, {
-      loading: S === d.M.FETCHING,
+      loading: P === d.M.FETCHING,
       children: [(0, r.jsx)("div", {
         className: x.content,
         children: null == R ? void 0 : R.map((e, t) => {
@@ -117,8 +117,8 @@ let v = {
         })
       }), (0, r.jsx)(s.DsT, {
         className: x.paginationInput,
-        totalCount: Math.min(A * f.PAGE_SIZE, f.MAX_PAGES * f.PAGE_SIZE),
-        pageSize: f.PAGE_SIZE,
+        totalCount: Math.min(A * _.PAGE_SIZE, _.MAX_PAGES * _.PAGE_SIZE),
+        pageSize: _.PAGE_SIZE,
         disablePaginationGap: !0,
         hideMaxPage: !0,
         currentPage: y,

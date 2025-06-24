@@ -1,7 +1,7 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
   Z: () => C,
-  p: () => x
+  p: () => S
 }), n(539854), n(388685), n(361932), n(187205);
 var r = n(255367),
   i = n(73800),
@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function O(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function O(e, t) {
   }), e
 }
 
-function y(e, t) {
+function O(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -65,7 +65,7 @@ function y(e, t) {
   }
   return i
 }
-let _ = () => {
+let y = () => {
     let e = (0, s.e7)([d.Z], () => d.Z.getSavedMessageCount());
     return (0, i.useMemo)(() => {
       let t = [f.V5.ALL, f.V5.MENTIONS];
@@ -83,7 +83,7 @@ function C(e) {
   let {
     selectedFilter: t,
     setSelectedFilter: n
-  } = e, l = f.by, s = _(), [c, u] = (0, i.useState)(v), d = s.filter(e => !c[e]);
+  } = e, l = f.by, s = y(), [c, u] = (0, i.useState)(v), d = s.filter(e => !c[e]);
   return (0, r.jsxs)("div", {
     className: m.filters,
     children: [(0, r.jsx)(a.njP, {
@@ -101,14 +101,14 @@ function C(e) {
         disableItemStyles: !0,
         children: (0, r.jsx)(j, {
           setIsVisible: t => {
-            u(n => O(b({}, n), {
+            u(n => _(b({}, n), {
               [e]: t
             }))
           },
           children: l[e]
         })
       }, e))
-    }), (0, r.jsx)(S, {
+    }), (0, r.jsx)(E, {
       setSelectedFilter: n,
       hiddenFilters: d,
       selectedFilter: t
@@ -127,7 +127,7 @@ function j(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     setSelectedFilter: t,
     hiddenFilters: n,
@@ -143,8 +143,8 @@ function S(e) {
     renderPopout: e => {
       var {
         closePopout: i
-      } = e, o = y(e, ["closePopout"]);
-      return (0, r.jsx)(a.v2r, O(b({
+      } = e, o = O(e, ["closePopout"]);
+      return (0, r.jsx)(a.v2r, _(b({
         onSelect: () => {},
         navId: "notifications-sidebar-filters",
         "aria-label": "Notifications Sidebar Filters"
@@ -166,7 +166,7 @@ function S(e) {
         }, e))
       }))
     },
-    children: e => (0, r.jsx)(a.P3F, O(b({}, e), {
+    children: e => (0, r.jsx)(a.P3F, _(b({}, e), {
       className: m.filterButton,
       innerRef: o,
       onMouseEnter: () => h(!0),
@@ -180,12 +180,12 @@ function S(e) {
   })
 }
 
-function x(e) {
+function S(e) {
   let {
     selectedFilter: t,
     setSelectedFilter: n,
     className: l
-  } = e, o = _(), s = (0, i.useRef)(null), [c, d] = (0, i.useState)(!1), [h, m] = (0, i.useState)(!1), v = f.by;
+  } = e, o = y(), s = (0, i.useRef)(null), [c, d] = (0, i.useState)(!1), [h, m] = (0, i.useState)(!1), v = f.by;
   return 0 === o.length ? null : (0, r.jsx)(a.yRy, {
     position: "bottom",
     align: "left",
@@ -197,8 +197,8 @@ function x(e) {
     renderPopout: e => {
       var {
         closePopout: i
-      } = e, l = y(e, ["closePopout"]);
-      return (0, r.jsx)(a.v2r, O(b({
+      } = e, l = O(e, ["closePopout"]);
+      return (0, r.jsx)(a.v2r, _(b({
         onSelect: () => {},
         navId: "notifications-sidebar-filters",
         "aria-label": "Notifications Sidebar Filters"
@@ -226,7 +226,7 @@ function x(e) {
       forceOpen: h,
       shouldShow: h && !c,
       text: g.intl.string(g.t.UdhTtr),
-      children: () => (0, r.jsx)(a.P3F, O(b({}, e), {
+      children: () => (0, r.jsx)(a.P3F, _(b({}, e), {
         className: l,
         innerRef: s,
         onClick: t => {

@@ -1,12 +1,12 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => C
+  Z: () => w
 }), n(642613);
 var r = n(255367),
   s = n(73800),
   o = n(120356),
-  a = n.n(o),
-  i = n(442837),
+  i = n.n(o),
+  a = n(442837),
   c = n(481060),
   l = n(120421),
   u = n(340078),
@@ -38,7 +38,7 @@ function N(e) {
     iconSrc: n,
     valueTotal: s,
     valuePerSecond: o
-  } = e, i = o >= 0 ? y.default.QMkrPj : y.default.VN4aTU;
+  } = e, a = o >= 0 ? y.default.QMkrPj : y.default.VN4aTU;
   return (0, r.jsxs)("tr", {
     className: x.statRow,
     children: [(0, r.jsx)(j, {
@@ -68,9 +68,9 @@ function N(e) {
       })
     }), (0, r.jsx)(j, {
       children: (0, r.jsx)(c.Text, {
-        className: a()(x.statValuePerSecond, x.monospace),
+        className: i()(x.statValuePerSecond, x.monospace),
         variant: "text-xs/medium",
-        children: h.intl.format(i, {
+        children: h.intl.format(a, {
           points: Math.abs(o),
           grassIconHook: (e, t, n) => (0, d.Z)(e, t, n, x.pointsIcon)
         })
@@ -83,14 +83,14 @@ function _(e) {
   let {
     itemId: t,
     isPaused: n
-  } = e, s = (0, i.e7)([l.Z], () => {
+  } = e, s = (0, a.e7)([l.Z], () => {
     var e;
     return null != (e = l.Z.pointsByItem[t]) ? e : 0
-  }), o = (0, g.w2)()[t], a = (0, f.Z)(s, n);
+  }), o = (0, g.w2)()[t], i = (0, f.Z)(s, n);
   return (0, r.jsx)(N, {
     name: o.name,
     valueTotal: s,
-    valuePerSecond: a,
+    valuePerSecond: i,
     iconSrc: o.purchaseIconSrc
   })
 }
@@ -99,7 +99,7 @@ function P(e) {
   let {
     transitionState: t,
     isPaused: n
-  } = e, o = (0, i.e7)([l.Z], () => l.Z.pointsByItem), a = (0, i.e7)([l.Z], () => l.Z.lifetimePoints), u = (0, f.Z)(a, n), d = (0, i.e7)([l.Z], () => l.Z.pointsByItem), m = (0, s.useMemo)(() => Object.keys(o).sort((e, t) => {
+  } = e, o = (0, a.e7)([l.Z], () => l.Z.pointsByItem), i = (0, a.e7)([l.Z], () => l.Z.lifetimePoints), u = (0, f.Z)(i, n), d = (0, a.e7)([l.Z], () => l.Z.pointsByItem), m = (0, s.useMemo)(() => Object.keys(o).sort((e, t) => {
     var n, r;
     return (null != (n = null == d ? void 0 : d[t]) ? n : 0) - (null != (r = null == d ? void 0 : d[e]) ? r : 0)
   }), []);
@@ -128,7 +128,7 @@ function P(e) {
             children: [(0, r.jsx)(N, {
               name: h.intl.string(y.default.wAfrVl),
               iconSrc: v,
-              valueTotal: a,
+              valueTotal: i,
               valuePerSecond: u
             }), m.map(e => (0, r.jsx)(_, {
               itemId: e,
@@ -141,7 +141,7 @@ function P(e) {
   })
 }
 
-function C(e) {
+function w(e) {
   let {
     isPaused: t
   } = e;

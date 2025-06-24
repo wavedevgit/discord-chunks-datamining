@@ -35,7 +35,7 @@ function m(e) {
     className: d,
     children: m,
     betaTag: h = !1
-  } = e, g = (0, c.ZP)(), _ = (0, s.wj)(g), f = a.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(p, {
+  } = e, g = (0, c.ZP)(), f = (0, s.wj)(g), _ = a.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(p, {
     title: e,
     betaTag: h
   }, t)) : (0, r.jsx)(p, {
@@ -48,10 +48,10 @@ function m(e) {
       className: u.content,
       children: (0, r.jsxs)("div", {
         className: u.textContainer,
-        children: [f, null != n && (0, r.jsx)(o.Text, {
+        children: [_, null != n && (0, r.jsx)(o.Text, {
           className: u.description,
           variant: "text-md/medium",
-          color: _ ? "text-muted" : "header-primary",
+          color: f ? "text-muted" : "header-primary",
           children: n
         }), null != i && (0, r.jsx)("div", {
           className: u.buttonContainer,

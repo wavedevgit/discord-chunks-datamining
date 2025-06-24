@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
   Z: () => p
 });
@@ -42,7 +42,7 @@ function p(e) {
       hideTimestamp: _ = !1,
       withFooter: b = !1
     } = e,
-    E = function(e, t) {
+    x = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -64,7 +64,7 @@ function p(e) {
     }, u.embedCard, {
       [u.compact]: h
     }, f),
-    children: (0, r.jsx)(o.Z, (t = d({}, E), n = n = {
+    children: (0, r.jsx)(o.Z, (t = d({}, x), n = n = {
       className: l()(u.messageContainer, {
         [u.compact]: h
       }),

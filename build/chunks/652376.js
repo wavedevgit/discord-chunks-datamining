@@ -1,4 +1,4 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
   Z: () => c
 });
@@ -21,8 +21,8 @@ function c(e) {
     g = null == (t = (0, l.Z)()) ? void 0 : t.guild_id,
     m = null != g && c.includes(g),
     b = (0, i.e7)([a.Z], () => null != f && a.Z.hasVideo(f), [f]),
-    O = (0, i.e7)([o.Z], () => o.Z.getCurrentUserActiveStream());
-  return u && (d = !b, h = b, p = null != O && null != O.guildId && c.includes(O.guildId)), r.useMemo(() => ({
+    _ = (0, i.e7)([o.Z], () => o.Z.getCurrentUserActiveStream());
+  return u && (d = !b, h = b, p = null != _ && null != _.guildId && c.includes(_.guildId)), r.useMemo(() => ({
     audio: d,
     video: h,
     screenshare: p,

@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
-  Z: () => L
+  Z: () => M
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -18,17 +18,17 @@ var r = n(255367),
   g = n(841762),
   _ = n(336197),
   b = n(406432),
-  E = n(348238),
+  x = n(348238),
   y = n(38267),
-  x = n(884902),
+  E = n(884902),
   v = n(670188),
-  O = n(695346),
-  C = n(271383),
+  C = n(695346),
+  O = n(271383),
   j = n(594174),
   S = n(768581),
   I = n(900849),
-  N = n(506071),
-  T = n(495114),
+  T = n(506071),
+  N = n(495114),
   P = n(170140),
   A = n(981631),
   w = n(959517),
@@ -36,7 +36,7 @@ var r = n(255367),
   R = n(70249),
   k = n(527455);
 
-function D(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function D(e) {
   return e
 }
 
-function M(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,27 +68,27 @@ function M(e, t) {
   }), e
 }
 
-function L(e) {
+function M(e) {
   var t, n, l;
   let {
-    embedUrl: L,
+    embedUrl: M,
     message: U,
     channel: F
-  } = e, B = i.useRef(null), G = i.useRef(null), H = (0, P.J)(L, U), {
+  } = e, B = i.useRef(null), G = i.useRef(null), H = (0, P.J)(M, U), {
     setPopout: V
-  } = (0, y.Z)(U.id, w.d$), z = (0, E.qo)(U, F, V, !0), W = O.QK.useSetting(), K = (0, N.n)(), [Y, X] = i.useState(!1), [q, Q] = i.useState((null == H ? void 0 : H.coverImage) == null), J = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), $ = (0, c.e7)([C.ZP, j.default], () => {
+  } = (0, y.Z)(U.id, w.d$), z = (0, x.qo)(U, F, V, !0), W = C.QK.useSetting(), K = (0, T.n)(), [Y, q] = i.useState(!1), [X, Q] = i.useState((null == H ? void 0 : H.coverImage) == null), J = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), $ = (0, c.e7)([O.ZP, j.default], () => {
     var e;
-    return C.ZP.isMember(null == H ? void 0 : H.guildId, null == (e = j.default.getCurrentUser()) ? void 0 : e.id)
-  }, [H]), ee = (0, c.e7)([C.ZP], () => (null == H ? void 0 : H.authorId) != null ? C.ZP.getMember(H.guildId, H.authorId) : null), et = (0, f.Z)((null == ee ? void 0 : ee.avatarDecoration) != null ? null == ee ? void 0 : ee.avatarDecoration : null == H || null == (t = H.user) ? void 0 : t.avatarDecoration), [en, er, ei] = i.useMemo(() => {
+    return O.ZP.isMember(null == H ? void 0 : H.guildId, null == (e = j.default.getCurrentUser()) ? void 0 : e.id)
+  }, [H]), ee = (0, c.e7)([O.ZP], () => (null == H ? void 0 : H.authorId) != null ? O.ZP.getMember(H.guildId, H.authorId) : null), et = (0, f.Z)((null == ee ? void 0 : ee.avatarDecoration) != null ? null == ee ? void 0 : ee.avatarDecoration : null == H || null == (t = H.user) ? void 0 : t.avatarDecoration), [en, er, ei] = i.useMemo(() => {
     var e;
     return [null != (e = null == ee ? void 0 : ee.colorString) ? e : "inherit", null == ee ? void 0 : ee.colorStrings, null == ee ? void 0 : ee.colorRoleId]
-  }, [ee]), el = (0, x.X)(null == ee ? void 0 : ee.guildId, er, "MediaPostEmbed"), {
+  }, [ee]), el = (0, E.X)(null == ee ? void 0 : ee.guildId, er, "MediaPostEmbed"), {
     reducedMotion: ea
   } = i.useContext(u.Sfi), [eo, es] = i.useState(!1), ec = i.useCallback(() => {
-    X(!0)
-  }, [X]), eu = i.useCallback(() => {
-    X(!1)
-  }, [X]), ed = i.useCallback(async () => {
+    q(!0)
+  }, [q]), eu = i.useCallback(() => {
+    q(!1)
+  }, [q]), ed = i.useCallback(async () => {
     null != H && ((0, m.yw)(A.rMx.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
       media_post_id: H.threadId,
       channel_id: F.id,
@@ -116,7 +116,7 @@ function L(e) {
       className: R.thumbnailContainer,
       onMouseEnter: ec,
       onMouseLeave: eu,
-      children: [!q && (!0 === H.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
+      children: [!X && (!0 === H.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
         src: k,
         alt: Z.intl.string(Z.t.rIbh8P),
         className: a()(R.thumbnail, {
@@ -141,7 +141,7 @@ function L(e) {
           className: R.thumbnailOverlay,
           children: (0, r.jsxs)("div", {
             className: R.thumbnailOverlayCta,
-            children: [(0, r.jsx)(T.Z, {
+            children: [(0, r.jsx)(N.Z, {
               color: s.Z.WHITE
             }), (0, r.jsx)(u.Text, {
               variant: "text-sm/semibold",
@@ -181,7 +181,7 @@ function L(e) {
           children: e => (0, r.jsx)("div", {
             onMouseEnter: ef,
             onMouseLeave: ef,
-            children: (0, r.jsx)(u.qEK, M(D({}, e), {
+            children: (0, r.jsx)(u.qEK, D(L({}, e), {
               ref: G,
               size: u.EFr.SIZE_40,
               src: em,
@@ -226,7 +226,7 @@ function L(e) {
                 roleId: ei,
                 avatarUrl: H.avatarUrl,
                 newAnalyticsLocations: [p.Z.USERNAME],
-                children: e => (0, r.jsx)(u.rz2, M(D({}, e), {
+                children: e => (0, r.jsx)(u.rz2, D(L({}, e), {
                   ref: B,
                   name: H.authorName,
                   color: en,

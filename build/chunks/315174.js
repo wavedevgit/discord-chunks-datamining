@@ -1,7 +1,7 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
-  ZP: () => M,
-  wD: () => T
+  ZP: () => L,
+  wD: () => Z
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -12,23 +12,22 @@ var r = n(255367),
   c = n(442837),
   u = n(481060),
   d = n(230711),
-  h = n(540059),
-  p = n(666188),
-  f = n(665149),
-  g = n(340541),
-  m = n(159300),
-  b = n(210887),
-  O = n(695346),
-  y = n(496675),
-  _ = n(768581),
-  v = n(358555),
-  C = n(981631),
-  j = n(647086),
-  S = n(982183),
-  x = n(388032),
-  E = n(917669);
+  h = n(666188),
+  p = n(665149),
+  f = n(340541),
+  g = n(159300),
+  m = n(210887),
+  b = n(695346),
+  _ = n(496675),
+  O = n(768581),
+  y = n(358555),
+  v = n(981631),
+  C = n(647086),
+  j = n(982183),
+  E = n(388032),
+  S = n(917669);
 
-function P(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,38 +59,37 @@ function I(e, t) {
   }), e
 }
 
-function N(e) {
+function P(e) {
   var t;
   let {
-    isRefreshEnabled: n,
-    guild: i,
-    controller: l,
-    guildBanner: c,
-    animate: u
+    guild: n,
+    controller: i,
+    guildBanner: l,
+    animate: c
   } = e, {
-    value: d
-  } = l.springs, h = O.QK.getSetting();
+    value: u
+  } = i.springs;
   return (0, r.jsx)(s.animated.div, {
-    className: E.animatedContainer,
+    className: S.animatedContainer,
     style: {
-      opacity: d,
-      transform: d.to(e => "translateY(-".concat((1 - e) * 90, "px)"))
+      opacity: u,
+      transform: u.to(e => "translateY(-".concat((1 - e) * 90, "px)"))
     },
     children: (0, r.jsx)(s.animated.div, {
-      className: o()(E.bannerImage, {
-        [E.bannerImgFullWidth]: a.tq
+      className: o()(S.bannerImage, {
+        [S.bannerImgFullWidth]: a.tq
       }),
       style: {
-        transform: d.to(e => n || !h ? "translateY(".concat((1 - e) * 90, "px)") : "translateY(".concat((1 - e) * 90 * (2 / 3), "px) scale(").concat(1 + (1 - e) * .2, ")"))
+        transform: u.to(e => "translateY(".concat((1 - e) * 90, "px)"))
       },
       children: (0, r.jsx)("img", {
-        className: o()(E.bannerImg, {
-          [E.bannerImgFullWidth]: a.tq
+        className: o()(S.bannerImg, {
+          [S.bannerImgFullWidth]: a.tq
         }),
-        src: null != (t = _.ZP.getGuildBannerURL({
-          id: i.id,
-          banner: c
-        }, u)) ? t : "",
+        src: null != (t = O.ZP.getGuildBannerURL({
+          id: n.id,
+          banner: l
+        }, c)) ? t : "",
         alt: "",
         "aria-hidden": !0
       })
@@ -99,7 +97,7 @@ function N(e) {
   })
 }
 
-function w(e) {
+function N(e) {
   let {
     guild: t,
     controller: n,
@@ -107,33 +105,33 @@ function w(e) {
     hasSubheader: l
   } = e, {
     value: a
-  } = n.springs, c = t.hasFeature(C.oNc.DISCOVERABLE), d = (0, r.jsx)("div", {
-    className: E.communityInfo,
+  } = n.springs, c = t.hasFeature(v.oNc.DISCOVERABLE), d = (0, r.jsx)("div", {
+    className: S.communityInfo,
     children: c && (0, r.jsx)(u.ua7, {
-      text: x.intl.string(x.t.O8lDIy),
+      text: E.intl.string(E.t.O8lDIy),
       position: "right",
-      children: e => (0, r.jsxs)("div", I(P({
-        className: E.communityInfoPill
+      children: e => (0, r.jsxs)("div", I(x({
+        className: S.communityInfoPill
       }, e), {
         children: [(0, r.jsx)(u.enf, {
           size: "custom",
           color: "currentColor",
           width: 12,
           height: 12,
-          className: E.communityIcon
+          className: S.communityIcon
         }), (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: x.intl.string(x.t["B/vjCg"])
+          children: E.intl.string(E.t["B/vjCg"])
         })]
       }))
     })
   });
   return l ? (0, r.jsx)("div", {
-    className: o()(E.communityInfoContainer, E.hasSubheader),
+    className: o()(S.communityInfoContainer, S.hasSubheader),
     children: d
   }) : (0, r.jsx)(s.animated.div, {
-    className: E.communityInfoContainer,
+    className: S.communityInfoContainer,
     style: i ? {
       opacity: a
     } : {
@@ -143,16 +141,16 @@ function w(e) {
   })
 }
 
-function Z() {
+function w() {
   return (0, r.jsx)(u.r7p, {
     size: "custom",
     color: "currentColor",
-    className: E.favoritesIcon,
+    className: S.favoritesIcon,
     height: 20,
     width: 20
   })
 }
-let T = e => {
+let Z = e => {
   let {
     open: t
   } = e, n = t ? u.u04 : u.CJ0;
@@ -162,19 +160,19 @@ let T = e => {
   })
 };
 
-function A(e) {
+function T(e) {
   let {
     guild: t
   } = e;
   return (0, r.jsx)(u.X6q, {
     variant: "text-md/semibold",
     lineClamp: 1,
-    className: E.name,
+    className: S.name,
     children: t.toString()
   })
 }
 
-function R(e) {
+function A(e) {
   var t;
   let {
     bannerVisible: n,
@@ -187,13 +185,13 @@ function R(e) {
     children: d
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(y.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === j._ && (0, r.jsx)(Z, {}), (0, r.jsx)(A, {
+    }), i.id === C._ && (0, r.jsx)(w, {}), (0, r.jsx)(T, {
       guild: i
     }), null != l && (0, r.jsx)(u.P3F, {
-      className: E.headerButton,
+      className: S.headerButton,
       onClick: l,
       onContextMenu: o,
       "aria-controls": s,
@@ -202,25 +200,25 @@ function R(e) {
         ringTarget: c,
         offset: 4
       },
-      "aria-label": x.intl.formatToPlainString(x.t.xMXpl5, {
+      "aria-label": E.intl.formatToPlainString(E.t.xMXpl5, {
         guildName: null != (t = null == i ? void 0 : i.toString()) ? t : ""
       })
     }), (0, r.jsx)("div", {
-      className: E.headerChildren,
+      className: S.headerChildren,
       children: d
     })]
   })
 }
-let D = [j._, S.yG];
+let R = [C._, j.yG];
 
-function L(e) {
+function D(e) {
   let {
     bannerVisible: t,
     guild: l,
     onClick: o,
     onContextMenu: s,
     children: a
-  } = e, h = i.useRef(null), p = (0, c.e7)([b.Z], () => b.Z.theme), g = i.useCallback(async () => {
+  } = e, h = i.useRef(null), f = (0, c.e7)([m.Z], () => m.Z.theme), b = i.useCallback(async () => {
     let {
       default: e
     } = await Promise.all([n.e("87154"), n.e("42018")]).then(n.bind(n, 859432));
@@ -229,7 +227,7 @@ function L(e) {
         closePopout: n
       } = t;
       return (0, r.jsx)(u.f6W, {
-        theme: p,
+        theme: f,
         children: t => (0, r.jsx)("div", {
           className: t,
           children: (0, r.jsx)(e, {
@@ -239,36 +237,36 @@ function L(e) {
         })
       })
     }
-  }, [l, p]), O = (0, c.e7)([y.Z], () => (0, m.b)(y.Z, l)), _ = i.useCallback(() => {
+  }, [l, f]), O = (0, c.e7)([_.Z], () => (0, g.b)(_.Z, l)), P = i.useCallback(() => {
     O ? (0, u.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
-      return t => (0, r.jsx)(e, I(P({}, t), {
+      return t => (0, r.jsx)(e, I(x({}, t), {
         guild: l,
-        source: C.t4x.GUILD_HEADER
+        source: v.t4x.GUILD_HEADER
       }))
     }) : (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("88358").then(n.bind(n, 598402));
-      return t => (0, r.jsx)(e, P({}, t))
+      return t => (0, r.jsx)(e, x({}, t))
     })
   }, [O, l]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.KeG, {
       targetElementRef: h,
-      renderPopout: g,
+      renderPopout: b,
       position: "bottom",
       align: "left",
       animation: u.yRy.Animation.SCALE,
       spacing: 4,
       children: e => {
         var n;
-        return (0, r.jsxs)(u.P3F, I(P({
+        return (0, r.jsxs)(u.P3F, I(x({
           innerRef: h,
-          className: E.guildDropdown,
-          "aria-label": x.intl.formatToPlainString(x.t.xMXpl5, {
+          className: S.guildDropdown,
+          "aria-label": E.intl.formatToPlainString(E.t.xMXpl5, {
             guildName: null != (n = null == l ? void 0 : l.toString()) ? n : ""
           }),
           onContextMenu: s
@@ -278,45 +276,45 @@ function L(e) {
             null == e || null == (n = e.onClick) || n.call(e, t), null == o || o(t)
           },
           children: [(0, r.jsxs)("div", {
-            className: E.guildBadgeAndName,
-            children: [(0, r.jsx)(v.Z, {
+            className: S.guildBadgeAndName,
+            children: [(0, r.jsx)(y.Z, {
               guild: l,
               isBannerVisible: t
-            }), l.id === j._ && (0, r.jsx)(Z, {}), (0, r.jsx)(A, {
+            }), l.id === C._ && (0, r.jsx)(w, {}), (0, r.jsx)(T, {
               guild: l
             })]
           }), (0, r.jsx)("div", {
-            className: E.headerChildren,
+            className: S.headerChildren,
             children: a
           })]
         }))
       }
-    }), !D.includes(l.id) && (0, r.jsx)(u.ua7, {
-      text: x.intl.string(x.t.Sd8Ix8),
+    }), !R.includes(l.id) && (0, r.jsx)(u.ua7, {
+      text: E.intl.string(E.t.Sd8Ix8),
       position: "bottom",
-      children: e => (0, r.jsx)(u.P3F, I(P({
-        className: E.inviteButton
+      children: e => (0, r.jsx)(u.P3F, I(x({
+        className: S.inviteButton
       }, e), {
         onClick: () => {
           var t;
-          null == (t = e.onClick) || t.call(e), _()
+          null == (t = e.onClick) || t.call(e), P()
         },
         children: (0, r.jsx)(u.ejJ, {
           size: "refresh_sm",
           color: "currentColor"
         })
       }))
-    }), l.id === S.yG && (0, r.jsx)(f.JO, {
+    }), l.id === j.yG && (0, r.jsx)(p.JO, {
       icon: u.ewm,
-      iconClassName: E.settingsButtonIcon,
-      className: E.settingsButton,
+      iconClassName: S.settingsButtonIcon,
+      className: S.settingsButton,
       "aria-hidden": !0,
-      tooltip: x.intl.string(x.t.h850Sk),
-      onClick: () => d.Z.open(C.oAB.NOTIFICATIONS, void 0)
+      tooltip: E.intl.string(E.t.h850Sk),
+      onClick: () => d.Z.open(v.oAB.NOTIFICATIONS, void 0)
     })]
   })
 }
-let M = i.memo(function(e) {
+let L = i.memo(function(e) {
   let {
     ref: t,
     bannerVisible: n,
@@ -324,133 +322,129 @@ let M = i.memo(function(e) {
     className: s,
     onClick: c,
     onContextMenu: d,
-    onMouseDown: f,
-    disableBannerAnimation: m,
-    "aria-expanded": b,
-    "aria-controls": y,
-    guild: v,
-    guildBanner: j,
-    animationOverlayHeight: S,
-    children: x,
-    headerClassName: Z,
-    communityInfoVisible: T,
-    hasSubheader: A
-  } = e, D = v.hasFeature(C.oNc.ANIMATED_BANNER), M = (0, p.Z)(v), U = !M && v.hasCommunityInfoSubheader(), G = !M && T, B = (0, _.xR)(j) && D && !m, [V, H] = i.useState(!1), F = i.useRef(!1), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(void 0), Y = O.QK.getSetting();
+    onMouseDown: p,
+    disableBannerAnimation: g,
+    "aria-expanded": m,
+    "aria-controls": _,
+    guild: y,
+    guildBanner: C,
+    animationOverlayHeight: j,
+    children: E,
+    headerClassName: w,
+    communityInfoVisible: Z,
+    hasSubheader: T
+  } = e, R = y.hasFeature(v.oNc.ANIMATED_BANNER), L = (0, h.Z)(y), k = !L && y.hasCommunityInfoSubheader(), U = !L && Z, G = (0, O.xR)(C) && R && !g, [B, F] = i.useState(!1), V = i.useRef(!1), H = i.useRef(null), z = null != t ? t : H, W = i.useRef(void 0), K = b.QK.getSetting();
   i.useEffect(() => {
-    if (B && n && !F.current && Y) return H(!0), K.current = setTimeout(() => {
-      H(!1)
+    if (G && n && !V.current && K) return F(!0), W.current = setTimeout(() => {
+      F(!1)
     }, 5e3), () => {
-      clearTimeout(K.current)
+      clearTimeout(W.current)
     }
-  }, [B, n, Y]), i.useEffect(() => {
-    F.current = n
+  }, [G, n, K]), i.useEffect(() => {
+    V.current = n
   }, [n]);
-  let q = () => {
+  let Y = () => {
       let {
         renderBanner: t,
         guildBanner: n
       } = e;
       return null != n && !t
     },
-    Q = (0, h.Q3)("GuildHeader"),
     {
-      entrypoints: X
-    } = (0, g._k)({
+      entrypoints: q
+    } = (0, f._k)({
       location: "guild_header"
     }),
-    J = {
+    X = {
       bannerVisible: n,
-      guild: v,
+      guild: y,
       onClick: c,
       onContextMenu: d,
-      ariaControls: y,
-      ariaExpanded: b,
-      guildHeaderRef: W
+      ariaControls: _,
+      ariaExpanded: m,
+      guildHeaderRef: z
     };
   return (0, r.jsx)(u.f6W, {
-    theme: n ? C.BRd.DARK : void 0,
+    theme: n ? v.BRd.DARK : void 0,
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        "data-has-banner": q(),
+        "data-has-banner": Y(),
         "data-banner-visible": n,
-        ref: W,
+        ref: z,
         className: o()(s, {
-          [E.container]: !0,
-          [E.clickable]: !X && null != c,
-          [E.selected]: !X && null != c && b,
-          [E.hasBanner]: q(),
-          [E.bannerVisible]: n,
-          [e]: !Q && n,
-          [E.communityInfoVisible]: G || A && U,
-          [E.invitesRefresh]: X
+          [S.container]: !0,
+          [S.clickable]: !q && null != c,
+          [S.selected]: !q && null != c && m,
+          [S.hasBanner]: Y(),
+          [S.bannerVisible]: n,
+          [e]: !1,
+          [S.communityInfoVisible]: U || T && k,
+          [S.invitesRefresh]: q
         }),
-        onMouseDown: f,
-        onClick: X ? void 0 : c,
+        onMouseDown: p,
+        onClick: q ? void 0 : c,
         onContextMenu: d,
         children: [(0, r.jsxs)("header", {
-          className: o()(E.header, Z, {
-            [E.themedHeaderMobile]: a.tq
+          className: o()(S.header, w, {
+            [S.themedHeaderMobile]: a.tq
           }),
           children: [(0, r.jsx)("div", {
-            className: o()(E.headerContent, E.primaryInfo),
-            children: X ? (0, r.jsx)(L, I(P({}, J), {
-              children: x
-            })) : (0, r.jsx)(R, I(P({}, J), {
-              children: x
+            className: o()(S.headerContent, S.primaryInfo),
+            children: q ? (0, r.jsx)(D, I(x({}, X), {
+              children: E
+            })) : (0, r.jsx)(A, I(x({}, X), {
+              children: E
             }))
-          }), U && (0, r.jsx)(w, {
-            guild: v,
+          }), k && (0, r.jsx)(N, {
+            guild: y,
             controller: l,
-            hasBanner: null != j,
-            hasSubheader: null != A && A
+            hasBanner: null != C,
+            hasSubheader: null != T && T
           })]
-        }), null != j ? (0, r.jsx)(N, {
-          guild: v,
+        }), null != C ? (0, r.jsx)(P, {
+          guild: y,
           controller: l,
-          guildBanner: j,
-          animate: V,
-          isRefreshEnabled: Q
-        }) : null, (0, r.jsx)(k, {
+          guildBanner: C,
+          animate: B
+        }) : null, (0, r.jsx)(M, {
           controller: l
         })]
-      }), B && q() ? (0, r.jsx)("div", {
-        className: E.animatedBannerHoverLayer,
+      }), G && Y() ? (0, r.jsx)("div", {
+        className: S.animatedBannerHoverLayer,
         onMouseEnter: () => {
-          H(!0), clearTimeout(K.current)
+          F(!0), clearTimeout(W.current)
         },
-        onMouseLeave: () => H(!1),
+        onMouseLeave: () => F(!1),
         style: {
-          height: S
+          height: j
         }
       }) : null]
     })
   })
 });
 
-function k(e) {
+function M(e) {
   let {
     controller: t
-  } = e, n = (0, h.Q3)("GuildHeaderOverlay"), {
-    theme: i
-  } = (0, u.TCT)();
-  if (!n) return null;
-  let l = t.springs.value;
+  } = e, {
+    theme: n
+  } = (0, u.TCT)(), i = t.springs.value;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.animated.div, {
-      className: E.headerEllipseBackdrop,
+      className: S.headerEllipseBackdrop,
       style: {
-        opacity: l.to(e => .5 * e)
+        opacity: i.to(e => .5 * e)
       }
     }), (0, r.jsx)(s.animated.div, {
-      className: E.headerEllipseForeground,
+      className: S.headerEllipseForeground,
       style: {
-        opacity: l.to(e => e)
+        opacity: i.to(e => e)
       }
     }), (0, r.jsx)(s.animated.div, {
-      className: E.headerGlass,
+      className: S.headerGlass,
       style: {
-        opacity: l.to(e => (1 - e) * 6),
-        filter: (0, u.apv)(i) ? l.to(e => "brightness(".concat(.75 + .25 * e, ")")) : void 0
+        opacity: i.to(e => (1 - e) * 6),
+        filter: (0, u.apv)(n) ? i.to(e => "brightness(".concat(.75 + .25 * e, ")")) : void 0
       }
     })]
   })

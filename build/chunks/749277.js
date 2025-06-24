@@ -1,4 +1,4 @@
-/** Chunk was on 48057 **/
+/** Chunk was on 78797 **/
 n.d(t, {
   A: () => M
 });
@@ -20,24 +20,24 @@ var i = n(442837),
   p = n(246965),
   N = n(703656),
   S = n(706454),
-  A = n(914010),
-  f = n(594174),
-  R = n(933429),
-  m = n(395361),
-  C = n(626135),
-  g = n(243778),
+  f = n(914010),
+  m = n(594174),
+  A = n(933429),
+  R = n(395361),
+  g = n(626135),
+  C = n(243778),
   P = n(921944),
   y = n(981631),
-  D = n(801461),
-  b = n(474936),
+  b = n(801461),
+  D = n(474936),
   h = n(388032),
   U = n(131715);
 let M = e => {
   let {
     dismissibleContent: t,
     noticeType: M
-  } = e, k = (0, i.e7)([R.ZP], () => R.ZP.getNotice()), v = (0, i.e7)([S.default], () => S.default.locale), L = (0, i.e7)([f.default], () => f.default.getCurrentUser()), Z = (0, i.e7)([A.Z], () => A.Z.getGuildId());
-  return (0, r.jsx)(g.ZP, {
+  } = e, v = (0, i.e7)([A.ZP], () => A.ZP.getNotice()), k = (0, i.e7)([S.default], () => S.default.locale), L = (0, i.e7)([m.default], () => m.default.getCurrentUser()), Z = (0, i.e7)([f.Z], () => f.Z.getGuildId());
+  return (0, r.jsx)(C.ZP, {
     contentTypes: [t],
     groupName: P.R.NOTICE_BAR,
     bypassAutoDismiss: !0,
@@ -97,7 +97,7 @@ let M = e => {
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(P.L.UNKNOWN),
               noticeType: M
-            }), (0, r.jsx)(m.Z, {
+            }), (0, r.jsx)(R.Z, {
               className: U.platformIcon
             }), h.intl.string(h.t["5NUVHB"]), (0, r.jsx)(o.NoS, {
               onClick: () => (0, d.Z)({
@@ -149,7 +149,7 @@ let M = e => {
               className: U.premiumAction,
               noticeType: M,
               onClick: () => {
-                C.default.track(y.rMx.PREMIUM_PROMOTION_OPENED, {
+                g.default.track(y.rMx.PREMIUM_PROMOTION_OPENED, {
                   location_section: y.jXE.NOTIFICATION_BAR,
                   location_object: y.qAy.BUTTON_CTA
                 }), c.Z.open(y.oAB.PREMIUM)
@@ -165,12 +165,12 @@ let M = e => {
         case l.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING:
           return (0, r.jsx)(p.Z, {
             dismissCurrentNotice: () => i(P.L.UNKNOWN),
-            subscriptionTier: b.Si.TIER_2
+            subscriptionTier: D.Si.TIER_2
           });
         case l.z.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING:
           return (0, r.jsx)(p.Z, {
             dismissCurrentNotice: () => i(P.L.UNKNOWN),
-            subscriptionTier: b.Si.TIER_0
+            subscriptionTier: D.Si.TIER_0
           });
         case l.z.NAGBAR_NOTICE_PREMIUM_REACTIVATE:
           return (0, r.jsxs)(o.qXd, {
@@ -188,7 +188,7 @@ let M = e => {
           });
         case l.z.NAGBAR_NOTICE_LOCALIZED_PRICING:
           return (0, r.jsx)(T.Z, {
-            notice: k,
+            notice: v,
             noticeType: M,
             dismissCurrentNotice: () => i(P.L.UNKNOWN)
           });
@@ -228,7 +228,7 @@ let M = e => {
               onClick: () => i(P.L.UNKNOWN),
               noticeType: M
             }), h.intl.format(h.t.pdYZys, {}), (0, r.jsx)(o.NoS, {
-              onClick: () => (0, O.Z)(D.Kq.NOTICE),
+              onClick: () => (0, O.Z)(b.Kq.NOTICE),
               noticeType: M,
               children: h.intl.string(h.t.LhlgY2)
             })]
@@ -240,9 +240,9 @@ let M = e => {
               onClick: () => i(P.L.UNKNOWN),
               noticeType: M
             }), h.intl.format(h.t.zT1hgo, {
-              date: (0, I.IE)(v)
+              date: (0, I.IE)(k)
             }), (0, r.jsx)(o.NoS, {
-              onClick: () => (0, O.Z)(D.Kq.NOTICE),
+              onClick: () => (0, O.Z)(b.Kq.NOTICE),
               noticeType: M,
               children: h.intl.string(h.t.LhlgY2)
             })]
@@ -256,7 +256,7 @@ let M = e => {
             }), h.intl.string(h.t["O9GI+v"]), (0, r.jsx)(o.NoS, {
               onClick: () => {
                 (0, E.Z)({
-                  subscriptionTier: b.Si.TIER_2,
+                  subscriptionTier: D.Si.TIER_2,
                   analyticsLocations: [u.Z.CHECKOUT_RECOVERY_NAGBAR],
                   analyticsLocation: y.Sbl.CHECKOUT_RECOVERY_NAGBAR,
                   onClose: () => i(P.L.UNKNOWN)

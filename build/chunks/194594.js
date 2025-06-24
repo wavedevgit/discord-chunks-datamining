@@ -15,9 +15,9 @@ var r, a = n(255367),
   m = n(768581),
   h = n(624138),
   g = n(388032),
-  _ = n(581330);
+  f = n(581330);
 
-function f(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,12 +50,12 @@ function b(e, t) {
 }
 var x = ((r = {})[r.SMALL = (0, h.Mg)(c.Z.GUILD_COUNT_SMALL_ICON_SIZE)] = "SMALL", r[r.LARGE = (0, h.Mg)(c.Z.GUILD_COUNT_LARGE_ICON_SIZE)] = "LARGE", r);
 let v = {
-    [x.SMALL]: _.moreGuildsSmall,
-    [x.LARGE]: _.moreGuildsLarge
+    [x.SMALL]: f.moreGuildsSmall,
+    [x.LARGE]: f.moreGuildsLarge
   },
   C = {
-    [x.SMALL]: _.iconSmall,
-    [x.LARGE]: _.iconLarge
+    [x.SMALL]: f.iconSmall,
+    [x.LARGE]: f.iconLarge
   };
 
 function j(e) {
@@ -68,8 +68,8 @@ function j(e) {
     textVariant: y = "text-sm/normal",
     compact: I,
     guildIconSize: O = x.LARGE,
-    guildsClassName: P,
-    children: S
+    guildsClassName: S,
+    children: P
   } = e, E = (0, o.e7)([p.default], () => p.default.locale), N = new Intl.ListFormat(E), T = null != (n = null == (t = l.directory_entry) ? void 0 : t.guild_count) ? n : 0, A = null != (r = null == c ? void 0 : c.length) ? r : 0, L = Math.max(0, T - A), {
     shownMutualGuilds: R,
     hiddenMutualGuilds: Z
@@ -99,10 +99,10 @@ function j(e) {
     })
   }(T, A, L, E, I);
   return 0 === R.length && null == w ? null : (0, a.jsxs)(a.Fragment, {
-    children: [S, (0, a.jsxs)("div", {
-      className: s()(j, _.wrapper),
+    children: [P, (0, a.jsxs)("div", {
+      className: s()(j, f.wrapper),
       children: [(0, a.jsx)("div", {
-        className: s()(_.icons, P),
+        className: s()(f.icons, S),
         children: R.length > 0 ? (0, a.jsxs)(a.Fragment, {
           children: [R.map((e, t) => {
             let n = t === R.length - 1 && 0 === k,
@@ -115,8 +115,8 @@ function j(e) {
               l = (0, a.jsx)(d.ua7, {
                 text: e.name,
                 position: "top",
-                children: e => (0, a.jsx)("img", b(f({}, e), {
-                  className: s()(_.icon, C[O]),
+                children: e => (0, a.jsx)("img", b(_({}, e), {
+                  className: s()(f.icon, C[O]),
                   src: r,
                   alt: ""
                 }))
@@ -124,7 +124,7 @@ function j(e) {
             return n ? (0, a.jsx)(i.Fragment, {
               children: l
             }, e.id) : (0, a.jsx)(u.ZP, {
-              className: _.iconMask,
+              className: f.iconMask,
               height: O,
               width: O,
               mask: u.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
@@ -135,8 +135,8 @@ function j(e) {
               appNames: N.format(Z.map(e => e.name))
             }),
             position: "top",
-            children: e => (0, a.jsxs)("div", b(f({}, e), {
-              className: s()(_.moreGuilds, v[O]),
+            children: e => (0, a.jsxs)("div", b(_({}, e), {
+              className: s()(f.moreGuilds, v[O]),
               children: ["+", k]
             }))
           }) : null]
@@ -145,7 +145,7 @@ function j(e) {
           color: "currentColor",
           width: O,
           height: O,
-          className: _.defaultIcon
+          className: f.defaultIcon
         })
       }), null != w ? (0, a.jsx)(d.Text, {
         variant: y,

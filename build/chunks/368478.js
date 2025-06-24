@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   J: () => _,
   Z: () => b
@@ -24,7 +24,7 @@ function b(e) {
     primaryEntryPointCommand: n,
     application: a,
     showAppLauncherPopup: s = !1
-  } = e, [p, b] = r.useState(!1), _ = (0, i.e7)([l.ZP], () => l.ZP.getCurrentEmbeddedActivity()), y = s ? g.t.cpT0Cg : g.t["0hKkS0"], C = r.useMemo(() => null != n ? (0, d.XZ)(n.displayName) : g.intl.string(g.t["3xjX0d"]), [n]), x = void 0 !== a.flags && (0, f.yE)(a.flags, m.udG.EMBEDDED), v = null != _ && _.applicationId === a.id && (0, o.p)(_.location) === t.channel.id, {
+  } = e, [p, b] = r.useState(!1), _ = (0, i.e7)([l.ZP], () => l.ZP.getCurrentEmbeddedActivity()), y = s ? g.t.cpT0Cg : g.t["0hKkS0"], x = r.useMemo(() => null != n ? (0, d.XZ)(n.displayName) : g.intl.string(g.t["3xjX0d"]), [n]), C = void 0 !== a.flags && (0, f.yE)(a.flags, m.udG.EMBEDDED), v = null != _ && _.applicationId === a.id && (0, o.p)(_.location) === t.channel.id, {
     analyticsLocations: j
   } = (0, u.ZP)(c.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), O = null != t.channel.recipients ? t.channel.recipients[0] : void 0;
   return {
@@ -33,9 +33,9 @@ function b(e) {
       context: t,
       applicationId: a.id,
       botUserId: O
-    }) && x ? v ? g.intl.string(g.t["Hi1/aW"]) : null != C ? C : g.intl.string(g.t.zKX8Nj) : g.intl.string(y),
+    }) && C ? v ? g.intl.string(g.t["Hi1/aW"]) : null != x ? x : g.intl.string(g.t.zKX8Nj) : g.intl.string(y),
     hasActiveMatchingEmbeddedActivity: v,
-    isEmbeddedApp: x,
+    isEmbeddedApp: C,
     currentEmbeddedActivity: _,
     channelRecipientUserId: O,
     setIsExecutingLaunchInteraction: b,

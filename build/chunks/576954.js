@@ -1,6 +1,6 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
-  M: () => x
+  M: () => C
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -20,7 +20,7 @@ var r = n(255367),
   _ = n(981631),
   y = n(388032);
 
-function C(e) {
+function x(e) {
   let {
     senderId: t,
     channelId: n,
@@ -54,41 +54,41 @@ function C(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     channelId: t,
-    warningId: x,
+    warningId: C,
     senderId: v
   } = e, {
     isBlocked: j
   } = (0, a.cj)([p.Z], () => ({
     isBlocked: p.Z.isBlocked(v)
   }), [v]), O = i.useCallback(() => {
-    (0, h.T)(t, [x])
-  }, [t, x]), E = (0, b.C2)(), I = i.useCallback(e => () => {
+    (0, h.T)(t, [C])
+  }, [t, C]), E = (0, b.C2)(), I = i.useCallback(e => () => {
     s.Z.blockUser(v, {
       location: b.zr
     }).then(() => {
       O()
     }), (0, m.qc)({
       channelId: t,
-      warningId: x,
+      warningId: C,
       senderId: v,
       warningType: f.pj.STRANGER_DANGER,
       cta: e
     })
-  }, [O, t, x, v]);
+  }, [O, t, C, v]);
   i.useEffect(() => {
     (0, m.MC)(_.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
-      warningId: x,
+      warningId: C,
       senderId: v,
       warningType: f.pj.STRANGER_DANGER
     }), c.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [t, x, v]);
-  let P = () => {
+  }, [t, C, v]);
+  let S = () => {
       (0, o.ZDy)(async () => {
         let {
           default: e
@@ -102,7 +102,7 @@ function x(e) {
             transitionState: i,
             onClose: l,
             channelId: t,
-            warningId: x,
+            warningId: C,
             senderId: v,
             description: y.intl.string(y.t.DJMZX1),
             safetyTipRows: E.map((e, t) => (0, r.jsx)(u.q, {
@@ -111,17 +111,17 @@ function x(e) {
               title: e
             }, t)),
             actionRows: (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(C, {
+              children: [(0, r.jsx)(x, {
                 senderId: v,
                 channelId: t,
-                warningId: x
+                warningId: C
               }, "more-tips-button"), (0, r.jsx)(d.ZP, {
                 title: y.intl.string(y.t["5QYPOz"]),
                 description: y.intl.string(y.t.G08MKi),
                 buttonText: y.intl.string(y.t["5QYPOz"]),
                 buttonColor: o.zxk.Colors.RED,
                 onButtonPress: () => {
-                  l(), S(m.NM.USER_MODAL_BLOCK_CONFIRM, m.NM.USER_MODAL_BLOCK_CANCEL, P)
+                  l(), P(m.NM.USER_MODAL_BLOCK_CONFIRM, m.NM.USER_MODAL_BLOCK_CANCEL, S)
                 }
               }, "block-button")]
             })
@@ -129,7 +129,7 @@ function x(e) {
         }
       })
     },
-    S = (e, i, l) => {
+    P = (e, i, l) => {
       (0, o.ZDy)(async () => {
         let {
           default: a
@@ -159,7 +159,7 @@ function x(e) {
             onCancel: () => {
               null == l || l(), (0, m.qc)({
                 channelId: t,
-                warningId: x,
+                warningId: C,
                 senderId: v,
                 warningType: f.pj.STRANGER_DANGER,
                 cta: i
@@ -180,7 +180,7 @@ function x(e) {
     };
   return (0, r.jsx)(g.Q, {
     channelId: t,
-    warningId: x,
+    warningId: C,
     senderId: v,
     warningType: f.pj.STRANGER_DANGER,
     header: y.intl.string(y.t.iOkDpK),
@@ -190,9 +190,9 @@ function x(e) {
       text: y.intl.string(y.t["Qk/c4+"]),
       color: o.zxk.Colors.BRAND,
       onclick: () => {
-        P(), (0, m.qc)({
+        S(), (0, m.qc)({
           channelId: t,
-          warningId: x,
+          warningId: C,
           senderId: v,
           warningType: f.pj.STRANGER_DANGER,
           cta: m.NM.OPEN_MORE_TIPS
@@ -201,7 +201,7 @@ function x(e) {
     }, ...j ? [] : [{
       text: y.intl.string(y.t.ie0QdH),
       color: o.zxk.Colors.RED,
-      onclick: () => S(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)
+      onclick: () => P(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)
     }]]
   })
 }

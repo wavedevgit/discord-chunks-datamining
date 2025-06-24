@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   ZP: () => k
 });
@@ -20,15 +20,15 @@ var i = n(120356),
   b = n(592125),
   _ = n(271383),
   y = n(430824),
-  C = n(496675),
-  x = n(158776),
+  x = n(496675),
+  C = n(158776),
   v = n(944486),
   j = n(885110),
   O = n(594174),
   E = n(572004),
   I = n(5192),
-  P = n(51144),
-  S = n(131085),
+  S = n(51144),
+  P = n(131085),
   Z = n(388032),
   N = n(157092);
 
@@ -69,7 +69,7 @@ function w(e) {
     user: t,
     guildId: n,
     onClose: i
-  } = e, l = t.id, s = (0, a.e7)([j.Z, x.Z, g.default], () => l === g.default.getId() ? j.Z.getStatus() : x.Z.getStatus(l, n), [l, n]);
+  } = e, l = t.id, s = (0, a.e7)([j.Z, C.Z, g.default], () => l === g.default.getId() ? j.Z.getStatus() : C.Z.getStatus(l, n), [l, n]);
   return (0, r.jsxs)("div", {
     className: N.topRow,
     children: [(0, r.jsxs)("div", {
@@ -96,7 +96,7 @@ function w(e) {
             primaryGuild: null == t ? void 0 : t.primaryGuild,
             userId: null == t ? void 0 : t.id,
             contextGuildId: n,
-            badgeSize: S.Gg.SIZE_16,
+            badgeSize: P.Gg.SIZE_16,
             textVariant: "heading-md/semibold",
             className: N.memberClanTag,
             containerClassName: N.memberClanTagContainer
@@ -104,7 +104,7 @@ function w(e) {
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "text-normal",
-          children: P.ZP.getUserTag(t)
+          children: S.ZP.getUserTag(t)
         })]
       })]
     }), (0, r.jsx)(o.Text, {
@@ -168,19 +168,19 @@ function M(e) {
     guildId: l
   } = e, m = (0, a.e7)([y.Z], () => y.Z.getGuild(l)), {
     canKickUser: _,
-    canBanUser: x,
+    canBanUser: C,
     canModerateMembers: j
-  } = (0, a.cj)([C.Z, O.default, y.Z], () => ({
+  } = (0, a.cj)([x.Z, O.default, y.Z], () => ({
     canKickUser: (0, h.BK)(t, m),
     canBanUser: (0, h.mm)(t, m),
-    canModerateMembers: null != m && (0, p.F)(m.id, t.id, [O.default, y.Z, C.Z])
+    canModerateMembers: null != m && (0, p.F)(m.id, t.id, [O.default, y.Z, x.Z])
   }), [t, m]), I = (0, u.b)(i), {
-    analyticsLocations: P,
-    newestAnalyticsLocation: S
+    analyticsLocations: S,
+    newestAnalyticsLocation: P
   } = (0, c.ZP)(), w = (0, f.sE)(l, {
     targetUserId: t.id,
-    location: S,
-    locations: P
+    location: P,
+    locations: S
   }), M = (0, a.e7)([g.default], () => g.default.getId() === (null == t ? void 0 : t.id)), k = (0, a.e7)([v.Z, b.Z], () => {
     var e;
     let t = v.Z.getChannelId(l);
@@ -211,7 +211,7 @@ function M(e) {
             default: e
           } = await n.e("5454").then(n.bind(n, 854360));
           return n => (0, r.jsx)(e, A(T({}, n), {
-            location: S,
+            location: P,
             guildId: l,
             user: t,
             modReportId: k
@@ -225,7 +225,7 @@ function M(e) {
         color: o.TVs.colors.TEXT_NORMAL.css
       })
     }), (0, r.jsx)(R, {
-      disabled: !x,
+      disabled: !C,
       text: Z.intl.string(Z.t["5MBJ5O"]),
       onClick: () => {
         (0, o.ZDy)(async () => {
@@ -233,7 +233,7 @@ function M(e) {
             default: e
           } = await n.e("43350").then(n.bind(n, 98746));
           return n => (0, r.jsx)(e, A(T({}, n), {
-            location: S,
+            location: P,
             guildId: l,
             user: t,
             modReportId: k
@@ -253,11 +253,11 @@ function M(e) {
         I ? (0, d.q)({
           guildId: i.guildId,
           userId: i.userId,
-          anaylticsLocations: P
+          anaylticsLocations: S
         }) : (0, d.z)({
           guildId: i.guildId,
           userId: i.userId,
-          anaylticsLocations: P,
+          anaylticsLocations: S,
           modReportId: k
         })
       },

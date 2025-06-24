@@ -1,17 +1,17 @@
-/** Chunk was on 49131 **/
+/** Chunk was on 71879 **/
 "use strict";
 n.d(t, {
-  H: () => i
+  H: () => l
 }), n(388685);
 var r = n(73800),
-  l = n(481060);
+  a = n(481060);
 
-function i() {
+function l() {
   let [e, t] = r.useState(!0);
   return {
-    transitions: (0, l.Yzy)(e, {
+    transitions: (0, a.Yzy)(e, {
       keys: e => e ? "shown" : "hidden",
-      config: a,
+      config: i,
       from: {
         opacity: 0
       },
@@ -26,7 +26,7 @@ function i() {
     setVisible: t
   }
 }
-let a = {
+let i = {
   mass: 1,
   tension: 250,
   friction: 18,

@@ -1,7 +1,7 @@
 /** Chunk was on 88622 **/
 n.d(t, {
   default: () => w,
-  y: () => E
+  y: () => P
 }), n(388685);
 var r = n(255367),
   s = n(73800),
@@ -50,20 +50,20 @@ function w(e) {
     questId: n,
     errorHints: o,
     transitionState: w,
-    onClose: E
-  } = e, P = (0, g.sf)(n);
-  null == P && E();
+    onClose: P
+  } = e, E = (0, g.sf)(n);
+  null == E && P();
   let [T, N] = (0, s.useState)(o), A = (0, g.KX)(), k = (0, m.O5)(), R = null == (t = (0, f.WD)()) ? void 0 : t.getId(), B = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), q = (0, j.g2)({
     useReducedMotion: B,
     className: y.colorTransition
-  }), I = T.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(P), L = (0, i.e7)([p.Z], () => p.Z.getState().theme), M = (0, l.wj)(L) ? v.BRd.DARK : v.BRd.LIGHT, {
+  }), I = T.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, h.Bz)(E), L = (0, i.e7)([p.Z], () => p.Z.getState().theme), M = (0, l.wj)(L) ? v.BRd.DARK : v.BRd.LIGHT, {
     startConsoleQuest: V,
     startingConsoleQuest: W
   } = (0, g.GI)({
-    questId: P.id,
+    questId: E.id,
     beforeRequest: () => {
       q.startAnimation(), k({
-        questId: P.id,
+        questId: E.id,
         questContent: x.jn.CONNECTIONS_MODAL,
         questContentCTA: m.jZ.DEFIBRILLATOR
       })
@@ -92,7 +92,7 @@ function w(e) {
           })
         }), (0, r.jsx)(c.olH, {
           className: y.closeBtn,
-          onClick: E
+          onClick: P
         })]
       }), (0, r.jsx)(c.X6q, {
         variant: "heading-xl/bold",
@@ -137,12 +137,12 @@ function w(e) {
           text: _.intl.string(_.t.XF4wuL),
           errors: D ? void 0 : I.map(e => e.message),
           gameTile: D ? (0, r.jsx)(c.ua7, {
-            "aria-label": P.config.messages.gameTitle,
+            "aria-label": E.config.messages.gameTitle,
             text: () => (0, r.jsxs)("div", {
               className: y.tooltip,
               children: [(0, r.jsx)(c.Text, {
                 variant: "text-sm/medium",
-                children: P.config.messages.gameTitle
+                children: E.config.messages.gameTitle
               }), (0, r.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
@@ -153,8 +153,8 @@ function w(e) {
               var t, n;
               return (0, r.jsx)("img", (t = C({}, e), n = n = {
                 className: y.gameTile,
-                alt: P.config.messages.gameTitle,
-                src: (0, b.fh)(P, b.eC.GAME_TILE, M).url
+                alt: E.config.messages.gameTitle,
+                src: (0, b.fh)(E, b.eC.GAME_TILE, M).url
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -173,15 +173,15 @@ function w(e) {
       className: y.footer,
       children: [(0, r.jsx)(c.zxk, {
         size: c.PhG.MIN,
-        onClick: E,
+        onClick: P,
         className: y.footerCloseButton,
         children: _.intl.string(_.t.cpT0Cg)
       }), (0, r.jsx)(c.zxk, {
         look: c.iLD.LINK,
         color: c.Ttl.PRIMARY,
         onClick: () => {
-          E(), (0, h.V$)({
-            quest: P
+          P(), (0, h.V$)({
+            quest: E
           }, {
             content: x.jn.CONNECTIONS_MODAL,
             ctaContent: m.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
@@ -243,7 +243,7 @@ function S(e) {
   })
 }
 
-function E(e) {
+function P(e) {
   (0, c.ZDy)(async () => {
     let {
       default: t

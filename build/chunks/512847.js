@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(430824),
   b = n(131951),
   _ = n(292959),
-  E = n(19780),
-  O = n(944486),
+  O = n(19780),
+  E = n(944486),
   y = n(606304),
   I = n(979651),
   v = n(938475),
@@ -39,8 +39,8 @@ function N(e, t, n, r) {
 }
 
 function T() {
-  return N([b.Z, O.Z], () => ({
-    inVoiceChannel: null != O.Z.getVoiceChannelId(),
+  return N([b.Z, E.Z], () => ({
+    inVoiceChannel: null != E.Z.getVoiceChannelId(),
     selfMute: b.Z.isSelfMute(),
     selfDeaf: b.Z.isSelfDeaf(),
     audioPermissionReady: b.Z.isNativeAudioPermissionReady(),
@@ -59,12 +59,12 @@ function T() {
 }
 
 function P() {
-  return N([g.Z, E.Z, O.Z, s.Z], () => {
-    let e = g.Z.getChannel(O.Z.getVoiceChannelId()),
+  return N([g.Z, O.Z, E.Z, s.Z], () => {
+    let e = g.Z.getChannel(E.Z.getVoiceChannelId()),
       t = null == e ? void 0 : e.type,
       n = null == e ? void 0 : e.getGuildId(),
-      r = E.Z.getWasEverRtcConnected(),
-      i = E.Z.getState();
+      r = O.Z.getWasEverRtcConnected(),
+      i = O.Z.getState();
     return {
       channelType: t,
       guildId: n,
@@ -127,15 +127,15 @@ function x() {
   }), null
 }
 
-function L() {
+function w() {
   return N([I.Z], () => I.Z.userHasBeenMovedVersion, (e, t) => {
     if (e !== t) return "user_moved"
   }), null
 }
 
-function w() {
-  return N([O.Z, I.Z], () => {
-    let e = O.Z.getVoiceChannelId();
+function L() {
+  return N([E.Z, I.Z], () => {
+    let e = E.Z.getVoiceChannelId();
     if (null == e) return d.xO.NONE;
     let t = I.Z.getVoiceStateForChannel(e);
     return (0, d.gf)(t)
@@ -145,8 +145,8 @@ function w() {
 }
 
 function R() {
-  return N([O.Z, h.Z, f.default, I.Z, g.Z], () => {
-    let e, t, n = O.Z.getVoiceChannelId(),
+  return N([E.Z, h.Z, f.default, I.Z, g.Z], () => {
+    let e, t, n = E.Z.getVoiceChannelId(),
       r = f.default.getId(),
       i = [],
       l = null,
@@ -199,9 +199,9 @@ function R() {
 }
 
 function D() {
-  return N([O.Z, a.ZP, f.default], () => {
-    let e = O.Z.getVoiceChannelId(),
-      t = O.Z.getChannelId(),
+  return N([E.Z, a.ZP, f.default], () => {
+    let e = E.Z.getVoiceChannelId(),
+      t = E.Z.getChannelId(),
       n = a.ZP.getConnectedActivityLocation(),
       r = (0, o.p)(n),
       i = f.default.getId(),
@@ -245,6 +245,6 @@ function D() {
 
 function k() {
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(T, {}), (0, r.jsx)(P, {}), (0, r.jsx)(j, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(L, {}), (0, r.jsx)(R, {}), (0, r.jsx)(w, {}), (0, r.jsx)(D, {}), (0, r.jsx)(A, {}), (0, r.jsx)(x, {})]
+    children: [(0, r.jsx)(T, {}), (0, r.jsx)(P, {}), (0, r.jsx)(j, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(w, {}), (0, r.jsx)(R, {}), (0, r.jsx)(L, {}), (0, r.jsx)(D, {}), (0, r.jsx)(A, {}), (0, r.jsx)(x, {})]
   })
 }

@@ -1,122 +1,122 @@
-/** Chunk was on 44011 **/
-t.d(e, {
-  default: () => T
+/** Chunk was on 90488 **/
+t.d(n, {
+  default: () => L
 });
-var l = t(255367);
+var i = t(255367);
 t(73800);
-var i = t(481060),
+var o = t(481060),
   r = t(239091),
-  o = t(883385),
+  a = t(883385),
   c = t(108843),
-  a = t(947440),
-  s = t(100527),
-  d = t(299206),
+  _ = t(947440),
+  d = t(100527),
+  l = t(299206),
   u = t(916069),
-  h = t(895563),
-  Z = t(212205),
-  p = t(478035),
-  x = t(62420),
+  s = t(895563),
+  p = t(212205),
+  m = t(478035),
+  b = t(62420),
   f = t(423589),
-  j = t(398048),
-  b = t(109764),
-  k = t(3689),
-  S = t(323597),
-  C = t(852245),
-  E = t(367722),
-  N = t(461535),
-  P = t(776568),
-  _ = t(218035),
-  v = t(775666),
-  g = t(593589),
-  Q = t(442754),
-  m = t(981631),
-  y = t(388032);
+  h = t(398048),
+  g = t(109764),
+  C = t(3689),
+  x = t(323597),
+  w = t(852245),
+  I = t(367722),
+  y = t(461535),
+  j = t(776568),
+  O = t(218035),
+  B = t(775666),
+  v = t(593589),
+  P = t(442754),
+  k = t(981631),
+  T = t(388032);
 
-function O(n) {
-  for (var e = 1; e < arguments.length; e++) {
-    var t = null != arguments[e] ? arguments[e] : {},
-      l = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(n) {
-      return Object.getOwnPropertyDescriptor(t, n).enumerable
-    }))), l.forEach(function(e) {
-      var l;
-      l = t[e], e in n ? Object.defineProperty(n, e, {
-        value: l,
+function S(e) {
+  for (var n = 1; n < arguments.length; n++) {
+    var t = null != arguments[n] ? arguments[n] : {},
+      i = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(t, e).enumerable
+    }))), i.forEach(function(n) {
+      var i;
+      i = t[n], n in e ? Object.defineProperty(e, n, {
+        value: i,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : n[e] = l
+      }) : e[n] = i
     })
   }
-  return n
+  return e
 }
 
-function w(n) {
+function Z(e) {
   let {
-    channel: e,
+    channel: n,
     onSelect: t
-  } = n, o = (0, N.Z)(e), c = (0, b.Z)(e), s = (0, h.l)(e), u = (0, h.P)(e), j = (0, Z.Z)(e), k = (0, p.Z)(e), S = (0, x.Z)(e), E = (0, P.ZP)(e), g = (0, _.Z)(e), Q = (0, C.Z)(e), m = (0, d.Z)({
-    id: e.id,
-    label: y.intl.string(y.t.gFHI3t)
-  }), O = (0, a.Z)(e), w = (0, v.ZP)(e), A = (0, f.Mn)("ChannelContextFavoritesMenu");
-  return (0, l.jsxs)(i.v2r, {
+  } = e, a = (0, y.Z)(n), c = (0, g.Z)(n), d = (0, s.l)(n), u = (0, s.P)(n), h = (0, p.Z)(n), C = (0, m.Z)(n), x = (0, b.Z)(n), I = (0, j.ZP)(n), v = (0, O.Z)(n), P = (0, w.Z)(n), k = (0, l.Z)({
+    id: n.id,
+    label: T.intl.string(T.t.gFHI3t)
+  }), S = (0, _.Z)(n), Z = (0, B.ZP)(n), E = (0, f.Mn)("ChannelContextFavoritesMenu");
+  return (0, i.jsxs)(o.v2r, {
     navId: "channel-context",
     onClose: r.Zy,
-    "aria-label": y.intl.string(y.t.Xm41aW),
+    "aria-label": T.intl.string(T.t.Xm41aW),
     onSelect: t,
-    children: [(0, l.jsx)(i.kSQ, {
-      children: o
-    }), (0, l.jsxs)(i.kSQ, {
-      children: [k, S, j, s]
-    }), (0, l.jsxs)(i.kSQ, {
-      children: [E, A ? w : g]
-    }), (0, l.jsx)(i.kSQ, {
-      children: Q
-    }), (0, l.jsx)(i.kSQ, {
-      children: O
-    }), (0, l.jsx)(i.kSQ, {
+    children: [(0, i.jsx)(o.kSQ, {
+      children: a
+    }), (0, i.jsxs)(o.kSQ, {
+      children: [C, x, h, d]
+    }), (0, i.jsxs)(o.kSQ, {
+      children: [I, E ? Z : v]
+    }), (0, i.jsx)(o.kSQ, {
+      children: P
+    }), (0, i.jsx)(o.kSQ, {
+      children: S
+    }), (0, i.jsx)(o.kSQ, {
       children: u
-    }), (0, l.jsx)(i.kSQ, {
+    }), (0, i.jsx)(o.kSQ, {
       children: c
-    }), (0, l.jsx)(i.kSQ, {
-      children: m
+    }), (0, i.jsx)(o.kSQ, {
+      children: k
     })]
   })
 }
 
-function A(n) {
+function E(e) {
   let {
-    channel: e,
+    channel: n,
     guild: t,
-    onSelect: o
-  } = n, c = (0, N.Z)(e), s = (0, b.Z)(e), u = (0, h.l)(e), Z = (0, h.P)(e), p = (0, Q.Z)(e), x = (0, P.ZP)(e), m = (0, C.Z)(e), O = (0, E.Z)(e, t), w = (0, j.Z)(e, t), A = (0, k.Z)(e, t), T = (0, S.Z)(e), M = (0, d.Z)({
-    id: e.id,
-    label: y.intl.string(y.t.gFHI3t)
-  }), H = (0, a.Z)(e), I = (0, g.Z)(e, "list_text_channel_context_menu"), L = (0, _.Z)(e), X = (0, v.ZP)(e), q = (0, f.Mn)("ChannelContextMenuNormal");
-  return (0, l.jsxs)(i.v2r, {
+    onSelect: a
+  } = e, c = (0, y.Z)(n), d = (0, g.Z)(n), u = (0, s.l)(n), p = (0, s.P)(n), m = (0, P.Z)(n), b = (0, j.ZP)(n), k = (0, w.Z)(n), S = (0, I.Z)(n, t), Z = (0, h.Z)(n, t), E = (0, C.Z)(n, t), L = (0, x.Z)(n), M = (0, l.Z)({
+    id: n.id,
+    label: T.intl.string(T.t.gFHI3t)
+  }), N = (0, _.Z)(n), A = (0, v.Z)(n, "list_text_channel_context_menu"), W = (0, O.Z)(n), D = (0, B.ZP)(n), U = (0, f.Mn)("ChannelContextMenuNormal");
+  return (0, i.jsxs)(o.v2r, {
     navId: "channel-context",
     onClose: r.Zy,
-    "aria-label": y.intl.string(y.t.Xm41aW),
-    onSelect: o,
-    children: [(0, l.jsxs)(i.kSQ, {
+    "aria-label": T.intl.string(T.t.Xm41aW),
+    onSelect: a,
+    children: [(0, i.jsxs)(o.kSQ, {
       children: [c, u]
-    }, "mark-as-read-or-favorite"), (0, l.jsxs)(i.kSQ, {
-      children: [O, p, s, I]
-    }, "channel-actions"), (0, l.jsxs)(i.kSQ, {
-      children: [x, q ? X : L]
-    }, "notifications"), (0, l.jsxs)(i.kSQ, {
-      children: [m, w, A, T]
-    }, "admin-actions"), (0, l.jsx)(i.kSQ, {
-      children: H
-    }), (0, l.jsx)(i.kSQ, {
-      children: Z
-    }), (0, l.jsx)(i.kSQ, {
+    }, "mark-as-read-or-favorite"), (0, i.jsxs)(o.kSQ, {
+      children: [S, m, d, A]
+    }, "channel-actions"), (0, i.jsxs)(o.kSQ, {
+      children: [b, U ? D : W]
+    }, "notifications"), (0, i.jsxs)(o.kSQ, {
+      children: [k, Z, E, L]
+    }, "admin-actions"), (0, i.jsx)(o.kSQ, {
+      children: N
+    }), (0, i.jsx)(o.kSQ, {
+      children: p
+    }), (0, i.jsx)(o.kSQ, {
       children: M
     }, "developer-actions")]
   })
 }
-let T = (0, c.Z)((0, o.Z)(function(n) {
-  return (0, u.Z)() ? (0, l.jsx)(w, O({}, n)) : (0, l.jsx)(A, O({}, n))
+let L = (0, c.Z)((0, a.Z)(function(e) {
+  return (0, u.Z)() ? (0, i.jsx)(Z, S({}, e)) : (0, i.jsx)(E, S({}, e))
 }, {
-  object: m.qAy.CONTEXT_MENU
-}), [s.Z.CONTEXT_MENU, s.Z.CHANNEL_LIST_TEXT_CHANNEL_MENU])
+  object: k.qAy.CONTEXT_MENU
+}), [d.Z.CONTEXT_MENU, d.Z.CHANNEL_LIST_TEXT_CHANNEL_MENU])

@@ -1,4 +1,4 @@
-/** Chunk was on 98245 **/
+/** Chunk was on 69978 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -8,11 +8,11 @@ n(73800);
 var i = n(120356),
   s = n.n(i),
   o = n(481060),
-  a = n(388032),
-  l = n(622680);
+  l = n(388032),
+  a = n(622680);
 let c = Object.freeze({
-  DEFAULT: l.default,
-  FILLED: l.filled
+  DEFAULT: a.default,
+  FILLED: a.filled
 });
 
 function u(e) {
@@ -23,8 +23,8 @@ function u(e) {
     look: u = c.DEFAULT
   } = e;
   return (0, r.jsx)(o.P3F, {
-    "aria-label": null != i ? i : a.intl.string(a.t.N86XcH),
-    className: s()(l.button, u, t),
+    "aria-label": null != i ? i : l.intl.string(l.t.N86XcH),
+    className: s()(a.button, u, t),
     onClick: n
   })
 }

@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(699516),
   b = n(974042),
   _ = n(451478),
-  E = n(701861),
-  O = n(437314),
+  O = n(701861),
+  E = n(437314),
   y = n(696577),
   I = n(163417),
   v = n(830880),
@@ -63,11 +63,11 @@ function Z(e, t) {
 }
 let x = [];
 
-function L() {
+function w() {
   c.Z.setSection(T.pJs.ADD_FRIEND)
 }
 
-function w() {
+function L() {
   (0, s.ZDy)(async () => {
     let {
       default: e
@@ -80,10 +80,10 @@ function R(e) {
   let {
     section: t,
     showSpamCta: n
-  } = e, l = i.useMemo(() => n ? w : t !== T.pJs.PENDING ? L : void 0, [n, t]);
+  } = e, l = i.useMemo(() => n ? L : t !== T.pJs.PENDING ? w : void 0, [n, t]);
   return (0, r.jsx)("div", {
     className: j.emptyStateContainer,
-    children: (0, r.jsx)(O.Z, {
+    children: (0, r.jsx)(E.Z, {
       type: t,
       onClick: l
     }, t)
@@ -97,7 +97,7 @@ let D = function(e) {
   } = (0, h.ZP)(p.Z.FRIENDS_LIST), {
     rows: l,
     section: c
-  } = (0, o.cj)([b.ZP], () => b.ZP.getState()), L = (0, o.e7)([_.Z], () => _.Z.isFocused()), {
+  } = (0, o.cj)([b.ZP], () => b.ZP.getState()), w = (0, o.e7)([_.Z], () => _.Z.isFocused()), {
     relationshipCount: D,
     hasBlockedOrIgnored: k
   } = (0, o.cj)([m.Z], () => ({
@@ -128,20 +128,20 @@ let D = function(e) {
     switch (c) {
       case T.pJs.PENDING:
         return (0, r.jsx)(y.Z, Z(A({}, n), {
-          isFocused: L
+          isFocused: w
         }), t);
       case T.pJs.SUGGESTIONS:
         return (0, r.jsx)(S.Z, Z(A({}, n), {
-          isFocused: L
+          isFocused: w
         }), t);
       case T.pJs.ONLINE:
       case T.pJs.ALL:
       default:
-        return (0, r.jsx)(E.Z, Z(A({}, n), {
-          isFocused: L
+        return (0, r.jsx)(O.Z, Z(A({}, n), {
+          isFocused: w
         }), t)
     }
-  }, [L, c]), B = i.useCallback(e => {
+  }, [w, c]), B = i.useCallback(e => {
     U(Z(A({}, M), {
       [c]: e
     }))
@@ -172,10 +172,10 @@ let D = function(e) {
     }, [F, c]),
     K = i.useMemo(() => F.filter(e => e.type === T.OGo.PENDING_INCOMING).length, [F]),
     q = c === T.pJs.PENDING && K > 0 && K >= N.yf,
-    Q = i.useCallback(e => {
+    X = i.useCallback(e => {
       e.stopPropagation(), u.Z.confirmClearPendingRelationships(K)
     }, [K]),
-    X = i.useCallback(e => {
+    Q = i.useCallback(e => {
       let n = function(e, t, n) {
         switch (e) {
           case T.pJs.ONLINE:
@@ -210,7 +210,7 @@ let D = function(e) {
           color: s.Ttl.LINK,
           className: j.clearButton,
           size: s.zxk.Sizes.TINY,
-          onClick: Q,
+          onClick: X,
           "aria-label": P.intl.string(P.t.O8k7Oz),
           children: P.intl.string(P.t.O8k7Oz)
         })]
@@ -221,7 +221,7 @@ let D = function(e) {
           title: n
         })
       }, n)
-    }, [Y, c, t, q, Q]);
+    }, [Y, c, t, q, X]);
   if (i.useEffect(() => {
       c === T.pJs.ALL && (0, g.d$)()
     }, [c]), 0 === F.length && "" === M[c]) return (0, r.jsx)(R, {
@@ -243,7 +243,7 @@ let D = function(e) {
       }), (0, r.jsx)(I.Z, {
         rows: Y,
         renderRow: G,
-        renderSection: X,
+        renderSection: Q,
         sectionFilter: c,
         isVirtualizedList: D >= N.nG,
         hasSearchQuery: J,
@@ -251,7 +251,7 @@ let D = function(e) {
           look: s.zxk.Looks.LINK,
           color: j.viewSpamButtonColor,
           className: j.viewSpamButton,
-          onClick: w,
+          onClick: L,
           size: s.PhG.TINY,
           children: (0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
@@ -260,8 +260,8 @@ let D = function(e) {
         }) : null
       }), $ && (0, r.jsx)("div", {
         className: j.emptyStateContainer,
-        children: (0, r.jsx)(O.Z, {
-          type: O.j.SECTION_NO_RESULTS
+        children: (0, r.jsx)(E.Z, {
+          type: E.j.SECTION_NO_RESULTS
         }, c)
       })]
     })

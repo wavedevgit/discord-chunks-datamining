@@ -1,6 +1,6 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
-  K: () => O,
+  K: () => _,
   y: () => b
 });
 var r = n(255367),
@@ -54,7 +54,7 @@ function b(e) {
   })
 }
 
-function O(e) {
+function _(e) {
   let {
     onClosePopout: t
   } = e;

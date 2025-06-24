@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => b
 });
@@ -25,10 +25,10 @@ function b(e) {
     if (!0 !== _.isDM()) return null;
     let e = f.default.getUser(_.getRecipientId());
     return void 0 === e || !0 !== e.bot ? null : e
-  }, [_]), C = (0, i.e7)([d.Z], () => {
+  }, [_]), x = (0, i.e7)([d.Z], () => {
     var e;
     return d.Z.isFetchingProfile(null != (e = null == y ? void 0 : y.id) ? e : m.lds)
-  }), x = (0, o.Z)(C), v = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == y ? void 0 : y.id)), j = (0, i.e7)([d.Z], () => {
+  }), C = (0, o.Z)(x), v = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == y ? void 0 : y.id)), j = (0, i.e7)([d.Z], () => {
     var e;
     return null !== y ? null == (e = d.Z.getUserProfile(null == y ? void 0 : y.id)) ? void 0 : e.application : void 0
   }), O = null != v ? v : null == j ? void 0 : j.id;
@@ -56,8 +56,8 @@ function b(e) {
       allowApplicationState: !0
     }),
     I = E.commands.filter(e => e.type === a.yU.PRIMARY_ENTRY_POINT && e.applicationId === O)[0],
-    P = E.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
-    S = E.loading,
+    S = E.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
+    P = E.loading,
     Z = null == (t = E.descriptors.find(e => {
       var t;
       return (null == (t = e.application) ? void 0 : t.id) === O
@@ -65,15 +65,15 @@ function b(e) {
     N = r.useMemo(() => null != Z ? h.ZP.createFromServer(Z) : void 0, [Z]),
     T = (0, u.q)(null == N ? O : void 0),
     A = null != (n = null != N ? N : T) ? n : void 0,
-    w = null == A || S && 0 === P.length;
+    w = null == A || P && 0 === S.length;
   return {
     application: A,
     isInitialLoading: w,
     primaryEntryPointCommand: I,
-    isProfileFetching: C,
-    wasProfileFetching: null != x ? x : null,
+    isProfileFetching: x,
+    wasProfileFetching: null != C ? C : null,
     applicationId: O,
     channelId: _.id,
-    commands: P
+    commands: S
   }
 }

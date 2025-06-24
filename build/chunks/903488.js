@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 }), n(388685);
 var r, i = n(442837),
   l = n(570140),
@@ -73,7 +73,7 @@ function b(e, t) {
   return f.set(e, r), !0
 }
 
-function E(e) {
+function x(e) {
   let {
     type: t,
     messageId: n,
@@ -134,7 +134,7 @@ class y extends(r = i.ZP.Store) {
   }
 }
 d(y, "displayName", "SearchMessageStore");
-let x = new y(l.Z, {
+let E = new y(l.Z, {
   SEARCH_MESSAGES_START: function(e) {
     e.ids.forEach(e => {
       _(e).handleSearchStart()
@@ -172,7 +172,7 @@ let x = new y(l.Z, {
     let r = (0, o.wi)(n, e.message);
     f.set(t, r)
   },
-  MESSAGE_REACTION_ADD: E,
+  MESSAGE_REACTION_ADD: x,
   MESSAGE_REACTION_ADD_MANY: function(e) {
     let {
       messageId: t,
@@ -180,7 +180,7 @@ let x = new y(l.Z, {
     } = e, r = c.default.getId();
     return b(t, e => e.addReactionBatch(n, r))
   },
-  MESSAGE_REACTION_REMOVE: E,
+  MESSAGE_REACTION_REMOVE: x,
   MESSAGE_REACTION_REMOVE_ALL: function(e) {
     let {
       messageId: t

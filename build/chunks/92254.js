@@ -1,4 +1,4 @@
-/** Chunk was on 94495 **/
+/** Chunk was on 21815 **/
 n.r(e.exports = {
   reactions: "reactions_f8896c",
   icon: "icon_f8896c",

@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => T
 });
@@ -19,15 +19,15 @@ var r = n(255367),
   b = n(621853),
   _ = n(892001),
   y = n(433355),
-  C = n(699516),
-  x = n(594174),
+  x = n(699516),
+  C = n(594174),
   v = n(768581),
   j = n(525541),
   O = n(981631),
   E = n(228168),
   I = n(388032),
-  P = n(882875);
-let S = e => {
+  S = n(882875);
+let P = e => {
     let {
       userId: t,
       channelId: n
@@ -44,10 +44,10 @@ let S = e => {
         o = (0, r.jsx)("img", {
           src: i,
           alt: "",
-          className: P.avatar
+          className: S.avatar
         }, t);
       return a ? o : (0, r.jsx)(u.ZP, {
-        className: P.avatarMask,
+        className: S.avatarMask,
         mask: u.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
         width: 24,
         height: 24,
@@ -60,7 +60,7 @@ let S = e => {
       children: I.intl.string(I.t.zjVh8v)
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: P.avatarContainer,
+        className: S.avatarContainer,
         children: s
       }), (0, r.jsx)(o.P3F, {
         onClick: () => {
@@ -72,7 +72,7 @@ let S = e => {
           })
         },
         children: (0, r.jsx)(o.Text, {
-          className: P.mutualGuilds,
+          className: S.mutualGuilds,
           variant: "text-sm/normal",
           children: I.intl.format(I.t.eE3oen, {
             count: l.length
@@ -87,7 +87,7 @@ let S = e => {
       relationshipType: n,
       userId: i,
       showingBanner: l
-    } = e, a = null == (t = x.default.getUser(i)) ? void 0 : t.bot, c = () => {
+    } = e, a = null == (t = C.default.getUser(i)) ? void 0 : t.bot, c = () => {
       s.Z.addRelationship({
         userId: i,
         context: {
@@ -95,7 +95,7 @@ let S = e => {
         }
       })
     }, u = (0, r.jsx)(o.zxk, {
-      className: P.action,
+      className: S.action,
       size: o.zxk.Sizes.TINY,
       color: o.zxk.Colors.PRIMARY,
       onClick: () => {
@@ -111,7 +111,7 @@ let S = e => {
       case O.OGo.NONE:
         return (0, r.jsxs)(r.Fragment, {
           children: [!a && !l && (0, r.jsx)(o.zxk, {
-            className: P.action,
+            className: S.action,
             size: o.zxk.Sizes.TINY,
             onClick: c,
             children: p
@@ -120,7 +120,7 @@ let S = e => {
       case O.OGo.FRIEND:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.zxk, {
-            className: P.action,
+            className: S.action,
             size: o.zxk.Sizes.TINY,
             onClick: () => {
               s.Z.removeFriend(i, {
@@ -133,7 +133,7 @@ let S = e => {
         });
       case O.OGo.BLOCKED:
         return (0, r.jsx)(o.zxk, {
-          className: P.action,
+          className: S.action,
           size: o.zxk.Sizes.TINY,
           onClick: () => {
             s.Z.unblockUser(i, {
@@ -146,17 +146,17 @@ let S = e => {
       case O.OGo.PENDING_INCOMING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.Text, {
-            className: P.action,
+            className: S.action,
             color: "header-secondary",
             variant: "text-sm/normal",
             children: I.intl.string(I.t.c2v5nJ)
           }), (0, r.jsx)(o.zxk, {
-            className: P.action,
+            className: S.action,
             size: o.zxk.Sizes.TINY,
             onClick: c,
             children: I.intl.string(I.t["+WbSn5"])
           }), (0, r.jsx)(o.zxk, {
-            className: P.action,
+            className: S.action,
             size: o.zxk.Sizes.TINY,
             color: o.zxk.Colors.PRIMARY,
             onClick: () => {
@@ -170,7 +170,7 @@ let S = e => {
       case O.OGo.PENDING_OUTGOING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.zxk, {
-            className: P.action,
+            className: S.action,
             size: o.zxk.Sizes.TINY,
             disabled: !0,
             children: I.intl.string(I.t.xMH6vL)
@@ -198,21 +198,21 @@ let S = e => {
       isOptimisticAccepted: f,
       isOptimisticRejected: m
     } = (0, h.m)({
-      user: x.default.getUser(n),
+      user: C.default.getUser(n),
       onError: l,
       onAcceptSuccess: s,
       onRejectSuccess: a
     }), b = d || p || f || m;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.zxk, {
-        className: P.action,
+        className: S.action,
         size: o.zxk.Sizes.TINY,
         onClick: () => c(t),
         disabled: b,
         submitting: d,
         children: I.intl.string(I.t.Kz8Pws)
       }), (0, r.jsx)(o.zxk, {
-        className: P.action,
+        className: S.action,
         size: o.zxk.Sizes.TINY,
         onClick: () => u(t),
         color: o.zxk.Colors.PRIMARY,
@@ -229,7 +229,7 @@ let S = e => {
       showingBanner: i
     } = e, {
       channelId: o
-    } = (0, f._)(), s = (0, a.e7)([p.Z], () => null != o && p.Z.isSpam(o), [o]), c = (0, a.e7)([C.Z], () => C.Z.getRelationshipType(t), [t]), u = n.id === o, d = !l.tq && !u, h = !!l.tq || u || s, g = s || u ? (0, r.jsxs)(r.Fragment, {
+    } = (0, f._)(), s = (0, a.e7)([p.Z], () => null != o && p.Z.isSpam(o), [o]), c = (0, a.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), u = n.id === o, d = !l.tq && !u, h = !!l.tq || u || s, g = s || u ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(N, {
         channelId: n.id,
         otherUserId: t
@@ -248,17 +248,17 @@ let S = e => {
       })]
     });
     return (0, r.jsxs)("div", {
-      className: h ? P.mobileContainer : P.container,
+      className: h ? S.mobileContainer : S.container,
       children: [(0, r.jsx)("div", {
-        className: P.inline,
-        children: (0, r.jsx)(S, {
+        className: S.inline,
+        children: (0, r.jsx)(P, {
           userId: t,
           channelId: n.id
         })
       }), !h && (0, r.jsx)("div", {
-        className: P.divider
+        className: S.divider
       }), (0, r.jsx)("div", {
-        className: P.inline,
+        className: S.inline,
         children: g
       })]
     })

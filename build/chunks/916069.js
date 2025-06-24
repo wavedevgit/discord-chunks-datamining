@@ -1,11 +1,11 @@
-/** Chunk was on 98350 **/
-n.d(t, {
-  Z: () => a
+/** Chunk was on 68294 **/
+n.d(e, {
+  Z: () => s
 });
 var i = n(442837),
   l = n(914010),
   r = n(981631);
 
-function a() {
+function s() {
   return (0, i.e7)([l.Z], () => l.Z.getGuildId()) === r.I_8
 }

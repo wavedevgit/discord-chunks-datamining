@@ -1,30 +1,30 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 84865 **/
 n.d(t, {
-  y6: () => m
+  y6: () => p
 }), n(388685);
 var r = n(73800),
   i = n(442837),
   l = n(45114),
-  a = n(733427),
-  o = n(455199),
-  s = n(833592),
+  o = n(733427),
+  s = n(455199),
+  a = n(833592),
   c = n(140155),
   u = n(774807),
   d = n(490897);
-let p = e => {
+let h = e => {
     let {
       isFocused: t,
       navigatedAway: n,
-      isDesktop: p,
-      withMentions: m = !1,
+      isDesktop: h,
+      withMentions: p = !1,
       initialPageSize: f
-    } = e, h = (0, i.e7)([u.Z], () => u.Z.shouldReload()), g = r.useRef(!1), [_, b] = r.useState(!1), {
-      initialized: E,
+    } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(!1), [b, _] = r.useState(!1), {
+      initialized: O,
       loading: y,
-      items: x,
-      hasMore: v,
-      cursor: O,
-      errored: C
+      items: v,
+      hasMore: C,
+      cursor: j,
+      errored: E
     } = (0, i.cj)([c.Z], () => ({
       initialized: c.Z.initialized,
       loading: c.Z.loading,
@@ -33,59 +33,59 @@ let p = e => {
       cursor: c.Z.cursor,
       errored: c.Z.errored
     })), {
-      roleFilter: j,
-      everyoneFilter: S
-    } = (0, i.cj)([o.Z], () => ({
-      everyoneFilter: o.Z.everyoneFilter,
-      roleFilter: o.Z.roleFilter
+      roleFilter: S,
+      everyoneFilter: x
+    } = (0, i.cj)([s.Z], () => ({
+      everyoneFilter: s.Z.everyoneFilter,
+      roleFilter: s.Z.roleFilter
     }));
-    r.useEffect(() => ((0, s.Vk)(!0), () => (0, s.Vk)(!1)), []), r.useEffect(() => {
-      E && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
-    }, [t, E]);
-    let I = (0, a.Z)();
+    r.useEffect(() => ((0, a.Vk)(!0), () => (0, a.Vk)(!1)), []), r.useEffect(() => {
+      O && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
+    }, [t, O]);
+    let I = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !I() && (C || x.length > 100) && (0, s.jF)() : n && x.length > 100 && (0, s.jF)()
-    }, [n, x, p, I, C]), r.useEffect(() => {
-      let e = h && t;
-      (!E || e) && (0, s.jk)({
-        limit: null != f ? f : m ? 8 : 20,
-        with_mentions: m,
-        roles_filter: j,
-        everyone_filter: S
+      h ? !I() && (E || v.length > 100) && (0, a.jF)() : n && v.length > 100 && (0, a.jF)()
+    }, [n, v, h, I, E]), r.useEffect(() => {
+      let e = g && t;
+      (!O || e) && (0, a.jk)({
+        limit: null != f ? f : p ? 8 : 20,
+        with_mentions: p,
+        roles_filter: S,
+        everyone_filter: x
       })
-    }, [E, h, t, m, j, S, f]);
-    let N = r.useCallback(async e => {
-      !g.current && E && v && null != O && (e || !C) && (g.current = !0, b(!0), await (0, s.jk)({
-        after: O,
-        with_mentions: m,
-        roles_filter: j,
-        everyone_filter: S,
-        limit: m ? 8 : 20
+    }, [O, g, t, p, S, x, f]);
+    let P = r.useCallback(async e => {
+      !m.current && O && C && null != j && (e || !E) && (m.current = !0, _(!0), await (0, a.jk)({
+        after: j,
+        with_mentions: p,
+        roles_filter: S,
+        everyone_filter: x,
+        limit: p ? 8 : 20
       }, () => {
-        g.current = !1
-      }), b(!1))
-    }, [E, v, O, C, m, j, S]);
+        m.current = !1
+      }), _(!1))
+    }, [O, C, j, E, p, S, x]);
     return {
-      initialized: E,
+      initialized: O,
       loading: y,
-      items: x,
-      hasMore: v,
-      loadMore: N,
-      loadingMore: _,
+      items: v,
+      hasMore: C,
+      loadMore: P,
+      loadingMore: b,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = !0)
       },
-      errored: C
+      errored: E
     }
   },
-  m = () => {
+  p = () => {
     let {
       initialized: e,
       loading: t,
       items: n,
       hasMore: r,
       loadMore: i
-    } = p({
+    } = h({
       isFocused: !0,
       isDesktop: !0
     });

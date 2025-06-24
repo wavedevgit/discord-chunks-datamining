@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,7 +19,7 @@ var r = n(255367),
   _ = n(474936),
   b = n(282940);
 
-function E(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
+let E = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
   v = e => {
     null != e && s.ZP.trackWithMetadata(g.rMx.EXPRESSION_TOOLTIP_VIEWED, {
       type: _.cd.STICKER_IN_MESSAGE_HOVER,
@@ -60,23 +60,23 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
       is_custom: (0, m.z)(e.type)
     })
   },
-  O = e => {
+  C = e => {
     let {
       renderableSticker: t,
       channel: n,
       isInteracting: l
-    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [g, _] = i.useState(String(Date.now())), [O] = (0, p.XW)(t, l), {
-      analyticsLocations: C
+    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [g, _] = i.useState(String(Date.now())), [C] = (0, p.XW)(t, l), {
+      analyticsLocations: O
     } = (0, c.ZP)(o.Z.STICKER_MESSAGE), j = (0, r.jsxs)("span", {
       className: b.stickerName,
       children: [(0, r.jsx)(a.B7q, {
         size: "xs",
         color: "currentColor",
         className: b.stickerIcon
-      }), (null != O ? O : t).name]
+      }), (null != C ? C : t).name]
     });
     return (0, r.jsx)(c.Gt, {
-      value: C,
+      value: O,
       children: (0, r.jsx)(a.yRy, {
         align: "center",
         animation: a.yRy.Animation.TRANSLATE,
@@ -84,7 +84,7 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
         onRequestClose: () => {
           m(!0)
         },
-        renderPopout: e => (0, r.jsx)(h.Z, y(E({}, e), {
+        renderPopout: e => (0, r.jsx)(h.Z, y(x({}, e), {
           renderableSticker: t,
           channel: n,
           refreshPositionKey: () => _(String(Date.now()))
@@ -94,14 +94,14 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
           let {
             onClick: n
           } = e;
-          return (0, r.jsx)(a.ua7, y(E({}, u.b_), {
+          return (0, r.jsx)(a.ua7, y(x({}, u.b_), {
             shouldShow: d,
             text: (0, u.Y)(j),
             "aria-label": !1,
             onTooltipShow: () => {
-              v(O)
+              v(C)
             },
-            children: e => (0, r.jsx)(a.P3F, y(E({}, e), {
+            children: e => (0, r.jsx)(a.P3F, y(x({}, e), {
               innerRef: s,
               className: b.clickableSticker,
               onClick: e => {
@@ -110,8 +110,8 @@ let x = (0, d.Mg)(l.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
               tag: "span",
               children: (0, r.jsx)(f.Z, {
                 isInteracting: l,
-                size: x,
-                sticker: null != O ? O : t
+                size: E,
+                sticker: null != C ? C : t
               })
             }))
           }))

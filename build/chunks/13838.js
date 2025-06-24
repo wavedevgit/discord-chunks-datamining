@@ -18,14 +18,14 @@ var r = n(392711),
   m = n(979651),
   b = n(996106),
   _ = n(914946),
-  E = n(238679),
-  O = n(452426),
+  O = n(238679),
+  E = n(452426),
   y = n(295424),
   I = n(222263),
   v = n(863141),
   C = n(186901),
   S = n(981631);
-let N = e => (0, O.Z)(e).required().keys({
+let N = e => (0, E.Z)(e).required().keys({
   channel_id: e.string().required()
 });
 
@@ -44,7 +44,7 @@ function T(e) {
     errorCode: S.lTL.INVALID_CHANNEL
   }, "Invalid nsfw channel id: ".concat(i.id))
 }
-let P = e => (0, O.Z)(e).keys({
+let P = e => (0, E.Z)(e).keys({
   channel_id: e.string().allow(null)
 });
 
@@ -61,7 +61,7 @@ function j(e) {
 let A = {
   [S.zMe.GUILD_STATUS]: {
     scope: l.x.RPC,
-    validation: e => (0, O.Z)(e).required().keys({
+    validation: e => (0, E.Z)(e).required().keys({
       guild_id: e.string().required()
     }),
     handler(e) {
@@ -96,7 +96,7 @@ let A = {
     scope: {
       [C.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ]
     },
-    validation: e => (0, O.Z)(e).required().keys({
+    validation: e => (0, E.Z)(e).required().keys({
       channel_id: e.string().required()
     }),
     handler(e) {
@@ -129,7 +129,7 @@ let A = {
     scope: {
       [C.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ]
     },
-    validation: e => (0, O.Z)(e).required().keys({
+    validation: e => (0, E.Z)(e).required().keys({
       channel_id: e.string().required()
     }),
     handler(e) {
@@ -162,7 +162,7 @@ let A = {
     scope: {
       [C.Gp.ANY]: [l.x.RPC, l.x.RPC_VOICE_READ]
     },
-    validation: e => (0, O.Z)(e).required().keys({
+    validation: e => (0, E.Z)(e).required().keys({
       channel_id: e.string().required()
     }),
     handler(e) {
@@ -289,7 +289,7 @@ let A = {
     },
     handler() {}
   },
-  [S.zMe.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE]: E.gQ,
+  [S.zMe.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE]: O.gQ,
   [S.zMe.THERMAL_STATE_UPDATE]: {
     scope: {
       [C.Gp.ANY]: [C.wE]

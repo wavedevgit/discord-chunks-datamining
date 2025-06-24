@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => m
+  Z: () => h
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -13,23 +13,23 @@ var r = n(255367),
   d = n(388032),
   p = n(950127);
 
-function m(e) {
+function h(e) {
   let {
     inboxIconRef: t,
     recentsPopoutShown: n
-  } = e, [m, f] = i.useState(!1), h = (0, l.e7)([s.Z], () => s.Z.getLastUnseenInvite()), g = (0, l.e7)([u.default], () => null != h ? u.default.getUser(h.inviter_id) : null);
+  } = e, [h, f] = i.useState(!1), g = (0, l.e7)([s.Z], () => s.Z.getLastUnseenInvite()), m = (0, l.e7)([u.default], () => null != g ? u.default.getUser(g.inviter_id) : null);
   return (i.useEffect(() => {
     n && f(!1)
   }, [n]), i.useEffect(() => {
-    if (null == h) return void f(!1);
-    (0, c.Br)(h), f(!0);
+    if (null == g) return void f(!1);
+    (0, c.Br)(g), f(!0);
     let e = new a.V7;
     return e.start(5e3, () => {
       f(!1)
     }), () => {
       e.stop()
     }
-  }, [h]), m && null != h && null != g) ? (0, r.jsxs)(o.Cys, {
+  }, [g]), h && null != g && null != m) ? (0, r.jsxs)(o.Cys, {
     tooltipClassName: p.tooltip,
     tooltipContentClassName: p.tooltipContent,
     targetElementRef: t,
@@ -39,14 +39,14 @@ function m(e) {
       className: p.iconContainer,
       children: [(0, r.jsx)("img", {
         className: p.inviteImage,
-        src: h.application_asset,
+        src: g.application_asset,
         alt: "Game Invite"
       }), (0, r.jsx)("div", {
         className: p.offsetAvatarContainer,
         children: (0, r.jsx)(o.qEK, {
           "aria-label": "Inviter",
           className: p.inviterImage,
-          src: g.getAvatarURL(null, 24),
+          src: m.getAvatarURL(null, 24),
           size: o.EFr.SIZE_24
         })
       })]
@@ -56,12 +56,12 @@ function m(e) {
         className: p.__invalid_title,
         variant: "text-xs/semibold",
         children: d.intl.format(d.t["8gTZ8v"], {
-          username: g.username
+          username: m.username
         })
       }), (0, r.jsx)(o.Text, {
         className: p.__invalid_subtitle,
         variant: "text-xxs/medium",
-        children: h.application_name
+        children: g.application_name
       })]
     })]
   }) : null

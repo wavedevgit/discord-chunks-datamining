@@ -1,6 +1,6 @@
-/** Chunk was on 86797 **/
-n.d(e, {
-  Z: () => b
+/** Chunk was on 78650 **/
+n.d(t, {
+  Z: () => h
 }), n(388685);
 var i = n(255367);
 n(73800);
@@ -8,43 +8,43 @@ var r = n(913527),
   l = n.n(r),
   a = n(442837),
   o = n(481060),
-  c = n(777861),
-  s = n(569471),
+  s = n(777861),
+  d = n(569471),
   u = n(346479),
-  d = n(776568),
+  c = n(776568),
   f = n(388032);
 
-function b(t) {
-  let [e, n, r] = (0, a.Wu)([s.Z], () => [s.Z.isMuted(t.id), s.Z.getMuteConfig(t.id), s.Z.hasJoined(t.id)]), b = (0, c.U)(n);
+function h(e) {
+  let [t, n, r] = (0, a.Wu)([d.Z], () => [d.Z.isMuted(e.id), d.Z.getMuteConfig(e.id), d.Z.hasJoined(e.id)]), h = (0, s.U)(n);
 
-  function h(e) {
-    u.Z.setNotificationSettings(t, {
-      muted: e
+  function g(t) {
+    u.Z.setNotificationSettings(e, {
+      muted: t
     })
   }
-  return r ? e ? (0, i.jsx)(o.sNh, {
+  return r ? t ? (0, i.jsx)(o.sNh, {
     id: "unmute-channel",
-    label: t.isForumPost() ? f.intl.string(f.t["0JQfsL"]) : f.intl.string(f.t["Cq/TzM"]),
-    subtext: b,
-    action: () => h(!1)
+    label: e.isForumPost() ? f.intl.string(f.t["0JQfsL"]) : f.intl.string(f.t["Cq/TzM"]),
+    subtext: h,
+    action: () => g(!1)
   }) : (0, i.jsx)(o.sNh, {
     id: "mute-channel",
-    label: t.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
-    action: () => h(!0),
-    children: (0, d.k)().map(e => {
+    label: e.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
+    action: () => g(!0),
+    children: (0, c.k)().map(t => {
       let {
         value: n,
         label: r
-      } = e;
+      } = t;
       return (0, i.jsx)(o.sNh, {
         id: "".concat(n),
         label: r,
-        action: () => (function(e) {
-          let n = e > 0 ? l()().add(e, "second").toISOString() : null;
-          u.Z.setNotificationSettings(t, {
+        action: () => (function(t) {
+          let n = t > 0 ? l()().add(t, "second").toISOString() : null;
+          u.Z.setNotificationSettings(e, {
             muted: !0,
             mute_config: {
-              selected_time_window: e,
+              selected_time_window: t,
               end_time: n
             }
           })
@@ -53,7 +53,7 @@ function b(t) {
     })
   }) : (0, i.jsx)(o.sNh, {
     id: "mute-disabled",
-    label: t.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
+    label: e.isForumPost() ? f.intl.string(f.t["nP+YkZ"]) : f.intl.string(f.t.bUUd8v),
     disabled: !0
   })
 }

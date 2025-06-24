@@ -18,8 +18,8 @@ var r = n(913527),
   m = n(271383),
   b = n(430824),
   _ = n(131951),
-  E = n(292959),
-  O = n(699516),
+  O = n(292959),
+  E = n(699516),
   y = n(944486),
   I = n(9156),
   v = n(594174),
@@ -32,12 +32,12 @@ var r = n(913527),
 let A = [],
   Z = null,
   x = null,
-  L = null,
-  w = /\|\|([\s\S]+?)\|\|/g;
+  w = null,
+  L = /\|\|([\s\S]+?)\|\|/g;
 
 function R(e, t, n, r) {
   let l = b.Z.getGuild(n),
-    a = e.replace(w, j.intl.string(j.t["F+x38P"])).replace(/<@!?(\d+)>/g, (e, t) => {
+    a = e.replace(L, j.intl.string(j.t["F+x38P"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = v.default.getUser(t);
       return null == i ? e : null != (r = m.ZP.getNick(n, i.id)) ? r : C.ZP.getName(i)
@@ -46,7 +46,7 @@ function R(e, t, n, r) {
       return null != n && null != n.name ? n.name : j.intl.string(j.t.dRcLAw)
     }).replace(/<#(\d+)>/g, (e, t) => {
       let n = g.Z.getChannel(t);
-      return null == n ? e : (0, s.F6)(n, v.default, O.Z)
+      return null == n ? e : (0, s.F6)(n, v.default, E.Z)
     }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(j.intl.string(j.t.sMOuub), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
       let r = c.Qh[n],
         l = 1e3 * parseInt(t, 10),
@@ -66,11 +66,11 @@ function R(e, t, n, r) {
 function D() {
   if (!o.Zh) return !1;
   let e = d.default.locale;
-  if (null == L) {
+  if (null == w) {
     var t;
-    L = null == (t = window.speechSynthesis) ? void 0 : t.getVoices()
+    w = null == (t = window.speechSynthesis) ? void 0 : t.getVoices()
   }
-  let n = L.filter(t => t.lang === e || t.lang.slice(0, e.length) === e);
+  let n = w.filter(t => t.lang === e || t.lang.slice(0, e.length) === e);
   x = n.length > 0 ? n[0] : null
 }
 async function k(e, t, n, r, i) {
@@ -122,9 +122,9 @@ function V(e) {
     b = f.ZP.getCurrentSidebarChannelId(d),
     v = o === d || o === b,
     S = p.OW.getSetting() && s.tts && v,
-    N = E.Z.getTTSType(),
+    N = O.Z.getTTSType(),
     j = (null == (t = s.author) ? void 0 : t.id) !== h.default.getId() && (N === P.PrB.ALL_CHANNELS || N === P.PrB.SELECTED_CHANNEL && v);
-  if ((S || j) && !O.Z.isBlockedOrIgnoredForMessage(s)) {
+  if ((S || j) && !E.Z.isBlockedOrIgnoredForMessage(s)) {
     if (A.indexOf(s.id) >= 0) return !1;
     A.unshift(s.id) > 10 && A.pop();
     let e = u.getGuildId();

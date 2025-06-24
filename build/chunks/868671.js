@@ -1,7 +1,7 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   H: () => v,
-  T: () => x
+  T: () => C
 }), n(388685);
 var r = n(73800),
   i = n(442837),
@@ -20,28 +20,28 @@ var r = n(73800),
   b = n(206583),
   _ = n(809017),
   y = n(981631),
-  C = n(388032);
-let x = 0;
+  x = n(388032);
+let C = 0;
 
 function v(e) {
   let {
     memberStoreProps: {
       groups: t,
       rows: n,
-      version: x
+      version: C
     },
     channelId: v,
     guildId: j
   } = e, [O, E] = r.useState(!1), {
     requestId: I,
-    entries: P,
-    impressionCappedEntryIds: S,
+    entries: S,
+    impressionCappedEntryIds: P,
     hasLeaderboardEntry: Z
-  } = (0, m.Z)(v), N = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(j), [j]), R = (0, h.E)(w), M = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [k, L, D, U] = r.useMemo(() => {
+  } = (0, m.Z)(v), N = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(j), [j]), R = (0, h.E)(w), M = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [k, D, L, U] = r.useMemo(() => {
     let e;
-    if (null == P || 0 === P.length || null == I || !M) return [t, n, x];
-    let r = O ? P.length : Z ? 4 : 3,
-      i = P.slice(0, r);
+    if (null == S || 0 === S.length || null == I || !M) return [t, n, C];
+    let r = O ? S.length : Z ? 4 : 3,
+      i = S.slice(0, r);
     e = N ? [{
       type: a.so.HIDDEN_CONTENT_INVENTORY
     }] : i.map(e => ({
@@ -55,7 +55,7 @@ function v(e) {
       key: _.G,
       count: e.length,
       index: n.length,
-      title: C.intl.string(C.t["6gwSFR"]),
+      title: x.intl.string(x.t["6gwSFR"]),
       onToggleExpand: () => {
         E(e => {
           let t = !e;
@@ -67,15 +67,15 @@ function v(e) {
         })
       },
       expanded: O,
-      expandedCount: P.length,
+      expandedCount: S.length,
       feedHeight: e.map(g.iZ).reduce((e, t) => e + t, 0)
     };
     return [
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [v, P, O, t, j, I, n, x, N, M, Z]), B = r.useRef(0), F = r.useRef(P), G = r.useRef(void 0), H = r.useRef({
-    impressionCappedEntryIds: S
+  }, [v, S, O, t, j, I, n, C, N, M, Z]), B = r.useRef(0), F = r.useRef(S), G = r.useRef(void 0), H = r.useRef({
+    impressionCappedEntryIds: P
   }), V = r.useCallback(e => {
     var t;
     let n = Math.floor(e / g.YN),
@@ -83,12 +83,12 @@ function v(e) {
     B.current = Math.max(B.current, r)
   }, [U]);
   return r.useEffect(() => {
-    F.current = P
-  }, [P]), r.useEffect(() => {
+    F.current = S
+  }, [S]), r.useEffect(() => {
     H.current = {
-      impressionCappedEntryIds: S
+      impressionCappedEntryIds: P
     }
-  }, [S]), r.useEffect(() => (B.current = 0, G.current = Date.now(), () => {
+  }, [P]), r.useEffect(() => (B.current = 0, G.current = Date.now(), () => {
     var e, t;
     if (null == I || null == G.current || Date.now() - G.current < 3e3) return;
     let n = null != (t = null == (e = F.current) ? void 0 : e.map(e => e.id)) ? t : [],
@@ -108,8 +108,8 @@ function v(e) {
     }))
   }), [I, v, j, N, T, M]), {
     groups: k,
-    rows: L,
-    version: D,
+    rows: D,
+    version: L,
     updateMaxRowSeen: V
   }
 }

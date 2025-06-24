@@ -1,13 +1,13 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 84865 **/
 n.d(t, {
-  c: () => o
+  c: () => s
 }), n(388685), n(539854);
 var r = n(73800),
   i = n(835473),
   l = n(497089);
-let a = new Set([l.O7.INCOMING_GAME_FRIEND_REQUESTS, l.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, l.O7.INCOMING_FRIEND_REQUESTS, l.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED]);
+let o = new Set([l.O7.INCOMING_GAME_FRIEND_REQUESTS, l.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, l.O7.INCOMING_FRIEND_REQUESTS, l.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED]);
 
-function o(e) {
+function s(e) {
   let t = r.useMemo(() => {
     let t = new Set,
       n = [];
@@ -16,7 +16,7 @@ function o(e) {
         applicationId: r,
         type: i
       } = e;
-      a.has(i) && (null == r || t.has(r) || (t.add(r), n.push(r)))
+      o.has(i) && (null == r || t.has(r) || (t.add(r), n.push(r)))
     }), n
   }, [e]);
   return (0, i.Z)(t)

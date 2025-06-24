@@ -36,8 +36,8 @@ var i, r = n(255367),
   L = n(695676),
   R = n(176412),
   w = n(226026),
-  Z = n(570949),
-  k = n(753972),
+  k = n(570949),
+  Z = n(753972),
   M = n(981631),
   D = n(217702),
   U = n(388032),
@@ -146,7 +146,7 @@ function Y(e) {
   } = e, b = l.useCallback(e => {
     if ((0, T.BQ)(t)) {
       let n = t instanceof P.ZP ? t : P.ZP.createFromServer(t);
-      (0, u.vq)(e, e => (0, r.jsx)(Z.Z, F({
+      (0, u.vq)(e, e => (0, r.jsx)(k.Z, F({
         application: n
       }, e)))
     }
@@ -213,7 +213,7 @@ function X(e) {
       return (0, r.jsxs)("div", z(F({
         className: a()(B.iconContainer, n)
       }, t), {
-        children: [(0, r.jsx)(k.Z, {
+        children: [(0, r.jsx)(Z.Z, {
           src: c,
           className: B.iconCard,
           "aria-hidden": !0,
@@ -282,7 +282,7 @@ function Q(e) {
       className: a()(B.appDetailsContainer, {
         [B.appDetailsRowContainer]: "row" === n
       }),
-      children: [(0, r.jsx)(k.Z, {
+      children: [(0, r.jsx)(Z.Z, {
         src: b,
         className: a()(B.icon, {
           [B.rowIcon]: "row" === n

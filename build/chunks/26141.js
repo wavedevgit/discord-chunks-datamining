@@ -1,17 +1,17 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => a
+  Z: () => i
 }), n(388685);
 var r = n(255367),
   s = n(73800),
   o = n(115092);
 
-function a(e) {
+function i(e) {
   let {
     sources: t,
     interval: n,
-    isPaused: a,
-    onLoopEnd: i,
+    isPaused: i,
+    onLoopEnd: a,
     className: c,
     imageRef: l
   } = e, [u, d] = (0, s.useState)(0);
@@ -19,10 +19,10 @@ function a(e) {
     d(0)
   }, [t]), (0, o.Z)({
     onInterval: () => {
-      u === t.length - 1 ? (null == i || i(), d(0)) : d(u + 1)
+      u === t.length - 1 ? (null == a || a(), d(0)) : d(u + 1)
     },
     interval: n,
-    isPaused: a
+    isPaused: i
   }), (0, r.jsx)("img", {
     ref: l,
     className: c,

@@ -40,6 +40,5 @@ e.exports = {
   noScrollbar: "noScrollbar__3f413",
   multiSelectCheckbox: "multiSelectCheckbox__3f413",
   unchecked: "unchecked__3f413",
-  checked: "checked__3f413",
-  multiSelectCheck: "multiSelectCheck__3f413"
+  checked: "checked__3f413"
 }

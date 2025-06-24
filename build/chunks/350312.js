@@ -13,7 +13,7 @@ var r = n(255367),
   d = n(602667),
   m = n(604142);
 
-function p(e) {
+function f(e) {
   let {
     asset: t
   } = e;
@@ -24,7 +24,7 @@ function p(e) {
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     quest: t,
     asset: n
@@ -90,15 +90,15 @@ function b(e) {
     className: a
   } = e, [c, u] = l.useState(!1), d = () => {
     u(!0)
-  }, p = () => {
+  }, f = () => {
     u(!1)
   };
   return (0, r.jsxs)(s.P3F, {
     className: i()(m.endScreenCtaBtn, m.accentOnHover, a),
     onMouseEnter: d,
-    onMouseLeave: p,
+    onMouseLeave: f,
     onFocus: d,
-    onBlur: p,
+    onBlur: f,
     onClick: o,
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-md/semibold",
@@ -120,13 +120,13 @@ let E = function(e) {
     onCTAClick: s
   } = e, c = l.useMemo(() => (0, u.z0)(t, a.X.WATCH_VIDEO, u.n1.VIDEO, u.O.THUMBNAIL), [t]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(p, {
+    children: [(0, r.jsx)(f, {
       asset: c
     }), (0, r.jsx)("div", {
       className: m.endScreenOverlay
     }), (0, r.jsxs)("div", {
       className: m.endScreenContainer,
-      children: [(0, r.jsx)(f, {
+      children: [(0, r.jsx)(p, {
         quest: t,
         asset: c
       }), (0, r.jsx)(v, {

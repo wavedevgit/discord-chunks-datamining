@@ -1,6 +1,6 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
-  Z: () => Q
+  Z: () => X
 }), n(415506), n(388685), n(35282), n(290780);
 var r, i = n(255367),
   l = n(73800),
@@ -16,17 +16,17 @@ var r, i = n(255367),
   g = n(815372),
   m = n(14429),
   b = n(576855),
-  O = n(313201),
-  y = n(991346),
-  _ = n(592125),
+  _ = n(313201),
+  O = n(991346),
+  y = n(592125),
   v = n(888369),
   C = n(430824),
   j = n(306680),
-  S = n(944486),
-  x = n(938475),
-  E = n(483360),
-  P = n(585483),
-  I = n(63063),
+  E = n(944486),
+  S = n(938475),
+  x = n(483360),
+  I = n(585483),
+  P = n(63063),
   N = n(51596),
   w = n(823385),
   Z = n(415795),
@@ -81,12 +81,12 @@ let G = {
     }), (0, i.jsx)("div", {
       className: L.emptyStateCTA,
       children: (0, i.jsx)(u.eee, {
-        href: I.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL),
+        href: P.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL),
         children: D.intl.string(D.t["4iPfEB"])
       })
     })]
   });
-class V extends(r = l.Component) {
+class F extends(r = l.Component) {
   render() {
     let e = C.Z.getGuild(this.props.channel.guild_id);
     return (0, i.jsx)(Z.$W, U(k({}, this.props), {
@@ -97,10 +97,10 @@ class V extends(r = l.Component) {
     }))
   }
 }
-M(V, "defaultProps", {
+M(F, "defaultProps", {
   unread: !1
 });
-let H = c.ZP.connectStores([j.ZP, _.Z], e => {
+let V = c.ZP.connectStores([j.ZP, y.Z], e => {
     let {
       channel: t
     } = e;
@@ -108,18 +108,18 @@ let H = c.ZP.connectStores([j.ZP, _.Z], e => {
       unread: j.ZP.hasUnread(t.id),
       mentions: j.ZP.getMentionCount(t.id),
       isMentionLowImportance: j.ZP.getIsMentionLowImportance(t.id),
-      category: _.Z.getChannel(t.parent_id)
+      category: y.Z.getChannel(t.parent_id)
     }
-  })(V),
-  F = c.ZP.connectStores([x.ZP], e => {
+  })(F),
+  H = c.ZP.connectStores([S.ZP], e => {
     let {
       channel: t
     } = e;
     if (null == t.guild_id) throw Error("ConnectedVoiceChannel - somehow we got a voice channel with no guild_id...");
     return {
-      voiceStates: x.ZP.getVoiceStates(t.guild_id)[t.id]
+      voiceStates: S.ZP.getVoiceStates(t.guild_id)[t.id]
     }
-  })(V),
+  })(F),
   z = c.ZP.connectStores([v.default], e => {
     let {
       guild: t
@@ -136,10 +136,10 @@ let H = c.ZP.connectStores([j.ZP, _.Z], e => {
       mentions: j.ZP.getMentionCount(t.id)
     }
   })(Z.PZ),
-  K = c.ZP.connectStores([_.Z, j.ZP], e => {
+  K = c.ZP.connectStores([y.Z, j.ZP], e => {
     let {
       user: t
-    } = e, n = _.Z.getDMFromUserId(t.id);
+    } = e, n = y.Z.getDMFromUserId(t.id);
     return {
       mentions: null != n ? j.ZP.getMentionCount(n) : 0
     }
@@ -237,7 +237,7 @@ class q extends l.PureComponent {
     })
   }
   focusNode(e) {
-    P.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
+    I.S.dispatch(R.CkL.QUICKSWITCHER_RESULT_FOCUS, {
       node: e
     })
   }
@@ -255,7 +255,7 @@ class q extends l.PureComponent {
         textChannelSymbolHook: (e, t) => Y(t, f.xQ.TEXT_CHANNEL, D.intl.string(D.t.wrwhub)),
         voiceChannelSymbolHook: (e, t) => Y(t, f.xQ.VOICE_CHANNEL, D.intl.string(D.t["jz+hJi"])),
         guildSymbolHook: (e, t) => Y(t, f.xQ.GUILD, D.intl.string(D.t.WuwCWl)),
-        helpdeskArticle: I.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL)
+        helpdeskArticle: P.Z.getArticleURL(R.BhN.QUICK_SWITCHER_TUTORIAL)
       })
     })
   }
@@ -286,7 +286,7 @@ class q extends l.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "scrollerRef", l.createRef()), M(this, "inputRef", l.createRef()), M(this, "_listId", (0, O.hQ)()), M(this, "state", {
+    super(...e), M(this, "scrollerRef", l.createRef()), M(this, "inputRef", l.createRef()), M(this, "_listId", (0, _.hQ)()), M(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: !0
     }), M(this, "handleInputChange", () => {
@@ -392,7 +392,7 @@ class q extends l.PureComponent {
             } = await Promise.all([n.e("79695"), n.e("53912"), n.e("2016")]).then(n.bind(n, 354741));
             return n => (0, i.jsx)(e, U(k({}, n), {
               channel: t.record,
-              selected: S.Z.getChannelId() === t.record.id,
+              selected: E.Z.getChannelId() === t.record.id,
               onSelect: N.Cp
             }))
           });
@@ -471,7 +471,7 @@ class q extends l.PureComponent {
             children: n.record.text
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.TEXT_CHANNEL:
-          return (0, i.jsx)(H, {
+          return (0, i.jsx)(V, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -482,7 +482,7 @@ class q extends l.PureComponent {
             score: l ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
         case f.h8.VOICE_CHANNEL:
-          return (0, i.jsx)(F, {
+          return (0, i.jsx)(H, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -568,9 +568,9 @@ class q extends l.PureComponent {
   }
 }
 
-function Q(e) {
+function X(e) {
   let t = (0, c.cj)([w.Z], () => w.Z.getProps()),
-    n = (0, y.Pt)(),
+    n = (0, O.Pt)(),
     r = A.Z.useExperiment({
       location: "QuickSwitcher"
     }).enabled,
@@ -589,6 +589,6 @@ function Q(e) {
       title: D.intl.string(D.t["3D5yo6"]),
       searchableTitles: [D.intl.string(D.t["3D5yo6"])],
       path: R.Z5c.SETTINGS("account")
-    }), (0, E.gF)(e)
+    }), (0, x.gF)(e)
   }, [o, r]), (0, i.jsx)(q, k({}, t, e))
 }

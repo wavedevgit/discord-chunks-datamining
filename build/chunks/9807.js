@@ -14,8 +14,8 @@ var r, a = n(255367),
   m = n(124347),
   h = n(80966),
   g = n(524444),
-  _ = n(843445),
-  f = n(981631),
+  f = n(843445),
+  _ = n(981631),
   b = n(388032),
   x = n(365664);
 
@@ -88,11 +88,11 @@ let I = e => {
       className: s()(n, t)
     }))
   },
-  P = {
+  S = {
     width: 1280,
     height: 720
   },
-  S = {
+  P = {
     width: 640,
     height: 360
   },
@@ -106,11 +106,11 @@ let I = e => {
       isMuted: m,
       autoPlay: h
     } = e;
-    if (i.type === f.s9s.YOUTUBE_VIDEO) t = C({
-      url: (0, f.n8r)(i.youtubeVideoId)
-    }, P), n = C({
-      url: "".concat((0, f.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
-    }, S), r = u.pn.YOUTUBE;
+    if (i.type === _.s9s.YOUTUBE_VIDEO) t = C({
+      url: (0, _.n8r)(i.youtubeVideoId)
+    }, S), n = C({
+      url: "".concat((0, _.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
+    }, P), r = u.pn.YOUTUBE;
     else {
       let e = null != i.width ? i.width : 0,
         r = null != i.height ? i.height : 0;
@@ -135,7 +135,7 @@ let I = e => {
         video: n,
         provider: r,
         maxHeight: c.r.SMALL.height,
-        maxWidth: _.b.SMALL,
+        maxWidth: f.b.SMALL,
         onPlay: l,
         playable: !0,
         volume: s,
@@ -154,7 +154,7 @@ class N extends(r = i.PureComponent) {
     let {
       items: e
     } = this.props;
-    e.length > 0 && e[0].type === f.s9s.IMG && this.setState({
+    e.length > 0 && e[0].type === _.s9s.IMG && this.setState({
       imageLoadingStartTime: new Map(this.state.imageLoadingStartTime).set(e[0].src, Date.now())
     })
   }
@@ -213,7 +213,7 @@ class N extends(r = i.PureComponent) {
     }), v(this, "handleChangeItem", e => {
       this.setState({
         isVideoPlaying: !1
-      }), e.type === f.s9s.IMG && this.setState({
+      }), e.type === _.s9s.IMG && this.setState({
         imageLoadingStartTime: new Map(this.state.imageLoadingStartTime).set(e.src, Date.now())
       })
     }), v(this, "handleIntentionalChange", (e, t, n, r) => {
@@ -250,8 +250,8 @@ class N extends(r = i.PureComponent) {
           videoAutoPlay: l
         } = this.props;
       switch (e.type) {
-        case f.s9s.YOUTUBE_VIDEO:
-        case f.s9s.VIDEO:
+        case _.s9s.YOUTUBE_VIDEO:
+        case _.s9s.VIDEO:
           n = (0, a.jsx)(E, {
             item: e,
             onPlay: this.handlePlay,
@@ -262,7 +262,7 @@ class N extends(r = i.PureComponent) {
             autoPlay: l
           });
           break;
-        case f.s9s.IMG:
+        case _.s9s.IMG:
           if ("errored" === this.state.status.get(e.src)) {
             let e = (0, a.jsx)(o.X6q, {
               variant: "heading-xl/semibold",

@@ -1,4 +1,4 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
   Z: () => g
 });
@@ -50,36 +50,36 @@ function g(e) {
     size: g = l.EFr.SIZE_40
   } = e, m = (0, o.ZP)(), b = (0, c.oX)(n);
   if (null == b) return null;
-  let O = (0, l.UCu)(g),
+  let _ = (0, l.UCu)(g),
     {
-      name: y,
-      rarity: _
+      name: O,
+      rarity: y
     } = b,
     {
       color: v
-    } = (0, c.F7)(_),
+    } = (0, c.F7)(y),
     C = (0, i.wj)(m) ? p : f,
-    j = (O.size - O.offset - 2 * O.stroke) * .8,
-    S = O.size - O.stroke,
-    x = {
+    j = (_.size - _.offset - 2 * _.stroke) * .8,
+    E = _.size - _.stroke,
+    S = {
       width: .4 * j,
       height: .4 * j
     },
-    E = {
-      width: x.width + 1,
-      height: x.height + 1,
-      right: O.stroke + 1,
-      bottom: O.stroke + 1,
+    x = {
+      width: S.width + 1,
+      height: S.height + 1,
+      right: _.stroke + 1,
+      bottom: _.stroke + 1,
       padding: 0
     };
   return (0, r.jsxs)("div", {
     className: d.container,
     style: {
-      width: S,
-      height: S,
-      padding: O.stroke
+      width: E,
+      height: E,
+      padding: _.stroke
     },
-    "aria-label": "".concat(null != (t = y()) ? t : ""),
+    "aria-label": "".concat(null != (t = O()) ? t : ""),
     children: [(0, r.jsx)("div", {
       className: d.trophyIconContainer,
       children: (0, r.jsx)(l.rm8, {
@@ -90,17 +90,17 @@ function g(e) {
       })
     }), !u && (0, r.jsx)("div", {
       className: d.lockContainer,
-      style: E,
+      style: x,
       children: (0, r.jsx)(l.mBM, h({
         size: "custom",
         color: (0, s.Lq)(C.locked)
-      }, x))
-    }), u && _ === c.EP.LEGENDARY && (0, r.jsx)("div", {
+      }, S))
+    }), u && y === c.EP.LEGENDARY && (0, r.jsx)("div", {
       className: d.lockContainer,
-      style: E,
+      style: x,
       children: (0, r.jsx)(a.Z, h({
         className: d.confettiIcon
-      }, x))
+      }, S))
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => A
 }), n(413496), n(433524), n(35282), n(539854), n(388685);
@@ -19,15 +19,15 @@ var r = n(255367),
   b = n(488131),
   _ = n(375954),
   y = n(626135),
-  C = n(585483),
-  x = n(403182),
+  x = n(585483),
+  C = n(403182),
   v = n(127654),
   j = n(752305),
   O = n(951211),
   E = n(981631),
   I = n(921944),
-  P = n(489887),
-  S = n(388032),
+  S = n(489887),
+  P = n(388032),
   Z = n(725776);
 let N = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
@@ -47,7 +47,7 @@ function T() {
         visibleContent: t
       } = e;
       return t === o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(s.IGR, {
-        text: S.intl.string(S.t.y2b7CA),
+        text: P.intl.string(P.t.y2b7CA),
         color: l.Z.BUTTON_DANGER_BACKGROUND
       }) : null
     }
@@ -67,11 +67,11 @@ function A(e) {
     openClips: M
   } = e, {
     analyticsLocations: k
-  } = (0, p.ZP)(), L = (0, g.Dt)({
+  } = (0, p.ZP)(), D = (0, g.Dt)({
     channel: t
   });
 
-  function D() {
+  function L() {
     (0, b.R6)(t, void 0, "Plus Button")
   }
 
@@ -123,7 +123,7 @@ function A(e) {
         }), i))
       }
     }, {
-      modalKey: P.$z
+      modalKey: S.$z
     })
   }
 
@@ -146,9 +146,9 @@ function A(e) {
       n = "txt",
       r = "",
       i = w.match(N);
-    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, v.d)([(0, x.dp)(new Blob([e], {
+    null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, v.d)([(0, C.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, A), C.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && C.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, A), x.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && x.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: r
     })
   }
@@ -162,7 +162,7 @@ function A(e) {
     onSelect: _,
     navId: "channel-attach",
     onClose: m,
-    "aria-label": S.intl.string(S.t.Xm41aW),
+    "aria-label": P.intl.string(P.t.Xm41aW),
     className: Z.menu,
     children: a.map(function(e) {
       var n;
@@ -252,7 +252,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "THREAD",
             label: i,
-            action: D
+            action: L
           }, "THREAD");
         case O.r.SLASH_COMMAND:
           return (0, r.jsx)(s.sNh, {
@@ -274,7 +274,7 @@ function A(e) {
             action: () => (0, g.$f)({
               channel: t
             }),
-            children: L
+            children: D
           }, "scheduled_message");
         default:
           return null

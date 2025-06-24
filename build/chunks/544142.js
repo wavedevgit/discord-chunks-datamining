@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => I
 });
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(51144),
   _ = n(967128),
   y = n(981631),
-  C = n(388032),
-  x = n(128337);
+  x = n(388032),
+  C = n(128337);
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -60,10 +60,10 @@ function O(e) {
     userId: p,
     channel: _
   } = e, y = i.useRef(null), {
-    analyticsLocations: C
+    analyticsLocations: x
   } = (0, d.ZP)(u.Z.USERNAME), O = (0, o.e7)([g.default], () => g.default.getUser(p)), E = (0, o.e7)([m.ZP], () => null != p ? m.ZP.getMember(_.guild_id, p) : null), I = (0, h.X)(_.guild_id, null == E ? void 0 : E.colorStrings, "ThreadEmptyMessage");
 
-  function P(e) {
+  function S(e) {
     if (null == O) return null;
     (0, c.jW)(e, async () => {
       let {
@@ -76,13 +76,13 @@ function O(e) {
       }))
     })
   }
-  let S = null != (l = null != (t = null == E ? void 0 : E.nick) ? t : b.ZP.getName(O)) ? l : "???",
+  let P = null != (l = null != (t = null == E ? void 0 : E.nick) ? t : b.ZP.getName(O)) ? l : "???",
     Z = null == E ? void 0 : E.colorString;
   return null == O ? (0, r.jsx)("span", {
-    className: a()(x.threadCreatorName, x.unknownCreatorName),
-    children: S
+    className: a()(C.threadCreatorName, C.unknownCreatorName),
+    children: P
   }) : (0, r.jsx)(d.Gt, {
-    value: C,
+    value: x,
     children: (0, r.jsx)(f.Z, {
       targetElementRef: y,
       user: O,
@@ -93,10 +93,10 @@ function O(e) {
       children: e => (0, r.jsx)(s.P3F, j(v({}, e), {
         innerRef: y,
         tag: "span",
-        className: x.threadCreatorName,
-        onContextMenu: P,
+        className: C.threadCreatorName,
+        onContextMenu: S,
         children: (0, r.jsx)(s.PUh, {
-          name: S,
+          name: P,
           color: null != Z ? Z : void 0,
           roleColors: I
         })
@@ -120,8 +120,8 @@ function E(e) {
       variant: "text-md/normal",
       color: "header-secondary",
       children: (0, r.jsx)("div", {
-        className: x.subtitle,
-        children: C.intl.format(C.t.imPXd3, {
+        className: C.subtitle,
+        children: x.intl.format(x.t.imPXd3, {
           usernameHook: (e, n) => (0, r.jsx)(O, {
             userId: t.ownerId,
             channel: t
@@ -131,7 +131,7 @@ function E(e) {
     }), t.type === y.d4z.PRIVATE_THREAD ? (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: C.intl.string(C.t["1awbZG"])
+      children: x.intl.string(x.t["1awbZG"])
     }) : null]
   })
 }
@@ -144,9 +144,9 @@ function I(e) {
   return (0, r.jsxs)(_.ZP, {
     channelId: n.id,
     children: [(0, r.jsx)("div", {
-      className: x.iconWrapper,
+      className: C.iconWrapper,
       children: (0, r.jsx)(i, {
-        className: x.icon
+        className: C.icon
       })
     }), (0, r.jsx)(_.Ot, {
       children: n.name

@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
-  H: () => E
+  H: () => x
 }), n(953529);
 var r = n(255367);
 n(73800);
@@ -20,32 +20,32 @@ var i = n(399606),
   _ = n(226060),
   b = n(981631);
 
-function E(e) {
+function x(e) {
   let {
     guildProductListing: t,
     guildId: n,
-    location: E,
+    location: x,
     shouldShowFullDescriptionButton: y = !0,
-    hideRoleTag: x = !1,
+    hideRoleTag: E = !1,
     lineClamp: v = 1,
-    cardWidth: O,
-    cardHeight: C,
+    cardWidth: C,
+    cardHeight: O,
     thumbnailHeight: j,
     descriptionTextVariant: S = "text-sm/normal",
     showOpaqueBackground: I = !1
-  } = e, N = (0, i.e7)([s.Z], () => s.Z.getGuild(n), [n]), T = (0, i.e7)([s.Z], () => {
+  } = e, T = (0, i.e7)([s.Z], () => s.Z.getGuild(n), [n]), N = (0, i.e7)([s.Z], () => {
     var e;
     return s.Z.getRole(n, null != (e = null == t ? void 0 : t.role_id) ? e : b.lds)
-  }), P = (0, l.U)(t, 600), A = (0, f.C)(t), w = (0, u.SO)(N), {
+  }), P = (0, l.U)(t, 600), A = (0, f.C)(t), w = (0, u.SO)(T), {
     shouldHideGuildPurchaseEntryPoints: Z
   } = (0, o.uP)(n), R = (0, f.k)(t);
-  if (null == N || Z) return null;
+  if (null == T || Z) return null;
   let k = () => (0, g.e)({
       guildId: n,
       guildProductListingId: t.id,
-      analyticsLocation: E
+      analyticsLocation: x
     }),
-    D = (0, r.jsx)(h.m, {
+    L = (0, r.jsx)(h.m, {
       product: t,
       guildId: n,
       showEditProduct: w,
@@ -55,7 +55,7 @@ function E(e) {
       showDeleteProduct: !1,
       showReportProduct: !0,
       onEditProduct: w ? () => {
-        p.h(N.id, t.id)
+        p.h(T.id, t.id)
       } : () => {},
       onUnpublishProduct: () => {},
       onDeleteProduct: () => {},
@@ -74,22 +74,22 @@ function E(e) {
     name: t.name,
     description: t.description,
     formattedPrice: R,
-    role: T,
+    role: N,
     ctaComponent: (0, r.jsx)(_.Z, {
       guildId: n,
       guildProductListingId: t.id,
-      sourceAnalyticsLocations: E
+      sourceAnalyticsLocations: x
     }),
     productType: A,
     shouldShowFullDescriptionButton: y,
     onShowFullDescription: k,
     onTapCard: k,
-    actionMenu: D,
+    actionMenu: L,
     showOpaqueBackground: I,
-    hideRoleTag: x,
+    hideRoleTag: E,
     lineClamp: v,
-    cardWidth: O,
-    cardHeight: C,
+    cardWidth: C,
+    cardHeight: O,
     thumbnailHeight: j,
     descriptionTextVariant: S,
     isDraft: !t.published

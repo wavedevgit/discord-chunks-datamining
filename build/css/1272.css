@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 9e5d0a20de971f68
+  Original File Name: 521480fad52e4ed1
 **/
 .container__74da2 {
     align-items: center;
@@ -110,6 +110,25 @@
 
 .upsell__251d4.hidden__251d4 {
     animation: fadeOut__251d4 .3s forwards
+}
+
+.reminderTooltip__5cad1 {
+    border-radius: 4px;
+    max-width: 280px;
+    padding: 16px;
+    text-align: center
+}
+
+.tooltipContent__5cad1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.buttonContainer__5cad1 {
+    display: flex;
+    gap: 8px;
+    justify-content: center
 }
 
 .container_e73f2a {
@@ -256,6 +275,55 @@
 
 .statusText__6c8a3 {
     color: var(--text-muted)
+}
+
+.tooltip__93f15 {
+    max-width: 280px;
+    width: 280px
+}
+
+.tooltipContent__93f15 {
+    align-items: center;
+    display: flex;
+    justify-content: start;
+    padding: var(--spacing-16);
+    width: 100%
+}
+
+.iconContainer__93f15 {
+    display: flex;
+    flex-direction: row
+}
+
+.inviteImage__93f15 {
+    border-radius: var(--radius-xs);
+    height: 24px;
+    width: 24px
+}
+
+.offsetAvatarContainer__93f15 {
+    height: 24px;
+    position: relative;
+    width: 24px
+}
+
+.inviterImage__93f15 {
+    left: -5px;
+    position: absolute
+}
+
+.titleContainer__93f15 {
+    margin-left: var(--spacing-8)
+}
+
+.recentsIcon_c99c29 {
+    position: relative
+}
+
+.todoBadge_c99c29 {
+    bottom: -6px;
+    position: absolute;
+    right: -6px
 }
 
 .title__85643 {
@@ -3605,27 +3673,6 @@
     margin-right: 16px
 }
 
-.friendsEmpty_c7ea19 {
-    align-items: center;
-    display: flex;
-    flex-grow: 1;
-    justify-content: center
-}
-
-.button_c7ea19 {
-    margin-top: 20px
-}
-
-.emptyStateContainer_c7ea19 {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-24)
-}
-
-.spamButton_c7ea19 {
-    align-self: center
-}
-
 .header__94b08 {
     border-bottom: 1px solid var(--border-subtle);
     flex-shrink: 0;
@@ -3883,6 +3930,27 @@
 .actions_fc004c {
     display: flex;
     margin-left: 8px
+}
+
+.friendsEmpty_c7ea19 {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center
+}
+
+.button_c7ea19 {
+    margin-top: 20px
+}
+
+.emptyStateContainer_c7ea19 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24)
+}
+
+.spamButton_c7ea19 {
+    align-self: center
 }
 
 .listItemContents_e1ecd3 {
@@ -8446,4 +8514,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=9e5d0a20de971f68.css.map*/
+/*# sourceMappingURL=521480fad52e4ed1.css.map*/

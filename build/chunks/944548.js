@@ -6,12 +6,12 @@ var r = n(255367);
 n(73800);
 var s = n(120356),
   o = n.n(s),
-  a = n(481060),
-  i = n(263576);
+  i = n(481060),
+  a = n(263576);
 let c = {
-  green: i.greenBorder,
-  red: i.redBorder,
-  white: i.whiteBorder
+  green: a.greenBorder,
+  red: a.redBorder,
+  white: a.whiteBorder
 };
 
 function l(e) {
@@ -34,7 +34,7 @@ function l(e) {
       }
       return s
     }(e, ["borderColor", "tooltipClassName"]);
-  return (0, r.jsx)(a.ua7, (t = function(e) {
+  return (0, r.jsx)(i.ua7, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -52,9 +52,9 @@ function l(e) {
     }
     return e
   }({}, u), n = n = {
-    tooltipClassName: o()(i.tooltip, i.overridePlease, l),
-    tooltipContentClassName: o()(i.content, c[s]),
-    tooltipPointerClassName: i.pointer
+    tooltipClassName: o()(a.tooltip, a.overridePlease, l),
+    tooltipContentClassName: o()(a.content, c[s]),
+    tooltipPointerClassName: a.pointer
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

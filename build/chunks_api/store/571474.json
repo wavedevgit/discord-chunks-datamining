@@ -1,1 +1,1 @@
-{"id":"571474","type":"store","data":{"name":"PremiumPromoStore","functions":[{"name":"initialize","args":[]},{"name":"isEligible","args":[]}],"events":["CONNECTION_OPEN"]},"fromModule":{"id":"21741"}}
+{"id":"571474","type":"store","data":{"name":"PremiumPromoStore","functions":[{"name":"initialize","args":[]},{"name":"isEligible","args":[]}],"events":["CONNECTION_OPEN"]},"fromModule":{"id":"3490"}}

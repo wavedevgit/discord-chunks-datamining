@@ -1,4 +1,4 @@
-/** Chunk was on 59458 **/
+/** Chunk was on 26179 **/
 e.exports = {
   clipPill: "clipPill_d762d7"
 }

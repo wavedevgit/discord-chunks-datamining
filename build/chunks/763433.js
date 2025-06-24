@@ -1,7 +1,7 @@
 /** Chunk was on 88934 **/
 n.d(t, {
-  a: () => f,
-  r: () => _
+  a: () => _,
+  r: () => f
 });
 var r, a = n(255367),
   i = n(73800),
@@ -15,16 +15,16 @@ var r, a = n(255367),
   m = n(594174),
   h = n(744695),
   g = n(296026),
-  _ = ((r = {}).DEFAULT = "DEFAULT", r.SEARCH = "SEARCH", r);
+  f = ((r = {}).DEFAULT = "DEFAULT", r.SEARCH = "SEARCH", r);
 
-function f(e) {
+function _(e) {
   let {
     selectedTabId: t,
     handleTransition: n,
     tabs: r,
     state: l = "DEFAULT",
-    onAvailableWidthChange: _,
-    icon: f,
+    onAvailableWidthChange: f,
+    icon: _,
     children: b
   } = e, x = (0, d.ZP)(), v = (0, o.e7)([m.default], () => m.default.getCurrentUser()), C = (null == v ? void 0 : v.isStaff()) || (null == v ? void 0 : v.isStaffPersonal()), {
     enabled: j
@@ -38,14 +38,14 @@ function f(e) {
       innerClassname: j ? g.headerBarInner : void 0,
       toolbar: C ? (0, a.jsx)(i.Fragment, {}) : null,
       children: ["DEFAULT" === l && (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(f, {
+        children: [(0, a.jsx)(_, {
           color: "currentColor",
           size: "md"
         }), (0, a.jsx)(h.Z, {
           tabs: r,
           selectedTab: t,
           onTabSelect: n,
-          onAvailableWidthChange: _
+          onAvailableWidthChange: f
         })]
       }), (0, a.jsx)("div", {
         className: s()(g.headerBarContent, {

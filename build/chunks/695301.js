@@ -1,4 +1,4 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
   Z: () => b
 });
@@ -20,16 +20,16 @@ let b = i.memo(function(e) {
   var t, n;
   let {
     guildNode: b,
-    lowerBadge: O
-  } = e, y = b.id, _ = (0, l.e7)([h.Z], () => h.Z.getGuild(y)), v = (0, s.E)(_), C = (0, l.e7)([p.Z], () => p.Z.isFocused()), j = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), S = (0, c.Z)(e => e.guildId), x = (0, f.Z)(y), {
-    badge: E,
-    unread: P,
-    isMentionLowImportance: I
+    lowerBadge: _
+  } = e, O = b.id, y = (0, l.e7)([h.Z], () => h.Z.getGuild(O)), v = (0, s.E)(y), C = (0, l.e7)([p.Z], () => p.Z.isFocused()), j = (0, l.e7)([u.Z], () => u.Z.isUnavailable(O)), E = (0, c.Z)(e => e.guildId), S = (0, f.Z)(O), {
+    badge: x,
+    unread: I,
+    isMentionLowImportance: P
   } = (0, l.cj)([d.default], () => ({
-    badge: d.default.getMentionCount(y),
-    isMentionLowImportance: d.default.getIsMentionLowImportance(y),
-    unread: d.default.hasUnread(y)
-  })), N = (0, a.Ij)(_) && 0 === E, w = i.useMemo(() => null != O ? O : N ? (0, r.jsx)("div", {
+    badge: d.default.getMentionCount(O),
+    isMentionLowImportance: d.default.getIsMentionLowImportance(O),
+    unread: d.default.hasUnread(O)
+  })), N = (0, a.Ij)(y) && 0 === x, w = i.useMemo(() => null != _ ? _ : N ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -38,7 +38,7 @@ let b = i.memo(function(e) {
       width: 10,
       height: 10
     })
-  }) : null, [O, N]);
+  }) : null, [_, N]);
   return (0, r.jsx)(g.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -57,15 +57,15 @@ let b = i.memo(function(e) {
     }
     return e
   }({}, e), n = n = {
-    guild: _,
+    guild: y,
     unavailable: j,
     animatable: C,
-    selected: S === y,
-    badge: E,
-    isMentionLowImportance: I,
+    selected: E === O,
+    badge: x,
+    isMentionLowImportance: P,
     lowerBadge: w,
-    unread: P,
-    mediaState: x,
+    unread: I,
+    mediaState: S,
     guildJoinRequestStatus: v
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

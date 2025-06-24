@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 84865 **/
 e.exports = {
   container: "container__5519a",
   primaryRow: "primaryRow__5519a",

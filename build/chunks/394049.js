@@ -1,5 +1,5 @@
-/** Chunk was on 47284 **/
-e.exports = {
+/** Chunk was on 48181 **/
+t.exports = {
   rootContainer: "rootContainer_f4adbd",
   headerContainer: "headerContainer_f4adbd",
   text: "text_f4adbd",

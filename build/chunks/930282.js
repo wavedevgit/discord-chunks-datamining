@@ -1,63 +1,64 @@
-/** Chunk was on 94495 **/
+/** Chunk was on 31978 **/
+"use strict";
 n.d(t, {
-  HR: () => b,
-  L5: () => g,
-  ZP: () => h
+  HR: () => h,
+  L5: () => b,
+  ZP: () => O
 });
-var a = n(255367),
-  i = n(73800),
+var r = n(255367),
+  l = n(73800),
   o = n(120356),
-  r = n.n(o),
-  c = n(653603),
-  l = n.n(c),
-  s = n(902704),
-  d = n(453687),
-  u = n(328966),
-  m = n(981631),
-  p = n(388032),
-  f = n(848697),
-  _ = n(73433);
-
-function g(e, t) {
-  return e.type === m.uaV.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(m.iLy.SOURCE_MESSAGE_DELETED) ? p.intl.string(p.t.JOtgS0) : t
-}
+  i = n.n(o),
+  s = n(653603),
+  a = n.n(s),
+  c = n(902704),
+  u = n(453687),
+  d = n(328966),
+  p = n(981631),
+  m = n(388032),
+  g = n(848697),
+  f = n(73433);
 
 function b(e, t) {
-  var n, a;
+  return e.type === p.uaV.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(p.iLy.SOURCE_MESSAGE_DELETED) ? m.intl.string(m.t.JOtgS0) : t
+}
+
+function h(e, t) {
+  var n, r;
   let {
-    message: i
+    message: l
   } = t, {
     message: o
   } = e;
-  return (0, s.Z)(e, t, ["message"]) && i.content === o.content && i.state === o.state && (null == (n = i.editedTimestamp) ? void 0 : n.toString()) === (null == (a = o.editedTimestamp) ? void 0 : a.toString())
+  return (0, c.Z)(e, t, ["message"]) && l.content === o.content && l.state === o.state && (null == (n = l.editedTimestamp) ? void 0 : n.toString()) === (null == (r = o.editedTimestamp) ? void 0 : r.toString())
 }
-let h = i.memo(function(e) {
+let O = l.memo(function(e) {
   var t;
   let {
     className: n,
     message: o,
-    children: c,
-    content: s,
-    onUpdate: p,
-    contentRef: b,
-    compact: h
-  } = e, y = o.state === m.yb.SEND_FAILED, T = o.state === m.yb.SENDING, C = o.isCommandType(), O = null == (t = o.editedTimestamp) ? void 0 : t.toString(), x = i.useRef(!1);
-  return i.useLayoutEffect(() => {
-    x.current ? null != p && p() : x.current = !0
-  }, [p, o.content, s, O, c]), (0, a.jsxs)("div", {
-    id: (0, d.ut)(o),
-    ref: b,
-    className: r()(n, _.markup, {
-      [f.messageContent]: !0,
-      [f.isSending]: T && !C,
-      [f.markupRtl]: "rtl" === l()(o.content),
-      [f.isFailed]: y,
-      [f.isUnsupported]: o.isUnsupported
+    children: s,
+    content: c,
+    onUpdate: m,
+    contentRef: h,
+    compact: O
+  } = e, y = o.state === p.yb.SEND_FAILED, j = o.state === p.yb.SENDING, v = o.isCommandType(), P = null == (t = o.editedTimestamp) ? void 0 : t.toString(), x = l.useRef(!1);
+  return l.useLayoutEffect(() => {
+    x.current ? null != m && m() : x.current = !0
+  }, [m, o.content, c, P, s]), (0, r.jsxs)("div", {
+    id: (0, u.ut)(o),
+    ref: h,
+    className: i()(n, f.markup, {
+      [g.messageContent]: !0,
+      [g.isSending]: j && !v,
+      [g.markupRtl]: "rtl" === a()(o.content),
+      [g.isFailed]: y,
+      [g.isUnsupported]: o.isUnsupported
     }),
-    children: [null != c ? c : g(o, s), (0, a.jsx)(u.Z, {
+    children: [null != s ? s : b(o, c), (0, r.jsx)(d.Z, {
       message: o,
-      compact: h,
-      location: u.H.WITH_CONTENT
+      compact: O,
+      location: d.H.WITH_CONTENT
     })]
   })
-}, b)
+}, h)

@@ -24,8 +24,8 @@ let f = (0, o.debounce)(c.ZP.trackWithMetadata, 500),
       imageStyles: m,
       imageMarginX: b,
       imageMarginTop: _,
-      trackingSource: E,
-      undismissable: O,
+      trackingSource: O,
+      undismissable: E,
       onDismissed: y,
       onClick: I,
       cta: v,
@@ -45,7 +45,7 @@ let f = (0, o.debounce)(c.ZP.trackWithMetadata, 500),
       size: s.zxk.Sizes.SMALL,
       onClick: () => {
         null != g && u.default.track(d.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
-          source: E,
+          source: O,
           guild_id: t.id,
           notice_type: g
         }), null == I || I()
@@ -77,7 +77,7 @@ let f = (0, o.debounce)(c.ZP.trackWithMetadata, 500),
     let A = null != b ? "".concat(b, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: a()(h.container, N),
-      children: [!0 === O ? null : (0, r.jsx)(s.P3F, {
+      children: [!0 === E ? null : (0, r.jsx)(s.P3F, {
         onClick: () => {
           c.ZP.trackWithMetadata(d.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: g

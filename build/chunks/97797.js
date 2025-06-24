@@ -1,19 +1,19 @@
-/** Chunk was on 60691 **/
-n.d(e, {
-  i: () => r
+/** Chunk was on 94357 **/
+n.d(t, {
+  i: () => i
 });
-var l = n(981631),
-  i = n(388032);
+var r = n(981631),
+  l = n(388032);
 
-function r(t) {
+function i(e) {
   let {
-    username: e,
-    usernameOnClickHandler: n = l.dG4,
-    productName: r
-  } = t;
-  return i.intl.formatToParts(i.t.w4iXs7, {
-    username: e,
+    username: t,
+    usernameOnClickHandler: n = r.dG4,
+    productName: i
+  } = e;
+  return l.intl.formatToParts(l.t.w4iXs7, {
+    username: t,
     usernameHook: n,
-    productName: r
+    productName: i
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 e.exports = {
   iconContainer: "iconContainer_e5199a",
   inviteHeader: "inviteHeader_e5199a",

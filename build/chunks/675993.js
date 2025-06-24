@@ -69,7 +69,7 @@ function O(e) {
         application: n
       }), (0, i.jsx)(L, {
         application: n
-      }), m.length > 0 ? (0, i.jsx)(Z, {
+      }), m.length > 0 ? (0, i.jsx)(k, {
         description: m
       }) : null, f ? (0, i.jsx)("div", {
         className: A.developerShelfControlsContainer,
@@ -239,7 +239,7 @@ function w(e) {
   }) : null
 }
 
-function Z(e) {
+function k(e) {
   let {
     description: t
   } = e, [n, l] = r.useState(!0);

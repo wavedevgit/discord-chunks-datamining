@@ -1,4 +1,4 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
   E: () => b,
   q: () => m
@@ -58,28 +58,28 @@ function g(e) {
     onMouseLeave: g,
     className: m,
     ariaHidden: b,
-    avatarDecoration: O,
-    specs: _,
+    avatarDecoration: _,
+    specs: y,
     cornerIconUrl: v,
     cornerIconOffsetX: C,
     cornerIconOffsetY: j,
-    ariaLabel: S
-  } = e, x = {
+    ariaLabel: E
+  } = e, S = {
     width: (0, a.pxk)(n),
     height: (0, a.pxk)(n)
-  }, E = (0, i.useId)(), P = _.size * d.hs, I = null != O && (0, r.jsxs)("svg", {
-    width: P,
-    height: P,
-    viewBox: "0 0 ".concat(P, " ").concat(P),
+  }, x = (0, i.useId)(), I = y.size * d.hs, P = null != _ && (0, r.jsxs)("svg", {
+    width: I,
+    height: I,
+    viewBox: "0 0 ".concat(I, " ").concat(I),
     className: h.avatarDecoration,
     "aria-hidden": !0,
     children: [(0, r.jsxs)("mask", {
-      id: E,
+      id: x,
       children: [(0, r.jsx)("rect", {
         x: 0,
         y: 0,
-        width: P,
-        height: P,
+        width: I,
+        height: I,
         fill: "white"
       }), null != v && function(e, t) {
         let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0,
@@ -95,7 +95,7 @@ function g(e) {
               width: l,
               x: o,
               y: s
-            } = y(e, n, r), a = (t - e.size) / 2;
+            } = O(e, n, r), a = (t - e.size) / 2;
             return {
               width: l,
               height: i,
@@ -112,18 +112,18 @@ function g(e) {
           rx: e.stroke,
           fill: "black"
         })
-      }(_, P, C, j)]
+      }(y, I, C, j)]
     }), (0, r.jsx)("foreignObject", {
       x: 0,
       y: 0,
-      width: P,
-      height: P,
-      mask: "url(#".concat(E, ")"),
+      width: I,
+      height: I,
+      mask: "url(#".concat(x, ")"),
       children: (0, r.jsx)("div", {
         className: h.avatarStack,
         children: (0, r.jsx)("img", {
           className: h.avatar,
-          src: O,
+          src: _,
           alt: " ",
           "aria-hidden": !0
         })
@@ -132,26 +132,26 @@ function g(e) {
   });
   return null != l || null != s ? (0, r.jsxs)(a.P3F, {
     className: o()(h.wrapper, h.pointer, m),
-    style: x,
+    style: S,
     onClick: l,
     onContextMenu: p,
     onMouseDown: s,
     onKeyDown: u,
     onMouseEnter: null != f ? f : void 0,
     onMouseLeave: null != g ? g : void 0,
-    "aria-label": null != S ? S : void 0,
+    "aria-label": null != E ? E : void 0,
     "aria-hidden": b,
-    children: [t, I]
+    children: [t, P]
   }) : (0, r.jsxs)("div", {
     className: o()(h.wrapper, m),
-    style: x,
+    style: S,
     onContextMenu: null != p ? p : void 0,
     onMouseEnter: null != f ? f : void 0,
     onMouseLeave: null != g ? g : void 0,
     role: "img",
-    "aria-label": null != S ? S : void 0,
+    "aria-label": null != E ? E : void 0,
     "aria-hidden": b,
-    children: [t, I]
+    children: [t, P]
   })
 }
 
@@ -164,7 +164,7 @@ function m(e) {
     imageClassName: d,
     cornerIconUrl: m,
     cornerIconOffsetX: b = 0,
-    cornerIconOffsetY: _ = 0
+    cornerIconOffsetY: y = 0
   } = e, v = (0, u.UC)(n), C = v.size, j = (0, i.useId)();
   return (0, r.jsx)(g, f(p({}, e), {
     ariaLabel: a,
@@ -172,8 +172,8 @@ function m(e) {
     specs: v,
     children: (0, r.jsxs)("svg", {
       width: C + b,
-      height: C + _,
-      viewBox: "0 0 ".concat(C + b, " ").concat(C + _),
+      height: C + y,
+      viewBox: "0 0 ".concat(C + b, " ").concat(C + y),
       className: o()(h.mask, h.svg),
       "aria-hidden": !0,
       children: [(0, r.jsxs)("mask", {
@@ -189,7 +189,7 @@ function m(e) {
             width: l,
             x: o,
             y: s
-          } = y(e, t, n);
+          } = O(e, t, n);
           return (0, r.jsx)("rect", {
             mask: "url(#".concat(c.QS.SQUIRCLE, ")"),
             height: i,
@@ -198,7 +198,7 @@ function m(e) {
             y: s,
             fill: "black"
           })
-        }(v, b, _)]
+        }(v, b, y)]
       }), (0, r.jsx)("foreignObject", {
         x: 0,
         y: 0,
@@ -210,7 +210,7 @@ function m(e) {
           className: d,
           isSpeaking: !1
         })
-      }), null != m && (0, r.jsx)("foreignObject", f(p({}, O(v, b, _)), {
+      }), null != m && (0, r.jsx)("foreignObject", f(p({}, _(v, b, y)), {
         mask: "url(#".concat(c.QS.SQUIRCLE, ")"),
         children: (0, r.jsx)("img", {
           src: m,
@@ -232,7 +232,7 @@ function b(e) {
     cornerIconUrl: a,
     cornerIconOffsetX: d = 0,
     cornerIconOffsetY: m = 0
-  } = e, b = (0, i.useId)(), _ = (0, i.useId)(), v = (0, u.UC)(n), C = v.size + d, j = v.size + m, S = y(v, d, m), x = O(v, d, m);
+  } = e, b = (0, i.useId)(), y = (0, i.useId)(), v = (0, u.UC)(n), C = v.size + d, j = v.size + m, E = O(v, d, m), S = _(v, d, m);
   return (0, r.jsx)(g, f(p({}, e), {
     ariaLabel: s,
     ariaHidden: l,
@@ -253,17 +253,17 @@ function b(e) {
           fill: "white",
           mask: "url(#".concat(c.QS.SQUIRCLE, ")")
         }), (0, r.jsx)("circle", {
-          cx: S.x + S.width / 2,
-          cy: S.y + S.height / 2,
-          r: S.width / 2,
+          cx: E.x + E.width / 2,
+          cy: E.y + E.height / 2,
+          r: E.width / 2,
           fill: "black"
         })]
       }), (0, r.jsx)("mask", {
-        id: _,
+        id: y,
         children: (0, r.jsx)("circle", {
-          cx: x.x + x.width / 2,
-          cy: x.y + x.height / 2,
-          r: x.width / 2,
+          cx: S.x + S.width / 2,
+          cy: S.y + S.height / 2,
+          r: S.width / 2,
           fill: "white"
         })
       }), (0, r.jsx)("foreignObject", {
@@ -281,8 +281,8 @@ function b(e) {
             "aria-hidden": !0
           })
         }, t)
-      }), null != a && (0, r.jsx)("foreignObject", f(p({}, x), {
-        mask: "url(#".concat(_, ")"),
+      }), null != a && (0, r.jsx)("foreignObject", f(p({}, S), {
+        mask: "url(#".concat(y, ")"),
         children: (0, r.jsx)("img", {
           src: a,
           height: 16,
@@ -294,7 +294,7 @@ function b(e) {
   }))
 }
 
-function O(e, t, n) {
+function _(e, t, n) {
   return {
     width: 16,
     height: 16,
@@ -303,8 +303,8 @@ function O(e, t, n) {
   }
 }
 
-function y(e, t, n) {
-  let r = O(e, t, n),
+function O(e, t, n) {
+  let r = _(e, t, n),
     i = r.x - 2,
     l = r.y - 2;
   return {

@@ -1,6 +1,6 @@
 /** Chunk was on 3589 **/
 n.d(t, {
-  Z: () => L
+  Z: () => R
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -78,8 +78,8 @@ function M(e) {
     M = r.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == a || a()
     }, [a, o]),
-    R = (0, d.e7)([k.ZP], () => k.ZP.getFocusedRunningGame()),
-    L = v ? (0, i.jsxs)("div", {
+    L = (0, d.e7)([k.ZP], () => k.ZP.getFocusedRunningGame()),
+    R = v ? (0, i.jsxs)("div", {
       children: [(0, i.jsx)(h.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
@@ -106,10 +106,10 @@ function M(e) {
     W = null != (t = null == j ? void 0 : j.isStaff()) && t || null != (n = null == j ? void 0 : j.isStaffPersonal()) && n;
   return (0, i.jsx)(P.Y, {
     title: S.intl.string(S.t.U38qZm),
-    body: L,
+    body: R,
     hint: W ? I : void 0,
     confirmText: S.intl.string(S.t.a3HlgI),
-    cancelText: null != R ? S.intl.string(S.t.qIYnPj) : void 0,
+    cancelText: null != L ? S.intl.string(S.t.qIYnPj) : void 0,
     icon: (0, i.jsx)(O.Z, {
       width: 40,
       height: 40,
@@ -117,7 +117,7 @@ function M(e) {
     }),
     onNotificationClick: D,
     onConfirmClick: N,
-    onCancelClick: null != R ? M : void 0,
+    onCancelClick: null != L ? M : void 0,
     onDismissClick: o,
     expand: !0,
     locked: !0,
@@ -130,7 +130,7 @@ function M(e) {
     wrapperClassName: z.errorNotificationWrapper
   })
 }
-class R extends r.PureComponent {
+class L extends r.PureComponent {
   componentDidCatch(e, t) {
     let n = (0, g.s1)().location;
     this.setState({
@@ -200,4 +200,4 @@ class R extends r.PureComponent {
     }), N(this, "pid", null)
   }
 }
-let L = R
+let R = L

@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => f
 });
@@ -24,7 +24,7 @@ let p = i.memo(function(e) {
       author: m,
       repliedMessage: g,
       roleIcon: b
-    } = e, _ = (0, u.wq)(t.author.id, n.id), y = (0, u.XO)(t, n, p, f), C = (0, u.R9)(h, f), x = i.useCallback(() => {
+    } = e, _ = (0, u.wq)(t.author.id, n.id), y = (0, u.XO)(t, n, p, f), x = (0, u.R9)(h, f), C = i.useCallback(() => {
       f({
         usernameProfile: !1,
         avatarProfile: !1,
@@ -43,10 +43,10 @@ let p = i.memo(function(e) {
       renderPopout: c.Z,
       showAvatarPopout: h,
       showUsernamePopout: p,
-      onClickAvatar: C,
+      onClickAvatar: x,
       onClickUsername: y,
       onContextMenu: _,
-      onPopoutRequestClose: x,
+      onPopoutRequestClose: C,
       roleIcon: b
     })
   }),

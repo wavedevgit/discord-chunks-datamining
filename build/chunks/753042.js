@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => _
 });
@@ -21,7 +21,7 @@ var r = n(255367),
 function _(e) {
   let {
     member: t
-  } = e, n = (0, l.e7)([d.Z], () => d.Z.getGuild(t.guildId), [t.guildId]), _ = (0, c.mh)(t.userId, t.guildId), y = (0, c.mV)(t.userId, t.guildId), C = (0, c.LD)(t.userId), x = (0, c.wi)(t.userId, t.guildId);
+  } = e, n = (0, l.e7)([d.Z], () => d.Z.getGuild(t.guildId), [t.guildId]), _ = (0, c.mh)(t.userId, t.guildId), y = (0, c.mV)(t.userId, t.guildId), x = (0, c.LD)(t.userId), C = (0, c.wi)(t.userId, t.guildId);
   return (i.useEffect(() => {
     (0, s.zO)(t.guildId)
   }, [t.guildId]), null == n) ? null : (0, r.jsx)(a.xJW, {
@@ -87,7 +87,7 @@ function _(e) {
         description: (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-normal",
-          children: C
+          children: x
         })
       }), (0, r.jsx)(f._2, {
         icon: (0, r.jsx)(o.Vj, {
@@ -104,7 +104,7 @@ function _(e) {
         description: (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-normal",
-          children: x
+          children: C
         })
       }), (0, r.jsx)(f._2, {
         icon: (0, r.jsx)(a.ejJ, {

@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => A,
   y: () => T
@@ -20,15 +20,15 @@ var r = n(255367),
   b = n(213609),
   _ = n(795318),
   y = n(670188),
-  C = n(314897),
-  x = n(271383),
+  x = n(314897),
+  C = n(271383),
   v = n(709586),
   j = n(5192),
   O = n(590415),
   E = n(354459),
   I = n(387147);
 
-function P(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function P(e) {
   return e
 }
 
-function S(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -138,11 +138,11 @@ let Z = i.memo(function(e) {
     } = e, {
       user: o,
       blocked: d
-    } = t, v = l.getGuildId(), j = C.default.getId(), {
+    } = t, v = l.getGuildId(), j = x.default.getId(), {
       newestAnalyticsLocation: O
-    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), Z = (0, f.bp)(), T = (0, u.e7)([x.ZP], () => {
+    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), Z = (0, f.bp)(), T = (0, u.e7)([C.ZP], () => {
       var e;
-      return null != v && (null == (e = x.ZP.getMember(v, o.id)) ? void 0 : e.premiumSince) != null
+      return null != v && (null == (e = C.ZP.getMember(v, o.id)) ? void 0 : e.premiumSince) != null
     }, [v, o.id]), A = i.useRef(null);
     s()(null != v, "Channel cannot be guildless");
     let w = i.useCallback(e => {
@@ -158,7 +158,7 @@ let Z = i.memo(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
-        return t => (0, r.jsx)(e, S(P({}, t), {
+        return t => (0, r.jsx)(e, P(S({}, t), {
           user: o,
           guildId: v,
           channel: l,
@@ -180,7 +180,7 @@ let Z = i.memo(function(e) {
       guildId: l.guild_id,
       channelId: l.id,
       clickTrap: !0,
-      children: e => (0, r.jsx)(p.P3F, S(P({
+      children: e => (0, r.jsx)(p.P3F, P(S({
         innerRef: A,
         className: a()(I.tileContainer, {
           [I.singleIcon]: T || d,

@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
   U: () => R,
   Z: () => k
@@ -18,17 +18,17 @@ var r, i = n(255367),
   g = n(213609),
   _ = n(541716),
   b = n(28546),
-  E = n(963249),
+  x = n(963249),
   y = n(703656),
-  x = n(594174),
+  E = n(594174),
   v = n(626135),
-  O = n(51144),
-  C = n(479446),
+  C = n(51144),
+  O = n(479446),
   j = n(795448),
   S = n(441623),
   I = n(317271),
-  N = n(474936),
-  T = n(981631),
+  T = n(474936),
+  N = n(981631),
   P = n(182294),
   A = n(957825),
   w = n(388032),
@@ -43,11 +43,11 @@ function k(e) {
     onMouseEnter: a,
     onMouseLeave: R,
     popoutPosition: k,
-    analyticsPage: D,
-    analyticsSection: M,
-    glow: L,
+    analyticsPage: L,
+    analyticsSection: D,
+    glow: M,
     giftIntentSecondaryAction: U
-  } = e, F = (0, c.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = e, F = (0, c.e7)([E.default], () => E.default.getCurrentUser()), {
     analyticsLocations: B
   } = (0, h.ZP)(), G = (0, c.e7)([S.Z], () => S.Z.getFriendAnniversaryYears(r.id));
   l.useEffect(() => {
@@ -61,29 +61,29 @@ function k(e) {
       }
     })
   }, [t, n]);
-  let H = () => t === N.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t["L2s/Nz"], {
+  let H = () => t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t["L2s/Nz"], {
       numberOfYears: G
-    }) : (0, C.Ou)(t),
+    }) : (0, O.Ou)(t),
     V = "coachmark" === n,
     z = V ? Z.innerContentCoachmark : Z.innerContent,
     W = V ? Z.recipientUserAvatarCoachmark : Z.recipientUserAvatar,
     K = V ? Z.currentUserAvatarCoachmark : Z.currentUserAvatar,
     Y = V ? Z.subHeaderTextCoachmark : Z.subHeaderText,
-    X = V ? d.zxk.Colors.BRAND : d.zxk.Colors.WHITE,
-    q = V ? u.Z.colors.WHITE : u.Z.colors.BG_BRAND,
+    q = V ? d.zxk.Colors.BRAND : d.zxk.Colors.WHITE,
+    X = V ? u.Z.colors.WHITE : u.Z.colors.BG_BRAND,
     Q = V ? Z.buttonTextPrimaryCoachmark : Z.buttonTextPrimary,
     J = V ? Z.buttonSecondaryCoachmark : Z.buttonSecondary,
     $ = V ? Z.buttonTextSecondaryCoachmark : Z.buttonTextSecondary;
   return (0, i.jsx)("div", {
     className: o()(Z.content, {
-      [Z.outerGlow]: L,
+      [Z.outerGlow]: M,
       [Z.contentCoachmark]: V
     }),
     onMouseEnter: a,
     onMouseLeave: R,
     children: (0, i.jsxs)("div", {
       className: o()(z, {
-        [Z.innerGlow]: L
+        [Z.innerGlow]: M
       }),
       children: [(0, i.jsxs)("div", {
         className: Z.subContent,
@@ -106,15 +106,15 @@ function k(e) {
             variant: "text-md/medium",
             color: V ? "header-primary" : "always-white",
             lineClamp: 3,
-            children: t === N.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAA, {
-              friendUserName: O.ZP.getName(r)
-            }) : (0, C.Ou)(t)
+            children: t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAA, {
+              friendUserName: C.ZP.getName(r)
+            }) : (0, O.Ou)(t)
           }), (0, i.jsx)(d.Text, {
             className: Y,
             variant: "text-sm/normal",
-            children: t === N.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.S3fdq6, {
+            children: t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.S3fdq6, {
               numberOfYears: G
-            }) : (0, C.Ou)(t)
+            }) : (0, O.Ou)(t)
           })]
         })]
       }), (0, i.jsxs)("div", {
@@ -122,10 +122,10 @@ function k(e) {
         children: [null != U && (0, i.jsx)(d.zxk, {
           className: o()(Z.button, J),
           onClick: e => {
-            e.stopPropagation(), v.default.track(T.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), v.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: U
-            }), U === N.X2.VIEW_ALL ? ((0, y.uL)(T.Z5c.FRIENDS), m.Z.setSection(T.pJs.ALL)) : U === N.X2.SEND_MESSAGE && ((0, j.PV)(r.id), p.Z.openPrivateChannel({
+            }), U === T.X2.VIEW_ALL ? ((0, y.uL)(N.Z5c.FRIENDS), m.Z.setSection(N.pJs.ALL)) : U === T.X2.SEND_MESSAGE && ((0, j.PV)(r.id), p.Z.openPrivateChannel({
               recipientIds: r.id
             }).then(() => {
               setTimeout(() => {
@@ -145,9 +145,9 @@ function k(e) {
               className: o()(Z.buttonText, $),
               children: (() => {
                 switch (U) {
-                  case N.X2.VIEW_ALL:
+                  case T.X2.VIEW_ALL:
                     return w.intl.string(w.t.WkxniI);
-                  case N.X2.SEND_MESSAGE:
+                  case T.X2.SEND_MESSAGE:
                     return w.intl.string(w.t.I61IsL);
                   default:
                     return
@@ -160,27 +160,27 @@ function k(e) {
           onClick: e => {
             e.stopPropagation();
             let i = (0, I.F)(t);
-            (0, E.Z)({
+            (0, x.Z)({
               isGift: !0,
               initialPlanId: null,
               giftRecipient: r,
               analyticsLocation: "system_message" === n ? i.chat : i.actionButtonCoachmark,
               analyticsLocations: B,
               analyticsObject: {
-                page: D,
-                section: M,
-                object: T.qAy.BUTTON_CTA,
-                objectType: T.Qqv.GIFT
+                page: L,
+                section: D,
+                object: N.qAy.BUTTON_CTA,
+                objectType: N.Qqv.GIFT
               },
               giftMessage: H()
             })
           },
           size: d.zxk.Sizes.MEDIUM,
-          color: X,
+          color: q,
           children: (0, i.jsxs)("div", {
             className: Z.buttonContentContainer,
             children: [(0, i.jsx)(d.OgN, {
-              color: q,
+              color: X,
               size: "custom",
               width: "14",
               height: "14"

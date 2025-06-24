@@ -15,9 +15,9 @@ var o = n(255367),
   p = n(368326),
   m = n(429467),
   b = n(320582),
-  y = n(246016),
-  _ = n(680295),
-  x = n(189156),
+  x = n(246016),
+  y = n(680295),
+  _ = n(189156),
   h = n(706454),
   g = n(699516),
   j = n(246946),
@@ -82,8 +82,8 @@ function $(e) {
     messageId: en,
     roleId: eo,
     showGuildProfile: eu
-  }), eb = r.useRef(null), ey = (0, s.Z)(eb), e_ = (0, T.$m)(), ex = (0, l.q_F)({
-    opacity: +(null != e_.interactionType),
+  }), eb = r.useRef(null), ex = (0, s.Z)(eb), ey = (0, T.$m)(), e_ = (0, l.q_F)({
+    opacity: +(null != ey.interactionType),
     config: {
       duration: 150
     }
@@ -113,7 +113,7 @@ function $(e) {
       user: n,
       currentUser: $
     }),
-    eZ = (0, y.Y)({
+    eZ = (0, x.Y)({
       userId: n.id
     }),
     eC = (0, b.vh)(n.id),
@@ -130,7 +130,7 @@ function $(e) {
       fetchEndedAt: null == eg ? void 0 : eg.fetchEndedAt,
       isLoaded: null == eg ? void 0 : eg.isLoaded,
       children: (0, o.jsx)(T.NJ, {
-        value: e_,
+        value: ey,
         children: (0, o.jsx)(l.Y0X, {
           hideShadow: !0,
           className: Q.root,
@@ -146,8 +146,8 @@ function $(e) {
               style: {
                 backgroundImage: "url(".concat(eP, ")")
               }
-            }), null != e_.interactionType && (0, o.jsx)(i.animated.div, {
-              style: ex,
+            }), null != ey.interactionType && (0, o.jsx)(i.animated.div, {
+              style: e_,
               className: Q.backdrop
             }), (0, o.jsxs)("div", {
               className: Q.profile,
@@ -198,7 +198,6 @@ function $(e) {
                   })
                 }), (0, o.jsxs)(l.y5t, {
                   children: [eI === q.OGo.PENDING_INCOMING && (0, o.jsx)(R.Z.Overlay, {
-                    className: Q.profileOverlay,
                     children: (0, o.jsx)(D.Z, {
                       user: n,
                       applicationId: ev,
@@ -212,7 +211,6 @@ function $(e) {
                       applicationId: r
                     } = e;
                     return (0, o.jsx)(R.Z.Overlay, {
-                      className: Q.profileOverlay,
                       children: (0, o.jsx)(D.Z, {
                         user: n,
                         guildId: null != (t = null == eg ? void 0 : eg.guildId) ? t : void 0,
@@ -223,7 +221,6 @@ function $(e) {
                       })
                     }, r)
                   }), n.isProvisional && (0, o.jsx)(R.Z.Overlay, {
-                    className: Q.profileOverlay,
                     children: (0, o.jsx)(K.Z, {
                       heading: J.intl.string(J.t.Iyka0d),
                       headingVariant: "text-md/semibold",
@@ -232,7 +229,7 @@ function $(e) {
                         color: "currentColor"
                       }),
                       className: Q.profileBanner,
-                      children: (0, o.jsx)(x.n, {
+                      children: (0, o.jsx)(_.n, {
                         userId: n.id,
                         variant: "text-sm/normal"
                       })
@@ -315,9 +312,9 @@ function $(e) {
                     })
                   })]
                 })]
-              }), (null == eg ? void 0 : eg.profileEffectId) != null && (0, o.jsx)(_.Z, {
+              }), (null == eg ? void 0 : eg.profileEffectId) != null && (0, o.jsx)(y.Z, {
                 profileEffectId: null == eg ? void 0 : eg.profileEffectId,
-                isHovering: ey
+                isHovering: ex
               })]
             }), (0, o.jsx)(l.y5t, {
               children: (0, o.jsx)(W.Z, {

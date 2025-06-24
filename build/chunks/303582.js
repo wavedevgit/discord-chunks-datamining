@@ -1,16 +1,16 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => a
+  Z: () => i
 }), n(953529);
 var r = n(255367),
   s = n(763283),
   o = n(204162);
 
-function a(e) {
+function i(e) {
   let {
     name: t,
     description: n,
-    pointsDescription: a
+    pointsDescription: i
   } = e;
   return (0, r.jsxs)("div", {
     className: o.tooltipContent,
@@ -23,10 +23,10 @@ function a(e) {
       variant: "text-sm/normal",
       color: "text-muted",
       children: n
-    }), null != a ? (0, r.jsx)(s.Z, {
+    }), null != i ? (0, r.jsx)(s.Z, {
       variant: "text-sm/normal",
       className: o.pointsDescription,
-      children: a
+      children: i
     }) : null]
   })
 }

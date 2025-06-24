@@ -1,36 +1,36 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 84865 **/
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(499033),
-  a = n(388032),
-  o = n(35539);
+  o = n(388032),
+  s = n(35539);
 
-function s(e) {
+function a(e) {
   let {
     Icon: t,
     header: n,
-    tip: s,
+    tip: a,
     disableStars: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.container,
+    className: s.container,
     children: [(0, r.jsxs)("div", {
-      className: o.iconContainer,
+      className: s.iconContainer,
       children: [(0, r.jsx)(t, {
         color: "currentColor",
         size: "custom",
-        className: o.icon,
+        className: s.icon,
         width: 36,
         height: 36
       }), c ? null : (0, r.jsx)(l.Z, {
-        className: o.stars
+        className: s.stars
       })]
     }), (0, r.jsx)(i.X6q, {
-      className: o.header,
+      className: s.header,
       variant: "heading-xl/semibold",
       children: n
     }), (0, r.jsxs)(i.Text, {
@@ -38,11 +38,11 @@ function s(e) {
       variant: "text-xs/normal",
       children: [c ? null : (0, r.jsxs)(i.Text, {
         tag: "span",
-        className: o.protip,
+        className: s.protip,
         variant: "text-xs/bold",
         color: "text-positive",
-        children: [a.intl.string(a.t["8tvIiI"]), ":", " "]
-      }), s]
+        children: [o.intl.string(o.t["8tvIiI"]), ":", " "]
+      }), a]
     })]
   })
 }

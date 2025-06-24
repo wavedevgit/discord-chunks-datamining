@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
   Z: () => A
 }), n(953529), n(388685);
@@ -18,17 +18,17 @@ var r = n(255367),
   g = n(594174),
   _ = n(78839),
   b = n(55935),
-  E = n(63063),
+  x = n(63063),
   y = n(74538),
-  x = n(276444),
+  E = n(276444),
   v = n(93237),
-  O = n(786397),
-  C = n(474936),
+  C = n(786397),
+  O = n(474936),
   j = n(981631),
   S = n(388032),
   I = n(271818);
 
-function N(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,14 +37,14 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -68,7 +68,7 @@ class P extends i.Component {
       trialOffer: r
     } = this.props;
     return e && !n && void 0 === r.redeemed_at ? S.intl.format(S.t.LwCwT0, {
-      helpdeskArticle: E.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM)
+      helpdeskArticle: x.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM)
     }) : t ? null : S.intl.string(S.t.lQLlOT)
   }
   renderActions(e, t, n) {
@@ -82,16 +82,16 @@ class P extends i.Component {
         this.handleStartTrial(a, s)
       },
       color: d.zxk.Colors.BRAND
-    }, u = o.id !== a.user_id || (0, y.I5)(o) || !o.verified || (0, O.B)(a), p = this.renderExpirationDate(e, t, n);
+    }, u = o.id !== a.user_id || (0, y.I5)(o) || !o.verified || (0, C.B)(a), p = this.renderExpirationDate(e, t, n);
     return c.disabled = u, (0, r.jsxs)("div", {
       className: I.buttonContainer,
       children: [(0, r.jsx)("div", {
-        children: (0, r.jsx)(d.zxk, (i = T({}, c), l = l = {
+        children: (0, r.jsx)(d.zxk, (i = N({}, c), l = l = {
           size: d.zxk.Sizes.SMALL,
           onClick: () => {
             (0, h.Z)({
               initialPlanId: null,
-              subscriptionTier: C.Si.TIER_2,
+              subscriptionTier: O.Si.TIER_2,
               analyticsLocations: s,
               trialId: a.trial_id,
               referralTrialOfferId: a.id
@@ -138,7 +138,7 @@ class P extends i.Component {
       trialOffer: e,
       currentUser: t,
       recipientHasNitro: n
-    } = this.props, i = (0, O.B)(e), l = t.id === e.referrer_id;
+    } = this.props, i = (0, C.B)(e), l = t.id === e.referrer_id;
     return (0, r.jsxs)("div", {
       className: a()(I.tile, I.container),
       children: [(0, r.jsx)("div", {
@@ -160,10 +160,10 @@ class P extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), N(this, "handleStartTrial", (e, t) => {
+    super(...e), T(this, "handleStartTrial", (e, t) => {
       (0, h.Z)({
         initialPlanId: null,
-        subscriptionTier: C.Si.TIER_2,
+        subscriptionTier: O.Si.TIER_2,
         analyticsLocations: t,
         trialId: e.trial_id
       })
@@ -178,9 +178,9 @@ function A(e) {
   } = e, {
     trialOffer: i,
     isResolving: l
-  } = (0, u.cj)([x.Z], () => ({
-    trialOffer: n ? x.Z.getRelevantUserTrialOffer(t) : null,
-    isResolving: !!n && x.Z.isResolving(t)
+  } = (0, u.cj)([E.Z], () => ({
+    trialOffer: n ? E.Z.getRelevantUserTrialOffer(t) : null,
+    isResolving: !!n && E.Z.isResolving(t)
   }), [n, t]), a = g.default.getCurrentUser(), o = (0, u.e7)([g.default], () => null != i && (0, y.I5)(void 0 !== a && i.user_id === a.id ? a : g.default.getUser(i.user_id))), s = (0, u.e7)([_.ZP], () => {
     var e;
     return o ? null == (e = _.ZP.getPremiumTypeSubscription()) ? void 0 : e.trialEndsAt : null
@@ -189,7 +189,7 @@ function A(e) {
   } = (0, f.ZP)(m.Z.SHARE_NITRO_EMBED);
   return l ? (0, r.jsx)(p.OR, {
     isHorizontal: !c.tq
-  }) : n && null != i && void 0 !== a ? (0, r.jsx)(P, T({
+  }) : n && null != i && void 0 !== a ? (0, r.jsx)(P, N({
     trialOffer: i,
     currentUser: a,
     recipientHasNitro: o,

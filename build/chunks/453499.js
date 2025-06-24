@@ -13,8 +13,8 @@ var r, a, i = n(255367),
   m = n(570140),
   h = n(578361),
   g = n(768762),
-  _ = n(259580),
-  f = n(585483),
+  f = n(259580),
+  _ = n(585483),
   b = n(981631),
   x = n(388032),
   v = n(523955);
@@ -34,10 +34,10 @@ let j = {
 };
 class y extends(r = l.PureComponent) {
   componentDidMount() {
-    f.S.subscribe(b.CkL.CAROUSEL_PREV, this.handlePrevious), f.S.subscribe(b.CkL.CAROUSEL_NEXT, this.handleNext)
+    _.S.subscribe(b.CkL.CAROUSEL_PREV, this.handlePrevious), _.S.subscribe(b.CkL.CAROUSEL_NEXT, this.handleNext)
   }
   componentWillUnmount() {
-    f.S.unsubscribe(b.CkL.CAROUSEL_PREV, this.handlePrevious), f.S.unsubscribe(b.CkL.CAROUSEL_NEXT, this.handleNext)
+    _.S.unsubscribe(b.CkL.CAROUSEL_PREV, this.handlePrevious), _.S.unsubscribe(b.CkL.CAROUSEL_NEXT, this.handleNext)
   }
   render() {
     let {
@@ -58,9 +58,9 @@ class y extends(r = l.PureComponent) {
         className: c,
         onClick: this.handlePrevious,
         "aria-label": x.intl.string(x.t.vgfxaG),
-        children: "caret" === s ? (0, i.jsx)(_.Z, {
+        children: "caret" === s ? (0, i.jsx)(f.Z, {
           className: v.arrow,
-          direction: _.Z.Directions.LEFT
+          direction: f.Z.Directions.LEFT
         }) : (0, i.jsx)(g.Z, {
           className: v.arrow,
           direction: g.Z.Directions.LEFT
@@ -81,9 +81,9 @@ class y extends(r = l.PureComponent) {
         className: c,
         onClick: this.handleNext,
         "aria-label": x.intl.string(x.t.XiOHRU),
-        children: "caret" === s ? (0, i.jsx)(_.Z, {
+        children: "caret" === s ? (0, i.jsx)(f.Z, {
           className: v.arrow,
-          direction: _.Z.Directions.RIGHT
+          direction: f.Z.Directions.RIGHT
         }) : (0, i.jsx)(g.Z, {
           className: v.arrow,
           direction: g.Z.Directions.RIGHT
@@ -172,8 +172,8 @@ class I extends(a = l.PureComponent) {
       paginationDotSelectedClassName: p,
       themedPagination: m,
       includeHitboxPadding: g,
-      style: _,
-      aspectRatio: f,
+      style: f,
+      aspectRatio: _,
       children: b
     } = this.props, {
       visibleIndex: x
@@ -182,12 +182,12 @@ class I extends(a = l.PureComponent) {
       className: v.root,
       children: [(0, i.jsxs)("div", {
         className: o()(v.carouselContainer, n),
-        style: _,
+        style: f,
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
         children: [(0, i.jsx)("div", {
           style: {
-            aspectRatio: f
+            aspectRatio: _
           },
           children: (0, i.jsx)(h.Z, {
             className: o()(v.carousel, r),

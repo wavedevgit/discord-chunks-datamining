@@ -1,4 +1,4 @@
-/** Chunk was on 98245 **/
+/** Chunk was on 69978 **/
 "use strict";
 n.d(t, {
   Z: () => o
@@ -14,13 +14,13 @@ function o(e) {
     onClick: t,
     className: n,
     children: o
-  } = e, a = i.useRef(null);
+  } = e, l = i.useRef(null);
   return (0, r.jsx)("div", {
     onClick: t,
-    ref: a,
+    ref: l,
     className: n,
     children: o({
-      areaRef: a,
+      areaRef: l,
       handleStopPropagation: s
     })
   })

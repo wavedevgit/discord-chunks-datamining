@@ -1,6 +1,6 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
-  Z: () => y
+  Z: () => O
 });
 var r = n(255367),
   i = n(73800),
@@ -47,7 +47,7 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = [{
+let _ = [{
     key: "EVENTS",
     renderIcon: e => (0, r.jsx)(o.Que, {
       size: "md",
@@ -114,7 +114,7 @@ let O = [{
       }))
     })
   }],
-  y = e => {
+  O = e => {
     let {
       guild: t,
       channel: n
@@ -136,7 +136,7 @@ let O = [{
       numEvents: o.length
     }), [o.length]), m = (0, p.t)(n);
     return (0, r.jsx)(r.Fragment, {
-      children: O.map(e => {
+      children: _.map(e => {
         let {
           key: i,
           getName: l,

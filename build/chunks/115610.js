@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
   O: () => _
 }), n(642613), n(472816), n(794429);
@@ -24,13 +24,13 @@ async function _(e, t) {
   var n, f, _;
   let b = t.getGuildId();
   if (null == b || null == u.Z.getGuild(b)) return;
-  let E = d.default.getCurrentUser();
-  if (null == E) return;
+  let x = d.default.getCurrentUser();
+  if (null == x) return;
   await (0, o.$p)();
   let y = Array.from(s.Z.getAllStickersIterator()),
-    x = y.filter(e => e.type === c.n0.GUILD).filter(e => g(e.guild_id) && (0, a.kl)(e, E, t)).sort((e, t) => -m.default.compare(e.id, t.id));
-  if (x.length > 5) {
-    let i = [x[Math.floor(Math.pow(Math.random(), 2) * x.length)].id];
+    E = y.filter(e => e.type === c.n0.GUILD).filter(e => g(e.guild_id) && (0, a.kl)(e, x, t)).sort((e, t) => -m.default.compare(e.id, t.id));
+  if (E.length > 5) {
+    let i = [E[Math.floor(Math.pow(Math.random(), 2) * E.length)].id];
     r.Z.sendStickers(t.id, i, "", {
       messageReference: {
         guild_id: null != (n = t.getGuildId()) ? n : void 0,
@@ -57,9 +57,9 @@ async function _(e, t) {
     });
     return
   }
-  let O = y.filter(e => e.type === c.n0.STANDARD),
-    C = [O[Math.floor(Math.random() * O.length)].id];
-  r.Z.sendStickers(t.id, C, "", {
+  let C = y.filter(e => e.type === c.n0.STANDARD),
+    O = [C[Math.floor(Math.random() * C.length)].id];
+  r.Z.sendStickers(t.id, O, "", {
     messageReference: {
       guild_id: null != (_ = t.getGuildId()) ? _ : void 0,
       channel_id: t.id,

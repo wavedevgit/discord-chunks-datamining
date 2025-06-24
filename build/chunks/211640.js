@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => f
 });
@@ -22,20 +22,20 @@ function f(e) {
     channel: m
   } = e, g = (0, i.e7)([u.Z], () => null != n && null != f && (0, o.CX)(n, f, [u.Z])), {
     messageReference: b
-  } = t, _ = (0, i.e7)([c.Z], () => null != b ? c.Z.getMessage(b.channel_id, b.message_id) : null), y = (0, i.e7)([s.Z], () => null != _ ? s.Z.getChannel(_.channel_id) : null), C = (0, i.e7)([s.Z], () => {
+  } = t, _ = (0, i.e7)([c.Z], () => null != b ? c.Z.getMessage(b.channel_id, b.message_id) : null), y = (0, i.e7)([s.Z], () => null != _ ? s.Z.getChannel(_.channel_id) : null), x = (0, i.e7)([s.Z], () => {
     var e, t;
     return null != (t = null == (e = s.Z.getChannel(m.id)) ? void 0 : e.isArchivedThread()) && t
   });
   if (!g) return null;
-  let x = null == _ ? h.intl.string(p.default["0IZbwM"]) : h.intl.string(p.default.Uj6oDw),
+  let C = null == _ ? h.intl.string(p.default["0IZbwM"]) : h.intl.string(p.default.Uj6oDw),
     v = null == _,
     j = "delete-message-".concat(t.id);
   return (0, r.jsx)(d.Z, {
-    text: x,
+    text: C,
     icon: l.XHJ,
     onClick: () => {
       null != y && null != _ && a.Z.confirmDelete(y, _, !1, {
-        isFlagResolved: C,
+        isFlagResolved: x,
         moderatorReportChannelId: m.id
       })
     },

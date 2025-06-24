@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => O
+  Z: () => E
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(255367);
 n(73800);
@@ -50,7 +50,7 @@ function _(e, t) {
   }), e
 }
 
-function E(e, t) {
+function O(e, t) {
   function n() {
     (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
       children: (0, r.jsx)(c.Lk, {
@@ -65,14 +65,14 @@ function E(e, t) {
     }
   }
 }
-let O = (0, h.Z)(e => {
+let E = (0, h.Z)(e => {
   var t;
   let {
     clientId: n,
     authorizations: u,
     scopes: d,
     parsedPermissions: h,
-    responseType: O,
+    responseType: E,
     redirectUri: y,
     codeChallenge: I,
     codeChallengeMethod: v,
@@ -85,14 +85,14 @@ let O = (0, h.Z)(e => {
     integrationType: A,
     pid: Z,
     signal: x
-  } = e, L = "OAuth2Authorize_".concat(n, "_").concat(S, "_").concat(N), w = null != A ? null == u ? void 0 : u.get(A) : void 0, R = null != (t = null == w ? void 0 : w.application) ? t : a.Z.getApplication(n);
+  } = e, w = "OAuth2Authorize_".concat(n, "_").concat(S, "_").concat(N), L = null != A ? null == u ? void 0 : u.get(A) : void 0, R = null != (t = null == L ? void 0 : L.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
     let a = (0, f.jU)(Z),
-      w = i.z1l;
+      L = i.z1l;
     null != R && null != (0, l.ZP)({
       application: R,
       channelId: N
-    }) ? w = i.u1M : a.context === g.IlC.POPOUT && (w = i.u1M);
+    }) ? L = i.u1M : a.context === g.IlC.POPOUT && (L = i.u1M);
     let D = !1,
       k = l => {
         let {
@@ -114,7 +114,7 @@ let O = (0, h.Z)(e => {
             let t = "OAuth2AuthorizeExternalSuccess_".concat(n, "_").concat(S, "_").concat(N),
               {
                 cleanup: l
-              } = E(t, x);
+              } = O(t, x);
             (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
               footer: (0, r.jsx)(c.qN, {
                 application: R,
@@ -131,12 +131,12 @@ let O = (0, h.Z)(e => {
               onCloseCallback: () => {
                 l(), e(u), a.lock()
               }
-            }, w)
+            }, L)
           } else {
             let t = "OAuth2AuthorizeExternalError_".concat(n, "_").concat(S, "_").concat(N),
               {
                 cleanup: l
-              } = E(t, x);
+              } = O(t, x);
             (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
               footer: (0, r.jsx)(c.qN, {
                 application: R,
@@ -149,20 +149,20 @@ let O = (0, h.Z)(e => {
               onCloseCallback: () => {
                 l(), e(u), a.lock()
               }
-            }, w)
+            }, L)
           }
         }
       },
       {
         cleanup: M
-      } = E(L, x);
+      } = O(w, x);
     (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, _(b({}, e), {
       authorizations: u,
       clientId: n,
       scopes: null != d ? d : [],
       disclosures: null != j ? j : [],
       callback: k,
-      responseType: O,
+      responseType: E,
       redirectUri: y,
       codeChallenge: I,
       codeChallengeMethod: v,
@@ -175,13 +175,13 @@ let O = (0, h.Z)(e => {
       integrationType: A,
       cancelCompletesFlow: !0
     })), {
-      modalKey: L,
+      modalKey: w,
       onCloseCallback: () => {
         M(), D || (t(new p.Z({
           errorCode: g.lTL.OAUTH2_ERROR
         }, "User cancelled authorization")), a.lock())
       }
-    }, w)
+    }, L)
   })
 }, function(e, t, n) {
   if ((0, f.br)(n) || !u.isPlatformEmbedded) return;

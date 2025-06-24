@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 e.exports = {
   centeringContainer: "centeringContainer__0d97c",
   titleContainer: "titleContainer__0d97c centeringContainer__0d97c",

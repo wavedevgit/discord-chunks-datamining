@@ -69,7 +69,7 @@ function L(e) {
     context: L,
     className: R,
     sectionName: w
-  } = e, Z = r.useRef(null), k = (0, a.e7)([j.Z], () => j.Z.entrypoint()), M = (0, N.L1)(l), D = (0, m.Eb)(M), U = (0, d.R)(l.id), B = (0, a.e7)([_.Z], () => {
+  } = e, k = r.useRef(null), Z = (0, a.e7)([j.Z], () => j.Z.entrypoint()), M = (0, N.L1)(l), D = (0, m.Eb)(M), U = (0, d.R)(l.id), B = (0, a.e7)([_.Z], () => {
     var e;
     return null != (e = _.Z.getGuildId()) ? e : void 0
   }, []), H = {
@@ -95,7 +95,7 @@ function L(e) {
         }, M));
         (0, x.JG)(e, () => (0, c.showToast)((0, c.createToast)(I.intl.string(I.t["L/PwZW"]), c.ToastType.SUCCESS))), v.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: l.id,
-          source: k
+          source: Z
         })
       },
       className: o()(O.clickable, R),
@@ -105,7 +105,7 @@ function L(e) {
         color: c.TVs.colors.INTERACTIVE_ACTIVE
       })
     }), (0, i.jsx)(c.yRy, {
-      targetElementRef: Z,
+      targetElementRef: k,
       renderPopout: e => {
         let {
           closePopout: t
@@ -169,7 +169,7 @@ function L(e) {
       align: "right",
       position: "bottom",
       children: e => (0, i.jsx)(c.P3F, T(S({
-        innerRef: Z
+        innerRef: k
       }, e), {
         onClick: e.onClick,
         className: o()(O.clickable, R),

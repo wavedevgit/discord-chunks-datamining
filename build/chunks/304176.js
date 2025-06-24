@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var o = n(442837),
-  l = n(481060),
+var l = n(442837),
+  o = n(481060),
   i = n(493773),
   s = n(367907),
   a = n(111028),
@@ -70,18 +70,18 @@ let S = e => {
       guild_id: n.id
     }, (0, s.v_)(g.Z.getChannel(b.Z.getChannelId(n.id)))))
   });
-  let N = (0, o.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : void 0),
+  let N = (0, l.e7)([f.Z], () => null != t.roleId ? f.Z.getRole(n.id, t.roleId) : void 0),
     E = (0, p.Z)(N),
-    T = E ? P.intl.formatToPlainString(P.t.t0928f, {
+    Z = E ? P.intl.formatToPlainString(P.t.t0928f, {
       name: S
     }) : P.intl.formatToPlainString(P.t.UDDkGx, {
       name: S
     }),
-    R = w(C({}, t), {
+    T = w(C({}, t), {
       src: null == t.src ? t.src : (0, u.o)(t.src, 40),
       size: 40
     }),
-    Z = E ? () => {
+    R = E ? () => {
       (0, m.uL)(j.Z5c.CHANNEL(n.id, v.oC.ROLE_SUBSCRIPTIONS))
     } : () => {
       (0, d.f)({
@@ -91,7 +91,7 @@ let S = e => {
         }
       })
     };
-  return (0, r.jsx)(l.VqE, {
+  return (0, r.jsx)(o.VqE, {
     children: (0, r.jsx)(y.W_, {
       children: (0, r.jsxs)("div", {
         className: x.popoutContainer,
@@ -99,31 +99,31 @@ let S = e => {
           className: x.mainContent,
           children: [(0, r.jsx)("div", {
             className: x.roleIconContainer,
-            children: (0, r.jsx)(c.Z, w(C({}, R), {
+            children: (0, r.jsx)(c.Z, w(C({}, T), {
               enableTooltip: !1,
               className: x.__invalid_roleIcon,
               enableHeight: !1
             }))
           }), (0, r.jsxs)("div", {
             className: x.truncatingText,
-            children: [(0, r.jsx)(l.X6q, {
+            children: [(0, r.jsx)(o.X6q, {
               variant: "heading-md/semibold",
               className: x.roleName,
               children: (0, r.jsx)(a.Z, {
                 children: S
               })
-            }), (0, r.jsx)(l.Text, {
+            }), (0, r.jsx)(o.Text, {
               variant: "text-sm/normal",
-              children: T
+              children: Z
             })]
           })]
-        }), (0, r.jsxs)(l.zxk, {
-          size: l.zxk.Sizes.SMALL,
-          color: l.zxk.Colors.PRIMARY,
+        }), (0, r.jsxs)(o.zxk, {
+          size: o.zxk.Sizes.SMALL,
+          color: o.zxk.Colors.PRIMARY,
           className: x.ctaButton,
           innerClassName: x.ctaButtonContent,
           fullWidth: !0,
-          onClick: Z,
+          onClick: R,
           autoFocus: !0,
           children: [(0, r.jsx)(h.Z, {
             width: 14,

@@ -1,11 +1,12 @@
-/** Chunk was on 2286 **/
+/** Chunk was on 69978 **/
+"use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => c
 }), n(388685);
-var l, i = n(442837),
-  r = n(570140);
+var r, i = n(442837),
+  s = n(570140);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -13,27 +14,27 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let u = new Set;
-class s extends(l = i.ZP.PersistedStore) {
+let l = new Set;
+class a extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    u.clear(), null == e || e.guilds.forEach(e => u.add(e))
+    l.clear(), null == e || e.guilds.forEach(e => l.add(e))
   }
   isCollapsed(e) {
-    return u.has(e)
+    return l.has(e)
   }
   getState() {
     return {
-      guilds: u
+      guilds: l
     }
   }
 }
-a(s, "displayName", "RecentlyActiveCollapseStore"), a(s, "persistKey", "RecentlyActiveCollapseStore");
-let o = new s(r.Z, {
+o(a, "displayName", "RecentlyActiveCollapseStore"), o(a, "persistKey", "RecentlyActiveCollapseStore");
+let c = new a(s.Z, {
   SET_RECENTLY_ACTIVE_COLLAPSED: function(e) {
     let {
       guildId: t,
       collapsed: n
     } = e;
-    n ? u.add(t) : u.delete(t)
+    n ? l.add(t) : l.delete(t)
   }
 })

@@ -1,6 +1,6 @@
 /** Chunk was on 19370 **/
 n.d(t, {
-  default: () => h
+  default: () => _
 }), n(388685);
 var a = n(255367),
   r = n(73800),
@@ -10,25 +10,24 @@ var a = n(255367),
   l = n(481060),
   s = n(376641),
   u = n(714338),
-  d = n(540059),
   p = n(585483),
-  m = n(254109),
-  g = n(212459),
-  y = n(730606),
-  f = n(860153),
-  b = n(981631),
-  O = n(388032),
-  _ = n(269045);
+  d = n(254109),
+  m = n(212459),
+  g = n(730606),
+  y = n(860153),
+  f = n(981631),
+  b = n(388032),
+  O = n(269045);
 
-function h(e) {
+function _(e) {
   var {
     onClose: t,
     items: n,
     startingIndex: o,
-    enabledContentHarmTypeFlags: h,
-    shouldHideMediaOptions: S = !1,
-    transitionState: v
-  } = e, j = function(e, t) {
+    enabledContentHarmTypeFlags: _,
+    shouldHideMediaOptions: h = !1,
+    transitionState: S
+  } = e, v = function(e, t) {
     if (null == e) return {};
     var n, a, r = function(e, t) {
       if (null == e) return {};
@@ -43,36 +42,36 @@ function h(e) {
     }
     return r
   }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]);
-  let [C, T] = r.useState(null != o ? o : 0), [E, P] = r.useState(!1), x = r.useRef(null), M = (0, d.Q3)("MediaViewerModal");
+  let [j, C] = r.useState(null != o ? o : 0), [T, E] = r.useState(!1), P = r.useRef(null);
   r.useEffect(() => {
-    if (null != t) return p.S.subscribe(b.CkL.MEDIA_MODAL_CLOSE, t), () => {
-      p.S.unsubscribe(b.CkL.MEDIA_MODAL_CLOSE, t)
+    if (null != t) return p.S.subscribe(f.CkL.MEDIA_MODAL_CLOSE, t), () => {
+      p.S.unsubscribe(f.CkL.MEDIA_MODAL_CLOSE, t)
     }
   }, [t]), r.useEffect(() => {
     var e, t;
-    v === l.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(s.P)), v === l.Dvm.HIDDEN && (u.Z.disable(), u.Z.enableTemp(s.v));
+    S === l.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(s.P)), S === l.Dvm.HIDDEN && (u.Z.disable(), u.Z.enableTemp(s.v));
     let n = () => {
         u.Z.disable(), u.Z.enableTemp(s.P)
       },
       a = () => {
         u.Z.disableTemp()
       },
-      r = null == (t = x.current) || null == (e = t.ownerDocument) ? void 0 : e.defaultView;
+      r = null == (t = P.current) || null == (e = t.ownerDocument) ? void 0 : e.defaultView;
     return null == r || r.addEventListener("focus", n), null == r || r.addEventListener("blur", a), () => {
       null == r || r.removeEventListener("focus", n), null == r || r.removeEventListener("blur", a), u.Z.disableTemp()
     }
-  }, [v]);
-  let w = r.useCallback(e => {
-      T(e), (0, m.yg)(m.uG.SELECTED_ITEM_CHANGE)
+  }, [S]);
+  let x = r.useCallback(e => {
+      C(e), (0, d.yg)(d.uG.SELECTED_ITEM_CHANGE)
     }, []),
-    D = r.useMemo(() => ({
-      zoomed: E,
-      setZoomed: P,
-      entering: v === l.Dvm.ENTERING || null == v
-    }), [E, v]),
-    I = n[C];
+    M = r.useMemo(() => ({
+      zoomed: T,
+      setZoomed: E,
+      entering: S === l.Dvm.ENTERING || null == S
+    }), [T, S]),
+    w = n[j];
   return (0, a.jsx)(l.f6W, {
-    theme: M ? b.BRd.MIDNIGHT : b.BRd.DARK,
+    theme: f.BRd.MIDNIGHT,
     children: e => {
       var r, o;
       return (0, a.jsx)(l.Y0X, (r = function(e) {
@@ -94,32 +93,32 @@ function h(e) {
         return e
       }({
         hideShadow: !0,
-        className: i()(_.carouselModal, e),
-        transitionState: v
-      }, j), o = o = {
+        className: i()(O.carouselModal, e),
+        transitionState: S
+      }, v), o = o = {
         size: l.CgR.DYNAMIC,
         animation: c.fM.SUBTLE,
         fullscreenOnMobile: !1,
         onClick: t,
-        "aria-label": O.intl.string(O.t.AMTX3t),
+        "aria-label": b.intl.string(b.t.AMTX3t),
         parentComponent: "MediaViewerModal",
-        children: (0, a.jsxs)(g.z.Provider, {
-          value: D,
-          children: [(0, a.jsx)(f.Z, {
-            item: I,
-            hideMediaOptions: S,
+        children: (0, a.jsxs)(m.z.Provider, {
+          value: M,
+          children: [(0, a.jsx)(y.Z, {
+            item: w,
+            hideMediaOptions: h,
             onClose: t
           }), (0, a.jsx)("div", {
             style: {
               display: "none"
             },
-            ref: x
-          }), (0, a.jsx)(y.ZP, {
+            ref: P
+          }), (0, a.jsx)(g.ZP, {
             items: n,
-            startIndex: C,
-            onIndexChange: w,
-            enabledContentHarmTypeFlags: h,
-            shouldHideMediaOptions: S
+            startIndex: j,
+            onIndexChange: x,
+            enabledContentHarmTypeFlags: _,
+            shouldHideMediaOptions: h
           })]
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {

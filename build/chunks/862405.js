@@ -1,12 +1,12 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => C
+  Z: () => w
 }), n(388685);
 var r = n(255367),
   s = n(73800),
   o = n(524979),
-  a = n(442837),
-  i = n(481060),
+  i = n(442837),
+  a = n(481060),
   c = n(313201),
   l = n(668826),
   u = n(120421),
@@ -44,7 +44,7 @@ function _(e) {
 function P(e) {
   let {
     percent: t
-  } = e, n = (0, c.Dt)(), s = (0, i.q_F)({
+  } = e, n = (0, c.Dt)(), s = (0, a.q_F)({
     width: t / 100 * 372
   });
   return (0, r.jsxs)("svg", {
@@ -90,31 +90,31 @@ function P(e) {
   })
 }
 
-function C() {
+function w() {
   var e, t;
-  let n = (0, a.e7)([u.Z], () => u.Z.lifetimePoints),
-    [o, i] = (0, f.Z)(y.yN.LEVELING),
+  let n = (0, i.e7)([u.Z], () => u.Z.lifetimePoints),
+    [o, a] = (0, f.Z)(y.yN.LEVELING),
     c = null != (e = null == o ? void 0 : o.lastLevelClaimed) ? e : 0,
     _ = null != (t = null == o ? void 0 : o.pointsWhenUnlocked) ? t : n,
-    C = n - _,
-    Z = function e(t, n) {
+    w = n - _,
+    C = function e(t, n) {
       return t >= N(n) ? e(t, n + 1) : n
-    }(C, 1),
-    w = N(Z - 1),
-    E = N(Z),
-    S = C - w,
-    I = E - w,
+    }(w, 1),
+    Z = N(C - 1),
+    S = N(C),
+    I = w - Z,
+    E = S - Z,
     k = c + 1,
     M = Math.floor(.1 * (N(k) - N(k - 1))),
-    R = (0, g.eR)(O);
-  (0, p.Z)(j, Z);
-  let A = (0, s.useCallback)(() => {
-    i({
+    A = (0, g.eR)(O);
+  (0, p.Z)(j, C);
+  let R = (0, s.useCallback)(() => {
+    a({
       lastLevelClaimed: k
-    }), (0, l.KH)(y.yN.LEVELING, M), R()
-  }, [k, M, R, i]);
+    }), (0, l.KH)(y.yN.LEVELING, M), A()
+  }, [k, M, A, a]);
   return (0, s.useEffect)(() => {
-    (null == o ? void 0 : o.pointsWhenUnlocked) == null && i({
+    (null == o ? void 0 : o.pointsWhenUnlocked) == null && a({
       pointsWhenUnlocked: n
     })
   }, []), (0, r.jsxs)("div", {
@@ -125,15 +125,15 @@ function C() {
         variant: "text-lg/bold",
         color: "clicker-game-brand",
         children: x.intl.format(h.default.IG6UGB, {
-          level: Z
+          level: C
         })
       }), (0, r.jsx)(b.Z, {
         className: v.experience,
         variant: "text-sm/medium",
         color: "clicker-game-brand",
         children: x.intl.format(h.default.Rfy3Cg, {
-          currentExperience: Math.floor(S),
-          requiredExperience: I,
+          currentExperience: Math.floor(I),
+          requiredExperience: E,
           experienceHook: (e, t) => (0, r.jsx)("span", {
             className: v.monospace,
             children: e
@@ -142,10 +142,10 @@ function C() {
         })
       })]
     }), (0, r.jsx)(P, {
-      percent: S / I * 100
-    }), k < Z ? (0, r.jsx)(m.Z, {
+      percent: I / E * 100
+    }), k < C ? (0, r.jsx)(m.Z, {
       className: v.claimButton,
-      onClick: A,
+      onClick: R,
       children: x.intl.format(h.default.IUF6np, {
         points: M,
         grassIconHook: d.Z

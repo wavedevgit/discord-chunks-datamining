@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => w
 });
@@ -20,15 +20,15 @@ var i = n(657707),
   b = n(280885),
   _ = n(483424),
   y = n(681837),
-  C = n(78806),
-  x = n(91433),
+  x = n(78806),
+  C = n(91433),
   v = n(900927),
   j = n(944043),
   O = n(678738),
   E = n(638970),
   I = n(502762),
-  P = n(530),
-  S = n(827313),
+  S = n(530),
+  P = n(827313),
   Z = n(228168),
   N = n(981631),
   T = n(388032),
@@ -43,8 +43,8 @@ function w(e) {
     isHovering: M,
     onOpenProfile: k
   } = e, {
-    relationshipType: L,
-    originApplicationId: D
+    relationshipType: D,
+    originApplicationId: L
   } = (0, l.cj)([u.Z], () => ({
     relationshipType: u.Z.getRelationshipType(t.id),
     originApplicationId: u.Z.getOriginApplicationId(t.id)
@@ -58,7 +58,7 @@ function w(e) {
   });
   return (0, r.jsxs)("div", {
     className: A.body,
-    children: [(0, r.jsx)(P.Z, {
+    children: [(0, r.jsx)(S.Z, {
       user: t,
       nickname: p.ZP.getName(null, R.id, t),
       pronouns: null == w ? void 0 : w.pronouns,
@@ -70,20 +70,20 @@ function w(e) {
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(y.Z, {
           userId: t.id
-        }), !F && (0, r.jsx)(S.Z, {
+        }), !F && (0, r.jsx)(P.Z, {
           userId: t.id,
           isHovering: M,
           onOpenProfile: k
         })]
       })
-    }), L === N.OGo.PENDING_INCOMING && (0, r.jsx)(I.Z.Overlay, {
-      children: (0, r.jsx)(x.Z, {
+    }), D === N.OGo.PENDING_INCOMING && (0, r.jsx)(I.Z.Overlay, {
+      children: (0, r.jsx)(C.Z, {
         user: t,
         channelId: R.id,
-        applicationId: D
+        applicationId: L
       })
     }), U.map(e => (0, r.jsx)(I.Z.Overlay, {
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(C.Z, {
         user: t,
         isGameRelationship: !0,
         applicationId: e.applicationId,
@@ -133,7 +133,7 @@ function w(e) {
       }), B.length > 0 && (0, r.jsx)(O.Z, {
         heading: T.intl.string(T.t["Uv/eT0"]),
         headingColor: "header-primary",
-        children: (0, r.jsx)(C.Z, {
+        children: (0, r.jsx)(x.Z, {
           applicationIds: B
         })
       }), (0, r.jsx)(O.Z, {

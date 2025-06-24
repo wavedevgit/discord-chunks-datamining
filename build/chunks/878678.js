@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ConfirmModal: () => p,
-  s: () => h
+  ConfirmModal: () => _,
+  s: () => p
 });
 var r = n(255367),
   i = n(73800),
@@ -10,11 +10,10 @@ var r = n(255367),
   o = n.n(a),
   s = n(693789),
   l = n(481060),
-  c = n(540059),
-  u = n(709692),
-  d = n(115589);
+  c = n(709692),
+  u = n(115589);
 
-function f(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,94 +22,93 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e) {
+function _(e) {
   let t, n, {
       header: a,
-      children: f,
-      confirmText: _,
-      cancelText: p,
-      className: h,
-      onConfirm: m,
-      onCancel: g,
-      onClose: E,
-      onCloseCallback: b,
-      bodyClassName: y,
-      transitionState: O,
-      loading: v = !1,
-      confirmButtonColor: I = s.zx.Colors.RED,
-      focusCancel: T = !1,
-      impression: S
+      children: d,
+      confirmText: f,
+      cancelText: _,
+      className: p,
+      onConfirm: h,
+      onCancel: m,
+      onClose: g,
+      onCloseCallback: E,
+      bodyClassName: b,
+      transitionState: y,
+      loading: O = !1,
+      confirmButtonColor: v = s.zx.Colors.RED,
+      focusCancel: I = !1,
+      impression: T
     } = e,
-    A = i.useRef(null),
-    N = (0, c.Q3)("ConfirmModal");
+    S = i.useRef(null);
   return i.useEffect(() => {
-    T || setTimeout(() => {
+    I || setTimeout(() => {
       var e;
-      return null == (e = A.current) ? void 0 : e.focus()
+      return null == (e = S.current) ? void 0 : e.focus()
     }, 0)
-  }, [T]), i.useLayoutEffect(() => () => null == b ? void 0 : b()), null != p && (t = (0, r.jsx)(s.zx, {
+  }, [I]), i.useLayoutEffect(() => () => null == E ? void 0 : E()), null != _ && (t = (0, r.jsx)(s.zx, {
     type: "button",
-    look: N ? s.zx.Looks.FILLED : s.zx.Looks.LINK,
+    look: s.zx.Looks.FILLED,
     color: s.zx.Colors.PRIMARY,
-    className: d.cancelButton,
+    className: u.cancelButton,
     size: s.zx.Sizes.MEDIUM,
-    disabled: v,
+    disabled: O,
     onClick: () => {
-      null == g || g(), E()
+      null == m || m(), g()
     },
-    autoFocus: T,
-    children: p
-  })), null != _ && (n = (0, r.jsx)(s.zx, {
-    buttonRef: A,
+    autoFocus: I,
+    children: _
+  })), null != f && (n = (0, r.jsx)(s.zx, {
+    buttonRef: S,
     type: "submit",
     size: s.zx.Sizes.MEDIUM,
-    color: I,
-    submitting: v,
+    color: v,
+    submitting: O,
     onClick: async () => {
       try {
-        await (null == m ? void 0 : m()), E()
+        await (null == h ? void 0 : h()), g()
       } catch (e) {
         throw e
       }
     },
-    autoFocus: !T,
-    children: _
-  })), (0, r.jsxs)(u.Y0, {
-    className: h,
-    transitionState: O,
-    impression: S,
+    autoFocus: !I,
+    children: f
+  })), (0, r.jsxs)(c.Y0, {
+    className: p,
+    transitionState: y,
+    impression: T,
     parentComponent: "ConfirmModal",
-    children: [null != a ? (0, r.jsx)(u.xB, {
+    children: [null != a ? (0, r.jsx)(c.xB, {
       separator: !1,
       children: (0, r.jsx)(l.X6q, {
         variant: "heading-lg/semibold",
         children: a
       })
-    }) : null, (0, r.jsx)(u.hz, {
-      className: o()(d.content, y),
-      children: f
-    }), (0, r.jsxs)(u.mz, {
+    }) : null, (0, r.jsx)(c.hz, {
+      className: o()(u.content, b),
+      children: d
+    }), (0, r.jsxs)(c.mz, {
       children: [n, t]
     })]
   })
 }
 
-function h(e) {
-  return (0, r.jsx)(u.u_, {
+function p(e) {
+  return (0, r.jsx)(c.u_, {
     onCloseRequest: e.dismissable ? e.onCancel : null,
-    renderModal: t => (0, r.jsx)(p, _({}, t, e))
+    renderModal: t => (0, r.jsx)(_, f({}, t, e))
   })
 }

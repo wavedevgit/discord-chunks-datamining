@@ -1,4 +1,4 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 e.exports = {
   folderGroup: "folderGroup__48112",
   folderGroupBackground: "folderGroupBackground__48112",

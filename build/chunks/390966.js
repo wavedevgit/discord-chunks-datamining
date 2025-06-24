@@ -93,9 +93,9 @@ function j(e) {
     recurrenceId: E
   } = e, N = (0, u.dQu)(o.Z.colors.TEXT_BRAND).hex(), S = (0, u.dQu)(o.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), T = (0, u.dQu)(o.Z.colors.TEXT_DANGER).hex();
   null == h && (h = i === m.WX.EXTERNAL ? p.intl.string(p.t.IyZxjI) : p.intl.string(p.t["X2K3//"]));
-  let D = (0, d.Z)(E, w),
+  let Z = (0, d.Z)(E, w),
     [{
-      startDateTimeString: Z,
+      startDateTimeString: D,
       endDateTimeString: I,
       currentOrPastEvent: _,
       upcomingEvent: C,
@@ -108,12 +108,12 @@ function j(e) {
       clearInterval(e)
     }
   }, [t, j]);
-  let A = Z;
+  let A = D;
   null != I && "" !== I && (A = p.intl.formatToPlainString(p.t.tXbu7O, {
-    start: Z,
+    start: D,
     end: I
   }));
-  let R = l.useMemo(() => n === m.p1.CANCELED || (null == D ? void 0 : D.is_canceled) ? 5 : n === m.p1.ACTIVE ? 3 : m.$I.has(n) ? 4 : _ ? 2 : +!!C, [n, null == D ? void 0 : D.is_canceled, _, C]),
+  let R = l.useMemo(() => n === m.p1.CANCELED || (null == Z ? void 0 : Z.is_canceled) ? 5 : n === m.p1.ACTIVE ? 3 : m.$I.has(n) ? 4 : _ ? 2 : +!!C, [n, null == Z ? void 0 : Z.is_canceled, _, C]),
     z = function(e, t, n, l, i) {
       switch (e) {
         case 1:
@@ -180,8 +180,8 @@ function j(e) {
       textPositive: S,
       textDanger: T,
       endDateTimeString: I,
-      startDateTimeString: Z
-    }), [R, N, S, T, I, Z]),
+      startDateTimeString: D
+    }), [R, N, S, T, I, D]),
     M = null;
   if (null != P) {
     let e = (0, f.Ho)(P);

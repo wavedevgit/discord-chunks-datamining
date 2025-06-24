@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
   Z: () => j
 }), n(388685), n(415506);
@@ -17,10 +17,10 @@ var r, i = n(255367),
   g = n(358085),
   _ = n(346329),
   b = n(981631),
-  E = n(388032),
+  x = n(388032),
   y = n(637214);
 
-function x(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -36,13 +36,13 @@ function v(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,9 +54,9 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class C extends(r = l.PureComponent) {
+class O extends(r = l.PureComponent) {
   get analyticsLocation() {
-    return O(v({}, this.props.analyticsContext.location), {
+    return C(v({}, this.props.analyticsContext.location), {
       object: b.qAy.BUTTON_CTA
     })
   }
@@ -65,7 +65,7 @@ class C extends(r = l.PureComponent) {
       dispatchState: e
     } = this.props;
     return null != e && null != e.launchOptions && Object.keys(e.launchOptions).length > 1 ? (0, i.jsxs)(c.P3F, {
-      "aria-label": E.intl.string(E.t.KTPVLC),
+      "aria-label": x.intl.string(x.t.KTPVLC),
       className: y.dropdownArrowHitbox,
       onClick: this.handleDropdownClick,
       children: [(0, i.jsx)("div", {
@@ -115,8 +115,8 @@ class C extends(r = l.PureComponent) {
       isShiny: u,
       hideNotLaunchable: d
     } = this.props;
-    if (!l) return d ? null : this.renderDisabledButton(E.intl.string(E.t["359PbW"]), g.isPlatformEmbedded ? E.intl.string(E.t.NASLa2) : E.intl.string(E.t.o1bhkJ));
-    if (s) return this.renderDisabledButton(E.intl.string(E.t["3elwAA"]));
+    if (!l) return d ? null : this.renderDisabledButton(x.intl.string(x.t["359PbW"]), g.isPlatformEmbedded ? x.intl.string(x.t.NASLa2) : x.intl.string(x.t.o1bhkJ));
+    if (s) return this.renderDisabledButton(x.intl.string(x.t["3elwAA"]));
     let p = u ? c.gtL : c.zxk;
     return (0, i.jsxs)(p, {
       className: o()(y.playButton, e),
@@ -128,12 +128,12 @@ class C extends(r = l.PureComponent) {
       onClick: this.handleClick,
       children: [(0, i.jsx)("div", {
         className: y.buttonText,
-        children: E.intl.string(E.t["359PbW"])
+        children: x.intl.string(x.t["359PbW"])
       }), this.renderDropdown()]
     })
   }
   constructor(...e) {
-    super(...e), x(this, "handleDropdownClick", e => {
+    super(...e), E(this, "handleDropdownClick", e => {
       e.stopPropagation();
       let {
         libraryApplication: t,
@@ -145,14 +145,14 @@ class C extends(r = l.PureComponent) {
         let {
           default: e
         } = await n.e("53195").then(n.bind(n, 918306));
-        return n => (0, i.jsx)(e, O(v({}, n), {
+        return n => (0, i.jsx)(e, C(v({}, n), {
           libraryApplication: t,
           onPlay: this.handleClick
         }))
       }, {
         onClose: l
       })
-    }), x(this, "handleClick", () => {
+    }), E(this, "handleClick", () => {
       let {
         applicationId: e,
         libraryApplication: t,
@@ -175,7 +175,7 @@ function j(e) {
     applicationId: t,
     libraryApplication: n
   } = e, r = (0, d.O)(), [l, a] = (0, s.Wu)([f.Z, m.Z, h.Z], () => [f.Z.isConnected(t) || m.Z.isLaunchable(t) || null != n && h.Z.isLaunchable(n.id, n.branchId), m.Z.launchingGames.has(t)], [t, n]), o = (0, s.e7)([p.ZP], () => new Set(p.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, s.e7)([h.Z], () => null != n ? h.Z.getState(n.id, n.branchId) : null, [n]);
-  return (0, i.jsx)(C, O(v({}, e), {
+  return (0, i.jsx)(O, C(v({}, e), {
     analyticsContext: r,
     isLaunchable: l,
     isLaunching: a,
@@ -183,7 +183,7 @@ function j(e) {
     dispatchState: c
   }))
 }
-x(C, "defaultProps", {
+E(O, "defaultProps", {
   fullWidth: !1,
   size: c.zxk.Sizes.LARGE,
   tooltipPosition: "top",

@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => y
 });
@@ -43,15 +43,15 @@ function y(e) {
     applicationId: t,
     stream: i,
     channel: y,
-    exitFullScreen: C,
-    appContext: x,
+    exitFullScreen: x,
+    appContext: C,
     analyticsLocation: v,
     guildScheduledEvent: j,
     shouldPrioritizeGroupPlusIcon: O = !1,
     isRichPresenceInvite: E = !1,
     iconClassName: I,
-    look: P,
-    size: S,
+    look: S,
+    size: P,
     buttonText: Z,
     color: N
   } = e, T = function(e, t) {
@@ -76,17 +76,17 @@ function y(e) {
     R = null == y ? void 0 : y.getGuildId(),
     M = (0, a.e7)([p.Z], () => null != R ? p.Z.getGuild(R) : null, [R]),
     k = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : void 0),
-    L = null == t || O ? o.ejJ : o.gQj,
-    D = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
+    D = null == t || O ? o.ejJ : o.gQj,
+    L = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
   return null != k && E ? (0, r.jsx)(m.Z, {
     onClick: () => {
       null != w && (0, d.v)(w, d.d.INVITE), s.h7(k, !1, A)
     },
-    iconComponent: L,
-    label: D,
+    iconComponent: D,
+    label: L,
     iconClassName: I,
-    look: P,
-    size: S,
+    look: S,
+    size: P,
     buttonText: Z,
     color: null != N ? N : void 0
   }) : null != M && null != y && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(m.Z, _({
@@ -137,17 +137,17 @@ function y(e) {
           channel: y,
           streamUserId: null == i ? void 0 : i.ownerId,
           applicationId: t,
-          appContext: null != x ? x : A,
-          exitFullScreen: C,
+          appContext: null != C ? C : A,
+          exitFullScreen: x,
           analyticsLocation: v,
           guildScheduledEvent: j
         })
     },
-    iconComponent: L,
-    label: D,
+    iconComponent: D,
+    label: L,
     iconClassName: I,
-    look: P,
-    size: S,
+    look: S,
+    size: P,
     color: N,
     buttonText: Z
   }, T)) : null

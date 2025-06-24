@@ -1,6 +1,6 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var r = n(255367),
   i = n(73800),
@@ -8,20 +8,19 @@ var r = n(255367),
   a = n.n(l),
   o = n(481060),
   s = n(826298),
-  c = n(540059),
-  u = n(881046);
-let d = i.memo(function(e) {
+  c = n(881046);
+let u = i.memo(function(e) {
   var t;
   let {
     className: n,
     channel: i,
     section: l
-  } = e, d = (0, c.R6)("ChannelApplicationIcon"), p = null != l ? (0, s.ky)(l) : null, h = null != p ? (0, r.jsx)(o.ua7, {
+  } = e, u = null != l ? (0, s.ky)(l) : null, d = null != u ? (0, r.jsx)(o.ua7, {
     text: null != (t = null == l ? void 0 : l.name) ? t : "",
     position: "top",
     children: e => {
       var t, n;
-      return (0, r.jsx)(p, (t = function(e) {
+      return (0, r.jsx)(u, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -55,11 +54,11 @@ let d = i.memo(function(e) {
       }), t))
     }
   }) : null;
-  return d ? h : (0, r.jsx)("div", {
-    className: a()(n, u.wrapper),
+  return (0, r.jsx)("div", {
+    className: a()(n, c.wrapper),
     children: (0, r.jsx)("div", {
-      className: u.icon,
-      children: h
+      className: c.icon,
+      children: d
     })
   })
 })

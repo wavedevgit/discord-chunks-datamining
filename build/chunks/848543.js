@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => A
+  Z: () => j
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -15,20 +15,19 @@ var r = n(255367),
   h = n(906732),
   f = n(522651),
   g = n(795318),
-  m = n(540059),
-  b = n(706140),
-  _ = n(294629),
-  E = n(131951),
+  m = n(706140),
+  b = n(294629),
+  _ = n(131951),
   O = n(459273),
-  y = n(242291),
-  I = n(792165),
-  v = n(603074),
-  C = n(981631),
-  S = n(921944),
-  N = n(388032),
-  T = n(566177);
+  E = n(242291),
+  y = n(792165),
+  I = n(603074),
+  v = n(981631),
+  C = n(921944),
+  S = n(388032),
+  N = n(566177);
 
-function P(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +46,7 @@ function P(e) {
   return e
 }
 
-function j(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +59,7 @@ function j(e, t) {
   }), e
 }
 
-function A(e) {
+function j(e) {
   var {
     channel: t
   } = e, l = function(e, t) {
@@ -78,111 +77,110 @@ function A(e) {
     }
     return i
   }(e, ["channel"]);
-  let A = i.useRef(null),
-    Z = (0, m.Q3)("SoundBoardRTCPanelButton"),
+  let j = i.useRef(null),
     {
-      mute: x,
-      suppress: L
-    } = (0, _.Z)(t),
-    w = (0, o.e7)([E.Z], () => E.Z.isDeaf()),
-    R = x || L || w,
-    [D, k] = i.useState(!1),
-    M = t.getGuildId(),
-    U = (0, y.sR)({
-      isSoundboardButtonDisabled: R
+      mute: A,
+      suppress: Z
+    } = (0, b.Z)(t),
+    x = (0, o.e7)([_.Z], () => _.Z.isDeaf()),
+    w = A || Z || x,
+    [L, R] = i.useState(!1),
+    D = t.getGuildId(),
+    k = (0, E.sR)({
+      isSoundboardButtonDisabled: w
     }),
-    [G, B] = (0, b.cv)(U),
+    [M, U] = (0, m.cv)(k),
     {
-      analyticsLocations: V,
-      parentAnalyticsLocation: H
+      analyticsLocations: G,
+      parentAnalyticsLocation: B
     } = (0, h.ZP)(p.Z.SOUNDBOARD_BUTTON);
 
-  function F(e) {
-    null != M && (0, d.jW)(e, async () => {
+  function V(e) {
+    null != D && (0, d.jW)(e, async () => {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
-      return t => (0, r.jsx)(e, j(P({
-        guildId: M,
-        sourceAnalyticsLocations: V
+      return t => (0, r.jsx)(e, P(T({
+        guildId: D,
+        sourceAnalyticsLocations: G
       }, t), {
         onInteraction: (0, g.u)("SoundboardContextMenu", p.Z.RTC_PANEL)
       }))
     })
   }
   let {
-    Component: z,
-    play: W,
+    Component: H,
+    play: F,
     events: {
-      onMouseEnter: Y,
-      onMouseLeave: K
+      onMouseEnter: z,
+      onMouseLeave: W
     }
-  } = (0, c.j)(), q = e => (0, r.jsx)(u.yRy, {
-    targetElementRef: A,
+  } = (0, c.j)(), Y = e => (0, r.jsx)(u.yRy, {
+    targetElementRef: j,
     animation: u.yRy.Animation.FADE,
-    shouldShow: D,
+    shouldShow: L,
     position: "top",
-    onRequestClose: () => k(!1),
+    onRequestClose: () => R(!1),
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
-      return (0, r.jsx)(v.Z, {
-        guildId: M,
+      return (0, r.jsx)(I.Z, {
+        guildId: D,
         channel: t,
         onClose: n,
-        gridNotice: G === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(I.o, {
+        gridNotice: M === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(y.o, {
           onClose: n,
-          markAsDismissed: B
+          markAsDismissed: U
         }),
         analyticsSource: "rtc panel"
       })
     },
     children: t => (0, r.jsx)("div", {
-      ref: A,
-      children: (0, r.jsx)(u.zxk, j(P(j(P({}, e, t), {
-        className: a()(T.button, T.buttonColor, {
-          [T.greyButtonActive]: D,
-          [T.disabled]: R
+      ref: j,
+      children: (0, r.jsx)(u.zxk, P(T(P(T({}, e, t), {
+        className: a()(N.button, N.buttonColor, {
+          [N.greyButtonActive]: L,
+          [N.disabled]: w
         }),
-        wrapperClassName: T.button,
-        innerClassName: T.buttonContents,
-        disabled: R,
+        wrapperClassName: N.button,
+        innerClassName: N.buttonContents,
+        disabled: w,
         onClick: () => {
           var t;
-          null != G && G !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && B(S.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), k(!D), W(), (0, f.v)(H, f.d.SOUNDBOARD)
+          null != M && M !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && U(C.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), R(!L), F(), (0, f.v)(B, f.d.SOUNDBOARD)
         },
         onMouseEnter: t => {
           var n, r;
-          null == (n = l.onMouseEnter) || n.call(l, t), null == e || null == (r = e.onMouseEnter) || r.call(e), Y()
+          null == (n = l.onMouseEnter) || n.call(l, t), null == e || null == (r = e.onMouseEnter) || r.call(e), z()
         },
         onMouseLeave: t => {
           var n, r;
-          null == (n = l.onMouseLeave) || n.call(l, t), null == e || null == (r = e.onMouseLeave) || r.call(e), K()
+          null == (n = l.onMouseLeave) || n.call(l, t), null == e || null == (r = e.onMouseLeave) || r.call(e), W()
         },
-        onContextMenu: F,
+        onContextMenu: V,
         fullWidth: !0,
-        size: Z ? u.zxk.Sizes.MEDIUM : u.zxk.Sizes.SMALL
+        size: u.zxk.Sizes.MEDIUM
       }), l), {
-        children: (0, r.jsx)(z, {
-          className: T.buttonIcon,
+        children: (0, r.jsx)(H, {
+          className: N.buttonIcon,
           size: "sm",
           color: "currentColor"
         })
       }))
     })
-  }), Q = i.useCallback(() => {
-    R || k(!D)
-  }, [R, D]);
+  }), K = i.useCallback(() => {
+    w || R(!L)
+  }, [w, L]);
   return (0, O.yp)({
-    event: C.CkL.TOGGLE_SOUNDBOARD,
-    handler: Q
+    event: v.CkL.TOGGLE_SOUNDBOARD,
+    handler: K
   }), (0, r.jsx)(h.Gt, {
-    value: V,
+    value: G,
     children: (0, r.jsx)(u.ua7, {
-      targetElementRef: A,
-      text: x ? N.intl.string(N.t["Ox4/zc"]) : L ? N.intl.string(N.t["+YBKYG"]) : w ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),
-      children: e => q(e)
+      targetElementRef: j,
+      text: A ? S.intl.string(S.t["Ox4/zc"]) : Z ? S.intl.string(S.t["+YBKYG"]) : x ? S.intl.string(S.t.X1lQlp) : S.intl.string(S.t["6EJvHh"]),
+      children: e => Y(e)
     })
   })
 }

@@ -9,63 +9,49 @@ let r = {
       NAME_LINE_HEIGHT: {
         resolve(e) {
           let {
-            enabledExperiments: t,
-            density: n
+            density: t
           } = e;
-          if (0 === t.length) return 20;
-          for (let e of t)
-            if ("visual-refresh" === e) switch (n) {
-              case "compact":
-              default:
-                return 20;
-              case "default":
-                return 24;
-              case "cozy":
-                return 28
-            }
-          return 20
+          switch (t) {
+            case "compact":
+              return 20;
+            case "default":
+            default:
+              return 24;
+            case "cozy":
+              return 28
+          }
         }
       },
       SPINE_INVERTED_OFFSET_TOP: {
         resolve(e) {
           let {
-            enabledExperiments: t,
-            density: n
+            density: t
           } = e;
-          if (0 === t.length) return 8;
-          for (let e of t)
-            if ("visual-refresh" === e) switch (n) {
-              case "compact":
-                return 2;
-              case "default":
-                return 6;
-              case "cozy":
-                return 9;
-              default:
-                return 8
-            }
-          return 8
+          switch (t) {
+            case "compact":
+              return 2;
+            case "default":
+            default:
+              return 6;
+            case "cozy":
+              return 9
+          }
         }
       },
       SPINE_OFFSET_LEFT: {
         resolve(e) {
           let {
-            enabledExperiments: t,
-            density: n
+            density: t
           } = e;
-          if (0 === t.length) return 22;
-          for (let e of t)
-            if ("visual-refresh" === e) switch (n) {
-              case "compact":
-                return 20;
-              case "default":
-                return 24;
-              case "cozy":
-                return 28;
-              default:
-                return 22
-            }
-          return 22
+          switch (t) {
+            case "compact":
+              return 20;
+            case "default":
+            default:
+              return 24;
+            case "cozy":
+              return 28
+          }
         }
       }
     },
@@ -74,15 +60,7 @@ let r = {
         resolve: () => 40
       },
       INPUT_ICON_SIZE: {
-        resolve(e) {
-          let {
-            enabledExperiments: t
-          } = e;
-          if (0 === t.length) return 24;
-          for (let e of t)
-            if ("visual-refresh" === e) return 20;
-          return 24
-        }
+        resolve: () => 20
       },
       MARKUP_LINE_HEIGHT: {
         resolve: () => "1.375rem"
@@ -93,15 +71,7 @@ let r = {
     },
     form: {
       INPUT_HEIGHT: {
-        resolve(e) {
-          let {
-            enabledExperiments: t
-          } = e;
-          if (0 === t.length) return 48;
-          for (let e of t)
-            if ("visual-refresh" === e) return 44;
-          return 48
-        }
+        resolve: () => 44
       }
     },
     guildbar: {
@@ -146,15 +116,7 @@ let r = {
     },
     modal: {
       HORIZONTAL_PADDING: {
-        resolve(e) {
-          let {
-            enabledExperiments: t
-          } = e;
-          if (0 === t.length) return 16;
-          for (let e of t)
-            if ("visual-refresh" === e) return 24;
-          return 16
-        }
+        resolve: () => 24
       },
       VERTICAL_PADDING: {
         resolve: () => 16
@@ -163,26 +125,10 @@ let r = {
         resolve: () => 800
       },
       WIDTH_MEDIUM: {
-        resolve(e) {
-          let {
-            enabledExperiments: t
-          } = e;
-          if (0 === t.length) return 600;
-          for (let e of t)
-            if ("visual-refresh" === e) return 602;
-          return 600
-        }
+        resolve: () => 602
       },
       WIDTH_SMALL: {
-        resolve(e) {
-          let {
-            enabledExperiments: t
-          } = e;
-          if (0 === t.length) return 440;
-          for (let e of t)
-            if ("visual-refresh" === e) return 442;
-          return 440
-        }
+        resolve: () => 442
       }
     }
   }

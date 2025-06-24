@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => u
 });
@@ -18,14 +18,14 @@ function u(e) {
     onSelect: u,
     navId: d,
     label: p
-  } = e, m = (0, l.Z)(t, "Notifications Bell"), f = (0, a.Z)(t), h = (0, s.B)(t);
+  } = e, h = (0, l.Z)(t, "Notifications Bell"), f = (0, a.Z)(t), m = (0, s.B)(t);
   return (0, r.jsxs)(i.v2r, {
     navId: d,
     onClose: n,
     "aria-label": p,
     onSelect: u,
     children: [(0, r.jsxs)(i.kSQ, {
-      children: [t.isForumPost() ? m : null, f]
+      children: [t.isForumPost() ? h : null, f]
     }), (0, r.jsx)(i.kSQ, {
       children: (0, c.zb)().map(e => {
         let {
@@ -39,7 +39,7 @@ function u(e) {
           action: () => o.Z.setNotificationSettings(t, {
             flags: n
           }),
-          checked: n === h
+          checked: n === m
         }, n)
       })
     })]

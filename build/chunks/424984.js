@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   s = n(120356),
   o = n.n(s),
-  a = n(481060),
-  i = n(144931),
+  i = n(481060),
+  a = n(144931),
   c = n(543856);
 
 function l(e) {
@@ -27,11 +27,11 @@ function u(e) {
     title: n,
     onClick: s
   } = e;
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(i.ua7, {
     text: n,
     children: e => {
-      var o, a;
-      return (0, r.jsx)(i.Z, (o = function(e) {
+      var o, i;
+      return (0, r.jsx)(a.Z, (o = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -48,7 +48,7 @@ function u(e) {
           })
         }
         return e
-      }({}, e), a = a = {
+      }({}, e), i = i = {
         onClick: s,
         className: c.toolbarButton,
         children: (0, r.jsx)("img", {
@@ -56,15 +56,15 @@ function u(e) {
           src: t,
           alt: n
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(a, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(i, e))
       }), o))
     }
   })

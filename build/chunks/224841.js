@@ -1,27 +1,27 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => g
+  Z: () => p
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(388905),
-  o = n(703656),
-  a = n(671533),
+  a = n(703656),
+  o = n(671533),
   s = n(63063),
   c = n(981631),
   u = n(388032),
   d = n(963650);
-let h = () => (0, o.uL)(c.Z5c.LOGIN, {
+let h = () => (0, a.uL)(c.Z5c.LOGIN, {
     source: "age_gate_underage"
   }),
-  g = e => {
+  p = e => {
     let {
       authBoxClassName: t,
-      underageMessage: o,
-      inUnclaimedFlowExperiment: g
+      underageMessage: a,
+      inUnclaimedFlowExperiment: p
     } = e;
-    return g ? (0, r.jsx)(l.ZP, {
+    return p ? (0, r.jsx)(l.ZP, {
       children: (0, r.jsxs)("div", {
         className: d.contentContainer,
         children: [(0, r.jsx)(l.Dx, {
@@ -30,7 +30,7 @@ let h = () => (0, o.uL)(c.Z5c.LOGIN, {
         }), (0, r.jsx)(l.DK, {
           className: d.subtitle,
           children: u.intl.format(u.t.KQgoxM, {
-            underageMessage: null != o ? o : u.intl.string(u.t.WqEH4O)
+            underageMessage: null != a ? a : u.intl.string(u.t.WqEH4O)
           })
         }), (0, r.jsxs)(i.zxk, {
           className: d.button,
@@ -38,10 +38,10 @@ let h = () => (0, o.uL)(c.Z5c.LOGIN, {
           onClick: () => window.open(s.Z.getArticleURL(c.BhN.AGE_GATE), "_blank"),
           children: [(0, r.jsx)("div", {
             children: u.intl.string(u.t.hvVgAQ)
-          }), (0, r.jsx)(a.Z, {
+          }), (0, r.jsx)(o.Z, {
             height: 20,
             width: 20,
-            direction: a.Z.Directions.UP,
+            direction: o.Z.Directions.UP,
             className: d.externalArrow
           })]
         })]
@@ -58,7 +58,7 @@ let h = () => (0, o.uL)(c.Z5c.LOGIN, {
       }), (0, r.jsx)(l.DK, {
         className: d.subtitle,
         children: u.intl.format(u.t.b0QzXV, {
-          underageMessage: null != o ? o : u.intl.string(u.t.WqEH4O),
+          underageMessage: null != a ? a : u.intl.string(u.t.WqEH4O),
           helpURL: s.Z.getArticleURL(c.BhN.AGE_GATE)
         })
       }), (0, r.jsx)(i.zxk, {

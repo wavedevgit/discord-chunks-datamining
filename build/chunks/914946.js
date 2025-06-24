@@ -12,7 +12,7 @@ n.d(t, {
   bu: () => er,
   kb: () => W,
   s9: () => Y,
-  t9: () => Q,
+  t9: () => X,
   tr: () => et,
   vv: () => $,
   zM: () => K,
@@ -32,8 +32,8 @@ var r, i, l = n(729594),
   m = n(598077),
   b = n(592125),
   _ = n(430824),
-  E = n(131951),
-  O = n(375954),
+  O = n(131951),
+  E = n(375954),
   y = n(158776),
   I = n(594174),
   v = n(979651),
@@ -65,7 +65,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -77,9 +77,9 @@ function L(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = null != (i = null == (r = T.Z.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)) ? void 0 : r.host) ? i : "localhost",
+let L = null != (i = null == (r = T.Z.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)) ? void 0 : r.host) ? i : "localhost",
   R = function() {
-    let e = w.split(":")[0];
+    let e = L.split(":")[0];
     if (!e.includes(".")) return e;
     let t = e.split("."),
       n = t[t.length - 1];
@@ -106,13 +106,13 @@ function V(e, t) {
   let n = [],
     r = e.getGuildId();
   return [Z.d4z.GUILD_CATEGORY, ...g.tx].includes(e.type) || n.push(new Promise(t => {
-    O.Z.whenReady(e.id, () => t()), c.Z.fetchMessages({
+    E.Z.whenReady(e.id, () => t()), c.Z.fetchMessages({
       channelId: e.id,
       limit: Z.AQB
     })
   })), Promise.all(n).then(() => {
     var n;
-    let i = (!e.isNSFW() || (null == (n = I.default.getCurrentUser()) ? void 0 : n.nsfwAllowed) === !0) && t ? O.Z.getMessages(e.id).toArray().map(H) : [],
+    let i = (!e.isNSFW() || (null == (n = I.default.getCurrentUser()) ? void 0 : n.nsfwAllowed) === !0) && t ? E.Z.getMessages(e.id).toArray().map(H) : [],
       l = Object.values(v.Z.getVoiceStatesForChannel(e.id)).map(t => F(r, e.id, t));
     return {
       id: e.id,
@@ -170,9 +170,9 @@ function F(e, t, n) {
   if (null == c) throw Error("Invalid user id: ".concat(s));
   return {
     nick: S.ZP.getName(e, t, c),
-    mute: E.Z.isLocalMute(c.id),
-    volume: E.Z.getLocalVolume(c.id),
-    pan: E.Z.getLocalPan(c.id),
+    mute: O.Z.isLocalMute(c.id),
+    volume: O.Z.getLocalVolume(c.id),
+    pan: O.Z.getLocalPan(c.id),
     voice_state: {
       mute: r,
       deaf: i,
@@ -197,8 +197,8 @@ function z(e, t) {
 
 function W(e, t) {
   var n;
-  return null == t ? e : L(x({}, e), {
-    presence: L(x({}, e.presence), {
+  return null == t ? e : w(x({}, e), {
+    presence: w(x({}, e.presence), {
       activity: null != (n = y.Z.getApplicationActivity(e.user.id, t)) ? n : null
     })
   })
@@ -233,11 +233,11 @@ function q(e) {
   }
 }
 
-function Q(e, t, n) {
+function X(e, t, n) {
   return e === Z.mFx.JOIN && null != t && null != t.id && null != n.join
 }
 
-function X(e) {
+function Q(e) {
   return o.tn.get({
     url: Z.ANM.APPLICATION_RPC(e),
     oldFormErrors: !0,
@@ -263,11 +263,11 @@ async function J(e, t, n) {
         closeCode: Z.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
-      let e = await X(t);
+      let e = await Q(t);
       if (r = f.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new P.Z({
         closeCode: Z.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
-    } null == r && (r = f.ZP.createFromServer(await X(t)));
+    } null == r && (r = f.ZP.createFromServer(await Q(t)));
   let {
     id: i,
     name: l,
@@ -293,7 +293,7 @@ function ee(e, t) {
 }
 
 function et(e) {
-  let t = E.Z.getSettings(),
+  let t = O.Z.getSettings(),
     n = e => Object.values(e).sort((e, t) => e.index - t.index).map(e => ({
       id: e.id,
       name: e.name
@@ -301,12 +301,12 @@ function et(e) {
     r = e(t);
   return {
     input: {
-      available_devices: n(E.Z.getInputDevices()),
+      available_devices: n(O.Z.getInputDevices()),
       device_id: t.inputDeviceId,
       volume: t.inputVolume
     },
     output: {
-      available_devices: n(E.Z.getOutputDevices()),
+      available_devices: n(O.Z.getOutputDevices()),
       device_id: t.outputDeviceId,
       volume: t.outputVolume
     },
@@ -328,7 +328,7 @@ function et(e) {
 }
 
 function en(e, t) {
-  let n = E.Z.getSettings(e),
+  let n = O.Z.getSettings(e),
     r = t(n);
   return {
     input_mode: {

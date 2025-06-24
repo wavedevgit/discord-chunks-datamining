@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => _
+  Z: () => j
 }), n(388685), n(642613);
 var a = n(255367),
   r = n(73800),
@@ -12,8 +12,8 @@ var a = n(255367),
   d = n(428530),
   u = n(484036),
   m = n(681619),
-  x = n(621060),
-  p = n(616257),
+  p = n(621060),
+  x = n(616257),
   h = n(564799);
 
 function b(e, t) {
@@ -47,10 +47,10 @@ let v = [{
       return t.getName()
     }
   }],
-  g = [{
+  _ = [{
     id: "local",
     name: "Local Variables",
-    group: x.v0.NONE,
+    group: p.v0.NONE,
     render(e) {
       let {
         store: t
@@ -68,7 +68,7 @@ let v = [{
   }, {
     id: "instance",
     name: "Store Instance",
-    group: x.v0.NONE,
+    group: p.v0.NONE,
     render(e) {
       let {
         store: t
@@ -80,22 +80,22 @@ let v = [{
     }
   }];
 
-function j(e) {
+function g(e) {
   let {
     store: t,
     initialHeight: n
   } = e, {
     TabBar: r,
     renderSelectedTab: l
-  } = (0, x.ZP)({
-    tabs: g
+  } = (0, p.ZP)({
+    tabs: _
   }, []);
   return (0, a.jsxs)(u.Z, {
     className: h.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(r, {}), (0, a.jsxs)(c.ZP, {
-      className: i()(p.headerBar, h.subPanelHeaderBar),
+      className: i()(x.headerBar, h.subPanelHeaderBar),
       children: [(0, a.jsx)(c.ZP.Icon, {
         icon: o.lO_,
         tooltip: t.getName()
@@ -108,7 +108,7 @@ function j(e) {
   })
 }
 
-function _() {
+function j() {
   let e = r.useRef(null),
     [t, n] = r.useState(""),
     l = s.yh.getAll(),
@@ -122,10 +122,10 @@ function _() {
       return n.getName().toLowerCase().includes(t.toLowerCase())
     })(e, t)),
     [d, u] = r.useState(),
-    x = l.find(e => e._dispatchToken === d);
+    p = l.find(e => e._dispatchToken === d);
   return (0, a.jsxs)("div", {
     ref: e,
-    className: i()(p.panel, h.panel),
+    className: i()(x.panel, h.panel),
     children: [(0, a.jsx)("div", {
       className: h.toolbar,
       children: (0, a.jsx)(o.E1j, {
@@ -142,8 +142,8 @@ function _() {
       data: c,
       selectedRowKey: d,
       onClickRow: e => u(e.key)
-    }), null != x && (0, a.jsx)(j, {
-      store: x,
+    }), null != p && (0, a.jsx)(g, {
+      store: p,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]
   })

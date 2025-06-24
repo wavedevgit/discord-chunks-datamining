@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 let r;
 n.d(t, {
   Z: () => B
@@ -16,17 +16,17 @@ var i, l, a, o = n(442837),
   b = n(580005),
   _ = n(699516),
   y = n(594174),
-  C = n(981631);
-let x = !1,
+  x = n(981631);
+let C = !1,
   v = "",
   j = 0,
   O = [],
   E = !1,
   I = new Set,
-  P = null;
+  S = null;
 
-function S() {
-  v = "", j = 0, O = [], I = new Set, x = !1, P = null
+function P() {
+  v = "", j = 0, O = [], I = new Set, C = !1, S = null
 }
 
 function Z(e) {
@@ -34,8 +34,8 @@ function Z(e) {
 }
 
 function N() {
-  if (!x) return !1;
-  let e = m.Z.getChannel(P);
+  if (!C) return !1;
+  let e = m.Z.getChannel(S);
   if (0 === v.trim().length) return null != r && r.clearQuery(), O = function(e) {
     let t = _.Z.getFriendIDs(),
       n = y.default.getCurrentUser();
@@ -78,13 +78,13 @@ function N() {
 }
 
 function T() {
-  if (!x) return !1;
+  if (!C) return !1;
   let e = E;
   return (E = _.Z.getFriendCount() > 0) !== e
 }
 
 function A(e, t) {
-  if (g.Z.hasConsented(C.pjP.PERSONALIZATION)) {
+  if (g.Z.hasConsented(x.pjP.PERSONALIZATION)) {
     var n, r, i, l;
     let a = null != (i = null == (n = d.Z.getUserAffinity(e.user.id)) ? void 0 : n.communicationProbability) ? i : 0,
       o = null != (l = null == (r = d.Z.getUserAffinity(t.user.id)) ? void 0 : r.communicationProbability) ? l : 0;
@@ -97,7 +97,7 @@ function w(e) {
   let {
     results: t
   } = e;
-  if (!x || "" === v) return;
+  if (!C || "" === v) return;
   let n = [];
   for (let {
       id: e,
@@ -118,19 +118,19 @@ function R() {
 }
 
 function M(e) {
-  if (e.key !== C.vTt) return !1;
-  x = !0, T(), r = R(), P = null, Z("")
+  if (e.key !== x.vTt) return !1;
+  C = !0, T(), r = R(), S = null, Z("")
 }
 
 function k(e) {
-  if (e.key !== C.vTt) return !1;
-  L()
+  if (e.key !== x.vTt) return !1;
+  D()
 }
 
-function L() {
-  null != r && (r.destroy(), r = null), S()
+function D() {
+  null != r && (r.destroy(), r = null), P()
 }
-class D extends(i = o.ZP.Store) {
+class L extends(i = o.ZP.Store) {
   initialize() {
     this.waitFor(y.default, m.Z, _.Z, u.Z, g.Z), this.syncWith([y.default, m.Z], N), this.syncWith([_.Z], T)
   }
@@ -156,15 +156,15 @@ class D extends(i = o.ZP.Store) {
     }
   }
 }
-a = "PrivateChannelRecipientsInviteStore", (l = "displayName") in D ? Object.defineProperty(D, l, {
+a = "PrivateChannelRecipientsInviteStore", (l = "displayName") in L ? Object.defineProperty(L, l, {
   value: a,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : D[l] = a;
-let U = new D(s.Z, {
+}) : L[l] = a;
+let U = new L(s.Z, {
     CONNECTION_OPEN: function() {
-      S()
+      P()
     },
     CHANNEL_SELECT: function(e) {
       let {
@@ -172,19 +172,19 @@ let U = new D(s.Z, {
         channelId: n
       } = e;
       if (null != t) return !1;
-      let r = x;
-      return S(), x = r, P = n, N()
+      let r = C;
+      return P(), C = r, S = n, N()
     },
     MODAL_PUSH: M,
     SHOW_ACTION_SHEET: M,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      x = !0, T(), r = R(), P = e.channelId, Z("")
+      C = !0, T(), r = R(), S = e.channelId, Z("")
     },
     MODAL_POP: k,
     HIDE_ACTION_SHEET: k,
-    PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: L,
+    PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: D,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
-      P = e.channelId, Z(e.query)
+      S = e.channelId, Z(e.query)
     },
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
       j = e.row

@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => _
+  Z: () => b
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -12,10 +12,10 @@ var r = n(255367),
   u = n(91372),
   d = n(19780),
   p = n(665149),
-  m = n(388032),
+  h = n(388032),
   f = n(220705);
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -23,7 +23,7 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class g extends i.PureComponent {
+class m extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.memoizedMode ? {
       memoizedMode: e.mode,
@@ -38,7 +38,7 @@ class g extends i.PureComponent {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          h(e, t, n[t])
+          g(e, t, n[t])
         })
       }
       return e
@@ -51,7 +51,7 @@ class g extends i.PureComponent {
       case "UPDATE_AVAILABLE":
         return (0, r.jsx)(p.JO, {
           hideOnClick: !1,
-          tooltip: m.intl.string(m.t["zp9d//"]),
+          tooltip: h.intl.string(h.t["zp9d//"]),
           foreground: f.downloadArrow,
           background: f.cloud,
           icon: a._8t,
@@ -60,7 +60,7 @@ class g extends i.PureComponent {
       case "UPDATE_MANUALLY":
       case "UPDATE_DOWNLOADED":
         return (0, r.jsx)(p.JO, {
-          tooltip: m.intl.string(m.t.u18OXF),
+          tooltip: h.intl.string(h.t.u18OXF),
           foreground: f.updateIconForeground,
           onClick: this.handleInstallDownload,
           icon: a._8t,
@@ -71,24 +71,24 @@ class g extends i.PureComponent {
     }
   }
   constructor(...e) {
-    super(...e), h(this, "state", {
+    super(...e), g(this, "state", {
       memoizedMode: this.props.mode,
       clicked: !1
-    }), h(this, "handleInstallDownload", () => {
+    }), g(this, "handleInstallDownload", () => {
       d.Z.isConnected() ? o.Z.show({
-        title: m.intl.string(m.t.tiu1l5),
-        body: m.intl.string(m.t["zK+lqa"]),
+        title: h.intl.string(h.t.tiu1l5),
+        body: h.intl.string(h.t["zK+lqa"]),
         onConfirm: this.doUpdate,
-        cancelText: m.intl.string(m.t["ETE/oK"]),
-        confirmText: m.intl.string(m.t["QDX/qq"])
+        cancelText: h.intl.string(h.t["ETE/oK"]),
+        confirmText: h.intl.string(h.t["QDX/qq"])
       }) : this.doUpdate()
-    }), h(this, "doUpdate", () => {
+    }), g(this, "doUpdate", () => {
       this.state.clicked || (this.setState({
         clicked: !0
       }), (0, s.Q)())
     })
   }
 }
-let _ = l.ZP.connectStores([u.Z], () => ({
+let b = l.ZP.connectStores([u.Z], () => ({
   mode: u.Z.getState()
-}))(g)
+}))(m)

@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
-  z: () => E
+  z: () => x
 });
 var r = n(73800),
   i = n(442837),
@@ -19,23 +19,23 @@ var r = n(73800),
   _ = n(49898),
   b = n(388032);
 
-function E(e, t) {
+function x(e, t) {
   let {
     isDiscoverable: n,
-    customInstallUrl: E,
+    customInstallUrl: x,
     installParams: y,
-    integrationTypesConfig: x
+    integrationTypesConfig: E
   } = e, v = (0, f.Eb)({
-    customInstallUrl: E,
+    customInstallUrl: x,
     installParams: y,
-    integrationTypesConfig: x
-  }), O = (0, i.e7)([p.Z], () => {
+    integrationTypesConfig: E
+  }), C = (0, i.e7)([p.Z], () => {
     var e;
     return null != (e = p.Z.getGuildId()) ? e : void 0
-  }), C = (0, i.e7)([c.Z, u.Z, d.Z], () => {
+  }), O = (0, i.e7)([c.Z, u.Z, d.Z], () => {
     let e = c.Z.getChannel(d.Z.getChannelId());
     return null != e && (e.isPrivate() || u.Z.can(g.Plq.SEND_MESSAGES, e))
-  }, []), j = (0, l.PZ)(e, O) && C, S = n || j;
+  }, []), j = (0, l.PZ)(e, C) && O, S = n || j;
   return r.useMemo(() => S ? {
     label: b.intl.string(b.t["HO/oXl"]),
     trackingArea: h.j_.VIEW,
@@ -57,12 +57,12 @@ function E(e, t) {
     onClick() {
       null == t || t(h.j_.ADD_APP), (0, m.L)({
         applicationId: e.id,
-        customInstallUrl: E,
+        customInstallUrl: x,
         installParams: y,
-        integrationTypesConfig: x,
-        guildId: O,
+        integrationTypesConfig: E,
+        guildId: C,
         source: "app_message_embed"
       })
     }
-  } : void 0, [e.id, j, S, E, y, x, v, t, O])
+  } : void 0, [e.id, j, S, x, y, E, v, t, C])
 }

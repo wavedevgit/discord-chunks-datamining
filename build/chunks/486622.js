@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   m: () => b
 }), n(388685);
@@ -23,23 +23,23 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, _ = (0, f.Z)(), [y, C] = r.useState(!1), [x, v] = r.useState(!1), [j, O] = r.useState(!1), [E, I] = r.useState(!1), [P, S] = r.useState(!1), Z = y || x || j, N = r.useCallback(async e => {
+  } = e, _ = (0, f.Z)(), [y, x] = r.useState(!1), [C, v] = r.useState(!1), [j, O] = r.useState(!1), [E, I] = r.useState(!1), [S, P] = r.useState(!1), Z = y || C || j, N = r.useCallback(async e => {
     if (!Z) {
-      C(!0);
+      x(!0);
       try {
         await (0, p.e4)(e), I(!0), null == n || n()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
       } finally {
-        C(!1)
+        x(!1)
       }
     }
   }, [Z, n, b]), T = r.useCallback(async e => {
     if (!Z) {
       v(!0);
       try {
-        await (0, p.gN)(e), S(!0), null == i || i()
+        await (0, p.gN)(e), P(!0), null == i || i()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
@@ -53,7 +53,7 @@ function b(e) {
     let t = l()(e, m.t$);
     try {
       for (let e of t) await (0, p.r_)(e);
-      S(!0), null == i || i()
+      P(!0), null == i || i()
     } catch (t) {
       let e = new a.Hx(t);
       null == b || b(e)
@@ -124,9 +124,9 @@ function b(e) {
     rejectAll: A,
     markAsNotSpam: R,
     isAcceptLoading: y,
-    isRejectLoading: x,
+    isRejectLoading: C,
     isUserProfileLoading: j,
     isOptimisticAccepted: E,
-    isOptimisticRejected: P
+    isOptimisticRejected: S
   }
 }

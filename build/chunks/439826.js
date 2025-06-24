@@ -26,8 +26,8 @@ var r = n(255367),
   C = n(341907),
   w = n(251360),
   S = n(19148),
-  E = n(46140),
-  P = n(642145),
+  P = n(46140),
+  E = n(642145),
   T = n(981631),
   N = n(388032),
   A = n(508936);
@@ -92,7 +92,7 @@ function B(e) {
   }, [o, f, x, a]), j = 2 !== h, v = (0, c.q_F)({
     opacity: +!!j,
     height: j ? m : 0,
-    config: P.Y
+    config: E.Y
   }), y = 0 === h ? c.P4T : c.d3s, O = (0, p.Lq)(T.Ilk.RED_345), C = 0 === h ? O : l ? c.TVs.colors.TEXT_NORMAL : c.TVs.colors.WHITE;
   return (0, r.jsx)(i.animated.div, {
     style: v,
@@ -131,7 +131,7 @@ function q(e) {
     quest: t,
     isHovering: n,
     showAssets: o
-  } = e, a = s.useMemo(() => (0, j.fh)(t, j.eC.HERO_IMAGE), [t]), i = s.useMemo(() => (0, j.fh)(t, j.eC.HERO_VIDEO), [t]), l = (0, b.h)(t, E.dr.QUEST_HOME_DESKTOP), {
+  } = e, a = s.useMemo(() => (0, j.fh)(t, j.eC.HERO_IMAGE), [t]), i = s.useMemo(() => (0, j.fh)(t, j.eC.HERO_VIDEO), [t]), l = (0, b.h)(t, P.dr.QUEST_HOME_DESKTOP), {
     onAssetLoadComplete: c
   } = s.useContext(w.k);
   return (0, r.jsx)("div", {
@@ -165,8 +165,8 @@ function I(e) {
     errorHints: j,
     warningHints: v,
     isVisibleInViewport: _,
-    onCtxMenuClose: E,
-    onCtxMenuOpen: P,
+    onCtxMenuClose: P,
+    onCtxMenuOpen: E,
     onCtxMenuSelect: I
   } = e, D = (0, h.PB)(p), L = (0, u.ZP)(), M = ((0, l.wj)(L) ? T.BRd.DARK : T.BRd.LIGHT) === T.BRd.DARK, V = (0, g.tP)(p), W = (null == (t = p.userStatus) ? void 0 : t.claimedAt) != null, Z = (0, g.B6)(p.config.expiresAt, {
     month: "numeric",
@@ -219,8 +219,8 @@ function I(e) {
               })
             }))
           }), (0, r.jsx)(O.r, {
-            onOpen: P,
-            onClose: E,
+            onOpen: E,
+            onClose: P,
             onSelect: I,
             questContent: x.jn.QUEST_HOME_DESKTOP,
             quest: p,

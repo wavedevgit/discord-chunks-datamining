@@ -1,6 +1,6 @@
-/** Chunk was on 98350 **/
+/** Chunk was on 98829 **/
 n.d(t, {
-  Xs: () => l
+  Xs: () => r
 });
 let i = (0, n(818083).B)({
   kind: "user",
@@ -18,7 +18,7 @@ let i = (0, n(818083).B)({
   }]
 });
 
-function l(e) {
+function r(e) {
   let {
     enabled: t
   } = i.getCurrentConfig({

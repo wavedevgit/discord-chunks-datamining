@@ -1,4 +1,4 @@
-/** Chunk was on 83976 **/
+/** Chunk was on 94357 **/
 n.d(t, {
   Z: () => d
 }), n(388685);
@@ -7,8 +7,8 @@ n(73800);
 var l = n(120356),
   i = n.n(l),
   a = n(442837),
-  o = n(963838),
-  u = n(37091),
+  u = n(963838),
+  o = n(37091),
   s = n(388032),
   c = n(690296);
 
@@ -17,11 +17,11 @@ function d(e) {
       channelId: n,
       userId: l
     } = e,
-    [d, f] = (0, a.Wu)([u.Z], () => [u.Z.getWaitingHighFive(n, l), u.Z.getCompletedHighFive(n, l)]);
+    [d, f] = (0, a.Wu)([o.Z], () => [o.Z.getWaitingHighFive(n, l), o.Z.getCompletedHighFive(n, l)]);
   if (null != f) t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       alt: s.intl.string(s.t.W6HwU1),
-      src: (0, o._r)({
+      src: (0, u._r)({
         name: f[0],
         id: null,
         animated: !1
@@ -29,7 +29,7 @@ function d(e) {
       className: i()(c.completeLeft, c.highFive)
     }), (0, r.jsx)("img", {
       alt: s.intl.string(s.t.W6HwU1),
-      src: (0, o._r)({
+      src: (0, u._r)({
         name: f[1],
         id: null,
         animated: !1
@@ -41,7 +41,7 @@ function d(e) {
     if (null == d) return null;
     t = (0, r.jsx)("img", {
       alt: s.intl.string(s.t.W6HwU1),
-      src: (0, o._r)({
+      src: (0, u._r)({
         name: d,
         id: null,
         animated: !1

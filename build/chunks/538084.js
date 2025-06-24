@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   default: () => p,
   k: () => d
@@ -19,7 +19,7 @@ function p(e) {
     transitionState: n,
     onClose: l,
     prefilledTime: p
-  } = e, m = a()(), f = a()().add(365, "days"), [h, g] = i.useState(null != p ? a()(p.substring(0, 200)) : m);
+  } = e, h = a()(), f = a()().add(365, "days"), [m, g] = i.useState(null != p ? a()(p.substring(0, 200)) : h);
   return (0, r.jsxs)(o.Y0X, {
     transitionState: n,
     size: o.CgR.SMALL,
@@ -44,11 +44,11 @@ function p(e) {
             title: c.intl.string(c.t.pSZKvL),
             required: !0,
             children: (0, r.jsx)(o.Wrb, {
-              value: h,
+              value: m,
               onSelect: e => {
                 g(e)
               },
-              minDate: m,
+              minDate: h,
               maxDate: f,
               disabled: !1
             })
@@ -59,7 +59,7 @@ function p(e) {
             title: c.intl.string(c.t.GOmEb2),
             required: !0,
             children: (0, r.jsx)(o.MGJ, {
-              value: h,
+              value: m,
               onChange: e => {
                 e.isValid() && g(e)
               },
@@ -80,7 +80,7 @@ function p(e) {
         onClick: () => {
           (0, s._e)({
             channelId: t.id,
-            scheduledTimestamp: h.toISOString()
+            scheduledTimestamp: m.toISOString()
           }), (0, o.Mr3)(d)
         },
         disabled: !1,

@@ -1,4 +1,4 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 89675 **/
 e.exports = {
   perkRow: "perkRow_c609c8",
   perkIconContainer: "perkIconContainer_c609c8",

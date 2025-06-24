@@ -1,26 +1,25 @@
 /** Chunk was on 91372 **/
 n.d(t, {
-  ED: () => x,
-  fO: () => C,
-  qp: () => O
+  ED: () => _,
+  fO: () => j,
+  qp: () => C
 });
 var i = n(255367),
   r = n(73800),
   s = n(114858),
   l = n(442837),
   a = n(704215),
-  o = n(540059),
-  c = n(605236),
-  d = n(703656),
-  u = n(664915),
-  m = n(507808),
-  g = n(432792),
-  p = n(981631),
-  h = n(921944),
-  f = n(46140),
-  b = n(388032);
+  o = n(605236),
+  c = n(703656),
+  d = n(664915),
+  u = n(507808),
+  m = n(432792),
+  g = n(981631),
+  p = n(921944),
+  h = n(46140),
+  f = n(388032);
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -38,27 +37,27 @@ function _(e) {
   }
   return e
 }
-let x = e => (0, i.jsx)(g.M4, _({
-    titleText: b.intl.string(b.t.KnWRQU),
-    descriptionText: b.intl.format(b.t["xYx+WV"], {
+let _ = e => (0, i.jsx)(m.M4, b({
+    titleText: f.intl.string(f.t.KnWRQU),
+    descriptionText: f.intl.format(f.t["xYx+WV"], {
       quantity: 200
     }),
-    ctaText: b.intl.string(b.t.v4HbPz)
+    ctaText: f.intl.string(f.t.v4HbPz)
   }, e)),
-  E = [p.Z5c.ME, p.Z5c.COLLECTIBLES_SHOP, p.Z5c.NITRO_HOME],
-  j = {
+  x = [g.Z5c.ME, g.Z5c.COLLECTIBLES_SHOP, g.Z5c.NITRO_HOME],
+  E = {
     position: "right",
     align: "bottom"
   },
-  C = e => {
+  j = e => {
     var t, n, {
         onClose: a,
-        onCtaClick: c,
-        targetElementRef: m,
-        isGuildBarScrolling: h,
-        children: f
+        onCtaClick: o,
+        targetElementRef: u,
+        isGuildBarScrolling: p,
+        children: h
       } = e,
-      b = function(e, t) {
+      f = function(e, t) {
         if (null == e) return {};
         var n, i, r = function(e, t) {
           if (null == e) return {};
@@ -73,37 +72,33 @@ let x = e => (0, i.jsx)(g.M4, _({
         }
         return r
       }(e, ["onClose", "onCtaClick", "targetElementRef", "isGuildBarScrolling", "children"]);
-    let O = r.useRef(null),
-      S = (0, o.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"),
-      v = r.useCallback(e => {
-        if (S) {
-          let t = window.innerHeight - ((0, g.t4)() + C.COACHMARK_VERTICAL_OFFSET);
-          return e.top <= t
-        }
-        return !0
-      }, [S]),
-      T = (0, l.e7)([u.Z], () => u.Z.getExpandedFolders().size);
+    let C = r.useRef(null),
+      O = r.useCallback(e => {
+        let t = window.innerHeight - ((0, m.t4)() + j.COACHMARK_VERTICAL_OFFSET);
+        return e.top <= t
+      }, []),
+      S = (0, l.e7)([d.Z], () => d.Z.getExpandedFolders().size);
     r.useEffect(() => {
-      null !== O.current && O.current.updateElementPositionWithPolling()
-    }, [T]), r.useEffect(() => {
-      null !== O.current && O.current.updateElementPosition()
-    }, [h]);
-    let I = (0, s.TH)().pathname,
-      N = r.useCallback(() => {
-        E.includes(I) || (0, d.uL)(p.Z5c.ME), c()
-      }, [I, c]);
-    return (0, i.jsx)(g.WS, (t = _({
-      positionControlRef: O,
-      targetElementRef: m,
-      calculateVisibility: v,
-      defaultCoachmarkAlign: j.align,
-      popoutElement: (0, i.jsx)(x, _({
+      null !== C.current && C.current.updateElementPositionWithPolling()
+    }, [S]), r.useEffect(() => {
+      null !== C.current && C.current.updateElementPosition()
+    }, [p]);
+    let v = (0, s.TH)().pathname,
+      T = r.useCallback(() => {
+        x.includes(v) || (0, c.uL)(g.Z5c.ME), o()
+      }, [v, o]);
+    return (0, i.jsx)(m.WS, (t = b({
+      positionControlRef: C,
+      targetElementRef: u,
+      calculateVisibility: O,
+      defaultCoachmarkAlign: E.align,
+      popoutElement: (0, i.jsx)(_, b({
         onClose: a,
-        onCtaClick: N
-      }, b, j)),
+        onCtaClick: T
+      }, f, E)),
       spacing: 8
-    }, j), n = n = {
-      children: f
+    }, E), n = n = {
+      children: h
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -115,49 +110,49 @@ let x = e => (0, i.jsx)(g.M4, _({
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   };
-C.COACHMARK_VERTICAL_OFFSET = 10;
-let O = e => {
+j.COACHMARK_VERTICAL_OFFSET = 10;
+let C = e => {
   let {
     isVirtualCurrencyEnabled: t,
     discoveryButtonRef: n,
     scrollToBottom: i
-  } = e, s = (0, o.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"), l = r.useCallback(() => {
-    if (s && null !== n.current) {
-      let e = (0, g.t4)();
+  } = e, s = r.useCallback(() => {
+    if (null !== n.current) {
+      let e = (0, m.t4)();
       n.current.getBoundingClientRect().bottom > window.innerHeight - e && i()
     }
-  }, [s, n, i]), {
-    shouldShow: d,
-    closeCoachmarkIfOpen: u
-  } = (0, g.M)({
+  }, [n, i]), {
+    shouldShow: l,
+    closeCoachmarkIfOpen: c
+  } = (0, m.M)({
     onboardingCoachmarkType: "discover",
-    onShowCoachmarkHandler: l
-  }), b = r.useCallback(function() {
+    onShowCoachmarkHandler: s
+  }), d = r.useCallback(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "CLOSE";
-    (0, c.EW)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
-      dismissAction: h.L.INDIRECT_ACTION,
-      groupName: h.R.VIRTUAL_CURRENCY_ONBOARDING
-    }), u(e)
-  }, [u]), _ = r.useCallback(() => u("CTA_CLICK"), [u]), x = r.useCallback(() => {
-    b("CTA_CLICK"), (0, m.Y)({
-      pageType: p.ZY5.GUILD_LIST,
-      sectionType: p.jXE.ORBS_DISCOVERY_ONBOARDING_COACHMARK,
-      ctaObject: p.qAy.DISCOVERY_BUTTON_TO_ORB_INTRO_QUEST
+    (0, o.EW)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
+      dismissAction: p.L.INDIRECT_ACTION,
+      groupName: p.R.VIRTUAL_CURRENCY_ONBOARDING
+    }), c(e)
+  }, [c]), f = r.useCallback(() => c("CTA_CLICK"), [c]), b = r.useCallback(() => {
+    d("CTA_CLICK"), (0, u.Y)({
+      pageType: g.ZY5.GUILD_LIST,
+      sectionType: g.jXE.ORBS_DISCOVERY_ONBOARDING_COACHMARK,
+      ctaObject: g.qAy.DISCOVERY_BUTTON_TO_ORB_INTRO_QUEST
     })
-  }, [b]);
+  }, [d]);
   return t ? {
-    shouldShow: d,
-    questId: f.V6,
-    closeCoachmarkIfOpen: u,
-    onClose: b,
-    onCtaClick: _,
-    onDiscoveryButtonClick: x
+    shouldShow: l,
+    questId: h.V6,
+    closeCoachmarkIfOpen: c,
+    onClose: d,
+    onCtaClick: f,
+    onDiscoveryButtonClick: b
   } : {
     shouldShow: !1,
     questId: void 0,
-    closeCoachmarkIfOpen: p.dG4,
-    onClose: p.dG4,
-    onCtaClick: p.dG4,
-    onDiscoveryButtonClick: p.dG4
+    closeCoachmarkIfOpen: g.dG4,
+    onClose: g.dG4,
+    onCtaClick: g.dG4,
+    onDiscoveryButtonClick: g.dG4
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => _
 }), n(388685);
@@ -25,13 +25,13 @@ function _(e) {
     height: l,
     channel: _,
     participants: y,
-    onSelectParticipant: C
-  } = e, [x, v] = function() {
+    onSelectParticipant: x
+  } = e, [C, v] = function() {
     let [e, t] = i.useState(() => s.K.get(b, h.VD2.BOTTOM_RIGHT));
     return [e, i.useCallback(e => {
       s.K.set(b, e), t(e)
     }, [])]
-  }(), j = i.useRef(null), O = null == _.getGuildId() ? 70 : 50, E = (0, o.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), I = y.length, P = E * I + 8 * (I - 1), S = i.useMemo(() => ({
+  }(), j = i.useRef(null), O = null == _.getGuildId() ? 70 : 50, E = (0, o.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), I = y.length, S = E * I + 8 * (I - 1), P = i.useMemo(() => ({
     minWidth: f.Rv[f.cL.CAMERA_PREVIEW] * I + 8 * (I - 1),
     maxWidth: f.$i[f.cL.CAMERA_PREVIEW] * I + 8 * (I - 1)
   }), [I]);
@@ -49,9 +49,9 @@ function _(e) {
   return (0, r.jsx)("div", {
     className: m.container,
     children: (0, r.jsx)(u._, {
-      position: x,
+      position: C,
       id: 0,
-      width: P,
+      width: S,
       ref: j,
       onMove: N,
       onResize: Z,
@@ -61,7 +61,7 @@ function _(e) {
       edgeOffsetBottom: 70,
       edgeOffsetLeft: 16,
       edgeOffsetRight: 16,
-      resizeConfig: S,
+      resizeConfig: P,
       children: (0, r.jsx)("div", {
         className: m.tileContainer,
         children: y.map(e => (0, r.jsx)(p.ZP, {
@@ -73,7 +73,7 @@ function _(e) {
           inCall: !0,
           inPopout: !1,
           width: 160,
-          onClick: C
+          onClick: x
         }, e.id))
       })
     })

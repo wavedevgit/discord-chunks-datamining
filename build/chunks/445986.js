@@ -1,6 +1,6 @@
 /** Chunk was on 88934 **/
 n.d(t, {
-  Q: () => _,
+  Q: () => f,
   Z: () => x
 }), n(35282), n(539854), n(388685);
 var r = n(255367),
@@ -64,10 +64,10 @@ function g(e, t) {
   return a
 }
 
-function _(e) {
+function f(e) {
   return "".concat(e.split("?")[0], "?size=").concat(2048)
 }
-let f = e => {
+let _ = e => {
   var {
     index: t,
     items: n
@@ -83,7 +83,7 @@ let f = e => {
         src: r
       } = e;
       e === i && (l = o.length), o.push({
-        src: _(r),
+        src: f(r),
         width: t,
         height: n
       })
@@ -111,7 +111,7 @@ class b extends a.Component {
         "aria-label": u.intl.string(u.t.X4IxWF)
       }, e), {
         parentComponent: "ApplicationStoreListingCarousel",
-        children: (0, r.jsx)(f, h(m({}, e), {
+        children: (0, r.jsx)(_, h(m({}, e), {
           index: t,
           items: this.props.items
         }))

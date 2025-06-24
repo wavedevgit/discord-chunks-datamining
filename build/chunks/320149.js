@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(6025),
   b = n(433355),
   _ = n(933557),
-  E = n(287746),
-  O = n(388032),
+  O = n(287746),
+  E = n(388032),
   y = n(560460),
   I = n(46467);
 
@@ -30,7 +30,7 @@ function v(e) {
   } = e, v = (0, _.ZP)(t), C = (0, p.K)(), S = (0, p.V)(), N = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), T = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), P = (0, f.V)(t.id, t.getRecipientId()), j = i.useCallback(() => {
     m.Z.closeChannelSidebar(b.uZ), N && C && (0, g.Kh)(t.id), T && S && (0, g.Kh)(t.id)
   }, [t.id, T, S, N, C]), A = i.useCallback(() => {
-    (0, a.showToast)((0, a.createToast)(O.intl.string(O.t.pIQ3h4), a.ToastType.FAILURE))
+    (0, a.showToast)((0, a.createToast)(E.intl.string(E.t.pIQ3h4), a.ToastType.FAILURE))
   }, []), {
     markAsNotSpam: Z
   } = (0, h.m)({
@@ -40,13 +40,13 @@ function v(e) {
   if (null == t || !t.isDM()) return null;
   let x = [(0, r.jsx)(s.ZP.Icon, {
     icon: a.Dio,
-    tooltip: O.intl.string(O.t.cpT0Cg),
+    tooltip: E.intl.string(E.t.cpT0Cg),
     onClick: () => m.Z.closeChannelSidebar(n)
   }, "close")];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.ZP, {
       toolbar: x,
-      "aria-label": O.intl.string(O.t.BIYAqa),
+      "aria-label": E.intl.string(E.t.BIYAqa),
       children: (0, c.ud)({
         channel: t,
         channelName: v,
@@ -57,16 +57,16 @@ function v(e) {
       children: [(0, r.jsx)(a.Text, {
         className: I.__invalid_hamBannerText,
         variant: "text-sm/normal",
-        children: O.intl.string(O.t.XVOKgo)
+        children: E.intl.string(E.t.XVOKgo)
       }), (0, r.jsx)(a.zxk, {
         className: I.hamBannerButton,
         size: a.PhG.SMALL,
         onClick: () => Z(t, P),
-        children: O.intl.string(O.t.koqL3d)
+        children: E.intl.string(E.t.koqL3d)
       })]
     }), (0, r.jsx)("div", {
       className: y.chat,
-      children: (0, r.jsx)(E.Z, {
+      children: (0, r.jsx)(O.Z, {
         channel: t,
         guild: null,
         chatInputType: o.Ie.SIDEBAR

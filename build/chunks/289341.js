@@ -23,14 +23,14 @@ function g(e) {
     analyticsLocations: b
   } = (0, s.ZP)([...m, o.Z.ACTIVITY_DETAIL_PAGE]), {
     applicationId: _
-  } = g.params, [E] = (0, c.Z)([_]), O = null == E || null == (t = E.bot) ? void 0 : t.id, y = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  } = g.params, [O] = (0, c.Z)([_]), E = null == O || null == (t = O.bot) ? void 0 : t.id, y = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return r.useEffect(() => {
-    null != O && null != y && (async () => {
+    null != E && null != y && (async () => {
       try {
         var e;
         let t = new URL(location.href),
           n = await a.Z.openPrivateChannel({
-            recipientIds: O
+            recipientIds: E
           }),
           r = null != (e = t.searchParams.get("referrer_id")) ? e : void 0,
           {
@@ -45,9 +45,9 @@ function g(e) {
         })
       } catch (e) {}
     })()
-  }, [b, _, O, y]), r.useEffect(() => {
+  }, [b, _, E, y]), r.useEffect(() => {
     let e = setTimeout(() => {
-      null == O && l.Z.show({
+      null == E && l.Z.show({
         title: f.intl.string(f.t.PtobXV),
         body: f.intl.string(f.t["IOy+Iy"])
       })
@@ -55,5 +55,5 @@ function g(e) {
     return () => {
       clearTimeout(e)
     }
-  }, [O]), null
+  }, [E]), null
 }

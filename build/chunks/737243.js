@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => f
 });
@@ -22,34 +22,34 @@ let h = i.memo(function(e) {
     interactionAvatarProfile: b,
     interactionData: _,
     referencedUsernameProfile: y,
-    referencedAvatarProfile: C,
-    setPopout: x
+    referencedAvatarProfile: x,
+    setPopout: C
   } = e, {
     isInteractionUserBlocked: v,
     isInteractionUserIgnored: j
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
-  }), [h]), O = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? void 0 : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? void 0 : t.user.id, f.id), I = (0, d.Nk)(h.interaction, f, g, x), P = (0, d.NU)(b, x), S = (0, o.t0)(h), Z = (null == S ? void 0 : S.type) === a.B8.APPLICATION_COMMAND ? null == (n = S.target_user) ? void 0 : n.id : void 0, N = (0, d.wq)(Z, f.id), T = (0, d.JC)(Z, f, y, x), A = (0, d.rY)(C, x), w = (0, d.Xn)(_, x), R = i.useCallback(() => {
-    x({
+  }), [h]), O = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? void 0 : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? void 0 : t.user.id, f.id), I = (0, d.Nk)(h.interaction, f, g, C), S = (0, d.NU)(b, C), P = (0, o.t0)(h), Z = (null == P ? void 0 : P.type) === a.B8.APPLICATION_COMMAND ? null == (n = P.target_user) ? void 0 : n.id : void 0, N = (0, d.wq)(Z, f.id), T = (0, d.JC)(Z, f, y, C), A = (0, d.rY)(x, C), w = (0, d.Xn)(_, C), R = i.useCallback(() => {
+    C({
       interactionUsernameProfile: !1,
       interactionAvatarProfile: !1,
       interactionData: !1,
       referencedUsernameProfile: !1,
       referencedAvatarProfile: !1
     })
-  }, [x]), M = i.useCallback(() => (0, p.Z)({
+  }, [C]), M = i.useCallback(() => (0, p.Z)({
     message: h,
     channel: f,
     compact: m,
-    setPopout: x,
-    referencedAvatarProfile: C,
+    setPopout: C,
+    referencedAvatarProfile: x,
     referencedUsernameProfile: y,
     replyReference: h.messageReference,
     replyMessage: O,
     isReplySpineClickable: !1,
     showReplySpine: !1
-  }), [f, m, h, C, O, y, x]);
+  }), [f, m, h, x, O, y, C]);
   return (0, r.jsx)(u.Z, {
     message: h,
     channel: f,
@@ -59,9 +59,9 @@ let h = i.memo(function(e) {
     showAvatarPopout: b,
     showUsernamePopout: g,
     showDataPopout: _,
-    showTargetAvatarPopout: C,
+    showTargetAvatarPopout: x,
     showTargetUsernamePopout: y,
-    onClickAvatar: P,
+    onClickAvatar: S,
     onClickUsername: I,
     onClickCommand: w,
     onUserContextMenu: E,

@@ -1,33 +1,33 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 84865 **/
 n.d(t, {
   Z: () => c
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  a = n(298213),
-  o = n(388032),
-  s = n(884492);
+  o = n(298213),
+  s = n(388032),
+  a = n(884492);
 
 function c(e) {
   let {
     userId: t,
     applicationId: n
-  } = e, [c, u] = i.useState(!1), [d, p] = i.useState(!1), m = i.useCallback(async e => {
-    e.stopPropagation(), p(!0);
+  } = e, [c, u] = i.useState(!1), [d, h] = i.useState(!1), p = i.useCallback(async e => {
+    e.stopPropagation(), h(!0);
     try {
-      await a.Z.cancelFriendRequest({
+      await o.Z.cancelFriendRequest({
         userId: t,
         applicationId: n,
         location: "ActionButtonFriendRequest"
       })
     } finally {
-      p(!1)
+      h(!1)
     }
   }, [n, t]), f = i.useCallback(async e => {
     e.stopPropagation(), u(!0);
     try {
-      await a.Z.maybeConfirmFriendRequestAccept({
+      await o.Z.maybeConfirmFriendRequestAccept({
         userId: t,
         applicationId: n,
         location: "ActionButtonFriendRequest"
@@ -37,9 +37,9 @@ function c(e) {
     }
   }, [n, t]);
   return (0, r.jsxs)("div", {
-    className: s.friendRequestContainer,
+    className: a.friendRequestContainer,
     children: [(0, r.jsx)(l.zxk, {
-      className: s.acceptButton,
+      className: a.acceptButton,
       look: l.zxk.Looks.FILLED,
       color: l.zxk.Colors.GREEN,
       size: l.zxk.Sizes.NONE,
@@ -49,20 +49,20 @@ function c(e) {
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: o.intl.string(o.t.ZcibdX)
+        children: s.intl.string(s.t.ZcibdX)
       })
     }), (0, r.jsx)(l.zxk, {
-      className: s.ignoreButton,
+      className: a.ignoreButton,
       look: l.zxk.Looks.FILLED,
       color: l.zxk.Colors.PRIMARY,
       size: l.zxk.Sizes.NONE,
       submitting: d,
       disabled: c,
-      onClick: m,
+      onClick: p,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: o.intl.string(o.t.xuio0N)
+        children: s.intl.string(s.t.xuio0N)
       })
     })]
   })

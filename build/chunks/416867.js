@@ -1,4 +1,4 @@
-/** Chunk was on 98245 **/
+/** Chunk was on 69978 **/
 "use strict";
 n.d(t, {
   B: () => u
@@ -8,8 +8,8 @@ n(73800);
 var i = n(481060),
   s = n(313201),
   o = n(192635),
-  a = n(388032),
-  l = n(274970);
+  l = n(388032),
+  a = n(274970);
 
 function c(e) {
   let {
@@ -18,11 +18,11 @@ function c(e) {
     title: c,
     body: u,
     onClose: d
-  } = e, p = (0, s.Dt)();
+  } = e, f = (0, s.Dt)();
   return (0, r.jsxs)(i.Y0X, {
-    className: l.container,
+    className: a.container,
     transitionState: t,
-    "aria-labelledby": p,
+    "aria-labelledby": f,
     parentComponent: "ActionCompletedSuccessModal",
     children: [(0, r.jsxs)(i.hzk, {
       children: [(0, r.jsx)(o.Z, {
@@ -30,14 +30,14 @@ function c(e) {
       }), (0, r.jsx)(i.LZC, {
         size: 24
       }), (0, r.jsx)(i.X6q, {
-        id: p,
-        className: l.__invalid_title,
+        id: f,
+        className: a.__invalid_title,
         variant: "heading-xl/semibold",
         children: c
       }), (0, r.jsx)(i.LZC, {
         size: 8
       }), (0, r.jsx)(i.Text, {
-        className: l.body,
+        className: a.body,
         variant: "text-sm/normal",
         children: u
       })]
@@ -47,7 +47,7 @@ function c(e) {
       size: i.zxk.Sizes.MEDIUM,
       grow: !1,
       onClick: d,
-      children: a.intl.string(a.t["NX+WJC"])
+      children: l.intl.string(l.t["NX+WJC"])
     })]
   })
 }

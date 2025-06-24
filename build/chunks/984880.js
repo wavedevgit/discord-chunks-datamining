@@ -1,4 +1,4 @@
-/** Chunk was on 63990 **/
+/** Chunk was on 19456 **/
 "use strict";
 var n = r(381538);
 
@@ -124,11 +124,11 @@ t.exports = function(t) {
       if (G.wrapperTemplate) {
         var J = [];
         do J.push(x[V].block), V++; while (V < x.length && x[V].wrapperTemplate === G.wrapperTemplate);
-        var $ = u.cloneElement(G.wrapperTemplate, {
+        var X = u.cloneElement(G.wrapperTemplate, {
           key: G.key + "-wrap",
           "data-offset-key": G.offsetKey
         }, J);
-        W.push($)
+        W.push(X)
       } else W.push(G.block), V++
     }
     return u.createElement("div", {

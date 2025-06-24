@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 e.exports = {
   container: "container__722ff",
   callContainer: "callContainer__722ff",
@@ -8,6 +8,5 @@ e.exports = {
   volumeSlider: "volumeSlider__722ff",
   chatToasts: "chatToasts__722ff",
   rtsSidebarOpen: "rtsSidebarOpen__722ff",
-  channelChatWrapper: "channelChatWrapper__722ff",
-  customInviteButtonColors: "customInviteButtonColors__722ff"
+  channelChatWrapper: "channelChatWrapper__722ff"
 }

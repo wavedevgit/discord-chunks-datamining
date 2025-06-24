@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => Z
 }), n(953529), n(388685), n(539854);
@@ -19,24 +19,24 @@ var r = n(255367),
   b = n(430824),
   _ = n(496675),
   y = n(594174),
-  C = n(233608),
-  x = n(370595),
+  x = n(233608),
+  C = n(370595),
   v = n(351127),
   j = n(981631),
   O = n(388032),
   E = n(12740),
   I = n(444021);
 
-function P(e) {
+function S(e) {
   var t, n, l, o;
   let {
     permission: s,
     roleIds: g,
     guild: y,
-    specMap: C,
-    categoryTitle: x,
+    specMap: x,
+    categoryTitle: C,
     userId: E
-  } = e, P = (0, c.e7)([b.Z], () => b.Z.getRoles(y.id)), S = j.Plq[s], Z = null != (l = null == (t = C[S.toString()]) ? void 0 : t.title) ? l : (0, m.wt)(S), N = null != (o = null == (n = C[S.toString()]) ? void 0 : n.description) ? o : "", T = v._o.has(S), A = v.Qn.includes(s), w = g.length, R = (0, c.e7)([_.Z], () => _.Z.can(j.Plq.MANAGE_ROLES, y), [y]), M = i.useCallback(async e => {
+  } = e, S = (0, c.e7)([b.Z], () => b.Z.getRoles(y.id)), P = j.Plq[s], Z = null != (l = null == (t = x[P.toString()]) ? void 0 : t.title) ? l : (0, m.wt)(P), N = null != (o = null == (n = x[P.toString()]) ? void 0 : n.description) ? o : "", T = v._o.has(P), A = v.Qn.includes(s), w = g.length, R = (0, c.e7)([_.Z], () => _.Z.can(j.Plq.MANAGE_ROLES, y), [y]), M = i.useCallback(async e => {
     R && (await f.Z.open(y.id, j.pNK.ROLES), await f.Z.selectRole(e))
   }, [R, y.id]);
   return (0, r.jsxs)("div", {
@@ -51,12 +51,12 @@ function P(e) {
           variant: "text-md/medium",
           color: "header-primary",
           children: Z
-        }), null != x && (0, r.jsxs)("div", {
+        }), null != C && (0, r.jsxs)("div", {
           className: I.permissionItemSubheader,
           children: [(0, r.jsx)(u.Text, {
             variant: "text-xs/normal",
             color: "header-muted",
-            children: x
+            children: C
           }), T && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(p.Z, {
               height: 4,
@@ -157,7 +157,7 @@ function P(e) {
         }),
         onClick: () => M(e),
         children: (0, r.jsx)(h.Z, {
-          role: P[e],
+          role: S[e],
           guildId: y.id,
           className: I.roleChiplet
         })
@@ -166,7 +166,7 @@ function P(e) {
   })
 }
 
-function S(e, t) {
+function P(e, t) {
   return t.toLowerCase().includes(e.toLowerCase())
 }
 
@@ -177,9 +177,9 @@ function Z(e) {
     location: l,
     className: o,
     onNavigate: d
-  } = e, p = (0, c.e7)([y.default], () => y.default.getUser(t), [t]), h = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]), f = (0, c.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]), _ = (0, v.B2)(t, n, v.pd), Z = Object.keys(_).length, N = i.useMemo(() => null != h ? C.Z.getGuildPermissionSpecMap(h) : null, [h]), T = i.useMemo(() => null != h ? C.Z.generateGuildPermissionSpec(h) : null, [h]), [A, w] = i.useState(""), [R, M] = i.useState(""), k = i.useMemo(() => s()(M, 300), []), L = i.useCallback(e => {
+  } = e, p = (0, c.e7)([y.default], () => y.default.getUser(t), [t]), h = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]), f = (0, c.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]), _ = (0, v.B2)(t, n, v.pd), Z = Object.keys(_).length, N = i.useMemo(() => null != h ? x.Z.getGuildPermissionSpecMap(h) : null, [h]), T = i.useMemo(() => null != h ? x.Z.generateGuildPermissionSpec(h) : null, [h]), [A, w] = i.useState(""), [R, M] = i.useState(""), k = i.useMemo(() => s()(M, 300), []), D = i.useCallback(e => {
     w(e), k(e)
-  }, [k]), D = i.useCallback(() => {
+  }, [k]), L = i.useCallback(() => {
     w(""), M("")
   }, []), U = i.useMemo(() => {
     if (null == h || null == N || null == f) return null;
@@ -203,13 +203,13 @@ function Z(e) {
               i = v._o.has(l),
               o = v.Qn.includes(a),
               h = i ? O.intl.string(O.t.k7Kqj4) : o ? O.intl.string(O.t.IfqUEB) : null,
-              f = S(R, e),
-              g = S(R, t),
-              b = S(R, r),
-              _ = null != h && S(R, h);
+              f = P(R, e),
+              g = P(R, t),
+              b = P(R, r),
+              _ = null != h && P(R, h);
             if (!f && !g && !b && !_) return
           }
-          e.push((0, r.jsx)(P, {
+          e.push((0, r.jsx)(S, {
             permission: a,
             roleIds: o,
             guild: h,
@@ -223,7 +223,7 @@ function Z(e) {
   }, [h, N, f, Z, T, _, R, t]);
   return null == p || null == f ? null : (0, r.jsxs)("div", {
     className: a()(E.container, o),
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(C.Z, {
       guildId: n,
       userId: t,
       onNavigate: d
@@ -237,8 +237,8 @@ function Z(e) {
             className: I.searchBar,
             query: A,
             placeholder: O.intl.string(O.t["yD9+dH"]),
-            onChange: L,
-            onClear: D,
+            onChange: D,
+            onClear: L,
             autoComplete: "off",
             inputProps: {
               autoCapitalize: "none",

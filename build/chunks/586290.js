@@ -45,7 +45,7 @@ function j(e) {
     c = (0, f.zX)({
       sortDevicesByFrecency: a
     }),
-    [j, S] = i.useState(v(t.id, o, c));
+    [j, b] = i.useState(v(t.id, o, c));
   return null != j && l(j), (0, r.jsxs)(d.xJW, {
     title: "Capture Device",
     className: g.modalContent,
@@ -70,7 +70,7 @@ function j(e) {
         value: j,
         className: _.__invalid_marginaTop8,
         onChange: e => {
-          S(e), l(e)
+          b(e), l(e)
         },
         options: c.map(e => {
           let {

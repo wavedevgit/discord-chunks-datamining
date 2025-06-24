@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => w
 });
@@ -19,15 +19,15 @@ var r = n(255367),
   b = n(892001),
   _ = n(899007),
   y = n(648052),
-  C = n(867176),
-  x = n(280885),
+  x = n(867176),
+  C = n(280885),
   v = n(900927),
   j = n(678738),
   O = n(502762),
   E = n(530),
   I = n(679332),
-  P = n(544989),
-  S = n(228168),
+  S = n(544989),
+  P = n(228168),
   Z = n(388032),
   N = n(638414),
   T = n(283189);
@@ -56,21 +56,21 @@ function w(e) {
     user: t,
     channel: n
   } = e, w = __OVERLAY__ || !(0, d.Z)(t.id), R = (0, g.ZP)(t.id), M = (0, s.ZP)(), k = i.useRef(Date.now()), {
-    analyticsLocations: L
-  } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), D = (0, f.ZB)({
+    analyticsLocations: D
+  } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), L = (0, f.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
   }), U = i.useRef(null), B = (0, o.Z)(U), F = e => {
     (0, b.openUserProfileModal)(A({
-      sourceAnalyticsLocations: L,
+      sourceAnalyticsLocations: D,
       hideRestrictedProfile: !0
-    }, D, e))
+    }, L, e))
   };
   return (0, r.jsx)(u.Gt, {
-    value: L,
+    value: D,
     children: (0, r.jsx)(f.Mt, {
-      value: D,
+      value: L,
       openedAt: k.current,
       fetchStartedAt: null == R ? void 0 : R.fetchStartedAt,
       fetchEndedAt: null == R ? void 0 : R.fetchEndedAt,
@@ -79,25 +79,25 @@ function w(e) {
         ref: U,
         user: t,
         displayProfile: R,
-        themeType: S.lY.SIDEBAR,
+        themeType: P.lY.SIDEBAR,
         themeOverride: M,
         children: [(0, r.jsxs)(l.u2, {
-          children: [(0, r.jsx)(P.Z, {
+          children: [(0, r.jsx)(S.Z, {
             children: (0, r.jsx)(I.Z, {
               user: t
             })
           }), (0, r.jsxs)("header", {
             className: N.header,
-            children: [(0, r.jsx)(C.Z, {
+            children: [(0, r.jsx)(x.Z, {
               user: t,
               displayProfile: R,
-              themeType: S.lY.SIDEBAR,
+              themeType: P.lY.SIDEBAR,
               animateOnHover: !B
             }), (0, r.jsx)(_.Z, {
               user: t,
               displayProfile: R,
               channelId: n.id,
-              themeType: S.lY.SIDEBAR,
+              themeType: P.lY.SIDEBAR,
               onOpenProfile: w ? void 0 : F
             })]
           }), (0, r.jsxs)("div", {
@@ -109,14 +109,14 @@ function w(e) {
               onOpenProfile: w ? void 0 : F,
               tags: (0, r.jsx)(y.Z, {
                 displayProfile: R,
-                themeType: S.lY.SIDEBAR
+                themeType: P.lY.SIDEBAR
               })
             }), (0, r.jsxs)(O.Z.Overlay, {
               className: T.overlay,
               children: [(0, r.jsx)(j.Z, {
                 heading: Z.intl.string(Z.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(x.Z, {
+                children: (0, r.jsx)(C.Z, {
                   userBio: null == R ? void 0 : R.bio,
                   userId: t.id,
                   animateOnHover: !0,
@@ -141,8 +141,8 @@ function w(e) {
             onClick: () => {
               F(), (0, m.pQ)(A({
                 action: "PRESS_VIEW_PROFILE",
-                analyticsLocations: L
-              }, D))
+                analyticsLocations: D
+              }, L))
             },
             children: Z.intl.string(Z.t["+Xp3ho"])
           })

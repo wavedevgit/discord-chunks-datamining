@@ -1,6 +1,6 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
-  Z: () => O
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -49,13 +49,13 @@ function b(e, t) {
   }), e
 }
 
-function O(e) {
+function _(e) {
   let {
     guild: t,
-    selected: O
+    selected: _
   } = e, {
-    hasUnread: y,
-    mentionCount: _
+    hasUnread: O,
+    mentionCount: y
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, p.W.GUILD_EVENT),
     mentionCount: u.ZP.getMentionCount(t.id, p.W.GUILD_EVENT)
@@ -71,7 +71,7 @@ function O(e) {
     }), (0, a.EW)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
   let j = (0, c.ZP)(t.id),
-    S = j.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSk, {
+    E = j.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSk, {
       number: j.length
     }) : f.intl.string(f.t.tlopTE);
   return (0, r.jsx)(h.m, {
@@ -81,8 +81,8 @@ function O(e) {
       color: "currentColor",
       className: e
     }),
-    text: S,
-    selected: O,
+    text: E,
+    selected: _,
     onClick: C,
     onContextMenu: e => {
       (0, s.jW)(e, async () => {
@@ -94,11 +94,11 @@ function O(e) {
         }))
       })
     },
-    showUnread: y && !v,
-    trailing: !v && _ > 0 ? (0, r.jsx)(o.mAB, {
+    showUnread: O && !v,
+    trailing: !v && y > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: !0,
-      count: _
+      count: y
     }) : null
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
   Z: () => b,
   y: () => _
@@ -99,14 +99,14 @@ let g = e => {
       isCard: m = !1,
       isEmbed: _ = !1,
       onClick: b
-    } = e, E = i.useMemo(() => null == l ? null : l instanceof p.ZP ? l : new p.ZP(l), [l]);
-    if (null == n || null == E) return null;
+    } = e, x = i.useMemo(() => null == l ? null : l instanceof p.ZP ? l : new p.ZP(l), [l]);
+    if (null == n || null == x) return null;
     let {
       topic: y,
-      speaker_count: x,
+      speaker_count: E,
       participant_count: v
-    } = n, O = null != (t = n.members) ? t : [], C = _ ? O.slice(0, 3) : O, j = x - C.length;
-    return _ && (j += O.length - C.length), (0, r.jsxs)("div", {
+    } = n, C = null != (t = n.members) ? t : [], O = _ ? C.slice(0, 3) : C, j = E - O.length;
+    return _ && (j += C.length - O.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: h.flex,
         children: [(0, r.jsxs)("div", {
@@ -145,7 +145,7 @@ let g = e => {
           width: 20,
           height: 20,
           children: (0, r.jsx)(d.Z, {
-            guild: E,
+            guild: x,
             size: d.Z.Sizes.MINI,
             active: !0
           })
@@ -153,7 +153,7 @@ let g = e => {
           color: "header-secondary",
           className: h.__invalid_label,
           variant: "text-sm/normal",
-          children: E.name
+          children: x.name
         })]
       }), (0, r.jsx)(s.Z, {
         size: m || _ ? s.Z.Sizes.SIZE_16 : s.Z.Sizes.SIZE_20,
@@ -165,11 +165,11 @@ let g = e => {
         className: a()(h.members, {
           [h.embed]: _
         }),
-        children: [C.length > 0 && (0, r.jsxs)("div", {
+        children: [O.length > 0 && (0, r.jsxs)("div", {
           className: h.speakers,
-          children: [C.map(e => (0, r.jsx)(g, {
+          children: [O.map(e => (0, r.jsx)(g, {
             speaker: e,
-            guildId: E.id,
+            guildId: x.id,
             isEmbed: _
           }, e.user.id)), j > 0 ? (0, r.jsxs)("div", {
             className: h.speaker,

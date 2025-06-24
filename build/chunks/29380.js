@@ -57,16 +57,16 @@ function v(e) {
     onConfirmActivityLaunchChecksAlertOpen: N
   }), {
     disabled: w,
-    reason: Z
+    reason: k
   } = (0, p.Z)({
     context: t,
     application: n,
     activityAction: O
   });
   return (0, i.jsx)(l.ua7, {
-    shouldShow: null != Z,
+    shouldShow: null != k,
     tooltipContentClassName: C.tooltipContent,
-    text: Z,
+    text: k,
     children: e => {
       var t, r, {
           onClick: o

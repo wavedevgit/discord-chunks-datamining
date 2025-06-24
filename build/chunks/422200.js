@@ -1,6 +1,6 @@
-/** Chunk was on 86797 **/
-n.d(e, {
-  default: () => P
+/** Chunk was on 78650 **/
+n.d(t, {
+  default: () => C
 });
 var i = n(255367);
 n(73800);
@@ -8,47 +8,47 @@ var r = n(481060),
   l = n(239091),
   a = n(108843),
   o = n(100527),
-  c = n(299206),
-  s = n(895563),
+  s = n(299206),
+  d = n(895563),
   u = n(32750),
-  d = n(109764),
+  c = n(109764),
   f = n(323597),
-  b = n(461535),
-  h = n(438536),
-  g = n(251746),
-  O = n(193987),
+  h = n(461535),
+  g = n(438536),
+  b = n(251746),
+  v = n(193987),
   Z = n(933793),
   p = n(13736),
   m = n(732393),
-  _ = n(214906),
-  j = n(612856),
-  v = n(137591),
+  O = n(214906),
+  _ = n(612856),
+  j = n(137591),
   y = n(388032);
-let P = (0, a.Z)(function(t) {
+let C = (0, a.Z)(function(e) {
   let {
-    channel: e,
+    channel: t,
     onSelect: n
-  } = t, a = (0, d.Z)(e), o = (0, b.Z)(e), P = (0, _.Z)(e), E = (0, u.Z)(e), C = (0, O.Z)(e), S = (0, f.Z)(e), x = (0, c.Z)({
-    id: e.id,
+  } = e, a = (0, c.Z)(t), o = (0, h.Z)(t), C = (0, O.Z)(t), E = (0, u.Z)(t), P = (0, v.Z)(t), N = (0, f.Z)(t), A = (0, s.Z)({
+    id: t.id,
     label: y.intl.string(y.t.DQ797u)
-  }), N = (0, h.Z)(e, "Context Menu"), k = (0, Z.Z)(e), U = (0, j.Z)(e), A = (0, p.Z)(e), D = (0, m.Z)(e.id), M = (0, g.Z)(e), w = (0, v.Z)(e), T = (0, s.l)(e), L = (0, s.P)(e);
+  }), T = (0, g.Z)(t, "Context Menu"), R = (0, Z.Z)(t), x = (0, _.Z)(t), S = (0, p.Z)(t), k = (0, m.Z)(t.id), M = (0, b.Z)(t), U = (0, j.Z)(t), I = (0, d.l)(t), w = (0, d.P)(t);
   return (0, i.jsxs)(r.v2r, {
     navId: "thread-context",
     onClose: l.Zy,
     "aria-label": y.intl.string(y.t["1NBjqa"]),
     onSelect: n,
     children: [(0, i.jsxs)(r.kSQ, {
-      children: [o, T]
+      children: [o, I]
     }, "mark-as-read-or-favorite"), (0, i.jsxs)(r.kSQ, {
-      children: [N, M, E, C, A, D, a]
+      children: [T, M, E, P, S, k, a]
     }, "thread-actions"), (0, i.jsxs)(r.kSQ, {
-      children: [P, U]
+      children: [C, x]
     }, "notifications"), (0, i.jsx)(r.kSQ, {
-      children: L
+      children: w
     }), (0, i.jsxs)(r.kSQ, {
-      children: [w, k, S]
+      children: [U, R, N]
     }, "admin-actions"), (0, i.jsx)(r.kSQ, {
-      children: x
+      children: A
     }, "developer-actions")]
   })
 }, [o.Z.CONTEXT_MENU, o.Z.CHANNEL_LIST_THREAD_MENU])

@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 16703 **/
 n.d(t, {
-  Z: () => h
+  Z: () => m
 }), n(388685);
 var r, i = n(442837),
   l = n(570140);
@@ -44,7 +44,7 @@ let c = !1,
   d = new Set,
   p = {};
 
-function m() {
+function h() {
   p = {}
 }
 class f extends(r = i.ZP.Store) {
@@ -62,7 +62,7 @@ class f extends(r = i.ZP.Store) {
   }
 }
 a(f, "displayName", "scheduledMessageStore");
-let h = new f(l.Z, {
+let m = new f(l.Z, {
   SCHEDULED_MESSAGES_CREATE_SUCCESS: function(e) {
     let {
       channelId: t,
@@ -126,6 +126,6 @@ let h = new f(l.Z, {
     } = e;
     p = o({}, p), delete p[t]
   },
-  LOGOUT: m,
-  CONNECTION_OPEN: m
+  LOGOUT: h,
+  CONNECTION_OPEN: h
 })

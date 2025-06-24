@@ -1,12 +1,12 @@
-/** Chunk was on 59458 **/
+/** Chunk was on 26179 **/
 a.d(t, {
   L9: () => S,
   ZK: () => O,
   d4: () => B,
-  dS: () => x,
+  dS: () => T,
   jY: () => w,
   q7: () => M,
-  vZ: () => T
+  vZ: () => x
 }), a(953529), a(997841);
 var o = a(255367),
   n = a(73800),
@@ -17,9 +17,9 @@ var o = a(255367),
   l = a(543651),
   _ = a(177751),
   d = a(519320),
-  u = a(592125),
-  p = a(52824),
-  m = a(630388),
+  p = a(592125),
+  m = a(52824),
+  u = a(630388),
   f = a(591759),
   g = a(850908),
   C = a(524444),
@@ -59,19 +59,19 @@ function v(e, t) {
   }), e
 }
 
-function x(e) {
+function T(e) {
   var t;
   let a = e.item.originalItem;
   return (0, C.Yi)(v(I({}, e), {
     alt: a.description,
-    src: (0, p.q)({
+    src: (0, m.q)({
       proxyURL: a.proxy_url,
       url: a.url
     }),
     original: a.url,
     placeholder: a.placeholder,
     placeholderVersion: a.placeholder_version,
-    srcIsAnimated: (0, m.yE)(null != (t = a.flags) ? t : 0, b.J0y.IS_ANIMATED),
+    srcIsAnimated: (0, u.yE)(null != (t = a.flags) ? t : 0, b.J0y.IS_ANIMATED),
     sourceMetadata: {
       message: e.message,
       identifier: {
@@ -86,12 +86,12 @@ function x(e) {
   }))
 }
 
-function T(e) {
+function x(e) {
   var t;
   let a = e.item.originalItem,
     i = n.useCallback(() => {
       var e;
-      return (0, m.yE)(null != (e = a.flags) ? e : 0, b.J0y.IS_CLIP) ? (0, o.jsxs)(c.DY, {
+      return (0, u.yE)(null != (e = a.flags) ? e : 0, b.J0y.IS_CLIP) ? (0, o.jsxs)(c.DY, {
         text: h.intl.string(h.t["/fgfWl"]),
         className: y.clipPill,
         children: [(0, o.jsx)(s.AlX, {
@@ -113,7 +113,7 @@ function T(e) {
     src: a.url,
     placeholder: a.placeholder,
     placeholderVersion: a.placeholder_version,
-    srcIsAnimated: (0, m.yE)(null != (t = a.flags) ? t : 0, b.J0y.IS_ANIMATED),
+    srcIsAnimated: (0, u.yE)(null != (t = a.flags) ? t : 0, b.J0y.IS_ANIMATED),
     renderOverlayContent: i,
     sourceMetadata: {
       message: e.message,
@@ -194,14 +194,14 @@ function A(e) {
   let {
     attachment: a,
     message: n
-  } = e, r = n.channel_id, c = (0, i.e7)([u.Z], () => {
+  } = e, r = n.channel_id, c = (0, i.e7)([p.Z], () => {
     var e;
-    return null == (e = u.Z.getBasicChannel(r)) ? void 0 : e.guild_id
+    return null == (e = p.Z.getBasicChannel(r)) ? void 0 : e.guild_id
   }), {
     clip_created_at: s,
     clip_participants: _,
     title: d,
-    application: p
+    application: m
   } = a;
   return (0, o.jsx)(l.Z, {
     createdAt: null != s ? Date.parse(s) : void 0,
@@ -211,7 +211,7 @@ function A(e) {
       } = e;
       return t
     })) ? t : [],
-    applicationId: null == p ? void 0 : p.id,
+    applicationId: null == m ? void 0 : m.id,
     title: d,
     guildId: c
   })

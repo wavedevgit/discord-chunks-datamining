@@ -1,7 +1,7 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  PG: () => S,
-  Vf: () => b,
+  PG: () => b,
+  Vf: () => S,
   YX: () => C,
   ZP: () => O,
   l9: () => Z
@@ -24,7 +24,7 @@ var r = n(255367),
   _ = n(676462),
   v = n(388032),
   j = n(864443);
-let S = [{
+let b = [{
     value: g.tI.PRESET_VIDEO,
     canUse: e => !0
   }, {
@@ -34,7 +34,7 @@ let S = [{
     value: g.tI.PRESET_CUSTOM,
     canUse: e => !0
   }],
-  b = [{
+  S = [{
     value: g.LY.RESOLUTION_720,
     canUse: e => !0
   }, {
@@ -82,7 +82,7 @@ function O(e) {
     location: "StreamOptionsMenu"
   }), L = (0, a.zX)({
     sortDevicesByFrecency: M
-  }), D = (0, m.Z)(), [B, U] = null != (n = (0, x.Z)(g.tI.PRESET_VIDEO)) ? n : [g.LY.RESOLUTION_720, g.ws.FPS_30], [G, z] = null != (j = (0, x.Z)(g.tI.PRESET_DOCUMENTS)) ? j : [g.LY.RESOLUTION_SOURCE, g.ws.FPS_15];
+  }), D = (0, m.Z)(), [B, U] = null != (n = (0, x.Z)(g.tI.PRESET_VIDEO)) ? n : [g.LY.RESOLUTION_720, g.ws.FPS_30], [G, W] = null != (j = (0, x.Z)(g.tI.PRESET_DOCUMENTS)) ? j : [g.LY.RESOLUTION_SOURCE, g.ws.FPS_15];
   return (0, r.jsxs)(l.v2r, {
     "aria-label": v.intl.string(v.t["+1H47u"]),
     navId: "stream-options",
@@ -90,7 +90,7 @@ function O(e) {
     onSelect: Z,
     children: [(0, r.jsx)(l.kSQ, {
       label: v.intl.string(_.default.P2pjm5),
-      children: S.filter(e => {
+      children: b.filter(e => {
         let {
           canUse: t
         } = e;
@@ -114,7 +114,7 @@ function O(e) {
               case g.tI.PRESET_DOCUMENTS:
                 return v.intl.format(_.default["8tcFLy"], {
                   resolution: (0, f.M)(G),
-                  frameRate: z
+                  frameRate: W
                 });
               case g.tI.PRESET_CUSTOM:
                 return;
@@ -132,7 +132,7 @@ function O(e) {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "resolution",
         label: v.intl.string(_.default.IG5n0d),
-        children: b.filter(e => {
+        children: S.filter(e => {
           let {
             canUse: t
           } = e;

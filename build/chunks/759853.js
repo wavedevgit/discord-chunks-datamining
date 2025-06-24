@@ -29,13 +29,13 @@ let b = ["#51BC9D"],
     } = e, {
       completionSpring: y,
       startCompletionAnimation: O
-    } = (0, f.G)(), C = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = s.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), E = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), T = (0, u.Z)(P), [N, A] = s.useState(null), [k, R] = s.useState(null), B = s.useRef(new i.qA({
+    } = (0, f.G)(), C = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, w = s.useRef(!1), S = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), P = s.useRef(null), E = (0, d.e7)([m.Z], () => m.Z.hasLayers()), T = (0, u.Z)(E), [N, A] = s.useState(null), [k, R] = s.useState(null), B = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
     })), q = (0, i.uR)(N, k), I = s.useCallback(() => {
       if (S) return;
       let e = v.current,
-        t = E.current;
+        t = P.current;
       if (null != t && null != e && q.isReady) {
         var n, r, s, o, a, i;
         let {
@@ -110,19 +110,19 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [v, E, q, S]), D = (0, u.Z)(_);
+    }, [v, P, q, S]), D = (0, u.Z)(_);
     return (s.useEffect(() => {
       C && _ && !D && (O(), I())
     }, [_, C, O, I, D]), s.useEffect(() => {
-      C && !P && T && setTimeout(() => {
+      C && !E && T && setTimeout(() => {
         O(), I()
       }, 200)
-    }, [C, T, P, O, I]), s.useEffect(() => {
+    }, [C, T, E, O, I]), s.useEffect(() => {
       q.isReady && (!w.current && C && (O(), I()), w.current = C)
     }, [C, w, I, O, q]), S) ? null : (0, r.jsxs)("div", {
       className: x.wrapper,
       "aria-hidden": "true",
-      ref: E,
+      ref: P,
       children: [(0, r.jsx)(c.animated.div, {
         className: x.background,
         style: {

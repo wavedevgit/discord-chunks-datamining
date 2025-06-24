@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => x
+  Z: () => p
 }), n(388685);
 var a = n(255367),
   r = n(73800),
@@ -13,7 +13,7 @@ var a = n(255367),
   u = n(738629),
   m = n(616257);
 
-function x(e) {
+function p(e) {
   let {
     devSettingsCategory: t
   } = e, n = (0, s.e7)([d.ZP], () => d.ZP.allByCategory(t), [t], s.pF), l = r.useMemo(() => n.map(e => {

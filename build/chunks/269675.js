@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(430824),
   b = n(351402),
   _ = n(730647),
-  E = n(772021),
-  O = n(396828),
+  O = n(772021),
+  E = n(396828),
   y = n(293423),
   I = n(20967),
   v = n(504762),
@@ -31,15 +31,15 @@ var r = n(255367),
 function P(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([f.Z], () => f.Z.isConnected()), j = (0, p.Z)(t), A = (0, E.Z)(t), Z = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), x = (0, _.f)(), {
-    shouldHideGuildPurchaseEntryPoints: L,
-    restrictionsLoading: w
-  } = (0, h.uP)(t), R = null == n || !x || Z || w;
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([f.Z], () => f.Z.isConnected()), j = (0, p.Z)(t), A = (0, O.Z)(t), Z = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), x = (0, _.f)(), {
+    shouldHideGuildPurchaseEntryPoints: w,
+    restrictionsLoading: L
+  } = (0, h.uP)(t), R = null == n || !x || Z || L;
   (0, u.Tt)({
     subsection: N.intl.string(N.t["KzCF//"]),
     location: null == n ? void 0 : n.name
   }), (0, c.Z)(l.tq ? "role-subscriptions-overview" : void 0);
-  let D = P && (null == n || !(j || A) || L && !w);
+  let D = P && (null == n || !(j || A) || w && !L);
   if (i.useEffect(() => {
       s.jg()
     }, []), i.useEffect(() => {
@@ -56,7 +56,7 @@ function P(e) {
       toolbar: (0, r.jsx)(i.Fragment, {}),
       className: T.headerBar,
       children: [(0, r.jsx)(g.Z.Icon, {
-        icon: (0, o.GSL)(O.Z),
+        icon: (0, o.GSL)(E.Z),
         "aria-hidden": !0
       }), (0, r.jsx)(g.Z.Title, {
         children: N.intl.string(N.t["KzCF//"])

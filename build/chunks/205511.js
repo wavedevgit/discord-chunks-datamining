@@ -1,6 +1,6 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => E
+  Z: () => P
 });
 var r = n(255367),
   s = n(73800),
@@ -55,8 +55,8 @@ function S(e) {
     },
     afterRequest: d.stopAnimation
   }), {
-    header: E,
-    renderBody: P
+    header: P,
+    renderBody: E
   } = s.useMemo(() => {
     let e = _.length > 0,
       n = t.config.messages.gameTitle;
@@ -114,7 +114,7 @@ function S(e) {
         height: 16
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/medium",
-        children: E
+        children: P
       }), (0, r.jsx)(c.P3F, {
         className: a()(C.microphoneUnitRefreshIconWrapper, {
           [C.disabled]: y
@@ -126,13 +126,13 @@ function S(e) {
       className: a()({
         [C.opacity_50]: y
       }),
-      children: [P(), 0 === _.length ? null : (0, r.jsx)(w, {
+      children: [E(), 0 === _.length ? null : (0, r.jsx)(w, {
         children: l
       })]
     })]
   })
 }
-let E = function(e) {
+let P = function(e) {
   let {
     quest: t,
     taskDetails: n

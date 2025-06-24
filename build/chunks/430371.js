@@ -1,6 +1,6 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
-  Z: () => S
+  Z: () => P
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(111248),
   _ = n(312703),
   y = n(796638),
-  C = n(981631),
-  x = n(354459),
+  x = n(981631),
+  C = n(354459),
   v = n(363987),
   j = n(999976);
 
@@ -56,13 +56,13 @@ function E(e, t) {
   }), e
 }
 let I = 16 / 9,
-  P = 8 + y.cF;
+  S = 8 + y.cF;
 
-function S(e) {
+function P(e) {
   var t;
   let n, {
       onSelectParticipant: l,
-      onContextMenuParticipant: S,
+      onContextMenuParticipant: P,
       onFullscreenParticipant: Z,
       participants: N,
       filteredParticipants: T,
@@ -71,8 +71,8 @@ function S(e) {
       channel: R,
       selectedParticipant: M,
       showParticipants: k = !0,
-      className: L,
-      width: D,
+      className: D,
+      width: L,
       height: U,
       layout: B,
       idle: F
@@ -83,25 +83,25 @@ function S(e) {
     [z, W] = i.useState(null),
     Y = (0, c.Z)(z),
     [q, K] = i.useState(!0),
-    [X, Q] = i.useState(!1),
-    J = M.type === x.fO.ACTIVITY,
-    $ = (0, u.Z)(J ? M.applicationId : void 0),
-    ee = !J && null != M.streamId,
-    et = U <= 2 * P + 144,
+    [X, J] = i.useState(!1),
+    Q = M.type === C.fO.ACTIVITY,
+    $ = (0, u.Z)(Q ? M.applicationId : void 0),
+    ee = !Q && null != M.streamId,
+    et = U <= 2 * S + 144,
     en = k && !et,
     er = (0, c.Z)(en),
-    ei = B === C.AEg.MINIMUM || B === C.AEg.NORMAL,
-    el = !et && (!ei || J),
+    ei = B === x.AEg.MINIMUM || B === x.AEg.NORMAL,
+    el = !et && (!ei || Q),
     ea = (0, m.Z)(el, 100),
     eo = (null != (t = (0, c.Z)(M.id)) ? t : M.id) !== M.id,
     es = 0;
-  (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * P + 8);
-  let ec = i.useMemo(() => J && $ ? D / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : I, [ee, z, J, D, U, es, $]),
+  (Q || en) && (es += 72), Q && !en && (el ? es += 48 : es += 8), en && (es += .5 * S + 8);
+  let ec = i.useMemo(() => Q && $ ? L / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : I, [ee, z, Q, L, U, es, $]),
     eu = U - 2 * es,
-    ed = J && $ ? D : eu * ec,
-    ep = Math.floor(Math.min(D, ed) / ec),
-    eh = U > D / ec + 72 + P + 8;
-  n = en || J ? en ? -16 : -8 : 40 + Math.max(0, 72 - (U - ep) / 2), i.useEffect(() => {
+    ed = Q && $ ? L : eu * ec,
+    ep = Math.floor(Math.min(L, ed) / ec),
+    eh = U > L / ec + 72 + S + 8;
+  n = en || Q ? en ? -16 : -8 : 40 + Math.max(0, 72 - (U - ep) / 2), i.useEffect(() => {
     let e = setTimeout(() => {
       K(!1)
     }, 250);
@@ -117,10 +117,10 @@ function S(e) {
       config: E(O({}, o.config.stiff), {
         clamp: !0
       }),
-      onStart: () => Q(!0),
-      onChange: () => f.S.dispatch(C.CkL.REMEASURE_TARGET),
+      onStart: () => J(!0),
+      onChange: () => f.S.dispatch(x.CkL.REMEASURE_TARGET),
       onRest: () => {
-        Q(!1), f.S.dispatch(C.CkL.REMEASURE_TARGET)
+        J(!1), f.S.dispatch(x.CkL.REMEASURE_TARGET)
       }
     }, em),
     eb = (0, s.q_F)({
@@ -141,7 +141,7 @@ function S(e) {
         clamp: !0
       })
     }, em),
-    eC = (0, s.Yzy)(M, {
+    ex = (0, s.Yzy)(M, {
       keys: e => null == e ? void 0 : e.id,
       config: E(O({}, o.config.stiff), {
         clamp: !0
@@ -157,16 +157,16 @@ function S(e) {
         opacity: 0
       }
     }, em),
-    ex = i.useCallback(e => {
+    eC = i.useCallback(e => {
       W(e), K(!1)
     }, []),
     ev = en ? [] : (0, _.n3)(N, M, V),
     {
       visibleParticipants: ej,
       participantTileWidth: eO
-    } = (0, y.ZB)(D, T);
+    } = (0, y.ZB)(L, T);
   return (0, r.jsxs)("div", {
-    className: a()(j.root, v.flexCenter, L),
+    className: a()(j.root, v.flexCenter, D),
     children: [(0, r.jsxs)("div", {
       className: j.tileWrapper,
       style: {
@@ -175,7 +175,7 @@ function S(e) {
       children: [(0, r.jsxs)(o.animated.div, {
         className: j.videoFrame,
         style: {
-          top: eb.value.to(e => -e * P / 2)
+          top: eb.value.to(e => -e * S / 2)
         },
         children: [(0, r.jsx)(o.animated.div, {
           style: {
@@ -187,7 +187,7 @@ function S(e) {
             style: {
               aspectRatio: ec
             },
-            children: eC((e, t, n) => {
+            children: ex((e, t, n) => {
               let {
                 key: i
               } = n;
@@ -196,16 +196,16 @@ function S(e) {
                 style: e,
                 children: (0, r.jsx)(g.ZP, {
                   focused: !0,
-                  noBorder: ed >= D || eu >= U,
+                  noBorder: ed >= L || eu >= U,
                   channel: R,
                   className: v.focusedVideo,
                   videoComponent: H,
-                  width: D,
+                  width: L,
                   participant: t,
                   onClick: l,
                   onDoubleClick: Z,
-                  onContextMenu: S,
-                  onVideoResize: ex,
+                  onContextMenu: P,
+                  onVideoResize: eC,
                   inCall: w,
                   inPopout: G
                 })
@@ -228,14 +228,14 @@ function S(e) {
       }), (0, r.jsx)(o.animated.div, {
         className: j.participantsWrapperAnimated,
         style: {
-          translateY: eg.value.to(e => e * P / 2),
+          translateY: eg.value.to(e => e * S / 2),
           opacity: eg.value,
           visibility: eg.value.to(e => 0 === e ? "hidden" : "visible")
         },
         children: (0, r.jsx)(y.ZP, {
           channel: R,
           onClick: l,
-          onContextMenu: S,
+          onContextMenu: P,
           onDoubleClick: Z,
           participants: ej,
           participantTileWidth: eO,
@@ -246,8 +246,8 @@ function S(e) {
         })
       })]
     }), ev.length > 0 ? (0, r.jsx)(b.Z, {
-      onContextMenuParticipant: S,
-      width: D,
+      onContextMenuParticipant: P,
+      width: L,
       height: U,
       channel: R,
       participants: ev,

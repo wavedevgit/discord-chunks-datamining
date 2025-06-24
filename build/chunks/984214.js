@@ -1,5 +1,5 @@
 /** Chunk was on 10125 **/
-e.exports = {
+a.exports = {
   page: "page__4c945",
   bgImg: "bgImg__4c945",
   logoContainer: "logoContainer__4c945",

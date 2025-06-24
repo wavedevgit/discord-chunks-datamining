@@ -17,8 +17,8 @@ var r, i = n(255367),
   m = n(785547),
   b = n(600164),
   _ = n(167533),
-  E = n(925329),
-  O = n(707409),
+  O = n(925329),
+  E = n(707409),
   y = n(490983),
   I = n(799777),
   v = n(626135),
@@ -63,8 +63,8 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = (0, S.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
-  w = (0, S.Mg)(d.Z.GAME_LIST_LINKED_TO_GLOW_DURATION),
+let w = (0, S.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
+  L = (0, S.Mg)(d.Z.GAME_LIST_LINKED_TO_GLOW_DURATION),
   R = Object.freeze({
     [T.iEv.PLATFORM]: "Platform",
     [T.iEv.LAST_PLAYED]: "Last Played",
@@ -94,9 +94,9 @@ let L = (0, S.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: j.nameBodyCell,
     render: e => (0, i.jsxs)(b.Z, {
       align: b.Z.Align.CENTER,
-      children: [(0, i.jsx)(E.Z, {
+      children: [(0, i.jsx)(O.Z, {
         game: e.application,
-        size: E.Z.Sizes.SMALL,
+        size: O.Z.Sizes.SMALL,
         className: j.gameIcon
       }), (0, i.jsxs)("div", {
         className: j.nameCellInfo,
@@ -134,9 +134,9 @@ let L = (0, S.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: j.textCell,
     render(e) {
       let t;
-      return t = e.isRunning ? P.intl.string(P.t.Md326u) : e.isNew ? P.intl.string(P.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(O.ZP, {
+      return t = e.isRunning ? P.intl.string(P.t.Md326u) : e.isNew ? P.intl.string(P.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(E.ZP, {
         end: e.lastPlayed,
-        location: O.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
+        location: E.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
       }) : P.intl.string(P.t.EoWLrq), (0, i.jsx)(b.Z, {
         align: b.Z.Align.CENTER,
         className: o()({
@@ -246,14 +246,14 @@ class U extends(r = l.PureComponent) {
     let t = this.props.activeRowKey;
     if (null != t && e.activeRowKey !== t && this.props.isNavigatingByKeyboard) {
       let e = this._rowRefs[t];
-      null != e && (h.Z.wait(f.Zy), this.props.scrollToRow(e, L))
+      null != e && (h.Z.wait(f.Zy), this.props.scrollToRow(e, w))
     }
   }
   handleHighlightedApplicationKey() {
     let {
       highlightedApplicationKey: e
     } = this.state;
-    null != e && null != this._rowRefs[e] && (this.props.scrollToRow(this._rowRefs[e], L), new u.V7().start(w, () => {
+    null != e && null != this._rowRefs[e] && (this.props.scrollToRow(this._rowRefs[e], w), new u.V7().start(L, () => {
       this._didUnmount || this.setState({
         highlightedApplicationKey: null
       })

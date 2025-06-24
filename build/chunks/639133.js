@@ -1,12 +1,12 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => C
 }), n(388685);
 var r = n(255367),
   s = n(73800),
   o = n(793030),
-  a = n(55935),
-  i = n(668826),
+  i = n(55935),
+  a = n(668826),
   c = n(284539),
   l = n(67411),
   u = n(18582),
@@ -159,7 +159,7 @@ function P(e) {
   let {
     currentMessage: t,
     response: n,
-    handleResponse: i,
+    handleResponse: a,
     index: c,
     onMount: l
   } = e;
@@ -184,7 +184,7 @@ function P(e) {
           }), (0, r.jsx)(o.xv, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: (0, a.Y4)(new Date)
+            children: (0, i.Y4)(new Date)
           })]
         }), (0, r.jsx)(o.xv, {
           variant: "text-md/normal",
@@ -208,7 +208,7 @@ function P(e) {
         })]
       }) : null == t ? void 0 : t.responses.map((e, t) => (0, r.jsx)(u.Z, {
         className: y.response,
-        onClick: () => i(c, e.responsePoints, e.responseMessage),
+        onClick: () => a(c, e.responsePoints, e.responseMessage),
         children: (0, r.jsx)(f.Z, {
           variant: "text-md/normal",
           children: e.content
@@ -217,27 +217,27 @@ function P(e) {
     })]
   })
 }
-let C = [m.FK.MESSAGE_1, m.FK.MESSAGE_2, m.FK.MESSAGE_3];
+let w = [m.FK.MESSAGE_1, m.FK.MESSAGE_2, m.FK.MESSAGE_3];
 
-function Z(e) {
+function C(e) {
   var t;
   let {
     isPaused: n
-  } = e, o = (0, s.useRef)(null), a = (0, s.useRef)(-1), [u, f] = (0, s.useState)(0), [g, b] = (0, s.useState)(null), y = _()[u], [h, x] = (0, c.Z)(m.yN.MESSAGES), v = null != (t = h.count) ? t : 0;
-  (0, l.Z)(C, v);
+  } = e, o = (0, s.useRef)(null), i = (0, s.useRef)(-1), [u, f] = (0, s.useState)(0), [g, b] = (0, s.useState)(null), y = _()[u], [h, x] = (0, c.Z)(m.yN.MESSAGES), v = null != (t = h.count) ? t : 0;
+  (0, l.Z)(w, v);
   let O = (0, d.eR)(N),
     j = (e, t, n) => {
       b({
         points: t,
         responseMessage: n
-      }), (0, i.KH)(m.yN.MESSAGES, t), x({
+      }), (0, a.KH)(m.yN.MESSAGES, t), x({
         count: v + 1
-      }), a.current = setTimeout(() => {
+      }), i.current = setTimeout(() => {
         var t;
         null == (t = o.current) || t.removeDrop(e), f(u + 1), b(null)
       }, 3e3)
     };
-  return ((0, s.useEffect)(() => () => clearTimeout(a.current), []), u >= _().length) ? null : (0, r.jsx)(p.Z, {
+  return ((0, s.useEffect)(() => () => clearTimeout(i.current), []), u >= _().length) ? null : (0, r.jsx)(p.Z, {
     ref: o,
     isPaused: n,
     itemId: m.yN.MESSAGES,

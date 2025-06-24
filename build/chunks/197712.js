@@ -73,20 +73,20 @@ function s(e, t, r) {
   }
 }
 
-function l(e, t, r, n, i) {
-  let o = r,
-    s = n,
-    l = i ? a.US : a.vJ;
-  return (r > l && (o = l, s = l / r * n), r / n < e) ? {
-    width: o,
-    height: s
+function l(e, t, r, n) {
+  let i = r,
+    o = n,
+    s = a.US;
+  return (r > s && (i = s, o = s / r * n), r / n < e) ? {
+    width: i,
+    height: o
   } : {
-    width: t / s * o,
+    width: t / o * i,
     height: t
   }
 }
 
-function c(e, t, r, n) {
+function c(e, t, r) {
   switch (e) {
     case a.pC.AVATAR:
     case a.pC.AVATAR_DECORATION:
@@ -95,19 +95,19 @@ function c(e, t, r, n) {
         width: t, height: r
       };
     case a.pC.BANNER:
-      let i = n ? a.SP : a.qj;
-      return l(a.MY, i, t, r, n);
+      let n = a.SP;
+      return l(a.MY, n, t, r);
     case a.pC.GUILD_BANNER:
-      let o = n ? a.t2 : a.C5;
-      return l(a.Ij, o, t, r, n);
+      let i = a.t2;
+      return l(a.Ij, i, t, r);
     case a.pC.VIDEO_BACKGROUND:
-      let s = n ? a.kP : a.PB;
-      return l(a.Ff, s, t, r, n);
+      let o = a.kP;
+      return l(a.Ff, o, t, r);
     case a.pC.SCHEDULED_EVENT_IMAGE:
-      let c = n ? a.tv : a.WV;
-      return l(a.ut, c, t, r, n);
+      let s = a.tv;
+      return l(a.ut, s, t, r);
     case a.pC.HOME_HEADER:
-      return l(a.sX, a.SW, t, r, n)
+      return l(a.sX, a.SW, t, r)
   }
 }
 
@@ -123,40 +123,40 @@ function u(e, t, r) {
   return 0 !== i && (n.left = -Math.abs(i / 2), n.right = i / 2), 0 !== a && (n.bottom = -Math.abs(a / 2), n.top = a / 2), n
 }
 
-function d(e, t, r, n, i) {
-  let o = i ? a.US : a.vJ;
+function d(e, t, r, n) {
+  let i = a.US;
   switch (e) {
     case a.pC.AVATAR:
     case a.pC.AVATAR_DECORATION:
     case a.pC.GUILD_ICON:
-      let s = Math.min(t, r);
+      let o = Math.min(t, r);
       return {
-        width: s, height: s
+        width: o, height: o
       };
     case a.pC.BANNER:
-      let l = Math.min(t, o);
+      let s = Math.min(t, i);
       return {
-        width: l, height: l * (1 / a.MY)
+        width: s, height: s * (1 / a.MY)
       };
     case a.pC.GUILD_BANNER:
-      let c = Math.min(t, o);
+      let l = Math.min(t, i);
       return {
-        width: c, height: Math.min(9 / 16 * c, n)
+        width: l, height: Math.min(9 / 16 * l, n)
       };
     case a.pC.VIDEO_BACKGROUND:
-      let u = Math.min(t, o);
+      let c = Math.min(t, i);
       return {
-        width: u, height: 9 / 16 * u
+        width: c, height: 9 / 16 * c
       };
     case a.pC.SCHEDULED_EVENT_IMAGE:
-      let d = Math.min(t, o);
+      let u = Math.min(t, i);
       return {
-        width: d, height: .4 * d
+        width: u, height: .4 * u
       };
     case a.pC.HOME_HEADER:
-      let m = Math.min(t, o);
+      let d = Math.min(t, i);
       return {
-        width: m, height: m * (1 / a.sX)
+        width: d, height: d * (1 / a.sX)
       }
   }
 }

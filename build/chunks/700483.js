@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => em
 }), n(388685);
@@ -19,15 +19,15 @@ var r = n(255367),
   b = n(522651),
   _ = n(795318),
   y = n(258609),
-  C = n(74299),
-  x = n(924301),
+  x = n(74299),
+  C = n(924301),
   v = n(459502),
   j = n(856691),
   O = n(357156),
   E = n(923973),
   I = n(829750),
-  P = n(189771),
-  S = n(294629),
+  S = n(189771),
+  P = n(294629),
   Z = n(793319),
   N = n(987329),
   T = n(560688),
@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(88479),
   M = n(386e3),
   k = n(25827),
-  L = n(314897),
-  D = n(131951),
+  D = n(314897),
+  L = n(131951),
   U = n(496675),
   B = n(944486),
   F = n(594174),
@@ -50,8 +50,8 @@ var r = n(255367),
   q = n(427679),
   K = n(368442),
   X = n(600518),
-  Q = n(485287),
-  J = n(754277),
+  J = n(485287),
+  Q = n(754277),
   $ = n(719100),
   ee = n(184805),
   et = n(643632),
@@ -122,17 +122,17 @@ function eu(e) {
     onSelect: n
   } = e, l = (0, u.bp)(), {
     canManageGuildEvent: h
-  } = (0, O.XJ)(t), f = (0, o.e7)([q.Z], () => q.Z.getStageInstanceByChannel(t.id), [t.id]), m = (0, o.e7)([x.ZP], () => x.ZP.getGuildScheduledEvent(null == f ? void 0 : f.guild_scheduled_event_id)), g = (0, o.e7)([B.Z], () => B.Z.getVoiceChannelId() === t.id, [t.id]), {
+  } = (0, O.XJ)(t), f = (0, o.e7)([q.Z], () => q.Z.getStageInstanceByChannel(t.id), [t.id]), m = (0, o.e7)([C.ZP], () => C.ZP.getGuildScheduledEvent(null == f ? void 0 : f.guild_scheduled_event_id)), g = (0, o.e7)([B.Z], () => B.Z.getVoiceChannelId() === t.id, [t.id]), {
     suppress: y
-  } = (0, S.Z)(t), C = L.default.getId(), [v] = (0, en.Z)(t), j = Y.ZP.isModerator(C, t.id), E = (0, z.B)(t.id), I = h(m), {
-    parentAnalyticsLocation: P
+  } = (0, P.Z)(t), x = D.default.getId(), [v] = (0, en.Z)(t), j = Y.ZP.isModerator(x, t.id), E = (0, z.B)(t.id), I = h(m), {
+    parentAnalyticsLocation: S
   } = (0, p.ZP)(), Z = i.useRef(null);
   if (!g) return (0, r.jsx)(s.zxk, {
     size: s.zxk.Sizes.MEDIUM,
     color: s.zxk.Colors.GREEN,
     className: a()(ea.buttonSpacing, ea.buttonWithTextButton),
     onClick: () => {
-      (0, b.v)(P, b.d.JOIN_STAGE), (0, V.TM)(t)
+      (0, b.v)(S, b.d.JOIN_STAGE), (0, V.TM)(t)
     },
     children: (0, r.jsxs)("div", {
       className: ea.buttonWithTextInnerContainer,
@@ -170,7 +170,7 @@ function eu(e) {
           "aria-label": el.intl.string(el.t["3Uj+2t"]),
           onClose: i,
           onSelect: n,
-          onInteraction: (0, _.u)("End Stage", P, {
+          onInteraction: (0, _.u)("End Stage", S, {
             entrypoint: ei.A5.CARET
           }),
           children: (0, r.jsx)(s.sNh, {
@@ -231,7 +231,7 @@ function ep(e) {
     channelId: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, p.ZP)(), i = (0, o.e7)([J.Z], () => J.Z.isMuted()), l = (0, Q.pp)(t), a = (0, o.e7)([J.Z], () => J.Z.shouldPlay());
+  } = (0, p.ZP)(), i = (0, o.e7)([Q.Z], () => Q.Z.isMuted()), l = (0, J.pp)(t), a = (0, o.e7)([Q.Z], () => Q.Z.shouldPlay());
   return l ? (0, r.jsx)(w.d, {
     isTrayButton: !0,
     isActive: !i,
@@ -261,13 +261,13 @@ let eh = i.memo(function(e) {
     suppress: l,
     selfMute: a,
     mute: c
-  } = (0, S.Z)(t), u = (0, z.B)(t.id), d = (0, o.e7)([y.Z], () => null != y.Z.getAwaitingRemoteSessionInfo()), {
+  } = (0, P.Z)(t), u = (0, z.B)(t.id), d = (0, o.e7)([y.Z], () => null != y.Z.getAwaitingRemoteSessionInfo()), {
     cameraUnavailable: b,
-    enabled: x
-  } = (0, E.Z)(), v = (0, P.Z)(t), {
+    enabled: C
+  } = (0, E.Z)(), v = (0, S.Z)(t), {
     limit: j,
     reachedLimit: O
-  } = (0, I.Z)(t), w = (0, o.e7)([F.default], () => F.default.getCurrentUser()), R = (0, o.e7)([D.Z], () => (0, C.Z)(D.Z)), L = (0, o.e7)([B.Z], () => B.Z.getVoiceChannelId() === t.id, [t.id]), U = (0, o.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), G = (0, K.PK)(t.id), H = j > 0, V = O && !G || null != U && U.user.id !== (null == w ? void 0 : w.id), W = (0, _.u)("AudioDeviceMenu", n, {
+  } = (0, I.Z)(t), w = (0, o.e7)([F.default], () => F.default.getCurrentUser()), R = (0, o.e7)([L.Z], () => (0, x.Z)(L.Z)), D = (0, o.e7)([B.Z], () => B.Z.getVoiceChannelId() === t.id, [t.id]), U = (0, o.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), G = (0, K.PK)(t.id), H = j > 0, V = O && !G || null != U && U.user.id !== (null == w ? void 0 : w.id), W = (0, _.u)("AudioDeviceMenu", n, {
     entrypoint: ei.A5.CARET
   }), Y = i.useRef(null), q = i.useRef(null);
   if (null == w) return null;
@@ -301,7 +301,7 @@ let eh = i.memo(function(e) {
         ref: Y,
         centerButton: !0,
         hasPermission: v,
-        enabled: x,
+        enabled: C,
         cameraUnavailable: b,
         onChange: Z.r,
         onCameraUnavailable: T.Z,
@@ -314,7 +314,7 @@ let eh = i.memo(function(e) {
   });
   return (0, r.jsxs)("div", {
     className: ea.wrapper,
-    children: [L && !l ? (0, r.jsxs)("div", {
+    children: [D && !l ? (0, r.jsxs)("div", {
       className: ea.buttonSection,
       children: [(0, r.jsx)(s.yRy, {
         targetElementRef: q,
@@ -361,7 +361,7 @@ let eh = i.memo(function(e) {
       }), H && X]
     }) : null, (0, r.jsxs)("div", {
       className: ea.buttonSection,
-      children: [L && !l && H ? (0, r.jsx)(Z.NZ, {
+      children: [D && !l && H ? (0, r.jsx)(Z.NZ, {
         channel: t,
         currentUser: w,
         exitFullScreen: () => null,
@@ -370,11 +370,11 @@ let eh = i.memo(function(e) {
         disabled: V
       }) : null, (0, r.jsx)(ep, {
         channelId: t.id
-      }), L && (0, r.jsx)(eo, {
+      }), D && (0, r.jsx)(eo, {
         channel: t
-      }), L && u && l && (0, r.jsx)(ec, {
+      }), D && u && l && (0, r.jsx)(ec, {
         channel: t
-      }), L && !l && (0, r.jsx)(ed, {
+      }), D && !l && (0, r.jsx)(ed, {
         channel: t
       }), (0, r.jsx)(N.Z, {
         channel: t

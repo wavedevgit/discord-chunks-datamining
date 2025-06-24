@@ -1,4 +1,4 @@
-/** Chunk was on 22173 **/
+/** Chunk was on 38626 **/
 n.d(t, {
   Z: () => i
 });
@@ -8,16 +8,16 @@ function i(e) {
     channel: t,
     canChat: n,
     renderReactions: i,
-    canAddNewReactions: r,
+    canAddNewReactions: o,
     isLurking: l,
-    isGuest: o,
-    communicationDisabled: s,
-    isActiveChannelOrUnarchivableThread: a,
+    isGuest: r,
+    communicationDisabled: a,
+    isActiveChannelOrUnarchivableThread: s,
     isAutomodQuarantined: c
-  } = e, u = t.isPrivate(), d = t.isSystemDM(), h = (n || u) && a;
+  } = e, u = t.isPrivate(), d = t.isSystemDM(), h = (n || u) && s;
   return {
     disableReactionReads: !i,
-    disableReactionCreates: l || o || !h || !((!0 === r || u) && !d && a),
-    disableReactionUpdates: l || o || !h || !0 === s || !0 === c
+    disableReactionCreates: l || r || !h || !((!0 === o || u) && !d && s),
+    disableReactionUpdates: l || r || !h || !0 === a || !0 === c
   }
 }

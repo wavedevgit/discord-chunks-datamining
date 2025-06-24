@@ -1,4 +1,4 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
   Z: () => C
 }), n(415506), n(388685);
@@ -19,7 +19,7 @@ var i = n(481060),
   m = n(522558),
   b = n(11352);
 
-function O(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,20 +28,20 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function _(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,7 +69,7 @@ class v extends o.Z {
       let {
         default: e
       } = await n.e("33184").then(n.bind(n, 465836));
-      return n => (0, r.jsx)(e, y({
+      return n => (0, r.jsx)(e, O({
         channel: t,
         content: l
       }, n))
@@ -78,7 +78,7 @@ class v extends o.Z {
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
     return new Promise((t, n) => {
-      (0, a.Z)(_(y({}, e), {
+      (0, a.Z)(y(O({}, e), {
         onClose: e => {
           e ? t() : n()
         }
@@ -104,7 +104,7 @@ class v extends o.Z {
     })
   }
   constructor(...e) {
-    super(...e), O(this, "_premiumPaymentModalCloseResolve", null), O(this, "_premiumPaymentModalCloseReject", null), O(this, "_maybeFetchPremiumOffer", async () => {
+    super(...e), _(this, "_premiumPaymentModalCloseResolve", null), _(this, "_premiumPaymentModalCloseReject", null), _(this, "_maybeFetchPremiumOffer", async () => {
       let e = u.default.getCurrentUser();
       if (null != e && e.verified) {
         let t = (d.Z.canFractionalPremiumUserUseOffer() || !(0, h.I5)(e)) && d.Z.shouldFetchOffer();
@@ -113,10 +113,10 @@ class v extends o.Z {
       l.Z.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
       })
-    }), O(this, "_maybeFetchCheckoutRecovery", async () => {
+    }), _(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = u.default.getCurrentUser();
       null != e && e.verified && !(0, h.I5)(e) && f.Z.shouldFetchCheckoutRecovery() && await (0, p.o)()
-    }), O(this, "_maybeFetchUserAffinities", () => {
+    }), _(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
       } = m.w.getCurrentConfig({
@@ -125,12 +125,12 @@ class v extends o.Z {
         autoTrackExposure: !1
       });
       e && (0, c._)()
-    }), O(this, "_trackCustomNotificationSoundsExposure", () => {
+    }), _(this, "_trackCustomNotificationSoundsExposure", () => {
       b.Y.trackExposure({
         location: "PremiumManager"
       })
-    }), O(this, "_handlePremiumPaymentModalOpen", e => {
-      (0, a.Z)(_(y({}, e), {
+    }), _(this, "_handlePremiumPaymentModalOpen", e => {
+      (0, a.Z)(y(O({}, e), {
         analyticsLocations: [s.Z.OVERLAY],
         onClose: e => {
           l.Z.dispatch({
@@ -139,7 +139,7 @@ class v extends o.Z {
           })
         }
       }))
-    }), O(this, "_handlePremiumPaymentModalClose", e => {
+    }), _(this, "_handlePremiumPaymentModalClose", e => {
       let {
         didSucceed: t
       } = e;

@@ -1,5 +1,4 @@
-/** Chunk was on web.js **/
-"use strict";
+/** Chunk was on 21815 **/
 e.exports = {
   base: "base_b88801",
   text: "text_b88801",

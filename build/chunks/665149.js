@@ -1,9 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  JO: () => b,
-  ZP: () => I,
-  iz: () => y
+  JO: () => E,
+  ZP: () => v,
+  iz: () => b
 });
 var r = n(255367),
   i = n(73800),
@@ -14,11 +14,10 @@ var r = n(255367),
   c = n(481060),
   u = n(290297),
   d = n(686546),
-  f = n(540059),
-  _ = n(79712),
-  p = n(658672);
+  f = n(79712),
+  _ = n(658672);
 
-function h(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,20 +26,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
-let g = 24,
-  E = e => {
+let m = 24,
+  g = e => {
     let {
       className: t,
       wrapperClassName: n,
@@ -50,33 +49,33 @@ let g = 24,
       id: l,
       muted: u = !1,
       level: d = 1,
-      ref: _
-    } = e, h = (0, f.Q3)("BaseHeaderBar"), m = (0, r.jsx)(c.y5t, {
+      ref: f
+    } = e, p = (0, r.jsx)(c.y5t, {
       forceLevel: d,
       children: (0, r.jsx)(c.X6q, {
-        variant: h ? "text-md/medium" : "heading-md/semibold",
+        variant: "text-md/medium",
         color: u ? "header-secondary" : void 0,
-        className: o()(t, p.title, {
-          [p.titleClickable]: null != s
+        className: o()(t, _.title, {
+          [_.titleClickable]: null != s
         }),
         id: l,
         children: i
       })
     });
     return null != s ? (0, r.jsx)(c.P3F, {
-      innerRef: _,
+      innerRef: f,
       onClick: s,
       onContextMenu: a,
-      className: o()(n, p.titleWrapper),
-      children: m
+      className: o()(n, _.titleWrapper),
+      children: p
     }) : (0, r.jsx)("div", {
-      ref: _,
-      className: o()(n, p.titleWrapper),
+      ref: f,
+      className: o()(n, _.titleWrapper),
       onContextMenu: a,
-      children: m
+      children: p
     })
   },
-  b = i.forwardRef(function(e, t) {
+  E = i.forwardRef(function(e, t) {
     let {
       className: n,
       iconClassName: i,
@@ -84,141 +83,139 @@ let g = 24,
       selected: s = !1,
       disabled: l = !1,
       showBadge: u = !1,
-      badgePosition: _ = "bottom",
-      color: h,
-      foreground: E,
-      background: b,
-      icon: y,
-      iconSize: O = g,
-      onClick: v,
-      onContextMenu: I,
-      tooltip: T = null,
-      tooltipColor: S,
-      tooltipPosition: A = "bottom",
-      tooltipDisabled: N,
-      tooltipSpacing: C,
-      hideOnClick: R = !0,
-      role: P,
-      "aria-label": w,
-      "aria-hidden": D,
-      "aria-checked": L,
-      "aria-expanded": x,
-      "aria-haspopup": k,
-      "data-jump-section": M
-    } = e, j = (0, f.Q3)("BaseHeaderBar"), U = null != b ? {
-      secondaryColorClass: b
-    } : {}, G = (0, r.jsx)(y, m({
+      badgePosition: f = "bottom",
+      color: p,
+      foreground: g,
+      background: E,
+      icon: b,
+      iconSize: y = m,
+      onClick: O,
+      onContextMenu: v,
+      tooltip: I = null,
+      tooltipColor: T,
+      tooltipPosition: S = "bottom",
+      tooltipDisabled: A,
+      tooltipSpacing: N,
+      hideOnClick: C = !0,
+      role: R,
+      "aria-label": P,
+      "aria-hidden": w,
+      "aria-checked": D,
+      "aria-expanded": L,
+      "aria-haspopup": x,
+      "data-jump-section": k
+    } = e, M = null != E ? {
+      secondaryColorClass: E
+    } : {}, j = (0, r.jsx)(b, h({
       x: 0,
       y: 0,
-      width: O,
-      height: O,
+      width: y,
+      height: y,
       size: "custom",
-      className: o()(i, p.icon),
-      colorClass: null != E ? E : void 0,
-      color: null != h ? h : "currentColor"
-    }, U)), B = w;
-    return null == B && "string" == typeof T && (B = T), (0, r.jsx)(c.ua7, {
-      text: T,
-      color: S,
-      position: A,
-      hideOnClick: R,
-      shouldShow: !N,
-      spacing: C,
+      className: o()(i, _.icon),
+      colorClass: null != g ? g : void 0,
+      color: null != p ? p : "currentColor"
+    }, M)), U = P;
+    return null == U && "string" == typeof I && (U = I), (0, r.jsx)(c.ua7, {
+      text: I,
+      color: T,
+      position: S,
+      hideOnClick: C,
+      shouldShow: !A,
+      spacing: N,
       children: e => {
         let {
-          onMouseEnter: f,
-          onMouseLeave: g,
-          onFocus: b,
+          onMouseEnter: m,
+          onMouseLeave: E,
+          onFocus: I,
           onBlur: T
         } = e;
-        return null == v ? (0, r.jsx)("div", {
+        return null == O ? (0, r.jsx)("div", {
           ref: t,
-          className: o()(n, p.iconWrapper, {
-            [p.iconDisabled]: l
+          className: o()(n, _.iconWrapper, {
+            [_.iconDisabled]: l
           }),
-          children: (0, r.jsx)(y, m({
+          children: (0, r.jsx)(b, h({
             x: 0,
             y: 0,
-            width: O,
-            height: O,
+            width: y,
+            height: y,
             size: "custom",
-            className: o()(i, p.icon),
-            colorClass: null != E ? E : void 0,
-            color: null != h ? h : "currentColor",
-            "aria-hidden": D,
-            onMouseEnter: f,
-            onMouseLeave: g,
-            onFocus: b,
+            className: o()(i, _.icon),
+            colorClass: null != g ? g : void 0,
+            color: null != p ? p : "currentColor",
+            "aria-hidden": w,
+            onMouseEnter: m,
+            onMouseLeave: E,
+            onFocus: I,
             onBlur: T
-          }, U))
+          }, M))
         }) : (0, r.jsxs)(c.P3F, {
           innerRef: t,
           tag: "div",
-          onClick: l ? void 0 : v,
-          onContextMenu: l ? void 0 : I,
-          onMouseEnter: f,
-          onMouseLeave: g,
-          onFocus: b,
+          onClick: l ? void 0 : O,
+          onContextMenu: l ? void 0 : v,
+          onMouseEnter: m,
+          onMouseLeave: E,
+          onFocus: I,
           onBlur: T,
           className: o()(n, {
-            [p.iconWrapper]: !0,
-            [p.clickable]: !l && null != v,
-            [p.selected]: s,
-            [p.iconDisabled]: l
+            [_.iconWrapper]: !0,
+            [_.clickable]: !l && null != O,
+            [_.selected]: s,
+            [_.iconDisabled]: l
           }),
-          role: P,
-          "aria-label": B,
-          "aria-hidden": D,
-          "aria-checked": L,
-          "aria-haspopup": k,
-          "aria-expanded": x,
-          tabIndex: l || null == v ? -1 : 0,
-          "data-jump-section": M,
+          role: R,
+          "aria-label": U,
+          "aria-hidden": w,
+          "aria-checked": D,
+          "aria-haspopup": x,
+          "aria-expanded": L,
+          tabIndex: l || null == O ? -1 : 0,
+          "data-jump-section": k,
           children: [u ? (0, r.jsx)(d.ZP, {
-            mask: "top" === _ ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-            height: j ? O : void 0,
-            width: j ? O : void 0,
-            children: G
-          }) : G, u ? (0, r.jsx)("span", {
-            className: o()(p.iconBadge, "top" === _ ? p.iconBadgeTop : p.iconBadgeBottom)
+            mask: "top" === f ? d.ZP.Masks.HEADER_BAR_BADGE_TOP : d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
+            height: y,
+            width: y,
+            children: j
+          }) : j, u ? (0, r.jsx)("span", {
+            className: o()(_.iconBadge, "top" === f ? _.iconBadgeTop : _.iconBadgeBottom)
           }) : null, a]
         })
       }
     })
   }),
-  y = e => {
+  b = e => {
     let {
       className: t
     } = e;
-    return (0, f.Q3)("BaseHeaderBar.Divider") ? (0, r.jsx)(_.Z, {
-      className: o()(p.dot, t)
-    }) : (0, r.jsx)("div", {
-      className: o()(p.divider, t)
+    return (0, r.jsx)(f.Z, {
+      className: o()(_.dot, t)
     })
   };
 
-function O(e) {
+function y(e) {
   let {
     direction: t = "right"
   } = e;
   return "right" === t ? (0, r.jsx)(c.Fbu, {
     size: "md",
     color: "currentColor",
-    className: p.caret
+    className: _.caret
   }) : (0, r.jsx)(c.V7D, {
     size: "md",
     color: "currentColor",
-    className: p.caret
+    className: _.caret
   })
 }
-let v = e => {
+let O = e => {
   let {
     className: t,
     innerClassName: n,
     children: a,
     childrenBottom: d,
     toolbar: f,
-    onDoubleClick: _,
+    onDoubleClick: p,
     "aria-label": h,
     "aria-labelledby": m,
     role: g,
@@ -226,10 +223,10 @@ let v = e => {
     transparent: b = !1
   } = e, y = i.useRef(null), O = i.useContext(u.Z);
   return (0, r.jsx)("section", {
-    className: o()(t, p.container, {
-      [p.themed]: !b,
-      [p.transparent]: b,
-      [p.themedMobile]: l.tq
+    className: o()(t, _.container, {
+      [_.themed]: !b,
+      [_.transparent]: b,
+      [_.themedMobile]: l.tq
     }),
     "aria-label": h,
     "aria-labelledby": m,
@@ -238,23 +235,23 @@ let v = e => {
     children: (0, r.jsxs)(c.JcV, {
       containerRef: y,
       children: [(0, r.jsxs)("div", {
-        className: p.upperContainer,
+        className: _.upperContainer,
         children: [(0, r.jsxs)("div", {
-          className: o()(p.children, n, {
-            [p.scrollable]: E
+          className: o()(_.children, n, {
+            [_.scrollable]: E
           }),
-          onDoubleClick: _,
+          onDoubleClick: p,
           children: [l.tq && null != O ? (0, r.jsx)(s.r, {
             onClick: O,
-            className: p.hamburger
+            className: _.hamburger
           }) : null, a]
         }), null != f ? (0, r.jsx)("div", {
-          className: p.toolbar,
+          className: _.toolbar,
           children: f
         }) : null]
       }), d]
     })
   })
 };
-v.Icon = b, v.Title = E, v.Divider = y, v.Caret = O;
-let I = v
+O.Icon = E, O.Title = g, O.Divider = b, O.Caret = y;
+let v = O

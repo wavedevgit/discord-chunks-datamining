@@ -18,21 +18,21 @@ var r = n(255367),
   m = n(733789),
   b = n(4962),
   _ = n(388032),
-  E = n(868454);
-class O extends i.Component {
+  O = n(868454);
+class E extends i.Component {
   renderReasons(e, t, n) {
     return 0 === e.length && 0 === t.length ? null : (0, r.jsx)("div", {
-      className: E.section,
+      className: O.section,
       children: (0, r.jsxs)("div", {
-        className: E.sectionContent,
+        className: O.sectionContent,
         children: [e.map(e => (0, r.jsx)("div", {
-          className: E.unit,
+          className: O.unit,
           children: (0, r.jsx)(m.Z, {
             reason: e,
             hidePersonalInformation: n
           })
         }, e.type)), t.map(e => (0, r.jsx)("div", {
-          className: E.unit,
+          className: O.unit,
           children: (0, r.jsx)(s.Z, {
             reason: e
           })
@@ -60,13 +60,13 @@ class O extends i.Component {
     if (0 === e.length && 0 === t.length && null == n.staffNotes) return null;
     let o = this.getReviewToRender();
     return (0, r.jsxs)("div", {
-      className: a()(E.root, l),
+      className: a()(O.root, l),
       children: [(0, r.jsx)("div", {
-        className: E.header,
+        className: O.header,
         children: _.intl.string(_.t.qABFpa)
       }), this.renderReasons(e, t, i), null != o ? (0, r.jsx)(b.Z, {
         data: o,
-        className: E.review
+        className: O.review
       }) : null]
     })
   }
@@ -80,4 +80,4 @@ let y = o.ZP.connectStores([h.Z, d.default, f.Z, c.Z, p.Z, u.Z], e => {
     nonSocialReasons: (0, g.Ww)(t.id, h.Z, f.Z),
     hidePersonalInformation: u.Z.hidePersonalInformation
   }
-})(O)
+})(E)

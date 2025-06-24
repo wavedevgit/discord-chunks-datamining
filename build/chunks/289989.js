@@ -1,6 +1,6 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => S
+  Z: () => b
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -50,7 +50,7 @@ function j(e) {
   })
 }
 
-function S(e) {
+function b(e) {
   let {
     onSourceSelect: t
   } = e;

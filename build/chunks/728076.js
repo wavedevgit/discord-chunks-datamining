@@ -51,12 +51,12 @@ function b(e, t, n) {
     [j, y] = r.useState(""),
     [x, w] = r.useState(a.C.DEFAULT),
     [v, _] = r.useState(!1),
-    [C, P] = r.useState(d.lc.ONE_DAY),
-    [E, I] = r.useState({}),
-    [A, k] = r.useState(!1),
+    [P, C] = r.useState(d.lc.ONE_DAY),
+    [E, k] = r.useState({}),
+    [A, I] = r.useState(!1),
     S = h.filter(e => (0, u.cS)(e, x)),
-    R = h.filter(e => (0, u.uY)(e, x)),
-    D = j.length > 0 && S.length >= d.gY && 0 === R.length,
+    D = h.filter(e => (0, u.uY)(e, x)),
+    R = j.length > 0 && S.length >= d.gY && 0 === D.length,
     [N, {
       error: T,
       loading: L
@@ -64,7 +64,7 @@ function b(e, t, n) {
     B = h.length < d.fw,
     Z = h.length > d.gY,
     U = r.useCallback(e => {
-      I(e => {
+      k(e => {
         let t = m({}, e);
         return delete t.question, t
       }), y(e)
@@ -75,7 +75,7 @@ function b(e, t, n) {
         index: n,
         localCreationAnswerId: r
       } = e;
-      I(e => {
+      k(e => {
         let t = m({}, e);
         return delete t["answer-".concat(r)], t
       }), O(e => {
@@ -141,27 +141,27 @@ function b(e, t, n) {
   r.useEffect(() => () => {
     s.xt(b)
   }, [b]);
-  let J = r.useCallback(() => {
+  let G = r.useCallback(() => {
       let e = !0,
         t = {};
       return 0 === j.trim().length && (e = !1, t.question = f.intl.string(f.t.gPX3oK)), h.filter(e => (0, u.cS)(e, x)).length < d.gY && (e = !1, t["answer-".concat(h[0].localCreationAnswerId)] = f.intl.string(f.t.fYvzER)), h.forEach(n => {
         (0, u.uY)(n, x) && (e = !1, t["answer-".concat(n.localCreationAnswerId)] = f.intl.string(f.t["8Qqkc3"]))
-      }), I(t), k(!e), e
+      }), k(t), I(!e), e
     }, [h, j, x]),
-    G = r.useCallback(async () => {
+    J = r.useCallback(async () => {
       await N({
         channel: e,
         question: j,
         answers: S,
         allowMultiSelect: v,
-        duration: C,
+        duration: P,
         layout: x,
         onClose: t
       })
-    }, [j, S, v, C, N, e, x, t]),
+    }, [j, S, v, P, N, e, x, t]),
     V = r.useCallback(() => {
-      !L && J() && G()
-    }, [G, L, J]);
+      !L && G() && J()
+    }, [J, L, G]);
   return {
     answers: h,
     question: j,
@@ -170,9 +170,9 @@ function b(e, t, n) {
     setSelectedLayoutType: w,
     allowMultiSelect: v,
     setAllowMultiSelect: _,
-    duration: C,
-    setDuration: P,
-    canPost: D,
+    duration: P,
+    setDuration: C,
+    canPost: R,
     canAddMoreAnswers: B,
     canRemoveMoreAnswers: Z,
     handleQuestionChange: U,
@@ -184,12 +184,12 @@ function b(e, t, n) {
     handleRemoveAnswer: X,
     handleRemoveAnswerImage: K,
     fieldErrors: E,
-    createPoll: G,
+    createPoll: J,
     handleSubmitPoll: V,
     submitting: L,
     createPollError: T,
     shouldFocusOnInvalidField: A,
-    setShouldFocusOnInvalidField: k
+    setShouldFocusOnInvalidField: I
   }
 }
 

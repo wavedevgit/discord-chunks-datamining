@@ -1,6 +1,6 @@
 /** Chunk was on 88934 **/
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(35282);
 var r, a, i = n(255367);
 n(73800);
@@ -32,13 +32,13 @@ function g(e) {
   }
   return e
 }
-let _ = /^discord.gg\/[a-zA-Z0-9-]+/,
-  f = (r = g({}, h.Z.rules), a = a = {
+let f = /^discord.gg\/[a-zA-Z0-9-]+/,
+  _ = (r = g({}, h.Z.rules), a = a = {
     heading: g({}, d.i.heading),
     image: g({}, s().defaultRules.image),
     inviteLink: {
       order: h.Z.rules.link.order + 1,
-      match: (e, t) => t.inline ? _.exec(e) : null,
+      match: (e, t) => t.inline ? f.exec(e) : null,
       parse: (e, t, n) => {
         let r = (0, p.zO)(e[0]);
         return null == r || r.type !== u.g.INVITE ? {

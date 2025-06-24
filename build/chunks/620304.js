@@ -1,4 +1,4 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -17,39 +17,39 @@ var r = n(255367),
   g = n(259580),
   m = n(639777),
   b = n(441536),
-  O = n(447908),
-  y = n(93841),
-  _ = n(388032),
+  _ = n(447908),
+  O = n(93841),
+  y = n(388032),
   v = n(27053);
 
 function C(e) {
   let {
     guild: t,
     withMargin: l
-  } = e, C = i.useMemo(() => (0, O.Z)(t), [t]), j = (0, m.Z)(t.id), S = i.useCallback(() => {
+  } = e, C = i.useMemo(() => (0, _.Z)(t), [t]), j = (0, m.Z)(t.id), E = i.useCallback(() => {
     (0, b.Z)(t.id, h.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-  }, [t.id]), x = (0, c.e7)([f.Z], () => {
+  }, [t.id]), S = (0, c.e7)([f.Z], () => {
     var e;
     return null != (e = f.Z.getCountForGuild(t.id)) ? e : 0
   });
   i.useEffect(() => {
-    x !== t.premiumSubscriberCount && (0, p.v)(t.id, t.premiumSubscriberCount)
-  }, [t.id, x, t.premiumSubscriberCount]);
-  let E = Math.min(x / C * 100, 100),
-    [P, I] = (0, u.q_F)(() => ({
-      width: x === t.premiumSubscriberCount ? "".concat(E, "%") : "0%",
+    S !== t.premiumSubscriberCount && (0, p.v)(t.id, t.premiumSubscriberCount)
+  }, [t.id, S, t.premiumSubscriberCount]);
+  let x = Math.min(S / C * 100, 100),
+    [I, P] = (0, u.q_F)(() => ({
+      width: S === t.premiumSubscriberCount ? "".concat(x, "%") : "0%",
       config: {
         tension: 285,
         damping: 10,
         mass: 1
       }
-    }), "respect-motion-settings", [x, t.premiumSubscriberCount]);
+    }), "respect-motion-settings", [S, t.premiumSubscriberCount]);
   i.useEffect(() => {
-    I({
-      width: "".concat(E, "%")
+    P({
+      width: "".concat(x, "%")
     })
-  }, [E, I]);
-  let N = x >= C;
+  }, [x, P]);
+  let N = S >= C;
   return (0, r.jsx)(u.P3F, {
     "aria-label": void 0,
     role: "button",
@@ -59,7 +59,7 @@ function C(e) {
         right: 4
       }
     },
-    onClick: S,
+    onClick: E,
     className: o()(v.container, {
       [v.containerWithMargin]: l
     }),
@@ -108,9 +108,9 @@ function C(e) {
         className: v.progressContainer,
         children: (0, r.jsx)(s.animated.div, {
           className: o()(v.progress, {
-            [v.progressLow]: E <= 5
+            [v.progressLow]: x <= 5
           }),
-          style: P
+          style: I
         })
       }), (0, r.jsxs)("div", {
         className: v.textContainer,
@@ -119,7 +119,7 @@ function C(e) {
           children: [(0, r.jsx)(a.xv, {
             className: v.text,
             variant: "text-xs/semibold",
-            children: _.intl.string(y.default.NI6IhY)
+            children: y.intl.string(O.default.NI6IhY)
           }), t.premiumSubscriberCount >= C && (0, r.jsx)(a.xv, {
             className: v.text,
             variant: "text-xs/semibold",
@@ -130,10 +130,10 @@ function C(e) {
           children: [(0, r.jsx)(a.xv, {
             className: v.text,
             variant: "text-xs/semibold",
-            children: N ? _.intl.formatToPlainString(y.default["Ehpq+/"], {
-              appliedBoostCount: x
-            }) : _.intl.formatToPlainString(y.default["/rbPDg"], {
-              appliedBoostCount: x,
+            children: N ? y.intl.formatToPlainString(O.default["Ehpq+/"], {
+              appliedBoostCount: S
+            }) : y.intl.formatToPlainString(O.default["/rbPDg"], {
+              appliedBoostCount: S,
               maxBoostCount: C
             })
           }), (0, r.jsx)(g.Z, {

@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -31,9 +31,8 @@ class p extends i.PureComponent {
       message: i,
       channel: l,
       onCancel: a,
-      children: o,
-      isRefreshEnabled: u
-    } = this.props, p = (0, r.jsx)("div", {
+      children: o
+    } = this.props, u = (0, r.jsx)("div", {
       className: c.operations,
       children: s.intl.format(s.t.wDsPXl, {
         onCancel: () => a(l.id),
@@ -52,8 +51,8 @@ class p extends i.PureComponent {
         onChange: this.onChange,
         onSubmit: this.onSubmit,
         onKeyDown: this.onKeyDown,
-        renderLeftAccessories: () => p
-      }), u ? null : p]
+        renderLeftAccessories: () => u
+      }), u]
     })
   }
   constructor(...e) {

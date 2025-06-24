@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => y
 }), n(539854);
@@ -38,12 +38,12 @@ function y(e) {
     }
     return i
   }(e, ["channelId", "className"]);
-  let C = i.useRef(null),
-    x = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === m.MI.RESIZABLE),
+  let x = i.useRef(null),
+    C = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === m.MI.RESIZABLE),
     v = i.useCallback(() => {
-      let e = x ? m.MI.NO_CHAT : m.MI.RESIZABLE;
+      let e = C ? m.MI.NO_CHAT : m.MI.RESIZABLE;
       (0, h.gC)(e)
-    }, [x]),
+    }, [C]),
     {
       unreadCount: j,
       mentionCount: O
@@ -64,18 +64,18 @@ function y(e) {
     }(t),
     E = i.useCallback(() => {
       var e;
-      null == (e = C.current) || e.focus()
+      null == (e = x.current) || e.focus()
     }, []);
   (0, p.yp)({
     event: g.CkL.FOCUS_CHAT_BUTTON,
     handler: E
   });
-  let I = x ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
-    P = [I];
-  O > 0 && P.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
+  let I = C ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
+    S = [I];
+  O > 0 && S.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
     mentionCount: O
-  })), j > 0 && P.push(b.intl.string(b.t.x5zAGR));
-  let S = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
+  })), j > 0 && S.push(b.intl.string(b.t.x5zAGR));
+  let P = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
     Z = O > 0 ? O : j,
     N = Z > 0;
   return (0, r.jsxs)("div", {
@@ -99,12 +99,12 @@ function y(e) {
       return e
     }({
       isTrayButton: !0,
-      buttonRef: C,
+      buttonRef: x,
       onClick: v,
       label: I,
-      "aria-label": P.join(", "),
+      "aria-label": S.join(", "),
       tooltipPosition: "top",
-      iconComponent: S === m.MI.NO_CHAT ? o.sXD : o.hic,
+      iconComponent: P === m.MI.NO_CHAT ? o.sXD : o.hic,
       themeable: !0,
       className: n
     }, y)), N ? (0, r.jsx)(s.Z, {

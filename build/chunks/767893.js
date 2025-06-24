@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
   Z: () => b
 });
@@ -33,7 +33,7 @@ function b(e) {
     children: (0, r.jsxs)("div", {
       className: g.channelHeader,
       "data-recents-channel": t.id,
-      children: [(0, r.jsx)(E, {
+      children: [(0, r.jsx)(x, {
         channel: t
       }), t.isPrivate() ? null : (0, r.jsx)(o.Fbu, {
         size: "xxs"
@@ -44,7 +44,7 @@ function b(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     channel: t
   } = e, n = (0, s.e7)([f.Z], () => f.Z.getGuild(t.guild_id));

@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => b
 });
@@ -21,9 +21,9 @@ function b(e) {
   var t, n;
   let {
     channel: b
-  } = e, _ = i.useContext(p.AnalyticsContext), y = (0, a.Aq)(), C = m.intl.string(g.default["Beo/7u"]), {
-    firstMessage: x
-  } = (0, s.cl)(b), v = null == x || null == (t = x.messageSnapshots) ? void 0 : t[0], j = null == v || null == (n = v.moderatorReport) ? void 0 : n.reported_user_id;
+  } = e, _ = i.useContext(p.AnalyticsContext), y = (0, a.Aq)(), x = m.intl.string(g.default["Beo/7u"]), {
+    firstMessage: C
+  } = (0, s.cl)(b), v = null == C || null == (t = C.messageSnapshots) ? void 0 : t[0], j = null == v || null == (n = v.moderatorReport) ? void 0 : n.reported_user_id;
   return b.isModeratorReportChannel() && null != j ? (0, r.jsx)(u.ZP.Icon, {
     onClick: () => {
       (0, d.Kh)(b.id), (0, o.i)(), (0, c.r)(b.guild_id, j, b.id, {
@@ -31,8 +31,8 @@ function b(e) {
         sourceLocation: null != location ? location : _.location
       }), y.dispatch(h.CkL.POPOUT_CLOSE)
     },
-    tooltip: C,
+    tooltip: x,
     icon: l.HI3,
-    "aria-label": C
+    "aria-label": x
   }) : null
 }

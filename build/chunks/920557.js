@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
   K: () => S
 }), n(388685), n(314940);
@@ -18,10 +18,10 @@ var r = n(255367),
   g = n(839963),
   _ = n(139256),
   b = n(294608),
-  E = n(388032),
+  x = n(388032),
   y = n(709893);
 
-function x(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,11 +49,11 @@ function v(e) {
   } = e, s = (0, p.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, b.pE)(), [g, _] = i.useState(""), [E, v] = i.useState(!1), O = "" !== g && E, C = i.useCallback(() => {
+  } = (0, b.pE)(), [g, _] = i.useState(""), [x, v] = i.useState(!1), C = "" !== g && x, O = i.useCallback(() => {
     _((0, h.e1)(u, c, a))
   }, [u, c, a]), j = i.useCallback(() => {
-    C(), v(!0)
-  }, [C]), S = i.useCallback(() => {
+    O(), v(!0)
+  }, [O]), S = i.useCallback(() => {
     v(!1)
   }, []), I = i.useCallback(() => {
     (0, f.n)({
@@ -63,11 +63,11 @@ function v(e) {
     })
   }, [c, u, a]);
   i.useEffect(() => {
-    if (E) return m.Z.addReactChangeListener(C), () => {
-      m.Z.removeReactChangeListener(C)
+    if (x) return m.Z.addReactChangeListener(O), () => {
+      m.Z.removeReactChangeListener(O)
     }
-  }, [E, C]);
-  let N = (0, r.jsx)(d.Text, {
+  }, [x, O]);
+  let T = (0, r.jsx)(d.Text, {
     variant: "text-xs/semibold",
     color: "none",
     className: y.voteCount,
@@ -84,21 +84,21 @@ function v(e) {
           scaleFontToUserSetting: !0,
           children: g
         }),
-        forceOpen: O,
+        forceOpen: C,
         "aria-label": !1,
         children: e => {
           var t, n;
-          return (0, r.jsx)(d.zxk, (t = x({}, e), n = n = {
+          return (0, r.jsx)(d.zxk, (t = E({}, e), n = n = {
             onMouseEnter: j,
             onMouseLeave: S,
             onFocus: j,
             onBlur: S,
             onClick: I,
             className: y.voteCountButton,
-            "aria-describedby": O ? s : void 0,
+            "aria-describedby": C ? s : void 0,
             look: d.zxk.Looks.BLANK,
             size: d.zxk.Sizes.NONE,
-            children: N
+            children: T
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -110,11 +110,11 @@ function v(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
           }), t))
         }
-      }), O && (0, r.jsx)(o.T, {
+      }), C && (0, r.jsx)(o.T, {
         id: s,
         children: g
       })]
-    }) : N, (0, r.jsxs)(d.Text, {
+    }) : T, (0, r.jsxs)(d.Text, {
       variant: "text-md/bold",
       color: "none",
       scaleFontToUserSetting: !0,
@@ -123,7 +123,7 @@ function v(e) {
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     percentage: t,
     shouldAnimate: n
@@ -146,7 +146,7 @@ function O(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     answersInteraction: t,
     isSelected: n,
@@ -194,7 +194,7 @@ function j(e) {
       [y.currentlyVoting]: i !== g.Y7.LIST,
       [y.selected]: c
     }),
-    children: [l ? (0, r.jsx)(O, {
+    children: [l ? (0, r.jsx)(C, {
       percentage: t.votesPercentage,
       shouldAnimate: m
     }) : null, null != t.pollMedia.emoji && (0, r.jsx)(_.sc, {
@@ -207,13 +207,13 @@ function j(e) {
       scaleFontToUserSetting: !0,
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(o.T, {
-      children: E.intl.string(E.t["8DAM+/"])
+      children: x.intl.string(x.t["8DAM+/"])
     }), l && (0, r.jsx)(v, {
       percentage: t.votesPercentage,
       label: t.votes,
       canShowVoterDetails: s,
       answerId: t.answerId
-    }), (0, r.jsx)(C, {
+    }), (0, r.jsx)(O, {
       answersInteraction: i,
       isSelected: c,
       didSelfVote: u,
@@ -245,7 +245,7 @@ function S(e) {
     }
     return i
   }(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
-  return (0, r.jsx)(_.$e, x({
+  return (0, r.jsx)(_.$e, E({
     className: y.answersContainer,
     answerClassName: y.answer,
     answersInteraction: n,

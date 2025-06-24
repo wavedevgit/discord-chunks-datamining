@@ -15,8 +15,8 @@ var r, a = n(255367),
   m = n(679056),
   h = n(44488),
   g = n(519160),
-  _ = n(124347),
-  f = n(283756),
+  f = n(124347),
+  _ = n(283756),
   b = n(524444),
   x = n(585483),
   v = n(981631),
@@ -67,11 +67,11 @@ let O = {
       margin: 20
     }
   },
-  P = {
+  S = {
     width: 1920,
     height: 1080
   },
-  S = {
+  P = {
     width: 1280,
     height: 720
   },
@@ -91,7 +91,7 @@ let O = {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  N = e => (0, a.jsx)(_.ZP, y({}, e)),
+  N = e => (0, a.jsx)(f.ZP, y({}, e)),
   T = e => {
     let t, n, r, {
       item: i,
@@ -102,14 +102,14 @@ let O = {
       playable: m,
       volume: h,
       isMuted: g,
-      onVolumeChange: _,
-      onMute: f
+      onVolumeChange: f,
+      onMute: _
     } = e;
     if (i.type === v.s9s.YOUTUBE_VIDEO) t = y({
       url: (0, v.n8r)(i.youtubeVideoId)
-    }, P), n = y({
+    }, S), n = y({
       url: "".concat((0, v.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
-    }, S), r = p.pn.YOUTUBE;
+    }, P), r = p.pn.YOUTUBE;
     else {
       let e = null != i.width ? i.width : 0,
         r = null != i.height ? i.height : 0;
@@ -137,9 +137,9 @@ let O = {
       playable: m,
       className: C.video,
       volume: h,
-      onVolumeChange: _,
+      onVolumeChange: f,
       autoMute: g,
-      onMute: f,
+      onMute: _,
       autoPlay: m,
       renderVideoComponent: E,
       renderImageComponent: N,
@@ -153,7 +153,7 @@ let O = {
   },
   A = () => (0, a.jsx)("div", {
     className: C.paginationVideoOverlay,
-    children: (0, a.jsx)(f.Z, {
+    children: (0, a.jsx)(_.Z, {
       inactive: !0,
       className: C.paginationVideoPlayPill,
       renderLinkComponent: b.iT

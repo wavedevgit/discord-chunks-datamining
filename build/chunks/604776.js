@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 n.d(t, {
   D: () => v,
-  Z: () => j
+  Z: () => g
 }), n(388685);
 var a = n(255367),
   r = n(73800),
@@ -13,16 +13,16 @@ var a = n(255367),
   d = n(55935),
   u = n(246992),
   m = n(232867),
-  x = n(981631),
-  p = n(123393),
+  p = n(981631),
+  x = n(123393),
   h = n(616257),
   b = n(173166);
 let f = {
-    [x.kNB.QUEST_REWARD]: "Quest Reward",
-    [x.kNB.DEVELOPER_GIFT]: "Developer Gift",
-    [x.kNB.INVOICE]: "Invoice",
-    [x.kNB.REVERSE_TRIAL]: "Reverse Trial",
-    [x.kNB.FRACTIONAL_PREMIUM_GIVEBACK]: "Giveback"
+    [p.kNB.QUEST_REWARD]: "Quest Reward",
+    [p.kNB.DEVELOPER_GIFT]: "Developer Gift",
+    [p.kNB.INVOICE]: "Invoice",
+    [p.kNB.REVERSE_TRIAL]: "Reverse Trial",
+    [p.kNB.FRACTIONAL_PREMIUM_GIVEBACK]: "Giveback"
   },
   v = e => {
     var t;
@@ -32,13 +32,13 @@ let f = {
       onDelete: l
     } = e, s = e => null != e ? (0, d.vc)(e, "LLL") : "---";
     return (0, a.jsxs)("div", {
-      className: i()(p.card, r ? b.gradientWrapperTier2 : ""),
+      className: i()(x.card, r ? b.gradientWrapperTier2 : ""),
       children: [(0, a.jsxs)(o.Text, {
         variant: "text-md/normal",
         children: ["ID: ", n.id, " "]
       }), !r && (0, a.jsxs)(o.Text, {
         variant: "text-md/normal",
-        children: ["SKU: ", null == (t = g.find(e => e.value === n.skuId)) ? void 0 : t.label]
+        children: ["SKU: ", null == (t = _.find(e => e.value === n.skuId)) ? void 0 : t.label]
       }), null != n.startsAt && null != n.endsAt && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)(o.Text, {
           variant: "text-md/normal",
@@ -54,7 +54,7 @@ let f = {
           return null != e && e in f ? f[e] : "Unknown source type ".concat(e)
         })()]
       }), r && null != l && (0, a.jsx)(o.zxk, {
-        className: p.deleteEntitlementButton,
+        className: x.deleteEntitlementButton,
         size: o.zxk.Sizes.TINY,
         color: o.zxk.Colors.RED,
         look: o.zxk.Looks.OUTLINED,
@@ -63,7 +63,7 @@ let f = {
       })]
     })
   },
-  g = [{
+  _ = [{
     label: "1 hour",
     value: s.a.PREMIUM_TIER_2_1_HOUR
   }, {
@@ -74,8 +74,8 @@ let f = {
     value: s.a.PREMIUM_TIER_2_3_DAY
   }];
 
-function j() {
-  let [e, t] = r.useState(!1), [n, l] = r.useState(s.a.PREMIUM_TIER_2_1_HOUR), [d, f] = r.useState([]), [j, _] = r.useState([]), {
+function g() {
+  let [e, t] = r.useState(!1), [n, l] = r.useState(s.a.PREMIUM_TIER_2_1_HOUR), [d, f] = r.useState([]), [g, j] = r.useState([]), {
     refreshEntitlementList: y,
     grantFractionalPremium: C,
     deleteFractionalPremium: N,
@@ -86,10 +86,10 @@ function j() {
   r.useEffect(() => {
     y()
   }, [y]);
-  let S = e => e.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === x.qc2.FRACTIONAL_REDEMPTION),
+  let S = e => e.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === p.qc2.FRACTIONAL_REDEMPTION),
     P = e => e.filter(e => Object.values(s.a).includes(e.skuId) && null == e.startsAt);
   return r.useEffect(() => {
-    f(S(E)), _(P(E))
+    f(S(E)), j(P(E))
   }, [E]), (0, a.jsx)(o.zJl, {
     className: h.panel,
     children: (0, a.jsxs)("div", {
@@ -104,7 +104,7 @@ function j() {
           children: "Manage Fractional Nitro"
         }), (0, a.jsxs)(o.P3F, {
           onClick: () => t(!e),
-          className: p.clickableGroup,
+          className: x.clickableGroup,
           children: [(0, a.jsx)("div", {
             children: (0, a.jsx)(o.Text, {
               variant: "text-md/normal",
@@ -137,14 +137,14 @@ function j() {
         style: {
           marginBottom: "8px"
         },
-        className: i()([p.section, b.buttons]),
+        className: i()([x.section, b.buttons]),
         children: [(0, a.jsx)(o.Text, {
           variant: "text-md/normal",
           children: " Fractional Premium SKU "
         }), (0, a.jsx)(o.PhF, {
           serialize: e => e,
           isSelected: e => e === n,
-          options: g,
+          options: _,
           select: l,
           popoutLayerContext: u.O$
         }), (0, a.jsx)(o.zxk, {
@@ -153,7 +153,7 @@ function j() {
           children: "Grant Fractional Nitro"
         })]
       }), (0, a.jsxs)("section", {
-        className: p.section,
+        className: x.section,
         children: [(0, a.jsxs)("div", {
           style: {
             flexWrap: "wrap"
@@ -166,7 +166,7 @@ function j() {
             variant: "text-lg/semibold",
             children: "Entitlements"
           }), (0, a.jsxs)("div", {
-            className: p.buttonGroup,
+            className: x.buttonGroup,
             children: [(0, a.jsx)(o.zxk, {
               disabled: T,
               size: o.zxk.Sizes.TINY,
@@ -209,7 +209,7 @@ function j() {
               onDelete: () => N(e.id)
             }, e.id))
           })]
-        }), j.length > 0 && (0, a.jsxs)("div", {
+        }), g.length > 0 && (0, a.jsxs)("div", {
           children: [(0, a.jsx)(o.Text, {
             style: {
               marginTop: "15px"
@@ -217,7 +217,7 @@ function j() {
             variant: "text-md/bold",
             children: "Unconsumed Fractional Premium"
           }), (0, a.jsx)("div", {
-            children: j.map(e => (0, a.jsx)(v, {
+            children: g.map(e => (0, a.jsx)(v, {
               entitlement: e
             }, e.id))
           })]

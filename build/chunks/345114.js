@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 });
 var r = n(255367),
   i = n(73800),
@@ -19,7 +19,7 @@ var r = n(255367),
   _ = n(388032),
   b = n(896293);
 
-function E(e) {
+function x(e) {
   let {
     username: t
   } = e;
@@ -60,19 +60,19 @@ function y(e) {
       guildId: t,
       user: n,
       className: b.welcomeCardBadge
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(x, {
       username: i
     })]
   })
 }
 
-function x(e) {
+function E(e) {
   var t, l;
   let {
     channel: f,
     message: _,
     compact: b
-  } = e, E = (0, s.ZP)(_), x = function(e) {
+  } = e, x = (0, s.ZP)(_), E = function(e) {
     let {
       author: t,
       channel: n,
@@ -99,18 +99,18 @@ function x(e) {
   }({
     channel: f,
     message: _,
-    author: E
+    author: x
   }), v = (null == (t = _.roleSubscriptionData) ? void 0 : t.total_months_subscribed) != null && (null == (l = _.roleSubscriptionData) ? void 0 : l.total_months_subscribed) <= 1;
-  return null == x ? null : (0, r.jsxs)(r.Fragment, {
+  return null == E ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Z, {
       icon: n(570111),
       timestamp: _.timestamp,
       compact: b,
-      children: x
+      children: E
     }), v && (0, r.jsx)(y, {
       guildId: f.guild_id,
       user: _.author,
-      username: E.nick
+      username: x.nick
     }), (0, r.jsx)(m.Z, {
       channel: f,
       message: _

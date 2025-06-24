@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
-  Z: () => E
+  Z: () => x
 });
 var r = n(255367);
 n(73800);
@@ -22,7 +22,7 @@ var i = n(442837),
 function b(e) {
   return null != e.application ? d.ZP.createFromServer(e.application) : null != e.activity && null != e.activity.party_id && (0, g.Ps)(e.activity.party_id) ? p.r9 : void 0
 }
-let E = e => {
+let x = e => {
   var t;
   let {
     channel: n,
@@ -30,18 +30,18 @@ let E = e => {
     hideParty: p
   } = e, {
     analyticsLocations: g
-  } = (0, c.ZP)(s.Z.INVITE_EMBED), E = (0, i.e7)([m.default], () => m.default.getId()), y = (0, i.e7)([f.Z], () => {
+  } = (0, c.ZP)(s.Z.INVITE_EMBED), x = (0, i.e7)([m.default], () => m.default.getId()), y = (0, i.e7)([f.Z], () => {
     if (null == d.application) return f.Z.findActivity(d.author.id, e => e.type === h.IIU.LISTENING);
     {
       var e;
       let t = d.author.id;
-      return (null == (e = d.activity) ? void 0 : e.type) === h.mFx.JOIN_REQUEST && (t = t === E && n.isPrivate() ? n.getRecipientId() : E), f.Z.getApplicationActivity(t, d.application.id)
+      return (null == (e = d.activity) ? void 0 : e.type) === h.mFx.JOIN_REQUEST && (t = t === x && n.isPrivate() ? n.getRecipientId() : x), f.Z.getApplicationActivity(t, d.application.id)
     }
-  }, [d, n, E]), x = (0, a.l)(), v = b(d), {
-    data: O
-  } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), C = null != O ? O : v;
-  return null != C && x ? (0, r.jsx)(o.c, {
-    app: C,
+  }, [d, n, x]), E = (0, a.l)(), v = b(d), {
+    data: C
+  } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), O = null != C ? C : v;
+  return null != O && E ? (0, r.jsx)(o.c, {
+    app: O,
     channel: n,
     message: d,
     hideParty: p,
@@ -57,7 +57,7 @@ let E = e => {
     channelId: n.id,
     guildId: n.getGuildId(),
     hideParty: p,
-    isSender: d.author.id === E,
+    isSender: d.author.id === x,
     analyticsLocations: g
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 89129 **/
+/** Chunk was on 72739 **/
 e.exports = {
   root: "root_f4dc96",
   icon: "icon_f4dc96",

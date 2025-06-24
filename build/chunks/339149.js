@@ -1,6 +1,6 @@
-/** Chunk was on 98787 **/
+/** Chunk was on 84865 **/
 n.d(t, {
-  E: () => I,
+  E: () => P,
   Z: () => N
 }), n(388685), n(539854);
 var r, i = n(255367),
@@ -17,9 +17,9 @@ var r, i = n(255367),
   g = n(703656),
   m = n(417363),
   b = n(941128),
-  O = n(780570),
-  y = n(353042),
-  _ = n(981631),
+  _ = n(780570),
+  O = n(353042),
+  y = n(981631),
   v = n(388032),
   C = n(496614);
 
@@ -32,7 +32,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,8 +44,8 @@ function S(e) {
   }
   return e
 }
-let x = {
-  [_.vxO.INSTALLING]: {
+let S = {
+  [y.vxO.INSTALLING]: {
     [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
       name: e
     }),
@@ -62,7 +62,7 @@ let x = {
       timeRemaining: t
     })
   },
-  [_.vxO.UPDATING]: {
+  [y.vxO.UPDATING]: {
     [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["6F9QzM"], {
       name: e
     }),
@@ -79,7 +79,7 @@ let x = {
       timeRemaining: t
     })
   },
-  [_.vxO.REPAIRING]: {
+  [y.vxO.REPAIRING]: {
     [f.J6.NONE]: (e, t) => v.intl.formatToPlainString(v.t["p+2sEx"], {
       name: e
     }),
@@ -97,15 +97,15 @@ let x = {
     })
   }
 };
-class E extends l.PureComponent {
+class x extends l.PureComponent {
   renderText() {
     let {
       state: e,
       isPaused: t
     } = this.props;
-    if (e.type === _.vxO.UPDATING || e.type === _.vxO.REPAIRING || e.type === _.vxO.INSTALLING) {
+    if (e.type === y.vxO.UPDATING || e.type === y.vxO.REPAIRING || e.type === y.vxO.INSTALLING) {
       if (t) return v.intl.string(v.t["5oxtFR"]);
-      else if (e.stage === _.f07.PATCHING || e.stage === _.f07.REPAIRING) return (0, i.jsx)(y.Z, {
+      else if (e.stage === y.f07.PATCHING || e.stage === y.f07.REPAIRING) return (0, i.jsx)(O.Z, {
         getHistoricalTotalBytes: m.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
@@ -131,7 +131,7 @@ class E extends l.PureComponent {
       if (null == l || null == o || null == i) return null;
       let a = e[e.length - 1] / t * 1e3,
         c = 0 !== a ? Math.max(1, (o - l) / a) : null,
-        u = x[s],
+        u = S[s],
         d = null != u ? Object.keys(u) : [],
         {
           unit: h,
@@ -145,7 +145,7 @@ class E extends l.PureComponent {
     })
   }
 }
-class P extends(r = l.PureComponent) {
+class I extends(r = l.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -167,7 +167,7 @@ class P extends(r = l.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == e || null == t ? v.intl.string(v.t.cw57am) : (0, i.jsx)(E, {
+    return null == e || null == t ? v.intl.string(v.t.cw57am) : (0, i.jsx)(x, {
       application: e,
       state: t,
       isPaused: n
@@ -193,7 +193,7 @@ class P extends(r = l.PureComponent) {
         "aria-label": !1,
         children: n => {
           var r, l;
-          return (0, i.jsx)("div", (r = S({}, n), l = l = {
+          return (0, i.jsx)("div", (r = E({}, n), l = l = {
             children: (0, i.jsx)(h._3P, {
               percent: e,
               colorOverride: t ? u.Z.unsafe_rawColors.PRIMARY_500.css : null,
@@ -224,12 +224,12 @@ class P extends(r = l.PureComponent) {
       let {
         onClick: t
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, g.uL)(_.Z5c.APPLICATION_LIBRARY)
+      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, g.uL)(y.Z5c.APPLICATION_LIBRARY)
     })
   }
 }
 
-function I(e, t) {
+function P(e, t) {
   return e.reduce((e, n) => {
     let {
       applicationId: r,
@@ -238,18 +238,18 @@ function I(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-j(P, "defaultProps", {
+j(I, "defaultProps", {
   strokeSize: h._3P.StrokeSizes.MEDIUM
 });
 let N = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
   let e = b.Z.activeItems,
-    t = I(e, m.Z),
+    t = P(e, m.Z),
     {
       total: n,
       progress: r
-    } = O.lK(t);
+    } = _.lK(t);
   return {
-    percent: O.xI(r, n),
+    percent: _.xI(r, n),
     isPaused: b.Z.paused,
     firstApplication: e.length > 0 ? p.Z.getApplication(e[0].applicationId) : null,
     firstState: t.length > 0 ? t[0] : null
@@ -274,6 +274,6 @@ let N = c.ZP.connectStores([b.Z, m.Z, p.Z], () => {
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(P, S({}, n)) : null
-  }) : (0, i.jsx)(P, S({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(I, E({}, n)) : null
+  }) : (0, i.jsx)(I, E({}, n))
 })

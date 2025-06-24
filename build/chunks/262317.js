@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   XX: () => R,
   ZP: () => k,
@@ -21,15 +21,15 @@ var r = n(255367),
   b = n(569545),
   _ = n(102172),
   y = n(525925),
-  C = n(701362),
-  x = n(670188),
+  x = n(701362),
+  C = n(670188),
   v = n(597998),
   j = n(314897),
   O = n(430824),
   E = n(496675),
   I = n(594174),
-  P = n(979651),
-  S = n(927923),
+  S = n(979651),
+  P = n(927923),
   Z = n(70722),
   N = n(388032),
   T = n(587382);
@@ -113,8 +113,8 @@ let k = (0, p.$)(function(e) {
     channel: R,
     mute: M,
     localMute: k,
-    localVideoDisabled: L,
-    deaf: D,
+    localVideoDisabled: D,
+    deaf: L,
     video: U,
     embeddedApplication: B,
     serverMute: F,
@@ -127,8 +127,8 @@ let k = (0, p.$)(function(e) {
     canDrag: q,
     isStreaming: K,
     isWatching: X,
-    isGuest: Q,
-    priority: J,
+    isGuest: J,
+    priority: Q,
     showPreview: $,
     hidePreview: ee,
     shouldShowPreview: et,
@@ -144,7 +144,7 @@ let k = (0, p.$)(function(e) {
     ep(!ed)
   }, ef = () => {
     K && (null == ee || ee(p.id))
-  }, em = () => K && (0, _.p9)(R, P.Z, O.Z, E.Z, m.Z)[0], eg = () => {
+  }, em = () => K && (0, _.p9)(R, S.Z, O.Z, E.Z, m.Z)[0], eg = () => {
     if (!em()) return;
     let e = {
       streamType: Z.lo.GUILD,
@@ -169,27 +169,27 @@ let k = (0, p.$)(function(e) {
         })
       }))
     })
-  }, e_ = () => (0, r.jsx)(C.Z, {
+  }, e_ = () => (0, r.jsx)(x.Z, {
     user: p,
     channel: R,
     onWatch: eg,
     previewIsOpen: en,
     location: eo
   }), ey = e => {
-    let t = S.al.has(null != er ? er : ""),
+    let t = P.al.has(null != er ? er : ""),
       n = {
         user: p,
         speaking: z,
         disconnected: W,
         mute: M,
         localMute: k,
-        localVideoDisabled: L,
+        localVideoDisabled: D,
         isStreaming: K,
-        isGuest: Q,
+        isGuest: J,
         video: U,
-        priority: J,
+        priority: Q,
         ringing: V,
-        deaf: D,
+        deaf: L,
         nick: H,
         collapsed: l,
         overlap: l,
@@ -254,14 +254,14 @@ let k = (0, p.$)(function(e) {
         onKeyDown: e.onKeyDown
       }))
     })
-  }, eC = (0, r.jsx)("div", {
+  }, ex = (0, r.jsx)("div", {
     className: T.draggable,
     "data-dnd-name": R.name,
     onMouseEnter: el ? void 0 : () => {
       K && !ed && (null == $ || $(p.id))
     },
     onMouseLeave: el ? void 0 : ef,
-    children: (0, r.jsx)(x.Z, {
+    children: (0, r.jsx)(C.Z, {
       clickTrap: (null == p ? void 0 : p.id) === (null == (t = I.default.getCurrentUser()) ? void 0 : t.id) && ed,
       targetElementRef: eu,
       user: p,
@@ -273,5 +273,5 @@ let k = (0, p.$)(function(e) {
       children: e => ey(e)
     })
   });
-  return q ? Y(eC) : eC
+  return q ? Y(ex) : ex
 })

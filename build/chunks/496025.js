@@ -12,15 +12,15 @@ var a = n(255367),
   d = n(493683),
   u = n(43267),
   m = n(933557),
-  x = n(258732),
-  p = n(592125),
+  p = n(258732),
+  x = n(592125),
   h = n(699516),
   b = n(594174),
   f = n(55589),
   v = n(630388),
-  g = n(98357),
-  j = n(432877),
-  _ = n(246992),
+  _ = n(98357),
+  g = n(432877),
+  j = n(246992),
   y = n(894257),
   C = n(750540),
   N = n(616257);
@@ -32,23 +32,23 @@ function O() {
     {
       selectedChannel: i,
       options: d
-    } = (0, o.cj)([p.Z, b.default, h.Z], () => ({
-      selectedChannel: p.Z.getChannel(n),
+    } = (0, o.cj)([x.Z, b.default, h.Z], () => ({
+      selectedChannel: x.Z.getChannel(n),
       options: t.map(e => {
-        let t = p.Z.getChannel(e.channelId);
+        let t = x.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
           label: null != t ? (0, m.F6)(t, b.default, h.Z) : e.channelId
         }
       })
     })),
-    g = r.useCallback(() => {
+    _ = r.useCallback(() => {
       var e;
       if (null == i || !i.isPrivate()) return;
       let t = (0, v.x9)(null != (e = i.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
-      x.Z.updatePrivateChannelRecipientFlags(i.id, t)
+      p.Z.updatePrivateChannelRecipientFlags(i.id, t)
     }, [i]),
-    j = null != i && !!i.isPrivate() && (0, v.yE)(null != (e = i.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+    g = null != i && !!i.isPrivate() && (0, v.yE)(null != (e = i.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(c.Text, {
       variant: "text-md/semibold",
@@ -63,19 +63,19 @@ function O() {
         onChange: l,
         renderOptionPrefix: e => {
           if (null == e) return null;
-          let t = p.Z.getChannel(e.value);
+          let t = x.Z.getChannel(e.value);
           return null == t ? null : (0, a.jsx)(c.qEK, {
             src: (0, u.x)(t),
             "aria-hidden": !0,
             size: c.EFr.SIZE_16
           })
         },
-        popoutLayerContext: _.O$
+        popoutLayerContext: j.O$
       }), (0, a.jsx)(c.zxk, {
         size: c.zxk.Sizes.SMALL,
-        onClick: g,
+        onClick: _,
         disabled: null == n,
-        children: j ? "Clear NUX Flag" : "Set NUX Flag"
+        children: g ? "Clear NUX Flag" : "Set NUX Flag"
       })]
     })]
   })
@@ -95,13 +95,13 @@ function E() {
 }
 
 function T() {
-  let e = j.ZP.allByCategory(j.zU.MESSAGING).map(e => {
+  let e = g.ZP.allByCategory(g.zU.MESSAGING).map(e => {
     let [t, n, {
       label: r
     }] = e;
     return (0, a.jsx)(c.j7V, {
       value: n,
-      onChange: e => (0, g.Z)(t, e),
+      onChange: e => (0, _.Z)(t, e),
       hideBorder: !0,
       className: C.switch,
       children: r

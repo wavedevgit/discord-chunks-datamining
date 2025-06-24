@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => v
 });
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(358085),
   _ = n(228488),
   y = n(981631),
-  C = n(806176);
-let x = () => {
+  x = n(806176);
+let C = () => {
   a.Z.wait(() => p.xv(y.KJ3.CHANNEL_CALL_POPOUT))
 };
 
@@ -35,7 +35,7 @@ function v(e) {
     parentAnalyticsLocation: j
   } = (0, c.ZP)(), O = n === y.IlC.POPOUT, E = i.useRef(null), {
     currentLayout: I,
-    mode: P
+    mode: S
   } = (0, l.cj)([u.Z], () => {
     let e = u.Z.getMode(t.id),
       r = n === y.IlC.POPOUT;
@@ -45,9 +45,9 @@ function v(e) {
       currentLayout: i,
       mode: e
     }
-  }, [t, n]), S = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId() === t.id, [t.id]);
+  }, [t, n]), P = (0, l.e7)([f.Z], () => f.Z.getVoiceChannelId() === t.id, [t.id]);
   i.useEffect(() => {
-    E.current = P
+    E.current = S
   });
   let Z = i.useRef(I),
     {
@@ -63,7 +63,7 @@ function v(e) {
       }
     }, [p, O, v]),
     A = a && !O,
-    w = P === y.WtW.VIDEO && S && !A,
+    w = S === y.WtW.VIDEO && P && !A,
     R = i.useCallback((e, r) => {
       r !== e && (o.Z.updateLayout(t.id, r, n), r === y.AEg.FULL_SCREEN && t.isPrivate() && g.S.dispatch(y.CkL.TEXTAREA_BLUR))
     }, [n, t]),
@@ -83,18 +83,18 @@ function v(e) {
       N.removeEventListener(_.NO, e)
     }
   }, [N, I, k, T]);
-  let L = {
+  let D = {
       channel: t,
       maybeLeaveFullScreen: M
     },
-    D = i.useRef(L);
+    L = i.useRef(D);
   return (i.useEffect(() => {
-    D.current = L
+    L.current = D
   }), i.useEffect(() => {
     let {
       channel: e,
       maybeLeaveFullScreen: t
-    } = D.current;
+    } = L.current;
     return m.default.track(y.rMx.VIDEO_LAYOUT_TOGGLED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -118,14 +118,14 @@ function v(e) {
       O && (0, b.isMac)() || t(I)
     }
   }, [I, O]), i.useEffect(() => {
-    null != T && E.current === y.WtW.VIDEO && P === y.WtW.VOICE && (0, _.Pr)(T, N)
-  }, [N, P, E, T]), i.useEffect(() => {
-    !S && O && x()
-  }, [S, O]), w) ? (0, r.jsx)(h.Z, {
+    null != T && E.current === y.WtW.VIDEO && S === y.WtW.VOICE && (0, _.Pr)(T, N)
+  }, [N, S, E, T]), i.useEffect(() => {
+    !P && O && C()
+  }, [P, O]), w) ? (0, r.jsx)(h.Z, {
     themeable: !1,
     node: T,
     guestWindow: p,
-    className: C.rightTrayIcon,
+    className: x.rightTrayIcon,
     onClick: k(I)
   }) : null
 }

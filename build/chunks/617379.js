@@ -1,13 +1,13 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 84865 **/
 n.d(t, {
-  Z: () => p
+  Z: () => h
 });
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  a = n(110255),
-  o = n(64247),
-  s = n(981631),
+  o = n(110255),
+  s = n(64247),
+  a = n(981631),
   c = n(388032);
 
 function u(e) {
@@ -42,7 +42,7 @@ function d(e, t) {
   }), e
 }
 
-function p(e) {
+function h(e) {
   let {
     channel: t
   } = e, n = i.useRef(null);
@@ -51,16 +51,16 @@ function p(e) {
     align: "right",
     animation: l.yRy.Animation.NONE,
     position: "bottom",
-    renderPopout: e => t.isThread() ? (0, r.jsx)(o.Z, d(u({}, e), {
+    renderPopout: e => t.isThread() ? (0, r.jsx)(s.Z, d(u({}, e), {
       channel: t,
       navId: "recents-thread-notifications",
       label: c.intl.string(c.t.ljs3OT)
-    })) : (0, r.jsx)(a.Z, d(u({}, e), {
+    })) : (0, r.jsx)(o.Z, d(u({}, e), {
       channel: t,
       navId: "recents-notifications",
       label: c.intl.string(c.t.ljs3OT),
       location: {
-        section: s.jXE.INBOX
+        section: a.jXE.INBOX
       },
       includeGuildMute: !0
     })),

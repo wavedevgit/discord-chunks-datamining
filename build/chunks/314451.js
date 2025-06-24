@@ -1,4 +1,4 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 1272 **/
 n.d(t, {
   Z: () => f
 }), n(388685);
@@ -12,7 +12,7 @@ var r = n(255367),
   u = n(63063),
   d = n(665149),
   p = n(388032);
-let m = () => (0, a.ZDy)(async () => {
+let h = () => (0, a.ZDy)(async () => {
   let {
     default: e
   } = await n.e("83051").then(n.bind(n, 115072));
@@ -39,23 +39,23 @@ let m = () => (0, a.ZDy)(async () => {
 function f(e) {
   let {
     className: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.isDeveloper), [f, h] = i.useState(!1), [g, _] = i.useState(0), b = i.useRef(null), E = e => {
-    clearTimeout(g), _(setTimeout(() => {
-      h(e)
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.isDeveloper), [f, g] = i.useState(!1), [m, b] = i.useState(0), _ = i.useRef(null), O = e => {
+    clearTimeout(m), b(setTimeout(() => {
+      g(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => E(!0),
-    onMouseLeave: () => E(!1),
+    onMouseEnter: () => O(!0),
+    onMouseLeave: () => O(!1),
     children: (0, r.jsx)(a.yRy, {
-      targetElementRef: b,
+      targetElementRef: _,
       shouldShow: f,
       animation: a.yRy.Animation.NONE,
       position: "bottom",
       align: "right",
       autoInvert: !1,
-      onRequestOpen: () => h(!0),
-      onRequestClose: () => h(!1),
+      onRequestOpen: () => g(!0),
+      onRequestClose: () => g(!1),
       renderPopout: () => (function(e) {
         let {
           onClose: t,
@@ -72,7 +72,7 @@ function f(e) {
               id: "staff-help-bug-reporter",
               label: p.intl.string(p.t["5Lqopa"]),
               icon: a.nnZ,
-              action: m
+              action: h
             }), n && (0, r.jsx)(a.sNh, {
               id: "staff-devtools",
               label: "Toggle DevTools",
@@ -87,7 +87,7 @@ function f(e) {
           })
         })
       })({
-        onClose: () => h(!1),
+        onClose: () => g(!1),
         isDiscordDeveloper: n
       }),
       children: (e, n) => {
@@ -95,8 +95,8 @@ function f(e) {
           isShown: i
         } = n;
         return (0, r.jsx)(d.JO, {
-          ref: b,
-          onClick: m,
+          ref: _,
+          onClick: h,
           icon: a.nnZ,
           "aria-label": p.intl.string(p.t.cqEoj4),
           selected: i,

@@ -1,4 +1,10 @@
-/** Chunk was on 21741 **/
-e.exports = {
-  friendRequestsButton: "friendRequestsButton__523aa"
+/** Chunk was on 92754 **/
+var r = n(447479),
+  i = n(658141),
+  l = n(401427),
+  s = RegExp("['’]", "g");
+e.exports = function(e) {
+  return function(t) {
+    return r(l(i(t).replace(s, "")), e, "")
+  }
 }

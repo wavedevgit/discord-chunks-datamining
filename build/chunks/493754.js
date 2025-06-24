@@ -1,7 +1,7 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   W: () => y,
-  Z: () => C
+  Z: () => x
 });
 var r = n(255367);
 n(73800);
@@ -81,13 +81,13 @@ function y(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   var t, {
       stream: n,
       applicationId: i,
       channel: a,
-      exitFullScreen: C,
-      appContext: x,
+      exitFullScreen: x,
+      appContext: C,
       analyticsLocation: v,
       className: j
     } = e,
@@ -108,24 +108,24 @@ function C(e) {
     }(e, ["stream", "applicationId", "channel", "exitFullScreen", "appContext", "analyticsLocation", "className"]);
   let E = null == a ? void 0 : a.getGuildId(),
     I = null == a ? void 0 : a.id,
-    P = (0, s.e7)([p.Z], () => null != E ? p.Z.getGuild(E) : null, [E]),
-    S = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(I), [I]);
-  if (!(null != P && null != a && h.Z.can(f.Plq.CREATE_INSTANT_INVITE, a))) return null;
+    S = (0, s.e7)([p.Z], () => null != E ? p.Z.getGuild(E) : null, [E]),
+    P = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(I), [I]);
+  if (!(null != S && null != a && h.Z.can(f.Plq.CREATE_INSTANT_INVITE, a))) return null;
   let Z = m.intl.string(m.t.VINpSE);
   return null != n ? Z = m.intl.string(m.t["6VQaqa"]) : null != i && (Z = m.intl.string(m.t["OzOM/v"])), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.zxk, _(b({
       size: null != (t = O.size) ? t : c.zxk.Sizes.SMALL,
       color: g.buttonColor,
       onClick: () => {
-        o()(null != P, "guild cannot be null"), o()(null != a, "channel cannot be null"), y({
-          guild: P,
+        o()(null != S, "guild cannot be null"), o()(null != a, "channel cannot be null"), y({
+          guild: S,
           channel: a,
           streamUserId: null == n ? void 0 : n.ownerId,
           applicationId: i,
-          appContext: x,
-          exitFullScreen: C,
+          appContext: C,
+          exitFullScreen: x,
           analyticsLocation: v,
-          guildScheduledEvent: S
+          guildScheduledEvent: P
         })
       },
       className: l()(j, g.textButton)
@@ -134,11 +134,11 @@ function C(e) {
     })), (0, r.jsx)(d.Z, {
       channel: a,
       stream: n,
-      appContext: x,
+      appContext: C,
       className: l()(j, g.iconButton),
-      exitFullScreen: C,
+      exitFullScreen: x,
       analyticsLocation: v,
-      guildScheduledEvent: S
+      guildScheduledEvent: P
     })]
   })
 }

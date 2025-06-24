@@ -20,8 +20,8 @@ var r = n(255367),
   _ = n(100527),
   v = n(906732),
   j = n(594190),
-  S = n(679613),
-  b = n(72897),
+  b = n(679613),
+  S = n(72897),
   C = n(695346),
   y = n(131951),
   O = n(19780),
@@ -41,8 +41,8 @@ var r = n(255367),
   B = n(485299),
   U = n(615161),
   G = n(289989),
-  z = n(328242),
-  W = n(565574),
+  W = n(328242),
+  z = n(565574),
   F = n(286420),
   H = n(51708),
   V = n(801604),
@@ -78,9 +78,9 @@ function $(e) {
     dispatch: ed
   } = (0, U.Ti)(a, eo, ea, (0, w.isWindows)() && null != a && $ ? "confirm" : "source_select"), {
     sortDevicesByFrecency: eu
-  } = (0, S._)({
+  } = (0, b._)({
     location: "GoLiveModalV2"
-  }), ef = (0, b.zX)({
+  }), ef = (0, S.zX)({
     sortDevicesByFrecency: eu
   });
   (0, Y.Z)(el, ed, "confirm" === ec.modalStep);
@@ -98,8 +98,8 @@ function $(e) {
     e_ = !$ && null != a && !eg,
     ev = eg || !e_ && ee && (!el || ec.sourceType === f.vA.CAMERA),
     ej = el && ec.sourceType !== f.vA.CAMERA,
-    eS = el || !(0, w.isWindows)() || !et || eg,
-    eb = en && em,
+    eb = el || !(0, w.isWindows)() || !et || eg,
+    eS = en && em,
     eC = eg && et,
     ey = i.useMemo(() => {
       let e = [{
@@ -171,7 +171,7 @@ function $(e) {
           nativePickerEnabled: el
         }), (0, r.jsxs)("div", {
           className: q.rightButtonGroup,
-          children: [eb && (0, r.jsx)(F.Z, {
+          children: [eS && (0, r.jsx)(F.Z, {
             onClose: n
           }), ej && !ev && (0, r.jsx)(M.Z, {
             mainCTADisabled: !ex && "" === ec.nativeSourceType,
@@ -180,16 +180,16 @@ function $(e) {
             },
             align: "right",
             ctaText: K.intl.string(K.t.FiBjwc),
-            hideOptionsButton: !eb
+            hideOptionsButton: !eS
           }), ev && !ej && (0, r.jsx)(M.Z, {
             mainCTADisabled: null == ec.selectedSource,
             mainCTAOnClick: () => {
               null != ec.selectedChannel ? eI(ec.selectedChannel) : null != ec.selectedSource && eZ(ec.selectedSource)
             },
             align: "right",
-            hideOptionsButton: !eb,
+            hideOptionsButton: !eS,
             ctaText: K.intl.string(J.default["5AyH/v"])
-          }), (!eb || !(ev || ej)) && (0, r.jsx)(W.Z, {
+          }), (!eS || !(ev || ej)) && (0, r.jsx)(z.Z, {
             useSimplifiedMenu: eC,
             align: "right"
           })]
@@ -224,7 +224,7 @@ function $(e) {
       parentComponent: "GoLiveModalV2",
       children: [e_ ? (0, r.jsx)(L.Z, {
         className: s()(q.channelSelectorComponent, {
-          [q.withFooter]: eS
+          [q.withFooter]: eb
         }),
         onSelectChannel: eI
       }) : eg ? (0, r.jsx)(B.Z, {
@@ -253,7 +253,7 @@ function $(e) {
           className: q.content,
           children: el && eO !== f.vA.CAMERA ? (0, r.jsx)(G.Z, {
             onSourceSelect: ew
-          }) : (0, r.jsx)(z.Z, {
+          }) : (0, r.jsx)(W.Z, {
             onClick: function(e) {
               function t() {
                 var t;
@@ -282,7 +282,7 @@ function $(e) {
             }
           })
         })]
-      }), eC && (0, r.jsx)(D.Z, {}), eS && eT]
+      }), eC && (0, r.jsx)(D.Z, {}), eb && eT]
     })
   })
 }

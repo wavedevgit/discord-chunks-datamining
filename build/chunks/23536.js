@@ -1,4 +1,4 @@
-/** Chunk was on 62423 **/
+/** Chunk was on 16703 **/
 n.d(t, {
   Z: () => _
 }), n(784620), n(973216);
@@ -24,7 +24,7 @@ function _(e) {
     onJump: _
   } = e, {
     items: y,
-    state: C
+    state: x
   } = (0, l.cj)([p.Z], () => {
     var e, n;
     let r = p.Z.getPins(t.id);
@@ -32,11 +32,11 @@ function _(e) {
       items: null != (e = null == r ? void 0 : r.items) ? e : b,
       state: null != (n = null == r ? void 0 : r.state) ? n : p.M.LOADING
     }
-  }), x = i.useMemo(() => y.map(e => e.message), [y]), v = (0, l.e7)([h.ZP], () => h.ZP.hasUnreadPins(t.id));
+  }), C = i.useMemo(() => y.map(e => e.message), [y]), v = (0, l.e7)([h.ZP], () => h.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
     v && s.Z.ackPins(t.id)
   }, [v, t.id]), (0, c.ZP)(() => {
-    x.some(u.k5) && s.Z.fetchPins(t.id, {
+    C.some(u.k5) && s.Z.fetchPins(t.id, {
       reset: !0
     })
   });
@@ -55,9 +55,9 @@ function _(e) {
     children: (0, r.jsx)(f.ZP, {
       channel: t,
       onFetch: j,
-      messages: x,
-      loading: C === p.M.LOADING,
-      hasMore: C === p.M.LOADED_HAS_MORE,
+      messages: C,
+      loading: x === p.M.LOADING,
+      hasMore: x === p.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",
       renderEmptyState: function() {
         if (y.length > 0) return;

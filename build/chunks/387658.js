@@ -34,9 +34,9 @@ var i = n(255367),
   L = n(85884),
   R = n(100260);
 let w = "placeholder",
-  Z = [, , , , , ].fill(w);
+  k = [, , , , , ].fill(w);
 
-function k(e) {
+function Z(e) {
   var t, n;
   let {
     context: l,
@@ -212,7 +212,7 @@ function U(e) {
     }), (0, i.jsx)("ul", {
       className: R.commandContainer,
       "aria-label": l,
-      children: n.map((e, n) => e === w ? (0, i.jsx)(M, {}, e + n) : (0, i.jsx)(k, {
+      children: n.map((e, n) => e === w ? (0, i.jsx)(M, {}, e + n) : (0, i.jsx)(Z, {
         context: t,
         command: e,
         section: r,
@@ -279,7 +279,7 @@ function B(e) {
     }), (0, i.jsx)(U, {
       context: n,
       section: f,
-      commands: m ? Z : C,
+      commands: m ? k : C,
       headerName: T.intl.string(T.t.DUU9Ly),
       sectionName: o,
       children: v && (0, i.jsx)(I.Z, {

@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
-  Z: () => E
+  Z: () => x
 });
 var r = n(255367);
 n(73800);
@@ -20,13 +20,13 @@ var i = n(442837),
   _ = n(900849),
   b = n(981631);
 
-function E(e) {
+function x(e) {
   let {
     channel: t,
     onClick: n,
-    beforeTransition: E,
+    beforeTransition: x,
     className: y,
-    openChatWithoutConnecting: x
+    openChatWithoutConnecting: E
   } = e, v = (0, i.e7)([h.default, f.Z], () => null == t ? "" : (0, s.F6)(t, h.default, f.Z), [t]);
   return (0, r.jsx)(l.ua7, {
     text: v,
@@ -40,7 +40,7 @@ function E(e) {
         role: "link",
         className: y,
         onClick: e => {
-          e.stopPropagation(), null != n ? n() : (null != E && E(), (0, l.pTH)(), function(e, t) {
+          e.stopPropagation(), null != n ? n() : (null != x && x(), (0, l.pTH)(), function(e, t) {
             let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
             if (null == e || null == t) return;
             let r = m.Z.getGuild(e);
@@ -56,7 +56,7 @@ function E(e) {
               o.default.selectVoiceChannel(i.id);
               return
             }(0, u.uL)(b.Z5c.CHANNEL(e, t))
-          }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, x))
+          }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, E))
         },
         onMouseEnter: i,
         onMouseLeave: s,

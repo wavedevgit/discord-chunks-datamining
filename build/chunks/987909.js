@@ -1,6 +1,6 @@
-/** Chunk was on 21741 **/
+/** Chunk was on 3490 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,7 +19,7 @@ var r = n(255367),
   _ = n(981631),
   b = n(18485);
 
-function E(e) {
+function x(e) {
   let {
     assets: t,
     currentUser: n,
@@ -37,11 +37,11 @@ function y(e) {
     stickers: d,
     event: p,
     eventProperties: m
-  } = e, [h, _] = i.useState(!1), y = i.useMemo(() => E({
+  } = e, [h, _] = i.useState(!1), y = i.useMemo(() => x({
     assets: d,
     currentUser: t,
     message: l
-  }), [d, t, l]), x = i.useMemo(() => E({
+  }), [d, t, l]), E = i.useMemo(() => x({
     assets: u,
     currentUser: t,
     message: l
@@ -123,11 +123,11 @@ function y(e) {
       isInteracting: h,
       sticker: y,
       size: 28
-    }), x]
+    }), E]
   })
 }
 
-function x(e) {
+function E(e) {
   let {
     channel: t,
     message: n,

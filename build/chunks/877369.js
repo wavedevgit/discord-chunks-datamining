@@ -1,32 +1,32 @@
-/** Chunk was on 70791 **/
-e.byteLength = function(t) {
-  var e = c(t),
-    s = e[0],
-    i = e[1];
-  return (s + i) * 3 / 4 - i
-}, e.toByteArray = function(t) {
-  var e, s, r = c(t),
-    o = r[0],
-    a = r[1],
-    h = new n((o + a) * 3 / 4 - a),
+/** Chunk was on 82510 **/
+t.byteLength = function(e) {
+  var t = s(e),
+    n = t[0],
+    r = t[1];
+  return (n + r) * 3 / 4 - r
+}, t.toByteArray = function(e) {
+  var t, n, i = s(e),
+    a = i[0],
+    o = i[1],
+    c = new l((a + o) * 3 / 4 - o),
     u = 0,
-    _ = a > 0 ? o - 4 : o;
-  for (s = 0; s < _; s += 4) e = i[t.charCodeAt(s)] << 18 | i[t.charCodeAt(s + 1)] << 12 | i[t.charCodeAt(s + 2)] << 6 | i[t.charCodeAt(s + 3)], h[u++] = e >> 16 & 255, h[u++] = e >> 8 & 255, h[u++] = 255 & e;
-  return 2 === a && (e = i[t.charCodeAt(s)] << 2 | i[t.charCodeAt(s + 1)] >> 4, h[u++] = 255 & e), 1 === a && (e = i[t.charCodeAt(s)] << 10 | i[t.charCodeAt(s + 1)] << 4 | i[t.charCodeAt(s + 2)] >> 2, h[u++] = e >> 8 & 255, h[u++] = 255 & e), h
-}, e.fromByteArray = function(t) {
-  for (var e, i = t.length, n = i % 3, r = [], o = 0, a = i - n; o < a; o += 16383) r.push(function(t, e, i) {
-    for (var n, r = [], o = e; o < i; o += 3) n = (t[o] << 16 & 0xff0000) + (t[o + 1] << 8 & 65280) + (255 & t[o + 2]), r.push(s[n >> 18 & 63] + s[n >> 12 & 63] + s[n >> 6 & 63] + s[63 & n]);
-    return r.join("")
-  }(t, o, o + 16383 > a ? a : o + 16383));
-  return 1 === n ? r.push(s[(e = t[i - 1]) >> 2] + s[e << 4 & 63] + "==") : 2 === n && r.push(s[(e = (t[i - 2] << 8) + t[i - 1]) >> 10] + s[e >> 4 & 63] + s[e << 2 & 63] + "="), r.join("")
+    d = o > 0 ? a - 4 : a;
+  for (n = 0; n < d; n += 4) t = r[e.charCodeAt(n)] << 18 | r[e.charCodeAt(n + 1)] << 12 | r[e.charCodeAt(n + 2)] << 6 | r[e.charCodeAt(n + 3)], c[u++] = t >> 16 & 255, c[u++] = t >> 8 & 255, c[u++] = 255 & t;
+  return 2 === o && (t = r[e.charCodeAt(n)] << 2 | r[e.charCodeAt(n + 1)] >> 4, c[u++] = 255 & t), 1 === o && (t = r[e.charCodeAt(n)] << 10 | r[e.charCodeAt(n + 1)] << 4 | r[e.charCodeAt(n + 2)] >> 2, c[u++] = t >> 8 & 255, c[u++] = 255 & t), c
+}, t.fromByteArray = function(e) {
+  for (var t, r = e.length, l = r % 3, i = [], a = 0, o = r - l; a < o; a += 16383) i.push(function(e, t, r) {
+    for (var l, i = [], a = t; a < r; a += 3) l = (e[a] << 16 & 0xff0000) + (e[a + 1] << 8 & 65280) + (255 & e[a + 2]), i.push(n[l >> 18 & 63] + n[l >> 12 & 63] + n[l >> 6 & 63] + n[63 & l]);
+    return i.join("")
+  }(e, a, a + 16383 > o ? o : a + 16383));
+  return 1 === l ? i.push(n[(t = e[r - 1]) >> 2] + n[t << 4 & 63] + "==") : 2 === l && i.push(n[(t = (e[r - 2] << 8) + e[r - 1]) >> 10] + n[t >> 4 & 63] + n[t << 2 & 63] + "="), i.join("")
 };
-for (var s = [], i = [], n = "undefined" != typeof Uint8Array ? Uint8Array : Array, r = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", o = 0, a = r.length; o < a; ++o) s[o] = r[o], i[r.charCodeAt(o)] = o;
+for (var n = [], r = [], l = "undefined" != typeof Uint8Array ? Uint8Array : Array, i = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", a = 0, o = i.length; a < o; ++a) n[a] = i[a], r[i.charCodeAt(a)] = a;
 
-function c(t) {
-  var e = t.length;
-  if (e % 4 > 0) throw Error("Invalid string. Length must be a multiple of 4");
-  var s = t.indexOf("="); - 1 === s && (s = e);
-  var i = s === e ? 0 : 4 - s % 4;
-  return [s, i]
+function s(e) {
+  var t = e.length;
+  if (t % 4 > 0) throw Error("Invalid string. Length must be a multiple of 4");
+  var n = e.indexOf("="); - 1 === n && (n = t);
+  var r = n === t ? 0 : 4 - n % 4;
+  return [n, r]
 }
-i[45] = 62, i[95] = 63
+r[45] = 62, r[95] = 63
