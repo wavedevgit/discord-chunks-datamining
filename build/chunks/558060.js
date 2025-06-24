@@ -1,4 +1,4 @@
-/** Chunk was on 86258 **/
+/** Chunk was on 81530 **/
 "use strict";
 r.d(t, {
   Z: () => m
@@ -74,8 +74,8 @@ function m(e) {
     })
   });
   let _ = (0, a.ql)(t, u.tuJ.PREMIUM_TIER_2),
-    O = !r && !(0, a.x6)(t),
-    y = (0, a.x6)(t) && r ? v(f({}, x), {
+    y = !r && !(0, a.x6)(t),
+    O = (0, a.x6)(t) && r ? v(f({}, x), {
       amount: i.original
     }) : x,
     j = g && r,
@@ -83,12 +83,12 @@ function m(e) {
   return (0, n.jsxs)("div", {
     className: o()(p.priceTagsContainer, m),
     children: [!j && (0, n.jsx)(s.F, {
-      price: y,
+      price: O,
       discount: r ? a.f_ : i,
       className: o()(p.price, {
         [p.striked]: r,
         [p.dimmed]: r,
-        [p.fullPrice]: O
+        [p.fullPrice]: y
       })
     }), null != _ && !P && (0, n.jsx)(s.F, {
       price: _,
@@ -101,12 +101,12 @@ function m(e) {
             text: e
           })
         })
-      }) : O ? e => d.intl.formatToPlainString(d.t.W3gIWF, {
+      }) : y ? e => d.intl.formatToPlainString(d.t.W3gIWF, {
         price: e
       }) : void 0,
       className: o()(p.price, {
         [p.dimmed]: !r,
-        [p.fullPrice]: O
+        [p.fullPrice]: y
       }),
       variant: r ? void 0 : "text-xs/semibold",
       icon: (0, n.jsx)(l.ua7, {
@@ -122,7 +122,7 @@ function m(e) {
             color: "currentColor"
           }, t), {
             className: o()(p.premiumIcon, {
-              [p.fullPrice]: O
+              [p.fullPrice]: y
             })
           }))
         }

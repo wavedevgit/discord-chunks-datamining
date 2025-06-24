@@ -1,4 +1,4 @@
-/** Chunk was on 86258 **/
+/** Chunk was on 81530 **/
 "use strict";
 r.d(t, {
   default: () => x
@@ -31,8 +31,8 @@ function x(e) {
     available: v,
     purchased: h,
     isFetchingCategories: x,
-    isFetchingPurchases: O
-  } = (0, u.yV)("NameplateModal"), y = x || O && 0 === h.length;
+    isFetchingPurchases: y
+  } = (0, u.yV)("NameplateModal"), O = x || y && 0 === h.length;
   return (0, i.useEffect)(() => {
     b.default.track(m.rMx.OPEN_MODAL, {
       type: m.jXE.NAMEPLATE_CUSTOMIZATION,
@@ -42,9 +42,9 @@ function x(e) {
     value: f,
     children: (0, n.jsx)(l.Y0X, {
       transitionState: t,
-      size: y ? l.CgR.DYNAMIC : l.CgR.MEDIUM,
+      size: O ? l.CgR.DYNAMIC : l.CgR.MEDIUM,
       parentComponent: "NameplateModal",
-      children: y ? (0, n.jsx)(l.$jN, {
+      children: O ? (0, n.jsx)(l.$jN, {
         className: g.spinner,
         type: l.$jN.Type.SPINNING_CIRCLE
       }) : (0, n.jsx)(_, {
@@ -70,7 +70,7 @@ function _(e) {
     return e.skuId === (null == t || null == (n = t.collectibles) || null == (r = n.nameplate) ? void 0 : r.skuId)
   }), {
     pendingNameplate: b
-  } = (0, d._A)(), [m, x] = (0, i.useState)(() => void 0 !== b ? b : null != p ? p : null), [_, O] = (0, i.useState)(null != m), y = (0, i.useCallback)(e => {
+  } = (0, d._A)(), [m, x] = (0, i.useState)(() => void 0 !== b ? b : null != p ? p : null), [_, y] = (0, i.useState)(null != m), O = (0, i.useCallback)(e => {
     u(), (0, c.mK)({
       analyticsLocations: s,
       analyticsSource: a.Z.EDIT_NAMEPLATE_MODAL,
@@ -94,9 +94,9 @@ function _(e) {
       children: [(0, n.jsx)(v.Z, {
         selected: m,
         onSelect: (e, t) => {
-          x(e), O(null != t && t)
+          x(e), y(null != t && t)
         },
-        onOpenShop: y,
+        onOpenShop: O,
         available: r,
         purchased: o
       }), (0, n.jsx)(f.Z, {
@@ -114,7 +114,7 @@ function _(e) {
       }) : (0, n.jsx)(l.zxk, {
         className: g.goToShopButton,
         color: l.Ttl.CUSTOM,
-        onClick: () => y(null == m ? void 0 : m.skuId),
+        onClick: () => O(null == m ? void 0 : m.skuId),
         children: (0, n.jsx)(l.Text, {
           color: "always-white",
           variant: "text-sm/medium",

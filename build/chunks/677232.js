@@ -1,4 +1,4 @@
-/** Chunk was on 86258 **/
+/** Chunk was on 81530 **/
 "use strict";
 r.d(t, {
   Z: () => h
@@ -94,13 +94,13 @@ let d = [{
         tension: 800,
         friction: 24
       }
-    }), _ = o ? g : 0, O = (0, l.wj)(null != t ? t : u) ? c.dark[_] : c.light[_];
+    }), _ = o ? g : 0, y = (0, l.wj)(null != t ? t : u) ? c.dark[_] : c.light[_];
     return !r && o ? (0, n.jsx)(m, {}) : o && h ? (0, n.jsx)(v, {
       isDark: (0, l.wj)(u),
       style: x
     }) : (0, n.jsx)(f, {
-      boxColor: O.box,
-      ribbonColor: O.ribbon,
+      boxColor: y.box,
+      ribbonColor: y.ribbon,
       style: x
     })
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 86258 **/
+/** Chunk was on 81530 **/
 "use strict";
 e.exports = {
   giftButton: "giftButton_f3c9fa",

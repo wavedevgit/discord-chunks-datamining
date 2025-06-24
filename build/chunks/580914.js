@@ -108,8 +108,8 @@ let N = {
       isPreviewingStaticBanner: G,
       bannerOverrides: z,
       bannerStyleOverrides: q,
-      heroLogo: K,
-      heroBannerStatic: Y,
+      heroLogo: Y,
+      heroBannerStatic: K,
       heroBannerAnimated: $
     } = (0, k.hr)(U), X = null == z ? void 0 : z.heroBanner, J = null != (n = null != (t = null == q ? void 0 : q.responsive) ? t : U.responsive) && n, Q = null != (a = null == q ? void 0 : q.backgroundStyle) ? a : U.backgroundStyle, ee = l.useMemo(() => W(U.rankedSkuIds), [s, W, U.rankedSkuIds]), et = (0, S.a)()(ee), en = (0, E.l)(et).slice(0, 4), er = (0, T.St)(en), el = F === I.AW.ORBS ? B.intl.string(B.t["1CdL8f"]) : B.intl.formatToPlainString(B.t.wvKYCg, {
       category_name: U.name
@@ -126,7 +126,7 @@ let N = {
         children: [null == $ || D || !H || G ? (0, r.jsx)("div", {
           className: i()(w.bannerAsset, w.bannerImage),
           style: {
-            backgroundImage: "url(".concat(Y, ")")
+            backgroundImage: "url(".concat(K, ")")
           }
         }) : (0, r.jsx)(p.Z, {
           className: i()(w.bannerAsset, w.bannerVideoBackground),
@@ -153,7 +153,7 @@ let N = {
               className: w.heroLogoNameContainer,
               children: [null != U.logoUrl && (0, r.jsx)("img", {
                 className: w.heroHeaderLogo,
-                src: K,
+                src: Y,
                 alt: U.name
               }), null != U.title && (0, r.jsxs)(u.X6q, {
                 variant: "heading-xxl/bold",

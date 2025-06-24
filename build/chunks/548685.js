@@ -46,7 +46,7 @@ let k = e => {
   } = (0, C.N)(a, B), H = (0, S.St)(R), M = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, o.e7)([p.Z], () => p.Z.isFocused()), V = !M && W, {
     animationPhase: U,
     startAnimation: G
-  } = (0, x.y)(), z = (0, h.sp)(), q = null != (t = null == z ? void 0 : z.sessionId) ? t : "", K = l.useRef(null), Y = l.useCallback(e => {
+  } = (0, x.y)(), z = (0, h.sp)(), q = null != (t = null == z ? void 0 : z.sessionId) ? t : "", Y = l.useRef(null), K = l.useCallback(e => {
     G({
       isShuffling: !1,
       onOutroComplete: () => A(e)
@@ -113,19 +113,19 @@ let k = e => {
             children: j.intl.string(j.t.uaX709)
           }), (0, r.jsx)(s.PhF, {
             options: Z,
-            select: Y,
+            select: K,
             className: P.sortSelect,
             isSelected: e => e === N,
             serialize: e => e
           })]
         }), I === E.AW.HOME && (w ? (0, r.jsx)(s.zxk, {
           color: s.Ttl.PRIMARY,
-          buttonRef: K,
+          buttonRef: Y,
           onClick: () => {
             G({
               isShuffling: !0,
               onOutroComplete: F,
-              returnRef: K
+              returnRef: Y
             }), f.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
               page_session_id: q
             })
