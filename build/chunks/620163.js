@@ -127,14 +127,14 @@ let eJ = () => {
       location: "SettingsRendererConfig"
     }).enabled && e.push(s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE), e.push(s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE), e
   },
-  e1 = () => {
+  e3 = () => {
     let e = e0(),
       [t] = (0, I.US)(e);
     return t === s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, i.jsx)(R.Z, {}) : t === s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE ? (0, i.jsx)(a.IGR, {
       text: eK.intl.string(eK.t.y2b7CA)
     }) : null
   },
-  e3 = eD.Z,
+  e1 = eD.Z,
   e8 = e => {
     let {
       unseenGiftCount: t,
@@ -312,7 +312,7 @@ let eJ = () => {
         label: eK.intl.string(eK.t["vi7f+v"]),
         ariaLabel: eK.intl.string(eK.t["vi7f+v"]),
         element: L.Z,
-        newIndicator: (0, i.jsx)(e1, {}),
+        newIndicator: (0, i.jsx)(e3, {}),
         newIndicatorDismissibleContentTypes: [...e0()],
         notice: {
           stores: [Y.Z, A.Z],
@@ -1461,7 +1461,7 @@ let eJ = () => {
         section: ez.oAB.LINUX,
         searchableTitles: [eK.intl.string(eK.t["7pPjTU"])],
         label: eK.intl.string(eK.t["7pPjTU"]),
-        element: e3,
+        element: e1,
         predicate: () => X.isPlatformEmbedded && (0, X.isLinux)()
       },
       [eF.s6.STREAMER_MODE]: {

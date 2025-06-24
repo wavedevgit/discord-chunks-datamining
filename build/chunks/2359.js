@@ -1,6 +1,6 @@
 /** Chunk was on 91372 **/
 n.d(t, {
-  Z: () => u
+  Z: () => m
 });
 var i = n(255367),
   r = n(73800),
@@ -9,17 +9,19 @@ var i = n(255367),
   a = n(639119),
   o = n(93237),
   c = n(702328),
-  d = n(474936);
-let u = e => {
+  d = n(346033),
+  u = n(474936);
+let m = e => {
   let {
     entrypoint: t
-  } = e, n = (0, a.N)(), u = (0, l.Ng)(), m = t === d.EZ.ApplicationStoreHome, g = (0, o.HI)({
+  } = e, n = (0, a.N)(), m = (0, l.Ng)(), g = (0, o.HI)({
     trialOffer: n
   });
-  return r.useEffect(() => {
-    !0 === g && (0, o.p9)(), (null != n || null != u) && (0, s.a)(n, u)
-  }, [n, u, g]), (0, i.jsx)(c.Z, {
-    isFullscreen: m,
+  return (r.useEffect(() => {
+    !0 === g && (0, o.p9)(), (null != n || null != m) && (0, s.a)(n, m)
+  }, [n, m, g]), t === u.EZ.UserSettings) ? (0, i.jsx)(d.Z, {
     entrypoint: t
-  })
+  }) : t === u.EZ.ApplicationStoreHome ? (0, i.jsx)(c.Z, {
+    entrypoint: t
+  }) : null
 }
