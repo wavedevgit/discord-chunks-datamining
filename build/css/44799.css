@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: b70921756b6e3121
+  Original File Name: 6a58f2a2fe0c0ac0
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -477,7 +477,8 @@
     z-index: 1
 }
 
-.content__6c253,.image__6c253 {
+.content__6c253 {
+    color: var(--header-primary);
     z-index: 2
 }
 
@@ -487,7 +488,8 @@
     height: 60px;
     object-fit: contain;
     object-position: center;
-    width: 110px
+    width: 110px;
+    z-index: 2
 }
 
 .boostIcon__6c253 {
@@ -655,4 +657,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=b70921756b6e3121.css.map*/
+/*# sourceMappingURL=6a58f2a2fe0c0ac0.css.map*/
