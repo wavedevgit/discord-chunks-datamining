@@ -1,0 +1,1 @@
+{"id":"116367","type":"experiment","data":{"kind":"user","id":"2025-06_qos_heartbeat","label":"Websocket QOS Heartbeat","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Send new QOS Heartbeat","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

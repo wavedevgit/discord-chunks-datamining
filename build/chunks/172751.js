@@ -90,7 +90,7 @@ let E = i.memo(function(e) {
           size: g,
           className: c
         }) : i, (0, r.jsx)("span", {
-          className: h.unselectable,
+          className: h.tagText,
           children: n
         })]
       })
