@@ -18,7 +18,7 @@ function d(e) {
     product: n,
     isDarkText: i = !1,
     isOrbExclusive: d = !1
-  } = e, m = (t = n.type, d ? c.intl.string(c.t["KUYR+P"]) : (0, l.EQ)(t).with(s.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(s.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOj)).otherwise(() => null));
+  } = e, m = (t = n.type, d ? c.intl.string(c.t["0TmQRE"]) : (0, l.EQ)(t).with(s.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(s.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOj)).otherwise(() => null));
   return null === m ? null : (0, r.jsx)(o.Text, {
     variant: "text-xxs/normal",
     className: a()([u.container, i ? u.darkText : u.lightText]),

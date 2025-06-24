@@ -130,10 +130,9 @@ function ep(e, t) {
 function eh(e) {
   let {
     children: t
-  } = e, n = i.useRef(null);
-  return (0, f.Tbt)(n), (0, r.jsx)("div", {
+  } = e;
+  return (0, r.jsx)("div", {
     className: el.popout,
-    ref: n,
     children: t
   })
 }

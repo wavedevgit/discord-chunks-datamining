@@ -1,6 +1,6 @@
 /** Chunk was on 84865 **/
 n.d(t, {
-  Z: () => D
+  Z: () => L
 }), n(388685), n(361932), n(187205), n(415506);
 var r = n(255367),
   i = n(73800),
@@ -24,16 +24,17 @@ var r = n(255367),
   C = n(709054),
   j = n(821020),
   E = n(370774),
-  S = n(862149),
-  x = n(739340),
-  I = n(207913),
-  P = n(553984),
-  N = n(333834),
-  w = n(982183),
-  Z = n(981631),
-  T = n(388032),
-  A = n(21678);
-let R = {
+  S = n(334426),
+  x = n(862149),
+  I = n(739340),
+  P = n(207913),
+  N = n(553984),
+  w = n(333834),
+  Z = n(982183),
+  T = n(981631),
+  A = n(388032),
+  R = n(21678);
+let D = {
   controller: new a.Controller({
     value: 1,
     immediate: !0
@@ -42,12 +43,12 @@ let R = {
   bannerVisible: !1,
   communityInfoVisible: !1,
   shouldShowSubscribeTooltip: !1,
-  bannerVisibleHeight: w.$J,
+  bannerVisibleHeight: Z.$J,
   hasGuildSubheader: !1,
   disableBannerAnimation: !0
 };
 
-function D(e) {
+function L(e) {
   var t, n;
   let {
     includePanelSpacing: l
@@ -64,12 +65,12 @@ function D(e) {
     guildFilter: b.Z.guildFilter,
     roleFilter: b.Z.roleFilter,
     everyoneFilter: b.Z.everyoneFilter
-  })), [g, E] = i.useState(w.V5.ALL), [S, I] = i.useState(w.xM.UNREAD), {
-    messages: T,
-    loadState: D,
-    loadMore: F,
-    hasLoadedEver: V
-  } = (0, x.ZP)(), H = function(e) {
+  })), [g, E] = i.useState(Z.V5.ALL), {
+    messages: S,
+    loadState: x,
+    loadMore: P,
+    hasLoadedEver: A
+  } = (0, I.ZP)(), L = function(e) {
     let [t, n] = (0, i.useState)(!0), [r, l] = (0, i.useState)(!1);
     return (0, h.ZP)(() => {
       let e = setTimeout(() => {
@@ -81,30 +82,30 @@ function D(e) {
     }), (0, i.useEffect)(() => {
       t && r && e && n(!1)
     }, [e, t, r]), t
-  }(V && f && !p && D !== x.jd.Loading);
+  }(A && f && !p && x !== I.jd.Loading);
   (0, i.useEffect)(() => {
-    if (!f) return void L(null)
+    if (!f) return void M(null)
   }, [f]);
-  let z = (0, c.e7)([y.default], () => y.default.getCurrentUser()),
-    W = (0, c.e7)([_.Z], () => _.Z.getSavedMessages()),
-    K = i.useMemo(() => {
+  let V = (0, c.e7)([y.default], () => y.default.getCurrentUser()),
+    H = (0, c.e7)([_.Z], () => _.Z.getSavedMessages()),
+    z = i.useMemo(() => {
       var e;
-      if (!V) return null;
-      if (g === w.V5.BOOKMARKS) return W.flatMap(e => {
+      if (!A) return null;
+      if (g === Z.V5.BOOKMARKS) return H.flatMap(e => {
         let {
           message: t
         } = e;
         return null != t ? [{
-          kind: w.fL.BOOKMARK,
+          kind: Z.fL.BOOKMARK,
           message: t
         }] : []
       });
       let t = (0, s.uniqBy)([...null != (e = null == a ? void 0 : a.map(e => ({
-        kind: w.fL.MENTION,
+        kind: Z.fL.MENTION,
         message: e
-      }))) ? e : [], ...T.filter(e => e.author.id !== (null == z ? void 0 : z.id)).map(e => ({
+      }))) ? e : [], ...S.filter(e => e.author.id !== (null == V ? void 0 : V.id)).map(e => ({
         message: e,
-        kind: w.fL.ALL_MESSAGES_CHANNEL
+        kind: Z.fL.ALL_MESSAGES_CHANNEL
       }))], e => {
         let {
           message: t
@@ -114,33 +115,32 @@ function D(e) {
         let {
           message: t
         } = e;
-        return t.author.id !== (null == z ? void 0 : z.id) && C.default.age(t.id) < w.ib
+        return t.author.id !== (null == V ? void 0 : V.id) && C.default.age(t.id) < Z.ib
       });
-      if (g === w.V5.ALL) return t;
-      if (g === w.V5.ANNOUNCEMENTS) return null == t ? void 0 : t.filter(e => {
+      if (g === Z.V5.ALL) return t;
+      if (g === Z.V5.ANNOUNCEMENTS) return null == t ? void 0 : t.filter(e => {
         let {
           message: t
         } = e, n = O.Z.getChannel(t.channel_id);
-        return (null == n ? void 0 : n.type) === Z.d4z.GUILD_ANNOUNCEMENT
+        return (null == n ? void 0 : n.type) === T.d4z.GUILD_ANNOUNCEMENT
       });
-      if (g === w.V5.MENTIONS) return null == t ? void 0 : t.filter(e => {
+      if (g === Z.V5.MENTIONS) return null == t ? void 0 : t.filter(e => {
         let {
           message: t
         } = e;
-        return (null == z ? void 0 : z.id) != null && t.mentioned && t.mentions.includes(null == z ? void 0 : z.id)
+        return (null == V ? void 0 : V.id) != null && t.mentioned && t.mentions.includes(null == V ? void 0 : V.id)
       });
       throw Error("Unknown filter: ".concat(g))
-    }, [g, a, z, W, T, V]),
-    Y = S === w.xM.READ && !H,
+    }, [g, a, V, H, S, A]),
     {
-      filterStyle: q
+      filterStyle: W
     } = j.Lk.useExperiment({
       location: "NotificationsInboxSidebar"
     }),
-    X = q === j.v8.DROPDOWN && g !== w.V5.ALL;
+    K = W === j.v8.DROPDOWN && g !== Z.V5.ALL;
   return (0, r.jsxs)("nav", {
-    className: o()(A.container, {
-      [A.panelSpacing]: l
+    className: o()(R.container, {
+      [R.panelSpacing]: l
     }),
     children: [(0, r.jsx)(m.ZP, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -161,19 +161,19 @@ function D(e) {
       return e
     }({
       hasSubheader: !0,
-      guild: w.F7
-    }, R), n = n = {
+      guild: Z.F7
+    }, D), n = n = {
       children: (0, r.jsxs)(u.Kqy, {
         direction: "horizontal",
         gap: 4,
         style: {
           marginRight: -4
         },
-        children: [q === j.v8.DROPDOWN && (0, r.jsx)(P.p, {
+        children: [W === j.v8.DROPDOWN && (0, r.jsx)(N.p, {
           selectedFilter: g,
           setSelectedFilter: E,
-          className: A.headerButton
-        }), (0, r.jsx)(B, {})]
+          className: R.headerButton
+        }), (0, r.jsx)(F, {})]
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -184,45 +184,44 @@ function D(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), q === j.v8.TABS && (0, r.jsx)(P.Z, {
+    }), t)), W === j.v8.TABS && (0, r.jsx)(N.Z, {
       selectedFilter: g,
       setSelectedFilter: E
-    }), g === w.V5.ALL && (0, r.jsx)(U, {
-      canShow: Y
-    }), X && (0, r.jsx)(G, {
+    }), g === Z.V5.ALL && (0, r.jsx)(G, {
+      hideBanner: L || g !== Z.V5.ALL
+    }), K && (0, r.jsx)(B, {
       filter: g
-    }), (0, r.jsx)(N.Z, {
-      className: A.messageList,
-      renderMessageGroup: k,
-      messages: K,
-      loadingInitial: H,
-      loadingMore: D === x.jd.Loading || p,
+    }), (0, r.jsx)(w.Z, {
+      className: R.messageList,
+      renderMessageGroup: U,
+      messages: z,
+      loadingInitial: L,
+      loadingMore: x === I.jd.Loading || p,
       listName: "notifications-inbox",
       loadMore: function(e) {
         let t = null != a && a.length > 0 ? a[a.length - 1].id : null;
-        [w.V5.ALL, w.V5.MENTIONS, w.V5.ANNOUNCEMENTS].includes(g) && d && !p && L(null, t), [w.V5.ALL, w.V5.ANNOUNCEMENTS].includes(g) && D !== x.jd.Done && D !== x.jd.Loading && F(e)
+        [Z.V5.ALL, Z.V5.MENTIONS, Z.V5.ANNOUNCEMENTS].includes(g) && d && !p && M(null, t), [Z.V5.ALL, Z.V5.ANNOUNCEMENTS].includes(g) && x !== I.jd.Done && x !== I.jd.Loading && P(e)
       },
-      renderLoadingState: M,
-      setInboxReadState: I,
-      ignoreGrouping: g !== w.V5.ALL
+      renderLoadingState: k,
+      ignoreGrouping: g !== Z.V5.ALL
     })]
   })
 }
 
-function L(e, t) {
+function M(e, t) {
   let n = b.Z.guildFilter,
     r = b.Z.roleFilter,
     i = b.Z.everyoneFilter,
     l = null;
-  null != e && null != n && (l = n === Z.NgX.ALL_SERVERS ? null : e.getGuildId()), d.Z.fetchRecentMentions(t, Z.DJj, l, r, i)
+  null != e && null != n && (l = n === T.NgX.ALL_SERVERS ? null : e.getGuildId()), d.Z.fetchRecentMentions(t, T.DJj, l, r, i)
 }
 
-function M() {
-  return (0, r.jsx)(S.Z, {})
+function k() {
+  return (0, r.jsx)(x.Z, {})
 }
 
-function k(e, t, n) {
-  return (0, r.jsx)(I.Z, {
+function U(e, t, n) {
+  return (0, r.jsx)(P.Z, {
     message: e[0],
     goToSidebar: t,
     groupedMessages: e.slice(1),
@@ -230,53 +229,53 @@ function k(e, t, n) {
   }, e[0].id)
 }
 
-function U(e) {
+function G(e) {
   let {
-    canShow: t
-  } = e, [n, l] = i.useState(!1), [s, a] = i.useState(!1), c = s ? u.kSu : u.kmB;
+    hideBanner: t
+  } = e, [n, l] = i.useState(!1), s = (0, c.e7)([S.Z], () => S.Z.shouldHide), a = n ? u.kSu : u.kmB;
   return (0, r.jsx)(u.P3F, {
-    onClick: () => l(!0),
-    onMouseEnter: () => a(!0),
-    onMouseLeave: () => a(!1),
-    className: o()(A.caughtUpContainer, {
-      [A.hide]: !(!n && t)
+    onClick: () => S.Z.dismiss(),
+    onMouseEnter: () => l(!0),
+    onMouseLeave: () => l(!1),
+    className: o()(R.caughtUpContainer, {
+      [R.hide]: s || t
     }),
     children: (0, r.jsxs)("div", {
-      className: A.caughtUpContent,
+      className: R.caughtUpContent,
       children: [(0, r.jsx)(u.Text, {
-        variant: s ? "text-sm/medium" : "text-sm/normal",
+        variant: n ? "text-sm/medium" : "text-sm/normal",
         color: "text-positive",
-        className: A.caughtUpText,
-        children: T.intl.string(T.t["6XMM+P"])
-      }), (0, r.jsx)(c, {
+        className: R.caughtUpText,
+        children: A.intl.string(A.t["6XMM+P"])
+      }), (0, r.jsx)(a, {
         size: "sm",
-        className: A.caughtUpIcon,
+        className: R.caughtUpIcon,
         color: g.Z.TEXT_FEEDBACK_POSITIVE
       })]
     })
   })
 }
 
-function G(e) {
+function B(e) {
   let {
     filter: t
   } = e;
   return (0, r.jsx)(u.X6q, {
     color: "text-primary",
     variant: "text-sm/semibold",
-    className: A.filterHeaderWrap,
-    children: w.by[t]
+    className: R.filterHeaderWrap,
+    children: Z.by[t]
   }, "filter-header")
 }
 
-function B() {
+function F() {
   let [e, t] = (0, i.useState)(!1), {
     analyticsLocations: n
   } = (0, f.ZP)(p.Z.NOTIFICATIONS_INBOX);
   return (0, r.jsx)(u.ua7, {
     position: "bottom",
     align: "left",
-    text: T.intl.string(T.t.h850Sk),
+    text: A.intl.string(A.t.h850Sk),
     shouldShow: e,
     forceOpen: e,
     hideOnClick: !0,
@@ -285,7 +284,7 @@ function B() {
         onClick: l
       } = i;
       return (0, r.jsx)(u.P3F, {
-        className: A.headerButton,
+        className: R.headerButton,
         onMouseEnter: () => t(!0),
         onMouseLeave: () => t(!1),
         onClick: () => {

@@ -49,8 +49,8 @@ var r = n(255367),
   K = n(228624),
   q = n(635552),
   Y = n(83479),
-  X = n(290175),
-  Q = n(905357),
+  Q = n(290175),
+  X = n(905357),
   J = n(724994),
   $ = n(328456),
   ee = n(390698),
@@ -268,7 +268,7 @@ let eT = {
       {
         isDisabled: B,
         disabledReason: D
-      } = (0, X.G)(N.skuId),
+      } = (0, Q.G)(N.skuId),
       M = (0, V.ne)({
         product: N,
         isPartiallyOwnedBundle: Z,
@@ -293,7 +293,7 @@ let eT = {
       }),
       ev = (0, K.hv)("CollectiblesProductPreviewInfo"),
       ex = (0, k.v)("CollectiblesProductPreviewInfo"),
-      eg = (0, Q.T)(N),
+      eg = (0, X.T)(N),
       {
         enabled: eT
       } = (0, L.WX)({
