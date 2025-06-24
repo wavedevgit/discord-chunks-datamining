@@ -1,8 +1,8 @@
 /** Chunk was on 88712 **/
 n.d(t, {
-  GY: () => O,
-  PI: () => f,
-  RT: () => m,
+  GY: () => m,
+  PI: () => p,
+  RT: () => O,
   ls: () => g
 });
 var r = n(255367);
@@ -34,7 +34,7 @@ function d(e) {
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,7 +47,7 @@ function p(e, t) {
   }), e
 }
 
-function f(e) {
+function p(e) {
   let {
     children: t
   } = e;
@@ -68,7 +68,7 @@ function g(e) {
   return (0, r.jsx)(a.ua7, {
     text: n,
     "aria-label": n,
-    children: e => (0, r.jsx)(a.P3F, p(d({}, e), {
+    children: e => (0, r.jsx)(a.P3F, f(d({}, e), {
       className: u.button,
       onClick: t,
       children: (0, r.jsx)(a.ewm, {
@@ -79,11 +79,11 @@ function g(e) {
   })
 }
 
-function O(e) {
+function m(e) {
   let {
     widgetId: t,
     showAllStreams: n
-  } = e, i = n ? c.intl.string(c.t.q2B3rq) : c.intl.string(c.t.JKGi6u), f = () => {
+  } = e, i = n ? c.intl.string(c.t.q2B3rq) : c.intl.string(c.t.JKGi6u), p = () => {
     (0, s.zG)(t, {
       showAllStreams: !n
     })
@@ -91,9 +91,9 @@ function O(e) {
   return (0, r.jsx)(a.ua7, {
     text: i,
     "aria-label": i,
-    children: e => (0, r.jsx)(a.P3F, p(d({}, e), {
+    children: e => (0, r.jsx)(a.P3F, f(d({}, e), {
       className: l()(u.button, n && u.active),
-      onClick: f,
+      onClick: p,
       children: (0, r.jsx)(a.pzj, {
         size: "xxs",
         color: n ? o.Z.colors.BG_BRAND : o.Z.colors.INTERACTIVE_ACTIVE
@@ -102,7 +102,7 @@ function O(e) {
   })
 }
 
-function m(e) {
+function O(e) {
   let {
     id: t,
     pinned: n
@@ -110,7 +110,7 @@ function m(e) {
   return (0, r.jsx)(a.ua7, {
     text: i,
     "aria-label": i,
-    children: e => (0, r.jsx)(a.P3F, p(d({}, e), {
+    children: e => (0, r.jsx)(a.P3F, f(d({}, e), {
       className: l()(u.button, n && u.active),
       onClick: () => (0, s.xh)(t),
       children: (0, r.jsx)(a.k5M, {

@@ -26,8 +26,8 @@ var i = n(120356),
   S = n(719216),
   x = n(429589),
   I = n(636245),
-  P = n(697761),
-  C = n(611459),
+  C = n(697761),
+  P = n(611459),
   E = n(544671),
   w = n(757182),
   T = n(910424),
@@ -35,8 +35,8 @@ var i = n(120356),
   Z = n(477839),
   A = n(388032),
   D = n(603571),
-  k = n(126485);
-let L = e => {
+  L = n(126485);
+let k = e => {
     let {
       user: t,
       color: n,
@@ -105,7 +105,7 @@ let L = e => {
         return n
       })(Object(H)).forEach(function(e) {
         Object.defineProperty(G, e, Object.getOwnPropertyDescriptor(H, e))
-      }), t = G, (0, r.jsx)(L, {
+      }), t = G, (0, r.jsx)(k, {
         user: i,
         color: R,
         look: F,
@@ -119,7 +119,7 @@ let L = e => {
       align: p.Z.Align.STRETCH,
       direction: z,
       wrap: J ? p.Z.Wrap.WRAP : p.Z.Wrap.NO_WRAP,
-      className: l()(u, k.buttonsWrapper, J ? k.vertical : k.horizontal),
+      className: l()(u, L.buttonsWrapper, J ? L.vertical : L.horizontal),
       children: (() => {
         if ((0, y.Z)(t)) return (0, r.jsx)(j.Z, {
           platform: d.Z.get(N.ABu.XBOX),
@@ -146,7 +146,7 @@ let L = e => {
               color: R,
               onAction: V
             }, "spotify-activity-sync-button"),
-            n = (0, r.jsx)(C.Z, {
+            n = (0, r.jsx)(P.Z, {
               activity: t,
               user: i,
               source: M,
@@ -187,7 +187,7 @@ let L = e => {
             color: R,
             look: F,
             onAction: V
-          }, "join-activity-button"), (0, r.jsx)(P.Z, {
+          }, "join-activity-button"), (0, r.jsx)(C.Z, {
             activity: t,
             user: i,
             color: R,

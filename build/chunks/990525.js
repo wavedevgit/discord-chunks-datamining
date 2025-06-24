@@ -1,6 +1,6 @@
 /** Chunk was on 86350 **/
 n.d(t, {
-  J: () => P
+  J: () => C
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -55,27 +55,27 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = e => {
+let C = e => {
   let {
     voiceFilter: t,
     hasNitro: n,
     analyticsContext: l
   } = e, {
-    activeVoice: P,
-    mostRecentlyRequestedVoiceId: C
-  } = (0, h.o)(), E = (0, v.z)(t.id), w = t.id === P, T = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !w, Z = !w && t.id === C, [A, D] = i.useState(!1);
+    activeVoice: C,
+    mostRecentlyRequestedVoiceId: P
+  } = (0, h.o)(), E = (0, v.z)(t.id), w = t.id === C, T = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !w, Z = !w && t.id === P, [A, D] = i.useState(!1);
   i.useEffect(() => {
     let e = Z ? setTimeout(() => D(Z), 200) : void 0;
     return () => {
       clearTimeout(e), D(!1)
     }
   }, [Z]);
-  let k = (0, _.J_)({
+  let L = (0, _.J_)({
       location: "voice_filter_item",
       autoTrackExposure: !0,
       disable: !p.ZP.canCheckVoiceFilterFilesExist()
     }),
-    L = (0, o.e7)([b.Z], () => b.Z.isVoiceFilterDownloaded(t.id), [t]),
+    k = (0, o.e7)([b.Z], () => b.Z.isVoiceFilterDownloaded(t.id), [t]),
     M = null == E ? void 0 : E.previewSoundURLs,
     [R, F] = i.useState(0),
     {
@@ -88,10 +88,10 @@ let P = e => {
     }),
     W = S[t.styleKey],
     z = i.useCallback(() => {
-      n || !T ? ((0, m.v6)(P === t.id ? null : t.id, l), N && f.default.track(y.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, x({
+      n || !T ? ((0, m.v6)(C === t.id ? null : t.id, l), N && f.default.track(y.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, x({
         voice_filter_id: t.id
       }, (0, g.w)(l)))) : (0, u.i)()
-    }, [n, T, P, t.id, l, N]),
+    }, [n, T, C, t.id, l, N]),
     G = i.useCallback(() => {
       f.default.track(y.rMx.VOICE_FILTER_PREVIEW_PLAYED, x({
         voice_filter_id: t.id
@@ -107,7 +107,7 @@ let P = e => {
       [S.locked]: T && !w
     }),
     children: [(0, r.jsx)(c.ua7, {
-      shouldShow: k && !L,
+      shouldShow: L && !k,
       "aria-label": j.intl.string(j.t.SQ7qMD),
       text: (0, r.jsxs)("div", {
         className: S.downloadRequiredContent,
@@ -187,7 +187,7 @@ let P = e => {
             variant: "text-xs/medium",
             color: t.underDevelopment ? "header-muted" : "header-primary",
             children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", H]
-          }), k && !L ? (0, r.jsx)(c._8t, {
+          }), L && !k ? (0, r.jsx)(c._8t, {
             size: "xxs"
           }) : null]
         })]

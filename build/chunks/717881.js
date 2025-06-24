@@ -112,7 +112,7 @@ let O = o.Z.Types,
         return (0, a.Z)(t, _.xjy.EMBEDDED) ? p.Z.getGuild(null == (e = f.Z.getChannel(null == (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) ? void 0 : r.channelId)) ? void 0 : e.getGuildId()) : null
       }),
       I = (0, i.e7)([p.Z], () => null != S ? p.Z.getGuild(S.guildId) : null),
-      P = (0, i.e7)([c.Z], () => {
+      C = (0, i.e7)([c.Z], () => {
         if (null != t)
           if (null != t.application_id) return c.Z.getApplication(t.application_id);
           else return c.Z.getApplicationByName(t.name);
@@ -121,7 +121,7 @@ let O = o.Z.Types,
     return (null == t ? void 0 : t.type) === _.IIU.HANG_STATUS ? null : (0, r.jsx)(o.Z, h(v({}, O), {
       activity: t,
       user: n,
-      application: P,
+      application: C,
       hideHeader: g,
       activityGuild: null != x ? x : I,
       showChannelDetails: b,

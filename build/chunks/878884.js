@@ -1,6 +1,6 @@
 /** Chunk was on 86350 **/
 n.d(t, {
-  Z: () => C
+  Z: () => P
 }), n(388685);
 var r, i, l, a = n(442837),
   o = n(46973),
@@ -66,7 +66,7 @@ function x() {
 function I() {
   h.clear(), y.clear(), O.clear()
 }
-class P extends(r = a.ZP.Store) {
+class C extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(g.Z, m.default, f.Z, p.Z), this.syncWith([m.default], x)
   }
@@ -83,13 +83,13 @@ class P extends(r = a.ZP.Store) {
     return y.values()
   }
 }
-l = "RTCConnectionDesyncStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
+l = "RTCConnectionDesyncStore", (i = "displayName") in C ? Object.defineProperty(C, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : P[i] = l;
-let C = new P(s.Z, {
+}) : C[i] = l;
+let P = new C(s.Z, {
   CONNECTION_OPEN: function() {
     I()
   },

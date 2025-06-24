@@ -27,7 +27,7 @@ class u extends(r = l.PureComponent) {
         className: u,
         forceHover: d
       } = n,
-      p = function(e, t) {
+      f = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -53,7 +53,7 @@ class u extends(r = l.PureComponent) {
         })
       }
       return e
-    }({}, p), t = t = {
+    }({}, f), t = t = {
       className: a()(u, s.hoverRoll, {
         [s.disabled]: null == o,
         [s.forceHover]: d

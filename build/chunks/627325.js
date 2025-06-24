@@ -29,7 +29,7 @@ function j(e) {
     voiceListRef: i,
     showSectionHeaders: l = !1,
     query: a
-  } = e, o = x(), j = (0, s.e7)([f.default], () => (0, p.I5)(f.default.getCurrentUser())), I = P(a, j), C = Math.ceil(I.length / t), {
+  } = e, o = x(), j = (0, s.e7)([f.default], () => (0, p.I5)(f.default.getCurrentUser())), I = C(a, j), P = Math.ceil(I.length / t), {
     isNativeModuleLoaded: E,
     isNativeModuleLoading: w,
     catalogLastFetchTime: T
@@ -86,7 +86,7 @@ function j(e) {
           hasNitro: j,
           analyticsContext: {
             reason: m.W.USER_SELECTION,
-            gridRows: C,
+            gridRows: P,
             gridColumns: t,
             interactedRow: e,
             interactedColumn: i
@@ -101,7 +101,7 @@ function j(e) {
       children: v.intl.string(O[e])
     }),
     sectionHeaderHeight: !1 === l ? void 0 : e => y[e],
-    rowCount: C,
+    rowCount: P,
     rowHeight: 130,
     onScroll: n,
     ref: i,
@@ -135,7 +135,7 @@ let x = () => (0, s.e7)([g.Z], () => {
       return a()(n, r)
     })
   },
-  P = (e, t) => (0, s.Wu)([g.Z], () => {
+  C = (e, t) => (0, s.Wu)([g.Z], () => {
     let n = g.Z.getVoiceFilters(),
       r = g.Z.getSortedVoiceFilters();
     return I(t ? Object.values(n) : r, e)

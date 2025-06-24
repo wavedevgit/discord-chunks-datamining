@@ -1,6 +1,6 @@
 /** Chunk was on 86350 **/
 n.d(t, {
-  f: () => P
+  f: () => C
 });
 var r = n(475179),
   i = n(904245),
@@ -25,7 +25,7 @@ var r = n(475179),
   S = n(451478),
   x = n(585483),
   I = n(981631);
-let P = {
+let C = {
   binds: ["esc", "shift+pagedown"],
   comboKeysBindGlobal: !0,
   action(e) {
@@ -44,7 +44,7 @@ let P = {
       l = g.Z.getChannel(i),
       s = m.ZP.getSection(i, null == l ? void 0 : l.isDM()) === I.ULH.SIDEBAR_CHAT ? m.ZP.getSidebarState(i) : null,
       c = (null == s ? void 0 : s.type) === d.tI.VIEW_THREAD || (null == s ? void 0 : s.type) === d.tI.VIEW_CHANNEL ? s.channelId : null;
-    if (!1 === C(i) || !1 === C(c)) return !1;
+    if (!1 === P(i) || !1 === P(c)) return !1;
     if (null != i && (null == s ? void 0 : s.type) === d.tI.CREATE_THREAD) return u.Z.closeChannelSidebar(i), !1;
     let f = E(i),
       p = E(c);
@@ -52,7 +52,7 @@ let P = {
   }
 };
 
-function C(e) {
+function P(e) {
   if (null != e) {
     if (b.Z.isEditingAny(e)) return i.Z.endEditMessage(e), !1;
     if (null != c.Z.getPendingReply(e)) return (0, s.A6)(e), !1;
