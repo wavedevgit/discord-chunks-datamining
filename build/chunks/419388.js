@@ -100,7 +100,7 @@ class j {
       scrollHeight: t,
       offsetHeight: n
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this.getScrollerState();
-    return e >= t - n - _.kQ && !this.props.messages.hasMoreAfter
+    return e >= t - n - 2 && !this.props.messages.hasMoreAfter
   }
   mergePropsAndUpdate(e) {
     this.mergePropsAndUpdate_(e), this.props.messages.ready && this.enableAutomaticAck()

@@ -1,6 +1,6 @@
 /**
   Module ID: 84865
-  Original File Name: bed2798e5636c7fb
+  Original File Name: c4dad652730a7c90
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -3926,6 +3926,24 @@ div:has(>.positionLayer__4f4b6) {
     width: 0
 }
 
+.align-chat-input .wrapper_ef3116 {
+    margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) - 16px);
+    -webkit-mask: linear-gradient(180deg,#000 0,#000 calc(100% - 16px),transparent);
+    mask: linear-gradient(180deg,#000 0,#000 calc(100% - 16px),transparent)
+}
+
+.align-chat-input .scroller_ef3116 {
+    padding-bottom: calc(var(--space-xs, 8px) + 16px)
+}
+
+.align-chat-input .unreadMentionsFixedFooter_ef3116,.align-chat-input .unreadMentionsIndicatorBottom_ef3116 {
+    bottom: 16px
+}
+
+.align-chat-input .unreadMentionsFixedFooterBottomNotifCenterEntrypoint_ef3116 {
+    bottom: 76px
+}
+
 .refresh-fast-follow-guild-bg .wrapper_ef3116 {
     background-color: var(--app-background-frame)
 }
@@ -4927,6 +4945,14 @@ div:has(>.positionLayer__4f4b6) {
 
 .refresh-fast-follow-distinct-borders .sectionDivider__629e4 {
     background-color: var(--app-border-frame)
+}
+
+.align-chat-input .scroller__629e4 {
+    padding-bottom: 16px
+}
+
+.align-chat-input .scroller__629e4::-webkit-scrollbar-track {
+    margin-bottom: 16px
 }
 
 .newChannel__599fa {
@@ -6831,6 +6857,17 @@ div:has(>.positionLayer__4f4b6) {
     border-color: ButtonText
 }
 
+.align-chat-input .scroller__99e7c {
+    margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) - 16px);
+    -webkit-mask: linear-gradient(180deg,#000 0,#000 calc(100% - 16px),transparent);
+    mask: linear-gradient(180deg,#000 0,#000 calc(100% - 16px),transparent);
+    padding-bottom: 16px
+}
+
+.align-chat-input .scroller__99e7c::-webkit-scrollbar-track {
+    margin-bottom: 16px
+}
+
 .tile_ba65b0 {
     height: 100%;
     width: 100%
@@ -7077,10 +7114,10 @@ div:has(>.positionLayer__4f4b6) {
     background: linear-gradient(0deg,var(--color-background-feedback-positive,rgba(0,134,58,.08)) 0,var(--color-background-feedback-positive,rgba(0,134,58,.08)) 100%),var(--color-background-mod-faint,hsla(240,4%,61%,.04));
     border-radius: 8px;
     box-shadow: inset 0 0 0 1px var(--color-border-faint,hsla(240,4%,61%,.04));
-    height: 20px;
+    height: 18px;
     margin-right: 8px;
-    padding: 6px;
-    width: 20px
+    padding: 7px;
+    width: 18px
 }
 
 .rtcConnectionStatus__06d62 {
@@ -7525,4 +7562,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=bed2798e5636c7fb.css.map*/
+/*# sourceMappingURL=c4dad652730a7c90.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 16703
-  Original File Name: e2bb75181effafe5
+  Original File Name: 21d6462616991363
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -7201,7 +7201,12 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .align-chat-input .scrollerContent__36d07 {
-    padding-bottom: 12px
+    padding-bottom: 24px
+}
+
+.align-chat-input .messagesWrapper__36d07 {
+    -webkit-mask: linear-gradient(180deg,#000 0,#000 calc(100% - 16px),transparent);
+    mask: linear-gradient(180deg,#000 0,#000 calc(100% - 16px),transparent)
 }
 
 .scroller__36d07 {
@@ -7221,7 +7226,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .align-chat-input .scroller__36d07::-webkit-scrollbar-track {
-    margin-bottom: 24px
+    margin-bottom: 32px
 }
 
 .scrollerInner__36d07 {
@@ -7432,12 +7437,12 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin-top: unset
 }
 
-.visual-refresh.align-chat-input .buttonContainer_e6e74f:hover {
+.align-chat-input .buttonContainer_e6e74f:hover {
     background-color: var(--background-modifier-selected);
     border-radius: 8px
 }
 
-.visual-refresh.align-chat-input .entrypointAnimation_e6e74f .buttonContainer_e6e74f:hover {
+.align-chat-input .entrypointAnimation_e6e74f .buttonContainer_e6e74f:hover {
     background-color: transparent
 }
 
@@ -7775,6 +7780,12 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin-right: 16px
 }
 
+.align-chat-input .wrapper__44df5 {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 12px 0
+}
+
 .animationMiddle__8177b {
     height: 262px;
     left: 90px;
@@ -7950,6 +7961,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .refresh-fast-follow-distinct-borders .chat_f75fb0.threadSidebarOpen_f75fb0 {
     border-right-color: var(--app-border-frame)
+}
+
+.align-chat-input .form_f75fb0 {
+    margin-top: -16px
 }
 
 .chat_f75fb0 {
@@ -13084,4 +13099,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=e2bb75181effafe5.css.map*/
+/*# sourceMappingURL=21d6462616991363.css.map*/

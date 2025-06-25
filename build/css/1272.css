@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: bb8ce6ff8f3b1301
+  Original File Name: 4a76186e8fdea782
 **/
 .container__74da2 {
     align-items: center;
@@ -2045,6 +2045,12 @@
 
 .enable-forced-colors .container__2637a {
     background-color: ButtonFace
+}
+
+.align-chat-input .container__2637a {
+    -webkit-mask: linear-gradient(180deg,#000 0,#000 calc(100% - 16px),transparent);
+    mask: linear-gradient(180deg,#000 0,#000 calc(100% - 16px),transparent);
+    padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) - 16px)
 }
 
 .container_e88f3f {
@@ -8516,4 +8522,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=bb8ce6ff8f3b1301.css.map*/
+/*# sourceMappingURL=4a76186e8fdea782.css.map*/
