@@ -1,6 +1,6 @@
 /**
   Module ID: 3490
-  Original File Name: adb98701052958b4
+  Original File Name: 7a5a9b93f5d8606b
 **/
 .tooltipTextContainer__0ca35 {
     align-items: center;
@@ -2527,7 +2527,7 @@ html .progress__61462 {
 }
 
 .custom-theme-background .embedFull__623de {
-    background-color: var(--background-mod-faint)
+    background-color: var(--background-mod-subtle)
 }
 
 .hiddenEmbed__623de.isHidden__623de {
@@ -4842,6 +4842,10 @@ html .progress__61462 {
     position: absolute;
     top: 0;
     width: 4px
+}
+
+.custom-theme-background .container__60fa3 {
+    background-color: var(--background-mod-subtle)
 }
 
 .markdownContainer__48344 {
@@ -11132,4 +11136,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=adb98701052958b4.css.map*/
+/*# sourceMappingURL=7a5a9b93f5d8606b.css.map*/

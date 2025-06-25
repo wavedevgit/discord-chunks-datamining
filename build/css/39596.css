@@ -1,6 +1,6 @@
 /**
   Module ID: 39596
-  Original File Name: 02fd2200b1b87eee
+  Original File Name: 25a3f423ebbf2d1d
 **/
 .container__4216d {
     align-items: center;
@@ -1051,6 +1051,10 @@
     width: 4px
 }
 
+.custom-theme-background .container__60fa3 {
+    background-color: var(--background-mod-subtle)
+}
+
 .markdownContainer__48344 {
     overflow-wrap: anywhere
 }
@@ -1264,4 +1268,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=02fd2200b1b87eee.css.map*/
+/*# sourceMappingURL=25a3f423ebbf2d1d.css.map*/
