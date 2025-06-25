@@ -156,7 +156,7 @@ let A = i.forwardRef((e, t) => {
     focusTarget: W,
     children: (0, r.jsxs)("div", I(O({
       ref: t,
-      className: o()(g.imageWrapper, {
+      className: o()("imageWrapper", g.imageWrapper, {
         [g.imageZoom]: k,
         [g.imageWrapperBackground]: c !== p.zo9.READY,
         [g.clickable]: null != G

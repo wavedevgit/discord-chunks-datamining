@@ -428,7 +428,6 @@ class e8 extends(r = l.Component) {
           autoPlayGif: n,
           canRemoveItem: r && (d.length > 1 || "" !== e.content),
           onRemoveItem: this.handleRemoveAttachment,
-          className: eq.embedWrapper,
           getObscureReason: _,
           onContextMenu: null != a ? e => {
             e.stopPropagation(), e.preventDefault(), a(e, o)
@@ -738,7 +737,6 @@ class e8 extends(r = l.Component) {
       return e.type === eW.hBH.GIFT ? null : (0, i.jsx)(A.h.Provider, {
         value: e5(e.url, e.image, e.video),
         children: (0, i.jsx)(C.ZP, eJ({
-          className: eq.embedWrapper,
           embed: e,
           obscureReason: null != m ? m : void 0,
           autoPlayGif: l,

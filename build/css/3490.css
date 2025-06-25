@@ -1,6 +1,6 @@
 /**
   Module ID: 3490
-  Original File Name: a025d2fafd4d1372
+  Original File Name: adb98701052958b4
 **/
 .tooltipTextContainer__0ca35 {
     align-items: center;
@@ -7946,7 +7946,7 @@ html .progress__61462 {
     transition: transform .2s ease,opacity .1s ease
 }
 
-.embedWrapper_b7e1cb:focus-within .gifFavoriteButton_b7e1cb,.embedWrapper_b7e1cb:hover .gifFavoriteButton_b7e1cb {
+.imageWrapper:focus-within .gifFavoriteButton_b7e1cb,.imageWrapper:hover .gifFavoriteButton_b7e1cb {
     opacity: 1;
     transform: translateY(0)
 }
@@ -11132,4 +11132,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=a025d2fafd4d1372.css.map*/
+/*# sourceMappingURL=adb98701052958b4.css.map*/
