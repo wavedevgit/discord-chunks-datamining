@@ -4,10 +4,10 @@ n.d(t, {
 }), n(388685);
 var i, r = n(255367),
   s = n(73800),
-  o = n(796075),
-  a = n(695469),
+  a = n(796075),
+  o = n(695469),
   l = n(481060);
-let u = null != (i = window.ResizeObserver) ? i : o.d,
+let u = null != (i = window.ResizeObserver) ? i : a.d,
   d = () => {
     let e = s.useRef(null),
       [t, n] = s.useState(0),
@@ -28,7 +28,7 @@ function c(e) {
     top: i = 0,
     bottom: s = 0
   } = e, {
-    ref: o,
+    ref: a,
     height: u
   } = d(), c = (0, l.q_F)({
     from: {
@@ -45,7 +45,7 @@ function c(e) {
       tension: 170,
       friction: 26
     }
-  }), g = (0, l.q_F)({
+  }), m = (0, l.q_F)({
     from: {
       opacity: 0
     },
@@ -57,18 +57,18 @@ function c(e) {
       easing: t ? e => e ** 4 : e => e * (2 - e)
     }
   });
-  return (0, r.jsx)(a.animated.div, {
+  return (0, r.jsx)(o.animated.div, {
     style: {
       overflow: "hidden",
       height: c.height,
       paddingBottom: c.paddingBottom,
       marginTop: c.marginTop
     },
-    children: (0, r.jsx)(a.animated.div, {
+    children: (0, r.jsx)(o.animated.div, {
       style: {
-        opacity: g.opacity
+        opacity: m.opacity
       },
-      ref: o,
+      ref: a,
       children: n
     })
   })

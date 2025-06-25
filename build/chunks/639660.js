@@ -9,8 +9,8 @@ var r = t(255367),
   s = t(243778),
   l = t(430824),
   c = t(618460),
-  u = t(800869),
-  d = t(309945),
+  d = t(800869),
+  u = t(309945),
   p = t(981631),
   m = t(93841),
   _ = t(388032),
@@ -32,10 +32,10 @@ function b(e) {
   } = e, t = (0, o.e7)([l.Z], () => {
     var e;
     return (null == (e = l.Z.getGuild(n)) ? void 0 : e.hasFeature(p.oNc.PREMIUM_TIER_3_OVERRIDE)) === !0
-  }), [b, v] = (0, s.US)([a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK], void 0, !1), g = (0, c.Z)(n), h = null != b && b === a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, j = g.length > 0 ? (0, r.jsx)(d.Z, {
+  }), [b, v] = (0, s.US)([a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK], void 0, !1), g = (0, c.Z)(n), h = null != b && b === a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, j = g.length > 0 ? (0, r.jsx)(u.Z, {
     guildId: n,
     powerups: g
-  }) : h ? (0, r.jsx)(u.Z, {
+  }) : h ? (0, r.jsx)(d.Z, {
     markAsDismissed: v
   }) : void 0;
   return null != j || t ? (0, r.jsxs)("div", {

@@ -1,7 +1,7 @@
 /** Chunk was on 91315 **/
 n.d(t, {
-  FO: () => b,
-  nA: () => p,
+  FO: () => p,
+  nA: () => b,
   qQ: () => N,
   r7: () => Z
 }), n(388685), n(642613), n(583741);
@@ -28,7 +28,7 @@ function Z() {
   }, [])
 }
 
-function b(e) {
+function p(e) {
   let t = function(e) {
       let t = (0, s.Wu)([c.Z, g.Z, o.Z], () => l()(g.Z.getThreadsForParent(e.guild_id, e.id)).values().map(e => {
         let {
@@ -45,7 +45,7 @@ function b(e) {
   }
 }
 
-function p(e) {
+function b(e) {
   let t = (0, s.Wu)([c.Z, g.Z, o.Z], () => l()(g.Z.getThreadsForGuild(e)).values().map(e => l().values(e)).flatten().map(e => {
     let {
       id: t

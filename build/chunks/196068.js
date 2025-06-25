@@ -1,6 +1,6 @@
 /** Chunk was on 78797 **/
 n.d(t, {
-  c: () => P
+  c: () => C
 });
 var r = n(255367),
   i = n(73800),
@@ -24,18 +24,18 @@ var r = n(255367),
   A = n(981631),
   R = n(474936),
   g = n(388032),
-  C = n(134772);
-let P = e => {
+  P = n(134772);
+let C = e => {
   let {
     dismissibleContent: t
-  } = e, n = (0, O.a0)(), P = (0, o.e7)([p.default], () => S.ZP.isPremiumExactly(p.default.getCurrentUser(), R.p9.TIER_2)), {
+  } = e, n = (0, O.a0)(), C = (0, o.e7)([p.default], () => S.ZP.isPremiumExactly(p.default.getCurrentUser(), R.p9.TIER_2)), {
     enabled: y,
     getNitroCTA: b
   } = I.g.useExperiment({
     location: "OutboundPromotionNotice"
   }, {
     autoTrackExposure: !1,
-    disable: P
+    disable: C
   }), {
     enabled: D
   } = E.ru.useExperiment({
@@ -98,10 +98,10 @@ let P = e => {
     }), (0, r.jsx)(c.SrA, {
       size: "md",
       color: "currentColor",
-      className: C.premiumIcon
+      className: P.premiumIcon
     }), y ? b ? (0, r.jsxs)(l.xv, {
       variant: "text-sm/normal",
-      className: C.text,
+      className: P.text,
       children: [g.intl.string(g.t["5JMiOj"]), " ", g.intl.format(g.t.fjSvsL, {
         onClick: v
       })]

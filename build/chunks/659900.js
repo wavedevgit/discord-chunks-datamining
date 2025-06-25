@@ -81,7 +81,7 @@ function T(e) {
       }), (0, i.jsxs)(o.xJW, {
         className: Z.previewSection,
         title: E.intl.string(E.t.Zxk1OD),
-        children: [(0, i.jsx)(M, {
+        children: [(0, i.jsx)(_, {
           channels: e.serializedSourceGuild.channels
         }), (0, i.jsxs)(o.Text, {
           variant: "text-xs/normal",
@@ -95,7 +95,7 @@ function T(e) {
       }), g.length > 0 ? (0, i.jsx)(o.xJW, {
         className: Z.previewSection,
         title: E.intl.string(E.t["RJ1e/v"]),
-        children: (0, i.jsx)(_, {
+        children: (0, i.jsx)(M, {
           guildId: e.serializedSourceGuild.id,
           roles: g
         })
@@ -109,7 +109,7 @@ function T(e) {
   }
 }
 
-function M(e) {
+function _(e) {
   let {
     channels: t
   } = e, n = c()(t).sortBy(e => null == e.parent_id ? 1e4 * Number(e.id) : 1e4 * Number(e.parent_id) + e.id).map(e => {
@@ -138,7 +138,7 @@ function M(e) {
   })
 }
 
-function _(e) {
+function M(e) {
   let {
     guildId: t,
     roles: n
@@ -157,7 +157,7 @@ function b(e) {
   let {
     guildId: r,
     role: s
-  } = e, l = (0, o.dQu)(u.Z.colors.BORDER_SUBTLE).hex(), a = null == s.color ? l : (0, d.Rf)(s.color), c = (0, x.X)(r, s.colorStrings, "AcceptGuildTemplate");
+  } = e, l = (0, o.dQu)(u.Z.colors.BORDER_SUBTLE).hex(), a = null == s.color ? l : (0, d.Rf)(s.color), c = (0, x._f)(r, s, s.colorStrings);
   return (0, i.jsxs)("li", {
     className: Z.role,
     style: {

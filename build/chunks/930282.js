@@ -42,7 +42,7 @@ let O = l.memo(function(e) {
     onUpdate: m,
     contentRef: h,
     compact: O
-  } = e, y = o.state === p.yb.SEND_FAILED, j = o.state === p.yb.SENDING, v = o.isCommandType(), P = null == (t = o.editedTimestamp) ? void 0 : t.toString(), x = l.useRef(!1);
+  } = e, y = o.state === p.yb.SEND_FAILED, v = o.state === p.yb.SENDING, j = o.isCommandType(), P = null == (t = o.editedTimestamp) ? void 0 : t.toString(), x = l.useRef(!1);
   return l.useLayoutEffect(() => {
     x.current ? null != m && m() : x.current = !0
   }, [m, o.content, c, P, s]), (0, r.jsxs)("div", {
@@ -50,7 +50,7 @@ let O = l.memo(function(e) {
     ref: h,
     className: i()(n, f.markup, {
       [g.messageContent]: !0,
-      [g.isSending]: j && !v,
+      [g.isSending]: v && !j,
       [g.markupRtl]: "rtl" === a()(o.content),
       [g.isFailed]: y,
       [g.isUnsupported]: o.isUnsupported

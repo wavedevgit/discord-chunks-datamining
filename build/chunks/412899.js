@@ -23,8 +23,8 @@ var r = n(255367),
   g = n(605436),
   f = n(134433),
   S = n(600164),
-  h = n(91218),
-  p = n(313201),
+  p = n(91218),
+  h = n(313201),
   U = n(518738),
   L = n(434404),
   D = n(884902),
@@ -91,7 +91,7 @@ function w(e) {
   let {
     userRoles: t,
     position: n
-  } = e, l = z(e, ["userRoles", "position"]), s = (0, p.Dt)();
+  } = e, l = z(e, ["userRoles", "position"]), s = (0, h.Dt)();
   return (0, r.jsxs)(T.VqE, {
     className: i()(y.overflowRolesPopout, {
       [y.popoutBottom]: "bottom" === n,
@@ -131,7 +131,7 @@ let H = l.forwardRef(function(e, t) {
       role: N,
       onRemove: g,
       guildId: S,
-      disableBorderColor: p,
+      disableBorderColor: h,
       onMouseDown: L
     } = e,
     C = (0, c.JA)(N.id),
@@ -145,7 +145,7 @@ let H = l.forwardRef(function(e, t) {
       guildId: S
     }),
     b = (0, d.e7)([R.Z], () => R.Z.roleStyle),
-    P = (0, D.X)(S, N.colorStrings, "MemberRolesList"),
+    P = (0, D._f)(S, N, N.colorStrings),
     x = (null == (s = N.tags) ? void 0 : s.guild_connections) === null,
     B = l.useCallback(e => {
       (0, I.jW)(e, async () => {
@@ -181,9 +181,9 @@ let H = l.forwardRef(function(e, t) {
   let Z = l.useMemo(() => {
     var t;
     return G({
-      borderColor: p ? void 0 : V
+      borderColor: h ? void 0 : V
     }, null != (t = e.style) ? t : {})
-  }, [V, p, e.style]);
+  }, [V, h, e.style]);
   return (0, r.jsx)(T.tEY, {
     children: (0, r.jsxs)("div", F(G({
       ref: t,
@@ -211,7 +211,7 @@ let H = l.forwardRef(function(e, t) {
           className: y.roleRemoveIcon,
           "aria-hidden": !0
         }) : null]
-      }), null != v ? (0, r.jsx)(h.Z, F(G({
+      }), null != v ? (0, r.jsx)(p.Z, F(G({
         className: y.roleIcon
       }, v), {
         enableTooltip: !1
@@ -329,7 +329,7 @@ function K(e) {
     S = l.useCallback(e => {
       let t = a; - 1 === t.indexOf(e) && (t = t.concat([e])), L.Z.updateMemberRoles(s.id, n.id, t, [e], [])
     }, [a, s.id, n.id]),
-    [h, p] = l.useState(null),
+    [p, h] = l.useState(null),
     U = (0, d.e7)([M.Z], () => M.Z.getRoles(s.id)),
     D = l.useMemo(() => {
       let e = Object.values(U).filter(e => a.includes(e.id)).sort((e, t) => {
@@ -338,8 +338,8 @@ function K(e) {
           s = (null == (r = t.tags) ? void 0 : r.guild_connections) !== null;
         return l && !s ? 1 : !l && s ? -1 : 0
       });
-      return null != h ? e.slice(0, h) : e
-    }, [U, h, a]),
+      return null != p ? e.slice(0, p) : e
+    }, [U, p, a]),
     C = a.length - D.length;
   l.useLayoutEffect(() => {
     if (_) return;
@@ -355,7 +355,7 @@ function K(e) {
         e++
       }
     }
-    p(t => e < D.length ? e : t)
+    h(t => e < D.length ? e : t)
   }, [_, A, D]);
   let P = v.default.getCurrentUser();
   o()(null != P, "MemberRolesList: currentUser cannot be undefined");
@@ -384,7 +384,7 @@ function K(e) {
         disableBorderColor: R
       }, e.id)
     });
-  return null != h && 0 !== C ? t = (0, r.jsx)(V, F(G({}, e), {
+  return null != p && 0 !== C ? t = (0, r.jsx)(V, F(G({}, e), {
     numRolesHidden: C
   })) : w && (t = (0, r.jsx)(k, F(G({}, e), {
     handleAddRole: S

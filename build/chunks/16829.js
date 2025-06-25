@@ -23,7 +23,7 @@ var r = n(255367),
   f = n(388032),
   S = n(615133);
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function h(e) {
   return e
 }
 
-function p(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,7 +57,7 @@ function p(e, t) {
 let U = l.memo(function() {
     return (0, r.jsx)(o.ua7, {
       text: f.intl.string(f.t["vu/MiY"]),
-      children: e => (0, r.jsx)(o.Text, p(h({}, e), {
+      children: e => (0, r.jsx)(o.Text, h(p({}, e), {
         variant: "text-sm/medium",
         color: "text-muted",
         className: S.unknownInvite,
@@ -68,7 +68,7 @@ let U = l.memo(function() {
   L = l.memo(function() {
     return (0, r.jsx)(o.ua7, {
       text: f.intl.string(f.t.OrCp9v),
-      children: e => (0, r.jsx)(o.Text, p(h({}, e), {
+      children: e => (0, r.jsx)(o.Text, h(p({}, e), {
         variant: "text-sm/medium",
         color: "text-muted",
         className: S.unknownInvite,
@@ -171,7 +171,7 @@ function C(e) {
     joinSourceType: E,
     className: _,
     onClickInviter: A
-  } = e, T = (0, a.e7)([d.ZP], () => null == s ? null : d.ZP.getMember(n, s.id), [s, n]), I = (0, u.X)(null == T ? void 0 : T.guildId, null == T ? void 0 : T.colorStrings, "GuildMemberJoinMethodTag"), N = l.useCallback(e => {
+  } = e, T = (0, a.e7)([d.ZP], () => null == s ? null : d.ZP.getMember(n, s.id), [s, n]), I = (0, u.X7)(null == T ? void 0 : T.guildId, null == T ? void 0 : T.userId, null == T ? void 0 : T.colorStrings), N = l.useCallback(e => {
     e.stopPropagation(), e.preventDefault(), null != s && (null == A || A(s))
   }, [s, A]);
   return null == s ? null : (0, r.jsxs)("div", {
@@ -284,9 +284,9 @@ function v(e) {
     case null == d:
     case null == n:
     case n === g.gq.UNSPECIFIED:
-      return (0, r.jsx)(U, h({}, _));
+      return (0, r.jsx)(U, p({}, _));
     case null != s && A:
-      return (0, r.jsxs)(o.P3F, p(h({
+      return (0, r.jsxs)(o.P3F, h(p({
         className: S.inviteContainer
       }, _), {
         "aria-label": (0, g.MS)(s),
@@ -303,7 +303,7 @@ function v(e) {
     case null != d:
       return (0, r.jsxs)("div", {
         className: i()(a && S.footerAlignment),
-        children: [(0, r.jsxs)(o.P3F, p(h({
+        children: [(0, r.jsxs)(o.P3F, h(p({
           className: S.inviteContainer
         }, _), {
           "aria-label": null == d ? void 0 : d.getJoinTypeLabel(null != t ? t : void 0),
@@ -323,7 +323,7 @@ function v(e) {
         })]
       });
     default:
-      return (0, r.jsx)(U, h({}, _))
+      return (0, r.jsx)(U, p({}, _))
   }
 }
 let b = l.memo(function(e) {
@@ -345,13 +345,13 @@ let b = l.memo(function(e) {
     sourceInviteCode: R,
     joinSourceType: f,
     integrationType: S
-  } = u, p = null != f ? D[f] : null, C = null != (n = null == p ? void 0 : p.hasTooltip) && n;
+  } = u, h = null != f ? D[f] : null, C = null != (n = null == h ? void 0 : h.hasTooltip) && n;
   return (f === g.gq.INVITE || f === g.gq.VANITY_URL || f === g.gq.MANUAL_MEMBER_VERIFICATION && null != R) && O ? (0, r.jsx)(L, {}) : (0, r.jsx)(M, {
     hasTooltip: C && !o,
     inviterUser: null != I ? I : null,
     guildId: i,
     joinSourceType: f,
-    children: e => (0, r.jsx)(v, h({
+    children: e => (0, r.jsx)(v, p({
       sourceInviteCode: R,
       joinSourceType: f,
       integrationType: S,

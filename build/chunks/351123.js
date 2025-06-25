@@ -205,7 +205,7 @@ function W(e) {
   })
 }
 
-function G(e) {
+function U(e) {
   let {
     guild: t,
     channel: l,
@@ -267,7 +267,7 @@ function G(e) {
   })
 }
 
-function U(e) {
+function G(e) {
   let {
     guild: t,
     channel: l,
@@ -468,11 +468,11 @@ let F = a.ZP.connectStores([N.Z, O.Z, S.ZP, E.Z], () => {
           }))
         })
       }
-    }) : null, s.isGuildStageVoice() ? (0, i.jsx)(G, {
+    }) : null, s.isGuildStageVoice() ? (0, i.jsx)(U, {
       guild: d,
       channel: s,
       permissionUpdates: m
-    }) : null, (0, i.jsx)(U, {
+    }) : null, (0, i.jsx)(G, {
       channel: s,
       guild: d,
       isPrivateGuildChannel: h,

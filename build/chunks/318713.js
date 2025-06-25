@@ -24,12 +24,12 @@ let m = l.memo(function(e) {
       cozyAlt: h = !1,
       isInline: O = !0,
       id: y,
-      isEdited: j = !1,
-      application: v,
+      isEdited: v = !1,
+      application: j,
       tooltipPosition: P
-    } = e, x = l.useMemo(() => new Date(m), [m]), C = l.useMemo(() => (0, a.Hg)(x), [x]), w = l.useMemo(() => null != f ? (0, a.vc)(x, f) : o ? (0, a.vc)(x, "LT") : (0, a.Y4)(x, !0), [x, f, o]), S = l.useMemo(() => o ? (0, u.Z)(w) : null, [o, w]), N = l.useMemo(() => j ? d.intl.formatToPlainString(d.t.CDzOFR, {
+    } = e, x = l.useMemo(() => new Date(m), [m]), C = l.useMemo(() => (0, a.Hg)(x), [x]), w = l.useMemo(() => null != f ? (0, a.vc)(x, f) : o ? (0, a.vc)(x, "LT") : (0, a.Y4)(x, !0), [x, f, o]), S = l.useMemo(() => o ? (0, u.Z)(w) : null, [o, w]), N = l.useMemo(() => v ? d.intl.formatToPlainString(d.t.CDzOFR, {
       timeFormatted: C
-    }) : C, [j, C]);
+    }) : C, [v, C]);
     return (0, r.jsx)("span", {
       className: i()(n, S, {
         [p.timestamp]: !0,
@@ -37,7 +37,7 @@ let m = l.memo(function(e) {
         [p.timestampInline]: O,
         [p.alt]: h
       }),
-      children: null == v ? (0, r.jsx)(s.ua7, {
+      children: null == j ? (0, r.jsx)(s.ua7, {
         text: () => (0, a.vc)(x, "LLLL"),
         "aria-label": N,
         tooltipClassName: p.timestampTooltip,
@@ -52,7 +52,7 @@ let m = l.memo(function(e) {
           children: t
         })
       }) : (0, r.jsx)(c.Z, {
-        application: v,
+        application: j,
         timestamp: x,
         compact: o,
         children: (0, r.jsx)(g, {

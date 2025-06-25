@@ -103,7 +103,7 @@ let A = i.memo(function(e) {
     } = (0, c.cj)([x.Z], () => ({
       isMobile: x.Z.isMobileOnline(l.user.id),
       status: x.Z.getStatus(l.user.id, E)
-    })), A = (0, c.e7)([_.ZP], () => _.ZP.getMember(E, l.user.id)), w = (0, g.X)(t.guild_id, null == A ? void 0 : A.colorStrings, "RequestToSpeakSidebar"), R = i.useMemo(() => ({
+    })), A = (0, c.e7)([_.ZP], () => _.ZP.getMember(E, l.user.id)), w = (0, g.X7)(t.guild_id, null == A ? void 0 : A.userId, null == A ? void 0 : A.colorStrings), R = i.useMemo(() => ({
       [E]: [l.user.id]
     }), [E, l.user.id]);
     (0, f.$)(R);

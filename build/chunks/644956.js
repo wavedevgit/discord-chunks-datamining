@@ -224,33 +224,33 @@ function B(e) {
     inlinePreview: _ = !1
   } = e, {
     analyticsLocations: g
-  } = (0, m.ZP)(h.Z.ROLE_MENTION), E = (0, l.e7)([p.Z], () => p.Z.roleStyle), b = (0, I.Z)(d, "RoleMention"), T = (null != t && 0 !== t || null != n && null != n.primaryColor) && !_, S = T && "dot" === E, A = T && "username" === E, N = b && null != n && null != n.secondaryColor ? (0, v.ft)(n) : null, C = i.useRef(null), R = e => (0, r.jsxs)(O.Z, M(x({
-    ref: C,
+  } = (0, m.ZP)(h.Z.ROLE_MENTION), E = (0, l.e7)([p.Z], () => p.Z.roleStyle), b = (0, l.e7)([N.Z], () => null == d || null == a ? null : N.Z.getRole(d, a)), T = (0, I.yH)(d, b), S = (null != t && 0 !== t || null != n && null != n.primaryColor) && !_, A = S && "dot" === E, C = S && "username" === E, R = T && null != n && null != n.secondaryColor ? (0, v.ft)(n) : null, P = i.useRef(null), L = e => (0, r.jsxs)(O.Z, M(x({
+    ref: P,
     className: w.roleMention,
-    color: A ? t : null,
-    roleColors: A ? N : null
+    color: C ? t : null,
+    roleColors: C ? R : null
   }, e), {
-    children: [S && null != t && (0, r.jsx)(u.FhE, {
+    children: [A && null != t && (0, r.jsx)(u.FhE, {
       color: (0, s.Rf)(t),
-      colors: N,
+      colors: R,
       className: D.roleDot,
       background: !1,
       tooltip: !1
     }), f]
   })), {
-    enabled: P
+    enabled: k
   } = j.getCurrentConfig({
     location: "2ec235_1"
   }, {
     autoTrackExposure: !1
   });
-  return !P || _ || null == o || null == d || null == a && "@everyone" !== c ? (0, r.jsx)(m.Gt, {
+  return !k || _ || null == o || null == d || null == a && "@everyone" !== c ? (0, r.jsx)(m.Gt, {
     value: g,
-    children: R()
+    children: L()
   }) : (0, r.jsx)(m.Gt, {
     value: g,
     children: (0, r.jsx)(u.yRy, {
-      targetElementRef: C,
+      targetElementRef: P,
       preload: async () => {
         null != a && await (0, y.H)(d, a)
       },
@@ -261,7 +261,7 @@ function B(e) {
         popoutProps: e
       }),
       position: "right",
-      children: R
+      children: L
     })
   })
 }

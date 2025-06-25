@@ -55,8 +55,8 @@ let g = function(e) {
     childrenRepliedMessage: h,
     childrenExecutedCommand: O,
     childrenHeader: y,
-    childrenSystemMessage: j,
-    childrenButtons: v,
+    childrenSystemMessage: v,
+    childrenButtons: j,
     childrenMessageContent: P,
     childrenAccessories: x,
     messageRef: C,
@@ -87,7 +87,7 @@ let g = function(e) {
     }
     return l
   }(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let k = (0, u.Z)(null == Z ? void 0 : Z.guildId, "BaseMessage") && (0, c.S2)(Z),
+  let k = (0, u.ZP)(null == Z ? void 0 : Z.guildId, null == Z ? void 0 : Z.authorId) && (0, c.S2)(Z),
     [I, M] = l.useState(!1),
     D = l.useCallback(e => {
       M(!0), null == T || T(e)
@@ -121,10 +121,10 @@ let g = function(e) {
           onMouseLeave: A,
           children: [h, O, (0, r.jsxs)("div", {
             className: d.contents,
-            children: [j, y, null == j && P]
-          }), x, null != v ? (0, r.jsx)("div", {
+            children: [v, y, null == v && P]
+          }), x, null != j ? (0, r.jsx)("div", {
             className: d.buttonContainer,
-            children: v
+            children: j
           }) : null]
         }))
       }))

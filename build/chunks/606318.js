@@ -2,6 +2,7 @@
 "use strict";
 n.d(t, {
   DX: () => i,
+  Gr: () => s,
   S2: () => o,
   ft: () => a
 });
@@ -25,4 +26,8 @@ function a(e) {
 
 function o(e) {
   return null != e && null != e.colorStrings && null != e.colorStrings.primaryColor && null != e.colorStrings.secondaryColor
+}
+
+function s(e) {
+  return null != e.colors && 0 === e.colors.primary_color && null == e.colors.secondary_color && null == e.colors.tertiary_color
 }

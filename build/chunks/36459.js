@@ -3,7 +3,7 @@ n.d(t, {
   $Y: () => A,
   JK: () => S,
   Je: () => f,
-  T9: () => C,
+  T9: () => P,
   UE: () => g,
   Xx: () => R,
   mm: () => m,
@@ -135,7 +135,7 @@ function g(e, t, n) {
   })
 }
 
-function C(e) {
+function P(e) {
   i.Z.dispatch({
     type: "AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS",
     guildId: e

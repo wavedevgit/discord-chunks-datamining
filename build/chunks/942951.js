@@ -42,7 +42,7 @@ function p(e) {
     ariaLabel: g
   } = e, h = l.useRef(null), {
     analyticsLocations: m
-  } = (0, u.ZP)(i.Z.USERNAME), O = (0, a.Z)(p, "useUsernameHook"), y = l.useCallback(e => {
+  } = (0, u.ZP)(i.Z.USERNAME), O = (0, a.ZP)(p, null == t ? void 0 : t.id), y = l.useCallback(e => {
     let n = c.Z.getChannel(r);
     null != n && null != t && (0, d.Pv)(e, t, n)
   }, [t, r]);

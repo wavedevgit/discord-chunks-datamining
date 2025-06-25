@@ -1,7 +1,7 @@
 /** Chunk was on 44606 **/
 n.d(t, {
   Z: () => S,
-  f: () => h
+  f: () => p
 }), n(388685);
 var r, l = n(255367),
   s = n(73800),
@@ -59,14 +59,14 @@ function S(e) {
     disabled: i,
     className: f,
     onClick: S,
-    onRemove: h,
-    selected: p,
+    onRemove: p,
+    selected: h,
     ariaLabel: U
   } = e, {
     name: L,
     emojiId: D,
     emojiName: C
-  } = t, M = null != h, [m, v] = s.useState(!1), b = (0, E.e7)([A.ZP], () => null != D ? A.ZP.getUsableCustomEmojiById(D) : null), P = M || null != S, x = (!M || !m) && (null != D || null != C), j = 0 === r, y = s.useRef(null), G = (0, E.e7)([d.Z], () => d.Z.keyboardModeEnabled), F = e => {
+  } = t, M = null != p, [m, v] = s.useState(!1), b = (0, E.e7)([A.ZP], () => null != D ? A.ZP.getUsableCustomEmojiById(D) : null), P = M || null != S, x = (!M || !m) && (null != D || null != C), j = 0 === r, y = s.useRef(null), G = (0, E.e7)([d.Z], () => d.Z.keyboardModeEnabled), F = e => {
     let r = T.Sb.getSetting();
     I.wS && r && (0, u.jW)(e, async () => {
       let {
@@ -104,11 +104,11 @@ function S(e) {
       [N.disabled]: i,
       [N.clickable]: P,
       [N.small]: j,
-      [N.selected]: p,
+      [N.selected]: h,
       [N[t.color]]: null != t.color && !P
     }, f),
     onClick: e => {
-      null == S || S(e), null == h || h(t), G || null == y.current || y.current.blur()
+      null == S || S(e), null == p || p(t), G || null == y.current || y.current.blur()
     },
     onContextMenu: e => F(e),
     onMouseEnter: () => M && v(!0),
@@ -123,7 +123,7 @@ function S(e) {
       tagName: L
     }),
     role: "button",
-    "aria-pressed": p
+    "aria-pressed": h
   }), B), {
     children: z
   })) : (0, l.jsx)("div", g(R({}, B), {
@@ -131,7 +131,7 @@ function S(e) {
   }))
 }
 
-function h(e) {
+function p(e) {
   let {
     tags: t,
     count: n,

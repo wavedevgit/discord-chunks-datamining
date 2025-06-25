@@ -20,8 +20,8 @@ function u(e) {
   if (null == p) return null;
   let {
     IconComponent: m,
-    locationName: f
-  } = p, I = (0, i.jsxs)(i.Fragment, {
+    locationName: I
+  } = p, f = (0, i.jsxs)(i.Fragment, {
     children: [null != m && (0, i.jsx)(m, {
       size: "custom",
       color: "currentColor",
@@ -32,7 +32,7 @@ function u(e) {
       color: "header-secondary",
       variant: "text-sm/normal",
       className: c.locationText,
-      children: (0, a.m)(f, !0)
+      children: (0, a.m)(I, !0)
     })]
   });
   return (0, i.jsx)("div", {
@@ -40,7 +40,7 @@ function u(e) {
     children: null != g ? (0, i.jsx)(r.P3F, {
       className: _ ? c.externalLocation : c.channelLocation,
       onClick: g,
-      children: I
-    }) : I
+      children: f
+    }) : f
   })
 }

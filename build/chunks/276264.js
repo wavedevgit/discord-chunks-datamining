@@ -323,7 +323,7 @@ let V = (0, C.Mg)(l.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       guildId: V
     }), eC = null != ec ? ec : {}, {
       onFocus: eR
-    } = eC, eP = G(eC, ["onFocus"]), ew = (0, O.X)(V, l, "MemberListItem"), eD = (0, s.e7)([I.Z], () => null != I.Z.questEnrollmentBlockedUntil, []), [eL, ex] = i.useState(!1);
+    } = eC, eP = G(eC, ["onFocus"]), ew = (0, O.X7)(V, ed, l), eD = (0, s.e7)([I.Z], () => null != I.Z.questEnrollmentBlockedUntil, []), [eL, ex] = i.useState(!1);
     i.useEffect(() => {
       n && ex(!1)
     }, [n]);

@@ -29,7 +29,8 @@ let m = {
           global_name: e
         },
         timeout: t,
-        rejectWithError: !0
+        rejectWithError: !0,
+        failImmediatelyWhenRateLimited: !0
       });
       if (n.ok && (null == (r = n.body) ? void 0 : r.username) != null) return o.Z.dispatch({
         type: "POMELO_REGISTRATION_SUGGESTIONS_SUCCESS",

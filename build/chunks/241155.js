@@ -12,8 +12,8 @@ var i, l, r, a = t(392711),
 let g = !1,
   p = {},
   m = {},
-  f = {},
-  I = e => (f[e.guild_scheduled_event.id] = new u.ZP(e.guild_scheduled_event.guild), m[e.guild_scheduled_event.id] = e.guild_scheduled_event, {
+  I = {},
+  f = e => (I[e.guild_scheduled_event.id] = new u.ZP(e.guild_scheduled_event.guild), m[e.guild_scheduled_event.id] = e.guild_scheduled_event, {
     channelId: e.directory_channel_id,
     scheduledEventId: e.entity_id,
     type: _.C2.GUILD_SCHEDULED_EVENT,
@@ -29,7 +29,7 @@ class v extends(i = o.ZP.Store) {
   }
   getCachedGuildByEventId(e) {
     var n;
-    return null != (n = f[e]) ? n : void 0
+    return null != (n = I[e]) ? n : void 0
   }
   getCachedGuildScheduledEventById(e) {
     var n;
@@ -55,7 +55,7 @@ let h = new v(s.Z, {
     let i = d().sortBy([...t], [function(e) {
         return (0, c.CQ)(e.guild_scheduled_event)
       }]),
-      l = d().map(i, I);
+      l = d().map(i, f);
     p[n] = l
   },
   EVENT_DIRECTORY_FETCH_FAILURE: function() {

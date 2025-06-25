@@ -25,8 +25,8 @@ var r = n(255367),
   A = n(160404),
   R = n(889695),
   g = n(981631),
-  C = n(176505),
-  P = n(302463),
+  P = n(176505),
+  C = n(302463),
   y = n(293810),
   b = n(388032),
   D = n(800515);
@@ -89,7 +89,7 @@ function M() {
       }
     }(o),
     k = o === g.pNK.ROLE_SUBSCRIPTIONS ? b.intl.string(b.t.hZUCzc) : b.intl.string(b.t["/djIh4"]),
-    L = n === C.oC.GUILD_ONBOARDING,
+    L = n === P.oC.GUILD_ONBOARDING,
     Z = e => {
       let {
         backToSettings: n
@@ -157,7 +157,7 @@ function M() {
         className: D.previewWarning,
         text: b.intl.formatToPlainString(b.t.eummvb, {
           maxTiers: y.fF,
-          maxProducts: P.dD
+          maxProducts: C.dD
         }),
         children: (0, r.jsx)(s.P4T, {
           size: "xs",

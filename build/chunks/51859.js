@@ -9,8 +9,8 @@ var r = t(255367),
   s = t(838968),
   l = t(262212),
   c = t(795338),
-  u = t(279604),
-  d = t(388032),
+  d = t(279604),
+  u = t(388032),
   p = t(117172);
 
 function m(e) {
@@ -18,7 +18,7 @@ function m(e) {
     guildId: n,
     powerup: t
   } = e, [m, _] = i.useState(void 0);
-  (0, u.KT)(m);
+  (0, d.KT)(m);
   let [f, x] = i.useState(!1);
   return (0, r.jsxs)(s.Z, {
     onHover: e => x(e),
@@ -53,7 +53,7 @@ function m(e) {
       })
     }), (0, r.jsx)(a.IGR, {
       className: p.new,
-      text: d.intl.string(d.t.y2b7CA)
+      text: u.intl.string(u.t.y2b7CA)
     })]
   })
 }

@@ -277,7 +277,7 @@ class q extends Z {
     } = this.props, {
       colorString: r,
       colorStrings: a
-    } = e, o = "dot" === f.Z.roleStyle, l = "username" === f.Z.roleStyle && (null != r || null != a), c = (0, b.A)(n, a, "AutocompleteRow"), u = null != c && l, {
+    } = e, o = "dot" === f.Z.roleStyle, l = "username" === f.Z.roleStyle && (null != r || null != a), c = (0, b.AQ)(n, e, a), u = null != c && l, {
       gradientStyle: _,
       gradientClassname: p
     } = (0, d.JUn)({

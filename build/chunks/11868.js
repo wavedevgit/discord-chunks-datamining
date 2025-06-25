@@ -25,8 +25,8 @@ var r = n(255367),
   A = n(854698),
   R = n(405613),
   g = n(95291),
-  C = n(742593),
-  P = n(217804),
+  P = n(742593),
+  C = n(217804),
   y = n(139712),
   b = n(765305),
   D = n(388032),
@@ -58,7 +58,7 @@ let U = (e, t) => n => {
     } = e, E = (0, a.e7)([T.Z], () => {
       var e;
       return null == n ? null : null != (e = T.Z.getGuild(n.id)) ? e : new I.ZP(n)
-    }, [n]), O = (0, P.u)(l, o), p = i.useCallback(e => {
+    }, [n]), O = (0, C.u)(l, o), p = i.useCallback(e => {
       u && null != l && (e.stopPropagation(), (0, s.Bk)(l))
     }, [u, l]), N = i.useCallback(e => {
       v(l)(e)
@@ -183,7 +183,7 @@ let U = (e, t) => n => {
       })
     }, [s, n, I]);
     if (null == n || !O) return null;
-    let P = (0, N.xt)(n),
+    let C = (0, N.xt)(n),
       y = (0, N.Z2)(n),
       D = n.entity_type === b.WX.EXTERNAL;
     return (0, r.jsx)(_.Z, {
@@ -195,7 +195,7 @@ let U = (e, t) => n => {
         children: [null != n.image && (0, r.jsx)(g.Z, {
           source: (0, R.Z)(n),
           className: h.banner
-        }), (0, r.jsx)(C.ZP, {
+        }), (0, r.jsx)(P.ZP, {
           name: n.name,
           description: null != (t = n.description) ? t : void 0,
           descriptionClassName: h.eventDescription,
@@ -212,7 +212,7 @@ let U = (e, t) => n => {
             guildScheduledEvent: n,
             isMember: s
           }), (0, r.jsx)(Z, {
-            isActive: P,
+            isActive: C,
             isEnded: y,
             isMember: s,
             guildId: n.guild_id,

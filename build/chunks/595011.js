@@ -10,8 +10,8 @@ var r = n(481060),
   s = n(108843),
   c = n(100527),
   d = n(299206),
-  u = n(88966),
-  a = n(37258),
+  a = n(88966),
+  u = n(37258),
   f = n(931617),
   g = n(981631),
   h = n(388032);
@@ -21,13 +21,13 @@ let b = (0, s.Z)(function(e) {
     guildId: n,
     analyticsContext: s,
     onSelect: c
-  } = e, b = (0, a.Z)({
+  } = e, b = (0, u.Z)({
     userId: l.id,
     guildId: n
   }), Z = (0, f.Z)(l.id, n), p = (0, d.Z)({
     id: l.id,
     label: h.intl.string(h.t["/AXYnJ"])
-  }), O = (0, u.Z)(l.id), j = l.isNonUserBot();
+  }), O = (0, a.Z)(l.id), j = l.isNonUserBot();
   return (0, t.jsx)(o.Z, {
     context: s,
     object: g.qAy.CONTEXT_MENU,

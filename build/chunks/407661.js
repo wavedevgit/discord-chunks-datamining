@@ -97,14 +97,15 @@ function S(e) {
     nick: m,
     colorString: v,
     colorStrings: S,
-    colorRoleName: A
-  } = (0, u.ZP)(a), N = (0, d.X)(h, S, "ChannelReplyingBar"), C = I(i, a), R = (0, p.NE)(i, a), P = n.showThreadPromptOnReply && C >= O && R, w = () => (0, _.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
+    colorRoleName: A,
+    authorId: N
+  } = (0, u.ZP)(a), C = (0, d.X7)(h, N, S), R = I(i, a), P = (0, p.NE)(i, a), w = n.showThreadPromptOnReply && R >= O && P, D = () => (0, _.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
-  function D(e) {
+  function L(e) {
     e.stopPropagation(), (0, f.qx)(i.id, !s)
   }
 
-  function L(e) {
+  function x(e) {
     e.stopPropagation(), (0, f.A6)(i.id)
   }
   return (0, r.jsx)("div", {
@@ -114,7 +115,7 @@ function S(e) {
       children: [(0, r.jsxs)("div", {
         className: y.replyBar,
         children: [(0, r.jsx)(l.P3F, {
-          onClick: w,
+          onClick: D,
           focusProps: {
             offset: {
               top: -8,
@@ -133,7 +134,7 @@ function S(e) {
                 name: m,
                 color: v,
                 roleName: A,
-                roleColors: N
+                roleColors: C
               }, t)
             })
           })
@@ -152,7 +153,7 @@ function S(e) {
                 return (0, r.jsx)(l.P3F, {
                   role: "switch",
                   "aria-checked": s,
-                  onClick: D,
+                  onClick: L,
                   onMouseEnter: t,
                   onMouseLeave: n,
                   onFocus: i,
@@ -175,13 +176,13 @@ function S(e) {
               "aria-hidden": !0
             })]
           }), (0, r.jsx)(g.B, {
-            onClick: L
+            onClick: x
           })]
         })]
-      }), P && (0, r.jsx)(T, {
+      }), w && (0, r.jsx)(T, {
         channel: i,
         message: a,
-        replyChainLength: C
+        replyChainLength: R
       })]
     })
   })

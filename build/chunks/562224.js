@@ -21,7 +21,7 @@ var n = r(268146),
   m = r(37113),
   O = r(761274);
 async function y(e, t) {
-  var r, y, w, j, P, S, D, I, E, x;
+  var r, y, w, P, j, S, D, I, E, x;
   let k = p.default.getCurrentUser(),
     C = f.Z.getVoiceChannelId(),
     Z = s.Z.getChannel(C),
@@ -38,9 +38,9 @@ async function y(e, t) {
     resolution: W,
     fps: A,
     soundshareEnabled: N
-  } = a.Z.getState(), U = null != (w = null == t ? void 0 : t.preset) ? w : G, [L, V] = null != (j = (0, g.Z)(U, k, R)) ? j : [], H = null != (P = null != L ? L : null == t ? void 0 : t.resolution) ? P : W, F = null != (S = null != V ? V : null == t ? void 0 : t.fps) ? S : A, T = null != (D = null == t ? void 0 : t.previewDisabled) ? D : u.I0.getSetting(), B = null != (I = null == t ? void 0 : t.soundshareEnabled) ? I : N;
-  return (0, v.Z)(U, H, F, k, R, Z) || (U = m.tI.PRESET_VIDEO, H = m.LY.RESOLUTION_720, F = m.ws.FPS_30), (0, l.Rc)({
-    preset: U,
+  } = a.Z.getState(), L = null != (w = null == t ? void 0 : t.preset) ? w : G, [U, V] = null != (P = (0, g.Z)(L, k, R)) ? P : [], H = null != (j = null != U ? U : null == t ? void 0 : t.resolution) ? j : W, F = null != (S = null != V ? V : null == t ? void 0 : t.fps) ? S : A, T = null != (D = null == t ? void 0 : t.previewDisabled) ? D : u.I0.getSetting(), B = null != (I = null == t ? void 0 : t.soundshareEnabled) ? I : N;
+  return (0, v.Z)(L, H, F, k, R, Z) || (L = m.tI.PRESET_VIDEO, H = m.LY.RESOLUTION_720, F = m.ws.FPS_30), (0, l.Rc)({
+    preset: L,
     resolution: H,
     frameRate: F,
     soundshareEnabled: B

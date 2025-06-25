@@ -96,7 +96,7 @@ function x(e) {
     theme: O,
     roleStyle: Z,
     "aria-label": T
-  } = e, w = (0, h.X)(d.id, null == s ? void 0 : s.colorStrings, "GuildRole"), R = l.useCallback(e => {
+  } = e, w = (0, h._f)(d.id, s, null == s ? void 0 : s.colorStrings), R = l.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e

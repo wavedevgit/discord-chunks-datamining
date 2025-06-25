@@ -24,8 +24,8 @@ var r, i = n(255367),
   A = n(670188),
   R = n(768581),
   g = n(585483),
-  C = n(463396),
-  P = n(935910),
+  P = n(463396),
+  C = n(935910),
   y = n(981631),
   b = n(848697);
 
@@ -101,7 +101,7 @@ function v(e) {
     colorString: Q,
     colorStrings: $,
     colorRoleName: ee
-  } = n, et = (0, s.e7)([E.Z], () => E.Z.roleStyle), en = "username" === et, er = (0, m.X$)(), ei = (0, f.Z)(null != W ? W : K, "BaseUsername"), el = (0, P.Z)(r), eo = l.useContext(u.d), ea = ei && (0, S.S2)(n), ec = en && ea;
+  } = n, et = (0, s.e7)([E.Z], () => E.Z.roleStyle), en = "username" === et, er = (0, m.X$)(), ei = (0, f.ZP)(null != W ? W : K, n.authorId), el = (0, C.Z)(r), eo = l.useContext(u.d), ea = ei && (0, S.S2)(n), ec = en && ea;
   l.useEffect(() => {
     if (null == z || !ec || null == eo) return;
     let {
@@ -199,6 +199,6 @@ function v(e) {
       userId: r.author.id,
       contextGuildId: K,
       className: b.clanTagChiplet
-    }), null != ep ? ep : null, null == eT || Z || U ? null : eT, null != r && (0, C.f)(r) && er && w ? (0, i.jsx)(M, {}) : null]
+    }), null != ep ? ep : null, null == eT || Z || U ? null : eT, null != r && (0, P.f)(r) && er && w ? (0, i.jsx)(M, {}) : null]
   })
 }

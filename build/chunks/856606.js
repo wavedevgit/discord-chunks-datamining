@@ -44,7 +44,7 @@ var i = n(255367),
   V = n(388032),
   W = n(483112);
 
-function G(e) {
+function U(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -63,7 +63,7 @@ function G(e) {
   return e
 }
 
-function U(e, t) {
+function G(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -124,7 +124,7 @@ function F(e) {
         r = a.IH(r, e)
     }
     if (T.Z.can(e, n, {
-        [m]: U(G({}, t), {
+        [m]: G(U({}, t), {
           allow: l,
           deny: r
         })
@@ -358,7 +358,7 @@ function q() {
           position: "bottom",
           autoInvert: !1,
           clickTrap: !0,
-          children: n => (0, i.jsx)(d.njP.Header, U(G({
+          children: n => (0, i.jsx)(d.njP.Header, G(U({
             ref: e
           }, n), {
             children: (0, i.jsxs)("div", {
