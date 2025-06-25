@@ -190,7 +190,10 @@ function F(e) {
               message: t,
               channel: n,
               isUnread: a
-            }), (0, r.jsx)(H, {
+            }), t.mentioned && a ? (0, r.jsx)(u.mAB, {
+              className: U.mentionBadge,
+              count: 1
+            }) : (0, r.jsx)(H, {
               message: t
             })]
           })]

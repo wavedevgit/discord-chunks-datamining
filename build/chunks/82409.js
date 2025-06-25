@@ -1,7 +1,7 @@
 /** Chunk was on 84865 **/
 n.d(t, {
   Z: () => L
-}), n(388685), n(361932), n(187205), n(415506);
+}), n(388685), n(361932), n(187205);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
@@ -91,8 +91,7 @@ function L(e) {
     H = (0, c.e7)([_.Z], () => _.Z.getSavedMessages()),
     z = i.useMemo(() => {
       var e;
-      if (!A) return null;
-      if (g === Z.V5.BOOKMARKS) return H.flatMap(e => {
+      return A ? g === Z.V5.BOOKMARKS ? H.flatMap(e => {
         let {
           message: t
         } = e;
@@ -100,8 +99,7 @@ function L(e) {
           kind: Z.fL.BOOKMARK,
           message: t
         }] : []
-      });
-      let t = (0, s.uniqBy)([...null != (e = null == a ? void 0 : a.map(e => ({
+      }) : (0, s.uniqBy)([...null != (e = null == a ? void 0 : a.map(e => ({
         kind: Z.fL.MENTION,
         message: e
       }))) ? e : [], ...S.filter(e => e.author.id !== (null == V ? void 0 : V.id)).map(e => ({
@@ -116,22 +114,15 @@ function L(e) {
         let {
           message: t
         } = e;
-        return t.author.id !== (null == V ? void 0 : V.id) && C.default.age(t.id) < Z.ib
-      });
-      if (g === Z.V5.ALL) return t;
-      if (g === Z.V5.ANNOUNCEMENTS) return null == t ? void 0 : t.filter(e => {
-        let {
-          message: t
-        } = e, n = O.Z.getChannel(t.channel_id);
-        return (null == n ? void 0 : n.type) === T.d4z.GUILD_ANNOUNCEMENT
-      });
-      if (g === Z.V5.MENTIONS) return null == t ? void 0 : t.filter(e => {
-        let {
-          message: t
-        } = e;
-        return (null == V ? void 0 : V.id) != null && t.mentioned && t.mentions.includes(null == V ? void 0 : V.id)
-      });
-      throw Error("Unknown filter: ".concat(g))
+        if (t.author.id === (null == V ? void 0 : V.id) || C.default.age(t.id) > Z.ib) return !1;
+        if (g === Z.V5.ALL) return !0;
+        if (g === Z.V5.MENTIONS) return t.mentioned;
+        if (g === Z.V5.ANNOUNCEMENTS) {
+          let e = O.Z.getChannel(t.channel_id);
+          return (null == e ? void 0 : e.type) === T.d4z.GUILD_ANNOUNCEMENT
+        }
+        return !1
+      }) : null
     }, [g, a, V, H, S, A]),
     {
       filterStyle: W

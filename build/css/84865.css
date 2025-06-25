@@ -1,6 +1,6 @@
 /**
   Module ID: 84865
-  Original File Name: d78a2d1377339361
+  Original File Name: 0367be5fa41eb4b8
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -2670,6 +2670,10 @@
     display: none
 }
 
+.messageClickableContainer_cb862a:focus .mentionBadge_cb862a,.messageClickableContainer_cb862a:focus-within .mentionBadge_cb862a,.messageClickableContainer_cb862a:hover .mentionBadge_cb862a {
+    display: none
+}
+
 .messageClickableContainer_cb862a:focus .actions_cb862a,.messageClickableContainer_cb862a:focus-within .actions_cb862a,.messageClickableContainer_cb862a:hover .actions_cb862a {
     display: flex
 }
@@ -2686,7 +2690,7 @@
     background: var(--bg-overlay-selected,var(--background-modifier-selected))
 }
 
-.messageClickableContainer_cb862a.selected_cb862a .timestamp_cb862a {
+.messageClickableContainer_cb862a.selected_cb862a .mentionBadge_cb862a,.messageClickableContainer_cb862a.selected_cb862a .timestamp_cb862a {
     display: none
 }
 
@@ -7521,4 +7525,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=d78a2d1377339361.css.map*/
+/*# sourceMappingURL=0367be5fa41eb4b8.css.map*/
