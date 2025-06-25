@@ -21,13 +21,13 @@ var i = n(255367),
   x = n(726985),
   E = n(736530),
   j = n(981631),
-  C = n(388032);
+  O = n(388032);
 
-function O(e) {
+function C(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, _ = (0, g.c_)(), O = u.h2.useSetting().includes(n), S = (0, d.q)(), v = (0, m.r)(), T = r.useCallback(e => {
+  } = e, _ = (0, g.c_)(), C = u.h2.useSetting().includes(n), S = (0, d.q)(), v = (0, m.r)(), T = r.useCallback(e => {
     let i = (0, c.YK)();
     e ? i.delete(n) : i.add(n), u.h2.updateSetting(Array.from(i)), a.default.track(j.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: b.Y.DIRECT_MESSAGES_TOGGLE,
@@ -44,10 +44,10 @@ function O(e) {
   }
   let I = e => {
       (0, f.V)({
-        header: C.intl.string(C.t["uUr+GR"]),
-        body: C.intl.string(C.t.hjGJBg),
-        confirmText: C.intl.string(C.t.gm1Ven),
-        cancelText: C.intl.string(C.t.p89ACg),
+        header: O.intl.string(O.t["uUr+GR"]),
+        body: O.intl.string(O.t.hjGJBg),
+        confirmText: O.intl.string(O.t.gm1Ven),
+        cancelText: O.intl.string(O.t.p89ACg),
         confirmButtonColor: s.zxk.Colors.BRAND,
         onConfirm: () => {
           u.gR.updateSetting(e), N(e, !1)
@@ -57,20 +57,20 @@ function O(e) {
         }
       })
     },
-    y = v ? C.intl.string(C.t.PMsfcH) : C.intl.string(C.t.RAQUSE);
+    y = v ? O.intl.string(O.t.PMsfcH) : O.intl.string(O.t.RAQUSE);
   return (0, i.jsx)(p.U, {
     setting: x.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
     children: n === E.T ? (0, i.jsx)(h.Z, {
       title: y,
-      note: v ? C.intl.string(C.t.XXGmuL) : C.intl.string(C.t.wbYDfX),
+      note: v ? O.intl.string(O.t.XXGmuL) : O.intl.string(O.t.wbYDfX),
       value: !S,
       onChange: e => {
         I(!e)
       }
     }) : (0, i.jsx)(h.Z, {
       title: y,
-      note: _ ? C.intl.string(C.t.V0ka0d) : v ? C.intl.string(C.t.F9WY3d) : C.intl.string(C.t.G7c3Xl),
-      value: !O,
+      note: _ ? O.intl.string(O.t.V0ka0d) : v ? O.intl.string(O.t.F9WY3d) : O.intl.string(O.t.G7c3Xl),
+      value: !C,
       onChange: T
     })
   })
@@ -81,7 +81,7 @@ function S(e) {
     ingress: t = _.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, r = (0, g.is)();
-  return (0, i.jsx)(O, {
+  return (0, i.jsx)(C, {
     ingress: t,
     guildId: null != n ? n : r
   })

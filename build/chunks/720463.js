@@ -22,14 +22,14 @@ var i = n(255367),
   x = n(388032),
   E = n(806539),
   j = n(293401),
-  C = n(447489),
-  O = n(484885);
+  O = n(447489),
+  C = n(484885);
 let S = () => {
     let e = (0, a.e7)([c.Z], () => c.Z.useReducedMotion);
     return (0, i.jsx)("div", {
       className: j.centerContent,
       children: e ? (0, i.jsx)("img", {
-        src: C.Z,
+        src: O.Z,
         className: j.orbAsset,
         alt: "Orb"
       }) : (0, i.jsxs)(d.Z, {
@@ -37,10 +37,10 @@ let S = () => {
         loop: !0,
         className: j.orbAsset,
         children: [(0, i.jsx)("source", {
-          src: O.Z,
+          src: C.Z,
           type: "video/webm"
         }), (0, i.jsx)("img", {
-          src: C.Z,
+          src: O.Z,
           className: j.orbAsset,
           alt: "Orb"
         })]

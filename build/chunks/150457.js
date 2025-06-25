@@ -11,7 +11,7 @@ let a = 10 * n(70956).Z.Millis.SECOND,
   o = 15;
 
 function s() {
-  return r.w.isIncomingVideoEnabled() && Date.now() - r.w.lastIncomingVideoEnabledChangeTime() > a
+  return r.w.isIncomingVideoEnabled() && performance.now() - r.w.lastIncomingVideoEnabledChangeTime() > a
 }
 
 function l(e, t) {

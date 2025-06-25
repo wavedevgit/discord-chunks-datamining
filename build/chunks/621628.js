@@ -1,7 +1,7 @@
 /** Chunk was on 91372 **/
 n.d(t, {
   Z: () => S,
-  u: () => C
+  u: () => O
 }), n(388685), n(539854), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733), n(290780), n(642613);
 var i = n(255367),
   r = n(73800),
@@ -48,7 +48,7 @@ function j(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     className: t,
     contents: n,
@@ -74,14 +74,14 @@ function C(e) {
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     items: t,
     dismissedContents: n,
     handleChange: r
   } = e;
   return (0, i.jsx)(i.Fragment, {
-    children: t.filter(e => isNaN(Number(e))).map(e => (0, i.jsx)(C, {
+    children: t.filter(e => isNaN(Number(e))).map(e => (0, i.jsx)(O, {
       contents: n,
       content: e,
       onChange: r
@@ -102,7 +102,7 @@ function S() {
       newUserMinAgeRequiredOverridden: h.Z.newUserMinAgeRequiredOverridden
     })),
     [_, j] = r.useState(""),
-    C = null != (e = (0, a.e7)([g.Z], () => {
+    O = null != (e = (0, a.e7)([g.Z], () => {
       var e;
       return null == (e = g.Z.settings.userContent) ? void 0 : e.dismissedContents
     })) ? e : new Uint8Array,
@@ -178,9 +178,9 @@ function S() {
           children: (0, i.jsx)(d.vwX, {
             children: "Recently Shown"
           })
-        }), (0, i.jsx)(O, {
+        }), (0, i.jsx)(C, {
           items: N,
-          dismissedContents: C,
+          dismissedContents: O,
           handleChange: T
         })]
       }) : null, I.length > 0 ? (0, i.jsxs)(i.Fragment, {
@@ -189,9 +189,9 @@ function S() {
           children: (0, i.jsx)(d.vwX, {
             children: "Recent Overrides"
           })
-        }), (0, i.jsx)(O, {
+        }), (0, i.jsx)(C, {
           items: I,
-          dismissedContents: C,
+          dismissedContents: O,
           handleChange: T
         })]
       }) : null, (0, i.jsx)(u.Z, {
@@ -199,9 +199,9 @@ function S() {
         children: (0, i.jsx)(d.vwX, {
           children: "Available Dismissible Contents"
         })
-      }), (0, i.jsx)(O, {
+      }), (0, i.jsx)(C, {
         items: y,
-        dismissedContents: C,
+        dismissedContents: O,
         handleChange: T
       })]
     })]

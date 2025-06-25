@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: eab68f360e29621f
+  Original File Name: d94d05042204bc08
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -824,7 +824,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -8381,57 +8381,6 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .pillIcon__3ce43 {
     padding-right: 5px
-}
-
-.giftingContainerHighVis__3ce43 {
-    align-items: center;
-    border-radius: var(--radius-lg);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 40px auto;
-    padding: 16px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content
-}
-
-.theme-light .giftingContainerHighVis__3ce43 {
-    background: rgba(235,237,239,.7)
-}
-
-.theme-dark .giftingContainerHighVis__3ce43 {
-    background: rgba(35,36,40,.5)
-}
-
-.giftingContainerHighVisIcon__3ce43 {
-    height: 64px;
-    margin-right: 18px;
-    min-height: 16px;
-    min-width: 16px;
-    width: 64px
-}
-
-.giftingContainerHighVisDescription__3ce43 {
-    align-items: baseline;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 50%
-}
-
-.giftingContainerHighVisButtonContainer__3ce43 {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: 8px
-}
-
-.giftingContainerHighVisButtonContainer__3ce43 .giftingContainerHighVisButton__3ce43 {
-    color: var(--brand-500);
-    font-weight: 700;
-    height: 50px
 }
 
 .container_b9abc5 {
@@ -19349,4 +19298,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=eab68f360e29621f.css.map*/
+/*# sourceMappingURL=d94d05042204bc08.css.map*/

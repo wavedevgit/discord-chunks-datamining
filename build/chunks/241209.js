@@ -52,10 +52,10 @@ function E(e, t) {
 }
 let j = new RegExp("https?://".concat(null != (i = window.GLOBAL_ENV.CDN_HOST) ? i : ""));
 
-function C(e) {
+function O(e) {
   return "string" == typeof e.content ? e.content : v(e.content)
 }
-let O = E(x({}, d().defaultRules), {
+let C = E(x({}, d().defaultRules), {
     heading: E(x({}, d().defaultRules.heading), {
       react(e, t, n) {
         let i = "h".concat(e.level);
@@ -91,7 +91,7 @@ let O = E(x({}, d().defaultRules), {
     blockQuote: E(x({}, d().defaultRules.blockQuote), {
       react: (e, t, n) => (0, s.jsx)("blockquote", {
         className: f.blockquote,
-        children: C(e)
+        children: O(e)
       }, n.key)
     }),
     image: E(x({}, d().defaultRules.image), {
@@ -111,7 +111,7 @@ let O = E(x({}, d().defaultRules), {
       order: 6,
       react: (e, t, n) => (0, s.jsx)("code", {
         className: f.codeInline,
-        children: C(e)
+        children: O(e)
       }, n.key)
     }),
     codeBlock: E(x({}, d().defaultRules.codeBlock), {
@@ -119,7 +119,7 @@ let O = E(x({}, d().defaultRules), {
         let r = () => (0, s.jsx)("pre", {
           children: (0, s.jsx)("code", {
             className: o()(b.scrollbarGhostHairline, "hljs"),
-            children: C(e)
+            children: O(e)
           })
         }, i.key);
         return (0, s.jsx)(u.GI, {
@@ -144,8 +144,8 @@ let O = E(x({}, d().defaultRules), {
       }
     })
   }),
-  S = d().parserFor(O),
-  v = d().reactFor(d().ruleOutput(O, "react"));
+  S = d().parserFor(C),
+  v = d().reactFor(d().ruleOutput(C, "react"));
 class T extends(r = l.PureComponent) {
   render() {
     let {
@@ -163,7 +163,7 @@ class T extends(r = l.PureComponent) {
     })
   }
 }
-_(T, "rules", O), _(T, "defaultProps", {
+_(T, "rules", C), _(T, "defaultProps", {
   parser: S,
   output: v
 });

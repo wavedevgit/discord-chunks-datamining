@@ -22,8 +22,8 @@ var r = n(512722),
   x = n(271383),
   E = n(594174),
   j = n(74538),
-  C = n(51144),
-  O = n(18438),
+  O = n(51144),
+  C = n(18438),
   S = n(778825),
   v = n(52597),
   T = n(430131),
@@ -119,7 +119,7 @@ function R(e) {
     className: y.sectionsContainer,
     children: [(0, i.jsx)(T.Z, {
       errors: null != (r = null == V ? void 0 : V.nick) ? r : null == z ? void 0 : z.nick,
-      username: C.ZP.getName(Z),
+      username: O.ZP.getName(Z),
       pendingNick: k,
       currentNick: null == Y ? void 0 : Y.nick,
       guild: H
@@ -147,7 +147,7 @@ function R(e) {
           })]
         }),
         showRemoveAvatarButton: q,
-        onAvatarChange: e => ee(e, null == Y ? void 0 : Y.avatar, O.I5),
+        onAvatarChange: e => ee(e, null == Y ? void 0 : Y.avatar, C.I5),
         errors: null == V ? void 0 : V.avatar,
         guildId: H.id,
         disabled: !K
@@ -182,7 +182,7 @@ function R(e) {
       }, "effect"), (0, i.jsx)(g.Z, {
         showRemoveBannerButton: X,
         errors: null == V ? void 0 : V.banner,
-        onBannerChange: e => ee(e, null == W ? void 0 : W.banner, O.g_),
+        onBannerChange: e => ee(e, null == W ? void 0 : W.banner, C.g_),
         guildId: null == H ? void 0 : H.id,
         disabled: !K
       }, "banner"), (0, i.jsx)(h.Z, {

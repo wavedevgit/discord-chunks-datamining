@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(530392),
   E = n(37148),
   j = n(481060),
-  C = n(240872),
-  O = n(514361),
+  O = n(240872),
+  C = n(514361),
   S = n(705262),
   v = n(526156),
   T = n(706705),
@@ -1076,7 +1076,7 @@ function ee(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, [s, l] = r.useState("md"), [a, o] = r.useState("Demo Modal"), [c, d] = r.useState("Header body copy"), [u, m] = r.useState(!1), [g, p] = r.useState(!1), [f, b] = r.useState(!1), [C, O] = r.useState(!1), [S, v] = r.useState(!1);
+  } = e, [s, l] = r.useState("md"), [a, o] = r.useState("Demo Modal"), [c, d] = r.useState("Header body copy"), [u, m] = r.useState(!1), [g, p] = r.useState(!1), [f, b] = r.useState(!1), [O, C] = r.useState(!1), [S, v] = r.useState(!1);
   return (0, i.jsxs)(h.IX, {
     transitionState: t,
     onClose: n,
@@ -1151,8 +1151,8 @@ function ee(e) {
                 children: "Show Preview Content"
               })
             }), (0, i.jsx)(j.XZJ, {
-              value: C,
-              onChange: (e, t) => O(t),
+              value: O,
+              onChange: (e, t) => C(t),
               children: (0, i.jsx)(j.Text, {
                 variant: "text-md/medium",
                 children: "Show Action Bar Leading Input"
@@ -1178,7 +1178,7 @@ function ee(e) {
         children: "32 Members ● 19 Online"
       })]
     }), (0, i.jsx)(_.G, {
-      leading: C ? (0, i.jsx)(_.B, {
+      leading: O ? (0, i.jsx)(_.B, {
         value: !1,
         onChange: () => {}
       }) : void 0,
@@ -1348,7 +1348,7 @@ function er() {
         children: "Open modal"
       }), (0, i.jsx)(j.zxk, {
         onClick: () => {
-          C.Z.show({
+          O.Z.show({
             title: "Alert",
             body: "This is an alert",
             confirmText: "Confirm Text",
@@ -1393,7 +1393,7 @@ function er() {
 }
 
 function es() {
-  let e = (0, c.e7)([O.Z], () => O.Z.gradientPreset);
+  let e = (0, c.e7)([C.Z], () => C.Z.gradientPreset);
   return (0, i.jsx)(j.f6W, {
     theme: y.BR.DARKER,
     disableAdaptiveTheme: !0,

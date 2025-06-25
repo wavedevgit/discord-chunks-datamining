@@ -53,7 +53,7 @@ function x(e, t) {
 function E(e) {
   let {
     user: t
-  } = e, s = (0, d.Z)(), E = (0, u.VM)(), j = (0, a.e7)([c.default], () => c.default.getCurrentUser()), C = r.useCallback(() => {
+  } = e, s = (0, d.Z)(), E = (0, u.VM)(), j = (0, a.e7)([c.default], () => c.default.getCurrentUser()), O = r.useCallback(() => {
     l()(void 0 !== j, "User must be logged in to accept a link request"), (0, o.ZDy)(async () => {
       let {
         default: e
@@ -63,7 +63,7 @@ function E(e) {
         otherUser: t
       }))
     })
-  }, [j, t]), O = r.useCallback(() => {
+  }, [j, t]), C = r.useCallback(() => {
     l()(void 0 !== j, "User must be logged in to decline a link request"), (0, o.ZDy)(async () => {
       let {
         default: e
@@ -104,12 +104,12 @@ function E(e) {
           icon: o.dz2,
           className: b.__invalid_actionAccept,
           tooltip: f.intl.string(h.default.krWQZG),
-          onClick: C
+          onClick: O
         }), (0, i.jsx)(m.Z, {
           icon: o.Dio,
           className: b.__invalid_actionDeny,
           tooltip: f.intl.string(h.default.bBDeND),
-          onClick: O
+          onClick: C
         })]
       })
     })]

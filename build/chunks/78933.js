@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(734934),
   E = n(300284),
   j = n(680295),
-  C = n(785717),
-  O = n(209698),
+  O = n(785717),
+  C = n(209698),
   S = n(687158),
   v = n(892001),
   T = n(899007),
@@ -86,7 +86,7 @@ function es(e) {
     openedAt: ea
   } = e, eo = __OVERLAY__, ec = (0, S.ZP)(t.id), {
     analyticsLocations: ed
-  } = (0, m.ZP)(u.Z.USER_PROFILE_ACCOUNT_POPOUT), eu = (0, C.ZB)({
+  } = (0, m.ZP)(u.Z.USER_PROFILE_ACCOUNT_POPOUT), eu = (0, O.ZB)({
     layout: "ACCOUNT_POPOUT",
     userId: t.id
   }), {
@@ -113,15 +113,15 @@ function es(e) {
     ex = (0, x.p)(),
     eE = U.Sb.useSetting(),
     ej = (0, J.I)(ep),
-    eC = (0, K.g)(n),
-    eO = (0, E.Z)({
+    eO = (0, K.g)(n),
+    eC = (0, E.Z)({
       analyticsLocations: ed
     }),
     eS = (0, Y.I5)(t),
     ev = (0, p.p)({
       location: "UserProfileAccountPopout"
     }),
-    eT = (0, O.b)({
+    eT = (0, C.b)({
       location: "UserProfileAccountPopout"
     }),
     eN = (0, g.Z)({
@@ -153,7 +153,7 @@ function es(e) {
     eM = (null == ec ? void 0 : ec.profileEffectId) != null && !eZ.current;
   return (0, i.jsx)(m.Gt, {
     value: ed,
-    children: (0, i.jsx)(C.Mt, {
+    children: (0, i.jsx)(O.Mt, {
       value: eu,
       openedAt: ea,
       fetchStartedAt: null == ec ? void 0 : ec.fetchStartedAt,
@@ -255,7 +255,7 @@ function es(e) {
                     label: et.intl.string(et.t.s5vZlZ),
                     icon: o.vdY,
                     onClick: () => {
-                      eO(), n()
+                      eC(), n()
                     }
                   }), (0, i.jsx)(A.Z, {
                     className: en.menuDivider
@@ -356,7 +356,7 @@ function es(e) {
                         navId: "switch-accounts-submenu",
                         "aria-label": et.intl.string(et.t.wFhVqK),
                         onClose: t,
-                        children: eC
+                        children: eO
                       })
                     }
                   }), !__OVERLAY__ && H.wS && eE && (0, i.jsxs)(i.Fragment, {

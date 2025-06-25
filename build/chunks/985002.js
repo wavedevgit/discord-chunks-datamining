@@ -12,7 +12,7 @@ function o(e) {
   let {
     onError: t,
     onSuccess: n
-  } = null != e ? e : {}, [o, c] = i.useState(!1), [d, u] = i.useState(!1), [m, g] = i.useState(!1), [p, h] = i.useState(!1), [f, b] = i.useState(!1), [_, x] = i.useState(!1), [E, j] = i.useState(!1), [C, O] = i.useState(!1), S = o || d || m || p || _ || C, v = i.useCallback(async e => {
+  } = null != e ? e : {}, [o, c] = i.useState(!1), [d, u] = i.useState(!1), [m, g] = i.useState(!1), [p, h] = i.useState(!1), [f, b] = i.useState(!1), [_, x] = i.useState(!1), [E, j] = i.useState(!1), [O, C] = i.useState(!1), S = o || d || m || p || _ || O, v = i.useCallback(async e => {
     if (!S) {
       c(!0);
       try {
@@ -110,18 +110,18 @@ function o(e) {
         i = n[n.length - 1],
         a = l.Z.getStartId(),
         o = l.Z.getSelectedTeenId();
-      if (!C && null != a && null != o) {
-        O(!0);
+      if (!O && null != a && null != o) {
+        C(!0);
         try {
           await s.ZP.fetchMoreTeenActivity(o, e, a, i.event_id)
         } catch (n) {
           let e = new r.Hx(n);
           null == t || t(e)
         } finally {
-          O(!1)
+          C(!1)
         }
       }
-    }, [C, t]),
+    }, [O, t]),
     isAcceptLoading: o,
     isDeclineLoading: d,
     isDisconnectLoading: m,
@@ -129,6 +129,6 @@ function o(e) {
     isGetLinkCodeLoading: f,
     isSelectTeenUserLoading: E,
     isRequestingLink: _,
-    isMoreLoading: C
+    isMoreLoading: O
   }
 }

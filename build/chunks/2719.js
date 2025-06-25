@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(299206),
   E = n(295474),
   j = n(144114),
-  C = n(918505),
-  O = n(332473),
+  O = n(918505),
+  C = n(332473),
   S = n(921801),
   v = n(485341),
   T = n(687158),
@@ -81,7 +81,7 @@ function Y(e) {
   let {
     className: a,
     user: o
-  } = e, c = r.useRef(null), m = (0, C.o9)(), g = (0, O.b)(), p = (0, E.gS)(), h = null != (s = null == p || null == (t = p.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
+  } = e, c = r.useRef(null), m = (0, O.o9)(), g = (0, C.b)(), p = (0, E.gS)(), h = null != (s = null == p || null == (t = p.nick) ? void 0 : t[0]) ? s : null, [f, b] = r.useState(!1);
   r.useEffect(() => {
     b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [o.username]);

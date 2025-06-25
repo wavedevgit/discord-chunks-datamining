@@ -1,6 +1,6 @@
 /** Chunk was on 91372 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685), n(65234), n(111804), n(490233), n(97749), n(35282);
 var i = n(255367),
   r = n(73800),
@@ -21,13 +21,13 @@ var i = n(255367),
   x = n(388032),
   E = n(614729),
   j = n(865215);
-let C = () => {
+let O = () => {
   (0, d.z)(c.X);
   let e = r.useRef(null),
     t = r.useRef(null),
-    [n, C] = r.useState(!1),
+    [n, O] = r.useState(!1),
     {
-      analyticsLocations: O
+      analyticsLocations: C
     } = (0, o.ZP)(a.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [S, v] = r.useState(!1),
     T = "true" === new URLSearchParams(window.location.search).get("autoScroll");
@@ -38,7 +38,7 @@ let C = () => {
       children: (0, i.jsx)("div", {
         className: E.container,
         children: (0, i.jsxs)(o.Gt, {
-          value: O,
+          value: C,
           children: [(0, i.jsx)(p.Z, {
             className: E.heroHeading,
             location: h.MQ.HOME
@@ -54,7 +54,7 @@ let C = () => {
             noBackground: !0,
             leftAlignHeaders: !0,
             showAllPerksButton: (0, i.jsx)(b.Z, {
-              setIsAllPerksVisible: C,
+              setIsAllPerksVisible: O,
               previousComponent: h.MQ.HOME
             })
           }), (0, i.jsx)(g.Z, {
@@ -70,7 +70,7 @@ let C = () => {
             innerRef: t,
             onChange: e => {
               e && !S && (u.default.track(_.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                location_stack: O
+                location_stack: C
               }), v(!0))
             },
             children: (0, i.jsx)("div", {
@@ -88,7 +88,7 @@ let C = () => {
       })
     }), (0, i.jsx)(f.Z, {
       isAllPerksVisible: n,
-      setIsAllPerksVisible: C,
+      setIsAllPerksVisible: O,
       previousComponent: h.MQ.HOME
     })]
   })
