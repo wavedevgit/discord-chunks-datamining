@@ -1,6 +1,6 @@
 /**
   Module ID: 43988
-  Original File Name: 7ca794dbfecf0806
+  Original File Name: 3230fd63eb5edbd1
 **/
 .premiumTrialBadge_e4ef22 {
     align-items: center;
@@ -39,11 +39,11 @@
 
 .premiumTrialBadge__4c1e4 {
     align-items: center;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     color: var(--header-primary);
     display: flex;
     margin-left: auto;
-    padding: 0 6px;
+    padding: 1px 6px;
     pointer-events: all;
     text-transform: uppercase
 }
@@ -1858,4 +1858,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=7ca794dbfecf0806.css.map*/
+/*# sourceMappingURL=3230fd63eb5edbd1.css.map*/

@@ -156,7 +156,7 @@ let y = t => {
     }, {
       text: X,
       onClick: y,
-      variant: "destructive-primary"
+      variant: "critical-primary"
     }],
     children: j ? (0, i.jsx)(a.Text, {
       variant: "text-md/normal",

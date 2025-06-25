@@ -77,13 +77,11 @@ function I(e, t) {
 }
 let T = {
     sm: "text-sm/semibold",
-    md: "text-md/semibold",
-    lg: "text-lg/semibold"
+    md: "text-md/semibold"
   },
   S = {
     sm: "xs",
-    md: "refresh_sm",
-    lg: "md"
+    md: "refresh_sm"
   };
 
 function A(e) {
@@ -98,11 +96,11 @@ function A(e) {
       iconOpticalOffsetMargin: R = 0,
       fullWidth: P = !1,
       focusProps: w,
-      submitting: D = !1,
-      submittingStartedLabel: L,
-      submittingFinishedLabel: x
+      loading: D,
+      loadingStartedLabel: L,
+      loadingFinishedLabel: x
     } = e,
-    k = v(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "fullWidth", "focusProps", "submitting", "submittingStartedLabel", "submittingFinishedLabel"]);
+    k = v(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "fullWidth", "focusProps", "loading", "loadingStartedLabel", "loadingFinishedLabel"]);
   let M = (0, m.M)(),
     j = null != (n = null == M ? void 0 : M.size) ? n : E,
     U = null != (a = null == M ? void 0 : M.fullWidth) ? a : P;
@@ -137,14 +135,13 @@ function A(e) {
   }, [D, L, x]);
   let W = (0, r.jsxs)("div", {
       className: o()(g.buttonChildren, {
-        [g.submitting]: D
+        [g.loading]: D
       }),
       children: [null != t && "start" === A && t, B && (0, r.jsx)(f.x, {
         tag: "span",
         variant: T[j],
         color: "none",
         lineClamp: 1,
-        className: g.text,
         children: y
       }), null != t && "end" === A && t]
     }),

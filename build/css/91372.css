@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: d96f7519f4abe596
+  Original File Name: ab6ee0cfb1479a2b
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -5549,6 +5549,32 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     flex-direction: column;
     padding-bottom: 20px;
     width: 100%
+}
+
+.attributionBannerContainerRebranded_afe9b4 {
+    align-items: center;
+    background: var(--color-background-mod-normal,hsla(240,4%,61%,.2));
+    border: 1px solid var(--color-border-faint,hsla(240,4%,61%,.161));
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 24px auto;
+    padding: 12px 16px;
+    width: 100%
+}
+
+.attributionBannerContentApplicationHomeRebranded_afe9b4 {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    width: 100%
+}
+
+.textContainerRebranded_afe9b4 {
+    color: var(--white);
+    margin-left: 12px;
+    text-align: left
 }
 
 .attributionBannerContent_afe9b4 {
@@ -14684,7 +14710,7 @@ div.nagbar_d74ef8 {
     overflow: hidden
 }
 
-.linkButton__969d2 {
+.textButton__98277 {
     background: initial;
     box-sizing: border-box;
     color: inherit;
@@ -14704,35 +14730,27 @@ div.nagbar_d74ef8 {
     width: min-content
 }
 
-.linkButton__969d2:disabled {
+.textButton__98277:disabled {
     opacity: .5
 }
 
-.linkButton__969d2:hover .text__969d2,:where(.decorate-links) .text__969d2 {
+.textButton__98277:hover .text__98277,:where(.decorate-links) .text__98277 {
     text-decoration: underline
 }
 
-.primary__969d2 {
+.primary__98277 {
     color: var(--text-brand)
 }
 
-.secondary__969d2 {
+.secondary__98277 {
     color: var(--text-primary)
 }
 
-.link__969d2 {
-    color: var(--text-link)
-}
-
-:where(.low-saturation) .link__969d2 {
-    color: var(--text-link-low-saturation)
-}
-
-.always-white__969d2 {
+.always-white__98277 {
     color: var(--white)
 }
 
-.destructive__969d2 {
+.critical__98277 {
     color: var(--text-feedback-critical)
 }
 
@@ -19313,4 +19331,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=d96f7519f4abe596.css.map*/
+/*# sourceMappingURL=ab6ee0cfb1479a2b.css.map*/

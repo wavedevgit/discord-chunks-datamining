@@ -172,7 +172,7 @@ class x extends r.PureComponent {
         }, {
           text: S.intl.string(S.t.oyYWHB),
           onClick: this.handleDeleteMana,
-          variant: "destructive-primary"
+          variant: "critical-primary"
         }],
         onClose: b.onClose,
         transitionState: b.transitionState,

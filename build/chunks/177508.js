@@ -12,7 +12,7 @@ var i = n(255367),
   d = n(680018),
   u = n(374415),
   m = n(861066),
-  g = n(901919),
+  g = n(179538),
   p = n(279570),
   h = n(257465),
   f = n(667202),
@@ -260,13 +260,13 @@ function F(e) {
   }, 3e3)), () => {
     o.current >= 0 && clearTimeout(o.current)
   }), [l, n]), (0, i.jsx)(t, D(R({}, s), {
-    submitting: n ? l : void 0,
+    loading: n ? l : void 0,
     onClick: () => a(!l)
   }))
 }
 
 function H() {
-  let [e, t] = r.useState("md"), [n, s] = r.useState("start"), [l, o] = r.useState(!0), c = ["primary", "secondary", "tertiary", "destructive-primary", "destructive-secondary", "active", "overlay-primary", "overlay-secondary"], p = [...c, "expressive"].map(t => (0, i.jsx)(F, {
+  let [e, t] = r.useState("md"), [n, s] = r.useState("start"), [l, o] = r.useState(!0), c = ["primary", "secondary", "critical-primary", "critical-secondary", "active", "overlay-primary", "overlay-secondary"], p = [...c, "expressive"].map(t => (0, i.jsx)(F, {
     component: d.z,
     variant: t,
     text: "".concat((0, a.capitalize)(t), " ").concat(e.toUpperCase()),
@@ -274,24 +274,18 @@ function H() {
     icon: "none" !== n ? j.gw7 : void 0,
     iconPosition: n,
     showLoadingAnimation: l
-  }, t + e)), h = c.map(t => (0, i.jsx)(F, {
+  }, t + e)), h = [...c, "tertiary"].map(t => (0, i.jsx)(F, {
     component: m.h,
     variant: t,
     icon: j.gw7,
     size: e,
     "aria-label": "".concat(t, " ").concat(e),
     showLoadingAnimation: l
-  }, t + e)), f = ["primary", "secondary", "link", "always-white", "destructive"].map(e => (0, i.jsxs)(r.Fragment, {
-    children: [(0, i.jsx)(g.Q, {
+  }, t + e)), f = ["primary", "secondary", "always-white", "critical"].map(e => (0, i.jsx)(r.Fragment, {
+    children: (0, i.jsx)(g.A, {
       variant: e,
-      text: "Internal link",
-      icon: "none" !== n ? j.gw7 : void 0,
-      iconPosition: n
-    }), (0, i.jsx)(g.Q, {
-      variant: e,
-      text: "External link",
-      external: !0
-    })]
+      text: "Text button"
+    })
   }, e));
   return (0, i.jsxs)("div", {
     className: A.section,
@@ -315,9 +309,6 @@ function H() {
           }, {
             value: "md",
             name: "Medium"
-          }, {
-            value: "lg",
-            name: "Large"
           }],
           value: e
         })
@@ -1313,7 +1304,7 @@ function en(e) {
       text: "Cancel",
       onClick: n
     }, {
-      variant: "destructive-primary",
+      variant: "critical-primary",
       text: "Confirm",
       onClick: n
     }]
