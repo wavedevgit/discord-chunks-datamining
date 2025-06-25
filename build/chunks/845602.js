@@ -1,7 +1,7 @@
 /** Chunk was on 52370 **/
 r.d(t, {
-  E: () => x,
-  Z: () => C
+  E: () => C,
+  Z: () => h
 }), r(388685);
 var n = r(255367),
   o = r(73800),
@@ -18,12 +18,11 @@ var n = r(255367),
   g = r(141006),
   _ = r(981631),
   m = r(131085),
-  j = r(93841),
-  y = r(388032),
-  O = r(606217),
-  h = r(183375);
+  j = r(388032),
+  y = r(606217),
+  O = r(183375);
 
-function C() {
+function h() {
   var e;
   let t = o.useMemo(() => Math.floor(Math.random() * g.tl.length), []),
     [r, a] = o.useState({
@@ -42,15 +41,15 @@ function C() {
       animateGradient: !0
     });
   return (0, n.jsxs)("div", {
-    className: O.container,
+    className: y.container,
     children: [(0, n.jsx)("div", {
-      className: O.messageContainer,
+      className: y.messageContainer,
       children: (0, n.jsx)(f.l, {
         avatar: c.Z,
         username: "Cherry",
         usernameStyle: u,
-        usernameClassName: i()(p, h.animateGradient),
-        message: y.intl.string(j.default.eTHkQU)
+        usernameClassName: i()(p, O.animateGradient),
+        message: j.intl.string(j.t["6OSasb"])
       })
     }), (0, n.jsx)(d.default, {
       defaultColor: _.p6O,
@@ -99,21 +98,21 @@ function C() {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     guildId: t
   } = e, [r, a] = o.useState(m.x_.HEART);
   return (0, n.jsxs)("div", {
-    className: O.container,
+    className: y.container,
     children: [(0, n.jsx)("div", {
-      className: O.messageContainer,
+      className: y.messageContainer,
       children: (0, n.jsx)(f.l, {
         avatar: u.Z,
         username: "Roka",
         usernameStyle: {
           color: "var(--brand-400)"
         },
-        message: y.intl.string(j.default.eTHkQU),
+        message: j.intl.string(j.t["6OSasb"]),
         decorations: (0, n.jsx)(b.S, {
           guildId: t,
           tag: "GGEZ",

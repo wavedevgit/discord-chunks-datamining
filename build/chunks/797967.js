@@ -168,7 +168,7 @@ function m(e) {
         [e]: t
       }))
     }, []),
-    T = o.useCallback(() => {
+    Z = o.useCallback(() => {
       var e, t, r, o, a;
       let i = {
           background: "linear-gradient(90deg, ".concat((0, l.Rf)(null != (e = k.start) ? e : c.p6O), " 0%, ").concat((0, l.Rf)(k.end), " 100%)")
@@ -219,7 +219,7 @@ function m(e) {
         })]
       })
     }, [m, d, k, I, R, B]),
-    Z = o.useCallback(() => (0, n.jsx)(s.Z$W, {
+    T = o.useCallback(() => (0, n.jsx)(s.Z$W, {
       onChange: N,
       value: P
     }), [N, P]),
@@ -229,7 +229,7 @@ function m(e) {
       }));
       return d ? t : (0, n.jsx)(s.yRy, {
         targetElementRef: C,
-        renderPopout: Z,
+        renderPopout: T,
         position: m,
         children: e => (0, n.jsx)(s.ua7, {
           targetElementRef: C,
@@ -242,7 +242,7 @@ function m(e) {
           }))
         })
       })
-    }, [m, d, Z]),
+    }, [m, d, T]),
     L = o.useCallback(e => {
       let t = (0, n.jsx)(s.AGO, f({}, e));
       return d ? t : (0, n.jsx)(s.ua7, {
@@ -256,7 +256,7 @@ function m(e) {
   return (0, n.jsx)(s.zH8, b(f({}, e), {
     renderDefaultButton: L,
     renderCustomButton: G,
-    renderGradientCustomButton: T,
+    renderGradientCustomButton: Z,
     isGradient: O,
     customColor: P,
     onChange: O ? R : D
