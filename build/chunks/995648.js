@@ -1,12 +1,12 @@
-/** Chunk was on 56534 **/
+/** Chunk was on 28305 **/
 r.d(t, {
   Z: () => c
 });
 var n = r(255367);
 r(73800);
 var i = r(120356),
-  a = r.n(i),
-  o = r(481060),
+  o = r.n(i),
+  a = r(481060),
   l = r(422559),
   s = r(432161);
 
@@ -19,9 +19,9 @@ function c(e) {
     className: d
   } = e;
   return (0, n.jsxs)("div", {
-    className: a()(s.list, d),
+    className: o()(s.list, d),
     children: [null != t && t.length > 0 ? (0, n.jsxs)(n.Fragment, {
-      children: [null != i ? (0, n.jsx)(o.X6q, {
+      children: [null != i ? (0, n.jsx)(a.X6q, {
         variant: "heading-sm/semibold",
         color: "header-primary",
         className: s.header,
@@ -30,18 +30,18 @@ function c(e) {
         className: s.container,
         children: t.map(e => (0, n.jsxs)("div", {
           className: s.permission,
-          children: [(0, n.jsx)(o.dz2, {
+          children: [(0, n.jsx)(a.dz2, {
             size: "xs",
             color: "currentColor",
             className: s.check
-          }), (0, n.jsx)(o.Text, {
+          }), (0, n.jsx)(a.Text, {
             variant: "text-sm/normal",
             children: (0, l.wt)(e)
           })]
         }, e.toString()))
       })]
     }) : null, null != r && r.length > 0 ? (0, n.jsxs)(n.Fragment, {
-      children: [null != c ? (0, n.jsx)(o.X6q, {
+      children: [null != c ? (0, n.jsx)(a.X6q, {
         variant: "heading-sm/semibold",
         color: "header-primary",
         className: s.header,
@@ -50,11 +50,11 @@ function c(e) {
         className: s.container,
         children: r.map(e => (0, n.jsxs)("div", {
           className: s.permission,
-          children: [(0, n.jsx)(o.Dio, {
+          children: [(0, n.jsx)(a.Dio, {
             size: "xs",
             color: "currentColor",
             className: s.cross
-          }), (0, n.jsx)(o.Text, {
+          }), (0, n.jsx)(a.Text, {
             variant: "text-sm/normal",
             children: (0, l.wt)(e)
           })]

@@ -23,8 +23,8 @@ function o(e) {
     renderHeader: g,
     renderPurchaseConfirmation: C,
     planGroup: _,
-    reviewWarningMessage: v,
-    skuId: b
+    reviewWarningMessage: b,
+    skuId: v
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -56,7 +56,7 @@ function o(e) {
       return (0, r.jsx)(e, {
         activeSubscription: o,
         stepConfigs: s,
-        skuIDs: [b],
+        skuIDs: [v],
         children: (0, r.jsx)(a.c1, {
           children: (0, r.jsx)(l.KB, {
             children: (0, r.jsx)(i, (j = function(e) {
@@ -85,13 +85,13 @@ function o(e) {
               analyticsObject: m,
               analyticsLocation: p,
               analyticsSubscriptionType: h,
-              skuId: b,
+              skuId: v,
               renderHeader: g,
               renderPurchaseConfirmation: C,
               planGroup: _,
               trialId: c,
               trialFooterMessageOverride: d,
-              reviewWarningMessage: v
+              reviewWarningMessage: b
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(j, Object.getOwnPropertyDescriptors(y)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

@@ -32,8 +32,8 @@ var r = n(255367),
   A = n(43740),
   Z = n(596557),
   x = n(817520),
-  w = n(999309),
-  L = n(408987),
+  L = n(999309),
+  w = n(408987),
   R = n(130734),
   D = n(499137),
   k = n(258871),
@@ -425,7 +425,7 @@ class eS extends i.PureComponent {
         guild: e,
         showGuildTemplateDirtyTooltip: t
       } = this.props;
-      null != e && t && L.Z.hideGuildTemplateDirtyTooltip(e.id)
+      null != e && t && w.Z.hideGuildTemplateDirtyTooltip(e.id)
     }), eE(this, "renderMenuPopout", async () => {
       let {
         default: e
@@ -515,7 +515,7 @@ function eN(e) {
     g = (0, d.e7)([ei.Z], () => ei.Z.getChannelId()),
     [m, b, C] = (0, d.Wu)([en.Z], () => [en.Z.can(eh.Plq.MANAGE_GUILD, o), en.Z.can(eh.Plq.MANAGE_ROLES, o), en.Z.can(eh.Plq.MANAGE_THREADS, o)]),
     P = (0, d.e7)([Q.Z], () => Q.Z.isUnavailable(n)),
-    L = (0, d.e7)([el.default], () => el.default.getCurrentUser()),
+    w = (0, d.e7)([el.default], () => el.default.getCurrentUser()),
     k = (0, d.e7)([K.Z], () => K.Z.darkSidebar ? eh.BRd.DARK : K.Z.theme),
     {
       enableStudyGroup: M
@@ -532,9 +532,9 @@ function eN(e) {
   i.useEffect(() => {
     n !== J && Y(!H)
   }, [n, J, H]);
-  let [eu, ed] = (0, N.ZP)(e => [ef.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(eg.R.GUILD_HEADER_TOOLTIPS)], u.X), ep = (0, v.Z)(o), em = (0, f.s9z)(f.JQI), eb = (0, d.e7)([et.Z], () => et.Z.hasLayers()), e_ = (0, d.e7)([W.Z], () => W.Z.shouldShow(ev)), eE = m && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !eo.s.isDisallowPopupsSet(), eO = (0, d.e7)([$.Z], () => $.Z.getMemberCount(n)), ey = m && null != eO && eO >= 30 && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !eo.s.isDisallowPopupsSet(), eI = b && null != o && (o.hasFeature(eh.oNc.COMMUNITY) || null != eO && eO > 50), eC = (0, w.Z)(n), eN = (null == o ? void 0 : o.hasFeature(eh.oNc.HUB)) === !0, eT = m && (null == o ? void 0 : o.hasFeature(eh.oNc.DISCOVERABLE)) === !0, eP = (0, I.Q)(), ej = (m || (null == o ? void 0 : o.premiumTier) === eh.Eu4.NONE) && !eo.s.isDisallowPopupsSet() && !eP, eA = (0, d.e7)([R.Z, et.Z], () => null != o && null != L && m && !et.Z.hasLayers() && R.Z.shouldShowGuildTemplateDirtyTooltip(n)), eZ = (0, d.e7)([q.Z], () => q.Z.getChannel(a)), {
+  let [eu, ed] = (0, N.ZP)(e => [ef.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(eg.R.GUILD_HEADER_TOOLTIPS)], u.X), ep = (0, v.Z)(o), em = (0, f.s9z)(f.JQI), eb = (0, d.e7)([et.Z], () => et.Z.hasLayers()), e_ = (0, d.e7)([W.Z], () => W.Z.shouldShow(ev)), eE = m && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !eo.s.isDisallowPopupsSet(), eO = (0, d.e7)([$.Z], () => $.Z.getMemberCount(n)), ey = m && null != eO && eO >= 30 && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !eo.s.isDisallowPopupsSet(), eI = b && null != o && (o.hasFeature(eh.oNc.COMMUNITY) || null != eO && eO > 50), eC = (0, L.Z)(n), eN = (null == o ? void 0 : o.hasFeature(eh.oNc.HUB)) === !0, eT = m && (null == o ? void 0 : o.hasFeature(eh.oNc.DISCOVERABLE)) === !0, eP = (0, I.Q)(), ej = (m || (null == o ? void 0 : o.premiumTier) === eh.Eu4.NONE) && !eo.s.isDisallowPopupsSet() && !eP, eA = (0, d.e7)([R.Z, et.Z], () => null != o && null != w && m && !et.Z.hasLayers() && R.Z.shouldShowGuildTemplateDirtyTooltip(n)), eZ = (0, d.e7)([q.Z], () => q.Z.getChannel(a)), {
     isPopoutOpen: ex
-  } = (0, A.y)(), ew = null != (t = null == o ? void 0 : o.hasFeature(eh.oNc.COMMUNITY)) && t, eL = (0, d.e7)([F.Z], () => !s().isEmpty(F.Z.getThreadsForGuild(n))), eR = ea.ZP.isNewUser(L), eD = z && !eR, ek = (0, S.Z)(L);
+  } = (0, A.y)(), eL = null != (t = null == o ? void 0 : o.hasFeature(eh.oNc.COMMUNITY)) && t, ew = (0, d.e7)([F.Z], () => !s().isEmpty(F.Z.getThreadsForGuild(n))), eR = ea.ZP.isNewUser(w), eD = z && !eR, ek = (0, S.Z)(w);
   (0, Z.Z)(o);
   let eM = (0, T.wE)(p.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     eU = (0, U.Z)(n),
@@ -561,7 +561,7 @@ function eN(e) {
     rtcDesyncedVoiceStatesCount: eV,
     isUnavailable: P,
     theme: k,
-    user: L,
+    user: w,
     hasChannelNotice: null != ep || eu,
     anyLayerOpen: em || eb,
     showGuildBoostingProgressBarUpsell: eE,
@@ -572,8 +572,8 @@ function eN(e) {
     showGuildTemplateDirtyTooltip: eA,
     showRoleSubscriptionUpsell: eC,
     showHubPrivacySettingsTooltip: eN,
-    showNewUnreadsBar: ew,
-    showActiveThreadsNotice: C && null != eO && eO >= 200 && eL,
+    showNewUnreadsBar: eL,
+    showActiveThreadsNotice: C && null != eO && eO >= 200 && ew,
     showGuildSoundboardPermissionUpsell: eI,
     showMediaChannelUpsell: eU,
     showTierTemplatesUpsell: eG,

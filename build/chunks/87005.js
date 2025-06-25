@@ -32,7 +32,7 @@ function C(e) {
     includeAuthorizedAppsAndFetch: C
   } = e, {
     sectionDescriptors: _,
-    loading: v
+    loading: b
   } = o.wi({
     context: t,
     filters: h,
@@ -40,7 +40,7 @@ function C(e) {
     allowFetch: s
   });
   return {
-    loading: v,
+    loading: b,
     frecentApps: function(e) {
       let {
         sectionDescriptors: t,
@@ -57,12 +57,12 @@ function C(e) {
         }),
         C = t.filter(e => e.id !== f.bi.FRECENCY && e.id !== f.bi.BUILT_IN),
         _ = "contextless" === n.type,
-        v = r.useMemo(() => {
+        b = r.useMemo(() => {
           let e = [];
           return _ && e.push(p.jT), e
         }, [_]),
-        b = (0, d.h)(C, g);
-      return r.useMemo(() => s ? b.filter(e => null != e.application && (0, m.ye)(e.application) && null != (0, c.Xu)(n, e.id)).filter(e => !v.includes(e.id)) : b.filter(e => !v.includes(e.id)), [s, b, n, v])
+        v = (0, d.h)(C, g);
+      return r.useMemo(() => s ? v.filter(e => null != e.application && (0, m.ye)(e.application) && null != (0, c.Xu)(n, e.id)).filter(e => !b.includes(e.id)) : v.filter(e => !b.includes(e.id)), [s, v, n, b])
     }({
       sectionDescriptors: _,
       context: t,

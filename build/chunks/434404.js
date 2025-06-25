@@ -93,7 +93,7 @@ let R = new s.Z("GuildSettingsActionCreators"),
     },
     async open(e, t, r, i) {
       var a;
-      await Promise.all([n.e("44947"), n.e("25292"), n.e("31978"), n.e("90508"), n.e("39797"), n.e("11141"), n.e("94136"), n.e("40694"), n.e("60272"), n.e("7654"), n.e("55616"), n.e("49049"), n.e("44156"), n.e("20947"), n.e("49286"), n.e("6850"), n.e("58227"), n.e("32652"), n.e("54408"), n.e("20087"), n.e("92754"), n.e("93375"), n.e("64679"), n.e("44606"), n.e("56534"), n.e("7463")]).then(n.bind(n, 994763)), (null == (a = g.Z.getGuild(e)) ? void 0 : a.hasFeature(O.oNc.COMMUNITY)) && (t === O.pNK.GUILD_AUTOMOD && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_AUTOMOD), t === O.pNK.MEMBER_VERIFICATION && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), P.init(e, t, r, i), p.Z.closeGuildSidebar(e), (0, o.jN)(O.S9g.GUILD_SETTINGS)
+      await Promise.all([n.e("44947"), n.e("25292"), n.e("31978"), n.e("90508"), n.e("39797"), n.e("11141"), n.e("94136"), n.e("40694"), n.e("43988"), n.e("7654"), n.e("55616"), n.e("49049"), n.e("44156"), n.e("20947"), n.e("49286"), n.e("6850"), n.e("58227"), n.e("32652"), n.e("54408"), n.e("20087"), n.e("92754"), n.e("93375"), n.e("64679"), n.e("44606"), n.e("28305"), n.e("7463")]).then(n.bind(n, 994763)), (null == (a = g.Z.getGuild(e)) ? void 0 : a.hasFeature(O.oNc.COMMUNITY)) && (t === O.pNK.GUILD_AUTOMOD && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_AUTOMOD), t === O.pNK.MEMBER_VERIFICATION && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), P.init(e, t, r, i), p.Z.closeGuildSidebar(e), (0, o.jN)(O.S9g.GUILD_SETTINGS)
     },
     close() {
       a.Z.dispatch({
@@ -225,12 +225,13 @@ let R = new s.Z("GuildSettingsActionCreators"),
         preferredLocale: y,
         rulesChannelId: v,
         safetyAlertsChannelId: I,
-        discoverySplash: S,
-        publicUpdatesChannelId: N,
-        premiumProgressBarEnabled: C,
-        profile: P,
-        moderatorReportingEnabled: w
-      } = t, D = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, L = A(T({
+        ownerConfiguredContentLevel: S,
+        discoverySplash: N,
+        publicUpdatesChannelId: C,
+        premiumProgressBarEnabled: P,
+        profile: w,
+        moderatorReportingEnabled: D
+      } = t, L = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, x = A(T({
         name: n,
         description: r,
         icon: o,
@@ -247,23 +248,24 @@ let R = new s.Z("GuildSettingsActionCreators"),
         explicit_content_filter: g,
         system_channel_flags: b,
         rules_channel_id: v,
-        discovery_splash: S,
-        public_updates_channel_id: N,
+        owner_configured_content_level: S,
+        discovery_splash: N,
+        public_updates_channel_id: C,
         safety_alerts_channel_id: I
-      }, null != C ? {
-        premium_progress_bar_enabled: C
+      }, null != P ? {
+        premium_progress_bar_enabled: P
       } : null), {
-        profile: null != P ? (0, l.n)(P) : P,
-        moderator_reporting_enabled: w
+        profile: null != w ? (0, l.n)(w) : w,
+        moderator_reporting_enabled: D
       });
       return a.Z.dispatch({
         type: "GUILD_SETTINGS_SUBMIT"
       }), i.tn.patch({
         url: O.ANM.GUILD(e),
         query: {
-          for_discovery: D.isForDiscovery
+          for_discovery: L.isForDiscovery
         },
-        body: L,
+        body: x,
         oldFormErrors: !0,
         rejectWithError: !1
       }).then(t => {
@@ -277,7 +279,7 @@ let R = new s.Z("GuildSettingsActionCreators"),
             errors: e.body
           }), R.error("Failed to save guild settings", {
             errors: e.body
-          }), D.throwErr) throw e.body
+          }), L.throwErr) throw e.body
       })
     },
     updateGuildModeration: (e, t) => i.tn.patch({

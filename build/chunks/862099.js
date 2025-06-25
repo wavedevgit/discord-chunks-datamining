@@ -34,8 +34,8 @@ var r, i = n(255367),
   A = n(725436),
   Z = n(497656),
   x = n(79874),
-  w = n(554747),
-  L = n(230900),
+  L = n(554747),
+  w = n(230900),
   R = n(854698),
   D = n(139712),
   k = n(765305),
@@ -171,7 +171,7 @@ function F(e) {
   let {
     guildEvent: n,
     noticeType: r
-  } = e, a = (0, L.cS)(n), s = null != a ? (0, A.m)(a, !0) : null, u = (0, L.nE)(n), p = (0, d.KS)(u), {
+  } = e, a = (0, w.cS)(n), s = null != a ? (0, A.m)(a, !0) : null, u = (0, w.nE)(n), p = (0, d.KS)(u), {
     startTime: h,
     endTime: f
   } = (0, x.ZP)(n), {
@@ -259,7 +259,7 @@ function F(e) {
 function z(e) {
   let {
     guildEvent: t
-  } = e, n = (0, L.cS)(t);
+  } = e, n = (0, w.cS)(t);
   return null == n ? null : (0, i.jsx)(B, {
     onClickCloseIcon: () => (0, T.ji)({
       eventId: null == t ? void 0 : t.id
@@ -397,7 +397,7 @@ let Q = l.memo(function(e) {
     guild: t
   } = e, {
     showRedesignedLiveChannelNotice: n
-  } = (0, p.o)(!0), r = (0, Z.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([E.Z], () => E.Z.getStageInstanceByChannel(null == r ? void 0 : r.id), [r]), {
+  } = (0, p.o)(!0), r = (0, Z.y)(t.id), l = (0, L.k5)(t.id), a = (0, L.Vm)(t.id), o = (0, s.e7)([E.Z], () => E.Z.getStageInstanceByChannel(null == r ? void 0 : r.id), [r]), {
     isStageNoticeHidden: c,
     isEventNoticeHidden: u
   } = (0, s.cj)([P.Z], () => ({

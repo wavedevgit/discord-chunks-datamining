@@ -101,7 +101,12 @@ function I(e) {
     }] : [];
     await G(r, e, n)
   }, [G]), B = i.useCallback(e => {
-    if (l.joinType === j.A.INVITE) {
+    if (l.isAgeRestricted !== (I.ownerConfiguredContentLevel === v.V_K.AGE_RESTRICTED) && L(async () => {
+        let e = l.isAgeRestricted ? v.V_K.AGE_RESTRICTED : v.V_K.DEFAULT;
+        await M({
+          ownerConfiguredContentLevel: e
+        })
+      }), l.joinType === j.A.INVITE) {
       let {
         requireTerms: t,
         termRules: n = []

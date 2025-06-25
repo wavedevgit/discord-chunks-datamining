@@ -69,8 +69,8 @@ async function N(e, t, n) {
     guild_id: A,
     channel_id: Z,
     prompt: x,
-    disable_guild_select: w,
-    integration_type: L,
+    disable_guild_select: L,
+    integration_type: w,
     pid: R,
     signal: D,
     isSocketRpcPrivateScope: k
@@ -88,7 +88,7 @@ async function N(e, t, n) {
   if ("string" == typeof P ? M = P.split(" ").filter(e => e.length > 0) : Array.isArray(P) && (M = P), null == b.default.getCurrentUser()) throw new O.Z({
     errorCode: I.lTL.OAUTH2_ERROR
   }, "Client is not logged in");
-  if (null != L) l = Number(L);
+  if (null != w) l = Number(w);
   else {
     let e = e => {
         var t;
@@ -159,7 +159,7 @@ async function N(e, t, n) {
     guildId: A,
     channelId: Z,
     prompt: x,
-    disableGuildSelect: w,
+    disableGuildSelect: L,
     disclosures: s,
     integrationType: l,
     pid: R,

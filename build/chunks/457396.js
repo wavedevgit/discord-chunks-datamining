@@ -33,8 +33,8 @@ var r = n(255367),
   A = n(474486),
   Z = n(497334),
   x = n(119850),
-  w = n(938736),
-  L = n(227140),
+  L = n(938736),
+  w = n(227140),
   R = n(474936),
   D = n(981631),
   k = n(921944),
@@ -81,7 +81,7 @@ let G = e => {
         trialOffer: Q
       }),
       er = (0, x.V)(),
-      ei = (0, w.Kn)("NitroTabButton"),
+      ei = (0, L.Kn)("NitroTabButton"),
       {
         fractionalState: el,
         startsAt: ea,
@@ -125,7 +125,7 @@ let G = e => {
       offerExpiresAt: null
     }), E = 2) : $ ? (n = (0, r.jsx)(Z.S, {
       expiresAt: eo
-    }), E = 4) : null != er ? (n = (0, r.jsx)(L.Z, {
+    }), E = 4) : null != er ? (n = (0, r.jsx)(w.Z, {
       copy: er,
       showStars: !1
     }), E = 1) : null != J ? (n = (0, r.jsx)(j.GN, {

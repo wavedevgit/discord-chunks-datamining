@@ -1,27 +1,27 @@
-/** Chunk was on 56534 **/
+/** Chunk was on 28305 **/
 r.d(t, {
   J9: () => p,
   K0: () => D,
   Kq: () => y,
   P$: () => I,
   TA: () => u,
-  Vv: () => T,
+  Vv: () => A,
   W1: () => E,
   aC: () => c,
   i3: () => d,
   le: () => s,
   mA: () => O,
-  t$: () => A,
+  t$: () => T,
   zH: () => _
 });
 var n = r(544891),
   i = r(570140),
-  a = r(706454),
-  o = r(526429),
+  o = r(706454),
+  a = r(526429),
   l = r(981631);
 async function s() {
-  let e = a.default.locale;
-  if (e === o.Z.getFetchedLocale()) return;
+  let e = o.default.locale;
+  if (e === a.Z.getFetchedLocale()) return;
   let t = await n.tn.get({
     url: l.ANM.GUILD_DISCOVERY_CATEGORIES,
     query: {
@@ -42,8 +42,8 @@ async function c(e) {
     let {
       primary_category_id: t,
       category_ids: r,
-      keywords: a,
-      emoji_discoverability_enabled: o,
+      keywords: o,
+      emoji_discoverability_enabled: a,
       partner_actioned_timestamp: s,
       partner_application_timestamp: c,
       is_published: d,
@@ -57,8 +57,8 @@ async function c(e) {
     })).body, E = {
       primaryCategoryId: t,
       secondaryCategoryIds: r,
-      keywords: a,
-      emojiDiscoverabilityEnabled: o,
+      keywords: o,
+      emojiDiscoverabilityEnabled: a,
       partnerActionedTimestamp: s,
       partnerApplicationTimestamp: c,
       isPublished: d,
@@ -143,19 +143,19 @@ function I(e, t) {
   })
 }
 
-function A(e, t) {
+function T(e, t) {
   i.Z.dispatch({
     type: "GUILD_UPDATE_DISCOVERY_METADATA",
     guildId: e,
     socialLinks: t
   })
 }
-async function T(e) {
+async function A(e) {
   let {
     guildId: t,
     primaryCategoryId: r,
-    keywords: a,
-    emojiDiscoverabilityEnabled: o,
+    keywords: o,
+    emojiDiscoverabilityEnabled: a,
     partnerActionedTimestamp: s,
     partnerApplicationTimestamp: c,
     isPublished: d,
@@ -169,20 +169,20 @@ async function T(e) {
       category_ids: E,
       keywords: O,
       emoji_discoverability_enabled: I,
-      partner_actioned_timestamp: A,
-      partner_application_timestamp: T,
+      partner_actioned_timestamp: T,
+      partner_application_timestamp: A,
       is_published: y,
       reasons_to_join: D,
       social_links: h,
-      about: S
+      about: C
     } = (await n.tn.patch({
       url: l.ANM.GUILD_DISCOVERY_METADATA(t),
       body: {
         primary_category_id: r,
-        emoji_discoverability_enabled: o,
+        emoji_discoverability_enabled: a,
         partner_actioned_timestamp: s,
         partner_application_timestamp: c,
-        keywords: a,
+        keywords: o,
         is_published: d,
         reasons_to_join: u,
         social_links: _,
@@ -199,12 +199,12 @@ async function T(e) {
         secondaryCategoryIds: E,
         keywords: O,
         emojiDiscoverabilityEnabled: I,
-        partnerActionedTimestamp: A,
-        partnerApplicationTimestamp: T,
+        partnerActionedTimestamp: T,
+        partnerApplicationTimestamp: A,
         isPublished: y,
         reasonsToJoin: D,
         socialLinks: h,
-        about: S
+        about: C
       }
     })
   } catch (e) {

@@ -46,7 +46,7 @@ let C = function(e) {
           className: L.modalClose,
           onClick: C
         })]
-      }), (0, u.u)(x).map((e, n) => {
+      }), (0, u.uH)(x).map((e, n) => {
         let {
           title: t,
           description: o

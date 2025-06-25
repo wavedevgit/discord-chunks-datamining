@@ -33,7 +33,7 @@ var r = n(255367),
   Z = n(388032),
   x = n(560232);
 
-function w(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function w(e) {
   return e
 }
 
-function L(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -131,7 +131,7 @@ let D = e => {
       }, [_, E, o, I, c]),
       C = j.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
-      children: [y && (0, r.jsx)(k, {}), (0, r.jsx)(u.Qj, L(w({
+      children: [y && (0, r.jsx)(k, {}), (0, r.jsx)(u.Qj, w(L({
         selected: t,
         route: C,
         icon: null != a ? a : s.EOn,
@@ -145,7 +145,7 @@ let D = e => {
       }))]
     })
   },
-  U = e => (0, r.jsx)(M, L(w({}, e), {
+  U = e => (0, r.jsx)(M, w(L({}, e), {
     children: (0, r.jsx)(D, {})
   })),
   G = i.memo(function(e) {
@@ -210,7 +210,7 @@ let D = e => {
       allowOverflow: !0,
       hideOnClick: !1,
       "aria-label": "string" == typeof V ? V : Z.intl.string(Z.t.rSXaxc),
-      children: e => (0, r.jsxs)(M, L(w(L(w({
+      children: e => (0, r.jsxs)(M, w(L(w(L({
         className: null != v.entryPointClassName ? (0, E.l)(x, v.entryPointClassName) : void 0
       }, C), {
         icon: v.entryPointIcon
@@ -256,7 +256,7 @@ let D = e => {
       delay: 100,
       hideOnClick: !1,
       "aria-label": t.title(),
-      children: e => (0, r.jsx)(M, L(w({}, n, e), {
+      children: e => (0, r.jsx)(M, w(L({}, n, e), {
         children: (0, r.jsx)(D, {
           color: t.badgeColor
         })
@@ -276,11 +276,11 @@ let D = e => {
         onShopButtonClick: s
       } = a,
       c = R(a, ["positionControlRef", "onShopButtonClick"]);
-    return (0, r.jsx)(_.Rg, L(w({
+    return (0, r.jsx)(_.Rg, w(L({
       targetElementRef: l,
       positionControlRef: o
     }, c), {
-      children: (0, r.jsx)(M, L(w({}, n), {
+      children: (0, r.jsx)(M, w(L({}, n), {
         listItemRef: l,
         collectibleShopTab: P.AW.ORBS,
         onClick: s
@@ -313,7 +313,7 @@ let D = e => {
       animation: s.yRy.Animation.TRANSLATE,
       closeOnScroll: !0,
       onRequestClose: () => n(A.L.USER_DISMISS),
-      children: e => (0, r.jsx)(M, L(w({}, l), {
+      children: e => (0, r.jsx)(M, w(L({}, l), {
         onClick: c,
         listItemRef: a,
         children: (0, r.jsx)(D, {})
@@ -341,28 +341,28 @@ let D = e => {
       },
       listItemRef: l
     };
-    if (o) return (0, r.jsx)(H, L(w({}, d), {
+    if (o) return (0, r.jsx)(H, w(L({}, d), {
       listScrollerRef: a
     }));
     if (null != s) switch (s.type) {
       case T.k2.TOOLTIP:
-        return (0, r.jsx)(V, L(w({}, d), {
+        return (0, r.jsx)(V, w(L({}, d), {
           displayOptions: s
         }));
       case T.k2.COACHTIP:
-        return (0, r.jsx)(B, L(w({}, d), {
+        return (0, r.jsx)(B, w(L({}, d), {
           displayOptions: s
         }));
       case T.k2.BADGE:
-        return (0, r.jsx)(U, w({}, d));
+        return (0, r.jsx)(U, L({}, d));
       case T.k2.COACHMARK:
-        return (0, r.jsx)(F, L(w({
+        return (0, r.jsx)(F, w(L({
           dismissContent: c
         }, d), {
           displayOptions: s
         }))
     }
     return (0, r.jsxs)(r.Fragment, {
-      children: [u && (0, r.jsx)(z, {}), (0, r.jsx)(M, w({}, d))]
+      children: [u && (0, r.jsx)(z, {}), (0, r.jsx)(M, L({}, d))]
     })
   }

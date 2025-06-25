@@ -83,11 +83,11 @@ function j(e) {
       suppress: Z
     } = (0, b.Z)(t),
     x = (0, o.e7)([_.Z], () => _.Z.isDeaf()),
-    w = A || Z || x,
-    [L, R] = i.useState(!1),
+    L = A || Z || x,
+    [w, R] = i.useState(!1),
     D = t.getGuildId(),
     k = (0, O.sR)({
-      isSoundboardButtonDisabled: w
+      isSoundboardButtonDisabled: L
     }),
     [M, U] = (0, m.cv)(k),
     {
@@ -118,7 +118,7 @@ function j(e) {
   } = (0, c.j)(), Y = e => (0, r.jsx)(u.yRy, {
     targetElementRef: j,
     animation: u.yRy.Animation.FADE,
-    shouldShow: L,
+    shouldShow: w,
     position: "top",
     onRequestClose: () => R(!1),
     renderPopout: e => {
@@ -140,15 +140,15 @@ function j(e) {
       ref: j,
       children: (0, r.jsx)(u.zxk, P(T(P(T({}, e, t), {
         className: a()(N.button, N.buttonColor, {
-          [N.greyButtonActive]: L,
-          [N.disabled]: w
+          [N.greyButtonActive]: w,
+          [N.disabled]: L
         }),
         wrapperClassName: N.button,
         innerClassName: N.buttonContents,
-        disabled: w,
+        disabled: L,
         onClick: () => {
           var t;
-          null != M && M !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && U(C.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), R(!L), F(), (0, f.v)(B, f.d.SOUNDBOARD)
+          null != M && M !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && U(C.L.UNKNOWN), null == e || null == (t = e.onClick) || t.call(e), R(!w), F(), (0, f.v)(B, f.d.SOUNDBOARD)
         },
         onMouseEnter: t => {
           var n, r;
@@ -170,8 +170,8 @@ function j(e) {
       }))
     })
   }), K = i.useCallback(() => {
-    w || R(!L)
-  }, [w, L]);
+    L || R(!w)
+  }, [L, w]);
   return (0, E.yp)({
     event: v.CkL.TOGGLE_SOUNDBOARD,
     handler: K

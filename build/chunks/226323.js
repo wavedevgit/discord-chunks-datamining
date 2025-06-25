@@ -99,8 +99,8 @@ function j(e) {
       nick: A,
       mute: Z,
       deaf: x,
-      serverMute: w,
-      serverDeaf: L
+      serverMute: L,
+      serverDeaf: w
     } = e,
     R = (0, o.e7)([O.Z], () => O.Z.isLocalMute(j.id)),
     D = (0, u.Z)({
@@ -128,9 +128,9 @@ function j(e) {
       if (l) return P.localMute;
       if (i) return P.mute
     }({
-      serverDeaf: L,
+      serverDeaf: w,
       deaf: x,
-      serverMute: w,
+      serverMute: L,
       mute: Z,
       localMute: R
     })) ? l : {},

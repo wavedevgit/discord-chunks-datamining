@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => h
 });
 var r = n(255367);
 n(73800);
@@ -66,19 +66,25 @@ function _(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let p = {
+
+function p(e) {
+  if (null != e) return (0, o.AY)(e) ? i.fCB.LIGHTBOX : void 0
+}
+let h = {
   showAgeVerification: e => {
     var {
-      onClose: t
-    } = e, a = f(e, ["onClose"]);
+      onClose: t,
+      entryPoint: a
+    } = e, o = f(e, ["onClose", "entryPoint"]);
     (0, i.ZDy)(async () => {
       let {
         default: e
       } = await n.e("12014").then(n.bind(n, 879367));
-      return t => (0, r.jsx)(e, c({}, a, t))
+      return t => (0, r.jsx)(e, c({}, o, t))
     }, {
-      modalKey: s.z,
-      onCloseCallback: t
+      modalKey: s.zJ,
+      onCloseCallback: t,
+      backdropStyle: p(a)
     })
   },
   showAgeVerificationGetStartedModal: e => {
@@ -89,6 +95,8 @@ let p = {
       return n => (0, r.jsx)(t, d(c({}, n), {
         entryPoint: e
       }))
+    }, {
+      backdropStyle: p(e)
     });
     (0, i.ZDy)(async () => {
       let {
@@ -97,6 +105,8 @@ let p = {
       return n => (0, r.jsx)(t, d(c({}, n), {
         entryPoint: e
       }))
+    }, {
+      backdropStyle: p(e)
     })
   },
   openUrl: e => {

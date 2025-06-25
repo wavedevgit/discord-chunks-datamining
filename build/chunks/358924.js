@@ -31,8 +31,8 @@ var r, i = n(255367),
   A = n(871118),
   Z = n(707409),
   x = n(359110),
-  w = n(769654),
-  L = n(849171),
+  L = n(769654),
+  w = n(849171),
   R = n(314897),
   D = n(592125),
   k = n(594174),
@@ -321,7 +321,7 @@ er.Header = en, er.Body = e => {
       ref: h,
       onContextMenu: e => p(e, a),
       children: [(0, i.jsx)(u.P3F, {
-        onClick: () => (0, w.X)(r.id),
+        onClick: () => (0, L.X)(r.id),
         "aria-hidden": !0,
         tabIndex: -1,
         children: (0, i.jsxs)("div", {
@@ -589,7 +589,7 @@ er.Header = en, er.Body = e => {
         className: W.embeddedActivityImage
       }) : null, (0, i.jsxs)("div", {
         className: W.embeddedActivityImageOverlay,
-        children: [(0, i.jsx)(L.OV, {
+        children: [(0, i.jsx)(w.OV, {
           users: p,
           guildId: r,
           channelId: n.id
