@@ -61,8 +61,8 @@ let V = e => {
       z = (0, c.wj)(H),
       [Y, W] = r.useState(!1),
       [K, q] = r.useState(!1),
-      [X, Q] = r.useState(!1),
-      [J, $] = r.useState(!1),
+      [X, J] = r.useState(!1),
+      [Q, $] = r.useState(!1),
       ee = (0, a.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()),
       et = null != ee ? (0, x.Af)(ee) : null,
       en = null != et ? x.ZP.getSkuIdForPlan(et.planId) : null,
@@ -182,7 +182,7 @@ let V = e => {
       }), (0, i.jsx)("div", {
         className: M.footerSpacing
       }), (0, i.jsx)(Z.Z, {
-        isVisible: !Y && !K && J,
+        isVisible: !Y && !K && Q,
         isFullscreen: !1,
         subscriptionTier: ei,
         isApplicationHome: !1,
@@ -192,7 +192,7 @@ let V = e => {
         onChange: e => {
           e && !X && (_.default.track(L.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
             location_stack: em
-          }), Q(!0))
+          }), J(!0))
         },
         children: (0, i.jsx)("div", {
           ref: F,

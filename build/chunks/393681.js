@@ -1,6 +1,6 @@
 /** Chunk was on 91372 **/
 n.d(t, {
-  Z: () => J
+  Z: () => Q
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -80,7 +80,7 @@ function X(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class Q extends r.PureComponent {
+class J extends r.PureComponent {
   componentDidMount() {
     let {
       currentUser: e
@@ -400,7 +400,7 @@ class Q extends r.PureComponent {
     }
   }
 }
-let J = () => {
+let Q = () => {
   let e = (0, c.e7)([P.default], () => {
       let e = P.default.getCurrentUser();
       return o()(null != e, "ConnectedUserAccountSettings: currentUser cannot be undefined"), e
@@ -418,7 +418,7 @@ let J = () => {
     } = (0, v.Z)({
       refreshOnDepChange: !0
     });
-  return (0, i.jsx)(Q, {
+  return (0, i.jsx)(J, {
     theme: r,
     currentUser: e,
     backupCodes: t,

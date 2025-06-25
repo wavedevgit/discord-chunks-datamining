@@ -70,7 +70,7 @@ let H = e => {
       K = (0, a.e7)([g.Z], () => g.Z.useReducedMotion),
       q = (0, m.ZP)(),
       X = (0, c.wj)(q),
-      [Q, J] = r.useState(!1),
+      [J, Q] = r.useState(!1),
       [$, ee] = r.useState(!1),
       [et, en] = r.useState(!1),
       [ei, er] = r.useState(!1),
@@ -147,7 +147,7 @@ let H = e => {
           className: M.heroHeadingV2Container,
           children: [(0, i.jsx)(o.$, {
             innerRef: z,
-            onChange: e => J(e),
+            onChange: e => Q(e),
             threshold: 0,
             active: !0,
             children: (0, i.jsx)(D.Z, {
@@ -190,7 +190,7 @@ let H = e => {
             className: M.planComparisonTableApplicationHome
           })
         }), (0, i.jsx)(A.Z, {
-          isVisible: !Q && !et && !$ && el,
+          isVisible: !J && !et && !$ && el,
           isFullscreen: !0,
           subscriptionTier: eu,
           isApplicationHome: !0,

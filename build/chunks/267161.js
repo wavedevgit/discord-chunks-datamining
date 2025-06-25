@@ -83,9 +83,9 @@ function G() {
     d = (0, h.Z)(),
     p = (0, O.D)(),
     f = null;
-  return p && (e = w.intl.string(w.t.HcoRu7), f = (0, r.jsx)(s.Dkj, {
+  return p ? (e = w.intl.string(w.t.HcoRu7), f = (0, r.jsx)(s.Dkj, {
     size: "xs"
-  })), null != u ? (f = d ? (0, r.jsx)(s.r7p, {
+  })) : null != u ? (f = d ? (0, r.jsx)(s.r7p, {
     size: "xs"
   }) : (0, r.jsx)(g.Z, {
     guild: u,

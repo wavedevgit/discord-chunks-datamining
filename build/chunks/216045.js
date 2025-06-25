@@ -78,13 +78,13 @@ function G() {
     q = D.ZP.canUsePremiumProfileCustomization(n),
     {
       analyticsLocations: X,
-      newestAnalyticsLocation: Q
+      newestAnalyticsLocation: J
     } = (0, f.ZP)(h.Z.USER_SETTINGS_USER_PROFILE),
-    J = (0, N.T)({
+    Q = (0, N.T)({
       location: "UserSettingsProfileCustomization"
     }),
     $ = (0, _.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
-    ee = J && !$;
+    ee = Q && !$;
   r.useEffect(() => {
     ee && (0, _.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
       forceTrack: !0
@@ -164,7 +164,7 @@ function G() {
       showUpsell: eo && !es,
       text: U.intl.format(U.t.TmfgIy, {
         onClick: () => (0, C.y)({
-          analyticsSource: Q
+          analyticsSource: J
         })
       }),
       textVariant: "heading-md/medium",

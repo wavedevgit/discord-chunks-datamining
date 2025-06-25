@@ -16,9 +16,9 @@ var r = n(442837),
   p = n(687158),
   m = n(316027),
   b = n(502762),
-  x = n(848780),
-  y = n(907179),
-  _ = n(228168),
+  y = n(848780),
+  _ = n(907179),
+  x = n(228168),
   h = n(981631),
   g = n(388032),
   j = n(247787);
@@ -49,8 +49,8 @@ function v(e) {
     channelId: v,
     messageId: O,
     roleId: P,
-    transitionState: A,
-    openedAt: N,
+    transitionState: N,
+    openedAt: A,
     onHide: T,
     sourceAnalyticsLocations: Z = []
   } = e, C = n === h.ME ? void 0 : n, w = (0, r.e7)([s.Z], () => s.Z.isBlocked(t.id)), {
@@ -76,19 +76,19 @@ function v(e) {
     value: S,
     children: (0, o.jsx)(u.Mt, {
       value: E,
-      openedAt: N,
+      openedAt: A,
       fetchStartedAt: null == L ? void 0 : L.fetchStartedAt,
       fetchEndedAt: null == L ? void 0 : L.fetchEndedAt,
       isLoaded: null == L ? void 0 : L.isLoaded,
       children: (0, o.jsx)(i.Y0X, {
-        transitionState: A,
+        transitionState: N,
         className: j.root,
         "aria-label": U,
         parentComponent: "RestrictedUserProfileModalV2",
         children: (0, o.jsxs)(b.Z, {
           user: t,
           displayProfile: L,
-          themeType: _.lY.MODAL_V2,
+          themeType: x.lY.MODAL_V2,
           children: [(0, o.jsx)("div", {
             className: j.background
           }), (0, o.jsxs)("div", {
@@ -126,7 +126,7 @@ function v(e) {
               })
             }), (0, o.jsxs)(i.Kqy, {
               align: "center",
-              children: [(0, o.jsx)(y.Z, {
+              children: [(0, o.jsx)(_.Z, {
                 size: i.PhG.MEDIUM,
                 isBlocked: w,
                 onClick: () => {
@@ -135,7 +135,7 @@ function v(e) {
                     analyticsLocations: S
                   }, E))
                 }
-              }), (0, o.jsx)(x.Z, {
+              }), (0, o.jsx)(y.Z, {
                 userId: t.id,
                 onClick: () => {
                   T(), (0, f.pQ)(I({

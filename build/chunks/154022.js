@@ -96,10 +96,10 @@ function W(e) {
       children: (0, i.jsx)(X, {})
     }), (0, i.jsx)(O.F, {
       setting: R.s6.ACCESSIBILITY_ROLE_STYLE,
-      children: (0, i.jsx)(Q, {})
+      children: (0, i.jsx)(J, {})
     }), (0, i.jsx)(O.F, {
       setting: R.s6.ACCESSIBILITY_PROFILE_COLORS,
-      children: (0, i.jsx)(J, {})
+      children: (0, i.jsx)(Q, {})
     }), (0, h.b)() ? (0, i.jsxs)(O.F, {
       setting: R.s6.ACCESSIBILITY_CONTRAST,
       children: [(0, i.jsx)($, {}), " "]
@@ -235,7 +235,7 @@ function X() {
   })
 }
 
-function Q() {
+function J() {
   let e = (0, c.e7)([p.Z], () => p.Z.roleStyle);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(d.xJW, {
@@ -267,7 +267,7 @@ function Q() {
   })
 }
 
-function J() {
+function Q() {
   let e = (0, c.e7)([p.Z], () => p.Z.syncProfileThemeWithUserTheme),
     t = r.useRef(null);
   return (0, A.Z)(t, P.rP.SYNC_PROFILE_THEME_WITH_USER_THEME), (0, i.jsx)(d.xJW, {

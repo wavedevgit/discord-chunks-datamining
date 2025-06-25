@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: 87a49ef37ca850cc
+  Original File Name: 0f13578325926e80
 **/
 .scroller__95bea {
     display: flex;
@@ -1301,6 +1301,10 @@
     }
 }
 
+.profileOverlay__9c3be {
+    overflow: visible
+}
+
 .profileBanner__9c3be {
     padding: 12px
 }
@@ -1365,4 +1369,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=87a49ef37ca850cc.css.map*/
+/*# sourceMappingURL=0f13578325926e80.css.map*/

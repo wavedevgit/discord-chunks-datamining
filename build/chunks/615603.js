@@ -192,11 +192,11 @@ let w = function(e) {
     }, [K, v]),
     X = r.useMemo(() => U.find(e => e.isAvailable()), [U]);
   if (0 === U.length) return null;
-  let Q = U.length;
+  let J = U.length;
   if (t = W ? N.intl.formatToPlainString(F ? N.t["3DW6DQ"] : N.t["/u15QU"], {
-      numUnappliedGuildBoostSlots: Q
+      numUnappliedGuildBoostSlots: J
     }) : N.intl.formatToPlainString(F ? N.t["3DW6DQ"] : N.t.BPadnJ, {
-      numUnappliedGuildBoostSlots: Q
+      numUnappliedGuildBoostSlots: J
     }), C.ZP.isPremium(w)) {
     let e = (e, t) => (0, i.jsx)(c.P3F, {
       className: y.headerLearnMoreLink,
@@ -209,13 +209,13 @@ let w = function(e) {
     n = F ? N.intl.format(N.t.omcpSE, {
       learnMoreHook: e
     }) : N.intl.format(N.t["5mAkVl"], {
-      numUnappliedGuildBoostSlots: Q,
+      numUnappliedGuildBoostSlots: J,
       learnMoreHook: e
     })
   } else n = F ? N.intl.string(N.t["8pcUZm"]) : N.intl.formatToPlainString(N.t.Kaw82t, {
-    numUnappliedGuildBoostSlots: Q
+    numUnappliedGuildBoostSlots: J
   });
-  let J = (0, a.EQ)({
+  let Q = (0, a.EQ)({
     subscriptionIsPausedOrPausePending: h,
     fractionalPremiumBlocksBoosting: L
   }).with({
@@ -255,8 +255,8 @@ let w = function(e) {
           className: y.headerContentSecondary,
           children: (0, i.jsx)(m.Z, {
             shouldShow: null == X || B,
-            text: J,
-            "aria-label": J.toString(),
+            text: Q,
+            "aria-label": Q.toString(),
             children: e => (0, i.jsx)(c.zxk, P(A({}, e), {
               disabled: null == X || B,
               onClick: null != X ? () => {

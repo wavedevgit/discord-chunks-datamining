@@ -1,11 +1,11 @@
 /** Chunk was on 43473 **/
 n.d(t, {
-  M9: () => _,
-  Pb: () => y,
+  M9: () => x,
+  Pb: () => _,
   XX: () => b,
   ZP: () => h,
   ZT: () => f,
-  iv: () => x,
+  iv: () => y,
   pk: () => m
 });
 var o = n(255367);
@@ -57,7 +57,7 @@ function p(e) {
       className: m,
       style: b
     } = e,
-    x = r ? 50 : l().random(40, 50);
+    y = r ? 50 : l().random(40, 50);
   return !r && n ? t = (0, o.jsxs)(o.Fragment, {
     children: [(0, o.jsx)(u, {}), (0, o.jsx)(a.H, {
       className: s.header,
@@ -69,7 +69,7 @@ function p(e) {
     })]
   }) : r && (t = (0, o.jsxs)(o.Fragment, {
     children: [r && (0, o.jsx)(f, {
-      width: x,
+      width: y,
       className: i()({
         [s.compactTimestamp]: !0,
         [s.hidden]: !n
@@ -128,9 +128,9 @@ function p(e) {
 }
 let m = 44,
   b = 22,
-  x = 26,
   y = 26,
-  _ = 6;
+  _ = 26,
+  x = 6;
 
 function h(e) {
   let {

@@ -51,8 +51,8 @@ var i = n(255367),
   K = n(243778),
   q = n(258609),
   X = n(53891),
-  Q = n(291533),
-  J = n(427347),
+  J = n(291533),
+  Q = n(427347),
   $ = n(50697),
   ee = n(90042),
   et = n(78933),
@@ -105,8 +105,8 @@ var i = n(255367),
   eK = n(572004),
   eq = n(459273),
   eX = n(585483),
-  eQ = n(70956),
-  eJ = n(823379),
+  eJ = n(70956),
+  eQ = n(823379),
   e$ = n(74538),
   e0 = n(374023),
   e3 = n(51144),
@@ -157,8 +157,8 @@ function ts(e, t) {
   }), e
 }
 let tl = e1.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
-  ta = 2 * eQ.Z.Millis.MINUTE,
-  to = 3 * eQ.Z.Millis.SECOND;
+  ta = 2 * eJ.Z.Millis.MINUTE,
+  to = 3 * eJ.Z.Millis.SECOND;
 
 function tc(e) {
   let {
@@ -476,7 +476,7 @@ class td extends r.PureComponent {
             handleOpenAccountSettings: this.handleOpenAccountSettings,
             handleOpenSettingsContextMenu: this.handleOpenSettingsContextMenu
           }))]
-        }), (0, i.jsx)(J.Z, {}), (0, i.jsx)(F.Z, {})]
+        }), (0, i.jsx)(Q.Z, {}), (0, i.jsx)(F.Z, {})]
       })
     })
   }
@@ -778,19 +778,19 @@ function tm() {
       location: "Account"
     }),
     H = (0, $.m)(),
-    [Y, W] = (0, Q.G)(null != B ? B : null),
+    [Y, W] = (0, J.G)(null != B ? B : null),
     {
       customStatusRTCEntrypointEnabled: K,
       customStatusHoverOnlyRTCEntrypointEnabled: X
     } = (0, z.Z)({
       location: "Account"
     }),
-    J = "account";
+    Q = "account";
   (0, j.j)({
-    location: J + " auto on",
+    location: Q + " auto on",
     autoTrackExposure: !0
   }), (0, j.j)({
-    location: J + " auto off",
+    location: Q + " auto off",
     autoTrackExposure: !1
   });
   let ee = (0, d.e7)([eg.Z], () => eg.Z.hasHadOtherUserPlaySoundInSession()),
@@ -809,7 +809,7 @@ function tm() {
         i = [];
       if (null != t ? e = t.partyId : null != n && null != n.party && null != n.party.id && (e = n.party.id), null != e) {
         var r;
-        i = o()(Array.from(null != (r = eL.Z.getParty(e)) ? r : [])).map(e => eH.default.getUser(e)).filter(eJ.lm).value()
+        i = o()(Array.from(null != (r = eL.Z.getParty(e)) ? r : [])).map(e => eH.default.getUser(e)).filter(eQ.lm).value()
       }
       return i.length > 1
     }),
@@ -947,7 +947,7 @@ function tp(e) {
       E(e, H)
     }, [E, H]),
     [q, X] = r.useState(!1),
-    Q = r.useCallback(e => {
+    J = r.useCallback(e => {
       var t;
       if ((0, c.k)(null == e ? void 0 : e.target, Node) && (null == (t = S.current) ? void 0 : t.contains(e.target))) return h.F;
       X(!1)
@@ -958,7 +958,7 @@ function tp(e) {
       X(!0)
     }
   });
-  let [J, $] = r.useState(!1);
+  let [Q, $] = r.useState(!1);
   r.useEffect(() => {
     let e;
     return w && D && (e = setTimeout(() => {
@@ -1020,7 +1020,7 @@ function tp(e) {
         useMouseEnter: !0,
         ignoreModalClicks: !0,
         onRequestOpen: ee,
-        onRequestClose: Q,
+        onRequestClose: J,
         shouldShow: q,
         renderPopout: e => {
           let {
@@ -1074,10 +1074,10 @@ function tp(e) {
                 let c = () => (0, i.jsx)(e6.Z, tr({
                   ref: v,
                   plated: null != j,
-                  tooltipForceOpen: J,
-                  tooltipColor: J ? f.FGA.GREEN : void 0,
-                  tooltipContentClassName: J ? tn.voiceFilterWarning : void 0,
-                  tooltipText: J ? (0, i.jsxs)(i.Fragment, {
+                  tooltipForceOpen: Q,
+                  tooltipColor: Q ? f.FGA.GREEN : void 0,
+                  tooltipContentClassName: Q ? tn.voiceFilterWarning : void 0,
+                  tooltipText: Q ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("img", {
                       alt: null != Z ? tt.intl.string(Z.name) : "",
                       src: null == Z ? void 0 : Z.iconURL,
