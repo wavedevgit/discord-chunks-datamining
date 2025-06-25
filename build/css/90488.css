@@ -1,6 +1,6 @@
 /**
   Module ID: 90488
-  Original File Name: 28daaf1052580266
+  Original File Name: d6b87ef55511ecf2
 **/
 .titleBar__421ed {
     z-index: 3001;
@@ -398,7 +398,7 @@
 }
 
 .premiumText__9671b {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .premiumAction__9671b {
@@ -489,7 +489,7 @@
 
 .button__30f28 {
     align-items: center;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -541,7 +541,7 @@
 }
 
 .button_c5cd6a {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -613,7 +613,7 @@
 
 .blockedText__477aa {
     font-size: 12px;
-    font-weight: 400
+    font-weight: var(--font-weight-normal)
 }
 
 .noIcon__477aa {
@@ -875,7 +875,7 @@
 .tierPrice_ea81a9 {
     color: var(--interactive-active);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-bottom: 2px;
     margin-top: 16px
 }
@@ -954,17 +954,18 @@
 }
 
 .openDiscordButton_e64651 {
-    font-weight: 600;
     margin-bottom: 8px;
-    margin-top: 24px;
+    margin-top: 24px
+}
+
+.doneButton_e64651,.openDiscordButton_e64651 {
+    font-weight: var(--font-weight-semibold);
     width: 100%
 }
 
 .doneButton_e64651 {
     background: var(--background-accent);
-    color: var(--white-500);
-    font-weight: 600;
-    width: 100%
+    color: var(--white-500)
 }
 
 .container__24a95 {
@@ -1144,7 +1145,7 @@
 .tierTrialIndicator__3efc4 {
     background-color: var(--brand-500);
     color: var(--white-500);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding-bottom: 4px;
     padding-top: 4px
 }
@@ -1273,4 +1274,4 @@
     align-items: stretch
 }
 
-/*# sourceMappingURL=28daaf1052580266.css.map*/
+/*# sourceMappingURL=d6b87ef55511ecf2.css.map*/

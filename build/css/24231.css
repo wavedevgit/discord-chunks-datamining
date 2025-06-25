@@ -1,6 +1,6 @@
 /**
   Module ID: 24231
-  Original File Name: f6168607ece17478
+  Original File Name: 2603d27c14ef113e
 **/
 .container__05cdc {
     display: flex
@@ -270,7 +270,7 @@
     border-radius: 4px;
     color: var(--white-500);
     display: flex;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: 8px;
     padding: 2px 4px;
     text-transform: uppercase
@@ -311,7 +311,7 @@
     color: var(--interactive-active);
     display: flex;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     justify-content: center;
     transition: opacity .2s
 }
@@ -368,7 +368,7 @@
     color: var(--text-link);
     cursor: pointer;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: 4px
 }
 
@@ -445,7 +445,7 @@
 
 .channelName__327b5 {
     color: var(--header-primary);
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .channelSelection__327b5 {
@@ -453,7 +453,7 @@
 }
 
 .label__327b5 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin: 24px 0 8px;
     text-transform: uppercase
 }
@@ -482,7 +482,7 @@
     border-radius: 4px;
     color: var(--white-500);
     display: flex;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: 8px;
     padding: 2px 4px;
     text-transform: uppercase
@@ -530,4 +530,4 @@
     max-height: clamp(200px,calc(100vh - 80px),660px)
 }
 
-/*# sourceMappingURL=f6168607ece17478.css.map*/
+/*# sourceMappingURL=2603d27c14ef113e.css.map*/

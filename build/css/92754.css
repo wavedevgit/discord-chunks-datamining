@@ -1,6 +1,6 @@
 /**
   Module ID: 92754
-  Original File Name: fafff10aba5c0900
+  Original File Name: 67ba2a7ed206b1a3
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -588,7 +588,7 @@
 .editChannel__6446f {
     color: var(--text-link);
     cursor: pointer;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     padding-left: 4px
 }
 
@@ -1828,7 +1828,7 @@
     color: var(--header-primary);
     font-family: var(--font-display);
     font-size: 25px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 30px
 }
 
@@ -1929,7 +1929,7 @@
 }
 
 .confirmationHeader__7b175 {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-bottom: 8px;
     text-align: center
 }
@@ -2001,7 +2001,7 @@
     color: var(--header-secondary);
     font-family: var(--font-display);
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 16px;
     padding-bottom: 8px;
     text-transform: uppercase
@@ -2040,7 +2040,7 @@
 
 .periodCell__16462 {
     color: var(--header-primary);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .subscribersColumn__16462 {
@@ -2130,7 +2130,7 @@
     align-items: center;
     color: var(--header-primary);
     display: flex;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding: 8px 0
 }
 
@@ -2605,7 +2605,7 @@
 }
 
 .listingName__9076a {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .importRoleCard__9076a {
@@ -3192,7 +3192,7 @@
 
 .emojiAliasPlaceholder_e7d73e:after,.emojiAliasPlaceholder_e7d73e:before {
     content: ":";
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     opacity: .3;
     position: absolute
 }
@@ -3237,7 +3237,7 @@
 
 .columnLabel_e7d73e,.emojiColumn_e7d73e {
     font-size: 12px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     text-transform: uppercase
 }
 
@@ -3364,7 +3364,7 @@
 .emojiUploadUploadRequirementsHeading_e7d73e {
     color: var(--header-secondary);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 16px;
     padding-bottom: 8px;
     text-transform: uppercase
@@ -4480,13 +4480,13 @@
 .titleInput__5d756::-moz-placeholder {
     font-family: var(--font-display);
     font-size: 20px;
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .titleInput__5d756,.titleInput__5d756::placeholder {
     font-family: var(--font-display);
     font-size: 20px;
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .examplesSection__5d756 {
@@ -5880,7 +5880,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .clearButton__16663 {
     flex-shrink: 0;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     padding: 0
 }
 
@@ -6236,7 +6236,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .roleText__9e177 {
     color: var(--interactive-active);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 18px;
     vertical-align: top
 }
@@ -6518,7 +6518,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .tableTitle_db0ee9 {
     color: var(--header-secondary);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     text-transform: uppercase
 }
 
@@ -6860,7 +6860,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .addFormFieldText_eaaeee {
     cursor: pointer;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: 8px
 }
 
@@ -7064,7 +7064,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     align-items: center;
     color: var(--header-primary);
     display: flex;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin: 24px 0
 }
 
@@ -7247,7 +7247,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .bannedUserModal_cdb2b0 .userDiscrim_cdb2b0,.bannedUserModal_cdb2b0 .userUsername_cdb2b0 {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .bannedUserModal_cdb2b0 .content_cdb2b0 {
@@ -7381,13 +7381,12 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     justify-content: space-between
 }
 
-.bannedUserModal_a73dc3 .userDiscrim_a73dc3,.bannedUserModal_a73dc3 .userUsername_a73dc3 {
-    font-weight: 500
+.bannedUserModal_a73dc3 .reasonHeader_a73dc3,.bannedUserModal_a73dc3 .userDiscrim_a73dc3,.bannedUserModal_a73dc3 .userUsername_a73dc3 {
+    font-weight: var(--font-weight-medium)
 }
 
 .bannedUserModal_a73dc3 .reasonHeader_a73dc3 {
     color: var(--text-normal);
-    font-weight: 500;
     text-transform: uppercase
 }
 
@@ -7844,7 +7843,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .header_b34334 strong {
     color: var(--header-primary);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .exampleModal_b34334 {
@@ -7886,7 +7885,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     box-shadow: var(--elevation-high);
     color: var(--primary-200);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 16px;
     padding: 8px 12px
 }
@@ -9667,7 +9666,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .perk__176c7 {
     display: flex;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     text-align: left
 }
 
@@ -9842,7 +9841,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .subscriberCount_f15dca strong {
     color: var(--text-normal);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .subscribers_f15dca .subscriberMask_f15dca {
@@ -9960,7 +9959,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     flex: 1;
     font-family: var(--font-display);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 20px
 }
 
@@ -9984,7 +9983,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     border-radius: 10px;
     color: var(--white-500);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding: 4px 8px;
     text-transform: uppercase
 }
@@ -10044,7 +10043,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     border-radius: 0 0 8px 8px;
     box-sizing: border-box;
     color: var(--text-normal);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding: 16px
 }
 
@@ -10082,7 +10081,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .perkTitle_f15dca {
     color: var(--text-primary);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     text-transform: uppercase
 }
 
@@ -10330,7 +10329,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .tableHeader__15634 {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     text-transform: uppercase
 }
 
@@ -10412,7 +10411,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     border-radius: var(--radius-xs);
     box-shadow: var(--elevation-high);
     color: var(--text-normal);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     max-width: 288px;
     overflow: hidden;
     padding: 16px
@@ -11317,7 +11316,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .detailsButton__812a7 {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     padding: 0
 }
 
@@ -11515,7 +11514,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .title__991c2 {
     align-items: center;
     display: flex;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     width: 100%
 }
 
@@ -11554,7 +11553,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     align-items: center;
     display: flex;
     font-size: .75rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 1rem;
     margin-right: 16px
 }
@@ -12563,4 +12562,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=fafff10aba5c0900.css.map*/
+/*# sourceMappingURL=67ba2a7ed206b1a3.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 73628
-  Original File Name: 1fd0a64d7e4c77bd
+  Original File Name: a730b83f9d864c65
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -90,7 +90,7 @@
 .message_fcf29c {
     color: var(--text-normal);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -911,4 +911,4 @@
     gap: 16px
 }
 
-/*# sourceMappingURL=1fd0a64d7e4c77bd.css.map*/
+/*# sourceMappingURL=a730b83f9d864c65.css.map*/

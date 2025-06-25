@@ -1,6 +1,6 @@
 /**
   Module ID: 76233
-  Original File Name: ccc463c3d8355605
+  Original File Name: 466ad1ed471c6800
 **/
 .header__4b6c5 {
     justify-content: space-between
@@ -8,7 +8,7 @@
 
 .countdown__4b6c5 {
     color: var(--header-primary);
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .closeButton__4b6c5:hover {
@@ -28,4 +28,4 @@
     padding-top: 8px
 }
 
-/*# sourceMappingURL=ccc463c3d8355605.css.map*/
+/*# sourceMappingURL=466ad1ed471c6800.css.map*/

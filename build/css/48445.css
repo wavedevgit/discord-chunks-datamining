@@ -1,6 +1,6 @@
 /**
   Module ID: 48445
-  Original File Name: 0ae6d907ef2f257b
+  Original File Name: 285334eaafd8b14c
 **/
 .container__6b668 {
     align-items: center;
@@ -618,7 +618,7 @@
 
 .channelNameCategory_db81c6 {
     font-size: 11px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     opacity: .3;
     text-transform: uppercase
 }
@@ -676,4 +676,4 @@
     padding-bottom: var(--spacing-12)
 }
 
-/*# sourceMappingURL=0ae6d907ef2f257b.css.map*/
+/*# sourceMappingURL=285334eaafd8b14c.css.map*/

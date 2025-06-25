@@ -1,6 +1,6 @@
 /**
   Module ID: 46398
-  Original File Name: 8035dc441cf57b72
+  Original File Name: 1fdef857b8154e3f
 **/
 .fullArt_a1a33b {
     background: url(/assets/3ca8e729f3fc7da5.svg);
@@ -37,7 +37,7 @@
 
 .noThanksButton_a1a33b {
     color: var(--interactive-active);
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .noThanksButton_a1a33b:hover {
@@ -47,10 +47,10 @@
 .boostButton_a1a33b {
     background-color: var(--premium-tier-0-purple-for-gradients);
     color: #fff;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: auto;
     padding-left: 42px;
     padding-right: 42px
 }
 
-/*# sourceMappingURL=8035dc441cf57b72.css.map*/
+/*# sourceMappingURL=1fdef857b8154e3f.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 34191
-  Original File Name: 69516d71501a568e
+  Original File Name: 67736a91edaccb5e
 **/
 .header_b917ac {
     overflow: hidden;
@@ -14,7 +14,7 @@
 }
 
 .title_b917ac {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     text-align: center
 }
 
@@ -64,4 +64,4 @@
     margin-top: 16px
 }
 
-/*# sourceMappingURL=69516d71501a568e.css.map*/
+/*# sourceMappingURL=67736a91edaccb5e.css.map*/

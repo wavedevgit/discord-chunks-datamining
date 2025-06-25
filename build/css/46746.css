@@ -1,6 +1,6 @@
 /**
   Module ID: 46746
-  Original File Name: d262f542ffea88d6
+  Original File Name: 5daeb31897ed9fec
 **/
 .card__4bb93 {
     align-items: center;
@@ -36,7 +36,7 @@
 }
 
 .ellipsisText_a8c498 {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-right: 8px;
     max-width: 100%;
     overflow: hidden;
@@ -211,7 +211,7 @@
     box-sizing: border-box;
     color: var(--text-normal);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 25px;
     min-width: 24px;
     padding: 0 5px 0 4px
@@ -559,7 +559,7 @@
 
 .selectorText_c6d3dc {
     color: var(--interactive-normal);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     text-transform: uppercase
 }
 
@@ -629,7 +629,7 @@
 }
 
 .ellipsisText__885c5 {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-right: 8px;
     max-width: 100%;
     overflow: hidden;
@@ -1732,7 +1732,7 @@
 
 .sourceName_a2de16 {
     color: var(--header-primary);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-top: 8px;
     overflow: hidden;
     text-align: center;
@@ -2462,4 +2462,4 @@
     margin-bottom: 0
 }
 
-/*# sourceMappingURL=d262f542ffea88d6.css.map*/
+/*# sourceMappingURL=5daeb31897ed9fec.css.map*/

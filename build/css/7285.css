@@ -1,6 +1,6 @@
 /**
   Module ID: 7285
-  Original File Name: 7a7d0833bd087032
+  Original File Name: 79f995cf9725ace4
 **/
 .closeButton__52eda {
     box-sizing: content-box;
@@ -20,7 +20,7 @@
 }
 
 .title__52eda {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-top: 16px
 }
 
@@ -33,4 +33,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=7a7d0833bd087032.css.map*/
+/*# sourceMappingURL=79f995cf9725ace4.css.map*/

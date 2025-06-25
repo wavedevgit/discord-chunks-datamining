@@ -1,6 +1,6 @@
 /**
   Module ID: 93288
-  Original File Name: 1fc04e747b95611d
+  Original File Name: e54e9335a881a4dd
 **/
 .header__19497 {
     align-items: center;
@@ -18,7 +18,7 @@
 }
 
 .title__19497 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     padding-bottom: var(--spacing-12)
 }
 
@@ -61,4 +61,4 @@
     margin-top: var(--spacing-24)
 }
 
-/*# sourceMappingURL=1fc04e747b95611d.css.map*/
+/*# sourceMappingURL=e54e9335a881a4dd.css.map*/

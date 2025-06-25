@@ -1,6 +1,6 @@
 /**
   Module ID: 44153
-  Original File Name: 974aa7b04f9c65c0
+  Original File Name: 631585aad255713b
 **/
 .root_debd93 {
     width: 336px
@@ -14,7 +14,7 @@
 }
 
 .title_debd93 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     padding-bottom: 10px
 }
 
@@ -46,4 +46,4 @@
     padding-bottom: 24px
 }
 
-/*# sourceMappingURL=974aa7b04f9c65c0.css.map*/
+/*# sourceMappingURL=631585aad255713b.css.map*/

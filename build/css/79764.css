@@ -1,6 +1,6 @@
 /**
   Module ID: 79764
-  Original File Name: 02c2c009eb01a6a5
+  Original File Name: ce803f731623bffb
 **/
 .iconContainer__98cf7 {
     filter: saturate(var(--saturation-factor,1));
@@ -28,7 +28,7 @@
 }
 
 .title_b917ac {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     text-align: center
 }
 
@@ -104,7 +104,7 @@
 }
 
 .selectedTab__66057 {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .guildList__66057 {
@@ -114,7 +114,7 @@
 }
 
 .title__66057 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .subtitle__66057,.title__66057 {
@@ -208,7 +208,7 @@
 }
 
 .title__21615 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-top: 24px
 }
 
@@ -264,7 +264,7 @@
 }
 
 .text_eb2cd2 {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     overflow: hidden;
     text-overflow: ellipsis
 }
@@ -293,7 +293,7 @@
 }
 
 .title__1f657 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .subtitle__1f657,.title__1f657 {
@@ -329,4 +329,4 @@
     }
 }
 
-/*# sourceMappingURL=02c2c009eb01a6a5.css.map*/
+/*# sourceMappingURL=ce803f731623bffb.css.map*/

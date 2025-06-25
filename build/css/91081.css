@@ -1,6 +1,6 @@
 /**
   Module ID: 91081
-  Original File Name: 49937277fe8dbaf9
+  Original File Name: e314ebd15e706a8a
 **/
 .closeButton__47998 {
     position: absolute;
@@ -54,7 +54,7 @@
 .title__47998 {
     color: var(--primary-300);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     letter-spacing: .5px;
     text-transform: uppercase
 }
@@ -67,7 +67,7 @@
 }
 
 .timestamp__47998 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .choiceWrapper__47998 {
@@ -184,4 +184,4 @@
     grid-template-columns: auto 1fr
 }
 
-/*# sourceMappingURL=49937277fe8dbaf9.css.map*/
+/*# sourceMappingURL=e314ebd15e706a8a.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 21112
-  Original File Name: b22323050499fae4
+  Original File Name: acadd2108a7a0a03
 **/
 .closeButton__9cef2 {
     position: absolute;
@@ -61,7 +61,7 @@
 
 .emojiAlias__9cef2:after,.emojiAlias__9cef2:before {
     content: ":";
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     opacity: .3
 }
 
@@ -74,4 +74,4 @@
     padding: 0
 }
 
-/*# sourceMappingURL=b22323050499fae4.css.map*/
+/*# sourceMappingURL=acadd2108a7a0a03.css.map*/

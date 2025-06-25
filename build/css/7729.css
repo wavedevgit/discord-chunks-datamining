@@ -1,6 +1,6 @@
 /**
   Module ID: 7729
-  Original File Name: e9c0eb1ba385e64a
+  Original File Name: 93c86e903df08e19
 **/
 .select_d48ec6.error_d48ec6 .errorMessage_d48ec6 {
     color: var(--status-danger);
@@ -16,7 +16,7 @@
 
 .title_b0f4cc {
     color: var(--interactive-normal);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 8px;
     text-transform: uppercase
 }
@@ -76,4 +76,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=e9c0eb1ba385e64a.css.map*/
+/*# sourceMappingURL=93c86e903df08e19.css.map*/

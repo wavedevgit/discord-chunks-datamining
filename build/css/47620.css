@@ -1,6 +1,6 @@
 /**
   Module ID: 47620
-  Original File Name: 0180938e4b243e7c
+  Original File Name: f01733352392511b
 **/
 .unsupportedBrowser__9ec6a {
     background: #1b242b;
@@ -29,7 +29,7 @@
     color: var(--white-500);
     flex-shrink: 0;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin: 50px 0 10px;
     text-transform: uppercase
 }
@@ -38,7 +38,7 @@
     color: #949494;
     flex-shrink: 0;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 18px;
     margin: 0 auto 30px;
     max-width: 420px;
@@ -80,7 +80,7 @@
 
 .browserItemText__9ec6a {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 1.5em;
     text-align: center;
     text-transform: uppercase
@@ -119,7 +119,7 @@
     cursor: pointer;
     display: block;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-top: 28px;
     padding: 10px;
     text-decoration: none;
@@ -136,4 +136,4 @@
     background: transparent
 }
 
-/*# sourceMappingURL=0180938e4b243e7c.css.map*/
+/*# sourceMappingURL=f01733352392511b.css.map*/

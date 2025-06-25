@@ -1,6 +1,6 @@
 /**
   Module ID: 44606
-  Original File Name: 342ddd073c0e4b3f
+  Original File Name: 1e1624a0e42e2c02
 **/
 .pill_a2c9e8 {
     align-items: center;
@@ -223,7 +223,7 @@
 
 .auditLog__43dab strong {
     color: var(--header-primary);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .divider__43dab {
@@ -276,7 +276,7 @@
 }
 
 .colorsHook__43dab {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .colorHook__43dab {
@@ -292,7 +292,7 @@
     align-items: baseline;
     color: var(--header-primary);
     display: inline-flex;
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .changeDetails__43dab {
@@ -733,7 +733,7 @@
     background-color: var(--background-mod-strong);
     color: var(--text-normal);
     display: flex;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     justify-content: center;
     line-height: 1.2em;
     white-space: nowrap
@@ -755,7 +755,7 @@
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 22px;
     margin: 0 4px 4px 0;
     padding: 4px
@@ -888,7 +888,7 @@
 .overflowRolesPopoutHeaderText__48c1c {
     color: var(--primary-400);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     text-transform: uppercase
 }
 
@@ -1205,7 +1205,7 @@
 .name__2ea32 {
     flex: 1 1 auto;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: var(--channels-name-line-height)
 }
 
@@ -1427,4 +1427,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=342ddd073c0e4b3f.css.map*/
+/*# sourceMappingURL=1e1624a0e42e2c02.css.map*/

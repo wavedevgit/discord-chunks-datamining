@@ -1,6 +1,6 @@
 /**
   Module ID: 65652
-  Original File Name: 0b730fb56fb5dd35
+  Original File Name: 21a1447a1009d4ae
 **/
 .modalContent__2379f {
     margin-bottom: var(--spacing-16);
@@ -31,7 +31,7 @@
 }
 
 .title__3847f {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .subtitle__3847f,.title__3847f {
@@ -192,4 +192,4 @@
     }
 }
 
-/*# sourceMappingURL=0b730fb56fb5dd35.css.map*/
+/*# sourceMappingURL=21a1447a1009d4ae.css.map*/

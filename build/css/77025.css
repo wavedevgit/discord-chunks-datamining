@@ -1,6 +1,6 @@
 /**
   Module ID: 77025
-  Original File Name: 1dd7350aec0e777f
+  Original File Name: 368c1efaacf54b00
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -90,7 +90,7 @@
 .message_fcf29c {
     color: var(--text-normal);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -217,7 +217,7 @@
 .title__991c2 {
     align-items: center;
     display: flex;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     width: 100%
 }
 
@@ -256,7 +256,7 @@
     align-items: center;
     display: flex;
     font-size: .75rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 1rem;
     margin-right: 16px
 }
@@ -742,4 +742,4 @@ div:has(>div>.container_b962dc) {
     z-index: 0
 }
 
-/*# sourceMappingURL=1dd7350aec0e777f.css.map*/
+/*# sourceMappingURL=368c1efaacf54b00.css.map*/

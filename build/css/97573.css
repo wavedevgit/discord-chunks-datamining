@@ -1,6 +1,6 @@
 /**
   Module ID: 97573
-  Original File Name: 715bda6bc6af9c09
+  Original File Name: d9b99a71615a8691
 **/
 .container_a429ea {
     padding: 0 20px
@@ -51,7 +51,7 @@
 }
 
 .username_a429ea {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-left: 8px
 }
 
@@ -90,4 +90,4 @@
     background-color: hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=715bda6bc6af9c09.css.map*/
+/*# sourceMappingURL=d9b99a71615a8691.css.map*/

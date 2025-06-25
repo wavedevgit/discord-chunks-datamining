@@ -1,6 +1,6 @@
 /**
   Module ID: 99922
-  Original File Name: cf9bd529af9ef711
+  Original File Name: ea71ff5ec132c4c1
 **/
 .container__6b668 {
     align-items: center;
@@ -574,7 +574,7 @@
 
 .channelNameCategory_db81c6 {
     font-size: 11px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     opacity: .3;
     text-transform: uppercase
 }
@@ -632,4 +632,4 @@
     padding-bottom: var(--spacing-12)
 }
 
-/*# sourceMappingURL=cf9bd529af9ef711.css.map*/
+/*# sourceMappingURL=ea71ff5ec132c4c1.css.map*/

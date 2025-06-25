@@ -1,6 +1,6 @@
 /**
   Module ID: 86350
-  Original File Name: 8dd460b87ba78001
+  Original File Name: 77fd07501d5435b1
 **/
 .menu__43313 {
     max-height: 70vh
@@ -826,7 +826,7 @@
 .text_c8b06d {
     color: var(--opacity-white-80);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 12px
 }
 
@@ -889,7 +889,7 @@
 }
 
 .headerText__2ef49 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     text-transform: uppercase
 }
 
@@ -1093,7 +1093,7 @@
 }
 
 .activityActivityFeed__2ef49 .details__2ef49 {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .timeBarActivityFeed__2ef49 {
@@ -1137,21 +1137,21 @@
 .streamUsername__2ef49 {
     color: var(--primary-200);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 1.25
 }
 
 .streamName__2ef49 {
     color: var(--primary-300);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-top: 8px
 }
 
 .streamGame__2ef49 {
     color: var(--primary-400);
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-top: 8px;
     text-transform: uppercase
 }
@@ -1360,7 +1360,7 @@
     bottom: 0;
     cursor: pointer;
     display: flex;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     justify-content: center;
     left: 0;
     line-height: 18px;
@@ -1572,7 +1572,7 @@ div.clanTagBadgeContainer__07f91 {
 
 .usernameFont__07f91 {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 18px
 }
 
@@ -1751,4 +1751,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=8dd460b87ba78001.css.map*/
+/*# sourceMappingURL=77fd07501d5435b1.css.map*/

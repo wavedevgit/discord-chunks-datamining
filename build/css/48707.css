@@ -1,6 +1,6 @@
 /**
   Module ID: 48707
-  Original File Name: 0d7caf28f62ebd15
+  Original File Name: f6b45919a3881f52
 **/
 .header__6dc27 {
     align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .title__6dc27 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .subtitle__6dc27,.title__6dc27 {
@@ -40,4 +40,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=0d7caf28f62ebd15.css.map*/
+/*# sourceMappingURL=f6b45919a3881f52.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 1544
-  Original File Name: 7feda29fd6315162
+  Original File Name: 3ac13bc418d9f4e8
 **/
 .verifyConnectedAccount_fb52a4 {
     background: url(/assets/1243734d7e2a4654.png) 0 0 repeat;
@@ -66,7 +66,7 @@
 }
 
 .message_d9edaa strong {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .btn_d9edaa {
@@ -82,4 +82,4 @@
     padding: 28px
 }
 
-/*# sourceMappingURL=7feda29fd6315162.css.map*/
+/*# sourceMappingURL=3ac13bc418d9f4e8.css.map*/

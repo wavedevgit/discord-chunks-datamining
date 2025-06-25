@@ -1,6 +1,6 @@
 /**
   Module ID: 84686
-  Original File Name: 32a61e03962fe8c9
+  Original File Name: ce08476e219db473
 **/
 .container__26abc {
     background-color: var(--background-surface-high);
@@ -40,7 +40,7 @@
     color: var(--text-link);
     cursor: pointer;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: 4px
 }
 
@@ -134,4 +134,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=32a61e03962fe8c9.css.map*/
+/*# sourceMappingURL=ce08476e219db473.css.map*/

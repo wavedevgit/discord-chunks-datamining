@@ -1,6 +1,6 @@
 /**
   Module ID: 54642
-  Original File Name: 56a9850ae26c6d39
+  Original File Name: 811793c855e475db
 **/
 .bottomMargin_d5f35b {
     margin-bottom: 16px
@@ -37,15 +37,17 @@
 }
 
 .content_d5f35b {
-    font-weight: 500;
     padding-top: 32px;
     z-index: 2
 }
 
+.content_d5f35b,.guildOption_d5f35b {
+    font-weight: var(--font-weight-medium)
+}
+
 .guildOption_d5f35b {
     align-items: center;
-    display: flex;
-    font-weight: 500
+    display: flex
 }
 
 .icon_d5f35b {
@@ -88,4 +90,4 @@
     background-image: url(/assets/ef95e909088f721c.svg)
 }
 
-/*# sourceMappingURL=56a9850ae26c6d39.css.map*/
+/*# sourceMappingURL=811793c855e475db.css.map*/

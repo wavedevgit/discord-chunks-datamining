@@ -1,6 +1,6 @@
 /**
   Module ID: 39809
-  Original File Name: 7836f1b48554330c
+  Original File Name: 8d7d218f4c674f39
 **/
 .content__61700 {
     min-height: -webkit-min-content;
@@ -39,7 +39,7 @@
 }
 
 .title_ad198f {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .subtitle_ad198f,.title_ad198f {
@@ -90,4 +90,4 @@
     margin-top: 16px
 }
 
-/*# sourceMappingURL=7836f1b48554330c.css.map*/
+/*# sourceMappingURL=8d7d218f4c674f39.css.map*/

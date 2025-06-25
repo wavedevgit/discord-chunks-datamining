@@ -1,6 +1,6 @@
 /**
   Module ID: 79921
-  Original File Name: a9aa9ce6292d99b4
+  Original File Name: 38e2f573b4e77377
 **/
 .wrapper__6d749 {
     width: 500px;
@@ -72,7 +72,7 @@
 
 .resultText__6d749 {
     flex: 1;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-right: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -80,7 +80,7 @@
 }
 
 .resultUsername__6d749 {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     margin-left: 4px;
     opacity: .5
 }
@@ -92,7 +92,7 @@
 }
 
 .resultCategoryName__6d749,.resultGuildName__6d749 {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-left: 4px;
     opacity: .5
 }
@@ -121,4 +121,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=a9aa9ce6292d99b4.css.map*/
+/*# sourceMappingURL=38e2f573b4e77377.css.map*/

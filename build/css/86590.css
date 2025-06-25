@@ -1,6 +1,6 @@
 /**
   Module ID: 86590
-  Original File Name: 825e9f257401256e
+  Original File Name: 6fe306f22dd38351
 **/
 .container__1ce5d {
     position: relative
@@ -43,7 +43,7 @@
     background-color: var(--background-mod-strong);
     color: var(--text-normal);
     display: flex;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     justify-content: center;
     line-height: 1.2em;
     white-space: nowrap
@@ -73,4 +73,4 @@
     color: var(--header-primary)
 }
 
-/*# sourceMappingURL=825e9f257401256e.css.map*/
+/*# sourceMappingURL=6fe306f22dd38351.css.map*/

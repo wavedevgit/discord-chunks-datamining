@@ -1,6 +1,6 @@
 /**
   Module ID: 71879
-  Original File Name: 0aa2bdbb9349a7d0
+  Original File Name: 518e2408b63830e8
 **/
 .obscuredIcon__43090 {
     height: 32px;
@@ -86,7 +86,7 @@
 .messageContent_faa96b {
     color: unset;
     font-size: 14px!important;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 18px;
     line-height: 18px!important;
     margin-left: 4px;
@@ -270,7 +270,7 @@
 .messageCountText_faa96b {
     color: var(--text-normal);
     font-size: 14px;
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .newMessageCount_faa96b {
@@ -282,7 +282,7 @@
     color: var(--interactive-normal);
     display: flex;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     gap: 8px;
     height: unset;
     line-height: 18px;
@@ -336,7 +336,7 @@
 
 .tags__08166 {
     font-family: var(--font-primary);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     gap: 8px;
     height: 24px;
     margin-bottom: 8px
@@ -987,7 +987,7 @@
 
 .container_ca49a1 .guidelines_ca49a1 {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     line-height: 18px;
     overflow: hidden;
     white-space: pre-wrap
@@ -1233,7 +1233,7 @@
     background: transparent!important;
     border: none;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: auto;
     line-height: 18px;
     margin-left: 4px;
@@ -1643,7 +1643,7 @@
     color: var(--white-500);
     display: flex;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: 16px;
     justify-content: center;
     min-width: 8px;
@@ -1913,7 +1913,7 @@
     flex: 1 1 auto;
     font-family: var(--font-display);
     font-size: 20px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-right: 12px;
     margin-top: 6px;
     min-height: 24px;
@@ -1925,13 +1925,13 @@
 .title_d9be46::-moz-placeholder {
     font-family: var(--font-display);
     font-size: 20px;
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .title_d9be46::placeholder {
     font-family: var(--font-display);
     font-size: 20px;
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .collapsed_d9be46 {
@@ -2623,4 +2623,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=0aa2bdbb9349a7d0.css.map*/
+/*# sourceMappingURL=518e2408b63830e8.css.map*/

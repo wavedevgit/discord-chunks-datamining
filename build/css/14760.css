@@ -1,6 +1,6 @@
 /**
   Module ID: 14760
-  Original File Name: f6e4fb96b1bd7014
+  Original File Name: 4e717d3bea2f9c25
 **/
 .modal__7db36 {
     align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .followSuccessHeader__7db36 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .image__7db36 {
@@ -34,4 +34,4 @@
     overflow: visible
 }
 
-/*# sourceMappingURL=f6e4fb96b1bd7014.css.map*/
+/*# sourceMappingURL=4e717d3bea2f9c25.css.map*/

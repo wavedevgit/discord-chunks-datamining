@@ -1,6 +1,6 @@
 /**
   Module ID: 7463
-  Original File Name: 7226a769e1de4fb3
+  Original File Name: 232fca4d31fec8f9
 **/
 .left_caab99 {
     transform: rotate(270deg)
@@ -67,7 +67,7 @@
 .label__09ccc {
     color: var(--text-normal);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 18px;
     margin-right: 8px;
     overflow: hidden;
@@ -133,7 +133,7 @@
 }
 
 .noticeText_c9e42f {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .previewWarning_c9e42f {
@@ -144,7 +144,7 @@
 .button_c9e42f {
     align-items: center;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -520,7 +520,7 @@
 
 .executedCommand_c19a55 .commandName_c19a55 {
     color: var(--text-link);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .executedCommand_c19a55 .appsIcon_c19a55 {
@@ -531,7 +531,7 @@
     background-color: var(--mention-background);
     border-radius: 3px;
     color: var(--text-link);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding: 0 2px
 }
 
@@ -542,7 +542,7 @@
 
 .executedCommand_c19a55 .applicationName_c19a55 {
     color: var(--header-primary);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .executedCommand_c19a55 .repliedMessage_c19a55 .username_c19a55,.executedCommand_c19a55 .targetUsername_c19a55 {
@@ -793,7 +793,7 @@
 .timestamp_c19a55 {
     cursor: default;
     display: inline-block;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 1.25rem;
     pointer-events: none
 }
@@ -894,7 +894,7 @@
     display: inline;
     flex-shrink: 0;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 1.375rem;
     overflow: hidden;
     position: relative;
@@ -920,7 +920,7 @@
 
 @media (-webkit-max-device-pixel-ratio:1) {
     .theme-light .username_c19a55 {
-        font-weight: 600
+        font-weight: var(--font-weight-semibold)
     }
 }
 
@@ -929,7 +929,7 @@
 }
 
 .background-opacity-low .username_c19a55,.background-opacity-medium .username_c19a55 {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .botTag_c19a55 {
@@ -1141,7 +1141,7 @@
 
 .edited_c19a55 {
     font-size: .625rem;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     line-height: 1;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -1378,4 +1378,4 @@
     background-color: var(--background-mod-subtle)
 }
 
-/*# sourceMappingURL=7226a769e1de4fb3.css.map*/
+/*# sourceMappingURL=232fca4d31fec8f9.css.map*/

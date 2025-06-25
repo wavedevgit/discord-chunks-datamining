@@ -1,6 +1,6 @@
 /**
   Module ID: 39596
-  Original File Name: 89ce741fb79a2121
+  Original File Name: 02fd2200b1b87eee
 **/
 .container__4216d {
     align-items: center;
@@ -667,7 +667,7 @@
 
 .name_a9fc04 {
     color: var(--header-primary);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     text-transform: capitalize
 }
 
@@ -1264,4 +1264,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=89ce741fb79a2121.css.map*/
+/*# sourceMappingURL=02fd2200b1b87eee.css.map*/

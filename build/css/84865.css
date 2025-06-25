@@ -1,6 +1,6 @@
 /**
   Module ID: 84865
-  Original File Name: 0367be5fa41eb4b8
+  Original File Name: bed2798e5636c7fb
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -549,14 +549,14 @@
 .name__8a969 {
     color: var(--header-primary);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 20px
 }
 
 .description__8a969 {
     color: var(--header-secondary);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 16px
 }
 
@@ -740,7 +740,7 @@
 .tutorialMessages__73f2a {
     color: var(--white-500);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 60px;
     line-height: 24px;
     overflow: hidden;
@@ -889,7 +889,7 @@
 
 .emptyState_ac6cb0 {
     background: no-repeat 50% 20px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding-bottom: 20px;
     padding-top: 150px;
     text-align: center
@@ -913,7 +913,7 @@
 
 .miscContainer_ac6cb0 {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     opacity: .6;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1086,7 +1086,7 @@
     box-sizing: border-box;
     color: var(--button-secondary-text);
     cursor: pointer;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: auto;
     padding: var(--space-4) var(--space-8);
     position: absolute;
@@ -1216,7 +1216,7 @@
     color: var(--header-primary);
     font-family: var(--font-display);
     font-size: 18px;
-    font-weight: 800;
+    font-weight: var(--font-weight-extra-bold);
     line-height: 24px;
     margin-bottom: 8px;
     text-transform: none
@@ -1226,7 +1226,7 @@
     color: var(--header-secondary);
     font-family: var(--font-primary);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px
 }
 
@@ -1705,7 +1705,7 @@
 .messageContent_faa96b {
     color: unset;
     font-size: 14px!important;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 18px;
     line-height: 18px!important;
     margin-left: 4px;
@@ -1889,7 +1889,7 @@
 .messageCountText_faa96b {
     color: var(--text-normal);
     font-size: 14px;
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .newMessageCount_faa96b {
@@ -1901,7 +1901,7 @@
     color: var(--interactive-normal);
     display: flex;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     gap: 8px;
     height: unset;
     line-height: 18px;
@@ -1955,7 +1955,7 @@
 
 .tags__08166 {
     font-family: var(--font-primary);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     gap: 8px;
     height: 24px;
     margin-bottom: 8px
@@ -2329,7 +2329,7 @@
     box-shadow: none;
     box-sizing: border-box;
     font-family: var(--font-display);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: var(--custom-channel-header-height);
     padding: var(--space-md);
     padding-right: calc(var(--space-xs) + var(--space-8));
@@ -2976,7 +2976,7 @@
 .body__0aee3 {
     color: var(--text-normal);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     margin-top: 20px;
     text-align: center;
@@ -3202,7 +3202,7 @@ div:has(>.positionLayer__4f4b6) {
     display: flex;
     font-family: var(--font-display);
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: 24px;
     justify-content: center;
     line-height: 16px;
@@ -3278,7 +3278,7 @@ div:has(>.positionLayer__4f4b6) {
 
 .listItemTooltip__91816 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 20px;
     max-width: 196px;
     word-wrap: break-word
@@ -4284,7 +4284,7 @@ div:has(>.positionLayer__4f4b6) {
 .perkDescription_c609c8 {
     color: var(--interactive-active);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px
 }
 
@@ -4320,7 +4320,7 @@ div:has(>.positionLayer__4f4b6) {
 .bodyText__3bf54 {
     color: var(--interactive-normal);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px
 }
 
@@ -4596,7 +4596,7 @@ div:has(>.positionLayer__4f4b6) {
     background: var(--brand-15a);
     border-radius: 3px;
     color: var(--brand-530);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding: 0 2px;
     unicode-bidi: plaintext
 }
@@ -5077,7 +5077,7 @@ div:has(>.positionLayer__4f4b6) {
     display: grid;
     flex: 0 0 auto;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     grid-template-columns: 1fr auto;
     height: 20px;
     justify-content: center;
@@ -5278,7 +5278,7 @@ div:has(>.positionLayer__4f4b6) {
     background-color: var(--green-360);
     border-radius: 8px;
     color: var(--white-500);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: 10px;
     padding-left: 4px;
     padding-right: 4px;
@@ -5305,7 +5305,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .title__76f04 {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-top: 2px;
     padding-bottom: 8px;
     text-transform: none
@@ -5367,7 +5367,7 @@ div:has(>.positionLayer__4f4b6) {
     color: var(--text-link);
     cursor: pointer;
     display: flex;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-top: 8px;
     padding-bottom: 10px;
     padding-top: 8px
@@ -6001,7 +6001,7 @@ div:has(>.positionLayer__4f4b6) {
     color: var(--white-500);
     display: block;
     flex-shrink: 0;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 34px;
     text-align: center;
     text-transform: uppercase
@@ -6177,7 +6177,7 @@ div:has(>.positionLayer__4f4b6) {
 
 .dropsBadge__5dec7 {
     font-size: 10px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 12px;
     overflow: hidden;
     padding-top: 2px;
@@ -6875,7 +6875,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .popoutText_effb26 strong {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .popoutText_effb26.popoutTextDetails_effb26 {
@@ -6891,7 +6891,7 @@ div:has(>.positionLayer__4f4b6) {
     color: var(--text-link);
     cursor: pointer;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     text-decoration: none
 }
 
@@ -6903,7 +6903,7 @@ div:has(>.positionLayer__4f4b6) {
     color: var(--text-link);
     cursor: pointer;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-left: 8px;
     text-decoration: none
 }
@@ -6923,7 +6923,7 @@ div:has(>.positionLayer__4f4b6) {
     display: flex;
     flex: 1;
     font-size: 12px;
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .secured_effb26 .lockIcon_effb26 {
@@ -7093,7 +7093,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .rtcConnectionStatusLabel__06d62 {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .rtcConnectionStatusConnected__06d62 {
@@ -7149,7 +7149,7 @@ div:has(>.positionLayer__4f4b6) {
     flex-direction: column;
     flex-shrink: 0;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     gap: var(--space-xs);
     margin: auto var(--space-xs);
     padding: var(--space-xs);
@@ -7525,4 +7525,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=0367be5fa41eb4b8.css.map*/
+/*# sourceMappingURL=bed2798e5636c7fb.css.map*/

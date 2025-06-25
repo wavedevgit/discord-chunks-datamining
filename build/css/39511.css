@@ -1,6 +1,6 @@
 /**
   Module ID: 39511
-  Original File Name: dc23fa466fa8630a
+  Original File Name: 6f6156d65b0fa708
 **/
 .header_fefb6d {
     align-items: flex-start;
@@ -157,7 +157,7 @@
 .skuPreviewFooterCloseButton_fa5bb9 {
     color: var(--interactive-active);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 18px
 }
 
@@ -182,4 +182,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=dc23fa466fa8630a.css.map*/
+/*# sourceMappingURL=6f6156d65b0fa708.css.map*/

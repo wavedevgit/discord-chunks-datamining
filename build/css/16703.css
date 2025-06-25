@@ -1,6 +1,6 @@
 /**
   Module ID: 16703
-  Original File Name: abd9f4ae34ea594b
+  Original File Name: e2bb75181effafe5
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -433,7 +433,7 @@
 .title__7184c {
     color: var(--text-normal);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 28px;
     max-width: 640px;
     padding: 0 20px;
@@ -640,7 +640,7 @@
 }
 
 .base_b88801 strong {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .base_b88801 .text_b88801 {
@@ -832,7 +832,7 @@
 
 .title__79cbe {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 20px;
     margin-bottom: 4px
 }&.title__79cbe,.title__79cbe {
@@ -850,14 +850,14 @@
 .body__79cbe p,div.body__79cbe,p.body__79cbe {
     color: var(--header-secondary);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 18px;
     margin-bottom: 16px;
     margin-top: 0
 }
 
 strong {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .buttonSkipCenterAlign__79cbe,.buttonSkipLeftAlign__79cbe {
@@ -1420,7 +1420,7 @@ strong {
     box-sizing: border-box;
     color: var(--text-muted-on-default);
     font-size: 14px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     height: 40px;
     overflow: hidden;
     padding: 6px 8px;
@@ -1595,7 +1595,7 @@ strong {
 
 .errorState_cba592 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     padding: 20px 20px 40px;
     text-align: center
@@ -1643,7 +1643,7 @@ strong {
 }
 
 .weightMedium_cba592 {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .selectExistingFormHeader_cba592 {
@@ -1662,7 +1662,7 @@ strong {
 .confirmChannelName_cba592 {
     color: var(--header-primary);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-left: 8px
 }
 
@@ -1775,7 +1775,7 @@ strong {
 
 .header_be95d0 {
     color: var(--text-normal);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     letter-spacing: .6px;
     margin-bottom: 4px;
     text-transform: uppercase
@@ -1789,7 +1789,7 @@ strong {
 }
 
 .body_be95d0 strong {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .animation_be95d0 {
@@ -1838,7 +1838,7 @@ strong {
 
 .footer_be95d0 strong {
     color: var(--text-muted-on-default);
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .icon_be95d0 {
@@ -1860,7 +1860,7 @@ strong {
     box-sizing: border-box;
     color: var(--black-500);
     flex-shrink: 0;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: 16px;
     margin-left: -12px;
     min-width: 16px;
@@ -2076,7 +2076,7 @@ strong {
 .regionSelectName__5621e {
     direction: ltr;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 16px;
     line-height: 18px;
     margin: 0 6px;
@@ -3018,7 +3018,7 @@ input[type=checked]:focus-visible+.label_df4aaf {
 }
 
 .streamInfoContainer__0f85c strong {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .infoRow__0f85c {
@@ -3091,7 +3091,7 @@ input[type=checked]:focus-visible+.label_df4aaf {
 .header_ecf309 {
     color: var(--white-500);
     font-size: 32px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 40px;
     margin: 4px 0
 }
@@ -4234,7 +4234,7 @@ input[type=checked]:focus-visible+.label_df4aaf {
 }
 
 .text_f555ee {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-bottom: 16px;
     text-align: center
 }
@@ -4742,7 +4742,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .supportingText_bfe55a,.title_bfe55a {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 1.25;
     text-align: center
 }
@@ -5158,7 +5158,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     border-radius: 8px;
     box-shadow: var(--elevation-high);
     font-size: .75rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     min-width: 200px;
     padding: 8px
 }
@@ -5269,7 +5269,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .bannerHeader_a2eac3 {
     color: var(--header-primary);
     font-size: 16px;
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .bannerSubtext_a2eac3 {
@@ -5791,7 +5791,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .operations_bab751 {
     color: var(--text-normal);
     font-size: 12px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     padding: 7px 0;
     text-indent: 0
 }
@@ -5809,7 +5809,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 @media (-webkit-max-device-pixel-ratio:1) {
     .theme-light .operations_bab751 {
-        font-weight: 500
+        font-weight: var(--font-weight-medium)
     }
 }
 
@@ -6144,7 +6144,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .header__00de6 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin: 8px 0
 }
 
@@ -6220,7 +6220,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .header__7e6bb {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -6630,7 +6630,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .threadCreatorName__54b20 {
     color: var(--header-primary);
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .threadCreatorName__54b20:hover {
@@ -6740,7 +6740,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .cardHeader_aae012 {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .cardTextContainer_aae012 {
@@ -7003,7 +7003,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     color: var(--interactive-normal);
     display: flex;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     justify-content: center;
     line-height: 16px;
     margin: 0 2px;
@@ -7315,7 +7315,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     background-color: var(--background-base-lowest);
     border-radius: 5px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 20px;
     padding: 8px 12px;
     position: relative;
@@ -8359,7 +8359,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .nicknames__488b1 {
     flex: 1 1 auto;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 18px;
     margin: 0 0 0 8px;
     min-width: 0;
@@ -8430,7 +8430,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .channelName__754bd {
     box-sizing: border-box;
     flex: 0 1 auto;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: -6px;
     max-width: 100%;
     padding: 0 4px 0 0
@@ -8438,7 +8438,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .channelName__754bd div,.channelName__754bd input {
     font-family: var(--font-display);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .newWrapper__754bd {
@@ -8497,7 +8497,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     color: var(--interactive-active);
     font-family: var(--font-primary);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: auto;
     min-width: 240px;
     outline: none;
@@ -9240,7 +9240,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .topic__6ec1a {
     flex: 1 1 auto;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 18px;
     margin: 0 0 0 8px;
     min-width: 0;
@@ -9270,7 +9270,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 @media (-webkit-max-device-pixel-ratio:1) {
     .theme-light .topic__6ec1a {
-        font-weight: 400
+        font-weight: var(--font-weight-normal)
     }
 }
 
@@ -9453,7 +9453,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .eventStatusText__49508 {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-right: 16px
 }
 
@@ -10532,7 +10532,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     color: var(--header-secondary);
     cursor: pointer;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 24px;
     line-height: 16px;
     margin-left: 6px;
@@ -10567,7 +10567,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .channelNameText_c68065 {
     color: var(--header-primary);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -11140,7 +11140,7 @@ div.profileThemedContainer__656be {
 .totalResults_f3b986 {
     display: flex;
     flex-grow: 1;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     padding-right: 1px
 }
 
@@ -11220,7 +11220,7 @@ div.profileThemedContainer__656be {
     display: flex;
     flex: 1;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 100%;
     justify-content: center;
     line-height: 24px;
@@ -11236,7 +11236,7 @@ div.profileThemedContainer__656be {
 
 .emptyResultsText_a9e706 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin: 40px auto 0
 }
 
@@ -11638,13 +11638,12 @@ div.profileThemedContainer__656be {
 }
 
 .boostUpsell__4783a .boostButton__4783a {
-    font-weight: 600;
     padding-left: 18px;
     padding-right: 18px
 }
 
-.boostUpsell__4783a .notNowButton__4783a {
-    font-weight: 600
+.boostUpsell__4783a .boostButton__4783a,.boostUpsell__4783a .notNowButton__4783a {
+    font-weight: var(--font-weight-semibold)
 }
 
 .boostUpsell__4783a .notNowButton__4783a:hover {
@@ -12013,7 +12012,7 @@ div.profileThemedContainer__656be {
     background-color: var(--status-danger);
     border-radius: 8px;
     box-sizing: border-box;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     min-width: 16px;
     padding: 0 4px;
     position: absolute;
@@ -12191,7 +12190,7 @@ div.profileThemedContainer__656be {
 }
 
 .notConnectedChannelName__722ff {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin: 8px 0;
     max-width: 75%;
     overflow: hidden;
@@ -12448,7 +12447,7 @@ div.profileThemedContainer__656be {
     color: var(--text-muted);
     flex-shrink: 0;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-left: 8px
 }
 
@@ -12483,7 +12482,7 @@ div.profileThemedContainer__656be {
 
 .authorName__6764b,.startedByName__6764b {
     flex-shrink: 0;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     max-width: 150px
 }
 
@@ -12864,7 +12863,7 @@ div.profileThemedContainer__656be {
     color: var(--text-normal);
     cursor: pointer;
     display: flex;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 30px;
     margin: 1px 0 1px 12px;
     padding: 4px
@@ -12906,7 +12905,7 @@ div.profileThemedContainer__656be {
     color: var(--text-normal);
     cursor: pointer;
     display: flex;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 30px;
     margin: 1px 0 1px 12px;
     padding: 4px
@@ -13085,4 +13084,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=abd9f4ae34ea594b.css.map*/
+/*# sourceMappingURL=e2bb75181effafe5.css.map*/

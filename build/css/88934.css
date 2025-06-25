@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: 9271da1929b99479
+  Original File Name: 909f52eb06698e51
 **/
 @value headerBarHeight 60px;
 
@@ -1364,7 +1364,7 @@
     background-color: var(--background-base-lowest);
     box-sizing: border-box;
     color: var(--text-normal);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding: 0 4px;
     text-align: center
 }
@@ -1504,7 +1504,7 @@
 .guildNameWrapper_c59071 {
     align-items: center;
     display: flex;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-bottom: 4px
 }
 
@@ -2544,4 +2544,4 @@
     width: 22px
 }
 
-/*# sourceMappingURL=9271da1929b99479.css.map*/
+/*# sourceMappingURL=909f52eb06698e51.css.map*/

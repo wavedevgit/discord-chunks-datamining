@@ -1,6 +1,6 @@
 /**
   Module ID: 79988
-  Original File Name: fab8b1053b55ca7f
+  Original File Name: 41bbc336b055435a
 **/
 .searchBar__3e00d {
     background-color: var(--background-base-lower);
@@ -203,7 +203,7 @@
 }
 
 .title_ac72c6 {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .subtitle_ac72c6 {
@@ -354,4 +354,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=fab8b1053b55ca7f.css.map*/
+/*# sourceMappingURL=41bbc336b055435a.css.map*/

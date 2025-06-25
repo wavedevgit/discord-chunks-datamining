@@ -1,6 +1,6 @@
 /**
   Module ID: 55867
-  Original File Name: 1ef4ea385ff236db
+  Original File Name: 71ec6950a804850d
 **/
 .searchBar__3e00d {
     background-color: var(--background-base-lower);
@@ -203,7 +203,7 @@
 }
 
 .title_ac72c6 {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .subtitle_ac72c6 {
@@ -407,4 +407,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=1ef4ea385ff236db.css.map*/
+/*# sourceMappingURL=71ec6950a804850d.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 76010
-  Original File Name: 6397d92a0e742580
+  Original File Name: bb53586fd5c55e59
 **/
 .container__5537c {
     display: flex;
@@ -178,7 +178,7 @@
     cursor: pointer;
     display: block;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-top: 10px;
     text-decoration: none
 }
@@ -191,7 +191,7 @@
 }
 
 .imageUploader_e4d0bf .sizeInfo_e4d0bf strong {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .imageUploader_e4d0bf.disabled_e4d0bf .imageUploaderInner_e4d0bf:focus-within,.imageUploader_e4d0bf.disabled_e4d0bf .imageUploaderInner_e4d0bf:hover {
@@ -260,7 +260,7 @@
     bottom: 0;
     color: var(--white);
     font-size: 10px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     left: 0;
     line-height: 12px;
     pointer-events: none;
@@ -401,7 +401,7 @@
     color: var(--text-link);
     cursor: pointer;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: 4px
 }
 
@@ -453,7 +453,7 @@
     color: var(--interactive-active);
     display: flex;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     justify-content: center;
     transition: opacity .2s
 }
@@ -519,7 +519,7 @@
 }
 
 .label__97cfe {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin: 24px 0 8px;
     text-transform: uppercase
 }
@@ -942,4 +942,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=6397d92a0e742580.css.map*/
+/*# sourceMappingURL=bb53586fd5c55e59.css.map*/

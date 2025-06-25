@@ -1,6 +1,6 @@
 /**
   Module ID: 16572
-  Original File Name: 9165d2c5d06d9cf1
+  Original File Name: 03ff5c02d0ed7fd3
 **/
 .container_fea832 {
     background-color: var(--input-background);
@@ -73,7 +73,7 @@
 
 .small_fea832 .input_fea832,.small_fea832 .tag_fea832 {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 20px;
     line-height: 20px;
     padding: 0 4px
@@ -444,7 +444,7 @@
 }
 
 .title_ac72c6 {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .subtitle_ac72c6 {
@@ -595,4 +595,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=9165d2c5d06d9cf1.css.map*/
+/*# sourceMappingURL=03ff5c02d0ed7fd3.css.map*/

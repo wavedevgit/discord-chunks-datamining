@@ -1,6 +1,6 @@
 /**
   Module ID: 47253
-  Original File Name: d2b3afb455df4ce9
+  Original File Name: f0bd4203c090a795
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -37,7 +37,7 @@
 .text__2db04 {
     color: var(--interactive-normal);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     text-align: center
 }
@@ -288,7 +288,7 @@
 
 .text__9e160 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     width: 160px
 }
@@ -454,7 +454,7 @@
 }
 
 .body__89307 .title__89307 {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-top: 16px
 }
 
@@ -555,7 +555,7 @@
 
 .profileNameTag__89307 {
     color: var(--interactive-active);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 20px;
     max-width: 118px
 }
@@ -646,4 +646,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=d2b3afb455df4ce9.css.map*/
+/*# sourceMappingURL=f0bd4203c090a795.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 15066
-  Original File Name: 5c670fbbad8c37ff
+  Original File Name: 4e0ce215125a2f97
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -608,7 +608,7 @@
 
 .small_fea832 .input_fea832,.small_fea832 .tag_fea832 {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 20px;
     line-height: 20px;
     padding: 0 4px
@@ -795,13 +795,13 @@
 
 h1.title_feb59c {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 1.2
 }
 
 h2.title_feb59c {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 1.25
 }
 
@@ -811,7 +811,7 @@ h3.title_feb59c {
 }
 
 h3.title_feb59c,h4.title_feb59c,h5.title_feb59c,h6.title_feb59c {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     text-transform: uppercase
 }
 
@@ -1068,7 +1068,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 strong {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .markdown_d285a6 em {
@@ -1098,7 +1098,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 th {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .markdown_d285a6 td,.markdown_d285a6 th {
@@ -1194,4 +1194,4 @@ h1.title_feb59c,h2.title_feb59c {
     margin-right: var(--spacing-32)
 }
 
-/*# sourceMappingURL=5c670fbbad8c37ff.css.map*/
+/*# sourceMappingURL=4e0ce215125a2f97.css.map*/

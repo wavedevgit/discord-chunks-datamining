@@ -1,6 +1,6 @@
 /**
   Module ID: 54597
-  Original File Name: 4ed7ddd6c6524699
+  Original File Name: 6259d649a7b944af
 **/
 .modal_f0dcaf {
     border-radius: 8px
@@ -76,7 +76,7 @@
 }
 
 .formTitle_f0dcaf {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 8px
 }
 
@@ -176,4 +176,4 @@
     gap: 4px
 }
 
-/*# sourceMappingURL=4ed7ddd6c6524699.css.map*/
+/*# sourceMappingURL=6259d649a7b944af.css.map*/

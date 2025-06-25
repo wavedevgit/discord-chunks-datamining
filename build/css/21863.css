@@ -1,6 +1,6 @@
 /**
   Module ID: 21863
-  Original File Name: c11628037f53dbab
+  Original File Name: ebf8a770bef8a12d
 **/
 .container__54e17 {
     background-color: var(--background-base-lower);
@@ -39,7 +39,7 @@
 }
 
 .checklistItemName__54e17 {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-bottom: 4px
 }
 
@@ -93,4 +93,4 @@
     padding: 15px 0
 }
 
-/*# sourceMappingURL=c11628037f53dbab.css.map*/
+/*# sourceMappingURL=ebf8a770bef8a12d.css.map*/

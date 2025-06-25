@@ -1,6 +1,6 @@
 /**
   Module ID: 49286
-  Original File Name: 09908d16820cb673
+  Original File Name: 3d9df22dfb5cbceb
 **/
 .imageUploader_e4d0bf {
     font-size: 12px;
@@ -11,7 +11,7 @@
     cursor: pointer;
     display: block;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-top: 10px;
     text-decoration: none
 }
@@ -24,7 +24,7 @@
 }
 
 .imageUploader_e4d0bf .sizeInfo_e4d0bf strong {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .imageUploader_e4d0bf.disabled_e4d0bf .imageUploaderInner_e4d0bf:focus-within,.imageUploader_e4d0bf.disabled_e4d0bf .imageUploaderInner_e4d0bf:hover {
@@ -93,7 +93,7 @@
     bottom: 0;
     color: var(--white);
     font-size: 10px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     left: 0;
     line-height: 12px;
     pointer-events: none;
@@ -272,7 +272,7 @@
 
 .header__3633a {
     display: flex;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-bottom: 16px;
     margin-top: 24px;
     width: 100%
@@ -549,7 +549,7 @@
 
 .tooltip__3f339 a {
     color: var(--white-500);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     text-decoration: underline
 }
 
@@ -646,7 +646,7 @@
 }
 
 .secondaryHeader__4a3a5 {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     word-break: break-word
 }
 
@@ -1033,7 +1033,7 @@
 
 .sectionHeader__59048 {
     color: var(--text-muted);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-bottom: 16px;
     margin-top: 32px
 }
@@ -2021,4 +2021,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=09908d16820cb673.css.map*/
+/*# sourceMappingURL=3d9df22dfb5cbceb.css.map*/

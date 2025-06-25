@@ -1,6 +1,6 @@
 /**
   Module ID: 20212
-  Original File Name: b7ca677415901217
+  Original File Name: 048c60f12b28e434
 **/
 .errorLabel_f3e49b,.supportCallToAction_f3e49b {
     margin-top: 20px
@@ -9,7 +9,7 @@
 .errorLabel_f3e49b {
     color: var(--text-muted-on-default);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     letter-spacing: .5px;
     text-transform: uppercase
 }
@@ -53,4 +53,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=b7ca677415901217.css.map*/
+/*# sourceMappingURL=048c60f12b28e434.css.map*/

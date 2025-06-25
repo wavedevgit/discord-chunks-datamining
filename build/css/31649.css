@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: b00ddb57c4bf1f2f
+  Original File Name: 171d3cb14bf24d64
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -27,7 +27,7 @@
 .headerText__9b8f6 {
     color: var(--interactive-active);
     font-size: 20px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 24px
 }
 
@@ -348,4 +348,4 @@
     text-transform: uppercase
 }
 
-/*# sourceMappingURL=b00ddb57c4bf1f2f.css.map*/
+/*# sourceMappingURL=171d3cb14bf24d64.css.map*/

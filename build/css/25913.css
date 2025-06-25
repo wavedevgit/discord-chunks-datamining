@@ -1,6 +1,6 @@
 /**
   Module ID: 25913
-  Original File Name: db6481dbd736fae4
+  Original File Name: 41e15fc12a8e6592
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -37,7 +37,7 @@
 .text__2db04 {
     color: var(--interactive-normal);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     text-align: center
 }
@@ -267,7 +267,7 @@
 }
 
 .price_fd0764 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .priceSpinner_fd0764 {
@@ -477,7 +477,7 @@
 
 .text__9e160 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     width: 160px
 }
@@ -643,7 +643,7 @@
 }
 
 .body__89307 .title__89307 {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-top: 16px
 }
 
@@ -744,7 +744,7 @@
 
 .profileNameTag__89307 {
     color: var(--interactive-active);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 20px;
     max-width: 118px
 }
@@ -835,4 +835,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=db6481dbd736fae4.css.map*/
+/*# sourceMappingURL=41e15fc12a8e6592.css.map*/

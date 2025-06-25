@@ -1,6 +1,6 @@
 /**
   Module ID: 47888
-  Original File Name: bd64b7ec1cf97664
+  Original File Name: 13d44b5788dbe6a4
 **/
 .container__1ce5d {
     position: relative
@@ -43,7 +43,7 @@
     background-color: var(--background-mod-strong);
     color: var(--text-normal);
     display: flex;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     justify-content: center;
     line-height: 1.2em;
     white-space: nowrap
@@ -598,4 +598,4 @@
     background-color: var(--background-base-lower)
 }
 
-/*# sourceMappingURL=bd64b7ec1cf97664.css.map*/
+/*# sourceMappingURL=13d44b5788dbe6a4.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 74023
-  Original File Name: 46766e7831661f2e
+  Original File Name: 5886103eb5e75f0e
 **/
 .downloadApps__4a98c {
     border-radius: 5px;
@@ -223,7 +223,7 @@
     color: var(--white-500);
     flex-grow: 1;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-top: 16px;
     padding: 12px 0;
     text-align: center;
@@ -274,4 +274,4 @@
     }
 }
 
-/*# sourceMappingURL=46766e7831661f2e.css.map*/
+/*# sourceMappingURL=5886103eb5e75f0e.css.map*/

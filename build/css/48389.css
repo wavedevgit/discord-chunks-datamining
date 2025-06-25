@@ -1,6 +1,6 @@
 /**
   Module ID: 48389
-  Original File Name: 3ae65fb4c8843c4c
+  Original File Name: 8877c1012517d299
 **/
 .header__6e6ad {
     align-items: center;
@@ -58,7 +58,7 @@
 }
 
 .subscribeButton_aea6af {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: auto
 }
 
@@ -288,4 +288,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=3ae65fb4c8843c4c.css.map*/
+/*# sourceMappingURL=8877c1012517d299.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 12902
-  Original File Name: 99eb403828dae549
+  Original File Name: c82f68115aadfd4b
 **/
 .text__87e56 {
     color: var(--premium-nitro-pink-text)
@@ -409,7 +409,7 @@
 
 .executedCommand_c19a55 .commandName_c19a55 {
     color: var(--text-link);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .executedCommand_c19a55 .appsIcon_c19a55 {
@@ -420,7 +420,7 @@
     background-color: var(--mention-background);
     border-radius: 3px;
     color: var(--text-link);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding: 0 2px
 }
 
@@ -431,7 +431,7 @@
 
 .executedCommand_c19a55 .applicationName_c19a55 {
     color: var(--header-primary);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .executedCommand_c19a55 .repliedMessage_c19a55 .username_c19a55,.executedCommand_c19a55 .targetUsername_c19a55 {
@@ -682,7 +682,7 @@
 .timestamp_c19a55 {
     cursor: default;
     display: inline-block;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 1.25rem;
     pointer-events: none
 }
@@ -783,7 +783,7 @@
     display: inline;
     flex-shrink: 0;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 1.375rem;
     overflow: hidden;
     position: relative;
@@ -809,7 +809,7 @@
 
 @media (-webkit-max-device-pixel-ratio:1) {
     .theme-light .username_c19a55 {
-        font-weight: 600
+        font-weight: var(--font-weight-semibold)
     }
 }
 
@@ -818,7 +818,7 @@
 }
 
 .background-opacity-low .username_c19a55,.background-opacity-medium .username_c19a55 {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .botTag_c19a55 {
@@ -1030,7 +1030,7 @@
 
 .edited_c19a55 {
     font-size: .625rem;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     line-height: 1;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -1267,4 +1267,4 @@
     background-color: var(--background-mod-subtle)
 }
 
-/*# sourceMappingURL=99eb403828dae549.css.map*/
+/*# sourceMappingURL=c82f68115aadfd4b.css.map*/

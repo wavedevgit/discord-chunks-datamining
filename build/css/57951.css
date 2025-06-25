@@ -1,6 +1,6 @@
 /**
   Module ID: 57951
-  Original File Name: 87b829154919648c
+  Original File Name: c2e4399c48e0c751
 **/
 .gatedContent__7184c {
     box-sizing: border-box;
@@ -24,7 +24,7 @@
 .title__7184c {
     color: var(--text-normal);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 28px;
     max-width: 640px;
     padding: 0 20px;
@@ -96,4 +96,4 @@
     background-image: url(/assets/e3c1e91ba36094bc.svg)
 }
 
-/*# sourceMappingURL=87b829154919648c.css.map*/
+/*# sourceMappingURL=c2e4399c48e0c751.css.map*/

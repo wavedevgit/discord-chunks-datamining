@@ -1,6 +1,6 @@
 /**
   Module ID: 33312
-  Original File Name: a0c4e378ff50c33e
+  Original File Name: 976585c56ec2f025
 **/
 .select_d48ec6.error_d48ec6 .errorMessage_d48ec6 {
     color: var(--status-danger);
@@ -16,7 +16,7 @@
 
 .title_b0f4cc {
     color: var(--interactive-normal);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 8px;
     text-transform: uppercase
 }
@@ -78,4 +78,4 @@
     justify-content: space-between
 }
 
-/*# sourceMappingURL=a0c4e378ff50c33e.css.map*/
+/*# sourceMappingURL=976585c56ec2f025.css.map*/

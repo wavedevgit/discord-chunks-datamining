@@ -1,6 +1,6 @@
 /**
   Module ID: 29922
-  Original File Name: dd5721f7fbb5d5fa
+  Original File Name: 4405d7664e5b72e0
 **/
 .header__7e090 {
     background-image: url(/assets/cb4131669938b6ad.svg);
@@ -106,7 +106,7 @@
 }
 
 .planSelectorHeader__945b8 {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-bottom: 8px
 }
 
@@ -144,7 +144,7 @@
 .planSelectorSubtotal__945b8 {
     color: var(--interactive-active);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 20px
 }
 
@@ -176,7 +176,7 @@
 .confirmationText__945b8 {
     color: var(--interactive-normal);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     text-align: center
 }
@@ -261,7 +261,7 @@
 .perkDescription_c609c8 {
     color: var(--interactive-active);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px
 }
 
@@ -297,7 +297,7 @@
 .bodyText__3bf54 {
     color: var(--interactive-normal);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px
 }
 
@@ -385,4 +385,4 @@
     padding-top: 16px
 }
 
-/*# sourceMappingURL=dd5721f7fbb5d5fa.css.map*/
+/*# sourceMappingURL=4405d7664e5b72e0.css.map*/

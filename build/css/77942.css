@@ -1,6 +1,6 @@
 /**
   Module ID: 77942
-  Original File Name: e3b1cf4f723d11d8
+  Original File Name: 9144f4732fe91319
 **/
 .container_aea6af {
     align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .subscribeButton_aea6af {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: auto
 }
 
@@ -246,4 +246,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=e3b1cf4f723d11d8.css.map*/
+/*# sourceMappingURL=9144f4732fe91319.css.map*/

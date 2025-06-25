@@ -1,6 +1,6 @@
 /**
   Module ID: 92241
-  Original File Name: 4cadfd8805d017f4
+  Original File Name: 061756e93871f176
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -38,14 +38,14 @@
 .name__8a969 {
     color: var(--header-primary);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 20px
 }
 
 .description__8a969 {
     color: var(--header-secondary);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 16px
 }
 
@@ -174,7 +174,7 @@
 }
 
 .premiumText__9671b {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .premiumAction__9671b {
@@ -265,7 +265,7 @@
 
 .button__30f28 {
     align-items: center;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -317,7 +317,7 @@
 }
 
 .button_c5cd6a {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -389,7 +389,7 @@
 
 .blockedText__477aa {
     font-size: 12px;
-    font-weight: 400
+    font-weight: var(--font-weight-normal)
 }
 
 .noIcon__477aa {
@@ -517,4 +517,4 @@
     padding-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=4cadfd8805d017f4.css.map*/
+/*# sourceMappingURL=061756e93871f176.css.map*/

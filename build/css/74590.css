@@ -1,6 +1,6 @@
 /**
   Module ID: 74590
-  Original File Name: b0f32e9b7d4b21df
+  Original File Name: 4c8ace22dd33c983
 **/
 .header__01c8c {
     align-items: flex-start;
@@ -136,7 +136,7 @@
 }
 
 .username__01c8c {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .tagFaded__01c8c {
@@ -187,4 +187,4 @@
     box-shadow: inset 0 -1px 0 hsl(var(--primary-300-hsl)/.3)
 }
 
-/*# sourceMappingURL=b0f32e9b7d4b21df.css.map*/
+/*# sourceMappingURL=4c8ace22dd33c983.css.map*/

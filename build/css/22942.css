@@ -1,6 +1,6 @@
 /**
   Module ID: 22942
-  Original File Name: a373b8ca401a84e6
+  Original File Name: 9f9ad1fb66f05bb1
 **/
 .modalRoot_d507dd {
     height: 100%;
@@ -49,7 +49,7 @@
     border-radius: var(--radius-xs);
     color: var(--interactive-normal);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 20px;
     padding: 2px 8px;
     transition: background-color .1s ease-in-out,color .1s ease-in-out
@@ -107,4 +107,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=a373b8ca401a84e6.css.map*/
+/*# sourceMappingURL=9f9ad1fb66f05bb1.css.map*/

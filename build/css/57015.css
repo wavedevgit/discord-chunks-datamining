@@ -1,6 +1,6 @@
 /**
   Module ID: 57015
-  Original File Name: 6d79eca84ac3ebbd
+  Original File Name: c07bd529bc9a168b
 **/
 .header__9f397 {
     padding: 24px 16px 0
@@ -27,7 +27,7 @@
 
 .title__9f397 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 30px
 }
 
@@ -72,7 +72,7 @@
 }
 
 .text_eb2cd2 {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     overflow: hidden;
     text-overflow: ellipsis
 }
@@ -94,7 +94,7 @@
 }
 
 .title__78f69 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .subtitle__78f69,.title__78f69 {
@@ -148,7 +148,7 @@
 }
 
 .title_b917ac {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     text-align: center
 }
 
@@ -218,7 +218,7 @@
 }
 
 .title_c04f35 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .subtitle_c04f35,.title_c04f35 {
@@ -271,7 +271,7 @@
 
 .title_b0f4cc {
     color: var(--interactive-normal);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 8px;
     text-transform: uppercase
 }
@@ -313,7 +313,7 @@
 }
 
 .title__38377 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-top: 20px;
     text-align: center
 }
@@ -352,7 +352,7 @@
 
 .title__3cded {
     color: var(--white-500);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     z-index: 2
 }
 
@@ -367,7 +367,7 @@
 }
 
 .title_adbad8 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 8px
 }
 
@@ -527,7 +527,7 @@
 
 .completedTitle_f17563 {
     color: var(--white-500);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 16px
 }
 
@@ -609,7 +609,7 @@
 
 .joinCTA_f17563 {
     color: var(--blue-345);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 @media (max-width:485px) {
@@ -631,4 +631,4 @@
     }
 }
 
-/*# sourceMappingURL=6d79eca84ac3ebbd.css.map*/
+/*# sourceMappingURL=c07bd529bc9a168b.css.map*/

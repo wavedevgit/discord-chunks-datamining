@@ -1,9 +1,9 @@
 /**
   Module ID: 2435
-  Original File Name: 4b0fc83533cffd04
+  Original File Name: f8fcad046ae42ac0
 **/
 .title_a0b371 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 8px;
     margin-top: 11px
 }
@@ -34,4 +34,4 @@
     padding: 16px
 }
 
-/*# sourceMappingURL=4b0fc83533cffd04.css.map*/
+/*# sourceMappingURL=f8fcad046ae42ac0.css.map*/

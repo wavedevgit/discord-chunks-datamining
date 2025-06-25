@@ -1,6 +1,6 @@
 /**
   Module ID: 86915
-  Original File Name: b9369baa653ebd6c
+  Original File Name: 3fc9cbc3e999d1da
 **/
 .iconButton_aa66d3 {
     background-color: transparent;
@@ -135,7 +135,7 @@
 .container_d5ae15 .headerText_d5ae15 {
     color: var(--header-secondary);
     font-size: 14px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-right: 5px;
     padding: 0;
     text-transform: uppercase
@@ -146,7 +146,7 @@
     border: none;
     flex: 1;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-bottom: 1px;
     padding: 0
 }
@@ -221,7 +221,7 @@
 
 .section_d5ae15 {
     font-size: 11px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     text-transform: uppercase
 }
 
@@ -229,7 +229,7 @@
     color: var(--interactive-normal);
     cursor: pointer;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding: 0 0 0 8px
 }
 
@@ -253,7 +253,7 @@
 
 .empty_d5ae15 .noResultsHeader_d5ae15 {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin: 15px 0 0;
     text-align: center
 }
@@ -742,7 +742,7 @@
 
 .warningText__0511a {
     color: var(--status-warning);
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .twoColumnSettings__0511a {
@@ -824,4 +824,4 @@
     vertical-align: top
 }
 
-/*# sourceMappingURL=b9369baa653ebd6c.css.map*/
+/*# sourceMappingURL=3fc9cbc3e999d1da.css.map*/

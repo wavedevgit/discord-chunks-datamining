@@ -1,6 +1,6 @@
 /**
   Module ID: 1812
-  Original File Name: 237647df7903246f
+  Original File Name: bbc8075229661cd4
 **/
 .closeButton__8e05e {
     position: absolute;
@@ -15,7 +15,7 @@
 }
 
 .header__8e05e {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     text-align: center
 }
 
@@ -27,4 +27,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=237647df7903246f.css.map*/
+/*# sourceMappingURL=bbc8075229661cd4.css.map*/

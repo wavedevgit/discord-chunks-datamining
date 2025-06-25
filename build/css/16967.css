@@ -1,6 +1,6 @@
 /**
   Module ID: 16967
-  Original File Name: 687bd1f0c7b704c6
+  Original File Name: afbb12e8a0727749
 **/
 .closeButton__47998 {
     position: absolute;
@@ -54,7 +54,7 @@
 .title__47998 {
     color: var(--primary-300);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     letter-spacing: .5px;
     text-transform: uppercase
 }
@@ -67,7 +67,7 @@
 }
 
 .timestamp__47998 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .choiceWrapper__47998 {
@@ -198,7 +198,7 @@
     background-color: var(--background-mod-strong);
     color: var(--text-normal);
     display: flex;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     justify-content: center;
     line-height: 1.2em;
     white-space: nowrap
@@ -478,4 +478,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=687bd1f0c7b704c6.css.map*/
+/*# sourceMappingURL=afbb12e8a0727749.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 78712
-  Original File Name: 7d568fc93db6d22c
+  Original File Name: 5ddad4abed38fecd
 **/
 .container__444a0 {
     max-width: 960px
@@ -14,7 +14,7 @@
 
 .content__444a0 {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     overflow: hidden;
     padding: 0 0 16px;
     white-space: pre-wrap
@@ -32,4 +32,4 @@
     color: var(--header-primary)
 }
 
-/*# sourceMappingURL=7d568fc93db6d22c.css.map*/
+/*# sourceMappingURL=5ddad4abed38fecd.css.map*/

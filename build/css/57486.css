@@ -1,6 +1,6 @@
 /**
   Module ID: 57486
-  Original File Name: 54ff53a5fcab9ac8
+  Original File Name: d909993426f0f44f
 **/
 .noScroll_afb566 {
     overflow-y: visible!important;
@@ -91,7 +91,7 @@
 
 .selected_afb566 .stepTitle_afb566 {
     color: var(--white-500);
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .selected_afb566 .stepIndex_afb566 {
@@ -163,7 +163,7 @@
 }
 
 .formTitle_ef2eb4 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 8px
 }
 
@@ -246,4 +246,4 @@
     margin-left: 16px
 }
 
-/*# sourceMappingURL=54ff53a5fcab9ac8.css.map*/
+/*# sourceMappingURL=d909993426f0f44f.css.map*/

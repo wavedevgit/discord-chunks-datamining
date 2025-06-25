@@ -1,6 +1,6 @@
 /**
   Module ID: 23401
-  Original File Name: 377520e85ad8b896
+  Original File Name: 6ff75f6361e4d5ba
 **/
 .content__60d39 {
     padding: 24px
@@ -62,7 +62,7 @@
 }
 
 .bold__60d39 {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
-/*# sourceMappingURL=377520e85ad8b896.css.map*/
+/*# sourceMappingURL=6ff75f6361e4d5ba.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 70657
-  Original File Name: 67c7c8cd70c518ac
+  Original File Name: 6abbc0f0d0fd162e
 **/
 .container__270b2 {
     flex-direction: row;
@@ -341,7 +341,7 @@
 
 .header_d5f3cd {
     color: var(--interactive-normal);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 12px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1062,7 +1062,7 @@
 
 .listName__60626 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1128,4 +1128,4 @@
     padding: 16px
 }
 
-/*# sourceMappingURL=67c7c8cd70c518ac.css.map*/
+/*# sourceMappingURL=6abbc0f0d0fd162e.css.map*/

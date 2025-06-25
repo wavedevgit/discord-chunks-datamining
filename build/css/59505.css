@@ -1,6 +1,6 @@
 /**
   Module ID: 59505
-  Original File Name: 9c0d13bc6af72d38
+  Original File Name: 660f8aadfa2c5c1c
 **/
 .container__1b24f {
     align-items: center;
@@ -92,7 +92,7 @@
     color: var(--text-muted);
     flex-shrink: 0;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-left: 8px
 }
 
@@ -127,7 +127,7 @@
 
 .authorName__6764b,.startedByName__6764b {
     flex-shrink: 0;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     max-width: 150px
 }
 
@@ -334,4 +334,4 @@
     overflow: hidden
 }
 
-/*# sourceMappingURL=9c0d13bc6af72d38.css.map*/
+/*# sourceMappingURL=660f8aadfa2c5c1c.css.map*/

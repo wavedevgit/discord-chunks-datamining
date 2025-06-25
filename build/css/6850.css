@@ -1,6 +1,6 @@
 /**
   Module ID: 6850
-  Original File Name: 3d29b553d480abf4
+  Original File Name: ac643f6e99b19376
 **/
 .searchContainer__6ae25 {
     position: relative
@@ -1034,7 +1034,7 @@
     background-color: transparent;
     color: var(--text-normal);
     font-family: var(--font-primary);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding: var(--space-xs);
     position: relative;
     vertical-align: middle
@@ -1571,7 +1571,7 @@
 }
 
 .memberNoticeActionButton_acdcc0 {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     padding: 0
 }
 
@@ -2438,4 +2438,4 @@
     margin-left: 4px
 }
 
-/*# sourceMappingURL=3d29b553d480abf4.css.map*/
+/*# sourceMappingURL=ac643f6e99b19376.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: d8cebd4a118a1203
+  Original File Name: 1e45b202757d7760
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -151,7 +151,7 @@
 
 .buttonLogin__3f12a {
     font-size: 12px;
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .card__3f12a {
@@ -218,7 +218,7 @@
     align-items: center;
     color: var(--header-primary);
     display: flex;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     justify-content: center;
     margin-top: 4px
 }
@@ -385,7 +385,7 @@
     color: var(--header-secondary);
     font-family: var(--font-display);
     font-size: 12px;
-    font-weight: 800;
+    font-weight: var(--font-weight-extra-bold);
     line-height: 16px;
     text-transform: uppercase
 }
@@ -824,7 +824,7 @@
 .title__8d70a {
     color: var(--header-primary);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 30px;
     margin-top: 2px
 }
@@ -1118,14 +1118,14 @@
 .name__8a969 {
     color: var(--header-primary);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 20px
 }
 
 .description__8a969 {
     color: var(--header-secondary);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 16px
 }
 
@@ -1360,7 +1360,7 @@
 
 .executedCommand_c19a55 .commandName_c19a55 {
     color: var(--text-link);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .executedCommand_c19a55 .appsIcon_c19a55 {
@@ -1371,7 +1371,7 @@
     background-color: var(--mention-background);
     border-radius: 3px;
     color: var(--text-link);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding: 0 2px
 }
 
@@ -1382,7 +1382,7 @@
 
 .executedCommand_c19a55 .applicationName_c19a55 {
     color: var(--header-primary);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .executedCommand_c19a55 .repliedMessage_c19a55 .username_c19a55,.executedCommand_c19a55 .targetUsername_c19a55 {
@@ -1633,7 +1633,7 @@
 .timestamp_c19a55 {
     cursor: default;
     display: inline-block;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 1.25rem;
     pointer-events: none
 }
@@ -1734,7 +1734,7 @@
     display: inline;
     flex-shrink: 0;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 1.375rem;
     overflow: hidden;
     position: relative;
@@ -1760,7 +1760,7 @@
 
 @media (-webkit-max-device-pixel-ratio:1) {
     .theme-light .username_c19a55 {
-        font-weight: 600
+        font-weight: var(--font-weight-semibold)
     }
 }
 
@@ -1769,7 +1769,7 @@
 }
 
 .background-opacity-low .username_c19a55,.background-opacity-medium .username_c19a55 {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .botTag_c19a55 {
@@ -1981,7 +1981,7 @@
 
 .edited_c19a55 {
     font-size: .625rem;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     line-height: 1;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -2242,7 +2242,7 @@
 }
 
 .premiumText__9671b {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .premiumAction__9671b {
@@ -2333,7 +2333,7 @@
 
 .button__30f28 {
     align-items: center;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -2385,7 +2385,7 @@
 }
 
 .button_c5cd6a {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -2457,7 +2457,7 @@
 
 .blockedText__477aa {
     font-size: 12px;
-    font-weight: 400
+    font-weight: var(--font-weight-normal)
 }
 
 .noIcon__477aa {
@@ -2717,7 +2717,7 @@
 
 .title_fa285e {
     color: var(--header-primary);
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .activityCount_fa285e,.directInviteSubTitle_fa285e {
@@ -2990,7 +2990,7 @@
 
 .title_b0f4cc {
     color: var(--interactive-normal);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 8px;
     text-transform: uppercase
 }
@@ -3059,7 +3059,7 @@
 .createAccountTemplateHeader_d332d2 {
     color: var(--header-primary);
     font-size: 24px;
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .authBlock_d332d2 {
@@ -3178,7 +3178,7 @@
 
 .protipText__5c799 {
     color: var(--text-feedback-positive);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     text-transform: uppercase
 }
 
@@ -3206,7 +3206,7 @@
 
 .category__5c799 {
     font-size: 12px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-left: -13px;
     text-transform: uppercase
 }
@@ -3307,4 +3307,4 @@
     height: 100px
 }
 
-/*# sourceMappingURL=d8cebd4a118a1203.css.map*/
+/*# sourceMappingURL=1e45b202757d7760.css.map*/

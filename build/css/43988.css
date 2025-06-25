@@ -1,6 +1,6 @@
 /**
   Module ID: 43988
-  Original File Name: 3230fd63eb5edbd1
+  Original File Name: 376fc329a78bc374
 **/
 .premiumTrialBadge_e4ef22 {
     align-items: center;
@@ -471,7 +471,7 @@
 .message_fcf29c {
     color: var(--text-normal);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -565,7 +565,7 @@
 
 .small_fea832 .input_fea832,.small_fea832 .tag_fea832 {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 20px;
     line-height: 20px;
     padding: 0 4px
@@ -1695,7 +1695,7 @@
 }
 
 .price_fd0764 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .priceSpinner_fd0764 {
@@ -1858,4 +1858,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=3230fd63eb5edbd1.css.map*/
+/*# sourceMappingURL=376fc329a78bc374.css.map*/

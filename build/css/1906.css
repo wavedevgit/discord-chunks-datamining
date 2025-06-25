@@ -1,6 +1,6 @@
 /**
   Module ID: 1906
-  Original File Name: 672f874e2bdcb156
+  Original File Name: 1373b169ab004e94
 **/
 .container__26abc {
     background-color: var(--background-surface-high);
@@ -40,7 +40,7 @@
     color: var(--text-link);
     cursor: pointer;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: 4px
 }
 
@@ -84,4 +84,4 @@
     background-color: var(--background-base-lowest)
 }
 
-/*# sourceMappingURL=672f874e2bdcb156.css.map*/
+/*# sourceMappingURL=1373b169ab004e94.css.map*/

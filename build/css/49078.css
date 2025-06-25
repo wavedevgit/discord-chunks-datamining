@@ -1,6 +1,6 @@
 /**
   Module ID: 49078
-  Original File Name: 73cd6e5c112d7256
+  Original File Name: d83f77482caca45b
 **/
 .addFriendInputWrapper__72ba7 {
     align-items: center;
@@ -41,7 +41,7 @@
 
 .inputText__72ba7 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     letter-spacing: .04em;
     line-height: 20px;
     white-space: pre
@@ -106,4 +106,4 @@
     padding-top: var(--space-16)
 }
 
-/*# sourceMappingURL=73cd6e5c112d7256.css.map*/
+/*# sourceMappingURL=d83f77482caca45b.css.map*/

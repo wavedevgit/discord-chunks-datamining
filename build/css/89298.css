@@ -1,6 +1,6 @@
 /**
   Module ID: 89298
-  Original File Name: a0945e830f5de3bc
+  Original File Name: 709176ab4a3fba92
 **/
 .buttonContainer__7e329 {
     align-items: center;
@@ -784,7 +784,7 @@
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 22px;
     overflow: hidden;
     padding: 6px 12px;
@@ -875,7 +875,7 @@
     flex: 0 0 auto;
     font-family: var(--font-display);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     text-align: right;
     text-transform: uppercase
 }
@@ -1480,4 +1480,4 @@
     pointer-events: auto
 }
 
-/*# sourceMappingURL=a0945e830f5de3bc.css.map*/
+/*# sourceMappingURL=709176ab4a3fba92.css.map*/

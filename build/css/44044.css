@@ -1,6 +1,6 @@
 /**
   Module ID: 44044
-  Original File Name: 506699615836a817
+  Original File Name: 8c184e490218ebf8
 **/
 .iconContainer__98cf7 {
     filter: saturate(var(--saturation-factor,1));
@@ -30,7 +30,7 @@
 .title__8d70a {
     color: var(--header-primary);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 30px;
     margin-top: 2px
 }
@@ -117,7 +117,7 @@
 
 .protipText__5c799 {
     color: var(--text-feedback-positive);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     text-transform: uppercase
 }
 
@@ -145,7 +145,7 @@
 
 .category__5c799 {
     font-size: 12px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-left: -13px;
     text-transform: uppercase
 }
@@ -264,4 +264,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=506699615836a817.css.map*/
+/*# sourceMappingURL=8c184e490218ebf8.css.map*/

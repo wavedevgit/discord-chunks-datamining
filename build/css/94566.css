@@ -1,6 +1,6 @@
 /**
   Module ID: 94566
-  Original File Name: 9dc20831d0f96ab5
+  Original File Name: 9694b1e2a3e6f0a5
 **/
 .header__61c70 {
     align-items: center;
@@ -18,7 +18,7 @@
 }
 
 .title__61c70 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     padding-bottom: 10px
 }
 
@@ -71,4 +71,4 @@
     }
 }
 
-/*# sourceMappingURL=9dc20831d0f96ab5.css.map*/
+/*# sourceMappingURL=9694b1e2a3e6f0a5.css.map*/

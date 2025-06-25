@@ -1,6 +1,6 @@
 /**
   Module ID: 49027
-  Original File Name: 56497745ff232937
+  Original File Name: a1615faa4dcd6410
 **/
 .subscription_d970da {
     align-items: center;
@@ -48,7 +48,7 @@
     color: var(--header-primary);
     flex: 1;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 20px;
     margin-bottom: 8px
 }
@@ -297,7 +297,7 @@
 }
 
 .planSelectorHeader__945b8 {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-bottom: 8px
 }
 
@@ -335,7 +335,7 @@
 .planSelectorSubtotal__945b8 {
     color: var(--interactive-active);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 20px
 }
 
@@ -367,7 +367,7 @@
 .confirmationText__945b8 {
     color: var(--interactive-normal);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     text-align: center
 }
@@ -507,4 +507,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=56497745ff232937.css.map*/
+/*# sourceMappingURL=a1615faa4dcd6410.css.map*/

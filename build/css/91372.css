@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: cd0e467aa723dda9
+  Original File Name: b110a2dea4b7b14e
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -67,7 +67,7 @@
 .phoneFieldPopout__61a01 .countryCode__61a01 {
     color: var(--header-primary);
     font-size: 13px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     text-align: right
 }
 
@@ -127,7 +127,7 @@
 .tierPrice_ea81a9 {
     color: var(--interactive-active);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-bottom: 2px;
     margin-top: 16px
 }
@@ -206,17 +206,18 @@
 }
 
 .openDiscordButton_e64651 {
-    font-weight: 600;
     margin-bottom: 8px;
-    margin-top: 24px;
+    margin-top: 24px
+}
+
+.doneButton_e64651,.openDiscordButton_e64651 {
+    font-weight: var(--font-weight-semibold);
     width: 100%
 }
 
 .doneButton_e64651 {
     background: var(--background-accent);
-    color: var(--white-500);
-    font-weight: 600;
-    width: 100%
+    color: var(--white-500)
 }
 
 .container__24a95 {
@@ -396,7 +397,7 @@
 .tierTrialIndicator__3efc4 {
     background-color: var(--brand-500);
     color: var(--white-500);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding-bottom: 4px;
     padding-top: 4px
 }
@@ -573,13 +574,13 @@
 
 h1.title_feb59c {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 1.2
 }
 
 h2.title_feb59c {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 1.25
 }
 
@@ -589,7 +590,7 @@ h3.title_feb59c {
 }
 
 h3.title_feb59c,h4.title_feb59c,h5.title_feb59c,h6.title_feb59c {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     text-transform: uppercase
 }
 
@@ -846,7 +847,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 strong {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .markdown_d285a6 em {
@@ -876,7 +877,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 th {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .markdown_d285a6 td,.markdown_d285a6 th {
@@ -1180,7 +1181,7 @@ h1.title_feb59c,h2.title_feb59c {
 
 .keybindInput__2636e {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none
@@ -2326,7 +2327,7 @@ h1.title_feb59c,h2.title_feb59c {
 
 .error__37475 {
     color: var(--text-danger);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .undoButton__37475 {
@@ -2400,7 +2401,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .planSelectorHeader__945b8 {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-bottom: 8px
 }
 
@@ -2438,7 +2439,7 @@ h1.title_feb59c,h2.title_feb59c {
 .planSelectorSubtotal__945b8 {
     color: var(--interactive-active);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 20px
 }
 
@@ -2470,7 +2471,7 @@ h1.title_feb59c,h2.title_feb59c {
 .confirmationText__945b8 {
     color: var(--interactive-normal);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     text-align: center
 }
@@ -2780,7 +2781,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .acronym__0d706 {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 1.2em;
     white-space: nowrap
 }
@@ -3260,7 +3261,7 @@ h1.title_feb59c,h2.title_feb59c {
     color: var(--header-primary);
     flex-grow: 0;
     flex-shrink: 1;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -3302,7 +3303,7 @@ h1.title_feb59c,h2.title_feb59c {
     display: flex;
     flex-direction: row;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     overflow: hidden;
     padding: 10px
@@ -3525,7 +3526,7 @@ h1.title_feb59c,h2.title_feb59c {
     border-radius: 3px;
     display: flex;
     font-size: 11px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     height: 14px;
     letter-spacing: .4px;
     margin-left: 8px;
@@ -3862,7 +3863,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     display: flex;
     flex-shrink: 0;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     gap: var(--space-xs);
     height: auto;
     justify-content: space-between;
@@ -4400,7 +4401,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 
 .subtext__972a0 {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -4916,7 +4917,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 }
 
 .bannerBody_f01cc3 a {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     text-decoration: underline
 }
 
@@ -6308,7 +6309,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 
 .bannerBody_cc67fb a {
     color: var(--white-500);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     text-decoration: underline
 }
 
@@ -8687,7 +8688,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     color: var(--text-normal);
     font-family: var(--font-primary);
     font-size: 14px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     padding: 8px 8px 8px 16px
 }
 
@@ -8819,7 +8820,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 .marketingRefreshTitle__6f73d {
     color: var(--header-primary);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 30px;
     margin-bottom: 8px;
     margin-top: 0
@@ -9571,7 +9572,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .description__8d742 strong {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .section_e335a7 {
@@ -9840,7 +9841,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     border: none;
     color: var(--interactive-active);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     margin-top: 16px;
     padding: 16px 19px
@@ -10118,7 +10119,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .infoCardValue__0ab43 {
     color: var(--header-primary);
-    font-weight: 400
+    font-weight: var(--font-weight-normal)
 }
 
 .rowButton__0ab43 {
@@ -10156,7 +10157,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .rowButtonLabel__0ab43 {
     color: var(--interactive-active);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .paymentDueBadge__0ab43 {
@@ -10233,7 +10234,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .description__9851a strong {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .wrapper__77ba1 {
@@ -10523,7 +10524,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .rowApplied__94f72 {
-    font-weight: 400
+    font-weight: var(--font-weight-normal)
 }
 
 .rowCreditCount__94f72 {
@@ -10833,7 +10834,7 @@ html .invoiceCancelRow_e1372c {
 }
 
 .body__89307 .title__89307 {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-top: 16px
 }
 
@@ -10934,7 +10935,7 @@ html .invoiceCancelRow_e1372c {
 
 .profileNameTag__89307 {
     color: var(--interactive-active);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 20px;
     max-width: 118px
 }
@@ -11368,7 +11369,7 @@ html .invoiceCancelRow_b9f95d {
 
 .cancelLink_dbec16 {
     color: var(--blue-345);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     white-space: nowrap
 }
 
@@ -11436,7 +11437,7 @@ html .invoiceCancelRow_b9f95d {
     border: none;
     color: var(--interactive-active);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     margin-top: 16px;
     padding: 16px 19px
@@ -12054,7 +12055,7 @@ html .invoiceCancelRow_b9f95d {
 .guildName_e7c728 {
     color: var(--header-primary);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 20px;
     margin-right: 4px;
     overflow: hidden;
@@ -12781,7 +12782,7 @@ div.nagbar_d74ef8 {
 .phoneVerificationModal_db41ea .title_db41ea {
     color: var(--header-primary);
     font-size: 20px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-top: auto;
     padding-top: 80px
 }
@@ -12872,7 +12873,7 @@ div.nagbar_d74ef8 {
 .btn__2666b {
     cursor: pointer;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 16px;
     padding: 10px 20px;
     position: relative;
@@ -13033,7 +13034,7 @@ div.nagbar_d74ef8 {
     color: var(--header-primary);
     font-family: var(--font-display);
     font-size: 20px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 24px;
     margin-bottom: 6px
 }
@@ -13190,7 +13191,7 @@ div.nagbar_d74ef8 {
 }
 
 .title__6dc27 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .subtitle__6dc27,.title__6dc27 {
@@ -13515,7 +13516,7 @@ div.nagbar_d74ef8 {
     border-top: 1px solid;
     border-color: var(--primary-500);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-bottom: 8px;
     margin-top: 20px;
     padding-top: 20px
@@ -13563,7 +13564,7 @@ div.nagbar_d74ef8 {
     color: var(--white-500);
     display: block;
     font-size: 11px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 14px;
     letter-spacing: .4px;
     line-height: 14px;
@@ -13633,7 +13634,7 @@ div.nagbar_d74ef8 {
 
 .refundSubHeader_e9cb00 {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin: 20px 0 8px;
     text-transform: uppercase
 }
@@ -13787,7 +13788,7 @@ div.nagbar_d74ef8 {
 
 .paymentRowHeader__01014 {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-right: 44px;
     padding: 20px
 }
@@ -13800,7 +13801,7 @@ div.nagbar_d74ef8 {
 
 .tab__01014 {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: 12px;
     padding-bottom: 12px
 }
@@ -14188,7 +14189,7 @@ div.nagbar_d74ef8 {
 
 .connectionOptionsWrapper_c7f964 .connectionOptionSwitch_c7f964 h3 {
     color: #fff;
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .connectionOptionSwitch_c7f964 {
@@ -14262,7 +14263,7 @@ div.nagbar_d74ef8 {
 }
 
 .integrationRevoked_c7f964 {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .integrationRevoked_c7f964 a {
@@ -15088,7 +15089,7 @@ div.nagbar_d74ef8 {
     box-shadow: inset 0 -4px 0 var(--background-base-lowest);
     display: inline-block;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: 23px;
     line-height: 12px;
     padding: 3px 6px 4px;
@@ -15169,7 +15170,7 @@ div.nagbar_d74ef8 {
 .gameName_cc46f0 {
     color: var(--header-primary);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 22px
 }
 
@@ -15409,7 +15410,7 @@ div.nagbar_d74ef8 {
 .membershipDialogSwitchHousesAction__2d899 {
     cursor: pointer;
     display: inline-block;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-left: 4px;
     transition: color .1s
 }
@@ -15519,7 +15520,7 @@ div.nagbar_d74ef8 {
 }
 
 .introHeader__6ce23 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 8px
 }
 
@@ -15794,7 +15795,7 @@ div.nagbar_d74ef8 {
 
 .subTextHeader__6bc46 {
     color: var(--text-muted);
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .codeText__6bc46 {
@@ -16058,7 +16059,7 @@ div.nagbar_d74ef8 {
     border-radius: var(--radius-xs);
     color: var(--interactive-active);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-bottom: 20px;
     margin-top: -12px
 }
@@ -16097,7 +16098,7 @@ div.nagbar_d74ef8 {
     color: var(--white-500);
     display: inline-block;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 12px;
     padding: 3px 6px;
     text-shadow: 0 1px 0 var(--opacity-black-24);
@@ -16112,7 +16113,7 @@ div.nagbar_d74ef8 {
     border-radius: 3px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 34px;
     overflow: hidden;
     position: relative
@@ -16204,7 +16205,7 @@ div.nagbar_d74ef8 {
 .note__71961 {
     color: var(--text-muted);
     font-size: 10px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 14px;
     margin-top: 1px;
     overflow: hidden;
@@ -16214,14 +16215,14 @@ div.nagbar_d74ef8 {
 }
 
 .username__71961 {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     opacity: .6
 }
 
 .header__71961 {
     color: var(--interactive-normal);
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     letter-spacing: .025em;
     line-height: 30px;
     margin-top: 4px;
@@ -16370,7 +16371,7 @@ div.nagbar_d74ef8 {
     align-items: center;
     box-sizing: border-box;
     display: grid;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     grid-template-columns: 1fr auto;
     height: 80px;
     padding: 14px 0
@@ -16424,7 +16425,7 @@ div.nagbar_d74ef8 {
 .localizedName_be1a1e {
     flex: 0 0 auto;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     line-height: 20px
 }
 
@@ -17619,7 +17620,7 @@ div.nagbar_d74ef8 {
     color: var(--header-primary);
     flex: 1;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 20px;
     margin-bottom: 8px
 }
@@ -18516,7 +18517,7 @@ html .invoiceCancelRow__968a4 {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: 40px;
     justify-content: space-between;
     overflow: hidden;
@@ -18949,7 +18950,7 @@ html .invoiceCancelRow__968a4 {
 
 .pttToolsMessage__1c5a3.pttToolsWarning__1c5a3 a {
     color: var(--status-danger);
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .pttToolsFlex__1c5a3 {
@@ -19011,7 +19012,7 @@ html .invoiceCancelRow__968a4 {
 }
 
 .inputDisabledWarning_ac7648 a {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .inputSensitivitySlider_ac7648 {
@@ -19331,4 +19332,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=cd0e467aa723dda9.css.map*/
+/*# sourceMappingURL=b110a2dea4b7b14e.css.map*/

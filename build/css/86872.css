@@ -1,6 +1,6 @@
 /**
   Module ID: 86872
-  Original File Name: c74c8ca52173da91
+  Original File Name: 90b87b60f7006773
 **/
 .editProfileContainer__42179 {
     background-color: var(--background-surface-highest);
@@ -139,7 +139,7 @@
 
 .title_fa285e {
     color: var(--header-primary);
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .activityCount_fa285e,.directInviteSubTitle_fa285e {
@@ -346,4 +346,4 @@
     min-width: 16px
 }
 
-/*# sourceMappingURL=c74c8ca52173da91.css.map*/
+/*# sourceMappingURL=90b87b60f7006773.css.map*/

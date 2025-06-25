@@ -1,6 +1,6 @@
 /**
   Module ID: 13453
-  Original File Name: 2455ce82ec65b3dc
+  Original File Name: 348aac71e981009f
 **/
 .churnFooterContainer__64988 {
     overflow-x: clip;
@@ -89,7 +89,7 @@
 }
 
 .body__89307 .title__89307 {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-top: 16px
 }
 
@@ -190,7 +190,7 @@
 
 .profileNameTag__89307 {
     color: var(--interactive-active);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 20px;
     max-width: 118px
 }
@@ -311,7 +311,7 @@
 .text__2db04 {
     color: var(--interactive-normal);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     text-align: center
 }
@@ -342,4 +342,4 @@
     margin-top: 18px
 }
 
-/*# sourceMappingURL=2455ce82ec65b3dc.css.map*/
+/*# sourceMappingURL=348aac71e981009f.css.map*/

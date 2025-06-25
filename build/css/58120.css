@@ -1,6 +1,6 @@
 /**
   Module ID: 58120
-  Original File Name: 15d49de47cb5648d
+  Original File Name: 3185f3a642a2db13
 **/
 .container_f89b2c {
     background-color: var(--input-background);
@@ -142,7 +142,7 @@
 
 .keybindInput__2636e {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none
@@ -245,4 +245,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=15d49de47cb5648d.css.map*/
+/*# sourceMappingURL=3185f3a642a2db13.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 3809
-  Original File Name: 3aee3f27480dbe94
+  Original File Name: 15ce351b09b9bff9
 **/
 .verifyConnectedAccount_fb52a4 {
     background: url(/assets/1243734d7e2a4654.png) 0 0 repeat;
@@ -55,7 +55,7 @@
 }
 
 .message_f87c73 strong {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
-/*# sourceMappingURL=3aee3f27480dbe94.css.map*/
+/*# sourceMappingURL=15ce351b09b9bff9.css.map*/

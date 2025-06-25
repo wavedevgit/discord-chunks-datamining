@@ -1,11 +1,11 @@
 /**
   Module ID: 226
-  Original File Name: c93ed6874f7b04c8
+  Original File Name: fb981dbc616bf627
 **/
 .error__6e36d {
     color: var(--status-danger);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-top: 4px
 }
 
@@ -29,14 +29,16 @@
 
 .gameName__15293 {
     flex-grow: 1;
-    font-size: 16px;
-    font-weight: 600
+    font-size: 16px
+}
+
+.gameName__15293,.installSize__15293 {
+    font-weight: var(--font-weight-semibold)
 }
 
 .installSize__15293 {
     border-radius: 3px;
     font-size: 14px;
-    font-weight: 600;
     padding: 5px 8px;
     white-space: nowrap
 }
@@ -80,4 +82,4 @@
     color: var(--primary-200)
 }
 
-/*# sourceMappingURL=c93ed6874f7b04c8.css.map*/
+/*# sourceMappingURL=fb981dbc616bf627.css.map*/

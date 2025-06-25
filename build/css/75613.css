@@ -1,6 +1,6 @@
 /**
   Module ID: 75613
-  Original File Name: 8eebcdcb4459323a
+  Original File Name: f9194f977543a1c1
 **/
 .perkRow_c609c8 {
     align-items: center;
@@ -28,7 +28,7 @@
 .perkDescription_c609c8 {
     color: var(--interactive-active);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px
 }
 
@@ -111,4 +111,4 @@
     justify-content: flex-end
 }
 
-/*# sourceMappingURL=8eebcdcb4459323a.css.map*/
+/*# sourceMappingURL=f9194f977543a1c1.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 27919
-  Original File Name: 1b830b87e41645cf
+  Original File Name: 219c411c2849e859
 **/
 .title__0396e {
     display: inline-flex;
@@ -33,7 +33,7 @@
     color: var(--interactive-active);
     display: flex;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     justify-content: center;
     transition: opacity .2s
 }
@@ -70,4 +70,4 @@
     margin-left: 8px
 }
 
-/*# sourceMappingURL=1b830b87e41645cf.css.map*/
+/*# sourceMappingURL=219c411c2849e859.css.map*/

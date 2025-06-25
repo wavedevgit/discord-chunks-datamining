@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 521480fad52e4ed1
+  Original File Name: bb8ce6ff8f3b1301
 **/
 .container__74da2 {
     align-items: center;
@@ -1629,7 +1629,7 @@
 
 .ctaTitle__7e486 strong {
     color: var(--header-primary);
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .ctaSubtitle__7e486 {
@@ -1708,7 +1708,7 @@
 }
 
 .header_e66c4d {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .container__808a1 {
@@ -1833,7 +1833,7 @@
 }
 
 .container_ea45f4 .linkButtonContainer_ea45f4 .linkButton_ea45f4 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin: 0 auto
 }
 
@@ -1920,7 +1920,7 @@
 }
 
 .varUpsellTitle__2637a {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 8px
 }
 
@@ -2858,7 +2858,7 @@
     display: flex;
     flex-direction: row;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     overflow: hidden;
     padding: 16px 10px
@@ -2946,7 +2946,7 @@
     color: var(--header-primary);
     flex-grow: 1;
     flex-shrink: 0;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -3032,7 +3032,7 @@
 
 .username__24368 {
     color: var(--header-primary);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -3101,7 +3101,7 @@
     color: var(--header-primary);
     flex-grow: 0;
     flex-shrink: 1;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -3443,7 +3443,7 @@
 }
 
 .homepagePadding__7e549 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     padding-left: 16px;
     padding-top: 16px
 }
@@ -3498,7 +3498,7 @@
 
 .header__7d20c {
     font-family: var(--font-display);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin: 8px 0 16px;
     margin-bottom: calc(var(--space-8) + 1px)
 }
@@ -3542,7 +3542,7 @@
 
 .inputText__72ba7 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     letter-spacing: .04em;
     line-height: 20px;
     white-space: pre
@@ -3814,7 +3814,7 @@
     display: flex;
     flex-direction: row;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px;
     margin-left: var(--space-24);
     margin-right: 20px;
@@ -3898,7 +3898,7 @@
 
 .username__0a06e {
     color: var(--header-primary);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -4000,7 +4000,7 @@
     display: flex;
     flex-shrink: 0;
     font-size: 11px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     height: 30px;
     justify-content: center;
     margin-left: 6px;
@@ -4262,7 +4262,7 @@
     background-color: var(--background-base-lower);
     color: var(--text-normal);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     padding: 12px;
     text-align: center;
     text-transform: uppercase
@@ -4436,7 +4436,7 @@
     flex-grow: 0;
     flex-shrink: 0;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 24px;
     padding: 0 4px;
     position: relative;
@@ -4445,7 +4445,7 @@
 }
 
 .devBanner__56d75 strong {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .local__56d75 {
@@ -4983,14 +4983,16 @@
 .smallHeader__6efad {
     color: var(--primary-300);
     font-size: 12px;
-    font-weight: 500;
     margin-bottom: 2px
+}
+
+.smallHeader__6efad,.text__6efad {
+    font-weight: var(--font-weight-medium)
 }
 
 .text__6efad {
     color: var(--text-normal);
     font-size: 14px;
-    font-weight: 500;
     line-height: 1.3
 }
 
@@ -5036,7 +5038,7 @@
     border-radius: 50%;
     box-sizing: border-box;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     height: 32px;
     line-height: 32px;
     min-width: 32px;
@@ -5050,7 +5052,7 @@
 
 .description__450d3 {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 20px
 }
 
@@ -5099,21 +5101,21 @@
 .label__74994 {
     color: var(--header-muted);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-bottom: 4px
 }
 
 .username__74994 {
     color: var(--header-primary);
     font-size: 14px;
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .notes__74994 {
     color: var(--text-muted-on-default);
     font-size: 14px;
     font-style: italic;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 1.33
 }
 
@@ -5138,7 +5140,7 @@
 .header__26095 {
     color: var(--text-normal);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-bottom: 20px
 }
 
@@ -5220,7 +5222,7 @@
 .sectionTitle_f1dca0 {
     color: var(--text-muted-on-default);
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-bottom: 8px;
     text-transform: uppercase
 }
@@ -5588,7 +5590,7 @@
     display: flex;
     flex-direction: column;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin: 32px 0 20px;
     padding-bottom: 10px
 }
@@ -5668,7 +5670,7 @@
     display: flex;
     flex-direction: column;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin: 32px 0 20px;
     padding-bottom: 10px
 }
@@ -6756,7 +6758,7 @@ html .tabBadge__35e86 {
     box-shadow: none;
     color: var(--text-muted);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: auto;
     line-height: unset;
     overflow: hidden;
@@ -6926,7 +6928,7 @@ html .tabBadge__35e86 {
     border-bottom: 1px solid var(--border-subtle);
     box-sizing: border-box;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     padding: 20px 34px 8px
 }
 
@@ -6936,7 +6938,7 @@ html .tabBadge__35e86 {
 
 .nameCellText_adb41f {
     color: var(--header-primary);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -7059,7 +7061,7 @@ html .tabBadge__35e86 {
 }
 
 .nameBodyCell_adb41f {
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding-left: 8px
 }
 
@@ -7073,7 +7075,7 @@ html .tabBadge__35e86 {
 
 .lastPlayedCellNew_adb41f {
     color: var(--text-warning);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     text-transform: uppercase
 }
 
@@ -7267,11 +7269,11 @@ html .tabBadge__35e86 {
 
 .title__7eeec {
     color: currentColor;
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .rate__7eeec {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .sparkChart__7eeec {
@@ -7352,7 +7354,7 @@ html .tabBadge__35e86 {
 
 .nameCellText__49035 {
     color: var(--header-primary);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 1.25;
     margin-left: 20px;
     overflow: hidden;
@@ -7374,7 +7376,7 @@ html .tabBadge__35e86 {
 .progressCellText__49035 {
     color: var(--text-muted);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin-top: 4px;
     text-transform: uppercase
 }
@@ -7446,7 +7448,7 @@ html .tabBadge__35e86 {
 .usageInfo__27106 {
     color: var(--header-secondary);
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     left: 11px;
     line-height: 12px;
     overflow: hidden;
@@ -7482,7 +7484,7 @@ html .tabBadge__35e86 {
     color: var(--white-500);
     display: flex;
     font-size: 11px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     height: 14px;
     letter-spacing: .4px;
     margin-left: 8px;
@@ -7612,13 +7614,13 @@ html .tabBadge__35e86 {
 .applicationName_fb04e1 {
     color: var(--header-primary);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 22px
 }
 
 .applicationSubText_fb04e1 {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 16px;
     margin-top: 2px
 }
@@ -7953,7 +7955,7 @@ html .tabBadge__35e86 {
 
 .links_a2f514 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 16px
 }
 
@@ -7987,7 +7989,7 @@ html .tabBadge__35e86 {
 .contentBase_a2f514 {
     color: var(--header-secondary);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 16px;
     max-width: 600px
 }
@@ -8001,7 +8003,7 @@ html .tabBadge__35e86 {
 .tipTitle_a2f514 {
     color: var(--header-primary);
     font-size: 12px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 16px;
     margin-bottom: 8px;
     text-transform: uppercase
@@ -8079,7 +8081,7 @@ html .tabBadge__35e86 {
     cursor: default;
     flex: 1;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     line-height: 24px;
     margin-bottom: 0;
     margin-top: 0;
@@ -8426,7 +8428,7 @@ html .tabBadge__35e86 {
 }
 
 .footerAction_dede4b {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: 12px;
     margin-right: 12px
 }
@@ -8514,4 +8516,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=521480fad52e4ed1.css.map*/
+/*# sourceMappingURL=bb8ce6ff8f3b1301.css.map*/

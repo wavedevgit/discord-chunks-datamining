@@ -1,6 +1,6 @@
 /**
   Module ID: 61007
-  Original File Name: d0687b9adff785e3
+  Original File Name: aad72862559089e1
 **/
 .header__9f397 {
     padding: 24px 16px 0
@@ -27,7 +27,7 @@
 
 .title__9f397 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 30px
 }
 
@@ -72,7 +72,7 @@
 }
 
 .text_eb2cd2 {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     overflow: hidden;
     text-overflow: ellipsis
 }
@@ -94,7 +94,7 @@
 }
 
 .title__78f69 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .subtitle__78f69,.title__78f69 {
@@ -148,7 +148,7 @@
 }
 
 .title_b917ac {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     text-align: center
 }
 
@@ -218,7 +218,7 @@
 }
 
 .title_c04f35 {
-    font-weight: 700
+    font-weight: var(--font-weight-bold)
 }
 
 .subtitle_c04f35,.title_c04f35 {
@@ -263,7 +263,7 @@
 }
 
 .title__991a0 {
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 8px;
     margin-top: 24px
 }
@@ -356,4 +356,4 @@
     }
 }
 
-/*# sourceMappingURL=d0687b9adff785e3.css.map*/
+/*# sourceMappingURL=aad72862559089e1.css.map*/

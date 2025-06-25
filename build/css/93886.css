@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 6a63873254a00975
+  Original File Name: 303fc8b1630513be
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -67,7 +67,7 @@
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 22px;
     overflow: hidden;
     padding: 6px 12px;
@@ -158,7 +158,7 @@
     flex: 0 0 auto;
     font-family: var(--font-display);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     text-align: right;
     text-transform: uppercase
 }
@@ -809,7 +809,7 @@
 .customPropertiesName_fb48ea {
     color: var(--text-brand);
     float: left;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding-right: 4px
 }
 
@@ -1571,7 +1571,7 @@
 }
 
 .footerAction_dede4b {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     margin-left: 12px;
     margin-right: 12px
 }
@@ -1911,14 +1911,14 @@
 .name__8a969 {
     color: var(--header-primary);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 20px
 }
 
 .description__8a969 {
     color: var(--header-secondary);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 16px
 }
 
@@ -2153,7 +2153,7 @@
 
 .executedCommand_c19a55 .commandName_c19a55 {
     color: var(--text-link);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .executedCommand_c19a55 .appsIcon_c19a55 {
@@ -2164,7 +2164,7 @@
     background-color: var(--mention-background);
     border-radius: 3px;
     color: var(--text-link);
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     padding: 0 2px
 }
 
@@ -2175,7 +2175,7 @@
 
 .executedCommand_c19a55 .applicationName_c19a55 {
     color: var(--header-primary);
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .executedCommand_c19a55 .repliedMessage_c19a55 .username_c19a55,.executedCommand_c19a55 .targetUsername_c19a55 {
@@ -2426,7 +2426,7 @@
 .timestamp_c19a55 {
     cursor: default;
     display: inline-block;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     height: 1.25rem;
     pointer-events: none
 }
@@ -2527,7 +2527,7 @@
     display: inline;
     flex-shrink: 0;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: 1.375rem;
     overflow: hidden;
     position: relative;
@@ -2553,7 +2553,7 @@
 
 @media (-webkit-max-device-pixel-ratio:1) {
     .theme-light .username_c19a55 {
-        font-weight: 600
+        font-weight: var(--font-weight-semibold)
     }
 }
 
@@ -2562,7 +2562,7 @@
 }
 
 .background-opacity-low .username_c19a55,.background-opacity-medium .username_c19a55 {
-    font-weight: 600
+    font-weight: var(--font-weight-semibold)
 }
 
 .botTag_c19a55 {
@@ -2774,7 +2774,7 @@
 
 .edited_c19a55 {
     font-size: .625rem;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     line-height: 1;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -3049,7 +3049,7 @@
 }
 
 .premiumText__9671b {
-    font-weight: 500
+    font-weight: var(--font-weight-medium)
 }
 
 .premiumAction__9671b {
@@ -3140,7 +3140,7 @@
 
 .button__30f28 {
     align-items: center;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -3192,7 +3192,7 @@
 }
 
 .button_c5cd6a {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -3264,7 +3264,7 @@
 
 .blockedText__477aa {
     font-size: 12px;
-    font-weight: 400
+    font-weight: var(--font-weight-normal)
 }
 
 .noIcon__477aa {
@@ -3748,4 +3748,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=6a63873254a00975.css.map*/
+/*# sourceMappingURL=303fc8b1630513be.css.map*/
