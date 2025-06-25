@@ -44,14 +44,14 @@ function j(e) {
     isGift: E,
     premiumTier: _,
     offerTierMatchesCard: N,
-    offerType: S,
-    showYearlyPrice: b,
-    priceOptions: R,
+    offerType: R,
+    showYearlyPrice: S,
+    priceOptions: b,
     textVariant: Z,
     className: y,
     isApplicationHome: w,
-    enablePremiumBrandRefresh: L,
-    headerClassName: M,
+    enablePremiumBrandRefresh: M,
+    headerClassName: L,
     headingVariant: O = "heading-md/normal",
     headingColor: H
   } = e, A = (0, o.e7)([d.ZP], () => d.ZP.getPremiumTypeSubscription()), U = (0, o.e7)([u.default], () => u.default.getCurrentUser()), G = (0, C.t7)(), k = (0, C.lr)(), D = _ === h.p9.TIER_0 ? h.Si.TIER_0 : h.Si.TIER_2, V = (null == A ? void 0 : A.hasActiveTrial) ? null == U ? void 0 : U.premiumType : G ? h.p9.TIER_2 : null, F = (0, g.N)(), B = (0, p.Ng)(), W = null == F ? void 0 : F.subscription_trial;
@@ -62,8 +62,8 @@ function j(e) {
     return (0, i.jsx)(c.X6q, {
       variant: O,
       color: H,
-      className: l()(v.trialHeader, M),
-      children: S === h.C.PREMIUM_TRIAL ? I.intl.format(I.t["2CGBrq"], {
+      className: l()(v.trialHeader, L),
+      children: R === h.C.PREMIUM_TRIAL ? I.intl.format(I.t["2CGBrq"], {
         remainingTime: e,
         price: o
       }) : A.planIdFromItems === h.Xh.PREMIUM_YEAR_TIER_2 ? I.intl.format(I.t["+qqh6u"], {
@@ -78,10 +78,10 @@ function j(e) {
   }
   if (!w && !E && N) {
     let e = m.ZP.formatPriceString(m.ZP.getDefaultPrice(_ === h.p9.TIER_0 ? h.Xh.PREMIUM_MONTH_TIER_0 : h.Xh.PREMIUM_MONTH_TIER_2), h.rV.MONTH);
-    if (S === h.C.PREMIUM_TRIAL) return (0, i.jsx)(c.X6q, {
+    if (R === h.C.PREMIUM_TRIAL) return (0, i.jsx)(c.X6q, {
       variant: O,
       color: H,
-      className: l()(v.trialHeader, M),
+      className: l()(v.trialHeader, L),
       children: I.intl.format(I.t["9vyovr"], {
         planName: (0, m.aq)(null != (x = h.IW[null != (a = null == W ? void 0 : W.sku_id) ? a : h.Si.NONE]) ? x : h.Xh.PREMIUM_MONTH_TIER_2),
         duration: (0, m.if)({
@@ -95,7 +95,7 @@ function j(e) {
     if (null != B) return (0, i.jsx)(c.X6q, {
       variant: O,
       color: H,
-      className: l()(v.trialHeader, M),
+      className: l()(v.trialHeader, L),
       children: (0, i.jsx)(T, {
         defaultPriceString: e,
         subscriptionPlan: h.Xh.PREMIUM_MONTH_TIER_2,
@@ -108,19 +108,19 @@ function j(e) {
       subscriptionTier: D,
       isGift: E,
       className: null != y ? y : v.price,
-      priceOptions: R,
+      priceOptions: b,
       variant: Z,
       isApplicationHome: w,
-      enablePremiumBrandRefresh: L
-    }), b && (0, i.jsx)(f.Z, {
+      enablePremiumBrandRefresh: M
+    }), S && (0, i.jsx)(f.Z, {
       subscriptionTier: D,
       interval: h.rV.YEAR,
       className: null != y ? y : v.price,
       isGift: E,
-      priceOptions: R,
+      priceOptions: b,
       variant: Z,
       isApplicationHome: w,
-      enablePremiumBrandRefresh: L
+      enablePremiumBrandRefresh: M
     })]
   })
 }

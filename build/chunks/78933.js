@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(687158),
   v = n(892001),
   T = n(899007),
-  I = n(648052),
-  N = n(867176),
+  N = n(648052),
+  I = n(867176),
   y = n(537006),
   A = n(483517),
   P = n(483424),
@@ -124,13 +124,13 @@ function es(e) {
     eT = (0, O.b)({
       location: "UserProfileAccountPopout"
     }),
-    eI = (0, g.Z)({
+    eN = (0, g.Z)({
       location: "UserProfileAccountPopout"
     }),
-    eN = r.useRef(null),
+    eI = r.useRef(null),
     [ey, eA] = r.useState(String(Date.now()));
   (0, V.fu)({
-    targetElementRef: eN,
+    targetElementRef: eI,
     onGetElementDimensionsAndBoundingRect: e => {
       let {
         hasElementPositionChanged: t
@@ -138,7 +138,7 @@ function es(e) {
       t && eA(String(Date.now()))
     }
   });
-  let [eP, eR] = (0, b.US)(eI ? [a.z.CUSTOM_STATUS_PROMPTS_COACHMARK] : []), eD = eP === a.z.CUSTOM_STATUS_PROMPTS_COACHMARK, eZ = r.useRef((0, W.Z)(e => e.shouldRenderTenureLevelUp)), ew = r.useMemo(() => (0, h.Z)(), []), [ek, eL] = r.useState(!0);
+  let [eP, eR] = (0, b.US)(eN ? [a.z.CUSTOM_STATUS_PROMPTS_COACHMARK] : []), eD = eP === a.z.CUSTOM_STATUS_PROMPTS_COACHMARK, eZ = r.useRef((0, W.Z)(e => e.shouldRenderTenureLevelUp)), ew = r.useMemo(() => (0, h.Z)(), []), [ek, eL] = r.useState(!0);
   r.useEffect(() => {
     setTimeout(() => {
       eL(!1)
@@ -169,7 +169,7 @@ function es(e) {
           themeType: ee.lY.POPOUT,
           children: [(0, i.jsxs)("header", {
             className: ei.header,
-            children: [(0, i.jsx)(N.Z, {
+            children: [(0, i.jsx)(I.Z, {
               user: t,
               displayProfile: ec,
               themeType: ee.lY.POPOUT
@@ -181,10 +181,10 @@ function es(e) {
             }), eD ? (0, i.jsx)(f.Z, {
               positionKey: ey,
               onTryFeature: n,
-              targetElementRef: eN,
+              targetElementRef: eI,
               markAsDismissed: eR,
               children: () => (0, i.jsx)(L.Z, {
-                ref: eN,
+                ref: eI,
                 location: "UserProfileAccountPopout",
                 user: t,
                 themeType: ee.lY.POPOUT,
@@ -209,7 +209,7 @@ function es(e) {
               nickname: z.ZP.getName(null, null, t),
               onOpenProfile: eo ? void 0 : eB,
               pronouns: null == ec ? void 0 : ec.pronouns,
-              tags: (0, i.jsx)(I.Z, {
+              tags: (0, i.jsx)(N.Z, {
                 displayProfile: ec,
                 themeType: ee.lY.POPOUT,
                 onClose: n,

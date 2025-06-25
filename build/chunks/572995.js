@@ -26,8 +26,8 @@ var i, r, s = n(230711),
   S = n(357003),
   v = n(904505),
   T = n(712626),
-  I = n(386014),
-  N = n(845571),
+  N = n(386014),
+  I = n(845571),
   y = n(220046),
   A = n(385874),
   P = n(371e3),
@@ -71,7 +71,7 @@ let M = () => {
     descriptionCta: p.intl.string(p.t.jVcuVV),
     onClick: t,
     previewImage: x,
-    videoUrl: n ? N.ZP : y.ZP
+    videoUrl: n ? I.ZP : y.ZP
   }, U = {
     name: "referralProgram",
     title: p.intl.string(p.t.tPY4o6),
@@ -79,7 +79,7 @@ let M = () => {
       learnMoreLink: i
     }),
     previewImage: T.Z,
-    videoUrl: n ? v.ZP : I.ZP
+    videoUrl: n ? v.ZP : N.ZP
   }, V = {
     name: "showYourStyle",
     title: p.intl.string(p.t.Ij3Zmp),

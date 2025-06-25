@@ -1,6 +1,6 @@
 /** Chunk was on 91372 **/
 n.d(t, {
-  Z: () => I
+  Z: () => N
 }), n(539854), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -94,7 +94,7 @@ function T() {
   })
 }
 
-function I(e) {
+function N(e) {
   var t, n;
   let {
     keybind: s
@@ -103,7 +103,7 @@ function I(e) {
     o.current = s
   });
   let [d, u] = r.useState(null != (n = null == (t = s.params) ? void 0 : t.channelId) ? n : void 0), m = r.useCallback(() => {
-    (0, l.ZDy)(async () => e => (0, i.jsx)(N, x(_({}, e), {
+    (0, l.ZDy)(async () => e => (0, i.jsx)(I, x(_({}, e), {
       onSelect: e => {
         u(e), a.Z.setKeybind(x(_({}, o.current), {
           params: {
@@ -135,7 +135,7 @@ function I(e) {
   })
 }
 
-function N(e) {
+function I(e) {
   let {
     transitionState: t,
     onClose: n,
@@ -158,8 +158,8 @@ function N(e) {
       disableMouseFocus: n
     }
   }(), {
-    query: I,
-    updateQuery: N,
+    query: N,
+    updateQuery: I,
     queryResults: y
   } = (0, o.Z)({
     visible: !0,
@@ -178,7 +178,7 @@ function N(e) {
         return n
       }, [t]);
     return t ? null : n
-  }(I), {
+  }(N), {
     focusedIndex: P,
     setFocusedIndex: R
   } = function(e) {
@@ -189,7 +189,7 @@ function N(e) {
       focusedIndex: t,
       setFocusedIndex: n
     }
-  }(I);
+  }(N);
   r.useEffect(() => {
     let {
       current: e
@@ -219,8 +219,8 @@ function N(e) {
       children: [(0, i.jsx)("div", {
         className: b.inputWrapper,
         children: (0, i.jsx)(l.oil, {
-          value: I,
-          onChange: N,
+          value: N,
+          onChange: I,
           onKeyDown: function(e) {
             O();
             let t = e.key.toLowerCase();
@@ -252,7 +252,7 @@ function N(e) {
           "aria-autocomplete": "list",
           spellCheck: !1
         })
-      }), 0 === D && "" !== I && (0, i.jsx)(T, {}), (D > 0 || "" === I) && (0, i.jsx)(l.Tvr, {
+      }), 0 === D && "" !== N && (0, i.jsx)(T, {}), (D > 0 || "" === N) && (0, i.jsx)(l.Tvr, {
         innerId: c,
         innerRole: "listbox",
         "aria-label": f.intl.string(f.t["+N3fW1"]),

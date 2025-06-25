@@ -27,8 +27,8 @@ var r = n(990547),
   S = n(994714),
   v = n(377171),
   T = n(621628),
-  I = n(243778),
-  N = n(890022),
+  N = n(243778),
+  I = n(890022),
   y = n(18438),
   A = n(778825),
   P = n(665166),
@@ -81,8 +81,8 @@ var r = n(990547),
   eS = n(593648),
   ev = n(327885),
   eT = n(595242),
-  eI = n(463153),
-  eN = n(36192),
+  eN = n(463153),
+  eI = n(36192),
   ey = n(889029),
   eA = n(400287),
   eP = n(554042),
@@ -114,7 +114,7 @@ let eQ = () => {
   },
   e$ = () => {
     let e = eQ(),
-      [t] = (0, I.US)(e);
+      [t] = (0, N.US)(e);
     return t === s.z.CLIENT_THEMES_SETTINGS_BADGE || t === s.z.DEKSTOP_CUSTOM_APP_ICON_BADGE ? (0, i.jsx)(a.lBU, {
       text: eK.intl.string(eK.t.y2b7CA)
     }) : t === s.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE ? (0, i.jsx)(a.IGR, {
@@ -129,7 +129,7 @@ let eQ = () => {
   },
   e3 = () => {
     let e = e0(),
-      [t] = (0, I.US)(e);
+      [t] = (0, N.US)(e);
     return t === s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, i.jsx)(R.Z, {}) : t === s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE ? (0, i.jsx)(a.IGR, {
       text: eK.intl.string(eK.t.y2b7CA)
     }) : null
@@ -139,7 +139,7 @@ let eQ = () => {
     let {
       unseenGiftCount: t,
       showPrepaidPaymentPastDueWarning: j,
-      impressionSource: I,
+      impressionSource: N,
       numOfPendingFamilyRequests: R,
       isOverlaySupported: V,
       isClipsBetaTagShowing: e8 = !1,
@@ -169,7 +169,7 @@ let eQ = () => {
     return Object.freeze({
       [eF.s6.SEARCH_NO_RESULTS]: {
         section: g.ID.CUSTOM,
-        element: eI.Z
+        element: eN.Z
       },
       [eF.s6.ACCOUNT_SECURITY_TAB]: {
         section: ez.oAB.ACCOUNT,
@@ -567,11 +567,11 @@ let eQ = () => {
         searchableTitles: [eK.intl.string(eK.t["+1h0k5"])],
         label: eK.intl.string(eK.t["+1h0k5"]),
         ariaLabel: eK.intl.string(eK.t["+1h0k5"]),
-        element: eN.Z,
+        element: eI.Z,
         newIndicatorDismissibleContentTypes: [s.z.AUTH_SESSIONS_NEW],
         impressionName: r.ImpressionNames.USER_SETTINGS_SESSIONS,
         impressionProperties: {
-          source: I
+          source: N
         }
       },
       [eF.s6.CONNECTIONS]: {
@@ -582,7 +582,7 @@ let eQ = () => {
         element: eg.Z,
         impressionName: r.ImpressionNames.USER_SETTINGS_CONNECTIONS,
         impressionProperties: {
-          source: I
+          source: N
         },
         newIndicatorDismissibleContentTypes: [s.z.NEW_CRUNCHYROLL_CONNECTION],
         url: ez.Z5c.SETTINGS("connections")
@@ -1434,7 +1434,7 @@ let eQ = () => {
         section: ez.oAB.NOTIFICATIONS,
         searchableTitles: [eK.intl.string(eK.t.omtoJy), eK.intl.string(eK.t.SZue3N)],
         parent: eF.s6.NOTIFICATIONS,
-        predicate: () => (0, N.uw)("SettingsRendererConfig")
+        predicate: () => (0, I.uw)("SettingsRendererConfig")
       },
       [eF.s6.KEYBINDS]: {
         section: ez.oAB.KEYBINDS,

@@ -50,6 +50,7 @@ let C = () => {
             shouldAutoScroll: T
           }), (0, i.jsx)(m.Z, {
             className: E.perksDiscoverability,
+            variant: h.gM.PERKS_DISCOVERABILITY,
             noBackground: !0,
             leftAlignHeaders: !0,
             showAllPerksButton: (0, i.jsx)(b.Z, {

@@ -29,8 +29,8 @@ var i = n(255367),
   S = n(201895),
   v = n(43267),
   T = n(933557),
-  I = n(163889),
-  N = n(111028),
+  N = n(163889),
+  I = n(111028),
   y = n(853856),
   A = n(93687),
   P = n(785232),
@@ -174,7 +174,7 @@ let et = K.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
       "aria-setsize": _,
       listItemRef: x
     } = e, E = ee(e, ["route", "selected", "icon", "iconClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
-    return (0, i.jsx)(I.Z, {
+    return (0, i.jsx)(N.Z, {
       className: l()(J.channel, {
         [J.fullWidth]: u.tq
       }, h),
@@ -244,7 +244,7 @@ function eo(e) {
   } = (0, m.cj)([F.Z], () => ({
     ignored: F.Z.isIgnored(t.getRecipientId()),
     blocked: F.Z.isBlocked(t.getRecipientId())
-  })), eS = ex && eC, ev = ex && eO, eT = (ej || eS || ev) && !(a || K), eI = (0, m.e7)([G.ZP], () => G.ZP.getMentionCount(t.id) > 0), eN = (0, T.ZP)(t), ey = (0, m.e7)([y.Z], () => y.Z.isFavorite(t.id)), eA = (0, L.L)("PrivateChannel"), eP = null != V && (a || K), eR = () => {
+  })), eS = ex && eC, ev = ex && eO, eT = (ej || eS || ev) && !(a || K), eN = (0, m.e7)([G.ZP], () => G.ZP.getMentionCount(t.id) > 0), eI = (0, T.ZP)(t), ey = (0, m.e7)([y.Z], () => y.Z.isFavorite(t.id)), eA = (0, L.L)("PrivateChannel"), eP = null != V && (a || K), eR = () => {
     ea(!0)
   }, eD = () => {
     ea(!1)
@@ -288,15 +288,15 @@ function eo(e) {
   }, eV = e => {
     e.preventDefault(), e.stopPropagation();
     let r = X.intl.formatToPlainString(X.t.hJ5Ap6, {
-        name: eN
+        name: eI
       }),
       s = X.intl.format(X.t.SSIVOj, {
-        name: eN
+        name: eI
       });
     t.isManaged() && (r = X.intl.formatToPlainString(X.t.hVGjER, {
-      name: eN
+      name: eI
     }), s = X.intl.format(X.t.IK1Qvr, {
-      name: eN
+      name: eI
     })), (0, g.ZDy)(async () => {
       let {
         default: e
@@ -359,21 +359,21 @@ function eo(e) {
       statusTooltip: !0
     }))
   }, eH = eE ? (0, i.jsxs)(i.Fragment, {
-    children: [eN, (0, i.jsx)(R.ZP, {
+    children: [eI, (0, i.jsx)(R.ZP, {
       primaryGuild: null == u ? void 0 : u.primaryGuild,
       userId: null == u ? void 0 : u.id,
       inline: !0,
       disableGuildProfile: !0,
       className: J.clanTag
     })]
-  }) : eN, ez = r.useRef(null);
+  }) : eI, ez = r.useRef(null);
   return (0, i.jsx)(d.mh, {
     id: t.id,
     children: e => {
       var {
         role: n
       } = e, r = ee(e, ["role"]);
-      return (0, i.jsxs)(I.Z, {
+      return (0, i.jsxs)(N.Z, {
         className: l()(J.channel, J.dm),
         role: n,
         focusProps: $(Q({}, en), {
@@ -389,7 +389,7 @@ function eo(e) {
         onContextMenu: eU,
         "aria-setsize": W,
         "aria-posinset": Y,
-        children: [eA && eI ? (0, i.jsx)("div", {
+        children: [eA && eN ? (0, i.jsx)("div", {
           className: l()(J.unreadPill, {
             [J.muted]: eT
           })
@@ -416,16 +416,16 @@ function eo(e) {
             }),
             "aria-label": (0, S.ZP)({
               channel: t,
-              unread: eI
+              unread: eN
             })
           }, r), {
             children: (0, i.jsx)(C.Z, {
               ref: ez,
               avatar: eF(),
-              highlighted: eI && !(eA && eT),
+              highlighted: eN && !(eA && eT),
               muted: eT,
               subText: eG(),
-              name: (0, i.jsx)(N.Z, {
+              name: (0, i.jsx)(I.Z, {
                 tooltipClassName: J.overflowTooltip,
                 children: eH
               }),

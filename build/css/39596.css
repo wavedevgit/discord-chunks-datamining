@@ -1,6 +1,6 @@
 /**
   Module ID: 39596
-  Original File Name: 94c9f78c82487612
+  Original File Name: 89ce741fb79a2121
 **/
 .container__4216d {
     align-items: center;
@@ -1215,6 +1215,7 @@
 
 .textChildren_c3d3d9 {
     display: flex;
+    flex: 1;
     flex-direction: column;
     row-gap: var(--space-4)
 }
@@ -1263,4 +1264,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=94c9f78c82487612.css.map*/
+/*# sourceMappingURL=89ce741fb79a2121.css.map*/

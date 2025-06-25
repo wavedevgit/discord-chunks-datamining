@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(714565),
   v = n(202858),
   T = n(726985),
-  I = n(981631),
-  N = n(815660),
+  N = n(981631),
+  I = n(815660),
   y = n(388032),
   A = n(951839),
   P = n(20493);
@@ -112,7 +112,7 @@ class k extends r.PureComponent {
         hasTOTPEnabled: l
       } = this.props,
       a = null != r.phone,
-      c = r.hasFlag(I.xW$.MFA_SMS);
+      c = r.hasFlag(N.xW$.MFA_SMS);
     if (l) {
       if (a || c) {
         let e = n ? r.phone : this.maskPhoneNumber(r.phone);
@@ -305,7 +305,7 @@ class k extends r.PureComponent {
     (0, o.h7j)(t => (0, i.jsx)(b.default, D({
       reason: h.L.USER_SETTINGS_UPDATE
     }, t, e)), {
-      modalKey: N.M
+      modalKey: I.M
     })
   }
   constructor(...e) {

@@ -1,6 +1,6 @@
 /**
   Module ID: 3490
-  Original File Name: daa883b7dd26a1e1
+  Original File Name: 95d00eab0b17a179
 **/
 .tooltipTextContainer__0ca35 {
     align-items: center;
@@ -5008,6 +5008,7 @@ html .progress__61462 {
 
 .textChildren_c3d3d9 {
     display: flex;
+    flex: 1;
     flex-direction: column;
     row-gap: var(--space-4)
 }
@@ -11131,4 +11132,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=daa883b7dd26a1e1.css.map*/
+/*# sourceMappingURL=95d00eab0b17a179.css.map*/

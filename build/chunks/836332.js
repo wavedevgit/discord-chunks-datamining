@@ -29,14 +29,14 @@ let O = r.forwardRef((e, t) => {
     isFooterVisible: S,
     isDarkMode: v,
     isReducedMotion: T,
-    subscriptionTier: I
+    subscriptionTier: N
   } = e, {
-    analyticsLocations: N
+    analyticsLocations: I
   } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), y = (0, g.Ng)(), A = (0, g.Wp)(y, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, P = (0, p.N)(), R = (0, m.Nx)(), D = (0, u.rO)(), Z = r.useRef(null), [w, k] = r.useState(!1);
   return r.useEffect(() => {
     !S || T || w || null == Z.current || Z.current.play()
   }, [S, T, w]), (0, i.jsx)(c.Gt, {
-    value: N,
+    value: I,
     children: (0, i.jsxs)("div", {
       ref: t,
       className: l()(x.container, O),
@@ -46,7 +46,7 @@ let O = r.forwardRef((e, t) => {
         color: "header-primary",
         children: _.intl.string(_.t.lEw32t)
       }), (0, i.jsx)(h.PK, {
-        subscriptionTier: null != (s = null != I ? I : null == P || null == (n = P.subscription_trial) ? void 0 : n.sku_id) ? s : A,
+        subscriptionTier: null != (s = null != N ? N : null == P || null == (n = P.subscription_trial) ? void 0 : n.sku_id) ? s : A,
         inOfferExperience: R,
         containerClassName: x.footerCTAContainer,
         isApplicationHome: !0,

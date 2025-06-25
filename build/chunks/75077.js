@@ -18,37 +18,32 @@ let u = (e, t, n) => (0, r.wj)(e) ? t : n,
     let {
       cards: t,
       perksCards: n,
-      isFullScreen: i,
-      showVoiceFiltersCard: r
-    } = e, s = i ? 3 : 2, l = e => {
+      showVoiceFiltersCard: i
+    } = e, r = e => {
       let {
         card: n
       } = e;
-      t.length < s && t.push(n)
-    }, a = f();
-    return l(r ? {
+      t.length < 3 && t.push(n)
+    }, s = f();
+    return r(i ? {
       card: n.voiceFilters
     } : {
       card: n.nameplates
-    }), null != n.tenureBadge && l({
+    }), null != n.tenureBadge && r({
       card: n.tenureBadge
-    }), l({
+    }), r({
       card: n.permadecos
-    }), i && a ? (0 === t.length && l({
+    }), s ? 0 === t.length && r({
       card: n.specialShopPerks
-    }), l({
-      card: n.newAppStylesUpdateJune2024
-    }), l({
-      card: n.serverProfiles
-    })) : i && !a && (l({
+    }) : r({
       card: n.referralProgram
-    }), l({
+    }), r({
       card: n.newAppStylesUpdateJune2024
-    }), l({
+    }), r({
       card: n.serverProfiles
-    })), l({
+    }), r({
       card: n.earlyAccess
-    }), l({
+    }), r({
       card: n.unlimitedSuperReactions
     }), t
   },
@@ -56,7 +51,7 @@ let u = (e, t, n) => (0, r.wj)(e) ? t : n,
     let {
       perksCards: t,
       variant: n,
-      isFullScreen: i,
+      hideCardsOnNarrowScreen: i,
       isPremiumSubscriber: r,
       fractionalState: s,
       isInReverseTrial: l,
@@ -70,7 +65,6 @@ let u = (e, t, n) => (0, r.wj)(e) ? t : n,
         d = m({
           cards: d,
           perksCards: t,
-          isFullScreen: i,
           showVoiceFiltersCard: a
         });
         break;
@@ -83,7 +77,7 @@ let u = (e, t, n) => (0, r.wj)(e) ? t : n,
       case o.gM.CARD_CAROUSEL_THIRD_ROW:
         d = s === c.a$.FP_ONLY ? l ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
     }
-    return i || (d = d.filter(e => !e.hideOnNarrowScreen)), d
+    return i && (d = d.filter(e => !e.hideOnNarrowScreen)), d
   },
   p = e => {
     let t = (0, i.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription()),

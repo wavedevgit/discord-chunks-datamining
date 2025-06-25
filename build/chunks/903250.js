@@ -1,6 +1,6 @@
 /** Chunk was on 91372 **/
 n.d(t, {
-  Z: () => I
+  Z: () => N
 });
 var i = n(255367),
   r = n(73800),
@@ -44,69 +44,66 @@ let T = e => {
       })
     })
   },
-  I = r.forwardRef((e, t) => {
+  N = r.forwardRef((e, t) => {
     var n, r;
     let {
-      isFullscreen: s,
-      className: h,
-      buttonClassName: S,
-      subscriptionTier: I,
-      entrypoint: N,
-      isDarkMode: y,
-      isEligibleForBogoPromotion: A
+      className: s,
+      buttonClassName: h,
+      subscriptionTier: S,
+      isDarkMode: N,
+      isEligibleForBogoPromotion: I
     } = e, {
-      analyticsLocations: P
-    } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), R = (0, g._O)(), D = (0, f.Ng)(), Z = (0, f.Wp)(D, O.Si.TIER_2) ? O.Si.TIER_2 : void 0, w = (0, b.N)(), k = (0, m.Nx)(), L = (0, a.e7)([u.Z], () => u.Z.affinities), B = (0, _.Z)(), M = N === O.EZ.ApplicationStoreHome, U = M && null != B, V = y ? o.Ttl.WHITE : o.Ttl.BRAND, G = L.length > 0, F = (0, p.ZP)({
+      analyticsLocations: y
+    } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), A = (0, g._O)(), P = (0, f.Ng)(), R = (0, f.Wp)(P, O.Si.TIER_2) ? O.Si.TIER_2 : void 0, D = (0, b.N)(), Z = (0, m.Nx)(), w = (0, a.e7)([u.Z], () => u.Z.affinities), k = (0, _.Z)(), L = null != k, B = N ? o.Ttl.WHITE : o.Ttl.BRAND, M = w.length > 0, U = (0, p.ZP)({
       location: "PremiumMarketingHeroHeading"
-    }), H = (0, p.J1)(F);
+    }), V = (0, p.J1)(U);
     return (0, i.jsx)(d.Gt, {
-      value: P,
+      value: y,
       children: (0, i.jsx)("div", {
         ref: t,
-        className: l()(v.container, v.marketingPageContainer, h),
+        className: l()(v.container, v.marketingPageContainer, s),
         "data-testid": "marketing-page-hero-header",
         children: (0, i.jsxs)("div", {
           className: v.marketingPageTextContainer,
-          children: [k && (0, i.jsx)(T, {
-            trialOffer: w,
-            discountOffer: D
+          children: [Z && (0, i.jsx)(T, {
+            trialOffer: D,
+            discountOffer: P
           }), (0, i.jsx)(o.X6q, {
             className: v.marketingPageHeading,
             variant: "display-sm",
             color: "header-primary",
-            children: H
-          }), U ? (0, i.jsx)(j.Z, {
-            referrer: B,
-            isApplicationHome: M
-          }) : G && (0, i.jsx)("div", {
+            children: V
+          }), L ? (0, i.jsx)(j.Z, {
+            referrer: k
+          }) : M && (0, i.jsx)("div", {
             className: v.affinityDescriptionContainer,
             children: (0, i.jsx)(E.Z, {
               textColor: "text-normal",
-              smallerText: !s,
-              isApplicationHome: M
+              smallerText: !1,
+              isApplicationHome: !0
             })
-          }), R ? (0, i.jsx)("div", {
+          }), A ? (0, i.jsx)("div", {
             className: l()(v.buttonContainer, v.marketingPageCTAContainer, {
-              [v.marketingPageCTAMargin]: !(G || U)
+              [v.marketingPageCTAMargin]: !(M || L)
             }),
             children: (0, i.jsx)(x.Z, {
-              className: l()(v.button, S),
-              color: V
+              className: l()(v.button, h),
+              color: B
             })
           }) : (0, i.jsx)(C.PK, {
-            subscriptionTier: null != (r = null != I ? I : null == w || null == (n = w.subscription_trial) ? void 0 : n.sku_id) ? r : Z,
-            inOfferExperience: k,
+            subscriptionTier: null != (r = null != S ? S : null == D || null == (n = D.subscription_trial) ? void 0 : n.sku_id) ? r : R,
+            inOfferExperience: Z,
             containerClassName: l()(v.marketingPageCTAContainer, {
-              [v.marketingPageCTAMargin]: !(G || U)
+              [v.marketingPageCTAMargin]: !(M || L)
             }),
-            buttonClassName: S,
-            isApplicationHome: M,
-            isDarkMode: y,
-            isEligibleForBogoPromotion: A
+            buttonClassName: h,
+            isApplicationHome: !0,
+            isDarkMode: N,
+            isEligibleForBogoPromotion: I
           }), (0, i.jsx)(C._O, {
             variant: "text-md/normal",
             withBottomMargin: !1,
-            isApplicationHome: M
+            isApplicationHome: !0
           })]
         })
       })

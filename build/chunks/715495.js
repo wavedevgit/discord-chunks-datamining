@@ -120,12 +120,12 @@ function O() {
         children: [(0, i.jsx)(o.Text, {
           variant: "text-sm/semibold",
           children: "Memberlist"
-        }), (0, i.jsx)(I, {
+        }), (0, i.jsx)(N, {
           nameplate: a
         }), (0, i.jsx)(o.Text, {
           variant: "text-sm/semibold",
           children: "DMs"
-        }), (0, i.jsx)(N, {
+        }), (0, i.jsx)(I, {
           nameplate: a
         }), (0, i.jsx)(o.Text, {
           variant: "text-sm/semibold",
@@ -249,7 +249,7 @@ function T(e) {
   })
 }
 
-function I(e) {
+function N(e) {
   let {
     nameplate: t
   } = e, n = (0, a.e7)([m.default], () => m.default.getCurrentUser());
@@ -285,7 +285,7 @@ function I(e) {
   })
 }
 
-function N(e) {
+function I(e) {
   let {
     nameplate: t
   } = e;

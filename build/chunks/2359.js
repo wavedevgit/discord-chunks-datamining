@@ -19,9 +19,5 @@ let m = e => {
   });
   return (r.useEffect(() => {
     !0 === g && (0, o.p9)(), (null != n || null != m) && (0, s.a)(n, m)
-  }, [n, m, g]), t === u.EZ.UserSettings) ? (0, i.jsx)(d.Z, {
-    entrypoint: t
-  }) : t === u.EZ.ApplicationStoreHome ? (0, i.jsx)(c.Z, {
-    entrypoint: t
-  }) : null
+  }, [n, m, g]), t === u.EZ.UserSettings) ? (0, i.jsx)(d.Z, {}) : t === u.EZ.ApplicationStoreHome ? (0, i.jsx)(c.Z, {}) : null
 }
