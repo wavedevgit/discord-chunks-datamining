@@ -1,6 +1,6 @@
 /**
   Module ID: 3490
-  Original File Name: 373b859f40762887
+  Original File Name: daa883b7dd26a1e1
 **/
 .tooltipTextContainer__0ca35 {
     align-items: center;
@@ -10530,17 +10530,45 @@ html .progress__61462 {
     width: 16px
 }
 
+.searchResultDMChannelIcon__56fec {
+    border-radius: 50%
+}
+
+.searchResultDMChannelIcon__56fec,.searchResultGDMChannelIcon__56fec {
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20px;
+    margin-right: 4px;
+    vertical-align: top;
+    width: 20px
+}
+
+.searchResultDMChannelName__56fec {
+    color: var(--search-popout-option-user-nickname);
+    font-weight: 500
+}
+
+.searchResultDMUserName__56fec {
+    color: var(--search-popout-option-user-username);
+    font-weight: 500;
+    margin: 0 5px
+}
+
+.searchResultChannelCategory__56fec,.searchResultDMUserName__56fec {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
 .searchResultChannelCategory__56fec {
     flex-shrink: 1;
     font-size: 10px;
     font-weight: 600;
     margin-left: 4px;
-    overflow: hidden;
     position: relative;
-    text-overflow: ellipsis;
     text-transform: uppercase;
-    top: 2px;
-    white-space: nowrap
+    top: 2px
 }
 
 .plusIcon__56fec {
@@ -11103,4 +11131,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=373b859f40762887.css.map*/
+/*# sourceMappingURL=daa883b7dd26a1e1.css.map*/

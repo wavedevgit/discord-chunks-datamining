@@ -52,13 +52,14 @@ function L(e) {
   var t, n;
   let {
     includePanelSpacing: l
-  } = e, {
-    messages: a,
+  } = e, a = (0, c.Wu)([b.Z], () => {
+    var e;
+    return null != (e = b.Z.getSettingsFilteredMentions()) ? e : []
+  }), {
     hasMore: d,
     loading: p,
     hasLoadedEver: f
   } = (0, c.cj)([b.Z], () => ({
-    messages: b.Z.getSettingsFilteredMentions(),
     hasMore: b.Z.hasMore,
     loading: b.Z.loading,
     hasLoadedEver: b.Z.hasLoadedEver,

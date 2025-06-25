@@ -207,11 +207,6 @@ function X(e) {
       enabled: tT
     } = (0, g.I9)({
       location: "PaymentModal"
-    }),
-    {
-      elementsOptions: tS
-    } = (0, g.ai)({
-      shouldGenerateSetupIntent: !1
     });
   return (0, r.jsx)(K.Provider, {
     value: W(H({
@@ -299,7 +294,7 @@ function X(e) {
       premiumBrandRefreshBackgroundClassName: tI
     }),
     children: (0, r.jsx)(a.Elements, {
-      options: H({}, B.OBo, tT && tS),
+      options: B.OBo,
       stripe: ei,
       children: Q
     })

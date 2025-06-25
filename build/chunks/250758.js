@@ -132,7 +132,7 @@ function O(e) {
       [b.dCx.FILTER_BEFORE]: !0,
       [b.dCx.FILTER_AFTER]: !0,
       [b.dCx.FILTER_ON]: !0,
-      [b.dCx.FILTER_IN]: h.Z.getSearchType() === b.aib.GUILD,
+      [b.dCx.FILTER_IN]: (0, p.R6)(h.Z.getSearchType()),
       [b.dCx.FILTER_PINNED]: !0
     },
     r = (0, s.nB)(t).filter(e => n[e.token]);
@@ -150,7 +150,7 @@ function j(e, t) {
     return null != n && "" !== n && ((function(e) {
       let t = h.Z.getSearchType(e),
         n = [b.dCx.FILTER_HAS];
-      return g.Z.hidePersonalInformation || (n.push(b.dCx.FILTER_FROM), n.push(b.dCx.FILTER_MENTIONS)), t === b.aib.GUILD && n.push(b.dCx.FILTER_IN), n
+      return g.Z.hidePersonalInformation || (n.push(b.dCx.FILTER_FROM), n.push(b.dCx.FILTER_MENTIONS)), (0, p.R6)(t) && n.push(b.dCx.FILTER_IN), n
     })(t).forEach(n => {
       if (null == n) return;
       let i = C(n, e, t, 3);

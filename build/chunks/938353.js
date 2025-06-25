@@ -1,8 +1,8 @@
 /** Chunk was on 3490 **/
 n.d(t, {
-  $p: () => e6,
+  $p: () => e4,
   BB: () => e8,
-  ZP: () => e4
+  ZP: () => e6
 }), n(388685), n(997841), n(35282), n(415506), n(361932), n(187205);
 var r, i = n(255367),
   l = n(73800),
@@ -779,7 +779,7 @@ class e8 extends(r = l.Component) {
   }
 }
 
-function e4(e) {
+function e6(e) {
   var t;
   let {
     channel: n,
@@ -835,7 +835,7 @@ eQ(e8, "defaultProps", {
   renderEmbeds: !0,
   compact: !1
 });
-let e6 = e => {
+let e4 = e => {
   var t, {
       message: n,
       channel: r,
