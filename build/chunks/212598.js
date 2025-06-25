@@ -2,8 +2,8 @@
 a.d(t, {
   t: () => k
 }), a(415506);
-var r = a(255367),
-  l = a(73800),
+var l = a(255367),
+  r = a(73800),
   s = a(512722),
   n = a.n(s),
   o = a(478677),
@@ -31,7 +31,7 @@ function k(e) {
     title: b,
     body: E,
     redirectDestination: T
-  } = e, g = l.useCallback(async () => {
+  } = e, g = r.useCallback(async () => {
     let e;
     try {
       if (e = await (0, x.H)(t, {
@@ -45,25 +45,25 @@ function k(e) {
       state: a
     } = (0, d.xp)(e);
     n()(null != a, "Authorize URL state query parameter must be present"), null == s || s(a)
-  }, [t, v, s]), O = l.useCallback(e => {
+  }, [t, v, s]), O = r.useCallback(e => {
     let {
       callbackCode: a,
-      callbackState: r
+      callbackState: l
     } = e;
-    if (r !== h) return void j.warn("".concat(t, " link: received mismatching callback state!"));
+    if (l !== h) return void j.warn("".concat(t, " link: received mismatching callback state!"));
     k({
       callbackCode: a,
-      callbackState: r
+      callbackState: l
     })
   }, [t, h, k]);
-  return l.useEffect(() => (i.Z.subscribe("USER_CONNECTIONS_LINK_CALLBACK", O), () => {
+  return r.useEffect(() => (i.Z.subscribe("USER_CONNECTIONS_LINK_CALLBACK", O), () => {
     i.Z.unsubscribe("USER_CONNECTIONS_LINK_CALLBACK", O)
-  }), [O]), (0, r.jsxs)(m.Z, {
-    children: [(0, r.jsxs)(c.xBx, {
+  }), [O]), (0, l.jsxs)(m.Z, {
+    children: [(0, l.jsxs)(c.xBx, {
       direction: u.Z.Direction.VERTICAL,
       className: C.header,
       separator: !1,
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, l.jsx)(c.Text, {
         className: C.stepHeader,
         variant: "text-xs/bold",
         color: "header-secondary",
@@ -71,26 +71,26 @@ function k(e) {
           number: 1,
           total: 2
         })
-      }), (0, r.jsxs)("div", {
+      }), (0, l.jsxs)("div", {
         className: C.illustration,
         children: [f, " "]
-      }), (0, r.jsx)(c.X6q, {
+      }), (0, l.jsx)(c.X6q, {
         className: C.title,
         variant: "heading-xl/extrabold",
         children: b
-      }), null != p && (0, r.jsx)(c.olH, {
+      }), null != p && (0, l.jsx)(c.olH, {
         className: C.closeButton,
         onClick: p
       })]
-    }), (0, r.jsxs)(c.hzk, {
+    }), (0, l.jsxs)(c.hzk, {
       className: C.body,
       paddingFix: !1,
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, l.jsx)(c.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
         children: E
-      }), !a && null != T && (0, r.jsx)(c.Text, {
+      }), !a && null != T && (0, l.jsx)(c.Text, {
         tag: "p",
         variant: "text-sm/normal",
         color: "header-secondary",
@@ -98,13 +98,13 @@ function k(e) {
           redirectUrl: T
         })
       })]
-    }), (0, r.jsx)(c.mzw, {
+    }), (0, l.jsx)(c.mzw, {
       className: C.footer,
-      children: (0, r.jsxs)(c.zxk, {
+      children: (0, l.jsxs)(c.zxk, {
         className: C.footerButton,
         color: a ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND,
         onClick: g,
-        children: [a ? N.intl.string(N.t["5911LS"]) : N.intl.string(N.t["3PatS0"]), (0, r.jsx)(c.rgF, {
+        children: [a ? N.intl.string(N.t["5911LS"]) : N.intl.string(N.t["3PatS0"]), (0, l.jsx)(c.rgF, {
           color: "currentColor",
           className: C.launchIcon,
           size: "xs"

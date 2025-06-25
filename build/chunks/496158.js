@@ -1,16 +1,16 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  D: () => l
+  D: () => r
 });
 var i = n(73800),
-  r = n(430824);
+  l = n(430824);
 
-function l(e) {
+function r(e) {
   return i.useMemo(() => "contextless" === e.type ? {
     channel: void 0,
     guild: void 0
   } : {
     channel: e.channel,
-    guild: r.Z.getGuild(e.channel.guild_id)
+    guild: l.Z.getGuild(e.channel.guild_id)
   }, [e])
 }

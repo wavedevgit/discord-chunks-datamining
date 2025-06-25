@@ -1,6 +1,6 @@
 /**
   Module ID: 86590
-  Original File Name: 6fe306f22dd38351
+  Original File Name: a61d47295e2908e4
 **/
 .container__1ce5d {
     position: relative
@@ -41,7 +41,7 @@
 .acronym__2894c {
     align-items: center;
     background-color: var(--background-mod-strong);
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-weight: var(--font-weight-medium);
     justify-content: center;
@@ -73,4 +73,4 @@
     color: var(--header-primary)
 }
 
-/*# sourceMappingURL=6fe306f22dd38351.css.map*/
+/*# sourceMappingURL=a61d47295e2908e4.css.map*/

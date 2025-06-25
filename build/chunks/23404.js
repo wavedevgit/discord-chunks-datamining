@@ -179,7 +179,7 @@ function L(e) {
         className: A.instructions,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          color: "text-normal",
+          color: "text-default",
           children: X
         }), Q && (0, r.jsx)(y.Z, {
           quest: E,

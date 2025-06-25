@@ -71,7 +71,7 @@ function A(e) {
     baseChannelId: A,
     channelViewSource: R = "Split View",
     isResourceChannelView: D
-  } = e, L = (0, i.e7)([v.Z], () => v.Z.getChannel(n)), M = (0, i.e7)([I.Z], () => I.Z.getGuild(null == L ? void 0 : L.getGuildId())), H = (0, i.e7)([Z.default], () => Z.default.getCurrentUser()), U = (0, i.e7)([O.Z], () => O.Z.didAgree(null == L ? void 0 : L.guild_id)), G = (null == H ? void 0 : H.nsfwAllowed) === !0, W = (0, w.ZP)(L), z = (0, i.e7)([C.Z], () => (null == M ? void 0 : M.id) != null && C.Z.isLurking(M.id), [M]), F = (0, f.Z)(n), q = (0, i.e7)([p.Z], () => {
+  } = e, L = (0, i.e7)([v.Z], () => v.Z.getChannel(n)), M = (0, i.e7)([I.Z], () => I.Z.getGuild(null == L ? void 0 : L.getGuildId())), H = (0, i.e7)([Z.default], () => Z.default.getCurrentUser()), U = (0, i.e7)([O.Z], () => O.Z.didAgree(null == L ? void 0 : L.guild_id)), G = (null == H ? void 0 : H.nsfwAllowed) === !0, W = (0, w.ZP)(L), F = (0, i.e7)([C.Z], () => (null == M ? void 0 : M.id) != null && C.Z.isLurking(M.id), [M]), z = (0, f.Z)(n), q = (0, i.e7)([p.Z], () => {
     var e;
     return null == (e = p.Z.getResourceForChannel(null == M ? void 0 : M.id, n)) ? void 0 : e.title
   }), X = r.useRef(!1);
@@ -83,7 +83,7 @@ function A(e) {
       }))
     }, [L, R]), null == L || null == M) return null;
   let V = [];
-  return (z || V.push((0, l.jsx)(x.Z, {
+  return (F || V.push((0, l.jsx)(x.Z, {
     channel: L
   }, "notifications")), V.push((0, l.jsx)(g.ZP.Icon, {
     icon: a.Dio,
@@ -98,7 +98,7 @@ function A(e) {
       "aria-label": S.intl.string(S.t.BIYAqa),
       children: (0, _.ud)({
         channel: L,
-        channelName: F ? q : W,
+        channelName: z ? q : W,
         guild: M,
         inSidebar: !0,
         handleContextMenu: e => {

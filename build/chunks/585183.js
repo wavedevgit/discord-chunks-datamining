@@ -2,8 +2,8 @@
 a.d(t, {
   h: () => C
 }), a(388685);
-var r = a(255367),
-  l = a(73800),
+var l = a(255367),
+  r = a(73800),
   s = a(512722),
   n = a.n(s),
   o = a(481060),
@@ -26,21 +26,21 @@ function C(e) {
     onError: j,
     onClose: k,
     redirectUri: v
-  } = e, [p, f] = l.useState(!1), b = l.useCallback(async e => {
-    let a, r, {
-        location: l
+  } = e, [p, f] = r.useState(!1), b = r.useCallback(async e => {
+    let a, l, {
+        location: r
       } = e,
       {
         callbackCode: s,
         callbackState: n
       } = d;
     try {
-      a = await c.Z.completeTwoWayLink(t, l, s, n)
+      a = await c.Z.completeTwoWayLink(t, r, s, n)
     } catch (e) {
       var o;
-      N.error("".concat(t, " link error:"), e), r = null == (o = e.body) ? void 0 : o.code
+      N.error("".concat(t, " link error:"), e), l = null == (o = e.body) ? void 0 : o.code
     }
-    null != a ? C() : j(r)
+    null != a ? C() : j(l)
   }, [t, d, C, j]), {
     header: E,
     body: T,
@@ -54,15 +54,15 @@ function C(e) {
     isTrustedName: !0,
     isEmbeddedFlow: !0,
     redirectUri: v
-  }), R = l.useCallback(() => {
+  }), R = r.useCallback(() => {
     n()(null != O, "sendAuthorize not available"), f(!0), O(!0)
   }, [O]);
-  return (0, r.jsxs)(u.Z, {
-    children: [(0, r.jsxs)(o.xBx, {
+  return (0, l.jsxs)(u.Z, {
+    children: [(0, l.jsxs)(o.xBx, {
       direction: i.Z.Direction.VERTICAL,
       className: m.header,
       separator: !1,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, l.jsx)(o.Text, {
         className: m.stepHeader,
         variant: "text-xs/bold",
         color: "header-secondary",
@@ -70,17 +70,17 @@ function C(e) {
           number: 2,
           total: 2
         })
-      }), null != k && (0, r.jsx)(o.olH, {
+      }), null != k && (0, l.jsx)(o.olH, {
         className: m.closeButton,
         onClick: k
       })]
-    }), (0, r.jsxs)(o.hzk, {
+    }), (0, l.jsxs)(o.hzk, {
       className: m.consentContent,
       paddingFix: !1,
       children: [E, T, g]
-    }), (0, r.jsx)(o.mzw, {
+    }), (0, l.jsx)(o.mzw, {
       className: m.footer,
-      children: (0, r.jsx)(o.zxk, {
+      children: (0, l.jsx)(o.zxk, {
         className: m.footerButton,
         color: o.zxk.Colors.BRAND,
         submitting: p,

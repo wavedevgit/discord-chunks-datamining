@@ -80,7 +80,7 @@ function b(e) {
         })]
       }), C.length > 0 && N.length > 0 && (0, l.jsx)(a.Text, {
         variant: "text-sm/normal",
-        color: "text-warning",
+        color: "text-feedback-warning",
         children: p.intl.format(p.t.xJFpio, {
           count: C.length,
           channelNames: C.join(", ")

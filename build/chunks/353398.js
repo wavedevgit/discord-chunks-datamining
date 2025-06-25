@@ -237,7 +237,7 @@ function R(e) {
     onConfirm: n,
     children: (0, i.jsx)(m.Text, {
       variant: "text-md/normal",
-      color: "text-normal",
+      color: "text-default",
       children: O.intl.string(O.t.apCQv7)
     })
   })
@@ -288,7 +288,7 @@ function D(e) {
         value: (0, j.Z)(n.code)
       })
     }), n.isDirty && (0, i.jsx)(m.Text, {
-      color: "text-warning",
+      color: "text-feedback-warning",
       className: y.marginTop8,
       variant: "text-sm/normal",
       children: O.intl.string(O.t.aWsjtL)

@@ -25,7 +25,7 @@ function s(e) {
     className: o.container,
     children: [(0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
-      color: "text-normal",
+      color: "text-default",
       className: o.text,
       children: (0, a.m)(s)
     }), (0, r.jsx)("div", {
@@ -38,7 +38,7 @@ function s(e) {
       })
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
-      color: "text-normal",
+      color: "text-default",
       className: o.text,
       children: (0, a.m)(l)
     })]

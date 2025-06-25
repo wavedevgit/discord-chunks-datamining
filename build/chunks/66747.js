@@ -277,7 +277,7 @@ function K(e) {
   }, [t.joinedAtTimestamp]), (0, b.Z)(() => {
     a(X(t.joinedAtTimestamp))
   }, 1e4);
-  let s = o ? "text-brand" : "text-normal";
+  let s = o ? "text-brand" : "text-default";
   return (null == i ? void 0 : i.short) == null ? null : n ? (0, r.jsx)("div", {
     className: F.__invalid_joinedAtContainer,
     children: (0, r.jsx)(C.Text, {
@@ -312,7 +312,7 @@ let J = l.memo(function(e) {
         accountCreationDateShort: (0, R.fv)(e, R.jq.ACCOUNT_AGE),
         accountCreationDateLong: new Date(e).toLocaleDateString(U.intl.currentLocale, R.I)
       }
-    }, [t.userId]), s = o ? "text-brand" : "text-normal";
+    }, [t.userId]), s = o ? "text-brand" : "text-default";
     return n ? (0, r.jsx)(C.Text, {
       variant: "text-sm/medium",
       color: s,

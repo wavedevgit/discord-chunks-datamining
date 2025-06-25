@@ -40,7 +40,7 @@ function h(e) {
         count: n.newClipIds.length
       })
     }), (0, r.jsx)(a.Text, {
-      color: "text-normal",
+      color: "text-default",
       className: p.__invalid_content,
       variant: "text-sm/medium",
       children: d.intl.format(d.t["7XX0/f"], {

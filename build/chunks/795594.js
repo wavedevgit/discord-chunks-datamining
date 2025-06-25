@@ -97,7 +97,7 @@ function es(e) {
       color: "currentColor",
       className: et.warningIcon
     }), (0, r.jsx)(g.Text, {
-      color: "text-normal",
+      color: "text-default",
       variant: "text-sm/medium",
       children: n
     })]
@@ -293,7 +293,7 @@ let el = e => {
       if (null != a.description && "" !== a.description) return (0, r.jsx)(g.Text, {
         className: en.markup,
         variant: "text-sm/normal",
-        color: "text-normal",
+        color: "text-default",
         children: (0, D.parseBioReact)(a.description)
       })
     }, [a.description]), ef = () => {
@@ -356,7 +356,7 @@ let el = e => {
             children: a.name
           }), (0, r.jsx)(g.Text, {
             variant: "text-sm/normal",
-            color: "text-normal",
+            color: "text-default",
             children: ee.intl.format(ee.t.yOApCA, {
               date: n
             })

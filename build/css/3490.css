@@ -1,6 +1,6 @@
 /**
   Module ID: 3490
-  Original File Name: 7a5a9b93f5d8606b
+  Original File Name: aedae0085dd0aaef
 **/
 .tooltipTextContainer__0ca35 {
     align-items: center;
@@ -705,7 +705,7 @@
 .normalStylesDefault_a1443c {
     --custom-poll-style-vote-background: var(--background-base-lowest);
     --custom-poll-style-vote-percentage: var(--background-modifier-active);
-    --custom-poll-style-label: var(--text-normal);
+    --custom-poll-style-label: var(--text-default);
     --custom-poll-style-border: transparent
 }
 
@@ -783,7 +783,7 @@
 }
 
 .buttonBody__47998 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 1.25;
     text-align: left
@@ -853,7 +853,7 @@
 }
 
 .modal__47998 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .images-light .conflictUploadArt__47998 {
@@ -911,7 +911,7 @@
 }
 
 .tagline__72090 {
-    color: var(--text-normal);
+    color: var(--text-default);
     flex: 1 1 auto;
     font-size: 15px;
     line-height: 1.3;
@@ -1205,7 +1205,7 @@ html .progress__61462 {
 }
 
 .embedPrice_c7dbcb {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     font-weight: var(--font-weight-medium)
 }
@@ -1223,7 +1223,7 @@ html .progress__61462 {
 }
 
 .directoryHeroPrice_c7dbcb,.directoryHeroPricePremium_c7dbcb {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .OSSection_f28827 {
@@ -1926,7 +1926,7 @@ html .progress__61462 {
 }
 
 .hidePermanently_cacd02:focus,.hidePermanently_cacd02:hover {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .closeIcon_cacd02 {
@@ -2324,7 +2324,7 @@ html .progress__61462 {
 }
 
 .embedFooterText__623de {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: .75rem;
     font-weight: var(--font-weight-medium);
     line-height: 1rem
@@ -2337,7 +2337,7 @@ html .progress__61462 {
 }
 
 .embedFooterSeparator__623de {
-    color: var(--text-normal);
+    color: var(--text-default);
     display: inline-block;
     font-weight: var(--font-weight-medium);
     margin: 0 4px
@@ -2408,7 +2408,7 @@ html .progress__61462 {
 }
 
 .embedDescription__623de,.embedFieldValue__623de {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .embedProvider__623de .embedLink__623de {
@@ -3235,7 +3235,7 @@ html .progress__61462 {
 
 .container__62119 {
     background-color: var(--background-secondary-alt);
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     flex-direction: column;
     -webkit-user-select: none;
@@ -3294,7 +3294,7 @@ html .progress__61462 {
 }
 
 .benefits__62119 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     flex-grow: 1;
     padding: 16px
 }
@@ -3344,7 +3344,7 @@ html .progress__61462 {
 .benefitsSummary__62119 {
     align-items: center;
     align-self: stretch;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -3539,7 +3539,7 @@ html .progress__61462 {
 }
 
 .warning__0d029 {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .danger__0d029 {
@@ -4052,7 +4052,7 @@ html .progress__61462 {
 
 .container__4216d {
     align-items: center;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     border-radius: 12px;
     display: inline-flex;
     gap: 4px;
@@ -4169,7 +4169,7 @@ html .progress__61462 {
 }
 
 .containerScrollGradient_a54921 {
-    background: linear-gradient(0deg,var(--background-primary) 0,transparent 100%);
+    background: linear-gradient(0deg,var(--background-base-low) 0,transparent 100%);
     bottom: 0;
     height: 52px;
     left: 0;
@@ -4185,7 +4185,7 @@ html .progress__61462 {
 }
 
 .container__000a3 {
-    background: var(--background-secondary);
+    background: var(--background-base-lower);
     box-sizing: border-box;
     max-height: calc(100vh - 280px);
     max-width: 621px;
@@ -4195,7 +4195,7 @@ html .progress__61462 {
 
 .header__000a3 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     display: flex;
     height: 260px;
     justify-content: center;
@@ -5192,7 +5192,7 @@ html .progress__61462 {
 }
 
 .radioBackground_f4f0eb {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .radioForeground_f4f0eb {
@@ -5202,7 +5202,7 @@ html .progress__61462 {
 .checkbox_f4f0eb {
     align-items: center;
     background-color: transparent;
-    border: 2px solid var(--text-normal);
+    border: 2px solid var(--text-default);
     border-radius: 3px;
     box-sizing: border-box;
     display: flex;
@@ -5324,7 +5324,7 @@ html .progress__61462 {
     background-color: var(--background-mod-faint);
     border-radius: var(--radius-sm);
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     gap: 8px;
     min-height: 50px;
@@ -5569,7 +5569,7 @@ html .progress__61462 {
 }
 
 .tagline_ff4e03 {
-    color: var(--text-normal);
+    color: var(--text-default);
     flex: 1 1 auto;
     font-size: 15px;
     line-height: 1.3;
@@ -6671,11 +6671,11 @@ html .progress__61462 {
 }
 
 .name__4d3fa,.partyStatus__4d3fa,.textLink__4d3fa {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .message-group .textLink__4d3fa {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .downloadApps__4a98c {
@@ -7102,7 +7102,7 @@ html .progress__61462 {
 }
 
 .reaction_f8896c .emoji-text {
-    color: var(--text-normal);
+    color: var(--text-default);
     display: inline-block;
     font-size: 20px;
     font-variant-emoji: emoji;
@@ -7371,7 +7371,7 @@ html .progress__61462 {
 }
 
 .reaction__23977 .emoji-text {
-    color: var(--text-normal);
+    color: var(--text-default);
     display: inline-block;
     font-size: 1.25rem;
     font-variant-emoji: emoji;
@@ -7822,7 +7822,7 @@ html .progress__61462 {
     background: var(--background-surface-high);
     border-radius: var(--radius-xs);
     box-shadow: var(--elevation-high);
-    color: var(--text-normal);
+    color: var(--text-default);
     font-weight: var(--font-weight-medium);
     max-width: 288px;
     overflow: hidden;
@@ -8803,7 +8803,7 @@ html .progress__61462 {
     line-height: 24px;
     white-space: pre-wrap;
     word-wrap: break-word;
-    color: var(--text-normal);
+    color: var(--text-default);
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text;
@@ -9065,7 +9065,7 @@ html .progress__61462 {
 }
 
 .label__09ccc {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     font-weight: var(--font-weight-medium);
     line-height: 18px;
@@ -9268,7 +9268,7 @@ html .progress__61462 {
     line-height: 24px;
     white-space: pre-wrap;
     word-wrap: break-word;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-direction: column;
     -webkit-user-select: text;
@@ -9488,7 +9488,7 @@ html .progress__61462 {
 }
 
 .alertIcon__2facc {
-    color: var(--text-warning);
+    color: var(--text-feedback-warning);
     height: 16px;
     width: 16px
 }
@@ -9503,7 +9503,7 @@ html .progress__61462 {
 }
 
 .gameContainer_e8c018 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-weight: var(--font-weight-medium)
 }
 
@@ -9812,7 +9812,7 @@ html .progress__61462 {
 }
 
 .body__45690 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     font-weight: var(--font-weight-medium);
     line-height: 20px;
@@ -10585,7 +10585,7 @@ html .progress__61462 {
 }
 
 .theme-dark {
-    --search-popout-option-user-nickname: var(--text-normal);
+    --search-popout-option-user-nickname: var(--text-default);
     --search-popout-option-user-username: var(--text-muted);
     --search-popout-option-filter-text: var(--primary-400);
     --search-popout-option-non-text-color: #caccce;
@@ -10599,7 +10599,7 @@ html .progress__61462 {
 }
 
 .theme-light {
-    --search-popout-option-user-nickname: var(--text-normal);
+    --search-popout-option-user-nickname: var(--text-default);
     --search-popout-option-user-username: var(--text-muted);
     --search-popout-option-filter-text: #caccce;
     --search-popout-option-non-text-color: #5e636a;
@@ -10794,7 +10794,7 @@ html .progress__61462 {
     border-radius: var(--radius-sm);
     box-shadow: none;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: text;
     display: flex;
     height: 32px;
@@ -11088,7 +11088,7 @@ html .progress__61462 {
 }
 
 .back__49676 {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-right: 12px;
     opacity: .6
 }
@@ -11136,4 +11136,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=7a5a9b93f5d8606b.css.map*/
+/*# sourceMappingURL=aedae0085dd0aaef.css.map*/

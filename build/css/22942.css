@@ -1,6 +1,6 @@
 /**
   Module ID: 22942
-  Original File Name: 9f9ad1fb66f05bb1
+  Original File Name: 34ee43642e1b7413
 **/
 .modalRoot_d507dd {
     height: 100%;
@@ -68,7 +68,7 @@
 }
 
 .uploadContainer_d507dd {
-    color: var(--text-normal);
+    color: var(--text-default);
     flex-direction: column;
     height: 100%;
     width: 100%
@@ -107,4 +107,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=9f9ad1fb66f05bb1.css.map*/
+/*# sourceMappingURL=34ee43642e1b7413.css.map*/

@@ -12,14 +12,14 @@ var i = n(255367),
   u = n(444295),
   d = n(603618),
   p = n(388627),
-  h = n(981631),
-  f = n(852266);
+  f = n(981631),
+  h = n(852266);
 
 function m(e) {
   let {
     locked: t
-  } = e, n = (0, p.II)(), m = null == n ? void 0 : n.id, g = null == n ? void 0 : n.altId, y = (0, o.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [v, b] = r.useState(new Set), [E, _] = r.useState(new Set), x = r.useCallback((e, t, n) => {
-    b(n => {
+  } = e, n = (0, p.II)(), m = null == n ? void 0 : n.id, g = null == n ? void 0 : n.altId, y = (0, o.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [b, v] = r.useState(new Set), [E, _] = r.useState(new Set), x = r.useCallback((e, t, n) => {
+    v(n => {
       if (t) {
         if (n.has(e)) return n;
         n.add(e)
@@ -38,9 +38,9 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), I = (0, u.ee)(() => v, [v]), S = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
+  }, []), I = (0, u.ee)(() => b, [b]), S = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
   r.useEffect(() => {
-    0 === I.size || t || j(h.Odu.FRIENDS, {
+    0 === I.size || t || j(f.Odu.FRIENDS, {
       locked: t,
       shownUserIds: Array.from(I),
       liveUserIds: Array.from(S),
@@ -101,7 +101,7 @@ function m(e) {
       }(e);
       if (null != n) {
         var i, r;
-        (0, u.Ws)(h.Odu.FRIENDS, (i = function(e) {
+        (0, u.Ws)(f.Odu.FRIENDS, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -139,11 +139,11 @@ function m(e) {
       showInviteButton: !1
     }), [C, y]);
   return t ? null : (0, i.jsx)(a.r1, {
-    containerClassName: f.container,
-    listClassName: f.list,
+    containerClassName: h.container,
+    listClassName: h.list,
     closePopout: w,
     renderHeader: Z,
-    appContext: h.IlC.OVERLAY,
+    appContext: f.IlC.OVERLAY,
     onAction: N,
     onFriendVisible: x
   })

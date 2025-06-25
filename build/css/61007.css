@@ -1,6 +1,6 @@
 /**
   Module ID: 61007
-  Original File Name: aad72862559089e1
+  Original File Name: 868a42d7e61a1089
 **/
 .header__9f397 {
     padding: 24px 16px 0
@@ -111,7 +111,7 @@
 }
 
 .backButton__78f69 {
-    color: var(--text-normal);
+    color: var(--text-default);
     height: 38px;
     margin-right: auto
 }
@@ -153,7 +153,7 @@
 }
 
 .backButton_b917ac {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .subtitle_b917ac {
@@ -356,4 +356,4 @@
     }
 }
 
-/*# sourceMappingURL=aad72862559089e1.css.map*/
+/*# sourceMappingURL=868a42d7e61a1089.css.map*/

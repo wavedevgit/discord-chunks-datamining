@@ -140,7 +140,7 @@ function L(e) {
       children: null == n ? void 0 : n.exeName
     }), (0, a.jsxs)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: ["isLauncher: ", (null == n ? void 0 : n.isLauncher) ? "Yes" : "No"]
     }), null != t.applicationId && (0, a.jsx)(c.Text, {
       variant: "text-md/bold",
@@ -150,47 +150,47 @@ function L(e) {
       })
     }), (0, a.jsxs)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: ["fullscreenType: ", (0, b.sS)(t.fullscreenType)]
     }), (0, a.jsxs)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: ["state: ", t.state]
     }), (0, a.jsxs)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: ["source: ", t.source]
     }), (0, a.jsxs)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: ["legacyEnabled: ", t.legacyEnabled ? "Yes" : "No"]
     }), (0, a.jsxs)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: ["oopEnabled: ", t.oopEnabled ? "Yes" : "No"]
     }), (0, a.jsxs)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: ["overlayMethod: ", (0, b.P_)(t.overlayMethod)]
     }), (0, a.jsxs)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: ["hidden: ", (null == n ? void 0 : n.hidden) ? "Yes" : "No"]
     }), (0, a.jsxs)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: ["hook: ", (null == r ? void 0 : r.hook) ? "Yes" : "No"]
     }), (0, a.jsxs)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: ["overlay: ", (null == r ? void 0 : r.overlay) ? "Yes" : "No"]
     }), (0, a.jsxs)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: ["overlayCompatibilityHook: ", (null == r ? void 0 : r.overlayCompatibilityHook) ? "Yes" : "No"]
     }), (0, a.jsxs)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: ["supportsOutOfProcessOverlay: ", (null == r ? void 0 : r.supportsOutOfProcessOverlay) ? "Yes" : "No"]
     })]
   })
@@ -493,7 +493,7 @@ function B() {
             className: P.panelGroup,
             children: [0 === Object.keys(F).length && (0, a.jsx)(c.Text, {
               variant: "text-sm/normal",
-              color: "text-normal",
+              color: "text-default",
               children: "No running games"
             }), Object.values(F).map(e => (0, a.jsx)(L, {
               trackedGame: e
@@ -504,7 +504,7 @@ function B() {
         className: P.panelGroup,
         children: [0 === Object.keys(F).length && (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          color: "text-normal",
+          color: "text-default",
           children: "No tracked game times"
         }), Object.values(F).map(e => (0, a.jsx)(D, {
           pid: e.pid
@@ -543,7 +543,7 @@ function B() {
             className: P.panelGroup,
             children: [0 === Object.keys(F).length && (0, a.jsx)(c.Text, {
               variant: "text-sm/normal",
-              color: "text-normal",
+              color: "text-default",
               children: "No recent screen types"
             }), Object.values(F).map(e => {
               var t;
@@ -563,7 +563,7 @@ function B() {
                   } = t;
                   return (0, a.jsx)(c.Text, {
                     variant: "text-xs/normal",
-                    color: "text-normal",
+                    color: "text-default",
                     children: "".concat(n, ":").concat((0, b.sS)(n), " @ ").concat(r)
                   }, "".concat(e.pid, "-").concat(n, "-").concat(r))
                 })]

@@ -52,7 +52,7 @@ function d(t) {
           }), (0, a.jsx)(l.Text, {
             tag: "span",
             variant: "text-md/semibold",
-            color: "text-normal",
+            color: "text-default",
             children: m
           }), (0, a.jsx)(l.Text, {
             tag: "span",

@@ -140,7 +140,7 @@ function p(e) {
         children: null != s ? s : d.intl.string(d.t["4uLhAg"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-xxs/normal",
-        color: "text-normal",
+        color: "text-default",
         className: u.__invalid_productType,
         children: v
       }), (0, r.jsx)("div", {

@@ -50,7 +50,7 @@ let j = () => {
         children: [(0, i.jsx)(o.k.Child, {
           children: (0, i.jsx)(d.Text, {
             variant: "text-sm/semibold",
-            color: "text-normal",
+            color: "text-default",
             children: _.intl.string(b.default.xAVm7O)
           })
         }), (0, i.jsx)(d.P3F, {

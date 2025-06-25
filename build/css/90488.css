@@ -1,6 +1,6 @@
 /**
   Module ID: 90488
-  Original File Name: d6b87ef55511ecf2
+  Original File Name: 550f07703c0a44bb
 **/
 .titleBar__421ed {
     z-index: 3001;
@@ -624,7 +624,7 @@
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     gap: 8px;
     margin-bottom: 8px;
@@ -1274,4 +1274,4 @@
     align-items: stretch
 }
 
-/*# sourceMappingURL=d6b87ef55511ecf2.css.map*/
+/*# sourceMappingURL=550f07703c0a44bb.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 79988
-  Original File Name: 41bbc336b055435a
+  Original File Name: b143151bf2eee029
 **/
 .searchBar__3e00d {
     background-color: var(--background-base-lower);
@@ -84,7 +84,7 @@
 }
 
 .sectionTitle__01dab {
-    color: var(--text-normal);
+    color: var(--text-default);
     padding-left: 16px;
     padding-top: 8px
 }
@@ -223,7 +223,7 @@
 }
 
 .sectionTitle_ac72c6 {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-bottom: 8px
 }
 
@@ -263,7 +263,7 @@
 }
 
 .inputPrefix_ac72c6 {
-    color: var(--text-normal);
+    color: var(--text-default);
     left: 8px;
     position: absolute;
     top: 14px
@@ -351,7 +351,7 @@
 }
 
 .channelNameNote_ac72c6 strong {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
-/*# sourceMappingURL=41bbc336b055435a.css.map*/
+/*# sourceMappingURL=b143151bf2eee029.css.map*/

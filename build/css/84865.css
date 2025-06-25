@@ -1,6 +1,6 @@
 /**
   Module ID: 84865
-  Original File Name: c4dad652730a7c90
+  Original File Name: ef177e9e09375a7a
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -648,7 +648,7 @@
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     line-height: 18px;
@@ -821,7 +821,7 @@
     border: 1px solid var(--border-normal);
     border-radius: 8px;
     box-shadow: none;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-direction: column;
     padding: 20px 20px 0;
@@ -841,7 +841,7 @@
     background-color: var(--input-background);
     border: 1px solid var(--input-border);
     border-radius: var(--radius-sm);
-    color: var(--text-normal);
+    color: var(--text-default);
     display: block;
     flex: 0 0 auto;
     font-size: 22px;
@@ -1887,7 +1887,7 @@
 }
 
 .messageCountText_faa96b {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     font-weight: var(--font-weight-medium)
 }
@@ -2974,7 +2974,7 @@
 }
 
 .body__0aee3 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     font-weight: var(--font-weight-medium);
     line-height: 20px;
@@ -3847,7 +3847,7 @@ div:has(>.positionLayer__4f4b6) {
     background-color: var(--background-mod-subtle);
     border-radius: var(--radius-md);
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     height: var(--guildbar-avatar-size);
     justify-content: center;
@@ -4050,7 +4050,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .discoveryIcon_ef3116 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .platform-osx .unreadMentionsIndicatorTop_ef3116 .unreadMentionsBar_ef3116 {
@@ -4415,7 +4415,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .copy__65b48 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .loadingWrapper__65b48 {
@@ -4526,7 +4526,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .container__0d0f9:hover .text__0d0f9 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .container__0d0f9:after {
@@ -6903,7 +6903,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .popoutText_effb26 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     line-height: 18px;
     -webkit-user-select: text;
@@ -7138,7 +7138,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .rtcConnectionStatusConnecting__06d62 {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .rtcConnectionStatusError__06d62 {
@@ -7150,7 +7150,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .rtcConnectionQualityAverage__06d62 .pingForeground__06d62:not(:last-child) {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .rtcConnectionQualityBad__06d62 .pingForeground__06d62:first-child {
@@ -7562,4 +7562,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=c4dad652730a7c90.css.map*/
+/*# sourceMappingURL=ef177e9e09375a7a.css.map*/

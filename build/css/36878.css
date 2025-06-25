@@ -1,10 +1,10 @@
 /**
   Module ID: 36878
-  Original File Name: 73613d584d94129e
+  Original File Name: 9118c114144c55d6
 **/
 .container_abd9a8 {
     background-color: var(--background-base-lowest);
-    color: var(--text-normal);
+    color: var(--text-default);
     display: grid;
     grid-template-areas: "topBar topBar" "sidebar content";
     grid-template-columns: 232px 1fr;
@@ -85,4 +85,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=73613d584d94129e.css.map*/
+/*# sourceMappingURL=9118c114144c55d6.css.map*/

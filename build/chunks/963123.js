@@ -63,7 +63,7 @@ function X() {
     },
     children: (0, r.jsx)(p.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       children: Y.intl.string(Y.t.U7Xrb2)
     })
   })

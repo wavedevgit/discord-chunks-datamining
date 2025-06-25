@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => c
 });
 var i = n(990547),
-  r = n(442837),
-  l = n(213609),
+  l = n(442837),
+  r = n(213609),
   o = n(541099),
   a = n(312871);
 
@@ -14,11 +14,11 @@ function c(e) {
     commandId: n,
     searchResultsPosition: c,
     query: s
-  } = e, u = (0, r.e7)([o.Z], () => o.Z.entrypoint());
+  } = e, u = (0, l.e7)([o.Z], () => o.Z.entrypoint());
   return {
     trackSearchResultsItemImpressionRef: (0, a.Z)({
       onVisible: () => {
-        (0, l.h)({
+        (0, r.h)({
           type: i.ImpressionTypes.VIEW,
           name: i.ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM,
           properties: {

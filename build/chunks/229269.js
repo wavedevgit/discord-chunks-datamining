@@ -60,7 +60,7 @@ function O() {
     children: (0, i.jsxs)("div", {
       children: [(0, i.jsx)(o.Text, {
         variant: "text-md/normal",
-        color: "info-help-text",
+        color: "text-feedback-info",
         className: _.labelSpacing,
         children: "Payment-method-specific components and views may not appear for you unless your browser is supported for that payment method and they have been configured on your browser."
       }), (0, i.jsx)(C, {}), (0, i.jsx)(I, {}), (0, i.jsx)(w, {})]

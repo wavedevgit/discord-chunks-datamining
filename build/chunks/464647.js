@@ -144,7 +144,7 @@ function v(e) {
       hideTooltip: !0
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
-      color: "text-normal",
+      color: "text-default",
       children: t.name
     })]
   })

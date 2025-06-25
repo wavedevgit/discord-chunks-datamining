@@ -1,6 +1,6 @@
 /**
   Module ID: 80993
-  Original File Name: 80b755631c6decca
+  Original File Name: 9b90ff4d7f2203a5
 **/
 .connectedAccountVanityMetadata_fffe42 {
     margin-top: 4px
@@ -294,7 +294,7 @@
 }
 
 .connectionsChecksGroupTextNameInfoIcon_a470b4 {
-    color: var(--text-warning);
+    color: var(--text-feedback-warning);
     height: 16px;
     width: 16px
 }
@@ -433,4 +433,4 @@
     white-space: nowrap
 }
 
-/*# sourceMappingURL=80b755631c6decca.css.map*/
+/*# sourceMappingURL=9b90ff4d7f2203a5.css.map*/

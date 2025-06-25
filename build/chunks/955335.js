@@ -49,7 +49,7 @@ let d = {
 function p(e) {
   let {
     subscriptions: n,
-    color: t = "text-normal"
+    color: t = "text-default"
   } = e, p = n.some(e => (0, l.yE)(e.skuFlags, s.l4R.APPLICATION_GUILD_SUBSCRIPTION));
   return (0, r.jsx)(i.X6q, {
     variant: "heading-lg/semibold",

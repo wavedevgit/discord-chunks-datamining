@@ -23,7 +23,7 @@ function l(t) {
       horizontal: !0
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
-      color: "text-normal",
+      color: "text-default",
       className: o.fileName,
       children: n.filename
     }), (0, r.jsx)(a.LZC, {

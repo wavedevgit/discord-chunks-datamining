@@ -94,7 +94,7 @@ function B(e) {
     opacity: +!!_,
     height: _ ? f : 0,
     config: T.Y
-  }), C = 0 === b ? c.P4T : c.d3s, O = (0, p.Lq)(P.Ilk.RED_345), S = 0 === b ? O : l ? c.TVs.colors.TEXT_NORMAL : c.TVs.colors.WHITE;
+  }), C = 0 === b ? c.P4T : c.d3s, O = (0, p.Lq)(P.Ilk.RED_345), S = 0 === b ? O : l ? c.TVs.colors.TEXT_DEFAULT : c.TVs.colors.WHITE;
   return (0, r.jsx)(i.animated.div, {
     style: y,
     children: (0, r.jsxs)("div", {

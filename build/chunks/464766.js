@@ -27,12 +27,12 @@ function u(e) {
   let m = s.intl.formatToPlainString(s.t["ZrTT/P"], {
       userCount: u
     }),
-    I = [(0, i.jsx)(d.njP.Item, {
+    f = [(0, i.jsx)(d.njP.Item, {
       className: c.tabBarItem,
       id: o.fL.EVENT_INFO,
       children: s.intl.string(s.t.iW6Xur)
     }, "event-details")];
-  return g || I.push((0, i.jsx)(d.njP.Item, {
+  return g || f.push((0, i.jsx)(d.njP.Item, {
     className: c.tabBarItem,
     id: o.fL.RSVP_LIST,
     children: m
@@ -54,7 +54,7 @@ function u(e) {
       selectedItem: t,
       type: "top",
       onItemSelect: r,
-      children: I
+      children: f
     })]
   })
 }

@@ -127,7 +127,7 @@ function _(e) {
             className: h.extraEmojiCount,
             children: (0, r.jsxs)(s.Text, {
               variant: "text-md/semibold",
-              color: "text-normal",
+              color: "text-default",
               children: ["+", n]
             })
           })]

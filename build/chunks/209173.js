@@ -1,5 +1,5 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  s: () => r
+  s: () => l
 });
-var i, r = ((i = {})[i.APPLICATION = 1] = "APPLICATION", i[i.ACTIVITY_APPLICATION = 2] = "ACTIVITY_APPLICATION", i[i.CONNECTION = 3] = "CONNECTION", i)
+var i, l = ((i = {})[i.APPLICATION = 1] = "APPLICATION", i[i.ACTIVITY_APPLICATION = 2] = "ACTIVITY_APPLICATION", i[i.CONNECTION = 3] = "CONNECTION", i)

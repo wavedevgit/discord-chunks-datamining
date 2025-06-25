@@ -1,6 +1,6 @@
 /**
   Module ID: 10620
-  Original File Name: 5476b2b9afdd189b
+  Original File Name: d01173e49c4d9509
 **/
 .root__66e7e {
     background: var(--background-base-lower);
@@ -67,7 +67,7 @@
 }
 
 .ratingBody__6c12c {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-top: var(--space-8)
 }
 
@@ -105,7 +105,7 @@
 }
 
 .header__6c12c {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .marginBottom16__6c12c {
@@ -142,4 +142,4 @@
     padding: 0
 }
 
-/*# sourceMappingURL=5476b2b9afdd189b.css.map*/
+/*# sourceMappingURL=d01173e49c4d9509.css.map*/

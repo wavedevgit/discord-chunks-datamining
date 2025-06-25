@@ -87,7 +87,7 @@ let m = function(e) {
             children: [O ? (0, r.jsx)(l.Text, {
               className: p.appCategory,
               variant: "text-xs/medium",
-              color: "text-normal",
+              color: "text-default",
               children: b.name
             }) : null, O && j ? (0, r.jsx)(l.Text, {
               variant: "text-xs/medium",

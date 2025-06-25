@@ -17,7 +17,7 @@ function l(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.Text, {
       variant: "text-xs/semibold",
-      color: "text-normal",
+      color: "text-default",
       className: s.header,
       children: o.intl.string(o.t["Uv/eT0"])
     }), (0, r.jsx)("div", {

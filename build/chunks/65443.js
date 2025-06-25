@@ -18,8 +18,8 @@ var r = n(255367),
 function h(e) {
   let {
     orientation: t = "horizontal",
-    headingColor: n = "text-normal",
-    textColor: o = "text-normal",
+    headingColor: n = "text-default",
+    textColor: o = "text-default",
     withRewardName: h = !1,
     withPremiumHighlight: g = !0,
     quest: j

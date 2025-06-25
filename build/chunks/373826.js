@@ -80,11 +80,11 @@ function h(e) {
   } = (0, o.z)(), h = "string" == typeof t ? t.trim() : t;
   if (null == h || "" === h) return null;
   let m = () => p === s.lY.MODAL || p === s.lY.MODAL_V2 ? (0, r.jsx)(c, f(u({
-    color: "text-normal"
+    color: "text-default"
   }, d), {
     children: h
   })) : (0, r.jsx)(c, f(u({
-    color: "text-normal"
+    color: "text-default"
   }, d), {
     children: (0, r.jsx)(a.Z, {
       children: h

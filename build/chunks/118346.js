@@ -34,7 +34,7 @@ function u() {
   return n ? (0, r.jsx)(l.Text, {
     className: c.verifyConfirmText,
     variant: "text-sm/normal",
-    color: "text-positive",
+    color: "text-feedback-positive",
     children: a.intl.string(a.t.H3Q7U1)
   }) : (0, r.jsx)(l.zxk, {
     size: l.zxk.Sizes.SMALL,

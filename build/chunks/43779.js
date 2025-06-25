@@ -211,7 +211,7 @@ let P = s.memo(function(e) {
   } = e;
   return (0, r.jsx)(c.Text, {
     variant: "text-md/semibold",
-    color: "text-normal",
+    color: "text-default",
     tag: "span",
     className: E.header,
     children: n

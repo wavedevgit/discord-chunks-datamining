@@ -87,7 +87,7 @@ function h(e) {
           children: n
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
-          color: a && "required" === o ? "status-danger" : "text-normal",
+          color: a && "required" === o ? "status-danger" : "text-default",
           children: i
         })]
       })]

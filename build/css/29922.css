@@ -1,6 +1,6 @@
 /**
   Module ID: 29922
-  Original File Name: 4405d7664e5b72e0
+  Original File Name: 55ccdff0c33b598f
 **/
 .header__7e090 {
     background-image: url(/assets/cb4131669938b6ad.svg);
@@ -45,7 +45,7 @@
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     line-height: 18px;
@@ -80,7 +80,7 @@
 }
 
 .bodyText__945b8 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px
 }
@@ -123,7 +123,7 @@
 }
 
 .planSelectorLabel__945b8 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     margin-left: 16px
@@ -193,7 +193,7 @@
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     line-height: 18px;
@@ -374,7 +374,7 @@
 }
 
 .copy__65b48 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .loadingWrapper__65b48 {
@@ -385,4 +385,4 @@
     padding-top: 16px
 }
 
-/*# sourceMappingURL=4405d7664e5b72e0.css.map*/
+/*# sourceMappingURL=55ccdff0c33b598f.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 21815
-  Original File Name: bb07c0ae335ea248
+  Original File Name: 733860c527d19c17
 **/
 .slowModeIcon_b21699 {
     display: block;
@@ -129,7 +129,7 @@
 }
 
 .align-chat-input .text_b88801>strong {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .typing_b88801 {
@@ -568,7 +568,7 @@
 }
 
 .reaction_f8896c .emoji-text {
-    color: var(--text-normal);
+    color: var(--text-default);
     display: inline-block;
     font-size: 20px;
     font-variant-emoji: emoji;
@@ -837,7 +837,7 @@
 }
 
 .reaction__23977 .emoji-text {
-    color: var(--text-normal);
+    color: var(--text-default);
     display: inline-block;
     font-size: 1.25rem;
     font-variant-emoji: emoji;
@@ -1001,7 +1001,7 @@
     background: var(--background-surface-high);
     border-radius: var(--radius-xs);
     box-shadow: var(--elevation-high);
-    color: var(--text-normal);
+    color: var(--text-default);
     font-weight: var(--font-weight-medium);
     max-width: 288px;
     overflow: hidden;
@@ -2423,7 +2423,7 @@
 }
 
 .messageCountText_faa96b {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     font-weight: var(--font-weight-medium)
 }
@@ -2552,4 +2552,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=bb07c0ae335ea248.css.map*/
+/*# sourceMappingURL=733860c527d19c17.css.map*/

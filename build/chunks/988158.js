@@ -28,25 +28,25 @@ function r(t) {
     trustUrl: n,
     onConfirm: l,
     onCancel: r,
-    onClose: o
-  } = t, [s, c] = a.useState(!1), {
-    protocol: x,
-    authorityPrefix: d,
+    onClose: s
+  } = t, [o, c] = a.useState(!1), {
+    protocol: d,
+    authorityPrefix: x,
     hostname: m,
     theRestOfTheUrl: h
   } = i(e), u = a.useCallback(() => {
-    s && n(e), null == o || o(), l()
-  }, [e, s, n, l, o]);
+    o && n(e), null == s || s(), l()
+  }, [e, o, n, l, s]);
   return {
-    protocol: x,
-    authorityPrefix: d,
+    protocol: d,
+    authorityPrefix: x,
     hostname: m,
     theRestOfTheUrl: h,
-    shouldTrustUrl: s,
+    shouldTrustUrl: o,
     setShouldTrustUrl: c,
     handleConfirm: u,
     handleCancel: a.useCallback(() => {
-      null == o || o(), r()
-    }, [r, o])
+      null == s || s(), r()
+    }, [r, s])
   }
 }

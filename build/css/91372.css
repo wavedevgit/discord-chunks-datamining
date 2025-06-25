@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: d94d05042204bc08
+  Original File Name: bdadccfa1fa1cae4
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -612,7 +612,7 @@ h4.title_feb59c,h5.title_feb59c,h6.title_feb59c {
 }
 
 h1.title_feb59c,h2.title_feb59c {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .hljs {
@@ -624,7 +624,7 @@ h1.title_feb59c,h2.title_feb59c {
     -moz-text-size-adjust: none;
     text-size-adjust: none;
     background: var(--background-base-lower);
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .theme-dark .hljs-doctag,.theme-dark .hljs-keyword,.theme-dark .hljs-meta .hljs-keyword,.theme-dark .hljs-template-tag,.theme-dark .hljs-template-variable,.theme-dark .hljs-type,.theme-dark .hljs-variable.language_ {
@@ -757,7 +757,7 @@ h1.title_feb59c,h2.title_feb59c {
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     text-size-adjust: none;
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .hljs-doctag_d285a6,.hljs-keyword_d285a6,.hljs-meta_d285a6 .hljs-keyword_d285a6,.hljs-template-tag_d285a6,.hljs-template-variable_d285a6,.hljs-type_d285a6,.hljs-variable_d285a6.language__d285a6 {
@@ -2137,7 +2137,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .linkPreText_b4f99f {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .learnMoreLink_b4f99f {
@@ -2375,7 +2375,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .bodyText__945b8 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px
 }
@@ -2418,7 +2418,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .planSelectorLabel__945b8 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     margin-left: 16px
@@ -2488,7 +2488,7 @@ h1.title_feb59c,h2.title_feb59c {
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     line-height: 18px;
@@ -2739,7 +2739,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .info__90981 {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-left: 4px
 }
 
@@ -2773,7 +2773,7 @@ h1.title_feb59c,h2.title_feb59c {
     background-color: var(--background-mod-subtle);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-round);
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     height: 40px;
     justify-content: center;
@@ -2849,7 +2849,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .icon__38524 {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-left: var(--spacing-4);
     margin-right: var(--spacing-4)
 }
@@ -4119,7 +4119,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 }
 
 .iconContainer__0ecc4 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .iconContainer__0ecc4,.iconContainer__0ecc4>foreignObject {
@@ -4508,7 +4508,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     background: var(--background-base-lowest);
     border-radius: 4px;
     border-style: none;
-    color: var(--text-normal);
+    color: var(--text-default);
     width: 100px
 }
 
@@ -7418,7 +7418,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     align-items: center;
     background-color: var(--background-base-lowest);
     border-radius: 24px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     gap: 4px;
@@ -8613,7 +8613,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .leftArrow__3cf14 .arrowIcon__3cf14,.rightArrow__3cf14 .arrowIcon__3cf14 {
-    fill: var(--text-normal)
+    fill: var(--text-default)
 }
 
 .leftArrow__3cf14:active,.rightArrow__3cf14:active {
@@ -8651,7 +8651,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     background: var(--background-surface-high);
     border-radius: 4px;
     box-shadow: 0 12px 36px 0 var(--opacity-black-16);
-    color: var(--text-normal);
+    color: var(--text-default);
     font-family: var(--font-primary);
     font-size: 14px;
     font-weight: var(--font-weight-normal);
@@ -8793,7 +8793,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .marketingRefreshSubtitle__6f73d {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     margin: 0
@@ -8811,7 +8811,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .marketingRefreshSectionTier1__6f73d {
     border-top: 1px solid var(--border-subtle);
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     margin-top: 48px;
     padding-top: 48px
@@ -8887,7 +8887,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .accountCreditDescription__6f73d {
-    color: var(--text-normal);
+    color: var(--text-default);
     line-height: 20px;
     margin-bottom: 16px;
     margin-top: 0
@@ -9697,7 +9697,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .sectionDescription_e335a7 {
-    color: var(--text-normal);
+    color: var(--text-default);
     line-height: 20px;
     margin-bottom: 16px;
     margin-top: 0
@@ -9787,7 +9787,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .billingInformation_e335a7 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     line-height: 18px
 }
@@ -9941,7 +9941,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .currency__900c6 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     margin-top: 12px
 }
@@ -10204,7 +10204,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .wrapper__77ba1 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-low);
     box-sizing: border-box;
@@ -10561,7 +10561,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 
 .body__996b0 {
     background-color: var(--modal-background);
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     padding-bottom: 16px
@@ -10614,7 +10614,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .body__22665 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     padding-bottom: 16px
@@ -10646,7 +10646,7 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 .body_e1372c {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     padding-bottom: 16px
@@ -10793,7 +10793,7 @@ html .invoiceCancelRow_e1372c {
 
 .body__89307 {
     background-color: var(--modal-background);
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     padding-bottom: 16px
@@ -10988,7 +10988,7 @@ html .invoiceCancelRow_e1372c {
 }
 
 .body_b9f95d {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     padding-bottom: 16px
@@ -12720,7 +12720,7 @@ div.nagbar_d74ef8 {
     background-color: transparent;
     border: none;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     flex-grow: 1;
     font-size: 16px;
     height: 40px;
@@ -12754,7 +12754,7 @@ div.nagbar_d74ef8 {
 }
 
 .phoneVerificationModal_db41ea .description_db41ea {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     text-align: center
@@ -12941,7 +12941,7 @@ div.nagbar_d74ef8 {
 }
 
 .noticeTextButton__2666b,.userSettingsSecurity__2666b .codeCheckbox__2666b {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .tabPanel__2666b {
@@ -13495,7 +13495,7 @@ div.nagbar_d74ef8 {
 }
 
 .paymentText_e9cb00 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     line-height: 1.4
 }
@@ -13621,7 +13621,7 @@ div.nagbar_d74ef8 {
 }
 
 .giftIcon_e9cb00 {
-    color: var(--text-normal);
+    color: var(--text-default);
     height: 16px;
     margin-left: 10px;
     width: 16px
@@ -13785,7 +13785,7 @@ div.nagbar_d74ef8 {
 }
 
 .externalRowHeader__01014 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px
 }
 
@@ -13934,7 +13934,7 @@ div.nagbar_d74ef8 {
 
 .codeRedemptionRedirect_a706ba {
     background-color: var(--background-base-lower);
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     line-height: 18px;
     margin-top: 40px;
@@ -14175,7 +14175,7 @@ div.nagbar_d74ef8 {
 }
 
 .integrationsWrapper_c7f964 a {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .integrationWrapper_c7f964 {
@@ -15267,7 +15267,7 @@ div.nagbar_d74ef8 {
 }
 
 .description__4626b {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px
 }
@@ -15303,7 +15303,7 @@ div.nagbar_d74ef8 {
 }
 
 .perksHeading_b8f10d {
-    color: var(--text-normal);
+    color: var(--text-default);
     text-align: center;
     text-transform: uppercase
 }
@@ -15607,7 +15607,7 @@ div.nagbar_d74ef8 {
 }
 
 .confirmTitle__3514e {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 24px;
     line-height: 1.25
 }
@@ -15872,7 +15872,7 @@ div.nagbar_d74ef8 {
 }
 
 .emptyStateHeader_d4883c {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 24px;
     line-height: 1.17;
     margin-top: 20px
@@ -17374,7 +17374,7 @@ div.nagbar_d74ef8 {
 }
 
 .cancel_ceb06a {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .boostDescriptionContainer_ceb06a {
@@ -17569,7 +17569,7 @@ div.nagbar_d74ef8 {
 }
 
 .tierPill_d970da,.tierPillStar_d970da {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .tierPillStar_d970da {
@@ -17669,12 +17669,12 @@ div.nagbar_d74ef8 {
 }
 
 .pendingCancellationIcon__2cbe8 {
-    color: var(--text-warning);
+    color: var(--text-feedback-warning);
     flex-shrink: 0
 }
 
 .pendingCancellationMessage__2cbe8 {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-left: 10px
 }
 
@@ -17848,11 +17848,11 @@ div.nagbar_d74ef8 {
 
 .tierPill__0f8ce {
     background-color: var(--background-secondary-alt);
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .body__968a4 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     padding-bottom: 16px
@@ -17879,7 +17879,7 @@ html .invoiceCancelRow__968a4 {
 }
 
 .body_fe75b7 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     padding-bottom: 16px
@@ -18255,7 +18255,7 @@ html .invoiceCancelRow__968a4 {
 }
 
 .text_f8dc05 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-family: var(--font-primary);
     max-width: 400px;
     padding: 12px
@@ -18363,7 +18363,7 @@ html .invoiceCancelRow__968a4 {
 }
 
 .debugButton_bc4a3e {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin: 0;
     min-height: auto;
     min-width: auto;
@@ -19298,4 +19298,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=d94d05042204bc08.css.map*/
+/*# sourceMappingURL=bdadccfa1fa1cae4.css.map*/

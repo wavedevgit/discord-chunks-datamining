@@ -29,7 +29,7 @@ function h(e) {
           className: p.icon
         }), (0, i.jsx)(a.Text, {
           variant: "text-lg/normal",
-          color: "text-normal",
+          color: "text-default",
           children: g.intl.string(g.t["13/7kZ"])
         })]
       })

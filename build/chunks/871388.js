@@ -32,7 +32,7 @@ function o(e, t, n) {
     }({
       highlightHook: e => (0, r.jsx)(A.Text, {
         variant: "text-md/normal",
-        color: "text-normal",
+        color: "text-default",
         style: {
           display: "inline"
         },

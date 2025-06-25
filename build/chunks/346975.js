@@ -965,7 +965,7 @@ function eR(e) {
           className: ef.matchingPosts,
           children: [(0, r.jsx)(x.X6q, {
             variant: "text-xs/normal",
-            color: "text-normal",
+            color: "text-default",
             children: v ? eg.intl.string(eg.t["/9i3qq"]) : 0 === O ? eg.intl.string(eg.t.DbgHxs) : eg.intl.formatToPlainString(eg.t["tBz/8f"], {
               numPosts: O,
               query: I
@@ -993,14 +993,14 @@ function eR(e) {
             className: ef.keyboardShortcut
           }), (0, r.jsx)(x.Text, {
             variant: "text-xs/normal",
-            color: "text-normal",
+            color: "text-default",
             children: "+"
           }), (0, r.jsx)(x.M2$, {
             shortcut: "ENTER",
             className: ef.keyboardShortcut
           }), (0, r.jsx)(x.Text, {
             variant: "text-xs/normal",
-            color: "text-normal",
+            color: "text-default",
             children: eg.intl.string(eg.t.ZvJ0ys)
           })]
         }) : (0, r.jsxs)("div", {
@@ -1013,7 +1013,7 @@ function eR(e) {
             className: ef.warnIcon
           }), (0, r.jsx)(x.Text, {
             variant: "text-xs/normal",
-            color: "text-normal",
+            color: "text-default",
             children: eg.intl.string(eg.t.iyzwnJ)
           })]
         }) : null]

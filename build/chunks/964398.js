@@ -1,6 +1,6 @@
 /** Chunk was on 40814 **/
 n.d(t, {
-  Z: () => O
+  Z: () => y
 }), n(388685), n(415506);
 var r = n(255367),
   l = n(73800),
@@ -100,16 +100,16 @@ let g = (e, t) => {
       y: Math.max(l * Math.sin(2 * Math.PI * r / 360), 0)
     }
   },
-  O = l.memo(function(e) {
+  y = l.memo(function(e) {
     let {
       wheelWidth: t,
       wheelHeight: n,
-      itemWidth: O,
-      itemHeight: y,
+      itemWidth: y,
+      itemHeight: O,
       showDeadZoneIndicator: b,
       activeItem: N,
-      onItemSelect: m,
-      onItemAction: v,
+      onItemSelect: v,
+      onItemAction: m,
       interactive: x = !0,
       onClose: E,
       children: C
@@ -119,10 +119,10 @@ let g = (e, t) => {
     }), w = Math.abs(Z.x) + Math.abs(Z.y) > 0, R = l.useMemo(() => o().chunk(C, h), [C]), D = l.useCallback((e, t) => {
       null == T.current[P] ? T.current[P] = [] : T.current[P][t] = e
     }, [P]), U = l.useCallback((e, t) => {
-      S.current = t, m(h * e + t)
-    }, [m]), k = l.useCallback(() => {
-      S.current = null, m(null)
-    }, [m]), M = l.useCallback(e => {
+      S.current = t, v(h * e + t)
+    }, [v]), k = l.useCallback(() => {
+      S.current = null, v(null)
+    }, [v]), M = l.useCallback(e => {
       k(), j.current = e
     }, [k]), L = l.useCallback((e, t, n) => {
       if (j.current) return void A({
@@ -141,8 +141,8 @@ let g = (e, t) => {
         y: (i ? Math.max(r.y, -o.y) : Math.min(r.y, o.y)) / 2
       })
     }, []), B = l.useCallback(e => {
-      null != S.current && (e.preventDefault(), e.stopPropagation(), null == v || v(h * P + S.current))
-    }, [v, P]), G = l.useMemo(() => (0, i.throttle)(e => {
+      null != S.current && (e.preventDefault(), e.stopPropagation(), null == m || m(h * P + S.current))
+    }, [m, P]), G = l.useMemo(() => (0, i.throttle)(e => {
       if (null == I.current) return;
       let r = I.current.getBoundingClientRect(),
         l = {
@@ -172,20 +172,20 @@ let g = (e, t) => {
     }, [x, P, R, U, k]), F = l.useMemo(() => R[P].map((e, l) => {
       let i = f[l];
       if (null == i) throw Error("Too many items supplied ".concat(C.length, " expected max of ").concat(f.length));
-      let o = p(i.x, t, O),
-        a = p(i.y, n, y);
+      let o = p(i.x, t, y),
+        a = p(i.y, n, O);
       return (0, r.jsx)("div", {
         ref: e => D(e, l),
         className: c.chatWheelItem,
         style: {
           left: o,
           top: a,
-          width: O,
-          height: y
+          width: y,
+          height: O
         },
         children: e
       }, l)
-    }), [R, P, t, O, n, y, C.length, D]);
+    }), [R, P, t, y, n, O, C.length, D]);
     return (0, r.jsx)(a.P3F, {
       className: c.chatWheelMouseInput,
       onMouseMove: G,

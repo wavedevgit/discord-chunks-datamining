@@ -11,8 +11,8 @@ var n = r(255367),
   c = r(768581),
   d = r(700785),
   m = r(764260),
-  x = r(981631),
-  u = r(135899),
+  u = r(981631),
+  x = r(135899),
   p = r(388032),
   b = r(193198);
 
@@ -51,7 +51,7 @@ function h(e) {
     })]
   })
 }
-let j = e => e.toString() === x.Plq.MENTION_EVERYONE.toString() ? p.intl.string(p.t.yCpsQ0) : (0, a.wt)(e);
+let j = e => e.toString() === u.Plq.MENTION_EVERYONE.toString() ? p.intl.string(p.t.yCpsQ0) : (0, a.wt)(e);
 
 function _(e) {
   let {
@@ -72,7 +72,7 @@ function _(e) {
           className: b.bulletWarning
         }), (0, n.jsx)(l.Text, {
           variant: "text-sm/normal",
-          color: "text-normal",
+          color: "text-default",
           children: j(e)
         })]
       }, t))
@@ -157,7 +157,7 @@ function y(e) {
   } = e, c = s.useMemo(() => {
     let e = [],
       r = [];
-    return u.$X.map(n => {
+    return x.$X.map(n => {
       d.oz(n, t) ? e.push(n) : r.push(n)
     }), {
       enabledPermissions: e,
@@ -165,11 +165,11 @@ function y(e) {
     }
   }, [t]);
   if (null == t) return null;
-  let x = async () => {
+  let u = async () => {
     var e, r;
     let n = null != t ? o.Z.getRole(t.id, t.getEveryoneRoleId()) : void 0;
     if (null == n) return;
-    let s = i.Od(n.permissions, u.mu);
+    let s = i.Od(n.permissions, x.mu);
     await (0, m.Gf)(t.id, [(e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
@@ -210,7 +210,7 @@ function y(e) {
     }), (0, n.jsx)(g, {
       permissions: c
     }), (0, n.jsx)(v, {
-      onConfirm: x,
+      onConfirm: u,
       onDismiss: () => {
         a()
       }

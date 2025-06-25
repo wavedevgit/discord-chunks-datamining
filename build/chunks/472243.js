@@ -99,7 +99,7 @@ function I(e) {
             tabularNumbers: !0,
             "aria-hidden": !0
           }, e), {
-            color: B ? "text-normal" : "text-danger",
+            color: B ? "text-default" : "text-danger",
             children: k
           }))
         })]

@@ -27,7 +27,7 @@ let h = e => {
   if (c.ZP.isBoostOnlySubscription(r) ? t = g.intl.string(g.t.Uj0md3) : null != _ && (t = c.ZP.getDisplayPremiumType(_.planId)), null == t) return null;
   let x = () => a.Z.open(m.oAB.SUBSCRIPTIONS),
     E = (null != _ ? c.ZP.getSkuIdForPlan(_.planId) : null) === u.Si.TIER_1;
-  return n = null != f ? f : b ? "always-white" : "text-normal", (0, i.jsxs)(l.Zbd, {
+  return n = null != f ? f : b ? "always-white" : "text-default", (0, i.jsxs)(l.Zbd, {
     className: s()(p.container, h, {
       [p.centerText]: b
     }),

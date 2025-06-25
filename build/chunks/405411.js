@@ -39,7 +39,7 @@ function d(e) {
           children: [s.GI, e.displayName]
         }), (0, r.jsx)(i.Text, {
           variant: "text-md/normal",
-          color: "text-normal",
+          color: "text-default",
           children: e.displayDescription
         })]
       }, e.id))

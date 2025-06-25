@@ -28,7 +28,7 @@ function m(e) {
       selected: t,
       isHovered: n
     } = e;
-    return n ? "text-primary" : t ? "text-brand" : "text-normal"
+    return n ? "text-primary" : t ? "text-brand" : "text-default"
   }({
     selected: s,
     isHovered: c

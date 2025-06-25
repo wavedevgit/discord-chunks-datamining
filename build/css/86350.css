@@ -1,6 +1,6 @@
 /**
   Module ID: 86350
-  Original File Name: 77fd07501d5435b1
+  Original File Name: e7fd68d79700942c
 **/
 .menu__43313 {
     max-height: 70vh
@@ -851,11 +851,11 @@
 }
 
 .themed_c8b06d .textLeft_c8b06d,.themed_c8b06d .textRight_c8b06d {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .themed_c8b06d .barInner_c8b06d {
-    background-color: var(--text-normal)
+    background-color: var(--text-default)
 }
 
 .singleLineContainer_c8b06d {
@@ -1192,7 +1192,7 @@
 }
 
 .activityActivityFeed__2ef49 .content__2ef49,.activityActivityFeed__2ef49 .details__2ef49 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .activityStreamPreview__2ef49 .activityName__2ef49,.activityStreamPreview__2ef49 .content__2ef49,.activityStreamPreview__2ef49 .details__2ef49,.activityStreamPreview__2ef49 .name__2ef49,.activityStreamPreview__2ef49 .nameNormal__2ef49 {
@@ -1377,7 +1377,7 @@
 }
 
 .applicationName__6da2d {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     left: 12px;
     line-height: 18px;
@@ -1436,7 +1436,7 @@
 }
 
 .watchButton__6da2d {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 @keyframes outgoing-call-pulse__07f91 {
@@ -1751,4 +1751,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=77fd07501d5435b1.css.map*/
+/*# sourceMappingURL=e7fd68d79700942c.css.map*/

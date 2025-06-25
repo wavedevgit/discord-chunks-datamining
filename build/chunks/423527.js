@@ -571,7 +571,7 @@ class ed extends(r = l.PureComponent) {
         bottom: 20,
         children: (0, i.jsx)(p.Text, {
           variant: "text-sm/normal",
-          color: "text-normal",
+          color: "text-default",
           children: er.intl.string(er.t["330TCQ"])
         })
       }), (0, i.jsxs)("div", {
@@ -857,18 +857,18 @@ function ep(e) {
     children: e
   })).otherwise(() => (0, i.jsx)(p.Text, {
     variant: "text-sm/normal",
-    color: "text-normal",
+    color: "text-default",
     children: er.intl.string(er.t.z7c4bG)
   })) : null != r && r.length > 0 && l.length > 0 ? (0, i.jsx)(p.Text, {
     variant: "text-sm/normal",
-    color: "text-normal",
+    color: "text-default",
     children: er.intl.format(er.t.nDGqqq, {
       suggestion: r,
       nameOnClick: o
     })
   }) : (0, i.jsx)(p.Text, {
     variant: "text-sm/normal",
-    color: "text-normal",
+    color: "text-default",
     children: er.intl.string(er.t.z7c4bG)
   }), (0, i.jsx)(G.Z, {
     show: u && (null == s ? void 0 : s.type) === k.K.ERROR || a,

@@ -16,8 +16,8 @@ var l = n(255367),
   h = n(626135),
   g = n(208049),
   p = n(671895),
-  y = n(586826),
-  b = n(812613),
+  b = n(586826),
+  y = n(812613),
   v = n(203437),
   x = n(710111),
   j = n(981631),
@@ -42,7 +42,7 @@ function S(e) {
     loadAudioFromFile: B,
     maxVolume: L,
     setMaxVolume: U
-  } = (0, y.p)(), [G, H] = a.useState(!1), [W, q] = a.useState(null), [V, Y] = a.useState(null), [J, X] = a.useState("ready"), [K, Q] = a.useState(S);
+  } = (0, b.p)(), [G, H] = a.useState(!1), [W, q] = a.useState(null), [V, Y] = a.useState(null), [J, X] = a.useState("ready"), [K, Q] = a.useState(S);
   async function $(e) {
     try {
       await B(null != e ? e : null), X("ready"), q(null)
@@ -94,7 +94,7 @@ function S(e) {
     ei = a.useCallback(async (e, t) => {
       X("encoding");
       try {
-        let n = await (0, b.kV)(e, t);
+        let n = await (0, y.kV)(e, t);
         return X("ready"), n
       } catch (e) {
         throw X("encoding-failed"), e
@@ -109,10 +109,10 @@ function S(e) {
         if (null == t) return;
         e = t
       }
-      let t = (0, b.Zk)(e);
+      let t = (0, y.Zk)(e);
       X("uploading");
       try {
-        await (0, b.bb)({
+        await (0, y.bb)({
           readPromise: t,
           guildId: K,
           name: Z,

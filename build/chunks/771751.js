@@ -339,7 +339,7 @@ function P(e) {
       className: i()(j.row, j.nameRow),
       children: [(0, a.jsx)(c.X6q, {
         variant: "heading-lg/semibold",
-        color: "text-normal",
+        color: "text-default",
         children: P
       }), (0, a.jsx)(c.P3F, {
         onClick: async () => {
@@ -358,7 +358,7 @@ function P(e) {
       },
       children: [(0, a.jsxs)(c.Text, {
         variant: "eyebrow",
-        color: "text-normal",
+        color: "text-default",
         children: ["Offer: ", C]
       }), m ? (0, a.jsx)(c.dz2, {
         size: "md",
@@ -376,7 +376,7 @@ function P(e) {
       },
       children: [(0, a.jsxs)(c.Text, {
         variant: "eyebrow",
-        color: "text-normal",
+        color: "text-default",
         children: ["Discount: ", T]
       }), h ? (0, a.jsx)(c.dz2, {
         size: "md",
@@ -390,7 +390,7 @@ function P(e) {
     }), (null == S ? void 0 : S.amount) != null && (0, a.jsx)("div", {
       children: (0, a.jsxs)(c.Text, {
         variant: "eyebrow",
-        color: "text-normal",
+        color: "text-default",
         children: [S.amount, "% off"]
       })
     }), (0, a.jsxs)("div", {

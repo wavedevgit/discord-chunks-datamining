@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(255367);
 n(73800);
-var r = n(120356),
-  l = n.n(r),
+var l = n(120356),
+  r = n.n(l),
   o = n(399606),
   a = n(481060),
   c = n(337682),
@@ -18,7 +18,7 @@ function p(e) {
     hideSearch: t,
     className: n
   } = e, {
-    activityUrlOverride: r,
+    activityUrlOverride: l,
     useActivityUrlOverride: p,
     filter: m
   } = (0, o.cj)([s.Z], () => ({
@@ -27,7 +27,7 @@ function p(e) {
     filter: s.Z.getFilter()
   }), []);
   return (0, i.jsxs)("div", {
-    className: l()(d.container, n),
+    className: r()(d.container, n),
     children: [(0, i.jsx)(a.XZJ, {
       type: a.XZJ.Types.INVERTED,
       value: p,
@@ -40,7 +40,7 @@ function p(e) {
       title: u.intl.string(u.t["9rnmen"]),
       children: (0, i.jsx)(a.oil, {
         disabled: !p,
-        value: null != r ? r : void 0,
+        value: null != l ? l : void 0,
         onChange: c.jS,
         placeholder: "https://localhost:3000"
       })

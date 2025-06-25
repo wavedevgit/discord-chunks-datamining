@@ -34,7 +34,7 @@ function d(e) {
           }
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
-          color: "text-normal",
+          color: "text-default",
           children: l.intl.string(l.t.C3KTQk)
         }), (0, r.jsx)(a.Z$W, {
           className: s.colorPicker,
@@ -53,7 +53,7 @@ function d(e) {
           }
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
-          color: "text-normal",
+          color: "text-default",
           children: l.intl.string(l.t["8elvy8"])
         }), (0, r.jsx)(a.Z$W, {
           className: s.colorPicker,

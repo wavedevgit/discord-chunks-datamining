@@ -1,6 +1,6 @@
 /** Chunk was on 84686 **/
 n.d(t, {
-  Ie: () => f,
+  Ie: () => m,
   mv: () => g
 }), n(388685);
 var r = n(255367);
@@ -21,11 +21,11 @@ let g = e => {
     let {
       channelId: t
     } = e;
-    return (0, r.jsx)(m, {
+    return (0, r.jsx)(f, {
       channelId: t
     })
   },
-  m = e => {
+  f = e => {
     let {
       channelId: t
     } = e, n = (0, _._d)(t), i = (0, _.K3)(t);
@@ -114,14 +114,14 @@ let g = e => {
       })]
     })
   },
-  f = e => {
+  m = e => {
     let {
       user: t,
       showStatus: n,
       speaker: o,
       channelId: s
-    } = e, _ = (0, i.e7)([h.ZP], () => h.ZP.isModerator(t.id, s)), g = (0, i.e7)([u.Z], () => u.Z.isBlocked(t.id)), m = null;
-    return n && (m = o ? b.intl.string(b.t.LqMmGx) : _ ? b.intl.string(b.t.GMZqSk) : b.intl.string(b.t.suRAp6)), (0, r.jsxs)("div", {
+    } = e, _ = (0, i.e7)([h.ZP], () => h.ZP.isModerator(t.id, s)), g = (0, i.e7)([u.Z], () => u.Z.isBlocked(t.id)), f = null;
+    return n && (f = o ? b.intl.string(b.t.LqMmGx) : _ ? b.intl.string(b.t.GMZqSk) : b.intl.string(b.t.suRAp6)), (0, r.jsxs)("div", {
       className: p.user,
       children: [(0, r.jsx)(c.Z, {
         src: t.getAvatarURL(null, 32),
@@ -151,12 +151,12 @@ let g = e => {
           className: p.username,
           children: [(0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
-            color: g ? "text-danger" : "text-normal",
+            color: g ? "text-danger" : "text-default",
             children: g ? b.intl.string(b.t["4bDptL"]) : b.intl.string(b.t.tFY5ZW)
           }), (0, r.jsxs)(l.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: ["| ", m]
+            children: ["| ", f]
           })]
         })]
       })]
@@ -172,7 +172,7 @@ let g = e => {
         let {
           user: n
         } = e;
-        return (0, r.jsx)(f, {
+        return (0, r.jsx)(m, {
           user: n,
           channelId: t
         }, n.id)

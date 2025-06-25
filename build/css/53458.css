@@ -1,9 +1,9 @@
 /**
   Module ID: 53458
-  Original File Name: 7c157f1a4cb79e82
+  Original File Name: 7ca5a5d46d07c0a5
 **/
 .containerScrollGradient_a54921 {
-    background: linear-gradient(0deg,var(--background-primary) 0,transparent 100%);
+    background: linear-gradient(0deg,var(--background-base-low) 0,transparent 100%);
     bottom: 0;
     height: 52px;
     left: 0;
@@ -20,7 +20,7 @@
 
 .wrapper__14403 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,7 +148,7 @@
 
 .footer__3564f {
     align-self: stretch;
-    border-top: 1px solid var(--background-modifier-accent)
+    border-top: 1px solid var(--border-subtle)
 }
 
 .hoverCard__26e8b {
@@ -163,7 +163,7 @@
 
 .container__62119 {
     background-color: var(--background-secondary-alt);
-    border: 1px solid var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     flex-direction: column;
     -webkit-user-select: none;
@@ -222,7 +222,7 @@
 }
 
 .benefits__62119 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-base-lower);
     flex-grow: 1;
     padding: 16px
 }
@@ -272,7 +272,7 @@
 .benefitsSummary__62119 {
     align-items: center;
     align-self: stretch;
-    background: var(--background-tertiary);
+    background: var(--background-base-lowest);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -379,4 +379,4 @@
     padding: 0 var(--spacing-16)
 }
 
-/*# sourceMappingURL=7c157f1a4cb79e82.css.map*/
+/*# sourceMappingURL=7ca5a5d46d07c0a5.css.map*/

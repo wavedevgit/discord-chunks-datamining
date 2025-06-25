@@ -1,6 +1,6 @@
 /**
   Module ID: 6850
-  Original File Name: ac643f6e99b19376
+  Original File Name: 83e3da2b55dc06c6
 **/
 .searchContainer__6ae25 {
     position: relative
@@ -74,7 +74,7 @@
 }
 
 .rowLabel__6ae25 {
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     padding: 4px;
     width: -webkit-fit-content;
@@ -1032,7 +1032,7 @@
 
 .memberRowContainer__71c22 td {
     background-color: transparent;
-    color: var(--text-normal);
+    color: var(--text-default);
     font-family: var(--font-primary);
     font-weight: var(--font-weight-medium);
     padding: var(--space-xs);
@@ -1450,7 +1450,7 @@
 }
 
 .labelText_c2c6a6 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .labelText_c2c6a6.focused_c2c6a6 {
@@ -2331,7 +2331,7 @@
 }
 
 .pageLabel_e8f197 strong {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-weight: 400
 }
 
@@ -2350,7 +2350,7 @@
 
 .role_bad290 {
     border: 1px solid var(--background-accent);
-    color: var(--text-normal);
+    color: var(--text-default);
     margin: 4px 4px 4px 0
 }
 
@@ -2438,4 +2438,4 @@
     margin-left: 4px
 }
 
-/*# sourceMappingURL=ac643f6e99b19376.css.map*/
+/*# sourceMappingURL=83e3da2b55dc06c6.css.map*/

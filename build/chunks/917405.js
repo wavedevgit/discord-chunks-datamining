@@ -24,7 +24,7 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function O(e) {
   }
   return e
 }
-let y = {
+let O = {
     [h.IE4.UNKNOWN]: a.ua7.Colors.BLACK,
     [h.IE4.BAD]: a.ua7.Colors.RED,
     [h.IE4.AVERAGE]: a.ua7.Colors.YELLOW,
@@ -53,7 +53,7 @@ let y = {
     [h.IE4.BAD]: p.rtcConnectionQualityBad,
     [h.IE4.UNKNOWN]: null
   };
-class m extends l.PureComponent {
+class v extends l.PureComponent {
   renderPopoutTarget(e) {
     let t = this.props.channelId;
     return null == t ? e({}) : (0, r.jsx)(a.yRy, {
@@ -105,8 +105,8 @@ class m extends l.PureComponent {
     } = this.props;
     return i === h.hes.RTC_CONNECTED && (e = (0, r.jsx)(a.ua7, {
       text: t !== h.IE4.UNKNOWN && null != l ? "".concat(l.toFixed(0), " ms") : null,
-      color: y[t],
-      children: e => (0, r.jsx)(v, O({
+      color: O[t],
+      children: e => (0, r.jsx)(m, y({
         quality: t,
         smallPing: !c && n,
         largePing: c
@@ -125,7 +125,7 @@ class m extends l.PureComponent {
   constructor(...e) {
     super(...e), g(this, "statusButtonRef", l.createRef()), g(this, "renderPopout", e => t => {
       var n, l;
-      return (0, r.jsx)(d.Z, (n = O({}, t), l = l = {
+      return (0, r.jsx)(d.Z, (n = y({}, t), l = l = {
         channelId: e
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
@@ -141,7 +141,7 @@ class m extends l.PureComponent {
   }
 }
 
-function v(e) {
+function m(e) {
   var {
     quality: t,
     smallPing: n,
@@ -167,11 +167,11 @@ function v(e) {
     [h.IE4.BAD]: a.mbS,
     [h.IE4.UNKNOWN]: a._3e
   } [t];
-  return (0, r.jsx)(s, O({
+  return (0, r.jsx)(s, y({
     className: o()(p.ping, {
       [p.smallPing]: n,
       [p.largePing]: l
     })
   }, i))
 }
-let x = m
+let x = v

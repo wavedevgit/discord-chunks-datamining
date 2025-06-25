@@ -1,6 +1,6 @@
 /**
   Module ID: 50461
-  Original File Name: 2a6c8df9ff9d167e
+  Original File Name: f86cca6d4ea7d959
 **/
 .root__66e7e {
     background: var(--background-base-lower);
@@ -139,7 +139,7 @@
 }
 
 .ratingBody__6c12c {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-top: var(--space-8)
 }
 
@@ -177,11 +177,11 @@
 }
 
 .header__6c12c {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .marginBottom16__6c12c {
     margin-bottom: var(--space-16)
 }
 
-/*# sourceMappingURL=2a6c8df9ff9d167e.css.map*/
+/*# sourceMappingURL=f86cca6d4ea7d959.css.map*/

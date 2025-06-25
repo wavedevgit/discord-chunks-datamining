@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: d743fe21237b0970
+  Original File Name: a467d827f68387fb
 **/
 .titleBar__421ed {
     z-index: 3001;
@@ -957,7 +957,7 @@
 }
 
 .username_e73f2a {
-    color: var(--text-normal);
+    color: var(--text-default);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -1794,7 +1794,7 @@
 }
 
 .popoutText_effb26 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     line-height: 18px;
     -webkit-user-select: text;
@@ -2077,7 +2077,7 @@
 }
 
 .rtcConnectionStatusConnecting__06d62 {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .rtcConnectionStatusError__06d62 {
@@ -2089,7 +2089,7 @@
 }
 
 .rtcConnectionQualityAverage__06d62 .pingForeground__06d62:not(:last-child) {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .rtcConnectionQualityBad__06d62 .pingForeground__06d62:first-child {
@@ -2142,7 +2142,7 @@
 .acronym__2894c {
     align-items: center;
     background-color: var(--background-mod-strong);
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-weight: var(--font-weight-medium);
     justify-content: center;
@@ -2777,7 +2777,7 @@
 .streamInfoContainer__0f85c {
     background-color: rgba(0,0,0,.5);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-direction: column;
     font-size: 14px;
@@ -2848,7 +2848,7 @@
 }
 
 .subheader_ecf309 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     line-height: 18px;
     margin-top: 4px
@@ -3326,4 +3326,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=d743fe21237b0970.css.map*/
+/*# sourceMappingURL=a467d827f68387fb.css.map*/

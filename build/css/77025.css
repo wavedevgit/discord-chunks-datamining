@@ -1,6 +1,6 @@
 /**
   Module ID: 77025
-  Original File Name: 368c1efaacf54b00
+  Original File Name: 9551555ddfc5d033
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -88,7 +88,7 @@
 }
 
 .message_fcf29c {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     font-weight: var(--font-weight-medium);
     line-height: 20px;
@@ -691,7 +691,7 @@ div:has(>div>.container_b962dc) {
 }
 
 .rejectionReason_b962dc {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 @media (max-width:880px) {
@@ -742,4 +742,4 @@ div:has(>div>.container_b962dc) {
     z-index: 0
 }
 
-/*# sourceMappingURL=368c1efaacf54b00.css.map*/
+/*# sourceMappingURL=9551555ddfc5d033.css.map*/

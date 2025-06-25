@@ -181,7 +181,7 @@ function Z(e, t, n) {
         color: "currentColor"
       }), (0, r.jsx)(u.Text, {
         className: k.stageListenerCount,
-        color: "text-normal",
+        color: "text-default",
         variant: "text-xs/normal",
         children: n
       })]
@@ -256,7 +256,7 @@ function K(e) {
   } = e;
   return (0, r.jsx)(u.Text, {
     className: k.viewAsRolesWarning,
-    color: "text-normal",
+    color: "text-default",
     variant: "text-xs/normal",
     children: W(t)
   })
@@ -294,7 +294,7 @@ function z(e) {
       children: x.intl.string(x.t["2n0/Fh"])
     }) : null, d ? (0, r.jsx)(u.Text, {
       className: k.viewAsRolesWarning,
-      color: "text-normal",
+      color: "text-default",
       variant: "text-xs/normal",
       children: x.intl.string(x.t["5LwN8/"])
     }) : f]

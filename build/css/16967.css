@@ -1,6 +1,6 @@
 /**
   Module ID: 16967
-  Original File Name: afbb12e8a0727749
+  Original File Name: 02afc53991946f19
 **/
 .closeButton__47998 {
     position: absolute;
@@ -60,7 +60,7 @@
 }
 
 .buttonBody__47998 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 1.25;
     text-align: left
@@ -130,7 +130,7 @@
 }
 
 .modal__47998 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .images-light .conflictUploadArt__47998 {
@@ -196,7 +196,7 @@
 .acronym__2894c {
     align-items: center;
     background-color: var(--background-mod-strong);
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-weight: var(--font-weight-medium);
     justify-content: center;
@@ -342,7 +342,7 @@
 }
 
 .warningIcon__62280 {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .noResults__62280 {
@@ -427,7 +427,7 @@
 }
 
 .forwardPreviewMessage__68334.hasAttachments__68334 {
-    color: var(--text-normal);
+    color: var(--text-default);
     -webkit-line-clamp: 1
 }
 
@@ -478,4 +478,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=afbb12e8a0727749.css.map*/
+/*# sourceMappingURL=02afc53991946f19.css.map*/

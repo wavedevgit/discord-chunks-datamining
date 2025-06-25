@@ -224,7 +224,7 @@ let D = i.memo(function(e) {
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(h.Text, {
         variant: "text-xs/semibold",
-        color: c ? "text-danger" : "text-positive",
+        color: c ? "text-danger" : "text-feedback-positive",
         className: w.messageState,
         children: u
       }), (0, r.jsxs)("div", {

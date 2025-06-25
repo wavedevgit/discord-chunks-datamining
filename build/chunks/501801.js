@@ -483,11 +483,11 @@ function b(e) {
               color: function(e) {
                 switch (e) {
                   case h.vB8.CREATE:
-                    return "text-positive";
+                    return "text-feedback-positive";
                   case h.vB8.DELETE:
                     return "status-danger";
                   default:
-                    return "text-warning"
+                    return "text-feedback-warning"
                 }
               }(o.actionType),
               children: [a < 10 ? "0".concat(a) : a, (0, r.jsx)("span", {

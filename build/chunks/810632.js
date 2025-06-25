@@ -12,18 +12,18 @@ var i = n(255367),
   u = n(131951),
   d = n(944486),
   p = n(594174),
-  h = n(145597),
-  f = n(981631),
+  f = n(145597),
+  h = n(981631),
   m = n(388032);
 
 function g(e, t) {
   let g = (0, o.e7)([d.Z], () => d.Z.getVoiceChannelId()),
     y = (0, o.e7)([c.Z], () => c.Z.getChannel(g), [g]),
     O = (0, o.e7)([p.default], () => p.default.getCurrentUser()),
-    v = null == y ? void 0 : y.getGuildId(),
-    b = (0, o.e7)([u.Z], () => (0, a.Z)(u.Z));
+    b = null == y ? void 0 : y.getGuildId(),
+    v = (0, o.e7)([u.Z], () => (0, a.Z)(u.Z));
   return r.useCallback(async () => {
-    if (!b || null == g) return;
+    if (!v || null == g) return;
     let [r] = await (0, s.Z)(e);
     if (!r) {
       if (null == O) return void(0, l.showToast)((0, l.createToast)(m.intl.string(m.t.OKnWyc), l.ToastType.FAILURE));
@@ -51,10 +51,10 @@ function g(e, t) {
             }
             return e
           }({}, t), r = r = {
-            sourcePID: (0, h.getPID)(),
+            sourcePID: (0, f.getPID)(),
             selectSource: !1,
-            guildId: v,
-            analyticsLocation: f.Sbl.UNLOCKED_OVERLAY
+            guildId: b,
+            analyticsLocation: h.Sbl.UNLOCKED_OVERLAY
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -70,5 +70,5 @@ function g(e, t) {
         contextKey: null != t ? (0, l.VnL)(t) : void 0
       })
     }
-  }, [b, v, g, t, e, O])
+  }, [v, b, g, t, e, O])
 }

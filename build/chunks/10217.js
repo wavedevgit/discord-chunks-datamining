@@ -122,12 +122,12 @@ let L = function(e) {
           onFocus: A
         }), (0, r.jsx)(p.Text, {
           className: E.clipMetadata,
-          color: "text-normal",
+          color: "text-default",
           variant: "text-md/medium",
           children: o.applicationName
         }), (0, r.jsx)(p.Text, {
           className: E.clipMetadata,
-          color: "text-normal",
+          color: "text-default",
           variant: "text-md/medium",
           children: Y
         }), (0, r.jsxs)("div", {
@@ -248,7 +248,7 @@ function T(e) {
       children: N.intl.string(N.t["x+/nmJ"])
     }) : (0, r.jsx)(p.X6q, {
       className: E.clipTitle,
-      color: "text-normal",
+      color: "text-default",
       variant: "heading-lg/medium",
       children: n.name
     }), a && (0, r.jsx)(p.vdY, {

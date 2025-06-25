@@ -1,6 +1,6 @@
 /**
   Module ID: 79764
-  Original File Name: ce803f731623bffb
+  Original File Name: 02b2f1ad3fbe8515
 **/
 .iconContainer__98cf7 {
     filter: saturate(var(--saturation-factor,1));
@@ -33,7 +33,7 @@
 }
 
 .backButton_b917ac {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .subtitle_b917ac {
@@ -313,7 +313,7 @@
 }
 
 .backButton__1f657 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .container__92910 {
@@ -329,4 +329,4 @@
     }
 }
 
-/*# sourceMappingURL=ce803f731623bffb.css.map*/
+/*# sourceMappingURL=02b2f1ad3fbe8515.css.map*/

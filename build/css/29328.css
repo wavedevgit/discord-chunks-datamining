@@ -1,6 +1,6 @@
 /**
   Module ID: 29328
-  Original File Name: 6fb6106d7d9f16c1
+  Original File Name: abbde2533107db5e
 **/
 .icon__2894c {
     display: block;
@@ -29,7 +29,7 @@
 .acronym__2894c {
     align-items: center;
     background-color: var(--background-mod-strong);
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-weight: var(--font-weight-medium);
     justify-content: center;
@@ -586,4 +586,4 @@
     background-color: var(--background-base-lower)
 }
 
-/*# sourceMappingURL=6fb6106d7d9f16c1.css.map*/
+/*# sourceMappingURL=abbde2533107db5e.css.map*/

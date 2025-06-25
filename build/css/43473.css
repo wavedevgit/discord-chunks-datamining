@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: e4f2d84f59dfb117
+  Original File Name: 9fed5f02234a6b30
 **/
 .scroller__95bea {
     display: flex;
@@ -40,7 +40,7 @@
     background-color: transparent;
     border: none;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 12px;
     line-height: 14px;
     max-height: 88px;
@@ -91,7 +91,7 @@
 }
 
 .root_af8192 {
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
@@ -439,7 +439,7 @@
 .row__89036 {
     align-items: center;
     border-radius: 4px;
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: pointer;
     display: flex;
     font-weight: var(--font-weight-medium);
@@ -481,7 +481,7 @@
 .row__0a95c {
     align-items: center;
     border-radius: 4px;
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: pointer;
     display: flex;
     font-weight: var(--font-weight-medium);
@@ -1026,7 +1026,7 @@
 }
 
 .attachment_fc8177,.avatar_fc8177,.blob_fc8177 {
-    background-color: var(--text-normal)
+    background-color: var(--text-default)
 }
 
 .avatar_fc8177 {
@@ -1369,4 +1369,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=e4f2d84f59dfb117.css.map*/
+/*# sourceMappingURL=9fed5f02234a6b30.css.map*/

@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => v
 }), n(388685), n(482853);
 var i = n(255367),
-  r = n(73800),
-  l = n(481060),
+  l = n(73800),
+  r = n(481060),
   o = n(100527),
   a = n(367907),
   c = n(906732),
@@ -23,29 +23,29 @@ let _ = {
   C = {
     height: f.lv
   },
-  v = r.memo(r.forwardRef(function(e, t) {
+  v = l.memo(l.forwardRef(function(e, t) {
     let {
       context: n,
-      entrypoint: l,
+      entrypoint: r,
       initHistory: u
     } = e, {
       analyticsLocations: d
     } = (0, c.ZP)(o.Z.APP_LAUNCHER);
-    return r.useEffect(() => {
+    return l.useEffect(() => {
       (0, a.yw)(h.rMx.APPLICATION_COMMAND_TOP_OF_FUNNEL, {
-        source: l,
+        source: r,
         location: "app_launcher"
       })
-    }, [l]), r.useEffect(() => {
+    }, [r]), l.useEffect(() => {
       let e = Date.now();
       return () => {
         (0, a.yw)(h.rMx.APP_LAUNCHER_CLOSED, {
           reason: s.Z.closeReason(),
           time_spent: Date.now() - e,
-          source: l
+          source: r
         })
       }
-    }, [l]), (0, i.jsx)("div", {
+    }, [r]), (0, i.jsx)("div", {
       className: b.drawerSizingWrapper,
       ref: t,
       style: _,
@@ -57,7 +57,7 @@ let _ = {
             initHistory: u,
             children: (0, i.jsx)(y, {
               context: n,
-              entrypoint: l
+              entrypoint: r
             })
           })
         })
@@ -69,11 +69,11 @@ function x(e) {
   let {
     initHistory: t,
     children: n
-  } = e, [l, o] = r.useState(null != t ? t : [{
+  } = e, [r, o] = l.useState(null != t ? t : [{
     type: u.gc.HOME
-  }]), [a, c] = r.useState({}), s = l[l.length - 1], [d, p] = r.useState(!1), m = r.useCallback(e => {
+  }]), [a, c] = l.useState({}), s = r[r.length - 1], [d, p] = l.useState(!1), m = l.useCallback(e => {
     o(t => [...t, e])
-  }, []), f = r.useCallback(() => {
+  }, []), f = l.useCallback(() => {
     let e = null;
     o(t => t.length <= 1 ? t : (e = t[t.length - 1], t.slice(0, -1))), c(t => {
       var n, i;
@@ -107,13 +107,13 @@ function x(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n)
     })
-  }, []), h = r.useCallback(e => {
+  }, []), h = l.useCallback(e => {
     var t;
-    return null != (t = l.findLast(t => t.type === e)) ? t : a[e]
-  }, [l, a]);
+    return null != (t = r.findLast(t => t.type === e)) ? t : a[e]
+  }, [r, a]);
   return (0, i.jsx)(u.uX.Provider, {
     value: {
-      history: l,
+      history: r,
       discard: a,
       currentView: s,
       pushHistory: m,
@@ -130,20 +130,20 @@ function y(e) {
   let {
     context: t,
     entrypoint: n
-  } = e, [o, a] = r.useState(""), {
+  } = e, [o, a] = l.useState(""), {
     setScroller: c,
     isCloseToBottom: s
   } = function(e) {
-    let [t, n] = r.useState(null), [i, l] = r.useState(!1), o = r.useRef(0);
-    return r.useEffect(() => {
+    let [t, n] = l.useState(null), [i, r] = l.useState(!1), o = l.useRef(0);
+    return l.useEffect(() => {
       null == t || t.scrollTo(0, 0)
-    }, [t, e]), r.useEffect(() => {
+    }, [t, e]), l.useEffect(() => {
       if (null != t) return t.scrollTo(0, o.current), t.addEventListener("scroll", e), () => {
         t.removeEventListener("scroll", e, !1)
       };
 
       function e() {
-        null != t && (o.current = t.scrollTop, l(t.scrollHeight - (t.scrollTop + t.clientHeight) < .5 * f.K7))
+        null != t && (o.current = t.scrollTop, r(t.scrollHeight - (t.scrollTop + t.clientHeight) < .5 * f.K7))
       }
     }, [t]), {
       setScroller: n,
@@ -154,20 +154,20 @@ function y(e) {
     getMostRecentHistoryItemByType: _,
     setSlideReady: v
   } = (0, u.hH)();
-  r.useEffect(() => {
+  l.useEffect(() => {
     v(!1)
   }, [null == h ? void 0 : h.type, v]);
-  let x = r.useCallback(() => {
+  let x = l.useCallback(() => {
     v(!0)
   }, [v]);
   if (null == h) return null;
   let y = _(u.gc.LIST),
     g = _(u.gc.APPLICATION);
-  return (0, i.jsxs)(l.MyZ, {
+  return (0, i.jsxs)(r.MyZ, {
     activeSlide: h.type,
     width: f.Gy,
     onSlideReady: x,
-    children: [(0, i.jsx)(l.Mi4, {
+    children: [(0, i.jsx)(r.Mi4, {
       id: u.gc.HOME,
       children: (0, i.jsx)("div", {
         className: b.slideContent,
@@ -181,7 +181,7 @@ function y(e) {
           setSearchQuery: a
         })
       })
-    }), (0, i.jsx)(l.Mi4, {
+    }), (0, i.jsx)(r.Mi4, {
       id: u.gc.LIST,
       children: (0, i.jsx)("div", {
         className: b.slideContent,
@@ -196,7 +196,7 @@ function y(e) {
           sectionOverallPosition: y.sectionOverallPosition
         })
       })
-    }), (0, i.jsx)(l.Mi4, {
+    }), (0, i.jsx)(r.Mi4, {
       id: u.gc.APPLICATION,
       children: (0, i.jsx)("div", {
         className: b.slideContent,

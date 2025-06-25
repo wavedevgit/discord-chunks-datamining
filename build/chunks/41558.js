@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => u
 });
-var i, r = n(255367),
-  l = n(73800),
+var i, l = n(255367),
+  r = n(73800),
   o = n(481060),
   a = n(388032),
   c = n(780775),
@@ -15,19 +15,19 @@ function u(e) {
     buttonType: n,
     onClickViewButton: i
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, l.jsxs)("div", {
     className: c.header,
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, l.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "header-primary",
       children: t
-    }), null != n && null != i && (0, r.jsx)(o.P3F, {
+    }), null != n && null != i && (0, l.jsx)(o.P3F, {
       className: c.viewMore,
       onClick: i,
       "aria-label": a.intl.formatToPlainString(a.t["bj/2kZ"], {
         title: t
       }),
-      children: (0, r.jsx)(o.Text, {
+      children: (0, l.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-brand",
         children: 0 === n ? a.intl.format(a.t.gVw57u, {}) : a.intl.string(a.t.nPGLFR)
@@ -36,13 +36,13 @@ function u(e) {
   })
 }
 u.buttonTypes = s, u.Loading = function() {
-  let e = l.useMemo(() => ({
+  let e = r.useMemo(() => ({
     width: "".concat(10 + 20 * Math.random(), "%")
   }), []);
-  return (0, r.jsx)("div", {
+  return (0, l.jsx)("div", {
     className: c.loadingHeader,
     style: e,
-    children: (0, r.jsx)(o.Text, {
+    children: (0, l.jsx)(o.Text, {
       className: c.hidden,
       variant: "text-md/medium",
       color: "header-primary",

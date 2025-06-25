@@ -1,6 +1,6 @@
 /**
   Module ID: 68720
-  Original File Name: bdcfd84ceba807b4
+  Original File Name: cc2f9b7d31b6a40f
 **/
 .errors__7962e {
     display: flex;
@@ -29,7 +29,7 @@
 }
 
 .title__7962e {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 24px;
     margin-bottom: 8px;
     text-transform: none
@@ -40,7 +40,7 @@
 }
 
 .fileName__7962e {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     margin-bottom: 4px;
     max-width: 256px;
@@ -66,4 +66,4 @@
     margin-left: auto
 }
 
-/*# sourceMappingURL=bdcfd84ceba807b4.css.map*/
+/*# sourceMappingURL=cc2f9b7d31b6a40f.css.map*/

@@ -42,7 +42,7 @@ function y(e) {
   return y ? T = (0, s.jsx)(c.Text, {
     variant: "text-sm/semibold",
     className: b.hintText,
-    color: "text-positive",
+    color: "text-feedback-positive",
     children: O.intl.string(O.t.seV8ys)
   }) : S && (T = (0, s.jsx)(c.Text, {
     variant: "text-sm/semibold",

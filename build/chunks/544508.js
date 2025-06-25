@@ -253,7 +253,7 @@ let j = i.forwardRef(function(e, t) {
           variant: "heading-xl/bold",
           children: f.ZP.getName(r)
         }), (0, n.jsx)(c.X6q, {
-          color: "text-normal",
+          color: "text-default",
           variant: "heading-lg/medium",
           children: r.username
         }), (0, n.jsx)(c.Text, {

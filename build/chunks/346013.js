@@ -157,7 +157,7 @@ function M(e) {
         className: R.descriptionHeader,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-md/semibold",
-          color: "text-normal",
+          color: "text-default",
           className: R.descriptionHeaderText,
           children: V.title
         }), (0, r.jsx)(u.Text, {

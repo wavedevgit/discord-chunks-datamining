@@ -578,7 +578,7 @@ class e8 extends(r = l.Component) {
       },
       children: [(0, i.jsx)(p.Text, {
         variant: "text-md/normal",
-        color: "text-normal",
+        color: "text-default",
         className: eq.confirmText,
         children: eY.intl.string(eY.t["vXZ+Fh"])
       }), (0, i.jsx)(p.Text, {
@@ -615,7 +615,7 @@ class e8 extends(r = l.Component) {
       },
       children: (0, i.jsx)(p.Text, {
         variant: "text-md/normal",
-        color: "text-normal",
+        color: "text-default",
         className: eq.confirmText,
         children: eY.intl.string(eY.t.faHmOz)
       })

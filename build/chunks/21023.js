@@ -19,7 +19,7 @@ let m = e => {
       variant: s
     } = e;
     return (0, i.jsxs)(r.Text, {
-      color: "text-normal",
+      color: "text-default",
       variant: null != s ? s : "text-sm/normal",
       children: [t, " ", n]
     })

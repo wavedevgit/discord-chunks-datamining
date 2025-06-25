@@ -1,6 +1,6 @@
 /**
   Module ID: 71879
-  Original File Name: 518e2408b63830e8
+  Original File Name: 8a0b2e85bf5a23bb
 **/
 .obscuredIcon__43090 {
     height: 32px;
@@ -268,7 +268,7 @@
 }
 
 .messageCountText_faa96b {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     font-weight: var(--font-weight-medium)
 }
@@ -622,7 +622,7 @@
 
 .author_c6ad88 {
     align-content: center;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-direction: row;
     gap: 4px
@@ -1468,7 +1468,7 @@
 }
 
 .keyboardShortcut_f369db.key_f369db {
-    color: var(--text-normal);
+    color: var(--text-default);
     padding-left: 4px;
     padding-right: 4px
 }
@@ -2445,7 +2445,7 @@
 
 .author__9a337 {
     align-content: center;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-direction: row;
     gap: 4px
@@ -2623,4 +2623,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=518e2408b63830e8.css.map*/
+/*# sourceMappingURL=8a0b2e85bf5a23bb.css.map*/

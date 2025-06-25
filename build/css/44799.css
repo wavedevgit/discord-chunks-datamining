@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 6a58f2a2fe0c0ac0
+  Original File Name: 63afccc42e08020c
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -378,7 +378,7 @@
     border-radius: var(--radius-sm);
     border-width: 1px;
     box-shadow: var(--shadow-low);
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .boostButton__58c46:hover {
@@ -657,4 +657,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=6a58f2a2fe0c0ac0.css.map*/
+/*# sourceMappingURL=63afccc42e08020c.css.map*/

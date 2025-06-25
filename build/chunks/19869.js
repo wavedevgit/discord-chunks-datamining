@@ -79,7 +79,7 @@ function N() {
           children: "Click the button below to open the Balance Widget Earned Orbs Coachmark in the shop page."
         }), (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
-          color: "info-help-text",
+          color: "text-feedback-info",
           style: {
             marginBottom: "8px"
           },
@@ -194,7 +194,7 @@ function I() {
         onChange: e => t(e)
       }), (0, i.jsx)(l.Text, {
         variant: "text-md/normal",
-        color: "info-help-text",
+        color: "text-feedback-info",
         children: "The Orb Checkout Modal will open with the orb price of the product, if it exists"
       }), (0, i.jsx)(s.zx, {
         onClick: () => {
@@ -293,7 +293,7 @@ function y() {
       direction: "vertical",
       children: [(0, i.jsx)(l.Text, {
         variant: "text-md/normal",
-        color: "info-help-text",
+        color: "text-feedback-info",
         style: {
           marginBottom: "8px"
         },

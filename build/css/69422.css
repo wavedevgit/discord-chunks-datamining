@@ -1,6 +1,6 @@
 /**
   Module ID: 69422
-  Original File Name: 4690f843b9a310d7
+  Original File Name: 77f3566aed58a0c2
 **/
 .card__594f1,.spacing__594f1 {
     margin-bottom: 20px
@@ -118,7 +118,7 @@
     background-color: transparent;
     border: none;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     flex-grow: 1;
     font-size: 16px;
     height: 40px;
@@ -152,7 +152,7 @@
 }
 
 .phoneVerificationModal_db41ea .description_db41ea {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     text-align: center
@@ -200,4 +200,4 @@
     color: var(--text-muted-on-default)
 }
 
-/*# sourceMappingURL=4690f843b9a310d7.css.map*/
+/*# sourceMappingURL=77f3566aed58a0c2.css.map*/

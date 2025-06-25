@@ -209,7 +209,7 @@ function M(n) {
       children: m.intl.string(m.t["6EcIlJ"])
     }), (0, l.jsx)(o.Text, {
       variant: "text-md/normal",
-      color: "text-normal",
+      color: "text-default",
       className: E()(p.subtitle, p.contentPadding),
       children: m.intl.string(m.t.Ey7mOT)
     }), (0, l.jsx)(o.E1j, {

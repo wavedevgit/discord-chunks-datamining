@@ -32,7 +32,7 @@ function d(e) {
     return null != e && e.elevated && l.ZP.canShowAdminWarning
   }) ? (0, i.jsx)(o.Text, {
     variant: "text-xxs/semibold",
-    color: d ? "text-warning" : "text-muted",
+    color: d ? "text-feedback-warning" : "text-muted",
     children: c.intl.string(c.t.PIeSHB)
   }) : p ? (0, i.jsx)(i.Fragment, {
     children: c.intl.format(n, {

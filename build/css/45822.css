@@ -1,6 +1,6 @@
 /**
   Module ID: 45822
-  Original File Name: 631aecaff33c115b
+  Original File Name: afe4b67ae8ab78bc
 **/
 .modalRoot__7169d {
     height: 478px
@@ -107,7 +107,7 @@
 }
 
 .sectionTitle_ac72c6 {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-bottom: 8px
 }
 
@@ -147,7 +147,7 @@
 }
 
 .inputPrefix_ac72c6 {
-    color: var(--text-normal);
+    color: var(--text-default);
     left: 8px;
     position: absolute;
     top: 14px
@@ -235,7 +235,7 @@
 }
 
 .channelNameNote_ac72c6 strong {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
-/*# sourceMappingURL=631aecaff33c115b.css.map*/
+/*# sourceMappingURL=afe4b67ae8ab78bc.css.map*/

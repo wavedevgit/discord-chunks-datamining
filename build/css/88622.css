@@ -1,12 +1,12 @@
 /**
   Module ID: 88622
-  Original File Name: a2a88a4f90fcf408
+  Original File Name: bd503e696163db75
 **/
 .wrapper_b76891 {
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     gap: 8px;
     margin-bottom: 8px;
@@ -839,7 +839,7 @@
 }
 
 .description__956c6 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 12px;
     line-height: 16px
 }
@@ -1431,7 +1431,7 @@
 }
 
 .warningCircle_de2d78 {
-    color: var(--text-warning);
+    color: var(--text-feedback-warning);
     margin-right: 4px
 }
 
@@ -1484,7 +1484,7 @@
 }
 
 .icon__54ab7 {
-    color: var(--text-warning);
+    color: var(--text-feedback-warning);
     display: inline-block;
     margin-right: 6px
 }
@@ -2432,7 +2432,7 @@
 }
 
 .errorMessage__4169d {
-    color: var(--text-normal);
+    color: var(--text-default);
     text-align: left;
     -webkit-user-select: text;
     -moz-user-select: text;
@@ -2540,4 +2540,4 @@
     padding-top: 10px
 }
 
-/*# sourceMappingURL=a2a88a4f90fcf408.css.map*/
+/*# sourceMappingURL=bd503e696163db75.css.map*/

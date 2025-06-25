@@ -1,6 +1,6 @@
 /**
   Module ID: 70657
-  Original File Name: 6abbc0f0d0fd162e
+  Original File Name: e41d87a9b4c0c361
 **/
 .container__270b2 {
     flex-direction: row;
@@ -1045,7 +1045,7 @@
 .listRow__60626 {
     align-items: center;
     border-radius: 4px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     line-height: 30px;
     margin: 0 0 1px;
@@ -1128,4 +1128,4 @@
     padding: 16px
 }
 
-/*# sourceMappingURL=6abbc0f0d0fd162e.css.map*/
+/*# sourceMappingURL=e41d87a9b4c0c361.css.map*/

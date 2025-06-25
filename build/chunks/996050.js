@@ -15,8 +15,8 @@ function c(e, t, n, c, u) {
     p = u.session_id;
   if (null == p) return null;
   let {
-    icon: h,
-    title: f,
+    icon: f,
+    title: h,
     body: m
   } = (0, o.Xi)(e, t, n), {
     trackView: g,
@@ -33,8 +33,8 @@ function c(e, t, n, c, u) {
     activity_name: u.name
   });
   return {
-    icon: h,
-    title: f,
+    icon: f,
+    title: h,
     body: m,
     onNotificationShow: () => {
       g()

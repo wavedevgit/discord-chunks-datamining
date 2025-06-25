@@ -201,7 +201,7 @@ let U = i.memo(function(e) {
             item: l
           }), (0, r.jsxs)(o.Text, {
             variant: "text-md/normal",
-            color: p ? "text-muted" : "text-normal",
+            color: p ? "text-muted" : "text-default",
             children: ["string" != typeof S ? S : h.Z.parse(S), R]
           }), (null == (t = l.message) ? void 0 : t.content) != null ? (0, r.jsx)(D, {
             item: l

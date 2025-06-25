@@ -1,6 +1,6 @@
 /**
   Module ID: 7463
-  Original File Name: 232fca4d31fec8f9
+  Original File Name: 7e343560891eee9f
 **/
 .left_caab99 {
     transform: rotate(270deg)
@@ -65,7 +65,7 @@
 }
 
 .label__09ccc {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     font-weight: var(--font-weight-medium);
     line-height: 18px;
@@ -236,7 +236,7 @@
 }
 
 .headerCellSorted__5fe04 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .container__06f11 {
@@ -1378,4 +1378,4 @@
     background-color: var(--background-mod-subtle)
 }
 
-/*# sourceMappingURL=232fca4d31fec8f9.css.map*/
+/*# sourceMappingURL=7e343560891eee9f.css.map*/

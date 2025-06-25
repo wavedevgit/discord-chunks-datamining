@@ -94,8 +94,8 @@ let g = {
     color: "var(--interactive-normal)"
   }),
   menu: e => m(b({}, e), {
-    backgroundColor: "var(--background-secondary)",
-    border: "1px solid var(--background-tertiary)",
+    backgroundColor: "var(--background-base-lower)",
+    border: "1px solid var(--background-base-lowest)",
     borderRadius: "0 0 4px 4px",
     color: "var(--interactive-normal)",
     marginTop: -1,
@@ -206,9 +206,9 @@ class O extends(n = o.Component) {
         isMulti: A,
         placeholder: j,
         filterOption: T,
-        closeMenuOnSelect: C = !0
+        closeMenuOnSelect: w = !0
       } = t,
-      M = b({}, function(e, t) {
+      C = b({}, function(e, t) {
         if (null == e) return {};
         var r, n, l = function(e, t) {
           if (null == e) return {};
@@ -223,15 +223,15 @@ class O extends(n = o.Component) {
         }
         return l
       }(t, ["className", "selectClassName", "error", "valueRenderer", "optionRenderer", "multiValueRenderer", "options", "value", "autofocus", "disabled", "clearable", "searchable", "styleOverrides", "isMulti", "placeholder", "filterOption", "closeMenuOnSelect"]));
-    null != O && (M.autoFocus = O), null != E && (M.isDisabled = E), null != x && (M.isClearable = x), null != _ && (M.isSearchable = _);
-    let w = {
+    null != O && (C.autoFocus = O), null != E && (C.isDisabled = E), null != x && (C.isClearable = x), null != _ && (C.isSearchable = _);
+    let M = {
       IndicatorSeparator: () => null
     };
-    if (null != i && (w.Option = e => (0, a.jsx)(s.c.Option, m(b({}, e), {
+    if (null != i && (M.Option = e => (0, a.jsx)(s.c.Option, m(b({}, e), {
         children: i(e.data)
-      }))), null != o && (w.SingleValue = e => (0, a.jsx)(s.c.SingleValue, m(b({}, e), {
+      }))), null != o && (M.SingleValue = e => (0, a.jsx)(s.c.SingleValue, m(b({}, e), {
         children: o(e.data)
-      }))), null != p && (w.MultiValue = e => p(e.data)), A && Array.isArray(y)) {
+      }))), null != p && (M.MultiValue = e => p(e.data)), A && Array.isArray(y)) {
       let t = {};
       v.forEach(e => {
         t[String(e.value)] = e
@@ -248,18 +248,18 @@ class O extends(n = o.Component) {
           [f.error]: null != l
         }),
         ref: this._containerRef,
-        children: [(0, a.jsx)(u.ZP, m(b({}, M), {
+        children: [(0, a.jsx)(u.ZP, m(b({}, C), {
           className: n,
           ref: this._selectRef,
           isMulti: A,
-          components: w,
+          components: M,
           options: v,
           styles: null != k ? k : g,
           onFocus: this.handleFocus,
           onBlur: this.handleBlur,
           onMenuOpen: this.handleMenuOpen,
           onMenuClose: this.handleMenuClose,
-          closeMenuOnSelect: C,
+          closeMenuOnSelect: w,
           value: e,
           onKeyDown: this.handleKeyDown,
           placeholder: null != j ? j : h.intl.string(h.t.XqMe3N),

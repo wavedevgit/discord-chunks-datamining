@@ -1,6 +1,6 @@
 /**
   Module ID: 49027
-  Original File Name: a1615faa4dcd6410
+  Original File Name: aab9db56c9b43a67
 **/
 .subscription_d970da {
     align-items: center;
@@ -31,7 +31,7 @@
 }
 
 .tierPill_d970da,.tierPillStar_d970da {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .tierPillStar_d970da {
@@ -131,12 +131,12 @@
 }
 
 .pendingCancellationIcon__2cbe8 {
-    color: var(--text-warning);
+    color: var(--text-feedback-warning);
     flex-shrink: 0
 }
 
 .pendingCancellationMessage__2cbe8 {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-left: 10px
 }
 
@@ -236,7 +236,7 @@
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     line-height: 18px;
@@ -271,7 +271,7 @@
 }
 
 .bodyText__945b8 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px
 }
@@ -314,7 +314,7 @@
 }
 
 .planSelectorLabel__945b8 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     margin-left: 16px
@@ -384,7 +384,7 @@
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     line-height: 18px;
@@ -504,7 +504,7 @@
 
 .tierPill__0f8ce {
     background-color: var(--background-secondary-alt);
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
-/*# sourceMappingURL=a1615faa4dcd6410.css.map*/
+/*# sourceMappingURL=aab9db56c9b43a67.css.map*/

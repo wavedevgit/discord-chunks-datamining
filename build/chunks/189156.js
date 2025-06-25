@@ -79,7 +79,7 @@ function m(e) {
   var {
     userId: t,
     variant: n = "text-xs/normal",
-    color: a = "text-normal"
+    color: a = "text-default"
   } = e, s = _(e, ["userId", "variant", "color"]);
   let l = (0, o.e)({
     userId: t,
@@ -103,7 +103,7 @@ function g(e) {
       className: l.header,
       children: [(0, r.jsx)(i.X6q, {
         variant: "text-md/semibold",
-        color: "text-normal",
+        color: "text-default",
         children: s.intl.string(s.t.Iyka0d)
       }), (0, r.jsx)(i.P4T, {
         size: "xs",

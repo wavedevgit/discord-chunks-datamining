@@ -1,6 +1,6 @@
 /**
   Module ID: 63141
-  Original File Name: 30c689aabee9547c
+  Original File Name: 7946bfbc8ea874b1
 **/
 .key__1728a {
     background-color: var(--brand-500);
@@ -1056,7 +1056,7 @@
 .keybindIcon__1921e,.keybindIndicatorText__1921e {
     background-color: var(--background-modifier-selected);
     border-radius: 4px;
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .keybindIndicatorText__1921e {
@@ -1113,7 +1113,7 @@
 }
 
 .username__99ff4 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     font-weight: var(--font-weight-medium);
     line-height: 16px;
@@ -1129,7 +1129,7 @@
 .locked__99ff4 {
     background-color: var(--background-base-low);
     border-radius: 4px;
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .lockedContainer__99ff4 {
@@ -1185,7 +1185,7 @@
     align-items: center;
     background: hsl(var(--primary-700-hsl)/.85);
     border-bottom: 1px solid var(--primary-600);
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-shrink: 0;
     font-size: 14px;
@@ -1442,4 +1442,4 @@
     transform: translateX(-50%)
 }
 
-/*# sourceMappingURL=30c689aabee9547c.css.map*/
+/*# sourceMappingURL=7946bfbc8ea874b1.css.map*/

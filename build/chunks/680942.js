@@ -77,8 +77,8 @@ let y = {
       isGiftEasterEggEnabled: C,
       color: w = l.Ttl.BRAND
     } = e, {
-      analyticsLocations: E
-    } = (0, s.ZP)(), k = i.useRef(null), S = (0, a.Z)(k), N = (0, f.hv)("CollectiblesShopGiftButton"), I = (0, p.sp)();
+      analyticsLocations: k
+    } = (0, s.ZP)(), E = i.useRef(null), S = (0, a.Z)(E), N = (0, f.hv)("CollectiblesShopGiftButton"), I = (0, p.sp)();
     return (0, b.x6)(t) ? null : (0, n.jsx)(l.ua7, {
       text: x.intl.string(x.t["JCFN//"]),
       delay: P,
@@ -102,7 +102,7 @@ let y = {
           }
           return e
         }({}, e), a = a = {
-          buttonRef: k,
+          buttonRef: E,
           className: _.giftButton,
           color: w,
           look: l.zxk.Looks.FILLED,
@@ -125,7 +125,7 @@ let y = {
               }),
               isGift: !0,
               giftingOrigin: h.Wt.SHOP_PAGE,
-              analyticsLocations: E,
+              analyticsLocations: k,
               returnRef: O,
               variantsReturnStyle: N,
               onClose: null != j ? e => {

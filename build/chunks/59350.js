@@ -43,8 +43,8 @@ var l = t(255367),
   U = t(614328),
   G = t(104265),
   W = t(588632),
-  z = t(290511),
-  F = t(981631),
+  F = t(290511),
+  z = t(981631),
   q = t(176505),
   X = t(490897),
   V = t(388032),
@@ -153,7 +153,7 @@ function en(e) {
             return (0, l.jsxs)("div", {
               className: J.role,
               children: [(0, l.jsx)(m.xko, {
-                color: null != (n = e.colorString) ? n : (0, c.Rf)(F.p6O),
+                color: null != (n = e.colorString) ? n : (0, c.Rf)(z.p6O),
                 colors: P ? e.colorStrings : null,
                 className: J.roleDot
               }), (0, l.jsx)(m.Text, {
@@ -196,7 +196,7 @@ function et(e) {
     className: J.prompt,
     "data-new": t.isNew,
     children: [t.isNew && (0, l.jsx)(m.IGR, {
-      color: (0, C.Lq)(F.Ilk.BRAND_260),
+      color: (0, C.Lq)(z.Ilk.BRAND_260),
       text: V.intl.string(V.t.y2b7CA),
       className: J.newBadge
     }), (0, l.jsxs)(m.X6q, {
@@ -268,7 +268,7 @@ function el(e) {
     className: J.prompt,
     "data-new": t.isNew,
     children: [t.isNew && (0, l.jsx)(m.IGR, {
-      color: (0, C.Lq)(F.Ilk.BRAND_260),
+      color: (0, C.Lq)(z.Ilk.BRAND_260),
       text: V.intl.string(V.t.y2b7CA),
       className: J.newBadge
     }), (0, l.jsxs)(m.X6q, {
@@ -305,7 +305,7 @@ function er(e) {
     guildId: n,
     onBrowseChannels: t
   } = e, i = (0, u.wj)((0, g.ZP)()), o = (0, d.e7)([w.Z], () => w.Z.getGuild(n)), s = (0, d.e7)([E.default], () => E.default.getCurrentUser()), c = (0, p.Z)("(min-width: 1344px)") && null != s, f = r.useCallback(() => {
-    (0, y.uL)(F.Z5c.CHANNEL(n, q.oC.CHANNEL_BROWSER)), null == t || t()
+    (0, y.uL)(z.Z5c.CHANNEL(n, q.oC.CHANNEL_BROWSER)), null == t || t()
   }, [n, t]), x = (0, d.e7)([P.ZP], () => P.ZP.hasUnread(n, X.W.GUILD_ONBOARDING_QUESTION)), {
     onboardingPromptsRaw: _,
     newOnboardingPrompts: b,
@@ -323,12 +323,12 @@ function er(e) {
   let N = r.useCallback(e => {
     if (null == o) return null;
     switch (e.type) {
-      case z.FN.MULTIPLE_CHOICE:
+      case F.FN.MULTIPLE_CHOICE:
         return (0, l.jsx)(el, {
           prompt: e,
           guild: o
         }, e.id);
-      case z.FN.DROPDOWN:
+      case F.FN.DROPDOWN:
         return (0, l.jsx)(et, {
           prompt: e,
           guild: o
@@ -339,8 +339,8 @@ function er(e) {
   }, [o]);
   if (null == o) return null;
   if (0 === _.length) {
-    let e = (0, C.Lq)(i ? F.Ilk.PRIMARY_300 : F.Ilk.PRIMARY_500),
-      n = (0, C.Lq)(i ? F.Ilk.PRIMARY_700 : F.Ilk.PRIMARY_230);
+    let e = (0, C.Lq)(i ? z.Ilk.PRIMARY_300 : z.Ilk.PRIMARY_500),
+      n = (0, C.Lq)(i ? z.Ilk.PRIMARY_700 : z.Ilk.PRIMARY_230);
     return (0, l.jsx)("div", {
       className: a()(Y.content, J.emptyPage),
       children: (0, l.jsxs)("div", {

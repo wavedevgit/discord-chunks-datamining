@@ -63,7 +63,7 @@ function b(e) {
     children: [(0, r.jsx)(a.X6, {
       className: v.header,
       variant: "heading-lg/semibold",
-      color: "text-normal",
+      color: "text-default",
       children: _.intl.string(_.t.XyYoFR)
     }), l ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.xv, {

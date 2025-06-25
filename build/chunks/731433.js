@@ -11,9 +11,9 @@ var s = a(990547),
   c = a(100527),
   l = a(906732),
   d = a(213609),
-  m = a(204418),
-  u = a(1585),
-  _ = a(223143),
+  u = a(204418),
+  _ = a(1585),
+  m = a(223143),
   p = a(313201),
   v = a(300284),
   x = a(158776),
@@ -30,7 +30,7 @@ function h(e) {
   } = e, s = (0, o.e7)([x.Z], () => x.Z.getStatus(t.id));
   return (0, r.jsxs)("div", {
     className: M.avatarBackground,
-    children: [(0, r.jsx)(m.Z, {
+    children: [(0, r.jsx)(u.Z, {
       user: t,
       guildId: void 0,
       avatarDecorationOverride: a,
@@ -50,12 +50,12 @@ function j(e) {
   var t;
   let {
     transitionState: a,
-    onClose: m
+    onClose: u
   } = e, x = (0, p.Dt)(), {
     theme: j
   } = (0, i.TCT)(), A = (0, o.e7)([f.default], () => f.default.getCurrentUser()), {
     purchases: C
-  } = (0, _.c7)(), N = null == (t = C.get("1225876188074082374")) ? void 0 : t.items, y = void 0 !== N ? N[0] : void 0, {
+  } = (0, m.c7)(), N = null == (t = C.get("1225876188074082374")) ? void 0 : t.items, y = void 0 !== N ? N[0] : void 0, {
     analyticsLocations: D
   } = (0, l.ZP)(c.Z.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL), b = (0, v.Z)({
     analyticsLocations: D
@@ -82,7 +82,7 @@ function j(e) {
         type: k.ZP.Types.PREMIUM_ACTIVATED
       }), (0, r.jsx)(i.Text, {
         variant: "text-md/medium",
-        color: "text-normal",
+        color: "text-default",
         className: M.bodyText,
         children: T.intl.format(T.t["9juoTE"], {})
       })]
@@ -91,7 +91,7 @@ function j(e) {
         look: i.zxk.Looks.FILLED,
         color: i.zxk.Colors.BRAND,
         onClick: () => {
-          m(), (0, n.xf)(), b(), (0, u.ps)({
+          u(), (0, n.xf)(), b(), (0, _.ps)({
             initialSelectedDecoration: y,
             analyticsLocations: D
           })

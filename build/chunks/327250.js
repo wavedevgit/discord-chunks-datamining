@@ -103,13 +103,13 @@ function w(e) {
           })]
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/medium",
-          color: "text-normal",
+          color: "text-default",
           children: S.ZP.getUserTag(t)
         })]
       })]
     }), (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
-      color: "text-normal",
+      color: "text-default",
       children: (0, r.jsx)(o.P3F, {
         className: N.closeAction,
         onClick: i,
@@ -223,7 +223,7 @@ function M(e) {
         size: "custom",
         width: 24,
         height: 24,
-        color: o.TVs.colors.TEXT_NORMAL.css
+        color: o.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, r.jsx)(R, {
       disabled: !C,
@@ -245,7 +245,7 @@ function M(e) {
         size: "custom",
         width: 24,
         height: 24,
-        color: o.TVs.colors.TEXT_NORMAL.css
+        color: o.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, r.jsx)(R, {
       disabled: !j,
@@ -266,7 +266,7 @@ function M(e) {
         size: "custom",
         width: 24,
         height: 24,
-        color: o.TVs.colors.TEXT_NORMAL.css
+        color: o.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, r.jsx)(R, {
       text: Z.intl.string(Z.t.IHTjzM),
@@ -278,7 +278,7 @@ function M(e) {
         size: "custom",
         width: 24,
         height: 24,
-        color: o.TVs.colors.TEXT_NORMAL.css
+        color: o.TVs.colors.TEXT_DEFAULT.css
       })
     })]
   })

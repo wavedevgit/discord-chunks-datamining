@@ -26,7 +26,7 @@ function x(t) {
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(i.Text, {
         variant: "text-sm/semibold",
-        color: "text-normal",
+        color: "text-default",
         children: e
       }), (0, r.jsx)(i.LZC, {
         size: 4

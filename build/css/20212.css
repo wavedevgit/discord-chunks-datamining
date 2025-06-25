@@ -1,6 +1,6 @@
 /**
   Module ID: 20212
-  Original File Name: 048c60f12b28e434
+  Original File Name: b643f2b6e2d56cea
 **/
 .errorLabel_f3e49b,.supportCallToAction_f3e49b {
     margin-top: 20px
@@ -20,7 +20,7 @@
     border-style: solid;
     border-width: 2px;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     font-family: var(--font-code);
     font-size: 14px;
     line-height: 16px;
@@ -50,7 +50,7 @@
 }
 
 .body_f3e49b {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
-/*# sourceMappingURL=048c60f12b28e434.css.map*/
+/*# sourceMappingURL=b643f2b6e2d56cea.css.map*/

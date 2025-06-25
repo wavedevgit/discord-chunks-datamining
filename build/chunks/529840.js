@@ -53,7 +53,7 @@ function C(e) {
         "aria-label": f,
         size: n.EFr.SIZE_32
       }, x)), (0, a.jsx)(n.Text, {
-        color: d ? "text-muted" : "text-normal",
+        color: d ? "text-muted" : "text-default",
         variant: "text-md/semibold",
         children: f
       })]

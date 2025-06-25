@@ -27,7 +27,7 @@ let u = e => e.length > 5 ? e.replace(/\.00$/, "") : e,
     } = e, m = u((0, a.T4)(r, i)), h = f !== s.f_ && f.discountPercentage >= 5 ? (0, n.jsxs)(n.Fragment, {
       children: [m, (0, n.jsx)(l.Text, {
         variant: v,
-        color: "text-positive",
+        color: "text-feedback-positive",
         className: c.discount,
         children: " (-".concat(f.discountPercentage, "%)")
       })]

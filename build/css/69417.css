@@ -1,6 +1,6 @@
 /**
   Module ID: 69417
-  Original File Name: 67aa792d34633d55
+  Original File Name: cd104f7c5dad32cd
 **/
 .image_b026d9 {
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
 }
 
 .secondaryButton_b026d9 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .images-light .imageUpgrade_b026d9 {
@@ -67,4 +67,4 @@
     background-image: url(/assets/f7db12df7391974c.svg)
 }
 
-/*# sourceMappingURL=67aa792d34633d55.css.map*/
+/*# sourceMappingURL=cd104f7c5dad32cd.css.map*/

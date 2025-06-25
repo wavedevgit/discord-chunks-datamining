@@ -5,7 +5,7 @@ n.d(t, {
   C2: () => $,
   EN: () => Z,
   F1: () => ea,
-  HE: () => k,
+  HE: () => V,
   HN: () => Y,
   Iv: () => ec,
   J5: () => eI,
@@ -22,7 +22,7 @@ n.d(t, {
   hQ: () => eg,
   hx: () => W,
   lR: () => q,
-  lU: () => V,
+  lU: () => k,
   nm: () => ed,
   oD: () => K,
   pA: () => en,
@@ -171,7 +171,7 @@ let F = new A.Z("AuditLogUtils"),
     [v.zUn.AVAILABLE_TAG_DELETE]: () => j.t["8QOsen"],
     [v.zUn.LINKED_LOBBY]: eC(j.t["+/3TkJ"], j.t["5kDYS0"])
   }),
-  V = () => y({
+  k = () => y({
     [v.zUn.NICK]: eM(j.t.qXDsHh, j.t["m+qur6"], j.t.DvLvjI),
     [v.zUn.DEAF]: em(j.t.mArLlZ, j.t.ddvVYG),
     [v.zUn.MUTE]: em(j.t["bxs/lZ"], j.t.FjecQE),
@@ -182,7 +182,7 @@ let F = new A.Z("AuditLogUtils"),
     [v.zUn.BYPASSES_VERIFICATION]: em(j.t.NBPBur, j.t.zATosr),
     [v.zUn.AUTO_MODERATION_TRIGGERED_RULE_NAME]: () => j.t.YbouFB
   }, B()),
-  k = () => y({
+  V = () => y({
     [v.zUn.NAME]: eD(j.t.QBmlaG, j.t.Lfs4r6),
     [v.zUn.DESCRIPTION]: eD(j.t.XeYKWF, j.t.PSfeIi),
     [v.zUn.PERMISSIONS_GRANTED]: () => j.t["9i/DvL"],

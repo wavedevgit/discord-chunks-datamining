@@ -65,7 +65,7 @@ function f(e) {
         size: "xs",
         color: a.TVs.colors.STATUS_POSITIVE
       }), (0, r.jsx)(a.Text, {
-        color: "text-positive",
+        color: "text-feedback-positive",
         variant: "text-sm/bold",
         children: p.intl.string(u.default.FFLkm5)
       })]

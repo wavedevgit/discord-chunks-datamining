@@ -1,6 +1,6 @@
 /**
   Module ID: 92754
-  Original File Name: 67ba2a7ed206b1a3
+  Original File Name: 05fae5a6755e7a04
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -468,7 +468,7 @@
     border-color: var(--input-border);
     border-radius: 4px;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     font-family: var(--font-primary);
     font-size: 16px;
     line-height: 20px;
@@ -791,7 +791,7 @@
 .chipletValue__3b3ff {
     background-color: transparent;
     border: 0;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: inline;
     font-family: var(--font-code);
     font-size: 12px;
@@ -832,7 +832,7 @@
 .chipletInput__3b3ff {
     background: transparent;
     border: none;
-    color: var(--text-normal);
+    color: var(--text-default);
     font-family: var(--font-code);
     font-size: 12px;
     left: 4px;
@@ -893,7 +893,7 @@
     background: var(--background-base-lowest);
     border: 1px solid var(--background-surface-high);
     border-radius: 4px;
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: text;
     flex-direction: column;
     font-family: var(--font-code);
@@ -934,7 +934,7 @@
     backface-visibility: hidden;
     background: transparent;
     border: 2px solid transparent;
-    color: var(--text-normal);
+    color: var(--text-default);
     flex-grow: 0;
     font-family: var(--font-code);
     font-size: 12px;
@@ -979,7 +979,7 @@
     border: 1px solid var(--background-surface-high);
     border-radius: 4px;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     font-family: var(--font-code);
     font-size: 16px;
     line-height: 20px;
@@ -1788,7 +1788,7 @@
 }
 
 .statusScheduledIcon__5d2ba {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .statusDeferredIcon__5d2ba {
@@ -2098,7 +2098,7 @@
 }
 
 .statusScheduledIcon__16462 {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .statusDeferredIcon__16462 {
@@ -3116,7 +3116,7 @@
 }
 
 .fileName__67954 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     margin-bottom: 4px;
     max-width: 256px;
@@ -4143,9 +4143,9 @@
 }
 
 .lockedPill__1ea09 {
-    border: thin solid var(--text-normal);
+    border: thin solid var(--text-default);
     border-radius: var(--radius-sm);
-    color: var(--text-normal);
+    color: var(--text-default);
     padding: 6px 12px
 }
 
@@ -4854,9 +4854,9 @@
 }
 
 .lockedPill__514d8 {
-    border: thin solid var(--text-normal);
+    border: thin solid var(--text-default);
     border-radius: var(--radius-sm);
-    color: var(--text-normal);
+    color: var(--text-default);
     padding: 6px 12px
 }
 
@@ -5465,7 +5465,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .noticeIcon_cdf6f1 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .noticeIcon_cdf6f1,.noticeIconPowerful_cdf6f1 {
@@ -7345,7 +7345,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .bannedUser_a73dc3 .username_a73dc3 {
-    color: var(--text-normal);
+    color: var(--text-default);
     flex: 1 1 100px;
     padding-left: 10px
 }
@@ -7386,7 +7386,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .bannedUserModal_a73dc3 .reasonHeader_a73dc3 {
-    color: var(--text-normal);
+    color: var(--text-default);
     text-transform: uppercase
 }
 
@@ -7799,7 +7799,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     background-color: rgba(250,166,26,.1);
     border: 1px solid var(--status-warning);
     border-radius: var(--radius-sm);
-    color: var(--text-normal);
+    color: var(--text-default);
     margin: 0 0 16px;
     padding: 16px
 }
@@ -7810,7 +7810,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .theme-dark .channelWarning__5579e,.theme-dark .warningIcon__5579e {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .theme-light .channelWarning__5579e,.theme-light .warningIcon__5579e {
@@ -7977,7 +7977,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .optionArrow__949ab {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .channelIcon__949ab,.optionEmoji__949ab {
@@ -8896,7 +8896,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .ownerIcon__6f212 {
-    color: var(--text-warning);
+    color: var(--text-feedback-warning);
     flex: 0 0 auto;
     flex-shrink: 0;
     position: relative;
@@ -9840,7 +9840,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .subscriberCount_f15dca strong {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-weight: var(--font-weight-medium)
 }
 
@@ -10022,7 +10022,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .tierCloseClose_f15dca {
     align-self: flex-start;
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: pointer;
     margin-left: 4px;
     margin-top: 4px
@@ -10042,7 +10042,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     background-color: var(--card-primary-bg);
     border-radius: 0 0 8px 8px;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     font-weight: var(--font-weight-medium);
     padding: 16px
 }
@@ -10410,7 +10410,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     background: var(--background-surface-high);
     border-radius: var(--radius-xs);
     box-shadow: var(--elevation-high);
-    color: var(--text-normal);
+    color: var(--text-default);
     font-weight: var(--font-weight-medium);
     max-width: 288px;
     overflow: hidden;
@@ -10733,7 +10733,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .descriptionRow__981f7 {
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     line-height: 18px;
@@ -10762,7 +10762,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .lastSync__981f7 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 12px;
     margin-top: 8px
 }
@@ -11325,7 +11325,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .healthPending__812a7 {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .healthFailingDescription__812a7 {
@@ -11342,7 +11342,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     border: 1px solid var(--input-border);
     border-radius: 4px;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-wrap: wrap;
     font-size: 16px;
@@ -12562,4 +12562,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=67ba2a7ed206b1a3.css.map*/
+/*# sourceMappingURL=05fae5a6755e7a04.css.map*/

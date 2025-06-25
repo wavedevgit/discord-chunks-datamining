@@ -1,6 +1,6 @@
 /**
   Module ID: 73628
-  Original File Name: a730b83f9d864c65
+  Original File Name: 677294683ca59aac
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -88,7 +88,7 @@
 }
 
 .message_fcf29c {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     font-weight: var(--font-weight-medium);
     line-height: 20px;
@@ -743,7 +743,7 @@
 }
 
 .warningIcon_e3f977 {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .attachedRoleContainer_e3f977 {
@@ -772,7 +772,7 @@
 }
 
 .attachedRoleCloseIcon_e3f977 {
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: pointer
 }
 
@@ -911,4 +911,4 @@
     gap: 16px
 }
 
-/*# sourceMappingURL=a730b83f9d864c65.css.map*/
+/*# sourceMappingURL=677294683ca59aac.css.map*/

@@ -18,16 +18,16 @@ function f(e) {
     activity: f
   } = e, {
     channelId: h
-  } = null != (t = (0, u.rq)(f)) ? t : {}, p = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(h), [h]), g = l.useRef(null), O = l.useCallback(() => {
+  } = null != (t = (0, u.rq)(f)) ? t : {}, p = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(h), [h]), g = l.useRef(null), y = l.useCallback(() => {
     let e = a.Z.getChannel(h);
     null != e && s.Cq(e)
-  }, [h]), y = null != (n = null == p ? void 0 : p.topic) ? n : f.name, b = d.intl.formatToPlainString(d.t["T+DNAA"], {
-    channel: y
+  }, [h]), O = null != (n = null == p ? void 0 : p.topic) ? n : f.name, b = d.intl.formatToPlainString(d.t["T+DNAA"], {
+    channel: O
   });
   return (0, r.jsx)("div", {
     ref: g,
     children: (0, r.jsx)(o.P3F, {
-      onClick: O,
+      onClick: y,
       focusProps: {
         ringTarget: g
       },

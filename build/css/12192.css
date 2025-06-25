@@ -1,6 +1,6 @@
 /**
   Module ID: 12192
-  Original File Name: f9035019979678b4
+  Original File Name: f2cb17602ac3418e
 **/
 .modal_deee3a {
     max-height: 600px;
@@ -36,7 +36,7 @@
 
 .content_deee3a {
     align-items: center;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-direction: column;
     min-width: 300px;
@@ -62,4 +62,4 @@
     border: none
 }
 
-/*# sourceMappingURL=f9035019979678b4.css.map*/
+/*# sourceMappingURL=f2cb17602ac3418e.css.map*/

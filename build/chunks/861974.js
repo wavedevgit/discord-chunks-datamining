@@ -49,7 +49,7 @@ function f(e) {
     children: t,
     messageType: n,
     className: i,
-    textColor: o = "text-normal",
+    textColor: o = "text-default",
     textVariant: c = "text-sm/medium"
   } = e, f = u(n), _ = d(n);
   return (0, r.jsxs)("div", {

@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => L
 }), n(997841);
 var i = n(255367),
-  r = n(73800),
-  l = n(120356),
-  o = n.n(l),
+  l = n(73800),
+  r = n(120356),
+  o = n.n(r),
   a = n(442837),
   c = n(481060),
   s = n(367907),
@@ -65,36 +65,36 @@ function T(e, t) {
 function L(e) {
   var t;
   let {
-    application: l,
+    application: r,
     context: L,
     className: R,
     sectionName: w
-  } = e, k = r.useRef(null), Z = (0, a.e7)([j.Z], () => j.Z.entrypoint()), M = (0, N.L1)(l), D = (0, m.Eb)(M), U = (0, d.R)(l.id), B = (0, a.e7)([_.Z], () => {
+  } = e, k = l.useRef(null), Z = (0, a.e7)([j.Z], () => j.Z.entrypoint()), M = (0, N.L1)(r), D = (0, m.Eb)(M), U = (0, d.R)(r.id), B = (0, a.e7)([_.Z], () => {
     var e;
     return null != (e = _.Z.getGuildId()) ? e : void 0
   }, []), H = {
     location: u.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
-    application_id: l.id,
+    application_id: r.id,
     section_name: w,
     source: j.Z.lastShownEntrypoint()
   }, V = C.default.getCurrentUser(), W = (0, f.Z)({
-    id: l.id,
+    id: r.id,
     label: I.intl.string(I.t["+NP/b2"])
   }), F = (0, P.P)({
-    application: l
-  }), z = (0, y.yE)(null != (t = l.flags) ? t : 0, A.udG.EMBEDDED), G = "channel" === L.type ? L.channel : void 0;
+    application: r
+  }), z = (0, y.yE)(null != (t = r.flags) ? t : 0, A.udG.EMBEDDED), G = "channel" === L.type ? L.channel : void 0;
   return (0, i.jsxs)("div", {
     className: O.container,
     children: [(0, i.jsx)(c.P3F, {
       onClick: () => {
         let e = z ? (0, p.H)({
-          applicationId: l.id,
+          applicationId: r.id,
           referrerId: null == V ? void 0 : V.id
         }) : (0, p.J)(S({
-          id: l.id
+          id: r.id
         }, M));
         (0, x.JG)(e, () => (0, c.showToast)((0, c.createToast)(I.intl.string(I.t["L/PwZW"]), c.ToastType.SUCCESS))), v.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
-          application_id: l.id,
+          application_id: r.id,
           source: Z
         })
       },
@@ -128,7 +128,7 @@ function L(e) {
                   return t => (0, i.jsx)(e, {
                     transitionState: t.transitionState,
                     onClose: t.onClose,
-                    appId: l.id,
+                    appId: r.id,
                     guildId: B
                   })
                 })
@@ -147,14 +147,14 @@ function L(e) {
                   source: "app_launcher_app_details"
                 }))
               }
-            }) : null, l instanceof b.ZP ? (0, i.jsx)(c.sNh, {
+            }) : null, r instanceof b.ZP ? (0, i.jsx)(c.sNh, {
               id: "report-app",
               color: "danger",
               label: I.intl.string(I.t.jhJze3),
               action: () => {
                 var e;
                 (0, h.uu)({
-                  application: l,
+                  application: r,
                   entrypoint: "app_launcher",
                   contextualGuildId: null != (e = null == G ? void 0 : G.getGuildId()) ? e : void 0,
                   contextualChannelId: null == G ? void 0 : G.id

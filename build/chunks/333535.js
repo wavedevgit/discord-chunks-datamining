@@ -35,7 +35,7 @@ function b(e) {
         children: m.intl.string(m.t["5uAO7e"])
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
-        color: "text-normal",
+        color: "text-default",
         children: m.intl.format(m.t.WnfPV1, {
           helpArticleUrl: d.Z.getCreatorSupportArticleURL(f.BhN.MEDIA_CHANNEL)
         })

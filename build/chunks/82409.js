@@ -236,7 +236,7 @@ function G(e) {
       className: R.caughtUpContent,
       children: [(0, r.jsx)(u.Text, {
         variant: n ? "text-sm/medium" : "text-sm/normal",
-        color: "text-positive",
+        color: "text-feedback-positive",
         className: R.caughtUpText,
         children: A.intl.string(A.t["6XMM+P"])
       }), (0, r.jsx)(a, {

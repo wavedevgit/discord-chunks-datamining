@@ -1,6 +1,6 @@
 /**
   Module ID: 83098
-  Original File Name: 11419e6356c75fb0
+  Original File Name: 98e95ef6f01c8345
 **/
 .modalRoot__85e39 {
     background-color: var(--background-base-lower);
@@ -159,7 +159,7 @@
 }
 
 .warningIcon__85e39 {
-    color: var(--text-warning)
+    color: var(--text-feedback-warning)
 }
 
 .noResults__85e39 {
@@ -201,4 +201,4 @@
     width: 4px
 }
 
-/*# sourceMappingURL=11419e6356c75fb0.css.map*/
+/*# sourceMappingURL=98e95ef6f01c8345.css.map*/

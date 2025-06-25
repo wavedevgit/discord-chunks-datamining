@@ -1,10 +1,10 @@
 /**
   Module ID: 35641
-  Original File Name: 1298ee1eadbfd4ed
+  Original File Name: 2be5b3331fe00b81
 **/
 .modalHeader_e6fa8e {
     align-items: center;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -29,7 +29,7 @@
 }
 
 .infoListItem_e6fa8e {
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     gap: 16px;
     margin-top: 24px
@@ -66,7 +66,7 @@
 }
 
 .channelIcon_e6fa8e {
-    color: var(--text-normal);
+    color: var(--text-default);
     flex-shrink: 0;
     margin-right: 4px
 }
@@ -116,4 +116,4 @@
     gap: 4px
 }
 
-/*# sourceMappingURL=1298ee1eadbfd4ed.css.map*/
+/*# sourceMappingURL=2be5b3331fe00b81.css.map*/

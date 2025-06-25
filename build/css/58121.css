@@ -1,6 +1,6 @@
 /**
   Module ID: 58121
-  Original File Name: 6824da02f4a0bdee
+  Original File Name: 2fc06db4dae559c0
 **/
 .coverContainer__2f300 {
     align-items: center;
@@ -359,7 +359,7 @@
 }
 
 .ownerIcon__6f212 {
-    color: var(--text-warning);
+    color: var(--text-feedback-warning);
     flex: 0 0 auto;
     flex-shrink: 0;
     position: relative;
@@ -1189,4 +1189,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=6824da02f4a0bdee.css.map*/
+/*# sourceMappingURL=2fc06db4dae559c0.css.map*/

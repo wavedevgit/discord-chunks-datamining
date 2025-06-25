@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => d
 }), n(388685);
 var i = n(73800),
-  r = n(392711),
-  l = n.n(r),
+  l = n(392711),
+  r = n.n(l),
   o = n(442837),
   a = n(567409),
   c = n(699516),
@@ -22,18 +22,18 @@ function d(e) {
       }
       return e
     }),
-    [r, d] = i.useState([]);
+    [l, d] = i.useState([]);
   return i.useEffect(() => {
-    let e = l().sortBy(Object.entries(n), e => {
+    let e = r().sortBy(Object.entries(n), e => {
       let [t, n] = e;
       return -u.default.extractTimestamp(n)
     });
-    d(l().map(e, e => {
+    d(r().map(e, e => {
       let [t, n] = e;
       return s.default.getUser(t)
     }).filter(e => null != e))
   }, [n]), {
-    friends: r,
+    friends: l,
     friendsLastPlayed: n
   }
 }

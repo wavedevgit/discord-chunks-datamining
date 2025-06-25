@@ -238,7 +238,7 @@ function C(e) {
                 size: i.EFr.SIZE_16
               }) : null, (0, c.jsx)(i.Text, {
                 variant: "text-xs/normal",
-                color: "text-normal",
+                color: "text-default",
                 children: t.application.name
               })]
             })

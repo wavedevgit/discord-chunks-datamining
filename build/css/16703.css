@@ -1,6 +1,6 @@
 /**
   Module ID: 16703
-  Original File Name: 21d6462616991363
+  Original File Name: a56e042b206ef7d7
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -431,7 +431,7 @@
 }
 
 .title__7184c {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 24px;
     font-weight: var(--font-weight-semibold);
     line-height: 28px;
@@ -696,7 +696,7 @@
 }
 
 .align-chat-input .text_b88801>strong {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .typing_b88801 {
@@ -1774,7 +1774,7 @@ strong {
 }
 
 .header_be95d0 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-weight: var(--font-weight-bold);
     letter-spacing: .6px;
     margin-bottom: 4px;
@@ -2665,7 +2665,7 @@ strong {
     align-items: center;
     background: var(--background-secondary-alt);
     border-radius: var(--radius-sm);
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: pointer;
     display: flex;
     opacity: .9;
@@ -2688,7 +2688,7 @@ strong {
 }
 
 .burstText_df4aaf {
-    color: var(--text-normal);
+    color: var(--text-default);
     padding-left: 4px;
     width: 100%
 }
@@ -2737,7 +2737,7 @@ input[type=checked]:focus-visible+.label_df4aaf {
 }
 
 .burstIcon_df4aaf {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .video_cc0382 {
@@ -3002,7 +3002,7 @@ input[type=checked]:focus-visible+.label_df4aaf {
 .streamInfoContainer__0f85c {
     background-color: rgba(0,0,0,.5);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-direction: column;
     font-size: 14px;
@@ -3073,7 +3073,7 @@ input[type=checked]:focus-visible+.label_df4aaf {
 }
 
 .subheader_ecf309 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     line-height: 18px;
     margin-top: 4px
@@ -4595,7 +4595,7 @@ input[type=checked]:focus-visible+.label_df4aaf {
     background: var(--background-base-lowest);
     border-radius: 16px;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     min-height: 32px;
     overflow: hidden;
@@ -5273,7 +5273,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .bannerSubtext_a2eac3 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px
 }
 
@@ -5492,7 +5492,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .attachment_fc8177,.avatar_fc8177,.blob_fc8177 {
-    background-color: var(--text-normal)
+    background-color: var(--text-default)
 }
 
 .avatar_fc8177 {
@@ -5669,7 +5669,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .blockedEdit_b7ab2c,.blockedSend_b7ab2c {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .shieldIcon_b7ab2c {
@@ -5789,7 +5789,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .operations_bab751 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 12px;
     font-weight: var(--font-weight-normal);
     padding: 7px 0;
@@ -6022,7 +6022,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     opacity: .5;
     transition: opacity .2s;
     -webkit-app-region: no-drag;
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .closeButton__51e4d:hover {
@@ -6408,7 +6408,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .sectionTitle__01dab {
-    color: var(--text-normal);
+    color: var(--text-default);
     padding-left: 16px;
     padding-top: 8px
 }
@@ -7904,7 +7904,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .guildIcon_a53846 {
     align-items: center;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     height: 100%;
     justify-content: center;
@@ -10275,7 +10275,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .keyComboInner__3a5a1 {
     border: 1px solid var(--background-modifier-hover)!important;
     box-shadow: inset 0 -4px 0 var(--background-modifier-selected)!important;
-    color: var(--text-normal)!important
+    color: var(--text-default)!important
 }
 
 .keyComboContainer__3a5a1,.keyComboInner__3a5a1 {
@@ -10632,7 +10632,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .resultsBlocked_c68065:hover {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .resultsBlockedImage_c68065 {
@@ -10653,7 +10653,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     background-color: var(--border-subtle);
     border: 1px solid var(--background-modifier-hover)!important;
     box-shadow: inset 0 -4px 0 var(--background-modifier-selected)!important;
-    color: var(--text-normal)!important
+    color: var(--text-default)!important
 }
 
 .keyComboContainer__15c82 {
@@ -10832,7 +10832,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .closeAction__34940 {
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: pointer;
     padding: 4px
 }
@@ -10920,7 +10920,7 @@ div.profileThemedContainer__656be {
 }
 
 .innerContainer__656be {
-    color: var(--text-normal);
+    color: var(--text-default);
     padding: 8px;
     position: relative
 }
@@ -11172,7 +11172,7 @@ div.profileThemedContainer__656be {
     height: 16px;
     justify-content: center;
     margin-left: 8px;
-    stroke: var(--text-normal);
+    stroke: var(--text-default);
     width: 16px
 }
 
@@ -11182,7 +11182,7 @@ div.profileThemedContainer__656be {
 }
 
 .spinnerPath_f3b986 {
-    stroke: var(--text-normal)
+    stroke: var(--text-default)
 }
 
 .container__3379f {
@@ -11231,7 +11231,7 @@ div.profileThemedContainer__656be {
 .emptyResultsWrap_a9e706 {
     align-items: center;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex: 1;
     font-size: 16px;
@@ -12875,7 +12875,7 @@ div.profileThemedContainer__656be {
 .row__89036 {
     align-items: center;
     border-radius: 4px;
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: pointer;
     display: flex;
     font-weight: var(--font-weight-medium);
@@ -12917,7 +12917,7 @@ div.profileThemedContainer__656be {
 .row__0a95c {
     align-items: center;
     border-radius: 4px;
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: pointer;
     display: flex;
     font-weight: var(--font-weight-medium);
@@ -13099,4 +13099,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=21d6462616991363.css.map*/
+/*# sourceMappingURL=a56e042b206ef7d7.css.map*/

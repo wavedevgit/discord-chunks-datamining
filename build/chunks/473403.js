@@ -196,8 +196,8 @@ let P = e => {
       onMouseLeave: B,
       "aria-label": w,
       children: H,
-      guild: V,
-      channelTypeOverride: k,
+      guild: k,
+      channelTypeOverride: V,
       forceInteractable: K,
       mentionCount: Z,
       resolvedUnreadSetting: W,
@@ -242,7 +242,7 @@ let P = e => {
           children: [(0, r.jsx)(P, {
             className: j,
             channel: s,
-            guild: V,
+            guild: k,
             hasActiveThreads: R,
             locked: N,
             withGuildIcon: q
@@ -306,7 +306,7 @@ let P = e => {
             default:
               return U.typeDefault
           }
-        }(null != k ? k : F)),
+        }(null != V ? V : F)),
         onMouseUp: e => null == m ? void 0 : m(e, s),
         onMouseDown: e => null == f ? void 0 : f(e, s),
         onContextMenu: e => null == v ? void 0 : v(e, s),

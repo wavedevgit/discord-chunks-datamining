@@ -19,9 +19,9 @@ var r = t(752843),
   p = t(388032);
 
 function v(e) {
-  var n, t, v, j;
+  var n, t, v, f;
   let {
-    onClose: f,
+    onClose: j,
     transitionState: g,
     skuId: k,
     appId: b,
@@ -30,7 +30,7 @@ function v(e) {
   if (null == I) return null;
   let C = null != (t = I.name) ? t : "",
     y = null != (v = null == S || null == (n = S.description) ? void 0 : n.trim()) ? v : void 0,
-    R = (null == S ? void 0 : S.headerBackground) != null && null != (j = d.Z.toURLSafe((0, c._W)(b, S.headerBackground, 256))) ? j : void 0,
+    R = (null == S ? void 0 : S.headerBackground) != null && null != (f = d.Z.toURLSafe((0, c._W)(b, S.headerBackground, 256))) ? f : void 0,
     T = I.type === h.epS.DURABLE && O,
     B = I.type === h.epS.DURABLE ? T ? p.intl.string(p.t.bm82mp) : p.intl.string(p.t["6gprwc"]) : void 0,
     {
@@ -40,8 +40,8 @@ function v(e) {
     appId: b,
     skuId: I.id,
     transitionState: g,
-    onHeaderTitleClick: null != N ? N : f,
-    onClose: f,
+    onHeaderTitleClick: null != N ? N : j,
+    onClose: j,
     footer: (0, l.jsx)(m.YG, {
       appId: b,
       sku: I

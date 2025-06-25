@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => p
 }), n(388685);
 var i = n(73800),
-  r = n(392711),
-  l = n.n(r),
+  l = n(392711),
+  r = n.n(l),
   o = n(911969),
   a = n(254711),
   c = n(213459),
@@ -16,7 +16,7 @@ function p(e) {
   var t;
   let {
     context: n
-  } = e, r = "channel" === n.type ? n.channel : void 0, p = (0, c.LD)(null == r ? void 0 : r.guild_id, !0), {
+  } = e, l = "channel" === n.type ? n.channel : void 0, p = (0, c.LD)(null == l ? void 0 : l.guild_id, !0), {
     commandsByActiveSection: m,
     loading: f
   } = s.wi({
@@ -46,7 +46,7 @@ function p(e) {
     }).filter(e => !(e.id in a.Tm) && h.has(e.id))
   }, [null == (t = p.result) ? void 0 : t.sections, h]), _ = (0, u.h)(b);
   return {
-    appsInThisServer: i.useMemo(() => l().compact(_.map(e => {
+    appsInThisServer: i.useMemo(() => r().compact(_.map(e => {
       let {
         application: t
       } = e;

@@ -3,9 +3,9 @@ n.d(t, {
   Z: () => d
 });
 var i = n(255367),
-  r = n(73800),
-  l = n(120356),
-  o = n.n(l),
+  l = n(73800),
+  r = n(120356),
+  o = n.n(r),
   a = n(442837),
   c = n(481060),
   s = n(607070),
@@ -16,7 +16,7 @@ function d() {
     {
       styleLarge: t,
       styleSmall: n
-    } = r.useMemo(() => ({
+    } = l.useMemo(() => ({
       styleLarge: {
         width: "".concat(10 + 50 * Math.random(), "%")
       },

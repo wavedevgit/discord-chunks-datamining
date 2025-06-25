@@ -191,7 +191,7 @@ function G(e) {
       colorOptions: C.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     }), (0, r.jsx)(p.X6q, {
       variant: "heading-md/semibold",
-      color: "text-normal",
+      color: "text-default",
       children: w.intl.format(w.t["fF+cgY"], {
         onClick: () => (0, S.z)()
       })

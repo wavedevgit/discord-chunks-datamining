@@ -1,6 +1,6 @@
 /**
   Module ID: 91081
-  Original File Name: e314ebd15e706a8a
+  Original File Name: 93300fb4fab0378e
 **/
 .closeButton__47998 {
     position: absolute;
@@ -60,7 +60,7 @@
 }
 
 .buttonBody__47998 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 1.25;
     text-align: left
@@ -130,7 +130,7 @@
 }
 
 .modal__47998 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .images-light .conflictUploadArt__47998 {
@@ -184,4 +184,4 @@
     grid-template-columns: auto 1fr
 }
 
-/*# sourceMappingURL=e314ebd15e706a8a.css.map*/
+/*# sourceMappingURL=93300fb4fab0378e.css.map*/

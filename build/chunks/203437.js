@@ -16,8 +16,8 @@ var l = n(255367),
   h = n(594174),
   g = n(267642),
   p = n(709054),
-  y = n(208049),
-  b = n(763296),
+  b = n(208049),
+  y = n(763296),
   v = n(710111),
   x = n(981631),
   j = n(388032),
@@ -54,17 +54,17 @@ function C(e) {
       null != n && (0, c.Gw)(n, f.Z, h.default).canCreateExpressions && (e[n.id] = n)
     }
     return e
-  }), S = (0, s.cj)([b.Z], () => {
+  }), S = (0, s.cj)([y.Z], () => {
     let e = {};
     for (let [n, l] of p.default.entries(C)) {
       var t;
-      let a = (0, g.yw)(l, null != (t = b.Z.getSoundsForGuild(n)) ? t : v.Hy, l.premiumTier);
+      let a = (0, g.yw)(l, null != (t = y.Z.getSoundsForGuild(n)) ? t : v.Hy, l.premiumTier);
       e[n] = a
     }
     return e
   }, [C]);
   a.useEffect(() => {
-    (0, y.w)()
+    (0, b.w)()
   }, []);
   let O = a.useMemo(() => Object.values(C).map(e => {
       let {

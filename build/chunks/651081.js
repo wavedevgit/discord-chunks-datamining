@@ -291,7 +291,7 @@ function V(e) {
           children: n.poll.question.text
         }), (0, l.jsx)(o.Text, {
           variant: "text-md/medium",
-          color: "text-normal",
+          color: "text-default",
           children: M.intl.format(M.t.XRkuoa, {
             count: _.toLocaleString()
           })

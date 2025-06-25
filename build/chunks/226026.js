@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => s
 });
 var i = n(73800),
-  r = n(990547),
-  l = n(442837),
+  l = n(990547),
+  r = n(442837),
   o = n(213609),
   a = n(541099),
   c = n(312871);
@@ -18,10 +18,10 @@ function s(e) {
     sectionOverallPosition: d,
     promotionalLabel: p,
     numFriendsWhoPlay: m
-  } = e, f = (0, l.e7)([a.Z], () => a.Z.entrypoint()), h = i.useCallback(() => {
+  } = e, f = (0, r.e7)([a.Z], () => a.Z.entrypoint()), h = i.useCallback(() => {
     (0, o.h)({
-      type: r.ImpressionTypes.VIEW,
-      name: r.ImpressionNames.APP_LAUNCHER_ITEM,
+      type: l.ImpressionTypes.VIEW,
+      name: l.ImpressionNames.APP_LAUNCHER_ITEM,
       properties: {
         application_id: t,
         application_flags: n,

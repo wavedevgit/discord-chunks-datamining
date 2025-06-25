@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: 909f52eb06698e51
+  Original File Name: 79f20d3528ed5852
 **/
 @value headerBarHeight 60px;
 
@@ -189,7 +189,7 @@
 }
 
 .discordLogo__1a9ce {
-    color: var(--text-normal);
+    color: var(--text-default);
     height: 20px;
     margin-right: -6px
 }
@@ -283,7 +283,7 @@
 
 .searchBar__1ac1c {
     background: var(--bg-overlay-3,var(--background-base-lowest));
-    color: var(--text-normal);
+    color: var(--text-default);
     flex: 1 1 240px;
     max-width: 240px;
     min-width: 240px
@@ -1363,7 +1363,7 @@
 .moreGuilds_bb856d {
     background-color: var(--background-base-lowest);
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     font-weight: var(--font-weight-medium);
     padding: 0 4px;
     text-align: center
@@ -1628,7 +1628,7 @@
 }
 
 .blurb_d77896 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     -webkit-user-select: text;
@@ -1689,7 +1689,7 @@
 }
 
 .detailedDescription_c4b47c {
-    color: var(--text-normal)!important;
+    color: var(--text-default)!important;
     font-size: 16px;
     line-height: 20px!important
 }
@@ -1986,7 +1986,7 @@
 
 .wrapper__14403 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2114,7 +2114,7 @@
 
 .footer__3564f {
     align-self: stretch;
-    border-top: 1px solid var(--background-modifier-accent)
+    border-top: 1px solid var(--border-subtle)
 }
 
 .heading__66230 {
@@ -2544,4 +2544,4 @@
     width: 22px
 }
 
-/*# sourceMappingURL=909f52eb06698e51.css.map*/
+/*# sourceMappingURL=79f20d3528ed5852.css.map*/

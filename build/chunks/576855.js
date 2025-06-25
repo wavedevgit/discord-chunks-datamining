@@ -28,7 +28,7 @@ class E extends(i = o.PureComponent) {
       children: [(0, l.jsxs)(s.Text, {
         variant: "text-sm/bold",
         tag: "div",
-        color: "text-positive",
+        color: "text-feedback-positive",
         className: d.pro,
         children: [u.intl.string(u.t["8tvIiI"]), ":"]
       }), (0, l.jsx)(s.Text, {

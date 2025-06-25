@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => _
 }), n(388685);
 var i = n(255367),
-  r = n(73800),
-  l = n(392711),
+  l = n(73800),
+  r = n(392711),
   o = n(780384),
   a = n(481060),
   c = n(410030),
@@ -17,8 +17,8 @@ var i = n(255367),
   h = n(614266);
 
 function b(e) {
-  let [t, n] = r.useState(void 0);
-  return r.useEffect(() => {
+  let [t, n] = l.useState(void 0);
+  return l.useEffect(() => {
     null != e.current && n(getComputedStyle(e.current))
   }, [e]), t
 }
@@ -31,35 +31,35 @@ function _(e) {
     iconURL: C,
     scrollerRef: v,
     sectionName: x
-  } = e, y = (0, o.ap)((0, c.ZP)()), g = r.useRef(null), j = r.useRef(null), N = r.useRef(null), P = r.useRef(null), E = (0, a.dQu)(a.TVs.colors.BACKGROUND_BASE_LOW).hex(), A = (0, s.ZP)("number" == typeof C ? "" : C, null != E ? E : ""), I = r.useMemo(() => {
+  } = e, y = (0, o.ap)((0, c.ZP)()), g = l.useRef(null), j = l.useRef(null), N = l.useRef(null), P = l.useRef(null), E = (0, a.dQu)(a.TVs.colors.BACKGROUND_BASE_LOW).hex(), A = (0, s.ZP)("number" == typeof C ? "" : C, null != E ? E : ""), I = l.useMemo(() => {
     var e, t;
-    let n = (0, l.compact)([u.Z.parseHexString(A), u.Z.parseHexString(y ? "#000000" : "#ffffff")]);
+    let n = (0, r.compact)([u.Z.parseHexString(A), u.Z.parseHexString(y ? "#000000" : "#ffffff")]);
     return null != (t = null == (e = (0, d.k8)({
       colors: n,
       ratio: 5,
       saturationFactor: .6
     })) ? void 0 : e.toHexString()) ? t : A
-  }, [A, y]), O = b(g), S = b(j), T = r.useCallback(() => {
+  }, [A, y]), O = b(g), S = b(j), T = l.useCallback(() => {
     var e, t, n, i;
-    let r = v.current,
+    let l = v.current,
       o = g.current,
       a = N.current,
       c = null == P ? void 0 : P.current,
       s = parseInt(null != (e = null == O ? void 0 : O.height) ? e : ""),
       u = parseInt(null != (t = null == S ? void 0 : S.height) ? t : "");
-    if (null != r && null != o && null != a && !isNaN(s) && !isNaN(u)) {
-      let e = null != (n = r.scrollTop) ? n : 0,
-        t = 0 !== r.scrollHeight ? r.scrollHeight : u + 20,
-        d = 0 !== r.clientHeight ? r.clientHeight : u + 20,
+    if (null != l && null != o && null != a && !isNaN(s) && !isNaN(u)) {
+      let e = null != (n = l.scrollTop) ? n : 0,
+        t = 0 !== l.scrollHeight ? l.scrollHeight : u + 20,
+        d = 0 !== l.clientHeight ? l.clientHeight : u + 20,
         p = u - s,
-        m = (0, l.clamp)(t - d, p + 1, u + 20),
-        f = p === m ? 1 : (0, l.clamp)((e - p) / (m - p), 0, 1);
+        m = (0, r.clamp)(t - d, p + 1, u + 20),
+        f = p === m ? 1 : (0, r.clamp)((e - p) / (m - p), 0, 1);
       o.style.filter = "brightness(".concat(1 + ((y ? 1.4 : .6) - 1) * f, ")"), o.style.backgroundColor = "color-mix(in oklab,".concat(A, " ").concat((1 - f) * 100, "%, ").concat(I, ")"), a.style.opacity = "".concat(0 + +f), a.style.transform = "translateY(".concat((i = s / 4) + (0 - i) * f, "px)"), null != c && (c.style.opacity = "".concat(1 + -1 * f))
     }
   }, [I, A, null == S ? void 0 : S.height, y, v, null == O ? void 0 : O.height]);
-  return r.useEffect(() => {
+  return l.useEffect(() => {
     T()
-  }, [T, y]), r.useEffect(() => {
+  }, [T, y]), l.useEffect(() => {
     let e = v.current,
       t = () => {
         T()

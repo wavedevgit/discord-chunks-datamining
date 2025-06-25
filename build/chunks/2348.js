@@ -186,7 +186,7 @@ let y = i.memo(function() {
                   className: _.channelText,
                   variant: "text-md/medium",
                   lineClamp: 1,
-                  color: S ? "text-muted" : "text-normal",
+                  color: S ? "text-muted" : "text-default",
                   children: t.name
                 })
               }), w ? (0, r.jsxs)(r.Fragment, {

@@ -25,7 +25,7 @@ let u = function() {
       direction: "vertical",
       children: [(0, i.jsx)(s.Text, {
         variant: "text-md/normal",
-        color: "info-help-text",
+        color: "text-feedback-info",
         style: {
           marginBottom: "8px"
         },
@@ -37,7 +37,7 @@ let u = function() {
         children: "Reset Onboarding State"
       }), (0, i.jsx)(s.Text, {
         variant: "text-md/normal",
-        color: "info-help-text",
+        color: "text-feedback-info",
         children: "Your may have to refresh your client after being redirected to the main application in order to see these changes."
       })]
     })]

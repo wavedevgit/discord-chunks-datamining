@@ -75,7 +75,7 @@ class f extends(r = a.PureComponent) {
           })
         }), (0, i.jsxs)(l.hzk, {
           children: [null != p ? (0, i.jsx)(l.Text, {
-            color: "text-normal",
+            color: "text-default",
             variant: "text-md/normal",
             className: u.spacing,
             children: p

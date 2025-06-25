@@ -1,6 +1,6 @@
 /**
   Module ID: 46746
-  Original File Name: 5daeb31897ed9fec
+  Original File Name: fb2106e03f86a377
 **/
 .card__4bb93 {
     align-items: center;
@@ -209,7 +209,7 @@
 .userListOverflow__248f3 {
     background-color: var(--background-base-low);
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 12px;
     font-weight: var(--font-weight-bold);
     line-height: 25px;
@@ -399,7 +399,7 @@
 }
 
 .enhancedUpsellText__39bd2 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .extendedDemoContainer__39bd2 {
@@ -2462,4 +2462,4 @@
     margin-bottom: 0
 }
 
-/*# sourceMappingURL=5daeb31897ed9fec.css.map*/
+/*# sourceMappingURL=fb2106e03f86a377.css.map*/

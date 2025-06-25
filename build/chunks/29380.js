@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => v
 }), n(388685);
 var i = n(255367),
-  r = n(73800),
-  l = n(481060),
+  l = n(73800),
+  r = n(481060),
   o = n(542094),
   a = n(895924),
   c = n(626135),
@@ -25,10 +25,10 @@ function v(e) {
     application: n,
     sectionName: v,
     primaryEntryPointCommand: x,
-    buttonSize: y = l.PhG.MEDIUM
-  } = e, g = r.useId(), j = r.useCallback(() => {
+    buttonSize: y = r.PhG.MEDIUM
+  } = e, g = l.useId(), j = l.useCallback(() => {
     s.yT(d.ti.ACTIVITY)
-  }, []), N = r.useCallback(() => {
+  }, []), N = l.useCallback(() => {
     u.Z.shouldShowModal() && j()
   }, [j]), {
     submitting: P,
@@ -38,10 +38,10 @@ function v(e) {
     context: t,
     launchingComponentId: g,
     onSubmissionComplete: j
-  }), [A, I] = r.useState(!1), O = (0, o.Qv)({
+  }), [A, I] = l.useState(!1), O = (0, o.Qv)({
     applicationId: n.id,
     context: t
-  }), S = r.useMemo(() => (0, m.XZ)(x.displayName), [x.displayName]), {
+  }), S = l.useMemo(() => (0, m.XZ)(x.displayName), [x.displayName]), {
     onActivityItemSelected: T,
     buttonColor: L,
     buttonText: R
@@ -63,30 +63,30 @@ function v(e) {
     application: n,
     activityAction: O
   });
-  return (0, i.jsx)(l.ua7, {
+  return (0, i.jsx)(r.ua7, {
     shouldShow: null != k,
     tooltipContentClassName: C.tooltipContent,
     text: k,
     children: e => {
-      var t, r, {
+      var t, l, {
           onClick: o
         } = e,
         a = function(e, t) {
           if (null == e) return {};
-          var n, i, r = function(e, t) {
+          var n, i, l = function(e, t) {
             if (null == e) return {};
-            var n, i, r = {},
-              l = Object.keys(e);
-            for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-            return r
+            var n, i, l = {},
+              r = Object.keys(e);
+            for (i = 0; i < r.length; i++) n = r[i], t.indexOf(n) >= 0 || (l[n] = e[n]);
+            return l
           }(e, t);
           if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+            var r = Object.getOwnPropertySymbols(e);
+            for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
           }
-          return r
+          return l
         }(e, ["onClick"]);
-      return (0, i.jsx)(l.zxk, (t = function(e) {
+      return (0, i.jsx)(r.zxk, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -103,7 +103,7 @@ function v(e) {
           })
         }
         return e
-      }({}, a), r = r = {
+      }({}, a), l = l = {
         type: "submit",
         size: y,
         color: L,
@@ -120,15 +120,15 @@ function v(e) {
           applicationName: n.name
         }),
         children: R
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(r)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
       }), t))
     }
   })

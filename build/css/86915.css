@@ -1,6 +1,6 @@
 /**
   Module ID: 86915
-  Original File Name: 3fc9cbc3e999d1da
+  Original File Name: 4b00b020113636e8
 **/
 .iconButton_aa66d3 {
     background-color: transparent;
@@ -312,7 +312,7 @@
 }
 
 .container_d5ae15 .input_d5ae15 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .container_d5ae15 .input_d5ae15::-moz-placeholder {
@@ -338,7 +338,7 @@
 }
 
 .layoutStyle__0ab2c {
-    color: var(--text-normal);
+    color: var(--text-default);
     padding: 24px 15px 80px 0;
     position: relative
 }
@@ -469,7 +469,7 @@
 }
 
 .cardIcon__1a4ef {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .cardFolder__1a4ef {
@@ -483,7 +483,7 @@
 }
 
 .folderTitle__1a4ef {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin: 0
 }
 
@@ -824,4 +824,4 @@
     vertical-align: top
 }
 
-/*# sourceMappingURL=3fc9cbc3e999d1da.css.map*/
+/*# sourceMappingURL=4b00b020113636e8.css.map*/

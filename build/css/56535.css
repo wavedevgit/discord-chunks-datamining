@@ -1,13 +1,13 @@
 /**
   Module ID: 56535
-  Original File Name: 6e4027dcb0d447ad
+  Original File Name: be1b1258cc978c53
 **/
 .errorBanner__3405b {
     color: var(--status-danger-text)
 }
 
 .errorBanner__3405b p {
-    color: var(--text-warning);
+    color: var(--text-feedback-warning);
     margin-top: 0
 }
 
@@ -1167,7 +1167,7 @@
 }
 
 .fileName__67954 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     margin-bottom: 4px;
     max-width: 256px;
@@ -1459,4 +1459,4 @@
     }
 }
 
-/*# sourceMappingURL=6e4027dcb0d447ad.css.map*/
+/*# sourceMappingURL=be1b1258cc978c53.css.map*/

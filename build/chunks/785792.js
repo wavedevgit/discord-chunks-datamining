@@ -30,7 +30,7 @@ function a(e) {
       children: (0, r.jsx)(l.Text, {
         className: s.codeText,
         variant: "code",
-        color: "text-normal",
+        color: "text-default",
         children: e
       })
     }, "".concat(e, "-").concat(t)))

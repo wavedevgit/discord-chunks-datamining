@@ -379,7 +379,7 @@ function Y(e) {
           className: L.bulletWarning
         }), (0, s.jsx)(u.Text, {
           variant: "text-sm/normal",
-          color: "text-normal",
+          color: "text-default",
           children: i(e)
         })]
       }, t))

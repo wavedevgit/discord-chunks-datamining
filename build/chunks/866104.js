@@ -103,7 +103,7 @@ function T(e) {
       lineClamp: w || 2 === P ? 2 : 3,
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        color: "text-normal",
+        color: "text-default",
         children: null == d ? void 0 : d.description
       })
     }), x && (0, r.jsxs)(r.Fragment, {
@@ -117,7 +117,7 @@ function T(e) {
     })]
   }) : (0, r.jsx)(s.Text, {
     variant: "text-sm/normal",
-    color: "text-normal",
+    color: "text-default",
     children: R ? k : O.intl.string(O.t["NY/FIS"])
   });
   return (0, r.jsxs)("div", {
@@ -150,7 +150,7 @@ function T(e) {
           size: 8
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
-          color: "text-normal",
+          color: "text-default",
           children: O.intl.format(O.t["7JwrlJ"], {
             username: f,
             usernameHook: function(e, t) {

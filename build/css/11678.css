@@ -1,6 +1,6 @@
 /**
   Module ID: 11678
-  Original File Name: c4848cb440abddca
+  Original File Name: 1f4fb250e23ef6a7
 **/
 .scroller__95bea {
     display: flex;
@@ -40,7 +40,7 @@
     background-color: transparent;
     border: none;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 12px;
     line-height: 14px;
     max-height: 88px;
@@ -91,7 +91,7 @@
 }
 
 .root_af8192 {
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
@@ -439,7 +439,7 @@
 .row__89036 {
     align-items: center;
     border-radius: 4px;
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: pointer;
     display: flex;
     font-weight: var(--font-weight-medium);
@@ -481,7 +481,7 @@
 .row__0a95c {
     align-items: center;
     border-radius: 4px;
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: pointer;
     display: flex;
     font-weight: var(--font-weight-medium);
@@ -799,4 +799,4 @@
     gap: 8px
 }
 
-/*# sourceMappingURL=c4848cb440abddca.css.map*/
+/*# sourceMappingURL=1f4fb250e23ef6a7.css.map*/

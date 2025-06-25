@@ -63,7 +63,7 @@ let I = e => {
           className: C.effectName,
           children: (0, i.isEmpty)(I) ? N : I
         }), null != f ? null : (0, n.jsx)(o.Text, {
-          color: "text-normal",
+          color: "text-default",
           variant: "text-sm/normal",
           className: C.effectDescription,
           children: k

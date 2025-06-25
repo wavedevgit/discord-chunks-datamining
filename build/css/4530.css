@@ -1,6 +1,6 @@
 /**
   Module ID: 4530
-  Original File Name: dfd6fa2d23370658
+  Original File Name: 2fbf57b0a5db9ded
 **/
 .modalRoot__4a43b {
     background-color: var(--background-base-lower);
@@ -124,7 +124,7 @@
     align-items: center;
     background-color: var(--background-secondary-alt);
     border-radius: 20px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex: none;
     height: 40px;
@@ -140,4 +140,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=dfd6fa2d23370658.css.map*/
+/*# sourceMappingURL=2fbf57b0a5db9ded.css.map*/

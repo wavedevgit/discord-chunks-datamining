@@ -1,6 +1,6 @@
 /**
   Module ID: 25913
-  Original File Name: 41e15fc12a8e6592
+  Original File Name: 31dae33210f93741
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -379,7 +379,7 @@
 
 .featureItem__6df1a {
     align-items: center;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-direction: row;
     margin-bottom: var(--spacing-8)
@@ -636,7 +636,7 @@
 
 .body__89307 {
     background-color: var(--modal-background);
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     padding-bottom: 16px
@@ -835,4 +835,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=41e15fc12a8e6592.css.map*/
+/*# sourceMappingURL=31dae33210f93741.css.map*/

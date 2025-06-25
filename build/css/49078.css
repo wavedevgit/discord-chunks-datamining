@@ -1,6 +1,6 @@
 /**
   Module ID: 49078
-  Original File Name: d83f77482caca45b
+  Original File Name: 1f410ee6c8f9d72a
 **/
 .addFriendInputWrapper__72ba7 {
     align-items: center;
@@ -51,7 +51,7 @@
     background-color: transparent;
     border: none;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     flex: 1 1 auto;
     margin-right: 16px;
     padding: 4px 0;
@@ -106,4 +106,4 @@
     padding-top: var(--space-16)
 }
 
-/*# sourceMappingURL=d83f77482caca45b.css.map*/
+/*# sourceMappingURL=1f410ee6c8f9d72a.css.map*/

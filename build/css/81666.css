@@ -1,6 +1,6 @@
 /**
   Module ID: 81666
-  Original File Name: 764d97f8595bed93
+  Original File Name: 555ba6c14280b7f1
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -1466,7 +1466,7 @@
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     line-height: 18px;
@@ -1551,4 +1551,4 @@
     width: 440px
 }
 
-/*# sourceMappingURL=764d97f8595bed93.css.map*/
+/*# sourceMappingURL=555ba6c14280b7f1.css.map*/

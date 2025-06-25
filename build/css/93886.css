@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 303fc8b1630513be
+  Original File Name: 86b8abfcc45254ec
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -628,7 +628,7 @@
 .container_a51e6d {
     background: var(--background-base-low);
     border-top: 1px solid var(--background-base-lowest);
-    color: var(--text-normal);
+    color: var(--text-default);
     position: relative
 }
 
@@ -1369,7 +1369,7 @@
 }
 
 .discount_b4dcd9 .icon_b4dcd9 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .noMargin_b4dcd9 {
@@ -1523,7 +1523,7 @@
 }
 
 .verification_dede4b .title_dede4b {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .verification_dede4b .body_dede4b,.verification_dede4b .footer_dede4b {
@@ -3339,7 +3339,7 @@
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     line-height: 18px;
@@ -3701,7 +3701,7 @@
 
 .container_db0ccb {
     background: var(--background-base-low);
-    color: var(--text-normal);
+    color: var(--text-default);
     position: relative
 }
 
@@ -3740,7 +3740,7 @@
 
 .popoutContainer_db0ccb {
     background: var(--background-base-low);
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -3748,4 +3748,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=303fc8b1630513be.css.map*/
+/*# sourceMappingURL=86b8abfcc45254ec.css.map*/

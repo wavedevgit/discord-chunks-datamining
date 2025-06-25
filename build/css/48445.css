@@ -1,6 +1,6 @@
 /**
   Module ID: 48445
-  Original File Name: 285334eaafd8b14c
+  Original File Name: 6e4592f7cb66061f
 **/
 .container__6b668 {
     align-items: center;
@@ -62,7 +62,7 @@
 }
 
 .nitroWheel__654c5 {
-    color: var(--text-normal);
+    color: var(--text-default);
     height: 20px;
     width: 20px
 }
@@ -237,7 +237,7 @@
 }
 
 .channelRow__4126d:hover .modColor__4126d {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .channel__4126d {
@@ -345,7 +345,7 @@
 }
 
 .channelListChannelIcon__9c019 {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-right: 6px
 }
 
@@ -359,7 +359,7 @@
 }
 
 .unread__9c019 {
-    background-color: var(--text-normal);
+    background-color: var(--text-default);
     border-radius: 6px;
     height: 6px;
     margin-left: -3px;
@@ -434,7 +434,7 @@
 }
 
 .headerBell_da32a8 {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-right: 8px
 }
 
@@ -575,7 +575,7 @@
 }
 
 .header_db81c6 {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-bottom: 8px
 }
 
@@ -676,4 +676,4 @@
     padding-bottom: var(--spacing-12)
 }
 
-/*# sourceMappingURL=285334eaafd8b14c.css.map*/
+/*# sourceMappingURL=6e4592f7cb66061f.css.map*/

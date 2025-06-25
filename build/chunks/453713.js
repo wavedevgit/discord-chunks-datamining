@@ -88,7 +88,7 @@ let y = s()(e => {
       isPurchased: j
     } = (0, v.L)(r), P = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(o)), {
       onFocus: C
-    } = P, w = _(P, ["onFocus"]), E = i.useCallback(e => {
+    } = P, w = _(P, ["onFocus"]), k = i.useCallback(e => {
       e.preventDefault(), e.stopPropagation(), (0, f.$)(t, o), C()
     }, [C, t, o]);
     return (0, n.jsx)(p.ua7, {
@@ -113,9 +113,9 @@ let y = s()(e => {
           var t;
           b(), null == (t = e.onMouseLeave) || t.call(e)
         },
-        onClick: E,
+        onClick: k,
         onKeyDown: e => {
-          e.key === u.R8.ENTER && E(e)
+          e.key === u.R8.ENTER && k(e)
         },
         className: h.colorVariant,
         children: (0, n.jsx)("div", {

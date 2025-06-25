@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => j
 }), n(388685);
 var i = n(255367),
-  r = n(73800),
-  l = n(442837),
+  l = n(73800),
+  r = n(442837),
   o = n(218061),
   a = n(481060),
   c = n(361213),
@@ -29,14 +29,14 @@ function j(e) {
     context: n,
     application: c,
     sectionName: s
-  } = e, j = "channel" === n.type ? n.channel : void 0, P = (0, l.e7)([p.Z], () => p.Z.entrypoint()), E = null != (t = (0, d.q)(c.id === v.bi.BUILT_IN ? null : c.id)) ? t : c, A = (0, f.ye)(E) ? N : C.Z, I = r.useRef(null), [O, S] = r.useState(!1), {
+  } = e, j = "channel" === n.type ? n.channel : void 0, P = (0, r.e7)([p.Z], () => p.Z.entrypoint()), E = null != (t = (0, d.q)(c.id === v.bi.BUILT_IN ? null : c.id)) ? t : c, A = (0, f.ye)(E) ? N : C.Z, I = l.useRef(null), [O, S] = l.useState(!1), {
     iconURL: T,
     name: L
-  } = r.useMemo(() => (0, f.sl)(E, {
+  } = l.useMemo(() => (0, f.sl)(E, {
     fakeAppIconURL: g,
     size: 84
-  }), [E]), R = (0, u.PL)(!0, !0), w = (0, u.LD)(null == j ? void 0 : j.guild_id, !0), k = r.useMemo(() => (0, u.If)(n, E.id), [R, w, n, E.id]), Z = !k.isGuildInstalled && !k.isUserInstalled;
-  return r.useEffect(() => {
+  }), [E]), R = (0, u.PL)(!0, !0), w = (0, u.LD)(null == j ? void 0 : j.guild_id, !0), k = l.useMemo(() => (0, u.If)(n, E.id), [R, w, n, E.id]), Z = !k.isGuildInstalled && !k.isUserInstalled;
+  return l.useEffect(() => {
     Z && u.ZP.queryInstallOnDemandApp(E.id, null == j ? void 0 : j.id)
   }, [E.id, null == j ? void 0 : j.id, Z]), (0, i.jsxs)(a.u2D, {
     className: y.container,
@@ -77,8 +77,8 @@ function N(e) {
   let {
     context: t,
     application: n,
-    sectionName: r,
-    hasCommands: l
+    sectionName: l,
+    hasCommands: r
   } = e, o = (0, s.Z)({
     applicationId: n.id,
     size: 2048,
@@ -89,7 +89,7 @@ function N(e) {
     application: n,
     imageCoverUrl: o.url,
     videoUrl: u,
-    sectionName: r,
-    hasCommands: l
+    sectionName: l,
+    hasCommands: r
   })
 }

@@ -1,6 +1,6 @@
 /**
   Module ID: 9924
-  Original File Name: f29e44444d3aec57
+  Original File Name: b0d0ac1ff89e1e8b
 **/
 .formItem_d48a51 {
     margin-bottom: 24px;
@@ -320,7 +320,7 @@
 
 .placeholderAvatar_ce03f4,.placeholderText_ce03f4,.placeholderTextSmall_ce03f4 {
     animation: placeholderPulse_ce03f4 3s ease-in-out infinite;
-    background-color: var(--text-normal);
+    background-color: var(--text-default);
     opacity: .08
 }
 
@@ -594,4 +594,4 @@
     position: relative
 }
 
-/*# sourceMappingURL=f29e44444d3aec57.css.map*/
+/*# sourceMappingURL=b0d0ac1ff89e1e8b.css.map*/

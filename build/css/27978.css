@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 1e45b202757d7760
+  Original File Name: b9cc31630b8d9ca4
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -2532,7 +2532,7 @@
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     line-height: 18px;
@@ -3023,7 +3023,7 @@
 }
 
 .subText_e17bcd {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .container__56b49 {
@@ -3307,4 +3307,4 @@
     height: 100px
 }
 
-/*# sourceMappingURL=1e45b202757d7760.css.map*/
+/*# sourceMappingURL=b9cc31630b8d9ca4.css.map*/

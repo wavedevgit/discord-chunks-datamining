@@ -83,7 +83,7 @@ function x(e) {
         children: h.intl.string(h.t.vnP31d)
       }), (0, r.jsx)(o.Text, {
         variant: "lg" === i ? "text-sm/medium" : "text-xs/medium",
-        color: "text-normal",
+        color: "text-default",
         className: g.__invalid_mobileWebCopy,
         children: h.intl.string(h.t.nuWSYW)
       }), (0, r.jsx)(b, {

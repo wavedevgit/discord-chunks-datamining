@@ -1,6 +1,6 @@
 /**
   Module ID: 44606
-  Original File Name: 1e1624a0e42e2c02
+  Original File Name: a82502f81751d1ba
 **/
 .pill_a2c9e8 {
     align-items: center;
@@ -186,7 +186,7 @@
     -webkit-app-region: no-drag;
     background: transparent;
     border-radius: var(--radius-sm);
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .outer__4f074:hover .input__4f074 {
@@ -215,7 +215,7 @@
     border: 1px solid;
     border-color: var(--border-subtle);
     border-radius: var(--radius-sm);
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     flex-direction: column;
     padding: var(--space-4)
@@ -731,7 +731,7 @@
 .acronym__2894c {
     align-items: center;
     background-color: var(--background-mod-strong);
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-weight: var(--font-weight-medium);
     justify-content: center;
@@ -1427,4 +1427,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=1e1624a0e42e2c02.css.map*/
+/*# sourceMappingURL=a82502f81751d1ba.css.map*/

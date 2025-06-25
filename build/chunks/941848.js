@@ -159,7 +159,7 @@ function g(t) {
           children: o.intl.string(o.t.fyE8sL)
         })]
       }), (0, a.jsx)(i.Text, {
-        color: "text-normal",
+        color: "text-default",
         variant: "text-sm/normal",
         children: n
       })]

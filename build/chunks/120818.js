@@ -20,7 +20,7 @@ var r = n(255367),
 function b(e, t) {
   return (0, r.jsx)(s.Text, {
     variant: "text-xs/bold",
-    color: "text-normal",
+    color: "text-default",
     children: e
   }, t)
 }

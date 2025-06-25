@@ -1,6 +1,6 @@
 /** Chunk was on 64838 **/
 n.d(t, {
-  h: () => o
+  h: () => u
 });
 var l = n(73800),
   s = n(818083);
@@ -21,7 +21,7 @@ let r = new Date(Date.UTC(2025, 5, 16)),
     }]
   });
 
-function o(e) {
+function u(e) {
   let {
     questConfig: t,
     location: n

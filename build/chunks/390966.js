@@ -126,7 +126,7 @@ function j(e) {
           return null != l && "" !== l ? p.intl.format(p.t.vHYgJS, {
             start: n,
             startHook: e => (0, r.jsx)(u.Text, {
-              color: "text-positive",
+              color: "text-feedback-positive",
               variant: "text-sm/semibold",
               className: g.liveEventEndTime,
               children: e
@@ -156,7 +156,7 @@ function j(e) {
         d = "header-secondary";
       switch (n) {
         case 3:
-          o = l, d = null != a ? void 0 : "text-positive";
+          o = l, d = null != a ? void 0 : "text-feedback-positive";
           break;
         case 4:
           s = u.T39;

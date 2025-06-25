@@ -179,7 +179,7 @@ function G(e) {
         color: m.Z.colors.TEXT_FEEDBACK_POSITIVE.css
       }), (0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
-        color: "text-positive",
+        color: "text-feedback-positive",
         children: R.intl.string(R.t.lVLiFh)
       })]
     }),
@@ -190,7 +190,7 @@ function G(e) {
         children: null != c && null != a && (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(f.Text, {
             variant: "text-xs/medium",
-            color: "text-normal",
+            color: "text-default",
             children: R.intl.string(R.t.qlFrXV)
           }), (0, r.jsx)(O.Z, {
             targetElementRef: h,
@@ -212,7 +212,7 @@ function G(e) {
               })), (0, r.jsxs)(f.Text, {
                 variant: "text-xs/medium",
                 style: {
-                  color: null != c.colorString ? c.colorString : m.Z.colors.TEXT_NORMAL.css
+                  color: null != c.colorString ? c.colorString : m.Z.colors.TEXT_DEFAULT.css
                 },
                 children: [" ", "@", a.username]
               })]
@@ -221,7 +221,7 @@ function G(e) {
         })
       }), (0, r.jsx)(M, {}), (0, r.jsx)(f.Text, {
         variant: "text-xs/medium",
-        color: "text-normal",
+        color: "text-default",
         children: s()(n.timestamp).fromNow()
       })]
     }),
@@ -266,20 +266,20 @@ function H(e) {
       className: k.dotSeparatedRow,
       children: [null != a && (0, r.jsx)(f.Text, {
         variant: "text-xs/medium",
-        color: "text-normal",
+        color: "text-default",
         children: R.intl.format(R.t["4ylIio"], {
           joinCount: a
         })
       }), null != u && (0, r.jsx)(f.Text, {
         variant: "text-xs/medium",
-        color: "text-normal",
+        color: "text-default",
         children: R.intl.format(R.t["5C8Mh4"], {
           dmsSent: u
         })
       }), null != o && (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(M, {}), (0, r.jsx)(f.Text, {
           variant: "text-xs/medium",
-          color: "text-normal",
+          color: "text-default",
           children: s()(o).fromNow()
         })]
       })]
@@ -358,7 +358,7 @@ function V(e) {
       className: k.dotSeparatedRow,
       children: null != o && (0, r.jsx)(f.Text, {
         variant: "text-xs/medium",
-        color: "text-normal",
+        color: "text-default",
         children: s()(o).fromNow()
       })
     }),

@@ -1,6 +1,6 @@
 /**
   Module ID: 86872
-  Original File Name: 90b87b60f7006773
+  Original File Name: 5bb1b56e111a5f1f
 **/
 .editProfileContainer__42179 {
     background-color: var(--background-surface-highest);
@@ -259,7 +259,7 @@
 }
 
 .experimentUpsellText__9b0f4 {
-    color: var(--text-normal);
+    color: var(--text-default);
     flex: 1 1 auto;
     min-width: 0;
     text-align: left
@@ -290,7 +290,7 @@
 }
 
 .errorBody__9b0f4 {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-bottom: 40px;
     margin-top: 10px
 }
@@ -317,7 +317,7 @@
 .iconLink__9b0f4 {
     background-color: var(--background-base-lowest);
     border-radius: 50%;
-    color: var(--text-normal);
+    color: var(--text-default);
     padding: 20px
 }
 
@@ -346,4 +346,4 @@
     min-width: 16px
 }
 
-/*# sourceMappingURL=90b87b60f7006773.css.map*/
+/*# sourceMappingURL=5bb1b56e111a5f1f.css.map*/

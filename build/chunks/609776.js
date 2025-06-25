@@ -175,7 +175,7 @@ function w(e) {
             inputRef: ev
           }), eu && (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
-            color: "text-warning",
+            color: "text-feedback-warning",
             className: S.warning,
             children: E.intl.string(E.t.AqTyaW)
           }), null != D ? (0, r.jsx)(c.Text, {

@@ -140,7 +140,7 @@ let R = r.memo(function() {
       isSubscriptionGated: A
     } = (0, p.Z)(n.id), L = (0, I.Mf)(i.id, n.id, r.id), M = (0, I.t4)(i.id, n.id, r.id), H = (0, I.EH)(i.id, r.id), U = (0, o.e7)([v.Z], () => v.Z.getActiveThreadCount(i.id, n.id)), G = (0, o.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(i.id, n.id)), W = e => {
       if (!M) return e.stopPropagation(), O(i.id, n.id, r.id), !0
-    }, z = e => {
+    }, F = e => {
       n.isGuildVocal() ? (0, u.jW)(e, async () => {
         let {
           default: e
@@ -158,7 +158,7 @@ let R = r.memo(function() {
           guild: i
         }))
       })
-    }, F = function(e, n) {
+    }, z = function(e, n) {
       let t = [];
       return Z.TPd.GUILD_THREADS_ONLY.has(e.type) && n >= 1 && t.push((0, l.jsx)(d.Text, {
         variant: "text-xs/normal",
@@ -187,8 +187,8 @@ let R = r.memo(function() {
       baseChannelId: w.oC.CHANNEL_BROWSER
     }), !0), X = P.intl.string(P.t.vetGQk);
     n.isGuildStageVoice() || n.isGuildVoice() ? X = P.intl.string(P.t.VJlc0d) : n.isForumLikeChannel() && (X = P.intl.string(P.t["3xjX0d"]));
-    let V = M ? "text-muted" : "text-normal",
-      J = (0, d.dQu)(M ? c.Z.colors.TEXT_MUTED : c.Z.colors.TEXT_NORMAL).hex();
+    let V = M ? "text-muted" : "text-default",
+      J = (0, d.dQu)(M ? c.Z.colors.TEXT_MUTED : c.Z.colors.TEXT_DEFAULT).hex();
     return (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(d.ua7, {
         text: H,
@@ -202,7 +202,7 @@ let R = r.memo(function() {
           })
         }, e), {
           onClick: W,
-          onContextMenu: z,
+          onContextMenu: F,
           children: [(0, l.jsxs)("div", {
             className: E.channelInfo,
             children: [(0, l.jsxs)("div", {
@@ -229,7 +229,7 @@ let R = r.memo(function() {
               }) : null]
             }), (0, l.jsx)("div", {
               className: E.channelSubtitles,
-              children: F
+              children: z
             })]
           }), (0, l.jsxs)("div", {
             className: E.channelActions,

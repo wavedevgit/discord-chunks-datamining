@@ -3,13 +3,13 @@ n.d(t, {
   Z: () => c
 }), n(539854), n(388685), n(642613);
 var i = n(73800),
-  r = n(911969),
-  l = n(675478),
+  l = n(911969),
+  r = n(675478),
   o = n(358085),
   a = n(761122);
 
 function c(e) {
-  return l.DZ.loadIfNecessary(), i.useMemo(() => {
+  return r.DZ.loadIfNecessary(), i.useMemo(() => {
     let t = [];
     e.forEach(e => t.push(e.application.id));
     let n = [...t];
@@ -27,13 +27,13 @@ let s = (e, t) => {
     }
   }), n.map((e, t) => [e, t]).filter(e => {
     var t, n;
-    let [i] = e, l = null == (n = i.application.embeddedActivityConfig) || null == (t = n.client_platform_config[(0, a.Z)((0, o.getOS)())]) ? void 0 : t.label_type;
-    return !!l && (l === r.ww.NEW || l === r.ww.UPDATED)
+    let [i] = e, r = null == (n = i.application.embeddedActivityConfig) || null == (t = n.client_platform_config[(0, a.Z)((0, o.getOS)())]) ? void 0 : t.label_type;
+    return !!r && (r === l.ww.NEW || r === l.ww.UPDATED)
   }).forEach(e => {
-    let [t, i] = e, r = null != t.application.embeddedActivityConfig && null != t.application.embeddedActivityConfig.shelf_rank ? t.application.embeddedActivityConfig.shelf_rank - 1 : i;
-    if (r < i) {
+    let [t, i] = e, l = null != t.application.embeddedActivityConfig && null != t.application.embeddedActivityConfig.shelf_rank ? t.application.embeddedActivityConfig.shelf_rank - 1 : i;
+    if (l < i) {
       let e = n[i];
-      n.splice(i, 1), n = [...n.slice(0, r), e, ...n.slice(r)]
+      n.splice(i, 1), n = [...n.slice(0, l), e, ...n.slice(l)]
     }
   }), n
 }

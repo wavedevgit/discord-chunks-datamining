@@ -19,8 +19,8 @@ let s = l.forwardRef(function(e, t) {
     sections: x,
     placeholder: h = "",
     focusAfterReady: b,
-    isReady: y,
-    "aria-labelledby": f,
+    isReady: f,
+    "aria-labelledby": y,
     "aria-controls": p
   } = e;
   return (0, r.jsx)(i.ZP, {
@@ -40,9 +40,9 @@ let s = l.forwardRef(function(e, t) {
     tags: m,
     sections: x,
     focusAfterReady: b,
-    isReady: y,
+    isReady: f,
     inputProps: {
-      "aria-labelledby": f,
+      "aria-labelledby": y,
       "aria-controls": p,
       "aria-expanded": !0,
       "aria-activedescendant": "user-row-".concat(u)

@@ -231,7 +231,7 @@ let E = e => {
               className: O.mediaChannelTagsContainer,
               children: D.map(e => (0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
-                color: "text-normal",
+                color: "text-default",
                 className: O.mediaChannelTag,
                 children: e
               }, e))
@@ -281,7 +281,7 @@ let E = e => {
               className: O.mediaChannelTagsContainer,
               children: z.map(e => (0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
-                color: "text-normal",
+                color: "text-default",
                 className: O.mediaChannelTag,
                 children: e
               }, e))

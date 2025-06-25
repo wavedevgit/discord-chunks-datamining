@@ -1,6 +1,6 @@
 /**
   Module ID: 16572
-  Original File Name: 03ff5c02d0ed7fd3
+  Original File Name: 9401062e68bf0a55
 **/
 .container_fea832 {
     background-color: var(--input-background);
@@ -34,7 +34,7 @@
     background: transparent;
     border: none;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     flex: 1;
     margin: 1px;
     min-width: 48px;
@@ -56,7 +56,7 @@
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     cursor: pointer;
     display: flex;
     flex-direction: row;
@@ -325,7 +325,7 @@
 }
 
 .sectionTitle__01dab {
-    color: var(--text-normal);
+    color: var(--text-default);
     padding-left: 16px;
     padding-top: 8px
 }
@@ -464,7 +464,7 @@
 }
 
 .sectionTitle_ac72c6 {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-bottom: 8px
 }
 
@@ -504,7 +504,7 @@
 }
 
 .inputPrefix_ac72c6 {
-    color: var(--text-normal);
+    color: var(--text-default);
     left: 8px;
     position: absolute;
     top: 14px
@@ -592,7 +592,7 @@
 }
 
 .channelNameNote_ac72c6 strong {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
-/*# sourceMappingURL=03ff5c02d0ed7fd3.css.map*/
+/*# sourceMappingURL=9401062e68bf0a55.css.map*/

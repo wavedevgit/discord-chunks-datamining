@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 4a76186e8fdea782
+  Original File Name: f9c23a13cd7525b6
 **/
 .container__74da2 {
     align-items: center;
@@ -212,7 +212,7 @@
 }
 
 .username_e73f2a {
-    color: var(--text-normal);
+    color: var(--text-default);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -2210,7 +2210,7 @@
 }
 
 .message__4c43d {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     line-height: 18px;
     margin-top: 16px;
@@ -3558,7 +3558,7 @@
     background-color: transparent;
     border: none;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     flex: 1 1 auto;
     margin-right: 16px;
     padding: 4px 0;
@@ -4266,7 +4266,7 @@
 
 .header_bad975 {
     background-color: var(--background-base-lower);
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     font-weight: var(--font-weight-semibold);
     padding: 12px;
@@ -4322,7 +4322,7 @@
 }
 
 .username_bad975 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .listeningAlong_e0cf27 {
@@ -4459,7 +4459,7 @@
 }
 
 .local__56d75,.staging__56d75 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .staging__56d75 {
@@ -4997,7 +4997,7 @@
 }
 
 .text__6efad {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 14px;
     line-height: 1.3
 }
@@ -5144,7 +5144,7 @@
 }
 
 .header__26095 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 20px;
     font-weight: var(--font-weight-medium);
     margin-bottom: 20px
@@ -5186,7 +5186,7 @@
 }
 
 .breadcrumb__67607:hover {
-    color: var(--text-normal);
+    color: var(--text-default);
     text-decoration: underline
 }
 
@@ -5245,7 +5245,7 @@
 
 .requirements_f1dca0 {
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     flex: 1 0 50%;
     margin-bottom: 16px;
     min-width: 260px;
@@ -5285,7 +5285,7 @@
 }
 
 .tabNotSelectedColor_f1dca0:hover,.tabSelectedColor_f1dca0 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .inviteSmall_f1d99d .content_f1d99d {
@@ -5372,7 +5372,7 @@
 }
 
 .buttonColorInGuild_f1d99d {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .listingWrapper__0f50c {
@@ -6919,7 +6919,7 @@ html .tabBadge__35e86 {
 }
 
 .headerCellSorted__5fe04 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .table_adb41f {
@@ -7080,7 +7080,7 @@ html .tabBadge__35e86 {
 }
 
 .lastPlayedCellNew_adb41f {
-    color: var(--text-warning);
+    color: var(--text-feedback-warning);
     font-weight: var(--font-weight-semibold);
     text-transform: uppercase
 }
@@ -7533,7 +7533,7 @@ html .tabBadge__35e86 {
 }
 
 .rowTitle_a6f654 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .scroller_fb04e1 {
@@ -8020,7 +8020,7 @@ html .tabBadge__35e86 {
 }
 
 .tip_a2f514 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px
 }
@@ -8386,7 +8386,7 @@ html .tabBadge__35e86 {
 }
 
 .verification_dede4b .title_dede4b {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .verification_dede4b .body_dede4b,.verification_dede4b .footer_dede4b {
@@ -8522,4 +8522,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=4a76186e8fdea782.css.map*/
+/*# sourceMappingURL=f9c23a13cd7525b6.css.map*/

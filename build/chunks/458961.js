@@ -86,7 +86,7 @@ function H(e) {
     value: A,
     disabled: a,
     warning: o
-  } = e, i = (0, h.Dt)(), s = a ? "text-muted" : "text-normal";
+  } = e, i = (0, h.Dt)(), s = a ? "text-muted" : "text-default";
   return (0, r.jsxs)("label", {
     className: l()(B.benefitToggleContainer, {
       [B.disabled]: a

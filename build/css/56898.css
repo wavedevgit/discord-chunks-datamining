@@ -1,6 +1,6 @@
 /**
   Module ID: 56898
-  Original File Name: 96b1942569728bd3
+  Original File Name: f0db06ffadc515b6
 **/
 .card__594f1,.spacing__594f1 {
     margin-bottom: 20px
@@ -118,7 +118,7 @@
     background-color: transparent;
     border: none;
     box-sizing: border-box;
-    color: var(--text-normal);
+    color: var(--text-default);
     flex-grow: 1;
     font-size: 16px;
     height: 40px;
@@ -152,7 +152,7 @@
 }
 
 .phoneVerificationModal_db41ea .description_db41ea {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     line-height: 20px;
     text-align: center
@@ -166,4 +166,4 @@
     align-self: stretch
 }
 
-/*# sourceMappingURL=96b1942569728bd3.css.map*/
+/*# sourceMappingURL=f0db06ffadc515b6.css.map*/

@@ -276,7 +276,7 @@ function D(e) {
         height: 16
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/semibold",
-        color: "text-positive",
+        color: "text-feedback-positive",
         children: w.intl.string(w.t.dI3q4u)
       })]
     }), (J.length > 0 || null != $) && (0, r.jsxs)("div", {

@@ -12,8 +12,8 @@ var i = n(255367),
   u = n(481060),
   d = n(667142),
   p = n(333031),
-  h = n(86654);
-let f = {
+  f = n(86654);
+let h = {
   mass: 1,
   tension: 600,
   friction: 60,
@@ -24,7 +24,7 @@ function m(e) {
   let {
     locked: t,
     pinned: n
-  } = e, [o, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), v = r.useRef(0), [b, E] = r.useState(0), {
+  } = e, [o, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), b = r.useRef(0), [v, E] = r.useState(0), {
     timeToLiveMs: _,
     reappearTimeMs: x
   } = d.ZP.useState(e => ({
@@ -36,7 +36,7 @@ function m(e) {
   }, S = r.useRef(I);
   r.useEffect(() => {
     S.current = I
-  }), r.useEffect(() => (v.current = setInterval(() => {
+  }), r.useEffect(() => (b.current = setInterval(() => {
     let e = Date.now();
     g(e), O(t => {
       if (0 === t) return e;
@@ -46,7 +46,7 @@ function m(e) {
       return n > i ? t + r : t
     })
   }, 100), () => {
-    clearInterval(v.current)
+    clearInterval(b.current)
   }), []);
   let j = () => {
       a(Date.now()), E(e => e + 1)
@@ -62,25 +62,25 @@ function m(e) {
       leave: {
         opacity: 0
       },
-      config: f
+      config: h
     }),
     [w, Z] = r.useState(!1);
   if (r.useEffect(() => {
-      b > 10 && Z(!0)
-    }, [b]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
+      v > 10 && Z(!0)
+    }, [v]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
   return t && !n ? null : (0, i.jsx)(i.Fragment, {
     children: N((e, t) => t && (0, i.jsx)(c.animated.div, {
       style: e,
-      className: h.clickZoneDebugContainer,
+      className: f.clickZoneDebugContainer,
       children: (0, i.jsx)(p.Z, {
-        className: l()(h.clickZone, C && h.clickBackground),
+        className: l()(f.clickZone, C && f.clickBackground),
         children: (0, i.jsx)(u.P3F, {
           onClick: j,
-          className: h.clickable,
+          className: f.clickable,
           children: (0, i.jsxs)(u.Text, {
             variant: "text-md/semibold",
             color: "always-white",
-            children: ["Click Me (", b, ")"]
+            children: ["Click Me (", v, ")"]
           })
         })
       })

@@ -1,6 +1,6 @@
 /**
   Module ID: 11089
-  Original File Name: e0462caaa9243beb
+  Original File Name: 3ec3b0793f389ef3
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -1452,7 +1452,7 @@
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     line-height: 18px;
@@ -1505,4 +1505,4 @@
     padding-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=e0462caaa9243beb.css.map*/
+/*# sourceMappingURL=3ec3b0793f389ef3.css.map*/

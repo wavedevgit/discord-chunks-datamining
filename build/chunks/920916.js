@@ -237,7 +237,7 @@ function q(e) {
           children: U.intl.string(U.t["0/Yz+f"])
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
-          color: "text-normal",
+          color: "text-default",
           className: G.text,
           children: _
         }), (0, r.jsx)(u.zxk, {

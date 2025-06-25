@@ -1,10 +1,10 @@
 /**
   Module ID: 83372
-  Original File Name: 27531eb849e95927
+  Original File Name: 70a7af518759a6a9
 **/
 .wrapper__14403 {
     align-items: center;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-base-lowest);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,7 +132,7 @@
 
 .footer__3564f {
     align-self: stretch;
-    border-top: 1px solid var(--background-modifier-accent)
+    border-top: 1px solid var(--border-subtle)
 }
 
 .heading__66230 {
@@ -179,4 +179,4 @@
     gap: 5px
 }
 
-/*# sourceMappingURL=27531eb849e95927.css.map*/
+/*# sourceMappingURL=70a7af518759a6a9.css.map*/

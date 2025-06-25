@@ -214,7 +214,7 @@ function E(e) {
         className: y.connectionRowHeaderContent,
         children: [t, (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
-          color: "text-normal",
+          color: "text-default",
           children: n
         })]
       }), (0, r.jsxs)("div", {

@@ -136,7 +136,7 @@ function W(e) {
       className: Z.voiceChannelText,
       children: [(0, r.jsx)(s.gj8, {
         size: "xxs",
-        color: s.TVs.colors.TEXT_NORMAL,
+        color: s.TVs.colors.TEXT_DEFAULT,
         className: Z.voiceIcon
       }), (0, r.jsx)(x.f, {
         variant: "heading-sm/semibold",

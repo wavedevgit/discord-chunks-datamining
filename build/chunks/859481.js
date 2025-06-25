@@ -63,7 +63,7 @@ function b(e) {
       className: h.formTitleField,
       children: [(0, r.jsx)(l.X6q, {
         variant: "heading-sm/semibold",
-        color: "text-normal",
+        color: "text-default",
         children: f.intl.string(f.t["6oJyq6"])
       }), n.length > 0 ? (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",

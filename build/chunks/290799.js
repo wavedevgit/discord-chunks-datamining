@@ -81,7 +81,7 @@ let f = [{
               })]
             }), n && (0, r.jsx)(s.Text, {
               className: d.answer,
-              color: "text-normal",
+              color: "text-default",
               variant: "text-md/normal",
               children: e.getAnswer()
             })]

@@ -83,7 +83,7 @@ function O(e) {
       color: (0, a.d)(o.Z.unsafe_rawColors.PRIMARY_500).hex()
     }), (0, r.jsx)(s.Text, {
       variant: "heading-md/bold",
-      color: "text-normal",
+      color: "text-default",
       children: j.intl.format(j.t.TstoSU, {
         count: y.size
       })

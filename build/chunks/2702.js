@@ -43,11 +43,11 @@ let L = e => {
     message: c.P.select()
   }, e => (0, i.jsx)(g.Text, {
     variant: "text-sm/normal",
-    color: "text-positive",
+    color: "text-feedback-positive",
     children: e
   })).otherwise(() => n ? (0, i.jsx)(g.Text, {
     variant: "text-sm/normal",
-    color: "text-normal",
+    color: "text-default",
     children: b.intl.string(b.t.z7c4bG)
   }) : null)
 };
@@ -60,7 +60,7 @@ function P(e) {
   } = e, o = (0, m.e7)([x.default], () => {
     let e = x.default.getCurrentUser();
     return l()(null != e, "ChangeUsernameModal: currentUser cannot be undefined"), e
-  }), u = r.useMemo(() => T.ZP.canEditDiscriminator(o) && !o.isPomelo(), [o]), [c, P] = r.useState(!1), [C, R] = r.useState(o.username), [N, k] = r.useState(o.discriminator), [A, I] = r.useState(""), [U, w] = r.useState(!1), Z = (0, m.e7)([v.Z], () => v.Z.getErrors()), j = (0, p.n)(), G = o.isPomelo() && j, F = (0, S.a)(C, G, !1, o.username), z = r.useRef(null), D = r.useMemo(() => {
+  }), u = r.useMemo(() => T.ZP.canEditDiscriminator(o) && !o.isPomelo(), [o]), [c, P] = r.useState(!1), [C, R] = r.useState(o.username), [k, N] = r.useState(o.discriminator), [A, I] = r.useState(""), [U, w] = r.useState(!1), Z = (0, m.e7)([v.Z], () => v.Z.getErrors()), j = (0, p.n)(), G = o.isPomelo() && j, F = (0, S.a)(C, G, !1, o.username), z = r.useRef(null), D = r.useMemo(() => {
     var e, t, n;
     return null != (n = null == Z || null == (e = Z.username) ? void 0 : e[0]) ? n : null == Z || null == (t = Z.discriminator) ? void 0 : t[0]
   }, [Z]);
@@ -70,12 +70,12 @@ function P(e) {
       null == (e = z.current) || e.focus()
     }
   }, [n]);
-  let B = N !== o.discriminator;
+  let B = k !== o.discriminator;
   async function W(e) {
     e.preventDefault(), w(!0);
     let t = await (0, f.Mn)({
       username: C,
-      discriminator: u ? N : void 0,
+      discriminator: u ? k : void 0,
       password: A
     });
     w(!1), (null == t ? void 0 : t.ok) && s()
@@ -130,8 +130,8 @@ function P(e) {
               name: "discriminator",
               "aria-label": b.intl.string(b.t.ozumaG),
               maxLength: 4,
-              value: N,
-              onChange: k,
+              value: k,
+              onChange: N,
               onFocus: () => H(!0),
               onBlur: () => H(!1),
               inputPrefix: "#",

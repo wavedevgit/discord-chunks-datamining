@@ -160,10 +160,10 @@ let H = l.forwardRef(function(e, t) {
     }, [N.id]),
     w = (0, T.dQu)(A.Z.unsafe_rawColors.PRIMARY_300).hsl(),
     H = null != (a = N.colorString) ? a : w,
-    V = null != (o = (0, _.wK)(H, .6)) ? o : void 0,
-    k = A.Z.unsafe_rawColors.WHITE_500.css,
+    k = null != (o = (0, _.wK)(H, .6)) ? o : void 0,
+    V = A.Z.unsafe_rawColors.WHITE_500.css,
     K = (0, _._i)(H);
-  null != K && .3 > (0, _.Bd)(K) && (k = A.Z.unsafe_rawColors.PRIMARY_630.css), E = x ? (0, r.jsx)(f.Z, {
+  null != K && .3 > (0, _.Bd)(K) && (V = A.Z.unsafe_rawColors.PRIMARY_630.css), E = x ? (0, r.jsx)(f.Z, {
     className: y.roleFlowerStar,
     iconClassName: u ? y.roleVerifiedIcon : void 0,
     color: H,
@@ -181,9 +181,9 @@ let H = l.forwardRef(function(e, t) {
   let Z = l.useMemo(() => {
     var t;
     return G({
-      borderColor: h ? void 0 : V
+      borderColor: h ? void 0 : k
     }, null != (t = e.style) ? t : {})
-  }, [V, h, e.style]);
+  }, [k, h, e.style]);
   return (0, r.jsx)(T.tEY, {
     children: (0, r.jsxs)("div", F(G({
       ref: t,
@@ -207,7 +207,7 @@ let H = l.forwardRef(function(e, t) {
         }),
         children: [E, u ? (0, r.jsx)(T.Dio, {
           size: "md",
-          color: k,
+          color: V,
           className: y.roleRemoveIcon,
           "aria-hidden": !0
         }) : null]
@@ -228,7 +228,7 @@ let H = l.forwardRef(function(e, t) {
   })
 });
 
-function V(e) {
+function k(e) {
   let {
     user: t,
     numRolesHidden: n,
@@ -258,7 +258,7 @@ function V(e) {
   })
 }
 
-function k(e) {
+function V(e) {
   let t = l.useRef(null),
     {
       guild: n,
@@ -384,9 +384,9 @@ function K(e) {
         disableBorderColor: R
       }, e.id)
     });
-  return null != p && 0 !== C ? t = (0, r.jsx)(V, F(G({}, e), {
+  return null != p && 0 !== C ? t = (0, r.jsx)(k, F(G({}, e), {
     numRolesHidden: C
-  })) : w && (t = (0, r.jsx)(k, F(G({}, e), {
+  })) : w && (t = (0, r.jsx)(V, F(G({}, e), {
     handleAddRole: S
   }))), (0, r.jsx)(c.bG, {
     navigator: W,

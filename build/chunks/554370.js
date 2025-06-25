@@ -12,14 +12,14 @@ var i = n(255367),
   u = n(239091),
   d = n(13245),
   p = n(100527),
-  h = n(906732),
-  f = n(70097),
+  f = n(906732),
+  h = n(70097),
   m = n(74299),
   g = n(199902),
   y = n(592125),
   O = n(430824),
-  v = n(131951),
-  b = n(944486),
+  b = n(131951),
+  v = n(944486),
   E = n(556296),
   _ = n(808506),
   x = n(237997),
@@ -32,8 +32,8 @@ var i = n(255367),
   Z = n(486016),
   P = n(32300),
   T = n(681603),
-  D = n(915614),
-  k = n(268861),
+  k = n(915614),
+  D = n(268861),
   A = n(690336),
   R = n(333031),
   L = n(371651),
@@ -47,7 +47,7 @@ var i = n(255367),
   B = n(981631),
   H = n(960972);
 let Y = !j.isPlatformEmbedded && !1,
-  Q = Y ? (0, i.jsx)(f.Z, {
+  Q = Y ? (0, i.jsx)(h.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: H.videoDev,
     autoPlay: !0,
@@ -122,7 +122,7 @@ let q = r.memo(function(e) {
       onContextMenu: J,
       children: r ? null : (0, i.jsx)(R.Z, {
         className: H.closeContainer,
-        children: (0, i.jsx)(D.Z, {
+        children: (0, i.jsx)(k.Z, {
           keybind: t,
           onClick: n,
           IconComponent: c.Uz9
@@ -137,7 +137,7 @@ let q = r.memo(function(e) {
     } = e;
     return t && n ? (0, i.jsx)(R.Z, {
       className: H.closeContainer,
-      children: (0, i.jsx)(D.Z, {
+      children: (0, i.jsx)(k.Z, {
         onClick: () => d.Z.setInputLocked(!1, (0, N.getPID)()),
         IconComponent: c.d$P
       })
@@ -171,9 +171,9 @@ function er(e) {
   } = e, n = (0, W.Z)(), {
     locked: o,
     focused: u,
-    incompatibleApp: f,
+    incompatibleApp: h,
     hasZeroSizeDimension: j,
-    keybind: D
+    keybind: k
   } = (0, a.cj)([z.ZP, x.default, I.Z, E.ZP], () => {
     let e = I.Z.windowSize((0, w.ZY)(n)),
       t = E.ZP.getOverlayKeybind(),
@@ -187,7 +187,7 @@ function er(e) {
     }
   }, [n]), {
     analyticsLocations: R
-  } = (0, h.ZP)(p.Z.OVERLAY);
+  } = (0, f.ZP)(p.Z.OVERLAY);
   return ! function(e, t) {
     let n = r.useRef({
       mount: e,
@@ -208,12 +208,12 @@ function er(e) {
   }), ! function() {
     let e = r.useRef(!1),
       t = (0, U.pL)(),
-      n = b.Z.getVoiceChannelId(),
+      n = v.Z.getVoiceChannelId(),
       i = y.Z.getChannel(n),
       o = null != i ? O.Z.getGuild(i.guild_id) : null,
       l = null != g.Z.getCurrentUserActiveStream(),
       a = null != n,
-      s = (0, m.Z)(v.Z) && !l && null != t,
+      s = (0, m.Z)(b.Z) && !l && null != t,
       c = a && null != o && null != n,
       {
         allowActivityWidget: u
@@ -227,21 +227,21 @@ function er(e) {
       let l = M.Z.isNotificationDisabled(Z.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
         a = M.Z.isNotificationDisabled(Z.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),
         p = M.Z.isNotificationDisabled(Z.OverlayNotificationDisabledSetting.GAME_ACTIVITY),
-        h = [];
-      l || h.push({
+        f = [];
+      l || f.push({
         type: G.nc.WELCOME
-      }), !a && (s && c ? h.push({
+      }), !a && (s && c ? f.push({
         type: G.nc.GO_LIVE_VOICE,
         game: t,
         voiceChannelId: n,
         voiceGuild: o
-      }) : s && h.push({
+      }) : s && f.push({
         type: G.nc.GO_LIVE_NON_VOICE,
         game: t
-      })), u && !p && h.push({
+      })), u && !p && f.push({
         type: G.nc.CONTENT_INVENTORY,
         entries: []
-      }), 0 !== h.length && d.Z.overlayMounted(...h)
+      }), 0 !== f.length && d.Z.overlayMounted(...f)
     }, [a, s, c, t, n, o, u])
   }(), r.useEffect(() => {
     if (S.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
@@ -258,16 +258,16 @@ function er(e) {
       }
     }
     n.removeEventListener("contextmenu", X, !1), null == K && (K = Date.now(), d.Z.track(B.rMx.OVERLAY_UNLOCKED))
-  }, [o, n]), (0, i.jsx)(h.Gt, {
+  }, [o, n]), (0, i.jsx)(f.Gt, {
     value: R,
-    children: j || f ? null : (0, i.jsx)(c.f6W, {
+    children: j || h ? null : (0, i.jsx)(c.f6W, {
       theme: B.BRd.MIDNIGHT,
       children: e => (0, i.jsxs)("div", {
         id: "overlay-container",
         className: l()(H.overlay, e),
         children: [!t && Q, (0, i.jsx)(q, {
           locked: o,
-          keybind: D,
+          keybind: k,
           onClick: ee
         }), (0, i.jsx)(A.Z, {
           className: l()({
@@ -277,7 +277,7 @@ function er(e) {
         }), (0, i.jsx)(V.Z, {}), !t && Y && (0, i.jsx)($, {
           locked: o,
           focused: u
-        }), (0, i.jsx)(T.Z, {}), (0, i.jsx)(k.Z, {
+        }), (0, i.jsx)(T.Z, {}), (0, i.jsx)(D.Z, {
           locked: o
         }), (0, i.jsx)(c.Ixi, {})]
       })

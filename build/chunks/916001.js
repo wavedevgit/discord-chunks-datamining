@@ -29,7 +29,7 @@ function i(e) {
         horizontal: !0
       }), (0, r.jsxs)(a.Text, {
         variant: i,
-        color: "text-normal",
+        color: "text-default",
         children: [(0, r.jsx)(a.nn4, {
           children: l.intl.string(l.t.RnyseH)
         }), n.name]

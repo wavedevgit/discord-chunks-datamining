@@ -49,7 +49,7 @@ function f(e) {
         children: t
       }) : (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        color: "text-normal",
+        color: "text-default",
         children: t
       })
     }), i || u ? (0, r.jsx)(_, {

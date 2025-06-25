@@ -1,6 +1,6 @@
 /**
   Module ID: 92241
-  Original File Name: 061756e93871f176
+  Original File Name: 65d2614907b5d4ba
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -464,7 +464,7 @@
     align-items: center;
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 14px;
     line-height: 18px;
@@ -517,4 +517,4 @@
     padding-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=061756e93871f176.css.map*/
+/*# sourceMappingURL=65d2614907b5d4ba.css.map*/

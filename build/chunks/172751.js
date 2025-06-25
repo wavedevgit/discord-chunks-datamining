@@ -68,7 +68,7 @@ let E = i.memo(function(e) {
       onClick: u,
       onMouseEnter: d,
       textVariant: p = "text-xs/semibold",
-      textColor: m = "text-normal",
+      textColor: m = "text-default",
       badgeSize: g = _.Gg.SIZE_12,
       inline: b = !0
     } = e;

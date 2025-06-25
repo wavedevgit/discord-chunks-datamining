@@ -1,6 +1,6 @@
 /**
   Module ID: 49286
-  Original File Name: 3d9df22dfb5cbceb
+  Original File Name: d516babc2dea75dd
 **/
 .imageUploader_e4d0bf {
     font-size: 12px;
@@ -248,7 +248,7 @@
 .icon__97dce {
     position: relative;
     top: 3px;
-    fill: var(--text-normal)
+    fill: var(--text-default)
 }
 
 .sidebarScrollable__53543 {
@@ -298,7 +298,7 @@
 }
 
 .icon_b28dff {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin-right: 8px
 }
 
@@ -378,7 +378,7 @@
 }
 
 .channelIcon_e98186 {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .lockIcon_e98186 {
@@ -775,7 +775,7 @@
 }
 
 .sourceName_ebafdd {
-    color: var(--text-normal);
+    color: var(--text-default);
     margin: 0 8px 0 4px
 }
 
@@ -1907,7 +1907,7 @@
 }
 
 .inviteSettingsInviteRow__1de14 {
-    color: var(--text-normal);
+    color: var(--text-default);
     font-size: 16px;
     height: 62px;
     line-height: 20px;
@@ -2021,4 +2021,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=3d9df22dfb5cbceb.css.map*/
+/*# sourceMappingURL=d516babc2dea75dd.css.map*/

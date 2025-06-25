@@ -188,7 +188,7 @@ function L(e) {
           children: v ? M.intl.string(M.t["T+zF9P"]) : M.intl.string(M.t["IZ+SVl"])
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
-          color: "text-normal",
+          color: "text-default",
           children: v ? M.intl.string(M.t.Izgpmp) : M.intl.string(M.t["7FHbPD"])
         })]
       }), (0, r.jsx)("div", {

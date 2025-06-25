@@ -1,6 +1,6 @@
 /**
   Module ID: 54597
-  Original File Name: 6259d649a7b944af
+  Original File Name: b97fba2c8fe2247e
 **/
 .modal_f0dcaf {
     border-radius: 8px
@@ -27,7 +27,7 @@
     align-items: center;
     background-color: var(--background-base-low);
     border-radius: 50%;
-    color: var(--text-normal);
+    color: var(--text-default);
     display: flex;
     font-size: 40px;
     height: 120px;
@@ -176,4 +176,4 @@
     gap: 4px
 }
 
-/*# sourceMappingURL=6259d649a7b944af.css.map*/
+/*# sourceMappingURL=b97fba2c8fe2247e.css.map*/

@@ -45,7 +45,7 @@ function f(e) {
         }),
         name: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
-          color: "text-normal",
+          color: "text-default",
           children: p.intl.string(p.t.OIgYlZ)
         }),
         description: m === c.II ? (0, r.jsx)(a.$jN, {
@@ -65,7 +65,7 @@ function f(e) {
         }),
         name: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
-          color: "text-normal",
+          color: "text-default",
           children: p.intl.string(p.t.DFSvTk)
         }),
         description: g === c.II ? (0, r.jsx)(a.$jN, {
@@ -85,7 +85,7 @@ function f(e) {
         }),
         name: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
-          color: "text-normal",
+          color: "text-default",
           children: p.intl.string(p.t["Aw9+/P"])
         }),
         description: b === c.II ? (0, r.jsx)(a.$jN, {

@@ -52,7 +52,7 @@ function h(e) {
         children: [p.intl.string(p.t.WTozwc), (0, a.jsxs)("div", {
           className: f.userCountPill,
           children: [(0, a.jsx)(s.Text, {
-            color: "text-normal",
+            color: "text-default",
             variant: "text-xs/medium",
             children: l.length
           }), (0, a.jsx)(s.iFz, {

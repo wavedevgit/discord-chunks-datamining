@@ -1,6 +1,6 @@
 /**
   Module ID: 51868
-  Original File Name: c56a3515a72cdb03
+  Original File Name: 7e671a5de63f5405
 **/
 .title_feb59c {
     margin-bottom: 8px
@@ -46,7 +46,7 @@ h4.title_feb59c,h5.title_feb59c,h6.title_feb59c {
 }
 
 h1.title_feb59c,h2.title_feb59c {
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .hljs {
@@ -58,7 +58,7 @@ h1.title_feb59c,h2.title_feb59c {
     -moz-text-size-adjust: none;
     text-size-adjust: none;
     background: var(--background-base-lower);
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .theme-dark .hljs-doctag,.theme-dark .hljs-keyword,.theme-dark .hljs-meta .hljs-keyword,.theme-dark .hljs-template-tag,.theme-dark .hljs-template-variable,.theme-dark .hljs-type,.theme-dark .hljs-variable.language_ {
@@ -191,7 +191,7 @@ h1.title_feb59c,h2.title_feb59c {
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     text-size-adjust: none;
-    color: var(--text-normal)
+    color: var(--text-default)
 }
 
 .hljs-doctag_d285a6,.hljs-keyword_d285a6,.hljs-meta_d285a6 .hljs-keyword_d285a6,.hljs-template-tag_d285a6,.hljs-template-variable_d285a6,.hljs-type_d285a6,.hljs-variable_d285a6.language__d285a6 {
@@ -392,4 +392,4 @@ h1.title_feb59c,h2.title_feb59c {
     padding-bottom: 30px
 }
 
-/*# sourceMappingURL=c56a3515a72cdb03.css.map*/
+/*# sourceMappingURL=7e671a5de63f5405.css.map*/
