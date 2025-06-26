@@ -344,7 +344,8 @@ function X(e) {
         children: (0, r.jsx)(z, {
           featureSet: u,
           isModal: C,
-          isGift: m
+          isGift: m,
+          isApplicationHome: !0
         })
       })]
     }), s, g && (0, r.jsx)(E.K, {})]

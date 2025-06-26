@@ -3,7 +3,9 @@
 n.d(t, {
   Ag: () => o,
   Q_: () => i,
-  hi: () => a
+  UD: () => l,
+  hi: () => a,
+  y: () => s
 });
 var r = n(570140);
 
@@ -27,6 +29,19 @@ function o(e) {
   r.Z.dispatch({
     type: "UPDATE_THEME_PREFERENCES",
     preferences: e
+  })
+}
+
+function s(e) {
+  r.Z.dispatch({
+    type: "SET_THEME_OVERRIDE",
+    theme: e
+  })
+}
+
+function l() {
+  r.Z.dispatch({
+    type: "CLEAR_THEME_OVERRIDE"
   })
 }
 n(541049), n(740492), n(874893)

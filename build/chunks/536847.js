@@ -34,7 +34,7 @@ function _() {
       let {
         value: t
       } = e;
-      (0, c.HV)(), (0, l.fc)(t)
+      (0, c.HV)(), (0, l.Bv)(t)
     },
     look: "pill"
   })
