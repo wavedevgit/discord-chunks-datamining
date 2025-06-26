@@ -175,7 +175,7 @@ function w(e) {
     }, [t, k, n]),
     G = i.useMemo(() => {
       let e = [];
-      return null == t || n ? e.push(h()) : 0 === t.length ? e.push((0, r.jsx)(N, {}, "empty-state")) : Z ? e.push(...t.map(e => {
+      return null == t || n || null == U ? e.push(h()) : 0 === t.length ? e.push((0, r.jsx)(N, {}, "empty-state")) : Z ? e.push(...t.map(e => {
         let {
           message: t
         } = e;
