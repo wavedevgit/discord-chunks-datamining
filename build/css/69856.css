@@ -1,6 +1,6 @@
 /**
   Module ID: 69856
-  Original File Name: 95cfdb2937f1e5ba
+  Original File Name: fa9d8dfde003c25b
 **/
 .tooltipTextContainer__0ca35 {
     align-items: center;
@@ -7119,6 +7119,12 @@ html .progress__61462 {
     margin-right: 6px
 }
 
+.ctaReactionButton__45eb7 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
 .ctaText__45eb7 {
     display: flex;
     height: 100%
@@ -11123,4 +11129,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=95cfdb2937f1e5ba.css.map*/
+/*# sourceMappingURL=fa9d8dfde003c25b.css.map*/
