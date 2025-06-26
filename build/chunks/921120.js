@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   a = n(120356),
-  o = n.n(a),
-  i = n(979554),
+  i = n.n(a),
+  o = n(979554),
   s = n(876917),
   c = n(597688),
   u = n(616066),
@@ -107,23 +107,23 @@ let f = {
       }, d.lb)
     }, [n]), (0, r.jsx)("div", {
       style: a,
-      className: o()(p.jumbleWrapper, {
+      className: i()(p.jumbleWrapper, {
         [p.peaking]: t,
         [p.transitioned]: g
       }),
       children: b.map((e, t) => {
         var l, a;
         let {
-          top: o,
+          top: i,
           left: c,
           rotation: b,
           size: g,
           skuId: h
-        } = e, _ = null == (l = m[t]) ? void 0 : l.items[0], C = null == (a = m[t]) ? void 0 : a.type, v = C === i.Z.AVATAR_DECORATION ? 384 : 512;
+        } = e, _ = null == (l = m[t]) ? void 0 : l.items[0], C = null == (a = m[t]) ? void 0 : a.type, v = C === o.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: p.asset,
           style: {
-            top: n ? -f - v : o,
+            top: n ? -f - v : i,
             left: n ? "".concat(c - 75 - 350 * Math.random()) : c,
             transform: "rotate(".concat(b, "deg)"),
             height: g.y,
@@ -131,9 +131,9 @@ let f = {
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
-          children: [null != _ && C === i.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
+          children: [null != _ && C === o.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
             item: _
-          }), null != _ && C === i.Z.PROFILE_EFFECT && (0, r.jsx)(s.Z, {
+          }), null != _ && C === o.Z.PROFILE_EFFECT && (0, r.jsx)(s.Z, {
             profileEffectId: _.id,
             isPurchased: !1,
             isHovering: !0

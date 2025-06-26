@@ -1,4 +1,4 @@
-/** Chunk was on 93898 **/
+/** Chunk was on 25904 **/
 n.d(t, {
   KE: () => b,
   KT: () => m,
@@ -48,7 +48,7 @@ function b(e, t) {
       case p.Us.LEVEL:
         let {
           default: i
-        } = await n.e("99014").then(n.bind(n, 271224));
+        } = await n.e("45162").then(n.bind(n, 271224));
         return n => (0, r.jsx)(i, g({
           guildId: e,
           powerup: t

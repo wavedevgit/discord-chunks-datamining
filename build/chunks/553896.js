@@ -1,25 +1,25 @@
-/** Chunk was on 91372 **/
-n.d(t, {
-  q: () => s
-}), n(291175), n(848572);
-var i = n(474936),
-  r = n(388032);
-let s = (e, t) => {
+/** Chunk was on 89839 **/
+t.d(n, {
+  q: () => a
+}), t(291175), t(848572);
+var l = t(474936),
+  r = t(388032);
+let a = (e, n) => {
   switch (e) {
-    case i.VU.PREMIUM_TENURE_1_MONTH:
-    case i.VU.PREMIUM_TENURE_3_MONTH:
-    case i.VU.PREMIUM_TENURE_6_MONTH:
+    case l.VU.PREMIUM_TENURE_1_MONTH:
+    case l.VU.PREMIUM_TENURE_3_MONTH:
+    case l.VU.PREMIUM_TENURE_6_MONTH:
       return r.intl.formatToPlainString(r.t.erUSmJ, {
-        months: t
+        months: n
       });
-    case i.VU.PREMIUM_TENURE_12_MONTH:
-    case i.VU.PREMIUM_TENURE_24_MONTH:
-    case i.VU.PREMIUM_TENURE_36_MONTH:
-    case i.VU.PREMIUM_TENURE_60_MONTH:
+    case l.VU.PREMIUM_TENURE_12_MONTH:
+    case l.VU.PREMIUM_TENURE_24_MONTH:
+    case l.VU.PREMIUM_TENURE_36_MONTH:
+    case l.VU.PREMIUM_TENURE_60_MONTH:
       return r.intl.formatToPlainString(r.t.IfYQVF, {
-        years: t / 12
+        years: n / 12
       });
-    case i.VU.PREMIUM_TENURE_72_MONTH:
+    case l.VU.PREMIUM_TENURE_72_MONTH:
       return r.intl.formatToPlainString(r.t.IfYQVF, {
         years: "6+"
       });

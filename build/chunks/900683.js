@@ -1,7 +1,7 @@
-/** Chunk was on 98595 **/
+/** Chunk was on 99014 **/
 n.d(t, {
   Z: () => d,
-  e: () => c
+  e: () => u
 });
 var i = n(255367);
 n(73800);
@@ -10,13 +10,13 @@ var r = n(120356),
   o = n(481060),
   s = n(388032),
   a = n(978862),
-  u = n(531599);
+  c = n(531599);
 
-function c() {
+function u() {
   return (0, i.jsxs)("div", {
     className: l()(a.upsellFooter, a.reverseTrialUpsellContainer),
     children: [(0, i.jsx)("img", {
-      src: u.Z,
+      src: c.Z,
       alt: "reverse trial unlock",
       className: a.unlockIcon
     }), (0, i.jsx)(o.Text, {

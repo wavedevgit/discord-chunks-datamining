@@ -1,4 +1,4 @@
-/** Chunk was on 91372 **/
+/** Chunk was on 89795 **/
 e.exports = {
   applicationHomeBanner: "applicationHomeBanner__62eb1",
   settingsBanner: "settingsBanner__62eb1",
@@ -20,5 +20,6 @@ e.exports = {
   badgeGradient: "badgeGradient__62eb1",
   buttonGradient: "buttonGradient__62eb1",
   subBanner: "subBanner__62eb1",
+  subHomeBannerImageContainer: "subHomeBannerImageContainer__62eb1",
   subBannerContent: "subBannerContent__62eb1"
 }

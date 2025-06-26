@@ -176,9 +176,9 @@ function x(e) {
     guildId: t,
     channelId: n
   } = e;
-  null == t && (0, d.a)({
+  null != t ? L(t) : (0, d.a)({
     location: "SearchStore"
-  }) ? L(h.aib.DMS) : L(null != t ? t : n)
+  }) ? L(h.aib.DMS) : L(n)
 }
 
 function k(e) {

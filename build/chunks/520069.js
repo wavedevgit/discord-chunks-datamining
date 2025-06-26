@@ -1,4 +1,5 @@
-/** Chunk was on 93898 **/
+/** Chunk was on 71879 **/
+"use strict";
 e.exports = {
   tags: "tags__08166",
   pinIcon: "pinIcon__08166",

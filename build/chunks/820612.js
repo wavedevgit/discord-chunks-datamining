@@ -1,4 +1,4 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 92404 **/
 "use strict";
 e.exports = {
   variantsPanel: "variantsPanel__6f029",

@@ -1,4 +1,5 @@
-/** Chunk was on 99014 **/
+/** Chunk was on 92754 **/
+"use strict";
 e.exports = {
   icon: "icon_f4b9b5",
   unlocked: "unlocked_f4b9b5",

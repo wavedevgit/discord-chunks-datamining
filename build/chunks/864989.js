@@ -1,4 +1,4 @@
-/** Chunk was on 93898 **/
+/** Chunk was on 25904 **/
 e.exports = {
   panel: "panel__5dec7",
   body: "body__5dec7",

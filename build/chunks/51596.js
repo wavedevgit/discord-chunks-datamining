@@ -1,242 +1,242 @@
-/** Chunk was on 91372 **/
+/** Chunk was on 91081 **/
 n.d(t, {
-  $Z: () => D,
-  Cp: () => Z,
-  F_: () => A,
-  Se: () => L,
-  tF: () => k,
-  yC: () => w
+  $Z: () => k,
+  Cp: () => H,
+  F_: () => Z,
+  Se: () => B,
+  tF: () => D,
+  yC: () => v
 }), n(413496), n(433524), n(35282), n(704826), n(388685);
-var i = n(481060),
-  r = n(570140),
-  s = n(493683),
-  l = n(475179),
-  a = n(925549),
+var l = n(481060),
+  i = n(570140),
+  c = n(493683),
+  a = n(475179),
+  r = n(925549),
   o = n(287734),
-  c = n(230711),
-  d = n(212819),
+  s = n(230711),
+  _ = n(212819),
   u = n(815372),
-  m = n(336197),
-  g = n(359110),
+  d = n(336197),
+  h = n(359110),
   p = n(769654),
-  h = n(722589),
-  f = n(131704),
-  b = n(592125),
-  _ = n(283595),
-  x = n(944486),
-  E = n(914010),
-  j = n(626135),
-  C = n(777754),
-  O = n(823385),
-  S = n(981631),
-  v = n(176505);
+  C = n(722589),
+  E = n(131704),
+  f = n(592125),
+  I = n(283595),
+  T = n(944486),
+  g = n(914010),
+  A = n(626135),
+  S = n(777754),
+  m = n(823385),
+  N = n(981631),
+  x = n(176505);
 
-function T(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), l.forEach(function(t) {
+      var l;
+      l = n[t], t in e ? Object.defineProperty(e, t, {
+        value: l,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = i
+      }) : e[t] = l
     })
   }
   return e
 }
-let I = () => Promise.resolve();
-I = n(346329).playApplication;
-let N = Object.freeze({
-    [d.xQ.USER]: d.h8.USER,
-    [d.xQ.TEXT_CHANNEL]: d.h8.TEXT_CHANNEL,
-    [d.xQ.VOICE_CHANNEL]: d.h8.VOICE_CHANNEL,
-    [d.xQ.GUILD]: d.h8.GUILD,
-    [d.xQ.APPLICATION]: d.h8.APPLICATION
+let y = () => Promise.resolve();
+y = n(346329).playApplication;
+let b = Object.freeze({
+    [_.xQ.USER]: _.h8.USER,
+    [_.xQ.TEXT_CHANNEL]: _.h8.TEXT_CHANNEL,
+    [_.xQ.VOICE_CHANNEL]: _.h8.VOICE_CHANNEL,
+    [_.xQ.GUILD]: _.h8.GUILD,
+    [_.xQ.APPLICATION]: _.h8.APPLICATION
   }),
-  y = new RegExp("^".concat(d.xQ.USER, "|").concat(d.xQ.TEXT_CHANNEL, "|").concat(d.xQ.VOICE_CHANNEL, "|\\").concat(d.xQ.GUILD, "|\\").concat(d.xQ.APPLICATION));
+  O = new RegExp("^".concat(_.xQ.USER, "|").concat(_.xQ.TEXT_CHANNEL, "|").concat(_.xQ.VOICE_CHANNEL, "|\\").concat(_.xQ.GUILD, "|\\").concat(_.xQ.APPLICATION));
 
-function A(e) {
+function Z(e) {
   var t;
-  let n, [i, r] = (n = null != (t = N[e.charAt(0)]) ? t : null, [e.replace(y, ""), n]);
+  let n, [l, i] = (n = null != (t = b[e.charAt(0)]) ? t : null, [e.replace(O, ""), n]);
   return {
-    query: i,
-    queryMode: r
+    query: l,
+    queryMode: i
   }
 }
 
-function P(e, t) {
+function L(e, t) {
   let {
     results: n,
-    queryMode: i,
-    query: r,
-    maxQueryLength: s
-  } = O.Z.getProps(), l = E.Z.getGuildId(), a = x.Z.getChannelId(l), o = n[(0, d.gJ)(d.a8.DOWN, -1, n)], c = C.Z.isEmail(r), u = C.Z.isPhoneNumber(r), m = C.Z.isUserTagLike(r), g = null != a && (0, v.AB)(a), p = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
-    current_channel_id: g ? void 0 : a,
-    current_channel_static_route: g ? a : void 0,
-    current_guild_id: l,
-    query_mode: null != i ? i : "GENERAL",
-    query_length: r.length,
-    max_query_length: s,
-    is_email_like: c,
+    queryMode: l,
+    query: i,
+    maxQueryLength: c
+  } = m.Z.getProps(), a = g.Z.getGuildId(), r = T.Z.getChannelId(a), o = n[(0, _.gJ)(_.a8.DOWN, -1, n)], s = S.Z.isEmail(i), u = S.Z.isPhoneNumber(i), d = S.Z.isUserTagLike(i), h = null != r && (0, x.AB)(r), p = e => null == e ? null : e.type === _.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, C = {
+    current_channel_id: h ? void 0 : r,
+    current_channel_static_route: h ? r : void 0,
+    current_guild_id: a,
+    query_mode: null != l ? l : "GENERAL",
+    query_length: i.length,
+    max_query_length: c,
+    is_email_like: s,
     is_phone_like: u,
-    is_username_like: m,
-    query: c || u || m ? null : r,
+    is_username_like: d,
+    query: s || u || d ? null : i,
     top_result_type: p(o),
     top_result_score: null != o ? o.score : null,
-    num_results_total: O.Z.getResultTotals(),
-    num_results_users: O.Z.getResultTotals(d.h8.USER),
-    num_results_text_channels: O.Z.getResultTotals(d.h8.TEXT_CHANNEL),
-    num_results_voice_channels: O.Z.getResultTotals(d.h8.VOICE_CHANNEL),
-    num_results_guilds: O.Z.getResultTotals(d.h8.GUILD),
-    num_results_group_dms: O.Z.getResultTotals(d.h8.GROUP_DM)
+    num_results_total: m.Z.getResultTotals(),
+    num_results_users: m.Z.getResultTotals(_.h8.USER),
+    num_results_text_channels: m.Z.getResultTotals(_.h8.TEXT_CHANNEL),
+    num_results_voice_channels: m.Z.getResultTotals(_.h8.VOICE_CHANNEL),
+    num_results_guilds: m.Z.getResultTotals(_.h8.GUILD),
+    num_results_group_dms: m.Z.getResultTotals(_.h8.GROUP_DM)
   };
-  if (null != a) {
-    let e = b.Z.getChannel(a);
-    h.current_channel_type = null != e ? e.type : null
+  if (null != r) {
+    let e = f.Z.getChannel(r);
+    C.current_channel_type = null != e ? e.type : null
   }
   if (null != t) {
     let {
       type: e,
-      score: i,
-      record: r
+      score: l,
+      record: i
     } = t;
-    switch (h.selected_type = p(t), h.selected_score = i, h.selected_index = n.indexOf(t), e) {
-      case d.h8.GUILD:
-        h.selected_guild_id = r.id;
+    switch (C.selected_type = p(t), C.selected_score = l, C.selected_index = n.indexOf(t), e) {
+      case _.h8.GUILD:
+        C.selected_guild_id = i.id;
         break;
-      case d.h8.TEXT_CHANNEL:
-      case d.h8.VOICE_CHANNEL:
-        r instanceof f.Sf && (h.selected_guild_id = null != r.guild_id ? r.guild_id : null), h.selected_channel_id = r.id;
+      case _.h8.TEXT_CHANNEL:
+      case _.h8.VOICE_CHANNEL:
+        i instanceof E.Sf && (C.selected_guild_id = null != i.guild_id ? i.guild_id : null), C.selected_channel_id = i.id;
         break;
-      case d.h8.GROUP_DM:
-        h.selected_channel_id = r.id;
+      case _.h8.GROUP_DM:
+        C.selected_channel_id = i.id;
         break;
-      case d.h8.USER:
-        h.selected_user_id = r.id
+      case _.h8.USER:
+        C.selected_user_id = i.id
     }
   }
-  j.default.track(e, h)
+  A.default.track(e, C)
 }
 
-function R() {
-  r.Z.dispatch({
+function U() {
+  i.Z.dispatch({
     type: "QUICKSWITCHER_HIDE"
   })
 }
 
-function D() {
+function k() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "KEYBIND",
     t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
   ! function(e) {
     let t;
-    if (O.Z.isOpen()) return;
-    let n = E.Z.getGuildId(),
-      i = x.Z.getChannelId(n);
-    if (null != i) {
-      let e = b.Z.getChannel(i);
+    if (m.Z.isOpen()) return;
+    let n = g.Z.getGuildId(),
+      l = T.Z.getChannelId(n);
+    if (null != l) {
+      let e = f.Z.getChannel(l);
       t = null != e ? e.type : null
     }
-    j.default.track(S.rMx.QUICKSWITCHER_OPENED, {
+    A.default.track(N.rMx.QUICKSWITCHER_OPENED, {
       source: e,
       current_guild_id: n,
-      current_channel_id: i,
+      current_channel_id: l,
       current_channel_type: t
     })
-  }(e), r.Z.dispatch(T({
+  }(e), i.Z.dispatch(R({
     type: "QUICKSWITCHER_SHOW"
-  }, A(t)))
+  }, Z(t)))
 }
 
-function Z() {
-  P(S.rMx.QUICKSWITCHER_CLOSED), R()
+function H() {
+  L(N.rMx.QUICKSWITCHER_CLOSED), U()
 }
 
-function w(e) {
-  r.Z.dispatch(T({
+function v(e) {
+  i.Z.dispatch(R({
     type: "QUICKSWITCHER_SEARCH"
-  }, A(e)))
+  }, Z(e)))
 }
 
-function k(e) {
-  r.Z.dispatch({
+function D(e) {
+  i.Z.dispatch({
     type: "QUICKSWITCHER_SELECT",
     selectedIndex: e
   })
 }
 
-function L(e) {
+function B(e) {
   let t, n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-  R(), (0, i.pTH)(), P(S.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
+  U(), (0, l.pTH)(), L(N.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
   let {
-    type: f,
-    record: x
-  } = e, E = {
-    page: S.ZY5.QUICK_SWITCHER
+    type: E,
+    record: T
+  } = e, g = {
+    page: N.ZY5.QUICK_SWITCHER
   };
-  switch (f) {
-    case d.h8.GUILD:
-      (0, p.X)(x.id, {
+  switch (E) {
+    case _.h8.GUILD:
+      (0, p.X)(T.id, {
         navigationReplace: !0
       });
       break;
-    case d.h8.TEXT_CHANNEL:
-      null != (t = b.Z.getChannel(x.id)) && (0, g.Kh)(t.id, {
+    case _.h8.TEXT_CHANNEL:
+      null != (t = f.Z.getChannel(T.id)) && (0, h.Kh)(t.id, {
         state: {
-          analyticsSource: E
+          analyticsSource: g
         },
         navigationReplace: !0
       });
       break;
-    case d.h8.VOICE_CHANNEL:
-      null != (t = b.Z.getChannel(x.id)) && (n ? l.Z.updateChatOpen(x.id, !0) : o.default.selectVoiceChannel(x.id), (0, g.Kh)(t.id, {
+    case _.h8.VOICE_CHANNEL:
+      null != (t = f.Z.getChannel(T.id)) && (n ? a.Z.updateChatOpen(T.id, !0) : o.default.selectVoiceChannel(T.id), (0, h.Kh)(t.id, {
         state: {
-          analyticsSource: E
+          analyticsSource: g
         },
         navigationReplace: !0
       }));
       break;
-    case d.h8.USER:
-      s.Z.openPrivateChannel({
-        recipientIds: [x.id],
+    case _.h8.USER:
+      c.Z.openPrivateChannel({
+        recipientIds: [T.id],
         location: "Quickswitcher"
-      }), a.Z.channelListScrollTo(S.ME, b.Z.getDMFromUserId(x.id));
+      }), r.Z.channelListScrollTo(N.ME, f.Z.getDMFromUserId(T.id));
       break;
-    case d.h8.GROUP_DM:
-      (0, g.Kh)(x.id, {
+    case _.h8.GROUP_DM:
+      (0, h.Kh)(T.id, {
         navigationReplace: !0
-      }), a.Z.channelListScrollTo(S.ME, x.id);
+      }), r.Z.channelListScrollTo(N.ME, T.id);
       break;
-    case d.h8.APPLICATION:
-      let j = _.Z.getActiveLibraryApplication(x.id);
-      I(x.id, j, {
+    case _.h8.APPLICATION:
+      let A = I.Z.getActiveLibraryApplication(T.id);
+      y(T.id, A, {
         analyticsParams: {
-          source: S.Sbl.QUICK_SWITCHER,
-          location: S.Sbl.QUICK_SWITCHER
+          source: N.Sbl.QUICK_SWITCHER,
+          location: N.Sbl.QUICK_SWITCHER
         }
       });
       break;
-    case d.h8.LINK:
-      (0, m.Z)(x.path, {
+    case _.h8.LINK:
+      (0, d.Z)(T.path, {
         navigationReplace: !0
       });
       break;
-    case d.h8.IN_APP_NAVIGATION:
+    case _.h8.IN_APP_NAVIGATION:
       if (e.record.type === u.Ky.SETTINGS) {
-        let t = (0, h.default)(e.record.path);
-        null != t && c.Z.open(t.section, t.subsection, {
+        let t = (0, C.default)(e.record.path);
+        null != t && s.Z.open(t.section, t.subsection, {
           openWithoutBackstack: !1,
           impressionSource: t.source
         })
-      } else(0, m.Z)(x.path, {
+      } else(0, d.Z)(T.path, {
         navigationReplace: !0
       })
   }
-  r.Z.dispatch({
+  i.Z.dispatch({
     type: "QUICKSWITCHER_SWITCH_TO",
     result: e
   })

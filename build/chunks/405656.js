@@ -235,8 +235,11 @@ function P() {
 }
 
 function w(e) {
-  let t = (0, s.a)({
-    location: "isGuildOrDMSearchType"
-  });
-  return e === d.aib.GUILD || e === d.aib.DMS && t
+  if (e === d.aib.GUILD) return !0;
+  {
+    let t = (0, s.a)({
+      location: "isChannelFilterSupported"
+    });
+    return e === d.aib.DMS && t
+  }
 }

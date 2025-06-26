@@ -1,4 +1,4 @@
-/** Chunk was on 91372 **/
+/** Chunk was on 89795 **/
 e.exports = {
   card: "card__594f1",
   spacing: "spacing__594f1",

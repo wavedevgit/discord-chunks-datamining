@@ -1,4 +1,4 @@
-/** Chunk was on 91372 **/
+/** Chunk was on 89795 **/
 n.d(t, {
   C: () => C,
   Z: () => O
@@ -123,7 +123,7 @@ let O = function(e) {
   }), {}) : (0, r.jsx)(() => (0, r.jsxs)("div", {
     className: b.subBanner,
     children: [(0, r.jsx)("div", {
-      className: b.settingsBannerLeftImageContainer,
+      className: b.subHomeBannerImageContainer,
       children: (0, r.jsx)("img", {
         alt: "",
         src: _.Z,
