@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(580914),
   v = n(963278),
   O = n(921120),
-  S = n(384067),
-  x = n(215023),
+  x = n(384067),
+  S = n(215023),
   E = n(981631),
   y = n(388032),
   j = n(806734);
@@ -38,7 +38,7 @@ let k = e => {
     } = e, {
       noCache: g,
       includeUnpublished: O
-    } = (0, h.Z)(), x = (0, u.sp)(), E = null != (t = null == x ? void 0 : x.sessionId) ? t : "";
+    } = (0, h.Z)(), S = (0, u.sp)(), E = null != (t = null == S ? void 0 : S.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
         sessionId: E,
@@ -127,7 +127,7 @@ let k = e => {
           }, t);
           break;
         case i.z.WIDE_BANNER:
-          l = (0, r.jsx)(S.Z, {
+          l = (0, r.jsx)(x.Z, {
             handleTransition: n,
             wideBannerBlock: e,
             tab: c
@@ -161,13 +161,13 @@ let k = e => {
       handleTransition: a,
       tab: i,
       transitionState: p
-    } = e, f = (0, d.R)("CollectiblesFeedShop"), b = (0, g.R)(), h = (0, u.sp)(), [m, _] = l.useState(x.IV), [C, v] = l.useState(!1);
+    } = e, f = (0, d.R)("CollectiblesFeedShop"), b = (0, g.R)(), h = (0, u.sp)(), [m, _] = l.useState(S.IV), [C, v] = l.useState(!1);
     return l.useEffect(() => {
       if (null != n.current) {
         let e = () => {
             if (null == n.current) return;
             let e = n.current.getDistanceFromBottom();
-            m >= f ? v(e < 20) : e <= 200 && _(e => e + x.IV)
+            m >= f ? v(e < 20) : e <= 200 && _(e => e + S.IV)
           },
           t = n.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
@@ -184,7 +184,7 @@ let k = e => {
           isFetchingCategories: b,
           tab: i,
           isFullScreen: t
-        }), i !== x.AW.CATALOG && m >= f && (0, r.jsxs)("div", {
+        }), i !== S.AW.CATALOG && m >= f && (0, r.jsxs)("div", {
           className: j.endOfFeed,
           children: [(0, r.jsx)(s.X6q, {
             variant: "heading-md/semibold",
@@ -195,7 +195,7 @@ let k = e => {
               a("shop all button", void 0, !0), c.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: null == h ? void 0 : h.sessionId,
                 page_type: i,
-                page_category: i === x.AW.HOME || null == h ? void 0 : h.pageCategory,
+                page_category: i === S.AW.HOME || null == h ? void 0 : h.pageCategory,
                 cta_name: "shop the whole shop button"
               })
             },
@@ -209,13 +209,13 @@ let k = e => {
       }), !t && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(O.Z, {
           peaking: C,
-          transitioning: p === x.f7.OUT
+          transitioning: p === S.f7.OUT
         }), (0, r.jsx)(O.Z, {
           style: {
             left: 1850
           },
           peaking: C,
-          transitioning: p === x.f7.OUT
+          transitioning: p === S.f7.OUT
         })]
       })]
     })

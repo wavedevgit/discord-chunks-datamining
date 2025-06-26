@@ -29,16 +29,16 @@ let h = (e, t) => {
     m = l.length > 0 && n,
     [_, C] = r.useState(m ? o.m.RECOMMENDED : o.m.POPULAR),
     [v, O] = r.useState(0),
-    S = (0, d.u)(),
-    x = (0, i.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
+    x = (0, d.u)(),
+    S = (0, i.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup),
     E = (0, p.a)(),
     y = r.useMemo(() => {
       let e = [];
-      return _ === o.m.RECENT ? e = x : _ === o.m.PRICE_LOW_TO_HIGH ? e = [...x].sort((e, n) => {
+      return _ === o.m.RECENT ? e = S : _ === o.m.PRICE_LOW_TO_HIGH ? e = [...S].sort((e, n) => {
         var r, l, a, o;
         return (null != (a = null == (r = (0, u.Vw)(e, t, !1)) ? void 0 : r.amount) ? a : 0) - (null != (o = null == (l = (0, u.Vw)(n, t, !1)) ? void 0 : l.amount) ? o : 0)
-      }) : _ === o.m.RECOMMENDED ? e = S(l) : _ === o.m.POPULAR ? e = S(h) : _ === o.m.RANDOM && (e = a().shuffle(x)), E(e)
-    }, [_, E, x, t, S, l, h, v]),
+      }) : _ === o.m.RECOMMENDED ? e = x(l) : _ === o.m.POPULAR ? e = x(h) : _ === o.m.RANDOM && (e = a().shuffle(S)), E(e)
+    }, [_, E, S, t, x, l, h, v]),
     j = r.useCallback(() => {
       O(e => e + 1), C(o.m.RANDOM)
     }, []);

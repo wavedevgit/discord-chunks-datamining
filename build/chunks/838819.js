@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(819640),
   v = n(594174),
   O = n(381585),
-  S = n(597688),
-  x = n(780475),
+  x = n(597688),
+  S = n(780475),
   E = n(223143),
   y = n(298228),
   j = n(309956),
@@ -84,9 +84,9 @@ let Z = e => {
     let M = (0, y.O)(D),
       [W, V] = l.useState(!1),
       [U, G] = l.useState(),
-      z = (0, s.e7)([S.Z], () => {
+      z = (0, s.e7)([x.Z], () => {
         var e;
-        return null == (e = S.Z.getCategory(U)) ? void 0 : e.name
+        return null == (e = x.Z.getCategory(U)) ? void 0 : e.name
       }),
       [q, Y] = l.useState(),
       K = l.useCallback((e, t) => {
@@ -100,7 +100,7 @@ let Z = e => {
       {
         handleScroll: Q
       } = (0, b.z)(N, a, X);
-    (0, x.q3)(a, X, z, $, q), (0, x.EB)(X, c), (0, L.Z)(), l.useEffect(() => {
+    (0, S.q3)(a, X, z, $, q), (0, S.EB)(X, c), (0, L.Z)(), l.useEffect(() => {
       t || (0, d.Y)(w.Z5c.COLLECTIBLES_SHOP)
     }, [t]);
     let ee = (0, s.e7)([C.Z], () => C.Z.getLayers().includes(w.S9g.COLLECTIBLES_SHOP)),
@@ -114,7 +114,7 @@ let Z = e => {
     }, [t]);
     let {
       analyticsLocations: er
-    } = (0, x.MV)(X);
+    } = (0, S.MV)(X);
     return (0, r.jsx)(f.Gt, {
       value: er,
       children: (0, r.jsx)(O.k0, {

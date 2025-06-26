@@ -23,8 +23,8 @@ let _ = e => {
   let C, {
     category: v,
     subblock: O,
-    badgeText: S,
-    handleTransition: x
+    badgeText: x,
+    handleTransition: S
   } = e;
   null != O && (C = null == (t = p.Z.getCategoryByStoreListingId(null == O ? void 0 : O.categoryStoreListingId)) ? void 0 : t.skuId);
   let E = null != (n = null != C ? C : null == v ? void 0 : v.skuId) ? n : "",
@@ -50,7 +50,7 @@ let _ = e => {
         backgroundImage: "url(".concat(j, ")")
       },
       onClick: () => {
-        x("shop marketing tile", E), u.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        S("shop marketing tile", E), u.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == L ? void 0 : L.sessionId,
           sku_id: E,
           page_type: "home",
@@ -61,9 +61,9 @@ let _ = e => {
           cta_name: null
         })
       },
-      children: [null != S && (0, r.jsx)(c.IGR, {
+      children: [null != x && (0, r.jsx)(c.IGR, {
         disableColor: !0,
-        text: S,
+        text: x,
         className: m.featuredBlockBadge
       }), (0, r.jsxs)("div", {
         className: m.featuredBlockTextContainer,
@@ -90,7 +90,7 @@ let _ = e => {
         className: m.featuredBlockButton,
         color: c.Ttl.WHITE,
         onClick: e => {
-          x("shop marketing take me there button", E), e.stopPropagation(), u.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          S("shop marketing take me there button", E), e.stopPropagation(), u.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: null == L ? void 0 : L.sessionId,
             sku_id: E,
             page_type: "home",
