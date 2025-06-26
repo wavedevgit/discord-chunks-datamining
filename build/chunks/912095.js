@@ -223,10 +223,10 @@ class E extends s.Z {
     return null
   }
   setVoiceFilterId(e) {}
-  constructor(e, t, n, r) {
-    var i;
-    super(e, t), i = this, h(this, "input", void 0), h(this, "silenced", !1), h(this, "interacted", !1), h(this, "outputVolume", _.Qx), h(this, "sinkId", _.w5), h(this, "lastPingTime", 0), h(this, "outputs", {}), h(this, "webrtcStats", new d.r), h(this, "silenceThreshold", -100), h(this, "canHavePriority", new Set), h(this, "prioritySpeakers", new Set), h(this, "audioContext", void 0), h(this, "setEchoCancellation", e => this.input.setEchoCancellation(e)), h(this, "setNoiseSuppression", e => this.input.setNoiseSuppression(e)), h(this, "setNoiseCancellation", e => this.input.setNoiseCancellation(e)), h(this, "getNoiseCancellation", () => this.input.getNoiseCancellation()), h(this, "setAutomaticGainControl", e => this.input.setAutomaticGainControl(e)), h(this, "setAudioSource", e => this.input.setAudioSource(e)), h(this, "setVideoSource", e => this.input.setVideoSource(e)), h(this, "setDesktopInput", e => this.input.setDesktop(e)), h(this, "setForceAudioInput", function(e) {
-      return arguments.length > 1 && void 0 !== arguments[1] && arguments[1], i.input.setPTTActive(e)
+  constructor(e) {
+    var t;
+    super(e.context, e.userId), t = this, h(this, "input", void 0), h(this, "silenced", !1), h(this, "interacted", !1), h(this, "outputVolume", _.Qx), h(this, "sinkId", _.w5), h(this, "lastPingTime", 0), h(this, "outputs", {}), h(this, "webrtcStats", new d.r), h(this, "silenceThreshold", -100), h(this, "canHavePriority", new Set), h(this, "prioritySpeakers", new Set), h(this, "audioContext", void 0), h(this, "setEchoCancellation", e => this.input.setEchoCancellation(e)), h(this, "setNoiseSuppression", e => this.input.setNoiseSuppression(e)), h(this, "setNoiseCancellation", e => this.input.setNoiseCancellation(e)), h(this, "getNoiseCancellation", () => this.input.getNoiseCancellation()), h(this, "setAutomaticGainControl", e => this.input.setAutomaticGainControl(e)), h(this, "setAudioSource", e => this.input.setAudioSource(e)), h(this, "setVideoSource", e => this.input.setVideoSource(e)), h(this, "setDesktopInput", e => this.input.setDesktop(e)), h(this, "setForceAudioInput", function(e) {
+      return arguments.length > 1 && void 0 !== arguments[1] && arguments[1], t.input.setPTTActive(e)
     }), h(this, "setSelfMute", e => {
       this.selfMute = e, this.input.setMute(e), this.emit(l.Sh.Mute, e)
     }), h(this, "handleAddVideoTrack", () => {
@@ -255,6 +255,6 @@ class E extends s.Z {
     }), h(this, "handleStats", e => {
       if (this.connectionState === _.$j.DISCONNECTED) return void this.off(l.Sh.Stats, this.handleStats);
       null != e && (this.webrtcStats.update(e), this.stats = e, Date.now() - this.lastPingTime >= _.$B && (this.emit(l.Sh.Ping, e.transport.ping), this.lastPingTime = Date.now()))
-    }), this.input = new c.Z(n), n.addEventListener("statechange", this.handleAudioContextStateChange), this.audioContext = n, this.input.on(c.G.AudioPermission, this.handleAudioPermission), this.input.on(c.G.VideoPermission, this.handleVideoPermission), this.input.on(c.G.Video, this.handleVideo), this.input.on(c.G.Mute, e => this.emit(l.Sh.Mute, e)), this.input.on(c.G.Stream, this.handleStream), this.input.on(c.G.DesktopSourceEnd, this.handleDesktopSourceEnd), this.input.on(c.G.Speaking, this.handleInputSpeaking), this.input.on(c.G.AddVideoTrack, this.handleAddVideoTrack), this.input.on(c.G.Video, this.handleAddVideoTrack), this.on("newListener", this.handleNewListener), this.initializeStreamParameters(r)
+    }), this.input = new c.Z(e.audioContext), e.audioContext.addEventListener("statechange", this.handleAudioContextStateChange), this.audioContext = e.audioContext, this.input.on(c.G.AudioPermission, this.handleAudioPermission), this.input.on(c.G.VideoPermission, this.handleVideoPermission), this.input.on(c.G.Video, this.handleVideo), this.input.on(c.G.Mute, e => this.emit(l.Sh.Mute, e)), this.input.on(c.G.Stream, this.handleStream), this.input.on(c.G.DesktopSourceEnd, this.handleDesktopSourceEnd), this.input.on(c.G.Speaking, this.handleInputSpeaking), this.input.on(c.G.AddVideoTrack, this.handleAddVideoTrack), this.input.on(c.G.Video, this.handleAddVideoTrack), this.on("newListener", this.handleNewListener), this.initializeStreamParameters(e.streamParameters)
   }
 }

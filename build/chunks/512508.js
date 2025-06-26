@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 n.d(t, {
   PM: () => M,
-  WG: () => I,
+  WG: () => P,
   ZP: () => k
 }), n(388685), n(781311);
 var r = n(255367),
@@ -84,11 +84,11 @@ function R(e) {
   return 1 === e.type
 }
 
-function P(e) {
+function I(e) {
   return 0 === e.type
 }
 
-function I(e) {
+function P(e) {
   let t = "".concat(!e.name.includes(j.CR) ? "@" : "").concat(e.name);
   return {
     tag: {
@@ -179,7 +179,7 @@ function T(e, t, n) {
     row: e,
     guildId: t,
     className: n
-  }, e.record.id) : P(e) ? (0, r.jsx)(E, {
+  }, e.record.id) : I(e) ? (0, r.jsx)(E, {
     row: e,
     channel: e.record,
     className: n
@@ -204,7 +204,7 @@ function k(e) {
       let t = g.Z.getChannel(e);
       null != t && (r[e] = M(t))
     }), t.forEach(e => {
-      e in n && (r[e] = I(n[e]))
+      e in n && (r[e] = P(n[e]))
     }), r
   })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(j), [j]), [O, S] = l.useState(""), [L, V] = l.useState(!1), [E, k] = l.useState(!1), [A, B] = l.useState(!1), U = l.useRef(null), {
     sections: F,
@@ -224,7 +224,7 @@ function k(e) {
         let {
           row: t
         } = e;
-        return P(t)
+        return I(t)
       }).map(e => e.row.record.id),
       r = t.filter(e => {
         let {
@@ -249,7 +249,7 @@ function k(e) {
     },
     W = l.useCallback(e => {
       let t = H({}, j);
-      P(e) ? t[e.id] = M(e.record) : R(e) && (t[e.id] = I(e.record)), q(t), S(""), G(), setTimeout(() => {
+      I(e) ? t[e.id] = M(e.record) : R(e) && (t[e.id] = P(e.record)), q(t), S(""), G(), setTimeout(() => {
         var e;
         let t = null == (e = U.current) ? void 0 : e.containerRef.current,
           n = null == t ? void 0 : t.firstChild;
@@ -275,7 +275,7 @@ function k(e) {
         })
       }, o.id)
     }, [t, W, F]),
-    K = l.useMemo(() => v.map(e => {
+    J = l.useMemo(() => v.map(e => {
       var n;
       return n = j[e], w(H({}, n.tag), {
         label: T(n.row, t, _.noIndent)
@@ -286,7 +286,7 @@ function k(e) {
     children: [(0, r.jsxs)("div", {
       className: _.searchBox,
       children: [(0, r.jsx)(d.ZP, {
-        tags: K,
+        tags: J,
         maxHeight: 98,
         size: d.ZP.Sizes.MEDIUM,
         query: O,

@@ -13,7 +13,7 @@ var r, i = n(264344),
 let o = parseInt(null != (r = a().version) ? r : "0", 10),
   s = void 0 !== a().ua && a().ua.indexOf("OculusBrowser") > -1,
   l = (() => {
-    if (null == window.WebSocket) return !1;
+    if ("undefined" != typeof window && null == window.WebSocket) return !1;
     switch (a().name) {
       case "IE":
       case "Microsoft Edge":

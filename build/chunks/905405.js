@@ -1,17 +1,18 @@
-/** Chunk was on 48181 **/
-n.d(e, {
-  p: () => l
+/** Chunk was on 31978 **/
+"use strict";
+n.d(t, {
+  p: () => o
 });
 var r = n(592204),
-  i = n(712950);
-let l = () => {
-  var t;
+  l = n(712950);
+let o = () => {
+  var e;
   let {
-    profanity: e,
+    profanity: t,
     sexualContent: n,
-    slurs: l
-  } = (0, i.g)();
+    slurs: o
+  } = (0, l.g)();
   return !!(0, r.Xo)({
     location: "use-should-filter-keywords"
-  }) && null != (t = e || n || l) && t
+  }) && null != (e = t || n || o) && e
 }

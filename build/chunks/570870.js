@@ -1,6 +1,6 @@
-/** Chunk was on 32152 **/
+/** Chunk was on 72374 **/
 n.d(t, {
-  Z: () => O
+  Z: () => v
 });
 var r = n(255367),
   l = n(73800),
@@ -19,16 +19,16 @@ var r = n(255367),
   E = n(689079),
   h = n(388032),
   y = n(547607);
-let O = e => {
+let v = e => {
   let t, {
       commandType: n,
       commandTargetId: i,
-      channel: O,
-      guildId: v,
+      channel: v,
+      guildId: O,
       onHeightUpdate: m,
       context: A
     } = e,
-    T = (0, u.e7)([_.Z], () => _.Z.getGuild(null != v ? v : O.guild_id)),
+    T = (0, u.e7)([_.Z], () => _.Z.getGuild(null != O ? O : v.guild_id)),
     S = (0, u.e7)([b.default], () => b.default.getUser(i)),
     P = (0, f.Z)({
       user: S,
@@ -36,9 +36,9 @@ let O = e => {
       context: A
     }),
     I = l.useMemo(() => ({
-      channel: O,
+      channel: v,
       type: "channel"
-    }), [O]),
+    }), [v]),
     {
       commands: Z,
       sectionDescriptors: M,
@@ -63,19 +63,19 @@ let O = e => {
         sections: e
       }
     }, [M]),
-    N = l.useRef(j);
+    D = l.useRef(j);
   l.useEffect(() => {
-    j !== N.current && (N.current = j, null == m || m())
+    j !== D.current && (D.current = j, null == m || m())
   }, [j, m]);
-  let D = l.useCallback(e => {
-    o()(null != O, "menu item should not show if channel is null");
+  let N = l.useCallback(e => {
+    o()(null != v, "menu item should not show if channel is null");
     let t = C[e.applicationId],
       n = null != t ? (0, s.ky)(t) : void 0;
     return (0, r.jsx)(a.sNh, {
       id: e.id,
       label: e.displayName,
       iconLeft: () => null != n ? (0, r.jsx)(n, {
-        channel: O,
+        channel: v,
         section: t,
         width: 18,
         height: 18,
@@ -86,14 +86,14 @@ let O = e => {
           command: e,
           optionValues: {},
           context: {
-            channel: O,
+            channel: v,
             guild: T
           },
           commandTargetId: i
         })
       }
     }, e.id)
-  }, [O, T, i, C]);
+  }, [v, T, i, C]);
   if (j ? t = (0, r.jsx)(a.sNh, {
       id: "menu-commands-placeholder",
       render: () => (0, r.jsx)(g.Z, {}),
@@ -102,9 +102,9 @@ let O = e => {
       id: "menu-commands-empty",
       label: h.intl.string(h.t.YSNlV1),
       disabled: !0
-    }, "menu-commands-empty") : Z.map(D), null != P && P.length > 0 && (t = (0, r.jsxs)(r.Fragment, {
+    }, "menu-commands-empty") : Z.map(N), null != P && P.length > 0 && (t = (0, r.jsxs)(r.Fragment, {
       children: [t, (0, r.jsx)(a.Clw, {}, "separator"), P]
-    }))), !p.TPd.TEXTUAL.has(O.type))
+    }))), !p.TPd.TEXTUAL.has(v.type))
     if (null == P) return null;
     else t = P;
   return (0, r.jsx)(a.sNh, {

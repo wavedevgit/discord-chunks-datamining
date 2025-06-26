@@ -126,7 +126,7 @@ function O(e) {
     _(e)
   }, [_]), R = o.useCallback(e => {
     H(e)
-  }, [H]), P = o.useCallback(() => {
+  }, [H]), I = o.useCallback(() => {
     null == i && null == r && O(0, null), S(!1)
   }, [r, i, O]);
   return (0, l.jsx)(d.v2r, {
@@ -138,7 +138,7 @@ function O(e) {
       children: N ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(d.sNh, {
           id: "back",
-          action: P,
+          action: I,
           render: e => (0, l.jsxs)("span", h(f({}, e), {
             className: p.nagivateBackContainer,
             children: [(0, l.jsx)(d.V7D, {
