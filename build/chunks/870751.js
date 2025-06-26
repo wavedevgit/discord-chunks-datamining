@@ -1,10 +1,13 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92754 **/
 "use strict";
 e.exports = {
-  container: "container_eaf2fb",
-  iconContainer: "iconContainer_eaf2fb",
-  decorativeLayer: "decorativeLayer_eaf2fb",
-  decorativeLayerActive: "decorativeLayerActive_eaf2fb",
-  giftIconButton: "giftIconButton_eaf2fb",
-  giftIconButtonActive: "giftIconButtonActive_eaf2fb"
+  applicationBody: "applicationBody__864b0",
+  form: "form__864b0",
+  twoColumnContainer: "twoColumnContainer__864b0",
+  column: "column__864b0",
+  divider: "divider__864b0",
+  previewWrapper: "previewWrapper__864b0",
+  gradient: "gradient__864b0",
+  preview: "preview__864b0",
+  previewButton: "previewButton__864b0"
 }

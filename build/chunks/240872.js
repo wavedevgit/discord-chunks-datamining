@@ -57,7 +57,7 @@ let p = {
       body: n,
       confirmColor: u,
       confirmText: f,
-      confirmVariant: p,
+      confirmVariant: p = "primary",
       cancelText: h,
       onConfirm: m,
       onCancel: g,
@@ -86,7 +86,7 @@ let p = {
           onClick: () => {
             null == m || m(), e.onClose()
           },
-          variant: null != p ? p : u === o.Ttl.RED ? "critical-primary" : "primary"
+          variant: p
         }), (0, r.jsx)(a.u, _(d({}, e), {
           size: "sm",
           title: t,
@@ -97,7 +97,7 @@ let p = {
       return (0, r.jsx)(s.default, _(d({}, e), {
         title: t,
         body: n,
-        confirmColor: u,
+        confirmColor: "critical-primary" === p ? o.Ttl.RED : o.Ttl.BRAND,
         confirmText: f,
         cancelText: h,
         onConfirm: m,

@@ -1,6 +1,6 @@
 /**
   Module ID: 43988
-  Original File Name: e01092fef7878b91
+  Original File Name: 8d658c01e6821656
 **/
 .premiumTrialBadge_e4ef22 {
     align-items: center;
@@ -1745,6 +1745,8 @@
 }
 
 .card__6df1a {
+    background: var(--background-surface-high);
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     display: flex;
     flex-direction: column;
@@ -1754,18 +1756,11 @@
 }
 
 .tier0__6df1a {
-    background: var(--background-surface-high);
-    border: 1px solid var(--border-subtle);
     margin-top: var(--space-12)
 }
 
 .tier0__6df1a.pillMargin__6df1a {
     margin-top: var(--space-24)
-}
-
-.tier2__6df1a {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-surface-high) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--expressive-gradient-nitro-pink-start) 0,var(--expressive-gradient-nitro-pink-end) 100%);
-    box-shadow: inset 0 0 0 1px var(--border-subtle)
 }
 
 .wordmark__6df1a {
@@ -1858,4 +1853,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=e01092fef7878b91.css.map*/
+/*# sourceMappingURL=8d658c01e6821656.css.map*/

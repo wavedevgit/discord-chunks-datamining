@@ -160,10 +160,10 @@ function A(e) {
     let e = j.default.getCurrentUser();
     return a()(null != e, "StreamSettings: user cannot be undefined"), e
   }), D = (0, c.e7)([v.Z, _.Z], () => _.Z.getChannel(v.Z.getVoiceChannelId())), B = b.ZP.canStreamQuality(b.U2.MID, L), {
-    location: U
-  } = (0, f.O)(), G = (0, m.Zq)({
+    location: G
+  } = (0, f.O)(), U = (0, m.Zq)({
     autoTrackExposure: !1
-  }), W = (0, x.B4)(), z = j.default.getUser(null == D ? void 0 : D.hdStreamingBuyerId), F = null != D && null != D.hdStreamingUntil && new Date(D.hdStreamingUntil) > new Date && null != z, H = !B && !G, [V, Y] = i.useState(!1), X = M ? y.z8 : y.WC, J = E(T({}, U), {
+  }), W = (0, x.B4)(), z = j.default.getUser(null == D ? void 0 : D.hdStreamingBuyerId), F = null != D && null != D.hdStreamingUntil && new Date(D.hdStreamingUntil) > new Date && null != z, H = !B && !U, [V, Y] = i.useState(!1), X = M ? y.z8 : y.WC, J = E(T({}, G), {
     section: O.jXE.STREAM_SETTINGS
   }), K = (0, r.jsx)(d.hE2, {
     buttons: X.map(e => k({

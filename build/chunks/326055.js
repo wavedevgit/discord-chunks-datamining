@@ -1,24 +1,25 @@
 /** Chunk was on 52370 **/
 r.d(t, {
-  default: () => f
+  default: () => b
 }), r(388685), r(953529);
 var n = r(255367),
   o = r(73800),
-  a = r(481060),
-  i = r(870246),
-  l = r(639777),
-  s = r(262212),
-  c = r(795338),
-  u = r(845602),
-  d = r(535396),
-  p = r(384732);
+  a = r(304789),
+  i = r(481060),
+  l = r(870246),
+  s = r(639777),
+  c = r(262212),
+  u = r(795338),
+  d = r(845602),
+  p = r(535396),
+  f = r(384732);
 
-function f(e) {
+function b(e) {
   var t, r, {
-      guildId: f,
-      powerup: b
+      guildId: b,
+      powerup: g
     } = e,
-    g = function(e, t) {
+    _ = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -33,21 +34,21 @@ function f(e) {
       }
       return o
     }(e, ["guildId", "powerup"]);
-  let [_, m] = o.useState(void 0), j = o.useMemo(() => {
-    switch (b.skuId) {
-      case d.IN:
-        return (0, n.jsx)(u.E, {
-          guildId: f
+  let [m, j] = o.useState(void 0), y = o.useMemo(() => {
+    switch (g.skuId) {
+      case p.IN:
+        return (0, n.jsx)(d.E, {
+          guildId: b
         });
-      case d.If:
-        return (0, n.jsx)(u.Z, {});
+      case p.If:
+        return (0, n.jsx)(d.Z, {});
       default:
         return
     }
-  }, [b, f]);
-  (0, i.$)(f, b, i.w.DETAIL);
-  let y = (0, l.Z)(f);
-  return (0, n.jsxs)(a.Y0X, (t = function(e) {
+  }, [g, b]);
+  (0, l.$)(b, g, l.w.DETAIL);
+  let O = (0, s.Z)(b);
+  return (0, n.jsxs)(i.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -65,46 +66,48 @@ function f(e) {
     }
     return e
   }({
-    className: p.modal,
-    size: a.CgR.DYNAMIC
-  }, g), r = r = {
+    className: f.modal,
+    size: i.CgR.DYNAMIC
+  }, _), r = r = {
     parentComponent: "GuildPowerupPerkModal",
-    children: [(0, n.jsxs)(a.hzk, {
-      className: p.modalContentContainer,
+    children: [(0, n.jsxs)(i.hzk, {
+      className: f.modalContentContainer,
       scrollbarType: "none",
       children: [(0, n.jsxs)("div", {
-        className: p.sidebar,
-        children: [(0, n.jsx)(c.m, {
-          className: p.powerupImage,
-          powerup: b
+        className: f.sidebar,
+        children: [(0, n.jsx)(a.$, {
+          className: f.powerupImage,
+          children: (0, n.jsx)(u.m, {
+            powerup: g
+          })
         }), (0, n.jsxs)("div", {
-          className: p.contentContainer,
-          children: [(0, n.jsx)(a.X6q, {
+          className: f.contentContainer,
+          children: [(0, n.jsx)(i.X6q, {
             variant: "heading-xl/extrabold",
-            children: b.title
-          }), (0, n.jsx)(a.Text, {
-            className: p.description,
+            children: g.title
+          }), (0, n.jsx)(i.Text, {
+            className: f.description,
             variant: "text-sm/normal",
-            children: b.description
-          }), null != _ && (0, n.jsx)(a.Text, {
-            className: p.error,
+            children: g.description
+          }), null != m && (0, n.jsx)(i.Text, {
+            className: f.error,
             color: "status-danger",
             variant: "text-sm/semibold",
-            children: _
-          }), y && (0, n.jsx)(s.ZP, {
-            className: p.footer,
-            guildId: f,
-            powerup: b,
-            onError: m
+            children: m
+          }), O && (0, n.jsx)(c.ZP, {
+            className: f.footer,
+            guildId: b,
+            powerup: g,
+            onError: j
           })]
         })]
-      }), null != j && (0, n.jsx)("div", {
-        className: p.exampleImage,
-        children: j
+      }), null != y && (0, n.jsx)("div", {
+        className: f.exampleImage,
+        children: y
       })]
-    }), (0, n.jsx)(a.olH, {
-      className: p.close,
-      onClick: g.onClose
+    }), (0, n.jsx)(i.olH, {
+      className: f.close,
+      onClick: _.onClose
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

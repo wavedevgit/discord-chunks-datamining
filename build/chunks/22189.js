@@ -22,8 +22,8 @@ var s = n(399606),
   x = n(78839),
   E = n(585483),
   j = n(424218),
-  O = n(63063),
-  C = n(74538),
+  C = n(63063),
+  O = n(74538),
   S = n(229555),
   v = n(768865),
   T = n(391110),
@@ -69,7 +69,7 @@ let ed = () => {
     analyticsLocations: e
   } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, o.ZP)(), n = (0, j.BU)(I.Uq / 1024, {
     useKibibytes: !0
-  }), i = (0, s.e7)([x.ZP], () => x.ZP.getPremiumTypeSubscription()), ec = null != i ? C.ZP.getPremiumPlanItem(i) : null, ed = (null != ec ? C.ZP.getSkuIdForPlan(ec.planId) : null) === I.Si.TIER_2, eu = _.default.getCurrentUser(), em = (0, C.I5)(eu, I.p9.TIER_2), eg = (0, C.I5)(eu, I.p9.TIER_0), ep = (0, m.Z)(b.Z), {
+  }), i = (0, s.e7)([x.ZP], () => x.ZP.getPremiumTypeSubscription()), ec = null != i ? O.ZP.getPremiumPlanItem(i) : null, ed = (null != ec ? O.ZP.getSkuIdForPlan(ec.planId) : null) === I.Si.TIER_2, eu = _.default.getCurrentUser(), em = (0, O.I5)(eu, I.p9.TIER_2), eg = (0, O.I5)(eu, I.p9.TIER_0), ep = (0, m.Z)(b.Z), {
     isFractionalPremiumActive: eh
   } = (0, u.Z)(), ef = null != i && i.hasPremiumAtLeast(I.p9.TIER_2), eb = (0, g.wE)(l.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), e_ = (0, p.Z)({
     scrollPosition: P.Y_.TRY_IT_OUT,
@@ -85,7 +85,7 @@ let ed = () => {
     a.Z.open(y.oAB.APPEARANCE, null, {
       scrollPosition: P.h1.CUSTOM_APP_ICONS
     })
-  }, eO = {
+  }, eC = {
     clientThemes: {
       name: "clientThemes",
       title: D.intl.string(D.t.kWM48P),
@@ -113,7 +113,7 @@ let ed = () => {
           analyticsLocations: e
         })
       } : () => {
-        window.open(O.Z.getArticleURL(y.BhN.CLIPS), "_blank")
+        window.open(C.Z.getArticleURL(y.BhN.CLIPS), "_blank")
       },
       perkImage: V
     } : {
@@ -366,7 +366,7 @@ let ed = () => {
       title: D.intl.string(D.t.tPY4o6),
       subtitle: D.intl.string(D.t.JY0grK),
       description: D.intl.format(D.t["2JqTFx"], {
-        helpdeskArticle: O.Z.getArticleURL(y.BhN.REFERRAL_PROGRAM)
+        helpdeskArticle: C.Z.getArticleURL(y.BhN.REFERRAL_PROGRAM)
       }),
       descriptionCta: D.intl.string(D.t.JST6jo),
       isPremiumGetCta: !ed || void 0,
@@ -386,7 +386,7 @@ let ed = () => {
       title: D.intl.string(D.t["57ngoq"]),
       subtitle: D.intl.string(D.t.piFFjY),
       description: D.intl.format(D.t.Pd7olp, {
-        learnMoreLink: O.Z.getArticleURL(y.BhN.PERMADECOS)
+        learnMoreLink: C.Z.getArticleURL(y.BhN.PERMADECOS)
       }),
       descriptionCta: em ? D.intl.string(D.t.jVcuVV) : D.intl.string(D.t.JST6jo),
       isPremiumGetCta: !em,
@@ -422,7 +422,7 @@ let ed = () => {
       hasNitroGradientBackground: !0
     }
   };
-  return em && ef && (eO.tenureBadge = {
+  return em && ef && (eC.tenureBadge = {
     name: "tenureBadge",
     title: D.intl.string(D.t.rnsqpa),
     pillText: D.intl.string(D.t.jyYgZ2).toLocaleUpperCase(),
@@ -431,5 +431,5 @@ let ed = () => {
     onClick: () => (0, v.k)({
       analyticsLocations: e
     })
-  }), eO
+  }), eC
 }

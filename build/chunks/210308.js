@@ -1,6 +1,6 @@
 /** Chunk was on 91372 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 });
 var i = n(255367),
   r = n(73800),
@@ -21,9 +21,9 @@ var i = n(255367),
   x = n(921944),
   E = n(46140),
   j = n(388032),
-  O = n(669018);
+  C = n(669018);
 
-function C(e) {
+function O(e) {
   let {
     groupName: t,
     targetElementRef: n
@@ -79,9 +79,9 @@ function S(e) {
     s(x.L.USER_DISMISS), l()
   }, [s, l]), h = b.vK[n];
   return (0, i.jsxs)("div", {
-    className: O.contents,
+    className: C.contents,
     children: [(0, i.jsx)(a.M0o, {
-      className: O.closeButton,
+      className: C.closeButton,
       tooltip: j.intl.string(j.t.cpT0Cg),
       color: a.YX$.TERTIARY,
       size: a.tT7.SIZE_24,
@@ -93,24 +93,24 @@ function S(e) {
     }), null != d && (0, i.jsx)("img", {
       src: d,
       alt: j.intl.string(h.nameUnformatted),
-      className: O.badgeImage
+      className: C.badgeImage
     }), (0, i.jsx)(a.X6q, {
       variant: "heading-md/extrabold",
       children: j.intl.string(j.t.VoDxsb)
     }), (0, i.jsx)(a.Text, {
       variant: "text-sm/medium",
-      className: O.subtitle,
+      className: C.subtitle,
       children: j.intl.formatToPlainString(j.t.ewkaVV, {
         timeMilestone: null == (t = (0, g.q)(h.id, h.tenureReqNumMonths)) ? void 0 : t.toLocaleLowerCase()
       })
     }), (0, i.jsx)(a.zxk, {
-      className: O.checkItOutButton,
+      className: C.checkItOutButton,
       color: a.Ttl.WHITE,
       size: a.PhG.SMALL,
       onClick: u,
       children: j.intl.string(j.t.RzWDqa)
     }), (0, i.jsx)("div", {
-      className: O.pointer
+      className: C.pointer
     })]
   })
 }

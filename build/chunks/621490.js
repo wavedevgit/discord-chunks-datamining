@@ -107,7 +107,7 @@ let E = e => {
       onClick: l
     }))
   },
-  O = e => {
+  C = e => {
     let {
       orbPriceAmount: t,
       skuId: n
@@ -132,7 +132,7 @@ let E = e => {
       })
     })
   },
-  C = e => {
+  O = e => {
     let {
       orbBalance: t
     } = e;
@@ -181,10 +181,10 @@ let E = e => {
       children: [(0, i.jsx)(r.vwX, {
         tag: r.RB0.H5,
         children: f.intl.string(f.t.sail9P)
-      }), (0, i.jsx)(O, {
+      }), (0, i.jsx)(C, {
         skuId: t,
         orbPriceAmount: n
-      }), (0, i.jsx)(C, {
+      }), (0, i.jsx)(O, {
         orbBalance: a
       }), (0, i.jsx)(l.Z, {
         forceShow: !0,

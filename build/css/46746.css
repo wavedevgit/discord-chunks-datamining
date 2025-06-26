@@ -1,6 +1,6 @@
 /**
   Module ID: 46746
-  Original File Name: af2a7000ce70bd47
+  Original File Name: 1dd8c4de976fb874
 **/
 .card__4bb93 {
     align-items: center;
@@ -83,6 +83,14 @@
 
 .modalContent_a55fdc:last-child {
     margin-bottom: 20px
+}
+
+.manaDesktopModalContent_a55fdc {
+    margin: 0 calc(var(--space-24)*-1)
+}
+
+.manaDesktopModalContent_a55fdc .modalContent_a55fdc {
+    padding: 0 var(--space-24)
 }
 
 .modalHeader_a55fdc {
@@ -2462,4 +2470,4 @@
     margin-bottom: 0
 }
 
-/*# sourceMappingURL=af2a7000ce70bd47.css.map*/
+/*# sourceMappingURL=1dd8c4de976fb874.css.map*/

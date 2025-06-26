@@ -1,6 +1,6 @@
 /** Chunk was on 91372 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(642613), n(539854);
 var i = n(255367),
   r = n(73800),
@@ -150,7 +150,7 @@ function j() {
   })
 }
 
-function O() {
+function C() {
   let e = u.JG.useSetting(),
     t = e === s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
     n = [{
@@ -181,7 +181,7 @@ function O() {
   })
 }
 
-function C() {
+function O() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
@@ -192,7 +192,7 @@ function C() {
         applications: t
       }), (0, i.jsx)(j, {}), (0, i.jsx)("div", {
         className: x.divider
-      }), (0, i.jsx)(O, {})]
+      }), (0, i.jsx)(C, {})]
     }) : (0, i.jsxs)("div", {
       className: x.emptyContainer,
       children: [(0, i.jsx)(l.Text, {

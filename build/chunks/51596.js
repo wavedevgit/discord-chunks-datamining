@@ -26,8 +26,8 @@ var i = n(481060),
   x = n(944486),
   E = n(914010),
   j = n(626135),
-  O = n(777754),
-  C = n(823385),
+  C = n(777754),
+  O = n(823385),
   S = n(981631),
   v = n(176505);
 
@@ -75,7 +75,7 @@ function P(e, t) {
     queryMode: i,
     query: r,
     maxQueryLength: s
-  } = C.Z.getProps(), l = E.Z.getGuildId(), a = x.Z.getChannelId(l), o = n[(0, d.gJ)(d.a8.DOWN, -1, n)], c = O.Z.isEmail(r), u = O.Z.isPhoneNumber(r), m = O.Z.isUserTagLike(r), g = null != a && (0, v.AB)(a), p = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
+  } = O.Z.getProps(), l = E.Z.getGuildId(), a = x.Z.getChannelId(l), o = n[(0, d.gJ)(d.a8.DOWN, -1, n)], c = C.Z.isEmail(r), u = C.Z.isPhoneNumber(r), m = C.Z.isUserTagLike(r), g = null != a && (0, v.AB)(a), p = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, h = {
     current_channel_id: g ? void 0 : a,
     current_channel_static_route: g ? a : void 0,
     current_guild_id: l,
@@ -88,12 +88,12 @@ function P(e, t) {
     query: c || u || m ? null : r,
     top_result_type: p(o),
     top_result_score: null != o ? o.score : null,
-    num_results_total: C.Z.getResultTotals(),
-    num_results_users: C.Z.getResultTotals(d.h8.USER),
-    num_results_text_channels: C.Z.getResultTotals(d.h8.TEXT_CHANNEL),
-    num_results_voice_channels: C.Z.getResultTotals(d.h8.VOICE_CHANNEL),
-    num_results_guilds: C.Z.getResultTotals(d.h8.GUILD),
-    num_results_group_dms: C.Z.getResultTotals(d.h8.GROUP_DM)
+    num_results_total: O.Z.getResultTotals(),
+    num_results_users: O.Z.getResultTotals(d.h8.USER),
+    num_results_text_channels: O.Z.getResultTotals(d.h8.TEXT_CHANNEL),
+    num_results_voice_channels: O.Z.getResultTotals(d.h8.VOICE_CHANNEL),
+    num_results_guilds: O.Z.getResultTotals(d.h8.GUILD),
+    num_results_group_dms: O.Z.getResultTotals(d.h8.GROUP_DM)
   };
   if (null != a) {
     let e = b.Z.getChannel(a);
@@ -134,7 +134,7 @@ function D() {
     t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
   ! function(e) {
     let t;
-    if (C.Z.isOpen()) return;
+    if (O.Z.isOpen()) return;
     let n = E.Z.getGuildId(),
       i = x.Z.getChannelId(n);
     if (null != i) {

@@ -26,8 +26,8 @@ let b = e => {
       subtitle: x = "",
       description: E = "",
       descriptionCta: j = "",
-      isPremiumGetCta: O,
-      onCtaClick: C,
+      isPremiumGetCta: C,
+      onCtaClick: O,
       cardVariant: S
     } = e,
     v = (0, d.N)(),
@@ -55,7 +55,7 @@ let b = e => {
       titleClassName: b,
       subtitle: x,
       description: E
-    }), O && (0, i.jsx)(u.Z, {
+    }), C && (0, i.jsx)(u.Z, {
       className: _,
       look: l.zxk.Looks.BLANK,
       color: l.zxk.Colors.CUSTOM,
@@ -64,9 +64,9 @@ let b = e => {
         textOverride: y
       },
       showGradient: !0
-    }), 0 !== j.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != C && (0, i.jsx)(l.zxk, {
+    }), 0 !== j.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != O && (0, i.jsx)(l.zxk, {
       className: _,
-      onClick: C,
+      onClick: O,
       children: j
     })]
   })

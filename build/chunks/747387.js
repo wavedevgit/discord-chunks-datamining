@@ -8,8 +8,8 @@ var n = r(255367),
   c = r(15155),
   o = r(772848),
   s = r(286379),
-  p = r(343817),
-  l = r(797614),
+  l = r(343817),
+  p = r(797614),
   d = r(626135),
   u = r(353250),
   h = r(599857),
@@ -48,7 +48,7 @@ function b(e, t) {
 }
 let v = e => {
   var {
-    captchaService: t = p.hP.RECAPTCHA,
+    captchaService: t = l.hP.RECAPTCHA,
     sitekey: r,
     rqdata: v,
     onRender: m,
@@ -86,13 +86,13 @@ let v = e => {
       })
     }, [P, t, r]),
     I = a.useCallback(e => {
-      l.Z.increment({
+      p.Z.increment({
         name: s.V.CAPTCHA_EVENT,
         tags: ["event_name:".concat(e), "captcha_service:".concat(t)]
       })
     }, [t]),
     D = a.useCallback(() => {
-      if (t === p.hP.HCAPTCHA) {
+      if (t === l.hP.HCAPTCHA) {
         var e, r;
         null != v && "" !== v && null != x.current && (null == (e = x.current) || e.setData({
           rqdata: v
@@ -125,20 +125,20 @@ let v = e => {
     q = a.useCallback(() => {
       A("chal-expire"), null == j || j()
     }, [j, A]);
-  return ((null == r || "" === r) && (r = f.OL7), t === p.hP.RECAPTCHA) ? (0, n.jsx)(c.Z, b(y({}, R), {
+  return ((null == r || "" === r) && (r = f.OL7), t === l.hP.RECAPTCHA) ? (0, n.jsx)(c.Z, b(y({}, R), {
     onLoad: N,
     onRender: V,
     onVerify: T,
     onError: L,
     sitekey: r
-  })) : t === p.hP.RECAPTCHA_ENTERPRISE ? (0, n.jsx)(h._, b(y({}, R), {
+  })) : t === l.hP.RECAPTCHA_ENTERPRISE ? (0, n.jsx)(h._, b(y({}, R), {
     onLoad: N,
     onRender: V,
     onVerify: T,
     onError: L,
     sitekey: r,
     action: _
-  })) : t === p.hP.HCAPTCHA ? (0, n.jsx)(i.Z, b(y({
+  })) : t === l.hP.HCAPTCHA ? (0, n.jsx)(i.Z, b(y({
     ref: x
   }, R), {
     sitekey: r,

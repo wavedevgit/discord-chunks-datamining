@@ -74,7 +74,7 @@ function C(e) {
     location: "StreamSettingsSummary"
   }), P = (0, d.zX)({
     sortDevicesByFrecency: E
-  }), [R, k] = null != (i = (0, x.Z)(C)) ? i : [y, O], A = (0, f.L)(C), M = (0, m.M)(R), L = w === s.vA.CAMERA, D = null != I || !!T && (!h || L), B = null != I ? null == I || null == (t = I.id) ? void 0 : t.startsWith(s.vA.CAMERA) : L, U = D ? void 0 : C === g.tI.PRESET_VIDEO ? v.intl.string(_.default.MuHUFR) : C === g.tI.PRESET_DOCUMENTS ? v.intl.string(_.default.y0JuYW) : void 0;
+  }), [R, k] = null != (i = (0, x.Z)(C)) ? i : [y, O], A = (0, f.L)(C), M = (0, m.M)(R), L = w === s.vA.CAMERA, D = null != I || !!T && (!h || L), B = null != I ? null == I || null == (t = I.id) ? void 0 : t.startsWith(s.vA.CAMERA) : L, G = D ? void 0 : C === g.tI.PRESET_VIDEO ? v.intl.string(_.default.MuHUFR) : C === g.tI.PRESET_DOCUMENTS ? v.intl.string(_.default.y0JuYW) : void 0;
   return (0, r.jsxs)("div", {
     className: j.root,
     children: [D && (0, r.jsx)(S, {
@@ -99,9 +99,9 @@ function C(e) {
               color: "currentColor"
             }), A]
           }), (0, r.jsx)(b, {})]
-        }), null != U && (0, r.jsxs)(r.Fragment, {
+        }), null != G && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("span", {
-            children: U
+            children: G
           }), (0, r.jsx)(b, {})]
         }), (0, r.jsx)("span", {
           children: M

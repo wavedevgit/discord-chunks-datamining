@@ -1,6 +1,6 @@
 /**
   Module ID: 52370
-  Original File Name: 850c8e689261dc3d
+  Original File Name: bfe4b8655155b099
 **/
 .container__6f9f7 {
     display: flex;
@@ -463,7 +463,6 @@
 }
 
 .sidebar__61aee {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-base-low) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--expressive-gradient-purple-end) 0,var(--expressive-gradient-purple-start) 100%);
     display: flex;
     flex-direction: column;
     width: 350px
@@ -482,7 +481,6 @@
 }
 
 .powerupImage__61aee {
-    background: none;
     display: flex;
     flex-grow: 1
 }
@@ -500,4 +498,4 @@
     margin-top: var(--space-16)
 }
 
-/*# sourceMappingURL=850c8e689261dc3d.css.map*/
+/*# sourceMappingURL=bfe4b8655155b099.css.map*/

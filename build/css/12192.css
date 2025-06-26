@@ -1,6 +1,6 @@
 /**
   Module ID: 12192
-  Original File Name: f2cb17602ac3418e
+  Original File Name: ad12923e47f042b0
 **/
 .modal_deee3a {
     max-height: 600px;
@@ -58,8 +58,15 @@
     margin-top: var(--space-16)
 }
 
+.captchaContainer_deee3a.manaDesktopModal_deee3a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 0
+}
+
 .modal_deee3a.gradientBorder_deee3a {
     border: none
 }
 
-/*# sourceMappingURL=f2cb17602ac3418e.css.map*/
+/*# sourceMappingURL=ad12923e47f042b0.css.map*/

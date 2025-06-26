@@ -30,8 +30,8 @@ function E(e) {
     onAvatarChange: s,
     sectionTitle: E,
     changeAvatarButtonText: j,
-    guildId: O,
-    className: C,
+    guildId: C,
+    className: O,
     disabled: S = !1,
     isTryItOutFlow: v = !1,
     forcedDivider: T,
@@ -47,12 +47,12 @@ function E(e) {
       uploadType: h.pC.AVATAR,
       analyticsSource: I,
       filters: v ? x : void 0,
-      guildId: O,
+      guildId: C,
       isTryItOutFlow: v
     })
-  }, [O, I, v, D]);
+  }, [C, I, v, D]);
   return (0, i.jsx)(g.Z, {
-    className: C,
+    className: O,
     title: E,
     titleIcon: Z ? (0, i.jsx)(o.IGR, {
       text: b.intl.string(b.t.y2b7CA),
@@ -80,7 +80,7 @@ function E(e) {
         look: o.zxk.Looks.LINK,
         size: o.zxk.Sizes.SMALL,
         onClick: () => s(null),
-        children: null != O ? b.intl.string(b.t.TDjKDg) : b.intl.string(b.t.twB3f3)
+        children: null != C ? b.intl.string(b.t.TDjKDg) : b.intl.string(b.t.twB3f3)
       })]
     })
   })

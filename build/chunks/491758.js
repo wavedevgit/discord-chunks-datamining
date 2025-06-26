@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(779618),
   E = n(39604),
   j = n(442334),
-  O = n(356659),
-  C = n(981631),
+  C = n(356659),
+  O = n(981631),
   S = n(37113),
   v = n(526761),
   T = n(388032),
@@ -40,7 +40,7 @@ function A() {
       clipsQuality: P
     } = (0, a.cj)([b.Z], () => b.Z.getSettings()),
     R = (0, a.e7)([b.Z], () => b.Z.getHardwareClassification()),
-    D = (0, a.e7)([h.ZP], () => h.ZP.getKeybindForAction(C.kg4.SAVE_CLIP, !0)),
+    D = (0, a.e7)([h.ZP], () => h.ZP.getKeybindForAction(O.kg4.SAVE_CLIP, !0)),
     Z = b.Z.isDecoupledGameClippingEnabled(),
     w = (0, x.Z)(p.Z),
     {
@@ -53,17 +53,17 @@ function A() {
   l()(null != D, "Save clip keybind unset");
   let L = (0, a.e7)([m.default], () => m.default.locale),
     B = r.useMemo(() => [{
-      value: O.OT.SECONDS_30,
+      value: C.OT.SECONDS_30,
       label: T.intl.formatToPlainString(T.t["bTFv//"], {
         count: 30
       })
     }, {
-      value: O.OT.MINUTES_1,
+      value: C.OT.MINUTES_1,
       label: T.intl.formatToPlainString(T.t.ICo9Nj, {
         count: 1
       })
     }, {
-      value: O.OT.MINUTES_2,
+      value: C.OT.MINUTES_2,
       label: T.intl.formatToPlainString(T.t.ICo9Nj, {
         count: 2
       })
@@ -147,7 +147,7 @@ function A() {
         look: g.z.WARNING,
         className: I.formItem,
         children: T.intl.format(T.t.kiaF4e, {
-          onClick: () => d.Z.open(C.oAB.VOICE, v.gP, {
+          onClick: () => d.Z.open(O.oAB.VOICE, v.gP, {
             scrollPosition: v.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })

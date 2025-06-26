@@ -1,7 +1,6 @@
 /** Chunk was on 44799 **/
 e.exports = {
   container: "container__6c253",
-  background: "background__6c253",
   content: "content__6c253",
   image: "image__6c253 content__6c253",
   boostIcon: "boostIcon__6c253",

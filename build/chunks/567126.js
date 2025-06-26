@@ -41,9 +41,9 @@ var r = n(255367),
   L = n(46140),
   D = n(65154),
   B = n(388032),
-  U = n(873270);
+  G = n(873270);
 
-function G(e) {
+function U(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -76,7 +76,7 @@ function z(e) {
     enableGoLiveCaptureCard: l
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = S.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [C, y] = i.useState(null), [I, w] = i.useState(null), T = null != I && I.length > 0, [E, R] = i.useState(c.vA.WINDOW), [A, G] = i.useState(!1), z = i.useRef(null), F = i.useRef(new u.Xp), H = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
+  }), o = S.Z.supports(D.AN.GO_LIVE_HARDWARE), [a, m] = i.useState(null), [C, y] = i.useState(null), [I, w] = i.useState(null), T = null != I && I.length > 0, [E, R] = i.useState(c.vA.WINDOW), [A, U] = i.useState(!1), z = i.useRef(null), F = i.useRef(new u.Xp), H = (0, d.e7)([x.ZP], () => x.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, j.Zy)({
       location: L.dr.STREAM_SOURCE_SELECT
     });
@@ -122,7 +122,7 @@ function z(e) {
     }
   }, []);
   let X = i.useCallback(e => {
-      null !== e && (z.current = e, G(!e.isScrolledToTop()))
+      null !== e && (z.current = e, U(!e.isScrolledToTop()))
     }, []),
     [J, K] = i.useState(void 0);
   i.useEffect(() => {
@@ -141,12 +141,12 @@ function z(e) {
     }
   }(E);
   if (null == q) return !1 === J ? (0, r.jsxs)(f.Text, {
-    className: U.errorMessage,
+    className: G.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",
     children: [B.intl.string(B.t["kW5h/f"]), (0, r.jsx)("br", {}), B.intl.string(B.t["5Jvu1d"])]
   }) : (0, r.jsx)(h.Z, {
-    className: U.spinner,
+    className: G.spinner,
     justify: h.Z.Justify.CENTER,
     align: h.Z.Align.CENTER,
     children: (0, r.jsx)(f.$jN, {})
@@ -156,8 +156,8 @@ function z(e) {
       id: i
     } = e, l = (null == t ? void 0 : t.id) === i;
     return (0, r.jsx)(f.P3F, {
-      className: s()(U.tile, {
-        [U.selected]: l
+      className: s()(G.tile, {
+        [G.selected]: l
       }),
       onClick: () => n(e, null),
       children: (0, r.jsx)(k.Z, {
@@ -168,7 +168,7 @@ function z(e) {
   });
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: U.segmentContainer,
+      className: G.segmentContainer,
       children: [(0, r.jsx)(P.Z, {
         separator: A
       }), (0, r.jsx)(f.sY7, {
@@ -192,22 +192,22 @@ function z(e) {
           } = e;
           return R(t)
         },
-        className: U.segmentControl,
-        optionClassName: U.segmentControlOption
+        className: G.segmentControl,
+        optionClassName: G.segmentControlOption
       })]
     }), (0, r.jsxs)(f.Den, {
       ref: X,
-      className: U.sourceScroller,
+      className: G.sourceScroller,
       onScroll: function() {
         let e = z.current;
-        null != e && G(!e.isScrolledToTop())
+        null != e && U(!e.isScrolledToTop())
       },
       children: [E === c.vA.WINDOW && null != V && (0, r.jsx)(b.Z, {
         quest: V.quest
       }), (0, r.jsx)(p.Z, {
         layout: p.Z.Layout.WRAP,
         columns: 2,
-        className: U.sourceContainer,
+        className: G.sourceContainer,
         children: Q
       })]
     })]
@@ -229,11 +229,11 @@ function F(e) {
     "aria-checked": !1,
     onClick: n,
     tabIndex: 0,
-    className: s()(U.nativeSourceSingleTypeButton, U.nativePickerRadioItem),
+    className: s()(G.nativeSourceSingleTypeButton, G.nativePickerRadioItem),
     children: (0, r.jsxs)("div", {
-      className: U.nativeSourceSingleTypeButtonInner,
+      className: G.nativeSourceSingleTypeButtonInner,
       children: [(0, r.jsx)(R.Z, {
-        className: U.nativeSourceSingleTypeImage
+        className: G.nativeSourceSingleTypeImage
       }), (0, r.jsx)(f.Text, {
         variant: "text-md/medium",
         color: "none",
@@ -262,9 +262,9 @@ function H(e) {
     "aria-checked": !1,
     onClick: c,
     tabIndex: 0,
-    className: s()(U.nativeSourceTypeButton, U.nativePickerRadioItem),
+    className: s()(G.nativeSourceTypeButton, G.nativePickerRadioItem),
     children: (0, r.jsxs)("div", {
-      className: U.nativeSourceTypeButtonInner,
+      className: G.nativeSourceTypeButtonInner,
       children: [(0, r.jsx)(o, {
         size: "lg"
       }), (0, r.jsx)(f.Text, {
@@ -287,10 +287,10 @@ function V(e) {
           let [t, n] = e;
           return !n.disabled
         });
-        l(e), c(G({}, e.reduce((e, t) => {
+        l(e), c(U({}, e.reduce((e, t) => {
           var n, r;
           let [i, l] = t;
-          return n = G({}, e), r = r = {
+          return n = U({}, e), r = r = {
             ["camera:" + i]: l.name
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var n = Object.keys(e);
@@ -328,7 +328,7 @@ function V(e) {
     j = p ? (0, r.jsx)(F, {
       onSelect: t
     }) : (0, r.jsxs)("div", {
-      className: U.nativePickerTypes,
+      className: G.nativePickerTypes,
       children: [(0, r.jsx)(H, {
         onSelect: t,
         id: "screen",
@@ -350,38 +350,38 @@ function V(e) {
       }) : null]
     });
   return (0, r.jsxs)("div", {
-    className: U.nativePickerScroll,
+    className: G.nativePickerScroll,
     children: [(0, r.jsx)(f.Text, {
-      className: U.nativePickerLabel,
+      className: G.nativePickerLabel,
       variant: "text-md/semibold",
       color: "interactive-normal",
       children: B.intl.string(B.t.XyYoFR)
     }), j, 0 === n.length ? null : (0, r.jsxs)("div", {
-      className: s()(U.nativePickerCaptureSection, g ? null : U.nativePickerCollapsed),
+      className: s()(G.nativePickerCaptureSection, g ? null : G.nativePickerCollapsed),
       children: [(0, r.jsxs)(f.P3F, {
         onClick: v,
-        className: U.nativePickerLabel,
+        className: G.nativePickerLabel,
         children: [(0, r.jsx)(f.Text, {
-          className: U.nativeCaptureDevicesText,
+          className: G.nativeCaptureDevicesText,
           variant: "text-md/semibold",
           color: "interactive-normal",
           children: B.intl.string(B.t.rO0Vi4)
         }), (0, r.jsx)(f.CJ0, {
           size: "sm",
           color: "currentColor",
-          className: U.captureDevicesToggleIndicator
+          className: G.captureDevicesToggleIndicator
         })]
       }), (0, r.jsx)(f.FXm, {
-        className: U.nativePickerCaptureList,
+        className: G.nativePickerCaptureList,
         onChange: h,
-        radioItemClassName: U.nativePickerRadioItem,
+        radioItemClassName: G.nativePickerRadioItem,
         options: n.map(e => {
           let [t, n] = e;
           return {
             name: n.name,
             value: "camera:" + n.id,
             icon: f.Odl,
-            radioItemIconClassName: U.hideRadioCheckbox
+            radioItemIconClassName: G.hideRadioCheckbox
           }
         })
       })]
@@ -401,12 +401,12 @@ function Y(e) {
   return i.useEffect(() => {
     (0, y.isLinux)() || (0, y.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, A.jR) ? (0, I.T)(l) : (0, I.t)()
   }, [l]), s === w.Uc.Error ? (0, r.jsx)(f.Text, {
-    className: U.errorMessage,
+    className: G.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",
     children: null != o && o.length > 0 ? o : B.intl.string(B.t.CKsXk5)
   }) : (0, r.jsx)(R.Z, {
     animated: !0,
-    className: U.nativePickerGuide
+    className: G.nativePickerGuide
   })
 }

@@ -39,8 +39,8 @@ var r = n(255367),
   L = n(560749),
   D = n(311924),
   B = n(485299),
-  U = n(615161),
-  G = n(289989),
+  G = n(615161),
+  U = n(289989),
   W = n(328242),
   z = n(565574),
   F = n(286420),
@@ -76,7 +76,7 @@ function $(e) {
   } = (0, v.ZP)(_.Z.GO_LIVE_MODAL_V2), eo = (0, m.e7)([Z.default], () => Z.default.getCurrentUser()), ea = (0, A.Z)(), {
     state: ec,
     dispatch: ed
-  } = (0, U.Ti)(a, eo, ea, (0, w.isWindows)() && null != a && $ ? "confirm" : "source_select"), {
+  } = (0, G.Ti)(a, eo, ea, (0, w.isWindows)() && null != a && $ ? "confirm" : "source_select"), {
     sortDevicesByFrecency: eu
   } = (0, b._)({
     location: "GoLiveModalV2"
@@ -202,7 +202,7 @@ function $(e) {
       style: ep,
       children: eN
     }) : eN;
-  return (0, r.jsx)(U.Yw, {
+  return (0, r.jsx)(G.Yw, {
     state: ec,
     dispatch: ed,
     children: (0, r.jsxs)(h.Y0X, {
@@ -251,7 +251,7 @@ function $(e) {
           })
         }), (0, r.jsx)(h.hzk, {
           className: q.content,
-          children: el && eO !== f.vA.CAMERA ? (0, r.jsx)(G.Z, {
+          children: el && eO !== f.vA.CAMERA ? (0, r.jsx)(U.Z, {
             onSourceSelect: ew
           }) : (0, r.jsx)(W.Z, {
             onClick: function(e) {

@@ -1,6 +1,6 @@
 /** Chunk was on 91372 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -21,11 +21,11 @@ var i = n(255367),
   x = n(578504),
   E = n(839526),
   j = n(4046),
-  O = n(423741);
-let C = r.forwardRef((e, t) => {
+  C = n(423741);
+let O = r.forwardRef((e, t) => {
   var n, s;
   let {
-    className: C,
+    className: O,
     isFooterVisible: S,
     isDarkMode: v,
     isReducedMotion: T,
@@ -39,7 +39,7 @@ let C = r.forwardRef((e, t) => {
     value: I,
     children: (0, i.jsxs)("div", {
       ref: t,
-      className: l()(x.container, C),
+      className: l()(x.container, O),
       children: [(0, i.jsx)(a.X6q, {
         className: x.footerHeader,
         variant: "display-md",
@@ -63,7 +63,7 @@ let C = r.forwardRef((e, t) => {
           },
           ref: Z,
           children: (0, i.jsx)("source", {
-            src: D ? E.Z : O.Z,
+            src: D ? E.Z : C.Z,
             type: D ? b.m.MP4 : b.m.WEBM
           })
         })

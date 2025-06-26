@@ -22,8 +22,8 @@ var i = n(255367),
   x = n(639119),
   E = n(767714),
   j = n(165583),
-  O = n(504983),
-  C = n(626135),
+  C = n(504983),
+  O = n(626135),
   S = n(210887),
   v = n(981631),
   T = n(921944),
@@ -42,7 +42,7 @@ let A = () => {
       analyticsLocations: n
     } = (0, g.ZP)(m.Z.USER_SETTINGS), l = (0, s.e7)([p.Z], () => p.Z.isPreview), a = (null == (t = (0, x.N)()) || null == (e = t.subscription_trial) ? void 0 : e.sku_id) === N.Si.TIER_2, c = (0, _.Ng)(), d = (0, _.Wp)(c, N.Si.TIER_2);
     return r.useEffect(() => {
-      l && C.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
+      l && O.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
         type: N.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: n
       })
@@ -51,10 +51,10 @@ let A = () => {
         type: h.yH.SETTINGS,
         children: [(0, i.jsx)(h.ZP.Basic, {
           className: y.basicThemeSelectors
-        }), (0, i.jsx)(R, {}), (0, i.jsxs)(O.Z, {
+        }), (0, i.jsx)(R, {}), (0, i.jsxs)(C.Z, {
           className: y.featureBorder,
           isShown: l,
-          type: O.Y.PREMIUM,
+          type: C.Y.PREMIUM,
           children: [(0, i.jsx)(h.ZP.Gradient, {
             disabled: l,
             renderCTAButtons: () => !l || a ? null : (0, i.jsxs)("div", {

@@ -24,8 +24,8 @@ var i = n(255367),
   x = n(956221),
   E = n(771173),
   j = n(385499),
-  O = n(570908),
-  C = n(702321),
+  C = n(570908),
+  O = n(702321),
   S = n(201895),
   v = n(43267),
   T = n(933557),
@@ -199,7 +199,7 @@ let et = K.ZP.getEnableHardwareAcceleration() ? g.Xo$ : g.qEK,
           },
           className: J.link
         }, E), {
-          children: [(0, i.jsx)(O.Z, {
+          children: [(0, i.jsx)(C.Z, {
             muted: !1,
             avatar: (0, i.jsx)(r, {
               size: "refresh_sm",
@@ -239,12 +239,12 @@ function eo(e) {
     size: g.EFr.SIZE_32,
     animateOnHover: !(a || K || eo)
   }), ef = t.isMultiUserDM(), eb = t.isSystemDM(), e_ = (0, B.Q)(), ex = !ef && !eb && t.type === q.d4z.DM, eE = ex && (null == u ? void 0 : u.primaryGuild) != null, ej = (0, m.e7)([z.ZP], () => z.ZP.isChannelMuted(t.getGuildId(), t.id)), {
-    ignored: eO,
-    blocked: eC
+    ignored: eC,
+    blocked: eO
   } = (0, m.cj)([F.Z], () => ({
     ignored: F.Z.isIgnored(t.getRecipientId()),
     blocked: F.Z.isBlocked(t.getRecipientId())
-  })), eS = ex && eO, ev = ex && eC, eT = (ej || eS || ev) && !(a || K), eN = (0, m.e7)([G.ZP], () => G.ZP.getMentionCount(t.id) > 0), eI = (0, T.ZP)(t), ey = (0, m.e7)([y.Z], () => y.Z.isFavorite(t.id)), eA = (0, L.L)("PrivateChannel"), eP = null != V && (a || K), eR = () => {
+  })), eS = ex && eC, ev = ex && eO, eT = (ej || eS || ev) && !(a || K), eN = (0, m.e7)([G.ZP], () => G.ZP.getMentionCount(t.id) > 0), eI = (0, T.ZP)(t), ey = (0, m.e7)([y.Z], () => y.Z.isFavorite(t.id)), eA = (0, L.L)("PrivateChannel"), eP = null != V && (a || K), eR = () => {
     ea(!0)
   }, eD = () => {
     ea(!1)
@@ -309,7 +309,7 @@ function eo(e) {
     })
   }, eG = () => t.isSystemDM() ? (0, i.jsx)("div", {
     className: J.subtext,
-    children: (0, C.Z)(t.id) ? X.intl.string(X.t.FL5T09) : X.intl.string(X.t.NnY5lZ)
+    children: (0, O.Z)(t.id) ? X.intl.string(X.t.FL5T09) : X.intl.string(X.t.NnY5lZ)
   }) : t.isMultiUserDM() ? (0, i.jsx)("div", {
     className: J.subtext,
     children: X.intl.format(X.t.CxSA5O, {
@@ -419,7 +419,7 @@ function eo(e) {
               unread: eN
             })
           }, r), {
-            children: (0, i.jsx)(O.Z, {
+            children: (0, i.jsx)(C.Z, {
               ref: ez,
               avatar: eF(),
               highlighted: eN && !(eA && eT),

@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: b3892ca7b7fb1503
+  Original File Name: d1154038cba08a99
 **/
 .parentContainer__98cbd {
     display: flex;
@@ -458,6 +458,7 @@
 }
 
 .container__6c253 {
+    background-color: var(--background-base-low);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-low);
@@ -465,21 +466,11 @@
     flex-direction: column;
     gap: var(--space-12);
     margin: var(--space-16);
-    overflow: hidden;
-    padding: var(--space-16);
-    position: relative
-}
-
-.background__6c253 {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-base-low) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--expressive-gradient-purple-end) 0,var(--expressive-gradient-purple-start) 100%);
-    inset: 0;
-    position: absolute;
-    z-index: 1
+    padding: var(--space-16)
 }
 
 .content__6c253 {
-    color: var(--header-primary);
-    z-index: 2
+    color: var(--header-primary)
 }
 
 .image__6c253 {
@@ -488,8 +479,7 @@
     height: 60px;
     object-fit: contain;
     object-position: center;
-    width: 110px;
-    z-index: 2
+    width: 110px
 }
 
 .boostIcon__6c253 {
@@ -657,4 +647,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=b3892ca7b7fb1503.css.map*/
+/*# sourceMappingURL=d1154038cba08a99.css.map*/

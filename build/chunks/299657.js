@@ -21,8 +21,8 @@ var i = n(255367),
   x = n(433811),
   E = n(214852),
   j = n(621853),
-  O = n(484459),
-  C = n(246946),
+  C = n(484459),
+  O = n(246946),
   S = n(594174),
   v = n(78839),
   T = n(626135),
@@ -65,7 +65,7 @@ let B = function(e) {
   }, [Q]), r.useEffect(() => {
     c.Z.wait(async () => {
       let e = Date.now();
-      await Promise.all([d.jg(), (0, u.X8)(), d.tZ(), (0, m.Y2)(X, null, k.JjL.DISCOVERY), null != V && K && (0, O.Z)(V)]), W.current = Date.now() - e, Y(!1)
+      await Promise.all([d.jg(), (0, u.X8)(), d.tZ(), (0, m.Y2)(X, null, k.JjL.DISCOVERY), null != V && K && (0, C.Z)(V)]), W.current = Date.now() - e, Y(!1)
     })
   }, [X, V, K]), r.useEffect(() => {
     n && (null != G || null != F) && (0, y.a)(G, F)
@@ -74,7 +74,7 @@ let B = function(e) {
       location_stack: s,
       load_duration_ms: W.current
     })
-  }, [s, z]), (0, a.e7)([C.Z], () => C.Z.enabled)) ? (0, i.jsx)(g.Z, {}) : n ? (0, i.jsx)(_.c8, {}) : t === w.EZ.ApplicationStoreHome && K ? null == J ? (0, i.jsx)("div", {
+  }, [s, z]), (0, a.e7)([O.Z], () => O.Z.enabled)) ? (0, i.jsx)(g.Z, {}) : n ? (0, i.jsx)(_.c8, {}) : t === w.EZ.ApplicationStoreHome && K ? null == J ? (0, i.jsx)("div", {
     className: l()(L.container, L.loading),
     children: (0, i.jsx)(o.$jN, {})
   }) : (0, i.jsx)(h.Gt, {

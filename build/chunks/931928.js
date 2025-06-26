@@ -2,7 +2,7 @@
 n.d(t, {
   ED: () => _,
   fO: () => j,
-  qp: () => O
+  qp: () => C
 });
 var i = n(255367),
   r = n(73800),
@@ -72,25 +72,25 @@ let _ = e => (0, i.jsx)(m.M4, b({
         }
         return r
       }(e, ["onClose", "onCtaClick", "targetElementRef", "isGuildBarScrolling", "children"]);
-    let O = r.useRef(null),
-      C = r.useCallback(e => {
+    let C = r.useRef(null),
+      O = r.useCallback(e => {
         let t = window.innerHeight - ((0, m.t4)() + j.COACHMARK_VERTICAL_OFFSET);
         return e.top <= t
       }, []),
       S = (0, l.e7)([d.Z], () => d.Z.getExpandedFolders().size);
     r.useEffect(() => {
-      null !== O.current && O.current.updateElementPositionWithPolling()
+      null !== C.current && C.current.updateElementPositionWithPolling()
     }, [S]), r.useEffect(() => {
-      null !== O.current && O.current.updateElementPosition()
+      null !== C.current && C.current.updateElementPosition()
     }, [p]);
     let v = (0, s.TH)().pathname,
       T = r.useCallback(() => {
         x.includes(v) || (0, c.uL)(g.Z5c.ME), o()
       }, [v, o]);
     return (0, i.jsx)(m.WS, (t = b({
-      positionControlRef: O,
+      positionControlRef: C,
       targetElementRef: u,
-      calculateVisibility: C,
+      calculateVisibility: O,
       defaultCoachmarkAlign: E.align,
       popoutElement: (0, i.jsx)(_, b({
         onClose: a,
@@ -111,7 +111,7 @@ let _ = e => (0, i.jsx)(m.M4, b({
     }), t))
   };
 j.COACHMARK_VERTICAL_OFFSET = 10;
-let O = e => {
+let C = e => {
   let {
     isVirtualCurrencyEnabled: t,
     discoveryButtonRef: n,

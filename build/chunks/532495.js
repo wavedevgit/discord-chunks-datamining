@@ -22,8 +22,8 @@ var r = n(512722),
   x = n(134795),
   E = n(610966),
   j = n(513901),
-  O = n(451392),
-  C = n(906364),
+  C = n(451392),
+  O = n(906364),
   S = n(643879),
   v = n(350327),
   T = n(621853),
@@ -115,7 +115,7 @@ function D() {
       currentGlobalName: L.globalName,
       pendingGlobalName: U,
       onGlobalNameChange: a.W0
-    }), (0, i.jsx)(C.Z, {
+    }), (0, i.jsx)(O.Z, {
       sectionTitle: P.intl.string(P.t["+T3RIy"]),
       errors: K.pronouns,
       onPronounsChange: v.ID,
@@ -141,7 +141,7 @@ function D() {
         errors: K.banner,
         onBannerChange: v.g_,
         forcedDivider: !0
-      }, "banner"), (0, i.jsx)(O.Z, {
+      }, "banner"), (0, i.jsx)(C.Z, {
         user: L,
         pendingAvatarSrc: q,
         pendingColors: z,
