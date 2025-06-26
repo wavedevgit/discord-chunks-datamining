@@ -1,6 +1,6 @@
 /**
   Module ID: 21815
-  Original File Name: 733860c527d19c17
+  Original File Name: 602cdacc58f18ffc
 **/
 .slowModeIcon_b21699 {
     display: block;
@@ -101,7 +101,7 @@
 .align-chat-input .base_b88801 {
     bottom: unset;
     left: 0;
-    padding-left: 16px;
+    padding-left: var(--space-md);
     pointer-events: all;
     right: 0;
     top: -24px
@@ -124,7 +124,7 @@
 }
 
 .align-chat-input .text_b88801 {
-    margin-left: 24px;
+    margin-left: calc(var(--space-md) + var(--space-8));
     z-index: 1
 }
 
@@ -2552,4 +2552,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=733860c527d19c17.css.map*/
+/*# sourceMappingURL=602cdacc58f18ffc.css.map*/

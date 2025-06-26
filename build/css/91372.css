@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: 5175796ef3bfcf08
+  Original File Name: 52eaa4923be3aa3e
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4073,7 +4073,7 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     border-radius: 7px;
     height: 56px;
     margin-left: -1px;
-    padding: 12px
+    padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 4px)
 }
 
 .align-chat-input .containerListenAlongVisible__37e49,.align-chat-input .containerQuestBarVisible__37e49,.align-chat-input .containerRtcOpened__37e49 {
@@ -4084,6 +4084,12 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 .align-chat-input .panelTitleContainer__37e49 {
     margin-bottom: 2px;
     margin-top: -1px
+}
+
+.align-chat-input .avatarWrapper__37e49 {
+    border-radius: var(--radius-xs);
+    margin-left: calc(var(--custom-panels-spacing) - var(--custom-guild-list-padding) + 4px);
+    padding: 6px calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) - 4px)
 }
 
 .refresh-fast-follow-avatars .container__37e49 {
@@ -19301,4 +19307,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=5175796ef3bfcf08.css.map*/
+/*# sourceMappingURL=52eaa4923be3aa3e.css.map*/

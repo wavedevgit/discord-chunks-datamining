@@ -1,6 +1,6 @@
 /**
   Module ID: 19577
-  Original File Name: e24f4763d3c18a60
+  Original File Name: 9f297dcc40ebada3
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -668,7 +668,7 @@
 .align-chat-input .base_b88801 {
     bottom: unset;
     left: 0;
-    padding-left: 16px;
+    padding-left: var(--space-md);
     pointer-events: all;
     right: 0;
     top: -24px
@@ -691,7 +691,7 @@
 }
 
 .align-chat-input .text_b88801 {
-    margin-left: 24px;
+    margin-left: calc(var(--space-md) + var(--space-8));
     z-index: 1
 }
 
@@ -5156,7 +5156,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .align-chat-input .attachButton__0923f {
-    padding: var(--space-12) 10px
+    padding: var(--space-12) calc(var(--space-md) - 6px)
 }
 
 .align-chat-input .attachButtonInner__0923f {
@@ -7237,13 +7237,12 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     overflow-anchor: none
 }
 
-.align-chat-input .scrollerContent__36d07 {
-    padding-bottom: 24px
+.align-chat-input .scroller__36d07::-webkit-scrollbar-track {
+    margin-bottom: 32px
 }
 
-.align-chat-input .messagesWrapper__36d07 {
-    -webkit-mask: linear-gradient(180deg,#000 0,#000 calc(100% - 16px),transparent);
-    mask: linear-gradient(180deg,#000 0,#000 calc(100% - 16px),transparent)
+.align-chat-input .scrollerInner__36d07 li:last-of-type {
+    padding-bottom: 24px
 }
 
 .scroller__36d07 {
@@ -7260,10 +7259,6 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .overlay .scroller__36d07::-webkit-scrollbar-track {
     margin-bottom: 0
-}
-
-.align-chat-input .scroller__36d07::-webkit-scrollbar-track {
-    margin-bottom: 32px
 }
 
 .scrollerInner__36d07 {
@@ -14417,4 +14412,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=e24f4763d3c18a60.css.map*/
+/*# sourceMappingURL=9f297dcc40ebada3.css.map*/
