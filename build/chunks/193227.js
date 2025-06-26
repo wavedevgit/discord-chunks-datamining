@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(853748),
   v = n(426171),
   O = n(823941),
-  x = n(38900),
-  S = n(709999),
+  S = n(38900),
+  x = n(709999),
   E = n(258939),
   y = n(81136),
   j = n(619899),
@@ -55,7 +55,7 @@ function B(e) {
         newValue: {
           tilePosition: t
         },
-        children: (0, r.jsx)(S.Z, {
+        children: (0, r.jsx)(x.Z, {
           onMount: n,
           category: a,
           product: e,
@@ -173,7 +173,7 @@ function A(e) {
   } = e, g = (0, b.sp)(), h = (0, E.R)(), m = null != (t = null == g ? void 0 : g.sessionId) ? t : "", {
     noCache: C,
     includeUnpublished: O
-  } = (0, y.Z)(), S = l.useMemo(() => {
+  } = (0, y.Z)(), x = l.useMemo(() => {
     let e = (d - 1) * P.kN;
     return n.slice(e, e + P.kN)
   }, [n, d]);
@@ -187,7 +187,7 @@ function A(e) {
       cacheDisabled: C
     })
   }, []), l.useEffect(() => {
-    h || 0 === S.length || (0, _.n)({
+    h || 0 === x.length || (0, _.n)({
       sessionId: m,
       checkpoint: _.a.SHOP_RENDERED,
       tab: P.AW.CATALOG,
@@ -195,16 +195,16 @@ function A(e) {
       unpublishedCategoriesShown: O,
       cacheDisabled: C
     })
-  }, [m, u, O, C, h, S.length]);
+  }, [m, u, O, C, h, x.length]);
   let j = l.useRef(null),
     k = (0, i.e7)([p.Z], () => p.Z.getLayers().includes(T.S9g.COLLECTIBLES_SHOP));
   return ((0, v.Kp)({
     isFetchingCategories: h,
     isLayer: k,
     initialItemCardRef: j
-  }), h) ? (0, r.jsx)(x.Z, {}) : (0, r.jsxs)("div", {
+  }), h) ? (0, r.jsx)(S.Z, {}) : (0, r.jsxs)("div", {
     className: L.categories,
-    children: [S.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+    children: [x.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
       let {
         products: t
       } = e;

@@ -10,22 +10,22 @@ var r = n(255367),
   i = n(180650),
   s = n(442837),
   c = n(607070),
-  u = n(960048),
-  d = n(381585),
-  p = n(597688),
-  f = n(1870),
-  b = n(744112),
-  g = n(82892),
+  u = n(594174),
+  d = n(960048),
+  p = n(381585),
+  f = n(597688),
+  b = n(1870),
+  g = n(744112),
   h = n(193227),
   m = n(752053),
   _ = n(81136),
   C = n(312030),
   v = n(566564),
   O = n(763891),
-  x = n(215023),
-  S = n(484920);
-let E = [x.AW.HOME, x.AW.ORBS],
-  y = [x.AW.AVATAR_DECORATIONS, x.AW.PROFILE_EFFECTS, x.AW.NAMEPLATES, x.AW.BUNDLES];
+  S = n(215023),
+  x = n(484920);
+let E = [S.AW.HOME, S.AW.ORBS],
+  y = [S.AW.AVATAR_DECORATIONS, S.AW.PROFILE_EFFECTS, S.AW.NAMEPLATES, S.AW.BUNDLES];
 
 function j(e) {
   let {
@@ -33,7 +33,7 @@ function j(e) {
     isFullScreen: n,
     scrollerRef: a,
     sortedCategories: u,
-    transitionToTab: p,
+    transitionToTab: d,
     transitionState: f,
     updateAnalyticsState: b,
     refreshCategories: g,
@@ -54,9 +54,9 @@ function j(e) {
     A = l.useCallback(async (e, t, r) => {
       b(e, t);
       let l = r && !n && !I,
-        a = t === i.T.ORB ? x.AW.ORBS : x.AW.CATALOG;
-      await p(a, l), null != t && N(t)
-    }, [n, I, p, N, b]);
+        a = t === i.T.ORB ? S.AW.ORBS : S.AW.CATALOG;
+      await d(a, l), null != t && N(t)
+    }, [n, I, d, N, b]);
   return null != T ? (0, r.jsx)(m.Z, {
     onRetry: g,
     errorMessage: T,
@@ -68,16 +68,16 @@ function j(e) {
     tab: t,
     transitionState: f
   }) : (0, r.jsx)("div", {
-    className: S.pageWrapper,
+    className: x.pageWrapper,
     children: (0, r.jsx)("main", {
-      className: o()(S.page, {
-        [S.pageFullscreen]: n
+      className: o()(x.page, {
+        [x.pageFullscreen]: n
       }),
       children: y.includes(t) ? (0, r.jsx)(O.Z, {
         isFullScreen: n,
         scrollerRef: a,
         tab: t
-      }, t) : (0, r.jsx)(d.k0, {
+      }, t) : (0, r.jsx)(p.k0, {
         newValue: {
           pageIndex: B
         },
@@ -94,17 +94,17 @@ function j(e) {
     })
   })
 }
-let k = () => (0, s.e7)([p.Z, f.Z], () => null != p.Z.error ? "shop load fetch categories error: ".concat(p.Z.error.message) : null != f.Z.claimError ? "shop load claim error: ".concat(f.Z.claimError.message) : null != f.Z.fetchError ? "shop load fetch purchase error: ".concat(f.Z.fetchError.message) : void 0),
+let k = () => (0, s.e7)([f.Z, b.Z], () => null != f.Z.error ? "shop load fetch categories error: ".concat(f.Z.error.message) : null != b.Z.claimError ? "shop load claim error: ".concat(b.Z.claimError.message) : null != b.Z.fetchError ? "shop load fetch purchase error: ".concat(b.Z.fetchError.message) : void 0),
   P = e => {
-    let t = (0, g.x)(),
-      n = (0, b.b)("Collectibles Shop Button"),
+    let t = (0, s.e7)([u.default], () => u.default.getCurrentUser()),
+      n = (0, g.b)("Collectibles Shop Button"),
       {
         noCache: r,
         includeUnpublished: a
       } = (0, _.Z)();
     l.useEffect(() => {
       var l, o;
-      null != e && u.Z.captureMessage(e, {
+      null != e && d.Z.captureMessage(e, {
         tags: {
           isStaff: null != (o = null == t || null == (l = t.isStaff()) ? void 0 : l.toString()) ? o : "unknown",
           preloadEnabled: n.toString(),

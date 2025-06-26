@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(775451),
   v = n(594174),
   O = n(471731),
-  x = n(335131),
-  S = n(534517),
+  S = n(335131),
+  x = n(534517),
   E = n(304742),
   y = n(215023),
   j = n(981631),
@@ -115,7 +115,7 @@ function L(e) {
     enabled: w
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
-  }), N = (0, S.S)("collectibles_shop_header_bar"), A = [{
+  }), N = (0, x.S)("collectibles_shop_header_bar"), A = [{
     tab: y.AW.HOME,
     displayText: k.intl.string(k.t.ijDDw8)
   }, {
@@ -126,7 +126,7 @@ function L(e) {
     tab: y.AW.ORBS,
     displayText: k.intl.string(k.t.EBYkzs)
   });
-  let Z = n ? x.DR : a,
+  let Z = n ? S.DR : a,
     R = f === y.AW.ORBS ? j.ZY5.SHOP_ORBS_TAB : j.ZY5.COLLECTIBLES_SHOP,
     F = l.useCallback(() => {
       t && (Z(), (0, u.Ou)()), (0, m.Y)({

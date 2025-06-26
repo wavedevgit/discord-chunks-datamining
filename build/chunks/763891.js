@@ -22,8 +22,8 @@ var r = n(255367),
   C = n(215023),
   v = n(388032),
   O = n(484920),
-  x = n(558513),
-  S = n(662128),
+  S = n(558513),
+  x = n(662128),
   E = n(676790),
   y = n(665195),
   j = n(42742),
@@ -55,7 +55,7 @@ function I(e) {
       case C.AW.NAMEPLATES:
         return [v.intl.string(v.t.V68Fq6), V ? k.Z : j.Z, a.Z.NAMEPLATE];
       case C.AW.BUNDLES:
-        return [v.intl.string(v.t.FYFppq), V ? S.Z : x.Z, a.Z.BUNDLE]
+        return [v.intl.string(v.t.FYFppq), V ? x.Z : S.Z, a.Z.BUNDLE]
     }
   }, [B, V]), q = (0, f.a)(), Y = l.useMemo(() => q(F.filter(e => {
     var t;

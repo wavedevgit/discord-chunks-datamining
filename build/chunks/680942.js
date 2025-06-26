@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => S
+  Z: () => x
 });
 var r = n(255367),
   l = n(73800),
@@ -22,7 +22,7 @@ var r = n(255367),
   C = n(231338),
   v = n(388032),
   O = n(846165);
-let x = {
+let S = {
     dark: [{
       box: "#FFF19E",
       ribbon: "#FF484B"
@@ -68,11 +68,11 @@ let x = {
       ribbon: "#026530"
     }]
   },
-  S = e => {
+  x = e => {
     let {
       product: t,
       selectedVariantIndex: n,
-      returnRef: S,
+      returnRef: x,
       onSuccess: E,
       tooltipDelay: y,
       isGiftEasterEggEnabled: j,
@@ -128,7 +128,7 @@ let x = {
               isGift: !0,
               giftingOrigin: _.Wt.SHOP_PAGE,
               analyticsLocations: P,
-              returnRef: S,
+              returnRef: x,
               variantsReturnStyle: L,
               onClose: null != E ? e => {
                 e && E()
@@ -139,7 +139,7 @@ let x = {
             hovered: I,
             isContentDismissed: !0,
             themeOverride: C.BR.DARK,
-            boxColors: x
+            boxColors: S
           }) : (0, r.jsx)(o.OgN, {
             size: "md",
             color: "currentColor"
