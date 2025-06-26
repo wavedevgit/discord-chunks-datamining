@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => f
 });
 var r = n(255367),
   i = n(73800),
   l = n(901461),
-  a = n(453687),
-  o = n(464891),
+  o = n(453687),
+  a = n(464891),
   s = n(318713),
   c = n(507418),
   u = n(348238),
@@ -16,7 +16,7 @@ let p = i.memo(function(e) {
       message: t,
       channel: n,
       compact: l = !1,
-      groupId: a,
+      groupId: o,
       isGroupStart: s,
       usernameProfile: p,
       avatarProfile: h,
@@ -24,29 +24,29 @@ let p = i.memo(function(e) {
       author: m,
       repliedMessage: g,
       roleIcon: b
-    } = e, _ = (0, u.wq)(t.author.id, n.id), y = (0, u.XO)(t, n, p, f), x = (0, u.R9)(h, f), C = i.useCallback(() => {
+    } = e, _ = (0, u.wq)(t.author.id, n.id), y = (0, u.XO)(t, n, p, f), C = (0, u.R9)(h, f), x = i.useCallback(() => {
       f({
         usernameProfile: !1,
         avatarProfile: !1,
         referencedUsernameProfile: !1
       })
     }, [f]);
-    return (0, r.jsx)(o.ZP, {
+    return (0, r.jsx)(a.ZP, {
       guildId: n.guild_id,
       message: t,
       channel: n,
       repliedMessage: g,
       author: m,
       compact: l,
-      subscribeToGroupId: a,
+      subscribeToGroupId: o,
       showTimestampOnHover: !s && l && t.type !== d.uaV.REPLY,
       renderPopout: c.Z,
       showAvatarPopout: h,
       showUsernamePopout: p,
-      onClickAvatar: x,
+      onClickAvatar: C,
       onClickUsername: y,
       onContextMenu: _,
-      onPopoutRequestClose: C,
+      onPopoutRequestClose: x,
       roleIcon: b
     })
   }),
@@ -57,7 +57,7 @@ function f(e) {
     messageProps: t,
     setPopout: n,
     messagePopouts: i,
-    replyReference: o,
+    replyReference: a,
     author: s,
     repliedMessage: c,
     roleIcon: u
@@ -72,7 +72,7 @@ function f(e) {
   } = i;
   if ((0, l.Z)(d)) return null;
   let y = d.id === g;
-  return y || f || null != o ? (0, r.jsx)(p, {
+  return y || f || null != a ? (0, r.jsx)(p, {
     message: d,
     channel: m,
     compact: f,
@@ -89,7 +89,7 @@ function f(e) {
     compact: !0,
     timestamp: d.timestamp,
     isInline: !1,
-    id: (0, a.Dv)(d),
+    id: (0, o.Dv)(d),
     isVisibleOnlyOnHover: !0,
     cozyAlt: !0
   })

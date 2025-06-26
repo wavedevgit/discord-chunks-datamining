@@ -1,4 +1,4 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => s
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  a = n(479099),
-  o = n(33976);
+  o = n(479099),
+  a = n(33976);
 
 function s(e) {
   let {
@@ -18,13 +18,13 @@ function s(e) {
     t.has(e) && (t.delete(e), n(new Set(t)))
   } : void 0;
   return (0, r.jsx)("div", {
-    className: l()(o.tags, {
-      [o.wrap]: i
+    className: l()(a.tags, {
+      [a.wrap]: i
     }),
-    children: Array.from(t).map(e => (0, r.jsx)(a.Z, {
+    children: Array.from(t).map(e => (0, r.jsx)(o.Z, {
       tag: e,
       onRemove: s,
-      size: null == s ? a.Z.Sizes.SMALL : a.Z.Sizes.MEDIUM
+      size: null == s ? o.Z.Sizes.SMALL : o.Z.Sizes.MEDIUM
     }, e.id))
   })
 }

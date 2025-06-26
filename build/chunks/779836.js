@@ -1,4 +1,4 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => y
 });
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  a = n(695469),
-  o = n(399606),
+  o = n(695469),
+  a = n(399606),
   s = n(481060),
   c = n(511010),
   u = n(446183),
@@ -23,7 +23,7 @@ function _(e) {
   let {
     summary: t,
     channel: n
-  } = e, i = (0, o.e7)([p.Z], () => p.Z.summaryFeedback(t)), l = (e, r) => {
+  } = e, i = (0, a.e7)([p.Z], () => p.Z.summaryFeedback(t)), l = (e, r) => {
     e.stopPropagation(), (0, h.Z)({
       summary: t,
       channel: n,
@@ -51,7 +51,7 @@ function _(e) {
   return (0, r.jsx)(r.Fragment, {
     children: c((e, t) => t ? (0, r.jsx)("div", {
       className: b.summaryFeedbackWrapper,
-      children: (0, r.jsxs)(a.animated.div, {
+      children: (0, r.jsxs)(o.animated.div, {
         style: e,
         className: b.summaryFeedback,
         children: [(0, r.jsx)(s.Text, {
@@ -81,20 +81,20 @@ function _(e) {
 function y(e) {
   var t, n;
   let i, {
-      item: a,
+      item: o,
       channel: u,
       index: d
     } = e,
-    h = (0, o.e7)([p.Z], () => p.Z.selectedSummary(u.id));
+    h = (0, a.e7)([p.Z], () => p.Z.selectedSummary(u.id));
   if (null == h) return null;
-  let f = null != a.unreadId,
-    g = null != a.content;
+  let f = null != o.unreadId,
+    g = null != o.content;
   return i = g ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.sVe, {
       size: "xs",
       color: "currentColor",
       className: b.summaryStartIcon
-    }), a.content]
+    }), o.content]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(_, {
       summary: h,
@@ -110,5 +110,5 @@ function y(e) {
     isUnread: f,
     id: f ? m.j1 : void 0,
     children: i
-  }, "divider-".concat(null != (n = null != (t = a.contentKey) ? t : a.unreadId) ? n : d))
+  }, "divider-".concat(null != (n = null != (t = o.contentKey) ? t : o.unreadId) ? n : d))
 }

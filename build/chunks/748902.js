@@ -1,11 +1,11 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => g
 }), n(388685);
 var r, i = n(442837),
   l = n(570140),
-  a = n(786761),
-  o = n(594174),
+  o = n(786761),
+  a = n(594174),
   s = n(355298),
   c = n(333984);
 
@@ -27,7 +27,7 @@ function h(e) {
 function f(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   if (!h(e) || null != t && e !== (null == t ? void 0 : t.channel_id)) return;
-  let r = null == t ? null : (0, a.e5)(t);
+  let r = null == t ? null : (0, o.e5)(t);
   d[e] = {
     loaded: !0,
     error: n,
@@ -36,7 +36,7 @@ function f(e, t) {
 }
 class m extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(s.Z, c.Z, o.default)
+    this.waitFor(s.Z, c.Z, a.default)
   }
   shouldLoadMessageRequestPreview(e) {
     return !p.has(e)
@@ -94,7 +94,7 @@ let g = new m(l.Z, {
       }
       return e
     }({}, i), n = n = {
-      message: (0, a.wi)(i.message, e.message)
+      message: (0, o.wi)(i.message, e.message)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

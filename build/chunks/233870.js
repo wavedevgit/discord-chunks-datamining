@@ -1,11 +1,11 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
-  T: () => a
+  T: () => o
 }), n(290780);
 var r = n(392711),
   i = n.n(r),
   l = n(823379);
 
-function a(e, t) {
+function o(e, t) {
   return i()(e).map(t.getUser).unshift(t.getCurrentUser()).filter(l.lm).sortBy(e => e.username.toLowerCase()).value()
 }

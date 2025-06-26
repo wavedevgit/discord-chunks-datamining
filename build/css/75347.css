@@ -1,6 +1,6 @@
 /**
   Module ID: 75347
-  Original File Name: 3d8af7d4c65576aa
+  Original File Name: 6a2900d1afbb86fc
 **/
 .avatarBackground_eb2508 {
     align-items: center;
@@ -27,20 +27,20 @@
     border: none;
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-16);
-    margin-bottom: var(--spacing-32);
-    padding-top: var(--spacing-8);
+    gap: var(--space-16);
+    margin-bottom: var(--space-32);
+    padding-top: var(--space-8);
     width: 100%;
     --__card-accent-color: transparent
 }
 
 .profile_d878e7 {
     justify-content: center;
-    margin-left: var(--spacing-16)
+    margin-left: var(--space-16)
 }
 
 .status_d878e7 {
-    row-gap: var(--spacing-24)
+    row-gap: var(--space-24)
 }
 
 .status_d878e7,.title_d878e7 {
@@ -50,7 +50,7 @@
 }
 
 .title_d878e7 {
-    row-gap: var(--spacing-8)
+    row-gap: var(--space-8)
 }
 
 .health_d878e7 {
@@ -63,7 +63,7 @@
     background-color: var(--background-mod-strong);
     height: 4px;
     position: absolute;
-    top: var(--spacing-12);
+    top: var(--space-12);
     width: 100%
 }
 
@@ -72,7 +72,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    row-gap: var(--spacing-8);
+    row-gap: var(--space-8);
     text-align: center;
     width: 15%
 }
@@ -193,7 +193,7 @@
     height: -moz-max-content;
     height: max-content;
     margin: 8px 4px 0;
-    padding: var(--spacing-16);
+    padding: var(--space-16);
     width: 100%
 }
 
@@ -264,7 +264,7 @@
 }
 
 .iconContainer_edf232 {
-    margin-bottom: var(--spacing-16);
+    margin-bottom: var(--space-16);
     position: relative
 }
 
@@ -319,7 +319,7 @@ div.nagbar_d74ef8 {
     gap: 32px;
     max-width: 740px;
     overflow: auto;
-    padding: var(--spacing-64) var(--spacing-40) var(--spacing-80)
+    padding: var(--space-64) var(--space-40) var(--space-80)
 }
 
 .nagbar__3167a {
@@ -337,4 +337,4 @@ div.nagbar_d74ef8 {
     display: flex
 }
 
-/*# sourceMappingURL=3d8af7d4c65576aa.css.map*/
+/*# sourceMappingURL=6a2900d1afbb86fc.css.map*/

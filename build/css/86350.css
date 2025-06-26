@@ -1,6 +1,6 @@
 /**
   Module ID: 86350
-  Original File Name: e7fd68d79700942c
+  Original File Name: 1854a942fe961601
 **/
 .menu__43313 {
     max-height: 70vh
@@ -190,7 +190,7 @@
     display: flex;
     flex: 1;
     justify-content: space-between;
-    margin: var(--spacing-8);
+    margin: var(--space-8);
     padding: 8px
 }
 
@@ -1751,4 +1751,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: CanvasText
 }
 
-/*# sourceMappingURL=e7fd68d79700942c.css.map*/
+/*# sourceMappingURL=1854a942fe961601.css.map*/

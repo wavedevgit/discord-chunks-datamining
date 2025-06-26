@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => w
 });
 var r = n(255367),
   i = n(73800),
   l = n(695469),
-  a = n(597312),
-  o = n(481060),
+  o = n(597312),
+  a = n(481060),
   s = n(727637),
   c = n(410030),
   u = n(100527),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(892001),
   _ = n(113557),
   y = n(867176),
-  x = n(451834),
-  C = n(502762),
+  C = n(451834),
+  x = n(502762),
   v = n(952124),
   j = n(544989),
   O = n(481932),
@@ -56,13 +56,13 @@ function w(e) {
     user: t,
     currentUser: n,
     channel: w
-  } = e, R = __OVERLAY__, M = (0, m.ZP)(t.id), k = (0, c.ZP)(), D = i.useRef(Date.now()), {
+  } = e, R = __OVERLAY__, k = (0, m.ZP)(t.id), M = (0, c.ZP)(), D = i.useRef(Date.now()), {
     analyticsLocations: L
   } = (0, d.ZP)(u.Z.USER_PROFILE_SIDEBAR), U = (0, h.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: w.id
-  }), B = i.useRef(null), F = (0, s.Z)(B), G = (0, g.$m)(), H = (0, o.q_F)({
+  }), B = i.useRef(null), F = (0, s.Z)(B), G = (0, g.$m)(), H = (0, a.q_F)({
     opacity: +(null != G.interactionType),
     config: {
       duration: 150
@@ -78,21 +78,21 @@ function w(e) {
     children: (0, r.jsx)(h.Mt, {
       value: U,
       openedAt: D.current,
-      fetchStartedAt: null == M ? void 0 : M.fetchStartedAt,
-      fetchEndedAt: null == M ? void 0 : M.fetchEndedAt,
-      isLoaded: null == M ? void 0 : M.isLoaded,
+      fetchStartedAt: null == k ? void 0 : k.fetchStartedAt,
+      fetchEndedAt: null == k ? void 0 : k.fetchEndedAt,
+      isLoaded: null == k ? void 0 : k.isLoaded,
       children: (0, r.jsx)(g.NJ, {
         value: G,
-        children: (0, r.jsxs)(C.Z, {
+        children: (0, r.jsxs)(x.Z, {
           ref: B,
           user: t,
-          displayProfile: M,
+          displayProfile: k,
           themeType: Z.lY.SIDEBAR,
-          themeOverride: k,
+          themeOverride: M,
           children: [null != G.interactionType && (0, r.jsx)(l.animated.div, {
             style: H,
             className: T.backdrop
-          }), (0, r.jsxs)(a.u2, {
+          }), (0, r.jsxs)(o.u2, {
             children: [(0, r.jsxs)(j.Z, {
               children: [(0, r.jsx)(O.Z, {
                 user: t,
@@ -108,17 +108,17 @@ function w(e) {
               className: T.header,
               children: [(0, r.jsx)(y.Z, {
                 user: t,
-                displayProfile: M,
+                displayProfile: k,
                 themeType: Z.lY.SIDEBAR,
                 animateOnHover: !F,
                 className: T.banner
-              }), (0, r.jsx)(x.Z, {
+              }), (0, r.jsx)(C.Z, {
                 userId: t.id,
                 className: T.toast
               }), (0, r.jsx)(_.Z, {
                 location: "UserProfileSiebar",
                 user: t,
-                displayProfile: M,
+                displayProfile: k,
                 channelId: w.id,
                 themeType: Z.lY.SIDEBAR,
                 onOpenProfile: R ? void 0 : V
@@ -132,7 +132,7 @@ function w(e) {
             }), (0, r.jsx)(S.Z, {
               user: t,
               currentUser: n,
-              displayProfile: M,
+              displayProfile: k,
               channel: w,
               isHovering: null == G.interactionType && F,
               onOpenProfile: R ? void 0 : V
@@ -142,10 +142,10 @@ function w(e) {
             })]
           }), !R && (0, r.jsx)("footer", {
             className: T.footer,
-            children: (0, r.jsx)(o.zxk, {
+            children: (0, r.jsx)(a.zxk, {
               fullWidth: !0,
-              size: o.zxk.Sizes.LARGE,
-              look: o.zxk.Looks.BLANK,
+              size: a.zxk.Sizes.LARGE,
+              look: a.zxk.Looks.BLANK,
               color: T.footerButtonColor,
               onClick: () => {
                 V(), (0, f.pQ)(A({
@@ -155,8 +155,8 @@ function w(e) {
               },
               children: N.intl.string(N.t["+Xp3ho"])
             })
-          }), (null == M ? void 0 : M.profileEffectId) != null && (0, r.jsx)(p.Z, {
-            profileEffectId: null == M ? void 0 : M.profileEffectId,
+          }), (null == k ? void 0 : k.profileEffectId) != null && (0, r.jsx)(p.Z, {
+            profileEffectId: null == k ? void 0 : k.profileEffectId,
             isHovering: F,
             urlQueryString: "dmView"
           })]

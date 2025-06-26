@@ -1,6 +1,6 @@
 /**
   Module ID: 68464
-  Original File Name: 23d5a2e492344c9c
+  Original File Name: 7c913e1a40cb9520
 **/
 .classificationEvidenceCard_f57acb {
     background: var(--channeltextarea-background);
@@ -8,7 +8,7 @@
     border-radius: var(--radius-sm);
     display: flex;
     flex-direction: row;
-    padding: 20px var(--spacing-8) 20px var(--spacing-8)
+    padding: 20px var(--space-8) 20px var(--space-8)
 }
 
 .classificationEvidenceMessageAttachment_f57acb {
@@ -18,14 +18,14 @@
 .classificationEvidenceContainer_a2ffaf {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-12);
-    margin-top: var(--spacing-32)
+    gap: var(--space-12);
+    margin-top: var(--space-32)
 }
 
 .classificationContainer_a48d6b {
     display: flex;
     flex-direction: column;
-    margin: auto var(--spacing-12)
+    margin: auto var(--space-12)
 }
 
 .classificationHeader_a48d6b {
@@ -97,7 +97,7 @@
     border-radius: 8px;
     display: flex;
     margin-top: 14px;
-    padding: var(--spacing-12) var(--spacing-16)
+    padding: var(--space-12) var(--space-16)
 }
 
 .classificationPolicyCard_a48d6b:hover {
@@ -125,7 +125,7 @@
 }
 
 .classificationActionExplanationContainer_a48d6b,.classificationActionsTakenContainer_a48d6b {
-    margin-top: var(--spacing-24)
+    margin-top: var(--space-24)
 }
 
 .image__859a7 {
@@ -160,7 +160,7 @@
 }
 
 .modalHeader__859a7 {
-    margin: 0 var(--spacing-40)
+    margin: 0 var(--space-40)
 }
 
-/*# sourceMappingURL=23d5a2e492344c9c.css.map*/
+/*# sourceMappingURL=7c913e1a40cb9520.css.map*/

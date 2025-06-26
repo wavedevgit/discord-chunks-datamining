@@ -1,6 +1,6 @@
 /**
   Module ID: 90488
-  Original File Name: 550f07703c0a44bb
+  Original File Name: c5479e27c8618dcd
 **/
 .titleBar__421ed {
     z-index: 3001;
@@ -415,7 +415,7 @@
 }
 
 .errorCodeNoticeText__9671b {
-    margin-left: var(--spacing-8)
+    margin-left: var(--space-8)
 }
 
 .errorCodeNoticeClickable__9671b {
@@ -607,8 +607,8 @@
 }
 
 .blockedIcon__477aa {
-    margin-left: var(--spacing-12);
-    margin-right: var(--spacing-4)
+    margin-left: var(--space-12);
+    margin-right: var(--space-4)
 }
 
 .blockedText__477aa {
@@ -617,7 +617,7 @@
 }
 
 .noIcon__477aa {
-    margin-left: var(--spacing-12)
+    margin-left: var(--space-12)
 }
 
 .wrapper_b76891 {
@@ -1274,4 +1274,4 @@
     align-items: stretch
 }
 
-/*# sourceMappingURL=550f07703c0a44bb.css.map*/
+/*# sourceMappingURL=c5479e27c8618dcd.css.map*/

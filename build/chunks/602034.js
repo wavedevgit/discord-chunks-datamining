@@ -1,4 +1,4 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => g,
   r: () => _
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(73800),
   i = n(94171),
   l = n(430742),
-  a = n(904245),
-  o = n(166459),
+  o = n(904245),
+  a = n(166459),
   s = n(531643),
   c = n(680287),
   u = n(470623),
@@ -27,16 +27,16 @@ function g(e) {
     onThreadCreated: g,
     useDefaultThreadName: b
   } = e, _ = r.useCallback((e, t, n, r) => {
-    a.Z.sendMessage(e.id, d.ZP.parse(e, n), void 0, {
+    o.Z.sendMessage(e.id, d.ZP.parse(e, n), void 0, {
       eagerDispatch: !1,
       stickerIds: r,
       attachmentsToUpload: t,
-      onAttachmentUploadError: (r, i, a, c) => {
+      onAttachmentUploadError: (r, i, o, c) => {
         var u;
         (0, s.openUploadError)({
           title: m.intl.string(m.t.B3vFdX),
           help: null != (u = null == c ? void 0 : c.message) ? u : m.intl.string(m.t.zMEjJi)
-        }), "" !== n && "" === p.Z.getDraft(e.id, p.d.FirstThreadMessage) && l.Z.saveDraft(e.id, n, p.d.FirstThreadMessage), 0 === h.Z.getUploadCount(e.id, p.d.FirstThreadMessage) && o.Z.setUploads({
+        }), "" !== n && "" === p.Z.getDraft(e.id, p.d.FirstThreadMessage) && l.Z.saveDraft(e.id, n, p.d.FirstThreadMessage), 0 === h.Z.getUploadCount(e.id, p.d.FirstThreadMessage) && a.Z.setUploads({
           channelId: e.id,
           uploads: t,
           draftType: p.d.FirstThreadMessage

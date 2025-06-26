@@ -1,9 +1,9 @@
 /**
   Module ID: 76815
-  Original File Name: 23f0f05e0ced6e5d
+  Original File Name: 63da8a334115d9d4
 **/
 .body__7ce16 {
-    padding-top: var(--spacing-16)
+    padding-top: var(--space-16)
 }
 
 .wumpus__7ce16 {
@@ -18,7 +18,7 @@
 
 .mute__7ce16,.textContainer__7ce16 {
     display: flex;
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .mute__7ce16 {
@@ -29,7 +29,7 @@
 .buttonContainer__7ce16 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-16)
+    gap: var(--space-16)
 }
 
 .ringContainer__7ce16 {
@@ -54,10 +54,10 @@
     border-radius: var(--radius-round);
     display: flex;
     justify-content: center;
-    padding: var(--spacing-8);
+    padding: var(--space-8);
     position: absolute;
-    right: var(--spacing-16);
-    top: var(--spacing-16)
+    right: var(--space-16);
+    top: var(--space-16)
 }
 
 .iconButton__7ce16:hover {
@@ -73,4 +73,4 @@
     color: var(--interactive-normal)
 }
 
-/*# sourceMappingURL=23f0f05e0ced6e5d.css.map*/
+/*# sourceMappingURL=63da8a334115d9d4.css.map*/

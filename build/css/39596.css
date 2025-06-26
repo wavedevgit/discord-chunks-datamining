@@ -1,6 +1,6 @@
 /**
   Module ID: 39596
-  Original File Name: 3a032be2f332c6d7
+  Original File Name: 780a0ad88f02ec6d
 **/
 .container__4216d {
     align-items: center;
@@ -58,7 +58,7 @@
 
 .scroller__49777 {
     height: 100%;
-    padding: 0 var(--spacing-16)
+    padding: 0 var(--space-16)
 }
 
 .modal__24654 {
@@ -1018,7 +1018,7 @@
 }
 
 .spacingLarge__1fcac {
-    margin: var(--spacing-8) 0
+    margin: var(--space-8) 0
 }
 
 .container__60fa3 {
@@ -1198,7 +1198,7 @@
 .children__1647d {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .error__1647d {
@@ -1248,7 +1248,7 @@
 .container__5e208.isComponentsV2__5e208 {
     align-items: stretch;
     max-width: min(600px,100%);
-    row-gap: var(--spacing-8);
+    row-gap: var(--space-8);
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
@@ -1268,4 +1268,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=3a032be2f332c6d7.css.map*/
+/*# sourceMappingURL=780a0ad88f02ec6d.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 67544
-  Original File Name: 417b71ebb95f5fbf
+  Original File Name: 70436a43d933208c
 **/
 .titleBar__421ed {
     z-index: 3001;
@@ -262,7 +262,7 @@
 }
 
 .hint_e8d31f {
-    margin-top: var(--spacing-4)
+    margin-top: var(--space-4)
 }
 
 .clickable_e8d31f {
@@ -275,7 +275,7 @@
 
 .buttonContainer_e8d31f {
     display: flex;
-    margin-top: var(--spacing-8)
+    margin-top: var(--space-8)
 }
 
 .button_e8d31f {
@@ -293,7 +293,7 @@
     display: flex;
     flex: 0 0 auto;
     justify-content: center;
-    margin-right: var(--spacing-12)
+    margin-right: var(--space-12)
 }
 
 .avatar_e8d31f,.icon_e8d31f {
@@ -1373,4 +1373,4 @@
     cursor: url(/assets/dfb72fed71c8e261.svg),pointer
 }
 
-/*# sourceMappingURL=417b71ebb95f5fbf.css.map*/
+/*# sourceMappingURL=70436a43d933208c.css.map*/

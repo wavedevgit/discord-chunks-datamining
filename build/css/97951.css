@@ -1,6 +1,6 @@
 /**
   Module ID: 97951
-  Original File Name: 9588108243812ff3
+  Original File Name: ca63c484a8a562ae
 **/
 .root_ead72e {
     max-width: 400px
@@ -9,13 +9,13 @@
 .content_ead72e {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-12)
+    gap: var(--space-12)
 }
 
 .footer_ead72e {
     display: flex;
-    gap: var(--spacing-16);
-    padding-top: var(--spacing-24)
+    gap: var(--space-16);
+    padding-top: var(--space-24)
 }
 
-/*# sourceMappingURL=9588108243812ff3.css.map*/
+/*# sourceMappingURL=ca63c484a8a562ae.css.map*/

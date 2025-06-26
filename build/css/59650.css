@@ -1,13 +1,13 @@
 /**
   Module ID: 59650
-  Original File Name: 3faed597182c1f5c
+  Original File Name: a5f481f7779f996d
 **/
 .buttonContainer__3e6b4 {
-    margin-top: var(--spacing-32)
+    margin-top: var(--space-32)
 }
 
 .button__3e6b4 {
-    margin-top: var(--spacing-16);
+    margin-top: var(--space-16);
     width: 100%
 }
 
@@ -18,20 +18,20 @@
 }
 
 .buttonIcon__3e6b4 {
-    margin-right: var(--spacing-4)
+    margin-right: var(--space-4)
 }
 
 .body__3e6b4 {
-    padding: var(--spacing-16) var(--spacing-32) var(--spacing-32) var(--spacing-32)
+    padding: var(--space-16) var(--space-32) var(--space-32) var(--space-32)
 }
 
 .textContainer__3e6b4 {
-    margin-bottom: var(--spacing-16);
+    margin-bottom: var(--space-16);
     text-align: center
 }
 
 .description__3e6b4 {
-    margin: var(--spacing-4) auto 0;
+    margin: var(--space-4) auto 0;
     max-width: 80%
 }
 
@@ -41,14 +41,14 @@
 }
 
 .safetyTips__3e6b4 {
-    margin-top: var(--spacing-16)
+    margin-top: var(--space-16)
 }
 
 .tipRow__5bc4e {
     flex-grow: 0;
     flex-wrap: nowrap;
-    gap: var(--spacing-8);
-    margin-top: var(--spacing-16)
+    gap: var(--space-8);
+    margin-top: var(--space-16)
 }
 
 .tipNumber__5bc4e,.tipRow__5bc4e {
@@ -66,14 +66,14 @@
 }
 
 .tipsList__5bc4e {
-    padding: 0 var(--spacing-16) var(--spacing-16)
+    padding: 0 var(--space-16) var(--space-16)
 }
 
 .tipsHeader__5bc4e {
     background: linear-gradient(270deg,rgba(88,101,242,0) 0,var(--brand-500) 70.8%),url(/assets/a9ff2b87dfa85265.png);
     background-size: cover;
     border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-    padding: var(--spacing-16);
+    padding: var(--space-16);
     text-align: start
 }
 
@@ -105,4 +105,4 @@
     text-decoration: underline
 }
 
-/*# sourceMappingURL=3faed597182c1f5c.css.map*/
+/*# sourceMappingURL=a5f481f7779f996d.css.map*/

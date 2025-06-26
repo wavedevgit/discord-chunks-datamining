@@ -1,9 +1,9 @@
 /**
   Module ID: 19549
-  Original File Name: a8a312043f76a047
+  Original File Name: 328280802b56f6a7
 **/
 .label__33095 {
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .iconWrapper__33095,.label__33095 {
@@ -36,14 +36,14 @@
 }
 
 .newBadge_f4adbd {
-    margin-bottom: var(--spacing-4);
+    margin-bottom: var(--space-4);
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
 }
 
 .nitroWheel_f4adbd {
-    margin-left: var(--spacing-4);
+    margin-left: var(--space-4);
     margin-top: 1px
 }
 
@@ -70,4 +70,4 @@
     width: 180px
 }
 
-/*# sourceMappingURL=a8a312043f76a047.css.map*/
+/*# sourceMappingURL=328280802b56f6a7.css.map*/

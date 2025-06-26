@@ -1,9 +1,9 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 let r;
 n.d(t, {
   Z: () => B
 }), n(388685), n(781311), n(539854), n(642613);
-var i, l, a, o = n(442837),
+var i, l, o, a = n(442837),
   s = n(570140),
   c = n(279779),
   u = n(353926),
@@ -16,8 +16,8 @@ var i, l, a, o = n(442837),
   b = n(580005),
   _ = n(699516),
   y = n(594174),
-  x = n(981631);
-let C = !1,
+  C = n(981631);
+let x = !1,
   v = "",
   j = 0,
   O = [],
@@ -26,7 +26,7 @@ let C = !1,
   S = null;
 
 function P() {
-  v = "", j = 0, O = [], I = new Set, C = !1, S = null
+  v = "", j = 0, O = [], I = new Set, x = !1, S = null
 }
 
 function Z(e) {
@@ -34,7 +34,7 @@ function Z(e) {
 }
 
 function N() {
-  if (!C) return !1;
+  if (!x) return !1;
   let e = m.Z.getChannel(S);
   if (0 === v.trim().length) return null != r && r.clearQuery(), O = function(e) {
     let t = _.Z.getFriendIDs(),
@@ -69,8 +69,8 @@ function N() {
         let r = b.Z.getScoreWithoutFetchingLatest(e.id),
           i = e.getRecipientId(),
           l = .2 * !!_.Z.isFriend(i),
-          a = .1 * (null != m.Z.getDMFromUserId(i));
-        n[i] = 1 + r / t + l + a
+          o = .1 * (null != m.Z.getDMFromUserId(i));
+        n[i] = 1 + r / t + l + o
       }), n
     }())
   }
@@ -78,17 +78,17 @@ function N() {
 }
 
 function T() {
-  if (!C) return !1;
+  if (!x) return !1;
   let e = E;
   return (E = _.Z.getFriendCount() > 0) !== e
 }
 
 function A(e, t) {
-  if (g.Z.hasConsented(x.pjP.PERSONALIZATION)) {
+  if (g.Z.hasConsented(C.pjP.PERSONALIZATION)) {
     var n, r, i, l;
-    let a = null != (i = null == (n = d.Z.getUserAffinity(e.user.id)) ? void 0 : n.communicationProbability) ? i : 0,
-      o = null != (l = null == (r = d.Z.getUserAffinity(t.user.id)) ? void 0 : r.communicationProbability) ? l : 0;
-    if (a !== o) return o - a
+    let o = null != (i = null == (n = d.Z.getUserAffinity(e.user.id)) ? void 0 : n.communicationProbability) ? i : 0,
+      a = null != (l = null == (r = d.Z.getUserAffinity(t.user.id)) ? void 0 : r.communicationProbability) ? l : 0;
+    if (o !== a) return a - o
   }
   return (0, h._I)(f.ZP.getName(e.user).toLocaleLowerCase()).localeCompare((0, h._I)(f.ZP.getName(t.user).toLocaleLowerCase()))
 }
@@ -97,7 +97,7 @@ function w(e) {
   let {
     results: t
   } = e;
-  if (!C || "" === v) return;
+  if (!x || "" === v) return;
   let n = [];
   for (let {
       id: e,
@@ -117,20 +117,20 @@ function R() {
   return null != r && (r.destroy(), r = null), c.Z.getSearchContext(w, 1e3)
 }
 
-function M(e) {
-  if (e.key !== x.vTt) return !1;
-  C = !0, T(), r = R(), S = null, Z("")
+function k(e) {
+  if (e.key !== C.vTt) return !1;
+  x = !0, T(), r = R(), S = null, Z("")
 }
 
-function k(e) {
-  if (e.key !== x.vTt) return !1;
+function M(e) {
+  if (e.key !== C.vTt) return !1;
   D()
 }
 
 function D() {
   null != r && (r.destroy(), r = null), P()
 }
-class L extends(i = o.ZP.Store) {
+class L extends(i = a.ZP.Store) {
   initialize() {
     this.waitFor(y.default, m.Z, _.Z, u.Z, g.Z), this.syncWith([y.default, m.Z], N), this.syncWith([_.Z], T)
   }
@@ -156,12 +156,12 @@ class L extends(i = o.ZP.Store) {
     }
   }
 }
-a = "PrivateChannelRecipientsInviteStore", (l = "displayName") in L ? Object.defineProperty(L, l, {
-  value: a,
+o = "PrivateChannelRecipientsInviteStore", (l = "displayName") in L ? Object.defineProperty(L, l, {
+  value: o,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : L[l] = a;
+}) : L[l] = o;
 let U = new L(s.Z, {
     CONNECTION_OPEN: function() {
       P()
@@ -172,16 +172,16 @@ let U = new L(s.Z, {
         channelId: n
       } = e;
       if (null != t) return !1;
-      let r = C;
-      return P(), C = r, S = n, N()
+      let r = x;
+      return P(), x = r, S = n, N()
     },
-    MODAL_PUSH: M,
-    SHOW_ACTION_SHEET: M,
+    MODAL_PUSH: k,
+    SHOW_ACTION_SHEET: k,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      C = !0, T(), r = R(), S = e.channelId, Z("")
+      x = !0, T(), r = R(), S = e.channelId, Z("")
     },
-    MODAL_POP: k,
-    HIDE_ACTION_SHEET: k,
+    MODAL_POP: M,
+    HIDE_ACTION_SHEET: M,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: D,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
       S = e.channelId, Z(e.query)

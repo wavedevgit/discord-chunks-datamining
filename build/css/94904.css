@@ -1,6 +1,6 @@
 /**
   Module ID: 94904
-  Original File Name: e337aec17964e20f
+  Original File Name: 86ec5bbaf279003a
 **/
 .code__1a1f5 {
     background-color: var(--border-subtle);
@@ -51,12 +51,12 @@
     flex-direction: column;
     justify-content: center;
     overflow: visible;
-    padding: 68px var(--spacing-16) var(--spacing-16);
+    padding: 68px var(--space-16) var(--space-16);
     position: relative
 }
 
 .title_d43202 {
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .subtitle_d43202,.title_d43202 {
@@ -64,7 +64,7 @@
 }
 
 .subtitle_d43202 {
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--space-16)
 }
 
 .shieldIconContainer_d43202 {
@@ -97,7 +97,7 @@
     border: 1px solid var(--border-faint);
     border-top-left-radius: var(--radius-md);
     border-top-right-radius: var(--radius-md);
-    padding: var(--spacing-8) var(--spacing-16)
+    padding: var(--space-8) var(--space-16)
 }
 
 .copyIcon_d43202,.header_d43202 {
@@ -120,12 +120,12 @@
 }
 
 .footer_d43202 {
-    margin: var(--spacing-8) 0 var(--spacing-16);
+    margin: var(--space-8) 0 var(--space-16);
     text-align: center
 }
 
 .verifiedButton_d43202 {
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .codeStatus_d43202 {
@@ -140,7 +140,7 @@
 }
 
 .helpMessage_d43202 {
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--space-16)
 }
 
-/*# sourceMappingURL=e337aec17964e20f.css.map*/
+/*# sourceMappingURL=86ec5bbaf279003a.css.map*/

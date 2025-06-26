@@ -1,6 +1,6 @@
 /**
   Module ID: 522
-  Original File Name: c13e0d38b316cb2d
+  Original File Name: e6d06c79316ae451
 **/
 .qrCodeOverlay_c28498 {
     align-items: center;
@@ -35,7 +35,7 @@
 
 .qrCodeContainer_c28498 {
     border-radius: var(--radius-xs);
-    padding: var(--spacing-8)
+    padding: var(--space-8)
 }
 
 .modalRoot__3988c {
@@ -121,4 +121,4 @@
     opacity: .6
 }
 
-/*# sourceMappingURL=c13e0d38b316cb2d.css.map*/
+/*# sourceMappingURL=e6d06c79316ae451.css.map*/

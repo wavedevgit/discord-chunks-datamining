@@ -1,6 +1,6 @@
 /**
   Module ID: 89298
-  Original File Name: 709176ab4a3fba92
+  Original File Name: 55ff7fac6e77411e
 **/
 .buttonContainer__7e329 {
     align-items: center;
@@ -12,8 +12,8 @@
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     box-sizing: border-box;
-    margin-top: var(--spacing-4);
-    padding: 2px var(--spacing-4)
+    margin-top: var(--space-4);
+    padding: 2px var(--space-4)
 }
 
 .button__7e329,.keybind__7e329 {
@@ -57,9 +57,9 @@
     font-weight: 600;
     height: 16px;
     line-height: 14px;
-    margin-left: var(--spacing-4);
-    margin-right: var(--spacing-4);
-    padding: 0 var(--spacing-4);
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
+    padding: 0 var(--space-4);
     text-transform: uppercase
 }
 
@@ -313,10 +313,10 @@
 .extrasContainer__19b74 {
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-4);
+    gap: var(--space-4);
     min-width: 0;
-    padding-left: var(--spacing-8);
-    padding-right: var(--spacing-8)
+    padding-left: var(--space-8);
+    padding-right: var(--space-8)
 }
 
 .debug__19b74:after {
@@ -347,7 +347,7 @@
     flex: 1;
     height: 100%;
     max-width: 300px;
-    padding: var(--spacing-12)
+    padding: var(--space-12)
 }
 
 .activityCard__2af41 {
@@ -358,22 +358,22 @@
 
 .contentInventoryContainer__2af41 {
     border-top: 1px solid var(--background-mod-strong);
-    margin-top: var(--spacing-12);
-    padding-top: var(--spacing-12)
+    margin-top: var(--space-12);
+    padding-top: var(--space-12)
 }
 
 .contentInventoryHeader__2af41 {
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-4);
-    padding-bottom: var(--spacing-8)
+    gap: var(--space-4);
+    padding-bottom: var(--space-8)
 }
 
 .activityCard__2af41+.row__2af41,.inviteFriendsButton__2af41+.row__2af41 {
     border-top: 1px solid var(--background-mod-strong);
-    margin-top: var(--spacing-12);
-    padding-top: var(--spacing-12)
+    margin-top: var(--space-12);
+    padding-top: var(--space-12)
 }
 
 .title__2af41 {
@@ -393,12 +393,12 @@
 }
 
 .row__2af41+.row__2af41 {
-    margin-top: var(--spacing-12)
+    margin-top: var(--space-12)
 }
 
 .details__2af41 {
     flex-grow: 1;
-    margin: 0 var(--spacing-12);
+    margin: 0 var(--space-12);
     overflow: hidden
 }
 
@@ -423,7 +423,7 @@
 }
 
 .inviteButtonWrapper__2af41+.inviteButtonWrapper__2af41 {
-    margin-left: var(--spacing-8)
+    margin-left: var(--space-8)
 }
 
 .inviteButton__2af41 {
@@ -440,11 +440,11 @@
 .inviteFriendsButton__2af41 {
     border-radius: var(--radius-sm);
     margin-left: 68px;
-    margin-top: var(--spacing-12)
+    margin-top: var(--space-12)
 }
 
 .liveIndicator__2af41 {
-    margin-left: var(--spacing-8)
+    margin-left: var(--space-8)
 }
 
 .badgesContainer__2af41 {
@@ -644,7 +644,7 @@
     align-items: flex-start;
     display: flex;
     flex: 1;
-    gap: var(--spacing-8);
+    gap: var(--space-8);
     height: 100%;
     justify-content: flex-start;
     position: relative;
@@ -1071,8 +1071,8 @@
 
 .container__32c39 {
     border-top: 1px solid var(--background-mod-strong);
-    margin-top: var(--spacing-12);
-    padding-top: var(--spacing-12);
+    margin-top: var(--space-12);
+    padding-top: var(--space-12);
     width: 100%
 }
 
@@ -1267,7 +1267,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-4);
+    gap: var(--space-4);
     justify-content: center
 }
 
@@ -1372,7 +1372,7 @@
 .container_fb1c43 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-8);
+    gap: var(--space-8);
     min-height: 100px;
     min-width: 300px;
     position: relative
@@ -1480,4 +1480,4 @@
     pointer-events: auto
 }
 
-/*# sourceMappingURL=709176ab4a3fba92.css.map*/
+/*# sourceMappingURL=55ff7fac6e77411e.css.map*/

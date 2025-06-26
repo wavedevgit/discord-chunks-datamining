@@ -1,4 +1,4 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => d
 });
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  a = n(207055),
-  o = n(938475),
+  o = n(207055),
+  a = n(938475),
   s = n(981631),
   c = n(388032),
   u = n(595922);
@@ -15,7 +15,7 @@ var i = n(442837),
 function d(e) {
   let {
     channel: t
-  } = e, n = (0, i.e7)([o.ZP], () => o.ZP.getVoiceStatesForChannel(t));
+  } = e, n = (0, i.e7)([a.ZP], () => a.ZP.getVoiceStatesForChannel(t));
   return (0, r.jsxs)("div", {
     className: u.root,
     children: [(0, r.jsx)(l.Text, {
@@ -26,7 +26,7 @@ function d(e) {
       })
     }), (0, r.jsx)(l.Ttm, {
       className: u.scroller,
-      children: (0, r.jsx)(a.Z, {
+      children: (0, r.jsx)(o.Z, {
         allowDragging: !1,
         allowPreviews: !1,
         className: u.voiceUsers,

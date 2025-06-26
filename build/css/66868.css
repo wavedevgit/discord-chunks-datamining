@@ -1,14 +1,14 @@
 /**
   Module ID: 66868
-  Original File Name: 4289d6af134aa342
+  Original File Name: 004ce264678ce20d
 **/
 .container__11014 {
     background-color: var(--background-base-lowest);
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: column;
-    padding: var(--spacing-12);
-    row-gap: var(--spacing-12);
+    padding: var(--space-12);
+    row-gap: var(--space-12);
     width: 288px
 }
 
@@ -42,7 +42,7 @@
 .avatarContainer__11014 {
     background-color: var(--bg-brand);
     height: 40px;
-    margin-right: var(--spacing-12);
+    margin-right: var(--space-12);
     width: 40px
 }
 
@@ -67,7 +67,7 @@
 
 .decorationsContainer__11014 {
     align-items: center;
-    margin-left: var(--spacing-4)
+    margin-left: var(--space-4)
 }
 
 .modal__58ae6 {
@@ -88,19 +88,19 @@
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    padding: var(--spacing-24)
+    padding: var(--space-24)
 }
 
 .close__58ae6 {
     position: absolute;
-    right: var(--spacing-16);
-    top: var(--spacing-16)
+    right: var(--space-16);
+    top: var(--space-16)
 }
 
 .left__58ae6 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-24);
+    gap: var(--space-24);
     max-width: 320px
 }
 
@@ -110,7 +110,7 @@
 }
 
 .headerContainer__58ae6 {
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .guildRow__58ae6 {
@@ -118,17 +118,17 @@
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
     flex: 1;
-    padding: var(--spacing-8)
+    padding: var(--space-8)
 }
 
 .buttonContainer__58ae6 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .tooltip__58ae6 {
     text-align: center
 }
 
-/*# sourceMappingURL=4289d6af134aa342.css.map*/
+/*# sourceMappingURL=004ce264678ce20d.css.map*/

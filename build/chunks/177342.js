@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Q: () => c
 }), n(953529);
 var r = n(255367),
   i = n(73800),
   l = n(286379),
-  a = n(797614),
-  o = n(596739),
+  o = n(797614),
+  a = n(596739),
   s = n(473092);
 
 function c(e) {
@@ -21,7 +21,7 @@ function c(e) {
     buttons: f
   } = e;
   i.useEffect(() => {
-    a.Z.increment({
+    o.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
   }, []);
@@ -34,7 +34,7 @@ function c(e) {
       cta: s.NM.USER_BANNER_DISMISS
     })
   }, [h, t, n, c, u]);
-  return (0, r.jsx)(o.W, {
+  return (0, r.jsx)(a.W, {
     buttons: f,
     description: p,
     header: d,

@@ -1,9 +1,9 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  s: () => l
+  s: () => i
 });
-var i = n(695346);
+var l = n(695346);
 
-function l() {
-  return i.Sb.useSetting()
+function i() {
+  return l.Sb.useSetting()
 }

@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => y
 }), n(704826), n(35282), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(481060),
   c = n(771340),
   u = n(600164),
@@ -44,7 +44,7 @@ class b extends i.PureComponent {
     } = this.props;
     return (0, r.jsxs)(u.Z, {
       align: u.Z.Align.CENTER,
-      className: a()({
+      className: o()({
         selected: t
       }),
       children: [(0, r.jsx)(g, {
@@ -121,6 +121,6 @@ class _ extends i.PureComponent {
     })
   }
 }
-let y = o.ZP.connectStores([d.Z], () => ({
+let y = a.ZP.connectStores([d.Z], () => ({
   regions: d.Z.getRegions(null)
 }))(_)

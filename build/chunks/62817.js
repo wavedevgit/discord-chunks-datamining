@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => y
 }), n(35282), n(388685), n(358797);
 var r, i = n(442837),
   l = n(570140),
-  a = n(375954);
+  o = n(375954);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,7 +22,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -50,7 +50,7 @@ function b(e, t) {
 }
 class _ extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(a.Z)
+    this.waitFor(o.Z)
   }
   getFiles(e) {
     var t;
@@ -66,7 +66,7 @@ class _ extends(r = i.ZP.Store) {
     if (null != e) return f[e]
   }
 }
-o(_, "displayName", "UploadStore");
+a(_, "displayName", "UploadStore");
 let y = new _(l.Z, {
   CONNECTION_OPEN: function() {
     f = {}
@@ -78,18 +78,18 @@ let y = new _(l.Z, {
     var t, n, r, i;
     let {
       channelId: l,
-      file: a,
-      uploader: o,
+      file: o,
+      uploader: a,
       message: f
     } = e;
-    if (o._aborted || o._errored) return;
+    if (a._aborted || a._errored) return;
     let m = null != (t = u[l]) ? t : c;
-    if (d[a.id] = o, u[l] = [...m, a], null == f) return;
-    p[a.id] = f;
+    if (d[o.id] = a, u[l] = [...m, o], null == f) return;
+    p[o.id] = f;
     let {
       items: g
-    } = a;
-    null != g && (h[f.id] = (r = s({}, a), i = i = {
+    } = o;
+    null != g && (h[f.id] = (r = s({}, o), i = i = {
       items: g
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);

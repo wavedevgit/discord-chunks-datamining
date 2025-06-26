@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: a467d827f68387fb
+  Original File Name: e1fd3972bc5e3c87
 **/
 .titleBar__421ed {
     z-index: 3001;
@@ -262,7 +262,7 @@
 }
 
 .hint_e8d31f {
-    margin-top: var(--spacing-4)
+    margin-top: var(--space-4)
 }
 
 .clickable_e8d31f {
@@ -275,7 +275,7 @@
 
 .buttonContainer_e8d31f {
     display: flex;
-    margin-top: var(--spacing-8)
+    margin-top: var(--space-8)
 }
 
 .button_e8d31f {
@@ -293,7 +293,7 @@
     display: flex;
     flex: 0 0 auto;
     justify-content: center;
-    margin-right: var(--spacing-12)
+    margin-right: var(--space-12)
 }
 
 .avatar_e8d31f,.icon_e8d31f {
@@ -1234,7 +1234,7 @@
 }
 
 .movingImage_d2e74b {
-    border-radius: var(--spacing-4);
+    border-radius: var(--space-4);
     height: 0;
     opacity: 0;
     position: fixed;
@@ -1414,7 +1414,7 @@
     color: var(--redesign-button-overlay-alpha-text);
     display: flex;
     flex: 0 1 auto;
-    gap: var(--spacing-4);
+    gap: var(--space-4);
     margin-right: 8px;
     min-width: 0;
     padding: 6px 12px
@@ -1431,7 +1431,7 @@
     color: var(--redesign-button-overlay-alpha-text);
     display: flex;
     flex: 0 1 auto;
-    gap: var(--spacing-4);
+    gap: var(--space-4);
     min-height: 20px;
     min-width: 0;
     padding: 6px 8px
@@ -1455,14 +1455,14 @@
     background: var(--redesign-button-overlay-alpha-background);
     color: var(--redesign-button-overlay-alpha-text);
     height: 32px;
-    margin-left: var(--spacing-8);
+    margin-left: var(--space-8);
     pointer-events: all;
     width: 32px
 }
 
 .overlayButton__2f4f7.compact__2f4f7 {
     height: 28px;
-    margin-left: var(--spacing-4);
+    margin-left: var(--space-4);
     width: 28px
 }
 
@@ -1843,7 +1843,7 @@
 .textWithIcon_effb26 {
     align-items: center;
     display: flex;
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .secured_effb26 {
@@ -3043,23 +3043,23 @@
     flex-shrink: 1;
     height: 24px;
     justify-content: center;
-    margin-left: var(--spacing-4);
+    margin-left: var(--space-4);
     max-width: 100%;
     opacity: .8;
     overflow: hidden;
-    padding: var(--spacing-4) var(--spacing-8);
+    padding: var(--space-4) var(--space-8);
     text-overflow: ellipsis;
     white-space: nowrap
 }
 
 .username_adebba.streaming_adebba {
-    padding-right: var(--spacing-4)
+    padding-right: var(--space-4)
 }
 
 .voiceUserContainer_adebba {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .voiceUser_adebba {
@@ -3084,16 +3084,16 @@
 
 .voiceUser_adebba.flipped_adebba .username_adebba {
     margin-left: 0;
-    margin-right: var(--spacing-4);
-    padding-left: var(--spacing-4)
+    margin-right: var(--space-4);
+    padding-left: var(--space-4)
 }
 
 .voiceUser_adebba.flipped_adebba .voiceIcons_adebba {
-    margin-right: var(--spacing-4)!important
+    margin-right: var(--space-4)!important
 }
 
 .clanTag_adebba {
-    margin-left: var(--spacing-4)
+    margin-left: var(--space-4)
 }
 
 .voiceIcons_adebba {
@@ -3153,7 +3153,7 @@
 .connectedAnimationInnerContainer_adebba {
     align-items: center;
     display: flex;
-    gap: var(--spacing-4);
+    gap: var(--space-4);
     height: 100%;
     justify-content: flex-start;
     overflow: hidden;
@@ -3186,7 +3186,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-4);
+    gap: var(--space-4);
     opacity: 1
 }
 
@@ -3216,7 +3216,7 @@
     cursor: pointer;
     flex-shrink: 1;
     opacity: .8;
-    padding: var(--spacing-4) var(--spacing-8)
+    padding: var(--space-4) var(--space-8)
 }
 
 .bgShade__6d791 {
@@ -3228,7 +3228,7 @@
 }
 
 .titleWrapper__6d791 {
-    padding: var(--spacing-4) 10px;
+    padding: var(--space-4) 10px;
     white-space: nowrap
 }
 
@@ -3326,4 +3326,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=a467d827f68387fb.css.map*/
+/*# sourceMappingURL=e1fd3972bc5e3c87.css.map*/

@@ -2,13 +2,13 @@
 n.d(t, {
   Z: () => h
 });
-var i = n(255367),
-  l = n(73800),
+var l = n(255367),
+  i = n(73800),
   r = n(120356),
-  o = n.n(r),
-  a = n(481060),
-  c = n(895924),
-  s = n(827498),
+  a = n.n(r),
+  o = n(481060),
+  s = n(895924),
+  c = n(827498),
   u = n(106066),
   d = n(98880),
   p = n(772606),
@@ -21,48 +21,48 @@ function h(e) {
     entrypoint: n,
     title: r,
     look: h,
-    items: b,
-    sectionName: _,
-    sectionOverallPosition: C
-  } = e, v = (0, u.s)(), x = l.useMemo(() => n === s._b.TEXT ? d.kA : d.qR, [n]);
-  return (0, i.jsxs)("section", {
+    items: v,
+    sectionName: y,
+    sectionOverallPosition: x
+  } = e, b = (0, u.s)(), g = i.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
+  return (0, l.jsxs)("section", {
     className: f.container,
     "aria-label": m.intl.formatToPlainString(m.t.iobNIC, {
       sectionTitle: r
     }),
-    children: [(0, i.jsxs)("div", {
+    children: [(0, l.jsxs)("div", {
       className: f.header,
-      children: [(0, i.jsx)(p.Z, {
+      children: [(0, l.jsx)(p.Z, {
         className: f.backButton
-      }), (0, i.jsx)(a.X6q, {
+      }), (0, l.jsx)(o.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
         children: r
       })]
-    }), (0, i.jsx)(a.Ttm, {
-      children: (0, i.jsx)("div", {
-        className: o()({
+    }), (0, l.jsx)(o.Ttm, {
+      children: (0, l.jsx)("div", {
+        className: a()({
           [f.appGrid]: h !== d.U4.ROW,
           [f.rows]: h === d.U4.ROW
         }),
-        children: b.map((e, n) => {
+        children: v.map((e, n) => {
           let {
-            application: l,
+            application: i,
             installOnDemand: r,
-            showsPromoted: o
+            showsPromoted: a
           } = e;
-          return (0, i.jsx)(x, {
+          return (0, l.jsx)(g, {
             context: t,
-            application: l,
+            application: i,
             look: h,
-            sectionName: _,
+            sectionName: y,
             resultsPosition: n,
-            location: c.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
+            location: s.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
             installOnDemand: r,
-            isOneClickCTA: v,
-            sectionOverallPosition: C,
-            showsPromoted: o
-          }, l.id)
+            isOneClickCTA: b,
+            sectionOverallPosition: x,
+            showsPromoted: a
+          }, i.id)
         })
       })
     })]

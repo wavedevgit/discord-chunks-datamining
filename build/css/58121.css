@@ -1,6 +1,6 @@
 /**
   Module ID: 58121
-  Original File Name: 2fc06db4dae559c0
+  Original File Name: 2e8a5c1ecf682d82
 **/
 .coverContainer__2f300 {
     align-items: center;
@@ -136,7 +136,7 @@
 }
 
 .coverTitle__2f300 {
-    margin-bottom: var(--spacing-16);
+    margin-bottom: var(--space-16);
     opacity: 1
 }
 
@@ -712,7 +712,7 @@
 }
 
 .scrollerInner_e4503a {
-    padding: 0 var(--spacing-8)
+    padding: 0 var(--space-8)
 }
 
 .page__41ed7 {
@@ -725,15 +725,15 @@
     display: flex;
     flex-direction: column;
     min-height: 0;
-    padding: var(--spacing-16) var(--spacing-8)
+    padding: var(--space-16) var(--space-8)
 }
 
 .header__41ed7 {
     display: flex;
     margin: 0 32px 16px 16px;
     margin-bottom: var(--space-md);
-    margin-left: var(--spacing-8);
-    margin-right: var(--spacing-24)
+    margin-left: var(--space-8);
+    margin-right: var(--space-24)
 }
 
 .search__41ed7 {
@@ -1172,7 +1172,7 @@
     border-top: 1px solid var(--app-border-frame);
     height: calc(var(--custom-channel-header-height) + 1px);
     padding-left: 20px;
-    padding-right: var(--spacing-12)
+    padding-right: var(--space-12)
 }
 
 .innerHeader__0b563:after {
@@ -1189,4 +1189,4 @@
     width: 16px
 }
 
-/*# sourceMappingURL=2fc06db4dae559c0.css.map*/
+/*# sourceMappingURL=2e8a5c1ecf682d82.css.map*/

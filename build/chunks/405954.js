@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(704215),
-  a = n(481060),
-  o = n(436952),
+  o = n(481060),
+  a = n(436952),
   s = n(839606),
   c = n(54480),
   u = n(605236),
@@ -25,11 +25,11 @@ let b = function(e) {
     closePicker: _
   } = (0, s.B)(), {
     canAccessPicker: y,
-    entryPoint: x
+    entryPoint: C
   } = (0, c.m)({
     location: "channel_header_toolbar",
     selectedChannelId: t.id
-  }), C = (0, u.wE)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = y && x === o.FN.TOOLBAR && C, [j, O] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = j === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, I = i.useCallback(() => {
+  }), x = (0, u.wE)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = y && C === a.FN.TOOLBAR && x, [j, O] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = j === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, I = i.useCallback(() => {
     E && O(m.L.TAKE_ACTION), n === t.id ? (_(), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
       action: "close"
     })) : (b(t.id), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
@@ -39,7 +39,7 @@ let b = function(e) {
   return v ? (0, r.jsx)(h.JO, {
     onClick: I,
     tooltip: g.intl.string(g.t.GixvUl),
-    icon: a.XBm,
+    icon: o.XBm,
     iconSize: 20,
     "aria-label": g.intl.string(g.t.GixvUl),
     showBadge: E,

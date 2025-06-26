@@ -1,17 +1,17 @@
 /**
   Module ID: 65652
-  Original File Name: 21a1447a1009d4ae
+  Original File Name: c9fa3ab82a8644dc
 **/
 .modalContent__2379f {
-    margin-bottom: var(--spacing-16);
+    margin-bottom: var(--space-16);
     min-height: -webkit-min-content;
     min-height: -moz-min-content;
     min-height: min-content;
-    padding-top: var(--spacing-16)
+    padding-top: var(--space-16)
 }
 
 .disclaimer__2379f {
-    margin-top: var(--spacing-16)
+    margin-top: var(--space-16)
 }
 
 .header__3847f {
@@ -27,7 +27,7 @@
 }
 
 .modalContent__3847f {
-    padding-top: var(--spacing-16)
+    padding-top: var(--space-16)
 }
 
 .title__3847f {
@@ -112,7 +112,7 @@
 }
 
 .footerText_a95388 {
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--space-16)
 }
 
 .childButton__3ed08 {
@@ -158,7 +158,7 @@
 
 .iconContainer__8310d {
     align-self: center;
-    margin-bottom: var(--spacing-4);
+    margin-bottom: var(--space-4);
     padding: 8px
 }
 
@@ -192,4 +192,4 @@
     }
 }
 
-/*# sourceMappingURL=21a1447a1009d4ae.css.map*/
+/*# sourceMappingURL=c9fa3ab82a8644dc.css.map*/

@@ -1,22 +1,22 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  A: () => a
+  A: () => o
 });
-var i = n(255367);
+var l = n(255367);
 n(73800);
-var l = n(481060),
+var i = n(481060),
   r = n(176412),
-  o = n(146173);
+  a = n(146173);
 
-function a(e) {
+function o(e) {
   let {
     searchQuery: t,
     textContent: n,
-    type: a
+    type: o
   } = e;
-  return (0, r.Bm)(a, t), (0, i.jsx)("div", {
-    className: o.emptyStateContainer,
-    children: (0, i.jsx)(l.Text, {
+  return (0, r.Bm)(o, t), (0, l.jsx)("div", {
+    className: a.emptyStateContainer,
+    children: (0, l.jsx)(i.Text, {
       variant: "text-md/medium",
       color: "text-muted",
       children: n

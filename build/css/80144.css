@@ -1,15 +1,15 @@
 /**
   Module ID: 80144
-  Original File Name: f35e7ed9fe958db3
+  Original File Name: e1d77d8ffa3875d1
 **/
 .row__19fd1 {
     align-items: center;
     border-bottom: 1px solid var(--border-subtle);
     border-color: var(--border-faint);
     display: flex;
-    gap: var(--spacing-16);
-    margin: 0 var(--spacing-16);
-    padding: var(--spacing-16) 0;
+    gap: var(--space-16);
+    margin: 0 var(--space-16);
+    padding: var(--space-16) 0;
     position: relative
 }
 
@@ -26,9 +26,9 @@
     bottom: 0;
     content: "";
     height: 1px;
-    left: calc(var(--spacing-16) + var(--spacing-24));
+    left: calc(var(--space-16) + var(--space-24));
     position: absolute;
-    right: calc(var(--spacing-16)*-1)
+    right: calc(var(--space-16)*-1)
 }
 
 .row__19fd1:last-child {
@@ -41,8 +41,8 @@
 }
 
 .icon__19fd1,.iconContainer__19fd1 {
-    height: var(--spacing-24);
-    width: var(--spacing-24)
+    height: var(--space-24);
+    width: var(--space-24)
 }
 
 .icon__19fd1 {
@@ -59,7 +59,7 @@
     flex-shrink: 0;
     margin-left: auto;
     min-width: 75px;
-    padding: var(--spacing-8) var(--spacing-12)
+    padding: var(--space-8) var(--space-12)
 }
 
 .number__19fd1 {
@@ -78,7 +78,7 @@
 
 .tableRowGroup__19fd1 {
     flex-shrink: 0;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .tableRowGroup__19fd1 .content__19fd1 {
@@ -98,7 +98,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .buttonIcon__19fd1 {
@@ -107,35 +107,35 @@
 }
 
 .content_a2e66b,.headersContainer_a2e66b {
-    padding: var(--spacing-16)
+    padding: var(--space-16)
 }
 
 .headersContainer_a2e66b {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .requestContainer_a2e66b {
-    padding-left: var(--spacing-16);
-    padding-right: var(--spacing-16);
-    padding-top: var(--spacing-16)
+    padding-left: var(--space-16);
+    padding-right: var(--space-16);
+    padding-top: var(--space-16)
 }
 
 .button_a2e66b {
     align-items: center;
     display: flex;
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .modalClose_a2e66b {
     position: absolute;
-    right: var(--spacing-16);
-    top: var(--spacing-16)
+    right: var(--space-16);
+    top: var(--space-16)
 }
 
 .learnMoreButton_a2e66b {
     padding-left: 0
 }
 
-/*# sourceMappingURL=f35e7ed9fe958db3.css.map*/
+/*# sourceMappingURL=e1d77d8ffa3875d1.css.map*/

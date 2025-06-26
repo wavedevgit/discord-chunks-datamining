@@ -1,20 +1,20 @@
 /**
   Module ID: 39809
-  Original File Name: 45efb446cafe6ef5
+  Original File Name: d0f3d1df13580bdd
 **/
 .content__61700 {
     min-height: -webkit-min-content;
     min-height: -moz-min-content;
     min-height: min-content;
-    padding-bottom: var(--spacing-16)
+    padding-bottom: var(--space-16)
 }
 
 .radioItem__61700 {
-    padding: var(--spacing-8) var(--spacing-16)
+    padding: var(--space-8) var(--space-16)
 }
 
 .textArea__61700 {
-    padding: var(--spacing-16)
+    padding: var(--space-16)
 }
 
 .header_ad198f {
@@ -78,8 +78,8 @@
 }
 
 .content_ad198f {
-    gap: var(--spacing-16);
-    padding-bottom: var(--spacing-16)
+    gap: var(--space-16);
+    padding-bottom: var(--space-16)
 }
 
 .help_ad198f {
@@ -90,4 +90,4 @@
     margin-top: 16px
 }
 
-/*# sourceMappingURL=45efb446cafe6ef5.css.map*/
+/*# sourceMappingURL=d0f3d1df13580bdd.css.map*/

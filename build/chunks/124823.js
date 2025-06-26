@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => w
 });
 var r = n(255367),
   i = n(73800),
   l = n(597312),
-  a = n(481060),
-  o = n(727637),
+  o = n(481060),
+  a = n(727637),
   s = n(410030),
   c = n(100527),
   u = n(906732),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(892001),
   _ = n(899007),
   y = n(648052),
-  x = n(867176),
-  C = n(280885),
+  C = n(867176),
+  x = n(280885),
   v = n(900927),
   j = n(678738),
   O = n(502762),
@@ -55,13 +55,13 @@ function w(e) {
   let {
     user: t,
     channel: n
-  } = e, w = __OVERLAY__ || !(0, d.Z)(t.id), R = (0, g.ZP)(t.id), M = (0, s.ZP)(), k = i.useRef(Date.now()), {
+  } = e, w = __OVERLAY__ || !(0, d.Z)(t.id), R = (0, g.ZP)(t.id), k = (0, s.ZP)(), M = i.useRef(Date.now()), {
     analyticsLocations: D
   } = (0, u.ZP)(c.Z.USER_PROFILE_SIDEBAR), L = (0, f.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
-  }), U = i.useRef(null), B = (0, o.Z)(U), F = e => {
+  }), U = i.useRef(null), B = (0, a.Z)(U), F = e => {
     (0, b.openUserProfileModal)(A({
       sourceAnalyticsLocations: D,
       hideRestrictedProfile: !0
@@ -71,7 +71,7 @@ function w(e) {
     value: D,
     children: (0, r.jsx)(f.Mt, {
       value: L,
-      openedAt: k.current,
+      openedAt: M.current,
       fetchStartedAt: null == R ? void 0 : R.fetchStartedAt,
       fetchEndedAt: null == R ? void 0 : R.fetchEndedAt,
       isLoaded: null == R ? void 0 : R.isLoaded,
@@ -80,7 +80,7 @@ function w(e) {
         user: t,
         displayProfile: R,
         themeType: P.lY.SIDEBAR,
-        themeOverride: M,
+        themeOverride: k,
         children: [(0, r.jsxs)(l.u2, {
           children: [(0, r.jsx)(S.Z, {
             children: (0, r.jsx)(I.Z, {
@@ -88,7 +88,7 @@ function w(e) {
             })
           }), (0, r.jsxs)("header", {
             className: N.header,
-            children: [(0, r.jsx)(x.Z, {
+            children: [(0, r.jsx)(C.Z, {
               user: t,
               displayProfile: R,
               themeType: P.lY.SIDEBAR,
@@ -116,7 +116,7 @@ function w(e) {
               children: [(0, r.jsx)(j.Z, {
                 heading: Z.intl.string(Z.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(C.Z, {
+                children: (0, r.jsx)(x.Z, {
                   userBio: null == R ? void 0 : R.bio,
                   userId: t.id,
                   animateOnHover: !0,
@@ -133,10 +133,10 @@ function w(e) {
           })]
         }), !w && (0, r.jsx)("footer", {
           className: N.footer,
-          children: (0, r.jsx)(a.zxk, {
+          children: (0, r.jsx)(o.zxk, {
             fullWidth: !0,
-            size: a.zxk.Sizes.LARGE,
-            look: a.zxk.Looks.BLANK,
+            size: o.zxk.Sizes.LARGE,
+            look: o.zxk.Looks.BLANK,
             color: N.footerButtonColor,
             onClick: () => {
               F(), (0, m.pQ)(A({

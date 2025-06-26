@@ -1,6 +1,6 @@
 /**
   Module ID: 12902
-  Original File Name: 84abf9f5bdd2adbc
+  Original File Name: 5b050196b51b8e26
 **/
 .text__87e56 {
     color: var(--premium-nitro-pink-text)
@@ -21,14 +21,14 @@
 }
 
 .newBadge_f4adbd {
-    margin-bottom: var(--spacing-4);
+    margin-bottom: var(--space-4);
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
 }
 
 .nitroWheel_f4adbd {
-    margin-left: var(--spacing-4);
+    margin-left: var(--space-4);
     margin-top: 1px
 }
 
@@ -1267,4 +1267,4 @@
     background-color: var(--background-mod-subtle)
 }
 
-/*# sourceMappingURL=84abf9f5bdd2adbc.css.map*/
+/*# sourceMappingURL=5b050196b51b8e26.css.map*/

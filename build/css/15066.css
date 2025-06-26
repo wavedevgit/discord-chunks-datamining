@@ -1,6 +1,6 @@
 /**
   Module ID: 15066
-  Original File Name: 6c6951b5cd4851c0
+  Original File Name: 8d20036d18d2a1d7
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -1175,7 +1175,7 @@ h1.title_feb59c,h2.title_feb59c {
     border-radius: var(--radius-lg);
     display: flex;
     flex-direction: row;
-    padding: var(--spacing-16)
+    padding: var(--space-16)
 }
 
 .containerPadding__19cf2 {
@@ -1184,14 +1184,14 @@ h1.title_feb59c,h2.title_feb59c {
 
 .image__19cf2 {
     height: 80px;
-    margin-right: var(--spacing-8);
+    margin-right: var(--space-8);
     width: 80px
 }
 
 .body__19cf2 {
     flex: 1;
     flex-direction: column;
-    margin-right: var(--spacing-32)
+    margin-right: var(--space-32)
 }
 
-/*# sourceMappingURL=6c6951b5cd4851c0.css.map*/
+/*# sourceMappingURL=8d20036d18d2a1d7.css.map*/

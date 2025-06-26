@@ -1,11 +1,11 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
-  Y: () => x
+  Y: () => C
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(695469),
   c = n(481060),
   u = n(542094),
@@ -22,15 +22,15 @@ let b = ["embedded_cover"],
   };
 var y = ((r = y || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
 
-function x(e) {
+function C(e) {
   var t;
   let {
     context: n,
     activityItem: r,
-    onClick: a,
+    onClick: o,
     aspectRatio: y = 0,
-    animatedDivClass: x,
-    commandOrigin: C
+    animatedDivClass: C,
+    commandOrigin: x
   } = e, {
     onActivityItemSelected: v,
     imageBackground: j,
@@ -41,10 +41,10 @@ function x(e) {
     activityItem: r,
     guildId: null != (t = n.channel.getGuildId()) ? t : void 0,
     locationObject: {},
-    onActivityItemSelected: a,
+    onActivityItemSelected: o,
     embeddedActivitiesManager: h.Z,
     assetNames: b,
-    commandOrigin: C
+    commandOrigin: x
   }), [I, S] = l.useState(!1), P = l.useCallback(() => {
     S(!0)
   }, [S]), Z = l.useCallback(() => {
@@ -75,7 +75,7 @@ function x(e) {
         return (0, i.jsx)("div", {
           className: g.activityAction,
           children: (0, i.jsx)("div", {
-            className: o()(g.activityActionButton, g.activityActionButtonDanger),
+            className: a()(g.activityActionButton, g.activityActionButtonDanger),
             children: (0, i.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
@@ -113,7 +113,7 @@ function x(e) {
         return (0, i.jsx)(c.f6W, {
           theme: f.BRd.DARK,
           children: e => (0, i.jsxs)(s.animated.div, {
-            className: o()(e, g.activityItem, x, {
+            className: a()(e, g.activityItem, C, {
               [g.activityItem_13_11]: 0 === y,
               [g.activityItem_16_9]: 1 === y
             }),
@@ -132,4 +132,4 @@ function x(e) {
     })
   })
 }
-x.AspectRatio = y
+C.AspectRatio = y

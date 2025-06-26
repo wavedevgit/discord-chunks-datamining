@@ -1,6 +1,6 @@
 /**
   Module ID: 24231
-  Original File Name: 2603d27c14ef113e
+  Original File Name: 2430043ec84465e9
 **/
 .container__05cdc {
     display: flex
@@ -349,7 +349,7 @@
 }
 
 .username__26abc {
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .avatar__26abc {
@@ -530,4 +530,4 @@
     max-height: clamp(200px,calc(100vh - 80px),660px)
 }
 
-/*# sourceMappingURL=2603d27c14ef113e.css.map*/
+/*# sourceMappingURL=2430043ec84465e9.css.map*/

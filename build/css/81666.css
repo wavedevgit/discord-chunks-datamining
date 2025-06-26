@@ -1,11 +1,11 @@
 /**
   Module ID: 81666
-  Original File Name: 555ba6c14280b7f1
+  Original File Name: a9e72940c5c2e6bc
 **/
 .buttonsContainer_a8b931 {
     display: flex;
-    gap: var(--spacing-8);
-    margin-bottom: var(--spacing-24)
+    gap: var(--space-8);
+    margin-bottom: var(--space-24)
 }
 
 .container__8a969 {
@@ -1193,7 +1193,7 @@
 }
 
 .errorCodeNoticeText__9671b {
-    margin-left: var(--spacing-8)
+    margin-left: var(--space-8)
 }
 
 .errorCodeNoticeClickable__9671b {
@@ -1385,8 +1385,8 @@
 }
 
 .blockedIcon__477aa {
-    margin-left: var(--spacing-12);
-    margin-right: var(--spacing-4)
+    margin-left: var(--space-12);
+    margin-right: var(--space-4)
 }
 
 .blockedText__477aa {
@@ -1395,7 +1395,7 @@
 }
 
 .noIcon__477aa {
-    margin-left: var(--spacing-12)
+    margin-left: var(--space-12)
 }
 
 .container__394db {
@@ -1551,4 +1551,4 @@
     width: 440px
 }
 
-/*# sourceMappingURL=555ba6c14280b7f1.css.map*/
+/*# sourceMappingURL=a9e72940c5c2e6bc.css.map*/

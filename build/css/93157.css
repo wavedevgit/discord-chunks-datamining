@@ -1,6 +1,6 @@
 /**
   Module ID: 93157
-  Original File Name: 86754151273cfc76
+  Original File Name: dc94bb35028eb316
 **/
 .modalHeader__57752 {
     justify-content: space-between;
@@ -15,7 +15,7 @@
 .modalContent__57752 {
     display: flex;
     flex-direction: column;
-    padding-top: var(--spacing-8)
+    padding-top: var(--space-8)
 }
 
 .editingContainer__57752 {
@@ -36,7 +36,7 @@
 
 .errorContainer__57752 {
     flex-direction: row;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .image__57752 {
@@ -137,18 +137,18 @@
 .premiumUpsell__57752 {
     border-radius: var(--radius-sm);
     margin: -4px 0 0;
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--space-16)
 }
 
 .modalFooter__57752 {
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-16);
+    gap: var(--space-16);
     justify-content: flex-end
 }
 
 .linkButton__57752 {
-    padding: var(--spacing-8)
+    padding: var(--space-8)
 }
 
 .resetButton__57752 {
@@ -160,4 +160,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=86754151273cfc76.css.map*/
+/*# sourceMappingURL=dc94bb35028eb316.css.map*/

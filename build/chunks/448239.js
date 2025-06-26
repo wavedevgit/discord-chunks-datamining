@@ -1,4 +1,4 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => l
 });
@@ -9,8 +9,8 @@ var i = n(325767);
 function l(e) {
   var t, n, {
       width: l = 24,
-      height: a = 24,
-      color: o = "currentColor",
+      height: o = 24,
+      color: a = "currentColor",
       className: s,
       foreground: c
     } = e,
@@ -49,14 +49,14 @@ function l(e) {
   }({}, (0, i.Z)(u)), n = n = {
     className: s,
     width: l,
-    height: a,
+    height: o,
     viewBox: "0 0 24 24",
     children: (0, r.jsx)("path", {
       fillRule: "evenodd",
       clipRule: "evenodd",
       d: "M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z",
       className: c,
-      fill: o
+      fill: a
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

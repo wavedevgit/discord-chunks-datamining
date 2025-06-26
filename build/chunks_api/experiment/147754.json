@@ -1,1 +1,1 @@
-{"id":"147754","type":"experiment","data":{"kind":"guild","id":"2021-11_hub_events","label":"Hub Events","defaultConfig":{"showHubEventsList":false},"treatments":[{"id":1,"label":"Show Hub Events List","config":{"showHubEventsList":false}}]},"fromModule":{"id":"16703"}}
+{"id":"147754","type":"experiment","data":{"kind":"guild","id":"2021-11_hub_events","label":"Hub Events","defaultConfig":{"showHubEventsList":false},"treatments":[{"id":1,"label":"Show Hub Events List","config":{"showHubEventsList":false}}]},"fromModule":{"id":"19577"}}

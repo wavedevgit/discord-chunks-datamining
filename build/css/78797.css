@@ -1,6 +1,6 @@
 /**
   Module ID: 78797
-  Original File Name: 5712c2f7eeed9ee7
+  Original File Name: 05caf22dcaefe61a
 **/
 @use postcss-pxtorem;
 
@@ -1126,7 +1126,7 @@
 }
 
 .errorCodeNoticeText__9671b {
-    margin-left: var(--spacing-8)
+    margin-left: var(--space-8)
 }
 
 .errorCodeNoticeClickable__9671b {
@@ -1318,8 +1318,8 @@
 }
 
 .blockedIcon__477aa {
-    margin-left: var(--spacing-12);
-    margin-right: var(--spacing-4)
+    margin-left: var(--space-12);
+    margin-right: var(--space-4)
 }
 
 .blockedText__477aa {
@@ -1328,7 +1328,7 @@
 }
 
 .noIcon__477aa {
-    margin-left: var(--spacing-12)
+    margin-left: var(--space-12)
 }
 
-/*# sourceMappingURL=5712c2f7eeed9ee7.css.map*/
+/*# sourceMappingURL=05caf22dcaefe61a.css.map*/

@@ -1,28 +1,28 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
-var i = n(990547),
-  l = n(213609),
+var l = n(990547),
+  i = n(213609),
   r = n(541099),
-  o = n(312871);
+  a = n(312871);
 
-function a(e) {
+function o(e) {
   let {
     sectionName: t,
     numItems: n,
-    numVisibleItems: a
+    numVisibleItems: o
   } = e;
   return {
-    trackSectionImpressionRef: (0, o.Z)({
+    trackSectionImpressionRef: (0, a.Z)({
       onVisible: () => {
-        (0, l.h)({
-          type: i.ImpressionTypes.VIEW,
-          name: i.ImpressionNames.APP_LAUNCHER_SECTION,
+        (0, i.h)({
+          type: l.ImpressionTypes.VIEW,
+          name: l.ImpressionNames.APP_LAUNCHER_SECTION,
           properties: {
             section_name: t,
             num_items: n,
-            num_visible_items: a,
+            num_visible_items: o,
             source: r.Z.entrypoint()
           }
         })

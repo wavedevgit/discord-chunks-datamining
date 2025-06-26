@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => p
 });
 var r = n(255367),
   i = n(442837),
   l = n(481060),
-  a = n(946273),
-  o = n(271383),
+  o = n(946273),
+  a = n(271383),
   s = n(496675),
   c = n(796263),
   u = n(130883),
@@ -17,7 +17,7 @@ function p(e) {
     channel: t,
     user: p,
     guild: h
-  } = e, f = (0, i.e7)([s.Z], () => null != p && null != h && (0, a.nX)(p, h, [s.Z])), m = (0, i.e7)([o.ZP], () => null == p || null == o.ZP.getMember(t.guild_id, p.id));
+  } = e, f = (0, i.e7)([s.Z], () => null != p && null != h && (0, o.nX)(p, h, [s.Z])), m = (0, i.e7)([a.ZP], () => null == p || null == a.ZP.getMember(t.guild_id, p.id));
   if (!f) return null;
   let g = m ? d.intl.string(u.default.Ux67nZ) : d.intl.string(u.default["snp/lJ"]),
     b = "kick-user-".concat(null == p ? void 0 : p.id);

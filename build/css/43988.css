@@ -1,6 +1,6 @@
 /**
   Module ID: 43988
-  Original File Name: abaa95a7617521af
+  Original File Name: e01092fef7878b91
 **/
 .premiumTrialBadge_e4ef22 {
     align-items: center;
@@ -1205,7 +1205,7 @@
 }
 
 .searchBar_c7e907 {
-    margin-bottom: var(--spacing-12)
+    margin-bottom: var(--space-12)
 }
 
 @value maxModalWidth from "./MarkdownModal.module.css";
@@ -1749,18 +1749,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: var(--spacing-24);
+    padding: var(--space-24);
     position: relative
 }
 
 .tier0__6df1a {
     background: var(--background-surface-high);
     border: 1px solid var(--border-subtle);
-    margin-top: var(--spacing-12)
+    margin-top: var(--space-12)
 }
 
 .tier0__6df1a.pillMargin__6df1a {
-    margin-top: var(--spacing-24)
+    margin-top: var(--space-24)
 }
 
 .tier2__6df1a {
@@ -1770,7 +1770,7 @@
 
 .wordmark__6df1a {
     height: 25px;
-    margin-bottom: var(--spacing-8);
+    margin-bottom: var(--space-8);
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
@@ -1800,7 +1800,7 @@
 }
 
 .divider__6df1a {
-    margin: var(--spacing-16) 0;
+    margin: var(--space-16) 0;
     opacity: .1;
     z-index: 0
 }
@@ -1810,7 +1810,7 @@
     color: var(--text-default);
     display: flex;
     flex-direction: row;
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .featureItem__6df1a:last-child {
@@ -1826,7 +1826,7 @@
 }
 
 .priceHeader__6df1a {
-    margin-top: var(--spacing-4)
+    margin-top: var(--space-4)
 }
 
 .pill__6df1a {
@@ -1858,4 +1858,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=abaa95a7617521af.css.map*/
+/*# sourceMappingURL=e01092fef7878b91.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 48445
-  Original File Name: 6e4592f7cb66061f
+  Original File Name: bda3075249b5f3c5
 **/
 .container__6b668 {
     align-items: center;
@@ -10,7 +10,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    padding: var(--spacing-12)
+    padding: var(--space-12)
 }
 
 .containerActive__6b668 {
@@ -18,7 +18,7 @@
 }
 
 .playButton__6b668 {
-    margin-right: var(--spacing-8)
+    margin-right: var(--space-8)
 }
 
 .textContainer__6b668 {
@@ -34,8 +34,8 @@
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: row;
-    margin-top: var(--spacing-24);
-    padding: var(--spacing-12)
+    margin-top: var(--space-24);
+    padding: var(--space-12)
 }
 
 .nitroWheel_a9b435 {
@@ -43,7 +43,7 @@
 }
 
 .text_a9b435 {
-    margin: 0 var(--spacing-8)
+    margin: 0 var(--space-8)
 }
 
 .nitroButton_a9b435 {
@@ -58,7 +58,7 @@
 
 .nitroWheelContainer__654c5 {
     cursor: pointer;
-    margin-left: var(--spacing-4)
+    margin-left: var(--space-4)
 }
 
 .nitroWheel__654c5 {
@@ -68,11 +68,11 @@
 }
 
 .newBadge__654c5 {
-    margin-left: var(--spacing-8)
+    margin-left: var(--space-8)
 }
 
 .subheader__654c5,.warningContainer__654c5 {
-    margin-top: var(--spacing-8)
+    margin-top: var(--space-8)
 }
 
 .warningContainer__654c5 {
@@ -80,23 +80,23 @@
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: row;
-    padding: var(--spacing-8)
+    padding: var(--space-8)
 }
 
 .warningLabel__654c5 {
-    margin-left: var(--spacing-8)
+    margin-left: var(--space-8)
 }
 
 .optionsContainer__654c5 {
-    margin-top: var(--spacing-24)
+    margin-top: var(--space-24)
 }
 
 .options__654c5 {
-    -moz-column-gap: var(--spacing-8);
-    column-gap: var(--spacing-8);
+    -moz-column-gap: var(--space-8);
+    column-gap: var(--space-8);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: var(--spacing-8)
+    row-gap: var(--space-8)
 }
 
 .option__654c5 {
@@ -665,7 +665,7 @@
 }
 
 .customNotificationSoundsDivider_db81c6 {
-    margin: var(--spacing-24) 0
+    margin: var(--space-24) 0
 }
 
 .guildName_db81c6,.override_db81c6,.overrideHighlight_db81c6 {
@@ -673,7 +673,7 @@
 }
 
 .modalHeader_db81c6 {
-    padding-bottom: var(--spacing-12)
+    padding-bottom: var(--space-12)
 }
 
-/*# sourceMappingURL=6e4592f7cb66061f.css.map*/
+/*# sourceMappingURL=bda3075249b5f3c5.css.map*/

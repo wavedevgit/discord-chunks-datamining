@@ -1,6 +1,6 @@
 /**
   Module ID: 61526
-  Original File Name: 794894640829be2a
+  Original File Name: 2d91c535b27c33ec
 **/
 .modalContent__38295 {
     display: flex;
@@ -261,8 +261,8 @@
 
 .userItem_f90ef0 {
     flex-direction: row;
-    gap: var(--spacing-12);
-    padding: var(--spacing-4)
+    gap: var(--space-12);
+    padding: var(--space-4)
 }
 
 .title_f90ef0,.userItem_f90ef0 {
@@ -272,7 +272,7 @@
 
 .title_f90ef0 {
     justify-content: space-between;
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .userCountPill_f90ef0 {
@@ -280,29 +280,29 @@
     background-color: var(--background-base-lower);
     border-radius: var(--radius-md);
     display: flex;
-    padding: var(--spacing-4) var(--spacing-8)
+    padding: var(--space-4) var(--space-8)
 }
 
 .userCountIcon_f90ef0 {
     color: var(--interactive-normal);
     height: 16px;
-    margin-left: var(--spacing-4);
+    margin-left: var(--space-4);
     width: 16px
 }
 
 .clipForm__54978 {
     background: var(--background-secondary-alt);
-    border-radius: var(--spacing-8);
+    border-radius: var(--space-8);
     display: flex;
     flex: 1 0 auto;
     flex-direction: column;
-    margin-left: var(--spacing-16);
+    margin-left: var(--space-16);
     max-width: 330px
 }
 
 .clipFormSection__54978 {
     overflow: hidden;
-    padding: var(--spacing-16);
+    padding: var(--space-16);
     padding-bottom: 0
 }
 
@@ -319,16 +319,16 @@
     flex-direction: column;
     flex-shrink: 1;
     min-height: 0;
-    padding-bottom: var(--spacing-16)
+    padding-bottom: var(--space-16)
 }
 
 .clipFormFooter__54978 {
     border-top: 1px solid var(--border-subtle);
     display: grid;
-    gap: var(--spacing-16);
+    gap: var(--space-16);
     grid-template-columns: 3fr 3fr 1fr;
     margin-top: auto;
-    padding: var(--spacing-16)
+    padding: var(--space-16)
 }
 
 .clipFormFooterButton__54978 {
@@ -340,17 +340,17 @@
 }
 
 .clipFormItem__54978 {
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .clipFormSwitches__54978 {
-    margin-top: var(--spacing-16)
+    margin-top: var(--space-16)
 }
 
 .userList__54978 {
     flex-shrink: 1;
-    margin-top: var(--spacing-8);
+    margin-top: var(--space-8);
     min-height: 0
 }
 
-/*# sourceMappingURL=794894640829be2a.css.map*/
+/*# sourceMappingURL=2d91c535b27c33ec.css.map*/

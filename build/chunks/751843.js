@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => p
 });
 var r, i = n(255367);
 n(73800);
 var l = n(120356),
-  a = n.n(l),
-  o = n(481060),
+  o = n.n(l),
+  a = n(481060),
   s = n(871499),
   c = n(572511),
   u = ((r = u || {})[r.UP = 0] = "UP", r[r.DOWN = 1] = "DOWN", r);
@@ -49,10 +49,10 @@ function d(e) {
     }
     return e
   }({
-    className: a()(n, c.arrow, {
+    className: o()(n, c.arrow, {
       [c.up]: 0 === t
     }),
-    iconComponent: o.CJ0,
+    iconComponent: a.CJ0,
     themeable: r
   }, l))
 }

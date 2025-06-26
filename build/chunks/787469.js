@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => _
 }), n(642613);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(399606),
+  o = n.n(l),
+  a = n(399606),
   s = n(481060),
   c = n(893966),
   u = n(472596),
@@ -21,10 +21,10 @@ var r = n(255367),
 function _(e) {
   let {
     member: t
-  } = e, n = (0, o.e7)([p.Z], () => p.Z.getGuild(t.guildId)), l = (0, o.e7)([p.Z], () => p.Z.getRoles(t.guildId)), _ = i.useMemo(() => null == n ? [] : null == t.highestRoleId ? t.roles : Object.values(l).filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)).sort((e, t) => {
+  } = e, n = (0, a.e7)([p.Z], () => p.Z.getGuild(t.guildId)), l = (0, a.e7)([p.Z], () => p.Z.getRoles(t.guildId)), _ = i.useMemo(() => null == n ? [] : null == t.highestRoleId ? t.roles : Object.values(l).filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)).sort((e, t) => {
     var n, r;
     return null != (r = null != (n = null == e ? void 0 : e.position) ? n : 0 - (null == t ? void 0 : t.position)) ? r : 0
-  }).map(e => e.id), [t.roles, t.highestRoleId, n, l]), y = (0, o.e7)([c.Z], () => c.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), x = (0, u.zq)(y), C = (0, u.vN)(t), v = (0, o.e7)([h.Z], () => h.Z.can(m.Plq.MANAGE_ROLES, n), [n]);
+  }).map(e => e.id), [t.roles, t.highestRoleId, n, l]), y = (0, a.e7)([c.Z], () => c.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), C = (0, u.zq)(y), x = (0, u.vN)(t), v = (0, a.e7)([h.Z], () => h.Z.can(m.Plq.MANAGE_ROLES, n), [n]);
   return null == n ? null : (0, r.jsx)(s.xJW, {
     title: g.intl.string(g.t.LPJmLy),
     titleClassName: b.infoTitle,
@@ -45,8 +45,8 @@ function _(e) {
                 onMouseEnter: n,
                 onMouseLeave: i,
                 children: (0, r.jsx)(d.Z, {
-                  className: a()(b.roleTooltipItem, b.highestRole),
-                  role: x,
+                  className: o()(b.roleTooltipItem, b.highestRole),
+                  role: C,
                   guildId: t.guildId
                 })
               })
@@ -66,7 +66,7 @@ function _(e) {
               } = e;
               return (0, r.jsx)(s.P3F, {
                 className: b.addRoleContainer,
-                onClick: C,
+                onClick: x,
                 onMouseEnter: t,
                 onMouseLeave: n,
                 children: (0, r.jsx)(s.oFk, {

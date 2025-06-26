@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => f
 });
 var r = n(255367),
   i = n(73800),
   l = n(399606),
-  a = n(481060),
-  o = n(125268),
+  o = n(481060),
+  a = n(125268),
   s = n(673125),
   c = n(984063),
   u = n(871499),
@@ -28,7 +28,7 @@ function f() {
     t = (null == e ? void 0 : e.type) === c.W.LINE,
     n = i.useRef(null),
     f = () => {
-      t ? (0, o.Bo)(null) : (0, o.Bo)({
+      t ? (0, a.Bo)(null) : (0, a.Bo)({
         type: c.W.LINE
       })
     };
@@ -36,7 +36,7 @@ function f() {
     renderPopout: () => null,
     popoutTargetRef: n,
     children: e => {
-      var i, l, o = h({}, function(e) {
+      var i, l, a = h({}, function(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);
         return e
       }(e));
@@ -57,11 +57,11 @@ function f() {
           })
         }
         return e
-      }({}, o), l = l = {
+      }({}, a), l = l = {
         buttonRef: n,
         label: p.intl.string(p.t.ZQCf9f),
         isActive: t,
-        iconComponent: a.vdY,
+        iconComponent: o.vdY,
         onClick: f
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);

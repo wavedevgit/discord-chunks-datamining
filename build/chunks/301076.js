@@ -1,18 +1,18 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(255367);
 n(73800);
 var i = n(562129),
   l = n(871499);
 
-function a(e) {
+function o(e) {
   var {
     isActivityActive: t,
     onMouseEnter: n,
-    onMouseLeave: a,
-    onClick: o
+    onMouseLeave: o,
+    onClick: a
   } = e, s = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -59,10 +59,10 @@ function a(e) {
       null == n || n(e), u.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == a || a(e), u.onMouseLeave()
+      null == o || o(e), u.onMouseLeave()
     },
     onClick: e => {
-      null == o || o(e), d()
+      null == a || a(e), d()
     }
   }, s))
 }

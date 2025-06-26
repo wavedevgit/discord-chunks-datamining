@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => I
 }), n(539854);
 var r = n(255367),
   i = n(73800),
   l = n(990547),
-  a = n(731965),
-  o = n(442837),
+  o = n(731965),
+  a = n(442837),
   s = n(704215),
   c = n(40851),
   u = n(317381),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(470956),
   _ = n(430824),
   y = n(496675),
-  x = n(434488),
-  C = n(27457),
+  C = n(434488),
+  x = n(27457),
   v = n(251564),
   j = n(695492),
   O = n(981631),
@@ -36,30 +36,30 @@ function I(e) {
     className: Z,
     inCall: N,
     totalNumberOfParticipants: T
-  } = e, A = (0, c.bp)() === O.IlC.POPOUT, w = (0, o.e7)([_.Z], () => _.Z.getGuild(P.guild_id), [P.guild_id]), {
+  } = e, A = (0, c.bp)() === O.IlC.POPOUT, w = (0, a.e7)([_.Z], () => _.Z.getGuild(P.guild_id), [P.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
-  } = (0, v.d)(), M = (0, o.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), k = (0, b.bt)(P.id, t), D = i.useCallback(() => {
-    (0, a.j)(() => {
+  } = (0, v.d)(), k = (0, a.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), M = (0, b.bt)(P.id, t), D = i.useCallback(() => {
+    (0, o.j)(() => {
       v.d.setState({
         dismissedActivityEntryPointTileChannel: P.id
       })
     })
   }, [P.id]);
   i.useEffect(() => {
-    null != R && P.id !== R && (0, a.j)(() => {
+    null != R && P.id !== R && (0, o.j)(() => {
       v.d.setState({
         dismissedActivityEntryPointTileChannel: null
       })
     })
   }, [P.id, R]);
-  let L = (0, o.e7)([y.Z], () => P.isPrivate() || (0, m.b)(y.Z, w, P), [w, P]),
+  let L = (0, a.e7)([y.Z], () => P.isPrivate() || (0, m.b)(y.Z, w, P), [w, P]),
     U = (null == w ? void 0 : w.afkChannelId) === P.id,
     B = P.userLimit <= 0 || P.userLimit > 1,
-    F = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).length <= 0),
+    F = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).length <= 0),
     G = (0, f.wE)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     H = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
     V = null != R && R === P.id,
-    z = k.map(e => t => (0, r.jsx)(C.ZP, {
+    z = M.map(e => t => (0, r.jsx)(x.ZP, {
       participant: e,
       channel: P,
       className: E.tile,
@@ -81,30 +81,30 @@ function I(e) {
     }
   }, {
     trackOnInitialLoad: !0
-  }, []), null != w && !U && (!(M >= 2) || !F || H || G || V ? B && 1 === M && L && (F && !H ? z.push(e => (0, r.jsx)(x.h, {
+  }, []), null != w && !U && (!(k >= 2) || !F || H || G || V ? B && 1 === k && L && (F && !H ? z.push(e => (0, r.jsx)(C.h, {
     channel: P,
     guild: w,
     width: e,
     inPopout: A,
     handleClose: D,
-    userParticipantCount: M
+    userParticipantCount: k
   })) : z.push(e => (0, r.jsx)(j.Z, {
     width: e,
     channel: P,
     guild: w,
     inPopout: A
-  }))) : z.push(e => (0, r.jsx)(x.h, {
+  }))) : z.push(e => (0, r.jsx)(C.h, {
     channel: P,
     guild: w,
     width: e,
     inPopout: A,
     handleClose: D,
-    userParticipantCount: M
+    userParticipantCount: k
   })));
   let W = i.useCallback(e => {
     var t, n;
-    return null != (n = null == (t = k[e]) ? void 0 : t.id) ? n : "empty-tile"
-  }, [k]);
+    return null != (n = null == (t = M[e]) ? void 0 : t.id) ? n : "empty-tile"
+  }, [M]);
   return (0, r.jsx)(g.Z, {
     className: Z,
     keyExtractor: W,

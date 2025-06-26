@@ -1,6 +1,6 @@
 /**
   Module ID: 23746
-  Original File Name: af733ec53b6b2df7
+  Original File Name: 7ba1e184b353674b
 **/
 .qrCodeOverlay_c28498 {
     align-items: center;
@@ -35,7 +35,7 @@
 
 .qrCodeContainer_c28498 {
     border-radius: var(--radius-xs);
-    padding: var(--spacing-8)
+    padding: var(--space-8)
 }
 
 .spacing_eb51ec {
@@ -79,4 +79,4 @@
     color: var(--text-muted-on-default)
 }
 
-/*# sourceMappingURL=af733ec53b6b2df7.css.map*/
+/*# sourceMappingURL=7ba1e184b353674b.css.map*/

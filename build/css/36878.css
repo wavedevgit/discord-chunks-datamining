@@ -1,6 +1,6 @@
 /**
   Module ID: 36878
-  Original File Name: 9118c114144c55d6
+  Original File Name: b81d4c3f8a19240d
 **/
 .container_abd9a8 {
     background-color: var(--background-base-lowest);
@@ -29,7 +29,7 @@
     background: var(--background-base-lower);
     border-radius: var(--radius-lg);
     grid-area: content;
-    margin: 0 var(--spacing-16) var(--spacing-16) 0
+    margin: 0 var(--space-16) var(--space-16) 0
 }
 
 .container_abd9a8.mobile_abd9a8 {
@@ -53,13 +53,13 @@
     display: flex;
     height: 48px;
     justify-content: space-between;
-    padding: 0 var(--spacing-8) 0 var(--spacing-16)
+    padding: 0 var(--space-8) 0 var(--space-16)
 }
 
 .contentHeaderLeft_abd9a8 {
     align-items: center;
     display: flex;
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .contentHeaderButton_abd9a8 {
@@ -74,7 +74,7 @@
 
 .arrowButtons_abd9a8 {
     display: flex;
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .wordmark_abd9a8 {
@@ -85,4 +85,4 @@
     display: flex
 }
 
-/*# sourceMappingURL=9118c114144c55d6.css.map*/
+/*# sourceMappingURL=b81d4c3f8a19240d.css.map*/

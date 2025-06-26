@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   s: () => p
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(481060),
-  o = n(287734),
+  o = n(481060),
+  a = n(287734),
   s = n(592125),
   c = n(693546),
   u = n(246364),
@@ -14,10 +14,10 @@ var r = n(255367),
 
 function p(e, t, p, h) {
   let [f, m] = i.useState(!1), g = (0, l.e7)([s.Z], () => s.Z.getChannel(h)), b = i.useCallback(() => {
-    (0, a.showToast)((0, a.createToast)(d.intl.string(d.t.R0RpRU), a.ToastType.FAILURE))
+    (0, o.showToast)((0, o.createToast)(d.intl.string(d.t.R0RpRU), o.ToastType.FAILURE))
   }, []), _ = i.useCallback(async () => {
     if (!f && null != e && null != t && null != p) {
-      if (null != g) return void o.default.selectPrivateChannel(g.id);
+      if (null != g) return void a.default.selectPrivateChannel(g.id);
       if (!f) {
         m(!0);
         try {
@@ -44,7 +44,7 @@ function p(e, t, p, h) {
       }
     },
     rejectRequest: () => {
-      null != e && null != t && null != p && (0, a.ZDy)(async () => {
+      null != e && null != t && null != p && (0, o.ZDy)(async () => {
         let {
           default: i
         } = await n.e("56496").then(n.bind(n, 113886));

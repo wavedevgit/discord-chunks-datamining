@@ -1,4 +1,4 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => m
 });
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  a = n(961675),
-  o = n(883429),
+  o = n(961675),
+  a = n(883429),
   s = n(238349),
   c = n(109434),
   u = n(456269),
@@ -19,17 +19,17 @@ var i = n(442837),
 function m(e) {
   let {
     channel: t
-  } = e, n = (0, u.r_)(t), m = (0, i.e7)([a.Z], () => a.Z.hasHidden(t.id)), g = (0, d.c)(t.id), {
+  } = e, n = (0, u.r_)(t), m = (0, i.e7)([o.Z], () => o.Z.hasHidden(t.id)), g = (0, d.c)(t.id), {
     sortOrder: b,
     tagFilter: _,
     tagSetting: y
-  } = (0, c.H)(t.id), x = (0, i.e7)([s.Z, p.Z], () => !!(s.Z.getThreadIds(t.id, b, _, y).length > 0) || !!(p.Z.getThreads(t.id, b, _, y).length > 0), [t.id, b, _, y]), C = t.isMediaChannel();
-  if (!n || g || C && x) return null;
-  let v = m ? C ? f.intl.string(f.t["WP/IEx"]) : f.intl.string(f.t.zfq9V1) : C ? f.intl.string(f.t.p60yFx) : f.intl.string(f.t.SNOqYG);
+  } = (0, c.H)(t.id), C = (0, i.e7)([s.Z, p.Z], () => !!(s.Z.getThreadIds(t.id, b, _, y).length > 0) || !!(p.Z.getThreads(t.id, b, _, y).length > 0), [t.id, b, _, y]), x = t.isMediaChannel();
+  if (!n || g || x && C) return null;
+  let v = m ? x ? f.intl.string(f.t["WP/IEx"]) : f.intl.string(f.t.zfq9V1) : x ? f.intl.string(f.t.p60yFx) : f.intl.string(f.t.SNOqYG);
   return (0, r.jsx)(h.JO, {
     tooltip: v,
     icon: l.d3s,
-    onClick: () => o.Z.hideAdminOnboarding(t.id, !m),
+    onClick: () => a.Z.hideAdminOnboarding(t.id, !m),
     selected: !m
   })
 }

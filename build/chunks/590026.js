@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => h
 }), n(388685);
 var r = n(73800),
   i = n(876215),
   l = n(442837),
-  a = n(676316),
-  o = n(146282),
+  o = n(676316),
+  a = n(146282),
   s = n(442853),
   c = n(520951),
   u = n(897674),
@@ -29,12 +29,12 @@ function h(e) {
   let {
     entriesWithLeaderboard: h,
     hasLeaderboardEntry: f
-  } = (0, a.Z)({
+  } = (0, o.Z)({
     entries: t,
     channelId: e
   });
   return t = h, {
-    requestId: (0, l.e7)([o.Z], () => o.Z.getFeedRequestId(d.YN.GLOBAL_FEED)),
+    requestId: (0, l.e7)([a.Z], () => a.Z.getFeedRequestId(d.YN.GLOBAL_FEED)),
     entries: t,
     impressionCappedEntryIds: i,
     hasLeaderboardEntry: f

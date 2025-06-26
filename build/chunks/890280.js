@@ -1,22 +1,22 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
-var i = n(73800),
-  l = n(442837),
+var l = n(73800),
+  i = n(442837),
   r = n(110924),
-  o = n(317381);
+  a = n(317381);
 
-function a(e) {
+function o(e) {
   let {
     applicationId: t,
     context: n,
-    launchingComponentId: a,
-    onSubmissionComplete: c
-  } = e, s = (0, l.e7)([o.ZP], () => o.ZP.getLaunchState(t, "channel" === n.type ? n.channel.id : void 0)), u = null != s && s.isLaunching && s.componentId === a, d = (0, r.Z)(u);
-  return i.useEffect(() => {
-    !u && d && (null == c || c())
-  }, [u, d, c]), {
+    launchingComponentId: o,
+    onSubmissionComplete: s
+  } = e, c = (0, i.e7)([a.ZP], () => a.ZP.getLaunchState(t, "channel" === n.type ? n.channel.id : void 0)), u = null != c && c.isLaunching && c.componentId === o, d = (0, r.Z)(u);
+  return l.useEffect(() => {
+    !u && d && (null == s || s())
+  }, [u, d, s]), {
     submitting: u,
     wasSubmitting: null != d ? d : null
   }

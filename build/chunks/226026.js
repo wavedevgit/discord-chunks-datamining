@@ -1,31 +1,31 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => s
+  Z: () => c
 });
-var i = n(73800),
-  l = n(990547),
+var l = n(73800),
+  i = n(990547),
   r = n(442837),
-  o = n(213609),
-  a = n(541099),
-  c = n(312871);
+  a = n(213609),
+  o = n(541099),
+  s = n(312871);
 
-function s(e) {
+function c(e) {
   let {
     applicationId: t,
     applicationFlags: n,
-    sectionName: s,
+    sectionName: c,
     sectionPosition: u,
     sectionOverallPosition: d,
     promotionalLabel: p,
     numFriendsWhoPlay: m
-  } = e, f = (0, r.e7)([a.Z], () => a.Z.entrypoint()), h = i.useCallback(() => {
-    (0, o.h)({
-      type: l.ImpressionTypes.VIEW,
-      name: l.ImpressionNames.APP_LAUNCHER_ITEM,
+  } = e, f = (0, r.e7)([o.Z], () => o.Z.entrypoint()), h = l.useCallback(() => {
+    (0, a.h)({
+      type: i.ImpressionTypes.VIEW,
+      name: i.ImpressionNames.APP_LAUNCHER_ITEM,
       properties: {
         application_id: t,
         application_flags: n,
-        section_name: s,
+        section_name: c,
         section_position: u,
         section_overall_position: d,
         source: f,
@@ -35,7 +35,7 @@ function s(e) {
     })
   }, [m]);
   return {
-    trackItemImpressionRef: (0, c.Z)({
+    trackItemImpressionRef: (0, s.Z)({
       onVisible: h,
       threshold: .5,
       minTimeVisibleMs: 1e3

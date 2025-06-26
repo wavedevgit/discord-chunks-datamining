@@ -1,6 +1,6 @@
 /**
   Module ID: 71879
-  Original File Name: 8a0b2e85bf5a23bb
+  Original File Name: 5ba6676e28e9dd93
 **/
 .obscuredIcon__43090 {
     height: 32px;
@@ -371,19 +371,19 @@
     gap: 8px;
     height: 20px;
     justify-content: space-between;
-    padding: var(--spacing-8) var(--spacing-16);
+    padding: var(--space-8) var(--space-16);
     position: relative
 }
 
 .footerChannelTitle_fc958f,.footerMessageSummary_fc958f {
     align-items: center;
     display: flex;
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .body_fc958f {
     background-color: var(--background-surface-higher);
-    padding: var(--spacing-16)
+    padding: var(--space-16)
 }
 
 .contentAndMedia_fc958f {
@@ -394,13 +394,13 @@
 .bodyMedia_fc958f {
     box-sizing: unset;
     margin-left: 0;
-    padding-right: var(--spacing-16)
+    padding-right: var(--space-16)
 }
 
 .originalMessageAuthorAndContent_fc958f {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-4);
+    gap: var(--space-4);
     overflow: hidden
 }
 
@@ -410,7 +410,7 @@
 
 .message_fc958f {
     display: flex;
-    gap: var(--spacing-16);
+    gap: var(--space-16);
     overflow: hidden
 }
 
@@ -424,7 +424,7 @@
 
 .newBadge_fc958f {
     color: var(--brand-560);
-    margin-left: var(--spacing-4)
+    margin-left: var(--space-4)
 }
 
 .container_c6ad88 {
@@ -726,7 +726,7 @@
 .text_cba043 {
     align-items: center;
     display: flex;
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .inlineContainer_cba043 {
@@ -736,7 +736,7 @@
     cursor: pointer;
     line-height: 1.5em;
     margin: 2px 0;
-    padding: 0 var(--spacing-4);
+    padding: 0 var(--space-4);
     position: relative;
     text-align: center;
     -webkit-user-select: none;
@@ -1137,8 +1137,8 @@
 }
 
 .list_f369db>div:first-child {
-    padding-left: var(--spacing-16);
-    padding-right: var(--spacing-16)
+    padding-left: var(--space-16);
+    padding-right: var(--space-16)
 }
 
 .card_f369db {
@@ -2623,4 +2623,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=8a0b2e85bf5a23bb.css.map*/
+/*# sourceMappingURL=5ba6676e28e9dd93.css.map*/

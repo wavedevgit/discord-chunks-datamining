@@ -1,9 +1,9 @@
 /**
   Module ID: 51139
-  Original File Name: 1909b64e6f5ce70b
+  Original File Name: 0f557b5476a7ded0
 **/
 .avatarDecorationPreview__9baf3 {
-    padding: var(--spacing-16) 0 var(--spacing-32)
+    padding: var(--space-16) 0 var(--space-32)
 }
 
 .profileEffectPreview__9baf3 {
@@ -12,7 +12,7 @@
 }
 
 .nameplatePreview__9baf3 {
-    padding: var(--spacing-16) 0 var(--spacing-32);
+    padding: var(--space-16) 0 var(--space-32);
     position: relative;
     width: 326px
 }
@@ -124,4 +124,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=1909b64e6f5ce70b.css.map*/
+/*# sourceMappingURL=0f557b5476a7ded0.css.map*/

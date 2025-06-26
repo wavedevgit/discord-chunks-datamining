@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => _
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(433517),
   c = n(519938),
   u = n(241915),
@@ -25,13 +25,13 @@ function _(e) {
     height: l,
     channel: _,
     participants: y,
-    onSelectParticipant: x
-  } = e, [C, v] = function() {
+    onSelectParticipant: C
+  } = e, [x, v] = function() {
     let [e, t] = i.useState(() => s.K.get(b, h.VD2.BOTTOM_RIGHT));
     return [e, i.useCallback(e => {
       s.K.set(b, e), t(e)
     }, [])]
-  }(), j = i.useRef(null), O = null == _.getGuildId() ? 70 : 50, E = (0, o.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), I = y.length, S = E * I + 8 * (I - 1), P = i.useMemo(() => ({
+  }(), j = i.useRef(null), O = null == _.getGuildId() ? 70 : 50, E = (0, a.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), I = y.length, S = E * I + 8 * (I - 1), P = i.useMemo(() => ({
     minWidth: f.Rv[f.cL.CAMERA_PREVIEW] * I + 8 * (I - 1),
     maxWidth: f.$i[f.cL.CAMERA_PREVIEW] * I + 8 * (I - 1)
   }), [I]);
@@ -49,7 +49,7 @@ function _(e) {
   return (0, r.jsx)("div", {
     className: m.container,
     children: (0, r.jsx)(u._, {
-      position: C,
+      position: x,
       id: 0,
       width: S,
       ref: j,
@@ -68,12 +68,12 @@ function _(e) {
           participant: e,
           channel: _,
           onContextMenu: n,
-          className: a()(m.tile, g.elevationHigh),
+          className: o()(m.tile, g.elevationHigh),
           fit: p.BP.COVER,
           inCall: !0,
           inPopout: !1,
           width: 160,
-          onClick: x
+          onClick: C
         }, e.id))
       })
     })

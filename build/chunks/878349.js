@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(780384),
   c = n(481060),
   u = n(393238),
@@ -25,13 +25,13 @@ function b(e) {
     canToggle: b,
     iconAltText: _,
     onChange: y,
-    tooltipColor: x,
-    className: C,
+    tooltipColor: C,
+    className: x,
     id: v = "fancybutton-toggle",
     collapseWhenChecked: j = !0,
     onClick: O,
     disabled: E
-  } = e, I = (0, o.e7)([p.Z], () => p.Z.useReducedMotion), [S, P] = i.useState(!1), Z = (0, d.ZP)(), N = (0, s.wj)(Z) || t ? g : m, {
+  } = e, I = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), [S, P] = i.useState(!1), Z = (0, d.ZP)(), N = (0, s.wj)(Z) || t ? g : m, {
     width: T = 0,
     ref: A
   } = (0, u.ZP)(), {
@@ -44,7 +44,7 @@ function b(e) {
       tooltipText: l
     }),
     position: "top",
-    color: null != x ? x : E ? c.ua7.Colors.BLACK : c.ua7.Colors.BRAND,
+    color: null != C ? C : E ? c.ua7.Colors.BLACK : c.ua7.Colors.BRAND,
     "aria-label": l,
     tooltipClassName: f.tooltip,
     className: f.tooltipContainer,
@@ -63,7 +63,7 @@ function b(e) {
       disabled: E
     }), (0, r.jsxs)("label", {
       htmlFor: v,
-      className: a()(f.label, C, {
+      className: o()(f.label, x, {
         [f.transition]: S,
         [f.labelChecked]: t,
         [f.labelUnchecked]: !t && !b
@@ -81,7 +81,7 @@ function b(e) {
       }), (0, r.jsx)("span", {
         ref: R,
         children: (0, r.jsx)(c.Text, {
-          className: a()(f.burstText, {
+          className: o()(f.burstText, {
             [f.visuallyHidden]: t && j,
             [f.burstTextChecked]: t
           }),

@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => _,
   y: () => g
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(392711),
   c = n(692547),
   u = n(481060),
@@ -23,9 +23,9 @@ function b(e) {
     onResize: n,
     onResizeEnd: r,
     maxWidth: l,
-    minWidth: a
-  } = e, o = (0, p.Z)({
-    minDimension: a,
+    minWidth: o
+  } = e, a = (0, p.Z)({
+    minDimension: o,
     maxDimension: l,
     resizableDomNodeRef: t,
     onElementResize: n,
@@ -34,7 +34,7 @@ function b(e) {
     throttleDuration: 16
   });
   return (0, i.jsx)("div", {
-    onMouseDown: o,
+    onMouseDown: a,
     className: m.resizeHandle
   })
 }
@@ -44,7 +44,7 @@ function _(e) {
     sidebarType: t,
     maxWidth: n,
     onWidthChange: r,
-    children: a,
+    children: o,
     floatingLayer: p
   } = e, g = l.useRef(null), _ = function(e) {
     switch (e) {
@@ -61,7 +61,7 @@ function _(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [y, x] = l.useState(h.ZP[_]), C = l.useCallback(e => {
+  }(t), [y, C] = l.useState(h.ZP[_]), x = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
       [_]: e
     })
@@ -80,11 +80,11 @@ function _(e) {
       }
     }), (0, i.jsx)(S, {
       children: (0, i.jsxs)("div", {
-        className: o()(m.chatLayerWrapper, {
+        className: a()(m.chatLayerWrapper, {
           [m.hidden]: !1
         }),
         children: [(0, i.jsx)("div", {
-          className: o()(m.chatTarget, {
+          className: a()(m.chatTarget, {
             [m.floating]: j,
             [m.notFloating]: !j
           }),
@@ -95,17 +95,17 @@ function _(e) {
           minWidth: v,
           maxWidth: n,
           resizableNode: g,
-          onResize: x,
-          onResizeEnd: C
+          onResize: C,
+          onResizeEnd: x
         }), (0, i.jsx)("div", {
           ref: g,
-          className: o()(m.container, {
+          className: a()(m.container, {
             [m.floating]: j
           }),
           style: {
             width: E
           },
-          children: a
+          children: o
         })]
       })
     })]

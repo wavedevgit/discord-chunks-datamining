@@ -1,22 +1,22 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
-  R: () => a
+  R: () => o
 });
 var r = n(442837),
   i = n(998698),
   l = n(873387);
 
-function a(e) {
+function o(e) {
   let {
     channel: t,
     chatInputType: n
-  } = e, a = (0, l.g)(t), {
-    activeCommand: o
+  } = e, o = (0, l.g)(t), {
+    activeCommand: a
   } = (0, r.cj)([i.Z], () => {
     var e;
     return {
       activeCommand: (null == (e = n.commands) ? void 0 : e.enabled) ? i.Z.getActiveCommand(t.id) : null
     }
   });
-  return null == o && a
+  return null == a && o
 }

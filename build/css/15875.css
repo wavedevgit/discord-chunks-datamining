@@ -1,6 +1,6 @@
 /**
   Module ID: 15875
-  Original File Name: 7a86a77f5901d944
+  Original File Name: eddc098ba30dd3db
 **/
 .rootContainer_f4adbd {
     align-items: center;
@@ -17,14 +17,14 @@
 }
 
 .newBadge_f4adbd {
-    margin-bottom: var(--spacing-4);
+    margin-bottom: var(--space-4);
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
 }
 
 .nitroWheel_f4adbd {
-    margin-left: var(--spacing-4);
+    margin-left: var(--space-4);
     margin-top: 1px
 }
 
@@ -221,4 +221,4 @@
     background-color: var(--background-mod-subtle)
 }
 
-/*# sourceMappingURL=7a86a77f5901d944.css.map*/
+/*# sourceMappingURL=eddc098ba30dd3db.css.map*/

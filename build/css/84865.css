@@ -1,6 +1,6 @@
 /**
   Module ID: 84865
-  Original File Name: ef177e9e09375a7a
+  Original File Name: 69f119916ce8400f
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -447,8 +447,8 @@
 
 .buttonsContainer_a8b931 {
     display: flex;
-    gap: var(--spacing-8);
-    margin-bottom: var(--spacing-24)
+    gap: var(--space-8);
+    margin-bottom: var(--space-24)
 }
 
 .wrapper__48b20 {
@@ -2135,7 +2135,7 @@
     border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
-    margin: 0 var(--spacing-16);
+    margin: 0 var(--space-16);
     opacity: .7;
     position: relative
 }
@@ -2146,14 +2146,14 @@
 }
 
 .container__5519a:not(:last-child) {
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--space-16)
 }
 
 .primaryRow__5519a {
     align-items: center;
     box-sizing: border-box;
     justify-content: space-between;
-    padding: var(--spacing-12);
+    padding: var(--space-12);
     width: 100%
 }
 
@@ -2163,21 +2163,21 @@
 }
 
 .title__5519a {
-    margin-right: var(--spacing-32)
+    margin-right: var(--space-32)
 }
 
 .subtitle__5519a {
     display: flex;
     flex-grow: 1;
-    margin-bottom: var(--spacing-4);
-    margin-top: var(--spacing-4)
+    margin-bottom: var(--space-4);
+    margin-top: var(--space-4)
 }
 
 .metaContainer__5519a {
     background-color: var(--background-modifier-hover);
     border-radius: var(--radius-md);
     flex-shrink: 1;
-    padding: var(--spacing-8) var(--spacing-16)
+    padding: var(--space-8) var(--space-16)
 }
 
 .divider__5519a {
@@ -2190,14 +2190,14 @@
 .inviteImage__5519a {
     border-radius: var(--radius-xs);
     height: 40px;
-    margin-right: var(--spacing-12);
+    margin-right: var(--space-12);
     width: 40px
 }
 
 .secondaryRow__5519a {
     box-sizing: border-box;
     justify-content: space-between;
-    padding: var(--spacing-8) var(--spacing-16);
+    padding: var(--space-8) var(--space-16);
     width: 100%
 }
 
@@ -2214,7 +2214,7 @@
 }
 
 .deleteButton__5519a {
-    margin-left: var(--spacing-12)
+    margin-left: var(--space-12)
 }
 
 .launchToJoinContainer__5519a {
@@ -2223,7 +2223,7 @@
 }
 
 .launchToJoinText__5519a {
-    margin-right: var(--spacing-4)
+    margin-right: var(--space-4)
 }
 
 .container__03885 {
@@ -2239,18 +2239,18 @@
 }
 
 .invitesContainer__03885 {
-    padding-bottom: var(--spacing-16)
+    padding-bottom: var(--space-16)
 }
 
 .headerContainer__03885 {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: var(--spacing-24) var(--spacing-16)
+    margin: var(--space-24) var(--space-16)
 }
 
 .headerTitle__03885 {
-    margin-right: var(--spacing-8)
+    margin-right: var(--space-8)
 }
 
 .headerDivider__03885 {
@@ -4141,7 +4141,7 @@ div:has(>.positionLayer__4f4b6) {
 
 .goalTextContainer_eff079 {
     display: flex;
-    margin-right: var(--spacing-12)
+    margin-right: var(--space-12)
 }
 
 .bar_eff079 {
@@ -4230,7 +4230,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .progressBarContainer_eff079,.progressBarContainerComplete_eff079 {
-    margin-top: var(--spacing-8);
+    margin-top: var(--space-8);
     width: 100%
 }
 
@@ -4273,7 +4273,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .gradientRoleColorsImage__6343b {
-    padding: 0 var(--spacing-16)
+    padding: 0 var(--space-16)
 }
 
 .perkRow_c609c8 {
@@ -4429,7 +4429,7 @@ div:has(>.positionLayer__4f4b6) {
 .container_a1bfef {
     background-color: var(--bg-surface-overlay);
     box-shadow: var(--shadow-low);
-    padding: var(--spacing-8)
+    padding: var(--space-8)
 }
 
 .container_a1bfef.caretLeftTop_a1bfef {
@@ -4453,7 +4453,7 @@ div:has(>.positionLayer__4f4b6) {
     background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4));
     border-radius: var(--radius-sm);
     height: 125px;
-    margin-bottom: var(--spacing-16);
+    margin-bottom: var(--space-16);
     object-fit: cover;
     width: 100%
 }
@@ -4466,8 +4466,8 @@ div:has(>.positionLayer__4f4b6) {
     color: #fff!important;
     opacity: .75!important;
     position: absolute;
-    right: var(--spacing-8);
-    top: var(--spacing-8)
+    right: var(--space-8);
+    top: var(--space-8)
 }
 
 .close_a1bfef:hover {
@@ -4479,7 +4479,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .description_a1bfef {
-    margin-top: var(--spacing-4)
+    margin-top: var(--space-4)
 }
 
 .theme-light .container_a1bfef {
@@ -4563,7 +4563,7 @@ div:has(>.positionLayer__4f4b6) {
     display: flex;
     flex: 1;
     flex-direction: row;
-    inset: 0 var(--spacing-8);
+    inset: 0 var(--space-8);
     justify-content: space-between;
     position: absolute;
     z-index: 1
@@ -6226,12 +6226,12 @@ div:has(>.positionLayer__4f4b6) {
 .clickableGameWrapper__5dec7 {
     cursor: pointer;
     flex-grow: 1;
-    padding: var(--spacing-4)
+    padding: var(--space-4)
 }
 
 .clickableGameWrapper__5dec7:hover {
     background-color: var(--button-secondary-background-hover);
-    border-radius: var(--spacing-8)
+    border-radius: var(--space-8)
 }
 
 .gameIcon__5dec7 {
@@ -6269,7 +6269,7 @@ div:has(>.positionLayer__4f4b6) {
 }
 
 .align-chat-input .panel__5dec7 {
-    padding: var(--spacing-12)
+    padding: var(--space-12)
 }
 
 .channel__5dec7:hover {
@@ -6952,7 +6952,7 @@ div:has(>.positionLayer__4f4b6) {
 .textWithIcon_effb26 {
     align-items: center;
     display: flex;
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .secured_effb26 {
@@ -7562,4 +7562,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=ef177e9e09375a7a.css.map*/
+/*# sourceMappingURL=69f119916ce8400f.css.map*/

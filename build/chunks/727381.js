@@ -1,13 +1,13 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => x
+  Z: () => C
 });
 var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  a = n(399606),
-  o = n(481060),
+  o = n(399606),
+  a = n(481060),
   s = n(271383),
   c = n(594174),
   u = n(777288),
@@ -28,12 +28,12 @@ function y() {
       children: [(0, r.jsx)(u.Z, {
         width: 16,
         height: 16
-      }), (0, r.jsx)(o.X6q, {
+      }), (0, r.jsx)(a.X6q, {
         variant: "heading-md/semibold",
         children: b.intl.string(b.t.cf5lgo)
       })]
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(o.M2$, {
+      children: (0, r.jsx)(a.M2$, {
         shortcut: "esc",
         keyClassName: _.keyComboInner,
         className: _.keyComboContainer
@@ -42,32 +42,32 @@ function y() {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     userId: t,
     guildId: n,
     location: i,
     className: u,
     onNavigate: b
-  } = e, x = (0, a.e7)([c.default], () => c.default.getUser(t), [t]), C = (0, a.e7)([s.ZP], () => s.ZP.getMember(n, t), [n, t]);
-  return null == x || null == C ? null : (0, r.jsxs)("div", {
+  } = e, C = (0, o.e7)([c.default], () => c.default.getUser(t), [t]), x = (0, o.e7)([s.ZP], () => s.ZP.getMember(n, t), [n, t]);
+  return null == C || null == x ? null : (0, r.jsxs)("div", {
     className: l()(_.container, u),
-    children: [(0, r.jsx)(y, {}), (0, r.jsxs)(o.Ttm, {
+    children: [(0, r.jsx)(y, {}), (0, r.jsxs)(a.Ttm, {
       className: _.innerContainer,
       children: [(0, r.jsx)(m.Z, {
-        member: C
+        member: x
       }), (0, r.jsx)(g.Z, {
         userId: t,
         guildId: n
       }), (0, r.jsx)(f.Z, {
-        member: C,
+        member: x,
         onNavigate: b
       }), (0, r.jsx)(p.Z, {
-        member: C
+        member: x
       }), (0, r.jsx)(d.Z, {
-        member: C
+        member: x
       }), (0, r.jsx)(h.Z, {
-        member: C
+        member: x
       })]
     })]
   })

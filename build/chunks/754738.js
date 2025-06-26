@@ -1,5 +1,5 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  b: () => l
+  b: () => i
 });
-var i, l = ((i = {})[i.APPENDS_REMAINING_ACTIVITIES = 1] = "APPENDS_REMAINING_ACTIVITIES", i[i.DEFAULT = 0] = "DEFAULT", i)
+var l, i = ((l = {})[l.APPENDS_REMAINING_ACTIVITIES = 1] = "APPENDS_REMAINING_ACTIVITIES", l[l.DEFAULT = 0] = "DEFAULT", l)

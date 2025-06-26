@@ -1,6 +1,6 @@
 /**
   Module ID: 4848
-  Original File Name: 52dca05cc2d657a0
+  Original File Name: f17cb26e15ec430b
 **/
 .gradientButtonContainer__488d9 {
     height: 50px;
@@ -38,7 +38,7 @@
     height: 34px;
     justify-content: center;
     position: absolute;
-    top: var(--spacing-8);
+    top: var(--space-8);
     width: 34px
 }
 
@@ -51,11 +51,11 @@
 }
 
 .colorPickerDropperLeft__488d9 {
-    left: var(--spacing-8)
+    left: var(--space-8)
 }
 
 .colorPickerDropperRight__488d9 {
-    right: var(--spacing-8)
+    right: var(--space-8)
 }
 
 .colorPickerDropperInner__488d9 {
@@ -84,4 +84,4 @@
     pointer-events: none
 }
 
-/*# sourceMappingURL=52dca05cc2d657a0.css.map*/
+/*# sourceMappingURL=f17cb26e15ec430b.css.map*/

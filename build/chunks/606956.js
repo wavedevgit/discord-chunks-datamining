@@ -1,11 +1,11 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => u
 });
-var r, i, l, a = n(442837),
-  o = n(570140);
+var r, i, l, o = n(442837),
+  a = n(570140);
 let s = {};
-class c extends(l = a.ZP.Store) {
+class c extends(l = o.ZP.Store) {
   getFollowerStatsForChannel(e) {
     return s[e]
   }
@@ -16,7 +16,7 @@ i = "ChannelFollowerStatsStore", (r = "displayName") in c ? Object.definePropert
   configurable: !0,
   writable: !0
 }) : c[r] = i;
-let u = new c(o.Z, {
+let u = new c(a.Z, {
   CONNECTION_OPEN: function() {
     s = {}
   },

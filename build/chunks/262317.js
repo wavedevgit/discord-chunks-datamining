@@ -1,14 +1,14 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   XX: () => R,
-  ZP: () => k,
-  ul: () => M
+  ZP: () => M,
+  ul: () => k
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(481060),
+  o = n.n(l),
+  a = n(481060),
   s = n(475179),
   c = n(239091),
   u = n(287734),
@@ -21,8 +21,8 @@ var r = n(255367),
   b = n(569545),
   _ = n(102172),
   y = n(525925),
-  x = n(701362),
-  C = n(670188),
+  C = n(701362),
+  x = n(670188),
   v = n(597998),
   j = n(314897),
   O = n(430824),
@@ -72,7 +72,7 @@ function R(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: T.moreContainer,
-    children: (0, r.jsxs)(o.Text, {
+    children: (0, r.jsxs)(a.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
       children: ["+", t]
@@ -80,7 +80,7 @@ function R(e) {
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     numAudience: t,
     collapsed: n
@@ -88,31 +88,31 @@ function M(e) {
     count: t
   });
   return (0, r.jsxs)("div", {
-    className: a()(T.audienceContainer, {
+    className: o()(T.audienceContainer, {
       [T.audienceContainerCollapsed]: n
     }),
     children: [(0, r.jsx)("div", {
       className: T.audienceIconContainer,
-      children: (0, r.jsx)(o.VWR, {
+      children: (0, r.jsx)(a.VWR, {
         size: "md",
         color: "currentColor",
         className: T.audienceIcon
       })
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
       children: i
     })]
   })
 }
-let k = (0, p.$)(function(e) {
+let M = (0, p.$)(function(e) {
   var t;
   let {
     collapsed: l,
     user: p,
     channel: R,
-    mute: M,
-    localMute: k,
+    mute: k,
+    localMute: M,
     localVideoDisabled: D,
     deaf: L,
     video: U,
@@ -136,8 +136,8 @@ let k = (0, p.$)(function(e) {
     otherClientSessionType: er,
     voicePlatform: ei,
     isSelfOnOtherClient: el = !1,
-    tabIndex: ea,
-    location: eo,
+    tabIndex: eo,
+    location: ea,
     isSelf: es,
     application: ec
   } = e, eu = i.useRef(null), [ed, ep] = i.useState(!1), eh = () => {
@@ -169,20 +169,20 @@ let k = (0, p.$)(function(e) {
         })
       }))
     })
-  }, e_ = () => (0, r.jsx)(x.Z, {
+  }, e_ = () => (0, r.jsx)(C.Z, {
     user: p,
     channel: R,
     onWatch: eg,
     previewIsOpen: en,
-    location: eo
+    location: ea
   }), ey = e => {
     let t = P.al.has(null != er ? er : ""),
       n = {
         user: p,
         speaking: z,
         disconnected: W,
-        mute: M,
-        localMute: k,
+        mute: k,
+        localMute: M,
         localVideoDisabled: D,
         isStreaming: K,
         isGuest: Q,
@@ -195,11 +195,11 @@ let k = (0, p.$)(function(e) {
         overlap: l,
         serverMute: F,
         serverDeaf: G,
-        tabIndex: ea,
+        tabIndex: eo,
         otherClientSessionType: er,
         voicePlatform: ei,
         embeddedApplication: B,
-        avatarContainerClass: a()({
+        avatarContainerClass: o()({
           [T.userAvatar]: !0
         }),
         disabled: el && !t,
@@ -214,7 +214,7 @@ let k = (0, p.$)(function(e) {
       };
     if (el) {
       var i;
-      return (0, r.jsx)(o.ua7, {
+      return (0, r.jsx)(a.ua7, {
         text: null != (i = (0, g.Z)(er)) ? i : N.intl.string(N.t.IyYqqa),
         children: e => {
           var {
@@ -241,7 +241,7 @@ let k = (0, p.$)(function(e) {
         }
       })
     }
-    return (0, r.jsx)(o.yRy, {
+    return (0, r.jsx)(a.yRy, {
       targetElementRef: eu,
       position: "right",
       renderPopout: e_,
@@ -254,14 +254,14 @@ let k = (0, p.$)(function(e) {
         onKeyDown: e.onKeyDown
       }))
     })
-  }, ex = (0, r.jsx)("div", {
+  }, eC = (0, r.jsx)("div", {
     className: T.draggable,
     "data-dnd-name": R.name,
     onMouseEnter: el ? void 0 : () => {
       K && !ed && (null == $ || $(p.id))
     },
     onMouseLeave: el ? void 0 : ef,
-    children: (0, r.jsx)(C.Z, {
+    children: (0, r.jsx)(x.Z, {
       clickTrap: (null == p ? void 0 : p.id) === (null == (t = I.default.getCurrentUser()) ? void 0 : t.id) && ed,
       targetElementRef: eu,
       user: p,
@@ -273,5 +273,5 @@ let k = (0, p.$)(function(e) {
       children: e => ey(e)
     })
   });
-  return q ? Y(ex) : ex
+  return q ? Y(eC) : eC
 })

@@ -1,6 +1,6 @@
 /**
   Module ID: 40407
-  Original File Name: 9d2c409e5dbd14d5
+  Original File Name: 3c3d2b72ccf60bd7
 **/
 .rootContainer_f4adbd {
     align-items: center;
@@ -17,14 +17,14 @@
 }
 
 .newBadge_f4adbd {
-    margin-bottom: var(--spacing-4);
+    margin-bottom: var(--space-4);
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
 }
 
 .nitroWheel_f4adbd {
-    margin-left: var(--spacing-4);
+    margin-left: var(--space-4);
     margin-top: 1px
 }
 
@@ -295,4 +295,4 @@
     background-color: var(--background-mod-subtle)
 }
 
-/*# sourceMappingURL=9d2c409e5dbd14d5.css.map*/
+/*# sourceMappingURL=3c3d2b72ccf60bd7.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 12858
-  Original File Name: 69a4494018dc6ed8
+  Original File Name: db43015084fbc4d2
 **/
 .container__1ce5d {
     position: relative
@@ -18,8 +18,8 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: var(--spacing-16);
-    padding-top: var(--spacing-64);
+    padding: var(--space-16);
+    padding-top: var(--space-64);
     text-align: center
 }
 
@@ -29,7 +29,7 @@
 }
 
 .title_f549e5 {
-    padding-bottom: var(--spacing-4)
+    padding-bottom: var(--space-4)
 }
 
 .body_f549e5,.title_f549e5 {
@@ -38,7 +38,7 @@
 
 .content_f549e5 {
     flex-direction: column;
-    padding: var(--spacing-16);
+    padding: var(--space-16);
     padding-top: 0
 }
 
@@ -48,13 +48,13 @@
 }
 
 .guildName_f549e5 {
-    margin-left: var(--spacing-12)
+    margin-left: var(--space-12)
 }
 
 .buttonGroup_f549e5 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-8);
+    gap: var(--space-8);
     width: 100%
 }
 
@@ -65,7 +65,7 @@
 .infoGroup_f549e5 {
     background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
-    margin-bottom: var(--spacing-24);
+    margin-bottom: var(--space-24);
     width: 100%
 }
 
@@ -73,13 +73,13 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-16);
-    padding: var(--spacing-16)
+    gap: var(--space-16);
+    padding: var(--space-16)
 }
 
 .row__6e3d6 {
-    gap: var(--spacing-12);
-    padding: var(--spacing-12)
+    gap: var(--space-12);
+    padding: var(--space-12)
 }
 
 .icon__6e3d6 {
@@ -93,4 +93,4 @@
     display: inline
 }
 
-/*# sourceMappingURL=69a4494018dc6ed8.css.map*/
+/*# sourceMappingURL=db43015084fbc4d2.css.map*/

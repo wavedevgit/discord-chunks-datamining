@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => P
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(695469),
+  o = n.n(l),
+  a = n(695469),
   s = n(481060),
   c = n(110924),
   u = n(988980),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(111248),
   _ = n(312703),
   y = n(796638),
-  x = n(981631),
-  C = n(354459),
+  C = n(981631),
+  x = n(354459),
   v = n(363987),
   j = n(999976);
 
@@ -69,8 +69,8 @@ function P(e) {
       popoutWindow: A,
       inCall: w,
       channel: R,
-      selectedParticipant: M,
-      showParticipants: k = !0,
+      selectedParticipant: k,
+      showParticipants: M = !0,
       className: D,
       width: L,
       height: U,
@@ -84,16 +84,16 @@ function P(e) {
     Y = (0, c.Z)(z),
     [q, K] = i.useState(!0),
     [X, Q] = i.useState(!1),
-    J = M.type === C.fO.ACTIVITY,
-    $ = (0, u.Z)(J ? M.applicationId : void 0),
-    ee = !J && null != M.streamId,
+    J = k.type === x.fO.ACTIVITY,
+    $ = (0, u.Z)(J ? k.applicationId : void 0),
+    ee = !J && null != k.streamId,
     et = U <= 2 * S + 144,
-    en = k && !et,
+    en = M && !et,
     er = (0, c.Z)(en),
-    ei = B === x.AEg.MINIMUM || B === x.AEg.NORMAL,
+    ei = B === C.AEg.MINIMUM || B === C.AEg.NORMAL,
     el = !et && (!ei || J),
-    ea = (0, m.Z)(el, 100),
-    eo = (null != (t = (0, c.Z)(M.id)) ? t : M.id) !== M.id,
+    eo = (0, m.Z)(el, 100),
+    ea = (null != (t = (0, c.Z)(k.id)) ? t : k.id) !== k.id,
     es = 0;
   (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * S + 8);
   let ec = i.useMemo(() => J && $ ? L / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : I, [ee, z, J, L, U, es, $]),
@@ -114,36 +114,36 @@ function P(e) {
     eg = (0, s.q_F)({
       value: +!!en,
       delay: eh || !en ? 0 : 100,
-      config: E(O({}, o.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       }),
       onStart: () => Q(!0),
-      onChange: () => f.S.dispatch(x.CkL.REMEASURE_TARGET),
+      onChange: () => f.S.dispatch(C.CkL.REMEASURE_TARGET),
       onRest: () => {
-        Q(!1), f.S.dispatch(x.CkL.REMEASURE_TARGET)
+        Q(!1), f.S.dispatch(C.CkL.REMEASURE_TARGET)
       }
     }, em),
     eb = (0, s.q_F)({
       value: +!!en,
-      config: E(O({}, o.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       })
     }, em),
     e_ = (0, s.q_F)({
       value: ed,
-      config: E(O({}, o.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       })
-    }, er === en && eb.value.idle && !ea || eo || ef ? "animate-never" : "animate-always"),
+    }, er === en && eb.value.idle && !eo || ea || ef ? "animate-never" : "animate-always"),
     ey = (0, s.q_F)({
       value: n,
-      config: E(O({}, o.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       })
     }, em),
-    ex = (0, s.Yzy)(M, {
+    eC = (0, s.Yzy)(k, {
       keys: e => null == e ? void 0 : e.id,
-      config: E(O({}, o.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       }),
       initial: null,
@@ -157,27 +157,27 @@ function P(e) {
         opacity: 0
       }
     }, em),
-    eC = i.useCallback(e => {
+    ex = i.useCallback(e => {
       W(e), K(!1)
     }, []),
-    ev = en ? [] : (0, _.n3)(N, M, V),
+    ev = en ? [] : (0, _.n3)(N, k, V),
     {
       visibleParticipants: ej,
       participantTileWidth: eO
     } = (0, y.ZB)(L, T);
   return (0, r.jsxs)("div", {
-    className: a()(j.root, v.flexCenter, D),
+    className: o()(j.root, v.flexCenter, D),
     children: [(0, r.jsxs)("div", {
       className: j.tileWrapper,
       style: {
         opacity: ee && q ? 0 : 1
       },
-      children: [(0, r.jsxs)(o.animated.div, {
+      children: [(0, r.jsxs)(a.animated.div, {
         className: j.videoFrame,
         style: {
           top: eb.value.to(e => -e * S / 2)
         },
-        children: [(0, r.jsx)(o.animated.div, {
+        children: [(0, r.jsx)(a.animated.div, {
           style: {
             width: e_.value
           },
@@ -187,11 +187,11 @@ function P(e) {
             style: {
               aspectRatio: ec
             },
-            children: ex((e, t, n) => {
+            children: eC((e, t, n) => {
               let {
                 key: i
               } = n;
-              return null != t ? (0, r.jsx)(o.animated.div, {
+              return null != t ? (0, r.jsx)(a.animated.div, {
                 className: v.videoWrapperAnimated,
                 style: e,
                 children: (0, r.jsx)(g.ZP, {
@@ -205,15 +205,15 @@ function P(e) {
                   onClick: l,
                   onDoubleClick: Z,
                   onContextMenu: P,
-                  onVideoResize: eC,
+                  onVideoResize: ex,
                   inCall: w,
                   inPopout: G
                 })
               }, i) : null
             })
           })
-        }), el ? (0, r.jsx)(o.animated.div, {
-          className: a()(j.actionRow, {
+        }), el ? (0, r.jsx)(a.animated.div, {
+          className: o()(j.actionRow, {
             [j.idle]: F
           }),
           style: {
@@ -221,11 +221,11 @@ function P(e) {
           },
           children: (0, r.jsx)(d.Z, {
             channelId: R.id,
-            isParticipantsOpen: k,
+            isParticipantsOpen: M,
             isVertical: !0
           })
         }) : null]
-      }), (0, r.jsx)(o.animated.div, {
+      }), (0, r.jsx)(a.animated.div, {
         className: j.participantsWrapperAnimated,
         style: {
           translateY: eg.value.to(e => e * S / 2),
@@ -239,10 +239,10 @@ function P(e) {
           onDoubleClick: Z,
           participants: ej,
           participantTileWidth: eO,
-          selectedParticipantId: M.id,
+          selectedParticipantId: k.id,
           inCall: w,
           popoutWindow: A,
-          paused: X || !k
+          paused: X || !M
         })
       })]
     }), ev.length > 0 ? (0, r.jsx)(b.Z, {

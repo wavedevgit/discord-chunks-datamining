@@ -1,6 +1,6 @@
 /**
   Module ID: 92754
-  Original File Name: 05fae5a6755e7a04
+  Original File Name: cf7a424a5999ee31
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -5552,9 +5552,9 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .roleStyleContainer__981c8 {
     display: flex;
-    gap: var(--spacing-8);
-    margin-top: var(--spacing-16);
-    padding-bottom: var(--spacing-8);
+    gap: var(--space-8);
+    margin-top: var(--space-16);
+    padding-bottom: var(--space-8);
     width: 100%
 }
 
@@ -5567,7 +5567,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .roleStyleMessageContainer__981c8 {
     background-color: var(--background-base-lowest);
     overflow: visible;
-    padding: var(--spacing-8) var(--spacing-4);
+    padding: var(--space-8) var(--space-4);
     pointer-events: none;
     position: relative;
     width: 142px
@@ -5601,14 +5601,14 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .roleStyleMessageContainer__981c8>div {
     margin-top: -8px;
     overflow: hidden;
-    padding-top: var(--spacing-8);
+    padding-top: var(--space-8);
     width: 255px
 }
 
 .roleStylePreviewContainer__981c8 {
     background-color: var(--background-base-low);
     border: 2px solid transparent;
-    border-radius: var(--spacing-8);
+    border-radius: var(--space-8);
     box-shadow: 0 1px 2px -1px rgba(0,0,0,.05),0 2px 4px -2px rgba(0,0,0,.07),0 3px 8px -3px rgba(0,0,0,.07),0 4px 12px -4px rgba(0,0,0,.07);
     display: flex;
     flex: 0 0 142px;
@@ -5654,7 +5654,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     flex-direction: row;
     gap: 14px;
     justify-content: space-between;
-    padding: var(--spacing-12)
+    padding: var(--space-12)
 }
 
 .roleStyleUpsellMesssages__981c8 {
@@ -5670,7 +5670,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .roleStyleUpsellButtonContents__981c8 {
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .guildBoostBadge__981c8,.roleStyleUpsellButtonContents__981c8 {
@@ -5678,17 +5678,17 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .holographicInfoBox__981c8 {
-    margin-top: var(--spacing-8)
+    margin-top: var(--space-8)
 }
 
 .roleStyleFormTitle__981c8 {
     align-items: center;
     display: flex;
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .newBadge__981c8 {
-    margin-left: var(--spacing-4)
+    margin-left: var(--space-4)
 }
 
 .container_e3077c {
@@ -7202,8 +7202,8 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     box-shadow: 3px hsl(var(--primary-500-hsl)/0);
     cursor: pointer;
     display: flex;
-    margin-bottom: var(--spacing-4);
-    padding: var(--spacing-8);
+    margin-bottom: var(--space-4);
+    padding: var(--space-8);
     position: relative;
     transition: background-color .05s ease-in-out,box-shadow .05s ease-in-out
 }
@@ -7219,7 +7219,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .bannedUser_cdb2b0 .username_cdb2b0 {
     flex: 1 1 100px;
-    padding-left: var(--spacing-8)
+    padding-left: var(--space-8)
 }
 
 .description_cdb2b0 {
@@ -7257,7 +7257,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .bannedUserModal_cdb2b0 .error_cdb2b0 {
-    margin-top: var(--spacing-8)
+    margin-top: var(--space-8)
 }
 
 .bannedUserModal_cdb2b0 .reason_cdb2b0,.bannedUserModal_cdb2b0 .userDiscrim_cdb2b0 {
@@ -7275,8 +7275,8 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .container_cdb2b0 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-12);
-    padding: var(--spacing-24);
+    gap: var(--space-12);
+    padding: var(--space-24);
     padding-top: 56px;
     width: 660px
 }
@@ -7287,7 +7287,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     border-radius: var(--radius-md);
     box-shadow: none;
     height: 760px;
-    padding: var(--spacing-8)
+    padding: var(--space-8)
 }
 
 .content_cdb2b0 {
@@ -7297,7 +7297,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .footer_cdb2b0 {
-    gap: var(--spacing-4);
+    gap: var(--space-4);
     justify-content: end
 }
 
@@ -7305,7 +7305,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .searchButton_cdb2b0,.searchIcon_cdb2b0 {
@@ -9210,7 +9210,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .coverTitle__2f300 {
-    margin-bottom: var(--spacing-16);
+    margin-bottom: var(--space-16);
     opacity: 1
 }
 
@@ -12264,11 +12264,11 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .descriptionContainer__69ef9,.title__69ef9 {
-    margin-bottom: var(--spacing-24)
+    margin-bottom: var(--space-24)
 }
 
 .privateProfileWarning__69ef9 {
-    margin-top: var(--spacing-16)
+    margin-top: var(--space-16)
 }
 
 .enableSwitchContainer__69ef9 {
@@ -12278,20 +12278,20 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: var(--spacing-40);
-    padding: var(--spacing-12) var(--spacing-16)
+    margin-bottom: var(--space-40);
+    padding: var(--space-12) var(--space-16)
 }
 
 .boostingLinkContainer__69ef9 {
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .sectionTitle__69ef9 {
-    margin-bottom: var(--spacing-12)
+    margin-bottom: var(--space-12)
 }
 
 .section__69ef9 {
-    margin-bottom: var(--spacing-40)
+    margin-bottom: var(--space-40)
 }
 
 .tagContainer__69ef9 {
@@ -12301,7 +12301,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .tagTooltip__69ef9 {
-    margin-left: var(--spacing-12)
+    margin-left: var(--space-12)
 }
 
 .tagInputContainer__69ef9 {
@@ -12316,7 +12316,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     border-width: 1px;
     display: flex;
     flex-direction: row;
-    padding: var(--spacing-12) var(--spacing-16)
+    padding: var(--space-12) var(--space-16)
 }
 
 .tagInputWrapper__69ef9:hover {
@@ -12330,7 +12330,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .tagInput__69ef9 {
     background-color: transparent;
     font-size: 24px;
-    margin-left: var(--spacing-8);
+    margin-left: var(--space-8);
     padding: 0;
     width: 6ch
 }
@@ -12340,7 +12340,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .tagChangeInfoBox__69ef9 {
-    margin-top: var(--spacing-12)
+    margin-top: var(--space-12)
 }
 
 .pickerGrid__69ef9 {
@@ -12393,7 +12393,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .sidebarContainer__69ef9 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-16)
+    gap: var(--space-16)
 }
 
 .popoutContainer_a912c3 {
@@ -12445,8 +12445,8 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: column;
-    padding: var(--spacing-12);
-    row-gap: var(--spacing-12);
+    padding: var(--space-12);
+    row-gap: var(--space-12);
     width: 288px
 }
 
@@ -12480,7 +12480,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 .avatarContainer__11014 {
     background-color: var(--bg-brand);
     height: 40px;
-    margin-right: var(--spacing-12);
+    margin-right: var(--space-12);
     width: 40px
 }
 
@@ -12505,7 +12505,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .decorationsContainer__11014 {
     align-items: center;
-    margin-left: var(--spacing-4)
+    margin-left: var(--space-4)
 }
 
 .container__935ef {
@@ -12513,8 +12513,8 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     border-radius: var(--radius-xs);
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-12);
-    padding: var(--spacing-16) 0
+    gap: var(--space-12);
+    padding: var(--space-16) 0
 }
 
 .divider__935ef {
@@ -12523,17 +12523,17 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .section__935ef {
-    padding: 0 var(--spacing-16)
+    padding: 0 var(--space-16)
 }
 
 .body__935ef {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-12)
+    gap: var(--space-12)
 }
 
 .button__935ef {
-    padding: var(--spacing-8)
+    padding: var(--space-8)
 }
 
 .serverBoostTabItem_cbe0b4[aria-selected=true] {
@@ -12562,4 +12562,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=05fae5a6755e7a04.css.map*/
+/*# sourceMappingURL=cf7a424a5999ee31.css.map*/

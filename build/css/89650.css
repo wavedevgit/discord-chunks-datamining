@@ -1,6 +1,6 @@
 /**
   Module ID: 89650
-  Original File Name: 87cf8a20abafe6db
+  Original File Name: a89effd9468aad92
 **/
 .modalContent__55d91 {
     margin-bottom: 0
@@ -11,7 +11,7 @@
 }
 
 .settingsButton__04bb8 {
-    margin-top: var(--spacing-24);
+    margin-top: var(--space-24);
     width: 100%
 }
 
@@ -19,22 +19,22 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    padding-top: var(--spacing-8)
+    padding-top: var(--space-8)
 }
 
 .reportFalsePositiveButton__04bb8 {
-    padding: var(--spacing-4)
+    padding: var(--space-4)
 }
 
 .actionGroup__83fb3 {
     background-color: var(--background-base-lower);
     border-radius: var(--radius-sm);
-    padding-left: var(--spacing-16);
-    padding-right: var(--spacing-16)
+    padding-left: var(--space-16);
+    padding-right: var(--space-16)
 }
 
 .actionGroup__83fb3+.actionGroup__83fb3 {
-    margin-top: var(--spacing-16)
+    margin-top: var(--space-16)
 }
 
 .actionRow__83fb3 {
@@ -42,8 +42,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: var(--spacing-16);
-    padding-top: var(--spacing-16)
+    padding-bottom: var(--space-16);
+    padding-top: var(--space-16)
 }
 
 .actionRow__83fb3+.actionRow__83fb3 {
@@ -54,7 +54,7 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
-    margin-right: var(--spacing-32)
+    margin-right: var(--space-32)
 }
 
 .clickableActionRow__83fb3:hover {
@@ -64,8 +64,8 @@
 .tipRow__5bc4e {
     flex-grow: 0;
     flex-wrap: nowrap;
-    gap: var(--spacing-8);
-    margin-top: var(--spacing-16)
+    gap: var(--space-8);
+    margin-top: var(--space-16)
 }
 
 .tipNumber__5bc4e,.tipRow__5bc4e {
@@ -83,14 +83,14 @@
 }
 
 .tipsList__5bc4e {
-    padding: 0 var(--spacing-16) var(--spacing-16)
+    padding: 0 var(--space-16) var(--space-16)
 }
 
 .tipsHeader__5bc4e {
     background: linear-gradient(270deg,rgba(88,101,242,0) 0,var(--brand-500) 70.8%),url(/assets/a9ff2b87dfa85265.png);
     background-size: cover;
     border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-    padding: var(--spacing-16);
+    padding: var(--space-16);
     text-align: start
 }
 
@@ -106,7 +106,7 @@
 }
 
 .modalHeader_c7d96d {
-    margin-top: var(--spacing-16)
+    margin-top: var(--space-16)
 }
 
 .footerLink_c7d96d {
@@ -118,4 +118,4 @@
     text-decoration: underline
 }
 
-/*# sourceMappingURL=87cf8a20abafe6db.css.map*/
+/*# sourceMappingURL=a89effd9468aad92.css.map*/

@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => P
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(481060),
+  o = n.n(l),
+  a = n(481060),
   s = n(493683),
   c = n(239091),
   u = n(599059),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(210975),
   _ = n(626135),
   y = n(981631),
-  x = n(388032),
-  C = n(791293);
+  C = n(388032),
+  x = n(791293);
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -59,12 +59,12 @@ let O = e => {
     } = e;
     return (0, b.m$)({
       channelId: t.id
-    }) ? (0, r.jsx)(o.ua7, {
-      text: x.intl.string(x.t.QyZ4TU),
-      children: e => (0, r.jsx)(o.tQf, j(v({}, e), {
+    }) ? (0, r.jsx)(a.ua7, {
+      text: C.intl.string(C.t.QyZ4TU),
+      children: e => (0, r.jsx)(a.tQf, j(v({}, e), {
         size: "xs",
-        "aria-label": x.intl.string(x.t.VHXh8f),
-        color: o.TVs.colors.INTERACTIVE_NORMAL
+        "aria-label": C.intl.string(C.t.VHXh8f),
+        color: a.TVs.colors.INTERACTIVE_NORMAL
       }))
     }) : null
   },
@@ -73,10 +73,10 @@ let O = e => {
       channel: t,
       children: i,
       tooltipText: l,
-      onClick: a,
+      onClick: o,
       className: s
     } = e;
-    return (0, r.jsx)(o.ua7, {
+    return (0, r.jsx)(a.ua7, {
       text: l,
       position: "bottom",
       children: e => {
@@ -97,9 +97,9 @@ let O = e => {
           }
           return i
         }(e, ["onMouseEnter"]);
-        return (0, r.jsx)(o.P3F, j(v({}, p), {
+        return (0, r.jsx)(a.P3F, j(v({}, p), {
           className: s,
-          onClick: a,
+          onClick: o,
           onContextMenu: e => (0, c.jW)(e, () => Promise.all([n.e("79695"), n.e("70205"), n.e("53912"), n.e("32325")]).then(n.bind(n, 354741)).then(e => {
             let {
               default: n
@@ -130,26 +130,26 @@ let O = e => {
       channel: t,
       children: n,
       inlineEditor: l
-    } = e, c = t.id, u = t.name, h = (0, p.ZP)(t), f = (0, p.cO)(t), [m, b] = i.useState(!1), _ = i.useCallback(() => l ? b(u) : (0, g.B)(c, d.Z.HEADER_BAR), [l, u, c]), v = l ? x.t.pYO54e : x.t["5Q9+/P"];
+    } = e, c = t.id, u = t.name, h = (0, p.ZP)(t), f = (0, p.cO)(t), [m, b] = i.useState(!1), _ = i.useCallback(() => l ? b(u) : (0, g.B)(c, d.Z.HEADER_BAR), [l, u, c]), v = l ? C.t.pYO54e : C.t["5Q9+/P"];
     return l ? (0, r.jsxs)("div", {
-      className: C.newWrapper,
+      className: x.newWrapper,
       children: [(0, r.jsxs)("div", {
-        className: a()(C.hoverableContainer, {
-          [C.editing]: !1 !== m
+        className: o()(x.hoverableContainer, {
+          [x.editing]: !1 !== m
         }),
         onDoubleClick: e => e.stopPropagation(),
         children: [n, !1 === m ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(E, {
             channel: t,
-            tooltipText: x.intl.string(v),
+            tooltipText: C.intl.string(v),
             onClick: _,
-            className: C.clickableTitle,
-            children: [(0, r.jsx)(o.Text, {
+            className: x.clickableTitle,
+            children: [(0, r.jsx)(a.Text, {
               variant: "text-md/semibold",
               color: "header-primary",
               children: null != h ? h : ""
-            }), (0, r.jsx)(o.vdY, {
-              className: C.editIcon,
+            }), (0, r.jsx)(a.vdY, {
+              className: x.editIcon,
               size: "xs",
               color: "currentColor"
             })]
@@ -160,10 +160,10 @@ let O = e => {
           onSubmit: () => {
             !1 !== m && m !== u && s.Z.setName(c, m), b(!1)
           },
-          children: (0, r.jsx)(o.oil, {
+          children: (0, r.jsx)(a.oil, {
             autoFocus: !0,
             maxLength: y.HN8,
-            inputClassName: C.newInput,
+            inputClassName: x.newInput,
             name: "channel_name",
             autoComplete: "off",
             value: m,
@@ -174,31 +174,31 @@ let O = e => {
           })
         })]
       }), !1 !== m && (0, r.jsxs)("div", {
-        className: C.explainer,
-        children: [(0, r.jsx)(o.Text, {
+        className: x.explainer,
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
           color: "header-muted",
-          children: x.intl.string(x.t.a7oCBg)
-        }), (0, r.jsx)(o.Text, {
+          children: C.intl.string(C.t.a7oCBg)
+        }), (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
           color: "header-muted",
-          className: C.visibleLink,
-          children: x.intl.format(x.t.HVqAgI, {
+          className: x.visibleLink,
+          children: C.intl.format(C.t.HVqAgI, {
             onCancel: () => b(!1)
           })
         })]
       })]
     }) : (0, r.jsxs)(E, {
       channel: t,
-      tooltipText: x.intl.string(v),
+      tooltipText: C.intl.string(v),
       onClick: _,
-      className: a()(C.hoverableContainer, C.clickableTitle),
-      children: [n, (0, r.jsx)(o.Text, {
+      className: o()(x.hoverableContainer, x.clickableTitle),
+      children: [n, (0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: null != h ? h : ""
-      }), (0, r.jsx)(o.vdY, {
-        className: C.editIcon,
+      }), (0, r.jsx)(a.vdY, {
+        className: x.editIcon,
         size: "xs",
         color: "currentColor"
       })]
@@ -208,9 +208,9 @@ let O = e => {
     let {
       channel: t,
       children: n
-    } = e, l = (0, p.ZP)(t), a = i.useCallback(e => {
+    } = e, l = (0, p.ZP)(t), o = i.useCallback(e => {
       l !== e.currentTarget.value && s.Z.setName(t.id, e.currentTarget.value)
-    }, [t, l]), o = i.useCallback(e => {
+    }, [t, l]), a = i.useCallback(e => {
       _.default.track(y.rMx.GDM_EDIT_INTERACTED, {
         action: "opened",
         channel_id: t.id,
@@ -227,17 +227,17 @@ let O = e => {
     }, [t]);
     return (0, r.jsxs)(r.Fragment, {
       children: [n, (0, r.jsxs)("div", {
-        className: C.container,
+        className: x.container,
         onDoubleClick: e => e.stopPropagation(),
         children: [(0, r.jsx)(u.Z, {
           minLen: 1,
           maxLen: y.HN8,
-          className: C.channelName,
+          className: x.channelName,
           name: "channel_name",
           autoComplete: "off",
           value: null != l ? l : "",
-          onFocus: o,
-          onBlur: a,
+          onFocus: a,
+          onBlur: o,
           onMouseEnter: c
         }), (0, r.jsx)(O, {
           channel: t
@@ -258,14 +258,14 @@ let O = e => {
       inlineEditor: !l,
       children: (0, r.jsx)(m.v, {
         channel: t,
-        className: i ? C.newGdmIcon : n,
+        className: i ? x.newGdmIcon : n,
         editable: !l,
         location: d.Z.HEADER_BAR,
         children: (0, r.jsx)(f.Z, {
           "aria-hidden": !0,
           channel: t,
-          size: o.EFr.SIZE_24,
-          facepileSizeOverride: i ? o.EFr.SIZE_24 : o.EFr.SIZE_32,
+          size: a.EFr.SIZE_24,
+          facepileSizeOverride: i ? a.EFr.SIZE_24 : a.EFr.SIZE_32,
           experimentLocation: "header_bar"
         })
       })

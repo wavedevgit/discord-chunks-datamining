@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 86b8abfcc45254ec
+  Original File Name: 8a41f939d2325781
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -520,7 +520,7 @@
 }
 
 .hint_e8d31f {
-    margin-top: var(--spacing-4)
+    margin-top: var(--space-4)
 }
 
 .clickable_e8d31f {
@@ -533,7 +533,7 @@
 
 .buttonContainer_e8d31f {
     display: flex;
-    margin-top: var(--spacing-8)
+    margin-top: var(--space-8)
 }
 
 .button_e8d31f {
@@ -551,7 +551,7 @@
     display: flex;
     flex: 0 0 auto;
     justify-content: center;
-    margin-right: var(--spacing-12)
+    margin-right: var(--space-12)
 }
 
 .avatar_e8d31f,.icon_e8d31f {
@@ -860,20 +860,20 @@
     flex-direction: column;
     gap: 16px;
     overflow-y: scroll;
-    padding: var(--spacing-8) var(--spacing-24)
+    padding: var(--space-8) var(--space-24)
 }
 
 .tabBar__0b90c {
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .tabBar__0b90c [role=tab] {
-    padding: var(--spacing-8)
+    padding: var(--space-8)
 }
 
 .tab__0b90c {
     display: grid;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .tab__0b90c[hidden] {
@@ -884,9 +884,9 @@
     align-items: center;
     border-bottom: 1px solid var(--border-subtle);
     display: flex;
-    gap: var(--spacing-16);
+    gap: var(--space-16);
     justify-content: space-between;
-    padding: var(--spacing-8) 0
+    padding: var(--space-8) 0
 }
 
 .toolbarThemeSelector__0b90c {
@@ -895,7 +895,7 @@
 
 .toolbarButtons__0b90c {
     display: flex;
-    gap: var(--spacing-16)
+    gap: var(--space-16)
 }
 
 .colorPreview__0b90c {
@@ -934,8 +934,8 @@
 .overrideContent__0b90c {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-8);
-    padding: var(--spacing-12)
+    gap: var(--space-8);
+    padding: var(--space-12)
 }
 
 .rawOverrides__0b90c {
@@ -958,7 +958,7 @@
 
 .semanticOverride__0b90c {
     display: grid;
-    gap: var(--spacing-8);
+    gap: var(--space-8);
     grid-template-columns: 3fr 1fr
 }
 
@@ -966,9 +966,9 @@
     align-items: flex-start;
     border-bottom: 1px solid var(--border-subtle);
     display: grid;
-    gap: var(--spacing-16);
+    gap: var(--space-16);
     grid-template-columns: 1fr auto auto auto;
-    padding: var(--spacing-12)
+    padding: var(--space-12)
 }
 
 .title__0b90c {
@@ -982,7 +982,7 @@
 
 .overrideHeading__0b90c,.titleWithIcon__0b90c {
     align-items: center;
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .overrideHeading__0b90c {
@@ -1001,16 +1001,16 @@
 .divider__0b90c {
     background-color: var(--border-subtle);
     height: 1px;
-    margin: var(--spacing-8) 0
+    margin: var(--space-8) 0
 }
 
 .formItem__0b90c {
-    margin-bottom: var(--spacing-12)
+    margin-bottom: var(--space-12)
 }
 
 .palette__0b90c {
     display: grid;
-    gap: var(--spacing-4);
+    gap: var(--space-4);
     grid-template-columns: 1fr 1fr
 }
 
@@ -1022,7 +1022,7 @@
 .paletteSettings__0b90c,.section__0b90c {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .paletteOverrides__0b90c {
@@ -1042,7 +1042,7 @@
 .palettePreview__0b90c {
     display: flex;
     gap: 2px;
-    padding: var(--spacing-4)
+    padding: var(--space-4)
 }
 
 .panelContainer__0dbe4 {
@@ -1170,24 +1170,24 @@
 }
 
 .container_bb6304 {
-    margin: var(--spacing-12)
+    margin: var(--space-12)
 }
 
 .formElement_bb6304 {
     display: flex;
     flex-direction: column;
-    margin-bottom: var(--spacing-32)
+    margin-bottom: var(--space-32)
 }
 
 .formRow_bb6304 {
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .formDividerTitle_bb6304,.formRow_bb6304 {
-    margin: var(--spacing-12) 0
+    margin: var(--space-12) 0
 }
 
 .container__23012 {
@@ -1214,8 +1214,8 @@
     box-shadow: var(--shadow-medium);
     display: flex;
     flex-direction: column;
-    margin: var(--spacing-12) 0;
-    padding: var(--spacing-12);
+    margin: var(--space-12) 0;
+    padding: var(--space-12);
     position: relative
 }
 
@@ -1238,7 +1238,7 @@
 }
 
 .section__23012 {
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .buttonGroup__23012 {
@@ -1251,7 +1251,7 @@
 }
 
 .panelInner_b4dcd9 {
-    padding: var(--spacing-8)
+    padding: var(--space-8)
 }
 
 .headerWrapper_b4dcd9 {
@@ -1262,7 +1262,7 @@
 }
 
 .section_b4dcd9 {
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .buttons_b4dcd9 {
@@ -1274,8 +1274,8 @@
 }
 
 .buttons_b4dcd9>* {
-    margin-bottom: var(--spacing-8);
-    margin-right: var(--spacing-8)
+    margin-bottom: var(--space-8);
+    margin-right: var(--space-8)
 }
 
 .inputRow_b4dcd9 {
@@ -1287,7 +1287,7 @@
 }
 
 .input_b4dcd9 {
-    margin-right: var(--spacing-8);
+    margin-right: var(--space-8);
     width: 100%
 }
 
@@ -1296,8 +1296,8 @@
     background-color: var(--background-base-lower);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-medium);
-    margin: var(--spacing-4) 0;
-    padding: var(--spacing-12);
+    margin: var(--space-4) 0;
+    padding: var(--space-12);
     position: relative
 }
 
@@ -1309,15 +1309,15 @@
 .badgeContainer_b4dcd9 {
     align-items: flex-end;
     position: absolute;
-    right: var(--spacing-12);
-    top: var(--spacing-12)
+    right: var(--space-12);
+    top: var(--space-12)
 }
 
 .badge_b4dcd9 {
     background-color: var(--status-positive-background);
     border-radius: var(--radius-round);
     margin-bottom: 2px;
-    padding: 2px var(--spacing-8)
+    padding: 2px var(--space-8)
 }
 
 .clickable_b4dcd9 {
@@ -1429,16 +1429,16 @@
 }
 
 .panelInner__6edf0 {
-    padding: var(--spacing-8)
+    padding: var(--space-8)
 }
 
 .panelRow__6edf0 {
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-12);
+    gap: var(--space-12);
     justify-content: flex-start;
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--space-16)
 }
 
 .anniversaryCountSelect__6edf0 {
@@ -1451,20 +1451,20 @@
 
 .buttonsContainer_a8b931 {
     display: flex;
-    gap: var(--spacing-8);
-    margin-bottom: var(--spacing-24)
+    gap: var(--space-8);
+    margin-bottom: var(--space-24)
 }
 
 .container__9b0bb {
-    padding: var(--spacing-24)
+    padding: var(--space-24)
 }
 
 .section__9b0bb {
-    padding-bottom: var(--spacing-24)
+    padding-bottom: var(--space-24)
 }
 
 .formSwitch__9b0bb,.header__9b0bb {
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .krispTesterRow_fc5fb8 {
@@ -1481,15 +1481,15 @@
 .container_f4e6be {
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    padding: var(--spacing-16)
+    padding: var(--space-16)
 }
 
 .title_f4e6be {
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .description_f4e6be {
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--space-16)
 }
 
 .safetyFlow__300a2 {
@@ -1509,11 +1509,11 @@
 }
 
 .body__300a2,.header__300a2 {
-    padding: var(--spacing-16)
+    padding: var(--space-16)
 }
 
 .error__300a2 {
-    margin-top: var(--spacing-8)
+    margin-top: var(--space-8)
 }
 
 .verification_dede4b {
@@ -1651,7 +1651,7 @@
 .divider__9d40d {
     background-color: var(--border-subtle);
     height: 1px;
-    margin: var(--spacing-8) 0
+    margin: var(--space-8) 0
 }
 
 .inGameNuxContainer__9d40d {
@@ -3066,7 +3066,7 @@
 }
 
 .errorCodeNoticeText__9671b {
-    margin-left: var(--spacing-8)
+    margin-left: var(--space-8)
 }
 
 .errorCodeNoticeClickable__9671b {
@@ -3258,8 +3258,8 @@
 }
 
 .blockedIcon__477aa {
-    margin-left: var(--spacing-12);
-    margin-right: var(--spacing-4)
+    margin-left: var(--space-12);
+    margin-right: var(--space-4)
 }
 
 .blockedText__477aa {
@@ -3268,7 +3268,7 @@
 }
 
 .noIcon__477aa {
-    margin-left: var(--spacing-12)
+    margin-left: var(--space-12)
 }
 
 .container__394db {
@@ -3662,20 +3662,20 @@
 }
 
 .panelInner__86951 {
-    padding: var(--spacing-16)
+    padding: var(--space-16)
 }
 
 .panelRow__86951 {
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-12);
+    gap: var(--space-12);
     justify-content: flex-start;
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--space-16)
 }
 
 .collapsablePane__7ed4d {
-    margin-bottom: var(--spacing-16);
+    margin-bottom: var(--space-16);
     width: 100%
 }
 
@@ -3683,16 +3683,16 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .formSection__7ed4d {
     border-bottom: 1px solid var(--primary-200);
-    padding-bottom: var(--spacing-16)
+    padding-bottom: var(--space-16)
 }
 
 .error__7ed4d,.formSection__7ed4d {
-    margin-top: var(--spacing-8)
+    margin-top: var(--space-8)
 }
 
 .subscriptionTextContainer__7ed4d {
@@ -3748,4 +3748,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=86b8abfcc45254ec.css.map*/
+/*# sourceMappingURL=8a41f939d2325781.css.map*/

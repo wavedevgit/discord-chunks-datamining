@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => _
 });
 var r = n(255367),
   i = n(73800),
   l = n(112724),
-  a = n(413458),
-  o = n(351248),
+  o = n(413458),
+  a = n(351248),
   s = n(600164),
   c = n(585483),
   u = n(340295),
@@ -24,8 +24,8 @@ let _ = (0, l.Z)(e => {
     selectedParticipant: l,
     participantsVersion: _,
     layout: y,
-    onSelectParticipant: x,
-    onContextMenuParticipant: C,
+    onSelectParticipant: C,
+    onContextMenuParticipant: x,
     onFullscreenParticipant: v,
     channel: j,
     hasConnectPermission: O,
@@ -43,19 +43,19 @@ let _ = (0, l.Z)(e => {
   i.useEffect(() => {
     c.S.dispatch(m.CkL.REMEASURE_TARGET)
   }, [P, Z, R.width, R.height]);
-  let M = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, _]);
+  let k = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, _]);
   return (null == w ? void 0 : w.channelId) === j.id ? (0, r.jsx)(d.Z, {
     height: Z
   }) : (null == j ? void 0 : j.isGuildVocal()) && !I ? (0, r.jsx)(u.Z, {
     channel: j,
     participants: t,
     hasConnectPermission: O
-  }) : T === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
+  }) : T === m.WtW.VOICE ? (0, r.jsx)(a.Z, {
     guildId: j.guild_id,
     width: P,
     className: b.voiceCallWrapper,
     participants: t,
-    onContextMenu: C
+    onContextMenu: x
   }) : (n = I ? n : t, null == l) ? 0 === n.length ? (0, r.jsx)(f.Z, {
     channelId: j.id
   }) : (0, r.jsx)(s.Z, {
@@ -65,19 +65,19 @@ let _ = (0, l.Z)(e => {
     children: (0, r.jsx)(p.Z, {
       channel: j,
       className: b.videoGrid,
-      participants: M,
+      participants: k,
       totalNumberOfParticipants: t.length,
-      onClick: x,
+      onClick: C,
       onDoubleClick: v,
-      onContextMenu: C,
+      onContextMenu: x,
       inCall: I
     })
   }) : (0, r.jsx)(h.Z, {
     onFullscreenParticipant: v,
-    onContextMenuParticipant: C,
-    onSelectParticipant: x,
+    onContextMenuParticipant: x,
+    onSelectParticipant: C,
     selectedParticipant: l,
-    filteredParticipants: M,
+    filteredParticipants: k,
     participants: t,
     popoutWindow: A,
     className: E,

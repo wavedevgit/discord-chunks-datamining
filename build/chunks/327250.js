@@ -1,13 +1,13 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
-  ZP: () => k
+  ZP: () => M
 });
 var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  a = n(399606),
-  o = n(481060),
+  o = n(399606),
+  a = n(481060),
   s = n(493683),
   c = n(906732),
   u = n(69882),
@@ -20,8 +20,8 @@ var i = n(120356),
   b = n(592125),
   _ = n(271383),
   y = n(430824),
-  x = n(496675),
-  C = n(158776),
+  C = n(496675),
+  x = n(158776),
   v = n(944486),
   j = n(885110),
   O = n(594174),
@@ -69,28 +69,28 @@ function w(e) {
     user: t,
     guildId: n,
     onClose: i
-  } = e, l = t.id, s = (0, a.e7)([j.Z, C.Z, g.default], () => l === g.default.getId() ? j.Z.getStatus() : C.Z.getStatus(l, n), [l, n]);
+  } = e, l = t.id, s = (0, o.e7)([j.Z, x.Z, g.default], () => l === g.default.getId() ? j.Z.getStatus() : x.Z.getStatus(l, n), [l, n]);
   return (0, r.jsxs)("div", {
     className: N.topRow,
     children: [(0, r.jsxs)("div", {
       className: N.memberNameContainer,
       children: [(0, r.jsx)("div", {
         className: N.memberAvatar,
-        children: (0, r.jsx)(o.qEK, {
+        children: (0, r.jsx)(a.qEK, {
           src: t.getAvatarURL(n, 48),
           "aria-label": t.username,
-          size: o.EFr.SIZE_48,
+          size: a.EFr.SIZE_48,
           status: s
         })
       }), (0, r.jsxs)("div", {
         className: N.memberNameAndTagContainer,
         children: [(0, r.jsxs)("div", {
           className: N.memberNameTextContainer,
-          children: [(0, r.jsx)(o.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-lg/medium",
-            children: (0, r.jsx)(o.PUh, {
+            children: (0, r.jsx)(a.PUh, {
               name: I.ZP.getName(n, null, t),
-              color: o.TVs.colors.HEADER_PRIMARY.css
+              color: a.TVs.colors.HEADER_PRIMARY.css
             })
           }), (0, r.jsx)(m.ZP, {
             primaryGuild: null == t ? void 0 : t.primaryGuild,
@@ -101,19 +101,19 @@ function w(e) {
             className: N.memberClanTag,
             containerClassName: N.memberClanTagContainer
           })]
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-md/medium",
           color: "text-default",
           children: S.ZP.getUserTag(t)
         })]
       })]
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-md/medium",
       color: "text-default",
-      children: (0, r.jsx)(o.P3F, {
+      children: (0, r.jsx)(a.P3F, {
         className: N.closeAction,
         onClick: i,
-        children: (0, r.jsx)(o.Dio, {
+        children: (0, r.jsx)(a.Dio, {
           size: "md",
           color: "currentColor"
         })
@@ -127,7 +127,7 @@ function R(e) {
     tag: t = "div",
     text: n,
     disabled: i,
-    children: a,
+    children: o,
     onClick: s
   } = e, c = function(e, t) {
     if (null == e) return {};
@@ -144,9 +144,9 @@ function R(e) {
     }
     return i
   }(e, ["tag", "text", "disabled", "children", "onClick"]);
-  return (0, r.jsx)(o.ua7, {
+  return (0, r.jsx)(a.ua7, {
     text: n,
-    children: e => (0, r.jsx)(o.P3F, A(T({}, c, e), {
+    children: e => (0, r.jsx)(a.P3F, A(T({}, c, e), {
       tag: t,
       "aria-label": n,
       className: l()(N.bottomRowAction, {
@@ -155,25 +155,25 @@ function R(e) {
       onClick: i ? void 0 : s,
       children: (0, r.jsx)("div", {
         className: N.innerBottomRowAction,
-        children: a
+        children: o
       })
     }))
   })
 }
 
-function M(e) {
+function k(e) {
   let {
     user: t,
     member: i,
     guildId: l
-  } = e, m = (0, a.e7)([y.Z], () => y.Z.getGuild(l)), {
+  } = e, m = (0, o.e7)([y.Z], () => y.Z.getGuild(l)), {
     canKickUser: _,
-    canBanUser: C,
+    canBanUser: x,
     canModerateMembers: j
-  } = (0, a.cj)([x.Z, O.default, y.Z], () => ({
+  } = (0, o.cj)([C.Z, O.default, y.Z], () => ({
     canKickUser: (0, h.BK)(t, m),
     canBanUser: (0, h.mm)(t, m),
-    canModerateMembers: null != m && (0, p.F)(m.id, t.id, [O.default, y.Z, x.Z])
+    canModerateMembers: null != m && (0, p.F)(m.id, t.id, [O.default, y.Z, C.Z])
   }), [t, m]), I = (0, u.b)(i), {
     analyticsLocations: S,
     newestAnalyticsLocation: P
@@ -181,7 +181,7 @@ function M(e) {
     targetUserId: t.id,
     location: P,
     locations: S
-  }), M = (0, a.e7)([g.default], () => g.default.getId() === (null == t ? void 0 : t.id)), k = (0, a.e7)([v.Z, b.Z], () => {
+  }), k = (0, o.e7)([g.default], () => g.default.getId() === (null == t ? void 0 : t.id)), M = (0, o.e7)([v.Z, b.Z], () => {
     let e = v.Z.getChannelId(l),
       t = null != e ? b.Z.getChannel(e) : null,
       n = null != t && t.isModeratorReportChannel() ? e : void 0;
@@ -190,14 +190,14 @@ function M(e) {
   return (0, r.jsxs)("div", {
     className: N.bottomRow,
     children: [(0, r.jsx)(R, {
-      disabled: M,
+      disabled: k,
       text: Z.intl.string(Z.t["g33r/P"]),
       onClick: () => {
         s.Z.openPrivateChannel({
           recipientIds: t.id
         })
       },
-      children: (0, r.jsx)(o.kBi, {
+      children: (0, r.jsx)(a.kBi, {
         size: "custom",
         color: "currentColor",
         width: 24,
@@ -207,7 +207,7 @@ function M(e) {
       disabled: !_,
       text: Z.intl.string(Z.t["3glT6e"]),
       onClick: () => {
-        (0, o.ZDy)(async () => {
+        (0, a.ZDy)(async () => {
           let {
             default: e
           } = await n.e("5454").then(n.bind(n, 854360));
@@ -215,21 +215,21 @@ function M(e) {
             location: P,
             guildId: l,
             user: t,
-            modReportId: k
+            modReportId: M
           }))
         })
       },
-      children: (0, r.jsx)(o.I9k, {
+      children: (0, r.jsx)(a.I9k, {
         size: "custom",
         width: 24,
         height: 24,
-        color: o.TVs.colors.TEXT_DEFAULT.css
+        color: a.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, r.jsx)(R, {
-      disabled: !C,
+      disabled: !x,
       text: Z.intl.string(Z.t["5MBJ5O"]),
       onClick: () => {
-        (0, o.ZDy)(async () => {
+        (0, a.ZDy)(async () => {
           let {
             default: e
           } = await n.e("43350").then(n.bind(n, 98746));
@@ -237,15 +237,15 @@ function M(e) {
             location: P,
             guildId: l,
             user: t,
-            modReportId: k
+            modReportId: M
           }))
         })
       },
-      children: (0, r.jsx)(o.pgN, {
+      children: (0, r.jsx)(a.pgN, {
         size: "custom",
         width: 24,
         height: 24,
-        color: o.TVs.colors.TEXT_DEFAULT.css
+        color: a.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, r.jsx)(R, {
       disabled: !j,
@@ -259,14 +259,14 @@ function M(e) {
           guildId: i.guildId,
           userId: i.userId,
           anaylticsLocations: S,
-          modReportId: k
+          modReportId: M
         })
       },
-      children: (0, r.jsx)(o.YlB, {
+      children: (0, r.jsx)(a.YlB, {
         size: "custom",
         width: 24,
         height: 24,
-        color: o.TVs.colors.TEXT_DEFAULT.css
+        color: a.TVs.colors.TEXT_DEFAULT.css
       })
     }), (0, r.jsx)(R, {
       text: Z.intl.string(Z.t.IHTjzM),
@@ -274,31 +274,31 @@ function M(e) {
         w(f.jQ.COPY_ID), (0, E.JG)(t.id)
       },
       disabled: !E.wS,
-      children: (0, r.jsx)(o.VuL, {
+      children: (0, r.jsx)(a.VuL, {
         size: "custom",
         width: 24,
         height: 24,
-        color: o.TVs.colors.TEXT_DEFAULT.css
+        color: a.TVs.colors.TEXT_DEFAULT.css
       })
     })]
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     userId: t,
     guildId: n,
     onClose: i
-  } = e, l = (0, a.e7)([O.default], () => O.default.getUser(t), [t]), o = (0, a.e7)([_.ZP], () => _.ZP.getMember(n, t), [n, t]);
-  return null == l || null == o ? null : (0, r.jsxs)("div", {
+  } = e, l = (0, o.e7)([O.default], () => O.default.getUser(t), [t]), a = (0, o.e7)([_.ZP], () => _.ZP.getMember(n, t), [n, t]);
+  return null == l || null == a ? null : (0, r.jsxs)("div", {
     className: N.container,
     children: [(0, r.jsx)(w, {
       user: l,
       guildId: n,
       onClose: i
-    }), (0, r.jsx)(M, {
+    }), (0, r.jsx)(k, {
       user: l,
-      member: o,
+      member: a,
       guildId: n
     })]
   })

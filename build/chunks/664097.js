@@ -1,47 +1,47 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  o: () => a
+  o: () => o
 }), n(642613);
-var i = n(73800),
-  l = n(442837),
+var l = n(73800),
+  i = n(442837),
   r = n(115130),
-  o = n(701488);
-let a = () => {
+  a = n(701488);
+let o = () => {
   let {
     isEnabled: e,
     lastUsedObject: t
-  } = (0, l.cj)([r.Z], () => ({
+  } = (0, i.cj)([r.Z], () => ({
     isEnabled: r.Z.getIsEnabled(),
     lastUsedObject: r.Z.getLastUsedObject()
-  }), []), n = (0, l.Wu)([r.Z], () => r.Z.getDeveloperShelfItems(), []);
-  return i.useMemo(() => e ? n.map(e => {
+  }), []), n = (0, i.Wu)([r.Z], () => r.Z.getDeveloperShelfItems(), []);
+  return l.useMemo(() => e ? n.map(e => {
     var t, n;
     return {
       application: e,
       activity: (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            l = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), l.forEach(function(t) {
+            var l;
+            l = n[t], t in e ? Object.defineProperty(e, t, {
+              value: l,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : e[t] = i
+            }) : e[t] = l
           })
         }
         return e
-      }({}, o.wT, e.embeddedActivityConfig), n = n = {
+      }({}, a.wT, e.embeddedActivityConfig), n = n = {
         application_id: e.id
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
+          var l = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, l)
         }
         return n
       })(Object(n)).forEach(function(e) {
@@ -49,8 +49,8 @@ let a = () => {
       }), t)
     }
   }).sort((e, n) => {
-    let i = t[e.application.id],
-      l = t[n.application.id];
-    return null == i ? 1 : null == l ? -1 : l - i
+    let l = t[e.application.id],
+      i = t[n.application.id];
+    return null == l ? 1 : null == i ? -1 : i - l
   }) : [], [n, e, t])
 }

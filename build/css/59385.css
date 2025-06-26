@@ -1,6 +1,6 @@
 /**
   Module ID: 59385
-  Original File Name: 57a341f3fcb973ff
+  Original File Name: ee64e15fa3ed36d3
 **/
 .feedback__4c857 {
     align-items: center;
@@ -9,11 +9,11 @@
 
 .buttonsContainer__4c857,.feedback__4c857 {
     display: flex;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .toast__4c857 {
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .buttonsBackground__4c857 {
@@ -58,13 +58,13 @@
     background-size: cover;
     border-top-left-radius: var(--radius-md);
     border-top-right-radius: var(--radius-md);
-    padding: var(--spacing-32);
-    padding-bottom: var(--spacing-24)
+    padding: var(--space-32);
+    padding-bottom: var(--space-24)
 }
 
 .modalHeaderText__3fee9 {
     align-items: flex-start;
-    gap: var(--spacing-4);
+    gap: var(--space-4);
     max-width: 211px
 }
 
@@ -74,10 +74,10 @@
 }
 
 .modalContent__3fee9 {
-    gap: var(--spacing-24);
-    padding: var(--spacing-32);
-    padding-bottom: var(--spacing-16);
-    padding-top: var(--spacing-24)
+    gap: var(--space-24);
+    padding: var(--space-32);
+    padding-bottom: var(--space-16);
+    padding-top: var(--space-24)
 }
 
 .closeButton__3fee9 {
@@ -85,8 +85,8 @@
     cursor: pointer;
     padding: 0;
     position: absolute;
-    right: var(--spacing-12);
-    top: var(--spacing-12)
+    right: var(--space-12);
+    top: var(--space-12)
 }
 
 .closeButton__3fee9:hover {
@@ -114,12 +114,12 @@
 }
 
 .moreHeading__3fee9 {
-    margin-bottom: var(--spacing-4)
+    margin-bottom: var(--space-4)
 }
 
 .mainSection__3fee9 {
     align-items: center;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .mainSection__3fee9,.tipsSection__3fee9 {
@@ -131,15 +131,15 @@
     background: var(--background-base-lower);
     border-radius: var(--radius-sm);
     flex-grow: 0;
-    gap: var(--spacing-16);
-    padding: var(--spacing-16)
+    gap: var(--space-16);
+    padding: var(--space-16)
 }
 
 .tipRow__3fee9 {
     display: flex;
     flex-grow: 0;
     flex-wrap: nowrap;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .tipNumber__3fee9 {
@@ -153,4 +153,4 @@
     min-width: 32px
 }
 
-/*# sourceMappingURL=57a341f3fcb973ff.css.map*/
+/*# sourceMappingURL=ee64e15fa3ed36d3.css.map*/

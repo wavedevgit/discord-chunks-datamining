@@ -1,4 +1,4 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => h
 });
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  a = n(816782),
-  o = n(367907),
+  o = n(816782),
+  a = n(367907),
   s = n(433355),
   c = n(914010),
   u = n(665149),
@@ -22,11 +22,11 @@ function h(e) {
     tooltip: f ? p.intl.string(p.t.Axvx8f) : p.intl.string(p.t.gxChDw),
     icon: l.BFJ,
     onClick: () => {
-      o.ZP.trackWithMetadata(d.rMx.MEMBER_LIST_TOGGLED, {
+      a.ZP.trackWithMetadata(d.rMx.MEMBER_LIST_TOGGLED, {
         channel_id: t,
         guild_id: h,
         member_list_open: !f
-      }), a.Z.toggleMembersSection()
+      }), o.Z.toggleMembersSection()
     },
     selected: f
   })

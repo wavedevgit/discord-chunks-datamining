@@ -1,6 +1,6 @@
 /**
   Module ID: 85449
-  Original File Name: 640daa6786450527
+  Original File Name: 81d949ec32223b74
 **/
 .availabilityIndicator__40463 {
     display: flex;
@@ -45,7 +45,7 @@
 .container__1df30 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-12)
+    gap: var(--space-12)
 }
 
 .circular__1df30,.spinner__1df30 {
@@ -61,7 +61,7 @@
 .recentAvatarContainer__1df30 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-12)
+    gap: var(--space-12)
 }
 
 .recentAvatarsHeading__1df30 {
@@ -70,14 +70,14 @@
 
 .recentAvatarSlots__1df30 {
     display: grid;
-    gap: var(--spacing-12);
+    gap: var(--space-12);
     grid-template-columns: auto auto;
     position: relative
 }
 
 .recentAvatarList__1df30 {
     display: flex;
-    gap: var(--spacing-12)
+    gap: var(--space-12)
 }
 
 .recentAvatarButtonContainer__1df30 {
@@ -180,7 +180,7 @@
 .emptyAvatarSlots__1df30 {
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-12)
+    gap: var(--space-12)
 }
 
 .avatarPlaceholder__1df30 {
@@ -198,9 +198,9 @@
 .modalContent_edf440 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-24);
+    gap: var(--space-24);
     padding-bottom: var(--modal-horizontal-padding);
-    padding-top: var(--spacing-8)
+    padding-top: var(--space-8)
 }
 
 .modalCloseButton_edf440 {
@@ -211,12 +211,12 @@
 .imageSelectionSection_edf440 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-12)
+    gap: var(--space-12)
 }
 
 .optionsList_edf440 {
     display: grid;
-    gap: var(--spacing-12);
+    gap: var(--space-12);
     grid-template-columns: 1fr 1fr
 }
 
@@ -229,9 +229,9 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    padding: var(--spacing-16);
+    padding: var(--space-16);
     position: relative;
-    row-gap: var(--spacing-12);
+    row-gap: var(--space-12);
     transition: background-color var(--custom-button-transition-duration) ease-in-out;
     z-index: 1
 }
@@ -257,15 +257,15 @@
     color: var(--interactive-normal);
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-8);
+    gap: var(--space-8);
     transition: color var(--custom-button-transition-duration) ease-in-out
 }
 
 .optionLabelText_edf440 {
     align-items: center;
     color: currentColor;
-    -moz-column-gap: var(--spacing-4);
-    column-gap: var(--spacing-4);
+    -moz-column-gap: var(--space-4);
+    column-gap: var(--space-4);
     display: flex;
     flex-direction: row;
     justify-content: center
@@ -357,7 +357,7 @@
 }
 
 .imageSpecifications_edf440 {
-    padding: 0 var(--spacing-4)
+    padding: 0 var(--space-4)
 }
 
 .premiumUpsell_edf440 {
@@ -365,4 +365,4 @@
     margin: 0
 }
 
-/*# sourceMappingURL=640daa6786450527.css.map*/
+/*# sourceMappingURL=81d949ec32223b74.css.map*/

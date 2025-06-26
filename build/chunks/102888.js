@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => u
 });
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  a = n(128557),
-  o = n(981631),
+  o = n(128557),
+  a = n(981631),
   s = n(388032),
   c = n(334814);
 let u = e => {
@@ -39,9 +39,9 @@ let u = e => {
           return e
         }({}, n), l = l = {
           guild: t,
-          source: o.t4x.HUB_DIRECTORY,
+          source: a.t4x.HUB_DIRECTORY,
           analyticsLocation: {
-            section: o.jXE.HUB_WELCOME_CTA
+            section: a.jXE.HUB_WELCOME_CTA
           }
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
@@ -72,13 +72,13 @@ let u = e => {
       variant: "text-md/normal",
       className: c.emptySubtitle,
       children: s.intl.string(s.t.WypE0t)
-    }), null != u ? (0, r.jsx)(a.i, {
+    }), null != u ? (0, r.jsx)(o.i, {
       className: c.emptyCTA,
       iconUrl: n(362827),
       header: s.intl.string(s.t.hyK15u),
       completed: !1,
       onClick: u
-    }) : null, (0, r.jsx)(a.i, {
+    }) : null, (0, r.jsx)(o.i, {
       className: c.emptyCTA,
       iconUrl: n(538548),
       header: s.intl.string(s.t.L4bwJy),

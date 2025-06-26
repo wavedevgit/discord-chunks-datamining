@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => m
 });
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  a = n(287734),
-  o = n(305325),
+  o = n(287734),
+  a = n(305325),
   s = n(281956),
   c = n(584729),
   u = n(27457),
@@ -20,7 +20,7 @@ let m = function(e) {
     channel: n,
     hasConnectPermission: m
   } = e, g = t.filter(p.Io), b = (0, s.J)(n.guild_id), _ = i.useCallback(() => {
-    b ? (0, o.hk)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
+    b ? (0, a.hk)(n.guild_id, () => o.default.selectVoiceChannel(n.id)) : o.default.selectVoiceChannel(n.id)
   }, [n.id, n.guild_id, b]), y = 4 === g.length ? 2 : 3;
   return (0, r.jsxs)("div", {
     className: f.container,

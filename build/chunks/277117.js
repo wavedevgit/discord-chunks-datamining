@@ -1,4 +1,4 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => w
 });
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(657707),
   l = n(442837),
-  a = n(692547),
-  o = n(320582),
+  o = n(692547),
+  a = n(320582),
   s = n(246016),
   c = n(189156),
   u = n(699516),
@@ -20,8 +20,8 @@ var i = n(657707),
   b = n(280885),
   _ = n(483424),
   y = n(681837),
-  x = n(78806),
-  C = n(91433),
+  C = n(78806),
+  x = n(91433),
   v = n(900927),
   j = n(944043),
   O = n(678738),
@@ -40,15 +40,15 @@ function w(e) {
     currentUser: n,
     displayProfile: w,
     channel: R,
-    isHovering: M,
-    onOpenProfile: k
+    isHovering: k,
+    onOpenProfile: M
   } = e, {
     relationshipType: D,
     originApplicationId: L
   } = (0, l.cj)([u.Z], () => ({
     relationshipType: u.Z.getRelationshipType(t.id),
     originApplicationId: u.Z.getOriginApplicationId(t.id)
-  })), U = (0, o.vh)(t.id), B = (0, s.Y)({
+  })), U = (0, a.vh)(t.id), B = (0, s.Y)({
     userId: t.id
   }), F = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation), G = (0, l.e7)([h.Z], () => {
     var e;
@@ -62,7 +62,7 @@ function w(e) {
       user: t,
       nickname: p.ZP.getName(null, R.id, t),
       pronouns: null == w ? void 0 : w.pronouns,
-      onOpenProfile: k,
+      onOpenProfile: M,
       tags: (0, r.jsx)(g.Z, {
         displayProfile: w,
         themeType: Z.lY.SIDEBAR
@@ -72,18 +72,18 @@ function w(e) {
           userId: t.id
         }), !F && (0, r.jsx)(P.Z, {
           userId: t.id,
-          isHovering: M,
-          onOpenProfile: k
+          isHovering: k,
+          onOpenProfile: M
         })]
       })
     }), D === N.OGo.PENDING_INCOMING && (0, r.jsx)(I.Z.Overlay, {
-      children: (0, r.jsx)(C.Z, {
+      children: (0, r.jsx)(x.Z, {
         user: t,
         channelId: R.id,
         applicationId: L
       })
     }), U.map(e => (0, r.jsx)(I.Z.Overlay, {
-      children: (0, r.jsx)(C.Z, {
+      children: (0, r.jsx)(x.Z, {
         user: t,
         isGameRelationship: !0,
         applicationId: e.applicationId,
@@ -98,7 +98,7 @@ function w(e) {
         heading: T.intl.string(T.t.Iyka0d),
         headingIcon: (0, r.jsx)(i.P4T, {
           size: "xxs",
-          color: a.Z.colors.HEADER_PRIMARY
+          color: o.Z.colors.HEADER_PRIMARY
         }),
         headingColor: "header-primary",
         children: (0, r.jsx)(c.n, {
@@ -109,7 +109,7 @@ function w(e) {
       user: t,
       currentUser: n,
       displayProfile: w,
-      onOpenUserProfileModal: k
+      onOpenUserProfileModal: M
     }) : (0, r.jsx)(_.Z, {
       user: t,
       currentUser: n,
@@ -123,7 +123,7 @@ function w(e) {
         children: (0, r.jsx)(b.Z, {
           userBio: w.bio,
           animateOnHover: !0,
-          isHovering: M,
+          isHovering: k,
           userId: t.id
         })
       }), (null == G ? void 0 : G.popularApplicationCommandIds) != null && (0, r.jsx)(m.Z, {
@@ -133,7 +133,7 @@ function w(e) {
       }), B.length > 0 && (0, r.jsx)(O.Z, {
         heading: T.intl.string(T.t["Uv/eT0"]),
         headingColor: "header-primary",
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(C.Z, {
           applicationIds: B
         })
       }), (0, r.jsx)(O.Z, {

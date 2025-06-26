@@ -1,11 +1,11 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   b: () => y
 }), n(49124);
 var r, i, l = n(255367),
-  a = n(73800),
-  o = n(120356),
-  s = n.n(o),
+  o = n(73800),
+  a = n(120356),
+  s = n.n(a),
   c = n(500923),
   u = n.n(c),
   d = n(442837),
@@ -16,8 +16,8 @@ var r, i, l = n(255367),
 
 function g(e) {
   let t = (0, d.e7)([p.Z], () => p.Z.useReducedMotion),
-    n = a.useRef(null);
-  return a.useEffect(() => {
+    n = o.useRef(null);
+  return o.useEffect(() => {
     let r;
     return null != n.current && (r = u().loadAnimation({
       container: n.current,
@@ -56,11 +56,11 @@ let y = e => {
     animationContainerClassName: n,
     glowClassName: r,
     trinketsClassName: i,
-    onMount: o
+    onMount: a
   } = e;
-  return a.useEffect(() => {
-    o()
-  }, [o]), (0, l.jsxs)("div", {
+  return o.useEffect(() => {
+    a()
+  }, [a]), (0, l.jsxs)("div", {
     className: n,
     children: [(0, l.jsx)(b, {
       className: r

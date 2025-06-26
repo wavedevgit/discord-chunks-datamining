@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => H
 });
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(481060),
-  o = n(570140),
+  o = n(481060),
+  a = n(570140),
   s = n(384275),
   c = n(82906),
   u = n(763762),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(621853),
   _ = n(484459),
   y = n(131704),
-  x = n(881998),
-  C = n(984933),
+  C = n(881998),
+  x = n(984933),
   v = n(496675),
   j = n(594174),
   O = n(51144),
@@ -34,8 +34,8 @@ var r = n(255367),
   A = n(734386),
   w = n(184279),
   R = n(438306),
-  M = n(544142),
-  k = n(128557),
+  k = n(544142),
+  M = n(128557),
   D = n(981631),
   L = n(176505),
   U = n(388032),
@@ -46,15 +46,15 @@ function G(e) {
   let {
     canManageRoles: t,
     channel: n
-  } = e, i = t && (0, p.Yk)(n), a = (0, l.e7)([C.ZP], () => null != n.guild_id && n === C.ZP.getDefaultChannel(n.guild_id), [n]);
+  } = e, i = t && (0, p.Yk)(n), o = (0, l.e7)([x.ZP], () => null != n.guild_id && n === x.ZP.getDefaultChannel(n.guild_id), [n]);
   if ((0, h.Z)(n.id)) return null;
   if (n.isForumPost()) return (0, r.jsx)(S.Z, {
     channel: n
   });
-  if (y.Ec.has(n.type)) return (0, r.jsx)(M.Z, {
+  if (y.Ec.has(n.type)) return (0, r.jsx)(k.Z, {
     channel: n
   });
-  if (a) return (0, r.jsx)(k.Z, {
+  if (o) return (0, r.jsx)(M.Z, {
     channel: n
   });
   if (i) return (0, r.jsx)(A.Z, {
@@ -71,14 +71,14 @@ function H(e) {
     channel: p,
     showingBanner: h
   } = e, y = (0, d.ZP)(p), {
-    type: C
+    type: x
   } = p, S = (0, l.e7)([j.default], () => p.isPrivate() ? j.default.getUser(p.getRecipientId()) : null), A = O.ZP.useUserTag(S), {
     canManageRoles: R,
-    canReadMessageHistory: M
+    canReadMessageHistory: k
   } = (0, l.cj)([v.Z], () => ({
     canManageRoles: v.Z.can(D.Plq.MANAGE_ROLES, p),
     canReadMessageHistory: v.Z.can(D.Plq.READ_MESSAGE_HISTORY, p)
-  })), k = (0, l.e7)([b.Z], () => C === D.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, C]), {
+  })), M = (0, l.e7)([b.Z], () => x === D.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, x]), {
     systemDMRedesignEnabled: H
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
@@ -87,28 +87,28 @@ function H(e) {
   }), V = (0, u.Z)(null != (n = null == S ? void 0 : S.id) ? n : D.lds), {
     authorizedAppToken: z,
     authorizedAppsFetchState: W
-  } = (0, l.cj)([x.Z], () => {
+  } = (0, l.cj)([C.Z], () => {
     var e;
     return {
-      authorizedAppToken: null != V ? null == (e = x.Z.getApps()) ? void 0 : e.find(e => e.application.id === V.id) : void 0,
-      authorizedAppsFetchState: x.Z.getFetchState()
+      authorizedAppToken: null != V ? null == (e = C.Z.getApps()) ? void 0 : e.find(e => e.application.id === V.id) : void 0,
+      authorizedAppsFetchState: C.Z.getFetchState()
     }
   }), Y = c.Z.useExperiment({
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {
-      C === D.d4z.DM && null == k && null != S && o.Z.wait(() => (0, _.Z)(p.getRecipientId(), S.getAvatarURL(null, 80), {
+      x === D.d4z.DM && null == M && null != S && a.Z.wait(() => (0, _.Z)(p.getRecipientId(), S.getAvatarURL(null, 80), {
         withMutualGuilds: !0
       }))
-    }, [k, C, p, S]), i.useEffect(() => {
-      (null == S ? void 0 : S.bot) && W === x.M.NOT_FETCHED && s.Z.fetch()
+    }, [M, x, p, S]), i.useEffect(() => {
+      (null == S ? void 0 : S.bot) && W === C.M.NOT_FETCHED && s.Z.fetch()
     }, [null == S ? void 0 : S.bot, W]), p.isSystemDM()) return H ? (0, r.jsx)(w.Z, {
     channel: p
   }) : (0, r.jsx)(T.Z, {
     channel: p,
     children: U.intl.string(U.t.Rzvnio)
   });
-  if (C === D.d4z.DM) {
+  if (x === D.d4z.DM) {
     let e;
     return null != S && null != V ? null != z && (e = (0, r.jsxs)("div", {
       className: B.buttonContainer,
@@ -123,8 +123,8 @@ function H(e) {
         channel: p,
         oauth2Token: z
       }), Y && (0, r.jsx)(f.Z, {
-        buttonSize: a.PhG.SMALL,
-        color: a.zxk.Colors.PRIMARY,
+        buttonSize: o.PhG.SMALL,
+        color: o.zxk.Colors.PRIMARY,
         channel: p
       })]
     })) : e = (0, r.jsx)(E.Z, {
@@ -134,7 +134,7 @@ function H(e) {
     }), (0, r.jsxs)(T.Z, {
       channel: p,
       user: S,
-      children: [null != S && !S.isProvisional && (0, r.jsx)(a.X6q, {
+      children: [null != S && !S.isProvisional && (0, r.jsx)(o.X6q, {
         variant: "heading-xl/medium",
         className: F.marginBottom20,
         children: A
@@ -165,7 +165,7 @@ function H(e) {
       name: y
     })
   });
-  return M ? (0, r.jsx)(G, {
+  return k ? (0, r.jsx)(G, {
     channel: p,
     canManageRoles: R
   }) : (0, r.jsx)(I.ZP, {

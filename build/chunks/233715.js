@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => s
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(352172);
+  o = n.n(l),
+  a = n(352172);
 
 function s(e) {
   let {
@@ -20,7 +20,7 @@ function s(e) {
     null != u.current && clearTimeout(u.current)
   }), [l]), (0, r.jsx)("div", {
     "data-flash": s,
-    className: a()(o.flash, n),
+    className: o()(a.flash, n),
     children: t
   })
 }

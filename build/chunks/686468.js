@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => E
 });
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(692547),
   c = n(481060),
   u = n(884338),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(496675),
   _ = n(146085),
   y = n(979339),
-  x = n(643632),
-  C = n(388032),
+  C = n(643632),
+  x = n(388032),
   v = n(941188);
 
 function j(e) {
@@ -29,7 +29,7 @@ function j(e) {
     className: n
   } = e, i = c.S6n;
   return (0, r.jsx)(d.Z, {
-    iconContainerClassName: a()({
+    iconContainerClassName: o()({
       [v.continueIconContainer]: !1
     }),
     icon: (0, r.jsx)(i, {
@@ -40,8 +40,8 @@ function j(e) {
       width: 20
     }),
     color: s.Z.unsafe_rawColors.PRIMARY_700.css,
-    title: C.intl.string(C.t.jMLfp6),
-    description: C.intl.string(C.t["Vd/rER"]),
+    title: x.intl.string(x.t.jMLfp6),
+    description: x.intl.string(x.t["Vd/rER"]),
     onClick: t,
     className: n
   })
@@ -66,15 +66,15 @@ function O(e) {
       color: "header-secondary",
       children: function(e) {
         if (0 === e.length) return "";
-        if (1 === e.length) return C.intl.formatToPlainString(C.t["5ULgaW"], {
+        if (1 === e.length) return x.intl.formatToPlainString(x.t["5ULgaW"], {
           first: e[0].userNick
         });
-        if (2 === e.length) return C.intl.formatToPlainString(C.t.BHK0Oj, {
+        if (2 === e.length) return x.intl.formatToPlainString(x.t.BHK0Oj, {
           first: e[0].userNick,
           second: e[1].userNick
         });
         let t = e.length - 2;
-        return C.intl.formatToPlainString(C.t.T3MT4u, {
+        return x.intl.formatToPlainString(x.t.T3MT4u, {
           first: e[0].userNick,
           second: e[1].userNick,
           numOthers: t
@@ -88,9 +88,9 @@ function E(e) {
   let {
     channel: t,
     onContinueClick: n
-  } = e, l = (0, o.e7)([b.Z], () => b.Z.can(_.yP, t), [t]), s = t.guild_id, {
+  } = e, l = (0, a.e7)([b.Z], () => b.Z.can(_.yP, t), [t]), s = t.guild_id, {
     canCreateGuildEvent: u
-  } = (0, m.XJ)(t), d = (0, x.Z)(t.id), y = i.useRef(null);
+  } = (0, m.XJ)(t), d = (0, C.Z)(t.id), y = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: v.container,
     ref: y,
@@ -103,12 +103,12 @@ function E(e) {
         children: [(0, r.jsx)(c.X6q, {
           className: v.__invalid_title,
           variant: "heading-xxl/normal",
-          children: C.intl.string(C.t.QGnDLi)
+          children: x.intl.string(x.t.QGnDLi)
         }), (0, r.jsx)(c.Text, {
           tag: "div",
           className: v.subtitle,
           variant: "heading-lg/normal",
-          children: C.intl.string(C.t.djfK39)
+          children: x.intl.string(x.t.djfK39)
         })]
       }), d ? null : (0, r.jsx)(h.Z, {
         channelId: t.id
@@ -119,7 +119,7 @@ function E(e) {
         className: v.eventPrompt,
         guildId: s
       }) : null, l ? (0, r.jsx)(j, {
-        className: a()({
+        className: o()({
           [v.eventPrompt]: !0
         }),
         onClick: n

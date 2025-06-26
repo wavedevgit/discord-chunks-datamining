@@ -1,13 +1,13 @@
 /**
   Module ID: 93288
-  Original File Name: d9a5b527d377081d
+  Original File Name: 75c2c76c29124fc8
 **/
 .header__19497 {
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-bottom: var(--spacing-12);
-    padding-top: var(--spacing-24)
+    padding-bottom: var(--space-12);
+    padding-top: var(--space-24)
 }
 
 .headerImage__19497 {
@@ -19,7 +19,7 @@
 
 .title__19497 {
     font-weight: var(--font-weight-bold);
-    padding-bottom: var(--spacing-12)
+    padding-bottom: var(--space-12)
 }
 
 .subtitle__19497,.title__19497 {
@@ -32,33 +32,33 @@
 
 .description__19497 {
     color: var(--text-default);
-    margin-top: var(--spacing-8);
+    margin-top: var(--space-8);
     text-align: center
 }
 
 .modalCloseButton__19497 {
     position: absolute;
-    right: var(--spacing-16);
-    top: var(--spacing-16)
+    right: var(--space-16);
+    top: var(--space-16)
 }
 
 .content__19497 {
-    padding-bottom: var(--spacing-16)
+    padding-bottom: var(--space-16)
 }
 
 .help__19497 {
-    margin-bottom: var(--spacing-8);
-    margin-top: var(--spacing-8)
+    margin-bottom: var(--space-8);
+    margin-top: var(--space-8)
 }
 
 .password__19497 {
-    margin-top: var(--spacing-16)
+    margin-top: var(--space-16)
 }
 
 .buttons__19497 {
     display: flex;
     flex-direction: column;
-    margin-top: var(--spacing-24)
+    margin-top: var(--space-24)
 }
 
-/*# sourceMappingURL=d9a5b527d377081d.css.map*/
+/*# sourceMappingURL=75c2c76c29124fc8.css.map*/

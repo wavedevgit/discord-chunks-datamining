@@ -1,9 +1,9 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  lY: () => l
+  lY: () => i
 });
-var i = n(388032);
+var l = n(388032);
 
-function l(e) {
-  return e > 0 ? "1-".concat(e) : i.intl.string(i.t.zMNEiI)
+function i(e) {
+  return e > 0 ? "1-".concat(e) : l.intl.string(l.t.zMNEiI)
 }

@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   m: () => b
 }), n(388685);
 var r = n(73800),
   i = n(707019),
   l = n.n(i),
-  a = n(881052),
-  o = n(726521),
+  o = n(881052),
+  a = n(726521),
   s = n(621853),
   c = n(484459),
   u = n(695346),
@@ -23,16 +23,16 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, _ = (0, f.Z)(), [y, x] = r.useState(!1), [C, v] = r.useState(!1), [j, O] = r.useState(!1), [E, I] = r.useState(!1), [S, P] = r.useState(!1), Z = y || C || j, N = r.useCallback(async e => {
+  } = e, _ = (0, f.Z)(), [y, C] = r.useState(!1), [x, v] = r.useState(!1), [j, O] = r.useState(!1), [E, I] = r.useState(!1), [S, P] = r.useState(!1), Z = y || x || j, N = r.useCallback(async e => {
     if (!Z) {
-      x(!0);
+      C(!0);
       try {
         await (0, p.e4)(e), I(!0), null == n || n()
       } catch (t) {
-        let e = new a.Hx(t);
+        let e = new o.Hx(t);
         null == b || b(e)
       } finally {
-        x(!1)
+        C(!1)
       }
     }
   }, [Z, n, b]), T = r.useCallback(async e => {
@@ -41,7 +41,7 @@ function b(e) {
       try {
         await (0, p.gN)(e), P(!0), null == i || i()
       } catch (t) {
-        let e = new a.Hx(t);
+        let e = new o.Hx(t);
         null == b || b(e)
       } finally {
         v(!1)
@@ -55,7 +55,7 @@ function b(e) {
       for (let e of t) await (0, p.r_)(e);
       P(!0), null == i || i()
     } catch (t) {
-      let e = new a.Hx(t);
+      let e = new o.Hx(t);
       null == b || b(e)
     } finally {
       v(!1)
@@ -99,7 +99,7 @@ function b(e) {
     })
   }, [N, Z, t]), R = r.useCallback((e, t, n) => {
     let r = (r, i) => {
-        i && u.kJ.updateSetting(r), r && null != t && (0, o.zd)(t), N(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
+        i && u.kJ.updateSetting(r), r && null != t && (0, a.zd)(t), N(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
           action: m.cl.ACCEPT_HAM_CONFIRMATION_PROMPT,
           channel_id: e.id,
           is_dont_show_again_checked: i,
@@ -124,7 +124,7 @@ function b(e) {
     rejectAll: A,
     markAsNotSpam: R,
     isAcceptLoading: y,
-    isRejectLoading: C,
+    isRejectLoading: x,
     isUserProfileLoading: j,
     isOptimisticAccepted: E,
     isOptimisticRejected: S

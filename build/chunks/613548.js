@@ -1,13 +1,13 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(539854);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(392711),
-  s = n.n(o),
+  o = n.n(l),
+  a = n(392711),
+  s = n.n(a),
   c = n(442837),
   u = n(481060),
   d = n(475179),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(2818),
   _ = n(954551),
   y = n(44136),
-  x = n(651183),
-  C = n(853476),
+  C = n(651183),
+  x = n(853476),
   v = n(390322),
   j = n(616286),
   O = n(975146),
@@ -65,7 +65,7 @@ function R(e, t) {
   }), e
 }
 
-function M(e) {
+function k(e) {
   let {
     channelId: t,
     guildId: n
@@ -81,7 +81,7 @@ function M(e) {
         username: e.user.username
       }),
       children: l => (0, r.jsx)(E.ZP, R(w({}, l), {
-        className: a()(A.speaker, {
+        className: o()(A.speaker, {
           [A.last]: t === i.length - 1
         }),
         user: e.user,
@@ -93,12 +93,12 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     channel: t,
     isChatOpen: n
   } = e, l = i.useRef(null), {
-    analyticsLocations: o
+    analyticsLocations: a
   } = (0, h.ZP)(p.Z.VOICE_CHANNEL_HEADER), s = t.id, {
     voiceParticipantsHidden: y,
     selectedParticipant: E,
@@ -109,7 +109,7 @@ function k(e) {
     voiceParticipantsHidden: S.Z.getVoiceParticipantsHidden(s),
     userParticipantCount: S.Z.getUserParticipantCount(s),
     participantsListOpen: S.Z.getParticipantsListOpen(s)
-  }), [s]), k = t.isGuildVoice() && !n, {
+  }), [s]), M = t.isGuildVoice() && !n, {
     hasParticipantsPanel: D
   } = (0, Z.Z)({
     location: "ChannelCallHeaderToolbar"
@@ -119,13 +119,13 @@ function k(e) {
   } = b.Z.useExperiment({
     location: "ChannelCallHeaderToolbar"
   }), F = [];
-  return y && F.push((0, r.jsx)(M, {
+  return y && F.push((0, r.jsx)(k, {
     channelId: s,
     guildId: t.guild_id
   }, "current-speaker")), F.push((0, r.jsx)(m.Z, {
     className: A.button,
     channelId: s
-  }, "clips-enabled-indicator")), (null == E ? void 0 : E.type) === N.fO.STREAM && (F.push((0, r.jsx)(x.Z, {
+  }, "clips-enabled-indicator")), (null == E ? void 0 : E.type) === N.fO.STREAM && (F.push((0, r.jsx)(C.Z, {
     className: A.button,
     participant: E
   }, "warning")), F.push((0, r.jsx)(g.Z, {
@@ -134,7 +134,7 @@ function k(e) {
     participant: E,
     showQuality: !0,
     premiumIndicator: !1
-  }, "live-indicator"))), (null == E ? void 0 : E.type) === N.fO.USER && F.push((0, r.jsx)(C.Z, {
+  }, "live-indicator"))), (null == E ? void 0 : E.type) === N.fO.USER && F.push((0, r.jsx)(x.Z, {
     className: A.button,
     userId: E.id
   }, "video-warning")), y && !D && F.push((0, r.jsx)(u.yRy, {
@@ -160,18 +160,18 @@ function k(e) {
   }, "call-members-popout")), U && !B && F.push((0, r.jsx)(_.Z, {
     className: A.button
   }, "for-later")), L && F.push((0, r.jsx)(O.Z, {
-    className: a()(A.button, {
+    className: o()(A.button, {
       [A.lastButton]: n
     }),
     onClick: () => d.Z.toggleParticipantsList(t.id, !T)
-  }, "participants-list-button")), k && F.push((0, r.jsx)(j.T, {
+  }, "participants-list-button")), M && F.push((0, r.jsx)(j.T, {
     channelId: t.id,
-    className: a()(A.button, {
+    className: o()(A.button, {
       [A.lastButton]: T
     }),
     disabled: n
   }, "chat-spacer")), (0, r.jsx)(h.Gt, {
-    value: o,
+    value: a,
     children: F
   })
 }

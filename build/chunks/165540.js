@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => S
 });
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(704215),
   c = n(481060),
   u = n(566620),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(307508),
   _ = n(605236),
   y = n(291407),
-  x = n(685006),
-  C = n(61356),
+  C = n(685006),
+  x = n(61356),
   v = n(314734),
   j = n(921944),
   O = n(388032),
@@ -30,27 +30,27 @@ let I = i.forwardRef(function(e, t) {
     let {
       type: f,
       animateRef: m
-    } = e, b = (0, o.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === f), {
+    } = e, b = (0, a.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === f), {
       Component: y,
-      events: x,
-      play: C
+      events: C,
+      play: x
     } = (0, g.Z)("ChannelAppLauncherButton");
     i.useImperativeHandle(m, () => ({
       animate: () => {
-        x.onMouseEnter()
+        C.onMouseEnter()
       }
-    }), [x]);
+    }), [C]);
     let I = i.useCallback(() => {
         b ? d.yT(h.ti.DISMISSED) : ((0, _.EW)(s.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
           dismissAction: j.L.TAKE_ACTION
-        }), d.__(h._b.TEXT, f), u.ux()), C()
-      }, [b, f, C]),
+        }), d.__(h._b.TEXT, f), u.ux()), x()
+      }, [b, f, x]),
       S = (0, r.jsx)(y, {
         size: "refresh_sm",
         color: "currentColor"
       });
     return (0, r.jsx)("div", {
-      className: a()(E.buttonContainer, v.t4),
+      className: o()(E.buttonContainer, v.t4),
       ref: t,
       children: (0, r.jsx)(c.zxk, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -73,7 +73,7 @@ let I = i.forwardRef(function(e, t) {
         look: c.zxk.Looks.BLANK,
         size: c.zxk.Sizes.NONE,
         tabIndex: 0,
-        className: a()(E.button, {
+        className: o()(E.button, {
           [E.buttonActive]: b
         }),
         onClick: I,
@@ -89,7 +89,7 @@ let I = i.forwardRef(function(e, t) {
           }
         },
         innerClassName: E.buttonContents
-      }, x), l = l = {
+      }, C), l = l = {
         children: S
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
@@ -108,15 +108,15 @@ let I = i.forwardRef(function(e, t) {
       channel: t,
       type: n,
       animateRef: l,
-      entryPointCommandButtonRef: a
+      entryPointCommandButtonRef: o
     } = e, s = i.useRef(null), c = (0, m.R)({
       channel: t,
       chatInputType: n
-    }), u = (0, C.Z)({
+    }), u = (0, x.Z)({
       type: n
-    }), d = (0, b.Q)(t.id), h = (0, o.e7)([p.Z], () => p.Z.appDMChannelsWithFailedLoads().has(t.id)), {
+    }), d = (0, b.Q)(t.id), h = (0, a.e7)([p.Z], () => p.Z.appDMChannelsWithFailedLoads().has(t.id)), {
       visible: g
-    } = (0, x.xL)();
+    } = (0, C.xL)();
     return c ? (0, r.jsxs)("div", {
       className: E.channelAppLauncher,
       children: [(0, r.jsx)(y.Z, {
@@ -130,7 +130,7 @@ let I = i.forwardRef(function(e, t) {
           animateRef: l
         })
       }), u ? (0, r.jsx)(f.Z, {
-        positionTargetRef: d && !h && g ? a : s,
+        positionTargetRef: d && !h && g ? o : s,
         channel: t
       }) : null]
     }) : null

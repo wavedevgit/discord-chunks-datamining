@@ -1,6 +1,6 @@
 /**
   Module ID: 1906
-  Original File Name: 1373b169ab004e94
+  Original File Name: c14eebf7ff33ebec
 **/
 .container__26abc {
     background-color: var(--background-surface-high);
@@ -21,7 +21,7 @@
 }
 
 .username__26abc {
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .avatar__26abc {
@@ -76,7 +76,7 @@
 }
 
 .description_ed987b {
-    margin-top: var(--spacing-8);
+    margin-top: var(--space-8);
     text-align: center
 }
 
@@ -84,4 +84,4 @@
     background-color: var(--background-base-lowest)
 }
 
-/*# sourceMappingURL=1373b169ab004e94.css.map*/
+/*# sourceMappingURL=c14eebf7ff33ebec.css.map*/

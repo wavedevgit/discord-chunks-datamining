@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => d
 });
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(481060),
+  o = n.n(l),
+  a = n(481060),
   s = n(194082),
   c = n(14338),
   u = n(76692);
@@ -21,22 +21,22 @@ let d = i.memo(function(e) {
     channel: h,
     isStreamLive: f
   } = e;
-  return (0, r.jsxs)(o.P3F, {
+  return (0, r.jsxs)(a.P3F, {
     onClick: i,
-    className: a()(u.container, l),
-    children: [null == p ? (0, r.jsx)(o.BFJ, {
+    className: o()(u.container, l),
+    children: [null == p ? (0, r.jsx)(a.BFJ, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
       className: u.micIcon
-    }) : (0, r.jsx)(o.S6n, {
+    }) : (0, r.jsx)(a.S6n, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
       className: u.micIcon
-    }), (0, r.jsxs)(o.Text, {
+    }), (0, r.jsxs)(a.Text, {
       color: "header-primary",
       variant: "text-md/semibold",
       className: u.text,
@@ -46,12 +46,12 @@ let d = i.memo(function(e) {
         channel: h,
         speakers: p
       }), f && (0, r.jsx)(s.ZP, {})]
-    }), (0, r.jsx)(o.CJ0, {
+    }), (0, r.jsx)(a.CJ0, {
       size: "custom",
       color: "currentColor",
       width: 20,
       height: 20,
-      className: a()(u.downIcon, {
+      className: o()(u.downIcon, {
         [u.upIcon]: d
       })
     })]

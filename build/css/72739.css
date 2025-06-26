@@ -1,6 +1,6 @@
 /**
   Module ID: 72739
-  Original File Name: f4058a32aba84316
+  Original File Name: a159b726319f23b7
 **/
 .clipItem__1d12e {
     background: var(--background-modifier-hover);
@@ -97,7 +97,7 @@
 .clipTitleInputPlaceholder__1d12e {
     align-items: center;
     display: flex;
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .clipMetadata__1d12e,.clipName__1d12e,.clipTitle__1d12e {
@@ -262,16 +262,16 @@
 }
 
 .clipGrid__578ba {
-    padding: var(--spacing-4) var(--spacing-24) var(--spacing-8)
+    padding: var(--space-4) var(--space-24) var(--space-8)
 }
 
 .clipsRow__578ba {
     display: grid;
-    grid-gap: var(--spacing-12);
+    grid-gap: var(--space-12);
     grid-auto-rows: minmax(-webkit-min-content,-webkit-max-content);
     grid-auto-rows: minmax(min-content,max-content);
     grid-template-columns: repeat(3,308px);
-    padding-bottom: var(--spacing-8)
+    padding-bottom: var(--space-8)
 }
 
 .closeIcon__578ba {
@@ -288,4 +288,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=f4058a32aba84316.css.map*/
+/*# sourceMappingURL=a159b726319f23b7.css.map*/

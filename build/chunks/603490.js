@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => c
 });
 var r = n(255367),
   i = n(73800),
   l = n(873546),
-  a = n(481060),
-  o = n(373662),
+  o = n(481060),
+  a = n(373662),
   s = n(388032);
 
 function c(e) {
@@ -17,9 +17,9 @@ function c(e) {
     renderEmojiPicker: u,
     shouldShow: d
   } = e, p = i.useRef(null);
-  return (0, r.jsx)(a.yRy, {
+  return (0, r.jsx)(o.yRy, {
     targetElementRef: p,
-    animation: a.yRy.Animation.FADE,
+    animation: o.yRy.Animation.FADE,
     renderPopout: e => {
       let {
         closePopout: r
@@ -31,10 +31,10 @@ function c(e) {
     position: l.tq ? "top" : "left",
     align: l.tq ? "center" : "top",
     clickTrap: !0,
-    children: () => (0, r.jsx)(o.sF, {
+    children: () => (0, r.jsx)(a.sF, {
       ref: p,
       label: s.intl.string(s.t.lfIHs7),
-      icon: a.EO4,
+      icon: o.EO4,
       onClick: c
     }, "add-reaction")
   })

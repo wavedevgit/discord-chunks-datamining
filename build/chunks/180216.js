@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => b
 }), n(388685), n(953529);
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(481060),
-  o = n(592125),
+  o = n(481060),
+  a = n(592125),
   s = n(430824),
   c = n(584825),
   u = n(406074),
@@ -24,7 +24,7 @@ function b(e) {
   } = e, b = (0, u.C)({
     guildId: t,
     channelId: n
-  }), _ = (0, c.GG)(t), y = (0, c.YB)(t), x = (0, l.e7)([s.Z], () => s.Z.getGuild(t), [t]), C = null == x ? void 0 : x.name, v = (0, l.e7)([o.Z], () => o.Z.getChannel(n)), j = i.useMemo(() => {
+  }), _ = (0, c.GG)(t), y = (0, c.YB)(t), C = (0, l.e7)([s.Z], () => s.Z.getGuild(t), [t]), x = null == C ? void 0 : C.name, v = (0, l.e7)([a.Z], () => a.Z.getChannel(n)), j = i.useMemo(() => {
     let e = {};
     for (let t of _)
       for (let n of t.subscription_listings_ids) e[n] = t.id;
@@ -34,21 +34,21 @@ function b(e) {
     guildId: t,
     location: f.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL,
     relevantSubscriptionListingIds: b.map(e => e.id)
-  }), null == x) ? (0, r.jsx)("div", {
+  }), null == C) ? (0, r.jsx)("div", {
     className: g.__invalid_spinnerContainer,
-    children: (0, r.jsx)(a.$jN, {
+    children: (0, r.jsx)(o.$jN, {
       className: g.__invalid_spinner
     })
-  }) : (0, r.jsxs)(a.w0Z, {
+  }) : (0, r.jsxs)(o.w0Z, {
     className: g.pageContainer,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(o.X6q, {
       variant: "heading-xl/semibold",
       className: g.joinCtaTitle,
       children: m.intl.format(m.t.xHMpys, {
-        serverName: C,
+        serverName: x,
         channelName: null == v ? void 0 : v.name
       })
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       className: g.joinCtaSubtitle,
       variant: "text-md/normal",
       color: "header-secondary",

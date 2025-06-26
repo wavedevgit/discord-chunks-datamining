@@ -1,10 +1,10 @@
 /**
   Module ID: 13965
-  Original File Name: 019a2a886b8fc95d
+  Original File Name: f1c92f0d88c02d47
 **/
 .container__6f9f7 {
     display: flex;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .tooltipContainer__6f9f7 {
@@ -49,8 +49,8 @@
 
 .close__8fcbd {
     position: absolute;
-    right: var(--spacing-16);
-    top: var(--spacing-16)
+    right: var(--space-16);
+    top: var(--space-16)
 }
 
 .modal__8fcbd {
@@ -72,20 +72,20 @@
 
 .contentContainer__8fcbd {
     align-items: center;
-    padding: var(--spacing-24) var(--spacing-48);
+    padding: var(--space-24) var(--space-48);
     text-align: center
 }
 
 .description__8fcbd {
-    margin-top: var(--spacing-8)
+    margin-top: var(--space-8)
 }
 
 .button__8fcbd {
-    margin-top: var(--spacing-16)
+    margin-top: var(--space-16)
 }
 
 .image__8fcbd {
     height: 228px
 }
 
-/*# sourceMappingURL=019a2a886b8fc95d.css.map*/
+/*# sourceMappingURL=f1c92f0d88c02d47.css.map*/

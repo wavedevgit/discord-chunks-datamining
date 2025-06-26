@@ -1,13 +1,13 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(512722),
-  s = n.n(o),
+  o = n.n(l),
+  a = n(512722),
+  s = n.n(a),
   c = n(442837),
   u = n(481060),
   d = n(239091),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(670188),
   _ = n(271383),
   y = n(496675),
-  x = n(158776),
-  C = n(471253),
+  C = n(158776),
+  x = n(471253),
   v = n(431328),
   j = n(145834),
   O = n(590415),
@@ -72,7 +72,7 @@ let A = i.memo(function(e) {
     });
     return (0, r.jsxs)(m.ZP, {
       toolbar: i,
-      className: a()(Z.headerContainer, {
+      className: o()(Z.headerContainer, {
         [Z.chatOpen]: n
       }),
       children: [(0, r.jsx)(m.ZP.Icon, {
@@ -88,8 +88,8 @@ let A = i.memo(function(e) {
     let {
       channel: t,
       participant: l,
-      tempDisableOnInit: o = !1
-    } = e, m = i.useRef(null), [y, v] = i.useState(o);
+      tempDisableOnInit: a = !1
+    } = e, m = i.useRef(null), [y, v] = i.useState(a);
     (0, h.ZP)(() => {
       if (!y) return;
       let e = setTimeout(() => v(!1), 1e3);
@@ -100,21 +100,21 @@ let A = i.memo(function(e) {
     let {
       isMobile: I,
       status: S
-    } = (0, c.cj)([x.Z], () => ({
-      isMobile: x.Z.isMobileOnline(l.user.id),
-      status: x.Z.getStatus(l.user.id, E)
+    } = (0, c.cj)([C.Z], () => ({
+      isMobile: C.Z.isMobileOnline(l.user.id),
+      status: C.Z.getStatus(l.user.id, E)
     })), A = (0, c.e7)([_.ZP], () => _.ZP.getMember(E, l.user.id)), w = (0, g.X7)(t.guild_id, null == A ? void 0 : A.userId, null == A ? void 0 : A.colorStrings), R = i.useMemo(() => ({
       [E]: [l.user.id]
     }), [E, l.user.id]);
     (0, f.$)(R);
-    let M = l.rtsState === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+    let k = l.rtsState === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 
-    function k() {
-      (0, C.DT)(t, l.user.id, !1)
+    function M() {
+      (0, x.DT)(t, l.user.id, !1)
     }
 
     function D() {
-      (0, C.DT)(t, l.user.id, !0)
+      (0, x.DT)(t, l.user.id, !0)
     }
     let L = e => {
       (0, d.jW)(e, async () => {
@@ -168,13 +168,13 @@ let A = i.memo(function(e) {
           }))
         }
       }), (0, r.jsx)(u.ua7, {
-        text: M ? P.intl.string(P.t.h9rsTU) : P.intl.string(P.t.f0T7hI),
+        text: k ? P.intl.string(P.t.h9rsTU) : P.intl.string(P.t.f0T7hI),
         children: e => (0, r.jsx)(u.zxk, T(N({}, e), {
           innerClassName: Z.buttonContainer,
           look: u.zxk.Looks.BLANK,
           size: u.zxk.Sizes.NONE,
-          onClick: k,
-          disabled: M || y,
+          onClick: M,
+          disabled: k || y,
           children: (0, r.jsx)(u.Lrb, {
             size: "xs",
             color: "currentColor"
@@ -183,7 +183,7 @@ let A = i.memo(function(e) {
       }), (0, r.jsx)(u.ua7, {
         text: P.intl.string(P.t.moABMz),
         children: e => (0, r.jsx)(u.zxk, T(N({}, e), {
-          innerClassName: a()(Z.buttonContainer, Z.buttonMargin),
+          innerClassName: o()(Z.buttonContainer, Z.buttonMargin),
           look: u.zxk.Looks.BLANK,
           size: u.zxk.Sizes.NONE,
           onClick: D,
@@ -206,7 +206,7 @@ let A = i.memo(function(e) {
       children: P.intl.string(P.t.GYCh0d)
     })
   }),
-  M = i.memo(function() {
+  k = i.memo(function() {
     return (0, r.jsxs)("div", {
       className: Z.emptyStateContainer,
       children: [(0, r.jsx)(I.Z, {}), (0, r.jsx)(u.Text, {
@@ -223,14 +223,14 @@ let A = i.memo(function(e) {
     })
   });
 
-function k(e) {
+function M(e) {
   let {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: i
-  } = e, l = (0, v.Fd)(t.id), o = [+!!(0, c.e7)([y.Z], () => y.Z.can(S.Pl.MANAGE_CHANNELS, t) || y.Z.can(S.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
+  } = e, l = (0, v.Fd)(t.id), a = [+!!(0, c.e7)([y.Z], () => y.Z.can(S.Pl.MANAGE_CHANNELS, t) || y.Z.can(S.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
-    className: a()(Z.container, {
+    className: o()(Z.container, {
       [Z.chatOpen]: i
     }),
     children: [(0, r.jsx)(A, {
@@ -238,7 +238,7 @@ function k(e) {
       chatOpen: i
     }), (0, r.jsx)(u.aVo, {
       className: Z.contentContainer,
-      sections: o,
+      sections: a,
       sectionHeight: function(e) {
         return 40 * (1 === e)
       },
@@ -263,7 +263,7 @@ function k(e) {
               channel: t
             }, "rts-toggle");
           case 1: {
-            if (0 === l.length) return (0, r.jsx)(M, {}, "participants-empty");
+            if (0 === l.length) return (0, r.jsx)(k, {}, "participants-empty");
             let e = l[i];
             return (0, r.jsx)(w, {
               channel: t,

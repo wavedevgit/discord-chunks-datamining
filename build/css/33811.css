@@ -1,6 +1,6 @@
 /**
   Module ID: 33811
-  Original File Name: 4aae9fb1b7217116
+  Original File Name: c5e4457db1ef1fb3
 **/
 .header__11268 {
     justify-content: space-between
@@ -16,7 +16,7 @@
 
 .footer__11268 {
     align-items: center;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .root__11268 {
@@ -25,4 +25,4 @@
     min-width: fit-content
 }
 
-/*# sourceMappingURL=4aae9fb1b7217116.css.map*/
+/*# sourceMappingURL=c5e4457db1ef1fb3.css.map*/

@@ -1,13 +1,13 @@
 /**
   Module ID: 47253
-  Original File Name: 7d6fc9a2f9902018
+  Original File Name: 0bd827a87f00e962
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
     background: linear-gradient(90deg,#9b1da5,#1e2353 120%);
     border-radius: var(--radius-sm);
     display: flex;
-    margin-bottom: var(--spacing-16);
+    margin-bottom: var(--space-16);
     padding: 2px
 }
 
@@ -16,7 +16,7 @@
     background: var(--background-base-low);
     border-radius: calc(var(--radius-sm) - 2px);
     display: flex;
-    padding: var(--spacing-12) var(--spacing-16)
+    padding: var(--space-12) var(--space-16)
 }
 
 .svgCopy__8f49b {
@@ -348,7 +348,7 @@
 }
 
 .closeInner_e50a4d {
-    height: var(--spacing-24)
+    height: var(--space-24)
 }
 
 .premiumBrandRefreshHeader_e50a4d {
@@ -356,14 +356,14 @@
     background-color: var(--background-base-lower);
     display: flex;
     justify-content: space-between;
-    padding: var(--spacing-24) var(--spacing-16) 0
+    padding: var(--space-24) var(--space-16) 0
 }
 
 .skuSelectModalContent_e50a4d.premiumBrandRefreshContent_e50a4d.premiumBrandRefreshContent_e50a4d {
     background-color: var(--background-base-lower);
     border-radius: var(--radius-md);
     height: unset;
-    padding: var(--spacing-24) var(--spacing-16) var(--spacing-16) var(--spacing-16);
+    padding: var(--space-24) var(--space-16) var(--space-16) var(--space-16);
     width: 422px
 }
 
@@ -646,4 +646,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=7d6fc9a2f9902018.css.map*/
+/*# sourceMappingURL=0bd827a87f00e962.css.map*/

@@ -1,4 +1,4 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => c
 });
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(50493),
-  a = n(388032),
-  o = n(792461),
+  o = n(388032),
+  a = n(792461),
   s = n(12740);
 
 function c(e) {
@@ -20,7 +20,7 @@ function c(e) {
     children: [(0, r.jsx)("div", {
       className: s.headerTitle,
       children: (0, r.jsxs)(i.P3F, {
-        className: o.backButton,
+        className: a.backButton,
         onClick: () => null == t ? void 0 : t(n),
         children: [(0, r.jsx)(i.whL, {
           size: "custom",
@@ -28,13 +28,13 @@ function c(e) {
           height: 20
         }), (0, r.jsx)(i.X6q, {
           variant: "heading-md/semibold",
-          children: a.intl.string(a.t["13/7kZ"])
+          children: o.intl.string(o.t["13/7kZ"])
         })]
       })
     }), (0, r.jsx)(i.M2$, {
       shortcut: "esc",
-      keyClassName: o.keyComboInner,
-      className: o.keyComboContainer
+      keyClassName: a.keyComboInner,
+      className: a.keyComboContainer
     })]
   })
 }

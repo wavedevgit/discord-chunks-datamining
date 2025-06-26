@@ -1,9 +1,9 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => y
 }), n(388685), n(539854);
-var r, i, l, a = n(442837),
-  o = n(846519),
+var r, i, l, o = n(442837),
+  a = n(846519),
   s = n(570140),
   c = n(278323),
   u = n(158776),
@@ -14,7 +14,7 @@ function p(e, t) {
 }
 let h = {},
   f = {},
-  m = new o.sW(3e3, function() {
+  m = new a.sW(3e3, function() {
     let e = [];
     for (let [t, n] of Object.entries(f)) e.push(n), h[t] = n, delete f[t];
     0 !== e.length && c.Z.subscribeActivities(e)
@@ -28,7 +28,7 @@ function g(e) {
 function b() {
   h = {}, f = {}
 }
-class _ extends(r = a.ZP.Store) {
+class _ extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(u.Z)
   }
@@ -56,8 +56,8 @@ let y = new _(s.Z, {
       userId: r,
       applicationId: i,
       partyId: l,
-      messageId: a,
-      channelId: o,
+      messageId: o,
+      channelId: a,
       inviteTime: s
     } = t;
     if (g(t) || s + d.$y < Date.now()) return n;
@@ -67,8 +67,8 @@ let y = new _(s.Z, {
       userId: r,
       applicationId: i,
       partyId: l,
-      messageId: a,
-      channelId: o,
+      messageId: o,
+      channelId: a,
       expiresAt: u
     }, m.delay(), !0
   },

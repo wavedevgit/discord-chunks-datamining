@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: f9c23a13cd7525b6
+  Original File Name: 9e855683186b878c
 **/
 .container__74da2 {
     align-items: center;
@@ -286,7 +286,7 @@
     align-items: center;
     display: flex;
     justify-content: start;
-    padding: var(--spacing-16);
+    padding: var(--space-16);
     width: 100%
 }
 
@@ -313,7 +313,7 @@
 }
 
 .titleContainer__93f15 {
-    margin-left: var(--spacing-8)
+    margin-left: var(--space-8)
 }
 
 .recentsIcon_c99c29 {
@@ -1758,8 +1758,8 @@
 
 .container__81977 {
     background: var(--background-secondary-alt);
-    padding: var(--spacing-16);
-    padding-top: var(--spacing-24);
+    padding: var(--space-16);
+    padding-top: var(--space-24);
     position: relative;
     text-align: center
 }
@@ -1771,13 +1771,13 @@
 .buttonClose__81977 {
     line-height: 0;
     position: absolute;
-    right: var(--spacing-8);
-    top: var(--spacing-8)
+    right: var(--space-8);
+    top: var(--space-8)
 }
 
 .buttonCTA__81977 {
     display: inline-block;
-    margin-top: var(--spacing-16)
+    margin-top: var(--space-16)
 }
 
 .dismissIcon__81977 {
@@ -1791,7 +1791,7 @@
 .errorWarningIcon__81977 {
     color: var(--status-warning);
     height: 18px;
-    margin-right: var(--spacing-4);
+    margin-right: var(--space-4);
     vertical-align: bottom;
     width: 18px
 }
@@ -1880,7 +1880,7 @@
 }
 
 .header_c2b8c9 {
-    margin-top: var(--spacing-16)
+    margin-top: var(--space-16)
 }
 
 .nitroWheel_c2b8c9 {
@@ -2921,7 +2921,7 @@
 .userPreview_b8dbac {
     display: flex;
     flex-direction: column;
-    margin-right: var(--spacing-16);
+    margin-right: var(--space-16);
     min-width: 25%;
     overflow: hidden
 }
@@ -2936,7 +2936,7 @@
 .userContainerWithPreview_b8dbac {
     align-items: center;
     display: flex;
-    gap: var(--spacing-8);
+    gap: var(--space-8);
     justify-content: flex-start
 }
 
@@ -2968,7 +2968,7 @@
 
 .messagePreview_b8dbac {
     display: flex;
-    padding-top: var(--spacing-4)
+    padding-top: var(--space-4)
 }
 
 .timestampWithPreview_b8dbac {
@@ -2979,8 +2979,8 @@
 .mutualGuildsContainer_b8dbac {
     align-items: center;
     display: flex;
-    gap: var(--spacing-4);
-    padding-top: var(--spacing-4)
+    gap: var(--space-4);
+    padding-top: var(--space-4)
 }
 
 .mutualGuilds_b8dbac {
@@ -3952,7 +3952,7 @@
 .emptyStateContainer_c7ea19 {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-24)
+    gap: var(--space-24)
 }
 
 .spamButton_c7ea19 {
@@ -4088,8 +4088,8 @@
 
 .viewSpamButton__5ec2f {
     align-self: start;
-    margin: 0 var(--spacing-24);
-    padding: var(--spacing-4) var(--spacing-8);
+    margin: 0 var(--space-24);
+    padding: var(--space-4) var(--space-8);
     padding-left: 0
 }
 
@@ -4146,7 +4146,7 @@
 
 .inviteToolbar__133bf {
     display: flex;
-    padding-right: var(--spacing-8)
+    padding-right: var(--space-8)
 }
 
 @media (max-width:940px) {
@@ -6805,7 +6805,7 @@ html .tabBadge__35e86 {
 
 .confetti__35e86 {
     height: 100%;
-    left: var(--spacing-8);
+    left: var(--space-8);
     pointer-events: none;
     position: absolute;
     top: 0;
@@ -8344,15 +8344,15 @@ html .tabBadge__35e86 {
 .container_f4e6be {
     background-color: var(--background-base-lower);
     border-radius: 8px;
-    padding: var(--spacing-16)
+    padding: var(--space-16)
 }
 
 .title_f4e6be {
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .description_f4e6be {
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--space-16)
 }
 
 .safetyFlow__300a2 {
@@ -8372,11 +8372,11 @@ html .tabBadge__35e86 {
 }
 
 .body__300a2,.header__300a2 {
-    padding: var(--spacing-16)
+    padding: var(--space-16)
 }
 
 .error__300a2 {
-    margin-top: var(--spacing-8)
+    margin-top: var(--space-8)
 }
 
 .verification_dede4b {
@@ -8522,4 +8522,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=f9c23a13cd7525b6.css.map*/
+/*# sourceMappingURL=9e855683186b878c.css.map*/

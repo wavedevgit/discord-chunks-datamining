@@ -1,6 +1,6 @@
 /**
   Module ID: 11678
-  Original File Name: 1f4fb250e23ef6a7
+  Original File Name: e62eb5612afbe251
 **/
 .scroller__95bea {
     display: flex;
@@ -642,9 +642,9 @@
     border-bottom: 1px solid var(--border-subtle);
     border-color: var(--border-faint);
     display: flex;
-    gap: var(--spacing-16);
-    margin: 0 var(--spacing-16);
-    padding: var(--spacing-16) 0;
+    gap: var(--space-16);
+    margin: 0 var(--space-16);
+    padding: var(--space-16) 0;
     position: relative
 }
 
@@ -661,9 +661,9 @@
     bottom: 0;
     content: "";
     height: 1px;
-    left: calc(var(--spacing-16) + var(--spacing-24));
+    left: calc(var(--space-16) + var(--space-24));
     position: absolute;
-    right: calc(var(--spacing-16)*-1)
+    right: calc(var(--space-16)*-1)
 }
 
 .row__19fd1:last-child {
@@ -676,8 +676,8 @@
 }
 
 .icon__19fd1,.iconContainer__19fd1 {
-    height: var(--spacing-24);
-    width: var(--spacing-24)
+    height: var(--space-24);
+    width: var(--space-24)
 }
 
 .icon__19fd1 {
@@ -694,7 +694,7 @@
     flex-shrink: 0;
     margin-left: auto;
     min-width: 75px;
-    padding: var(--spacing-8) var(--spacing-12)
+    padding: var(--space-8) var(--space-12)
 }
 
 .number__19fd1 {
@@ -713,7 +713,7 @@
 
 .tableRowGroup__19fd1 {
     flex-shrink: 0;
-    gap: var(--spacing-8)
+    gap: var(--space-8)
 }
 
 .tableRowGroup__19fd1 .content__19fd1 {
@@ -733,7 +733,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-4)
+    gap: var(--space-4)
 }
 
 .buttonIcon__19fd1 {
@@ -778,7 +778,7 @@
 }
 
 .body__1f3e3 {
-    gap: var(--spacing-16);
+    gap: var(--space-16);
     left: 50%;
     position: absolute;
     text-align: center;
@@ -789,7 +789,7 @@
 
 .safetyTable__1f3e3 {
     background-color: var(--bg-surface-raised);
-    border-radius: var(--spacing-16);
+    border-radius: var(--space-16);
     width: 100%
 }
 
@@ -799,4 +799,4 @@
     gap: 8px
 }
 
-/*# sourceMappingURL=1f4fb250e23ef6a7.css.map*/
+/*# sourceMappingURL=e62eb5612afbe251.css.map*/

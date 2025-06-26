@@ -1,4 +1,4 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => d
 });
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(40851),
-  a = n(340541),
-  o = n(493754),
+  o = n(340541),
+  a = n(493754),
   s = n(496675),
   c = n(981631),
   u = n(388032);
@@ -20,7 +20,7 @@ function d(e, t, n, d) {
       appContext: (0, l.bp)()
     },
     h = () => {
-      null != t && e.type === c.d4z.GUILD_VOICE && (0, o.W)(function(e) {
+      null != t && e.type === c.d4z.GUILD_VOICE && (0, a.W)(function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -43,7 +43,7 @@ function d(e, t, n, d) {
     },
     {
       entrypoints: f
-    } = (0, a._k)({
+    } = (0, o._k)({
       location: "more_settings_invite_item"
     }),
     m = f ? i.oLu : i.ejJ;

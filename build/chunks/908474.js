@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => f
 });
 var r = n(255367),
   i = n(73800),
   l = n(399606),
-  a = n(481060),
-  o = n(346486),
+  o = n(481060),
+  a = n(346486),
   s = n(69882),
   c = n(815790),
   u = n(893966),
@@ -21,45 +21,45 @@ function f(e) {
     if (null == e) return null;
     let t = new Date(e).getTime();
     return (0, c.fv)(t, c.jq.JOINED_AT)
-  }, []), _ = i.useMemo(() => null == t ? null : b(g), [t, b, g]), y = i.useMemo(() => (0, s.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), x = i.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
-  return null != g || y ? (0, r.jsx)(a.xJW, {
+  }, []), _ = i.useMemo(() => null == t ? null : b(g), [t, b, g]), y = i.useMemo(() => (0, s.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), C = i.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
+  return null != g || y ? (0, r.jsx)(o.xJW, {
     title: p.intl.string(p.t["7V375+"]),
     titleClassName: h.infoTitle,
     children: (0, r.jsxs)(d.WM, {
       children: [null != g && (0, r.jsx)(d._2, {
-        icon: (0, r.jsx)(a.b6m, {
+        icon: (0, r.jsx)(o.b6m, {
           size: "custom",
           color: "currentColor",
           width: d.Mn,
           height: d.Mn
         }),
-        name: (0, r.jsx)(a.Text, {
+        name: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
           children: p.intl.string(p.t.ZRnONz)
         }),
-        description: (0, r.jsx)(a.Text, {
+        description: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
           children: _
         })
-      }), y && null != x && (0, r.jsx)(d._2, {
-        icon: (0, r.jsx)(a.YlB, {
+      }), y && null != C && (0, r.jsx)(d._2, {
+        icon: (0, r.jsx)(o.YlB, {
           size: "custom",
           color: "currentColor",
           width: d.Mn,
           height: d.Mn
         }),
-        name: (0, r.jsx)(a.Text, {
+        name: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
           children: p.intl.string(p.t["TJ8/tL"])
         }),
-        description: (0, r.jsx)(a.Text, {
+        description: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: (0, r.jsx)(o.Z, {
-            deadline: x,
+          children: (0, r.jsx)(a.Z, {
+            deadline: C,
             showUnits: !0,
             stopAtOneSec: !0
           })

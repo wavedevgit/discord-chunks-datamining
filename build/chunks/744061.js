@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => m
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(692547),
-  a = n(780384),
-  o = n(481060),
+  o = n(780384),
+  a = n(481060),
   s = n(367907),
   c = n(210887),
   u = n(626135),
@@ -23,7 +23,7 @@ function m(e) {
     channel: b,
     analyticsType: _,
     popoutText: y,
-    animation: x
+    animation: C
   } = e;
   i.useEffect(() => {
     u.default.track(d.rMx.OPEN_POPOUT, function(e) {
@@ -47,7 +47,7 @@ function m(e) {
       type: _
     }, (0, s.v_)(b)))
   }, [_, b]);
-  let C = i.useCallback(() => {
+  let x = i.useCallback(() => {
       null == m || m(), t()
     }, [m, t]),
     v = i.useCallback(() => {
@@ -57,10 +57,10 @@ function m(e) {
   return i.useEffect(() => {
     let e, t = c.Z.theme,
       r = !1;
-    return null != x && (async () => {
+    return null != C && (async () => {
       let [{
         default: i
-      }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? x.dark() : x.light()]);
+      }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, o.wj)(t) ? C.dark() : C.light()]);
       r || null == j.current || (e = i.loadAnimation({
         container: j.current,
         renderer: "svg",
@@ -71,14 +71,14 @@ function m(e) {
     })(), () => {
       r = !0, null != e && (e.destroy(), e = void 0)
     }
-  }, [x]), (0, r.jsx)(o.VqE, {
+  }, [C]), (0, r.jsx)(a.VqE, {
     "aria-labelledby": "content-warning-popout-label",
     children: (0, r.jsxs)("form", {
       className: h.contentWarningPopout,
-      onSubmit: C,
+      onSubmit: x,
       children: [(0, r.jsxs)("div", {
         className: h.body,
-        children: [null != x && (0, r.jsx)("div", {
+        children: [null != C && (0, r.jsx)("div", {
           className: h.animation,
           ref: j
         }), (0, r.jsxs)("div", {
@@ -86,7 +86,7 @@ function m(e) {
           children: [(0, r.jsx)("div", {
             className: h.header,
             children: p.intl.string(p.t.mY3Y39)
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(a.Text, {
             id: "content-warning-popout-label",
             className: f.markup,
             variant: "text-sm/normal",
@@ -95,25 +95,25 @@ function m(e) {
             className: h.buttonWrapper,
             children: [(0, r.jsxs)("div", {
               className: h.buttonContainer,
-              children: [(0, r.jsx)(o.zxk, {
+              children: [(0, r.jsx)(a.zxk, {
                 className: h.button,
-                color: o.zxk.Colors.PRIMARY,
+                color: a.zxk.Colors.PRIMARY,
                 onClick: v,
                 children: p.intl.string(p.t.fsBWmZ)
-              }), (0, r.jsx)(o.Text, {
+              }), (0, r.jsx)(a.Text, {
                 variant: "text-xs/normal",
                 className: h.buttonHint,
                 children: p.intl.format(p.t["0LzVPT"], {})
               })]
             }), (0, r.jsxs)("div", {
               className: h.buttonContainer,
-              children: [(0, r.jsx)(o.zxk, {
+              children: [(0, r.jsx)(a.zxk, {
                 className: h.button,
-                onClick: C,
+                onClick: x,
                 type: "submit",
                 autoFocus: !0,
                 children: p.intl.string(p.t.KJnHq6)
-              }), (0, r.jsx)(o.Text, {
+              }), (0, r.jsx)(a.Text, {
                 variant: "text-xs/normal",
                 className: h.buttonHint,
                 children: p.intl.format(p.t.khjqdH, {})
@@ -123,11 +123,11 @@ function m(e) {
         })]
       }), null != y.footer && "" !== y.footer ? (0, r.jsxs)("div", {
         className: h.footer,
-        children: [(0, r.jsx)(o.d3s, {
+        children: [(0, r.jsx)(a.d3s, {
           size: "xs",
           color: l.Z.unsafe_rawColors.PRIMARY_400.css,
           className: h.icon
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           children: y.footer
         })]

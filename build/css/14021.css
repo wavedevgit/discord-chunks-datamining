@@ -1,6 +1,6 @@
 /**
   Module ID: 14021
-  Original File Name: 704df7017b59a0db
+  Original File Name: 6bfa71a8eae8d543
 **/
 .headerImg__3b9cf {
     height: 100px;
@@ -12,12 +12,12 @@
 }
 
 .modalBody__3b9cf {
-    padding: 0 var(--spacing-16) var(--spacing-16);
+    padding: 0 var(--space-16) var(--space-16);
     text-align: center
 }
 
 .modalInteriorHeader__3b9cf {
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
 .modalHeader__3b9cf {
@@ -29,11 +29,11 @@
 }
 
 .buttonContainer__3b9cf {
-    padding: var(--spacing-24) 0 0
+    padding: var(--space-24) 0 0
 }
 
 .buttonContainer__3b9cf>button {
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--space-8)
 }
 
-/*# sourceMappingURL=704df7017b59a0db.css.map*/
+/*# sourceMappingURL=6bfa71a8eae8d543.css.map*/

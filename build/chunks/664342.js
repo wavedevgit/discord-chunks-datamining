@@ -1,12 +1,12 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => T
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  a = n(32750),
-  o = n(109764),
+  o = n(32750),
+  a = n(109764),
   s = n(323597),
   c = n(438536),
   u = n(193987),
@@ -19,8 +19,8 @@ var r = n(255367),
   b = n(299206),
   _ = n(727429),
   y = n(665149),
-  x = n(359110),
-  C = n(585483),
+  C = n(359110),
+  x = n(585483),
   v = n(407908),
   j = n(739830),
   O = n(488131),
@@ -62,20 +62,20 @@ function P(e, t) {
 function Z(e) {
   let {
     channel: t
-  } = e, [n, a] = i.useState(!1), o = i.useRef(null);
+  } = e, [n, o] = i.useState(!1), a = i.useRef(null);
 
   function s() {
-    a(e => !e)
+    o(e => !e)
   }
   let c = I.intl.string(I.t.UKOtz8);
   return (0, r.jsx)(l.yRy, {
-    targetElementRef: o,
+    targetElementRef: a,
     shouldShow: n,
     animation: l.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: !1,
-    onRequestClose: () => a(!1),
+    onRequestClose: () => o(!1),
     renderPopout: function(e) {
       return (0, r.jsx)(N, P(S({}, e), {
         channel: t
@@ -86,7 +86,7 @@ function Z(e) {
         isShown: n
       } = t;
       return (0, r.jsx)(y.ZP.Icon, P(S({}, e), {
-        ref: o,
+        ref: a,
         onClick: s,
         tooltip: n ? null : c,
         icon: l.xhG,
@@ -102,13 +102,13 @@ function N(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, _ = (0, c.Z)(t, "Sidebar Overflow"), y = (0, d.Z)(t), v = (0, f.Z)(t), j = (0, m.Z)(t), O = (0, a.Z)(t), S = (0, u.Z)(t), P = (0, h.Z)(t.id), Z = (0, p.Z)(t), N = (0, s.Z)(t), T = (0, o.Z)(t), A = (0, b.Z)({
+  } = e, _ = (0, c.Z)(t, "Sidebar Overflow"), y = (0, d.Z)(t), v = (0, f.Z)(t), j = (0, m.Z)(t), O = (0, o.Z)(t), S = (0, u.Z)(t), P = (0, h.Z)(t.id), Z = (0, p.Z)(t), N = (0, s.Z)(t), T = (0, a.Z)(t), A = (0, b.Z)({
     id: t.id,
     label: I.intl.string(I.t.DQ797u)
   }), w = (0, g.Z)(t);
 
   function R() {
-    (0, x.Kh)(t.id)
+    (0, C.Kh)(t.id)
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "thread-context",
@@ -132,7 +132,7 @@ function N(e) {
         icon: l.rgF,
         action: function() {
           R(), setTimeout(() => {
-            C.S.dispatch(E.CkL.FOCUS_SEARCH, {
+            x.S.dispatch(E.CkL.FOCUS_SEARCH, {
               prefillCurrentChannel: !1
             })
           }, 2e3)
@@ -142,7 +142,7 @@ function N(e) {
         label: I.intl.string(I.t["2BSH7u"]),
         icon: l.rgF,
         action: function() {
-          R(), C.S.dispatch(E.CkL.TOGGLE_CHANNEL_PINS)
+          R(), x.S.dispatch(E.CkL.TOGGLE_CHANNEL_PINS)
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {

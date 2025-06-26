@@ -1,6 +1,6 @@
 /**
   Module ID: 10620
-  Original File Name: d01173e49c4d9509
+  Original File Name: 8c2484a77228845f
 **/
 .root__66e7e {
     background: var(--background-base-lower);
@@ -113,7 +113,7 @@
 }
 
 .headerContainer__4da69 {
-    padding: var(--spacing-40) var(--spacing-16) var(--spacing-24)
+    padding: var(--space-40) var(--space-16) var(--space-24)
 }
 
 .headerBody__4da69 {
@@ -121,7 +121,7 @@
 }
 
 .modalContent__4da69 {
-    margin-bottom: var(--spacing-8);
+    margin-bottom: var(--space-8);
     padding: 0 var(--modal-horizontal-padding)
 }
 
@@ -135,11 +135,11 @@
 
 .textArea__4da69 {
     border-radius: var(--radius-lg);
-    padding: var(--spacing-16)
+    padding: var(--space-16)
 }
 
 .backButton__4da69 {
     padding: 0
 }
 
-/*# sourceMappingURL=d01173e49c4d9509.css.map*/
+/*# sourceMappingURL=8c2484a77228845f.css.map*/

@@ -1,4 +1,4 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   T: () => g
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  a = n(346486),
-  o = n(545594),
+  o = n(346486),
+  a = n(545594),
   s = n(314897),
   c = n(271383),
   u = n(322937),
@@ -26,7 +26,7 @@ function g(e) {
     children: [g ? (0, r.jsx)(p.Z, {
       onClose: () => b(t.id),
       guildName: t.name
-    }) : null, (0, r.jsx)(o.i, {
+    }) : null, (0, r.jsx)(a.i, {
       bannerIcon: (0, r.jsx)(l.YlB, {
         size: "md",
         color: "currentColor",
@@ -40,7 +40,7 @@ function g(e) {
       headerStyles: m.bannerHeader,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
-        children: (0, r.jsx)(a.Z, {
+        children: (0, r.jsx)(o.Z, {
           deadline: new Date(n),
           showUnits: !0,
           stopAtOneSec: !0

@@ -1,6 +1,6 @@
 /**
   Module ID: 69422
-  Original File Name: 77f3566aed58a0c2
+  Original File Name: b44a9d485e6da328
 **/
 .card__594f1,.spacing__594f1 {
     margin-bottom: 20px
@@ -91,9 +91,9 @@
 
 .phoneField_a0c54f .countryButton_a0c54f {
     height: 32px;
-    margin: var(--spacing-4);
-    padding-left: var(--spacing-8);
-    padding-right: var(--spacing-8)
+    margin: var(--space-4);
+    padding-left: var(--space-8);
+    padding-right: var(--space-8)
 }
 
 .phoneField_a0c54f .countryButtonInner_a0c54f {
@@ -102,8 +102,8 @@
 }
 
 .phoneField_a0c54f .countryCodeContainer_a0c54f {
-    padding-left: var(--spacing-4);
-    padding-right: var(--spacing-4)
+    padding-left: var(--space-4);
+    padding-right: var(--space-4)
 }
 
 .phoneField_a0c54f .plusSign_a0c54f {
@@ -122,11 +122,11 @@
     flex-grow: 1;
     font-size: 16px;
     height: 40px;
-    padding: var(--spacing-8)
+    padding: var(--space-8)
 }
 
 .phoneField_a0c54f .sendButton_a0c54f {
-    margin-right: var(--spacing-4)
+    margin-right: var(--space-4)
 }
 
 .phoneVerificationModal_db41ea {
@@ -200,4 +200,4 @@
     color: var(--text-muted-on-default)
 }
 
-/*# sourceMappingURL=77f3566aed58a0c2.css.map*/
+/*# sourceMappingURL=b44a9d485e6da328.css.map*/

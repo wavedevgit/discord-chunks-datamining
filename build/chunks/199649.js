@@ -1,4 +1,4 @@
-/** Chunk was on 16703 **/
+/** Chunk was on 19577 **/
 n.d(t, {
   Z: () => b
 });
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  a = n(194359),
-  o = n(631937),
+  o = n(194359),
+  a = n(631937),
   s = n(702321),
   c = n(377171),
   u = n(699516),
@@ -23,21 +23,21 @@ function b(e) {
   let {
     channel: _,
     children: y
-  } = e, x = (0, i.e7)([u.Z], () => u.Z.isBlocked(_.getRecipientId()));
-  (0, o.Z)(_.id);
-  let C = (0, s.Z)(_.id),
+  } = e, C = (0, i.e7)([u.Z], () => u.Z.isBlocked(_.getRecipientId()));
+  (0, a.Z)(_.id);
+  let x = (0, s.Z)(_.id),
     v = _.isSystemDM(),
-    j = x && !v && !_.isMultiUserDM(),
+    j = C && !v && !_.isMultiUserDM(),
     O = {};
   if (v) {
-    let e = C ? (0, r.jsxs)(r.Fragment, {
+    let e = x ? (0, r.jsxs)(r.Fragment, {
       children: [g.intl.string(g.t["+KSnWV"]), (0, r.jsx)(l.rgF, {
         size: "xs",
         color: c.Z.HEADER_PRIMARY
       })]
     }) : g.intl.string(g.t.hvVgAQ);
     O.message = g.intl.string(g.t.Bt2N7O), O.subtitle = g.intl.string(g.t["n/Vzk5"]), O.buttonText = e, O.onButtonClick = () => {
-      if (C) {
+      if (x) {
         open(m.D2), d.default.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
           cta_type: "chat_blocker",
           target: m.D2
@@ -47,7 +47,7 @@ function b(e) {
       open(p.Z.getArticleURL(f.BhN.SYSTEM_DMS))
     }, O.imageSrc = n(780961)
   } else j && (O.message = g.intl.string(g.t["9T6N5+"]), O.buttonText = g.intl.string(g.t.XyHpKC), O.onButtonClick = () => {
-    a.Z.unblockUser(_.getRecipientId())
+    o.Z.unblockUser(_.getRecipientId())
   });
   return (0, r.jsx)(h.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
