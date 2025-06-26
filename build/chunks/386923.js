@@ -175,7 +175,7 @@ let y = {
                 variant: "text-md/normal",
                 color: "header-secondary",
                 children: b.intl.format(p.default.W4MIAA, {
-                  feedback: "https://docs.google.com/forms/d/e/1FAIpQLSe8fwyqL9JyhEs3-6OXen4ee0BhTXX9l12NcIfix1PC4QjMMQ/viewform"
+                  feedback: "https://forms.gle/RbDhW46PMmR39XUP7"
                 })
               })
             })]

@@ -1,4 +1,4 @@
-/** Chunk was on 3490 **/
+/** Chunk was on 23035 **/
 e.exports = {
   channelNameChange: "channelNameChange__2f82d"
 }

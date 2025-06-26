@@ -1,4 +1,4 @@
-/** Chunk was on 3490 **/
+/** Chunk was on 23035 **/
 n.d(t, {
   Z: () => h
 });
@@ -26,7 +26,7 @@ function h(e) {
     channelId: n.channel_id,
     guildId: h.guild_id,
     messageId: n.id
-  })(g), b = (0, a.j)("HDStreamingUpgradedMessage"), x = () => (0, o.k)(h, "HDStreamingUpgradedMessage"), E = b ? x : s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION);
+  })(g), b = (0, a.j)("HDStreamingUpgradedMessage"), x = () => (0, o.k)(h, "HDStreamingUpgradedMessage"), y = b ? x : s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.parentContainer,
@@ -57,7 +57,7 @@ function h(e) {
           color: "text-primary",
           variant: "text-xs/normal",
           children: m.intl.format(m.t["bmGF+f"], {
-            helpCenterLink: E
+            helpCenterLink: y
           })
         })]
       })]

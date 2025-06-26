@@ -14,12 +14,12 @@ var i = n(120356),
   d = n(693546),
   _ = n(305325),
   E = n(246364),
-  I = n(983736),
-  O = n(937111),
+  O = n(983736),
+  I = n(937111),
   T = n(981631),
   p = n(176505),
-  N = n(388032),
-  S = n(246752),
+  S = n(388032),
+  N = n(246752),
   f = n(240211);
 
 function m(e) {
@@ -44,30 +44,30 @@ let A = () => {
   var e, t;
   let i = (0, a.e7)([u.Z], () => u.Z.getGuildId(), []),
     A = (0, a.e7)([s.Z], () => s.Z.getGuild(i), [i]),
-    R = (0, a.e7)([O.Z], () => null != i ? O.Z.getRequest(i) : null, [i]),
+    R = (0, a.e7)([I.Z], () => null != i ? I.Z.getRequest(i) : null, [i]),
     g = (0, o.TH)(),
     P = (null == (e = (0, o.LX)(g.pathname, T.Z5c.CHANNEL(null == A ? void 0 : A.id, p.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
-  if (null == A || !(0, I.Dc)(A) || P) return null;
+  if (null == A || !(0, O.Dc)(A) || P) return null;
   let C = null != (t = null == R ? void 0 : R.applicationStatus) ? t : E.wB.STARTED,
     y = null,
     b = null,
     D = null,
-    h = [S.notice, f.notice];
+    h = [N.notice, f.notice];
   switch (C) {
     case E.wB.SUBMITTED:
-      y = N.intl.string(N.t["5iLvS0"]), b = N.intl.string(N.t.mqtdmZ), D = () => {
+      y = S.intl.string(S.t["5iLvS0"]), b = S.intl.string(S.t.mqtdmZ), D = () => {
         (0, c.h7j)(e => {
           var t, n;
           return (0, r.jsx)(c.ConfirmModal, (t = m({
-            header: N.intl.string(N.t.aIz1oa),
-            confirmText: N.intl.string(N.t["cY+Ooa"]),
-            cancelText: N.intl.string(N.t["ETE/oK"]),
+            header: S.intl.string(S.t.aIz1oa),
+            confirmText: S.intl.string(S.t["cY+Ooa"]),
+            cancelText: S.intl.string(S.t["ETE/oK"]),
             onConfirm: () => d.Z.removeGuildJoinRequest(A.id),
             confirmButtonColor: c.zxk.Colors.BRAND
           }, e), n = n = {
             children: (0, r.jsx)(c.Text, {
               variant: "text-md/normal",
-              children: N.intl.string(N.t["13tjTU"])
+              children: S.intl.string(S.t["13tjTU"])
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
@@ -83,7 +83,7 @@ let A = () => {
       };
       break;
     case E.wB.REJECTED:
-      y = N.intl.string(N.t.lk30cX), b = N.intl.string(N.t["8RrsHh"]), D = () => {
+      y = S.intl.string(S.t.lk30cX), b = S.intl.string(S.t["8RrsHh"]), D = () => {
         (0, c.ZDy)(async () => {
           let {
             default: e
@@ -92,21 +92,21 @@ let A = () => {
             guildId: A.id
           }, t))
         })
-      }, h.push(S.error);
+      }, h.push(N.error);
       break;
     default:
-      y = N.intl.string(N.t.G5YKXF), b = N.intl.string(N.t["r8/DT0"]), D = () => {
+      y = S.intl.string(S.t.G5YKXF), b = S.intl.string(S.t["r8/DT0"]), D = () => {
         (0, _.hk)(A.id)
       }
   }
   return (0, r.jsxs)("div", {
     className: l()(...h),
     children: [(0, r.jsx)(c.Text, {
-      className: S.header,
+      className: N.header,
       variant: "text-sm/normal",
       children: y
     }), (0, r.jsx)(c.zxk, {
-      className: S.button,
+      className: N.button,
       look: c.zxk.Looks.OUTLINED,
       color: c.zxk.Colors.WHITE,
       size: c.zxk.Sizes.NONE,

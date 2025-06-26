@@ -13,8 +13,8 @@ var r = n(255367),
   d = n(388905),
   h = n(703656),
   p = n(108427),
-  g = n(981631),
-  m = n(388032),
+  m = n(981631),
+  g = n(388032),
   f = n(20493);
 
 function _(e) {
@@ -23,12 +23,12 @@ function _(e) {
     transitionTo: l = h.uL
   } = e, [o, _] = i.useState("submitting");
 
-  function E() {
+  function x() {
     return "Android" === a().os.family || "iOS" === a().os.family ? null : (0, r.jsx)(d.zx, {
-      onClick: () => l(g.Z5c.LOGIN, {
+      onClick: () => l(m.Z5c.LOGIN, {
         source: "authorizeIPAdress"
       }),
-      children: m.intl.string(m.t.dKhVQE)
+      children: g.intl.string(g.t.dKhVQE)
     })
   }
   return ((0, c.ZP)(() => {
@@ -49,11 +49,11 @@ function _(e) {
       className: f.marginBottom20
     }), (0, r.jsx)(d.Dx, {
       className: f.marginBottom8,
-      children: m.intl.string(m.t["f/54a2"])
+      children: g.intl.string(g.t["f/54a2"])
     }), (0, r.jsx)(d.DK, {
       className: f.marginBottom40,
-      children: m.intl.string(m.t.i3ehMj)
-    }), E()]
+      children: g.intl.string(g.t.i3ehMj)
+    }), x()]
   }) : "succeeded" === o ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
       alt: "",
@@ -61,14 +61,14 @@ function _(e) {
       className: f.marginBottom20
     }), (0, r.jsx)(d.Dx, {
       className: f.marginBottom8,
-      children: m.intl.string(m.t.iG0SlJ)
+      children: g.intl.string(g.t.iG0SlJ)
     }), (0, r.jsx)(d.DK, {
       className: f.marginBottom40,
-      children: m.intl.string(m.t["Elv+qq"])
-    }), E()]
+      children: g.intl.string(g.t["Elv+qq"])
+    }), x()]
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Hh, {}), (0, r.jsx)(d.Dx, {
-      children: m.intl.string(m.t["9exy+f"])
+      children: g.intl.string(g.t["9exy+f"])
     })]
   })
 }

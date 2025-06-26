@@ -1,4 +1,4 @@
-/** Chunk was on 69525 **/
+/** Chunk was on 85342 **/
 e.exports = {
   "heading-lg/medium": "heading-lg/medium_a76279",
   "heading-xl/bold": "heading-xl/bold_a76279",
@@ -10,7 +10,6 @@ e.exports = {
   prompt: "prompt_a76279",
   promptFinish: "promptFinish_a76279",
   finishTitle: "finishTitle_a76279",
-  finishTitlePadding: "finishTitlePadding_a76279",
   button: "button_a76279",
   infoContainer: "infoContainer_a76279",
   infoItem: "infoItem_a76279",

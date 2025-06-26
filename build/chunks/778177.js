@@ -1,4 +1,4 @@
-/** Chunk was on 3490 **/
+/** Chunk was on 23035 **/
 n.d(t, {
   ZP: () => J
 }), n(781311), n(35282), n(388685);
@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(542051),
   b = n(349033),
   x = n(999650),
-  E = n(933557),
-  y = n(471445),
+  y = n(933557),
+  E = n(471445),
   v = n(785232),
   C = n(778877),
   O = n(592125),
@@ -151,16 +151,16 @@ let V = p()("2015-05-15").local(),
             size: h.EFr.SIZE_20,
             className: U.searchResultGDMChannelIcon
           });
-          let e = (0, y.KS)(i);
+          let e = (0, E.KS)(i);
           return null == e ? null : (0, r.jsx)(e, {
             className: U.searchResultChannelIcon
           })
         }
       })(), i.isDM() || i.isGroupDM() ? (0, r.jsx)("span", {
         className: U.searchResultDMChannelName,
-        children: (0, E.F6)(i, A.default, S.Z)
+        children: (0, y.F6)(i, A.default, S.Z)
       }) : (0, r.jsx)("strong", {
-        children: (0, E.F6)(i, A.default, S.Z)
+        children: (0, y.F6)(i, A.default, S.Z)
       }), (() => {
         if (i.isDM()) {
           let e = i.getRecipientId(),
@@ -174,7 +174,7 @@ let V = p()("2015-05-15").local(),
         }
         if (null != a) return (0, r.jsx)("span", {
           className: U.searchResultChannelCategory,
-          children: (0, E.F6)(a, A.default, S.Z)
+          children: (0, y.F6)(a, A.default, S.Z)
         })
       })()]
     })
@@ -195,10 +195,10 @@ let V = p()("2015-05-15").local(),
       renderResult: _
     } = e;
     if (g) {
-      var b, E;
+      var b, y;
       t = (0, r.jsx)("span", {
         className: U.filter,
-        children: null != (E = null == (b = x.ZP[s]) ? void 0 : b.key) ? E : "addme:"
+        children: null != (y = null == (b = x.ZP[s]) ? void 0 : b.key) ? y : "addme:"
       })
     }
     return n = null != _ ? _(l, s, o) : (0, r.jsx)("strong", {

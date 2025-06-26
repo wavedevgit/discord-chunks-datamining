@@ -1,26 +1,26 @@
 /** Chunk was on 85342 **/
 r.d(t, {
-  Z: () => O
+  Z: () => E
 }), r(388685);
 var n = r(255367),
   i = r(73800),
   o = r(695469),
   s = r(481060),
-  l = r(230711),
-  a = r(687158),
+  a = r(230711),
+  l = r(687158),
   c = r(63063),
   u = r(51144),
   d = r(544508),
   m = r(801461),
   g = r(981631),
   f = r(388032),
-  E = r(927687);
+  h = r(927687);
 
-function O(e) {
+function E(e) {
   var t, r, {
-      userRef: O,
-      usernameSuggestionLoading: h = !1,
-      oneClickFlow: p = !1
+      userRef: E,
+      usernameSuggestionLoading: p = !1,
+      oneClickFlow: O = !1
     } = e,
     y = function(e, t) {
       if (null == e) return {};
@@ -40,8 +40,8 @@ function O(e) {
   let {
     user: S,
     editState: b,
-    onClose: x
-  } = y, j = (0, a.ZP)(S.id), N = function(e, t, r) {
+    onClose: _
+  } = y, x = (0, l.ZP)(S.id), N = function(e, t, r) {
     switch (e) {
       case m.Wq.EDIT_USERNAME:
         return {
@@ -57,7 +57,7 @@ function O(e) {
             displayName: t
           }), subtitle: f.intl.format(f.t.bWE0ZG, {
             onClick: () => {
-              r(), l.Z.open(g.oAB.ACCOUNT)
+              r(), a.Z.open(g.oAB.ACCOUNT)
             }
           })
         };
@@ -72,12 +72,12 @@ function O(e) {
           header: f.intl.string(f.t["a/zCWl"]), subtitle: f.intl.string(f.t.gGz0sb)
         }
     }
-  }(b, u.ZP.getName(S), x), [v, T] = (0, s.q_F)(() => ({
+  }(b, u.ZP.getName(S), _), [j, v] = (0, s.q_F)(() => ({
     opacity: 0,
     y: 10
   }));
   return i.useEffect(() => {
-    T({
+    v({
       y: 0,
       opacity: 1,
       from: {
@@ -85,26 +85,26 @@ function O(e) {
         opacity: 0
       }
     })
-  }, [T, b]), (0, n.jsxs)("div", {
-    className: E.displayNameContainer,
+  }, [v, b]), (0, n.jsxs)("div", {
+    className: h.displayNameContainer,
     children: [(0, n.jsxs)(o.animated.div, {
       style: {
-        opacity: v.opacity,
-        y: v.y
+        opacity: j.opacity,
+        y: j.y
       },
       children: [(0, n.jsx)(s.X6q, {
-        className: E.title,
+        className: h.title,
         color: "header-primary",
         variant: "heading-xl/extrabold",
         children: N.header
       }), (0, n.jsxs)("div", {
-        className: E.subtitle,
+        className: h.subtitle,
         children: [(0, n.jsx)(s.X6q, {
           color: "header-secondary",
           variant: "heading-sm/medium",
           children: N.subtitle
         }), null != N.link && (0, n.jsx)(s.Text, {
-          className: E.link,
+          className: h.link,
           color: "header-secondary",
           variant: "text-sm/medium",
           children: N.link
@@ -128,10 +128,10 @@ function O(e) {
       }
       return e
     }({}, y), r = r = {
-      displayProfile: j,
-      ref: O,
-      usernameSuggestionLoading: h,
-      oneClickFlow: p
+      displayProfile: x,
+      ref: E,
+      usernameSuggestionLoading: p,
+      oneClickFlow: O
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

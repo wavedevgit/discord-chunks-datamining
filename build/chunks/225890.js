@@ -1,4 +1,4 @@
-/** Chunk was on 3490 **/
+/** Chunk was on 23035 **/
 n.d(t, {
   Z: () => b
 }), n(388685), n(35282);
@@ -22,8 +22,8 @@ function b(e) {
   let {
     code: t
   } = e, [n, b, x] = t.split("-"), {
-    guildScheduledEvent: E,
-    guild: y,
+    guildScheduledEvent: y,
+    guild: E,
     channel: v,
     isMember: C
   } = (0, l.cj)([f.ZP, d.Z, c.Z, u.ZP, p.default], () => {
@@ -39,11 +39,11 @@ function b(e) {
     }
   }, [n, b]);
   return i.useEffect(() => {
-    (null == E ? void 0 : E.id) == null && h.Z.fetchGuildEvent(n, b), m.Z.getGuildEventUserCounts(n, b, null != x ? [x] : []), m.Z.getGuildEventsForCurrentUser(n)
-  }, [b, n, null == E ? void 0 : E.id, x]), (0, r.jsx)(g.ZP, {
-    guild: y,
+    (null == y ? void 0 : y.id) == null && h.Z.fetchGuildEvent(n, b), m.Z.getGuildEventUserCounts(n, b, null != x ? [x] : []), m.Z.getGuildEventsForCurrentUser(n)
+  }, [b, n, null == y ? void 0 : y.id, x]), (0, r.jsx)(g.ZP, {
+    guild: E,
     channel: v,
-    guildScheduledEvent: E,
+    guildScheduledEvent: y,
     isMember: C,
     onAcceptInstantInvite: _.dG,
     onTransitionToInviteChannel: function() {

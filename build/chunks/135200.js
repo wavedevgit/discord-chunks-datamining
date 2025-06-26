@@ -3,8 +3,8 @@ r.d(t, {
   Z: () => f
 });
 var n, i, o, s = r(31775),
-  l = r.n(s),
-  a = r(442837),
+  a = r.n(s),
+  l = r(442837),
   c = r(570140),
   u = r(70956);
 let d = {
@@ -13,7 +13,7 @@ let d = {
     rateLimited: !0
   },
   m = {
-    validations: new(l())({
+    validations: new(a())({
       max: 100,
       maxAge: 6e4
     }),
@@ -36,7 +36,7 @@ let d = {
       }
     }
   };
-class g extends(o = a.ZP.Store) {
+class g extends(o = l.ZP.Store) {
   isRateLimited() {
     return null != m.retryAfterTime && Date.now() < m.retryAfterTime
   }

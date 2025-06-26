@@ -1,6 +1,6 @@
 /** Chunk was on 78797 **/
 n.d(t, {
-  E: () => I,
+  E: () => O,
   Z: () => T
 }), n(388685), n(642613);
 var r = n(255367),
@@ -22,13 +22,13 @@ function E(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let I = {
+let O = {
   DropdownSizes: c.Z.DropdownSizes,
   Sizes: c.Z.Sizes,
   Colors: c.Z.Colors,
   Looks: c.Z.Looks
 };
-class O extends i.PureComponent {
+class I extends i.PureComponent {
   render() {
     var e, t;
     let n = this.props,
@@ -122,4 +122,4 @@ let T = l.ZP.connectStores([u.Z, s.Z], e => {
     skus: (null != (t = u.Z.getForApplication(n)) ? t : []).sort((e, t) => null != r && e.id === r.id ? -1 : null != r && t.id === r.id ? 1 : e.name >= t.name ? -1 : 1),
     primarySKU: r
   }
-})(O)
+})(I)

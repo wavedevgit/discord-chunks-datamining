@@ -1,6 +1,6 @@
 /** Chunk was on 78797 **/
 n.d(t, {
-  Z: () => N
+  Z: () => S
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -13,20 +13,20 @@ var r = n(255367),
   d = n(430824),
   _ = n(914010),
   E = n(900849),
-  I = n(981631),
-  O = n(388032),
+  O = n(981631),
+  I = n(388032),
   T = n(8940),
   p = n(240211);
-let N = () => {
+let S = () => {
   let e = (0, a.e7)([_.Z], () => _.Z.getGuildId(), []),
     t = (0, a.e7)([d.Z], () => d.Z.getGuild(e), [e]),
     [n, l] = i.useState(!1);
   if (null == t) return null;
-  let N = async () => {
+  let S = async () => {
     l(!0);
     try {
       E.mT(t.id), await s.Z.joinGuild(t.id, {
-        source: I.vtS.NOTICE_BAR
+        source: O.vtS.NOTICE_BAR
       })
     } catch (e) {
       l(!1)
@@ -47,19 +47,19 @@ let N = () => {
         size: "xs",
         color: "currentColor",
         className: T.arrow
-      }), O.intl.string(O.t["13/7kZ"])]
+      }), I.intl.string(I.t["13/7kZ"])]
     }), (0, r.jsx)(c.Text, {
       className: T.header,
       variant: "text-sm/normal",
-      children: O.intl.string(O.t["N/y2WF"])
+      children: I.intl.string(I.t["N/y2WF"])
     }), (0, r.jsx)(c.zxk, {
       className: T.button,
       look: c.zxk.Looks.OUTLINED,
       color: c.zxk.Colors.WHITE,
       size: c.zxk.Sizes.NONE,
       submitting: n,
-      onClick: N,
-      children: O.intl.format(O.t.uHN7n5, {
+      onClick: S,
+      children: I.intl.format(I.t.uHN7n5, {
         guild: t.name
       })
     })]

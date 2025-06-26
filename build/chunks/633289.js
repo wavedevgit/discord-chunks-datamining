@@ -126,7 +126,7 @@ class R extends(r = o.ZP.PersistedStore) {
   trackExperimentExposure(e, t, n, r, i, a) {
     let o = C("".concat(t, "|").concat(i, "|").concat(a, "|").concat(n));
     this.shouldTrackExposure(o) && "user" === r && (f.default.track(h.rMx.EXPERIMENT_USER_EVALUATION_EXPOSED, {
-      evaluation: e,
+      evaluation_id: e,
       experiment: t,
       exposure_location: n,
       unit_type: r
@@ -136,7 +136,7 @@ class R extends(r = o.ZP.PersistedStore) {
     for (let t of this.evaluationIds("user")) {
       let n = C("".concat(t, "|").concat(e));
       this.shouldTrackExposure(n) && (f.default.track(h.rMx.EXPERIMENT_USER_EVALUATION_EXPOSED, {
-        evaluation: t,
+        evaluation_id: t,
         exposure_location: e,
         unit_type: "user"
       }), A[n] = Date.now(), this.saveTrackedExposures(A))

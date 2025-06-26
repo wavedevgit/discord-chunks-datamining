@@ -1,7 +1,7 @@
 /** Chunk was on 78797 **/
 n.d(t, {
   g: () => T,
-  mI: () => O
+  mI: () => I
 }), n(388685);
 var r = n(149765),
   i = n(399606),
@@ -14,14 +14,14 @@ var r = n(149765),
   d = n(709054),
   _ = n(533244),
   E = n(487419),
-  I = n(676770);
+  O = n(676770);
 
-function O(e) {
+function I(e) {
   let t = (0, i.e7)([o.Z, a.Z], () => {
       let t = o.Z.getGuild(e);
       if (null == t) return !1;
       let n = a.Z.getGuildPermissions(t);
-      return null != n && r.Db(n, I.cv)
+      return null != n && r.Db(n, O.cv)
     }),
     n = (0, i.e7)([E.Z], () => null != e ? E.Z.getGuildIncident(e) : null),
     l = null != n && (0, _.ur)(n);
@@ -44,7 +44,7 @@ function T() {
             user: t,
             context: i,
             checkElevated: !1
-          }), I.cv)) return i.id
+          }), O.cv)) return i.id
       }
       return null
     }(c.Z.getGuildId()),

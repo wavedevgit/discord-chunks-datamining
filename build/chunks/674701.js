@@ -1,4 +1,4 @@
-/** Chunk was on 3490 **/
+/** Chunk was on 23035 **/
 n.d(t, {
   U: () => R,
   Z: () => k
@@ -19,8 +19,8 @@ var r, i = n(255367),
   _ = n(541716),
   b = n(28546),
   x = n(963249),
-  E = n(703656),
-  y = n(594174),
+  y = n(703656),
+  E = n(594174),
   v = n(626135),
   C = n(51144),
   O = n(479446),
@@ -47,7 +47,7 @@ function k(e) {
     analyticsSection: D,
     glow: M,
     giftIntentSecondaryAction: U
-  } = e, F = (0, c.e7)([y.default], () => y.default.getCurrentUser()), {
+  } = e, F = (0, c.e7)([E.default], () => E.default.getCurrentUser()), {
     analyticsLocations: B
   } = (0, h.ZP)(), G = (0, c.e7)([S.Z], () => S.Z.getFriendAnniversaryYears(r.id));
   l.useEffect(() => {
@@ -125,7 +125,7 @@ function k(e) {
             e.stopPropagation(), v.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: U
-            }), U === T.X2.VIEW_ALL ? ((0, E.uL)(N.Z5c.FRIENDS), m.Z.setSection(N.pJs.ALL)) : U === T.X2.SEND_MESSAGE && ((0, j.PV)(r.id), p.Z.openPrivateChannel({
+            }), U === T.X2.VIEW_ALL ? ((0, y.uL)(N.Z5c.FRIENDS), m.Z.setSection(N.pJs.ALL)) : U === T.X2.SEND_MESSAGE && ((0, j.PV)(r.id), p.Z.openPrivateChannel({
               recipientIds: r.id
             }).then(() => {
               setTimeout(() => {

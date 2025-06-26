@@ -13,12 +13,12 @@ var r, i = n(255367),
   d = n(865672),
   _ = n(481060),
   E = n(607070),
-  I = n(100527),
-  O = n(906732),
+  O = n(100527),
+  I = n(906732),
   T = n(385499),
   p = n(372900),
-  N = n(172751),
-  S = n(606318),
+  S = n(172751),
+  N = n(606318),
   f = n(402235),
   m = n(477734),
   A = n(670188),
@@ -83,8 +83,8 @@ function v(e) {
     compact: U = !1,
     withMentionPrefix: v = !1,
     showPopout: k = !1,
-    hideGuildTag: L = !1,
-    hideSystemTag: Z = !1,
+    hideGuildTag: Z = !1,
+    hideSystemTag: L = !1,
     className: j,
     onClick: x,
     onContextMenu: F,
@@ -96,12 +96,12 @@ function v(e) {
     subscribeToGroupId: z
   } = e, H = l.useRef(null), Y = l.useContext(p.Z), K = null != (t = null == o ? void 0 : o.guild_id) ? t : Y, {
     analyticsLocations: q
-  } = (0, O.ZP)(I.Z.USERNAME), X = v ? "@" : "", {
+  } = (0, I.ZP)(O.Z.USERNAME), X = v ? "@" : "", {
     nick: J,
     colorString: Q,
     colorStrings: $,
     colorRoleName: ee
-  } = n, et = (0, s.e7)([E.Z], () => E.Z.roleStyle), en = "username" === et, er = (0, m.X$)(), ei = (0, f.ZP)(null != W ? W : K, n.authorId), el = (0, C.Z)(r), eo = l.useContext(u.d), ea = ei && (0, S.S2)(n), ec = en && ea;
+  } = n, et = (0, s.e7)([E.Z], () => E.Z.roleStyle), en = "username" === et, er = (0, m.X$)(), ei = (0, f.ZP)(null != W ? W : K, n.authorId), el = (0, C.Z)(r), eo = l.useContext(u.d), ea = ei && (0, N.S2)(n), ec = en && ea;
   l.useEffect(() => {
     if (null == z || !ec || null == eo) return;
     let {
@@ -132,21 +132,21 @@ function v(e) {
     onContextMenu: F,
     children: ed,
     "data-text": X + J
-  }, eE = l.useMemo(() => U && !L ? (0, i.jsx)(N.ZP, {
+  }, eE = l.useMemo(() => U && !Z ? (0, i.jsx)(S.ZP, {
     primaryGuild: n.primaryGuild,
     userId: r.author.id,
     contextGuildId: K,
     className: b.clanTagChiplet
-  }) : null, [U, n.primaryGuild, K, r.author.id, L]), eI = null != T ? T : r.author, eO = null != G && null != k ? (0, i.jsx)(A.Z, {
+  }) : null, [U, n.primaryGuild, K, r.author.id, Z]), eO = null != T ? T : r.author, eI = null != G && null != k ? (0, i.jsx)(A.Z, {
     targetElementRef: H,
-    user: eI,
+    user: eO,
     renderPopout: G,
     shouldShow: k,
     shouldPreload: el,
     position: c.tq ? "window_center" : "right",
     avatarUrl: null != n.guildMemberAvatar && null != K ? (0, R.JM)({
       guildId: K,
-      userId: eI.id,
+      userId: eO.id,
       avatar: n.guildMemberAvatar,
       size: 80
     }) : void 0,
@@ -184,9 +184,9 @@ function v(e) {
       className: a()(e_.className, j)
     })), eE]
   }), eT = null != B ? B[0] : null, ep = null != B ? B[1] : null;
-  return (0, i.jsxs)(O.Gt, {
+  return (0, i.jsxs)(I.Gt, {
     value: q,
-    children: [null != eT && !Z && U ? (0, i.jsxs)(i.Fragment, {
+    children: [null != eT && !L && U ? (0, i.jsxs)(i.Fragment, {
       children: [" ", eT, " "]
     }) : null, "dot" === et ? (0, i.jsx)(_.FhE, {
       color: Q,
@@ -194,11 +194,11 @@ function v(e) {
       name: ee,
       className: b.roleDot,
       hoverOverride: null == eo ? void 0 : eo.animate
-    }) : null, eO, !U && !L && (0, i.jsx)(N.ZP, {
+    }) : null, eI, !U && !Z && (0, i.jsx)(S.ZP, {
       primaryGuild: n.primaryGuild,
       userId: r.author.id,
       contextGuildId: K,
       className: b.clanTagChiplet
-    }), null != ep ? ep : null, null == eT || Z || U ? null : eT, null != r && (0, P.f)(r) && er && w ? (0, i.jsx)(M, {}) : null]
+    }), null != ep ? ep : null, null == eT || L || U ? null : eT, null != r && (0, P.f)(r) && er && w ? (0, i.jsx)(M, {}) : null]
   })
 }

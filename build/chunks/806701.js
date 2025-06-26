@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r = n(255367);
 n(73800);
@@ -15,7 +15,7 @@ var i = n(120356),
   h = n(578605),
   p = n(20493);
 
-function g(e) {
+function m(e) {
   let {
     children: t
   } = e;
@@ -29,7 +29,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     setSlide: t,
     transitionTo: i
@@ -50,15 +50,15 @@ function m(e) {
         variant: "text-sm/normal"
       }), (0, r.jsxs)("ul", {
         className: h.listContainer,
-        children: [(0, r.jsx)(g, {
+        children: [(0, r.jsx)(m, {
           children: d.intl.string(d.t.Gj1Zr6)
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(m, {
           children: d.intl.string(d.t["8C6t3N"])
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(m, {
           children: d.intl.string(d.t.mToZMD)
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(m, {
           children: d.intl.string(d.t.TPEvkZ)
-        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(g, {
+        }), (0, r.jsx)(s.Z, {}), (0, r.jsx)(m, {
           children: d.intl.string(d.t.H8Y1Li)
         })]
       })]

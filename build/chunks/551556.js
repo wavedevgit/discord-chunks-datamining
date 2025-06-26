@@ -10,8 +10,8 @@ var i = r(692547),
 function s(e) {
   var t, r, {
       width: s = 24,
-      height: l = 24,
-      color: a = i.Z.unsafe_rawColors.WHITE_500.css,
+      height: a = 24,
+      color: l = i.Z.unsafe_rawColors.WHITE_500.css,
       backgroundColor: c = i.Z.unsafe_rawColors.BRAND_500.css
     } = e,
     u = function(e, t) {
@@ -48,14 +48,14 @@ function s(e) {
     return e
   }({}, (0, o.Z)(u)), r = r = {
     width: s,
-    height: l,
+    height: a,
     viewBox: "0 0 14 14",
     children: [(0, n.jsx)("path", {
       fill: c,
       d: "M7.02799 0.333252C3.346 0.333252 0.361328 3.31792 0.361328 6.99992C0.361328 10.6819 3.346 13.6666 7.02799 13.6666C10.71 13.6666 13.6947 10.6819 13.6947 6.99992C13.6947 3.31792 10.7093 0.333252 7.02799 0.333252ZM10.166"
     }), (0, n.jsx)("path", {
       d: "M6.5,10.3L3.4,8l0.9-1.2l1.8,1.4l3.3-4.3l1.2,0.9L6.5,10.3z",
-      fill: a
+      fill: l
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

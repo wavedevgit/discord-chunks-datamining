@@ -18,21 +18,21 @@ let E = e => {
     notice: t,
     noticeType: n,
     dismissCurrentNotice: E
-  } = e, I = (null == t ? void 0 : t.metadata.premiumSubscription) != null, O = (0, a.n)();
-  if ((0, c.U)(s.jXE.NOTIFICATION_BAR, null == O ? void 0 : O.countryCode), null == O) return null;
-  let T = O.countryCode,
-    p = O.currency,
-    N = O.paymentSourceTypes.length > 0;
+  } = e, O = (null == t ? void 0 : t.metadata.premiumSubscription) != null, I = (0, a.n)();
+  if ((0, c.U)(s.jXE.NOTIFICATION_BAR, null == I ? void 0 : I.countryCode), null == I) return null;
+  let T = I.countryCode,
+    p = I.currency,
+    S = I.paymentSourceTypes.length > 0;
   return (0, r.jsxs)(i.qXd, {
-    color: I ? i.DM8.BRAND : i.DM8.PREMIUM_TIER_2,
+    color: O ? i.DM8.BRAND : i.DM8.PREMIUM_TIER_2,
     children: [(0, r.jsx)(i.RyX, {
       onClick: () => E(u.L.UNKNOWN),
       noticeType: n
-    }), !I && (0, r.jsx)(i.SrA, {
+    }), !O && (0, r.jsx)(i.SrA, {
       size: "md",
       color: "currentColor",
       className: _.premiumIcon
-    }), (0, o.Gv)(T, p, N, I), (0, r.jsx)(i.NoS, {
+    }), (0, o.Gv)(T, p, S, O), (0, r.jsx)(i.NoS, {
       onClick: () => {
         E(u.L.UNKNOWN), l.Z.open(s.oAB.PREMIUM)
       },

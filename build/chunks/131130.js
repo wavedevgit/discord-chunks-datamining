@@ -19,7 +19,7 @@ let E = e => {
     noticeType: n
   } = e, {
     analyticsLocations: E
-  } = (0, o.ZP)(), I = (0, c.Z)();
+  } = (0, o.ZP)(), O = (0, c.Z)();
   return (0, r.jsx)(u.Xf, {
     contentType: t,
     latestVersion: (0, s.t)(t),
@@ -31,7 +31,7 @@ let E = e => {
         markAsDismissed: o
       } = e;
       if (t === i.z.GIFTING_PROMOTION_REMINDER) {
-        let e = null == I ? void 0 : I.reminderNagbar;
+        let e = null == O ? void 0 : O.reminderNagbar;
         return (0, r.jsxs)(l.qXd, {
           color: l.DM8.PREMIUM_TIER_2,
           children: [(0, r.jsx)(l.RyX, {

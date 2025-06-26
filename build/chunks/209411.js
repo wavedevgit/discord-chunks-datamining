@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => E
+  Z: () => x
 }), n(388685), n(35282), n(457542);
 var r = n(255367),
   i = n(73800),
@@ -13,14 +13,14 @@ var r = n(255367),
   d = n(743142),
   h = n(893607),
   p = n(703656),
-  g = n(314897),
-  m = n(781428),
+  m = n(314897),
+  g = n(781428),
   f = n(981631),
   _ = n(176505);
 
-function E(e) {
+function x(e) {
   var t, n;
-  let E = i.useCallback(t => {
+  let x = i.useCallback(t => {
       if (function(e) {
           var t;
           let n = (0, a.LX)(e, {
@@ -34,19 +34,19 @@ function E(e) {
       }
     }, [e.transitionTo]),
     {
-      isAuthenticated: x,
+      isAuthenticated: E,
       loginStatus: b
-    } = (0, o.cj)([g.default], () => ({
-      isAuthenticated: g.default.isAuthenticated(),
-      loginStatus: g.default.getLoginStatus()
+    } = (0, o.cj)([m.default], () => ({
+      isAuthenticated: m.default.isAuthenticated(),
+      loginStatus: m.default.getLoginStatus()
     })),
     {
-      location: v,
-      redirectTo: I
+      location: I,
+      redirectTo: v
     } = e,
-    [O, S] = i.useState(x);
+    [O, N] = i.useState(E);
 
-  function N(e) {
+  function j(e) {
     let {
       handoffKey: t,
       handoffToken: n,
@@ -56,30 +56,30 @@ function E(e) {
       handoffKey: t,
       handoffToken: n,
       handoffSource: r
-    }), S(!1)
+    }), N(!1)
   }
   return ((0, u.ZP)(() => {
-    if (null != v) {
+    if (null != I) {
       let {
         handoff_key: e,
         handoff_token: t
-      } = (0, l.parse)(v.search);
+      } = (0, l.parse)(I.search);
       if (null != e && null != t) {
-        let n = null != I ? (0, d.L)(I) : void 0;
+        let n = null != v ? (0, d.L)(v) : void 0;
         O ? s.Z.logout("handoff", null).finally(() => {
-          N({
+          j({
             handoffKey: e,
             handoffToken: t,
             handoffSource: n
           })
-        }) : N({
+        }) : j({
           handoffKey: e,
           handoffToken: t,
           handoffSource: n
         })
       }
     }
-  }), O || b === f.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
+  }), O || b === f.u34.LOGGING_IN) ? (0, r.jsx)(g.q, {}) : (0, r.jsx)(g.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -97,7 +97,7 @@ function E(e) {
     }
     return e
   }({}, e), n = n = {
-    transitionTo: E
+    transitionTo: x
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

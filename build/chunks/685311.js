@@ -17,10 +17,10 @@ let p = function(e) {
     match: t,
     location: n,
     attemptDeepLink: l
-  } = e, [p, g] = i.useState(0);
+  } = e, [p, m] = i.useState(0);
   i.useEffect(() => {
     o.default.once("connected", () => {
-      g(1)
+      m(1)
     }), o.default.once("disconnected", () => {
       (0, u.uL)((0, s.M)())
     }), o.default.connect()
@@ -29,9 +29,9 @@ let p = function(e) {
     let e = setTimeout(() => (0, u.uL)((0, s.M)()), 3e3);
     return () => clearTimeout(e)
   }, [p]);
-  let m = i.useCallback(async (e, t) => {
+  let g = i.useCallback(async (e, t) => {
     try {
-      g(2), await l(e, t), g(3)
+      m(2), await l(e, t), m(3)
     } catch (e) {
       console.error("Error opening deeplink", e)
     }
@@ -47,7 +47,7 @@ let p = function(e) {
           children: d.intl.string(d.t.SXCxyc)
         }), (0, r.jsx)(c.zx, {
           className: h.marginTop40,
-          onClick: () => m(t, n),
+          onClick: () => g(t, n),
           children: d.intl.string(d.t.UQvCf3)
         }), (0, r.jsx)(c.zx, {
           className: a()(h.marginTop8, h.marginCenterHorz),

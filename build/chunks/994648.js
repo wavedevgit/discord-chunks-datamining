@@ -1,4 +1,4 @@
-/** Chunk was on 21815 **/
+/** Chunk was on 23035 **/
 n.r(e.exports = {
   effect: "effect_e5f2cb",
   effects: "effects_e5f2cb"

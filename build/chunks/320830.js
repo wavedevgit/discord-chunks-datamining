@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => E
+  Z: () => x
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -22,7 +22,7 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function g(e) {
   }
   return e
 }
-let m = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+let g = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
   f = {
     START: 0,
     END: 1
@@ -43,7 +43,7 @@ let m = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
     friction: 10,
     tension: 130
   },
-  E = function(e) {
+  x = function(e) {
     return class extends i.Component {
       componentDidMount() {
         s.tq || (window.addEventListener("resize", this.handleResizeDebounced), this.handleResize())
@@ -61,7 +61,7 @@ let m = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         this.state.shouldAnimate ? this.animateTo(f.START, e) : e()
       }
       animateTo(e, t) {
-        o.Z.spring(this.anim, g({
+        o.Z.spring(this.anim, m({
           toValue: e
         }, _)).start(t)
       }
@@ -93,7 +93,7 @@ let m = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
               } = t;
               return (0, r.jsx)(o.Z.div, {
                 style: this.getAnimatedStyle(n.enabled),
-                children: (0, r.jsx)(e, g({}, this.props))
+                children: (0, r.jsx)(e, m({}, this.props))
               })
             }
           })
@@ -103,7 +103,7 @@ let m = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         super(...e), p(this, "timeout", void 0), p(this, "anim", new o.Z.Value(f.START)), p(this, "state", {
           shouldAnimate: !s.tq
         }), p(this, "handleResize", () => {
-          let e = window.innerWidth > m;
+          let e = window.innerWidth > g;
           !this.state.shouldAnimate && e && this.anim.setValue(f.END), this.setState({
             shouldAnimate: e
           })

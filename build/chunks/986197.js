@@ -6,8 +6,8 @@ var n = r(990547),
   i = r(544891),
   o = r(570140),
   s = r(881052),
-  l = r(626135),
-  a = r(573261),
+  a = r(626135),
+  l = r(573261),
   c = r(109488),
   u = r(981631);
 r(135200);
@@ -70,7 +70,7 @@ let m = {
         maxNum: 32,
         minNum: 2
       }) : void 0;
-    if (null != m) return l.default.track(u.rMx.POMELO_ERRORS, {
+    if (null != m) return a.default.track(u.rMx.POMELO_ERRORS, {
       reason: m,
       username_error: !0,
       location: r,
@@ -81,7 +81,7 @@ let m = {
       error: m
     });
     try {
-      let t = await a.Z.post({
+      let t = await l.Z.post({
         url: i ? u.ANM.POMELO_ATTEMPT_UNAUTHED : u.ANM.POMELO_ATTEMPT,
         body: {
           username: e
@@ -94,7 +94,7 @@ let m = {
         },
         rejectWithError: !1
       });
-      t.body.taken && l.default.track(u.rMx.POMELO_ERRORS, {
+      t.body.taken && a.default.track(u.rMx.POMELO_ERRORS, {
         reason: "already_taken",
         username_error: !0,
         location: r,
@@ -104,10 +104,10 @@ let m = {
         username: e,
         taken: t.body.taken
       })
-    } catch (a) {
-      let n = new s.Hx(a),
+    } catch (l) {
+      let n = new s.Hx(l),
         i = null != (t = n.getAnyErrorMessage()) ? t : void 0;
-      l.default.track(u.rMx.POMELO_ERRORS, {
+      a.default.track(u.rMx.POMELO_ERRORS, {
         reason: i,
         username_error: !0,
         location: r,
@@ -123,7 +123,7 @@ let m = {
   },
   async createPomelo(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-      r = await a.Z.post({
+      r = await l.Z.post({
         body: e,
         url: u.ANM.POMELO_CREATE,
         trackedActionData: {

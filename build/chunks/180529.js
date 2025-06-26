@@ -1,36 +1,36 @@
-/** Chunk was on 42758 **/
+/** Chunk was on 84956 **/
 n.d(t, {
-  Z: () => c
+  Z: () => g
 }), n(388685);
 var i, r = n(255367),
-  s = n(73800),
+  o = n(73800),
   a = n(796075),
-  o = n(695469),
+  s = n(695469),
   l = n(481060);
 let u = null != (i = window.ResizeObserver) ? i : a.d,
   d = () => {
-    let e = s.useRef(null),
-      [t, n] = s.useState(0),
-      i = s.useMemo(() => new u(e => {
+    let e = o.useRef(null),
+      [t, n] = o.useState(0),
+      i = o.useMemo(() => new u(e => {
         let [t] = e;
         return n(t.contentRect.height)
       }), []);
-    return s.useLayoutEffect(() => (null != e.current && i.observe(e.current), () => i.disconnect()), [i]), {
+    return o.useLayoutEffect(() => (null != e.current && i.observe(e.current), () => i.disconnect()), [i]), {
       ref: e,
       height: t
     }
   };
 
-function c(e) {
+function g(e) {
   let {
     show: t,
     children: n,
     top: i = 0,
-    bottom: s = 0
+    bottom: o = 0
   } = e, {
     ref: a,
     height: u
-  } = d(), c = (0, l.q_F)({
+  } = d(), g = (0, l.q_F)({
     from: {
       height: 0,
       paddingBottom: "0px",
@@ -38,14 +38,14 @@ function c(e) {
     },
     to: {
       height: t ? u : 0,
-      paddingBottom: t ? "".concat(s, "px") : "0px",
+      paddingBottom: t ? "".concat(o, "px") : "0px",
       marginTop: t ? "".concat(i, "px") : "0px"
     },
     config: {
       tension: 170,
       friction: 26
     }
-  }), m = (0, l.q_F)({
+  }), c = (0, l.q_F)({
     from: {
       opacity: 0
     },
@@ -57,16 +57,16 @@ function c(e) {
       easing: t ? e => e ** 4 : e => e * (2 - e)
     }
   });
-  return (0, r.jsx)(o.animated.div, {
+  return (0, r.jsx)(s.animated.div, {
     style: {
       overflow: "hidden",
-      height: c.height,
-      paddingBottom: c.paddingBottom,
-      marginTop: c.marginTop
+      height: g.height,
+      paddingBottom: g.paddingBottom,
+      marginTop: g.marginTop
     },
-    children: (0, r.jsx)(o.animated.div, {
+    children: (0, r.jsx)(s.animated.div, {
       style: {
-        opacity: m.opacity
+        opacity: c.opacity
       },
       ref: a,
       children: n

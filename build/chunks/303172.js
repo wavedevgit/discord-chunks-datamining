@@ -33,7 +33,7 @@ async function s(e) {
   await (0, i.ZDy)(async () => {
     let {
       default: i
-    } = await Promise.all([n.e("85342"), n.e("50855")]).then(n.bind(n, 193049));
+    } = await n.e("85342").then(n.bind(n, 193049));
     return n => (0, r.jsx)(i, o({
       source: e,
       oneClickFlow: t
