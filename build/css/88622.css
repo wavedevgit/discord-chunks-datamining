@@ -1,6 +1,6 @@
 /**
   Module ID: 88622
-  Original File Name: 4200e65d52374604
+  Original File Name: 029807fee0ad2630
 **/
 .wrapper_b76891 {
     align-items: center;
@@ -827,10 +827,6 @@
     margin-bottom: 2px
 }
 
-.headerWithoutMargin__956c6 {
-    margin-bottom: 0
-}
-
 .orbsBalanceIcon__956c6 {
     height: 14px;
     margin-right: 3px;
@@ -851,23 +847,6 @@
     position: absolute;
     right: 0;
     top: 0
-}
-
-.rewardsDisclosures__956c6 {
-    align-self: flex-start;
-    border-bottom: 1px solid var(--border-subtle);
-    display: flex;
-    flex: 0 1 auto;
-    gap: 8px;
-    margin-bottom: 2px;
-    padding-bottom: 2px
-}
-
-.rewardsDisclosuresItemPremiumHighlight__956c6 {
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: linear-gradient(90deg,var(--premium-tier-2-purple) 0,var(--premium-tier-2-pink) 100%);
-    color: transparent
 }
 
 .container_cec934 {
@@ -1387,15 +1366,6 @@
     opacity: .5
 }
 
-.subTextList__10e9a {
-    list-style-position: outside;
-    list-style-type: "•"
-}
-
-.subTextList__10e9a,.subTextList__10e9a li {
-    padding-left: 4px
-}
-
 .rewardsListWrapper__10e9a {
     display: flex;
     flex-direction: column;
@@ -1739,10 +1709,6 @@
     margin-top: 74px
 }
 
-.questPromoContentWithCopySimplification__636a2 .rewardTile__636a2 {
-    margin-top: 98px
-}
-
 .hiddenRewardTile__636a2 {
     pointer-events: none;
     -webkit-user-select: none;
@@ -1875,15 +1841,6 @@
     cursor: pointer;
     height: 22px;
     width: 22px
-}
-
-.subTextList__636a2 {
-    list-style-position: outside;
-    list-style-type: "•"
-}
-
-.subTextList__636a2,.subTextList__636a2 li {
-    padding-left: 4px
 }
 
 .contentCollapsedBackgroundWrapper__636a2 {
@@ -2540,4 +2497,4 @@
     padding-top: 10px
 }
 
-/*# sourceMappingURL=4200e65d52374604.css.map*/
+/*# sourceMappingURL=029807fee0ad2630.css.map*/

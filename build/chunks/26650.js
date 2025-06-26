@@ -1,21 +1,21 @@
 /** Chunk was on 37447 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(255367),
   s = n(73800),
   o = n(481060),
   i = n(377171),
-  a = n(332173);
-let l = s.forwardRef(function(e, t) {
+  l = n(332173);
+let a = s.forwardRef(function(e, t) {
   let {
     isInventory: n,
     style: s,
-    children: l
+    children: a
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
-    className: a.desktopTooltip,
+    className: l.desktopTooltip,
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -38,14 +38,14 @@ let l = s.forwardRef(function(e, t) {
     }, s),
     children: [(0, r.jsx)(o.d3s, {
       size: "custom",
-      className: a.infoIcon,
+      className: l.infoIcon,
       height: n ? 16 : 12,
       width: n ? 16 : 12,
       color: n ? i.Z.TEXT_MUTED : i.Z.WHITE
     }), (0, r.jsx)(o.Text, {
       color: n ? "text-muted" : "always-white",
       variant: n ? "text-xs/normal" : "text-xxs/normal",
-      children: l
+      children: a
     })]
   })
 })

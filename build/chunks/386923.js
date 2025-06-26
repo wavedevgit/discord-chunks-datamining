@@ -54,7 +54,7 @@ let y = {
       maxHeight: 0
     },
     enter: {
-      maxHeight: 700
+      maxHeight: 850
     },
     leave: {
       maxHeight: 0
@@ -72,7 +72,7 @@ let y = {
       gap: 8,
       children: [(0, r.jsxs)(c.Kqy, {
         direction: "vertical",
-        gap: 24,
+        gap: 16,
         children: [(0, r.jsx)(c.Kqy, {
           direction: "vertical",
           gap: 4,
@@ -85,7 +85,7 @@ let y = {
           direction: "vertical",
           gap: 8,
           children: [(0, r.jsx)(c.Text, {
-            variant: "text-md/semibold",
+            variant: "text-lg/semibold",
             color: "header-secondary",
             children: b.intl.string(p.default["i7CH/P"])
           }), (0, r.jsxs)("ol", {
@@ -157,7 +157,7 @@ let y = {
           direction: "vertical",
           gap: 8,
           children: [(0, r.jsx)(c.Text, {
-            variant: "text-md/semibold",
+            variant: "text-lg/semibold",
             color: "header-secondary",
             children: b.intl.string(p.default.qJWXs7)
           }), (0, r.jsxs)("ul", {
@@ -182,7 +182,7 @@ let y = {
           })]
         }), (0, r.jsxs)(c.Kqy, {
           direction: "vertical",
-          gap: 4,
+          gap: 8,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "header-secondary",

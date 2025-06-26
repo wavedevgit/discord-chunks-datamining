@@ -1,6 +1,6 @@
 /** Chunk was on 64838 **/
 n.d(t, {
-  Z: () => T
+  Z: () => d
 });
 var l = n(255367);
 n(73800);
@@ -8,56 +8,47 @@ var s = n(120356),
   r = n.n(s),
   i = n(481060),
   u = n(192023),
-  o = n(467628),
-  a = n(373370),
-  c = n(65443),
-  d = n(644646),
-  E = n(46140),
-  S = n(817447);
-let T = function(e) {
+  o = n(373370),
+  a = n(644646),
+  c = n(817447);
+let d = function(e) {
   let {
     className: t,
     autoplay: n,
     quest: s,
-    questContent: T,
-    taskDetails: m,
-    location: A,
-    sourceQuestContent: j
-  } = e, _ = (0, a.DD)({
+    questContent: d,
+    taskDetails: E,
+    location: S,
+    sourceQuestContent: T
+  } = e, m = (0, o.DD)({
     quest: s,
-    taskDetails: m,
-    location: A,
-    questContent: T,
-    sourceQuestContent: j
-  }), f = (0, o.j)({
-    location: E.dr.QUESTS_BAR_MOBILE
-  }), p = (0, u.h)({
-    location: A,
+    taskDetails: E,
+    location: S,
+    questContent: d,
+    sourceQuestContent: T
+  }), A = (0, u.h)({
+    location: S,
     questConfig: s.config
   });
   return (0, l.jsxs)("div", {
-    className: r()(S.wrapper, t),
-    style: p ? void 0 : {
+    className: r()(c.wrapper, t),
+    style: A ? void 0 : {
       color: s.config.colors.primary
     },
-    children: [(0, l.jsx)(d.Z, {
+    children: [(0, l.jsx)(a.Z, {
       autoplay: n,
-      className: S.rewardTile,
+      className: c.rewardTile,
       quest: s,
-      questContent: T,
-      location: A,
-      sourceQuestContent: j
-    }), (0, l.jsxs)("div", {
-      className: S.copy,
-      children: [(0, l.jsx)(i.Text, {
+      questContent: d,
+      location: S,
+      sourceQuestContent: T
+    }), (0, l.jsx)("div", {
+      className: c.copy,
+      children: (0, l.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: _
-      }), f && (0, l.jsx)(c.Z, {
-        textColor: "text-muted",
-        withRewardName: !0,
-        quest: s
-      })]
+        children: m
+      })
     })]
   })
 }

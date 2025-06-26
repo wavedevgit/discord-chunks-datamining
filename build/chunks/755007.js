@@ -1,25 +1,25 @@
-/** Chunk was on 81530 **/
+/** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   Z: () => c
 });
-var n = r(255367);
-r(73800);
-var i = r(120356),
-  o = r.n(i),
-  l = r(481060),
-  a = r(960919),
-  s = r(595392);
+var r = n(255367);
+n(73800);
+var l = n(120356),
+  a = n.n(l),
+  o = n(481060),
+  i = n(960919),
+  s = n(595392);
 
 function c(e) {
   let {
     orbAmount: t,
-    className: r
+    className: n
   } = e;
-  return (0, n.jsxs)(l.Text, {
+  return (0, r.jsxs)(o.Text, {
     variant: "text-md/semibold",
-    className: o()(s.orbPriceTag, r),
-    children: [(0, n.jsx)(a.Z, {
+    className: a()(s.orbPriceTag, n),
+    children: [(0, r.jsx)(i.Z, {
       shouldUseThemeColor: !0
     }), t]
   })

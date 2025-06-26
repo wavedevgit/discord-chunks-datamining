@@ -56,42 +56,42 @@ function C(e) {
   var t, n, o, C;
   let {
     quest: O,
-    questContent: S,
-    onReceiveErrorHints: E,
+    questContent: E,
+    onReceiveErrorHints: S,
     contentPosition: w,
-    rowIndex: T,
-    sourceQuestContent: P
+    rowIndex: P,
+    sourceQuestContent: T
   } = e, N = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), A = (0, g.g2)({
     useReducedMotion: N
   }), R = (0, u.O5)(), k = (0, d._s)({
     quest: O
-  }), B = (0, d.z)(O), q = (0, d.B6)(O.config.expiresAt, {
+  }), B = (0, d.z)(O), I = (0, d.B6)(O.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), {
-    isClaiming: I,
+    isClaiming: q,
     isEnrolling: D,
     isQuestEnrollmentBlocked: Q
   } = (0, i.cj)([p.Z], () => ({
     isClaiming: p.Z.isClaimingReward(O.id) || p.Z.isFetchingRewardCode(O.id),
     isEnrolling: p.Z.isEnrolling(O.id),
     isQuestEnrollmentBlocked: null != p.Z.questEnrollmentBlockedUntil
-  })), L = (null == (t = O.userStatus) ? void 0 : t.enrolledAt) != null, V = (null == (n = O.userStatus) ? void 0 : n.completedAt) != null, M = V && (null == (o = O.userStatus) ? void 0 : o.claimedAt) == null, W = (0, f.iQ)(O), Z = !(0, f.zi)(O), U = (0, d._Q)(O), H = (0, f.Xv)(O.config), z = (0, f.PB)(O), F = (0, f.HJ)(O), X = (0, f.Vl)(O), K = s.useRef(null), Y = (0, d.Rf)(O), [G, J, $] = (0, d.me)(O, Y), ee = Z && U === d.OH.ACCEPTED, et = ee && G === m.LI.SELECT, en = ee && !et && J.length > 1, er = s.useCallback(e => {
-    $(e), e === b.cd.DESKTOP && E([])
-  }, [$, E]), {
+  })), V = (null == (t = O.userStatus) ? void 0 : t.enrolledAt) != null, L = (null == (n = O.userStatus) ? void 0 : n.completedAt) != null, M = L && (null == (o = O.userStatus) ? void 0 : o.claimedAt) == null, W = (0, f.iQ)(O), Z = !(0, f.zi)(O), U = (0, d._Q)(O), H = (0, f.Xv)(O.config), z = (0, f.PB)(O), F = (0, f.HJ)(O), X = (0, f.Vl)(O), K = s.useRef(null), Y = (0, d.Rf)(O), [G, J, $] = (0, d.me)(O, Y), ee = Z && U === d.OH.ACCEPTED, et = ee && G === m.LI.SELECT, en = ee && !et && J.length > 1, er = s.useCallback(e => {
+    $(e), e === b.cd.DESKTOP && S([])
+  }, [$, S]), {
     text: es,
     onClick: eo
   } = (0, g.Ks)({
     progressState: U,
     quest: O,
-    questContent: S,
+    questContent: E,
     isCollectibleQuest: H,
     questContentPosition: w,
-    questContentRowIndex: T,
+    questContentRowIndex: P,
     inGiftInventory: !0,
     isVideoQuest: z,
     inGameQuest: X,
-    sourceQuestContent: P
+    sourceQuestContent: T
   }), {
     startingConsoleQuest: ea,
     startConsoleQuest: ei
@@ -100,24 +100,24 @@ function C(e) {
     beforeRequest: () => {
       A.startAnimation(), R({
         questId: O.id,
-        questContent: S,
+        questContent: E,
         questContentCTA: u.jZ.DEFIBRILLATOR,
         questContentPosition: w,
-        questContentRowIndex: T,
-        sourceQuestContent: P
+        questContentRowIndex: P,
+        sourceQuestContent: T
       })
     },
     afterRequest: e => {
-      A.stopAnimation(), E(e)
+      A.stopAnimation(), S(e)
     }
   }), el = (null == (C = O.userStatus) ? void 0 : C.claimedAt) != null, ec = null;
   return (W && M ? ec = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
-    submitting: I,
+    submitting: q,
     onClick: null != eo ? eo : void 0,
     className: _.button,
     children: es
-  }) : V ? ec = z ? (0, r.jsxs)(r.Fragment, {
+  }) : L ? ec = z ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zxk, {
       color: l.Ttl.PRIMARY,
       className: _.button,
@@ -127,7 +127,7 @@ function C(e) {
       onClick: () => {
         (0, x.openVideoQuestModal)({
           quest: O,
-          sourceQuestContent: P
+          sourceQuestContent: T
         })
       },
       children: (0, r.jsxs)("div", {
@@ -151,7 +151,7 @@ function C(e) {
     children: es
   }) : Z ? Z && M ? ec = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
-    submitting: I,
+    submitting: q,
     onClick: null != eo ? eo : void 0,
     className: _.button,
     children: es
@@ -160,7 +160,7 @@ function C(e) {
     disabled: !0,
     className: _.button,
     children: j.intl.string(j.t.BkZhUF)
-  }) : Z && L && !el ? ec = et ? (0, r.jsx)(l.PhF, {
+  }) : Z && V && !el ? ec = et ? (0, r.jsx)(l.PhF, {
     className: _.platformSelectorPrimary,
     isSelected: () => !1,
     options: v,
@@ -199,7 +199,7 @@ function C(e) {
     disabled: !0,
     className: _.button,
     children: j.intl.string(j.t["9KoPyM"])
-  }) : Z && !L && (ec = Q ? (0, r.jsxs)(r.Fragment, {
+  }) : Z && !V && (ec = Q ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.zxk, {
       color: l.Ttl.PRIMARY,
       className: _.button,
@@ -208,7 +208,7 @@ function C(e) {
     }), (0, r.jsx)(l.zxk, {
       color: l.Ttl.BRAND,
       className: _.button,
-      onClick: () => (0, x.openQuestMinorEnrollmentBlockModal)(O, S, P),
+      onClick: () => (0, x.openQuestMinorEnrollmentBlockModal)(O, E, T),
       children: j.intl.string(j.t.vY9GgI)
     })]
   }) : (0, r.jsx)(l.zxk, {
@@ -222,7 +222,7 @@ function C(e) {
     disabled: !0,
     className: _.button,
     children: j.intl.format(j.t["14o6QU"], {
-      expiryDate: q
+      expiryDate: I
     })
   }), null == ec) ? null : (0, r.jsxs)("div", {
     className: _.container,

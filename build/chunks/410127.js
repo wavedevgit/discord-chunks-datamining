@@ -1,15 +1,15 @@
-/** Chunk was on 81530 **/
+/** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
-  Z: () => l
-}), r(35282);
-var n = r(593473),
-  i = r(114858),
-  o = r(215023);
-let l = () => {
-  let e = (0, i.TH)(),
+n.d(t, {
+  Z: () => o
+}), n(35282);
+var r = n(593473),
+  l = n(114858),
+  a = n(215023);
+let o = () => {
+  let e = (0, l.TH)(),
     {
       tab: t
-    } = (0, n.parse)(e.search);
-  if (Object.values(o.AW).includes(t)) return t
+    } = (0, r.parse)(e.search);
+  if (Object.values(a.AW).includes(t)) return t
 }

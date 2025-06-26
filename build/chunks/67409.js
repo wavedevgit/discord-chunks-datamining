@@ -1,14 +1,14 @@
-/** Chunk was on 81530 **/
+/** Chunk was on 45620 **/
 "use strict";
-r.d(t, {
-  S: () => i
+n.d(t, {
+  S: () => l
 });
-var n = r(979554);
-let i = e => {
-  var t, r, i;
+var r = n(979554);
+let l = e => {
+  var t, n, l;
   let {
-    product: o,
-    selectedVariantIndex: l
+    product: a,
+    selectedVariantIndex: o
   } = e;
-  return o.type === n.Z.VARIANTS_GROUP && null != l && null != (i = null == (r = o.variants) || null == (t = r[l]) ? void 0 : t.skuId) ? i : o.skuId
+  return a.type === r.Z.VARIANTS_GROUP && null != o && null != (l = null == (n = a.variants) || null == (t = n[o]) ? void 0 : t.skuId) ? l : a.skuId
 }

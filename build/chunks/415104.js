@@ -29,21 +29,21 @@ function j(e) {
     rowIndex: _,
     impressionRef: v,
     sourceQuestContent: y
-  } = e, [C, O] = s.useState(!1), [S, E] = s.useState([]), w = (0, l.qb)(o), T = s.useMemo(() => (0, u.q8)(o), [o]), P = (0, i._F)(), N = s.useCallback(() => {
-    O(!0), P({
+  } = e, [C, O] = s.useState(!1), [E, S] = s.useState([]), w = (0, l.qb)(o), P = s.useMemo(() => (0, u.q8)(o), [o]), T = (0, i._F)(), N = s.useCallback(() => {
+    O(!0), T({
       questId: o.id,
       event: h.rMx.QUEST_HOVER,
       properties: (0, i.mH)(d),
       sourceQuestContent: y
-    }), T && (0, p.loadVideoQuestModal)()
-  }, [P, o.id, d, T, y]), A = s.useCallback(() => {
-    O(!1), P({
+    }), P && (0, p.loadVideoQuestModal)()
+  }, [T, o.id, d, P, y]), A = s.useCallback(() => {
+    O(!1), T({
       questId: o.id,
       event: h.rMx.QUEST_HOVER_OFF,
       properties: (0, i.mH)(d),
       sourceQuestContent: y
     })
-  }, [P, o.id, d, y]), R = s.useContext(f.t), {
+  }, [T, o.id, d, y]), R = s.useContext(f.t), {
     visibilityElementRef: k,
     almostVisibleInViewport: B
   } = function(e) {
@@ -72,7 +72,7 @@ function j(e) {
     children: [(0, r.jsx)(g.Z, {
       quest: o,
       isHovering: C,
-      errorHints: S,
+      errorHints: E,
       warningHints: w,
       isVisibleInViewport: B,
       sourceQuestContent: y
@@ -82,7 +82,7 @@ function j(e) {
       isHovering: C,
       contentPosition: j,
       rowIndex: _,
-      onReceiveErrorHints: E,
+      onReceiveErrorHints: S,
       isVisibleInViewport: B,
       sourceQuestContent: y
     })]

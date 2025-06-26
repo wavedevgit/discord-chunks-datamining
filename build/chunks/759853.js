@@ -29,14 +29,14 @@ let b = ["#51BC9D"],
     } = e, {
       completionSpring: y,
       startCompletionAnimation: C
-    } = (0, f.G)(), O = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, S = s.useRef(!1), E = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), T = (0, u.e7)([m.Z], () => m.Z.hasLayers()), P = (0, d.Z)(T), [N, A] = s.useState(null), [R, k] = s.useState(null), B = s.useRef(new i.qA({
+    } = (0, f.G)(), O = (null == (t = j.userStatus) ? void 0 : t.completedAt) != null, E = s.useRef(!1), S = (0, u.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, u.e7)([m.Z], () => m.Z.hasLayers()), T = (0, d.Z)(P), [N, A] = s.useState(null), [R, k] = s.useState(null), B = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), q = (0, i.uR)(N, R), I = s.useCallback(() => {
-      if (E) return;
+    })), I = (0, i.uR)(N, R), q = s.useCallback(() => {
+      if (S) return;
       let e = _.current,
         t = w.current;
-      if (null != t && null != e && q.isReady) {
+      if (null != t && null != e && I.isReady) {
         var n, r, s, o, a, i;
         let {
           x: l,
@@ -45,7 +45,7 @@ let b = ["#51BC9D"],
           x: u,
           y: d
         } = t.getBoundingClientRect();
-        q.createMultipleConfetti((n = l - u, r = c - d, s = e.clientHeight, o = e.clientWidth, a = function(e) {
+        I.createMultipleConfetti((n = l - u, r = c - d, s = e.clientHeight, o = e.clientWidth, a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -110,16 +110,16 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [_, w, q, E]), D = (0, d.Z)(v);
+    }, [_, w, I, S]), D = (0, d.Z)(v);
     return (s.useEffect(() => {
-      O && v && !D && (C(), I())
-    }, [v, O, C, I, D]), s.useEffect(() => {
-      O && !T && P && setTimeout(() => {
-        C(), I()
+      O && v && !D && (C(), q())
+    }, [v, O, C, q, D]), s.useEffect(() => {
+      O && !P && T && setTimeout(() => {
+        C(), q()
       }, 200)
-    }, [O, P, T, C, I]), s.useEffect(() => {
-      q.isReady && (!S.current && O && (C(), I()), S.current = O)
-    }, [O, S, I, C, q]), E) ? null : (0, r.jsxs)("div", {
+    }, [O, T, P, C, q]), s.useEffect(() => {
+      I.isReady && (!E.current && O && (C(), q()), E.current = O)
+    }, [O, E, q, C, I]), S) ? null : (0, r.jsxs)("div", {
       className: x.wrapper,
       "aria-hidden": "true",
       ref: w,

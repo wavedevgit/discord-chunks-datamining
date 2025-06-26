@@ -1,7 +1,7 @@
 /** Chunk was on 88622 **/
 n.d(t, {
   i: () => w,
-  y: () => P
+  y: () => T
 });
 var r = n(255367),
   s = n(73800),
@@ -79,7 +79,7 @@ let O = e => {
       children: (0, f.pO)(t) ? _.intl.string(_.t.hvVgAQ) : _.intl.string(_.t.lwQdjI)
     })
   },
-  S = e => {
+  E = e => {
     var t;
     let {
       quest: n,
@@ -100,12 +100,11 @@ let O = e => {
       children: _.intl.string(_.t.csptqa)
     })
   },
-  E = e => {
+  S = e => {
     let {
       quest: t
     } = e, n = (0, f.Vl)(t), s = t.config.features.includes(b.S7.START_QUEST_CTA), o = (0, g.CR)({
-      quest: t,
-      location: b.dr.QUESTS_BAR
+      quest: t
     }), {
       launchInGameActivity: a
     } = (0, p.zB)(t);
@@ -127,9 +126,9 @@ let O = e => {
         ctaLabel: _,
         onClick: C,
         questContent: O = m.jn.QUEST_BAR_V2,
-        sourceQuestContent: S
+        sourceQuestContent: E
       } = e,
-      E = function(e, t) {
+      S = function(e, t) {
         if (null == e) return {};
         var n, r, s = function(e, t) {
           if (null == e) return {};
@@ -147,10 +146,10 @@ let O = e => {
     let w = (0, x.hf)({
         quest: u,
         questContent: O,
-        sourceQuestContent: S
+        sourceQuestContent: E
       }),
-      T = (0, g.up)(b.dr.QUESTS_BAR),
-      P = s.useCallback(e => {
+      P = (0, g.up)(b.dr.QUESTS_BAR),
+      T = s.useCallback(e => {
         var t;
         null == C || C(e), (0, f.xN)(u.config) && (null == (t = u.userStatus) ? void 0 : t.claimedAt) != null ? (0, c.mK)({
           openInLayer: !1,
@@ -162,12 +161,12 @@ let O = e => {
     return (0, r.jsx)(i.gtL, (t = y({
       fullWidth: !0,
       size: i.zxk.Sizes.SMALL,
-      onClick: P,
+      onClick: T,
       pauseAnimation: d || !p,
       className: a()(v.cta, h),
       buttonShineClassName: v.shine
-    }, E), n = n = {
-      children: null != _ ? _ : T
+    }, S), n = n = {
+      children: null != _ ? _ : P
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -179,7 +178,7 @@ let O = e => {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  T = e => {
+  P = e => {
     var t;
     let {
       quest: n,
@@ -203,10 +202,10 @@ let O = e => {
       sourceQuestContent: s,
       taskDetails: d
     });
-    if (x) return (0, r.jsx)(E, {
+    if (x) return (0, r.jsx)(S, {
       quest: n
     });
-    if (u === m.LI.CONSOLE && i) return (0, r.jsx)(S, {
+    if (u === m.LI.CONSOLE && i) return (0, r.jsx)(E, {
       quest: n,
       sourceQuestContent: s
     });
@@ -217,7 +216,7 @@ let O = e => {
     return null
   };
 
-function P(e) {
+function T(e) {
   return (0, r.jsxs)("div", {
     className: v.ctaButtons,
     children: [e.showBackButton && (0, r.jsx)(i.zxk, {
@@ -231,6 +230,6 @@ function P(e) {
       children: (0, r.jsx)(i.V7D, {
         className: v.backIcon
       })
-    }), (0, r.jsx)(T, y({}, e))]
+    }), (0, r.jsx)(P, y({}, e))]
   })
 }

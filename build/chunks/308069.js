@@ -28,21 +28,21 @@ let j = e => {
     useReducedMotion: v,
     isExpanded: y,
     isExpansionAnimationComplete: C
-  } = e, O = (0, u.aM)(), S = s.useCallback(() => {
+  } = e, O = (0, u.aM)(), E = s.useCallback(() => {
     (0, g.openDisclosureModal)(t, {
       content: d.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_DISCLOSURE,
       sourceQuestContent: d.jn.QUEST_BAR_V2
     })
-  }, [t]), E = s.useCallback(() => {
+  }, [t]), S = s.useCallback(() => {
     (0, p.nc)(t, {
       content: d.jn.QUEST_BAR_V2,
       ctaContent: c.jZ.OPEN_GAME_LINK,
       impressionId: O,
       sourceQuestContent: d.jn.QUEST_BAR_V2
     })
-  }, [O, t]), w = y && C, T = (0, r.jsx)(l.P3F, {
-    onClick: E,
+  }, [O, t]), w = y && C, P = (0, r.jsx)(l.P3F, {
+    onClick: S,
     className: a()(b.clickable, {
       [b.logo]: w
     }),
@@ -74,7 +74,7 @@ let j = e => {
       quest: t,
       expansionSpring: n,
       isFullyExpanded: w,
-      partnerBranding: T,
+      partnerBranding: P,
       useReducedMotion: v
     }), (0, r.jsxs)(i.animated.div, {
       className: b.promotedBadgeWrapper,
@@ -86,7 +86,7 @@ let j = e => {
       },
       children: [(0, r.jsxs)(l.P3F, {
         className: b.promotedBadge,
-        onClick: S,
+        onClick: E,
         children: [(0, r.jsx)(l.Text, {
           color: "always-white",
           variant: "text-xs/normal",

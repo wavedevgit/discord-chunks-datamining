@@ -1,54 +1,51 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => p
+  Z: () => d
 });
 var r = n(255367);
 n(73800);
 var s = n(695469),
   o = n(481060),
   a = n(497505),
-  i = n(467628),
-  l = n(644646),
-  c = n(46140),
-  u = n(388032),
-  d = n(420444);
-let p = e => {
+  i = n(644646),
+  l = n(46140),
+  c = n(388032),
+  u = n(420444);
+let d = e => {
   let {
     quest: t,
     expansionSpring: n,
-    isFullyExpanded: p,
-    partnerBranding: m,
-    useReducedMotion: f
-  } = e, g = (0, i.j)({
-    location: c.dr.QUESTS_BAR
-  });
+    isFullyExpanded: d,
+    partnerBranding: p,
+    useReducedMotion: m
+  } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: d.rewardTileSpacer
+      className: u.rewardTileSpacer
     }), (0, r.jsx)(s.animated.div, {
-      className: d.rewardTileContainer,
+      className: u.rewardTileContainer,
       style: {
         transform: (0, s.to)([n.to({
           range: [0, 1],
           output: [-8, 0]
         }), n.to({
           range: [0, 1],
-          output: [0, g ? 116 : 92]
+          output: [0, 92]
         }), n.to({
           range: [1, 0],
           output: [1, .75]
         })], (e, t, n) => "translate(".concat(e, "px, ").concat(t, "px) scale(").concat(n, ")"))
       },
-      children: (0, r.jsx)(l.Z, {
+      children: (0, r.jsx)(i.Z, {
         learnMoreStyle: "text",
         quest: t,
         questContent: a.jn.QUEST_BAR_V2,
-        location: c.dr.QUESTS_BAR,
-        autoplay: p && !f,
+        location: l.dr.QUESTS_BAR,
+        autoplay: d && !m,
         sourceQuestContent: a.jn.QUEST_BAR_V2
       })
     }), (0, r.jsxs)(s.animated.div, {
-      className: d.rewardHighlightLogoCTA,
+      className: u.rewardHighlightLogoCTA,
       style: {
         transform: (0, s.to)([n.to({
           range: [0, 1],
@@ -59,10 +56,10 @@ let p = e => {
         })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
       },
       children: [(0, r.jsx)("div", {
-        className: d.partnerBranding,
-        children: m
+        className: u.partnerBranding,
+        children: p
       }), (0, r.jsx)(s.animated.div, {
-        className: d.rewardHighlightCTA,
+        className: u.rewardHighlightCTA,
         style: {
           opacity: n.to({
             range: [0, 1],
@@ -72,7 +69,7 @@ let p = e => {
         children: (0, r.jsx)(o.Text, {
           color: "always-white",
           variant: "text-xs/medium",
-          children: u.intl.string(u.t["1Wvve3"])
+          children: c.intl.string(c.t["1Wvve3"])
         })
       })]
     })]

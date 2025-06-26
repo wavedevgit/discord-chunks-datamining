@@ -30,7 +30,7 @@ let p = s.forwardRef((e, t) => {
   }, O = {
     boxShadow: "0 0 30px 0px ".concat(h.glow)
   }, {
-    progressTextAnimation: S
+    progressTextAnimation: E
   } = (0, l.q_F)({
     progressTextAnimation: +(null != f && 1 !== s),
     config: u.Y
@@ -43,7 +43,7 @@ let p = s.forwardRef((e, t) => {
       style: O,
       children: [x, (0, r.jsxs)(i.animated.div, {
         style: {
-          opacity: S
+          opacity: E
         },
         className: a()(d.coverContent, d.progressTextWrapper),
         children: [(0, r.jsx)("div", {

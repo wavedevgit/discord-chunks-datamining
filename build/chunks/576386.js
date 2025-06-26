@@ -1,7 +1,7 @@
-/** Chunk was on 81530 **/
+/** Chunk was on 30662 **/
 "use strict";
 r.d(t, {
-  Z: () => v
+  Z: () => f
 }), r(388685);
 var n = r(255367),
   i = r(73800),
@@ -14,23 +14,23 @@ var n = r(255367),
   d = r(594174),
   p = r(388032),
   b = r(908998);
-let f = e => {
+let v = e => {
     let {
       nameplate: t,
       isPurchased: r = !1,
       isSelected: o = !1,
       onClick: p
-    } = e, f = (0, a.e7)([d.default], () => d.default.getCurrentUser()), [v, m] = (0, i.useState)(!1);
-    return null == f ? null : (0, n.jsxs)(s.P3F, {
+    } = e, v = (0, a.e7)([d.default], () => d.default.getCurrentUser()), [f, m] = (0, i.useState)(!1);
+    return null == v ? null : (0, n.jsxs)(s.P3F, {
       className: b.nameplateItem,
       onClick: p,
       onMouseEnter: () => m(!0),
       onMouseLeave: () => m(!1),
       children: [(0, n.jsx)(c.Z, {
         nameplate: t,
-        user: f,
+        user: v,
         showPlaceholderUser: !0,
-        isHighlighted: v
+        isHighlighted: f
       }), (0, n.jsx)("div", {
         className: l()(b.nameplateItemOverlay, {
           [b.selected]: o
@@ -45,7 +45,7 @@ let f = e => {
       })]
     })
   },
-  v = e => {
+  f = e => {
     let {
       selected: t,
       onSelect: r,
@@ -85,7 +85,7 @@ let f = e => {
           })]
         }), 0 !== c.length ? (0, n.jsx)("div", {
           className: b.list,
-          children: c.map(e => (0, n.jsx)(f, {
+          children: c.map(e => (0, n.jsx)(v, {
             nameplate: e,
             isPurchased: !0,
             isSelected: (null == t ? void 0 : t.id) === e.id,
@@ -97,7 +97,7 @@ let f = e => {
           children: p.intl.string(p.t["1vbbeX"])
         }), (0, n.jsx)("div", {
           className: b.list,
-          children: o.map(e => (0, n.jsx)(f, {
+          children: o.map(e => (0, n.jsx)(v, {
             nameplate: e,
             isSelected: (null == t ? void 0 : t.id) === e.id,
             onClick: () => r(e, !1)

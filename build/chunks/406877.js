@@ -1,40 +1,40 @@
-/** Chunk was on 53162 **/
-n.d(e, {
-  Z: () => s
+/** Chunk was on 69856 **/
+n.d(t, {
+  Z: () => c
 }), n(388685);
 var r = n(73800),
-  a = n(668781),
-  o = n(881052),
-  l = n(824389),
-  i = n(179838),
-  c = n(388032);
+  i = n(668781),
+  l = n(881052),
+  a = n(824389),
+  o = n(179838),
+  s = n(388032);
 
-function s(t, e) {
-  let [n, s] = r.useState(!1);
+function c(e, t) {
+  let [n, c] = r.useState(!1);
   return {
     isLoading: n,
     downloadAttachment: r.useCallback(async n => {
-      if (null != t && null != e) {
-        s(!0);
+      if (null != e && null != t) {
+        c(!0);
         try {
           let {
             url: r
-          } = await l.gs({
-            guildId: t,
-            productId: e,
+          } = await a.gs({
+            guildId: e,
+            productId: t,
             attachmentId: n
           });
-          await i.L(r)
-        } catch (e) {
-          let t = e instanceof o.Hx ? e.getAnyErrorMessage() : void 0;
-          a.Z.show({
-            title: c.intl.string(c.t.R0RpRU),
-            body: null != t ? t : c.intl.string(c.t.eAn6z8)
+          await o.L(r)
+        } catch (t) {
+          let e = t instanceof l.Hx ? t.getAnyErrorMessage() : void 0;
+          i.Z.show({
+            title: s.intl.string(s.t.R0RpRU),
+            body: null != e ? e : s.intl.string(s.t.eAn6z8)
           })
         } finally {
-          s(!1)
+          c(!1)
         }
       }
-    }, [t, e])
+    }, [e, t])
   }
 }
