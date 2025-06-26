@@ -25,8 +25,8 @@ var i, r = n(255367),
   S = n(916001),
   v = n(539290),
   T = n(336197),
-  N = n(690221),
-  I = n(307643),
+  I = n(690221),
+  N = n(307643),
   y = n(378233),
   A = n(419922),
   P = n(46141),
@@ -81,8 +81,8 @@ function X(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let J = e => "https://".concat(F.xr4, "/hc/").concat(e.toLowerCase(), "/requests/new?ticket_form_id=360000118612"),
-  Q = [F.epS.DURABLE_PRIMARY, F.epS.DURABLE, F.epS.CONSUMABLE],
+let Q = e => "https://".concat(F.xr4, "/hc/").concat(e.toLowerCase(), "/requests/new?ticket_form_id=360000118612"),
+  J = [F.epS.DURABLE_PRIMARY, F.epS.DURABLE, F.epS.CONSUMABLE],
   $ = [F.PyE.FAILED, F.PyE.REVERSED, F.PyE.CANCELED],
   ee = [z.gg.APPLE],
   et = e => {
@@ -184,7 +184,7 @@ function er(e) {
       detail: o
     }), null != a && (0, r.jsx)(ei, {
       description: Y.intl.string(Y.t.Wpn8z8),
-      detail: (0, r.jsx)(N.Z, {
+      detail: (0, r.jsx)(I.Z, {
         onClick: c,
         children: a.name
       })
@@ -389,7 +389,7 @@ class el extends(i = s.PureComponent) {
       i = this.validateRefundRules();
     if (i.includes("PAYMENT_GATEWAY") || i.includes("PAYMENT_STATUS") || i.includes("ALREADY_REFUNDED") || i.includes("SKU_STICKER_PACK") || i.includes("SUBSCRIPTION_TYPE") || i.includes("GUILD_PRODUCT")) return null;
     let l = 0 === i.length,
-      a = J(t),
+      a = Q(t),
       o = this.isPremium ? 5 : 14;
     return e = i.includes("SKU_TYPE") ? Y.intl.format(Y.t["5lvoVV"], {
       supportURL: a
@@ -454,7 +454,7 @@ class el extends(i = s.PureComponent) {
           daysSincePurchase: this.daysSincePurchase
         }))
       }), (0, r.jsx)(g.eee, {
-        href: J(t),
+        href: Q(t),
         children: Y.intl.string(Y.t.re5nOD)
       })]
     })
@@ -572,7 +572,7 @@ class el extends(i = s.PureComponent) {
         buttonPosition: v.E.RIGHT,
         notice: Y.intl.string(Y.t["3AvulJ"]),
         ctaLabel: Y.intl.string(Y.t.zoztQE),
-        onClick: () => (0, h.Z)(J(n))
+        onClick: () => (0, h.Z)(Q(n))
       }) : null != i && null != e.sku && (0, r.jsx)(es, {
         guildId: i,
         guildProductListingId: e.sku.id
@@ -715,7 +715,7 @@ function ea(e) {
     locale: l,
     compactMode: a,
     className: o
-  } = e, c = null != i.sku && Q.includes(i.sku.type), d = null != i.sku && c ? i.sku.applicationId : null, u = null == (t = i.sku) ? void 0 : t.applicationId, g = (null == (n = i.subscription) ? void 0 : n.type) === F.NYc.APPLICATION, {
+  } = e, c = null != i.sku && J.includes(i.sku.type), d = null != i.sku && c ? i.sku.applicationId : null, u = null == (t = i.sku) ? void 0 : t.applicationId, g = (null == (n = i.subscription) ? void 0 : n.type) === F.NYc.APPLICATION, {
     applicationStatistics: p,
     gameApplication: h,
     paymentSources: b
@@ -728,7 +728,7 @@ function ea(e) {
     }
   }), _ = (0, m.e7)([f.Z], () => null != u ? f.Z.getApplication(u) : null);
   s.useEffect(() => {
-    g && null != u && (0, I.UM)(u)
+    g && null != u && (0, N.UM)(u)
   }, [u, g]);
   let x = (0, m.e7)([R.Z], () => R.Z.getGuild(null == h ? void 0 : h.guildId)),
     E = c ? h : void 0,

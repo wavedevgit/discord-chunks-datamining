@@ -13,8 +13,8 @@ var i = t(255367),
   x = t(236289),
   m = t(788080),
   u = t(613734),
-  h = t(800530),
-  _ = t(388032),
+  _ = t(800530),
+  h = t(388032),
   C = t(473787),
   p = t(91463);
 
@@ -27,10 +27,10 @@ function N(e) {
     onBack: g
   } = e, j = (0, u.U0)(), I = (0, r.e7)([x.Z], () => x.Z.getFreeTextAppealReason()), [k, E] = s.useState(""), [T, f] = s.useState(!1);
   s.useEffect(() => {
-    E(null != I ? I : ""), f(j === h.bK.SOMETHING_ELSE)
+    E(null != I ? I : ""), f(j === _.bK.SOMETHING_ELSE)
   }, [I, j, t]);
-  let S = e => {
-      f(e === h.bK.SOMETHING_ELSE), e !== h.bK.SOMETHING_ELSE && (E(""), c.Z.dispatch({
+  let A = e => {
+      f(e === _.bK.SOMETHING_ELSE), e !== _.bK.SOMETHING_ELSE && (E(""), c.Z.dispatch({
         type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
         userInput: ""
       })), c.Z.dispatch({
@@ -38,7 +38,7 @@ function N(e) {
         signal: e
       })
     },
-    A = h.RY.map(e => ({
+    S = _.RY.map(e => ({
       value: e,
       name: (0, m.ox)(e)
     }));
@@ -50,12 +50,12 @@ function N(e) {
       children: [(0, i.jsx)(o.X6q, {
         className: p.title,
         variant: "heading-xl/semibold",
-        children: _.intl.string(_.t["C5q+pa"])
+        children: h.intl.string(h.t["C5q+pa"])
       }), (0, i.jsx)(o.Text, {
         className: p.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
-        children: _.intl.string(_.t.VEcRh4)
+        children: h.intl.string(h.t.VEcRh4)
       }), null != l && (0, i.jsx)(o.olH, {
         className: p.closeButton,
         onClick: l
@@ -68,30 +68,30 @@ function N(e) {
         radioItemClassName: p.radioItem,
         size: o.FXm.Sizes.NOT_SET,
         value: j,
-        options: A,
+        options: S,
         onChange: e => {
           let {
             value: n
           } = e;
-          return S(n)
+          return A(n)
         }
       }), t && T && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.Kx8, {
           rows: 4,
           maxLength: 1024,
-          placeholder: _.intl.string(_.t.bQrZIC),
+          placeholder: h.intl.string(h.t.bQrZIC),
           value: k,
           onChange: E,
           autoFocus: !0
         }), (0, i.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "header-muted",
-          children: _.intl.string(_.t.xfNY3N)
+          children: h.intl.string(h.t.xfNY3N)
         })]
       }), (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
         className: C.disclaimer,
-        children: _.intl.format(_.t["8k9GCQ"], {})
+        children: h.intl.format(h.t["8k9GCQ"], {})
       })]
     }), (0, i.jsxs)(o.mzw, {
       children: [(0, i.jsx)(o.zxk, {
@@ -102,7 +102,7 @@ function N(e) {
           }), null == N || N()
         },
         color: o.zxk.Colors.BRAND,
-        children: _.intl.string(_.t.PDTjLC)
+        children: h.intl.string(h.t.PDTjLC)
       }), (0, i.jsx)(o.zxk, {
         onClick: () => {
           c.Z.dispatch({
@@ -112,7 +112,7 @@ function N(e) {
         },
         color: o.zxk.Colors.PRIMARY,
         look: o.zxk.Looks.LINK,
-        children: _.intl.string(_.t["13/7kZ"])
+        children: h.intl.string(h.t["13/7kZ"])
       })]
     })]
   })

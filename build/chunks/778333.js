@@ -24,8 +24,8 @@ function x(e) {
   let {
     invite: n,
     message: x,
-    getAcceptInviteContext: y
-  } = e, E = (0, l.e7)([p.default], () => p.default.getId()), v = (null == (t = n.inviter) ? void 0 : t.id) === E, C = n.state === g.r2o.ACCEPTING, {
+    getAcceptInviteContext: E
+  } = e, y = (0, l.e7)([p.default], () => p.default.getId()), v = (null == (t = n.inviter) ? void 0 : t.id) === y, C = n.state === g.r2o.ACCEPTING, {
     analyticsLocations: O
   } = (0, c.ZP)(s.Z.INVITE_EMBED), j = (0, l.e7)([f.Z], () => {
     var e;
@@ -47,12 +47,12 @@ function x(e) {
       inviter_id: x.author.id,
       invite_message_id: x.id
     }, O);
-    let e = y("Invite Button Embed");
+    let e = E("Invite Button Embed");
     o.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, x, O, y]);
+  }, [n, x, O, E]);
   if (null == n.inviter) return null;
   let T = j ? S : I,
     N = _.intl.string(_.t.ib7Ng4),

@@ -12,6 +12,7 @@ n.r(t), n.d(t, {
   expandLocation: () => V,
   getAnalyticsEventsRecording: () => $,
   getNewAnalyticsLoadId: () => ea,
+  launchSignature: () => j,
   setUTMContext: () => W,
   startRecordingAnalyticsEvents: () => Q,
   stopRecordingAnalyticsEvents: () => J,

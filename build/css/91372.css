@@ -1,6 +1,6 @@
 /**
   Module ID: 91372
-  Original File Name: 52eaa4923be3aa3e
+  Original File Name: 66d2e823704fa03f
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -1566,26 +1566,6 @@ h1.title_feb59c,h2.title_feb59c {
 
 .emoji_ce5b39 {
     flex-shrink: 0
-}
-
-.customStatusAction_b5ae07 {
-    align-items: center;
-    display: flex;
-    gap: 4px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content
-}
-
-.customStatusAction_b5ae07:hover {
-    text-decoration: underline
-}
-
-.customStatusActionHoverText_b5ae07 {
-    cursor: pointer;
-    height: 13px;
-    line-height: 13px;
-    pointer-events: auto
 }
 
 .container_cdb3b1 {
@@ -19307,4 +19287,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=52eaa4923be3aa3e.css.map*/
+/*# sourceMappingURL=66d2e823704fa03f.css.map*/

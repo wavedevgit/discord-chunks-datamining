@@ -1,12 +1,12 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 93898 **/
 n.d(t, {
   q: () => l,
-  v: () => r
+  v: () => i
 });
-var a = n(570140);
-let r = (e, t) => {
-  a.Z.wait(() => {
-    a.Z.dispatch({
+var r = n(570140);
+let i = (e, t) => {
+  r.Z.wait(() => {
+    r.Z.dispatch({
       type: "APPLIED_GUILD_BOOST_COUNT_UPDATE",
       guildId: e,
       premiumCount: t
@@ -15,7 +15,7 @@ let r = (e, t) => {
 };
 
 function l() {
-  a.Z.dispatch({
+  r.Z.dispatch({
     type: "APPLIED_GUILD_BOOST_COUNT_RESET"
   })
 }

@@ -27,8 +27,8 @@ var r = n(512722),
   S = n(778825),
   v = n(52597),
   T = n(430131),
-  N = n(291334),
-  I = n(388032),
+  I = n(291334),
+  N = n(388032),
   y = n(565872);
 
 function A(e) {
@@ -109,8 +109,8 @@ function R(e) {
     K = j.ZP.canUsePremiumProfileCustomization(Z),
     q = (0, c.gd)(w, null == Y ? void 0 : Y.avatar),
     X = (0, c.f$)(L, null == W ? void 0 : W.banner),
-    J = (0, v.p)(U, null == W ? void 0 : W.themeColors),
-    Q = null != (t = null == W ? void 0 : W.bio) ? t : "",
+    Q = (0, v.p)(U, null == W ? void 0 : W.themeColors),
+    J = null != (t = null == W ? void 0 : W.bio) ? t : "",
     $ = null != (n = null == W ? void 0 : W.pronouns) ? n : "",
     ee = (e, t, n) => {
       n(null != e ? e : null != t ? null : void 0)
@@ -124,20 +124,20 @@ function R(e) {
       currentNick: null == Y ? void 0 : Y.nick,
       guild: H
     }, "nick"), (0, i.jsx)(f.Z, {
-      sectionTitle: I.intl.string(I.t["+T3RIy"]),
+      sectionTitle: N.intl.string(N.t["+T3RIy"]),
       errors: null == V ? void 0 : V.pronouns,
       onPronounsChange: e => {
         (0, v.xs)(e, $)
       },
       pendingPronouns: M,
       currentPronouns: $
-    }, "pronouns"), (0, i.jsxs)(N.Z, {
+    }, "pronouns"), (0, i.jsxs)(I.Z, {
       user: Z,
       showOverlay: !K,
       children: [(0, i.jsx)(m.Z, {
         sectionTitle: (0, i.jsxs)(i.Fragment, {
-          children: [I.intl.string(I.t.lqaIxM), (0, i.jsx)(a.ua7, {
-            text: I.intl.string(I.t["5AFxuL"]),
+          children: [N.intl.string(N.t.lqaIxM), (0, i.jsx)(a.ua7, {
+            text: N.intl.string(N.t["5AFxuL"]),
             children: e => (0, i.jsx)(a.SrA, P(A({
               size: "md",
               color: "currentColor"
@@ -153,8 +153,8 @@ function R(e) {
         disabled: !K
       }, "avatar"), (0, i.jsx)(u.Z, {
         sectionTitle: (0, i.jsxs)(i.Fragment, {
-          children: [I.intl.string(I.t["7v0T9P"]), (0, i.jsx)(a.ua7, {
-            text: I.intl.string(I.t["5AFxuL"]),
+          children: [N.intl.string(N.t["7v0T9P"]), (0, i.jsx)(a.ua7, {
+            text: N.intl.string(N.t["5AFxuL"]),
             children: e => (0, i.jsx)(a.SrA, P(A({
               size: "md",
               color: "currentColor"
@@ -167,8 +167,8 @@ function R(e) {
         guild: H
       }, "decoration"), (0, i.jsx)(p.Z, {
         sectionTitle: (0, i.jsxs)(i.Fragment, {
-          children: [I.intl.string(I.t.wR5wOj), (0, i.jsx)(a.ua7, {
-            text: I.intl.string(I.t["5AFxuL"]),
+          children: [N.intl.string(N.t.wR5wOj), (0, i.jsx)(a.ua7, {
+            text: N.intl.string(N.t["5AFxuL"]),
             children: e => (0, i.jsx)(a.SrA, P(A({
               size: "md",
               color: "currentColor"
@@ -193,12 +193,12 @@ function R(e) {
           (0, v.ce)(e, null == W ? void 0 : W.themeColors)
         },
         guildId: null == H ? void 0 : H.id,
-        showResetThemeButton: J
+        showResetThemeButton: Q
       }), (0, i.jsx)(d.Z, {
-        placeholder: I.intl.string(I.t["/7NKgo"]),
+        placeholder: N.intl.string(N.t["/7NKgo"]),
         sectionTitle: (0, i.jsxs)(i.Fragment, {
-          children: [I.intl.string(I.t.jGoPJS), (0, i.jsx)(a.ua7, {
-            text: I.intl.string(I.t["5AFxuL"]),
+          children: [N.intl.string(N.t.jGoPJS), (0, i.jsx)(a.ua7, {
+            text: N.intl.string(N.t["5AFxuL"]),
             children: e => (0, i.jsx)(a.SrA, P(A({
               size: "md",
               color: "currentColor"
@@ -207,10 +207,10 @@ function R(e) {
             }))
           })]
         }),
-        onBioChange: e => (0, v.qN)(e, Q),
+        onBioChange: e => (0, v.qN)(e, J),
         errors: null != (R = null == V ? void 0 : V.bio) ? R : null == z ? void 0 : z.bio,
         pendingBio: B,
-        currentBio: Q,
+        currentBio: J,
         disabled: !K
       }, "about")]
     })]

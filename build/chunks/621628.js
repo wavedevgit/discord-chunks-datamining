@@ -123,9 +123,9 @@ function S() {
         return i.unshift(e), i
       })
     },
-    N = t.map(e => o.z[e]),
-    I = S.filter(e => e.toLowerCase().includes(_.toLowerCase())).filter(e => !N.includes(e)),
-    y = Object.keys(o.z).filter(e => !N.includes(e)).filter(e => !S.includes(e)).filter(e => e.toLowerCase().includes(_.toLowerCase())).sort((e, t) => e.localeCompare(t));
+    I = t.map(e => o.z[e]),
+    N = S.filter(e => e.toLowerCase().includes(_.toLowerCase())).filter(e => !I.includes(e)),
+    y = Object.keys(o.z).filter(e => !I.includes(e)).filter(e => !S.includes(e)).filter(e => e.toLowerCase().includes(_.toLowerCase())).sort((e, t) => e.localeCompare(t));
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(d.hjN, {
       title: "Dismissible Content Fatigue",
@@ -179,18 +179,18 @@ function S() {
             children: "Recently Shown"
           })
         }), (0, i.jsx)(O, {
-          items: N,
+          items: I,
           dismissedContents: C,
           handleChange: T
         })]
-      }) : null, I.length > 0 ? (0, i.jsxs)(i.Fragment, {
+      }) : null, N.length > 0 ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           className: E.marginBottom20,
           children: (0, i.jsx)(d.vwX, {
             children: "Recent Overrides"
           })
         }), (0, i.jsx)(O, {
-          items: I,
+          items: N,
           dismissedContents: C,
           handleChange: T
         })]

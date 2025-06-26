@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(91802),
   v = n(8647),
   T = n(784238),
-  N = n(568126),
-  I = n(823188),
+  I = n(568126),
+  N = n(823188),
   y = n(611116),
   A = n(349803),
   P = n(8231),
@@ -54,7 +54,7 @@ let G = () => {
     Y = (0, c.wj)(z),
     [W, K] = r.useState(!1),
     [q, X] = r.useState(!1),
-    [J, Q] = r.useState(!1),
+    [Q, J] = r.useState(!1),
     [$, ee] = r.useState(!1),
     et = (0, j.rO)(),
     [en, ei] = r.useState(!1),
@@ -122,7 +122,7 @@ let G = () => {
       className: L.promoBannerContainer,
       children: [(0, i.jsx)(v.Z, {
         variant: v.C.APPLICATION_NITRO_HOME
-      }), null != eo && (0, i.jsx)(N.Z, {
+      }), null != eo && (0, i.jsx)(I.Z, {
         localizedPricingPromo: eo
       })]
     }), (0, i.jsx)("div", {
@@ -135,10 +135,10 @@ let G = () => {
       className: L.premiumTierCardsContainerFullscreen,
       children: (0, i.jsx)(o.$, {
         innerRef: n,
-        onChange: e => Q(e),
+        onChange: e => J(e),
         threshold: .1,
         active: !0,
-        children: (0, i.jsx)(I.Ub, {
+        children: (0, i.jsx)(N.Ub, {
           innerRef: n,
           tier0CTAButton: (0, i.jsx)(T.Z, {
             color: void 0,
@@ -169,7 +169,7 @@ let G = () => {
         className: L.planComparisonTableApplicationHome
       })
     }), (0, i.jsx)(A.Z, {
-      isVisible: !W && !J && !q && en,
+      isVisible: !W && !Q && !q && en,
       subscriptionTier: ea,
       isApplicationHome: !0,
       isEligibleForBogoPromotion: ec

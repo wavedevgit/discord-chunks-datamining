@@ -1,6 +1,6 @@
 /** Chunk was on 91372 **/
 n.d(t, {
-  Z: () => N
+  Z: () => I
 });
 var i = n(255367),
   r = n(73800),
@@ -44,17 +44,17 @@ let T = e => {
       })
     })
   },
-  N = r.forwardRef((e, t) => {
+  I = r.forwardRef((e, t) => {
     var n, r;
     let {
       className: s,
       buttonClassName: h,
       subscriptionTier: S,
-      isDarkMode: N,
-      isEligibleForBogoPromotion: I
+      isDarkMode: I,
+      isEligibleForBogoPromotion: N
     } = e, {
       analyticsLocations: y
-    } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), A = (0, g._O)(), P = (0, f.Ng)(), R = (0, f.Wp)(P, O.Si.TIER_2) ? O.Si.TIER_2 : void 0, D = (0, b.N)(), Z = (0, m.Nx)(), w = (0, a.e7)([u.Z], () => u.Z.affinities), k = (0, _.Z)(), L = null != k, B = N ? o.Ttl.WHITE : o.Ttl.BRAND, M = w.length > 0, U = (0, p.ZP)({
+    } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), A = (0, g._O)(), P = (0, f.Ng)(), R = (0, f.Wp)(P, O.Si.TIER_2) ? O.Si.TIER_2 : void 0, D = (0, b.N)(), Z = (0, m.Nx)(), w = (0, a.e7)([u.Z], () => u.Z.affinities), k = (0, _.Z)(), L = null != k, B = I ? o.Ttl.WHITE : o.Ttl.BRAND, M = w.length > 0, U = (0, p.ZP)({
       location: "PremiumMarketingHeroHeading"
     }), V = (0, p.J1)(U);
     return (0, i.jsx)(d.Gt, {
@@ -98,8 +98,8 @@ let T = e => {
             }),
             buttonClassName: h,
             isApplicationHome: !0,
-            isDarkMode: N,
-            isEligibleForBogoPromotion: I
+            isDarkMode: I,
+            isEligibleForBogoPromotion: N
           }), (0, i.jsx)(C._O, {
             variant: "text-md/normal",
             withBottomMargin: !1,

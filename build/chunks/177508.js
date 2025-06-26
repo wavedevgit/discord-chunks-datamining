@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(705262),
   v = n(526156),
   T = n(706705),
-  N = n(726985),
-  I = n(981631),
+  I = n(726985),
+  N = n(981631),
   y = n(231338),
   A = n(426617),
   P = n(177475);
@@ -67,7 +67,7 @@ function D(e, t) {
 function Z() {
   return (0, i.jsxs)("div", {
     className: A.root,
-    children: [(0, i.jsx)(H, {}), (0, i.jsx)(X, {}), (0, i.jsx)(J, {}), (0, i.jsx)(q, {}), (0, i.jsx)(K, {}), (0, i.jsx)(W, {}), (0, i.jsx)(Y, {}), (0, i.jsx)(er, {}), (0, i.jsx)(w, {}), (0, i.jsx)(es, {})]
+    children: [(0, i.jsx)(H, {}), (0, i.jsx)(X, {}), (0, i.jsx)(Q, {}), (0, i.jsx)(q, {}), (0, i.jsx)(K, {}), (0, i.jsx)(W, {}), (0, i.jsx)(Y, {}), (0, i.jsx)(er, {}), (0, i.jsx)(w, {}), (0, i.jsx)(es, {})]
   })
 }
 
@@ -208,20 +208,20 @@ function V() {
 function G() {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(v.Z, {
-      parentSetting: N.s6.DESIGN_SYSTEMS,
-      settingsSection: I.oAB.DESIGN_SYSTEMS,
+      parentSetting: I.s6.DESIGN_SYSTEMS,
+      settingsSection: N.oAB.DESIGN_SYSTEMS,
       tabs: [{
         title: "Components",
         component: () => (0, i.jsx)(Z, {}),
-        setting: N.s6.DESIGN_SYSTEMS_COMPONENTS
+        setting: I.s6.DESIGN_SYSTEMS_COMPONENTS
       }, {
         title: "Colors",
         component: () => (0, i.jsx)(V, {}),
-        setting: N.s6.DESIGN_SYSTEMS_COLORS
+        setting: I.s6.DESIGN_SYSTEMS_COLORS
       }, {
         title: "Animations",
         component: () => (0, i.jsx)(T.Z, {}),
-        setting: N.s6.ANIMATION_TESTING
+        setting: I.s6.ANIMATION_TESTING
       }]
     }), (0, i.jsx)("div", {
       className: A.themes,
@@ -876,7 +876,7 @@ function X() {
   })
 }
 
-function J() {
+function Q() {
   let [e, t] = r.useState(""), [n, s] = r.useState(""), [l, a] = r.useState("");
   return (0, i.jsxs)("div", {
     className: A.section,
@@ -935,7 +935,7 @@ function J() {
   })
 }
 
-function Q(e) {
+function J(e) {
   let {
     transitionState: t
   } = e, [n, s] = r.useState(!1), [l, a] = r.useState(j.CgR.SMALL), [o, c] = r.useState(!1), d = n ? A.modalOutlines : "";
@@ -1343,7 +1343,7 @@ function er() {
         children: "Modals (Void)"
       }), (0, i.jsx)(j.zxk, {
         onClick: () => {
-          (0, j.h7j)(e => (0, i.jsx)(Q, R({}, e)))
+          (0, j.h7j)(e => (0, i.jsx)(J, R({}, e)))
         },
         children: "Open modal"
       }), (0, i.jsx)(j.zxk, {

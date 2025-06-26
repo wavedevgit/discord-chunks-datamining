@@ -18,8 +18,8 @@ var r, i = n(255367),
   _ = n(431583),
   b = n(592745),
   x = n(952164),
-  y = n(768419),
-  E = n(456432),
+  E = n(768419),
+  y = n(456432),
   v = n(789407),
   C = n(598077),
   O = n(757266),
@@ -175,7 +175,7 @@ class G extends(r = l.PureComponent) {
         channelId: t,
         guildId: n
       } = this.props;
-      return (0, i.jsx)(E.Z, F({
+      return (0, i.jsx)(y.Z, F({
         guildId: null != n ? n : void 0,
         channelId: t,
         source: "Invite Embed"
@@ -260,7 +260,7 @@ class G extends(r = l.PureComponent) {
 U(G, "defaultProps", {
   isPreview: !1
 });
-let H = a.ZP.connectStores([y.Z, j.Z, T.Z, N.Z, O.Z, A.Z, I.Z, b.Z, w.Z, P.default, S.ZP], e => {
+let H = a.ZP.connectStores([E.Z, j.Z, T.Z, N.Z, O.Z, A.Z, I.Z, b.Z, w.Z, P.default, S.ZP], e => {
   var t;
   let {
     activity: n,
@@ -286,8 +286,8 @@ let H = a.ZP.connectStores([y.Z, j.Z, T.Z, N.Z, O.Z, A.Z, I.Z, b.Z, w.Z, P.defau
         nick: n
       }
     }),
-    m = null != n && y.Z.canPlay(n),
-    f = y.Z.getSyncingWith(),
+    m = null != n && E.Z.canPlay(n),
+    f = E.Z.getSyncingWith(),
     h = null != f && null != a && f.userId === a;
   return {
     analyticsLocations: r,

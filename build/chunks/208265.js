@@ -13,8 +13,8 @@ var i = t(255367),
   x = t(534044),
   m = t(670199),
   u = t(800530),
-  h = t(981631),
-  _ = t(704906);
+  _ = t(981631),
+  h = t(704906);
 
 function C(e) {
   let {
@@ -25,30 +25,30 @@ function C(e) {
   } = e, [N, g] = s.useState(C), {
     classification: j,
     isDsaEligible: I
-  } = (0, r.YG)(null != n ? n : h.lds), k = (null == j ? void 0 : j.is_spam) || !1, E = (null == j ? void 0 : j.is_coppa) || !1;
+  } = (0, r.YG)(null != n ? n : _.lds), k = (null == j ? void 0 : j.is_spam) || !1, E = (null == j ? void 0 : j.is_coppa) || !1, T = null == j ? void 0 : j.appeal_ingestion_type;
   s.useEffect(() => {
     g(C)
   }, [g, C]);
-  let T = s.useCallback(() => {
+  let f = s.useCallback(() => {
       d.Z.close(), p()
     }, [p]),
-    f = s.useCallback(() => {
+    A = s.useCallback(() => {
       var e;
       let n = null == (e = u.JQ[N]) ? void 0 : e.next;
-      n ? g(n) : T()
-    }, [N, T]),
+      n ? g(n) : f()
+    }, [N, f]),
     S = s.useCallback(() => {
       var e;
       let n = null == (e = u.JQ[N]) ? void 0 : e.prev;
-      n ? g(n) : T()
-    }, [N, T]);
+      n ? g(n) : f()
+    }, [N, f]);
   return (0, i.jsx)(a.Y0X, {
     transitionState: t,
     disableTrack: !0,
     size: a.CgR.DYNAMIC,
     parentComponent: "AppealIngestionModal",
     children: (0, i.jsx)("div", {
-      className: _.container,
+      className: h.container,
       children: (0, i.jsxs)(a.MyZ, {
         activeSlide: N,
         width: 500,
@@ -58,10 +58,11 @@ function C(e) {
           impressionProperties: u.ZW,
           children: (0, i.jsx)(m.Z, {
             classification: j,
-            onClose: T,
-            onNext: f,
+            onClose: f,
+            onNext: A,
             isSpam: k,
             isCoppa: E,
+            appealIngestionType: T,
             isDsaEligible: I
           })
         }), (0, i.jsx)(a.Mi4, {
@@ -70,8 +71,8 @@ function C(e) {
           impressionProperties: u.ZW,
           children: (0, i.jsx)(o.Z, {
             isDsaEligible: I,
-            onClose: T,
-            onNext: f,
+            onClose: f,
+            onNext: A,
             onBack: S
           })
         }), (0, i.jsx)(a.Mi4, {
@@ -80,8 +81,8 @@ function C(e) {
           impressionProperties: u.ZW,
           children: (0, i.jsx)(c.Z, {
             isDsaEligible: I,
-            onClose: T,
-            onNext: f,
+            onClose: f,
+            onNext: A,
             onBack: S
           })
         }), (0, i.jsx)(a.Mi4, {
@@ -89,7 +90,7 @@ function C(e) {
           impressionName: l.ImpressionNames.APPEAL_INGESTION_REQUEST_SENT,
           impressionProperties: u.ZW,
           children: (0, i.jsx)(x.Z, {
-            onNext: f
+            onNext: A
           })
         })]
       })

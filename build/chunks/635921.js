@@ -2,7 +2,7 @@
 n.d(t, {
   PK: () => T,
   ZP: () => y,
-  _O: () => I
+  _O: () => N
 }), n(953529);
 var i = n(255367),
   r = n(73800),
@@ -61,7 +61,7 @@ let T = e => {
       children: [u, " ", m]
     })
   },
-  N = () => (0, i.jsxs)(i.Fragment, {
+  I = () => (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(u.A, {
       className: v.settingsSparkleStar1
     }), (0, i.jsx)(u.A, {
@@ -73,7 +73,7 @@ let T = e => {
     })]
   });
 
-function I(e) {
+function N(e) {
   let {
     variant: t = "text-lg/normal",
     withBottomMargin: n = !0,
@@ -124,7 +124,7 @@ let y = r.forwardRef((e, t) => {
             textColor: "always-white",
             smallerText: !D
           })
-        }) : (0, i.jsx)(I, {}), Z || y ? (0, i.jsx)("div", {
+        }) : (0, i.jsx)(N, {}), Z || y ? (0, i.jsx)("div", {
           className: v.buttonContainer,
           children: (0, i.jsx)(x.Z, {
             className: l()(v.button, u),
@@ -135,11 +135,11 @@ let y = r.forwardRef((e, t) => {
           inOfferExperience: D,
           buttonClassName: u,
           isDarkMode: C
-        }), w && (0, i.jsx)(I, {
+        }), w && (0, i.jsx)(N, {
           variant: "text-md/normal",
           withBottomMargin: !1
         })]
-      }), !D && (0, i.jsx)(N, {})]
+      }), !D && (0, i.jsx)(I, {})]
     })
   })
 })

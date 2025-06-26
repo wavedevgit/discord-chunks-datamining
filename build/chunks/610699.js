@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(914498),
   b = n(880251),
   x = n(208444),
-  y = n(835473),
-  E = n(471445),
+  E = n(835473),
+  y = n(471445),
   v = n(111028),
   C = n(601964),
   O = n(592125),
@@ -79,7 +79,7 @@ function L(e) {
     textColor: l
   } = e;
   if (null != t && null != n) {
-    let e = (0, E.KS)(t, n);
+    let e = (0, y.KS)(t, n);
     return (0, r.jsxs)("div", {
       className: a()(R.channel, {
         [R.ended]: i
@@ -137,8 +137,8 @@ function D(e) {
         invite_inviter_id: null == (e = a.inviter) ? void 0 : e.id
       })
     }, [null == (t = a.inviter) ? void 0 : t.id, b.id]),
-    E = (0, c.e7)([j.Z], () => null != a.guild ? j.Z.getGuild(a.guild.id) : null, [a]),
-    v = (0, y.Z)([b.id])[0],
+    y = (0, c.e7)([j.Z], () => null != a.guild ? j.Z.getGuild(a.guild.id) : null, [a]),
+    v = (0, E.Z)([b.id])[0],
     N = (0, c.e7)([p.ZP], () => {
       var e;
       return (null == a ? void 0 : a.channel) != null && (null == (e = p.ZP.getSelfEmbeddedActivityForChannel(a.channel.id)) ? void 0 : e.applicationId) === b.id
@@ -172,10 +172,10 @@ function D(e) {
       })
     }, [a, o, D, u]),
     G = a.state === A.r2o.ACCEPTING,
-    H = null != E;
-  if (null == E) {
+    H = null != y;
+  if (null == y) {
     if (null == a.guild) return (0, r.jsx)(P.Z, {});
-    E = new C.ZP(a.guild)
+    y = new C.ZP(a.guild)
   }
   let V = H && !L || H && N;
   return (H && N && (l = Z.intl.string(Z.t.wJNK8P)), L || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == v) ? null : (0, r.jsx)(f.Gt, {
@@ -186,7 +186,7 @@ function D(e) {
       activityUsers: F,
       isMember: H,
       channel: k,
-      guild: E,
+      guild: y,
       members: h,
       membersOnline: g,
       isActivityActive: R,
@@ -212,8 +212,8 @@ function M(e) {
     membersOnline: p,
     isActivityActive: m,
     submitting: f,
-    isDisabled: y,
-    tooltip: E,
+    isDisabled: E,
+    tooltip: y,
     handleAcceptInvite: v,
     onView: C
   } = e, O = new URL(a.code, "https://discord.gg").toString(), {
@@ -228,11 +228,11 @@ function M(e) {
       label: s ? m ? Z.intl.string(Z.t.VJlc0d) : Z.intl.string(Z.t.RscU7O) : Z.intl.string(Z.t["2BP08P"]),
       trackingArea: s ? _.j_.PLAY : _.j_.JOIN_SERVER,
       submitting: f,
-      disabledReason: y && null != E ? E : void 0,
+      disabledReason: E && null != y ? y : void 0,
       onClick: v
     }];
     return null != T && e.push(T), e
-  }, [v, m, y, s, f, E, T]);
+  }, [v, m, E, s, f, y, T]);
   return (0, r.jsx)(h.W, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

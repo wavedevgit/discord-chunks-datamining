@@ -1,6 +1,6 @@
 /**
   Module ID: 12192
-  Original File Name: ad12923e47f042b0
+  Original File Name: 2be92796d78b243b
 **/
 .modal_deee3a {
     max-height: 600px;
@@ -8,7 +8,7 @@
     width: 440px
 }
 
-@media (max-width:485px) or (max-height:550px) {
+@media screen and (max-height:550px),screen and (max-width:485px) {
     .modal_deee3a {
         max-height: revert;
         min-height: revert;
@@ -69,4 +69,4 @@
     border: none
 }
 
-/*# sourceMappingURL=ad12923e47f042b0.css.map*/
+/*# sourceMappingURL=2be92796d78b243b.css.map*/

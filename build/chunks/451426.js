@@ -13,8 +13,8 @@ var i = t(255367),
   x = t(788080),
   m = t(613734),
   u = t(981631),
-  h = t(388032),
-  _ = t(67164),
+  _ = t(388032),
+  h = t(67164),
   C = t(91463);
 
 function p(e) {
@@ -26,12 +26,12 @@ function p(e) {
     onBack: g
   } = e, j = (0, l.e7)([d.Z], () => d.Z.getAppealClassificationId()), {
     classification: I
-  } = (0, m.YG)(null != j ? j : u.lds), k = (0, x.c7)(null == I ? void 0 : I.description), E = (0, l.e7)([d.Z], () => d.Z.getIsSubmitting()), T = (0, l.e7)([d.Z], () => d.Z.getAppealSignal()), f = (0, l.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [S, A] = s.useState(!1), [v, L] = s.useState(""), Z = s.useCallback(e => {
+  } = (0, m.YG)(null != j ? j : u.lds), k = (0, x.c7)(null == I ? void 0 : I.description), E = (0, l.e7)([d.Z], () => d.Z.getIsSubmitting()), T = (0, l.e7)([d.Z], () => d.Z.getAppealSignal()), f = (0, l.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [A, S] = s.useState(!1), [v, L] = s.useState(""), Z = s.useCallback(e => {
     r.Z.dispatch({
       type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
       userInput: e
     })
-  }, []), b = s.useCallback(async () => {
+  }, []), P = s.useCallback(async () => {
     if (null !== j) try {
       L(""), await c.uR(j, T, f), null == N || N()
     } catch (n) {
@@ -47,12 +47,12 @@ function p(e) {
       children: [(0, i.jsx)(a.X6q, {
         className: C.title,
         variant: "heading-xl/semibold",
-        children: h.intl.string(h.t["C5q+pa"])
+        children: _.intl.string(_.t["C5q+pa"])
       }), (0, i.jsx)(a.Text, {
         className: C.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
-        children: h.intl.string(h.t["G2g/g4"])
+        children: _.intl.string(_.t["G2g/g4"])
       }), null != p && (0, i.jsx)(a.olH, {
         className: C.closeButton,
         onClick: p
@@ -61,9 +61,9 @@ function p(e) {
       className: n,
       paddingFix: !1,
       children: [(0, i.jsx)("ul", {
-        className: _.listContainer,
+        className: h.listContainer,
         children: [(0, x.ox)(T), f].filter(e => e.length > 0).map((e, n) => (0, i.jsx)("li", {
-          className: _.listItem,
+          className: h.listItem,
           children: (0, i.jsx)(a.Text, {
             tag: "span",
             variant: "text-md/normal",
@@ -71,17 +71,17 @@ function p(e) {
           })
         }, n))
       }), t && (0, i.jsx)("div", {
-        className: _.anchorContainer,
+        className: h.anchorContainer,
         children: (0, i.jsx)(a.eee, {
-          onClick: () => A(e => !e),
+          onClick: () => S(e => !e),
           children: (0, i.jsx)(a.X6q, {
             variant: "heading-md/normal",
             color: "text-link",
-            children: f.length > 0 ? h.intl.string(h.t.tnE3bW) : h.intl.string(h.t.uoQFIi)
+            children: f.length > 0 ? _.intl.string(_.t.tnE3bW) : _.intl.string(_.t.uoQFIi)
           })
         })
-      }), S && t && (0, i.jsx)("div", {
-        className: _.inputContainer,
+      }), A && t && (0, i.jsx)("div", {
+        className: h.inputContainer,
         children: (0, i.jsx)(a.Kx8, {
           value: f,
           onChange: Z
@@ -95,29 +95,29 @@ function p(e) {
       }), (0, i.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        className: _.footerText,
-        children: h.intl.string(h.t.d6qgY2)
+        className: h.footerText,
+        children: _.intl.string(_.t.d6qgY2)
       })]
     }), (0, i.jsxs)(a.mzw, {
       direction: o.Z.Direction.VERTICAL,
       children: ["" !== v && (0, i.jsx)(a.Text, {
-        className: _.errorText,
+        className: h.errorText,
         variant: "text-lg/normal",
         color: "text-danger",
         children: v
       }), (0, i.jsxs)("div", {
-        className: _.buttonContainer,
+        className: h.buttonContainer,
         children: [(0, i.jsx)(a.zxk, {
           look: a.zxk.Looks.LINK,
           color: a.zxk.Colors.PRIMARY,
           onClick: g,
           disabled: E,
-          children: h.intl.string(h.t["13/7kZ"])
+          children: _.intl.string(_.t["13/7kZ"])
         }), (0, i.jsx)(a.zxk, {
-          onClick: b,
+          onClick: P,
           color: a.zxk.Colors.RED,
           submitting: E,
-          children: h.intl.string(h.t.geKm7u)
+          children: _.intl.string(_.t.geKm7u)
         })]
       })]
     })]

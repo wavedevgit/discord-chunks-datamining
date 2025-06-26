@@ -18,8 +18,8 @@ var i = n(913527),
   s = n(406432),
   o = n(314897),
   _ = n(531441),
-  l = n(800530),
-  E = n(981631),
+  E = n(800530),
+  l = n(981631),
   c = n(959517),
   I = n(388032);
 
@@ -37,14 +37,14 @@ function S(e) {
   if (null == e.fields) return;
   let a = e.fields.reduce((e, t) => (e[t.rawName] = t.rawValue, e), {});
   return {
-    header: null != (t = a[l.I5.HEADER]) ? t : "",
-    icon: a[l.I5.ICON_TYPE],
-    body: null != (n = a[l.I5.BODY]) ? n : "",
-    ctas: (null != (i = a[l.I5.CTAS]) ? i : "").split(",").filter(e => "" !== e),
-    timestamp: parseFloat(null != (r = a[l.I5.TIMESTAMP]) ? r : 0),
-    theme: a[l.I5.THEME],
-    learn_more_link: a[l.I5.LEARN_MORE_LINK],
-    classification_id: a[l.I5.CLASSIFICATION_ID]
+    header: null != (t = a[E.I5.HEADER]) ? t : "",
+    icon: a[E.I5.ICON_TYPE],
+    body: null != (n = a[E.I5.BODY]) ? n : "",
+    ctas: (null != (i = a[E.I5.CTAS]) ? i : "").split(",").filter(e => "" !== e),
+    timestamp: parseFloat(null != (r = a[E.I5.TIMESTAMP]) ? r : 0),
+    theme: a[E.I5.THEME],
+    learn_more_link: a[E.I5.LEARN_MORE_LINK],
+    classification_id: a[E.I5.CLASSIFICATION_ID]
   }
 }
 
@@ -52,17 +52,17 @@ function N(e) {
   return e.type !== _.lK.MESSAGE || "" === e.content && 0 === e.attachments.length
 }
 let L = e => ({
-    [l.bK.DIDNT_VIOLATE_POLICY]: I.intl.string(I.t.mZffAg),
-    [l.bK.TOO_STRICT_UNFAIR]: I.intl.string(I.t.wgZVAg),
-    [l.bK.DONT_AGREE_PENALTY]: I.intl.string(I.t.eu8G4u),
-    [l.bK.SOMETHING_ELSE]: I.intl.string(I.t.XU3s6u)
+    [E.bK.DIDNT_VIOLATE_POLICY]: I.intl.string(I.t.mZffAg),
+    [E.bK.TOO_STRICT_UNFAIR]: I.intl.string(I.t.wgZVAg),
+    [E.bK.DONT_AGREE_PENALTY]: I.intl.string(I.t.eu8G4u),
+    [E.bK.SOMETHING_ELSE]: I.intl.string(I.t.XU3s6u)
   })[e],
   p = e => null == e || 0 === e.length ? "" : 1 === e.length ? e.toUpperCase() : "".concat(e.charAt(0).toUpperCase()).concat(e.slice(1));
 
 function A(e) {
   return null != e && null != e.guild_metadata
 }
-let T = e => e === E.evJ.DSA_APPEAL_REQUEST_DEFLECTION ? I.intl.string(I.t["0qyXXF"]) : I.intl.string(I.t.aPmsx8);
+let T = e => e === l.evJ.DSA_APPEAL_REQUEST_DEFLECTION ? I.intl.string(I.t["0qyXXF"]) : I.intl.string(I.t.aPmsx8);
 
 function f(e) {
   let t = e.max_expiration_time;

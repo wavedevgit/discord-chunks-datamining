@@ -1,6 +1,6 @@
 /**
   Module ID: 13268
-  Original File Name: d4bdc6d2bdef2a5f
+  Original File Name: b53f933c271324ca
 **/
 .actionButton__5d9ef {
     margin-left: auto
@@ -206,7 +206,7 @@
     position: relative
 }
 
-@media (max-width:485px) or (max-height:550px) {
+@media screen and (max-height:550px),screen and (max-width:485px) {
     .container__527b1 {
         max-height: none
     }
@@ -2042,10 +2042,10 @@
     max-height: clamp(200px,calc(100vh - 80px),660px)
 }
 
-@media (max-width:485px) or (max-height:550px) {
+@media screen and (max-height:550px),screen and (max-width:485px) {
     .slideContainer__01ce3 {
         max-height: none
     }
 }
 
-/*# sourceMappingURL=d4bdc6d2bdef2a5f.css.map*/
+/*# sourceMappingURL=b53f933c271324ca.css.map*/
