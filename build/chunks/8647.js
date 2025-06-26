@@ -91,7 +91,7 @@ let C = function(e) {
         className: b.settingsBannerContent,
         children: [(0, r.jsx)(a.X6q, {
           className: b.bannerHeader,
-          variant: "heading-xl/extrabold",
+          variant: "heading-lg/extrabold",
           color: "header-primary",
           children: f.intl.string(f.t["+5UxMD"])
         }), (0, r.jsx)(a.Text, {

@@ -50,13 +50,13 @@ function I(e) {
     G = (0, b.Ng)(),
     B = (0, E.Vi)(),
     V = R.interval === y.rV.YEAR ? O.t.ECT4Aw : O.t.v9QeOD,
-    F = () => B && (0, r.jsx)(u.Text, {
+    F = () => B && !P && n === y.Xh.PREMIUM_MONTH_TIER_2 ? (0, r.jsx)(u.Text, {
       tag: "span",
       variant: "eyebrow",
       color: "always-white",
       className: v.planOptionDiscount,
       children: O.intl.string(O.t.iQTfW1)
-    }),
+    }) : null,
     Z = () => null != k && !B && (0, r.jsx)(u.Text, {
       tag: "span",
       variant: "eyebrow",
@@ -66,7 +66,7 @@ function I(e) {
         discount: (0, h.T3)(C, k / 100)
       })
     }),
-    H = () => n === y.Xh.PREMIUM_MONTH_TIER_2 && B ? F() : R.interval === y.rV.YEAR && null != t || U && !L ? R.interval === y.rV.YEAR && null != t ? (0, r.jsxs)("span", {
+    H = () => B ? F() : R.interval === y.rV.YEAR && null != t || U && !L ? R.interval === y.rV.YEAR && null != t ? (0, r.jsxs)("span", {
       className: v.planOptionMonthsFree,
       children: ["(", O.intl.string(O.t["122kWF"]), ")"]
     }) : U && !L ? Z() : void 0 : null,

@@ -21,7 +21,7 @@ let d = () => {
       isGift: n
     } = (0, i.wD)();
   return n || t !== l.Si.TIER_2 || !e ? null : (0, r.jsx)(s.Z, {
-    copy: c.intl.string(c.t.xk8bIi),
+    copy: c.intl.string(c.t.OejPtr),
     bannerImage: u,
     textColor: "text-invert",
     hideGiftIcon: !0
