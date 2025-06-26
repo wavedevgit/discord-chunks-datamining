@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   l = n(73800),
   a = n(120356),
-  i = n.n(a),
-  o = n(180650),
+  o = n.n(a),
+  i = n(180650),
   s = n(622535),
   c = n(481060),
   u = n(626135),
@@ -34,18 +34,18 @@ let _ = e => {
     {
       featuredBlockBanner: j
     } = (0, b.YG)(v, O),
-    P = l.useRef(null),
-    k = E === o.T.NAMEPLATES_V3,
-    T = k ? "NAMEPLATES VOL.3" : null,
+    k = l.useRef(null),
+    P = E === i.T.NAMEPLATES_V3,
+    T = P ? "NAMEPLATES VOL.3" : null,
     I = null == O ? void 0 : O.bodyText,
     L = (0, d.sp)();
   return (0, r.jsx)(s.$, {
-    innerRef: P,
+    innerRef: k,
     onChange: y,
     threshold: 0,
     children: (0, r.jsxs)(c.P3F, {
       className: m.featuredBlock,
-      innerRef: P,
+      innerRef: k,
       style: {
         backgroundImage: "url(".concat(j, ")")
       },
@@ -69,8 +69,8 @@ let _ = e => {
         className: m.featuredBlockTextContainer,
         children: [null != T && (0, r.jsx)(c.X6q, {
           lineClamp: 2,
-          className: i()(m.featuredBlockTitleText, {
-            [m.featuredBlockTitleTextNameplate]: k
+          className: o()(m.featuredBlockTitleText, {
+            [m.featuredBlockTitleTextNameplate]: P
           }),
           style: {
             color: null != (a = null == O ? void 0 : O.bannerTextColor) ? a : "white"

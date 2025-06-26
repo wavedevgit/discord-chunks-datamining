@@ -400,7 +400,7 @@ function V(e) {
       pagination: {
         offset: e * w.vpv
       },
-      trackExactTotalHits: !1
+      trackExactTotalHits: !0
     })
   }, [o, a]), {
     searchResults: v,

@@ -445,7 +445,7 @@ function V(e) {
       pagination: {
         offset: 0
       },
-      trackExactTotalHits: !1
+      trackExactTotalHits: !0
     })
   }, [a]);
   return (0, r.jsx)(G, {

@@ -1,7 +1,7 @@
 /** Chunk was on 81530 **/
 "use strict";
 r.d(t, {
-  Z: () => O
+  Z: () => j
 });
 var n = r(255367),
   i = r(73800),
@@ -15,13 +15,14 @@ var n = r(255367),
   p = r(381585),
   b = r(884697),
   f = r(228624),
-  v = r(67409),
-  m = r(981631),
-  h = r(474936),
-  g = r(231338),
-  x = r(388032),
-  _ = r(846165);
-let y = {
+  v = r(410127),
+  m = r(67409),
+  h = r(981631),
+  g = r(474936),
+  x = r(231338),
+  _ = r(388032),
+  y = r(846165);
+let O = {
     dark: [{
       box: "#FFF19E",
       ribbon: "#FF484B"
@@ -67,21 +68,21 @@ let y = {
       ribbon: "#026530"
     }]
   },
-  O = e => {
+  j = e => {
     let {
       product: t,
       selectedVariantIndex: r,
-      returnRef: O,
-      onSuccess: j,
-      tooltipDelay: P,
-      isGiftEasterEggEnabled: C,
-      color: w = l.Ttl.BRAND
+      returnRef: j,
+      onSuccess: P,
+      tooltipDelay: C,
+      isGiftEasterEggEnabled: w,
+      color: k = l.Ttl.BRAND
     } = e, {
-      analyticsLocations: k
-    } = (0, s.ZP)(), E = i.useRef(null), S = (0, a.Z)(E), N = (0, f.hv)("CollectiblesShopGiftButton"), I = (0, p.sp)();
+      analyticsLocations: E
+    } = (0, s.ZP)(), S = i.useRef(null), N = (0, a.Z)(S), I = (0, f.hv)("CollectiblesShopGiftButton"), F = (0, p.sp)(), B = (0, v.Z)();
     return (0, b.x6)(t) ? null : (0, n.jsx)(l.ua7, {
-      text: x.intl.string(x.t["JCFN//"]),
-      delay: P,
+      text: _.intl.string(_.t["JCFN//"]),
+      delay: C,
       children: e => {
         var i, a;
         return (0, n.jsx)(l.zxk, (i = function(e) {
@@ -102,42 +103,43 @@ let y = {
           }
           return e
         }({}, e), a = a = {
-          buttonRef: E,
-          className: _.giftButton,
-          color: w,
+          buttonRef: S,
+          className: y.giftButton,
+          color: k,
           look: l.zxk.Looks.FILLED,
           size: l.PhG.ICON,
-          innerClassName: _.giftButtonInner,
-          "aria-label": x.intl.string(x.t.PEjaCw),
+          innerClassName: y.giftButtonInner,
+          "aria-label": _.intl.string(_.t.PEjaCw),
           onClick: e => {
-            e.stopPropagation(), d.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == I ? void 0 : I.sessionId,
+            e.stopPropagation(), d.default.track(h.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              collectibles_shop_session_id: null == F ? void 0 : F.sessionId,
               sku_id: t.skuId,
-              page_section: null == I ? void 0 : I.pageSection,
-              page_category: null == I ? void 0 : I.pageCategory,
+              page_section: null == F ? void 0 : F.pageSection,
+              page_category: null == F ? void 0 : F.pageCategory,
               tile_type: o.Z[t.type],
-              tile_position: String(null == I ? void 0 : I.tilePosition),
-              cta_name: "gift button"
+              tile_position: String(null == F ? void 0 : F.tilePosition),
+              cta_name: "gift button",
+              page_type: B || "home"
             }), (0, c.Z)({
-              skuId: (0, v.S)({
+              skuId: (0, m.S)({
                 product: t,
                 selectedVariantIndex: r
               }),
               isGift: !0,
-              giftingOrigin: h.Wt.SHOP_PAGE,
-              analyticsLocations: k,
-              returnRef: O,
-              variantsReturnStyle: N,
-              onClose: null != j ? e => {
-                e && j()
+              giftingOrigin: g.Wt.SHOP_PAGE,
+              analyticsLocations: E,
+              returnRef: j,
+              variantsReturnStyle: I,
+              onClose: null != P ? e => {
+                e && P()
               } : void 0
             })
           },
-          children: C ? (0, n.jsx)(u.Z, {
-            hovered: S,
+          children: w ? (0, n.jsx)(u.Z, {
+            hovered: N,
             isContentDismissed: !0,
-            themeOverride: g.BR.DARK,
-            boxColors: y
+            themeOverride: x.BR.DARK,
+            boxColors: O
           }) : (0, n.jsx)(l.OgN, {
             size: "md",
             color: "currentColor"
