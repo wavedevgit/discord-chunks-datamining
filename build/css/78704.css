@@ -1,24 +1,11 @@
 /**
   Module ID: 78704
-  Original File Name: 8c8cfd1affeaef18
+  Original File Name: 1961dec8407489dd
 **/
-.container_f0aa37 {
-    margin-left: -16px;
-    min-width: 440px
-}
-
-.modalHeader_f0aa37 {
-    padding-bottom: 0
-}
-
-.header_f0aa37 {
-    padding: 0
-}
-
 .row_f0aa37 {
     color: var(--interactive-normal);
     line-height: 18px;
-    margin: 16px
+    margin: 16px 0
 }
 
 .switchGroup_f0aa37 {
@@ -26,7 +13,8 @@
 }
 
 .error_f0aa37 {
-    color: var(--text-danger)
+    color: var(--text-danger);
+    text-align: center
 }
 
 .roleSelector_f0aa37 {
@@ -42,17 +30,8 @@
     width: 8px
 }
 
-.roleOption_f0aa37 {
-    align-items: center;
-    display: flex
-}
-
-.footer_f0aa37 {
-    padding: 16px
-}
-
 .button_f0aa37 {
     margin-left: 8px
 }
 
-/*# sourceMappingURL=8c8cfd1affeaef18.css.map*/
+/*# sourceMappingURL=1961dec8407489dd.css.map*/
