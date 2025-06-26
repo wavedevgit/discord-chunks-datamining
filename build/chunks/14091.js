@@ -369,44 +369,51 @@ function V(e) {
     dismissFeedbackEntrypoint: l
   } = e, o = i.useMemo(() => ({
     type: w.aib.DMS
-  }), []), a = (0, _.WJ)(o), s = (0, c.e7)([x.Z], () => x.Z.getSearchResultsQueryString(a)), u = (0, _.jj)(o, k.sR.MESSAGES, s), [d, h] = i.useState(0), f = (0, c.cj)([b.Z], () => {
-    var e, t, n, r;
-    return {
-      isSearching: null != (e = b.Z.getIsFetching(u)) && e,
-      isIndexing: null != (t = b.Z.getIsIndexing(u)) && t,
-      isHistoricalIndexing: null != (n = b.Z.getIsHistoricalIndexing(u)) && n,
-      documentsIndexed: b.Z.getDocumentsIndexed(u),
-      offset: d * w.vpv,
-      totalResults: null != (r = b.Z.getTotalCount(u)) ? r : 0,
-      hasError: null != b.Z.getError(u),
-      showBlockedResults: !1,
-      showNoResultsAlt: b.Z.getShowNoResultsAlt(u)
-    }
-  }), g = (0, c.e7)([b.Z], () => b.Z.getLastSearchAnalyticsId()), C = i.useCallback(e => {
-    var t;
-    h(e), m.Z.clearSearch(), m.Z.fetchMessages({
-      searchContext: o,
-      searchTabs: [k.sR.MESSAGES],
-      searchQueryString: null != (t = U(a)) ? t : "",
-      getLimit: () => w.vpv,
-      onFetchStart: e => {
-        let {
-          searchContext: t,
-          searchQueryString: n,
-          searchQuery: r
-        } = e, i = (0, _.WJ)(t);
-        p.Vs(i, n, r)
-      },
-      pagination: {
-        offset: e * w.vpv
-      },
-      trackExactTotalHits: !0
-    })
-  }, [o, a]), {
-    searchResults: v,
-    ignoreCount: j,
-    blockCount: O
-  } = (0, P.G)(o);
+  }), []), a = (0, _.WJ)(o), s = (0, c.e7)([x.Z], () => x.Z.getSearchResultsQueryString(a)), u = (0, _.jj)(o, k.sR.MESSAGES, s), [d, h] = i.useState(0);
+  i.useEffect(() => {
+    h(0)
+  }, [s]);
+  let f = (0, c.cj)([b.Z], () => {
+      var e, t, n, r;
+      return {
+        isSearching: null != (e = b.Z.getIsFetching(u)) && e,
+        isIndexing: null != (t = b.Z.getIsIndexing(u)) && t,
+        isHistoricalIndexing: null != (n = b.Z.getIsHistoricalIndexing(u)) && n,
+        documentsIndexed: b.Z.getDocumentsIndexed(u),
+        offset: d * w.vpv,
+        totalResults: null != (r = b.Z.getTotalCount(u)) ? r : 0,
+        hasError: null != b.Z.getError(u),
+        showBlockedResults: !1,
+        showNoResultsAlt: b.Z.getShowNoResultsAlt(u)
+      }
+    }),
+    g = (0, c.e7)([b.Z], () => b.Z.getLastSearchAnalyticsId()),
+    C = i.useCallback(e => {
+      var t;
+      h(e), m.Z.clearSearch(), m.Z.fetchMessages({
+        searchContext: o,
+        searchTabs: [k.sR.MESSAGES],
+        searchQueryString: null != (t = U(a)) ? t : "",
+        getLimit: () => w.vpv,
+        onFetchStart: e => {
+          let {
+            searchContext: t,
+            searchQueryString: n,
+            searchQuery: r
+          } = e, i = (0, _.WJ)(t);
+          p.Vs(i, n, r)
+        },
+        pagination: {
+          offset: e * w.vpv
+        },
+        trackExactTotalHits: !0
+      })
+    }, [o, a]),
+    {
+      searchResults: v,
+      ignoreCount: j,
+      blockCount: O
+    } = (0, P.G)(o);
   return (0, r.jsx)(G, {
     searchId: w.aib.DMS,
     search: f,
