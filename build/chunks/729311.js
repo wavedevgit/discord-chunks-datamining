@@ -1,8 +1,8 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  Z: () => w,
-  j: () => R
+  Z: () => R,
+  j: () => Z
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -30,9 +30,10 @@ var r = n(255367),
   I = n(353890),
   E = n(716130),
   S = n(388032),
-  T = n(19567);
+  T = n(19567),
+  P = n(73433);
 
-function P(e) {
+function w(e) {
   let {
     guild: t
   } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, C.Z)(t), x = (0, l.e7)([_.Z], () => _.Z.editedDefaultChannelIds), b = h.filter(e => !x.has(e.id)), [v, O] = i.useState(!1);
@@ -128,6 +129,7 @@ function P(e) {
                 })
               })]
             }), null != e.topic && e.topic.length > 0 ? (0, r.jsx)(o.Z, {
+              className: P.markup,
               children: (0, r.jsx)(s.Text, {
                 className: T.topic,
                 variant: "text-xs/normal",
@@ -166,7 +168,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function R(e) {
   let {
     saveOnClose: t = !1
   } = e, n = (0, l.e7)([b.Z], () => b.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), o = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? void 0 : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? void 0 : n.id)), u = (0, l.e7)([O.Z], () => O.Z.advancedMode), m = i.useRef(null), [g, p] = i.useState(!1), _ = i.useRef(n);
@@ -209,7 +211,7 @@ function w(e) {
         className: T.advancedModeToggle,
         guildId: n.id
       }), g ? null : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(P, {
+        children: [(0, r.jsx)(w, {
           guild: n
         }), (0, r.jsx)(N.Z, {
           className: T.channelBrowserOuter,
@@ -252,7 +254,7 @@ function w(e) {
   })
 }
 
-function R() {
+function Z() {
   let e = (0, l.e7)([b.Z], () => b.Z.getProps().guild),
     t = (0, l.e7)([_.Z], () => _.Z.submitting),
     n = (0, l.e7)([O.Z], () => O.Z.advancedMode);

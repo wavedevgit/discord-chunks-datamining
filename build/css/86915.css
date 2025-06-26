@@ -1,6 +1,6 @@
 /**
   Module ID: 86915
-  Original File Name: 4b00b020113636e8
+  Original File Name: 1da1a279e50cf9b1
 **/
 .iconButton_aa66d3 {
     background-color: transparent;
@@ -721,13 +721,13 @@
     margin-bottom: 16px
 }
 
-.forumGuidelines__0511a {
+.topic__0511a {
     background-color: var(--input-background);
     border-radius: 0 0 4px 4px;
     min-height: 200px
 }
 
-.forumGuidelinesCharacterCount__0511a {
+.topicCharacterCount__0511a {
     bottom: 4px;
     color: var(--text-muted);
     font-family: var(--font-code);
@@ -824,4 +824,4 @@
     vertical-align: top
 }
 
-/*# sourceMappingURL=4b00b020113636e8.css.map*/
+/*# sourceMappingURL=1da1a279e50cf9b1.css.map*/

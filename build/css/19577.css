@@ -1,6 +1,6 @@
 /**
   Module ID: 19577
-  Original File Name: c54694cf32b06772
+  Original File Name: e24f4763d3c18a60
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -10577,6 +10577,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin: 0 0 0 8px;
     min-width: 0;
     overflow: hidden;
+    overflow-wrap: normal;
     position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -14416,4 +14417,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=c54694cf32b06772.css.map*/
+/*# sourceMappingURL=e24f4763d3c18a60.css.map*/

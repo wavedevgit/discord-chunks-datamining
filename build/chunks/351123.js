@@ -27,12 +27,12 @@ var i = n(255367),
   S = n(271383),
   E = n(430824),
   O = n(496675),
-  Z = n(594174),
-  T = n(903386),
-  w = n(700785),
+  w = n(594174),
+  Z = n(903386),
+  T = n(700785),
   R = n(605436),
-  I = n(27544),
-  _ = n(415236),
+  _ = n(27544),
+  I = n(415236),
   P = n(182905),
   A = n(71080),
   L = n(981631),
@@ -192,11 +192,11 @@ function W(e) {
       } = e;
       switch (t) {
         case A.m$.ROLES:
-          return (0, i.jsx)(H, {
+          return (0, i.jsx)(G, {
             title: M.intl.string(M.t.LPJmLy)
           }, "roles-title");
         case A.m$.MEMBERS:
-          return (0, i.jsx)(H, {
+          return (0, i.jsx)(G, {
             title: M.intl.string(M.t["9Oq93t"])
           }, "members-title")
       }
@@ -224,7 +224,7 @@ function U(e) {
   }
   return (0, i.jsxs)("div", {
     className: s()(k.settingCard, k.active),
-    children: [(0, i.jsx)(_.Z, {
+    children: [(0, i.jsx)(I.Z, {
       label: M.intl.string(M.t.StpcFR),
       description: M.intl.string(M.t.f7VbhI),
       icon: (0, i.jsx)(o.ewx, {
@@ -267,17 +267,17 @@ function U(e) {
   })
 }
 
-function G(e) {
+function H(e) {
   let {
     guild: t,
     channel: l,
     isPrivateGuildChannel: r,
     roles: c,
     members: d
-  } = e, u = (0, a.e7)([O.Z], () => O.Z.can(D.Pl.ADMINISTRATOR, t)), h = w.Uu(D.Pl.VIEW_CHANNEL, t), g = w.Uu(D.Pl.ADMINISTRATOR, t);
+  } = e, u = (0, a.e7)([O.Z], () => O.Z.can(D.Pl.ADMINISTRATOR, t)), h = T.Uu(D.Pl.VIEW_CHANNEL, t), g = T.Uu(D.Pl.ADMINISTRATOR, t);
   async function m() {
     let e = l.accessPermissions,
-      s = Z.default.getCurrentUser();
+      s = w.default.getCurrentUser();
     if (!r && null != await (0, x.T)(t.id, l.id)) return void(0, o.ZDy)(async () => {
       let {
         ConfirmModal: e
@@ -307,7 +307,7 @@ function G(e) {
     className: s()(k.settingCard, {
       [k.active]: r
     }),
-    children: [(0, i.jsx)(_.Z, {
+    children: [(0, i.jsx)(I.Z, {
       description: p.subtitle,
       icon: (0, i.jsx)(o.mBM, {
         size: "custom",
@@ -370,7 +370,7 @@ function G(e) {
   })
 }
 
-function H(e) {
+function G(e) {
   let {
     title: t
   } = e;
@@ -424,7 +424,7 @@ let F = a.ZP.connectStores([N.Z, O.Z, S.ZP, E.Z], () => {
     isPrivateGuildChannel: h,
     locked: g,
     permissionUpdates: m
-  } = e, [p, f] = l.useState(!w.Uu(D.Pl.SEND_MESSAGES, s));
+  } = e, [p, f] = l.useState(!T.Uu(D.Pl.SEND_MESSAGES, s));
   if (null == s || null == d) return null;
   let x = {
     title: M.intl.string(M.t.BAZMBg),
@@ -445,7 +445,7 @@ let F = a.ZP.connectStores([N.Z, O.Z, S.ZP, E.Z], () => {
     }) : (0, i.jsx)(P.Z, {
       buttonText: M.intl.string(M.t.NVwuHh),
       canSync: !0,
-      icon: (0, o.GSL)(T.Z),
+      icon: (0, o.GSL)(Z.Z),
       noticeText: M.intl.format(M.t.OIhm0N, {
         categoryName: r.name
       }),
@@ -461,7 +461,7 @@ let F = a.ZP.connectStores([N.Z, O.Z, S.ZP, E.Z], () => {
               let {
                 guild_id: e
               } = r, t = B({}, r.permissionOverwrites);
-              null != e && null == t[e] && (t[e] = w.we(e)), await (0, j.u)(s, t[e].deny, t[e].allow) && (0, u.wk)(s.id, {
+              null != e && null == t[e] && (t[e] = T.we(e)), await (0, j.u)(s, t[e].deny, t[e].allow) && (0, u.wk)(s.id, {
                 permissionOverwrites: Object.values(t)
               })
             }
@@ -472,12 +472,12 @@ let F = a.ZP.connectStores([N.Z, O.Z, S.ZP, E.Z], () => {
       guild: d,
       channel: s,
       permissionUpdates: m
-    }) : null, (0, i.jsx)(G, {
+    }) : null, (0, i.jsx)(H, {
       channel: s,
       guild: d,
       isPrivateGuildChannel: h,
       roles: c,
       members: a
-    }), !1, (0, i.jsx)(I.Z, {})]
+    }), !1, (0, i.jsx)(_.Z, {})]
   })
 })

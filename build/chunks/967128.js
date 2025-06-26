@@ -45,12 +45,13 @@ function d(e) {
 
 function p(e) {
   let {
-    children: t
+    children: t,
+    className: n
   } = e;
   return (0, r.jsx)(o.Text, {
     variant: "text-md/normal",
     color: "none",
-    className: c.description,
+    className: l()(c.description, n),
     children: t
   })
 }
