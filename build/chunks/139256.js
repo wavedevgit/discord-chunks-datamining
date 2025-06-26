@@ -24,8 +24,8 @@ var r = n(255367),
   _ = n(203143),
   b = n(79390),
   x = n(839963),
-  y = n(294608),
-  E = n(65145),
+  E = n(294608),
+  y = n(65145),
   v = n(981631),
   C = n(388032),
   O = n(56228);
@@ -128,7 +128,7 @@ function P(e) {
     children: o
   } = e, {
     pollAnswerRef: c
-  } = (0, E.dv)();
+  } = (0, y.dv)();
   return (0, r.jsx)(s.P3F, {
     role: "checkbox",
     className: a()(t, O.enabled),
@@ -149,7 +149,7 @@ function A(e) {
     isFirstAnswer: c
   } = e, {
     pollAnswerRef: u
-  } = (0, E.dv)();
+  } = (0, y.dv)();
   return (0, r.jsx)(s.P3F, {
     role: "radio",
     className: a()(t, O.enabled),
@@ -222,7 +222,7 @@ function Z(e) {
   } = e, {
     channelId: u,
     messageId: d
-  } = (0, y.pE)(), p = (0, y.$B)(n.style), m = !0 === n.isSelected, f = i.useCallback(() => {
+  } = (0, E.pE)(), p = (0, E.$B)(n.style), m = !0 === n.isSelected, f = i.useCallback(() => {
     _.Z.handlePollAnswerTapped({
       channelId: u,
       messageId: d,
@@ -305,7 +305,7 @@ function D(e) {
     fallback: a
   } = e, {
     message: o
-  } = (0, y.GF)();
+  } = (0, E.GF)();
   if (null != t.attachmentIds && t.attachmentIds.length > 0) {
     let e = o.attachments.find(e => {
       var n;

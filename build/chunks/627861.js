@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(172109),
   b = n(880251),
   x = n(208444),
-  y = n(371991),
-  E = n(561308),
+  E = n(371991),
+  y = n(561308),
   v = n(810568),
   C = n(567409),
   O = n(168524),
@@ -160,7 +160,7 @@ function ea(e) {
     onView: m,
     partyStatusElement: f,
     presenceActivity: _
-  } = e, b = ei(u, _), x = (0, I.Lz)(_, p.author, "Invite Embed"), E = !(0, W.Z)(_, p, c.id), v = i.useMemo(() => {
+  } = e, b = ei(u, _), x = (0, I.Lz)(_, p.author, "Invite Embed"), y = !(0, W.Z)(_, p, c.id), v = i.useMemo(() => {
     let e = [];
     if (!b) {
       var t;
@@ -181,7 +181,7 @@ function ea(e) {
       }
     }), e
   }, [b, _, x]), C = el(c.name, null == (t = p.activity) ? void 0 : t.type);
-  if (E) {
+  if (y) {
     let e = (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       className: J.description,
@@ -212,7 +212,7 @@ function ea(e) {
         className: J.timestampContainer,
         children: [(0, r.jsx)(o.RZG, {
           size: "xxs"
-        }), (0, r.jsx)(y.x3, {
+        }), (0, r.jsx)(E.x3, {
           entry: {
             start: t,
             end: null == _ || null == (l = _.timestamps) ? void 0 : l.end
@@ -373,7 +373,7 @@ function ec(e) {
     if (t.author.id === r || !(0, W.Z)(e, t, n.id) || (null == (i = t.activity) ? void 0 : i.type) !== q.mFx.JOIN_REQUEST || !(0, z.Z)(e, q.xjy.JOIN)) return !1;
     let l = et(e);
     return !(!er(l) || en(l))
-  }(R, P, j, I), ey = i.useMemo(() => eg ? {
+  }(R, P, j, I), eE = i.useMemo(() => eg ? {
     label: Q.intl.string(Q.t.VJlc0d),
     trackingArea: g.j_.JOIN,
     onClick: () => {
@@ -422,7 +422,7 @@ function ec(e) {
     trackingArea: g.j_.PLAY,
     onClick: () => {},
     disabledReason: Q.intl.string(Q.t.KC26NT)
-  } : null != eh ? eh : void 0, [O, eg, ex, e_, S.id, S.guild_id, I, eb, P.author.id, P.id, R, eh]), eE = i.useMemo(() => ea ? {
+  } : null != eh ? eh : void 0, [O, eg, ex, e_, S.id, S.guild_id, I, eb, P.author.id, P.id, R, eh]), ey = i.useMemo(() => ea ? {
     label: Q.intl.string(Q.t.RscU7O),
     trackingArea: g.j_.PLAY,
     onClick: () => {
@@ -452,11 +452,11 @@ function ec(e) {
     }
   } : null != ev && k ? ev : void 0, [k, $, ec, ev]), eO = i.useMemo(() => {
     let e = [];
-    return V || null == ey ? V && null != eE && e.push(eE) : e.push(ey), null != eC && e.push(eC), e
-  }, [eE, V, ey, eC]), ej = el(j.name, null == (t = P.activity) ? void 0 : t.type), eS = k ? (0, f.H)({
+    return V || null == eE ? V && null != ey && e.push(ey) : e.push(eE), null != eC && e.push(eC), e
+  }, [ey, V, eE, eC]), ej = el(j.name, null == (t = P.activity) ? void 0 : t.type), eS = k ? (0, f.H)({
     applicationId: j.id,
     referrerId: I
-  }) : void 0, eI = (0, C.N)(j.id).some(e => (0, E.ig)(e) === l.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+  }) : void 0, eI = (0, C.N)(j.id).some(e => (0, y.ig)(e) === l.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.YqE, {
       size: "xxs",
       color: "currentColor"
@@ -505,7 +505,7 @@ function ec(e) {
       children: [(0, r.jsx)(o.iWm, {
         size: "xxs",
         color: "currentColor"
-      }), (0, r.jsx)(y.x3, {
+      }), (0, r.jsx)(E.x3, {
         entry: {
           start: eT,
           end: null == R || null == (_ = R.timestamps) ? void 0 : _.end
@@ -568,19 +568,19 @@ function eu(e) {
   }, [f]), {
     partySize: b,
     maxPartySize: x
-  } = et(f), y = i.useMemo(() => g.map(e => {
+  } = et(f), E = i.useMemo(() => g.map(e => {
     let t = M.default.getUser(e);
     return null != t ? t : new N.Z({
       discriminator: "0005"
     })
-  }), [g]), E = (0, X.Ps)(null == f || null == (t = f.party) ? void 0 : t.id) || p.id === T.r9.id, v = (0, r.jsx)($, {
-    partyMembers: y,
+  }), [g]), y = (0, X.Ps)(null == f || null == (t = f.party) ? void 0 : t.id) || p.id === T.r9.id, v = (0, r.jsx)($, {
+    partyMembers: E,
     partySize: b,
     maxPartySize: x,
     guildId: s.guild_id,
     activityActionType: null == (n = c.activity) ? void 0 : n.type
   });
-  return E ? (0, r.jsx)(ea, {
+  return y ? (0, r.jsx)(ea, {
     application: p,
     currentUserPresenceActivity: h,
     hideParty: u,

@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(311819),
   b = n(758199),
   x = n(943762),
-  y = n(914498),
-  E = n(208444),
+  E = n(914498),
+  y = n(208444),
   v = n(429551),
   C = n(973616),
   O = n(314897),
@@ -122,7 +122,7 @@ let U = i.memo(function(e) {
         analyticsLocations: F,
         componentId: en
       })
-    }, el = et.disabled ? L.intl.string(L.t.JBnc7O) : L.intl.string(L.t.cX9uLS), ea = (0, E.z)(J, () => {
+    }, el = et.disabled ? L.intl.string(L.t.JBnc7O) : L.intl.string(L.t.cX9uLS), ea = (0, y.z)(J, () => {
       T.default.track(R.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: P.id,
         channel_id: w,
@@ -142,7 +142,7 @@ let U = i.memo(function(e) {
     ep = (0, x.r)(X),
     em = [{
       label: ee ? L.intl.string(L.t.cnBQPD) : L.intl.string(L.t.VJlc0d),
-      trackingArea: y.j_.PLAY,
+      trackingArea: E.j_.PLAY,
       onClick: ei,
       disabledReason: v,
       submitting: er
@@ -178,7 +178,7 @@ let U = i.memo(function(e) {
     actions: em,
     trackingConfig: {
       id: P.id,
-      linkType: y.Un.ACTIVITY_INSTANCE
+      linkType: E.Un.ACTIVITY_INSTANCE
     }
   })
 })

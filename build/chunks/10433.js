@@ -23,7 +23,7 @@ function b(e) {
     code: t,
     message: n,
     embedUrl: b
-  } = e, [x, y, E] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), v = (0, a.e7)([d.Z], () => {
+  } = e, [x, E, y] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), v = (0, a.e7)([d.Z], () => {
     var e;
     return null != (e = d.Z.getGuildId()) ? e : void 0
   }), [C, O] = i.useState(!1), j = i.useCallback(e => {
@@ -40,15 +40,15 @@ function b(e) {
   return (i.useEffect(() => {
     (0, m.gZ)(t)
   }, [t]), i.useEffect(() => {
-    C && E === f.M.FETCHED && I()
-  }, [C, E, I]), i.useEffect(() => {
-    C && y && p.default.track(h.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    C && y === f.M.FETCHED && I()
+  }, [C, y, I]), i.useEffect(() => {
+    C && E && p.default.track(h.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: l.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: v,
       channel_id: n.channel_id
     })
-  }, [C, v, y, n.author.id, n.channel_id]), y) ? (0, r.jsxs)(c.Z, {
+  }, [C, v, E, n.author.id, n.channel_id]), E) ? (0, r.jsxs)(c.Z, {
     containerRef: S,
     children: [(0, r.jsx)(c.Z.Header, {
       text: g.intl.string(g.t.j4KtLS)
@@ -64,7 +64,7 @@ function b(e) {
         })]
       })
     })]
-  }) : null == x || E === f.M.FETCHING ? (0, r.jsxs)(c.Z, {
+  }) : null == x || y === f.M.FETCHING ? (0, r.jsxs)(c.Z, {
     containerRef: S,
     children: [(0, r.jsx)(c.Z.Header, {
       text: g.intl.string(g.t.m9hXGR)

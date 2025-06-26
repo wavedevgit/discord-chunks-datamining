@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(594174),
   b = n(630388),
   x = n(74538),
-  y = n(566006),
-  E = n(981631),
+  E = n(566006),
+  y = n(981631),
   v = n(185923),
   C = n(474936),
   O = n(388032),
@@ -59,8 +59,8 @@ class N extends i.Component {
       tabIndex: o = 0
     } = this.props, {
       isReactionPickerActive: s
-    } = this.state, c = t.state === E.yb.SENDING, m = e === y.O.BURST;
-    if (c || (0, b.yE)(t.flags, E.iLy.EPHEMERAL)) return null;
+    } = this.state, c = t.state === y.yb.SENDING, m = e === E.O.BURST;
+    if (c || (0, b.yE)(t.flags, y.iLy.EPHEMERAL)) return null;
     let f = _.default.getCurrentUser(),
       h = (0, x.I5)(f),
       g = m ? O.intl.string(O.t.Kfcszs) : O.intl.string(O.t.lfIHs7);
@@ -139,12 +139,12 @@ class N extends i.Component {
       } = this.props;
       e.stopPropagation();
       let r = _.default.getCurrentUser();
-      t !== y.O.BURST || (0, x.I5)(r) || (0, m.m)({
+      t !== E.O.BURST || (0, x.I5)(r) || (0, m.m)({
         analytics: {
           type: C.cd.BURST_REACTION_UPSELL,
-          page: null != n.getGuildId() ? E.ZY5.GUILD_CHANNEL : E.ZY5.DM_CHANNEL,
+          page: null != n.getGuildId() ? y.ZY5.GUILD_CHANNEL : y.ZY5.DM_CHANNEL,
           section: (0, h.s4)(n),
-          object: E.qAy.INLINE_REACTION_PICKER_UPSELL
+          object: y.qAy.INLINE_REACTION_PICKER_UPSELL
         }
       }), this.handleReactionPickerToggle()
     }), I(this, "renderReactionPopout", e => {
@@ -156,11 +156,11 @@ class N extends i.Component {
         message: l
       } = this.props, a = T({
         openPopoutType: "message_reaction_emoji_picker"
-      }, n === y.O.BURST && {
+      }, n === E.O.BURST && {
         openPopoutType: "message_super_reaction_emoji_picker",
-        page: null != i.getGuildId() ? E.ZY5.GUILD_CHANNEL : E.ZY5.DM_CHANNEL,
+        page: null != i.getGuildId() ? y.ZY5.GUILD_CHANNEL : y.ZY5.DM_CHANNEL,
         section: (0, h.s4)(i),
-        object: E.qAy.REACTION_RAIL
+        object: y.qAy.REACTION_RAIL
       }), o = (0, r.jsx)(g.$, {
         closePopout: t,
         channel: i,
