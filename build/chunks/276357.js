@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => b
 }), n(388685);
 var r = n(255367),
-  a = n(73800),
-  l = n(924826),
-  i = n(91192),
+  i = n(73800),
+  a = n(924826),
+  l = n(91192),
   s = n(442837),
   o = n(481060),
   c = n(607070),
@@ -29,7 +29,7 @@ function b(e) {
     setPopoutRef: b
   } = e, j = (0, u.Vm)(t), {
     tagFilter: v
-  } = (0, d.H)(t.id), C = (0, d.v)(), _ = (0, s.e7)([c.Z], () => c.Z.keyboardModeEnabled), y = a.useCallback(e => {
+  } = (0, d.H)(t.id), _ = (0, d.v)(), C = (0, s.e7)([c.Z], () => c.Z.keyboardModeEnabled), y = i.useCallback(e => {
     (0, m.e7)({
       guildId: t.guild_id,
       channelId: t.id,
@@ -41,17 +41,17 @@ function b(e) {
         section: g.jXE.FORUM_CHANNEL_HEADER,
         object: g.qAy.CHANNEL_TAG
       }
-    }), C.getState().toggleTagFilter(t.id, e)
-  }, [t, v, C]), O = a.useCallback(() => {
-    C.getState().setTagFilter(t.id, new Set), _ || n()
-  }, [C, t.id, _, n]), w = (0, l.ZP)({
+    }), _.getState().toggleTagFilter(t.id, e)
+  }, [t, v, _]), O = i.useCallback(() => {
+    _.getState().setTagFilter(t.id, new Set), C || n()
+  }, [_, t.id, C, n]), w = (0, a.ZP)({
     id: "".concat(t.id, "-all-tags-dropdown-navigator"),
     isEnabled: !0,
     wrap: !0,
     scrollToStart: p,
     scrollToEnd: p
-  }), S = a.useRef(null);
-  return a.useEffect(() => {
+  }), S = i.useRef(null);
+  return i.useEffect(() => {
     requestAnimationFrame(() => {
       if (null != S.current) {
         let e = S.current.querySelector(".".concat(x.tag));
@@ -84,27 +84,27 @@ function b(e) {
           })
         })]
       })
-    }), (0, r.jsx)(i.bG, {
+    }), (0, r.jsx)(l.bG, {
       navigator: w,
-      children: (0, r.jsx)(i.SJ, {
+      children: (0, r.jsx)(l.SJ, {
         children: e => {
           var t, n, {
-              ref: a
+              ref: i
             } = e,
-            l = function(e, t) {
+            a = function(e, t) {
               if (null == e) return {};
-              var n, r, a = function(e, t) {
+              var n, r, i = function(e, t) {
                 if (null == e) return {};
-                var n, r, a = {},
-                  l = Object.keys(e);
-                for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
-                return a
+                var n, r, i = {},
+                  a = Object.keys(e);
+                for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+                return i
               }(e, t);
               if (Object.getOwnPropertySymbols) {
-                var l = Object.getOwnPropertySymbols(e);
-                for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+                var a = Object.getOwnPropertySymbols(e);
+                for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
               }
-              return a
+              return i
             }(e, ["ref"]);
           return (0, r.jsx)("div", (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -125,9 +125,9 @@ function b(e) {
             return e
           }({
             ref: e => {
-              a.current = e, S.current = e
+              i.current = e, S.current = e
             }
-          }, l), n = n = {
+          }, a), n = n = {
             className: x.tagContainer,
             children: j.map(e => (0, r.jsx)(h.Z, {
               className: x.tag,

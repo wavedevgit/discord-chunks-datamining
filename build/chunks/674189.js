@@ -5,16 +5,16 @@ i.d(t, {
 var n = i(255367),
   l = i(73800),
   r = i(512722),
-  s = i.n(r),
+  a = i.n(r),
   u = i(481060),
-  a = i(313201),
+  s = i(313201),
   d = i(560067),
   o = i(434404),
   c = i(430824),
   p = i(313741),
   g = i(526079),
-  C = i(388032),
-  G = i(352897);
+  G = i(388032),
+  C = i(352897);
 
 function m(e) {
   let {
@@ -23,7 +23,7 @@ function m(e) {
     onChange: l,
     isGuildIncluded: r
   } = e, {
-    options: s
+    options: a
   } = (0, g.Z)({
     isGuildIncluded: r
   });
@@ -31,8 +31,8 @@ function m(e) {
     className: t,
     onChange: l,
     value: i,
-    options: s,
-    placeholder: C.intl.string(C.t.etZ9tb)
+    options: a,
+    placeholder: G.intl.string(G.t.etZ9tb)
   })
 }
 
@@ -42,17 +42,17 @@ function b(e) {
     onClose: i,
     feature: r,
     section: g,
-    subsection: C
-  } = e, b = (0, a.Dt)(), {
+    subsection: G
+  } = e, b = (0, s.Dt)(), {
     canCreateGuild: h,
     createGuildCta: S,
-    createGuildDescription: Z,
-    selectGuildCta: v,
-    title: f,
+    createGuildDescription: v,
+    selectGuildCta: f,
+    title: Z,
     description: x,
     isGuildSupported: j
-  } = (0, p.K)(r), [O, I] = l.useState(), [k, F] = l.useState(!1), w = async () => {
-    F(!0);
+  } = (0, p.K)(r), [O, I] = l.useState(), [k, _] = l.useState(!1), w = async () => {
+    _(!0);
     let e = await new Promise(e => {
       d.Z.openCreateGuildModal({
         onSuccess: e
@@ -62,56 +62,57 @@ function b(e) {
       c.Z.addChangeListener(function i() {
         null != c.Z.getGuild(e) && (c.Z.removeChangeListener(i), t())
       })
-    }), o.Z.open(e, g, void 0, C), null == i || i()
+    }), o.Z.open(e, g, void 0, G), null == i || i()
   };
   return (0, n.jsxs)(u.Y0X, {
     transitionState: t,
     "aria-labelledby": b,
     parentComponent: "GuildSettingsPickerModal",
     children: [(0, n.jsxs)(u.xBx, {
-      className: G.modalHeader,
+      className: C.modalHeader,
       separator: !1,
       children: [(0, n.jsx)(u.X6q, {
         id: b,
         variant: "heading-lg/medium",
-        children: f
+        children: Z
       }), (0, n.jsx)(u.olH, {
         onClick: i
       })]
     }), (0, n.jsxs)(u.hzk, {
-      className: G.modalContent,
-      children: [(0, n.jsx)(u.Text, {
-        variant: "text-md/medium",
-        children: x
-      }), (0, n.jsx)(u.LZC, {
-        size: 16
-      }), (0, n.jsxs)("div", {
-        className: G.guildSelection,
-        children: [(0, n.jsx)("div", {
-          className: G.guildSelectorContainer,
-          children: (0, n.jsx)(m, {
-            guildId: O,
-            onChange: I,
-            isGuildIncluded: j
-          })
-        }), (0, n.jsx)(u.zxk, {
-          onClick: () => {
-            s()(null != O, "Guild ID must not be null on click"), o.Z.open(O, g, void 0, C), null == i || i()
-          },
-          disabled: null == O,
-          children: v
-        })]
-      }), h && (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsx)(u.LZC, {
-          size: 32
-        }), (0, n.jsx)(u.Text, {
+      className: C.modalContent,
+      children: [(0, n.jsxs)(u.Kqy, {
+        direction: "vertical",
+        gap: 8,
+        children: [(0, n.jsx)(u.Text, {
           variant: "text-md/medium",
-          children: Z
-        }), (0, n.jsx)(u.LZC, {
-          size: 8
+          children: x
+        }), (0, n.jsxs)("div", {
+          className: C.guildSelection,
+          children: [(0, n.jsx)("div", {
+            className: C.guildSelectorContainer,
+            children: (0, n.jsx)(m, {
+              guildId: O,
+              onChange: I,
+              isGuildIncluded: j
+            })
+          }), (0, n.jsx)(u.zxk, {
+            onClick: () => {
+              a()(null != O, "Guild ID must not be null on click"), o.Z.open(O, g, void 0, G), null == i || i()
+            },
+            disabled: null == O,
+            children: f
+          })]
+        })]
+      }), h && (0, n.jsxs)(u.Kqy, {
+        direction: "vertical",
+        gap: 8,
+        children: [(0, n.jsx)(u.Text, {
+          variant: "text-md/medium",
+          children: v
         }), (0, n.jsx)(u.zxk, {
           onClick: w,
           submitting: k,
+          className: C.createGuildButton,
           children: S
         })]
       })]

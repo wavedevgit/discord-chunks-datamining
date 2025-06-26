@@ -5,42 +5,42 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var a = n(120356),
-  l = n.n(a),
-  i = n(913527),
-  s = n.n(i),
+var i = n(120356),
+  a = n.n(i),
+  l = n(913527),
+  s = n.n(l),
   o = n(481060),
   c = n(70956),
   d = n(388032),
   u = n(350337);
 let m = e => {
   let t, n, {
-    rateLimitPerUser: a,
-    slowmodeCooldownGuess: i,
+    rateLimitPerUser: i,
+    slowmodeCooldownGuess: l,
     isBypassSlowmode: m,
     leadingIcon: h = !1
   } = e;
-  if (a >= c.Z.Seconds.HOUR) {
-    let e = Math.floor(a / c.Z.Seconds.HOUR),
-      t = Math.floor((a - e * c.Z.Seconds.HOUR) / c.Z.Seconds.MINUTE),
-      r = a - e * c.Z.Seconds.HOUR - t * c.Z.Seconds.MINUTE;
+  if (i >= c.Z.Seconds.HOUR) {
+    let e = Math.floor(i / c.Z.Seconds.HOUR),
+      t = Math.floor((i - e * c.Z.Seconds.HOUR) / c.Z.Seconds.MINUTE),
+      r = i - e * c.Z.Seconds.HOUR - t * c.Z.Seconds.MINUTE;
     n = d.intl.formatToPlainString(d.t.oEwLe3, {
       hours: e,
       minutes: t,
       seconds: r
     })
-  } else if (a >= 60) {
-    let e = Math.floor(a / 60);
+  } else if (i >= 60) {
+    let e = Math.floor(i / 60);
     n = d.intl.formatToPlainString(d.t.DARKYm, {
       minutes: e,
-      seconds: a - 60 * e
+      seconds: i - 60 * e
     })
   } else n = d.intl.formatToPlainString(d.t["9yE8GR"], {
-    seconds: a
+    seconds: i
   });
-  if (!m && i > 0) {
-    let e = s().duration(i);
-    if (i > c.Z.Millis.HOUR) {
+  if (!m && l > 0) {
+    let e = s().duration(l);
+    if (l > c.Z.Millis.HOUR) {
       let n = "".concat(e.minutes()).padStart(2, "0"),
         r = "".concat(e.seconds()).padStart(2, "0");
       t = "".concat(e.hours(), ":").concat(n, ":").concat(r)
@@ -57,7 +57,7 @@ let m = e => {
     f = (0, r.jsx)(o.ANZ, {
       size: "xs",
       color: "currentColor",
-      className: l()(u.slowModeIcon, {
+      className: a()(u.slowModeIcon, {
         [u.leadingIcon]: h
       })
     });

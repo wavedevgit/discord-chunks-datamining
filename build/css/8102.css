@@ -1,6 +1,6 @@
 /**
   Module ID: 8102
-  Original File Name: eda4623f21e72636
+  Original File Name: e248bb0815eb2f71
 **/
 .modalHeader__5a555 {
     align-items: center;
@@ -8,18 +8,27 @@
 }
 
 .modalContent__5a555 {
-    padding-bottom: 16px;
-    padding-top: 16px
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-32);
+    padding-bottom: var(--space-16)
 }
 
 .guildSelection__5a555 {
     align-items: center;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    gap: var(--space-8)
 }
 
 .guildSelectorContainer__5a555 {
     flex: 1
 }
 
-/*# sourceMappingURL=eda4623f21e72636.css.map*/
+.createGuildButton__5a555 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+/*# sourceMappingURL=e248bb0815eb2f71.css.map*/
