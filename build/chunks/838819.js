@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.r(t), n.d(t, {
-  default: () => $
+  default: () => X
 }), n(388685), n(539854);
 var r = n(255367),
   l = n(73800),
@@ -69,7 +69,7 @@ let Y = e => {
       return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
     }, [n, a, r]), t
   },
-  $ = function(e) {
+  X = function(e) {
     var t;
     let {
       isFullScreen: n = !0,
@@ -78,18 +78,18 @@ let Y = e => {
     (0, _.z)(m.f);
     let u = (0, b.Z)((0, o.Z)()),
       z = (0, c.e7)([x.default], () => x.default.getCurrentUser()),
-      $ = (0, k.R)("CollectiblesShop"),
-      X = l.useRef(null),
+      X = (0, k.R)("CollectiblesShop"),
+      $ = l.useRef(null),
       {
         selectedTab: J,
         transitionState: Q,
         transitionToTab: ee
-      } = (0, B.B)(X, a, n),
+      } = (0, B.B)($, a, n),
       {
         handleScroll: et,
         numVisibleItems: en,
         scrollerAtBottom: er
-      } = (0, h.z)(X, u, J, $),
+      } = (0, h.z)($, u, J, X),
       [el, ea] = l.useState(),
       [ei, eo] = l.useState(),
       {
@@ -141,7 +141,7 @@ let Y = e => {
       {
         setCategoryRef: ey,
         handleScrollToCategory: ej
-      } = (0, N.xV)(X.current),
+      } = (0, N.xV)($.current),
       {
         reducedMotion: eP
       } = l.useContext(p.Sfi),
@@ -167,12 +167,12 @@ let Y = e => {
       let e = (eI - 1) * U.kN;
       return ev.slice(e, e + U.kN)
     }, [ev, eI]), eR = l.useRef(null), eZ = l.useCallback(e => {
-      eL(e), null != X.current && null != eR.current ? X.current.scrollTo({
+      eL(e), null != $.current && null != eR.current ? $.current.scrollTo({
         to: eR.current.getBoundingClientRect().top
-      }) : null != X.current && X.current.scrollTo({
+      }) : null != $.current && $.current.scrollTo({
         to: 0
       })
-    }, [X, eL]), eF = (0, c.e7)([j.Z], () => {
+    }, [$, eL]), eF = (0, c.e7)([j.Z], () => {
       var e;
       return null == (e = j.Z.getCategory(el)) ? void 0 : e.name
     }), {
@@ -196,7 +196,7 @@ let Y = e => {
             tabIndex: -1,
             children: (0, r.jsx)(p.Den, {
               className: q.shopScroll,
-              ref: X,
+              ref: $,
               onScroll: et,
               children: (0, r.jsxs)("div", {
                 className: i()(q.shopViewWrapper, {
@@ -250,7 +250,7 @@ let Y = e => {
                           children: (0, r.jsx)(W.Z, {
                             isFetchingCategories: eb,
                             isFullScreen: n,
-                            scrollerRef: X,
+                            scrollerRef: $,
                             tab: e
                           }, e)
                         })

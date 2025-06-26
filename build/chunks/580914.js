@@ -110,8 +110,8 @@ let N = {
       bannerStyleOverrides: q,
       heroLogo: Y,
       heroBannerStatic: K,
-      heroBannerAnimated: $
-    } = (0, k.hr)(U), X = null == z ? void 0 : z.heroBanner, J = null != (n = null != (t = null == q ? void 0 : q.responsive) ? t : U.responsive) && n, Q = null != (a = null == q ? void 0 : q.backgroundStyle) ? a : U.backgroundStyle, ee = l.useMemo(() => W(U.rankedSkuIds), [s, W, U.rankedSkuIds]), et = (0, S.a)()(ee), en = (0, E.l)(et).slice(0, 4), er = (0, T.St)(en), el = F === I.AW.ORBS ? B.intl.string(B.t["1CdL8f"]) : B.intl.formatToPlainString(B.t.wvKYCg, {
+      heroBannerAnimated: X
+    } = (0, k.hr)(U), $ = null == z ? void 0 : z.heroBanner, J = null != (n = null != (t = null == q ? void 0 : q.responsive) ? t : U.responsive) && n, Q = null != (a = null == q ? void 0 : q.backgroundStyle) ? a : U.backgroundStyle, ee = l.useMemo(() => W(U.rankedSkuIds), [s, W, U.rankedSkuIds]), et = (0, S.a)()(ee), en = (0, E.l)(et).slice(0, 4), er = (0, T.St)(en), el = F === I.AW.ORBS ? B.intl.string(B.t["1CdL8f"]) : B.intl.formatToPlainString(B.t.wvKYCg, {
       category_name: U.name
     });
     return null != M && (s || U !== N) ? (0, r.jsxs)("div", {
@@ -123,18 +123,18 @@ let N = {
         style: null != Q ? {
           background: Q
         } : void 0,
-        children: [null == $ || D || !H || G ? (0, r.jsx)("div", {
+        children: [null == X || D || !H || G ? (0, r.jsx)("div", {
           className: i()(w.bannerAsset, w.bannerImage),
           style: {
             backgroundImage: "url(".concat(K, ")")
           }
         }) : (0, r.jsx)(p.Z, {
           className: i()(w.bannerAsset, w.bannerVideoBackground),
-          src: $,
+          src: X,
           autoPlay: !0,
           loop: !0
         }), (null == q ? void 0 : q.hideSideShadow) === !0 ? null : (0, r.jsx)(R, {
-          heroBannerOverrides: X,
+          heroBannerOverrides: $,
           isResponsive: J
         })]
       }), (0, r.jsxs)("div", {
