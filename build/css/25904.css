@@ -1,6 +1,6 @@
 /**
   Module ID: 25904
-  Original File Name: 1dac95b3af7fa642
+  Original File Name: dd10981a693b7fc4
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -5393,12 +5393,11 @@ div:has(>.positionLayer__4f4b6) {
 
 .row__76f04:hover {
     background-color: var(--background-mod-normal);
-    color: var(--text-primary);
     cursor: pointer
 }
 
-.row__76f04:hover .timestamp__76f04 {
-    color: var(--text-secondary)
+.row__76f04:hover,.row__76f04:hover .timestamp__76f04 {
+    color: var(--text-primary)
 }
 
 .avatar__76f04 {
@@ -5414,18 +5413,16 @@ div:has(>.positionLayer__4f4b6) {
 
 .timestamp__76f04 {
     color: var(--text-muted);
-    flex-shrink: 0;
-    white-space: nowrap
+    flex-shrink: 0
 }
 
-.row__76f04:hover .timestamp__76f04 {
-    color: var(--white-500)
+.name__76f04,.timestamp__76f04 {
+    white-space: nowrap
 }
 
 .name__76f04 {
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
+    text-overflow: ellipsis
 }
 
 .more__76f04 {
@@ -7604,4 +7601,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=1dac95b3af7fa642.css.map*/
+/*# sourceMappingURL=dd10981a693b7fc4.css.map*/
