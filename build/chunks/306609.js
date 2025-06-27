@@ -17,8 +17,8 @@ var r = n(255367),
   g = n(659580),
   _ = n(795318),
   b = n(53691),
-  v = n(457165),
-  h = n(594174),
+  h = n(457165),
+  v = n(594174),
   y = n(626135),
   O = n(111361),
   j = n(74538),
@@ -90,7 +90,7 @@ function B(e) {
     orientation: d.y.VERTICAL_TOP
   });
   (0, R.useSyncMessages)(M.messagesLoader);
-  let X = (0, s.e7)([h.default], () => (0, O.I5)(h.default.getCurrentUser())),
+  let X = (0, s.e7)([v.default], () => (0, O.I5)(v.default.getCurrentUser())),
     q = (0, s.e7)([I.Z], () => I.Z.getCatalogUpdateTime()),
     [K, Q] = i.useState(!1),
     [$, ee] = i.useState(!1),
@@ -199,7 +199,7 @@ function B(e) {
               showUpsell: !0,
               text: R.intl.format(R.t["XMDm8/"], {
                 nitroTierName: (0, j.Px)(k.p9.TIER_2),
-                onClick: () => (0, v.i)()
+                onClick: () => (0, h.i)()
               }),
               button: R.intl.string(R.t.cRCCJy),
               buttonAnalyticsObject: {

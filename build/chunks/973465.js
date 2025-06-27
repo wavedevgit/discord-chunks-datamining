@@ -13,7 +13,9 @@ var i = n(255367),
   u = n(388032);
 
 function m() {
-  let e = (0, c.kj)(),
+  let e = (0, c.kj)({
+      location: "UserSettingsCameraSelect"
+    }),
     {
       currentDeviceId: t,
       isVideoAvailable: n

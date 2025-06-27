@@ -19,7 +19,7 @@ var i = n(442837),
   _ = n(388032),
   b = n(128746);
 
-function v(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function v(e) {
   return e
 }
 
-function h(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -82,7 +82,7 @@ function y(e) {
     look: y
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(m.Z, h(v({
+    children: [(0, r.jsxs)(m.Z, v(h({
       disabled: t || w || !C,
       onClick: () => T(!1)
     }, Z), {
@@ -94,7 +94,7 @@ function y(e) {
       }), N]
     }), "play"), x && !w ? (0, r.jsx)(l.ua7, {
       text: _.intl.string(_.t.wCrzur),
-      children: e => (0, r.jsx)(m.Z, h(v(h(v({}, e), {
+      children: e => (0, r.jsx)(m.Z, v(h(v(h({}, e), {
         onClick: () => {
           var t;
           null == (t = e.onClick) || t.call(e), T(!0)

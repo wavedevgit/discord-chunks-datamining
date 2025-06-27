@@ -61,7 +61,9 @@ function N(e) {
   } = (0, c.cj)([x.Z], () => ({
     currentDeviceId: x.Z.getVideoDeviceId(),
     isVideoAvailable: x.Z.isVideoAvailable()
-  })), Z = (0, h.kj)(), w = b.qF.useSetting(), k = Z.map(e => {
+  })), Z = (0, h.kj)({
+    location: "CameraSettings"
+  }), w = b.qF.useSetting(), k = Z.map(e => {
     let {
       id: t,
       name: n

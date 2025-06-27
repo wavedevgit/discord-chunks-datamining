@@ -25,8 +25,8 @@ function u(e) {
     onAction: _
   } = e, {
     tooltip: b,
-    loading: v,
-    disabled: h,
+    loading: h,
+    disabled: v,
     onClick: y
   } = (0, s.Fe)(t, n, d, o.ZP.getNickname(u, i, n)), O = () => {
     null == _ || _(), y()
@@ -47,8 +47,8 @@ function u(e) {
         onClick: O,
         onMouseEnter: n,
         onMouseLeave: i,
-        disabled: h,
-        submitting: v,
+        disabled: v,
+        submitting: h,
         "aria-label": null != b ? b : t.name,
         children: (0, r.jsx)(a.iOO, {
           size: "xs",

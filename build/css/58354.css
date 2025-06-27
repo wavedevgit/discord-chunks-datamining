@@ -1,0 +1,59 @@
+/**
+  Module ID: 58354
+  Original File Name: 720efd4385e3c755
+**/
+.textButton__98277 {
+    background: initial;
+    box-sizing: border-box;
+    color: inherit;
+    display: inline-flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: medium;
+    font-weight: 400;
+    gap: var(--space-4);
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    text-align: start;
+    text-decoration: none;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content
+}
+
+.textButton__98277:disabled {
+    opacity: .5
+}
+
+.textButton__98277:hover .text__98277,:where(.decorate-links) .text__98277 {
+    text-decoration: underline
+}
+
+.primary__98277 {
+    color: var(--text-brand)
+}
+
+.secondary__98277 {
+    color: var(--text-primary)
+}
+
+.always-white__98277 {
+    color: var(--white)
+}
+
+.critical__98277 {
+    color: var(--text-feedback-critical)
+}
+
+.sm__0d948 {
+    height: 28px;
+    width: 28px
+}
+
+.md__0d948 {
+    height: 68px;
+    width: 68px
+}
+
+/*# sourceMappingURL=720efd4385e3c755.css.map*/

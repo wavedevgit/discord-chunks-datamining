@@ -200,7 +200,9 @@ class p {
       input_device_buffer_overfull_count: null == (n = this.inputDeviceStats.bufferViolations) ? void 0 : n.accumulated,
       output_device_buffer_underrun_count: null == (r = this.outputDeviceStats.bufferViolations) ? void 0 : r.accumulated,
       input_device_session_sample_rate: this.inputDeviceStats.sessionSampleRate,
-      output_device_session_sample_rate: this.outputDeviceStats.sessionSampleRate
+      output_device_session_sample_rate: this.outputDeviceStats.sessionSampleRate,
+      input_device_time_from_connect_to_first_audio_ms: this.inputDeviceStats.timeFromConnectToFirstCallbackMs,
+      output_device_time_from_connect_to_first_audio_ms: this.outputDeviceStats.timeFromConnectToFirstCallbackMs
     }
   }
   getPeriodicStats() {
@@ -247,7 +249,7 @@ class p {
   constructor(e) {
     c(this, "connection", void 0), c(this, "inboundStats", void 0), c(this, "outboundStats", void 0), c(this, "networkQuality", void 0), c(this, "systemResources", void 0), c(this, "duration", void 0), c(this, "decryptionFailures", void 0), c(this, "routingFailures", void 0), c(this, "periodicInboundStats", void 0), c(this, "inputDeviceStats", void 0), c(this, "outputDeviceStats", void 0), c(this, "sampleAudioDevice", void 0), c(this, "appendTargetRates", void 0), c(this, "sampleStats", void 0), this.connection = e, this.sampleAudioDevice = (e, t) => {
       var n, r;
-      void 0 !== e && (void 0 !== e.restartCount && (t.restartCount = h(e.restartCount, t.restartCount)), void 0 !== e.bufferViolations && (t.bufferViolations = h(e.bufferViolations, t.bufferViolations)), (null != (n = e.timeToFirstCallbackMs) ? n : 0) !== 0 && void 0 === t.timeToFirstCallbackMs && (t.timeToFirstCallbackMs = e.timeToFirstCallbackMs), (null != (r = e.sessionSampleRate) ? r : 0) !== 0 && (t.sessionSampleRate = e.sessionSampleRate))
+      void 0 !== e && (void 0 !== e.restartCount && (t.restartCount = h(e.restartCount, t.restartCount)), void 0 !== e.bufferViolations && (t.bufferViolations = h(e.bufferViolations, t.bufferViolations)), (null != (n = e.timeToFirstCallbackMs) ? n : 0) !== 0 && void 0 === t.timeToFirstCallbackMs && (t.timeToFirstCallbackMs = e.timeToFirstCallbackMs), (null != (r = e.sessionSampleRate) ? r : 0) !== 0 && (t.sessionSampleRate = e.sessionSampleRate), void 0 !== e.timeFromConnectToFirstCallbackMs && void 0 === t.timeFromConnectToFirstCallbackMs && (t.timeFromConnectToFirstCallbackMs = e.timeFromConnectToFirstCallbackMs))
     }, this.appendTargetRates = function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
         n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0;

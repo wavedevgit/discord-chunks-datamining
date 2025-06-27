@@ -1,4 +1,4 @@
-/** Chunk was on 61947 **/
+/** Chunk was on 58354 **/
 "use strict";
 r.d(t, {
   l: () => p
@@ -9,8 +9,8 @@ var n = r(255367),
   i = r(100527),
   u = r(906732),
   a = r(402235),
-  c = r(670188),
-  s = r(592125),
+  s = r(670188),
+  c = r(592125),
   d = r(91047);
 
 function f(e) {
@@ -41,23 +41,23 @@ function p(e) {
     stopPropagation: v = !1,
     ariaLabel: O
   } = e, g = o.useRef(null), {
-    analyticsLocations: y
-  } = (0, u.ZP)(i.Z.USERNAME), m = (0, a.ZP)(p, null == t ? void 0 : t.id), h = o.useCallback(e => {
-    let n = s.Z.getChannel(r);
+    analyticsLocations: h
+  } = (0, u.ZP)(i.Z.USERNAME), m = (0, a.ZP)(p, null == t ? void 0 : t.id), y = o.useCallback(e => {
+    let n = c.Z.getChannel(r);
     null != n && null != t && (0, d.Pv)(e, t, n)
   }, [t, r]);
   return o.useCallback(e => (o, i) => {
     let a = null == e ? void 0 : e.colorStrings,
-      s = m && null != a && null != a.primaryColor && null != a.secondaryColor,
+      c = m && null != a && null != a.primaryColor && null != a.secondaryColor,
       d = t => {
         var r, i;
         return (0, n.jsx)(l.rz2, (r = f({}, null != t ? t : {}), i = i = {
           ref: g,
-          onContextMenu: h,
+          onContextMenu: y,
           name: (0, l.qgQ)(o),
           color: null == e ? void 0 : e.colorString,
           roleName: null == e ? void 0 : e.colorRoleName,
-          roleColors: s ? a : null,
+          roleColors: c ? a : null,
           "aria-label": O
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var r = Object.keys(e);
@@ -74,8 +74,8 @@ function p(e) {
         v && null != t && t.stopPropagation(), e(t)
       };
     return (0, n.jsx)(u.Gt, {
-      value: y,
-      children: null != t ? (0, n.jsx)(c.Z, {
+      value: h,
+      children: null != t ? (0, n.jsx)(s.Z, {
         targetElementRef: g,
         user: t,
         guildId: p,
@@ -107,5 +107,5 @@ function p(e) {
         }
       }) : d(void 0)
     }, i)
-  }, [y, t, r, p, b, h, v, O, m])
+  }, [h, t, r, p, b, y, v, O, m])
 }

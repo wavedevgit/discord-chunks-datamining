@@ -17,9 +17,9 @@ var r = n(255367),
   g = n(56848),
   _ = n(378441),
   b = n(388032),
-  v = n(270217);
+  h = n(270217);
 
-function h(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -201,31 +201,31 @@ function I(e) {
     }, "respect-motion-settings"),
     Y = b.intl.string(P ? b.t.esVyo6 : b.t.UQqFCA);
   return (0, r.jsxs)(o.animated.div, {
-    className: v.voiceFilterHero,
+    className: h.voiceFilterHero,
     "aria-hidden": L,
     style: R,
     children: [(0, r.jsx)("div", {
-      className: a()([v.bgGradient, v.bgGradientHighlight])
+      className: a()([h.bgGradient, h.bgGradientHighlight])
     }), F(e => (0, r.jsx)(o.animated.div, {
-      className: v.bgGradient,
+      className: h.bgGradient,
       style: e
     })), (0, r.jsx)("div", {
-      className: v.iconWrapper,
+      className: h.iconWrapper,
       children: V((e, t) => (0, r.jsx)(o.animated.img, {
-        className: v.activeVoiceIcon,
+        className: h.activeVoiceIcon,
         style: e,
         alt: "",
         src: t
       }, t))
     }), (0, r.jsx)("div", {
-      className: v.descriptionWrapper,
+      className: h.descriptionWrapper,
       children: B((e, t) => (0, r.jsxs)(o.animated.div, {
-        className: v.description,
+        className: h.description,
         style: e,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "always-white",
-          className: v.offWhiteText,
+          className: h.offWhiteText,
           children: b.intl.string(b.t.WW5DAA)
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
@@ -234,17 +234,17 @@ function I(e) {
         })]
       }))
     }), (0, r.jsxs)("div", {
-      className: v.buttonWrapper,
+      className: h.buttonWrapper,
       children: [(0, r.jsx)(c.ua7, {
         "aria-label": Y,
-        tooltipClassName: v.tooltip,
-        tooltipContentClassName: v.tooltipContent,
+        tooltipClassName: h.tooltip,
+        tooltipContentClassName: h.tooltipContent,
         shouldShow: D,
         text: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-sm/normal",
             color: "header-primary",
-            className: v.tooltipHeader,
+            className: h.tooltipHeader,
             children: Y
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
@@ -253,11 +253,11 @@ function I(e) {
           })]
         }),
         children: e => (0, r.jsx)(o.animated.div, {
-          className: v.buttonWrapper,
+          className: h.buttonWrapper,
           style: U[0],
-          children: (0, r.jsx)(c.P3F, y(h({
-            className: a()(v.button, {
-              [v.loopbackEnabled]: P
+          children: (0, r.jsx)(c.P3F, y(v({
+            className: a()(h.button, {
+              [h.loopbackEnabled]: P
             }),
             "aria-hidden": L,
             focusProps: {
@@ -278,10 +278,10 @@ function I(e) {
         shouldShow: D,
         text: b.intl.string(b.t.UvMx7O),
         children: e => (0, r.jsx)(o.animated.div, {
-          className: v.buttonWrapper,
+          className: h.buttonWrapper,
           style: U[1],
-          children: (0, r.jsx)(c.P3F, y(h({
-            className: v.button,
+          children: (0, r.jsx)(c.P3F, y(v({
+            className: h.button,
             "aria-hidden": L,
             focusProps: {
               enabled: D

@@ -1,10 +1,10 @@
-/** Chunk was on 61947 **/
+/** Chunk was on 58354 **/
 "use strict";
 r.d(t, {
   Pv: () => u,
   _j: () => a,
-  nm: () => c,
-  xS: () => s
+  nm: () => s,
+  xS: () => c
 }), r(415506);
 var n = r(255367);
 r(73800);
@@ -84,8 +84,8 @@ function a(e, t) {
   var {
     user: u,
     channel: a,
-    moderationAlertId: c,
-    guildId: s
+    moderationAlertId: s,
+    guildId: c
   } = t, d = function(e, t) {
     if (null == e) return {};
     var r, n, o = function(e, t) {
@@ -102,7 +102,7 @@ function a(e, t) {
     return o
   }(t, ["user", "channel", "moderationAlertId", "guildId"]);
   if ((null == a ? void 0 : a.isGroupDM()) || (null == a ? void 0 : a.isDM())) throw Error("Cannot moderate user in DM or group DM");
-  let f = null != s ? s : null == a ? void 0 : a.getGuildId();
+  let f = null != c ? c : null == a ? void 0 : a.getGuildId();
   null != f && (0, o.jW)(e, async () => {
     let {
       default: e
@@ -111,17 +111,17 @@ function a(e, t) {
       user: u,
       channelId: null == a ? void 0 : a.id,
       guildId: f,
-      moderationAlertId: c
+      moderationAlertId: s
     }), d))
   })
 }
 
-function c(e, t) {
+function s(e, t) {
   let {
     user: u,
     guildId: a,
-    analyticsLocations: c,
-    onCloseContextMenu: s,
+    analyticsLocations: s,
+    onCloseContextMenu: c,
     isViewOnly: d
   } = t;
   (0, o.jW)(e, async () => {
@@ -131,14 +131,14 @@ function c(e, t) {
     return t => (0, n.jsx)(e, i(l({}, t), {
       user: u,
       guildId: a,
-      analyticsLocations: c,
-      onCloseContextMenu: s,
+      analyticsLocations: s,
+      onCloseContextMenu: c,
       isViewOnly: d
     }))
   })
 }
 
-function s(e, t, u) {
+function c(e, t, u) {
   null != u && (0, o.jW)(e, async () => {
     let {
       default: e

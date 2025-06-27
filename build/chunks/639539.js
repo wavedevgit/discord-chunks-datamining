@@ -1,6 +1,6 @@
 /** Chunk was on 86350 **/
 n.d(t, {
-  J: () => v
+  J: () => h
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -169,7 +169,7 @@ let m = e => {
     })
   };
 
-function v(e) {
+function h(e) {
   let {
     textVariant: t,
     className: n,

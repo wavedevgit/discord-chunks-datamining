@@ -1,7 +1,7 @@
-/** Chunk was on 61947 **/
+/** Chunk was on 58354 **/
 "use strict";
 r.d(t, {
-  Z: () => h
+  Z: () => y
 }), r(388685);
 var n = r(268146),
   o = r(872810),
@@ -9,8 +9,8 @@ var n = r(268146),
   i = r(751571),
   u = r(695346),
   a = r(361291),
-  c = r(592125),
-  s = r(430824),
+  s = r(592125),
+  c = r(430824),
   d = r(131951),
   f = r(944486),
   p = r(594174),
@@ -18,15 +18,15 @@ var n = r(268146),
   v = r(451467),
   O = r(537413),
   g = r(143135),
-  y = r(37113),
+  h = r(37113),
   m = r(761274);
-async function h(e, t) {
-  var r, h, w, j, P, S, x, D, E, I;
+async function y(e, t) {
+  var r, y, w, j, P, S, x, D, I, E;
   let k = p.default.getCurrentUser(),
     C = f.Z.getVoiceChannelId(),
-    _ = c.Z.getChannel(C),
+    _ = s.Z.getChannel(C),
     Z = null == _ ? void 0 : _.getGuildId(),
-    M = null == (r = s.Z.getGuild(Z)) ? void 0 : r.premiumTier;
+    M = null == (r = c.Z.getGuild(Z)) ? void 0 : r.premiumTier;
   if (null == k || null == _ || null == C) return [!1, "no user or channel"];
   let R = null;
   if (null == (R = "number" == typeof e ? l.ZP.getGameForPID(e) : e)) return [!1, "no source"];
@@ -38,13 +38,13 @@ async function h(e, t) {
     resolution: N,
     fps: A,
     soundshareEnabled: W
-  } = a.Z.getState(), L = null != (w = null == t ? void 0 : t.preset) ? w : G, [U, V] = null != (j = (0, O.Z)(L, k, M)) ? j : [], H = null != (P = null != U ? U : null == t ? void 0 : t.resolution) ? P : N, F = null != (S = null != V ? V : null == t ? void 0 : t.fps) ? S : A, T = null != (x = null == t ? void 0 : t.previewDisabled) ? x : u.I0.getSetting(), B = null != (D = null == t ? void 0 : t.soundshareEnabled) ? D : W;
-  return (0, v.Z)(L, H, F, k, M, _) || (L = y.tI.PRESET_VIDEO, H = y.LY.RESOLUTION_720, F = y.ws.FPS_30), (0, o.Rc)({
+  } = a.Z.getState(), L = null != (w = null == t ? void 0 : t.preset) ? w : G, [U, V] = null != (j = (0, O.Z)(L, k, M)) ? j : [], H = null != (P = null != U ? U : null == t ? void 0 : t.resolution) ? P : N, T = null != (S = null != V ? V : null == t ? void 0 : t.fps) ? S : A, F = null != (x = null == t ? void 0 : t.previewDisabled) ? x : u.I0.getSetting(), B = null != (D = null == t ? void 0 : t.soundshareEnabled) ? D : W;
+  return (0, v.Z)(L, H, T, k, M, _) || (L = h.tI.PRESET_VIDEO, H = h.LY.RESOLUTION_720, T = h.ws.FPS_30), (0, o.Rc)({
     preset: L,
     resolution: H,
-    frameRate: F,
+    frameRate: T,
     soundshareEnabled: B
-  }), (0, o.WH)(Z, C, (E = function(e) {
+  }), (0, o.WH)(Z, C, (I = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -74,19 +74,19 @@ async function h(e, t) {
       sourceName: e.name,
       sourceIcon: e.icon
     }
-  }(R)), I = I = {
-    audioSourceId: (null == (h = R.id) ? void 0 : h.startsWith(n.vA.CAMERA)) ? null == t ? void 0 : t.audioSourceId : void 0,
+  }(R)), E = E = {
+    audioSourceId: (null == (y = R.id) ? void 0 : y.startsWith(n.vA.CAMERA)) ? null == t ? void 0 : t.audioSourceId : void 0,
     sound: B,
-    previewDisabled: T,
+    previewDisabled: F,
     goLiveModalDurationMs: null == t ? void 0 : t.goLiveModalDurationMs
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(E, Object.getOwnPropertyDescriptors(I)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(I, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var n = Object.getOwnPropertySymbols(e);
       r.push.apply(r, n)
     }
     return r
-  })(Object(I)).forEach(function(e) {
-    Object.defineProperty(E, e, Object.getOwnPropertyDescriptor(I, e))
-  }), E)), [!0, void 0]
+  })(Object(E)).forEach(function(e) {
+    Object.defineProperty(I, e, Object.getOwnPropertyDescriptor(E, e))
+  }), I)), [!0, void 0]
 }

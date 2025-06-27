@@ -1,18 +1,21 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  kj: () => g,
-  rB: () => m,
-  zX: () => h
-}), n(387201), n(642613), n(704826), n(35282);
+  kj: () => y,
+  rB: () => b,
+  zX: () => E
+}), n(704826), n(35282);
 var r = n(73800),
   i = n(392711),
   a = n(442837),
-  o = n(131951),
-  s = n(65154),
-  l = n(388032);
+  o = n(211266),
+  s = n(131951),
+  l = n(679613),
+  c = n(145016),
+  u = n(65154),
+  d = n(388032);
 
-function c(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -21,20 +24,20 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,44 +48,45 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
-  let n = Date.now(),
-    r = e => {
-      var r;
-      let {
-        id: i
-      } = e;
-      return (null != (r = t[i]) ? r : []).reduce((e, t) => e + Math.pow(.5, (n - t) / 864e5 / 14), 0)
-    };
-  return e.map(e => f(u({}, e), {
-    frecency: r(e)
-  })).toSorted((e, t) => t.frecency - e.frecency)
-}
-
-function p(e, t, n, i) {
+function m(e, t) {
   return (0, r.useMemo)(() => {
-    let r = u({}, e),
-      a = r[s.w5];
-    return (null != a && (r[s.w5] = f(u({}, a), {
-      name: a.disabled ? n : a.name.replace(s.fU, l.intl.string(l.t.bBvAEB))
-    })), null == i ? void 0 : i.sortDevicesByFrecency) ? _(Object.values(r), t) : Object.values(r)
-  }, [e, t, null == i ? void 0 : i.sortDevicesByFrecency, n])
+    let n = _({}, e),
+      r = n[u.w5];
+    return null != r && (n[u.w5] = h(_({}, r), {
+      name: r.disabled ? t : r.name.replace(u.fU, d.intl.string(d.t.bBvAEB))
+    })), n
+  }, [e, t])
 }
 
-function h(e) {
-  return p((0, a.e7)([o.Z], () => o.Z.getInputDevices()), (0, a.e7)([o.Z], o.Z.getInputDeviceUsageTimes, [], i.isEqual), l.intl.string(l.t["/QIjDA"]), e)
+function g(e, t, n) {
+  let {
+    shouldSortDevicesByFrecency: a
+  } = (0, l._)({
+    location: n.location
+  });
+  return (0, r.useMemo)(() => {
+    if (!a) return Object.values(e);
+    {
+      let n = Object.keys(e);
+      return (0, i.union)((0, i.intersection)(t, n), n).map(t => e[t])
+    }
+  }, [e, t, a])
 }
 
-function m(e) {
-  return p((0, a.e7)([o.Z], () => o.Z.getOutputDevices()), (0, a.e7)([o.Z], o.Z.getOutputDeviceUsageTimes, [], i.isEqual), l.intl.string(l.t.xlUg0t), e)
+function E(e) {
+  return g(m((0, a.e7)([s.Z], s.Z.getInputDevices), d.intl.string(d.t["/QIjDA"])), (0, o.Z)((0, a.Wu)([c.Z], c.Z.getInputDeviceIdsSortedByFrecency)), e)
 }
 
-function g(e) {
-  return p((0, a.e7)([o.Z], () => o.Z.getVideoDevices()), {}, l.intl.string(l.t.WKWARU), e)
+function b(e) {
+  return g(m((0, a.e7)([s.Z], s.Z.getOutputDevices), d.intl.string(d.t.xlUg0t)), (0, o.Z)((0, a.Wu)([c.Z], c.Z.getOutputDeviceIdsSortedByFrecency)), e)
+}
+
+function y(e) {
+  return g(m((0, a.e7)([s.Z], s.Z.getVideoDevices), d.intl.string(d.t.WKWARU)), (0, o.Z)((0, a.Wu)([c.Z], c.Z.getVideoDeviceIdsSortedByFrecency)), e)
 }
