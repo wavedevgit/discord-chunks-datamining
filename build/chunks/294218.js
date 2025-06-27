@@ -1,4 +1,4 @@
-/** Chunk was on 72051 **/
+/** Chunk was on 74739 **/
 n.d(t, {
   Z: () => M
 });
@@ -7,8 +7,8 @@ var r = n(255367),
   l = n(120356),
   o = n.n(l),
   a = n(91192),
-  s = n(442837),
-  c = n(518738),
+  c = n(442837),
+  s = n(518738),
   u = n(628238),
   E = n(869765),
   d = n(592125),
@@ -19,8 +19,8 @@ var r = n(255367),
   N = n(739566),
   S = n(492593),
   p = n(453687),
-  R = n(25015),
-  A = n(689674),
+  A = n(25015),
+  R = n(689674),
   P = n(438075),
   C = n(963550),
   D = n(845080),
@@ -70,8 +70,8 @@ let M = i.memo(function(e) {
     onContextMenu: k,
     onClick: Z,
     hideSimpleEmbedContent: j = !0,
-    channel: v,
-    isGroupStart: L,
+    channel: L,
+    isGroupStart: v,
     animateAvatar: F,
     subscribeToComponentDispatch: x,
     renderThreadAccessory: V,
@@ -90,21 +90,21 @@ let M = i.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), B = i.type === g.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, z = i.isFirstMessageInForumPost(v), W = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
+  }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), B = i.type === g.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, z = i.isFirstMessageInForumPost(L), W = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
     content: Y,
     hasSpoilerEmbeds: H
-  } = (0, R.Z)(i, {
+  } = (0, A.Z)(i, {
     hideSimpleEmbedContent: j,
     allowList: z || W,
     allowHeading: z || W,
     allowLinks: !0,
     previewLinkTarget: !0
-  }), K = i.type === g.uaV.REPLY ? i.messageReference : void 0, X = (0, s.e7)([E.Z], () => E.Z.getMessageByReference(K)), q = (0, a.JA)(i.id), J = (0, N.ZP)(i), Q = (0, s.e7)([d.Z], () => i.hasFlag(g.iLy.HAS_THREAD) && d.Z.getChannel(O.default.castMessageIdAsChannelId(i.id))), $ = (0, c.p9)({
-    guildId: v.guild_id,
+  }), K = i.type === g.uaV.REPLY ? i.messageReference : void 0, q = (0, c.e7)([E.Z], () => E.Z.getMessageByReference(K)), X = (0, a.JA)(i.id), J = (0, N.ZP)(i), Q = (0, c.e7)([d.Z], () => i.hasFlag(g.iLy.HAS_THREAD) && d.Z.getChannel(O.default.castMessageIdAsChannelId(i.id))), $ = (0, s.p9)({
+    guildId: L.guild_id,
     roleId: J.iconRoleId
-  }), ee = (0, s.e7)([_.Z], () => _.Z.can(g.Plq.CREATE_INSTANT_INVITE, v)), et = (0, A.Z)({
+  }), ee = (0, c.e7)([_.Z], () => _.Z.can(g.Plq.CREATE_INSTANT_INVITE, L)), et = (0, R.Z)({
     message: i,
-    channel: v,
+    channel: L,
     enabled: G
   });
   if ((0, T.Z)(i, ee)) return null;
@@ -117,10 +117,10 @@ let M = i.memo(function(e) {
       [h.disableInteraction]: B
     }),
     disableInteraction: B,
-    childrenRepliedMessage: (0, y.Z)(i, v, K, X, l),
-    childrenExecutedCommand: (0, m.Z)(i, v, l),
+    childrenRepliedMessage: (0, y.Z)(i, L, K, q, l),
+    childrenExecutedCommand: (0, m.Z)(i, L, l),
     childrenHeader: (0, D.Z)(b(U({}, e), {
-      guildId: v.guild_id,
+      guildId: L.guild_id,
       author: J,
       roleIcon: $
     })),
@@ -137,5 +137,5 @@ let M = i.memo(function(e) {
     "aria-describedby": er,
     messageRef: et,
     author: J
-  }, q, w))
+  }, X, w))
 })

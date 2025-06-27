@@ -24,8 +24,8 @@ let g = i.memo(function(e) {
         count: _,
         me: b,
         me_burst: x,
-        burst_count: E,
-        burst_colors: y,
+        burst_count: y,
+        burst_colors: E,
         readOnly: v,
         isLurking: C,
         isGuest: O,
@@ -35,9 +35,9 @@ let g = i.memo(function(e) {
       } = e,
       T = S === p.O.BURST,
       N = (0, m.y4)(b, x, S),
-      P = (0, d.v)(T && null != y ? y : []),
+      P = (0, d.v)(T && null != E ? E : []),
       A = i ? h : f,
-      w = T ? E : _,
+      w = T ? y : _,
       Z = (0, u.y)(w, m.aO),
       R = {};
     if (T && null != P) {

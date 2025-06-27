@@ -23,12 +23,12 @@ function x(e, t) {
   let {
     isDiscoverable: n,
     customInstallUrl: x,
-    installParams: E,
-    integrationTypesConfig: y
+    installParams: y,
+    integrationTypesConfig: E
   } = e, v = (0, f.Eb)({
     customInstallUrl: x,
-    installParams: E,
-    integrationTypesConfig: y
+    installParams: y,
+    integrationTypesConfig: E
   }), C = (0, i.e7)([p.Z], () => {
     var e;
     return null != (e = p.Z.getGuildId()) ? e : void 0
@@ -58,11 +58,11 @@ function x(e, t) {
       null == t || t(h.j_.ADD_APP), (0, m.L)({
         applicationId: e.id,
         customInstallUrl: x,
-        installParams: E,
-        integrationTypesConfig: y,
+        installParams: y,
+        integrationTypesConfig: E,
         guildId: C,
         source: "app_message_embed"
       })
     }
-  } : void 0, [e.id, j, S, x, E, y, v, t, C])
+  } : void 0, [e.id, j, S, x, y, E, v, t, C])
 }

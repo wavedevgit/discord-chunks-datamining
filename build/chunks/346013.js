@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(336197),
   b = n(406432),
   x = n(348238),
-  E = n(38267),
-  y = n(884902),
+  y = n(38267),
+  E = n(884902),
   v = n(670188),
   C = n(695346),
   O = n(271383),
@@ -76,19 +76,19 @@ function M(e) {
     channel: B
   } = e, G = i.useRef(null), H = i.useRef(null), V = (0, P.J)(U, F), {
     setPopout: z
-  } = (0, E.Z)(F.id, w.d$), W = (0, x.qo)(F, B, z, !0), K = C.QK.useSetting(), Y = (0, T.n)(), [q, X] = i.useState(!1), [Q, J] = i.useState((null == V ? void 0 : V.coverImage) == null), $ = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), ee = (0, c.e7)([O.ZP, j.default], () => {
+  } = (0, y.Z)(F.id, w.d$), W = (0, x.qo)(F, B, z, !0), K = C.QK.useSetting(), Y = (0, T.n)(), [X, q] = i.useState(!1), [Q, J] = i.useState((null == V ? void 0 : V.coverImage) == null), $ = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), ee = (0, c.e7)([O.ZP, j.default], () => {
     var e;
     return O.ZP.isMember(null == V ? void 0 : V.guildId, null == (e = j.default.getCurrentUser()) ? void 0 : e.id)
   }, [V]), et = (0, c.e7)([O.ZP], () => (null == V ? void 0 : V.authorId) != null ? O.ZP.getMember(V.guildId, V.authorId) : null), en = (0, f.Z)((null == et ? void 0 : et.avatarDecoration) != null ? null == et ? void 0 : et.avatarDecoration : null == V || null == (t = V.user) ? void 0 : t.avatarDecoration), [er, ei, el] = i.useMemo(() => {
     var e;
     return [null != (e = null == et ? void 0 : et.colorString) ? e : "inherit", null == et ? void 0 : et.colorStrings, null == et ? void 0 : et.colorRoleId]
-  }, [et]), ea = (0, y.X7)(null == et ? void 0 : et.guildId, null != (l = null == V ? void 0 : V.authorId) ? l : void 0, ei), {
+  }, [et]), ea = (0, E.X7)(null == et ? void 0 : et.guildId, null != (l = null == V ? void 0 : V.authorId) ? l : void 0, ei), {
     reducedMotion: eo
   } = i.useContext(u.Sfi), [es, ec] = i.useState(!1), eu = i.useCallback(() => {
-    X(!0)
-  }, [X]), ed = i.useCallback(() => {
-    X(!1)
-  }, [X]), ep = i.useCallback(async () => {
+    q(!0)
+  }, [q]), ed = i.useCallback(() => {
+    q(!1)
+  }, [q]), ep = i.useCallback(async () => {
     null != V && ((0, m.yw)(A.rMx.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
       media_post_id: V.threadId,
       channel_id: B.id,
@@ -125,7 +125,7 @@ function M(e) {
         onContextMenu: W,
         onError: () => J(!0)
       }) : (0, r.jsx)(g.Z, {
-        src: !(Y && (K || q)) && e_ ? "".concat(eg, "?format=png") : eg,
+        src: !(Y && (K || X)) && e_ ? "".concat(eg, "?format=png") : eg,
         backgroundSrc: "".concat(eg, "?format=png"),
         alt: Z.intl.string(Z.t.rIbh8P),
         aspectRatio: 16 / 9,

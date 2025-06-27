@@ -1,4 +1,4 @@
-/** Chunk was on 72051 **/
+/** Chunk was on 74739 **/
 n.d(t, {
   c: () => f
 });
@@ -7,8 +7,8 @@ var r = n(255367),
   l = n(793030),
   o = n(442837),
   a = n(704215),
-  s = n(481060),
-  c = n(230711),
+  c = n(481060),
+  s = n(230711),
   u = n(2052),
   E = n(906732),
   d = n(963249),
@@ -19,8 +19,8 @@ var r = n(255367),
   N = n(626135),
   S = n(74538),
   p = n(243778),
-  R = n(921944),
-  A = n(981631),
+  A = n(921944),
+  R = n(981631),
   P = n(474936),
   C = n(388032),
   D = n(134772);
@@ -62,8 +62,8 @@ let f = e => {
         }
         return e
       }({}, g), t = t = {
-        object: A.qAy.BUTTON_CTA,
-        objectType: A.Qqv.TIER_2
+        object: R.qAy.BUTTON_CTA,
+        objectType: R.Qqv.TIER_2
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -76,19 +76,19 @@ let f = e => {
       }), e)
     })
   }, [h, g]), b = i.useCallback(() => {
-    c.Z.open(A.oAB.INVENTORY), I.ZP.dismissOutboundPromotionNotice()
+    s.Z.open(R.oAB.INVENTORY), I.ZP.dismissOutboundPromotionNotice()
   }, []), M = i.useCallback(() => {
-    N.default.track(A.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), y ? U() : b()
+    N.default.track(R.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), y ? U() : b()
   }, [y, U, b]);
   if (null == n) return null;
-  let k = e => (0, r.jsxs)(s.qXd, {
-    color: s.DM8.PREMIUM_TIER_2,
-    children: [(0, r.jsx)(s.RyX, {
-      noticeType: A.kVF.OUTBOUND_PROMOTION,
+  let k = e => (0, r.jsxs)(c.qXd, {
+    color: c.DM8.PREMIUM_TIER_2,
+    children: [(0, r.jsx)(c.RyX, {
+      noticeType: R.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        I.ZP.dismissOutboundPromotionNotice(), null !== e && e(R.L.USER_DISMISS)
+        I.ZP.dismissOutboundPromotionNotice(), null !== e && e(A.L.USER_DISMISS)
       }
-    }), (0, r.jsx)(s.SrA, {
+    }), (0, r.jsx)(c.SrA, {
       size: "md",
       color: "currentColor",
       className: D.premiumIcon
@@ -98,10 +98,10 @@ let f = e => {
       children: [C.intl.string(C.t["5JMiOj"]), " ", C.intl.format(C.t.fjSvsL, {
         onClick: b
       })]
-    }) : C.intl.string(C.t["5JMiOj"]) : C.intl.string(C.t["Pzh+Gx"]), (0, r.jsx)(s.NoS, {
-      noticeType: A.kVF.OUTBOUND_PROMOTION,
+    }) : C.intl.string(C.t["5JMiOj"]) : C.intl.string(C.t["Pzh+Gx"]), (0, r.jsx)(c.NoS, {
+      noticeType: R.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        M(), null !== e && e(R.L.TAKE_ACTION)
+        M(), null !== e && e(A.L.TAKE_ACTION)
       },
       children: y ? C.intl.string(C.t.pj0XBA) : C.intl.string(C.t.jVcuVV)
     })]
@@ -112,7 +112,7 @@ let f = e => {
     timeRecurringConfig: {
       cooldownDurationMs: 0
     },
-    groupName: R.R.NOTICE_BAR,
+    groupName: A.R.NOTICE_BAR,
     bypassAutoDismiss: !0,
     children: e => {
       let {

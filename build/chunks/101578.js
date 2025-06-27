@@ -30,17 +30,17 @@ let x = e => {
     hideParty: p
   } = e, {
     analyticsLocations: g
-  } = (0, c.ZP)(s.Z.INVITE_EMBED), x = (0, i.e7)([m.default], () => m.default.getId()), E = (0, i.e7)([f.Z], () => {
+  } = (0, c.ZP)(s.Z.INVITE_EMBED), x = (0, i.e7)([m.default], () => m.default.getId()), y = (0, i.e7)([f.Z], () => {
     if (null == d.application) return f.Z.findActivity(d.author.id, e => e.type === h.IIU.LISTENING);
     {
       var e;
       let t = d.author.id;
       return (null == (e = d.activity) ? void 0 : e.type) === h.mFx.JOIN_REQUEST && (t = t === x && n.isPrivate() ? n.getRecipientId() : x), f.Z.getApplicationActivity(t, d.application.id)
     }
-  }, [d, n, x]), y = (0, a.l)(), v = b(d), {
+  }, [d, n, x]), E = (0, a.l)(), v = b(d), {
     data: C
   } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), O = null != C ? C : v;
-  return null != O && y ? (0, r.jsx)(o.c, {
+  return null != O && E ? (0, r.jsx)(o.c, {
     app: O,
     channel: n,
     message: d,
@@ -48,7 +48,7 @@ let x = e => {
     analyticsLocations: g
   }) : (0, r.jsx)(l.Z, {
     className: _.container,
-    activity: E,
+    activity: y,
     activityActionType: null != d.activity ? d.activity.type : null,
     partyId: null != d.activity ? d.activity.party_id : null,
     userId: d.author.id,

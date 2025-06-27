@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(594174),
   b = n(739566),
   x = n(761652),
-  E = n(388032),
-  y = n(912861);
+  y = n(388032),
+  E = n(912861);
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -59,7 +59,7 @@ let O = {
     color: "header-secondary"
   },
   j = {
-    className: a()("mention", y.mention)
+    className: a()("mention", E.mention)
   };
 
 function S(e) {
@@ -87,14 +87,14 @@ let I = i.memo(function(e) {
       (null == w || w.type === c.yU.CHAT && void 0 === w.application_command) && p.OG(P.id, A)
     }, [P.id, A, w]), null == w) N = (0, r.jsx)(s.$jN, {
     type: s.$jN.Type.SPINNING_CIRCLE,
-    className: y.spinner
+    className: E.spinner
   });
   else {
     let e = [],
       t = Object.fromEntries((null != (a = null == (n = w.application_command) ? void 0 : n.options) ? a : []).map(e => [e.name, e]));
     for (let n of null != (I = w.options) ? I : []) e = e.concat(function e(t) {
       var n, l, a, o, u, d, p;
-      let y, {
+      let E, {
           option: I,
           channel: T,
           guild: N,
@@ -129,7 +129,7 @@ let I = i.memo(function(e) {
             t = _.default.getUser(e);
           if (null != t) {
             let e = (0, b.ij)(t, T);
-            y = (0, r.jsxs)(m.Z, C(v({}, j), {
+            E = (0, r.jsxs)(m.Z, C(v({}, j), {
               onClick: () => (0, f.openUserProfileModal)({
                 userId: t.id,
                 guildId: T.guild_id,
@@ -145,7 +145,7 @@ let I = i.memo(function(e) {
         case c.jw.CHANNEL: {
           let e = I.value.toString(),
             t = h.Z.getChannel(e);
-          null != t && (y = (0, r.jsxs)(m.Z, C(v({}, j), {
+          null != t && (E = (0, r.jsxs)(m.Z, C(v({}, j), {
             children: [x.zy, t.name]
           })));
           break
@@ -153,7 +153,7 @@ let I = i.memo(function(e) {
         case c.jw.ROLE: {
           let e = I.value.toString(),
             t = null != N ? g.Z.getRole(N.id, e) : void 0;
-          null != t && (y = (0, r.jsxs)(m.Z, C(v({}, j), {
+          null != t && (E = (0, r.jsxs)(m.Z, C(v({}, j), {
             children: [x.ME, t.name]
           })));
           break
@@ -161,14 +161,14 @@ let I = i.memo(function(e) {
         case c.jw.MENTIONABLE: {
           let e = I.value.toString(),
             t = null != N ? g.Z.getRole(N.id, e) : void 0;
-          if (null != t) y = (0, r.jsxs)(m.Z, {
+          if (null != t) E = (0, r.jsxs)(m.Z, {
             children: [x.ME, t.name]
           });
           else {
             let t = _.default.getUser(e);
             if (null != t) {
               let e = (0, b.ij)(t, T);
-              y = (0, r.jsxs)(m.Z, C(v({}, j), {
+              E = (0, r.jsxs)(m.Z, C(v({}, j), {
                 onClick: () => (0, f.openUserProfileModal)({
                   userId: t.id,
                   guildId: T.guild_id,
@@ -181,17 +181,17 @@ let I = i.memo(function(e) {
           break
         }
         case c.jw.ATTACHMENT:
-          y = S(E.intl.string(E.t.nONJVV));
+          E = S(y.intl.string(y.t.nONJVV));
           break;
         default: {
           let e = null == w || null == (u = w.choices) ? void 0 : u.find(e => e.value === I.value);
           null != e && (k = null != (d = e.name_localized) ? d : e.name)
         }
       }
-      return null == y && (y = S(null == k ? void 0 : k.toString())), [(0, r.jsxs)(i.Fragment, {
+      return null == E && (E = S(null == k ? void 0 : k.toString())), [(0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsxs)(s.Text, C(v({}, O), {
           children: [" ", null != (p = null == w ? void 0 : w.name_localized) ? p : I.name, ": "]
-        })), y]
+        })), E]
       }, R)]
     }({
       option: n,
@@ -209,18 +209,18 @@ let I = i.memo(function(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    className: y.container,
+    className: E.container,
     onCopy: e => {
       var t, n, r;
       let i = null != (r = null == (n = window) || null == (t = n.getSelection()) ? void 0 : t.toString()) ? r : "";
       i.startsWith("/") && i.endsWith("\n") && R(e, w)
     },
     children: [(0, r.jsx)("div", {
-      className: y.tooltip,
+      className: E.tooltip,
       ref: k,
       children: N
     }), (0, r.jsx)("div", {
-      className: y.tooltipPointer
+      className: E.tooltipPointer
     })]
   })
 })

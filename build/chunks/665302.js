@@ -1,6 +1,6 @@
-/** Chunk was on 72051 **/
+/** Chunk was on 74739 **/
 n.d(t, {
-  h: () => s
+  h: () => c
 });
 var r = n(255367);
 n(73800);
@@ -9,17 +9,17 @@ var i = n(481060),
   o = n(981631),
   a = n(261496);
 
-function s(e) {
+function c(e) {
   let {
     buttonText: t,
     onGoBack: n,
-    onDismiss: s,
-    showCloseButton: c
+    onDismiss: c,
+    showCloseButton: s
   } = e;
   return (0, r.jsxs)(i.qXd, {
     className: a.backNotice,
-    children: [c && (0, r.jsx)(i.RyX, {
-      onClick: s,
+    children: [s && (0, r.jsx)(i.RyX, {
+      onClick: c,
       noticeType: o.kVF.BACK_TO_PREVIOUS_SCREEN
     }), (0, r.jsxs)(i.zxk, {
       className: a.backButton,

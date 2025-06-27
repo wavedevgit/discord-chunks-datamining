@@ -25,9 +25,9 @@ var r = n(255367),
   _ = n(524444),
   b = n(981631),
   x = n(388032),
-  E = n(324846);
+  y = n(324846);
 
-function y(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -62,7 +62,7 @@ function v(e, t) {
 function C(e) {
   var t;
   let n = e.item.originalItem;
-  return (0, _.Yi)(v(y({}, e), {
+  return (0, _.Yi)(v(E({}, e), {
     alt: n.description,
     src: (0, m.q)({
       proxyURL: n.proxy_url,
@@ -93,7 +93,7 @@ function O(e) {
       var e;
       return (0, f.yE)(null != (e = n.flags) ? e : 0, b.J0y.IS_CLIP) ? (0, r.jsxs)(o.DY, {
         text: x.intl.string(x.t["/fgfWl"]),
-        className: E.clipPill,
+        className: y.clipPill,
         children: [(0, r.jsx)(s.AlX, {
           size: "xs",
           color: "currentColor"
@@ -105,7 +105,7 @@ function O(e) {
       }) : null
     }, [n]),
     c = h.Z.toURLSafe(n.proxy_url);
-  return null == c ? null : (c.searchParams.append("format", "webp"), (0, _.lV)(v(y({}, e), {
+  return null == c ? null : (c.searchParams.append("format", "webp"), (0, _.lV)(v(E({}, e), {
     alt: n.description,
     poster: c.toString(),
     fileSize: n.size,
@@ -129,7 +129,7 @@ function O(e) {
 
 function j(e) {
   let t = e.item.originalItem;
-  return (0, _.hX)(v(y({}, e), {
+  return (0, _.hX)(v(E({}, e), {
     fileSize: t.size,
     fileName: (0, g.Z)(t),
     src: t.url
@@ -150,7 +150,7 @@ function S(e) {
     var n;
     (0, d.Np)(t.id, null != (n = null == e ? void 0 : e.message) ? n : null)
   }, [t]);
-  return (0, _.wj)(v(y({}, e), {
+  return (0, _.wj)(v(E({}, e), {
     fileSize: r.size,
     fileName: (0, g.Z)(r),
     src: r.url,
@@ -165,7 +165,7 @@ function S(e) {
 
 function I(e) {
   let t = e.item.originalItem;
-  return (0, _.xi)(v(y({}, e), {
+  return (0, _.xi)(v(E({}, e), {
     url: t.url,
     fileName: (0, g.Z)(t),
     fileSize: t.size,
@@ -175,7 +175,7 @@ function I(e) {
 
 function T(e) {
   let t = e.item.originalItem;
-  return (0, _.ur)(v(y({}, e), {
+  return (0, _.ur)(v(E({}, e), {
     url: t.url,
     fileName: (0, g.Z)(t),
     fileSize: t.size

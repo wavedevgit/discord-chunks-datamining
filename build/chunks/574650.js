@@ -1,4 +1,4 @@
-/** Chunk was on 72051 **/
+/** Chunk was on 74739 **/
 n.d(t, {
   Z: () => P
 }), n(539854), n(388685);
@@ -8,8 +8,8 @@ var i = n(120356),
   l = n.n(i);
 if (12633 == n.j) var o = n(114858);
 var a = n(442837),
-  s = n(481060),
-  c = n(430824),
+  c = n(481060),
+  s = n(430824),
   u = n(914010),
   E = n(693546),
   d = n(305325),
@@ -20,9 +20,9 @@ var a = n(442837),
   N = n(176505),
   S = n(388032),
   p = n(246752),
-  R = n(240211);
+  A = n(240211);
 
-function A(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function A(e) {
 let P = 12633 == n.j ? () => {
   var e, t;
   let i = (0, a.e7)([u.Z], () => u.Z.getGuildId(), []),
-    P = (0, a.e7)([c.Z], () => c.Z.getGuild(i), [i]),
+    P = (0, a.e7)([s.Z], () => s.Z.getGuild(i), [i]),
     C = (0, a.e7)([I.Z], () => null != i ? I.Z.getRequest(i) : null, [i]),
     D = (0, o.TH)(),
     f = (null == (e = (0, o.LX)(D.pathname, T.Z5c.CHANNEL(null == P ? void 0 : P.id, N.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
@@ -52,20 +52,20 @@ let P = 12633 == n.j ? () => {
     y = null,
     g = null,
     h = null,
-    U = [p.notice, R.notice];
+    U = [p.notice, A.notice];
   switch (m) {
     case _.wB.SUBMITTED:
       y = S.intl.string(S.t["5iLvS0"]), g = S.intl.string(S.t.mqtdmZ), h = () => {
-        (0, s.h7j)(e => {
+        (0, c.h7j)(e => {
           var t, n;
-          return (0, r.jsx)(s.ConfirmModal, (t = A({
+          return (0, r.jsx)(c.ConfirmModal, (t = R({
             header: S.intl.string(S.t.aIz1oa),
             confirmText: S.intl.string(S.t["cY+Ooa"]),
             cancelText: S.intl.string(S.t["ETE/oK"]),
             onConfirm: () => E.Z.removeGuildJoinRequest(P.id),
-            confirmButtonColor: s.zxk.Colors.BRAND
+            confirmButtonColor: c.zxk.Colors.BRAND
           }, e), n = n = {
-            children: (0, r.jsx)(s.Text, {
+            children: (0, r.jsx)(c.Text, {
               variant: "text-md/normal",
               children: S.intl.string(S.t["13tjTU"])
             })
@@ -84,11 +84,11 @@ let P = 12633 == n.j ? () => {
       break;
     case _.wB.REJECTED:
       y = S.intl.string(S.t.lk30cX), g = S.intl.string(S.t["8RrsHh"]), h = () => {
-        (0, s.ZDy)(async () => {
+        (0, c.ZDy)(async () => {
           let {
             default: e
           } = await n.e("3378").then(n.bind(n, 76075));
-          return t => (0, r.jsx)(e, A({
+          return t => (0, r.jsx)(e, R({
             guildId: P.id
           }, t))
         })
@@ -101,15 +101,15 @@ let P = 12633 == n.j ? () => {
   }
   return (0, r.jsxs)("div", {
     className: l()(...U),
-    children: [(0, r.jsx)(s.Text, {
+    children: [(0, r.jsx)(c.Text, {
       className: p.header,
       variant: "text-sm/normal",
       children: y
-    }), (0, r.jsx)(s.zxk, {
+    }), (0, r.jsx)(c.zxk, {
       className: p.button,
-      look: s.zxk.Looks.OUTLINED,
-      color: s.zxk.Colors.WHITE,
-      size: s.zxk.Sizes.NONE,
+      look: c.zxk.Looks.OUTLINED,
+      color: c.zxk.Colors.WHITE,
+      size: c.zxk.Sizes.NONE,
       onClick: h,
       children: g
     })]

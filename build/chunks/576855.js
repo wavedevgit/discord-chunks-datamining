@@ -1,12 +1,12 @@
-/** Chunk was on 72051 **/
+/** Chunk was on 74739 **/
 n.d(t, {
   Z: () => O
 });
 var r, i, l = n(255367),
   o = n(73800),
   a = n(120356),
-  s = n.n(a),
-  c = n(481060),
+  c = n.n(a),
+  s = n(481060),
   u = n(388032),
   E = n(108921);
 let d = {
@@ -23,16 +23,16 @@ class _ extends(i = o.PureComponent) {
       style: i
     } = this.props;
     return (0, l.jsxs)("div", {
-      className: s()(t, r),
+      className: c()(t, r),
       style: i,
-      children: [(0, l.jsxs)(c.Text, {
+      children: [(0, l.jsxs)(s.Text, {
         variant: "text-sm/bold",
         tag: "div",
         color: "text-feedback-positive",
         className: E.pro,
         children: [u.intl.string(u.t["8tvIiI"]), ":"]
-      }), (0, l.jsx)(c.Text, {
-        className: s()(E.tip, n),
+      }), (0, l.jsx)(s.Text, {
+        className: c()(E.tip, n),
         variant: "text-sm/normal",
         children: e
       })]

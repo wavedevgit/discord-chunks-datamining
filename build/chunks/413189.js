@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(680783),
   b = n(66420),
   x = n(981631),
-  E = n(474936),
-  y = n(388032),
+  y = n(474936),
+  E = n(388032),
   v = n(510064);
 
 function C(e) {
@@ -54,35 +54,35 @@ function C(e) {
     F = M === T.id,
     B = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
     G = (null == B ? void 0 : B.id) === T.author.id,
-    H = (0, c.m)(E.p9.TIER_2),
+    H = (0, c.m)(y.p9.TIER_2),
     V = h.t(N);
   return (i.useEffect(() => {
     null == L && f.Z.shouldFetchWallpapers && g.k9()
-  }, [L]), null == A) ? null : (j = G ? y.intl.format(y.t.z847Tk, {
-    wallpaper_name: null != (n = null == L ? void 0 : L.label) ? n : y.intl.string(y.t["UQMV/P"])
-  }) : y.intl.format(y.t["+lKndX"], {
+  }, [L]), null == A) ? null : (j = G ? E.intl.format(E.t.z847Tk, {
+    wallpaper_name: null != (n = null == L ? void 0 : L.label) ? n : E.intl.string(E.t["UQMV/P"])
+  }) : E.intl.format(E.t["+lKndX"], {
     username: null == R ? void 0 : R.nick,
-    wallpaper_name: null != (C = null == L ? void 0 : L.label) ? C : y.intl.string(y.t["UQMV/P"])
-  }), w ? k || Z ? V && F ? S = y.intl.formatToPlainString(y.t.PzTpVV, {
-    wallpaperName: null != (O = null == L ? void 0 : L.label) ? O : y.intl.string(y.t["UQMV/P"])
-  }) : G || H || !F || (S = y.intl.format(y.t.JwUhHh, {
+    wallpaper_name: null != (C = null == L ? void 0 : L.label) ? C : E.intl.string(E.t["UQMV/P"])
+  }), w ? k || Z ? V && F ? S = E.intl.formatToPlainString(E.t.PzTpVV, {
+    wallpaperName: null != (O = null == L ? void 0 : L.label) ? O : E.intl.string(E.t["UQMV/P"])
+  }) : G || H || !F || (S = E.intl.format(E.t.JwUhHh, {
     onClickNitro: () => {
       (0, u.uL)(x.Z5c.NITRO_HOME)
     }
-  })) : S = y.intl.format(y.t.dBxFsL, {
+  })) : S = E.intl.format(E.t.dBxFsL, {
     learnMoreLink: p.Z.getArticleURL(x.BhN.DM_WALLPAPERS)
-  }) : S = y.intl.string(y.t["6JSOu7"]), (null == U ? void 0 : U.isViewable) && F && !G && (I = (0, r.jsx)(a.zxk, {
+  }) : S = E.intl.string(E.t["6JSOu7"]), (null == U ? void 0 : U.isViewable) && F && !G && (I = (0, r.jsx)(a.zxk, {
     className: v.action,
     onClick: () => {
       g.X(N, A, {
         shouldClear: !V,
         onError: () => {
-          (0, a.showToast)((0, a.createToast)(y.intl.string(y.t.F8FvU1), a.ToastType.FAILURE))
+          (0, a.showToast)((0, a.createToast)(E.intl.string(E.t.F8FvU1), a.ToastType.FAILURE))
         }
       })
     },
     submitting: D,
-    children: y.intl.string(V ? y.t.o6850d : y.t["/ubFp6"])
+    children: E.intl.string(V ? E.t.o6850d : E.t["/ubFp6"])
   })), (0, r.jsx)(b.Z, {
     channel: N,
     content: j,

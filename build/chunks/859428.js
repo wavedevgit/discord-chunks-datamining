@@ -1,4 +1,4 @@
-/** Chunk was on 72051 **/
+/** Chunk was on 74739 **/
 n.d(t, {
   Z: () => S
 }), n(388685);
@@ -7,8 +7,8 @@ var r = n(255367),
   l = n(120356),
   o = n.n(l),
   a = n(442837),
-  s = n(481060),
-  c = n(749210),
+  c = n(481060),
+  s = n(749210),
   u = n(703656),
   E = n(430824),
   d = n(914010),
@@ -25,7 +25,7 @@ let S = 12633 == n.j ? () => {
   let S = async () => {
     l(!0);
     try {
-      _.mT(t.id), await c.Z.joinGuild(t.id, {
+      _.mT(t.id), await s.Z.joinGuild(t.id, {
         source: O.vtS.NOTICE_BAR
       })
     } catch (e) {
@@ -34,29 +34,29 @@ let S = 12633 == n.j ? () => {
   };
   return (0, r.jsxs)("div", {
     className: o()(T.notice, N.notice),
-    children: [(0, r.jsxs)(s.zxk, {
-      look: s.zxk.Looks.OUTLINED,
-      color: s.zxk.Colors.WHITE,
-      size: s.zxk.Sizes.NONE,
+    children: [(0, r.jsxs)(c.zxk, {
+      look: c.zxk.Looks.OUTLINED,
+      color: c.zxk.Colors.WHITE,
+      size: c.zxk.Sizes.NONE,
       className: o()(T.button, T.back),
       innerClassName: T.iconButton,
       onClick: () => {
         (0, u.s1)().goBack()
       },
-      children: [(0, r.jsx)(s.whL, {
+      children: [(0, r.jsx)(c.whL, {
         size: "xs",
         color: "currentColor",
         className: T.arrow
       }), I.intl.string(I.t["13/7kZ"])]
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(c.Text, {
       className: T.header,
       variant: "text-sm/normal",
       children: I.intl.string(I.t["N/y2WF"])
-    }), (0, r.jsx)(s.zxk, {
+    }), (0, r.jsx)(c.zxk, {
       className: T.button,
-      look: s.zxk.Looks.OUTLINED,
-      color: s.zxk.Colors.WHITE,
-      size: s.zxk.Sizes.NONE,
+      look: c.zxk.Looks.OUTLINED,
+      color: c.zxk.Colors.WHITE,
+      size: c.zxk.Sizes.NONE,
       submitting: n,
       onClick: S,
       children: I.intl.format(I.t.uHN7n5, {

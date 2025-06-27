@@ -1,4 +1,4 @@
-/** Chunk was on 72051 **/
+/** Chunk was on 74739 **/
 n.d(t, {
   Z: () => _
 });
@@ -8,8 +8,8 @@ var i = n(481060),
   l = n(230711),
   o = n(985754),
   a = n(91802),
-  s = n(222727),
-  c = n(981631),
+  c = n(222727),
+  s = n(981631),
   u = n(921944),
   E = n(388032),
   d = n(131715);
@@ -19,7 +19,7 @@ let _ = 12633 == n.j ? e => {
     noticeType: n,
     dismissCurrentNotice: _
   } = e, O = (null == t ? void 0 : t.metadata.premiumSubscription) != null, I = (0, a.n)();
-  if ((0, s.U)(c.jXE.NOTIFICATION_BAR, null == I ? void 0 : I.countryCode), null == I) return null;
+  if ((0, c.U)(s.jXE.NOTIFICATION_BAR, null == I ? void 0 : I.countryCode), null == I) return null;
   let T = I.countryCode,
     N = I.currency,
     S = I.paymentSourceTypes.length > 0;
@@ -34,7 +34,7 @@ let _ = 12633 == n.j ? e => {
       className: d.premiumIcon
     }), (0, o.Gv)(T, N, S, O), (0, r.jsx)(i.NoS, {
       onClick: () => {
-        _(u.L.UNKNOWN), l.Z.open(c.oAB.PREMIUM)
+        _(u.L.UNKNOWN), l.Z.open(s.oAB.PREMIUM)
       },
       noticeType: n,
       children: E.intl.string(E.t.hvVgAQ)

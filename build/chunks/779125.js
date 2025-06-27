@@ -25,8 +25,8 @@ function x(e) {
     channel: t,
     onClick: n,
     beforeTransition: x,
-    className: E,
-    openChatWithoutConnecting: y
+    className: y,
+    openChatWithoutConnecting: E
   } = e, v = (0, i.e7)([h.default, f.Z], () => null == t ? "" : (0, s.F6)(t, h.default, f.Z), [t]);
   return (0, r.jsx)(l.ua7, {
     text: v,
@@ -38,7 +38,7 @@ function x(e) {
       } = e;
       return (0, r.jsx)(c.Z, {
         role: "link",
-        className: E,
+        className: y,
         onClick: e => {
           e.stopPropagation(), null != n ? n() : (null != x && x(), (0, l.pTH)(), function(e, t) {
             let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
@@ -56,7 +56,7 @@ function x(e) {
               o.default.selectVoiceChannel(i.id);
               return
             }(0, u.uL)(b.Z5c.CHANNEL(e, t))
-          }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, y))
+          }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, E))
         },
         onMouseEnter: i,
         onMouseLeave: s,

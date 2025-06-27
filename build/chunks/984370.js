@@ -1,4 +1,4 @@
-/** Chunk was on 72051 **/
+/** Chunk was on 74739 **/
 n.d(t, {
   O: () => D,
   Z: () => g
@@ -9,8 +9,8 @@ var i = n(873546),
   l = n(442837),
   o = n(475179),
   a = n(100527),
-  s = n(906732),
-  c = n(358221),
+  c = n(906732),
+  s = n(358221),
   u = n(185935),
   E = n(2818),
   d = n(954551),
@@ -21,8 +21,8 @@ var i = n(873546),
   N = n(998502),
   S = n(665149),
   p = n(981631),
-  R = n(176505),
-  A = n(220705);
+  A = n(176505),
+  R = n(220705);
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -68,7 +68,7 @@ function f(e) {
     children: t,
     className: n,
     channelId: a,
-    channelType: s,
+    channelType: c,
     guildId: T,
     innerClassname: N,
     transparent: P = !1,
@@ -80,13 +80,13 @@ function f(e) {
     role: h,
     hideSearch: U,
     showDivider: b
-  } = e, M = null == a || (0, R.AB)(a) ? null : a, k = (0, l.e7)([I.Z], () => I.Z.isInChannel(M) || !1), Z = (0, l.e7)([c.Z], () => null != M && c.Z.getParticipantsListOpen(M)), {
+  } = e, M = null == a || (0, A.AB)(a) ? null : a, k = (0, l.e7)([I.Z], () => I.Z.isInChannel(M) || !1), Z = (0, l.e7)([s.Z], () => null != M && s.Z.getParticipantsListOpen(M)), {
     enabled: j,
-    inInbox: v
+    inInbox: L
   } = E.Z.useExperiment({
     location: "HeaderBar"
   }), {
-    hasParticipantsPanel: L
+    hasParticipantsPanel: v
   } = (0, u.Z)({
     location: "HeaderBar"
   });
@@ -98,9 +98,9 @@ function f(e) {
       let e = null != a && !U;
       return i.tq ? f : (0, r.jsxs)(r.Fragment, {
         children: [C, e ? (0, r.jsx)(_.Z, {
-          className: A.search
-        }, null != T ? T : a) : null, b && (0, r.jsx)(S.ZP.Divider, {}), j && !v ? (0, r.jsx)(d.Z, {}) : null, L && k && null != M && !Z && s === p.d4z.GROUP_DM && (0, r.jsxs)("div", {
-          className: A.controlButtonWrapper,
+          className: R.search
+        }, null != T ? T : a) : null, b && (0, r.jsx)(S.ZP.Divider, {}), j && !L ? (0, r.jsx)(d.Z, {}) : null, v && k && null != M && !Z && c === p.d4z.GROUP_DM && (0, r.jsxs)("div", {
+          className: R.controlButtonWrapper,
           children: [(0, r.jsx)(S.ZP.Divider, {}), (0, r.jsx)(O.Z, {
             onClick: () => o.Z.toggleParticipantsList(M, !Z)
           })]
@@ -155,8 +155,8 @@ function y(e) {
   }(e, ["isAuthenticated"]);
   let {
     analyticsLocations: i
-  } = (0, s.ZP)(a.Z.HEADER_BAR);
-  return (0, r.jsx)(s.Gt, {
+  } = (0, c.ZP)(a.Z.HEADER_BAR);
+  return (0, r.jsx)(c.Gt, {
     value: i,
     children: t ? (0, r.jsx)(f, C(P({}, n), {
       className: n.className

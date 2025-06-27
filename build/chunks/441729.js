@@ -1,4 +1,4 @@
-/** Chunk was on 72051 **/
+/** Chunk was on 74739 **/
 n.d(t, {
   Z: () => d
 });
@@ -27,7 +27,7 @@ function a(e) {
   return e
 }
 
-function s(e, t) {
+function c(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -39,14 +39,14 @@ function s(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = {
+let s = {
     speechRate: 1,
     currentMessage: null
   },
-  u = c;
+  u = s;
 class E extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    u = a({}, c, null != e ? e : null)
+    u = a({}, s, null != e ? e : null)
   }
   isSpeakingMessage(e, t) {
     let {
@@ -71,7 +71,7 @@ let d = new E(l.Z, __OVERLAY__ ? {} : {
       messageId: t,
       channelId: n
     } = e;
-    u = s(a({}, u), {
+    u = c(a({}, u), {
       currentMessage: {
         messageId: t,
         channelId: n
@@ -79,12 +79,12 @@ let d = new E(l.Z, __OVERLAY__ ? {} : {
     })
   },
   STOP_SPEAKING: function() {
-    u = s(a({}, u), {
+    u = c(a({}, u), {
       currentMessage: null
     })
   },
   SET_TTS_SPEECH_RATE: function(e) {
-    u = s(a({}, u), {
+    u = c(a({}, u), {
       speechRate: e.speechRate
     })
   }

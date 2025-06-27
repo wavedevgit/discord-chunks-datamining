@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(524444),
   b = n(98278),
   x = n(767714),
-  E = n(430824),
-  y = n(594174),
+  y = n(430824),
+  E = n(594174),
   v = n(626135),
   C = n(74538),
   O = n(453070),
@@ -187,9 +187,9 @@ let F = e => {
       } = e,
       [O, j] = i.useState(null),
       [S, T] = i.useState(!1),
-      L = y.default.getCurrentUser(),
+      L = E.default.getCurrentUser(),
       D = C.ZP.canUseCustomStickersEverywhere(L),
-      F = (0, o.e7)([E.Z], () => E.Z.getGuild(n.guild_id)),
+      F = (0, o.e7)([y.Z], () => y.Z.getGuild(n.guild_id)),
       B = null != F,
       [G, H] = i.useState(!1),
       [V, z] = i.useState(null),
@@ -206,22 +206,22 @@ let F = e => {
         stickerSourceGuild: F,
         refreshPositionKey: b
       },
-      q = i.useRef(Y);
+      X = i.useRef(Y);
     i.useEffect(() => {
-      q.current = Y
+      X.current = Y
     }), i.useEffect(() => {
       let {
         stickerSourceGuild: e
-      } = q.current;
+      } = X.current;
       (async () => {
         (null == e || e.hasFeature(N.oNc.DISCOVERABLE)) && j(await (0, h.Z)(n.id)), T(!0)
       })()
     }, [n.id, B]);
-    let X = n.guild_id === l.getGuildId(),
+    let q = n.guild_id === l.getGuildId(),
       Q = null != O,
       J = !1,
       $ = "Custom Sticker Popout";
-    D ? t = B ? X ? A.intl.string(A.t.fZ0DiI) : A.intl.string(A.t["1f6D9v"]) : Q ? A.intl.string(A.t.yHmoR0) : A.intl.string(A.t.vZaScH) : B ? (t = X ? A.intl.string(A.t.jNphpq) : A.intl.string(A.t.lyD5ZW), J = !0, $ = "Custom Sticker Popout (Upsell)") : Q ? (t = A.intl.string(A.t.IuXYcn), J = !0, $ = "Custom Sticker Popout (Upsell)") : (t = A.intl.format(A.t.hGWuxc, {
+    D ? t = B ? q ? A.intl.string(A.t.fZ0DiI) : A.intl.string(A.t["1f6D9v"]) : Q ? A.intl.string(A.t.yHmoR0) : A.intl.string(A.t.vZaScH) : B ? (t = q ? A.intl.string(A.t.jNphpq) : A.intl.string(A.t.lyD5ZW), J = !0, $ = "Custom Sticker Popout (Upsell)") : Q ? (t = A.intl.string(A.t.IuXYcn), J = !0, $ = "Custom Sticker Popout (Upsell)") : (t = A.intl.format(A.t.hGWuxc, {
       openPremiumSettings: () => {
         M(l), m()
       }
@@ -230,7 +230,7 @@ let F = e => {
     return (i.useEffect(() => {
       let {
         refreshPositionKey: e
-      } = q.current;
+      } = X.current;
       e()
     }, [S, O]), (0, u.ZP)(() => {
       v.default.track(N.rMx.OPEN_POPOUT, R({

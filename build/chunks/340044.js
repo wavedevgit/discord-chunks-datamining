@@ -1,4 +1,4 @@
-/** Chunk was on 72051 **/
+/** Chunk was on 74739 **/
 n.d(t, {
   Z: () => d
 }), n(388685);
@@ -7,8 +7,8 @@ var r = n(255367),
   l = n(120356),
   o = n.n(l),
   a = n(393903),
-  s = n(448986),
-  c = n(731722),
+  c = n(448986),
+  s = n(731722),
   u = n(172751),
   E = n(842747);
 let d = i.memo(function(e) {
@@ -34,7 +34,7 @@ let d = i.memo(function(e) {
     }(e, ["children", "isOverlay", "contextGuildId"]);
   let [I, T] = i.useState({
     maskImage: "none"
-  }), N = i.useRef(null), S = (0, s.Z)(() => {
+  }), N = i.useRef(null), S = (0, c.Z)(() => {
     var e, t, n, r;
     let i = null != (n = null == (e = p.current) ? void 0 : e.getBoundingClientRect()) ? n : null,
       l = null != (r = null == (t = N.current) ? void 0 : t.getBoundingClientRect()) ? r : null;
@@ -49,7 +49,7 @@ let d = i.memo(function(e) {
     T({
       maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(a, "px)")
     })
-  }), p = (0, a.y)(S), R = (0, c.yF)(O.userId, _);
+  }), p = (0, a.y)(S), A = (0, s.yF)(O.userId, _);
   return (0, r.jsxs)("div", {
     className: o()(E.container, d && E.isOverlayContainer),
     ref: p,
@@ -59,7 +59,7 @@ let d = i.memo(function(e) {
     }), (0, r.jsx)("div", {
       className: E.chipletParent,
       children: (0, r.jsx)("span", {
-        className: o()(E.chipletContainer, !R && d && E.noPadding),
+        className: o()(E.chipletContainer, !A && d && E.noPadding),
         ref: N,
         style: I,
         children: (0, r.jsx)(u.ZP, (t = function(e) {

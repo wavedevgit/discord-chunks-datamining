@@ -59,8 +59,8 @@ let h = i.forwardRef(function(e, t) {
     iconProps: _,
     onClick: b,
     onTooltipShow: x,
-    onTooltipHide: E,
-    disabled: y,
+    onTooltipHide: y,
+    disabled: E,
     dangerous: v,
     separator: C,
     sparkle: O,
@@ -84,7 +84,7 @@ let h = i.forwardRef(function(e, t) {
     color: null != h ? h : o.FGA.PRIMARY,
     "aria-label": n,
     onTooltipShow: x,
-    onTooltipHide: E,
+    onTooltipHide: y,
     hideOnClick: !0,
     tooltipClassName: p.tooltip,
     children: e => {
@@ -106,7 +106,7 @@ let h = i.forwardRef(function(e, t) {
             null == x || x(), b(e)
           },
           "aria-label": null != i ? i : n,
-          disabled: y,
+          disabled: E,
           dangerous: v
         }, T), u = u = {
           children: [null != g ? (0, r.jsx)(g, m({

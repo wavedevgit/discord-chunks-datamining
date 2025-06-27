@@ -1,4 +1,4 @@
-/** Chunk was on 72051 **/
+/** Chunk was on 74739 **/
 n.d(t, {
   Z: () => O
 }), n(642613), n(583741);
@@ -7,8 +7,8 @@ var r = n(544891),
   l = n(569471),
   o = n(346479),
   a = n(592125),
-  s = n(375954),
-  c = n(306680),
+  c = n(375954),
+  s = n(306680),
   u = n(594174),
   E = n(709054),
   d = n(981631);
@@ -16,12 +16,12 @@ let _ = new i.Z("markUnread");
 async function O(e, t) {
   let n = u.default.getCurrentUser();
   if (null == n) return;
-  let i = s.Z.getMessages(e),
+  let i = c.Z.getMessages(e),
     O = i.toArray().filter(e => 0 > E.default.compare(e.id, t)).sort((e, t) => E.default.compare(e.id, t.id)).reverse()[0],
     I = null == O ? E.default.atPreviousMillisecond(t) : O.id,
     T = 0;
   i.forAll(e => {
-    E.default.compare(e.id, I) > 0 && (0, c.Ex)(e, n) && T++
+    E.default.compare(e.id, I) > 0 && (0, s.Ex)(e, n) && T++
   });
   let N = a.Z.getChannel(e);
   null != N && N.isThread() && (N.isArchivedThread() && await o.Z.unarchiveThread(N, !1), l.Z.hasJoined(e) || await o.Z.joinThread(N, "Mark Unread")), _.log("Marking unread", {

@@ -1,6 +1,6 @@
 /** Chunk was on 69856 **/
 n.d(t, {
-  e: () => y,
+  e: () => E,
   i: () => v
 }), n(35282), n(388685);
 var r = n(255367),
@@ -21,7 +21,7 @@ var r = n(255367),
   b = n(841935);
 let x = /^<(a?):(\w+):(\d+)>/;
 
-function E(e) {
+function y(e) {
   let t = i.useMemo(() => {
     var t;
     return null == (t = x.exec(e)) ? void 0 : t[3]
@@ -29,11 +29,11 @@ function E(e) {
   return (0, s.e7)([h.ZP], () => null == t ? null : h.ZP.getCustomEmojiById(t))
 }
 
-function y(e) {
+function E(e) {
   let {
     message: t,
     className: n
-  } = e, [l, o] = i.useState(!1), s = t.getChannelId(), d = E(t.content), p = i.useCallback(() => {
+  } = e, [l, o] = i.useState(!1), s = t.getChannelId(), d = y(t.content), p = i.useCallback(() => {
     null != d && (0, m.rU)(s, t.id, {
       id: d.id,
       name: d.name
@@ -71,7 +71,7 @@ function v(e) {
     channel: l,
     compact: a,
     usernameHook: s
-  } = e, [m, h] = i.useState(!1), x = (0, d.ZP)(n), y = s(x), v = E(n.content), C = i.useCallback(() => {
+  } = e, [m, h] = i.useState(!1), x = (0, d.ZP)(n), E = s(x), v = y(n.content), C = i.useCallback(() => {
     null != v && f.S.dispatchToLastSubscribed(g.CkL.INSERT_TEXT, {
       plainText: ":".concat(v.name, ":"),
       addSpace: !0
@@ -92,10 +92,10 @@ function v(e) {
       color: "text-secondary",
       children: null == v ? _.intl.format(_.t.k6Jc9f, {
         username: x.nick,
-        usernameHook: y
+        usernameHook: E
       }) : _.intl.format(_.t.uoCHWV, {
         username: x.nick,
-        usernameHook: y,
+        usernameHook: E,
         emoji: (0, r.jsxs)(c.P3F, {
           className: b.clickableEmoji,
           tag: "span",

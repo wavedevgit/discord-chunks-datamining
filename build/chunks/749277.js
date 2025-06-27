@@ -1,4 +1,4 @@
-/** Chunk was on 72051 **/
+/** Chunk was on 74739 **/
 n.d(t, {
   A: () => U
 });
@@ -8,8 +8,8 @@ var i = n(442837),
   l = n(704215),
   o = n(481060),
   a = n(232567),
-  s = n(230711),
-  c = n(726542),
+  c = n(230711),
+  s = n(726542),
   u = n(100527),
   E = n(231757),
   d = n(674525),
@@ -20,8 +20,8 @@ var i = n(442837),
   N = n(703656),
   S = n(914010),
   p = n(594174),
-  R = n(933429),
-  A = n(395361),
+  A = n(933429),
+  R = n(395361),
   P = n(626135),
   C = n(243778),
   D = n(921944),
@@ -34,7 +34,7 @@ let U = e => {
   let {
     dismissibleContent: t,
     noticeType: U
-  } = e, b = (0, i.e7)([R.ZP], () => R.ZP.getNotice()), M = (0, i.e7)([p.default], () => p.default.getCurrentUser()), k = (0, i.e7)([S.Z], () => S.Z.getGuildId());
+  } = e, b = (0, i.e7)([A.ZP], () => A.ZP.getNotice()), M = (0, i.e7)([p.default], () => p.default.getCurrentUser()), k = (0, i.e7)([S.Z], () => S.Z.getGuildId());
   return (0, r.jsx)(C.ZP, {
     contentTypes: [t],
     groupName: D.R.NOTICE_BAR,
@@ -95,7 +95,7 @@ let U = e => {
             children: [(0, r.jsx)(o.RyX, {
               onClick: () => i(D.L.UNKNOWN),
               noticeType: U
-            }), (0, r.jsx)(A.Z, {
+            }), (0, r.jsx)(R.Z, {
               className: h.platformIcon
             }), g.intl.string(g.t["5NUVHB"]), (0, r.jsx)(o.NoS, {
               onClick: () => (0, E.Z)({
@@ -114,7 +114,7 @@ let U = e => {
             }), (0, r.jsx)("img", {
               alt: "",
               className: h.platformIcon,
-              src: c.Z.get(f.ABu.PLAYSTATION).icon.whiteSVG
+              src: s.Z.get(f.ABu.PLAYSTATION).icon.whiteSVG
             }), g.intl.string(g.t.WHWgoa), (0, r.jsx)(o.EyT, {
               onClick: () => (0, E.Z)({
                 platformType: f.ABu.PLAYSTATION,
@@ -130,7 +130,7 @@ let U = e => {
               onClick: () => i(D.L.UNKNOWN),
               noticeType: U
             }), g.intl.string(g.t.B2hnhY), (0, r.jsx)(o.NoS, {
-              onClick: () => s.Z.open(f.oAB.ACCOUNT),
+              onClick: () => c.Z.open(f.oAB.ACCOUNT),
               noticeType: U,
               children: g.intl.string(g.t["50KYxs"])
             })]
@@ -150,7 +150,7 @@ let U = e => {
                 P.default.track(f.rMx.PREMIUM_PROMOTION_OPENED, {
                   location_section: f.jXE.NOTIFICATION_BAR,
                   location_object: f.qAy.BUTTON_CTA
-                }), s.Z.open(f.oAB.PREMIUM)
+                }), c.Z.open(f.oAB.PREMIUM)
               },
               children: g.intl.string(g.t["8JC5e3"])
             }), (0, r.jsx)(o.RyX, {
@@ -179,7 +179,7 @@ let U = e => {
             }), g.intl.string(g.t["0KFB2N"]), (0, r.jsx)(o.NoS, {
               noticeType: U,
               onClick: () => {
-                i(D.L.UNKNOWN), s.Z.open(f.oAB.PREMIUM)
+                i(D.L.UNKNOWN), c.Z.open(f.oAB.PREMIUM)
               },
               children: g.intl.string(g.t.pyYSiI)
             })]

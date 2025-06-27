@@ -1,6 +1,6 @@
 /** Chunk was on 69856 **/
 n.d(t, {
-  Z: () => y
+  Z: () => E
 }), n(388685);
 var r, i = n(442837),
   l = n(570140),
@@ -89,7 +89,7 @@ function x(e) {
     return "MESSAGE_REACTION_ADD" === t ? n.addReaction(i, l, e.colors, r) : n.removeReaction(i, l, r)
   })
 }
-class E extends(r = i.ZP.Store) {
+class y extends(r = i.ZP.Store) {
   initialize() {
     this.waitFor(u.Z)
   }
@@ -133,8 +133,8 @@ class E extends(r = i.ZP.Store) {
     return h
   }
 }
-d(E, "displayName", "SearchMessageStore");
-let y = new E(l.Z, {
+d(y, "displayName", "SearchMessageStore");
+let E = new y(l.Z, {
   SEARCH_MESSAGES_START: function(e) {
     e.ids.forEach(e => {
       _(e).handleSearchStart()

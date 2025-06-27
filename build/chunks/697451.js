@@ -19,8 +19,8 @@ var r = n(255367),
   _ = n(403404),
   b = n(100527),
   x = n(906732),
-  E = n(783097),
-  y = n(581364),
+  y = n(783097),
+  E = n(581364),
   v = n(592180),
   C = n(726033),
   O = n(598077),
@@ -102,8 +102,8 @@ function U(e, t, n, i, l, o) {
     showAvatarPopout: _,
     showTargetAvatarPopout: b,
     onClickAvatar: x,
-    onUserContextMenu: E,
-    onClickTargetAvatar: y,
+    onUserContextMenu: y,
+    onClickTargetAvatar: E,
     onTargetUserContextMenu: v,
     onPopoutRequestClose: C
   } = e;
@@ -145,8 +145,8 @@ function U(e, t, n, i, l, o) {
       user: t,
       guildId: f.guild_id,
       guildAvatar: O,
-      onClick: 1 === n ? y : x,
-      onContextMenu: 1 === n ? v : E,
+      onClick: 1 === n ? E : x,
+      onContextMenu: 1 === n ? v : y,
       ref: o
     }),
     I = 1 === n ? b : _;
@@ -228,13 +228,13 @@ function H(e) {
       messageId: l.id,
       interactionData: l.interactionData
     }))), [o, l.id, l.interactionData]),
-    V = (0, y.t0)(l),
+    V = (0, E.t0)(l),
     z = (null == V ? void 0 : V.type) === m.B8.APPLICATION_COMMAND && null != V.target_user ? new O.Z(V.target_user) : null,
     W = (null == V ? void 0 : V.type) === m.B8.APPLICATION_COMMAND && null != l.messageReference && null != e.renderTargetMessage,
     K = (0, N.Sw)(null == (t = l.interaction) ? void 0 : t.user, o),
     Y = (0, N.Sw)(z, o),
-    q = i.useMemo(() => e.compact ? (0, w.Z)((0, T.vc)(u()(), "LT")) : null, [e.compact]),
-    X = (0, h.NX)(o.id),
+    X = i.useMemo(() => e.compact ? (0, w.Z)((0, T.vc)(u()(), "LT")) : null, [e.compact]),
+    q = (0, h.NX)(o.id),
     Q = l.interaction;
   if (null == Q || null == K) return null;
   let J = () => {
@@ -302,7 +302,7 @@ function H(e) {
               children: c
             });
             {
-              let e = (0, E.XZ)(c);
+              let e = (0, y.XZ)(c);
               return (0, r.jsx)(p.P3F, D(L({}, i), {
                 tag: "span",
                 onClick: () => {
@@ -352,7 +352,7 @@ function H(e) {
         guildId: o.guild_id
       })
     };
-    n = X ? R.intl.format(R.t.kfV8WF, {
+    n = q ? R.intl.format(R.t.kfV8WF, {
       userHook: J,
       activityHook: () => (0, r.jsx)(p.P3F, {
         tag: "span",
@@ -369,7 +369,7 @@ function H(e) {
   return (0, r.jsx)(x.Gt, {
     value: c,
     children: (0, r.jsx)("div", {
-      className: a()(k.repliedMessage, k.messageSpine, k.executedCommand, q),
+      className: a()(k.repliedMessage, k.messageSpine, k.executedCommand, X),
       "aria-hidden": !e.compact,
       children: n
     })

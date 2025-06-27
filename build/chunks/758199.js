@@ -20,8 +20,8 @@ var r, i = n(255367),
   b = n(388032),
   x = n(383195);
 
-function E() {
-  return (E = Object.assign || function(e) {
+function y() {
+  return (y = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -30,7 +30,7 @@ function E() {
   }).apply(this, arguments)
 }
 
-function y(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -189,13 +189,13 @@ function C(e) {
           return u ? (0, i.jsx)(c.ua7, {
             text: a,
             children: e => {
-              var t = E({}, function(e) {
+              var t = y({}, function(e) {
                 if (null == e) throw TypeError("Cannot destructure " + e);
                 return e
               }(e));
-              return (0, i.jsx)(c.zxk, y({}, m, t))
+              return (0, i.jsx)(c.zxk, E({}, m, t))
             }
-          }, n) : (0, i.jsx)(c.zxk, y({}, m), n)
+          }, n) : (0, i.jsx)(c.zxk, E({}, m), n)
         })
       })]
     })]
