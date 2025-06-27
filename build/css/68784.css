@@ -1,6 +1,6 @@
 /**
   Module ID: 68784
-  Original File Name: 3685d5e94b503395
+  Original File Name: 8f7085667e09a14a
 **/
 .answerRow__7b848 {
     align-items: center;
@@ -44,6 +44,10 @@
     border: none;
     flex: 1;
     padding: 5px 4px
+}
+
+.defaultTextInput__7b848:hover {
+    border: none
 }
 
 .characterCount__7b848 {
@@ -444,4 +448,4 @@
     margin-bottom: 24px
 }
 
-/*# sourceMappingURL=3685d5e94b503395.css.map*/
+/*# sourceMappingURL=8f7085667e09a14a.css.map*/
