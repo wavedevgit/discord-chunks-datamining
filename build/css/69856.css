@@ -1,6 +1,6 @@
 /**
   Module ID: 69856
-  Original File Name: fa9d8dfde003c25b
+  Original File Name: 9e6d1d1411cea3b2
 **/
 .tooltipTextContainer__0ca35 {
     align-items: center;
@@ -7088,26 +7088,22 @@ html .progress__61462 {
     color: var(--primary-300)
 }
 
-.textContainer__45eb7 {
-    padding-top: .25rem
-}
-
-.timestamp__45eb7 {
-    padding-left: .3rem;
-    padding-top: .4rem
-}
-
 .iconContainer__45eb7 {
     color: var(--icon-tertiary)
 }
 
 .content__45eb7 {
-    display: flex;
-    flex-direction: row
+    align-items: baseline;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .25rem;
+    padding-top: .25rem
 }
 
 .clickableEmoji__45eb7 {
-    cursor: pointer
+    cursor: pointer;
+    display: inline-block
 }
 
 .clickableEmoji__45eb7:hover {
@@ -7126,13 +7122,14 @@ html .progress__61462 {
 }
 
 .ctaText__45eb7 {
-    display: flex;
+    align-items: center;
+    display: inline-flex;
+    gap: .3em;
     height: 100%
 }
 
 .ctaEmoji__45eb7 {
     height: 100%;
-    margin-left: 8px;
     vertical-align: baseline;
     width: auto
 }
@@ -7162,7 +7159,7 @@ html .progress__61462 {
     padding-top: 1px
 }
 
-.icon_f8896c,.reactionBtn_f8896c {
+.icon_f8896c {
     height: 18px;
     width: 18px
 }
@@ -7171,6 +7168,7 @@ html .progress__61462 {
     background-color: var(--background-mod-subtle);
     color: var(--interactive-normal);
     cursor: pointer;
+    height: 18px;
     margin-bottom: 2px;
     margin-left: 4px;
     margin-right: 4px;
@@ -7418,7 +7416,7 @@ html .progress__61462 {
     padding-top: .125rem
 }
 
-.icon__23977,.reactionBtn__23977 {
+.icon__23977 {
     height: 1.125rem;
     width: 1.125rem
 }
@@ -7427,6 +7425,7 @@ html .progress__61462 {
     background-color: var(--background-mod-subtle);
     color: var(--interactive-normal);
     cursor: pointer;
+    height: 1.125rem;
     margin-bottom: .125rem;
     margin-left: .25rem;
     margin-right: .25rem;
@@ -11129,4 +11128,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=fa9d8dfde003c25b.css.map*/
+/*# sourceMappingURL=9e6d1d1411cea3b2.css.map*/

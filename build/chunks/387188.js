@@ -77,46 +77,46 @@ function v(e) {
       addSpace: !0
     })
   }, [v]);
-  return null == v ? null : (0, r.jsx)(p.Z, {
+  return (0, r.jsx)(p.Z, {
     iconNode: (0, r.jsx)(o.EO4, {
       size: "md",
       color: "currentColor"
     }),
     iconContainerClassName: b.iconContainer,
     timestamp: n.timestamp,
-    timestampClassName: b.timestamp,
     compact: a,
     contentClassName: b.content,
-    children: (0, r.jsx)("div", {
-      className: b.textContainer,
-      children: (0, r.jsx)(c.Text, {
-        variant: "text-md/normal",
-        color: "text-secondary",
-        children: _.intl.format(_.t.uoCHWV, {
-          username: x.nick,
-          usernameHook: y,
-          emoji: (0, r.jsxs)(c.P3F, {
-            className: b.clickableEmoji,
+    children: (0, r.jsx)(c.Text, {
+      tag: "span",
+      variant: "text-md/normal",
+      color: "text-secondary",
+      children: null == v ? _.intl.format(_.t.k6Jc9f, {
+        username: x.nick,
+        usernameHook: y
+      }) : _.intl.format(_.t.uoCHWV, {
+        username: x.nick,
+        usernameHook: y,
+        emoji: (0, r.jsxs)(c.P3F, {
+          className: b.clickableEmoji,
+          tag: "span",
+          onClick: C,
+          onMouseEnter: () => h(!0),
+          onMouseLeave: () => h(!1),
+          children: [(0, r.jsx)(u.Z, {
+            emojiName: v.name,
+            size: "default",
+            emojiId: v.id,
+            animated: v.animated,
+            isInteracting: m,
+            channelId: l.id,
+            messageId: n.id,
+            className: b.clickableEmojiPreview
+          }), (0, r.jsx)(c.Text, {
             tag: "span",
-            onClick: C,
-            onMouseEnter: () => h(!0),
-            onMouseLeave: () => h(!1),
-            children: [(0, r.jsx)(u.Z, {
-              emojiName: v.name,
-              size: "default",
-              emojiId: v.id,
-              animated: v.animated,
-              isInteracting: m,
-              channelId: l.id,
-              messageId: n.id,
-              className: b.clickableEmojiPreview
-            }), (0, r.jsx)(c.Text, {
-              tag: "span",
-              variant: "text-md/medium",
-              color: "text-primary",
-              children: ":".concat(null != (t = v.originalName) ? t : v.name, ":")
-            })]
-          })
+            variant: "text-md/medium",
+            color: "text-primary",
+            children: ":".concat(null != (t = v.originalName) ? t : v.name, ":")
+          })]
         })
       })
     })

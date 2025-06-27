@@ -215,7 +215,7 @@ class G extends i.PureComponent {
           queryString: r,
           query: t,
           searchEverywhere: null != i && i
-        }), d.uvj.announce(D.intl.string(D.t.pKCxWF)), this.onBlur()
+        }), d.uvj.announce(D.intl.string(D.t.pKCxWF)), this.handleBlur(!0)
       }
       return !0
     }), U(this, "handleClearSearch", e => {
@@ -265,27 +265,31 @@ class G extends i.PureComponent {
     }), U(this, "onFocus", () => {
       let {
         searchId: e,
-        searchType: t
+        searchType: t,
+        isSearchActive: n
       } = this.props;
       this.setState({
         focused: !0
-      }), null == e || j.Z.isActive(e) || (0, w.I1)({
-        searchId: e,
-        searchType: null != t ? t : (0, Z.g)(e)
-      })
-    }), U(this, "onBlur", () => {
-      let {
+      }), null == e || n || (0, w.I1)({
         searchId: e,
         searchType: t
+      })
+    }), U(this, "handleBlur", e => {
+      let {
+        searchId: t,
+        searchType: n,
+        isSearchActive: r
       } = this.props;
       this.setState({
         focused: !1
       }, () => {
-        null == e || j.Z.isActive(e) || (0, w.IZ)({
-          searchId: e,
-          searchType: null != t ? t : (0, Z.g)(e)
+        null == t || r || e || (0, w.IZ)({
+          searchId: t,
+          searchType: n
         }), T.xb(this.props.editorState) && this.clearSearch()
       })
+    }), U(this, "onBlur", e => {
+      this.handleBlur()
     }), U(this, "handleReturn", e => {
       let {
         shiftKey: t
@@ -419,13 +423,13 @@ function V(e) {
   }), []), o = (0, u.e7)([j.Z], () => j.Z.getSearchResultsQueryString(k.aib.DMS)), s = (0, v.jj)(a, L.sR.MESSAGES, o), c = (0, u.e7)([y.Z], () => {
     let e = y.Z.getTotalCount(s);
     return null != e && e > 0
-  }), d = (0, u.e7)([y.Z], () => y.Z.getIsFetching(s));
+  }), d = (0, u.e7)([y.Z], () => y.Z.getIsFetching(s)), m = d || c;
   H({
-    isSearchActive: d || c,
+    isSearchActive: m,
     searchId: k.aib.DMS,
     searchType: k.aib.DMS
   });
-  let m = i.useCallback(e => {
+  let f = i.useCallback(e => {
     let {
       queryString: t
     } = e;
@@ -456,7 +460,8 @@ function V(e) {
     editorState: l,
     hasResults: c,
     keyboardModeEnabled: n,
-    onSearch: m
+    onSearch: f,
+    isSearchActive: m
   })
 }
 
@@ -487,7 +492,8 @@ function z(e) {
     editorState: l,
     hasResults: c,
     keyboardModeEnabled: n,
-    onSearch: p
+    onSearch: p,
+    isSearchActive: s
   })
 }
 

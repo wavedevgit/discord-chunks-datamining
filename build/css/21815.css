@@ -1,6 +1,6 @@
 /**
   Module ID: 21815
-  Original File Name: 602cdacc58f18ffc
+  Original File Name: 812658e6e519293a
 **/
 .slowModeIcon_b21699 {
     display: block;
@@ -483,7 +483,7 @@
     padding-top: 1px
 }
 
-.icon_f8896c,.reactionBtn_f8896c {
+.icon_f8896c {
     height: 18px;
     width: 18px
 }
@@ -492,6 +492,7 @@
     background-color: var(--background-mod-subtle);
     color: var(--interactive-normal);
     cursor: pointer;
+    height: 18px;
     margin-bottom: 2px;
     margin-left: 4px;
     margin-right: 4px;
@@ -739,7 +740,7 @@
     padding-top: .125rem
 }
 
-.icon__23977,.reactionBtn__23977 {
+.icon__23977 {
     height: 1.125rem;
     width: 1.125rem
 }
@@ -748,6 +749,7 @@
     background-color: var(--background-mod-subtle);
     color: var(--interactive-normal);
     cursor: pointer;
+    height: 1.125rem;
     margin-bottom: .125rem;
     margin-left: .25rem;
     margin-right: .25rem;
@@ -2552,4 +2554,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=602cdacc58f18ffc.css.map*/
+/*# sourceMappingURL=812658e6e519293a.css.map*/

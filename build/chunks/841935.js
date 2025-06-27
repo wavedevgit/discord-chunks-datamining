@@ -1,7 +1,5 @@
 /** Chunk was on 69856 **/
 e.exports = {
-  textContainer: "textContainer__45eb7",
-  timestamp: "timestamp__45eb7",
   iconContainer: "iconContainer__45eb7",
   content: "content__45eb7",
   clickableEmoji: "clickableEmoji__45eb7",
