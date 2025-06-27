@@ -1,6 +1,6 @@
 /**
   Module ID: 21815
-  Original File Name: 812658e6e519293a
+  Original File Name: 875505b359e07454
 **/
 .slowModeIcon_b21699 {
     display: block;
@@ -98,7 +98,7 @@
     text-overflow: ellipsis
 }
 
-.align-chat-input .base_b88801 {
+.align-chat-input .inTextChannel_b88801.base_b88801 {
     bottom: unset;
     left: 0;
     padding-left: var(--space-md);
@@ -107,28 +107,16 @@
     top: -24px
 }
 
-.align-chat-input .base_b88801 .typingDots_b88801 {
+.align-chat-input .inTextChannel_b88801 .typingDots_b88801 {
     margin-left: 8px
 }
 
-.align-chat-input .backgroundAnimated_b88801 {
-    height: 32px;
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: -8px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none
-}
-
-.align-chat-input .text_b88801 {
+.align-chat-input .inTextChannel_b88801 .text_b88801 {
     margin-left: calc(var(--space-md) + var(--space-8));
     z-index: 1
 }
 
-.align-chat-input .text_b88801>strong {
+.align-chat-input .inTextChannel_b88801 .text_b88801>strong {
     color: var(--text-default)
 }
 
@@ -2391,8 +2379,7 @@
     border-radius: var(--radius-md);
     height: 16px;
     justify-content: center;
-    margin-left: -4px;
-    margin-right: 8px;
+    margin-left: 4px;
     width: 24px
 }
 
@@ -2554,4 +2541,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=812658e6e519293a.css.map*/
+/*# sourceMappingURL=875505b359e07454.css.map*/

@@ -768,7 +768,8 @@ class tr extends i.PureComponent {
                     children: G
                   }), (0, r.jsx)(b.Z, {
                     channel: i,
-                    poggermodeEnabled: x
+                    poggermodeEnabled: x,
+                    isInTextChannel: !0
                   })]
                 }), (0, r.jsx)(el.kw, {})]
               })]

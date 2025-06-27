@@ -1,6 +1,6 @@
 /**
   Module ID: 25904
-  Original File Name: dd10981a693b7fc4
+  Original File Name: 18ea18c6a2376a84
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1853,8 +1853,7 @@
     border-radius: var(--radius-md);
     height: 16px;
     justify-content: center;
-    margin-left: -4px;
-    margin-right: 8px;
+    margin-left: 4px;
     width: 24px
 }
 
@@ -7601,4 +7600,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=dd10981a693b7fc4.css.map*/
+/*# sourceMappingURL=18ea18c6a2376a84.css.map*/

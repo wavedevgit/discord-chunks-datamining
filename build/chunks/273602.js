@@ -18,8 +18,8 @@ var a = n(255367),
   b = n(430824),
   g = n(375954),
   h = n(403182),
-  y = n(709054),
-  T = n(861990),
+  T = n(709054),
+  y = n(861990),
   C = n(127654),
   O = n(979956),
   v = n(228392),
@@ -38,7 +38,7 @@ async function P(e) {
       guild: p,
       onClose: f
     } = e,
-    b = y.default.castChannelIdAsMessageId(i.id),
+    b = T.default.castChannelIdAsMessageId(i.id),
     v = new u.Z;
   v.on("progress", e => {
     let t = (0, h.dg)(p.id);
@@ -53,7 +53,7 @@ async function P(e) {
     d(!1);
     return
   }
-  let E = [...I, ...null != (t = o.map((e, t) => (0, T.B)(e, t))) ? t : []];
+  let E = [...I, ...null != (t = o.map((e, t) => (0, y.B)(e, t))) ? t : []];
   try {
     await r.tn.patch({
       url: j.ANM.MESSAGE(i.id, b),
@@ -75,12 +75,12 @@ function M(e) {
     sendMessage: l,
     transitionState: s,
     onClose: u
-  } = e, m = (0, d.Dt)(), _ = (0, i.e7)([f.Z], () => f.Z.getChannel(n), [n]), g = (0, i.e7)([b.Z], () => b.Z.getGuild(null == _ ? void 0 : _.getGuildId()), [_]), h = (0, i.e7)([f.Z], () => f.Z.getChannel(null == _ ? void 0 : _.parent_id), [_]), y = null == (t = r[0]) ? void 0 : t.item, [T, C] = o.useState(null);
+  } = e, m = (0, d.Dt)(), _ = (0, i.e7)([f.Z], () => f.Z.getChannel(n), [n]), g = (0, i.e7)([b.Z], () => b.Z.getGuild(null == _ ? void 0 : _.getGuildId()), [_]), h = (0, i.e7)([f.Z], () => f.Z.getChannel(null == _ ? void 0 : _.parent_id), [_]), T = null == (t = r[0]) ? void 0 : t.item, [y, C] = o.useState(null);
   o.useEffect(() => {
-    null != y && (0, p.Fq)(y.file, (e, t) => C(e), E.dG)
-  }, [y]);
-  let O = null != y && null != T ? {
-      src: T,
+    null != T && (0, p.Fq)(T.file, (e, t) => C(e), E.dG)
+  }, [T]);
+  let O = null != T && null != y ? {
+      src: y,
       width: x.TJ,
       height: x.Lp,
       spoiler: r[0].spoiler,

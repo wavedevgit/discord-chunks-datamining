@@ -1,6 +1,6 @@
 /**
   Module ID: 19577
-  Original File Name: f76646f8705705f0
+  Original File Name: b20d702b30172200
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -665,7 +665,7 @@
     text-overflow: ellipsis
 }
 
-.align-chat-input .base_b88801 {
+.align-chat-input .inTextChannel_b88801.base_b88801 {
     bottom: unset;
     left: 0;
     padding-left: var(--space-md);
@@ -674,28 +674,16 @@
     top: -24px
 }
 
-.align-chat-input .base_b88801 .typingDots_b88801 {
+.align-chat-input .inTextChannel_b88801 .typingDots_b88801 {
     margin-left: 8px
 }
 
-.align-chat-input .backgroundAnimated_b88801 {
-    height: 32px;
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: -8px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none
-}
-
-.align-chat-input .text_b88801 {
+.align-chat-input .inTextChannel_b88801 .text_b88801 {
     margin-left: calc(var(--space-md) + var(--space-8));
     z-index: 1
 }
 
-.align-chat-input .text_b88801>strong {
+.align-chat-input .inTextChannel_b88801 .text_b88801>strong {
     color: var(--text-default)
 }
 
@@ -14412,4 +14400,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=f76646f8705705f0.css.map*/
+/*# sourceMappingURL=b20d702b30172200.css.map*/

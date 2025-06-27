@@ -140,32 +140,34 @@ function k(t) {
     isThreadCreation: u,
     renderDots: h,
     poggermodeEnabled: p,
-    isComboing: g
+    isComboing: g,
+    isInTextChannel: m
   } = t, {
-    rateLimitPerUser: m
-  } = d, v = S.Z.getGuild(e);
-  if (0 === l.length && !(m > 0) && !g) return r && null != i ? (0, n.jsx)(M, {
+    rateLimitPerUser: v
+  } = d, b = S.Z.getGuild(e);
+  if (0 === l.length && !(v > 0) && !g) return r && null != i ? (0, n.jsx)(M, {
     activity: i,
     isFocused: s,
     isRefreshChatInputEnabled: !1
   }) : (0, n.jsx)(U, {
     channel: d,
-    guild: v
+    guild: b
   });
-  let [b, y, E] = l, w = "";
-  return 1 === l.length ? w = _.intl.format(_.t.lJ9sZW, {
-    a: b
-  }) : 2 === l.length ? w = _.intl.format(_.t.rB0CUV, {
-    a: b,
-    b: y
-  }) : 3 === l.length ? w = _.intl.format(_.t.StKTho, {
-    a: b,
-    b: y,
-    c: E
-  }) : l.length > 3 && (w = _.intl.string(_.t.uVDhqa)), (0, n.jsxs)("div", {
+  let [y, E, w] = l, Z = "";
+  return 1 === l.length ? Z = _.intl.format(_.t.lJ9sZW, {
+    a: y
+  }) : 2 === l.length ? Z = _.intl.format(_.t.rB0CUV, {
+    a: y,
+    b: E
+  }) : 3 === l.length ? Z = _.intl.format(_.t.StKTho, {
+    a: y,
+    b: E,
+    c: w
+  }) : l.length > 3 && (Z = _.intl.string(_.t.uVDhqa)), (0, n.jsxs)("div", {
     className: o()(A.typing, {
       "stop-animation": !s,
-      [A.isComboing]: p && g
+      [A.isComboing]: p && g,
+      [A.inTextChannel]: m
     }, a),
     children: [(0, n.jsxs)("div", {
       className: A.typingDots,
@@ -177,7 +179,7 @@ function k(t) {
         className: A.text,
         "aria-live": "polite",
         "aria-atomic": !0,
-        children: w
+        children: Z
       })]
     }), (0, n.jsx)(f.Z, {
       channel: d,
