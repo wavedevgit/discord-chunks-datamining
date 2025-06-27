@@ -25,7 +25,7 @@ function i(e, t) {
     guildId: e,
     location: t
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: !0
   }).enabled
 }
 
@@ -34,6 +34,6 @@ function a(e, t) {
     guildId: e,
     location: t
   }, {
-    autoTrackExposure: !1
+    autoTrackExposure: !0
   }).enabled
 }

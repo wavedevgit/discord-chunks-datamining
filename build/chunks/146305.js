@@ -45,8 +45,8 @@ var r = n(255367),
   F = n(787561),
   z = n(579648),
   H = n(460461),
-  W = n(29605),
-  V = n(365307),
+  V = n(29605),
+  W = n(365307),
   Y = n(324330),
   K = n(495300),
   X = n(651780),
@@ -167,7 +167,7 @@ let e_ = {
         };
       case ep.pNK.EMOJI:
         return {
-          section: ep.pNK.EMOJI, impressionName: i.ImpressionNames.GUILD_SETTINGS_EMOJI, label: eh.intl.string(eh.t.sMOuub), element: W.ZP, predicate: () => t.canManageGuildExpressions
+          section: ep.pNK.EMOJI, impressionName: i.ImpressionNames.GUILD_SETTINGS_EMOJI, label: eh.intl.string(eh.t.sMOuub), element: V.ZP, predicate: () => t.canManageGuildExpressions
         };
       case ep.pNK.STICKERS:
         return {
@@ -195,9 +195,9 @@ let e_ = {
         };
       case ep.pNK.INTEGRATIONS:
         return {
-          section: ep.pNK.INTEGRATIONS, impressionName: i.ImpressionNames.GUILD_SETTINGS_INTEGRATION, label: eh.intl.string(eh.t.CIsNZ2), ariaLabel: eh.intl.string(eh.t.CIsNZ2), element: V.Z, notice: {
+          section: ep.pNK.INTEGRATIONS, impressionName: i.ImpressionNames.GUILD_SETTINGS_INTEGRATION, label: eh.intl.string(eh.t.CIsNZ2), ariaLabel: eh.intl.string(eh.t.CIsNZ2), element: W.Z, notice: {
             stores: [S.default, P.Z],
-            element: V.j
+            element: W.j
           }, predicate: () => t.canManageGuild || t.canManageWebhooks || t.canUnlinkChannels
         };
       case ep.pNK.APP_DIRECTORY:

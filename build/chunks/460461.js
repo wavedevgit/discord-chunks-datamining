@@ -86,7 +86,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         label: e,
         value: e
       })
-    }, W = e => {
+    }, V = e => {
       try {
         var t, n, r, i;
         let l = new URL(e).hostname.split(".");
@@ -104,13 +104,13 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
           t = [];
         D.socialLinks.forEach((n, r) => {
           if ("" !== n) {
-            let i = W(n);
+            let i = V(n);
             null !== i ? (t[r] = i, e[r] = !0) : e[r] = !1
           } else e[r] = !0
         }), z(t), L(e), G(e.every(e => !0 === e))
       }
     }, [D]);
-    let V = (0, l.e7)([v.Z], () => null != d ? v.Z.getErrors() : null);
+    let W = (0, l.e7)([v.Z], () => null != d ? v.Z.getErrors() : null);
     if (null == d || null == D) return null;
     let Y = e => {
         _.Z.updateGuild({
@@ -281,11 +281,11 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           guildMetadata: D,
                           disabled: !R
                         })]
-                      }), (null == V ? void 0 : V.category) != null ? (0, r.jsx)(a.Text, {
+                      }), (null == W ? void 0 : W.category) != null ? (0, r.jsx)(a.Text, {
                         color: "text-danger",
                         className: S.error,
                         variant: "text-sm/normal",
-                        children: V.category
+                        children: W.category
                       }) : null]
                     })
                   })(), (0, r.jsx)(a.$i$, {
@@ -323,10 +323,10 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           imageClassName: S.imageUploaderInnerSquare,
                           hideSize: !0
                         })]
-                      }), (null == V ? void 0 : V.discovery_splash) != null ? (0, r.jsx)(a.Text, {
+                      }), (null == W ? void 0 : W.discovery_splash) != null ? (0, r.jsx)(a.Text, {
                         color: "text-danger",
                         variant: "text-sm/normal",
-                        children: V.discovery_splash
+                        children: W.discovery_splash
                       }) : null]
                     })
                   })(), (0, r.jsx)(a.$i$, {
@@ -375,10 +375,10 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           guildId: d.id,
                           reasons: e
                         })
-                      }), (null == V ? void 0 : V.reasons_to_join) != null ? (0, r.jsx)(a.Text, {
+                      }), (null == W ? void 0 : W.reasons_to_join) != null ? (0, r.jsx)(a.Text, {
                         color: "text-danger",
                         variant: "text-sm/normal",
-                        children: V.reasons_to_join
+                        children: W.reasons_to_join
                       }) : null]
                     })
                   })(), (0, r.jsx)(a.$i$, {
@@ -405,10 +405,10 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         disabled: !R,
                         defaultDirty: (null == (e = D.about) ? void 0 : e.length) > 0
                       }, "text-area-".concat(Z))]
-                    }), (null == V ? void 0 : V.about) != null ? (0, r.jsx)(a.Text, {
+                    }), (null == W ? void 0 : W.about) != null ? (0, r.jsx)(a.Text, {
                       color: "text-danger",
                       variant: "text-sm/normal",
-                      children: V.about
+                      children: W.about
                     }) : null]
                   }), (0, r.jsx)(a.$i$, {
                     className: S.divider
@@ -456,10 +456,10 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         className: U[t] ? D.isPublished ? S.deleteButtonMax : S.deleteButtonMin : D.isPublished ? S.deleteButtonHiddenMax : S.deleteButtonHiddenMin,
                         onClick: () => Q(t)
                       }, "delete-button-" + t)]
-                    }, "social-container-" + t)), (null == V ? void 0 : V.social_links) != null ? (0, r.jsx)(a.Text, {
+                    }, "social-container-" + t)), (null == W ? void 0 : W.social_links) != null ? (0, r.jsx)(a.Text, {
                       color: "text-danger",
                       variant: "text-sm/normal",
-                      children: V.social_links
+                      children: W.social_links
                     }) : null, (0, r.jsx)(a.zxk, {
                       size: a.zxk.Sizes.SMALL,
                       color: a.zxk.Colors.PRIMARY,
@@ -491,10 +491,10 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         children: E.intl.string(E.t["DCHd/P"])
                       })]
                     })]
-                  }), (null == V ? void 0 : V.is_published) != null ? (0, r.jsx)(a.Text, {
+                  }), (null == W ? void 0 : W.is_published) != null ? (0, r.jsx)(a.Text, {
                     color: "text-danger",
                     variant: "text-sm/normal",
-                    children: V.is_published
+                    children: W.is_published
                   }) : null]
                 }), !D.isPublished && (0, r.jsx)("div", {
                   className: S.checklist,

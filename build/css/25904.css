@@ -1,6 +1,6 @@
 /**
   Module ID: 25904
-  Original File Name: b36d5d5b0d0364cf
+  Original File Name: 1dac95b3af7fa642
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -4087,6 +4087,49 @@ div:has(>.positionLayer__4f4b6) {
     bottom: 60px
 }
 
+.container__53b23 {
+    background-color: var(--bg-surface-overlay);
+    box-shadow: var(--shadow-low);
+    padding: var(--space-8)
+}
+
+.container__53b23.caretLeftTop__53b23 {
+    margin-left: var(--space-8)
+}
+
+.container__53b23.caretLeftTop__53b23:after {
+    border-right-color: var(--bg-surface-overlay)!important;
+    left: 0
+}
+
+.container__53b23.caretTopCenter__53b23:after {
+    border-bottom-color: var(--bg-surface-overlay)!important
+}
+
+.imageContainer__53b23 {
+    position: relative
+}
+
+.image__53b23 {
+    border-radius: var(--radius-sm);
+    height: 125px;
+    margin-bottom: var(--space-16);
+    object-fit: cover;
+    width: 100%
+}
+
+.close__53b23 {
+    color: #fff!important;
+    opacity: .75!important;
+    position: absolute;
+    right: var(--space-6);
+    top: var(--space-8)
+}
+
+.close__53b23:hover {
+    opacity: 1!important
+}
+
 @keyframes progressPulse_eff079 {
     0% {
         background-position: 100%
@@ -7561,4 +7604,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=b36d5d5b0d0364cf.css.map*/
+/*# sourceMappingURL=1dac95b3af7fa642.css.map*/

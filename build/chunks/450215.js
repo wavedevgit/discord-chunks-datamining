@@ -36,7 +36,7 @@ function y(e) {
     groupListingId: E,
     onBeforeDispatchNewListing: S,
     onAfterDispatchNewListing: T
-  } = e, [P, w] = i.useState(a), R = (0, c.e7)([f.Z], () => f.Z.getSubscriptionListing(P)), Z = null == R, [D, k] = i.useState(Z), A = null == R ? void 0 : R.subscription_plans[0], L = null != (t = null == R ? void 0 : R.published) && t, M = null != (n = null == R ? void 0 : R.archived) && n, G = !M && !L && void 0 !== R, U = void 0 === R, B = (0, h.mY)(), [F] = b._T(P), [z] = b.mR(P), [H] = b.PK(P), [W] = b.d9(P, 1024), V = "" !== F ? F : O.intl.string(O.t.QWhe9P), Y = "" !== F && null != W && "" !== H && null != z && !B, K = b.rU(P), {
+  } = e, [P, w] = i.useState(a), R = (0, c.e7)([f.Z], () => f.Z.getSubscriptionListing(P)), Z = null == R, [D, k] = i.useState(Z), A = null == R ? void 0 : R.subscription_plans[0], L = null != (t = null == R ? void 0 : R.published) && t, M = null != (n = null == R ? void 0 : R.archived) && n, G = !M && !L && void 0 !== R, U = void 0 === R, B = (0, h.mY)(), [F] = b._T(P), [z] = b.mR(P), [H] = b.PK(P), [V] = b.d9(P, 1024), W = "" !== F ? F : O.intl.string(O.t.QWhe9P), Y = "" !== F && null != V && "" !== H && null != z && !B, K = b.rU(P), {
     loading: X,
     error: q,
     handleCreateOrUpdateFromEditState: Q
@@ -53,20 +53,20 @@ function y(e) {
       }),
       children: [(0, r.jsx)("div", {
         className: C.headerImageContainer,
-        children: null == W ? (0, r.jsx)(j.Z, {
+        children: null == V ? (0, r.jsx)(j.Z, {
           className: C.starIcon,
           "aria-hidden": !0
         }) : (0, r.jsx)("img", {
           className: C.headerImage,
-          src: W,
-          alt: V
+          src: V,
+          alt: W
         })
       }), (0, r.jsxs)("div", {
         className: C.headerListingInfo,
         children: [(0, r.jsx)(d.Text, {
           variant: "text-md/medium",
           color: "interactive-active",
-          children: V
+          children: W
         }), (0, r.jsx)(d.LZC, {
           size: 2
         }), (0, r.jsxs)("div", {

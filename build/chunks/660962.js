@@ -45,8 +45,8 @@ var r = n(255367),
   F = n(388032),
   z = n(93841),
   H = n(275302),
-  W = n(877248),
-  V = n(179517),
+  V = n(877248),
+  W = n(179517),
   Y = n(79829),
   K = n(540167);
 
@@ -120,7 +120,7 @@ function ee(e) {
     shouldShowUpsell: a
   } = e, o = e => l || a && [Z.g.HOLOGRAPHIC, Z.g.GRADIENT].includes(e), d = er(F.intl.string(F.t.Mi9KbW)), h = (0, f.ZP)(), b = (0, v.oC)(n, t), j = {
     dark: {
-      src: V,
+      src: W,
       name: t.name
     },
     light: {
@@ -328,7 +328,7 @@ function ei(e) {
     },
     colorString: null != (l = a.colorString) ? l : void 0
   }, f = {
-    src: V,
+    src: W,
     name: a.name
   }, h = {
     src: Y,
@@ -411,10 +411,10 @@ function es(e) {
     },
     onScroll: _,
     children: (0, r.jsxs)("div", {
-      className: W.contentWidth,
+      className: V.contentWidth,
       children: [(0, r.jsx)("div", {
-        className: s()(W.header, W.stickyHeader, {
-          [W.stickyHeaderElevated]: !j
+        className: s()(V.header, V.stickyHeader, {
+          [V.stickyHeaderElevated]: !j
         }),
         ref: x,
         children: (0, r.jsx)(A.Z, {

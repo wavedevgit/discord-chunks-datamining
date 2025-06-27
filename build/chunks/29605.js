@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   FT: () => Y,
-  L3: () => V,
+  L3: () => W,
   ZP: () => q
 }), n(388685), n(583741);
 var r = n(255367),
@@ -166,7 +166,7 @@ let z = d().throttle(f.OQ, 1e3),
       })]
     })
   },
-  W = e => {
+  V = e => {
     let {
       isLoading: t,
       staticEmojis: i,
@@ -190,14 +190,14 @@ let z = d().throttle(f.OQ, 1e3),
         children: G.intl.string(G.t.lxsmBQ)
       })]
     }) : (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(V, {
+      children: [(0, r.jsx)(W, {
         title: G.intl.string(G.t.sMOuub),
         maxSlots: (0, R.y4)(a),
         emojiCount: i.length
       }), (0, r.jsx)(Y, {
         emojis: i,
         guild: a
-      }), (0, r.jsx)(V, {
+      }), (0, r.jsx)(W, {
         title: G.intl.string(G.t.wWjQyc),
         maxSlots: (0, R.y4)(a),
         emojiCount: l.length
@@ -207,7 +207,7 @@ let z = d().throttle(f.OQ, 1e3),
       })]
     })
   },
-  V = e => {
+  W = e => {
     let {
       title: t,
       maxSlots: n,
@@ -347,7 +347,7 @@ let z = d().throttle(f.OQ, 1e3),
         return [n, r]
       }, [p, e.id]),
       H = Math.max(Z - M.length, Z - B.length),
-      V = (0, v.h)({
+      W = (0, v.h)({
         location: "guild_settings",
         autoTrackExposure: !0
       }) && H > 0;
@@ -365,7 +365,7 @@ let z = d().throttle(f.OQ, 1e3),
         }
       }), []),
       q = async (n, r, i) => {
-        if (!V) return await (0, C.G)({
+        if (!W) return await (0, C.G)({
           data: n,
           file: r,
           image: i,
@@ -428,7 +428,7 @@ let z = d().throttle(f.OQ, 1e3),
             children: G.intl.format(G.t.uMkfTk, {
               onClick: () => D.Z.open(e.id, L.pNK.ROLE_SUBSCRIPTIONS, void 0, L.KsC.ROLE_SUBSCRIPTION_EMOJI)
             })
-          }), V ? (0, r.jsx)(g.zxk, {
+          }), W ? (0, r.jsx)(g.zxk, {
             onClick: Y,
             children: G.intl.string(G.t.DU0dy8)
           }) : (0, r.jsxs)(r.Fragment, {
@@ -456,7 +456,7 @@ let z = d().throttle(f.OQ, 1e3),
               }) : null]
             })]
           })]
-        }), (0, r.jsx)(W, {
+        }), (0, r.jsx)(V, {
           isLoading: null == p,
           staticEmojis: M,
           animatedEmojis: B,

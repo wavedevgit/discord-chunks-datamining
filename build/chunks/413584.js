@@ -225,7 +225,7 @@ let M = "WELCOME_CHANNEL",
       null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, C.VP)({
         channels: i
       })), n ? (U(i), g(null)) : g(t)
-    }, W = i.useRef(!1);
+    }, V = i.useRef(!1);
     (0, f.ZP)(() => (null != t && l && (0, m.ZDy)(async () => {
       let {
         default: e
@@ -237,9 +237,9 @@ let M = "WELCOME_CHANNEL",
     }, {
       onCloseRequest: () => Z.Vq
     }), () => {
-      W.current = !0
+      V.current = !0
     })), i.useEffect(() => () => {
-      if (W.current && p) {
+      if (V.current && p) {
         let e = [],
           n = [],
           r = !1;
@@ -254,8 +254,8 @@ let M = "WELCOME_CHANNEL",
           is_enabled: T
         })
       }
-    }, [p, I, N, T, t, W]), i.useEffect(() => () => (0, C.sm)(), []);
-    let V = i.useCallback(() => {
+    }, [p, I, N, T, t, V]), i.useEffect(() => () => (0, C.sm)(), []);
+    let W = i.useCallback(() => {
       null != t && P.Z.open(t.id, R.pNK.ONBOARDING)
     }, [t]);
     return null == t ? null : (0, r.jsxs)(m.hjN, {
@@ -269,7 +269,7 @@ let M = "WELCOME_CHANNEL",
             className: k.noticeIcon
           }), D.intl.format(D.t.oj2vi4, {
             onboardingLink: e => (0, r.jsx)(O.Z, {
-              onClick: V,
+              onClick: W,
               children: e
             })
           })]

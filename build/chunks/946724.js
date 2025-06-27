@@ -2,7 +2,7 @@
 "use strict";
 let r, i, l;
 n.d(t, {
-  Z: () => V,
+  Z: () => W,
   g: () => y
 }), n(388685), n(583741), n(953529);
 var s, a, o = n(392711),
@@ -134,7 +134,7 @@ let U = c().debounce(() => {
       } = e;
       return t === n
     }))) && (N.delete(t), e = !0)
-  }), 0 === N.size && (E = !1), w && c().isEqual(Z, D) && (e = !0, w = !1), e && W.emitChange()
+  }), 0 === N.size && (E = !1), w && c().isEqual(Z, D) && (e = !0, w = !1), e && V.emitChange()
 }, 500);
 
 function B(e, t) {
@@ -245,7 +245,7 @@ class H extends(s = m.ZP.Store) {
   }
 }
 C(H, "displayName", "GuildSettingsRolesStore");
-let W = new H(g.Z, __OVERLAY__ ? {} : {
+let V = new H(g.Z, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_ROLES_INIT: () => M(),
     GUILD_SETTINGS_INIT: L,
     GUILD_SETTINGS_SET_SECTION: L,
@@ -440,4 +440,4 @@ let W = new H(g.Z, __OVERLAY__ ? {} : {
       M(!1)
     }
   }),
-  V = W
+  W = V

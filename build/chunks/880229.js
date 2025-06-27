@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  C: () => W,
+  C: () => V,
   K: () => U
 }), n(388685), n(953529), n(361932), n(187205);
 var r = n(255367),
@@ -457,7 +457,7 @@ function H(e) {
   })
 }
 
-function W(e) {
+function V(e) {
   let {
     transitionState: t,
     guildId: n,

@@ -53,12 +53,12 @@ function O(e) {
   }), k = (0, a.cj)([h.Z], () => {
     var e;
     return null != (e = h.Z.errors[x]) ? e : v
-  }), [A, L] = i.useState(!1), [M, G] = i.useState(!1), U = null != (t = k.options) ? t : k.optionErrors.filter(g.lm)[0], B = k.config, F = l.options.length >= b.fY, z = (0, u.kl)(n.id, Array.from(P), [l]).length - P.size, H = i.useRef(null), W = i.useRef(x);
+  }), [A, L] = i.useState(!1), [M, G] = i.useState(!1), U = null != (t = k.options) ? t : k.optionErrors.filter(g.lm)[0], B = k.config, F = l.options.length >= b.fY, z = (0, u.kl)(n.id, Array.from(P), [l]).length - P.size, H = i.useRef(null), V = i.useRef(x);
   return (i.useEffect(() => {
-    W.current = x
+    V.current = x
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
-      if (0 === W.current && !d) {
+      if (0 === V.current && !d) {
         var e;
         null == (e = H.current) || e.focus()
       }
