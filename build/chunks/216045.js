@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(678135),
   v = n(610794),
   T = n(935147),
-  N = n(643879),
-  I = n(373230),
+  I = n(643879),
+  N = n(373230),
   y = n(246946),
   A = n(25990),
   P = n(594174),
@@ -69,7 +69,7 @@ function G() {
       }
       return r
     }(G, ["pendingBio", "pendingAvatar"]),
-    Y = (0, N.SD)({
+    Y = (0, I.SD)({
       userId: n.id,
       image: H
     }),
@@ -80,7 +80,7 @@ function G() {
       analyticsLocations: X,
       newestAnalyticsLocation: Q
     } = (0, f.ZP)(h.Z.USER_SETTINGS_USER_PROFILE),
-    J = (0, I.T)({
+    J = (0, N.T)({
       location: "UserSettingsProfileCustomization"
     }),
     $ = (0, _.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),

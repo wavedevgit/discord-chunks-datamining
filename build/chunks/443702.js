@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => N
+  Z: () => I
 });
 var i = n(255367),
   r = n(73800),
@@ -85,7 +85,7 @@ class T extends r.PureComponent {
   }
 }
 
-function N() {
+function I() {
   let e = (0, s.cj)([E.default, b.Z, _.Z, f.default, h.Z, x.ZP], () => {
     let e = x.ZP.getPremiumTypeSubscription(),
       t = f.default.getCurrentUser();

@@ -62,7 +62,7 @@ let C = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, p.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, v] = r.useState(!0), T = r.useRef(null), [N, I] = r.useState(!1), [y, A] = r.useState(!1), [P, R] = r.useState([]), [D, Z] = r.useState(C), w = r.useRef([]), [k, L] = r.useState(t.name), B = k.toLowerCase().replace(/\s+/g, "_"), M = r.useMemo(() => ({
+    } = (0, p.n6)(), s = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, v] = r.useState(!0), T = r.useRef(null), [I, N] = r.useState(!1), [y, A] = r.useState(!1), [P, R] = r.useState([]), [D, Z] = r.useState(C), w = r.useRef([]), [k, L] = r.useState(t.name), B = k.toLowerCase().replace(/\s+/g, "_"), M = r.useMemo(() => ({
       type: a.Z.PROFILE_EFFECT,
       id: O,
       skuId: O,
@@ -153,7 +153,7 @@ let C = {
         children: [(0, i.jsxs)("div", {
           className: l()(b.col, b.preview),
           children: [(0, i.jsx)("img", {
-            src: N ? _ : x,
+            src: I ? _ : x,
             alt: "",
             width: 450
           }), S && (0, i.jsx)(f.Z, {
@@ -183,10 +183,10 @@ let C = {
                 children: "Dark Theme"
               }), (0, i.jsx)("input", {
                 type: "checkbox",
-                checked: N,
+                checked: I,
                 className: b.checkBox,
                 onChange: () => {
-                  I(!N)
+                  N(!I)
                 }
               })]
             }), (0, i.jsxs)("div", {

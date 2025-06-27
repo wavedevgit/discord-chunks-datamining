@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(812206),
   v = n(835473),
   T = n(243778),
-  N = n(594190),
-  I = n(320724),
+  I = n(594190),
+  N = n(320724),
   y = n(925329),
   A = n(297700),
   P = n(444295),
@@ -270,12 +270,12 @@ function eS(e) {
         enabledOOP: null != (t = null == d ? void 0 : d.oopEnabled) && t
       }
     }
-    return (0, N.b6)(l, !1, [W.Z, q.Z])
-  }, [l, d]), p = (0, g.e7)([N.ZP, W.Z, q.Z], () => null == l ? null : (0, N.FZ)(l, [N.ZP, W.Z, q.Z]), [l], o()), [b, _] = r.useState(m), [E, S] = r.useState(u), [v, T] = r.useState(!1);
+    return (0, I.b6)(l, !1, [W.Z, q.Z])
+  }, [l, d]), p = (0, g.e7)([I.ZP, W.Z, q.Z], () => null == l ? null : (0, I.FZ)(l, [I.ZP, W.Z, q.Z]), [l], o()), [b, _] = r.useState(m), [E, S] = r.useState(u), [v, T] = r.useState(!1);
   r.useEffect(() => {
     _(m), S(u)
   }, [m, u]);
-  let I = !(0, er.supportsLegacy)(),
+  let N = !(0, er.supportsLegacy)(),
     R = !(0, er.supportsOutOfProcess)(),
     {
       legacyEnabled: D,
@@ -335,9 +335,9 @@ function eS(e) {
         (0, M.l)(s, null != (a = l.id) ? a : null)
       }
     },
-    U = I && R,
+    U = N && R,
     V = !D && !Z,
-    G = !b && !D && E && !I,
+    G = !b && !D && E && !N,
     F = !E && !Z && b && !R,
     H = (null == d ? void 0 : d.overlayMethod) === j.gl.Disabled,
     z = (null == d ? void 0 : d.state) === j.mM.OVERLAY_RENDERING && !H,
@@ -500,7 +500,7 @@ function eS(e) {
       action: (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(h.rsf, {
           checked: E && D,
-          disabled: I,
+          disabled: N,
           onChange: (e, t) => {
             e && !D ? k(e, P.AE.LEGACY, t) : k(e, P.AE.LEGACY_GAME, t)
           }
@@ -533,7 +533,7 @@ function eT(e) {
     onChange: a,
     clientSettingType: o,
     ariaLabel: c
-  } = e, d = (0, g.cj)([N.ZP, W.Z, q.Z], () => (0, N.FZ)(t, [N.ZP, W.Z, q.Z])), u = (0, g.cj)([W.Z, q.Z], () => (0, N.b6)(t, !1, [W.Z, q.Z]), [t]), m = l(u), [p, f] = r.useState(m);
+  } = e, d = (0, g.cj)([I.ZP, W.Z, q.Z], () => (0, I.FZ)(t, [I.ZP, W.Z, q.Z])), u = (0, g.cj)([W.Z, q.Z], () => (0, I.b6)(t, !1, [W.Z, q.Z]), [t]), m = l(u), [p, f] = r.useState(m);
   r.useEffect(() => {
     f(m)
   }, [m]);
@@ -563,14 +563,14 @@ function eT(e) {
   })
 }
 
-function eN() {
+function eI() {
   let [e, t] = r.useState(!1), {
     legacyEnabled: n,
     oopEnabled: s
-  } = (0, g.cj)([w.default], () => w.default.getGlobalEnabledStatus()), l = (0, g.Wu)([N.ZP], () => N.ZP.getGamesSeen(!0)), a = (0, v.Z)(l.map(e => e.id)), o = !(0, er.supportsLegacy)(), c = (e, t) => {
+  } = (0, g.cj)([w.default], () => w.default.getGlobalEnabledStatus()), l = (0, g.Wu)([I.ZP], () => I.ZP.getGamesSeen(!0)), a = (0, v.Z)(l.map(e => e.id)), o = !(0, er.supportsLegacy)(), c = (e, t) => {
     var i, r;
     eO(t), x.Z.setEnabled(e, s);
-    let l = null != (r = null == (i = N.ZP.getCurrentGameForAnalytics()) ? void 0 : i.id) ? r : null;
+    let l = null != (r = null == (i = I.ZP.getCurrentGameForAnalytics()) ? void 0 : i.id) ? r : null;
     (0, P.ou)(e, P.AE.LEGACY, l), !e && n && (0, M.l)(P.AE.LEGACY, l)
   }, d = (e, t, n) => {
     let {
@@ -635,16 +635,16 @@ function eN() {
   })
 }
 
-function eI() {
+function eN() {
   let [e, t] = r.useState(!1), {
     oopEnabled: n,
     legacyEnabled: s
-  } = (0, g.cj)([w.default], () => w.default.getGlobalEnabledStatus()), l = !(0, er.supportsOutOfProcess)(), a = (0, g.Wu)([N.ZP], () => N.ZP.getGamesSeen(!0)), o = (0, v.Z)(a.map(e => e.id)), c = (e, t) => {
+  } = (0, g.cj)([w.default], () => w.default.getGlobalEnabledStatus()), l = !(0, er.supportsOutOfProcess)(), a = (0, g.Wu)([I.ZP], () => I.ZP.getGamesSeen(!0)), o = (0, v.Z)(a.map(e => e.id)), c = (e, t) => {
     var i, r;
     eO(t);
     let l = !e && n;
     x.Z.setEnabled(s, e);
-    let a = null != (r = null == (i = N.ZP.getCurrentGameForAnalytics()) ? void 0 : i.id) ? r : null;
+    let a = null != (r = null == (i = I.ZP.getCurrentGameForAnalytics()) ? void 0 : i.id) ? r : null;
     (0, P.ou)(e, P.AE.OOP, a), l && (0, M.l)(P.AE.OOP, a)
   }, d = (e, t, n) => {
     let {
@@ -713,7 +713,7 @@ function ey() {
   let e = (0, g.e7)([Q.ZP], () => Q.ZP.getOverlayKeybind()),
     t = !(0, er.supportsLegacy)(),
     n = !(0, er.supportsOutOfProcess)(),
-    [r, s] = (0, g.Wu)([N.ZP], () => [N.ZP.canShowAdminWarning, N.ZP.getVisibleGame()], []),
+    [r, s] = (0, g.Wu)([I.ZP], () => [I.ZP.canShowAdminWarning, I.ZP.getVisibleGame()], []),
     l = null != s && s.elevated && r;
   return (0, i.jsx)(ex, {
     children: (0, i.jsx)("div", {
@@ -845,24 +845,24 @@ function eR(e) {
 }
 
 function eD() {
-  var e, t, n, s;
+  var e, t;
   let {
-    avatarSizeMode: l,
-    displayNameMode: a,
-    displayUserMode: o
+    avatarSizeMode: n,
+    displayNameMode: s,
+    displayUserMode: a
   } = (0, g.cj)([$.default], () => ({
     avatarSizeMode: $.default.getAvatarSizeMode(),
     displayNameMode: $.default.getDisplayNameMode(),
     displayUserMode: $.default.getDisplayUserMode()
-  })), c = (0, g.e7)([X.default], () => X.default.getCurrentUser()), [d] = r.useState(() => [eR(ec.intl.string(ec.t.C0ZDvr), !0, !1), eR(ec.intl.string(ec.t.iOtj8P), !1, !1, !0), eR(ec.intl.string(ec.t["0oqNgI"]), !1, !0)]), u = (0, g.e7)([B.ZP, K.Z], () => {
+  })), o = (0, g.e7)([X.default], () => X.default.getCurrentUser()), [c] = r.useState(() => [eR(ec.intl.string(ec.t.C0ZDvr), !0, !1), eR(ec.intl.string(ec.t.iOtj8P), !1, !1, !0), eR(ec.intl.string(ec.t["0oqNgI"]), !1, !0)]), d = (0, g.e7)([B.ZP, K.Z], () => {
     let e = B.ZP.getWidgetByType(es.Odu.VOICE_V3);
     if (null == e) return null;
     let t = K.Z.getWidget(e.id);
     return null != t && (0, U.Aw)(t) ? t : null
-  }), m = null != (t = null == u || null == (e = u.meta) ? void 0 : e.voiceStatesMaxShown) ? t : eo.At, p = [null != c ? function(e) {
+  }), u = null != (t = null == d || null == (e = d.meta) ? void 0 : e.voiceStatesMaxShown) ? t : eo.At, m = [null != o ? function(e) {
     let t = eR(e.username);
     return t.user = e, t
-  }(c) : null, ...d].filter(et.lm), f = [new Map(p.map(e => [e.user.id, e])), p.map(e => e.user.id)];
+  }(o) : null, ...c].filter(et.lm), p = [new Map(m.map(e => [e.user.id, e])), m.map(e => e.user.id)], f = es.BRd.MIDNIGHT;
   return (0, i.jsxs)("div", {
     className: ed.voiceSettingsContainer,
     children: [(0, i.jsx)(ex, {
@@ -877,7 +877,7 @@ function eD() {
         }],
         className: ed.select,
         onChange: e => x.Z.setAvatarSizeMode(e),
-        value: l
+        value: n
       })
     }), (0, i.jsx)(ex, {
       title: ec.intl.string(ec.t.J0dpcH),
@@ -894,46 +894,52 @@ function eD() {
         }],
         className: ed.select,
         onChange: e => x.Z.setDisplayNameMode(e),
-        value: a
+        value: s
       })
-    }), (0, i.jsxs)("div", {
-      className: ed.widgetContainer,
-      children: [(0, i.jsx)("div", {
-        className: ed.voiceWidgetContainer,
-        children: (0, i.jsx)(V.kI, {
-          id: "voice-widget",
-          title: ec.intl.string(ec.t.KNJ6Vl),
-          channel: (0, F.kt)({
-            id: "123",
-            name: "Test Channel",
-            type: es.d4z.GUILD_VOICE,
-            guild_id: "456"
-          }),
-          overlayVoiceStates: f,
-          displayNameMode: a,
-          displayUserMode: o,
-          avatarSizeMode: l,
-          widget: es.Odu.VOICE,
-          anchorLeft: !0,
-          application: null,
-          stream: null,
-          streamApplication: null,
-          streamMetadata: null,
-          locked: !1,
-          pinned: !1,
-          isSettingsPreview: !0,
-          isPreviewingInGame: !1,
-          maxDisplayedVoiceStates: m
+    }), (0, i.jsx)(h.f6W, {
+      theme: f,
+      children: e => {
+        var t, r;
+        return (0, i.jsxs)("div", {
+          className: l()(ed.widgetContainer, e),
+          children: [(0, i.jsx)("div", {
+            className: ed.voiceWidgetContainer,
+            children: (0, i.jsx)(V.kI, {
+              id: "voice-widget",
+              title: ec.intl.string(ec.t.KNJ6Vl),
+              channel: (0, F.kt)({
+                id: "123",
+                name: "Test Channel",
+                type: es.d4z.GUILD_VOICE,
+                guild_id: "456"
+              }),
+              overlayVoiceStates: p,
+              displayNameMode: s,
+              displayUserMode: a,
+              avatarSizeMode: n,
+              widget: es.Odu.VOICE,
+              anchorLeft: !0,
+              application: null,
+              stream: null,
+              streamApplication: null,
+              streamMetadata: null,
+              locked: !1,
+              pinned: !1,
+              isSettingsPreview: !0,
+              isPreviewingInGame: !1,
+              maxDisplayedVoiceStates: u
+            })
+          }), (0, i.jsxs)("div", {
+            className: ed.widgetHeaderContainer,
+            children: [(0, i.jsx)(G.PI, {
+              children: ec.intl.string(ec.t.KNJ6Vl)
+            }), (0, i.jsx)(G.ls, {}), (0, i.jsx)(G.RT, {
+              id: null != (t = null == d ? void 0 : d.id) ? t : "voice-widget",
+              pinned: null != (r = null == d ? void 0 : d.pinned) && r
+            })]
+          })]
         })
-      }), (0, i.jsxs)("div", {
-        className: ed.widgetHeaderContainer,
-        children: [(0, i.jsx)(G.PI, {
-          children: ec.intl.string(ec.t.KNJ6Vl)
-        }), (0, i.jsx)(G.ls, {}), (0, i.jsx)(G.RT, {
-          id: null != (n = null == u ? void 0 : u.id) ? n : "voice-widget",
-          pinned: null != (s = null == u ? void 0 : u.pinned) && s
-        })]
-      })]
+      }
     }), (0, i.jsx)(ex, {
       title: ec.intl.string(ec.t.swsWWF),
       children: (0, i.jsx)(h.q4e, {
@@ -946,7 +952,7 @@ function eD() {
         }],
         className: ed.select,
         onChange: e => x.Z.setDisplayUserMode(e),
-        value: o
+        value: a
       })
     }), (0, i.jsx)(ex, {
       title: ec.intl.string(ec.t["X/Uyzc"]),
@@ -954,14 +960,14 @@ function eD() {
       children: (0, i.jsx)("div", {
         className: ed.sliderContainer,
         children: (0, i.jsx)(h.iRW, {
-          initialValue: m,
+          initialValue: u,
           onValueRender: e => e < 1 ? ec.intl.string(ec.t.nrUzFB) : "".concat(Math.floor(e)),
           minValue: 0,
           maxValue: 25,
           onValueChange: function(e) {
-            null != u && (e < 1 ? (0, _.zG)(u.id, {
+            null != d && (e < 1 ? (0, _.zG)(d.id, {
               voiceStatesMaxShown: eo.Og
-            }) : (0, _.zG)(u.id, {
+            }) : (0, _.zG)(d.id, {
               voiceStatesMaxShown: Math.floor(e)
             }))
           },
@@ -1097,8 +1103,8 @@ function ek(e) {
     runningGameApplication: s
   } = function() {
     let e = (0, g.e7)([Y.Z], () => Y.Z.getStreamerActiveStreamMetadata()),
-      t = (0, g.e7)([N.ZP], () => {
-        let e = N.ZP.getVisibleGame();
+      t = (0, g.e7)([I.ZP], () => {
+        let e = I.ZP.getVisibleGame();
         return null == e ? null : e
       }, [], o()),
       [n] = (0, v.Z)([null != e && null != e.id ? e.id : null != t && null != t.id ? t.id : void 0]);
@@ -1108,7 +1114,7 @@ function ek(e) {
     }
   }(), l = (0, D.o4)("user_settings").overlayV3UI, a = (0, g.e7)([X.default], () => X.default.getCurrentUser());
   (0, O.ZP)(() => {
-    if (en.isPlatformEmbedded) return (0, I.Ky)(), I.P7
+    if (en.isPlatformEmbedded) return (0, N.Ky)(), N.P7
   });
   let c = e_(eh);
   return (m().isEqual(c, eh) || (ee.default.track(es.rMx.OVERLAY_SETTINGS_UPDATED, c), eh = c), null == a) ? null : (0, i.jsxs)(i.Fragment, {
@@ -1120,7 +1126,7 @@ function ek(e) {
         children: [(0, i.jsx)(eS, {
           runningGame: r,
           runningGameApplication: s
-        }), (0, i.jsx)(eI, {}), (0, i.jsx)(eN, {})]
+        }), (0, i.jsx)(eN, {}), (0, i.jsx)(eI, {})]
       }), (0, i.jsx)("div", {
         className: ed.settingsDivider
       })]

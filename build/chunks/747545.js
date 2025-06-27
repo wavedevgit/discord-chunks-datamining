@@ -1,7 +1,7 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  S: () => N,
-  Z: () => I
+  S: () => I,
+  Z: () => N
 }), n(704826), n(35282), n(415506), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -28,7 +28,7 @@ var i = n(255367),
   v = n(602985);
 let T = /\{65E8773D-8F56-11D0-A3B9-00A0C9223196\}/i;
 
-function N() {
+function I() {
   let [e, t] = r.useState(!1), n = (0, c.e7)([x.Z], () => x.Z.isMediaFilterSettingLoading());
   return (r.useEffect(() => {
     let e = new d.V7;
@@ -41,7 +41,7 @@ function N() {
   }) : null
 }
 
-function I(e) {
+function N(e) {
   let {
     hideDeviceSelector: t = !1,
     hideDeviceHeader: n = !1,
@@ -49,8 +49,8 @@ function I(e) {
     onLearnMore: s,
     selectedBackgroundOption: a,
     onSelectBackgroundOption: d,
-    renderCamera: N,
-    hidePreviewToggle: I = !1,
+    renderCamera: I,
+    hidePreviewToggle: N = !1,
     showSmallBackgroundOptions: y = !1,
     onCancelPreview: A
   } = e, {
@@ -72,14 +72,14 @@ function I(e) {
     }
   });
   return (0, i.jsxs)(i.Fragment, {
-    children: [N(R), x.Z.isEnabled() ? null : (0, i.jsx)(u.Text, {
+    children: [I(R), x.Z.isEnabled() ? null : (0, i.jsx)(u.Text, {
       className: v.permissionWarning,
       color: "interactive-normal",
       variant: "text-sm/normal",
       children: S.intl.format(S.t.stagfH, {
         onEnableClick: () => m.Z.enable(!0)
       })
-    }), I ? null : (0, i.jsx)(u.j7V, {
+    }), N ? null : (0, i.jsx)(u.j7V, {
       className: v.previewToggle,
       note: S.intl.string(S.t.WNbX4O),
       onChange: e => {
