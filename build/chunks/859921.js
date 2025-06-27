@@ -1,6 +1,6 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 97870 **/
 n.d(t, {
-  Z: () => l
+  Z: () => i
 });
 var a = n(972959);
 let r = Object.freeze({
@@ -9,4 +9,4 @@ let r = Object.freeze({
     entrypoint: null,
     searchBarState: n(49898).GlobalDiscoverySearchBarState.DEFAULT
   }),
-  l = (0, a.H)(() => r)
+  i = (0, a.H)(() => r)

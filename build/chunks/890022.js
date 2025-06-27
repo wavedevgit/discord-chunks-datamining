@@ -1,13 +1,13 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 97870 **/
 n.d(t, {
-  X: () => s,
-  _x: () => c,
-  uw: () => o
+  X: () => c,
+  _x: () => s,
+  uw: () => l
 });
 var a = n(818083),
   r = n(752048),
-  l = n(699516);
-let i = (0, a.B)({
+  i = n(699516);
+let o = (0, a.B)({
   kind: "user",
   id: "2025-04_game_activity_notification",
   label: "Game Activity Notifications",
@@ -29,8 +29,8 @@ let i = (0, a.B)({
   }]
 });
 
-function s(e) {
-  switch (i.getCurrentConfig({
+function c(e) {
+  switch (o.getCurrentConfig({
       location: "filterPresences"
     }).fromUserType) {
     case 2:
@@ -40,28 +40,28 @@ function s(e) {
         let {
           user: t
         } = e;
-        return l.Z.isFriend(t.id)
+        return i.Z.isFriend(t.id)
       });
     case 1:
       return e.filter(e => {
         let {
           user: t
         } = e;
-        return l.Z.isFriend(t.id) || r.Z.isHighlyAffinedVCUser(t.id)
+        return i.Z.isFriend(t.id) || r.Z.isHighlyAffinedVCUser(t.id)
       });
     default:
       return e
   }
 }
 
-function o(e) {
-  return 2 !== i.getCurrentConfig({
+function l(e) {
+  return 2 !== o.getCurrentConfig({
     location: e
   }).fromUserType
 }
 
-function c(e) {
-  return 2 !== i.useExperiment({
+function s(e) {
+  return 2 !== o.useExperiment({
     location: e
   }).fromUserType
 }

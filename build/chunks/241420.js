@@ -1,37 +1,37 @@
-/** Chunk was on 92241 **/
-t.d(n, {
-  default: () => b
+/** Chunk was on 97870 **/
+n.d(t, {
+  default: () => m
 });
-var i = t(255367);
-t(73800);
-var o = t(481060),
-  l = t(546957),
-  a = t(190014),
-  c = t(301812),
-  r = t(988043),
-  _ = t(919539),
-  u = t(526761),
-  d = t(388032),
-  s = t(671364);
+var a = n(255367);
+n(73800);
+var r = n(481060),
+  i = n(546957),
+  o = n(190014),
+  c = n(301812),
+  l = n(988043),
+  s = n(919539),
+  u = n(526761),
+  d = n(388032),
+  _ = n(671364);
 
 function p(e) {
   let {
-    guildId: n
+    guildId: t
   } = e;
-  return (0, i.jsxs)(l.Z, {
-    children: [(0, i.jsx)(r.Z, {
+  return (0, a.jsxs)(i.Z, {
+    children: [(0, a.jsx)(l.Z, {
       ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: n
-    }), (0, i.jsx)(_.Z, {
+      guildId: t
+    }), (0, a.jsx)(s.Z, {
       ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: n
-    }), (0, i.jsx)(c.Z, {
+      guildId: t
+    }), (0, a.jsx)(c.Z, {
       ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: n
-    }), (0, i.jsx)(a.Z, {
+      guildId: t
+    }), (0, a.jsx)(o.Z, {
       ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: n
-    }), (0, i.jsx)(o.Text, {
+      guildId: t
+    }), (0, a.jsx)(r.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
       children: d.intl.format(d.t.LNsV09, {
@@ -41,30 +41,30 @@ function p(e) {
   })
 }
 
-function b(e) {
+function m(e) {
   let {
-    guild: n,
-    transitionState: t,
-    onClose: l
-  } = e, a = "".concat(d.intl.string(d.t.BayiAg), "—").concat(null != n ? n.toString() : "??");
-  return (0, i.jsxs)(o.Y0X, {
-    transitionState: t,
-    size: o.CgR.SMALL,
-    "aria-label": a,
+    guild: t,
+    transitionState: n,
+    onClose: i
+  } = e, o = "".concat(d.intl.string(d.t.BayiAg), "—").concat(null != t ? t.toString() : "??");
+  return (0, a.jsxs)(r.Y0X, {
+    transitionState: n,
+    size: r.CgR.SMALL,
+    "aria-label": o,
     parentComponent: "PrivacySettings",
-    children: [(0, i.jsx)(o.xBx, {
-      children: (0, i.jsx)(o.X6q, {
+    children: [(0, a.jsx)(r.xBx, {
+      children: (0, a.jsx)(r.X6q, {
         variant: "heading-lg/semibold",
-        children: a
+        children: o
       })
-    }), (0, i.jsx)(o.hzk, {
-      className: s.content,
-      children: (0, i.jsx)(p, {
-        guildId: n.id
+    }), (0, a.jsx)(r.hzk, {
+      className: _.content,
+      children: (0, a.jsx)(p, {
+        guildId: t.id
       })
-    }), (0, i.jsx)(o.mzw, {
-      children: (0, i.jsx)(o.zxk, {
-        onClick: () => l(),
+    }), (0, a.jsx)(r.mzw, {
+      children: (0, a.jsx)(r.zxk, {
+        onClick: () => i(),
         children: d.intl.string(d.t.i4jeWV)
       })
     })]

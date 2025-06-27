@@ -1,4 +1,4 @@
-/** Chunk was on 32325 **/
+/** Chunk was on 52495 **/
 n.r(t), n.d(t, {
   default: () => S
 }), n(388685);
@@ -52,7 +52,7 @@ let S = (0, c.Z)((0, l.Z)(function(e) {
     channel: t,
     selected: l,
     onSelect: c
-  } = e, S = t.isOwner(E.default.getId()), A = (0, P.Z)(t), Z = (0, I.ZP)(t), U = (0, T.Uf)(C.aIL, t.id, "top"), w = (0, j.Z)(t, l), x = (0, b.Z)({
+  } = e, S = t.isOwner(E.default.getId()), A = (0, P.Z)(t), U = (0, I.ZP)(t), Z = (0, T.Uf)(C.aIL, t.id, "top"), w = (0, j.Z)(t, l), x = (0, b.Z)({
     id: t.id,
     label: m.intl.string(m.t.gFHI3t)
   }), M = (0, s.Z)(t), D = (0, p.l)(t), R = (0, p.P)(t), k = (0, O.Z)(t), F = (0, _.Z)(t), G = (0, d.D)(t), {
@@ -142,7 +142,7 @@ let S = (0, c.Z)((0, l.Z)(function(e) {
     }), (0, i.jsx)(r.kSQ, {
       children: M
     }), (0, i.jsxs)(r.kSQ, {
-      children: [Z, U]
+      children: [U, Z]
     }), (0, i.jsx)(r.kSQ, {
       children: w
     }), (0, i.jsx)(r.kSQ, {

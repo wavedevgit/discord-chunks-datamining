@@ -1,54 +1,54 @@
-/** Chunk was on 32325 **/
-n.d(t, {
-  Z: () => c
+/** Chunk was on 89149 **/
+n.d(e, {
+  Z: () => u
 });
-var i = n(255367);
+var r = n(255367);
 n(73800);
-var r = n(120356),
-  o = n.n(r),
+var i = n(120356),
+  l = n.n(i),
   a = n(481060),
-  l = n(482107);
+  o = n(482107);
 
-function c(e) {
+function u(t) {
   var {
-    className: t,
+    className: e,
     color: n
-  } = e, r = function(e, t) {
-    if (null == e) return {};
-    var n, i, r = function(e, t) {
-      if (null == e) return {};
-      var n, i, r = {},
-        o = Object.keys(e);
-      for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-      return r
-    }(e, t);
+  } = t, i = function(t, e) {
+    if (null == t) return {};
+    var n, r, i = function(t, e) {
+      if (null == t) return {};
+      var n, r, i = {},
+        l = Object.keys(t);
+      for (r = 0; r < l.length; r++) n = l[r], e.indexOf(n) >= 0 || (i[n] = t[n]);
+      return i
+    }(t, e);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var l = Object.getOwnPropertySymbols(t);
+      for (r = 0; r < l.length; r++) n = l[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (i[n] = t[n])
     }
-    return r
-  }(e, ["className", "color"]);
-  return (0, i.jsx)(a.Text, function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = n[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
+    return i
+  }(t, ["className", "color"]);
+  return (0, r.jsx)(a.Text, function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var n = null != arguments[e] ? arguments[e] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+        return Object.getOwnPropertyDescriptor(n, t).enumerable
+      }))), r.forEach(function(e) {
+        var r;
+        r = n[e], e in t ? Object.defineProperty(t, e, {
+          value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = i
+        }) : t[e] = r
       })
     }
-    return e
+    return t
   }({
-    className: o()({
-      [l.text]: null == n
-    }, t),
+    className: l()({
+      [o.text]: null == n
+    }, e),
     color: n
-  }, r))
+  }, i))
 }

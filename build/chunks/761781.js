@@ -1,30 +1,30 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 97870 **/
 n.d(t, {
-  Z: () => m
+  Z: () => _
 }), n(388685);
-var a, r, l, i = n(442837),
-  s = n(570140),
-  o = n(890022);
-let c = new Set;
+var a, r, i, o = n(442837),
+  c = n(570140),
+  l = n(890022);
+let s = new Set;
 
-function d(e) {
+function u(e) {
   let {
     userActivities: t
   } = e;
-  (0, o.uw)("RecentUserActivityStore") && null != t && (c = new Set(t.map(e => e.application_id)))
+  (0, l.uw)("RecentUserActivityStore") && null != t && (s = new Set(t.map(e => e.application_id)))
 }
-class u extends(a = i.ZP.Store) {
+class d extends(a = o.ZP.Store) {
   get currentUserApplicationIds() {
-    return c
+    return s
   }
 }
-l = "RecentUserActivityStore", (r = "displayName") in u ? Object.defineProperty(u, r, {
-  value: l,
+i = "RecentUserActivityStore", (r = "displayName") in d ? Object.defineProperty(d, r, {
+  value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : u[r] = l;
-let m = new u(s.Z, {
-  CONNECTION_OPEN_SUPPLEMENTAL: d,
-  CONNECTION_OPEN_STATE_UPDATE: d
+}) : d[r] = i;
+let _ = new d(c.Z, {
+  CONNECTION_OPEN_SUPPLEMENTAL: u,
+  CONNECTION_OPEN_STATE_UPDATE: u
 })
