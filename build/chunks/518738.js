@@ -1,21 +1,22 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Kz: () => s,
-  oC: () => c,
-  p9: () => l
+  Kz: () => l,
+  oC: () => u,
+  p9: () => c
 });
 var r = n(73800),
   i = n(442837),
-  a = n(430824),
-  o = n(829883);
+  a = n(485386),
+  o = n(430824),
+  s = n(829883);
 
-function s(e, t) {
+function l(e, t) {
   var n;
   let {
     customIconSrc: r,
     unicodeEmoji: i
-  } = null != (n = (0, o.zy)(e, t)) ? n : {};
+  } = null != (n = (0, s.zy)(e, t)) ? n : {};
   if (null != r || null != i) return {
     src: r,
     name: e.name,
@@ -25,26 +26,26 @@ function s(e, t) {
   }
 }
 
-function l(e) {
+function c(e) {
   let {
     guildId: t,
     roleId: n,
-    size: l = 20
+    size: c = 20
   } = e, {
-    guild: c,
-    roles: u
-  } = (0, i.cj)([a.Z], () => ({
-    guild: a.Z.getGuild(t),
+    guild: u,
+    roles: d
+  } = (0, i.cj)([o.Z, a.Z], () => ({
+    guild: o.Z.getGuild(t),
     roles: a.Z.getRoles(t)
   }), [t]);
   return r.useMemo(() => {
-    if (null == c || null == n) return;
-    let e = u[n];
-    if ((0, o._b)(c, e)) return s(e, l)
-  }, [c, u, n, l])
+    if (null == u || null == n) return;
+    let e = d[n];
+    if ((0, s._b)(u, e)) return l(e, c)
+  }, [u, d, n, c])
 }
 
-function c(e, t) {
-  let n = (0, i.e7)([a.Z], () => a.Z.getGuild(e));
-  if (null != n && (0, o._b)(n, t)) return s(t)
+function u(e, t) {
+  let n = (0, i.e7)([o.Z], () => o.Z.getGuild(e));
+  if (null != n && (0, s._b)(n, t)) return l(t)
 }

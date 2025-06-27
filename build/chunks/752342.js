@@ -49,7 +49,7 @@ function N(e) {
     name: Y
   }), {
     analyticsLocations: F
-  } = (0, s.ZP)([...B, o.Z.USER_PROFILE_MODAL]), W = (0, c.ZB)({
+  } = (0, s.ZP)([...B, o.Z.USER_PROFILE_MODAL]), z = (0, c.ZB)({
     layout: "MODAL",
     userId: n.id,
     sourceSessionId: _,
@@ -57,11 +57,11 @@ function N(e) {
     channelId: A,
     messageId: C,
     roleId: w
-  }), z = (0, I.Z)(n);
+  }), W = (0, I.Z)(n);
   return (0, l.jsx)(s.Gt, {
     value: F,
     children: (0, l.jsx)(c.Mt, {
-      value: W,
+      value: z,
       openedAt: L,
       fetchStartedAt: null == G ? void 0 : G.fetchStartedAt,
       fetchEndedAt: null == G ? void 0 : G.fetchEndedAt,
@@ -144,7 +144,7 @@ function N(e) {
               currentUser: t,
               displayProfile: G,
               guildId: k,
-              items: z,
+              items: W,
               initialSection: null != R ? R : P.oh.BOT_INFO,
               initialSubsection: M,
               onClose: D

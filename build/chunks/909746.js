@@ -54,8 +54,8 @@ var r = n(654861),
   g = n(926491),
   f = n(387667),
   S = n(592125),
-  p = n(430824),
-  h = n(699516),
+  h = n(485386),
+  p = n(699516),
   U = n(594174),
   L = n(55935),
   D = n(630388),
@@ -1004,11 +1004,11 @@ function ef(e, t) {
             return t;
           case v.KFR.CHANNEL:
           case v.KFR.CHANNEL_OVERWRITE:
-            return eU(e, v.zUn.NAME, e => S.Z.getChannel(e), e => (0, d.F6)(e, U.default, h.Z, !0));
+            return eU(e, v.zUn.NAME, e => S.Z.getChannel(e), e => (0, d.F6)(e, U.default, p.Z, !0));
           case v.KFR.USER:
             return eU(e, v.zUn.NICK, e => U.default.getUser(e), e => e);
           case v.KFR.ROLE:
-            return eU(e, v.zUn.NAME, e => p.Z.getRole(t.id, e), e => e.name);
+            return eU(e, v.zUn.NAME, e => h.Z.getRole(t.id, e), e => e.name);
           case v.KFR.ONBOARDING_PROMPT:
             let n = eU(e, v.zUn.ID, e => O.Z.getOnboardingPrompt(e), e => e.title);
             return null == n || "" === n ? j.intl.string(j.t.ZNQyiY) : n;
@@ -1055,7 +1055,7 @@ function ef(e, t) {
           case v.KFR.HOME_SETTINGS:
             return eU(e, v.zUn.GUILD_ID, e => N.Z.getSettings(e), () => j.intl.string(j.t.VbpLyc), t.id);
           case v.KFR.VOICE_CHANNEL_STATUS:
-            return eU(e, v.zUn.STATUS, e => S.Z.getChannel(e), e => (0, d.F6)(e, U.default, h.Z, !0));
+            return eU(e, v.zUn.STATUS, e => S.Z.getChannel(e), e => (0, d.F6)(e, U.default, p.Z, !0));
           default:
             return F.warn("Unknown targetType for log", e), null
         }
@@ -1089,35 +1089,35 @@ function ef(e, t) {
               let t = e.newValue || e.oldValue;
               switch (t.type) {
                 case v.ecB.ROLE:
-                  e.subtarget = eL(t.id, e => p.Z.getRole(n.id, e), e => e.name);
+                  e.subtarget = eL(t.id, e => h.Z.getRole(n.id, e), e => e.name);
                   break;
                 case v.ecB.USER:
                   e.subtarget = eL(t.id, e => U.default.getUser(e), e => e.tag);
                   break;
                 case v.ecB.CHANNEL:
-                  t.id === l()(n.id).subtract(1).toString() ? e.subtarget = j.intl.string(j.t.MSYhgo) : e.subtarget = eL(t.id, e => S.Z.getChannel(e), e => (0, d.F6)(e, U.default, h.Z, !0))
+                  t.id === l()(n.id).subtract(1).toString() ? e.subtarget = j.intl.string(j.t.MSYhgo) : e.subtarget = eL(t.id, e => S.Z.getChannel(e), e => (0, d.F6)(e, U.default, p.Z, !0))
               }
               return e
             }
             switch (e.key) {
               case v.zUn.OWNER_ID:
-                return eh(e, e => U.default.getUser(e));
+                return ep(e, e => U.default.getUser(e));
               case v.zUn.CHANNEL_ID:
               case v.zUn.AFK_CHANNEL_ID:
               case v.zUn.SYSTEM_CHANNEL_ID:
               case v.zUn.RULES_CHANNEL_ID:
               case v.zUn.PUBLIC_UPDATES_CHANNEL_ID:
-                return eh(e, e => S.Z.getChannel(e), e => (0, d.F6)(e, U.default, h.Z, !0));
+                return ep(e, e => S.Z.getChannel(e), e => (0, d.F6)(e, U.default, p.Z, !0));
               case v.zUn.AFK_TIMEOUT:
-                return eh(e, e => e / 60);
+                return ep(e, e => e / 60);
               case v.zUn.BITRATE:
-                return eh(e, e => e / 1e3);
+                return ep(e, e => e / 1e3);
               case v.zUn.COLOR:
-                return eh(e, e => (0, c.Rf)(e).toUpperCase());
+                return ep(e, e => (0, c.Rf)(e).toUpperCase());
               case v.zUn.THEME_COLORS:
-                return eh(e, e => "".concat((0, c.Rf)(e[0]).toUpperCase(), ", ").concat((0, c.Rf)(e[1]).toUpperCase()));
+                return ep(e, e => "".concat((0, c.Rf)(e[0]).toUpperCase(), ", ").concat((0, c.Rf)(e[1]).toUpperCase()));
               case v.zUn.MAX_AGE:
-                return eh(e, e => {
+                return ep(e, e => {
                   let t = C.ZP.getMaxAgeOptions.find(t => {
                     let {
                       value: n
@@ -1191,12 +1191,12 @@ function ef(e, t) {
                 return t
               }
               case v.zUn.PREFERRED_LOCALE:
-                return eh(e, e => {
+                return ep(e, e => {
                   let t = (0, j.getAvailableLocales)().find(t => t.value === e);
                   return null != t ? t.name : null
                 });
               case v.zUn.VIDEO_QUALITY_MODE:
-                return eh(e, e => e === v.Ucd.FULL ? j.intl.string(j.t["7jOoJC"]) : j.intl.string(j.t.jjKYpq));
+                return ep(e, e => e === v.Ucd.FULL ? j.intl.string(j.t["7jOoJC"]) : j.intl.string(j.t.jjKYpq));
               case v.zUn.SYSTEM_CHANNEL_FLAGS:
                 let r = {
                     [v.xmn.SUPPRESS_JOIN_NOTIFICATIONS]: v.zUn.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATIONS,
@@ -1213,16 +1213,16 @@ function ef(e, t) {
                   s.push(i)
                 }), s;
               case v.zUn.AUTO_MODERATION_ACTIONS:
-                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return eh(e, e => e.map(e => e.type), e => e.map(I.ZF).join(", "));
+                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return ep(e, e => e.map(e => e.type), e => e.map(I.ZF).join(", "));
                 break;
               case v.zUn.AUTO_MODERATION_EVENT_TYPE:
-                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return eh(e, I.YN);
+                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return ep(e, I.YN);
                 break;
               case v.zUn.AUTO_MODERATION_TRIGGER_TYPE:
-                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return eh(e, I.Ar);
+                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return ep(e, I.Ar);
                 break;
               case v.zUn.AUTO_MODERATION_TRIGGER_METADATA:
-                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return eh(e, e => null != e && "object" == typeof e ? null != e.keyword_filter && Array.isArray(e.keyword_filter) ? j.intl.formatToMarkdownString(j.t.y91UXV, {
+                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return ep(e, e => null != e && "object" == typeof e ? null != e.keyword_filter && Array.isArray(e.keyword_filter) ? j.intl.formatToMarkdownString(j.t.y91UXV, {
                   newValue: e.keyword_filter.map(e => "'".concat(e, "'")).join(", ")
                 }) : JSON.stringify(e) : e);
                 break;
@@ -1232,13 +1232,13 @@ function ef(e, t) {
               case v.zUn.AUTO_MODERATION_REMOVE_REGEX_PATTERNS:
               case v.zUn.AUTO_MODERATION_ADD_ALLOW_LIST:
               case v.zUn.AUTO_MODERATION_REMOVE_ALLOW_LIST:
-                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return eh(e, e => null != e && Array.isArray(e) ? e.map(e => "'".concat(e, "'")).join(", ") : JSON.stringify(e));
+                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return ep(e, e => null != e && Array.isArray(e) ? e.map(e => "'".concat(e, "'")).join(", ") : JSON.stringify(e));
                 break;
               case v.zUn.AUTO_MODERATION_EXEMPT_CHANNELS:
-                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return eh(e, e => e.map(S.Z.getChannel).filter(e => null != e).map(e => (0, d.F6)(e, U.default, h.Z, !0)), e => null != e && e.length > 0 ? e.join(", ") : j.intl.string(j.t["K/EdV1"]));
+                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return ep(e, e => e.map(S.Z.getChannel).filter(e => null != e).map(e => (0, d.F6)(e, U.default, p.Z, !0)), e => null != e && e.length > 0 ? e.join(", ") : j.intl.string(j.t["K/EdV1"]));
                 break;
               case v.zUn.AUTO_MODERATION_EXEMPT_ROLES:
-                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return eh(e, e => e.map(e => p.Z.getRole(n.id, e)).filter(e => null != e).map(e => e.name), e => null != e && e.length > 0 ? e.join(", ") : j.intl.string(j.t["K/EdV1"]));
+                if (t.targetType === v.KFR.AUTO_MODERATION_RULE) return ep(e, e => e.map(e => h.Z.getRole(n.id, e)).filter(e => null != e).map(e => e.name), e => null != e && e.length > 0 ? e.join(", ") : j.intl.string(j.t["K/EdV1"]));
                 break;
               case v.zUn.AVAILABLE_TAGS:
                 return function(e) {
@@ -1255,22 +1255,22 @@ function ef(e, t) {
                       i[e.id] = e
                     }), r.length < l.length) {
                     for (let e in i)
-                      if (null == s[e]) return new f.ms(v.zUn.AVAILABLE_TAG_ADD, null, ep(i[e]))
+                      if (null == s[e]) return new f.ms(v.zUn.AVAILABLE_TAG_ADD, null, eh(i[e]))
                   }
                   if (r.length > l.length) {
                     for (let e in s)
-                      if (null == i[e]) return new f.ms(v.zUn.AVAILABLE_TAG_DELETE, null, ep(s[e]))
+                      if (null == i[e]) return new f.ms(v.zUn.AVAILABLE_TAG_DELETE, null, eh(s[e]))
                   }
                   for (let e in s) {
                     let t = s[e],
                       n = i[e];
-                    if ((null == n ? void 0 : n.name) !== t.name || (null == n ? void 0 : n.emoji_id) !== t.emoji_id || (null == n ? void 0 : n.emoji_name) !== t.emoji_name) return new f.ms(v.zUn.AVAILABLE_TAG_EDIT, ep(t), ep(n))
+                    if ((null == n ? void 0 : n.name) !== t.name || (null == n ? void 0 : n.emoji_id) !== t.emoji_id || (null == n ? void 0 : n.emoji_name) !== t.emoji_name) return new f.ms(v.zUn.AVAILABLE_TAG_EDIT, eh(t), eh(n))
                   }
                   return e
                 }(e);
               case v.zUn.SCHEDULED_START_TIME:
               case v.zUn.SCHEDULED_END_TIME:
-                return eh(e, e => (0, L.vc)(i()(new Date(e)), "LLLL"))
+                return ep(e, e => (0, L.vc)(i()(new Date(e)), "LLLL"))
             }
             return e
           }(r, e, t);
@@ -1299,7 +1299,7 @@ function eS(e, t) {
   }
 }
 
-function ep(e) {
+function eh(e) {
   return null == e ? null : {
     id: e.id,
     name: e.name,
@@ -1309,7 +1309,7 @@ function ep(e) {
   }
 }
 
-function eh(e, t, n) {
+function ep(e, t, n) {
   let r = e.newValue,
     l = e.oldValue;
   return null != e.newValue && (r = t(e.newValue), null != n && null != r && (r = n(r))), null != e.oldValue && (l = t(e.oldValue), null != n && null != l && (l = n(l))), new f.ms(e.key, l || e.oldValue, r || e.newValue)

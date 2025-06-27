@@ -278,8 +278,7 @@ function b(e) {
 
 function y(e) {
   var t;
-  for (let n in null != e.joinedAt && (e.joinedAt = new Date(e.joinedAt)), e.features = new Set(null != (t = e.features) ? t : []), e.roles)(0, s.cf)(e.roles[n]);
-  return (0, a.gh)(e, o.ZP)
+  return null != e.joinedAt && (e.joinedAt = new Date(e.joinedAt)), e.features = new Set(null != (t = e.features) ? t : []), (0, a.gh)(e, o.ZP)
 }
 
 function O(e, t, n, r) {
