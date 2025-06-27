@@ -1,6 +1,6 @@
 /**
   Module ID: 19577
-  Original File Name: b20d702b30172200
+  Original File Name: ba4a5a2ffac9f3f4
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -270,6 +270,7 @@
 
 .membersGroup_c8ffbb {
     height: auto;
+    overflow: hidden;
     padding: var(--space-lg) var(--space-xxs) var(--space-xxs) var(--space-md)
 }
 
@@ -14400,4 +14401,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=b20d702b30172200.css.map*/
+/*# sourceMappingURL=ba4a5a2ffac9f3f4.css.map*/
