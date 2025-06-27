@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 1f9fa8e586de961f
+  Original File Name: 2f030c71f8ca1f7c
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -1672,105 +1672,4 @@
     cursor: pointer
 }
 
-.snowflake_ca9710 {
-    color: var(--white-500);
-    cursor: default;
-    font-size: 16px;
-    pointer-events: none;
-    position: fixed;
-    text-shadow: 0 0 5px var(--black-500);
-    top: -10%;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none
-}
-
-.full-motion .snowflake_ca9710 {
-    animation-duration: 10s,3s;
-    animation-iteration-count: infinite,infinite;
-    animation-name: snowflakes-fall_ca9710,snowflakes-shake_ca9710;
-    animation-play-state: running,running;
-    animation-timing-function: linear,ease-in-out
-}
-
-@keyframes snowflakes-fall_ca9710 {
-    0% {
-        top: -10%
-    }
-
-    to {
-        top: 100%
-    }
-}
-
-@keyframes snowflakes-shake_ca9710 {
-    0%,to {
-        transform: translateX(0)
-    }
-
-    50% {
-        transform: translateX(80px)
-    }
-}
-
-.snowflake_ca9710:nth-of-type(0) {
-    animation-delay: 0s,0s;
-    left: 1%
-}
-
-.snowflake_ca9710:first-of-type {
-    animation-delay: 1s,1s;
-    left: 10%
-}
-
-.snowflake_ca9710:nth-of-type(2) {
-    animation-delay: 6s,.5s;
-    left: 20%
-}
-
-.snowflake_ca9710:nth-of-type(3) {
-    animation-delay: 4s,2s;
-    left: 30%
-}
-
-.snowflake_ca9710:nth-of-type(4) {
-    animation-delay: 2s,2s;
-    left: 40%
-}
-
-.snowflake_ca9710:nth-of-type(5) {
-    animation-delay: 8s,3s;
-    left: 50%
-}
-
-.snowflake_ca9710:nth-of-type(6) {
-    animation-delay: 6s,2s;
-    left: 60%
-}
-
-.snowflake_ca9710:nth-of-type(7) {
-    animation-delay: 2.5s,1s;
-    left: 70%
-}
-
-.snowflake_ca9710:nth-of-type(8) {
-    animation-delay: 1s,0s;
-    left: 80%
-}
-
-.snowflake_ca9710:nth-of-type(9) {
-    animation-delay: 3s,1.5s;
-    left: 90%
-}
-
-.snowflake_ca9710:nth-of-type(10) {
-    animation-delay: 2s,0s;
-    left: 25%
-}
-
-.snowflake_ca9710:nth-of-type(11) {
-    animation-delay: 4s,2.5s;
-    left: 65%
-}
-
-/*# sourceMappingURL=1f9fa8e586de961f.css.map*/
+/*# sourceMappingURL=2f030c71f8ca1f7c.css.map*/

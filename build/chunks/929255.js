@@ -20,12 +20,10 @@ function f(e) {
     scrollerRef: n,
     tab: l,
     sortedCategories: u,
-    setIsGiftEasterEggEnabled: f,
-    isGiftEasterEggEnabled: b,
-    setCategoryRef: g
+    setCategoryRef: f
   } = e, {
-    handlePageChange: h,
-    currentPage: m
+    handlePageChange: g,
+    currentPage: h
   } = (0, s.h)({
     scrollerRef: n,
     sortedCategories: u
@@ -42,16 +40,14 @@ function f(e) {
         tab: l
       }, l) : (0, r.jsx)(i.k0, {
         newValue: {
-          pageIndex: m
+          pageIndex: h
         },
         children: (0, r.jsx)(o.Z, {
           isFullScreen: t,
           sortedCategories: u,
-          setCategoryRef: g,
-          setIsGiftEasterEggEnabled: f,
-          isGiftEasterEggEnabled: b,
-          currentPage: m,
-          handlePageChange: h
+          setCategoryRef: f,
+          currentPage: h,
+          handlePageChange: g
         })
       })
     })

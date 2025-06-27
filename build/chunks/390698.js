@@ -6,20 +6,20 @@ r.d(t, {
 var n = r(255367);
 r(73800);
 var i = r(120356),
-  o = r.n(i),
-  l = r(481060),
-  a = r(388032),
+  l = r.n(i),
+  a = r(481060),
+  o = r(388032),
   s = r(44615);
 let c = e => {
   let {
     className: t,
     isPartiallyPurchased: r
   } = e;
-  return r ? (0, n.jsx)(l.ua7, {
+  return r ? (0, n.jsx)(a.ua7, {
     tooltipClassName: s.partiallyOwnedDisclaimer,
     position: "top",
     align: "left",
-    text: a.intl.string(a.t.y1VWkZ),
+    text: o.intl.string(o.t.y1VWkZ),
     children: e => {
       var r, i;
       return (0, n.jsxs)("div", (r = function(e) {
@@ -40,18 +40,18 @@ let c = e => {
         }
         return e
       }({
-        className: o()(s.partialOwnStateContainer, t)
+        className: l()(s.partialOwnStateContainer, t)
       }, e), i = i = {
         children: [(0, n.jsx)("span", {
           className: s.iconWrapper,
-          children: (0, n.jsx)(l.d3s, {
+          children: (0, n.jsx)(a.d3s, {
             size: "md",
             color: "currentColor",
             className: s.infoIcon
           })
-        }), (0, n.jsx)(l.Text, {
+        }), (0, n.jsx)(a.Text, {
           variant: "text-md/semibold",
-          children: a.intl.string(a.t.BEjTio)
+          children: o.intl.string(o.t.BEjTio)
         })]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var r = Object.keys(e);
@@ -64,9 +64,9 @@ let c = e => {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r))
     }
-  }) : (0, n.jsx)(l.Text, {
+  }) : (0, n.jsx)(a.Text, {
     variant: "text-md/semibold",
     className: t,
-    children: a.intl.string(a.t["6cfuDg"])
+    children: o.intl.string(o.t["6cfuDg"])
   })
 }

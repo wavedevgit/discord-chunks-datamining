@@ -7,8 +7,8 @@ var n = r(979554);
 let i = e => {
   var t, r, i;
   let {
-    product: o,
-    selectedVariantIndex: l
+    product: l,
+    selectedVariantIndex: a
   } = e;
-  return o.type === n.Z.VARIANTS_GROUP && null != l && null != (i = null == (r = o.variants) || null == (t = r[l]) ? void 0 : t.skuId) ? i : o.skuId
+  return l.type === n.Z.VARIANTS_GROUP && null != a && null != (i = null == (r = l.variants) || null == (t = r[a]) ? void 0 : t.skuId) ? i : l.skuId
 }

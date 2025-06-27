@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  $: () => h
+  $: () => b
 }), n(539854);
 var r = n(255367),
   l = n(73800),
@@ -14,9 +14,9 @@ var r = n(255367),
   d = n(388032),
   p = n(894948),
   f = n(781385),
-  b = n(585616);
+  g = n(585616);
 
-function g(e) {
+function h(e) {
   let {
     endDate: t
   } = e, {
@@ -40,7 +40,7 @@ function g(e) {
     })
   })
 }
-let h = l.memo(function(e) {
+let b = l.memo(function(e) {
   let {
     unpublishedAt: t,
     isVisible: n,
@@ -84,7 +84,7 @@ let h = l.memo(function(e) {
       className: p.countdownIcon,
       alt: "",
       "aria-hidden": !0
-    }), (0, r.jsx)(g, {
+    }), (0, r.jsx)(h, {
       endDate: t
     }), (0, r.jsx)("img", {
       src: f.Z,
@@ -92,7 +92,7 @@ let h = l.memo(function(e) {
       alt: "",
       "aria-hidden": !0
     }), (0, r.jsx)("img", {
-      src: b.Z,
+      src: g.Z,
       className: i()(p.sparkles, p.right),
       alt: "",
       "aria-hidden": !0

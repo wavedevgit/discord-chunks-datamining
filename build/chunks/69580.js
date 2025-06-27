@@ -134,56 +134,31 @@ function eh() {
     [o, c] = i.useState(!1),
     u = i.useRef(!1),
     [d, f] = i.useState(null),
-    _ = !l.tq && !o;
+    _ = a && !l.tq && !o;
   if (i.useEffect(() => {
       if (l.eL && a) {
         let t = new URL("discord://action/oauth2/authorize");
         t.search = e.search, window.open(t.toString(), "_self")
-      } else l.tq || u.current || (u.current = !0, Promise.resolve().then(n.bind(n, 536285)).then(t => {
+      } else !a || l.tq || u.current || (Promise.resolve().then(n.bind(n, 536285)).then(t => {
         let {
           default: n
         } = t;
-        if (a) n.request(ei.Etm.DEEP_LINK, {
+        n.request(ei.Etm.DEEP_LINK, {
           type: ea.jE.OAUTH2,
           params: {
             search: e.search
           }
         }).then(e => {
           f(null != e && e)
-        }).catch(() => f(!1)).then(() => n.disconnect());
-        else {
-          f(!0);
-          let t = new URLSearchParams(e.search);
-          n.request(ei.Etm.AUTHORIZE, {
-            client_id: t.get("client_id"),
-            scope: t.get("scope"),
-            response_type: t.get("response_type"),
-            redirect_uri: t.get("redirect_uri"),
-            code_challenge: t.get("code_challenge"),
-            code_challenge_method: t.get("code_challenge_method"),
-            state: t.get("state"),
-            permissions: t.get("permissions"),
-            guild_id: t.get("guild_id"),
-            channel_id: t.get("channel_id"),
-            prompt: t.get("prompt"),
-            disable_guild_select: t.get("disable_guild_select"),
-            integration_type: t.get("integration_type"),
-            nonce: t.get("nonce")
-          }).then(e => {
-            let {
-              location: t
-            } = e;
-            t && (window.location.href = t)
-          }).catch(() => f(!1)).then(() => n.disconnect())
-        }
-      }))
+        }).catch(() => f(!1)).then(() => n.disconnect())
+      }), u.current = !0)
     }, [e.search, a]), _ && !1 !== d) {
     let e;
     return e = !0 === d ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(R.Dx, {
         children: eo.intl.string(eo.t.csrAMD)
       }), (0, r.jsx)(R.DK, {
-        children: a ? eo.intl.string(eo.t["m1+IBg"]) : eo.intl.string(eo.t.kRzrSE)
+        children: eo.intl.string(eo.t["m1+IBg"])
       }), (0, r.jsx)(h.zx, {
         onClick: () => c(!0),
         color: h.zx.Colors.BRAND,
@@ -688,7 +663,7 @@ function eE(e) {
 
 function eb(e, t) {
   var n, i;
-  if (null == t.location || null != e.callback && e.callback(t)) return;
+  if (null == t.location || null != e && e(t)) return;
   let {
     host: a,
     pathname: o,
@@ -719,7 +694,7 @@ function eb(e, t) {
         onClose: e.onClose
       })
     }))
-  }) : null == e.redirectUri && (null == (i = window.open(t.location, "_blank")) || i.focus())
+  }) : null == (i = window.open(t.location, "_blank")) || i.focus()
 }
 
 function ey(e, t) {
@@ -734,7 +709,7 @@ function ey(e, t) {
 function eO(e, t) {
   (0, m.h7)(t => (0, r.jsx)(em, ed(ec({}, t, e), {
     cancelCompletesFlow: !1,
-    callback: eb.bind(null, e)
+    callback: eb.bind(null, e.callback)
   })), {
     onCloseCallback: t
   })

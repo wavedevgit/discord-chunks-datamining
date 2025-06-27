@@ -1,9 +1,9 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  EB: () => h,
-  MV: () => b,
-  q3: () => g
+  EB: () => b,
+  MV: () => g,
+  q3: () => h
 }), n(388685);
 var r = n(73800),
   l = n(442837),
@@ -33,7 +33,7 @@ let f = e => {
         return a.Z.COLLECTIBLES_SHOP_FULLSCREEN
     }
   },
-  b = e => {
+  g = e => {
     let {
       analyticsSource: t,
       analyticsLocations: n
@@ -48,13 +48,13 @@ let f = e => {
       currentTabLocation: r
     }
   },
-  g = (e, t, n, l, a) => {
+  h = (e, t, n, l, a) => {
     let {
       analyticsLocations: i,
       analyticsSource: s,
       currentTabLocation: c,
       newestAnalyticsLocation: p
-    } = b(t);
+    } = g(t);
     r.useEffect(() => {
       if (l !== u.f7.VISIBLE || p !== c) return;
       let r = t === u.AW.CATALOG ? a : s;
@@ -67,10 +67,10 @@ let f = e => {
       })
     }, [i, e, t, n, c, l, a, s, p])
   },
-  h = (e, t) => {
+  b = (e, t) => {
     let {
       analyticsLocations: n
-    } = b(e);
+    } = g(e);
     r.useEffect(() => {
       null == t || s.ZP.canUseCollectibles(t) || o.default.track(d.rMx.PREMIUM_UPSELL_VIEWED, {
         type: p.cd.COLLECTIBLES_SHOP,

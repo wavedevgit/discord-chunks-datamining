@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => g
+  Z: () => h
 }), n(388685);
 var r = n(255367);
 n(73800);
@@ -42,7 +42,7 @@ let p = ["1366494385738354769", "1385035256125591633"],
       })
     })
   },
-  b = e => {
+  g = e => {
     let {
       handleTransition: t,
       categories: n
@@ -70,7 +70,7 @@ let p = ["1366494385738354769", "1385035256125591633"],
       })
     })
   },
-  g = e => {
+  h = e => {
     let {
       isLoading: t,
       handleTransition: n,
@@ -94,7 +94,7 @@ let p = ["1366494385738354769", "1385035256125591633"],
       featuredBlockRecord: i,
       handleTransition: n,
       isLoading: !1
-    }) : (0, r.jsx)(b, {
+    }) : (0, r.jsx)(g, {
       categories: l,
       handleTransition: n,
       isLoading: !1

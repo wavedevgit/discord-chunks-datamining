@@ -1,23 +1,23 @@
 /** Chunk was on 92404 **/
 "use strict";
 r.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var n = r(255367);
 r(73800);
 var i = r(481060),
-  o = r(215023);
-let l = e => {
+  l = r(215023);
+let a = e => {
   let {
     product: t,
-    analyticsLocations: l,
-    overrideTitle: a,
+    analyticsLocations: a,
+    overrideTitle: o,
     overrideDescription: s,
     shouldShowPromotionalExperience: c,
     shouldCheckoutWithOrbs: u,
     onCloseCallback: d,
     itemConsumed: p,
-    purchaseType: b = o.o8.FIAT
+    purchaseType: v = l.o8.FIAT
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -42,13 +42,13 @@ let l = e => {
       return e
     }({
       product: t,
-      analyticsLocations: l,
-      overrideTitle: a,
+      analyticsLocations: a,
+      overrideTitle: o,
       overrideDescription: s,
       shouldShowPromotionalExperience: c,
       shouldCheckoutWithOrbs: u,
       itemConsumed: p,
-      purchaseType: b
+      purchaseType: v
     }, r))
   }, {
     onCloseCallback: d
