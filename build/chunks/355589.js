@@ -34,8 +34,8 @@ var r = n(255367),
   E = n(883429),
   R = n(993259),
   k = n(109434),
-  M = n(456269),
-  Z = n(228392),
+  Z = n(456269),
+  M = n(228392),
   A = n(432771),
   L = n(538366),
   F = n(470623),
@@ -88,7 +88,7 @@ let q = {
     borderRadius: 10
   },
   X = e => {
-    (0, Z.e5)({
+    (0, M.e5)({
       onboardingCTA: e
     })
   };
@@ -160,7 +160,7 @@ let J = e => {
     name: B.intl.string(B.t["6A0O6+"]),
     description: t ? B.intl.string(B.t["8hI5vr"]) : B.intl.format(B.t.ysxcAw, {
       onClick: e => {
-        null != i && (e.preventDefault(), e.stopPropagation(), (0, Z.qz)(), (0, g.ZDy)(async () => {
+        null != i && (e.preventDefault(), e.stopPropagation(), (0, M.qz)(), (0, g.ZDy)(async () => {
           let {
             default: e
           } = await n.e("18417").then(n.bind(n, 740696));
@@ -378,7 +378,7 @@ let J = e => {
       }
     }, d.X), {
       tagFilter: s
-    } = (0, k.H)(i.id), o = (0, h.e7)([w.Z], () => w.Z.getGuild(i.getGuildId())), m = (0, M.r_)(i), {
+    } = (0, k.H)(i.id), o = (0, h.e7)([w.Z], () => w.Z.getGuild(i.getGuildId())), m = (0, Z.r_)(i), {
       transitions: f,
       setVisible: x
     } = el(), b = es(a), j = eu(), O = ee(i.id, x), {
@@ -391,7 +391,7 @@ let J = e => {
       channel: i,
       hasAnyThread: t,
       handleHide: O
-    }), E = !P && !T, R = (0, F.AF)(), Z = i.isMediaChannel(), A = e => R.getState().setOnboardingExpanded(e);
+    }), E = !P && !T, R = (0, F.AF)(), M = i.isMediaChannel(), A = e => R.getState().setOnboardingExpanded(e);
     return (ei(I, E, O), ea({
       isAllDone: I,
       isVisible: E,
@@ -406,7 +406,7 @@ let J = e => {
       children: [(0, r.jsx)(C.Z, {
         guild: o
       }), (0, r.jsx)(y.q, {})]
-    }) : E && m ? Z ? t ? null : (0, r.jsx)(v.Z, {
+    }) : E && m ? M ? t ? null : (0, r.jsx)(v.Z, {
       channel: i
     }) : (0, r.jsx)(r.Fragment, {
       children: f((e, t) => t ? (0, r.jsx)(c.animated.div, {

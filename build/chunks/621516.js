@@ -127,7 +127,7 @@ let E = e => {
   var t, n;
   let {
     channel: a
-  } = e, h = (0, u.ZP)(), E = (0, c.wj)(h), R = (0, o.e7)([j.Z], () => j.Z.getGuild(a.guild_id)), k = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), M = (0, o.e7)([g.Z], () => g.Z.hasHidden(a.id)), Z = (0, p.C)({
+  } = e, h = (0, u.ZP)(), E = (0, c.wj)(h), R = (0, o.e7)([j.Z], () => j.Z.getGuild(a.guild_id)), k = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, o.e7)([g.Z], () => g.Z.hasHidden(a.id)), M = (0, p.C)({
     guildId: a.guild_id,
     channelId: a.id
   }), {
@@ -137,8 +137,8 @@ let E = e => {
     L(!1), f.Z.hideAdminOnboarding(a.id, !0)
   }, [a, L]);
   i.useEffect(() => {
-    (0, x.c)(a.id) || L(!M)
-  }, [a, L, M]);
+    (0, x.c)(a.id) || L(!Z)
+  }, [a, L, Z]);
   let D = i.useMemo(() => [y.intl.string(y.t["8pEGAw"]), y.intl.string(y.t.jwfgDQ), y.intl.string(y.t.mPKs29), y.intl.string(y.t.StRbvL)], []),
     z = i.useMemo(() => [y.intl.string(y.t["m/b58P"]), y.intl.string(y.t.MuJSKy), y.intl.string(y.t["d/Wqvr"]), y.intl.string(y.t.GJklAw)], []),
     B = () => {
@@ -287,7 +287,7 @@ let E = e => {
               }, e))
             }), (0, r.jsx)(d.LZC, {
               size: 16
-            }), 0 === Z.length && (0, r.jsx)(d.gtL, {
+            }), 0 === M.length && (0, r.jsx)(d.gtL, {
               size: d.zxk.Sizes.MEDIUM,
               pauseAnimation: k,
               onClick: B,

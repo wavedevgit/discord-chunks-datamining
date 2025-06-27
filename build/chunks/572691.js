@@ -85,8 +85,6 @@ let _ = {
     (0, s.lE)(), a.Z.dispatch({
       type: "MODAL_POP_ALL"
     }), a.Z.dispatch({
-      type: "CHANNEL_SETTINGS_CLOSE"
-    }), a.Z.dispatch({
       type: "EMAIL_VERIFICATION_MODAL_CLOSE"
     }), a.Z.dispatch({
       type: "GUILD_SETTINGS_CLOSE"

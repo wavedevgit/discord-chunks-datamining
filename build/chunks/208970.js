@@ -70,8 +70,7 @@ function p(e) {
   if (!f(t)) return !1;
   let r = _(t);
   d[t] = u(l({}, r), {
-    query: n,
-    results: null
+    query: n
   })
 }
 

@@ -34,8 +34,8 @@ var r = n(255367),
   E = n(897473),
   R = n(344185),
   k = n(235449),
-  M = n(665906),
-  Z = n(488131),
+  Z = n(665906),
+  M = n(488131),
   A = n(433355),
   L = n(592125),
   F = n(703558),
@@ -229,7 +229,7 @@ function eN(e) {
     activeThreadsLoading: C,
     archivedThreadsLoading: y,
     loading: T,
-    isSearchLoading: M,
+    isSearchLoading: Z,
     layoutType: D
   } = function(e) {
     let {
@@ -323,49 +323,54 @@ function eN(e) {
       guildId: t.guild_id
     }),
     eo = D === h.X.GRID,
-    ej = null != b,
-    ey = i.useRef(null),
     {
-      containerRef: eN,
-      containerWidth: eE
+      searchQuery: ej
+    } = (0, X.XZ)({
+      channelId: t.id
+    }),
+    ey = null != b && null != ej && ej.length > 0,
+    eN = i.useRef(null),
+    {
+      containerRef: eE,
+      containerWidth: ek
     } = (0, ec.Z)();
   i.useEffect(() => () => {
     null != t.id && G.Z.clearForumSearch(t.id)
   }, [t.id]), i.useEffect(() => {
-    if (null == ey.current && null != t.id) {
+    if (null == eN.current && null != t.id) {
       let e = A.ZP.getSidebarState(t.id);
-      null != e && e.type === E.tI.VIEW_THREAD && (ey.current = e.channelId)
+      null != e && e.type === E.tI.VIEW_THREAD && (eN.current = e.channelId)
     }
   }, [t.id]);
   let {
-    columns: ek
-  } = i.useMemo(() => eo ? ev.getRenderOptions(eE) : es.eU, [eo, eE]), eM = i.useMemo(() => T ? Math.round((window.innerHeight - 200) / 118) : 0, [T]), eZ = i.useMemo(() => {
-    let e = Math.ceil(window.innerHeight / (0, es.KW)(ev.getWidth(eE))) * ek;
+    columns: eZ
+  } = i.useMemo(() => eo ? ev.getRenderOptions(ek) : es.eU, [eo, ek]), eM = i.useMemo(() => T ? Math.round((window.innerHeight - 200) / 118) : 0, [T]), eA = i.useMemo(() => {
+    let e = Math.ceil(window.innerHeight / (0, es.KW)(ev.getWidth(ek))) * eZ;
     return C ? e : 0
-  }, [eE, ek, C]), eA = i.useMemo(() => {
-    let e = Math.ceil(window.innerHeight / (0, es.KW)(ev.getWidth(eE))) * ek;
+  }, [ek, eZ, C]), eL = i.useMemo(() => {
+    let e = Math.ceil(window.innerHeight / (0, es.KW)(ev.getWidth(ek))) * eZ;
     return y ? e : 0
-  }, [eE, ek, y]), eL = i.useMemo(() => {
-    let e = Math.ceil(window.innerHeight / (0, es.KW)(ev.getWidth(eE))) * ek;
-    return M && ej ? e : 0
-  }, [eE, ek, M, ej]), eF = i.useMemo(() => {
+  }, [ek, eZ, y]), eF = i.useMemo(() => {
+    let e = Math.ceil(window.innerHeight / (0, es.KW)(ev.getWidth(ek))) * eZ;
+    return Z && ey ? e : 0
+  }, [ek, eZ, Z, ey]), eD = i.useMemo(() => {
     if (eo)
-      if (!ee && ej) return [1, 0];
-      else if (!er) return [1, m.length + eZ, 0];
-    else if (ej) return [1, b.length + eL, 0];
-    else return [1, m.length + eZ, f.length + eA];
-    return !ee && ej ? [1, 1] : er ? ej ? [1, b.length, 0, eM] : [1, m.length, f.length, eM] : [1, m.length, 1]
-  }, [eo, ej, m.length, f.length, ee, er, eM, b, eZ, eA, eL]), eD = i.useMemo(() => !ee && ej ? [
+      if (!ee && ey) return [1, 0];
+      else if (!er) return [1, m.length + eA, 0];
+    else if (ey) return [1, b.length + eF, 0];
+    else return [1, m.length + eA, f.length + eL];
+    return !ee && ey ? [1, 1] : er ? ey ? [1, b.length, 0, eM] : [1, m.length, f.length, eM] : [1, m.length, 1]
+  }, [eo, ey, m.length, f.length, ee, er, eM, b, eA, eL, eF]), ez = i.useMemo(() => !ee && ey ? [
     [],
     []
-  ] : er ? ej ? [
+  ] : er ? ey ? [
     [], b, [],
     []
   ] : [
     [], m, f, []
   ] : [
     [], m, []
-  ], [ej, ee, er, b, m, f]), ez = i.useCallback((e, n) => {
+  ], [ey, ee, er, b, m, f]), eB = i.useCallback((e, n) => {
     (0, Y.B5)({
       guildId: t.guild_id,
       channelId: t.id,
@@ -376,47 +381,47 @@ function eN(e) {
       }
     }), n ? (0, I.ad)(e, {
       source: eh.on.BROWSER
-    }) : (ey.current = e.id, (0, Z.ok)(e))
-  }, [t.guild_id, t.id, ey]), [eB, eH] = i.useState(a + s - 24), eU = i.useCallback((e, n, i) => 0 === e ? (0, r.jsx)(eR, {
+    }) : (eN.current = e.id, (0, M.ok)(e))
+  }, [t.guild_id, t.id, eN]), [eH, eU] = i.useState(a + s - 24), eV = i.useCallback((e, n, i) => 0 === e ? (0, r.jsx)(eR, {
     channel: t,
     isEmpty: !B,
-    isSearchLoading: M,
+    isSearchLoading: Z,
     numResults: null == b ? void 0 : b.length,
     coords: n,
-    onHeightChange: eH,
+    onHeightChange: eU,
     children: !T && (0, r.jsx)(Q.Z, {
       channel: t,
       hasAnyThread: H,
       hasActiveThreads: B
     }, t.id)
-  }, "forum-channel-header") : 2 !== e || er ? 1 === e && ej && !ee ? (0, r.jsx)(eP, {
+  }, "forum-channel-header") : 2 !== e || er ? 1 === e && ey && !ee ? (0, r.jsx)(eP, {
     channel: t,
     coords: n
   }, "archive-or-search-result") : i() : (0, r.jsx)(eT, {
     channel: t,
     coords: n
-  }, "archived-missing-reading-history-perm"), [ej, er, b, ee, t, B, M, T, H]), eV = (0, g.e7)([V.Z], () => V.Z.hasHidden(t.id)), eG = {
+  }, "archived-missing-reading-history-perm"), [ey, er, b, ee, t, B, Z, T, H]), eG = (0, g.e7)([V.Z], () => V.Z.hasHidden(t.id)), eq = {
     editorHeight: a,
     isGridLayout: eo
-  }, eq = i.useRef(eG);
+  }, eW = i.useRef(eq);
   i.useEffect(() => {
-    eq.current = eG
+    eW.current = eq
   }), i.useEffect(() => {
     var e, t;
     let {
       editorHeight: n,
       isGridLayout: r
-    } = eq.current, i = r ? eQ : ea, a = null == (e = i.current) ? void 0 : e.getScrollerState();
-    null != a && !eV && a.scrollTop > n && (null == (t = i.current) || t.scrollTo({
+    } = eW.current, i = r ? e$ : ea, a = null == (e = i.current) ? void 0 : e.getScrollerState();
+    null != a && !eG && a.scrollTop > n && (null == (t = i.current) || t.scrollTo({
       to: 0
     }))
-  }, [eV]);
+  }, [eG]);
   let {
-    updateListScrollerRef: eW,
-    renderListSection: eX,
-    renderListItem: eK,
-    getListSectionHeight: eJ,
-    getListItemHeight: eY
+    updateListScrollerRef: eX,
+    renderListSection: eK,
+    renderListItem: eJ,
+    getListSectionHeight: eY,
+    getListItemHeight: eQ
   } = function(e) {
     let {
       listRef: t,
@@ -470,22 +475,22 @@ function eN(e) {
   }({
     listRef: ea,
     hasActiveThreads: B,
-    threadIdsBySection: eD,
+    threadIdsBySection: ez,
     listViewCardHeights: o,
     editorHeight: a,
     editorAdditionRowHeight: s,
-    renderSectionOrItem: eU,
-    goToThread: ez,
+    renderSectionOrItem: eV,
+    goToThread: eB,
     observePostVisibilityAnalytics: el,
-    isShowingSearchResult: ej
-  }), eQ = i.useRef(null), {
-    updateMasonryListScrollerRef: e$,
-    getItemKey: e0,
-    renderGridSection: e3,
-    renderGridItem: e6,
-    getGridSectionHeight: e1,
-    getSectionProps: e8,
-    handleGridFocus: e9
+    isShowingSearchResult: ey
+  }), e$ = i.useRef(null), {
+    updateMasonryListScrollerRef: e0,
+    getItemKey: e3,
+    renderGridSection: e6,
+    renderGridItem: e1,
+    getGridSectionHeight: e8,
+    getSectionProps: e9,
+    handleGridFocus: e4
   } = function(e) {
     let {
       masonryListScrollerRef: t,
@@ -574,17 +579,17 @@ function eN(e) {
       getGridSectionHeight: i.useCallback(e => 0 === e ? g - 8 - 24 : 2 === e ? o || !u ? 40 : 0 : 1 === e && c && !d ? 40 : 0, [g, c, d, o, u])
     }
   }({
-    masonryListScrollerRef: eQ,
-    threadIdsBySection: eD,
-    goToThread: ez,
-    renderSectionOrItem: eU,
+    masonryListScrollerRef: e$,
+    threadIdsBySection: ez,
+    goToThread: eB,
+    renderSectionOrItem: eV,
     hasActiveThreads: B,
-    isShowingSearchResult: ej,
+    isShowingSearchResult: ey,
     canSearchForumPosts: ee,
     canViewArchivedPosts: er,
     observePostVisibilityAnalytics: el,
-    focusedThreadId: ey,
-    headerHeight: eB
+    focusedThreadId: eN,
+    headerHeight: eH
   });
   ! function(e) {
     let {
@@ -615,49 +620,49 @@ function eN(e) {
       }
     }, [s, n, r, a, l, t])
   }({
-    masonryListScrollerRef: eQ,
-    containerWidth: eE,
+    masonryListScrollerRef: e$,
+    containerWidth: ek,
     isGridLayout: eo,
-    threadIdsBySection: eD,
+    threadIdsBySection: ez,
     parentId: t.id,
-    focusedThreadId: ey
+    focusedThreadId: eN
   });
-  let e4 = i.useCallback(() => {
+  let e5 = i.useCallback(() => {
       var e, n;
-      if (ej) return;
-      let r = eo ? null == (e = eQ.current) ? void 0 : e.getScrollerState() : null == (n = ea.current) ? void 0 : n.getScrollerState();
+      if (ey) return;
+      let r = eo ? null == (e = e$.current) ? void 0 : e.getScrollerState() : null == (n = ea.current) ? void 0 : n.getScrollerState();
       if (null == r) return;
       (0, Y.ab)({
         guildId: t.guild_id,
         channelId: t.id
       });
       let i = r.scrollTop + r.offsetHeight;
-      r.scrollHeight - i < (eo ? Math.max(200, (0, es.KW)(eE)) : 200) && _()
-    }, [ej, eo, t.guild_id, t.id, eE, _]),
-    e5 = (0, g.e7)([j.Z], () => j.Z.keyboardModeEnabled),
-    e2 = (0, ed.ZP)({
+      r.scrollHeight - i < (eo ? Math.max(200, (0, es.KW)(ek)) : 200) && _()
+    }, [ey, eo, t.guild_id, t.id, ek, _]),
+    e2 = (0, g.e7)([j.Z], () => j.Z.keyboardModeEnabled),
+    e7 = (0, ed.ZP)({
       id: "forum-grid-view",
-      isEnabled: eo && e5,
-      setFocus: e9
+      isEnabled: eo && e2,
+      setFocus: e4
     }),
-    e7 = (0, eu.Z)({
+    te = (0, eu.Z)({
       listRef: ea,
       padding: 96,
-      isEnabled: !eo && e5,
+      isEnabled: !eo && e2,
       channel: t
     }),
-    te = e2.containerProps,
+    tt = e7.containerProps,
     {
-      ref: tt
-    } = te,
-    tn = eb(te, ["ref"]),
-    tr = A.ZP.getSidebarState(t.id),
-    ti = null != tr && (0, A.D5)(tr),
-    ta = (0, g.e7)([A.ZP], () => A.ZP.getSection(t.id)) === em.ULH.MEMBERS;
+      ref: tn
+    } = tt,
+    tr = eb(tt, ["ref"]),
+    ti = A.ZP.getSidebarState(t.id),
+    ta = null != ti && (0, A.D5)(ti),
+    tl = (0, g.e7)([A.ZP], () => A.ZP.getSection(t.id)) === em.ULH.MEMBERS;
   return (0, r.jsx)("div", {
     className: ef.container,
-    ref: eN,
-    "data-member-list-open": ta,
+    ref: eE,
+    "data-member-list-open": tl,
     children: (0, r.jsx)(x.Wdt, {
       children: e => (0, r.jsxs)(r.Fragment, {
         children: [u && (0, r.jsx)(p.Z, {
@@ -665,7 +670,7 @@ function eN(e) {
           draftType: F.d.FirstThreadMessage,
           className: ef.uploadArea,
           style: {
-            right: ti && (null == n ? void 0 : n.isThreadSidebarFloating) ? n.threadSidebarWidth : 0
+            right: ta && (null == n ? void 0 : n.isThreadSidebarFloating) ? n.threadSidebarWidth : 0
           }
         }), (0, r.jsx)(eI, {
           channel: t
@@ -679,43 +684,43 @@ function eN(e) {
             channel: t
           })
         }) : null, eo ? (0, r.jsx)(ed.KT, {
-          navigator: e2,
+          navigator: e7,
           children: (0, r.jsx)(x.GMG, ex({
             ref: e => {
               var t;
-              tt.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null, e$(e)
+              tn.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null, e0(e)
             },
             itemGutter: 16,
             padding: 24,
             className: ef.grid,
-            columns: ek,
-            sections: eF,
-            getItemKey: e0,
-            getSectionHeight: e1,
+            columns: eZ,
+            sections: eD,
+            getItemKey: e3,
+            getSectionHeight: e8,
             getItemHeight: eC,
-            renderSection: e3,
-            renderItem: e6,
-            getSectionProps: e8,
-            onScroll: v ? e4 : void 0,
+            renderSection: e6,
+            renderItem: e1,
+            getSectionProps: e9,
+            onScroll: v ? e5 : void 0,
             chunkSize: 350
-          }, tn, e), D)
+          }, tr, e), D)
         }) : (0, r.jsx)(d.bG, {
-          navigator: e7,
+          navigator: te,
           children: (0, r.jsx)(d.SJ, {
             children: t => {
               var {
                 ref: n
               } = t, i = eb(t, ["ref"]);
               return (0, r.jsx)(x._2F, ep(ex({
-                ref: eW(n),
+                ref: eX(n),
                 className: ef.list,
-                sections: eF,
-                sectionHeight: eJ,
-                rowHeight: eY,
-                renderRow: eK,
-                renderSection: eX,
+                sections: eD,
+                sectionHeight: eY,
+                rowHeight: eQ,
+                renderRow: eJ,
+                renderSection: eK,
                 chunkSize: 150,
-                onScroll: v ? e4 : void 0,
+                onScroll: v ? e5 : void 0,
                 paddingBottom: 24
               }, i, e), {
                 innerRole: "list"
@@ -802,7 +807,7 @@ function eR(e) {
     formOpen: E,
     titleFocused: R,
     hasClickedForm: k,
-    textAreaState: Z,
+    textAreaState: M,
     onboardingExpanded: A,
     setEditorAdditionRowHeight: L
   } = (0, en.xH)(e => {
@@ -827,7 +832,7 @@ function eR(e) {
   }, c.X), {
     tagFilter: z,
     layoutType: V
-  } = (0, W.H)(s.id), q = (0, en.AF)(), K = (0, W.v)(), J = (0, g.e7)([D.Z], () => D.Z.canChatInGuild(s.guild_id)), Q = (0, X.r_)(s), et = (0, M.cD)(s), [ei, ea] = i.useState(et), [, es] = (0, C.AB)(null != (a = s.getGuildId()) ? a : void 0), ec = (0, T.HL)(s), ed = J && (et || ei && es) && !ec, eu = s.isMediaChannel();
+  } = (0, W.H)(s.id), q = (0, en.AF)(), K = (0, W.v)(), J = (0, g.e7)([D.Z], () => D.Z.canChatInGuild(s.guild_id)), Q = (0, X.r_)(s), et = (0, Z.cD)(s), [ei, ea] = i.useState(et), [, es] = (0, C.AB)(null != (a = s.getGuildId()) ? a : void 0), ec = (0, T.HL)(s), ed = J && (et || ei && es) && !ec, eu = s.isMediaChannel();
   i.useEffect(() => {
     et && ea(!0)
   }, [et]);
@@ -880,13 +885,13 @@ function eR(e) {
     }
   }, [s.availableTags, eN, eT, z]);
   let eR = I.length > 0 && !E && (v || null != O),
-    eM = !__OVERLAY__ && !k && !E && R && (0 === Z.textValue.trim().length || Z.textValue.trim() === eC) && 0 === e_.length && !ec;
+    eZ = !__OVERLAY__ && !k && !E && R && (0 === M.textValue.trim().length || M.textValue.trim() === eC) && 0 === e_.length && !ec;
   i.useLayoutEffect(() => {
-    let e = eR || eM;
+    let e = eR || eZ;
     if (!e) return L(0);
     null != eP.current && L(e ? eP.current.clientHeight : 0)
-  }, [L, eR, eM, eP]);
-  let eZ = e => {
+  }, [L, eR, eZ, eP]);
+  let eM = e => {
       (0, Y.e7)({
         guildId: s.guild_id,
         channelId: s.id,
@@ -948,7 +953,7 @@ function eR(e) {
         channel: s
       }) : null, (0, r.jsx)("div", {
         className: l()(ef.mainCard, ef.header, {
-          [ef.headerWithMatchingPosts]: eR || eM
+          [ef.headerWithMatchingPosts]: eR || eZ
         }),
         children: (0, r.jsx)(er.Z, {
           parentChannel: s,
@@ -958,7 +963,7 @@ function eR(e) {
           canCreatePost: ed,
           inputRef: eB
         })
-      }), (eR || eM) && (0, r.jsxs)("div", {
+      }), (eR || eZ) && (0, r.jsxs)("div", {
         className: ef.matchingPostsRow,
         ref: eP,
         children: [eR && (0, r.jsxs)("div", {
@@ -986,7 +991,7 @@ function eR(e) {
           })]
         }), (0, r.jsx)("div", {
           className: ef.tagsSpacer
-        }), eM ? ed ? (0, r.jsxs)("div", {
+        }), eZ ? ed ? (0, r.jsxs)("div", {
           className: ef.startPostHelp,
           children: [(0, r.jsx)(x.M2$, {
             shortcut: "SHIFT",
@@ -1044,7 +1049,7 @@ function eR(e) {
                   }, n), {
                     children: eV.map(e => (0, r.jsx)(el.Z, {
                       tag: e,
-                      onClick: () => eZ(e.id),
+                      onClick: () => eM(e.id),
                       selected: z.has(e.id)
                     }, e.id))
                   }))
