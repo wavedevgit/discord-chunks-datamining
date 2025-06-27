@@ -17,8 +17,8 @@ var i = n(255367),
   m = n(471445),
   p = n(351123),
   f = n(685929),
-  j = n(665906),
-  x = n(210887),
+  x = n(665906),
+  j = n(210887),
   b = n(131704),
   v = n(533947),
   y = n(277053),
@@ -31,8 +31,8 @@ var i = n(255367),
   w = n(787263),
   T = n(975316),
   R = n(428813),
-  _ = n(2147),
-  I = n(856606),
+  I = n(2147),
+  _ = n(856606),
   P = n(981631),
   A = n(388032),
   L = n(511740);
@@ -78,8 +78,8 @@ class M extends l.PureComponent {
       canManageRoles: a,
       canManageChannels: h,
       canDeleteChannels: f,
-      canManageWebhooks: j,
-      canUnlinkChannel: x
+      canManageWebhooks: x,
+      canUnlinkChannel: j
     } = this.props;
     return null == l ? null : (0, i.jsx)(d.ZP, {
       theme: e,
@@ -97,8 +97,8 @@ class M extends l.PureComponent {
           canManageWebhooks: d,
           canUnlinkChannel: h
         } = e, f = (0, m.KS)(t), {
-          GUILD_CATEGORY: j
-        } = P.d4z, x = b.Ec.has(t.type), N = t.type === j ? A.intl.string(A.t.ifbXnJ) : x ? t.isForumPost() ? A.intl.string(A.t.nEOg1N) : A.intl.string(A.t.H7vTe3) : A.intl.string(A.t["8D8Rsb"]);
+          GUILD_CATEGORY: x
+        } = P.d4z, j = b.Ec.has(t.type), N = t.type === x ? A.intl.string(A.t.ifbXnJ) : j ? t.isForumPost() ? A.intl.string(A.t.nEOg1N) : A.intl.string(A.t.H7vTe3) : A.intl.string(A.t["8D8Rsb"]);
         return [{
           section: u.ID.HEADER,
           label: null != t ? (0, i.jsxs)(i.Fragment, {
@@ -119,9 +119,9 @@ class M extends l.PureComponent {
           section: P.CoT.OVERVIEW,
           label: A.intl.string(A.t["/dp6yc"]),
           ariaLabel: A.intl.string(A.t["/dp6yc"]),
-          element: _.Z,
+          element: I.Z,
           notice: {
-            element: _.G,
+            element: I.G,
             stores: [C.Z]
           },
           predicate: () => !t.isModeratorReportChannel()
@@ -130,16 +130,16 @@ class M extends l.PureComponent {
           label: A.intl.string(A.t.xrmhRU),
           element: p.Z,
           notice: {
-            element: I.n,
+            element: _.n,
             stores: [y.Z]
           },
-          predicate: () => l && !x
+          predicate: () => l && !j
         }, {
           section: P.CoT.INSTANT_INVITES,
           label: A.intl.string(A.t["9F90iY"]),
           element: R.Z,
           type: u.bT.CUSTOM,
-          predicate: () => t.type !== j && r && !x && !t.isModeratorReportChannel()
+          predicate: () => t.type !== x && r && !j && !t.isModeratorReportChannel()
         }, {
           section: P.CoT.INTEGRATIONS,
           label: A.intl.string(A.t.s69NLC),
@@ -176,8 +176,8 @@ class M extends l.PureComponent {
         canManageRoles: a,
         canManageChannels: h,
         canDeleteChannels: f,
-        canManageWebhooks: j,
-        canUnlinkChannel: x
+        canManageWebhooks: x,
+        canUnlinkChannel: j
       })
     })
   }
@@ -187,7 +187,7 @@ function k() {
   let {
     channel: e,
     analyticsLocation: t
-  } = (0, r.cj)([C.Z], () => C.Z.getProps()), n = (0, r.e7)([C.Z], () => C.Z.getFormState()), l = (0, r.e7)([C.Z], () => C.Z.getSection()), s = (0, r.e7)([x.Z], () => x.Z.theme), a = (0, r.e7)([x.Z], () => x.Z.darkSidebar ? P.BRd.DARK : void 0), o = (0, j.C7)(e), c = (0, j.Xb)(e), {
+  } = (0, r.cj)([C.Z], () => C.Z.getProps()), n = (0, r.e7)([C.Z], () => C.Z.getFormState()), l = (0, r.e7)([C.Z], () => C.Z.getSection()), s = (0, r.e7)([j.Z], () => j.Z.theme), a = (0, r.e7)([j.Z], () => j.Z.darkSidebar ? P.BRd.DARK : void 0), o = (0, x.C7)(e), c = (0, x.Xb)(e), {
     canManageChannels: d,
     canManageRoles: u,
     canManageWebhooks: h,

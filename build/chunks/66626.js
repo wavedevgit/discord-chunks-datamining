@@ -20,13 +20,13 @@ function u(e) {
     onCategoryIdChange: x,
     onSubmit: C,
     onClose: h,
-    onBack: p
-  } = e, [g, f] = s.useState(!1), [_, j] = s.useState(null), b = async () => {
+    onBack: g
+  } = e, [p, f] = s.useState(!1), [j, _] = s.useState(null), b = async () => {
     f(!0);
     try {
       await C()
     } catch (e) {
-      j(new r.Z(e))
+      _(new r.Z(e))
     }
     f(!1)
   };
@@ -58,7 +58,7 @@ function u(e) {
           maxLength: 200,
           placeholder: c.intl.string(c.t.VzuITE),
           onChange: u,
-          error: null == _ ? void 0 : _.getAnyErrorMessage()
+          error: null == j ? void 0 : j.getAnyErrorMessage()
         })
       }), (0, i.jsx)(l.xJW, {
         className: d.formItemSpaced,
@@ -77,14 +77,14 @@ function u(e) {
       children: [(0, i.jsx)(l.zxk, {
         color: l.zxk.Colors.BRAND,
         onClick: b,
-        submitting: g,
+        submitting: p,
         disabled: "" === n || m === o.AR.UNCATEGORIZED,
         children: c.intl.string(c.t.H9jxS0)
       }), (0, i.jsx)(l.zxk, {
         className: d.backButton,
         look: l.zxk.Looks.BLANK,
         size: l.zxk.Sizes.MIN,
-        onClick: p,
+        onClick: g,
         children: c.intl.string(c.t["13/7kZ"])
       })]
     })]

@@ -1,6 +1,6 @@
 /**
   Module ID: 56535
-  Original File Name: a5771d03449fc822
+  Original File Name: 3d2db89844a70bd5
 **/
 .emojiErrorItem__67954 {
     align-items: center;
@@ -215,7 +215,8 @@
     justify-content: center;
     overflow: hidden;
     padding: 48px;
-    position: relative
+    position: relative;
+    text-align: center
 }
 
 .dropZone__43278:hover {
@@ -609,4 +610,4 @@
     width: 32px
 }
 
-/*# sourceMappingURL=a5771d03449fc822.css.map*/
+/*# sourceMappingURL=3d2db89844a70bd5.css.map*/

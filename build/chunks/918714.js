@@ -17,7 +17,7 @@ let p = () => {
     p(!0), h(null);
     try {
       var e;
-      let n = await (0, o.P)();
+      let n = await (0, o.PA)();
       if (null == n) return;
       !(0, l.Ew)(null == (e = n.ui_component) ? void 0 : e.type) && c.VZ.has(n.ui_component.type) ? t(n) : t({
         task_id: n.task_id,
@@ -49,7 +49,7 @@ let p = () => {
           assignment_id: e.assignment_id,
           data: t
         };
-        await (0, o.W)(n), b()
+        await (0, o.Wl)(n), b()
       } catch (e) {
         h(d.intl.string(u.default["+QRSxc"]))
       } finally {

@@ -19,13 +19,13 @@ var r = n(255367),
   g = n(210887),
   b = n(23434),
   E = n(1964),
-  j = n(762756),
-  v = n(308569),
+  v = n(762756),
+  j = n(308569),
   O = n(981631),
-  w = n(815660),
-  _ = n(388032);
+  A = n(815660),
+  w = n(388032);
 
-function x(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function x(e) {
   return e
 }
 
-function A(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -78,9 +78,9 @@ function P() {
         let {
           default: e
         } = await n.e("35401").then(n.bind(n, 284549));
-        return t => (0, r.jsx)(e, x({}, t))
+        return t => (0, r.jsx)(e, _({}, t))
       }, {
-        modalKey: v.F0,
+        modalKey: j.F0,
         Layer: h.ZP
       })
     },
@@ -89,11 +89,11 @@ function P() {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));
-        return t => (0, r.jsx)(e, x({
+        return t => (0, r.jsx)(e, _({
           reason: y.L.USER_ACTION_REQUIRED
         }, t))
       }, {
-        modalKey: w.M,
+        modalKey: A.M,
         Layer: h.ZP
       })
     };
@@ -104,17 +104,17 @@ function P() {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 468026));
-      return t => (0, r.jsx)(e, A(x({}, t), {
-        title: _.intl.string(_.t.KLnLIC),
-        body: _.intl.string(_.t.XGbCq6),
-        confirmText: _.intl.string(_.t["3oK4q6"])
+      return t => (0, r.jsx)(e, x(_({}, t), {
+        title: w.intl.string(w.t.KLnLIC),
+        body: w.intl.string(w.t.XGbCq6),
+        confirmText: w.intl.string(w.t["3oK4q6"])
       }))
     }, {
-      modalKey: v.HR,
+      modalKey: j.HR,
       Layer: h.ZP,
       onCloseCallback: S
     })
-  }, [P, k]), (0, r.jsx)(j.Z, {
+  }, [P, k]), (0, r.jsx)(v.Z, {
     types: P,
     captchaKey: N,
     onCaptchaVerify: e => {
@@ -139,15 +139,15 @@ function P() {
           ConfirmModal: e,
           Text: t
         } = await Promise.resolve().then(n.bind(n, 481060));
-        return n => (0, r.jsx)(e, A(x({
-          header: _.intl.string(_.t["2jxGen"]),
-          confirmText: _.intl.string(_.t["2jxGen"]),
-          cancelText: _.intl.string(_.t["ETE/oK"]),
+        return n => (0, r.jsx)(e, x(_({
+          header: w.intl.string(w.t["2jxGen"]),
+          confirmText: w.intl.string(w.t["2jxGen"]),
+          cancelText: w.intl.string(w.t["ETE/oK"]),
           onConfirm: () => s.Z.logout("verification")
         }, n), {
           children: (0, r.jsx)(t, {
             variant: "text-md/normal",
-            children: _.intl.string(_.t.SUnWBA)
+            children: w.intl.string(w.t.SUnWBA)
           })
         }))
       }, {

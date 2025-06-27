@@ -1,6 +1,6 @@
 /** Chunk was on 79764 **/
 n.d(t, {
-  Z: () => _
+  Z: () => j
 }), n(388685);
 var i = n(255367),
   s = n(73800),
@@ -15,9 +15,9 @@ var i = n(255367),
   x = n(388032),
   C = n(275017),
   h = n(36705),
-  p = n(216019);
+  g = n(216019);
 
-function g(e) {
+function p(e) {
   let {
     guild: t,
     onClick: n
@@ -34,9 +34,8 @@ function g(e) {
       variant: "text-md/semibold",
       children: t.name
     }), (0, i.jsx)("img", {
-      className: C.__invalid_arrow,
       alt: "",
-      src: p
+      src: g
     })]
   })
 }
@@ -45,7 +44,7 @@ function f(e) {
   let {
     directoryChannelId: t,
     guild: n
-  } = e, s = (0, a.e7)([u.Z], () => u.Z.getDirectoryEntry(t, n.id));
+  } = e, l = (0, a.e7)([u.Z], () => u.Z.getDirectoryEntry(t, n.id)), r = s.useRef(null);
   return (0, i.jsxs)("div", {
     className: C.guildRow,
     children: [(0, i.jsx)(d.Z, {
@@ -57,7 +56,8 @@ function f(e) {
       variant: "text-md/normal",
       children: n.name
     }), (0, i.jsx)(m.Z, {
-      entry: s,
+      entry: l,
+      targetElementRef: r,
       children: e => {
         var t, n;
         return (0, i.jsx)(o.xhG, (t = function(e) {
@@ -78,6 +78,7 @@ function f(e) {
           }
           return e
         }({
+          ref: r,
           size: "md",
           color: "currentColor"
         }, e), n = n = {
@@ -97,7 +98,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function j(e) {
   let t, {
       directoryChannelId: n,
       onClose: l,
@@ -105,14 +106,14 @@ function _(e) {
       handleChooseCreate: d,
       directoryGuildName: u,
       availableGuilds: m,
-      addedGuilds: p,
-      loading: _
+      addedGuilds: g,
+      loading: j
     } = e,
-    [j, b] = s.useState(0);
-  return t = _ ? (0, i.jsx)("div", {
+    [_, b] = s.useState(0);
+  return t = j ? (0, i.jsx)("div", {
     className: C.emptyContainer,
     children: (0, i.jsx)(o.$jN, {})
-  }) : 0 === j ? 0 === m.length ? (0, i.jsxs)("div", {
+  }) : 0 === _ ? 0 === m.length ? (0, i.jsxs)("div", {
     className: C.emptyContainer,
     children: [(0, i.jsx)("img", {
       src: h,
@@ -124,10 +125,10 @@ function _(e) {
       variant: "text-md/normal",
       children: x.intl.string(x.t.liuEhY)
     })]
-  }) : m.map(e => (0, i.jsx)(g, {
+  }) : m.map(e => (0, i.jsx)(p, {
     guild: e,
     onClick: () => a(e)
-  }, e.id)) : 0 === p.length ? (0, i.jsxs)("div", {
+  }, e.id)) : 0 === g.length ? (0, i.jsxs)("div", {
     className: C.emptyContainer,
     children: [(0, i.jsx)("img", {
       src: h,
@@ -139,7 +140,7 @@ function _(e) {
       variant: "text-md/normal",
       children: x.intl.string(x.t.WJLuKC)
     })]
-  }) : p.map(e => (0, i.jsx)(f, {
+  }) : g.map(e => (0, i.jsx)(f, {
     directoryChannelId: n,
     guild: e
   }, e.id)), (0, i.jsxs)(i.Fragment, {
@@ -163,19 +164,19 @@ function _(e) {
         children: x.intl.string(x.t.pYFZ9v)
       }), (0, i.jsxs)(o.njP, {
         className: C.tabBar,
-        selectedItem: j,
+        selectedItem: _,
         onItemSelect: b,
         type: "top",
         look: "brand",
         children: [(0, i.jsx)(o.njP.Item, {
           className: r()(C.tabBarItem, {
-            [C.selectedTab]: 0 === j
+            [C.selectedTab]: 0 === _
           }),
           id: 0,
           children: x.intl.string(x.t.FTe8HR)
         }), (0, i.jsx)(o.njP.Item, {
           className: r()(C.tabBarItem, {
-            [C.selectedTab]: 1 === j
+            [C.selectedTab]: 1 === _
           }),
           id: 1,
           children: x.intl.string(x.t.epOump)

@@ -60,7 +60,7 @@ let h = e => {
     hideIcon: _ = !1,
     useRemSizes: h = !1,
     children: m = []
-  } = e, g = null, E = c.intl.string(c.t.g76OcH);
+  } = e, g = null, E = c.intl.string(c.t.g76OcH), b = t ? u.botTagInvert : u.botTagRegular;
   switch (n) {
     case l.Hb.SYSTEM_DM:
     case l.Hb.OFFICIAL:
@@ -75,6 +75,9 @@ let h = e => {
     case l.Hb.STAFF_ONLY_DM:
       g = c.intl.string(c.t.oMx98P);
       break;
+    case l.Hb.NOT_STAFF_WARNING:
+      g = c.intl.string(c.t.UWhXbG), b = u.botTagNotStaffWarning;
+      break;
     case l.Hb.REMIX:
       d = !1, g = c.intl.string(c.t.uXDG39);
       break;
@@ -82,10 +85,10 @@ let h = e => {
     default:
       g = c.intl.string(c.t["9RNkeH"])
   }
-  let b = n === l.Hb.ORIGINAL_POSTER,
-    y = n === l.Hb.REMIX,
-    O = null;
-  d && (O = (0, r.jsx)(o.u, {
+  let y = n === l.Hb.ORIGINAL_POSTER,
+    O = n === l.Hb.REMIX,
+    v = null;
+  d && (v = (0, r.jsx)(o.u, {
     text: E,
     align: "center",
     position: "top",
@@ -94,17 +97,16 @@ let h = e => {
       color: s.TVs.colors.WHITE
     }))
   }));
-  let v = t ? u.botTagInvert : u.botTagRegular,
-    I = e => (0, r.jsxs)("span", p(f({}, e), {
-      className: a()(i, v, h ? u.rem : u.px, {
-        [u.botTagOP]: b,
-        [u.botTagRemix]: y
-      }),
-      children: [_ ? null : O, m, (0, r.jsx)("span", {
-        className: u.botText,
-        children: g
-      })]
-    }));
+  let I = e => (0, r.jsxs)("span", p(f({}, e), {
+    className: a()(i, b, h ? u.rem : u.px, {
+      [u.botTagOP]: y,
+      [u.botTagRemix]: O
+    }),
+    children: [_ ? null : v, m, (0, r.jsx)("span", {
+      className: u.botText,
+      children: g
+    })]
+  }));
   switch (n) {
     case l.Hb.REMIX:
       return (0, r.jsx)(o.u, {
