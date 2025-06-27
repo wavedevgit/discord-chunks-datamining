@@ -31,14 +31,14 @@ function p(e) {
   }
   return e
 }
-let x = [{
+let h = [{
     name: "Preview",
     value: "preview"
   }, {
     name: "Validate",
     value: "validate"
   }],
-  h = {
+  x = {
     label: "[none selected]",
     value: null
   },
@@ -74,7 +74,7 @@ let x = [{
         previewProfileEffectId: t,
         setPreviewProfileEffectId: n
       } = (0, o.N9)(),
-      s = r.useMemo(() => [h, ...e.map(e => ({
+      s = r.useMemo(() => [x, ...e.map(e => ({
         label: e.name,
         value: e.id
       }))], [e]);
@@ -214,12 +214,12 @@ let x = [{
       validationComplete: n,
       warnings: i,
       errors: s
-    } = (0, u.g)(), o = Object.entries(s), d = Object.entries(i), p = o.length > 0, x = d.length > 0, h = r.useCallback(n => {
+    } = (0, u.g)(), o = Object.entries(s), d = Object.entries(i), p = o.length > 0, h = d.length > 0, x = r.useCallback(n => {
       t(), e(n)
     }, [e, t]);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(c.L, {
-        onDrop: h
+        onDrop: x
       }), n ? (0, a.jsxs)("div", {
         className: m.validationSummary,
         children: [(0, a.jsx)(l.Text, {
@@ -228,7 +228,7 @@ let x = [{
           children: "".concat(o.length, " errors")
         }), (0, a.jsx)(l.Text, {
           variant: "text-md/normal",
-          color: x ? "text-feedback-warning" : "text-default",
+          color: h ? "text-feedback-warning" : "text-default",
           children: "".concat(d.length, " warnings")
         }), (0, a.jsx)(l.zxk, {
           color: l.zxk.Colors.RED,
@@ -270,7 +270,7 @@ let x = [{
             }, "".concat(n, "-").concat(t))
           })
         })]
-      }), x && (0, a.jsxs)(a.Fragment, {
+      }), h && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Warnings"
@@ -311,12 +311,12 @@ let x = [{
       clearAssets: s,
       clearIgnoredFilenames: u,
       processAndUpsertAssets: p
-    } = (0, d.hm)(), x = r.useCallback(e => {
+    } = (0, d.hm)(), h = r.useCallback(e => {
       n(), p(e)
     }, [p, n]);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(c.L, {
-        onDrop: x
+        onDrop: h
       }), (0, a.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Drop files in this panel to begin preview."
@@ -351,7 +351,7 @@ let x = [{
     return (0, a.jsxs)("div", {
       className: m.container,
       children: [(0, a.jsx)(l.sY7, {
-        options: x,
+        options: h,
         value: e,
         onChange: e => {
           let {

@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 n.d(t, {
   ZP: () => _,
-  v0: () => h
+  v0: () => x
 }), n(388685), n(539854), n(642613);
 var a, r = n(255367),
   l = n(73800),
@@ -13,8 +13,8 @@ var a, r = n(255367),
   u = n(424625),
   m = n(823379),
   p = n(246992),
-  x = n(616257),
-  h = ((a = {}).NONE = "", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a);
+  h = n(616257),
+  x = ((a = {}).NONE = "", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a);
 let b = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI", "Games", "Audio / Video", "Development"],
   f = l.forwardRef(function(e, t) {
     let {
@@ -24,8 +24,8 @@ let b = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI",
       children: i
     } = e;
     return (0, r.jsx)(c.P3F, {
-      className: s()(x.tabItem, {
-        [x.selected]: a
+      className: s()(h.tabItem, {
+        [h.selected]: a
       }),
       "data-tab-id": n,
       innerRef: t,
@@ -39,7 +39,7 @@ function v(e) {
     tabs: t,
     selectedTabId: n,
     onSelectTab: a
-  } = e, i = l.useRef(new Map), [s, h] = l.useState(() => new Set), {
+  } = e, i = l.useRef(new Map), [s, x] = l.useState(() => new Set), {
     ref: v,
     width: _
   } = (0, d.ZP)(), g = l.useRef(null);
@@ -49,7 +49,7 @@ function v(e) {
     let s = new Set,
       o = null != _ ? _ : 0;
     for (let c of (o -= null != (a = null == (e = i.current.get(n)) ? void 0 : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (l = null == (r = i.current.get(c.id)) ? void 0 : r.getBoundingClientRect().width) ? l : 0) < 0 && s.add(c.id);
-    h(s)
+    x(s)
   }, [t, _, v, n]);
   let j = l.useCallback(e => {
     var n, l, i;
@@ -94,9 +94,9 @@ function v(e) {
     })
   }, [t, a]);
   return (0, r.jsxs)("div", {
-    className: x.tabBarContainer,
+    className: h.tabBarContainer,
     children: [(0, r.jsxs)("div", {
-      className: x.tabBar,
+      className: h.tabBar,
       ref: v,
       children: [t.map(e => {
         let {
@@ -110,7 +110,7 @@ function v(e) {
           children: l
         }, t)
       }).filter(m.lm), (0, r.jsx)("div", {
-        className: x.tabMeasurer,
+        className: h.tabMeasurer,
         children: t.map(e => {
           let {
             id: t,
@@ -128,7 +128,7 @@ function v(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: x.menu,
+      className: h.menu,
       children: s.size > 0 && (0, r.jsx)(c.yRy, {
         targetElementRef: g,
         layerContext: p.O$,
@@ -157,11 +157,11 @@ function v(e) {
             return e
           }({}, e), n = n = {
             buttonRef: g,
-            className: x.overflowChevron,
+            className: h.overflowChevron,
             size: c.zxk.Sizes.ICON,
             look: c.zxk.Looks.BLANK,
             children: (0, r.jsx)(u.Z, {
-              className: x.__invalid_overflowIcon,
+              className: h.__invalid_overflowIcon,
               width: 16,
               height: 16
             })

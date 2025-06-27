@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 n.r(t), n.d(t, {
   transitionToGlobalDiscovery: () => function e(t) {
-    var n, h, b;
+    var n, x, b;
     let f = t.tab;
     switch (d.Z.setState({
         selectedTab: f
@@ -10,9 +10,9 @@ n.r(t), n.d(t, {
         let v = t.selectedServersTab;
         return null != v ? l.Z.setState({
           selectedTab: v,
-          entrypoint: null != (n = t.entrypoint) ? n : x.Qq.UNKNOWN
+          entrypoint: null != (n = t.entrypoint) ? n : h.Qq.UNKNOWN
         }) : l.Z.setState({
-          entrypoint: null != (h = t.entrypoint) ? h : x.Qq.UNKNOWN
+          entrypoint: null != (x = t.entrypoint) ? x : h.Qq.UNKNOWN
         }), (0, s.uL)(m.Z5c.GLOBAL_DISCOVERY_SERVERS, t.extra);
       case u.GlobalDiscoveryTab.APPS:
         if (null != t.newSessionState) {
@@ -90,4 +90,4 @@ var a = n(258971),
   u = n(49898),
   m = n(981631),
   p = n(979007),
-  x = n(128449)
+  h = n(128449)
