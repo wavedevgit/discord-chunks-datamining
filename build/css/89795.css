@@ -1,6 +1,6 @@
 /**
   Module ID: 89795
-  Original File Name: 284061fa6c1454d0
+  Original File Name: 2caec0063a1329ec
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -5946,35 +5946,12 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     width: 660px
 }
 
-.dynamicImage_c880e8 {
-    height: auto;
-    min-width: 700px;
-    position: absolute;
-    width: 100%
-}
-
-.fullscreenHero_c880e8,.fullscreenHeroMarketingOptimization_c880e8,.fullscreenHeroModified_c880e8 {
-    padding-top: 96px
-}
-
-.fullscreenHero_c880e8 {
-    margin-bottom: 96px
-}
-
-.fullscreenHeroModified_c880e8 {
-    margin-bottom: 72px
-}
-
 .noTopPaddingOverride_c880e8 {
     padding-top: 0
 }
 
 .settingsHeroBogoHeight_c880e8 {
     height: 260px
-}
-
-.settingsHeroBogoMarginFullscreen_c880e8 {
-    margin-bottom: 40px
 }
 
 .premiumTierCardsContainer_c880e8 {
@@ -6008,10 +5985,6 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     width: 100%
 }
 
-.perkCardsContainerSpacingFullscreen_c880e8 {
-    margin-bottom: 86px
-}
-
 .planComparisonTable_c880e8 {
     max-width: 700px
 }
@@ -6029,61 +6002,22 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     width: 100%
 }
 
-.tableLeftSideDecoration_c880e8 {
-    left: -32px;
-    top: 10%
-}
-
-.tableLeftSideDecoration_c880e8,.tableRightSideDecoration_c880e8 {
-    filter: saturate(var(--saturation-factor,1));
-    position: absolute
-}
-
-.tableRightSideDecoration_c880e8 {
-    right: -32px;
-    top: 40%
-}
-
 .bottomIllustration_c880e8 {
     bottom: 0;
     filter: saturate(var(--saturation-factor,1));
     position: absolute
 }
 
-@media screen and (max-width:1560px) {
-    .tableLeftSideDecoration_c880e8,.tableRightSideDecoration_c880e8 {
-        display: none
-    }
-}
-
-.fullscreenExistingSubscriberSpacing_c880e8 {
-    margin-bottom: 40px;
-    margin-top: 40px
-}
-
 .existingSubscriberSpacing_c880e8 {
     margin-bottom: 24px
-}
-
-.bannerFullScreenNegativeMargin_c880e8 {
-    margin-top: -76px
 }
 
 .footerSpacing_c880e8 {
     height: 128px
 }
 
-.footerSpacingFullscreen_c880e8 {
-    height: 96px
-}
-
 .zIndex1_c880e8 {
     z-index: 1
-}
-
-.fullScreenHeroSmallerPadding_c880e8 {
-    padding-bottom: unset;
-    padding-top: unset
 }
 
 .trialMarketingMargin_c880e8 {
@@ -6119,26 +6053,8 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     padding-top: 0
 }
 
-.whatsNewSectionBackgroundNoGap_c880e8 {
-    gap: 16px
-}
-
 .whatsNewSection_c880e8 {
     padding-bottom: 82px
-}
-
-.pdSparklesTop_c880e8 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translateY(-50%)
-}
-
-.pdSparklesBottom_c880e8 {
-    bottom: 0;
-    left: 10px;
-    position: absolute;
-    transform: translateY(50%)
 }
 
 .bottomOfPageVisibilitySensor_c880e8 {
@@ -19293,4 +19209,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=284061fa6c1454d0.css.map*/
+/*# sourceMappingURL=2caec0063a1329ec.css.map*/

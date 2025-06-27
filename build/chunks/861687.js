@@ -628,7 +628,7 @@ class ev extends d.Z {
       } else n === eo.hes.RTC_CONNECTED && this.stateHistory.reset(this.state)
     }), d.on(f.Sh.SecureFramesUpdate, e => {
       this._secureFramesState = e, this.emit(z.z.SecureFramesUpdate)
-    }), d.on(f.Sh.Ping, this._handlePing.bind(this)), d.on(f.Sh.PingTimeout, this._handlePingTimeout.bind(this)), d.on(f.Sh.OutboundLossRate, this._handleOutboundLossRate.bind(this)), d.on(f.Sh.SoundshareTrace, this._handleSoundshareTrace.bind(this)), d.on(f.Sh.LocalVideoDisabled, this._handleLocalVideoDisabled.bind(this)), d.on(f.Sh.Stats, K.Z.create()), d.on(f.Sh.RemoteStreamsReady, this._handleRemoteStreamsReady.bind(this)), d.on(f.Sh.NoiseCancellationError, e => {
+    }), d.on(f.Sh.Ping, this._handlePing.bind(this)), d.on(f.Sh.PingTimeout, this._handlePingTimeout.bind(this)), d.on(f.Sh.OutboundLossRate, this._handleOutboundLossRate.bind(this)), d.on(f.Sh.SoundshareTrace, this._handleSoundshareTrace.bind(this)), d.on(f.Sh.LocalVideoDisabled, this._handleLocalVideoDisabled.bind(this)), d.on(f.Sh.Stats, K.Z.create()), d.on(f.Sh.RemoteStreamsReady, this._handleRemoteStreamsReady.bind(this)), d.on(f.Sh.UsersMerged, this.handleUsersMerged.bind(this)), d.on(f.Sh.NoiseCancellationError, e => {
       this._noiseCancellationError = e
     }), d.on(f.Sh.MLSFailure, this._handleMLSFailure.bind(this)), d.setRemoteVideoSinkWants(this._remoteVideoSinkWants), this._connection = d, this._mediaEngineConnectionId = d.mediaEngineConnectionId
   }
@@ -636,11 +636,7 @@ class ev extends d.Z {
     let i = this._connection;
     if (null != i && this.userId !== t) {
       var a;
-      r !== es.Dg.NONE && (i.createUser(t, n), p.Z.dispatch({
-        type: "RTC_CONNECTION_USER_CREATE",
-        userId: t,
-        context: this.context
-      })), null == (a = this._localMediaSinkWantsManager) || a.setAudioSSRC(t, n)
+      r !== es.Dg.NONE && i.createUser(t, n), null == (a = this._localMediaSinkWantsManager) || a.setAudioSSRC(t, n)
     }
   }
   handleFlags(e, t) {
@@ -648,6 +644,9 @@ class ev extends d.Z {
   }
   handlePlatform(e, t) {
     this.emit(z.z.Platform, e, t, this.channelId)
+  }
+  handleUsersMerged(e) {
+    this.emit(z.z.UsersMerged, e.map(e => e.id), this.context)
   }
   getOrCreateVideoQuality() {
     if (null != this._connection && null == this._videoQuality) {

@@ -53,12 +53,12 @@ class S extends a.Z {
       this.applyStreamRecording(a, t)
     }
   }
-  handleRTCUserCreate(e) {
+  handleRTCUsersUpdate(e) {
     let {
-      userId: t,
+      userIds: t,
       context: n
     } = e;
-    n === r.Yn.DEFAULT && this.applyUserVoiceRecording(t)
+    n === r.Yn.DEFAULT && t.forEach(this.applyUserVoiceRecording)
   }
   handleRTCConnectionFlags(e) {
     let {
@@ -202,7 +202,7 @@ class S extends a.Z {
     super(...e), T(this, "actions", {
       POST_CONNECTION_OPEN: e => this.handlePostConnectionOpen(),
       RTC_CONNECTION_FLAGS: e => this.handleRTCConnectionFlags(e),
-      RTC_CONNECTION_USER_CREATE: e => this.handleRTCUserCreate(e),
+      RTC_CONNECTION_USERS_MERGED: e => this.handleRTCUsersUpdate(e),
       CLIPS_INIT_FAILURE: e => this.handleClipsInitFailure(e),
       CLIPS_SETTINGS_UPDATE: e => this.applyNativeClipsSettings(e),
       CLIPS_ALLOW_VOICE_RECORDING_UPDATE: () => this.handleClipsAllowVoiceRecordingUpdate(),
