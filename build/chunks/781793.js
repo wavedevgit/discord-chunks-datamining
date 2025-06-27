@@ -53,5 +53,9 @@ e.exports = {
   withPromotionalCardImage: "withPromotionalCardImage_ac86f6",
   promotionalCardImage: "promotionalCardImage_ac86f6",
   promotionalBackgroundImage: "promotionalBackgroundImage_ac86f6",
-  tier2SideGradient: "tier2SideGradient_ac86f6"
+  tier2SideGradient: "tier2SideGradient_ac86f6",
+  subButton: "subButton_ac86f6",
+  v2SubButtonText: "v2SubButtonText_ac86f6",
+  buttonShine: "buttonShine_ac86f6",
+  subButtonText: "subButtonText_ac86f6"
 }

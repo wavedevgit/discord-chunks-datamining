@@ -28,7 +28,7 @@ let h = () => {
     h = (0, s.Fg)(),
     f = (0, l.ap)(h),
     j = o.ZP.getName(e),
-    _ = f ? d.Z : c.Z;
+    m = f ? d.Z : c.Z;
   return null == e ? null : (0, i.jsxs)("div", {
     className: x.attributionBannerContainer,
     children: [(0, i.jsx)("div", {
@@ -61,7 +61,7 @@ let h = () => {
       children: p.intl.format(p.t.oxhCOj, {
         userName: j
       })
-    }), (0, i.jsx)(_, {
+    }), (0, i.jsx)(m, {
       className: x.bannerIcon
     })]
   })

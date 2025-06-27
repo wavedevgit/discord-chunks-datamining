@@ -18,8 +18,8 @@ var l = t(120356),
   h = t(409813),
   f = t(614223),
   j = t(48175),
-  _ = t(474936),
-  m = t(388032),
+  m = t(474936),
+  _ = t(388032),
   L = t(677163);
 
 function g(e) {
@@ -32,7 +32,7 @@ function g(e) {
     activeSubscription: s,
     startedPaymentFlowWithPaymentSourcesRef: d,
     setSelectedPlanId: c,
-    priceOptions: m
+    priceOptions: _
   } = (0, x.JL)(), {
     isGift: L,
     claimableRewards: g
@@ -54,7 +54,7 @@ function g(e) {
       i(t);
       let C = h.h8.PLAN_SELECT,
         d = (0, u.k5)(n);
-      d !== _.Si.TIER_1 && d !== _.Si.TIER_2 || t !== _.Si.TIER_0 || r || (C = h.h8.WHAT_YOU_LOSE);
+      d !== m.Si.TIER_1 && d !== m.Si.TIER_2 || t !== m.Si.TIER_0 || r || (C = h.h8.WHAT_YOU_LOSE);
       let c = (0, j.T)({
           userTrialOffer: s,
           isGift: r,
@@ -84,7 +84,7 @@ function g(e) {
     onClose: t,
     isGift: L,
     inOfferExperience: v,
-    priceOptions: m,
+    priceOptions: _,
     showPromotionalGiftBanner: E,
     enablePremiumBrandRefresh: P
   })
@@ -101,10 +101,10 @@ function y(e) {
     enablePremiumBrandRefresh: p
   } = e, x = p ? (0, i.jsx)(s.X6q, {
     variant: "heading-lg/bold",
-    children: m.intl.string(m.t["r+SebW"])
+    children: _.intl.string(_.t["r+SebW"])
   }) : (0, i.jsx)(s.vwX, {
     tag: s.RB0.H4,
-    children: m.intl.string(m.t["r+SebW"])
+    children: _.intl.string(_.t["r+SebW"])
   });
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(s.xBx, {

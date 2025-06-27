@@ -18,7 +18,7 @@ var r = n(255367),
   p = n(728345),
   h = n(211242),
   m = n(975298),
-  g = n(483454),
+  g = n(892041),
   E = n(47280),
   b = n(695346),
   y = n(882712),
@@ -205,7 +205,7 @@ function X(e) {
     tI = tv ? F.premiumBrandRefreshBackground : void 0,
     {
       enabled: tT
-    } = (0, g.I9)({
+    } = (0, g.l)({
       location: "PaymentModal"
     });
   return (0, r.jsx)(K.Provider, {

@@ -62,10 +62,14 @@ function j() {
               title: _.intl.string(_.t.OjbtDg),
               body: _.intl.string(_.t["0F5Jys"])
             })
-          }, () => c.Z.show({
-            title: _.intl.string(_.t.OjbtDg),
-            body: _.intl.string(_.t["0F5Jys"])
-          })).finally(() => j(!1))
+          }, e => {
+            var t;
+            let n = (null == e ? void 0 : e.message) || (null == e || null == (t = e.body) ? void 0 : t.message) || _.intl.string(_.t["0F5Jys"]);
+            c.Z.show({
+              title: _.intl.string(_.t.OjbtDg),
+              body: n
+            })
+          }).finally(() => j(!1))
         }
       })
     };

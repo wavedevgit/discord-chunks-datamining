@@ -1,6 +1,6 @@
 /**
   Module ID: 43988
-  Original File Name: 8d658c01e6821656
+  Original File Name: 5a847d89703ea713
 **/
 .premiumTrialBadge_e4ef22 {
     align-items: center;
@@ -1740,8 +1740,12 @@
 
 .premiumCards__6df1a {
     display: flex;
-    gap: 24px;
+    gap: var(--space-32);
     width: 100%
+}
+
+.applicationHomeCard__6df1a {
+    width: 342px
 }
 
 .card__6df1a {
@@ -1750,13 +1754,9 @@
     border-radius: var(--radius-sm);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: var(--space-24);
-    position: relative
-}
-
-.tier0__6df1a {
-    margin-top: var(--space-12)
+    position: relative;
+    text-align: left
 }
 
 .tier0__6df1a.pillMargin__6df1a {
@@ -1831,6 +1831,25 @@
     transform: translate(-50%,-50%)
 }
 
+.CTAButton__6df1a {
+    display: flex;
+    margin-top: auto;
+    padding-top: 40px;
+    width: 100%
+}
+
+.premiumCardsContainer__6df1a {
+    align-items: center;
+    display: flex;
+    flex-direction: column
+}
+
+.premiumCardsHeader__6df1a {
+    font-style: italic;
+    margin-bottom: var(--space-64);
+    text-transform: uppercase
+}
+
 .card_b846e5 {
     position: relative
 }
@@ -1853,4 +1872,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=8d658c01e6821656.css.map*/
+/*# sourceMappingURL=5a847d89703ea713.css.map*/

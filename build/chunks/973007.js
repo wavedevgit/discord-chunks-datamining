@@ -23,7 +23,7 @@ function C(e) {
     style: {
       cursor: "pointer"
     },
-    children: (0, i.jsx)(r.I, {
+    children: (0, i.jsx)(r.IL, {
       ctaButton: null,
       showPromotionalGiftBanner: C,
       showYearlyPrice: !0,
@@ -61,7 +61,8 @@ function d(e) {
     style: {
       cursor: "pointer"
     },
-    children: (0, i.jsx)(r.U, {
+    children: (0, i.jsx)(r.UQ, {
+      className: o.premiumBrandRefreshTier0Card,
       ctaButton: null,
       showYearlyPrice: !0,
       isGift: t,

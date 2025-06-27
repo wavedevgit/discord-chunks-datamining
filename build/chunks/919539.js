@@ -1,6 +1,6 @@
 /** Chunk was on 89795 **/
 n.d(t, {
-  Z: () => I
+  Z: () => N
 }), n(388685);
 var i = n(255367),
   r = n(73800),
@@ -30,7 +30,7 @@ function T(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, T = (0, f.c_)(), I = (0, p.q)(), N = h.h2.useSetting().includes(n), y = h.mX.useSetting(), A = h.zA.useSetting().includes(n), P = r.useCallback(e => {
+  } = e, T = (0, f.c_)(), N = (0, p.q)(), I = h.h2.useSetting().includes(n), y = h.mX.useSetting(), A = h.zA.useSetting().includes(n), P = r.useCallback(e => {
     let i = (0, m.gl)();
     e ? i.delete(n) : i.add(n), h.zA.updateSetting(Array.from(i)), c.default.track(S.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: E.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
@@ -68,9 +68,9 @@ function T(e) {
     scrollPosition: j.FY.MESSAGE_REQUESTS_V2,
     children: n === O.T ? (0, i.jsx)(_.Z, {
       title: v.intl.string(v.t["3o2ojo"]),
-      value: !I && !y,
+      value: !N && !y,
       onChange: e => D(e, !1),
-      disabled: I,
+      disabled: N,
       note: v.intl.format(v.t.wkm9a2, {
         helpdeskArticle: d.Z.getArticleURL(S.BhN.MESSAGE_REQUESTS)
       })
@@ -78,7 +78,7 @@ function T(e) {
       title: v.intl.string(v.t["3o2ojo"]),
       value: !A,
       onChange: e => D(e, !0),
-      disabled: N,
+      disabled: I,
       note: T ? v.intl.format(v.t.WpnWLS, {
         helpdeskArticle: d.Z.getArticleURL(S.BhN.MESSAGE_REQUESTS)
       }) : v.intl.format(v.t.wkm9a2, {
@@ -88,7 +88,7 @@ function T(e) {
   })
 }
 
-function I(e) {
+function N(e) {
   let {
     ingress: t = j.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n

@@ -1,6 +1,8 @@
 /** Chunk was on 43988 **/
 "use strict";
 e.exports = {
+  premiumCards: "premiumCards__6df1a",
+  applicationHomeCard: "applicationHomeCard__6df1a",
   card: "card__6df1a",
   tier0: "tier0__6df1a",
   pillMargin: "pillMargin__6df1a",
@@ -11,5 +13,8 @@ e.exports = {
   divider: "divider__6df1a",
   featureItem: "featureItem__6df1a",
   priceHeader: "priceHeader__6df1a",
-  pill: "pill__6df1a"
+  pill: "pill__6df1a",
+  CTAButton: "CTAButton__6df1a",
+  premiumCardsContainer: "premiumCardsContainer__6df1a",
+  premiumCardsHeader: "premiumCardsHeader__6df1a"
 }

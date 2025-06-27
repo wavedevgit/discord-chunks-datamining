@@ -22,9 +22,9 @@ function f(e) {
     onClose: n,
     selectedPromotionalDecoPurchaseRecord: t,
     selectedGiftingPromotionReward: f
-  } = e, j = (0, l.e7)([u.default], () => u.default.getCurrentUser()), _ = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), {
-    analyticsLocations: m
-  } = (0, a.ZP)(), L = r.EFr.SIZE_32, g = (0, o.Z)(null == f ? void 0 : f.assetId, L, !_), y = (0, c.Z)(), E = null == y ? void 0 : y.giftPurchaseConfirmation;
+  } = e, j = (0, l.e7)([u.default], () => u.default.getCurrentUser()), m = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), {
+    analyticsLocations: _
+  } = (0, a.ZP)(), L = r.EFr.SIZE_32, g = (0, o.Z)(null == f ? void 0 : f.assetId, L, !m), y = (0, c.Z)(), E = null == y ? void 0 : y.giftPurchaseConfirmation;
   return null == t || null == E ? null : (0, i.jsx)(p.O3, {
     children: (0, i.jsx)(r.mzw, {
       align: d.Z.Align.CENTER,
@@ -33,14 +33,14 @@ function f(e) {
         children: [(0, i.jsx)(r.Xo$, {
           "aria-label": null == j ? void 0 : j.username,
           size: L,
-          src: null == j ? void 0 : j.getAvatarURL(void 0, (0, r.pxk)(L), !_),
+          src: null == j ? void 0 : j.getAvatarURL(void 0, (0, r.pxk)(L), !m),
           avatarDecoration: g
         }), (0, i.jsx)(r.zxk, {
           onClick: () => {
             n(), (0, C.Z)({
               product: t,
               shouldShowPromotionalExperience: !0,
-              analyticsLocations: m,
+              analyticsLocations: _,
               purchaseType: x.o8.PROMOTIONAL
             })
           },

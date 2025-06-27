@@ -1,6 +1,6 @@
 /**
   Module ID: 89795
-  Original File Name: 6ac03b0cfc54971d
+  Original File Name: 284061fa6c1454d0
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -4935,6 +4935,32 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     width: 68px
 }
 
+.container__72cd3 {
+    background-color: var(--background-base-lowest);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    display: flex;
+    margin-top: var(--space-24);
+    padding: var(--space-8)
+}
+
+.textSection__72cd3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+    margin-left: var(--space-16)
+}
+
+.subheading__72cd3 {
+    color: var(--text-default)
+}
+
+.avatar__72cd3 {
+    align-items: center;
+    display: flex
+}
+
 .boxBackdrop_abac7b {
     align-items: center;
     display: flex;
@@ -5977,14 +6003,6 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     margin-top: -36px
 }
 
-.marginTopForButtons_c880e8 {
-    margin-top: 60px
-}
-
-.buttonShine_c880e8 {
-    color: hsl(var(--brand-500-hsl)/.1)
-}
-
 .perkCardsContainerSpacingSettings_c880e8 {
     margin-bottom: 60px!important;
     width: 100%
@@ -6182,18 +6200,6 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
     position: absolute;
     top: -40px;
     width: 100%
-}
-
-.v2SubButtonText_c880e8 {
-    color: var(--brand-500)
-}
-
-.theme-light .v2SubButtonText_c880e8 {
-    color: var(--white)
-}
-
-.subButtonText_c880e8 {
-    color: var(--brand-500)
 }
 
 .cyBanner_cc67fb {
@@ -19287,4 +19293,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=6ac03b0cfc54971d.css.map*/
+/*# sourceMappingURL=284061fa6c1454d0.css.map*/

@@ -46,11 +46,7 @@ function c(e) {
       submitting: c,
       disabled: d,
       onClick: f,
-      children: (0, r.jsx)(l.Text, {
-        variant: "text-sm/medium",
-        color: "always-white",
-        children: s.intl.string(s.t.ZcibdX)
-      })
+      children: s.intl.string(s.t.ZcibdX)
     }), (0, r.jsx)(l.zxk, {
       className: a.ignoreButton,
       look: l.zxk.Looks.FILLED,
@@ -59,11 +55,7 @@ function c(e) {
       submitting: d,
       disabled: c,
       onClick: p,
-      children: (0, r.jsx)(l.Text, {
-        variant: "text-sm/medium",
-        color: "always-white",
-        children: s.intl.string(s.t.xuio0N)
-      })
+      children: s.intl.string(s.t.xuio0N)
     })]
   })
 }

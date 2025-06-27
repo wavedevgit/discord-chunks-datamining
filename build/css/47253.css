@@ -1,6 +1,6 @@
 /**
   Module ID: 47253
-  Original File Name: 0bd827a87f00e962
+  Original File Name: 864806c8f4e598bc
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -236,13 +236,17 @@
     background-image: linear-gradient(41.27deg,var(--premium-tier-2-purple-for-gradients) 20.01%,var(--premium-tier-2-purple-for-gradients-2) 56.27%,var(--premium-tier-2-pink-for-gradients) 92.19%)
 }
 
-.tier0MarketingCard__9e160,.tier2MarketingCard__9e160 {
+.premiumBrandRefreshTier0Card__9e160,.tier0MarketingCard__9e160,.tier2MarketingCard__9e160 {
     width: unset
 }
 
 .tier0MarketingCard__9e160 {
     margin-bottom: 20px;
     margin-top: 16px
+}
+
+.premiumBrandRefreshTier0Card__9e160 {
+    margin-top: var(--space-12)
 }
 
 .tier1__9e160 {
@@ -646,4 +650,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=0bd827a87f00e962.css.map*/
+/*# sourceMappingURL=864806c8f4e598bc.css.map*/

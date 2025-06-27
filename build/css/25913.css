@@ -1,6 +1,6 @@
 /**
   Module ID: 25913
-  Original File Name: a73e60caf95bb9f8
+  Original File Name: a3fc0c7cca0a699a
 **/
 .gradientOuterBorder__8f49b {
     align-items: center;
@@ -312,8 +312,12 @@
 
 .premiumCards__6df1a {
     display: flex;
-    gap: 24px;
+    gap: var(--space-32);
     width: 100%
+}
+
+.applicationHomeCard__6df1a {
+    width: 342px
 }
 
 .card__6df1a {
@@ -322,13 +326,9 @@
     border-radius: var(--radius-sm);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: var(--space-24);
-    position: relative
-}
-
-.tier0__6df1a {
-    margin-top: var(--space-12)
+    position: relative;
+    text-align: left
 }
 
 .tier0__6df1a.pillMargin__6df1a {
@@ -403,6 +403,25 @@
     transform: translate(-50%,-50%)
 }
 
+.CTAButton__6df1a {
+    display: flex;
+    margin-top: auto;
+    padding-top: 40px;
+    width: 100%
+}
+
+.premiumCardsContainer__6df1a {
+    align-items: center;
+    display: flex;
+    flex-direction: column
+}
+
+.premiumCardsHeader__6df1a {
+    font-style: italic;
+    margin-bottom: var(--space-64);
+    text-transform: uppercase
+}
+
 .button__9e160 {
     border-radius: 8px;
     box-sizing: border-box;
@@ -420,13 +439,17 @@
     background-image: linear-gradient(41.27deg,var(--premium-tier-2-purple-for-gradients) 20.01%,var(--premium-tier-2-purple-for-gradients-2) 56.27%,var(--premium-tier-2-pink-for-gradients) 92.19%)
 }
 
-.tier0MarketingCard__9e160,.tier2MarketingCard__9e160 {
+.premiumBrandRefreshTier0Card__9e160,.tier0MarketingCard__9e160,.tier2MarketingCard__9e160 {
     width: unset
 }
 
 .tier0MarketingCard__9e160 {
     margin-bottom: 20px;
     margin-top: 16px
+}
+
+.premiumBrandRefreshTier0Card__9e160 {
+    margin-top: var(--space-12)
 }
 
 .tier1__9e160 {
@@ -830,4 +853,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=a73e60caf95bb9f8.css.map*/
+/*# sourceMappingURL=a3fc0c7cca0a699a.css.map*/
