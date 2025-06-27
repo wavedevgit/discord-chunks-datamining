@@ -153,11 +153,7 @@ let _ = function(e) {
           children: [(0, r.jsx)(u.Z, {
             height: 16,
             width: 16
-          }), (0, r.jsx)(l.Text, {
-            variant: "text-sm/medium",
-            color: "text-default",
-            children: b.intl.string(b.t["+7XY39"])
-          })]
+          }), b.intl.string(b.t["+7XY39"])]
         })]
       }), (0, r.jsx)("div", {
         children: (0, r.jsx)(l.P3F, {
