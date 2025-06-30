@@ -1,5 +1,4 @@
-/** Chunk was on 43988 **/
-"use strict";
+/** Chunk was on 10026 **/
 e.exports = {
   premiumTrialBadge: "premiumTrialBadge_e4ef22",
   backgroundGradient: "backgroundGradient_e4ef22",

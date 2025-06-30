@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => j
 }), n(388685), n(953529);
@@ -14,26 +14,26 @@ var r = n(255367),
   p = n(213609),
   m = n(565138),
   f = n(267101),
-  h = n(336197),
-  g = n(661824),
-  _ = n(430824),
+  g = n(336197),
+  _ = n(661824),
+  h = n(430824),
   b = n(626135),
-  x = n(76535),
+  E = n(76535),
   y = n(866104),
-  E = n(886176),
+  C = n(886176),
   v = n(981631),
-  C = n(388032),
+  x = n(388032),
   O = n(24665);
 
 function j(e) {
   var t;
   let {
     guildId: n
-  } = e, l = (0, c.e7)([_.Z], () => _.Z.getGuild(n)), {
+  } = e, l = (0, c.e7)([h.Z], () => h.Z.getGuild(n)), {
     loading: j,
-    subscriptionsSettings: S
-  } = (0, x.H)(n), {
-    listingsLoaded: I
+    subscriptionsSettings: I
+  } = (0, E.H)(n), {
+    listingsLoaded: S
   } = (0, f.eD)(n), T = (0, f.ue)(n, {
     publishedOnly: !0
   }), N = i.useCallback(async () => {
@@ -54,7 +54,7 @@ function j(e) {
         })
       }
       return e
-    }({}, (0, d.hH)(n))), await (0, h.Z)(v.Z5c.SERVER_SHOP(n))
+    }({}, (0, d.hH)(n))), await (0, g.Z)(v.Z5c.SERVER_SHOP(n))
   }, [n]);
   (0, p.Z)({
     type: o.ImpressionTypes.VIEW,
@@ -63,18 +63,18 @@ function j(e) {
     disableTrack: null == l
   });
   let P = T.length > 0 ? new Date(Math.min(...T.map(e => Date.parse(e.published_at)))) : void 0;
-  return j || !I ? (0, r.jsx)("div", {
+  return j || !S ? (0, r.jsx)("div", {
     className: a()(O.guildShopEmbed, O.spinnerContainer),
     children: (0, r.jsx)(u.$jN, {})
-  }) : null == l || null == S ? null : (0, r.jsxs)("div", {
+  }) : null == l || null == I ? null : (0, r.jsxs)("div", {
     className: O.guildShopEmbed,
     children: [(0, r.jsx)(y.Z, {
-      coverImageAsset: null != (t = S.cover_image_asset) ? t : null
+      coverImageAsset: null != (t = I.cover_image_asset) ? t : null
     }), (0, r.jsx)(u.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
       className: O.serverShopLabel,
-      children: [(0, r.jsx)(E.Z, {
+      children: [(0, r.jsx)(C.Z, {
         height: "16px",
         width: "16px",
         color: s.Z.INTERACTIVE_NORMAL
@@ -82,14 +82,14 @@ function j(e) {
         variant: "heading-sm/semibold",
         color: "interactive-normal",
         className: O.serverShopLabelText,
-        children: C.intl.string(C.t.al5EXF)
+        children: x.intl.string(x.t.al5EXF)
       })]
     }), (0, r.jsx)(u.LZC, {
       size: 16
     }), (0, r.jsx)(u.X6q, {
       variant: "heading-md/semibold",
       color: "text-default",
-      children: C.intl.format(C.t.NZeik5, {
+      children: x.intl.format(x.t.NZeik5, {
         guildName: l.name
       })
     }), (0, r.jsx)(u.LZC, {
@@ -98,10 +98,10 @@ function j(e) {
       variant: "text-sm/normal",
       color: "text-muted",
       lineClamp: 2,
-      children: S.description
+      children: I.description
     }), (0, r.jsx)(u.LZC, {
       size: 16
-    }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(u.LZC, {
+    }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(u.LZC, {
       size: 16
     }), (0, r.jsxs)("div", {
       className: O.guildShopEmbedFooter,
@@ -113,7 +113,7 @@ function j(e) {
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: C.intl.format(C.t.tKZNlZ, {
+            children: x.intl.format(x.t.tKZNlZ, {
               listingCount: T.length
             })
           })
@@ -121,7 +121,7 @@ function j(e) {
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: C.intl.format(C.t["kXr8+f"], {
+            children: x.intl.format(x.t["kXr8+f"], {
               createdYear: P.getFullYear()
             })
           })
@@ -131,13 +131,13 @@ function j(e) {
         onClick: N,
         children: (0, r.jsxs)("div", {
           className: O.guildShopEmbedCtaContent,
-          children: [(0, r.jsx)(E.Z, {
+          children: [(0, r.jsx)(C.Z, {
             height: "18px",
             width: "18px"
           }), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "always-white",
-            children: C.intl.string(C.t.jXx1CA)
+            children: x.intl.string(x.t.jXx1CA)
           })]
         })
       })]

@@ -1,11 +1,11 @@
-/** Chunk was on 11141 **/
+/** Chunk was on 84552 **/
 n.d(t, {
-  X: () => o
+  X: () => a
 });
 var r = n(544891),
   i = n(881052),
   l = n(981631);
-let o = async (e, t) => {
+let a = async (e, t) => {
   try {
     return (await r.tn.get({
       url: l.ANM.PRICE_TIERS,

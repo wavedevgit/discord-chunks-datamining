@@ -1,5 +1,4 @@
-/** Chunk was on 43988 **/
-"use strict";
+/** Chunk was on 10026 **/
 e.exports = {
   messageBlock: "messageBlock__2d815",
   yellowMessageBlock: "yellowMessageBlock__2d815 messageBlock__2d815",

@@ -2,17 +2,17 @@
 n.d(t, {
   Z: () => c
 });
-var i = n(255367);
+var r = n(255367);
 n(73800);
-var r = n(481060),
+var i = n(481060),
   l = n(203143),
   a = n(615669),
   o = n(388032);
 let s = {
-  [a.z.END_EARLY]: e => (0, i.jsx)(r.sNh, {
+  [a.z.END_EARLY]: e => (0, r.jsx)(i.sNh, {
     id: "end-poll-early",
     label: o.intl.string(o.t.grdwws),
-    icon: r.e0C,
+    icon: i.e0C,
     action: () => {
       l.Z.endPollEarly({
         channelId: e.channel_id,
@@ -27,7 +27,7 @@ let s = {
 
 function c(e) {
   let t = (0, a.Z)(e);
-  return 0 === t.length ? null : (0, i.jsx)(i.Fragment, {
+  return 0 === t.length ? null : (0, r.jsx)(r.Fragment, {
     children: t.map(t => s[t](e))
   })
 }

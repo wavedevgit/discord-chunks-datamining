@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => P,
-  _: () => N
+  _: () => T
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -36,12 +36,12 @@ let y = {
     scale: 1,
     opacity: 1
   },
-  S = {
+  N = {
     tension: 2400,
     friction: 52
   };
 
-function N(e) {
+function T(e) {
   let {
     channelId: t,
     onClick: n,
@@ -85,7 +85,7 @@ function N(e) {
   })
 }
 
-function T(e) {
+function S(e) {
   let {
     channelId: t,
     closePopout: n
@@ -94,7 +94,7 @@ function T(e) {
   } = i.useContext(c.Sfi), f = (0, c.q_F)({
     from: d.enabled ? O : y,
     to: w,
-    config: S
+    config: N
   }, "animate-always"), x = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type));
   return (0, r.jsx)(s.animated.div, {
     className: C.popoutContainer,
@@ -107,7 +107,7 @@ function T(e) {
       className: C.popout,
       paddingFix: !1,
       fade: !0,
-      children: [(0, r.jsx)(N, {
+      children: [(0, r.jsx)(T, {
         channelId: t,
         onClick: () => {
           l(!0)
@@ -151,10 +151,10 @@ function P(e) {
         className: C.badge,
         children: s
       })]
-    }) : (0, r.jsx)(N, {
+    }) : (0, r.jsx)(T, {
       onMouseEnter: d,
       channelId: t
-    }), n && (0, r.jsx)(T, {
+    }), n && (0, r.jsx)(S, {
       channelId: t,
       closePopout: () => {
         a(!1)

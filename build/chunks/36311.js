@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(481060),
   c = n(749210),
   u = n(168107),
@@ -24,10 +24,10 @@ function C(e) {
   let {
     guild: t,
     channelId: n
-  } = e, l = (0, a.e7)([f.default], () => {
+  } = e, l = (0, o.e7)([f.default], () => {
     var e;
     return (null == (e = f.default.getCurrentUser()) ? void 0 : e.nsfwAllowed) === !1
-  }), o = (0, p.Kt)(), {
+  }), a = (0, p.Kt)(), {
     verifyAgreementButtonText: C,
     verifyGateDescription: x
   } = (0, p.a1)((null == t ? void 0 : t.isNSFW()) ? b.L0.NSFW_SERVER : b.L0.NSFW_CHANNEL), v = i.useCallback(() => {
@@ -37,7 +37,7 @@ function C(e) {
   }, [t]), O = i.useCallback(() => {
     u.Z.showAgeVerificationGetStartedModal(d.cU.NSFW_GUILD)
   }, []);
-  return o ? (0, r.jsx)(h.Z, {
+  return a ? (0, r.jsx)(h.Z, {
     guildId: null == t ? void 0 : t.id,
     channelId: n,
     modalType: d.it.NSFW_CHANNEL_AGE_VERIFY,
@@ -79,17 +79,17 @@ let x = function(e) {
     guild: t,
     channelId: n,
     className: l
-  } = e, a = i.useRef(null);
+  } = e, o = i.useRef(null);
   return i.useEffect(() => {
     let {
       current: e
-    } = a;
+    } = o;
     null == e || e.scrollToBottom()
   }, []), (0, r.jsx)(s.Den, {
-    ref: a,
+    ref: o,
     className: y.scroller,
     children: (0, r.jsx)("div", {
-      className: o()(l, y.wrapper),
+      className: a()(l, y.wrapper),
       children: (0, r.jsx)(C, {
         guild: t,
         channelId: n

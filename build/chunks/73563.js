@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r, i = n(255367),
   l = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(481060),
   c = n(600164),
   u = n(507675),
@@ -37,8 +37,8 @@ function f(e) {
     disableGradients: t = !1,
     renderHeader: n,
     renderBottomLeft: r,
-    renderBottomCenter: o,
-    renderBottomRight: a,
+    renderBottomCenter: a,
+    renderBottomRight: o,
     renderCenter: u
   } = e, p = l.useRef(null);
   return (0, i.jsx)(s.JcV, {
@@ -64,13 +64,13 @@ function f(e) {
           grow: 1,
           justify: c.Z.Justify.CENTER,
           align: c.Z.Align.CENTER,
-          children: null == o ? void 0 : o()
+          children: null == a ? void 0 : a()
         }), " ", (0, i.jsx)(c.Z, {
           grow: 1,
           justify: c.Z.Justify.END,
           align: c.Z.Align.CENTER,
           className: d.edgeControls,
-          children: null == a ? void 0 : a()
+          children: null == o ? void 0 : o()
         })]
       })]
     })
@@ -83,7 +83,7 @@ function m(e) {
     onDoubleClick: n,
     onActive: r,
     onForceIdle: l,
-    idle: o,
+    idle: a,
     children: s,
     renderChatToasts: c,
     renderVoiceChannelEffects: h,
@@ -104,8 +104,8 @@ function m(e) {
     return i
   }(e, ["screenMessage", "onDoubleClick", "onActive", "onForceIdle", "idle", "children", "renderChatToasts", "renderVoiceChannelEffects", "style"]);
   return (0, i.jsxs)("div", {
-    className: a()(d.root, {
-      [d.idle]: o
+    className: o()(d.root, {
+      [d.idle]: a
     }),
     style: m,
     onMouseMove: r,

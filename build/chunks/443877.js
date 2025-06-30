@@ -1,4 +1,4 @@
-/** Chunk was on 56179 **/
+/** Chunk was on 46653 **/
 i.d(e, {
   Z: () => p
 }), i(388685);
@@ -22,7 +22,7 @@ function p(t) {
     v = (0, n.e7)([u.Z], () => g && u.Z.can(h.Plq.ADD_REACTIONS, t), [g, t]),
     O = (0, r.ux)(p),
     [, b] = (0, s.AB)(p),
-    y = (0, l.$R)(t);
+    S = (0, l.$R)(t);
   return null == t ? {
     disableReactionReads: !0,
     disableReactionCreates: !0,
@@ -55,7 +55,7 @@ function p(t) {
     isLurking: f,
     isGuest: m,
     communicationDisabled: b,
-    isActiveChannelOrUnarchivableThread: y,
+    isActiveChannelOrUnarchivableThread: S,
     isAutomodQuarantined: O
   })), i = i = {
     isLurking: f,

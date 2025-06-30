@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   J: () => I,
   y: () => x
@@ -7,8 +7,8 @@ var r = n(255367),
   i = n(73800),
   l = n(512722),
   o = n.n(l),
-  s = n(481060),
-  a = n(24124),
+  a = n(481060),
+  s = n(24124),
   c = n(636449),
   u = n(620662),
   d = n(513202),
@@ -24,8 +24,8 @@ var r = n(255367),
   v = n(77880),
   C = n(870569),
   j = n(981631),
-  E = n(388032),
-  S = n(390648);
+  S = n(388032),
+  E = n(390648);
 
 function x(e, t, n) {
   return null != e && (null != n ? n.applicationId === e.id : null != t && t.application_id === e.id && t.type === j.IIU.PLAYING && (0, u.Z)(t, j.xjy.JOIN))
@@ -65,7 +65,7 @@ let I = i.memo(function(e) {
         type: "Send Join Invite",
         application_id: L.application_id,
         location: k.location
-      }), (0, a.h7)(L, !1)
+      }), (0, s.h7)(L, !1)
     }, [L, k, B]),
     z = i.useCallback((e, t) => () => {
       (0, p.v)(B, p.d.LEAVE_ACTIVITY), d.Z.leaveActivity({
@@ -83,7 +83,7 @@ let I = i.memo(function(e) {
       if (U && null != R && null != O.Z.getVoiceChannelId()) {
         (0, g.s)("Activity Panel"), (0, m.Z)(R.pid);
         return
-      }(0, s.ZDy)(async () => {
+      }(0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("46746"), n.e("33641")]).then(n.bind(n, 60594));
@@ -126,12 +126,12 @@ let I = i.memo(function(e) {
     }, [T, w, R, G, U]),
     Y = (null != R || null == D || (0, c.R)()) && (Z || N) ? (Z ? (t = !1, l = () => {
       W(), (0, p.v)(B, p.d.STREAM, !1)
-    }, u = s.g5r, I = E.intl.string(E.t.S5anIS)) : A ? (t = !1, l = () => {
+    }, u = a.g5r, I = S.intl.string(S.t.S5anIS)) : A ? (t = !1, l = () => {
       K(), (0, p.v)(B, p.d.STREAM, !0)
-    }, u = s.hGI, I = null != R ? E.intl.formatToPlainString(E.t.AB5gT0, {
+    }, u = a.hGI, I = null != R ? S.intl.formatToPlainString(S.t.AB5gT0, {
       game: R.name
-    }) : E.intl.string(E.t.FeUKeH)) : (t = !0, l = null, u = s.hGI, I = null != T && (0, _.vd)(T.type) ? E.intl.string(E.t.uQn9Bw) : null != w ? E.intl.string(E.t.fBXEoK) : E.intl.string(E.t.n3feND)), (0, r.jsx)("div", {
-      className: S.panelButtonContainer,
+    }) : S.intl.string(S.t.FeUKeH)) : (t = !0, l = null, u = a.hGI, I = null != T && (0, _.vd)(T.type) ? S.intl.string(S.t.uQn9Bw) : null != w ? S.intl.string(S.t.fBXEoK) : S.intl.string(S.t.n3feND)), (0, r.jsx)("div", {
+      className: E.panelButtonContainer,
       children: (0, r.jsx)(C.Z, {
         tooltipText: I,
         disabled: t,
@@ -140,18 +140,18 @@ let I = i.memo(function(e) {
       })
     })) : null,
     q = V && null == D ? (0, r.jsx)(C.Z, {
-      tooltipText: E.intl.string(E.t["hC/Ze3"]),
+      tooltipText: S.intl.string(S.t["hC/Ze3"]),
       onClick: H,
-      icon: s.ejJ
+      icon: a.ejJ
     }) : null,
     X = null == D ? null : (0, r.jsx)(C.Z, {
-      tooltipText: E.intl.string(E.t["R/FK4O"]),
+      tooltipText: S.intl.string(S.t["R/FK4O"]),
       onClick: z(D.applicationId, D.location),
-      icon: F ? s.Dio : s.PBZ
+      icon: F ? a.Dio : a.PBZ
     }),
     Q = null == P ? null : (0, r.jsx)(f.Z, {});
   return null == Y && null == q && null == X ? null : (0, r.jsxs)("div", {
-    className: S.actions,
+    className: E.actions,
     children: [Y, q, null != X ? X : Q]
   })
 })

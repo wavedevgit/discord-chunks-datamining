@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  o = n(990547),
-  a = n(481060),
+  a = n(990547),
+  o = n(481060),
   s = n(213609),
   c = n(626135),
   u = n(738672),
@@ -50,8 +50,8 @@ function g(e) {
     onDismiss: n
   } = e;
   return (0, s.Z)({
-    type: o.ImpressionTypes.VIEW,
-    name: o.ImpressionNames.HD_STREAMING_POPOUT
+    type: a.ImpressionTypes.VIEW,
+    name: a.ImpressionNames.HD_STREAMING_POPOUT
   }, {
     disableTrack: t
   }, [t]), (0, r.jsxs)("div", {
@@ -62,15 +62,15 @@ function g(e) {
       className: h.image,
       src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
       alt: "HD Streaming Nitro Perk"
-    }), (0, r.jsx)(a.zxk, {
+    }), (0, r.jsx)(o.zxk, {
       className: h.closeButton,
       "aria-label": p.intl.string(p.t.cpT0Cg),
-      look: a.zxk.Looks.BLANK,
-      size: a.zxk.Sizes.NONE,
+      look: o.zxk.Looks.BLANK,
+      size: o.zxk.Sizes.NONE,
       onClick: () => {
         n(), c.default.track(d.rMx.HD_STREAMING_POPOUT_DISMISSED)
       },
-      children: (0, r.jsx)(a.Dio, {
+      children: (0, r.jsx)(o.Dio, {
         size: "xs",
         className: h.closeIcon,
         color: "white"
@@ -79,15 +79,15 @@ function g(e) {
       className: h.infoContainerParent,
       children: (0, r.jsxs)("div", {
         className: h.infoContainer,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           className: h.infoText,
           variant: "text-sm/medium",
           children: p.intl.format(p.t.ruvD7u, {})
         }), (0, r.jsxs)("div", {
           className: h.poweredByNitroContainer,
-          children: [(0, r.jsx)(a.SrA, {
+          children: [(0, r.jsx)(o.SrA, {
             size: "xs"
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(o.Text, {
             className: h.infoText,
             variant: "text-sm/medium",
             children: p.intl.string(p.t["BMw+7O"])

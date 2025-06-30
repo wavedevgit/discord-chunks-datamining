@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(481060),
-  a = n(774078),
+  a = n(481060),
+  o = n(774078),
   s = n(906732),
   c = n(522651),
   u = n(579185),
@@ -27,9 +27,9 @@ let g = e => {
     onMouseEnter: C,
     onMouseLeave: x,
     cancelTimers: v
-  } = (0, u.Z)(200, 300), [j, O] = i.useState(!1), E = (0, l.e7)([p.Z], () => p.Z.effectCooldownEndTime), I = i.useMemo(() => null != E ? (E.getTime() - Date.now()) / 1e3 : 0, [E]), {
-    seconds: S
-  } = (0, a.Z)(null != E ? E : new Date), P = S > 0, {
+  } = (0, u.Z)(200, 300), [j, O] = i.useState(!1), E = (0, l.e7)([p.Z], () => p.Z.effectCooldownEndTime), S = i.useMemo(() => null != E ? (E.getTime() - Date.now()) / 1e3 : 0, [E]), {
+    seconds: I
+  } = (0, o.Z)(null != E ? E : new Date), P = I > 0, {
     parentAnalyticsLocation: Z
   } = (0, s.ZP)(), N = i.useCallback(e => {
     "focus" !== e.type && (j || P || C())
@@ -38,10 +38,10 @@ let g = e => {
   }, [x, j]), A = i.useCallback((e, t) => {
     v(), O(!j), g === f.D.EMOJI ? null == b || b(void 0) : null == b || b(f.D.EMOJI), (!_ || j) && (null == t || t(e))
   }, [v, j, _, b, g]), w = (_ || j) && (g === f.D.EMOJI || null == g), R = i.useRef(null);
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: R,
     shouldShow: w,
-    animation: o.yRy.Animation.FADE,
+    animation: a.yRy.Animation.FADE,
     animationPosition: "top",
     position: "bottom",
     align: "center",
@@ -70,8 +70,8 @@ let g = e => {
       return (0, r.jsx)(d.Z, {
         isCenterButton: !0,
         color: j ? "primaryDark" : void 0,
-        totalCooldownSeconds: I,
-        remainingCooldownSeconds: S,
+        totalCooldownSeconds: S,
+        remainingCooldownSeconds: I,
         className: n,
         onKeyDown: e => {
           e.keyCode === m.yXg.ENTER && e.keyCode === m.yXg.SPACE && A(e, i)

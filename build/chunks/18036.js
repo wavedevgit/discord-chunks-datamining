@@ -1,12 +1,12 @@
-/** Chunk was on 43988 **/
+/** Chunk was on 36006 **/
 "use strict";
 n.d(t, {
   Z: () => b
 }), n(388685);
-var r, i = n(442837),
-  s = n(570140),
-  o = n(592125),
-  l = n(944486),
+var r, s = n(442837),
+  i = n(570140),
+  l = n(592125),
+  o = n(944486),
   a = n(9156);
 
 function c(e, t, n) {
@@ -22,9 +22,9 @@ let u = {},
   f = {};
 
 function p() {
-  let e = l.Z.getChannelId();
+  let e = o.Z.getChannelId();
   if (null == e) return;
-  let t = o.Z.getChannel(e);
+  let t = l.Z.getChannel(e);
   if (null == t || null == t.guild_id) return;
   let n = t.guild_id;
   if (null == f[e] && (f[e] = 0), t.isThread() || a.ZP.isOptInEnabled(n) && !a.ZP.isChannelOrParentOptedIn(n, t.id)) {
@@ -33,20 +33,20 @@ function p() {
   }
   return (f[e]++, null == u[n] && (u[n] = new Set), a.ZP.isFavorite(n, e)) ? void u[n].delete(e) : (null == d[n] || !d[n].has(e)) && f[e] > 50 ? (u[n].add(e), !0) : void 0
 }
-class g extends(r = i.ZP.PersistedStore) {
+class g extends(r = s.ZP.PersistedStore) {
   initialize(e) {
     var t, n;
-    if (this.syncWith([l.Z], p), null == e) return;
+    if (this.syncWith([o.Z], p), null == e) return;
     let {
       suggestedChannels: r,
-      dismissedSuggestions: i,
-      channelOpensByChannelId: s
+      dismissedSuggestions: s,
+      channelOpensByChannelId: i
     } = e;
     if (null != r)
       for (let e in r) t = new Set(r[e]), u[e] = void 0 !== t ? t : new Set;
-    if (null != i)
-      for (let e in i) n = new Set(i[e]), d[e] = void 0 !== n ? n : new Set;
-    f = null != s ? s : {}
+    if (null != s)
+      for (let e in s) n = new Set(s[e]), d[e] = void 0 !== n ? n : new Set;
+    f = null != i ? i : {}
   }
   getSuggestedChannelId(e) {
     return null
@@ -60,7 +60,7 @@ class g extends(r = i.ZP.PersistedStore) {
   }
 }
 c(g, "displayName", "FavoritesSuggestionStore"), c(g, "persistKey", "FavoritesSuggestionStore");
-let b = new g(s.Z, {
+let b = new g(i.Z, {
   DISMISS_FAVORITE_SUGGESTION: function(e) {
     let {
       guildId: t,

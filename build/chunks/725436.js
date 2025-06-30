@@ -1,4 +1,4 @@
-/** Chunk was on 18543 **/
+/** Chunk was on 44421 **/
 n.d(t, {
   m: () => u
 });
@@ -25,7 +25,7 @@ function a(e) {
   return e
 }
 
-function c(e, t) {
+function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -37,20 +37,20 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let s = c(a({}, r.Z.guildEventRules.link), {
+let c = s(a({}, r.Z.guildEventRules.link), {
     react: (0, i.Z)({
       enableBuildOverrides: !1,
       mustConfirmExternalLink: !0
     }).react
   }),
-  o = c(a({}, r.Z.guildEventRules.channelMention), {
+  o = s(a({}, r.Z.guildEventRules.channelMention), {
     react: (0, l.Z)({
       enableBuildOverrides: !1,
       shouldCloseDefaultModals: !0,
       shouldStopPropagation: !0
     }).react
   }),
-  u = r.Z.reactParserFor(c(a({}, r.Z.guildEventRules), {
-    link: s,
+  u = r.Z.reactParserFor(s(a({}, r.Z.guildEventRules), {
+    link: c,
     channelMention: o
   }))

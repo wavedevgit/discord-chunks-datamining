@@ -1,4 +1,4 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 81872 **/
 n.d(t, {
   Z: () => d
 });
@@ -6,20 +6,20 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  a = n(846027),
-  o = n(131951),
+  o = n(846027),
+  a = n(131951),
   s = n(36703),
   c = n(358085),
   u = n(388032);
 
 function d(e) {
-  let t = (0, i.e7)([o.Z], () => (0, s.P)(o.Z.getOutputVolume()));
+  let t = (0, i.e7)([a.Z], () => (0, s.P)(a.Z.getOutputVolume()));
   return (0, r.jsx)(l.II_, {
     id: "output",
     label: u.intl.string(u.t.eATD2N),
     control: (n, i) => {
-      var o, d;
-      return (0, r.jsx)(l._wy, (o = function(e) {
+      var a, d;
+      return (0, r.jsx)(l._wy, (a = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -40,11 +40,11 @@ function d(e) {
         ref: i,
         value: t,
         maxValue: c.isPlatformEmbedded ? 200 : 100,
-        onChange: t => a.Z.setOutputVolume((0, s.A)(t), {
+        onChange: t => o.Z.setOutputVolume((0, s.A)(t), {
           analyticsLocations: e
         }),
         "aria-label": u.intl.string(u.t.eATD2N)
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function d(e) {
         }
         return n
       })(Object(d)).forEach(function(e) {
-        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(d, e))
-      }), o))
+        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(d, e))
+      }), a))
     }
   })
 }

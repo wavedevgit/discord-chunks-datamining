@@ -1,11 +1,11 @@
 /** Chunk was on 38626 **/
 n.d(t, {
-  Z: () => O
+  Z: () => y
 }), n(388685);
 var i = n(255367),
-  o = n(73800),
+  r = n(73800),
   l = n(505266),
-  r = n(695469),
+  o = n(695469),
   a = n(748780),
   s = n(481060),
   c = n(596454),
@@ -48,29 +48,29 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = [];
+let O = [];
 
-function O(e) {
+function y(e) {
   let {
     messageId: t,
     emoji: n,
-    startPosition: O,
-    targetPosition: y
-  } = e, [T, E] = o.useState(0), [R, S] = o.useState(0), [x, N] = o.useState(null), {
-    confettiCanvas: I
-  } = o.useContext(u.h), P = (0, l.uR)(I, x), C = o.useMemo(() => [{
+    startPosition: y,
+    targetPosition: v
+  } = e, [T, x] = r.useState(0), [S, E] = r.useState(0), [R, I] = r.useState(null), {
+    confettiCanvas: P
+  } = r.useContext(u.h), N = (0, l.uR)(P, R), C = r.useMemo(() => [{
     src: null == n.id ? m.ZP.getURL(n.name) : p.ZP.getEmojiURL({
       id: n.id,
       animated: !1,
       size: 22
     }),
     colorize: !1
-  }], [n.name, n.id]), Z = y.x - y.width / 2 * .5, w = y.y - y.height / 2 * .5, A = (0, s.q_F)({
+  }], [n.name, n.id]), w = v.x - v.width / 2 * .5, Z = v.y - v.height / 2 * .5, A = (0, s.q_F)({
     from: {
-      y: O.y
+      y: y.y
     },
     to: {
-      y: w
+      y: Z
     },
     config: {
       duration: 450,
@@ -80,16 +80,16 @@ function O(e) {
       let {
         y: t
       } = e;
-      S(t)
+      E(t)
     }
   }), M = (0, s.q_F)({
     from: {
-      x: O.x,
+      x: y.x,
       scale: 1,
       opacity: 1
     },
     to: {
-      x: Z,
+      x: w,
       scale: .5,
       opacity: .4
     },
@@ -104,31 +104,31 @@ function O(e) {
       let {
         x: t
       } = e;
-      E(t)
+      x(t)
     }
   });
-  return o.useEffect(() => {
-    T > 0 && R > 0 && P.createConfetti(j(b({}, f.We), {
+  return r.useEffect(() => {
+    T > 0 && S > 0 && N.createConfetti(j(b({}, f.We), {
       position: {
         type: "static",
         value: {
           x: T,
-          y: R
+          y: S
         }
       }
     }))
-  }, [P, T, R]), (0, i.jsxs)(i.Fragment, {
+  }, [N, T, S]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(l.Ji, {
-      ref: N,
+      ref: I,
       sprites: C,
-      colors: v,
+      colors: O,
       spriteWidth: f.Ko,
       spriteHeight: f.Ko
     }), (0, i.jsx)(d.ZP, {
-      children: (0, i.jsx)(r.animated.div, {
+      children: (0, i.jsx)(o.animated.div, {
         style: b({}, A),
         className: g.emojiContainer,
-        children: (0, i.jsx)(r.animated.div, {
+        children: (0, i.jsx)(o.animated.div, {
           style: j(b({}, M), {
             opacity: M.opacity
           }),

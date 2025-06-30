@@ -1,31 +1,31 @@
-/** Chunk was on 89149 **/
-n.d(e, {
-  g: () => a,
-  p: () => o
+/** Chunk was on 99546 **/
+n.d(t, {
+  g: () => r,
+  p: () => c
 });
-var r = n(399606),
-  i = n(581883),
-  l = n(592204);
-let a = () => {
-    var t, e, n;
-    let l = (0, r.cj)([i.Z], () => {
-      var t, e;
-      return null != (e = null == (t = i.Z.settings.textAndImages) ? void 0 : t.keywordFilterSettings) ? e : {}
+var a = n(399606),
+  o = n(581883),
+  i = n(592204);
+let r = () => {
+    var e, t, n;
+    let i = (0, a.cj)([o.Z], () => {
+      var e, t;
+      return null != (t = null == (e = o.Z.settings.textAndImages) ? void 0 : e.keywordFilterSettings) ? t : {}
     });
     return {
-      profanity: null == (t = l.profanity) ? void 0 : t.value,
-      sexualContent: null == (e = l.sexualContent) ? void 0 : e.value,
-      slurs: null == (n = l.slurs) ? void 0 : n.value
+      profanity: null == (e = i.profanity) ? void 0 : e.value,
+      sexualContent: null == (t = i.sexualContent) ? void 0 : t.value,
+      slurs: null == (n = i.slurs) ? void 0 : n.value
     }
   },
-  o = () => {
-    var t;
+  c = () => {
+    var e;
     let {
-      profanity: e,
+      profanity: t,
       sexualContent: n,
-      slurs: r
-    } = a();
-    return !!(0, l.Xo)({
+      slurs: a
+    } = r();
+    return !!(0, i.Xo)({
       location: "use-should-filter-keywords"
-    }) && null != (t = e || n || r) && t
+    }) && null != (e = t || n || a) && e
   }

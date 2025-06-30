@@ -1,4 +1,4 @@
-/** Chunk was on 74739 **/
+/** Chunk was on 68024 **/
 n.d(t, {
   Z: () => a
 }), n(388685);
@@ -18,12 +18,12 @@ function a(e) {
     analyticsLocations: n,
     analyticsLocation: a,
     openWithoutBackstack: !0
-  }), u = s ? o.intl.string(o.t["6ndMcn"]) : o.intl.string(o.t["0eiu6O"]), E = s ? o.intl.string(o.t.S09nw8) : o.intl.string(o.t.tEttXV);
+  }), u = s ? o.intl.string(o.t["6ndMcn"]) : o.intl.string(o.t["0eiu6O"]), d = s ? o.intl.string(o.t.S09nw8) : o.intl.string(o.t.tEttXV);
   return (0, r.jsxs)(i.qXd, {
     color: i.DM8.DANGER,
     children: [u, (0, r.jsx)(i.EyT, {
       onClick: c,
-      children: E
+      children: d
     })]
   })
 }

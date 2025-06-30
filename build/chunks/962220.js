@@ -1,17 +1,17 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 });
 var r, i, l = n(39612),
-  a = n(271579),
-  o = n(756647),
-  s = n(625128),
+  s = n(271579),
+  a = n(756647),
+  o = n(625128),
   c = n(626135),
   u = n(954824),
   d = n(751189),
   h = n(981631);
 let p = "template",
-  m = (r = function(e) {
+  g = (r = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -30,19 +30,19 @@ let p = "template",
     return e
   }({}, d.Z), i = i = {
     openNativeAppModal(e) {
-      s.Z.openNativeAppModal(e, h.Etm.GUILD_TEMPLATE_BROWSER)
+      o.Z.openNativeAppModal(e, h.Etm.GUILD_TEMPLATE_BROWSER)
     },
     openMobileApp(e, t) {
       if (null != platform.ua && platform.ua.toLowerCase().indexOf("googlebot") > -1) return;
       let n = null != e ? (0, l.Oh)(e) : (0, l.Gk)(),
-        r = (0, a.WS)(),
-        i = (0, a.ZP)(n, {
+        r = (0, s.WS)(),
+        i = (0, s.ZP)(n, {
           utmSource: p,
           fingerprint: t,
           attemptId: r
         });
       c.default.track(h.rMx.DEEP_LINK_CLICKED, {
-        fingerprint: (0, o.K)(t),
+        fingerprint: (0, a.K)(t),
         attempt_id: r,
         source: p,
         guild_template_code: e

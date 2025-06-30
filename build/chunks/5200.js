@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(695469),
   c = n(481060),
   u = n(542094),
@@ -27,7 +27,7 @@ function C(e) {
   let {
     context: n,
     activityItem: r,
-    onClick: o,
+    onClick: a,
     aspectRatio: y = 0,
     animatedDivClass: C,
     commandOrigin: x
@@ -41,15 +41,15 @@ function C(e) {
     activityItem: r,
     guildId: null != (t = n.channel.getGuildId()) ? t : void 0,
     locationObject: {},
-    onActivityItemSelected: o,
+    onActivityItemSelected: a,
     embeddedActivitiesManager: h.Z,
     assetNames: b,
     commandOrigin: x
-  }), [I, S] = l.useState(!1), P = l.useCallback(() => {
-    S(!0)
-  }, [S]), Z = l.useCallback(() => {
-    S(!1)
-  }, [S]), N = l.useMemo(() => (0, i.jsx)("div", {
+  }), [S, I] = l.useState(!1), P = l.useCallback(() => {
+    I(!0)
+  }, [I]), Z = l.useCallback(() => {
+    I(!1)
+  }, [I]), N = l.useMemo(() => (0, i.jsx)("div", {
     className: g.overlayBadge,
     children: (0, i.jsx)("div", {
       className: g.badgeContainer,
@@ -75,7 +75,7 @@ function C(e) {
         return (0, i.jsx)("div", {
           className: g.activityAction,
           children: (0, i.jsx)("div", {
-            className: a()(g.activityActionButton, g.activityActionButtonDanger),
+            className: o()(g.activityActionButton, g.activityActionButtonDanger),
             children: (0, i.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
@@ -104,7 +104,7 @@ function C(e) {
         value: 0
       },
       to: {
-        value: +!!I
+        value: +!!S
       },
       children: e => {
         let {
@@ -113,7 +113,7 @@ function C(e) {
         return (0, i.jsx)(c.f6W, {
           theme: f.BRd.DARK,
           children: e => (0, i.jsxs)(s.animated.div, {
-            className: a()(e, g.activityItem, C, {
+            className: o()(e, g.activityItem, C, {
               [g.activityItem_13_11]: 0 === y,
               [g.activityItem_16_9]: 1 === y
             }),

@@ -1,5 +1,4 @@
-/** Chunk was on 43988 **/
-"use strict";
+/** Chunk was on 25913 **/
 e.exports = {
   trialHeader: "trialHeader__784e4",
   price: "price__784e4"

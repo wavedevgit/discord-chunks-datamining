@@ -1,52 +1,52 @@
-/** Chunk was on 56179 **/
-i.d(e, {
-  nC: () => c
-}), i(388685), i(704826), i(35282), i(539854);
-var n = i(392711),
-  r = i.n(n),
-  s = i(697741);
-let o = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
+/** Chunk was on 99546 **/
+n.d(t, {
+  nC: () => d
+}), n(388685), n(704826), n(35282), n(539854);
+var a = n(392711),
+  o = n.n(a),
+  i = n(697741);
+let r = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
 
-function l(t) {
-  return t.replace(/('|\u2019|\uFF07)(s|S)$/, "")
+function c(e) {
+  return e.replace(/('|\u2019|\uFF07)(s|S)$/, "")
 }
 
-function a(t) {
-  return t.toLowerCase()
+function l(e) {
+  return e.toLowerCase()
 }
 
-function d(t) {
-  return o.has(t)
+function s(e) {
+  return r.has(e)
 }
 
-function u(t) {
-  return 0 === t.length
+function u(e) {
+  return 0 === e.length
 }
 
-function c(t) {
-  let e = new Set(r()(t.split(/\W+/)).map(l).reject(u).map(a).reject(d).map(s.$).value());
-  return t => (function t(e, i) {
-    if (Array.isArray(e)) e.forEach(e => t(e, i));
-    else if ("string" == typeof e.content && "codeBlock" !== e.type) {
-      let t = [],
-        n = "";
-      e.content.split(/(\W+)/g).forEach(e => {
-        var r;
-        !u(r = a(l(r = e))) && !d(r) && i.has((0, s.$)(r)) ? (n.length > 0 && t.push({
+function d(e) {
+  let t = new Set(o()(e.split(/\W+/)).map(c).reject(u).map(l).reject(s).map(i.$).value());
+  return e => (function e(t, n) {
+    if (Array.isArray(t)) t.forEach(t => e(t, n));
+    else if ("string" == typeof t.content && "codeBlock" !== t.type) {
+      let e = [],
+        a = "";
+      t.content.split(/(\W+)/g).forEach(t => {
+        var o;
+        !u(o = l(c(o = t))) && !s(o) && n.has((0, i.$)(o)) ? (a.length > 0 && e.push({
           type: "text",
-          content: n
-        }), t.push({
+          content: a
+        }), e.push({
           type: "highlight",
-          content: e
-        }), n = "") : n += e
-      }), t.length > 0 && (n.length > 0 && t.push({
+          content: t
+        }), a = "") : a += t
+      }), e.length > 0 && (a.length > 0 && e.push({
         type: "text",
-        content: n
-      }), "text" === e.type ? e.content = t : e.content = [{
+        content: a
+      }), "text" === t.type ? t.content = e : t.content = [{
         type: "text",
-        content: t
+        content: e
       }])
-    } else null != e.content && t(e.content, i);
-    return e
-  })(t, e)
+    } else null != t.content && e(t.content, n);
+    return t
+  })(e, t)
 }

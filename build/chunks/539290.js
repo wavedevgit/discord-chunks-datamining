@@ -1,4 +1,4 @@
-/** Chunk was on 43988 **/
+/** Chunk was on 36006 **/
 "use strict";
 n.d(t, {
   E: () => f,
@@ -6,10 +6,10 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var i = n(120356),
-  s = n.n(i),
-  o = n(780384),
-  l = n(481060),
+var s = n(120356),
+  i = n.n(s),
+  l = n(780384),
+  o = n(481060),
   a = n(410030),
   c = n(696936),
   u = n(903773),
@@ -23,35 +23,35 @@ function p(e) {
   let {
     className: t,
     color: n = c.W.YELLOW,
-    buttonPosition: i = f.BOTTOM,
+    buttonPosition: s = f.BOTTOM,
     notice: p,
     ctaLabel: g,
     ctaLoading: b,
-    ctaDisabled: m,
-    ctaClassName: _,
+    ctaDisabled: v,
+    ctaClassName: m,
     onClick: h
-  } = e, v = (0, a.ZP)();
+  } = e, O = (0, a.ZP)();
   return (0, r.jsx)(u.Z, {
-    className: s()(d.statusWarningBlock, {
+    className: i()(d.statusWarningBlock, {
       [d.statusWarningBlockWithCta]: null != g
     }, t),
-    color: (0, o.wj)(v) ? n : c.W.BROWN,
+    color: (0, l.wj)(O) ? n : c.W.BROWN,
     children: (0, r.jsxs)("div", {
-      className: i,
-      children: [(0, r.jsx)(l.Text, {
+      className: s,
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "interactive-active",
         children: p
       }), null != g && null != h && (0, r.jsx)("div", {
         className: d.ctaButtonContainer,
-        children: (0, r.jsx)(l.zxk, {
-          className: s()(d.ctaButton, (0, o.wj)(v) ? void 0 : d.ctaBlackButton, _),
-          color: (0, o.wj)(v) ? l.zxk.Colors.WHITE : l.zxk.Colors.CUSTOM,
-          size: l.PhG.MEDIUM,
+        children: (0, r.jsx)(o.zxk, {
+          className: i()(d.ctaButton, (0, l.wj)(O) ? void 0 : d.ctaBlackButton, m),
+          color: (0, l.wj)(O) ? o.zxk.Colors.WHITE : o.zxk.Colors.CUSTOM,
+          size: o.PhG.MEDIUM,
           onClick: h,
-          disabled: m,
+          disabled: v,
           submitting: b,
-          children: (0, r.jsx)(l.Text, {
+          children: (0, r.jsx)(o.Text, {
             className: d.ctaButtonText,
             variant: "text-sm/medium",
             children: g

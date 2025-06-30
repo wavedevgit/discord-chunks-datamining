@@ -1,10 +1,10 @@
-/** Chunk was on 25526 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => a
 }), n(388685);
 var r = n(73800),
   i = n(479531),
-  s = n(388032);
+  l = n(388032);
 
 function a(e) {
   let [t, n] = r.useState(!1), [a, o] = r.useState(null);
@@ -13,7 +13,7 @@ function a(e) {
     try {
       return o(null), n(!0), await e(...r)
     } catch (e) {
-      e.message !== s.intl.string(s.t.N2yb9f) && o(e instanceof i.Z ? e : new i.Z(e))
+      e.message !== l.intl.string(l.t.N2yb9f) && o(e instanceof i.Z ? e : new i.Z(e))
     } finally {
       n(!1)
     }

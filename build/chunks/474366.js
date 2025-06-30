@@ -1,7 +1,7 @@
 /** Chunk was on 71879 **/
 "use strict";
 n.d(t, {
-  q: () => S
+  q: () => N
 });
 var r = n(255367),
   i = n(73800),
@@ -110,7 +110,7 @@ function w(e) {
   })
 }
 
-function S() {
+function N() {
   let e = i.useRef(null);
   return (0, r.jsxs)(o.Kqy, {
     className: y.container,

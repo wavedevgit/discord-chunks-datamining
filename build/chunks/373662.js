@@ -1,21 +1,21 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 81872 **/
 n.d(t, {
   ZP: () => _,
-  fO: () => g,
-  sF: () => h
+  fO: () => b,
+  sF: () => g
 });
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(481060),
+  o = n.n(l),
+  a = n(481060),
   s = n(377171),
   c = n(951394),
   u = n(407477),
   d = n(388032),
   p = n(852747);
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function m(e) {
   return e
 }
 
-function f(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -49,27 +49,27 @@ function f(e, t) {
   }
   return i
 }
-let h = i.forwardRef(function(e, t) {
+let g = i.forwardRef(function(e, t) {
   var {
     label: n,
     ariaLabel: i,
     tooltipText: l,
-    tooltipColor: h,
-    icon: g,
+    tooltipColor: g,
+    icon: b,
     iconProps: _,
-    onClick: b,
-    onTooltipShow: x,
+    onClick: v,
+    onTooltipShow: h,
     onTooltipHide: y,
-    disabled: E,
-    dangerous: v,
-    separator: C,
-    sparkle: O,
-    showNewBadge: j,
-    buttonClassName: S,
-    children: I
-  } = e, T = f(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
+    disabled: O,
+    dangerous: j,
+    separator: S,
+    sparkle: x,
+    showNewBadge: I,
+    buttonClassName: P,
+    children: C
+  } = e, E = m(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
   let {
-    canShowReactionsOnMessageHover: N
+    canShowReactionsOnMessageHover: w
   } = u.ZP.useExperiment({
     location: "HoverBarButton"
   }, {
@@ -79,43 +79,43 @@ let h = i.forwardRef(function(e, t) {
     location: "HoverBarButton"
   }, {
     autoTrackExposure: !0
-  }), (0, r.jsx)(o.ua7, {
+  }), (0, r.jsx)(a.ua7, {
     text: null != l ? l : n,
-    color: null != h ? h : o.FGA.PRIMARY,
+    color: null != g ? g : a.FGA.PRIMARY,
     "aria-label": n,
-    onTooltipShow: x,
+    onTooltipShow: h,
     onTooltipHide: y,
     hideOnClick: !0,
     tooltipClassName: p.tooltip,
     children: e => {
       var l, u;
       let {
-        onMouseEnter: f,
-        onMouseLeave: h,
-        onClick: x
+        onMouseEnter: m,
+        onMouseLeave: g,
+        onClick: h
       } = e;
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)(c.zx, (l = m({
+        children: [(0, r.jsxs)(c.zx, (l = f({
           ref: t,
-          className: a()(S, {
-            [p.hoverBarButton]: N
+          className: o()(P, {
+            [p.hoverBarButton]: w
           }),
-          onMouseEnter: f,
-          onMouseLeave: h,
+          onMouseEnter: m,
+          onMouseLeave: g,
           onClick: e => {
-            null == x || x(), b(e)
+            null == h || h(), v(e)
           },
           "aria-label": null != i ? i : n,
-          disabled: E,
-          dangerous: v
-        }, T), u = u = {
-          children: [null != g ? (0, r.jsx)(g, m({
+          disabled: O,
+          dangerous: j
+        }, E), u = u = {
+          children: [null != b ? (0, r.jsx)(b, f({
             className: p.icon,
             color: "currentColor"
-          }, _)) : null, null != I ? (0, r.jsx)("div", {
-            className: a()(p.icon, p.buttonContent),
-            children: I
-          }) : null, O && (0, r.jsx)(o.K1N, {}), j && (0, r.jsx)(o.IGR, {
+          }, _)) : null, null != C ? (0, r.jsx)("div", {
+            className: o()(p.icon, p.buttonContent),
+            children: C
+          }) : null, x && (0, r.jsx)(a.K1N, {}), I && (0, r.jsx)(a.IGR, {
             text: d.intl.string(d.t.y2b7CA),
             color: s.Z.BG_BRAND,
             className: p.newBadge
@@ -129,25 +129,25 @@ let h = i.forwardRef(function(e, t) {
           return n
         })(Object(u)).forEach(function(e) {
           Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(u, e))
-        }), l)), C && (0, r.jsx)(c.Z0, {})]
+        }), l)), S && (0, r.jsx)(c.Z0, {})]
       })
     }
   })
 });
 
-function g(e) {
+function b(e) {
   let {
     className: t
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(p.separator, t)
+    className: o()(p.separator, t)
   })
 }
 
 function _(e) {
   var {
     children: t
-  } = e, n = f(e, ["children"]);
+  } = e, n = m(e, ["children"]);
   let {
     canShowReactionsOnMessageHover: i
   } = u.ZP.useExperiment({
@@ -160,7 +160,7 @@ function _(e) {
   }, {
     autoTrackExposure: !0
   }), (0, r.jsx)(c.ZP, {
-    className: a()(n.className, p.popover, {
+    className: o()(n.className, p.popover, {
       [p.popoverReactionHoverBar]: i
     }),
     children: t

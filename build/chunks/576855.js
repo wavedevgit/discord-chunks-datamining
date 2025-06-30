@@ -1,4 +1,4 @@
-/** Chunk was on 74739 **/
+/** Chunk was on 68024 **/
 n.d(t, {
   Z: () => O
 });
@@ -8,18 +8,18 @@ var r, i, l = n(255367),
   c = n.n(a),
   s = n(481060),
   u = n(388032),
-  E = n(108921);
-let d = {
-  BLOCK: E.block,
-  INLINE: E.inline
+  d = n(108921);
+let _ = {
+  BLOCK: d.block,
+  INLINE: d.inline
 };
-class _ extends(i = o.PureComponent) {
+class E extends(i = o.PureComponent) {
   render() {
     let {
       children: e,
       className: t,
       textClassName: n,
-      type: r = d.BLOCK,
+      type: r = _.BLOCK,
       style: i
     } = this.props;
     return (0, l.jsxs)("div", {
@@ -29,19 +29,19 @@ class _ extends(i = o.PureComponent) {
         variant: "text-sm/bold",
         tag: "div",
         color: "text-feedback-positive",
-        className: E.pro,
+        className: d.pro,
         children: [u.intl.string(u.t["8tvIiI"]), ":"]
       }), (0, l.jsx)(s.Text, {
-        className: c()(E.tip, n),
+        className: c()(d.tip, n),
         variant: "text-sm/normal",
         children: e
       })]
     })
   }
-}(r = "Types") in _ ? Object.defineProperty(_, r, {
-  value: d,
+}(r = "Types") in E ? Object.defineProperty(E, r, {
+  value: _,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : _[r] = d;
-let O = _
+}) : E[r] = _;
+let O = E

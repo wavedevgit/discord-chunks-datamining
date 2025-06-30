@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => N
 }), n(388685), n(361932), n(187205), n(539854);
@@ -7,8 +7,8 @@ n(73800);
 var i = n(120356),
   l = n.n(i),
   o = n(392711),
-  s = n.n(o),
-  a = n(442837),
+  a = n.n(o),
+  s = n(442837),
   c = n(481060),
   u = n(456100),
   d = n(317381),
@@ -24,14 +24,14 @@ var i = n(120356),
   v = n(853856),
   C = n(981631),
   j = n(388032),
-  E = n(714509),
-  S = n(375613);
+  S = n(714509),
+  E = n(375613);
 
 function x(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: E.row,
+    className: S.row,
     children: [(0, r.jsx)(e, {
-      className: E.activityIcon,
+      className: S.activityIcon,
       color: "currentColor"
     }), (0, r.jsx)(h.Z, {
       guildId: void 0,
@@ -42,29 +42,29 @@ function x(e, t) {
 }
 
 function I() {
-  let e = (0, a.Wu)([v.Z, m.Z], () => y.default.keys(v.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(O.lm)),
+  let e = (0, s.Wu)([v.Z, m.Z], () => y.default.keys(v.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(O.lm)),
     t = e.map(e => e.id),
     n = e.filter(e => e.type === C.d4z.GUILD_VOICE),
     i = e.filter(e => e.type === C.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    l = (0, a.Wu)([_.ZP], () => s().flatMap(n, e => _.ZP.getVoiceStatesForChannel(e).map(e => {
+    l = (0, s.Wu)([_.ZP], () => a().flatMap(n, e => _.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
       return t
     })), [n]),
-    o = (0, a.Wu)([p.Z], () => s().flatMap(i, e => p.Z.getMutableParticipants(e, f.pV.SPEAKER).filter(e => e.type === f.Ui.VOICE).map(e => {
+    o = (0, s.Wu)([p.Z], () => a().flatMap(i, e => p.Z.getMutableParticipants(e, f.pV.SPEAKER).filter(e => e.type === f.Ui.VOICE).map(e => {
       let {
         user: t
       } = e;
       return t
     }))),
-    j = (0, a.e7)([p.Z], () => {
+    j = (0, s.e7)([p.Z], () => {
       let e = 0;
       for (let t of i) e += p.Z.getParticipantCount(t, f.pV.AUDIENCE);
       return e
     }),
-    S = (0, a.Wu)([g.Z], () => g.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
-    I = (0, a.Wu)([d.ZP], () => {
+    E = (0, s.Wu)([g.Z], () => g.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [t]),
+    I = (0, s.Wu)([d.ZP], () => {
       let e = d.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
       for (let l of t) {
@@ -73,26 +73,26 @@ function I() {
       }
       return n
     }, [t]),
-    P = (0, a.Wu)([b.default], () => I.map(e => b.default.getUser(e)), [I]),
-    N = (0, a.Wu)([b.default], () => S.map(e => b.default.getUser(e)), [S]),
-    w = x(c.gj8, l.filter(e => !S.includes(e.id) && !I.includes(e.id))),
+    P = (0, s.Wu)([b.default], () => I.map(e => b.default.getUser(e)), [I]),
+    N = (0, s.Wu)([b.default], () => E.map(e => b.default.getUser(e)), [E]),
+    w = x(c.gj8, l.filter(e => !E.includes(e.id) && !I.includes(e.id))),
     Z = 0 === o.length ? null : (0, r.jsxs)("div", {
-      className: E.row,
+      className: S.row,
       children: [(0, r.jsx)(c.ewx, {
         size: "lg",
         color: "currentColor",
-        className: E.activityIcon
+        className: S.activityIcon
       }), (0, r.jsx)(h.Z, {
         guildId: void 0,
         users: o,
         max: 3
       }), (0, r.jsxs)("div", {
-        className: E.stageListenerPill,
+        className: S.stageListenerPill,
         children: [(0, r.jsx)(c.VWR, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)(c.Text, {
-          className: E.stageListenerCount,
+          className: S.stageListenerCount,
           color: "text-default",
           variant: "text-xs/medium",
           children: j
@@ -116,9 +116,9 @@ function I() {
 function P() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: l()(E.row, E.rowGuildName),
+      className: l()(S.row, S.rowGuildName),
       children: (0, r.jsx)("span", {
-        className: l()(E.guildNameText, E.guildNameTextLimitedSize),
+        className: l()(S.guildNameText, S.guildNameTextLimitedSize),
         children: j.intl.string(j.t.wMWycn)
       })
     }), (0, r.jsx)(I, {})]
@@ -137,7 +137,7 @@ function N(e) {
     position: "right",
     text: (0, r.jsx)(P, {}),
     "aria-label": t,
-    tooltipClassName: S.listItemTooltip,
+    tooltipClassName: E.listItemTooltip,
     onTooltipShow: n,
     children: e => {
       var t, n;

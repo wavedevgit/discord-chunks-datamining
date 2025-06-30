@@ -1,13 +1,13 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
-  Z: () => S
+  Z: () => E
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(695469),
-  a = n(442837),
+  a = n(695469),
+  s = n(442837),
   c = n(481060),
   u = n(570140),
   d = n(45114),
@@ -24,7 +24,7 @@ var r = n(255367),
   C = n(388032),
   j = n(28007);
 
-function E(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,12 +42,12 @@ function E(e) {
   }
   return e
 }
-let S = i.memo(function(e) {
+let E = i.memo(function(e) {
     let {
       channel: t,
       deleteChannel: n
     } = e, l = i.useRef(null), [
-      [o, a], u
+      [o, s], u
     ] = i.useState([0, 0]), d = t.deleted && o > 0;
     if (t.deleted && 0 === o && null != l.current) {
       let e = l.current.offsetHeight,
@@ -74,13 +74,13 @@ let S = i.memo(function(e) {
       opacity: h,
       height: p.to(e => {
         var t, n;
-        return d ? (t = o, (n = a) + (t - n) * e) : "auto"
+        return d ? (t = o, (n = s) + (t - n) * e) : "auto"
       })
     };
-    return (0, r.jsx)(s.animated.div, {
+    return (0, r.jsx)(a.animated.div, {
       ref: l,
       style: f,
-      children: (0, r.jsx)(x, E({}, e))
+      children: (0, r.jsx)(x, S({}, e))
     })
   }),
   x = i.memo(function(e) {
@@ -89,16 +89,16 @@ let S = i.memo(function(e) {
       onJump: n,
       deleteChannel: l,
       toggle: o
-    } = e, s = (0, a.e7)([g.Z], () => g.Z.getChannel(t.channelId));
+    } = e, a = (0, s.e7)([g.Z], () => g.Z.getChannel(t.channelId));
     if (i.useEffect(() => {
-        null == s || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || u.Z.wait(() => {
+        null == a || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || u.Z.wait(() => {
           (0, d.In)(t.channelId, {
             section: v.jXE.INBOX,
             object: v.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
             objectType: v.Qqv.ACK_AUTOMATIC
           }, !0), l(t.channelId)
         })
-      }), null == s || !t.hasLoadedAnything) return null;
+      }), null == a || !t.hasLoadedAnything) return null;
     let p = (e, r) => {
       (0, h.yw)(v.rMx.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
@@ -111,22 +111,22 @@ let S = i.memo(function(e) {
       className: j.channel,
       children: (0, r.jsx)(c.y5t, {
         component: (0, r.jsxs)(_.Z, {
-          channel: s,
+          channel: a,
           gotoChannel: p,
           mentionCount: t.mentionCount,
           toggleCollapsed: o,
           channelState: t,
           children: [(0, r.jsx)(b.Z, {
-            channel: s
-          }), (0, r.jsx)(I, E({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(P, E({}, e))]
+            channel: a
+          }), (0, r.jsx)(I, S({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(P, S({}, e))]
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(y.Z, {
           channel: t,
-          channelRecord: s,
+          channelRecord: a,
           gotoChannel: p
         }) : "forum" === t.type ? (0, r.jsx)(O.Z, {
           channel: t,
-          channelRecord: s,
+          channelRecord: a,
           deleteChannel: l
         }) : null
       })
@@ -181,7 +181,7 @@ function P(e) {
     text: C.intl.string(C.t.iTcumZ),
     children: e => {
       var n, i;
-      return (0, r.jsx)(c.P3F, (n = E({}, e), i = i = {
+      return (0, r.jsx)(c.P3F, (n = S({}, e), i = i = {
         className: o()(j.collapseButton, {
           [j.collapsed]: t.collapsed
         }),

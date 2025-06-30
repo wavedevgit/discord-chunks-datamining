@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(704215),
-  a = n(481060),
+  a = n(704215),
+  o = n(481060),
   s = n(782568),
   c = n(243778),
   u = n(970731),
@@ -27,13 +27,13 @@ let _ = e => {
       children: [(0, r.jsx)(h.Z, {
         user: t,
         rank: 1,
-        avatarSize: a.EFr.SIZE_56
-      }), (0, r.jsx)(a.P3F, {
+        avatarSize: o.EFr.SIZE_56
+      }), (0, r.jsx)(o.P3F, {
         className: b.closeIcon,
         onClick: () => {
           n(m.L.USER_DISMISS)
         },
-        children: (0, r.jsx)(a.Dio, {
+        children: (0, r.jsx)(o.Dio, {
           color: "currentColor",
           size: "sm"
         })
@@ -59,9 +59,9 @@ let _ = e => {
       markAsDismissed: n,
       caretPosition: u.DF.RIGHT_TOP,
       buttonProps: {
-        color: a.zxk.Colors.WHITE,
-        look: a.zxk.Looks.LINK,
-        size: a.zxk.Sizes.MIN
+        color: o.zxk.Colors.WHITE,
+        look: o.zxk.Looks.LINK,
+        size: o.zxk.Sizes.MIN
       }
     })
   };
@@ -69,15 +69,15 @@ let _ = e => {
 function C(e) {
   let {
     children: t
-  } = e, n = [o.z.LEADERBOARD_NUX_COACHMARK], [s, u] = (0, c.US)(n, void 0), p = (0, l.e7)([d.default], () => d.default.getCurrentUser()), h = i.useRef(null);
-  return s !== o.z.LEADERBOARD_NUX_COACHMARK || null == p ? t : (0, r.jsx)(a.yRy, {
+  } = e, n = [a.z.LEADERBOARD_NUX_COACHMARK], [s, u] = (0, c.US)(n, void 0), p = (0, l.e7)([d.default], () => d.default.getCurrentUser()), h = i.useRef(null);
+  return s !== a.z.LEADERBOARD_NUX_COACHMARK || null == p ? t : (0, r.jsx)(o.yRy, {
     targetElementRef: h,
     renderPopout: () => y({
       user: p,
       markAsDismissed: u
     }),
     position: "left",
-    animation: a.yRy.Animation.TRANSLATE,
+    animation: o.yRy.Animation.TRANSLATE,
     shouldShow: !0,
     children: () => (0, r.jsx)("div", {
       ref: h,

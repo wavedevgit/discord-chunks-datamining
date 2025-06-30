@@ -20,7 +20,7 @@ var r = n(120356),
   f = n(390094),
   v = n(616257);
 
-function _(e) {
+function j(e) {
   let {
     title: t,
     can: n
@@ -48,26 +48,26 @@ function g() {
     n = (0, s.e7)([d.Z], () => d.Z.getChannel(e)),
     r = (0, s.e7)([u.Z], () => u.Z.getGuild(t)),
     g = (0, s.e7)([m.Z], () => m.Z.computePermissions(n)),
-    j = (0, s.e7)([m.Z], () => m.Z.computePermissions(r)),
+    _ = (0, s.e7)([m.Z], () => m.Z.computePermissions(r)),
     y = (0, c.ZP)(n, !0),
     C = null != n ? (0, b.IG)(n, !1, !0) : null,
-    N = null != r ? p.Z.getGuildPermissionSpecMap(r) : null,
-    O = Object.values(null != C ? C : {}).map(e => {
+    O = null != r ? p.Z.getGuildPermissionSpecMap(r) : null,
+    N = Object.values(null != C ? C : {}).map(e => {
       let {
         title: t,
         flag: n
       } = e, r = i.e$(g, n);
-      return (0, a.jsx)(_, {
+      return (0, a.jsx)(j, {
         title: t,
         can: r
       }, t)
     }),
-    T = Object.values(null != N ? N : {}).map(e => {
+    E = Object.values(null != O ? O : {}).map(e => {
       let {
         title: t,
         flag: n
-      } = e, r = i.e$(j, n);
-      return (0, a.jsx)(_, {
+      } = e, r = i.e$(_, n);
+      return (0, a.jsx)(j, {
         title: t,
         can: r
       }, t)
@@ -81,13 +81,13 @@ function g() {
         children: [(0, a.jsx)(o.X6q, {
           variant: "heading-md/semibold",
           children: null != y ? "Permissions in ".concat(y) : "No channel selected"
-        }), O]
+        }), N]
       }), (0, a.jsxs)("section", {
         className: f.section,
         children: [(0, a.jsx)(o.X6q, {
           variant: "heading-md/semibold",
           children: null != r ? "Permissions in ".concat(r.name) : "No guild selected"
-        }), T]
+        }), E]
       })]
     })
   })

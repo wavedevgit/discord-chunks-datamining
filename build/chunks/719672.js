@@ -53,7 +53,7 @@ function v() {
     n = (0, u.ZP)(e => e.lastWinnerTime),
     r = 0 !== n ? l()(n).fromNow() : "n/a",
     v = (0, u.ZP)(e => e.recentlyShown[0]),
-    _ = e.map(e => {
+    j = e.map(e => {
       let {
         eventType: t,
         dismissibleContent: n
@@ -100,7 +100,7 @@ function v() {
       })
     }), (0, a.jsx)("br", {}), (0, a.jsx)(x.Z, {
       columns: b,
-      data: _
+      data: j
     })]
   })
 }

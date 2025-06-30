@@ -1,12 +1,12 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => X
 }), n(415506), n(388685), n(35282), n(290780);
 var r, i = n(255367),
   l = n(73800),
   o = n(120356),
-  s = n.n(o),
-  a = n(873546),
+  a = n.n(o),
+  s = n(873546),
   c = n(442837),
   u = n(481060),
   d = n(239091),
@@ -22,8 +22,8 @@ var r, i = n(255367),
   v = n(888369),
   C = n(430824),
   j = n(306680),
-  E = n(944486),
-  S = n(938475),
+  S = n(944486),
+  E = n(938475),
   x = n(483360),
   I = n(585483),
   P = n(63063),
@@ -111,13 +111,13 @@ let V = c.ZP.connectStores([j.ZP, y.Z], e => {
       category: y.Z.getChannel(t.parent_id)
     }
   })(F),
-  H = c.ZP.connectStores([S.ZP], e => {
+  H = c.ZP.connectStores([E.ZP], e => {
     let {
       channel: t
     } = e;
     if (null == t.guild_id) throw Error("ConnectedVoiceChannel - somehow we got a voice channel with no guild_id...");
     return {
-      voiceStates: S.ZP.getVoiceStates(t.guild_id)[t.id]
+      voiceStates: E.ZP.getVoiceStates(t.guild_id)[t.id]
     }
   })(F),
   z = c.ZP.connectStores([v.default], e => {
@@ -246,7 +246,7 @@ class q extends l.PureComponent {
   }
   renderProtip() {
     return (0, i.jsx)(b.Z, {
-      className: s()(L.protip, {
+      className: a()(L.protip, {
         [L.hasContent]: this.state.query.length > 0
       }),
       type: b.Z.Types.INLINE,
@@ -275,11 +275,11 @@ class q extends l.PureComponent {
       "aria-label": D.intl.string(D.t.ZvKwYW),
       size: u.CgR.DYNAMIC,
       transitionState: this.props.transitionState,
-      className: s()(L.container, a.tq && L.mobileContainer),
+      className: a()(L.container, s.tq && L.mobileContainer),
       fullscreenOnMobile: !1,
       parentComponent: "QuickSwitcher",
       children: (0, i.jsxs)("div", {
-        className: s()(L.quickswitcher, a.tq && L.mobileQuickswitcher),
+        className: a()(L.quickswitcher, s.tq && L.mobileQuickswitcher),
         onMouseMove: this.handleMouseMove,
         children: [this.renderInput(), this.renderResults(), this.renderProtip(), this.renderTutorial()]
       })
@@ -392,7 +392,7 @@ class q extends l.PureComponent {
             } = await Promise.all([n.e("79695"), n.e("53912"), n.e("2016")]).then(n.bind(n, 354741));
             return n => (0, i.jsx)(e, U(k({}, n), {
               channel: t.record,
-              selected: E.Z.getChannelId() === t.record.id,
+              selected: S.Z.getChannelId() === t.record.id,
               onSelect: N.Cp
             }))
           });

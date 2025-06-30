@@ -1,16 +1,16 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
-  $h: () => E,
+  $h: () => S,
   jG: () => j,
-  yI: () => S
+  yI: () => E
 });
 var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
   o = n(793030),
-  s = n(442837),
-  a = n(481060),
+  a = n(442837),
+  s = n(481060),
   c = n(100527),
   u = n(623624),
   d = n(970731),
@@ -48,7 +48,7 @@ function j(e) {
   })
 }
 
-function E(e) {
+function S(e) {
   let {
     guildId: t,
     markAsDismissed: n
@@ -73,19 +73,19 @@ function E(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     guildId: t,
     powerups: n,
     markAsDismissed: i
-  } = e, l = (0, s.e7)([h.Z], () => {
+  } = e, l = (0, a.e7)([h.Z], () => {
     var e;
     return null == (e = h.Z.getGuild(t)) ? void 0 : e.name
   }), {
     onActivate: o
   } = (0, m.ZP)(t, n[0]);
   if (0 === n.length) return;
-  let a = n.length > 1 ? "".concat(n[0].title, " & ").concat(n[1].title) : "".concat(n[0].title),
+  let s = n.length > 1 ? "".concat(n[0].title, " & ").concat(n[1].title) : "".concat(n[0].title),
     u = 1 === n.length;
   return (0, r.jsx)(x, {
     asset: 1 === n.length ? (0, r.jsx)(g.m, {
@@ -98,9 +98,9 @@ function S(e) {
       guildName: l
     }),
     content: n.length > 1 ? y.intl.formatToPlainString(O.default.wcQOqK, {
-      perks: a
+      perks: s
     }) : y.intl.formatToPlainString(O.default.ZF8NT0, {
-      perk: a
+      perk: s
     }),
     buttonCTA: u ? y.intl.string(O.default.gSxlHR) : y.intl.string(y.t.RzWDqa),
     onClick: e => u ? o(e) : (0, f.Z)(t, c.Z.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS),
@@ -113,7 +113,7 @@ function x(e) {
     asset: t,
     header: n,
     content: i,
-    caretPosition: s,
+    caretPosition: a,
     markAsDismissed: c
   } = e, u = function(e, t) {
     if (null == e) return {};
@@ -130,7 +130,7 @@ function x(e) {
     }
     return i
   }(e, ["asset", "header", "content", "caretPosition", "markAsDismissed"]);
-  let h = null != s ? s : d.DF.LEFT_TOP,
+  let h = null != a ? a : d.DF.LEFT_TOP,
     p = h === d.DF.TOP_CENTER || h === d.DF.LEFT_TOP ? v[h] : "";
   return (0, r.jsx)(d.ZP, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -152,7 +152,7 @@ function x(e) {
   }({
     asset: (0, r.jsxs)("div", {
       className: v.imageContainer,
-      children: [t, (0, r.jsx)(a.olH, {
+      children: [t, (0, r.jsx)(s.olH, {
         className: v.close,
         onClick: () => null == c ? void 0 : c(_.L.USER_DISMISS)
       })]

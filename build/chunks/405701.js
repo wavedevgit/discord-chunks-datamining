@@ -1,4 +1,4 @@
-/** Chunk was on 56179 **/
+/** Chunk was on 46653 **/
 i.d(e, {
   Z: () => b
 }), i(388685);
@@ -38,7 +38,7 @@ function O(t) {
   }, []);
   let b = (0, u.Z)("SlowmodeIndicator");
   if (!i) return null;
-  let y = (0, d.k)(s);
+  let S = (0, d.k)(s);
   if (!l && c > 0) {
     let t = o().duration(c);
     if (c > g.Z.Millis.HOUR) {
@@ -50,7 +50,7 @@ function O(t) {
       e = "".concat(t.minutes(), ":").concat(i)
     }
   } else e = l ? b ? m.intl.string(m.t["8+NidX"]) : m.intl.string(m.t.SSzXvb) : m.intl.string(m.t.Icu3bW);
-  let S = b ? (0, n.jsxs)(a.Text, {
+  let y = b ? (0, n.jsxs)(a.Text, {
     className: v.cooldownText,
     variant: "text-xs/medium",
     color: h ? "text-danger" : "text-muted",
@@ -72,7 +72,7 @@ function O(t) {
     })]
   });
   return (0, n.jsx)(a.ua7, {
-    text: y,
+    text: S,
     children: t => {
       var e, i;
       return (0, n.jsx)("div", (e = function(t) {
@@ -95,7 +95,7 @@ function O(t) {
       }({
         className: v.cooldownWrapper
       }, t), i = i = {
-        children: S
+        children: y
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i)) : (function(t, e) {
         var i = Object.keys(t);
         if (Object.getOwnPropertySymbols) {

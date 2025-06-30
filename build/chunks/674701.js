@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   U: () => R,
   Z: () => k
@@ -14,19 +14,19 @@ var r, i = n(255367),
   p = n(493683),
   m = n(529103),
   f = n(700582),
-  h = n(906732),
-  g = n(213609),
-  _ = n(541716),
+  g = n(906732),
+  _ = n(213609),
+  h = n(541716),
   b = n(28546),
-  x = n(963249),
+  E = n(963249),
   y = n(703656),
-  E = n(594174),
+  C = n(594174),
   v = n(626135),
-  C = n(51144),
+  x = n(51144),
   O = n(479446),
   j = n(795448),
-  S = n(441623),
-  I = n(317271),
+  I = n(441623),
+  S = n(317271),
   T = n(474936),
   N = n(981631),
   P = n(182294),
@@ -47,17 +47,17 @@ function k(e) {
     analyticsSection: D,
     glow: M,
     giftIntentSecondaryAction: U
-  } = e, F = (0, c.e7)([E.default], () => E.default.getCurrentUser()), {
+  } = e, F = (0, c.e7)([C.default], () => C.default.getCurrentUser()), {
     analyticsLocations: B
-  } = (0, h.ZP)(), G = (0, c.e7)([S.Z], () => S.Z.getFriendAnniversaryYears(r.id));
+  } = (0, g.ZP)(), G = (0, c.e7)([I.Z], () => I.Z.getFriendAnniversaryYears(r.id));
   l.useEffect(() => {
-    (0, g.h)({
+    (0, _.h)({
       name: s.ImpressionNames.GIFT_INTENT_CARD,
       type: s.ImpressionTypes.VIEW,
       properties: {
         gift_intent_type: t,
         type: n,
-        num_friend_anniversaries: S.Z.getFriendAnniversaries().length
+        num_friend_anniversaries: I.Z.getFriendAnniversaries().length
       }
     })
   }, [t, n]);
@@ -107,7 +107,7 @@ function k(e) {
             color: V ? "header-primary" : "always-white",
             lineClamp: 3,
             children: t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAA, {
-              friendUserName: C.ZP.getName(r)
+              friendUserName: x.ZP.getName(r)
             }) : (0, O.Ou)(t)
           }), (0, i.jsx)(d.Text, {
             className: Y,
@@ -129,7 +129,7 @@ function k(e) {
               recipientIds: r.id
             }).then(() => {
               setTimeout(() => {
-                (0, b.PG)(A.X1.GIF, _.Ie.NORMAL), setTimeout(() => {
+                (0, b.PG)(A.X1.GIF, h.Ie.NORMAL), setTimeout(() => {
                   (0, b.ql)(w.intl.string(w.t.jrtJi4), !0)
                 }, 50)
               }, 100)
@@ -159,8 +159,8 @@ function k(e) {
           className: Z.button,
           onClick: e => {
             e.stopPropagation();
-            let i = (0, I.F)(t);
-            (0, x.Z)({
+            let i = (0, S.F)(t);
+            (0, E.Z)({
               isGift: !0,
               initialPlanId: null,
               giftRecipient: r,

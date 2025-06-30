@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(704215),
-  o = n(100527),
-  a = n(906732),
+  a = n(100527),
+  o = n(906732),
   s = n(779618),
   c = n(243778),
   u = n(446226),
@@ -29,8 +29,8 @@ function v(e) {
     showRightDivider: v
   } = e, {
     analyticsLocations: j
-  } = (0, a.ZP)(o.Z.VOICE_CONTROL_TRAY), O = (0, h.Ou)(t), E = i.useRef(null), I = (0, u.Z)(), {
-    isSharedCanvasEnabled: S
+  } = (0, o.ZP)(a.Z.VOICE_CONTROL_TRAY), O = (0, h.Ou)(t), E = i.useRef(null), S = (0, u.Z)(), {
+    isSharedCanvasEnabled: I
   } = f.Z.useExperiment({
     guildId: null == t ? void 0 : t.guild_id,
     location: "b7309a_1"
@@ -41,10 +41,10 @@ function v(e) {
   }, {
     autoTrackExposure: !1
   }), Z = (0, s.Z)(m.Z), N = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [T, A] = (0, c.US)(N, void 0, !0), w = T === l.z.CONSUMABLE_HD_POTION_UPSELL;
-  if (null == t || null != I) return null;
+  if (null == t || null != S) return null;
   let R = P && Z,
-    k = S && n;
-  return (0, r.jsxs)(a.Gt, {
+    k = I && n;
+  return (0, r.jsxs)(o.Gt, {
     value: j,
     children: [(0, r.jsxs)("div", {
       className: x.voiceEffectsActionBar,

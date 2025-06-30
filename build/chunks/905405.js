@@ -1,17 +1,17 @@
-/** Chunk was on 89149 **/
-n.d(e, {
-  p: () => l
+/** Chunk was on 99546 **/
+n.d(t, {
+  p: () => i
 });
-var r = n(592204),
-  i = n(712950);
-let l = () => {
-  var t;
+var a = n(592204),
+  o = n(712950);
+let i = () => {
+  var e;
   let {
-    profanity: e,
+    profanity: t,
     sexualContent: n,
-    slurs: l
-  } = (0, i.g)();
-  return !!(0, r.Xo)({
+    slurs: i
+  } = (0, o.g)();
+  return !!(0, a.Xo)({
     location: "use-should-filter-keywords"
-  }) && null != (t = e || n || l) && t
+  }) && null != (e = t || n || i) && e
 }

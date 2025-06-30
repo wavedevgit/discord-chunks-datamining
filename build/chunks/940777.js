@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => R
 }), n(388685), n(539854);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(91192),
-  a = n(442837),
+  a = n(91192),
+  s = n(442837),
   c = n(481060),
   u = n(493683),
   d = n(239091),
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(944486),
   C = n(979651),
   j = n(709054),
-  E = n(853856),
-  S = n(593214),
+  S = n(853856),
+  E = n(593214),
   x = n(919755),
   I = n(110977),
   P = n(603274),
@@ -60,38 +60,38 @@ let A = {
 
 function R() {
   var e, t;
-  let l = (0, s.Ie)("favorites"),
+  let l = (0, a.Ie)("favorites"),
     {
       favoriteAdded: R,
       clearFavoriteAdded: D
-    } = (0, S.up)(),
+    } = (0, E.up)(),
     [L, M] = i.useState(!1),
     {
       favoriteServerMuted: k,
       favoriteChannels: U
-    } = (0, a.cj)([E.Z], () => ({
-      favoriteChannels: E.Z.getFavoriteChannels(),
-      favoriteServerMuted: E.Z.favoriteServerMuted
+    } = (0, s.cj)([S.Z], () => ({
+      favoriteChannels: S.Z.getFavoriteChannels(),
+      favoriteServerMuted: S.Z.favoriteServerMuted
     })),
-    G = (0, a.e7)([v.Z], () => v.Z.getChannelId(N.I_8)),
-    B = (0, a.e7)([y.Z], () => y.Z.getChannel(G)),
+    G = (0, s.e7)([v.Z], () => v.Z.getChannelId(N.I_8)),
+    B = (0, s.e7)([y.Z], () => y.Z.getChannel(G)),
     F = (0, _.Z)(e => e.guildId) === N.I_8,
     {
       badge: V,
       unread: H
     } = (0, x.Z)(U),
     z = function(e) {
-      let t = (0, a.e7)([v.Z], () => v.Z.getVoiceChannelId()),
+      let t = (0, s.e7)([v.Z], () => v.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
-        r = (0, a.e7)([O.Z], () => {
+        r = (0, s.e7)([O.Z], () => {
           if (!n) return !1;
           let t = O.Z.getCurrentUserActiveStream();
           return null != t && null != e[t.channelId]
         }),
-        i = (0, a.e7)([O.Z], () => O.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
-        l = (0, a.e7)([C.Z], () => n && null != t && C.Z.hasVideo(t), [n, t]),
-        o = (0, a.Wu)([h.ZP], () => j.default.keys(e).reduce((e, t) => (e.push(...h.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
-        s = (0, a.e7)([h.ZP], () => Array.from(h.ZP.getSelfEmbeddedActivities().values()).some(t => {
+        i = (0, s.e7)([O.Z], () => O.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
+        l = (0, s.e7)([C.Z], () => n && null != t && C.Z.hasVideo(t), [n, t]),
+        o = (0, s.Wu)([h.ZP], () => j.default.keys(e).reduce((e, t) => (e.push(...h.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
+        a = (0, s.e7)([h.ZP], () => Array.from(h.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
           } = t, r = (0, p.p)(n);
@@ -102,7 +102,7 @@ function R() {
         d = !1,
         f = !1,
         g = !1;
-      return n ? (u = !l, d = l, f = r, g = s) : (f = i, g = c), (0, m.Or)({
+      return n ? (u = !l, d = l, f = r, g = a) : (f = i, g = c), (0, m.Or)({
         audio: u,
         video: d,
         screenshare: f,

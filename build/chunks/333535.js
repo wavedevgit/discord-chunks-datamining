@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(399606),
-  o = n(481060),
-  a = n(367907),
+  a = n(481060),
+  o = n(367907),
   s = n(592125),
   c = n(934415),
   u = n(572004),
@@ -21,7 +21,7 @@ function b(e) {
   let {
     threadId: t
   } = e, n = (0, l.e7)([s.Z], () => s.Z.getChannel(t)), b = (0, l.e7)([s.Z], () => s.Z.getChannel(null == n ? void 0 : n.parent_id)), _ = i.useCallback(() => {
-    null != n && null != b && ((0, a.yw)(f.rMx.MEDIA_POST_SHARE_PROMPT_CLICKED, {
+    null != n && null != b && ((0, o.yw)(f.rMx.MEDIA_POST_SHARE_PROMPT_CLICKED, {
       media_post_id: n.id
     }), (0, u.JG)((0, c.EO)(n, b)))
   }, [n, b]);
@@ -29,38 +29,38 @@ function b(e) {
     className: g.sharePromptContainer,
     children: [(0, r.jsx)(h.Z, {}), (0, r.jsxs)("div", {
       className: g.sharePromptContent,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: m.intl.string(m.t["5uAO7e"])
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-default",
         children: m.intl.format(m.t.WnfPV1, {
           helpArticleUrl: d.Z.getCreatorSupportArticleURL(f.BhN.MEDIA_CHANNEL)
         })
-      }), (0, r.jsx)(o.LZC, {
+      }), (0, r.jsx)(a.LZC, {
         size: 4
-      }), (0, r.jsxs)(o.zxk, {
+      }), (0, r.jsxs)(a.zxk, {
         className: g.sharePromptCta,
         innerClassName: g.ctaContent,
         onClick: _,
-        children: [(0, r.jsx)(o.xPt, {
+        children: [(0, r.jsx)(a.xPt, {
           color: "currentColor",
           size: "xs"
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "always-white",
           children: m.intl.string(m.t.C5UQCw)
         })]
       })]
-    }), (0, r.jsx)(o.P3F, {
+    }), (0, r.jsx)(a.P3F, {
       className: g.closeButton,
       onClick: () => {
         (0, p.fn)(t)
       },
       "aria-label": m.intl.string(m.t["0+xZHx"]),
-      children: (0, r.jsx)(o.Dio, {
+      children: (0, r.jsx)(a.Dio, {
         color: "currentColor",
         size: "xs"
       })

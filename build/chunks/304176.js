@@ -77,11 +77,11 @@ let S = e => {
     }) : P.intl.formatToPlainString(P.t.UDDkGx, {
       name: S
     }),
-    T = w(C({}, t), {
+    R = w(C({}, t), {
       src: null == t.src ? t.src : (0, u.o)(t.src, 40),
       size: 40
     }),
-    R = E ? () => {
+    T = E ? () => {
       (0, m.uL)(v.Z5c.CHANNEL(n.id, j.oC.ROLE_SUBSCRIPTIONS))
     } : () => {
       (0, d.f)({
@@ -99,7 +99,7 @@ let S = e => {
           className: x.mainContent,
           children: [(0, r.jsx)("div", {
             className: x.roleIconContainer,
-            children: (0, r.jsx)(c.Z, w(C({}, T), {
+            children: (0, r.jsx)(c.Z, w(C({}, R), {
               enableTooltip: !1,
               className: x.__invalid_roleIcon,
               enableHeight: !1
@@ -123,7 +123,7 @@ let S = e => {
           className: x.ctaButton,
           innerClassName: x.ctaButtonContent,
           fullWidth: !0,
-          onClick: R,
+          onClick: T,
           autoFocus: !0,
           children: [(0, r.jsx)(h.Z, {
             width: 14,

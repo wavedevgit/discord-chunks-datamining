@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   X: () => P
 }), n(997841), n(388685);
@@ -14,19 +14,19 @@ var r = n(255367),
   p = n(387188),
   m = n(466794),
   f = n(659215),
-  h = n(222677),
-  g = n(995774),
-  _ = n(931651),
+  g = n(222677),
+  _ = n(995774),
+  h = n(931651),
   b = n(594174),
-  x = n(630388),
+  E = n(630388),
   y = n(74538),
-  E = n(566006),
+  C = n(566006),
   v = n(981631),
-  C = n(185923),
+  x = n(185923),
   O = n(474936),
   j = n(388032),
-  S = n(92254),
-  I = n(588429);
+  I = n(92254),
+  S = n(588429);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,15 +60,15 @@ class P extends i.Component {
       tabIndex: o = 0
     } = this.props, {
       isReactionPickerActive: s
-    } = this.state, c = t.state === v.yb.SENDING, f = e === E.O.BURST;
-    if (c || (0, x.yE)(t.flags, v.iLy.EPHEMERAL)) return null;
-    let h = b.default.getCurrentUser(),
-      g = (0, y.I5)(h),
-      _ = f ? j.intl.string(j.t.Kfcszs) : j.intl.string(j.t.lfIHs7);
-    !g && f && (_ = (0, r.jsx)(m.X, {
+    } = this.state, c = t.state === v.yb.SENDING, f = e === C.O.BURST;
+    if (c || (0, E.yE)(t.flags, v.iLy.EPHEMERAL)) return null;
+    let g = b.default.getCurrentUser(),
+      _ = (0, y.I5)(g),
+      h = f ? j.intl.string(j.t.Kfcszs) : j.intl.string(j.t.lfIHs7);
+    !_ && f && (h = (0, r.jsx)(m.X, {
       tooltipText: j.intl.string(j.t.Kfcszs)
     }));
-    let O = l ? I : S,
+    let O = l ? S : I,
       T = {
         size: "sm",
         color: "currentColor",
@@ -89,7 +89,7 @@ class P extends i.Component {
           isShown: c
         } = t;
         return (0, r.jsx)(u.DY3, {
-          text: _,
+          text: h,
           color: u.FGA.PRIMARY,
           "aria-label": f ? j.intl.string(j.t.Kfcszs) : j.intl.string(j.t.lfIHs7),
           tooltipClassName: O.__invalid_addReactionTooltip,
@@ -99,8 +99,8 @@ class P extends i.Component {
             onClick: e => {
               this.handleAddReactionClick(e)
             },
-            onMouseEnter: () => (0, d.x)(C.qR.AddReactionPopoutMouseEntered),
-            onFocus: () => (0, d.x)(C.qR.AddReactionPopoutFocused),
+            onMouseEnter: () => (0, d.x)(x.qR.AddReactionPopoutMouseEntered),
+            onFocus: () => (0, d.x)(x.qR.AddReactionPopoutFocused),
             className: a()(O.reactionBtn, {
               [O.active]: c
             }, n),
@@ -129,7 +129,7 @@ class P extends i.Component {
         message: r,
         isForumToolbar: i
       } = this.props;
-      (0, h.rU)(n.id, r.id, (0, g.g1)(e), i ? h.TW.FORUM_TOOLBAR : h.TW.MESSAGE_INLINE_BUTTON, {
+      (0, g.rU)(n.id, r.id, (0, _.g1)(e), i ? g.TW.FORUM_TOOLBAR : g.TW.MESSAGE_INLINE_BUTTON, {
         burst: t
       })
     }), T(this, "handleReactionPickerToggle", () => {
@@ -143,11 +143,11 @@ class P extends i.Component {
       } = this.props;
       e.stopPropagation();
       let r = b.default.getCurrentUser();
-      t !== E.O.BURST || (0, y.I5)(r) || (0, f.m)({
+      t !== C.O.BURST || (0, y.I5)(r) || (0, f.m)({
         analytics: {
           type: O.cd.BURST_REACTION_UPSELL,
           page: null != n.getGuildId() ? v.ZY5.GUILD_CHANNEL : v.ZY5.DM_CHANNEL,
-          section: (0, g.s4)(n),
+          section: (0, _.s4)(n),
           object: v.qAy.INLINE_REACTION_PICKER_UPSELL
         }
       }), this.handleReactionPickerToggle()
@@ -160,12 +160,12 @@ class P extends i.Component {
         message: l
       } = this.props, a = N({
         openPopoutType: "message_reaction_emoji_picker"
-      }, n === E.O.BURST && {
+      }, n === C.O.BURST && {
         openPopoutType: "message_super_reaction_emoji_picker",
         page: null != i.getGuildId() ? v.ZY5.GUILD_CHANNEL : v.ZY5.DM_CHANNEL,
-        section: (0, g.s4)(i),
+        section: (0, _.s4)(i),
         object: v.qAy.REACTION_RAIL
-      }), o = (0, r.jsx)(_.$, {
+      }), o = (0, r.jsx)(h.$, {
         closePopout: t,
         channel: i,
         onSelectEmoji: e => {

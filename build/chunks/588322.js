@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(239091),
-  a = n(561472),
+  a = n(239091),
+  o = n(561472),
   s = n(933557),
   c = n(287746),
   u = n(541716),
@@ -28,15 +28,15 @@ function x(e) {
   if (i.useEffect(() => {
       null == x || E.current || (E.current = !0, (0, _.lN)(x))
     }, [x]), null == x || null == j) return null;
-  let I = (0, r.jsx)(f.Z, {
+  let S = (0, r.jsx)(f.Z, {
     channel: x
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Z, {
+    children: [(0, r.jsx)(o.Z, {
       channel: x,
       draftType: g.d.ChannelMessage
     }), (0, r.jsx)(d.ZP, {
-      toolbar: I,
+      toolbar: S,
       "aria-label": y.intl.string(y.t.Pwe8tL),
       children: (0, p.ud)({
         channel: x,
@@ -45,7 +45,7 @@ function x(e) {
         guild: j,
         inSidebar: !0,
         handleContextMenu: function(e) {
-          (0, o.jW)(e, async () => {
+          (0, a.jW)(e, async () => {
             let {
               default: e
             } = await n.e("40157").then(n.bind(n, 422200));

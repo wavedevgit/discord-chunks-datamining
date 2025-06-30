@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   O: () => R,
   U: () => T.Un
@@ -15,19 +15,19 @@ var r = n(255367),
   p = n(906732),
   m = n(915346),
   f = n(783097),
-  h = n(812236),
-  g = n(561308),
-  _ = n(567409),
+  g = n(812236),
+  _ = n(561308),
+  h = n(567409),
   b = n(706454),
-  x = n(314897),
+  E = n(314897),
   y = n(699516),
-  E = n(914010),
+  C = n(914010),
   v = n(594174),
-  C = n(768581),
+  x = n(768581),
   O = n(433534),
   j = n(506895),
-  S = n(758199),
-  I = n(943762),
+  I = n(758199),
+  S = n(943762),
   T = n(914498),
   N = n(172109),
   P = n(880251),
@@ -42,32 +42,32 @@ function R(e) {
     linkType: l,
     activityCustomId: a,
     activityReferrerId: s,
-    onView: g
+    onView: _
   } = e, {
-    name: _,
+    name: h,
     bot: b
-  } = t = (0, N.O)(t), y = null == b ? void 0 : b.id, E = (0, f.ye)(t), v = C.ZP.getApplicationIconURL({
+  } = t = (0, N.O)(t), y = null == b ? void 0 : b.id, C = (0, f.ye)(t), v = x.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: b
   }), {
     staticBannerSrc: O,
-    videoBannerSrc: I,
+    videoBannerSrc: S,
     bannerAspectRatio: Z
-  } = (0, P.E)(t), R = (0, o.e7)([x.default], () => null != s ? s : x.default.getId(), [s]), {
+  } = (0, P.E)(t), R = (0, o.e7)([E.default], () => null != s ? s : E.default.getId(), [s]), {
     analyticsLocations: D
   } = (0, p.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: M,
     instanceId: U,
     isCurrentlyInInstance: F,
     canLaunchInChannel: B
-  } = (0, j.c)(t.id), G = (0, u.Z)(), H = (0, h.ms)({
+  } = (0, j.c)(t.id), G = (0, u.Z)(), H = (0, g.ms)({
     context: {
       type: "contextless"
     },
     applicationId: t.id,
     botUserId: null == b ? void 0 : b.id
-  }), V = null != y && E && H, z = B && E, W = (0, A.z)(t), K = i.useMemo(() => {
+  }), V = null != y && C && H, z = B && C, W = (0, A.z)(t), K = i.useMemo(() => {
     let e = [];
     return z && e.push({
       label: null == U ? w.intl.string(w.t.cnBQPD) : w.intl.string(w.t.VJlc0d),
@@ -97,15 +97,15 @@ function R(e) {
         })
       }
     }), null != W && e.push(W), e
-  }, [z, V, W, U, F, M, t.id, G, a, R, D, y]), Y = E ? (0, r.jsx)(L, {
+  }, [z, V, W, U, F, M, t.id, G, a, R, D, y]), Y = C ? (0, r.jsx)(L, {
     app: t
   }) : (0, r.jsx)(k, {
     app: t
   });
-  return (0, r.jsx)(S.W, {
-    title: _,
+  return (0, r.jsx)(I.W, {
+    title: h,
     staticBannerSrc: O,
-    videoBannerSrc: I,
+    videoBannerSrc: S,
     bannerAspectRatio: Z,
     iconSrc: v,
     embedUrl: n,
@@ -116,7 +116,7 @@ function R(e) {
       linkType: l,
       referrerId: R,
       activityCustomId: a,
-      onView: g
+      onView: _
     }
   })
 }
@@ -166,10 +166,10 @@ function L(e) {
   } = e, {
     tags: n,
     maxParticipants: l
-  } = t, c = (0, o.e7)([E.Z], () => {
+  } = t, c = (0, o.e7)([C.Z], () => {
     var e;
-    return null != (e = E.Z.getGuildId()) ? e : void 0
-  }, []), u = (0, _.N)(t.id), d = (0, o.Wu)([v.default, y.Z], () => {
+    return null != (e = C.Z.getGuildId()) ? e : void 0
+  }, []), u = (0, h.N)(t.id), d = (0, o.Wu)([v.default, y.Z], () => {
     let e = [];
     for (let [t, n] of u.entries()) {
       if (t >= 5) break;
@@ -179,12 +179,12 @@ function L(e) {
     }
     return e
   }, [u]), p = i.useMemo(() => {
-    if (d.length > 0) return (0, r.jsx)(I.K, {
+    if (d.length > 0) return (0, r.jsx)(S.K, {
       activityUsers: d,
       guildId: c,
       activityText: w.intl.string(w.t["IJa+4+"])
     });
-    if (u.some(e => (0, g.ig)(e) === a.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
+    if (u.some(e => (0, _.ig)(e) === a.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.YqE, {
         size: "xxs",
         color: "currentColor"

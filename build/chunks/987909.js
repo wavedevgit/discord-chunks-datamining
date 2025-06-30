@@ -1,6 +1,6 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
-  Z: () => E
+  Z: () => C
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -14,17 +14,17 @@ var r = n(255367),
   p = n(496675),
   m = n(594174),
   f = n(626135),
-  h = n(709054),
-  g = n(838440),
-  _ = n(981631),
+  g = n(709054),
+  _ = n(838440),
+  h = n(981631),
   b = n(18485);
 
-function x(e) {
+function E(e) {
   let {
     assets: t,
     currentUser: n,
     message: r
-  } = e, i = (h.default.extractTimestamp(n.id) + h.default.extractTimestamp(r.id)) % t.length;
+  } = e, i = (g.default.extractTimestamp(n.id) + g.default.extractTimestamp(r.id)) % t.length;
   return t[i]
 }
 
@@ -37,18 +37,18 @@ function y(e) {
     stickers: d,
     event: p,
     eventProperties: m
-  } = e, [h, _] = i.useState(!1), y = i.useMemo(() => x({
+  } = e, [g, h] = i.useState(!1), y = i.useMemo(() => E({
     assets: d,
     currentUser: t,
     message: l
-  }), [d, t, l]), E = i.useMemo(() => x({
+  }), [d, t, l]), C = i.useMemo(() => E({
     assets: u,
     currentUser: t,
     message: l
   }), [u, t, l]), v = i.useCallback(async () => {
     let {
       valid: e
-    } = await (0, g.v)({
+    } = await (0, _.v)({
       type: s.Ie.FORM,
       content: "",
       channel: n
@@ -115,19 +115,19 @@ function y(e) {
     className: b.CTAMessageButtonOuter,
     innerClassName: b.CTAMessageButton,
     color: a.Ttl.PRIMARY,
-    onMouseEnter: () => _(!0),
-    onMouseLeave: () => _(!1),
+    onMouseEnter: () => h(!0),
+    onMouseLeave: () => h(!1),
     onClick: v,
     children: [(0, r.jsx)(c.Z, {
       className: b.CTAMessageSticker,
-      isInteracting: h,
+      isInteracting: g,
       sticker: y,
       size: 28
-    }), E]
+    }), C]
   })
 }
 
-function E(e) {
+function C(e) {
   let {
     channel: t,
     message: n,
@@ -146,7 +146,7 @@ function E(e) {
       let i = t.guild_id;
       if (null == r || null == i) return !1;
       let l = (0, u.xl)(t),
-        a = p.Z.can(_.Plq.SEND_MESSAGES, t),
+        a = p.Z.can(h.Plq.SEND_MESSAGES, t),
         o = null == (e = d.ZP.getMember(i, r.id)) ? void 0 : e.isPending,
         s = n.author.bot;
       return a && !l && !o && !s

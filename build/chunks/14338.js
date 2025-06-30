@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  o = n(481060),
   s = n(239091),
   c = n(586902),
   u = n(40851),
@@ -58,7 +58,7 @@ function y(e) {
     newestAnalyticsLocation: C
   } = (0, d.ZP)(), x = (0, u.bp)(), {
     reducedMotion: v
-  } = i.useContext(a.Sfi), j = (0, c.Z)({
+  } = i.useContext(o.Sfi), j = (0, c.Z)({
     userId: l.id
   }), O = null != l.member ? (0, m.CA)(l.member) : null, E = e => {
     (0, s.jW)(e, async () => {
@@ -84,20 +84,20 @@ function y(e) {
     guildId: t.guild_id,
     channelId: t.id,
     clickTrap: !0,
-    children: e => (0, r.jsx)(a.ua7, {
+    children: e => (0, r.jsx)(o.ua7, {
       targetElementRef: y,
       text: l.userNick,
       position: "bottom",
-      children: n => (0, r.jsx)(a.P3F, _(b({}, n, e), {
+      children: n => (0, r.jsx)(o.P3F, _(b({}, n, e), {
         innerRef: y,
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
         onContextMenu: E,
-        children: (0, r.jsx)(a.qEK, {
+        children: (0, r.jsx)(o.qEK, {
           src: null != O ? O : l.user.getAvatarURL(t.guild_id, 24),
-          size: a.EFr.SIZE_24,
-          className: o()(g.avatar, f),
+          size: o.EFr.SIZE_24,
+          className: a()(g.avatar, f),
           "aria-label": l.userNick,
           isSpeaking: j && !v.enabled
         })
@@ -122,7 +122,7 @@ function C(e) {
       className: t
     }, i),
     renderMoreUsers: (e, t, n) => (0, r.jsx)("div", {
-      className: o()(g.speakers, t),
+      className: a()(g.speakers, t),
       children: e
     }, n)
   })

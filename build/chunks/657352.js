@@ -1,25 +1,25 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(388032),
-  o = n(695256);
-let a = e => {
+  a = n(695256);
+let o = e => {
   let {
     guild: t,
-    onClose: a
+    onClose: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.container,
+    className: a.container,
     children: [(0, r.jsx)("img", {
       alt: "",
-      className: o.image,
+      className: a.image,
       src: n(238980)
     }), (0, r.jsxs)("div", {
-      className: o.content,
+      className: a.content,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-md/semibold",
         children: l.intl.format(l.t.THgVCA, {
@@ -30,9 +30,9 @@ let a = e => {
         variant: "text-sm/normal",
         children: l.intl.string(l.t["1yq3nJ"])
       }), (0, r.jsx)("div", {
-        className: o.buttonContainer,
+        className: a.buttonContainer,
         children: (0, r.jsx)(i.zxk, {
-          onClick: a,
+          onClick: o,
           children: l.intl.string(l.t.hLw0wc)
         })
       })]

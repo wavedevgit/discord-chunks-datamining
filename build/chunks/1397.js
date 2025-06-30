@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(512722),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(481060),
   c = n(893776),
   u = n(528963),
@@ -25,8 +25,8 @@ var r = n(255367),
   j = n(657352),
   O = n(33154),
   E = n(144114),
-  I = n(703656),
-  S = n(210887),
+  S = n(703656),
+  I = n(210887),
   P = n(606956),
   Z = n(271383),
   N = n(430824),
@@ -36,8 +36,8 @@ var r = n(255367),
   R = n(700785),
   k = n(862679),
   M = n(981631),
-  D = n(815660),
-  L = n(388032),
+  L = n(815660),
+  D = n(388032),
   U = n(628829);
 
 function B(e, t, n) {
@@ -62,7 +62,7 @@ function F(e) {
   return e
 }
 
-function G(e, t) {
+function H(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function G(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class H extends i.PureComponent {
+class G extends i.PureComponent {
   componentDidMount() {
     let {
       isFollowable: e,
@@ -100,8 +100,8 @@ class H extends i.PureComponent {
       notClaimed: n,
       notPhoneVerified: i,
       notEmailVerified: l,
-      newMember: o,
-      memberDeadline: a,
+      newMember: a,
+      memberDeadline: o,
       newAccount: c,
       accountDeadline: u,
       theme: d,
@@ -121,26 +121,26 @@ class H extends i.PureComponent {
       useReducedMotion: _
     };
     if (e && !h) {
-      if (j.message = L.intl.string(L.t.Hl0Mqq), null != f && f >= 1e3) {
+      if (j.message = D.intl.string(D.t.Hl0Mqq), null != f && f >= 1e3) {
         let e = 1e3 * Math.floor(f / 1e3);
-        j.subtitle = L.intl.formatToPlainString(L.t.C5bgrK, {
+        j.subtitle = D.intl.formatToPlainString(D.t.C5bgrK, {
           count: e.toLocaleString()
         })
       }
-      j.buttonText = L.intl.string(L.t["3aOv+v"]), j.onButtonClick = this.handleFollowAnnouncement, t && (j.onSecondaryButtonClick = this.handleJoinServer, j.secondaryButtonText = L.intl.string(L.t["RLch7+"]))
-    } else if (n) j.message = L.intl.string(L.t["Eg3/c3"]), j.buttonText = L.intl.string(L.t.fiNVio), j.onButtonClick = g ? this.handleShowMemberVerification : this.handleClaimAccount;
+      j.buttonText = D.intl.string(D.t["3aOv+v"]), j.onButtonClick = this.handleFollowAnnouncement, t && (j.onSecondaryButtonClick = this.handleJoinServer, j.secondaryButtonText = D.intl.string(D.t["RLch7+"]))
+    } else if (n) j.message = D.intl.string(D.t["Eg3/c3"]), j.buttonText = D.intl.string(D.t.fiNVio), j.onButtonClick = g ? this.handleShowMemberVerification : this.handleClaimAccount;
     else if (g) switch (null == C ? void 0 : C.applicationStatus) {
       case b.wB.SUBMITTED:
-        j.message = L.intl.string(L.t["5iLvS0"]), j.subtitle = L.intl.string(L.t.FdsK4u), j.buttonText = L.intl.string(L.t.mqtdmZ), j.onButtonClick = this.handleCancelApplication;
+        j.message = D.intl.string(D.t["5iLvS0"]), j.subtitle = D.intl.string(D.t.FdsK4u), j.buttonText = D.intl.string(D.t.mqtdmZ), j.onButtonClick = this.handleCancelApplication;
         break;
       case b.wB.REJECTED:
-        j.message = L.intl.string(L.t.lk30cX), j.buttonText = L.intl.string(L.t["8RrsHh"]), j.onButtonClick = this.handleViewApplicationRejection;
+        j.message = D.intl.string(D.t.lk30cX), j.buttonText = D.intl.string(D.t["8RrsHh"]), j.onButtonClick = this.handleViewApplicationRejection;
         break;
       default:
-        j.message = L.intl.string(L.t.rEBKvr), j.buttonText = L.intl.string(L.t["r8/DT0"]), j.buttonColor = s.Ttl.BRAND, j.onButtonClick = this.handleShowMemberVerification
-    } else i && !y ? (j.message = L.intl.string(L.t["2dThMD"]), j.buttonText = L.intl.string(L.t["50gfOj"]), j.onButtonClick = this.handleVerifyPhone) : l ? (j.message = L.intl.string(L.t.FkGPS0), j.buttonText = L.intl.string(L.t.lm1UKi), j.onButtonClick = this.handleResendVerification) : o ? (j.message = L.intl.formatToPlainString(L.t.IH7RMD, {
+        j.message = D.intl.string(D.t.rEBKvr), j.buttonText = D.intl.string(D.t["r8/DT0"]), j.buttonColor = s.Ttl.BRAND, j.onButtonClick = this.handleShowMemberVerification
+    } else i && !y ? (j.message = D.intl.string(D.t["2dThMD"]), j.buttonText = D.intl.string(D.t["50gfOj"]), j.onButtonClick = this.handleVerifyPhone) : l ? (j.message = D.intl.string(D.t.FkGPS0), j.buttonText = D.intl.string(D.t.lm1UKi), j.onButtonClick = this.handleResendVerification) : a ? (j.message = D.intl.formatToPlainString(D.t.IH7RMD, {
       min: M.YeM.MEMBER_AGE
-    }), j.countdown = a) : c && (j.message = L.intl.formatToPlainString(L.t["2JA2GB"], {
+    }), j.countdown = o) : c && (j.message = D.intl.formatToPlainString(D.t["2JA2GB"], {
       min: M.YeM.ACCOUNT_AGE
     }), j.countdown = u);
     return (0, r.jsx)(s.yRy, {
@@ -152,7 +152,7 @@ class H extends i.PureComponent {
         shouldShowLurkerModeSuccessPopout: !1
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, r.jsx)(k.Z, G(F({}, j), {
+      children: e => (0, r.jsx)(k.Z, H(F({}, j), {
         children: (0, r.jsxs)("div", {
           ref: this.textAreaContainerRef,
           children: [this.renderMemberVerificationSuccessModal(), m ? (0, r.jsx)(s.yRy, {
@@ -160,7 +160,7 @@ class H extends i.PureComponent {
             renderPopout: this.renderLurkerModeUpsellPopout,
             shouldShow: x,
             position: "top",
-            children: e => (0, r.jsx)(s.P3F, G(F({
+            children: e => (0, r.jsx)(s.P3F, H(F({
               innerRef: this.upsellTargetRef
             }, e), {
               className: U.clickableChannelTextArea,
@@ -183,7 +183,7 @@ class H extends i.PureComponent {
       } = e, {
         guild: n
       } = this.props;
-      return o()(null != n, "This guildID cannot be null"), (0, r.jsx)(j.Z, {
+      return a()(null != n, "This guildID cannot be null"), (0, r.jsx)(j.Z, {
         onClose: t,
         guild: n
       })
@@ -191,16 +191,16 @@ class H extends i.PureComponent {
       let {
         guild: e
       } = this.props;
-      null != e && (0, s.h7j)(t => (0, r.jsx)(s.ConfirmModal, G(F({
-        header: L.intl.string(L.t.aIz1oa),
-        confirmText: L.intl.string(L.t["cY+Ooa"]),
-        cancelText: L.intl.string(L.t["ETE/oK"]),
+      null != e && (0, s.h7j)(t => (0, r.jsx)(s.ConfirmModal, H(F({
+        header: D.intl.string(D.t.aIz1oa),
+        confirmText: D.intl.string(D.t["cY+Ooa"]),
+        cancelText: D.intl.string(D.t["ETE/oK"]),
         onConfirm: () => f.Z.removeGuildJoinRequest(e.id),
         confirmButtonColor: s.zxk.Colors.BRAND
       }, t), {
         children: (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
-          children: L.intl.string(L.t["13tjTU"])
+          children: D.intl.string(D.t["13tjTU"])
         })
       })))
     }), B(this, "handleViewApplicationRejection", () => {
@@ -231,19 +231,19 @@ class H extends i.PureComponent {
           reason: E.L.GUILD_PHONE_REQUIRED
         }, t))
       }, {
-        modalKey: D.M
+        modalKey: L.M
       })
     }), B(this, "handleResendVerification", () => {
       var e;
       c.Z.verifyResend();
       let t = null == (e = w.default.getCurrentUser()) ? void 0 : e.email;
-      null != t && (0, s.h7j)(e => (0, r.jsx)(s.ConfirmModal, G(F({}, e), {
-        header: L.intl.string(L.t.LykQYm),
-        confirmText: L.intl.string(L.t.BddRzc),
+      null != t && (0, s.h7j)(e => (0, r.jsx)(s.ConfirmModal, H(F({}, e), {
+        header: D.intl.string(D.t.LykQYm),
+        confirmText: D.intl.string(D.t.BddRzc),
         confirmButtonColor: s.zxk.Colors.BRAND,
         children: (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
-          children: L.intl.format(L.t.azKEPz, {
+          children: D.intl.format(D.t.azKEPz, {
             email: t
           })
         })
@@ -272,7 +272,7 @@ class H extends i.PureComponent {
     }), B(this, "handleGoBack", () => {
       this.setState({
         submitting: !0
-      }), (0, I.s1)().goBack()
+      }), (0, S.s1)().goBack()
     }), B(this, "handleFollowAnnouncement", () => {
       let {
         channel: e
@@ -293,7 +293,7 @@ class H extends i.PureComponent {
       let {
         guild: e
       } = this.props;
-      return o()(null != e, "GuildVerification.renderLurkerModeUpsellPopout - guild cannot be undefined"), (0, r.jsx)(O.Z, {
+      return a()(null != e, "GuildVerification.renderLurkerModeUpsellPopout - guild cannot be undefined"), (0, r.jsx)(O.Z, {
         type: O.s.CHAT,
         guild: e,
         closePopout: this.closeLurkerModeUpsellPopout
@@ -308,7 +308,7 @@ class H extends i.PureComponent {
         f.Z.ackUserGuildJoinRequest(e.id, t.joinRequestId)
       };
       return (0, r.jsx)(s.u_l, {
-        renderModal: t => (0, r.jsx)(C.Z, G(F({}, t), {
+        renderModal: t => (0, r.jsx)(C.Z, H(F({}, t), {
           onAccept: i,
           guildName: e.name
         })),
@@ -323,16 +323,16 @@ function V(e) {
   let {
     channel: i,
     children: l
-  } = e, o = i.getGuildId(), s = (0, a.e7)([N.Z], () => N.Z.getGuild(o)), c = (0, a.e7)([T.Z], () => T.Z.getCheck(o)), u = i.type === M.d4z.GUILD_ANNOUNCEMENT && null != s && s.hasFeature(M.oNc.NEWS), d = (0, a.e7)([P.Z], () => u ? P.Z.getFollowerStatsForChannel(i.id) : null), h = (0, a.e7)([v.Z], () => v.Z.isLurking(o)), f = (0, a.e7)([w.default], () => w.default.getCurrentUser()), m = null != (t = null == f ? void 0 : f.isStaff()) && t, g = (0, a.e7)([Z.ZP], () => {
+  } = e, a = i.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([T.Z], () => T.Z.getCheck(a)), u = i.type === M.d4z.GUILD_ANNOUNCEMENT && null != s && s.hasFeature(M.oNc.NEWS), d = (0, o.e7)([P.Z], () => u ? P.Z.getFollowerStatsForChannel(i.id) : null), h = (0, o.e7)([v.Z], () => v.Z.isLurking(a)), f = (0, o.e7)([w.default], () => w.default.getCurrentUser()), m = null != (t = null == f ? void 0 : f.isStaff()) && t, g = (0, o.e7)([Z.ZP], () => {
     var e, t;
-    return null != f && null != (t = null == (e = Z.ZP.getMember(o, f.id)) ? void 0 : e.isPending) && t
-  }), C = !!(0, _.Dc)(s), j = (0, a.e7)([x.Z], () => x.Z.shouldShowPopout(o)), O = (0, a.e7)([A.Z], () => A.Z.can(M.Plq.SEND_MESSAGES, i)), E = (0, a.e7)([y.Z], () => y.Z.getRequest(o)), I = G(F({}, c), {
+    return null != f && null != (t = null == (e = Z.ZP.getMember(a, f.id)) ? void 0 : e.isPending) && t
+  }), C = !!(0, _.Dc)(s), j = (0, o.e7)([x.Z], () => x.Z.shouldShowPopout(a)), O = (0, o.e7)([A.Z], () => A.Z.can(M.Plq.SEND_MESSAGES, i)), E = (0, o.e7)([y.Z], () => y.Z.getRequest(a)), S = H(F({}, c), {
     guild: s,
     isLurking: h,
     isFollowable: u,
     shouldShowLurkerModeSuccessPopout: j,
     showLurkerModeUpsellPopout: h && null != s && R.Uu(M.Plq.SEND_MESSAGES, i),
-    theme: S.Z.theme,
+    theme: I.Z.theme,
     canSendMessages: O,
     channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,
     hasVerificationGate: C,
@@ -342,7 +342,7 @@ function V(e) {
     useReducedMotion: p.Z.useReducedMotion,
     isStaff: m
   });
-  return (0, r.jsx)(H, G(F({}, I), {
+  return (0, r.jsx)(G, H(F({}, S), {
     channel: i,
     children: l
   }))

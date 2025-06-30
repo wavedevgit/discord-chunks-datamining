@@ -1,13 +1,13 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(388685);
 var r = n(544891),
   i = n(570140),
   l = n(893776),
-  a = n(899742),
-  o = n(743142),
-  s = n(117240),
+  s = n(899742),
+  a = n(743142),
+  o = n(117240),
   c = n(626135),
   u = n(317770),
   d = n(981631);
@@ -30,7 +30,7 @@ class p extends u.Z {
       handoffKey: t,
       handoffToken: n,
       fingerprint: i,
-      handoffSource: s
+      handoffSource: o
     } = e;
     null != n ? r.tn.post({
       url: d.ANM.HANDOFF_EXCHANGE,
@@ -43,16 +43,16 @@ class p extends u.Z {
       let {
         body: t
       } = e;
-      (0, a.Vb)(t.user), l.Z.loginToken(t.token, !1), h(!0, s)
+      (0, s.Vb)(t.user), l.Z.loginToken(t.token, !1), h(!0, o)
     }, e => {
-      if (null != i && h(!1, s), l.Z.setFingerprint(i), (0, a.lx)(), s === o.F.ROLE_SUBSCRIPTION) {
+      if (null != i && h(!1, o), l.Z.setFingerprint(i), (0, s.lx)(), o === a.F.ROLE_SUBSCRIPTION) {
         var t;
         c.default.track(d.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
           reason: null != (t = e.message) ? t : e.text,
-          handoff_source: s
+          handoff_source: o
         })
       }
-    }) : null != i ? (l.Z.setFingerprint(i), h(!1, s), (0, a.lx)()) : (l.Z.setFingerprint(i), (0, a.by)())
+    }) : null != i ? (l.Z.setFingerprint(i), h(!1, o), (0, s.lx)()) : (l.Z.setFingerprint(i), (0, s.by)())
   }
   constructor(...e) {
     var t, n;
@@ -60,13 +60,13 @@ class p extends u.Z {
       let {
         handoffToken: t,
         fingerprint: n
-      } = e, r = s.Z.key;
-      null != r && s.Z.isHandoffAvailable() ? this.handleHandoff({
+      } = e, r = o.Z.key;
+      null != r && o.Z.isHandoffAvailable() ? this.handleHandoff({
         handoffKey: r,
         handoffToken: t,
         fingerprint: n,
         handoffSource: void 0
-      }) : (l.Z.setFingerprint(null), (0, a.by)())
+      }) : (l.Z.setFingerprint(null), (0, s.by)())
     }, t in this ? Object.defineProperty(this, t, {
       value: n,
       enumerable: !0,
@@ -75,4 +75,4 @@ class p extends u.Z {
     }) : this[t] = n
   }
 }
-let m = new p
+let g = new p

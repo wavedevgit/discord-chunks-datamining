@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => O
 });
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(481060),
-  s = n(554747),
-  a = n(434479),
+  a = n(554747),
+  s = n(434479),
   c = n(593364),
   u = n(703656),
   d = n(944486),
@@ -118,7 +118,7 @@ let _ = [{
     let {
       guild: t,
       channel: n
-    } = e, o = (0, s.ZP)(t.id);
+    } = e, o = (0, a.ZP)(t.id);
     i.useEffect(() => {
       h.Z.trackExposure({
         guildId: t.id,
@@ -141,13 +141,13 @@ let _ = [{
           key: i,
           getName: l,
           handler: o,
-          renderIcon: s
+          renderIcon: a
         } = e;
         if (!u && "EVENTS" === i) return null;
         let d = "".concat(i, "-").concat(t.id);
-        return (0, r.jsx)(a.m, {
+        return (0, r.jsx)(s.m, {
           id: d,
-          renderIcon: s,
+          renderIcon: a,
           text: l(g),
           selected: f && "JOIN_SERVERS" === i,
           onClick: null != n ? () => o(t, n) : void 0,

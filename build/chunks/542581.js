@@ -39,7 +39,7 @@ let b = i.memo(function(e) {
   i.useLayoutEffect(() => {
     setTimeout(a, 350)
   }, [j, a]);
-  let [O, w] = i.useState(!j), S = (0, c.q_F)({
+  let [O, w] = i.useState(!j), N = (0, c.q_F)({
     opacity: +!!j,
     maxHeight: 500 * !!j,
     config: {
@@ -48,7 +48,7 @@ let b = i.memo(function(e) {
     onRest: () => w(!j)
   });
   return null != t.topic && t.topic.length > 0 ? (0, r.jsx)(s.animated.div, {
-    style: S,
+    style: N,
     className: O ? x.hiddenVisually : void 0,
     children: (0, r.jsxs)("div", {
       className: x.container,

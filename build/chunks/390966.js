@@ -1,4 +1,4 @@
-/** Chunk was on 18543 **/
+/** Chunk was on 44421 **/
 n.d(t, {
   z: () => j
 }), n(388685);
@@ -6,30 +6,30 @@ var r = n(255367),
   l = n(73800),
   i = n(120356),
   a = n.n(i),
-  c = n(913527),
-  s = n.n(c),
+  s = n(913527),
+  c = n.n(s),
   o = n(692547),
   u = n(481060),
   d = n(894017),
-  f = n(854698),
-  b = n(849464),
-  m = n(765305),
-  p = n(388032),
+  p = n(854698),
+  m = n(849464),
+  f = n(765305),
+  v = n(388032),
   g = n(923167);
 
-function v() {
+function b() {
   return (0, r.jsx)(u.IGR, {
     className: g.newBadge,
     color: o.Z.unsafe_rawColors.BRAND_260.css,
     text: (0, r.jsx)(u.Text, {
       className: g.newBadgeText,
       variant: "text-xs/bold",
-      children: p.intl.string(p.t.y2b7CA)
+      children: v.intl.string(v.t.y2b7CA)
     })
   })
 }
 
-function O(e) {
+function h(e) {
   let {
     children: t,
     className: n,
@@ -83,47 +83,47 @@ function j(e) {
     startTime: t,
     status: n,
     eventType: i,
-    className: c,
+    className: s,
     endTime: j,
-    liveText: h,
-    textVariant: x = "text-sm/semibold",
-    isNew: y,
-    recurrenceRule: P,
-    guildEventId: w,
-    recurrenceId: E
-  } = e, N = (0, u.dQu)(o.Z.colors.TEXT_BRAND).hex(), S = (0, u.dQu)(o.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), T = (0, u.dQu)(o.Z.colors.TEXT_DANGER).hex();
-  null == h && (h = i === m.WX.EXTERNAL ? p.intl.string(p.t.IyZxjI) : p.intl.string(p.t["X2K3//"]));
-  let Z = (0, d.Z)(E, w),
+    liveText: O,
+    textVariant: y = "text-sm/semibold",
+    isNew: x,
+    recurrenceRule: N,
+    guildEventId: E,
+    recurrenceId: w
+  } = e, P = (0, u.dQu)(o.Z.colors.TEXT_BRAND).hex(), S = (0, u.dQu)(o.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), I = (0, u.dQu)(o.Z.colors.TEXT_DANGER).hex();
+  null == O && (O = i === f.WX.EXTERNAL ? v.intl.string(v.t.IyZxjI) : v.intl.string(v.t["X2K3//"]));
+  let C = (0, d.Z)(w, E),
     [{
-      startDateTimeString: D,
-      endDateTimeString: I,
-      currentOrPastEvent: _,
-      upcomingEvent: C,
-      diffMinutes: L
-    }, k] = l.useState((0, f.ub)(t, j));
+      startDateTimeString: T,
+      endDateTimeString: D,
+      currentOrPastEvent: Z,
+      upcomingEvent: k,
+      diffMinutes: R
+    }, B] = l.useState((0, p.ub)(t, j));
   l.useEffect(() => {
-    k((0, f.ub)(t, j));
-    let e = setInterval(() => k((0, f.ub)(t, j)), 1e3);
+    B((0, p.ub)(t, j));
+    let e = setInterval(() => B((0, p.ub)(t, j)), 1e3);
     return () => {
       clearInterval(e)
     }
   }, [t, j]);
-  let A = D;
-  null != I && "" !== I && (A = p.intl.formatToPlainString(p.t.tXbu7O, {
-    start: D,
-    end: I
+  let _ = T;
+  null != D && "" !== D && (_ = v.intl.formatToPlainString(v.t.tXbu7O, {
+    start: T,
+    end: D
   }));
-  let R = l.useMemo(() => n === m.p1.CANCELED || (null == Z ? void 0 : Z.is_canceled) ? 5 : n === m.p1.ACTIVE ? 3 : m.$I.has(n) ? 4 : _ ? 2 : +!!C, [n, null == Z ? void 0 : Z.is_canceled, _, C]),
+  let L = l.useMemo(() => n === f.p1.CANCELED || (null == C ? void 0 : C.is_canceled) ? 5 : n === f.p1.ACTIVE ? 3 : f.$I.has(n) ? 4 : Z ? 2 : +!!k, [n, null == C ? void 0 : C.is_canceled, Z, k]),
     z = function(e, t, n, l, i) {
       switch (e) {
         case 1:
-          return i > 0 ? p.intl.formatToPlainString(p.t.PQlCWl, {
+          return i > 0 ? v.intl.formatToPlainString(v.t.PQlCWl, {
             minutes: i
-          }) : p.intl.string(p.t.WINqKS);
+          }) : v.intl.string(v.t.WINqKS);
         case 2:
-          return p.intl.string(p.t.WINqKS);
+          return v.intl.string(v.t.WINqKS);
         case 3:
-          return null != l && "" !== l ? p.intl.format(p.t.vHYgJS, {
+          return null != l && "" !== l ? v.intl.format(v.t.vHYgJS, {
             start: n,
             startHook: e => (0, r.jsx)(u.Text, {
               color: "text-feedback-positive",
@@ -136,12 +136,12 @@ function j(e) {
         default:
           return t
       }
-    }(R, A, h, I, L),
+    }(L, _, O, D, R),
     {
-      Icon: B,
+      Icon: A,
       iconColor: K,
       textColor: X,
-      tooltipText: H
+      tooltipText: G
     } = l.useMemo(() => (function(e) {
       let t, {
           timeStatus: n,
@@ -149,9 +149,9 @@ function j(e) {
           textPositive: l,
           textDanger: i,
           endDateTimeString: a,
-          startDateTimeString: c
+          startDateTimeString: s
         } = e,
-        s = u.Que,
+        c = u.Que,
         o = r,
         d = "header-secondary";
       switch (n) {
@@ -159,78 +159,78 @@ function j(e) {
           o = l, d = null != a ? void 0 : "text-feedback-positive";
           break;
         case 4:
-          s = u.T39;
+          c = u.T39;
           break;
         case 2:
         case 1:
-          d = "text-brand", t = c;
+          d = "text-brand", t = s;
           break;
         case 5:
           o = i
       }
       return {
-        Icon: s,
+        Icon: c,
         iconColor: o,
         textColor: d,
         tooltipText: t
       }
     })({
-      timeStatus: R,
-      textBrand: N,
+      timeStatus: L,
+      textBrand: P,
       textPositive: S,
-      textDanger: T,
-      endDateTimeString: I,
-      startDateTimeString: D
-    }), [R, N, S, T, I, D]),
-    M = null;
-  if (null != P) {
-    let e = (0, f.Ho)(P);
-    M = p.intl.formatToPlainString(p.t.HmKEqa, {
+      textDanger: I,
+      endDateTimeString: D,
+      startDateTimeString: T
+    }), [L, P, S, I, D, T]),
+    W = null;
+  if (null != N) {
+    let e = (0, p.Ho)(N);
+    W = v.intl.formatToPlainString(v.t.HmKEqa, {
       recurrenceRule: e.toText()
     });
-    let n = s()(t);
-    M = function(e, t) {
+    let n = c()(t);
+    W = function(e, t) {
       let n = t.toDate(),
-        r = n.toLocaleString(p.intl.currentLocale, {
+        r = n.toLocaleString(v.intl.currentLocale, {
           weekday: "long"
         });
       switch (e) {
-        case b.z.WEEKLY:
-          return p.intl.formatToPlainString(p.t.xQM9X1, {
+        case m.z.WEEKLY:
+          return v.intl.formatToPlainString(v.t.xQM9X1, {
             weekday: r
           });
-        case b.z.BIWEEKLY:
-          return p.intl.formatToPlainString(p.t.RYscaW, {
+        case m.z.BIWEEKLY:
+          return v.intl.formatToPlainString(v.t.RYscaW, {
             weekday: r
           });
-        case b.z.MONTHLY:
+        case m.z.MONTHLY:
           let l = Math.ceil(n.getDate() / 7);
-          return p.intl.formatToPlainString(p.t["4ZN9Ag"], {
+          return v.intl.formatToPlainString(v.t["4ZN9Ag"], {
             weekday: r,
             nth: l
           });
-        case b.z.YEARLY:
-          return p.intl.formatToPlainString(p.t["rXUS+v"], {
-            date: n.toLocaleString(p.intl.currentLocale, {
+        case m.z.YEARLY:
+          return v.intl.formatToPlainString(v.t["rXUS+v"], {
+            date: n.toLocaleString(v.intl.currentLocale, {
               month: "short",
               day: "2-digit"
             })
           });
-        case b.z.WEEKDAY_ONLY:
-          return p.intl.string(p.t["2BX6bG"]);
-        case b.z.WEEKEND_ONLY:
-          return p.intl.string(p.t["IEi+R0"]);
+        case m.z.WEEKDAY_ONLY:
+          return v.intl.string(v.t["2BX6bG"]);
+        case m.z.WEEKEND_ONLY:
+          return v.intl.string(v.t["IEi+R0"]);
         default:
           return null
       }
-    }((0, f.zi)(n, P), n)
+    }((0, p.zi)(n, N), n)
   }
-  return (0, r.jsxs)(O, {
-    className: a()(c, {
-      [g.isRecurring]: null != M
+  return (0, r.jsxs)(h, {
+    className: a()(s, {
+      [g.isRecurring]: null != W
     }),
-    tooltipText: H,
-    children: [y && n === m.p1.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(B, {
+    tooltipText: G,
+    children: [x && n === f.p1.SCHEDULED ? (0, r.jsx)(b, {}) : (0, r.jsx)(A, {
       color: K,
       size: "custom",
       width: 20,
@@ -239,12 +239,12 @@ function j(e) {
       className: g.eventStatusLabel,
       children: [(0, r.jsx)(u.Text, {
         color: X,
-        variant: x,
+        variant: y,
         children: z
-      }), null != M && (0, r.jsx)(u.Text, {
+      }), null != W && (0, r.jsx)(u.Text, {
         color: "header-secondary",
         variant: "text-xs/normal",
-        children: M
+        children: W
       })]
     })]
   })

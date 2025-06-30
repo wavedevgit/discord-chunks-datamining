@@ -1,6 +1,6 @@
 /**
   Module ID: 73628
-  Original File Name: 677294683ca59aac
+  Original File Name: f7770f3a3dc9c1a8
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -116,155 +116,6 @@
 .textArea_d19bc9 {
     background-color: var(--input-background);
     padding-bottom: 36px
-}
-
-.lineClamp2Plus__38db5 {
-    white-space: pre-wrap
-}
-
-.lineClamp1__38db5 {
-    white-space: nowrap
-}
-
-.draftBadge__53d72 {
-    color: var(--primary-860);
-    letter-spacing: .02em
-}
-
-.roleTag__9cd44,.roleTagContainer__9cd44 {
-    display: flex
-}
-
-.roleTag__9cd44 {
-    align-items: center;
-    background: var(--background-modifier-hover);
-    border-radius: 4px;
-    padding: 8px
-}
-
-.roleColor__9cd44 {
-    border-radius: 6px;
-    flex: none;
-    height: 12px;
-    width: 12px
-}
-
-.productCard__79d38 {
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative
-}
-
-.solidBackground__79d38 {
-    background: var(--background-base-lower)
-}
-
-.theme-dark .opaqueBackground__79d38 {
-    background: rgba(48,51,56,.85)
-}
-
-.theme-light .opaqueBackground__79d38 {
-    background: var(--background-base-lower)
-}
-
-.productThumbnailContainer__79d38 {
-    position: relative
-}
-
-.productThumbnail__79d38 {
-    background: #2b2c31;
-    object-fit: cover;
-    width: 100%
-}
-
-.purchaseToUnlockBadge__79d38 {
-    align-items: center;
-    background-color: rgba(43,45,49,.7);
-    border-radius: 30px;
-    color: var(--white-500);
-    display: flex;
-    gap: 6px;
-    justify-content: center;
-    left: 50%;
-    padding: 4px 12px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    transition: background-color .2s ease-in-out;
-    white-space: nowrap
-}
-
-.draftBadge__79d38 {
-    bottom: 10px;
-    position: absolute;
-    right: 8px
-}
-
-.productThumbnailContainer__79d38:hover .purchaseToUnlockBadge__79d38 {
-    background-color: rgba(43,45,49,.45)
-}
-
-.lockIcon__79d38 {
-    height: 16px;
-    width: 16px
-}
-
-.productName__79d38 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
-.productDetails__79d38 {
-    align-content: flex-start;
-    border-bottom: 1px solid var(--border-subtle);
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    padding: 16px
-}
-
-.productDetailContent__79d38 {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    gap: 4px;
-    margin-right: 24px;
-    overflow: hidden
-}
-
-.purchaseDetails__79d38 {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    padding: 16px
-}
-
-.productActionButton__79d38 {
-    grid-area: 1/2/3/3
-}
-
-.showMoreButton__79d38 {
-    align-items: center;
-    color: var(--interactive-hover);
-    display: flex;
-    gap: 4px;
-    padding-top: 2px
-}
-
-.arrowIcon__79d38 {
-    margin-bottom: -2px
-}
-
-.hasAction__79d38 {
-    color: var(--text-link);
-    cursor: pointer
-}
-
-.cardClickableContainer__79d38 {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%
 }
 
 .base_e42a84 {
@@ -911,4 +762,4 @@
     gap: 16px
 }
 
-/*# sourceMappingURL=677294683ca59aac.css.map*/
+/*# sourceMappingURL=f7770f3a3dc9c1a8.css.map*/

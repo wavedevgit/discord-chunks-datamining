@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(780384),
   c = n(481060),
   u = n(393238),
@@ -31,7 +31,7 @@ function b(e) {
     collapseWhenChecked: j = !0,
     onClick: O,
     disabled: E
-  } = e, I = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), [S, P] = i.useState(!1), Z = (0, d.ZP)(), N = (0, s.wj)(Z) || t ? g : m, {
+  } = e, S = (0, o.e7)([p.Z], () => p.Z.useReducedMotion), [I, P] = i.useState(!1), Z = (0, d.ZP)(), N = (0, s.wj)(Z) || t ? g : m, {
     width: T = 0,
     ref: A
   } = (0, u.ZP)(), {
@@ -63,8 +63,8 @@ function b(e) {
       disabled: E
     }), (0, r.jsxs)("label", {
       htmlFor: v,
-      className: o()(f.label, x, {
-        [f.transition]: S,
+      className: a()(f.label, x, {
+        [f.transition]: I,
         [f.labelChecked]: t,
         [f.labelUnchecked]: !t && !b
       }),
@@ -73,7 +73,7 @@ function b(e) {
       } : void 0,
       children: [t ? (0, r.jsx)(c.ZX5, {
         className: f.shine,
-        shinePaused: I
+        shinePaused: S
       }) : null, (0, r.jsx)("img", {
         ref: A,
         src: N,
@@ -81,7 +81,7 @@ function b(e) {
       }), (0, r.jsx)("span", {
         ref: R,
         children: (0, r.jsx)(c.Text, {
-          className: o()(f.burstText, {
+          className: a()(f.burstText, {
             [f.visuallyHidden]: t && j,
             [f.burstTextChecked]: t
           }),

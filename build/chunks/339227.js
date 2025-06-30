@@ -116,6 +116,9 @@ let v = new c.Z("MarkdownToSlate"),
     channelMention: {
       type: "inlineObject"
     },
+    gameMention: {
+      type: "skip"
+    },
     silentPrefix: {
       type: "inlineStyle",
       before: "@silent",

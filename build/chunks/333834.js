@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => w
 }), n(539854), n(583741), n(388685), n(642613);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(392711),
-  a = n.n(s),
+  a = n(392711),
+  s = n.n(a),
   c = n(91192),
   u = n(481060),
   d = n(724757),
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(982183),
   C = n(981631),
   j = n(144717),
-  E = n(388032),
-  S = n(709701);
+  S = n(388032),
+  E = n(709701);
 
 function x(e) {
   e.stopPropagation()
@@ -38,8 +38,8 @@ function I(e) {
   } = e;
   return (0, r.jsx)(u.P3F, {
     onClick: i,
-    className: o()(S.messagesGroupHeaderWrap, {
-      [S.collapsed]: !n
+    className: o()(E.messagesGroupHeaderWrap, {
+      [E.collapsed]: !n
     }),
     children: (0, r.jsxs)(u.Kqy, {
       gap: 4,
@@ -48,11 +48,11 @@ function I(e) {
       children: [(0, r.jsx)(u.X6q, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: S.messagesGroupHeader,
-        children: (0, s.capitalize)(E.intl.string(v.Vv[t]).toLowerCase())
+        className: E.messagesGroupHeader,
+        children: (0, a.capitalize)(S.intl.string(v.Vv[t]).toLowerCase())
       }), (0, r.jsx)(u.CJ0, {
         size: "xxs",
-        className: S.chevron
+        className: E.chevron
       })]
     })
   })
@@ -64,7 +64,7 @@ function N() {
     analyticsLocations: e
   } = (0, p.ZP)(h.Z.NOTIFICATIONS_INBOX);
   return (0, r.jsx)("div", {
-    className: S.emptyStateContainer,
+    className: E.emptyStateContainer,
     children: (0, r.jsxs)(u.Kqy, {
       gap: 24,
       align: "center",
@@ -82,7 +82,7 @@ function N() {
           style: {
             textAlign: "center"
           },
-          children: E.intl.string(j.default["O+racX"])
+          children: S.intl.string(j.default["O+racX"])
         })]
       }), (0, r.jsx)(u.zxk, {
         onClick: () => (0, O.j4)(e),
@@ -90,7 +90,7 @@ function N() {
         style: {
           fontWeight: 600
         },
-        children: E.intl.string(j.default.klSpfn)
+        children: S.intl.string(j.default.klSpfn)
       })]
     })
   })
@@ -101,11 +101,11 @@ function w(e) {
     messages: t,
     loadingInitial: n,
     loadingMore: l,
-    loadMore: s,
+    loadMore: a,
     renderLoadingState: h,
     renderMessageGroup: p,
     scrollerClassName: j,
-    className: E,
+    className: S,
     listName: w,
     ignoreGrouping: Z = !1
   } = e, T = i.useRef(null), A = (0, d.Z)(w, T), {
@@ -138,8 +138,8 @@ function w(e) {
       var e;
       let t = null == (e = T.current) ? void 0 : e.getScrollerState(),
         n = (0, O.s)(D);
-      null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && (null == s || s(n))
-    }, [s, D]),
+      null != t && t.scrollHeight >= t.scrollTop + t.offsetHeight && (null == a || a(n))
+    }, [a, D]),
     k = (0, O.fW)(null != t ? t : []),
     U = i.useMemo(() => {
       if (null == t || n) return null;
@@ -161,13 +161,13 @@ function w(e) {
           [v.KZ.YESTERDAY]: {},
           [v.KZ.OLDER]: {}
         };
-      return null != t && t.length > 0 && (a().each(t, e => {
+      return null != t && t.length > 0 && (s().each(t, e => {
         let {
           message: t,
           kind: n
         } = e, l = k(t.id);
         n === v.fL.MENTION ? r[l].push(t) : t.channel_id in i[l] ? i[l][t.channel_id].push(t) : i[l][t.channel_id] = [t]
-      }), a().each(P, t => {
+      }), s().each(P, t => {
         [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => g.default.compare(t[0].id, e[0].id)).forEach(n => {
           e[t].push(n)
         })
@@ -180,7 +180,7 @@ function w(e) {
           message: t
         } = e;
         return p([t], R === m.jP.SIDEBAR, k(t.id) === v.KZ.UNREAD)
-      })) : null != U && a().each(P, t => {
+      })) : null != U && s().each(P, t => {
         0 !== U[t].length && (e.push((0, r.jsx)(I, {
           group: t,
           isOpen: D[t],
@@ -197,15 +197,15 @@ function w(e) {
       }, "spacer")), e
     }, [n, t, h, D, L, U, Z, p, R, k]);
   i.useEffect(() => {
-    var e, t, r, i, l, o, s;
+    var e, t, r, i, l, o, a;
     if (n) return;
-    let a = null != U && 0 === U.UNREAD.length,
-      c = null != (s = null != (o = null != (l = null == (e = U) || null == (t = e.TODAY[0]) ? void 0 : t[0]) ? l : null == e || null == (r = e.YESTERDAY[0]) ? void 0 : r[0]) ? o : null == e || null == (i = e.OLDER[0]) ? void 0 : i[0]) ? s : null;
-    y.Z.setInboxReadState(a, c)
+    let s = null != U && 0 === U.UNREAD.length,
+      c = null != (a = null != (o = null != (l = null == (e = U) || null == (t = e.TODAY[0]) ? void 0 : t[0]) ? l : null == e || null == (r = e.YESTERDAY[0]) ? void 0 : r[0]) ? o : null == e || null == (i = e.OLDER[0]) ? void 0 : i[0]) ? a : null;
+    y.Z.setInboxReadState(s, c)
   }, [U, n]);
   let B = null;
-  return null != t && t.length > 0 && null != s && l && (B = (0, r.jsx)("div", {
-      className: S.loadingMore,
+  return null != t && t.length > 0 && null != a && l && (B = (0, r.jsx)("div", {
+      className: E.loadingMore,
       children: (0, r.jsx)(u.$jN, {})
     }, "loading-more-after")),
     function(e) {
@@ -213,11 +213,11 @@ function w(e) {
         loadingInitial: t,
         messagesByCategory: n
       } = e, r = i.useRef(!1), l = null != n && n.UNREAD.length > 0, o = null == n || t, {
-        setOpenStateFromUnreads: s
+        setOpenStateFromUnreads: a
       } = (0, _.Z)();
       i.useEffect(() => {
-        o || r.current || (s(l), r.current = !0)
-      }, [s, l, o])
+        o || r.current || (a(l), r.current = !0)
+      }, [a, l, o])
     }({
       messagesByCategory: U,
       loadingInitial: n
@@ -226,12 +226,12 @@ function w(e) {
       wrappedMessages: t,
       groupedUnreadMessages: null == U ? void 0 : U.UNREAD
     }), (0, r.jsx)("div", {
-      className: o()(E, S.messagesPopoutWrap),
+      className: o()(S, E.messagesPopoutWrap),
       onClick: x,
       onDoubleClick: x,
       "aria-label": e["aria-label"],
       children: (0, r.jsx)(u.Den, {
-        className: o()(S.messagesPopout, j),
+        className: o()(E.messagesPopout, j),
         onScroll: M,
         fade: !0,
         ref: T,

@@ -1,4 +1,4 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 81872 **/
 n.d(t, {
   Z: () => s
 });
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(395361),
-  a = n(829820),
-  o = n(862863);
+  o = n(829820),
+  a = n(862863);
 
 function s(e) {
   let {
@@ -17,20 +17,20 @@ function s(e) {
     className: c,
     size: u,
     look: d,
-    color: f,
-    fullWidth: p,
+    color: p,
+    fullWidth: f,
     onAction: m
   } = e, {
     label: g,
-    tooltip: _,
-    loading: b,
-    disabled: h,
-    onClick: v
-  } = (0, a.Ih)(t, n, s), y = () => {
-    null == m || m(), v()
+    tooltip: b,
+    loading: _,
+    disabled: v,
+    onClick: h
+  } = (0, o.Ih)(t, n, s), y = () => {
+    null == m || m(), h()
   };
   return (0, r.jsx)(i.ua7, {
-    text: _,
+    text: b,
     children: e => {
       let {
         onMouseEnter: t,
@@ -38,16 +38,16 @@ function s(e) {
       } = e;
       return (0, r.jsxs)(i.zxk, {
         className: c,
-        innerClassName: o.playButtonInner,
+        innerClassName: a.playButtonInner,
         size: u,
         look: d,
-        color: f,
-        fullWidth: p,
+        color: p,
+        fullWidth: f,
         onClick: y,
         onMouseEnter: t,
         onMouseLeave: n,
-        disabled: h,
-        submitting: b,
+        disabled: v,
+        submitting: _,
         children: [(0, r.jsx)(l.Z, {
           width: 16,
           height: 16

@@ -1,36 +1,36 @@
-/** Chunk was on 73628 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => d
 });
 var r = n(255367),
-  A = n(73800),
-  a = n(120356),
-  l = n.n(a),
+  i = n(73800),
+  l = n(120356),
+  a = n.n(l),
   o = n(481060),
-  i = n(741914),
-  s = n(497646),
-  c = n(73433);
+  s = n(741914),
+  c = n(497646),
+  u = n(73433);
 
 function d(e) {
   let {
     color: t,
     className: n,
-    variant: a,
+    variant: l,
     text: d,
-    lineClamp: u
-  } = e, g = (0, o.xSt)(), f = A.useMemo(() => null == d ? null : (0, i.Z)(d, !0, {
-    allowHeading: null == u,
-    allowList: null == u,
-    initialHeaderLevel: g
-  }), [d, u, g]);
+    lineClamp: p
+  } = e, m = (0, o.xSt)(), f = i.useMemo(() => null == d ? null : (0, s.Z)(d, !0, {
+    allowHeading: null == p,
+    allowList: null == p,
+    initialHeaderLevel: m
+  }), [d, p, m]);
   return (0, r.jsx)(o.Text, {
-    className: l()(n, c.markup, {
-      [s.lineClamp2Plus]: null != u && u > 1,
-      [s.lineClamp1]: 1 === u
+    className: a()(n, u.markup, {
+      [c.lineClamp2Plus]: null != p && p > 1,
+      [c.lineClamp1]: 1 === p
     }),
     color: t,
-    variant: a,
-    lineClamp: u,
+    variant: l,
+    lineClamp: p,
     children: f
   })
 }

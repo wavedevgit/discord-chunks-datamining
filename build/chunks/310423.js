@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => T
 }), n(467055), n(388685);
@@ -14,16 +14,16 @@ var r = n(255367),
   p = n(603721),
   m = n(124072),
   f = n(892001),
-  h = n(592125),
-  g = n(485386),
-  _ = n(430824),
+  g = n(592125),
+  _ = n(485386),
+  h = n(430824),
   b = n(594174),
-  x = n(739566),
+  E = n(739566),
   y = n(761652),
-  E = n(388032),
+  C = n(388032),
   v = n(912861);
 
-function C(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,12 +59,12 @@ let j = {
     variant: "text-md/normal",
     color: "header-secondary"
   },
-  S = {
+  I = {
     className: a()("mention", v.mention)
   };
 
-function I(e) {
-  return (0, r.jsx)(s.Text, O(C({}, j), {
+function S(e) {
+  return (0, r.jsx)(s.Text, O(x({}, j), {
     color: "header-primary",
     children: e
   }))
@@ -83,7 +83,7 @@ let T = i.memo(function(e) {
       onCopy: k,
       copyRef: L
     } = (0, d.Z)(A, null == Z || null == (t = Z.application_command) ? void 0 : t.id),
-    D = (0, o.e7)([_.Z], () => _.Z.getGuild(A.guild_id), [A.guild_id]);
+    D = (0, o.e7)([h.Z], () => h.Z.getGuild(A.guild_id), [A.guild_id]);
   if (i.useEffect(() => {
       (null == Z || Z.type === c.yU.CHAT && void 0 === Z.application_command) && p.OG(A.id, w)
     }, [A.id, w, Z]), null == Z) P = (0, r.jsx)(s.$jN, {
@@ -95,7 +95,7 @@ let T = i.memo(function(e) {
       t = Object.fromEntries((null != (a = null == (n = Z.application_command) ? void 0 : n.options) ? a : []).map(e => [e.name, e]));
     for (let n of null != (T = Z.options) ? T : []) e = e.concat(function e(t) {
       var n, l, a, o, u, d, p;
-      let _, {
+      let h, {
           option: v,
           channel: T,
           guild: N,
@@ -107,7 +107,7 @@ let T = i.memo(function(e) {
         R = null != A ? A + " " + v.name : v.name;
       if (v.type === c.jw.SUB_COMMAND || v.type === c.jw.SUB_COMMAND_GROUP) {
         let t = [(0, r.jsxs)(i.Fragment, {
-            children: [" ", (0, r.jsx)(s.Text, O(C({}, j), {
+            children: [" ", (0, r.jsx)(s.Text, O(x({}, j), {
               children: null != (l = null == w ? void 0 : w.name_localized) ? l : v.name
             }))]
           }, R)],
@@ -129,8 +129,8 @@ let T = i.memo(function(e) {
           let e = v.value.toString(),
             t = b.default.getUser(e);
           if (null != t) {
-            let e = (0, x.ij)(t, T);
-            _ = (0, r.jsxs)(m.Z, O(C({}, S), {
+            let e = (0, E.ij)(t, T);
+            h = (0, r.jsxs)(m.Z, O(x({}, I), {
               onClick: () => (0, f.openUserProfileModal)({
                 userId: t.id,
                 guildId: T.guild_id,
@@ -145,31 +145,31 @@ let T = i.memo(function(e) {
         }
         case c.jw.CHANNEL: {
           let e = v.value.toString(),
-            t = h.Z.getChannel(e);
-          null != t && (_ = (0, r.jsxs)(m.Z, O(C({}, S), {
+            t = g.Z.getChannel(e);
+          null != t && (h = (0, r.jsxs)(m.Z, O(x({}, I), {
             children: [y.zy, t.name]
           })));
           break
         }
         case c.jw.ROLE: {
           let e = v.value.toString(),
-            t = null != N ? g.Z.getRole(N.id, e) : void 0;
-          null != t && (_ = (0, r.jsxs)(m.Z, O(C({}, S), {
+            t = null != N ? _.Z.getRole(N.id, e) : void 0;
+          null != t && (h = (0, r.jsxs)(m.Z, O(x({}, I), {
             children: [y.ME, t.name]
           })));
           break
         }
         case c.jw.MENTIONABLE: {
           let e = v.value.toString(),
-            t = null != N ? g.Z.getRole(N.id, e) : void 0;
-          if (null != t) _ = (0, r.jsxs)(m.Z, {
+            t = null != N ? _.Z.getRole(N.id, e) : void 0;
+          if (null != t) h = (0, r.jsxs)(m.Z, {
             children: [y.ME, t.name]
           });
           else {
             let t = b.default.getUser(e);
             if (null != t) {
-              let e = (0, x.ij)(t, T);
-              _ = (0, r.jsxs)(m.Z, O(C({}, S), {
+              let e = (0, E.ij)(t, T);
+              h = (0, r.jsxs)(m.Z, O(x({}, I), {
                 onClick: () => (0, f.openUserProfileModal)({
                   userId: t.id,
                   guildId: T.guild_id,
@@ -182,17 +182,17 @@ let T = i.memo(function(e) {
           break
         }
         case c.jw.ATTACHMENT:
-          _ = I(E.intl.string(E.t.nONJVV));
+          h = S(C.intl.string(C.t.nONJVV));
           break;
         default: {
           let e = null == w || null == (u = w.choices) ? void 0 : u.find(e => e.value === v.value);
           null != e && (k = null != (d = e.name_localized) ? d : e.name)
         }
       }
-      return null == _ && (_ = I(null == k ? void 0 : k.toString())), [(0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsxs)(s.Text, O(C({}, j), {
+      return null == h && (h = S(null == k ? void 0 : k.toString())), [(0, r.jsxs)(i.Fragment, {
+        children: [(0, r.jsxs)(s.Text, O(x({}, j), {
           children: [" ", null != (p = null == w ? void 0 : w.name_localized) ? p : v.name, ": "]
-        })), _]
+        })), h]
       }, R)]
     }({
       option: n,
@@ -204,7 +204,7 @@ let T = i.memo(function(e) {
       sourceAnalyticsLocations: R
     }));
     P = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(s.Text, O(C({}, j), {
+      children: [(0, r.jsxs)(s.Text, O(x({}, j), {
         children: ["/", null != (N = null == (l = Z.application_command) ? void 0 : l.name_localized) ? N : Z.name]
       })), e]
     })

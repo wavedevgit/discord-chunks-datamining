@@ -1,7 +1,7 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   P: () => f,
-  e: () => h
+  e: () => g
 });
 var r = n(255367),
   i = n(73800),
@@ -81,7 +81,7 @@ function f(e) {
     channelId: i.id,
     guildId: i.guild_id,
     messageId: t.id
-  }), h = m(i, t);
+  }), g = m(i, t);
   return (0, r.jsx)(s.Z, {
     icon: n(570111),
     timestamp: t.timestamp,
@@ -90,12 +90,12 @@ function f(e) {
       application: u,
       username: c.nick,
       usernameHook: f(c),
-      applicationNameHook: null != u ? h(u) : p.dG4
+      applicationNameHook: null != u ? g(u) : p.dG4
     })
   })
 }
 
-function h(e) {
+function g(e) {
   let {
     message: t,
     channel: i,
@@ -105,7 +105,7 @@ function h(e) {
     channelId: i.id,
     guildId: i.guild_id,
     messageId: t.id
-  }), h = m(i, t);
+  }), g = m(i, t);
   return (0, r.jsx)(s.Z, {
     icon: n(474019),
     timestamp: t.timestamp,
@@ -114,7 +114,7 @@ function h(e) {
       application: u,
       username: c.nick,
       usernameHook: f(c),
-      applicationNameHook: null != u ? h(u) : p.dG4
+      applicationNameHook: null != u ? g(u) : p.dG4
     })
   })
 }

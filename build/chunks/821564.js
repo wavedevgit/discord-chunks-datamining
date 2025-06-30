@@ -1,4 +1,4 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 81872 **/
 n.d(t, {
   Z: () => d
 });
@@ -6,21 +6,21 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  a = n(846027),
-  o = n(131951),
+  o = n(846027),
+  a = n(131951),
   s = n(358085),
   c = n(981631),
   u = n(388032);
 
 function d(e) {
   let t = !s.isPlatformEmbedded,
-    n = (0, i.e7)([o.Z], () => o.Z.getMode()),
+    n = (0, i.e7)([a.Z], () => a.Z.getMode()),
     d = (t, i) => (0, r.jsx)(l.k5B, {
       id: t,
       group: "input-modes",
       label: i,
       checked: n === t,
-      action: () => a.Z.setMode(t, void 0, void 0, {
+      action: () => o.Z.setMode(t, void 0, void 0, {
         analyticsLocations: e
       })
     }, t);

@@ -1,12 +1,12 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => I
+  Z: () => S
 });
 var r = n(255367),
   i = n(73800),
   l = n(374470),
-  o = n(952265),
-  a = n(481060),
+  a = n(952265),
+  o = n(481060),
   s = n(40851),
   c = n(896449),
   u = n(314910),
@@ -38,9 +38,9 @@ function E(e) {
   } = e, f = i.useRef(null), {
     renderWindow: x,
     windowDispatch: v
-  } = i.useContext(s.ZP), j = null != u, E = (0, o.Jw)(null != u ? u : ""), I = i.useCallback(e => {
+  } = i.useContext(s.ZP), j = null != u, E = (0, a.Jw)(null != u ? u : ""), S = i.useCallback(e => {
     var t;
-    if (!j && (0, o.$s)() || j && !(E && n) || d.Z.isOpen() || e.defaultPrevented) return;
+    if (!j && (0, a.$s)() || j && !(E && n) || d.Z.isOpen() || e.defaultPrevented) return;
     let {
       target: r
     } = e;
@@ -58,12 +58,12 @@ function E(e) {
     let i = null == (t = (0, h.uB)(e)) ? void 0 : t.activeElement;
     (null == i || "BODY" === i.tagName) && p.S.dispatchToLastSubscribed(y.CkL.TEXTAREA_FOCUS)
   }, [n, E, j]);
-  i.useLayoutEffect(() => (x.addEventListener("mousedown", I), x.addEventListener("contextmenu", I), v.subscribe(y.CkL.POPOUT_CLOSE, O), () => {
-    x.removeEventListener("mousedown", I), x.removeEventListener("contextmenu", I), v.unsubscribe(y.CkL.POPOUT_CLOSE, O)
-  }), [I, x, v]), (0, a.Tbt)(f), i.useEffect(() => {
-    (!j && (0, o.$s)() || j && !E) && O()
+  i.useLayoutEffect(() => (x.addEventListener("mousedown", S), x.addEventListener("contextmenu", S), v.subscribe(y.CkL.POPOUT_CLOSE, O), () => {
+    x.removeEventListener("mousedown", S), x.removeEventListener("contextmenu", S), v.unsubscribe(y.CkL.POPOUT_CLOSE, O)
+  }), [S, x, v]), (0, o.Tbt)(f), i.useEffect(() => {
+    (!j && (0, a.$s)() || j && !E) && O()
   }, [E, j]);
-  let S = (0, b.Z)();
+  let I = (0, b.Z)();
   return (0, r.jsx)(g.Z, {
     ref: f,
     context: {
@@ -71,10 +71,10 @@ function E(e) {
       type: "channel"
     },
     entrypoint: m._b.TEXT,
-    initHistory: S
+    initHistory: I
   })
 }
-let I = i.memo(function(e) {
+let S = i.memo(function(e) {
   var {
     positionTargetRef: t
   } = e, n = function(e, t) {

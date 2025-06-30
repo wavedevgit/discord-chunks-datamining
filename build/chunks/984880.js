@@ -1,4 +1,4 @@
-/** Chunk was on 19456 **/
+/** Chunk was on 8381 **/
 "use strict";
 var n = r(381538);
 
@@ -63,20 +63,20 @@ t.exports = function(t) {
           selection: m,
           tree: h.getBlockTree(O)
         },
-        F = e.get(K) || e.get("unstyled"),
-        N = F.wrapper,
-        P = F.element || e.get("unstyled").element,
-        z = D.getDepth(),
+        N = e.get(K) || e.get("unstyled"),
+        F = N.wrapper,
+        z = N.element || e.get("unstyled").element,
+        P = D.getDepth(),
         j = "";
-      (n && (j = n(D)), "li" === P) && (j = c(j, s({
+      (n && (j = n(D)), "li" === z) && (j = c(j, s({
         "public/DraftStyleDefault/unorderedListItem": "unordered-list-item" === K,
         "public/DraftStyleDefault/orderedListItem": "ordered-list-item" === K,
-        "public/DraftStyleDefault/reset": C !== N || null === k || z > k,
-        "public/DraftStyleDefault/depth0": 0 === z,
-        "public/DraftStyleDefault/depth1": 1 === z,
-        "public/DraftStyleDefault/depth2": 2 === z,
-        "public/DraftStyleDefault/depth3": 3 === z,
-        "public/DraftStyleDefault/depth4": z >= 4,
+        "public/DraftStyleDefault/reset": C !== F || null === k || P > k,
+        "public/DraftStyleDefault/depth0": 0 === P,
+        "public/DraftStyleDefault/depth1": 1 === P,
+        "public/DraftStyleDefault/depth2": 2 === P,
+        "public/DraftStyleDefault/depth3": 3 === P,
+        "public/DraftStyleDefault/depth4": P >= 4,
         "public/DraftStyleDefault/listLTR": "LTR" === B,
         "public/DraftStyleDefault/listRTL": "RTL" === B
       })));
@@ -109,15 +109,15 @@ t.exports = function(t) {
         contentEditable: I,
         suppressContentEditableWarning: !0
       }));
-      var H = u.createElement(P, q, u.createElement(U, i({}, R, {
+      var H = u.createElement(z, q, u.createElement(U, i({}, R, {
         key: O
       })));
       x.push({
         block: H,
-        wrapperTemplate: N,
+        wrapperTemplate: F,
         key: O,
         offsetKey: L
-      }), k = N ? D.getDepth() : null, C = N
+      }), k = F ? D.getDepth() : null, C = F
     }
     for (var W = [], V = 0; V < x.length;) {
       var G = x[V];

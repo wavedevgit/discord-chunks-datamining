@@ -1,7 +1,7 @@
-/** Chunk was on 97870 **/
+/** Chunk was on 93955 **/
 n.d(t, {
   BH: () => c,
-  MH: () => l,
+  MH: () => s,
   j4: () => d,
   nC: () => u
 });
@@ -11,14 +11,14 @@ var a = n(442837),
   o = n(695346);
 
 function c() {
-  return s(o.YT.useSetting(), (0, a.e7)([i.Z], () => i.Z.currentUserApplicationIds.size > 0))
+  return l(o.YT.useSetting(), (0, a.e7)([i.Z], () => i.Z.currentUserApplicationIds.size > 0))
 }
 
-function l() {
-  return s(o.YT.getSetting(), i.Z.currentUserApplicationIds.size > 0)
+function s() {
+  return l(o.YT.getSetting(), i.Z.currentUserApplicationIds.size > 0)
 }
 
-function s(e, t) {
+function l(e, t) {
   return e === r.Tv.ACTIVITY_NOTIFICATIONS_UNSET ? t ? r.Tv.ONLY_GAMES_PLAYED : r.Tv.ACTIVITY_NOTIFICATIONS_ENABLED : e !== r.Tv.ONLY_GAMES_PLAYED || t ? e : r.Tv.ACTIVITY_NOTIFICATIONS_ENABLED
 }
 

@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => u
 });
@@ -22,13 +22,13 @@ function c(e) {
     iconClassName: p,
     iconContainerClassName: m,
     timestampClassName: f,
-    compact: h = !1
+    compact: g = !1
   } = e;
   return (0, r.jsxs)("div", {
     className: l()(c, {
       [s.container]: !0,
-      [s.compact]: h,
-      [s.cozy]: !h
+      [s.compact]: g,
+      [s.cozy]: !g
     }),
     children: [null != n && (0, r.jsx)("div", {
       className: l()(s.iconContainer, m),

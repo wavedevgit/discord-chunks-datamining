@@ -1,26 +1,26 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 81872 **/
 n.d(t, {
-  J: () => h
+  J: () => v
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(164369),
+  o = n.n(l),
+  a = n(164369),
   s = n(695469),
   c = n(481060),
   u = n(70956),
   d = n(388032),
-  f = n(819496);
+  p = n(819496);
 
-function p(e) {
+function f(e) {
   if (null != e) {
     let t = new Date,
       {
         hours: n,
         minutes: r,
         seconds: i
-      } = (0, o.Z)({
+      } = (0, a.Z)({
         start: t,
         end: e
       });
@@ -63,7 +63,7 @@ let m = e => {
       }
     });
     return (0, r.jsx)("div", {
-      className: f.animatedDigit,
+      className: p.animatedDigit,
       children: n((e, t) => {
         var n, i;
         return (0, r.jsx)(s.animated.div, {
@@ -127,75 +127,75 @@ let m = e => {
     });
     return (0, r.jsxs)(s.animated.div, {
       style: n,
-      className: f.colonContainer,
+      className: p.colonContainer,
       children: [(0, r.jsx)("div", {
-        className: f.tinyDot
+        className: p.tinyDot
       }), (0, r.jsx)("div", {
-        className: f.tinyDot
+        className: p.tinyDot
       })]
     })
   },
-  _ = e => {
+  b = e => {
     let {
       digits: t
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: f.digitContainer,
+        className: p.digitContainer,
         children: (0, r.jsx)(m, {
           digit: t[0]
         })
       }), (0, r.jsx)("div", {
-        className: f.digitContainer,
+        className: p.digitContainer,
         children: (0, r.jsx)(m, {
           digit: t[1]
         })
       })]
     })
   },
-  b = e => {
+  _ = e => {
     let {
       countdown: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: f.digitsContainer,
-      children: [(0, r.jsx)(_, {
+      className: p.digitsContainer,
+      children: [(0, r.jsx)(b, {
         digits: t.hours
-      }), (0, r.jsx)(g, {}), (0, r.jsx)(_, {
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(b, {
         digits: t.minutes
-      }), (0, r.jsx)(g, {}), (0, r.jsx)(_, {
+      }), (0, r.jsx)(g, {}), (0, r.jsx)(b, {
         digits: t.seconds
       })]
     })
   };
 
-function h(e) {
+function v(e) {
   let {
     textVariant: t,
     className: n,
     catalogUpdateTime: l,
-    isScrolled: o
-  } = e, [s, u] = i.useState(() => p(l));
+    isScrolled: a
+  } = e, [s, u] = i.useState(() => f(l));
   return i.useEffect(() => {
     let e = setInterval(() => {
-      u(() => p(l))
+      u(() => f(l))
     }, 1e3);
     return () => clearInterval(e)
   }, [l]), (0, r.jsxs)("div", {
-    className: a()(n, f.countdownContainer, {
-      [f.isScrolled]: o
+    className: o()(n, p.countdownContainer, {
+      [p.isScrolled]: a
     }),
     "aria-label": s.countdownString,
     children: [(0, r.jsxs)("div", {
-      className: f.iconContainer,
+      className: p.iconContainer,
       children: [(0, r.jsx)("div", {
-        className: f.clockIconWrapper,
+        className: p.clockIconWrapper,
         children: (0, r.jsx)(c.T39, {
           size: "custom",
           height: 16,
           width: 16,
           color: "currentColor",
-          colorClass: f.clockIcon
+          colorClass: p.clockIcon
         })
       }), (0, r.jsx)(c.Text, {
         variant: null != t ? t : "text-sm/medium",
@@ -203,8 +203,8 @@ function h(e) {
         children: d.intl.string(d.t.VZsY3t)
       })]
     }), (0, r.jsx)("div", {
-      className: f.digitsContainer,
-      children: (0, r.jsx)(b, {
+      className: p.digitsContainer,
+      children: (0, r.jsx)(_, {
         countdown: s
       })
     })]

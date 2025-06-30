@@ -1,11 +1,11 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 81872 **/
 n.d(t, {
-  Z: () => _
+  Z: () => b
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(846519),
   c = n(600164),
   u = n(903276);
@@ -19,13 +19,13 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function p(e) {
   let {
     percentage: t,
     isSingleLine: n
   } = e;
   return (0, i.jsx)("div", {
-    className: o()({
+    className: a()({
       [u.bar]: n,
       [u.barInMultiLine]: !n
     }),
@@ -38,7 +38,7 @@ function f(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   return String(e).padStart(2, "0")
 }
 
@@ -47,7 +47,7 @@ function m(e) {
     time: t,
     padLargestUnit: n
   } = e, r = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, l = Math.floor(t / 3600);
-  return 0 === l ? n ? "".concat(p(i), ":").concat(p(r)) : "".concat(i, ":").concat(p(r)) : n ? "".concat(p(l), ":").concat(p(i), ":").concat(p(r)) : "".concat(l, ":").concat(p(i), ":").concat(p(r))
+  return 0 === l ? n ? "".concat(f(i), ":").concat(f(r)) : "".concat(i, ":").concat(f(r)) : n ? "".concat(f(l), ":").concat(f(i), ":").concat(f(r)) : "".concat(l, ":").concat(f(i), ":").concat(f(r))
 }
 class g extends(r = l.PureComponent) {
   componentDidMount() {
@@ -68,10 +68,10 @@ class g extends(r = l.PureComponent) {
       themed: r,
       singleLine: l = !1
     } = this.props, {
-      now: a
-    } = this.state, s = (t - e) / 1e3, d = Math.max(Math.min((a - e) / 1e3, s), 0);
+      now: o
+    } = this.state, s = (t - e) / 1e3, d = Math.max(Math.min((o - e) / 1e3, s), 0);
     return l ? (0, i.jsxs)("div", {
-      className: o()(n, {
+      className: a()(n, {
         [u.themed]: r
       }, u.singleLineContainer),
       children: [(0, i.jsx)("div", {
@@ -82,7 +82,7 @@ class g extends(r = l.PureComponent) {
         })
       }), (0, i.jsx)("div", {
         className: u.barInSingleLine,
-        children: (0, i.jsx)(f, {
+        children: (0, i.jsx)(p, {
           percentage: d / s,
           isSingleLine: !0
         })
@@ -94,10 +94,10 @@ class g extends(r = l.PureComponent) {
         })
       })]
     }) : (0, i.jsxs)("div", {
-      className: o()(n, {
+      className: a()(n, {
         [u.themed]: r
       }),
-      children: [(0, i.jsx)(f, {
+      children: [(0, i.jsx)(p, {
         percentage: d / s,
         isSingleLine: !1
       }), (0, i.jsxs)(c.Z, {
@@ -128,4 +128,4 @@ class g extends(r = l.PureComponent) {
 d(g, "defaultProps", {
   themed: !1
 });
-let _ = g
+let b = g

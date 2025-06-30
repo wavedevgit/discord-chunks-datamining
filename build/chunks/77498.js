@@ -32,7 +32,7 @@ let h = "GameStoreReportedGames",
   I = null;
 
 function T(e) {
-  var t, n, r, i, a, o, s;
+  var t, n, r, i, a, o, s, l;
   return {
     id: e.id,
     name: e.name,
@@ -43,7 +43,8 @@ function T(e) {
     hook: null == (a = e.hook) || a,
     aliases: null != (o = e.aliases) ? o : [],
     supportsOutOfProcessOverlay: d.ZP.supportsOutOfProcessOverlay(e.overlay_methods),
-    themes: null != (s = e.themes) ? s : []
+    themes: null != (s = e.themes) ? s : [],
+    icon: null != (l = e.icon_hash) ? l : void 0
   }
 }
 
@@ -58,7 +59,8 @@ function S(e) {
     hook: e.hook,
     aliases: e.aliases,
     supportsOutOfProcessOverlay: e.supportsOutOfProcessOverlay,
-    themes: []
+    themes: [],
+    icon: e.icon
   }
 }
 

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(73800),
   i = n(442837),
   l = n(570140),
-  o = n(911969),
-  a = n(110924),
+  a = n(911969),
+  o = n(110924),
   s = n(213459),
   c = n(812206),
   u = n(835473),
@@ -15,7 +15,7 @@ var r = n(73800),
   h = n(973616),
   f = n(594174),
   m = n(981631);
-let g = [o.yU.PRIMARY_ENTRY_POINT, o.yU.CHAT, o.yU.MESSAGE, o.yU.USER];
+let g = [a.yU.PRIMARY_ENTRY_POINT, a.yU.CHAT, a.yU.MESSAGE, a.yU.USER];
 
 function b(e) {
   var t, n, b;
@@ -28,7 +28,7 @@ function b(e) {
   }, [y]), x = (0, i.e7)([d.Z], () => {
     var e;
     return d.Z.isFetchingProfile(null != (e = null == C ? void 0 : C.id) ? e : m.lds)
-  }), v = (0, a.Z)(x), j = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? void 0 : C.id)), O = (0, i.e7)([d.Z], () => {
+  }), v = (0, o.Z)(x), j = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? void 0 : C.id)), O = (0, i.e7)([d.Z], () => {
     var e;
     return null !== C ? null == (e = d.Z.getUserProfile(null == C ? void 0 : C.id)) ? void 0 : e.application : void 0
   }), E = null != j ? j : null == O ? void 0 : O.id;
@@ -45,7 +45,7 @@ function b(e) {
       botUserId: C.id
     })
   }, [null == C ? void 0 : C.id]);
-  let I = (0, s.v1)({
+  let S = (0, s.v1)({
       channel: y,
       type: "channel"
     }, {
@@ -55,10 +55,10 @@ function b(e) {
       allowFetch: (null == C ? void 0 : C.id) != null,
       allowApplicationState: !0
     }),
-    S = I.commands.filter(e => e.type === o.yU.PRIMARY_ENTRY_POINT && e.applicationId === E)[0],
-    P = I.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
-    Z = I.loading,
-    N = null == (t = I.descriptors.find(e => {
+    I = S.commands.filter(e => e.type === a.yU.PRIMARY_ENTRY_POINT && e.applicationId === E)[0],
+    P = S.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
+    Z = S.loading,
+    N = null == (t = S.descriptors.find(e => {
       var t;
       return (null == (t = e.application) ? void 0 : t.id) === E
     })) ? void 0 : t.application,
@@ -70,7 +70,7 @@ function b(e) {
     application: w,
     isInitialLoading: R,
     isAppDM: null != (b = null == C ? void 0 : C.bot) && b,
-    primaryEntryPointCommand: S,
+    primaryEntryPointCommand: I,
     isProfileFetching: x,
     wasProfileFetching: null != v ? v : null,
     applicationId: E,

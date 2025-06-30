@@ -1,34 +1,34 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(388032),
-  o = n(892703);
+  a = n(892703);
 
-function a(e) {
+function o(e) {
   let {
     onClose: t,
     guildName: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.container,
+    className: a.container,
     children: [(0, r.jsx)("div", {
-      className: o.iconContainer,
+      className: a.iconContainer,
       children: (0, r.jsx)(i.YlB, {
         size: "custom",
         color: "currentColor",
-        className: o.icon,
+        className: a.icon,
         width: 20,
         height: 20
       })
     }), (0, r.jsxs)("div", {
-      className: o.header,
+      className: a.header,
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-md/semibold",
-        className: o.headerText,
+        className: a.headerText,
         children: l.intl.string(l.t.LIIyeH)
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
@@ -37,7 +37,7 @@ function a(e) {
         })
       }), (0, r.jsx)(i.zxk, {
         onClick: t,
-        className: o.button,
+        className: a.button,
         children: l.intl.string(l.t.BddRzc)
       })]
     })]

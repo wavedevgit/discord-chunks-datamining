@@ -1,12 +1,12 @@
-/** Chunk was on 94357 **/
+/** Chunk was on 83976 **/
 n.d(t, {
-  Z: () => b
+  Z: () => O
 }), n(539854), n(388685);
 var r, l = n(442837),
   i = n(570140),
   a = n(633302),
-  u = n(594174),
-  o = n(176354),
+  o = n(594174),
+  u = n(176354),
   s = n(984063),
   c = n(88315),
   d = n(813900);
@@ -20,7 +20,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,48 +32,48 @@ function m(e) {
   }
   return e
 }
-let p = {},
-  E = {},
+let m = {},
   g = {},
+  E = {},
   h = !0,
-  S = null;
+  v = null;
 
-function O(e) {
-  if (null == E[e]) {
-    let t = u.default.getUser(e);
+function S(e) {
+  if (null == g[e]) {
+    let t = o.default.getUser(e);
     if (null == t) return;
     let n = t.getAvatarURL(null, d.Ks),
       r = new Image;
-    r.src = n, E[e] = r
+    r.src = n, g[e] = r
   }
 }
-class v extends(r = l.ZP.Store) {
+class b extends(r = l.ZP.Store) {
   get visibleOverlayCanvas() {
     return h
   }
   getDrawables(e) {
-    return null != p[e] ? p[e] : []
+    return null != m[e] ? m[e] : []
   }
   getAvatarImage(e) {
-    return E[e]
-  }
-  getEmojiImage(e) {
     return g[e]
   }
+  getEmojiImage(e) {
+    return E[e]
+  }
   getDrawMode() {
-    return S
+    return v
   }
 }
-f(v, "displayName", "SharedCanvasStore");
-let b = new v(i.Z, {
+f(b, "displayName", "SharedCanvasStore");
+let O = new b(i.Z, {
   SHARED_CANVAS_UPDATE_LINE_POINTS: function(e) {
     let {
       lineId: t,
       newPoints: n,
       userId: r,
       streamerId: l
-    } = e, i = p[l];
-    if (null == i) p[l] = [{
+    } = e, i = m[l];
+    if (null == i) m[l] = [{
       type: s.W.LINE,
       id: t,
       userId: r,
@@ -88,15 +88,15 @@ let b = new v(i.Z, {
         points: n
       }) : (0, c.P7)(e) && e.points.push(...n)
     }
-    O(r)
+    S(r)
   },
   SHARED_CANVAS_UPDATE_EMOJI_HOSE: function(e) {
     var t, n, r, l, i;
     let {
-      emojiHose: u,
+      emojiHose: o,
       streamerId: c,
       userId: f
-    } = e, E = (l = m({}, u), i = i = {
+    } = e, g = (l = p({}, o), i = i = {
       type: s.W.EMOJI_HOSE
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
@@ -108,37 +108,37 @@ let b = new v(i.Z, {
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
     }), l);
-    if (null == p[c]) p[c] = [E];
+    if (null == m[c]) m[c] = [g];
     else {
-      let e = p[c].findIndex(e => e.id === u.id);
-      e >= 0 ? p[c][e] = m({}, p[c][e], E) : p[c].push(E)
+      let e = m[c].findIndex(e => e.id === o.id);
+      e >= 0 ? m[c][e] = p({}, m[c][e], g) : m[c].push(g)
     }
-    let h = null != (n = null != (t = u.emojiId) ? t : u.emojiName) ? n : "";
-    if (null == g[h]) {
-      let e = null != u.emojiName ? a.ZP.convertNameToSurrogate(u.emojiName) : null;
-      g[h] = new Image, g[h].src = (0, o.qc)({
-        id: u.emojiId,
-        name: null != (r = null != e ? e : u.emojiName) ? r : "",
+    let h = null != (n = null != (t = o.emojiId) ? t : o.emojiName) ? n : "";
+    if (null == E[h]) {
+      let e = null != o.emojiName ? a.ZP.convertNameToSurrogate(o.emojiName) : null;
+      E[h] = new Image, E[h].src = (0, u.qc)({
+        id: o.emojiId,
+        name: null != (r = null != e ? e : o.emojiName) ? r : "",
         animated: !1
       }, d.qh)
     }
-    O(f)
+    S(f)
   },
   SHARED_CANVAS_CLEAR_DRAWABLES: function(e) {
     let {
       drawables: t,
       streamerId: n
     } = e;
-    if (null != p[n]) {
+    if (null != m[n]) {
       let e = new Set;
-      t.forEach(t => e.add(t.id)), p[n] = p[n].filter(t => !e.has(t.id))
+      t.forEach(t => e.add(t.id)), m[n] = m[n].filter(t => !e.has(t.id))
     }
   },
   SHARED_CANVAS_SET_DRAW_MODE: function(e) {
     let {
       drawMode: t
     } = e;
-    S = t
+    v = t
   },
   TOGGLE_OVERLAY_CANVAS: function(e) {
     let {} = e;

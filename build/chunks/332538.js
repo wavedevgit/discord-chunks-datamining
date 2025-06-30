@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Wj: () => C,
   ZP: () => v
@@ -7,8 +7,8 @@ var r = n(255367),
   i = n(73800),
   l = n(399606),
   o = n(704215),
-  s = n(481060),
-  a = n(377171),
+  a = n(481060),
+  s = n(377171),
   c = n(243778),
   u = n(645041),
   d = n(823379),
@@ -40,15 +40,15 @@ function v(e) {
           unlockedPowerups: c
         } = t, u = (0, _.h)(c), d = null != (i = null == n ? void 0 : n.lastSeenWarningNotification) ? i : Date.now(), h = new Date(null == (e = u[u.length - 1]) ? void 0 : e.ends_at).getTime(), p = null != (o = null == n ? void 0 : n.lastBoostCount) ? o : 0;
         return u.length > 0 && d < h ? {
-          trailing: (0, r.jsx)(s.P4T, {
-            color: s.TVs.colors.STATUS_WARNING,
+          trailing: (0, r.jsx)(a.P4T, {
+            color: a.TVs.colors.STATUS_WARNING,
             size: "sm"
           }),
           showUnread: !0
         } : l !== p && l - p > 0 ? {
-          trailing: (0, r.jsx)(s.mAB, {
+          trailing: (0, r.jsx)(a.mAB, {
             count: l - p,
-            color: a.Z.BACKGROUND_ACCENT
+            color: s.Z.BACKGROUND_ACCENT
           }),
           showUnread: !0
         } : {
@@ -60,7 +60,7 @@ function v(e) {
     v = function(e, t) {
       let [n, r] = (0, c.US)(null != t ? [o.z.GUILD_POWERUP_PERKS_COACHMARK] : []), {
         available: l
-      } = (0, b.Z)(e), s = i.useMemo(() => {
+      } = (0, b.Z)(e), a = i.useMemo(() => {
         if (null == t || n === o.z.GUILD_POWERUP_PERKS_COACHMARK) return;
         let r = function(e, t) {
           let n = h.Oe.find(e => {
@@ -110,7 +110,7 @@ function v(e) {
           }
         }(e, t, l);
         if (null != i) return i
-      }, [e, t, n, l]), [a, p] = (0, c.bf)(null != s ? o.z.GUILD_POWERUP_NOTIFICATION : null, {
+      }, [e, t, n, l]), [s, p] = (0, c.bf)(null != a ? o.z.GUILD_POWERUP_NOTIFICATION : null, {
         cooldownDurationMs: m.d
       });
       return i.useMemo(() => {
@@ -119,7 +119,7 @@ function v(e) {
             type: m.J.PERKS_AVAILABLE,
             markAsDismissed: r
           };
-          if (a === o.z.GUILD_POWERUP_NOTIFICATION && null != s) {
+          if (s === o.z.GUILD_POWERUP_NOTIFICATION && null != a) {
             var e, i;
             return e = function(e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -138,9 +138,9 @@ function v(e) {
                 })
               }
               return e
-            }({}, s), i = i = {
+            }({}, a), i = i = {
               markAsDismissed: e => {
-                p(e), s.markAsDismissed(e)
+                p(e), a.markAsDismissed(e)
               }
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
@@ -154,7 +154,7 @@ function v(e) {
             }), e
           }
         }
-      }, [t, n, r, s, a, p])
+      }, [t, n, r, a, s, p])
     }(e, n);
   if (null !== n && (null != p || y || null != v)) return {
     trailing: p,

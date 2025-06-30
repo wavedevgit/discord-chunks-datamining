@@ -1,18 +1,18 @@
-/** Chunk was on 11141 **/
+/** Chunk was on 84552 **/
 n.d(t, {
-  NB: () => o,
-  ar: () => s,
+  NB: () => a,
+  ar: () => u,
   fG: () => c,
-  kg: () => a,
-  pM: () => u
+  kg: () => o,
+  pM: () => s
 }), n(781311), n(953529);
 var r = n(881052);
 n(496675);
 var i = n(981631),
   l = n(388032);
-let o = "_role";
+let a = "_role";
 
-function a(e) {
+function o(e) {
   if (!(e >= 0)) switch (-e) {
     case i.evJ.ENTITY_TOO_LARGE:
       return l.intl.string(l.t.YbdEFB);
@@ -27,7 +27,7 @@ function a(e) {
   }
 }
 
-function u(e) {
+function s(e) {
   let {
     newRoleParams: t
   } = e;
@@ -38,7 +38,7 @@ function u(e) {
       body: {
         message: "Invalid form body",
         errors: {
-          [o]: {
+          [a]: {
             _errors: [{
               code: "",
               message: n
@@ -57,14 +57,14 @@ function c(e) {
     name: r,
     priceTier: i,
     description: l,
-    image: o,
-    imageName: a,
-    isImageChanged: u,
+    image: a,
+    imageName: o,
+    isImageChanged: s,
     newRoleParams: c,
-    hasUnsavedAttachmentChanges: s
+    hasUnsavedAttachmentChanges: u
   } = e, d = {};
-  (null == n ? void 0 : n.name) !== r && "" !== r.trim() && (d.name = r), (null != (t = null == n ? void 0 : n.description) ? t : "") !== l && (d.description = l), (null == n ? void 0 : n.price_tier) !== i && null != i && (d.priceTier = i), null != c && "" !== c.name.trim() ? d.createNewRole = !0 : null === c && (d.unlinkRole = !0), o.startsWith("data:") && (u || null == n && (Object.keys(d).length > 0 || s)) && (d.image = o, d.imageName = a);
-  let p = Object.keys(d).length > 0 || s;
+  (null == n ? void 0 : n.name) !== r && "" !== r.trim() && (d.name = r), (null != (t = null == n ? void 0 : n.description) ? t : "") !== l && (d.description = l), (null == n ? void 0 : n.price_tier) !== i && null != i && (d.priceTier = i), null != c && "" !== c.name.trim() ? d.createNewRole = !0 : null === c && (d.unlinkRole = !0), a.startsWith("data:") && (s || null == n && (Object.keys(d).length > 0 || u)) && (d.image = a, d.imageName = o);
+  let p = Object.keys(d).length > 0 || u;
   return {
     changes: d,
     hasUnsavedChanges: p,
@@ -74,6 +74,6 @@ function c(e) {
   }
 }
 
-function s(e, t) {
+function u(e, t) {
   return "".concat(location.protocol, "//").concat(location.host).concat(i.Z5c.GUILD_PRODUCT(e, t))
 }

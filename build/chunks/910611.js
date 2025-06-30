@@ -2,13 +2,13 @@
 n.d(t, {
   TS: () => U,
   ud: () => k,
-  v0: () => D
+  v0: () => L
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(704215),
   c = n(481060),
   u = n(835473),
@@ -27,8 +27,8 @@ var r = n(255367),
   j = n(63063),
   O = n(374386),
   E = n(946734),
-  I = n(99843),
-  S = n(372564),
+  S = n(99843),
+  I = n(372564),
   P = n(984370),
   Z = n(217314),
   N = n(981631),
@@ -41,14 +41,14 @@ function R(e) {
   let {
     channel: n,
     children: i
-  } = e, l = (0, u.q)(null == (t = n.linkedLobby) ? void 0 : t.application_id), [o, a] = (0, f.US)([s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], void 0, !0);
+  } = e, l = (0, u.q)(null == (t = n.linkedLobby) ? void 0 : t.application_id), [a, o] = (0, f.US)([s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], void 0, !0);
   if (null == l) return null;
   let d = v.ZP.getApplicationIconURL({
       id: l.id,
       icon: l.icon,
       size: 14
     }),
-    [p, h] = o !== s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP ? [A.intl.string(A.t.XJVlf3), void 0] : [(0, r.jsxs)("div", {
+    [p, h] = a !== s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP ? [A.intl.string(A.t.XJVlf3), void 0] : [(0, r.jsxs)("div", {
       className: w.linkedLobbyEducationTooltip,
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
@@ -62,7 +62,7 @@ function R(e) {
         })
       }), (0, r.jsx)(c.P3F, {
         className: w.linkedLobbyEducationTooltipCloseClickContainer,
-        onClick: () => a(T.L.USER_DISMISS),
+        onClick: () => o(T.L.USER_DISMISS),
         children: (0, r.jsx)(c.Dio, {
           className: w.linkedLobbyEducationTooltipCloseIcon,
           color: "currentColor"
@@ -75,7 +75,7 @@ function R(e) {
     align: "left",
     text: p,
     "aria-label": h,
-    forceOpen: o === s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP || void 0,
+    forceOpen: a === s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP || void 0,
     children: e => {
       var t, n;
       return (0, r.jsxs)("div", (t = function(e) {
@@ -119,7 +119,7 @@ function R(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     }
-  }, o)
+  }, a)
 }
 
 function k(e) {
@@ -127,14 +127,14 @@ function k(e) {
     channel: t,
     channelName: n,
     parentChannel: l,
-    guild: a,
+    guild: o,
     inSidebar: s = !1,
     handleClick: u,
     handleContextMenu: d,
     handleParentClick: f,
     handleParentContextMenu: m,
     renderFollowButton: g
-  } = e, b = (0, h.KS)(t, a), {
+  } = e, b = (0, h.KS)(t, o), {
     prefix: _,
     level: C
   } = function(e, t) {
@@ -172,7 +172,7 @@ function k(e) {
           prefix: null, level: 1
         }
     }
-  }(t.type, a), v = (0, r.jsxs)(r.Fragment, {
+  }(t.type, o), v = (0, r.jsxs)(r.Fragment, {
     children: [null != _ ? (0, r.jsxs)(c.nn4, {
       children: [_, ":"]
     }) : null, " ", n]
@@ -190,7 +190,7 @@ function k(e) {
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.nn4, {
           children: A.intl.string(A.t["e5y+go"])
-        }), (0, r.jsx)(I.Z, {
+        }), (0, r.jsx)(S.Z, {
           channel: t,
           legacyIconClassName: w.avatar
         }, "channel-".concat(t.id))]
@@ -201,14 +201,14 @@ function k(e) {
     case N.d4z.GUILD_MEDIA:
       return null != t.linkedLobby ? (0, r.jsxs)(R, {
         channel: t,
-        children: [L(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? A.intl.string(A.t.l1dkSE) : A.intl.string(A.t.Pnajj4)), (0, r.jsx)(P.Z.Title, {
+        children: [D(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? A.intl.string(A.t.l1dkSE) : A.intl.string(A.t.Pnajj4)), (0, r.jsx)(P.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: u,
           children: v
         })]
       }) : (0, r.jsxs)(i.Fragment, {
-        children: [L(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? A.intl.string(A.t.l1dkSE) : A.intl.string(A.t.Pnajj4)), (0, r.jsx)(P.Z.Title, {
+        children: [D(b, t.type === N.d4z.GUILD_ANNOUNCEMENT ? A.intl.string(A.t.l1dkSE) : A.intl.string(A.t.Pnajj4)), (0, r.jsx)(P.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: u,
@@ -217,7 +217,7 @@ function k(e) {
       });
     case N.d4z.GUILD_VOICE:
       return (0, r.jsxs)(i.Fragment, {
-        children: [L(b, A.intl.string(A.t.BVZqJi)), (0, r.jsx)(P.Z.Title, {
+        children: [D(b, A.intl.string(A.t.BVZqJi)), (0, r.jsx)(P.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: u,
@@ -226,7 +226,7 @@ function k(e) {
       });
     case N.d4z.GUILD_STAGE_VOICE:
       return (0, r.jsxs)(i.Fragment, {
-        children: [L(b, A.intl.string(A.t.EErMzM)), (0, r.jsx)(P.Z.Title, {
+        children: [D(b, A.intl.string(A.t.EErMzM)), (0, r.jsx)(P.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: u,
@@ -238,24 +238,24 @@ function k(e) {
     case N.d4z.PRIVATE_THREAD:
       let j = null;
       if (!s && null != l) {
-        let e = (0, h.KS)(l, a);
+        let e = (0, h.KS)(l, o);
         j = (0, r.jsxs)(i.Fragment, {
-          children: [L(e, A.intl.string(A.t.Pnajj4)), (0, r.jsx)(P.Z.Title, {
+          children: [D(e, A.intl.string(A.t.Pnajj4)), (0, r.jsx)(P.Z.Title, {
             level: C,
             onContextMenu: m,
             onClick: f,
-            className: o()(w.parentChannelName, w.cursorPointer),
+            className: a()(w.parentChannelName, w.cursorPointer),
             children: (0, p.F6)(l, x.default, y.Z)
           }), (0, r.jsx)(P.Z.Caret, {})]
         })
       }
       let O = (null == l ? void 0 : l.type) != null && N.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, r.jsxs)(i.Fragment, {
-        children: [j, L(O ? null : b, A.intl.string(A.t["7Xm5QE"])), (0, r.jsx)(P.Z.Title, {
+        children: [j, D(O ? null : b, A.intl.string(A.t["7Xm5QE"])), (0, r.jsx)(P.Z.Title, {
           level: C,
           onContextMenu: d,
           onClick: u,
-          className: o()({
+          className: a()({
             [w.cursorPointer]: s,
             [w.forumPostTitle]: O
           }),
@@ -263,7 +263,7 @@ function k(e) {
         })]
       });
     case N.d4z.GUILD_DIRECTORY:
-      let E = (null == a ? void 0 : a.hasFeature(N.oNc.HUB)) ? A.intl.formatToPlainString(A.t.Dy2aho, {
+      let E = (null == o ? void 0 : o.hasFeature(N.oNc.HUB)) ? A.intl.formatToPlainString(A.t.Dy2aho, {
         guildName: n
       }) : n;
       return (0, r.jsxs)(i.Fragment, {
@@ -287,7 +287,7 @@ function k(e) {
 let M = e => {
   let {
     channel: t
-  } = e, n = (0, a.e7)([x.default], () => x.default.getCurrentUser()), l = (0, a.e7)([x.default], () => x.default.getUser(t.getRecipientId())), o = (0, O.G)();
+  } = e, n = (0, o.e7)([x.default], () => x.default.getCurrentUser()), l = (0, o.e7)([x.default], () => x.default.getUser(t.getRecipientId())), a = (0, O.G)();
   return (i.useEffect(() => {
     (null == n ? void 0 : n.isStaff()) && null != l && !l.isStaff() && (0, _.Z)(l.id, l.getAvatarURL(void 0, 80), {
       dispatchWait: !0,
@@ -296,12 +296,12 @@ let M = e => {
     })
   }, [n, l]), t.isDM() && (null == n ? void 0 : n.isStaff()) && null != l) ? l.isStaff() ? (0, r.jsx)(d.Z, {
     type: d.Z.Types.STAFF_ONLY_DM
-  }) : o ? (0, r.jsx)(d.Z, {
+  }) : a ? (0, r.jsx)(d.Z, {
     type: d.Z.Types.NOT_STAFF_WARNING
   }) : null : null
 };
 
-function D(e, t) {
+function L(e, t) {
   switch (e.type) {
     case N.d4z.DM:
       return (0, r.jsxs)(r.Fragment, {
@@ -316,7 +316,7 @@ function D(e, t) {
     case N.d4z.GUILD_VOICE:
     case N.d4z.GUILD_STAGE_VOICE:
     case N.d4z.GROUP_DM:
-      return null != t ? (0, r.jsx)(S.Z, {
+      return null != t ? (0, r.jsx)(I.Z, {
         channel: e,
         guild: t
       }, e.id) : null;
@@ -325,7 +325,7 @@ function D(e, t) {
   }
 }
 
-function L(e, t) {
+function D(e, t) {
   return (0, r.jsxs)(r.Fragment, {
     children: [null !== e && (0, r.jsx)(P.Z.Icon, {
       iconClassName: w.__invalid_icon,
@@ -342,7 +342,7 @@ function U(e) {
     guild: t,
     channel: n,
     caretPosition: i = "left"
-  } = e, l = (0, a.e7)([C.Z], () => C.Z.getGuildId()), s = (0, g.D)();
+  } = e, l = (0, o.e7)([C.Z], () => C.Z.getGuildId()), s = (0, g.D)();
   return (l === N.I_8 || s) && null != t ? (0, r.jsxs)("div", {
     className: w.guildBreadcrumbContainer,
     children: ["left" === i && (0, r.jsx)(P.Z.Caret, {
@@ -356,7 +356,7 @@ function U(e) {
       onClick: () => {
         (0, b.XU)(t.id, n.id)
       },
-      className: o()(w.parentChannelName, w.cursorPointer),
+      className: a()(w.parentChannelName, w.cursorPointer),
       children: t.name
     }), "right" === i && (0, r.jsx)(P.Z.Caret, {
       direction: "right"

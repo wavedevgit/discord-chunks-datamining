@@ -18,20 +18,20 @@ var a = n(255367),
   b = n(572004),
   f = n(55935),
   v = n(428530),
-  _ = n(257785),
+  j = n(257785),
   g = n(484036),
-  j = n(681619),
+  _ = n(681619),
   y = n(621060),
   C = n(981631),
-  N = n(248520),
-  O = n(616257);
+  O = n(248520),
+  N = n(616257);
 
-function T(e) {
+function E(e) {
   return parseFloat(e.toFixed(3))
 }
-let E = [{
+let T = [{
   key: "store",
-  cellClassName: N.actionColumn,
+  cellClassName: O.actionColumn,
   render(e) {
     let {
       trace: t
@@ -40,12 +40,12 @@ let E = [{
   }
 }, {
   key: "time",
-  cellClassName: N.totalTimeColumn,
+  cellClassName: O.totalTimeColumn,
   render(e) {
     let {
       trace: t
     } = e;
-    return "".concat(T(t.time), " ms")
+    return "".concat(E(t.time), " ms")
   }
 }];
 
@@ -57,8 +57,8 @@ function S(e) {
     trace: e
   })), [t]);
   return (0, a.jsx)(d.zJl, {
-    children: (0, a.jsx)(j.Z, {
-      columns: E,
+    children: (0, a.jsx)(_.Z, {
+      columns: T,
       data: n
     })
   })
@@ -73,21 +73,21 @@ let P = [{
       actionLog: n
     } = e, r = c()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsxs)(_.E, {
-        className: N.actionProperties,
-        children: [(0, a.jsx)(_.Z9, {
+      children: [(0, a.jsxs)(j.E, {
+        className: O.actionProperties,
+        children: [(0, a.jsx)(j.Z9, {
           name: "Created at",
           children: (0, a.jsx)("time", {
             dateTime: null == (t = n.createdAt) ? void 0 : t.toISOString(),
             title: (0, f.vc)(r, "LLLL"),
             children: (0, f.Y4)(r)
           })
-        }), (0, a.jsxs)(_.Z9, {
+        }), (0, a.jsxs)(j.Z9, {
           name: "Total Time",
-          children: [T(n.totalTime), " ms"]
+          children: [E(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(d.zJl, {
-        className: N.inspectorContainer,
+        className: O.inspectorContainer,
         children: (0, a.jsx)(v.Z, {
           data: n.action
         })
@@ -108,7 +108,7 @@ let P = [{
   }
 }];
 
-function I(e) {
+function w(e) {
   let {
     actionLog: t,
     initialHeight: n
@@ -116,7 +116,7 @@ function I(e) {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(p.Z, {
-        className: N.errorIcon
+        className: O.errorIcon
       }), "Error"]
     }),
     group: y.v0.NONE,
@@ -126,18 +126,18 @@ function I(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: i()(N.errorToolbar, O.toolbar),
+          className: i()(O.errorToolbar, N.toolbar),
           children: (0, a.jsx)("div", {
-            className: O.toolbarGroup,
+            className: N.toolbarGroup,
             children: (0, a.jsx)(d.zxk, {
-              className: O.toolbarButton,
+              className: N.toolbarButton,
               size: d.zxk.Sizes.MIN,
               onClick: () => console.error(t.error),
               children: "Log to Console"
             })
           })
         }), (0, a.jsx)(d.zJl, {
-          className: N.inspectorContainer,
+          className: O.inspectorContainer,
           children: (0, a.jsx)(v.Z, {
             data: t.error
           })
@@ -151,17 +151,17 @@ function I(e) {
     tabs: l
   }, [l]);
   return (0, a.jsxs)(g.Z, {
-    className: N.subPanel,
+    className: O.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(s, {}), (0, a.jsxs)(m.ZP, {
-      className: i()(O.headerBar, N.subPanelHeaderBar),
+      className: i()(N.headerBar, O.subPanelHeaderBar),
       children: [(0, a.jsx)(m.ZP.Icon, {
         icon: d.xVZ,
         tooltip: t.name
       }), (0, a.jsx)(m.ZP.Title, {
-        wrapperClassName: i()(O.headerTitle, O.dispatcherHeader),
-        className: O.headerTitleText,
+        wrapperClassName: i()(N.headerTitle, N.dispatcherHeader),
+        className: N.headerTitleText,
         children: t.name
       }), (0, a.jsx)(m.ZP.Icon, {
         icon: d.TIy,
@@ -184,27 +184,27 @@ function I(e) {
     })]
   })
 }
-let w = [{
+let I = [{
     key: "action",
-    cellClassName: N.actionColumn,
+    cellClassName: O.actionColumn,
     render(e) {
       let {
         actionLog: t
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [t.error && (0, a.jsx)(p.Z, {
-          className: N.errorIcon
+          className: O.errorIcon
         }), t.name]
       })
     }
   }, {
     key: "total time",
-    cellClassName: N.totalTimeColumn,
+    cellClassName: O.totalTimeColumn,
     render(e) {
       let {
         actionLog: t
       } = e;
-      return "".concat(T(t.totalTime), " ms")
+      return "".concat(E(t.totalTime), " ms")
     }
   }],
   k = {
@@ -238,7 +238,7 @@ function R() {
     [c, m] = r.useState(o),
     [x, p] = r.useState(o),
     [b, f] = r.useState(!1),
-    [v, _] = r.useState(),
+    [v, j] = r.useState(),
     g = r.useCallback(e => {
       p(e)
     }, []);
@@ -247,32 +247,32 @@ function R() {
       m(o), f(e)
     }, [o]),
     C = t.trim().length > 0,
-    T = r.useMemo(() => C ? x : b ? c : o, [o, x, C, b, c]);
+    E = r.useMemo(() => C ? x : b ? c : o, [o, x, C, b, c]);
   return (0, a.jsxs)("div", {
     ref: e,
-    className: i()(O.panel, N.panel),
+    className: i()(N.panel, O.panel),
     children: [(0, a.jsxs)("div", {
-      className: N.toolbar,
+      className: O.toolbar,
       children: [(0, a.jsx)("div", {
         title: "Toggles the flow of Actions",
-        className: N.pausedEvents,
+        className: O.pausedEvents,
         children: (0, a.jsx)(d.rsf, {
           checked: !b,
           onChange: e => y(!e)
         })
       }), (0, a.jsx)(d.E1j, {
-        className: N.searchBar,
+        className: O.searchBar,
         query: t,
         onChange: n,
         onClear: () => n(""),
         placeholder: "Search by action name"
       })]
-    }), (0, a.jsx)(j.Z, {
-      columns: w,
-      data: T,
+    }), (0, a.jsx)(_.Z, {
+      columns: I,
+      data: E,
       selectedRowKey: null == v ? void 0 : v.id.toString(),
-      onClickRow: e => _(e.actionLog)
-    }), null != v && (0, a.jsx)(I, {
+      onClickRow: e => j(e.actionLog)
+    }), null != v && (0, a.jsx)(w, {
       actionLog: v,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]

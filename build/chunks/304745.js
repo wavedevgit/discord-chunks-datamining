@@ -1,12 +1,12 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  M: () => I
+  M: () => S
 }), n(539854);
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(704215),
-  a = n(481060),
+  a = n(704215),
+  o = n(481060),
   s = n(911969),
   c = n(40851),
   u = n(317381),
@@ -26,12 +26,12 @@ var r = n(255367),
   O = n(921944),
   E = n(388032);
 
-function I(e) {
+function S(e) {
   let {
     channel: t,
     idle: n,
-    whichPopoutIsOpen: I,
-    setWhichPopoutIsOpen: S
+    whichPopoutIsOpen: S,
+    setWhichPopoutIsOpen: I
   } = e, P = (0, l.e7)([u.ZP], () => u.ZP.isLaunchingActivity()), Z = (0, p.KF)(t.id), N = (0, p.g5)(Z), T = Z !== p.jy.CAN_LAUNCH || P, {
     isHovered: A,
     setIsHovered: w,
@@ -39,19 +39,19 @@ function I(e) {
     onMouseLeave: k
   } = (0, C.Z)(200, 300), M = (0, d.a)({
     surface: s.eR.VOICE_LAUNCHER
-  }), D = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), L = !T, U = i.useCallback(e => {
+  }), L = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), D = !T, U = i.useCallback(e => {
     "focus" !== e.type && R()
   }, [R]), B = (0, c.bp)() === j.IlC.POPOUT, {
     analyticsLocations: F,
-    parentAnalyticsLocation: G
-  } = (0, b.ZP)(), H = i.useCallback(() => {
-    (0, _.v)(G, _.d.ACTIVITY), (0, g.Z)({
+    parentAnalyticsLocation: H
+  } = (0, b.ZP)(), G = i.useCallback(() => {
+    (0, _.v)(H, _.d.ACTIVITY), (0, g.Z)({
       channel: t,
       openInPopout: B,
       analyticsLocations: F
     })
-  }, [F, t, B, G]), V = [];
-  T || V.push(o.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !T && V.push(o.z.ACTIVITY_GDM_ROCKET_SPARKLE), T || V.push(o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
+  }, [F, t, B, H]), V = [];
+  T || V.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !T && V.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), T || V.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = i.useRef(!1),
     W = i.useRef(null);
   return (0, r.jsx)(y.ZP, {
@@ -60,25 +60,25 @@ function I(e) {
       let {
         visibleContent: i,
         markAsDismissed: l
-      } = e, s = i === o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !A;
-      return z.current && !s && l(O.L.AUTO_DISMISS), z.current !== s && (z.current = s), (0, r.jsx)(a.yRy, {
+      } = e, s = i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !A;
+      return z.current && !s && l(O.L.AUTO_DISMISS), z.current !== s && (z.current = s), (0, r.jsx)(o.yRy, {
         targetElementRef: W,
         fixed: !0,
-        shouldShow: A && (I === v.D.ACTIVITY || null == I),
-        animation: a.yRy.Animation.FADE,
+        shouldShow: A && (S === v.D.ACTIVITY || null == S),
+        animation: o.yRy.Animation.FADE,
         animationPosition: "top",
         position: "top",
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-          w(!1), null == S || S(void 0)
+          w(!1), null == I || I(void 0)
         },
         renderPopout: e => {
           let {
             closePopout: n,
             setPopoutRef: i
           } = e;
-          return L ? (0, r.jsx)(f.m, {
+          return D ? (0, r.jsx)(f.m, {
             ref: e => {
               null == i || i(e)
             },
@@ -91,9 +91,9 @@ function I(e) {
           }) : (0, r.jsx)(r.Fragment, {})
         },
         children: () => (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(a.ua7, {
+          children: [(0, r.jsx)(o.ua7, {
             text: E.intl.string(E.t.P8vmUl),
-            color: a.FGA.BRAND,
+            color: o.FGA.BRAND,
             forceOpen: !0,
             shouldShow: s,
             children: e => {
@@ -121,10 +121,10 @@ function I(e) {
                 children: (0, r.jsx)(x.Z, {
                   disabled: T,
                   "aria-label": N,
-                  label: L ? void 0 : N,
-                  isActivityActive: D,
+                  label: D ? void 0 : N,
+                  isActivityActive: L,
                   onClick: () => {
-                    H(), (i === o.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === o.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(O.L.TAKE_ACTION)
+                    G(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(O.L.TAKE_ACTION)
                   },
                   onMouseEnter: U,
                   onMouseLeave: k

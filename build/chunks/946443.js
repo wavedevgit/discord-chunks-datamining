@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => P,
   h: () => w
@@ -7,8 +7,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(525654),
-  a = n.n(s),
+  a = n(525654),
+  s = n.n(a),
   c = n(91192),
   u = n(442837),
   d = n(524437),
@@ -24,13 +24,13 @@ var r = n(255367),
   v = n(240126),
   C = n(791914),
   j = n(147522),
-  E = n(809780),
-  S = n(981631),
+  S = n(809780),
+  E = n(981631),
   x = n(388032),
   I = n(128406);
 
 function P(e) {
-  var t, n, l, s, P, w, Z;
+  var t, n, l, a, P, w, Z;
   let {
     setTab: T,
     onJump: A,
@@ -38,7 +38,7 @@ function P(e) {
     setSeenTutorial: D,
     closePopout: L,
     badgeState: M
-  } = e, k = i.useRef(null), [U, G] = (0, E.ZP)(k), {
+  } = e, k = i.useRef(null), [U, G] = (0, S.ZP)(k), {
     loadState: B,
     channels: F
   } = U, {
@@ -57,24 +57,24 @@ function P(e) {
     if (null == i || null == r) return;
     let o = null == (e = i.getScrollerNode()) ? void 0 : e.children;
     if (null == o) return;
-    let s = o[r];
-    if (null == s) return;
+    let a = o[r];
+    if (null == a) return;
     let {
-      scrollTop: a,
+      scrollTop: s,
       offsetHeight: c
     } = i.getScrollerState();
-    (s.offsetTop < a || s.offsetTop > a + c) && i.scrollTo({
-      to: s.offsetTop
+    (a.offsetTop < s || a.offsetTop > s + c) && i.scrollTo({
+      to: a.offsetTop
     })
-  }), s = U, P = G, i.useEffect(() => {
+  }), a = U, P = G, i.useEffect(() => {
     let e = () => {
-      let e = s.channels.find(e => !e.collapsed);
+      let e = a.channels.find(e => !e.collapsed);
       null != e && P.markChannelRead(e)
     };
-    return _.S.subscribe(S.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-      _.S.unsubscribe(S.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
+    return _.S.subscribe(E.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+      _.S.unsubscribe(E.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [P, s.channels]), w = G, i.useEffect(() => {
+  }, [P, a.channels]), w = G, i.useEffect(() => {
     let e = e => {
       ((0, O.isMac)() || (0, O.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && w.undoMarkChannelRead()
     };
@@ -82,7 +82,7 @@ function P(e) {
       document.removeEventListener("keydown", e)
     }
   }, [w]), i.useEffect(() => {
-    b.default.track(S.rMx.OPEN_POPOUT, {
+    b.default.track(E.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
   }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", L), () => {
@@ -106,7 +106,7 @@ function P(e) {
       }), (0, r.jsx)(v.Z, {
         Icon: h.xx7,
         header: x.intl.string(x.t["6XMM+P"]),
-        tip: (null == (Z = a().os) ? void 0 : Z.family) === "OS X" ? x.intl.string(x.t.w9uDOT) : x.intl.string(x.t.BiUJCw)
+        tip: (null == (Z = s().os) ? void 0 : Z.family) === "OS X" ? x.intl.string(x.t.w9uDOT) : x.intl.string(x.t.BiUJCw)
       })]
     })
   }
@@ -169,11 +169,11 @@ function P(e) {
               k.current = e, i.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
             }
           }, l), n = n = {
-            onScroll: B === E.jd.Done ? void 0 : V,
+            onScroll: B === S.jd.Done ? void 0 : V,
             className: I.scroller,
             children: [R ? (0, r.jsx)(N, {
               setSeenTutorial: D
-            }) : null, (0, j.Z)(F, G, A), B === E.jd.Done ? null : (0, r.jsx)(h.$jN, {
+            }) : null, (0, j.Z)(F, G, A), B === S.jd.Done ? null : (0, r.jsx)(h.$jN, {
               className: I.spinner
             })]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

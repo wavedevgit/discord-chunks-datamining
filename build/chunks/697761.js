@@ -1,4 +1,4 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 81872 **/
 n.d(t, {
   Z: () => c
 });
@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(710845),
   l = n(620662),
-  a = n(915863),
-  o = n(981631),
+  o = n(915863),
+  a = n(981631),
   s = n(388032);
 
 function c(e) {
@@ -18,7 +18,7 @@ function c(e) {
     color: u,
     onAction: d
   } = e;
-  return (0, l.Z)(t, o.xjy.INSTANCE) ? (0, r.jsx)(a.Z, {
+  return (0, l.Z)(t, a.xjy.INSTANCE) ? (0, r.jsx)(o.Z, {
     look: c,
     color: u,
     onClick: () => {

@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => M
 }), n(388685);
@@ -14,19 +14,19 @@ var r = n(255367),
   p = n(100527),
   m = n(367907),
   f = n(676742),
-  h = n(1585),
-  g = n(841762),
-  _ = n(336197),
+  g = n(1585),
+  _ = n(841762),
+  h = n(336197),
   b = n(406432),
-  x = n(348238),
+  E = n(348238),
   y = n(38267),
-  E = n(884902),
+  C = n(884902),
   v = n(670188),
-  C = n(695346),
+  x = n(695346),
   O = n(271383),
   j = n(594174),
-  S = n(768581),
-  I = n(900849),
+  I = n(768581),
+  S = n(900849),
   T = n(506071),
   N = n(495114),
   P = n(170140),
@@ -76,13 +76,13 @@ function M(e) {
     channel: B
   } = e, G = i.useRef(null), H = i.useRef(null), V = (0, P.J)(U, F), {
     setPopout: z
-  } = (0, y.Z)(F.id, w.d$), W = (0, x.qo)(F, B, z, !0), K = C.QK.useSetting(), Y = (0, T.n)(), [X, q] = i.useState(!1), [Q, J] = i.useState((null == V ? void 0 : V.coverImage) == null), $ = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), ee = (0, c.e7)([O.ZP, j.default], () => {
+  } = (0, y.Z)(F.id, w.d$), W = (0, E.qo)(F, B, z, !0), K = x.QK.useSetting(), Y = (0, T.n)(), [X, q] = i.useState(!1), [Q, J] = i.useState((null == V ? void 0 : V.coverImage) == null), $ = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), ee = (0, c.e7)([O.ZP, j.default], () => {
     var e;
     return O.ZP.isMember(null == V ? void 0 : V.guildId, null == (e = j.default.getCurrentUser()) ? void 0 : e.id)
   }, [V]), et = (0, c.e7)([O.ZP], () => (null == V ? void 0 : V.authorId) != null ? O.ZP.getMember(V.guildId, V.authorId) : null), en = (0, f.Z)((null == et ? void 0 : et.avatarDecoration) != null ? null == et ? void 0 : et.avatarDecoration : null == V || null == (t = V.user) ? void 0 : t.avatarDecoration), [er, ei, el] = i.useMemo(() => {
     var e;
     return [null != (e = null == et ? void 0 : et.colorString) ? e : "inherit", null == et ? void 0 : et.colorStrings, null == et ? void 0 : et.colorRoleId]
-  }, [et]), ea = (0, E.X7)(null == et ? void 0 : et.guildId, null != (l = null == V ? void 0 : V.authorId) ? l : void 0, ei), {
+  }, [et]), ea = (0, C.X7)(null == et ? void 0 : et.guildId, null != (l = null == V ? void 0 : V.authorId) ? l : void 0, ei), {
     reducedMotion: eo
   } = i.useContext(u.Sfi), [es, ec] = i.useState(!1), eu = i.useCallback(() => {
     q(!0)
@@ -94,22 +94,22 @@ function M(e) {
       channel_id: B.id,
       can_access: V.canAccess,
       is_member: ee
-    }), V.canAccess ? (0, _.Z)(A.Z5c.CHANNEL(V.guildId, V.threadId, V.messageId)) : ee ? (0, _.Z)(A.Z5c.CHANNEL(V.guildId, V.parentChannelId)) : await I.Ub(V.guildId, {}, {
+    }), V.canAccess ? (0, h.Z)(A.Z5c.CHANNEL(V.guildId, V.threadId, V.messageId)) : ee ? (0, h.Z)(A.Z5c.CHANNEL(V.guildId, V.parentChannelId)) : await S.Ub(V.guildId, {}, {
       channelId: V.parentChannelId
     }))
   }, [V, B, ee]);
   if (null == V) return null;
-  let em = (0, S.NZ)({
+  let em = (0, I.NZ)({
       avatarDecoration: en,
-      size: (0, h.y9)(u.EFr.SIZE_40),
+      size: (0, g.y9)(u.EFr.SIZE_40),
       canAnimate: es
     }),
     ef = null == (n = V.user) ? void 0 : n.getAvatarURL(V.guildId, 40, es),
-    eh = () => {
+    eg = () => {
       eo.enabled || ec(e => !e)
     },
-    eg = V.coverImage,
-    e_ = null != eg && (0, b.d$)(eg);
+    e_ = V.coverImage,
+    eh = null != e_ && (0, b.d$)(e_);
   return (0, r.jsxs)("div", {
     className: R.postPreviewContainer,
     children: [(0, r.jsxs)("div", {
@@ -124,9 +124,9 @@ function M(e) {
         }),
         onContextMenu: W,
         onError: () => J(!0)
-      }) : (0, r.jsx)(g.Z, {
-        src: !(Y && (K || X)) && e_ ? "".concat(eg, "?format=png") : eg,
-        backgroundSrc: "".concat(eg, "?format=png"),
+      }) : (0, r.jsx)(_.Z, {
+        src: !(Y && (K || X)) && eh ? "".concat(e_, "?format=png") : e_,
+        backgroundSrc: "".concat(e_, "?format=png"),
         alt: Z.intl.string(Z.t.rIbh8P),
         aspectRatio: 16 / 9,
         className: a()(R.thumbnail, {
@@ -179,8 +179,8 @@ function M(e) {
           newAnalyticsLocations: [p.Z.AVATAR],
           spacing: 12,
           children: e => (0, r.jsx)("div", {
-            onMouseEnter: eh,
-            onMouseLeave: eh,
+            onMouseEnter: eg,
+            onMouseLeave: eg,
             children: (0, r.jsx)(u.qEK, D(L({}, e), {
               ref: H,
               size: u.EFr.SIZE_40,

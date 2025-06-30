@@ -1,6 +1,6 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
-  Z: () => h
+  Z: () => g
 });
 var r = n(255367),
   i = n(73800),
@@ -15,22 +15,22 @@ var r = n(255367),
   m = n(388032),
   f = n(273254);
 
-function h(e) {
+function g(e) {
   let {
     guild: t,
     channel: n,
-    message: h
-  } = e, g = u.Z.getGuildId(), _ = c.Z.getChannelId(g), b = i.useCallback(() => {
+    message: g
+  } = e, _ = u.Z.getGuildId(), h = c.Z.getChannelId(_), b = i.useCallback(() => {
     var e;
     d.default.track(p.rMx.CHANNEL_LINK_PREVIEW_JOINED, {
-      author_id: null == (e = h.author) ? void 0 : e.id,
+      author_id: null == (e = g.author) ? void 0 : e.id,
       link_guild_id: t.id,
       link_channel_id: n.id,
       link_channel_type: n.type,
-      guild_id: g,
-      channel_id: _
+      guild_id: _,
+      channel_id: h
     }), (0, a.K)(t.id, n.id), l.default.selectVoiceChannel(n.id)
-  }, [h, t, n, g, _]), x = (0, r.jsx)(s.Z.Channel, {
+  }, [g, t, n, _, h]), E = (0, r.jsx)(s.Z.Channel, {
     channel: n
   });
   return (0, r.jsx)(s.Z, {
@@ -40,7 +40,7 @@ function h(e) {
         children: [(0, r.jsx)(s.Z.Icon, {
           guild: t
         }), (0, r.jsx)(s.Z.Info, {
-          title: x,
+          title: E,
           onClick: b,
           children: (0, r.jsxs)("span", {
             className: f.infoTitle,

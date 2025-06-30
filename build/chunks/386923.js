@@ -1,7 +1,7 @@
 /** Chunk was on 71879 **/
 "use strict";
 n.d(t, {
-  Z: () => N
+  Z: () => T
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -63,7 +63,7 @@ let y = {
       duration: 200
     }
   }),
-  S = e => {
+  N = e => {
     let {
       guild: t
     } = e, n = (0, o.e7)([g.Z], () => g.Z.can(x.Plq.MANAGE_GUILD, t));
@@ -211,7 +211,7 @@ let y = {
     })
   };
 
-function N(e) {
+function T(e) {
   let {
     guild: t
   } = e, [n, a] = (0, d.R)("report-to-mod-education-dismissed", !1), [o, u] = (0, d.R)("report-to-mod-education-expanded", !1), {
@@ -259,7 +259,7 @@ function N(e) {
       style: e,
       children: [(0, r.jsx)("hr", {
         className: j.separator
-      }), (0, r.jsx)(S, {
+      }), (0, r.jsx)(N, {
         guild: t
       })]
     }) : null)]

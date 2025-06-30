@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   u: () => D
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(91192),
   o = n(442837),
-  s = n(433517),
-  a = n(481060),
+  a = n(433517),
+  s = n(481060),
   c = n(339149),
   u = n(864682),
   d = n(550385),
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(941128),
   C = n(780570),
   j = n(278464),
-  E = n(276952),
-  S = n(682662),
+  S = n(276952),
+  E = n(682662),
   x = n(662146),
   I = n(674552),
   P = n(981631),
@@ -58,21 +58,21 @@ function R(e) {
   };
   if (null == h) return null;
   let k = Z.intl.string(Z.t.YUU0RE);
-  y && (k = s.K.get(P.wli) ? Z.intl.string(Z.t.nkq1l5) : Z.intl.string(Z.t.Be8Q5O));
+  y && (k = a.K.get(P.wli) ? Z.intl.string(Z.t.nkq1l5) : Z.intl.string(Z.t.Be8Q5O));
   let U = null;
   !o && b && (U = (0, r.jsx)(c.Z, {
     className: T.downloadProgress,
     determineOwnVisibility: !1
   }));
   let G = o || _ || L,
-    B = (0, r.jsx)(a.aRk, {
+    B = (0, r.jsx)(s.aRk, {
       selected: !0,
       lowerBadge: p > 0 ? (0, I.Ne)(p) : null,
       upperBadge: U,
       lowerBadgeSize: {
-        width: (0, a.OVM)(p)
+        width: (0, s.OVM)(p)
       },
-      children: (0, r.jsx)(a.LYs, (t = function(e) {
+      children: (0, r.jsx)(s.LYs, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -95,8 +95,8 @@ function R(e) {
         onClick: () => {
           if (!__OVERLAY__ && (null != C && clearTimeout(C), j(setTimeout(M, 500)), R(N + 1), 15 === N)) {
             M();
-            let e = !s.K.get(P.wli);
-            s.K.set(P.wli, e), e && s.K.set(w.O5, !0), e ? (0, f.GN)("discodo") : (0, f.GN)("user_leave"), v(!0), setTimeout(() => {
+            let e = !a.K.get(P.wli);
+            a.K.set(P.wli, e), e && a.K.set(w.O5, !0), e ? (0, f.GN)("discodo") : (0, f.GN)("user_leave"), v(!0), setTimeout(() => {
               v(!1)
             }, 1e3)
           }
@@ -134,13 +134,13 @@ function R(e) {
       inlineSpecs: A,
       tutorialId: "friends-list",
       position: "right",
-      children: (0, r.jsxs)(S.H, {
-        children: [(0, r.jsx)(E.Z, {
+      children: (0, r.jsxs)(E.H, {
+        children: [(0, r.jsx)(S.Z, {
           selected: o,
           hovered: _,
           className: T.pill
         }), (0, r.jsx)(x.Z, {
-          color: a.ua7.Colors.PRIMARY,
+          color: s.ua7.Colors.PRIMARY,
           hideOnClick: !0,
           text: k,
           selected: o,
@@ -166,23 +166,23 @@ function D() {
     i = Object.keys(N.nG),
     {
       unviewedTrialCount: l,
-      unviewedDiscountCount: s
+      unviewedDiscountCount: a
     } = (0, o.cj)([_.Z], () => ({
       unviewedTrialCount: _.Z.getUnacknowledgedOffers(i).length,
       unviewedDiscountCount: _.Z.getUnacknowledgedDiscountOffers().length
     })),
-    a = l + s,
+    s = l + a,
     u = (0, o.e7)([b.default], () => b.default.getCurrentUser()),
     d = (0, h.q)(),
-    f = n + a + d,
-    g = f === a && a > 0 && n + d === 0,
-    E = O.Z.getHomeLink();
-  return g && (E = P.Z5c.APPLICATION_STORE), (0, r.jsx)(R, {
+    f = n + s + d,
+    g = f === s && s > 0 && n + d === 0,
+    S = O.Z.getHomeLink();
+  return g && (S = P.Z5c.APPLICATION_STORE), (0, r.jsx)(R, {
     selected: e,
     user: u,
     selectedChannelId: m.Z.getChannelId(P.ME),
     badge: f,
-    link: E,
+    link: S,
     showProgressBadge: t
   })
 }

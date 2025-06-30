@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => x
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(442837),
-  a = n(481060),
+  a = n(442837),
+  s = n(481060),
   c = n(503438),
   u = n(39628),
   d = n(884338),
@@ -26,18 +26,18 @@ function v(e) {
   let {
     activity: l,
     user: o,
-    embeddedApp: s,
+    embeddedApp: a,
     onOpenSpotifyAlbum: u
   } = e, d = null == l ? void 0 : l.assets, h = null == l ? void 0 : l.application_id;
   if (null == l || null == d || null == d.large_image && null == d.small_image)
-    if (null == s) return null;
+    if (null == a) return null;
     else {
       let e = m.ZP.getApplicationIconURL({
-          id: s.application.id,
-          icon: s.application.icon
+          id: a.application.id,
+          icon: a.application.icon
         }),
-        t = s.application.name;
-      return (0, r.jsx)(a.ua7, {
+        t = a.application.name;
+      return (0, r.jsx)(s.ua7, {
         text: t,
         position: "top",
         children: () => (0, r.jsx)("img", {
@@ -54,13 +54,13 @@ function v(e) {
       src: (0, g.xF)(h, p, [128, 128]),
       className: b
     }) : null;
-  return f && null != u ? (_ = (0, r.jsx)(a.P3F, {
+  return f && null != u ? (_ = (0, r.jsx)(s.P3F, {
     className: O.clickable,
     onClick: () => {
       u(l, o.id)
     },
     children: _
-  }), (0, r.jsx)(a.ua7, {
+  }), (0, r.jsx)(s.ua7, {
     text: null != d.large_text ? d.large_text : null,
     position: "top",
     children: e => {
@@ -91,11 +91,11 @@ function C(e) {
     activity: t,
     embeddedApp: n,
     onOpenSpotifyTrack: i
-  } = e, l = null == t ? void 0 : t.details, o = null == t ? void 0 : t.name, s = o;
-  if (null != n) s = n.application.name;
+  } = e, l = null == t ? void 0 : t.details, o = null == t ? void 0 : t.name, a = o;
+  if (null != n) a = n.application.name;
   else {
     if (!(null != t && (0, c.Z)(t)) || null == t.sync_id || null == l || null == i) return null;
-    o = l, s = (0, r.jsx)(a.P3F, {
+    o = l, a = (0, r.jsx)(s.P3F, {
       className: O.headerLink,
       onClick: () => {
         i(t)
@@ -106,7 +106,7 @@ function C(e) {
   return (0, r.jsx)(h.Z, {
     title: o,
     className: O.header,
-    children: s
+    children: a
   })
 }
 
@@ -115,21 +115,21 @@ function j(e) {
     activity: t,
     user: n,
     onOpenSpotifyArtist: i
-  } = e, l = null == t ? void 0 : t.details, s = null == t ? void 0 : t.state, a = l;
-  return (null != t && (0, c.Z)(t) && null != s && (a = [(0, r.jsx)(p.Z, {
-    artists: s,
+  } = e, l = null == t ? void 0 : t.details, a = null == t ? void 0 : t.state, s = l;
+  return (null != t && (0, c.Z)(t) && null != a && (s = [(0, r.jsx)(p.Z, {
+    artists: a,
     linkClassName: O.bodyLink,
     canOpen: null != t.sync_id,
     onOpenSpotifyArtist: e => {
       null == i || i(t, n.id, e)
     }
-  }, s)]), null == a || "" === a) ? null : (0, r.jsx)("div", {
+  }, a)]), null == s || "" === s) ? null : (0, r.jsx)("div", {
     className: o()(O.ellipsisRow, O.colorHeaderSecondary, O.bodyTextSize),
-    children: a
+    children: s
   })
 }
 
-function E(e) {
+function S(e) {
   let {
     activity: t
   } = e, n = null == t ? void 0 : t.state;
@@ -139,7 +139,7 @@ function E(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     activity: t
   } = e;
@@ -173,7 +173,7 @@ function x(e) {
     onOpenSpotifyAlbum: g
   } = e, m = [];
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (m = u.map(e => e.user.id));
-  let x = (0, s.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
+  let x = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
     I = null != n || (0, c.Z)(t),
     P = i.useMemo(() => {
       let e = new Map;
@@ -201,7 +201,7 @@ function x(e) {
           activity: t,
           user: l,
           onOpenSpotifyArtist: p
-        }), (0, r.jsx)(E, {
+        }), (0, r.jsx)(S, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(d.Z, {
           className: O.usersSummary,
@@ -214,7 +214,7 @@ function x(e) {
             if (null == e) return null;
             let n = P.get(e.id),
               i = null != (t = null == n ? void 0 : n.nick) ? t : _.ZP.getName(e);
-            return (0, r.jsx)(a.DY3, {
+            return (0, r.jsx)(s.DY3, {
               text: i,
               position: "bottom",
               children: (0, r.jsx)("img", {
@@ -226,7 +226,7 @@ function x(e) {
           }
         })]
       })]
-    }), (0, r.jsx)(S, {
+    }), (0, r.jsx)(E, {
       activity: t
     })]
   }) : null

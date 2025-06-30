@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  g: () => O
+  g: () => N
 }), n(388685), n(35282);
 var a = n(73800),
   r = n(281598);
@@ -106,7 +106,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       let t = e.max > 1e6 ? "".concat(Math.round(e.max / 1e6), "MB") : "".concat(Math.round(e.max / 1e3), "KB");
       n("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(i, " (max: ").concat(t, ")")])
     } else r > e.warn && a("Files are a tad chonky - are you sure they're optimized?", ["".concat(i)])
-  }, _ = (e, t, n, a) => {
+  }, j = (e, t, n, a) => {
     let r = h[e];
     if (null != r)
       for (let e of t) e.name.endsWith(".txt") || v(r, e, n, a)
@@ -116,7 +116,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
         l = null != e ? h[e] : null;
       null != l && v(l, a, t, n)
     }
-  }, j = e => {
+  }, _ = e => {
     let {
       files: t,
       addError: n,
@@ -148,7 +148,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           return e.substring(0, t > 0 ? t : e.length)
         }),
         addError: n
-      }), _(r.aB.PROFILE_EFFECT, l, n, a);
+      }), j(r.aB.PROFILE_EFFECT, l, n, a);
       let s = o.filter(e => !i.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, "/").concat(e));
       s.length > 0 && n("Missing required PFX files with prefix", s), i.some(e => e.endsWith(".txt")) || n("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
       let c = i.filter(e => !o.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
@@ -163,9 +163,9 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     f({
       names: t.avatarDecorationFiles.map(e => e.name),
       addError: n
-    }), _(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)
-  }, N = (e, t, n) => {
-    j({
+    }), j(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)
+  }, O = (e, t, n) => {
+    _({
       files: e,
       addError: n,
       addWarning: t
@@ -182,7 +182,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
       addError: n,
       addWarning: t
     })
-  }, O = () => {
+  }, N = () => {
     let [e, t] = a.useState(!1), [n, s] = a.useState({}), [o, c] = a.useState({}), d = a.useCallback(function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
       c(n => {
@@ -217,7 +217,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           let n = await p(t);
           if (n.length > 0) return void d("Missing required directories", n);
           let a = await (0, r.LY)([t]);
-          N(a, u, d)
+          O(a, u, d)
         } finally {
           t(!0)
         }

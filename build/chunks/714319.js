@@ -1,11 +1,11 @@
-/** Chunk was on 19577 **/
+/** Chunk was on 67042 **/
 n.d(t, {
   G: () => a,
-  Z: () => s
+  Z: () => o
 });
-var r, i = n(536895);
+var r, l = n(536895);
 
-function l(e) {
+function i(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -24,7 +24,7 @@ function l(e) {
   return e
 }
 
-function o(e, t) {
+function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -38,29 +38,29 @@ function o(e, t) {
 }
 var a = ((r = {}).UPDATE_ITEM_COUNT = "UPDATE_ITEM_COUNT", r.SET_FOCUSED_INDEX = "SET_FOCUSED_INDEX", r);
 
-function s(e, t) {
+function o(e, t) {
   switch (t.type) {
-    case i.Us.NAVIGATE_UP:
-      return o(l({}, e), {
+    case l.Us.NAVIGATE_UP:
+      return s(i({}, e), {
         focusedIndex: Math.max(0, e.focusedIndex - 1)
       });
-    case i.Us.NAVIGATE_DOWN:
-      return o(l({}, e), {
+    case l.Us.NAVIGATE_DOWN:
+      return s(i({}, e), {
         focusedIndex: Math.min(e.focusedIndex + 1, e.itemCount - 1)
       });
-    case i.Us.NAVIGATE_START:
-      return o(l({}, e), {
+    case l.Us.NAVIGATE_START:
+      return s(i({}, e), {
         focusedIndex: 0
       });
-    case i.Us.NAVIGATE_END:
-      return o(l({}, e), {
+    case l.Us.NAVIGATE_END:
+      return s(i({}, e), {
         focusedIndex: e.itemCount - 1
       });
     case "UPDATE_ITEM_COUNT":
       let {
         itemCount: n
       } = t;
-      return o(l({}, e), {
+      return s(i({}, e), {
         itemCount: n,
         focusedIndex: Math.min(n - 1, e.focusedIndex)
       });
@@ -68,10 +68,10 @@ function s(e, t) {
       let {
         index: r
       } = t;
-      return o(l({}, e), {
+      return s(i({}, e), {
         focusedIndex: Math.max(0, Math.min(r, e.itemCount - 1))
       });
-    case i.Us.SELECT_FOCUSED_ITEM:
+    case l.Us.SELECT_FOCUSED_ITEM:
       break;
     default:
       console.warn("Listbox navigator was given an unhandled action ".concat(t.type))

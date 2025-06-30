@@ -1,36 +1,35 @@
-/** Chunk was on 19456 **/
-"use strict";
-r.d(e, {
+/** Chunk was on 95355 **/
+n.d(t, {
   x: () => i
 });
-var n = r(73800);
+var r = n(73800);
 
 function i() {
-  let t = (0, n.useRef)(new Map),
-    e = (0, n.useCallback)((e, r, n, i) => {
-      let o = (null == i ? void 0 : i.once) ? (...e) => {
-        t.current.delete(n), n(...e)
-      } : n;
-      t.current.set(n, {
-        type: r,
-        eventTarget: e,
+  let e = (0, r.useRef)(new Map),
+    t = (0, r.useCallback)((t, n, r, i) => {
+      let o = (null == i ? void 0 : i.once) ? (...t) => {
+        e.current.delete(r), r(...t)
+      } : r;
+      e.current.set(r, {
+        type: n,
+        eventTarget: t,
         fn: o,
         options: i
-      }), e.addEventListener(r, o, i)
+      }), t.addEventListener(n, o, i)
     }, []),
-    r = (0, n.useCallback)((e, r, n, i) => {
+    n = (0, r.useCallback)((t, n, r, i) => {
       var o;
-      let a = (null == (o = t.current.get(n)) ? void 0 : o.fn) || n;
-      e.removeEventListener(r, a, i), t.current.delete(n)
+      let u = (null == (o = e.current.get(r)) ? void 0 : o.fn) || r;
+      t.removeEventListener(n, u, i), e.current.delete(r)
     }, []),
-    i = (0, n.useCallback)(() => {
-      t.current.forEach((t, e) => {
-        r(t.eventTarget, t.type, e, t.options)
+    i = (0, r.useCallback)(() => {
+      e.current.forEach((e, t) => {
+        n(e.eventTarget, e.type, t, e.options)
       })
-    }, [r]);
-  return (0, n.useEffect)(() => i, [i]), {
-    addGlobalListener: e,
-    removeGlobalListener: r,
+    }, [n]);
+  return (0, r.useEffect)(() => i, [i]), {
+    addGlobalListener: t,
+    removeGlobalListener: n,
     removeAllGlobalListeners: i
   }
 }

@@ -1,5 +1,4 @@
-/** Chunk was on 71879 **/
-"use strict";
+/** Chunk was on 99546 **/
 e.exports = {
   obscuredIcon: "obscuredIcon__43090"
 }

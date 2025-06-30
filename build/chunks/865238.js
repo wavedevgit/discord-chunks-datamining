@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(913527),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(913527),
+  s = n.n(o),
   c = n(695469),
   u = n(442837),
   d = n(481060),
@@ -25,9 +25,9 @@ var r = n(255367),
   j = n(37113),
   O = n(388032),
   E = n(15322),
-  I = n(574169);
+  S = n(574169);
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,21 +51,21 @@ function Z(e) {
   let {
     channel: t,
     buyer: l,
-    onClose: a,
+    onClose: o,
     dismissibleContent: Z
   } = e, N = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([_.default], () => _.default.getCurrentUser()), A = null != N.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([x.Z], () => x.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [k, M] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
     M(!0)
   }, []);
-  let D = (0, i.useContext)(m.h9),
-    L = (0, d.q_F)({
+  let L = (0, i.useContext)(m.h9),
+    D = (0, d.q_F)({
       from: k ? {
         opacity: 0,
         transform: "translateX(-50%) translateY(30px) scale(0.9)"
       } : {},
       to: {
         opacity: 1,
-        transform: D ? "translateX(-50%) translateY(0px) scale(1)" : "translateX(-50%) translateY(-66px) scale(1)"
+        transform: L ? "translateX(-50%) translateY(0px) scale(1)" : "translateX(-50%) translateY(-66px) scale(1)"
       },
       config: {
         duration: 250,
@@ -82,10 +82,10 @@ function Z(e) {
       animateOnHover: !0
     }),
     F = C.ZP.getName(t.guild_id, t.id, l),
-    G = A && !R,
-    H = t.hdStreamingUntil;
-  if (null == H || null == l || null == T) return null;
-  let V = s()(H).diff(s()(), "hours"),
+    H = A && !R,
+    G = t.hdStreamingUntil;
+  if (null == G || null == l || null == T) return null;
+  let V = s()(G).diff(s()(), "hours"),
     z = Z ? O.intl.format(O.t["6LrV9f"], {
       username: F,
       num: V,
@@ -96,18 +96,18 @@ function Z(e) {
     }) : O.intl.formatToPlainString(O.t.vNbVXF, {
       username: F
     }),
-    W = R ? O.intl.string(O.t.o7NIjY) : G ? O.intl.string(O.t.r6xhBw) : O.intl.string(O.t.yKw8Dg);
+    W = R ? O.intl.string(O.t.o7NIjY) : H ? O.intl.string(O.t.r6xhBw) : O.intl.string(O.t.yKw8Dg);
   return null == l || null == T ? null : (0, r.jsxs)(c.animated.div, {
-    style: L,
+    style: D,
     className: E.banner,
     children: [(0, r.jsxs)("div", {
-      children: [(0, r.jsx)(d.qEK, S({
+      children: [(0, r.jsx)(d.qEK, I({
         src: U,
         "aria-label": l.username,
         size: d.EFr.SIZE_48
       }, B)), (0, r.jsx)("img", {
         className: E.potion,
-        src: I,
+        src: S,
         alt: ""
       })]
     }), (0, r.jsx)(d.X6q, {
@@ -120,27 +120,27 @@ function Z(e) {
           if (R) {
             let e = x.Z.getPreviousGoLiveSettings(),
               t = b.Z.getGoLiveSource();
-            if (null == e) return void a();
+            if (null == e) return void o();
             let n = (0, h.s_)(e.resolution, e.frameRate, t);
-            return p.Z.setGoLiveSource(n), void a()
+            return p.Z.setGoLiveSource(n), void o()
           }
-          if (G) return void a();
+          if (H) return void o();
           (0, d.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("46746"), n.e("40731")]).then(n.bind(n, 60594));
-            return t => (0, r.jsx)(e, S({
+            return t => (0, r.jsx)(e, I({
               analyticsLocation: "HDStreamingPotionBanner"
             }, t))
-          }), a()
+          }), o()
         },
-        className: o()({
+        className: a()({
           [E.actionButton]: !0 !== A
         }),
         children: W
-      }), !G && (0, r.jsx)(d.P3F, {
+      }), !H && (0, r.jsx)(d.P3F, {
         className: E.x,
-        onClick: a,
+        onClick: o,
         children: (0, r.jsx)(d.Dio, {
           name: "close"
         })

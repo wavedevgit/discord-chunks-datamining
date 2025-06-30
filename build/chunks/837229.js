@@ -1,5 +1,5 @@
-/** Chunk was on 89149 **/
-t.exports = {
+/** Chunk was on 56399 **/
+e.exports = {
   label: "label__33095",
   iconWrapper: "iconWrapper__33095"
 }

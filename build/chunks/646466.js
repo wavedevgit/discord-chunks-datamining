@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  O: () => O
+  O: () => N
 }), n(388685);
 var a = n(255367),
   r = n(73800),
@@ -68,7 +68,7 @@ let h = [{
       onCloseRequest: () => (0, l.Mr3)(s.c)
     })
   },
-  _ = () => {
+  j = () => {
     let e = (0, i.lb)(),
       {
         previewProfileEffectId: t,
@@ -129,7 +129,7 @@ let h = [{
       })]
     })
   },
-  j = e => {
+  _ = e => {
     let {
       clearAssets: t,
       clearIgnoredFiles: n
@@ -301,7 +301,7 @@ let h = [{
       })]
     })
   },
-  N = () => {
+  O = () => {
     let {
       previewEnabled: e,
       setPreviewEnabled: t,
@@ -337,7 +337,7 @@ let h = [{
             color: l.TVs.colors.BG_BRAND
           })
         })]
-      }), (0, a.jsx)(_, {}), (0, a.jsx)(g, {}), (0, a.jsx)(j, {
+      }), (0, a.jsx)(j, {}), (0, a.jsx)(g, {}), (0, a.jsx)(_, {
         clearAssets: s,
         clearIgnoredFiles: u
       }), (0, a.jsx)(y, {
@@ -346,7 +346,7 @@ let h = [{
       })]
     })
   },
-  O = () => {
+  N = () => {
     let [e, t] = r.useState("preview");
     return (0, a.jsxs)("div", {
       className: m.container,
@@ -363,7 +363,7 @@ let h = [{
         optionClassName: m.panelModeControlOption
       }), (0, a.jsx)(l.LZC, {
         size: 8
-      }), "preview" === e && (0, a.jsx)(N, {}), "validate" === e && (0, a.jsx)(C, {}), (0, a.jsx)(l.LZC, {
+      }), "preview" === e && (0, a.jsx)(O, {}), "validate" === e && (0, a.jsx)(C, {}), (0, a.jsx)(l.LZC, {
         size: 16
       })]
     })

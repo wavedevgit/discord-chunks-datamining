@@ -1,15 +1,15 @@
-/** Chunk was on 43988 **/
+/** Chunk was on 36006 **/
 "use strict";
 n.d(t, {
-  K: () => o
+  K: () => l
 });
 var r = n(818083),
-  i = n(987338);
-let s = (0, r.B)({
+  s = n(987338);
+let i = (0, r.B)({
   kind: "user",
   id: "2025-06_guild_sidebar_voice_stage_in_suggested",
   label: "voice and stage channels appear in suggested if user mentioned in them",
-  commonTriggerPoint: i.$P.CONNECTION_OPEN,
+  commonTriggerPoint: s.$P.CONNECTION_OPEN,
   defaultConfig: {
     enabled: !1
   },
@@ -22,8 +22,8 @@ let s = (0, r.B)({
   }]
 });
 
-function o(e) {
-  return s.getCurrentConfig({
+function l(e) {
+  return i.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !1

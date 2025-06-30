@@ -6,19 +6,19 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(388905),
-  a = n(703656),
-  o = n(671533),
-  s = n(63063),
+  s = n(703656),
+  a = n(671533),
+  o = n(63063),
   c = n(981631),
   u = n(388032),
   d = n(963650);
-let h = () => (0, a.uL)(c.Z5c.LOGIN, {
+let h = () => (0, s.uL)(c.Z5c.LOGIN, {
     source: "age_gate_underage"
   }),
   p = e => {
     let {
       authBoxClassName: t,
-      underageMessage: a,
+      underageMessage: s,
       inUnclaimedFlowExperiment: p
     } = e;
     return p ? (0, r.jsx)(l.ZP, {
@@ -30,18 +30,18 @@ let h = () => (0, a.uL)(c.Z5c.LOGIN, {
         }), (0, r.jsx)(l.DK, {
           className: d.subtitle,
           children: u.intl.format(u.t.KQgoxM, {
-            underageMessage: null != a ? a : u.intl.string(u.t.WqEH4O)
+            underageMessage: null != s ? s : u.intl.string(u.t.WqEH4O)
           })
         }), (0, r.jsxs)(i.zxk, {
           className: d.button,
           innerClassName: d.buttonWithIcon,
-          onClick: () => window.open(s.Z.getArticleURL(c.BhN.AGE_GATE), "_blank"),
+          onClick: () => window.open(o.Z.getArticleURL(c.BhN.AGE_GATE), "_blank"),
           children: [(0, r.jsx)("div", {
             children: u.intl.string(u.t.hvVgAQ)
-          }), (0, r.jsx)(o.Z, {
+          }), (0, r.jsx)(a.Z, {
             height: 20,
             width: 20,
-            direction: o.Z.Directions.UP,
+            direction: a.Z.Directions.UP,
             className: d.externalArrow
           })]
         })]
@@ -58,8 +58,8 @@ let h = () => (0, a.uL)(c.Z5c.LOGIN, {
       }), (0, r.jsx)(l.DK, {
         className: d.subtitle,
         children: u.intl.format(u.t.b0QzXV, {
-          underageMessage: null != a ? a : u.intl.string(u.t.WqEH4O),
-          helpURL: s.Z.getArticleURL(c.BhN.AGE_GATE)
+          underageMessage: null != s ? s : u.intl.string(u.t.WqEH4O),
+          helpURL: o.Z.getArticleURL(c.BhN.AGE_GATE)
         })
       }), (0, r.jsx)(i.zxk, {
         fullWidth: !0,

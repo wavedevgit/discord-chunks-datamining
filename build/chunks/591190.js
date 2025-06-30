@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => u
 });
@@ -7,10 +7,10 @@ n(73800);
 var i = n(120356),
   l = n.n(i),
   o = n(113087);
-let s = () => (0, r.jsx)("div", {
+let a = () => (0, r.jsx)("div", {
     className: o.spacer
   }),
-  a = () => (0, r.jsx)("div", {
+  s = () => (0, r.jsx)("div", {
     className: o.category
   }),
   c = e => {
@@ -37,7 +37,7 @@ let s = () => (0, r.jsx)("div", {
       className: l()(o.container, {
         [o.bannerPadding]: t
       }),
-      children: [(0, r.jsx)(a, {}), (0, r.jsx)(c, {
+      children: [(0, r.jsx)(s, {}), (0, r.jsx)(c, {
         width: 100
       }), (0, r.jsx)(c, {
         width: 74
@@ -49,7 +49,7 @@ let s = () => (0, r.jsx)("div", {
         width: 112
       }), (0, r.jsx)(c, {
         width: 175
-      }), (0, r.jsx)(s, {}), (0, r.jsx)(a, {}), (0, r.jsx)(c, {
+      }), (0, r.jsx)(a, {}), (0, r.jsx)(s, {}), (0, r.jsx)(c, {
         width: 100
       }), (0, r.jsx)(c, {
         width: 74

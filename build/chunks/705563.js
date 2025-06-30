@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  o = n(665149),
-  a = n(892001),
+  a = n(665149),
+  o = n(892001),
   s = n(650774),
   c = n(430824),
   u = n(496675),
@@ -39,8 +39,8 @@ function _(e) {
       maxMembers: null == t ? void 0 : t.maxMembers
     }
   }), O = (0, i.e7)([s.Z], () => null != v ? s.Z.getMemberCount(v) : 0), E = null != j && (null != O ? O : 0) >= j, {
-    approveRequest: I,
-    rejectRequest: S,
+    approveRequest: S,
+    rejectRequest: I,
     submitting: P
   } = (0, f.s)(null == C ? void 0 : C.guildId, null == C ? void 0 : C.userId, null == C ? void 0 : C.joinRequestId);
   return null != C && C.applicationStatus === h.wB.SUBMITTED && x ? (0, r.jsxs)("div", {
@@ -70,7 +70,7 @@ function _(e) {
         }({}, e), n = n = {
           color: l.zxk.Colors.GREEN,
           submitting: P,
-          onClick: I,
+          onClick: S,
           size: l.PhG.SMALL,
           disabled: E,
           children: g.intl.string(g.t.BzjDQE)
@@ -87,20 +87,20 @@ function _(e) {
       }
     }), (0, r.jsx)(l.zxk, {
       color: l.zxk.Colors.RED,
-      onClick: S,
+      onClick: I,
       size: l.PhG.SMALL,
       disabled: P || C.applicationStatus !== h.wB.SUBMITTED,
       children: g.intl.string(g.t.hDtbs7)
     }), n && (0, r.jsx)(l.zxk, {
       color: l.zxk.Colors.TRANSPARENT,
       onClick: () => {
-        (0, a.openUserProfileModal)({
+        (0, o.openUserProfileModal)({
           userId: C.userId,
           guildId: C.guildId
         })
       },
       size: l.PhG.SMALL,
       children: g.intl.string(g.t.iXAna2)
-    }), _ && (0, r.jsx)(o.ZP.Divider, {})]
+    }), _ && (0, r.jsx)(a.ZP.Divider, {})]
   }) : null
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 69422 **/
+/** Chunk was on 35305 **/
 "use strict";
 n.d(t, {
   default: () => A
@@ -32,7 +32,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function g(e) {
   }
   return e
 }
-let M = e => {
+let g = e => {
   var t, n, {
       label: o,
       text: i,
@@ -65,7 +65,7 @@ let M = e => {
       }
       return o
     }(e, ["label", "text", "children"]);
-  return (0, r.jsxs)(p.Z, (t = g({
+  return (0, r.jsxs)(p.Z, (t = M({
     direction: p.Z.Direction.VERTICAL
   }, s), n = n = {
     children: [(0, r.jsx)(l.vwX, {
@@ -95,7 +95,7 @@ class C extends o.PureComponent {
     let {
       currentUser: e
     } = this.props, t = null != this.props.currentUser.phone, n = e.hasFlag(y.xW$.MFA_SMS), o = e.hasFlag(y.xW$.PARTNER) || e.hasFlag(y.xW$.STAFF);
-    return t ? (0, r.jsxs)(M, {
+    return t ? (0, r.jsxs)(g, {
       label: m.intl.string(m.t.DZQe29),
       text: m.intl.string(m.t.fspJ4O),
       children: [(0, r.jsxs)(l.Text, {
@@ -121,7 +121,7 @@ class C extends o.PureComponent {
         size: l.zxk.Sizes.SMALL,
         children: o ? m.intl.string(m.t.Sq6Q1t) : n ? m.intl.string(m.t.kSbHTE) : m.intl.string(m.t.DZQe29)
       })]
-    }) : (0, r.jsx)(M, {
+    }) : (0, r.jsx)(g, {
       label: m.intl.string(m.t.DZQe29),
       text: m.intl.string(m.t.fspJ4O),
       children: (0, r.jsx)(l.zxk, {
@@ -134,7 +134,7 @@ class C extends o.PureComponent {
     })
   }
   renderBackupCodesSection(e) {
-    return (0, r.jsx)(M, {
+    return (0, r.jsx)(g, {
       label: m.intl.string(m.t.qZZUy8),
       text: e,
       children: (0, r.jsx)(u.Z, {
@@ -241,7 +241,7 @@ class C extends o.PureComponent {
   }
   openPhoneVerificationModal() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-    (0, l.h7j)(t => (0, r.jsx)(f.default, g({
+    (0, l.h7j)(t => (0, r.jsx)(f.default, M({
       reason: _.L.MFA_PHONE_UPDATE
     }, t, e)), {
       modalKey: b.M

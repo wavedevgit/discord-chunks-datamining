@@ -1,6 +1,6 @@
 /**
   Module ID: 71879
-  Original File Name: 7c57ae587de0716f
+  Original File Name: 9e651bd43f6cad28
 **/
 .obscuredIcon__43090 {
     height: 32px;
@@ -2701,6 +2701,10 @@
     box-shadow: var(--elevation-low)
 }
 
+.blockedMessage__9a337 {
+    font-style: italic
+}
+
 .container_f8b2d2 {
     background-color: var(--background-base-low);
     border-radius: var(--radius-sm);
@@ -2712,4 +2716,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=7c57ae587de0716f.css.map*/
+/*# sourceMappingURL=9e651bd43f6cad28.css.map*/

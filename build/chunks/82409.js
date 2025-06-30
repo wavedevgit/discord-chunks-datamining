@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => R
 }), n(388685), n(361932), n(187205);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(392711),
-  a = n(695469),
+  a = n(392711),
+  s = n(695469),
   c = n(442837),
   u = n(481060),
   d = n(235820),
@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(821020),
   C = n(370774),
   j = n(334426),
-  E = n(862149),
-  S = n(739340),
+  S = n(862149),
+  E = n(739340),
   x = n(207913),
   I = n(553984),
   P = n(333834),
@@ -33,7 +33,7 @@ var r = n(255367),
   Z = n(388032),
   T = n(21678);
 let A = {
-  controller: new a.Controller({
+  controller: new s.Controller({
     value: 1,
     immediate: !0
   }),
@@ -50,7 +50,7 @@ function R(e) {
   var t, n;
   let {
     includePanelSpacing: l
-  } = e, a = (0, c.Wu)([m.Z], () => {
+  } = e, s = (0, c.Wu)([m.Z], () => {
     var e;
     return null != (e = m.Z.getSettingsFilteredMentions()) ? e : []
   }), {
@@ -66,15 +66,15 @@ function R(e) {
     everyoneFilter: m.Z.everyoneFilter
   })), [f, C] = i.useState(N.V5.ALL), {
     messages: j,
-    loadState: E,
+    loadState: S,
     loadMore: x,
     hasLoadedEver: Z
-  } = (0, S.ZP)(), R = function(e) {
+  } = (0, E.ZP)(), R = function(e) {
     let [t, n] = (0, i.useState)(!0);
     return (0, i.useEffect)(() => {
       t && e && n(!1)
     }, [e, t]), t
-  }(Z && p && !h && E !== S.jd.Loading);
+  }(Z && p && !h && S !== E.jd.Loading);
   (0, i.useEffect)(() => {
     if (!p) return void D(null)
   }, [p]);
@@ -90,7 +90,7 @@ function R(e) {
           kind: N.fL.BOOKMARK,
           message: t
         }] : []
-      }) : (0, s.uniqBy)([...null != (e = null == a ? void 0 : a.map(e => ({
+      }) : (0, a.uniqBy)([...null != (e = null == s ? void 0 : s.map(e => ({
         kind: N.fL.MENTION,
         message: e
       }))) ? e : [], ...j.filter(e => e.author.id !== (null == B ? void 0 : B.id)).map(e => ({
@@ -114,7 +114,7 @@ function R(e) {
         }
         return !1
       }) : null
-    }, [f, a, B, F, j, Z]),
+    }, [f, s, B, F, j, Z]),
     {
       filterStyle: H
     } = v.Lk.useExperiment({
@@ -179,11 +179,11 @@ function R(e) {
       renderMessageGroup: M,
       messages: V,
       loadingInitial: R,
-      loadingMore: E === S.jd.Loading || h,
+      loadingMore: S === E.jd.Loading || h,
       listName: "notifications-inbox",
       loadMore: function(e) {
-        let t = null != a && a.length > 0 ? a[a.length - 1].id : null;
-        [N.V5.ALL, N.V5.MENTIONS, N.V5.ANNOUNCEMENTS].includes(f) && d && !h && D(null, t), [N.V5.ALL, N.V5.ANNOUNCEMENTS].includes(f) && E !== S.jd.Done && E !== S.jd.Loading && x(e)
+        let t = null != s && s.length > 0 ? s[s.length - 1].id : null;
+        [N.V5.ALL, N.V5.MENTIONS, N.V5.ANNOUNCEMENTS].includes(f) && d && !h && D(null, t), [N.V5.ALL, N.V5.ANNOUNCEMENTS].includes(f) && S !== E.jd.Done && S !== E.jd.Loading && x(e)
       },
       renderLoadingState: L,
       ignoreGrouping: f === N.V5.BOOKMARKS
@@ -200,7 +200,7 @@ function D(e, t) {
 }
 
 function L() {
-  return (0, r.jsx)(E.Z, {})
+  return (0, r.jsx)(S.Z, {})
 }
 
 function M(e, t, n) {
@@ -215,13 +215,13 @@ function M(e, t, n) {
 function k(e) {
   let {
     hideBanner: t
-  } = e, [n, l] = i.useState(!1), s = (0, c.e7)([j.Z], () => j.Z.shouldHide), a = n ? u.kSu : u.kmB;
+  } = e, [n, l] = i.useState(!1), a = (0, c.e7)([j.Z], () => j.Z.shouldHide), s = n ? u.kSu : u.kmB;
   return (0, r.jsx)(u.P3F, {
     onClick: () => j.Z.dismiss(),
     onMouseEnter: () => l(!0),
     onMouseLeave: () => l(!1),
     className: o()(T.caughtUpContainer, {
-      [T.hide]: s || t
+      [T.hide]: a || t
     }),
     children: (0, r.jsxs)("div", {
       className: T.caughtUpContent,
@@ -230,7 +230,7 @@ function k(e) {
         color: "text-feedback-positive",
         className: T.caughtUpText,
         children: Z.intl.string(Z.t["6XMM+P"])
-      }), (0, r.jsx)(a, {
+      }), (0, r.jsx)(s, {
         size: "sm",
         className: T.caughtUpIcon,
         color: f.Z.TEXT_FEEDBACK_POSITIVE

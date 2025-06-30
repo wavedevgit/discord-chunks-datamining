@@ -5,7 +5,7 @@ n.d(t, {
   GU: () => Y,
   H8: () => J,
   HI: () => q,
-  HW: () => z,
+  HW: () => F,
   Ib: () => eo,
   KB: () => eu,
   S2: () => H,
@@ -16,7 +16,7 @@ n.d(t, {
   h9: () => es,
   iw: () => en,
   jC: () => V,
-  jQ: () => F,
+  jQ: () => U,
   lT: () => X,
   rd: () => ed,
   t4: () => ec,
@@ -37,19 +37,19 @@ var a, r, l = n(73800),
   b = n(857702),
   f = n(20450),
   v = n(312976),
-  _ = n(147591),
+  j = n(147591),
   g = n(135164),
-  j = n(940172),
+  _ = n(940172),
   y = n(81011),
   C = n(981613),
-  N = n(762399),
-  O = n(232112),
-  T = n(53796),
-  E = n(723757),
+  O = n(762399),
+  N = n(232112),
+  E = n(53796),
+  T = n(723757),
   S = n(375924),
   P = n(596136),
-  I = n(341901),
-  w = n(856308),
+  w = n(341901),
+  I = n(856308),
   k = n(665352),
   R = n(394900),
   A = n(661105),
@@ -58,7 +58,7 @@ var a, r, l = n(73800),
   D = n(521904),
   M = n(231338);
 
-function B(e) {
+function z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -77,7 +77,7 @@ function B(e) {
   return e
 }
 
-function U(e, t) {
+function B(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -89,7 +89,7 @@ function U(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let z = {
+let F = {
     sRGB: i.Z,
     A98RGB: s.Z,
     ACEScc: o.Z,
@@ -103,22 +103,22 @@ let z = {
     JzCzHz: b.Z,
     Jzazbz: f.Z,
     LCH: v.Z,
-    LCHuv: _.Z,
+    LCHuv: j.Z,
     Lab: g.Z,
-    Lab_D65: j.Z,
+    Lab_D65: _.Z,
     Luv: y.Z,
     OKLCH: C.Z,
-    OKLab: N.Z,
-    P3: O.Z,
-    ProPhoto: T.Z,
-    REC_2020: E.Z,
+    OKLab: O.Z,
+    P3: N.Z,
+    ProPhoto: E.Z,
+    REC_2020: T.Z,
     REC_2100_HLG: S.Z,
     REC_2100_PQ: P.Z,
-    XYZ_D50: I.Z,
-    XYZ_D65: w.Z
+    XYZ_D50: w.Z,
+    XYZ_D65: I.Z
   },
-  F = Object.fromEntries(Object.keys(z).map(e => [e, e]));
-Object.values(z).forEach(e => k.Z.register(e));
+  U = Object.fromEntries(Object.keys(F).map(e => [e, e]));
+Object.values(F).forEach(e => k.Z.register(e));
 let {
   SemanticColors: G
 } = D.V, V = G, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
@@ -148,7 +148,7 @@ function K(e) {
 function X(e, t, n, a, r) {
   return {
     name: t,
-    colors: U(B({}, e.colors), {
+    colors: B(z({}, e.colors), {
       [r]: {
         color: n,
         opacity: a
@@ -159,7 +159,7 @@ function X(e, t, n, a, r) {
 }
 
 function Y(e) {
-  return U(B({}, e), {
+  return B(z({}, e), {
     highlight: !e.highlight
   })
 }
@@ -216,7 +216,7 @@ function er(e) {
     darkness: r,
     lightness: l,
     easingStrength: s = 1
-  } = e, o = z[e.colorSpace], c = (0, A.Z)(n, o), d = (0, Z.CD)(c, "white", 1 - r, {
+  } = e, o = F[e.colorSpace], c = (0, A.Z)(n, o), d = (0, Z.CD)(c, "white", 1 - r, {
     space: o,
     outputSpace: i.Z
   }), u = (0, Z.CD)(c, "black", 1 - l, {
@@ -246,55 +246,55 @@ function er(e) {
 }
 
 function el(e, t, n) {
-  n(n => null == n.scales.find(t => t.name === e) ? n : U(B({}, n), {
+  n(n => null == n.scales.find(t => t.name === e) ? n : B(z({}, n), {
     scales: n.scales.map(n => n.name === e ? t(n) : n)
   }))
 }
 
 function ei(e, t, n) {
-  el(e, e => U(B({}, e), {
+  el(e, e => B(z({}, e), {
     darkness: t
   }), n)
 }
 
 function es(e, t, n) {
-  el(e, e => U(B({}, e), {
+  el(e, e => B(z({}, e), {
     lightness: t
   }), n)
 }
 
 function eo(e, t, n) {
-  el(e, e => U(B({}, e), {
+  el(e, e => B(z({}, e), {
     base: t
   }), n)
 }
 
 function ec(e, t, n) {
-  el(e, e => U(B({}, e), {
+  el(e, e => B(z({}, e), {
     colorSpace: t
   }), n)
 }
 
 function ed(e, t, n) {
-  el(e, e => U(B({}, e), {
+  el(e, e => B(z({}, e), {
     easingStrength: t
   }), n)
 }
 
 function eu(e, t, n) {
-  el(e, e => U(B({}, e), {
+  el(e, e => B(z({}, e), {
     showColumnarPalettePreview: t
   }), n)
 }
 
 function em(e, t, n) {
-  el(e, e => U(B({}, e), {
+  el(e, e => B(z({}, e), {
     useP3ColorSpace: t
   }), n)
 }
 
 function ex(e, t, n) {
-  el(e, e => U(B({}, e), {
+  el(e, e => B(z({}, e), {
     steps: t
   }), n)
 }

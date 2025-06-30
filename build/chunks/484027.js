@@ -1,5 +1,4 @@
-/** Chunk was on 43988 **/
-"use strict";
+/** Chunk was on 25913 **/
 e.exports = {
   firstPromotionalAvatar: "firstPromotionalAvatar__55414",
   container: "container__55414"

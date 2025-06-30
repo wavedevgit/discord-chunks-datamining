@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => j
+  Z: () => _
 }), n(388685), n(642613);
 var a = n(255367),
   r = n(73800),
@@ -47,7 +47,7 @@ let v = [{
       return t.getName()
     }
   }],
-  _ = [{
+  j = [{
     id: "local",
     name: "Local Variables",
     group: x.v0.NONE,
@@ -88,7 +88,7 @@ function g(e) {
     TabBar: r,
     renderSelectedTab: l
   } = (0, x.ZP)({
-    tabs: _
+    tabs: j
   }, []);
   return (0, a.jsxs)(u.Z, {
     className: p.subPanel,
@@ -108,7 +108,7 @@ function g(e) {
   })
 }
 
-function j() {
+function _() {
   let e = r.useRef(null),
     [t, n] = r.useState(""),
     l = s.yh.getAll(),

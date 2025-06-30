@@ -1,6 +1,6 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
-  Z: () => E
+  Z: () => C
 }), n(997841), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -14,18 +14,18 @@ var r = n(255367),
   p = n(955415),
   m = n(131704),
   f = n(630388),
-  h = n(411198),
-  g = n(277707),
-  _ = n(358595),
+  g = n(411198),
+  _ = n(277707),
+  h = n(358595),
   b = n(981631),
-  x = n(388032),
+  E = n(388032),
   y = n(273254);
 
-function E(e) {
-  var t, E, v;
-  let C, O, j, {
-      onTransitionToInviteChannel: S,
-      onAcceptInstantInvite: I,
+function C(e) {
+  var t, C, v;
+  let x, O, j, {
+      onTransitionToInviteChannel: I,
+      onAcceptInstantInvite: S,
       guild: T,
       invite: N,
       message: P,
@@ -44,7 +44,7 @@ function E(e) {
     F = null != D && D.isGuildVocal(),
     B = null != D && D.isGuildStageVoice(),
     G = (0, f.yE)(null != (t = N.flags) ? t : 0, l.$.IS_GUEST_INVITE),
-    H = null != (E = null == T ? void 0 : T.hasFeature(b.oNc.HUB)) && E,
+    H = null != (C = null == T ? void 0 : T.hasFeature(b.oNc.HUB)) && C,
     V = null == T ? void 0 : T.id,
     {
       analyticsLocations: z
@@ -57,18 +57,18 @@ function E(e) {
     }, [V, z]),
     Q = i.useCallback(() => {
       let e = "noop";
-      M ? (S(), e = "transition") : (I(), e = "accept"), (0, o.r$)({
+      M ? (I(), e = "transition") : (S(), e = "accept"), (0, o.r$)({
         invite: N,
         action: e,
         inviter_id: P.author.id,
         invite_message_id: P.id
       }, z)
-    }, [N, P, z, M, S, I]);
+    }, [N, P, z, M, I, S]);
   if (null == T) {
-    if (null == N.guild) return (0, r.jsx)(_.Z, {});
-    (T = h.Qs(N.guild)).premiumTier = null != (v = N.guild.premium_tier) ? v : b.Eu4.NONE
+    if (null == N.guild) return (0, r.jsx)(h.Z, {});
+    (T = g.Qs(N.guild)).premiumTier = null != (v = N.guild.premium_tier) ? v : b.Eu4.NONE
   }
-  let J = (0, g.e)({
+  let J = (0, _.e)({
     isVoiceChannel: F,
     isOwnInvite: w,
     isGuest: G,
@@ -98,7 +98,7 @@ function E(e) {
     })]
   }), G && (j = (0, r.jsx)(a.DY3, {
     className: y.tooltipContainer,
-    text: x.intl.string(x.t["/FeTKy"]),
+    text: E.intl.string(E.t["/FeTKy"]),
     children: (0, r.jsx)(a.d3s, {
       size: "md",
       color: "currentColor",
@@ -106,9 +106,9 @@ function E(e) {
     })
   })), F ? (O = (0, r.jsx)(p.Z.Channel, {
     channel: D
-  }), C = (0, r.jsxs)("span", {
+  }), x = (0, r.jsxs)("span", {
     className: y.infoTitle,
-    children: [x.intl.format(x.t["2wimj4"], {
+    children: [E.intl.format(E.t["2wimj4"], {
       guildName: T.name
     }), (0, r.jsx)("span", {
       className: y.infoBadge,
@@ -117,10 +117,10 @@ function E(e) {
         isBannerVisible: !1
       })
     })]
-  })) : null != R && R >= 5 || null != k && k > 0 ? C = (0, r.jsx)(p.Z.Data, {
+  })) : null != R && R >= 5 || null != k && k > 0 ? x = (0, r.jsx)(p.Z.Data, {
     members: R,
     membersOnline: k
-  }) : U && (C = (0, r.jsx)(p.Z.Channel, {
+  }) : U && (x = (0, r.jsx)(p.Z.Channel, {
     channel: D,
     guild: T
   })), (0, r.jsxs)(p.Z, {
@@ -137,13 +137,13 @@ function E(e) {
         }), (0, r.jsx)(p.Z.Info, {
           title: O,
           onClick: q,
-          children: C
+          children: x
         })]
       }), (0, r.jsx)(p.Z.Button, {
         onClick: Q,
         submitting: L,
         color: p.Z.Button.Colors.GREEN,
-        children: F ? B ? x.intl.string(x.t["7vb2cX"]) : x.intl.string(x.t.gpqgam) : M ? x.intl.string(x.t.cEnaW1) : x.intl.string(x.t.XpeFYm)
+        children: F ? B ? E.intl.string(E.t["7vb2cX"]) : E.intl.string(E.t.gpqgam) : M ? E.intl.string(E.t.cEnaW1) : E.intl.string(E.t.XpeFYm)
       })]
     }), T.hasFeature(b.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
@@ -151,7 +151,7 @@ function E(e) {
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: x.intl.format(x.t["/o1IfH"], {
+        children: E.intl.format(E.t["/o1IfH"], {
           onClick: () => (0, a.ZDy)(async () => {
             let {
               default: e

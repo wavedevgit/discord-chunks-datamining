@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(748780),
+  a = n.n(l),
+  o = n(748780),
   s = n(442837),
   c = n(704215),
   u = n(481060),
@@ -26,8 +26,8 @@ var r = n(255367),
   j = n(63063),
   O = n(358085),
   E = n(709054),
-  I = n(967128),
-  S = n(981631),
+  S = n(967128),
+  I = n(981631),
   P = n(231873),
   Z = n(388032),
   N = n(646863);
@@ -69,14 +69,14 @@ function w(e) {
     className: t,
     iconUrl: n,
     icon: l,
-    header: a,
+    header: o,
     completed: s,
     onClick: c
   } = e, [d, h] = i.useState(!1), f = (0, p.Z)(s);
   return i.useEffect(() => {
     null != f && s !== f && (h(!0), setTimeout(() => h(!1), 1e3))
   }, [s, f]), (0, r.jsxs)(u.P3F, {
-    className: o()(t, N.card, {
+    className: a()(t, N.card, {
       [N.completed]: s
     }),
     onClick: c,
@@ -86,13 +86,13 @@ function w(e) {
       alt: ""
     }), (0, r.jsx)(u.Text, {
       color: "header-primary",
-      className: o()(N.cardTextContainer, N.cardHeader),
+      className: a()(N.cardTextContainer, N.cardHeader),
       variant: "text-sm/normal",
-      children: a
+      children: o
     }), s ? (0, r.jsx)(u.dz2, {
       size: "md",
       color: "currentColor",
-      className: o()(N.checkmark, {
+      className: a()(N.checkmark, {
         [N.animate]: d
       })
     }) : (0, r.jsx)(x.Z, {
@@ -105,26 +105,26 @@ function w(e) {
 function R(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && E.default.extractTimestamp(l.id) < Date.now() - S._8R, x = (0, s.e7)([_.default], () => (null == l ? void 0 : l.ownerId) === _.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && E.default.extractTimestamp(l.id) < Date.now() - I._8R, x = (0, s.e7)([_.default], () => (null == l ? void 0 : l.ownerId) === _.default.getId(), [l]), {
     canInvite: R,
     canManageGuild: k,
     canMessage: M
-  } = (0, f.TE)(t, l), D = (0, s.e7)([C.default], () => {
+  } = (0, f.TE)(t, l), L = (0, s.e7)([C.default], () => {
     var e, t;
     return (null == (e = C.default.getCurrentUser()) ? void 0 : e.desktop) === !0 || (null == (t = C.default.getCurrentUser()) ? void 0 : t.mobile) === !0
   }), {
-    guildPopulated: L,
+    guildPopulated: D,
     guildMessaged: U,
     guildPersonalized: B
   } = (0, f.h_)(l), {
     handleInvite: F,
-    handleMessage: G,
-    handlePersonalize: H,
+    handleMessage: H,
+    handlePersonalize: G,
     handleDownload: V,
     handleAddApplication: z
   } = function(e) {
     let t = i.useCallback(() => {
-        h.ZP.trackWithMetadata(S.rMx.SERVER_SETUP_CTA_CLICKED, {
+        h.ZP.trackWithMetadata(I.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: P.Ft.CHANNEL_WELCOME,
           action: P.j7.INVITE
         }), null != e && (0, u.ZDy)(async () => {
@@ -133,36 +133,36 @@ function R(e) {
           } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
           return n => (0, r.jsx)(t, A(T({}, n), {
             guild: e,
-            source: S.t4x.CHANNEL_WELCOME,
+            source: I.t4x.CHANNEL_WELCOME,
             analyticsLocation: {
-              section: S.jXE.CHANNEL_WELCOME_CTA
+              section: I.jXE.CHANNEL_WELCOME_CTA
             }
           }))
         })
       }, [e]),
       l = i.useCallback(() => {
-        h.ZP.trackWithMetadata(S.rMx.SERVER_SETUP_CTA_CLICKED, {
+        h.ZP.trackWithMetadata(I.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: P.Ft.CHANNEL_WELCOME,
           action: P.j7.SEND_MESSAGE
-        }), v.S.dispatch(S.CkL.TEXTAREA_FOCUS, {
+        }), v.S.dispatch(I.CkL.TEXTAREA_FOCUS, {
           highlight: !0,
-          channelId: S.lds
+          channelId: I.lds
         })
       }, []),
-      o = i.useCallback(() => {
-        h.ZP.trackWithMetadata(S.rMx.SERVER_SETUP_CTA_CLICKED, {
+      a = i.useCallback(() => {
+        h.ZP.trackWithMetadata(I.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: P.Ft.CHANNEL_WELCOME,
           action: P.j7.PERSONALIZE_SERVER
         }), null != e && m.Z.open(e.id, (0, b.r)(), {
-          section: S.jXE.CHANNEL_WELCOME_CTA
+          section: I.jXE.CHANNEL_WELCOME_CTA
         })
       }, [e]);
     return {
       handleInvite: t,
       handleMessage: l,
-      handlePersonalize: o,
+      handlePersonalize: a,
       handleDownload: i.useCallback(() => {
-        h.ZP.trackWithMetadata(S.rMx.SERVER_SETUP_CTA_CLICKED, {
+        h.ZP.trackWithMetadata(I.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: P.Ft.CHANNEL_WELCOME,
           action: P.j7.DOWNLOAD
         }), (0, u.ZDy)(async () => {
@@ -170,12 +170,12 @@ function R(e) {
             default: e
           } = await Promise.resolve().then(n.bind(n, 431583));
           return t => (0, r.jsx)(e, T({
-            source: S.jXE.CHANNEL_WELCOME_CTA
+            source: I.jXE.CHANNEL_WELCOME_CTA
           }, t))
         })
       }, []),
       handleAddApplication: i.useCallback(() => {
-        null != e && (h.ZP.trackWithMetadata(S.rMx.SERVER_SETUP_CTA_CLICKED, {
+        null != e && (h.ZP.trackWithMetadata(I.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: P.Ft.CHANNEL_WELCOME,
           action: P.j7.ADD_APP
         }), (0, u.ZDy)(async () => {
@@ -193,30 +193,30 @@ function R(e) {
         }))
       }, [e])
     }
-  }(l), W = !(D || L || U || B), {
+  }(l), W = !(L || D || U || B), {
     titleAnimatedStyle: Y,
     opacities: q
   } = function(e) {
-    let t = (0, d.Z)(() => new a.Z.Value(0)),
-      n = (0, d.Z)(() => new a.Z.Value(0)),
-      r = (0, d.Z)(() => [new a.Z.Value(0), new a.Z.Value(0), new a.Z.Value(0), new a.Z.Value(0)]);
+    let t = (0, d.Z)(() => new o.Z.Value(0)),
+      n = (0, d.Z)(() => new o.Z.Value(0)),
+      r = (0, d.Z)(() => [new o.Z.Value(0), new o.Z.Value(0), new o.Z.Value(0), new o.Z.Value(0)]);
     return i.useEffect(() => {
-      a.Z.stagger(300, [a.Z.parallel([a.Z.timing(n, {
+      o.Z.stagger(300, [o.Z.parallel([o.Z.timing(n, {
         toValue: 1,
         duration: 450
-      }), a.Z.timing(t, {
+      }), o.Z.timing(t, {
         toValue: 1,
         duration: 450
-      })]), a.Z.stagger(100, [a.Z.timing(r[0], {
+      })]), o.Z.stagger(100, [o.Z.timing(r[0], {
         toValue: 1,
         duration: 300
-      }), a.Z.timing(r[1], {
+      }), o.Z.timing(r[1], {
         toValue: 1,
         duration: 300
-      }), a.Z.timing(r[2], {
+      }), o.Z.timing(r[2], {
         toValue: 1,
         duration: 300
-      }), a.Z.timing(r[3], {
+      }), o.Z.timing(r[3], {
         toValue: 1,
         duration: 300
       })])]).start()
@@ -237,13 +237,13 @@ function R(e) {
       (async () => {
         try {
           var e;
-          let t = await (0, g.i)(null != (e = null == l ? void 0 : l.id) ? e : S.lds);
+          let t = await (0, g.i)(null != (e = null == l ? void 0 : l.id) ? e : I.lds);
           X(t.map(e => e.id))
         } catch (e) {}
       })()
     }, [null == l ? void 0 : l.id]), null == l) return null;
   let J = [];
-  p || (R && J.push((0, r.jsx)(a.Z.div, {
+  p || (R && J.push((0, r.jsx)(o.Z.div, {
     className: N.cardWrapper,
     style: W ? {
       opacity: q[J.length]
@@ -251,10 +251,10 @@ function R(e) {
     children: (0, r.jsx)(w, {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0TU),
-      completed: L,
+      completed: D,
       onClick: F
     })
-  }, "invite")), k && J.push((0, r.jsx)(a.Z.div, {
+  }, "invite")), k && J.push((0, r.jsx)(o.Z.div, {
     className: N.cardWrapper,
     style: W ? {
       opacity: q[J.length]
@@ -263,9 +263,9 @@ function R(e) {
       iconUrl: u.$_T,
       header: Z.intl.string(Z.t.c5kxPj),
       completed: B,
-      onClick: H
+      onClick: G
     })
-  }, "customize")), M && J.push((0, r.jsx)(a.Z.div, {
+  }, "customize")), M && J.push((0, r.jsx)(o.Z.div, {
     className: N.cardWrapper,
     style: W ? {
       opacity: q[J.length]
@@ -274,9 +274,9 @@ function R(e) {
       iconUrl: u.qMX,
       header: Z.intl.string(Z.t["SoP7+v"]),
       completed: U,
-      onClick: G
+      onClick: H
     })
-  }, "message")), (0, O.isWeb)() && J.push((0, r.jsx)(a.Z.div, {
+  }, "message")), (0, O.isWeb)() && J.push((0, r.jsx)(o.Z.div, {
     className: N.cardWrapper,
     style: W ? {
       opacity: q[J.length]
@@ -284,10 +284,10 @@ function R(e) {
     children: (0, r.jsx)(w, {
       iconUrl: u.yIb,
       header: Z.intl.string(Z.t.pGVNIy),
-      completed: D,
+      completed: L,
       onClick: V
     })
-  }, "download")), J.push((0, r.jsx)(a.Z.div, {
+  }, "download")), J.push((0, r.jsx)(o.Z.div, {
     className: N.cardWrapper,
     style: W ? {
       opacity: q[J.length]
@@ -301,14 +301,14 @@ function R(e) {
   }, "addapp")));
   let $ = x ? Z.intl.string(Z.t["1ach9P"]) : Z.intl.string(Z.t["ezm+/v"]);
   p && ($ = Z.intl.string(Z.t["gwyU/P"]));
-  let ee = "".concat(j.Z.getArticleURL(S.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
-  return (0, r.jsx)(I.ZP, {
+  let ee = "".concat(j.Z.getArticleURL(I.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
+  return (0, r.jsx)(S.ZP, {
     channelId: t.id,
     children: (0, r.jsx)("div", {
       className: N.container,
       children: (0, r.jsxs)("div", {
         className: N.inner,
-        children: [(0, r.jsxs)(a.Z.div, {
+        children: [(0, r.jsxs)(o.Z.div, {
           style: Y,
           children: [(0, r.jsx)(u.X6q, {
             className: N.titleName,
@@ -318,7 +318,7 @@ function R(e) {
             })
           }), (0, r.jsxs)(u.Text, {
             color: "header-secondary",
-            className: o()({
+            className: a()({
               [N.subtitle]: !0,
               [N.noChildren]: 0 === J.length
             }),

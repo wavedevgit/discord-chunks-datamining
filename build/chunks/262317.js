@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  o = n(481060),
   s = n(475179),
   c = n(239091),
   u = n(287734),
@@ -27,8 +27,8 @@ var r = n(255367),
   j = n(314897),
   O = n(430824),
   E = n(496675),
-  I = n(594174),
-  S = n(979651),
+  S = n(594174),
+  I = n(979651),
   P = n(927923),
   Z = n(70722),
   N = n(388032),
@@ -72,7 +72,7 @@ function R(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: T.moreContainer,
-    children: (0, r.jsxs)(a.Text, {
+    children: (0, r.jsxs)(o.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
       children: ["+", t]
@@ -88,17 +88,17 @@ function k(e) {
     count: t
   });
   return (0, r.jsxs)("div", {
-    className: o()(T.audienceContainer, {
+    className: a()(T.audienceContainer, {
       [T.audienceContainerCollapsed]: n
     }),
     children: [(0, r.jsx)("div", {
       className: T.audienceIconContainer,
-      children: (0, r.jsx)(a.VWR, {
+      children: (0, r.jsx)(o.VWR, {
         size: "md",
         color: "currentColor",
         className: T.audienceIcon
       })
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
       children: i
@@ -113,13 +113,13 @@ let M = (0, p.$)(function(e) {
     channel: R,
     mute: k,
     localMute: M,
-    localVideoDisabled: D,
-    deaf: L,
+    localVideoDisabled: L,
+    deaf: D,
     video: U,
     embeddedApplication: B,
     serverMute: F,
-    serverDeaf: G,
-    nick: H,
+    serverDeaf: H,
+    nick: G,
     ringing: V,
     speaking: z,
     disconnected: W,
@@ -136,15 +136,15 @@ let M = (0, p.$)(function(e) {
     otherClientSessionType: er,
     voicePlatform: ei,
     isSelfOnOtherClient: el = !1,
-    tabIndex: eo,
-    location: ea,
+    tabIndex: ea,
+    location: eo,
     isSelf: es,
     application: ec
   } = e, eu = i.useRef(null), [ed, ep] = i.useState(!1), eh = () => {
     ep(!ed)
   }, ef = () => {
     K && (null == ee || ee(p.id))
-  }, em = () => K && (0, _.p9)(R, S.Z, O.Z, E.Z, m.Z)[0], eg = () => {
+  }, em = () => K && (0, _.p9)(R, I.Z, O.Z, E.Z, m.Z)[0], eg = () => {
     if (!em()) return;
     let e = {
       streamType: Z.lo.GUILD,
@@ -174,7 +174,7 @@ let M = (0, p.$)(function(e) {
     channel: R,
     onWatch: eg,
     previewIsOpen: en,
-    location: ea
+    location: eo
   }), ey = e => {
     let t = P.al.has(null != er ? er : ""),
       n = {
@@ -183,23 +183,23 @@ let M = (0, p.$)(function(e) {
         disconnected: W,
         mute: k,
         localMute: M,
-        localVideoDisabled: D,
+        localVideoDisabled: L,
         isStreaming: K,
         isGuest: Q,
         video: U,
         priority: J,
         ringing: V,
-        deaf: L,
-        nick: H,
+        deaf: D,
+        nick: G,
         collapsed: l,
         overlap: l,
         serverMute: F,
-        serverDeaf: G,
-        tabIndex: eo,
+        serverDeaf: H,
+        tabIndex: ea,
         otherClientSessionType: er,
         voicePlatform: ei,
         embeddedApplication: B,
-        avatarContainerClass: o()({
+        avatarContainerClass: a()({
           [T.userAvatar]: !0
         }),
         disabled: el && !t,
@@ -214,7 +214,7 @@ let M = (0, p.$)(function(e) {
       };
     if (el) {
       var i;
-      return (0, r.jsx)(a.ua7, {
+      return (0, r.jsx)(o.ua7, {
         text: null != (i = (0, g.Z)(er)) ? i : N.intl.string(N.t.IyYqqa),
         children: e => {
           var {
@@ -241,7 +241,7 @@ let M = (0, p.$)(function(e) {
         }
       })
     }
-    return (0, r.jsx)(a.yRy, {
+    return (0, r.jsx)(o.yRy, {
       targetElementRef: eu,
       position: "right",
       renderPopout: e_,
@@ -262,7 +262,7 @@ let M = (0, p.$)(function(e) {
     },
     onMouseLeave: el ? void 0 : ef,
     children: (0, r.jsx)(x.Z, {
-      clickTrap: (null == p ? void 0 : p.id) === (null == (t = I.default.getCurrentUser()) ? void 0 : t.id) && ed,
+      clickTrap: (null == p ? void 0 : p.id) === (null == (t = S.default.getCurrentUser()) ? void 0 : t.id) && ed,
       targetElementRef: eu,
       user: p,
       guildId: R.guild_id,

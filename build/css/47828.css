@@ -1,0 +1,179 @@
+/**
+  Module ID: 47828
+  Original File Name: ffc864c2667027e5
+**/
+.buttonsContainer_a8b931 {
+    display: flex;
+    gap: var(--space-8);
+    margin-bottom: var(--space-24)
+}
+
+.container__8a969 {
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-sm);
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 12px
+}
+
+.container__8a969,.iconContainer__8a969 {
+    align-items: center;
+    display: flex;
+    position: relative
+}
+
+.iconContainer__8a969 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 40px;
+    justify-content: center;
+    margin-right: 12px;
+    width: 40px
+}
+
+.actionable__8a969 {
+    cursor: pointer
+}
+
+.name__8a969 {
+    color: var(--header-primary);
+    font-size: 16px;
+    font-weight: var(--font-weight-bold);
+    line-height: 20px
+}
+
+.description__8a969 {
+    color: var(--header-secondary);
+    font-size: 12px;
+    font-weight: var(--font-weight-medium);
+    line-height: 16px
+}
+
+.flair__8a969 {
+    bottom: -16px;
+    left: calc(50% - 24px);
+    position: absolute
+}
+
+.container__394db {
+    align-items: center;
+    display: block;
+    flex: 1 1 auto;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap
+}
+
+.container__394db .chipletContainer__394db {
+    display: inline-block;
+    overflow: hidden
+}
+
+.container__394db .chipletParent__394db {
+    display: inline;
+    overflow: hidden;
+    padding-left: 4px;
+    position: relative
+}
+
+.container__394db .usernameContainer__394db {
+    display: inline-block;
+    flex: 1;
+    margin-top: 2px;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.container__394db.isOverlayContainer__394db {
+    align-content: center;
+    background: var(--background-base-low);
+    border-radius: 4px;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    height: 20px
+}
+
+.container__394db.isOverlayContainer__394db .usernameContainer__394db {
+    margin-top: 0
+}
+
+.container__394db.isOverlayContainer__394db .chipletContainer__394db,.container__394db.isOverlayContainer__394db .chipletParent__394db {
+    align-content: center;
+    align-items: center;
+    display: flex
+}
+
+.container__394db.isOverlayContainer__394db .chipletContainer__394db {
+    margin: 0;
+    padding: 1.5px
+}
+
+.container__394db.isOverlayContainer__394db .chipletContainer__394db.noPadding__394db {
+    padding: 0
+}
+
+.isOverlayTag__394db {
+    margin: 0
+}
+
+.upsellFooter__5e07c {
+    align-items: center;
+    background-color: var(--background-base-lower);
+    border-radius: 8px;
+    color: var(--text-default);
+    display: flex;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 16px;
+    padding: 8px
+}
+
+.upsellFooterIcon__5e07c {
+    flex-shrink: 0;
+    height: 24px;
+    margin-right: 8px;
+    width: 24px
+}
+
+.reverseTrialUpsellContainer__5e07c {
+    border-radius: 4px;
+    box-shadow: 0 0 40px 0 rgba(229,85,211,.5);
+    position: relative
+}
+
+.unlockIcon__5e07c {
+    height: 46px;
+    left: 7px;
+    pointer-events: none;
+    position: absolute;
+    top: -14px;
+    width: 46px
+}
+
+.upsellText__5e07c {
+    padding-left: 48px
+}
+
+.settingsItemHighlight__7cd2d {
+    border: 1px solid transparent;
+    border-radius: var(--radius-xs);
+    bottom: -8px;
+    left: -8px;
+    position: absolute;
+    right: -8px;
+    top: -8px
+}
+
+.settingsBackgroundFlashElement__7cd2d {
+    position: relative
+}
+
+.content_eecc8a {
+    padding-bottom: var(--space-16);
+    padding-top: var(--space-16)
+}
+
+/*# sourceMappingURL=ffc864c2667027e5.css.map*/

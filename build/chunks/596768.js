@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => E
+  Z: () => T
 }), n(388685), n(642613);
 var a = n(255367),
   r = n(73800),
@@ -18,13 +18,13 @@ var a = n(255367),
   b = n(120816),
   f = n(31336),
   v = n(257785),
-  _ = n(484036),
+  j = n(484036),
   g = n(681619),
-  j = n(621060),
+  _ = n(621060),
   y = n(388032),
   C = n(459100),
-  N = n(616257);
-let O = [{
+  O = n(616257);
+let N = [{
     key: "id",
     cellClassName: C.eventColumn,
     render(e) {
@@ -52,10 +52,10 @@ let O = [{
       return t.toLocaleString()
     }
   }],
-  T = [{
+  E = [{
     id: "details",
     name: "Details",
-    group: j.v0.NONE,
+    group: _.v0.NONE,
     render: e => {
       let {
         loggedTrigger: {
@@ -70,7 +70,7 @@ let O = [{
       } = e, u = d()(s);
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)(h.ZP, {
-          className: i()(N.headerBar, C.subPanelHeaderBar),
+          className: i()(O.headerBar, C.subPanelHeaderBar),
           children: [(0, a.jsx)(h.ZP.Icon, {
             icon: m.IeX,
             tooltip: t
@@ -132,13 +132,13 @@ let O = [{
     }
   }];
 
-function E() {
+function T() {
   let [e, t] = r.useState(""), n = r.useRef(null), l = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), s = r.useMemo(() => l.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = r.useState(void 0), h = s.find(e => e.key === c), {
     TabBar: p,
     renderSelectedTab: v
-  } = (0, j.ZP)({
-    tabs: T
-  }, []), E = (0, u.e7)([b.Z], () => b.Z.trackTriggers), S = r.useCallback(e => {
+  } = (0, _.ZP)({
+    tabs: E
+  }, []), T = (0, u.e7)([b.Z], () => b.Z.trackTriggers), S = r.useCallback(e => {
     x.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
@@ -146,14 +146,14 @@ function E() {
   }, []);
   return (0, a.jsxs)("div", {
     ref: n,
-    className: i()(N.panel, C.panel),
+    className: i()(O.panel, C.panel),
     children: [(0, a.jsxs)("div", {
       className: C.toolbar,
       children: [(0, a.jsx)("div", {
         title: "Enables tracking of all triggers",
         className: C.triggersEnable,
         children: (0, a.jsx)(m.rsf, {
-          checked: E,
+          checked: T,
           onChange: S,
           className: C.__invalid_toolbarSwitch
         })
@@ -178,11 +178,11 @@ function E() {
         placeholder: "Search by experiment id"
       })]
     }), (0, a.jsx)(g.Z, {
-      columns: O,
+      columns: N,
       data: s,
       selectedRowKey: c,
       onClickRow: e => d(e.key)
-    }), null != h && (0, a.jsxs)(_.Z, {
+    }), null != h && (0, a.jsxs)(j.Z, {
       className: C.subPanel,
       minHeight: 100,
       initialHeight: null != n.current ? n.current.clientHeight / 2 : 300,

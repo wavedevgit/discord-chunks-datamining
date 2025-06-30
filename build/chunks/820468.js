@@ -1,4 +1,4 @@
-/** Chunk was on 97870 **/
+/** Chunk was on 68024 **/
 e.exports = {
   hoverCard: "hoverCard__26e8b"
 }

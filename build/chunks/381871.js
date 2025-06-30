@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(392711),
-  o = n(442837),
-  a = n(704215),
+  a = n(442837),
+  o = n(704215),
   s = n(481060),
   c = n(570140),
   u = n(230711),
@@ -25,8 +25,8 @@ var r = n(255367),
   j = n(456631),
   O = n(963838),
   E = n(535879),
-  I = n(310892),
-  S = n(12168),
+  S = n(310892),
+  I = n(12168),
   P = n(353368),
   Z = n(981631),
   N = n(354459),
@@ -36,11 +36,11 @@ var r = n(255367),
   R = n(388032),
   k = n(934680);
 let M = T.Hz.CHAT,
-  D = {
+  L = {
     section: Z.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "voice_channel_effect_emoji_picker"
   },
-  L = [m.ZP.getByName("thumbsup"), m.ZP.getByName("eyes"), m.ZP.getByName("laughing"), m.ZP.getByName("watermelon"), m.ZP.getByName("fork_and_knife"), m.ZP.getByName("yum")].filter(y.lm);
+  D = [m.ZP.getByName("thumbsup"), m.ZP.getByName("eyes"), m.ZP.getByName("laughing"), m.ZP.getByName("watermelon"), m.ZP.getByName("fork_and_knife"), m.ZP.getByName("yum")].filter(y.lm);
 
 function U(e) {
   var t;
@@ -48,7 +48,7 @@ function U(e) {
     channel: n,
     closePopout: m,
     onFocus: y
-  } = e, T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, o.e7)([b.default], () => b.default.getCurrentUser()), B = C.ZP.canUseFancyVoiceChannelReactions(U), F = (0, o.e7)([v.Z], () => v.Z.getState().animationType), G = i.useRef(!1), H = i.useRef(null), V = (0, f.wC)(n.guild_id), z = (0, l.uniqBy)([...V, ...L], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
+  } = e, T = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, a.e7)([b.default], () => b.default.getCurrentUser()), B = C.ZP.canUseFancyVoiceChannelReactions(U), F = (0, a.e7)([v.Z], () => v.Z.getState().animationType), H = i.useRef(!1), G = i.useRef(null), V = (0, f.wC)(n.guild_id), z = (0, l.uniqBy)([...V, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: n,
     intention: M
@@ -69,7 +69,7 @@ function U(e) {
       })
     },
     K = () => {
-      (0, I.h)({
+      (0, S.h)({
         analytics: {
           type: A.cd.EMOJI_PICKER_EMOJI_CLICKED,
           object: Z.qAy.BUTTON_CTA,
@@ -78,7 +78,7 @@ function U(e) {
       })
     },
     X = e => {
-      G.current = e, e && p.ZP.trackWithMetadata(Z.rMx.VOICE_CHANNEL_EFFECT_EMOJI_PICKER_EXPANDED, {
+      H.current = e, e && p.ZP.trackWithMetadata(Z.rMx.VOICE_CHANNEL_EFFECT_EMOJI_PICKER_EXPANDED, {
         channel_id: Q,
         guild_id: J
       })
@@ -93,7 +93,7 @@ function U(e) {
       guild_id: J
     })
   }, [Q, J]);
-  let $ = T ? [a.z.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP] : [],
+  let $ = T ? [o.z.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP] : [],
     ee = F === P.q.PREMIUM;
   return (0, r.jsx)(h.ZP, {
     contentTypes: $,
@@ -101,9 +101,9 @@ function U(e) {
       let {
         visibleContent: t,
         markAsDismissed: i
-      } = e, l = T && t === a.z.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP;
+      } = e, l = T && t === o.z.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP;
       return (0, r.jsx)(s.yRy, {
-        targetElementRef: H,
+        targetElementRef: G,
         position: "left",
         "aria-label": R.intl.string(R.t.RLHsHx),
         shouldShow: l,
@@ -124,8 +124,8 @@ function U(e) {
             caretPosition: g.DF.RIGHT_CENTER
           })
         }),
-        children: () => (0, r.jsx)(S.Z, {
-          ref: H,
+        children: () => (0, r.jsx)(I.Z, {
+          ref: G,
           title: R.intl.string(R.t.Nn8lPz),
           channel: n,
           closePopout: m,
@@ -133,7 +133,7 @@ function U(e) {
           onSelectDisabledEmoji: K,
           onFocus: y,
           onExpandedToggle: X,
-          analyticsOverride: D,
+          analyticsOverride: L,
           emojiSearchProps: {
             accessory: (0, r.jsx)(E.Z, {
               labelText: R.intl.string(R.t["ktEv/v"]),
@@ -147,11 +147,11 @@ function U(e) {
                   type: "VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE"
                 })
               },
-              onShowUpsell: () => (0, I.h)({
+              onShowUpsell: () => (0, S.h)({
                 analytics: {
-                  type: G.current ? A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED : A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED,
+                  type: H.current ? A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED : A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED,
                   object: Z.qAy.VOICE_CHANNEL_EFFECTS_TOGGLE,
-                  section: G.current ? Z.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER : Z.jXE.VOICE_CHANNEL_EFFECTS_BAR
+                  section: H.current ? Z.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER : Z.jXE.VOICE_CHANNEL_EFFECTS_BAR
                 }
               })
             })

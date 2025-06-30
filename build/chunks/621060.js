@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  ZP: () => _,
+  ZP: () => j,
   v0: () => p
 }), n(388685), n(539854), n(642613);
 var a, r = n(255367),
@@ -41,17 +41,17 @@ function v(e) {
     onSelectTab: a
   } = e, i = l.useRef(new Map), [s, p] = l.useState(() => new Set), {
     ref: v,
-    width: _
+    width: j
   } = (0, d.ZP)(), g = l.useRef(null);
   l.useEffect(() => {
     var e, a, r, l;
-    if (null == _) return;
+    if (null == j) return;
     let s = new Set,
-      o = null != _ ? _ : 0;
+      o = null != j ? j : 0;
     for (let c of (o -= null != (a = null == (e = i.current.get(n)) ? void 0 : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (l = null == (r = i.current.get(c.id)) ? void 0 : r.getBoundingClientRect().width) ? l : 0) < 0 && s.add(c.id);
     p(s)
-  }, [t, _, v, n]);
-  let j = l.useCallback(e => {
+  }, [t, j, v, n]);
+  let _ = l.useCallback(e => {
     var n, l, i;
     let {
       closePopout: s
@@ -132,7 +132,7 @@ function v(e) {
       children: s.size > 0 && (0, r.jsx)(c.yRy, {
         targetElementRef: g,
         layerContext: x.O$,
-        renderPopout: j,
+        renderPopout: _,
         position: "bottom",
         align: "right",
         spacing: 0,
@@ -181,7 +181,7 @@ function v(e) {
   })
 }
 
-function _(e, t) {
+function j(e, t) {
   var n, a, i;
   let {
     tabs: s,

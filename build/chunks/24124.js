@@ -1,7 +1,7 @@
-/** Chunk was on 94357 **/
+/** Chunk was on 83976 **/
 n.d(t, {
   GG: () => a,
-  R2: () => u,
+  R2: () => o,
   h7: () => l,
   rh: () => i
 });
@@ -35,7 +35,7 @@ function a(e) {
   })
 }
 
-function u(e) {
+function o(e) {
   r.Z.dispatch({
     type: "ACTIVITY_INVITE_MODAL_SEND",
     userId: e

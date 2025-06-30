@@ -1,4 +1,4 @@
-/** Chunk was on 97870 **/
+/** Chunk was on 93955 **/
 n.d(t, {
   Z: () => d
 }), n(388685);
@@ -8,28 +8,28 @@ var r = n(866442),
   i = n(442837),
   o = n(692547),
   c = n(481060),
-  l = n(607070),
-  s = n(297700),
+  s = n(607070),
+  l = n(297700),
   u = n(388032);
 
 function d(e) {
   let t, {
       color: n,
       size: d,
-      forcedIconColor: _,
-      className: p,
-      iconClassName: m,
+      forcedIconColor: p,
+      className: _,
+      iconClassName: g,
       tooltipText: f
     } = e,
-    [g, b] = (0, i.Wu)([l.Z], () => [l.Z.desaturateUserColors, l.Z.saturation]),
-    I = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_300).hex(),
-    T = (0, r._i)(null != n ? n : I),
-    C = (0, r.ho)(T, !1, g ? b : null);
-  return t = null != _ ? _ : .3 > (0, r.Bd)(T) ? o.Z.unsafe_rawColors.PRIMARY_630.css : o.Z.unsafe_rawColors.WHITE_500.css, (0, a.jsx)(c.ua7, {
+    [m, b] = (0, i.Wu)([s.Z], () => [s.Z.desaturateUserColors, s.Z.saturation]),
+    y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_300).hex(),
+    h = (0, r._i)(null != n ? n : y),
+    I = (0, r.ho)(h, !1, m ? b : null);
+  return t = null != p ? p : .3 > (0, r.Bd)(h) ? o.Z.unsafe_rawColors.PRIMARY_630.css : o.Z.unsafe_rawColors.WHITE_500.css, (0, a.jsx)(c.ua7, {
     text: null != f ? f : u.intl.string(u.t.T3PvV1),
     children: e => {
       var n, r;
-      return (0, a.jsx)(s.Z, (n = function(e) {
+      return (0, a.jsx)(l.Z, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(n);
@@ -47,15 +47,15 @@ function d(e) {
         }
         return e
       }({}, e), r = r = {
-        className: p,
-        color: C,
+        className: _,
+        color: I,
         size: d,
         children: (0, a.jsx)(c.kmB, {
           size: "custom",
           color: t,
           height: d,
           width: d,
-          className: m
+          className: g
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);

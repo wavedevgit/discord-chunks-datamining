@@ -1,4 +1,4 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 81872 **/
 n.d(t, {
   Z: () => u
 });
@@ -6,37 +6,37 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  a = n(846027),
-  o = n(72897),
+  o = n(846027),
+  a = n(72897),
   s = n(131951),
   c = n(388032);
 
 function u(e) {
   var t;
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-    u = (0, o.rB)({
+    u = (0, a.rB)({
       location: "useOutputAudioDeviceItems"
     }),
     d = (0, i.e7)([s.Z], s.Z.getOutputDeviceId),
-    f = null == (t = u.find(e => {
+    p = null == (t = u.find(e => {
       let {
         id: t
       } = e;
       return t === d
     })) ? void 0 : t.name,
-    p = u.map(t => {
+    f = u.map(t => {
       let {
         id: n,
         disabled: i,
-        name: o
+        name: a
       } = t;
       return (0, r.jsx)(l.k5B, {
         group: "output-devices",
         id: "output-".concat(n),
         disabled: i,
-        label: o,
+        label: a,
         checked: n === d,
-        action: () => a.Z.setOutputDevice(n, {
+        action: () => o.Z.setOutputDevice(n, {
           analyticsLocations: e
         })
       }, "output-".concat(n))
@@ -44,10 +44,10 @@ function u(e) {
   return n ? (0, r.jsx)(l.sNh, {
     id: "output-devices",
     label: c.intl.string(c.t["6Ww0iI"]),
-    subtext: f,
-    children: p
+    subtext: p,
+    children: f
   }) : (0, r.jsx)(l.kSQ, {
     label: c.intl.string(c.t["6Ww0iI"]),
-    children: p
+    children: f
   })
 }

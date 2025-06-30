@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(913527),
   o = n.n(l),
-  s = n(442837),
-  a = n(481060),
+  a = n(442837),
+  s = n(481060),
   c = n(727637),
   u = n(782568),
   d = n(317632),
@@ -21,7 +21,7 @@ function b(e) {
   let {
     invite: t,
     expired: n
-  } = e, l = (0, s.e7)([p.default], () => {
+  } = e, l = (0, a.e7)([p.default], () => {
     var e, n;
     return null != (n = null == (e = p.default.getUser(t.inviter_id)) ? void 0 : e.username) ? n : ""
   }), u = (0, f.vc)(o()(t.created_at), "LT"), d = i.useRef(null), b = (0, c.Z)(d);
@@ -36,7 +36,7 @@ function b(e) {
         className: m.inviteImage,
         src: t.application_asset,
         alt: "Game Invite"
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(s.Text, {
         className: m.title,
         variant: "text-md/semibold",
         color: "interactive-active",
@@ -49,11 +49,11 @@ function b(e) {
           expired: n,
           invite: t,
           isHoveringInvite: b
-        }), (0, r.jsx)(a.M0o, {
+        }), (0, r.jsx)(s.M0o, {
           className: m.deleteButton,
           tooltip: g.intl.string(g.t.oyYWHB),
-          color: a.YX$.SECONDARY,
-          icon: (0, r.jsx)(a.XHJ, {
+          color: s.YX$.SECONDARY,
+          icon: (0, r.jsx)(s.XHJ, {
             size: "xs"
           }),
           onClick: () => {
@@ -65,14 +65,14 @@ function b(e) {
       className: m.divider
     }), (0, r.jsxs)("div", {
       className: m.secondaryRow,
-      children: [(0, r.jsxs)(a.Text, {
+      children: [(0, r.jsxs)(s.Text, {
         variant: "text-xs/medium",
         className: m.subtitle,
         color: "text-muted",
         children: [t.application_name, " \xb7 ", u]
       }), n && (0, r.jsx)("div", {
         className: m.metaContainer,
-        children: (0, r.jsx)(a.Text, {
+        children: (0, r.jsx)(s.Text, {
           variant: "text-xxs/semibold",
           className: m.__invalid_metaText,
           color: "text-muted",
@@ -88,7 +88,7 @@ function _(e) {
     expired: t,
     invite: n,
     isHoveringInvite: l
-  } = e, o = (0, s.e7)([d.Z], () => d.Z.isInviteGameInstalled(n)), c = (0, s.e7)([d.Z], () => d.Z.isInviteJoinable(n)), [p, f] = i.useState(!1), b = i.useCallback(async () => {
+  } = e, o = (0, a.e7)([d.Z], () => d.Z.isInviteGameInstalled(n)), c = (0, a.e7)([d.Z], () => d.Z.isInviteJoinable(n)), [p, f] = i.useState(!1), b = i.useCallback(async () => {
     f(!0);
     try {
       await (0, h.MH)(n)
@@ -102,36 +102,36 @@ function _(e) {
     f(!1)
   }, [n]);
   if (t)
-    if (o && l) return (0, r.jsx)(a.zxk, {
+    if (o && l) return (0, r.jsx)(s.zxk, {
       className: m.primaryButton,
-      color: a.Ttl.TRANSPARENT,
+      color: s.Ttl.TRANSPARENT,
       disabled: p,
-      size: a.PhG.SMALL,
+      size: s.PhG.SMALL,
       onClick: b,
       children: g.intl.string(g.t["s+J8Dg"])
     });
     else return null;
-  return o && c ? (0, r.jsx)(a.zxk, {
+  return o && c ? (0, r.jsx)(s.zxk, {
     className: m.primaryButton,
-    color: a.Ttl.GREEN,
+    color: s.Ttl.GREEN,
     disabled: p,
-    size: a.PhG.SMALL,
+    size: s.PhG.SMALL,
     onClick: _,
     children: g.intl.string(g.t["/loN9/"])
-  }) : null != n.fallback_url ? (0, r.jsx)(a.zxk, {
+  }) : null != n.fallback_url ? (0, r.jsx)(s.zxk, {
     className: m.primaryButton,
     disabled: p,
-    size: a.PhG.SMALL,
-    color: a.Ttl.TRANSPARENT,
+    size: s.PhG.SMALL,
+    color: s.Ttl.TRANSPARENT,
     onClick: () => (0, u.Z)(n.fallback_url),
     children: g.intl.string(g.t["27y8KC"])
-  }) : (0, r.jsx)(a.ua7, {
+  }) : (0, r.jsx)(s.ua7, {
     text: g.intl.formatToPlainString(g.t.issFLC, {
       gameTitle: n.application_name
     }),
     children: e => {
       var t, i;
-      return (0, r.jsx)(a.zxk, (t = function(e) {
+      return (0, r.jsx)(s.zxk, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -151,19 +151,19 @@ function _(e) {
       }({}, e), i = i = {
         className: m.primaryButton,
         disabled: !0,
-        size: a.PhG.SMALL,
-        color: a.Ttl.TRANSPARENT,
+        size: s.PhG.SMALL,
+        color: s.Ttl.TRANSPARENT,
         onClick: () => (0, u.Z)(n.fallback_url),
         children: (0, r.jsxs)("div", {
           className: m.launchToJoinContainer,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(s.Text, {
             variant: "text-xxs/medium",
             className: m.launchToJoinText,
             color: "text-muted",
             children: g.intl.string(g.t.dai1Oz)
-          }), (0, r.jsx)(a.d3s, {
+          }), (0, r.jsx)(s.d3s, {
             size: "xxs",
-            color: a.TVs.colors.TEXT_MUTED.css
+            color: s.TVs.colors.TEXT_MUTED.css
           })]
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

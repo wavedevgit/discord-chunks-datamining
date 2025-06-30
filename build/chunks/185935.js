@@ -1,6 +1,6 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 36512 **/
 n.d(t, {
-  Z: () => i
+  Z: () => s
 });
 let r = (0, n(818083).B)({
   kind: "user",
@@ -18,6 +18,6 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i(e) {
+function s(e) {
   return r.useExperiment(e)
 }

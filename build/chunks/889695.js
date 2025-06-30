@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => j
 }), n(388685), n(539854);
@@ -14,15 +14,15 @@ var r = n(255367),
   p = n(271383),
   m = n(485386),
   f = n(430824),
-  h = n(594174),
-  g = n(700785),
-  _ = n(709054),
+  g = n(594174),
+  _ = n(700785),
+  h = n(709054),
   b = n(962086),
-  x = n(160404),
+  E = n(160404),
   y = n(225675),
-  E = n(981631),
+  C = n(981631),
   v = n(388032),
-  C = n(318135);
+  x = n(318135);
 
 function O(e) {
   var t;
@@ -37,13 +37,13 @@ function O(e) {
 function j(e) {
   let {
     guildId: t
-  } = e, n = (0, u.e7)([h.default], () => h.default.getCurrentUser()), l = (0, u.e7)([f.Z], () => f.Z.getGuild(t)), o = (0, u.e7)([m.Z], () => m.Z.getRoles(t)), {
+  } = e, n = (0, u.e7)([g.default], () => g.default.getCurrentUser()), l = (0, u.e7)([f.Z], () => f.Z.getGuild(t)), o = (0, u.e7)([m.Z], () => m.Z.getRoles(t)), {
     impersonateType: j,
-    viewingRoles: S
-  } = (0, u.cj)([x.Z], () => ({
-    impersonateType: x.Z.getImpersonateType(t),
-    viewingRoles: x.Z.getViewingRoles(t)
-  })), I = j === y.z.SERVER_SHOP, T = (0, u.e7)([p.ZP], () => null != n ? p.ZP.getTrueMember(t, n.id) : null), [N, P] = (0, d.A7R)(null == S ? [] : _.default.keys(S)), A = i.useRef(l);
+    viewingRoles: I
+  } = (0, u.cj)([E.Z], () => ({
+    impersonateType: E.Z.getImpersonateType(t),
+    viewingRoles: E.Z.getViewingRoles(t)
+  })), S = j === y.z.SERVER_SHOP, T = (0, u.e7)([p.ZP], () => null != n ? p.ZP.getTrueMember(t, n.id) : null), [N, P] = (0, d.A7R)(null == I ? [] : h.default.keys(I)), A = i.useRef(l);
   i.useEffect(() => {
     let e = {},
       t = A.current;
@@ -60,18 +60,18 @@ function j(e) {
   let w = null != l && null != n && null != T ? s()(o).filter(e => -1 !== T.roles.indexOf(e.id)).sortBy(e => -e.position).first() : void 0,
     Z = i.useMemo(() => null != l && null != n ? Object.values(o).filter(e => e.id !== l.id).filter(e => {
       var t;
-      return !I || (null == (t = e.tags) ? void 0 : t.subscription_listing_id) != null
-    }).filter(e => (null == w ? void 0 : w.id) === e.id || g.r6(l, n.id, w, e)) : [], [l, n, I, w, o]);
+      return !S || (null == (t = e.tags) ? void 0 : t.subscription_listing_id) != null
+    }).filter(e => (null == w ? void 0 : w.id) === e.id || _.r6(l, n.id, w, e)) : [], [l, n, S, w, o]);
   if (null == n || null == l || null == T) return null;
   let R = {};
   return (T.roles.forEach(e => {
     let t = o[e];
     null != t && (R[t.id] = t)
-  }), c.e$(g.I0({
+  }), c.e$(_.I0({
     forceRoles: R,
     context: l
-  }), c.$e(E.Plq.MANAGE_GUILD, E.Plq.MANAGE_ROLES)) || l.isOwner(n.id)) ? (0, r.jsx)("div", {
-    className: C.container,
+  }), c.$e(C.Plq.MANAGE_GUILD, C.Plq.MANAGE_ROLES)) || l.isOwner(n.id)) ? (0, r.jsx)("div", {
+    className: x.container,
     children: (0, r.jsx)(d.hQY, {
       placeholder: v.intl.string(v.t.Sojqsr),
       value: N,

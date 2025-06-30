@@ -1,29 +1,29 @@
 /** Chunk was on 74891 **/
-n.d(t, {
+n.d(e, {
   Z: () => a
 });
-var r = n(255367);
+var i = n(255367);
 n(73800);
-var l = n(794295),
-  i = n(388032),
+var r = n(794295),
+  l = n(388032),
   o = n(71851);
 
-function a(e) {
+function a(t) {
   let {
-    termsOfServiceUrl: t,
+    termsOfServiceUrl: e,
     privacyPolicyUrl: n
-  } = e;
-  return null == t && null == n ? null : (0, r.jsxs)("span", {
+  } = t;
+  return null == e && null == n ? null : (0, i.jsxs)("span", {
     className: o.text,
-    children: [null != t && (0, r.jsx)(l.Z, {
-      href: t,
-      children: i.intl.string(i.t["8S0kcH"])
-    }), null != t && null != n && (0, r.jsx)("span", {
+    children: [null != e && (0, i.jsx)(r.Z, {
+      href: e,
+      children: l.intl.string(l.t["8S0kcH"])
+    }), null != e && null != n && (0, i.jsx)("span", {
       "aria-disabled": "true",
       children: "•"
-    }), null != n && (0, r.jsx)(l.Z, {
+    }), null != n && (0, i.jsx)(r.Z, {
       href: n,
-      children: i.intl.string(i.t.ZpyeCg)
+      children: l.intl.string(l.t.ZpyeCg)
     })]
   })
 }

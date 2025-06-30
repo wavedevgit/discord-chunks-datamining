@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => K
 }), n(388685);
@@ -14,19 +14,19 @@ var r = n(255367),
   p = n(568836),
   m = n(730749),
   f = n(112724),
-  h = n(607070),
-  g = n(884697),
-  _ = n(600164),
+  g = n(607070),
+  _ = n(884697),
+  h = n(600164),
   b = n(479446),
-  x = n(930114),
+  E = n(930114),
   y = n(981632),
-  E = n(108989),
+  C = n(108989),
   v = n(703656),
-  C = n(314897),
+  x = n(314897),
   O = n(82142),
   j = n(283595),
-  S = n(594174),
-  I = n(509545),
+  I = n(594174),
+  S = n(509545),
   T = n(55563),
   N = n(199480),
   P = n(626135),
@@ -142,18 +142,18 @@ class z extends i.Component {
     let {
       libraryApplication: t
     } = this.props;
-    return (0, r.jsxs)(_.Z, {
-      justify: _.Z.Justify.BETWEEN,
-      children: [(0, r.jsxs)(_.Z, {
+    return (0, r.jsxs)(h.Z, {
+      justify: h.Z.Justify.BETWEEN,
+      children: [(0, r.jsxs)(h.Z, {
         children: [this.renderButton(e), null == t || e.isSubscription ? null : (0, r.jsx)(H, {
           onClick: this.handleViewLibrary,
           libraryApplication: t
         })]
-      }), (0, r.jsxs)(_.Z, {
-        align: _.Z.Align.END,
-        justify: _.Z.Justify.END,
+      }), (0, r.jsxs)(h.Z, {
+        align: h.Z.Align.END,
+        justify: h.Z.Justify.END,
         className: U.metadata,
-        direction: _.Z.Direction.VERTICAL,
+        direction: h.Z.Direction.VERTICAL,
         children: [e.hasMultipleCopies ? (0, r.jsx)("div", {
           children: this.renderGiftCodeCopiesLeft(e)
         }) : null, e.redeemed || e.isClaimed || null != t || null == e.expiresAt ? null : (0, r.jsx)("div", {
@@ -181,7 +181,7 @@ class z extends i.Component {
       color: u.zxk.Colors.BRAND
     }, a = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, w.I5)(n);
     return (e.redeemed || a || e.isClaimed || !n.verified) && (l.color = u.zxk.Colors.BRAND, l.disabled = !0), (0, r.jsx)(u.zxk, G(B({}, l), {
-      className: (0, g.mO)(e) ? U.collectiblesAcceptButton : null,
+      className: (0, _.mO)(e) ? U.collectiblesAcceptButton : null,
       size: u.zxk.Sizes.SMALL,
       children: e.redeemed ? M.intl.string(M.t.BTihoq) : null != e.giftStyle ? M.intl.string(M.t.TiZFqa) : M.intl.string(M.t.bUvv1d)
     }))
@@ -216,7 +216,7 @@ class z extends i.Component {
     let o = r.isPreorder() ? M.intl.formatToPlainString(M.t.evinTU, {
       name: r.name
     }) : r.name;
-    if (e.redeemed) return e.isSubscription || (0, g.mO)(e) ? M.intl.string(M.t.mVC3Cg) : M.intl.format(M.t["ss/L+/"], {
+    if (e.redeemed) return e.isSubscription || (0, _.mO)(e) ? M.intl.string(M.t.mVC3Cg) : M.intl.format(M.t["ss/L+/"], {
       skuName: o,
       onViewInLibrary: this.handleViewLibrary
     });
@@ -314,7 +314,7 @@ class z extends i.Component {
       else return (0, r.jsx)(p.OR, {
         isHorizontal: n >= p.aL
       });
-    return (0, g.mO)(e) ? (0, r.jsx)("div", {
+    return (0, _.mO)(e) ? (0, r.jsx)("div", {
       className: U.collectiblesEmbedWrapper,
       children: this.renderEmbed()
     }) : this.renderEmbed()
@@ -346,7 +346,7 @@ class z extends i.Component {
         })
       });
       let a = i !== L.uaV.CUSTOM_GIFT ? void 0 : r;
-      (0, x.V)({
+      (0, E.V)({
         processedCode: n,
         channelContext: t,
         customGiftMessage: a,
@@ -381,7 +381,7 @@ class z extends i.Component {
         });
       return (0, r.jsxs)("div", {
         className: l,
-        children: [!t && D.eZ.includes(e.giftStyle) && (0, r.jsx)(E.Z, {
+        children: [!t && D.eZ.includes(e.giftStyle) && (0, r.jsx)(C.Z, {
           className: U.snow,
           wind: 5
         }), i && (0, r.jsx)(N.Z, {
@@ -396,19 +396,19 @@ class z extends i.Component {
   }
 }
 let W = (0, f.Z)((0, m.Z)(z)),
-  K = c.ZP.connectStores([O.Z, T.Z, S.default, j.Z, I.Z, C.default, h.Z], e => {
+  K = c.ZP.connectStores([O.Z, T.Z, I.default, j.Z, S.Z, x.default, g.Z], e => {
     let {
       code: t,
       author: n,
       currentUser: r
-    } = e, i = O.Z.get(t), l = null != i ? T.Z.get(i.skuId) : null, a = null != i && null != i.userId ? S.default.getUser(i.userId) : null, o = h.Z.useReducedMotion;
+    } = e, i = O.Z.get(t), l = null != i ? T.Z.get(i.skuId) : null, a = null != i && null != i.userId ? I.default.getUser(i.userId) : null, o = g.Z.useReducedMotion;
     return {
       sku: l,
       giftCode: i,
       gifter: a,
       currentUser: r,
       subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, Z.oE)(i.subscriptionPlanId) : null,
-      isSelfGift: null != i ? C.default.getId() === i.userId : C.default.getId() === n.id,
+      isSelfGift: null != i ? x.default.getId() === i.userId : x.default.getId() === n.id,
       resolved: O.Z.getIsResolved(t),
       libraryApplication: null != l && (null == i ? void 0 : i.entitlementBranches) != null ? A.z2(i.entitlementBranches, l, j.Z) : null,
       useReducedMotion: o

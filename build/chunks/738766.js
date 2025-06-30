@@ -1,4 +1,4 @@
-/** Chunk was on 19456 **/
+/** Chunk was on 8381 **/
 "use strict";
 
 function n(t) {
@@ -64,7 +64,7 @@ var o, a = r(359282),
     u: "UNDERLINE",
     mark: "HIGHLIGHT"
   }),
-  F = function(t) {
+  N = function(t) {
     var e = {};
     return t.mapKeys(function(t, r) {
       var n = [r.element];
@@ -73,13 +73,13 @@ var o, a = r(359282),
       })
     }), m(e)
   },
-  N = function(t) {
+  F = function(t) {
     var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
     return Object.keys(L).some(function(r) {
       t.classList.contains(r) && (e = L[r])
     }), e
   },
-  P = function(t, e) {
+  z = function(t, e) {
     if (!w(t)) return e;
     var r = t.style.fontWeight,
       n = t.style.fontStyle,
@@ -88,7 +88,7 @@ var o, a = r(359282),
       M.indexOf(r) >= 0 ? t.add("BOLD") : A.indexOf(r) >= 0 && t.remove("BOLD"), "italic" === n ? t.add("ITALIC") : "normal" === n && t.remove("ITALIC"), "underline" === i && t.add("UNDERLINE"), "line-through" === i && t.add("STRIKETHROUGH"), "none" === i && (t.remove("UNDERLINE"), t.remove("STRIKETHROUGH"))
     })
   },
-  z = function(t) {
+  P = function(t) {
     return "ul" === t || "ol" === t
   },
   j = function() {
@@ -125,11 +125,11 @@ var o, a = r(359282),
       for (var r = [], n = 0; n < t.length; n++) {
         var i = t[n],
           o = i.nodeName.toLowerCase();
-        if ("body" === o || z(o)) {
+        if ("body" === o || P(o)) {
           this._trimCurrentText(), "" !== this.currentText && r.push(this._makeBlockConfig());
           var a = this.currentDepth,
             u = this.wrapper;
-          z(o) && (this.wrapper = o, z(u) && this.currentDepth++), r.push.apply(r, this._toBlockConfigs(Array.from(i.childNodes), e)), this.currentDepth = a, this.wrapper = u;
+          P(o) && (this.wrapper = o, P(u) && this.currentDepth++), r.push.apply(r, this._toBlockConfigs(Array.from(i.childNodes), e)), this.currentDepth = a, this.wrapper = u;
           continue
         }
         var s = this.blockTypeMap.get(o);
@@ -137,7 +137,7 @@ var o, a = r(359282),
           this._trimCurrentText(), "" !== this.currentText && r.push(this._makeBlockConfig());
           var c = this.currentDepth,
             l = this.wrapper;
-          this.wrapper = "pre" === o ? "pre" : this.wrapper, "string" != typeof s && (s = this.disambiguate(o, this.wrapper) || s[0] || "unstyled"), !k && w(i) && ("unordered-list-item" === s || "ordered-list-item" === s) && (this.currentDepth = N(i, this.currentDepth));
+          this.wrapper = "pre" === o ? "pre" : this.wrapper, "string" != typeof s && (s = this.disambiguate(o, this.wrapper) || s[0] || "unstyled"), !k && w(i) && ("unordered-list-item" === s || "ordered-list-item" === s) && (this.currentDepth = F(i, this.currentDepth));
           var f = h(),
             p = this._toBlockConfigs(Array.from(i.childNodes), e);
           this._trimCurrentText(), r.push(this._makeBlockConfig({
@@ -164,7 +164,7 @@ var o, a = r(359282),
           continue
         }
         var d = e;
-        R.has(o) && (d = d.add(R.get(o))), d = P(i, d), r.push.apply(r, this._toBlockConfigs(Array.from(i.childNodes), d))
+        R.has(o) && (d = d.add(R.get(o))), d = z(i, d), r.push.apply(r, this._toBlockConfigs(Array.from(i.childNodes), d))
       }
       return r
     }, e._appendText = function(t, e) {
@@ -245,7 +245,7 @@ t.exports = function(t) {
   var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d,
     r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : c,
     n = e(t = t.trim().replace(C, "").replace(O, " ").replace(K, "").replace(T, ""));
-  return n ? new j(F(r), function(t, e) {
+  return n ? new j(N(r), function(t, e) {
     return "li" === t ? "ol" === e ? "ordered-list-item" : "unordered-list-item" : null
   }).addDOMNode(n).getContentBlocks() : null
 }

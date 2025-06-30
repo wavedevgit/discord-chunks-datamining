@@ -1,7 +1,7 @@
-/** Chunk was on 56179 **/
+/** Chunk was on 46653 **/
 i.d(e, {
-  G: () => w,
-  d: () => Z
+  G: () => Z,
+  d: () => I
 }), i(539854), i(388685), i(415506);
 var n = i(475179),
   r = i(904245),
@@ -20,8 +20,8 @@ var n = i(475179),
   v = i(979956),
   O = i(981631),
   b = i(959517),
-  y = i(474936),
-  S = i(388032);
+  S = i(474936),
+  y = i(388032);
 
 function E(t) {
   for (var e = 1; e < arguments.length; e++) {
@@ -42,7 +42,7 @@ function E(t) {
   return t
 }
 
-function w(t, e) {
+function Z(t, e) {
   let i = p.default.getCurrentUser(),
     n = t.getGuildId(),
     r = f.dg(n),
@@ -63,21 +63,21 @@ function w(t, e) {
       error_type: b.xi.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR,
       attachment_mimetypes: c
     }), (0, o.openUploadError)({
-      title: S.intl.string(S.t["/tGlcn"]),
+      title: y.intl.string(y.t["/tGlcn"]),
       help: (0, v.BK)(i, n),
-      showPremiumUpsell: !(0, m.M5)(i, y.p9.TIER_2),
+      showPremiumUpsell: !(0, m.M5)(i, S.p9.TIER_2),
       fileSize: a
     });
     return
   }(0, o.openUploadError)({
-    title: S.intl.string(S.t["/tGlcn"]),
-    help: S.intl.formatToPlainString(S.t.tUOJdH, {
+    title: y.intl.string(y.t["/tGlcn"]),
+    help: y.intl.formatToPlainString(y.t.tUOJdH, {
       maxSize: f.Ng(f.OC())
     })
   })
 }
 
-function Z(t, e, i) {
+function I(t, e, i) {
   let {
     filesMetadata: d,
     requireConfirm: p = !0,
@@ -87,11 +87,11 @@ function Z(t, e, i) {
   if (t.length < 1) return;
   if (null != d && d.length !== t.length) throw Error("Unexpected mismatch between files and file metadata");
   let b = e.getGuildId();
-  if ((0, v.Bf)(t, b)) return void w(e, t);
+  if ((0, v.Bf)(t, b)) return void Z(e, t);
   if (h.Z.getUploadCount(e.id, i) + t.length > O.dN1) {
     (0, o.openUploadError)({
-      title: S.intl.string(S.t.wOr6hI),
-      help: S.intl.formatToPlainString(S.t["qqyp/f"], {
+      title: y.intl.string(y.t.wOr6hI),
+      help: y.intl.formatToPlainString(y.t["qqyp/f"], {
         limit: O.dN1
       })
     }), g.default.track(O.rMx.UPLOAD_FILE_LIMIT_ERROR, {

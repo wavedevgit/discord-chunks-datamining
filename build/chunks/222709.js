@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => m
 });
@@ -18,9 +18,9 @@ let m = e => {
     messageId: n
   } = e, m = (0, l.e7)([u.Z], () => u.Z.shouldShowBump(n), [n]), f = i.useCallback(() => {
     o.Z.dismissPublishBump(n), (0, s.Z)(t, n)
-  }, [t, n]), h = i.useCallback(() => {
+  }, [t, n]), g = i.useCallback(() => {
     o.Z.dismissPublishBump(n)
-  }, [n]), g = i.useCallback(() => {
+  }, [n]), _ = i.useCallback(() => {
     o.Z.permanentlyHidePublishBump(t)
   }, [t]);
   return m ? (0, r.jsxs)("div", {
@@ -43,7 +43,7 @@ let m = e => {
         onClick: f,
         children: d.intl.string(d.t["MFGE5+"])
       }), (0, r.jsx)(a.P3F, {
-        onClick: h,
+        onClick: g,
         children: (0, r.jsx)(a.k$p, {
           size: "xs",
           color: "currentColor",
@@ -55,7 +55,7 @@ let m = e => {
       className: p.hidePermanently,
       variant: "text-sm/normal",
       children: (0, r.jsx)(a.P3F, {
-        onClick: g,
+        onClick: _,
         children: d.intl.string(d.t.efSkDg)
       })
     })]

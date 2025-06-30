@@ -1,14 +1,14 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 36512 **/
 n.d(t, {
   Z: () => c
 });
 var r = n(255367);
 n(73800);
-var i = n(481060),
+var s = n(481060),
   l = n(665149),
   a = n(388035),
-  o = n(453473),
-  s = n(388032);
+  i = n(453473),
+  o = n(388032);
 
 function c(e) {
   let {
@@ -16,13 +16,13 @@ function c(e) {
     onClose: n,
     className: c
   } = e;
-  return (0, r.jsx)(o.P, {
+  return (0, r.jsx)(i.P, {
     onOpen: t,
     onClose: n,
     popoutPosition: "bottom",
     popoutAlign: "right",
-    children: (e, t, n, o, u) => {
-      var d, p;
+    children: (e, t, n, i, u) => {
+      var d, h;
       return (0, r.jsx)(a.U, {
         location: "bookmarks-button",
         targetElementRef: u,
@@ -43,24 +43,24 @@ function c(e) {
             })
           }
           return e
-        }({}, n), p = p = {
+        }({}, n), h = h = {
           ref: u,
           className: c,
           onClick: e,
-          icon: i.plf,
-          "aria-label": s.intl.string(s.t["2pAkDA"]),
-          tooltip: t ? null : s.intl.string(s.t["2pAkDA"]),
+          icon: s.plf,
+          "aria-label": o.intl.string(o.t["2pAkDA"]),
+          tooltip: t ? null : o.intl.string(o.t["2pAkDA"]),
           selected: t,
-          showBadge: o
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
+          showBadge: i
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(p)).forEach(function(e) {
-          Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(p, e))
+        })(Object(h)).forEach(function(e) {
+          Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(h, e))
         }), d))
       })
     }

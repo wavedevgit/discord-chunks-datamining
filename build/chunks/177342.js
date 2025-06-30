@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(286379),
-  o = n(797614),
-  a = n(596739),
+  a = n(797614),
+  o = n(596739),
   s = n(473092);
 
 function c(e) {
@@ -21,7 +21,7 @@ function c(e) {
     buttons: f
   } = e;
   i.useEffect(() => {
-    o.Z.increment({
+    a.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
   }, []);
@@ -34,7 +34,7 @@ function c(e) {
       cta: s.NM.USER_BANNER_DISMISS
     })
   }, [h, t, n, c, u]);
-  return (0, r.jsx)(a.W, {
+  return (0, r.jsx)(o.W, {
     buttons: f,
     description: p,
     header: d,

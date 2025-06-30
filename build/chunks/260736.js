@@ -1,6 +1,6 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
-  Z: () => h
+  Z: () => g
 });
 var r = n(255367);
 n(73800);
@@ -16,17 +16,17 @@ var i = n(481060),
   m = n(388032),
   f = n(861477);
 
-function h(e) {
+function g(e) {
   let {
     compact: t,
     message: n,
-    channel: h
-  } = e, g = (0, c.ZP)(n), _ = (0, u.l)({
+    channel: g
+  } = e, _ = (0, c.ZP)(n), h = (0, u.l)({
     user: n.author,
     channelId: n.channel_id,
-    guildId: h.guild_id,
+    guildId: g.guild_id,
     messageId: n.id
-  })(g), b = (0, a.j)("HDStreamingUpgradedMessage"), x = () => (0, o.k)(h, "HDStreamingUpgradedMessage"), y = b ? x : s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION);
+  })(_), b = (0, a.j)("HDStreamingUpgradedMessage"), E = () => (0, o.k)(g, "HDStreamingUpgradedMessage"), y = b ? E : s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.parentContainer,
@@ -37,13 +37,13 @@ function h(e) {
         timestamp: n.timestamp,
         compact: t,
         children: m.intl.format(m.t["u0qJ4+"], {
-          actorName: g.nick,
-          actorHook: _
+          actorName: _.nick,
+          actorHook: h
         })
       })
     }), (0, r.jsxs)(i.P3F, {
       onClick: () => {
-        b ? x() : window.open(s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION), "_blank")
+        b ? E() : window.open(s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION), "_blank")
       },
       className: f.embed,
       children: [(0, r.jsx)(l.Z, {}), (0, r.jsxs)("div", {

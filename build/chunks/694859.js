@@ -1,8 +1,8 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  X: () => r
+  X: () => i
 });
-let i = (0, n(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2024-12_save_voice_message_menu_item",
   label: "Save voice message menu item on web",
@@ -18,9 +18,9 @@ let i = (0, n(818083).B)({
   }]
 });
 
-function r(e) {
+function i(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-  return i.useExperiment({
+  return r.useExperiment({
     location: e
   }, {
     autoTrackExposure: t

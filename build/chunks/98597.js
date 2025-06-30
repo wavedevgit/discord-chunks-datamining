@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   CN: () => N,
   ZP: () => L,
@@ -9,8 +9,8 @@ n.d(t, {
 var r, i = n(255367),
   l = n(73800),
   o = n(120356),
-  s = n.n(o),
-  a = n(442837),
+  a = n.n(o),
+  s = n(442837),
   c = n(481060),
   u = n(787014),
   d = n(924301),
@@ -26,8 +26,8 @@ var r, i = n(255367),
   v = n(914010),
   C = n(281029),
   j = n(981631),
-  E = n(388032),
-  S = n(915887);
+  S = n(388032),
+  E = n(915887);
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,7 +69,7 @@ function N(e, t, n) {
 }
 
 function w(e, t) {
-  return null == t ? S.containerDefault : e > t ? S.containerDragAfter : S.containerDragBefore
+  return null == t ? E.containerDefault : e > t ? E.containerDragAfter : E.containerDragBefore
 }
 
 function Z(e) {
@@ -80,27 +80,27 @@ function Z(e) {
     onContextMenu: l
   } = e;
   return (0, i.jsx)(c.ua7, {
-    text: E.intl.string(E.t.OBr7Cw),
+    text: S.intl.string(S.t.OBr7Cw),
     children: e => {
       let {
         onMouseEnter: o,
-        onMouseLeave: a,
+        onMouseLeave: s,
         onFocus: u,
         onBlur: d
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: s()(S.iconItem, n ? S.alwaysShown : void 0, r ? S.iconWithChannelInfo : S.iconNoChannelInfo),
+        className: a()(E.iconItem, n ? E.alwaysShown : void 0, r ? E.iconWithChannelInfo : E.iconNoChannelInfo),
         onClick: l,
         tabIndex: t,
-        "aria-label": E.intl.string(E.t.OBr7Cw),
+        "aria-label": S.intl.string(S.t.OBr7Cw),
         onMouseEnter: o,
-        onMouseLeave: a,
+        onMouseLeave: s,
         onFocus: u,
         onBlur: d,
         children: (0, i.jsx)(c.xhG, {
           size: "xs",
           color: "currentColor",
-          className: S.actionIcon
+          className: E.actionIcon
         })
       })
     }
@@ -115,33 +115,33 @@ function T(e) {
     forceShowButtons: l,
     hasChannelInfo: o = !1
   } = e;
-  if ((0, a.e7)([y.Z, v.Z], () => n || v.Z.getGuildId() === j.I_8 || !y.Z.can(j.Plq.MANAGE_CHANNELS, t) && !y.Z.can(j.Plq.MANAGE_ROLES, t) && !y.Z.can(j.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !y.Z.can(j.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !y.Z.can(j.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel())) return null;
+  if ((0, s.e7)([y.Z, v.Z], () => n || v.Z.getGuildId() === j.I_8 || !y.Z.can(j.Plq.MANAGE_CHANNELS, t) && !y.Z.can(j.Plq.MANAGE_ROLES, t) && !y.Z.can(j.Plq.MANAGE_WEBHOOKS, t) || (0, b.r8)(t.type) && !y.Z.can(j.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !y.Z.can(j.Plq.CONNECT, t) || !b.dF.has(t.type) || t.isModeratorReportChannel())) return null;
 
   function d() {
     u.ZP.open(t.id)
   }
   return (0, i.jsx)(c.ua7, {
-    text: E.intl.string(E.t["3gUsJS"]),
+    text: S.intl.string(S.t["3gUsJS"]),
     children: e => {
       let {
         onMouseEnter: t,
         onMouseLeave: n,
-        onFocus: a,
+        onFocus: s,
         onBlur: u
       } = e;
       return (0, i.jsx)(c.P3F, {
-        className: s()(S.iconItem, l ? S.alwaysShown : void 0, o ? S.iconWithChannelInfo : S.iconNoChannelInfo),
+        className: a()(E.iconItem, l ? E.alwaysShown : void 0, o ? E.iconWithChannelInfo : E.iconNoChannelInfo),
         onClick: d,
         tabIndex: r,
-        "aria-label": E.intl.string(E.t["3gUsJS"]),
+        "aria-label": S.intl.string(S.t["3gUsJS"]),
         onMouseEnter: t,
         onMouseLeave: n,
-        onFocus: a,
+        onFocus: s,
         onBlur: u,
         children: (0, i.jsx)(c.ewm, {
           size: "xs",
           color: "currentColor",
-          className: S.actionIcon
+          className: E.actionIcon
         })
       })
     }
@@ -160,7 +160,7 @@ function A(e) {
     entrypoints: v
   } = (0, h._k)({
     location: "channel_base"
-  }), C = (0, a.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), x = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, a.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, a.e7)([y.Z], () => (0, p.b)(y.Z, C, t, x)), Z = (0, a.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTE) : E.intl.string(E.t.Sd8Ix8)), T = v ? E.intl.string(E.t["EE+P0N"]) : Z, A = l.useRef(null);
+  }), C = (0, s.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), x = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), w = (0, s.e7)([y.Z], () => (0, p.b)(y.Z, C, t, x)), Z = (0, s.e7)([y.Z], () => y.Z.can(j.Plq.CREATE_INSTANT_INVITE, t) ? S.intl.string(S.t.zJrgTE) : S.intl.string(S.t.Sd8Ix8)), T = v ? S.intl.string(S.t["EE+P0N"]) : Z, A = l.useRef(null);
   if (o || !w || t.isModeratorReportChannel()) return null;
 
   function R() {
@@ -183,7 +183,7 @@ function A(e) {
   let D = v ? c.oLu : c.ejJ,
     L = (0, i.jsx)(D, {
       size: "xs",
-      className: S.actionIcon,
+      className: E.actionIcon,
       "aria-hidden": !0,
       color: "currentColor"
     });
@@ -198,7 +198,7 @@ function A(e) {
   })), (0, i.jsx)(c.ua7, {
     text: T,
     children: e => (0, i.jsx)(c.P3F, P(I({
-      className: s()(S.iconItem, f ? S.alwaysShown : void 0, b ? S.iconWithChannelInfo : S.iconNoChannelInfo)
+      className: a()(E.iconItem, f ? E.alwaysShown : void 0, b ? E.iconWithChannelInfo : E.iconNoChannelInfo)
     }, e), {
       onClick: R,
       tabIndex: u,
@@ -215,16 +215,16 @@ function R(e) {
     (0, f._U)(t.guild_id, t.id)
   };
   return (0, i.jsx)(c.ua7, {
-    text: E.intl.string(E.t.ROh4T0),
+    text: S.intl.string(S.t.ROh4T0),
     children: e => (0, i.jsx)(c.P3F, P(I({
-      className: S.iconItem
+      className: E.iconItem
     }, e), {
       onClick: n,
-      "aria-label": E.intl.string(E.t.ROh4T0),
+      "aria-label": S.intl.string(S.t.ROh4T0),
       children: (0, i.jsx)(c.Dio, {
         size: "xs",
         color: "currentColor",
-        className: S.actionIcon
+        className: E.actionIcon
       })
     }))
   })
@@ -239,16 +239,16 @@ function D(e) {
     })
   };
   return (0, i.jsx)(c.ua7, {
-    text: E.intl.string(E.t["N2c/Ul"]),
+    text: S.intl.string(S.t["N2c/Ul"]),
     children: e => (0, i.jsx)(c.P3F, P(I({
-      className: S.iconItem
+      className: E.iconItem
     }, e), {
       onClick: n,
-      "aria-label": E.intl.string(E.t["N2c/Ul"]),
+      "aria-label": S.intl.string(S.t["N2c/Ul"]),
       children: (0, i.jsx)(c.dz2, {
         size: "xs",
         color: "currentColor",
-        className: S.actionIcon
+        className: E.actionIcon
       })
     }))
   })

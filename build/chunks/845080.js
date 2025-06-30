@@ -1,32 +1,32 @@
-/** Chunk was on 26179 **/
-a.d(t, {
+/** Chunk was on 84552 **/
+n.d(t, {
   Z: () => s
 });
-var o = a(255367),
-  n = a(73800),
-  i = a(901461),
-  r = a(464891);
-let c = n.memo(r.ZP);
+var r = n(255367),
+  i = n(73800),
+  l = n(901461),
+  a = n(464891);
+let o = i.memo(a.ZP);
 
 function s(e) {
   let {
     message: t,
-    channel: a,
-    author: n,
-    compact: r,
+    channel: n,
+    author: i,
+    compact: a,
     animateAvatar: s,
-    guildId: l,
-    isGroupStart: _ = !0,
+    guildId: c,
+    isGroupStart: u = !0,
     roleIcon: d,
     hideTimestamp: p,
     preview: m
   } = e;
-  return !(0, i.Z)(t) && (_ || r) ? (0, o.jsx)(c, {
+  return !(0, l.Z)(t) && (u || a) ? (0, r.jsx)(o, {
     message: t,
-    channel: a,
-    author: n,
-    guildId: l,
-    compact: r,
+    channel: n,
+    author: i,
+    guildId: c,
+    compact: a,
     animate: s,
     roleIcon: d,
     hideTimestamp: p,

@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 e.exports = {
   tooltip: "tooltip_e12757",
   body: "body_e12757",

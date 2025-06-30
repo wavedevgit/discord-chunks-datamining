@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => K
+  Z: () => z
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -32,14 +32,15 @@ var r = n(255367),
   R = n(551452),
   P = n(69626),
   w = n(142990),
-  D = n(532901),
-  L = n(311739),
-  x = n(981631),
-  k = n(176505),
-  M = n(73433),
-  j = n(283574);
+  D = n(382056),
+  L = n(532901),
+  x = n(311739),
+  k = n(981631),
+  M = n(176505),
+  j = n(73433),
+  U = n(283574);
 
-function U(e, t, n) {
+function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -48,20 +49,20 @@ function U(e, t, n) {
   }) : e[t] = n, e
 }
 
-function G(e) {
+function B(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      U(e, t, n[t])
+      G(e, t, n[t])
     })
   }
   return e
 }
 
-function B(e, t) {
+function V(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,13 +73,13 @@ function B(e, t) {
   return n
 }
 
-function V(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
+function F(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function F(e) {
+function Z(e) {
   let {
     emojiTooltipPosition: t = "top",
     enableEmojiClick: n = !0
@@ -103,7 +104,7 @@ function F(e) {
   }
 }
 
-function Z(e) {
+function H(e) {
   let {
     emojiTooltipPosition: t = "top",
     enableEmojiClick: n = !0
@@ -119,7 +120,7 @@ function Z(e) {
       } = a, d = _.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
       if (null != d) {
         let t = d.require_colons;
-        e = V(G({}, e), {
+        e = F(B({}, e), {
           name: t ? ":".concat(d.name, ":") : d.name
         })
       }
@@ -135,22 +136,22 @@ function Z(e) {
   }
 }
 
-function H(e, t, n) {
+function Y(e, t, n) {
   let r = T.Z.getGuild(e);
   if (null == e || null == r) return;
   let i = t => {
-    r.hasFeature(x.oNc.COMMUNITY) && (0, O.uL)(x.Z5c.CHANNEL(e, t))
+    r.hasFeature(k.oNc.COMMUNITY) && (0, O.uL)(k.Z5c.CHANNEL(e, t))
   };
   switch (t) {
     case "home":
     case "guide":
-      i(k.oC.GUILD_HOME);
+      i(M.oC.GUILD_HOME);
       break;
     case "browse":
-      i(k.oC.CHANNEL_BROWSER);
+      i(M.oC.CHANNEL_BROWSER);
       break;
     case "customize":
-      i(k.oC.CUSTOMIZE_COMMUNITY);
+      i(M.oC.CUSTOMIZE_COMMUNITY);
       break;
     case "linked-roles":
       if (null != n) {
@@ -172,7 +173,7 @@ function H(e, t, n) {
   }
 }
 
-function Y(e) {
+function W(e) {
   let {
     text: t
   } = e, [n, a] = i.useState(!1), o = () => {
@@ -190,12 +191,12 @@ function Y(e) {
   })
 }
 n(484944);
-let W = {
+let K = {
   blockQuote: {
     react: (e, t, n) => (0, r.jsxs)("div", {
-      className: M.blockquoteContainer,
+      className: j.blockquoteContainer,
       children: [(0, r.jsx)("div", {
-        className: M.blockquoteDivider
+        className: j.blockquoteDivider
       }), (0, r.jsx)("blockquote", {
         children: t(e.content, n)
       })]
@@ -226,15 +227,15 @@ let W = {
   codeBlock: {
     react(e, t, i) {
       let a = () => (0, r.jsx)("code", {
-        className: o()(j.scrollbarGhostHairline, "hljs"),
+        className: o()(U.scrollbarGhostHairline, "hljs"),
         children: (0, A.S)(e, t, i)
       });
       return (0, r.jsx)("pre", {
         children: (0, r.jsxs)("div", {
-          className: M.codeContainer,
+          className: j.codeContainer,
           children: [S.wS ? (0, r.jsx)("div", {
-            className: M.codeActions,
-            children: (0, r.jsx)(Y, {
+            className: j.codeActions,
+            children: (0, r.jsx)(W, {
               text: e.content
             })
           }) : null, (0, r.jsx)(d.GI, {
@@ -246,7 +247,7 @@ let W = {
               {
                 let n = t.highlight(e.lang, e.content, !0);
                 return null == n ? a() : (0, r.jsx)("code", {
-                  className: o()(j.scrollbarGhostHairline, "hljs", n.language),
+                  className: o()(U.scrollbarGhostHairline, "hljs", n.language),
                   dangerouslySetInnerHTML: {
                     __html: n.value
                   }
@@ -287,7 +288,7 @@ let W = {
   staticRouteLink: {
     react(e, t, n) {
       let i = () => {
-        H(e.guildId, e.id, e.itemId)
+        Y(e.guildId, e.id, e.itemId)
       };
       return (0, A.k)(e.id) ? (0, r.jsxs)(m.Z, {
         role: "link",
@@ -309,7 +310,7 @@ let W = {
         a = null == e.start ? void 0 : (e.start + (e.items.length - 1)).toString().length;
       return (0, s.reactElement)(i, "".concat(n.key), {
         start: e.start,
-        className: n.formatInline ? M.inlineFormat : null,
+        className: n.formatInline ? j.inlineFormat : null,
         style: {
           "--totalCharacters": a
         },
@@ -335,7 +336,7 @@ let W = {
         children: [i, (0, r.jsx)(l.nn4, {
           children: ","
         }, "screen-reader-pause")],
-        className: n.formatInline ? M.inlineFormat : null
+        className: n.formatInline ? j.inlineFormat : null
       })
     }
   },
@@ -364,7 +365,7 @@ let W = {
       });
       return (0, s.reactElement)("small", (null == n ? void 0 : n.key) != null ? "".concat(n.key) : null, {
         children: r,
-        className: n.formatInline ? M.inlineFormat : null
+        className: n.formatInline ? j.inlineFormat : null
       })
     }
   },
@@ -377,15 +378,16 @@ let W = {
   }
 };
 
-function K(e) {
-  return V(G({}, W), {
-    link: (0, D.Z)(e),
+function z(e) {
+  return F(B({}, K), {
+    link: (0, L.Z)(e),
     devLink: (0, w.Z)(e),
-    emoji: F(e),
-    customEmoji: Z(e),
+    emoji: Z(e),
+    customEmoji: H(e),
     channelMention: (0, R.Z)(e),
     commandMention: (0, P.ZP)(e),
     attachmentLink: (0, C.Z)(e),
-    shopLink: (0, L.Z)(e)
+    shopLink: (0, x.Z)(e),
+    gameMention: D.Z
   })
 }

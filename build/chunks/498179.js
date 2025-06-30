@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => m
 });
@@ -50,32 +50,32 @@ function m(e) {
     fullWidth: n = !1,
     size: m = l.zxk.Sizes.LARGE,
     color: f,
-    customDisabledColor: h,
-    hideNotLaunchable: g,
-    tooltipPosition: _,
+    customDisabledColor: g,
+    hideNotLaunchable: _,
+    tooltipPosition: h,
     onClick: b,
-    className: x,
+    className: E,
     source: y,
-    hover: E,
+    hover: C,
     innerClassName: v
-  } = e, C = {
+  } = e, x = {
     fullWidth: n,
     size: m,
     color: f,
-    customDisabledColor: h,
-    tooltipPosition: _,
+    customDisabledColor: g,
+    tooltipPosition: h,
     onClick: b,
-    className: x,
-    hover: E,
+    className: E,
+    hover: C,
     innerClassName: v
-  }, O = (0, i.e7)([a.Z], () => a.Z.getActiveLibraryApplication(t.id)), j = null != O ? O.sku.id : null, S = null != j ? j : t.primarySkuId, I = (0, i.e7)([o.Z], () => null != S && !o.Z.didFetchingSkuFail(S));
-  return null != O && (0, s.Je)(O) ? (0, r.jsx)(u.Z, p(d({}, C), {
+  }, O = (0, i.e7)([a.Z], () => a.Z.getActiveLibraryApplication(t.id)), j = null != O ? O.sku.id : null, I = null != j ? j : t.primarySkuId, S = (0, i.e7)([o.Z], () => null != I && !o.Z.didFetchingSkuFail(I));
+  return null != O && (0, s.Je)(O) ? (0, r.jsx)(u.Z, p(d({}, x), {
     libraryApplication: O,
     source: y
-  })) : I ? (0, r.jsx)("div", {
+  })) : S ? (0, r.jsx)("div", {
     children: "deprecated!"
-  }) : (0, r.jsx)(c.Z, p(d({}, C), {
-    hideNotLaunchable: g,
+  }) : (0, r.jsx)(c.Z, p(d({}, x), {
+    hideNotLaunchable: _,
     applicationId: t.id
   }))
 }

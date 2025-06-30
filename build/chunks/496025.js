@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => E
+  Z: () => T
 }), n(388685), n(35282);
 var a = n(255367),
   r = n(73800),
@@ -18,14 +18,14 @@ var a = n(255367),
   b = n(594174),
   f = n(55589),
   v = n(630388),
-  _ = n(98357),
+  j = n(98357),
   g = n(432877),
-  j = n(246992),
+  _ = n(246992),
   y = n(894257),
   C = n(750540),
-  N = n(616257);
+  O = n(616257);
 
-function O() {
+function N() {
   var e;
   let t = (0, o.Wu)([f.Z], () => f.Z.getSortedChannels()[1]),
     [n, l] = r.useState(t.length > 0 ? t[0].channelId : void 0),
@@ -42,7 +42,7 @@ function O() {
         }
       })
     })),
-    _ = r.useCallback(() => {
+    j = r.useCallback(() => {
       var e;
       if (null == i || !i.isPrivate()) return;
       let t = (0, v.x9)(null != (e = i.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
@@ -70,10 +70,10 @@ function O() {
             size: c.EFr.SIZE_16
           })
         },
-        popoutLayerContext: j.O$
+        popoutLayerContext: _.O$
       }), (0, a.jsx)(c.zxk, {
         size: c.zxk.Sizes.SMALL,
-        onClick: _,
+        onClick: j,
         disabled: null == n,
         children: g ? "Clear NUX Flag" : "Set NUX Flag"
       })]
@@ -81,7 +81,7 @@ function O() {
   })
 }
 
-function T() {
+function E() {
   let e = r.useCallback(() => {
     d.Z.openPrivateChannel({
       recipientIds: [y.I]
@@ -94,25 +94,25 @@ function T() {
   })
 }
 
-function E() {
+function T() {
   let e = g.ZP.allByCategory(g.zU.MESSAGING).map(e => {
     let [t, n, {
       label: r
     }] = e;
     return (0, a.jsx)(c.j7V, {
       value: n,
-      onChange: e => (0, _.Z)(t, e),
+      onChange: e => (0, j.Z)(t, e),
       hideBorder: !0,
       className: C.switch,
       children: r
     }, t)
   });
   return (0, a.jsxs)("div", {
-    className: i()(N.panel, C.panel),
+    className: i()(O.panel, C.panel),
     children: [e, (0, a.jsx)("div", {
       className: C.divider
-    }), (0, a.jsx)(O, {}), (0, a.jsx)("div", {
+    }), (0, a.jsx)(N, {}), (0, a.jsx)("div", {
       className: C.divider
-    }), (0, a.jsx)(T, {})]
+    }), (0, a.jsx)(E, {})]
   })
 }

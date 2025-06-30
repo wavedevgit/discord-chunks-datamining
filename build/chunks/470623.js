@@ -1,6 +1,6 @@
-/** Chunk was on 56179 **/
+/** Chunk was on 46653 **/
 i.d(e, {
-  AF: () => y,
+  AF: () => S,
   oL: () => O,
   xH: () => b
 }), i(388685), i(781311);
@@ -156,7 +156,7 @@ function b(t, e) {
   return o()(null != i, "[useForumPostComposerStore] Context should not be null"), i(t, e)
 }
 
-function y() {
+function S() {
   let t = r.useContext(v);
   return o()(null != t, "[useForumPostComposerStore] Context should not be null"), t
 }

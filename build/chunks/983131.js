@@ -1,17 +1,17 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(442837),
   i = n(496675),
   l = n(942766),
-  o = n(981631);
+  a = n(981631);
 
-function a(e) {
+function o(e) {
   let {
     removeEmojiEffects: t
   } = l.O.useExperiment({
     location: "useCanSendEmojiEffects"
   });
-  return (0, r.e7)([i.Z], () => !(t || null == e || e.isPrivate()) && i.Z.can(o.Plq.ADD_REACTIONS, e))
+  return (0, r.e7)([i.Z], () => !(t || null == e || e.isPrivate()) && i.Z.can(a.Plq.ADD_REACTIONS, e))
 }

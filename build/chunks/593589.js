@@ -1,19 +1,19 @@
-/** Chunk was on 90488 **/
+/** Chunk was on 96174 **/
 t.d(n, {
-  Z: () => m
+  Z: () => p
 });
 var i = t(255367),
-  o = t(73800),
-  r = t(481060),
+  r = t(73800),
+  o = t(481060),
   a = t(372900),
   c = t(238246),
-  _ = t(788983),
-  d = t(207035),
+  d = t(788983),
+  _ = t(207035),
   l = t(823748),
-  u = t(981631),
-  s = t(683146);
+  s = t(981631),
+  u = t(683146);
 
-function p(e) {
+function m(e) {
   let {
     windowKey: n,
     channel: t
@@ -23,7 +23,7 @@ function p(e) {
     windowKey: n,
     title: t.name,
     channelId: t.id,
-    contentClassName: s.popoutContent,
+    contentClassName: u.popoutContent,
     children: (0, i.jsx)(a.Z.Provider, {
       value: t.guild_id,
       children: (0, i.jsx)(l.Z, {
@@ -33,10 +33,10 @@ function p(e) {
   })
 }
 
-function m(e, n) {
-  let t = (0, d.P)(n),
-    a = o.useCallback(() => {
-      _.bA("".concat(u.KJ3.CHANNEL_POPOUT, "-").concat(e.id), n => (0, i.jsx)(p, {
+function p(e, n) {
+  let t = (0, _.P)(n),
+    a = r.useCallback(() => {
+      d.bA("".concat(s.KJ3.CHANNEL_POPOUT, "-").concat(e.id), n => (0, i.jsx)(m, {
         windowKey: n,
         channel: e
       }), {
@@ -44,7 +44,7 @@ function m(e, n) {
         defaultHeight: 480
       })
     }, [e]);
-  return t ? (0, i.jsx)(r.sNh, {
+  return t ? (0, i.jsx)(o.sNh, {
     id: "channel-pop-out",
     label: "Open in Popout",
     action: () => a()

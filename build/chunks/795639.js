@@ -26,13 +26,13 @@ var r = n(255367),
   y = n(124252),
   O = n(388032),
   w = n(554010);
-let S = [{
+let N = [{
     name: "Media Post Thumbnail",
     extensions: ["jpg", "jpeg", "png", "gif", "webp"]
   }],
-  N = (0, p.hQ)();
+  T = (0, p.hQ)();
 
-function T(e) {
+function S(e) {
   let {
     mediaAttachments: t,
     containerWidth: n,
@@ -147,11 +147,11 @@ let P = e => {
     onChange: E,
     multiple: !1,
     "aria-hidden": !0,
-    filters: S,
-    "aria-describedby": N,
+    filters: N,
+    "aria-describedby": T,
     "aria-label": P ? O.intl.string(O.t.MxJI3d) : O.intl.string(O.t.CbiofX),
     children: P ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(T, {
+      children: [(0, r.jsx)(S, {
         mediaAttachments: b,
         containerWidth: I.width,
         containerHeight: I.height

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(112724),
-  o = n(413458),
-  a = n(351248),
+  a = n(413458),
+  o = n(351248),
   s = n(600164),
   c = n(585483),
   u = n(340295),
@@ -30,8 +30,8 @@ let _ = (0, l.Z)(e => {
     channel: j,
     hasConnectPermission: O,
     className: E,
-    inCall: I,
-    showParticipants: S = !0,
+    inCall: S,
+    showParticipants: I = !0,
     width: P,
     height: Z,
     idle: N,
@@ -43,20 +43,20 @@ let _ = (0, l.Z)(e => {
   i.useEffect(() => {
     c.S.dispatch(m.CkL.REMEASURE_TARGET)
   }, [P, Z, R.width, R.height]);
-  let k = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, _]);
+  let k = i.useMemo(() => n.filter(e => e.type !== g.fO.ACTIVITY || !e.participants.some(e => (0, a.J)(e))), [n, _]);
   return (null == w ? void 0 : w.channelId) === j.id ? (0, r.jsx)(d.Z, {
     height: Z
-  }) : (null == j ? void 0 : j.isGuildVocal()) && !I ? (0, r.jsx)(u.Z, {
+  }) : (null == j ? void 0 : j.isGuildVocal()) && !S ? (0, r.jsx)(u.Z, {
     channel: j,
     participants: t,
     hasConnectPermission: O
-  }) : T === m.WtW.VOICE ? (0, r.jsx)(a.Z, {
+  }) : T === m.WtW.VOICE ? (0, r.jsx)(o.Z, {
     guildId: j.guild_id,
     width: P,
     className: b.voiceCallWrapper,
     participants: t,
     onContextMenu: x
-  }) : (n = I ? n : t, null == l) ? 0 === n.length ? (0, r.jsx)(f.Z, {
+  }) : (n = S ? n : t, null == l) ? 0 === n.length ? (0, r.jsx)(f.Z, {
     channelId: j.id
   }) : (0, r.jsx)(s.Z, {
     className: b.videoGridWrapper,
@@ -70,7 +70,7 @@ let _ = (0, l.Z)(e => {
       onClick: C,
       onDoubleClick: v,
       onContextMenu: x,
-      inCall: I
+      inCall: S
     })
   }) : (0, r.jsx)(h.Z, {
     onFullscreenParticipant: v,
@@ -85,8 +85,8 @@ let _ = (0, l.Z)(e => {
     height: Z,
     width: P,
     layout: y,
-    inCall: I,
+    inCall: S,
     channel: j,
-    showParticipants: S
+    showParticipants: I
   })
 })

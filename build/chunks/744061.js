@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(692547),
-  o = n(780384),
-  a = n(481060),
+  a = n(780384),
+  o = n(481060),
   s = n(367907),
   c = n(210887),
   u = n(626135),
@@ -60,7 +60,7 @@ function m(e) {
     return null != C && (async () => {
       let [{
         default: i
-      }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, o.wj)(t) ? C.dark() : C.light()]);
+      }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? C.dark() : C.light()]);
       r || null == j.current || (e = i.loadAnimation({
         container: j.current,
         renderer: "svg",
@@ -71,7 +71,7 @@ function m(e) {
     })(), () => {
       r = !0, null != e && (e.destroy(), e = void 0)
     }
-  }, [C]), (0, r.jsx)(a.VqE, {
+  }, [C]), (0, r.jsx)(o.VqE, {
     "aria-labelledby": "content-warning-popout-label",
     children: (0, r.jsxs)("form", {
       className: h.contentWarningPopout,
@@ -86,7 +86,7 @@ function m(e) {
           children: [(0, r.jsx)("div", {
             className: h.header,
             children: p.intl.string(p.t.mY3Y39)
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(o.Text, {
             id: "content-warning-popout-label",
             className: f.markup,
             variant: "text-sm/normal",
@@ -95,25 +95,25 @@ function m(e) {
             className: h.buttonWrapper,
             children: [(0, r.jsxs)("div", {
               className: h.buttonContainer,
-              children: [(0, r.jsx)(a.zxk, {
+              children: [(0, r.jsx)(o.zxk, {
                 className: h.button,
-                color: a.zxk.Colors.PRIMARY,
+                color: o.zxk.Colors.PRIMARY,
                 onClick: v,
                 children: p.intl.string(p.t.fsBWmZ)
-              }), (0, r.jsx)(a.Text, {
+              }), (0, r.jsx)(o.Text, {
                 variant: "text-xs/normal",
                 className: h.buttonHint,
                 children: p.intl.format(p.t["0LzVPT"], {})
               })]
             }), (0, r.jsxs)("div", {
               className: h.buttonContainer,
-              children: [(0, r.jsx)(a.zxk, {
+              children: [(0, r.jsx)(o.zxk, {
                 className: h.button,
                 onClick: x,
                 type: "submit",
                 autoFocus: !0,
                 children: p.intl.string(p.t.KJnHq6)
-              }), (0, r.jsx)(a.Text, {
+              }), (0, r.jsx)(o.Text, {
                 variant: "text-xs/normal",
                 className: h.buttonHint,
                 children: p.intl.format(p.t.khjqdH, {})
@@ -123,11 +123,11 @@ function m(e) {
         })]
       }), null != y.footer && "" !== y.footer ? (0, r.jsxs)("div", {
         className: h.footer,
-        children: [(0, r.jsx)(a.d3s, {
+        children: [(0, r.jsx)(o.d3s, {
           size: "xs",
           color: l.Z.unsafe_rawColors.PRIMARY_400.css,
           className: h.icon
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           children: y.footer
         })]

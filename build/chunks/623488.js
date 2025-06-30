@@ -1,44 +1,44 @@
-/** Chunk was on 73628 **/
+/** Chunk was on 84552 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 }), n(953529);
 var r = n(255367);
 n(73800);
-var A = n(120356),
-  a = n.n(A),
-  l = n(481060),
+var i = n(120356),
+  l = n.n(i),
+  a = n(481060),
   o = n(313201),
-  i = n(240657),
-  s = n(765400),
-  c = n(916001),
+  s = n(240657),
+  c = n(765400),
+  u = n(916001),
   d = n(388032),
-  u = n(940792);
+  p = n(940792);
 
-function g(e) {
+function m(e) {
   let {
     hidePurchaseToUnlockBadge: t,
     showDraftBadge: n,
-    className: A,
+    className: i,
     children: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(u.productThumbnailContainer, A),
+    className: l()(p.productThumbnailContainer, i),
     children: [o, !t && (0, r.jsxs)("div", {
-      className: u.purchaseToUnlockBadge,
-      children: [(0, r.jsx)(l.mBM, {
+      className: p.purchaseToUnlockBadge,
+      children: [(0, r.jsx)(a.mBM, {
         size: "xs",
-        className: u.lockIcon,
+        className: p.lockIcon,
         color: "currentColor",
         "aria-hidden": !0
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "always-white",
-        className: u.__invalid_unlockText,
+        className: p.__invalid_unlockText,
         children: d.intl.string(d.t.YmIiSU)
       })]
     }), n && (0, r.jsx)("div", {
-      className: u.draftBadge,
-      children: (0, r.jsx)(s.v, {})
+      className: p.draftBadge,
+      children: (0, r.jsx)(c.v, {})
     })]
   })
 }
@@ -47,128 +47,128 @@ function f(e) {
   let {
     onShowFullDescription: t,
     variant: n
-  } = e, A = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(l.Text, {
+  } = e, i = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(a.Text, {
       variant: n,
       color: null != t ? "text-link" : "interactive-hover",
       children: d.intl.string(d.t["5fmYjY"])
-    }), (0, r.jsx)(l.ZSh, {
+    }), (0, r.jsx)(a.ZSh, {
       size: "xs",
       color: "currentColor",
-      className: u.arrowIcon
+      className: p.arrowIcon
     })]
   });
   return null == t ? (0, r.jsx)("div", {
-    className: u.showMoreButton,
-    children: A
-  }) : (0, r.jsx)(l.P3F, {
-    className: a()(u.showMoreButton, u.hasAction),
+    className: p.showMoreButton,
+    children: i
+  }) : (0, r.jsx)(a.P3F, {
+    className: l()(p.showMoreButton, p.hasAction),
     onClick: e => {
       e.stopPropagation(), null != t && t()
     },
-    children: A
+    children: i
   })
 }
 
-function p(e) {
+function g(e) {
   let {
     imageUrl: t,
     name: n,
-    description: A,
-    formattedPrice: s,
-    role: p,
-    ctaComponent: m,
+    description: i,
+    formattedPrice: c,
+    role: g,
+    ctaComponent: _,
     shouldShowFullDescriptionButton: h = !0,
     onShowFullDescription: b,
-    productType: v,
-    onTapCard: C,
-    actionMenu: q,
-    showOpaqueBackground: x = !1,
-    hideRoleTag: j = !1,
+    productType: E,
+    onTapCard: y,
+    actionMenu: C,
+    showOpaqueBackground: v = !1,
+    hideRoleTag: x = !1,
     lineClamp: O = 1,
-    cardWidth: U = 332,
-    cardHeight: P,
-    thumbnailHeight: V = 187,
-    descriptionTextVariant: y = "text-sm/normal",
+    cardWidth: j = 332,
+    cardHeight: I,
+    thumbnailHeight: S = 187,
+    descriptionTextVariant: T = "text-sm/normal",
     isDraft: N = !1
-  } = e, I = (0, o.hQ)(), T = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(g, {
+  } = e, P = (0, o.hQ)(), A = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(m, {
       showDraftBadge: N,
       hidePurchaseToUnlockBadge: !0,
       children: (0, r.jsx)("img", {
         alt: "",
         src: t,
-        className: u.productThumbnail,
+        className: p.productThumbnail,
         style: {
-          height: V
+          height: S
         }
       })
     }), (0, r.jsxs)("div", {
-      className: u.productDetails,
+      className: p.productDetails,
       children: [(0, r.jsxs)("div", {
-        className: u.productDetailContent,
-        children: [(0, r.jsx)(l.X6q, {
+        className: p.productDetailContent,
+        children: [(0, r.jsx)(a.X6q, {
           variant: "text-md/medium",
           color: "header-primary",
-          className: u.productName,
-          id: I,
+          className: p.productName,
+          id: P,
           children: n
-        }), (0, r.jsx)(l.Rny, {
-          children: (0, r.jsx)(i.Z, {
-            variant: y,
+        }), (0, r.jsx)(a.Rny, {
+          children: (0, r.jsx)(s.Z, {
+            variant: T,
             color: "text-muted",
             lineClamp: O,
-            text: A
+            text: i
           })
         }), h && (0, r.jsx)(f, {
           onShowFullDescription: b,
-          variant: y
-        }), j || null == p || "" === p.name ? null : (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(l.LZC, {
+          variant: T
+        }), x || null == g || "" === g.name ? null : (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)(a.LZC, {
             size: 16
-          }), (0, r.jsx)(c.Z, {
-            role: p
+          }), (0, r.jsx)(u.Z, {
+            role: g
           })]
         })]
-      }), q]
+      }), C]
     }), (0, r.jsxs)("div", {
-      className: u.purchaseDetails,
-      children: [(0, r.jsx)(l.Text, {
+      className: p.purchaseDetails,
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "interactive-active",
-        className: u.__invalid_productPrice,
-        children: null != s ? s : d.intl.string(d.t["4uLhAg"])
-      }), (0, r.jsx)(l.Text, {
+        className: p.__invalid_productPrice,
+        children: null != c ? c : d.intl.string(d.t["4uLhAg"])
+      }), (0, r.jsx)(a.Text, {
         variant: "text-xxs/normal",
         color: "text-default",
-        className: u.__invalid_productType,
-        children: v
+        className: p.__invalid_productType,
+        children: E
       }), (0, r.jsx)("div", {
-        className: u.productActionButton,
+        className: p.productActionButton,
         onClick: e => {
           e.stopPropagation()
         },
-        children: m
+        children: _
       })]
     })]
   });
-  return null == C ? (0, r.jsx)("article", {
-    className: a()(u.productCard, x ? u.opaqueBackground : u.solidBackground),
-    "aria-labelledby": I,
-    children: T
+  return null == y ? (0, r.jsx)("article", {
+    className: l()(p.productCard, v ? p.opaqueBackground : p.solidBackground),
+    "aria-labelledby": P,
+    children: A
   }) : (0, r.jsx)("div", {
     style: {
-      width: U,
-      height: P
+      width: j,
+      height: I
     },
-    children: (0, r.jsx)(l.kL8, {
+    children: (0, r.jsx)(a.kL8, {
       tag: "article",
       "aria-label": d.intl.formatToPlainString(d.t["e+TmJS"], {
         productName: n
       }),
-      className: a()(u.productCard, x ? u.opaqueBackground : u.solidBackground, u.cardClickableContainer),
-      onClick: C,
-      children: T
+      className: l()(p.productCard, v ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
+      onClick: y,
+      children: A
     })
   })
 }

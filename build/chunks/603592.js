@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(91192),
-  a = n(481060),
+  a = n(91192),
+  s = n(481060),
   c = n(276952),
   u = n(682662),
   d = n(662146),
@@ -26,12 +26,12 @@ let p = i.forwardRef(function(e, t) {
     lowerBadgeSize: v,
     showPill: C = !0,
     className: j,
-    "aria-label": E,
-    children: S,
+    "aria-label": S,
+    children: E,
     onMouseEnter: x,
     onMouseLeave: I,
     onMouseDown: P
-  } = e, N = (0, s.Ie)(p), [w, Z] = i.useState(!1);
+  } = e, N = (0, a.Ie)(p), [w, Z] = i.useState(!1);
   return (0, r.jsxs)(u.H, {
     children: [C ? (0, r.jsx)("div", {
       className: h.pill,
@@ -42,12 +42,12 @@ let p = i.forwardRef(function(e, t) {
     }) : null, (0, r.jsx)(d.Z, {
       text: _,
       selected: b,
-      children: (0, r.jsx)(a.aRk, {
+      children: (0, r.jsx)(s.aRk, {
         selected: !0,
         upperBadge: O,
         lowerBadge: y,
         lowerBadgeSize: v,
-        children: (0, r.jsx)(a.P3F, (n = function(e) {
+        children: (0, r.jsx)(s.P3F, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -77,7 +77,7 @@ let p = i.forwardRef(function(e, t) {
             [h.selected]: b || w
           }),
           onClick: f,
-          "aria-label": "string" == typeof _ && null == E ? _ : E,
+          "aria-label": "string" == typeof _ && null == S ? _ : S,
           "aria-selected": b,
           onContextMenu: g,
           focusProps: {
@@ -99,6 +99,6 @@ let p = i.forwardRef(function(e, t) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
         }), n))
       })
-    }), S]
+    }), E]
   })
 })

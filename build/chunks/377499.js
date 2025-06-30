@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => o
 });
@@ -19,19 +19,19 @@ function o(e) {
     } = e,
     m = (0, i.ZP)(o),
     f = m.nick,
-    h = s(m),
-    g = (0, i.Sw)(c, p);
-  if (null != g && null != u) {
-    let e = u(g);
+    g = s(m),
+    _ = (0, i.Sw)(c, p);
+  if (null != _ && null != u) {
+    let e = u(_);
     t = a.intl.format(a.t.L2FyVl, {
       username: f,
-      usernameHook: h,
-      otherUsername: g.nick,
+      usernameHook: g,
+      otherUsername: _.nick,
       otherUsernameHook: e
     })
   } else t = a.intl.format(a.t["5v2xa2"], {
     username: f,
-    usernameHook: h
+    usernameHook: g
   });
   return (0, r.jsx)(l.Z, {
     icon: n(474019),

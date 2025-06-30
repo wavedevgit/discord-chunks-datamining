@@ -1,25 +1,25 @@
-/** Chunk was on 86350 **/
+/** Chunk was on 81872 **/
 n.d(t, {
   R: () => m
 });
 var r = n(255367),
   i = n(73800),
   l = n(392711),
-  a = n(695469),
-  o = n(442837),
+  o = n(695469),
+  a = n(442837),
   s = n(481060),
   c = n(709706),
   u = n(378441),
   d = n(358820),
-  f = n(388032),
-  p = n(690410);
+  p = n(388032),
+  f = n(690410);
 
 function m() {
   let {
     hasActiveDownloads: e,
     progress: t
   } = function() {
-    let e = (0, o.cj)([c.Z], () => c.Z.getOngoingDownloads()),
+    let e = (0, a.cj)([c.Z], () => c.Z.getOngoingDownloads()),
       t = i.useRef({});
     i.useEffect(() => {
       0 === Object.entries(e).length && (t.current = {}), Object.assign(t.current, e)
@@ -31,7 +31,7 @@ function m() {
         } = e;
         return (null != t ? t : 0) > 0
       }),
-      a = (0, l.sumBy)(n, e => {
+      o = (0, l.sumBy)(n, e => {
         var t;
         return null != (t = null == e ? void 0 : e.downloadedBytes) ? t : 0
       }),
@@ -41,7 +41,7 @@ function m() {
       });
     return {
       hasActiveDownloads: r,
-      progress: 0 === s ? 0 : Math.floor(a / s * 100)
+      progress: 0 === s ? 0 : Math.floor(o / s * 100)
     }
   }(), {
     activeVoice: n
@@ -59,17 +59,17 @@ function m() {
       opacity: 0,
       translateY: 80
     }
-  }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(a.animated.div, {
+  }, "respect-motion-settings")((e, n) => null != n ? (0, r.jsx)(o.animated.div, {
     style: e,
-    className: p.floaterWrapper,
+    className: f.floaterWrapper,
     children: (0, r.jsxs)("div", {
-      className: p.visibleFloater,
+      className: f.visibleFloater,
       children: [(0, r.jsxs)("div", {
-        className: p.progressText,
+        className: f.progressText,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-primary",
-          children: f.intl.format(f.t["r+uZYW"], {
+          children: p.intl.format(p.t["r+uZYW"], {
             progress: t
           })
         }), (0, r.jsx)(s.zxk, {
@@ -79,7 +79,7 @@ function m() {
           children: (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "text-primary",
-            children: f.intl.string(f.t["ETE/oK"])
+            children: p.intl.string(p.t["ETE/oK"])
           })
         })]
       }), (0, r.jsx)(s.Exd, {

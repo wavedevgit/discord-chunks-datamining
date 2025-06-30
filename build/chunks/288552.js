@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   a: () => o
 });
@@ -11,13 +11,13 @@ let o = e => {
     text: t,
     icon: n,
     onClick: o,
-    ref: s
+    ref: a
   } = e;
   return (0, r.jsxs)(i.zxk, {
     className: l.button,
     innerClassName: l.buttonInner,
     onClick: o,
-    buttonRef: s,
+    buttonRef: a,
     children: [(0, r.jsx)(n, {
       color: "currentColor"
     }), (0, r.jsx)(i.Text, {

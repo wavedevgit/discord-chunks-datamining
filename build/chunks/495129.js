@@ -1,6 +1,6 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
-  H: () => C
+  H: () => x
 }), n(35282);
 var r = n(255367);
 n(73800);
@@ -15,17 +15,17 @@ var i = n(120356),
   p = n(779125),
   m = n(599706),
   f = n(703656),
-  h = n(592125),
-  g = n(430824),
-  _ = n(594174),
+  g = n(592125),
+  _ = n(430824),
+  h = n(594174),
   b = n(938475),
-  x = n(5192),
+  E = n(5192),
   y = n(981631),
-  E = n(388032),
+  C = n(388032),
   v = n(653072);
 
-function C(e) {
-  var t, n, i, C, O, j, S, I, T, N;
+function x(e) {
+  var t, n, i, x, O, j, I, S, T, N;
   let {
     message: P,
     channel: A
@@ -34,31 +34,31 @@ function C(e) {
       rawName: t
     } = e;
     return "guild_id" === t
-  })) ? void 0 : t.rawValue, Z = null == (j = P.embeds[0]) || null == (O = j.fields) || null == (C = O.find(e => {
+  })) ? void 0 : t.rawValue, Z = null == (j = P.embeds[0]) || null == (O = j.fields) || null == (x = O.find(e => {
     let {
       rawName: t
     } = e;
     return "channel_id" === t
-  })) ? void 0 : C.rawValue, R = (0, a.e7)([g.Z], () => g.Z.getGuild(w)), k = (0, a.e7)([h.Z], () => h.Z.getChannel(Z)), L = (0, a.e7)([_.default], () => _.default.getCurrentUser()), D = (0, a.e7)([], () => P.author.id === (null == L ? void 0 : L.id)), M = null == (S = A.recipients) ? void 0 : S.find(e => e !== P.author.id), U = (0, a.e7)([_.default], () => null != M ? _.default.getUser(M) : null), F = (0, d.ZP)(P), B = (0, x._T)(A.getGuildId(), A.id, U), G = (0, a.Wu)([b.ZP], () => null != k ? b.ZP.getVoiceStatesForChannel(k) : [], [k]), H = G.some(e => e.user.id === (null == L ? void 0 : L.id)), V = null == (N = P.embeds[0]) || null == (T = N.fields) || null == (I = T.find(e => {
+  })) ? void 0 : x.rawValue, R = (0, a.e7)([_.Z], () => _.Z.getGuild(w)), k = (0, a.e7)([g.Z], () => g.Z.getChannel(Z)), L = (0, a.e7)([h.default], () => h.default.getCurrentUser()), D = (0, a.e7)([], () => P.author.id === (null == L ? void 0 : L.id)), M = null == (I = A.recipients) ? void 0 : I.find(e => e !== P.author.id), U = (0, a.e7)([h.default], () => null != M ? h.default.getUser(M) : null), F = (0, d.ZP)(P), B = (0, E._T)(A.getGuildId(), A.id, U), G = (0, a.Wu)([b.ZP], () => null != k ? b.ZP.getVoiceStatesForChannel(k) : [], [k]), H = G.some(e => e.user.id === (null == L ? void 0 : L.id)), V = null == (N = P.embeds[0]) || null == (T = N.fields) || null == (S = T.find(e => {
     let {
       rawName: t
     } = e;
     return "voice_user_ids" === t
-  })) ? void 0 : I.rawValue, z = null != V ? V.split(",") : [], W = (0, a.Wu)([_.default], () => z.map(e => _.default.getUser(e)).filter(Boolean)), K = D && null != U ? E.intl.formatToPlainString(E.t["er/cHx"], {
+  })) ? void 0 : S.rawValue, z = null != V ? V.split(",") : [], W = (0, a.Wu)([h.default], () => z.map(e => h.default.getUser(e)).filter(Boolean)), K = D && null != U ? C.intl.formatToPlainString(C.t["er/cHx"], {
     username: B
-  }) : E.intl.formatToPlainString(E.t.noNjkZ, {
+  }) : C.intl.formatToPlainString(C.t.noNjkZ, {
     username: F.nick
   }), Y = null != R && null != k, X = null;
-  X = Y ? D || H ? E.intl.format(E.t.CaLQqK, {
+  X = Y ? D || H ? C.intl.format(C.t.CaLQqK, {
     channelHook: (e, t) => (0, r.jsx)(p.Z, {
       channel: null != k ? k : void 0
     }, t)
-  }) : E.intl.format(E.t.VugXpK, {
+  }) : C.intl.format(C.t.VugXpK, {
     channelHook: (e, t) => (0, r.jsx)(p.Z, {
       channel: null != k ? k : void 0
     }, t)
-  }) : E.intl.string(E.t["tHT/Vl"]), 0 === G.length && (X = D ? E.intl.string(E.t.IE2uZW) : E.intl.string(E.t.QVhmGx));
-  let q = D ? E.intl.string(E.t["00XIbm"]) : E.intl.string(E.t["7CrE9/"]);
+  }) : C.intl.string(C.t["tHT/Vl"]), 0 === G.length && (X = D ? C.intl.string(C.t.IE2uZW) : C.intl.string(C.t.QVhmGx));
+  let q = D ? C.intl.string(C.t["00XIbm"]) : C.intl.string(C.t["7CrE9/"]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
       className: v.card,
@@ -108,7 +108,7 @@ function C(e) {
         children: [(0, r.jsx)(o.gj8, {
           size: "md",
           color: "currentColor"
-        }), E.intl.string(E.t.zIeJq6)]
+        }), C.intl.string(C.t.zIeJq6)]
       }), (0, r.jsx)(o.zxk, {
         color: o.zxk.Colors.PRIMARY,
         onClick: () => {

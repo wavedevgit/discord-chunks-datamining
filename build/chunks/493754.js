@@ -7,8 +7,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  o = n(512722),
-  a = n.n(o),
+  a = n(512722),
+  o = n.n(a),
   s = n(442837),
   c = n(481060),
   u = n(924301),
@@ -56,8 +56,8 @@ function y(e) {
     guild: t,
     channel: i,
     streamUserId: l,
-    applicationId: o,
-    appContext: a,
+    applicationId: a,
+    appContext: o,
     exitFullScreen: s,
     analyticsLocation: u,
     guildScheduledEvent: d
@@ -70,14 +70,14 @@ function y(e) {
       guild: t,
       channel: i,
       streamUserId: l,
-      applicationId: o,
+      applicationId: a,
       analyticsLocation: u,
       source: i.isGuildStageVoice() ? f.t4x.STAGE_CHANNEL : f.t4x.STREAM_INVITE,
       guildScheduledEvent: d
     }))
   }, {
     modalKey: "stream-invite-modal",
-    contextKey: a === f.IlC.POPOUT ? c.u1M : c.z1l
+    contextKey: o === f.IlC.POPOUT ? c.u1M : c.z1l
   })
 }
 
@@ -85,7 +85,7 @@ function C(e) {
   var t, {
       stream: n,
       applicationId: i,
-      channel: o,
+      channel: a,
       exitFullScreen: C,
       appContext: x,
       analyticsLocation: v,
@@ -106,20 +106,20 @@ function C(e) {
       }
       return i
     }(e, ["stream", "applicationId", "channel", "exitFullScreen", "appContext", "analyticsLocation", "className"]);
-  let E = null == o ? void 0 : o.getGuildId(),
-    I = null == o ? void 0 : o.id,
-    S = (0, s.e7)([p.Z], () => null != E ? p.Z.getGuild(E) : null, [E]),
-    P = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(I), [I]);
-  if (!(null != S && null != o && h.Z.can(f.Plq.CREATE_INSTANT_INVITE, o))) return null;
+  let E = null == a ? void 0 : a.getGuildId(),
+    S = null == a ? void 0 : a.id,
+    I = (0, s.e7)([p.Z], () => null != E ? p.Z.getGuild(E) : null, [E]),
+    P = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(S), [S]);
+  if (!(null != I && null != a && h.Z.can(f.Plq.CREATE_INSTANT_INVITE, a))) return null;
   let Z = m.intl.string(m.t.VINpSE);
   return null != n ? Z = m.intl.string(m.t["6VQaqa"]) : null != i && (Z = m.intl.string(m.t["OzOM/v"])), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.zxk, _(b({
       size: null != (t = O.size) ? t : c.zxk.Sizes.SMALL,
       color: g.buttonColor,
       onClick: () => {
-        a()(null != S, "guild cannot be null"), a()(null != o, "channel cannot be null"), y({
-          guild: S,
-          channel: o,
+        o()(null != I, "guild cannot be null"), o()(null != a, "channel cannot be null"), y({
+          guild: I,
+          channel: a,
           streamUserId: null == n ? void 0 : n.ownerId,
           applicationId: i,
           appContext: x,
@@ -132,7 +132,7 @@ function C(e) {
     }, O), {
       children: Z
     })), (0, r.jsx)(d.Z, {
-      channel: o,
+      channel: a,
       stream: n,
       appContext: x,
       className: l()(j, g.iconButton),

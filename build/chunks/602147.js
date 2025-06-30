@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => m
 });
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(636977),
   o = n(481060),
-  s = n(571457),
-  a = n(836768),
+  a = n(571457),
+  s = n(836768),
   c = n(749681),
   u = n(258971),
   d = n(603592),
@@ -22,10 +22,10 @@ let m = i.forwardRef(function(e, t) {
     questId: b,
     className: _
   } = e, O = i.useCallback(() => {
-    (0, s.k5)({
+    (0, a.k5)({
       source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
     });
-    let e = void 0 !== b ? h.GlobalDiscoveryTab.QUESTS : a.Z.getField("selectedTab");
+    let e = void 0 !== b ? h.GlobalDiscoveryTab.QUESTS : s.Z.getField("selectedTab");
     switch (e) {
       case h.GlobalDiscoveryTab.QUESTS:
         return (0, c.transitionToGlobalDiscovery)({

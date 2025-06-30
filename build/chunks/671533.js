@@ -1,4 +1,4 @@
-/** Chunk was on 97870 **/
+/** Chunk was on 93955 **/
 n.d(t, {
   Z: () => d
 }), n(415506);
@@ -7,19 +7,19 @@ n(73800);
 var i = n(120356),
   o = n.n(i),
   c = n(325767),
-  l = n(789700),
-  s = ((a = {}).LEFT = "LEFT", a.RIGHT = "RIGHT", a.UP = "UP", a.DOWN = "DOWN", a.UP_LEFT = "UP_LEFT", a.DOWN_RIGHT = "DOWN_RIGHT", a);
+  s = n(789700),
+  l = ((a = {}).LEFT = "LEFT", a.RIGHT = "RIGHT", a.UP = "UP", a.DOWN = "DOWN", a.UP_LEFT = "UP_LEFT", a.DOWN_RIGHT = "DOWN_RIGHT", a);
 let u = e => {
   var t, n, {
       width: a = 24,
       height: i = 24,
-      color: s = "currentColor",
+      color: l = "currentColor",
       direction: u,
       foreground: d,
-      className: _,
-      title: p
+      className: p,
+      title: _
     } = e,
-    m = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
       var n, a, r = function(e, t) {
         if (null == e) return {};
@@ -51,33 +51,33 @@ let u = e => {
       })
     }
     return e
-  }({}, (0, c.Z)(m)), n = n = {
+  }({}, (0, c.Z)(g)), n = n = {
     width: a,
     height: i,
-    className: o()(_, function(e) {
+    className: o()(p, function(e) {
       switch (e) {
         case "LEFT":
-          return l.left;
+          return s.left;
         case "RIGHT":
-          return l.right;
+          return s.right;
         case "UP":
           return null;
         case "DOWN":
-          return l.down;
+          return s.down;
         case "UP_LEFT":
-          return l.upLeft;
+          return s.upLeft;
         case "DOWN_RIGHT":
-          return l.downRight;
+          return s.downRight;
         default:
           throw Error("Invalid Direction ".concat(e))
       }
     }(u)),
     viewBox: "0 0 24 24",
-    children: [null != p ? (0, r.jsx)("title", {
-      children: p
+    children: [null != _ ? (0, r.jsx)("title", {
+      children: _
     }) : null, (0, r.jsx)("polygon", {
       className: d,
-      fill: s,
+      fill: l,
       fillRule: "nonzero",
       points: "13 20 11 20 11 8 5.5 13.5 4.08 12.08 12 4.16 19.92 12.08 18.5 13.5 13 8"
     })]
@@ -92,5 +92,5 @@ let u = e => {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 };
-u.Directions = s;
+u.Directions = l;
 let d = u

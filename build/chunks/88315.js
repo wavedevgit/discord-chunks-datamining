@@ -1,9 +1,9 @@
-/** Chunk was on 94357 **/
+/** Chunk was on 83976 **/
 n.d(t, {
-  P7: () => p,
-  RR: () => m,
+  P7: () => m,
+  RR: () => p,
   UN: () => c,
-  bg: () => E,
+  bg: () => g,
   hn: () => d,
   np: () => f
 });
@@ -11,8 +11,8 @@ var r = n(979590),
   l = n.n(r),
   i = n(866442),
   a = n(220082),
-  u = n(594174),
-  o = n(984063),
+  o = n(594174),
+  u = n(984063),
   s = n(813900);
 
 function c(e) {
@@ -38,7 +38,7 @@ function f(e, t) {
   return Math.round(e * t * window.devicePixelRatio)
 }
 
-function m(e, t, n) {
+function p(e, t, n) {
   return {
     x: f(e.x, t),
     y: f(e.y, n),
@@ -46,23 +46,23 @@ function m(e, t, n) {
   }
 }
 
-function p(e) {
-  return e.type === o.W.LINE
+function m(e) {
+  return e.type === u.W.LINE
 }
 
-function E(e, t, n, r) {
-  var o;
-  let c = u.default.getUser(e),
+function g(e, t, n, r) {
+  var u;
+  let c = o.default.getUser(e),
     d = null == c ? void 0 : c.getAvatarURL(null, s.Ks),
-    f = null != d ? null == (o = a.SR.getState().palette[d]) ? void 0 : o[0] : null,
-    m = null != f ? "#".concat(l()({
+    f = null != d ? null == (u = a.SR.getState().palette[d]) ? void 0 : u[0] : null,
+    p = null != f ? "#".concat(l()({
       r: f[0],
       g: f[1],
       b: f[2]
     }).toHex()) : r,
-    p = (0, i.Bd)((0, i._i)(m)) > .5 ? n : t;
+    m = (0, i.Bd)((0, i._i)(p)) > .5 ? n : t;
   return {
-    fillColor: m,
-    outlineColor: p
+    fillColor: p,
+    outlineColor: m
   }
 }

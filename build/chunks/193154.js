@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(91192),
   o = n(481060),
-  s = n(460562),
-  a = n(768581),
+  a = n(460562),
+  s = n(768581),
   c = n(682662),
   u = n(662146),
   d = n(138439);
@@ -40,7 +40,7 @@ function p(e) {
         className: d.circleIconButton,
         selected: t,
         lowerBadge: (0, r.jsx)(o.G2e, {
-          icon: (0, o.GSL)(s.Z),
+          icon: (0, o.GSL)(a.Z),
           disableColor: !0,
           className: d.geoRestrictedBadge
         }),
@@ -63,7 +63,7 @@ function p(e) {
               }, n))
             })
           },
-          icon: null != e.icon ? a.ZP.getGuildIconURL({
+          icon: null != e.icon ? s.ZP.getGuildIconURL({
             id: e.id,
             icon: e.icon,
             canAnimate: !1,

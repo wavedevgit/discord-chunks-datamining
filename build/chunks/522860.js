@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => c
 });
@@ -19,19 +19,19 @@ function c(e) {
     onJoinStream: d,
     usernameHook: p,
     compact: m
-  } = e, f = (0, a.ZP)(n), h = null == (t = n.call) ? void 0 : t.duration, g = p(f), _ = s.intl.format(s.t.FKXvaG, {
+  } = e, f = (0, a.ZP)(n), g = null == (t = n.call) ? void 0 : t.duration, _ = p(f), h = s.intl.format(s.t.FKXvaG, {
     username: f.nick,
     activityName: null != u ? u.name : "unknown",
     onJoinStream: d,
-    usernameHook: g
+    usernameHook: _
   });
-  return null != h && (_ = s.intl.format(s.t.NEFxtb, {
+  return null != g && (h = s.intl.format(s.t.NEFxtb, {
     username: f.nick,
-    duration: h.humanize(),
+    duration: g.humanize(),
     channelName: c.name,
-    usernameHook: g
+    usernameHook: _
   })), (0, r.jsx)(o.Z, {
-    iconNode: null != h ? (0, r.jsx)(i.g5r, {
+    iconNode: null != g ? (0, r.jsx)(i.g5r, {
       size: "custom",
       color: "currentColor",
       width: 20,
@@ -41,6 +41,6 @@ function c(e) {
     }),
     timestamp: n.timestamp,
     compact: m,
-    children: _
+    children: h
   })
 }

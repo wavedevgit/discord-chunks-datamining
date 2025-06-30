@@ -39,9 +39,9 @@ function p(e) {
     className: n,
     onPageChange: i,
     onMemberSelect: s
-  } = e, p = t.id, g = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(p), [p]), v = (0, d.$j)(p), C = (0, d.M3)(p), _ = l.useCallback(e => {
+  } = e, p = t.id, g = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(p), [p]), v = (0, d.$j)(p), _ = (0, d.M3)(p), C = l.useCallback(e => {
     null != e && (null == s || s(e))
-  }, [s]), T = (0, m.xb)(C, v, g), N = l.useRef(null), E = l.useRef(null), S = l.useCallback(() => {
+  }, [s]), T = (0, m.xb)(_, v, g), N = l.useRef(null), E = l.useRef(null), S = l.useCallback(() => {
     var e;
     null == (e = N.current) || e.resetSearchText()
   }, []);
@@ -58,7 +58,7 @@ function p(e) {
         guild: t
       }), (0, r.jsx)(x.Z, {
         guild: t,
-        onSelectRow: _,
+        onSelectRow: C,
         searchState: T,
         onResetForNewMembers: S
       }), T !== m.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(h.Z, {

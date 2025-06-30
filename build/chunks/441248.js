@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   k: () => b
 });
@@ -7,8 +7,8 @@ n(73800);
 var i = n(120356),
   l = n.n(i),
   o = n(481060),
-  s = n(40614),
-  a = n(736409),
+  a = n(40614),
+  s = n(736409),
   c = n(12694),
   u = n(925329),
   d = n(810568),
@@ -59,7 +59,7 @@ function b(e) {
         color: "currentColor",
         className: g.liveBadge
       }) : null]
-    }), (0, r.jsx)(a.j, {
+    }), (0, r.jsx)(s.j, {
       isForceShowSharingPopout: d,
       setIsForceShowSharingPopout: h,
       children: (0, r.jsxs)("div", {
@@ -67,7 +67,7 @@ function b(e) {
         children: [null != p ? (0, r.jsx)(m, {
           name: p,
           applicationId: null == n ? void 0 : n.id
-        }) : null, (0, r.jsx)(s.V, {
+        }) : null, (0, r.jsx)(a.V, {
           onClick: l
         })]
       })

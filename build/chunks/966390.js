@@ -1,11 +1,11 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(570140),
   i = n(703558),
   l = n(62817);
-let o = {
+let a = {
   cancel(e, t) {
     r.Z.dispatch({
       type: "UPLOAD_CANCEL_REQUEST",

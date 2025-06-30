@@ -337,6 +337,16 @@ let F = e => {
         }
       }
     },
+    gameMention: {
+      order: o().defaultRules.text.order,
+      requiredFirstCharacters: ["<"],
+      match: (e, t) => t.allowGameMentions ? /^<@\$(\d+)>/.exec(e) : null,
+      parse: (e, t, n) => ({
+        type: "gameMention",
+        applicationId: e[1],
+        channelId: n.channelId
+      })
+    },
     emoji: {
       order: T.ZP.order,
       requiredFirstCharacters: [":"],
@@ -425,8 +435,8 @@ let F = e => {
   },
   Y = (0, C.Z)([H, S.Z]),
   W = i().omit(Y, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext", "soundboard"]),
-  K = i().omit(Y, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard"]),
-  z = i().omit(Y, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard"]),
+  K = i().omit(Y, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard", "gameMention"]),
+  z = i().omit(Y, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard", "gameMention"]),
   q = i().omit((0, C.Z)([Y, {
     inlineCode: {
       match(e, t, n) {

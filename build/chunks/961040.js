@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(255367),
   i = n(73800),
   l = n(481060),
   o = n(570140),
-  s = n(493773),
-  a = n(585483),
+  a = n(493773),
+  s = n(585483),
   c = n(82409),
   u = n(981631),
   d = n(388032),
@@ -24,12 +24,12 @@ function p(e) {
   }, []), _ = i.useCallback(() => {
     m(!g)
   }, [g]);
-  return (0, s.ZP)(() => {
+  return (0, a.ZP)(() => {
     let e = () => {
       m(!1)
     };
     return o.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => o.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-  }), i.useEffect(() => (a.S.subscribe(u.CkL.TOGGLE_INBOX, _), () => void a.S.unsubscribe(u.CkL.TOGGLE_INBOX, _)), [_]), (0, r.jsx)(l.yRy, {
+  }), i.useEffect(() => (s.S.subscribe(u.CkL.TOGGLE_INBOX, _), () => void s.S.unsubscribe(u.CkL.TOGGLE_INBOX, _)), [_]), (0, r.jsx)(l.yRy, {
     targetElementRef: f,
     shouldShow: g,
     align: p,

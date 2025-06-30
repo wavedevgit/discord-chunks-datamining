@@ -18,14 +18,14 @@ var a = n(255367),
   b = n(581883),
   f = n(899667),
   v = n(430824),
-  _ = n(914010),
+  j = n(914010),
   g = n(981631),
-  j = n(444048);
+  _ = n(444048);
 let y = [o.z.GUILD_POWERUP_PERKS_COACHMARK, o.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, o.z.GUILD_POWERUP_NOTIFICATION, o.z.GUILD_TAG_AVAILABLE_COACHMARK],
   C = [o.C.GUILD_POWERUP_LEVEL_1_COACHMARK, o.C.GUILD_POWERUP_LEVEL_2_COACHMARK, o.C.GUILD_POWERUP_LEVEL_3_COACHMARK, o.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, o.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, o.C.GUILD_POWERUP_BOTH_SKU_PURCHASE_COACHMARK],
-  N = [o.C.ADOPT_CLAN_IDENTITY_NOTICE];
+  O = [o.C.ADOPT_CLAN_IDENTITY_NOTICE];
 
-function O(e) {
+function N(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -43,7 +43,7 @@ function O(e) {
       return "ADOPT_CLAN_IDENTITY_NOTICE"
   }
 }
-async function T(e, t, n) {
+async function E(e, t, n) {
   await Promise.all(t.map(e => s.tn.patch({
     url: g.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
     body: n ? {} : {
@@ -52,7 +52,7 @@ async function T(e, t, n) {
     rejectWithError: !0
   }))), (0, d.C0)(e), (0, h.Fm)(e, !0)
 }
-async function E(e) {
+async function T(e) {
   await s.tn.post({
     url: g.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(e),
     rejectWithError: !0
@@ -61,12 +61,12 @@ async function E(e) {
 
 function S() {
   var e;
-  let t = (0, i.e7)([_.Z], () => _.Z.getGuildId()),
+  let t = (0, i.e7)([j.Z], () => j.Z.getGuildId()),
     n = (0, i.e7)([v.Z], () => {
       var e;
       return null == (e = v.Z.getGuild(t)) ? void 0 : e.name
     }),
-    r = (0, i.Wu)([b.Z], () => [...C, ...N].filter(e => null != t && (0, x.OY)(e, t))),
+    r = (0, i.Wu)([b.Z], () => [...C, ...O].filter(e => null != t && (0, x.OY)(e, t))),
     l = null != (e = (0, i.e7)([b.Z], () => {
       var e;
       return null == (e = b.Z.settings.userContent) ? void 0 : e.dismissedContents
@@ -76,18 +76,18 @@ function S() {
       return null != t && null != (e = f.Z.getAppliedGuildBoostsForGuild(t)) ? e : []
     });
   if (null != t) return (0, a.jsxs)(c.zJl, {
-    className: j.container,
+    className: _.container,
     children: [(0, a.jsx)("div", {
-      className: j.section,
+      className: _.section,
       children: (0, a.jsx)(c.X6q, {
         variant: "heading-md/normal",
         children: "Current guild: ".concat(n)
       })
     }), (0, a.jsxs)("div", {
-      className: j.section,
+      className: _.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
-        className: j.header,
+        className: _.header,
         children: "Reset Notification Indicators"
       }), (0, a.jsx)(c.zxk, {
         onClick: () => {
@@ -96,87 +96,87 @@ function S() {
         children: "Reset"
       })]
     }), (0, a.jsxs)("div", {
-      className: j.section,
+      className: _.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
-        className: j.header,
+        className: _.header,
         children: "Reset Progress Bar State"
       }), (0, a.jsx)(c.zxk, {
         onClick: m.q,
         children: "Reset"
       })]
     }), (0, a.jsxs)("div", {
-      className: j.section,
+      className: _.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
         children: "Set Warning State"
       }), (0, a.jsxs)("div", {
         children: [(0, a.jsx)(c.zxk, {
           onClick: () => {
-            T(t, s.slice(Math.floor(s.length / 2)), !1)
+            E(t, s.slice(Math.floor(s.length / 2)), !1)
           },
           children: "Set Half Boosts expiring in 1 day"
         }), (0, a.jsx)(c.zxk, {
           onClick: () => {
-            T(t, s, !0)
+            E(t, s, !0)
           },
           children: "Reset End Date"
         })]
       })]
     }), (0, a.jsxs)("div", {
-      className: j.section,
+      className: _.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
-        className: j.header,
+        className: _.header,
         children: "Reset User Level DCs"
       }), y.map(e => (0, a.jsx)(u.u, {
-        className: j.formSwitch,
+        className: _.formSwitch,
         contents: l,
         content: o.z[e],
         onChange: () => {}
       }, o.z[e]))]
     }), (0, a.jsxs)("div", {
-      className: j.section,
+      className: _.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
-        className: j.header,
+        className: _.header,
         children: "Reset Guild Level DCs"
       }), C.map(e => (0, a.jsx)(c.j7V, {
-        className: j.formSwitch,
+        className: _.formSwitch,
         onChange: n => {
           n ? (0, x.Qd)(e, t, !1) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
         },
         value: r.includes(e),
         children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O(e)
+          children: N(e)
         })
       }, e))]
     }), (0, a.jsxs)("div", {
-      className: j.section,
+      className: _.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
         children: "Reset Server Tag Guild Level DCs"
-      }), N.map(e => (0, a.jsx)(c.j7V, {
-        className: j.formSwitch,
+      }), O.map(e => (0, a.jsx)(c.j7V, {
+        className: _.formSwitch,
         onChange: n => {
           n ? (0, x.Qd)(e, t, !1) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
         },
         value: r.includes(e),
         children: (0, a.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: O(e)
+          children: N(e)
         })
       }, e))]
     }), (0, a.jsxs)("div", {
-      className: j.section,
+      className: _.section,
       children: [(0, a.jsx)(c.Text, {
         variant: "eyebrow",
-        className: j.header,
+        className: _.header,
         children: "Send Powerups System Message"
       }), (0, a.jsx)(c.zxk, {
         onClick: () => {
-          E(t)
+          T(t)
         },
         children: "Send System Message"
       })]

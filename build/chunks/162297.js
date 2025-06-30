@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => f
 }), n(388685);
@@ -25,13 +25,13 @@ function f(e) {
     customInstallUrl: l.customInstallUrl,
     installParams: l.installParams,
     integrationTypesConfig: l.integrationTypesConfig
-  })) ? (0, r.jsx)(h, {
+  })) ? (0, r.jsx)(g, {
     application: l,
     embedUrl: n
   }) : null
 }
 
-function h(e) {
+function g(e) {
   let {
     application: t,
     embedUrl: n

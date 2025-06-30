@@ -1,18 +1,18 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(35282);
 var r = n(255367);
 n(73800);
 var i = n(3570),
   l = n(685311),
-  a = n(186901);
-let o = function(e) {
+  s = n(186901);
+let a = function(e) {
   let {
     match: t,
     location: n
-  } = e, o = async (e, t) => {
-    await (0, i.s)(a.jE.PICK_GUILD_SETTINGS, {
+  } = e, a = async (e, t) => {
+    await (0, i.s)(s.jE.PICK_GUILD_SETTINGS, {
       section: e.params.section,
       subsection: e.params.subsection,
       search: t.search
@@ -21,6 +21,6 @@ let o = function(e) {
   return (0, r.jsx)(l.Z, {
     match: t,
     location: n,
-    attemptDeepLink: o
+    attemptDeepLink: a
   })
 }

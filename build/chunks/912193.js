@@ -1,6 +1,6 @@
-/** Chunk was on 74739 **/
+/** Chunk was on 68024 **/
 n.d(t, {
-  b: () => E
+  b: () => d
 });
 var r = n(255367);
 n(73800);
@@ -18,7 +18,7 @@ function u() {
   l.Z.setSilenceWarning(!1)
 }
 
-function E() {
+function d() {
   c = (0, i.h7j)(e => (0, r.jsx)(o.default, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

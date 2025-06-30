@@ -1,12 +1,12 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => S
+  Z: () => I
 });
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(704215),
   c = n(481060),
   u = n(566620),
@@ -25,12 +25,12 @@ var r = n(255367),
   j = n(921944),
   O = n(388032),
   E = n(560163);
-let I = i.forwardRef(function(e, t) {
+let S = i.forwardRef(function(e, t) {
     var n, l;
     let {
       type: f,
       animateRef: m
-    } = e, b = (0, a.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === f), {
+    } = e, b = (0, o.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === f), {
       Component: y,
       events: C,
       play: x
@@ -40,17 +40,17 @@ let I = i.forwardRef(function(e, t) {
         C.onMouseEnter()
       }
     }), [C]);
-    let I = i.useCallback(() => {
+    let S = i.useCallback(() => {
         b ? d.yT(h.ti.DISMISSED) : ((0, _.EW)(s.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
           dismissAction: j.L.TAKE_ACTION
         }), d.__(h._b.TEXT, f), u.ux()), x()
       }, [b, f, x]),
-      S = (0, r.jsx)(y, {
+      I = (0, r.jsx)(y, {
         size: "refresh_sm",
         color: "currentColor"
       });
     return (0, r.jsx)("div", {
-      className: o()(E.buttonContainer, v.t4),
+      className: a()(E.buttonContainer, v.t4),
       ref: t,
       children: (0, r.jsx)(c.zxk, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -73,10 +73,10 @@ let I = i.forwardRef(function(e, t) {
         look: c.zxk.Looks.BLANK,
         size: c.zxk.Sizes.NONE,
         tabIndex: 0,
-        className: o()(E.button, {
+        className: a()(E.button, {
           [E.buttonActive]: b
         }),
-        onClick: I,
+        onClick: S,
         "aria-label": O.intl.string(O.t.erHFxM),
         "aria-expanded": b,
         "aria-haspopup": "dialog",
@@ -90,7 +90,7 @@ let I = i.forwardRef(function(e, t) {
         },
         innerClassName: E.buttonContents
       }, C), l = l = {
-        children: S
+        children: I
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -103,18 +103,18 @@ let I = i.forwardRef(function(e, t) {
       }), n))
     })
   }),
-  S = i.memo(function(e) {
+  I = i.memo(function(e) {
     let {
       channel: t,
       type: n,
       animateRef: l,
-      entryPointCommandButtonRef: o
+      entryPointCommandButtonRef: a
     } = e, s = i.useRef(null), c = (0, m.R)({
       channel: t,
       chatInputType: n
     }), u = (0, x.Z)({
       type: n
-    }), d = (0, b.Q)(t.id), h = (0, a.e7)([p.Z], () => p.Z.appDMChannelsWithFailedLoads().has(t.id)), {
+    }), d = (0, b.Q)(t.id), h = (0, o.e7)([p.Z], () => p.Z.appDMChannelsWithFailedLoads().has(t.id)), {
       visible: g
     } = (0, C.xL)();
     return c ? (0, r.jsxs)("div", {
@@ -124,13 +124,13 @@ let I = i.forwardRef(function(e, t) {
         animationContainerClassName: E.entrypointAnimation,
         glowClassName: E.animationGlow,
         trinketsClassName: E.animationTrinkets,
-        children: (0, r.jsx)(I, {
+        children: (0, r.jsx)(S, {
           type: n,
           ref: s,
           animateRef: l
         })
       }), u ? (0, r.jsx)(f.Z, {
-        positionTargetRef: d && !h && g ? o : s,
+        positionTargetRef: d && !h && g ? a : s,
         channel: t
       }) : null]
     }) : null

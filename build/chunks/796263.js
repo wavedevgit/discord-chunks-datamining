@@ -1,18 +1,18 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(624848);
 
-function o(e) {
+function a(e) {
   let {
     text: t,
     icon: n,
-    onClick: o,
-    disabled: a,
+    onClick: a,
+    disabled: o,
     submitting: s
   } = e;
   return (0, r.jsx)(i.ua7, {
@@ -40,8 +40,8 @@ function o(e) {
         grow: !1,
         look: i.zxk.Looks.BLANK,
         size: i.zxk.Sizes.ICON,
-        onClick: o,
-        disabled: a,
+        onClick: a,
+        disabled: o,
         submitting: s,
         className: l.button,
         innerClassName: l.buttonInner,

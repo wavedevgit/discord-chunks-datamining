@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(481060),
-  a = n(906732),
+  a = n(481060),
+  o = n(906732),
   s = n(435064),
   c = n(39604),
   u = n(441167),
@@ -24,7 +24,7 @@ function y(e) {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, a.ZP)(), y = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), C = (null == y ? void 0 : y.type) === g.fO.STREAM, x = (0, l.e7)([p.Z], () => C ? p.Z.getActiveStreamForStreamKey(y.id) : null), {
+  } = (0, o.ZP)(), y = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), C = (null == y ? void 0 : y.type) === g.fO.STREAM, x = (0, l.e7)([p.Z], () => C ? p.Z.getActiveStreamForStreamKey(y.id) : null), {
     ignoreSenderPreference: v
   } = u.Z.useExperiment({
     location: "ActionBarClipsButton"
@@ -36,9 +36,9 @@ function y(e) {
   } = (0, l.cj)([s.Z], () => ({
     viewerClippingAllowed: null != x && (s.Z.isViewerClippingAllowedForUser(x.ownerId) || v),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), E = s.Z.getSettings().clipsEnabled, I = (null == x ? void 0 : x.ownerId) === h.default.getId(), S = !E || !(I || j) || O || null == y, P = i.useCallback(e => {
+  })), E = s.Z.getSettings().clipsEnabled, S = (null == x ? void 0 : x.ownerId) === h.default.getId(), I = !E || !(S || j) || O || null == y, P = i.useCallback(e => {
     var t, n;
-    return (0, r.jsx)(o.xmR, (t = function(e) {
+    return (0, r.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -71,11 +71,11 @@ function y(e) {
   return (0, r.jsx)(d.Z, {
     className: _.actionBarButton,
     onClick: () => {
-      S || ((0, m.v)(n, m.d.CLIP), I ? (0, c.C1)() : (0, c.C1)(y.id))
+      I || ((0, m.v)(n, m.d.CLIP), S ? (0, c.C1)() : (0, c.C1)(y.id))
     },
-    disabled: S,
+    disabled: I,
     iconComponent: P,
-    label: null == x ? b.intl.string(b.t.eg5qtb) : I || j ? E ? O ? void 0 : b.intl.string(b.t.U4URzM) : b.intl.string(b.t.wSS1yM) : b.intl.string(b.t.aRifJS),
+    label: null == x ? b.intl.string(b.t.eg5qtb) : S || j ? E ? O ? void 0 : b.intl.string(b.t.U4URzM) : b.intl.string(b.t.wSS1yM) : b.intl.string(b.t.aRifJS),
     grow: !1
   })
 }

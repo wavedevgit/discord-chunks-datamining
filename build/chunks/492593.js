@@ -70,8 +70,8 @@ let g = function(e) {
     isSystemMessage: N,
     hasReply: E,
     author: Z,
-    onMouseEnter: T,
-    onMouseLeave: R
+    onMouseEnter: R,
+    onMouseLeave: T
   } = e, _ = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
@@ -90,11 +90,11 @@ let g = function(e) {
   let k = (0, u.ZP)(null == Z ? void 0 : Z.guildId, null == Z ? void 0 : Z.authorId) && (0, c.S2)(Z),
     [I, M] = l.useState(!1),
     D = l.useCallback(e => {
-      M(!0), null == T || T(e)
-    }, [T]),
-    A = l.useCallback(e => {
-      M(!1), null == R || R(e)
+      M(!0), null == R || R(e)
     }, [R]),
+    A = l.useCallback(e => {
+      M(!1), null == T || T(e)
+    }, [T]),
     L = (0, r.jsx)(s.d.Provider, {
       value: {
         animate: I,

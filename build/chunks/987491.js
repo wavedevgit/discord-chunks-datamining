@@ -20,16 +20,16 @@ var r = n(255367),
   p = n(328977),
   g = n(412222),
   v = n(223312),
-  C = n(172751),
-  _ = n(768762),
+  _ = n(172751),
+  C = n(768762),
   T = n(892001),
   N = n(598077),
   E = n(430824),
   S = n(51144),
   I = n(388032),
   R = n(555405),
-  P = n(710931),
-  O = n(771429),
+  O = n(710931),
+  P = n(771429),
   y = n(350381);
 
 function w(e) {
@@ -70,7 +70,7 @@ function A(e) {
   } = e;
   return (0, r.jsx)("thead", {
     children: (0, r.jsxs)("tr", {
-      className: O.tableHeaderRow,
+      className: P.tableHeaderRow,
       children: [(0, r.jsx)("th", {
         className: R.headerCell,
         children: (0, r.jsx)(d.Text, {
@@ -87,12 +87,12 @@ function A(e) {
             variant: "eyebrow",
             color: "interactive-normal",
             children: I.intl.string(I.t.EZ5QWF)
-          }), t === b.Nw.TIMESTAMP_ASC ? (0, r.jsx)(_.Z, {
+          }), t === b.Nw.TIMESTAMP_ASC ? (0, r.jsx)(C.Z, {
             className: R.sortIcon,
-            direction: _.Z.Directions.UP
-          }) : (0, r.jsx)(_.Z, {
+            direction: C.Z.Directions.UP
+          }) : (0, r.jsx)(C.Z, {
             className: R.sortIcon,
-            direction: _.Z.Directions.DOWN
+            direction: C.Z.Directions.DOWN
           })]
         })
       }), (0, r.jsx)("th", {
@@ -137,7 +137,7 @@ let M = l.memo(function(e) {
           children: (0, r.jsxs)(d.P3F, {
             onClick: o,
             className: y.nameContainer,
-            children: [n.globalName, (0, r.jsx)(C.ZP, {
+            children: [n.globalName, (0, r.jsx)(_.ZP, {
               primaryGuild: null == n ? void 0 : n.primaryGuild,
               userId: null == n ? void 0 : n.id,
               contextGuildId: a,
@@ -321,9 +321,9 @@ function D(e) {
     h.Z.setSelectedSortOrder(t, e), await m(e, n)
   }, [s, t, m, n]);
   return null == a ? null : (0, r.jsx)("div", {
-    className: P.mainTableContainer,
+    className: O.mainTableContainer,
     children: (0, r.jsx)(d.Den, {
-      className: P.horizatonalScroller,
+      className: O.horizatonalScroller,
       ref: i,
       orientation: "horizontal",
       children: (0, r.jsxs)("table", {

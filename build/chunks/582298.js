@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => d
 });
@@ -60,7 +60,7 @@ function d(e) {
         }
       }), (0, a.w)())
     },
-    h = (e, t) => (0, r.jsx)(i.eee, {
+    g = (e, t) => (0, r.jsx)(i.eee, {
       className: u.inviteLink,
       onClick: f,
       children: e
@@ -68,9 +68,9 @@ function d(e) {
   return t = d ? (0, r.jsx)("div", {
     className: u.inviteContent,
     children: p ? c.intl.format(c.t["9OheEh"], {
-      inviteHook: h
+      inviteHook: g
     }) : c.intl.format(c.t["7hv6yM"], {
-      inviteHook: h
+      inviteHook: g
     })
   }) : (0, r.jsxs)("div", {
     className: u.content,

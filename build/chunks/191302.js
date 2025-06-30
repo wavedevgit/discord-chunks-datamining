@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(399606),
+  a = n.n(l),
+  o = n(399606),
   s = n(704215),
   c = n(481060),
   u = n(493773),
@@ -42,17 +42,17 @@ function C(e) {
 function x(e) {
   let {
     channel: t
-  } = e, l = (0, a.e7)([f.default], () => f.default.getUser(t.hdStreamingBuyerId), [t.hdStreamingBuyerId]), [o, d] = (0, i.useState)(!1), [h, _] = (0, i.useState)(!1), y = (0, g.bK)(), [x, j] = (0, i.useState)(!1);
+  } = e, l = (0, o.e7)([f.default], () => f.default.getUser(t.hdStreamingBuyerId), [t.hdStreamingBuyerId]), [a, d] = (0, i.useState)(!1), [h, _] = (0, i.useState)(!1), y = (0, g.bK)(), [x, j] = (0, i.useState)(!1);
   (0, u.ZP)(() => {
     t.isHDStreamSplashed && j(!0)
   }), (0, g.Uu)(t),
   function(e) {
-    let t = (0, a.e7)([f.default], () => f.default.getCurrentUser()),
+    let t = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
       l = [];
     e.hdStreamingBuyerId !== (null == t ? void 0 : t.id) || e.isHDStreamSplashed || l.push(s.z.HD_STREAMING_POTION_MODAL_UPSELL);
-    let [o, u] = (0, p.US)(l);
+    let [a, u] = (0, p.US)(l);
     (0, i.useEffect)(() => {
-      o === s.z.HD_STREAMING_POTION_MODAL_UPSELL && (0, c.ZDy)(async () => {
+      a === s.z.HD_STREAMING_POTION_MODAL_UPSELL && (0, c.ZDy)(async () => {
         let {
           default: t
         } = await n.e("88452").then(n.bind(n, 552394));
@@ -61,7 +61,7 @@ function x(e) {
           channel: e
         }, n))
       })
-    }, [o, u, e])
+    }, [a, u, e])
   }(t);
   let O = () => {
     d(!1)
@@ -78,17 +78,17 @@ function x(e) {
     return () => clearTimeout(e)
   });
   let E = x ? [s.z.HD_STREAMING_POTION_BANNER] : [],
-    [I, S] = (0, p.US)(E);
+    [S, I] = (0, p.US)(E);
   return null == l ? null : (0, r.jsxs)(r.Fragment, {
-    children: [o && (0, r.jsx)(v, {
+    children: [a && (0, r.jsx)(v, {
       buyer: l,
       onEnd: O
-    }), (h || I === s.z.HD_STREAMING_POTION_BANNER) && (0, r.jsx)(m.Z, {
+    }), (h || S === s.z.HD_STREAMING_POTION_BANNER) && (0, r.jsx)(m.Z, {
       channel: t,
       buyer: l,
       streaming: !0,
       onClose: () => {
-        _(!1), x && S(b.L.DISMISS)
+        _(!1), x && I(b.L.DISMISS)
       }
     })]
   })
@@ -98,7 +98,7 @@ function v(e) {
   let {
     onEnd: t,
     buyer: n
-  } = e, l = (0, i.useRef)(null), a = (0, i.useRef)(null), [s, u] = (0, i.useState)(!1);
+  } = e, l = (0, i.useRef)(null), o = (0, i.useRef)(null), [s, u] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
     let e = l.current;
     if (null == e) return;
@@ -111,7 +111,7 @@ function v(e) {
   });
   let [p, f] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
-    null != a.current && f(a.current.offsetWidth > 245)
+    null != o.current && f(o.current.offsetWidth > 245)
   }, []);
   let {
     avatarSrc: m,
@@ -133,8 +133,8 @@ function v(e) {
         type: "video/webm"
       })
     }), (0, r.jsxs)("div", {
-      ref: a,
-      className: o()(y.content, {
+      ref: o,
+      className: a()(y.content, {
         [y.masked]: s
       }),
       children: [(0, r.jsx)(c.qEK, C({

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(392711),
+  a = n.n(l),
+  o = n(392711),
   s = n(442837),
   c = n(570140),
   u = n(607070),
@@ -23,9 +23,9 @@ let y = e => {
     message: t,
     hovering: n,
     compact: l
-  } = e, y = i.useRef((0, a.random)(-6, 24)).current, C = (0, s.e7)([h.Z], () => h.Z.confettiMode), x = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, I] = i.useState(!1), S = i.useMemo(() => !n && !C && !x, [C, n, x]);
+  } = e, y = i.useRef((0, o.random)(-6, 24)).current, C = (0, s.e7)([h.Z], () => h.Z.confettiMode), x = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, S] = i.useState(!1), I = i.useMemo(() => !n && !C && !x, [C, n, x]);
   if (i.useEffect(() => {
-      n || I(!1), n && C && I(!0)
+      n || S(!1), n && C && S(!0)
     }, [n, C]), i.useEffect(() => {
       !x && (E || (!1 === n && (v.current = 0, null != j.current && (clearTimeout(j.current), j.current = null)), v.current = Date.now(), j.current = setTimeout(() => {
         let e = v.current;
@@ -45,7 +45,7 @@ let y = e => {
               h: l
             }, !0, f.LL.UserTriggered)
           } else(0, g.Z)(t, void 0, !0, f.LL.UserTriggered);
-          I(!0), c.Z.dispatch({
+          S(!0), c.Z.dispatch({
             type: "POTIONS_SET_CONFETTI_MODE",
             enabled: !0
           })
@@ -74,17 +74,17 @@ let y = e => {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: N,
-      className: o()([_.emoji, _.left, S && _.shy, C && _.confettiMode]),
+      className: a()([_.emoji, _.left, I && _.shy, C && _.confettiMode]),
       width: 28
     }), (0, r.jsx)("img", {
       alt: "",
       src: N,
-      className: o()([_.emoji, _.right, S && _.shy, C && _.confettiMode]),
+      className: a()([_.emoji, _.right, I && _.shy, C && _.confettiMode]),
       width: 26
     }), (0, r.jsx)("img", {
       alt: "",
       src: N,
-      className: o()([_.emoji, _.center, S && _.shy, C && _.confettiMode]),
+      className: a()([_.emoji, _.center, I && _.shy, C && _.confettiMode]),
       width: 32
     })]
   })

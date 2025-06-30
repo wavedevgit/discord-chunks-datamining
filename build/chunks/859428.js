@@ -1,4 +1,4 @@
-/** Chunk was on 74739 **/
+/** Chunk was on 68024 **/
 n.d(t, {
   Z: () => S
 }), n(388685);
@@ -10,22 +10,22 @@ var r = n(255367),
   c = n(481060),
   s = n(749210),
   u = n(703656),
-  E = n(430824),
-  d = n(914010),
-  _ = n(900849),
+  d = n(430824),
+  _ = n(914010),
+  E = n(900849),
   O = n(981631),
   I = n(388032),
   T = n(8940),
-  N = n(240211);
-let S = 12633 == n.j ? () => {
-  let e = (0, a.e7)([d.Z], () => d.Z.getGuildId(), []),
-    t = (0, a.e7)([E.Z], () => E.Z.getGuild(e), [e]),
+  p = n(240211);
+let S = () => {
+  let e = (0, a.e7)([_.Z], () => _.Z.getGuildId(), []),
+    t = (0, a.e7)([d.Z], () => d.Z.getGuild(e), [e]),
     [n, l] = i.useState(!1);
   if (null == t) return null;
   let S = async () => {
     l(!0);
     try {
-      _.mT(t.id), await s.Z.joinGuild(t.id, {
+      E.mT(t.id), await s.Z.joinGuild(t.id, {
         source: O.vtS.NOTICE_BAR
       })
     } catch (e) {
@@ -33,7 +33,7 @@ let S = 12633 == n.j ? () => {
     }
   };
   return (0, r.jsxs)("div", {
-    className: o()(T.notice, N.notice),
+    className: o()(T.notice, p.notice),
     children: [(0, r.jsxs)(c.zxk, {
       look: c.zxk.Looks.OUTLINED,
       color: c.zxk.Colors.WHITE,
@@ -64,4 +64,4 @@ let S = 12633 == n.j ? () => {
       })
     })]
   })
-} : null
+}

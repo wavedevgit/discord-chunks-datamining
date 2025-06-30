@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  P: () => _
+  P: () => j
 }), n(388685), n(35282), n(49124);
 var a = n(255367),
   r = n(73800),
@@ -58,7 +58,7 @@ let f = Object.keys(x.jQ).map(e => ({
     label: e
   }));
 
-function _(e) {
+function j(e) {
   let {
     state: t,
     setState: n
@@ -96,7 +96,7 @@ function _(e) {
           style: {
             cursor: "pointer"
           },
-          children: (0, a.jsx)(j, {
+          children: (0, a.jsx)(_, {
             scale: e,
             onRemove: () => n(b(p({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
@@ -125,12 +125,12 @@ function g(e) {
     base: p,
     darkness: b,
     lightness: v,
-    showColumnarPalettePreview: _,
+    showColumnarPalettePreview: j,
     colorSpace: g,
-    easingStrength: j = 1,
+    easingStrength: _ = 1,
     useP3ColorSpace: C,
-    steps: N = 26
-  } = t, O = (0, x.XM)(t), T = (0, x.W6)(O, c);
+    steps: O = 26
+  } = t, N = (0, x.XM)(t), E = (0, x.W6)(N, c);
   return (0, a.jsxs)(d.hjN, {
     className: h.paletteSettings,
     children: [(0, a.jsxs)("div", {
@@ -148,7 +148,7 @@ function g(e) {
         children: c
       }), (0, a.jsx)(d.P3F, {
         onClick: function() {
-          let e = Object.entries(O).reduce((e, t) => {
+          let e = Object.entries(N).reduce((e, t) => {
             let [n, a] = t;
             return e[n] = {
               value: (0, l.Z)((0, i.Z)(a, x.HW.sRGB), {
@@ -229,13 +229,13 @@ function g(e) {
     }), (0, a.jsx)(d.hjN, {
       title: "Easing",
       children: (0, a.jsxs)(d.xJW, {
-        title: "Easing Strength (".concat(j.toFixed(2), ")"),
+        title: "Easing Strength (".concat(_.toFixed(2), ")"),
         children: [(0, a.jsx)(d.R94, {
           type: d.geA.DESCRIPTION,
           children: "Adjust the strength of the easing function."
         }), (0, a.jsx)(d.iRW, {
           onValueRender: () => null,
-          initialValue: j,
+          initialValue: _,
           minValue: 1,
           maxValue: 5,
           onValueChange: e => (0, x.rd)(c, e, n),
@@ -247,7 +247,7 @@ function g(e) {
       children: [(0, a.jsx)(d.xJW, {
         children: (0, a.jsx)(d.j7V, {
           note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-          value: _,
+          value: j,
           onChange: e => (0, x.KB)(c, e, n),
           children: "Show columnar palette preview"
         })
@@ -260,10 +260,10 @@ function g(e) {
           children: "Use P3 Color Space"
         })
       }), (0, a.jsx)(d.xJW, {
-        title: "Steps (".concat(N, ")"),
+        title: "Steps (".concat(O, ")"),
         children: (0, a.jsx)(d.iRW, {
           onValueRender: () => null,
-          initialValue: N,
+          initialValue: O,
           minValue: (0, x.A0)(c).length,
           maxValue: 100,
           onValueChange: e => (0, x.YC)(c, Math.round(e), n),
@@ -273,22 +273,22 @@ function g(e) {
         title: "Palette Preview",
         children: (0, a.jsx)("div", {
           className: h.paletteOverrides,
-          "data-columnar": _,
-          children: Object.entries(O).map((e, n) => {
-            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = T[r];
+          "data-columnar": j,
+          children: Object.entries(N).map((e, n) => {
+            let [r, c] = e, u = (0, x.HI)(c), m = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
             return (0, a.jsxs)("div", {
               style: {
                 backgroundColor: u
               },
               children: [(0, a.jsxs)(d.Text, {
-                variant: _ ? "text-sm/medium" : "text-xs/medium",
+                variant: j ? "text-sm/medium" : "text-xs/medium",
                 style: {
                   color: m
                 },
-                children: [t.name, ".", n + 1, _ && null != h ? (0, a.jsx)("strong", {
+                children: [t.name, ".", n + 1, j && null != h ? (0, a.jsx)("strong", {
                   children: " - ".concat(h)
                 }) : ""]
-              }), _ && (0, a.jsxs)(d.Text, {
+              }), j && (0, a.jsxs)(d.Text, {
                 variant: "text-xxs/medium",
                 style: {
                   opacity: .75,
@@ -306,7 +306,7 @@ function g(e) {
   })
 }
 
-function j(e) {
+function _(e) {
   let {
     scale: t,
     onRemove: n

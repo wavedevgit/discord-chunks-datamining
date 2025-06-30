@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  o = n.n(l),
-  a = n(704215),
+  a = n.n(l),
+  o = n(704215),
   s = n(692547),
   c = n(481060),
   u = n(493773),
@@ -25,9 +25,9 @@ var r = n(255367),
   j = n(981631),
   O = n(388032),
   E = n(413384),
-  I = n(359165);
+  S = n(359165);
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,23 +65,23 @@ function Z(e) {
     guild: n,
     width: i,
     inPopout: l,
-    handleClose: o,
-    userParticipantCount: a
+    handleClose: a,
+    userParticipantCount: o
   } = e;
   return i < 250 ? (0, r.jsx)(N, {
     channel: t,
     guild: n,
     width: i,
     inPopout: l,
-    handleClose: o,
-    userParticipantCount: a
-  }) : a > 1 ? (0, r.jsx)(A, {
+    handleClose: a,
+    userParticipantCount: o
+  }) : o > 1 ? (0, r.jsx)(A, {
     channel: t,
     guild: n,
     width: i,
     inPopout: l,
-    handleClose: o,
-    userParticipantCount: a
+    handleClose: a,
+    userParticipantCount: o
   }) : (0, r.jsx)(T, {
     channel: t,
     guild: n,
@@ -98,12 +98,12 @@ function N(e) {
   } = e, {
     analyticsLocations: l
   } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_SHELF_BUTTON), {
-    enabled: a
+    enabled: o
   } = d.c.useExperiment({
     location: "ActivityShelfButtonTile"
   }, {
     autoTrackExposure: !0
-  }), u = a ? c.iWm : c.gQj, p = () => {
+  }), u = o ? c.iWm : c.gQj, p = () => {
     (0, f.Z)({
       channel: t,
       openInPopout: n,
@@ -134,7 +134,7 @@ function N(e) {
             }
             return i
           }(e, ["onClick"]);
-          return (0, r.jsx)(c.P3F, P(S({}, n), {
+          return (0, r.jsx)(c.P3F, P(I({}, n), {
             className: E.clickableTile,
             onClick: () => {
               null == t || t(), p()
@@ -154,7 +154,7 @@ function N(e) {
         theme: j.BRd.DARK,
         children: e => (0, r.jsx)(c.P3F, {
           onClick: i,
-          className: o()(e, E.shelfButtonCloseButton),
+          className: a()(e, E.shelfButtonCloseButton),
           children: (0, r.jsx)(c.k$p, {
             size: "md",
             color: "currentColor",
@@ -171,7 +171,7 @@ function T(e) {
   let {
     channel: t,
     guild: l,
-    inPopout: a
+    inPopout: o
   } = e;
   i.useEffect(() => {
     x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
@@ -198,20 +198,20 @@ function T(e) {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
-      return n => (0, r.jsx)(e, P(S({}, n), {
+      return n => (0, r.jsx)(e, P(I({}, n), {
         guild: l,
         channel: t,
         source: j.t4x.ACTIVITY_ENTRY_POINT_TILE
       }))
     }, {
-      contextKey: a ? c.u1M : c.z1l
+      contextKey: o ? c.u1M : c.z1l
     })
   }
 
   function b() {
     (0, f.Z)({
       channel: t,
-      openInPopout: a,
+      openInPopout: o,
       analyticsLocations: s
     })
   }
@@ -223,9 +223,9 @@ function T(e) {
       disableAdaptiveTheme: !0,
       theme: j.BRd.MIDNIGHT,
       children: e => (0, r.jsxs)(v.Z, {
-        className: o()(E.root, E.singleUserRoot, e),
+        className: a()(E.root, E.singleUserRoot, e),
         children: [(0, r.jsx)("img", {
-          src: I,
+          src: S,
           className: E.art,
           alt: ""
         }), (0, r.jsxs)("div", {
@@ -275,7 +275,7 @@ function A(e) {
     {
       analyticsLocations: y
     } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_SUGGESTION),
-    I = i.useMemo(() => ({
+    S = i.useMemo(() => ({
       channel: t,
       type: "channel"
     }), [t]);
@@ -288,11 +288,11 @@ function A(e) {
         variant: s > 550 ? "text-md/semibold" : "text-sm/semibold",
         children: O.intl.string(O.t["7BKMcH"])
       }) : null, (0, r.jsx)("div", {
-        className: o()(E.activitiesContainer, {
+        className: a()(E.activitiesContainer, {
           [E.activitiesContainerSmol]: s <= 300
         }),
         children: f.map(e => (0, r.jsx)(h.Y, {
-          context: I,
+          context: S,
           activityItem: e,
           aspectRatio: h.Y.AspectRatio.SIXTEEN_BY_NINE,
           animatedDivClass: E.activitySuggestion,
@@ -305,7 +305,7 @@ function A(e) {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: d
-          }), (0, _.EW)(a.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
+          }), (0, _.EW)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
         children: [(0, r.jsx)(C.Z, {}), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",

@@ -8,16 +8,16 @@ function i(e) {
     channel: t,
     canChat: n,
     renderReactions: i,
-    canAddNewReactions: o,
+    canAddNewReactions: r,
     isLurking: l,
-    isGuest: r,
+    isGuest: o,
     communicationDisabled: a,
     isActiveChannelOrUnarchivableThread: s,
     isAutomodQuarantined: c
   } = e, u = t.isPrivate(), d = t.isSystemDM(), h = (n || u) && s;
   return {
     disableReactionReads: !i,
-    disableReactionCreates: l || r || !h || !((!0 === o || u) && !d && s),
-    disableReactionUpdates: l || r || !h || !0 === a || !0 === c
+    disableReactionCreates: l || o || !h || !((!0 === r || u) && !d && s),
+    disableReactionUpdates: l || o || !h || !0 === a || !0 === c
   }
 }

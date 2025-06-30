@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => p
 });
@@ -37,12 +37,12 @@ function p(e) {
       channel: p,
       content: m,
       className: f,
-      compact: h,
-      popoutProps: g,
-      hideTimestamp: _ = !1,
+      compact: g,
+      popoutProps: _,
+      hideTimestamp: h = !1,
       withFooter: b = !1
     } = e,
-    x = function(e, t) {
+    E = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -62,32 +62,32 @@ function p(e) {
     className: l()({
       [u.withFooter]: b
     }, u.embedCard, {
-      [u.compact]: h
+      [u.compact]: g
     }, f),
-    children: (0, r.jsx)(o.Z, (t = d({}, x), n = n = {
+    children: (0, r.jsx)(o.Z, (t = d({}, E), n = n = {
       className: l()(u.messageContainer, {
-        [u.compact]: h
+        [u.compact]: g
       }),
       childrenMessageContent: (0, r.jsx)(s.ZP, {
         className: l()(u.__invalid_messageContent, {
-          [u.compact]: h
+          [u.compact]: g
         }),
         message: i,
         content: m,
-        compact: null != h && h
+        compact: null != g && g
       }),
       childrenHeader: (0, r.jsx)(c.ZP, d({
         message: i,
         channel: p,
         author: y,
         guildId: null == p ? void 0 : p.guild_id,
-        compact: h,
-        hideTimestamp: _,
+        compact: g,
+        hideTimestamp: h,
         className: l()(u.header, {
-          [u.compact]: h
+          [u.compact]: g
         })
-      }, null != g ? g : {})),
-      compact: h,
+      }, null != _ ? _ : {})),
+      compact: g,
       author: y
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

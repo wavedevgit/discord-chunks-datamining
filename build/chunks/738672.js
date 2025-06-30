@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  o = n(481060),
-  a = n(909820),
+  a = n(481060),
+  o = n(909820),
   s = n(740492),
   c = n(937995),
   u = n(618158);
@@ -33,8 +33,8 @@ function d(e) {
     preventIdle: j,
     allowIdle: O
   } = (0, u.Y)("popup");
-  return (null == t ? void 0 : t.current) == null ? null : (0, r.jsx)(a.ZP, {
-    children: (0, r.jsx)(o.jRF, {
+  return (null == t ? void 0 : t.current) == null ? null : (0, r.jsx)(o.ZP, {
+    children: (0, r.jsx)(a.jRF, {
       targetRef: t,
       position: "top",
       align: "center",

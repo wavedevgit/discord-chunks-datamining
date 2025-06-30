@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   U: () => h,
   Z: () => p
@@ -6,8 +6,8 @@ n.d(t, {
 var r, i = n(255367),
   l = n(73800),
   o = n(120356),
-  s = n.n(o),
-  a = n(990547),
+  a = n.n(o),
+  s = n(990547),
   c = n(481060),
   u = n(213609),
   d = n(341402),
@@ -23,8 +23,8 @@ let p = l.forwardRef(function(e, t) {
     align: f
   } = e;
   return (0, u.Z)({
-    type: a.ImpressionTypes.POPOUT,
-    name: a.ImpressionNames.CHAT_WALLPAPER_DM_LIST_COACHMARK
+    type: s.ImpressionTypes.POPOUT,
+    name: s.ImpressionNames.CHAT_WALLPAPER_DM_LIST_COACHMARK
   }), (0, i.jsx)("div", {
     className: d.tooltip,
     ref: t,
@@ -56,7 +56,7 @@ let p = l.forwardRef(function(e, t) {
           children: o
         })
       }), (0, i.jsx)("div", {
-        className: s()(d.pointer, {
+        className: a()(d.pointer, {
           [d.pointerBottom]: "bottom" === f
         })
       })]

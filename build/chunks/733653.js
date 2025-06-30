@@ -28,10 +28,9 @@ function u(e) {
           let {
             value: {
               guild_id: c,
-              channel_id: a,
-              message_id: d
+              channel_id: a
             }
-          } = t;
+          } = t, d = "message_id" in t.value ? t.value.message_id : void 0;
           return (0, r.jsx)(o.d, {
             channelId: a,
             guildId: c,

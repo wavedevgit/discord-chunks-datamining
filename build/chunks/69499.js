@@ -1,4 +1,4 @@
-/** Chunk was on 74739 **/
+/** Chunk was on 68024 **/
 n.d(t, {
   E: () => O,
   Z: () => T
@@ -11,10 +11,10 @@ var r = n(255367),
   c = n(585237),
   s = n(812206),
   u = n(55563),
-  E = n(73346),
-  d = n(388032);
+  d = n(73346),
+  _ = n(388032);
 
-function _(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -61,7 +61,7 @@ class I extends i.PureComponent {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          _(e, t, n[t])
+          E(e, t, n[t])
         })
       }
       return e
@@ -83,7 +83,7 @@ class I extends i.PureComponent {
     }), e))
   }
   constructor(...e) {
-    super(...e), _(this, "renderContextMenu", () => {
+    super(...e), E(this, "renderContextMenu", () => {
       let {
         skus: e,
         onSKUSelect: t,
@@ -92,7 +92,7 @@ class I extends i.PureComponent {
       return (0, r.jsx)(o.v2r, {
         onSelect: n,
         navId: "test-skus",
-        "aria-label": d.intl.string(d.t.ogxXGh),
+        "aria-label": _.intl.string(_.t.ogxXGh),
         onClose: a.Zy,
         children: e.map(e => (0, r.jsx)(o.sNh, {
           id: "".concat(e.id),
@@ -102,9 +102,9 @@ class I extends i.PureComponent {
           }
         }, "".concat(e.id)))
       })
-    }), _(this, "handleContextMenu", e => {
+    }), E(this, "handleContextMenu", e => {
       e.stopPropagation(), a.vq(e, this.renderContextMenu)
-    }), _(this, "handleClick", () => {
+    }), E(this, "handleClick", () => {
       let {
         onSKUSelect: e,
         primarySKU: t
@@ -117,7 +117,7 @@ let T = l.ZP.connectStores([u.Z, s.Z], e => {
   var t;
   let {
     applicationId: n
-  } = e, r = (0, E.uF)(n, s.Z, u.Z);
+  } = e, r = (0, d.uF)(n, s.Z, u.Z);
   return {
     skus: (null != (t = u.Z.getForApplication(n)) ? t : []).sort((e, t) => null != r && e.id === r.id ? -1 : null != r && t.id === r.id ? 1 : e.name >= t.name ? -1 : 1),
     primarySKU: r

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(392711),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(481051),
   c = n(871499),
   u = n(306680),
@@ -39,7 +39,7 @@ function y(e) {
     return i
   }(e, ["channelId", "className"]);
   let C = i.useRef(null),
-    x = (0, o.e7)([f.ZP], () => f.ZP.getFocusedLayout() === m.MI.RESIZABLE),
+    x = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === m.MI.RESIZABLE),
     v = i.useCallback(() => {
       let e = x ? m.MI.NO_CHAT : m.MI.RESIZABLE;
       (0, h.gC)(e)
@@ -48,11 +48,11 @@ function y(e) {
       unreadCount: j,
       mentionCount: O
     } = function(e) {
-      let t = (0, o.e7)([d.Z], () => !(0, l.isEmpty)(d.Z.getTypingUsers(e)), [e]),
+      let t = (0, a.e7)([d.Z], () => !(0, l.isEmpty)(d.Z.getTypingUsers(e)), [e]),
         {
           unreadCount: n,
           mentionCount: r
-        } = (0, o.cj)([u.ZP], () => ({
+        } = (0, a.cj)([u.ZP], () => ({
           unreadCount: u.ZP.getUnreadCount(e),
           mentionCount: u.ZP.getMentionCount(e)
         }), [e]);
@@ -70,12 +70,12 @@ function y(e) {
     event: g.CkL.FOCUS_CHAT_BUTTON,
     handler: E
   });
-  let I = x ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
-    S = [I];
-  O > 0 && S.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
+  let S = x ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
+    I = [S];
+  O > 0 && I.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
     mentionCount: O
-  })), j > 0 && S.push(b.intl.string(b.t.x5zAGR));
-  let P = (0, o.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
+  })), j > 0 && I.push(b.intl.string(b.t.x5zAGR));
+  let P = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
     Z = O > 0 ? O : j,
     N = Z > 0;
   return (0, r.jsxs)("div", {
@@ -101,10 +101,10 @@ function y(e) {
       isTrayButton: !0,
       buttonRef: C,
       onClick: v,
-      label: I,
-      "aria-label": S.join(", "),
+      label: S,
+      "aria-label": I.join(", "),
       tooltipPosition: "top",
-      iconComponent: P === m.MI.NO_CHAT ? a.sXD : a.hic,
+      iconComponent: P === m.MI.NO_CHAT ? o.sXD : o.hic,
       themeable: !0,
       className: n
     }, y)), N ? (0, r.jsx)(s.Z, {

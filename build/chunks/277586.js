@@ -1,5 +1,4 @@
-/** Chunk was on 43988 **/
-"use strict";
+/** Chunk was on 84552 **/
 e.exports = {
   potionBadge: "potionBadge__18061"
 }

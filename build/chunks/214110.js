@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(442837),
   l = n(481060),
-  o = n(251794),
-  a = n(386696),
+  a = n(251794),
+  o = n(386696),
   s = n(71619),
   c = n(271383),
   u = n(430824),
@@ -21,14 +21,14 @@ function g(e) {
     channel: t,
     user: n,
     guild: g
-  } = e, b = (0, i.e7)([p.default, u.Z, d.Z], () => null != n && null != g && (0, a.F)(g.id, n.id, [p.default, u.Z, d.Z])), [_, y] = (0, s.ZP)(null == n ? void 0 : n.id, t.guild_id), C = (0, i.e7)([c.ZP], () => null != g && null != n && null != c.ZP.getMember(g.id, n.id));
+  } = e, b = (0, i.e7)([p.default, u.Z, d.Z], () => null != n && null != g && (0, o.F)(g.id, n.id, [p.default, u.Z, d.Z])), [_, y] = (0, s.ZP)(null == n ? void 0 : n.id, t.guild_id), C = (0, i.e7)([c.ZP], () => null != g && null != n && null != c.ZP.getMember(g.id, n.id));
   if (!b) return null;
   let x = "timeout-user-".concat(null == n ? void 0 : n.id);
   return (0, r.jsx)(h.Z, {
     text: C ? null : y ? m.intl.string(f.default["6uMZbm"]) : m.intl.string(f.default["Sgg/uL"]),
     icon: l.T39,
     onClick: () => {
-      null != n && (0, o.z)({
+      null != n && (0, a.z)({
         guildId: t.guild_id,
         userId: n.id,
         modReportId: t.id

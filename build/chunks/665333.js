@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 36512 **/
 e.exports = {
   search: "search__97492",
   searchBar: "searchBar__97492",

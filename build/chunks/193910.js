@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(831209),
-  o = n(442837),
-  a = n(704215),
+  a = n(442837),
+  o = n(704215),
   s = n(481060),
   c = n(278323),
   u = n(566620),
@@ -25,20 +25,20 @@ var r = n(255367),
   j = n(752305),
   O = n(951211),
   E = n(981631),
-  I = n(921944),
-  S = n(489887),
+  S = n(921944),
+  I = n(489887),
   P = n(388032),
   Z = n(725776);
 let N = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
 function T() {
-  let e = (0, o.e7)([_.Z], () => _.Z.hasCurrentUserSentMessageSinceAppStart()),
+  let e = (0, a.e7)([_.Z], () => _.Z.hasCurrentUserSentMessageSinceAppStart()),
     t = [];
-  e && t.push(a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
+  e && t.push(o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
   let [n] = (0, f.cv)(t);
   return i.useEffect(() => () => {
-    n === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, h.EW)(a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-      dismissAction: I.L.TAKE_ACTION
+    n === o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, h.EW)(o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
+      dismissAction: S.L.TAKE_ACTION
     })
   }, [n]), (0, r.jsx)(m.ZP, {
     contentTypes: t,
@@ -46,7 +46,7 @@ function T() {
       let {
         visibleContent: t
       } = e;
-      return t === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(s.IGR, {
+      return t === o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(s.IGR, {
         text: P.intl.string(P.t.y2b7CA),
         color: l.Z.BUTTON_DANGER_BACKGROUND
       }) : null
@@ -57,7 +57,7 @@ function T() {
 function A(e) {
   let {
     channel: t,
-    options: o,
+    options: a,
     onFileUpload: f,
     onClose: m,
     onSelect: _,
@@ -67,11 +67,11 @@ function A(e) {
     openClips: k
   } = e, {
     analyticsLocations: M
-  } = (0, p.ZP)(), D = (0, g.Dt)({
+  } = (0, p.ZP)(), L = (0, g.Dt)({
     channel: t
   });
 
-  function L() {
+  function D() {
     (0, b.R6)(t, void 0, "Plus Button")
   }
 
@@ -84,8 +84,8 @@ function A(e) {
   }
 
   function F() {
-    (0, h.EW)(a.z.POLLS_CHAT_INPUT_COACHMARK, {
-      dismissAction: I.L.TAKE_ACTION
+    (0, h.EW)(o.z.POLLS_CHAT_INPUT_COACHMARK, {
+      dismissAction: S.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
       let {
         default: e
@@ -123,11 +123,11 @@ function A(e) {
         }), i))
       }
     }, {
-      modalKey: S.$z
+      modalKey: I.$z
     })
   }
 
-  function G() {
+  function H() {
     y.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
@@ -141,7 +141,7 @@ function A(e) {
     })
   }
 
-  function H() {
+  function G() {
     let e = w,
       n = "txt",
       r = "",
@@ -164,7 +164,7 @@ function A(e) {
     onClose: m,
     "aria-label": P.intl.string(P.t.Xm41aW),
     className: Z.menu,
-    children: o.map(function(e) {
+    children: a.map(function(e) {
       var n;
       let i = (0, r.jsxs)("div", {
         className: Z.optionLabel,
@@ -192,7 +192,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "upload-text-as-file",
             label: i,
-            action: H
+            action: G
           }, "upload-text-as-file");
         case O.r.CLIPS:
           return (0, r.jsx)(s.sNh, {
@@ -252,7 +252,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "THREAD",
             label: i,
-            action: L
+            action: D
           }, "THREAD");
         case O.r.SLASH_COMMAND:
           return (0, r.jsx)(s.sNh, {
@@ -264,7 +264,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
-            action: G,
+            action: H,
             hint: (0, r.jsx)(T, {})
           }, "activity");
         case O.r.SCHEDULED_MESSAGE:
@@ -274,7 +274,7 @@ function A(e) {
             action: () => (0, g.$f)({
               channel: t
             }),
-            children: D
+            children: L
           }, "scheduled_message");
         default:
           return null

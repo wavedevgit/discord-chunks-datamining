@@ -28,10 +28,10 @@ let h = [{
 }];
 
 function p() {
-  let [e, t] = r.useState(null), [n, p] = r.useState(0), [b, f] = r.useState(1e3), [v, _] = r.useState(0), g = (0, l.e7)([c.Z], () => {
+  let [e, t] = r.useState(null), [n, p] = r.useState(0), [b, f] = r.useState(1e3), [v, j] = r.useState(0), g = (0, l.e7)([c.Z], () => {
     var t;
     return null === e ? null : null != (t = c.Z.getFeedbackConfig(m.nw[e])) ? t : o.R[m.nw[e]]
-  }), j = Object.entries(m.nw), y = j.slice(j.length / 2).map(e => {
+  }), _ = Object.entries(m.nw), y = _.slice(_.length / 2).map(e => {
     let [t] = e;
     return {
       label: t,
@@ -128,7 +128,7 @@ function p() {
           max: 100,
           value: v.toString(),
           type: "number",
-          onChange: e => _(parseFloat(e))
+          onChange: e => j(parseFloat(e))
         }), (0, a.jsx)(i.Text, {
           variant: "text-md/normal",
           children: "%"

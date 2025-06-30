@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  o = n(32750),
-  a = n(109764),
+  a = n(32750),
+  o = n(109764),
   s = n(323597),
   c = n(438536),
   u = n(193987),
@@ -25,9 +25,9 @@ var r = n(255367),
   j = n(739830),
   O = n(488131),
   E = n(981631),
-  I = n(388032);
+  S = n(388032);
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -62,22 +62,22 @@ function P(e, t) {
 function Z(e) {
   let {
     channel: t
-  } = e, [n, o] = i.useState(!1), a = i.useRef(null);
+  } = e, [n, a] = i.useState(!1), o = i.useRef(null);
 
   function s() {
-    o(e => !e)
+    a(e => !e)
   }
-  let c = I.intl.string(I.t.UKOtz8);
+  let c = S.intl.string(S.t.UKOtz8);
   return (0, r.jsx)(l.yRy, {
-    targetElementRef: a,
+    targetElementRef: o,
     shouldShow: n,
     animation: l.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: !1,
-    onRequestClose: () => o(!1),
+    onRequestClose: () => a(!1),
     renderPopout: function(e) {
-      return (0, r.jsx)(N, P(S({}, e), {
+      return (0, r.jsx)(N, P(I({}, e), {
         channel: t
       }))
     },
@@ -85,8 +85,8 @@ function Z(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(y.ZP.Icon, P(S({}, e), {
-        ref: a,
+      return (0, r.jsx)(y.ZP.Icon, P(I({}, e), {
+        ref: o,
         onClick: s,
         tooltip: n ? null : c,
         icon: l.xhG,
@@ -102,9 +102,9 @@ function N(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, _ = (0, c.Z)(t, "Sidebar Overflow"), y = (0, d.Z)(t), v = (0, f.Z)(t), j = (0, m.Z)(t), O = (0, o.Z)(t), S = (0, u.Z)(t), P = (0, h.Z)(t.id), Z = (0, p.Z)(t), N = (0, s.Z)(t), T = (0, a.Z)(t), A = (0, b.Z)({
+  } = e, _ = (0, c.Z)(t, "Sidebar Overflow"), y = (0, d.Z)(t), v = (0, f.Z)(t), j = (0, m.Z)(t), O = (0, a.Z)(t), I = (0, u.Z)(t), P = (0, h.Z)(t.id), Z = (0, p.Z)(t), N = (0, s.Z)(t), T = (0, o.Z)(t), A = (0, b.Z)({
     id: t.id,
-    label: I.intl.string(I.t.DQ797u)
+    label: S.intl.string(S.t.DQ797u)
   }), w = (0, g.Z)(t);
 
   function R() {
@@ -113,12 +113,12 @@ function N(e) {
   return (0, r.jsxs)(l.v2r, {
     navId: "thread-context",
     onClose: n,
-    "aria-label": I.intl.string(I.t["1NBjqa"]),
+    "aria-label": S.intl.string(S.t["1NBjqa"]),
     onSelect: i,
     children: [(0, r.jsxs)(l.kSQ, {
       children: [_, (0, r.jsx)(l.sNh, {
         id: "open",
-        label: I.intl.string(I.t.IxVmZm),
+        label: S.intl.string(S.t.IxVmZm),
         action: R
       })]
     }), (0, r.jsxs)(l.kSQ, {
@@ -128,7 +128,7 @@ function N(e) {
     }), (0, r.jsxs)(l.kSQ, {
       children: [(0, r.jsx)(l.sNh, {
         id: "search",
-        label: I.intl.string(I.t["5h0QOD"]),
+        label: S.intl.string(S.t["5h0QOD"]),
         icon: l.rgF,
         action: function() {
           R(), setTimeout(() => {
@@ -139,14 +139,14 @@ function N(e) {
         }
       }), (0, r.jsx)(l.sNh, {
         id: "pins",
-        label: I.intl.string(I.t["2BSH7u"]),
+        label: S.intl.string(S.t["2BSH7u"]),
         icon: l.rgF,
         action: function() {
           R(), x.S.dispatch(E.CkL.TOGGLE_CHANNEL_PINS)
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [w, O, S, N]
+      children: [w, O, I, N]
     }), (0, r.jsxs)(l.kSQ, {
       children: [T, A]
     })]
@@ -167,7 +167,7 @@ function T(e) {
       channel: t
     }), (0, r.jsx)(y.ZP.Icon, {
       icon: l.Dio,
-      tooltip: I.intl.string(I.t.cpT0Cg),
+      tooltip: S.intl.string(S.t.cpT0Cg),
       onClick: () => (0, O.vN)((0, _.e)(t), null != n ? n : t.parent_id)
     })]
   })

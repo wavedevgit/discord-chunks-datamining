@@ -1,23 +1,23 @@
-/** Chunk was on 43988 **/
+/** Chunk was on 36006 **/
 "use strict";
 n.d(t, {
-  c: () => l
+  c: () => o
 });
 var r = n(544891),
-  i = n(570140),
-  s = n(594174),
-  o = n(981631);
-async function l(e, t) {
+  s = n(570140),
+  i = n(594174),
+  l = n(981631);
+async function o(e, t) {
   try {
     let n = await r.tn.put({
-      url: o.ANM.USER_SET_GUILD_IDENTITY,
+      url: l.ANM.USER_SET_GUILD_IDENTITY,
       body: {
         identity_guild_id: e,
         identity_enabled: t
       },
       rejectWithError: !1
     });
-    return n.ok && i.Z.dispatch({
+    return n.ok && s.Z.dispatch({
       type: "CURRENT_USER_UPDATE",
       user: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -36,7 +36,7 @@ async function l(e, t) {
           })
         }
         return e
-      }({}, s.default.getCurrentUser(), n.body)
+      }({}, i.default.getCurrentUser(), n.body)
     }), n
   } catch (e) {
     return e

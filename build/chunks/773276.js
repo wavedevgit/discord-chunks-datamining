@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.r(t), n.d(t, {
   default: () => m
 });
@@ -20,9 +20,9 @@ function m(e) {
     messageId: n,
     transitionState: m,
     onClose: f
-  } = e, h = (0, i.e7)([c.Z], () => c.Z.getFpMessageInfo(n)), g = h.attachments.map(e => e.id), _ = h.attachments.map(e => e.filename), {
+  } = e, g = (0, i.e7)([c.Z], () => c.Z.getFpMessageInfo(n)), _ = g.attachments.map(e => e.id), h = g.attachments.map(e => e.filename), {
     reportFalsePositive: b,
-    isReportFalsePositiveLoading: x
+    isReportFalsePositiveLoading: E
   } = (0, u.$)({
     onSuccess: () => {
       (0, d.s)(f), a.Z.disableFalsePositiveButton(t, n)
@@ -31,13 +31,13 @@ function m(e) {
       (0, l.showToast)((0, l.createToast)(p.intl.string(p.t.R0RpRU), l.ToastType.FAILURE))
     },
     report: () => {
-      (0, o.Eq)(t, n, g, _)
+      (0, o.Eq)(t, n, _, h)
     }
   });
-  return h.attachments.length > 0 || f(), (0, r.jsx)(d.$, {
+  return g.attachments.length > 0 || f(), (0, r.jsx)(d.$, {
     messageId: n,
     channelId: t,
-    isReportFalsePositiveLoading: x,
+    isReportFalsePositiveLoading: E,
     analyticsContext: s.UU.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW,
     onConfirmPress: b,
     transitionState: m,

@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 e.exports = {
   messages: "messages__1ccd1",
   messageContainer: "messageContainer__1ccd1",

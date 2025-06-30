@@ -1,36 +1,36 @@
 /** Chunk was on 73628 **/
-n.d(t, {
-  B: () => o
+A.d(t, {
+  B: () => i
 });
-var r = n(255367);
-n(73800);
-var A = n(481060),
-  a = n(120651),
-  l = n(388032);
+var n = A(255367);
+A(73800);
+var r = A(481060),
+  a = A(120651),
+  l = A(388032);
 
-function o(e, t, n) {
-  let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
+function i(e, t, A) {
+  let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
   (0, a.Z)({
     title: e,
     body: "string" == typeof t ? t : l.intl.format(t, function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        var A = null != arguments[t] ? arguments[t] : {},
+          n = Object.keys(A);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(A).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(A, e).enumerable
+        }))), n.forEach(function(t) {
+          var n;
+          n = A[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : e[t] = r
+          }) : e[t] = n
         })
       }
       return e
     }({
-      highlightHook: e => (0, r.jsx)(A.Text, {
+      highlightHook: e => (0, n.jsx)(r.Text, {
         variant: "text-md/normal",
         color: "text-default",
         style: {
@@ -38,9 +38,9 @@ function o(e, t, n) {
         },
         children: e
       })
-    }, o)),
+    }, i)),
     cta: l.intl.string(l.t["NX+WJC"]),
     onConfirm: () => {},
-    iconVariant: n
+    iconVariant: A
   })
 }

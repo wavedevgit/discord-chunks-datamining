@@ -1,11 +1,11 @@
-/** Chunk was on 43988 **/
+/** Chunk was on 36006 **/
 "use strict";
 n.d(t, {
-  Q: () => i
+  Q: () => s
 });
 var r = n(863750);
 
-function i() {
+function s() {
   return r.Z.get("enable_recently_active")
 }
 n(238428)

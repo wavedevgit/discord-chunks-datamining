@@ -1,17 +1,16 @@
-/** Chunk was on 19456 **/
-"use strict";
-r.d(e, {
+/** Chunk was on 95355 **/
+n.d(t, {
   i: () => o
 });
-var n = r(365449),
-  i = r(73800);
+var r = n(365449),
+  i = n(73800);
 
-function o(t) {
-  let e = (0, i.useRef)(null);
-  return (0, n.b)(() => {
-    e.current = t
-  }, [t]), (0, i.useCallback)((...t) => {
-    let r = e.current;
-    return null == r ? void 0 : r(...t)
+function o(e) {
+  let t = (0, i.useRef)(null);
+  return (0, r.b)(() => {
+    t.current = e
+  }, [e]), (0, i.useCallback)((...e) => {
+    let n = t.current;
+    return null == n ? void 0 : n(...e)
   }, [])
 }

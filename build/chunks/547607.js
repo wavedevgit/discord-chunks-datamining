@@ -1,4 +1,4 @@
-/** Chunk was on 89149 **/
-t.exports = {
+/** Chunk was on 72374 **/
+e.exports = {
   list: "list_c47777"
 }

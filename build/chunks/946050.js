@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(670044),
-  o = n(28391),
-  a = n(526761),
+  a = n(28391),
+  o = n(526761),
   s = n(388032),
   c = n(900907);
 
@@ -35,7 +35,7 @@ function u(e) {
         className: c.button,
         innerClassName: c.buttonInner,
         onClick: () => {
-          (0, o.Z)(t.guild_id, t.id, a.ic.UNREADS_ONLY_MENTIONS), n()
+          (0, a.Z)(t.guild_id, t.id, o.ic.UNREADS_ONLY_MENTIONS), n()
         },
         children: [s.intl.string(s.t.KyUKhY), (0, r.jsx)(i.UEU, {
           size: "xs",

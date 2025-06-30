@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => m
 }), n(35282);
@@ -29,12 +29,12 @@ function m(e, t) {
     })
   }
   if (null != t.interaction && "SENDING" === t.state) return (0, r.jsx)(r.Fragment, {});
-  let h = null != t.webhookId ? t.author : d.default.getUser(t.author.id);
-  l()(null != h, "renderUserGuildPopout: user should never be null");
-  let g = d.default.getCurrentUser();
-  l()(null != g, "renderUserGuildPopout: currentUser should never be null");
-  let _ = u.Z.getChannel(t.channel_id);
-  return l()(null != _, "renderUserGuildPopout: channel should never be null"), (0, r.jsx)(c.Z, (m = function(e) {
+  let g = null != t.webhookId ? t.author : d.default.getUser(t.author.id);
+  l()(null != g, "renderUserGuildPopout: user should never be null");
+  let _ = d.default.getCurrentUser();
+  l()(null != _, "renderUserGuildPopout: currentUser should never be null");
+  let h = u.Z.getChannel(t.channel_id);
+  return l()(null != h, "renderUserGuildPopout: channel should never be null"), (0, r.jsx)(c.Z, (m = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -52,9 +52,9 @@ function m(e, t) {
     }
     return e
   }({}, e), f = f = {
-    user: h,
-    currentUser: g,
-    guildId: _.guild_id,
+    user: g,
+    currentUser: _,
+    guildId: h.guild_id,
     channelId: t.channel_id,
     messageId: t.id
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(m, Object.getOwnPropertyDescriptors(f)) : (function(e, t) {

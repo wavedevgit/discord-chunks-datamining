@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  o = n(787014),
-  a = n(933557),
+  a = n(787014),
+  o = n(933557),
   s = n(454585),
   c = n(131704),
   u = n(496675),
@@ -21,7 +21,7 @@ var i = n(442837),
 function b(e) {
   let {
     channel: t
-  } = e, n = (0, a.ZP)(t, !0), b = (0, i.e7)([u.Z], () => u.Z.can(h.Plq.MANAGE_CHANNELS, t) && c.dF.has(t.type));
+  } = e, n = (0, o.ZP)(t, !0), b = (0, i.e7)([u.Z], () => u.Z.can(h.Plq.MANAGE_CHANNELS, t) && c.dF.has(t.type));
   return (0, r.jsxs)(p.ZP, {
     channelId: t.id,
     children: [(0, r.jsx)(p.Kq, {
@@ -43,7 +43,7 @@ function b(e) {
       children: (0, r.jsx)(d.Z, {
         label: f.intl.string(f.t["3gUsJS"]),
         onClick: () => {
-          o.ZP.open(t.id)
+          a.ZP.open(t.id)
         },
         icon: (0, r.jsx)(l.vdY, {
           size: "xs",

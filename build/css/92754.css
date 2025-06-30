@@ -1,6 +1,6 @@
 /**
   Module ID: 92754
-  Original File Name: cf7a424a5999ee31
+  Original File Name: a7905cf128a8ffe7
 **/
 .editCard_a25a68 {
     background-color: var(--background-surface-high);
@@ -8430,6 +8430,14 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     justify-content: center
 }
 
+.modViewSidebarContainer_fa2640 {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000
+}
+
 .linkIcon__352b7 {
     color: var(--interactive-normal)
 }
@@ -12562,4 +12570,4 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=cf7a424a5999ee31.css.map*/
+/*# sourceMappingURL=a7905cf128a8ffe7.css.map*/

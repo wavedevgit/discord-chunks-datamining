@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   PD: () => A,
   ZP: () => L,
@@ -8,8 +8,8 @@ var r = n(255367),
   i = n(73800),
   l = n(120356),
   o = n.n(l),
-  s = n(695469),
-  a = n(91192),
+  a = n(695469),
+  s = n(91192),
   c = n(442837),
   u = n(704215),
   d = n(477690),
@@ -25,8 +25,8 @@ var r = n(255367),
   v = n(624138),
   C = n(667815),
   j = n(531572),
-  E = n(651138),
-  S = n(18857),
+  S = n(651138),
+  E = n(18857),
   x = n(981631),
   I = n(388032),
   P = n(93841),
@@ -95,7 +95,7 @@ let T = (0, v.Mg)(d.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
         config: D
       }), "respect-motion-settings", [R, d, k, M]),
       G = t.premiumTier < A && R >= x.oCV[A],
-      B = (0, S.Z)(t),
+      B = (0, E.Z)(t),
       F = I.intl.formatToPlainString(I.t["2oNfMT"], {
         levelName: (0, y.e9)(A)
       }),
@@ -106,7 +106,7 @@ let T = (0, v.Mg)(d.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
     T && (F = (0, y.e9)(A), V = I.intl.format(I.t.B2byER, {
       numBoosts: d
     })), F = F.toLocaleLowerCase();
-    let H = (0, a.JA)("boosts-".concat(t.id)),
+    let H = (0, s.JA)("boosts-".concat(t.id)),
       z = i.useRef(null),
       W = (0, m.W)(t.id, "GuildBoostingSidebarDisplay"),
       K = (null == t ? void 0 : t.premiumProgressBarEnabled) === !0,
@@ -159,7 +159,7 @@ let T = (0, v.Mg)(d.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
                 [N.containerWithMargin]: n
               }),
               onContextMenu: e => {
-                L && (0, p.vq)(e, e => (0, r.jsx)(E.default, Z(w({}, e), {
+                L && (0, p.vq)(e, e => (0, r.jsx)(S.default, Z(w({}, e), {
                   guild: t
                 })))
               },
@@ -195,7 +195,7 @@ let T = (0, v.Mg)(d.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN),
                 className: o()(N.progressBarContainer, {
                   [N.progressBarContainerComplete]: T
                 }),
-                children: [(0, r.jsx)(s.animated.div, {
+                children: [(0, r.jsx)(a.animated.div, {
                   className: N.progressBar,
                   style: U
                 }), T ? (0, r.jsx)("span", {

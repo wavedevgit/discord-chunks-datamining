@@ -1,4 +1,4 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
   Z: () => b
 });
@@ -23,7 +23,7 @@ let m = {
     [i.u.REPORT_TO_MOD_CLOSED_REPORT]: () => d.default.UE81zc
   };
 
-function h(e) {
+function g(e) {
   let {
     type: t
   } = e, n = null;
@@ -49,7 +49,7 @@ function h(e) {
   }) : null
 }
 
-function g(e) {
+function _(e) {
   var t;
   let {
     message: n,
@@ -58,28 +58,28 @@ function g(e) {
   } = e, {
     author: d,
     mentions: f,
-    type: g
-  } = n, _ = (0, o.ZP)(n), b = n.getChannelId(), x = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, o.JZ)(d, i), E = (0, s.l)({
+    type: _
+  } = n, h = (0, o.ZP)(n), b = n.getChannelId(), E = (0, l.e7)([u.default], () => u.default.getUser(f[0]), [f]), y = (0, o.JZ)(d, i), C = (0, s.l)({
     user: d,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(y), v = (0, o.Sw)(x, i), C = (0, s.l)({
-    user: x,
+  })(y), v = (0, o.Sw)(E, i), x = (0, s.l)({
+    user: E,
     channelId: b,
     guildId: i.guild_id,
     messageId: n.id
-  })(v), O = null != (t = m[g]) ? t : null;
+  })(v), O = null != (t = m[_]) ? t : null;
   if (null == O) return null;
   let j = p.intl.format(O(), {
-    actorName: _.nick,
-    actorHook: E,
+    actorName: h.nick,
+    actorHook: C,
     targetName: null == v ? void 0 : v.nick,
-    targetHook: C
+    targetHook: x
   });
   return (0, r.jsx)(c.Z, {
-    iconNode: (0, r.jsx)(h, {
-      type: g
+    iconNode: (0, r.jsx)(g, {
+      type: _
     }),
     timestamp: n.timestamp,
     compact: a,
@@ -87,7 +87,7 @@ function g(e) {
   })
 }
 
-function _(e) {
+function h(e) {
   var t;
   let {
     message: n,
@@ -96,24 +96,24 @@ function _(e) {
   } = e, {
     author: a,
     type: u
-  } = n, d = (0, o.ZP)(n), m = n.getChannelId(), g = (0, o.JZ)(a, i), _ = (0, s.l)({
+  } = n, d = (0, o.ZP)(n), m = n.getChannelId(), _ = (0, o.JZ)(a, i), h = (0, s.l)({
     user: a,
     channelId: m,
     guildId: i.guild_id,
     messageId: n.id
-  })(g), b = null != (t = f[u]) ? t : null;
+  })(_), b = null != (t = f[u]) ? t : null;
   if (null == b) return null;
-  let x = p.intl.format(b(), {
+  let E = p.intl.format(b(), {
     actorName: d.nick,
-    actorHook: _
+    actorHook: h
   });
   return (0, r.jsx)(c.Z, {
-    iconNode: (0, r.jsx)(h, {
+    iconNode: (0, r.jsx)(g, {
       type: u
     }),
     timestamp: n.timestamp,
     compact: l,
-    children: x
+    children: E
   })
 }
 
@@ -125,11 +125,11 @@ function b(e) {
   } = e, {
     type: a
   } = t;
-  return a === i.u.REPORT_TO_MOD_BAN_USER || a === i.u.REPORT_TO_MOD_KICK_USER || a === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(g, {
+  return a === i.u.REPORT_TO_MOD_BAN_USER || a === i.u.REPORT_TO_MOD_KICK_USER || a === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(_, {
     message: t,
     channel: n,
     compact: l
-  }) : (0, r.jsx)(_, {
+  }) : (0, r.jsx)(h, {
     message: t,
     channel: n,
     compact: l

@@ -1,17 +1,17 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   RB: () => j,
   VH: () => y,
-  Vi: () => E,
-  Vu: () => S,
+  Vi: () => S,
+  Vu: () => E,
   q7: () => C
 });
 var r = n(692547),
   i = n(497089),
   l = n(650473),
   o = n(389765),
-  s = n(137492),
-  a = n(387661),
+  a = n(137492),
+  s = n(387661),
   c = n(659953),
   u = n(319707),
   d = n(584914),
@@ -23,7 +23,7 @@ var r = n(692547),
   b = n(39863),
   _ = n(130312);
 let O = {
-    CHECKED: a,
+    CHECKED: s,
     FRIENDS: u,
     SHARE_SCREEN: b,
     NEW_MESSAGE: g,
@@ -34,7 +34,7 @@ let O = {
     FRIEND_REQUEST_REMINDER: d,
     SCHEDULED_GUILD_EVENT: c,
     TOP_MESSAGES: p,
-    NOTIFICATION_CENTER: s,
+    NOTIFICATION_CENTER: a,
     UPDATE_PROFILE: _,
     FIND_FRIENDS: o,
     ADD_FRIEND: o,
@@ -71,7 +71,7 @@ let O = {
     }
   },
   j = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
-  E = e => {
+  S = e => {
     switch (e) {
       case i.DY.GO_LIVE_PUSH:
         return {
@@ -105,7 +105,7 @@ let O = {
         return null
     }
   },
-  S = e => {
+  E = e => {
     switch (e.item_enum) {
       case i.AM.UPDATE_PROFILE:
         return l.Y9;

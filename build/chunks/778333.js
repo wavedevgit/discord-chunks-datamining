@@ -1,6 +1,6 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 });
 var r = n(255367),
   i = n(73800),
@@ -14,53 +14,53 @@ var r = n(255367),
   p = n(314897),
   m = n(592125),
   f = n(699516),
-  h = n(51144),
-  g = n(981631),
-  _ = n(388032),
+  g = n(51144),
+  _ = n(981631),
+  h = n(388032),
   b = n(273254);
 
-function x(e) {
+function E(e) {
   var t;
   let {
     invite: n,
-    message: x,
+    message: E,
     getAcceptInviteContext: y
-  } = e, E = (0, l.e7)([p.default], () => p.default.getId()), v = (null == (t = n.inviter) ? void 0 : t.id) === E, C = n.state === g.r2o.ACCEPTING, {
+  } = e, C = (0, l.e7)([p.default], () => p.default.getId()), v = (null == (t = n.inviter) ? void 0 : t.id) === C, x = n.state === _.r2o.ACCEPTING, {
     analyticsLocations: O
   } = (0, c.ZP)(s.Z.INVITE_EMBED), j = (0, l.e7)([f.Z], () => {
     var e;
     return null != n.inviter && f.Z.isFriend(null == (e = n.inviter) ? void 0 : e.id)
-  }), S = i.useCallback(() => {
+  }), I = i.useCallback(() => {
     let e = "noop";
     null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", a.Z.openPrivateChannel({
       recipientIds: [n.inviter.id]
     })), (0, o.r$)({
       invite: n,
       action: e,
-      inviter_id: x.author.id,
-      invite_message_id: x.id
+      inviter_id: E.author.id,
+      invite_message_id: E.id
     }, O)
-  }, [n, x, O]), I = i.useCallback(() => {
+  }, [n, E, O]), S = i.useCallback(() => {
     (0, o.r$)({
       invite: n,
       action: "accept",
-      inviter_id: x.author.id,
-      invite_message_id: x.id
+      inviter_id: E.author.id,
+      invite_message_id: E.id
     }, O);
     let e = y("Invite Button Embed");
     o.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, x, O, y]);
+  }, [n, E, O, y]);
   if (null == n.inviter) return null;
-  let T = j ? S : I,
-    N = _.intl.string(_.t.ib7Ng4),
+  let T = j ? I : S,
+    N = h.intl.string(h.t.ib7Ng4),
     P = u.Z.Button.Colors.GREEN;
-  j ? (N = _.intl.string(_.t.xhxnPj), P = u.Z.Button.Colors.PRIMARY) : v && (N = _.intl.string(_.t.ib7Ng4), P = u.Z.Button.Colors.PRIMARY);
-  let A = v ? _.intl.string(_.t.eQyu1N) : _.intl.string(_.t.PYJHW1),
+  j ? (N = h.intl.string(h.t.xhxnPj), P = u.Z.Button.Colors.PRIMARY) : v && (N = h.intl.string(h.t.ib7Ng4), P = u.Z.Button.Colors.PRIMARY);
+  let A = v ? h.intl.string(h.t.eQyu1N) : h.intl.string(h.t.PYJHW1),
     w = null != n.inviter ? "".concat(n.inviter.username) : "",
-    Z = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
+    Z = null != n.inviter ? g.ZP.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(u.Z, {
     children: [(0, r.jsx)(u.Z.Header, {
       text: A
@@ -77,7 +77,7 @@ function x(e) {
         })]
       }), (0, r.jsx)(u.Z.Button, {
         onClick: T,
-        submitting: C,
+        submitting: x,
         isDisabled: v,
         color: P,
         children: N

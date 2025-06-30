@@ -3,10 +3,10 @@ n.d(t, {
   M: () => g,
   Z: () => j
 });
-var i, o = n(255367),
+var i, r = n(255367),
   l = n(73800),
-  r = n(120356),
-  a = n.n(r),
+  o = n(120356),
+  a = n.n(o),
   s = n(500923),
   c = n.n(s),
   u = n(570140),
@@ -20,8 +20,8 @@ let b = async e => {
   var t;
   let {
     effect: n
-  } = e, i = await (0, h.T)(n.channelId, null != (t = n.messageId) ? t : m.lds, n.emoji.name), o = await (0, p.aB)("".concat(n.channelId, ":").concat(n.messageId, ":").concat(n.emoji.name), n.url, i, n.color);
-  return o.assets[0].p = n.url, o
+  } = e, i = await (0, h.T)(n.channelId, null != (t = n.messageId) ? t : m.lds, n.emoji.name), r = await (0, p.aB)("".concat(n.channelId, ":").concat(n.messageId, ":").concat(n.emoji.name), n.url, i, n.color);
+  return r.assets[0].p = n.url, r
 };
 
 function j(e) {
@@ -29,8 +29,8 @@ function j(e) {
     className: t,
     effect: n,
     onComplete: i,
-    emojiSize: r = 20
-  } = e, s = l.useRef(null), h = r * p.Vz, m = (h + r) / 2;
+    emojiSize: o = 20
+  } = e, s = l.useRef(null), h = o * p.Vz, m = (h + o) / 2;
   return l.useEffect(() => {
     let e;
     if (null != n) return !async function() {
@@ -57,9 +57,9 @@ function j(e) {
     }(), () => {
       null != e && e.destroy()
     }
-  }, [i, n, r]), (0, o.jsx)("div", {
+  }, [i, n, o]), (0, r.jsx)("div", {
     className: f.effectsWrapper,
-    children: (0, o.jsx)("div", {
+    children: (0, r.jsx)("div", {
       className: a()(f.effect, t),
       style: {
         transform: "translateY(".concat(m, "px)"),

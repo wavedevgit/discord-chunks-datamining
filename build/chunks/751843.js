@@ -5,8 +5,8 @@ n.d(t, {
 var r, i = n(255367);
 n(73800);
 var l = n(120356),
-  o = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  o = n(481060),
   s = n(871499),
   c = n(572511),
   u = ((r = u || {})[r.UP = 0] = "UP", r[r.DOWN = 1] = "DOWN", r);
@@ -49,10 +49,10 @@ function d(e) {
     }
     return e
   }({
-    className: o()(n, c.arrow, {
+    className: a()(n, c.arrow, {
       [c.up]: 0 === t
     }),
-    iconComponent: a.CJ0,
+    iconComponent: o.CJ0,
     themeable: r
   }, l))
 }

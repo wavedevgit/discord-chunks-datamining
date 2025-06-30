@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(695469),
-  o = n(597312),
-  a = n(481060),
+  a = n(597312),
+  o = n(481060),
   s = n(727637),
   c = n(410030),
   u = n(100527),
@@ -25,8 +25,8 @@ var r = n(255367),
   j = n(544989),
   O = n(481932),
   E = n(664794),
-  I = n(4517),
-  S = n(277117),
+  S = n(4517),
+  I = n(277117),
   P = n(52639),
   Z = n(228168),
   N = n(388032),
@@ -56,48 +56,48 @@ function w(e) {
     user: t,
     currentUser: n,
     channel: w
-  } = e, R = __OVERLAY__, k = (0, m.ZP)(t.id), M = (0, c.ZP)(), D = i.useRef(Date.now()), {
-    analyticsLocations: L
+  } = e, R = __OVERLAY__, k = (0, m.ZP)(t.id), M = (0, c.ZP)(), L = i.useRef(Date.now()), {
+    analyticsLocations: D
   } = (0, d.ZP)(u.Z.USER_PROFILE_SIDEBAR), U = (0, h.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: w.id
-  }), B = i.useRef(null), F = (0, s.Z)(B), G = (0, g.$m)(), H = (0, a.q_F)({
-    opacity: +(null != G.interactionType),
+  }), B = i.useRef(null), F = (0, s.Z)(B), H = (0, g.$m)(), G = (0, o.q_F)({
+    opacity: +(null != H.interactionType),
     config: {
       duration: 150
     }
   }), V = e => {
     (0, b.openUserProfileModal)(A({
-      sourceAnalyticsLocations: L,
+      sourceAnalyticsLocations: D,
       hideRestrictedProfile: !0
     }, U, e))
   };
   return (0, r.jsx)(d.Gt, {
-    value: L,
+    value: D,
     children: (0, r.jsx)(h.Mt, {
       value: U,
-      openedAt: D.current,
+      openedAt: L.current,
       fetchStartedAt: null == k ? void 0 : k.fetchStartedAt,
       fetchEndedAt: null == k ? void 0 : k.fetchEndedAt,
       isLoaded: null == k ? void 0 : k.isLoaded,
       children: (0, r.jsx)(g.NJ, {
-        value: G,
+        value: H,
         children: (0, r.jsxs)(x.Z, {
           ref: B,
           user: t,
           displayProfile: k,
           themeType: Z.lY.SIDEBAR,
           themeOverride: M,
-          children: [null != G.interactionType && (0, r.jsx)(l.animated.div, {
-            style: H,
+          children: [null != H.interactionType && (0, r.jsx)(l.animated.div, {
+            style: G,
             className: T.backdrop
-          }), (0, r.jsxs)(o.u2, {
+          }), (0, r.jsxs)(a.u2, {
             children: [(0, r.jsxs)(j.Z, {
               children: [(0, r.jsx)(O.Z, {
                 user: t,
                 themeType: Z.lY.SIDEBAR,
-                shouldShowTooltip: null === G.interactionType
+                shouldShowTooltip: null === H.interactionType
               }), t.bot ? (0, r.jsx)(v.Z, {
                 user: t
               }) : (0, r.jsx)(E.Z, {
@@ -122,19 +122,19 @@ function w(e) {
                 channelId: w.id,
                 themeType: Z.lY.SIDEBAR,
                 onOpenProfile: R ? void 0 : V
-              }), (0, r.jsx)(I.Z, {
+              }), (0, r.jsx)(S.Z, {
                 location: "UserProfileSiebar",
                 user: t,
                 channelId: w.id,
                 themeType: Z.lY.SIDEBAR,
                 disableToolbar: t.bot
               })]
-            }), (0, r.jsx)(S.Z, {
+            }), (0, r.jsx)(I.Z, {
               user: t,
               currentUser: n,
               displayProfile: k,
               channel: w,
-              isHovering: null == G.interactionType && F,
+              isHovering: null == H.interactionType && F,
               onOpenProfile: R ? void 0 : V
             }), (0, r.jsx)(P.Z, {
               user: t,
@@ -142,15 +142,15 @@ function w(e) {
             })]
           }), !R && (0, r.jsx)("footer", {
             className: T.footer,
-            children: (0, r.jsx)(a.zxk, {
+            children: (0, r.jsx)(o.zxk, {
               fullWidth: !0,
-              size: a.zxk.Sizes.LARGE,
-              look: a.zxk.Looks.BLANK,
+              size: o.zxk.Sizes.LARGE,
+              look: o.zxk.Looks.BLANK,
               color: T.footerButtonColor,
               onClick: () => {
                 V(), (0, f.pQ)(A({
                   action: "PRESS_VIEW_PROFILE",
-                  analyticsLocations: L
+                  analyticsLocations: D
                 }, U))
               },
               children: N.intl.string(N.t["+Xp3ho"])

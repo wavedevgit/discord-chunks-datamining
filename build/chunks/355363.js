@@ -1,4 +1,4 @@
-/** Chunk was on 25904 **/
+/** Chunk was on 4811 **/
 n.d(t, {
   ZP: () => l
 });
@@ -19,8 +19,8 @@ function l(e) {
       considerMaxStageVoiceUserLimit: l = !0
     } = e, {
       limit: o
-    } = (0, r.Z)(t), s = -1;
-    return (t.userLimit > 0 && (s = t.userLimit), n && o > 0 && (s = s > 0 ? Math.min(s, o) : o), l && s === i.xGv) ? 0 : s
+    } = (0, r.Z)(t), a = -1;
+    return (t.userLimit > 0 && (a = t.userLimit), n && o > 0 && (a = a > 0 ? Math.min(a, o) : o), l && a === i.xGv) ? 0 : a
   }({
     channel: t,
     video: l

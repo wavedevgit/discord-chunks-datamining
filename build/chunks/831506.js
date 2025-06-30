@@ -1,6 +1,6 @@
-/** Chunk was on 69856 **/
+/** Chunk was on 84552 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 }), n(388685);
 var r, i = n(392711),
   l = n.n(i),
@@ -22,13 +22,13 @@ function p(e, t, n) {
 let m = {},
   f = {};
 
-function h(e, t) {
+function g(e, t) {
   var n;
   return (null != (n = m[e]) ? n : {})[t]
 }
 
-function g(e, t) {
-  let n = h(e, t);
+function _(e, t) {
+  let n = g(e, t);
   if (null == n) return;
   let r = m[e];
   delete r[t], l().isEmpty(r) && delete m[e];
@@ -36,14 +36,14 @@ function g(e, t) {
   null != i && (i.delete(e), 0 === i.size && delete f[n])
 }
 
-function _(e, t, n, r) {
+function h(e, t, n, r) {
   let i = n.find(e => null != e.party && e.party.id),
     l = null != i && null != i.party ? i.party.id : null,
-    a = h(t, e);
-  if (null == l || r === d.Skl.OFFLINE) return null != a && void g(t, e);
+    a = g(t, e);
+  if (null == l || r === d.Skl.OFFLINE) return null != a && void _(t, e);
   if (null != a) {
     if (a === l) return !1;
-    g(t, e)
+    _(t, e)
   }! function(e, t, n) {
     var r;
     let i = m[e];
@@ -62,24 +62,24 @@ function b(e) {
       status: r,
       activities: i
     }
-    of t.presences) !1 !== _(t.id, e.id, i, r) && (n = !0);
+    of t.presences) !1 !== h(t.id, e.id, i, r) && (n = !0);
   return n
 }
 
-function x(e, t) {
+function E(e, t) {
   let n = !1;
   return t.forEach(t => {
-    null != t && _(e, t.user.id, t.activities, t.status) && (n = !0)
+    null != t && h(e, t.user.id, t.activities, t.status) && (n = !0)
   }), n
 }
 
 function y() {
   let e = s.default.getId(),
     t = u.Z.getActivities();
-  return _(d.ME, e, t)
+  return h(d.ME, e, t)
 }
 
-function E(e) {
+function C(e) {
   let {
     relationship: t
   } = e;
@@ -106,7 +106,7 @@ class v extends(r = a.ZP.Store) {
   }
 }
 p(v, "displayName", "GamePartyStore");
-let C = new v(o.Z, {
+let x = new v(o.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
       guilds: t,
@@ -117,7 +117,7 @@ let C = new v(o.Z, {
         status: t,
         activities: i
       }
-      of n) null != e && !1 !== _(d.ME, e.id, i, t) && (r = !0);
+      of n) null != e && !1 !== h(d.ME, e.id, i, t) && (r = !0);
     for (let e of t) !1 !== b({
       guild: e
     }) && (r = !0);
@@ -150,7 +150,7 @@ let C = new v(o.Z, {
         user: e,
         activities: r
       }
-      of t) null != e && !1 !== _(d.ME, e.id, r) && (n = !0);
+      of t) null != e && !1 !== h(d.ME, e.id, r) && (n = !0);
     return n
   },
   PRESENCE_UPDATES: function(e) {
@@ -164,7 +164,7 @@ let C = new v(o.Z, {
         status: r,
         activities: i
       } = e;
-      return _(null != t ? t : d.ME, n.id, i, r)
+      return h(null != t ? t : d.ME, n.id, i, r)
     }).some(e => e)
   },
   THREAD_MEMBER_LIST_UPDATE: function(e) {
@@ -172,17 +172,17 @@ let C = new v(o.Z, {
       guildId: t,
       members: n
     } = e;
-    return x(t, n.map(e => e.presence))
+    return E(t, n.map(e => e.presence))
   },
   THREAD_MEMBERS_UPDATE: function(e) {
     let {
       guildId: t,
       addedMembers: n
     } = e;
-    return null != n && x(t, n.map(e => e.presence))
+    return null != n && E(t, n.map(e => e.presence))
   },
-  RELATIONSHIP_ADD: E,
-  RELATIONSHIP_UPDATE: E,
+  RELATIONSHIP_ADD: C,
+  RELATIONSHIP_UPDATE: C,
   RELATIONSHIP_REMOVE: function(e) {
     let {
       relationship: t
