@@ -30,7 +30,7 @@ function m(e) {
   }
   return e
 }
-let p = {
+let x = {
   PremiumSubscriptionAprilMarketingDecoModal: async () => {
     let {
       default: e
@@ -46,7 +46,7 @@ let p = {
 };
 
 function h() {
-  let e = r.useMemo(() => Object.keys(p).map(e => ({
+  let e = r.useMemo(() => Object.keys(x).map(e => ({
       label: e,
       value: e
     })).sort((e, t) => e.label.localeCompare(t.label)), []),
@@ -70,7 +70,7 @@ function h() {
             select: e => n(e),
             popoutLayerContext: o.O$
           }), (0, a.jsx)(l.zxk, {
-            onClick: () => (0, l.ZDy)(p[t]),
+            onClick: () => (0, l.ZDy)(x[t]),
             children: "Open"
           })]
         })]

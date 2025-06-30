@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => p
+  Z: () => x
 }), n(388685);
 var a = n(255367),
   r = n(73800),
@@ -13,13 +13,13 @@ var a = n(255367),
   u = n(616257),
   m = n(493733);
 
-function p() {
+function x() {
   let [e, t] = r.useState(30), n = () => {
     i.Z.dispatch({
       type: "VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME",
       timeInSeconds: e
     })
-  }, p = r.useCallback(() => {
+  }, x = r.useCallback(() => {
     i.Z.dispatch({
       type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
       state: s.O.LOADING
@@ -67,7 +67,7 @@ function p() {
           children: "Pretend the native module is loading so when you close your app it'll look as if it crashed on load"
         }), (0, a.jsx)(l.zxk, {
           size: l.zxk.Sizes.SMALL,
-          onClick: p,
+          onClick: x,
           children: "Pretend"
         })]
       }), (0, a.jsx)("div", {

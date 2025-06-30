@@ -67,11 +67,11 @@ function P(e) {
         id: t
       });
     case "everyone":
-      return (0, r.jsx)(E, {
+      return (0, r.jsx)(N, {
         roleName: "@everyone"
       });
     case "here":
-      return (0, r.jsx)(E, {
+      return (0, r.jsx)(N, {
         roleName: "@here"
       });
     default:
@@ -210,7 +210,7 @@ function C(e) {
   })
 }
 
-function E(e) {
+function N(e) {
   let {
     roleName: n
   } = e, t = (0, y.d)();

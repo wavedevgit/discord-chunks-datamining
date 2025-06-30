@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => x
+  Z: () => p
 }), n(388685);
 var a = n(255367),
   r = n(73800),
@@ -12,7 +12,7 @@ var a = n(255367),
   d = n(511010),
   u = n(246992),
   m = n(531578),
-  p = n(521981);
+  x = n(521981);
 let h = [{
   label: "second(s)",
   value: 1e3
@@ -27,8 +27,8 @@ let h = [{
   value: 864e5
 }];
 
-function x() {
-  let [e, t] = r.useState(null), [n, x] = r.useState(0), [b, f] = r.useState(1e3), [v, _] = r.useState(0), g = (0, l.e7)([c.Z], () => {
+function p() {
+  let [e, t] = r.useState(null), [n, p] = r.useState(0), [b, f] = r.useState(1e3), [v, _] = r.useState(0), g = (0, l.e7)([c.Z], () => {
     var t;
     return null === e ? null : null != (t = c.Z.getFeedbackConfig(m.nw[e])) ? t : o.R[m.nw[e]]
   }), j = Object.entries(m.nw), y = j.slice(j.length / 2).map(e => {
@@ -39,10 +39,10 @@ function x() {
     }
   }), C = r.useMemo(() => null != e && v >= 0 && v <= 100 && n >= 0, [e, v, n]);
   return (0, a.jsxs)("div", {
-    className: p.container,
+    className: x.container,
     children: [(0, a.jsx)(i.hjN, {
       title: "Feedback Survey",
-      className: p.formElement,
+      className: x.formElement,
       tag: i.RB0.H3,
       children: (0, a.jsx)(i.q4e, {
         options: y,
@@ -55,11 +55,11 @@ function x() {
       })
     }), (0, a.jsxs)(i.hjN, {
       title: "Override Survey Cooldown",
-      className: p.formElement,
+      className: x.formElement,
       tag: i.RB0.H3,
       children: [null != g && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(d.Z, {
-          className: p.formDividerTitle,
+          className: x.formDividerTitle,
           children: (0, a.jsx)(i.Text, {
             variant: "text-sm/semibold",
             children: "Current cooldown"
@@ -78,19 +78,19 @@ function x() {
           children: "".concat(g.cooldown / 864e5, " day(s)")
         })]
       }), (0, a.jsx)(d.Z, {
-        className: p.formDividerTitle,
+        className: x.formDividerTitle,
         children: (0, a.jsx)(i.Text, {
           variant: "text-sm/semibold",
           children: "Override cooldown"
         })
       }), (0, a.jsxs)("div", {
-        className: p.formRow,
+        className: x.formRow,
         children: [(0, a.jsx)(i.oil, {
           min: 0,
           value: n.toString(),
           type: "number",
           placeholder: "Duration length",
-          onChange: e => x(parseFloat(e))
+          onChange: e => p(parseFloat(e))
         }), (0, a.jsx)(i.q4e, {
           options: h,
           value: b,
@@ -102,11 +102,11 @@ function x() {
       })]
     }), (0, a.jsxs)(i.hjN, {
       title: "Override Survey Chance",
-      className: p.formElement,
+      className: x.formElement,
       tag: i.RB0.H3,
       children: [null != g && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(d.Z, {
-          className: p.formDividerTitle,
+          className: x.formDividerTitle,
           children: (0, a.jsx)(i.Text, {
             variant: "text-sm/semibold",
             children: "Current chance"
@@ -116,13 +116,13 @@ function x() {
           children: "".concat(100 * g.chance, "%")
         })]
       }), (0, a.jsx)(d.Z, {
-        className: p.formDividerTitle,
+        className: x.formDividerTitle,
         children: (0, a.jsx)(i.Text, {
           variant: "text-sm/semibold",
           children: "Override chance"
         })
       }), (0, a.jsxs)("div", {
-        className: p.formRow,
+        className: x.formRow,
         children: [(0, a.jsx)(i.oil, {
           min: 0,
           max: 100,
@@ -135,7 +135,7 @@ function x() {
         })]
       })]
     }), (0, a.jsxs)("div", {
-      className: p.formRow,
+      className: x.formRow,
       children: [(0, a.jsx)(i.zxk, {
         onClick: () => void(null != g && s.Z.dispatch({
           type: "FEEDBACK_OVERRIDE_SET",

@@ -12,9 +12,9 @@ var a = n(255367),
   d = n(481060),
   u = n(846027),
   m = n(304809),
-  p = n(72897),
+  x = n(72897),
   h = n(131951),
-  x = n(246992),
+  p = n(246992),
   b = n(65154),
   f = n(203759),
   v = n(616257);
@@ -98,7 +98,7 @@ function g(e) {
 }
 
 function j() {
-  let e = (0, p.zX)({
+  let e = (0, x.zX)({
       location: "DevToolsVoiceFiltersPanel"
     }),
     [t, n] = r.useState(!1),
@@ -109,8 +109,8 @@ function j() {
     C = r.useRef(null),
     [N, O] = r.useState(.5),
     {
-      krispModels: E,
-      krispModelOverride: T,
+      krispModels: T,
+      krispModelOverride: E,
       inputDeviceId: S,
       inputMode: P,
       echoCancellation: I,
@@ -187,7 +187,7 @@ function j() {
               label: n
             }
           }),
-          popoutLayerContext: x.O$
+          popoutLayerContext: p.O$
         })
       }), (0, a.jsx)(d.hjN, {
         title: "Noise Cancellation",
@@ -198,7 +198,7 @@ function j() {
             u.Z.setNoiseCancellation("KRISP" === e), u.Z.setNoiseSuppression("STANDARD" === e)
           },
           options: G,
-          popoutLayerContext: x.O$
+          popoutLayerContext: p.O$
         })
       }), "KRISP" === M && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(d.hjN, {
@@ -218,15 +218,15 @@ function j() {
             clear: () => {
               u.Z.setKrispModelOverride("")
             },
-            isSelected: e => e === T,
-            options: E.map(e => ({
+            isSelected: e => e === E,
+            options: T.map(e => ({
               label: e,
               value: e
             })),
             select: e => {
               u.Z.setKrispModelOverride(e)
             },
-            popoutLayerContext: x.O$,
+            popoutLayerContext: p.O$,
             serialize: e => e
           })
         })]

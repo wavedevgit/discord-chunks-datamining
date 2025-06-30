@@ -18,7 +18,7 @@ function c(e) {
     onClickRow: d,
     selectedRowKey: u,
     rowHeight: m = 40
-  } = e, p = r.useMemo(() => t.map(e => (function(e) {
+  } = e, x = r.useMemo(() => t.map(e => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         a = Object.keys(n);
@@ -54,7 +54,7 @@ function c(e) {
         } = e, r = o.tableHeader;
         return (0, a.jsx)("div", {
           className: r,
-          children: p.map(e => {
+          children: x.map(e => {
             var r, l;
             let i = e.cellClassName,
               s = {
@@ -79,7 +79,7 @@ function c(e) {
         return (0, a.jsx)(s.P3F, {
           className: h,
           onClick: () => null == d ? void 0 : d(r),
-          children: p.map(e => {
+          children: x.map(e => {
             var n, l;
             let i = e.cellClassName,
               s = {

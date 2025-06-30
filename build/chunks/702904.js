@@ -12,9 +12,9 @@ var a = n(255367),
   d = n(853872),
   u = n(246992),
   m = n(959532),
-  p = n(616257),
+  x = n(616257),
   h = n(173166);
-let x = [{
+let p = [{
     label: "Americas",
     value: "",
     disabled: !0
@@ -524,7 +524,7 @@ function v() {
   return r.useEffect(() => {
     (0, o.tZ)()
   }, []), (0, a.jsx)(s.zJl, {
-    className: p.panel,
+    className: x.panel,
     children: (0, a.jsxs)("div", {
       className: h.panelInner,
       children: [(0, a.jsxs)(s.Text, {
@@ -541,7 +541,7 @@ function v() {
         }), (0, a.jsx)(s.PhF, {
           serialize: e => e,
           isSelected: t => t === e,
-          options: x,
+          options: p,
           select: e => {
             t(e), c(b[e][0].value), g(1 === b[e].length)
           },

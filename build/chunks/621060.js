@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 n.d(t, {
   ZP: () => _,
-  v0: () => x
+  v0: () => p
 }), n(388685), n(539854), n(642613);
 var a, r = n(255367),
   l = n(73800),
@@ -12,9 +12,9 @@ var a, r = n(255367),
   d = n(393238),
   u = n(424625),
   m = n(823379),
-  p = n(246992),
+  x = n(246992),
   h = n(616257),
-  x = ((a = {}).NONE = "", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a);
+  p = ((a = {}).NONE = "", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a);
 let b = ["Experiments", "Events", "Premium", "Billing", "Users", "Guilds", "UI", "Games", "Audio / Video", "Development"],
   f = l.forwardRef(function(e, t) {
     let {
@@ -39,7 +39,7 @@ function v(e) {
     tabs: t,
     selectedTabId: n,
     onSelectTab: a
-  } = e, i = l.useRef(new Map), [s, x] = l.useState(() => new Set), {
+  } = e, i = l.useRef(new Map), [s, p] = l.useState(() => new Set), {
     ref: v,
     width: _
   } = (0, d.ZP)(), g = l.useRef(null);
@@ -49,7 +49,7 @@ function v(e) {
     let s = new Set,
       o = null != _ ? _ : 0;
     for (let c of (o -= null != (a = null == (e = i.current.get(n)) ? void 0 : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (l = null == (r = i.current.get(c.id)) ? void 0 : r.getBoundingClientRect().width) ? l : 0) < 0 && s.add(c.id);
-    x(s)
+    p(s)
   }, [t, _, v, n]);
   let j = l.useCallback(e => {
     var n, l, i;
@@ -131,7 +131,7 @@ function v(e) {
       className: h.menu,
       children: s.size > 0 && (0, r.jsx)(c.yRy, {
         targetElementRef: g,
-        layerContext: p.O$,
+        layerContext: x.O$,
         renderPopout: j,
         position: "bottom",
         align: "right",

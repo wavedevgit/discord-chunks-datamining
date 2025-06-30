@@ -12,9 +12,9 @@ var a = n(255367),
   d = n(347469),
   u = n(213609),
   m = n(213713),
-  p = n(665149),
+  x = n(665149),
   h = n(238246),
-  x = n(788983),
+  p = n(788983),
   b = n(906467),
   f = n(259580),
   v = n(31336),
@@ -26,8 +26,8 @@ var j = n(392750),
   C = n(789654),
   N = n(719672),
   O = n(691867),
-  E = n(916790),
-  T = n(645973),
+  T = n(916790),
+  E = n(645973),
   S = n(903502),
   P = n(604776),
   I = n(912072),
@@ -102,7 +102,7 @@ function el(e) {
       id: "dispatcher",
       name: "Dispatcher",
       group: Q.v0.EVENTS,
-      render: () => (0, a.jsx)(E.Z, {})
+      render: () => (0, a.jsx)(T.Z, {})
     }];
     return b.Z.isDeveloper && (e.push({
       id: "shop",
@@ -118,7 +118,7 @@ function el(e) {
       id: "end_to_end_encryption",
       name: "E2EE",
       group: Q.v0.DEVELOPMENT,
-      render: () => (0, a.jsx)(T.Z, {})
+      render: () => (0, a.jsx)(E.Z, {})
     }), e.push({
       id: "performance",
       name: "Performance",
@@ -274,14 +274,14 @@ function el(e) {
       panel: d
     }
   }), (0, a.jsxs)(Z.Gk, {
-    children: [(0, a.jsxs)(p.ZP, {
+    children: [(0, a.jsxs)(x.ZP, {
       className: ea.headerBar,
       toolbar: n ? null : (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(p.ZP.Icon, {
+        children: [(0, a.jsx)(x.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
           onClick: () => {
-            (0, x.bA)(ee.KJ3.DEVTOOLS_POPOUT, () => (0, a.jsx)(h.Z, {
+            (0, p.bA)(ee.KJ3.DEVTOOLS_POPOUT, () => (0, a.jsx)(h.Z, {
               windowKey: ee.KJ3.DEVTOOLS_POPOUT,
               title: "DevTools",
               withTitleBar: !0,
@@ -294,16 +294,16 @@ function el(e) {
               height: 600
             })
           }
-        }), (0, a.jsx)(p.ZP.Icon, {
+        }), (0, a.jsx)(x.ZP.Icon, {
           icon: c.Dio,
           tooltip: et.intl.string(et.t.cpT0Cg),
           onClick: v.SO
         })]
       }),
-      children: [(0, a.jsx)(p.ZP.Icon, {
+      children: [(0, a.jsx)(x.ZP.Icon, {
         icon: c.Ymb,
         tooltip: "DevTools"
-      }), (0, a.jsx)(p.ZP.Title, {
+      }), (0, a.jsx)(x.ZP.Title, {
         children: "DevTools"
       })]
     }), (0, a.jsx)(i, {}), o(), (0, a.jsx)(Z.Br, {
@@ -351,15 +351,15 @@ function es() {
     className: en.container,
     children: (0, a.jsx)(c.P3F, {
       onClick: v.SO,
-      children: (0, a.jsxs)(p.ZP, {
+      children: (0, a.jsxs)(x.ZP, {
         className: i()(ea.headerBar, en.mobileHeaderCollapsed),
         toolbar: (0, a.jsx)(f.Z, {
           direction: f.Z.Directions.UP
         }),
-        children: [(0, a.jsx)(p.ZP.Icon, {
+        children: [(0, a.jsx)(x.ZP.Icon, {
           icon: c.Ymb,
           tooltip: "DevTools"
-        }), (0, a.jsx)(p.ZP.Title, {
+        }), (0, a.jsx)(x.ZP.Title, {
           children: "DevTools"
         })]
       })

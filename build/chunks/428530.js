@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => x
+  Z: () => p
 }), n(388685), n(35282);
 var a = n(255367);
 n(73800);
@@ -26,7 +26,7 @@ function u(e) {
   return t
 }
 let m = u(d),
-  p = u(d);
+  x = u(d);
 
 function h(e) {
   return o.Jn9.test(e) ? (0, a.jsx)(s.ZP, {
@@ -35,7 +35,7 @@ function h(e) {
   }) : e
 }
 
-function x(e) {
+function p(e) {
   let {
     data: t
   } = e, n = (0, i.ZP)();
@@ -43,7 +43,7 @@ function x(e) {
     className: c.inspectorWrapper,
     children: (0, a.jsx)(r.L, {
       data: t,
-      theme: "light" === n ? p : m,
+      theme: "light" === n ? x : m,
       invertTheme: !1,
       valueRenderer: h,
       shouldExpandNode: () => !0

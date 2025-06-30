@@ -17,17 +17,17 @@ let d = "/users/@me/debug/consumables/",
 
 function m() {
   let e, [t, n] = (0, r.useState)([]),
-    [m, p] = (0, r.useState)(null),
-    [h, x] = (0, r.useState)(!1);
+    [m, x] = (0, r.useState)(null),
+    [h, p] = (0, r.useState)(!1);
   return (0, r.useEffect)(() => ((async () => {
     try {
       let e = (await l.tn.get(d)).body.entitlements.map(e => o.Z.createFromServer(e));
       n(e)
     } catch (e) {
-      p("Failed to fetch entitlements")
+      x("Failed to fetch entitlements")
     }
   })(), () => {
-    n([]), p(null)
+    n([]), x(null)
   }), []), (0, a.jsx)("div", {
     className: c.panel,
     children: null != m ? (0, a.jsx)(i.Text, {
@@ -39,7 +39,7 @@ function m() {
         children: "Create Entitlements"
       }), (0, a.jsx)(i.zxk, {
         onClick: (e = s.D1, async () => {
-          x(!0);
+          p(!0);
           try {
             let a = await l.tn.post({
                 url: d,
@@ -51,9 +51,9 @@ function m() {
               r = new o.Z(a.body.entitlement);
             n([...t, r])
           } catch (e) {
-            p("Failed to create entitlement")
+            x("Failed to create entitlement")
           } finally {
-            x(!1)
+            p(!1)
           }
         }),
         className: c.button,

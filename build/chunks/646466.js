@@ -13,7 +13,7 @@ var a = n(255367),
   u = n(206878),
   m = n(63874);
 
-function p(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -38,7 +38,7 @@ let h = [{
     name: "Validate",
     value: "validate"
   }],
-  x = {
+  p = {
     label: "[none selected]",
     value: null
   },
@@ -51,7 +51,7 @@ let h = [{
       let {
         ShopAssetsPreviewInstructionModal: e
       } = await Promise.resolve().then(n.bind(n, 637443));
-      return t => (0, a.jsx)(e, p({}, t))
+      return t => (0, a.jsx)(e, x({}, t))
     }, {
       modalKey: s.g,
       onCloseRequest: () => (0, l.Mr3)(s.g)
@@ -62,7 +62,7 @@ let h = [{
       let {
         ShopPFXPreviewInstructionModal: e
       } = await Promise.resolve().then(n.bind(n, 637443));
-      return t => (0, a.jsx)(e, p({}, t))
+      return t => (0, a.jsx)(e, x({}, t))
     }, {
       modalKey: s.c,
       onCloseRequest: () => (0, l.Mr3)(s.c)
@@ -74,7 +74,7 @@ let h = [{
         previewProfileEffectId: t,
         setPreviewProfileEffectId: n
       } = (0, o.N9)(),
-      s = r.useMemo(() => [x, ...e.map(e => ({
+      s = r.useMemo(() => [p, ...e.map(e => ({
         label: e.name,
         value: e.id
       }))], [e]);
@@ -141,7 +141,7 @@ let h = [{
     } = (0, o.N9)(), d = r.useMemo(() => Object.values(i).map(e => ({
       label: e.name,
       value: e.type
-    })), [i]), u = r.useCallback(e => s(e), [s]), p = r.useCallback(() => {
+    })), [i]), u = r.useCallback(e => s(e), [s]), x = r.useCallback(() => {
       c(), t(), n()
     }, [c, t, n]);
     return 0 === d.length ? null : (0, a.jsxs)(a.Fragment, {
@@ -155,7 +155,7 @@ let h = [{
         }), (0, a.jsx)(l.zxk, {
           look: l.zxk.Looks.FILLED,
           size: l.zxk.Sizes.TINY,
-          onClick: p,
+          onClick: x,
           children: "Clear All"
         })]
       }), (0, a.jsx)("ul", {
@@ -214,17 +214,17 @@ let h = [{
       validationComplete: n,
       warnings: i,
       errors: s
-    } = (0, u.g)(), o = Object.entries(s), d = Object.entries(i), p = o.length > 0, h = d.length > 0, x = r.useCallback(n => {
+    } = (0, u.g)(), o = Object.entries(s), d = Object.entries(i), x = o.length > 0, h = d.length > 0, p = r.useCallback(n => {
       t(), e(n)
     }, [e, t]);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(c.L, {
-        onDrop: x
+        onDrop: p
       }), n ? (0, a.jsxs)("div", {
         className: m.validationSummary,
         children: [(0, a.jsx)(l.Text, {
           variant: "text-md/normal",
-          color: p ? "text-danger" : "text-default",
+          color: x ? "text-danger" : "text-default",
           children: "".concat(o.length, " errors")
         }), (0, a.jsx)(l.Text, {
           variant: "text-md/normal",
@@ -242,7 +242,7 @@ let h = [{
         children: "Drop asset folder to validate."
       }), (0, a.jsx)(l.LZC, {
         size: 16
-      }), p && (0, a.jsxs)(a.Fragment, {
+      }), x && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(l.X6q, {
           variant: "heading-lg/bold",
           children: "Errors"
@@ -310,10 +310,10 @@ let h = [{
       ignoredFilenames: i,
       clearAssets: s,
       clearIgnoredFilenames: u,
-      processAndUpsertAssets: p
+      processAndUpsertAssets: x
     } = (0, d.hm)(), h = r.useCallback(e => {
-      n(), p(e)
-    }, [p, n]);
+      n(), x(e)
+    }, [x, n]);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(c.L, {
         onDrop: h

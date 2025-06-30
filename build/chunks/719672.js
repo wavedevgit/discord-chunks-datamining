@@ -13,9 +13,9 @@ var r = n(913527),
   d = n(883904),
   u = n(211644),
   m = n(675478),
-  p = n(681619),
+  x = n(681619),
   h = n(177488);
-let x = e => {
+let p = e => {
     switch (e) {
       case c.D.DC_DISMISSED:
         return "DISMISS:";
@@ -59,8 +59,8 @@ function v() {
         dismissibleContent: n
       } = e;
       return {
-        key: x(t) + n.toString(),
-        event: x(t),
+        key: p(t) + n.toString(),
+        event: p(t),
         dismissibleContent: n
       }
     }),
@@ -93,12 +93,12 @@ function v() {
       children: ["Last winner: ", null != v ? s.z[v] : "None"]
     }), (0, a.jsx)("br", {}), (0, a.jsx)("div", {
       className: h.candidatesTableContainer,
-      children: (0, a.jsx)(p.Z, {
+      children: (0, a.jsx)(x.Z, {
         className: h.candidatesTable,
         columns: f,
         data: g
       })
-    }), (0, a.jsx)("br", {}), (0, a.jsx)(p.Z, {
+    }), (0, a.jsx)("br", {}), (0, a.jsx)(x.Z, {
       columns: b,
       data: _
     })]

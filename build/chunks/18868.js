@@ -41,19 +41,19 @@ let m = () => {
       modalKey: c.A
     })
   },
-  p = e => {
+  x = e => {
     e.stopPropagation(), e.preventDefault()
   },
   h = e => {
     let {
       className: t,
       onDrop: n
-    } = e, [l, h] = r.useState(!1), x = r.useRef(null), b = r.useCallback(e => {
-      p(e), h(!0), (0, s.Mr3)(c.A)
+    } = e, [l, h] = r.useState(!1), p = r.useRef(null), b = r.useCallback(e => {
+      x(e), h(!0), (0, s.Mr3)(c.A)
     }, []), f = r.useCallback(e => {
-      p(e), h(!1)
+      x(e), h(!1)
     }, []), v = r.useCallback(async e => {
-      p(e), h(!1);
+      x(e), h(!1);
       let t = e.dataTransfer;
       if (null == t) return void m();
       let a = await Promise.all(Array.from(t.items).map(e => {
@@ -63,7 +63,7 @@ let m = () => {
       a.length > 0 ? n(a) : m()
     }, [n]);
     return (0, a.jsx)("div", {
-      ref: x,
+      ref: p,
       className: i()(t, u.uploadArea),
       onDragEnter: b,
       onDragLeave: f,

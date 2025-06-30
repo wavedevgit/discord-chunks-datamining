@@ -9,6 +9,7 @@ function l(e) {
     children: n
   } = e;
   return (0, r.jsx)("code", {
+    className: "inline",
     children: n
   })
 }

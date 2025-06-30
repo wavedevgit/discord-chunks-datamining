@@ -12,9 +12,9 @@ var a = n(255367),
   d = n(848572),
   u = n(594174),
   m = n(78839),
-  p = n(709054),
+  x = n(709054),
   h = n(246992),
-  x = n(981631),
+  p = n(981631),
   b = n(474936);
 let f = [{
   label: "1 Week",
@@ -51,9 +51,9 @@ function v() {
     let t = new Date;
     e > 0 ? t.setMonth(t.getMonth() - e) : t.setDate(t.getDate() - 7), t.setDate(t.getDate() - 2);
     let n = {
-      subscription_status: x.O0b.ACTIVE,
+      subscription_status: p.O0b.ACTIVE,
       endedAt: void 0,
-      premium_streak_started_at: p.default.fromTimestamp(t.getTime())
+      premium_streak_started_at: x.default.fromTimestamp(t.getTime())
     };
     v(!0), await i.tn.patch({
       url: "/debug/subscriptions/".concat(j.id),

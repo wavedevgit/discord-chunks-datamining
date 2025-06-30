@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => T
+  Z: () => E
 }), n(388685), n(35282);
 var a = n(255367),
   r = n(73800),
@@ -12,9 +12,9 @@ var a = n(255367),
   d = n(493683),
   u = n(43267),
   m = n(933557),
-  p = n(258732),
+  x = n(258732),
   h = n(592125),
-  x = n(699516),
+  p = n(699516),
   b = n(594174),
   f = n(55589),
   v = n(630388),
@@ -32,13 +32,13 @@ function O() {
     {
       selectedChannel: i,
       options: d
-    } = (0, o.cj)([h.Z, b.default, x.Z], () => ({
+    } = (0, o.cj)([h.Z, b.default, p.Z], () => ({
       selectedChannel: h.Z.getChannel(n),
       options: t.map(e => {
         let t = h.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, m.F6)(t, b.default, x.Z) : e.channelId
+          label: null != t ? (0, m.F6)(t, b.default, p.Z) : e.channelId
         }
       })
     })),
@@ -46,7 +46,7 @@ function O() {
       var e;
       if (null == i || !i.isPrivate()) return;
       let t = (0, v.x9)(null != (e = i.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
-      p.Z.updatePrivateChannelRecipientFlags(i.id, t)
+      x.Z.updatePrivateChannelRecipientFlags(i.id, t)
     }, [i]),
     g = null != i && !!i.isPrivate() && (0, v.yE)(null != (e = i.recipientFlags) ? e : 0, s.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, a.jsxs)(a.Fragment, {
@@ -81,7 +81,7 @@ function O() {
   })
 }
 
-function E() {
+function T() {
   let e = r.useCallback(() => {
     d.Z.openPrivateChannel({
       recipientIds: [y.I]
@@ -94,7 +94,7 @@ function E() {
   })
 }
 
-function T() {
+function E() {
   let e = g.ZP.allByCategory(g.zU.MESSAGING).map(e => {
     let [t, n, {
       label: r
@@ -113,6 +113,6 @@ function T() {
       className: C.divider
     }), (0, a.jsx)(O, {}), (0, a.jsx)("div", {
       className: C.divider
-    }), (0, a.jsx)(E, {})]
+    }), (0, a.jsx)(T, {})]
   })
 }

@@ -12,9 +12,9 @@ var a = n(255367),
   d = n(179360),
   u = n(621628),
   m = n(667815),
-  p = n(645041),
+  x = n(645041),
   h = n(713081),
-  x = n(675478),
+  p = n(675478),
   b = n(581883),
   f = n(899667),
   v = n(430824),
@@ -43,7 +43,7 @@ function O(e) {
       return "ADOPT_CLAN_IDENTITY_NOTICE"
   }
 }
-async function E(e, t, n) {
+async function T(e, t, n) {
   await Promise.all(t.map(e => s.tn.patch({
     url: g.ANM.APPLIED_BOOST_MODIFY_END_DATE(e.id),
     body: n ? {} : {
@@ -52,7 +52,7 @@ async function E(e, t, n) {
     rejectWithError: !0
   }))), (0, d.C0)(e), (0, h.Fm)(e, !0)
 }
-async function T(e) {
+async function E(e) {
   await s.tn.post({
     url: g.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(e),
     rejectWithError: !0
@@ -66,7 +66,7 @@ function S() {
       var e;
       return null == (e = v.Z.getGuild(t)) ? void 0 : e.name
     }),
-    r = (0, i.Wu)([b.Z], () => [...C, ...N].filter(e => null != t && (0, p.OY)(e, t))),
+    r = (0, i.Wu)([b.Z], () => [...C, ...N].filter(e => null != t && (0, x.OY)(e, t))),
     l = null != (e = (0, i.e7)([b.Z], () => {
       var e;
       return null == (e = b.Z.settings.userContent) ? void 0 : e.dismissedContents
@@ -113,12 +113,12 @@ function S() {
       }), (0, a.jsxs)("div", {
         children: [(0, a.jsx)(c.zxk, {
           onClick: () => {
-            E(t, s.slice(Math.floor(s.length / 2)), !1)
+            T(t, s.slice(Math.floor(s.length / 2)), !1)
           },
           children: "Set Half Boosts expiring in 1 day"
         }), (0, a.jsx)(c.zxk, {
           onClick: () => {
-            E(t, s, !0)
+            T(t, s, !0)
           },
           children: "Reset End Date"
         })]
@@ -144,7 +144,7 @@ function S() {
       }), C.map(e => (0, a.jsx)(c.j7V, {
         className: j.formSwitch,
         onChange: n => {
-          n ? (0, p.Qd)(e, t, !1) : ((0, x.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(e, t))
+          n ? (0, x.Qd)(e, t, !1) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
         },
         value: r.includes(e),
         children: (0, a.jsx)(c.Text, {
@@ -160,7 +160,7 @@ function S() {
       }), N.map(e => (0, a.jsx)(c.j7V, {
         className: j.formSwitch,
         onChange: n => {
-          n ? (0, p.Qd)(e, t, !1) : ((0, x.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(e, t))
+          n ? (0, x.Qd)(e, t, !1) : ((0, p.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, x.c7)(e, t))
         },
         value: r.includes(e),
         children: (0, a.jsx)(c.Text, {
@@ -176,7 +176,7 @@ function S() {
         children: "Send Powerups System Message"
       }), (0, a.jsx)(c.zxk, {
         onClick: () => {
-          T(t)
+          E(t)
         },
         children: "Send System Message"
       })]

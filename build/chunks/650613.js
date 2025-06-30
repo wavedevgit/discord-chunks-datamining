@@ -12,16 +12,16 @@ var a = n(255367),
   d = n(71585),
   u = n(146282),
   m = n(897674),
-  p = n(561308),
+  x = n(561308),
   h = n(206583),
-  x = n(873289);
+  p = n(873289);
 
 function b(e) {
   let {
     id: t
   } = e, n = (0, r.e7)([o.default], () => o.default.getUser(t));
   return null == n ? null : (0, a.jsx)(l.P3F, {
-    className: x.entryAuthor,
+    className: p.entryAuthor,
     onClick: function() {
       (0, s.openUserProfileModal)({
         sourceAnalyticsLocations: [i.Z.DEV_TOOLS],
@@ -54,14 +54,14 @@ function f() {
     if (!(0, m.g)(n, t)) return [];
     let r = i[(0, c.T)(t)];
     return (0, a.jsxs)("li", {
-      className: x.locatorEntry,
+      className: p.locatorEntry,
       children: [(0, a.jsx)(b, {
         type: t.author_type,
         id: t.author_id
       }), !r && (0, a.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Expired or no matching presence"
-      }), (0, p.n2)(t) && (0, a.jsxs)(l.Text, {
+      }), (0, x.n2)(t) && (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
         children: ["Expired at ", t.expires_at]
       }), s.has(t.id) && (0, a.jsx)(l.Text, {

@@ -12,9 +12,9 @@ var a = n(255367),
   d = n(704215),
   u = n(481060),
   m = n(411149),
-  p = n(151480),
+  x = n(151480),
   h = n(461762),
-  x = n(680783),
+  p = n(680783),
   b = n(605236),
   f = n(675478),
   v = n(944486),
@@ -63,33 +63,33 @@ function C() {
 function N() {
   var e, t;
   let n = (0, c.e7)([v.Z], () => v.Z.getChannelId()),
-    l = (0, x.Z)(n),
+    l = (0, p.Z)(n),
     s = null == l ? void 0 : l.wallpaperId,
     d = (0, h.Z)(s),
     b = r.useCallback(e => {
-      null != s && (0, p.i)(s, {
+      null != s && (0, x.i)(s, {
         opacity: e
       })
     }, [s]),
     f = r.useCallback(e => {
-      E(null == l ? void 0 : l.wallpaperId, e.target.value)
+      T(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
     C = r.useCallback(e => {
       S(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
     N = r.useCallback(e => {
-      T(null == l ? void 0 : l.wallpaperId, e.target.value)
+      E(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    O = r.useCallback(() => E(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    O = r.useCallback(() => T(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     P = r.useCallback(() => S(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
-    I = r.useCallback(() => T(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    I = r.useCallback(() => E(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     w = r.useCallback(e => {
-      null != s && (0, p.i)(s, {
+      null != s && (0, x.i)(s, {
         token_mix_amount: Math.round(e)
       })
     }, [s]),
     k = r.useCallback(() => {
-      null != s && (0, p.i)(s, null)
+      null != s && (0, x.i)(s, null)
     }, [s]),
     R = null != (e = null == d ? void 0 : d.opacity) ? e : 1,
     A = null != (t = null == d ? void 0 : d.token_mix_amount) ? t : 100;
@@ -248,18 +248,18 @@ function O() {
     })]
   })
 }
-let E = (0, s.debounce)(function(e, t) {
-    null != e && (0, p.i)(e, {
+let T = (0, s.debounce)(function(e, t) {
+    null != e && (0, x.i)(e, {
       primary_color: t
     })
   }, 200),
-  T = (0, s.debounce)(function(e, t) {
-    null != e && (0, p.i)(e, {
+  E = (0, s.debounce)(function(e, t) {
+    null != e && (0, x.i)(e, {
       link_color: t
     })
   }, 200),
   S = (0, s.debounce)(function(e, t) {
-    null != e && (0, p.i)(e, {
+    null != e && (0, x.i)(e, {
       secondary_color: t
     })
   }, 200)

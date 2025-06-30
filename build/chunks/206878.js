@@ -54,7 +54,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     max: 1e6,
     warn: 5e5
   },
-  p = {
+  x = {
     max: 25e4,
     warn: 5e4
   },
@@ -72,15 +72,15 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
     [r.jE.HERO_BANNER_STATIC]: u,
     [r.jE.SHOP_ALL_BANNER_STATIC]: u,
     [r.jE.UPSELL_BANNER]: m,
-    [r.jE.UPSELL_BANNER_POPOUT]: p,
+    [r.jE.UPSELL_BANNER_POPOUT]: x,
     [r.jE.MOBILE_BANNER]: m,
-    [r.jE.MOBILE_BACKGROUND]: p,
-    [r.jE.PDP_BACKGROUND]: p,
-    [r.jE.PDP_LOGO]: p,
-    [r.jE.COLLECTED_MODAL_BG]: p,
-    [r.jE.COACHTIP_AVATAR]: p
+    [r.jE.MOBILE_BACKGROUND]: x,
+    [r.jE.PDP_BACKGROUND]: x,
+    [r.jE.PDP_LOGO]: x,
+    [r.jE.COLLECTED_MODAL_BG]: x,
+    [r.jE.COACHTIP_AVATAR]: x
   },
-  x = async e => {
+  p = async e => {
     let t = Object.values(r.CM),
       n = new Set,
       a = e.createReader();
@@ -214,7 +214,7 @@ let s = new Set([r.jE.SHOP_ALL_BANNER_STATIC, r.jE.HERO_BANNER_STATIC, r.jE.HERO
           if (e.length > 1) return void d("Uploaded multiple files. Expected 1 directory.");
           let t = e[0];
           if (!t.isDirectory) return void d("Uploaded a file. Expected a directory.");
-          let n = await x(t);
+          let n = await p(t);
           if (n.length > 0) return void d("Missing required directories", n);
           let a = await (0, r.LY)([t]);
           N(a, u, d)

@@ -12,9 +12,9 @@ var a = n(255367),
   d = n(481060),
   u = n(570140),
   m = n(665149),
-  p = n(886118),
+  x = n(886118),
   h = n(301801),
-  x = n(4912),
+  p = n(4912),
   b = n(572004),
   f = n(55935),
   v = n(428530),
@@ -26,10 +26,10 @@ var a = n(255367),
   N = n(248520),
   O = n(616257);
 
-function E(e) {
+function T(e) {
   return parseFloat(e.toFixed(3))
 }
-let T = [{
+let E = [{
   key: "store",
   cellClassName: N.actionColumn,
   render(e) {
@@ -45,7 +45,7 @@ let T = [{
     let {
       trace: t
     } = e;
-    return "".concat(E(t.time), " ms")
+    return "".concat(T(t.time), " ms")
   }
 }];
 
@@ -58,7 +58,7 @@ function S(e) {
   })), [t]);
   return (0, a.jsx)(d.zJl, {
     children: (0, a.jsx)(j.Z, {
-      columns: T,
+      columns: E,
       data: n
     })
   })
@@ -84,7 +84,7 @@ let P = [{
           })
         }), (0, a.jsxs)(_.Z9, {
           name: "Total Time",
-          children: [E(n.totalTime), " ms"]
+          children: [T(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(d.zJl, {
         className: N.inspectorContainer,
@@ -115,7 +115,7 @@ function I(e) {
   } = e, l = r.useMemo(() => t.error ? [...P, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(x.Z, {
+      children: [(0, a.jsx)(p.Z, {
         className: N.errorIcon
       }), "Error"]
     }),
@@ -192,7 +192,7 @@ let w = [{
         actionLog: t
       } = e;
       return (0, a.jsxs)(a.Fragment, {
-        children: [t.error && (0, a.jsx)(x.Z, {
+        children: [t.error && (0, a.jsx)(p.Z, {
           className: N.errorIcon
         }), t.name]
       })
@@ -204,11 +204,11 @@ let w = [{
       let {
         actionLog: t
       } = e;
-      return "".concat(E(t.totalTime), " ms")
+      return "".concat(T(t.totalTime), " ms")
     }
   }],
   k = {
-    searchType: p.S.REGEX,
+    searchType: x.S.REGEX,
     searchStringGenerator: e => {
       let {
         actionLog: t
@@ -236,18 +236,18 @@ function R() {
       actionLog: e
     })), [l]),
     [c, m] = r.useState(o),
-    [p, x] = r.useState(o),
+    [x, p] = r.useState(o),
     [b, f] = r.useState(!1),
     [v, _] = r.useState(),
     g = r.useCallback(e => {
-      x(e)
+      p(e)
     }, []);
   (0, h.BO)(t, b ? c : o, g, k);
   let y = r.useCallback(e => {
       m(o), f(e)
     }, [o]),
     C = t.trim().length > 0,
-    E = r.useMemo(() => C ? p : b ? c : o, [o, p, C, b, c]);
+    T = r.useMemo(() => C ? x : b ? c : o, [o, x, C, b, c]);
   return (0, a.jsxs)("div", {
     ref: e,
     className: i()(O.panel, N.panel),
@@ -269,7 +269,7 @@ function R() {
       })]
     }), (0, a.jsx)(j.Z, {
       columns: w,
-      data: E,
+      data: T,
       selectedRowKey: null == v ? void 0 : v.id.toString(),
       onClickRow: e => _(e.actionLog)
     }), null != v && (0, a.jsx)(I, {

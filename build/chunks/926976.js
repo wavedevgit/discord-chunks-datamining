@@ -12,9 +12,9 @@ var a = n(255367),
   d = n(481060),
   u = n(129861),
   m = n(665149),
-  p = n(886118),
+  x = n(886118),
   h = n(301801),
-  x = n(594174),
+  p = n(594174),
   b = n(572004),
   f = n(55935),
   v = n(120816),
@@ -25,8 +25,8 @@ var a = n(255367),
   C = n(621060),
   N = n(388032),
   O = n(459100),
-  E = n(616257);
-let T = [{
+  T = n(616257);
+let E = [{
   key: "event",
   cellClassName: O.eventColumn,
   render(e) {
@@ -103,11 +103,11 @@ let I = [{
           fingerprint: l
         },
         onClose: s
-      } = e, c = x.default.getUser(l), p = o()(r);
+      } = e, c = p.default.getUser(l), x = o()(r);
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(m.ZP, {
-          className: i()(E.headerBar, O.subPanelHeaderBar),
+          className: i()(T.headerBar, O.subPanelHeaderBar),
           children: [(0, a.jsx)(m.ZP.Icon, {
             icon: d.IeX,
             tooltip: t
@@ -162,8 +162,8 @@ let I = [{
             copyValue: r.toISOString(),
             children: (0, a.jsxs)("time", {
               dateTime: r.toISOString(),
-              title: (0, f.vc)(p, "LLLL"),
-              children: ["(", o().locale(), ") ", (0, f.Y4)(p)]
+              title: (0, f.vc)(x, "LLLL"),
+              children: ["(", o().locale(), ") ", (0, f.Y4)(x)]
             })
           }), null != c && (0, a.jsx)(g.Z9, {
             name: "User",
@@ -225,7 +225,7 @@ let I = [{
     }
   },
   k = {
-    searchType: p.S.REGEX,
+    searchType: x.S.REGEX,
     searchStringGenerator: e => {
       let {
         event: t,
@@ -242,17 +242,17 @@ function R() {
     l = (0, c.e7)([v.Z], () => v.Z.loggedEventsVersion),
     [s, o] = r.useState(() => Object.keys(w)),
     [u, m] = r.useState(v.Z.loggedEvents),
-    p = r.useCallback(e => {
+    x = r.useCallback(e => {
       m(e)
     }, []);
-  (0, h.BO)(t, v.Z.loggedEvents, p, k, [l]);
-  let x = u.filter(e => {
+  (0, h.BO)(t, v.Z.loggedEvents, x, k, [l]);
+  let p = u.filter(e => {
       for (let t of s)
         if (w[t].filter(e)) return !0;
       return !1
     }),
     [b, f] = r.useState(void 0),
-    g = x.find(e => e.key === b),
+    g = p.find(e => e.key === b),
     {
       TabBar: S,
       renderSelectedTab: P
@@ -261,7 +261,7 @@ function R() {
     }, []);
   return (0, a.jsxs)("div", {
     ref: e,
-    className: i()(E.panel, O.panel),
+    className: i()(T.panel, O.panel),
     children: [(0, a.jsxs)("div", {
       className: O.toolbar,
       children: [(0, a.jsx)(d.zxk, {
@@ -302,8 +302,8 @@ function R() {
         placeholder: "Search by event name"
       })
     }), (0, a.jsx)(y.Z, {
-      columns: T,
-      data: x,
+      columns: E,
+      data: p,
       selectedRowKey: b,
       onClickRow: e => f(e.key)
     }), null != g && (0, a.jsxs)(j.Z, {

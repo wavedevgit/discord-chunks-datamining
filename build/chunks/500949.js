@@ -11,7 +11,7 @@ n.d(t, {
   S2: () => H,
   W6: () => ea,
   XM: () => er,
-  YC: () => ep,
+  YC: () => ex,
   YE: () => ei,
   h9: () => es,
   iw: () => en,
@@ -31,9 +31,9 @@ var a, r, l = n(73800),
   d = n(694626),
   u = n(855930),
   m = n(385787),
-  p = n(566162),
+  x = n(566162),
   h = n(567027),
-  x = n(461195),
+  p = n(461195),
   b = n(857702),
   f = n(20450),
   v = n(312976),
@@ -44,8 +44,8 @@ var a, r, l = n(73800),
   C = n(981613),
   N = n(762399),
   O = n(232112),
-  E = n(53796),
-  T = n(723757),
+  T = n(53796),
+  E = n(723757),
   S = n(375924),
   P = n(596136),
   I = n(341901),
@@ -97,9 +97,9 @@ let z = {
     HPLuv: d.Z,
     HSL: u.Z,
     HSLuv: m.Z,
-    HSV: p.Z,
+    HSV: x.Z,
     HWB: h.Z,
-    ICTCP: x.Z,
+    ICTCP: p.Z,
     JzCzHz: b.Z,
     Jzazbz: f.Z,
     LCH: v.Z,
@@ -110,8 +110,8 @@ let z = {
     OKLCH: C.Z,
     OKLab: N.Z,
     P3: O.Z,
-    ProPhoto: E.Z,
-    REC_2020: T.Z,
+    ProPhoto: T.Z,
+    REC_2020: E.Z,
     REC_2100_HLG: S.Z,
     REC_2100_PQ: P.Z,
     XYZ_D50: I.Z,
@@ -222,13 +222,13 @@ function er(e) {
   }), u = (0, Z.CD)(c, "black", 1 - l, {
     space: o,
     outputSpace: i.Z
-  }), m = Math.floor(a / 2), p = a - m, h = (0, Z.w6)(d, c, {
+  }), m = Math.floor(a / 2), x = a - m, h = (0, Z.w6)(d, c, {
     steps: m,
     outputSpace: o,
     space: o,
     progression: e => e ** s
-  }), x = (0, Z.w6)(u, c, {
-    steps: p,
+  }), p = (0, Z.w6)(u, c, {
+    steps: x,
     outputSpace: o,
     space: o,
     progression: e => e ** s
@@ -238,8 +238,8 @@ function er(e) {
     b.push(t)
   }
   b.push(c);
-  for (let e = 1; e < p; e++) {
-    let t = x(1 - e / p);
+  for (let e = 1; e < x; e++) {
+    let t = p(1 - e / x);
     b.push(t)
   }
   return Object.fromEntries(b.map((e, n) => ["".concat(t, "-").concat(n), e]))
@@ -293,7 +293,7 @@ function em(e, t, n) {
   }), n)
 }
 
-function ep(e, t, n) {
+function ex(e, t, n) {
   el(e, e => U(B({}, e), {
     steps: t
   }), n)

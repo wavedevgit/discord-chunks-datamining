@@ -1,7 +1,7 @@
 /** Chunk was on 86872 **/
 t.d(n, {
   default: () => G
-}), t(415506), t(781311);
+}), t(415506);
 var i = t(255367),
   l = t(73800),
   a = t(120356),
@@ -157,9 +157,7 @@ function G(e) {
       (0, I.pB)(null != (e = A.approximate_member_count) ? e : 0, A.code, A.guild.id)
     }
   }, [A, null == A ? void 0 : A.approximate_member_count, null == A ? void 0 : A.code, null == A || null == (n = A.guild) ? void 0 : n.id]);
-  let {
-    nickname: G
-  } = (0, I.XW)();
+  let G = (0, I.yr)();
   l.useEffect(() => {
     !__OVERLAY__ && P.isPlatformEmbedded && ((0, P.isWindows)() ? b.ZP.minimize() : b.ZP.restore(), b.ZP.focus())
   }, []);
@@ -191,7 +189,7 @@ function G(e) {
   let J = (0, v.yU)();
   return r = Q ? M.intl.string(M.t["5UKyUl"]) : f ? M.intl.format(M.t["9sWQNT"], {
     usernameHook: () => (0, i.jsx)("span", {
-      children: null != G && "" !== G.trim() ? G : C.globalName
+      children: G
     })
   }) : q ? M.intl.string(M.t["e/6Ogo"]) : M.intl.format(M.t.QD7BDA, {
     guildName: t
