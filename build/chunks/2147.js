@@ -32,8 +32,8 @@ var i = n(255367),
   w = n(907040),
   T = n(906411),
   R = n(633302),
-  I = n(109434),
-  _ = n(162389),
+  _ = n(109434),
+  I = n(162389),
   P = n(946458),
   A = n(968437),
   L = n(665906),
@@ -280,7 +280,7 @@ class ew extends l.PureComponent {
       } = this.props,
       w = B.Ec.has(e.type),
       T = e.isForumLikeChannel(),
-      I = T && (null == (n = e.availableTags) ? void 0 : n.every(e => e.moderated)),
+      _ = T && (null == (n = e.availableTags) ? void 0 : n.every(e => e.moderated)),
       L = (null == (l = F.default.getCurrentUser()) ? void 0 : l.isStaff()) === !0,
       D = B.TK.has(e.type) ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(g.xJW, {
@@ -345,11 +345,11 @@ class ew extends l.PureComponent {
             type: g.R94.Types.DESCRIPTION,
             className: es.description,
             children: er.intl.string(er.t["/oQQ39"])
-          }), (0, i.jsx)(_.Z, {
+          }), (0, i.jsx)(I.Z, {
             channel: e
           })]
         }), (0, i.jsx)(g.XZJ, {
-          disabled: !j || I,
+          disabled: !j || _,
           value: e.hasFlag(et.zZ.REQUIRE_TAG),
           type: g.XZJ.Types.INVERTED,
           onChange: (e, t) => this.handleRequireTagChanged(t),
@@ -1100,10 +1100,10 @@ function eT() {
   } = (0, d.cj)([H.Z], () => ({
     canManageChannels: H.Z.can(ee.Plq.MANAGE_CHANNELS, t),
     canSendMessages: H.Z.can(ee.Plq.SEND_MESSAGES, t)
-  })), m = (0, y.ZP)(t), p = V.default.getId(), f = (0, I.v)(), x = null == t ? void 0 : t.id, C = (0, b.ts)(t, !1, !0), N = j.Z.useExperiment({
+  })), m = (0, y.ZP)(t), p = V.default.getId(), f = (0, _.v)(), x = null == t ? void 0 : t.id, C = (0, b.ts)(t, !1, !0), N = j.Z.useExperiment({
     guildId: null == t ? void 0 : t.guild_id,
     location: "ChannelSettingsOverview"
-  }).enabled, S = (0, v.sc)({
+  }).enabled, S = (0, v.s)({
     guildId: null == o ? void 0 : o.id,
     location: "ChannelSettingsOverview"
   }), E = l.useCallback(e => {

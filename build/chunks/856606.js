@@ -32,8 +32,8 @@ var i = n(255367),
   w = n(485386),
   T = n(430824),
   R = n(496675),
-  I = n(594174),
-  _ = n(823379),
+  _ = n(594174),
+  I = n(823379),
   P = n(892880),
   A = n(63063),
   L = n(5192),
@@ -109,7 +109,7 @@ function X(e) {
     var e;
     if (null == T.Z.getGuild(s) || null == r) return "";
     let t = r[m],
-      n = I.default.getUser(m),
+      n = _.default.getUser(m),
       i = null != (e = null == n ? void 0 : n.username) ? e : "";
     return null != t ? t.name : i
   }, x = (e, i) => {
@@ -134,7 +134,7 @@ function X(e) {
     else {
       let e;
       if (t.type === j.BN.MEMBER) {
-        let n = I.default.getUser(t.id);
+        let n = _.default.getUser(t.id);
         null != n && (e = k.ZP.getName(n))
       } else if (t.type === j.BN.ROLE) {
         let i = T.Z.getGuild(n.getGuildId());
@@ -253,7 +253,7 @@ function Q(e) {
         user: e
       })
     },
-    onFilterResults: (e, t) => 0 === t ? s()(d).filter(t => null == l[t.id] && e(t.name)).sortBy(e => -e.position).value() : s()(u).map(I.default.getUser).filter(_.lm).filter(t => null == l[t.id] && e(t.username.toLowerCase())).sortBy(e => e.username.toLowerCase()).value(),
+    onFilterResults: (e, t) => 0 === t ? s()(d).filter(t => null == l[t.id] && e(t.name)).sortBy(e => -e.position).value() : s()(u).map(_.default.getUser).filter(I.lm).filter(t => null == l[t.id] && e(t.username.toLowerCase())).sortBy(e => e.username.toLowerCase()).value(),
     onQueryChange: e => {
       P.Z.requestMembers(t.id, e, 20)
     },
@@ -324,11 +324,11 @@ function Y() {
         channel: t,
         permissionOverwrites: r,
         position: null != n ? n : "bottom",
-        onSelect: I,
+        onSelect: _,
         onClose: l
       })
     },
-    I = (e, n) => {
+    _ = (e, n) => {
       h.Z.updatePermissionOverwrite(t.id, {
         id: e,
         type: n,
@@ -337,7 +337,7 @@ function Y() {
       }).then(() => (0, g.Aj)(e))
     };
   null != r && null == r[x.id] && (r[x.id] = M.we(x.id));
-  let P = s()(r).filter(e => e.type === j.BN.ROLE).map(e => y[e.id]).filter(_.lm).sortBy(e => -e.position).map(e => (0, i.jsx)(p.Z, {
+  let P = s()(r).filter(e => e.type === j.BN.ROLE).map(e => y[e.id]).filter(I.lm).sortBy(e => -e.position).map(e => (0, i.jsx)(p.Z, {
       theme: S,
       roleStyle: O,
       id: e.id,

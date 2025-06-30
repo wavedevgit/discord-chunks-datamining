@@ -31,8 +31,8 @@ var i = n(255367),
   w = n(787263),
   T = n(975316),
   R = n(428813),
-  I = n(2147),
-  _ = n(856606),
+  _ = n(2147),
+  I = n(856606),
   P = n(981631),
   A = n(388032),
   L = n(511740);
@@ -119,9 +119,9 @@ class M extends l.PureComponent {
           section: P.CoT.OVERVIEW,
           label: A.intl.string(A.t["/dp6yc"]),
           ariaLabel: A.intl.string(A.t["/dp6yc"]),
-          element: I.Z,
+          element: _.Z,
           notice: {
-            element: I.G,
+            element: _.G,
             stores: [C.Z]
           },
           predicate: () => !t.isModeratorReportChannel()
@@ -130,7 +130,7 @@ class M extends l.PureComponent {
           label: A.intl.string(A.t.xrmhRU),
           element: p.Z,
           notice: {
-            element: _.n,
+            element: I.n,
             stores: [y.Z]
           },
           predicate: () => l && !j

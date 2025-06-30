@@ -2,7 +2,7 @@
 "use strict";
 
 function r(e) {
-  return null != e.attachments && e.attachments.length > 0 || null != e.embeds && e.embeds.length > 0
+  return null != e.attachments && e.attachments.length > 0 || null != e.embeds && e.embeds.length > 0 || null != e.components && e.components.length > 0
 }
 
 function i(e) {
@@ -11,5 +11,5 @@ function i(e) {
   return r(e) || null != t && (null == t ? void 0 : t.some(e => r(e.message)))
 }
 n.d(t, {
-  O: () => i
+  t: () => i
 })

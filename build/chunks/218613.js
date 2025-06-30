@@ -23,14 +23,14 @@ var i = n(255367),
   I = n(367907),
   j = n(812206),
   b = n(429673),
-  O = n(933557),
-  f = n(636816),
+  f = n(933557),
+  O = n(636816),
   v = n(605436),
   S = n(185413),
   A = n(313201),
   _ = n(318766),
-  y = n(907040),
-  T = n(906411),
+  T = n(907040),
+  y = n(906411),
   L = n(688465),
   D = n(456269),
   P = n(312146),
@@ -142,7 +142,7 @@ function er(e) {
     let {
       closePopout: s
     } = e;
-    return (0, i.jsx)(y.Z, {
+    return (0, i.jsx)(T.Z, {
       channel: null,
       guildId: n,
       pickerIntention: K.Hz.CHANNEL_NAME,
@@ -153,7 +153,7 @@ function er(e) {
           emoji: n,
           willClose: i
         } = e;
-        null != n && n.type === T.B.UNICODE && t(n.surrogates), i && s()
+        null != n && n.type === y.B.UNICODE && t(n.surrogates), i && s()
       },
       showOnlyUnicode: !0,
       analyticsOverride: r
@@ -313,7 +313,7 @@ class ea extends s.PureComponent {
         className: ee.channelNameNote,
         type: m.R94.Types.DESCRIPTION,
         children: $.intl.format($.t.s2ZzZW, {
-          name: (0, O.F6)(t, H.default, F.Z, !0)
+          name: (0, f.F6)(t, H.default, F.Z, !0)
         })
       }) : o === W.d4z.GUILD_FORUM ? (0, i.jsx)(m.R94, {
         className: ee.channelNameNote,
@@ -725,7 +725,7 @@ class ea extends s.PureComponent {
     return (0, i.jsxs)(i.Fragment, {
       children: [this.renderHeader(), (0, i.jsxs)(m.hzk, {
         className: ee.modalContent,
-        children: [this.renderType(), this.renderName(), e === W.d4z.GUILD_STORE ? this.renderStoreOptions() : null, (0, i.jsx)(f.Z, {
+        children: [this.renderType(), this.renderName(), e === W.d4z.GUILD_STORE ? this.renderStoreOptions() : null, (0, i.jsx)(O.Z, {
           guildId: t,
           channelType: e,
           className: ee.channelTypeDescription
@@ -960,7 +960,7 @@ class ea extends s.PureComponent {
     } = e;
     this.state = {
       channelType: null != t ? t : W.d4z.GUILD_TEXT,
-      name: null != n ? (0, O.F6)(n, H.default, F.Z) : null != i ? i : "",
+      name: null != n ? (0, f.F6)(n, H.default, F.Z) : null != i ? i : "",
       pendingPermissionOverwrites: {},
       isPrivate: !1,
       prevGuildId: e.guildId,
@@ -1006,7 +1006,7 @@ let eo = s.forwardRef(function(e, t) {
   }), a = (0, p.Wu)([j.Z], () => j.Z.getGuildApplicationIds(s).map(e => j.Z.getApplication(e)).filter(X.lm)), d = new Set(r.memberRoles), {
     canManageRoles: c,
     canManageChannels: h
-  } = r, u = (0, z.m)(s) && c && h, m = (0, D.W3)(s), g = (0, P.Ui)(null == r ? void 0 : r.guild), C = (0, b.sc)({
+  } = r, u = (0, z.m)(s) && c && h, m = (0, D.W3)(s), g = (0, P.Ui)(null == r ? void 0 : r.guild), C = (0, b.s)({
     guildId: s,
     location: "ConnectedCreateChannel"
   });

@@ -31,8 +31,8 @@ var i = n(255367),
   w = n(594174),
   T = n(903386),
   R = n(700785),
-  I = n(605436),
-  _ = n(27544),
+  _ = n(605436),
+  I = n(27544),
   P = n(415236),
   A = n(182905),
   L = n(71080),
@@ -152,7 +152,7 @@ function U(e) {
         }), (0, i.jsx)(o.Text, {
           color: "text-muted",
           variant: "text-xs/normal",
-          children: I.zB(x.rowType)
+          children: _.zB(x.rowType)
         }), x.rowType !== L.aC.EMPTY_STATE && (0, i.jsx)(o.DY3, {
           className: B.removeIconContainer,
           text: null != r ? r : a(x.rowType, x.disabled),
@@ -211,7 +211,7 @@ function H(e) {
     guild: t,
     channel: l,
     permissionUpdates: r
-  } = e, c = (0, a.e7)([E.Z], () => E.Z.getRoles(t.id)), d = I.RZ(t, c, l, y.yP, r), u = (0, a.e7)([S.ZP], () => I.cR(S.ZP.getMemberIds(t.id), l, t, y.yP, r)), h = (0, v.nG)(l.id);
+  } = e, c = (0, a.e7)([E.Z], () => E.Z.getRoles(t.id)), d = _.RZ(t, c, l, y.yP, r), u = (0, a.e7)([S.ZP], () => _.cR(S.ZP.getMemberIds(t.id), l, t, y.yP, r)), h = (0, v.nG)(l.id);
 
   function g() {
     (0, o.ZDy)(async () => {
@@ -297,7 +297,7 @@ function G(e) {
         })
       }))
     });
-    I.$e(l, e, r), r || null == s || u || I.Yh(l, e)
+    _.$e(l, e, r), r || null == s || u || _.Yh(l, e)
   }
   let p = {
     title: k.intl.string(k.t.aUI70t),
@@ -364,7 +364,7 @@ function G(e) {
           channel: l,
           roles: c,
           members: d,
-          getRemoveTooltipHint: I.yv
+          getRemoveTooltipHint: _.yv
         })]
       })]
     })]
@@ -400,7 +400,7 @@ let z = a.ZP.connectStores([N.Z, Z.Z, S.ZP, O.Z, E.Z], () => {
       r = N.Z.editedPermissionIds.reduce((e, t) => {
         let n = N.Z.getPermissionOverwrite(t);
         return null != n && (e[t] = n), e
-      }, {}), i = I.kA(e, a, t, t.accessPermissions, r), l = I.cR(n, t, e, t.accessPermissions, r), s = I.Yk(t, r)
+      }, {}), i = _.kA(e, a, t, t.accessPermissions, r), l = _.cR(n, t, e, t.accessPermissions, r), s = _.Yk(t, r)
     }
   }
   return {
@@ -479,6 +479,6 @@ let z = a.ZP.connectStores([N.Z, Z.Z, S.ZP, O.Z, E.Z], () => {
       isPrivateGuildChannel: h,
       roles: c,
       members: a
-    }), !1, (0, i.jsx)(_.Z, {})]
+    }), !1, (0, i.jsx)(I.Z, {})]
   })
 })
