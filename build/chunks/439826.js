@@ -19,8 +19,8 @@ var r = n(255367),
   h = n(918701),
   b = n(974390),
   j = n(475595),
-  _ = n(18578),
-  v = n(623249),
+  v = n(18578),
+  _ = n(623249),
   y = n(685613),
   C = n(670638),
   O = n(341907),
@@ -90,9 +90,9 @@ function B(e) {
   } : {
     type: 2,
     hints: []
-  }, [o, x, h, a]), _ = 2 !== b, y = (0, c.q_F)({
-    opacity: +!!_,
-    height: _ ? f : 0,
+  }, [o, x, h, a]), v = 2 !== b, y = (0, c.q_F)({
+    opacity: +!!v,
+    height: v ? f : 0,
     config: P.Y
   }), C = 0 === b ? c.P4T : c.d3s, O = (0, p.Lq)(T.Ilk.RED_345), E = 0 === b ? O : l ? c.TVs.colors.TEXT_DEFAULT : c.TVs.colors.WHITE;
   return (0, r.jsx)(i.animated.div, {
@@ -111,7 +111,7 @@ function B(e) {
           children: j.at(0)
         })]
       }), 0 === b && (0, r.jsx)(c.zxk, {
-        onClick: () => (0, v.y)({
+        onClick: () => (0, _.y)({
           questId: n.id,
           errorHints: o,
           sourceQuestContent: d
@@ -138,7 +138,7 @@ function I(e) {
   } = s.useContext(E.k);
   return (0, r.jsx)("div", {
     className: A.heroAssetCont,
-    children: o && (0, r.jsx)(_.K, {
+    children: o && (0, r.jsx)(v.K, {
       imageAsset: null != a ? {
         asset: a,
         assetId: "QuestTileBanner",
@@ -165,8 +165,8 @@ function q(e) {
     quest: p,
     isHovering: b,
     errorHints: j,
-    warningHints: _,
-    isVisibleInViewport: v,
+    warningHints: v,
+    isVisibleInViewport: _,
     onCtxMenuClose: w,
     onCtxMenuOpen: P,
     onCtxMenuSelect: q,
@@ -193,7 +193,7 @@ function q(e) {
       children: (0, r.jsx)(I, {
         quest: p,
         isHovering: b,
-        showAssets: v
+        showAssets: _
       })
     }), (0, r.jsx)("div", {
       className: a()(A.overlay, {
@@ -246,7 +246,7 @@ function q(e) {
             }))
           })]
         }), (0, r.jsx)(S.E, {
-          showPlaceholder: !v,
+          showPlaceholder: !_,
           width: 100,
           height: 30,
           className: A.partnerBranding,
@@ -277,7 +277,7 @@ function q(e) {
       }), (0, r.jsx)(B, {
         quest: p,
         errorHints: j,
-        warningHints: _,
+        warningHints: v,
         isDarkTheme: L,
         sourceQuestContent: D
       })]

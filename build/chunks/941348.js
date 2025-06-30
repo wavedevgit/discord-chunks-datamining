@@ -23,14 +23,14 @@ let p = function(e) {
     onCtxMenuSelection: h,
     quest: b,
     useReducedMotion: j,
-    collapsedHeight: _
-  } = e, v = s.useRef(null), y = s.useRef(null), C = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, O = (0, o.Rf)(b);
+    collapsedHeight: v
+  } = e, _ = s.useRef(null), y = s.useRef(null), C = (null == (t = b.userStatus) ? void 0 : t.enrolledAt) != null, O = (0, o.Rf)(b);
   return (0, r.jsxs)(i.p, {
     expandedContentRef: n,
-    collapsedContentRef: v,
+    collapsedContentRef: _,
     expansionSpring: p,
     children: [(0, r.jsx)(l.Z, {
-      ref: v,
+      ref: _,
       className: d.content,
       expansionSpring: p,
       isExpanded: m,
@@ -41,7 +41,7 @@ let p = function(e) {
     }), (0, r.jsx)(c.Z, {
       expansionSpring: p,
       className: d.content,
-      collapsedHeight: _,
+      collapsedHeight: v,
       onCtxMenuOpen: g,
       onCtxMenuClose: x,
       onCtxMenuSelect: h,

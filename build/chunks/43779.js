@@ -19,8 +19,8 @@ var r = n(255367),
   h = n(644646),
   b = n(251360),
   j = n(19148),
-  _ = n(69439),
-  v = n(46140),
+  v = n(69439),
+  _ = n(46140),
   y = n(642145),
   C = n(388032),
   O = n(882067);
@@ -144,7 +144,7 @@ function S(e) {
                   quest: T,
                   questContent: N,
                   className: O.circularQuestRewardTileAsset,
-                  location: v.dr.QUEST_HOME_DESKTOP,
+                  location: _.dr.QUEST_HOME_DESKTOP,
                   autoplay: A,
                   onLoadComplete: U,
                   sourceQuestContent: q
@@ -156,7 +156,7 @@ function S(e) {
             autoplay: A,
             questContent: N,
             className: O.questRewardTileAsset,
-            location: v.dr.QUEST_HOME_DESKTOP,
+            location: _.dr.QUEST_HOME_DESKTOP,
             onLoadComplete: U,
             sourceQuestContent: q
           })]
@@ -185,7 +185,7 @@ function S(e) {
         },
         className: O.textOverflowBlur
       })]
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(v.Z, {
       quest: T,
       questContent: N,
       contentPosition: R,

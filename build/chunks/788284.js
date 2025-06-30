@@ -40,7 +40,7 @@ function h(e) {
     className: o,
     quest: i,
     useReducedMotion: l
-  } = e, g = (0, c.e7)([d.Z], () => d.Z.isFocused()), h = s.useRef(null), [b, j] = s.useState(!1), _ = s.useMemo(() => {
+  } = e, g = (0, c.e7)([d.Z], () => d.Z.isFocused()), h = s.useRef(null), [b, j] = s.useState(!1), v = s.useMemo(() => {
     if (null == i) return null;
     let e = (0, p.oo)(i.config.colors.primary),
       t = {
@@ -50,7 +50,7 @@ function h(e) {
       },
       n = f.reduce((e, n) => [...e, n, t.r, t.g, t.b], []);
     return x(i.id, n)
-  }, [i]), v = (null == (t = i.userStatus) ? void 0 : t.enrolledAt) != null, y = !l && g;
+  }, [i]), _ = (null == (t = i.userStatus) ? void 0 : t.enrolledAt) != null, y = !l && g;
   s.useEffect(() => {
     var e, t, n, r;
     g ? y && (null == (r = h.current) || null == (n = r.animation) || n.play()) : null == (t = h.current) || null == (e = t.animation) || e.goToAndStop(0, !0)
@@ -58,7 +58,7 @@ function h(e) {
   let C = s.useCallback(() => {
     j(!0)
   }, []);
-  return null == _ || v ? (0, r.jsx)("div", {
+  return null == v || _ ? (0, r.jsx)("div", {
     className: m.backgroundFallback,
     style: {
       backgroundImage: "linear-gradient(90deg, ".concat(i.config.colors.primary, ", ").concat(i.config.colors.secondary, ")")
@@ -68,7 +68,7 @@ function h(e) {
     children: (0, r.jsx)(u.Fmz, {
       ref: h,
       onComplete: C,
-      importData: () => _,
+      importData: () => v,
       shouldAnimate: !b && y,
       className: a()(m.lottieAnimation, m.lottieAnimationBackground, n),
       loop: 0,

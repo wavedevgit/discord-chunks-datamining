@@ -66,7 +66,7 @@ let d = s.createContext({
       unregisterComponent: g,
       expansionSpring: x,
       mountPoints: h
-    } = s.useContext(d), b = s.useRef(null), j = s.useRef(null), _ = s.useRef(void 0);
+    } = s.useContext(d), b = s.useRef(null), j = s.useRef(null), v = s.useRef(void 0);
     s.useEffect(() => {
       m()
     }, [m]), s.useLayoutEffect(() => {
@@ -75,13 +75,13 @@ let d = s.createContext({
         null != e && g(c, u)
       }
     }, [c, u, f, g]);
-    let v = s.useCallback(e => {
+    let _ = s.useCallback(e => {
       let {
         height: t
       } = e;
-      _.current !== t && (m(), _.current = t)
+      v.current !== t && (m(), v.current = t)
     }, [m]);
-    (0, i.PM)(b, v);
+    (0, i.PM)(b, _);
     let y = null == (n = h.get(c)) ? void 0 : n.current,
       C = null;
     return null == y ? C = null : p && null != x ? C = (0, r.jsxs)(r.Fragment, {

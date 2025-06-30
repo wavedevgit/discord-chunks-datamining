@@ -24,8 +24,8 @@ let j = e => {
     expansionSpring: n,
     onCtxMenuSelect: o,
     onCtxMenuOpen: j,
-    onCtxMenuClose: _,
-    useReducedMotion: v,
+    onCtxMenuClose: v,
+    useReducedMotion: _,
     isExpanded: y,
     isExpansionAnimationComplete: C
   } = e, O = (0, u.aM)(), E = s.useCallback(() => {
@@ -75,7 +75,7 @@ let j = e => {
       expansionSpring: n,
       isFullyExpanded: w,
       partnerBranding: P,
-      useReducedMotion: v
+      useReducedMotion: _
     }), (0, r.jsxs)(i.animated.div, {
       className: b.promotedBadgeWrapper,
       style: {
@@ -97,7 +97,7 @@ let j = e => {
         })]
       }), (0, r.jsx)(f.r, {
         onOpen: j,
-        onClose: _,
+        onClose: v,
         onSelect: o,
         questContent: d.jn.QUEST_BAR_V2,
         quest: t,

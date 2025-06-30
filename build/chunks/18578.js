@@ -33,7 +33,7 @@ function m(e) {
   }, [t, o, h]);
   let b = null != n && !n.asset.isAnimated,
     j = null != o && o.asset.isAnimated,
-    _ = null != m ? (0, u.nK)(m.width, m.height) : null;
+    v = null != m ? (0, u.nK)(m.width, m.height) : null;
   return (0, r.jsxs)(r.Fragment, {
     children: [b && (0, r.jsx)(d.Fl, {
       id: n.assetId,
@@ -45,8 +45,8 @@ function m(e) {
         }),
         src: (0, u.sN)(n.asset.url, {
           format: "webp",
-          width: null == _ ? void 0 : _.width,
-          height: null == _ ? void 0 : _.height
+          width: null == v ? void 0 : v.width,
+          height: null == v ? void 0 : v.height
         }),
         onLoad: f
       })

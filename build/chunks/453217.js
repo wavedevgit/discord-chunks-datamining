@@ -25,15 +25,15 @@ let h = function(e) {
     isExpanded: h,
     isExpansionAnimationComplete: b,
     quest: j,
-    useReducedMotion: _
-  } = e, v = (null == (t = j.userStatus) ? void 0 : t.enrolledAt) != null, {
+    useReducedMotion: v
+  } = e, _ = (null == (t = j.userStatus) ? void 0 : t.enrolledAt) != null, {
     percentComplete: y
   } = (0, l.Rf)(j), C = (0, l.Jf)(j), O = null != C ? C.percentComplete > 0 : y > 0;
   return (0, r.jsxs)(a.animated.div, {
     "aria-hidden": h && b,
     className: o()(n, x.contentCollapsed, {
       [x.contentCollapsedExpanded]: h,
-      [x.contentCollapsedAccepted]: v
+      [x.contentCollapsedAccepted]: _
     }),
     style: {
       opacity: s.to({
@@ -43,10 +43,10 @@ let h = function(e) {
     },
     children: [(0, r.jsx)(m.Z, {
       quest: j,
-      useReducedMotion: _
+      useReducedMotion: v
     }), (0, r.jsx)("div", {
       className: x.contentCollapsedWrapper,
-      children: v ? (0, r.jsxs)("div", {
+      children: _ ? (0, r.jsxs)("div", {
         className: x.questProgressWrapper,
         children: [(0, r.jsx)(p.Z, {
           className: x.questProgressRewardTile,

@@ -20,8 +20,8 @@ var r = n(255367),
   h = n(918701),
   b = n(192023),
   j = n(977156),
-  _ = n(5881),
-  v = n(602667),
+  v = n(5881),
+  _ = n(602667),
   y = n(78826),
   C = n(667105),
   O = n(341907),
@@ -81,7 +81,7 @@ function B(e) {
   var t, n;
   let {
     quest: o
-  } = e, f = (0, _.T)({
+  } = e, f = (0, v.T)({
     quest: o,
     location: P.dr.QUESTS_BAR
   }), B = (0, j.Zy)({
@@ -132,7 +132,7 @@ function B(e) {
     }), J.current = !0, ex({
       withDelay: !0
     })
-  }, [ex, o, Y.trackingCtx.content]), e_ = s.useCallback(() => {
+  }, [ex, o, Y.trackingCtx.content]), ev = s.useCallback(() => {
     var e;
     (0, m.dA)({
       questId: o.id,
@@ -152,14 +152,14 @@ function B(e) {
   }, [W, U, Z, eu]), s.useLayoutEffect(() => {
     X !== K.current && ea(!1), K.current = X
   }, [X]);
-  let ev = W ? P.XZ : P.R4,
+  let e_ = W ? P.XZ : P.R4,
     [{
       expansionSpring: ey
     }, eC] = (0, c.q_F)(() => ({
       from: {
         expansionSpring: 0
       },
-      config: ev,
+      config: e_,
       onRest: () => {
         es(!0)
       },
@@ -235,7 +235,7 @@ function B(e) {
     location: P.dr.QUESTS_BAR,
     questConfig: o.config
   });
-  return B && (X || !eo || F) && !z ? (0, r.jsx)(v.A, {
+  return B && (X || !eo || F) && !z ? (0, r.jsx)(_.A, {
     questOrQuests: o,
     questContent: Y.trackingCtx.content,
     overrideVisibility: !V && X,
@@ -249,7 +249,7 @@ function B(e) {
           isExpanded: et
         }), (0, r.jsx)(i.animated.div, {
           "aria-hidden": !X,
-          onMouseLeave: e_,
+          onMouseLeave: ev,
           onMouseEnter: ej,
           onFocus: eh,
           onBlur: eb,
@@ -275,7 +275,7 @@ function B(e) {
               backgroundImage: W && !eE ? Y.postEnrollmentBackgroundImage : void 0
             },
             children: (0, r.jsx)(E.t, {
-              springConfig: ev,
+              springConfig: e_,
               isExpanded: et,
               children: (0, r.jsx)(n, {
                 expandedContentRef: ec,

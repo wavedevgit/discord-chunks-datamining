@@ -21,12 +21,12 @@ let p = s.forwardRef((e, t) => {
     percentCompleteText: f,
     percentCompleteTextVariant: g = "text-lg/medium",
     children: x
-  } = e, h = (0, c.E)(n, s > 0), b = o / 2, j = o / 2 - p / 2, _ = 2 * Math.PI * j, v = _ - s * _, y = {
-    strokeDasharray: "".concat(_, " ").concat(_),
-    strokeDashoffset: v
+  } = e, h = (0, c.E)(n, s > 0), b = o / 2, j = o / 2 - p / 2, v = 2 * Math.PI * j, _ = v - s * v, y = {
+    strokeDasharray: "".concat(v, " ").concat(v),
+    strokeDashoffset: _
   }, C = {
-    strokeDasharray: "".concat(_, " ").concat(_),
-    strokeDashoffset: -s * _
+    strokeDasharray: "".concat(v, " ").concat(v),
+    strokeDashoffset: -s * v
   }, O = {
     boxShadow: "0 0 30px 0px ".concat(h.glow)
   }, {

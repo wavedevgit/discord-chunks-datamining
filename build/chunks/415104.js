@@ -1,6 +1,6 @@
 /** Chunk was on 88622 **/
 n.d(t, {
-  Z: () => _
+  Z: () => v
 }), n(388685);
 var r = n(255367),
   s = n(73800),
@@ -26,8 +26,8 @@ function j(e) {
     className: c,
     questContent: d,
     contentPosition: j,
-    rowIndex: _,
-    impressionRef: v,
+    rowIndex: v,
+    impressionRef: _,
     sourceQuestContent: y
   } = e, [C, O] = s.useState(!1), [E, S] = s.useState([]), w = (0, l.qb)(o), P = s.useMemo(() => (0, u.q8)(o), [o]), T = (0, i._F)(), N = s.useCallback(() => {
     O(!0), T({
@@ -62,7 +62,7 @@ function j(e) {
   return (0, r.jsxs)("div", {
     id: "quest-tile-".concat(o.id),
     ref: e => {
-      v.current = e, k.current = e
+      _.current = e, k.current = e
     },
     className: a()(b.container, c),
     onMouseEnter: N,
@@ -81,7 +81,7 @@ function j(e) {
       questContent: d,
       isHovering: C,
       contentPosition: j,
-      rowIndex: _,
+      rowIndex: v,
       onReceiveErrorHints: S,
       isVisibleInViewport: B,
       sourceQuestContent: y
@@ -89,7 +89,7 @@ function j(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   return (0, r.jsx)(d.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,

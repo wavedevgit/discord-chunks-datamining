@@ -24,8 +24,8 @@ let b = ["#51BC9D"],
       expansionSpring: n,
       overlayRef: o,
       quest: j,
-      progressBarRef: _,
-      isExpanded: v
+      progressBarRef: v,
+      isExpanded: _
     } = e, {
       completionSpring: y,
       startCompletionAnimation: C
@@ -34,7 +34,7 @@ let b = ["#51BC9D"],
       wind: 0
     })), I = (0, i.uR)(N, R), q = s.useCallback(() => {
       if (S) return;
-      let e = _.current,
+      let e = v.current,
         t = w.current;
       if (null != t && null != e && I.isReady) {
         var n, r, s, o, a, i;
@@ -110,10 +110,10 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [_, w, I, S]), D = (0, d.Z)(v);
+    }, [v, w, I, S]), D = (0, d.Z)(_);
     return (s.useEffect(() => {
-      O && v && !D && (C(), q())
-    }, [v, O, C, q, D]), s.useEffect(() => {
+      O && _ && !D && (C(), q())
+    }, [_, O, C, q, D]), s.useEffect(() => {
       O && !P && T && setTimeout(() => {
         C(), q()
       }, 200)
