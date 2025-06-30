@@ -6,9 +6,9 @@ n.d(t, {
   EO: () => ev,
   G: () => e_,
   GE: () => ex,
-  GM: () => eM,
+  GM: () => ej,
   GV: () => ee,
-  K2: () => ek,
+  K2: () => eM,
   LI: () => k,
   MH: () => eu,
   Mg: () => eT,
@@ -29,6 +29,7 @@ n.d(t, {
   fG: () => eN,
   i6: () => J,
   jg: () => ec,
+  lC: () => ek,
   lO: () => eo,
   lP: () => $,
   ou: () => ed,
@@ -36,7 +37,7 @@ n.d(t, {
   pl: () => eS,
   qu: () => eI,
   qv: () => Y,
-  r5: () => ej,
+  r5: () => eU,
   rt: () => eL,
   sF: () => et,
   sk: () => ep,
@@ -1376,20 +1377,54 @@ async function ex() {
     }), e
   }
 }
+async function ek() {
+  let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+  if (!e && null != h.Z.ipLocationRequest) return h.Z.ipLocationRequest;
+  try {
+    let e = l.tn.get({
+      url: v.ANM.BILLING_LOCATION,
+      rejectWithError: !1
+    });
+    c.Z.wait(() => c.Z.dispatch({
+      type: "BILLING_IP_LOCATION_FETCH_START",
+      request: e
+    }));
+    let t = await e,
+      n = t.body.country_code,
+      r = t.body.subdivision_code,
+      i = {
+        countryCode: n,
+        subdivisionCode: r
+      };
+    return c.Z.dispatch({
+      type: "BILLING_SET_IP_LOCATION",
+      location: i
+    }), c.Z.dispatch({
+      type: "BILLING_SET_IP_COUNTRY_CODE",
+      countryCode: n
+    }), t
+  } catch (e) {
+    return g.default.track(v.rMx.BILLING_IP_LOCATION_FETCH_ERROR, {
+      error_message: e.message
+    }), c.Z.dispatch({
+      type: "BILLING_IP_LOCATION_FAILURE"
+    }), e
+  }
+}
 
-function ek() {
+function eM() {
   c.Z.dispatch({
     type: "RESET_PAYMENT_ID"
   })
 }
 
-function eM() {
+function ej() {
   c.Z.dispatch({
     type: "BILLING_SUBSCRIPTION_RESET"
   })
 }
 
-function ej(e) {
+function eU(e) {
   c.Z.dispatch({
     type: "USER_PAYMENT_BROWSER_CHECKOUT_STARTED",
     loadId: e
