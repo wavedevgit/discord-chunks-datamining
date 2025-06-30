@@ -4,7 +4,7 @@ t.d(n, {
 }), t(49124);
 var r = t(255367);
 t(73800);
-var l = t(481060),
+var l = t(794295),
   i = t(823379),
   o = t(312539);
 
@@ -16,12 +16,10 @@ function u(e) {
   } = e;
   switch (n) {
     case "normal":
-      return (0, r.jsx)(l.eee, {
-        href: t.url,
+      return (0, r.jsx)(l.Z, {
         title: t.title,
-        children: (0, r.jsx)("span", {
-          children: u
-        })
+        href: t.url,
+        children: u
       });
     case "mention":
       switch (t.type) {

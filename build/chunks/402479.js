@@ -104,22 +104,22 @@ function b(e, n, t) {
 }
 let x = null;
 
-function j() {
+function m() {
   return (null === x || 0 === x.byteLength) && (x = new Int32Array(r.memory.buffer)), x
 }
-let m = null;
+let j = null;
 
 function v(e, n) {
   let t, l;
   try {
     let h = r.__wbindgen_add_to_stack_pointer(-16),
       x = b(e, r.__wbindgen_export_0, r.__wbindgen_export_1),
-      m = _;
-    r.parse(h, x, m, f(n));
-    var i = j()[h / 4 + 0],
-      o = j()[h / 4 + 1],
-      c = j()[h / 4 + 2],
-      a = j()[h / 4 + 3],
+      j = _;
+    r.parse(h, x, j, f(n));
+    var i = m()[h / 4 + 0],
+      o = m()[h / 4 + 1],
+      c = m()[h / 4 + 2],
+      a = m()[h / 4 + 3],
       d = i,
       g = o;
     if (a) throw d = 0, g = 0, u(c);
@@ -150,7 +150,7 @@ function I(e, n) {
     l = "string" == typeof t ? t : void 0;
   var o = null == l ? 0 : b(l, r.__wbindgen_export_0, r.__wbindgen_export_1),
     u = _;
-  j()[e / 4 + 1] = u, j()[e / 4 + 0] = o
+  m()[e / 4 + 1] = u, m()[e / 4 + 0] = o
 }
 
 function k(e) {
@@ -182,13 +182,13 @@ function S(e) {
 function A(e, n) {
   let t = i[n],
     l = "number" == typeof t ? t : void 0;
-  ((null === m || 0 === m.byteLength) && (m = new Float64Array(r.memory.buffer)), m)[e / 8 + 1] = null == l ? 0 : l, j()[e / 4 + 0] = null != l
+  ((null === j || 0 === j.byteLength) && (j = new Float64Array(r.memory.buffer)), j)[e / 8 + 1] = null == l ? 0 : l, m()[e / 4 + 0] = null != l
 }
 
 function C(e, n) {
   let t = b(String(i[n]), r.__wbindgen_export_0, r.__wbindgen_export_1),
     l = _;
-  j()[e / 4 + 1] = l, j()[e / 4 + 0] = t
+  m()[e / 4 + 1] = l, m()[e / 4 + 0] = t
 }
 
 function E(e, n) {
@@ -312,7 +312,7 @@ function B(e, n) {
 ${n.stack}` : t
     }(i[n]), r.__wbindgen_export_0, r.__wbindgen_export_1),
     l = _;
-  j()[e / 4 + 1] = l, j()[e / 4 + 0] = t
+  m()[e / 4 + 1] = l, m()[e / 4 + 0] = t
 }
 
 function R(e, n) {

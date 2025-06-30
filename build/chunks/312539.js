@@ -18,8 +18,8 @@ var r = t(255367),
   h = t(359875),
   b = t(124072),
   x = t(891984),
-  j = t(644956),
-  m = t(819366),
+  m = t(644956),
+  j = t(819366),
   v = t(488968),
   y = t(131704),
   p = t(592125),
@@ -94,7 +94,7 @@ function A(e) {
     name: f,
     iconType: g,
     isForumPost: h,
-    hasAccess: j
+    hasAccess: m
   } = (0, l.cj)([p.Z], () => {
     let e = p.Z.getChannel(n);
     return {
@@ -103,10 +103,10 @@ function A(e) {
       isForumPost: null == e ? void 0 : e.isForumPost(),
       hasAccess: null == e || (0, s.YO)(e)
     }
-  }, [n]), m = (0, v.d)();
+  }, [n]), j = (0, v.d)();
   if (null == g) return;
-  let y = u === (null == m ? void 0 : m.guildId) || null == u,
-    w = j || d.isSubscriptionGated ? y || null == f ? (0, r.jsx)(_.Z, {
+  let y = u === (null == j ? void 0 : j.guildId) || null == u,
+    w = m || d.isSubscriptionGated ? y || null == f ? (0, r.jsx)(_.Z, {
       iconType: g,
       children: null != f ? f : (0, r.jsx)("em", {
         children: P.intl.string(P.t.J90oLS)
@@ -191,7 +191,7 @@ function E(e) {
   let {
     id: n
   } = e, t = (0, v.d)();
-  return (0, r.jsx)(m.Z, {
+  return (0, r.jsx)(j.Z, {
     className: "mention",
     userId: n,
     channelId: null == t ? void 0 : t.channelId,
@@ -208,7 +208,7 @@ function N(e) {
     var e, t;
     return null != (t = null != i ? null == (e = w.Z.getRole(i, n)) ? void 0 : e.name : null) ? t : P.intl.string(P.t.sKdZ6e)
   }, [i, n]);
-  return (0, r.jsx)(j.Z, {
+  return (0, r.jsx)(m.Z, {
     roleId: n,
     channelId: null == t ? void 0 : t.channelId,
     guildId: null == t ? void 0 : t.guildId,
@@ -234,7 +234,7 @@ function $(e) {
   let {
     roleName: n
   } = e, t = (0, v.d)();
-  return (0, r.jsx)(j.Z, {
+  return (0, r.jsx)(m.Z, {
     roleName: n,
     channelId: null == t ? void 0 : t.channelId,
     guildId: null == t ? void 0 : t.guildId,
