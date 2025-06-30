@@ -170,7 +170,9 @@ function A(e) {
       }))
     }));
   return F ? (0, r.jsx)("div", {
-    className: g.expressiveWrapper,
+    className: o()(g.expressiveWrapper, {
+      [g.fullWidth]: U
+    }),
     children: K
   }) : K
 }

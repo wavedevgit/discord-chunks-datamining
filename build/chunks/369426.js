@@ -15,7 +15,6 @@ var r = {
   sm: "sm__6af3a",
   hasText: "hasText__6af3a",
   md: "md__6af3a",
-  fullWidth: "fullWidth__6af3a",
   spinnerItem: "spinnerItem__6af3a",
   spinner: "spinner__6af3a",
   "spinner-sm": "spinner-sm__6af3a",
@@ -34,6 +33,7 @@ var r = {
   expressiveBackground: "expressiveBackground__6af3a",
   expressiveFill: "expressiveFill__6af3a",
   expressiveHoverContainer: "expressiveHoverContainer__6af3a",
-  expressiveWrapper: "expressiveWrapper__6af3a"
+  expressiveWrapper: "expressiveWrapper__6af3a",
+  fullWidth: "fullWidth__6af3a"
 };
 n.r(e.exports = r)

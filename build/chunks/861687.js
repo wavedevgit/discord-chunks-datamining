@@ -877,7 +877,10 @@ class ev extends d.Z {
       execute_error: t.executeError,
       incomplete: t.incomplete,
       active_transition_count: n,
-      time_since_creation: (0, _.zO)() - t.creationTime
+      time_since_creation: (0, _.zO)() - t.creationTime,
+      users_added_count: t.usersAdded,
+      users_removed_count: t.usersRemoved,
+      roster_size_after: t.rosterSizeAfter
     })), e === ey && this._trackRemainingSecureFrameTransitions()
   }
   _trackRemainingSecureFrameTransitions() {
@@ -917,12 +920,18 @@ class ev extends d.Z {
       }), this._trackSecureFrameTransition(ey)
     })
   }
-  _handleSecureFramesRosterChange(e) {
-    let t = [];
+  _handleSecureFramesRosterChange(e, t) {
+    let n = [],
+      r = 0,
+      i = 0;
     Object.entries(e).forEach(e => {
-      let [n, r] = e;
-      t.push(eO(n)), null == r || 0 === r.byteLength ? this._secureFramesRosterMap.delete(eO(n)) : this._secureFramesRosterMap.set(eO(n), r)
-    }), this.emit(z.z.RosterMapUpdate, t)
+      let [t, a] = e;
+      n.push(eO(t)), null == a || 0 === a.byteLength ? (i++, this._secureFramesRosterMap.delete(eO(t))) : (r++, this._secureFramesRosterMap.set(eO(t), a))
+    }), this._storeSecureFrameTransitionData(t, {
+      usersAdded: r,
+      usersRemoved: i,
+      rosterSizeAfter: this._secureFramesRosterMap.size
+    }), this.emit(z.z.RosterMapUpdate, n)
   }
   _handleSecureFramesPrepareTransition(e, t) {
     var n;
@@ -996,7 +1005,7 @@ class ev extends d.Z {
     this.logger.info("Received MLS commit for transition ID ".concat(e));
     let r = (0, _.zO)();
     null == (n = this._connection) || n.prepareMLSCommitTransition(e, t, (n, i, a) => {
-      n ? (this._handleSecureFramesRosterChange(a), this._maybeSendSecureFramesTransitionReady(e), this._recoverMLSFailures()) : (this.logger.warn("Failed to process MLS commit for transition ID ".concat(e)), this._flagMLSInvalidCommitWelcome(e), this._handleSecureFramesInit(i)), this._storeSecureFrameTransitionData(e, {
+      n ? (this._handleSecureFramesRosterChange(a, e), this._maybeSendSecureFramesTransitionReady(e), this._recoverMLSFailures()) : (this.logger.warn("Failed to process MLS commit for transition ID ".concat(e)), this._flagMLSInvalidCommitWelcome(e), this._handleSecureFramesInit(i)), this._storeSecureFrameTransitionData(e, {
         protocolVersion: i,
         commitReceivedTime: r,
         commitFinishedTime: (0, _.zO)(),
@@ -1010,7 +1019,7 @@ class ev extends d.Z {
     this.logger.info("Received MLS welcome for transition ID ".concat(e));
     let r = (0, _.zO)();
     null == (n = this._connection) || n.processMLSWelcome(e, t, (n, i, a) => {
-      n ? (this._handleSecureFramesRosterChange(a), this._maybeSendSecureFramesTransitionReady(e), this._recoverMLSFailures()) : (this._flagMLSInvalidCommitWelcome(e), this._sendMLSKeyPackage()), this._storeSecureFrameTransitionData(e, {
+      n ? (this._handleSecureFramesRosterChange(a, e), this._maybeSendSecureFramesTransitionReady(e), this._recoverMLSFailures()) : (this._flagMLSInvalidCommitWelcome(e), this._sendMLSKeyPackage()), this._storeSecureFrameTransitionData(e, {
         protocolVersion: i,
         welcomeReceivedTime: r,
         welcomeFinishedTime: (0, _.zO)(),
