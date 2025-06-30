@@ -19,7 +19,9 @@ function u(e) {
       return (0, r.jsx)(l.eee, {
         href: t.url,
         title: t.title,
-        children: u
+        children: (0, r.jsx)("span", {
+          children: u
+        })
       });
     case "mention":
       switch (t.type) {

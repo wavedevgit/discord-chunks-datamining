@@ -47,35 +47,47 @@ class f extends r.yh {
     return this.derived.length
   }
   constructor(e) {
-    super(i.Z, null == e ? void 0 : e({
-      reset: e => {
-        let t = {};
-        "function" == typeof e ? e(t = {}, this.root) : null != e && (t = e), this[o](t, {
-          length: null == e ? 0 : Object.keys(t).length,
-          memoized: {}
-        })
-      },
-      get: e => this.root[e],
-      set: (e, t) => {
-        let n = l.call(this.root, e);
-        "function" == typeof t && (t = t(this.root[e])), this.root[e] = t;
-        let {
-          derived: r
-        } = this;
-        !n && r.length++, r.memoized = {}
-      },
-      remove: e => {
-        let t = l.call(this.root, e);
-        if (t) {
-          delete this.root[e];
-          let {
-            derived: t
-          } = this;
-          t.length--, t.memoized = {}
-        }
-        return t
+    let t = {};
+    if (null != e) {
+      let n = !1,
+        r = {
+          reset: e => {
+            let t = {};
+            "function" == typeof e ? e(t = {}, this.root) : null != e && (t = e), this[o](t, {
+              length: null == e ? 0 : Object.keys(t).length,
+              memoized: {}
+            }), n = !0
+          },
+          get: e => this.root[e],
+          set: (e, t) => {
+            let r = l.call(this.root, e);
+            "function" == typeof t && (t = t(this.root[e])), this.root[e] = t;
+            let {
+              derived: i
+            } = this;
+            !r && i.length++, i.memoized = {}, n = !0
+          },
+          remove: e => {
+            let t = l.call(this.root, e);
+            if (t) {
+              delete this.root[e];
+              let {
+                derived: t
+              } = this;
+              t.length--, t.memoized = {}, n = !0
+            }
+            return t
+          }
+        };
+      for (let i in e) {
+        let a = e[i],
+          o = e => {
+            if (n = !1, a(e, r), !n) return !1
+          };
+        t[i] = o
       }
-    })), a(this, "actionsHandledByLibdiscore", void 0), a(this, "derived", {
+    }
+    super(i.Z, t), a(this, "actionsHandledByLibdiscore", void 0), a(this, "derived", {
       length: 0,
       memoized: {}
     }), a(this, "nextVersion", 0), a(this, "root", {}), this.actionsHandledByLibdiscore = null == e

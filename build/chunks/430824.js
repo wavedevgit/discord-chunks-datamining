@@ -33,88 +33,85 @@ function d(e) {
   return e
 }
 class f extends r.fE {
-  getGuild(e) {
-    if (null != e) return e === l.I_8 ? c.g : this.get(e)
-  }
   getGuildCount() {
     return this.length()
   }
   constructor(...e) {
-    super(...e), u(this, "getGuilds", this.memoized(e => d({}, e))), u(this, "getGuildsArray", this.memoized(e => Object.values(e))), u(this, "getGuildIds", this.memoized(e => o.default.keys(e)))
+    super(...e), u(this, "getGuild", e => {
+      if (null != e) return e === l.I_8 ? c.g : this.get(e)
+    }), u(this, "getGuilds", this.memoized(e => d({}, e))), u(this, "getGuildsArray", this.memoized(e => Object.values(e))), u(this, "getGuildIds", this.memoized(e => o.default.keys(e)))
   }
 }
 u(f, "displayName", "GuildStore");
-let _ = new f(e => ({
-  BACKGROUND_SYNC: t => {
+let _ = new f({
+  BACKGROUND_SYNC: (e, t) => {
     let {
       guilds: n
-    } = t;
-    for (let t of n) {
-      let n = e.get(t.id);
-      null != n && "unavailable" !== t.data_mode && e.set(t.id, a.sp(t, n))
+    } = e;
+    for (let e of n) {
+      let n = t.get(e.id);
+      null != n && "unavailable" !== e.data_mode && t.set(e.id, a.sp(e, n))
     }
   },
-  CONNECTION_OPEN: t => {
+  CONNECTION_OPEN: (e, t) => {
     let {
       guilds: n
-    } = t;
-    e.reset((e, t) => {
+    } = e;
+    t.reset((e, t) => {
       for (let r of n) e[r.id] = a.wD(r, t[r.id])
     })
   },
-  OVERLAY_INITIALIZE: t => {
+  OVERLAY_INITIALIZE: (e, t) => {
     let {
       guilds: n
-    } = t;
-    e.reset(e => {
+    } = e;
+    t.reset(e => {
       if (null != n)
         for (let t of n) e[t.id] = new i.ZP(t)
     })
   },
-  CACHE_LOADED: t => {
+  CACHE_LOADED: (e, t) => {
     let {
       guilds: n
-    } = t;
-    e.reset(e => {
+    } = e;
+    t.reset(e => {
       for (let t of n) e[t.id] = a.cL(t)
     })
   },
-  CACHE_LOADED_LAZY: t => {
+  CACHE_LOADED_LAZY: (e, t) => {
     let {
       guilds: n
-    } = t;
-    if (0 === n.length) return !1;
-    e.reset(e => {
+    } = e;
+    0 !== n.length && t.reset(e => {
       for (let t of n) e[t.id] = a.cL(t)
     })
   },
-  GUILD_CREATE: t => {
+  GUILD_CREATE: (e, t) => {
     let {
       guild: n
-    } = t;
-    e.set(n.id, e => a.wD(n, e))
+    } = e;
+    t.set(n.id, e => a.wD(n, e))
   },
-  GUILD_UPDATE: t => {
+  GUILD_UPDATE: (e, t) => {
     let {
       guild: n
-    } = t;
-    e.set(n.id, e => a.di(n, e))
+    } = e;
+    t.set(n.id, e => a.di(n, e))
   },
-  GUILD_DELETE: t => {
+  GUILD_DELETE: (e, t) => {
     let {
       guild: n
-    } = t;
-    return !n.unavailable && e.remove(n.id)
+    } = e;
+    n.unavailable || t.remove(n.id)
   },
-  GUILD_MEMBER_ADD: t => {
+  GUILD_MEMBER_ADD: (e, t) => {
     let {
       guildId: n,
       joinedAt: r,
       user: i
-    } = t, a = s.default.getId(), o = e.get(n);
-    if (a !== i.id || null == o) return !1;
+    } = e, a = s.default.getId(), o = t.get(n);
+    if (a !== i.id || null == o) return;
     let l = "string" == typeof r ? new Date(r) : r;
-    if (l === o.joinedAt || null == l) return !1;
-    e.set(n, o.updateJoinedAt(l))
+    l !== o.joinedAt && null != l && t.set(n, o.updateJoinedAt(l))
   }
-}))
+})

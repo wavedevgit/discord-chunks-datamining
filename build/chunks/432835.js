@@ -22,19 +22,19 @@ class l extends i.fE {
   }
 }
 o(l, "displayName", "NoteStore"), s.info("libdiscore enabled: ".concat(a.I.cachedIsEnabled()));
-let c = new l(a.I.cachedIsEnabled() ? void 0 : e => ({
-  CONNECTION_OPEN: () => e.reset(),
-  OVERLAY_INITIALIZE: () => e.reset(),
-  USER_NOTE_UPDATE: t => {
-    e.set(t.id, {
+let c = new l(a.I.cachedIsEnabled() ? void 0 : {
+  CONNECTION_OPEN: (e, t) => t.reset(),
+  OVERLAY_INITIALIZE: (e, t) => t.reset(),
+  USER_NOTE_UPDATE: (e, t) => {
+    t.set(e.id, {
       loading: !1,
-      note: t.note
+      note: e.note
     })
   },
-  USER_NOTE_LOAD_START: t => {
-    e.set(t.userId, {
+  USER_NOTE_LOAD_START: (e, t) => {
+    t.set(e.userId, {
       loading: !0,
       note: null
     })
   }
-}))
+})
