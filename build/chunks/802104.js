@@ -85,7 +85,7 @@ class b extends o.Z {
         oldFormErrors: !0,
         rejectWithError: !0
       }).then(e => {
-        if (null == e.body || "68ec3932122753c63ba4083fbaeabce49aaa4b59" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "1995d26d1f30280ce76da1758eda1f2e1516a8b4" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, s.fD)()) return this._handleUpdateDownloaded(!1);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : m;
         if (Date.now() - g > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(!1)

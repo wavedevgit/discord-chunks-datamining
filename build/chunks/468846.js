@@ -1,7 +1,7 @@
 /** Chunk was on 53937 **/
 t.d(l, {
-  ZP: () => g,
-  pn: () => p
+  ZP: () => b,
+  pn: () => g
 });
 var n, r = t(255367),
   i = t(73800),
@@ -42,8 +42,9 @@ function u(e, l) {
   }
   return r
 }
+let d = "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts";
 
-function d(e, l) {
+function c(e, l) {
   let t = s.Z.toURLSafe(null != e ? e : "");
   if (null === t) return "";
   if (null == l) return t.toString();
@@ -54,7 +55,7 @@ function d(e, l) {
   return t.toString()
 }
 
-function c(e) {
+function h(e) {
   var {
     src: l,
     autoMute: t
@@ -73,48 +74,52 @@ function c(e) {
       }
     }, [t]);
   i.useEffect(() => (window.addEventListener("message", a), () => window.removeEventListener("message", a)), [a]);
-  let c = d(l, {
+  let d = c(l, {
     utm_source: "discord.gg"
   });
-  return (0, r.jsx)(m, o({
-    src: c,
+  return (0, r.jsx)(p, o({
+    src: d,
     ref: s
   }, n))
 }
 
-function h(e) {
+function m(e) {
   var {
     src: l,
     autoMute: t
   } = e, n = u(e, ["src", "autoMute"]);
-  let i = d(l, {
+  let i = c(l, {
     autoplay: "1",
     auto_play: "1",
     mute: t ? "1" : void 0
   });
-  return (0, r.jsx)(m, o({
+  return (0, r.jsx)(p, o({
     src: i
   }, n))
 }
-let m = i.forwardRef(function(e, l) {
+let p = i.forwardRef(function(e, l) {
+  var {
+    allowFullScreen: t
+  } = e, n = u(e, ["allowFullScreen"]);
   return (0, r.jsx)("iframe", o({
     ref: l,
     className: a.embedIframe,
-    allow: "autoplay",
+    allow: t ? "autoplay; fullscreen" : "autoplay",
     frameBorder: 0,
     scrolling: "no",
-    sandbox: "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-  }, e))
+    sandbox: t ? "".concat(d, " allow-fullscreen") : d,
+    allowFullScreen: t
+  }, n))
 });
-var p = ((n = {}).YOUTUBE = "YouTube", n.TIKTOK = "TikTok", n);
+var g = ((n = {}).YOUTUBE = "YouTube", n.TIKTOK = "TikTok", n);
 
-function g(e) {
+function b(e) {
   switch (e.provider) {
     case "YouTube":
-      return (0, r.jsx)(h, o({}, e));
+      return (0, r.jsx)(m, o({}, e));
     case "TikTok":
-      return (0, r.jsx)(c, o({}, e));
+      return (0, r.jsx)(h, o({}, e));
     default:
-      return (0, r.jsx)(m, o({}, e))
+      return (0, r.jsx)(p, o({}, e))
   }
 }

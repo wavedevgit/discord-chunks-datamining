@@ -741,6 +741,7 @@ class e5 extends(r = l.Component) {
           obscureReason: null != m ? m : void 0,
           autoPlayGif: l,
           hideMedia: !a,
+          allowFullScreen: !this.props.disableComponentInteractivity,
           onSuppressEmbed: o ? this.handleEmbedSuppressed : void 0,
           renderTitle: this.renderEmbedTitle,
           renderDescription: this.renderEmbedDescription,
