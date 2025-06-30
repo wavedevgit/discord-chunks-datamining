@@ -2,12 +2,12 @@
 t.a(e, async function(e, r) {
   try {
     t.d(n, {
-      Q: () => u
+      Q: () => o
     });
     var l = t(919573),
       i = e([l]);
 
-    function u(e, n) {
+    function o(e, n) {
       return JSON.parse((0, l.Qc)(e, n))
     }
     l = (i.then ? (await i)() : i)[0], r()

@@ -44,26 +44,27 @@ async function m(e) {
     hideRestrictedProfile: E,
     sourceAnalyticsLocations: b,
     appContext: y,
-    customStatusPrompt: O = null
-  } = e, v = c.default.getUser(t);
+    customStatusPrompt: O = null,
+    disableActionsForPreview: v = !1
+  } = e, I = c.default.getUser(t);
   h(t);
   let {
-    withMutualFriendsCount: I
+    withMutualFriendsCount: T
   } = (0, d.R)({
     location: "openUserProfileModal"
   });
-  null == v ? await (0, o.In)(t, {
+  null == I ? await (0, o.In)(t, {
     type: "modal",
     guildId: g && null != n ? n : void 0,
-    withMutualFriendsCount: I,
-    withMutualFriends: !I,
+    withMutualFriendsCount: T,
+    withMutualFriends: !T,
     withMutualGuilds: !0,
     joinRequestId: u
-  }) : (0, f.Z)(v.id, v.getAvatarURL(void 0, _), {
+  }) : (0, f.Z)(I.id, I.getAvatarURL(void 0, _), {
     type: "modal",
     guildId: g && null != n ? n : void 0,
-    withMutualFriendsCount: !v.bot && I,
-    withMutualFriends: !v.bot && !I,
+    withMutualFriendsCount: !I.bot && T,
+    withMutualFriends: !I.bot && !T,
     withMutualGuilds: !0,
     joinRequestId: u
   }), a.Z.dispatch({
@@ -81,7 +82,8 @@ async function m(e) {
     showGuildProfile: g,
     hideRestrictedProfile: E,
     sourceAnalyticsLocations: b,
-    appContext: y
+    appContext: y,
+    disableActionsForPreview: v
   })
 }
 

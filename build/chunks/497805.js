@@ -67,28 +67,30 @@ async function g(e) {
       channelId: g,
       showGuildProfile: E = !0,
       appContext: b,
-      customStatusPrompt: y
+      customStatusPrompt: y,
+      disableActionsForPreview: O = !1
     } = e,
-    O = _(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt"]);
-  let v = l.default.getUser(a);
-  if (null == v) return;
-  let I = l.default.getCurrentUser();
-  null != I && (h = await (0, i.ZDy)(async () => {
+    v = _(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
+  let I = l.default.getUser(a);
+  if (null == I) return;
+  let T = l.default.getCurrentUser();
+  null != T && (h = await (0, i.ZDy)(async () => {
     let {
       default: e
     } = (0, c.q)({
       location: "UserProfileModalManager"
     }) ? await Promise.all([n.e("1268"), n.e("82412"), n.e("62880"), n.e("37048"), n.e("43473")]).then(n.bind(n, 866035)): await Promise.all([n.e("1268"), n.e("82412"), n.e("62880"), n.e("37048"), n.e("11678")]).then(n.bind(n, 678780));
     return t => (0, r.jsx)(e, f({
-      user: v,
-      currentUser: I,
+      user: I,
+      currentUser: T,
       guildId: p,
       initialSection: o,
       initialSubsection: d,
       channelId: g,
       showGuildProfile: E,
-      customStatusPrompt: y
-    }, t, O))
+      customStatusPrompt: y,
+      disableActionsForPreview: O
+    }, t, v))
   }, {
     modalKey: m(a, E ? p : void 0),
     contextKey: (0, i.VnL)(null != (t = null != b ? b : (0, s.GB)()) ? t : u.IlC.APP)

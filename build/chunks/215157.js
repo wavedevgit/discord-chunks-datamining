@@ -7,13 +7,13 @@ t.a(e, async function(e, r) {
     });
     var l = t(255367),
       i = t(515062),
-      u = t(73800),
-      o = e([i]);
-    i = (o.then ? (await o)() : o)[0];
-    let f = (0, u.createContext)(null);
+      o = t(73800),
+      u = e([i]);
+    i = (u.then ? (await u)() : u)[0];
+    let f = (0, o.createContext)(null);
 
     function c() {
-      return (0, u.useContext)(f)
+      return (0, o.useContext)(f)
     }
     let _ = new Set(["bold", "italic", "underline", "strikethrough", "spoiler", "emoji", "timestamp", "mention", "link", "code", "code_block", "heading", "list", "quote", "small"]);
 
@@ -43,7 +43,7 @@ t.a(e, async function(e, r) {
           });
         case "link":
           let i = e.value,
-            u = null;
+            o = null;
           if ("normal" === i.type) {
             let {
               value: {
@@ -51,7 +51,7 @@ t.a(e, async function(e, r) {
                 url: t
               }
             } = i;
-            u = e ? (0, l.jsx)(d, {
+            o = e ? (0, l.jsx)(d, {
               nodes: e,
               renderers: n
             }) : t
@@ -59,7 +59,7 @@ t.a(e, async function(e, r) {
           return (0, l.jsx)(r, {
             ...e.value,
             ...t,
-            children: u
+            children: o
           });
         case "text":
         case "code":
@@ -77,11 +77,11 @@ t.a(e, async function(e, r) {
             })
           });
         case "list":
-          let o = n.listItem ?? "li";
+          let u = n.listItem ?? "li";
           return (0, l.jsx)(r, {
             ...e.value,
             ...t,
-            children: e.value.items.map((t, r) => (0, l.jsx)(o, {
+            children: e.value.items.map((t, r) => (0, l.jsx)(u, {
               siblings: e.value.items,
               index: r,
               children: (0, l.jsx)(d, {
@@ -125,11 +125,11 @@ t.a(e, async function(e, r) {
       content: e,
       renderers: n
     }) {
-      let t = (0, u.useMemo)(() => {
+      let t = (0, o.useMemo)(() => {
           let e = Object.keys(n).filter(e => _.has(e));
           return e.length > 0 ? e : null
         }, [n]),
-        r = (0, u.useMemo)(() => (0, i.Q)(e, t), [e, t]);
+        r = (0, o.useMemo)(() => (0, i.Q)(e, t), [e, t]);
       return (0, l.jsx)(f.Provider, {
         value: r,
         children: (0, l.jsx)(d, {

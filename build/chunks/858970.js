@@ -16,9 +16,9 @@ var r = n(442837),
   p = n(687158),
   m = n(316027),
   b = n(502762),
-  y = n(848780),
-  _ = n(907179),
-  x = n(228168),
+  _ = n(848780),
+  x = n(907179),
+  y = n(228168),
   h = n(981631),
   g = n(388032),
   j = n(247787);
@@ -52,14 +52,14 @@ function v(e) {
     transitionState: N,
     openedAt: A,
     onHide: T,
-    sourceAnalyticsLocations: Z = []
-  } = e, C = n === h.ME ? void 0 : n, w = (0, r.e7)([s.Z], () => s.Z.isBlocked(t.id)), {
+    sourceAnalyticsLocations: C = []
+  } = e, Z = n === h.ME ? void 0 : n, w = (0, r.e7)([s.Z], () => s.Z.isBlocked(t.id)), {
     analyticsLocations: S
-  } = (0, l.ZP)([...Z, w ? c.Z.BLOCKED_PROFILE_MODAL : c.Z.IGNORED_PROFILE_MODAL]), E = (0, u.ZB)({
+  } = (0, l.ZP)([...C, w ? c.Z.BLOCKED_PROFILE_MODAL : c.Z.IGNORED_PROFILE_MODAL]), E = (0, u.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     showGuildProfile: !0,
-    guildId: C,
+    guildId: Z,
     channelId: v,
     messageId: O,
     roleId: P
@@ -69,7 +69,7 @@ function v(e) {
   }, {
     icon: i.owK,
     description: g.intl.string(w ? g.t.QxrDY2 : g.t.W6fjkZ)
-  }], L = (0, p.ZP)(t.id, C), D = d.ZP.getName(null == L ? void 0 : L.guildId, v, t), U = g.intl.formatToPlainString(g.t.KRe1Fh, {
+  }], L = (0, p.ZP)(t.id, Z), D = d.ZP.getName(null == L ? void 0 : L.guildId, v, t), U = g.intl.formatToPlainString(g.t.KRe1Fh, {
     name: D
   });
   return (0, o.jsx)(l.Gt, {
@@ -88,14 +88,14 @@ function v(e) {
         children: (0, o.jsxs)(b.Z, {
           user: t,
           displayProfile: L,
-          themeType: x.lY.MODAL_V2,
+          themeType: y.lY.MODAL_V2,
           children: [(0, o.jsx)("div", {
             className: j.background
           }), (0, o.jsxs)("div", {
             className: j.content,
             children: [(0, o.jsx)(m.Z, {
               user: t,
-              guildId: C,
+              guildId: Z,
               iconColor: i.TVs.colors.TEXT_DEFAULT
             }), (0, o.jsxs)("div", {
               className: j.textContainer,
@@ -126,7 +126,7 @@ function v(e) {
               })
             }), (0, o.jsxs)(i.Kqy, {
               align: "center",
-              children: [(0, o.jsx)(_.Z, {
+              children: [(0, o.jsx)(x.Z, {
                 size: i.PhG.MEDIUM,
                 isBlocked: w,
                 onClick: () => {
@@ -135,7 +135,7 @@ function v(e) {
                     analyticsLocations: S
                   }, E))
                 }
-              }), (0, o.jsx)(y.Z, {
+              }), (0, o.jsx)(_.Z, {
                 userId: t.id,
                 onClick: () => {
                   T(), (0, f.pQ)(I({

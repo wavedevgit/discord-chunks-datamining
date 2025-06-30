@@ -7,8 +7,8 @@ t.a(e, async function(e, r) {
     var l = t(255367);
     t(73800);
     var i = t(215157),
-      u = t(222082),
-      o = t(63681),
+      o = t(222082),
+      u = t(63681),
       c = t(743965),
       a = t(12781),
       d = t(980426),
@@ -22,14 +22,14 @@ t.a(e, async function(e, r) {
       y = e([a, i]);
     [a, i] = y.then ? (await y)() : y;
     let m = {
-      text: u.xv,
-      paragraph: u.nv,
-      empty: u.HY,
+      text: o.xv,
+      paragraph: o.nv,
+      empty: o.HY,
       emoji: a.d,
       link: f.r,
       list: _.a,
       listItem: _.H,
-      code: o.E,
+      code: u.E,
       code_block: c.d,
       quote: h.p,
       bold: d.d8,

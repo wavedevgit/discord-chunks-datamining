@@ -14,11 +14,11 @@ function l(e) {
   } = e;
   switch (n) {
     case "ordered":
-      let u = (l + i.length - 1).toString().length;
+      let o = (l + i.length - 1).toString().length;
       return (0, r.jsx)("ol", {
         start: l,
         style: {
-          "--totalCharacters": u
+          "--totalCharacters": o
         },
         children: t
       });

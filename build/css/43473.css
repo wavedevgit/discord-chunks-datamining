@@ -1,6 +1,6 @@
 /**
   Module ID: 43473
-  Original File Name: f615adfa25747401
+  Original File Name: 7dd05ff2964d9c0a
 **/
 .scroller__95bea {
     display: flex;
@@ -1205,9 +1205,53 @@
     border: none;
     border-radius: var(--radius-lg);
     max-height: 100%;
-    overflow: hidden;
     position: relative;
     width: 100%
+}
+
+.disabled__9c3be {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.floatingTitle__9c3be {
+    left: 50%;
+    position: absolute;
+    top: -28px
+}
+
+.closeModalButton__9c3be {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    color: var(--interactive-normal);
+    cursor: pointer;
+    display: flex;
+    flex: 0 0 36px;
+    height: 36px;
+    justify-content: center;
+    left: 110%;
+    position: absolute;
+    top: -28px;
+    width: 36px
+}
+
+.closeModalButton__9c3be:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--interactive-hover)
+}
+
+.closeModalButton__9c3be:active {
+    background-color: var(--background-modifier-active);
+    color: var(--interactive-active)
+}
+
+.theme-dark .closeButtonBold__9c3be:hover {
+    background-color: hsl(var(--primary-300-hsl)/.3)
 }
 
 .toast__9c3be {
@@ -1369,4 +1413,4 @@
     border-color: var(--input-focused-border)
 }
 
-/*# sourceMappingURL=f615adfa25747401.css.map*/
+/*# sourceMappingURL=7dd05ff2964d9c0a.css.map*/

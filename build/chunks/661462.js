@@ -51,9 +51,9 @@ function p(e) {
     guildId: p,
     channelId: m,
     items: b,
-    initialSection: y,
-    initialSubsection: _,
-    onClose: x
+    initialSection: _,
+    initialSubsection: x,
+    onClose: y
   } = e, {
     trackUserProfileAction: h
   } = (0, c.KZ)(), [{
@@ -81,9 +81,9 @@ function p(e) {
     let {
       section: t
     } = e;
-    return t === y
+    return t === _
   })) ? t : b[0]), l = l = {
-    subsection: _
+    subsection: x
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -133,7 +133,7 @@ function p(e) {
         channelId: m,
         section: g,
         subsection: j,
-        onClose: x
+        onClose: y
       })
     })]
   })

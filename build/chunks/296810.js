@@ -18,9 +18,11 @@ function u(e) {
     className: n,
     layoutClassName: r,
     profilePreview: u,
-    previewTitle: m
-  } = e, g = () => (0, i.jsx)(o.Z, {
+    previewTitle: m,
+    showViewFullProfileButton: g
+  } = e, p = () => (0, i.jsx)(o.Z, {
     title: null != m ? m : c.intl.string(c.t.Zb06yM),
+    showViewFullProfileButton: g,
     className: d.preview,
     children: u
   });
@@ -28,9 +30,9 @@ function u(e) {
     className: n,
     children: (0, i.jsxs)(a.hjN, {
       className: d.profileCustomizationSection,
-      children: [l.tq && g(), (0, i.jsxs)("div", {
+      children: [l.tq && p(), (0, i.jsxs)("div", {
         className: s()(d.baseLayout, r),
-        children: [t, !l.tq && g()]
+        children: [t, !l.tq && p()]
       })]
     })
   })

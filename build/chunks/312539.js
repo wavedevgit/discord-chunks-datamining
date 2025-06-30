@@ -6,8 +6,8 @@ t.d(n, {
 var r = t(255367),
   l = t(442837),
   i = t(481060),
-  u = t(239091),
-  o = t(287734),
+  o = t(239091),
+  u = t(287734),
   c = t(66999),
   a = t(364640),
   d = t(754688),
@@ -44,7 +44,7 @@ async function Z(e, n, t) {
     } catch (e) {}
   }
   let r = m.Z.getChannel(n);
-  if (null != r && null == t && (0, j.bw)(r.type) && (0, d.YO)(r)) return void o.default.selectVoiceChannel(r.id);
+  if (null != r && null == t && (0, j.bw)(r.type) && (0, d.YO)(r)) return void u.default.selectVoiceChannel(r.id);
   (0, s.Z)(k.Z5c.CHANNEL(e, n, t))
 }
 
@@ -82,7 +82,7 @@ function P(e) {
 function T(e) {
   let {
     channelId: n,
-    guildId: o,
+    guildId: u,
     messageId: a
   } = e, s = (0, c.Z)(n), {
     name: _,
@@ -99,14 +99,14 @@ function T(e) {
     }
   }, [n]), v = (0, y.d)();
   if (null == b) return;
-  let p = o === (null == v ? void 0 : v.guildId) || null == o,
+  let p = u === (null == v ? void 0 : v.guildId) || null == u,
     I = j || s.isSubscriptionGated ? p || null == _ ? (0, r.jsx)(f.Z, {
       iconType: b,
       children: null != _ ? _ : (0, r.jsx)("em", {
         children: O.intl.string(O.t.J90oLS)
       })
     }) : (0, r.jsx)(S, {
-      guildId: o,
+      guildId: u,
       children: _
     }) : (0, r.jsx)(f.Z, {
       iconType: "locked",
@@ -120,17 +120,17 @@ function T(e) {
   })), (0, r.jsxs)(g.Z, {
     role: "link",
     onClick: e => {
-      null == e || e.stopPropagation(), Z(o, n, a), (0, i.pTH)()
+      null == e || e.stopPropagation(), Z(u, n, a), (0, i.pTH)()
     },
     onContextMenu: e => {
       let l = m.Z.getChannel(n);
-      (0, u.jW)(e, async () => {
+      (0, o.jW)(e, async () => {
         let {
           default: e
         } = await t.e("9573").then(t.bind(t, 546649));
         return t => {
-          var i, u, o;
-          return (0, r.jsx)(e, (u = function(e) {
+          var i, o, u;
+          return (0, r.jsx)(e, (o = function(e) {
             for (var n = 1; n < arguments.length; n++) {
               var t = null != arguments[n] ? arguments[n] : {},
                 r = Object.keys(t);
@@ -147,21 +147,21 @@ function T(e) {
               })
             }
             return e
-          }({}, t), o = o = {
+          }({}, t), u = u = {
             channel: l,
             channelId: null != (i = null == l ? void 0 : l.id) ? i : n,
             originalLink: null,
             messageId: a
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(o)) : (function(e, n) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(u)) : (function(e, n) {
             var t = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               t.push.apply(t, r)
             }
             return t
-          })(Object(o)).forEach(function(e) {
-            Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(o, e))
-          }), u))
+          })(Object(u)).forEach(function(e) {
+            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(u, e))
+          }), o))
         }
       })
     },
@@ -191,14 +191,14 @@ function A(e) {
     channelId: null == t ? void 0 : t.channelId,
     viewingChannelId: null == t ? void 0 : t.viewingChannelId,
     parsedUserId: n,
-    content: null
+    content: "<@".concat(n, ">")
   })
 }
 
 function C(e) {
   let {
     id: n
-  } = e, t = (0, y.d)(), i = null == t ? void 0 : t.guildId, u = (0, l.e7)([v.Z], () => {
+  } = e, t = (0, y.d)(), i = null == t ? void 0 : t.guildId, o = (0, l.e7)([v.Z], () => {
     var e, t;
     return null != (t = null != i ? null == (e = v.Z.getRole(i, n)) ? void 0 : e.name : null) ? t : O.intl.string(O.t.sKdZ6e)
   }, [i, n]);
@@ -206,7 +206,7 @@ function C(e) {
     roleId: n,
     channelId: null == t ? void 0 : t.channelId,
     guildId: null == t ? void 0 : t.guildId,
-    children: "@".concat(u)
+    children: "@".concat(o)
   })
 }
 

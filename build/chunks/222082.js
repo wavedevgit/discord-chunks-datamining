@@ -1,6 +1,6 @@
 /** Chunk was on 85831 **/
 t.d(n, {
-  HY: () => u,
+  HY: () => o,
   nv: () => i,
   xv: () => l
 });
@@ -24,7 +24,7 @@ function i(e) {
   })
 }
 
-function u() {
+function o() {
   return (0, r.jsx)("p", {})
 }
 t(73800)

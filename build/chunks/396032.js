@@ -2,6 +2,7 @@
 "use strict";
 e.exports = {
   title: "title_ace4f5",
+  viewFullProfileButton: "viewFullProfileButton_ace4f5",
   disabled: "disabled_ace4f5",
   customizationSection: "customizationSection_ace4f5",
   hideDivider: "hideDivider_ace4f5",

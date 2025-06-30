@@ -42,11 +42,11 @@ t.d(n, {
 });
 let i = Array(128).fill(void 0);
 i.push(void 0, null, !0, !1);
-let u = i.length;
+let o = i.length;
 
-function o(e) {
+function u(e) {
   let n = i[e];
-  return e < 132 || (i[e] = u, u = e), n
+  return e < 132 || (i[e] = o, o = e), n
 }
 let c = new("undefined" == typeof TextDecoder ? (0, module.require)("util").TextDecoder : TextDecoder)("utf-8", {
   ignoreBOM: !0,
@@ -64,9 +64,9 @@ function s(e, n) {
 }
 
 function f(e) {
-  u === i.length && i.push(i.length + 1);
-  let n = u;
-  return u = i[n], i[n] = e, n
+  o === i.length && i.push(i.length + 1);
+  let n = o;
+  return o = i[n], i[n] = e, n
 }
 let _ = 0,
   g = new("undefined" == typeof TextEncoder ? (0, module.require)("util").TextEncoder : TextEncoder)("utf-8"),
@@ -89,18 +89,18 @@ function b(e, n, t) {
   let r = e.length,
     l = n(r, 1) >>> 0,
     i = d(),
-    u = 0;
-  for (; u < r; u++) {
-    let n = e.charCodeAt(u);
+    o = 0;
+  for (; o < r; o++) {
+    let n = e.charCodeAt(o);
     if (n > 127) break;
-    i[l + u] = n
+    i[l + o] = n
   }
-  if (u !== r) {
-    0 !== u && (e = e.slice(u)), l = t(l, r, r = u + 3 * e.length, 1) >>> 0;
-    let n = h(e, d().subarray(l + u, l + r));
-    u += n.written, l = t(l, r, u, 1) >>> 0
+  if (o !== r) {
+    0 !== o && (e = e.slice(o)), l = t(l, r, r = o + 3 * e.length, 1) >>> 0;
+    let n = h(e, d().subarray(l + o, l + r));
+    o += n.written, l = t(l, r, o, 1) >>> 0
   }
-  return _ = u, l
+  return _ = o, l
 }
 let x = null;
 
@@ -117,12 +117,12 @@ function m(e, n) {
       j = _;
     r.parse(h, x, j, f(n));
     var i = y()[h / 4 + 0],
-      u = y()[h / 4 + 1],
+      o = y()[h / 4 + 1],
       c = y()[h / 4 + 2],
       a = y()[h / 4 + 3],
       d = i,
-      g = u;
-    if (a) throw d = 0, g = 0, o(c);
+      g = o;
+    if (a) throw d = 0, g = 0, u(c);
     return t = d, l = g, s(d, g)
   } finally {
     r.__wbindgen_add_to_stack_pointer(16), r.__wbindgen_export_2(t, l, 1)
@@ -138,7 +138,7 @@ function v(e, n) {
 }
 
 function p(e) {
-  o(e)
+  u(e)
 }
 
 function w(e, n) {
@@ -156,9 +156,9 @@ function k(e) {
 function O(e, n) {
   let t = i[n],
     l = "string" == typeof t ? t : void 0;
-  var u = null == l ? 0 : b(l, r.__wbindgen_export_0, r.__wbindgen_export_1),
-    o = _;
-  y()[e / 4 + 1] = o, y()[e / 4 + 0] = u
+  var o = null == l ? 0 : b(l, r.__wbindgen_export_0, r.__wbindgen_export_1),
+    u = _;
+  y()[e / 4 + 1] = u, y()[e / 4 + 0] = o
 }
 
 function Z(e) {
