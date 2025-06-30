@@ -225,14 +225,14 @@ function C(e) {
       }
     }
   }, [t, n]), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(u.QD, {
+    children: [(0, r.jsx)(u.GlowButtonRive, {
       className: o()(g.expressiveRive, g.expressiveBackground),
       eventTargetRef: n,
       fit: "layout",
       artboard: "BaseGlowRemapped",
       ref: s,
       withReducedMotion: "short-loop"
-    }), !t && (0, r.jsx)(u.QD, {
+    }), !t && (0, r.jsx)(u.GlowButtonRive, {
       className: o()(g.expressiveRive, g.expressiveHoverContainer),
       fit: "layout",
       artboard: a ? "HoverLightmode" : "HoverDarkmode"

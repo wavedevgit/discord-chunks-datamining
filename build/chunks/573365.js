@@ -51,10 +51,12 @@ let f = i.forwardRef(function(e, t) {
   let {
     status: n,
     buffer: i
-  } = (0, s.VG)(a.Z);
-  return n === s.Jt.Loading ? null : (0, r.jsx)(o.v, d(c({
+  } = (0, s.VG)(a.Z), l = (0, s.T3)(a.Z);
+  return n === s.Jt.Loading ? null : (0, r.jsx)(o.v, d(c(d(c({}, l ? {
+    key: "override"
+  } : {}), {
     buffer: i
-  }, e), {
+  }), e), {
     ref: t
   }))
 });

@@ -499,7 +499,7 @@ n.d(t, {
   snC: () => th.snC,
   svS: () => th.svS,
   t6m: () => th.t6m,
-  t7u: () => tE.t7,
+  t7u: () => tE.PerfTestRive,
   tBG: () => th.tBG,
   tEF: () => th.tEF,
   tEY: () => k.t,
@@ -574,7 +574,7 @@ n.d(t, {
   zGS: () => th.zGS,
   zH8: () => e6.zH,
   zJl: () => eT.zJ,
-  zLd: () => tE.zL,
+  zLd: () => tE.PulseGradientRive,
   zRq: () => th.zRq,
   ze6: () => e1.z,
   zxk: () => g.zx
