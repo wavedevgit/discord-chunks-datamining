@@ -60,7 +60,7 @@ let G = e => {
       [z, Y] = r.useState(!1),
       [W, K] = r.useState(!1),
       [q, X] = r.useState(!1),
-      [Q, J] = r.useState(!1),
+      [J, Q] = r.useState(!1),
       $ = (0, a.e7)([b.ZP], () => b.ZP.getPremiumTypeSubscription()),
       ee = null != $ ? (0, x.Af)($) : null,
       et = null != ee ? x.ZP.getSkuIdForPlan(ee.planId) : null,
@@ -84,7 +84,7 @@ let G = e => {
       location: em + " auto off",
       autoTrackExposure: !1
     }), r.useEffect(() => {
-      J(!0)
+      Q(!0)
     }, []);
     let eg = (0, i.jsx)("div", {
       className: U.premiumTierCardsContainerSettings,
@@ -174,7 +174,7 @@ let G = e => {
       }), (0, i.jsx)("div", {
         className: U.footerSpacing
       }), (0, i.jsx)(Z.Z, {
-        isVisible: !z && !W && Q,
+        isVisible: !z && !W && J,
         subscriptionTier: en,
         isApplicationHome: !1,
         isEligibleForBogoPromotion: eo

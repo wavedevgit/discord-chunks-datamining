@@ -58,11 +58,11 @@ let B = function(e) {
     K = (0, I.M5)(U, w.p9.TIER_2),
     q = (0, A.n)(),
     X = null == q ? void 0 : q.countryCode,
-    Q = (0, a.e7)([j.Z], () => null != U ? j.Z.getUserProfile(U.id) : null),
-    J = (0, a.e7)([N.Z], () => N.Z.hasFetched);
+    J = (0, a.e7)([j.Z], () => null != U ? j.Z.getUserProfile(U.id) : null),
+    Q = (0, a.e7)([N.Z], () => N.Z.hasFetched);
   return (r.useEffect(() => {
-    J || d.MH()
-  }, [J]), r.useEffect(() => {
+    Q || d.MH()
+  }, [Q]), r.useEffect(() => {
     c.Z.wait(async () => {
       let e = Date.now();
       await Promise.all([d.jg(), (0, u.X8)(), d.tZ(), (0, m.Y2)(X, null, k.JjL.DISCOVERY), null != V && K && (0, C.Z)(V)]), W.current = Date.now() - e, Y(!1)
@@ -74,7 +74,7 @@ let B = function(e) {
       location_stack: s,
       load_duration_ms: W.current
     })
-  }, [s, z]), (0, a.e7)([O.Z], () => O.Z.enabled)) ? (0, i.jsx)(g.Z, {}) : n ? (0, i.jsx)(_.c8, {}) : t === w.EZ.ApplicationStoreHome && K ? null == Q ? (0, i.jsx)("div", {
+  }, [s, z]), (0, a.e7)([O.Z], () => O.Z.enabled)) ? (0, i.jsx)(g.Z, {}) : n ? (0, i.jsx)(_.c8, {}) : t === w.EZ.ApplicationStoreHome && K ? null == J ? (0, i.jsx)("div", {
     className: l()(L.container, L.loading),
     children: (0, i.jsx)(o.$jN, {})
   }) : (0, i.jsx)(h.Gt, {

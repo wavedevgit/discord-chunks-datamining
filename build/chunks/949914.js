@@ -175,10 +175,10 @@ let L = e => {
       memberSince: K,
       nextRenewalDate: q,
       nextRenewalLabel: X,
-      isTrial: Q
-    } = j, J = n.soft_deleted || null == o || F, $ = () => z ? (0, i.jsx)(c.IGR, {
+      isTrial: J
+    } = j, Q = n.soft_deleted || null == o || F, $ = () => z ? (0, i.jsx)(c.IGR, {
       text: D.intl.string(D.t["7uFZGh"])
-    }) : Q ? (0, i.jsx)(c.IGR, {
+    }) : J ? (0, i.jsx)(c.IGR, {
       text: D.intl.string(D.t["6antoq"]),
       color: a.Z.BRAND_500
     }) : Y ? (0, i.jsx)(c.ua7, {
@@ -262,8 +262,8 @@ let L = e => {
           }), (0, i.jsx)(L, {
             label: D.intl.string(D.t.dltUMD),
             value: W,
-            showInfoIcon: Q,
-            infoIconTooltipText: Q ? D.intl.string(D.t["/q6fpa"]) : void 0
+            showInfoIcon: J,
+            infoIconTooltipText: J ? D.intl.string(D.t["/q6fpa"]) : void 0
           }), (0, i.jsx)(L, {
             label: D.intl.string(D.t.AOcwWF),
             value: K
@@ -276,8 +276,8 @@ let L = e => {
           }), (0, i.jsx)(B, {
             subscription: t
           })]
-        }), !J && (0, i.jsx)(M, {
-          isTrial: Q,
+        }), !Q && (0, i.jsx)(M, {
+          isTrial: J,
           isCancelled: z,
           isResubscribing: C,
           shouldHideRoleSubscriptionEntryPoints: G,

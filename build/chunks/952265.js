@@ -134,9 +134,10 @@ function v(e) {
       Layer: s,
       onCloseRequest: l,
       onCloseCallback: c,
-      backdropStyle: u
+      backdropStyle: u,
+      stackingBehavior: f = "replace"
     } = t,
-    f = null != r ? r : i()();
+    p = null != r ? r : i()();
   return (0, o.j)(() => {
     y.setState(t => {
       let r = t[n];
@@ -144,20 +145,21 @@ function v(e) {
         let {
           key: t
         } = e;
-        return t === f
+        return t === p
       }) ? t : _(d({}, t), {
         [n]: [...r, {
-          key: f,
+          key: p,
           Layer: s,
           render: e,
-          onCloseRequest: null != l ? l : () => I(f, n),
+          onCloseRequest: null != l ? l : () => I(p, n),
           onCloseCallback: c,
           instant: a,
-          backdropStyle: u
+          backdropStyle: u,
+          stackingBehavior: f
         }]
       })
     })
-  }), f
+  }), p
 }
 
 function I(e) {

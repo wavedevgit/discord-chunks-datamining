@@ -213,7 +213,7 @@ function W(e) {
       size: u.zxk.Sizes.SMALL,
       color: u.zxk.Colors.PRIMARY,
       "aria-label": V.intl.string(V.t.YXeWYG),
-      onClick: J,
+      onClick: Q,
       children: p ? V.intl.string(V.t["16kTw8"]) : V.intl.string(V.t.bt75u7)
     })]
   })
@@ -385,7 +385,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function J(e) {
   let {
     user: t
   } = e, n = (0, x.Z)({
@@ -419,7 +419,7 @@ function Q(e) {
   }) : null
 }
 
-function J() {
+function Q() {
   m.Z.setSection(B.oAB.PROFILE_CUSTOMIZATION)
 }
 
@@ -500,7 +500,7 @@ function ee() {
             user: t,
             className: G.userTag,
             discriminatorClass: G.discriminator
-          }), (0, i.jsx)(Q, {
+          }), (0, i.jsx)(J, {
             user: t
           })]
         }), (0, i.jsx)(N.Z, {
@@ -509,7 +509,7 @@ function ee() {
           badgeClassName: G.badge
         })]
       }), (0, i.jsx)(u.zxk, {
-        onClick: J,
+        onClick: Q,
         size: u.zxk.Sizes.SMALL,
         children: V.intl.string(V.t["2p2aY2"])
       })]

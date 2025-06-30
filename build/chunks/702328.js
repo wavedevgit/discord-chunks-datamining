@@ -54,8 +54,8 @@ let F = () => {
     Y = (0, m.ZP)(),
     W = (0, c.wj)(Y),
     [K, q] = r.useState(!1),
-    [X, Q] = r.useState(!1),
-    [J, $] = r.useState(!1),
+    [X, J] = r.useState(!1),
+    [Q, $] = r.useState(!1),
     [ee, et] = r.useState(!1),
     en = (0, j.rO)(),
     [ei, er] = r.useState(!1),
@@ -155,7 +155,7 @@ let F = () => {
         className: B.planComparisonTableApplicationHome
       })
     }), (0, i.jsx)(P.Z, {
-      isVisible: !K && !J && !X && ei,
+      isVisible: !K && !Q && !X && ei,
       subscriptionTier: eo,
       isApplicationHome: !0,
       isEligibleForBogoPromotion: ed
@@ -173,7 +173,7 @@ let F = () => {
     }), (0, i.jsx)(o.$, {
       innerRef: H,
       onChange: e => {
-        Q(e)
+        J(e)
       },
       children: (0, i.jsx)(D.Z, {
         ref: H,

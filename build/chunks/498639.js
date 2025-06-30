@@ -98,8 +98,8 @@ let w = function() {
     [W, K] = r.useState(""),
     [q, X] = r.useState(y.lds),
     {
-      balance: Q,
-      isFetching: J,
+      balance: J,
+      isFetching: Q,
       error: $
     } = (0, v.A)(),
     {
@@ -300,7 +300,7 @@ let w = function() {
           children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
             children: "Virtual Currency Balance:"
-          }), J ? (0, i.jsx)("div", {
+          }), Q ? (0, i.jsx)("div", {
             className: P.loader,
             children: (0, i.jsx)(o.$jN, {
               type: o.RAz.SPINNING_CIRCLE
@@ -311,7 +311,7 @@ let w = function() {
               variant: "text-sm/normal",
               children: ["Error fetching Virtual Currency Balance: ", $.message]
             }), (0, i.jsx)(T.A4, {
-              balance: null != Q ? Q : 0,
+              balance: null != J ? J : 0,
               balanceWidgetMode: T.b6.SELECTED
             })]
           })]

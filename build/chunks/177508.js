@@ -67,7 +67,7 @@ function D(e, t) {
 function Z() {
   return (0, i.jsxs)("div", {
     className: A.root,
-    children: [(0, i.jsx)(H, {}), (0, i.jsx)(X, {}), (0, i.jsx)(Q, {}), (0, i.jsx)(q, {}), (0, i.jsx)(K, {}), (0, i.jsx)(W, {}), (0, i.jsx)(Y, {}), (0, i.jsx)(er, {}), (0, i.jsx)(w, {}), (0, i.jsx)(es, {})]
+    children: [(0, i.jsx)(H, {}), (0, i.jsx)(X, {}), (0, i.jsx)(J, {}), (0, i.jsx)(q, {}), (0, i.jsx)(K, {}), (0, i.jsx)(W, {}), (0, i.jsx)(Y, {}), (0, i.jsx)(el, {}), (0, i.jsx)(w, {}), (0, i.jsx)(ea, {})]
   })
 }
 
@@ -876,7 +876,7 @@ function X() {
   })
 }
 
-function Q() {
+function J() {
   let [e, t] = r.useState(""), [n, s] = r.useState(""), [l, a] = r.useState("");
   return (0, i.jsxs)("div", {
     className: A.section,
@@ -935,7 +935,7 @@ function Q() {
   })
 }
 
-function J(e) {
+function Q(e) {
   let {
     transitionState: t
   } = e, [n, s] = r.useState(!1), [l, a] = r.useState(j.CgR.SMALL), [o, c] = r.useState(!1), d = n ? A.modalOutlines : "";
@@ -1009,6 +1009,92 @@ function J(e) {
 function $(e) {
   let {
     transitionState: t,
+    onClose: n,
+    modalCount: s = 1
+  } = e, [l, a] = r.useState("replace"), o = s < 3;
+  return (0, i.jsxs)(j.Y0X, {
+    transitionState: t,
+    size: 1 === s ? j.CgR.LARGE : 2 === s ? j.CgR.MEDIUM : j.CgR.SMALL,
+    parentComponent: "UserSettingsDesignSystem",
+    children: [(0, i.jsx)(j.xBx, {
+      children: (0, i.jsx)(j.X6q, {
+        variant: "heading-xl/semibold",
+        children: "Modal Stacking Demo"
+      })
+    }), (0, i.jsx)(j.hzk, {
+      children: (0, i.jsxs)(j.Kqy, {
+        gap: 16,
+        children: [(0, i.jsxs)(j.Text, {
+          variant: "text-md/medium",
+          children: ["This is modal level ", s, "."]
+        }), o && (0, i.jsx)(j.xJW, {
+          title: "Stacking Behavior",
+          children: (0, i.jsx)(j.q4e, {
+            value: l,
+            onChange: a,
+            options: [{
+              label: "Replace (default)",
+              value: "replace"
+            }, {
+              label: "Stack",
+              value: "stack"
+            }, {
+              label: "Replace All",
+              value: "replaceAll"
+            }]
+          })
+        }), (0, i.jsxs)(j.Kqy, {
+          gap: 8,
+          children: [(0, i.jsxs)(j.Text, {
+            variant: "text-sm/normal",
+            color: "text-muted",
+            children: [(0, i.jsx)("strong", {
+              children: "Replace One:"
+            }), " The modal directly below is hidden (default behavior)"]
+          }), (0, i.jsxs)(j.Text, {
+            variant: "text-sm/normal",
+            color: "text-muted",
+            children: [(0, i.jsx)("strong", {
+              children: "Replace All:"
+            }), " All modals below are hidden"]
+          }), (0, i.jsxs)(j.Text, {
+            variant: "text-sm/normal",
+            color: "text-muted",
+            children: [(0, i.jsx)("strong", {
+              children: "Stack:"
+            }), " The modal directly below remains visible"]
+          })]
+        })]
+      })
+    }), (0, i.jsx)(j.mzw, {
+      children: (0, i.jsxs)(j.Kqy, {
+        direction: "horizontal",
+        justify: "end",
+        gap: 8,
+        children: [(0, i.jsx)(j.zxk, {
+          color: j.zxk.Colors.PRIMARY,
+          look: j.zxk.Looks.FILLED,
+          onClick: n,
+          children: "Close"
+        }), o && (0, i.jsx)(j.zxk, {
+          onClick: () => {
+            let e = s + 1;
+            (0, j.h7j)(t => (0, i.jsx)($, D(R({}, t), {
+              modalCount: e
+            })), {
+              stackingBehavior: l
+            })
+          },
+          children: "Open Next Modal"
+        })]
+      })
+    })]
+  })
+}
+
+function ee(e) {
+  let {
+    transitionState: t,
     onClose: n
   } = e;
 
@@ -1072,7 +1158,7 @@ function $(e) {
   })
 }
 
-function ee(e) {
+function et(e) {
   let {
     transitionState: t,
     onClose: n
@@ -1196,7 +1282,7 @@ function ee(e) {
   })
 }
 
-function et(e) {
+function en(e) {
   let {
     transitionState: t,
     onClose: n
@@ -1288,7 +1374,7 @@ function et(e) {
   })
 }
 
-function en(e) {
+function ei(e) {
   let {
     transitionState: t,
     onClose: n
@@ -1311,7 +1397,7 @@ function en(e) {
   })
 }
 
-function ei(e) {
+function er(e) {
   let {
     transitionState: t,
     onClose: n
@@ -1334,7 +1420,79 @@ function ei(e) {
   })
 }
 
-function er() {
+function es(e) {
+  let {
+    transitionState: t,
+    onClose: n,
+    modalCount: s = 1
+  } = e, [l, a] = r.useState("replace"), o = s < 3;
+  return (0, i.jsx)(b.u, {
+    transitionState: t,
+    onClose: n,
+    size: 1 === s ? "md" : "sm",
+    title: "Mana Modal Stacking Demo",
+    headerBody: "This is modal level ".concat(s, "."),
+    actions: [{
+      variant: "secondary",
+      text: "Close",
+      onClick: n
+    }, ...o ? [{
+      variant: "primary",
+      text: "Open Next Modal",
+      onClick: () => {
+        let e = s + 1;
+        (0, j.h7j)(t => (0, i.jsx)(es, D(R({}, t), {
+          modalCount: e
+        })), {
+          stackingBehavior: l
+        })
+      }
+    }] : []],
+    children: (0, i.jsxs)(j.Kqy, {
+      gap: 16,
+      children: [o && (0, i.jsx)(j.xJW, {
+        title: "Stacking Behavior",
+        children: (0, i.jsx)(j.q4e, {
+          value: l,
+          onChange: a,
+          options: [{
+            label: "Replace (default)",
+            value: "replace"
+          }, {
+            label: "Stack",
+            value: "stack"
+          }, {
+            label: "Replace All",
+            value: "replaceAll"
+          }]
+        })
+      }), (0, i.jsxs)(j.Kqy, {
+        gap: 8,
+        children: [(0, i.jsxs)(j.Text, {
+          variant: "text-sm/normal",
+          color: "text-muted",
+          children: [(0, i.jsx)("strong", {
+            children: "Replace One:"
+          }), " The modal directly below is hidden (default behavior)"]
+        }), (0, i.jsxs)(j.Text, {
+          variant: "text-sm/normal",
+          color: "text-muted",
+          children: [(0, i.jsx)("strong", {
+            children: "Replace All:"
+          }), " All modals below are hidden"]
+        }), (0, i.jsxs)(j.Text, {
+          variant: "text-sm/normal",
+          color: "text-muted",
+          children: [(0, i.jsx)("strong", {
+            children: "Stack:"
+          }), " The modal directly below remains visible"]
+        })]
+      })]
+    })
+  })
+}
+
+function el() {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: A.section,
@@ -1343,7 +1501,7 @@ function er() {
         children: "Modals (Void)"
       }), (0, i.jsx)(j.zxk, {
         onClick: () => {
-          (0, j.h7j)(e => (0, i.jsx)(J, R({}, e)))
+          (0, j.h7j)(e => (0, i.jsx)(Q, R({}, e)))
         },
         children: "Open modal"
       }), (0, i.jsx)(j.zxk, {
@@ -1356,6 +1514,11 @@ function er() {
           })
         },
         children: "Show Alert"
+      }), (0, i.jsx)(j.zxk, {
+        onClick: () => {
+          (0, j.h7j)(e => (0, i.jsx)($, R({}, e)))
+        },
+        children: "Open modal stacking demo"
       })]
     }), (0, i.jsxs)("div", {
       className: A.section,
@@ -1364,35 +1527,40 @@ function er() {
         children: "Modals (Mana)"
       }), (0, i.jsx)(j.zxk, {
         onClick: () => {
-          (0, j.h7j)(e => (0, i.jsx)($, R({}, e)))
+          (0, j.h7j)(e => (0, i.jsx)(ee, R({}, e)))
         },
         children: "Open modal section visualizer"
       }), (0, i.jsx)(j.zxk, {
         onClick: () => {
-          (0, j.h7j)(e => (0, i.jsx)(ee, R({}, e)))
+          (0, j.h7j)(e => (0, i.jsx)(et, R({}, e)))
         },
         children: "Open demo modal"
       }), (0, i.jsx)(j.zxk, {
         onClick: () => {
-          (0, j.h7j)(e => (0, i.jsx)(et, R({}, e)))
+          (0, j.h7j)(e => (0, i.jsx)(en, R({}, e)))
         },
         children: "Open sample invite modal"
       }), (0, i.jsx)(j.zxk, {
         onClick: () => {
-          (0, j.h7j)(e => (0, i.jsx)(en, R({}, e)))
+          (0, j.h7j)(e => (0, i.jsx)(ei, R({}, e)))
         },
         children: "Open sample alert modal"
       }), (0, i.jsx)(j.zxk, {
         onClick: () => {
-          (0, j.h7j)(e => (0, i.jsx)(ei, R({}, e)))
+          (0, j.h7j)(e => (0, i.jsx)(er, R({}, e)))
         },
         children: "Open expressive modal"
+      }), (0, i.jsx)(j.zxk, {
+        onClick: () => {
+          (0, j.h7j)(e => (0, i.jsx)(es, R({}, e)))
+        },
+        children: "Open Mana modal stacking demo"
       })]
     })]
   })
 }
 
-function es() {
+function ea() {
   let e = (0, c.e7)([O.Z], () => O.Z.gradientPreset);
   return (0, i.jsx)(j.f6W, {
     theme: y.BR.DARKER,
