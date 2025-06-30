@@ -76,7 +76,7 @@ function j(e) {
         if (!O.has(e)) return !1;
       let i = t.includes("guild_size_all"),
         a = !0;
-      for (let o of Object.values(u.Z.getGuilds())) {
+      for (let o of u.Z.getGuildsArray()) {
         if (i || t.includes("guild_size")) {
           let e = c.Z.getMemberCount(o.id);
           if (null == e || null != n[0] && e < n[0] || null != n[1] && e > n[1]) {

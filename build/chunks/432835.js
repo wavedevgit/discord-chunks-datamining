@@ -1,14 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => u
+  Z: () => c
 });
 var r = n(259443),
-  i = n(570140),
-  a = n(845856),
-  o = n(894276);
+  i = n(845856),
+  a = n(894276);
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -16,15 +15,14 @@ function s(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let l = new r.Yd("NoteStore");
-class c extends a.f {
+let s = new r.Yd("NoteStore");
+class l extends i.fE {
   getNote(e) {
-    var t;
-    return null != (t = this.kv[e]) ? t : null
+    return this.get(e)
   }
 }
-s(c, "displayName", "NoteStore"), l.info("libdiscore enabled: ".concat(o.I.cachedIsEnabled()));
-let u = new c(i.Z, o.I.cachedIsEnabled() ? void 0 : e => ({
+o(l, "displayName", "NoteStore"), s.info("libdiscore enabled: ".concat(a.I.cachedIsEnabled()));
+let c = new l(a.I.cachedIsEnabled() ? void 0 : e => ({
   CONNECTION_OPEN: () => e.reset(),
   OVERLAY_INITIALIZE: () => e.reset(),
   USER_NOTE_UPDATE: t => {

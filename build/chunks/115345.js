@@ -82,7 +82,7 @@ function j(e, t) {
 function U(e, t) {
   let [n, i] = r.useState(R.nf), [a, s] = r.useState({});
   (0, _.D)();
-  let l = (0, o.Wu)([g.Z], () => Object.values(g.Z.getGuilds())),
+  let l = (0, o.Wu)([g.Z], () => g.Z.getGuildsArray()),
     c = r.useCallback(() => {
       let r = {};
       for (let i of l) r[i.id] = V(i, n, e, t, a[i.id]);
@@ -102,14 +102,14 @@ function U(e, t) {
 }
 
 function G(e, t) {
-  return Object.values(g.Z.getGuilds()).some(n => {
+  return g.Z.getGuildsArray().some(n => {
     let [r] = p.Z.hasConsented(P.pjP.PERSONALIZATION) ? (0, N.q)(n, R.nf, e, t, !1) : (0, N.A)(n, e);
     return r === R.AR.UseGreyDot
   })
 }
 
 function B() {
-  let e = Object.values(g.Z.getGuilds()),
+  let e = g.Z.getGuildsArray(),
     t = {};
   for (let i of e) {
     var n, r;
@@ -292,7 +292,7 @@ function q() {
 }
 async function X() {
   s.K.set("turnedOffNewNotifications", !0), y.default.track(P.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
-    num_guilds_with_new_setting: Object.values(g.Z.getGuilds()).filter(e => b.ZP.resolveGuildUnreadSetting(e) === w.i.ONLY_MENTIONS).length
+    num_guilds_with_new_setting: g.Z.getGuildsArray().filter(e => b.ZP.resolveGuildUnreadSetting(e) === w.i.ONLY_MENTIONS).length
   });
   let e = await (0, S.Tn)(),
     t = a().sortBy(e, e => new Date(e.recorded_at).getTime());

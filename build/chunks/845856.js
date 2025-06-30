@@ -1,11 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  f: () => a
-});
-var r = n(442837);
+  fE: () => f
+}), n(953529);
+var r = n(442837),
+  i = n(570140);
 
-function i(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -13,21 +14,70 @@ function i(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class a extends r.yh {
-  setKv(e) {
-    this.kv = e
+let o = Symbol("setKv"),
+  s = Symbol("setMetadata"),
+  l = Object.prototype.hasOwnProperty,
+  c = Symbol("version"),
+  u = o,
+  d = s;
+class f extends r.yh {
+  memoized(e) {
+    let t = Symbol();
+    return () => {
+      let {
+        memoized: n
+      } = this.derived;
+      if (l.call(n, t)) return n[t];
+      let r = e(this.root);
+      return n[t] = r, r
+    }
   }
-  constructor(e, t) {
-    super(e, null == t ? void 0 : t({
-      reset: () => {
-        this.setKv({})
+  version() {
+    let e = this.derived.memoized[c];
+    return null == e && (this.derived.memoized[c] = e = ++this.nextVersion), e
+  }
+  get(e) {
+    return this.root[e]
+  } [u](e, t) {
+    this.root = e, this.derived = t
+  } [d](e) {
+    this.derived = e
+  }
+  length() {
+    return this.derived.length
+  }
+  constructor(e) {
+    super(i.Z, null == e ? void 0 : e({
+      reset: e => {
+        let t = {};
+        "function" == typeof e ? e(t = {}, this.root) : null != e && (t = e), this[o](t, {
+          length: null == e ? 0 : Object.keys(t).length,
+          memoized: {}
+        })
       },
+      get: e => this.root[e],
       set: (e, t) => {
-        this.kv[e] = t
+        let n = l.call(this.root, e);
+        "function" == typeof t && (t = t(this.root[e])), this.root[e] = t;
+        let {
+          derived: r
+        } = this;
+        !n && r.length++, r.memoized = {}
       },
       remove: e => {
-        delete this.kv[e]
+        let t = l.call(this.root, e);
+        if (t) {
+          delete this.root[e];
+          let {
+            derived: t
+          } = this;
+          t.length--, t.memoized = {}
+        }
+        return t
       }
-    })), i(this, "actionsHandledByLibdiscore", void 0), i(this, "kv", {}), this.actionsHandledByLibdiscore = null == t
+    })), a(this, "actionsHandledByLibdiscore", void 0), a(this, "derived", {
+      length: 0,
+      memoized: {}
+    }), a(this, "nextVersion", 0), a(this, "root", {}), this.actionsHandledByLibdiscore = null == e
   }
 }

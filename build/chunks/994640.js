@@ -24,8 +24,8 @@ let g = (0, d.hQ)(),
       setEmail: d,
       setGuildId: f,
       invite: N,
-      onClose: v,
-      isNUXFlow: p
+      onClose: p,
+      isNUXFlow: v
     } = e, [E, S] = i.useState(null), [I, j] = i.useState(!1), y = async e => {
       e.preventDefault(), S(null), j(!0);
       try {
@@ -41,7 +41,7 @@ let g = (0, d.hQ)(),
         j(!1)
       }
     }, C = h.intl.string(h.t.H1jCHB), T = h.intl.string(h.t.YfeHRE);
-    if (p) C = h.intl.string(h.t.LVyxND), T = h.intl.string(h.t.ECd7Rk);
+    if (v) C = h.intl.string(h.t.LVyxND), T = h.intl.string(h.t.ECd7Rk);
     else if ((null == N ? void 0 : N.guild) != null && N.guild.id !== m.fQ && (null == N ? void 0 : N.approximate_member_count) != null) {
       let {
         name: e
@@ -102,9 +102,9 @@ let g = (0, d.hQ)(),
             termsURL: x.EYA.TERMS,
             privacyURL: x.EYA.PRIVACY
           })
-        }), p && (0, l.jsx)(a.zxk, {
+        }), v && (0, l.jsx)(a.zxk, {
           look: a.zxk.Looks.LINK,
-          onClick: v,
+          onClick: p,
           className: _.cancelButton,
           children: h.intl.string(h.t.hO6qJy)
         })]

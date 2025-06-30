@@ -534,16 +534,16 @@ let eK = (0, W.oH)((e, t, n) => {
         fuzzy: r = !0,
         filter: i = eA,
         boosters: a = {}
-      } = e, o = "" === t ? "" : t.toLocaleLowerCase(), l = {
+      } = e, o = "" === t ? "" : t.toLocaleLowerCase(), s = {
         exactQuery: RegExp("^".concat(X.Z.escape(o)), "i"),
         containQuery: RegExp(X.Z.escape(o), "i"),
         queryLower: o
-      }, c = [];
-      for (let e of s()(j.Z.getGuilds()).values().value()) {
+      }, l = [];
+      for (let e of j.Z.getGuildsArray()) {
         if (!i(e)) continue;
         let t = e.name.toLocaleLowerCase(),
-          n = eM(t, l, r);
-        n > 0 && c.push({
+          n = eM(t, s, r);
+        n > 0 && l.push({
           type: et.h8.GUILD,
           record: e,
           score: eD(n, a[e.id]),
@@ -551,7 +551,7 @@ let eK = (0, W.oH)((e, t, n) => {
           sortable: t
         })
       }
-      return c.sort(d.Z), c.length > n && (c.length = n), c
+      return l.sort(d.Z), l.length > n && (l.length = n), l
     },
     queryDMChannels(e) {
       let {

@@ -22,17 +22,17 @@ let f = (0, m.hQ)(),
       email: t,
       guildId: n,
       onClose: r
-    } = e, [a, m] = i.useState(""), [N, v] = i.useState(null), p = i.useCallback(async () => {
+    } = e, [a, m] = i.useState(""), [N, p] = i.useState(null), v = i.useCallback(async () => {
       if (null != n) try {
         let e = await d.Z.verifyCode(a, n, t);
         e.guild && (null == r || r(), (0, x.uL)(h.Z5c.CHANNEL(e.guild.id)))
       } catch (e) {
-        v(new u.Hx(e))
+        p(new u.Hx(e))
       }
     }, [a, t, n, r]), E = o().throttle(() => {
       d.Z.sendVerificationEmail(t, !0, n)
     }, 1e3), S = async e => {
-      null != a && "" !== a && e.charCode === h.yXg.ENTER && await p()
+      null != a && "" !== a && e.charCode === h.yXg.ENTER && await v()
     };
     return (0, l.jsxs)("div", {
       className: g.container,
@@ -68,7 +68,7 @@ let f = (0, m.hQ)(),
         })]
       }), (0, l.jsx)(c.zxk, {
         fullWidth: !0,
-        onClick: p,
+        onClick: v,
         size: c.zxk.Sizes.LARGE,
         color: c.zxk.Colors.BRAND,
         children: (0, l.jsx)(c.Text, {

@@ -3,7 +3,7 @@
 let r;
 n.d(t, {
   ZP: () => H
-}), n(415506), n(388685), n(539854);
+}), n(388685), n(415506), n(539854);
 var i = n(348327),
   a = n.n(i),
   o = n(512722),
@@ -51,7 +51,7 @@ function I(e, t) {
 let T = new c.g8;
 
 function S(e, t) {
-  for (let n in g.Z.getGuilds()) !e(n) || u.Z.isLurking(n) || m.ZP.isCurrentUserGuest(n) || t(n)
+  for (let n of g.Z.getGuildIds()) !e(n) || u.Z.isLurking(n) || m.ZP.isCurrentUserGuest(n) || t(n)
 }
 
 function A(e) {

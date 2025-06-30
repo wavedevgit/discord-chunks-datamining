@@ -49,7 +49,7 @@ function v(e) {
 
 function I(e) {
   let t = !1;
-  return delete E[e], g === e && (g = null, t = !0), m === e && (Object.values(f.Z.getGuilds()).find(t => t.id !== e), m = null, (0, c.dL)(_.Z5c.ME), t = !0), t
+  return delete E[e], g === e && (g = null, t = !0), m === e && (f.Z.getGuildsArray().find(t => t.id !== e), m = null, (0, c.dL)(_.Z5c.ME), t = !0), t
 }
 
 function T(e) {

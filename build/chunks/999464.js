@@ -22,14 +22,14 @@ let _ = (0, d.hQ)(),
       onBack: r,
       school: d,
       setSchool: g
-    } = e, [f, N] = i.useState(null), [v, p] = i.useState(!1), E = async () => {
-      N(null), p(!0);
+    } = e, [f, N] = i.useState(null), [p, v] = i.useState(!1), E = async () => {
+      N(null), v(!0);
       try {
         await o.Z.signup(t, d), n(u.tF.EMAIL_WAITLIST)
       } catch (e) {
         N(new c.Hx(e))
       } finally {
-        p(!1)
+        v(!1)
       }
     }, S = async e => {
       null != d && "" !== d && e.charCode === m.yXg.ENTER && await E()
@@ -78,7 +78,7 @@ let _ = (0, d.hQ)(),
           size: a.zxk.Sizes.MEDIUM,
           color: a.zxk.Colors.BRAND,
           className: h.__invalid_submitButton,
-          submitting: v,
+          submitting: p,
           children: x.intl.string(x.t.PDsYAg)
         })]
       })]

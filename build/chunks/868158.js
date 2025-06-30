@@ -191,7 +191,7 @@ function M(e) {
 
 function j(e) {
   null != s.Z.database() && !1 === e.databaseOk && d.Z.replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok"), N = {};
-  let t = Object.values(E.Z.getGuilds()),
+  let t = E.Z.getGuildsArray(),
     n = p.ZP.getGuilds(),
     r = h.Z.getRawStickersByGuild();
   for (let s of t) {

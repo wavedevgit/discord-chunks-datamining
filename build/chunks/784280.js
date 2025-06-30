@@ -37,7 +37,7 @@ function g(e) {
     }
   }, {
     transitionState: N
-  } = e, j = Object.values(u.Z.getGuilds()).filter(e => e.id !== t && e.hasFeature(b.oNc.HUB)).length > 0, S = !v && !j && (null == a ? void 0 : a.hasFeature(b.oNc.HUB)) && (0, f.b)();
+  } = e, j = u.Z.getGuildsArray().filter(e => e.id !== t && e.hasFeature(b.oNc.HUB)).length > 0, S = !v && !j && (null == a ? void 0 : a.hasFeature(b.oNc.HUB)) && (0, f.b)();
   return r.useEffect(() => {
     S && k(window.innerWidth / 2, window.innerHeight / 2)
   }, [k, S]), (0, n.jsxs)(i.Y0X, {

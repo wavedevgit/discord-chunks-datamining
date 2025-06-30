@@ -293,7 +293,7 @@ function W(e) {
     currentVoiceChannel: o,
     onClose: l,
     onSelect: c
-  } = e, u = (0, a.Wu)([_.Z, E.ZP, j.Z, I.Z, x.Z], () => Object.values(_.Z.getGuilds()).reduce((e, t) => [...e, ...E.ZP.getChannels(t.id)[E.Zb].filter(e => x.Z.can(w.Plq.VIEW_CHANNEL, e.channel) && x.Z.can(w.Plq.CONNECT, e.channel)).map(e => {
+  } = e, u = (0, a.Wu)([_.Z, E.ZP, j.Z, I.Z, x.Z], () => _.Z.getGuildsArray().reduce((e, t) => [...e, ...E.ZP.getChannels(t.id)[E.Zb].filter(e => x.Z.can(w.Plq.VIEW_CHANNEL, e.channel) && x.Z.can(w.Plq.CONNECT, e.channel)).map(e => {
     let {
       channel: t
     } = e;

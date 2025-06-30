@@ -63,9 +63,9 @@ function j(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, s = (0, l.e7)([p.Z], () => p.Z.getGuilds()), j = i.useMemo(() => Object.values(s), [s]), E = (0, l.e7)([f.default], () => f.default.getCurrentUser()), S = i.useMemo(() => j.some(e => e.isOwner(E)), [j, E]), x = (0, o.s9z)(e => (0, o.DEQ)(e, _.PU)), {
-    analyticsLocations: I
-  } = (0, a.ZP)(), P = (0, r.jsx)(m.Z, {
+  } = e, s = (0, l.Wu)([p.Z], () => p.Z.getGuildsArray()), j = (0, l.e7)([f.default], () => f.default.getCurrentUser()), E = i.useMemo(() => s.some(e => e.isOwner(j)), [s, j]), S = (0, o.s9z)(e => (0, o.DEQ)(e, _.PU)), {
+    analyticsLocations: x
+  } = (0, a.ZP)(), I = (0, r.jsx)(m.Z, {
     showPill: !1,
     id: "create-join-button",
     onClick: () => {
@@ -77,23 +77,23 @@ function j(e) {
           page: b.Sbl.CREATE_JOIN_GUILD_MODAL,
           section: b.jXE.GUILD_CAP_UPSELL_MODAL
         },
-        analyticsLocations: I
+        analyticsLocations: x
       }) : c.Z.openCreateGuildModal({
         location: "Guild List"
       })
     },
-    selected: x,
+    selected: S,
     onContextMenu: C,
     tooltip: O.intl.string(O.t.l5WIbW),
     icon: o.oFk
   });
-  return t ? P : (0, r.jsx)("div", {
+  return t ? I : (0, r.jsx)("div", {
     className: y.tutorialContainer,
     children: (0, r.jsxs)(h.Z, {
-      tutorialId: S ? "create-more-servers" : "create-first-server",
+      tutorialId: E ? "create-more-servers" : "create-first-server",
       inlineSpecs: v,
       position: "right",
-      children: [P, null != n && (0, r.jsx)(g.ZP, {
+      children: [I, null != n && (0, r.jsx)(g.ZP, {
         name: O.intl.string(O.t["45xjMz"]),
         targetNode: n,
         below: !0,

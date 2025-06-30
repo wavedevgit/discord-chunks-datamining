@@ -78,9 +78,9 @@ function Z(e) {
   }) : null
 }
 let w = function() {
-  let [e, t] = r.useState(A.Si.TIER_2), [n, _] = r.useState(null), [x] = (0, a.Wu)([I.Z], () => [I.Z.getGuilds()]), [w] = (0, a.Wu)([N.ZP], () => [N.ZP.getPremiumSubscription()]);
+  let [e, t] = r.useState(A.Si.TIER_2), [n, _] = r.useState(null), x = (0, a.Wu)([I.Z], () => I.Z.getGuildsArray()), [w] = (0, a.Wu)([N.ZP], () => [N.ZP.getPremiumSubscription()]);
   (0, S.t)();
-  let k = Object.values(x).map(e => ({
+  let k = x.map(e => ({
       value: e,
       label: e.name
     })),

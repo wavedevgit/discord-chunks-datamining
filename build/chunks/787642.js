@@ -43,7 +43,7 @@ function _(e, t, n) {
 }
 
 function E() {
-  let e = Object.values(c.Z.getGuilds()).filter(e => e.hasFeature(h.oNc.HUB)),
+  let e = c.Z.getGuildsArray().filter(e => e.hasFeature(h.oNc.HUB)),
     t = e => {
       u.default.track(h.rMx.ADD_FRIEND_OTHER_PLACES_HUB_CLICKED, {
         guild_id: e

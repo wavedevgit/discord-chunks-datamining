@@ -146,18 +146,16 @@ function T(e) {
 
 function S() {
   if (!g()) return;
-  let e = [],
-    t = s.Z.getGuilds();
-  for (let n in t) e.push(I(t[n]));
-  let n = [],
-    r = o.Z.getMutablePrivateChannels();
-  for (let e in r) {
-    let t = r[e];
-    n.push(O(t))
+  let e = s.Z.getGuildsArray().map(e => I(e)),
+    t = [],
+    n = o.Z.getMutablePrivateChannels();
+  for (let e in n) {
+    let r = n[e];
+    t.push(O(r))
   }
   e.push({
     id: h.ME,
-    items: n
+    items: t
   }), _.Z.indexDomains(e)
 }
 

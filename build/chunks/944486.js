@@ -112,12 +112,12 @@ function H(e) {
 
 function Y() {
   let e = !1,
-    t = I.Z.getGuilds();
+    t = I.Z.getGuildsArray();
   return f().each(M, (t, n) => {
     null != t && (O.Z.hasChannel(t) || t === a || G.has(t) || (0, C.ME)(t)) || (delete M[n], delete j[n], e = !0)
   }), f().each(U, (t, n) => {
     null != t && (O.Z.hasChannel(t) || G.has(t)) || (delete U[n], e = !0)
-  }), f().each(t, e => {
+  }), t.forEach(e => {
     let t = M[e.id];
     null == U[e.id] && Z(e.id, t)
   }), null != l && Date.now() - l >= x && (s = null, e = !0), e

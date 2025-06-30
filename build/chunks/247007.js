@@ -18,9 +18,9 @@ var l = n(255367),
   g = n(888592),
   f = n(388032),
   N = n(593673),
-  v = n(216019);
+  p = n(216019);
 
-function p(e) {
+function v(e) {
   var t;
   let {
     guildInfo: n,
@@ -53,7 +53,7 @@ function p(e) {
     }) : (0, l.jsx)("img", {
       className: N.__invalid_arrow,
       alt: "",
-      src: v
+      src: p
     })]
   })
 }
@@ -64,7 +64,7 @@ let E = e => {
     guildsInfo: r,
     setGuildId: a,
     forceGuildScrollHeight: m
-  } = e, [x, h] = i.useState(null), [_, v] = i.useState(void 0), [E, S] = i.useState(null), I = e => async () => {
+  } = e, [x, h] = i.useState(null), [_, p] = i.useState(void 0), [E, S] = i.useState(null), I = e => async () => {
     h(null), a(e), S(e);
     try {
       await d.Z.sendVerificationEmail(n, !0, e), t(g.tF.VERIFY_PIN)
@@ -103,12 +103,12 @@ let E = e => {
           searchIconClassName: N.searchBoxIcon,
           closeIconClassName: N.searchBoxIcon,
           onChange: e => {
-            v(e)
+            p(e)
           },
           label: f.intl.string(f.t["5h0QOD"]),
           searchTerm: _,
           onClear: () => {
-            v(void 0)
+            p(void 0)
           }
         }), (0, l.jsx)(c.Text, {
           color: "text-danger",
@@ -117,7 +117,7 @@ let E = e => {
         })]
       }), y.length > 0 ? (0, l.jsx)(c.zJl, {
         className: N.scroller,
-        children: y.map(e => void 0 === e ? null : (0, l.jsx)(p, {
+        children: y.map(e => void 0 === e ? null : (0, l.jsx)(v, {
           guildInfo: e,
           onClick: I(e.id),
           submitting: E === e.id

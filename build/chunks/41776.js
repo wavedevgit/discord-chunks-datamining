@@ -113,7 +113,7 @@ function I(e) {
 }
 
 function T() {
-  d = Object.values(s.Z.getGuilds()).reduce((e, t) => t.isLurker() ? [...e, t.id] : e, [])
+  d = s.Z.getGuildsArray().filter(e => e.isLurker()).map(e => e.id)
 }
 class S extends(r = i.ZP.Store) {
   initialize() {

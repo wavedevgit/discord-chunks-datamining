@@ -26,7 +26,7 @@ function p(e, t, n) {
 let h = +l.Z.Millis.DAY;
 class m extends i.Z {
   checkGuilds() {
-    s.ZP.useNewNotifications && Object.values(o.Z.getGuilds()).forEach(e => {
+    s.ZP.useNewNotifications && o.Z.getGuildsArray().forEach(e => {
       if (null == e.joinedAt || Date.now() - e.joinedAt.getTime() > h || s.ZP.getMessageNotifications(e.id) === f.bL.ALL_MESSAGES) return;
       for (let t of Object.values(s.ZP.getChannelOverrides(e.id)))
         if (null != t.message_notifications && t.message_notifications !== f.bL.NULL || null != t.flags && (0, c.EB)(t.flags, _.ic.UNREADS_ALL_MESSAGES | _.ic.UNREADS_ONLY_MENTIONS)) return;

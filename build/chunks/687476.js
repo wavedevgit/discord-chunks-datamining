@@ -53,9 +53,9 @@ function O(e) {
 }
 
 function v() {
-  let e = c.Z.getGuilds(),
+  let e = c.Z.getGuildsArray(),
     t = new Set;
-  for (let n in e) e[n].hasFeature(f.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && t.add(n);
+  for (let n of e) n.hasFeature(f.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && t.add(n.id);
   return b = t, t
 }
 

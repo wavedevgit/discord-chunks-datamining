@@ -28,7 +28,7 @@ function g(e, t, n) {
 }
 class E extends a.Z {
   findEligibleGuild() {
-    let e = Object.values(l.Z.getGuilds()),
+    let e = l.Z.getGuildsArray(),
       t = u.default.getCurrentUser();
     return e.find(e => {
       let n = (0, f.gV)(e.id, "guild_powerups_system_message"),

@@ -184,7 +184,7 @@ function x(e) {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
   })), [j, C] = (0, a.Wu)([m.Z, u.Z], () => {
-    let e = l().sortBy(l().values(m.Z.getGuilds()), e => e.name.toLowerCase()),
+    let e = l().sortBy(m.Z.getGuildsArray(), e => e.name.toLowerCase()),
       t = {},
       i = [];
     for (let s of e) {
