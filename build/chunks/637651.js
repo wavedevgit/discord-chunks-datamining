@@ -1,2 +1,2 @@
 /** Chunk was on 91269 **/
-e.exports = JSON.parse('{"+utqa2":["Bakgrundsval f\xf6r g\xe5va: ",[1,"giftStyle"]],"B9XqQk":"L\xe5da","AJ4iio":"T\xe5rta","P5keo6":"Kista","w84vER":"Kaffe","6dCq/v":"Kopp","+HMF8v":"Nitroween","vd1fu7":"Semesterl\xe5da","aubYGR":"Semestert\xe5rta","vjxYqa":"Semesterkista","bHuJLS":"Semesterkaffe","M6cPwM":"Sn\xf6glob","GzPel5":"L\xe5da"}')
+a.exports = JSON.parse('{"+utqa2":["Bakgrundsval f\xf6r g\xe5va: ",[1,"giftStyle"]],"B9XqQk":"L\xe5da","AJ4iio":"T\xe5rta","P5keo6":"Kista","w84vER":"Kaffe","6dCq/v":"Kopp","+HMF8v":"Nitroween","vd1fu7":"H\xf6gtidsl\xe5da","aubYGR":"H\xf6gtidst\xe5rta","vjxYqa":"H\xf6gtidskista","bHuJLS":"H\xf6gtidskaffe","M6cPwM":"Sn\xf6glob","GzPel5":"L\xe5da"}')

@@ -1,2 +1,2 @@
 /** Chunk was on 71448 **/
-e.exports = JSON.parse('{"+utqa2":["Gavebakgrunnsvalg: ",[1,"giftStyle"]],"B9XqQk":"Eske","AJ4iio":"Kake","P5keo6":"Kiste","w84vER":"Kaffe","6dCq/v":"Kopp","+HMF8v":"Nitroween","vd1fu7":"Festeske","aubYGR":"Festkake","vjxYqa":"Festkiste","bHuJLS":"Festkaffe","M6cPwM":"Sn\xf8kule","GzPel5":"Eske"}')
+e.exports = JSON.parse('{"+utqa2":["Gavebakgrunnsvalg: ",[1,"giftStyle"]],"B9XqQk":"Eske","AJ4iio":"Kake","P5keo6":"Kiste","w84vER":"Kaffe","6dCq/v":"Kopp","+HMF8v":"Nitroween","vd1fu7":"Juleeske","aubYGR":"Julebakst","vjxYqa":"Julekiste","bHuJLS":"Julekaffe","M6cPwM":"Sn\xf8kule","GzPel5":"Eske"}')
