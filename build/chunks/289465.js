@@ -27,8 +27,7 @@ function s(e) {
         [a.inModal]: s
       }),
       children: [(0, r.jsx)(o.Text, {
-        variant: "text-xs/semibold",
-        className: a.title,
+        variant: "text-sm/semibold",
         children: c
       }), (0, r.jsx)("div", {
         children: t

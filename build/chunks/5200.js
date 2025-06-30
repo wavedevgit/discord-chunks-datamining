@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r, i = n(255367),
   l = n(73800),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(695469),
   c = n(481060),
   u = n(542094),
@@ -27,7 +27,7 @@ function C(e) {
   let {
     context: n,
     activityItem: r,
-    onClick: a,
+    onClick: o,
     aspectRatio: y = 0,
     animatedDivClass: C,
     commandOrigin: x
@@ -41,7 +41,7 @@ function C(e) {
     activityItem: r,
     guildId: null != (t = n.channel.getGuildId()) ? t : void 0,
     locationObject: {},
-    onActivityItemSelected: a,
+    onActivityItemSelected: o,
     embeddedActivitiesManager: h.Z,
     assetNames: b,
     commandOrigin: x
@@ -75,7 +75,7 @@ function C(e) {
         return (0, i.jsx)("div", {
           className: g.activityAction,
           children: (0, i.jsx)("div", {
-            className: o()(g.activityActionButton, g.activityActionButtonDanger),
+            className: a()(g.activityActionButton, g.activityActionButtonDanger),
             children: (0, i.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
@@ -113,7 +113,7 @@ function C(e) {
         return (0, i.jsx)(c.f6W, {
           theme: f.BRd.DARK,
           children: e => (0, i.jsxs)(s.animated.div, {
-            className: o()(e, g.activityItem, C, {
+            className: a()(e, g.activityItem, C, {
               [g.activityItem_13_11]: 0 === y,
               [g.activityItem_16_9]: 1 === y
             }),

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(392711),
+  o = n.n(l),
+  a = n(392711),
   s = n(442837),
   c = n(570140),
   u = n(607070),
@@ -23,7 +23,7 @@ let y = e => {
     message: t,
     hovering: n,
     compact: l
-  } = e, y = i.useRef((0, o.random)(-6, 24)).current, C = (0, s.e7)([h.Z], () => h.Z.confettiMode), x = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, S] = i.useState(!1), I = i.useMemo(() => !n && !C && !x, [C, n, x]);
+  } = e, y = i.useRef((0, a.random)(-6, 24)).current, C = (0, s.e7)([h.Z], () => h.Z.confettiMode), x = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, S] = i.useState(!1), I = i.useMemo(() => !n && !C && !x, [C, n, x]);
   if (i.useEffect(() => {
       n || S(!1), n && C && S(!0)
     }, [n, C]), i.useEffect(() => {
@@ -74,17 +74,17 @@ let y = e => {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: N,
-      className: a()([_.emoji, _.left, I && _.shy, C && _.confettiMode]),
+      className: o()([_.emoji, _.left, I && _.shy, C && _.confettiMode]),
       width: 28
     }), (0, r.jsx)("img", {
       alt: "",
       src: N,
-      className: a()([_.emoji, _.right, I && _.shy, C && _.confettiMode]),
+      className: o()([_.emoji, _.right, I && _.shy, C && _.confettiMode]),
       width: 26
     }), (0, r.jsx)("img", {
       alt: "",
       src: N,
-      className: a()([_.emoji, _.center, I && _.shy, C && _.confettiMode]),
+      className: o()([_.emoji, _.center, I && _.shy, C && _.confettiMode]),
       width: 32
     })]
   })

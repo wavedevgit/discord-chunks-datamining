@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(704215),
-  o = n(481060),
+  o = n(704215),
+  a = n(481060),
   s = n(911969),
   c = n(40851),
   u = n(317381),
@@ -51,7 +51,7 @@ function S(e) {
       analyticsLocations: F
     })
   }, [F, t, B, H]), V = [];
-  T || V.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !T && V.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), T || V.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
+  T || V.push(o.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !T && V.push(o.z.ACTIVITY_GDM_ROCKET_SPARKLE), T || V.push(o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = i.useRef(!1),
     W = i.useRef(null);
   return (0, r.jsx)(y.ZP, {
@@ -60,12 +60,12 @@ function S(e) {
       let {
         visibleContent: i,
         markAsDismissed: l
-      } = e, s = i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !A;
-      return z.current && !s && l(O.L.AUTO_DISMISS), z.current !== s && (z.current = s), (0, r.jsx)(o.yRy, {
+      } = e, s = i === o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !A;
+      return z.current && !s && l(O.L.AUTO_DISMISS), z.current !== s && (z.current = s), (0, r.jsx)(a.yRy, {
         targetElementRef: W,
         fixed: !0,
         shouldShow: A && (S === v.D.ACTIVITY || null == S),
-        animation: o.yRy.Animation.FADE,
+        animation: a.yRy.Animation.FADE,
         animationPosition: "top",
         position: "top",
         align: "center",
@@ -91,9 +91,9 @@ function S(e) {
           }) : (0, r.jsx)(r.Fragment, {})
         },
         children: () => (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(o.ua7, {
+          children: [(0, r.jsx)(a.ua7, {
             text: E.intl.string(E.t.P8vmUl),
-            color: o.FGA.BRAND,
+            color: a.FGA.BRAND,
             forceOpen: !0,
             shouldShow: s,
             children: e => {
@@ -124,7 +124,7 @@ function S(e) {
                   label: D ? void 0 : N,
                   isActivityActive: L,
                   onClick: () => {
-                    G(), (i === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(O.L.TAKE_ACTION)
+                    G(), (i === o.z.ACTIVITIES_MINI_SHELF_SPARKLES || i === o.z.ACTIVITY_GDM_ROCKET_SPARKLE || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || i === o.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || i === o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(O.L.TAKE_ACTION)
                   },
                   onMouseEnter: U,
                   onMouseLeave: k

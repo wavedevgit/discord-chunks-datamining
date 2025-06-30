@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(704215),
-  a = n(100527),
-  o = n(906732),
+  o = n(100527),
+  a = n(906732),
   s = n(779618),
   c = n(243778),
   u = n(446226),
@@ -29,7 +29,7 @@ function v(e) {
     showRightDivider: v
   } = e, {
     analyticsLocations: j
-  } = (0, o.ZP)(a.Z.VOICE_CONTROL_TRAY), O = (0, h.Ou)(t), E = i.useRef(null), S = (0, u.Z)(), {
+  } = (0, a.ZP)(o.Z.VOICE_CONTROL_TRAY), O = (0, h.Ou)(t), E = i.useRef(null), S = (0, u.Z)(), {
     isSharedCanvasEnabled: I
   } = f.Z.useExperiment({
     guildId: null == t ? void 0 : t.guild_id,
@@ -44,7 +44,7 @@ function v(e) {
   if (null == t || null != S) return null;
   let R = P && Z,
     k = I && n;
-  return (0, r.jsxs)(o.Gt, {
+  return (0, r.jsxs)(a.Gt, {
     value: j,
     children: [(0, r.jsxs)("div", {
       className: x.voiceEffectsActionBar,

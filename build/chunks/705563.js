@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  a = n(665149),
-  o = n(892001),
+  o = n(665149),
+  a = n(892001),
   s = n(650774),
   c = n(430824),
   u = n(496675),
@@ -94,13 +94,13 @@ function _(e) {
     }), n && (0, r.jsx)(l.zxk, {
       color: l.zxk.Colors.TRANSPARENT,
       onClick: () => {
-        (0, o.openUserProfileModal)({
+        (0, a.openUserProfileModal)({
           userId: C.userId,
           guildId: C.guildId
         })
       },
       size: l.PhG.SMALL,
       children: g.intl.string(g.t.iXAna2)
-    }), _ && (0, r.jsx)(a.ZP.Divider, {})]
+    }), _ && (0, r.jsx)(o.ZP.Divider, {})]
   }) : null
 }

@@ -9,8 +9,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  a = n(481060),
-  o = n(534091),
+  o = n(481060),
+  a = n(534091),
   s = n(981631),
   c = n(191052);
 
@@ -18,11 +18,11 @@ function u(e) {
   let {
     locked: t = !1,
     channelType: n
-  } = e, i = n === s.d4z.GUILD_VOICE || n === s.d4z.GUILD_STAGE_VOICE ? a.kBi : t ? a.W4G : a.VL1;
+  } = e, i = n === s.d4z.GUILD_VOICE || n === s.d4z.GUILD_STAGE_VOICE ? o.kBi : t ? o.W4G : o.VL1;
   return (0, r.jsx)("div", {
     className: l()(c.emptyChannelIcon, c.emptyChannelIconComponent),
     children: (0, r.jsx)(i, {
-      color: a.TVs.colors.WHITE,
+      color: o.TVs.colors.WHITE,
       size: "custom",
       width: 42,
       height: 42
@@ -35,7 +35,7 @@ function d(e) {
     children: t,
     className: n
   } = e;
-  return (0, r.jsx)(a.X6q, {
+  return (0, r.jsx)(o.X6q, {
     "aria-hidden": "true",
     className: l()(n, c.header),
     variant: "heading-xxl/extrabold",
@@ -48,7 +48,7 @@ function p(e) {
     children: t,
     className: n
   } = e;
-  return (0, r.jsx)(a.Text, {
+  return (0, r.jsx)(o.Text, {
     variant: "text-md/normal",
     color: "none",
     className: l()(c.description, n),
@@ -58,7 +58,7 @@ function p(e) {
 let h = function(e) {
   var t, n, {
       className: i,
-      channelId: a,
+      channelId: o,
       children: s
     } = e,
     u = function(e, t) {
@@ -95,7 +95,7 @@ let h = function(e) {
     return e
   }({
     className: l()(i, c.container),
-    id: (0, o.p)(a, a)
+    id: (0, a.p)(o, o)
   }, u), n = n = {
     children: s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

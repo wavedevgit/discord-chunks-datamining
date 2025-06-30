@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(597312),
-  a = n(481060),
-  o = n(727637),
+  o = n(481060),
+  a = n(727637),
   s = n(410030),
   c = n(100527),
   u = n(906732),
@@ -61,7 +61,7 @@ function w(e) {
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
-  }), U = i.useRef(null), B = (0, o.Z)(U), F = e => {
+  }), U = i.useRef(null), B = (0, a.Z)(U), F = e => {
     (0, b.openUserProfileModal)(A({
       sourceAnalyticsLocations: L,
       hideRestrictedProfile: !0
@@ -133,10 +133,10 @@ function w(e) {
           })]
         }), !w && (0, r.jsx)("footer", {
           className: N.footer,
-          children: (0, r.jsx)(a.zxk, {
+          children: (0, r.jsx)(o.zxk, {
             fullWidth: !0,
-            size: a.zxk.Sizes.LARGE,
-            look: a.zxk.Looks.BLANK,
+            size: o.zxk.Sizes.LARGE,
+            look: o.zxk.Looks.BLANK,
             color: N.footerButtonColor,
             onClick: () => {
               F(), (0, m.pQ)(A({

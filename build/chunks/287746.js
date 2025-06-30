@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(512722),
-  s = n.n(o),
+  o = n.n(l),
+  a = n(512722),
+  s = n.n(a),
   c = n(873546),
   u = n(106351),
   d = n(442837),
@@ -59,8 +59,8 @@ var r = n(255367),
   er = n(736052),
   ei = n(146128),
   el = n(549006),
-  ea = n(58873),
-  eo = n(925975),
+  eo = n(58873),
+  ea = n(925975),
   es = n(957730),
   ec = n(48854),
   eu = n(400023),
@@ -224,12 +224,12 @@ class tn extends i.PureComponent {
       type: "channel"
     }, n);
     if (null != i) {
-      var a, o;
+      var o, a;
       let e = null != l ? {
         type: R.Qi.APPLICATION,
         id: l.id,
         icon: l.icon,
-        name: null != (o = null == l || null == (a = l.bot) ? void 0 : a.username) ? o : l.name,
+        name: null != (a = null == l || null == (o = l.bot) ? void 0 : o.username) ? a : l.name,
         application: l
       } : null;
       N.Po({
@@ -249,8 +249,8 @@ class tn extends i.PureComponent {
       onBlur: n,
       onFocus: i,
       onResize: l,
-      highlighted: a,
-      pendingReply: o,
+      highlighted: o,
+      pendingReply: a,
       chatInputType: c,
       placeholder: u,
       accessibilityLabel: d,
@@ -271,7 +271,7 @@ class tn extends i.PureComponent {
       channel: e,
       placeholder: u,
       accessibilityLabel: d,
-      pendingReply: o,
+      pendingReply: a,
       type: c,
       onChange: this.handleTextareaChange,
       onSubmit: this.handleSendMessage,
@@ -284,7 +284,7 @@ class tn extends i.PureComponent {
       renderAppLauncherButton: g,
       renderAppCommandButton: b,
       promptToUpload: eG.d,
-      highlighted: a,
+      highlighted: o,
       setEditorRef: e => this.editorRef = e,
       onCommandSentinelTyped: m,
       pendingScheduledMessage: _
@@ -367,11 +367,11 @@ class tn extends i.PureComponent {
       let r = this.props.channel.id,
         i = eS.default.getId(),
         l = eh.ZP.getUserCombo(i, r),
-        a = (null != (n = null == l ? void 0 : l.value) ? n : 0) + 1;
+        o = (null != (n = null == l ? void 0 : l.value) ? n : 0) + 1;
       (0, ed.SE)({
         channelId: r,
         userId: i,
-        value: null != e ? e.length : a,
+        value: null != e ? e.length : o,
         multiplier: t
       })
     }), e8(this, "handleTextareaChange", (e, t, n) => {
@@ -383,8 +383,8 @@ class tn extends i.PureComponent {
       } = this.props;
       h.Z.changeDraft(i, t, eZ.d.ChannelMessage);
       let l = "" !== t && n !== this.state.richValue,
-        a = l && !e9.test(t) && !t.startsWith("/") && (!this.isFirstChange || t !== this.state.textValue);
-      this.isFirstChange = !1, a && this.state.textValue.length < t.length && this.handleIncrementCombo(), a ? m.Z.startTyping(i) : "" === t && m.Z.stopTyping(i), l && r && (0, x.rf)(), this.setState({
+        o = l && !e9.test(t) && !t.startsWith("/") && (!this.isFirstChange || t !== this.state.textValue);
+      this.isFirstChange = !1, o && this.state.textValue.length < t.length && this.handleIncrementCombo(), o ? m.Z.startTyping(i) : "" === t && m.Z.stopTyping(i), l && r && (0, x.rf)(), this.setState({
         textValue: t,
         richValue: n
       })
@@ -395,8 +395,8 @@ class tn extends i.PureComponent {
         stickers: r,
         confettiPotionEmoji: i,
         command: l,
-        commandOptionValues: a,
-        isGif: o
+        commandOptionValues: o,
+        isGif: a
       } = e;
       if (0 === (t = t.trim()).length && (null == r || 0 === r.length) && (null == n || 0 === n.length)) return Promise.resolve({
         shouldClear: !1,
@@ -454,7 +454,7 @@ class tn extends i.PureComponent {
         }
         let n = await (0, M.Z)({
           command: l,
-          optionValues: null != a ? a : {},
+          optionValues: null != o ? o : {},
           context: {
             guild: s,
             channel: c
@@ -476,7 +476,7 @@ class tn extends i.PureComponent {
         uploads: n,
         channel: c
       }).then(async e => {
-        var a;
+        var o;
         let {
           valid: m,
           failureReason: b
@@ -493,7 +493,7 @@ class tn extends i.PureComponent {
             shouldClear: !1,
             shouldRefocus: !1
           };
-        let _ = (0, eo.g)(t, {
+        let _ = (0, ea.g)(t, {
           channel: c,
           isEdit: !1
         });
@@ -506,12 +506,12 @@ class tn extends i.PureComponent {
           uploads: n,
           stickers: r,
           command: l,
-          isGif: o,
+          isGif: a,
           pendingReply: u,
           confettiPotionEmoji: i,
-          scheduledTimestamp: null == (a = this.props.pendingScheduledMessage) ? void 0 : a.scheduledTimestamp
+          scheduledTimestamp: null == (o = this.props.pendingScheduledMessage) ? void 0 : o.scheduledTimestamp
         });
-        if (C.location = e1.dy.CHAT_INPUT, o) return f.Z.sendMessage(c.id, y, void 0, C), (0, eb.A6)(c.id), {
+        if (C.location = e1.dy.CHAT_INPUT, a) return f.Z.sendMessage(c.id, y, void 0, C), (0, eb.A6)(c.id), {
           shouldClear: !1,
           shouldRefocus: !0
         };
@@ -522,7 +522,7 @@ class tn extends i.PureComponent {
             shouldRefocus: !1
           };
           C.eagerDispatch = !1, C.attachmentsToUpload = n, C.onAttachmentUploadError = (e, r, i) => {
-            (0, ea.A)({
+            (0, eo.A)({
               file: e,
               guildId: c.getGuildId(),
               analyticsLocations: [],
@@ -606,7 +606,7 @@ class tr extends i.PureComponent {
     let n, {
         channel: i,
         guild: l,
-        keyboardModeEnabled: o,
+        keyboardModeEnabled: a,
         hasModalOpen: s,
         pendingReply: c,
         chatInputType: d,
@@ -655,7 +655,7 @@ class tr extends i.PureComponent {
             highlighted: M,
             channel: i,
             guild: l,
-            keyboardModeEnabled: o,
+            keyboardModeEnabled: a,
             onFocus: this.handleInputFocus,
             onBlur: this.handleInputBlur,
             onKeyDown: this.handleInputKeyDown,
@@ -675,7 +675,7 @@ class tr extends i.PureComponent {
       }),
       F = E && S,
       H = F && S ? D : B,
-      G = a()({
+      G = o()({
         [e7.barWithAppLauncherButton]: O,
         [e7.barWithAppsDMsUI]: E
       }),
@@ -709,7 +709,7 @@ class tr extends i.PureComponent {
               handler: this.handleOpenAppLauncher
             }), (0, r.jsxs)(te, {
               isSidebar: L,
-              className: a()(e3.chatContent, {
+              className: o()(e3.chatContent, {
                 [e3.hasWallpaper]: null == T ? void 0 : T.isViewable,
                 [X.e3]: z ? null == T ? void 0 : T.isViewable : void 0,
                 [null != (e = (0, p.QeD)(N)) ? e : ""]: z ? null == T ? void 0 : T.isViewable : void 0
@@ -755,7 +755,7 @@ class tr extends i.PureComponent {
                 })) ? t : (0, r.jsxs)("form", {
                   ref: this.inputFormRef,
                   onSubmit: e4,
-                  className: a()(e3.form, {
+                  className: o()(e3.form, {
                     [e3.formWithLoadedChatInput]: !F
                   }),
                   children: [x && (0, r.jsx)(ef.Z, {
@@ -853,14 +853,14 @@ class tr extends i.PureComponent {
         showQuarantinedUserBanner: n,
         guild: i,
         communicationDisabledUntil: l,
-        showAutomodUserProfileChatBlocker: a
+        showAutomodUserProfileChatBlocker: o
       } = e;
       return t.type === e0.d4z.DM && n ? (0, r.jsx)(eg.Z, {}) : t.isModeratorReportChannel() && t.isArchivedThread() ? (0, r.jsx)(ey.Z, {
         channelId: t.id
       }) : null != l && (0, ee.J)(l) && null != i && !ew.Z.can(e0.Plq.ADMINISTRATOR, i) ? (0, r.jsx)(en.T, {
         guild: i,
         disabledUntil: l
-      }) : a ? (0, r.jsx)($.h, {
+      }) : o ? (0, r.jsx)($.h, {
         guild: i
       }) : null
     }), e8(this, "renderAppLauncherButton", () => {
@@ -902,9 +902,9 @@ let ti = i.memo(function(e) {
     channel: t,
     guild: n,
     chatInputType: l,
-    filterAfterTimestamp: a
+    filterAfterTimestamp: o
   } = e, {
-    placeholder: o,
+    placeholder: a,
     accessibilityLabel: s
   } = (0, ez.Z)({
     channel: t
@@ -951,9 +951,9 @@ let ti = i.memo(function(e) {
     keyboardModeEnabled: (0, d.e7)([v.Z], () => v.Z.keyboardModeEnabled),
     pendingReply: (0, d.e7)([e_.Z], () => e_.Z.getPendingReply(t.id)),
     chatInputType: l,
-    placeholder: o,
+    placeholder: a,
     accessibilityLabel: s,
-    filterAfterTimestamp: a,
+    filterAfterTimestamp: o,
     showQuarantinedUserBanner: c,
     communicationDisabledUntil: u,
     shakeIntensity: _,

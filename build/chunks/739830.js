@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  a = n(665149),
-  o = n(585483),
+  o = n(665149),
+  a = n(585483),
   s = n(723170),
   c = n(64247),
   u = n(124368),
@@ -51,8 +51,8 @@ function m(e) {
   } = e, n = (0, s.B)(t), [m, g] = i.useState(!1), b = i.useRef(null);
   i.useEffect(() => {
     let e = () => g(!0);
-    return o.S.subscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-      o.S.unsubscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+    return a.S.subscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+      a.S.unsubscribe(d.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
   let _ = p.intl.string(p.t.h850Sk);
@@ -73,7 +73,7 @@ function m(e) {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(a.ZP.Icon, f(h({}, e), {
+      return (0, r.jsx)(o.ZP.Icon, f(h({}, e), {
         ref: b,
         onClick: () => g(e => !e),
         tooltip: i ? null : _,

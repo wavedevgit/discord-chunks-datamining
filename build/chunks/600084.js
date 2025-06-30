@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(481060),
-  o = n(570140),
+  o = n(481060),
+  a = n(570140),
   s = n(384275),
   c = n(82906),
   u = n(763762),
@@ -46,7 +46,7 @@ function H(e) {
   let {
     canManageRoles: t,
     channel: n
-  } = e, i = t && (0, p.Yk)(n), a = (0, l.e7)([x.ZP], () => null != n.guild_id && n === x.ZP.getDefaultChannel(n.guild_id), [n]);
+  } = e, i = t && (0, p.Yk)(n), o = (0, l.e7)([x.ZP], () => null != n.guild_id && n === x.ZP.getDefaultChannel(n.guild_id), [n]);
   if ((0, h.Z)(n.id)) return null;
   if (n.isForumPost()) return (0, r.jsx)(I.Z, {
     channel: n
@@ -54,7 +54,7 @@ function H(e) {
   if (y.Ec.has(n.type)) return (0, r.jsx)(k.Z, {
     channel: n
   });
-  if (a) return (0, r.jsx)(M.Z, {
+  if (o) return (0, r.jsx)(M.Z, {
     channel: n
   });
   if (i) return (0, r.jsx)(A.Z, {
@@ -97,7 +97,7 @@ function G(e) {
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {
-      x === L.d4z.DM && null == M && null != I && o.Z.wait(() => (0, _.Z)(p.getRecipientId(), I.getAvatarURL(null, 80), {
+      x === L.d4z.DM && null == M && null != I && a.Z.wait(() => (0, _.Z)(p.getRecipientId(), I.getAvatarURL(null, 80), {
         withMutualGuilds: !0
       }))
     }, [M, x, p, I]), i.useEffect(() => {
@@ -123,8 +123,8 @@ function G(e) {
         channel: p,
         oauth2Token: z
       }), Y && (0, r.jsx)(f.Z, {
-        buttonSize: a.PhG.SMALL,
-        color: a.zxk.Colors.PRIMARY,
+        buttonSize: o.PhG.SMALL,
+        color: o.zxk.Colors.PRIMARY,
         channel: p
       })]
     })) : e = (0, r.jsx)(E.Z, {
@@ -134,7 +134,7 @@ function G(e) {
     }), (0, r.jsxs)(T.Z, {
       channel: p,
       user: I,
-      children: [null != I && !I.isProvisional && (0, r.jsx)(a.X6q, {
+      children: [null != I && !I.isProvisional && (0, r.jsx)(o.X6q, {
         variant: "heading-xl/medium",
         className: F.marginBottom20,
         children: A

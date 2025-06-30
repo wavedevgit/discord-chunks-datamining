@@ -1,14 +1,14 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(720218),
   l = n(192029),
-  a = n(527119);
+  o = n(527119);
 
-function o() {
+function a() {
   return (0, r.jsx)("div", {
     className: i.container,
     children: (0, r.jsxs)("svg", {
@@ -136,7 +136,7 @@ function o() {
             y: "0",
             height: "44",
             width: "44",
-            href: a
+            href: o
           })
         })]
       })]

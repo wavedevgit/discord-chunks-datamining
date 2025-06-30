@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  a = n(481060),
-  o = n(738672),
+  o = n(481060),
+  a = n(738672),
   s = n(447564),
   c = n(921944),
   u = n(388032),
@@ -56,7 +56,7 @@ function f(e) {
     channel: t,
     onClick: n,
     hidden: i,
-    onDismiss: o
+    onDismiss: a
   } = e;
   return (0, r.jsxs)("div", {
     className: l()(d.popoutContainer, {
@@ -66,39 +66,39 @@ function f(e) {
       className: d.image,
       src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
       alt: "HD Streaming Nitro Perk"
-    }), (0, r.jsx)(a.zxk, {
+    }), (0, r.jsx)(o.zxk, {
       className: d.closeButton,
       "aria-label": u.intl.string(u.t.cpT0Cg),
-      look: a.zxk.Looks.BLANK,
-      size: a.zxk.Sizes.NONE,
+      look: o.zxk.Looks.BLANK,
+      size: o.zxk.Sizes.NONE,
       onClick: () => {
-        o()
+        a()
       },
-      children: (0, r.jsx)(a.Dio, {
+      children: (0, r.jsx)(o.Dio, {
         size: "xs",
         className: d.closeIcon,
         color: "white"
       })
     }), (0, r.jsxs)("div", {
       className: d.infoContainerParent,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(o.X6q, {
         className: d.heading,
         variant: "heading-md/extrabold",
         children: u.intl.string(u.t.kQqTnp)
       }), (0, r.jsx)("div", {
         className: d.infoContainer,
-        children: (0, r.jsx)(a.Text, {
+        children: (0, r.jsx)(o.Text, {
           className: d.infoText,
           variant: "text-sm/medium",
           children: u.intl.string(u.t.cxf5yM)
         })
       }), (0, r.jsx)("div", {
         className: d.buttonContainer,
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(o.zxk, {
           onClick: () => {
             (0, s.k)(t, "HDStreamingPotionUpsellPopout"), n()
           },
-          color: a.Ttl.WHITE,
+          color: o.Ttl.WHITE,
           className: d.button,
           children: u.intl.string(u.t.GBe9lJ)
         })
@@ -112,7 +112,7 @@ function m(e) {
       channel: i,
       onClick: l
     } = e,
-    a = function(e, t) {
+    o = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -127,7 +127,7 @@ function m(e) {
       }
       return i
     }(e, ["channel", "onClick"]);
-  return (0, r.jsx)(o.h, (t = p({}, a), n = n = {
+  return (0, r.jsx)(a.h, (t = p({}, o), n = n = {
     skipForceHide: !0,
     renderComponent: e => (0, r.jsx)(f, p({
       onClick: l,

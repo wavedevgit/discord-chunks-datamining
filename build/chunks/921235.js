@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(392711),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(481060),
   c = n(904245),
   u = n(268350),
@@ -31,10 +31,10 @@ function j(e) {
   i.useEffect(() => {
     (0, u.FQ)("847199849233514549", !0)
   }, []);
-  let O = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === y.yb.SENT && !(0, _.Z)(e))),
-    E = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
+  let O = (0, a.e7)([f.Z, h.default], () => !!o()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === y.yb.SENT && !(0, _.Z)(e))),
+    E = (0, a.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
     S = null != (t = b.ZP.useName(E)) ? t : C.intl.string(C.t.y1Wu2d),
-    I = (0, o.e7)([d.Z], () => d.Z.getStickerById(v)),
+    I = (0, a.e7)([d.Z], () => d.Z.getStickerById(v)),
     P = i.useCallback(async () => {
       if (null == l || "" === l) try {
         await c.Z.sendGreetMessage(n.id, v), g.default.track(y.rMx.DM_EMPTY_ACTION, {

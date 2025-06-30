@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(493683),
-  a = n(726521),
-  o = n(868807),
+  o = n(726521),
+  a = n(868807),
   s = n(388032);
 
 function c(e) {
@@ -24,7 +24,7 @@ function c(e) {
     error: m,
     loaded: g,
     message: b
-  } = (0, o.a)(t);
+  } = (0, a.a)(t);
   if (null == b && (g || m)) return null;
   let _ = () => {
     null == p || p(), l.Z.closePrivateChannel(t.id)
@@ -35,7 +35,7 @@ function c(e) {
     color: c,
     disabled: null == b,
     onClick: e => {
-      e.stopPropagation(), null == d || d(), null != b && (0, a.WL)(b, _)
+      e.stopPropagation(), null == d || d(), null != b && (0, o.WL)(b, _)
     },
     onMouseEnter: h,
     onMouseLeave: f,

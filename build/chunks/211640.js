@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(442837),
   l = n(481060),
-  a = n(257559),
-  o = n(946273),
+  o = n(257559),
+  a = n(946273),
   s = n(592125),
   c = n(375954),
   u = n(496675),
@@ -20,7 +20,7 @@ function f(e) {
     user: n,
     guild: f,
     channel: m
-  } = e, g = (0, i.e7)([u.Z], () => null != n && null != f && (0, o.CX)(n, f, [u.Z])), {
+  } = e, g = (0, i.e7)([u.Z], () => null != n && null != f && (0, a.CX)(n, f, [u.Z])), {
     messageReference: b
   } = t, _ = (0, i.e7)([c.Z], () => null != b ? c.Z.getMessage(b.channel_id, b.message_id) : null), y = (0, i.e7)([s.Z], () => null != _ ? s.Z.getChannel(_.channel_id) : null), C = (0, i.e7)([s.Z], () => {
     var e, t;
@@ -34,7 +34,7 @@ function f(e) {
     text: x,
     icon: l.XHJ,
     onClick: () => {
-      null != y && null != _ && a.Z.confirmDelete(y, _, !1, {
+      null != y && null != _ && o.Z.confirmDelete(y, _, !1, {
         isFlagResolved: C,
         moderatorReportChannelId: m.id
       })

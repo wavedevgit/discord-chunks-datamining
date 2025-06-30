@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(392711),
-  a = n(442837),
-  o = n(704215),
+  o = n(442837),
+  a = n(704215),
   s = n(481060),
   c = n(570140),
   u = n(230711),
@@ -48,7 +48,7 @@ function U(e) {
     channel: n,
     closePopout: m,
     onFocus: y
-  } = e, T = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, a.e7)([b.default], () => b.default.getCurrentUser()), B = C.ZP.canUseFancyVoiceChannelReactions(U), F = (0, a.e7)([v.Z], () => v.Z.getState().animationType), H = i.useRef(!1), G = i.useRef(null), V = (0, f.wC)(n.guild_id), z = (0, l.uniqBy)([...V, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
+  } = e, T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), U = (0, o.e7)([b.default], () => b.default.getCurrentUser()), B = C.ZP.canUseFancyVoiceChannelReactions(U), F = (0, o.e7)([v.Z], () => v.Z.getState().animationType), H = i.useRef(!1), G = i.useRef(null), V = (0, f.wC)(n.guild_id), z = (0, l.uniqBy)([...V, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: n,
     intention: M
@@ -93,7 +93,7 @@ function U(e) {
       guild_id: J
     })
   }, [Q, J]);
-  let $ = T ? [o.z.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP] : [],
+  let $ = T ? [a.z.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP] : [],
     ee = F === P.q.PREMIUM;
   return (0, r.jsx)(h.ZP, {
     contentTypes: $,
@@ -101,7 +101,7 @@ function U(e) {
       let {
         visibleContent: t,
         markAsDismissed: i
-      } = e, l = T && t === o.z.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP;
+      } = e, l = T && t === a.z.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP;
       return (0, r.jsx)(s.yRy, {
         targetElementRef: G,
         position: "left",

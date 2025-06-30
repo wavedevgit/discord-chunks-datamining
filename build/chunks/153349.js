@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(512722),
-  s = n.n(o),
+  o = n.n(l),
+  a = n(512722),
+  s = n.n(a),
   c = n(442837),
   u = n(481060),
   d = n(239091),
@@ -72,7 +72,7 @@ let A = i.memo(function(e) {
     });
     return (0, r.jsxs)(m.ZP, {
       toolbar: i,
-      className: a()(Z.headerContainer, {
+      className: o()(Z.headerContainer, {
         [Z.chatOpen]: n
       }),
       children: [(0, r.jsx)(m.ZP.Icon, {
@@ -88,8 +88,8 @@ let A = i.memo(function(e) {
     let {
       channel: t,
       participant: l,
-      tempDisableOnInit: o = !1
-    } = e, m = i.useRef(null), [y, v] = i.useState(o);
+      tempDisableOnInit: a = !1
+    } = e, m = i.useRef(null), [y, v] = i.useState(a);
     (0, h.ZP)(() => {
       if (!y) return;
       let e = setTimeout(() => v(!1), 1e3);
@@ -183,7 +183,7 @@ let A = i.memo(function(e) {
       }), (0, r.jsx)(u.ua7, {
         text: P.intl.string(P.t.moABMz),
         children: e => (0, r.jsx)(u.zxk, T(N({}, e), {
-          innerClassName: a()(Z.buttonContainer, Z.buttonMargin),
+          innerClassName: o()(Z.buttonContainer, Z.buttonMargin),
           look: u.zxk.Looks.BLANK,
           size: u.zxk.Sizes.NONE,
           onClick: L,
@@ -228,9 +228,9 @@ function M(e) {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: i
-  } = e, l = (0, v.Fd)(t.id), o = [+!!(0, c.e7)([y.Z], () => y.Z.can(I.Pl.MANAGE_CHANNELS, t) || y.Z.can(I.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
+  } = e, l = (0, v.Fd)(t.id), a = [+!!(0, c.e7)([y.Z], () => y.Z.can(I.Pl.MANAGE_CHANNELS, t) || y.Z.can(I.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
-    className: a()(Z.container, {
+    className: o()(Z.container, {
       [Z.chatOpen]: i
     }),
     children: [(0, r.jsx)(A, {
@@ -238,7 +238,7 @@ function M(e) {
       chatOpen: i
     }), (0, r.jsx)(u.aVo, {
       className: Z.contentContainer,
-      sections: o,
+      sections: a,
       sectionHeight: function(e) {
         return 40 * (1 === e)
       },

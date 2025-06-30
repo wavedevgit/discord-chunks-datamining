@@ -9,9 +9,9 @@ var i = n(325767);
 function l(e) {
   var t, n, {
       width: l = 45,
-      height: a = 46
+      height: o = 46
     } = e,
-    o = function(e, t) {
+    a = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -43,9 +43,9 @@ function l(e) {
       })
     }
     return e
-  }({}, (0, i.Z)(o)), n = n = {
+  }({}, (0, i.Z)(a)), n = n = {
     width: l,
-    height: a,
+    height: o,
     viewBox: "0 0 49 50",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",

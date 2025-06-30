@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(73800),
   i = n(442837),
   l = n(570140),
-  a = n(662594),
-  o = n(592125),
+  o = n(662594),
+  a = n(592125),
   s = n(430824),
   c = n(451478),
   u = n(626135),
@@ -37,21 +37,21 @@ function v(e) {
     entries: I,
     impressionCappedEntryIds: P,
     hasLeaderboardEntry: Z
-  } = (0, m.Z)(v), N = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([o.Z], () => o.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(j), [j]), R = (0, h.E)(w), k = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [M, L, D, U] = r.useMemo(() => {
+  } = (0, m.Z)(v), N = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([a.Z], () => a.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(j), [j]), R = (0, h.E)(w), k = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [M, L, D, U] = r.useMemo(() => {
     let e;
     if (null == I || 0 === I.length || null == S || !k) return [t, n, x];
     let r = O ? I.length : Z ? 4 : 3,
       i = I.slice(0, r);
     e = N ? [{
-      type: a.so.HIDDEN_CONTENT_INVENTORY
+      type: o.so.HIDDEN_CONTENT_INVENTORY
     }] : i.map(e => ({
-      type: a.so.CONTENT_INVENTORY,
+      type: o.so.CONTENT_INVENTORY,
       entry: e,
       requestId: S
     }));
     let l = {
       id: _.G,
-      type: a.so.CONTENT_INVENTORY_GROUP,
+      type: o.so.CONTENT_INVENTORY_GROUP,
       key: _.G,
       count: e.length,
       index: n.length,

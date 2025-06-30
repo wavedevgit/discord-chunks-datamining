@@ -3,7 +3,7 @@ let r;
 n.d(t, {
   Z: () => B
 }), n(388685), n(781311), n(539854), n(642613);
-var i, l, a, o = n(442837),
+var i, l, o, a = n(442837),
   s = n(570140),
   c = n(279779),
   u = n(353926),
@@ -69,8 +69,8 @@ function N() {
         let r = b.Z.getScoreWithoutFetchingLatest(e.id),
           i = e.getRecipientId(),
           l = .2 * !!_.Z.isFriend(i),
-          a = .1 * (null != m.Z.getDMFromUserId(i));
-        n[i] = 1 + r / t + l + a
+          o = .1 * (null != m.Z.getDMFromUserId(i));
+        n[i] = 1 + r / t + l + o
       }), n
     }())
   }
@@ -86,9 +86,9 @@ function T() {
 function A(e, t) {
   if (g.Z.hasConsented(C.pjP.PERSONALIZATION)) {
     var n, r, i, l;
-    let a = null != (i = null == (n = d.Z.getUserAffinity(e.user.id)) ? void 0 : n.communicationProbability) ? i : 0,
-      o = null != (l = null == (r = d.Z.getUserAffinity(t.user.id)) ? void 0 : r.communicationProbability) ? l : 0;
-    if (a !== o) return o - a
+    let o = null != (i = null == (n = d.Z.getUserAffinity(e.user.id)) ? void 0 : n.communicationProbability) ? i : 0,
+      a = null != (l = null == (r = d.Z.getUserAffinity(t.user.id)) ? void 0 : r.communicationProbability) ? l : 0;
+    if (o !== a) return a - o
   }
   return (0, h._I)(f.ZP.getName(e.user).toLocaleLowerCase()).localeCompare((0, h._I)(f.ZP.getName(t.user).toLocaleLowerCase()))
 }
@@ -130,7 +130,7 @@ function M(e) {
 function L() {
   null != r && (r.destroy(), r = null), P()
 }
-class D extends(i = o.ZP.Store) {
+class D extends(i = a.ZP.Store) {
   initialize() {
     this.waitFor(y.default, m.Z, _.Z, u.Z, g.Z), this.syncWith([y.default, m.Z], N), this.syncWith([_.Z], T)
   }
@@ -156,12 +156,12 @@ class D extends(i = o.ZP.Store) {
     }
   }
 }
-a = "PrivateChannelRecipientsInviteStore", (l = "displayName") in D ? Object.defineProperty(D, l, {
-  value: a,
+o = "PrivateChannelRecipientsInviteStore", (l = "displayName") in D ? Object.defineProperty(D, l, {
+  value: o,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : D[l] = a;
+}) : D[l] = o;
 let U = new D(s.Z, {
     CONNECTION_OPEN: function() {
       P()

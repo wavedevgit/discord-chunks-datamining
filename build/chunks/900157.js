@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(392711),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(570140),
   c = n(239091),
   u = n(561472),
@@ -66,9 +66,9 @@ function T(e) {
     channelId: t,
     baseChannelId: l,
     channelViewSource: T = "Split View"
-  } = e, A = (0, o.e7)([C.Z], () => C.Z.getChannel(t)), w = (0, o.e7)([v.Z], () => v.Z.getGuild(null == A ? void 0 : A.getGuildId())), R = (0, f.ZP)(A);
+  } = e, A = (0, a.e7)([C.Z], () => C.Z.getChannel(t)), w = (0, a.e7)([v.Z], () => v.Z.getGuild(null == A ? void 0 : A.getGuildId())), R = (0, f.ZP)(A);
   var k = A;
-  let M = (0, o.e7)([j.Z], () => null != k && !a().isEmpty(j.Z.getVoiceStatesForChannel(k.id)));
+  let M = (0, a.e7)([j.Z], () => null != k && !o().isEmpty(j.Z.getVoiceStatesForChannel(k.id)));
   i.useEffect(() => {
     M && null != k && (s.Z.dispatch({
       type: "SIDEBAR_CLOSE",

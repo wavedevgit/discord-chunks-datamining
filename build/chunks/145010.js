@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(399606),
-  a = n(481060),
-  o = n(125268),
+  o = n(481060),
+  a = n(125268),
   s = n(673125),
   c = n(984063),
   u = n(390322),
@@ -19,11 +19,11 @@ function m(e) {
   let {
     channel: t
   } = e, n = (0, l.e7)([s.Z], () => s.Z.getDrawMode()), m = (null == n ? void 0 : n.type) === c.W.EMOJI_HOSE, g = i.useRef(null), b = (e, t) => {
-    null != e ? (0, o.Bo)({
+    null != e ? (0, a.Bo)({
       type: c.W.EMOJI_HOSE,
       emojiName: e.name,
       emojiId: e.id
-    }) : m && (0, o.Bo)(null), null == t || t()
+    }) : m && (0, a.Bo)(null), null == t || t()
   };
   return (0, r.jsx)(h.Z, {
     renderPopout: e => {
@@ -63,7 +63,7 @@ function m(e) {
         return e
       }({}, e), n = n = {
         buttonRef: g,
-        iconComponent: a.j9u,
+        iconComponent: o.j9u,
         isActive: m || e.isActive,
         onClick: t => {
           b(null), e.onClick(t)

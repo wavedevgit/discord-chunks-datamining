@@ -1,21 +1,21 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367),
   i = n(120356),
   l = n.n(i),
-  a = n(462508);
+  o = n(462508);
 
-function o() {
+function a() {
   return (0, r.jsxs)("div", {
-    className: a.container,
+    className: o.container,
     children: [(0, r.jsx)("div", {
-      className: l()(a.placeholderItem, a.chatTextAreaPlaceholder)
+      className: l()(o.placeholderItem, o.chatTextAreaPlaceholder)
     }), (0, r.jsx)("div", {
-      className: l()(a.placeholderItem, a.appLauncherPlaceholder)
+      className: l()(o.placeholderItem, o.appLauncherPlaceholder)
     }), (0, r.jsx)("div", {
-      className: l()(a.placeholderItem, a.entryPointAppCommandPlaceholder)
+      className: l()(o.placeholderItem, o.entryPointAppCommandPlaceholder)
     })]
   })
 }

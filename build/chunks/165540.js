@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(704215),
   c = n(481060),
   u = n(566620),
@@ -30,7 +30,7 @@ let S = i.forwardRef(function(e, t) {
     let {
       type: f,
       animateRef: m
-    } = e, b = (0, o.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === f), {
+    } = e, b = (0, a.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === f), {
       Component: y,
       events: C,
       play: x
@@ -50,7 +50,7 @@ let S = i.forwardRef(function(e, t) {
         color: "currentColor"
       });
     return (0, r.jsx)("div", {
-      className: a()(E.buttonContainer, v.t4),
+      className: o()(E.buttonContainer, v.t4),
       ref: t,
       children: (0, r.jsx)(c.zxk, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -73,7 +73,7 @@ let S = i.forwardRef(function(e, t) {
         look: c.zxk.Looks.BLANK,
         size: c.zxk.Sizes.NONE,
         tabIndex: 0,
-        className: a()(E.button, {
+        className: o()(E.button, {
           [E.buttonActive]: b
         }),
         onClick: S,
@@ -108,13 +108,13 @@ let S = i.forwardRef(function(e, t) {
       channel: t,
       type: n,
       animateRef: l,
-      entryPointCommandButtonRef: a
+      entryPointCommandButtonRef: o
     } = e, s = i.useRef(null), c = (0, m.R)({
       channel: t,
       chatInputType: n
     }), u = (0, x.Z)({
       type: n
-    }), d = (0, b.Q)(t.id), h = (0, o.e7)([p.Z], () => p.Z.appDMChannelsWithFailedLoads().has(t.id)), {
+    }), d = (0, b.Q)(t.id), h = (0, a.e7)([p.Z], () => p.Z.appDMChannelsWithFailedLoads().has(t.id)), {
       visible: g
     } = (0, C.xL)();
     return c ? (0, r.jsxs)("div", {
@@ -130,7 +130,7 @@ let S = i.forwardRef(function(e, t) {
           animateRef: l
         })
       }), u ? (0, r.jsx)(f.Z, {
-        positionTargetRef: d && !h && g ? a : s,
+        positionTargetRef: d && !h && g ? o : s,
         channel: t
       }) : null]
     }) : null

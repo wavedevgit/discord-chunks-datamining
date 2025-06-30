@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(392711),
+  o = n.n(l),
+  a = n(392711),
   s = n(442837),
   c = n(475179),
   u = n(906732),
@@ -23,7 +23,7 @@ var r = n(255367),
   x = n(388032);
 
 function v(e) {
-  let t = (0, s.e7)([m.Z], () => !(0, o.isEmpty)(m.Z.getTypingUsers(e)), [e]),
+  let t = (0, s.e7)([m.Z], () => !(0, a.isEmpty)(m.Z.getTypingUsers(e)), [e]),
     n = (0, s.e7)([f.Z], () => f.Z.getVoiceChannelId() === e, [e]),
     {
       unreadCount: r,
@@ -47,15 +47,15 @@ function j(e) {
   } = e, {
     unreadCount: i,
     mentionCount: l,
-    isTyping: a,
-    voiceChannelIsSelected: o
+    isTyping: o,
+    voiceChannelIsSelected: a
   } = v(n);
   return (0, r.jsx)(_.Z, {
     className: t,
     unreadCount: i,
     mentionCount: l,
-    isTyping: a,
-    canBadge: o
+    isTyping: o,
+    canBadge: a
   })
 }
 
@@ -64,7 +64,7 @@ function O(e) {
   var {
     channelId: n,
     className: l,
-    showingClassName: o,
+    showingClassName: a,
     onClick: h,
     inPopout: f,
     showRequestToSpeakSidebar: m,
@@ -97,14 +97,14 @@ function O(e) {
       unreadCount: t,
       mentionCount: n,
       isTyping: r
-    } = v(e), [l, a] = i.useState(!1);
+    } = v(e), [l, o] = i.useState(!1);
     return i.useEffect(() => {
-      a(t > 0);
+      o(t > 0);
       let e = setTimeout(() => {
-        a(!1)
+        o(!1)
       }, b.z);
       return () => {
-        clearTimeout(e), a(!1)
+        clearTimeout(e), o(!1)
       }
     }, [t]), {
       isShowing: l || n > 0 || r,
@@ -170,8 +170,8 @@ function O(e) {
     "aria-label": D.join(", "),
     iconComponent: w,
     tooltipPosition: "bottom",
-    wrapperClassName: a()(l, null != o && {
-      [o]: Z
+    wrapperClassName: o()(l, null != a && {
+      [a]: Z
     }),
     forceTooltipOpen: k
   }, O))

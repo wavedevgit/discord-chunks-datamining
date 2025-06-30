@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(864094),
-  a = n(871499),
-  o = n(388032);
+  o = n(871499),
+  a = n(388032);
 
 function s(e) {
   let t, n;
@@ -34,8 +34,8 @@ function s(e) {
     }
     return i
   }(e, ["hasPermission", "streamActive", "isSelfStream", "centerButton", "onMouseEnter", "onMouseLeave", "renderNUXHighlight", "buttonRef"]);
-  let b = d ? a.d : a.Z;
-  t = c ? u ? o.intl.string(o.t.S5anIS) : o.intl.string(o.t.q3O3Jy) : s ? o.intl.string(o.t.fjBNo6) : o.intl.string(o.t.uQn9Bw);
+  let b = d ? o.d : o.Z;
+  t = c ? u ? a.intl.string(a.t.S5anIS) : a.intl.string(a.t.q3O3Jy) : s ? a.intl.string(a.t.fjBNo6) : a.intl.string(a.t.uQn9Bw);
   let {
     Component: _,
     events: y,

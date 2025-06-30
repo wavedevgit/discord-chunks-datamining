@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(772848),
+  o = n.n(l),
+  a = n(772848),
   s = n(535655),
   c = n(973693),
   u = n(912370),
@@ -36,14 +36,14 @@ var r = n(255367),
   R = n(388032),
   k = n(210408);
 let M = c.Y.APP_LAUNCHER_IN_VOICE_BANNER,
-  L = "vc-activities-".concat((0, o.Z)());
+  L = "vc-activities-".concat((0, a.Z)());
 
 function D(e) {
   var t;
   let n, {
       channel: l,
-      openInPopout: a,
-      onClick: o
+      openInPopout: o,
+      onClick: a
     } = e,
     {
       fetchState: c,
@@ -89,12 +89,12 @@ function D(e) {
     className: k.clickableBanner,
     innerRef: C,
     onClick: () => {
-      o(), (0, y.Z)({
+      a(), (0, y.Z)({
         context: {
           type: "channel",
           channel: l
         },
-        openInPopout: a,
+        openInPopout: o,
         analyticsLocation: m.Z.APP_LAUNCHER_IN_VOICE_BANNER,
         initialState: {
           applicationId: g.application.id
@@ -114,7 +114,7 @@ let U = i.forwardRef(function(e, t) {
   var n;
   let {
     channel: l,
-    isHovered: o,
+    isHovered: a,
     closePopout: s,
     onMouseEnter: c,
     onMouseLeave: u,
@@ -130,8 +130,8 @@ let U = i.forwardRef(function(e, t) {
       guild_id: v
     })
   }, [x, v]), i.useEffect(() => {
-    o || s()
-  }, [s, o]);
+    a || s()
+  }, [s, a]);
   let j = (0, h.bp)(),
     {
       analyticsLocations: E
@@ -228,7 +228,7 @@ let U = i.forwardRef(function(e, t) {
               animatedDivClass: k.activitySuggestion,
               commandOrigin: C.bB.MINI_SHELF
             }, e.application.id)), (0, r.jsx)("div", {
-              className: a()(k.wumpusRocketOuterContainer, {
+              className: o()(k.wumpusRocketOuterContainer, {
                 [k.wumpusReducedMotion]: y
               }),
               children: (0, r.jsx)("div", {

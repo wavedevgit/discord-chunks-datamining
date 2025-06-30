@@ -1,16 +1,16 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685), n(539854);
 var r = n(442837),
   i = n(136015),
   l = n(565799),
-  a = n(501655);
+  o = n(501655);
 
-function o(e) {
+function a(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 3,
     [n] = (0, r.e7)([l.Z], () => {
-      let n = l.Z.getMutableParticipants(e).filter(e => e.type === a.Ui.VOICE),
+      let n = l.Z.getMutableParticipants(e).filter(e => e.type === o.Ui.VOICE),
         r = [];
       for (let e of n) {
         if (r.length >= t) break;

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(481060),
-  o = n(23536),
+  o = n(481060),
+  a = n(23536),
   s = n(40851),
   c = n(731290),
   u = n(306680),
@@ -62,17 +62,17 @@ let _ = function(e) {
   }
   return i.useEffect(() => (p.S.subscribe(f.CkL.TOGGLE_CHANNEL_PINS, j), () => {
     p.S.unsubscribe(f.CkL.TOGGLE_CHANNEL_PINS, j)
-  }), [j]), (0, r.jsx)(a.yRy, {
+  }), [j]), (0, r.jsx)(o.yRy, {
     targetElementRef: v,
     shouldShow: _,
-    animation: a.yRy.Animation.NONE,
+    animation: o.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: !1,
     ignoreModalClicks: !0,
     onRequestClose: () => y(!1),
     renderPopout: function(e) {
-      return (0, r.jsx)(o.Z, b(g({}, e), {
+      return (0, r.jsx)(a.Z, b(g({}, e), {
         onJump: O,
         channel: t
       }))
@@ -86,7 +86,7 @@ let _ = function(e) {
         ref: v,
         onClick: j,
         tooltip: i ? null : m.intl.string(m.t["mp1N//"]),
-        icon: a.qQX,
+        icon: o.qQX,
         iconSize: 20,
         "aria-label": m.intl.string(m.t["mp1N//"]),
         disabled: n,

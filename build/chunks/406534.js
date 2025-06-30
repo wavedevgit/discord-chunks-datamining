@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(481060),
-  o = n(904245),
+  o = n(481060),
+  a = n(904245),
   s = n(966390),
   c = n(902840),
   u = n(607070),
@@ -83,10 +83,10 @@ let er = i.memo(function(e) {
     channel: n,
     user: i,
     isGroupStart: l,
-    compact: a
+    compact: o
   } = e;
   return (0, r.jsx)(H.Z, {
-    compact: a,
+    compact: o,
     isGroupStart: l,
     channel: n,
     message: new Z.ZP({
@@ -117,8 +117,8 @@ function ei(e) {
       messages: H,
       unreadCount: ei,
       showNewMessagesBar: el,
-      messageDisplayCompact: ea,
-      channelStream: eo,
+      messageDisplayCompact: eo,
+      channelStream: ea,
       uploads: es,
       scrollManager: ec,
       specs: eu,
@@ -164,7 +164,7 @@ function ei(e) {
   (0, K.Z)();
   let eZ = null,
     eN = [],
-    eT = eo.map((e, t) => {
+    eT = ea.map((e, t) => {
       if (e.type === J.ys_.DIVIDER) {
         var n, i;
         let l = null != e.unreadId;
@@ -172,10 +172,10 @@ function ei(e) {
           index: t,
           item: e,
           channel: f,
-          isBeforeGroup: null == e.content && en(eo[t + 1])
+          isBeforeGroup: null == e.content && en(ea[t + 1])
         }) : (0, r.jsx)(z.Z, {
           isUnread: l,
-          isBeforeGroup: null == e.content && en(eo[t + 1]),
+          isBeforeGroup: null == e.content && en(ea[t + 1]),
           id: l ? Q.j1 : void 0,
           children: e.content
         }, "divider-".concat(null != (i = null != (n = e.contentKey) ? n : e.unreadId) ? i : t))
@@ -183,7 +183,7 @@ function ei(e) {
       if (e.type === J.ys_.FORUM_POST_ACTION_BAR) return (0, r.jsx)(g.Z, {
         parentChannelId: f.parent_id,
         postId: f.id,
-        isLastItem: t + 1 === eo.length,
+        isLastItem: t + 1 === ea.length,
         isFirstMessage: !0
       }, "forum-post-action-bar-".concat(f.id));
       if (e.type === J.ys_.MESSAGE_GROUP_BLOCKED || e.type === J.ys_.MESSAGE_GROUP_IGNORED || e.type === J.ys_.MESSAGE_GROUP_SPAMMER) {
@@ -192,7 +192,7 @@ function ei(e) {
           unreadId: Q.j1,
           messages: e,
           channel: f,
-          compact: ea,
+          compact: eo,
           collapsedReason: t
         }, e.key)
       }
@@ -200,22 +200,22 @@ function ei(e) {
       let l = N.Z.can(J.Plq.CREATE_INSTANT_INVITE, f);
       if ((0, D.Z)(e.content, l)) return;
       e.type === J.ys_.MESSAGE && null == eZ && (eZ = e);
-      let a = e.groupId === (null == eZ ? void 0 : eZ.groupId) ? eZ.content.id : e.groupId,
-        o = eP && e.content.isFirstMessageInForumPost(f),
+      let o = e.groupId === (null == eZ ? void 0 : eZ.groupId) ? eZ.content.id : e.groupId,
+        a = eP && e.content.isFirstMessageInForumPost(f),
         s = e.type === J.ys_.THREAD_STARTER_MESSAGE ? G.Ru : G.ZP;
       return (0, r.jsx)(s, {
-        compact: ea && !o,
+        compact: eo && !a,
         channel: f,
         message: e.content,
-        groupId: a,
+        groupId: o,
         flashKey: e.flashKey,
         id: (0, L.p)(f.id, e.content.id),
-        isLastItem: t >= eo.length - 1,
-        renderContentOnly: eI || o
+        isLastItem: t >= ea.length - 1,
+        renderContentOnly: eI || a
       }, e.content.id)
     });
   eN.push(...eT);
-  let eA = eo[eo.length - 1];
+  let eA = ea[ea.length - 1];
   if (null != em && es.forEach((e, t) => {
       let n = 0 === t && (0, U.J)(f, eA, new Z.ZP({
         type: J.uaV.DEFAULT,
@@ -226,7 +226,7 @@ function ei(e) {
         channel: f,
         user: em,
         isGroupStart: n,
-        compact: ea
+        compact: eo
       }, "upload-".concat(e.id)))
     }), H.hasMoreBefore && null == ed) {
     H.length > 0 && eN.unshift((0, r.jsx)("div", {
@@ -239,25 +239,25 @@ function ei(e) {
       useReducedMotion: e
     } = u.Z;
     (e && eg() || !e) && eN.unshift((0, r.jsx)(Y.ZP, et({
-      compact: ea
+      compact: eo
     }, eu), "has-more"))
   }
   if (H.hasMoreBefore && null == ed || eN.unshift((0, r.jsx)(m.Z, {
       channel: f,
       showingBanner: ep
     }, "empty-message")), H.hasMoreAfter && eN.push((0, r.jsx)(Y.ZP, et({
-      compact: ea
+      compact: eo
     }, eu), "has-more-after")), !ep && eb && eg() && eN.push((0, r.jsx)(q.Z, {
       channel: f
     })), ei > 0 && el && eg()) {
     let e, t, n = T.ZP.getOldestUnreadTimestamp(f.id),
       l = 0 !== n ? n : M.default.extractTimestamp(f.id),
-      o = (0, R.KC)(new Date, new Date(l));
-    if (T.ZP.isEstimated(f.id) ? (e = o ? ee.t.wvtbbG : ee.t.tHqbtr, t = ee.t.vaPWFR) : (e = o ? ee.t.BctFHx : ee.t["3wXb9P"], t = ee.t["4H8ldH"]), ey && (0, c.tW)(f) && eO.includes(X.E.SUMMARIES)) {
+      a = (0, R.KC)(new Date, new Date(l));
+    if (T.ZP.isEstimated(f.id) ? (e = a ? ee.t.wvtbbG : ee.t.tHqbtr, t = ee.t.vaPWFR) : (e = a ? ee.t.BctFHx : ee.t["3wXb9P"], t = ee.t["4H8ldH"]), ey && (0, c.tW)(f) && eO.includes(X.E.SUMMARIES)) {
       let n = T.ZP.ackMessageId(f.id),
-        o = (0, I.q)(f.id, T.ZP.getOldestUnreadMessageId(f.id));
+        a = (0, I.q)(f.id, T.ZP.getOldestUnreadMessageId(f.id));
       if ((0, d.yw)(J.rMx.SUMMARIES_UNREAD_BAR_VIEWED, {
-          num_unread_summaries: o,
+          num_unread_summaries: a,
           num_unread_messages: ei,
           last_ack_message_id: n,
           summaries_enabled_by_user: eC,
@@ -270,8 +270,8 @@ function ei(e) {
           timestamp: l
         });
         if (eC) {
-          let e = o > 0 ? (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(a.Text, {
+          let e = a > 0 ? (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
               color: "currentColor",
               children: ee.intl.format(t, {
@@ -284,14 +284,14 @@ function ei(e) {
               },
               height: 4,
               width: 4
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
               color: "currentColor",
               children: ee.intl.format(ee.t.CBftDQ, {
-                count: o
+                count: a
               })
             })]
-          }) : (0, r.jsx)(a.Text, {
+          }) : (0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
             children: n
@@ -308,8 +308,8 @@ function ei(e) {
               textTransform: "none",
               alignItems: "center"
             },
-            children: o > 0 ? (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(a.Text, {
+            children: a > 0 ? (0, r.jsxs)(r.Fragment, {
+              children: [(0, r.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 color: "currentColor",
                 children: ee.intl.format(t, {
@@ -322,14 +322,14 @@ function ei(e) {
                 },
                 height: 4,
                 width: 4
-              }), (0, r.jsx)(a.Text, {
+              }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 color: "currentColor",
                 children: ee.intl.format(ee.t.CBftDQ, {
-                  count: o
+                  count: a
                 })
               })]
-            }) : (0, r.jsx)(a.Text, {
+            }) : (0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
               color: "currentColor",
               children: n
@@ -356,7 +356,7 @@ function ei(e) {
     loading: H.loadingMore,
     onClick: () => {
       var e;
-      return e = f.id, void o.Z.fetchMessages({
+      return e = f.id, void a.Z.fetchMessages({
         channelId: e,
         limit: J.AQB,
         truncate: !0
@@ -373,7 +373,7 @@ function ei(e) {
     }) : null != e ? (0, r.jsx)(W.DR, {
       type: W.A7.REPLY,
       onClick: () => {
-        o.Z.jumpToMessage({
+        a.Z.jumpToMessage({
           channelId: f.id,
           messageId: e,
           flash: !0
@@ -382,7 +382,7 @@ function ei(e) {
       className: ef
     }) : (0, r.jsx)(W.DR, {
       onClick: () => (function(e) {
-        o.Z.jumpToPresent(e.id, J.AQB);
+        a.Z.jumpToPresent(e.id, J.AQB);
         let t = A.Z.getChannelId();
         e.id === t && (0, C.Kh)(e.id)
       })(f),

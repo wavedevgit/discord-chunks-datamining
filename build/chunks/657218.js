@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(481060),
   c = n(430742),
   u = n(144144),
@@ -70,11 +70,11 @@ function Y(e) {
     parentChannelId: t,
     parentMessageId: n,
     location: i
-  } = e, l = (0, o.e7)([P.Z], () => P.Z.getChannel(t)), {
-    analyticsLocations: a
+  } = e, l = (0, a.e7)([P.Z], () => P.Z.getChannel(t)), {
+    analyticsLocations: o
   } = (0, g.ZP)(m.Z.CREATE_THREAD);
   return null == l ? null : (0, r.jsx)(g.Gt, {
-    value: a,
+    value: o,
     children: (0, r.jsx)(w.I3, {
       children: (0, r.jsxs)("section", {
         "aria-label": H.intl.string(H.t.rBIGBA),
@@ -135,7 +135,7 @@ function K(e) {
     parentChannel: t,
     parentMessageId: n,
     location: l
-  } = e, u = (0, o.e7)([f.Z], () => f.Z.messageGroupSpacing), d = function() {
+  } = e, u = (0, a.e7)([f.Z], () => f.Z.messageGroupSpacing), d = function() {
     let e = i.useContext(w.oo);
     return i.useCallback(() => {
       e.bumpDispatchPriority()
@@ -194,14 +194,14 @@ function K(e) {
       parentMessageId: n,
       threadSettings: r,
       privateThreadMode: l,
-      textAreaState: a,
-      location: o
+      textAreaState: o,
+      location: a
     } = e, [s, c] = i.useState(null), [u, d] = i.useState(null), [p, h] = i.useState(!1), f = (0, B.Z)({
       parentChannel: t,
       parentMessageId: n,
       threadSettings: r,
       privateThreadMode: l,
-      location: o,
+      location: a,
       onThreadCreated: U.ok,
       useDefaultThreadName: !0
     });
@@ -209,12 +209,12 @@ function K(e) {
       nameError: s,
       messageError: u,
       submit: i.useCallback(async (e, i, l) => {
-        var o, s, u;
+        var a, s, u;
         if (p) return {
           shouldClear: !1,
           shouldRefocus: !1
         };
-        h(!0), null == e && (e = a.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null == (o = E.Z.getStickerPreview(t.id, W.drafts.type)) ? void 0 : o.map(e => e.id)), (null == l || 0 === l.length) && (l = A.Z.getUploads(t.id, Z.d.FirstThreadMessage));
+        h(!0), null == e && (e = o.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null == (a = E.Z.getStickerPreview(t.id, W.drafts.type)) ? void 0 : a.map(e => e.id)), (null == l || 0 === l.length) && (l = A.Z.getUploads(t.id, Z.d.FirstThreadMessage));
         let m = null != (s = r.name) ? s : "",
           g = null == n && 0 === m.length,
           b = "" === e && (null == i || 0 === i.length) && 0 === l.length;
@@ -249,7 +249,7 @@ function K(e) {
           shouldClear: !0,
           shouldRefocus: !1
         }
-      }, [f, a.textValue, r.name, n, t, p]),
+      }, [f, o.textValue, r.name, n, t, p]),
       submitting: p
     }
   }({
@@ -265,7 +265,7 @@ function K(e) {
     onMouseDown: d,
     onFocus: d,
     children: (0, r.jsx)("div", {
-      className: a()(G.messagesWrapper, "group-spacing-".concat(u)),
+      className: o()(G.messagesWrapper, "group-spacing-".concat(u)),
       children: (0, r.jsxs)("form", {
         onSubmit: e => {
           e.preventDefault(), O()
@@ -326,7 +326,7 @@ function X(e) {
     threadSettings: n,
     updateThreadSettings: i,
     privateThreadMode: l
-  } = e, a = (0, L.oD)(n, l), o = (0, r.jsx)("div", {
+  } = e, o = (0, L.oD)(n, l), a = (0, r.jsx)("div", {
     className: G.privateThreadFormTitle,
     children: (0, r.jsx)("span", {
       className: G.privateThreadFormTitleText,
@@ -336,7 +336,7 @@ function X(e) {
     className: G.checkbox,
     type: s.XZJ.Types.INVERTED,
     disabled: l === L.Jw.PrivateOnly,
-    value: a,
+    value: o,
     onChange: (e, t) => i({
       isPrivate: t
     }),
@@ -347,9 +347,9 @@ function X(e) {
     })
   });
   return t || l === L.Jw.Disabled ? null : (0, r.jsxs)(s.hjN, {
-    title: o,
+    title: a,
     className: G.formSection,
-    children: [c, a ? (0, r.jsx)(s.Text, {
+    children: [c, o ? (0, r.jsx)(s.Text, {
       className: G.privateThreadDescription,
       variant: "text-xs/normal",
       color: "header-secondary",
@@ -364,10 +364,10 @@ function Q(e) {
     parentChannel: n,
     parentMessageId: i,
     threadSettings: l,
-    updateThreadSettings: a,
-    error: o,
+    updateThreadSettings: o,
+    error: a,
     disabled: c
-  } = e, d = null != (t = l.name) ? t : "", p = (0, M.Op)(o, {
+  } = e, d = null != (t = l.name) ? t : "", p = (0, M.Op)(a, {
     content: d
   }), h = (0, L.Od)(n, i), f = null != i, m = (0, x.Dt)();
   return (0, r.jsx)(s.hjN, {
@@ -381,13 +381,13 @@ function Q(e) {
       placeholder: "" !== h ? h : H.intl.string(H.t["Nb2/RE"]),
       maxLength: F.HN8,
       onChange: e => {
-        a({
+        o({
           name: (0, D.Z)(e, !1)
         }), "" !== e ? u.Z.startTyping(n.id) : u.Z.stopTyping(n.id)
       },
       onBlur: () => {
         let e = (0, D.Z)(d, !0);
-        e !== d && a({
+        e !== d && o({
           name: e
         })
       },
@@ -424,7 +424,7 @@ function J(e) {
     event: F.CkL.TEXTAREA_BLUR,
     handler: g
   });
-  let x = (0, o.e7)([T.Z], () => T.Z.can(F.Plq.ATTACH_FILES, t)),
+  let x = (0, a.e7)([T.Z], () => T.Z.can(F.Plq.ATTACH_FILES, t)),
     v = (0, M.Op)(p, {
       content: n.textValue
     });
@@ -445,8 +445,8 @@ function J(e) {
       textValue: n.textValue,
       richValue: n.richValue,
       focused: h,
-      className: a()(G.channelTextArea, G.channelTextAreaWithTypingIndicator),
-      innerClassName: a()(G.channelTextAreaInner, {
+      className: o()(G.channelTextArea, G.channelTextAreaWithTypingIndicator),
+      innerClassName: o()(G.channelTextAreaInner, {
         [G.channelTextAreaInnerError]: null != v
       }),
       onFocus: m,
@@ -462,7 +462,7 @@ function $(e) {
   let {
     parentChannel: t,
     parentMessageId: n
-  } = e, i = (0, o.e7)([N.Z], () => null == n ? null : N.Z.getMessage(t.id, n)), l = I.jU.useSetting();
+  } = e, i = (0, a.e7)([N.Z], () => null == n ? null : N.Z.getMessage(t.id, n)), l = I.jU.useSetting();
   return null != i ? (0, r.jsx)(O.Z, {
     className: G.messagePreview,
     message: i,

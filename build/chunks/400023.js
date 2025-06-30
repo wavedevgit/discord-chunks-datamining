@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(695469),
+  o = n.n(l),
+  a = n(695469),
   s = n(91192),
   c = n(442837),
   u = n(481060),
@@ -203,12 +203,12 @@ let W = i.memo(function(e) {
     let ei = (0, u.mFp)(),
       el = (0, s.l2)(Q),
       {
-        ref: ea
+        ref: eo
       } = el,
-      eo = z(el, ["ref"]),
+      ea = z(el, ["ref"]),
       es = (0, h.Z)(e => {
         var t;
-        X.ref.current = e, ea.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
+        X.ref.current = e, eo.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
       }),
       {
         fadeStart: ec,
@@ -224,15 +224,15 @@ let W = i.memo(function(e) {
       });
     return (0, r.jsxs)(s.bG, {
       navigator: Q,
-      children: [null != er && er, (0, r.jsxs)(o.animated.div, {
-        className: a()(H.messagesWrapper, l, "group-spacing-".concat(p)),
+      children: [null != er && er, (0, r.jsxs)(a.animated.div, {
+        className: o()(H.messagesWrapper, l, "group-spacing-".concat(p)),
         style: W ? {
-          mask: (0, o.to)([ec, eu], (e, t) => "linear-gradient(180deg, black 0%, black calc(100% - ".concat(e, "px), rgba(0,0,0,0) calc(100% - ").concat(t, "px), rgba(0,0,0,0) 100%)"))
+          mask: (0, a.to)([ec, eu], (e, t) => "linear-gradient(180deg, black 0%, black calc(100% - ".concat(e, "px), rgba(0,0,0,0) calc(100% - ").concat(t, "px), rgba(0,0,0,0) 100%)"))
         } : void 0,
         children: [null == er && ee, (0, r.jsxs)(u.eTT, V(G({
           ref: es,
           customTheme: !0,
-          className: a()(m, H.scroller),
+          className: o()(m, H.scroller),
           contentClassName: H.scrollerContent,
           onResize: X.handleResize,
           onScroll: X.handleScroll,
@@ -242,20 +242,20 @@ let W = i.memo(function(e) {
           tabIndex: -1,
           role: "group",
           children: [en, (0, r.jsxs)("ol", V(G({
-            className: a()(H.scrollerInner, {
+            className: o()(H.scrollerInner, {
               [H.scrollerAllowSticky]: g.isModeratorReportChannel()
             }),
             "aria-label": F.intl.formatToPlainString(F.t.XarRiI, {
               channelName: g.name
             })
-          }, eo), {
+          }, ea), {
             children: [(0, r.jsx)("span", {
               className: H.navigationDescription,
               id: "messagesNavigationDescription",
               "aria-hidden": !0,
               children: F.intl.string(F.t.Spb3s7)
             }), $, (0, r.jsx)("div", {
-              className: a()({
+              className: o()({
                 [H.scrollerSpacer]: !T,
                 [H.empty]: 0 === b.length && !b.loadingMore,
                 [H.emptyForum]: 1 === b.length && !b.loadingMore && g.isForumPost() && (null == (t = b.first()) ? void 0 : t.isFirstMessageInForumPost(g))
@@ -271,8 +271,8 @@ let W = i.memo(function(e) {
       channel: t,
       showingQuarantineBanner: n,
       hideSummaries: l = !1,
-      forceCompact: a = !1,
-      forceCozy: o = !1,
+      forceCompact: o = !1,
+      forceCozy: a = !1,
       typingGradient: s = !1,
       isChatInputBottomAligned: u = !1
     } = e, d = z(e, ["channel", "showingQuarantineBanner", "hideSummaries", "forceCompact", "forceCozy", "typingGradient", "isChatInputBottomAligned"]);
@@ -340,13 +340,13 @@ let W = i.memo(function(e) {
           return null != (t = Z.ZP.getOldestUnreadMessageId(e.id)) ? t : null
         }, [e.id]),
         {
-          enabled: a
+          enabled: o
         } = y.Z.useExperiment({
           location: "41de6d_1"
         }, {
           autoTrackExposure: !1
         }),
-        o = null != (n = null == (t = T.default.getUser(j.default.getId())) ? void 0 : t.hasFlag(B.xW$.SPAMMER)) && n,
+        a = null != (n = null == (t = T.default.getUser(j.default.getId())) ? void 0 : t.hasFlag(B.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, _.Z)("use_topic_dividers_in_chat"),
         d = (0, c.Wu)([x.Z], () => {
@@ -368,10 +368,10 @@ let W = i.memo(function(e) {
         channel: e,
         messages: r,
         oldestUnreadMessageId: l,
-        treatSpam: a && !o,
+        treatSpam: o && !a,
         summaries: d,
         selectedSummary: h
-      }), [r, e, l, a, d, h, f, o]);
+      }), [r, e, l, o, d, h, f, a]);
       return {
         messages: r,
         channelStream: b,
@@ -389,7 +389,7 @@ let W = i.memo(function(e) {
           messageGroupSpacing: A,
           showNewMessagesBar: !0,
           channel: t,
-          messageDisplayCompact: !o && (a || L),
+          messageDisplayCompact: !a && (o || L),
           messages: F,
           channelStream: H,
           permissionVersion: C,

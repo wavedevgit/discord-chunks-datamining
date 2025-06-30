@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(512722),
   l = n.n(i),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(24124),
   c = n(40851),
   u = n(906732),
@@ -74,9 +74,9 @@ function y(e) {
       parentAnalyticsLocation: w
     } = (0, u.ZP)(),
     R = null == y ? void 0 : y.getGuildId(),
-    k = (0, a.e7)([p.Z], () => null != R ? p.Z.getGuild(R) : null, [R]),
-    M = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : void 0),
-    L = null == t || O ? o.ejJ : o.gQj,
+    k = (0, o.e7)([p.Z], () => null != R ? p.Z.getGuild(R) : null, [R]),
+    M = (0, o.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : void 0),
+    L = null == t || O ? a.ejJ : a.gQj,
     D = null != t ? b.intl.string(b.t["OzOM/v"]) : b.intl.string(b.t["6F9ivr"]);
   return null != M && E ? (0, r.jsx)(m.Z, {
     onClick: () => {
@@ -97,27 +97,27 @@ function y(e) {
             guild: t,
             channel: i,
             streamUserId: l,
-            applicationId: a,
+            applicationId: o,
             appContext: s,
             exitFullScreen: c,
             analyticsLocation: u,
             guildScheduledEvent: d
           } = e;
-          null == c || c(), (0, o.ZDy)(async () => {
+          null == c || c(), (0, a.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
             return n => {
-              var o, s;
-              return (0, r.jsx)(e, (o = _({}, n), s = s = {
+              var a, s;
+              return (0, r.jsx)(e, (a = _({}, n), s = s = {
                 guild: t,
                 channel: i,
                 streamUserId: l,
-                applicationId: a,
+                applicationId: o,
                 analyticsLocation: u,
                 source: i.isGuildStageVoice() ? g.t4x.STAGE_CHANNEL : g.t4x.STREAM_INVITE,
                 guildScheduledEvent: d
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                   var r = Object.getOwnPropertySymbols(e);
@@ -125,12 +125,12 @@ function y(e) {
                 }
                 return n
               })(Object(s)).forEach(function(e) {
-                Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
-              }), o))
+                Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(s, e))
+              }), a))
             }
           }, {
             modalKey: "stream-invite-modal",
-            contextKey: s === g.IlC.POPOUT ? o.u1M : o.z1l
+            contextKey: s === g.IlC.POPOUT ? a.u1M : a.z1l
           })
         }({
           guild: k,

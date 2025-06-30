@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(120356),
   l = n.n(i),
-  a = n(481060),
-  o = n(641360),
+  o = n(481060),
+  a = n(641360),
   s = n(140106),
   c = n(388032),
   u = n(639041);
@@ -19,14 +19,14 @@ function d(e) {
     editable: d,
     location: p
   } = e;
-  return (0, o.I3)("HeaderBarMaybeClickableGdmIcon", t.id, {
+  return (0, a.I3)("HeaderBarMaybeClickableGdmIcon", t.id, {
     autoTrackExposure: d
-  }) && d ? (0, r.jsx)(a.ua7, {
+  }) && d ? (0, r.jsx)(o.ua7, {
     position: "bottom",
     text: c.intl.string(c.t["0qPSMT"]),
     children: e => {
-      var o, c;
-      return (0, r.jsxs)(a.P3F, (o = function(e) {
+      var a, c;
+      return (0, r.jsxs)(o.P3F, (a = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -48,12 +48,12 @@ function d(e) {
         onClick: () => (0, s.P5)(t.id, p),
         children: [n, (0, r.jsx)("div", {
           className: u.editableGdmIconIndicator,
-          children: (0, r.jsx)(a.vdY, {
+          children: (0, r.jsx)(o.vdY, {
             size: "xs",
             color: "currentColor"
           })
         })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
@@ -61,8 +61,8 @@ function d(e) {
         }
         return n
       })(Object(c)).forEach(function(e) {
-        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(c, e))
-      }), o))
+        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(c, e))
+      }), a))
     }
   }) : (0, r.jsx)("div", {
     className: i,

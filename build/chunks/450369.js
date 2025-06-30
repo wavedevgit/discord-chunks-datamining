@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(512722),
-  a = n.n(l),
-  o = n(990547),
+  o = n.n(l),
+  a = n(990547),
   s = n(442837),
   c = n(481060),
   u = n(475179),
@@ -74,8 +74,8 @@ let D = 16 / 9,
       stageParticipant: t,
       rtcParticipant: n,
       channel: l,
-      guildId: a,
-      user: o,
+      guildId: o,
+      user: a,
       width: s,
       isModerator: u,
       onContextMenu: d,
@@ -89,8 +89,8 @@ let D = 16 / 9,
     } = t;
     return (0, r.jsx)(O.Z, {
       targetElementRef: h,
-      user: o,
-      guildId: a,
+      user: a,
+      guildId: o,
       channelId: l.id,
       clickTrap: !0,
       children: e => (0, r.jsx)(c.P3F, L(M({
@@ -119,8 +119,8 @@ let D = 16 / 9,
       stageParticipant: t,
       rtcParticipant: n,
       channel: l,
-      width: a,
-      isModerator: o,
+      width: o,
+      isModerator: a,
       onContextMenu: d,
       inPopout: h
     } = e, {
@@ -156,8 +156,8 @@ let D = 16 / 9,
       onClick: N,
       onContextMenu: d,
       pulseSpeakingIndicator: !f.enabled,
-      width: a,
-      children: o && n.type === R.fO.USER && (0, r.jsx)(A.Z, {})
+      width: o,
+      children: a && n.type === R.fO.USER && (0, r.jsx)(A.Z, {})
     }, m)
   },
   F = i.memo(function(e) {
@@ -169,15 +169,15 @@ let D = 16 / 9,
     } = e, {
       newestAnalyticsLocation: u
     } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), y = l.getGuildId(), C = S.default.getId();
-    a()(null != y, "Channel cannot be guildless");
+    o()(null != y, "Channel cannot be guildless");
     let {
       user: x
     } = i, v = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), O = (0, s.e7)([N.ZP], () => N.ZP.isModerator(x.id, l.id), [l.id, x.id]);
     if (null == v || v.type === R.fO.ACTIVITY) return null;
     let E = e => {
         (0, g.h)({
-          type: o.ImpressionTypes.MENU,
-          name: o.ImpressionNames.CALL_TILE_CONTEXT_MENU,
+          type: a.ImpressionTypes.MENU,
+          name: a.ImpressionNames.CALL_TILE_CONTEXT_MENU,
           properties: {
             location: "StageTile",
             is_tile_owner: x.id === C,
@@ -185,7 +185,7 @@ let D = 16 / 9,
           }
         })
       },
-      I = (e, t, i, a) => {
+      I = (e, t, i, o) => {
         switch (e.type) {
           case R.fO.HIDDEN_STREAM:
           case R.fO.STREAM:
@@ -198,7 +198,7 @@ let D = 16 / 9,
                 appContext: p,
                 exitFullscreen: () => {},
                 onInteraction: (0, _.u)("StreamContextMenu", u, {
-                  entrypoint: a,
+                  entrypoint: o,
                   targetUserId: x.id,
                   tileType: R.TH.STREAM
                 })

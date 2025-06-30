@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(481060),
-  o = n(570140),
+  o = n(481060),
+  a = n(570140),
   s = n(45114),
   c = n(147754),
   u = n(306680),
@@ -48,7 +48,7 @@ let O = e => {
   });
   i.useEffect(() => () => {
     let e = u.ZP.lastMessageId(O.id);
-    null != e && o.Z.wait(() => {
+    null != e && a.Z.wait(() => {
       (0, s.In)(O.id, {
         object: v.qAy.ACK_GUILD_DIRECTORY_CHANNEL_VIEWED,
         objectType: v.Qqv.ACK_AUTOMATIC
@@ -102,7 +102,7 @@ let O = e => {
     })
   }, [O.id, E.id, S]);
   let F = (0, g.G)(O) ? () => {
-      (0, a.ZDy)(async () => {
+      (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("79764").then(n.bind(n, 533202));
@@ -163,7 +163,7 @@ let O = e => {
     searchFetching: w
   }) : null == T && null == S ? (0, r.jsx)("div", {
     className: j.pageContainer,
-    children: (0, r.jsx)(a.$jN, {
+    children: (0, r.jsx)(o.$jN, {
       className: j.spinner
     })
   }) : (null == T ? void 0 : T.length) === 0 && null == S ? (0, r.jsx)("div", {

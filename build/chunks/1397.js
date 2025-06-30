@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(512722),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(481060),
   c = n(893776),
   u = n(528963),
@@ -100,8 +100,8 @@ class G extends i.PureComponent {
       notClaimed: n,
       notPhoneVerified: i,
       notEmailVerified: l,
-      newMember: a,
-      memberDeadline: o,
+      newMember: o,
+      memberDeadline: a,
       newAccount: c,
       accountDeadline: u,
       theme: d,
@@ -138,9 +138,9 @@ class G extends i.PureComponent {
         break;
       default:
         j.message = D.intl.string(D.t.rEBKvr), j.buttonText = D.intl.string(D.t["r8/DT0"]), j.buttonColor = s.Ttl.BRAND, j.onButtonClick = this.handleShowMemberVerification
-    } else i && !y ? (j.message = D.intl.string(D.t["2dThMD"]), j.buttonText = D.intl.string(D.t["50gfOj"]), j.onButtonClick = this.handleVerifyPhone) : l ? (j.message = D.intl.string(D.t.FkGPS0), j.buttonText = D.intl.string(D.t.lm1UKi), j.onButtonClick = this.handleResendVerification) : a ? (j.message = D.intl.formatToPlainString(D.t.IH7RMD, {
+    } else i && !y ? (j.message = D.intl.string(D.t["2dThMD"]), j.buttonText = D.intl.string(D.t["50gfOj"]), j.onButtonClick = this.handleVerifyPhone) : l ? (j.message = D.intl.string(D.t.FkGPS0), j.buttonText = D.intl.string(D.t.lm1UKi), j.onButtonClick = this.handleResendVerification) : o ? (j.message = D.intl.formatToPlainString(D.t.IH7RMD, {
       min: M.YeM.MEMBER_AGE
-    }), j.countdown = o) : c && (j.message = D.intl.formatToPlainString(D.t["2JA2GB"], {
+    }), j.countdown = a) : c && (j.message = D.intl.formatToPlainString(D.t["2JA2GB"], {
       min: M.YeM.ACCOUNT_AGE
     }), j.countdown = u);
     return (0, r.jsx)(s.yRy, {
@@ -183,7 +183,7 @@ class G extends i.PureComponent {
       } = e, {
         guild: n
       } = this.props;
-      return a()(null != n, "This guildID cannot be null"), (0, r.jsx)(j.Z, {
+      return o()(null != n, "This guildID cannot be null"), (0, r.jsx)(j.Z, {
         onClose: t,
         guild: n
       })
@@ -293,7 +293,7 @@ class G extends i.PureComponent {
       let {
         guild: e
       } = this.props;
-      return a()(null != e, "GuildVerification.renderLurkerModeUpsellPopout - guild cannot be undefined"), (0, r.jsx)(O.Z, {
+      return o()(null != e, "GuildVerification.renderLurkerModeUpsellPopout - guild cannot be undefined"), (0, r.jsx)(O.Z, {
         type: O.s.CHAT,
         guild: e,
         closePopout: this.closeLurkerModeUpsellPopout
@@ -323,10 +323,10 @@ function V(e) {
   let {
     channel: i,
     children: l
-  } = e, a = i.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([T.Z], () => T.Z.getCheck(a)), u = i.type === M.d4z.GUILD_ANNOUNCEMENT && null != s && s.hasFeature(M.oNc.NEWS), d = (0, o.e7)([P.Z], () => u ? P.Z.getFollowerStatsForChannel(i.id) : null), h = (0, o.e7)([v.Z], () => v.Z.isLurking(a)), f = (0, o.e7)([w.default], () => w.default.getCurrentUser()), m = null != (t = null == f ? void 0 : f.isStaff()) && t, g = (0, o.e7)([Z.ZP], () => {
+  } = e, o = i.getGuildId(), s = (0, a.e7)([N.Z], () => N.Z.getGuild(o)), c = (0, a.e7)([T.Z], () => T.Z.getCheck(o)), u = i.type === M.d4z.GUILD_ANNOUNCEMENT && null != s && s.hasFeature(M.oNc.NEWS), d = (0, a.e7)([P.Z], () => u ? P.Z.getFollowerStatsForChannel(i.id) : null), h = (0, a.e7)([v.Z], () => v.Z.isLurking(o)), f = (0, a.e7)([w.default], () => w.default.getCurrentUser()), m = null != (t = null == f ? void 0 : f.isStaff()) && t, g = (0, a.e7)([Z.ZP], () => {
     var e, t;
-    return null != f && null != (t = null == (e = Z.ZP.getMember(a, f.id)) ? void 0 : e.isPending) && t
-  }), C = !!(0, _.Dc)(s), j = (0, o.e7)([x.Z], () => x.Z.shouldShowPopout(a)), O = (0, o.e7)([A.Z], () => A.Z.can(M.Plq.SEND_MESSAGES, i)), E = (0, o.e7)([y.Z], () => y.Z.getRequest(a)), S = H(F({}, c), {
+    return null != f && null != (t = null == (e = Z.ZP.getMember(o, f.id)) ? void 0 : e.isPending) && t
+  }), C = !!(0, _.Dc)(s), j = (0, a.e7)([x.Z], () => x.Z.shouldShowPopout(o)), O = (0, a.e7)([A.Z], () => A.Z.can(M.Plq.SEND_MESSAGES, i)), E = (0, a.e7)([y.Z], () => y.Z.getRequest(o)), S = H(F({}, c), {
     guild: s,
     isLurking: h,
     isFollowable: u,

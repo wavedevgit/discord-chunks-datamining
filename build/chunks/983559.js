@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(695469),
-  a = n(597312),
-  o = n(481060),
+  o = n(597312),
+  a = n(481060),
   s = n(727637),
   c = n(410030),
   u = n(100527),
@@ -62,7 +62,7 @@ function w(e) {
     layout: "SIDEBAR",
     userId: t.id,
     channelId: w.id
-  }), B = i.useRef(null), F = (0, s.Z)(B), H = (0, g.$m)(), G = (0, o.q_F)({
+  }), B = i.useRef(null), F = (0, s.Z)(B), H = (0, g.$m)(), G = (0, a.q_F)({
     opacity: +(null != H.interactionType),
     config: {
       duration: 150
@@ -92,7 +92,7 @@ function w(e) {
           children: [null != H.interactionType && (0, r.jsx)(l.animated.div, {
             style: G,
             className: T.backdrop
-          }), (0, r.jsxs)(a.u2, {
+          }), (0, r.jsxs)(o.u2, {
             children: [(0, r.jsxs)(j.Z, {
               children: [(0, r.jsx)(O.Z, {
                 user: t,
@@ -142,10 +142,10 @@ function w(e) {
             })]
           }), !R && (0, r.jsx)("footer", {
             className: T.footer,
-            children: (0, r.jsx)(o.zxk, {
+            children: (0, r.jsx)(a.zxk, {
               fullWidth: !0,
-              size: o.zxk.Sizes.LARGE,
-              look: o.zxk.Looks.BLANK,
+              size: a.zxk.Sizes.LARGE,
+              look: a.zxk.Looks.BLANK,
               color: T.footerButtonColor,
               onClick: () => {
                 V(), (0, f.pQ)(A({

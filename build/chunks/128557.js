@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(748780),
+  o = n.n(l),
+  a = n(748780),
   s = n(442837),
   c = n(704215),
   u = n(481060),
@@ -69,14 +69,14 @@ function w(e) {
     className: t,
     iconUrl: n,
     icon: l,
-    header: o,
+    header: a,
     completed: s,
     onClick: c
   } = e, [d, h] = i.useState(!1), f = (0, p.Z)(s);
   return i.useEffect(() => {
     null != f && s !== f && (h(!0), setTimeout(() => h(!1), 1e3))
   }, [s, f]), (0, r.jsxs)(u.P3F, {
-    className: a()(t, N.card, {
+    className: o()(t, N.card, {
       [N.completed]: s
     }),
     onClick: c,
@@ -86,13 +86,13 @@ function w(e) {
       alt: ""
     }), (0, r.jsx)(u.Text, {
       color: "header-primary",
-      className: a()(N.cardTextContainer, N.cardHeader),
+      className: o()(N.cardTextContainer, N.cardHeader),
       variant: "text-sm/normal",
-      children: o
+      children: a
     }), s ? (0, r.jsx)(u.dz2, {
       size: "md",
       color: "currentColor",
-      className: a()(N.checkmark, {
+      className: o()(N.checkmark, {
         [N.animate]: d
       })
     }) : (0, r.jsx)(x.Z, {
@@ -149,7 +149,7 @@ function R(e) {
           channelId: I.lds
         })
       }, []),
-      a = i.useCallback(() => {
+      o = i.useCallback(() => {
         h.ZP.trackWithMetadata(I.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: P.Ft.CHANNEL_WELCOME,
           action: P.j7.PERSONALIZE_SERVER
@@ -160,7 +160,7 @@ function R(e) {
     return {
       handleInvite: t,
       handleMessage: l,
-      handlePersonalize: a,
+      handlePersonalize: o,
       handleDownload: i.useCallback(() => {
         h.ZP.trackWithMetadata(I.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: P.Ft.CHANNEL_WELCOME,
@@ -197,26 +197,26 @@ function R(e) {
     titleAnimatedStyle: Y,
     opacities: q
   } = function(e) {
-    let t = (0, d.Z)(() => new o.Z.Value(0)),
-      n = (0, d.Z)(() => new o.Z.Value(0)),
-      r = (0, d.Z)(() => [new o.Z.Value(0), new o.Z.Value(0), new o.Z.Value(0), new o.Z.Value(0)]);
+    let t = (0, d.Z)(() => new a.Z.Value(0)),
+      n = (0, d.Z)(() => new a.Z.Value(0)),
+      r = (0, d.Z)(() => [new a.Z.Value(0), new a.Z.Value(0), new a.Z.Value(0), new a.Z.Value(0)]);
     return i.useEffect(() => {
-      o.Z.stagger(300, [o.Z.parallel([o.Z.timing(n, {
+      a.Z.stagger(300, [a.Z.parallel([a.Z.timing(n, {
         toValue: 1,
         duration: 450
-      }), o.Z.timing(t, {
+      }), a.Z.timing(t, {
         toValue: 1,
         duration: 450
-      })]), o.Z.stagger(100, [o.Z.timing(r[0], {
+      })]), a.Z.stagger(100, [a.Z.timing(r[0], {
         toValue: 1,
         duration: 300
-      }), o.Z.timing(r[1], {
+      }), a.Z.timing(r[1], {
         toValue: 1,
         duration: 300
-      }), o.Z.timing(r[2], {
+      }), a.Z.timing(r[2], {
         toValue: 1,
         duration: 300
-      }), o.Z.timing(r[3], {
+      }), a.Z.timing(r[3], {
         toValue: 1,
         duration: 300
       })])]).start()
@@ -243,7 +243,7 @@ function R(e) {
       })()
     }, [null == l ? void 0 : l.id]), null == l) return null;
   let J = [];
-  p || (R && J.push((0, r.jsx)(o.Z.div, {
+  p || (R && J.push((0, r.jsx)(a.Z.div, {
     className: N.cardWrapper,
     style: W ? {
       opacity: q[J.length]
@@ -254,7 +254,7 @@ function R(e) {
       completed: D,
       onClick: F
     })
-  }, "invite")), k && J.push((0, r.jsx)(o.Z.div, {
+  }, "invite")), k && J.push((0, r.jsx)(a.Z.div, {
     className: N.cardWrapper,
     style: W ? {
       opacity: q[J.length]
@@ -265,7 +265,7 @@ function R(e) {
       completed: B,
       onClick: G
     })
-  }, "customize")), M && J.push((0, r.jsx)(o.Z.div, {
+  }, "customize")), M && J.push((0, r.jsx)(a.Z.div, {
     className: N.cardWrapper,
     style: W ? {
       opacity: q[J.length]
@@ -276,7 +276,7 @@ function R(e) {
       completed: U,
       onClick: H
     })
-  }, "message")), (0, O.isWeb)() && J.push((0, r.jsx)(o.Z.div, {
+  }, "message")), (0, O.isWeb)() && J.push((0, r.jsx)(a.Z.div, {
     className: N.cardWrapper,
     style: W ? {
       opacity: q[J.length]
@@ -287,7 +287,7 @@ function R(e) {
       completed: L,
       onClick: V
     })
-  }, "download")), J.push((0, r.jsx)(o.Z.div, {
+  }, "download")), J.push((0, r.jsx)(a.Z.div, {
     className: N.cardWrapper,
     style: W ? {
       opacity: q[J.length]
@@ -308,7 +308,7 @@ function R(e) {
       className: N.container,
       children: (0, r.jsxs)("div", {
         className: N.inner,
-        children: [(0, r.jsxs)(o.Z.div, {
+        children: [(0, r.jsxs)(a.Z.div, {
           style: Y,
           children: [(0, r.jsx)(u.X6q, {
             className: N.titleName,
@@ -318,7 +318,7 @@ function R(e) {
             })
           }), (0, r.jsxs)(u.Text, {
             color: "header-secondary",
-            className: a()({
+            className: o()({
               [N.subtitle]: !0,
               [N.noChildren]: 0 === J.length
             }),

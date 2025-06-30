@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(73800),
   i = n(442837),
   l = n(367907),
-  a = n(906732),
-  o = n(703656),
+  o = n(906732),
+  a = n(703656),
   s = n(626135),
   c = n(730647),
   u = n(289393),
@@ -27,7 +27,7 @@ function h(e) {
     return (null == (t = u.Z.getSubscriptionListing(e)) ? void 0 : t.published) === !0
   }), [m]), {
     analyticsLocations: C
-  } = (0, a.ZP)(null != (t = (0, o.DR)()) ? t : []), x = r.useRef(!1);
+  } = (0, o.ZP)(null != (t = (0, a.DR)()) ? t : []), x = r.useRef(!1);
   r.useEffect(() => {
     g && null != h && null != y && !x.current && (x.current = !0, s.default.track(p.rMx.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, function(e) {
       for (var t = 1; t < arguments.length; t++) {

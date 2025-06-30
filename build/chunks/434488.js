@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(704215),
+  o = n.n(l),
+  a = n(704215),
   s = n(692547),
   c = n(481060),
   u = n(493773),
@@ -65,23 +65,23 @@ function Z(e) {
     guild: n,
     width: i,
     inPopout: l,
-    handleClose: a,
-    userParticipantCount: o
+    handleClose: o,
+    userParticipantCount: a
   } = e;
   return i < 250 ? (0, r.jsx)(N, {
     channel: t,
     guild: n,
     width: i,
     inPopout: l,
-    handleClose: a,
-    userParticipantCount: o
-  }) : o > 1 ? (0, r.jsx)(A, {
+    handleClose: o,
+    userParticipantCount: a
+  }) : a > 1 ? (0, r.jsx)(A, {
     channel: t,
     guild: n,
     width: i,
     inPopout: l,
-    handleClose: a,
-    userParticipantCount: o
+    handleClose: o,
+    userParticipantCount: a
   }) : (0, r.jsx)(T, {
     channel: t,
     guild: n,
@@ -98,12 +98,12 @@ function N(e) {
   } = e, {
     analyticsLocations: l
   } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_SHELF_BUTTON), {
-    enabled: o
+    enabled: a
   } = d.c.useExperiment({
     location: "ActivityShelfButtonTile"
   }, {
     autoTrackExposure: !0
-  }), u = o ? c.iWm : c.gQj, p = () => {
+  }), u = a ? c.iWm : c.gQj, p = () => {
     (0, f.Z)({
       channel: t,
       openInPopout: n,
@@ -154,7 +154,7 @@ function N(e) {
         theme: j.BRd.DARK,
         children: e => (0, r.jsx)(c.P3F, {
           onClick: i,
-          className: a()(e, E.shelfButtonCloseButton),
+          className: o()(e, E.shelfButtonCloseButton),
           children: (0, r.jsx)(c.k$p, {
             size: "md",
             color: "currentColor",
@@ -171,7 +171,7 @@ function T(e) {
   let {
     channel: t,
     guild: l,
-    inPopout: o
+    inPopout: a
   } = e;
   i.useEffect(() => {
     x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
@@ -204,14 +204,14 @@ function T(e) {
         source: j.t4x.ACTIVITY_ENTRY_POINT_TILE
       }))
     }, {
-      contextKey: o ? c.u1M : c.z1l
+      contextKey: a ? c.u1M : c.z1l
     })
   }
 
   function b() {
     (0, f.Z)({
       channel: t,
-      openInPopout: o,
+      openInPopout: a,
       analyticsLocations: s
     })
   }
@@ -223,7 +223,7 @@ function T(e) {
       disableAdaptiveTheme: !0,
       theme: j.BRd.MIDNIGHT,
       children: e => (0, r.jsxs)(v.Z, {
-        className: a()(E.root, E.singleUserRoot, e),
+        className: o()(E.root, E.singleUserRoot, e),
         children: [(0, r.jsx)("img", {
           src: S,
           className: E.art,
@@ -288,7 +288,7 @@ function A(e) {
         variant: s > 550 ? "text-md/semibold" : "text-sm/semibold",
         children: O.intl.string(O.t["7BKMcH"])
       }) : null, (0, r.jsx)("div", {
-        className: a()(E.activitiesContainer, {
+        className: o()(E.activitiesContainer, {
           [E.activitiesContainerSmol]: s <= 300
         }),
         children: f.map(e => (0, r.jsx)(h.Y, {
@@ -305,7 +305,7 @@ function A(e) {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: d
-          }), (0, _.EW)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
+          }), (0, _.EW)(a.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
         children: [(0, r.jsx)(C.Z, {}), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",

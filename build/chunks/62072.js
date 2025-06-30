@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(73800),
   i = n(904245),
   l = n(868643),
-  a = n(912332),
-  o = n(41776),
+  o = n(912332),
+  a = n(41776),
   s = n(280845),
   c = n(665906),
   u = n(488131),
@@ -68,7 +68,7 @@ let Z = function(e, t, n) {
               canChat: t,
               renderReactions: n,
               canAddNewReactions: t && _.Z.can(I.Plq.ADD_REACTIONS, e),
-              isLurking: null != e.guild_id && o.Z.isLurking(e.guild_id),
+              isLurking: null != e.guild_id && a.Z.isLurking(e.guild_id),
               isGuest: null != e.guild_id && m.ZP.isCurrentUserGuest(e.guild_id),
               isActiveChannelOrUnarchivableThread: (0, c.RG)(e)
             });
@@ -81,7 +81,7 @@ let Z = function(e, t, n) {
         (r || w) && (0, s.o)(k, R) && (n.preventDefault(), (0, S.HH)(k, R, n));
         break;
       case "f":
-        (r || w) && (0, l.h)(R) && (n.preventDefault(), (0, a.l8)({
+        (r || w) && (0, l.h)(R) && (n.preventDefault(), (0, o.l8)({
           message: R,
           source: "keyboard-shortcut"
         }));

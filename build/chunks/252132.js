@@ -1,18 +1,18 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(27457),
   l = n(131951),
-  a = n(938243);
+  o = n(938243);
 
-function o(e) {
+function a(e) {
   var {
     aspectRatio: t,
     blocked: n,
-    ignored: o,
+    ignored: a,
     channel: s,
     className: c,
     focused: u,
@@ -48,9 +48,9 @@ function o(e) {
     style: {
       width: v
     },
-    className: a.spaceBetweenTiles,
+    className: o.spaceBetweenTiles,
     children: (0, r.jsxs)("div", {
-      className: a.tileSizer,
+      className: o.tileSizer,
       style: {
         aspectRatio: t
       },
@@ -73,7 +73,7 @@ function o(e) {
         return e
       }({
         blocked: n,
-        ignored: o,
+        ignored: a,
         channel: s,
         className: c,
         focused: u,

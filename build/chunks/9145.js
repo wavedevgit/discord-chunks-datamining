@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(993365),
   c = n(481060),
   u = n(153867),
@@ -52,13 +52,13 @@ function G(e) {
     maxHeight: G,
     connectedLocation: V,
     renderExternalHeader: z
-  } = e, W = (0, N.Z)(), Y = (0, o.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), q = (0, Z.p)(V), K = (0, o.e7)([y.Z], () => y.Z.getChannel(q)), X = (0, I.gb)(Y), Q = (0, I.uF)(X), J = i.useCallback(() => {
+  } = e, W = (0, N.Z)(), Y = (0, a.Wu)([S.ZP], () => S.ZP.getEmbeddedActivitiesForLocation(V), [V]), q = (0, Z.p)(V), K = (0, a.e7)([y.Z], () => y.Z.getChannel(q)), X = (0, I.gb)(Y), Q = (0, I.uF)(X), J = i.useCallback(() => {
     (0, E.tg)(L.Ez.PIP)
-  }, []), $ = i.useRef(null), ee = (0, o.e7)([S.ZP], () => S.ZP.getFocusedLayout()), et = ee !== L.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : G) ? n : null), ei = i.useCallback(e => {
+  }, []), $ = i.useRef(null), ee = (0, a.e7)([S.ZP], () => S.ZP.getFocusedLayout()), et = ee !== L.MI.NO_CHAT, [en, er] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : G) ? n : null), ei = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
-  }, []), el = i.useRef(null), [ea, eo] = i.useState({
+  }, []), el = i.useRef(null), [eo, ea] = i.useState({
     width: 0,
     height: 0
   });
@@ -66,25 +66,25 @@ function G(e) {
     if (null == el.current) return;
     let e = new ResizeObserver(() => {
       var e, t, n, r;
-      eo({
+      ea({
         width: null != (n = null == (e = el.current) ? void 0 : e.clientWidth) ? n : 0,
         height: null != (r = null == (t = el.current) ? void 0 : t.clientHeight) ? r : 0
       })
     });
     return e.observe(el.current), () => e.disconnect()
   }, []);
-  let es = ea.width / Math.max(ea.height, 1) < L.I0,
+  let es = eo.width / Math.max(eo.height, 1) < L.I0,
     ec = 0,
     eu = 0,
     ed = (0, P.Z)(null == W ? void 0 : W.id);
   if (!ed) {
-    let e = ea.width,
-      t = ea.height;
-    es ? ((t = ea.width / L.I0) > ea.height && (e = (t = ea.height) * L.I0), eu = (ea.height - t) / 2) : ((e = Math.min(ea.height * L.I0)) > ea.width && (t = (e = ea.width) / L.I0), ec = (ea.width - e) / 2)
+    let e = eo.width,
+      t = eo.height;
+    es ? ((t = eo.width / L.I0) > eo.height && (e = (t = eo.height) * L.I0), eu = (eo.height - t) / 2) : ((e = Math.min(eo.height * L.I0)) > eo.width && (t = (e = eo.width) / L.I0), ec = (eo.width - e) / 2)
   }
   let ep = Q.get(null != (l = null == W ? void 0 : W.id) ? l : ""),
-    eh = (0, o.e7)([x.Z], () => x.Z.getChannelId()),
-    ef = (0, o.Wu)([C.ZP], () => {
+    eh = (0, a.e7)([x.Z], () => x.Z.getChannelId()),
+    ef = (0, a.Wu)([C.ZP], () => {
       var e;
       return null == K ? [] : Array.from(null != (e = null == ep ? void 0 : ep.embeddedActivity.userIds) ? e : []).map(e => C.ZP.getMember(K.guild_id, e))
     }, [ep, K]),
@@ -97,13 +97,13 @@ function G(e) {
     eg = function(e, t, n) {
       let r = (0, d.Z)(e),
         l = e !== r,
-        [a, o] = i.useState(!1);
+        [o, a] = i.useState(!1);
       i.useEffect(() => {
-        o(!0);
-        let e = setTimeout(() => o(!1), 50);
+        a(!0);
+        let e = setTimeout(() => a(!1), 50);
         return () => clearTimeout(e)
       }, [e]);
-      let s = !p.Z.useReducedMotion && (l || a);
+      let s = !p.Z.useReducedMotion && (l || o);
       return i.useMemo(() => {
         var r, i;
         let l = s ? {
@@ -168,7 +168,7 @@ function G(e) {
   return (0, r.jsx)(c.f6W, {
     theme: D.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(B.wrapper, H[ee], e),
+      className: o()(B.wrapper, H[ee], e),
       ref: $,
       style: eg,
       children: [null == z ? void 0 : z(), (0, r.jsxs)("div", {
@@ -182,7 +182,7 @@ function G(e) {
             children: null == W ? void 0 : W.name
           })
         }), (0, r.jsx)("div", {
-          className: a()(B.activityContainer, {
+          className: o()(B.activityContainer, {
             [B.activityContainerNoMargin]: ed
           }),
           style: {

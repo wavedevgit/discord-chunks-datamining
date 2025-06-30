@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(392711),
-  s = n.n(o),
+  o = n.n(l),
+  a = n(392711),
+  s = n.n(a),
   c = n(442837),
   u = n(481060),
   d = n(475179),
@@ -81,7 +81,7 @@ function k(e) {
         username: e.user.username
       }),
       children: l => (0, r.jsx)(E.ZP, R(w({}, l), {
-        className: a()(A.speaker, {
+        className: o()(A.speaker, {
           [A.last]: t === i.length - 1
         }),
         user: e.user,
@@ -98,7 +98,7 @@ function M(e) {
     channel: t,
     isChatOpen: n
   } = e, l = i.useRef(null), {
-    analyticsLocations: o
+    analyticsLocations: a
   } = (0, h.ZP)(p.Z.VOICE_CHANNEL_HEADER), s = t.id, {
     voiceParticipantsHidden: y,
     selectedParticipant: E,
@@ -160,18 +160,18 @@ function M(e) {
   }, "call-members-popout")), U && !B && F.push((0, r.jsx)(_.Z, {
     className: A.button
   }, "for-later")), D && F.push((0, r.jsx)(O.Z, {
-    className: a()(A.button, {
+    className: o()(A.button, {
       [A.lastButton]: n
     }),
     onClick: () => d.Z.toggleParticipantsList(t.id, !T)
   }, "participants-list-button")), M && F.push((0, r.jsx)(j.T, {
     channelId: t.id,
-    className: a()(A.button, {
+    className: o()(A.button, {
       [A.lastButton]: T
     }),
     disabled: n
   }, "chat-spacer")), (0, r.jsx)(h.Gt, {
-    value: o,
+    value: a,
     children: F
   })
 }

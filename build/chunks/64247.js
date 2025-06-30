@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(438536),
-  a = n(214906),
-  o = n(346479),
+  o = n(214906),
+  a = n(346479),
   s = n(723170),
   c = n(124368);
 
@@ -18,7 +18,7 @@ function u(e) {
     onSelect: u,
     navId: d,
     label: p
-  } = e, h = (0, l.Z)(t, "Notifications Bell"), f = (0, a.Z)(t), m = (0, s.B)(t);
+  } = e, h = (0, l.Z)(t, "Notifications Bell"), f = (0, o.Z)(t), m = (0, s.B)(t);
   return (0, r.jsxs)(i.v2r, {
     navId: d,
     onClose: n,
@@ -36,7 +36,7 @@ function u(e) {
           group: "thread-notifications",
           id: "".concat(n),
           label: l,
-          action: () => o.Z.setNotificationSettings(t, {
+          action: () => a.Z.setNotificationSettings(t, {
             flags: n
           }),
           checked: n === m

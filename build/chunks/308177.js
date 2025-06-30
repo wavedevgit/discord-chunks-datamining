@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(112724),
-  o = n(358221),
+  o = n(112724),
+  a = n(358221),
   s = n(565799),
   c = n(431328),
   u = n(501655),
@@ -37,25 +37,25 @@ let y = {
 function j(e) {
   return e.type === u.Ui.VOICE
 }
-let O = (0, a.Z)(e => {
+let O = (0, o.Z)(e => {
   var t, n;
   let {
-    channel: a,
+    channel: o,
     width: y,
     onScroll: O
   } = e, {
     selectedParticipantId: E,
     largeStream: S,
     chatOpen: I
-  } = (0, l.cj)([o.Z], () => ({
-    selectedParticipantId: o.Z.getSelectedParticipantId(a.id),
-    largeStream: o.Z.getStageStreamSize(a.id),
-    chatOpen: o.Z.getChatOpen(a.id)
-  }), [a.id]), P = (0, c.Io)(a.id), Z = (0, c.Rk)(a.id, u.pV.AUDIENCE), N = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(a.id, E) : null), T = (0, c.w8)(a.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(y), k = x(y, I), M = {
+  } = (0, l.cj)([a.Z], () => ({
+    selectedParticipantId: a.Z.getSelectedParticipantId(o.id),
+    largeStream: a.Z.getStageStreamSize(o.id),
+    chatOpen: a.Z.getChatOpen(o.id)
+  }), [o.id]), P = (0, c.Io)(o.id), Z = (0, c.Rk)(o.id, u.pV.AUDIENCE), N = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(o.id, E) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(y), k = x(y, I), M = {
     [u.pV.SPEAKER]: k,
     [u.pV.AUDIENCE]: R,
     [u.pV.SELECTED]: 1
-  }, L = (0, d.Dx)(a.id), [D, U] = (0, d.aP)(a.id, M, L), B = [Math.max(null != (t = D[0]) ? t : 1, 1), Math.max(null != (n = D[1]) ? n : 1, 1), D[2]], {
+  }, L = (0, d.Dx)(o.id), [D, U] = (0, d.aP)(o.id, M, L), B = [Math.max(null != (t = D[0]) ? t : 1, 1), Math.max(null != (n = D[1]) ? n : 1, 1), D[2]], {
     speakerTileWidth: F,
     speakerTileHeight: H
   } = C(y, k), G = S ? y - 32 : Math.min(y - 64, 3 * F + 8), V = e => e === D.length - 1 || 0 === Z && 1 === e, [z, W] = i.useState(!1), [Y, q] = i.useState(!1);
@@ -72,7 +72,7 @@ let O = (0, a.Z)(e => {
         onClick: () => W(!z),
         collapsed: z,
         speakers: A,
-        channel: a,
+        channel: o,
         isStreamLive: w
       }, "speaker-header-".concat(t)) : 2 === t ? 0 === Z ? null : (0, r.jsx)(m.Z, {
         participantCount: Z,
@@ -80,7 +80,7 @@ let O = (0, a.Z)(e => {
         className: _.header,
         onClick: () => q(!Y),
         collapsed: Y,
-        channel: a
+        channel: o
       }, "audience-header-".concat(t)) : null
     },
     sectionHeight: e => 48,
@@ -96,7 +96,7 @@ let O = (0, a.Z)(e => {
           return (0, r.jsx)("div", {
             className: _.focusedRow,
             children: (0, r.jsx)(g.Z, {
-              channel: a,
+              channel: o,
               participant: l[0],
               width: G
             })
@@ -106,7 +106,7 @@ let O = (0, a.Z)(e => {
           return (0, r.jsx)(i.Fragment, {
             children: (0, r.jsx)(f.Z, {
               tileWidth: F,
-              channel: a,
+              channel: o,
               participants: l,
               selectedParticipant: N
             })
@@ -114,7 +114,7 @@ let O = (0, a.Z)(e => {
         case 2:
           if (Y) return null;
           return (0, r.jsx)(p.Z, {
-            channel: a,
+            channel: o,
             participants: l,
             maxTiles: R
           }, "audience-".concat(t, "-").concat(n));

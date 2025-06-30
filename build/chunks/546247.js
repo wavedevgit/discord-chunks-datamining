@@ -1,18 +1,18 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(998502),
-  a = n(939630);
-let o = l.ZP.getEnableHardwareAcceleration() ? function(e) {
+  o = n(939630);
+let a = l.ZP.getEnableHardwareAcceleration() ? function(e) {
   let {
     eventTargetRef: t
   } = e;
   return (0, r.jsx)(i.zLd, {
-    className: a.pulseGradient,
+    className: o.pulseGradient,
     eventTargetRef: t
   })
 } : function() {

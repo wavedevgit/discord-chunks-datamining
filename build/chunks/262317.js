@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(481060),
+  o = n.n(l),
+  a = n(481060),
   s = n(475179),
   c = n(239091),
   u = n(287734),
@@ -72,7 +72,7 @@ function R(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: T.moreContainer,
-    children: (0, r.jsxs)(o.Text, {
+    children: (0, r.jsxs)(a.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
       children: ["+", t]
@@ -88,17 +88,17 @@ function k(e) {
     count: t
   });
   return (0, r.jsxs)("div", {
-    className: a()(T.audienceContainer, {
+    className: o()(T.audienceContainer, {
       [T.audienceContainerCollapsed]: n
     }),
     children: [(0, r.jsx)("div", {
       className: T.audienceIconContainer,
-      children: (0, r.jsx)(o.VWR, {
+      children: (0, r.jsx)(a.VWR, {
         size: "md",
         color: "currentColor",
         className: T.audienceIcon
       })
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
       children: i
@@ -136,8 +136,8 @@ let M = (0, p.$)(function(e) {
     otherClientSessionType: er,
     voicePlatform: ei,
     isSelfOnOtherClient: el = !1,
-    tabIndex: ea,
-    location: eo,
+    tabIndex: eo,
+    location: ea,
     isSelf: es,
     application: ec
   } = e, eu = i.useRef(null), [ed, ep] = i.useState(!1), eh = () => {
@@ -174,7 +174,7 @@ let M = (0, p.$)(function(e) {
     channel: R,
     onWatch: eg,
     previewIsOpen: en,
-    location: eo
+    location: ea
   }), ey = e => {
     let t = P.al.has(null != er ? er : ""),
       n = {
@@ -195,11 +195,11 @@ let M = (0, p.$)(function(e) {
         overlap: l,
         serverMute: F,
         serverDeaf: H,
-        tabIndex: ea,
+        tabIndex: eo,
         otherClientSessionType: er,
         voicePlatform: ei,
         embeddedApplication: B,
-        avatarContainerClass: a()({
+        avatarContainerClass: o()({
           [T.userAvatar]: !0
         }),
         disabled: el && !t,
@@ -214,7 +214,7 @@ let M = (0, p.$)(function(e) {
       };
     if (el) {
       var i;
-      return (0, r.jsx)(o.ua7, {
+      return (0, r.jsx)(a.ua7, {
         text: null != (i = (0, g.Z)(er)) ? i : N.intl.string(N.t.IyYqqa),
         children: e => {
           var {
@@ -241,7 +241,7 @@ let M = (0, p.$)(function(e) {
         }
       })
     }
-    return (0, r.jsx)(o.yRy, {
+    return (0, r.jsx)(a.yRy, {
       targetElementRef: eu,
       position: "right",
       renderPopout: e_,

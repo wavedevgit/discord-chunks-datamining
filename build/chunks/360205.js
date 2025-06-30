@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(481060),
+  o = n.n(l),
+  a = n(481060),
   s = n(367907),
   c = n(626135),
   u = n(346479),
@@ -58,18 +58,18 @@ function b(e) {
       banner_type: "thread"
     }))
   }, [t]), (0, r.jsxs)("div", {
-    className: a()(f.chatHeaderBar, {
+    className: o()(f.chatHeaderBar, {
       [f.narrow]: n
     }),
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(a.Text, {
       className: f.chatHeaderBarText,
       variant: "text-sm/normal",
       color: "header-secondary",
       children: t.isForumPost() ? h.intl.string(h.t["833FDg"]) : h.intl.string(h.t.rEeodH)
-    }), l ? (0, r.jsx)(o.zxk, {
-      size: n ? o.zxk.Sizes.SMALL : o.zxk.Sizes.TINY,
+    }), l ? (0, r.jsx)(a.zxk, {
+      size: n ? a.zxk.Sizes.SMALL : a.zxk.Sizes.TINY,
       className: f.chatHeaderBarButton,
-      color: o.zxk.Colors.PRIMARY,
+      color: a.zxk.Colors.PRIMARY,
       onClick: () => {
         c.default.track(p.rMx.CHANNEL_BANNER_CTA_CLICKED, g(m({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
           banner_type: "thread",
@@ -91,18 +91,18 @@ function _(e) {
       banner_type: "thread"
     }))
   }, [t]), (0, r.jsxs)("div", {
-    className: a()(f.chatHeaderBar, {
+    className: o()(f.chatHeaderBar, {
       [f.narrow]: n
     }),
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(a.Text, {
       className: f.chatHeaderBarText,
       variant: "text-sm/normal",
       color: "header-secondary",
       children: t.isForumPost() ? h.intl.string(h.t.E7oO8v) : h.intl.string(h.t["V/JF2N"])
-    }), l ? (0, r.jsx)(o.zxk, {
-      size: n ? o.zxk.Sizes.SMALL : o.zxk.Sizes.TINY,
+    }), l ? (0, r.jsx)(a.zxk, {
+      size: n ? a.zxk.Sizes.SMALL : a.zxk.Sizes.TINY,
       className: f.chatHeaderBarButton,
-      color: o.zxk.Colors.PRIMARY,
+      color: a.zxk.Colors.PRIMARY,
       onClick: () => {
         c.default.track(p.rMx.CHANNEL_BANNER_CTA_CLICKED, g(m({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
           banner_type: "thread",

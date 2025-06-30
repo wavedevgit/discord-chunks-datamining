@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   l = n.n(i),
-  a = n(481060),
-  o = n(626786),
+  o = n(481060),
+  a = n(626786),
   s = n(815756);
 
 function c(e) {
@@ -20,18 +20,18 @@ function c(e) {
     disabled: d = !1,
     verified: p = !1
   } = e;
-  return (0, r.jsx)(a.zxk, {
+  return (0, r.jsx)(o.zxk, {
     className: l()(t, s.button),
-    look: a.zxk.Looks.BLANK,
-    size: a.zxk.Sizes.NONE,
+    look: o.zxk.Looks.BLANK,
+    size: o.zxk.Sizes.NONE,
     onClick: u,
     disabled: d,
-    children: (0, r.jsx)(o.Z, {
+    children: (0, r.jsx)(a.Z, {
       className: s.role,
       roleColor: n,
       roleName: i,
       verified: p,
-      children: c && (0, r.jsx)(a.Dio, {
+      children: c && (0, r.jsx)(o.Dio, {
         size: "custom",
         color: "currentColor",
         height: 6,

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(695469),
+  o = n.n(l),
+  a = n(695469),
   s = n(481060),
   c = n(110924),
   u = n(988980),
@@ -92,8 +92,8 @@ function P(e) {
     er = (0, c.Z)(en),
     ei = B === C.AEg.MINIMUM || B === C.AEg.NORMAL,
     el = !et && (!ei || J),
-    ea = (0, m.Z)(el, 100),
-    eo = (null != (t = (0, c.Z)(k.id)) ? t : k.id) !== k.id,
+    eo = (0, m.Z)(el, 100),
+    ea = (null != (t = (0, c.Z)(k.id)) ? t : k.id) !== k.id,
     es = 0;
   (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
   let ec = i.useMemo(() => J && $ ? D / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : S, [ee, z, J, D, U, es, $]),
@@ -114,7 +114,7 @@ function P(e) {
     eg = (0, s.q_F)({
       value: +!!en,
       delay: eh || !en ? 0 : 100,
-      config: E(O({}, o.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       }),
       onStart: () => Q(!0),
@@ -125,25 +125,25 @@ function P(e) {
     }, em),
     eb = (0, s.q_F)({
       value: +!!en,
-      config: E(O({}, o.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       })
     }, em),
     e_ = (0, s.q_F)({
       value: ed,
-      config: E(O({}, o.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       })
-    }, er === en && eb.value.idle && !ea || eo || ef ? "animate-never" : "animate-always"),
+    }, er === en && eb.value.idle && !eo || ea || ef ? "animate-never" : "animate-always"),
     ey = (0, s.q_F)({
       value: n,
-      config: E(O({}, o.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       })
     }, em),
     eC = (0, s.Yzy)(k, {
       keys: e => null == e ? void 0 : e.id,
-      config: E(O({}, o.config.stiff), {
+      config: E(O({}, a.config.stiff), {
         clamp: !0
       }),
       initial: null,
@@ -166,18 +166,18 @@ function P(e) {
       participantTileWidth: eO
     } = (0, y.ZB)(D, T);
   return (0, r.jsxs)("div", {
-    className: a()(j.root, v.flexCenter, L),
+    className: o()(j.root, v.flexCenter, L),
     children: [(0, r.jsxs)("div", {
       className: j.tileWrapper,
       style: {
         opacity: ee && q ? 0 : 1
       },
-      children: [(0, r.jsxs)(o.animated.div, {
+      children: [(0, r.jsxs)(a.animated.div, {
         className: j.videoFrame,
         style: {
           top: eb.value.to(e => -e * I / 2)
         },
-        children: [(0, r.jsx)(o.animated.div, {
+        children: [(0, r.jsx)(a.animated.div, {
           style: {
             width: e_.value
           },
@@ -191,7 +191,7 @@ function P(e) {
               let {
                 key: i
               } = n;
-              return null != t ? (0, r.jsx)(o.animated.div, {
+              return null != t ? (0, r.jsx)(a.animated.div, {
                 className: v.videoWrapperAnimated,
                 style: e,
                 children: (0, r.jsx)(g.ZP, {
@@ -212,8 +212,8 @@ function P(e) {
               }, i) : null
             })
           })
-        }), el ? (0, r.jsx)(o.animated.div, {
-          className: a()(j.actionRow, {
+        }), el ? (0, r.jsx)(a.animated.div, {
+          className: o()(j.actionRow, {
             [j.idle]: F
           }),
           style: {
@@ -225,7 +225,7 @@ function P(e) {
             isVertical: !0
           })
         }) : null]
-      }), (0, r.jsx)(o.animated.div, {
+      }), (0, r.jsx)(a.animated.div, {
         className: j.participantsWrapperAnimated,
         style: {
           translateY: eg.value.to(e => e * I / 2),

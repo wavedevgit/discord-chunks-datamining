@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(159635),
   i = n.n(r),
   l = n(969812),
-  a = n(904245),
-  o = n(367907),
+  o = n(904245),
+  a = n(367907),
   s = n(339085),
   c = n(222677),
   u = n(995774),
@@ -75,14 +75,14 @@ let f = /\\([*?+/])/g,
           channel: l
         } = t;
         if (i) return;
-        let o = p.Z.getLastEditableMessage(l.id);
-        if (null == o || null == o.id) return {
+        let a = p.Z.getLastEditableMessage(l.id);
+        if (null == a || null == a.id) return {
           content: ""
         };
         let [s, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), h = null != (r = null == d ? void 0 : d.split("")) ? r : [];
         c = c.replace(f, (e, t) => t), u = u.replace(f, (e, t) => t);
-        let m = h.includes("g") ? o.content.replaceAll(c, u) : o.content.replace(c, u);
-        return (null == m || "" === m.trim()) && 0 === o.attachments.length ? a.Z.deleteMessage(l.id, o.id) : m !== o.content && a.Z.editMessage(l.id, o.id, {
+        let m = h.includes("g") ? a.content.replaceAll(c, u) : a.content.replace(c, u);
+        return (null == m || "" === m.trim()) && 0 === a.attachments.length ? o.Z.deleteMessage(l.id, a.id) : m !== a.content && o.Z.editMessage(l.id, a.id, {
           content: m
         }), {
           content: ""
@@ -97,7 +97,7 @@ let f = /\\([*?+/])/g,
   };
 
 function g(e, t, n, r) {
-  return o.ZP.trackWithMetadata(h.rMx.SLASH_COMMAND_USED, {
+  return a.ZP.trackWithMetadata(h.rMx.SLASH_COMMAND_USED, {
     command: e
   }), t.action(n, r)
 }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r, i = n(255367),
   l = n(73800),
-  a = n(374470),
-  o = n(442837),
+  o = n(374470),
+  a = n(442837),
   s = n(260300),
   c = n(451478),
   u = n(5560),
@@ -53,9 +53,9 @@ class f extends(r = l.Component) {
       offsetY: r,
       tutorialId: i,
       visible: l,
-      windowSize: a
+      windowSize: o
     } = e;
-    i !== this.props.tutorialId ? s.Z.hide(i) : (l !== this.props.visible || t !== this.props.position || n !== this.props.offsetX || r !== this.props.offsetY || a !== this.props.windowSize) && this.show(this.props.visible)
+    i !== this.props.tutorialId ? s.Z.hide(i) : (l !== this.props.visible || t !== this.props.position || n !== this.props.offsetX || r !== this.props.offsetY || o !== this.props.windowSize) && this.show(this.props.visible)
   }
   show(e) {
     let {
@@ -64,15 +64,15 @@ class f extends(r = l.Component) {
       position: r,
       offsetX: i,
       offsetY: l,
-      visible: o,
+      visible: a,
       inlineSpecs: c,
       autoInvert: u
     } = this.props;
     if (e && null == c) {
       let e = null == t ? void 0 : t.current;
-      if (!(0, a.k)(e)) return;
+      if (!(0, o.k)(e)) return;
       let {
-        top: o,
+        top: a,
         left: c,
         right: d,
         bottom: p
@@ -80,18 +80,18 @@ class f extends(r = l.Component) {
       s.Z.show(n, {
         position: r,
         targetWidth: d - c,
-        targetHeight: p - o,
+        targetHeight: p - a,
         autoInvert: u,
         origin: {
           x: c,
-          y: o
+          y: a
         },
         offset: {
           x: i,
           y: l
         }
       })
-    } else o && s.Z.hide(n)
+    } else a && s.Z.hide(n)
   }
   render() {
     let {
@@ -99,17 +99,17 @@ class f extends(r = l.Component) {
       tutorialId: t,
       children: n,
       visible: r,
-      windowFocused: a,
-      position: o,
+      windowFocused: o,
+      position: a,
       autoInvert: s
     } = this.props, c = d.Z.getData()[t];
     return null != e && null != c ? (0, i.jsxs)(i.Fragment, {
       children: [n, r && (0, i.jsx)(u.V, h({
         autoInvert: s,
-        position: o,
+        position: a,
         tutorialId: t,
         tutorialDefinition: c,
-        focused: a
+        focused: o
       }, e))]
     }) : l.Children.only(n)
   }
@@ -119,10 +119,10 @@ function m(e) {
   var t, n;
   let {
     tutorialId: r
-  } = e, l = (0, o.e7)([d.Z], () => d.Z.shouldShow(r), [r]), a = (0, o.e7)([c.Z], () => c.Z.isFocused()), s = (0, o.e7)([c.Z], () => c.Z.windowSize(), []);
+  } = e, l = (0, a.e7)([d.Z], () => d.Z.shouldShow(r), [r]), o = (0, a.e7)([c.Z], () => c.Z.isFocused()), s = (0, a.e7)([c.Z], () => c.Z.windowSize(), []);
   return (0, i.jsx)(f, (t = h({}, e), n = n = {
     visible: l,
-    windowFocused: a,
+    windowFocused: o,
     windowSize: s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

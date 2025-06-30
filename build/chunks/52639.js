@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(81897),
   l = n(906732),
-  a = n(566898),
-  o = n(769654),
+  o = n(566898),
+  a = n(769654),
   s = n(785717),
   c = n(806729),
   u = n(857302),
@@ -48,7 +48,7 @@ function y(e) {
           user: t,
           guild: n,
           nick: i,
-          onSelect: () => (0, o.X)(n.id)
+          onSelect: () => (0, a.X)(n.id)
         }, n.id)
       })
     }), S && E && (0, r.jsx)(p.Z, {
@@ -62,10 +62,10 @@ function y(e) {
         length: v
       }).map((e, t) => (0, r.jsxs)("div", {
         className: _.loadingMutualFriend,
-        children: [(0, r.jsx)(a.ZT, {
+        children: [(0, r.jsx)(o.ZT, {
           width: 40,
           opacity: .08
-        }), (0, r.jsx)(a.ZT, {
+        }), (0, r.jsx)(o.ZT, {
           width: 135,
           opacity: .08
         })]

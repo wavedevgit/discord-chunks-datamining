@@ -1,12 +1,12 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(257502),
   i = n(749280),
   l = n(456100);
 
-function a(e) {
+function o(e) {
   let {
     enabled: t
   } = l.c.useExperiment({
@@ -15,8 +15,8 @@ function a(e) {
     autoTrackExposure: !0
   }), {
     Component: n,
-    events: a,
-    play: o
+    events: o,
+    play: a
   } = (0, i.w)(), {
     Component: s,
     events: c,
@@ -27,8 +27,8 @@ function a(e) {
     play: u,
     Component: s
   } : {
-    events: a,
-    play: o,
+    events: o,
+    play: a,
     Component: n
   }
 }

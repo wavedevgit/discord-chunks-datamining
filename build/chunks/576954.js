@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(286379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(194359),
   c = n(797614),
   u = n(819557),
@@ -26,8 +26,8 @@ function C(e) {
     channelId: n,
     warningId: l
   } = e, {
-    isIgnored: o
-  } = (0, a.cj)([p.Z], () => ({
+    isIgnored: a
+  } = (0, o.cj)([p.Z], () => ({
     isIgnored: p.Z.isIgnored(t)
   }), [t]), c = i.useCallback(() => {
     (0, m.qc)({
@@ -49,8 +49,8 @@ function C(e) {
   return (0, r.jsx)(d.ZP, {
     title: y.intl.string(y.t.avyV7O),
     description: y.intl.string(y.t.naWE6e),
-    buttonText: o ? y.intl.string(y.t["3SrzRU"]) : y.intl.string(y.t.avyV7O),
-    onButtonPress: o ? u : c
+    buttonText: a ? y.intl.string(y.t["3SrzRU"]) : y.intl.string(y.t.avyV7O),
+    onButtonPress: a ? u : c
   })
 }
 
@@ -61,7 +61,7 @@ function x(e) {
     senderId: v
   } = e, {
     isBlocked: j
-  } = (0, a.cj)([p.Z], () => ({
+  } = (0, o.cj)([p.Z], () => ({
     isBlocked: p.Z.isBlocked(v)
   }), [v]), O = i.useCallback(() => {
     (0, h.T)(t, [x])
@@ -89,7 +89,7 @@ function x(e) {
     })
   }, [t, x, v]);
   let I = () => {
-      (0, o.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("59385").then(n.bind(n, 480884));
@@ -119,7 +119,7 @@ function x(e) {
                 title: y.intl.string(y.t["5QYPOz"]),
                 description: y.intl.string(y.t.G08MKi),
                 buttonText: y.intl.string(y.t["5QYPOz"]),
-                buttonColor: o.zxk.Colors.RED,
+                buttonColor: a.zxk.Colors.RED,
                 onButtonPress: () => {
                   l(), P(m.NM.USER_MODAL_BLOCK_CONFIRM, m.NM.USER_MODAL_BLOCK_CANCEL, I)
                 }
@@ -130,13 +130,13 @@ function x(e) {
       })
     },
     P = (e, i, l) => {
-      (0, o.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
-          default: a
+          default: o
         } = await Promise.all([n.e("97652"), n.e("3078")]).then(n.bind(n, 744373));
         return n => {
-          var o, s;
-          return (0, r.jsx)(a, (o = function(e) {
+          var a, s;
+          return (0, r.jsx)(o, (a = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -165,7 +165,7 @@ function x(e) {
                 cta: i
               })
             }
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
@@ -173,8 +173,8 @@ function x(e) {
             }
             return n
           })(Object(s)).forEach(function(e) {
-            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
-          }), o))
+            Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(s, e))
+          }), a))
         }
       })
     };
@@ -188,7 +188,7 @@ function x(e) {
     onDismiss: O,
     buttons: [{
       text: y.intl.string(y.t["Qk/c4+"]),
-      color: o.zxk.Colors.BRAND,
+      color: a.zxk.Colors.BRAND,
       onclick: () => {
         I(), (0, m.qc)({
           channelId: t,
@@ -200,7 +200,7 @@ function x(e) {
       }
     }, ...j ? [] : [{
       text: y.intl.string(y.t.ie0QdH),
-      color: o.zxk.Colors.RED,
+      color: a.zxk.Colors.RED,
       onclick: () => P(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)
     }]]
   })

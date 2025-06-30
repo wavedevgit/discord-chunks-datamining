@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(657707),
   l = n(442837),
-  a = n(692547),
-  o = n(320582),
+  o = n(692547),
+  a = n(320582),
   s = n(246016),
   c = n(189156),
   u = n(699516),
@@ -48,7 +48,7 @@ function w(e) {
   } = (0, l.cj)([u.Z], () => ({
     relationshipType: u.Z.getRelationshipType(t.id),
     originApplicationId: u.Z.getOriginApplicationId(t.id)
-  })), U = (0, o.vh)(t.id), B = (0, s.Y)({
+  })), U = (0, a.vh)(t.id), B = (0, s.Y)({
     userId: t.id
   }), F = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation), H = (0, l.e7)([h.Z], () => {
     var e;
@@ -98,7 +98,7 @@ function w(e) {
         heading: T.intl.string(T.t.Iyka0d),
         headingIcon: (0, r.jsx)(i.P4T, {
           size: "xxs",
-          color: a.Z.colors.HEADER_PRIMARY
+          color: o.Z.colors.HEADER_PRIMARY
         }),
         headingColor: "header-primary",
         children: (0, r.jsx)(c.n, {

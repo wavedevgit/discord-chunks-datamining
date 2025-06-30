@@ -1,23 +1,23 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(643560);
-let a = e => {
+let o = e => {
   let {
     entry: t,
     hideEditButton: n,
-    children: a,
-    onRequestOpen: o,
+    children: o,
+    onRequestOpen: a,
     onRequestClose: s,
     targetElementRef: c
   } = e;
   return (0, r.jsx)(i.yRy, {
     targetElementRef: c,
-    onRequestOpen: o,
+    onRequestOpen: a,
     onRequestClose: s,
     animation: i.yRy.Animation.NONE,
     position: "bottom",
@@ -33,6 +33,6 @@ let a = e => {
         hideEditButton: n
       })
     },
-    children: a
+    children: o
   })
 }

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(433517),
   c = n(481060),
   u = n(904245),
@@ -75,12 +75,12 @@ function F(e, t) {
 function H(e) {
   let {
     channel: t
-  } = e, l = t.isArchivedThread(), a = (0, O.P0)(t), [o, u] = i.useState(!1), d = () => {
+  } = e, l = t.isArchivedThread(), o = (0, O.P0)(t), [a, u] = i.useState(!1), d = () => {
     u(!0), j.Z.resolveFlag(t.id).then(() => {
       u(!1)
     })
   };
-  return a ? (0, r.jsxs)(c.zxk, {
+  return o ? (0, r.jsxs)(c.zxk, {
     size: c.zxk.Sizes.SMALL,
     look: c.zxk.Looks.FILLED,
     color: c.zxk.Colors.PRIMARY,
@@ -104,7 +104,7 @@ function H(e) {
     },
     disabled: l,
     innerClassName: D.actionButton,
-    submitting: o,
+    submitting: a,
     children: [(0, r.jsx)(c.dz2, {
       size: "custom",
       color: "currentColor",
@@ -123,15 +123,15 @@ function G(e) {
   } = e, {
     ref: v,
     width: j
-  } = (0, p.ZP)(), [O, L] = i.useState(3), [G, V] = i.useState(!n), [z, W] = (0, h.Z)(!1, 2e3), Y = (0, o.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
+  } = (0, p.ZP)(), [O, L] = i.useState(3), [G, V] = i.useState(!n), [z, W] = (0, h.Z)(!1, 2e3), Y = (0, a.e7)([Z.Z], () => Z.Z.getChannel(t), [t]), {
     firstMessage: q
-  } = (0, w.cl)(Y), K = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
+  } = (0, w.cl)(Y), K = (0, a.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: X,
     disableReactionCreates: Q,
     isLurking: J,
     isGuest: $,
     isPendingMember: ee
-  } = (0, b.Z)(Y), et = (0, E.nw)(Y), en = (0, o.e7)([Z.Z], () => Z.Z.getChannel(s)), er = (0, A.Bs)(en), ei = (0, o.e7)([f.Z], () => f.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = i.useCallback(e => {
+  } = (0, b.Z)(Y), et = (0, E.nw)(Y), en = (0, a.e7)([Z.Z], () => Z.Z.getChannel(s)), er = (0, A.Bs)(en), ei = (0, a.e7)([f.Z], () => f.Z.shouldDisplayPrompt(t) && !0 === n, [t, n]), el = i.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -149,9 +149,9 @@ function G(e) {
       t.disconnect()
     }
   });
-  let [ea, eo] = i.useState(!0);
+  let [eo, ea] = i.useState(!0);
   if (i.useEffect(() => {
-      null != j && (L(Math.floor((j - 280) / 58)), eo(!1))
+      null != j && (L(Math.floor((j - 280) / 58)), ea(!1))
     }, [j]), null == Y || null == q) return null;
   let es = q.reactions.length > 0,
     ec = () => {
@@ -176,7 +176,7 @@ function G(e) {
     ep = K ? c.dz2 : c.Dkj;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(D.container, {
+      className: o()(D.container, {
         [D.header]: G
       }),
       ref: v,
@@ -187,8 +187,8 @@ function G(e) {
           channel: Y
         })
       }) : (0, r.jsxs)("div", {
-        className: a()(D.reactButtons, {
-          [D.loading]: ea
+        className: o()(D.reactButtons, {
+          [D.loading]: eo
         }),
         children: [!es && !Q && null != er && (0, r.jsx)("div", {
           className: U.reactions,
@@ -226,7 +226,7 @@ function G(e) {
           message: q,
           channel: Y,
           useChatFontScaling: !1,
-          className: a()(D.addReactButton, {
+          className: o()(D.addReactButton, {
             [D.hasNoReactions]: !es
           }),
           isForumToolbar: !0,
@@ -243,7 +243,7 @@ function G(e) {
             size: c.zxk.Sizes.SMALL,
             onClick: ec,
             className: D.button,
-            innerClassName: a()(D.buttonInner, {
+            innerClassName: o()(D.buttonInner, {
               [D.active]: K
             }),
             children: [(0, r.jsx)(ep, {

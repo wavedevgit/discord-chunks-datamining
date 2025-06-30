@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(704215),
-  o = n(582019),
+  o = n(704215),
+  a = n(582019),
   s = n(235874),
   c = n(239091),
   u = n(906732),
@@ -39,7 +39,7 @@ function O(e) {
       onMouseEnter: N,
       onMouseLeave: T
     }
-  } = (0, o.j)(), A = t.getGuildId(), {
+  } = (0, a.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: R
   } = (0, _.Z)(t), k = (0, l.e7)([y.Z], () => y.Z.isDeaf()), M = w || R || k, L = (0, m.sR)({
@@ -123,7 +123,7 @@ function O(e) {
             guildId: A,
             channel: t,
             onClose: n,
-            gridNotice: D === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
+            gridNotice: D === o.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(g.o, {
               onClose: n,
               markAsDismissed: U
             }),

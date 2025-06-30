@@ -66,25 +66,17 @@ function P(e) {
       position: "relative"
     },
     color: s.Z.STATUS_DANGER
-  }) : null : R > 0 ? (0, d.N)(R) : A ? (0, r.jsx)(a.fWl, {
-    style: {
-      height: 12,
-      width: 12,
-      top: -2,
-      left: -2,
-      position: "relative"
-    },
-    color: s.Z.BG_BRAND
-  }) : null, k = D === O.jP.LEGACY ? a.xx7 : a.Dkj, U = (0, o.e7)([b.Z], () => b.Z.getChannelId()), G = i.useMemo(() => {
+  }) : null : R > 0 ? (0, d.N)(R) : null, k = D === O.jP.LEGACY ? a.xx7 : a.Dkj, U = (0, o.e7)([b.Z], () => b.Z.getChannelId()), G = i.useMemo(() => {
     if (D === O.jP.SIDEBAR) return S.Z5c.NOTIFICATIONS_INBOX(null != U ? U : void 0)
   }, [D, U]);
   return (0, r.jsxs)(u.H, {
     ref: E,
-    children: [D === O.jP.SIDEBAR && (0, r.jsx)(c.Z, {
-      selected: T,
-      hovered: N,
+    children: [(0, r.jsx)(c.Z, {
+      selected: T && D === O.jP.SIDEBAR,
+      hovered: N && D === O.jP.SIDEBAR,
       unread: A,
-      className: x.pill
+      className: x.pill,
+      disabled: D === O.jP.LEGACY
     }), (0, r.jsx)(j.Z, {
       children: (0, r.jsx)(a.aRk, {
         selected: T || N,

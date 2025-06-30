@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854);
 var r, i = n(481060),
   l = n(620662),
-  a = n(933557),
-  o = n(377171),
+  o = n(933557),
+  a = n(377171),
   s = n(699516),
   c = n(594174),
   u = n(981631),
@@ -41,7 +41,7 @@ function h(e) {
     icon: i.AlX,
     display: d.intl.string(d.t.o034cn),
     badgeVal: g,
-    badgeColor: o.Z.BG_BRAND
+    badgeColor: a.Z.BG_BRAND
   }), n && x.push({
     type: "CREATE_THREAD",
     icon: i.YPH,
@@ -63,7 +63,7 @@ function h(e) {
       type: "INVITE_TO_GAME",
       icon: i.xoD,
       display: d.intl.formatToPlainString(d.t["KHLo+P"], {
-        channel: (0, a.F6)(f, c.default, s.Z, !0),
+        channel: (0, o.F6)(f, c.default, s.Z, !0),
         game: null != e ? e.name : ""
       }),
       activity: e
@@ -71,7 +71,7 @@ function h(e) {
       type: "INVITE_TO_LISTEN",
       icon: i.iOO,
       display: d.intl.formatToPlainString(d.t.I479p6, {
-        channel: (0, a.F6)(f, c.default, s.Z, !0),
+        channel: (0, o.F6)(f, c.default, s.Z, !0),
         name: null != e ? e.name : ""
       }),
       activity: e
@@ -79,7 +79,7 @@ function h(e) {
       type: "INVITE_TO_WATCH",
       icon: i.tEF,
       display: d.intl.formatToPlainString(d.t["EvCP/v"], {
-        channel: (0, a.F6)(f, c.default, s.Z, !0),
+        channel: (0, o.F6)(f, c.default, s.Z, !0),
         name: null != e ? e.name : ""
       }),
       activity: e

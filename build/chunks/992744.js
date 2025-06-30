@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(780384),
-  a = n(481060),
-  o = n(410030),
+  o = n(481060),
+  a = n(410030),
   s = n(367907),
   c = n(984370),
   u = n(981631),
@@ -15,7 +15,7 @@ var r = n(255367),
   h = n(66737),
   f = n(525377);
 let m = () => {
-  let e = (0, o.ZP)();
+  let e = (0, a.ZP)();
   i.useEffect(() => {
     s.ZP.trackWithMetadata(u.rMx.GUILD_OUTAGE_VIEWED, {})
   }, []);
@@ -25,7 +25,7 @@ let m = () => {
     children: [(0, r.jsxs)(c.Z, {
       toolbar: (0, r.jsx)(i.Fragment, {}),
       children: [(0, r.jsx)(c.Z.Icon, {
-        icon: a.VL1,
+        icon: o.VL1,
         "aria-hidden": !0
       }), (0, r.jsx)(c.Z.Title, {
         children: d.intl.string(d.t["8LKcho"])
@@ -36,11 +36,11 @@ let m = () => {
         alt: "",
         className: p.splashImage,
         src: t
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, r.jsx)(o.X6q, {
         className: p.splashHeader,
         variant: "heading-lg/medium",
         children: d.intl.string(d.t.m9gRVF)
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: p.splashText,
         variant: "text-md/normal",
         children: d.intl.string(d.t["wC3j5+"])

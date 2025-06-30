@@ -1,17 +1,17 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685);
 var r = n(255367),
   i = n(73800),
   l = n(347469),
-  a = n(955229);
+  o = n(955229);
 
-function o(e) {
+function a(e) {
   let {
     resizableNode: t,
     onResize: n,
-    onResizeEnd: o,
+    onResizeEnd: a,
     minHeight: s,
     maxHeight: c
   } = e, [u, d] = i.useState(null);
@@ -25,11 +25,11 @@ function o(e) {
     maxDimension: c,
     resizableDomNodeRef: t,
     onElementResize: n,
-    onElementResizeEnd: o,
+    onElementResizeEnd: a,
     orientation: l.y.VERTICAL_BOTTOM
   });
   return (0, r.jsx)("div", {
     onMouseDown: p,
-    className: a.resizeHandle
+    className: o.resizeHandle
   })
 }

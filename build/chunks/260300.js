@@ -1,11 +1,11 @@
 /** Chunk was on 19577 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(544891),
   i = n(570140),
   l = n(981631);
-let a = {
+let o = {
   show(e, t) {
     i.Z.wait(() => i.Z.dispatch({
       type: "TUTORIAL_INDICATOR_SHOW",

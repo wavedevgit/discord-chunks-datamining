@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(831209),
-  a = n(442837),
-  o = n(704215),
+  o = n(442837),
+  a = n(704215),
   s = n(481060),
   c = n(278323),
   u = n(566620),
@@ -32,12 +32,12 @@ var r = n(255367),
 let N = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
 function T() {
-  let e = (0, a.e7)([_.Z], () => _.Z.hasCurrentUserSentMessageSinceAppStart()),
+  let e = (0, o.e7)([_.Z], () => _.Z.hasCurrentUserSentMessageSinceAppStart()),
     t = [];
-  e && t.push(o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
+  e && t.push(a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
   let [n] = (0, f.cv)(t);
   return i.useEffect(() => () => {
-    n === o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, h.EW)(o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
+    n === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, h.EW)(a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
       dismissAction: S.L.TAKE_ACTION
     })
   }, [n]), (0, r.jsx)(m.ZP, {
@@ -46,7 +46,7 @@ function T() {
       let {
         visibleContent: t
       } = e;
-      return t === o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(s.IGR, {
+      return t === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(s.IGR, {
         text: P.intl.string(P.t.y2b7CA),
         color: l.Z.BUTTON_DANGER_BACKGROUND
       }) : null
@@ -57,7 +57,7 @@ function T() {
 function A(e) {
   let {
     channel: t,
-    options: a,
+    options: o,
     onFileUpload: f,
     onClose: m,
     onSelect: _,
@@ -84,7 +84,7 @@ function A(e) {
   }
 
   function F() {
-    (0, h.EW)(o.z.POLLS_CHAT_INPUT_COACHMARK, {
+    (0, h.EW)(a.z.POLLS_CHAT_INPUT_COACHMARK, {
       dismissAction: S.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
       let {
@@ -164,7 +164,7 @@ function A(e) {
     onClose: m,
     "aria-label": P.intl.string(P.t.Xm41aW),
     className: Z.menu,
-    children: a.map(function(e) {
+    children: o.map(function(e) {
       var n;
       let i = (0, r.jsxs)("div", {
         className: Z.optionLabel,

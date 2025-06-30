@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(442837),
+  o = n.n(l),
+  a = n(442837),
   s = n(481060),
   c = n(287734),
   u = n(358221),
@@ -28,7 +28,7 @@ let x = (e, t) => g.ZP.getName(e.getGuildId(), e.id, t.user),
       hasConnectPermission: l
     } = e, g = (0, p.J)(n.guild_id), v = i.useCallback(() => {
       g ? (0, d.hk)(n.guild_id, () => c.default.selectVoiceChannel(n.id)) : c.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, g]), j = t.filter(e => e.type === b.Ui.VOICE), O = 4 === j.length ? 2 : 3, E = (0, o.Wu)([u.Z], () => j.map(e => u.Z.getParticipant(n.id, e.id)).filter(m.lm), [n.id, j]);
+    }, [n.id, n.guild_id, g]), j = t.filter(e => e.type === b.Ui.VOICE), O = 4 === j.length ? 2 : 3, E = (0, a.Wu)([u.Z], () => j.map(e => u.Z.getParticipant(n.id, e.id)).filter(m.lm), [n.id, j]);
     return (0, r.jsxs)("div", {
       className: C.container,
       children: [(0, r.jsx)(f.Z, {}), (0, r.jsx)("div", {
@@ -70,7 +70,7 @@ let x = (e, t) => g.ZP.getName(e.getGuildId(), e.id, t.user),
         className: C.buttonContainer,
         children: [(0, r.jsx)(s.zxk, {
           disabled: !l,
-          className: a()(C.joinButton, {
+          className: o()(C.joinButton, {
             [C.roundButton]: !1
           }),
           color: l ? s.zxk.Colors.WHITE : s.zxk.Colors.PRIMARY,

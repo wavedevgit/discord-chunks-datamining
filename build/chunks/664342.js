@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(481060),
-  a = n(32750),
-  o = n(109764),
+  o = n(32750),
+  a = n(109764),
   s = n(323597),
   c = n(438536),
   u = n(193987),
@@ -62,20 +62,20 @@ function P(e, t) {
 function Z(e) {
   let {
     channel: t
-  } = e, [n, a] = i.useState(!1), o = i.useRef(null);
+  } = e, [n, o] = i.useState(!1), a = i.useRef(null);
 
   function s() {
-    a(e => !e)
+    o(e => !e)
   }
   let c = S.intl.string(S.t.UKOtz8);
   return (0, r.jsx)(l.yRy, {
-    targetElementRef: o,
+    targetElementRef: a,
     shouldShow: n,
     animation: l.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: !1,
-    onRequestClose: () => a(!1),
+    onRequestClose: () => o(!1),
     renderPopout: function(e) {
       return (0, r.jsx)(N, P(I({}, e), {
         channel: t
@@ -86,7 +86,7 @@ function Z(e) {
         isShown: n
       } = t;
       return (0, r.jsx)(y.ZP.Icon, P(I({}, e), {
-        ref: o,
+        ref: a,
         onClick: s,
         tooltip: n ? null : c,
         icon: l.xhG,
@@ -102,7 +102,7 @@ function N(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, _ = (0, c.Z)(t, "Sidebar Overflow"), y = (0, d.Z)(t), v = (0, f.Z)(t), j = (0, m.Z)(t), O = (0, a.Z)(t), I = (0, u.Z)(t), P = (0, h.Z)(t.id), Z = (0, p.Z)(t), N = (0, s.Z)(t), T = (0, o.Z)(t), A = (0, b.Z)({
+  } = e, _ = (0, c.Z)(t, "Sidebar Overflow"), y = (0, d.Z)(t), v = (0, f.Z)(t), j = (0, m.Z)(t), O = (0, o.Z)(t), I = (0, u.Z)(t), P = (0, h.Z)(t.id), Z = (0, p.Z)(t), N = (0, s.Z)(t), T = (0, a.Z)(t), A = (0, b.Z)({
     id: t.id,
     label: S.intl.string(S.t.DQ797u)
   }), w = (0, g.Z)(t);

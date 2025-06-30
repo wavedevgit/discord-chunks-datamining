@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(778877),
-  a = n(63063),
-  o = n(981631),
+  o = n(63063),
+  a = n(981631),
   s = n(388032),
   c = n(107242);
 
@@ -43,13 +43,13 @@ function d(e) {
       selectedItem: t,
       onItemSelect: n,
       children: [(0, r.jsx)(i.njP.Item, {
-        id: o.QIO.NEWEST,
+        id: a.QIO.NEWEST,
         children: s.intl.string(s.t.rLjqbW)
       }), (0, r.jsx)(i.njP.Item, {
-        id: o.QIO.OLDEST,
+        id: a.QIO.OLDEST,
         children: s.intl.string(s.t.a1BaUl)
       }), (0, r.jsx)(i.njP.Item, {
-        id: o.QIO.MOST_RELEVANT,
+        id: a.QIO.MOST_RELEVANT,
         children: s.intl.string(s.t.FtR97u)
       })]
     })]
@@ -60,7 +60,7 @@ function p(e) {
   let t, {
     isSearching: n,
     isIndexing: l,
-    documentsIndexed: a
+    documentsIndexed: o
   } = e;
   (l || n) && (t = (0, r.jsx)("div", {
     className: c.spinnerWrapper,
@@ -70,13 +70,13 @@ function p(e) {
       itemClassName: c.spinnerPath
     })
   }));
-  let o = l && !n;
+  let a = l && !n;
   return (0, r.jsxs)("div", {
     className: c.totalResults,
     role: "status",
-    children: [o ? (0, r.jsx)(i.ua7, {
+    children: [a ? (0, r.jsx)(i.ua7, {
       text: s.intl.formatToPlainString(s.t["4Y3O+P"], {
-        count: a
+        count: o
       }),
       children: n => {
         var i, l;
@@ -95,7 +95,7 @@ function p(e) {
           Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
         }), i))
       }
-    }) : (0, r.jsx)(h, u({}, e)), o ? null : t]
+    }) : (0, r.jsx)(h, u({}, e)), a ? null : t]
   })
 }
 
@@ -118,11 +118,11 @@ function h(e) {
     color: "text-muted",
     children: (0, r.jsx)(i.eee, {
       className: c.helpdeskLink,
-      href: a.Z.getArticleURL(o.BhN.SEARCH_INDEXING),
+      href: o.Z.getArticleURL(a.BhN.SEARCH_INDEXING),
       children: s.intl.string(s.t["G3EA+/"])
     })
   });
-  if (d === o.aib.DMS && p) {
+  if (d === a.aib.DMS && p) {
     let e = u.toLocaleString();
     return (0, r.jsxs)("div", {
       className: c.totalResultsWithSubtitle,

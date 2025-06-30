@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(286379),
-  a = n(442837),
-  o = n(481060),
+  o = n(442837),
+  a = n(481060),
   s = n(797614),
   c = n(699516),
   u = n(378298),
@@ -55,7 +55,7 @@ function _(e) {
     senderId: y
   } = e, C = i.useCallback(() => {
     (0, u.T)(t, [_])
-  }, [t, _]), x = (0, a.e7)([c.Z], () => c.Z.isBlocked(y)), v = i.useMemo(() => ({
+  }, [t, _]), x = (0, o.e7)([c.Z], () => c.Z.isBlocked(y)), v = i.useMemo(() => ({
     channelId: t,
     warningId: _,
     senderId: y,
@@ -74,7 +74,7 @@ function _(e) {
       }))
     }, [v]),
     O = i.useCallback(() => {
-      (0, o.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("49508"), n.e("89650")]).then(n.bind(n, 611446));
@@ -103,7 +103,7 @@ function _(e) {
       C(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
     }, [C, j]),
     I = i.useCallback(() => {
-      (0, o.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("19538").then(n.bind(n, 699783));
@@ -136,11 +136,11 @@ function _(e) {
     onDismiss: C,
     buttons: [{
       text: m.intl.string(m.t.Qyu4UF),
-      color: o.zxk.Colors.BRAND,
+      color: a.zxk.Colors.BRAND,
       onclick: O
     }, ...x ? [] : [{
       text: m.intl.string(m.t["7q0bNT"]),
-      color: o.zxk.Colors.PRIMARY,
+      color: a.zxk.Colors.PRIMARY,
       onclick: I
     }]]
   })

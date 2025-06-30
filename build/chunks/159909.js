@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(399606),
-  a = n(481060),
-  o = n(125268),
+  o = n(481060),
+  a = n(125268),
   s = n(673125),
   c = n(871499),
   u = n(304388),
@@ -54,8 +54,8 @@ function h() {
         buttonRef: t,
         label: d.intl.string(d.t.Cuo44O),
         isActive: e,
-        iconComponent: a.tEF,
-        onClick: o.LT
+        iconComponent: o.tEF,
+        onClick: a.LT
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

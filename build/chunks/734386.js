@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(392711),
-  s = n.n(o),
+  o = n.n(l),
+  a = n(392711),
+  s = n.n(a),
   c = n(149765),
   u = n(866442),
   d = n(442837),
@@ -38,7 +38,7 @@ var r = n(255367),
 function k(e) {
   let {
     channel: t
-  } = e, [n, l] = i.useState(!1), o = (0, m.ZP)(t, !0), k = t.guild_id, M = (0, d.e7)([v.Z], () => null != k ? v.Z.getRoles(k) : void 0), L = (0, d.e7)([E.default, j.Z], () => {
+  } = e, [n, l] = i.useState(!1), a = (0, m.ZP)(t, !0), k = t.guild_id, M = (0, d.e7)([v.Z], () => null != k ? v.Z.getRoles(k) : void 0), L = (0, d.e7)([E.default, j.Z], () => {
     var e;
     return E.default.getUser(null == (e = j.Z.getGuild(k)) ? void 0 : e.ownerId)
   }), D = i.useMemo(() => null != k ? s()(M).sortBy(e => -e.position).filter(e => !(0, g.pM)(k, e.id)).value() : [], [k, M]), U = i.useMemo(() => s()(D).filter(e => {
@@ -76,12 +76,12 @@ function k(e) {
       channelType: t.type
     }), (0, r.jsx)(Z.Ot, {
       children: A.intl.format(A.t.I3R7Vl, {
-        channelName: o
+        channelName: a
       })
     }), (0, r.jsx)(Z.jz, {
       className: R.markup,
       children: A.intl.format(A.t.QuwqjI, {
-        channelName: o,
+        channelName: a,
         topicHook: () => x.Z.parseTopic(t.topic, !0, {
           channelId: t.id
         })
@@ -136,25 +136,25 @@ function k(e) {
         })
       }(), U.map((e, n) => {
         var i, l;
-        let o = null != (l = e.colorString) ? l : (0, u.Rf)(T.p6O),
+        let a = null != (l = e.colorString) ? l : (0, u.Rf)(T.p6O),
           s = (null == (i = e.tags) ? void 0 : i.guild_connections) !== void 0;
         return F ? (0, r.jsx)(_.Z, {
-          className: a()(w.role, {
+          className: o()(w.role, {
             [w.last]: n === U.length - 1
           }),
           roleName: e.name,
-          roleColor: o,
+          roleColor: a,
           disabled: !F,
           verified: s,
           onClick: () => {
             C.Z.open(t.guild_id, T.pNK.MEMBERS), C.Z.selectRole(e.id)
           }
         }, e.id) : (0, r.jsx)(y.Z, {
-          className: a()(w.role, {
+          className: o()(w.role, {
             [w.last]: n === U.length - 1
           }),
           roleName: e.name,
-          roleColor: o,
+          roleColor: a,
           verified: s
         }, e.id)
       })]

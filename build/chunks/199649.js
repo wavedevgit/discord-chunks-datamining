@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  a = n(194359),
-  o = n(631937),
+  o = n(194359),
+  a = n(631937),
   s = n(702321),
   c = n(377171),
   u = n(699516),
@@ -24,7 +24,7 @@ function b(e) {
     channel: _,
     children: y
   } = e, C = (0, i.e7)([u.Z], () => u.Z.isBlocked(_.getRecipientId()));
-  (0, o.Z)(_.id);
+  (0, a.Z)(_.id);
   let x = (0, s.Z)(_.id),
     v = _.isSystemDM(),
     j = C && !v && !_.isMultiUserDM(),
@@ -47,7 +47,7 @@ function b(e) {
       open(p.Z.getArticleURL(f.BhN.SYSTEM_DMS))
     }, O.imageSrc = n(780961)
   } else j && (O.message = g.intl.string(g.t["9T6N5+"]), O.buttonText = g.intl.string(g.t.XyHpKC), O.onButtonClick = () => {
-    a.Z.unblockUser(_.getRecipientId())
+    o.Z.unblockUser(_.getRecipientId())
   });
   return (0, r.jsx)(h.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {

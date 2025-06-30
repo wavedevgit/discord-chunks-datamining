@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(570140),
-  o = n(475179),
+  o = n(570140),
+  a = n(475179),
   s = n(367907),
   c = n(906732),
   u = n(358221),
@@ -21,14 +21,14 @@ var r = n(255367),
   y = n(981631),
   C = n(806176);
 let x = () => {
-  a.Z.wait(() => p.xv(y.KJ3.CHANNEL_CALL_POPOUT))
+  o.Z.wait(() => p.xv(y.KJ3.CHANNEL_CALL_POPOUT))
 };
 
 function v(e) {
   let {
     channel: t,
     appContext: n,
-    popoutOpen: a,
+    popoutOpen: o,
     popoutWindow: p,
     currentWindow: v
   } = e, {
@@ -62,10 +62,10 @@ function v(e) {
         rootNode: t
       }
     }, [p, O, v]),
-    A = a && !O,
+    A = o && !O,
     w = I === y.WtW.VIDEO && P && !A,
     R = i.useCallback((e, r) => {
-      r !== e && (o.Z.updateLayout(t.id, r, n), r === y.AEg.FULL_SCREEN && t.isPrivate() && g.S.dispatch(y.CkL.TEXTAREA_BLUR))
+      r !== e && (a.Z.updateLayout(t.id, r, n), r === y.AEg.FULL_SCREEN && t.isPrivate() && g.S.dispatch(y.CkL.TEXTAREA_BLUR))
     }, [n, t]),
     k = i.useCallback(e => {
       null != T && e === y.AEg.FULL_SCREEN && (R(e, Z.current), (0, _.Pr)(e => {

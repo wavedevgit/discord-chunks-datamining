@@ -6,8 +6,8 @@ var r = n(255367);
 n(73800);
 var i = n(442837),
   l = n(481060),
-  a = n(607070),
-  o = n(100527),
+  o = n(607070),
+  a = n(100527),
   s = n(43267),
   c = n(933557),
   u = n(641360),
@@ -24,11 +24,11 @@ function y(e) {
   let {
     channel: t
   } = e;
-  return (0, u.I3)(o.Z.EMPTY_GROUP_DM, t.id) ? (0, r.jsxs)("div", {
+  return (0, u.I3)(a.Z.EMPTY_GROUP_DM, t.id) ? (0, r.jsxs)("div", {
     className: _.buttonContainer,
     children: [(0, r.jsx)(l.zxk, {
       size: l.PhG.MEDIUM,
-      onClick: () => (0, h.B)(t.id, o.Z.EMPTY_GROUP_DM),
+      onClick: () => (0, h.B)(t.id, a.Z.EMPTY_GROUP_DM),
       className: _.button,
       children: b.intl.string(b.t["5Q9+/P"])
     }), (0, r.jsx)(f.l, {
@@ -44,7 +44,7 @@ function C(e) {
     channel: h,
     children: f,
     user: b
-  } = e, _ = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), C = null != (t = (0, c.ZP)(h)) ? t : "", {
+  } = e, _ = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), C = null != (t = (0, c.ZP)(h)) ? t : "", {
     avatarDecorationSrc: x,
     eventHandlers: v,
     isAnimating: j
@@ -78,7 +78,7 @@ function C(e) {
       return h.isMultiUserDM() ? (0, r.jsx)(p.v, {
         channel: h,
         editable: !0,
-        location: o.Z.EMPTY_GROUP_DM,
+        location: a.Z.EMPTY_GROUP_DM,
         children: (0, r.jsx)(d.Z, {
           channel: h,
           size: l.EFr.SIZE_80,

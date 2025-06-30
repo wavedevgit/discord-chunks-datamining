@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(120356),
-  a = n.n(l),
-  o = n(97519),
+  o = n.n(l),
+  a = n(97519),
   s = n(731965),
   c = n(481060),
   u = n(911969),
@@ -23,7 +23,7 @@ var r = n(255367),
   C = n(981631),
   x = n(314734),
   v = n(522271);
-let j = (0, o.U)(() => ({
+let j = (0, a.U)(() => ({
     visible: !1
   })),
   O = e => {
@@ -41,12 +41,12 @@ function S(e) {
     entryPointCommandButtonRef: n,
     type: l
   } = e, {
-    isInitialLoading: a,
-    application: o,
+    isInitialLoading: o,
+    application: a,
     primaryEntryPointCommand: s
   } = (0, h.Z)({
     context: t
-  }), c = null == o ? void 0 : o.id, f = (0, y.Z)({
+  }), c = null == a ? void 0 : a.id, f = (0, y.Z)({
     type: l
   }), {
     sectionCommands: x
@@ -58,12 +58,12 @@ function S(e) {
       location: d.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON,
       source: g._b.TEXT
     }))
-  }, [c, f]), j = null != x && x.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, E = !a && null != o && !0 === j;
+  }, [c, f]), j = null != x && x.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, E = !o && null != a && !0 === j;
   return (i.useEffect(() => (O(E), () => {
     O(!1)
   }), [E]), E) ? (0, r.jsx)(I, {
     context: t,
-    application: o,
+    application: a,
     primaryEntryPointCommand: s,
     onOpenButtonPress: v,
     entryPointCommandButtonRef: n,
@@ -77,7 +77,7 @@ function I(e) {
     application: n,
     primaryEntryPointCommand: i,
     onOpenButtonPress: l,
-    entryPointCommandButtonRef: o,
+    entryPointCommandButtonRef: a,
     type: s
   } = e, u = (0, y.Z)({
     type: s
@@ -107,12 +107,12 @@ function I(e) {
     analyticsLocations: C
   }), O = h ? c.zxk.Colors.RED : c.zxk.Colors.BRAND;
   return (0, r.jsx)(c.zxk, {
-    className: a()(v.entryPointAppCommandButton, x.Id),
+    className: o()(v.entryPointAppCommandButton, x.Id),
     size: c.zxk.Sizes.SMALL,
     color: O,
     submitting: d,
     onClick: j,
-    buttonRef: o,
+    buttonRef: a,
     children: p
   })
 }

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(911367),
-  o = n(594174),
+  o = n(911367),
+  a = n(594174),
   s = n(212321),
   c = n(788111),
   u = n(60577),
@@ -37,8 +37,8 @@ function m(e) {
 function g(e) {
   let {
     channel: t
-  } = e, [n] = t.recipients, g = (0, l.e7)([o.default], () => o.default.getUser(n)), b = (0, l.e7)([o.default], () => o.default.getCurrentUser()), _ = (0, u.Z)(), [y, C] = (0, c.Z)(n);
-  (0, a.t)();
+  } = e, [n] = t.recipients, g = (0, l.e7)([a.default], () => a.default.getUser(n)), b = (0, l.e7)([a.default], () => a.default.getCurrentUser()), _ = (0, u.Z)(), [y, C] = (0, c.Z)(n);
+  (0, o.t)();
   let {
     withMutualFriendsCount: x
   } = (0, s.j)({

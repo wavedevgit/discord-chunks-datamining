@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(255367),
   i = n(73800),
   l = n(442837),
-  a = n(780384),
-  o = n(481060),
+  o = n(780384),
+  a = n(481060),
   s = n(332148),
   c = n(493773),
   u = n(198620),
@@ -49,8 +49,8 @@ function _(e) {
         before: null == (e = y.at(-1)) ? void 0 : e.pinnedAt
       })
     }, [t.id, y]),
-    E = (0, l.e7)([d.Z], () => (0, a.ap)(d.Z.theme));
-  return (0, r.jsx)(o.VqE, {
+    E = (0, l.e7)([d.Z], () => (0, o.ap)(d.Z.theme));
+  return (0, r.jsx)(a.VqE, {
     "aria-label": g.intl.string(g.t["mp1N//"]),
     children: (0, r.jsx)(f.ZP, {
       channel: t,
@@ -69,7 +69,7 @@ function _(e) {
         }, "emptystate")
       },
       renderHeader: () => (0, r.jsx)(f.h4, {
-        icon: o.qQX,
+        icon: a.qQX,
         title: g.intl.string(g.t["mp1N//"])
       }),
       onCloseMessage: function(e, n) {

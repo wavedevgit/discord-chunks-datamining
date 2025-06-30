@@ -1,6 +1,6 @@
 /**
   Module ID: 49286
-  Original File Name: d516babc2dea75dd
+  Original File Name: a4b5df7969cd3756
 **/
 .imageUploader_e4d0bf {
     font-size: 12px;
@@ -339,14 +339,13 @@
     border-color: var(--background-secondary-alt);
     display: flex;
     flex-direction: column;
-    gap: 8px;
     margin-bottom: 16px;
-    padding: 8px 16px
+    overflow: hidden
 }
 
 .card_b44011.inModal_b44011 {
-    background-color: unset;
-    border: 0
+    gap: 8px;
+    padding: var(--space-8) var(--space-16)
 }
 
 .cardHeader_b44011 {
@@ -360,11 +359,6 @@
 .cardHeader_b44011.inModal_b44011 {
     background-color: unset;
     padding: 8px 0
-}
-
-.title_b44011 {
-    font-family: var(--font-display);
-    text-transform: uppercase
 }
 
 .emptyCard__0a9e8 {
@@ -598,7 +592,6 @@
     color: var(--interactive-normal);
     display: flex;
     margin-bottom: 12px;
-    margin-top: 16px;
     padding: 16px;
     text-align: left
 }
@@ -2021,4 +2014,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=d516babc2dea75dd.css.map*/
+/*# sourceMappingURL=a4b5df7969cd3756.css.map*/
