@@ -1,4 +1,4 @@
-/** Chunk was on 84552 **/
+/** Chunk was on 61668 **/
 n.d(t, {
   Z: () => O
 }), n(388685);
@@ -41,10 +41,10 @@ function O(e) {
     S((null != (t = null == (e = g.current) ? void 0 : e.clientHeight) ? t : 0) > Z)
   }, [Z, S]);
   let R = (0, m.PC)(t),
-    k = i.useCallback(() => {
+    L = i.useCallback(() => {
       I && h && O(!1)
     }, [h, I]),
-    L = i.useCallback(() => {
+    k = i.useCallback(() => {
       I && (h || O(!0))
     }, [h, I]),
     D = i.useMemo(() => {
@@ -58,7 +58,7 @@ function O(e) {
     className: a()(v.guildInviteContainer, {
       [v.clickable]: I && h
     }),
-    onClick: k,
+    onClick: L,
     style: D,
     children: [(0, r.jsxs)("div", {
       className: v.cardHeightMeasure,
@@ -86,7 +86,7 @@ function O(e) {
       look: s.zxk.Looks.LINK,
       color: s.zxk.Colors.TRANSPARENT,
       size: s.zxk.Sizes.NONE,
-      onClick: L,
+      onClick: k,
       innerClassName: v.hideDetailsButtonInner,
       children: (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",

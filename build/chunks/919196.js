@@ -1,4 +1,4 @@
-/** Chunk was on 49286 **/
+/** Chunk was on 7104 **/
 n.d(t, {
   Z: () => N
 }), n(388685), n(539854), n(953529);
@@ -106,28 +106,28 @@ function N(e) {
     canNavigate: S
   } = e, {
     application: E,
-    integration: w,
-    webhooks: P
-  } = a, [T, Z] = (0, l.Wu)([p.Z], () => [p.Z.can(O.Plq.MANAGE_ROLES, n), null == E.bot || p.Z.canManageUser(O.Plq.MANAGE_GUILD, E.bot.id, n)], [E.bot, n]), k = (0, l.e7)([p.Z], () => p.Z.can(O.Plq.MANAGE_WEBHOOKS, n), [n]), A = i.useCallback(() => {
+    integration: T,
+    webhooks: w
+  } = a, [P, Z] = (0, l.Wu)([p.Z], () => [p.Z.can(O.Plq.MANAGE_ROLES, n), null == E.bot || p.Z.canManageUser(O.Plq.MANAGE_GUILD, E.bot.id, n)], [E.bot, n]), k = (0, l.e7)([p.Z], () => p.Z.can(O.Plq.MANAGE_WEBHOOKS, n), [n]), A = i.useCallback(() => {
     S() && (0, o.h7j)(e => (0, r.jsx)(C, _({
       guild: n,
       application: E,
-      integration: w
+      integration: T
     }, e)))
-  }, [E, S, n, w]), R = i.useMemo(() => {
+  }, [E, S, n, T]), D = i.useMemo(() => {
     let e = [{
       icon: o.T39,
       text: v.intl.formatToPlainString(v.t.gcdJ8P, {
-        timestamp: b.default.extractTimestamp(w.id)
+        timestamp: b.default.extractTimestamp(T.id)
       })
     }];
-    return null != w.user && e.push({
+    return null != T.user && e.push({
       icon: o.tBG,
       text: v.intl.formatToPlainString(v.t.qE7oqq, {
-        user: g.ZP.getUserTag(w.user)
+        user: g.ZP.getUserTag(T.user)
       })
     }), e
-  }, [w.id, w.user]), D = i.useMemo(() => null != E.bot ? (0, r.jsx)(x.Z, {
+  }, [T.id, T.user]), R = i.useMemo(() => null != E.bot ? (0, r.jsx)(x.Z, {
     guild: n,
     applicationIntegration: a
   }) : (0, r.jsx)(o.Zbd, {
@@ -143,12 +143,12 @@ function N(e) {
     children: [(0, r.jsx)(f.Z, {
       name: E.name,
       imageSrc: null != (t = E.getIconURL(32)) ? t : m.pK["0"],
-      details: R,
+      details: D,
       isHeader: !0
     }), (null == E ? void 0 : E.description) != null ? (0, r.jsx)(u.Z, {
       userBio: E.description,
       className: y.headerDescription
-    }) : null, T ? (0, r.jsx)(d.Z, {
+    }) : null, P ? (0, r.jsx)(d.Z, {
       application: E,
       canNavigate: S,
       guildId: n.id
@@ -162,7 +162,7 @@ function N(e) {
           color: "currentColor"
         }),
         title: v.intl.string(v.t.AOdOYm)
-      }), D]
+      }), R]
     }) : null, (0, r.jsxs)("div", {
       className: y.section,
       children: [(0, r.jsx)(h.Z, {
@@ -171,8 +171,8 @@ function N(e) {
           color: "currentColor"
         }),
         title: v.intl.string(v.t["t9ZX/P"])
-      }), P.length > 0 ? (0, r.jsx)(j.Z, {
-        webhooks: P,
+      }), w.length > 0 ? (0, r.jsx)(j.Z, {
+        webhooks: w,
         editedWebhook: N,
         selectableWebhookChannels: c,
         errors: I,

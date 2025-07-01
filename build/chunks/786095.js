@@ -61,13 +61,13 @@ function E(e, t) {
     errorMessage: _
   } = (0, d.w)(), {
     createNewEditingRule: P
-  } = (0, d.V)(), [Z, I] = i.useState(!1), [N, T] = (0, s.I2)(t), {
-    rulesByTriggerType: w,
+  } = (0, d.V)(), [Z, I] = i.useState(!1), [T, w] = (0, s.I2)(t), {
+    rulesByTriggerType: N,
     updateRule: A
-  } = (0, s.pH)(t), D = i.useMemo(() => {
+  } = (0, s.pH)(t), x = i.useMemo(() => {
     var e;
-    return null != (e = w[j]) ? e : []
-  }, [w]), x = 0 === D.length, M = n > D.length && !x;
+    return null != (e = N[j]) ? e : []
+  }, [N]), M = 0 === x.length, D = n > x.length && !M;
   if (!i.useMemo(() => (0, u.ze)(t), [t]) || null == e || 0 === e.length || null == t) return null;
   let R = e.split(" "),
     C = R.length;
@@ -87,7 +87,7 @@ function E(e, t) {
         })
       }, 400))
     },
-    G = async t => {
+    k = async t => {
       var n, r;
       if ((0, a.Zy)(), !await (0, g.XN)(t.name, e)) return;
       let i = v(h({}, t), {
@@ -95,18 +95,18 @@ function E(e, t) {
           keywordFilter: [...null != (r = null == (n = t.triggerMetadata) ? void 0 : n.keywordFilter) ? r : [], e]
         })
       });
-      await S(i, D), A(i), null != _ ? (0, l.showToast)((0, l.createToast)(m.intl.string(m.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(m.intl.string(m.t["0rdYm5"]), l.ToastType.SUCCESS))
-    }, k = (0, r.jsx)(l.sNh, {
+      await S(i, x), A(i), null != _ ? (0, l.showToast)((0, l.createToast)(m.intl.string(m.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(m.intl.string(m.t["0rdYm5"]), l.ToastType.SUCCESS))
+    }, G = (0, r.jsx)(l.sNh, {
       id: "automod-rules-loading",
       label: m.intl.string(m.t.ZTNur6)
     });
-  return N || (k = (0, r.jsxs)(r.Fragment, {
-    children: [x && (0, r.jsx)(l.sNh, {
+  return T || (G = (0, r.jsxs)(r.Fragment, {
+    children: [M && (0, r.jsx)(l.sNh, {
       id: "add-first-rule",
       label: m.intl.string(m.t.f72Zqa),
       action: L,
       disabled: E
-    }), D.map(e => {
+    }), x.map(e => {
       let t = (0, c.V9)(j).reduce((t, n) => {
         let r = e.actions.find(e => {
           let {
@@ -130,9 +130,9 @@ function E(e, t) {
         group: "automod-rule-selection",
         checked: !1,
         disabled: E,
-        action: () => G(e)
+        action: () => k(e)
       }, e.id)
-    }), M && (0, r.jsxs)(r.Fragment, {
+    }), D && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "add-another-rule",
         label: m.intl.string(m.t["0K5jDA"]),
@@ -146,8 +146,8 @@ function E(e, t) {
       keywordCount: C
     }),
     onFocus: () => {
-      Z || (I(!0), T())
+      Z || (I(!0), w())
     },
-    children: k
+    children: G
   })
 }

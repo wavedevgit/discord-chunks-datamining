@@ -1,6 +1,6 @@
-/** Chunk was on 49286 **/
+/** Chunk was on 7104 **/
 n.d(t, {
-  Z: () => P
+  Z: () => w
 }), n(388685), n(642613), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -29,7 +29,7 @@ var r = n(255367),
   S = n(796920),
   E = n(20493);
 
-function w(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,27 +48,27 @@ function w(e) {
   return e
 }
 
-function P(e) {
+function w(e) {
   let t, {
       guild: n,
       integration: l,
       editedIntegration: a,
-      isExpanded: P,
-      onToggleExpand: T,
+      isExpanded: w,
+      onToggleExpand: P,
       onDisable: Z,
       onEnable: k
     } = e,
     A = (0, d.e7)([x.Z], () => x.Z.getRoles(n.id)),
-    [R, D] = i.useState(!1),
+    [D, R] = i.useState(!1),
     L = (0, d.e7)([j.Z], () => j.Z.hidePersonalInformation),
     M = i.useCallback(() => {
-      D(!0), k(l)
+      R(!0), k(l)
     }, [l, k]),
     B = i.useCallback(() => {
       l.syncing || (0, u.h7j)(e => {
         var t, n;
         let i = 0 === l.expire_behavior ? I.intl.string(I.t["6kpw4u"]) : I.intl.string(I.t.fQUQIC);
-        return (0, r.jsx)(u.ConfirmModal, (t = w({}, e), n = n = {
+        return (0, r.jsx)(u.ConfirmModal, (t = T({}, e), n = n = {
           header: I.intl.string(I.t.emx3lJ),
           confirmText: i,
           cancelText: I.intl.string(I.t["ETE/oK"]),
@@ -149,7 +149,7 @@ function P(e) {
       return l.enable_emoticons ? e.sort((e, t) => e.name.localeCompare(t.name)).filter(e => null != l.role_id && (null == e ? void 0 : e.roles.some(e => t.includes(e)))) : []
     }, [n.id, A, l.enable_emoticons, l.id, l.role_id]);
   if (i.useEffect(() => {
-      (null == a ? void 0 : a.id) === l.id && (null == a ? void 0 : a.enabled) === !0 && D(!1)
+      (null == a ? void 0 : a.id) === l.id && (null == a ? void 0 : a.enabled) === !0 && R(!1)
     }, [a, l.id]), l.enabled && null != l.user) t = [{
     icon: u.T39,
     text: L ? I.intl.formatToPlainString(I.t.gcdJ8P, {
@@ -181,7 +181,7 @@ function P(e) {
         grow: 0,
         children: (0, r.jsx)(O.Z, {
           className: S.expandIcon,
-          expanded: P && !R,
+          expanded: w && !D,
           "aria-hidden": !0
         })
       }) : (0, r.jsx)(b.Z.Child, {
@@ -191,8 +191,8 @@ function P(e) {
           size: u.zxk.Sizes.SMALL,
           color: u.zxk.Colors.PRIMARY,
           onClick: M,
-          disabled: R,
-          children: R ? (0, r.jsx)(v.Z, {
+          disabled: D,
+          children: D ? (0, r.jsx)(v.Z, {
             width: 24,
             height: 24
           }) : (0, r.jsx)(r.Fragment, {
@@ -202,7 +202,7 @@ function P(e) {
       })]
     }),
     $ = null;
-  return P && !R && null != a && ($ = (0, r.jsxs)(b.Z, {
+  return w && !D && null != a && ($ = (0, r.jsxs)(b.Z, {
     className: S.body,
     direction: b.Z.Direction.VERTICAL,
     children: [(0, r.jsx)(u.$i$, {
@@ -357,7 +357,7 @@ function P(e) {
           className: S.__invalid_twitchEmojis,
           children: n.map((e, t) => (0, r.jsx)(u.ua7, {
             text: e.name,
-            children: t => (0, r.jsx)("img", w({
+            children: t => (0, r.jsx)("img", T({
               alt: I.intl.formatToPlainString(I.t.n6ZZn5, {
                 name: e.name
               }),
@@ -399,8 +399,8 @@ function P(e) {
       direction: b.Z.Direction.VERTICAL,
       children: [l.enabled ? (0, r.jsx)(u.P3F, {
         className: S.expandableHeader,
-        "aria-expanded": P && !R,
-        onClick: T,
+        "aria-expanded": w && !D,
+        onClick: P,
         children: X
       }) : X, $]
     })

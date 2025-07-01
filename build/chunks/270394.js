@@ -1,4 +1,4 @@
-/** Chunk was on 49286 **/
+/** Chunk was on 7104 **/
 n.d(t, {
   Z: () => W
 }), n(997841), n(388685);
@@ -28,15 +28,15 @@ var r = n(255367),
   I = n(699516),
   S = n(594174),
   E = n(630388),
-  w = n(965638),
-  P = n(757539),
-  T = n(981631),
+  T = n(965638),
+  w = n(757539),
+  P = n(981631),
   Z = n(388032),
   k = n(541056),
   A = n(588866),
-  R = n(20493);
+  D = n(20493);
 
-function D(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -131,7 +131,7 @@ function U(e) {
             children: Z.intl.string(Z.t["1i1bUl"])
           }), (0, r.jsx)(m.ua7, {
             text: Z.intl.string(Z.t["jvd/LC"]),
-            children: e => (0, r.jsx)(m.d3s, L(D({
+            children: e => (0, r.jsx)(m.d3s, L(R({
               size: "xxs",
               color: "currentColor"
             }, e), {
@@ -184,17 +184,17 @@ function W(e) {
   } = e;
   s()(null != l, "guild is required");
   let f = (0, j.ZP)(),
-    x = (0, w.MQ)(l),
-    O = (0, w.O4)(l),
+    x = (0, T.MQ)(l),
+    O = (0, T.O4)(l),
     v = i.useMemo(() => null == t || g ? [] : d()(t).sortBy(e => {
       var t, n;
       return (null != (n = null == (t = e.inviter) ? void 0 : t.username) ? n : "").toLowerCase()
     }).value(), [t, g]),
     I = () => {
-      (0, m.ZDy)(async () => e => (0, r.jsx)(N.default, L(D({}, e), {
+      (0, m.ZDy)(async () => e => (0, r.jsx)(N.default, L(R({}, e), {
         channel: u,
         guild: l,
-        source: T.t4x.SETTINGS_INVITE
+        source: P.t4x.SETTINGS_INVITE
       })))
     },
     [S, E] = i.useState(62),
@@ -202,7 +202,7 @@ function W(e) {
       let e = {
         source: _.Zu.GUILD_SETTINGS
       };
-      (0, m.ZDy)(async () => t => (0, r.jsx)(C.default, L(D({}, t), {
+      (0, m.ZDy)(async () => t => (0, r.jsx)(C.default, L(R({}, t), {
         guildId: l.id,
         analyticsData: e
       })))
@@ -232,14 +232,14 @@ function W(e) {
           children: [(0, r.jsx)(y.Z.Child, {
             grow: M.INVITER,
             basis: 0,
-            className: R.marginReset,
+            className: D.marginReset,
             children: (0, r.jsx)(m.vwX, {
               children: Z.intl.string(Z.t.EgHyKy)
             })
           }), (0, r.jsx)(y.Z.Child, {
             basis: 0,
             grow: M.INVITE_CODE,
-            className: R.marginReset,
+            className: D.marginReset,
             children: (0, r.jsx)(m.vwX, {
               children: Z.intl.string(Z.t.LBlFEB)
             })
@@ -273,7 +273,7 @@ function W(e) {
       if (t === B.ACTIONS_V1) return (0, r.jsxs)(m.hjN, {
         className: k.actions,
         children: [(0, r.jsx)(m.R94, {
-          className: R.marginBottom20,
+          className: D.marginBottom20,
           type: m.geA.DESCRIPTION,
           children: !0 === a ? Z.intl.format(Z.t["97VdNj"], {
             onCreateInvite: I
@@ -302,7 +302,7 @@ function W(e) {
           className: k.headerDivider
         })]
       }, "header");
-      if (t === B.ACTIONS_V2) return (0, r.jsx)(P.Y, {
+      if (t === B.ACTIONS_V2) return (0, r.jsx)(w.Y, {
         hasInvites: v.length > 0,
         setHeight: E,
         onShowDisableInvites: A,
@@ -313,7 +313,7 @@ function W(e) {
       });
       if (t === B.TABLE) {
         if (0 === v.length && 0 === n && g) return (0, r.jsx)(m.$jN, {
-          className: R.marginTop20,
+          className: D.marginTop20,
           type: m.$jN.Type.SPINNING_CIRCLE
         }, "spinner");
         let e = v[n];

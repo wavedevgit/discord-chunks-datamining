@@ -1,18 +1,18 @@
 /** Chunk was on 37220 **/
 n.d(t, {
   $Z: () => Z,
-  B8: () => N,
+  B8: () => T,
   F4: () => _,
-  HH: () => D,
+  HH: () => x,
   Hd: () => I,
-  Xl: () => w,
+  Xl: () => N,
   dF: () => R,
   eM: () => C,
   fB: () => P,
-  gK: () => x,
+  gK: () => M,
   mG: () => A,
-  qe: () => M,
-  rY: () => T,
+  qe: () => D,
+  rY: () => w,
   ts: () => L,
   zW: () => S
 }), n(255367), n(73800), n(481060);
@@ -62,16 +62,16 @@ function I(e, t) {
   i.Z.startEditMessage(e.id, t.id, t.content)
 }
 
-function N(e, t) {
+function T(e, t) {
   (0, v.Z)(e.id, t.id)
 }
 
-function T(e, t, n) {
+function w(e, t, n) {
   if (!1 === t.pinned) return void(n.shiftKey ? r.Z.pinMessage(e, t.id) : l.Z.confirmPin(e, t));
   n.shiftKey ? r.Z.unpinMessage(e, t.id) : l.Z.confirmUnpin(e, t)
 }
 
-function w(e, t) {
+function N(e, t) {
   (0, a.Z)(e.id, t.id)
 }
 
@@ -79,7 +79,7 @@ function A(e, t) {
   (0, j.Z)(e, t, void 0, h.Z.getOptions(t.id))
 }
 
-function D(e, t, n) {
+function x(e, t, n) {
   let r = e.isPrivate(),
     i = t.author.id === f.default.getId();
   (0, c.fE)({
@@ -92,11 +92,11 @@ function D(e, t, n) {
   })
 }
 
-function x(e, t) {
+function M(e, t) {
   (0, d.R6)(e, t, "Message")
 }
 
-function M(e, t) {
+function D(e, t) {
   let n = g.Z.getChannel(y.default.castMessageIdAsChannelId(t.id));
   null != n && (0, d.ok)(n)
 }

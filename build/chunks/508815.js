@@ -1,4 +1,4 @@
-/** Chunk was on 49286 **/
+/** Chunk was on 7104 **/
 e.exports = {
   icon: "icon_b28dff",
   identifier: "identifier_b28dff",

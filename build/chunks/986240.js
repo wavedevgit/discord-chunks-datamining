@@ -16,7 +16,7 @@ var r = n(255367),
   b = n(388032);
 
 function p(e, t) {
-  let n = (0, d.Z)(t, e),
+  let n = (0, d.Z)(t),
     p = e.hasPotions(),
     O = (0, u.Nt)(),
     m = i.useCallback(n => {

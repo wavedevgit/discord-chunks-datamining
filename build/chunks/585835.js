@@ -1,4 +1,4 @@
-/** Chunk was on 49286 **/
+/** Chunk was on 7104 **/
 n.d(t, {
   Z: () => y
 }), n(539854), n(388685);
@@ -32,16 +32,16 @@ function y(e) {
     iconClassName: I,
     iconWrapperClassName: S,
     details: E,
-    integration: w,
-    buttonText: P,
-    buttonDisabled: T,
+    integration: T,
+    buttonText: w,
+    buttonDisabled: P,
     hasNextSection: Z,
     onButtonClick: k,
     guildId: A,
-    isScrolling: R,
-    canShowMigrationTooltip: D,
+    isScrolling: D,
+    canShowMigrationTooltip: R,
     trailing: L
-  } = e, [M, B] = i.useState(!1), [U, W] = i.useState(!1), z = D && !R && !U && void 0 !== A && null != w, H = i.useRef(null), G = i.useRef(null), F = i.useCallback((e, t, n, i) => null == e || null == i ? null : n ? (0, r.jsxs)(p.Z, {
+  } = e, [M, B] = i.useState(!1), [U, W] = i.useState(!1), z = R && !D && !U && void 0 !== A && null != T, H = i.useRef(null), G = i.useRef(null), F = i.useCallback((e, t, n, i) => null == e || null == i ? null : n ? (0, r.jsxs)(p.Z, {
     align: p.Z.Align.CENTER,
     ref: G,
     children: [(0, r.jsx)(c.Text, {
@@ -62,7 +62,7 @@ function y(e) {
     disabled: t,
     onClick: i,
     children: e
-  }), [H, G])(P, T, Z, k);
+  }), [H, G])(w, P, Z, k);
   i.useEffect(() => {
     var e, t;
     z && f.default.track(j.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
@@ -83,7 +83,7 @@ function y(e) {
       }
       return e
     }({}, (0, d.hH)(A)), t = t = {
-      application_id: null == w ? void 0 : w.application.id,
+      application_id: null == T ? void 0 : T.application.id,
       location: "overview"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
@@ -95,12 +95,12 @@ function y(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [A, null == w ? void 0 : w.application.id, z]);
+  }, [A, null == T ? void 0 : T.application.id, z]);
   let V = z ? (0, r.jsx)(c.yRy, {
       targetElementRef: Z ? G : H,
       renderPopout: () => (0, r.jsx)(c.P3F, {
         onClick: e => {
-          e.stopPropagation(), W(!0), x.Z.dismissOverviewTooltip(A, w.integration)
+          e.stopPropagation(), W(!0), x.Z.dismissOverviewTooltip(A, T.integration)
         },
         children: (0, r.jsx)(b.ZP, {
           content: O.intl.string(O.t.TyMJwM),
@@ -115,10 +115,10 @@ function y(e) {
     }) : F,
     K = (0, s.Wu)([m.Z], () => {
       var e;
-      return null != w && null != A && null != (e = m.Z.getApplicationEntitlementsForGuild(w.application.id, A)) ? e : []
+      return null != T && null != A && null != (e = m.Z.getApplicationEntitlementsForGuild(T.application.id, A)) ? e : []
     }),
     q = (0, u.LD)(A, !0),
-    Y = (null == w ? void 0 : w.application) != null && Object.keys(null != (l = null == (n = q.result) || null == (t = n.sections[w.application.id]) ? void 0 : t.commands) ? l : {}).length > 0,
+    Y = (null == T ? void 0 : T.application) != null && Object.keys(null != (l = null == (n = q.result) || null == (t = n.sections[T.application.id]) ? void 0 : t.commands) ? l : {}).length > 0,
     X = (0, r.jsxs)(p.Z, {
       children: [(0, r.jsx)(h.Z, {
         name: y,
@@ -172,13 +172,13 @@ function y(e) {
                 className: v.featureIcon
               })
             }, "commands")), l
-          }(w, M, Y), V, L]
+          }(T, M, Y), V, L]
         })
       })]
     });
   return Z ? (0, r.jsx)(c.P3F, {
     onClick: () => {
-      D && null != A && null != w && x.Z.dismissOverviewTooltip(A, w.integration), null == k || k()
+      R && null != A && null != T && x.Z.dismissOverviewTooltip(A, T.integration), null == k || k()
     },
     onFocus: () => B(!0),
     onBlur: () => B(!1),

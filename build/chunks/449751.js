@@ -11,7 +11,7 @@ var l = n(481060),
   o = n(388032);
 
 function c(e, t) {
-  return s.wS && e.type !== a.uaV.GUILD_INVITE_REMINDER ? (0, i.jsx)(l.sNh, {
+  return s.wS ? (0, i.jsx)(l.sNh, {
     id: "copy-link",
     label: o.intl.string(o.t.Xrt5Pj),
     icon: l.xPt,

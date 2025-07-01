@@ -1,4 +1,4 @@
-/** Chunk was on 84552 **/
+/** Chunk was on 61668 **/
 e.exports = {
   popoutContent: "popoutContent_dfa983",
   stickersList: "stickersList_dfa983",

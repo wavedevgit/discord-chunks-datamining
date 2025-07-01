@@ -1,4 +1,4 @@
-/** Chunk was on 49286 **/
+/** Chunk was on 34946 **/
 e.exports = {
   footer: "footer__6be55",
   guildRow: "guildRow__6be55",

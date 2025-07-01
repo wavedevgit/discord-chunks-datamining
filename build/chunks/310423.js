@@ -1,4 +1,4 @@
-/** Chunk was on 84552 **/
+/** Chunk was on 61668 **/
 n.d(t, {
   Z: () => T
 }), n(467055), n(388685);
@@ -80,8 +80,8 @@ let T = i.memo(function(e) {
       analyticsLocations: R
     } = (0, u.ZP)(),
     {
-      onCopy: k,
-      copyRef: L
+      onCopy: L,
+      copyRef: k
     } = (0, d.Z)(A, null == Z || null == (t = Z.application_command) ? void 0 : t.id),
     D = (0, o.e7)([h.Z], () => h.Z.getGuild(A.guild_id), [A.guild_id]);
   if (i.useEffect(() => {
@@ -123,7 +123,7 @@ let T = i.memo(function(e) {
         }));
         return t
       }
-      let k = x.value;
+      let L = x.value;
       if (null != x.value) switch (x.type) {
         case c.jw.USER: {
           let e = x.value.toString(),
@@ -186,10 +186,10 @@ let T = i.memo(function(e) {
           break;
         default: {
           let e = null == w || null == (u = w.choices) ? void 0 : u.find(e => e.value === x.value);
-          null != e && (k = null != (d = e.name_localized) ? d : e.name)
+          null != e && (L = null != (d = e.name_localized) ? d : e.name)
         }
       }
-      return null == h && (h = S(null == k ? void 0 : k.toString())), [(0, r.jsxs)(i.Fragment, {
+      return null == h && (h = S(null == L ? void 0 : L.toString())), [(0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsxs)(s.Text, O(v({}, j), {
           children: [" ", null != (p = null == w ? void 0 : w.name_localized) ? p : x.name, ": "]
         })), h]
@@ -214,11 +214,11 @@ let T = i.memo(function(e) {
     onCopy: e => {
       var t, n, r;
       let i = null != (r = null == (n = window) || null == (t = n.getSelection()) ? void 0 : t.toString()) ? r : "";
-      i.startsWith("/") && i.endsWith("\n") && k(e, Z)
+      i.startsWith("/") && i.endsWith("\n") && L(e, Z)
     },
     children: [(0, r.jsx)("div", {
       className: x.tooltip,
-      ref: L,
+      ref: k,
       children: P
     }), (0, r.jsx)("div", {
       className: x.tooltipPointer

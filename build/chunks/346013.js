@@ -1,4 +1,4 @@
-/** Chunk was on 84552 **/
+/** Chunk was on 61668 **/
 n.d(t, {
   Z: () => M
 }), n(388685);
@@ -34,9 +34,9 @@ var r = n(255367),
   w = n(959517),
   Z = n(388032),
   R = n(70249),
-  k = n(527455);
+  L = n(527455);
 
-function L(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -117,7 +117,7 @@ function M(e) {
       onMouseEnter: eu,
       onMouseLeave: ed,
       children: [!Q && (!0 === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
-        src: k,
+        src: L,
         alt: Z.intl.string(Z.t.rIbh8P),
         className: a()(R.thumbnail, {
           [R.spoiler]: V.shouldSpoiler
@@ -181,7 +181,7 @@ function M(e) {
           children: e => (0, r.jsx)("div", {
             onMouseEnter: eg,
             onMouseLeave: eg,
-            children: (0, r.jsx)(u.qEK, D(L({}, e), {
+            children: (0, r.jsx)(u.qEK, D(k({}, e), {
               ref: H,
               size: u.EFr.SIZE_40,
               src: ef,
@@ -226,7 +226,7 @@ function M(e) {
                 roleId: el,
                 avatarUrl: V.avatarUrl,
                 newAnalyticsLocations: [p.Z.USERNAME],
-                children: e => (0, r.jsx)(u.rz2, D(L({}, e), {
+                children: e => (0, r.jsx)(u.rz2, D(k({}, e), {
                   ref: G,
                   name: V.authorName,
                   color: er,

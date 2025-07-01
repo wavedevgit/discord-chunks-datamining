@@ -23,7 +23,7 @@ function h(e, t) {
   let {
     reducedMotion: n
   } = i.useContext(a.Sfi), g = (0, u.$R)(t), h = (0, l.e7)([f.Z], () => (t.isPrivate() || f.Z.can(O.Plq.ADD_REACTIONS, t)) && g, [t, g]), j = (0, o.MZ)(t.getGuildId());
-  if (!d.nc.getSetting() || !h || e.type === O.uaV.GUILD_INVITE_REMINDER) return null;
+  if (!d.nc.getSetting() || !h) return null;
   let E = j.filter(e => !p.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,

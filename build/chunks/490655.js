@@ -1,6 +1,6 @@
-/** Chunk was on 49286 **/
+/** Chunk was on 7104 **/
 n.d(t, {
-  Z: () => w
+  Z: () => T
 }), n(388685), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -49,21 +49,21 @@ function E(e, t) {
       return ""
   }
 }
-let w = i.memo(function(e) {
+let T = i.memo(function(e) {
   let {
     section: t,
     sectionId: n,
     guild: l,
-    channel: w,
-    integrations: P,
-    editedIntegration: T,
+    channel: T,
+    integrations: w,
+    editedIntegration: P,
     webhooks: Z,
     editedWebhook: k,
     isFetchingWebhooks: A,
-    refToScroller: R,
-    errors: D,
+    refToScroller: D,
+    errors: R,
     hasChanges: L
-  } = e, M = (0, a.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), B = (0, a.cj)([g.ZP], () => g.ZP.getChannels(null == l ? void 0 : l.id)), U = (0, a.cj)([f.Z], () => o().keyBy(B.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, a.cj)([f.Z], () => o().keyBy(B.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), z = null != w ? w : M, H = t === N.b4C.APPLICATION ? n : null, [G, F] = i.useState(d.$x), V = i.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
+  } = e, M = (0, a.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), B = (0, a.cj)([g.ZP], () => g.ZP.getChannels(null == l ? void 0 : l.id)), U = (0, a.cj)([f.Z], () => o().keyBy(B.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, a.cj)([f.Z], () => o().keyBy(B.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), z = null != T ? T : M, H = t === N.b4C.APPLICATION ? n : null, [G, F] = i.useState(d.$x), V = i.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
     duration: 300,
     intensity: G
   }), F(Math.min(G + d.d7, d.w6)), h.S.dispatch(N.CkL.EMPHASIZE_NOTICE), !1) : (F(d.$x), !0), [L, G]), K = i.useCallback(e => !!V() && (c.Z.setSection(e), !0), [V]), {
@@ -78,8 +78,8 @@ let w = i.memo(function(e) {
       n = {},
       r = [],
       i = [];
-    if (null != P)
-      for (let r of P)
+    if (null != w)
+      for (let r of w)
         if ("discord" === r.type) {
           if (null != r.application) {
             var l;
@@ -98,7 +98,7 @@ let w = i.memo(function(e) {
       customWebhooks: r,
       followedChannelWebhooks: i
     }
-  }, [P, U, W, Z]);
+  }, [w, U, W, Z]);
   i.useEffect(() => {
     if (!A) switch (t) {
       case N.b4C.TWITCH:
@@ -121,7 +121,7 @@ let w = i.memo(function(e) {
       null != X[N.ABu.TWITCH] && (Q = (0, r.jsx)(O.Z, {
         guild: l,
         integrations: X[N.ABu.TWITCH],
-        editedIntegration: T,
+        editedIntegration: P,
         labelText: I.intl.string(I.t.q4pBGx),
         platformType: N.ABu.TWITCH,
         descriptionText: I.intl.string(I.t.V9kNqq),
@@ -139,7 +139,7 @@ let w = i.memo(function(e) {
       null != X[N.ABu.YOUTUBE] && (Q = (0, r.jsx)(O.Z, {
         guild: l,
         integrations: X[N.ABu.YOUTUBE],
-        editedIntegration: T,
+        editedIntegration: P,
         labelText: I.intl.string(I.t.aS6cKy),
         platformType: N.ABu.YOUTUBE,
         descriptionText: I.intl.string(I.t["7Tv7JC"]),
@@ -160,7 +160,7 @@ let w = i.memo(function(e) {
         applicationIntegration: et,
         editedWebhook: k,
         selectableWebhookChannels: U,
-        errors: D,
+        errors: R,
         canNavigate: V
       }));
       break;
@@ -170,13 +170,13 @@ let w = i.memo(function(e) {
         editedWebhook: k,
         selectableWebhookChannels: U,
         canNavigate: V,
-        errors: D
+        errors: R
       });
       break;
     case N.b4C.WEBHOOKS:
       Q = (0, r.jsx)(C.Z, {
         guild: l,
-        channel: w,
+        channel: T,
         customWebhooks: $,
         editedWebhook: k,
         selectableWebhookChannels: function(e) {
@@ -198,8 +198,8 @@ let w = i.memo(function(e) {
           return e
         }({}, U, W),
         canNavigate: V,
-        refToScroller: R,
-        errors: D
+        refToScroller: D,
+        errors: R
       });
       break;
     case N.b4C.LOBBIES_LINKED:
@@ -210,7 +210,7 @@ let w = i.memo(function(e) {
     default:
       Q = (0, r.jsx)(_.Z, {
         guild: l,
-        channel: w,
+        channel: T,
         applicationIntegrations: q,
         builtInIntegrations: X,
         customWebhooks: $,

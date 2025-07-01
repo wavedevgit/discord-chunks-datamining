@@ -1,4 +1,4 @@
-/** Chunk was on 84552 **/
+/** Chunk was on 61668 **/
 n.d(t, {
   F: () => R,
   P: () => Z
@@ -99,7 +99,7 @@ function Z(e) {
       })
     })
   };
-  return (0, r.jsx)(k, {
+  return (0, r.jsx)(L, {
     appName: u.name,
     title: N.intl.formatToPlainString(N.t.XDRjs7, {
       appName: u.name
@@ -160,7 +160,7 @@ function R(e) {
     return null == (e = _.Z.getBasicChannel(u.channel_id)) ? void 0 : e.guild_id
   }, [u]), x = i.useMemo(() => null != E ? (0, v.y)(E, 45) : void 0, [E]), Z = (0, j.R)(null != (l = null == E ? void 0 : E.id) ? l : ""), {
     openModal: R,
-    subscriptionPurchaseButtonState: L
+    subscriptionPurchaseButtonState: k
   } = (0, g.Z)({
     skuId: c,
     initialSubscribeForGuild: y
@@ -228,7 +228,7 @@ function R(e) {
       area: "purchase_button"
     })
   };
-  return (0, r.jsx)(k, {
+  return (0, r.jsx)(L, {
     appName: E.name,
     title: m.name,
     description: B,
@@ -268,7 +268,7 @@ function R(e) {
         }),
         onHasClicked: G,
         subscriptionPlan: h,
-        state: L
+        state: k
       }) : (0, r.jsx)(s.zxk, {
         onClick: F,
         children: N.intl.string(N.t.uuzaAA)
@@ -285,7 +285,7 @@ function R(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     appName: t,
     title: n,

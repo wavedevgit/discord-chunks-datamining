@@ -1,4 +1,4 @@
-/** Chunk was on 84552 **/
+/** Chunk was on 61668 **/
 n.d(t, {
   H: () => v
 }), n(35282);
@@ -39,7 +39,7 @@ function v(e) {
       rawName: t
     } = e;
     return "channel_id" === t
-  })) ? void 0 : v.rawValue, R = (0, a.e7)([_.Z], () => _.Z.getGuild(w)), k = (0, a.e7)([g.Z], () => g.Z.getChannel(Z)), L = (0, a.e7)([h.default], () => h.default.getCurrentUser()), D = (0, a.e7)([], () => P.author.id === (null == L ? void 0 : L.id)), M = null == (I = A.recipients) ? void 0 : I.find(e => e !== P.author.id), U = (0, a.e7)([h.default], () => null != M ? h.default.getUser(M) : null), F = (0, d.ZP)(P), B = (0, E._T)(A.getGuildId(), A.id, U), G = (0, a.Wu)([b.ZP], () => null != k ? b.ZP.getVoiceStatesForChannel(k) : [], [k]), H = G.some(e => e.user.id === (null == L ? void 0 : L.id)), V = null == (N = P.embeds[0]) || null == (T = N.fields) || null == (S = T.find(e => {
+  })) ? void 0 : v.rawValue, R = (0, a.e7)([_.Z], () => _.Z.getGuild(w)), L = (0, a.e7)([g.Z], () => g.Z.getChannel(Z)), k = (0, a.e7)([h.default], () => h.default.getCurrentUser()), D = (0, a.e7)([], () => P.author.id === (null == k ? void 0 : k.id)), M = null == (I = A.recipients) ? void 0 : I.find(e => e !== P.author.id), U = (0, a.e7)([h.default], () => null != M ? h.default.getUser(M) : null), F = (0, d.ZP)(P), B = (0, E._T)(A.getGuildId(), A.id, U), G = (0, a.Wu)([b.ZP], () => null != L ? b.ZP.getVoiceStatesForChannel(L) : [], [L]), H = G.some(e => e.user.id === (null == k ? void 0 : k.id)), V = null == (N = P.embeds[0]) || null == (T = N.fields) || null == (S = T.find(e => {
     let {
       rawName: t
     } = e;
@@ -48,14 +48,14 @@ function v(e) {
     username: B
   }) : C.intl.formatToPlainString(C.t.noNjkZ, {
     username: F.nick
-  }), Y = null != R && null != k, X = null;
+  }), Y = null != R && null != L, X = null;
   X = Y ? D || H ? C.intl.format(C.t.CaLQqK, {
     channelHook: (e, t) => (0, r.jsx)(p.Z, {
-      channel: null != k ? k : void 0
+      channel: null != L ? L : void 0
     }, t)
   }) : C.intl.format(C.t.VugXpK, {
     channelHook: (e, t) => (0, r.jsx)(p.Z, {
-      channel: null != k ? k : void 0
+      channel: null != L ? L : void 0
     }, t)
   }) : C.intl.string(C.t["tHT/Vl"]), 0 === G.length && (X = D ? C.intl.string(C.t.IE2uZW) : C.intl.string(C.t.QVhmGx));
   let q = D ? C.intl.string(C.t["00XIbm"]) : C.intl.string(C.t["7CrE9/"]);

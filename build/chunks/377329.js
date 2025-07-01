@@ -1,4 +1,4 @@
-/** Chunk was on 58023 **/
+/** Chunk was on 61 **/
 n.d(t, {
   Z: () => p
 }), n(953529), n(35282);
@@ -11,8 +11,8 @@ var l = n(255367),
   c = n(592125),
   u = n(430824),
   d = n(594174),
-  m = n(236373),
-  x = n(230900),
+  x = n(236373),
+  m = n(230900),
   g = n(405613),
   h = n(460838),
   v = n(388032),
@@ -23,32 +23,32 @@ function p(e) {
   let {
     guildId: p,
     guildEvent: j,
-    guildEventId: b,
-    error: y
-  } = e, O = r.useMemo(() => (0, m.Gb)(j, p), [j, p]), {
-    channel_id: N,
-    name: E,
+    guildEventId: y,
+    error: b
+  } = e, E = r.useMemo(() => (0, x.Gb)(j, p), [j, p]), {
+    channel_id: O,
+    name: N,
     image: C,
-    description: I
-  } = O, S = (0, i.e7)([c.Z], () => c.Z.getChannel(N), [N]), T = (0, i.e7)([u.Z], () => u.Z.getGuild(p), [p]), P = (0, x.cS)(O), w = (0, i.e7)([d.default], () => null != j.creatorId ? d.default.getUser(j.creatorId) : d.default.getCurrentUser(), [j.creatorId]), Z = (0, i.e7)([o.Z], () => o.Z.isLurking(p), [p]), k = (0, s.KS)(S, T);
+    description: S
+  } = E, T = (0, i.e7)([c.Z], () => c.Z.getChannel(O), [O]), I = (0, i.e7)([u.Z], () => u.Z.getGuild(p), [p]), P = (0, m.cS)(E), Z = (0, i.e7)([d.default], () => null != j.creatorId ? d.default.getUser(j.creatorId) : d.default.getCurrentUser(), [j.creatorId]), w = (0, i.e7)([o.Z], () => o.Z.isLurking(p), [p]), D = (0, s.KS)(T, I);
   return (0, l.jsxs)("div", {
     className: f.content,
     children: [(0, l.jsx)(h.Z, {
       className: f.previewCard,
-      guild: T,
-      channel: S,
+      guild: I,
+      channel: T,
       location: null != P ? P : void 0,
-      creator: w,
-      name: E,
-      description: I,
-      imageSource: (n = (0, m.Gb)(j, p, b), null == C && null == n.image ? null : null != C && /^data:/.test(C) ? C : (0, g.Z)(n)),
+      creator: Z,
+      name: N,
+      description: S,
+      imageSource: (n = (0, x.Gb)(j, p, y), null == C && null == n.image ? null : null != C && /^data:/.test(C) ? C : (0, g.Z)(n)),
       isActive: !1,
-      isUserLurking: Z,
+      isUserLurking: w,
       speakers: [],
       speakerCount: 0,
       rsvped: !0,
-      guildEvent: O,
-      eventPreview: O
+      guildEvent: E,
+      eventPreview: E
     }), (0, l.jsxs)("div", {
       className: f.textContainer,
       children: [(0, l.jsx)(a.X6q, {
@@ -59,12 +59,12 @@ function p(e) {
         variant: "text-md/normal",
         className: f.subheader,
         children: null != location ? v.intl.string(v.t.KDPFi4) : v.intl.format(v.t.f55NX1, {
-          channelName: null != (t = null == S ? void 0 : S.name) ? t : "",
+          channelName: null != (t = null == T ? void 0 : T.name) ? t : "",
           channelHook: () => {
             var e;
             return (0, l.jsxs)("div", {
               className: f.channelName,
-              children: [null != k ? (0, l.jsx)(k, {
+              children: [null != D ? (0, l.jsx)(D, {
                 size: "custom",
                 color: "currentColor",
                 width: 20,
@@ -76,15 +76,15 @@ function p(e) {
                 height: 18,
                 width: 18,
                 className: f.locationIcon
-              }), null != (e = null == S ? void 0 : S.name) ? e : P]
+              }), null != (e = null == T ? void 0 : T.name) ? e : P]
             })
           }
         })
-      }), null != y && (0, l.jsx)(a.Text, {
+      }), null != b && (0, l.jsx)(a.Text, {
         color: "text-danger",
         variant: "text-xs/normal",
         className: f.subheader,
-        children: y.getAnyErrorMessage()
+        children: b.getAnyErrorMessage()
       })]
     })]
   })

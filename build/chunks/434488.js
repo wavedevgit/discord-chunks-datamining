@@ -197,7 +197,7 @@ function T(e) {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("34946")]).then(n.bind(n, 560114));
       return n => (0, r.jsx)(e, P(I({}, n), {
         guild: l,
         channel: t,

@@ -21,8 +21,8 @@ function u(e) {
     section: s,
     sectionId: u,
     webhooks: h,
-    editedWebhook: g,
-    isFetching: m,
+    editedWebhook: m,
+    isFetching: g,
     errors: p
   } = (0, l.cj)([o.Z], () => o.Z.getProps(), []);
   return null == r || null == n ? null : (0, i.jsx)(a.Z, {
@@ -31,8 +31,8 @@ function u(e) {
     section: s,
     sectionId: u,
     webhooks: h,
-    editedWebhook: g,
-    isFetchingWebhooks: m,
+    editedWebhook: m,
+    isFetchingWebhooks: g,
     hasChanges: o.Z.hasChanges,
     errors: p,
     refToScroller: t

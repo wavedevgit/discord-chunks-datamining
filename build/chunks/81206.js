@@ -1,4 +1,4 @@
-/** Chunk was on 49286 **/
+/** Chunk was on 7104 **/
 e.exports = {
   group: "group__344e6",
   item: "item__344e6",

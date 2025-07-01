@@ -1,6 +1,6 @@
-/** Chunk was on 49286 **/
+/** Chunk was on 7104 **/
 n.d(t, {
-  Z: () => R
+  Z: () => D
 }), n(388685), n(642613);
 var r = n(255367),
   i = n(73800),
@@ -28,9 +28,9 @@ var r = n(255367),
   I = n(905753),
   S = n(399860),
   E = n(335049),
-  w = n(617012),
-  P = n(981631),
-  T = n(388032),
+  T = n(617012),
+  w = n(981631),
+  P = n(388032),
   Z = n(981263);
 
 function k(e) {
@@ -65,7 +65,7 @@ function A(e, t) {
   }), e
 }
 
-function R(e) {
+function D(e) {
   let {
     commandId: t,
     editPermissions: n,
@@ -77,7 +77,7 @@ function R(e) {
   o()(null != h, "");
   let x = (0, c.e7)([j.Z], () => j.Z.getRoles(l)),
     [y, E] = i.useState(new Set),
-    w = i.useMemo(() => {
+    T = i.useMemo(() => {
       let e = (0, b.bD)(l),
         t = s()(x).sortBy(e => e.position).reduce((e, t, n) => (e[t.id] = n, e), {});
       return Object.values(p).filter(e => e.canRead).sort((n, r) => {
@@ -109,10 +109,10 @@ function R(e) {
         }
       })
     }, [l, p, x]),
-    P = i.useCallback((e, t) => {
+    w = i.useCallback((e, t) => {
       n({}, [(0, S.rE)(e, t)])
     }, [n]),
-    T = i.useCallback((e, t, r) => {
+    P = i.useCallback((e, t, r) => {
       let i = (0, S.rE)(e, t);
       null != p[i] && n({
         [i]: {
@@ -131,15 +131,15 @@ function R(e) {
       var t;
       return (null == (t = e.application) ? void 0 : t.id) === k
     })),
-    R = (0, c.e7)([f.Z], () => void 0 !== A && f.Z.canShowToggleTooltip(A.id));
-  return w.length > 0 ? w.map(e => (0, r.jsx)(D, {
+    D = (0, c.e7)([f.Z], () => void 0 !== A && f.Z.canShowToggleTooltip(A.id));
+  return T.length > 0 ? T.map(e => (0, r.jsx)(R, {
     guild: h,
     commandId: t,
-    onChange: t => T(e.id, e.type, t),
-    onRemove: () => P(e.id, e.type),
+    onChange: t => P(e.id, e.type, t),
+    onRemove: () => w(e.id, e.type),
     overwrite: e,
     integration: A,
-    canShowMigrationTooltip: R,
+    canShowMigrationTooltip: D,
     hasAccessToMutatePermissions: g
   }, e.id)) : (0, r.jsx)("div", {
     className: Z.noItemsSelected,
@@ -151,7 +151,7 @@ function R(e) {
   })
 }
 
-function D(e) {
+function R(e) {
   var t, n, l;
   let o, {
       guild: a,
@@ -167,27 +167,27 @@ function D(e) {
     C = null == j || null == (n = j.application) || null == (t = n.bot) ? void 0 : t.username,
     N = !f.canWrite || !v,
     I = x.default.getId();
-  v ? f.canWrite || (f.type === m.Kw.USER ? o = f.id === I ? T.intl.string(T.t["1VF/09"]) : T.intl.string(T.t.P1GnER) : f.type === m.Kw.ROLE && (o = T.intl.string(T.t.mcAijY))) : o = null != s ? T.intl.string(T.t.tybdam) : T.intl.string(T.t.z2hjk5);
+  v ? f.canWrite || (f.type === m.Kw.USER ? o = f.id === I ? P.intl.string(P.t["1VF/09"]) : P.intl.string(P.t.P1GnER) : f.type === m.Kw.ROLE && (o = P.intl.string(P.t.mcAijY))) : o = null != s ? P.intl.string(P.t.tybdam) : P.intl.string(P.t.z2hjk5);
   let S = O && null != j && f.id === a.id && void 0 !== C && !f.permission;
   i.useEffect(() => {
     if (S) {
       var e;
-      y.default.track(P.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, A(k({}, (0, p.hH)(a.id)), {
+      y.default.track(w.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, A(k({}, (0, p.hH)(a.id)), {
         application_id: null == j || null == (e = j.application) ? void 0 : e.id,
         location: "toggle"
       }))
     }
   }, [a.id, null == j || null == (l = j.application) ? void 0 : l.id, S]);
-  let R = i.useRef(null),
-    D = (0, r.jsx)(d.ua7, {
+  let D = i.useRef(null),
+    R = (0, r.jsx)(d.ua7, {
       tooltipClassName: Z.tooltip,
       text: o,
       shouldShow: N,
       position: "left",
       hideOnClick: !1,
       children: e => (0, r.jsx)("div", A(k({}, e), {
-        ref: R,
-        children: (0, r.jsx)(w.Z, {
+        ref: D,
+        children: (0, r.jsx)(T.Z, {
           isDisabled: N,
           currentValue: f.permission,
           onChange: S ? e => {
@@ -197,14 +197,14 @@ function D(e) {
       }))
     }),
     M = (0, r.jsx)(d.yRy, {
-      targetElementRef: R,
+      targetElementRef: D,
       renderPopout: () => (0, r.jsx)(d.P3F, {
         onClick: e => {
           e.stopPropagation(), g.Z.dismissToggleTooltip(a.id, j)
         },
         children: (0, r.jsx)(h.ZP, {
           className: Z.tooltip,
-          content: T.intl.format(T.t.pW4Cr6, {
+          content: P.intl.format(P.t.pW4Cr6, {
             botName: C,
             link: "https://discord.com/blog/welcome-to-the-new-era-of-discord-apps/"
           }),
@@ -217,7 +217,7 @@ function D(e) {
       onRequestClose: () => g.Z.dismissToggleTooltip(a.id, j),
       shouldShow: S,
       closeOnScroll: !0,
-      children: () => D
+      children: () => R
     });
   return (0, r.jsxs)("div", {
     className: Z.entryItem,
@@ -253,7 +253,7 @@ function L(e) {
     className: Z.removeActions,
     children: (0, r.jsx)(d.P3F, {
       className: Z.removeContainer,
-      "aria-label": T.intl.string(T.t.mT0CQE),
+      "aria-label": P.intl.string(P.t.mT0CQE),
       onClick: l,
       children: (0, r.jsx)(d.XHJ, {
         size: "md",

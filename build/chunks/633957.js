@@ -1,4 +1,4 @@
-/** Chunk was on 84552 **/
+/** Chunk was on 61668 **/
 n.d(t, {
   Z: () => U
 }), n(388685), n(539854);
@@ -34,8 +34,8 @@ var r = n(255367),
   w = n(506071),
   Z = n(226378),
   R = n(981631),
-  k = n(701488),
-  L = n(388032),
+  L = n(701488),
+  k = n(388032),
   D = n(484608);
 let M = i.memo(e => {
   let {
@@ -85,7 +85,7 @@ let U = i.memo(function(e) {
     Q = null == q ? void 0 : q.details,
     J = i.useMemo(() => {
       let e = new v.ZP(P);
-      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.wT), e
+      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = L.wT), e
     }, [P]),
     $ = (0, m.s5)({
       userId: V,
@@ -122,7 +122,7 @@ let U = i.memo(function(e) {
         analyticsLocations: F,
         componentId: en
       })
-    }, el = et.disabled ? L.intl.string(L.t.JBnc7O) : L.intl.string(L.t.cX9uLS), ea = (0, C.z)(J, () => {
+    }, el = et.disabled ? k.intl.string(k.t.JBnc7O) : k.intl.string(k.t.cX9uLS), ea = (0, C.z)(J, () => {
       T.default.track(R.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: P.id,
         channel_id: w,
@@ -138,17 +138,17 @@ let U = i.memo(function(e) {
   let es = S.default.getCurrentUser(),
     ec = X.length,
     eu = null != (c = null == q || null == (n = q.timestamps) ? void 0 : n.start) ? c : null == q ? void 0 : q.created_at,
-    ed = ee ? el : null != Q ? Q : L.intl.string(L.t.oQn0h4),
+    ed = ee ? el : null != Q ? Q : k.intl.string(k.t.oQn0h4),
     ep = (0, E.r)(q),
     em = [{
-      label: ee ? L.intl.string(L.t.cnBQPD) : L.intl.string(L.t.VJlc0d),
+      label: ee ? k.intl.string(k.t.cnBQPD) : k.intl.string(k.t.VJlc0d),
       trackingArea: y.j_.PLAY,
       onClick: ei,
       disabledReason: x,
       submitting: er
     }];
   return null != ea && em.push(ea), (0, r.jsx)(b.W, {
-    header: L.intl.string(L.t.pkq6Vl),
+    header: k.intl.string(k.t.pkq6Vl),
     title: ed,
     iconSrc: eo,
     embedUrl: (0, h.H)({

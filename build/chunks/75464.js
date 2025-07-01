@@ -1,7 +1,7 @@
 /** Chunk was on 86915 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => g
 }), n(388685);
 var i, l = n(255367),
   r = n(73800),
@@ -28,7 +28,7 @@ let u = {
     DEFAULT: "default",
     STATIC: "static"
   };
-class g extends(i = r.PureComponent) {
+class m extends(i = r.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -98,8 +98,8 @@ class g extends(i = r.PureComponent) {
     })
   }
 }
-d(g, "Sizes", u), d(g, "defaultProps", {
+d(m, "Sizes", u), d(m, "defaultProps", {
   size: u.MEDIUM,
   disabled: !1
 });
-let m = g
+let g = m

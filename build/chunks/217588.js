@@ -1,4 +1,4 @@
-/** Chunk was on 84552 **/
+/** Chunk was on 61668 **/
 n.d(t, {
   Z: () => H
 }), n(953529), n(388685);
@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function k(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = (e, t) => t ? A.intl.format(A.t.auckX1, {
+let k = (e, t) => t ? A.intl.format(A.t.auckX1, {
     stickerPackName: e.name
   }) : A.intl.format(A.t.OzB6e3, {
     stickerPackName: e.name
@@ -154,7 +154,7 @@ let F = e => {
         children: n.name
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: L(c, p)
+        children: k(c, p)
       }), (0, r.jsx)("ul", {
         className: w.stickersList,
         children: m.map(e => (0, r.jsx)(S.Z, {
@@ -187,8 +187,8 @@ let F = e => {
       } = e,
       [O, j] = i.useState(null),
       [I, T] = i.useState(!1),
-      L = C.default.getCurrentUser(),
-      D = v.ZP.canUseCustomStickersEverywhere(L),
+      k = C.default.getCurrentUser(),
+      D = v.ZP.canUseCustomStickersEverywhere(k),
       F = (0, o.e7)([y.Z], () => y.Z.getGuild(n.guild_id)),
       B = null != F,
       [G, H] = i.useState(!1),
@@ -310,7 +310,7 @@ let F = e => {
               align: p.Z.Align.START,
               justify: p.Z.Justify.START,
               className: Z.otherEmojisContainer,
-              children: t.map(e => (0, r.jsx)(s.ua7, k(R({
+              children: t.map(e => (0, r.jsx)(s.ua7, L(R({
                 text: e.name
               }, h.b_), {
                 children: t => {
@@ -332,7 +332,7 @@ let F = e => {
                     }
                     return i
                   }(t, ["onMouseEnter", "onMouseLeave"]);
-                  return (0, r.jsx)("div", k(R({
+                  return (0, r.jsx)("div", L(R({
                     className: a()(Z.otherEmoji, {
                       [w.nonInteractingSticker]: null != V && V !== e.id
                     }),

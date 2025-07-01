@@ -1,4 +1,4 @@
-/** Chunk was on 84552 **/
+/** Chunk was on 61668 **/
 n.d(t, {
   ZP: () => F
 }), n(388685);
@@ -141,9 +141,9 @@ let N = ["TOP_LEFT", "TOP_RIGHT"],
   }),
   Z = "falling-leaf",
   R = ["#61D5B2"],
-  k = n(303893),
-  L = n(313226),
-  D = [k, L];
+  L = n(303893),
+  k = n(313226),
+  D = [L, k];
 
 function M() {
   return n.e("77843").then(n.t.bind(n, 931152, 19)).then(e => {
@@ -275,7 +275,7 @@ function U(e) {
           }
         }
       }, {
-        sprite: "TOP_LEFT" === g ? k : L
+        sprite: "TOP_LEFT" === g ? L : k
       })
     }
   }, [x, y, g, d]), (0, i.jsxs)(i.Fragment, {
@@ -369,17 +369,17 @@ function F(e) {
           d(t.left + t.width / 2, t.top + t.height / 2)
         } else S(!0)
     }, [d, N, I]),
-    k = l.useCallback(() => {
+    L = l.useCallback(() => {
       S(!1)
     }, []),
-    L = l.useCallback(() => {
+    k = l.useCallback(() => {
       (0, _.AI)({
         settingsVisible: !0
       }), m.Z.open(x.oAB.POGGERMODE), S(!1)
     }, []),
     D = l.useCallback((e, t) => {
-      (null == t ? void 0 : t.id.startsWith(Z)) && L()
-    }, [L]);
+      (null == t ? void 0 : t.id.startsWith(Z)) && k()
+    }, [k]);
   l.useEffect(() => j(D));
   let M = (0, i.jsx)(p.P3F, {
     className: O.iconWrapper,
@@ -402,8 +402,8 @@ function F(e) {
       children: (0, i.jsx)("div", {
         className: O.cannonWrapper,
         children: (0, i.jsx)(U, {
-          onAnimationComplete: k,
-          onClick: L
+          onAnimationComplete: L,
+          onClick: k
         })
       })
     }) : null]

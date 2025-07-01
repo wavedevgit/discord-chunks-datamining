@@ -1,4 +1,4 @@
-/** Chunk was on 49286 **/
+/** Chunk was on 7104 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -32,13 +32,13 @@ function j(e) {
     } = e,
     I = (0, d.ZP)(),
     [S, E] = i.useState(null),
-    [w, P] = i.useState(null);
+    [T, w] = i.useState(null);
   if (null != j) t = j;
   else {
     let e = Object.values(y);
     t = e.length > 0 ? e[0] : null
   }
-  let T = i.useCallback(async () => {
+  let P = i.useCallback(async () => {
     if (N() && null !== t) {
       let e = await s.Z.create(n.id, t.id).catch(e => {
         let {
@@ -56,11 +56,11 @@ function j(e) {
           body: g.intl.string(g.t["/4TwKS"])
         }), null
       });
-      null != e && (P(e.id), E(e))
+      null != e && (w(e.id), E(e))
     }
   }, [N, t, n]);
   (0, c.ZP)(() => {
-    0 === O.length && T()
+    0 === O.length && P()
   });
   let Z = null !== t;
   return (0, r.jsxs)(o.hjN, {
@@ -77,7 +77,7 @@ function j(e) {
         className: f.createButton,
         size: o.zxk.Sizes.SMALL,
         disabled: !Z,
-        onClick: T,
+        onClick: P,
         children: g.intl.string(g.t["nrO/HB"])
       }), (0, r.jsx)(m.Z, {
         webhooks: O,
@@ -106,6 +106,6 @@ function j(e) {
           children: g.intl.string(g.t.lOQqJC)
         })]
       })
-    }(I, Z, T)]
+    }(I, Z, P)]
   })
 }

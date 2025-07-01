@@ -16,13 +16,13 @@ function u(e) {
   let {
     channel: t,
     onChange: n
-  } = e, [u, h] = l.useState(null), g = t.rateLimitPerUser, m = l.useMemo(() => {
+  } = e, [u, h] = l.useState(null), m = t.rateLimitPerUser, g = l.useMemo(() => {
     let e = [...null != u ? u : o.BiE];
-    return e.includes(g) || e.unshift(g), e.map(e => ({
+    return e.includes(m) || e.unshift(m), e.map(e => ({
       label: (0, a.A)(e, !1),
       value: e
     }))
-  }, [u, g]), p = l.useCallback(e => {
+  }, [u, m]), p = l.useCallback(e => {
     n(e), h(null)
   }, [n]), f = l.useCallback(e => {
     if ("" === e) return void h(null);
@@ -39,10 +39,10 @@ function u(e) {
   }, []);
   return (0, i.jsx)(r.VcW, {
     className: d.marginBottom8,
-    value: g,
+    value: m,
     onChange: p,
     onSearchChange: f,
-    options: m,
+    options: g,
     onBlur: x,
     placeholder: c.intl.string(c.t.dBqQu7)
   })

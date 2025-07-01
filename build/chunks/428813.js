@@ -30,11 +30,11 @@ function u() {
     u = (0, l.e7)([o.Z], () => null != t && o.Z.can(d.Plq.CREATE_INSTANT_INVITE, t), [t]),
     {
       invites: h,
-      loading: g
+      loading: m
     } = (0, l.cj)([s.Z], () => s.Z.getInvites(), []);
   return (0, i.jsx)(r.Z, {
     invites: h,
-    loading: g,
+    loading: m,
     guild: n,
     channel: t,
     canCreateInvites: u,

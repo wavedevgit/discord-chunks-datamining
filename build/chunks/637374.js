@@ -1,4 +1,4 @@
-/** Chunk was on 84552 **/
+/** Chunk was on 61668 **/
 n.d(t, {
   Z: () => K
 }), n(388685);
@@ -34,8 +34,8 @@ var r = n(255367),
   w = n(74538),
   Z = n(296848),
   R = n(51144),
-  k = n(626799),
-  L = n(981631),
+  L = n(626799),
+  k = n(981631),
   D = n(474936),
   M = n(388032),
   U = n(955964);
@@ -100,7 +100,7 @@ class V extends i.PureComponent {
     return e >= p.aL
   }
   handleViewInventory() {
-    d.Z.open(L.oAB.INVENTORY)
+    d.Z.open(k.oAB.INVENTORY)
   }
   render() {
     return (0, r.jsx)(p.$G, {
@@ -135,7 +135,7 @@ class z extends i.Component {
       }
     } = this.props;
     return G(B({}, e), {
-      section: L.jXE.GIFT_CODE_EMBED
+      section: k.jXE.GIFT_CODE_EMBED
     })
   }
   renderActions(e) {
@@ -190,7 +190,7 @@ class z extends i.Component {
     let {
       type: e
     } = this.props;
-    return e === L.uaV.CUSTOM_GIFT
+    return e === k.uaV.CUSTOM_GIFT
   }
   renderTitle(e) {
     let {
@@ -279,10 +279,10 @@ class z extends i.Component {
       giftCode: e,
       width: t
     } = this.props;
-    return null == e ? null : (0, r.jsx)(k.$, {
+    return null == e ? null : (0, r.jsx)(L.$, {
       skuId: e.skuId,
       onEmbedClick: this.handleEmbedClick,
-      analyticsSection: L.jXE.GIFT_CODE_EMBED,
+      analyticsSection: k.jXE.GIFT_CODE_EMBED,
       renderCustomActions: () => this.renderActions(e),
       renderCustomTitle: () => this.renderTitle(e),
       renderCustomTagline: () => this.renderBody(e),
@@ -297,10 +297,10 @@ class z extends i.Component {
       width: n,
       isSelfGift: i
     } = this.props;
-    if (null != e && null != e.promotion) return (0, r.jsx)(k.$, {
+    if (null != e && null != e.promotion) return (0, r.jsx)(L.$, {
       skuId: e.skuId,
       onEmbedClick: this.handleClaimPromotion,
-      analyticsSection: L.jXE.GIFT_CODE_EMBED,
+      analyticsSection: k.jXE.GIFT_CODE_EMBED,
       renderCustomActions: () => this.renderPromotionActions(),
       renderCustomTitle: () => M.intl.string(M.t.X4p5uL),
       renderCustomTagline: () => M.intl.string(M.t.VIuwDw),
@@ -324,13 +324,13 @@ class z extends i.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, x.uL)(L.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, x.uL)(L.Z5c.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, x.uL)(k.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, x.uL)(k.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : void 0
         }
       })
     }), F(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), d.Z.open(L.oAB.ACCOUNT)
+      e.stopPropagation(), e.preventDefault(), d.Z.open(k.oAB.ACCOUNT)
     }), F(this, "handleAccept", e => {
       let {
         channelId: t,
@@ -339,13 +339,13 @@ class z extends i.Component {
         type: i,
         giftInfo: l
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), P.default.track(L.rMx.OPEN_MODAL, {
+      e.preventDefault(), e.stopPropagation(), P.default.track(k.rMx.OPEN_MODAL, {
         type: "gift_accept",
         location: G(B({}, this.analyticsLocation), {
-          object: L.qAy.BUTTON_CTA
+          object: k.qAy.BUTTON_CTA
         })
       });
-      let a = i !== L.uaV.CUSTOM_GIFT ? void 0 : r;
+      let a = i !== k.uaV.CUSTOM_GIFT ? void 0 : r;
       (0, E.V)({
         processedCode: n,
         channelContext: t,
@@ -356,12 +356,12 @@ class z extends i.Component {
       let {
         giftCode: t
       } = this.props;
-      null != t && t.isSubscription && (e.preventDefault(), d.Z.open(L.oAB.PREMIUM))
+      null != t && t.isSubscription && (e.preventDefault(), d.Z.open(k.oAB.PREMIUM))
     }), F(this, "handleClaimPromotion", e => {
       var t;
       e.stopPropagation(), e.preventDefault();
       let n = null == (t = this.props.giftCode) ? void 0 : t.code;
-      null != n && window.open(L.Z5c.BILLING_PROMOTION_REDEMPTION(n))
+      null != n && window.open(k.Z5c.BILLING_PROMOTION_REDEMPTION(n))
     }), F(this, "renderCustomGiftBox", e => {
       let {
         useReducedMotion: t,

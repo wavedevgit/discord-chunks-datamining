@@ -1,4 +1,4 @@
-/** Chunk was on 84552 **/
+/** Chunk was on 61668 **/
 n.d(t, {
   W: () => v,
   u: () => x
@@ -76,7 +76,7 @@ function v(e) {
   let {
     primaryColor: Z,
     secondaryColor: R
-  } = (0, p.Z)(null != T ? T : j), k = "linear-gradient(45deg, ".concat(Z, ", ").concat(R, ")"), L = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), D = l.useRef(!1), M = (0, u.O)(e => {
+  } = (0, p.Z)(null != T ? T : j), L = "linear-gradient(45deg, ".concat(Z, ", ").concat(R, ")"), k = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), D = l.useRef(!1), M = (0, u.O)(e => {
     if (!1 === D.current && e) {
       var t;
       null == w || null == (t = w.onView) || t.call(w), (0, _.GF)(w.id, w.linkType, w.referrerId, w.activityCustomId), D.current = !0
@@ -101,7 +101,7 @@ function v(e) {
       size: "xs",
       color: c.TVs.colors.APP_MESSAGE_EMBED_SECONDARY_TEXT.css
     })
-  }) : null, B = null != j, G = null != I && !1 === L, H = B || G, V = 0 === S ? E.bannerAspectRatioBot : E.bannerAspectRatioActivity, z = l.useRef(null), W = l.useCallback(() => {
+  }) : null, B = null != j, G = null != I && !1 === k, H = B || G, V = 0 === S ? E.bannerAspectRatioBot : E.bannerAspectRatioActivity, z = l.useRef(null), W = l.useCallback(() => {
     let e = z.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), K = l.useMemo(() => !!G && new URL(I).pathname.endsWith(".gif"), [G, I]);
@@ -134,7 +134,7 @@ function v(e) {
     }), (0, i.jsxs)("div", {
       className: E.contentContainer,
       style: {
-        background: k
+        background: L
       },
       children: [null != v && (0, i.jsxs)("div", {
         className: E.header,

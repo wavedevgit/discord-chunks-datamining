@@ -1,6 +1,6 @@
-/** Chunk was on 49286 **/
+/** Chunk was on 7104 **/
 n.d(t, {
-  Z: () => w
+  Z: () => T
 });
 var r = n(255367),
   i = n(73800),
@@ -59,7 +59,7 @@ function E(e, t) {
   }), e
 }
 
-function w(e) {
+function T(e) {
   let {
     guild: t,
     id: l,
@@ -81,7 +81,7 @@ function w(e) {
   }, [l]);
   switch (o) {
     case m.Kw.CHANNEL:
-      return (0, r.jsx)(P, {
+      return (0, r.jsx)(w, {
         guild: t,
         id: l,
         isLocked: a,
@@ -89,7 +89,7 @@ function w(e) {
         openEntryContextMenu: u
       });
     case m.Kw.ROLE:
-      return (0, r.jsx)(T, {
+      return (0, r.jsx)(P, {
         guild: t,
         id: l,
         isLocked: a,
@@ -107,7 +107,7 @@ function w(e) {
   }
 }
 
-function P(e) {
+function w(e) {
   let {
     guild: t,
     id: n,
@@ -157,7 +157,7 @@ function P(e) {
   })
 }
 
-function T(e) {
+function P(e) {
   var t;
   let {
     guild: l,

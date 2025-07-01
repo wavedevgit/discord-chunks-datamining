@@ -193,8 +193,7 @@ function ef(e) {
     isMessageBookmark: en,
     setPopout: eo,
     hasDeveloperMode: es,
-    isGuildInviteReminder: eu,
-    isFocused: ed
+    isFocused: eu
   } = function(e) {
     let {
       channel: t,
@@ -230,7 +229,7 @@ function ef(e) {
       }),
       B = t.type === ei.d4z.GUILD_ANNOUNCEMENT && null != u && u.hasFeature(ei.oNc.NEWS) && (P || y) && (0, f.Z)(n),
       z = t.getGuildId(),
-      Y = null != z && (n.type === ei.uaV.USER_JOIN || n.type === ei.uaV.GUILD_INVITE_REMINDER) && V.Z.canWithPartialContext(ei.Plq.MANAGE_GUILD, {
+      Y = null != z && n.type === ei.uaV.USER_JOIN && V.Z.canWithPartialContext(ei.Plq.MANAGE_GUILD, {
         guildId: z
       }),
       q = (0, C.a)(n),
@@ -265,28 +264,27 @@ function ef(e) {
       showMessageBookmarksActions: $,
       isMessageBookmark: ee,
       setPopout: o,
-      isFocused: a,
-      isGuildInviteReminder: n.type === ei.uaV.GUILD_INVITE_REMINDER
+      isFocused: a
     }
-  }(e), ef = i.useRef(null), em = i.useCallback(() => {
+  }(e), ed = i.useRef(null), ef = i.useCallback(() => {
     B || z.default.track(ei.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: n.id,
       channel: n.channel_id
     }), eo({
       moreUtilities: !B
     })
-  }, [B, eo, n]), eg = i.useCallback(() => {
+  }, [B, eo, n]), em = i.useCallback(() => {
     eo({
       emojiPicker: !Y
     })
-  }, [Y, eo]), e_ = (0, L.$R)(t), ey = n.hasFlag(ei.iLy.CROSSPOSTED), [eC, ex] = (0, m.cv)(A ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ev = eC === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ej, eO] = i.useState(!1), eE = i.useCallback(() => {
-    eO(!0)
-  }, []), eS = i.useCallback(() => {
-    eO(!1)
-  }, []), eI = i.useCallback((e, t) => {
-    ex(el.L.TAKE_ACTION), (0, ee.ts)(e, t)
-  }, [ex]), {
-    canShowReactionsOnMessageHover: eP
+  }, [Y, eo]), eg = (0, L.$R)(t), e_ = n.hasFlag(ei.iLy.CROSSPOSTED), [ey, eC] = (0, m.cv)(A ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = ey === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [ev, ej] = i.useState(!1), eO = i.useCallback(() => {
+    ej(!0)
+  }, []), eE = i.useCallback(() => {
+    ej(!1)
+  }, []), eS = i.useCallback((e, t) => {
+    eC(el.L.TAKE_ACTION), (0, ee.ts)(e, t)
+  }, [eC]), {
+    canShowReactionsOnMessageHover: eI
   } = b.ZP.useExperiment({
     location: "ExpandingButtons"
   }, {
@@ -297,10 +295,10 @@ function ef(e) {
   }, {
     autoTrackExposure: !0
   });
-  let eZ = (0, N.Z)(t, n),
-    eN = (0, Z.Nt)(),
-    eT = eZ && eN && !n.hasPotions(),
-    eA = i.useCallback(e => {
+  let eP = (0, N.Z)(t),
+    eZ = (0, Z.Nt)(),
+    eN = eP && eZ && !n.hasPotions(),
+    eT = i.useCallback(e => {
       try {
         (0, E.qc)(t.id, n.id, e)
       } catch (e) {
@@ -313,7 +311,7 @@ function ef(e) {
         label: ea.intl.string(ea.t.zBoHlZ),
         icon: d.VuL,
         onClick: e => (0, ee.F4)(t, n, e)
-      }, "copy-id") : null, l && !eu ? (0, r.jsx)($.sF, {
+      }, "copy-id") : null, l ? (0, r.jsx)($.sF, {
         label: ea.intl.string(ea.t.WqhZsr),
         icon: d.xPt,
         onClick: () => (0, ee.fB)(t, n)
@@ -321,7 +319,7 @@ function ef(e) {
         label: ea.intl.string(ea.t.NpHUi4),
         icon: d.idN,
         onClick: () => (0, ee.zW)(t)
-      }, "configure") : null, e_ ? (0, r.jsx)($.sF, {
+      }, "configure") : null, eg ? (0, r.jsx)($.sF, {
         label: ea.intl.string(ea.t.RpE9k5),
         icon: d.z7b,
         onClick: () => (0, ee.B8)(t, n)
@@ -342,20 +340,20 @@ function ef(e) {
         icon: d.n$P,
         onClick: e => (0, ee.HH)(t, n, e)
       }, "reply-self") : null]
-    }) : null, _ && !eu ? (0, r.jsxs)(r.Fragment, {
-      children: [eP && !w ? (0, r.jsxs)(r.Fragment, {
+    }) : null, _ ? (0, r.jsxs)(r.Fragment, {
+      children: [eI && !w ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(eh, {
           channel: t,
           message: n
         }), (0, r.jsx)($.fO, {})]
       }) : null, (0, r.jsx)(et.Z, {
-        togglePopout: eg,
+        togglePopout: em,
         renderEmojiPicker: eb,
         shouldShow: Y,
-        isFocused: ed,
+        isFocused: eu,
         channel: t,
         message: n
-      }), eT ? (0, r.jsx)($.sF, {
+      }), eN ? (0, r.jsx)($.sF, {
         label: ea.intl.string(ea.t.icaJW1),
         icon: d.l22,
         onClick: () => {
@@ -364,7 +362,7 @@ function ef(e) {
           }), (0, P.s)({
             channelId: t.id,
             message: n,
-            onRedeem: eA,
+            onRedeem: eT,
             onClose: S.Qy,
             source: I.YD.MessageExpandingButtons
           })
@@ -381,10 +379,10 @@ function ef(e) {
     }, "edit") : null, A ? (0, r.jsx)($.sF, {
       label: ea.intl.string(ea.t.I3ltXF),
       icon: x.Z,
-      onClick: () => eI(t, n),
-      onTooltipShow: eE,
-      onTooltipHide: eS,
-      showNewBadge: !ej && ev
+      onClick: () => eS(t, n),
+      onTooltipShow: eO,
+      onTooltipHide: eE,
+      showNewBadge: !ev && ex
     }, "forward") : null, j && !A ? (0, r.jsx)($.sF, {
       label: ea.intl.string(ea.t.rBIGBA),
       icon: d.or_,
@@ -394,18 +392,18 @@ function ef(e) {
       icon: d.or_,
       onClick: () => (0, ee.qe)(t, n)
     }, "view-thread") : null, g ? (0, r.jsx)($.sF, {
-      label: ey ? ea.intl.string(ea.t["1kWJAg"]) : ea.intl.string(ea.t["MFGE5+"]),
+      label: e_ ? ea.intl.string(ea.t["1kWJAg"]) : ea.intl.string(ea.t["MFGE5+"]),
       icon: d.MqZ,
       onClick: () => (0, ee.Xl)(t, n),
-      disabled: ey
-    }, "publish") : null, a && (eu || w) ? (0, r.jsx)($.sF, {
+      disabled: e_
+    }, "publish") : null, a && w ? (0, r.jsx)($.sF, {
       label: ea.intl.string(ea.t.oyYWHB),
       icon: d.XHJ,
       onClick: e => (0, ee.$Z)(t, n, e),
       dangerous: !0,
       separator: !w
     }, "delete") : null, w && a ? null : (0, r.jsx)(d.yRy, {
-      targetElementRef: ef,
+      targetElementRef: ed,
       renderPopout: e => {
         let {
           updatePosition: i,
@@ -420,7 +418,7 @@ function ef(e) {
         })
       },
       shouldShow: B,
-      onRequestClose: em,
+      onRequestClose: ef,
       position: "left",
       align: "top",
       animation: d.yRy.Animation.NONE,
@@ -445,11 +443,11 @@ function ef(e) {
           isShown: l
         } = t;
         return (0, r.jsx)($.sF, ec({
-          ref: ef,
+          ref: ed,
           label: ea.intl.string(ea.t.UKOtz8),
           icon: d.xhG,
           selected: l,
-          onClick: em
+          onClick: ef
         }, i), "more")
       }
     })]

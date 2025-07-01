@@ -1,4 +1,4 @@
-/** Chunk was on 84552 **/
+/** Chunk was on 61668 **/
 n.d(t, {
   l: () => h
 }), n(388685);
@@ -41,15 +41,15 @@ let _ = i.memo(function(e) {
       Z = (0, u.y)(w, m.aO),
       R = {};
     if (T && null != P) {
-      var k;
+      var L;
       let {
         accentColor: e,
         backgroundColor: r,
         opacity: i
-      } = P, l = null != (k = (0, o.wK)(null != r ? r : "", i)) ? k : "";
+      } = P, l = null != (L = (0, o.wK)(null != r ? r : "", i)) ? L : "";
       N && (R.borderColor = r), R.background = l, t = e, n = e
     }
-    let L = {
+    let k = {
       minWidth: Z,
       color: t,
       borderColor: n
@@ -70,7 +70,7 @@ let _ = i.memo(function(e) {
         animated: T && c.animated
       }), (0, r.jsx)("div", {
         className: A.reactionCount,
-        style: L,
+        style: k,
         children: w
       })]
     })

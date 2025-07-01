@@ -1,6 +1,6 @@
-/** Chunk was on 58023 **/
+/** Chunk was on 61 **/
 n.d(t, {
-  Z: () => m
+  Z: () => x
 });
 var l = n(255367);
 n(73800);
@@ -35,7 +35,7 @@ let d = () => (0, l.jsxs)(l.Fragment, {
   })]
 });
 
-function m(e) {
+function x(e) {
   let {
     onClick: t
   } = e;

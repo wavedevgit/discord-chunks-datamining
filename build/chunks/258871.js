@@ -106,7 +106,7 @@ let _ = [{
     handler: (e, t) => (0, o.ZDy)(async () => {
       let {
         default: i
-      } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("34946")]).then(n.bind(n, 560114));
       return n => (0, r.jsx)(i, b(m({}, n), {
         guild: e,
         channel: t,

@@ -12,7 +12,7 @@ var i = n(481060),
 
 function c(e, t) {
   let n = t.getGuildId();
-  return null != n && (e.type === o.uaV.USER_JOIN || e.type === o.uaV.GUILD_INVITE_REMINDER) && l.Z.canWithPartialContext(o.Plq.MANAGE_GUILD, {
+  return null != n && e.type === o.uaV.USER_JOIN && l.Z.canWithPartialContext(o.Plq.MANAGE_GUILD, {
     guildId: n
   }) ? (0, r.jsx)(i.sNh, {
     id: "configure",

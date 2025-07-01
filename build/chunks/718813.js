@@ -67,7 +67,7 @@ let N = (0, g.Un)({
     name: "UserSettingsV2"
   }),
   P = (0, g.Un)({
-    createPromise: () => Promise.all([n.e("7654"), n.e("49286"), n.e("86915")]).then(n.bind(n, 869779)),
+    createPromise: () => Promise.all([n.e("7654"), n.e("7104"), n.e("86915")]).then(n.bind(n, 869779)),
     webpackId: 869779,
     name: "ChannelSettings"
   }),
@@ -77,7 +77,7 @@ let N = (0, g.Un)({
     name: "CollectiblesShop"
   }),
   A = (0, g.Un)({
-    createPromise: () => Promise.all([n.e("7654"), n.e("55616"), n.e("44156"), n.e("49286"), n.e("6850"), n.e("58227"), n.e("32652"), n.e("54408"), n.e("20087"), n.e("92754"), n.e("95140")]).then(n.bind(n, 994763)),
+    createPromise: () => Promise.all([n.e("71418"), n.e("55616"), n.e("7654"), n.e("44156"), n.e("7104"), n.e("6850"), n.e("58227"), n.e("32652"), n.e("54408"), n.e("20087"), n.e("82265"), n.e("95140")]).then(n.bind(n, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
   }),

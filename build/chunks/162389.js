@@ -13,8 +13,8 @@ var i = n(255367),
   d = n(787014),
   u = n(603211),
   h = n(710344),
-  g = n(496675),
-  m = n(479099),
+  m = n(496675),
+  g = n(479099),
   p = n(710352),
   f = n(981631),
   x = n(388032),
@@ -55,7 +55,7 @@ function v(e, t) {
 function y(e) {
   let {
     channel: t
-  } = e, r = (0, a.e7)([g.Z], () => g.Z.can(f.Plq.MANAGE_CHANNELS, t), [t]), u = t.availableTags.length >= p.pC, m = t.availableTags.length > 0, y = l.useCallback(() => {
+  } = e, r = (0, a.e7)([m.Z], () => m.Z.can(f.Plq.MANAGE_CHANNELS, t), [t]), u = t.availableTags.length >= p.pC, g = t.availableTags.length > 0, y = l.useCallback(() => {
     let e = t.availableTags.length >= p.pC;
     r && !e && (0, c.ZDy)(async () => {
       let {
@@ -88,7 +88,7 @@ function y(e) {
   });
   return (0, i.jsxs)("div", {
     className: j.tags,
-    children: [m ? t.availableTags.map(e => (0, i.jsx)(C, {
+    children: [g ? t.availableTags.map(e => (0, i.jsx)(C, {
       tag: e,
       availableTags: t.availableTags,
       canManageChannels: r,
@@ -96,7 +96,7 @@ function y(e) {
       onDragComplete: O,
       onDragReset: E,
       onDragStart: S
-    }, e.id)) : null, m ? (0, i.jsx)(c.P3F, {
+    }, e.id)) : null, g ? (0, i.jsx)(c.P3F, {
       onClick: y,
       className: s()(j.addTags, {
         [j.disabled]: !r || u
@@ -127,7 +127,7 @@ function C(e) {
     onDragReset: c
   } = e, d = n.findIndex(e => e.id === t.id), {
     drag: h,
-    dragSourcePosition: g,
+    dragSourcePosition: m,
     drop: p,
     setIsDraggable: f
   } = (0, u.Z)({
@@ -140,15 +140,15 @@ function C(e) {
   });
   return (0, i.jsx)("div", {
     className: s()(j.container, {
-      [j.dropIndicatorBefore]: null != g && d < g,
-      [j.dropIndicatorAfter]: null != g && d > g
+      [j.dropIndicatorBefore]: null != m && d < m,
+      [j.dropIndicatorAfter]: null != m && d > m
     }),
     ref: e => {
       h(p(e))
     },
     onMouseEnter: () => f(l),
     onMouseLeave: () => f(!1),
-    children: (0, i.jsx)(m.Z, {
+    children: (0, i.jsx)(g.Z, {
       tag: t,
       disabled: !l,
       ariaLabel: x.intl.formatToPlainString(x.t.jhSvBw, {
