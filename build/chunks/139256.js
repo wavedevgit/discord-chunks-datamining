@@ -4,7 +4,7 @@ n.d(t, {
   $w: () => D,
   Og: () => U,
   ZY: () => M,
-  sc: () => L,
+  sc: () => k,
   zs: () => F
 }), n(314940), n(953529);
 var r = n(255367),
@@ -276,7 +276,7 @@ function R(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     className: t,
     emoji: n
@@ -289,7 +289,7 @@ function L(e) {
   })
 }
 
-function k(e, t) {
+function L(e, t) {
   return null != e ? (0, r.jsx)("div", {
     className: e,
     children: t
@@ -311,12 +311,12 @@ function D(e) {
       var n;
       return e.id === (null == (n = t.attachmentIds) ? void 0 : n[0])
     });
-    if (null != e) return k(n, (0, r.jsx)(R, {
+    if (null != e) return L(n, (0, r.jsx)(R, {
       className: i,
       attachment: e
     }))
   }
-  return null != t.emoji ? k(n, (0, r.jsx)(L, {
+  return null != t.emoji ? L(n, (0, r.jsx)(k, {
     className: l,
     emoji: t.emoji
   })) : void 0 !== a ? a : null

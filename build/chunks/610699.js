@@ -18,7 +18,7 @@ var r = n(255367),
   _ = n(943762),
   h = n(914498),
   b = n(880251),
-  E = n(208444),
+  E = n(515344),
   y = n(835473),
   C = n(471445),
   x = n(111028),
@@ -35,7 +35,7 @@ var r = n(255367),
   Z = n(388032),
   R = n(582909);
 
-function L(e) {
+function k(e) {
   let {
     members: t,
     membersOnline: n,
@@ -71,7 +71,7 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     channel: t,
     guild: n,
@@ -152,12 +152,12 @@ function D(e) {
         return b.id === t
       })
     }),
-    L = O.Z.getChannel(null == (n = a.channel) ? void 0 : n.id),
-    k = (0, c.e7)([I.Z], () => null != L && I.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, L), [L]),
+    k = O.Z.getChannel(null == (n = a.channel) ? void 0 : n.id),
+    L = (0, c.e7)([I.Z], () => null != k && I.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, k), [k]),
     {
       analyticsLocations: D
     } = (0, f.ZP)(m.Z.INVITE_EMBED),
-    U = (0, c.Wu)([p.ZP], () => null != L ? p.ZP.getEmbeddedActivitiesForChannel(L.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [L, b.id]),
+    U = (0, c.Wu)([p.ZP], () => null != k ? p.ZP.getEmbeddedActivitiesForChannel(k.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [k, b.id]),
     F = (0, c.Wu)([S.default], () => U.map(e => S.default.getUser(e)).filter(e => null != e), [U]),
     B = i.useCallback(() => {
       (0, d.r$)({
@@ -177,15 +177,15 @@ function D(e) {
     if (null == a.guild) return (0, r.jsx)(P.Z, {});
     C = new v.ZP(a.guild)
   }
-  let V = H && !k || H && N;
-  return (H && N && (l = Z.intl.string(Z.t.wJNK8P)), k || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == x) ? null : (0, r.jsx)(f.Gt, {
+  let V = H && !L || H && N;
+  return (H && N && (l = Z.intl.string(Z.t.wJNK8P)), L || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == x) ? null : (0, r.jsx)(f.Gt, {
     value: D,
     children: (0, r.jsx)(M, {
       app: x,
       invite: a,
       activityUsers: F,
       isMember: H,
-      channel: L,
+      channel: k,
       guild: C,
       members: g,
       membersOnline: _,
@@ -223,16 +223,13 @@ function M(e) {
     id: l.id,
     icon: I,
     bot: j
-  }), T = (0, E.z)(l), P = (0, b.E)(l), A = o.length, w = i.useMemo(() => {
-    let e = [{
-      label: s ? m ? Z.intl.string(Z.t.VJlc0d) : Z.intl.string(Z.t.RscU7O) : Z.intl.string(Z.t["2BP08P"]),
-      trackingArea: s ? h.j_.PLAY : h.j_.JOIN_SERVER,
-      submitting: f,
-      disabledReason: y && null != C ? C : void 0,
-      onClick: x
-    }];
-    return null != T && e.push(T), e
-  }, [x, m, y, s, f, C, T]);
+  }), T = (0, E.G)(l), P = (0, b.E)(l), A = o.length, w = i.useMemo(() => [{
+    label: s ? m ? Z.intl.string(Z.t.VJlc0d) : Z.intl.string(Z.t.RscU7O) : Z.intl.string(Z.t["2BP08P"]),
+    trackingArea: s ? h.j_.PLAY : h.j_.JOIN_SERVER,
+    submitting: f,
+    disabledReason: y && null != C ? C : void 0,
+    onClick: x
+  }], [x, m, y, s, f, C]);
   return (0, r.jsx)(g.W, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -258,7 +255,7 @@ function M(e) {
   }, P), n = n = {
     info: (0, r.jsxs)("div", {
       className: R.infoWrapper,
-      children: [(0, r.jsx)(k, {
+      children: [(0, r.jsx)(L, {
         channel: c,
         guild: u,
         hasEnded: !m,
@@ -267,13 +264,14 @@ function M(e) {
         activityUsers: o,
         guildId: u.id,
         activityText: Z.intl.string(Z.t.BMTj29)
-      }) : (0, r.jsx)(L, {
+      }) : (0, r.jsx)(k, {
         members: d,
         membersOnline: p,
         textColor: "none"
       })]
     }),
     actions: w,
+    onClickContent: T,
     trackingConfig: {
       id: l.id,
       linkType: h.Un.ACTIVITY_INVITE,

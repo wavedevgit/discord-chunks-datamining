@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function L(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -65,7 +65,7 @@ function L(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = (e, t) => t ? A.intl.format(A.t.auckX1, {
+let L = (e, t) => t ? A.intl.format(A.t.auckX1, {
     stickerPackName: e.name
   }) : A.intl.format(A.t.OzB6e3, {
     stickerPackName: e.name
@@ -154,7 +154,7 @@ let F = e => {
         children: n.name
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: k(c, p)
+        children: L(c, p)
       }), (0, r.jsx)("ul", {
         className: w.stickersList,
         children: m.map(e => (0, r.jsx)(S.Z, {
@@ -187,8 +187,8 @@ let F = e => {
       } = e,
       [O, j] = i.useState(null),
       [I, T] = i.useState(!1),
-      k = C.default.getCurrentUser(),
-      D = v.ZP.canUseCustomStickersEverywhere(k),
+      L = C.default.getCurrentUser(),
+      D = v.ZP.canUseCustomStickersEverywhere(L),
       F = (0, o.e7)([y.Z], () => y.Z.getGuild(n.guild_id)),
       B = null != F,
       [G, H] = i.useState(!1),
@@ -310,7 +310,7 @@ let F = e => {
               align: p.Z.Align.START,
               justify: p.Z.Justify.START,
               className: Z.otherEmojisContainer,
-              children: t.map(e => (0, r.jsx)(s.ua7, L(R({
+              children: t.map(e => (0, r.jsx)(s.ua7, k(R({
                 text: e.name
               }, h.b_), {
                 children: t => {
@@ -332,7 +332,7 @@ let F = e => {
                     }
                     return i
                   }(t, ["onMouseEnter", "onMouseLeave"]);
-                  return (0, r.jsx)("div", L(R({
+                  return (0, r.jsx)("div", k(R({
                     className: a()(Z.otherEmoji, {
                       [w.nonInteractingSticker]: null != V && V !== e.id
                     }),

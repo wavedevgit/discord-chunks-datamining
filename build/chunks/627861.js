@@ -18,7 +18,7 @@ var r = n(255367),
   _ = n(914498),
   h = n(172109),
   b = n(880251),
-  E = n(208444),
+  E = n(515344),
   y = n(371991),
   C = n(561308),
   x = n(810568),
@@ -34,8 +34,8 @@ var r = n(255367),
   w = n(831506),
   Z = n(77498),
   R = n(283595),
-  L = n(293273),
-  k = n(158776),
+  k = n(293273),
+  L = n(158776),
   D = n(885110),
   M = n(594174),
   U = n(417363),
@@ -173,14 +173,10 @@ function ea(e) {
         disabledReason: E.disabled ? E.tooltip : void 0
       })
     }
-    return null != h && e.push({
-      label: Q.intl.string(Q.t["HO/oXl"]),
-      trackingArea: _.j_.VIEW,
-      onClick() {
-        (0, I.aG)(h)
-      }
-    }), e
-  }, [b, h, E]), v = el(c.name, null == (t = p.activity) ? void 0 : t.type);
+    return e
+  }, [b, E]), v = i.useMemo(() => {
+    if (null != h) return () => (0, I.aG)(h)
+  }, [h]), O = el(c.name, null == (t = p.activity) ? void 0 : t.type);
   if (C) {
     let e = (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
@@ -190,12 +186,13 @@ function ea(e) {
       children: Q.intl.string(Q.t["84qx9v"])
     });
     return (0, r.jsx)(g.W, {
-      header: v,
+      header: O,
       title: c.name,
       iconSrc: T.r9.getWhiteIconURL(),
       infoUrl: B.Z.getArticleURL(X.BhN.SPOTIFY_CONNECTION),
       info: e,
       actions: [],
+      onClickContent: v,
       trackingConfig: {
         id: c.id,
         linkType: _.Un.RICH_PRESENCE_INVITE,
@@ -232,12 +229,13 @@ function ea(e) {
         }), d ? null : f]
       });
     return (0, r.jsx)(g.W, {
-      header: v,
+      header: O,
       title: e,
       iconSrc: null != (s = (0, V.Z)(h, c.id)) ? s : void 0,
       infoUrl: B.Z.getArticleURL(X.BhN.SPOTIFY_CONNECTION),
       info: u,
       actions: x,
+      onClickContent: v,
       trackingConfig: {
         id: c.id,
         linkType: _.Un.RICH_PRESENCE_INVITE,
@@ -306,12 +304,12 @@ function ec(e) {
     onView: A,
     partyStatusElement: w,
     presenceActivity: R
-  } = e, L = (0, p.ye)(j), {
-    bot: k
+  } = e, k = (0, p.ye)(j), {
+    bot: L
   } = j, D = F.ZP.getApplicationIconURL({
     id: j.id,
     icon: j.icon,
-    bot: k
+    bot: L
   }), {
     staticBannerSrc: M,
     videoBannerSrc: U,
@@ -366,7 +364,7 @@ function ec(e) {
     currentUserId: S,
     message: P,
     application: j,
-    isEmbeddedApplication: L,
+    isEmbeddedApplication: k,
     isGameLaunchable: ea
   }), eh = !(null == R || !(0, W.Z)(R, P, j.id) || !(0, z.Z)(R, X.xjy.SYNC) || !G.isPlatformEmbedded || ei(T, R)), eb = ei(T, R), eE = function(e, t, n, r) {
     var i;
@@ -438,22 +436,10 @@ function ec(e) {
         applicationId: q.id
       })
     }
-  } : null != eg ? eg : void 0, [j.id, ea, eu, null == q ? void 0 : q.id, eg]), ex = (0, E.z)(j), ev = i.useMemo(() => null != $ ? {
-    label: Q.intl.string(Q.t["HO/oXl"]),
-    trackingArea: _.j_.VIEW,
-    onClick: e => {
-      $(e)
-    }
-  } : null != ec ? {
-    label: Q.intl.string(Q.t["HO/oXl"]),
-    trackingArea: _.j_.VIEW,
-    onClick: e => {
-      ec(e)
-    }
-  } : null != ex && L ? ex : void 0, [L, $, ec, ex]), eO = i.useMemo(() => {
+  } : null != eg ? eg : void 0, [j.id, ea, eu, null == q ? void 0 : q.id, eg]), ex = (0, E.G)(j), ev = i.useMemo(() => null != $ ? $ : null != ec ? ec : null != ex && k ? ex : void 0, [k, $, ec, ex]), eO = i.useMemo(() => {
     let e = [];
-    return V || null == ey ? V && null != eC && e.push(eC) : e.push(ey), null != ev && e.push(ev), e
-  }, [eC, V, ey, ev]), ej = el(j.name, null == (t = P.activity) ? void 0 : t.type), eI = L ? (0, f.H)({
+    return V || null == ey ? V && null != eC && e.push(eC) : e.push(ey), e
+  }, [eC, V, ey]), ej = el(j.name, null == (t = P.activity) ? void 0 : t.type), eI = k ? (0, f.H)({
     applicationId: j.id,
     referrerId: S
   }) : void 0, eS = (0, v.N)(j.id).some(e => (0, C.ig)(e) === l.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
@@ -492,6 +478,7 @@ function ec(e) {
       infoUrl: B.Z.getArticleURL(X.BhN.RICH_PRESENCE_INTRODUCTION),
       info: e,
       actions: eO,
+      onClickContent: ev,
       trackingConfig: {
         id: j.id,
         linkType: _.Un.RICH_PRESENCE_INVITE,
@@ -536,6 +523,7 @@ function ec(e) {
     infoUrl: B.Z.getArticleURL(X.BhN.RICH_PRESENCE_INTRODUCTION),
     info: eA,
     actions: eO,
+    onClickContent: ev,
     trackingConfig: {
       id: j.id,
       linkType: _.Un.RICH_PRESENCE_INVITE,
@@ -553,15 +541,15 @@ function eu(e) {
     message: c,
     hideParty: u,
     onView: d
-  } = e, p = (0, h.O)(o), m = (0, a.e7)([P.default], () => P.default.getId()), f = (0, a.e7)([k.Z], () => {
-    if (null == c.application) return k.Z.findActivity(c.author.id, e => e.type === X.IIU.LISTENING);
+  } = e, p = (0, h.O)(o), m = (0, a.e7)([P.default], () => P.default.getId()), f = (0, a.e7)([L.Z], () => {
+    if (null == c.application) return L.Z.findActivity(c.author.id, e => e.type === X.IIU.LISTENING);
     {
       let e = c.author.id;
-      return ee(c) && (e = e === m && s.isPrivate() ? s.getRecipientId() : m), k.Z.getApplicationActivity(e, c.application.id)
+      return ee(c) && (e = e === m && s.isPrivate() ? s.getRecipientId() : m), L.Z.getApplicationActivity(e, c.application.id)
     }
-  }, [c, s, m]), g = (0, a.e7)([L.Z, D.Z], () => {
+  }, [c, s, m]), g = (0, a.e7)([k.Z, D.Z], () => {
     var e;
-    return null != (e = L.Z.getApplicationActivity(p.id)) ? e : D.Z.getApplicationActivity(p.id, !0)
+    return null != (e = k.Z.getApplicationActivity(p.id)) ? e : D.Z.getApplicationActivity(p.id, !0)
   }, [p.id]), _ = (0, a.Wu)([w.Z], () => {
     var e;
     return null == f || null == f.party ? [] : Array.from(null != (e = w.Z.getParty(f.party.id)) ? e : [])

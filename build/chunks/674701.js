@@ -1,7 +1,7 @@
 /** Chunk was on 61668 **/
 n.d(t, {
   U: () => R,
-  Z: () => L
+  Z: () => k
 });
 var r, i = n(255367),
   l = n(73800),
@@ -35,15 +35,15 @@ var r, i = n(255367),
   Z = n(587862),
   R = ((r = {}).SYSTEM_MESSAGE = "system_message", r.COACHMARK = "coachmark", r);
 
-function L(e) {
+function k(e) {
   let {
     giftIntentType: t,
     premiumGiftIntentCardType: n,
     recipientUser: r,
     onMouseEnter: a,
     onMouseLeave: R,
-    popoutPosition: L,
-    analyticsPage: k,
+    popoutPosition: k,
+    analyticsPage: L,
     analyticsSection: D,
     glow: M,
     giftIntentSecondaryAction: U
@@ -167,7 +167,7 @@ function L(e) {
               analyticsLocation: "system_message" === n ? i.chat : i.actionButtonCoachmark,
               analyticsLocations: B,
               analyticsObject: {
-                page: k,
+                page: L,
                 section: D,
                 object: N.qAy.BUTTON_CTA,
                 objectType: N.Qqv.GIFT
@@ -191,10 +191,10 @@ function L(e) {
             })]
           })
         })]
-      }), null != L && (0, i.jsx)("div", {
+      }), null != k && (0, i.jsx)("div", {
         className: o()(Z.connector, {
-          [Z.leftPopoutConnector]: "left" === L,
-          [Z.rightPopoutConnector]: "right" === L
+          [Z.leftPopoutConnector]: "left" === k,
+          [Z.rightPopoutConnector]: "right" === k
         })
       })]
     })

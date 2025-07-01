@@ -1,6 +1,6 @@
 /**
   Module ID: 61668
-  Original File Name: a6082f40a98f0aba
+  Original File Name: 9cd03795c069d161
 **/
 .wrapper__74bfa {
     align-items: center;
@@ -2497,15 +2497,27 @@ html .progress__61462 {
 }
 
 .contentContainer__98ba8 {
-    display: flex;
     flex-direction: column;
-    gap: 12px;
     padding: 12px
+}
+
+.contentAndCopyButtonWrapper__98ba8,.contentContainer__98ba8,.contentWrapper__98ba8 {
+    display: flex;
+    gap: 12px
 }
 
 .contentWrapper__98ba8 {
     --custom-content-size: 64px;
-    display: flex
+    flex: 1;
+    min-width: 0
+}
+
+.contentWrapperClickable__98ba8 {
+    cursor: pointer
+}
+
+.contentWrapperClickable__98ba8:hover .contentTitle__98ba8 {
+    text-decoration: underline
 }
 
 .img__98ba8 {
@@ -2517,7 +2529,6 @@ html .progress__61462 {
     box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
     box-sizing: border-box;
     height: var(--custom-content-size);
-    margin-right: 12px;
     width: var(--custom-content-size);
     @container (max-width: 270px){display:none
 }}
@@ -2527,6 +2538,7 @@ html .progress__61462 {
     flex: 1;
     flex-direction: column;
     justify-content: center;
+    min-width: 0;
     overflow: hidden
 }
 
@@ -6982,14 +6994,28 @@ html .progress__61462 {
     flex: 1;
     flex-direction: column;
     gap: 4px;
-    padding-top: 6px
+    padding-top: 4px
 }
 
-.activityTimer_c44293 {
-    align-items: center
+.activityPresenceDetailsContainer_c44293 {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    min-width: 0;
+    overflow: hidden
 }
 
-.activePlayingWrapper_c44293,.activityTimer_c44293 {
+.activityPresenceDetailsItemContainer_c44293 {
+    align-items: center;
+    display: flex;
+    gap: 4px
+}
+
+.activityPresenceDetailsItemContainer_c44293.truncatesText_c44293 {
+    min-width: 0
+}
+
+.activePlayingWrapper_c44293 {
     display: flex;
     gap: 4px
 }
@@ -10358,4 +10384,4 @@ html .progress__61462 {
     width: 16px
 }
 
-/*# sourceMappingURL=a6082f40a98f0aba.css.map*/
+/*# sourceMappingURL=9cd03795c069d161.css.map*/

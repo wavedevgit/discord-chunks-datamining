@@ -100,14 +100,14 @@ function N(e, t) {
     w = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? void 0 : n.call(r),
     Z = null != w ? d.ZP.getSelfMember(w) : null,
     R = (0, s.EY)(Z),
-    L = (0, c.b)(Z),
-    k = !b && I && !N && m && !R && !L;
+    k = (0, c.b)(Z),
+    L = !b && I && !N && m && !R && !k;
   return {
     poll: o,
     canTapAnswers: A,
     canRemoveVote: N && m && !g,
     canShowVoteCounts: P,
-    canSubmitVote: k,
+    canSubmitVote: L,
     expirationLabel: f,
     hasSelectedAnswer: I,
     hasVoted: N,
@@ -148,8 +148,8 @@ function P(e, t) {
   let {
     canTapAnswers: Z,
     canRemoveVote: R,
-    canShowVoteCounts: L,
-    canSubmitVote: k,
+    canShowVoteCounts: k,
+    canSubmitVote: L,
     expirationLabel: D = O.intl.string(O.t["e+J3JS"]),
     hasSelectedAnswer: M,
     hasVoted: U,
@@ -229,7 +229,7 @@ function P(e, t) {
     }
   }), J = (0, r.EQ)({
     isExpired: B,
-    canSubmitVote: k,
+    canSubmitVote: L,
     hasVoted: U,
     isEditingVote: F,
     canRemoveVote: R,
@@ -264,7 +264,7 @@ function P(e, t) {
   })).otherwise(() => ({
     label: O.intl.string(O.t.JwkNU1),
     presentation: "button",
-    enabled: k,
+    enabled: L,
     type: "submit"
   })), $ = (0, _.isIOS)() ? O.intl.string(O.t.PVATMz) : O.intl.string(O.t.cHfFqq), ee = (0, r.EQ)({
     isExpired: B,
@@ -336,7 +336,7 @@ function P(e, t) {
     canTapAnswers: Z,
     canSelectMultipleAnswers: en,
     hasSelectedAnswer: M,
-    canShowVoteCounts: L,
+    canShowVoteCounts: k,
     hasVoted: U,
     isExpired: B,
     myAvatarUrl: T,

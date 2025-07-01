@@ -99,7 +99,7 @@ function Z(e) {
       })
     })
   };
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(k, {
     appName: u.name,
     title: N.intl.formatToPlainString(N.t.XDRjs7, {
       appName: u.name
@@ -160,7 +160,7 @@ function R(e) {
     return null == (e = _.Z.getBasicChannel(u.channel_id)) ? void 0 : e.guild_id
   }, [u]), x = i.useMemo(() => null != E ? (0, v.y)(E, 45) : void 0, [E]), Z = (0, j.R)(null != (l = null == E ? void 0 : E.id) ? l : ""), {
     openModal: R,
-    subscriptionPurchaseButtonState: k
+    subscriptionPurchaseButtonState: L
   } = (0, g.Z)({
     skuId: c,
     initialSubscribeForGuild: y
@@ -228,7 +228,7 @@ function R(e) {
       area: "purchase_button"
     })
   };
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(k, {
     appName: E.name,
     title: m.name,
     description: B,
@@ -268,7 +268,7 @@ function R(e) {
         }),
         onHasClicked: G,
         subscriptionPlan: h,
-        state: k
+        state: L
       }) : (0, r.jsx)(s.zxk, {
         onClick: F,
         children: N.intl.string(N.t.uuzaAA)
@@ -285,7 +285,7 @@ function R(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   let {
     appName: t,
     title: n,

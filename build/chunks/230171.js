@@ -31,7 +31,7 @@ var r = n(255367),
   T = n(914498),
   N = n(172109),
   P = n(880251),
-  A = n(208444),
+  A = n(515344),
   w = n(388032),
   Z = n(758364);
 
@@ -67,9 +67,9 @@ function R(e) {
     },
     applicationId: t.id,
     botUserId: null == b ? void 0 : b.id
-  }), V = null != y && C && H, z = B && C, W = (0, A.z)(t), K = i.useMemo(() => {
+  }), V = null != y && C && H, z = B && C, W = (0, A.G)(t), K = (0, A.z)(t), Y = i.useMemo(() => {
     let e = [];
-    return z && e.push({
+    return C ? (z && e.push({
       label: null == U ? w.intl.string(w.t.cnBQPD) : w.intl.string(w.t.VJlc0d),
       trackingArea: T.j_.PLAY,
       onClick() {
@@ -96,10 +96,10 @@ function R(e) {
           referrerId: R
         })
       }
-    }), null != W && e.push(W), e
-  }, [z, V, W, U, F, M, t.id, G, a, R, D, y]), Y = C ? (0, r.jsx)(k, {
+    })) : null != K && e.push(K), e
+  }, [z, V, U, F, M, t.id, G, a, R, D, C, K, y]), X = C ? (0, r.jsx)(L, {
     app: t
-  }) : (0, r.jsx)(L, {
+  }) : (0, r.jsx)(k, {
     app: t
   });
   return (0, r.jsx)(I.W, {
@@ -109,8 +109,9 @@ function R(e) {
     bannerAspectRatio: Z,
     iconSrc: x,
     embedUrl: n,
-    info: Y,
-    actions: K,
+    info: X,
+    actions: Y,
+    onClickContent: W,
     trackingConfig: {
       id: t.id,
       linkType: l,
@@ -121,7 +122,7 @@ function R(e) {
   })
 }
 
-function L(e) {
+function k(e) {
   var t, n, a;
   let {
     app: c
@@ -160,7 +161,7 @@ function L(e) {
   })
 }
 
-function k(e) {
+function L(e) {
   let {
     app: t
   } = e, {

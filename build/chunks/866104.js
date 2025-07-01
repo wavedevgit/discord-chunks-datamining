@@ -98,7 +98,7 @@ function T(e) {
   } = (0, y.s)(), N = (null != (n = null == d || null == (t = d.description) ? void 0 : t.trim().length) ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: Z,
     isPhantomPreview: R
-  } = (0, C.m)(), L = Z === x.y.GUILD_PRODUCTS_PREVIEW ? O.intl.string(O.t["LvXy/P"]) : O.intl.string(O.t.XyqKh4), k = N ? (0, r.jsxs)(r.Fragment, {
+  } = (0, C.m)(), k = Z === x.y.GUILD_PRODUCTS_PREVIEW ? O.intl.string(O.t["LvXy/P"]) : O.intl.string(O.t.XyqKh4), L = N ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(T, {
       lineClamp: w || 2 === P ? 2 : 3,
       children: (0, r.jsx)(s.Text, {
@@ -118,7 +118,7 @@ function T(e) {
   }) : (0, r.jsx)(s.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: R ? L : O.intl.string(O.t["NY/FIS"])
+    children: R ? k : O.intl.string(O.t["NY/FIS"])
   });
   return (0, r.jsxs)("div", {
     className: j.container,
@@ -164,7 +164,7 @@ function T(e) {
           })
         }), (0, r.jsx)(s.LZC, {
           size: 9
-        }), k]
+        }), L]
       })]
     }), (0, r.jsx)(S, {
       coverImageAsset: null == d ? void 0 : d.cover_image_asset,
