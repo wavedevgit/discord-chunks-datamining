@@ -23,6 +23,7 @@ var r = {
   primary: "primary__6af3a",
   secondary: "secondary__6af3a",
   tertiary: "tertiary__6af3a",
+  "color-mix": "color-mix__6af3a",
   "critical-primary": "critical-primary__6af3a",
   "critical-secondary": "critical-secondary__6af3a",
   active: "active__6af3a",
