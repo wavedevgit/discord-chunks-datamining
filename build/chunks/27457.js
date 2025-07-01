@@ -372,7 +372,7 @@ let ei = [J.fO.ACTIVITY],
               }) : null, eO && !ej ? (0, r.jsx)("div", {
                 className: a()(en.border, {
                   [en.voiceChannelEffect]: !ey && null != eq,
-                  [en.speaking]: eG && !ey && null == eq
+                  [en.speaking]: eG && !ey
                 })
               }) : null]
             })

@@ -3,7 +3,7 @@ t.a(e, async function(e, r) {
   try {
     t.d(n, {
       Kq: () => u,
-      ZP: () => d
+      ZP: () => s
     });
     var l = t(255367),
       i = t(31675),
@@ -28,7 +28,7 @@ t.a(e, async function(e, r) {
         }(r, e.type), Array.isArray(e.value)) return (0, l.jsx)(r, {
         node: e,
         ...t,
-        children: (0, l.jsx)(s, {
+        children: (0, l.jsx)(d, {
           nodes: e.value,
           renderers: n
         })
@@ -53,7 +53,7 @@ t.a(e, async function(e, r) {
                 url: t
               }
             } = i;
-            c = e ? (0, l.jsx)(s, {
+            c = e ? (0, l.jsx)(d, {
               nodes: e,
               renderers: n
             }) : t
@@ -77,7 +77,7 @@ t.a(e, async function(e, r) {
             node: e,
             level: e.value.level,
             ...t,
-            children: (0, l.jsx)(s, {
+            children: (0, l.jsx)(d, {
               nodes: e.value.content,
               renderers: n
             })
@@ -92,7 +92,7 @@ t.a(e, async function(e, r) {
               node: t,
               siblings: e.value.items,
               index: r,
-              children: (0, l.jsx)(s, {
+              children: (0, l.jsx)(d, {
                 nodes: t.content,
                 renderers: n
               })
@@ -107,7 +107,7 @@ t.a(e, async function(e, r) {
           return (0, l.jsx)(r, {
             node: e,
             ...t,
-            children: (0, l.jsx)(s, {
+            children: (0, l.jsx)(d, {
               nodes: e.value.content,
               renderers: n
             })
@@ -117,7 +117,7 @@ t.a(e, async function(e, r) {
       }
     }
 
-    function s({
+    function d({
       nodes: e,
       renderers: n
     }) {
@@ -131,7 +131,7 @@ t.a(e, async function(e, r) {
       })
     }
 
-    function d({
+    function s({
       content: e,
       renderers: n
     }) {
@@ -142,7 +142,7 @@ t.a(e, async function(e, r) {
         r = (0, c.useMemo)(() => (0, i.Q)(e, t), [e, t]);
       return (0, l.jsx)(f.Provider, {
         value: r,
-        children: (0, l.jsx)(s, {
+        children: (0, l.jsx)(d, {
           nodes: r,
           renderers: n
         })

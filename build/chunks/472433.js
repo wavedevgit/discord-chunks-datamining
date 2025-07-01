@@ -2,7 +2,7 @@
 t.a(e, async function(e, r) {
   try {
     t.d(n, {
-      o: () => s
+      o: () => d
     });
     var l = t(255367),
       i = t(73800),
@@ -11,7 +11,7 @@ t.a(e, async function(e, r) {
       u = t(488968),
       a = e([c]);
 
-    function s(e) {
+    function d(e) {
       let {
         children: n,
         node: t
