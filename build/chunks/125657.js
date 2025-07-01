@@ -1,6 +1,6 @@
 /** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -21,25 +21,25 @@ var r = n(255367),
   j = n(388032),
   O = n(439478);
 
-function y(e) {
+function v(e) {
   var t;
   let {
     guild: n,
-    applicationIntegration: y
-  } = e, v = (0, o.e7)([f.Z], () => f.Z.getRoles(n.id)), {
+    applicationIntegration: v
+  } = e, y = (0, o.e7)([f.Z], () => f.Z.getRoles(n.id)), {
     application: _
-  } = y, C = null != _.bot ? new b.Z(_.bot) : null, N = (0, o.e7)([g.ZP], () => null != C ? g.ZP.getMember(n.id, C.id) : null, [C, n]), I = null == C ? void 0 : C.id;
+  } = v, C = null != _.bot ? new b.Z(_.bot) : null, N = (0, o.e7)([g.ZP], () => null != C ? g.ZP.getMember(n.id, C.id) : null, [C, n]), I = null == C ? void 0 : C.id;
   i.useEffect(() => {
     null != I && s.Z.requestMembersById(n.id, I)
   }, [n.id, I]);
   let S = i.useMemo(() => {
     var e, t, r;
-    let i = v[n.getEveryoneRoleId()],
-      o = null != (t = null == N || null == (e = N.roles) ? void 0 : e.map(e => v[e]).filter(h.lm)) ? t : [],
+    let i = y[n.getEveryoneRoleId()],
+      o = null != (t = null == N || null == (e = N.roles) ? void 0 : e.map(e => y[e]).filter(h.lm)) ? t : [],
       a = null != (r = null == i ? void 0 : i.permissions) ? r : x.Hn;
     for (let e of o) a = l.IH(a, e.permissions);
     return a
-  }, [n, v, N]);
+  }, [n, y, N]);
   return null == C ? null : (0, r.jsx)(a.Zbd, {
     editable: !0,
     className: O.card,

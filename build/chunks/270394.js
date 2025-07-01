@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(700582),
   j = n(410030),
   O = n(933557),
-  y = n(346486),
-  v = n(600164),
+  v = n(346486),
+  y = n(600164),
   _ = n(666657),
   C = n(664452),
   N = n(560114),
@@ -88,14 +88,14 @@ function U(e) {
     inviteDisabled: l = !1,
     hide: a = !1
   } = e, s = n.uses;
-  return n.maxUses > 0 && (s = "".concat(n.uses, "/").concat(n.maxUses)), (0, r.jsxs)(v.Z, {
+  return n.maxUses > 0 && (s = "".concat(n.uses, "/").concat(n.maxUses)), (0, r.jsxs)(y.Z, {
     className: o()(k.inviteSettingsInviteRow, A.card, {
       [k.inviteDisabledRow]: l
     }),
-    children: [(0, r.jsxs)(v.Z, {
+    children: [(0, r.jsxs)(y.Z, {
       grow: M.INVITER,
       basis: 0,
-      align: v.Z.Align.CENTER,
+      align: y.Z.Align.CENTER,
       className: k.text,
       children: [null != n.inviter && (0, r.jsx)(x.Z, {
         user: n.inviter,
@@ -111,11 +111,11 @@ function U(e) {
           children: (0, O.F6)(n.channel, S.default, I.Z, !0)
         })]
       })]
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(y.Z, {
       grow: M.INVITE_CODE,
       shrink: 1,
       basis: 0,
-      align: v.Z.Align.CENTER,
+      align: y.Z.Align.CENTER,
       className: k.text,
       children: (0, r.jsxs)("div", {
         children: [(0, r.jsx)(m.Text, {
@@ -140,25 +140,25 @@ function U(e) {
           })]
         }) : null]
       })
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(y.Z, {
       grow: M.USES,
       basis: 0,
-      align: v.Z.Align.CENTER,
+      align: y.Z.Align.CENTER,
       className: k.text,
       children: (0, r.jsx)(m.Text, {
         className: k.uses,
         variant: "text-sm/normal",
         children: s
       })
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(y.Z, {
       grow: M.EXPIRES,
       basis: 0,
-      align: v.Z.Align.CENTER,
+      align: y.Z.Align.CENTER,
       className: o()(k.text, k.countdownColumn),
       children: (0, r.jsx)(m.Text, {
         className: k.countdown,
         variant: "text-sm/normal",
-        children: (0, r.jsx)(y.Z, {
+        children: (0, r.jsx)(v.Z, {
           deadline: n.getExpiresAt()
         })
       })
@@ -186,7 +186,7 @@ function W(e) {
   let f = (0, j.ZP)(),
     x = (0, w.MQ)(l),
     O = (0, w.O4)(l),
-    y = i.useMemo(() => null == t || g ? [] : d()(t).sortBy(e => {
+    v = i.useMemo(() => null == t || g ? [] : d()(t).sortBy(e => {
       var t, n;
       return (null != (n = null == (t = e.inviter) ? void 0 : t.username) ? n : "").toLowerCase()
     }).value(), [t, g]),
@@ -208,13 +208,13 @@ function W(e) {
       })))
     };
   return (0, r.jsx)(h.Xi, {
-    sections: [1, +!c, +!!c, Math.max(1, y.length)],
+    sections: [1, +!c, +!!c, Math.max(1, v.length)],
     renderSection: e => {
       let {
         section: t
       } = e;
       if (t === B.TABLE)
-        if (0 === y.length && !g) return (0, r.jsx)("div", {
+        if (0 === v.length && !g) return (0, r.jsx)("div", {
           children: (0, r.jsxs)(m.ubH, {
             theme: f,
             children: [(0, r.jsx)(m.oxh, {
@@ -228,28 +228,28 @@ function W(e) {
             })]
           })
         });
-        else return (0, r.jsxs)(v.Z, {
-          children: [(0, r.jsx)(v.Z.Child, {
+        else return (0, r.jsxs)(y.Z, {
+          children: [(0, r.jsx)(y.Z.Child, {
             grow: M.INVITER,
             basis: 0,
             className: R.marginReset,
             children: (0, r.jsx)(m.vwX, {
               children: Z.intl.string(Z.t.EgHyKy)
             })
-          }), (0, r.jsx)(v.Z.Child, {
+          }), (0, r.jsx)(y.Z.Child, {
             basis: 0,
             grow: M.INVITE_CODE,
             className: R.marginReset,
             children: (0, r.jsx)(m.vwX, {
               children: Z.intl.string(Z.t.LBlFEB)
             })
-          }), (0, r.jsx)(v.Z.Child, {
+          }), (0, r.jsx)(y.Z.Child, {
             grow: M.USES,
             basis: 0,
             children: (0, r.jsx)(m.vwX, {
               children: Z.intl.string(Z.t.erWrmJ)
             })
-          }), (0, r.jsx)(v.Z.Child, {
+          }), (0, r.jsx)(y.Z.Child, {
             grow: M.EXPIRES,
             basis: 0,
             children: (0, r.jsx)(m.vwX, {
@@ -303,7 +303,7 @@ function W(e) {
         })]
       }, "header");
       if (t === B.ACTIONS_V2) return (0, r.jsx)(P.Y, {
-        hasInvites: y.length > 0,
+        hasInvites: v.length > 0,
         setHeight: E,
         onShowDisableInvites: A,
         onShowInviteModal: I,
@@ -312,11 +312,11 @@ function W(e) {
         canCreateInvites: a
       });
       if (t === B.TABLE) {
-        if (0 === y.length && 0 === n && g) return (0, r.jsx)(m.$jN, {
+        if (0 === v.length && 0 === n && g) return (0, r.jsx)(m.$jN, {
           className: R.marginTop20,
           type: m.$jN.Type.SPINNING_CIRCLE
         }, "spinner");
-        let e = y[n];
+        let e = v[n];
         return null == e ? null : (0, r.jsx)(U, {
           hide: o,
           invite: e,
@@ -325,7 +325,7 @@ function W(e) {
         }, e.code)
       }
     },
-    rowHeight: (e, t) => e === B.HEADER ? 64 : e === B.ACTIONS_V1 ? 109 : e === B.ACTIONS_V2 ? S : e === B.TABLE ? 0 === y.length && 0 === t && g ? 62 : 62 * (null != y[t]) : 0,
-    sectionHeight: e => e === B.TABLE ? 0 !== y.length || g ? 28 : 240 : 0
+    rowHeight: (e, t) => e === B.HEADER ? 64 : e === B.ACTIONS_V1 ? 109 : e === B.ACTIONS_V2 ? S : e === B.TABLE ? 0 === v.length && 0 === t && g ? 62 : 62 * (null != v[t]) : 0,
+    sectionHeight: e => e === B.TABLE ? 0 !== v.length || g ? 28 : 240 : 0
   })
 }

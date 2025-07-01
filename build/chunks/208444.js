@@ -25,17 +25,17 @@ function E(e, t) {
     customInstallUrl: E,
     installParams: y,
     integrationTypesConfig: C
-  } = e, v = (0, f.Eb)({
+  } = e, x = (0, f.Eb)({
     customInstallUrl: E,
     installParams: y,
     integrationTypesConfig: C
-  }), x = (0, i.e7)([p.Z], () => {
+  }), v = (0, i.e7)([p.Z], () => {
     var e;
     return null != (e = p.Z.getGuildId()) ? e : void 0
   }), O = (0, i.e7)([c.Z, u.Z, d.Z], () => {
     let e = c.Z.getChannel(d.Z.getChannelId());
     return null != e && (e.isPrivate() || u.Z.can(_.Plq.SEND_MESSAGES, e))
-  }, []), j = (0, l.PZ)(e, x) && O, I = n || j;
+  }, []), j = (0, l.PZ)(e, v) && O, I = n || j;
   return r.useMemo(() => I ? {
     label: b.intl.string(b.t["HO/oXl"]),
     trackingArea: g.j_.VIEW,
@@ -51,7 +51,7 @@ function E(e, t) {
         }
       })
     }
-  } : v ? {
+  } : x ? {
     label: b.intl.string(b.t.NgXl3N),
     trackingArea: g.j_.ADD_APP,
     onClick() {
@@ -60,9 +60,9 @@ function E(e, t) {
         customInstallUrl: E,
         installParams: y,
         integrationTypesConfig: C,
-        guildId: x,
+        guildId: v,
         source: "app_message_embed"
       })
     }
-  } : void 0, [e.id, j, I, E, y, C, v, t, x])
+  } : void 0, [e.id, j, I, E, y, C, x, t, v])
 }

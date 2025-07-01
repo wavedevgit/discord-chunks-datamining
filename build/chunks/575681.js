@@ -1,6 +1,6 @@
 /** Chunk was on 42758 **/
 n.d(t, {
-  n: () => s
+  n: () => i
 });
 let l = (0, n(818083).B)({
     kind: "user",
@@ -17,7 +17,7 @@ let l = (0, n(818083).B)({
       }
     }]
   }),
-  s = () => {
+  i = () => {
     let {
       enabled: e
     } = l.useExperiment({

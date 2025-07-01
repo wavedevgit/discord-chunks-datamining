@@ -24,10 +24,10 @@ function E(e) {
     message: t,
     channel: l,
     compact: E
-  } = e, y = (0, o.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [C, v] = i.useState(null);
+  } = e, y = (0, o.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [C, x] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      y.length > 0 && v(y[Math.floor(Math.random() * y.length)])
+      y.length > 0 && x(y[Math.floor(Math.random() * y.length)])
     }, 500);
     return () => clearInterval(e)
   }, [y]), null == l.guild_id) ? null : (0, r.jsxs)("div", {

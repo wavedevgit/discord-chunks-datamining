@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(943762),
   y = n(914498),
   C = n(208444),
-  v = n(429551),
-  x = n(973616),
+  x = n(429551),
+  v = n(973616),
   O = n(314897),
   j = n(592125),
   I = n(158776),
@@ -46,12 +46,12 @@ let M = i.memo(e => {
     return e.start(u ? 15 * P.Z.Millis.SECOND : P.Z.Millis.SECOND, () => {
       r((new Date().getTime() - t) / P.Z.Millis.SECOND)
     }), () => e.stop()
-  }, [u, t]), (0, v.m)(n)
+  }, [u, t]), (0, x.m)(n)
 });
 M.displayName = "ActivityRuntimeCounter";
 let U = i.memo(function(e) {
   var t, n, a, c;
-  let v, {
+  let x, {
       application: P,
       channelId: w,
       guildId: U
@@ -84,7 +84,7 @@ let U = i.memo(function(e) {
     }, [P.id, Y]),
     Q = null == q ? void 0 : q.details,
     J = i.useMemo(() => {
-      let e = new x.ZP(P);
+      let e = new v.ZP(P);
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.wT), e
     }, [P]),
     $ = (0, m.s5)({
@@ -134,7 +134,7 @@ let U = i.memo(function(e) {
       icon: P.icon,
       bot: P.bot
     });
-  et.disabled && (v = null != (a = et.tooltip) ? a : et.text);
+  et.disabled && (x = null != (a = et.tooltip) ? a : et.text);
   let es = S.default.getCurrentUser(),
     ec = X.length,
     eu = null != (c = null == q || null == (n = q.timestamps) ? void 0 : n.start) ? c : null == q ? void 0 : q.created_at,
@@ -144,7 +144,7 @@ let U = i.memo(function(e) {
       label: ee ? L.intl.string(L.t.cnBQPD) : L.intl.string(L.t.VJlc0d),
       trackingArea: y.j_.PLAY,
       onClick: ei,
-      disabledReason: v,
+      disabledReason: x,
       submitting: er
     }];
   return null != ea && em.push(ea), (0, r.jsx)(b.W, {

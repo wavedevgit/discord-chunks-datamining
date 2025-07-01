@@ -1,6 +1,6 @@
 /** Chunk was on 84552 **/
 n.d(t, {
-  J: () => v,
+  J: () => x,
   Z: () => N
 }), n(388685), n(913527);
 var r, i, l = n(149765),
@@ -58,9 +58,9 @@ let b = {
   E = b,
   y = {},
   C = null,
-  v = 864e5;
-var x = ((i = x || {}).IS_OWNER = "is_owner", i.IS_ADMIN = "is_admin", i.IS_COMMUNITY = "is_community", i.GUILD_SIZE = "guild_size", i.IS_HUB = "is_hub", i.IS_VIEWING = "is_viewing", i.GUILD_PERMISSIONS = "guild_permissions", i.GUILD_SIZE_ALL = "guild_size_all", i);
-let O = new Set(Object.values(x));
+  x = 864e5;
+var v = ((i = v || {}).IS_OWNER = "is_owner", i.IS_ADMIN = "is_admin", i.IS_COMMUNITY = "is_community", i.GUILD_SIZE = "guild_size", i.IS_HUB = "is_hub", i.IS_VIEWING = "is_viewing", i.GUILD_PERMISSIONS = "guild_permissions", i.GUILD_SIZE_ALL = "guild_size_all", i);
+let O = new Set(Object.values(v));
 
 function j(e) {
   var t;
@@ -162,7 +162,7 @@ g(T, "displayName", "SurveyStore"), g(T, "persistKey", "SurveyStore"), g(T, "mig
 let N = new T(o.Z, {
   CONNECTION_OPEN: function() {
     var e;
-    null != E.lastFetched && Date.now() - (null != (e = E.lastFetched) ? e : 0) < v && null == E.surveyOverride || (0, s.wk)(E.surveyOverride, !0)
+    null != E.lastFetched && Date.now() - (null != (e = E.lastFetched) ? e : 0) < x && null == E.surveyOverride || (0, s.wk)(E.surveyOverride, !0)
   },
   SURVEY_FETCHED: I,
   SURVEY_HIDE: function(e) {

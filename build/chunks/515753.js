@@ -364,7 +364,9 @@ function eo(e) {
       userId: null == u ? void 0 : u.id,
       inline: !0,
       disableGuildProfile: !0,
-      className: J.clanTag
+      className: l()(J.clanTag, {
+        [J.clanTagMuted]: eT
+      })
     })]
   }) : eN, ez = r.useRef(null);
   return (0, i.jsx)(d.mh, {

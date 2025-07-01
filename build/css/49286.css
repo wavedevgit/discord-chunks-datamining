@@ -1,6 +1,6 @@
 /**
   Module ID: 49286
-  Original File Name: a4b5df7969cd3756
+  Original File Name: 7b116fef734890e5
 **/
 .imageUploader_e4d0bf {
     font-size: 12px;
@@ -634,12 +634,10 @@
 }
 
 .header__4a3a5 {
-    margin-bottom: 8px;
-    word-break: break-word
+    margin-bottom: 8px
 }
 
-.secondaryHeader__4a3a5 {
-    font-weight: var(--font-weight-medium);
+.header__4a3a5,.secondaryHeader__4a3a5 {
     word-break: break-word
 }
 
@@ -2014,4 +2012,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=a4b5df7969cd3756.css.map*/
+/*# sourceMappingURL=7b116fef734890e5.css.map*/

@@ -1,7 +1,7 @@
 /** Chunk was on 84552 **/
 n.d(t, {
   e: () => C,
-  i: () => v
+  i: () => x
 }), n(35282), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -64,19 +64,19 @@ function C(e) {
   })
 }
 
-function v(e) {
+function x(e) {
   var t;
   let {
     message: n,
     channel: l,
     compact: a,
     usernameHook: s
-  } = e, [m, g] = i.useState(!1), E = (0, d.ZP)(n), C = s(E), v = y(n.content), x = i.useCallback(() => {
-    null != v && f.S.dispatchToLastSubscribed(_.CkL.INSERT_TEXT, {
-      plainText: ":".concat(v.name, ":"),
+  } = e, [m, g] = i.useState(!1), E = (0, d.ZP)(n), C = s(E), x = y(n.content), v = i.useCallback(() => {
+    null != x && f.S.dispatchToLastSubscribed(_.CkL.INSERT_TEXT, {
+      plainText: ":".concat(x.name, ":"),
       addSpace: !0
     })
-  }, [v]);
+  }, [x]);
   return (0, r.jsx)(p.Z, {
     iconNode: (0, r.jsx)(o.EO4, {
       size: "md",
@@ -90,7 +90,7 @@ function v(e) {
       tag: "span",
       variant: "text-md/normal",
       color: "text-secondary",
-      children: null == v ? h.intl.format(h.t.k6Jc9f, {
+      children: null == x ? h.intl.format(h.t.k6Jc9f, {
         username: E.nick,
         usernameHook: C
       }) : h.intl.format(h.t.uoCHWV, {
@@ -99,14 +99,14 @@ function v(e) {
         emoji: (0, r.jsxs)(c.P3F, {
           className: b.clickableEmoji,
           tag: "span",
-          onClick: x,
+          onClick: v,
           onMouseEnter: () => g(!0),
           onMouseLeave: () => g(!1),
           children: [(0, r.jsx)(u.Z, {
-            emojiName: v.name,
+            emojiName: x.name,
             size: "default",
-            emojiId: v.id,
-            animated: v.animated,
+            emojiId: x.id,
+            animated: x.animated,
             isInteracting: m,
             channelId: l.id,
             messageId: n.id,
@@ -115,7 +115,7 @@ function v(e) {
             tag: "span",
             variant: "text-md/medium",
             color: "text-primary",
-            children: ":".concat(null != (t = v.originalName) ? t : v.name, ":")
+            children: ":".concat(null != (t = x.originalName) ? t : x.name, ":")
           })]
         })
       })

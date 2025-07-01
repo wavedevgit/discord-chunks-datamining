@@ -1,7 +1,7 @@
 /** Chunk was on 92754 **/
 "use strict";
 n.d(t, {
-  Z: () => M
+  Z: () => L
 }), n(388685), n(413496), n(433524), n(35282), n(539854), n(642613), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -14,25 +14,24 @@ var r = n(255367),
   u = n(749210),
   m = n(493544),
   g = n(479531),
-  p = n(118012),
-  f = n(210887),
-  h = n(246946),
-  x = n(594174),
-  b = n(251625),
-  j = n(226951),
-  _ = n(51144),
-  v = n(434404),
-  O = n(372454),
-  C = n(999382),
-  y = n(84613),
-  N = n(740903),
-  I = n(1080),
-  E = n(981631),
-  S = n(388032),
-  T = n(69214),
-  P = n(588866);
+  p = n(210887),
+  f = n(246946),
+  h = n(594174),
+  x = n(251625),
+  b = n(226951),
+  j = n(51144),
+  _ = n(434404),
+  v = n(372454),
+  O = n(999382),
+  C = n(84613),
+  y = n(740903),
+  N = n(1080),
+  I = n(981631),
+  E = n(388032),
+  S = n(69214),
+  T = n(588866);
 
-function w(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,20 +40,20 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
 }
 
-function Z(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,7 +66,7 @@ function Z(e, t) {
   }), e
 }
 
-function D(e) {
+function Z(e) {
   let {
     transitionState: t,
     guild: n,
@@ -75,67 +74,67 @@ function D(e) {
     ban: s,
     hideDiscriminator: a,
     onClose: o
-  } = e, [d, m] = i.useState(!1), [f, h] = i.useState(null);
-  async function x() {
+  } = e, [d, m] = i.useState(!1), [p, f] = i.useState(null);
+  async function h() {
     if (null != n) {
-      h(null), m(!0);
+      f(null), m(!0);
       try {
         await u.Z.unbanUser(n.id, l.id), o()
       } catch (e) {
-        h(new g.Z(e)), m(!1)
+        f(new g.Z(e)), m(!1)
       }
     }
   }
   return (0, r.jsxs)(c.Y0X, {
-    className: T.bannedUserModal,
+    className: S.bannedUserModal,
     transitionState: t,
     parentComponent: "GuildSettingsBans",
     children: [(0, r.jsxs)(c.xBx, {
-      className: T.header,
+      className: S.header,
       separator: !1,
-      children: [(0, r.jsx)(p.Z, {
-        size: p.Z.Sizes.SIZE_24,
-        className: T.userUsername,
-        children: _.ZP.getUserTag(l, {
+      children: [(0, r.jsx)(c.X6q, {
+        variant: "heading-xl/semibold",
+        className: S.userUsername,
+        children: j.ZP.getUserTag(l, {
           mode: "username",
           identifiable: a ? "never" : "always"
         })
-      }), a || l.isPomelo() ? null : (0, r.jsxs)(p.Z, {
-        size: p.Z.Sizes.SIZE_24,
-        className: T.userDiscrim,
+      }), a || l.isPomelo() ? null : (0, r.jsxs)(c.X6q, {
+        variant: "heading-xl/semibold",
+        className: S.userDiscrim,
         children: ["#", l.discriminator]
       })]
     }), (0, r.jsxs)(c.hzk, {
-      className: T.content,
+      className: S.content,
       children: [(0, r.jsx)(c.Text, {
-        className: T.reasonHeader,
+        className: S.reasonHeader,
         variant: "text-xs/normal",
-        children: S.intl.string(S.t["9Ki66O"])
+        children: E.intl.string(E.t["9Ki66O"])
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
-        children: null != s.reason && "" !== s.reason ? s.reason : S.intl.string(S.t["t+2Zcn"])
-      }), null != f ? (0, r.jsx)(c.Text, {
-        className: T.error,
+        children: null != s.reason && "" !== s.reason ? s.reason : E.intl.string(E.t["t+2Zcn"])
+      }), null != p ? (0, r.jsx)(c.Text, {
+        className: S.error,
         color: "text-danger",
         variant: "text-sm/normal",
-        children: f.getAnyErrorMessage()
+        children: p.getAnyErrorMessage()
       }) : null]
     }), (0, r.jsxs)(c.mzw, {
-      className: T.footer,
+      className: S.footer,
       children: [(0, r.jsx)(c.zxk, {
-        onClick: x,
+        onClick: h,
         look: c.zxk.Looks.LINK,
         color: c.zxk.Colors.RED,
         submitting: d,
-        children: S.intl.string(S.t.UPcIa2)
+        children: E.intl.string(E.t.UPcIa2)
       }), (0, r.jsx)(c.zxk, {
         onClick: o,
-        children: S.intl.string(S.t.i4jeWV)
+        children: E.intl.string(E.t.i4jeWV)
       })]
     })]
   })
 }
-class k extends i.PureComponent {
+class D extends i.PureComponent {
   render() {
     let {
       user: e,
@@ -143,57 +142,57 @@ class k extends i.PureComponent {
       guild: n
     } = this.props;
     return (0, r.jsxs)(c.P3F, {
-      className: s()(T.bannedUser, P.card),
+      className: s()(S.bannedUser, T.card),
       onClick: this.handleShowModal,
       onContextMenu: this.handleContextMenu,
       children: [(0, r.jsx)(c.qEK, {
         src: e.getAvatarURL(null == n ? void 0 : n.id, 40),
         "aria-label": e.username,
         size: c.EFr.SIZE_40,
-        className: T.bannedUserAvatar
+        className: S.bannedUserAvatar
       }), (0, r.jsxs)("div", {
-        className: T.username,
-        children: [_.ZP.getUserTag(e, {
+        className: S.username,
+        children: [j.ZP.getUserTag(e, {
           mode: "username",
           identifiable: t ? "never" : "always"
         }), !t && !e.isPomelo() && (0, r.jsxs)("span", {
-          className: T.discrim,
+          className: S.discrim,
           children: ["#", e.discriminator]
         })]
       })]
     })
   }
   constructor(...e) {
-    super(...e), w(this, "handleShowModal", () => {
+    super(...e), P(this, "handleShowModal", () => {
       let {
         guild: e,
         user: t,
         hideDiscriminator: n,
         ban: i
       } = this.props;
-      (0, c.h7j)(l => (0, r.jsx)(D, Z(R({}, l), {
+      (0, c.h7j)(l => (0, r.jsx)(Z, R(w({}, l), {
         guild: e,
         user: t,
         ban: i,
         hideDiscriminator: n
       })))
-    }), w(this, "handleContextMenu", e => {
+    }), P(this, "handleContextMenu", e => {
       (0, d.jW)(e, async () => {
         let {
           default: e
         } = await n.e("23835").then(n.bind(n, 768079));
-        return t => (0, r.jsx)(e, Z(R({}, t), {
+        return t => (0, r.jsx)(e, R(w({}, t), {
           user: this.props.user
         }))
       })
     })
   }
 }
-class A extends i.PureComponent {
+class k extends i.PureComponent {
   makeFilter(e) {
     if (null == e || 0 === e.length) return e => null != e;
     {
-      let t = RegExp("^".concat(j.Z.escape(e)), "i");
+      let t = RegExp("^".concat(b.Z.escape(e)), "i");
       return n => null != n && (n.id === e || t.test(n.username))
     }
   }
@@ -214,25 +213,25 @@ class A extends i.PureComponent {
     })
   }
   handleModerationClick() {
-    v.Z.setSection(E.pNK.SAFETY), (0, y.K)(N.u.DM_AND_SPAM_PROTECTION)
+    _.Z.setSection(I.pNK.SAFETY), (0, C.K)(y.u.DM_AND_SPAM_PROTECTION)
   }
   handleQueryChange(e) {
-    v.Z.setSearchQuery(e)
+    _.Z.setSearchQuery(e)
   }
   handleQueryClear() {
-    v.Z.setSearchQuery("")
+    _.Z.setSearchQuery("")
   }
   constructor(...e) {
-    super(...e), w(this, "getSortedBans", (0, b.oH)((e, t) => {
+    super(...e), P(this, "getSortedBans", (0, x.oH)((e, t) => {
       if (null == e) return [];
       let n = this.makeFilter(t),
         r = [];
       for (let t of e.keys()) {
-        let e = x.default.getUser(t);
+        let e = h.default.getUser(t);
         null != e && n(e) && r.push(e)
       }
       return r.sort((e, t) => e.username.localeCompare(t.username))
-    })), w(this, "getRowHeight", (e, t) => {
+    })), P(this, "getRowHeight", (e, t) => {
       var n;
       if (e > 0) return 0;
       let {
@@ -243,7 +242,7 @@ class A extends i.PureComponent {
       let s = l[t],
         a = null == r ? void 0 : r.get(null != (n = null == s ? void 0 : s.id) ? n : "");
       return 56 * (null != s && null != a)
-    }), w(this, "renderRow", e => {
+    }), P(this, "renderRow", e => {
       var t;
       let {
         section: n,
@@ -256,24 +255,24 @@ class A extends i.PureComponent {
       } = this.props;
       if (n > 0) return null;
       if (null == l && 0 === i) return (0, r.jsx)(c.$jN, {
-        className: T.spinner,
+        className: S.spinner,
         type: c.$jN.Type.SPINNING_CIRCLE
       }, "spinner");
       let d = this.getSortedBans(l, o)[i],
         u = null == l ? void 0 : l.get(null != (t = null == d ? void 0 : d.id) ? t : "");
-      if (null != d && null != u) return (0, r.jsx)(k, {
+      if (null != d && null != u) return (0, r.jsx)(D, {
         user: d,
         ban: u,
         hideDiscriminator: s,
         guild: a
       }, d.id)
-    }), w(this, "getSectionHeight", e => {
+    }), P(this, "getSectionHeight", e => {
       if (e > 0) return 0;
       let {
         bans: t
       } = this.props;
       return null == t ? 462 : 120
-    }), w(this, "renderSection", () => {
+    }), P(this, "renderSection", () => {
       var e;
       let t, {
         bans: i,
@@ -282,39 +281,39 @@ class A extends i.PureComponent {
       } = this.props;
       null == i ? t = null : (null == i ? void 0 : i.size) === 0 && (t = (0, r.jsxs)(c.ubH, {
         theme: l,
-        className: T.emptyState,
+        className: S.emptyState,
         children: [(0, r.jsx)(c.oxh, {
           darkSrc: n(532747),
           lightSrc: n(433466),
           width: 256,
           height: 212
         }), (0, r.jsx)(c.OZU, {
-          note: S.intl.string(S.t.zfCsAw),
+          note: E.intl.string(E.t.zfCsAw),
           style: {
             maxWidth: 300
           },
-          children: S.intl.string(S.t.ZEiY1N)
+          children: E.intl.string(E.t.ZEiY1N)
         })]
       }));
       let a = null != (e = null == i ? void 0 : i.size) ? e : 0;
       return (0, r.jsxs)(c.hjN, {
         tag: c.RB0.H1,
-        title: S.intl.formatToPlainString(S.t["bW+JJy"], {
+        title: E.intl.formatToPlainString(E.t["bW+JJy"], {
           bans: a
         }),
         children: [(0, r.jsxs)("div", {
-          className: T.settingsHeader,
+          className: S.settingsHeader,
           children: [(0, r.jsx)(c.R94, {
             type: c.geA.DESCRIPTION,
-            className: T.description,
-            children: S.intl.format(S.t.JcZ36u, {
+            className: S.description,
+            children: E.intl.format(E.t.JcZ36u, {
               onModerationClick: this.handleModerationClick
             })
           }), null == t && (0, r.jsx)(c.E1j, {
-            className: T.searchBar,
+            className: S.searchBar,
             query: null != s ? s : "",
-            placeholder: S.intl.string(S.t.rTL1RE),
-            "aria-label": S.intl.string(S.t.rTL1RE),
+            placeholder: E.intl.string(E.t.rTL1RE),
+            "aria-label": E.intl.string(E.t.rTL1RE),
             onChange: this.handleQueryChange,
             onClear: this.handleQueryClear
           })]
@@ -327,32 +326,32 @@ class A extends i.PureComponent {
     })
   }
 }
-let L = o.ZP.connectStores([C.Z, f.Z, h.Z], () => {
+let A = o.ZP.connectStores([O.Z, p.Z, f.Z], () => {
   let {
     bans: e,
     guild: t,
     searchQuery: n
-  } = C.Z.getProps();
+  } = O.Z.getProps();
   return {
     searchQuery: null != n ? n : "",
     bans: e,
     guild: t,
-    theme: f.Z.theme,
-    streamerMode: h.Z.hidePersonalInformation
+    theme: p.Z.theme,
+    streamerMode: f.Z.hidePersonalInformation
   }
-})(A);
+})(k);
 
-function M() {
+function L() {
   var e;
   let {
     guild: t
-  } = (0, o.e7)([C.Z], () => C.Z.getProps(), [], a.isEqual), {
+  } = (0, o.e7)([O.Z], () => O.Z.getProps(), [], a.isEqual), {
     enabled: n
-  } = O.T.useExperiment({
-    guildId: null != (e = null == t ? void 0 : t.id) ? e : E.lds,
+  } = v.T.useExperiment({
+    guildId: null != (e = null == t ? void 0 : t.id) ? e : I.lds,
     location: "4d6318_1"
   }, {
     autoTrackExposure: !0
   });
-  return n ? (0, r.jsx)(I.Z, {}) : (0, r.jsx)(L, {})
+  return n ? (0, r.jsx)(N.Z, {}) : (0, r.jsx)(A, {})
 }

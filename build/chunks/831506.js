@@ -1,6 +1,6 @@
 /** Chunk was on 84552 **/
 n.d(t, {
-  Z: () => x
+  Z: () => v
 }), n(388685);
 var r, i = n(392711),
   l = n.n(i),
@@ -91,7 +91,7 @@ function C(e) {
     null != n && n.delete(t.id)
   }
 }
-class v extends(r = a.ZP.Store) {
+class x extends(r = a.ZP.Store) {
   initialize() {
     this.syncWith([u.Z], y), this.waitFor(u.Z, c.Z)
   }
@@ -105,8 +105,8 @@ class v extends(r = a.ZP.Store) {
     return f
   }
 }
-p(v, "displayName", "GamePartyStore");
-let x = new v(o.Z, {
+p(x, "displayName", "GamePartyStore");
+let v = new x(o.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
       guilds: t,

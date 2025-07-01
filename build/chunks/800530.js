@@ -3,13 +3,13 @@ n.d(t, {
   Cg: () => f,
   Cp: () => N,
   Cs: () => O,
-  EY: () => v,
+  EY: () => x,
   I5: () => _,
   JQ: () => j,
   RY: () => y,
   Sv: () => C,
   TX: () => T,
-  ZW: () => x,
+  ZW: () => v,
   bK: () => E,
   n0: () => h,
   o6: () => P,
@@ -50,8 +50,8 @@ Object.freeze({
 var E = ((a = {})[a.DIDNT_VIOLATE_POLICY = 0] = "DIDNT_VIOLATE_POLICY", a[a.TOO_STRICT_UNFAIR = 1] = "TOO_STRICT_UNFAIR", a[a.DONT_AGREE_PENALTY = 2] = "DONT_AGREE_PENALTY", a[a.SOMETHING_ELSE = 3] = "SOMETHING_ELSE", a);
 let y = [0, 1, 2, 3],
   C = 372,
-  v = 279,
-  x = {
+  x = 279,
+  v = {
     impression_group: u.ImpressionGroups.APPEAL_INGESTION
   };
 var O = ((o = {}).SPEED_BUMP = "speed-bump", o.COLLECT_SIGNAL = "collect-signal", o.CONFIRM_SUBMISSION = "confirm-submission", o.REQUEST_SENT = "request-sent", o.THANKS = "thanks", o);

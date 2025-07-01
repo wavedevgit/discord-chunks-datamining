@@ -40,7 +40,7 @@ function C(e) {
   return e
 }
 
-function v(e) {
+function x(e) {
   let {
     percentage: t,
     label: n,
@@ -49,12 +49,12 @@ function v(e) {
   } = e, s = (0, p.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, b.pE)(), [_, h] = i.useState(""), [E, v] = i.useState(!1), x = "" !== _ && E, O = i.useCallback(() => {
+  } = (0, b.pE)(), [_, h] = i.useState(""), [E, x] = i.useState(!1), v = "" !== _ && E, O = i.useCallback(() => {
     h((0, g.e1)(u, c, a))
   }, [u, c, a]), j = i.useCallback(() => {
-    O(), v(!0)
+    O(), x(!0)
   }, [O]), I = i.useCallback(() => {
-    v(!1)
+    x(!1)
   }, []), S = i.useCallback(() => {
     (0, f.n)({
       channelId: c,
@@ -84,7 +84,7 @@ function v(e) {
           scaleFontToUserSetting: !0,
           children: _
         }),
-        forceOpen: x,
+        forceOpen: v,
         "aria-label": !1,
         children: e => {
           var t, n;
@@ -95,7 +95,7 @@ function v(e) {
             onBlur: I,
             onClick: S,
             className: y.voteCountButton,
-            "aria-describedby": x ? s : void 0,
+            "aria-describedby": v ? s : void 0,
             look: d.zxk.Looks.BLANK,
             size: d.zxk.Sizes.NONE,
             children: T
@@ -110,7 +110,7 @@ function v(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
           }), t))
         }
-      }), x && (0, r.jsx)(o.T, {
+      }), v && (0, r.jsx)(o.T, {
         id: s,
         children: _
       })]
@@ -123,7 +123,7 @@ function v(e) {
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     percentage: t,
     shouldAnimate: n
@@ -194,7 +194,7 @@ function j(e) {
       [y.currentlyVoting]: i !== _.Y7.LIST,
       [y.selected]: c
     }),
-    children: [l ? (0, r.jsx)(x, {
+    children: [l ? (0, r.jsx)(v, {
       percentage: t.votesPercentage,
       shouldAnimate: m
     }) : null, null != t.pollMedia.emoji && (0, r.jsx)(h.sc, {
@@ -208,7 +208,7 @@ function j(e) {
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(o.T, {
       children: E.intl.string(E.t["8DAM+/"])
-    }), l && (0, r.jsx)(v, {
+    }), l && (0, r.jsx)(x, {
       percentage: t.votesPercentage,
       label: t.votes,
       canShowVoterDetails: s,

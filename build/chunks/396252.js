@@ -26,21 +26,21 @@ function h(e) {
     usernameHook: h,
     channel: b
   } = e, E = (0, a.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), y = (0, u.ZP)(n), C = h(y), {
-    avatarSrc: v,
+    avatarSrc: x,
     eventHandlers: {
-      onMouseEnter: x,
+      onMouseEnter: v,
       onMouseLeave: O
     }
   } = (0, p.m)(!0);
   return (0, r.jsx)("div", {
-    onMouseEnter: x,
+    onMouseEnter: v,
     onMouseLeave: O,
     children: (0, r.jsx)(m.Z, {
       className: l()(_.mainContainer, {
         [_.compact]: i
       }),
       iconNode: i ? null : (0, r.jsx)(p.S, {
-        src: v
+        src: x
       }),
       iconContainerClassName: _.iconContainer,
       compact: i,

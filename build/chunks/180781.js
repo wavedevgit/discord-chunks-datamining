@@ -4,8 +4,8 @@ n.d(e, {
 });
 var o = n(255367);
 n(73800);
-var i = n(442837),
-  r = n(481060),
+var r = n(442837),
+  i = n(481060),
   a = n(906732),
   l = n(48217),
   c = n(26323),
@@ -13,8 +13,8 @@ var i = n(442837),
   u = n(914010),
   _ = n(709586),
   d = n(981631),
-  f = n(30513),
-  m = n(388032),
+  m = n(30513),
+  f = n(388032),
   p = n(273233);
 
 function b(t) {
@@ -23,42 +23,42 @@ function b(t) {
     analyticsPage: n,
     isGIF: b,
     banner: g
-  } = t, v = (0, i.e7)([u.Z], () => u.Z.getGuildId()), C = (0, i.e7)([s.Z], () => s.Z.getGuild(v)), {
-    analyticsLocations: x
+  } = t, v = (0, r.e7)([u.Z], () => u.Z.getGuildId()), x = (0, r.e7)([s.Z], () => s.Z.getGuild(v)), {
+    analyticsLocations: y
   } = (0, a.ZP)();
-  return null == C || C.hasFeature(d.oNc.ANIMATED_BANNER) || !b && C.hasFeature(d.oNc.BANNER) ? null : (0, o.jsxs)("div", {
+  return null == x || x.hasFeature(d.oNc.ANIMATED_BANNER) || !b && x.hasFeature(d.oNc.BANNER) ? null : (0, o.jsxs)("div", {
     className: p.container,
     children: [(0, o.jsx)(_.Z, {
       className: p.guildBoostingIcon
-    }), (0, o.jsx)(r.Text, {
+    }), (0, o.jsx)(i.Text, {
       color: "header-primary",
       variant: "text-sm/semibold",
-      children: m.intl.string(m.t["56M7xc"])
-    }), (0, o.jsx)(r.zxk, {
-      look: r.zxk.Looks.LINK,
-      color: r.zxk.Colors.LINK,
+      children: f.intl.string(f.t["56M7xc"])
+    }), (0, o.jsx)(i.zxk, {
+      look: i.zxk.Looks.LINK,
+      color: i.zxk.Colors.LINK,
       className: p.subscribeButton,
       onClick: () => {
-        if (null == C) return;
+        if (null == x) return;
         let t = {
           section: e,
           page: n,
           object: d.qAy.UPSELL_HEADER
         };
         null != g ? (0, l.c)({
-          analyticsLocations: x,
+          analyticsLocations: y,
           analyticsLocation: t,
-          guild: C,
+          guild: x,
           isGIF: b,
           banner: g
         }) : (0, c.Z)({
-          analyticsLocations: x,
+          analyticsLocations: y,
           analyticsSourceLocation: t,
-          guild: C,
-          perks: b ? (0, f.zC)() : (0, f.XO)()
+          guild: x,
+          perks: b ? (0, m.zC)() : (0, m.XO)()
         })
       },
-      children: m.intl.string(m.t.WUHdZW)
+      children: f.intl.string(f.t.WUHdZW)
     })]
   })
 }

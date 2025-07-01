@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: e060039e4f75aec9
+  Original File Name: 688006a386ad912b
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -251,10 +251,6 @@
 
 .appIn_d69818 {
     margin: 4px 0
-}
-
-.appGuildName_d69818 {
-    color: var(--header-primary)
 }
 
 .inviteJoinContainer_d69818 {
@@ -1841,31 +1837,25 @@
     border-left: 2px solid var(--spine-default);
     bottom: 29px;
     content: "";
-    position: absolute
+    left: calc(var(--custom-message-margin-horizontal) + var(--chat-avatar-size)/2 - 1px);
+    position: absolute;
+    width: calc(var(--custom-message-margin-left-content-cozy) - var(--custom-message-margin-horizontal) - var(--chat-avatar-size)/2 - var(--space-4))
 }
 
 .font-size-24 .cozy_c19a55.hasThread_c19a55:after {
-    left: 1.5rem;
-    top: 2rem;
-    width: 1.25rem
+    top: 2rem
 }
 
 .font-size-20 .cozy_c19a55.hasThread_c19a55:after {
-    left: 1.75rem;
-    top: 2.375rem;
-    width: 1.625rem
+    top: 2.375rem
 }
 
 .font-size-18 .cozy_c19a55.hasThread_c19a55:after {
-    left: 2rem;
-    top: 2.75rem;
-    width: 1.75rem
+    top: 2.75rem
 }
 
 .font-size-12 .cozy_c19a55.hasThread_c19a55:after,.font-size-14 .cozy_c19a55.hasThread_c19a55:after,.font-size-15 .cozy_c19a55.hasThread_c19a55:after,.font-size-16 .cozy_c19a55.hasThread_c19a55:after {
-    left: 2.2rem;
-    top: 3rem;
-    width: 2rem
+    top: 3rem
 }
 
 .font-size-12 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-14 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-15 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-16 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-18 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-20 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-24 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after {
@@ -2910,4 +2900,4 @@
     height: 100px
 }
 
-/*# sourceMappingURL=e060039e4f75aec9.css.map*/
+/*# sourceMappingURL=688006a386ad912b.css.map*/

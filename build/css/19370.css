@@ -1,6 +1,6 @@
 /**
   Module ID: 19370
-  Original File Name: d23b2bf8ff5d5935
+  Original File Name: 518ef4c1e318305d
 **/
 @use postcss-pxtorem;
 
@@ -738,31 +738,25 @@
     border-left: 2px solid var(--spine-default);
     bottom: 29px;
     content: "";
-    position: absolute
+    left: calc(var(--custom-message-margin-horizontal) + var(--chat-avatar-size)/2 - 1px);
+    position: absolute;
+    width: calc(var(--custom-message-margin-left-content-cozy) - var(--custom-message-margin-horizontal) - var(--chat-avatar-size)/2 - var(--space-4))
 }
 
 .font-size-24 .cozy_c19a55.hasThread_c19a55:after {
-    left: 1.5rem;
-    top: 2rem;
-    width: 1.25rem
+    top: 2rem
 }
 
 .font-size-20 .cozy_c19a55.hasThread_c19a55:after {
-    left: 1.75rem;
-    top: 2.375rem;
-    width: 1.625rem
+    top: 2.375rem
 }
 
 .font-size-18 .cozy_c19a55.hasThread_c19a55:after {
-    left: 2rem;
-    top: 2.75rem;
-    width: 1.75rem
+    top: 2.75rem
 }
 
 .font-size-12 .cozy_c19a55.hasThread_c19a55:after,.font-size-14 .cozy_c19a55.hasThread_c19a55:after,.font-size-15 .cozy_c19a55.hasThread_c19a55:after,.font-size-16 .cozy_c19a55.hasThread_c19a55:after {
-    left: 2.2rem;
-    top: 3rem;
-    width: 2rem
+    top: 3rem
 }
 
 .font-size-12 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-14 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-15 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-16 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-18 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-20 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after,.font-size-24 .cozy_c19a55.hasThread_c19a55.isSystemMessage_c19a55:after {
@@ -1056,4 +1050,4 @@
     top: 0
 }
 
-/*# sourceMappingURL=d23b2bf8ff5d5935.css.map*/
+/*# sourceMappingURL=518ef4c1e318305d.css.map*/

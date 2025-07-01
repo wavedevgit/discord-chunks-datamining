@@ -1,6 +1,6 @@
 /**
   Module ID: 42758
-  Original File Name: 23d731b4e932d8f3
+  Original File Name: c318fad21d796738
 **/
 .header_b404ff {
     align-items: center;
@@ -8,10 +8,6 @@
     flex-direction: column;
     padding-bottom: 24px;
     padding-top: 24px
-}
-
-.title_b404ff {
-    font-weight: var(--font-weight-bold)
 }
 
 .subtitle_b404ff,.title_b404ff {
@@ -105,4 +101,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=23d731b4e932d8f3.css.map*/
+/*# sourceMappingURL=c318fad21d796738.css.map*/

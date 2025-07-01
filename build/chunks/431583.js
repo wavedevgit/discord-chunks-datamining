@@ -21,7 +21,7 @@ var r = n(255367),
   E = n(981631),
   y = n(388032),
   C = n(246404);
-let v = [{
+let x = [{
     getOs: () => y.intl.string(y.t.NK5ySE),
     icon: C.apple,
     url: () => (0, b.w4)("osx", !1),
@@ -43,7 +43,7 @@ let v = [{
     }],
     platformKey: 2
   }],
-  x = [{
+  v = [{
     getOs: () => y.intl.string(y.t.wCVyNT),
     icon: C.ios,
     url: () => E.fzT.IOS,
@@ -206,7 +206,7 @@ function I(e) {
           children: y.intl.string(y.t["0KK0bG"])
         }), (0, r.jsx)("ul", {
           className: C.platforms,
-          children: v.map(e => (0, r.jsx)(j, {
+          children: x.map(e => (0, r.jsx)(j, {
             isActive: O === e.platformKey,
             platform: e,
             onClick: S,
@@ -222,7 +222,7 @@ function I(e) {
           children: y.intl.string(y.t.RdSNWV)
         }), (0, r.jsx)("ul", {
           className: C.platforms,
-          children: x.map(e => (0, r.jsx)(j, {
+          children: v.map(e => (0, r.jsx)(j, {
             isActive: O === e.platformKey,
             platform: e,
             onClick: S,

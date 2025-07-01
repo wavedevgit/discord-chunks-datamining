@@ -1,6 +1,6 @@
 /** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(539854), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -20,12 +20,12 @@ var r = n(255367),
   x = n(929507),
   j = n(981631),
   O = n(388032),
-  y = n(694095);
+  v = n(694095);
 
-function v(e) {
+function y(e) {
   var t, n, l;
   let {
-    name: v,
+    name: y,
     icon: _,
     imageSrc: C,
     iconBackgroundColor: N,
@@ -52,7 +52,7 @@ function v(e) {
       color: "currentColor",
       width: 10,
       height: 10,
-      className: y.caret
+      className: v.caret
     }) : null]
   }) : (0, r.jsx)(c.zxk, {
     buttonRef: H,
@@ -121,7 +121,7 @@ function v(e) {
     Y = (null == w ? void 0 : w.application) != null && Object.keys(null != (l = null == (n = q.result) || null == (t = n.sections[w.application.id]) ? void 0 : t.commands) ? l : {}).length > 0,
     X = (0, r.jsxs)(p.Z, {
       children: [(0, r.jsx)(h.Z, {
-        name: v,
+        name: y,
         icon: _,
         imageSrc: C,
         iconBackgroundColor: N,
@@ -147,29 +147,29 @@ function v(e) {
             return null != o.bot && l.push((0, r.jsx)(c.DY3, {
               forceOpen: t,
               text: new g.Z(o.bot).isVerifiedBot() ? O.intl.string(O.t.xxcTGx) : O.intl.string(O.t.AOdOYm),
-              className: y.feature,
+              className: v.feature,
               children: (0, r.jsx)(c.wGt, {
                 size: "md",
                 color: "currentColor",
-                className: y.featureIcon
+                className: v.featureIcon
               })
             }, "bot")), d.length > 0 && l.push((0, r.jsx)(c.DY3, {
               forceOpen: t,
               text: O.intl.formatToPlainString(O.t["6HqDfX"], {
                 count: d.length
               }),
-              className: y.feature,
+              className: v.feature,
               children: (0, r.jsx)(c.tYf, {
                 size: "md",
                 color: "currentColor",
-                className: y.featureIcon
+                className: v.featureIcon
               })
             }, "webhooks")), (null == s || null == (i = s.scopes) ? void 0 : i.includes(a.x.APPLICATIONS_COMMANDS)) === !0 && n && l.push((0, r.jsx)("div", {
-              className: y.feature,
+              className: v.feature,
               children: (0, r.jsx)(c.SsZ, {
                 size: "md",
                 color: "currentColor",
-                className: y.featureIcon
+                className: v.featureIcon
               })
             }, "commands")), l
           }(w, M, Y), V, L]
@@ -184,12 +184,12 @@ function v(e) {
     onBlur: () => B(!1),
     children: (0, r.jsx)(c.Zbd, {
       editable: !0,
-      className: o()(y.card, y.clickable),
+      className: o()(v.card, v.clickable),
       children: X
     })
   }) : (0, r.jsx)(c.Zbd, {
     editable: !0,
-    className: y.card,
+    className: v.card,
     children: X
   })
 }

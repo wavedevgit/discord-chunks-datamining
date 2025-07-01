@@ -1,6 +1,6 @@
 /**
   Module ID: 57015
-  Original File Name: 9675daf8a2c29e01
+  Original File Name: 46a1799c2e28424e
 **/
 .header__9f397 {
     padding: 24px 16px 0
@@ -351,8 +351,6 @@
 }
 
 .title__3cded {
-    color: var(--white-500);
-    font-weight: var(--font-weight-bold);
     z-index: 2
 }
 
@@ -367,7 +365,6 @@
 }
 
 .title_adbad8 {
-    font-weight: var(--font-weight-bold);
     margin-bottom: 8px
 }
 
@@ -631,4 +628,4 @@
     }
 }
 
-/*# sourceMappingURL=9675daf8a2c29e01.css.map*/
+/*# sourceMappingURL=46a1799c2e28424e.css.map*/

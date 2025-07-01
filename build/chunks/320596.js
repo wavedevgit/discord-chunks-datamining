@@ -1,39 +1,38 @@
 /** Chunk was on 84686 **/
 n.d(t, {
-  Ie: () => m,
-  mv: () => g
+  Ie: () => g,
+  mv: () => p
 }), n(388685);
 var r = n(255367);
 n(73800);
 var i = n(442837),
   o = n(692547),
   l = n(481060),
-  s = n(239091),
-  c = n(584511),
-  a = n(118012),
-  u = n(699516),
-  d = n(51144),
-  h = n(88751),
-  _ = n(930180),
+  c = n(239091),
+  s = n(584511),
+  a = n(699516),
+  u = n(51144),
+  d = n(88751),
+  h = n(930180),
   b = n(388032),
-  p = n(193132);
-let g = e => {
+  _ = n(193132);
+let p = e => {
     let {
       channelId: t
     } = e;
-    return (0, r.jsx)(f, {
+    return (0, r.jsx)(m, {
       channelId: t
     })
   },
-  f = e => {
+  m = e => {
     let {
       channelId: t
-    } = e, n = (0, _._d)(t), i = (0, _.K3)(t);
+    } = e, n = (0, h._d)(t), i = (0, h.K3)(t);
     if (0 === n && 0 === i) return null;
-    let c = e => {
-      (0, s.vq)(e, e => {
+    let s = e => {
+      (0, c.vq)(e, e => {
         var n, i;
-        return (0, r.jsx)(j, (n = function(e) {
+        return (0, r.jsx)(f, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -68,7 +67,7 @@ let g = e => {
       })
     };
     return n > 0 && i > 0 ? (0, r.jsxs)("div", {
-      className: p.blockedNotice,
+      className: _.blockedNotice,
       children: [(0, r.jsx)(l.t6m, {
         size: "lg",
         color: o.Z.unsafe_rawColors.RED_400.css
@@ -77,12 +76,12 @@ let g = e => {
         color: "header-secondary",
         children: b.intl.string(b.t["P/KFX1"])
       }), (0, r.jsx)(l.P3F, {
-        className: p.blockedButton,
-        onClick: c,
+        className: _.blockedButton,
+        onClick: s,
         children: b.intl.string(b.t.rUEjBQ)
       })]
     }) : i > 0 ? (0, r.jsxs)("div", {
-      className: p.blockedNotice,
+      className: _.blockedNotice,
       children: [(0, r.jsx)(l.kZF, {
         size: "lg"
       }), (0, r.jsx)(l.Text, {
@@ -92,12 +91,12 @@ let g = e => {
           number: i
         })
       }), (0, r.jsx)(l.P3F, {
-        className: p.blockedButton,
-        onClick: c,
+        className: _.blockedButton,
+        onClick: s,
         children: b.intl.string(b.t.rUEjBQ)
       })]
     }) : (0, r.jsxs)("div", {
-      className: p.blockedNotice,
+      className: _.blockedNotice,
       children: [(0, r.jsx)(l.t6m, {
         size: "lg",
         color: o.Z.unsafe_rawColors.RED_400.css
@@ -108,22 +107,22 @@ let g = e => {
           number: n
         })
       }), (0, r.jsx)(l.P3F, {
-        className: p.blockedButton,
-        onClick: c,
+        className: _.blockedButton,
+        onClick: s,
         children: b.intl.string(b.t.rUEjBQ)
       })]
     })
   },
-  m = e => {
+  g = e => {
     let {
       user: t,
       showStatus: n,
       speaker: o,
-      channelId: s
-    } = e, _ = (0, i.e7)([h.ZP], () => h.ZP.isModerator(t.id, s)), g = (0, i.e7)([u.Z], () => u.Z.isBlocked(t.id)), f = null;
-    return n && (f = o ? b.intl.string(b.t.LqMmGx) : _ ? b.intl.string(b.t.GMZqSk) : b.intl.string(b.t.suRAp6)), (0, r.jsxs)("div", {
-      className: p.user,
-      children: [(0, r.jsx)(c.Z, {
+      channelId: c
+    } = e, h = (0, i.e7)([d.ZP], () => d.ZP.isModerator(t.id, c)), p = (0, i.e7)([a.Z], () => a.Z.isBlocked(t.id)), m = null;
+    return n && (m = o ? b.intl.string(b.t.LqMmGx) : h ? b.intl.string(b.t.GMZqSk) : b.intl.string(b.t.suRAp6)), (0, r.jsxs)("div", {
+      className: _.user,
+      children: [(0, r.jsx)(s.Z, {
         src: t.getAvatarURL(null, 32),
         size: l.EFr.SIZE_32,
         muted: !1,
@@ -133,46 +132,46 @@ let g = e => {
         renderIcon: o ? () => (0, r.jsx)(l.S6n, {
           size: "md",
           color: "currentColor",
-          className: p.icon
+          className: _.icon
         }) : null
       }, t.id), (0, r.jsxs)("div", {
-        className: p.userInfo,
+        className: _.userInfo,
         children: [(0, r.jsxs)("div", {
-          className: p.username,
-          children: [(0, r.jsx)(a.Z, {
-            size: n ? a.Z.Sizes.SIZE_16 : a.Z.Sizes.SIZE_14,
-            children: d.ZP.getName(t)
-          }), (0, r.jsx)(a.Z, {
-            size: n ? a.Z.Sizes.SIZE_16 : a.Z.Sizes.SIZE_14,
-            color: a.Z.Colors.HEADER_SECONDARY,
+          className: _.username,
+          children: [(0, r.jsx)(l.Text, {
+            variant: n ? "text-md/normal" : "text-sm/normal",
+            children: u.ZP.getName(t)
+          }), (0, r.jsx)(l.Text, {
+            variant: n ? "text-md/normal" : "text-sm/normal",
+            color: "text-secondary",
             children: "#".concat(t.discriminator)
           })]
         }), (0, r.jsxs)("div", {
-          className: p.username,
+          className: _.username,
           children: [(0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
-            color: g ? "text-danger" : "text-default",
-            children: g ? b.intl.string(b.t["4bDptL"]) : b.intl.string(b.t.tFY5ZW)
+            color: p ? "text-danger" : "text-default",
+            children: p ? b.intl.string(b.t["4bDptL"]) : b.intl.string(b.t.tFY5ZW)
           }), (0, r.jsxs)(l.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: ["| ", f]
+            children: ["| ", m]
           })]
         })]
       })]
     })
   },
-  j = e => {
+  f = e => {
     let {
       channelId: t
-    } = e, n = (0, _.z)(t), i = (0, _.bA)(t);
+    } = e, n = (0, h.z)(t), i = (0, h.bA)(t);
     return (0, r.jsx)(l.Ttm, {
-      className: p.container,
+      className: _.container,
       children: [...n, ...i].map(e => {
         let {
           user: n
         } = e;
-        return (0, r.jsx)(m, {
+        return (0, r.jsx)(g, {
           user: n,
           channelId: t
         }, n.id)

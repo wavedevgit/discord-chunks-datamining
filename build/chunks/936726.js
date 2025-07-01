@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(572004),
   j = n(709054),
   O = n(51144),
-  y = n(486199),
-  v = n(981631),
+  v = n(486199),
+  y = n(981631),
   _ = n(388032),
   C = n(368938);
 
@@ -66,7 +66,7 @@ function E(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, h.ov)({
     id: e.id,
     avatar: t,
-    discriminator: v.fo$
+    discriminator: y.fo$
   })
 }
 
@@ -84,7 +84,7 @@ function w(e) {
   i.useEffect(() => () => k.stop(), [k]);
   let A = i.useMemo(() => E(n, n.avatar), [n]),
     R = i.useCallback(() => {
-      let e = "".concat((0, a.K0)(!1)).concat(v.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
+      let e = "".concat((0, a.K0)(!1)).concat(y.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
     }, [n]),
     D = i.useCallback(() => {
@@ -256,7 +256,7 @@ function w(e) {
         onClick: P,
         children: (0, r.jsxs)(m.Z, {
           align: m.Z.Align.CENTER,
-          children: [(0, r.jsx)(y.Z, {
+          children: [(0, r.jsx)(v.Z, {
             name: n.name,
             imageSrc: A,
             details: L

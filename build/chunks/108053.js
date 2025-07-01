@@ -24,8 +24,8 @@ function j(e) {
       guild: n,
       channel: j,
       customWebhooks: O,
-      editedWebhook: y,
-      selectableWebhookChannels: v,
+      editedWebhook: v,
+      selectableWebhookChannels: y,
       refToScroller: _,
       errors: C,
       canNavigate: N
@@ -35,7 +35,7 @@ function j(e) {
     [w, P] = i.useState(null);
   if (null != j) t = j;
   else {
-    let e = Object.values(v);
+    let e = Object.values(y);
     t = e.length > 0 ? e[0] : null
   }
   let T = i.useCallback(async () => {
@@ -81,8 +81,8 @@ function j(e) {
         children: g.intl.string(g.t["nrO/HB"])
       }), (0, r.jsx)(m.Z, {
         webhooks: O,
-        editedWebhook: y,
-        selectableWebhookChannels: v,
+        editedWebhook: v,
+        selectableWebhookChannels: y,
         lastCreatedWebhookId: null == S ? void 0 : S.id,
         errors: C,
         canNavigate: N

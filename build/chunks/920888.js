@@ -53,12 +53,12 @@ function E(e, t) {
 }
 let y = (e, t) => null == e && null == t || e === t,
   C = (e, t) => e.findIndex(e => y(e.emoji.id, null == t ? void 0 : t.id) && y(e.emoji.name, null == t ? void 0 : t.name)),
-  v = (e, t) => {
+  x = (e, t) => {
     if (null == t) return e;
     let n = C(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
-class x extends i.PureComponent {
+class v extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let n = e.message.reactions.length;
     return 0 === t.reactionsCount && n > 0 ? {
@@ -80,15 +80,15 @@ class x extends i.PureComponent {
       channel: E,
       className: y,
       forceAddReactions: C,
-      reactionClassName: v,
-      useChatFontScaling: x,
+      reactionClassName: x,
+      useChatFontScaling: v,
       forceHideReactionCreates: O,
       remainingReactions: j,
       combinedReactions: I,
       visibleReactionsCount: S
     } = this.props, {
       disableTransitionAppear: T
-    } = this.state, N = x ? _ : g, P = S > 0;
+    } = this.state, N = v ? _ : g, P = S > 0;
     if (!P && !C) return null;
     let A = C || P;
     return (0, r.jsxs)(o.W, {
@@ -112,13 +112,13 @@ class x extends i.PureComponent {
         isGuest: l,
         isPendingMember: h,
         isForumToolbar: b,
-        useChatFontScaling: x,
-        className: v
+        useChatFontScaling: v,
+        className: x
       }), j > 0 && (0, r.jsx)(s.P3F, {
         onClick: t => {
           t.stopPropagation(), (0, m.op)(E, e)
         },
-        className: a()(N.reaction, v, N.remainingReactions),
+        className: a()(N.reaction, x, N.remainingReactions),
         "aria-label": f.intl.string(f.t.lfIHs7),
         children: (0, r.jsxs)(s.Text, {
           className: N.reactionInner,
@@ -130,7 +130,7 @@ class x extends i.PureComponent {
         type: c.O.NORMAL,
         message: e,
         channel: E,
-        useChatFontScaling: x,
+        useChatFontScaling: v,
         isHovered: this.state.isHovered,
         className: a()({
           [N.forceShow]: A
@@ -157,7 +157,7 @@ let O = e => {
     visibleReactionsCount: s
   } = i.useMemo(() => {
     let e = [],
-      r = v(t.reactions, l),
+      r = x(t.reactions, l),
       i = null != n && n < r.length ? r.slice(0, n) : r,
       a = r.length - i.length,
       o = r.length;
@@ -173,7 +173,7 @@ let O = e => {
       remainingReactions: a
     }
   }, [l, n, t.reactions]);
-  return (0, r.jsx)(x, E(b({}, e), {
+  return (0, r.jsx)(v, E(b({}, e), {
     visibleReactionsCount: s,
     combinedReactions: a,
     remainingReactions: o

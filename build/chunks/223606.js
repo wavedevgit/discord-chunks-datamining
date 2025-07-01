@@ -40,7 +40,7 @@ let g = {},
     null != g[e] && delete g[e], _++
   };
 
-function v(e) {
+function x(e) {
   let {
     messageData: t,
     errorResponseBody: n
@@ -48,7 +48,7 @@ function v(e) {
   return E(t, n), !0
 }
 
-function x(e) {
+function v(e) {
   var t;
   let {
     channelId: n,
@@ -99,8 +99,8 @@ let j = new O(l.Z, {
   CONNECTION_OPEN: function(e) {
     return 0 !== Object.keys(g).length && (g = {}, _++, !0)
   },
-  LOAD_MESSAGES_SUCCESS: x,
-  LOCAL_MESSAGES_LOADED: x,
+  LOAD_MESSAGES_SUCCESS: v,
+  LOCAL_MESSAGES_LOADED: v,
   MESSAGE_CREATE: function(e) {
     let {
       guildId: t,
@@ -110,8 +110,8 @@ let j = new O(l.Z, {
     let r = (0, o.e5)(n);
     return !!(0, p.nY)(r) && !!(0, p.OP)(r) && (b[t] = r.id, !0)
   },
-  MESSAGE_SEND_FAILED_AUTOMOD: v,
-  MESSAGE_EDIT_FAILED_AUTOMOD: v,
+  MESSAGE_SEND_FAILED_AUTOMOD: x,
+  MESSAGE_EDIT_FAILED_AUTOMOD: x,
   REMOVE_AUTOMOD_MESSAGE_NOTICE: function(e) {
     let {
       messageId: t

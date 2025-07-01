@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(910200),
   y = n(358595),
   C = n(981631),
-  v = n(388032),
-  x = n(583136);
+  x = n(388032),
+  v = n(583136);
 
 function O(e) {
   let {
@@ -55,56 +55,56 @@ function O(e) {
       } : {}
     }, [h, I, N, Z]);
   return null == R ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(s.P3F, {
-    className: a()(x.guildInviteContainer, {
-      [x.clickable]: I && h
+    className: a()(v.guildInviteContainer, {
+      [v.clickable]: I && h
     }),
     onClick: k,
     style: D,
     children: [(0, r.jsxs)("div", {
-      className: x.cardHeightMeasure,
+      className: v.cardHeightMeasure,
       ref: g,
       children: [A ? (0, r.jsx)("div", {
-        className: x.inviteTitleWrapper,
+        className: v.inviteTitleWrapper,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "header-secondary",
-          className: x.inviteTitle,
-          children: w ? v.intl.string(v.t["oU/lsr"]) : v.intl.string(v.t.BoQUFR)
+          className: v.inviteTitle,
+          children: w ? x.intl.string(x.t["oU/lsr"]) : x.intl.string(x.t.BoQUFR)
         })
       }) : null, (0, r.jsx)(E.Z7, {
         profile: R,
-        className: x.banner
+        className: v.banner
       }), (0, r.jsx)(E.N3, {
         profile: R
       }), (0, r.jsx)(b.Z, {
         profile: R
       }), (0, r.jsx)(_.E, {
         profile: R,
-        className: x.mainContent
+        className: v.mainContent
       })]
     }), I && !h ? (0, r.jsx)(s.zxk, {
       look: s.zxk.Looks.LINK,
       color: s.zxk.Colors.TRANSPARENT,
       size: s.zxk.Sizes.NONE,
       onClick: L,
-      innerClassName: x.hideDetailsButtonInner,
+      innerClassName: v.hideDetailsButtonInner,
       children: (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: v.intl.string(v.t.xdCLeH)
+        children: x.intl.string(x.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: a()(x.footer, {
-        [x.floatingFooter]: I
+      className: a()(v.footer, {
+        [v.floatingFooter]: I
       }),
       children: [I && h ? (0, r.jsx)("div", {
-        className: x.gradient
+        className: v.gradient
       }) : null, (0, r.jsx)("div", {
-        className: a()(x.footerContent, {
-          [x.collapsedFooterContent]: I && h
+        className: a()(v.footerContent, {
+          [v.collapsedFooterContent]: I && h
         }),
         children: (0, r.jsx)("div", {
-          className: x.buttonContainer,
+          className: v.buttonContainer,
           children: (0, r.jsx)(j, {
             invite: t,
             profile: R,

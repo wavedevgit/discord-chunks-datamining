@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(749681),
   j = n(258971),
   O = n(685929),
-  y = n(163400),
-  v = n(553795),
+  v = n(163400),
+  y = n(553795),
   _ = n(496675),
   C = n(626135),
   N = n(768581),
@@ -82,16 +82,16 @@ function W(e) {
   } = e, ee = (0, m.ZP)(), [et, en] = i.useState(""), {
     isFetchingConnections: er,
     accounts: ei
-  } = (0, c.cj)([v.Z], () => ({
-    isFetchingConnections: v.Z.isFetching(),
-    accounts: v.Z.getAccounts()
+  } = (0, c.cj)([y.Z], () => ({
+    isFetchingConnections: y.Z.isFetching(),
+    accounts: y.Z.getAccounts()
   }), []), {
     canManageWebhooks: el,
     canManageGuild: eo
   } = (0, c.cj)([_.Z], () => ({
     canManageWebhooks: null != W && _.Z.can(Z.Plq.MANAGE_WEBHOOKS, W) || null != z && _.Z.can(Z.Plq.MANAGE_WEBHOOKS, z),
     canManageGuild: null != W && null == z && _.Z.can(Z.Plq.MANAGE_GUILD, W)
-  }), [W, z]), ea = (0, O.Y)(z), es = (0, g.q)(null == z || null == (t = z.linkedLobby) ? void 0 : t.application_id), ec = (0, y.F)(null == W ? void 0 : W.id), {
+  }), [W, z]), ea = (0, O.Y)(z), es = (0, g.q)(null == z || null == (t = z.linkedLobby) ? void 0 : t.application_id), ec = (0, v.F)(null == W ? void 0 : W.id), {
     availableTwitchIntegrations: ed,
     availableYoutubeIntegrations: eu,
     guildTwitchIntegrations: ep,
@@ -130,9 +130,9 @@ function W(e) {
     })
   }, [H, ef, et]), ex = (0, c.e7)([T.Z], () => {
     if (null != W) return eh.find(e => T.Z.canShowOverviewTooltip(W.id, e.integration.id))
-  }, [eh, W]), ej = i.useMemo(() => void 0 !== ex ? [ex, ...eh.filter(e => e.integration.id !== ex.integration.id)] : eh, [eh, ex]), eO = (0, u.s9z)(u.JQI), [ey, ev] = i.useState(!1), e_ = i.useRef(0), eC = () => {
-    ev(!0), clearTimeout(e_.current), e_.current = setTimeout(() => {
-      ev(!1)
+  }, [eh, W]), ej = i.useMemo(() => void 0 !== ex ? [ex, ...eh.filter(e => e.integration.id !== ex.integration.id)] : eh, [eh, ex]), eO = (0, u.s9z)(u.JQI), [ev, ey] = i.useState(!1), e_ = i.useRef(0), eC = () => {
+    ey(!0), clearTimeout(e_.current), e_.current = setTimeout(() => {
+      ey(!1)
     }, 200)
   };
   i.useEffect(() => (window.addEventListener("scroll", eC, !0), () => window.removeEventListener("scroll", eC)));
@@ -170,7 +170,7 @@ function W(e) {
         },
         details: o,
         guildId: null == W ? void 0 : W.id,
-        isScrolling: ey,
+        isScrolling: ev,
         canShowMigrationTooltip: n
       }, "integration-".concat(l.id))
     }),

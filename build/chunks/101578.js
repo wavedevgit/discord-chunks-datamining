@@ -37,9 +37,9 @@ let E = e => {
       let t = d.author.id;
       return (null == (e = d.activity) ? void 0 : e.type) === g.mFx.JOIN_REQUEST && (t = t === E && n.isPrivate() ? n.getRecipientId() : E), f.Z.getApplicationActivity(t, d.application.id)
     }
-  }, [d, n, E]), C = (0, a.l)(), v = b(d), {
-    data: x
-  } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), O = null != x ? x : v;
+  }, [d, n, E]), C = (0, a.l)(), x = b(d), {
+    data: v
+  } = (0, u.IX)(null == (t = d.application) ? void 0 : t.id), O = null != v ? v : x;
   return null != O && C ? (0, r.jsx)(o.c, {
     app: O,
     channel: n,

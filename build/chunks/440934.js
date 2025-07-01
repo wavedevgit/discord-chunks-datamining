@@ -1,71 +1,70 @@
 /** Chunk was on 29971 **/
 t.r(n), t.d(n, {
-  default: () => u,
-  openInteractionModal: () => m
+  default: () => d,
+  openInteractionModal: () => u
 });
 var o = t(255367);
 t(73800);
 var i = t(481060),
-  r = t(118012),
-  a = t(970184),
-  c = t(471073),
-  l = t(293979),
-  _ = t(954654),
-  s = t(388032),
-  d = t(994186);
+  r = t(970184),
+  a = t(471073),
+  c = t(293979),
+  l = t(954654),
+  _ = t(388032),
+  s = t(994186);
 
-function u(e) {
+function d(e) {
   let {
     title: n,
     onClose: t,
-    transitionState: u
+    transitionState: d
   } = e, {
-    components: m,
-    applicationIconURL: f,
-    applicationName: p,
-    submissionState: b,
-    error: I,
+    components: u,
+    applicationIconURL: m,
+    applicationName: f,
+    submissionState: p,
+    error: b,
     validators: h,
-    onSubmit: x
-  } = (0, l.X9)(e, t);
+    onSubmit: I
+  } = (0, c.X9)(e, t);
   return (0, o.jsx)("form", {
     onSubmit: e => {
-      e.preventDefault(), x()
+      e.preventDefault(), I()
     },
     children: (0, o.jsxs)(i.Y0X, {
-      transitionState: u,
+      transitionState: d,
       parentComponent: "InteractionModal",
       children: [(0, o.jsxs)(i.xBx, {
         separator: !1,
         children: [(0, o.jsx)(i.qEK, {
-          src: f,
+          src: m,
           size: i.EFr.SIZE_24,
-          "aria-label": p,
-          className: d.applicationIcon
-        }), (0, o.jsx)(r.Z, {
-          color: r.Z.Colors.HEADER_PRIMARY,
-          size: r.Z.Sizes.SIZE_24,
+          "aria-label": f,
+          className: s.applicationIcon
+        }), (0, o.jsx)(i.X6q, {
+          variant: "heading-xl/bold",
+          color: "header-primary",
           children: n
         }), (0, o.jsx)(i.olH, {
           onClick: t,
-          className: d.closeButton
+          className: s.closeButton
         })]
       }), (0, o.jsxs)(i.hzk, {
-        children: [null != I && "" !== I ? (0, o.jsx)(i.Wn, {
+        children: [null != b && "" !== b ? (0, o.jsx)(i.Wn, {
           messageType: i.QYI.ERROR,
-          className: d.submissionWarning,
-          children: I
+          className: s.submissionWarning,
+          children: b
         }) : null, (0, o.jsx)(i.Wn, {
           messageType: i.QYI.WARNING,
-          className: d.submissionWarning,
-          children: s.intl.format(s.t["dSTy//"], {
-            applicationName: p
+          className: s.submissionWarning,
+          children: _.intl.format(_.t["dSTy//"], {
+            applicationName: f
           })
         }), (0, o.jsx)(i.hjN, {
-          children: (0, o.jsx)(a.Il, {
+          children: (0, o.jsx)(r.Il, {
             modal: e,
             validators: h,
-            children: (0, _.xX)(m)
+            children: (0, l.xX)(u)
           })
         })]
       }), (0, o.jsxs)(i.mzw, {
@@ -73,21 +72,21 @@ function u(e) {
           type: "submit",
           color: i.zxk.Colors.BRAND,
           size: i.zxk.Sizes.MEDIUM,
-          submitting: b === c.i.IN_FLIGHT,
-          children: s.intl.string(s.t.geKm7u)
+          submitting: p === a.i.IN_FLIGHT,
+          children: _.intl.string(_.t.geKm7u)
         }), (0, o.jsx)(i.zxk, {
           look: i.zxk.Looks.LINK,
           color: i.zxk.Colors.PRIMARY,
           onClick: t,
-          children: s.intl.string(s.t["ETE/oK"])
+          children: _.intl.string(_.t["ETE/oK"])
         })]
       })]
     })
   })
 }
 
-function m(e) {
-  (0, i.h7j)(n => (0, o.jsx)(u, function(e) {
+function u(e) {
+  (0, i.h7j)(n => (0, o.jsx)(d, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         o = Object.keys(t);

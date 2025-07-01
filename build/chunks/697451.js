@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(906732),
   y = n(783097),
   C = n(581364),
-  v = n(592180),
-  x = n(726033),
+  x = n(592180),
+  v = n(726033),
   O = n(598077),
   j = n(594174),
   I = n(768581),
@@ -104,8 +104,8 @@ function U(e, t, n, i, l, o) {
     onClickAvatar: E,
     onUserContextMenu: y,
     onClickTargetAvatar: C,
-    onTargetUserContextMenu: v,
-    onPopoutRequestClose: x
+    onTargetUserContextMenu: x,
+    onPopoutRequestClose: v
   } = e;
   if (m && 1 === n) return null;
   if (m && null == d.activityInstance || g || _) return (0, r.jsx)("div", {
@@ -146,7 +146,7 @@ function U(e, t, n, i, l, o) {
       guildId: f.guild_id,
       guildAvatar: O,
       onClick: 1 === n ? C : E,
-      onContextMenu: 1 === n ? v : y,
+      onContextMenu: 1 === n ? x : y,
       ref: o
     }),
     S = 1 === n ? b : h;
@@ -155,7 +155,7 @@ function U(e, t, n, i, l, o) {
     renderPopout: l,
     shouldShow: S,
     position: "right",
-    onRequestClose: x,
+    onRequestClose: v,
     children: j
   }) : j()
 }
@@ -215,7 +215,7 @@ function H(e) {
     f = (0, d.e7)([j.default], () => j.default.getCurrentUser()),
     I = i.useRef(null),
     P = i.useRef(null),
-    M = i.useMemo(() => (e, t, n) => (s()(null != t, "ExecutedCommand: user cannot be undefined"), s()(null != f, "ExecutedCommand: currentUser cannot be undefined"), s()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(x.Z, D(L({}, e), {
+    M = i.useMemo(() => (e, t, n) => (s()(null != t, "ExecutedCommand: user cannot be undefined"), s()(null != f, "ExecutedCommand: currentUser cannot be undefined"), s()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(v.Z, D(L({}, e), {
       user: t,
       currentUser: f,
       guildId: o.guild_id,
@@ -244,7 +244,7 @@ function H(e) {
       children: [t, n]
     }, "user")
   };
-  if ((null == l ? void 0 : l.activityInstance) === null || (0, v.g)(l)) n = R.intl.format(R.t["rg7U+P"], {
+  if ((null == l ? void 0 : l.activityInstance) === null || (0, x.g)(l)) n = R.intl.format(R.t["rg7U+P"], {
     userHook: J,
     commandHook: () => {
       let t = function(e, t, n) {
@@ -296,7 +296,7 @@ function H(e) {
                 }), c]
               })
             }));
-            if (!(0, v.g)(l)) return (0, r.jsx)("div", {
+            if (!(0, x.g)(l)) return (0, r.jsx)("div", {
               className: k.commandName,
               ref: n,
               children: c

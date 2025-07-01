@@ -22,8 +22,8 @@ var r = n(255367),
   y = n(273254);
 
 function C(e) {
-  var t, C, v;
-  let x, O, j, {
+  var t, C, x;
+  let v, O, j, {
       onTransitionToInviteChannel: I,
       onAcceptInstantInvite: S,
       guild: T,
@@ -66,7 +66,7 @@ function C(e) {
     }, [N, P, z, M, I, S]);
   if (null == T) {
     if (null == N.guild) return (0, r.jsx)(h.Z, {});
-    (T = g.Qs(N.guild)).premiumTier = null != (v = N.guild.premium_tier) ? v : b.Eu4.NONE
+    (T = g.Qs(N.guild)).premiumTier = null != (x = N.guild.premium_tier) ? x : b.Eu4.NONE
   }
   let J = (0, _.e)({
     isVoiceChannel: F,
@@ -106,7 +106,7 @@ function C(e) {
     })
   })), F ? (O = (0, r.jsx)(p.Z.Channel, {
     channel: D
-  }), x = (0, r.jsxs)("span", {
+  }), v = (0, r.jsxs)("span", {
     className: y.infoTitle,
     children: [E.intl.format(E.t["2wimj4"], {
       guildName: T.name
@@ -117,10 +117,10 @@ function C(e) {
         isBannerVisible: !1
       })
     })]
-  })) : null != R && R >= 5 || null != k && k > 0 ? x = (0, r.jsx)(p.Z.Data, {
+  })) : null != R && R >= 5 || null != k && k > 0 ? v = (0, r.jsx)(p.Z.Data, {
     members: R,
     membersOnline: k
-  }) : U && (x = (0, r.jsx)(p.Z.Channel, {
+  }) : U && (v = (0, r.jsx)(p.Z.Channel, {
     channel: D,
     guild: T
   })), (0, r.jsxs)(p.Z, {
@@ -137,7 +137,7 @@ function C(e) {
         }), (0, r.jsx)(p.Z.Info, {
           title: O,
           onClick: q,
-          children: x
+          children: v
         })]
       }), (0, r.jsx)(p.Z.Button, {
         onClick: Q,

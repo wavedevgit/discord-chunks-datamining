@@ -21,8 +21,8 @@ var r, i = n(255367),
   E = n(963249),
   y = n(703656),
   C = n(594174),
-  v = n(626135),
-  x = n(51144),
+  x = n(626135),
+  v = n(51144),
   O = n(479446),
   j = n(795448),
   I = n(441623),
@@ -107,7 +107,7 @@ function k(e) {
             color: V ? "header-primary" : "always-white",
             lineClamp: 3,
             children: t === T.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAA, {
-              friendUserName: x.ZP.getName(r)
+              friendUserName: v.ZP.getName(r)
             }) : (0, O.Ou)(t)
           }), (0, i.jsx)(d.Text, {
             className: Y,
@@ -122,7 +122,7 @@ function k(e) {
         children: [null != U && (0, i.jsx)(d.zxk, {
           className: o()(Z.button, J),
           onClick: e => {
-            e.stopPropagation(), v.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+            e.stopPropagation(), x.default.track(N.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: U
             }), U === T.X2.VIEW_ALL ? ((0, y.uL)(N.Z5c.FRIENDS), m.Z.setSection(N.pJs.ALL)) : U === T.X2.SEND_MESSAGE && ((0, j.PV)(r.id), p.Z.openPrivateChannel({

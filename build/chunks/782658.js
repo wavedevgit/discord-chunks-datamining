@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(430824),
   y = n(701190),
   C = n(411198),
-  v = n(610699),
-  x = n(313876),
+  x = n(610699),
+  v = n(313876),
   O = n(778333),
   j = n(949981),
   I = n(680668),
@@ -105,7 +105,7 @@ function R(e) {
       });
       break;
     case w.r2o.ERROR:
-      W = (0, r.jsx)(x.Z, {
+      W = (0, r.jsx)(v.Z, {
         author: n.author,
         inviteError: L
       });
@@ -164,7 +164,7 @@ function R(e) {
             break
           }
           if ((0, g.P1)(M)) {
-            W = (0, r.jsx)(v.Z, {
+            W = (0, r.jsx)(x.Z, {
               invite: M,
               getAcceptInviteContext: R,
               message: n

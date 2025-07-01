@@ -31,7 +31,7 @@ function f(e) {
       avatar: e,
       discriminator: m.fo$
     })
-  }, [t]), y = i.useCallback(() => {
+  }, [t]), v = i.useCallback(() => {
     (0, l.h7j)(e => {
       var n, i;
       return (0, r.jsx)(l.ConfirmModal, (n = function(e) {
@@ -80,11 +80,11 @@ function f(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n))
     })
-  }, [t.guild_id, t.id, t.name]), v = [];
-  null != t.source_channel && null != t.source_guild && (v.push({
+  }, [t.guild_id, t.id, t.name]), y = [];
+  null != t.source_channel && null != t.source_guild && (y.push({
     icon: l.MqZ,
     text: t.source_channel.name
-  }), v.push({
+  }), y.push({
     text: (0, r.jsx)("span", {
       className: g.guildSource,
       children: b.intl.format(b.t["H/jJ6e"], {
@@ -138,7 +138,7 @@ function f(e) {
           className: g.bottomDivider
         }), (0, r.jsx)(c.Z, {
           children: (0, r.jsx)(l.zxk, {
-            onClick: y,
+            onClick: v,
             size: l.zxk.Sizes.SMALL,
             color: l.zxk.Colors.RED,
             look: l.zxk.Looks.LINK,
@@ -163,7 +163,7 @@ function f(e) {
             name: t.name,
             imageSrc: O,
             detailsClassName: g.__invalid_description,
-            details: v
+            details: y
           }), (0, r.jsx)(d.Z, {
             className: g.expandIcon,
             expanded: h,

@@ -1,7 +1,7 @@
 /** Chunk was on 84552 **/
 n.d(t, {
-  $: () => x,
-  s: () => v
+  $: () => v,
+  s: () => x
 }), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -61,14 +61,14 @@ let E = e => {
     })
   };
 
-function v(e) {
+function x(e) {
   c.Z.pop(), (0, m.t)({
     id: "explicit-media-false-positive-modal",
     text: h.intl.string(h.t.gFsTKi)
   }), e()
 }
 
-function x(e) {
+function v(e) {
   let {
     channelId: t,
     messageId: n,
@@ -79,14 +79,14 @@ function x(e) {
     onConfirmPress: d,
     transitionState: p,
     onClose: m
-  } = e, _ = (0, u.Dt)(), C = (0, g.pn)("ExplicitMediaFalsePositiveModal"), v = i.useCallback(() => {
+  } = e, _ = (0, u.Dt)(), C = (0, g.pn)("ExplicitMediaFalsePositiveModal"), x = i.useCallback(() => {
     (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
       channelId: t,
       messageId: n,
       context: a
     }), m()
-  }, [t, n, a, m]), x = i.useCallback(() => {
+  }, [t, n, a, m]), v = i.useCallback(() => {
     null == d || d(), (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
       channelId: t,
@@ -110,7 +110,7 @@ function x(e) {
     parentComponent: "ExplicitMediaFalsePositiveModal",
     children: [(0, r.jsxs)(s.hzk, {
       children: [(0, r.jsx)(s.olH, {
-        onClick: v,
+        onClick: x,
         className: b.closeButton
       }), (0, r.jsx)(s.X6q, {
         id: _,
@@ -135,14 +135,14 @@ function x(e) {
         submitting: l,
         size: s.zxk.Sizes.MEDIUM,
         color: s.zxk.Colors.BRAND,
-        onClick: x,
+        onClick: v,
         children: h.intl.string(h.t["cY+Ooa"])
       }), (0, r.jsx)(s.zxk, {
         className: b.button,
         disabled: l,
         color: s.zxk.Colors.TRANSPARENT,
         size: s.zxk.Sizes.MEDIUM,
-        onClick: v,
+        onClick: x,
         children: h.intl.string(h.t["ETE/oK"])
       })]
     })]

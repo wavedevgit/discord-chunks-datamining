@@ -44,10 +44,10 @@ let v = _.IlC.APP,
   j = !1,
   O = [];
 
-function S() {
+function y() {
   I = !0
 }
-class y extends(i = l.ZP.Store) {
+class S extends(i = l.ZP.Store) {
   initialize() {
     this.waitFor(h.Z, p.Z, m.default)
   }
@@ -63,10 +63,10 @@ class y extends(i = l.ZP.Store) {
     }
   }
 }
-b(y, "displayName", "InviteModalStore");
-let N = new y(s.Z, {
-  OVERLAY_INITIALIZE: S,
-  CONNECTION_OPEN: S,
+b(S, "displayName", "InviteModalStore");
+let N = new S(s.Z, {
+  OVERLAY_INITIALIZE: y,
+  CONNECTION_OPEN: y,
   CONNECTION_CLOSED: function() {
     I = !1
   },

@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(507418),
   y = n(348238),
   C = n(38267),
-  v = n(25015),
-  x = n(438075),
+  x = n(25015),
+  v = n(438075),
   O = n(359110),
   j = n(6025),
   I = n(695346),
@@ -176,7 +176,7 @@ function G(e) {
     {
       content: y,
       hasSpoilerEmbeds: C
-    } = (0, v.Z)(g, {
+    } = (0, x.Z)(g, {
       hideSimpleEmbedContent: _ && h,
       isInteracting: !1,
       formatInline: !1,
@@ -197,7 +197,7 @@ function G(e) {
         channel: O,
         reportingUserId: null == s || null == (n = s.moderatorReport) ? void 0 : n.reporting_user_id,
         reportedTimestamp: o.timestamp
-      }), (0, x.Z)({
+      }), (0, v.Z)({
         channelMessageProps: {
           message: g,
           channel: O,

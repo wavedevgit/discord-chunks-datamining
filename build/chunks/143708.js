@@ -25,8 +25,8 @@ function _(e) {
     } = e,
     y = (0, i.e7)([s.default], () => s.default.getId()),
     C = p.ZP.useName(h),
-    v = y === h.id,
-    x = (0, i.e7)([c.Z, u.Z], () => {
+    x = y === h.id,
+    v = (0, i.e7)([c.Z, u.Z], () => {
       let e = c.Z.getChannel(E);
       if (null == e) return !1;
       if (e.isPrivate()) return !0;
@@ -37,7 +37,7 @@ function _(e) {
       }
       return u.Z.can(m.Plq.SEND_MESSAGES, e)
     });
-  return v ? (t = f.intl.string(f.t["F/OLvL"]), _ = f.intl.string(f.t.C89OLC)) : (_ = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != C && x ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
+  return x ? (t = f.intl.string(f.t["F/OLvL"]), _ = f.intl.string(f.t.C89OLC)) : (_ = f.intl.string(f.t["YVub5+"]), b ? t = f.intl.string(f.t["57nBt7"]) : null != C && v ? (t = f.intl.formatToPlainString(f.t["9Akp1t"], {
     username: C
   }), n = (0, r.jsx)(a.Z.Button, {
     onClick: function() {

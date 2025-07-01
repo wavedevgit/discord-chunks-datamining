@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.r(t), n.d(t, {
-  default: () => ey
+  default: () => eS
 }), n(35282), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -24,8 +24,8 @@ var r = n(255367),
   I = n(637776),
   j = n(264229),
   O = n(677760),
-  S = n(893607),
-  y = n(314897),
+  y = n(893607),
+  S = n(314897),
   N = n(82142),
   C = n(701190),
   A = n(626135),
@@ -111,7 +111,7 @@ let el = (0, L.Z)(K.Z),
   eI = (0, L.Z)(X.Z),
   ej = (0, L.Z)(Y.Z),
   eO = (0, L.Z)(g.Z);
-class eS extends i.PureComponent {
+class ey extends i.PureComponent {
   static getDerivedStateFromProps(e, t) {
     var n;
     let {
@@ -325,7 +325,7 @@ class eS extends i.PureComponent {
         path: $.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
         render: e => (0, r.jsx)(ev, er({}, e))
       }), (0, r.jsx)(m.Z, {
-        path: $.Z5c.CHANNEL(S.Hw.guildId(), S.Hw.channelId({
+        path: $.Z5c.CHANNEL(y.Hw.guildId(), y.Hw.channelId({
           optional: !0
         }), ":messageId?"),
         render: e => (0, r.jsx)(eE, er({}, e))
@@ -349,7 +349,7 @@ class eS extends i.PureComponent {
     })
   }
 }
-let ey = o.ZP.connectStores([y.default, C.Z, N.Z, b.Z, E.Z], e => {
+let eS = o.ZP.connectStores([S.default, C.Z, N.Z, b.Z, E.Z], e => {
   var t, n, r;
   let {
     match: i,
@@ -357,7 +357,7 @@ let ey = o.ZP.connectStores([y.default, C.Z, N.Z, b.Z, E.Z], e => {
   } = e, s = null == i || null == (t = i.params) ? void 0 : t.inviteCode, a = ee.a ? ee.Y : void 0, o = null != s ? (0, j.mb)(s, l.search) : a, c = null == i || null == (n = i.params) ? void 0 : n.giftCode, u = null == i || null == (r = i.params) ? void 0 : r.guildTemplateCode;
   return {
     inviteKey: o,
-    isAuthenticated: y.default.isAuthenticated(),
+    isAuthenticated: S.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
     gift: null != c ? N.Z.get(c) : null,
@@ -365,4 +365,4 @@ let ey = o.ZP.connectStores([y.default, C.Z, N.Z, b.Z, E.Z], e => {
     guildTemplate: null != u ? E.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: b.Z.hasLoadedExperiments
   }
-})(eS)
+})(ey)

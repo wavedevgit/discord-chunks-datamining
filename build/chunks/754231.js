@@ -1,6 +1,6 @@
 /** Chunk was on 4811 **/
 n.d(t, {
-  Z: () => x
+  Z: () => E
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -11,17 +11,16 @@ var r = n(255367),
   c = n(503438),
   u = n(39628),
   d = n(884338),
-  h = n(528144),
-  p = n(424678),
-  f = n(594174),
-  g = n(81063),
-  m = n(768581),
-  b = n(823379),
-  _ = n(51144),
-  O = n(291798);
-let y = d.u.SIZE_24;
+  h = n(424678),
+  p = n(594174),
+  f = n(81063),
+  g = n(768581),
+  m = n(823379),
+  b = n(51144),
+  _ = n(291798);
+let O = d.u.SIZE_24;
 
-function v(e) {
+function y(e) {
   var t, n;
   let {
     activity: l,
@@ -32,7 +31,7 @@ function v(e) {
   if (null == l || null == d || null == d.large_image && null == d.small_image)
     if (null == a) return null;
     else {
-      let e = m.ZP.getApplicationIconURL({
+      let e = g.ZP.getApplicationIconURL({
           id: a.application.id,
           icon: a.application.icon
         }),
@@ -43,23 +42,23 @@ function v(e) {
         children: () => (0, r.jsx)("img", {
           alt: t,
           src: e,
-          className: O.applicationLargeImage
+          className: _.applicationLargeImage
         })
       })
     } let p = null != (t = d.large_image) ? t : d.small_image,
-    f = (0, c.Z)(l),
-    b = f ? O.spotifyLargeImage : O.applicationLargeImage,
-    _ = null != p ? (0, r.jsx)("img", {
+    m = (0, c.Z)(l),
+    b = m ? _.spotifyLargeImage : _.applicationLargeImage,
+    O = null != p ? (0, r.jsx)("img", {
       alt: null != (n = d.large_text) ? n : "",
-      src: (0, g.xF)(h, p, [128, 128]),
+      src: (0, f.xF)(h, p, [128, 128]),
       className: b
     }) : null;
-  return f && null != u ? (_ = (0, r.jsx)(s.P3F, {
-    className: O.clickable,
+  return m && null != u ? (O = (0, r.jsx)(s.P3F, {
+    className: _.clickable,
     onClick: () => {
       u(l, o.id)
     },
-    children: _
+    children: O
   }), (0, r.jsx)(s.ua7, {
     text: null != d.large_text ? d.large_text : null,
     position: "top",
@@ -81,12 +80,12 @@ function v(e) {
         }
         return i
       }(e, ["onClick"]);
-      return null != _ ? i.cloneElement(_, n) : null
+      return null != O ? i.cloneElement(O, n) : null
     }
-  })) : _
+  })) : O
 }
 
-function C(e) {
+function v(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -96,50 +95,51 @@ function C(e) {
   else {
     if (!(null != t && (0, c.Z)(t)) || null == t.sync_id || null == l || null == i) return null;
     o = l, a = (0, r.jsx)(s.P3F, {
-      className: O.headerLink,
+      className: _.headerLink,
       onClick: () => {
         i(t)
       },
       children: l
     })
   }
-  return (0, r.jsx)(h.Z, {
-    title: o,
-    className: O.header,
+  return (0, r.jsx)(s.X6q, {
+    variant: "heading-sm/semibold",
+    color: "header-primary",
+    className: _.header,
     children: a
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     activity: t,
     user: n,
     onOpenSpotifyArtist: i
   } = e, l = null == t ? void 0 : t.details, a = null == t ? void 0 : t.state, s = l;
-  return (null != t && (0, c.Z)(t) && null != a && (s = [(0, r.jsx)(p.Z, {
+  return (null != t && (0, c.Z)(t) && null != a && (s = [(0, r.jsx)(h.Z, {
     artists: a,
-    linkClassName: O.bodyLink,
+    linkClassName: _.bodyLink,
     canOpen: null != t.sync_id,
     onOpenSpotifyArtist: e => {
       null == i || i(t, n.id, e)
     }
   }, a)]), null == s || "" === s) ? null : (0, r.jsx)("div", {
-    className: o()(O.ellipsisRow, O.colorHeaderSecondary, O.bodyTextSize),
+    className: o()(_.ellipsisRow, _.colorHeaderSecondary, _.bodyTextSize),
     children: s
   })
 }
 
-function S(e) {
+function j(e) {
   let {
     activity: t
   } = e, n = null == t ? void 0 : t.state;
   return null == n || "" === n || (0, c.Z)(t) ? null : (0, r.jsx)("div", {
-    className: o()(O.ellipsisRow, O.colorHeaderSecondary, O.bodyTextSize, O.__invalid_activity),
+    className: o()(_.ellipsisRow, _.colorHeaderSecondary, _.bodyTextSize, _.__invalid_activity),
     children: n
   })
 }
 
-function E(e) {
+function S(e) {
   let {
     activity: t
   } = e;
@@ -155,13 +155,13 @@ function E(e) {
   return (0, r.jsx)(u.Z, {
     start: i,
     end: l,
-    className: O.timeBar,
+    className: _.timeBar,
     themed: !0,
     singleLine: !0
   })
 }
 
-function x(e) {
+function E(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -169,11 +169,11 @@ function x(e) {
     channel: o,
     sortedVoiceStates: u,
     onOpenSpotifyTrack: h,
-    onOpenSpotifyArtist: p,
+    onOpenSpotifyArtist: f,
     onOpenSpotifyAlbum: g
-  } = e, m = [];
-  null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (m = u.map(e => e.user.id));
-  let x = (0, a.Wu)([f.default], () => m.map(e => f.default.getUser(e)).filter(b.lm)),
+  } = e, E = [];
+  null != n ? E = Array.from(n.embeddedActivity.userIds) : (0, c.Z)(t) && null != u && (E = u.map(e => e.user.id));
+  let x = (0, a.Wu)([p.default], () => E.map(e => p.default.getUser(e)).filter(m.lm)),
     I = null != n || (0, c.Z)(t),
     P = i.useMemo(() => {
       let e = new Map;
@@ -183,50 +183,50 @@ function x(e) {
       }), e
     }, [u, I]);
   return I ? (0, r.jsxs)("div", {
-    className: O.flexColumn,
+    className: _.flexColumn,
     children: [(0, r.jsxs)("div", {
-      className: O.flexRow,
-      children: [(0, r.jsx)(v, {
+      className: _.flexRow,
+      children: [(0, r.jsx)(y, {
         activity: t,
         user: l,
         embeddedApp: n,
         onOpenSpotifyAlbum: g
       }), (0, r.jsxs)("div", {
-        className: O.detailsAndAvatarsContainer,
-        children: [(0, r.jsx)(C, {
+        className: _.detailsAndAvatarsContainer,
+        children: [(0, r.jsx)(v, {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: h
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(C, {
           activity: t,
           user: l,
-          onOpenSpotifyArtist: p
-        }), (0, r.jsx)(S, {
+          onOpenSpotifyArtist: f
+        }), (0, r.jsx)(j, {
           activity: t
-        }), m.length > 0 && (0, r.jsx)(d.Z, {
-          className: O.usersSummary,
+        }), E.length > 0 && (0, r.jsx)(d.Z, {
+          className: _.usersSummary,
           guildId: o.guild_id,
           users: x,
-          size: y,
+          size: O,
           max: 7,
           renderUser: e => {
             var t;
             if (null == e) return null;
             let n = P.get(e.id),
-              i = null != (t = null == n ? void 0 : n.nick) ? t : _.ZP.getName(e);
+              i = null != (t = null == n ? void 0 : n.nick) ? t : b.ZP.getName(e);
             return (0, r.jsx)(s.DY3, {
               text: i,
               position: "bottom",
               children: (0, r.jsx)("img", {
-                src: e.getAvatarURL(o.guild_id, y),
+                src: e.getAvatarURL(o.guild_id, O),
                 alt: i,
-                className: O.avatar
+                className: _.avatar
               }, e.id)
             }, e.id)
           }
         })]
       })]
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(S, {
       activity: t
     })]
   }) : null

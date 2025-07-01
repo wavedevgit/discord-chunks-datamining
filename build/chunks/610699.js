@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(208444),
   y = n(835473),
   C = n(471445),
-  v = n(111028),
-  x = n(601964),
+  x = n(111028),
+  v = n(601964),
   O = n(592125),
   j = n(430824),
   I = n(496675),
@@ -88,7 +88,7 @@ function L(e) {
         className: R.channelIcon,
         size: "xs",
         color: "currentColor"
-      }) : null, (0, r.jsx)(v.Z, {
+      }) : null, (0, r.jsx)(x.Z, {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: l,
@@ -104,7 +104,7 @@ function L(e) {
     className: a()(R.channel, {
       [R.ended]: i
     }),
-    children: (0, r.jsx)(v.Z, {
+    children: (0, r.jsx)(x.Z, {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
         color: l,
@@ -138,7 +138,7 @@ function D(e) {
       })
     }, [null == (t = a.inviter) ? void 0 : t.id, b.id]),
     C = (0, c.e7)([j.Z], () => null != a.guild ? j.Z.getGuild(a.guild.id) : null, [a]),
-    v = (0, y.Z)([b.id])[0],
+    x = (0, y.Z)([b.id])[0],
     N = (0, c.e7)([p.ZP], () => {
       var e;
       return (null == a ? void 0 : a.channel) != null && (null == (e = p.ZP.getSelfEmbeddedActivityForChannel(a.channel.id)) ? void 0 : e.applicationId) === b.id
@@ -175,13 +175,13 @@ function D(e) {
     H = null != C;
   if (null == C) {
     if (null == a.guild) return (0, r.jsx)(P.Z, {});
-    C = new x.ZP(a.guild)
+    C = new v.ZP(a.guild)
   }
   let V = H && !L || H && N;
-  return (H && N && (l = Z.intl.string(Z.t.wJNK8P)), L || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == v) ? null : (0, r.jsx)(f.Gt, {
+  return (H && N && (l = Z.intl.string(Z.t.wJNK8P)), L || (l = Z.intl.string(Z.t.hHGrW1)), null == a.code || "" === a.code || null == x) ? null : (0, r.jsx)(f.Gt, {
     value: D,
     children: (0, r.jsx)(M, {
-      app: v,
+      app: x,
       invite: a,
       activityUsers: F,
       isMember: H,
@@ -214,8 +214,8 @@ function M(e) {
     submitting: f,
     isDisabled: y,
     tooltip: C,
-    handleAcceptInvite: v,
-    onView: x
+    handleAcceptInvite: x,
+    onView: v
   } = e, O = new URL(a.code, "https://discord.gg").toString(), {
     bot: j,
     icon: I
@@ -229,10 +229,10 @@ function M(e) {
       trackingArea: s ? h.j_.PLAY : h.j_.JOIN_SERVER,
       submitting: f,
       disabledReason: y && null != C ? C : void 0,
-      onClick: v
+      onClick: x
     }];
     return null != T && e.push(T), e
-  }, [v, m, y, s, f, C, T]);
+  }, [x, m, y, s, f, C, T]);
   return (0, r.jsx)(g.W, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -277,7 +277,7 @@ function M(e) {
     trackingConfig: {
       id: l.id,
       linkType: h.Un.ACTIVITY_INVITE,
-      onView: x
+      onView: v
     }
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

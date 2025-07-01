@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(63063),
   j = n(919196),
   O = n(731072),
-  y = n(494118),
-  v = n(37607),
+  v = n(494118),
+  y = n(37607),
   _ = n(351644),
   C = n(108053),
   N = n(981631),
@@ -165,7 +165,7 @@ let w = i.memo(function(e) {
       }));
       break;
     case N.b4C.CHANNEL_FOLLOWING:
-      Q = (0, r.jsx)(y.Z, {
+      Q = (0, r.jsx)(v.Z, {
         followedChannelWebhooks: J,
         editedWebhook: k,
         selectableWebhookChannels: U,
@@ -203,7 +203,7 @@ let w = i.memo(function(e) {
       });
       break;
     case N.b4C.LOBBIES_LINKED:
-      Q = (0, r.jsx)(v.Z, {
+      Q = (0, r.jsx)(y.Z, {
         guild: l
       });
       break;

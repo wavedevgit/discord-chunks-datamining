@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(905753),
   j = n(937427),
   O = n(643886),
-  y = n(869157),
-  v = n(454092),
+  v = n(869157),
+  y = n(454092),
   _ = n(289465),
   C = n(981631),
   N = n(689079),
@@ -106,10 +106,10 @@ function P(e) {
     let n, r = null;
     if (0 !== t.length) {
       let e = P[t[0]];
-      if (e.type === d.Kw.USER) n = v.s.REMOVE_SELF;
+      if (e.type === d.Kw.USER) n = y.s.REMOVE_SELF;
       else {
         let t = e.id;
-        if (n = v.s.REMOVE_ROLE, (0, p.pM)(j, t)) r = "@everyone";
+        if (n = y.s.REMOVE_ROLE, (0, p.pM)(j, t)) r = "@everyone";
         else {
           let e = b.Z.getRole(j, t);
           r = null != e ? e.name : "role"
@@ -117,12 +117,12 @@ function P(e) {
       }
     } else {
       let t = Object.values(e)[0].id;
-      if (n = v.s.DENY_ROLE, (0, p.pM)(j, t)) r = "@everyone";
+      if (n = y.s.DENY_ROLE, (0, p.pM)(j, t)) r = "@everyone";
       else {
         let e = b.Z.getRole(j, t);
         r = null != e ? e.name : "role"
       }
-    }(0, v._)(n, r)
+    }(0, y._)(n, r)
   }, [j, P]), G = i.useCallback((e, n) => {
     let r = {};
     for (let [e, t] of Object.entries(P)) r[e] = {
@@ -229,7 +229,7 @@ function P(e) {
         title: e.title,
         children: (0, r.jsx)("div", {
           className: O ? void 0 : S.listContainer,
-          children: (0, r.jsx)(y.Z, {
+          children: (0, r.jsx)(v.Z, {
             guildId: j,
             commandId: l,
             noneSelectedText: e.noneSelectedText,

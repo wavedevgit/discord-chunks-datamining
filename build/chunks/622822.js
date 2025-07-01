@@ -1,6 +1,6 @@
 /** Chunk was on 84552 **/
 n.d(t, {
-  I8: () => x,
+  I8: () => v,
   Kt: () => b,
   Yt: () => h,
   a1: () => E,
@@ -68,11 +68,11 @@ let y = () => {
       location: "age-gate-utils"
     })
   },
-  v = e => {
+  x = e => {
     var t;
     return !!y() && null != e && (null == (t = a.Z.getChannel(e)) ? void 0 : t.isNSFW())
   };
 
-function x(e, t, n) {
-  return C(e) ? void(0, u.mN)(null != n ? n : d.L0.NSFW_SERVER) : v(t) ? void(0, u.mN)(null != n ? n : d.L0.NSFW_CHANNEL) : void 0
+function v(e, t, n) {
+  return C(e) ? void(0, u.mN)(null != n ? n : d.L0.NSFW_SERVER) : x(t) ? void(0, u.mN)(null != n ? n : d.L0.NSFW_CHANNEL) : void 0
 }

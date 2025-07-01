@@ -1,6 +1,6 @@
 /** Chunk was on 84552 **/
 n.d(t, {
-  Z: () => x
+  Z: () => v
 });
 var r = n(255367),
   i = n(73800),
@@ -21,10 +21,10 @@ var r = n(255367),
   E = n(981631),
   y = n(474936),
   C = n(388032),
-  v = n(510064);
+  x = n(510064);
 
-function x(e) {
-  var t, n, x, O;
+function v(e) {
+  var t, n, v, O;
   let j, I, S, {
       message: T,
       channel: N,
@@ -62,7 +62,7 @@ function x(e) {
     wallpaper_name: null != (n = null == L ? void 0 : L.label) ? n : C.intl.string(C.t["UQMV/P"])
   }) : C.intl.format(C.t["+lKndX"], {
     username: null == R ? void 0 : R.nick,
-    wallpaper_name: null != (x = null == L ? void 0 : L.label) ? x : C.intl.string(C.t["UQMV/P"])
+    wallpaper_name: null != (v = null == L ? void 0 : L.label) ? v : C.intl.string(C.t["UQMV/P"])
   }), w ? k || Z ? V && F ? I = C.intl.formatToPlainString(C.t.PzTpVV, {
     wallpaperName: null != (O = null == L ? void 0 : L.label) ? O : C.intl.string(C.t["UQMV/P"])
   }) : G || H || !F || (I = C.intl.format(C.t.JwUhHh, {
@@ -72,7 +72,7 @@ function x(e) {
   })) : I = C.intl.format(C.t.dBxFsL, {
     learnMoreLink: p.Z.getArticleURL(E.BhN.DM_WALLPAPERS)
   }) : I = C.intl.string(C.t["6JSOu7"]), (null == U ? void 0 : U.isViewable) && F && !G && (S = (0, r.jsx)(a.zxk, {
-    className: v.action,
+    className: x.action,
     onClick: () => {
       _.X(N, A, {
         shouldClear: !V,

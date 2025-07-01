@@ -1,7 +1,7 @@
 /** Chunk was on 84552 **/
 n.d(t, {
   M: () => p,
-  Z: () => v
+  Z: () => x
 }), n(539854), n(388685);
 var r, i, l, a, o = n(442837),
   s = n(759174),
@@ -58,7 +58,7 @@ a = "GuildProductsStore", (l = "displayName") in C ? Object.defineProperty(C, l,
   configurable: !0,
   writable: !0
 }) : C[l] = a;
-let v = new C(c.Z, {
+let x = new C(c.Z, {
   CONNECTION_OPEN: function() {
     E.clear(), m = {}, f = {}, g = {}
   },

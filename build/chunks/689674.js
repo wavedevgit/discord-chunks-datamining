@@ -29,13 +29,13 @@ function d(e) {
       sourceChannelId: E,
       sourceGuildId: y
     }) : c.Z.handleMessageLostVisibility(b)
-  }, [b, p.id, p.guild_id, E, y]), v = s.Z.useExperiment({
+  }, [b, p.id, p.guild_id, E, y]), x = s.Z.useExperiment({
     location: "836a4b_1"
   }, {
     disable: !h || !m,
     autoTrackExposure: !0
-  }).enabled, x = (0, a.O)(C, 0, v);
+  }).enabled, v = (0, a.O)(C, 0, x);
   return r.useEffect(() => () => {
     c.Z.handleMessageLostVisibility(b)
-  }, [b]), x
+  }, [b]), v
 }

@@ -26,7 +26,7 @@ function p(e) {
     h() && (await s.Z.enableIntegration(p.id, e.type, e.id), o.Z.startEditingIntegration(e.id))
   }, [h, p.id]), O = i.useCallback(e => {
     h() && (e.id === (null == n ? void 0 : n.id) && o.Z.stopEditingIntegration(), s.Z.disableIntegration(p.id, e.id))
-  }, [h, n, p.id]), y = i.useCallback(e => {
+  }, [h, n, p.id]), v = i.useCallback(e => {
     h() && (e === (null == n ? void 0 : n.id) ? o.Z.stopEditingIntegration() : o.Z.startEditingIntegration(e))
   }, [h, n]);
   return (0, r.jsxs)(r.Fragment, {
@@ -46,7 +46,7 @@ function p(e) {
       isExpanded: (null == n ? void 0 : n.id) === e.id,
       onEnable: j,
       onDisable: O,
-      onToggleExpand: () => y(e.id)
+      onToggleExpand: () => v(e.id)
     }, e.id)), (0, r.jsx)(l.Text, {
       className: u.helpText,
       color: "text-muted",

@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(76535),
   y = n(866104),
   C = n(886176),
-  v = n(981631),
-  x = n(388032),
+  x = n(981631),
+  v = n(388032),
   O = n(24665);
 
 function j(e) {
@@ -37,7 +37,7 @@ function j(e) {
   } = (0, f.eD)(n), T = (0, f.ue)(n, {
     publishedOnly: !0
   }), N = i.useCallback(async () => {
-    b.default.track(v.rMx.GUILD_SHOP_EMBED_CLICKED, function(e) {
+    b.default.track(x.rMx.GUILD_SHOP_EMBED_CLICKED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -54,7 +54,7 @@ function j(e) {
         })
       }
       return e
-    }({}, (0, d.hH)(n))), await (0, g.Z)(v.Z5c.SERVER_SHOP(n))
+    }({}, (0, d.hH)(n))), await (0, g.Z)(x.Z5c.SERVER_SHOP(n))
   }, [n]);
   (0, p.Z)({
     type: o.ImpressionTypes.VIEW,
@@ -82,14 +82,14 @@ function j(e) {
         variant: "heading-sm/semibold",
         color: "interactive-normal",
         className: O.serverShopLabelText,
-        children: x.intl.string(x.t.al5EXF)
+        children: v.intl.string(v.t.al5EXF)
       })]
     }), (0, r.jsx)(u.LZC, {
       size: 16
     }), (0, r.jsx)(u.X6q, {
       variant: "heading-md/semibold",
       color: "text-default",
-      children: x.intl.format(x.t.NZeik5, {
+      children: v.intl.format(v.t.NZeik5, {
         guildName: l.name
       })
     }), (0, r.jsx)(u.LZC, {
@@ -113,7 +113,7 @@ function j(e) {
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: x.intl.format(x.t.tKZNlZ, {
+            children: v.intl.format(v.t.tKZNlZ, {
               listingCount: T.length
             })
           })
@@ -121,7 +121,7 @@ function j(e) {
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: x.intl.format(x.t["kXr8+f"], {
+            children: v.intl.format(v.t["kXr8+f"], {
               createdYear: P.getFullYear()
             })
           })
@@ -137,7 +137,7 @@ function j(e) {
           }), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "always-white",
-            children: x.intl.string(x.t.jXx1CA)
+            children: v.intl.string(v.t.jXx1CA)
           })]
         })
       })]

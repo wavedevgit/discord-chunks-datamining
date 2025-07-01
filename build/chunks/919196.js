@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(125657),
   j = n(725875),
   O = n(981631),
-  y = n(388032),
-  v = n(704526);
+  v = n(388032),
+  y = n(704526);
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -64,22 +64,22 @@ function C(e) {
       return i
     }(e, ["application", "guild", "integration"]);
   return (0, r.jsx)(o.ConfirmModal, (t = _({}, d), n = n = {
-    header: y.intl.formatToPlainString(y.t["rL9d//"], {
+    header: v.intl.formatToPlainString(v.t["rL9d//"], {
       applicationName: i.name
     }),
-    confirmText: y.intl.string(y.t.ebGf4u),
-    cancelText: y.intl.string(y.t["ETE/oK"]),
+    confirmText: v.intl.string(v.t.ebGf4u),
+    cancelText: v.intl.string(v.t["ETE/oK"]),
     onConfirm: () => {
       c.Z.disableIntegration(l.id, s.id).catch(() => {
         a.Z.show({
-          title: y.intl.string(y.t.wYqMmJ),
-          body: y.intl.string(y.t.A4Mnsr)
+          title: v.intl.string(v.t.wYqMmJ),
+          body: v.intl.string(v.t.A4Mnsr)
         })
       })
     },
     children: (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: y.intl.format(y.t.FGE8yc, {
+      children: v.intl.format(v.t.FGE8yc, {
         applicationName: i.name
       })
     })
@@ -117,13 +117,13 @@ function N(e) {
   }, [E, S, n, w]), R = i.useMemo(() => {
     let e = [{
       icon: o.T39,
-      text: y.intl.formatToPlainString(y.t.gcdJ8P, {
+      text: v.intl.formatToPlainString(v.t.gcdJ8P, {
         timestamp: b.default.extractTimestamp(w.id)
       })
     }];
     return null != w.user && e.push({
       icon: o.tBG,
-      text: y.intl.formatToPlainString(y.t.qE7oqq, {
+      text: v.intl.formatToPlainString(v.t.qE7oqq, {
         user: g.ZP.getUserTag(w.user)
       })
     }), e
@@ -131,12 +131,12 @@ function N(e) {
     guild: n,
     applicationIntegration: a
   }) : (0, r.jsx)(o.Zbd, {
-    className: v.emptyCard,
+    className: y.emptyCard,
     editable: !0,
     children: (0, r.jsx)(o.Text, {
       color: "text-muted",
       variant: "text-sm/normal",
-      children: y.intl.string(y.t.pfLnzc)
+      children: v.intl.string(v.t.pfLnzc)
     })
   }), [E.bot, a, n]);
   return (0, r.jsxs)(r.Fragment, {
@@ -147,30 +147,30 @@ function N(e) {
       isHeader: !0
     }), (null == E ? void 0 : E.description) != null ? (0, r.jsx)(u.Z, {
       userBio: E.description,
-      className: v.headerDescription
+      className: y.headerDescription
     }) : null, T ? (0, r.jsx)(d.Z, {
       application: E,
       canNavigate: S,
       guildId: n.id
     }) : null, (0, r.jsx)(o.$i$, {
-      className: v.headerDivider
+      className: y.headerDivider
     }), null != E.bot ? (0, r.jsxs)("div", {
-      className: v.section,
+      className: y.section,
       children: [(0, r.jsx)(h.Z, {
         icon: (0, r.jsx)(o.wGt, {
           size: "xs",
           color: "currentColor"
         }),
-        title: y.intl.string(y.t.AOdOYm)
+        title: v.intl.string(v.t.AOdOYm)
       }), D]
     }) : null, (0, r.jsxs)("div", {
-      className: v.section,
+      className: y.section,
       children: [(0, r.jsx)(h.Z, {
         icon: (0, r.jsx)(o.tYf, {
           size: "md",
           color: "currentColor"
         }),
-        title: y.intl.string(y.t["t9ZX/P"])
+        title: v.intl.string(v.t["t9ZX/P"])
       }), P.length > 0 ? (0, r.jsx)(j.Z, {
         webhooks: P,
         editedWebhook: N,
@@ -178,24 +178,24 @@ function N(e) {
         errors: I,
         canNavigate: S
       }) : (0, r.jsx)(o.Zbd, {
-        className: v.emptyCard,
+        className: y.emptyCard,
         editable: !0,
         children: (0, r.jsx)(o.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: k ? y.intl.string(y.t.ahPd2d) : y.intl.string(y.t.axqYMj)
+          children: k ? v.intl.string(v.t.ahPd2d) : v.intl.string(v.t.axqYMj)
         })
       })]
     }), (0, r.jsx)(o.$i$, {
-      className: v.headerDivider
+      className: y.headerDivider
     }), (0, r.jsxs)(s.Z, {
-      className: v.section,
+      className: y.section,
       justify: s.Z.Justify.BETWEEN,
       align: s.Z.Align.CENTER,
       children: [(0, r.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: Z ? y.intl.string(y.t.hdneLy) : y.intl.string(y.t.xRCMq6)
+        children: Z ? v.intl.string(v.t.hdneLy) : v.intl.string(v.t.xRCMq6)
       }), (0, r.jsx)(s.Z.Child, {
         grow: 0,
         shrink: 0,
@@ -205,7 +205,7 @@ function N(e) {
           look: o.zxk.Looks.FILLED,
           disabled: !Z,
           onClick: A,
-          children: y.intl.string(y.t.ebGf4u)
+          children: v.intl.string(v.t.ebGf4u)
         })
       })]
     })]

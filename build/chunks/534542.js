@@ -8,7 +8,7 @@ var r = n(255367);
 n(73800);
 var i = n(120356),
   a = n.n(i),
-  o = n(118012),
+  o = n(481060),
   s = n(954859);
 
 function l(e, t, n) {
@@ -93,7 +93,8 @@ function m(e) {
     style: _
   } = e, m = f(e, ["type", "className", "disabled", "selectable", "children", "style"]);
   let g = h.DEFAULT;
-  return i ? g = h.DISABLED : l && (g = h.SELECTABLE), (0, r.jsx)(o.Z, d(c({
+  return i ? g = h.DISABLED : l && (g = h.SELECTABLE), (0, r.jsx)(o.Text, d(c({
+    variant: "text-sm/normal",
     className: a()(s[t], n, s[g]),
     style: _
   }, m), {

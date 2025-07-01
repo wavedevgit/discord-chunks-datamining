@@ -24,11 +24,11 @@ var r = n(278074),
   E = n(839963),
   y = n(897325),
   C = n(57101),
-  v = n(562293),
-  x = n(981631),
+  x = n(562293),
+  v = n(981631),
   O = n(388032);
 let j = {
-  channelId: x.lds,
+  channelId: v.lds,
   selectedAnswerIds: new Set,
   submitting: !1,
   editing: !1,
@@ -77,8 +77,8 @@ function N(e, t) {
     poll: o
   } = e;
   if (null == o) return;
-  let m = e.state === x.yb.SENT,
-    f = m ? null != a ? a : (0, v.H)(o.expiry) : "",
+  let m = e.state === v.yb.SENT,
+    f = m ? null != a ? a : (0, x.H)(o.expiry) : "",
     g = null == f && m,
     {
       selectedAnswerIds: _,
@@ -134,11 +134,11 @@ function P(e, t) {
     poll: h
   } = e;
   if (null == h) return;
-  let v = m.default.getCurrentUser();
-  if (null == v) return;
-  let x = l.Z.useReducedMotion,
+  let x = m.default.getCurrentUser();
+  if (null == x) return;
+  let v = l.Z.useReducedMotion,
     j = null == (s = u.Z.getChannel(e.getChannelId())) || null == (n = s.getGuildId) ? void 0 : n.call(s),
-    T = (0, y.E)(v, j),
+    T = (0, y.E)(x, j),
     P = h.answers,
     A = h.layout_type,
     w = N(e, t, {
@@ -221,7 +221,7 @@ function P(e, t) {
       isVictor: B && _,
       didSelfVote: h,
       style: b,
-      shouldAnimateTransition: z && !x,
+      shouldAnimateTransition: z && !v,
       votesPercentage: Math.round(100 * p),
       votes: (0, r.EQ)(A).with(i.C.IMAGE_ONLY_ANSWERS, () => "(".concat(d.toLocaleString(), ")")).otherwise(() => O.intl.formatToPlainString(O.t.XRkuoa, {
         count: d.toLocaleString()

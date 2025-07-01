@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(485386),
   j = n(246946),
   O = n(259580),
-  y = n(531087),
-  v = n(768581),
+  v = n(531087),
+  y = n(768581),
   _ = n(709054),
   C = n(486199),
   N = n(981631),
@@ -192,7 +192,7 @@ function P(e) {
           color: u.zxk.Colors.PRIMARY,
           onClick: M,
           disabled: R,
-          children: R ? (0, r.jsx)(y.Z, {
+          children: R ? (0, r.jsx)(v.Z, {
             width: 24,
             height: 24
           }) : (0, r.jsx)(r.Fragment, {
@@ -252,7 +252,7 @@ function P(e) {
               color: u.zxk.Colors.PRIMARY,
               disabled: t.syncing || t.revoked,
               onClick: a,
-              children: t.syncing ? (0, r.jsx)(y.Z, {
+              children: t.syncing ? (0, r.jsx)(v.Z, {
                 width: 24,
                 height: 24
               }) : (0, r.jsx)(r.Fragment, {
@@ -363,7 +363,7 @@ function P(e) {
               }),
               draggable: !1,
               className: o()(S.emoji, "emoji", "jumboable"),
-              src: v.ZP.getEmojiURL({
+              src: y.ZP.getEmojiURL({
                 id: e.id,
                 animated: e.animated,
                 size: 28

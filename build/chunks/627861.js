@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(208444),
   y = n(371991),
   C = n(561308),
-  v = n(810568),
-  x = n(567409),
+  x = n(810568),
+  v = n(567409),
   O = n(168524),
   j = n(592745),
   I = n(952164),
@@ -160,7 +160,7 @@ function ea(e) {
     onView: m,
     partyStatusElement: f,
     presenceActivity: h
-  } = e, b = ei(u, h), E = (0, S.Lz)(h, p.author, "Invite Embed"), C = !(0, W.Z)(h, p, c.id), v = i.useMemo(() => {
+  } = e, b = ei(u, h), E = (0, S.Lz)(h, p.author, "Invite Embed"), C = !(0, W.Z)(h, p, c.id), x = i.useMemo(() => {
     let e = [];
     if (!b) {
       var t;
@@ -180,7 +180,7 @@ function ea(e) {
         (0, I.aG)(h)
       }
     }), e
-  }, [b, h, E]), x = el(c.name, null == (t = p.activity) ? void 0 : t.type);
+  }, [b, h, E]), v = el(c.name, null == (t = p.activity) ? void 0 : t.type);
   if (C) {
     let e = (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
@@ -190,7 +190,7 @@ function ea(e) {
       children: Q.intl.string(Q.t["84qx9v"])
     });
     return (0, r.jsx)(g.W, {
-      header: x,
+      header: v,
       title: c.name,
       iconSrc: T.r9.getWhiteIconURL(),
       infoUrl: B.Z.getArticleURL(X.BhN.SPOTIFY_CONNECTION),
@@ -232,12 +232,12 @@ function ea(e) {
         }), d ? null : f]
       });
     return (0, r.jsx)(g.W, {
-      header: x,
+      header: v,
       title: e,
       iconSrc: null != (s = (0, V.Z)(h, c.id)) ? s : void 0,
       infoUrl: B.Z.getArticleURL(X.BhN.SPOTIFY_CONNECTION),
       info: u,
-      actions: v,
+      actions: x,
       trackingConfig: {
         id: c.id,
         linkType: _.Un.RICH_PRESENCE_INVITE,
@@ -252,7 +252,7 @@ function eo(e, t) {
     openGameProfileModal: (0, O.Z)({
       location: "Rich Presence Activity Invite Embed",
       applicationId: e,
-      source: v.m1.Embed,
+      source: x.m1.Embed,
       trackEntryPointImpression: !0,
       sourceUserId: t
     }),
@@ -294,7 +294,7 @@ function es(e, t, n, r, i) {
 }
 
 function ec(e) {
-  var t, n, h, v;
+  var t, n, h, x;
   let {
     analyticsLocations: O,
     application: j,
@@ -438,7 +438,7 @@ function ec(e) {
         applicationId: q.id
       })
     }
-  } : null != eg ? eg : void 0, [j.id, ea, eu, null == q ? void 0 : q.id, eg]), ev = (0, E.z)(j), ex = i.useMemo(() => null != $ ? {
+  } : null != eg ? eg : void 0, [j.id, ea, eu, null == q ? void 0 : q.id, eg]), ex = (0, E.z)(j), ev = i.useMemo(() => null != $ ? {
     label: Q.intl.string(Q.t["HO/oXl"]),
     trackingArea: _.j_.VIEW,
     onClick: e => {
@@ -450,13 +450,13 @@ function ec(e) {
     onClick: e => {
       ec(e)
     }
-  } : null != ev && k ? ev : void 0, [k, $, ec, ev]), eO = i.useMemo(() => {
+  } : null != ex && k ? ex : void 0, [k, $, ec, ex]), eO = i.useMemo(() => {
     let e = [];
-    return V || null == ey ? V && null != eC && e.push(eC) : e.push(ey), null != ex && e.push(ex), e
-  }, [eC, V, ey, ex]), ej = el(j.name, null == (t = P.activity) ? void 0 : t.type), eI = k ? (0, f.H)({
+    return V || null == ey ? V && null != eC && e.push(eC) : e.push(ey), null != ev && e.push(ev), e
+  }, [eC, V, ey, ev]), ej = el(j.name, null == (t = P.activity) ? void 0 : t.type), eI = k ? (0, f.H)({
     applicationId: j.id,
     referrerId: S
-  }) : void 0, eS = (0, x.N)(j.id).some(e => (0, C.ig)(e) === l.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+  }) : void 0, eS = (0, v.N)(j.id).some(e => (0, C.ig)(e) === l.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.YqE, {
       size: "xxs",
       color: "currentColor"
@@ -499,7 +499,7 @@ function ec(e) {
       }
     })
   }
-  let eT = null != (v = null == R || null == (n = R.timestamps) ? void 0 : n.start) ? v : null == R ? void 0 : R.created_at,
+  let eT = null != (x = null == R || null == (n = R.timestamps) ? void 0 : n.start) ? x : null == R ? void 0 : R.created_at,
     eN = null != eT ? (0, r.jsxs)("div", {
       className: J.timestampContainer,
       children: [(0, r.jsx)(o.iWm, {
@@ -573,7 +573,7 @@ function eu(e) {
     return null != t ? t : new N.Z({
       discriminator: "0005"
     })
-  }), [_]), C = (0, q.Ps)(null == f || null == (t = f.party) ? void 0 : t.id) || p.id === T.r9.id, v = (0, r.jsx)($, {
+  }), [_]), C = (0, q.Ps)(null == f || null == (t = f.party) ? void 0 : t.id) || p.id === T.r9.id, x = (0, r.jsx)($, {
     partyMembers: y,
     partySize: b,
     maxPartySize: E,
@@ -586,7 +586,7 @@ function eu(e) {
     hideParty: u,
     message: c,
     onView: d,
-    partyStatusElement: v,
+    partyStatusElement: x,
     presenceActivity: f
   }) : (0, r.jsx)(ec, {
     analyticsLocations: l,
@@ -597,7 +597,7 @@ function eu(e) {
     hideParty: u,
     message: c,
     onView: d,
-    partyStatusElement: v,
+    partyStatusElement: x,
     presenceActivity: f
   })
 }

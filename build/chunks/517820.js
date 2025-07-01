@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(825829),
   y = n(226192),
   C = n(36459),
-  v = n(434404),
-  x = n(518950),
+  x = n(434404),
+  v = n(518950),
   O = n(670188),
   j = n(592125),
   I = n(271383),
@@ -166,7 +166,7 @@ function G(e) {
     avatarSrc: u,
     avatarDecorationSrc: d,
     eventHandlers: p
-  } = (0, x.Z)({
+  } = (0, v.Z)({
     user: a,
     guildId: o,
     size: 12
@@ -244,9 +244,9 @@ function H(e) {
     dmsSent: u,
     raidType: g,
     resolvedReason: _
-  } = (0, E.FL)(n), C = (0, p.e7)([j.Z], () => j.Z.getChannel(n.channel_id), [n.channel_id]), v = null != (t = null == C ? void 0 : C.guild_id) ? t : null, {
-    shouldShowIncidentActions: x
-  } = (0, h.mI)(v), O = (0, N.sR)(n.author.id, n.channel_id), I = i.useCallback(() => {
+  } = (0, E.FL)(n), C = (0, p.e7)([j.Z], () => j.Z.getChannel(n.channel_id), [n.channel_id]), x = null != (t = null == C ? void 0 : C.guild_id) ? t : null, {
+    shouldShowIncidentActions: v
+  } = (0, h.mI)(x), O = (0, N.sR)(n.author.id, n.channel_id), I = i.useCallback(() => {
     let e = null == C ? void 0 : C.guild_id;
     null != e && (0, y.kW)(n.id, e)
   }, [n.id, C]), S = g === d.$.DM_RAID, T = S ? f.P4T : f.b6m;
@@ -291,7 +291,7 @@ function H(e) {
         dateTime: o.toLocaleString(R.intl.currentLocale, b.pQ)
       })
     }) : null,
-    footerButtons: x ? (0, r.jsxs)("div", {
+    footerButtons: v ? (0, r.jsxs)("div", {
       className: k.dotSeparatedRow,
       children: [(0, r.jsx)(f.zxk, {
         onClick: e => {
@@ -389,7 +389,7 @@ function V(e) {
         })
       }), (0, r.jsx)(M, {}), (0, r.jsx)(f.zxk, {
         onClick: function() {
-          null != a && v.Z.open(a, w.pNK.GUILD_AUTOMOD, void 0, w.KsC.AUTOMOD_MENTION_SPAM)
+          null != a && x.Z.open(a, w.pNK.GUILD_AUTOMOD, void 0, w.KsC.AUTOMOD_MENTION_SPAM)
         },
         color: f.zxk.Colors.LINK,
         look: f.zxk.Looks.LINK,

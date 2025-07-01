@@ -20,8 +20,8 @@ var r = n(255367),
   x = n(592125),
   j = n(271383),
   O = n(485386),
-  y = n(246946),
-  v = n(594174),
+  v = n(246946),
+  y = n(594174),
   _ = n(51144),
   C = n(981631),
   N = n(388032),
@@ -208,10 +208,10 @@ function Z(e) {
     isLocked: i,
     lockTooltipText: l,
     openEntryContextMenu: o
-  } = e, a = (0, d.e7)([v.default], () => v.default.getUser(n)), s = (0, d.e7)([j.ZP], () => {
+  } = e, a = (0, d.e7)([y.default], () => y.default.getUser(n)), s = (0, d.e7)([j.ZP], () => {
     var e;
     return null == (e = j.ZP.getMember(t.id, n)) ? void 0 : e.nick
-  }, [t.id, n]), c = (0, d.e7)([y.Z], () => y.Z.hidePersonalInformation);
+  }, [t.id, n]), c = (0, d.e7)([v.Z], () => v.Z.hidePersonalInformation);
   return null == a ? null : (0, r.jsxs)("div", {
     onContextMenu: o,
     className: I.identifier,

@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(36459),
   y = n(336197),
   C = n(359110),
-  v = n(726033),
-  x = n(496675),
+  x = n(726033),
+  v = n(496675),
   O = n(594174),
   j = n(5192),
   I = n(51144),
@@ -119,7 +119,7 @@ function W(e, t) {
 
 function K(e, t, n) {
   return i.useMemo(() => {
-    if (null != t && null != n) return i => (0, r.jsx)(v.Z, V(H({}, i), {
+    if (null != t && null != n) return i => (0, r.jsx)(x.Z, V(H({}, i), {
       user: t,
       currentUser: n,
       guildId: e.guild_id,
@@ -293,7 +293,7 @@ function ee(e) {
     message: o,
     channel: s
   } = e, {
-    avatarSrc: v,
+    avatarSrc: x,
     eventHandlers: {
       onMouseEnter: O,
       onMouseLeave: j
@@ -304,7 +304,7 @@ function ee(e) {
     isFocused: w,
     handleFocus: R,
     handleBlur: D
-  } = (0, Z.bb)(T), K = (0, d.e7)([f.Z], () => f.Z.keyboardModeEnabled), q = (0, d.e7)([x.Z], () => x.Z.can(M.Plq.MANAGE_MESSAGES, s), [s]), {
+  } = (0, Z.bb)(T), K = (0, d.e7)([f.Z], () => f.Z.keyboardModeEnabled), q = (0, d.e7)([v.Z], () => v.Z.can(M.Plq.MANAGE_MESSAGES, s), [s]), {
     ruleName: Q,
     embedChannel: ee,
     decisionId: et,
@@ -331,7 +331,7 @@ function ee(e) {
     }), (0, C.Kh)(e))
   }, [o, ee]), eb = i.useCallback(() => {
     (0, E.Xx)(o.id, s, _.d.DELETE_USER_MESSAGE)
-  }, [s, o.id]), eE = (0, F.L9)(Number(ea)), ey = null != eo, eC = q && null != el && (null == es || !es.actions.hasOwnProperty(_.d.DELETE_USER_MESSAGE)), ev = o.embeds.length > 0 ? null == (t = o.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? void 0 : t.rawValue : null, ex = null != ev;
+  }, [s, o.id]), eE = (0, F.L9)(Number(ea)), ey = null != eo, eC = q && null != el && (null == es || !es.actions.hasOwnProperty(_.d.DELETE_USER_MESSAGE)), ex = o.embeds.length > 0 ? null == (t = o.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? void 0 : t.rawValue : null, ev = null != ex;
   return (0, r.jsx)("div", {
     onMouseEnter: O,
     onMouseLeave: j,
@@ -340,7 +340,7 @@ function ee(e) {
         [G.compact]: l
       }),
       iconNode: l ? null : (0, r.jsx)(k.S, {
-        src: v
+        src: x
       }),
       iconContainerClassName: G.iconContainer,
       compact: l,
@@ -479,11 +479,11 @@ function ee(e) {
                   children: B.intl.string(B.t.DEoVWV)
                 })]
               })
-            }), ex ? (0, r.jsxs)(r.Fragment, {
+            }), ev ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)("div", {
                 className: G.dot
               }), (0, r.jsx)(p.zxk, {
-                onClick: () => eh(ev),
+                onClick: () => eh(ex),
                 color: p.zxk.Colors.LINK,
                 look: p.zxk.Looks.LINK,
                 size: p.zxk.Sizes.SMALL,

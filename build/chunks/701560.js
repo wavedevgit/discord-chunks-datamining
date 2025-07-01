@@ -29,7 +29,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function x(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@ function x(e, t) {
 }
 class O extends(r = l.PureComponent) {
   get analyticsLocation() {
-    return x(v({}, this.props.analyticsContext.location), {
+    return v(x({}, this.props.analyticsContext.location), {
       object: b.qAy.BUTTON_CTA
     })
   }
@@ -97,7 +97,7 @@ class O extends(r = l.PureComponent) {
       }), (0, i.jsx)(c.ua7, {
         text: t,
         position: o,
-        children: e => (0, i.jsx)("div", v({
+        children: e => (0, i.jsx)("div", x({
           className: y.disabledButtonOverlay
         }, e))
       })]
@@ -145,7 +145,7 @@ class O extends(r = l.PureComponent) {
         let {
           default: e
         } = await n.e("53195").then(n.bind(n, 918306));
-        return n => (0, i.jsx)(e, x(v({}, n), {
+        return n => (0, i.jsx)(e, v(x({}, n), {
           libraryApplication: t,
           onPlay: this.handleClick
         }))
@@ -175,7 +175,7 @@ function j(e) {
     applicationId: t,
     libraryApplication: n
   } = e, r = (0, d.O)(), [l, a] = (0, s.Wu)([f.Z, m.Z, g.Z], () => [f.Z.isConnected(t) || m.Z.isLaunchable(t) || null != n && g.Z.isLaunchable(n.id, n.branchId), m.Z.launchingGames.has(t)], [t, n]), o = (0, s.e7)([p.ZP], () => new Set(p.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, s.e7)([g.Z], () => null != n ? g.Z.getState(n.id, n.branchId) : null, [n]);
-  return (0, i.jsx)(O, x(v({}, e), {
+  return (0, i.jsx)(O, v(x({}, e), {
     analyticsContext: r,
     isLaunchable: l,
     isLaunching: a,

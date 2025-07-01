@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(348238),
   y = n(38267),
   C = n(884902),
-  v = n(670188),
-  x = n(695346),
+  x = n(670188),
+  v = n(695346),
   O = n(271383),
   j = n(594174),
   I = n(768581),
@@ -76,7 +76,7 @@ function M(e) {
     channel: B
   } = e, G = i.useRef(null), H = i.useRef(null), V = (0, P.J)(U, F), {
     setPopout: z
-  } = (0, y.Z)(F.id, w.d$), W = (0, E.qo)(F, B, z, !0), K = x.QK.useSetting(), Y = (0, T.n)(), [X, q] = i.useState(!1), [Q, J] = i.useState((null == V ? void 0 : V.coverImage) == null), $ = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), ee = (0, c.e7)([O.ZP, j.default], () => {
+  } = (0, y.Z)(F.id, w.d$), W = (0, E.qo)(F, B, z, !0), K = v.QK.useSetting(), Y = (0, T.n)(), [X, q] = i.useState(!1), [Q, J] = i.useState((null == V ? void 0 : V.coverImage) == null), $ = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), ee = (0, c.e7)([O.ZP, j.default], () => {
     var e;
     return O.ZP.isMember(null == V ? void 0 : V.guildId, null == (e = j.default.getCurrentUser()) ? void 0 : e.id)
   }, [V]), et = (0, c.e7)([O.ZP], () => (null == V ? void 0 : V.authorId) != null ? O.ZP.getMember(V.guildId, V.authorId) : null), en = (0, f.Z)((null == et ? void 0 : et.avatarDecoration) != null ? null == et ? void 0 : et.avatarDecoration : null == V || null == (t = V.user) ? void 0 : t.avatarDecoration), [er, ei, el] = i.useMemo(() => {
@@ -168,7 +168,7 @@ function M(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: R.descriptionFooter,
-        children: [null != V.authorId && null != ef && (0, r.jsx)(v.Z, {
+        children: [null != V.authorId && null != ef && (0, r.jsx)(x.Z, {
           targetElementRef: H,
           userId: V.authorId,
           guildId: V.guildId,
@@ -217,7 +217,7 @@ function M(e) {
                 color: er,
                 roleColors: ea,
                 className: R.authorName
-              }) : (0, r.jsx)(v.Z, {
+              }) : (0, r.jsx)(x.Z, {
                 targetElementRef: G,
                 userId: V.authorId,
                 guildId: V.guildId,

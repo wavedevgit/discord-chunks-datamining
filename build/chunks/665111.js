@@ -7,8 +7,8 @@ n(73800);
 var i = n(481060),
   o = n(313201),
   l = n(471253),
-  s = n(930180),
-  c = n(320596),
+  c = n(930180),
+  s = n(320596),
   a = n(939863),
   u = n(388032),
   d = n(22946);
@@ -16,8 +16,8 @@ var i = n(481060),
 function h(e) {
   var t, n, {
       channel: h,
-      transitionState: _,
-      onClose: b
+      transitionState: b,
+      onClose: _
     } = e,
     p = function(e, t) {
       if (null == e) return {};
@@ -34,13 +34,13 @@ function h(e) {
       }
       return i
     }(e, ["channel", "transitionState", "onClose"]);
-  let g = (0, o.Dt)(),
-    f = (0, s._d)(h.id),
-    m = (0, s.K3)(h.id),
+  let m = (0, o.Dt)(),
+    g = (0, c._d)(h.id),
+    f = (0, c.K3)(h.id),
     j = async () => {
-      await (0, l.yi)(h), b()
-    }, O = async () => {
-      await (0, l.RK)(h, !1), b()
+      await (0, l.yi)(h), _()
+    }, x = async () => {
+      await (0, l.RK)(h, !1), _()
     };
   return (0, r.jsx)(i.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -60,8 +60,8 @@ function h(e) {
     }
     return e
   }({
-    transitionState: _,
-    "aria-labelledby": g
+    transitionState: b,
+    "aria-labelledby": m
   }, p), n = n = {
     size: i.CgR.SMALL,
     parentComponent: "StageChannelModeratorJoinModal",
@@ -79,7 +79,7 @@ function h(e) {
           })
         })
       }), (0, r.jsx)(i.X6q, {
-        id: g,
+        id: m,
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: d.headerTitle,
@@ -89,7 +89,7 @@ function h(e) {
         color: "header-secondary",
         className: d.headerSubtitle,
         children: u.intl.string(u.t.LQY4JS)
-      }), (f > 0 || m > 0) && (0, r.jsx)(c.mv, {
+      }), (g > 0 || f > 0) && (0, r.jsx)(s.mv, {
         channelId: h.id
       }), (0, r.jsxs)("div", {
         className: d.buttonsContainer,
@@ -97,7 +97,7 @@ function h(e) {
           color: i.zxk.Colors.PRIMARY,
           className: d.button,
           innerClassName: d.innerButton,
-          onClick: O,
+          onClick: x,
           children: [(0, r.jsx)("div", {
             className: d.icon,
             children: (0, r.jsx)(i.S6n, {

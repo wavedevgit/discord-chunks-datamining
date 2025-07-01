@@ -1,6 +1,6 @@
 /** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(539854), n(388685), n(467055);
 var r = n(73800),
   i = n(512722),
@@ -21,7 +21,7 @@ var r = n(73800),
   j = n(399860),
   O = n(981631);
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,10 +40,10 @@ function y(e) {
   return e
 }
 
-function v(e, t, n) {
+function y(e, t, n) {
   let i = (0, s.e7)([x.Z], () => x.Z.getApplicationPermissions()),
     o = r.useMemo(() => (function(e, t) {
-      let n = y({}, t),
+      let n = v({}, t),
         r = (0, u.bD)(e),
         i = (0, j.rE)(r, d.Kw.CHANNEL),
         l = (0, j.rE)(e, d.Kw.ROLE);
@@ -57,7 +57,7 @@ function v(e, t, n) {
         type: d.Kw.CHANNEL
       }), n
     })(e, null != i ? i : {}), [i, e]),
-    v = (0, s.e7)([x.Z], () => {
+    y = (0, s.e7)([x.Z], () => {
       var e;
       if (null == n) return;
       let t = x.Z.getCommand(n);
@@ -68,15 +68,15 @@ function v(e, t, n) {
       return null == n ? x.Z.getEditedApplication() : null == (e = x.Z.getEditedCommand()) ? void 0 : e.permissions
     }, [n]),
     C = null != n ? n : t,
-    N = null != n ? v : o,
-    I = r.useMemo(() => null != _ ? _ : y({}, null != N ? N : {}), [_, N]),
+    N = null != n ? y : o,
+    I = r.useMemo(() => null != _ ? _ : v({}, null != N ? N : {}), [_, N]),
     S = r.useMemo(() => Object.keys(I).length, [I]),
     E = r.useMemo(() => null == N || null == I ? null : !a().isEqual(N, I), [N, I]);
   return r.useEffect(() => {
     C === t && (E ? c.Z.startEditingCommandPermissions(C) : c.Z.stopEditingCommandPermissions(C))
   }, [t, E, C]), {
     originalApplicationPermissions: o,
-    originalCommandPermissions: v,
+    originalCommandPermissions: y,
     editedTargetPermissions: function(e, t) {
       let n = (0, s.e7)([b.Z], () => b.Z.getGuild(e), [e]);
       l()(null != n, "guild must be present to be editing its integration settings");
@@ -102,7 +102,7 @@ function v(e, t, n) {
             userIds: r
           }
         }, [t]),
-        v = (0, s.cj)([p.Z], () => Object.fromEntries(c.map(p.Z.getChannel).filter(h.lm).map(e => [e.id, e])), [c]),
+        y = (0, s.cj)([p.Z], () => Object.fromEntries(c.map(p.Z.getChannel).filter(h.lm).map(e => [e.id, e])), [c]),
         _ = (0, s.cj)([m.Z], () => Object.fromEntries(x.map(t => m.Z.getRole(e, t)).filter(h.lm).map(e => [e.id, e])), [x, e]),
         C = (0, s.cj)([f.default], () => Object.fromEntries(j.map(f.default.getUser).filter(h.lm).map(e => [e.id, e])), [j]);
       return r.useMemo(() => {
@@ -114,7 +114,7 @@ function v(e, t, n) {
             c = !1;
           if (s.type === d.Kw.CHANNEL) {
             let e = s.id === r,
-              n = v[s.id];
+              n = y[s.id];
             t = e || g.Z.can(O.Plq.VIEW_CHANNEL, n), c = !0
           } else if (s.type === d.Kw.ROLE) {
             let r = s.id === e,
@@ -135,13 +135,13 @@ function v(e, t, n) {
             })(Object(t)).forEach(function(n) {
               Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
             }), e
-          }(y({}, s), {
+          }(v({}, s), {
             canRead: t,
             canWrite: c
           })
         }
         return l
-      }, [v, n, i, a, t, _, C])
+      }, [y, n, i, a, t, _, C])
     }(e, I),
     hasChanges: E,
     selectedPermissionCount: S

@@ -36,8 +36,8 @@ var r = n(255367),
   E = n(5967),
   y = n(630388),
   C = n(358085),
-  v = n(51144),
-  x = n(91047),
+  x = n(51144),
+  v = n(91047),
   O = n(50284),
   j = n(804063),
   I = n(981631);
@@ -55,7 +55,7 @@ function T(e, t, n) {
     let i = h.default.getUser(e);
     if (null == i) return;
     if (r.preventDefault(), r.stopPropagation(), !r.shiftKey) return void n();
-    let l = "@".concat(v.ZP.getUserTag(i, {
+    let l = "@".concat(x.ZP.getUserTag(i, {
         decoration: "never"
       })),
       a = "<@".concat(e, ">");
@@ -176,7 +176,7 @@ function M(e, t) {
   return i.useCallback(n => {
     let r = h.default.getUser(e),
       i = f.Z.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, x.Pv)(n, r, i))
+    null != r && null != i && (n.stopPropagation(), (0, v.Pv)(n, r, i))
   }, [e, t])
 }
 
@@ -184,7 +184,7 @@ function U(e, t, n) {
   return i.useCallback(r => {
     let i = h.default.getUser(e),
       l = f.Z.getChannel(t);
-    null != i && null != l && (r.stopPropagation(), (0, x._j)(r, {
+    null != i && null != l && (r.stopPropagation(), (0, v._j)(r, {
       user: i,
       channel: l,
       moderationAlertId: n
@@ -196,7 +196,7 @@ function F(e, t) {
   return i.useCallback(n => {
     let r = h.default.getUser(e),
       i = f.Z.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, x.xS)(n, r, i.guild_id))
+    null != r && null != i && (n.stopPropagation(), (0, v.xS)(n, r, i.guild_id))
   }, [e, t])
 }
 
@@ -246,14 +246,14 @@ function G(e) {
   let C = i.useCallback(e => {
       s && (0, m.T6)(), E || (b.S.dispatchKeyed(I.LPv.ANIMATE_CHAT_AVATAR, g, !0), h(e), y(!0))
     }, [E, g, s, h]),
-    v = i.useCallback(() => {
+    x = i.useCallback(() => {
       b.S.dispatchKeyed(I.LPv.ANIMATE_CHAT_AVATAR, g, !1), y(!1)
     }, [g]);
   return {
     hasHovered: _.current,
     isHovered: E,
     handleMouseEnter: C,
-    handleMouseLeave: v
+    handleMouseLeave: x
   }
 }
 

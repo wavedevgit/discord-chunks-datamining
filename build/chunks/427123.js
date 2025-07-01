@@ -18,8 +18,8 @@ var r, i, l, a = n(392711),
   E = n(981631);
 let y = "DetectedOffPlatformPremiumPerksStore",
   C = {},
-  v = {},
-  x = [];
+  x = {},
+  v = [];
 
 function O() {
   let e = !1;
@@ -27,8 +27,8 @@ function O() {
       skuId: t,
       applicationId: n
     }
-    of o().values(v)) {
-    if (x.includes(t)) continue;
+    of o().values(x)) {
+    if (v.includes(t)) continue;
     let r = f.Z.getApplication(n);
     if (null == r) {
       f.Z.isFetchingApplication(n) || f.Z.didFetchingApplicationFail(n) || m.ZP.fetchApplication(n);
@@ -49,7 +49,7 @@ function O() {
 class j extends(r = s.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(g.ZP, b.Z, h.Z), x = null != (e = c.K.get(y)) ? e : x
+    this.waitFor(g.ZP, b.Z, h.Z), v = null != (e = c.K.get(y)) ? e : v
   }
   getDetectedOffPlatformPremiumPerks() {
     return o().values(C)
@@ -63,7 +63,7 @@ l = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in j ? Object.de
 }) : j[i] = l;
 let I = new j(u.Z, {
   LOGOUT: function() {
-    C = {}, v = {}
+    C = {}, x = {}
   },
   SKU_FETCH_SUCCESS: O,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: O,
@@ -73,8 +73,8 @@ let I = new j(u.Z, {
     let {
       skuId: t
     } = e;
-    if (delete C[t], x.includes(t)) return !1;
-    x.push(t), c.K.set(y, x)
+    if (delete C[t], v.includes(t)) return !1;
+    v.push(t), c.K.set(y, v)
   },
   RUNNING_GAMES_CHANGE: function() {
     let e = !1;
@@ -88,7 +88,7 @@ let I = new j(u.Z, {
             skuId: n,
             applicationId: r
           }
-          of E.Lg6) r !== t || x.includes(n) || null == v[n] && (h.Z.applicationIdsFetched.has(r) || h.Z.applicationIdsFetching.has(r) || null != h.Z.getForSku(n) || d.yD(r), v[n] = {
+          of E.Lg6) r !== t || v.includes(n) || null == x[n] && (h.Z.applicationIdsFetched.has(r) || h.Z.applicationIdsFetching.has(r) || null != h.Z.getForSku(n) || d.yD(r), x[n] = {
           skuId: n,
           applicationId: r
         }, e = !0);

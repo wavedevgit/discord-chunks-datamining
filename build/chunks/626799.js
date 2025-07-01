@@ -21,8 +21,8 @@ var r, i = n(255367),
   E = n(558314),
   y = n(55563),
   C = n(551428),
-  v = n(73346),
-  x = n(981631),
+  x = n(73346),
+  v = n(981631),
   O = n(388032),
   j = n(228016);
 
@@ -55,8 +55,8 @@ class S extends(r = l.Component) {
       }
       return e
     }({}, n), t = t = {
-      section: null != r ? r : x.jXE.APPLICATION_EMBED,
-      object: x.qAy.CARD
+      section: null != r ? r : v.jXE.APPLICATION_EMBED,
+      object: v.qAy.CARD
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -95,11 +95,11 @@ class S extends(r = l.Component) {
     } = this.props, o = n > f.aL;
     return null == e || null == t ? r ? l() : (0, i.jsx)(f.OR, {
       isHorizontal: o
-    }) : e.productLine === x.POd.COLLECTIBLES ? (0, i.jsx)(u.Z, {
-      section: x.jXE.APPLICATION_EMBED,
+    }) : e.productLine === v.POd.COLLECTIBLES ? (0, i.jsx)(u.Z, {
+      section: v.jXE.APPLICATION_EMBED,
       children: this.renderApplicationTile(e, t)
     }) : (0, i.jsx)(u.Z, {
-      section: x.jXE.APPLICATION_EMBED,
+      section: v.jXE.APPLICATION_EMBED,
       children: (0, i.jsx)(a.rU, {
         onClick: this.handleLinkClick,
         to: this.getStoreListingLocation(),
@@ -130,7 +130,7 @@ class S extends(r = l.Component) {
         sku: e
       } = this.props;
       if (null == e) throw Error("Should not be link to ApplicationStoreListing without SKU");
-      return (0, v.ZI)(e.id, {
+      return (0, x.ZI)(e.id, {
         slug: e.slug,
         analyticsSource: this.analyticsLocation
       })
@@ -178,7 +178,7 @@ class S extends(r = l.Component) {
       });
       if (null == n) return null;
       let o = null != n && n.primarySkuId === r,
-        c = null != l && l.hasFlag(x.eHb.HIDDEN);
+        c = null != l && l.hasFlag(v.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
         className: j.tileActions,
         children: [!o || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
@@ -186,7 +186,7 @@ class S extends(r = l.Component) {
           customDisabledColor: s.zxk.Colors.PRIMARY,
           size: s.zxk.Sizes.SMALL,
           className: j.actionButton,
-          source: x.Sbl.MESSAGE_EMBED,
+          source: v.Sbl.MESSAGE_EMBED,
           onClick: this.handleActionButtonClick
         }), t && !c || e.premium ? null : (0, i.jsx)(p.Z, {
           type: p.Z.Types.EMBED,
@@ -198,7 +198,7 @@ class S extends(r = l.Component) {
   }
 }
 I(S, "defaultProps", {
-  renderFallback: x.dG4
+  renderFallback: v.dG4
 });
 let T = [y.Z, E.Z, b.Z, C.Z];
 

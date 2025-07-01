@@ -7,8 +7,8 @@ r(73800);
 var o = r(481060),
   s = r(313201),
   c = r(930180),
-  i = r(320596),
-  l = r(388032),
+  l = r(320596),
+  i = r(388032),
   a = r(891430);
 
 function d(e) {
@@ -16,11 +16,11 @@ function d(e) {
     blockedUsersCount: t,
     ignoredUsersCount: r
   } = e;
-  return t > 0 && r > 0 ? l.intl.format(l.t.Uzdyho, {
+  return t > 0 && r > 0 ? i.intl.format(i.t.Uzdyho, {
     number: t + r
-  }) : r > 0 ? l.intl.format(l.t.wvygk5, {
+  }) : r > 0 ? i.intl.format(i.t.wvygk5, {
     number: r
-  }) : l.intl.format(l.t.HviVAw, {
+  }) : i.intl.format(i.t.HviVAw, {
     number: t
   })
 }
@@ -30,9 +30,9 @@ function u(e) {
     blockedUsersCount: t,
     ignoredUsersCount: r
   } = e;
-  return t > 0 && r > 0 ? l.intl.string(l.t["P/KFX1"]) : r > 0 ? l.intl.format(l.t.Ri3o39, {
+  return t > 0 && r > 0 ? i.intl.string(i.t["P/KFX1"]) : r > 0 ? i.intl.format(i.t.Ri3o39, {
     number: r
-  }) : l.intl.format(l.t["28qZMT"], {
+  }) : i.intl.format(i.t["28qZMT"], {
     number: t
   })
 }
@@ -41,8 +41,8 @@ function b(e) {
   var t, r, {
       channel: b,
       onAccept: m,
-      transitionState: j,
-      onClose: x
+      transitionState: x,
+      onClose: j
     } = e,
     f = function(e, t) {
       if (null == e) return {};
@@ -80,7 +80,7 @@ function b(e) {
     }
     return e
   }({
-    transitionState: j,
+    transitionState: x,
     "aria-labelledby": p
   }, f), r = r = {
     size: o.CgR.SMALL,
@@ -110,7 +110,7 @@ function b(e) {
           id: r,
           speaker: o
         } = e;
-        return (0, n.jsx)(i.Ie, {
+        return (0, n.jsx)(l.Ie, {
           user: t,
           speaker: o,
           showStatus: !0,
@@ -121,17 +121,17 @@ function b(e) {
       className: a.footer,
       children: [(0, n.jsx)(o.zxk, {
         onClick: () => {
-          m(b), x()
+          m(b), j()
         },
         color: o.zxk.Colors.BRAND,
-        children: l.intl.string(l.t.mbD50N)
+        children: i.intl.string(i.t.mbD50N)
       }), (0, n.jsx)(o.zxk, {
         onClick: () => {
-          x()
+          j()
         },
         color: o.zxk.Colors.PRIMARY,
         look: o.zxk.Looks.LINK,
-        children: l.intl.string(l.t.CZGqeX)
+        children: i.intl.string(i.t.CZGqeX)
       })]
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

@@ -21,8 +21,8 @@ var r = n(255367),
   E = n(63063),
   y = n(74538),
   C = n(276444),
-  v = n(93237),
-  x = n(786397),
+  x = n(93237),
+  v = n(786397),
   O = n(474936),
   j = n(981631),
   I = n(388032),
@@ -82,7 +82,7 @@ class P extends i.Component {
         this.handleStartTrial(a, s)
       },
       color: d.zxk.Colors.BRAND
-    }, u = o.id !== a.user_id || (0, y.I5)(o) || !o.verified || (0, x.B)(a), p = this.renderExpirationDate(e, t, n);
+    }, u = o.id !== a.user_id || (0, y.I5)(o) || !o.verified || (0, v.B)(a), p = this.renderExpirationDate(e, t, n);
     return c.disabled = u, (0, r.jsxs)("div", {
       className: S.buttonContainer,
       children: [(0, r.jsx)("div", {
@@ -126,7 +126,7 @@ class P extends i.Component {
     let l = s()(r.expires_at);
     return t ? I.intl.formatToPlainString(I.t.PuSHfX, {
       date: (0, b.vc)(s()(l), "LL")
-    }) : (0, v.F6)(l.valueOf())
+    }) : (0, x.F6)(l.valueOf())
   }
   renderMedia() {
     return (0, r.jsx)("div", {
@@ -138,7 +138,7 @@ class P extends i.Component {
       trialOffer: e,
       currentUser: t,
       recipientHasNitro: n
-    } = this.props, i = (0, x.B)(e), l = t.id === e.referrer_id;
+    } = this.props, i = (0, v.B)(e), l = t.id === e.referrer_id;
     return (0, r.jsxs)("div", {
       className: a()(S.tile, S.container),
       children: [(0, r.jsx)("div", {

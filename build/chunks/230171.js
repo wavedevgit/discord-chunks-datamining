@@ -22,8 +22,8 @@ var r = n(255367),
   E = n(314897),
   y = n(699516),
   C = n(914010),
-  v = n(594174),
-  x = n(768581),
+  x = n(594174),
+  v = n(768581),
   O = n(433534),
   j = n(506895),
   I = n(758199),
@@ -46,7 +46,7 @@ function R(e) {
   } = e, {
     name: h,
     bot: b
-  } = t = (0, N.O)(t), y = null == b ? void 0 : b.id, C = (0, f.ye)(t), v = x.ZP.getApplicationIconURL({
+  } = t = (0, N.O)(t), y = null == b ? void 0 : b.id, C = (0, f.ye)(t), x = v.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: b
@@ -107,7 +107,7 @@ function R(e) {
     staticBannerSrc: O,
     videoBannerSrc: S,
     bannerAspectRatio: Z,
-    iconSrc: v,
+    iconSrc: x,
     embedUrl: n,
     info: Y,
     actions: K,
@@ -169,11 +169,11 @@ function L(e) {
   } = t, c = (0, o.e7)([C.Z], () => {
     var e;
     return null != (e = C.Z.getGuildId()) ? e : void 0
-  }, []), u = (0, h.N)(t.id), d = (0, o.Wu)([v.default, y.Z], () => {
+  }, []), u = (0, h.N)(t.id), d = (0, o.Wu)([x.default, y.Z], () => {
     let e = [];
     for (let [t, n] of u.entries()) {
       if (t >= 5) break;
-      let r = v.default.getUser(n.author_id),
+      let r = x.default.getUser(n.author_id),
         i = y.Z.isFriend(n.author_id);
       null != r && i && e.push(r)
     }

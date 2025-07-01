@@ -1,39 +1,36 @@
 /** Chunk was on 77942 **/
 n.d(e, {
-  Z: () => u
+  Z: () => s
 });
 var o = n(255367);
 n(73800);
-var i = n(120356),
-  r = n.n(i),
+var r = n(120356),
+  i = n.n(r),
   a = n(481060),
   l = n(436774),
-  c = n(118012),
-  s = n(237844);
+  c = n(237844);
 
-function u(t) {
+function s(t) {
   let {
     text: e,
-    textSize: n = c.Z.Sizes.SIZE_12,
-    textColor: i = c.Z.Colors.STANDARD,
-    className: u,
-    button: _,
-    reducedRightPadding: d = !1
+    className: n,
+    button: r,
+    reducedRightPadding: s = !1
   } = t;
   return (0, o.jsxs)("div", {
-    className: r()(d ? s.noticeWithoutRightPadding : s.noticeWithRightPadding, u),
+    className: i()(s ? c.noticeWithoutRightPadding : c.noticeWithRightPadding, n),
     children: [(0, o.jsxs)("div", {
-      className: s.noticeLeft,
+      className: c.noticeLeft,
       children: [(0, o.jsx)(a.SrA, {
         size: "md",
-        className: s.icon,
+        className: c.icon,
         color: l.JX.PREMIUM_TIER_2
-      }), (0, o.jsx)(c.Z, {
-        className: s.text,
-        size: n,
-        color: i,
+      }), (0, o.jsx)(a.Text, {
+        className: c.text,
+        variant: "text-md/normal",
+        color: "header-primary",
         children: e
       })]
-    }), _]
+    }), r]
   })
 }
