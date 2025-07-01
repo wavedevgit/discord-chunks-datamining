@@ -194,7 +194,7 @@ let eh = e => {
         src: null,
         size: m.EFr.SIZE_32,
         status: t ? es.Skl.ONLINE : void 0,
-        statusColor: "var(--background-mod-subtle)",
+        statusColor: "var(--border-subtle)",
         "aria-hidden": !0,
         imageClassName: ec.nameplatePlaceholderAvatar
       }), (0, r.jsx)("div", {
