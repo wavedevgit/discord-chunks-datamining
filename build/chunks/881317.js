@@ -18,8 +18,8 @@ var r = n(255367),
   f = n(63063),
   _ = n(981631),
   x = n(388032),
-  E = n(793613),
-  b = n(20493);
+  b = n(793613),
+  E = n(20493);
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -98,7 +98,7 @@ let j = {
       })
     };
     return (0, r.jsxs)(a.P3F, {
-      className: E.reportButton,
+      className: b.reportButton,
       onClick: () => s(),
       children: [(0, r.jsx)(a.Text, {
         variant: "text-md/medium",
@@ -134,15 +134,15 @@ let j = {
       children: (0, r.jsx)(a.$jN, {})
     }) : null != n && n.length > 0 && (0, r.jsxs)(u.ZP, {
       children: [(0, r.jsx)(u.Dx, {
-        className: b.marginBottom8,
+        className: E.marginBottom8,
         children: x.intl.string(x.t.Z11w19)
       }), (0, r.jsx)(u.DK, {
-        className: b.marginBottom8,
+        className: E.marginBottom8,
         children: x.intl.format(x.t["532l+v"], {
           supportURL: f.Z.getArticleURL(_.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, r.jsx)("div", {
-        className: E.container,
+        className: b.container,
         children: n.map(e => null == j[e] ? null : (0, r.jsx)(O, {
           title: x.intl.string(j[e]),
           menuType: e

@@ -18,8 +18,8 @@ var r = n(255367),
   f = n(639946),
   _ = n(792766),
   x = n(362762),
-  E = n(978684),
-  b = n(264229),
+  b = n(978684),
+  E = n(264229),
   v = n(929809),
   I = n(703656),
   j = n(108427),
@@ -80,7 +80,7 @@ class K extends i.PureComponent {
       let e = this.getInviteKey(),
         {
           baseCode: t
-        } = (0, b.fU)(e);
+        } = (0, E.fU)(e);
       (0, I.dL)(L.Z5c.INVITE_LOGIN(t))
     }
   }
@@ -132,7 +132,7 @@ class K extends i.PureComponent {
   track(e, t, n) {
     let {
       invite: r
-    } = this.props, i = this.getInviteKey(), l = (0, b.jX)(i), s = t ? {
+    } = this.props, i = this.getInviteKey(), l = (0, E.jX)(i), s = t ? {
       guild_id: null != r.guild ? r.guild.id : null,
       channel_id: null != r.channel ? r.channel.id : null,
       inviter_id: null != r.inviter ? r.inviter.id : null,
@@ -269,7 +269,7 @@ class K extends i.PureComponent {
         return this.renderSpinner(B.intl.string(B.t["Z+hCVV"]));
       case L.r2o.RESOLVED:
         var s;
-        if (n && (0, C.yE)(null != (s = e.flags) ? s : 0, a.$.IS_GUEST_INVITE)) return d.ZP.openApp(e.code), u.x.set(E.J, e.code), this.renderAppOpened(() => i(L.Z5c.APP));
+        if (n && (0, C.yE)(null != (s = e.flags) ? s : 0, a.$.IS_GUEST_INVITE)) return d.ZP.openApp(e.code), u.x.set(b.J, e.code), this.renderAppOpened(() => i(L.Z5c.APP));
         if (n || !M.KO) return this.renderAuthenticatedOrDownload();
         if (this.getMode() === z.LOGIN) return (0, r.jsx)(R.Z, {
           invite: e,

@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => b
+  Z: () => E
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,25 +19,25 @@ var r = n(255367),
   _ = n(726401),
   x = n(20493);
 
-function E(e) {
+function b(e) {
   n.g.location.assign(e)
 }
 
-function b(e) {
+function E(e) {
   let {
     location: t,
-    transitionTo: l = E
-  } = e, [a, b] = i.useState("submitting"), v = i.useRef(void 0);
+    transitionTo: l = b
+  } = e, [a, E] = i.useState("submitting"), v = i.useRef(void 0);
   (0, c.ZP)(() => {
     (0, p.e)("verify_email");
     let e = (0, u.Z)(t);
-    if (null == e) return void b("failed");
+    if (null == e) return void E("failed");
     (async () => {
       try {
         let t = await o.Z.verify(e);
-        b("succeeded"), v.current = t
+        E("succeeded"), v.current = t
       } catch (e) {
-        b("failed")
+        E("failed")
       }
     })()
   });

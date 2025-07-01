@@ -18,8 +18,8 @@ var r = n(255367),
   f = n(306453),
   _ = n(929809),
   x = n(108427),
-  E = n(390885),
-  b = n(314897),
+  b = n(390885),
+  E = n(314897),
   v = n(896797),
   I = n(954824),
   j = n(781428),
@@ -135,7 +135,7 @@ class L extends i.PureComponent {
           transitionTo: i,
           location: l,
           onRegister: () => {
-            (0, _.c)(C.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE), E.Z.flowStart(A.MK.ORGANIC_GUILD_TEMPLATES, A.EW.NUF_STARTED)
+            (0, _.c)(C.M5.ORGANIC_REGISTERED_GUILD_TEMPLATE), b.Z.flowStart(A.MK.ORGANIC_GUILD_TEMPLATES, A.EW.NUF_STARTED)
           }
         });
       case N.Rj.EXPIRED:
@@ -159,7 +159,7 @@ function D(e) {
   let t = {
     guildTemplate: (0, c.e7)([h.Z], () => h.Z.getGuildTemplate(e.code)),
     nativeAppState: (0, c.e7)([d.Z], () => d.Z.getState(e.code)),
-    authenticated: (0, c.e7)([b.default], () => b.default.isAuthenticated()),
+    authenticated: (0, c.e7)([E.default], () => E.default.isAuthenticated()),
     defaultRoute: (0, c.e7)([v.Z], () => v.Z.defaultRoute)
   };
   return (0, r.jsx)(L, function(e) {
@@ -183,7 +183,7 @@ function k(e) {
     form: n,
     handleSubmit: i
   } = (0, p.Z)(t, !1);
-  E.Z.flowStep(A.MK.ORGANIC_GUILD_TEMPLATES, A.X2.GUILD_CREATE);
+  b.Z.flowStep(A.MK.ORGANIC_GUILD_TEMPLATES, A.X2.GUILD_CREATE);
   let l = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {
       className: Z.header,

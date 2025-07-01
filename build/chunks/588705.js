@@ -71,7 +71,7 @@ let S = () => (0, i.jsxs)(l.Fragment, {
         error: A,
         flatActivityCount: T = !1,
         isRegister: L = !1,
-        inUnclaimedFlowExperiment: P = !1
+        inUnclaimedFlow: P = !1
       } = e,
       {
         currentUser: b

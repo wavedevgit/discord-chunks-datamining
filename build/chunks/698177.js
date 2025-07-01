@@ -18,14 +18,14 @@ var r = n(255367),
   f = n(893354),
   _ = n(20493);
 let x = () => {
-  let [e, t] = i.useState(""), [l, x] = i.useState(""), [E, b] = i.useState(!1), [v, I] = i.useState(!1), [j, O] = i.useState(null), [S, y] = i.useState(null), N = (0, a.e7)([d.Z], () => d.Z.getCountryCode()), C = N.code.split(" ")[0], A = async () => {
+  let [e, t] = i.useState(""), [l, x] = i.useState(""), [b, E] = i.useState(!1), [v, I] = i.useState(!1), [j, O] = i.useState(null), [S, y] = i.useState(null), N = (0, a.e7)([d.Z], () => d.Z.getCountryCode()), C = N.code.split(" ")[0], A = async () => {
     try {
       await c.Z.resendCode(e)
     } catch (e) {
       y(e.body.message)
     }
   }, T = async () => {
-    b(!0);
+    E(!0);
     try {
       let {
         token: t
@@ -34,7 +34,7 @@ let x = () => {
     } catch (e) {
       e.body.message ? (O(null), y(e.body.message)) : (O(e.body.phone), y(e.body.code))
     } finally {
-      b(!1)
+      E(!1)
     }
   }, P = (0, r.jsxs)(p.ZP, {
     children: [(0, r.jsx)(p.Ee, {
@@ -81,7 +81,7 @@ let x = () => {
       }), (0, r.jsx)(p.zx, {
         className: _.marginTop20,
         onClick: T,
-        submitting: E,
+        submitting: b,
         children: m.intl.string(m.t.i4jeWV)
       })]
     })]

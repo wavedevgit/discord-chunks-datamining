@@ -1,70 +1,39 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => p
+  Z: () => d
 });
 var r = n(255367);
 n(73800);
 var i = n(481060),
   l = n(388905),
-  s = n(703656),
-  a = n(671533),
-  o = n(63063),
-  c = n(981631),
-  u = n(388032),
-  d = n(963650);
-let h = () => (0, s.uL)(c.Z5c.LOGIN, {
-    source: "age_gate_underage"
-  }),
-  p = e => {
-    let {
-      authBoxClassName: t,
-      underageMessage: s,
-      inUnclaimedFlowExperiment: p
-    } = e;
-    return p ? (0, r.jsx)(l.ZP, {
-      children: (0, r.jsxs)("div", {
-        className: d.contentContainer,
-        children: [(0, r.jsx)(l.Dx, {
-          className: d.title,
-          children: u.intl.string(u.t.nCB6GR)
-        }), (0, r.jsx)(l.DK, {
-          className: d.subtitle,
-          children: u.intl.format(u.t.KQgoxM, {
-            underageMessage: null != s ? s : u.intl.string(u.t.WqEH4O)
-          })
-        }), (0, r.jsxs)(i.zxk, {
-          className: d.button,
-          innerClassName: d.buttonWithIcon,
-          onClick: () => window.open(o.Z.getArticleURL(c.BhN.AGE_GATE), "_blank"),
-          children: [(0, r.jsx)("div", {
-            children: u.intl.string(u.t.hvVgAQ)
-          }), (0, r.jsx)(a.Z, {
-            height: 20,
-            width: 20,
-            direction: a.Z.Directions.UP,
-            className: d.externalArrow
-          })]
-        })]
+  s = n(671533),
+  a = n(63063),
+  o = n(981631),
+  c = n(388032),
+  u = n(963650);
+let d = () => (0, r.jsx)(l.ZP, {
+  children: (0, r.jsxs)("div", {
+    className: u.contentContainer,
+    children: [(0, r.jsx)(l.Dx, {
+      className: u.title,
+      children: c.intl.string(c.t.nCB6GR)
+    }), (0, r.jsx)(l.DK, {
+      className: u.subtitle,
+      children: c.intl.format(c.t.KQgoxM, {
+        underageMessage: c.intl.string(c.t.WqEH4O)
       })
-    }) : (0, r.jsxs)(l.ZP, {
-      className: t,
-      children: [(0, r.jsx)("img", {
-        alt: "",
-        src: n(231443),
-        className: d.img
-      }), (0, r.jsx)(l.Dx, {
-        className: d.title,
-        children: u.intl.string(u.t.nCB6GR)
-      }), (0, r.jsx)(l.DK, {
-        className: d.subtitle,
-        children: u.intl.format(u.t.b0QzXV, {
-          underageMessage: null != s ? s : u.intl.string(u.t.WqEH4O),
-          helpURL: o.Z.getArticleURL(c.BhN.AGE_GATE)
-        })
-      }), (0, r.jsx)(i.zxk, {
-        fullWidth: !0,
-        onClick: h,
-        children: u.intl.string(u.t.szzQ6O)
+    }), (0, r.jsxs)(i.zxk, {
+      className: u.button,
+      innerClassName: u.buttonWithIcon,
+      onClick: () => window.open(a.Z.getArticleURL(o.BhN.AGE_GATE), "_blank"),
+      children: [(0, r.jsx)("div", {
+        children: c.intl.string(c.t.hvVgAQ)
+      }), (0, r.jsx)(s.Z, {
+        height: 20,
+        width: 20,
+        direction: s.Z.Directions.UP,
+        className: u.externalArrow
       })]
-    })
-  }
+    })]
+  })
+})

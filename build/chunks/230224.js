@@ -7,7 +7,7 @@ n.d(t, {
   WT: () => I,
   X7: () => j,
   jq: () => T,
-  mx: () => E
+  mx: () => b
 }), n(415506);
 var r = n(255367),
   i = n(73800),
@@ -25,8 +25,8 @@ var r = n(255367),
   f = n(888592),
   _ = n(388032),
   x = n(440617);
-let E = 100,
-  b = e => {
+let b = 100,
+  E = e => {
     var t, n;
     let r = {
       onlineCount: null != (t = e.approximate_presence_count) ? t : 0,
@@ -42,8 +42,8 @@ let E = 100,
   j = e => null == e.channel && null == e.guild && null != e.inviter,
   O = e => {
     var t;
-    let n = b(e);
-    return (null != (t = null == n ? void 0 : n.memberCount) ? t : 0) > E
+    let n = E(e);
+    return (null != (t = null == n ? void 0 : n.memberCount) ? t : 0) > b
   },
   S = e => e.state === m.r2o.ACCEPTED,
   y = e => {
@@ -81,7 +81,7 @@ function A(e) {
     invite: n,
     textClassName: i,
     className: l
-  } = e, a = b(n);
+  } = e, a = E(n);
   return null == a || N(n) || (null == n || null == (t = n.guild) ? void 0 : t.id) === f.fQ ? null : (0, r.jsx)(o.EJ, {
     className: s()(x.activityCount, l),
     online: a.onlineCount,

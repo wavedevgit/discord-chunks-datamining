@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => E
+  Z: () => b
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -19,10 +19,10 @@ var r = n(255367),
   _ = n(388032),
   x = n(20493);
 l.ZP.initialize();
-let E = e => {
+let b = e => {
   let {
     location: t
-  } = e, n = (0, l.e7)([m.default], () => m.default.isAuthenticated()), E = (0, l.e7)([d.Z], () => d.Z.hasLoadedExperiments), b = (0, p.oK)("RSL - Landing Page"), [v, I] = i.useState(!1), [j, O] = i.useState(_.intl.string(_.t["9exy+f"])), [S, y] = i.useState(!0), N = e => {
+  } = e, n = (0, l.e7)([m.default], () => m.default.isAuthenticated()), b = (0, l.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = (0, p.oK)("RSL - Landing Page"), [v, I] = i.useState(!1), [j, O] = i.useState(_.intl.string(_.t["9exy+f"])), [S, y] = i.useState(!0), N = e => {
     switch (e) {
       case f.evJ.INVALID_FORM_BODY:
       case f.evJ.DSA_RSL_REPORT_NOT_FOUND:
@@ -46,8 +46,8 @@ let E = e => {
       withAnalyticsToken: !0
     }).then(() => y(!1)).catch(() => y(!1))) : y(!1)
   }, [n]), i.useEffect(() => {
-    E || b || a.Z.getExperiments()
-  }, [E, b]), i.useEffect(() => {
+    b || E || a.Z.getExperiments()
+  }, [b, E]), i.useEffect(() => {
     let e = async e => {
       var t, n;
       try {
@@ -60,7 +60,7 @@ let E = e => {
       }
     };
     I(!0), e((0, c.Z)(t)), (0, g.e)("report_second_look")
-  }, [t]), b && !S && (0, r.jsxs)(u.ZP, {
+  }, [t]), E && !S && (0, r.jsxs)(u.ZP, {
     children: [(0, r.jsx)(u.Dx, {
       className: x.marginBottom8,
       children: j

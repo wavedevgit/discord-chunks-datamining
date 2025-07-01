@@ -18,8 +18,8 @@ var r, i = n(255367),
   f = n(579806),
   _ = n(743142),
   x = n(254942),
-  E = n(388905),
-  b = n(379760),
+  b = n(388905),
+  E = n(379760),
   v = n(600164),
   I = n(100159),
   j = n(473855),
@@ -85,7 +85,7 @@ function X(e, t) {
 }
 
 function Q() {
-  return (0, i.jsx)(E.ZP, {
+  return (0, i.jsx)(b.ZP, {
     children: (0, i.jsx)(h.$jN, {})
   })
 }
@@ -215,12 +215,12 @@ class $ extends(r = l.PureComponent) {
     let {
       authBoxClassName: e
     } = this.props;
-    return (0, i.jsxs)(E.ZP, {
+    return (0, i.jsxs)(b.ZP, {
       className: e,
-      children: [(0, i.jsx)(E.Hh, {}), (0, i.jsx)(E.Dx, {
+      children: [(0, i.jsx)(b.Hh, {}), (0, i.jsx)(b.Dx, {
         className: q.marginBottom8,
         children: H.intl.string(H.t.S6RMND)
-      }), (0, i.jsx)(E.DK, {
+      }), (0, i.jsx)(b.DK, {
         children: H.intl.string(H.t.YZiJbm)
       })]
     })
@@ -231,30 +231,30 @@ class $ extends(r = l.PureComponent) {
       transitionTo: t,
       authBoxClassName: n
     } = this.props;
-    return null == e ? null : (0, i.jsxs)(E.ZP, {
+    return null == e ? null : (0, i.jsxs)(b.ZP, {
       className: n,
-      children: [(0, i.jsx)(E.qE, {
+      children: [(0, i.jsx)(b.qE, {
         src: e.getAvatarURL(void 0, 100),
         size: h.EFr.DEPRECATED_SIZE_100,
         className: q.marginBottom20
-      }), (0, i.jsx)(E.Dx, {
+      }), (0, i.jsx)(b.Dx, {
         className: q.marginBottom8,
         children: H.intl.format(H.t.ot19ho, {
           name: e.toString()
         })
-      }), (0, i.jsx)(E.DK, {
+      }), (0, i.jsx)(b.DK, {
         className: q.marginBottom40,
         children: H.intl.string(H.t["2xkqzc"])
-      }), (0, i.jsxs)(E.gO, {
-        children: [(0, i.jsx)(E.zx, {
+      }), (0, i.jsxs)(b.gO, {
+        children: [(0, i.jsx)(b.zx, {
           onClick: () => t(V.Z5c.APP),
           className: q.marginBottom8,
           children: H.intl.format(H.t.fohtv7, {
             name: e.toString()
           })
-        }), (0, i.jsx)(E.zx, {
-          look: E.zx.Looks.LINK,
-          color: E.zx.Colors.LINK,
+        }), (0, i.jsx)(b.zx, {
+          look: b.zx.Looks.LINK,
+          color: b.zx.Colors.LINK,
           onClick: this.handleReset,
           children: H.intl.string(H.t.nO564e)
         })]
@@ -265,21 +265,21 @@ class $ extends(r = l.PureComponent) {
     let {
       authBoxClassName: e
     } = this.props, t = this.props.loginStatus === V.u34.ACCOUNT_DISABLED, n = t ? H.intl.string(H.t["j3rC+f"]) : H.intl.string(H.t.ZFWofn), r = t ? H.intl.string(H.t["6eNTWV"]) : H.intl.string(H.t.pCBti4);
-    return (0, i.jsx)(E.ZP, {
+    return (0, i.jsx)(b.ZP, {
       tag: "form",
       onSubmit: this.handleReset,
       className: e,
       children: (0, i.jsxs)(h.y5t, {
-        component: (0, i.jsx)(E.Dx, {
+        component: (0, i.jsx)(b.Dx, {
           className: q.marginBottom8,
           children: n
         }),
-        children: [(0, i.jsx)(E.DK, {
+        children: [(0, i.jsx)(b.DK, {
           className: q.marginBottom20,
           children: r
-        }), (0, i.jsxs)(E.gO, {
-          children: [(0, i.jsx)(E.zx, {
-            color: E.zx.Colors.BRAND,
+        }), (0, i.jsxs)(b.gO, {
+          children: [(0, i.jsx)(b.zx, {
+            color: b.zx.Colors.BRAND,
             type: "submit",
             children: H.intl.string(H.t.JhDw5u)
           }), (0, i.jsx)("div", {
@@ -297,9 +297,9 @@ class $ extends(r = l.PureComponent) {
       authBoxClassName: e,
       country: t
     } = this.props;
-    return (0, i.jsxs)(E.ZP, {
+    return (0, i.jsxs)(b.ZP, {
       className: e,
-      children: [(0, i.jsx)(F.R, {}), (0, i.jsxs)(E.gO, {
+      children: [(0, i.jsx)(F.R, {}), (0, i.jsxs)(b.gO, {
         className: q.marginTop20,
         children: [(0, i.jsx)(T.Z, {
           className: q.marginBottom20,
@@ -318,7 +318,7 @@ class $ extends(r = l.PureComponent) {
           value: this.state.login,
           autoFocus: !0,
           required: !0
-        }), (0, i.jsx)(E.II, {
+        }), (0, i.jsx)(b.II, {
           className: q.marginBottom20,
           label: H.intl.string(H.t["CIGa+/"]),
           onChange: e => this.setState({
@@ -330,21 +330,21 @@ class $ extends(r = l.PureComponent) {
           spellCheck: "false",
           value: this.state.password,
           required: !0
-        }), (0, i.jsx)(E.zx, {
+        }), (0, i.jsx)(b.zx, {
           className: q.marginBottom8,
           type: "submit",
           disabled: !0,
           children: H.intl.string(H.t.dKhVQE)
-        }), (0, i.jsx)(E.zx, {
+        }), (0, i.jsx)(b.zx, {
           disabled: !0,
-          look: E.zx.Looks.LINK,
-          color: E.zx.Colors.LINK,
+          look: b.zx.Looks.LINK,
+          color: b.zx.Colors.LINK,
           children: H.intl.string(H.t.wWIufn)
-        }), (0, i.jsx)(E.zx, {
+        }), (0, i.jsx)(b.zx, {
           disabled: !0,
           className: q.marginTop4,
-          look: E.zx.Looks.LINK,
-          color: E.zx.Colors.LINK,
+          look: b.zx.Looks.LINK,
+          color: b.zx.Colors.LINK,
           children: H.intl.string(H.t.tmE73t)
         })]
       })]
@@ -366,10 +366,10 @@ class $ extends(r = l.PureComponent) {
       giftCode: l
     }) : (0, i.jsxs)("div", {
       className: W.header,
-      children: [(0, i.jsx)(E.Dx, {
+      children: [(0, i.jsx)(b.Dx, {
         className: q.marginBottom8,
         children: H.intl.string(H.t["7fNJgI"])
-      }, "title"), !1 === (0, B.isAndroidWeb)() ? (0, i.jsx)(E.DK, {
+      }, "title"), !1 === (0, B.isAndroidWeb)() ? (0, i.jsx)(b.DK, {
         children: H.intl.string(H.t.euS7r6)
       }, "subtitle") : null]
     }) : (0, i.jsx)(F.Z, {
@@ -379,14 +379,14 @@ class $ extends(r = l.PureComponent) {
       align: v.Z.Align.CENTER,
       children: [(0, i.jsxs)("div", {
         className: W.mainLoginContainer,
-        children: [this.canShowChooseAccount && this.state.dismissedChooseAccount && (0, i.jsx)(E.zx, {
+        children: [this.canShowChooseAccount && this.state.dismissedChooseAccount && (0, i.jsx)(b.zx, {
           onClick: () => {
             this.setState(e => X(J({}, e), {
               dismissedChooseAccount: !1
             }))
           },
-          look: E.zx.Looks.LINK,
-          color: E.zx.Colors.PRIMARY,
+          look: b.zx.Looks.LINK,
+          color: b.zx.Colors.PRIMARY,
           className: W.goBackButton,
           children: (0, i.jsxs)("div", {
             className: W.content,
@@ -400,7 +400,7 @@ class $ extends(r = l.PureComponent) {
             })]
           })
         }), n, (0, i.jsx)(h.y5t, {
-          children: (0, i.jsxs)(E.gO, {
+          children: (0, i.jsxs)(b.gO, {
             className: q.marginTop20,
             children: [(0, i.jsx)(T.Z, {
               alpha2: a.alpha2,
@@ -420,7 +420,7 @@ class $ extends(r = l.PureComponent) {
               value: this.state.login,
               autoFocus: !d && !c && !u,
               required: !0
-            }), (0, i.jsx)(E.II, {
+            }), (0, i.jsx)(b.II, {
               label: H.intl.string(H.t["CIGa+/"]),
               error: this.renderError("password"),
               onChange: e => this.setState({
@@ -434,16 +434,16 @@ class $ extends(r = l.PureComponent) {
               autoFocus: d && !c && !u,
               value: this.state.password,
               required: !0
-            }), (0, i.jsx)(E.zx, {
+            }), (0, i.jsx)(b.zx, {
               onClick: this.handleForgotPassword,
-              look: E.zx.Looks.LINK,
-              color: E.zx.Colors.LINK,
+              look: b.zx.Looks.LINK,
+              color: b.zx.Colors.LINK,
               className: o()(q.marginBottom20, q.marginTop4),
               children: H.intl.string(H.t.wWIufn)
-            }), (0, i.jsx)(E.zx, {
+            }), (0, i.jsx)(b.zx, {
               type: "submit",
               submitting: s === V.u34.LOGGING_IN,
-              color: p ? E.zx.Colors.GREEN : E.zx.Colors.BRAND,
+              color: p ? b.zx.Colors.GREEN : b.zx.Colors.BRAND,
               className: q.marginBottom8,
               children: p ? H.intl.string(H.t.wvVThI) : H.intl.string(H.t.dKhVQE)
             }), (0, i.jsxs)("div", {
@@ -451,10 +451,10 @@ class $ extends(r = l.PureComponent) {
               children: [(0, i.jsx)("span", {
                 className: W.needAccount,
                 children: H.intl.string(H.t.tmE73t)
-              }), (0, i.jsx)(E.zx, {
+              }), (0, i.jsx)(b.zx, {
                 onClick: this.handleGotoRegister,
-                look: E.zx.Looks.LINK,
-                color: E.zx.Colors.LINK,
+                look: b.zx.Looks.LINK,
+                color: b.zx.Colors.LINK,
                 className: W.smallRegisterLink,
                 children: H.intl.string(H.t.pV8xeX)
               })]
@@ -476,7 +476,7 @@ class $ extends(r = l.PureComponent) {
     } = this.props;
     return (0, i.jsxs)("div", {
       className: W.__invalid_pageContainer,
-      children: [(0, i.jsx)(E.ZP, {
+      children: [(0, i.jsx)(b.ZP, {
         onSubmit: this.handleLogin,
         tag: "form",
         className: e,
@@ -500,7 +500,7 @@ class $ extends(r = l.PureComponent) {
       ticket: this.props.mfaTicket,
       methods: this.props.mfaMethods
     };
-    return (0, i.jsx)(E.ZP, {
+    return (0, i.jsx)(b.ZP, {
       style: {
         padding: 0
       },
@@ -522,10 +522,10 @@ class $ extends(r = l.PureComponent) {
     } = this.props, {
       phoneVerifyError: t
     } = this.state;
-    return (0, i.jsx)(E.ZP, {
+    return (0, i.jsx)(b.ZP, {
       tag: "form",
       className: e,
-      children: (0, i.jsx)(b.Z, {
+      children: (0, i.jsx)(E.Z, {
         title: H.intl.string(H.t.w55Ocn),
         subtitle: H.intl.format(H.t.CfRZBg, {
           onResendClick: this.handleResendCode
@@ -542,10 +542,10 @@ class $ extends(r = l.PureComponent) {
     } = this.props, {
       phoneVerifyError: t
     } = this.state;
-    return (0, i.jsx)(E.ZP, {
+    return (0, i.jsx)(b.ZP, {
       tag: "form",
       className: e,
-      children: (0, i.jsx)(b.Z, {
+      children: (0, i.jsx)(E.Z, {
         title: H.intl.string(H.t["+xqy3d"]),
         subtitle: H.intl.format(H.t.ef4uZ2, {
           onResendClick: this.handleResendCode
@@ -724,7 +724,7 @@ class $ extends(r = l.PureComponent) {
         (0, h.h7j)(e => (0, i.jsx)(h.ConfirmModal, X(J({
           header: H.intl.string(H.t.f5Pi7O),
           confirmText: H.intl.string(H.t.BddRzc),
-          confirmButtonColor: E.zx.Colors.BRAND,
+          confirmButtonColor: b.zx.Colors.BRAND,
           className: u.tq ? W.mobile : ""
         }, e), {
           children: (0, i.jsx)(h.Text, {

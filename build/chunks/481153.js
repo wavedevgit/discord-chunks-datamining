@@ -18,8 +18,8 @@ var r = n(255367),
   f = n(55563),
   _ = n(296848),
   x = n(981631),
-  E = n(474936),
-  b = n(388032),
+  b = n(474936),
+  E = n(388032),
   v = n(378027),
   I = n(893354),
   j = n(20493);
@@ -43,10 +43,10 @@ let O = a.ZP.connectStores([f.Z, c.Z, m.Z, g.default], e => {
     sku: a,
     application: c,
     subscriptionPlan: g
-  } = e, m = null == l ? b.intl.string(b.t.lTGZAg) : b.intl.formatToPlainString(b.t.TjWdPT, {
+  } = e, m = null == l ? E.intl.string(E.t.lTGZAg) : E.intl.formatToPlainString(E.t.TjWdPT, {
     username: l.username
   }), f = a.name;
-  return null != g && (f = b.intl.formatToPlainString(g.interval === E.rV.MONTH ? b.t.CTpcCQ : b.t.rgPWGx, {
+  return null != g && (f = E.intl.formatToPlainString(g.interval === b.rV.MONTH ? E.t.CTpcCQ : E.t.rgPWGx, {
     skuName: a.name,
     intervalCount: g.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
@@ -60,7 +60,7 @@ let O = a.ZP.connectStores([f.Z, c.Z, m.Z, g.default], e => {
       className: j.marginBottom20
     }), null != t ? (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: b.intl.string(b.t.mDFGFh)
+        children: E.intl.string(E.t.mDFGFh)
       }), (0, r.jsx)(u.Dx, {
         children: t
       })]

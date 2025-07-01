@@ -67,8 +67,8 @@ function _(e) {
   } = e;
   if (null == t) return null;
   let x = null != t.guild ? new a.ZP(t.guild) : null,
-    E = null != t.channel ? (0, s.jD)(t.channel) : null,
-    b = null != t.target_application ? new l.ZP(t.target_application) : null,
+    b = null != t.channel ? (0, s.jD)(t.channel) : null,
+    E = null != t.target_application ? new l.ZP(t.target_application) : null,
     v = _ || null == t.inviter ? null : new o.Z(t.inviter),
     I = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != x && x.hasFeature(d.oNc.COMMUNITY)) && null != v && (0, c.WT)(t),
     j = f(t),
@@ -76,18 +76,18 @@ function _(e) {
       invite: t,
       user: v,
       guild: x,
-      channel: E,
-      application: b
+      channel: b,
+      application: E
     };
   return (0, c.JI)(t) ? (0, r.jsx)(u.Z, {
     invite: t,
-    channel: E,
+    channel: b,
     isSubmitting: j,
     onAcceptInvite: n
   }) : (0, r.jsxs)("div", {
     className: p.container,
     children: [(0, r.jsx)(c.GB, {
-      application: b,
+      application: E,
       guild: x,
       user: I || (0, c.X7)(t) ? v : null
     }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, m(g({}, O), {

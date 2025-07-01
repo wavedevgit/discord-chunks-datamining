@@ -34,8 +34,8 @@ function x(e) {
       }
     }, [e.transitionTo]),
     {
-      isAuthenticated: E,
-      loginStatus: b
+      isAuthenticated: b,
+      loginStatus: E
     } = (0, a.cj)([g.default], () => ({
       isAuthenticated: g.default.isAuthenticated(),
       loginStatus: g.default.getLoginStatus()
@@ -44,7 +44,7 @@ function x(e) {
       location: v,
       redirectTo: I
     } = e,
-    [j, O] = i.useState(E);
+    [j, O] = i.useState(b);
 
   function S(e) {
     let {
@@ -79,7 +79,7 @@ function x(e) {
         })
       }
     }
-  }), j || b === f.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
+  }), j || E === f.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

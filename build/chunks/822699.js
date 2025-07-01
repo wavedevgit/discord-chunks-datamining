@@ -18,8 +18,8 @@ var r = n(255367),
   f = n(267394),
   _ = n(761305),
   x = n(698177),
-  E = n(353926),
-  b = n(409059),
+  b = n(353926),
+  E = n(409059),
   v = n(962220),
   I = n(637776),
   j = n(264229),
@@ -105,8 +105,8 @@ let el = (0, L.Z)(K.Z),
   ef = (0, L.Z)(J.Z),
   e_ = (0, L.Z)(G.Z),
   ex = (0, L.Z)(_.Z),
-  eE = (0, L.Z)(I.Z),
-  eb = (0, L.Z)(B.Z),
+  eb = (0, L.Z)(I.Z),
+  eE = (0, L.Z)(B.Z),
   ev = (0, L.Z)(W.Z),
   eI = (0, L.Z)(X.Z),
   ej = (0, L.Z)(Y.Z),
@@ -290,7 +290,7 @@ class eS extends i.PureComponent {
         render: e => (0, r.jsx)(eg, er({}, e))
       }), (0, r.jsx)(m.Z, {
         path: $.Z5c.VERIFY_HUB_EMAIL,
-        render: e => (0, r.jsx)(eE, er({}, e))
+        render: e => (0, r.jsx)(eb, er({}, e))
       }), (0, r.jsx)(m.Z, {
         path: $.Z5c.VERIFY_REQUEST,
         render: e => (0, r.jsx)(em, er({}, e))
@@ -328,7 +328,7 @@ class eS extends i.PureComponent {
         path: $.Z5c.CHANNEL(S.Hw.guildId(), S.Hw.channelId({
           optional: !0
         }), ":messageId?"),
-        render: e => (0, r.jsx)(eb, er({}, e))
+        render: e => (0, r.jsx)(eE, er({}, e))
       }), (0, r.jsx)(m.Z, {
         path: $.Z5c.REPORT,
         render: e => (0, r.jsx)(eI, er({}, e))
@@ -349,7 +349,7 @@ class eS extends i.PureComponent {
     })
   }
 }
-let ey = o.ZP.connectStores([y.default, C.Z, N.Z, E.Z, b.Z], e => {
+let ey = o.ZP.connectStores([y.default, C.Z, N.Z, b.Z, E.Z], e => {
   var t, n, r;
   let {
     match: i,
@@ -362,7 +362,7 @@ let ey = o.ZP.connectStores([y.default, C.Z, N.Z, E.Z, b.Z], e => {
     guildTemplateCode: u,
     gift: null != c ? N.Z.get(c) : null,
     invite: null != o ? C.Z.getInvite(o) : null,
-    guildTemplate: null != u ? b.Z.getGuildTemplate(u) : null,
-    hasLoadedExperiments: E.Z.hasLoadedExperiments
+    guildTemplate: null != u ? E.Z.getGuildTemplate(u) : null,
+    hasLoadedExperiments: b.Z.hasLoadedExperiments
   }
 })(eS)

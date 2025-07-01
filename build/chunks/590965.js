@@ -18,7 +18,7 @@ var i, l = n(442837),
   _ = n(981631),
   x = n(176505);
 
-function E(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,14 +27,14 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -63,7 +63,7 @@ class y extends(i = l.ZP.Store) {
     }
   }
 }
-E(y, "displayName", "InviteModalStore");
+b(y, "displayName", "InviteModalStore");
 let N = new y(s.Z, {
   OVERLAY_INITIALIZE: S,
   CONNECTION_OPEN: S,
@@ -130,7 +130,7 @@ let N = new y(s.Z, {
         type: c,
         is_nickname_changeable: p
       };
-      return null != d && (g.channel = b({}, d)), null != h && (g.guild = new u.ZP(h)), null != e.inviter && (g.inviter = b({}, e.inviter)), g
+      return null != d && (g.channel = E({}, d)), null != h && (g.guild = new u.ZP(h)), null != e.inviter && (g.inviter = E({}, e.inviter)), g
     }(t);
     O.push([n, e.resolve])
   },

@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => b
+  Z: () => E
 }), n(953529);
 var r = n(255367),
   i = n(73800),
@@ -19,7 +19,7 @@ var r = n(255367),
   _ = n(388032),
   x = n(20493);
 
-function E(e, t, n) {
+function b(e, t, n) {
   e.preventDefault(), p.default.track(m.rMx.GUILD_TEMPLATE_APP_OPENED, {
     guild_template_code: t,
     guild_template_name: n.name,
@@ -31,7 +31,7 @@ function E(e, t, n) {
   c.Z.openMobileApp(n.state === f.Rj.RESOLVED ? t : void 0, i)
 }
 
-function b(e) {
+function E(e) {
   let {
     code: t
   } = e, n = (0, l.e7)([o.Z], () => o.Z.getGuildTemplate(t));
@@ -44,14 +44,14 @@ function b(e) {
       guildTemplate: n,
       tall: !0
     }), (0, r.jsx)(a.zx, {
-      onClick: e => E(e, t, n),
+      onClick: e => b(e, t, n),
       className: x.marginTop20,
       children: _.intl.string(_.t["a3Gl+f"])
     })]
   }) : (0, r.jsx)(g.Z, {
     text: _.intl.string(_.t["e/rZ2t"]),
     buttonCta: _.intl.string(_.t.HAvYn5),
-    onClick: e => E(e, t, n)
+    onClick: e => b(e, t, n)
   })
 }
 l.ZP.initialize()

@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => E
+  Z: () => b
 }), n(35282), n(388685);
 var r, i = n(255367),
   l = n(73800),
@@ -128,6 +128,6 @@ class x extends(r = l.PureComponent) {
 _(x, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let E = a.ZP.connectStores([d.Z], () => ({
+let b = a.ZP.connectStores([d.Z], () => ({
   defaultRoute: d.Z.defaultRoute
 }))(x)

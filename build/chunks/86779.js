@@ -18,14 +18,14 @@ var r = n(255367),
   f = n(970648),
   _ = n(981631),
   x = n(388032),
-  E = n(493148);
-let b = "mweb_handoff_nonce",
+  b = n(493148);
+let E = "mweb_handoff_nonce",
   v = "mweb_handoff_nonce_expiration",
   I = +m.Z.Millis.MINUTE,
   j = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
   O = new Set(["deep_link_failed"]),
   S = () => {
-    c.K.remove(b), c.K.remove(v)
+    c.K.remove(E), c.K.remove(v)
   },
   y = () => {
     let e = (0, a.e7)([p.default], () => p.default.getFingerprint()),
@@ -48,7 +48,7 @@ let b = "mweb_handoff_nonce",
       }, {
         fingerprint: y
       })
-    }, [C, y]), T = c.K.get(b);
+    }, [C, y]), T = c.K.get(E);
     if ("null" === n && null === N && A("deep_link_failed"), null != n && "null" !== n && null == T && null === N && A("nonce_missing"), i.useEffect(() => {
         if (null != T) {
           let e = c.K.get(v);
@@ -81,14 +81,14 @@ let b = "mweb_handoff_nonce",
       children: [x.intl.string(x.t.uJ1Jsb), (0, r.jsx)("br", {}), x.intl.string(x.t.GHVWAg)]
     }) : O.has(N) ? x.intl.string(x.t.EPt55u) : j.has(N) ? x.intl.string(x.t.g87kTk) : void 0;
     return null != N && O.has(N) ? (0, r.jsx)("div", {
-      className: E.errorContainer,
+      className: b.errorContainer,
       children: (0, r.jsx)(u.Text, {
         color: "interactive-normal",
         variant: "text-sm/semibold",
         children: P
       })
     }) : (0, r.jsxs)("div", {
-      className: E.container,
+      className: b.container,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-sm/semibold",
         children: P
@@ -96,7 +96,7 @@ let b = "mweb_handoff_nonce",
         color: u.zxk.Colors.BRAND_INVERTED,
         onClick: () => {
           let e = f.Z.generateNonce();
-          c.K.set(b, e), c.K.set(v, Date.now() + I);
+          c.K.set(E, e), c.K.set(v, Date.now() + I);
           let t = new URL(_.x0X),
             n = new URLSearchParams(window.location.search);
           n.delete("fingerprint"), n.delete("handoff_token");
@@ -111,7 +111,7 @@ let b = "mweb_handoff_nonce",
           }), window.location.href = t.toString()
         },
         children: (0, r.jsx)(u.Text, {
-          className: E.buttonText,
+          className: b.buttonText,
           variant: "text-sm/semibold",
           children: x.intl.string(x.t["NcC75+"])
         })

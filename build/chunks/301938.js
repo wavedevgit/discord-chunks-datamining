@@ -23,8 +23,8 @@ function x(e) {
     setOriginalEmail: t,
     setSlide: l,
     ready: x,
-    token: E
-  } = e, [b, v] = i.useState(!1), [I, j] = i.useState(null), [O, S] = i.useState(null), [y, N] = i.useState(""), C = i.useRef(null);
+    token: b
+  } = e, [E, v] = i.useState(!1), [I, j] = i.useState(null), [O, S] = i.useState(null), [y, N] = i.useState(""), C = i.useRef(null);
   return i.useEffect(() => {
     if (x) {
       var e;
@@ -57,7 +57,7 @@ function x(e) {
       }), (0, r.jsx)(u.zx, {
         className: _.marginTop8,
         onClick: () => {
-          if (!b) {
+          if (!E) {
             if (0 === y.length) {
               j(m.intl.string(m.t.R98xDw)), d.S.dispatch(g.CkL.WAVE_EMPHASIZE);
               return
@@ -65,7 +65,7 @@ function x(e) {
             return null != O && S(null), null != I && j(null), t(""), v(!0), h.Z.post({
               url: g.ANM.ACCOUNT_REVERT,
               body: {
-                token: E,
+                token: b,
                 password: y
               },
               trackedActionData: {
@@ -106,8 +106,8 @@ function x(e) {
             })
           }
         },
-        submitting: b,
-        disabled: b,
+        submitting: E,
+        disabled: E,
         children: m.intl.string(m.t.ezv91d)
       })]
     }), (0, r.jsx)("div", {
