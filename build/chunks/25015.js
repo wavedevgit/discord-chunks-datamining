@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => h
-});
+}), n(388685);
 var r = n(255367),
   l = n(73800),
   o = n(627050),
@@ -34,7 +34,9 @@ function h(e, t) {
     location: "useMessageRenderedContent"
   }).enabled, Z = (0, p.o)({
     location: "useMessageRenderedContent"
-  });
+  }), [R, T] = l.useState(!1), _ = l.useCallback(e => {
+    e && T(!0)
+  }, []);
   return l.useMemo(() => {
     if (null != e.customRenderedContent) return e.customRenderedContent;
     if (e.isUnsupported) return {
@@ -59,14 +61,15 @@ function h(e, t) {
             messageId: e.id,
             channelId: e.channel_id,
             viewingChannelId: S,
-            guildId: (0, a.k)(e)
+            guildId: (0, a.k)(e),
+            setHasSpoilerEmbeds: _
           },
           children: (0, r.jsx)(b, {
             content: e.content
           })
         })
       }),
-      hasSpoilerEmbeds: !1
+      hasSpoilerEmbeds: R
     } : (0, c.ZP)(e, {
       hideSimpleEmbedContent: h,
       formatInline: O,
@@ -81,5 +84,5 @@ function h(e, t) {
       viewingChannelId: S,
       allowGameMentions: E
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, O, y, v, j, P, x, w, N, C, S, Z.enabled, E])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, O, y, v, j, P, x, w, N, C, S, Z.enabled, E, R])
 }

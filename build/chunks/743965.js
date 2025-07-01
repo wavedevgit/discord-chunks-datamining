@@ -6,8 +6,8 @@ var r = t(255367),
   l = t(73800),
   i = t(120356),
   o = t.n(i),
-  u = t(481060),
-  c = t(663993),
+  c = t(481060),
+  u = t(663993),
   a = t(572004),
   d = t(73433),
   s = t(283574);
@@ -16,14 +16,14 @@ function f(e) {
   let {
     text: n
   } = e, [t, i] = l.useState(!1);
-  return (0, r.jsx)(u.P3F, {
+  return (0, r.jsx)(c.P3F, {
     onClick: () => {
       (0, a.JG)(n, () => i(!0), () => i(!1))
     },
-    children: t ? (0, r.jsx)(u.dz2, {
+    children: t ? (0, r.jsx)(c.dz2, {
       size: "xs",
       color: "currentColor"
-    }) : (0, r.jsx)(u.TIy, {
+    }) : (0, r.jsx)(c.TIy, {
       size: "xs",
       color: "currentColor"
     })
@@ -46,7 +46,7 @@ function _(e) {
         children: (0, r.jsx)(f, {
           text: l
         })
-      }) : null, (0, r.jsx)(c.GI, {
+      }) : null, (0, r.jsx)(u.GI, {
         createPromise: () => Promise.resolve().then(t.bind(t, 364964)),
         webpackId: 364964,
         renderFallback: i,
