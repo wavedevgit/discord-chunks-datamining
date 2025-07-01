@@ -1,6 +1,6 @@
 /**
   Module ID: 89795
-  Original File Name: 6809b4c3e7b087e4
+  Original File Name: b03bad4a44a6474c
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -13288,6 +13288,15 @@ div.nagbar_d74ef8 {
     width: 100%
 }
 
+.formSwitchExtension__7441d {
+    margin-bottom: 10px
+}
+
+.infoBoxDivider__7441d {
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
 .tryItOutButtons__6b52d {
     display: flex;
     gap: 8px
@@ -19229,4 +19238,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=6809b4c3e7b087e4.css.map*/
+/*# sourceMappingURL=b03bad4a44a6474c.css.map*/
