@@ -45,16 +45,16 @@ let k = e => {
     showRecommendationOption: M
   } = (0, C.N)(a, B), D = (0, x.St)(Z), F = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), W = (0, o.e7)([p.Z], () => p.Z.isFocused()), V = !F && W, {
     animationPhase: U,
-    startAnimation: G
-  } = (0, S.y)(), z = (0, b.sp)(), q = null != (t = null == z ? void 0 : z.sessionId) ? t : "", Y = l.useRef(null), K = l.useCallback(e => {
-    G({
+    startAnimation: z
+  } = (0, S.y)(), G = (0, b.sp)(), q = null != (t = null == G ? void 0 : G.sessionId) ? t : "", Y = l.useRef(null), K = l.useCallback(e => {
+    z({
       isShuffling: !1,
       onOutroComplete: () => w(e)
     }), f.default.track(y.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: q,
       sort_type: e
     })
-  }, [G, w, q]);
+  }, [z, w, q]);
   return null == I ? null : (0, r.jsxs)("div", {
     className: i()(P.popularPicksSection, P.centeredSection),
     children: [(0, r.jsxs)("div", {
@@ -122,7 +122,7 @@ let k = e => {
           color: s.Ttl.PRIMARY,
           buttonRef: Y,
           onClick: () => {
-            G({
+            z({
               isShuffling: !0,
               onOutroComplete: H,
               returnRef: Y

@@ -5,7 +5,7 @@ n.d(t, {
 });
 var r = n(73800),
   l = n(704215),
-  a = n(605236),
+  a = n(266454),
   i = n(681435),
   o = n(921944);
 let s = () => {
@@ -13,7 +13,7 @@ let s = () => {
     dismissShopButtonDC: e
   } = (0, i.Z)();
   r.useEffect(() => {
-    e(), (0, a.un)(l.z.COLLECTIBLES_GIFTING_COACHMARK) || (0, a.EW)(l.z.COLLECTIBLES_GIFTING_COACHMARK, {
+    e(), (0, a.zu)(l.z.COLLECTIBLES_GIFTING_COACHMARK) || (0, a.Q3)(l.z.COLLECTIBLES_GIFTING_COACHMARK, {
       dismissAction: o.L.AUTO_DISMISS,
       forceTrack: !0
     })

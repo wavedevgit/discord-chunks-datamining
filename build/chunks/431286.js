@@ -10,7 +10,7 @@ var r = n(255367),
   s = n(952265),
   c = n(481060),
   u = n(570140),
-  d = n(605236),
+  d = n(266454),
   h = n(243778),
   p = n(341907),
   f = n(819640),
@@ -55,10 +55,10 @@ function j() {
           transitionState: i,
           onClose: o,
           ctaOnClick: () => {
-            S(y.L.TAKE_ACTION), (0, d.EW)(a.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
+            S(y.L.TAKE_ACTION), (0, d.Q3)(a.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
               dismissAction: y.L.INDIRECT_ACTION,
               groupName: y.R.VIRTUAL_CURRENCY_ONBOARDING
-            }), (0, d.EW)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
+            }), (0, d.Q3)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
               dismissAction: y.L.INDIRECT_ACTION,
               groupName: y.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, g.Y)({

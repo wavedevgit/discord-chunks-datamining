@@ -48,7 +48,7 @@ function T(e) {
     onClose: k,
     canDismissForever: j = !0,
     showHelpdeskLink: A = !0
-  } = e, R = (0, d.Z)(E), [D, L] = a.useState(!1), [P, B] = a.useState(null), [M, F] = a.useState(s().shuffle(E)), [U, w] = a.useState(""), [H, Z] = a.useState(!1), $ = (0, _.Dt)(), Y = (0, f.Z)(D), G = (0, f.Z)(P), z = (0, f.Z)(I), K = (0, f.Z)(U), W = (0, f.Z)(H), V = null != P ? y[P] : null, X = null != V;
+  } = e, R = (0, d.Z)(E), [D, L] = a.useState(!1), [P, B] = a.useState(null), [M, F] = a.useState(s().shuffle(E)), [U, w] = a.useState(""), [H, Z] = a.useState(!1), $ = (0, _.Dt)(), Y = (0, f.Z)(D), G = (0, f.Z)(P), z = (0, f.Z)(I), K = (0, f.Z)(U), V = (0, f.Z)(H), W = null != P ? y[P] : null, Q = null != W;
   return a.useEffect(() => {
     s().isEqual(R, E) || F((0, v.Bi)(E, x))
   }, [E, R, x]), (0, c.ZP)(() => () => {
@@ -56,7 +56,7 @@ function T(e) {
       problem: G.current,
       dontShowAgain: Y.current,
       feedback: K.current,
-      closeClicked: W.current
+      closeClicked: V.current
     })
   }), (0, l.jsxs)(u.Y0X, {
     transitionState: T,
@@ -75,7 +75,7 @@ function T(e) {
         variant: "text-sm/medium",
         color: "header-secondary",
         className: i()(p.ratingBody, S.headerBody),
-        children: null != (t = null == V ? void 0 : V.subheader) ? t : o
+        children: null != (t = null == W ? void 0 : W.subheader) ? t : o
       }), C ? (0, l.jsx)(u.olH, {
         className: p.modalCloseButton,
         onClick: function() {
@@ -84,7 +84,7 @@ function T(e) {
       }) : null]
     }), (0, l.jsxs)(u.hzk, {
       className: S.modalContent,
-      children: [X ? null : (0, l.jsx)(u.xJW, {
+      children: [Q ? null : (0, l.jsx)(u.xJW, {
         className: p.problemInfo,
         children: (0, l.jsx)(O.Z, {
           options: M,
@@ -95,20 +95,20 @@ function T(e) {
             B(t), Object.keys(y).includes(t) || k()
           }
         })
-      }), X ? (0, l.jsxs)(u.xJW, {
+      }), Q ? (0, l.jsxs)(u.xJW, {
         className: p.problemInfo,
         children: [(0, l.jsx)(u.Kx8, {
           value: U,
           maxLength: g.iF,
           onChange: w,
           className: S.textArea,
-          placeholder: null != (n = V.hint) ? n : m.intl.string(m.t.h95hcn)
+          placeholder: null != (n = W.hint) ? n : m.intl.string(m.t.h95hcn)
         }), A ? (0, l.jsx)(N, {}) : null]
       }) : null]
-    }), j || X ? (0, l.jsx)(u.mzw, {
-      className: i()(p.footer, X ? S.submitFooter : S.modalFooter),
+    }), j || Q ? (0, l.jsx)(u.mzw, {
+      className: i()(p.footer, Q ? S.submitFooter : S.modalFooter),
       direction: b.Z.Direction.HORIZONTAL,
-      children: X ? (0, l.jsxs)(l.Fragment, {
+      children: Q ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(u.zxk, {
           className: S.backButton,
           size: u.zxk.Sizes.NONE,

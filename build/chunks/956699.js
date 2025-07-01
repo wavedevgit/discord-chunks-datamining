@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(663993),
   v = n(600164),
   T = n(482215),
-  I = n(38618),
-  N = n(375657),
+  N = n(38618),
+  I = n(375657),
   y = n(171393),
   A = n(32300),
   P = n(371651),
@@ -50,9 +50,9 @@ var i = n(255367),
   K = n(121306),
   q = n(588866),
   X = n(20493),
-  J = n(283574);
+  Q = n(283574);
 
-function Q(e, t, n) {
+function J(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -68,7 +68,7 @@ function $(e) {
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      Q(e, t, n[t])
+      J(e, t, n[t])
     })
   }
   return e
@@ -160,13 +160,13 @@ class er extends r.Component {
     })
   }
   constructor(...e) {
-    super(...e), Q(this, "handleRemoveBuildOverride", () => {
+    super(...e), J(this, "handleRemoveBuildOverride", () => {
       this.props.onBuildOverrideRemoved(this.props.project)
-    }), Q(this, "handleOverrideIdChanged", e => {
+    }), J(this, "handleOverrideIdChanged", e => {
       this.props.onBuildOverrideUpdated(this.props.project, {
         id: e
       })
-    }), Q(this, "handleOverrideTypeChanged", e => {
+    }), J(this, "handleOverrideTypeChanged", e => {
       this.props.onBuildOverrideUpdated(this.props.project, {
         type: e,
         id: ""
@@ -337,14 +337,14 @@ class es extends r.Component {
     })
   }
   constructor(...e) {
-    super(...e), Q(this, "state", {
+    super(...e), J(this, "state", {
       loading: !0,
       buildOverrides: {},
       loadedBuildOverrides: {},
       errors: {},
       saving: !1,
       didSave: !1
-    }), Q(this, "handleAddBuildOverride", async () => {
+    }), J(this, "handleAddBuildOverride", async () => {
       var e;
       let t = await (e = this.getAvailableProjects(), new Promise(t => {
         (0, g.h7j)(n => {
@@ -391,7 +391,7 @@ class es extends r.Component {
       this.setState({
         buildOverrides: n
       })
-    }), Q(this, "handleBuildOverrideUpdated", (e, t) => {
+    }), J(this, "handleBuildOverrideUpdated", (e, t) => {
       let {
         buildOverrides: n
       } = this.state, i = $({}, null != n ? n[e] : {}, t), r = ee($({}, this.state.buildOverrides), {
@@ -400,18 +400,18 @@ class es extends r.Component {
       this.setState({
         buildOverrides: r
       })
-    }), Q(this, "handleBuildOverrideRemoved", e => {
+    }), J(this, "handleBuildOverrideRemoved", e => {
       let t = $({}, this.state.buildOverrides);
       delete t[e], this.setState({
         buildOverrides: t
       })
-    }), Q(this, "handleDiscardChanges", () => {
+    }), J(this, "handleDiscardChanges", () => {
       this.setState({
         buildOverrides: o().cloneDeep(this.state.loadedBuildOverrides),
         errors: {},
         didSave: !1
       })
-    }), Q(this, "handleSaveChanges", async () => {
+    }), J(this, "handleSaveChanges", async () => {
       let {
         buildOverrides: e
       } = this.state;
@@ -440,7 +440,7 @@ class es extends r.Component {
         saving: !1,
         didSave: !1
       })
-    }), Q(this, "handleLinkGeneration", () => {
+    }), J(this, "handleLinkGeneration", () => {
       let {
         buildOverrides: e
       } = this.state;
@@ -580,7 +580,7 @@ class el extends r.Component {
         render: n => {
           let r = n.highlight("json", e, !0);
           return null == r ? t() : (0, i.jsx)("code", {
-            className: "hljs scroller ".concat(r.language, " ").concat(J.scrollbarGhost, " ").concat(K.codebox),
+            className: "hljs scroller ".concat(r.language, " ").concat(Q.scrollbarGhost, " ").concat(K.codebox),
             dangerouslySetInnerHTML: {
               __html: r.value
             }
@@ -659,7 +659,7 @@ class el extends r.Component {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, Q(this, "state", {
+    super(...e), t = this, J(this, "state", {
       ttlSeconds: 3600,
       releaseChannel: "all",
       userIds: new Set,
@@ -672,34 +672,34 @@ class el extends r.Component {
       statusText: null,
       status: 0,
       allowLoggedOut: !1
-    }), Q(this, "setUserEntryError", e => {
+    }), J(this, "setUserEntryError", e => {
       this.setState({
         userIdEntryError: e
       })
-    }), Q(this, "setStatusMessage", function(e) {
+    }), J(this, "setStatusMessage", function(e) {
       let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
       t.setState({
         statusText: e,
         status: n
       })
-    }), Q(this, "handleUserIDEntry", e => {
+    }), J(this, "handleUserIDEntry", e => {
       if (!/^[\d\s,]*$/.test(e)) return this.setUserEntryError("User IDs are numbers!");
       let t = new Set(e.split(/[,\s]+/).filter(Boolean));
       this.setState({
         userIdEntry: e,
         userIds: t
       })
-    }), Q(this, "setAllowedVersionError", e => {
+    }), J(this, "setAllowedVersionError", e => {
       this.setState({
         allowedVersionEntryError: e
       })
-    }), Q(this, "handleAllowedVersionEntry", e => {
+    }), J(this, "handleAllowedVersionEntry", e => {
       this.setState({
         allowedVersionEntry: e
       })
-    }), Q(this, "handleAllowedVersionEnter", e => {
+    }), J(this, "handleAllowedVersionEnter", e => {
       e.charCode === Y.yXg.ENTER && this.handleAddAllowedVersion()
-    }), Q(this, "handleAddAllowedVersion", () => {
+    }), J(this, "handleAddAllowedVersion", () => {
       let {
         allowedVersions: e,
         allowedVersionEntry: t
@@ -709,26 +709,26 @@ class el extends r.Component {
         allowedVersionEntry: "",
         allowedVersionEntryError: ""
       })
-    }), Q(this, "handleRemoveAllowedVersion", e => {
+    }), J(this, "handleRemoveAllowedVersion", e => {
       let {
         allowedVersions: t
       } = this.state;
       t = t.filter(t => t !== e), this.setState({
         allowedVersions: t
       })
-    }), Q(this, "handleAllowLoggedOut", e => {
+    }), J(this, "handleAllowLoggedOut", e => {
       this.setState({
         allowLoggedOut: e
       })
-    }), Q(this, "handleExpirationChange", e => {
+    }), J(this, "handleExpirationChange", e => {
       this.setState({
         ttlSeconds: e
       })
-    }), Q(this, "handleReleaseChannelChange", e => {
+    }), J(this, "handleReleaseChannelChange", e => {
       this.setState({
         releaseChannel: e
       })
-    }), Q(this, "handleExperiments", e => {
+    }), J(this, "handleExperiments", e => {
       if (0 === e.trim().length) return void this.setState({
         experimentsError: void 0
       });
@@ -752,7 +752,7 @@ class el extends r.Component {
         experiments: e,
         experimentsError: void 0
       })
-    }), Q(this, "generatePayload", () => ({
+    }), J(this, "generatePayload", () => ({
       overrides: this.props.buildOverrides,
       meta: {
         release_channel: "all" === this.state.releaseChannel ? null : this.state.releaseChannel,
@@ -762,7 +762,7 @@ class el extends r.Component {
         allow_logged_out: this.state.allowLoggedOut,
         experiments: null == this.state.experiments ? null : JSON.parse(this.state.experiments)
       }
-    })), Q(this, "handleGenerateLink", async () => {
+    })), J(this, "handleGenerateLink", async () => {
       if (this.isMobile() && 0 === this.state.allowedVersions.length) return void this.setAllowedVersionError("You must add at least one allowed version for iOS");
       this.setStatusMessage(null);
       let e = this.generatePayload(),
@@ -989,7 +989,7 @@ function eo() {
           L.default.track(Y.rMx.GUILD_JOIN_FEEDBACK, {
             reason: "disable-align-chat-input",
             rating: e ? "yes" : "no"
-          }), (0, N.s)("go_back_to_regular_input", {
+          }), (0, I.s)("go_back_to_regular_input", {
             enabled: e
           })
         },
@@ -1088,7 +1088,7 @@ function eu() {
         setting: z.s6.DEVELOPER_OPTIONS_RESET_SOCKET,
         children: (0, i.jsx)(g.zxk, {
           onClick: () => {
-            I.Z.getSocket().close(), I.Z.getSocket().connect()
+            N.Z.getSocket().close(), N.Z.getSocket().connect()
           },
           children: "Reset Socket"
         })

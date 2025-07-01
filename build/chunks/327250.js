@@ -122,7 +122,7 @@ function U(e) {
   })
 }
 
-function P(e) {
+function j(e) {
   var {
     tag: t = "div",
     text: n,
@@ -161,7 +161,7 @@ function P(e) {
   })
 }
 
-function j(e) {
+function P(e) {
   let {
     user: t,
     member: l,
@@ -181,7 +181,7 @@ function j(e) {
     targetUserId: t.id,
     location: v,
     locations: b
-  }), j = (0, s.e7)([T.default], () => T.default.getId() === (null == t ? void 0 : t.id)), y = (0, s.e7)([N.Z, f.Z], () => {
+  }), P = (0, s.e7)([T.default], () => T.default.getId() === (null == t ? void 0 : t.id)), y = (0, s.e7)([N.Z, f.Z], () => {
     let e = N.Z.getChannelId(i),
       t = null != e ? f.Z.getChannel(e) : null,
       n = null != t && t.isModeratorReportChannel() ? e : void 0;
@@ -189,8 +189,8 @@ function j(e) {
   }, [i]);
   return (0, r.jsxs)("div", {
     className: x.bottomRow,
-    children: [(0, r.jsx)(P, {
-      disabled: j,
+    children: [(0, r.jsx)(j, {
+      disabled: P,
       text: D.intl.string(D.t["g33r/P"]),
       onClick: () => {
         o.Z.openPrivateChannel({
@@ -203,7 +203,7 @@ function j(e) {
         width: 24,
         height: 24
       })
-    }), (0, r.jsx)(P, {
+    }), (0, r.jsx)(j, {
       disabled: !g,
       text: D.intl.string(D.t["3glT6e"]),
       onClick: () => {
@@ -225,7 +225,7 @@ function j(e) {
         height: 24,
         color: a.TVs.colors.TEXT_DEFAULT.css
       })
-    }), (0, r.jsx)(P, {
+    }), (0, r.jsx)(j, {
       disabled: !O,
       text: D.intl.string(D.t["5MBJ5O"]),
       onClick: () => {
@@ -247,7 +247,7 @@ function j(e) {
         height: 24,
         color: a.TVs.colors.TEXT_DEFAULT.css
       })
-    }), (0, r.jsx)(P, {
+    }), (0, r.jsx)(j, {
       disabled: !p,
       text: C ? D.intl.string(D.t.N86XcH) : D.intl.string(D.t.kTlLr6),
       onClick: () => {
@@ -268,7 +268,7 @@ function j(e) {
         height: 24,
         color: a.TVs.colors.TEXT_DEFAULT.css
       })
-    }), (0, r.jsx)(P, {
+    }), (0, r.jsx)(j, {
       text: D.intl.string(D.t.IHTjzM),
       onClick: () => {
         U(A.jQ.COPY_ID), (0, S.JG)(t.id)
@@ -296,7 +296,7 @@ function y(e) {
       user: i,
       guildId: n,
       onClose: l
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(P, {
       user: i,
       member: a,
       guildId: n

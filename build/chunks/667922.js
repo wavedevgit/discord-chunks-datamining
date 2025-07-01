@@ -24,7 +24,7 @@ function h(e, t) {
     reducedMotion: n
   } = i.useContext(a.Sfi), g = (0, u.$R)(t), h = (0, l.e7)([f.Z], () => (t.isPrivate() || f.Z.can(O.Plq.ADD_REACTIONS, t)) && g, [t, g]), j = (0, o.MZ)(t.getGuildId());
   if (!d.nc.getSetting() || !h) return null;
-  let E = j.filter(e => !p.ZP.isEmojiFilteredOrLocked({
+  let S = j.filter(e => !p.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: m.Hz.REACTION
@@ -83,7 +83,7 @@ function h(e, t) {
     },
     color: "default",
     children: (0, r.jsxs)(r.Fragment, {
-      children: [E, (0, r.jsx)(a.Clw, {}), (0, r.jsx)(a.sNh, {
+      children: [S, (0, r.jsx)(a.Clw, {}), (0, r.jsx)(a.sNh, {
         color: "default",
         id: "other-reactions",
         label: y.intl.string(y.t["OBCR+v"]),

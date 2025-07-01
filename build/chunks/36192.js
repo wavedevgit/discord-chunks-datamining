@@ -15,7 +15,7 @@ var i = n(255367),
   g = n(100527),
   p = n(43015),
   h = n(136097),
-  f = n(605236),
+  f = n(266454),
   b = n(246946),
   _ = n(594174),
   x = n(460562),
@@ -34,7 +34,7 @@ function v() {
     l = (0, a.e7)([_.default], () => _.default.getCurrentUser()),
     [u, g] = r.useState(!1);
   r.useEffect(() => {
-    (0, f.EW)(c.z.AUTH_SESSIONS_NEW, {
+    (0, f.Q3)(c.z.AUTH_SESSIONS_NEW, {
       dismissAction: C.L.AUTO
     }), (0, p.fw)();
     let e = setTimeout(() => g(!0), 500);
@@ -76,7 +76,7 @@ function v() {
             let n = new Set(E);
             t ? n.add(e.id_hash) : n.delete(e.id_hash), v(n)
           }
-        }, e.id_hash)), (null == l ? void 0 : l.mfaEnabled) ? null : (0, i.jsx)(I, {})]
+        }, e.id_hash)), (null == l ? void 0 : l.mfaEnabled) ? null : (0, i.jsx)(N, {})]
       })]
     }), n.length > 0 ? (0, i.jsxs)(d.hjN, {
       tag: d.RB0.H5,
@@ -223,7 +223,7 @@ function T(e) {
   }, o.id_hash)
 }
 
-function I() {
+function N() {
   return (0, i.jsxs)("div", {
     className: l()(S.session, S.legacySession),
     children: [(0, i.jsx)("div", {

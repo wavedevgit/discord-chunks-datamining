@@ -37,9 +37,9 @@ function v(e) {
     specMap: h,
     categoryTitle: O,
     userId: N
-  } = e, C = (0, u.e7)([f.Z], () => f.Z.getRoles(g.id)), v = R.Plq[o], D = null != (i = null == (t = h[v.toString()]) ? void 0 : t.title) ? i : (0, m.wt)(v), x = null != (a = null == (n = h[v.toString()]) ? void 0 : n.description) ? a : "", M = p._o.has(v), L = p.Qn.includes(o), U = T.length, P = (0, u.e7)([I.Z], () => I.Z.can(R.Plq.MANAGE_ROLES, g), [g]), j = l.useCallback(async e => {
-    P && (await A.Z.open(g.id, R.pNK.ROLES), await A.Z.selectRole(e))
-  }, [P, g.id]);
+  } = e, C = (0, u.e7)([f.Z], () => f.Z.getRoles(g.id)), v = R.Plq[o], D = null != (i = null == (t = h[v.toString()]) ? void 0 : t.title) ? i : (0, m.wt)(v), x = null != (a = null == (n = h[v.toString()]) ? void 0 : n.description) ? a : "", M = p._o.has(v), L = p.Qn.includes(o), U = T.length, j = (0, u.e7)([I.Z], () => I.Z.can(R.Plq.MANAGE_ROLES, g), [g]), P = l.useCallback(async e => {
+    j && (await A.Z.open(g.id, R.pNK.ROLES), await A.Z.selectRole(e))
+  }, [j, g.id]);
   return (0, r.jsxs)("div", {
     className: s()(b.permissionItemContainer, {
       [b.elevatedPermission]: M
@@ -154,9 +154,9 @@ function v(e) {
         })
       }, e) : (0, r.jsx)(c.P3F, {
         className: s()(b.roleTooltipItem, {
-          [b.editable]: P && !(0, d.pM)(g.id, e)
+          [b.editable]: j && !(0, d.pM)(g.id, e)
         }),
-        onClick: () => j(e),
+        onClick: () => P(e),
         children: (0, r.jsx)(_.Z, {
           role: C[e],
           guildId: g.id,
@@ -178,10 +178,10 @@ function x(e) {
     location: i,
     className: a,
     onNavigate: d
-  } = e, E = (0, u.e7)([h.default], () => h.default.getUser(t), [t]), _ = (0, u.e7)([g.Z], () => g.Z.getGuild(n), [n]), A = (0, u.e7)([T.ZP], () => T.ZP.getMember(n, t), [n, t]), f = (0, p.B2)(t, n, p.pd), I = Object.keys(f).length, x = l.useMemo(() => null != _ ? O.Z.getGuildPermissionSpecMap(_) : null, [_]), M = l.useMemo(() => null != _ ? O.Z.generateGuildPermissionSpec(_) : null, [_]), [L, U] = l.useState(""), [P, j] = l.useState(""), y = l.useMemo(() => o()(j, 300), []), w = l.useCallback(e => {
+  } = e, E = (0, u.e7)([h.default], () => h.default.getUser(t), [t]), _ = (0, u.e7)([g.Z], () => g.Z.getGuild(n), [n]), A = (0, u.e7)([T.ZP], () => T.ZP.getMember(n, t), [n, t]), f = (0, p.B2)(t, n, p.pd), I = Object.keys(f).length, x = l.useMemo(() => null != _ ? O.Z.getGuildPermissionSpecMap(_) : null, [_]), M = l.useMemo(() => null != _ ? O.Z.generateGuildPermissionSpec(_) : null, [_]), [L, U] = l.useState(""), [j, P] = l.useState(""), y = l.useMemo(() => o()(P, 300), []), w = l.useCallback(e => {
     U(e), y(e)
   }, [y]), G = l.useCallback(() => {
-    U(""), j("")
+    U(""), P("")
   }, []), k = l.useMemo(() => {
     if (null == _ || null == x || null == A) return null;
     if (0 === I) return (0, r.jsx)(c.Text, {
@@ -196,7 +196,7 @@ function x(e) {
         if (null == s) return;
         let a = f[s];
         if (null != a) {
-          if (P.length > 0) {
+          if (j.length > 0) {
             var o, u, c, d, E;
             let e = null != (d = null == (o = x[i.toString()]) ? void 0 : o.title) ? d : (0, m.wt)(i),
               t = null != (E = null == (c = x[i.toString()]) || null == (u = c.description) ? void 0 : u.toString()) ? E : "",
@@ -204,10 +204,10 @@ function x(e) {
               l = p._o.has(i),
               a = p.Qn.includes(s),
               _ = l ? S.intl.string(S.t.k7Kqj4) : a ? S.intl.string(S.t.IfqUEB) : null,
-              A = D(P, e),
-              T = D(P, t),
-              f = D(P, r),
-              g = null != _ && D(P, _);
+              A = D(j, e),
+              T = D(j, t),
+              f = D(j, r),
+              g = null != _ && D(j, _);
             if (!A && !T && !f && !g) return
           }
           e.push((0, r.jsx)(v, {
@@ -221,7 +221,7 @@ function x(e) {
         }
       })
     }), e
-  }, [_, x, A, I, M, f, P, t]);
+  }, [_, x, A, I, M, f, j, t]);
   return null == E || null == A ? null : (0, r.jsxs)("div", {
     className: s()(C.container, a),
     children: [(0, r.jsx)(N.Z, {

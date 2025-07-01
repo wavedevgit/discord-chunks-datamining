@@ -3,9 +3,9 @@
 n.d(t, {
   Z: () => I
 }), n(388685);
-var r = n(259443),
-  i = n(442837),
-  a = n(570140),
+var r = n(442837),
+  i = n(570140),
+  a = n(710845),
   o = n(186102),
   s = n(873741),
   l = n(592125),
@@ -52,7 +52,7 @@ function m(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = new r.Yd("MessageRoundtripTrackerStore");
+let g = new a.Z("MessageRoundtripTrackerStore");
 
 function E(e) {
   return null != e.apiResponseTimestamp && null != e.gatewaySeenTimestamp
@@ -85,7 +85,7 @@ function y(e) {
   } = e, r = n.nonce;
   t || null == r || v.recordGatewayResponse(r)
 }
-class O extends i.ZP.Store {
+class O extends r.ZP.Store {
   recordMessageSendAttempt(e, t) {
     let n = {
       initialSendTimestamp: Date.now(),
@@ -120,7 +120,7 @@ class O extends i.ZP.Store {
     super(...e), _(this, "pendingMessages", new Map)
   }
 }
-let v = new O(a.Z, {
+let v = new O(i.Z, {
     MESSAGE_CREATE: y
   }),
   I = v

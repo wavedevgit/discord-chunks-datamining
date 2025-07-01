@@ -33,8 +33,8 @@ function S(e) {
     className: S,
     infoPanelClassName: C,
     style: b
-  } = e, v = (0, O.m)(n), D = (0, a.e7)([h.default], () => h.default.getUser(t), [t]), x = (0, a.e7)([I.ZP], () => I.ZP.getMember(n, t), [n, t]), [M, L] = l.useState(null == D || null == x), U = (0, c.Z)(x), P = l.useRef(null), {
-    analyticsLocations: j
+  } = e, v = (0, O.m)(n), D = (0, a.e7)([h.default], () => h.default.getUser(t), [t]), x = (0, a.e7)([I.ZP], () => I.ZP.getMember(n, t), [n, t]), [M, L] = l.useState(null == D || null == x), U = (0, c.Z)(x), j = l.useRef(null), {
+    analyticsLocations: P
   } = (0, A.ZP)(_.Z.GUILD_MEMBER_MOD_VIEW), y = (0, T.ZP)(t, n), w = (0, d.ZP)();
   return (l.useEffect(() => {
     v || i()
@@ -44,8 +44,8 @@ function S(e) {
     null != D && null != x && L(!1)
   }, [D, x]), l.useEffect(() => {
     let e = null == x;
-    return !M && e && (P.current = window.setTimeout(i, 500)), () => {
-      null != P.current && window.clearTimeout(P.current)
+    return !M && e && (j.current = window.setTimeout(i, 500)), () => {
+      null != j.current && window.clearTimeout(j.current)
     }
   }, [M, x, i]), (0, E.$)({
     [n]: [t]
@@ -65,7 +65,7 @@ function S(e) {
       type: M ? o.$jN.Type.SPINNING_CIRCLE : o.$jN.Type.CHASING_DOTS
     })
   }) : (0, r.jsx)(A.Gt, {
-    value: j,
+    value: P,
     children: (0, r.jsx)("div", {
       className: s()(R.sidebarContainer, S),
       style: b,

@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(734934),
   v = n(223683),
   T = n(312400),
-  I = n(115345),
-  N = n(392888),
+  N = n(115345),
+  I = n(392888),
   y = n(106371),
   A = n(995774),
   P = n(921801),
@@ -117,7 +117,7 @@ function X(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   let {
     disabledSounds: t,
     disableAllSounds: n,
@@ -241,7 +241,7 @@ function J(e) {
   })
 }
 
-function Q() {
+function J() {
   let e = (0, c.e7)([j.Z], () => j.Z.getGuildAlertSettings()),
     [t, n] = r.useState(null),
     s = L.default.keys(e).map(t => {
@@ -388,8 +388,8 @@ class $ extends r.PureComponent {
             className: l()(Y.marginTop40, Y.marginBottom40)
           })]
         })
-      }), this.renderTTS(), (0, i.jsx)(Q, {}), (0, i.jsx)(u.xJW, {
-        children: (0, i.jsx)(J, {
+      }), this.renderTTS(), (0, i.jsx)(J, {}), (0, i.jsx)(u.xJW, {
+        children: (0, i.jsx)(Q, {
           disabledSounds: s,
           disableAllSounds: a,
           notifyMessagesInSelectedChannel: c
@@ -528,7 +528,7 @@ function en() {
             setting: V.s6.NOTIFICATIONS_LAUNCH_MIGRATION,
             children: (0, i.jsx)(u.zxk, {
               onClick: () => {
-                (0, N.R)(!0)
+                (0, I.R)(!0)
               },
               children: "Launch Migration"
             })
@@ -553,14 +553,14 @@ function en() {
 async function ei(e) {
   e(!0);
   let t = await (0, v.Tn)();
-  0 === t.length ? await (0, I.oL)() : m.Z.show({
+  0 === t.length ? await (0, N.oL)() : m.Z.show({
     title: H.intl.string(H.t["cY+Ooa"]),
     body: H.intl.format(H.t["7zTJJS"], {
       date: new Date(t[t.length - 1].recorded_at)
     }),
     cancelText: H.intl.string(H.t["ETE/oK"]),
     confirmText: H.intl.string(H.t.Rm96T0),
-    onConfirm: I.oL
+    onConfirm: N.oL
   }), e(!1)
 }
 

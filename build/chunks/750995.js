@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => b
+  Z: () => _
 });
 var r = n(255367);
 n(73800);
@@ -8,23 +8,24 @@ var i = n(704215),
   l = n(481060),
   a = n(570140),
   o = n(317770),
-  s = n(605236),
-  c = n(650774),
-  u = n(430824),
-  d = n(496675),
-  p = n(228392),
-  h = n(981631),
-  f = n(921944);
-let g = e => {
+  s = n(266454),
+  c = n(605236),
+  u = n(650774),
+  d = n(430824),
+  p = n(496675),
+  h = n(228392),
+  f = n(981631),
+  g = n(921944);
+let m = e => {
   var t;
-  let n = u.Z.getGuild(e),
-    r = !!(null == n ? void 0 : n.hasFeature(h.oNc.COMMUNITY)),
-    l = d.Z.can(h.Plq.MANAGE_CHANNELS, n),
-    a = (0, s.un)(i.z.FORUM_CHANNEL_UPSELL_MODAL),
-    o = null != (t = c.Z.getMemberCount(e)) ? t : 0;
+  let n = d.Z.getGuild(e),
+    r = !!(null == n ? void 0 : n.hasFeature(f.oNc.COMMUNITY)),
+    l = p.Z.can(f.Plq.MANAGE_CHANNELS, n),
+    a = (0, s.zu)(i.z.FORUM_CHANNEL_UPSELL_MODAL),
+    o = null != (t = u.Z.getMemberCount(e)) ? t : 0;
   return r && l && !a && o >= 200
 };
-class m extends o.Z {
+class b extends o.Z {
   _initialize() {
     a.Z.subscribe("CHANNEL_SELECT", this.handleChannelSelect)
   }
@@ -35,11 +36,11 @@ class m extends o.Z {
     let {
       guildId: t
     } = e;
-    if (null == t || !g(t)) return;
-    (0, p.qz)(), (0, s.kk)(i.z.FORUM_CHANNEL_UPSELL_MODAL);
+    if (null == t || !m(t)) return;
+    (0, h.qz)(), (0, c.kk)(i.z.FORUM_CHANNEL_UPSELL_MODAL);
     let a = function() {
-      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f.L.DISMISS;
-      (0, s.EW)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
+      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : g.L.DISMISS;
+      (0, s.Q3)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
         dismissAction: e
       })
     };
@@ -84,11 +85,11 @@ class m extends o.Z {
         }), i))
       }
     }, {
-      onCloseCallback: () => (0, s.EW)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
-        dismissAction: f.L.DISMISS
+      onCloseCallback: () => (0, s.Q3)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
+        dismissAction: g.L.DISMISS
       }),
-      onCloseRequest: h.VqG
+      onCloseRequest: f.VqG
     })
   }
 }
-let b = new m
+let _ = new b

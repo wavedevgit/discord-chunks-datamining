@@ -11,29 +11,29 @@ n.d(t, {
 var r = n(512722),
   i = n.n(r),
   a = n(525769),
-  o = n(259443),
-  s = n(544891),
-  l = n(570140),
-  c = n(881052),
+  o = n(544891),
+  s = n(570140),
+  l = n(881052),
+  c = n(710845),
   u = n(598077),
   d = n(594174),
   f = n(573261),
   _ = n(981631);
-let p = new o.Yd("UserProfileModalActionCreators");
+let p = new c.Z("UserProfileModalActionCreators");
 
 function h() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
     {
       withAnalyticsToken: t = !1
     } = e;
-  return s.tn.get({
+  return o.tn.get({
     url: _.ANM.ME,
     query: {
       with_analytics_token: t
     },
     oldFormErrors: !0,
     rejectWithError: !1
-  }).then(e => (l.Z.dispatch({
+  }).then(e => (s.Z.dispatch({
     type: "CURRENT_USER_UPDATE",
     user: e.body,
     analyticsToken: t ? e.body.analytics_token : void 0
@@ -61,7 +61,7 @@ function g(e, t) {
   let n = d.default.getCurrentUser();
   i()(null != n, "setFlag: user cannot be undefined");
   let r = t ? n.flags | e : n.flags & ~e;
-  return s.tn.patch({
+  return o.tn.patch({
     url: _.ANM.ME,
     oldFormErrors: !0,
     body: {
@@ -73,11 +73,11 @@ function g(e, t) {
 
 function E(e) {
   let t = d.default.getUser(e);
-  return null != t ? Promise.resolve(t) : s.tn.get({
+  return null != t ? Promise.resolve(t) : o.tn.get({
     url: _.ANM.USER(e),
     oldFormErrors: !0,
     rejectWithError: !1
-  }).then(t => (l.Z.dispatch({
+  }).then(t => (s.Z.dispatch({
     type: "USER_UPDATE",
     user: t.body
   }), d.default.getUser(e)))
@@ -89,18 +89,18 @@ async function b(e) {
     withMutualFriendsCount: r,
     withMutualFriends: i,
     guildId: a,
-    connectionsRoleId: o,
+    connectionsRoleId: c,
     joinRequestId: u,
     abortSignal: d
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, f = arguments.length > 2 ? arguments[2] : void 0, h = Date.now();
-  l.Z.dispatch({
+  s.Z.dispatch({
     type: "USER_PROFILE_FETCH_START",
     userId: e,
     guildId: a,
     withMutualFriends: i
   });
   try {
-    let c = await s.tn.get({
+    let l = await o.tn.get({
       url: _.ANM.USER_PROFILE(e),
       query: {
         type: t,
@@ -108,28 +108,28 @@ async function b(e) {
         with_mutual_friends: i,
         with_mutual_friends_count: r && (null == i || !i),
         guild_id: a,
-        connections_role_id: o,
+        connections_role_id: c,
         join_request_id: u
       },
       signal: d,
       rejectWithError: !0
     });
-    null == f || f(c.body, a), l.Z.dispatch({
+    null == f || f(l.body, a), s.Z.dispatch({
       type: "USER_UPDATE",
-      user: c.body.user
-    }), l.Z.dispatch({
+      user: l.body.user
+    }), s.Z.dispatch({
       type: "USER_PROFILE_FETCH_SUCCESS",
-      userProfile: c.body,
+      userProfile: l.body,
       fetchStartedAt: h
-    }), null != a && null != c.body.guild_member && l.Z.dispatch({
+    }), null != a && null != l.body.guild_member && s.Z.dispatch({
       type: "GUILD_MEMBER_PROFILE_UPDATE",
       guildId: a,
-      guildMember: c.body.guild_member
+      guildMember: l.body.guild_member
     })
   } catch (t) {
-    throw null != t && (null == t ? void 0 : t.body) != null && p.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), l.Z.dispatch({
+    throw null != t && (null == t ? void 0 : t.body) != null && p.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), s.Z.dispatch({
       type: "USER_PROFILE_FETCH_FAILURE",
-      apiError: new c.Hx(t),
+      apiError: new l.Hx(t),
       fetchStartedAt: h,
       userId: e,
       guildId: a
@@ -137,24 +137,24 @@ async function b(e) {
   }
 }
 async function y(e, t) {
-  l.Z.dispatch({
+  s.Z.dispatch({
     type: "MUTUAL_FRIENDS_FETCH_START",
     userId: e
   });
   try {
-    let n = await s.tn.get({
+    let n = await o.tn.get({
       url: _.ANM.USER_RELATIONSHIPS(e),
       oldFormErrors: !0,
       signal: t,
       rejectWithError: !1
     });
-    l.Z.dispatch({
+    s.Z.dispatch({
       type: "MUTUAL_FRIENDS_FETCH_SUCCESS",
       userId: e,
       mutualFriends: n.body
     })
   } catch (t) {
-    throw (null == t ? void 0 : t.body) != null && p.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), l.Z.dispatch({
+    throw (null == t ? void 0 : t.body) != null && p.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), s.Z.dispatch({
       type: "MUTUAL_FRIENDS_FETCH_FAILURE",
       userId: e
     }), t

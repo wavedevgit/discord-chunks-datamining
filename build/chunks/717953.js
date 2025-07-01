@@ -13,7 +13,7 @@ var r = n(255367),
   u = n(481060),
   d = n(410030),
   f = n(44315),
-  _ = n(605236),
+  _ = n(266454),
   p = n(243778),
   h = n(581883),
   m = n(583901),
@@ -64,7 +64,7 @@ function I(e) {
   } = e, T = (0, l.e7)([h.Z], () => {
     var e, t;
     return null == (t = h.Z.settings.appearance) || null == (e = t.clientThemeSettings) ? void 0 : e.customUserThemeSettings
-  }), [S, A] = (0, p.US)([c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE]), N = (0, _.wE)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), C = (0, d.ZP)(), R = null != T, P = (0, u.wjy)(C) ? O.darkOverlay : O.lightOverlay, w = (null != (n = null == T || null == (t = T.colors) ? void 0 : t.length) ? n : 0) > 1, D = i.useMemo(() => {
+  }), [S, A] = (0, p.US)([c.z.CUSTOM_THEME_ENTRYPOINT_NEW_BADGE]), N = (0, _.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), C = (0, d.ZP)(), R = null != T, P = (0, u.wjy)(C) ? O.darkOverlay : O.lightOverlay, w = (null != (n = null == T || null == (t = T.colors) ? void 0 : t.length) ? n : 0) > 1, D = i.useMemo(() => {
     if (null == T || null == T.colors || 0 === T.colors.length) return;
     let e = T.colors[0];
     if (w) {

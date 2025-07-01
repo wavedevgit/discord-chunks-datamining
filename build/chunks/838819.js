@@ -86,9 +86,9 @@ let w = e => {
         var e;
         return null == (e = S.Z.getCategory(F)) ? void 0 : e.name
       }),
-      [U, G] = l.useState(),
-      z = l.useCallback((e, t) => {
-        G(e), W(t)
+      [U, z] = l.useState(),
+      G = l.useCallback((e, t) => {
+        z(e), W(t)
       }, []),
       {
         selectedTab: q,
@@ -152,7 +152,7 @@ let w = e => {
                   transitionToTab: K,
                   transitionState: Y,
                   sortedCategories: D,
-                  updateAnalyticsState: z
+                  updateAnalyticsState: G
                 })]
               })
             })

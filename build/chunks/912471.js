@@ -7,11 +7,11 @@ n.d(t, {
 }), n(415506), n(539854);
 var r = n(772848),
   i = n(923452),
-  a = n(259443),
-  o = n(442837),
-  s = n(433517),
-  l = n(570140),
-  c = n(188471),
+  a = n(442837),
+  o = n(433517),
+  s = n(570140),
+  l = n(188471),
+  c = n(710845),
   u = n(38618),
   d = n(314897),
   f = n(517100),
@@ -51,7 +51,7 @@ let T = 24,
   A = h.Z.Millis.SECOND,
   N = "LAST_CLIENT_HEARTBEAT_SESSION",
   C = "user",
-  R = new a.Yd("SessionHeartbeatScheduler"),
+  R = new c.Z("SessionHeartbeatScheduler"),
   P = null,
   w = null,
   D = 0,
@@ -104,7 +104,7 @@ function V() {
   B() && (m.Z.addBreadcrumb({
     category: C,
     message: "Stopping Analytics Heartbeat"
-  }), (0, c.Z)())
+  }), (0, l.Z)())
 }
 
 function F() {
@@ -134,7 +134,7 @@ async function Z() {
     client_heartbeat_initialization_timestamp: t.createdAtTimestamp,
     client_heartbeat_version: T
   }, (0, g.O)(), F());
-  p.default.track(O.rMx.CLIENT_HEARTBEAT, r), L = performance.now(), (0, c.Z)()
+  p.default.track(O.rMx.CLIENT_HEARTBEAT, r), L = performance.now(), (0, l.Z)()
 }
 
 function H() {
@@ -176,7 +176,7 @@ function q() {
 function X(e) {
   let t = performance.now();
   if (!(t - D < A)) try {
-    s.K.set(N, e), D = t
+    o.K.set(N, e), D = t
   } catch (e) {
     m.Z.captureException(e)
   }
@@ -187,7 +187,7 @@ function Q(e) {
 }
 
 function J() {
-  s.K.remove(N), x = {
+  o.K.remove(N), x = {
     state: "loaded",
     session: null
   }, V(), L = 0
@@ -235,7 +235,7 @@ function ea() {
 function eo() {
   m.Z.addBreadcrumb({
     message: "Initializing SessionHeartbeatScheduler"
-  }), _.Z.addChangeListener(en), d.default.addChangeListener(et), l.Z.subscribe("WINDOW_FOCUS", er), l.Z.subscribe("APP_STATE_UPDATE", ei), l.Z.subscribe("CONNECTION_OPEN", ee), z(), q(), o.ZP.initialized.then(ea)
+  }), _.Z.addChangeListener(en), d.default.addChangeListener(et), s.Z.subscribe("WINDOW_FOCUS", er), s.Z.subscribe("APP_STATE_UPDATE", ei), s.Z.subscribe("CONNECTION_OPEN", ee), z(), q(), a.ZP.initialized.then(ea)
 }
 async function es() {
   var e;
@@ -243,7 +243,7 @@ async function es() {
     n = null,
     a = "loaded" === x.state ? null == (e = x.session) ? void 0 : e.uuid : null;
   try {
-    n = "uninitialized" === x.state ? Q(await s.K.getAfterRefresh(N)) : x.session
+    n = "uninitialized" === x.state ? Q(await o.K.getAfterRefresh(N)) : x.session
   } catch (e) {
     m.Z.captureException(e)
   }
@@ -266,6 +266,6 @@ async function es() {
 }
 
 function el() {
-  let e = "uninitialized" === x.state ? Q(s.K.get(N)) : x.session;
+  let e = "uninitialized" === x.state ? Q(o.K.get(N)) : x.session;
   return null == e || (0, b.qK)(e) ? null : e
 }

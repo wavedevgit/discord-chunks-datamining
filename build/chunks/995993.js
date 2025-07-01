@@ -9,7 +9,7 @@ var r = n(255367),
   a = n(692547),
   s = n(481060),
   c = n(239091),
-  u = n(605236),
+  u = n(266454),
   d = n(45966),
   h = n(31445),
   p = n(22082),
@@ -28,7 +28,7 @@ function E(e) {
   let {
     guild: t,
     selected: E
-  } = e, S = (0, h.Z)(t), x = (0, u.wE)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([p.Z], () => Array.from(p.Z.getNewChannelIds(t.id)).filter(e => p.Z.shouldIndicateNewChannel(t.id, e))), P = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), N = I.length > b.Cb, w = (0, l.e7)([d.Z, g.ZP], () => {
+  } = e, S = (0, h.Z)(t), x = (0, u.Nj)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([p.Z], () => Array.from(p.Z.getNewChannelIds(t.id)).filter(e => p.Z.shouldIndicateNewChannel(t.id, e))), P = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), N = I.length > b.Cb, w = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
       n = g.ZP.lastMessageId(t.id, v.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) return !1;

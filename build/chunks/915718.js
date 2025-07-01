@@ -13,7 +13,7 @@ var r = n(255367),
   d = n(607070),
   p = n(451576),
   h = n(358221),
-  f = n(605236),
+  f = n(266454),
   m = n(243778),
   g = n(590293),
   b = n(970731),
@@ -161,7 +161,7 @@ class k extends i.PureComponent {
         callActive: n,
         canShowActivityGdmTooltip: r
       } = this.props;
-      if (r && (0, f.EW)(o.z.ACTIVITY_GDM_CALL_TOOLTIP, {
+      if (r && (0, f.Q3)(o.z.ACTIVITY_GDM_CALL_TOOLTIP, {
           dismissAction: N.L.AUTO
         }), t);
       else if (n) return this.handleJoinCall(!1);

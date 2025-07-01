@@ -1,6 +1,6 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  Z: () => E
+  Z: () => S
 }), n(388685), n(35282);
 var r = n(255367),
   i = n(73800),
@@ -52,12 +52,12 @@ function v(e, t) {
 }
 let j = O.fX.KEYWORD;
 
-function E(e, t) {
+function S(e, t) {
   let {
     perGuildMaxCount: n
   } = c.I6[j], {
-    isLoading: E,
-    saveRule: S,
+    isLoading: S,
+    saveRule: E,
     errorMessage: _
   } = (0, d.w)(), {
     createNewEditingRule: P
@@ -95,7 +95,7 @@ function E(e, t) {
           keywordFilter: [...null != (r = null == (n = t.triggerMetadata) ? void 0 : n.keywordFilter) ? r : [], e]
         })
       });
-      await S(i, x), A(i), null != _ ? (0, l.showToast)((0, l.createToast)(m.intl.string(m.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(m.intl.string(m.t["0rdYm5"]), l.ToastType.SUCCESS))
+      await E(i, x), A(i), null != _ ? (0, l.showToast)((0, l.createToast)(m.intl.string(m.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(m.intl.string(m.t["0rdYm5"]), l.ToastType.SUCCESS))
     }, G = (0, r.jsx)(l.sNh, {
       id: "automod-rules-loading",
       label: m.intl.string(m.t.ZTNur6)
@@ -105,7 +105,7 @@ function E(e, t) {
       id: "add-first-rule",
       label: m.intl.string(m.t.f72Zqa),
       action: L,
-      disabled: E
+      disabled: S
     }), x.map(e => {
       let t = (0, c.V9)(j).reduce((t, n) => {
         let r = e.actions.find(e => {
@@ -129,7 +129,7 @@ function E(e, t) {
         }),
         group: "automod-rule-selection",
         checked: !1,
-        disabled: E,
+        disabled: S,
         action: () => k(e)
       }, e.id)
     }), D && (0, r.jsxs)(r.Fragment, {
@@ -137,7 +137,7 @@ function E(e, t) {
         id: "add-another-rule",
         label: m.intl.string(m.t["0K5jDA"]),
         action: L,
-        disabled: E
+        disabled: S
       })]
     })]
   })), (0, r.jsx)(l.sNh, {

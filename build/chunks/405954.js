@@ -9,7 +9,7 @@ var r = n(255367),
   a = n(436952),
   s = n(839606),
   c = n(54480),
-  u = n(605236),
+  u = n(266454),
   d = n(243778),
   p = n(626135),
   h = n(665149),
@@ -29,7 +29,7 @@ let b = function(e) {
   } = (0, c.m)({
     location: "channel_header_toolbar",
     selectedChannelId: t.id
-  }), x = (0, u.wE)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = y && C === a.FN.TOOLBAR && x, [j, O] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = j === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, S = i.useCallback(() => {
+  }), x = (0, u.Nj)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = y && C === a.FN.TOOLBAR && x, [j, O] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = j === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, S = i.useCallback(() => {
     E && O(m.L.TAKE_ACTION), n === t.id ? (_(), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
       action: "close"
     })) : (b(t.id), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {

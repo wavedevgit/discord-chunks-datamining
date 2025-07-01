@@ -56,12 +56,12 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function I() {
+async function N() {
   let e = await d.Z.fileManager.getLogPath();
   d.Z.fileManager.showItemInFolder(e)
 }
 
-function N(e) {
+function I(e) {
   (0, l.h7j)(t => (0, i.jsx)(l.ConfirmModal, T(v({
     header: O.intl.string(O.t["7UXEFx"]),
     confirmText: O.intl.string(O.t.BddRzc),
@@ -197,7 +197,7 @@ function y(e) {
         children: [(0, i.jsx)(l.j7V, {
           hideBorder: !0,
           value: y,
-          onChange: N,
+          onChange: I,
           note: O.intl.string(O.t["/7ak9f"]),
           children: O.intl.string(O.t["726JHB"])
         }), (0, i.jsx)(l.xJW, {
@@ -216,7 +216,7 @@ function y(e) {
               shrink: 0,
               children: (0, i.jsx)(l.zxk, {
                 size: l.zxk.Sizes.SMALL,
-                onClick: I,
+                onClick: N,
                 children: O.intl.string(O.t.nuPtYm)
               })
             })]

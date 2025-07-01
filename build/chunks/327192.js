@@ -22,12 +22,12 @@ var i = n(255367),
   E = n(275759),
   j = n(231757),
   C = n(888496),
-  O = n(605236),
+  O = n(266454),
   S = n(565138),
   v = n(297700),
   T = n(553795),
-  I = n(430824),
-  N = n(771845),
+  N = n(430824),
+  I = n(771845),
   y = n(246946),
   A = n(626135),
   P = n(63063),
@@ -75,7 +75,7 @@ let H = e => {
       joinErrorMessage: "" === T.Z.joinErrorMessage(s.id) ? U.intl.string(U.t.j2d6Ki) : T.Z.joinErrorMessage(s.id),
       showJoinErrorMessage: void 0 !== T.Z.joinErrorMessage(s.id)
     }), [s.id]);
-  return null != (0, a.e7)([I.Z], () => I.Z.getGuild(s.guild.id), [s.guild.id]) || (r = (0, i.jsx)(u.zxk, {
+  return null != (0, a.e7)([N.Z], () => N.Z.getGuild(s.guild.id), [s.guild.id]) || (r = (0, i.jsx)(u.zxk, {
     size: u.PhG.SMALL,
     onClick: function() {
       g.Z.joinServer(s.id, () => {})
@@ -126,8 +126,8 @@ function z(e) {
     } = e,
     [h, b] = r.useState(o.friendSync),
     [O, S] = r.useState(o.visibility),
-    [T, I] = r.useState(o.metadataVisibility),
-    [N, y] = r.useState(o.showActivity),
+    [T, N] = r.useState(o.metadataVisibility),
+    [I, y] = r.useState(o.showActivity),
     [A, R] = r.useState(null),
     [M, G] = r.useState(null),
     [z, Y] = r.useState(!1),
@@ -135,22 +135,22 @@ function z(e) {
     q = (0, x.rR)(o.type),
     X = _.Z.get(q);
   r.useEffect(() => {
-    b(o.friendSync), S(o.visibility), I(o.metadataVisibility), y(o.showActivity)
+    b(o.friendSync), S(o.visibility), N(o.metadataVisibility), y(o.showActivity)
   }, [o]);
-  let J = {
+  let Q = {
       inProgressVisibility: A,
       inProgressMetadataVisibility: M
     },
-    Q = r.useRef(J);
+    J = r.useRef(Q);
   r.useEffect(() => {
-    Q.current = J
+    J.current = Q
   }), r.useEffect(() => {
     if (!1 === o.verified) return;
     let {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
-    } = Q.current;
-    null != e && (S(e), g.Z.setVisibility(o.type, o.id, e), R(null)), null != t && (I(t), g.Z.setMetadataVisibility(o.type, o.id, t), G(null))
+    } = J.current;
+    null != e && (S(e), g.Z.setVisibility(o.type, o.id, e), R(null)), null != t && (N(t), g.Z.setMetadataVisibility(o.type, o.id, t), G(null))
   }, [o]);
 
   function $() {
@@ -332,7 +332,7 @@ function z(e) {
     })), L.vbS.has(o.type) && (s = (0, i.jsx)(u.j7V, {
       className: V.connectionOptionSwitch,
       hideBorder: !0,
-      value: N,
+      value: I,
       onChange: function(e) {
         y(e), g.Z.setShowActivity(o.type, o.id, e)
       },
@@ -357,7 +357,7 @@ function z(e) {
           });
           return
         }
-        I(n), g.Z.setMetadataVisibility(o.type, o.id, n)
+        N(n), g.Z.setMetadataVisibility(o.type, o.id, n)
       },
       disabled: 1 !== O || null == o.metadata,
       children: (0, i.jsx)(u.Text, {
@@ -427,7 +427,7 @@ function z(e) {
 
 function Y() {
   return r.useEffect(() => () => {
-    (0, O.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
+    (0, O.Q3)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: M.L.AUTO
     })
   }, []), (0, i.jsxs)("div", {
@@ -540,7 +540,7 @@ let X = () => {
     t = (0, a.e7)([T.Z], () => T.Z.isFetching()),
     n = (0, a.e7)([T.Z], () => T.Z.getAccounts()),
     s = (0, b.ZP)();
-  (0, a.e7)([N.ZP], () => N.ZP.getFlattenedGuildIds());
+  (0, a.e7)([I.ZP], () => I.ZP.getFlattenedGuildIds());
   let l = (0, a.e7)([R.default], () => R.default.locale);
   return (r.useEffect(() => {
     g.Z.fetch()

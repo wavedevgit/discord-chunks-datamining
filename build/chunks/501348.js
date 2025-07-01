@@ -22,12 +22,12 @@ var i = n(255367),
   E = n(803038),
   j = n(600164),
   C = n(313201),
-  O = n(605236),
+  O = n(266454),
   S = n(786761),
   v = n(3148),
   T = n(739566),
-  I = n(753206),
-  N = n(921801),
+  N = n(753206),
+  I = n(921801),
   y = n(594174),
   A = n(358085),
   P = n(210887),
@@ -85,7 +85,7 @@ let Y = {
   K = (0, C.hQ)(),
   q = (0, C.hQ)(),
   X = "1337",
-  J = e => {
+  Q = e => {
     let t = 0;
     return [(0, S.e5)(z(H({}, (0, v.ZP)({
       channelId: X,
@@ -119,7 +119,7 @@ let Y = {
       id: "".concat(t)
     }))]
   },
-  Q = () => (0, i.jsxs)("div", {
+  J = () => (0, i.jsxs)("div", {
     className: V.themeTitle,
     children: [(0, i.jsxs)("div", {
       className: V.themeTitleContainer,
@@ -236,7 +236,7 @@ class $ extends r.Component {
         className: l()(V.preview, G.marginBottom40, e ? V.compactPreview : void 0, "group-spacing-".concat(null != n ? n : e ? M.c8 : M.pq)),
         outline: !0,
         "aria-hidden": !0,
-        children: s.map((t, n) => (0, i.jsx)(I.Z, {
+        children: s.map((t, n) => (0, i.jsx)(N.Z, {
           author: (0, T.ZH)(t),
           message: t,
           compact: e,
@@ -276,7 +276,7 @@ class $ extends r.Component {
         className: V.title,
         children: U.intl.string(U.t.Ksh3io)
       }), (0, i.jsx)(u.xJW, {
-        title: (0, i.jsx)(Q, {}),
+        title: (0, i.jsx)(J, {}),
         children: (0, i.jsx)(Z.i, {})
       })]
     })
@@ -308,7 +308,7 @@ class $ extends r.Component {
     let {
       density: e
     } = this.props;
-    return (0, i.jsxs)(N.F, {
+    return (0, i.jsxs)(I.F, {
       setting: k.s6.APPEARANCE_LIST_SPACING,
       children: [(0, i.jsxs)(u.xJW, {
         title: (0, i.jsx)("div", {
@@ -382,16 +382,16 @@ class $ extends r.Component {
     return (0, i.jsxs)(u.hjN, {
       tag: u.RB0.H1,
       title: U.intl.string(U.t["iHH+k5"]),
-      children: [(0, i.jsxs)(N.F, {
+      children: [(0, i.jsxs)(I.F, {
         setting: k.s6.APPEARANCE_THEME,
         children: [this.renderPreview(), this.renderTheme()]
-      }), (0, i.jsx)(N.F, {
+      }), (0, i.jsx)(I.F, {
         setting: k.s6.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
         children: this.renderDisplayMode()
-      }), this.renderListSpacing(), (0, i.jsx)(N.F, {
+      }), this.renderListSpacing(), (0, i.jsx)(I.F, {
         setting: k.s6.APPEARANCE_SCALING_SPACING,
         children: this.renderScalingAndSpacing()
-      }), (0, i.jsxs)(N.F, {
+      }), (0, i.jsxs)(I.F, {
         setting: k.s6.APPEARANCE_TIMESTAMP_HOUR_CYCLE,
         children: [this.renderTimestampHourCycle(), (0, i.jsx)(u.$i$, {
           className: G.marginTop8
@@ -435,7 +435,7 @@ class $ extends r.Component {
     (0, f.cq)(e)
   }
   constructor(...e) {
-    super(...e), F(this, "darkMessages", J(L.BRd.DARK)), F(this, "lightMessages", J(L.BRd.LIGHT)), F(this, "handleDisplayCompactAvatarsChanged", e => {
+    super(...e), F(this, "darkMessages", Q(L.BRd.DARK)), F(this, "lightMessages", Q(L.BRd.LIGHT)), F(this, "handleDisplayCompactAvatarsChanged", e => {
       m.ZP.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })
@@ -460,10 +460,10 @@ class ee extends $ {
   render() {
     let {
       density: e
-    } = this.props, t = (0, i.jsxs)(N.F, {
+    } = this.props, t = (0, i.jsxs)(I.F, {
       setting: k.s6.APPEARANCE_THEME,
       children: [this.renderPreview(), this.renderTheme()]
-    }), n = (0, i.jsx)(N.F, {
+    }), n = (0, i.jsx)(I.F, {
       setting: k.s6.APPEARANCE_ICON,
       children: (0, i.jsx)(w.c, {})
     }), r = [{
@@ -475,7 +475,7 @@ class ee extends $ {
     }, {
       name: U.intl.string(U.t["4cuYHx"]),
       value: c.Pi.COZY
-    }], s = (0, i.jsxs)(N.F, {
+    }], s = (0, i.jsxs)(I.F, {
       setting: k.s6.APPEARANCE_LIST_SPACING,
       children: [(0, i.jsxs)(u.xJW, {
         title: (0, i.jsx)(u.Text, {
@@ -495,7 +495,7 @@ class ee extends $ {
       }), (0, i.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), l = (0, i.jsxs)(N.F, {
+    }), l = (0, i.jsxs)(I.F, {
       setting: k.s6.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
       children: [(0, i.jsxs)(u.Kqy, {
         gap: 8,
@@ -541,7 +541,7 @@ class ee extends $ {
       }), this.renderMessageGroupSpacingSlider(), (0, i.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), a = (0, i.jsxs)(N.F, {
+    }), a = (0, i.jsxs)(I.F, {
       setting: k.s6.APPEARANCE_SCALING_SPACING,
       children: [(0, i.jsx)(u.Text, {
         variant: "text-lg/medium",
@@ -550,7 +550,7 @@ class ee extends $ {
       }), this.renderFontScaleSlider(), this.renderZoomSlider(), (0, i.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), o = (0, i.jsx)(N.F, {
+    }), o = (0, i.jsx)(I.F, {
       setting: k.s6.APPEARANCE_TIMESTAMP_HOUR_CYCLE,
       children: this.renderTimestampHourCycle()
     }), d = (0, i.jsx)(u.Text, {
@@ -570,7 +570,7 @@ class ee extends $ {
   }
 }
 let et = e => {
-  (0, O.un)(e) || (0, O.EW)(e, {
+  (0, O.zu)(e) || (0, O.Q3)(e, {
     dismissAction: B.L.AUTO,
     forceTrack: !0
   })

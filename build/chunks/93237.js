@@ -6,7 +6,7 @@ n.d(t, {
   p9: () => d
 });
 var r = n(704215),
-  i = n(605236),
+  i = n(266454),
   l = n(70956),
   a = n(709054),
   o = n(304480),
@@ -22,9 +22,9 @@ function c(e) {
     numMinutes: Math.floor(60 * t)
   })
 }
-let u = () => (0, i.un)(r.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
+let u = () => (0, i.zu)(r.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
   d = () => {
-    (0, i.EW)(r.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
+    (0, i.Q3)(r.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
   },
   p = e => {
     let {

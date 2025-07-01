@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(544891),
   i = n(704215),
   a = n(147913),
-  o = n(605236),
+  o = n(266454),
   s = n(581883),
   l = n(430824),
   c = n(496675),
@@ -40,7 +40,7 @@ class E extends a.Z {
   }
   async maybeSendSystemMessage() {
     if (this.isRequestInProgress || !s.Z.hasLoaded(m.yP.PRELOADED_USER_SETTINGS)) return;
-    let e = (0, o.un)(i.z.TIERLESS_BOOSTING_SYSTEM_MESSAGE),
+    let e = (0, o.zu)(i.z.TIERLESS_BOOSTING_SYSTEM_MESSAGE),
       t = (0, _.V)("guild_powerups_system_message");
     if (e || !t) return;
     let n = this.findEligibleGuild();
@@ -50,7 +50,7 @@ class E extends a.Z {
         await r.tn.post({
           url: h.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(n.id),
           rejectWithError: !0
-        }), (0, o.EW)(i.z.TIERLESS_BOOSTING_SYSTEM_MESSAGE)
+        }), (0, o.Q3)(i.z.TIERLESS_BOOSTING_SYSTEM_MESSAGE)
       } catch (e) {
         d.Z.captureException(e)
       } finally {

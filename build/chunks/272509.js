@@ -7,7 +7,7 @@ var s = i(255367),
   o = i(704215),
   l = i(481060),
   a = i(607070),
-  r = i(605236),
+  r = i(266454),
   d = i(749681),
   c = i(661824),
   b = i(626135),
@@ -91,7 +91,7 @@ function C(t) {
       className: _.modalFooter,
       children: [(0, s.jsx)(l.zxk, {
         onClick: () => {
-          j(), (0, r.EW)(N, {
+          j(), (0, r.Q3)(N, {
             forceTrack: !0,
             dismissAction: u.L.PRIMARY,
             guildId: e
@@ -109,7 +109,7 @@ function C(t) {
       }), (0, s.jsx)(l.zxk, {
         look: l.zxk.Looks.LINK,
         onClick: () => {
-          j(), (0, r.EW)(N, {
+          j(), (0, r.Q3)(N, {
             forceTrack: !0,
             dismissAction: u.L.SECONDARY,
             guildId: e

@@ -49,8 +49,8 @@ var r = n(255367),
   Y = n(917405),
   K = n(641015),
   q = n(848543),
-  X = n(565799),
-  Q = n(501655),
+  Q = n(565799),
+  X = n(501655),
   J = n(368442),
   $ = n(600518),
   ee = n(485287),
@@ -501,7 +501,7 @@ function eq(e) {
     }
   })
 }
-class eX extends i.PureComponent {
+class eQ extends i.PureComponent {
   renderConnectionStatus() {
     let e, {
       channel: t,
@@ -573,7 +573,7 @@ class eX extends i.PureComponent {
         let {
           isShown: i
         } = n;
-        return (0, r.jsx)(eQ, {
+        return (0, r.jsx)(eX, {
           popoutProps: t,
           isShown: i,
           noiseCancellationActive: e,
@@ -720,7 +720,7 @@ class eX extends i.PureComponent {
   }
 }
 
-function eQ(e) {
+function eX(e) {
   let {
     popoutProps: t,
     isShown: n,
@@ -775,7 +775,7 @@ let eJ = (0, O.Z)(function(e) {
     noiseCancellationActive: e_.Z.getNoiseCancellation(),
     noiseCancellationError: e_.Z.isNoiseCancellationError(),
     canGoLive: (0, B.Z)(e_.Z)
-  })), b = (0, u.e7)([e_.Z, F.Z], () => F.Z.hasHotspot(eR.v.VOICE_PANEL_INTRODUCTION) && (0, eT.EO)(o) && !e_.Z.isInteractionRequired() && !(null == p ? void 0 : p.isGuildStageVoice())), _ = (0, u.e7)([ev.Z], () => null != c && ev.Z.hasVideo(c), [c]), O = (0, u.e7)([eh.Z], () => eh.Z.getCurrentUserActiveStream()), E = (0, u.e7)([eb.Z], () => eb.Z.hasLayers()), y = (0, u.e7)([z.Z], () => z.Z.isViewingRoles(h)), I = (0, u.e7)([eO.Z], () => y && !eO.Z.can(eL.Plq.VIEW_CHANNEL, p), [y, p]), C = er.Fg.useSetting(), [S, T, P] = (0, u.Wu)([eC.ZP, X.Z], () => (null == p ? void 0 : p.isGuildStageVoice()) ? [X.Z.getMutableParticipants(p.id, Q.pV.SPEAKER), X.Z.getParticipantsVersion(p.id), null] : [null, null, null != p ? eC.ZP.getVoiceStatesForChannel(p) : null], [p]), Z = i.useMemo(() => {
+  })), b = (0, u.e7)([e_.Z, F.Z], () => F.Z.hasHotspot(eR.v.VOICE_PANEL_INTRODUCTION) && (0, eT.EO)(o) && !e_.Z.isInteractionRequired() && !(null == p ? void 0 : p.isGuildStageVoice())), _ = (0, u.e7)([ev.Z], () => null != c && ev.Z.hasVideo(c), [c]), O = (0, u.e7)([eh.Z], () => eh.Z.getCurrentUserActiveStream()), E = (0, u.e7)([eb.Z], () => eb.Z.hasLayers()), y = (0, u.e7)([z.Z], () => z.Z.isViewingRoles(h)), I = (0, u.e7)([eO.Z], () => y && !eO.Z.can(eL.Plq.VIEW_CHANNEL, p), [y, p]), C = er.Fg.useSetting(), [S, T, P] = (0, u.Wu)([eC.ZP, Q.Z], () => (null == p ? void 0 : p.isGuildStageVoice()) ? [Q.Z.getMutableParticipants(p.id, X.pV.SPEAKER), Q.Z.getParticipantsVersion(p.id), null] : [null, null, null != p ? eC.ZP.getVoiceStatesForChannel(p) : null], [p]), Z = i.useMemo(() => {
     var e, t;
     return null != (t = null != (e = null == S ? void 0 : S.map(e => {
       let {
@@ -803,7 +803,7 @@ let eJ = (0, O.Z)(function(e) {
       children: [null != l || null != a ? (0, r.jsx)(G.Z, {
         voiceState: l,
         awaitingRemoteSessionInfo: a
-      }) : null, (0, r.jsx)(eX, eB(eG({}, e, m, d), {
+      }) : null, (0, r.jsx)(eQ, eB(eG({}, e, m, d), {
         enableActivities: k,
         remoteVoiceState: l,
         guild: g,

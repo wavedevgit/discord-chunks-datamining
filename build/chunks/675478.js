@@ -17,12 +17,12 @@ n.d(t, {
 }), n(415506), n(388685), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
 var r = n(512722),
   i = n.n(r),
-  a = n(259443),
-  o = n(544891),
-  s = n(377108),
-  l = n(524437),
-  c = n(433517),
-  u = n(570140),
+  a = n(544891),
+  o = n(377108),
+  s = n(524437),
+  l = n(433517),
+  c = n(570140),
+  u = n(710845),
   d = n(428967),
   f = n(605236),
   _ = n(70956),
@@ -59,9 +59,9 @@ let v = 5e3,
   T = Date.now();
 
 function S() {}
-u.Z.subscribe("CONNECTION_OPEN", () => {
+c.Z.subscribe("CONNECTION_OPEN", () => {
   T = Date.now()
-}), u.Z.subscribe("CONNECTION_CLOSED", () => {
+}), c.Z.subscribe("CONNECTION_CLOSED", () => {
   T = Date.now()
 }), "undefined" != typeof document && (document.addEventListener("mousedown", () => {
   T = 0
@@ -84,7 +84,7 @@ class A {
       o = null != a ? i.fromBinary(i.toBinary(a), g.Uc) : i.create();
     if (!1 === t(o)) return;
     let s = this.ProtoClass.create();
-    s[e] = o, __OVERLAY__ ? u.Z.dispatch({
+    s[e] = o, __OVERLAY__ ? c.Z.dispatch({
       type: "USER_SETTINGS_PROTO_ENQUEUE_UPDATE",
       settings: {
         type: this.type,
@@ -109,7 +109,7 @@ class A {
       timeout: r.timeout
     };
     if (!r.loaded) throw Error("Cannot edit user settings proto because we have not yet loaded the stored version from the DB");
-    !1 !== t.dispatch && u.Z.dispatch({
+    !1 !== t.dispatch && c.Z.dispatch({
       type: "USER_SETTINGS_PROTO_UPDATE",
       settings: {
         type: this.type,
@@ -126,7 +126,7 @@ class A {
     null != t.cleanup && (a.cleanupFuncs = [...r.cleanupFuncs, ...t.cleanup]), null == r.protoToSave ? a.protoToSave = e : a.protoToSave = (0, g.re)(this.ProtoClass, r.protoToSave, e), this.dispatchChanges(a)
   }
   dispatchChanges(e) {
-    u.Z.dispatch({
+    c.Z.dispatch({
       type: "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO",
       settings: {
         changes: e,
@@ -136,14 +136,14 @@ class A {
   }
   saveLastSendTime() {
     var e;
-    let t = null != (e = c.K.get(I)) ? e : {};
-    t[this.type] = Date.now(), c.K.set(I, t)
+    let t = null != (e = l.K.get(I)) ? e : {};
+    t[this.type] = Date.now(), l.K.set(I, t)
   }
   loadIfUncached(e, t) {
     m.Z.hasLoaded(e) && !0 !== t || this.loadIfNecessary(t)
   }
   async loadIfNecessary(e) {
-    if (__OVERLAY__) return void u.Z.dispatch({
+    if (__OVERLAY__) return void c.Z.dispatch({
       type: "USER_SETTINGS_PROTO_LOAD_IF_NECESSARY",
       settingsType: this.type
     });
@@ -159,7 +159,7 @@ class A {
           body: {
             settings: t
           }
-        } = await o.tn.get({
+        } = await a.tn.get({
           url: b.ANM.USER_SETTINGS_PROTO(this.type),
           rejectWithError: !1
         }), n = (0, g.d5)(this.ProtoClass, t);
@@ -170,18 +170,18 @@ class A {
         let r = h.Z[this.type],
           {
             proto: i,
-            isDirty: a,
+            isDirty: o,
             cleanupFuncs: s
           } = (0, g.xt)(n, r);
-        return await u.Z.dispatch({
+        return await c.Z.dispatch({
           type: "USER_SETTINGS_PROTO_UPDATE",
           settings: {
             type: this.type,
             proto: n
           },
-          resetEditInfo: a || e,
+          resetEditInfo: o || e,
           local: !1
-        }), a && this.markDirtyFromMigration(i, s), n
+        }), o && this.markDirtyFromMigration(i, s), n
       } catch (e) {
         throw this.dispatchChanges({
           loading: !1
@@ -241,7 +241,7 @@ class A {
         this.saveLastSendTime();
         let {
           body: n
-        } = await o.tn.patch({
+        } = await a.tn.patch({
           url: b.ANM.USER_SETTINGS_PROTO(this.type),
           body: {
             settings: t,
@@ -252,7 +252,7 @@ class A {
         n.out_of_date && this.logger.log("Proto was out of date, discarding changes"), this.getEditInfo().editInfo.cleanupFuncs.forEach(e => e());
         let r = (0, g.d5)(this.ProtoClass, n.settings);
         if (null == r) return;
-        u.Z.dispatch({
+        c.Z.dispatch({
           type: "USER_SETTINGS_PROTO_UPDATE",
           settings: {
             proto: r,
@@ -276,11 +276,11 @@ class A {
         } else if (400 === e.status && (null == (n = e.body) ? void 0 : n.code) === b.evJ.INVALID_USER_SETTINGS_DATA) throw this.logger.log("Reloading do to invalid data"), this.loadIfNecessary(!0), e;
         else throw this.logger.log("Unknown user settings error"), e
       }
-    }, this.logger = new a.Yd(this.ProtoClass.typeName)
+    }, this.logger = new u.Z(this.ProtoClass.typeName)
   }
 }
-let N = new A(l.o8, E.yP.PRELOADED_USER_SETTINGS),
-  C = new A(s.ji, E.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+let N = new A(s.o8, E.yP.PRELOADED_USER_SETTINGS),
+  C = new A(o.ji, E.yP.FRECENCY_AND_FAVORITES_SETTINGS),
   R = {
     [E.yP.PRELOADED_USER_SETTINGS]: N,
     [E.yP.FRECENCY_AND_FAVORITES_SETTINGS]: C

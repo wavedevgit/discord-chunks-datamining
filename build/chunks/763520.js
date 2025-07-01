@@ -3,8 +3,8 @@ n.d(t, {
   m: () => m,
   o: () => v
 }), n(388685);
-var r, l = n(259443),
-  i = n(379649),
+var r, l = n(379649),
+  i = n(710845),
   a = n(314897),
   o = n(592125),
   s = n(866960),
@@ -25,7 +25,7 @@ var m = ((r = {}).SELF_VIDEO = "self_video", r.SELF_STREAM = "self_stream", r.RE
 let h = new Map;
 class v {
   onSpinnerStarted() {
-    null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, i.zO)())
+    null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, l.zO)())
   }
   trackSpinnerDuration(e, t, n) {
     if (null == this.spinnerVisibleStart) return;
@@ -34,9 +34,9 @@ class v {
         let n = (null != (t = h.get(e)) ? t : 0) + 1;
         return h.set(e, n), n
       }(n),
-      l = (0, i.zO)() - this.spinnerVisibleStart;
-    if (this.spinnerVisibleStart = null, l < 0) return void this.logger.warn("spinner duration is negative: ".concat(l, " ms\n        [").concat(e, ", count for stream: ").concat(r, "]"));
-    this.logger.info("spinner visible for ".concat(l, " ms\n      [").concat(e, ", count for stream: ").concat(r, "]"));
+      i = (0, l.zO)() - this.spinnerVisibleStart;
+    if (this.spinnerVisibleStart = null, i < 0) return void this.logger.warn("spinner duration is negative: ".concat(i, " ms\n        [").concat(e, ", count for stream: ").concat(r, "]"));
+    this.logger.info("spinner visible for ".concat(i, " ms\n      [").concat(e, ", count for stream: ").concat(r, "]"));
     let p = c.Z.getGuildId(),
       m = u.Z.getUserVoiceChannelId(p, a.default.getId()),
       v = function(e) {
@@ -50,7 +50,7 @@ class v {
       }(o.Z.getChannel(m));
     d.default.track(f.rMx.VIDEO_SPINNER_SHOWN_V2, {
       video_spinner_context: e,
-      duration_video_spinner_visible_ms: l,
+      duration_video_spinner_visible_ms: i,
       rtc_connection_id: c.Z.getRTCConnectionId(),
       media_session_id: c.Z.getMediaSessionId(),
       event_count_for_stream: r,
@@ -64,6 +64,6 @@ class v {
     })
   }
   constructor(e) {
-    p(this, "logger", void 0), p(this, "spinnerVisibleStart", null), this.logger = new l.Yd(e)
+    p(this, "logger", void 0), p(this, "spinnerVisibleStart", null), this.logger = new i.Z(e)
   }
 }

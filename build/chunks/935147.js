@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(350327),
   v = n(996073),
   T = n(25990),
-  I = n(626135),
-  N = n(74538),
+  N = n(626135),
+  I = n(74538),
   y = n(296810),
   A = n(433411),
   P = n(532432),
@@ -48,14 +48,14 @@ function G(e) {
     user: G,
     isVisible: F,
     shouldShow: H
-  } = e, z = N.ZP.isPremium(G), {
+  } = e, z = I.ZP.isPremium(G), {
     pendingAvatar: Y,
     pendingThemeColors: W,
     tryItOutThemeColors: K,
     tryItOutAvatar: q,
     tryItOutBanner: X,
-    tryItOutProfileEffectId: J,
-    tryItOutAvatarDecoration: Q
+    tryItOutProfileEffectId: Q,
+    tryItOutAvatarDecoration: J
   } = (0, s.cj)([T.Z], () => {
     var e, t;
     let n = T.Z.getAllPending(),
@@ -89,7 +89,7 @@ function G(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
-  }), $ = (0, h.Z)(J), {
+  }), $ = (0, h.Z)(Q), {
     preset: ee,
     onShuffle: et
   } = (0, _.Z)(), en = r.useRef(null);
@@ -100,17 +100,17 @@ function G(e) {
     sourceAnalyticsLocations: es
   } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), el = e => {
     if (e) {
-      if ((0, a.I5)(q), (0, S.z5)(K), (0, S.ho)(X), null != Q) {
-        let e = m.Z.getProduct(Q.skuId);
-        null != e && (0, p.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, a.cV)(Q)) : null != g.Z.getPurchase(Q.skuId) && (0, a.cV)(Q)
+      if ((0, a.I5)(q), (0, S.z5)(K), (0, S.ho)(X), null != J) {
+        let e = m.Z.getProduct(J.skuId);
+        null != e && (0, p.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, a.cV)(J)) : null != g.Z.getPurchase(J.skuId) && (0, a.cV)(J)
       }
-      I.default.track(L.rMx.TRY_IT_OUT_PRESET_SELECTED, {
+      N.default.track(L.rMx.TRY_IT_OUT_PRESET_SELECTED, {
         preset: ee
       })
     }
   };
   r.useEffect(() => {
-    F && I.default.track(L.rMx.PREMIUM_UPSELL_VIEWED, {
+    F && N.default.track(L.rMx.PREMIUM_UPSELL_VIEWED, {
       type: B.cd.PREMIUM_PROFILE_TRY_IT_OUT,
       location: {
         page: L.ZY5.USER_SETTINGS

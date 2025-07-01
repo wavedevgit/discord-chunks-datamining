@@ -11,7 +11,7 @@ var r = t(255367),
   s = t(704215),
   d = t(481060),
   o = t(100527),
-  c = t(605236),
+  c = t(266454),
   u = t(314852),
   m = t(65361),
   f = t(731722),
@@ -82,7 +82,7 @@ let O = [T.x_.LEAF, T.x_.SWORD, T.x_.HEART, T.x_.FIRE, T.x_.WATER_DROP, T.x_.SKU
         fetchStatus: G
       } = (0, m.u)(null == w ? void 0 : w.id);
     if (i.useEffect(() => {
-        (0, c.EW)(s.z.GUILD_TAG_SERVER_SETTINGS_NEW_BADGE, {
+        (0, c.Q3)(s.z.GUILD_TAG_SERVER_SETTINGS_NEW_BADGE, {
           dismissAction: P.L.AUTO
         })
       }, []), i.useEffect(() => {

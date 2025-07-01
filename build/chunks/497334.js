@@ -9,7 +9,7 @@ var i = n(120356),
   a = n(704215),
   o = n(481060),
   s = n(927359),
-  c = n(605236),
+  c = n(266454),
   u = n(227140),
   d = n(388032),
   p = n(441393);
@@ -17,7 +17,7 @@ var i = n(120356),
 function h(e) {
   let {
     expiresAt: t
-  } = e, n = (0, s.ZP)(t, s.aj.SHORT_TIME), i = (0, c.un)(a.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2);
+  } = e, n = (0, s.ZP)(t, s.aj.SHORT_TIME), i = (0, c.zu)(a.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2);
   return "" === n ? null : (n = n.toUpperCase(), i) ? (0, r.jsxs)("div", {
     className: l()(p.premiumTrialBadge, p.premiumTrialAcknowledgedBadge, {}),
     children: [(0, r.jsx)(o.T39, {

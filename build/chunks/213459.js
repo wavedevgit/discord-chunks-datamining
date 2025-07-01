@@ -14,12 +14,12 @@ n.d(t, {
 var r, i = n(73800),
   a = n(512722),
   o = n.n(a),
-  s = n(259443),
-  l = n(442837),
-  c = n(570140),
-  u = n(749210),
-  d = n(911969),
-  f = n(822245),
+  s = n(442837),
+  l = n(570140),
+  c = n(749210),
+  u = n(911969),
+  d = n(822245),
+  f = n(710845),
   _ = n(399860),
   p = n(706454),
   h = n(675478),
@@ -79,7 +79,7 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = new s.Yd("ApplicationCommandIndexStore"),
+let j = new f.Z("ApplicationCommandIndexStore"),
   U = Symbol("currentUser"),
   G = Symbol("stale"),
   B = Symbol("current"),
@@ -203,12 +203,12 @@ function er(e) {
   if (null == o) return W || K.push(e), !1;
   let s = {},
     l = {},
-    c = new Set;
+    u = new Set;
   for (let e of a.applications) {
     if (null == e.bot && null != e.bot_id) {
       l[e.bot_id] = e.id;
       let t = b.default.getUser(e.bot_id);
-      null != t ? e.bot = t : c.add(e.bot_id)
+      null != t ? e.bot = t : u.add(e.bot_id)
     } else null != e.bot && (l[e.bot.id] = e.id);
     let t = {
       descriptor: M(x({}, (0, C.X0)(eP(e))), {
@@ -219,7 +219,7 @@ function er(e) {
     };
     s[e.id] = t
   }
-  for (let e of ("guild" === i.type && c.size > 0 && u.Z.requestMembersById(i.guildId, [...c]), (0, C.nG)(a.application_commands.map(e => ew(e, o)), !0))) {
+  for (let e of ("guild" === i.type && u.size > 0 && c.Z.requestMembersById(i.guildId, [...u]), (0, C.nG)(a.application_commands.map(e => ew(e, o)), !0))) {
     let t = s[e.applicationId];
     if (null == t) {
       j.error("Command has no matching application");
@@ -374,7 +374,7 @@ function ef() {
     numeric: !0
   }), ep.oldLocale = e, !0)
 }
-class e_ extends(r = l.ZP.Store) {
+class e_ extends(r = s.ZP.Store) {
   initialize() {
     this.waitFor(p.default), this.waitFor(m.default), this.syncWith([p.default], () => {
       ef()
@@ -466,7 +466,7 @@ class e_ extends(r = l.ZP.Store) {
     } : {
       type: "contextless"
     }, {
-      commandTypes: [d.yU.CHAT]
+      commandTypes: [u.yU.CHAT]
     }, {
       placeholderCount: 5,
       scoreMethod: A.p.COMMAND_ONLY,
@@ -479,7 +479,7 @@ class e_ extends(r = l.ZP.Store) {
   }
 }
 L(e_, "displayName", "ApplicationCommandIndexStore");
-let ep = new e_(c.Z, {
+let ep = new e_(l.Z, {
     LOGOUT: Q,
     CONNECTION_OPEN: $,
     APPLICATION_COMMAND_INDEX_FETCH_REQUEST: ee,
@@ -496,7 +496,7 @@ let ep = new e_(c.Z, {
   eh = ep;
 
 function em(e, t, n) {
-  let [r, a] = i.useState(!0), o = (0, l.cj)([ep], () => "channel" === e.type ? ep.getContextState(e) : ep.getUserState());
+  let [r, a] = i.useState(!0), o = (0, s.cj)([ep], () => "channel" === e.type ? ep.getContextState(e) : ep.getUserState());
   return i.useEffect(() => {
     if (r) {
       if ("contextless" === e.type) {
@@ -520,7 +520,7 @@ function em(e, t, n) {
 }
 
 function eg(e, t) {
-  let [n, r] = i.useState(!0), a = (0, l.cj)([ep], () => {
+  let [n, r] = i.useState(!0), a = (0, s.cj)([ep], () => {
     var t;
     return null != (t = ep.indices[e]) ? t : Z
   });
@@ -536,7 +536,7 @@ function eg(e, t) {
 }
 
 function eE(e, t) {
-  let [n, r] = i.useState(!0), a = (0, l.cj)([ep], () => ep.getUserState());
+  let [n, r] = i.useState(!0), a = (0, s.cj)([ep], () => ep.getUserState());
   return i.useEffect(() => {
     n && (t && eC(a) && e && (0, S.j)({
       type: "user"
@@ -545,7 +545,7 @@ function eE(e, t) {
 }
 
 function eb(e, t) {
-  let [n, r] = i.useState(!0), a = (0, l.e7)([ep], () => ep.getApplicationState(e));
+  let [n, r] = i.useState(!0), a = (0, s.e7)([ep], () => ep.getApplicationState(e));
   i.useEffect(() => {
     n && (t && eC(a) && null != e && (0, S.j)({
       type: "application",
@@ -555,11 +555,11 @@ function eb(e, t) {
 }
 
 function ey() {
-  return (0, l.e7)([ep], () => ep.getApplicationStates())
+  return (0, s.e7)([ep], () => ep.getApplicationStates())
 }
 
 function eO() {
-  return (0, l.e7)([ep], () => ep.applicationIndicesVersion)
+  return (0, s.e7)([ep], () => ep.applicationIndicesVersion)
 }
 
 function ev(e, t, n, r) {
@@ -639,7 +639,7 @@ function eS(e) {
   let {
     permissionContext: c,
     contextState: u,
-    userState: d,
+    userState: f,
     applicationStates: _,
     text: p,
     builtIns: m = A.D.ALLOW,
@@ -658,7 +658,7 @@ function eS(e) {
     allowEmptySections: y,
     scoreMethod: O,
     installOnDemand: S
-  }, j = null != (i = null == (t = u.result) ? void 0 : t.sections) ? i : {}, U = null != (a = null == (n = d.result) ? void 0 : n.sections) ? a : {}, G = new Set;
+  }, j = null != (i = null == (t = u.result) ? void 0 : t.sections) ? i : {}, U = null != (a = null == (n = f.result) ? void 0 : n.sections) ? a : {}, G = new Set;
   if (g) {
     if (c.hasBaseAccessPermissions)
       for (let e in j) {
@@ -705,8 +705,8 @@ function eS(e) {
         if (o !== s) return o - s
       }
       if (I.applications.useFrecency) {
-        let n = f.Z.getScoreWithoutLoadingLatest(e.section.id),
-          r = f.Z.getScoreWithoutLoadingLatest(t.section.id);
+        let n = d.Z.getScoreWithoutLoadingLatest(e.section.id),
+          r = d.Z.getScoreWithoutLoadingLatest(t.section.id);
         if (n !== r) return r - n
       }
       return ej(e.section.name, t.section.name)
@@ -744,7 +744,7 @@ function eS(e) {
     commands: V,
     descriptors: L.map(e => e.section),
     sectionedCommands: L,
-    loading: (null == u ? void 0 : u.fetchState.fetching) === !0 || (null == d ? void 0 : d.fetchState.fetching) === !0 || null != b && (null == (r = _.get(b)) ? void 0 : r.fetchState.fetching) === !0
+    loading: (null == u ? void 0 : u.fetchState.fetching) === !0 || (null == f ? void 0 : f.fetchState.fetching) === !0 || null != b && (null == (r = _.get(b)) ? void 0 : r.fetchState.fetching) === !0
   }
 }
 
@@ -914,13 +914,13 @@ function eG(e, t) {
   let l, c;
   if (t === w.bi.BUILT_IN) return {
     descriptor: v.Tm[w.bi.BUILT_IN],
-    sectionCommands: (0, v.Kh)([d.yU.CHAT], !0, !1),
+    sectionCommands: (0, v.Kh)([u.yU.CHAT], !0, !1),
     isGuildInstalled: !0,
     isUserInstalled: !0
   };
-  let u = ep.getContextState(e),
+  let d = ep.getContextState(e),
     f = ep.getUserState(),
-    _ = null != (o = null == (n = u.result) ? void 0 : n.sections) ? o : {},
+    _ = null != (o = null == (n = d.result) ? void 0 : n.sections) ? o : {},
     p = null != (s = null == (r = f.result) ? void 0 : r.sections) ? s : {},
     h = _[t],
     m = p[t],

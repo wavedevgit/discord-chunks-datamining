@@ -17,7 +17,7 @@ var i = n(255367),
   p = n(514361),
   h = n(705262),
   f = n(550385),
-  b = n(605236),
+  b = n(266454),
   _ = n(104494),
   x = n(639119),
   E = n(767714),
@@ -27,11 +27,11 @@ var i = n(255367),
   S = n(210887),
   v = n(981631),
   T = n(921944),
-  I = n(474936),
-  N = n(388032),
+  N = n(474936),
+  I = n(388032),
   y = n(967655);
 let A = () => {
-    (0, b.EW)(l.z.CLIENT_THEMES_SPARKLE_PREVIEW, {
+    (0, b.Q3)(l.z.CLIENT_THEMES_SPARKLE_PREVIEW, {
       dismissAction: T.L.PRIMARY,
       forceTrack: !0
     }), (0, f.XO)(f.wh.CLIENT_THEMES), (0, c.xf)()
@@ -40,10 +40,10 @@ let A = () => {
     var e, t;
     let {
       analyticsLocations: n
-    } = (0, g.ZP)(m.Z.USER_SETTINGS), l = (0, s.e7)([p.Z], () => p.Z.isPreview), a = (null == (t = (0, x.N)()) || null == (e = t.subscription_trial) ? void 0 : e.sku_id) === I.Si.TIER_2, c = (0, _.Ng)(), d = (0, _.Wp)(c, I.Si.TIER_2);
+    } = (0, g.ZP)(m.Z.USER_SETTINGS), l = (0, s.e7)([p.Z], () => p.Z.isPreview), a = (null == (t = (0, x.N)()) || null == (e = t.subscription_trial) ? void 0 : e.sku_id) === N.Si.TIER_2, c = (0, _.Ng)(), d = (0, _.Wp)(c, N.Si.TIER_2);
     return r.useEffect(() => {
       l && O.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: I.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+        type: N.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
         location_stack: n
       })
     }, [l, n]), (0, i.jsxs)("div", {
@@ -63,14 +63,14 @@ let A = () => {
                 size: o.zxk.Sizes.MEDIUM,
                 color: o.zxk.Colors.PRIMARY,
                 onClick: () => A(),
-                children: N.intl.string(N.t["E+COuL"])
+                children: I.intl.string(I.t["E+COuL"])
               }), (0, i.jsx)(E.Z, {
                 showGradient: !1,
-                subscriptionTier: I.Si.TIER_2,
+                subscriptionTier: N.Si.TIER_2,
                 textOptions: {
-                  textOverride: d ? N.intl.formatToPlainString(N.t.bkQ4bG, {
+                  textOverride: d ? I.intl.formatToPlainString(I.t.bkQ4bG, {
                     percent: null == c ? void 0 : c.discount.amount
-                  }) : N.intl.string(N.t.mr4K7O)
+                  }) : I.intl.string(I.t.mr4K7O)
                 },
                 className: y.premiumCta
               })]
@@ -80,12 +80,12 @@ let A = () => {
               className: y.previewThemeButtonWide,
               color: o.zxk.Colors.PRIMARY,
               onClick: () => A(),
-              children: N.intl.string(N.t["E+COuL"])
+              children: I.intl.string(I.t["E+COuL"])
             }), (0, i.jsx)("div", {
               className: y.premiumTier2Divider
             }), (0, i.jsx)(j.ZP, {
-              type: I.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
-              subscriptionTier: I.Si.TIER_2
+              type: N.cd.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
+              subscriptionTier: N.Si.TIER_2
             })]
           })]
         })]
@@ -115,12 +115,12 @@ function R() {
     className: y.darkSidebarToggle,
     children: (0, i.jsx)("span", {
       className: y.title,
-      children: N.intl.string(N.t.yF54Ki)
+      children: I.intl.string(I.t.yF54Ki)
     })
   })
 }
 let D = () => (0, s.e7)([p.Z], () => p.Z.isPreview) ? null : (0, i.jsx)(o.zxk, {
   size: o.PhG.MEDIUM,
   onClick: A,
-  children: N.intl.string(N.t.qYXrkZ)
+  children: I.intl.string(I.t.qYXrkZ)
 })

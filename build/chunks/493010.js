@@ -11,7 +11,7 @@ var r = n(255367),
   c = n(287746),
   u = n(325708),
   d = n(541716),
-  p = n(605236),
+  p = n(266454),
   h = n(665149),
   f = n(703558),
   m = n(585483),
@@ -27,7 +27,7 @@ let x = function(e) {
     maxWidth: x
   } = e;
   i.useEffect(() => {
-    (0, p.EW)(l.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
+    (0, p.Q3)(l.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
       dismissAction: _.L.AUTO
     })
   }, []);

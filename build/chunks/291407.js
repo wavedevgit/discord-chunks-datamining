@@ -6,7 +6,7 @@ var r = n(255367),
   i = n(73800),
   l = n(442837),
   o = n(704215),
-  a = n(605236),
+  a = n(266454),
   s = n(243778),
   c = n(375954),
   u = n(890977),
@@ -22,7 +22,7 @@ function p(e) {
     let e = [];
     return f && e.push(o.z.DESKTOP_APP_LAUNCHER_ONBOARDING), e
   }, [f]), g = () => {
-    setTimeout(() => (0, a.EW)(o.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
+    setTimeout(() => (0, a.Q3)(o.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
       dismissAction: d.L.AUTO_DISMISS
     }), 1e4)
   };

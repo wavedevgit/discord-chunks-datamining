@@ -6,7 +6,7 @@ var i = n(255367);
 n(73800);
 var r = n(704215),
   o = n(13245),
-  l = n(605236),
+  l = n(266454),
   s = n(593481),
   a = n(371651),
   c = n(237997),
@@ -90,7 +90,7 @@ function m(e) {
       O("unlock"), o.Z.setInputLocked(!1, (0, d.getPID)())
     } : void 0,
     onNotificationShow: () => {
-      y(), t && (0, l.EW)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
+      y(), t && (0, l.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
     },
     onNotificationClick: (e, t) => {
       O("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? o.Z.setInputLocked(!1, (0, d.getPID)()) : c.default.isInstanceLocked() && o.Z.setInstanceLocked(!1)

@@ -16,7 +16,7 @@ var r = n(73800),
   u = n(704215),
   c = n(45114),
   d = n(740504),
-  E = n(605236),
+  E = n(266454),
   _ = n(931261),
   A = n(540126),
   m = n(671098),
@@ -79,7 +79,7 @@ function D(e, t) {
 }
 
 function x(e, t, n, r) {
-  let l = (0, E.wE)(u.z.CHANNEL_BROWSER_NUX),
+  let l = (0, E.Nj)(u.z.CHANNEL_BROWSER_NUX),
     i = (0, o.cj)([f.Z], () => {
       let t = {},
         n = f.Z.getMutableGuildChannelsForGuild(e);

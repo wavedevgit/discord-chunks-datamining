@@ -9,7 +9,7 @@ var i = n(255367),
   s = n(114858),
   l = n(442837),
   a = n(704215),
-  o = n(605236),
+  o = n(266454),
   c = n(703656),
   d = n(664915),
   u = n(507808),
@@ -129,7 +129,7 @@ let C = e => {
     onShowCoachmarkHandler: s
   }), d = r.useCallback(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "CLOSE";
-    (0, o.EW)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
+    (0, o.Q3)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
       dismissAction: p.L.INDIRECT_ACTION,
       groupName: p.R.VIRTUAL_CURRENCY_ONBOARDING
     }), c(e)

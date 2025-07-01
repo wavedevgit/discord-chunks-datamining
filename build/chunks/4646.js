@@ -13,7 +13,7 @@ n.d(t, {
   ZP: () => s,
   k2: () => a
 }), n(388685);
-let i = new(n(259443)).Yd("AssetMap");
+let i = new(n(710845)).Z("AssetMap");
 async function a(e) {
   let t = new o,
     n = Object.entries(e).map(e => {

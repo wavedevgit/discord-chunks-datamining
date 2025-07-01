@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(921801),
   v = n(485341),
   T = n(687158),
-  I = n(518950),
-  N = n(184325),
+  N = n(518950),
+  I = n(184325),
   y = n(867176),
   A = n(25990),
   P = n(594174),
@@ -213,7 +213,7 @@ function W(e) {
       size: u.zxk.Sizes.SMALL,
       color: u.zxk.Colors.PRIMARY,
       "aria-label": V.intl.string(V.t.YXeWYG),
-      onClick: Q,
+      onClick: J,
       children: p ? V.intl.string(V.t["16kTw8"]) : V.intl.string(V.t.bt75u7)
     })]
   })
@@ -385,7 +385,7 @@ function X(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   let {
     user: t
   } = e, n = (0, x.Z)({
@@ -419,7 +419,7 @@ function J(e) {
   }) : null
 }
 
-function Q() {
+function J() {
   m.Z.setSection(B.oAB.PROFILE_CUSTOMIZATION)
 }
 
@@ -469,7 +469,7 @@ function ee() {
     {
       avatarSrc: d,
       avatarDecorationSrc: m
-    } = (0, I.Z)({
+    } = (0, N.Z)({
       user: t,
       size: u.EFr.SIZE_80
     });
@@ -500,16 +500,16 @@ function ee() {
             user: t,
             className: G.userTag,
             discriminatorClass: G.discriminator
-          }), (0, i.jsx)(J, {
+          }), (0, i.jsx)(Q, {
             user: t
           })]
-        }), (0, i.jsx)(N.Z, {
+        }), (0, i.jsx)(I.Z, {
           badges: r,
           className: G.badgeList,
           badgeClassName: G.badge
         })]
       }), (0, i.jsx)(u.zxk, {
-        onClick: Q,
+        onClick: J,
         size: u.zxk.Sizes.SMALL,
         children: V.intl.string(V.t["2p2aY2"])
       })]

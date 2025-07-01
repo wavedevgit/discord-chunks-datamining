@@ -12,7 +12,7 @@ var r = n(255367),
   u = n(566620),
   d = n(403404),
   p = n(906732),
-  h = n(605236),
+  h = n(266454),
   f = n(706140),
   m = n(243778),
   g = n(618857),
@@ -37,7 +37,7 @@ function T() {
   e && t.push(a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
   let [n] = (0, f.cv)(t);
   return i.useEffect(() => () => {
-    n === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, h.EW)(a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
+    n === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE && (0, h.Q3)(a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
       dismissAction: S.L.TAKE_ACTION
     })
   }, [n]), (0, r.jsx)(m.ZP, {
@@ -84,7 +84,7 @@ function A(e) {
   }
 
   function F() {
-    (0, h.EW)(a.z.POLLS_CHAT_INPUT_COACHMARK, {
+    (0, h.Q3)(a.z.POLLS_CHAT_INPUT_COACHMARK, {
       dismissAction: S.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
       let {

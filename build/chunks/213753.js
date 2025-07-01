@@ -4,7 +4,7 @@ n.d(t, {
   V: () => o
 });
 var r = n(846903);
-let i = new(n(259443)).Yd("codedLinkQueue"),
+let i = new(n(710845)).Z("codedLinkQueue"),
   a = new r.default({
     concurrency: 5,
     intervalCap: 10,

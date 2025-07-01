@@ -23,8 +23,8 @@ var i = n(374470),
   h = n(986240),
   v = n(667922),
   j = n(941389),
-  E = n(449751),
-  S = n(749339),
+  S = n(449751),
+  E = n(749339),
   _ = n(601184),
   P = n(6148),
   Z = n(519110),
@@ -61,8 +61,8 @@ function z(e) {
     } = (0, c.ZP)([s.Z.MESSAGE_CONTEXT_MENU]),
     v = b,
     j = b.getAttribute("data-type"),
-    E = b.getAttribute("data-id"),
-    S = b.getAttribute("data-name");
+    S = b.getAttribute("data-id"),
+    E = b.getAttribute("data-name");
   if (null != p) o = l = u = p.url;
   else
     for (;
@@ -76,8 +76,8 @@ function z(e) {
       mediaItem: p,
       textSelection: _,
       favoriteableType: j,
-      favoriteableId: E,
-      favoriteableName: S,
+      favoriteableId: S,
+      favoriteableName: E,
       itemHref: l,
       itemSrc: o,
       itemSafeSrc: u,
@@ -108,8 +108,8 @@ function B(e) {
     itemTextContent: W,
     canReport: q,
     onHeightUpdate: V,
-    onSelect: J,
-    onClose: Q,
+    onSelect: Q,
+    onClose: J,
     navId: Y,
     ariaLabel: $,
     shouldHideMediaOptions: ee = !1
@@ -117,16 +117,16 @@ function B(e) {
     type: s,
     id: c,
     name: z
-  }), es = (0, C.Z)(t, n), ec = (0, T.Z)(t, n), eu = (0, A.Z)(t), ed = (0, j.Z)(t, n), ef = (0, E.Z)(t, n), eg = (0, x.Z)(t, n), eb = (0, M.Z)(t, n), ep = (0, _.Z)(t, n), eO = (0, R.ZP)(t), em = (0, R.wY)(t), ey = (0, R.eH)(t), eh = (0, L.Z)(t, n), ev = (0, g.Z)(null != B ? B : X, W, t, {
+  }), es = (0, C.Z)(t, n), ec = (0, T.Z)(t, n), eu = (0, A.Z)(t), ed = (0, j.Z)(t, n), ef = (0, S.Z)(t, n), eg = (0, x.Z)(t, n), eb = (0, M.Z)(t, n), ep = (0, _.Z)(t, n), eO = (0, R.ZP)(t), em = (0, R.wY)(t), ey = (0, R.eH)(t), eh = (0, L.Z)(t, n), ev = (0, g.Z)(null != B ? B : X, W, t, {
     shouldHideMediaOptions: ee
   }), ej = (0, f.Z)(K, t, {
     shouldHideMediaOptions: ee,
     contentType: null == i ? void 0 : i.contentType
-  }), eE = (0, U.Z)(t, i), eS = (0, u.Z)({
+  }), eS = (0, U.Z)(t, i), eE = (0, u.Z)({
     id: t.id,
     label: H.intl.string(H.t.zBoHlZ),
     shiftId: "".concat(t.channel_id, "-").concat(t.id)
-  }), e_ = (0, D.Z)(t, n), eP = (0, I.Z)(t, n), eZ = (0, k.Z)(t, n), eI = (0, m.Z)(a, n.getGuildId()), eT = (0, y.Z)(t), ew = (0, S.Z)(t), eN = (0, F.Z)(t), eA = (0, h.Z)(t, n), ex = (0, O.Z)({
+  }), e_ = (0, D.Z)(t, n), eP = (0, I.Z)(t, n), eZ = (0, k.Z)(t, n), eI = (0, m.Z)(a, n.getGuildId()), eT = (0, y.Z)(t), ew = (0, E.Z)(t), eN = (0, F.Z)(t), eA = (0, h.Z)(t, n), ex = (0, O.Z)({
     commandType: o.yU.MESSAGE,
     commandTargetId: t.id,
     channel: n,
@@ -135,9 +135,9 @@ function B(e) {
   }), eM = (0, G.Z)(t), eD = (0, p.Z)(t);
   return (0, r.jsxs)(l.v2r, {
     navId: Y,
-    onClose: Q,
+    onClose: J,
     "aria-label": $,
-    onSelect: J,
+    onSelect: Q,
     children: [(0, r.jsx)(l.kSQ, {
       children: et
     }), (0, r.jsx)(l.kSQ, {
@@ -151,11 +151,11 @@ function B(e) {
     }), (0, r.jsxs)(l.kSQ, {
       children: [eb, eg, ep, q && eO, q && ey, em]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [eo, eI, ej, eE, eN]
+      children: [eo, eI, ej, eS, eN]
     }), (0, r.jsx)(l.kSQ, {
       children: ev
     }), (0, r.jsx)(l.kSQ, {
-      children: eS
+      children: eE
     })]
   })
 }

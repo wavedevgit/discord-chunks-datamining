@@ -33,8 +33,8 @@ var r = n(255367),
   M = n(861262),
   L = n(101695),
   U = n(683101),
-  P = n(981631),
-  j = n(388032),
+  j = n(981631),
+  P = n(388032),
   y = n(378869);
 
 function w(e) {
@@ -92,7 +92,7 @@ function k(e) {
         n = null != t ? t.getGuildId() : null;
       u.Z.trackJump(e.channel_id, e.id, "Search Results", {
         search_id: v.Z.getAnalyticsId(i)
-      }), (0, h.uL)(P.Z5c.CHANNEL(n, e.channel_id, e.id))
+      }), (0, h.uL)(j.Z5c.CHANNEL(n, e.channel_id, e.id))
     }
   }, [g, i]), D = l.useMemo(() => {
     let e;
@@ -127,7 +127,7 @@ function k(e) {
     focusedIndex: 0,
     setFocus: k,
     onSelect: F
-  }), B = v.Z.getQuery(i), V = (0, M.k)(i) === P.aib.FAVORITES, H = (0, d.nC)(null != (t = null == B ? void 0 : B.content) ? t : ""), K = D.map(e => {
+  }), B = v.Z.getQuery(i), V = (0, M.k)(i) === j.aib.FAVORITES, H = (0, d.nC)(null != (t = null == B ? void 0 : B.content) ? t : ""), K = D.map(e => {
     let {
       channel: t,
       results: n,
@@ -170,17 +170,17 @@ function k(e) {
         className: y.resultsBlockedImage
       }), (0, r.jsx)("div", {
         className: y.__invalid_resultsBlockedText,
-        children: S ? m > 0 && T > 0 ? j.intl.formatToPlainString(j.t["OvJs9/"], {
+        children: S ? m > 0 && T > 0 ? P.intl.formatToPlainString(P.t["OvJs9/"], {
           count: m + T
-        }) : m > 0 ? j.intl.formatToPlainString(j.t["n/1QFR"], {
+        }) : m > 0 ? P.intl.formatToPlainString(P.t["n/1QFR"], {
           count: m
-        }) : j.intl.formatToPlainString(j.t.ypezTE, {
+        }) : P.intl.formatToPlainString(P.t.ypezTE, {
           count: T
-        }) : m > 0 && T > 0 ? j.intl.formatToPlainString(j.t.EJHRcX, {
+        }) : m > 0 && T > 0 ? P.intl.formatToPlainString(P.t.EJHRcX, {
           count: m + T
-        }) : m > 0 ? j.intl.formatToPlainString(j.t.HTE8JC, {
+        }) : m > 0 ? P.intl.formatToPlainString(P.t.HTE8JC, {
           count: m
-        }) : j.intl.formatToPlainString(j.t.e7f8r6, {
+        }) : P.intl.formatToPlainString(P.t.e7f8r6, {
           count: T
         })
       })]
@@ -188,7 +188,7 @@ function k(e) {
       onPageChange: f,
       offset: O,
       totalCount: N,
-      pageSize: P.vpv
+      pageSize: j.vpv
     })]
   })
 }
@@ -240,12 +240,12 @@ function Z(e) {
     offset: v,
     jumpToMessage: M,
     listNavigator: L,
-    favoriteSearch: j
+    favoriteSearch: P
   } = e, k = N.cC.useSetting(), Z = (0, T.p)(), z = l.useCallback(e => {
     if (e === D.Z.getChannelId()) return;
     let t = R.Z.getChannel(e);
-    null != t && C.Z.can(P.Plq.VIEW_CHANNEL, t) && (0, O.Kh)(t.id)
-  }, []), B = null != s ? (0, _.F6)(s, x.default, b.Z, !1) : "???", V = j && null != s.guild_id ? null == (t = S.Z.getGuild(s.guild_id)) ? void 0 : t.name : null, H = (null == s ? void 0 : s.parent_id) != null ? R.Z.getChannel(s.parent_id) : null, K = null != (n = null == H ? void 0 : H.name) ? n : null, W = null != (i = (0, A.KS)(s)) ? i : o.VL1, q = C.Z.can(P.Plq.MANAGE_MESSAGES, s), {
+    null != t && C.Z.can(j.Plq.VIEW_CHANNEL, t) && (0, O.Kh)(t.id)
+  }, []), B = null != s ? (0, _.F6)(s, x.default, b.Z, !1) : "???", V = P && null != s.guild_id ? null == (t = S.Z.getGuild(s.guild_id)) ? void 0 : t.name : null, H = (null == s ? void 0 : s.parent_id) != null ? R.Z.getChannel(s.parent_id) : null, K = null != (n = null == H ? void 0 : H.name) ? n : null, W = null != (i = (0, A.KS)(s)) ? i : o.VL1, q = C.Z.can(j.Plq.MANAGE_MESSAGES, s), {
     content: Y
   } = (0, g.ZP)({
     content: B,
@@ -279,7 +279,7 @@ function Z(e) {
             children: e => (0, r.jsxs)("span", G(w({}, e), {
               ref: J,
               className: y.channelNameText,
-              children: [j && null !== V && "".concat(V, " : "), Y]
+              children: [P && null !== V && "".concat(V, " : "), Y]
             }))
           }), (0, r.jsx)(F, {
             parentChannel: H,

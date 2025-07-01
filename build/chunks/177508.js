@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(514361),
   v = n(705262),
   T = n(526156),
-  I = n(706705),
-  N = n(726985),
+  N = n(706705),
+  I = n(726985),
   y = n(981631),
   A = n(231338),
   P = n(426617),
@@ -68,7 +68,7 @@ function Z(e, t) {
 function w() {
   return (0, i.jsxs)("div", {
     className: P.root,
-    children: [(0, i.jsx)(z, {}), (0, i.jsx)(Q, {}), (0, i.jsx)($, {}), (0, i.jsx)(J, {}), (0, i.jsx)(X, {}), (0, i.jsx)(q, {}), (0, i.jsx)(K, {}), (0, i.jsx)(eo, {}), (0, i.jsx)(k, {}), (0, i.jsx)(ec, {})]
+    children: [(0, i.jsx)(z, {}), (0, i.jsx)(J, {}), (0, i.jsx)($, {}), (0, i.jsx)(Q, {}), (0, i.jsx)(X, {}), (0, i.jsx)(q, {}), (0, i.jsx)(K, {}), (0, i.jsx)(eo, {}), (0, i.jsx)(k, {}), (0, i.jsx)(ec, {})]
   })
 }
 
@@ -209,20 +209,20 @@ function G() {
 function F() {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(T.Z, {
-      parentSetting: N.s6.DESIGN_SYSTEMS,
+      parentSetting: I.s6.DESIGN_SYSTEMS,
       settingsSection: y.oAB.DESIGN_SYSTEMS,
       tabs: [{
         title: "Components",
         component: () => (0, i.jsx)(w, {}),
-        setting: N.s6.DESIGN_SYSTEMS_COMPONENTS
+        setting: I.s6.DESIGN_SYSTEMS_COMPONENTS
       }, {
         title: "Colors",
         component: () => (0, i.jsx)(G, {}),
-        setting: N.s6.DESIGN_SYSTEMS_COLORS
+        setting: I.s6.DESIGN_SYSTEMS_COLORS
       }, {
         title: "Animations",
-        component: () => (0, i.jsx)(I.Z, {}),
-        setting: N.s6.ANIMATION_TESTING
+        component: () => (0, i.jsx)(N.Z, {}),
+        setting: I.s6.ANIMATION_TESTING
       }]
     }), (0, i.jsx)("div", {
       className: P.themes,
@@ -694,7 +694,7 @@ function X() {
   })
 }
 
-function J() {
+function Q() {
   let [e, t] = r.useState(!1), [n, s] = r.useState(!1), [l, a] = r.useState("auto");
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
@@ -850,7 +850,7 @@ function J() {
   })
 }
 
-function Q() {
+function J() {
   let [e, t] = r.useState(null), [n, s] = r.useState(null), [l, a] = r.useState([]), [c, d] = r.useState([]), [u, m] = r.useState([]);
   return (0, i.jsxs)("div", {
     className: P.searchableSelectExamples,

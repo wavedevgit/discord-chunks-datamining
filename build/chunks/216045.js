@@ -17,7 +17,7 @@ var i = n(255367),
   h = n(100527),
   f = n(906732),
   b = n(475977),
-  _ = n(605236),
+  _ = n(266454),
   x = n(243778),
   E = n(957730),
   j = n(53691),
@@ -26,8 +26,8 @@ var i = n(255367),
   S = n(678135),
   v = n(610794),
   T = n(935147),
-  I = n(643879),
-  N = n(373230),
+  N = n(643879),
+  I = n(373230),
   y = n(726525),
   A = n(246946),
   P = n(25990),
@@ -70,7 +70,7 @@ function F() {
       }
       return r
     }(F, ["pendingBio", "pendingAvatar"]),
-    W = (0, I.SD)({
+    W = (0, N.SD)({
       userId: n.id,
       image: z
     }),
@@ -78,16 +78,16 @@ function F() {
     q = k.dN.useSetting() && null != H ? E.ZP.parse(void 0, H).content : H,
     X = Z.ZP.canUsePremiumProfileCustomization(n),
     {
-      analyticsLocations: J,
-      newestAnalyticsLocation: Q
+      analyticsLocations: Q,
+      newestAnalyticsLocation: J
     } = (0, f.ZP)(h.Z.USER_SETTINGS_USER_PROFILE),
-    $ = (0, N.T)({
+    $ = (0, I.T)({
       location: "UserSettingsProfileCustomization"
     }),
-    ee = (0, _.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
+    ee = (0, _.Nj)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
     et = $ && !ee;
   r.useEffect(() => {
-    et && (0, _.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
+    et && (0, _.Q3)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
       forceTrack: !0
     })
   }, [et]);
@@ -111,7 +111,7 @@ function F() {
     location: "UserSettingsProfileCustomization"
   }), ed = !X, eu = r.useRef(null);
   return s ? (0, i.jsx)(g.Z, {}) : (0, i.jsxs)(f.Gt, {
-    value: J,
+    value: Q,
     children: [(0, i.jsx)(b.Z, {}), (0, i.jsx)(O.Z, {
       showViewFullProfileButton: ec,
       profilePreview: (0, i.jsx)(S.Z, (e = function(e) {
@@ -169,7 +169,7 @@ function F() {
       showUpsell: ed && !el,
       text: V.intl.format(V.t.TmfgIy, {
         onClick: () => (0, C.y)({
-          analyticsSource: Q
+          analyticsSource: J
         })
       }),
       textVariant: "heading-md/medium",

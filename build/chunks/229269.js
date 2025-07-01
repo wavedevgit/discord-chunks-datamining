@@ -63,7 +63,7 @@ function C() {
         color: "text-feedback-info",
         className: _.labelSpacing,
         children: "Payment-method-specific components and views may not appear for you unless your browser is supported for that payment method and they have been configured on your browser."
-      }), (0, i.jsx)(O, {}), (0, i.jsx)(N, {}), (0, i.jsx)(w, {})]
+      }), (0, i.jsx)(O, {}), (0, i.jsx)(I, {}), (0, i.jsx)(w, {})]
     })
   })
 }
@@ -176,7 +176,7 @@ function T(e) {
   })
 }
 
-function I(e) {
+function N(e) {
   let {
     children: t
   } = e;
@@ -189,7 +189,7 @@ function I(e) {
   })
 }
 
-function N() {
+function I() {
   let e = {
     onChooseType: () => {},
     onStripePaymentMethodReceived: e => {
@@ -203,7 +203,7 @@ function N() {
       children: "Choose Payment Source Type Component"
     }), (0, i.jsx)(h.E_, {
       label: "All Payment Request Wallets Enabled",
-      children: (0, i.jsx)(I, {
+      children: (0, i.jsx)(N, {
         children: (0, i.jsx)(c.ZP, j(E({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: ["googlePay", "applePay"]
@@ -211,7 +211,7 @@ function N() {
       })
     }), (0, i.jsx)(h.E_, {
       label: "No Payment Wallets Enabled",
-      children: (0, i.jsx)(I, {
+      children: (0, i.jsx)(N, {
         children: (0, i.jsx)(c.ZP, j(E({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: []
@@ -219,7 +219,7 @@ function N() {
       })
     }), (0, i.jsx)(h.E_, {
       label: "Is Eligible for Trial",
-      children: (0, i.jsx)(I, {
+      children: (0, i.jsx)(N, {
         children: (0, i.jsx)(c.ZP, j(E({}, e), {
           isEligibleForTrial: !0,
           onChooseType: () => {},
@@ -228,7 +228,7 @@ function N() {
       })
     }), (0, i.jsx)(h.E_, {
       label: "Only Stripe Card Enabled",
-      children: (0, i.jsx)(I, {
+      children: (0, i.jsx)(N, {
         children: (0, i.jsx)(c.ZP, j(E({}, e), {
           onChooseType: () => {},
           paymentRequestWallets: [],
