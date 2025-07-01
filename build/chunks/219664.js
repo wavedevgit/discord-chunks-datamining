@@ -334,7 +334,7 @@ function W(e) {
               themed: !0,
               dotRadius: 2
             })
-          }), (0, r.jsx)(u.Z, {
+          }), (0, r.jsx)(u.ZP, {
             channel: t,
             className: z.typingUsers,
             renderDots: !1

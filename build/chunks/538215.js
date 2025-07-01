@@ -1,16 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => l
 }), n(388685);
 var r = n(147913),
-  i = n(358221),
-  a = n(729052),
-  o = n(592125),
-  s = n(979651),
-  l = n(556076);
+  i = n(592125),
+  a = n(556076);
 
-function c(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -18,26 +15,20 @@ function c(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class u extends r.Z {
+class s extends r.Z {
   handleVoiceChannelSelect(e) {
     let {
       channelId: t,
       guildId: n
     } = e;
     if (null == t || null == n) return;
-    let r = o.Z.getChannel(t);
-    if (null != r && (0, a.vS)(r) && r.isGuildVoice()) {
-      let e = i.Z.getParticipants(t).length,
-        n = s.Z.isInChannel(t),
-        r = e === +!!n,
-        a = e === (n ? 2 : 1);
-      r ? l.y(t, r) : a && l.y(t, r)
-    }
+    let r = i.Z.getChannel(t);
+    null != r && r.isGuildVoice() && a.y(t)
   }
   constructor(...e) {
-    super(...e), c(this, "actions", {
+    super(...e), o(this, "actions", {
       VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect
     })
   }
 }
-let d = new u
+let l = new s

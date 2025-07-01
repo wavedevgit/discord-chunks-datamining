@@ -1,6 +1,6 @@
 /**
   Module ID: 99546
-  Original File Name: ccaa02f10dbd5189
+  Original File Name: b77628acd8a2cd11
 **/
 .slowModeIcon_b21699 {
     display: block;
@@ -107,6 +107,19 @@
     top: -24px
 }
 
+.align-chat-input .activityInviteEducation_b88801 {
+    bottom: unset;
+    left: 0;
+    padding-left: var(--space-md);
+    pointer-events: all;
+    right: 0;
+    top: -24px
+}
+
+.align-chat-input .activityInviteEducationArrow_b88801 {
+    transform: scaleY(-1)
+}
+
 .align-chat-input .inTextChannel_b88801 .typingDots_b88801 {
     margin-left: 8px
 }
@@ -153,10 +166,6 @@
 
 .images-dark .activityInviteEducationArrow_b88801 {
     background-image: url(/assets/6ad5446be34bb27a.svg)
-}
-
-.activityInviteEducationLeftArrow_b88801 {
-    padding-right: var(--space-4)
 }
 
 .effect_a9ddb3 {
@@ -2535,4 +2544,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=ccaa02f10dbd5189.css.map*/
+/*# sourceMappingURL=b77628acd8a2cd11.css.map*/

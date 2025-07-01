@@ -345,7 +345,7 @@ class es extends r.PureComponent {
                 pendingReply: f
               }), (0, i.jsx)("div", {
                 className: ee.typingWrapper,
-                children: (0, i.jsx)(m.Z, {
+                children: (0, i.jsx)(m.ZP, {
                   channel: t,
                   className: ee.typing,
                   isInTextChannel: !0

@@ -309,10 +309,11 @@ function K(e) {
             setTextAreaState: y,
             submit: O,
             error: j
-          }), (0, r.jsx)(p.Z, {
+          }), (0, r.jsx)(p.ZP, {
             channel: t,
             isThreadCreation: !0,
-            className: G.typingIndicator
+            className: G.typingIndicator,
+            isInTextChannel: !0
           })]
         })]
       })

@@ -386,7 +386,7 @@ function em(e) {
           themed: !0,
           dotRadius: 2
         })
-      }), (0, r.jsx)(b.Z, {
+      }), (0, r.jsx)(b.ZP, {
         channel: t,
         className: er.typingUsers,
         renderDots: !1

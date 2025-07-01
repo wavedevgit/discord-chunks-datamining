@@ -1,6 +1,6 @@
 /**
   Module ID: 19577
-  Original File Name: 8d8675d16665a5bb
+  Original File Name: 9fd7bda6f476ead9
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -675,6 +675,19 @@
     top: -24px
 }
 
+.align-chat-input .activityInviteEducation_b88801 {
+    bottom: unset;
+    left: 0;
+    padding-left: var(--space-md);
+    pointer-events: all;
+    right: 0;
+    top: -24px
+}
+
+.align-chat-input .activityInviteEducationArrow_b88801 {
+    transform: scaleY(-1)
+}
+
 .align-chat-input .inTextChannel_b88801 .typingDots_b88801 {
     margin-left: 8px
 }
@@ -721,10 +734,6 @@
 
 .images-dark .activityInviteEducationArrow_b88801 {
     background-image: url(/assets/6ad5446be34bb27a.svg)
-}
-
-.activityInviteEducationLeftArrow_b88801 {
-    padding-right: var(--space-4)
 }
 
 @use postcss-pxtorem;
@@ -5144,13 +5153,19 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     height: var(--chat-input-icon-size)
 }
 
-.align-chat-input .attachButton__0923f {
+.align-chat-input .attachWrapper__0923f {
     padding: var(--space-12) calc(var(--space-md) - 6px)
+}
+
+.align-chat-input .attachButton__0923f {
+    height: unset;
+    padding: 0
 }
 
 .align-chat-input .attachButtonInner__0923f {
     border-radius: 8px;
-    padding: 6px
+    padding: 6px;
+    transition-duration: .2s
 }
 
 .align-chat-input .attachButtonInner__0923f:hover {
@@ -7230,8 +7245,16 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin-bottom: 32px
 }
 
-.align-chat-input .scrollerInner__36d07>li:last-of-type {
-    padding-bottom: 24px
+.align-chat-input .scrollerSpacer__36d07 {
+    height: 40px
+}
+
+.align-chat-input .scrollerSpacer__36d07.empty__36d07 {
+    height: 40px
+}
+
+.align-chat-input .scrollerSpacer__36d07.emptyForum__36d07 {
+    height: 32px
 }
 
 .scroller__36d07 {
@@ -8738,9 +8761,13 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin-top: unset
 }
 
+.align-chat-input .buttonContainer_e6e74f {
+    border-radius: 8px;
+    transition-duration: .2s
+}
+
 .align-chat-input .buttonContainer_e6e74f:hover {
-    background-color: var(--background-modifier-selected);
-    border-radius: 8px
+    background-color: var(--background-modifier-selected)
 }
 
 .align-chat-input .entrypointAnimation_e6e74f .buttonContainer_e6e74f:hover {
@@ -12908,6 +12935,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin: 0 var(--space-8) var(--space-24)
 }
 
+.align-chat-input .channelTextAreaWithTypingIndicator_fb64c9 {
+    margin: 0 0 var(--space-xs) var(--space-8)
+}
+
 .typingIndicator_fb64c9 {
     right: var(--space-24)
 }
@@ -13673,4 +13704,4 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
-/*# sourceMappingURL=8d8675d16665a5bb.css.map*/
+/*# sourceMappingURL=9fd7bda6f476ead9.css.map*/

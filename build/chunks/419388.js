@@ -157,7 +157,7 @@ class j {
         var c;
         null == (c = this.ref.current) || c.scrollIntoViewNode({
           node: e,
-          padding: _.kQ,
+          padding: _.kQ + this.props.additionalMessagePadding,
           callback: this.handleScroll
         });
         return
@@ -251,7 +251,7 @@ class j {
       var r;
       this.isPinned() ? this.scrollTo(Number.MAX_SAFE_INTEGER, !1, this.handleScroll) : this.mergeTo(n, this.handleScroll), null == (r = this.ref.current) || r.scrollIntoViewNode({
         node: t,
-        padding: _.kQ,
+        padding: _.kQ + this.props.additionalMessagePadding,
         callback: this.handleScroll
       })
     } else this.mergeTo(n, this.handleScroll);
@@ -575,10 +575,11 @@ function O(e) {
     placeholderHeight: a,
     canLoadMore: s = !0,
     handleScrollToBottom: c,
-    handleScrollFromBottom: d
+    handleScrollFromBottom: d,
+    additionalMessagePadding: p = 0
   } = e, {
-    windowId: p
-  } = r.useContext(u.ZP), [h] = r.useState(() => new j({
+    windowId: h
+  } = r.useContext(u.ZP), [f] = r.useState(() => new j({
     messages: t,
     channel: n,
     compact: i,
@@ -586,11 +587,12 @@ function O(e) {
     focusId: o,
     placeholderHeight: a,
     canLoadMore: s,
-    windowId: p,
+    windowId: h,
     handleScrollToBottom: c,
-    handleScrollFromBottom: d
+    handleScrollFromBottom: d,
+    additionalMessagePadding: p
   }));
-  return h.getSnapshotBeforeUpdate(o), r.useLayoutEffect(() => h.mergePropsAndUpdate({
+  return f.getSnapshotBeforeUpdate(o), r.useLayoutEffect(() => f.mergePropsAndUpdate({
     messages: t,
     channel: n,
     compact: i,
@@ -598,8 +600,9 @@ function O(e) {
     focusId: o,
     placeholderHeight: a,
     canLoadMore: s,
-    windowId: p,
+    windowId: h,
     handleScrollToBottom: c,
-    handleScrollFromBottom: d
-  })), r.useLayoutEffect(() => () => h.cleanup(), [h]), h
+    handleScrollFromBottom: d,
+    additionalMessagePadding: p
+  })), r.useLayoutEffect(() => () => f.cleanup(), [f]), f
 }

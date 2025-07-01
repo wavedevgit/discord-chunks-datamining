@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 16f611446f33bc50
+  Original File Name: 1bc4b52e5cd36850
 **/
 .titleBar__421ed {
     z-index: 3001;
@@ -1973,9 +1973,9 @@
 }
 
 .ping__06d62.largePing__06d62 {
-    background: linear-gradient(0deg,var(--color-background-feedback-positive,rgba(0,134,58,.08)) 0,var(--color-background-feedback-positive,rgba(0,134,58,.08)) 100%),var(--color-background-mod-faint,hsla(240,4%,61%,.04));
+    background: var(--background-mod-faint);
     border-radius: 8px;
-    box-shadow: inset 0 0 0 1px var(--color-border-faint,hsla(240,4%,61%,.04));
+    box-shadow: inset 0 0 0 1px var(--border-faint);
     height: 18px;
     margin-right: 8px;
     padding: 7px;
@@ -2007,16 +2007,16 @@
     color: var(--status-danger)
 }
 
-.rtcConnectionQualityFine__06d62 .pingForeground__06d62 {
-    color: var(--text-feedback-positive)
+.align-chat-input .rtcConnectionQualityFine__06d62 .largePing__06d62 {
+    background: var(--background-feedback-positive)
 }
 
-.rtcConnectionQualityAverage__06d62 .pingForeground__06d62:not(:last-child) {
-    color: var(--text-feedback-warning)
+.align-chat-input .rtcConnectionQualityAverage__06d62 .largePing__06d62 {
+    background: var(--background-feedback-warning)
 }
 
-.rtcConnectionQualityBad__06d62 .pingForeground__06d62:first-child {
-    color: var(--status-danger)
+.align-chat-input .rtcConnectionQualityBad__06d62 .largePing__06d62 {
+    background: var(--background-feedback-critical)
 }
 
 .labelWrapper__06d62 {
@@ -3223,4 +3223,4 @@
     width: 96px
 }
 
-/*# sourceMappingURL=16f611446f33bc50.css.map*/
+/*# sourceMappingURL=1bc4b52e5cd36850.css.map*/
