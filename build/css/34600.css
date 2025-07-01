@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: 7da576e30bcd96cc
+  Original File Name: 4264e603dc259d86
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3505,6 +3505,8 @@
     --control-background-expressive-default: #fff;
     --control-background-expressive-hover: #fff;
     --control-background-expressive-loading: #fff;
+    --control-background-icon-only-active: hsla(240,4%,61%,.2);
+    --control-background-icon-only-hover: hsla(240,4%,61%,.16);
     --control-background-overlay-primary-active: #bfc2c7;
     --control-background-overlay-primary-default: #fff;
     --control-background-overlay-primary-hover: #dee0e3;
@@ -3521,8 +3523,6 @@
     --control-background-secondary-default: hsla(240,4%,61%,.08);
     --control-background-secondary-hover: hsla(240,4%,61%,.16);
     --control-background-secondary-loading: hsla(240,4%,61%,.08);
-    --control-background-tertiary-active: hsla(240,4%,61%,.2);
-    --control-background-tertiary-hover: hsla(240,4%,61%,.16);
     --control-border-active-active: hsla(0,0%,100%,.08);
     --control-border-active-default: hsla(0,0%,100%,.08);
     --control-border-active-hover: hsla(0,0%,100%,.08);
@@ -3539,6 +3539,8 @@
     --control-border-expressive-default: hsla(240,4%,61%,.12);
     --control-border-expressive-hover: hsla(240,4%,61%,.12);
     --control-border-expressive-loading: hsla(240,4%,61%,.12);
+    --control-border-icon-only-active: hsla(240,4%,61%,.04);
+    --control-border-icon-only-hover: hsla(240,4%,61%,.04);
     --control-border-overlay-primary-active: hsla(240,4%,61%,.12);
     --control-border-overlay-primary-default: hsla(240,4%,61%,.12);
     --control-border-overlay-primary-hover: hsla(240,4%,61%,.12);
@@ -3555,8 +3557,6 @@
     --control-border-secondary-default: hsla(240,4%,61%,.04);
     --control-border-secondary-hover: hsla(240,4%,61%,.04);
     --control-border-secondary-loading: hsla(240,4%,61%,.04);
-    --control-border-tertiary-active: hsla(240,4%,61%,.04);
-    --control-border-tertiary-hover: hsla(240,4%,61%,.04);
     --control-brand-foreground: #949cf7;
     --control-brand-foreground-new: #949cf7;
     --control-icon-active-active: #fff;
@@ -3575,6 +3575,10 @@
     --control-icon-expressive-default: #000;
     --control-icon-expressive-hover: #000;
     --control-icon-expressive-loading: #000;
+    --control-icon-icon-only-active: #fff;
+    --control-icon-icon-only-default: #c4c4c9;
+    --control-icon-icon-only-hover: #fff;
+    --control-icon-icon-only-loading: #fff;
     --control-icon-overlay-primary-active: #000;
     --control-icon-overlay-primary-default: #000;
     --control-icon-overlay-primary-hover: #000;
@@ -3591,10 +3595,6 @@
     --control-icon-secondary-default: #fff;
     --control-icon-secondary-hover: #fff;
     --control-icon-secondary-loading: #fff;
-    --control-icon-tertiary-active: #fff;
-    --control-icon-tertiary-default: #fff;
-    --control-icon-tertiary-hover: #fff;
-    --control-icon-tertiary-loading: #fff;
     --control-text-active-active: #fff;
     --control-text-active-default: #fff;
     --control-text-active-hover: #fff;
@@ -3627,10 +3627,6 @@
     --control-text-secondary-default: #fff;
     --control-text-secondary-hover: #fff;
     --control-text-secondary-loading: #fff;
-    --control-text-tertiary-active: #fff;
-    --control-text-tertiary-default: #fff;
-    --control-text-tertiary-hover: #fff;
-    --control-text-tertiary-loading: #fff;
     --creator-revenue-icon-gradient-end: #217a8c;
     --creator-revenue-icon-gradient-start: #299eb5;
     --creator-revenue-info-box-background: rgba(33,122,140,.1);
@@ -4076,6 +4072,8 @@
     --control-background-expressive-default: #5966f2;
     --control-background-expressive-hover: #4552ba;
     --control-background-expressive-loading: #5966f2;
+    --control-background-icon-only-active: hsla(240,4%,61%,.24);
+    --control-background-icon-only-hover: hsla(240,4%,61%,.16);
     --control-background-overlay-primary-active: #bfc2c7;
     --control-background-overlay-primary-default: #fff;
     --control-background-overlay-primary-hover: #dee0e3;
@@ -4092,8 +4090,6 @@
     --control-background-secondary-default: hsla(240,4%,61%,.12);
     --control-background-secondary-hover: hsla(240,4%,61%,.16);
     --control-background-secondary-loading: hsla(240,4%,61%,.12);
-    --control-background-tertiary-active: hsla(240,4%,61%,.24);
-    --control-background-tertiary-hover: hsla(240,4%,61%,.16);
     --control-border-active-active: hsla(0,0%,100%,.08);
     --control-border-active-default: hsla(0,0%,100%,.08);
     --control-border-active-hover: hsla(0,0%,100%,.08);
@@ -4110,6 +4106,8 @@
     --control-border-expressive-default: hsla(0,0%,100%,.08);
     --control-border-expressive-hover: hsla(0,0%,100%,.08);
     --control-border-expressive-loading: hsla(0,0%,100%,.08);
+    --control-border-icon-only-active: hsla(240,4%,61%,.2);
+    --control-border-icon-only-hover: hsla(240,4%,61%,.2);
     --control-border-overlay-primary-active: hsla(240,4%,61%,.28);
     --control-border-overlay-primary-default: hsla(240,4%,61%,.28);
     --control-border-overlay-primary-hover: hsla(240,4%,61%,.28);
@@ -4126,8 +4124,6 @@
     --control-border-secondary-default: hsla(240,4%,61%,.2);
     --control-border-secondary-hover: hsla(240,4%,61%,.2);
     --control-border-secondary-loading: hsla(240,4%,61%,.2);
-    --control-border-tertiary-active: hsla(240,4%,61%,.2);
-    --control-border-tertiary-hover: hsla(240,4%,61%,.2);
     --control-brand-foreground: #5966f2;
     --control-brand-foreground-new: #5966f2;
     --control-icon-active-active: #fff;
@@ -4146,6 +4142,10 @@
     --control-icon-expressive-default: #fff;
     --control-icon-expressive-hover: #fff;
     --control-icon-expressive-loading: #fff;
+    --control-icon-icon-only-active: #2e3036;
+    --control-icon-icon-only-default: #5e616b;
+    --control-icon-icon-only-hover: #2e3036;
+    --control-icon-icon-only-loading: #2e3036;
     --control-icon-overlay-primary-active: #000;
     --control-icon-overlay-primary-default: #000;
     --control-icon-overlay-primary-hover: #000;
@@ -4162,10 +4162,6 @@
     --control-icon-secondary-default: #2e3036;
     --control-icon-secondary-hover: #2e3036;
     --control-icon-secondary-loading: #2e3036;
-    --control-icon-tertiary-active: #2e3036;
-    --control-icon-tertiary-default: #2e3036;
-    --control-icon-tertiary-hover: #2e3036;
-    --control-icon-tertiary-loading: #2e3036;
     --control-text-active-active: #fff;
     --control-text-active-default: #fff;
     --control-text-active-hover: #fff;
@@ -4198,10 +4194,6 @@
     --control-text-secondary-default: #2e3036;
     --control-text-secondary-hover: #2e3036;
     --control-text-secondary-loading: #2e3036;
-    --control-text-tertiary-active: #2e3036;
-    --control-text-tertiary-default: #2e3036;
-    --control-text-tertiary-hover: #2e3036;
-    --control-text-tertiary-loading: #2e3036;
     --creator-revenue-icon-gradient-end: #248ca1;
     --creator-revenue-icon-gradient-start: #2eb0c9;
     --creator-revenue-info-box-background: rgba(33,122,140,.1);
@@ -4647,6 +4639,8 @@
     --control-background-expressive-default: #fff;
     --control-background-expressive-hover: #fff;
     --control-background-expressive-loading: #fff;
+    --control-background-icon-only-active: hsla(240,4%,61%,.24);
+    --control-background-icon-only-hover: hsla(240,4%,61%,.2);
     --control-background-overlay-primary-active: #bfc2c7;
     --control-background-overlay-primary-default: #fff;
     --control-background-overlay-primary-hover: #dee0e3;
@@ -4663,8 +4657,6 @@
     --control-background-secondary-default: hsla(240,4%,61%,.12);
     --control-background-secondary-hover: hsla(240,4%,61%,.2);
     --control-background-secondary-loading: hsla(240,4%,61%,.12);
-    --control-background-tertiary-active: hsla(240,4%,61%,.24);
-    --control-background-tertiary-hover: hsla(240,4%,61%,.2);
     --control-border-active-active: hsla(0,0%,100%,.08);
     --control-border-active-default: hsla(0,0%,100%,.08);
     --control-border-active-hover: hsla(0,0%,100%,.08);
@@ -4681,6 +4673,8 @@
     --control-border-expressive-default: hsla(240,4%,61%,.24);
     --control-border-expressive-hover: hsla(240,4%,61%,.24);
     --control-border-expressive-loading: hsla(240,4%,61%,.24);
+    --control-border-icon-only-active: hsla(240,4%,61%,.16);
+    --control-border-icon-only-hover: hsla(240,4%,61%,.16);
     --control-border-overlay-primary-active: hsla(240,4%,61%,.24);
     --control-border-overlay-primary-default: hsla(240,4%,61%,.24);
     --control-border-overlay-primary-hover: hsla(240,4%,61%,.24);
@@ -4697,8 +4691,6 @@
     --control-border-secondary-default: hsla(240,4%,61%,.16);
     --control-border-secondary-hover: hsla(240,4%,61%,.16);
     --control-border-secondary-loading: hsla(240,4%,61%,.16);
-    --control-border-tertiary-active: hsla(240,4%,61%,.16);
-    --control-border-tertiary-hover: hsla(240,4%,61%,.16);
     --control-brand-foreground: #949cf7;
     --control-brand-foreground-new: #949cf7;
     --control-icon-active-active: #fff;
@@ -4717,6 +4709,10 @@
     --control-icon-expressive-default: #000;
     --control-icon-expressive-hover: #000;
     --control-icon-expressive-loading: #000;
+    --control-icon-icon-only-active: #e3e3e6;
+    --control-icon-icon-only-default: #9c9ca3;
+    --control-icon-icon-only-hover: #e3e3e6;
+    --control-icon-icon-only-loading: #e3e3e6;
     --control-icon-overlay-primary-active: #000;
     --control-icon-overlay-primary-default: #000;
     --control-icon-overlay-primary-hover: #000;
@@ -4733,10 +4729,6 @@
     --control-icon-secondary-default: #e3e3e6;
     --control-icon-secondary-hover: #e3e3e6;
     --control-icon-secondary-loading: #e3e3e6;
-    --control-icon-tertiary-active: #e3e3e6;
-    --control-icon-tertiary-default: #e3e3e6;
-    --control-icon-tertiary-hover: #e3e3e6;
-    --control-icon-tertiary-loading: #e3e3e6;
     --control-text-active-active: #fff;
     --control-text-active-default: #fff;
     --control-text-active-hover: #fff;
@@ -4769,10 +4761,6 @@
     --control-text-secondary-default: #e3e3e6;
     --control-text-secondary-hover: #e3e3e6;
     --control-text-secondary-loading: #e3e3e6;
-    --control-text-tertiary-active: #e3e3e6;
-    --control-text-tertiary-default: #e3e3e6;
-    --control-text-tertiary-hover: #e3e3e6;
-    --control-text-tertiary-loading: #e3e3e6;
     --creator-revenue-icon-gradient-end: #217a8c;
     --creator-revenue-icon-gradient-start: #299eb5;
     --creator-revenue-info-box-background: rgba(33,122,140,.1);
@@ -5218,6 +5206,8 @@
     --control-background-expressive-default: #fff;
     --control-background-expressive-hover: #fff;
     --control-background-expressive-loading: #fff;
+    --control-background-icon-only-active: hsla(240,4%,61%,.2);
+    --control-background-icon-only-hover: hsla(240,4%,61%,.16);
     --control-background-overlay-primary-active: #bfc2c7;
     --control-background-overlay-primary-default: #fff;
     --control-background-overlay-primary-hover: #dee0e3;
@@ -5234,8 +5224,6 @@
     --control-background-secondary-default: hsla(240,4%,61%,.08);
     --control-background-secondary-hover: hsla(240,4%,61%,.16);
     --control-background-secondary-loading: hsla(240,4%,61%,.08);
-    --control-background-tertiary-active: hsla(240,4%,61%,.2);
-    --control-background-tertiary-hover: hsla(240,4%,61%,.16);
     --control-border-active-active: hsla(0,0%,100%,.08);
     --control-border-active-default: hsla(0,0%,100%,.08);
     --control-border-active-hover: hsla(0,0%,100%,.08);
@@ -5252,6 +5240,8 @@
     --control-border-expressive-default: hsla(240,4%,61%,.12);
     --control-border-expressive-hover: hsla(240,4%,61%,.12);
     --control-border-expressive-loading: hsla(240,4%,61%,.12);
+    --control-border-icon-only-active: hsla(240,4%,61%,.04);
+    --control-border-icon-only-hover: hsla(240,4%,61%,.04);
     --control-border-overlay-primary-active: hsla(240,4%,61%,.12);
     --control-border-overlay-primary-default: hsla(240,4%,61%,.12);
     --control-border-overlay-primary-hover: hsla(240,4%,61%,.12);
@@ -5268,8 +5258,6 @@
     --control-border-secondary-default: hsla(240,4%,61%,.04);
     --control-border-secondary-hover: hsla(240,4%,61%,.04);
     --control-border-secondary-loading: hsla(240,4%,61%,.04);
-    --control-border-tertiary-active: hsla(240,4%,61%,.04);
-    --control-border-tertiary-hover: hsla(240,4%,61%,.04);
     --control-brand-foreground: #949cf7;
     --control-brand-foreground-new: #949cf7;
     --control-icon-active-active: #fff;
@@ -5288,6 +5276,10 @@
     --control-icon-expressive-default: #000;
     --control-icon-expressive-hover: #000;
     --control-icon-expressive-loading: #000;
+    --control-icon-icon-only-active: #fafafa;
+    --control-icon-icon-only-default: #ababb0;
+    --control-icon-icon-only-hover: #fafafa;
+    --control-icon-icon-only-loading: #fafafa;
     --control-icon-overlay-primary-active: #000;
     --control-icon-overlay-primary-default: #000;
     --control-icon-overlay-primary-hover: #000;
@@ -5304,10 +5296,6 @@
     --control-icon-secondary-default: #fafafa;
     --control-icon-secondary-hover: #fafafa;
     --control-icon-secondary-loading: #fafafa;
-    --control-icon-tertiary-active: #fafafa;
-    --control-icon-tertiary-default: #fafafa;
-    --control-icon-tertiary-hover: #fafafa;
-    --control-icon-tertiary-loading: #fafafa;
     --control-text-active-active: #fff;
     --control-text-active-default: #fff;
     --control-text-active-hover: #fff;
@@ -5340,10 +5328,6 @@
     --control-text-secondary-default: #fafafa;
     --control-text-secondary-hover: #fafafa;
     --control-text-secondary-loading: #fafafa;
-    --control-text-tertiary-active: #fafafa;
-    --control-text-tertiary-default: #fafafa;
-    --control-text-tertiary-hover: #fafafa;
-    --control-text-tertiary-loading: #fafafa;
     --creator-revenue-icon-gradient-end: #217a8c;
     --creator-revenue-icon-gradient-start: #299eb5;
     --creator-revenue-info-box-background: rgba(33,122,140,.1);
@@ -5597,4 +5581,4 @@
     --white: #fff
 }
 
-/*# sourceMappingURL=7da576e30bcd96cc.css.map*/
+/*# sourceMappingURL=4264e603dc259d86.css.map*/

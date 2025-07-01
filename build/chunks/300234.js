@@ -95,7 +95,7 @@ function v(e) {
     n.filter((e, t) => null == s[t]).forEach(e => {
       u.Z.requestMember(t.guild_id, e)
     })
-  }), 0 === n.length) ? null : (0, r.jsx)(c.Z, {
+  }), 0 === n.length) ? null : (0, r.jsx)(c.ZP, {
     className: x.facepile,
     showDefaultAvatarsForNullUsers: !0,
     guildId: t.guild_id,

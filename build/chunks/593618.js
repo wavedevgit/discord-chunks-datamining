@@ -155,7 +155,7 @@ function F(e, t, n) {
     children: [(0, r.jsx)(e, {
       className: k.activityIcon,
       color: "currentColor"
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(_.ZP, {
       guildId: n,
       users: t,
       max: 6
@@ -170,7 +170,7 @@ function Z(e, t, n) {
       size: "lg",
       color: "currentColor",
       className: k.activityIcon
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(_.ZP, {
       guildId: e,
       users: t,
       max: 3

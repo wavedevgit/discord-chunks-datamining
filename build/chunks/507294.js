@@ -193,7 +193,7 @@ let D = function(e) {
                 className: C.verifiedRoleDescription,
                 children: e.description
               }) : null]
-            }), (0, n.jsx)(m.Z, {
+            }), (0, n.jsx)(m.ZP, {
               showUserPopout: !1,
               guildId: r,
               users: a.map(() => null),

@@ -33,7 +33,7 @@ function x(e, t) {
     children: [(0, r.jsx)(e, {
       className: E.activityIcon,
       color: "currentColor"
-    }), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)(h.ZP, {
       guildId: void 0,
       users: t,
       max: 6
@@ -82,7 +82,7 @@ function I() {
         size: "lg",
         color: "currentColor",
         className: E.activityIcon
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(h.ZP, {
         guildId: void 0,
         users: o,
         max: 3

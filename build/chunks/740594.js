@@ -5,7 +5,7 @@ n.d(t, {
 });
 var r = n(255367);
 n(73800);
-var i = n(780605),
+var i = n(680018),
   a = n(481060),
   o = n(648613),
   s = n(388032);
@@ -95,7 +95,7 @@ let p = function(e) {
       } = e, n = null != g ? g : s.intl.string(s.t["2pG5GR"]), {
         variant: o
       } = E, l = f(E, ["variant"]);
-      return (0, r.jsx)(i.Y, c({
+      return (0, r.jsx)(i.z, c({
         onClick: t,
         text: n,
         icon: a.SrA,

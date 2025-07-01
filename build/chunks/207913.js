@@ -243,10 +243,10 @@ function V(e) {
   return (0, r.jsxs)(u.Kqy, {
     direction: "horizontal",
     gap: 4,
-    children: [(0, r.jsx)(f.Z, {
+    children: [(0, r.jsx)(f.ZP, {
       users: n,
       useFallbackUserForPopout: !0,
-      size: f.u.SIZE_16
+      size: f.u8.SIZE_16
     }), (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
       className: U.overflowText,

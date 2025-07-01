@@ -140,7 +140,7 @@ function S(e) {
       text: v.intl.string(v.t.l1QVfn),
       disableColor: !0,
       className: j.akaBadge
-    }), l.length > 0 ? (0, r.jsx)(c.Z, {
+    }), l.length > 0 ? (0, r.jsx)(c.ZP, {
       size: 16,
       users: o,
       showUserPopout: !1,

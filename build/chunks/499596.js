@@ -20,12 +20,12 @@ function m(e) {
     users: n,
     selected: i = !1
   } = e, m = (0, a.ZP)(t), h = null;
-  null != n && n.length > 0 && (h = (0, r.jsx)(o.Z, {
+  null != n && n.length > 0 && (h = (0, r.jsx)(o.ZP, {
     guildId: t.guild_id,
     className: f.voiceUserList,
     users: n,
     renderUser: e => {
-      if (null == e) return null;
+      if (null == e || e === o.ag) return null;
       let n = d.ZP.getName(t.guild_id, t.id, e),
         i = e.getAvatarURL(t.guild_id, 24);
       return (0, r.jsx)(s.DY3, {

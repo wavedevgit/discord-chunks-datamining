@@ -529,7 +529,7 @@ function ep(e) {
   } = e, l = (0, W.iM)(t, n);
   return (0, r.jsx)("div", {
     ref: s,
-    children: (0, r.jsx)(x.Z, {
+    children: (0, r.jsx)(x.ZP, {
       className: er.__invalid_facepile,
       showDefaultAvatarsForNullUsers: !0,
       guildId: t.guild_id,

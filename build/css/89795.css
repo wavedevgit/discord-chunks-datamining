@@ -1,6 +1,6 @@
 /**
   Module ID: 89795
-  Original File Name: 7eed905a673c1b5a
+  Original File Name: 6809b4c3e7b087e4
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -14670,19 +14670,19 @@ div.nagbar_d74ef8 {
 }
 
 .tertiary_ea5f43.pressed_ea5f43 {
-    background-color: var(--control-background-tertiary-active);
-    border-color: var(--control-border-tertiary-active);
+    background-color: var(--control-background-icon-only-active);
+    border-color: var(--control-border-icon-only-active);
     color: var(--icon-primary)
 }
 
 .tertiary_ea5f43:hover {
-    background-color: var(--control-background-tertiary-hover);
-    border-color: var(--control-border-tertiary-hover)
+    background-color: var(--control-background-icon-only-hover);
+    border-color: var(--control-border-icon-only-hover)
 }
 
 .tertiary_ea5f43:active {
-    background-color: var(--control-background-tertiary-active);
-    border-color: var(--control-border-tertiary-active)
+    background-color: var(--control-background-icon-only-active);
+    border-color: var(--control-border-icon-only-active)
 }
 
 .overlay-secondary_ea5f43 {
@@ -14713,18 +14713,18 @@ div.nagbar_d74ef8 {
 }
 
 .overlay-tertiary_ea5f43.pressed_ea5f43 {
-    background-color: var(--control-background-tertiary-active);
-    border-color: var(--control-border-tertiary-active)
+    background-color: var(--control-background-icon-only-active);
+    border-color: var(--control-border-icon-only-active)
 }
 
 .overlay-tertiary_ea5f43:hover {
-    background-color: var(--control-background-tertiary-hover);
-    border-color: var(--control-border-tertiary-hover)
+    background-color: var(--control-background-icon-only-hover);
+    border-color: var(--control-border-icon-only-hover)
 }
 
 .overlay-tertiary_ea5f43:active {
-    background-color: var(--control-background-tertiary-active);
-    border-color: var(--control-border-tertiary-active)
+    background-color: var(--control-background-icon-only-active);
+    border-color: var(--control-border-icon-only-active)
 }
 
 .animationObj__6b4ea {
@@ -14878,6 +14878,27 @@ div.nagbar_d74ef8 {
     box-sizing: border-box;
     color: var(--text-feedback-warning);
     outline: 1px dashed var(--status-warning)
+}
+
+.video__6fdb8 {
+    align-items: center;
+    aspect-ratio: 16/9;
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex: 1;
+    justify-content: center
+}
+
+.video__6fdb8[data-luminance=dark] {
+    background: linear-gradient(in oklab,var(--red-new-90),var(--orange-new-90),var(--yellow-new-90),var(--green-new-90),var(--blue-new-90))
+}
+
+.video__6fdb8[data-luminance=light] {
+    background: linear-gradient(in oklab,var(--red-new-10),var(--orange-new-10),var(--yellow-new-10),var(--green-new-10),var(--blue-new-10))
+}
+
+.video__6fdb8[data-luminance=mid] {
+    background: linear-gradient(in oklab,var(--red-new-50),var(--orange-new-50),var(--yellow-new-50),var(--green-new-50),var(--blue-new-50))
 }
 
 .datePicker__89fe9 {
@@ -19208,4 +19229,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=7eed905a673c1b5a.css.map*/
+/*# sourceMappingURL=6809b4c3e7b087e4.css.map*/

@@ -139,7 +139,7 @@ function Z(e) {
   } = (0, m.ZP)(u.Z.PREMIUM_MARKETING_TIER_CARD), a = (0, S.rS)(t), o = (0, i.jsx)("div", {
     className: N.CTAButton,
     children: (0, i.jsx)(j.Z, {
-      variant: "tertiary",
+      variant: "secondary",
       size: "sm",
       subscriptionTier: T.Si.TIER_0,
       fullWidth: !0

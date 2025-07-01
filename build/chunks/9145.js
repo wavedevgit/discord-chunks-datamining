@@ -40,7 +40,7 @@ var r = n(255367),
   D = n(981631),
   U = n(388032),
   B = n(199570);
-let F = A.u.SIZE_32,
+let F = A.u8.SIZE_32,
   H = {
     [L.MI.NO_CHAT]: B.noChat,
     [L.MI.RESIZABLE]: B.resizable
@@ -152,7 +152,7 @@ function G(e) {
   null != ep && (e_ = Array.from(ep.embeddedActivity.userIds).map(e => v.default.getUser(e)).filter(e => null != e && void 0 !== e));
   let ey = e => {
     var t;
-    if (null == e || void 0 === e) return null;
+    if (null == e || void 0 === e || e === A.ag) return null;
     let n = em.get(e.id),
       i = null != (t = null == n ? void 0 : n.nick) ? t : O.ZP.getName(e);
     return (0, r.jsx)(c.DY3, {
@@ -198,7 +198,7 @@ function G(e) {
           })
         }), null != eh ? (0, r.jsxs)("div", {
           className: B.footer,
-          children: [(0, r.jsx)(A.Z, {
+          children: [(0, r.jsx)(A.ZP, {
             renderIcon: !1,
             users: e_,
             size: F,

@@ -74,7 +74,7 @@ function _(e) {
   return (0, r.jsx)(a.Y, u(l({}, s), {
     "aria-label": null != n ? n : o.intl.string(o.t.cpT0Cg),
     icon: i.Uz9,
-    variant: t ? "color-mix" : "tertiary",
+    variant: t ? "color-mix" : "icon-only",
     text: void 0,
     fullWidth: !1
   }))

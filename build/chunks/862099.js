@@ -375,11 +375,11 @@ function X(e) {
   return null == a ? null : (0, i.jsxs)(i.Fragment, {
     children: [d.length > 0 ? (0, i.jsxs)("div", {
       className: o()(G.textBlock, G.singleLine),
-      children: [(0, i.jsx)(u.Z, {
+      children: [(0, i.jsx)(u.ZP, {
         guildId: a,
         users: d,
         showUserPopout: !0,
-        size: u.u.SIZE_16
+        size: u.u8.SIZE_16
       }), (0, i.jsx)(c.Text, {
         color: "none",
         variant: "text-xs/normal",
