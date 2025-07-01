@@ -1152,6 +1152,7 @@ Y(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : O.o.loadGuildIds([e.id
     region: e.region,
     viewerIds: e.viewer_ids,
     rtcServerId: e.rtc_server_id,
+    rtcChannelId: e.rtc_channel_id,
     paused: e.paused
   })
 }), H(["STREAM_SERVER_UPDATE"], e => {

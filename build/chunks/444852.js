@@ -381,22 +381,24 @@ class M extends s.Z {
     initialLayout: r,
     analyticsContext: a,
     isStreamer: s,
-    parentMediaSessionId: l
+    parentMediaSessionId: l,
+    channelId: c
   }) {
-    let c = (0, T.my)(t),
+    let u = (0, T.my)(t),
       {
-        guildId: u,
-        channelId: d
-      } = c;
+        guildId: d,
+        channelId: f
+      } = u;
     super({
       userId: p.default.getId(),
       sessionId: e,
-      guildId: u,
-      channelId: d,
+      guildId: d,
+      channelId: f,
       context: N.Yn.STREAM,
-      rtcServerId: n,
+      streamServerId: n,
+      streamChannelId: c,
       parentMediaSessionId: l
-    }), C(this, "analyticsContext", void 0), C(this, "_videoStreamStats", void 0), C(this, "_streamContext", void 0), C(this, "_streamKey", void 0), C(this, "_isStreamer", void 0), C(this, "_updateVideoStreamId", void 0), C(this, "_bandwidthSamples", []), C(this, "_goliveCurrentMaxResolution", void 0), this._streamContext = c, this._streamKey = t, this._isStreamer = s, this._videoStreamStats = new I.Z(r, this.isOwner), this.analyticsContext = a, this._updateVideoStreamId = i().debounce((e, t) => {
+    }), C(this, "analyticsContext", void 0), C(this, "_videoStreamStats", void 0), C(this, "_streamContext", void 0), C(this, "_streamKey", void 0), C(this, "_isStreamer", void 0), C(this, "_updateVideoStreamId", void 0), C(this, "_bandwidthSamples", []), C(this, "_goliveCurrentMaxResolution", void 0), this._streamContext = u, this._streamKey = t, this._isStreamer = s, this._videoStreamStats = new I.Z(r, this.isOwner), this.analyticsContext = a, this._updateVideoStreamId = i().debounce((e, t) => {
       let {
         guildId: n,
         channelId: r,
