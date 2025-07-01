@@ -26,10 +26,10 @@ var a = n(255367),
   O = n(248520),
   N = n(616257);
 
-function E(e) {
+function T(e) {
   return parseFloat(e.toFixed(3))
 }
-let T = [{
+let E = [{
   key: "store",
   cellClassName: O.actionColumn,
   render(e) {
@@ -45,7 +45,7 @@ let T = [{
     let {
       trace: t
     } = e;
-    return "".concat(E(t.time), " ms")
+    return "".concat(T(t.time), " ms")
   }
 }];
 
@@ -58,7 +58,7 @@ function S(e) {
   })), [t]);
   return (0, a.jsx)(d.zJl, {
     children: (0, a.jsx)(_.Z, {
-      columns: T,
+      columns: E,
       data: n
     })
   })
@@ -84,7 +84,7 @@ let P = [{
           })
         }), (0, a.jsxs)(j.Z9, {
           name: "Total Time",
-          children: [E(n.totalTime), " ms"]
+          children: [T(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(d.zJl, {
         className: O.inspectorContainer,
@@ -204,7 +204,7 @@ let I = [{
       let {
         actionLog: t
       } = e;
-      return "".concat(E(t.totalTime), " ms")
+      return "".concat(T(t.totalTime), " ms")
     }
   }],
   k = {
@@ -247,7 +247,7 @@ function R() {
       m(o), f(e)
     }, [o]),
     C = t.trim().length > 0,
-    E = r.useMemo(() => C ? x : b ? c : o, [o, x, C, b, c]);
+    T = r.useMemo(() => C ? x : b ? c : o, [o, x, C, b, c]);
   return (0, a.jsxs)("div", {
     ref: e,
     className: i()(N.panel, O.panel),
@@ -269,7 +269,7 @@ function R() {
       })]
     }), (0, a.jsx)(_.Z, {
       columns: I,
-      data: E,
+      data: T,
       selectedRowKey: null == v ? void 0 : v.id.toString(),
       onClickRow: e => j(e.actionLog)
     }), null != v && (0, a.jsx)(w, {

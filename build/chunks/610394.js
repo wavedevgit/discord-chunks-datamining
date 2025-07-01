@@ -368,7 +368,7 @@ function em(e) {
 }
 
 function eg(e) {
-  em(e), eH.emitChange()
+  em(e), eH.emitChange(), e !== V && x.info("OverlayStore: Focused new PID", e)
 }
 
 function eE(e) {

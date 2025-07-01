@@ -72,17 +72,17 @@ function O() {
       })
     }, [s]),
     f = r.useCallback(e => {
-      E(null == l ? void 0 : l.wallpaperId, e.target.value)
+      T(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
     C = r.useCallback(e => {
       S(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
     O = r.useCallback(e => {
-      T(null == l ? void 0 : l.wallpaperId, e.target.value)
+      E(null == l ? void 0 : l.wallpaperId, e.target.value)
     }, [null == l ? void 0 : l.wallpaperId]),
-    N = r.useCallback(() => E(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    N = r.useCallback(() => T(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     P = r.useCallback(() => S(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
-    w = r.useCallback(() => T(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
+    w = r.useCallback(() => E(null == l ? void 0 : l.wallpaperId, void 0), [null == l ? void 0 : l.wallpaperId]),
     I = r.useCallback(e => {
       null != s && (0, x.i)(s, {
         token_mix_amount: Math.round(e)
@@ -248,12 +248,12 @@ function N() {
     })]
   })
 }
-let E = (0, s.debounce)(function(e, t) {
+let T = (0, s.debounce)(function(e, t) {
     null != e && (0, x.i)(e, {
       primary_color: t
     })
   }, 200),
-  T = (0, s.debounce)(function(e, t) {
+  E = (0, s.debounce)(function(e, t) {
     null != e && (0, x.i)(e, {
       link_color: t
     })

@@ -18,7 +18,7 @@ function u(e, t, n, i) {
     {
       searchStringGenerator: m
     } = i,
-    h = function(e) {
+    y = function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
         [n, i] = r.useState(e),
         l = r.useRef(e);
@@ -31,7 +31,7 @@ function u(e, t, n, i) {
         })
       }, t), n
     }(t.map(m), [t, m, ...u]),
-    y = function(e) {
+    h = function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
         [n, i] = r.useState(e),
         l = r.useRef(e);
@@ -111,8 +111,8 @@ function u(e, t, n, i) {
     }), f.current
   }, [i]);
   return r.useEffect(() => {
-    g(e, y, h)
-  }, [g, e, y, h, ...u]), r.useEffect(() => () => {
+    g(e, h, y)
+  }, [g, e, h, y, ...u]), r.useEffect(() => () => {
     null != f.current && f.current.cancel(), f.current = null, d.current = null
-  }, [h, n, i]), g
+  }, [y, n, i]), g
 }

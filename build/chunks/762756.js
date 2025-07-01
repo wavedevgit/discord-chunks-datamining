@@ -13,8 +13,8 @@ var r, i = n(255367),
   f = n(63063),
   p = n(1964),
   m = n(981631),
-  h = n(388032),
-  y = n(816676),
+  y = n(388032),
+  h = n(816676),
   g = n(20493);
 
 function b(e, t, n) {
@@ -47,24 +47,24 @@ class v extends(r = a.PureComponent) {
   }
   render() {
     return (0, i.jsxs)(d.Z, {
-      className: y.verification,
+      className: h.verification,
       align: d.Z.Align.CENTER,
       direction: d.Z.Direction.VERTICAL,
       children: [(0, i.jsxs)(d.Z, {
-        className: o()(y.container, {
-          [y.isMobile]: c.tq
+        className: o()(h.container, {
+          [h.isMobile]: c.tq
         }),
         direction: d.Z.Direction.VERTICAL,
         align: d.Z.Align.CENTER,
         justify: d.Z.Justify.CENTER,
         children: [(0, i.jsx)("div", {
-          className: y.image
+          className: h.image
         }), (0, i.jsx)("div", {
-          className: o()(y.title, g.marginTop20),
-          children: h.intl.string(h.t.Iz0kDg)
+          className: o()(h.title, g.marginTop20),
+          children: y.intl.string(y.t.Iz0kDg)
         }), (0, i.jsx)("div", {
-          className: o()(y.body, g.marginTop4, g.marginBottom20),
-          children: h.intl.format(h.t["0rqMV1"], {
+          className: o()(h.body, g.marginTop4, g.marginBottom20),
+          children: y.intl.format(y.t["0rqMV1"], {
             helpCenterURL: E
           })
         }), (0, i.jsx)(d.Z, {
@@ -74,22 +74,22 @@ class v extends(r = a.PureComponent) {
           children: this.renderFields()
         })]
       }), (0, i.jsx)("div", {
-        className: o()(y.footer, g.marginTop20),
-        children: h.intl.string(h.t.qqYun5)
+        className: o()(h.footer, g.marginTop20),
+        children: y.intl.string(y.t.qqYun5)
       }), (0, i.jsxs)(d.Z, {
         className: o()(g.marginTop4, g.marginBottom20),
         grow: 0,
         children: [(0, i.jsx)("div", {
-          className: o()(y.footer, y.footerAction),
-          children: h.intl.format(h.t.WL51ZW, {
+          className: o()(h.footer, h.footerAction),
+          children: y.intl.format(y.t.WL51ZW, {
             supportURL: f.Z.getSubmitRequestURL()
           })
         }), (0, i.jsx)("div", {
-          className: o()(y.footer, y.footerBullet),
+          className: o()(h.footer, h.footerBullet),
           children: "•"
         }), (0, i.jsx)("div", {
-          className: o()(y.footer, y.footerAction),
-          children: h.intl.format(h.t.Hv7ztb, {
+          className: o()(h.footer, h.footerAction),
+          children: y.intl.format(y.t.Hv7ztb, {
             logoutOnClick: this.props.onLogout
           })
         })]

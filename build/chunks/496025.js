@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => T
+  Z: () => E
 }), n(388685), n(35282);
 var a = n(255367),
   r = n(73800),
@@ -81,7 +81,7 @@ function N() {
   })
 }
 
-function E() {
+function T() {
   let e = r.useCallback(() => {
     d.Z.openPrivateChannel({
       recipientIds: [y.I]
@@ -94,7 +94,7 @@ function E() {
   })
 }
 
-function T() {
+function E() {
   let e = g.ZP.allByCategory(g.zU.MESSAGING).map(e => {
     let [t, n, {
       label: r
@@ -113,6 +113,6 @@ function T() {
       className: C.divider
     }), (0, a.jsx)(N, {}), (0, a.jsx)("div", {
       className: C.divider
-    }), (0, a.jsx)(E, {})]
+    }), (0, a.jsx)(T, {})]
   })
 }

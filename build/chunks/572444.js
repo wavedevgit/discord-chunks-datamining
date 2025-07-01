@@ -109,8 +109,8 @@ function _() {
     C = r.useRef(null),
     [O, N] = r.useState(.5),
     {
-      krispModels: E,
-      krispModelOverride: T,
+      krispModels: T,
+      krispModelOverride: E,
       inputDeviceId: S,
       inputMode: P,
       echoCancellation: w,
@@ -218,8 +218,8 @@ function _() {
             clear: () => {
               u.Z.setKrispModelOverride("")
             },
-            isSelected: e => e === T,
-            options: E.map(e => ({
+            isSelected: e => e === E,
+            options: T.map(e => ({
               label: e,
               value: e
             })),

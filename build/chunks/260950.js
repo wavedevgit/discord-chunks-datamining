@@ -69,8 +69,8 @@ function C() {
   r.useEffect(() => {
     N()
   }, [N]);
-  let E = r.useMemo(() => m.filter(e => e.status !== f.O0b.ACTIVE).sort((e, t) => e.id > t.id ? -1 : 1), [m]),
-    T = async () => {
+  let T = r.useMemo(() => m.filter(e => e.status !== f.O0b.ACTIVE).sort((e, t) => e.id > t.id ? -1 : 1), [m]),
+    E = async () => {
       await o.tn.post({
         url: "/debug/subscription",
         body: {
@@ -118,7 +118,7 @@ function C() {
             popoutLayerContext: p.O$
           }), (0, a.jsx)(c.zxk, {
             size: c.zxk.Sizes.SMALL,
-            onClick: T,
+            onClick: E,
             children: "Create Subscription"
           })]
         })
@@ -136,12 +136,12 @@ function C() {
           onClick: S,
           children: "End All Subscriptions"
         })
-      }), E.length > 0 && (0, a.jsxs)(a.Fragment, {
+      }), T.length > 0 && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(c.X6q, {
           variant: "heading-lg/semibold",
           className: j.header,
           children: "Previous Subscriptions"
-        }), E.map(e => (0, a.jsx)(b.Z, {
+        }), T.map(e => (0, a.jsx)(b.Z, {
           subscription: e,
           onUpdated: N
         }, e.id))]

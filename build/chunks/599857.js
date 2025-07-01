@@ -31,12 +31,12 @@ function d(e) {
         action: n
       } : void 0)), d("loaded")
     })
-  }, [t, n, p, f]), h = i.useCallback(() => {
+  }, [t, n, p, f]), y = i.useCallback(() => {
     d("running"), f("recaptcha-loading"), s.I.loadRecaptchaScript(t, m, f)
   }, [t, m, f]);
   return i.useEffect(() => {
-    "uninitialized" === l && h()
-  }, [h, l]), i.useEffect(() => () => {
+    "uninitialized" === l && y()
+  }, [y, l]), i.useEffect(() => () => {
     f("recaptcha-unloading"), document.querySelectorAll('script[src*="recaptcha/enterprise.js"],.grecaptcha-badge').forEach(e => {
       var t;
       return null == (t = e.parentNode) ? void 0 : t.removeChild(e)

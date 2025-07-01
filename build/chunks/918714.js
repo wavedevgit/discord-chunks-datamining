@@ -13,8 +13,8 @@ var r = n(255367),
   d = n(388032),
   f = n(70421);
 let p = () => {
-  let [e, t] = i.useState(null), [n, p] = i.useState(!0), [m, h] = i.useState(null), [y, g] = i.useState(!1), b = i.useCallback(async () => {
-    p(!0), h(null);
+  let [e, t] = i.useState(null), [n, p] = i.useState(!0), [m, y] = i.useState(null), [h, g] = i.useState(!1), b = i.useCallback(async () => {
+    p(!0), y(null);
     try {
       var e;
       let n = await (0, o.PA)();
@@ -22,20 +22,18 @@ let p = () => {
       !(0, l.Ew)(null == (e = n.ui_component) ? void 0 : e.type) && c.VZ.has(n.ui_component.type) ? t(n) : t({
         task_id: n.task_id,
         task_type: c.UA.REFRESH_APP,
-        flow_id: n.flow_id,
         assignment_id: n.assignment_id,
         ui_component: {
           type: c.NS.REFRESH_APP,
           data: {}
         },
         flow_context: {
-          tasks: [{
-            task_type: c.UA.REFRESH_APP
-          }]
+          tasks: [],
+          flow_id: n.flow_context.flow_id
         }
       })
     } catch (e) {
-      h(d.intl.string(u.default["/f++3t"]))
+      y(d.intl.string(u.default["/f++3t"]))
     } finally {
       p(!1)
     }
@@ -43,15 +41,15 @@ let p = () => {
     if (null !== e) {
       g(!0);
       try {
-        let n = {
+        var n;
+        let r = {
           task_id: e.task_id,
-          flow_id: e.flow_id,
-          assignment_id: e.assignment_id,
+          flow_id: null == (n = e.flow_context) ? void 0 : n.flow_id,
           data: t
         };
-        await (0, o.Wl)(n), b()
+        await (0, o.Wl)(r), b()
       } catch (e) {
-        h(d.intl.string(u.default["+QRSxc"]))
+        y(d.intl.string(u.default["+QRSxc"]))
       } finally {
         g(!1)
       }
@@ -84,7 +82,7 @@ let p = () => {
         }), !n && null === m && null !== e && (0, r.jsx)(s.Z, {
           task: e,
           onSubmit: E,
-          disabled: y
+          disabled: h
         })]
       })]
     })

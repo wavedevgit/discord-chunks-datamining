@@ -80,8 +80,8 @@ function g() {
     grantFractionalPremium: C,
     deleteFractionalPremium: O,
     triggerNextEntitlementFulfillment: N,
-    entitlements: E,
-    loading: T
+    entitlements: T,
+    loading: E
   } = (0, m.m)();
   r.useEffect(() => {
     y()
@@ -89,8 +89,8 @@ function g() {
   let S = e => e.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === x.qc2.FRACTIONAL_REDEMPTION),
     P = e => e.filter(e => Object.values(s.a).includes(e.skuId) && null == e.startsAt);
   return r.useEffect(() => {
-    f(S(E)), _(P(E))
-  }, [E]), (0, a.jsx)(o.zJl, {
+    f(S(T)), _(P(T))
+  }, [T]), (0, a.jsx)(o.zJl, {
     className: p.panel,
     children: (0, a.jsxs)("div", {
       className: b.panelInner,
@@ -168,21 +168,21 @@ function g() {
           }), (0, a.jsxs)("div", {
             className: h.buttonGroup,
             children: [(0, a.jsx)(o.zxk, {
-              disabled: T,
+              disabled: E,
               size: o.zxk.Sizes.TINY,
               color: o.zxk.Colors.PRIMARY,
               look: o.zxk.Looks.OUTLINED,
               onClick: () => N(),
               children: "Run fulfillment"
             }), (0, a.jsx)(o.zxk, {
-              disabled: T,
+              disabled: E,
               size: o.zxk.Sizes.TINY,
               color: o.zxk.Colors.RED,
               look: o.zxk.Looks.OUTLINED,
               onClick: () => O(),
               children: "Delete all"
             }), (0, a.jsx)(o.zxk, {
-              disabled: T,
+              disabled: E,
               look: o.zxk.Looks.BLANK,
               size: o.zxk.Sizes.ICON,
               onClick: y,
