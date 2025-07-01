@@ -1,0 +1,1 @@
+{"id":"133340","type":"experiment","data":{"kind":"user","id":"2025-07_cloud_play_cta","commonTriggerPoint":"i.$P.CONNECTION_OPEN","label":"Cloud Play CTA Experiment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Cloud Play CTA","config":{"enabled":false}}]},"fromModule":{"id":"61668"}}

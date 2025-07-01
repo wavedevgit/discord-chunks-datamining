@@ -1,7 +1,7 @@
 /** Chunk was on 61668 **/
 n.d(t, {
   $p: () => e7,
-  BB: () => e8,
+  BB: () => e5,
   ZP: () => e6
 }), n(388685), n(997841), n(35282), n(415506), n(361932), n(187205);
 var r, i = n(255367),
@@ -177,7 +177,7 @@ let e1 = 15 * eh.Z.Millis.MINUTE,
       className: eX.gifFavoriteButton
     })
   },
-  e5 = e => () => {
+  e8 = e => () => {
     let {
       url: t,
       proxyUrl: n,
@@ -194,7 +194,7 @@ let e1 = 15 * eh.Z.Millis.MINUTE,
       className: eX.gifFavoriteButton
     }) : null
   };
-class e8 extends(r = l.Component) {
+class e5 extends(r = l.Component) {
   shouldRenderInvite(e) {
     let {
       channel: t
@@ -449,7 +449,7 @@ class e8 extends(r = l.Component) {
               duration: r
             })
           },
-          gifFavoriteButton: e5(o),
+          gifFavoriteButton: e8(o),
           isSearchResult: this.props.isSearchResult
         },
         c = (0, eg.q)({
@@ -497,7 +497,7 @@ class e8 extends(r = l.Component) {
     } = this.props;
     return (0, i.jsx)(eD.F, {
       gifAutoPlay: t,
-      getGifFavButton: e5,
+      getGifFavButton: e8,
       getOnMediaItemContextMenu: null == a ? void 0 : e => t => {
         t.stopPropagation(), t.preventDefault(), null == a || a(t, e)
       },
@@ -806,7 +806,7 @@ function e6(e) {
     isActiveChannelOrUnarchivableThread: x,
     isAutomodQuarantined: y
   }), N = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), P = (0, K.Z)(null == n ? void 0 : n.id), A = (0, q.Z)(r), w = (0, S.v)(r), k = (0, eI._)(n), L = (0, ex.ro)(r.id, r.channel_id);
-  return (0, i.jsx)(e8, e$(eJ(e$(eJ({
+  return (0, i.jsx)(e5, e$(eJ(e$(eJ({
     canSuppressEmbeds: v,
     canDeleteAttachments: O
   }, T), {
@@ -830,7 +830,7 @@ function e6(e) {
     ctaButtonType: L
   }))
 }
-eQ(e8, "defaultProps", {
+eQ(e5, "defaultProps", {
   renderEmbeds: !0,
   compact: !1
 });
@@ -869,7 +869,7 @@ let e7 = e => {
     b = (0, S.v)(n),
     E = (0, ex.ro)(n.id, n.channel_id),
     y = (0, q.Z)(n);
-  return (0, i.jsx)(e8, e$(eJ({}, d), {
+  return (0, i.jsx)(e5, e$(eJ({}, d), {
     message: n,
     channel: r,
     disableReactionReads: l,
