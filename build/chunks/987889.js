@@ -1,6 +1,6 @@
 /** Chunk was on 4811 **/
 n.d(t, {
-  Z: () => S
+  Z: () => E
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -213,7 +213,7 @@ let C = {
   },
   j = e => "MENTION";
 
-function S(e) {
+function E(e) {
   let {
     message: t,
     channel: n,

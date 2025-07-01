@@ -1,55 +1,71 @@
 /** Chunk was on 4811 **/
 n.d(t, {
-  Z: () => p
-}), n(388685);
+  Z: () => b
+});
 var r = n(255367),
   i = n(73800),
-  l = n(481060),
-  o = n(570140),
-  a = n(493773),
-  s = n(585483),
-  c = n(82409),
-  u = n(981631),
-  d = n(388032),
-  h = n(614147);
+  l = n(120356),
+  o = n.n(l),
+  a = n(481060),
+  s = n(570140),
+  c = n(493773),
+  u = n(585483),
+  d = n(821020),
+  h = n(736670),
+  p = n(82409),
+  f = n(981631),
+  g = n(388032),
+  m = n(614147);
 
-function p(e) {
+function b(e) {
   let {
     children: t,
     popoutPosition: n,
-    popoutAlign: p,
-    targetElementRef: f
-  } = e, [g, m] = i.useState(!1), b = i.useCallback(() => {
-    m(!1)
-  }, []), _ = i.useCallback(() => {
-    m(!g)
-  }, [g]);
-  return (0, a.ZP)(() => {
+    popoutAlign: l,
+    targetElementRef: b,
+    spacing: _ = 0
+  } = e, {
+    isOpen: O,
+    setIsOpen: y
+  } = (0, h.Z)(), v = i.useCallback(() => {
+    y(!1)
+  }, [y]), C = i.useCallback(() => {
+    y(!O)
+  }, [O, y]);
+  (0, c.ZP)(() => {
     let e = () => {
-      m(!1)
+      y(!1)
     };
-    return o.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => o.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-  }), i.useEffect(() => (s.S.subscribe(u.CkL.TOGGLE_INBOX, _), () => void s.S.unsubscribe(u.CkL.TOGGLE_INBOX, _)), [_]), (0, r.jsx)(l.yRy, {
-    targetElementRef: f,
-    shouldShow: g,
-    align: p,
-    animation: l.yRy.Animation.FADE,
-    animationPosition: "left",
+    return s.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => s.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
+  }), i.useEffect(() => (u.S.subscribe(f.CkL.TOGGLE_INBOX, C), () => void u.S.unsubscribe(f.CkL.TOGGLE_INBOX, C)), [C]);
+  let {
+    entrypoint: j
+  } = d.Lk.useExperiment({
+    location: "NotificationsInboxPopout"
+  });
+  return (0, r.jsx)(a.yRy, {
+    targetElementRef: b,
+    shouldShow: O,
+    align: l,
+    animation: j === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,
+    animationPosition: j === d.u3.TITLE_BAR_LEFT ? "bottom" : "left",
     position: n,
-    onRequestClose: b,
-    spacing: 0,
+    onRequestClose: v,
+    spacing: _,
     renderPopout: function() {
-      return (0, r.jsx)(l.VqE, {
-        "aria-label": d.intl.string(d.t.GSmTKC),
-        className: h.positionLayer,
+      return (0, r.jsx)(a.VqE, {
+        "aria-label": g.intl.string(g.t.GSmTKC),
+        className: j !== d.u3.TITLE_BAR_LEFT ? m.repositionLayerSidebarPopout : void 0,
         children: (0, r.jsxs)("div", {
-          className: h.container,
+          className: o()(m.container, {
+            [m.titleBarEntrypointVariant]: j === d.u3.TITLE_BAR_LEFT
+          }),
           children: [(0, r.jsx)("div", {
-            className: h.backgroundContainer,
+            className: m.backgroundContainer,
             children: (0, r.jsx)("span", {
-              className: h.background
+              className: m.background
             })
-          }), (0, r.jsx)(c.Z, {})]
+          }), (0, r.jsx)(p.Z, {})]
         })
       })
     },
@@ -57,7 +73,7 @@ function p(e) {
       let {
         isShown: r
       } = n;
-      return t(_, r, e)
+      return t(C, r, e)
     }
   })
 }

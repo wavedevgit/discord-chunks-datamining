@@ -22,8 +22,8 @@ var r, i = n(255367),
   v = n(888369),
   C = n(430824),
   j = n(306680),
-  S = n(944486),
-  E = n(938475),
+  E = n(944486),
+  S = n(938475),
   x = n(483360),
   I = n(585483),
   P = n(63063),
@@ -111,13 +111,13 @@ let V = c.ZP.connectStores([j.ZP, y.Z], e => {
       category: y.Z.getChannel(t.parent_id)
     }
   })(F),
-  H = c.ZP.connectStores([E.ZP], e => {
+  H = c.ZP.connectStores([S.ZP], e => {
     let {
       channel: t
     } = e;
     if (null == t.guild_id) throw Error("ConnectedVoiceChannel - somehow we got a voice channel with no guild_id...");
     return {
-      voiceStates: E.ZP.getVoiceStates(t.guild_id)[t.id]
+      voiceStates: S.ZP.getVoiceStates(t.guild_id)[t.id]
     }
   })(F),
   z = c.ZP.connectStores([v.default], e => {
@@ -392,7 +392,7 @@ class q extends l.PureComponent {
             } = await Promise.all([n.e("79695"), n.e("53912"), n.e("2016")]).then(n.bind(n, 354741));
             return n => (0, i.jsx)(e, U(k({}, n), {
               channel: t.record,
-              selected: S.Z.getChannelId() === t.record.id,
+              selected: E.Z.getChannelId() === t.record.id,
               onSelect: N.Cp
             }))
           });

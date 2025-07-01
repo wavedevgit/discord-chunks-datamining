@@ -1,6 +1,6 @@
 /**
   Module ID: 10026
-  Original File Name: 1605eaa1ded64626
+  Original File Name: 2f9586ea716b526e
 **/
 @value minColumnWidth: 460px;
 
@@ -275,6 +275,7 @@
     border-radius: var(--radius-md);
     color: var(--header-primary);
     display: flex;
+    gap: 4px;
     margin-left: auto;
     padding: 1px 6px;
     pointer-events: all;
@@ -285,9 +286,8 @@
     background: linear-gradient(90deg,#db00a4,#5968f0)
 }
 
-.premiumTrialBadgeIcon__4c1e4 {
+.premiumTrialBadge__4c1e4.premiumTrialAcknowledgedBadge__4c1e4 .premiumTrialBadgeIcon__4c1e4 {
     height: 12px;
-    margin-right: 2px;
     width: 12px
 }
 
@@ -1495,4 +1495,4 @@
     margin-left: var(--space-12)
 }
 
-/*# sourceMappingURL=1605eaa1ded64626.css.map*/
+/*# sourceMappingURL=2f9586ea716b526e.css.map*/

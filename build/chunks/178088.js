@@ -1,6 +1,6 @@
 /** Chunk was on 4811 **/
 n.d(t, {
-  k: () => E
+  k: () => S
 }), n(388685);
 var r = n(255367),
   i = n(73800),
@@ -23,13 +23,13 @@ var r = n(255367),
   v = n(946443),
   C = n(264233),
   j = n(981631),
-  S = n(388032);
+  E = n(388032);
 
-function E(e) {
+function S(e) {
   let {
     onOpen: t,
     onClose: n,
-    children: E,
+    children: S,
     badgeState: x,
     popoutPosition: I,
     popoutAlign: P,
@@ -97,7 +97,7 @@ function E(e) {
       onRequestClose: U,
       renderPopout: function() {
         return (0, r.jsx)(s.VqE, {
-          "aria-label": S.intl.string(S.t.GSmTKC),
+          "aria-label": E.intl.string(E.t.GSmTKC),
           className: Z,
           children: D === a.X.FOR_YOU ? (0, r.jsx)(_.Z, {
             setTab: L,
@@ -143,7 +143,7 @@ function E(e) {
         let {
           isShown: n
         } = t;
-        return E(G, n, e, V)
+        return S(G, n, e, V)
       }
     })
   })

@@ -1,7 +1,8 @@
 /** Chunk was on 4811 **/
 e.exports = {
-  positionLayer: "positionLayer_fc71d3",
+  repositionLayerSidebarPopout: "repositionLayerSidebarPopout_fc71d3",
   container: "container_fc71d3",
+  titleBarEntrypointVariant: "titleBarEntrypointVariant_fc71d3",
   backgroundContainer: "backgroundContainer_fc71d3",
   background: "background_fc71d3"
 }

@@ -18,8 +18,8 @@ var r = n(664751),
   m = n(973616),
   b = n(594174),
   _ = n(630388),
-  E = n(700785),
-  O = n(996106),
+  O = n(700785),
+  E = n(996106),
   y = n(186901),
   I = n(981631);
 
@@ -74,17 +74,17 @@ async function N(e, t, n) {
     pid: R,
     signal: D
   } = e;
-  if (null == D ? void 0 : D.aborted) throw new O.Z({
+  if (null == D ? void 0 : D.aborted) throw new E.Z({
     errorCode: I.lTL.UNKNOWN_ERROR
   }, "Request aborted");
-  if (null == u) throw new O.Z({
+  if (null == u) throw new E.Z({
     errorCode: I.lTL.OAUTH2_ERROR
   }, "No Client ID provided");
-  if (null != v) throw new O.Z({
+  if (null != v) throw new E.Z({
     errorCode: I.lTL.OAUTH2_ERROR
   }, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
   let k = [];
-  if ("string" == typeof P ? k = P.split(" ").filter(e => e.length > 0) : Array.isArray(P) && (k = P), null == b.default.getCurrentUser()) throw new O.Z({
+  if ("string" == typeof P ? k = P.split(" ").filter(e => e.length > 0) : Array.isArray(P) && (k = P), null == b.default.getCurrentUser()) throw new E.Z({
     errorCode: I.lTL.OAUTH2_ERROR
   }, "Client is not logged in");
   if (null != w) l = Number(w);
@@ -115,7 +115,7 @@ async function N(e, t, n) {
     let {
       body: e
     } = t;
-    throw new O.Z({
+    throw new E.Z({
       errorCode: I.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorization Error: ".concat((null == e ? void 0 : e.message) || "Unknown Error"))
   }
@@ -136,12 +136,12 @@ async function N(e, t, n) {
     let {
       body: e
     } = t;
-    throw new O.Z({
+    throw new E.Z({
       errorCode: I.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorize Error: ".concat((null == e ? void 0 : e.message) || "Unknown Error"))
   }
   null == n || n(o.application, Z, R);
-  let M = E.Hn;
+  let M = O.Hn;
   try {
     M = a.vB(null != j ? j : 0)
   } catch (e) {}
@@ -166,10 +166,10 @@ async function N(e, t, n) {
 }
 
 function T(e, t) {
-  if (e.authorization.accessToken) throw new O.Z({
+  if (e.authorization.accessToken) throw new E.Z({
     errorCode: I.lTL.INVALID_COMMAND
   }, "Already authenticated");
-  if (e.authorization.authing) throw new O.Z({
+  if (e.authorization.authing) throw new E.Z({
     errorCode: I.lTL.INVALID_COMMAND
   }, "Already authenticating");
   return e.authorization.authing = !0, o.tn.get({
@@ -187,11 +187,11 @@ function T(e, t) {
       scopes: l,
       expires: a
     } = n.body;
-    if (e.application.id !== r.id) throw new O.Z({
+    if (e.application.id !== r.id) throw new E.Z({
       errorCode: I.lTL.INVALID_CLIENTID
     }, "Application does not match the connection's");
     let o = b.default.getCurrentUser();
-    if (null == o || !i || o.id !== i.id) throw new O.Z({
+    if (null == o || !i || o.id !== i.id) throw new E.Z({
       errorCode: I.lTL.INVALID_TOKEN
     }, "Token does not match current user");
     return e.authorization.scopes = [...e.authorization.scopes, ...l, y.wE], e.authorization.accessToken = t, e.authorization.expires = new Date(a), u.Z.dispatch({
@@ -202,7 +202,7 @@ function T(e, t) {
       access_token: t
     })
   }, () => {
-    throw new O.Z({
+    throw new E.Z({
       errorCode: I.lTL.INVALID_TOKEN
     }, "Invalid access token: ".concat(t))
   }).catch(t => {
@@ -223,7 +223,7 @@ function P(e, t) {
         } = n;
         if (null == o && i.transport === y.He.IPC) {
           let n = i.application.id;
-          if (null == n) throw new O.Z({
+          if (null == n) throw new E.Z({
             errorCode: I.lTL.INVALID_COMMAND
           }, "No application.");
           let s = l.x.IDENTIFY,
@@ -233,14 +233,14 @@ function P(e, t) {
               response_type: "token",
               signal: a
             }, e, t).then(e => {
-              if (null == e) throw new O.Z({
+              if (null == e) throw new E.Z({
                 errorCode: I.lTL.UNKNOWN_ERROR
               }, "Unknown error occurred");
               let t = e.split(/#|\?/),
                 l = r.parse(t[t.length - 1]);
               if (null != l.error) {
                 var a;
-                throw new O.Z({
+                throw new E.Z({
                   errorCode: I.lTL.OAUTH2_ERROR
                 }, "OAuth2 Error: ".concat(l.error, ": ").concat(null != (a = l.error_description) ? a : "unknown error"))
               }
@@ -267,7 +267,7 @@ function P(e, t) {
             return delete t[n], c.K.set(S, t), u()
           }) : u()
         }
-        if (null == o) throw new O.Z({
+        if (null == o) throw new E.Z({
           errorCode: I.lTL.INVALID_TOKEN
         }, "No access token provided");
         return T(i, o)
@@ -280,19 +280,19 @@ function P(e, t) {
           signal: i,
           args: l
         } = n, a = l.client_id;
-        if (!a) throw new O.Z({
+        if (!a) throw new E.Z({
           errorCode: I.lTL.INVALID_CLIENTID
         }, "No client id provided");
-        if (null != r.authorization.accessToken) throw new O.Z({
+        if (null != r.authorization.accessToken) throw new E.Z({
           errorCode: I.lTL.INVALID_COMMAND
         }, "Already authenticated");
-        if (r.authorization.authing) throw new O.Z({
+        if (r.authorization.authing) throw new E.Z({
           errorCode: I.lTL.INVALID_COMMAND
         }, "Already authing");
-        if (r.authorization.authing = !0, "token" === l.response_type) throw r.authorization.authing = !1, new O.Z({
+        if (r.authorization.authing = !0, "token" === l.response_type) throw r.authorization.authing = !1, new E.Z({
           errorCode: I.lTL.INVALID_COMMAND
         }, 'Authorization response_type "token" is not supported');
-        if (r.application.id !== a) throw r.authorization.authing = !1, new O.Z({
+        if (r.application.id !== a) throw r.authorization.authing = !1, new E.Z({
           errorCode: I.lTL.INVALID_CLIENTID
         }, "Application does not match the connection's");
         let o = l.scopes || l.scope;
@@ -300,7 +300,7 @@ function P(e, t) {
           scope: o,
           signal: i
         }), e, t).then(e => {
-          if (r.authorization.authing = !1, null == e) throw new O.Z({
+          if (r.authorization.authing = !1, null == e) throw new E.Z({
             errorCode: I.lTL.UNKNOWN_ERROR
           }, "Unknown error occurred");
           let t = new URL(e),
@@ -308,12 +308,12 @@ function P(e, t) {
           if (null != n && "" !== n) {
             var i;
             let e = null != (i = t.searchParams.get("error_description")) ? i : "unknown error";
-            throw new O.Z({
+            throw new E.Z({
               errorCode: I.lTL.OAUTH2_ERROR
             }, "OAuth2 Error: ".concat(n, ": ").concat(e))
           }
           let l = t.searchParams.get("code");
-          if (null == l) throw new O.Z({
+          if (null == l) throw new E.Z({
             errorCode: I.lTL.OAUTH2_ERROR
           }, "OAuth2 Error: Unable to find auth code");
           return {

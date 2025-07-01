@@ -36,7 +36,7 @@ function b(e) {
     enabled: j
   } = u.Z.useExperiment({
     location: "RecentsHeader"
-  }), S = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), E = (0, i.e7)([h.Z], () => h.Z.getOverdueMessageReminderCount());
+  }), E = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), S = (0, i.e7)([h.Z], () => h.Z.getOverdueMessageReminderCount());
   return (0, r.jsxs)(a.h4, {
     className: m.header,
     children: [(0, r.jsxs)("div", {
@@ -85,7 +85,7 @@ function b(e) {
           "aria-label": "game_invites",
           id: l.X.GAME_INVITES,
           className: m.tab,
-          children: [g.intl.string(g.t.apq3cX), S > 0 ? (0, r.jsx)(o.fWl, {
+          children: [g.intl.string(g.t.apq3cX), E > 0 ? (0, r.jsx)(o.fWl, {
             color: s.Z.STATUS_DANGER,
             className: m.iconBadge
           }) : null]
@@ -93,8 +93,8 @@ function b(e) {
           "aria-label": g.intl.string(g.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
           className: m.tab,
-          children: 0 === E ? g.intl.string(g.t["2pAkDA"]) : g.intl.formatToPlainString(g.t.I4fryM, {
-            count: E
+          children: 0 === S ? g.intl.string(g.t["2pAkDA"]) : g.intl.formatToPlainString(g.t.I4fryM, {
+            count: S
           })
         }) : null, C ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "scheduled",

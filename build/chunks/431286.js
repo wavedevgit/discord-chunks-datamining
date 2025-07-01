@@ -36,9 +36,9 @@ function j() {
     enabled: j
   } = (0, m.hl)({
     location: "virtual_currency_announcement_modal"
-  }), [S, E] = (0, h.US)(j ? [a.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ..._.b.useSelectedDismissibleContent), x = (0, c.s9z)(c.JQI);
+  }), [E, S] = (0, h.US)(j ? [a.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ..._.b.useSelectedDismissibleContent), x = (0, c.s9z)(c.JQI);
   i.useEffect(() => {
-    j && !t && S === a.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || x || (u.Z.dispatch({
+    j && !t && E === a.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || x || (u.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
     }), (0, s.ZD)(async () => {
       let {
@@ -49,13 +49,13 @@ function j() {
           onClose: n,
           transitionState: i
         } = t, o = async () => {
-          await n(), E(y.L.USER_DISMISS)
+          await n(), S(y.L.USER_DISMISS)
         };
         return (0, r.jsx)(e, {
           transitionState: i,
           onClose: o,
           ctaOnClick: () => {
-            E(y.L.TAKE_ACTION), (0, d.EW)(a.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
+            S(y.L.TAKE_ACTION), (0, d.EW)(a.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
               dismissAction: y.L.INDIRECT_ACTION,
               groupName: y.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, d.EW)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
@@ -75,8 +75,8 @@ function j() {
     }, {
       modalKey: C,
       onCloseRequest: () => {
-        E(y.L.USER_DISMISS), (0, c.Mr3)(C)
+        S(y.L.USER_DISMISS), (0, c.Mr3)(C)
       }
     })))
-  }, [S, j, t, E, e, x])
+  }, [E, j, t, S, e, x])
 }

@@ -22,8 +22,8 @@ var r, i = n(255367),
   v = n(82295),
   C = n(313201),
   j = n(860144),
-  S = n(214852),
-  E = n(518311),
+  E = n(214852),
+  S = n(518311),
   x = n(355298),
   I = n(869404),
   P = n(333984),
@@ -388,7 +388,7 @@ class B extends(r = l.Component) {
         children: [(0, i.jsx)("span", {
           className: L.headerText,
           children: D.intl.string(D.t.YUU0RE)
-        }), (0, i.jsx)(E.Z, {
+        }), (0, i.jsx)(S.Z, {
           location: "PrivateChannelsList-CreateDMButton",
           tooltip: D.intl.string(D.t["6Urw1t"]),
           tooltipPosition: "top",
@@ -433,14 +433,14 @@ let F = e => {
     let e = T.Z.getPrivateChannelIds();
     return (0, I.tU)(e, [x.Z, P.Z])
   }, []);
-  (0, S.z)(j.R);
+  (0, E.z)(j.R);
   let {
     analyticsLocations: y
   } = (0, b.ZP)(g.Z.CONTACTS_LIST), v = (0, u.cj)([f.Z, N.Z, w.Z], () => ({
     theme: N.Z.darkSidebar ? R.BRd.DARK : o,
     keyboardModeEnabled: f.Z.keyboardModeEnabled,
     version: null != r ? "".concat(r, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
-  })), E = l.useRef(null), Z = null != (t = e.listScrollerRef) ? t : E, A = l.useCallback(e => {
+  })), S = l.useRef(null), Z = null != (t = e.listScrollerRef) ? t : S, A = l.useCallback(e => {
     let t = Z.current,
       n = document.querySelector(e);
     null != t && null != n && t.scrollIntoViewNode({

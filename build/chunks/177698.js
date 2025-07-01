@@ -26,14 +26,14 @@ let f = (0, d.Z)(e => {
     codeChallenge: m,
     codeChallengeMethod: b,
     state: _,
-    guildId: E,
-    channelId: O,
+    guildId: O,
+    channelId: E,
     prompt: y,
     disableGuildSelect: I,
     disclosures: v,
     integrationType: C,
     pid: S
-  } = e, N = "OAuth2Authorize_".concat(n, "_").concat(E, "_").concat(O), T = null != C ? null == s ? void 0 : s.get(C) : void 0, P = null != (t = null == T ? void 0 : T.application) ? t : a.Z.getApplication(n);
+  } = e, N = "OAuth2Authorize_".concat(n, "_").concat(O, "_").concat(E), T = null != C ? null == s ? void 0 : s.get(C) : void 0, P = null != (t = null == T ? void 0 : T.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
     let a = (0, p.jU)(S),
       T = !1,
@@ -49,7 +49,7 @@ let f = (0, d.Z)(e => {
       A = i.z1l;
     null != P && null != (0, l.ZP)({
       application: P,
-      channelId: O
+      channelId: E
     }) ? A = i.u1M : a.context === h.IlC.POPOUT && (A = i.u1M), (0, i.h7j)(e => {
       var t, i;
       return (0, r.jsx)(o.OAuth2AuthorizeModal, (t = function(e) {
@@ -81,8 +81,8 @@ let f = (0, d.Z)(e => {
         codeChallengeMethod: b,
         state: _,
         permissions: d,
-        guildId: E,
-        channelId: O,
+        guildId: O,
+        channelId: E,
         prompt: y,
         disableGuildSelect: "boolean" == typeof I ? I : "true" === I,
         integrationType: C

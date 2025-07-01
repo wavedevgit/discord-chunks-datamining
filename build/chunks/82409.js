@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(821020),
   C = n(370774),
   j = n(334426),
-  S = n(862149),
-  E = n(739340),
+  E = n(862149),
+  S = n(739340),
   x = n(207913),
   I = n(553984),
   P = n(333834),
@@ -66,15 +66,15 @@ function R(e) {
     everyoneFilter: m.Z.everyoneFilter
   })), [f, C] = i.useState(N.V5.ALL), {
     messages: j,
-    loadState: S,
+    loadState: E,
     loadMore: x,
     hasLoadedEver: Z
-  } = (0, E.ZP)(), R = function(e) {
+  } = (0, S.ZP)(), R = function(e) {
     let [t, n] = (0, i.useState)(!0);
     return (0, i.useEffect)(() => {
       t && e && n(!1)
     }, [e, t]), t
-  }(Z && p && !h && S !== E.jd.Loading);
+  }(Z && p && !h && E !== S.jd.Loading);
   (0, i.useEffect)(() => {
     if (!p) return void D(null)
   }, [p]);
@@ -179,11 +179,11 @@ function R(e) {
       renderMessageGroup: M,
       messages: V,
       loadingInitial: R,
-      loadingMore: S === E.jd.Loading || h,
+      loadingMore: E === S.jd.Loading || h,
       listName: "notifications-inbox",
       loadMore: function(e) {
         let t = null != s && s.length > 0 ? s[s.length - 1].id : null;
-        [N.V5.ALL, N.V5.MENTIONS, N.V5.ANNOUNCEMENTS].includes(f) && d && !h && D(null, t), [N.V5.ALL, N.V5.ANNOUNCEMENTS].includes(f) && S !== E.jd.Done && S !== E.jd.Loading && x(e)
+        [N.V5.ALL, N.V5.MENTIONS, N.V5.ANNOUNCEMENTS].includes(f) && d && !h && D(null, t), [N.V5.ALL, N.V5.ANNOUNCEMENTS].includes(f) && E !== S.jd.Done && E !== S.jd.Loading && x(e)
       },
       renderLoadingState: L,
       ignoreGrouping: f === N.V5.BOOKMARKS
@@ -200,7 +200,7 @@ function D(e, t) {
 }
 
 function L() {
-  return (0, r.jsx)(S.Z, {})
+  return (0, r.jsx)(E.Z, {})
 }
 
 function M(e, t, n) {

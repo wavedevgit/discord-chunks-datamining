@@ -89,9 +89,9 @@ function b(e) {
     onHoverChange: C,
     onKeyDown: j,
     treeItemProps: {
-      onFocus: S
+      onFocus: E
     },
-    "aria-setsize": E,
+    "aria-setsize": S,
     "aria-posinset": x
   } = e, I = function(e, t) {
     if (null == e) return {};
@@ -137,13 +137,13 @@ function b(e) {
       onMouseEnter: w,
       onMouseLeave: Z,
       onKeyDown: j,
-      onFocus: S,
+      onFocus: E,
       focusProps: {
         enabled: !1
       }
     }, I), n = n = {
       role: "treeitem",
-      "aria-setsize": E,
+      "aria-setsize": S,
       "aria-posinset": x,
       "aria-expanded": o,
       "aria-owns": _,

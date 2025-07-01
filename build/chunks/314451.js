@@ -39,14 +39,14 @@ let h = () => (0, a.ZDy)(async () => {
 function f(e) {
   let {
     className: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.isDeveloper), [f, g] = i.useState(!1), [m, b] = i.useState(0), _ = i.useRef(null), E = e => {
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.isDeveloper), [f, g] = i.useState(!1), [m, b] = i.useState(0), _ = i.useRef(null), O = e => {
     clearTimeout(m), b(setTimeout(() => {
       g(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => E(!0),
-    onMouseLeave: () => E(!1),
+    onMouseEnter: () => O(!0),
+    onMouseLeave: () => O(!1),
     children: (0, r.jsx)(a.yRy, {
       targetElementRef: _,
       shouldShow: f,

@@ -1,7 +1,7 @@
 /** Chunk was on 4811 **/
 n.d(t, {
   Z: () => C,
-  p: () => E
+  p: () => S
 }), n(539854), n(388685), n(361932), n(187205);
 var r = n(255367),
   i = n(73800),
@@ -108,7 +108,7 @@ function C(e) {
           children: l[e]
         })
       }, e))
-    }), (0, r.jsx)(S, {
+    }), (0, r.jsx)(E, {
       setSelectedFilter: n,
       hiddenFilters: d,
       selectedFilter: t
@@ -127,7 +127,7 @@ function j(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     setSelectedFilter: t,
     hiddenFilters: n,
@@ -180,7 +180,7 @@ function S(e) {
   })
 }
 
-function E(e) {
+function S(e) {
   let {
     selectedFilter: t,
     setSelectedFilter: n,

@@ -19,7 +19,7 @@ var r = n(255367),
   b = n(388032),
   _ = n(457755);
 
-function E(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -28,14 +28,14 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
@@ -114,7 +114,7 @@ class v extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), E(this, "partyMemberAvatarRef", i.createRef()), E(this, "partyMemberOverflowRef", i.createRef()), E(this, "renderPartyMember", (e, t) => {
+    super(...e), O(this, "partyMemberAvatarRef", i.createRef()), O(this, "partyMemberOverflowRef", i.createRef()), O(this, "renderPartyMember", (e, t) => {
       let n;
       if (null == e) return null;
       let {
@@ -135,7 +135,7 @@ class v extends i.PureComponent {
               onMouseEnter: r,
               onMouseLeave: s
             } = n;
-            return (0, i.createElement)(o.qEK, y(O({}, l), {
+            return (0, i.createElement)(o.qEK, y(E({}, l), {
               key: e.id,
               src: e.getAvatarURL(void 0, 24),
               size: o.EFr.SIZE_24,
@@ -149,7 +149,7 @@ class v extends i.PureComponent {
           }
         })
       }, e.id)
-    }), E(this, "renderPartyMemberOverflow", (e, t, n) => {
+    }), O(this, "renderPartyMemberOverflow", (e, t, n) => {
       let {
         renderOverflowPopout: i
       } = this.props;
@@ -158,7 +158,7 @@ class v extends i.PureComponent {
         targetElementRef: this.partyMemberOverflowRef,
         children: n => (0, r.jsx)(o.ua7, {
           text: b.intl.string(b.t.Zf4NPT),
-          children: i => (0, r.jsx)("div", y(O({
+          children: i => (0, r.jsx)("div", y(E({
             ref: this.partyMemberOverflowRef,
             className: a()(_.overflow, t)
           }, i, n), {

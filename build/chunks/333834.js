@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(982183),
   C = n(981631),
   j = n(144717),
-  S = n(388032),
-  E = n(709701);
+  E = n(388032),
+  S = n(709701);
 
 function x(e) {
   e.stopPropagation()
@@ -38,8 +38,8 @@ function I(e) {
   } = e;
   return (0, r.jsx)(u.P3F, {
     onClick: i,
-    className: o()(E.messagesGroupHeaderWrap, {
-      [E.collapsed]: !n
+    className: o()(S.messagesGroupHeaderWrap, {
+      [S.collapsed]: !n
     }),
     children: (0, r.jsxs)(u.Kqy, {
       gap: 4,
@@ -48,11 +48,11 @@ function I(e) {
       children: [(0, r.jsx)(u.X6q, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: E.messagesGroupHeader,
-        children: (0, a.capitalize)(S.intl.string(v.Vv[t]).toLowerCase())
+        className: S.messagesGroupHeader,
+        children: (0, a.capitalize)(E.intl.string(v.Vv[t]).toLowerCase())
       }), (0, r.jsx)(u.CJ0, {
         size: "xxs",
-        className: E.chevron
+        className: S.chevron
       })]
     })
   })
@@ -64,7 +64,7 @@ function N() {
     analyticsLocations: e
   } = (0, p.ZP)(h.Z.NOTIFICATIONS_INBOX);
   return (0, r.jsx)("div", {
-    className: E.emptyStateContainer,
+    className: S.emptyStateContainer,
     children: (0, r.jsxs)(u.Kqy, {
       gap: 24,
       align: "center",
@@ -82,7 +82,7 @@ function N() {
           style: {
             textAlign: "center"
           },
-          children: S.intl.string(j.default["O+racX"])
+          children: E.intl.string(j.default["O+racX"])
         })]
       }), (0, r.jsx)(u.zxk, {
         onClick: () => (0, O.j4)(e),
@@ -90,7 +90,7 @@ function N() {
         style: {
           fontWeight: 600
         },
-        children: S.intl.string(j.default.klSpfn)
+        children: E.intl.string(j.default.klSpfn)
       })]
     })
   })
@@ -105,7 +105,7 @@ function w(e) {
     renderLoadingState: h,
     renderMessageGroup: p,
     scrollerClassName: j,
-    className: S,
+    className: E,
     listName: w,
     ignoreGrouping: Z = !1
   } = e, T = i.useRef(null), A = (0, d.Z)(w, T), {
@@ -205,7 +205,7 @@ function w(e) {
   }, [U, n]);
   let B = null;
   return null != t && t.length > 0 && null != a && l && (B = (0, r.jsx)("div", {
-      className: E.loadingMore,
+      className: S.loadingMore,
       children: (0, r.jsx)(u.$jN, {})
     }, "loading-more-after")),
     function(e) {
@@ -226,12 +226,12 @@ function w(e) {
       wrappedMessages: t,
       groupedUnreadMessages: null == U ? void 0 : U.UNREAD
     }), (0, r.jsx)("div", {
-      className: o()(S, E.messagesPopoutWrap),
+      className: o()(E, S.messagesPopoutWrap),
       onClick: x,
       onDoubleClick: x,
       "aria-label": e["aria-label"],
       children: (0, r.jsx)(u.Den, {
-        className: o()(E.messagesPopout, j),
+        className: o()(S.messagesPopout, j),
         onScroll: M,
         fade: !0,
         ref: T,

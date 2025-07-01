@@ -1,6 +1,6 @@
 /** Chunk was on 4811 **/
 n.d(t, {
-  Z: () => E
+  Z: () => S
 }), n(539854);
 var r = n(255367),
   i = n(73800),
@@ -27,7 +27,7 @@ let j = {
   right: -12
 };
 
-function S(e) {
+function E(e) {
   var t, n, l;
   let {
     channel: o,
@@ -92,7 +92,7 @@ function S(e) {
   })
 }
 
-function E(e) {
+function S(e) {
   var t, n;
   let {
     channel: i,
@@ -104,7 +104,7 @@ function E(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: !1
-  }), _ = f.jU.useSetting(), j = (0, d.P1)(l), E = !1, x = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), I = null != (n = null == (t = m.default.getUser(g.default.getId())) ? void 0 : t.hasFlag(y.xW$.SPAMMER)) && n, P = [];
+  }), _ = f.jU.useSetting(), j = (0, d.P1)(l), S = !1, x = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), I = null != (n = null == (t = m.default.getUser(g.default.getId())) ? void 0 : t.hasFlag(y.xW$.SPAMMER)) && n, P = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
@@ -118,7 +118,7 @@ function E(e) {
         }, t)), e = o()(n.timestamp)
       }
       let i = null == t || (0, u.Z)(l, t, n);
-      t = n, E = E || (0, d.DQ)(n), P.push((0, r.jsx)(S, {
+      t = n, S = S || (0, d.DQ)(n), P.push((0, r.jsx)(E, {
         channel: l,
         message: n,
         compact: _,
@@ -133,7 +133,7 @@ function E(e) {
       children: [v.intl.string(v.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === P.length && (P = [(0, r.jsx)(s.$jN, {}, "spinner")])
   }
-  return E && j && c.Z.trackExposure({
+  return S && j && c.Z.trackExposure({
     location: "20e3b0_2"
   }), (0, r.jsx)("div", {
     className: C.messages,

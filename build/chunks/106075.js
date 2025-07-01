@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(28494),
   b = n(29086),
   _ = n(590771),
-  E = n(273596),
-  O = n(128449),
+  O = n(273596),
+  E = n(128449),
   y = n(49898),
   I = n(388032),
   v = n(398075);
@@ -37,7 +37,7 @@ function C() {
       setSelectedTab: T
     } = (0, b.Y)(),
     P = (0, h.lg)(N),
-    j = !O.MU.has(N),
+    j = !E.MU.has(N),
     {
       searchQuery: A,
       onSearchTextChange: Z,
@@ -69,7 +69,7 @@ function C() {
       let {
         id: t
       } = e;
-      return !O.MU.has(t)
+      return !E.MU.has(t)
     }) : S, [S, w]),
     H = i.useRef(new p.Z(P)),
     {
@@ -121,7 +121,7 @@ function C() {
         state: w ? y.GlobalDiscoverySearchBarState.DEFAULT : R,
         onBlur: M
       })]
-    }), w ? (0, r.jsx)(E.Z, {
+    }), w ? (0, r.jsx)(O.Z, {
       loadId: e.current,
       onGuildCardClick: z,
       onGuildCardSeen: F

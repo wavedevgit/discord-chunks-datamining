@@ -24,8 +24,8 @@ var i = n(120356),
   v = n(430824),
   C = n(158776),
   j = n(306680),
-  S = n(594174),
-  E = n(388032),
+  E = n(594174),
+  S = n(388032),
   x = n(265938);
 let I = {
   top: 8,
@@ -110,7 +110,7 @@ function w(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, a.e7)([S.default], () => t.isDM() ? S.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, p.x)(t) : i.getAvatarURL(void 0, 40);
+  } = e, i = (0, a.e7)([E.default], () => t.isDM() ? E.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, p.x)(t) : i.getAvatarURL(void 0, 40);
   return (0, r.jsx)(s.P3F, {
     onClick: n,
     tabIndex: -1,
@@ -144,7 +144,7 @@ function T(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, a.e7)([j.ZP], () => j.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), h = (0, f.ZP)(t, !1), p = null == c ? null == o ? void 0 : o.name : "".concat(null == o ? void 0 : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5O, {
+  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, a.e7)([j.ZP], () => j.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), h = (0, f.ZP)(t, !1), p = null == c ? null == o ? void 0 : o.name : "".concat(null == o ? void 0 : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? S.intl.formatToPlainString(S.t.CxSA5O, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(A, {
     channel: t
@@ -195,8 +195,8 @@ function A(e) {
     status: i,
     activities: l,
     applicationStream: o
-  } = (0, a.cj)([S.default, C.Z, O.Z], () => {
-    let e = S.default.getUser(t.getRecipientId());
+  } = (0, a.cj)([E.default, C.Z, O.Z], () => {
+    let e = E.default.getUser(t.getRecipientId());
     return {
       user: e,
       status: null != e ? C.Z.getStatus(e.id) : null,

@@ -53,10 +53,10 @@ let C = {
     let {
       guildId: t,
       selected: l
-    } = e, j = (0, m.ZP)(t), S = i.useCallback(() => {
+    } = e, j = (0, m.ZP)(t), E = i.useCallback(() => {
       var e;
       (0, h.jd)(t), (0, f.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == j || null == (e = j.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
-    }, [t, j]), E = i.useCallback(() => {
+    }, [t, j]), S = i.useCallback(() => {
       var e;
       switch (null == j || null == (e = j.popout) ? void 0 : e.type) {
         case p.J.LEVEL_REACHED:
@@ -88,7 +88,7 @@ let C = {
       nudgeAlignIntoViewport: !0,
       animationPosition: "bottom",
       position: "right",
-      renderPopout: E,
+      renderPopout: S,
       children: e => {
         var i, a;
         return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
@@ -120,7 +120,7 @@ let C = {
             children: O.intl.string(_.default.yv3DJC)
           }),
           selected: l,
-          onClick: S,
+          onClick: E,
           showUnread: (null == j ? void 0 : j.showUnread) === !0,
           trailing: null == j ? void 0 : j.trailing
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {

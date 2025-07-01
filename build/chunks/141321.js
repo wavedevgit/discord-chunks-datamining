@@ -23,8 +23,8 @@ function _(e) {
     onOpen: t,
     onClose: n,
     className: _,
-    "data-jump-section": E
-  } = e, O = i.useRef(null), y = (0, l.e7)([p.default], () => p.default.getCurrentUser()), I = i.useRef(null), v = (0, l.e7)([d.ZP], () => (null == y ? void 0 : y.id) != null && d.ZP.getMentionCount(y.id, g.W.NOTIFICATION_CENTER) > 0), {
+    "data-jump-section": O
+  } = e, E = i.useRef(null), y = (0, l.e7)([p.default], () => p.default.getCurrentUser()), I = i.useRef(null), v = (0, l.e7)([d.ZP], () => (null == y ? void 0 : y.id) != null && d.ZP.getMentionCount(y.id, g.W.NOTIFICATION_CENTER) > 0), {
     enabled: C
   } = s.Z.useExperiment({
     location: "RecentsButton"
@@ -50,7 +50,7 @@ function _(e) {
           recentsPopoutShown: t
         }), (0, r.jsx)(u.U, {
           location: "inbox-button",
-          targetElementRef: O,
+          targetElementRef: E,
           children: (0, r.jsx)(c.JO, (l = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -69,7 +69,7 @@ function _(e) {
             }
             return e
           }({}, n), o = o = {
-            ref: O,
+            ref: E,
             className: _,
             onClick: e,
             icon: a.xx7,
@@ -78,7 +78,7 @@ function _(e) {
             tooltip: t ? null : m.intl.string(m.t.GSmTKC),
             selected: t,
             showBadge: v || S || i,
-            "data-jump-section": E
+            "data-jump-section": O
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

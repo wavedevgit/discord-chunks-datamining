@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(430824),
   C = n(496675),
   j = n(306680),
-  S = n(9156),
-  E = n(594174),
+  E = n(9156),
+  S = n(594174),
   x = n(109446),
   I = n(98597),
   P = n(648501),
@@ -104,11 +104,11 @@ class M extends I.ZP {
       forceTopLevelThread: v,
       embeddedApps: C,
       resolvedUnreadSetting: j,
-      withGuildIcon: S,
-      enableActivities: E
+      withGuildIcon: E,
+      enableActivities: S
     } = this.props, x = (0, b.jW)({
       location: "text_channel"
-    }).entrypoints, I = E && null != C && C.length > 0, P = (0, g.D)(y), w = (0, r.jsx)("li", {
+    }).entrypoints, I = S && null != C && C.length > 0, P = (0, g.D)(y), w = (0, r.jsx)("li", {
       className: o()(this.getClassName(), {
         [A.disabled]: this.isDisabled(),
         [A.selected]: n
@@ -141,7 +141,7 @@ class M extends I.ZP {
           isFavoriteSuggestion: O,
           channelTypeOverride: v ? Z.d4z.GUILD_TEXT : void 0,
           resolvedUnreadSetting: j,
-          withGuildIcon: S,
+          withGuildIcon: E,
           "aria-label": (0, f.ZP)({
             channel: e,
             unread: l,
@@ -226,7 +226,7 @@ class M extends I.ZP {
         }))
       });
       if (t.type === Z.d4z.DM) {
-        let i = E.default.getUser(t.getRecipientId());
+        let i = S.default.getUser(t.getRecipientId());
         null != i && (0, u.jW)(e, async () => {
           let {
             default: e
@@ -277,7 +277,7 @@ function U(e) {
     unread: j.ZP.hasUnread(t.id),
     ackMessageId: j.ZP.ackMessageId(t.id),
     isLowImportanceMention: j.ZP.getIsMentionLowImportance(t.id)
-  })), f = (0, a.e7)([S.ZP], () => S.ZP.resolveUnreadSetting(t)), g = (0, a.cj)([y.Z, C.Z], () => {
+  })), f = (0, a.e7)([E.ZP], () => E.ZP.resolveUnreadSetting(t)), g = (0, a.cj)([y.Z, C.Z], () => {
     let e = y.Z.getChannel(t.parent_id);
     return {
       canManageChannel: C.Z.can(Z.Plq.MANAGE_CHANNELS, t),
@@ -286,8 +286,8 @@ function U(e) {
   }), b = (0, a.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: v,
     isSubscriptionGated: x
-  } = (0, m.Z)(t.id), I = (0, a.e7)([S.ZP], () => S.ZP.isFavorite(n.id, t.id)), N = (0, a.e7)([E.default], () => {
-    let e = E.default.getCurrentUser();
+  } = (0, m.Z)(t.id), I = (0, a.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), N = (0, a.e7)([S.default], () => {
+    let e = S.default.getCurrentUser();
     return null != e && (!t.isNSFW() || e.nsfwAllowed)
   }, [t]), w = (0, h.NX)(t.id), A = (0, P.Z)({
     channel: t,

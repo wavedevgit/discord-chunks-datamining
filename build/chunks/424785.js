@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(431328),
   C = n(501655),
   j = n(427679),
-  S = n(368442),
-  E = n(201469),
+  E = n(368442),
+  S = n(201469),
   x = n(680089),
   I = n(592125),
   P = n(430824),
@@ -336,10 +336,10 @@ function q(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([x.Z], () => x.Z.isCollapsed(n.parent_id)), p = (0, E.ZP)(n.id), f = (0, a.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, C.pV.AUDIENCE), {
+  }), h = (0, a.e7)([x.Z], () => x.Z.isCollapsed(n.parent_id)), p = (0, S.ZP)(n.id), f = (0, a.e7)([j.Z], () => j.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, C.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: _
-  } = (0, b.Z)(n.id), O = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), y = (0, S.xJ)(n.id), P = (0, L.Z)({
+  } = (0, b.Z)(n.id), O = (0, a.e7)([T.ZP], () => T.ZP.isFavorite(t.id, n.id)), y = (0, E.xJ)(n.id), P = (0, L.Z)({
     channel: n,
     isChannelSelected: !1,
     isChannelCollapsed: o,

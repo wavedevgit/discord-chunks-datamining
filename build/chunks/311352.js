@@ -1,6 +1,6 @@
 /** Chunk was on 4811 **/
 n.d(t, {
-  Z: () => S
+  Z: () => E
 });
 var r = n(255367),
   i = n(73800),
@@ -104,7 +104,7 @@ let j = e => {
       children: () => n
     })
   },
-  S = () => {
+  E = () => {
     let e = i.useRef(null),
       {
         parentAnalyticsLocation: t
@@ -120,9 +120,9 @@ let j = e => {
       })),
       v = (0, l.e7)([f.ZP], () => f.ZP.getKeybindForAction(O.kg4.SAVE_CLIP));
     if (!(o && s) || null == v || n) return null;
-    let S = g.BB(v.shortcut, !0);
+    let E = g.BB(v.shortcut, !0);
     return (0, r.jsx)(j, {
-      keybindString: S,
+      keybindString: E,
       targetElementRef: e,
       children: (0, r.jsx)(h.Z, {
         ref: e,

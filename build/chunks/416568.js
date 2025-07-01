@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(906732),
   C = n(358221),
   j = n(706590),
-  S = n(940777),
-  E = n(41776),
+  E = n(940777),
+  S = n(41776),
   x = n(821020),
   I = n(770858),
   P = n(905423),
@@ -197,7 +197,7 @@ function eu(e) {
     location: "GuildsBar"
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(W.u, {}), d === x.u3.SERVER_RAIL_TOP && (0, r.jsx)(I.Z, {}), l ? (0, r.jsx)(S.Z, {}) : null, (0, r.jsx)(K.Z, {
+    children: [(0, r.jsx)(W.u, {}), d === x.u3.SERVER_RAIL_TOP && (0, r.jsx)(I.Z, {}), l ? (0, r.jsx)(E.Z, {}) : null, (0, r.jsx)(K.Z, {
       isOnHubVerificationRoute: a
     }), !t && (0, r.jsx)(B.Z, {}), u.map(e => (0, r.jsx)($.Z, {
       guildId: e
@@ -244,7 +244,7 @@ function eh(e) {
   } = e, [s] = (0, h.Wu)([L.ZP], () => {
     let e = L.ZP.getGuildsTree();
     return [e, e.version]
-  }), d = (0, h.e7)([E.Z], () => E.Z.lurkingGuildIds()), p = i.useMemo(() => n ? [] : d, [d, n]), b = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [O, j] = i.useState(!1), S = i.useCallback(() => j(!0), []), A = i.useCallback(() => j(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), B = i.useRef(null), F = i.useRef(null), V = (0, u.OP)(), {
+  }), d = (0, h.e7)([S.Z], () => S.Z.lurkingGuildIds()), p = i.useMemo(() => n ? [] : d, [d, n]), b = (0, h.e7)([C.Z], () => C.Z.isFullscreenInContext()), [O, j] = i.useState(!1), E = i.useCallback(() => j(!0), []), A = i.useCallback(() => j(!1), []), R = i.useRef(!1), [D] = i.useState(() => new f.V7), B = i.useRef(null), F = i.useRef(null), V = (0, u.OP)(), {
     ref: H
   } = V, W = eo(V, ["ref"]), K = (0, m.mFp)(), [q, J] = i.useState(!1), $ = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), er = (0, m.dQu)(g.Z.space.SPACE_XS), eh = i.useMemo(() => {
     let e = function(e, t) {
@@ -311,7 +311,7 @@ function eh(e) {
             setNodeRef: eh.setNodeRef,
             draggable: !0,
             sorting: O,
-            onDragStart: S,
+            onDragStart: E,
             onDragEnd: A,
             renderChildNode: e,
             "aria-setsize": i,
@@ -323,7 +323,7 @@ function eh(e) {
             setRef: eh.setNodeRef,
             draggable: !0,
             sorting: O,
-            onDragStart: S,
+            onDragStart: E,
             onDragEnd: A,
             "aria-setsize": i,
             "aria-posinset": void 0 !== n ? n + 1 : void 0
@@ -331,7 +331,7 @@ function eh(e) {
         default:
           return null
       }
-    }, [S, A, O, eh.setNodeRef]),
+    }, [E, A, O, eh.setNodeRef]),
     {
       enabled: e_
     } = (0, N.WX)({
@@ -349,19 +349,19 @@ function eh(e) {
       questId: eC,
       onDiscoveryButtonClick: ej
     } = ey,
-    eS = eo(ey, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
-    eE = e_ && ev,
+    eE = eo(ey, ["shouldShow", "questId", "onDiscoveryButtonClick"]),
+    eS = e_ && ev,
     ex = (0, r.jsx)(z.Z, {
       ref: eO,
-      questId: eE ? eC : void 0,
+      questId: eS ? eC : void 0,
       selected: eg,
       className: en.discoveryIcon,
-      onClick: eE ? ej : void 0
+      onClick: eS ? ej : void 0
     }),
-    eI = eE ? (0, r.jsx)(w.fO, el(ei({
+    eI = eS ? (0, r.jsx)(w.fO, el(ei({
       targetElementRef: eO,
       isGuildBarScrolling: q
-    }, eS), {
+    }, eE), {
       children: ex
     })) : ex,
     {

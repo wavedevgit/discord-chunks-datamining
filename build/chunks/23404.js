@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(373370),
   b = n(475595),
   _ = n(566078),
-  E = n(602667),
-  O = n(611855),
+  O = n(602667),
+  E = n(611855),
   y = n(670638),
   I = n(667105),
   v = n(860151),
@@ -85,7 +85,7 @@ function Z(e) {
   let {
     nodeRef: b,
     quest: _
-  } = e, E = (0, u.O5)(), N = (0, o.e7)([h.Z], () => h.Z.isEnrolling(_.id), [_]), Z = (0, o.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), [x, L] = i.useState(!1), w = i.useCallback(() => L(!0), []), R = i.useCallback(() => L(!1), []), D = (0, m.up)(S.dr.ACTIVITY_PANEL), k = i.useCallback(e => {
+  } = e, O = (0, u.O5)(), N = (0, o.e7)([h.Z], () => h.Z.isEnrolling(_.id), [_]), Z = (0, o.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), [x, L] = i.useState(!1), w = i.useCallback(() => L(!0), []), R = i.useCallback(() => L(!1), []), D = (0, m.up)(S.dr.ACTIVITY_PANEL), k = i.useCallback(e => {
     e.stopPropagation()
   }, []), M = i.useCallback(() => {
     (0, d.AH)(_.id, {
@@ -94,7 +94,7 @@ function Z(e) {
       sourceQuestContent: f.jn.ACTIVITY_PANEL
     })
   }, [_]), U = i.useCallback(() => {
-    null != _ && (E({
+    null != _ && (O({
       questId: _.id,
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: u.jZ.TRACK_PROGRESS,
@@ -103,8 +103,8 @@ function Z(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: _.id
     }))
-  }, [_, E]), G = i.useCallback(() => {
-    E({
+  }, [_, O]), G = i.useCallback(() => {
+    O({
       questId: _.id,
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: u.jZ.LEARN_MORE,
@@ -113,7 +113,7 @@ function Z(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: _.id
     })
-  }, [_.id, E]), B = (0, I.hf)({
+  }, [_.id, O]), B = (0, I.hf)({
     quest: _,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL
@@ -141,7 +141,7 @@ function Z(e) {
       className: P.utils,
       children: [H ? (0, r.jsx)(A, {
         quest: _
-      }) : (0, r.jsx)(O.Z, {}), (0, r.jsx)(y.r, {
+      }) : (0, r.jsx)(E.Z, {}), (0, r.jsx)(y.r, {
         quest: _,
         questContent: f.jn.ACTIVITY_PANEL,
         shouldShowDisclosure: (null == (c = _.userStatus) ? void 0 : c.enrolledAt) == null,
@@ -225,7 +225,7 @@ function Z(e) {
   })
 }
 let x = function(e) {
-  return (0, r.jsx)(E.A, {
+  return (0, r.jsx)(O.A, {
     questOrQuests: e.quest,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL,

@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(114851),
   b = n(175307),
   _ = n(17845),
-  E = n(374939),
-  O = n(233374),
+  O = n(374939),
+  E = n(233374),
   y = n(611928),
   I = n(763433),
   v = n(283293),
@@ -198,7 +198,7 @@ let K = function() {
             }), (0, r.jsx)(Y, {
               onLoadComplete: P
             })]
-          }), (0, r.jsx)(E.Z, {
+          }), (0, r.jsx)(O.Z, {
             children: e === A.e5.CLAIMED ? (0, r.jsx)(g, {
               onSelectTab: t
             }) : (0, r.jsx)(L.Z, {})
@@ -236,10 +236,10 @@ let K = function() {
               }), (0, r.jsx)(Y, {
                 onLoadComplete: P
               })]
-            }), (0, r.jsxs)(E.Z, {
+            }), (0, r.jsxs)(O.Z, {
               children: [(0, r.jsx)("div", {
                 className: H.tabs,
-                children: (0, r.jsx)(O.Z, {
+                children: (0, r.jsx)(E.Z, {
                   tabs: n,
                   selectedTab: e,
                   onTabSelect: t

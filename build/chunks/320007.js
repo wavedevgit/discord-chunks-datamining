@@ -22,8 +22,8 @@ function _(e) {
   let {
     canShowReminder: t = !1,
     className: _
-  } = e, E = (0, h.Z)(u.Z), {
-    showClipsHeaderEntrypoint: O
+  } = e, O = (0, h.Z)(u.Z), {
+    showClipsHeaderEntrypoint: E
   } = d.NV.useExperiment({
     location: "ClipsButton"
   }, {
@@ -72,7 +72,7 @@ function _(e) {
       modalKey: m.Qr
     })
   }
-  return (i.useEffect(() => (S ? A() : Z(), () => Z()), [S, A, Z]), O && E && y) ? (0, r.jsxs)(r.Fragment, {
+  return (i.useEffect(() => (S ? A() : Z(), () => Z()), [S, A, Z]), E && O && y) ? (0, r.jsxs)(r.Fragment, {
     children: [null != T && t && C && N && !(0, a.$sL)() && !j && (0, r.jsx)(g.Z, {
       clipIconRef: T,
       lastClipsSession: v,

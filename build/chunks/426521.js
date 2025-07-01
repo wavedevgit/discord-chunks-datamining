@@ -23,8 +23,8 @@ var r = n(255367),
   v = n(833592),
   C = n(497089),
   j = n(178480),
-  S = n(418316),
-  E = n(382865),
+  E = n(418316),
+  S = n(382865),
   x = n(526146),
   I = n(400565),
   P = n(148789),
@@ -167,7 +167,7 @@ let U = i.memo(function(e) {
       applicationId: l.applicationId
     }));
     let b = null != l.local_id,
-      E = (0, S.Z)({
+      S = (0, E.Z)({
         item: l,
         renderApplication: e => (0, r.jsx)(k, {
           applicationId: e
@@ -189,7 +189,7 @@ let U = i.memo(function(e) {
         focusProps: {
           offset: 4
         },
-        "aria-label": E,
+        "aria-label": S,
         onClick: g,
         children: [p ? null : (0, r.jsx)("div", {
           className: T.unread
@@ -202,7 +202,7 @@ let U = i.memo(function(e) {
           }), (0, r.jsxs)(o.Text, {
             variant: "text-md/normal",
             color: p ? "text-muted" : "text-default",
-            children: ["string" != typeof E ? E : h.Z.parse(E), R]
+            children: ["string" != typeof S ? S : h.Z.parse(S), R]
           }), (null == (t = l.message) ? void 0 : t.content) != null ? (0, r.jsx)(D, {
             item: l
           }) : null, null != l.callout ? (0, r.jsx)(L, {
@@ -222,7 +222,7 @@ let U = i.memo(function(e) {
     let {
       items: t
     } = e, n = g.d$.useSetting();
-    return (0, E.c)(t), (0, r.jsx)(r.Fragment, {
+    return (0, S.c)(t), (0, r.jsx)(r.Fragment, {
       children: t.map(e => (0, r.jsx)(U, {
         item: e,
         ackedBeforeId: n

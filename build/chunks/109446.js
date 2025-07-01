@@ -43,7 +43,7 @@ function j(e) {
       variant: "text-xs/bold",
       color: "header-secondary",
       children: t.isForumLikeChannel() ? v.intl.string(v.t.ioVdOz) : v.intl.string(v.t.VNYs2t)
-    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(S, {
+    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(E, {
       thread: e
     }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(s.P3F, {
       className: C.more,
@@ -83,7 +83,7 @@ function j(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     thread: t
   } = e, n = (0, a.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, h.Ok)(t);

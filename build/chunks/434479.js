@@ -74,7 +74,7 @@ function f(e) {
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
   let j = (0, o.JA)(n),
-    S = null != (t = (0, a.qg)(m)) ? t : "";
+    E = null != (t = (0, a.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
     ref: v,
     children: (0, r.jsxs)(s.kL8, p(h({}, C), {
@@ -83,7 +83,7 @@ function f(e) {
         role: "button"
       }),
       tag: "div",
-      "aria-label": S,
+      "aria-label": E,
       focusProps: {
         offset: {
           top: 1,

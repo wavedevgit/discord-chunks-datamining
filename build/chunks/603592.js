@@ -26,8 +26,8 @@ let p = i.forwardRef(function(e, t) {
     lowerBadgeSize: v,
     showPill: C = !0,
     className: j,
-    "aria-label": S,
-    children: E,
+    "aria-label": E,
+    children: S,
     onMouseEnter: x,
     onMouseLeave: I,
     onMouseDown: P
@@ -77,7 +77,7 @@ let p = i.forwardRef(function(e, t) {
             [h.selected]: b || w
           }),
           onClick: f,
-          "aria-label": "string" == typeof _ && null == S ? _ : S,
+          "aria-label": "string" == typeof _ && null == E ? _ : E,
           "aria-selected": b,
           onContextMenu: g,
           focusProps: {
@@ -99,6 +99,6 @@ let p = i.forwardRef(function(e, t) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
         }), n))
       })
-    }), E]
+    }), S]
   })
 })

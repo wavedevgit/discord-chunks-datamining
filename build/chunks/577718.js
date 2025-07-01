@@ -18,8 +18,8 @@ var r = n(255367),
   m = n(538445),
   b = n(933104),
   _ = n(276645),
-  E = n(970731),
-  O = n(626135),
+  O = n(970731),
+  E = n(626135),
   y = n(267642),
   I = n(337721),
   v = n(981631),
@@ -81,14 +81,14 @@ let k = i.memo(function(e) {
   } = e, {
     analyticsLocations: u
   } = (0, s.ZP)(), S = () => {
-    O.default.track(v.rMx.TOOLTIP_VIEWED, {
+    E.default.track(v.rMx.TOOLTIP_VIEWED, {
       type: N.cd.PREMIUM_PROGRESS_BAR,
       location: {
         page: v.ZY5.GUILD_CHANNEL
       }
     })
   }, k = () => {
-    O.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
+    E.default.track(v.rMx.PREMIUM_UPSELL_VIEWED, {
       type: N.cd.INVITE_SPLASH_UPSELL,
       location: {
         page: v.ZY5.GUILD_CHANNEL
@@ -125,7 +125,7 @@ let k = i.memo(function(e) {
           });
         case l.z.GUILD_HEADER_PREMIUM_GUILD_PROGRESS:
           return (0, r.jsx)(D, {
-            renderPopout: (0, r.jsx)(E.ZP, {
+            renderPopout: (0, r.jsx)(O.ZP, {
               onComponentMount: S,
               header: T.intl.string(T.t.nxtaFx),
               asset: (0, r.jsx)("img", {
@@ -144,7 +144,7 @@ let k = i.memo(function(e) {
           });
         case l.z.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK:
           return (0, r.jsx)(D, {
-            renderPopout: (0, r.jsx)(E.ZP, {
+            renderPopout: (0, r.jsx)(O.ZP, {
               onComponentMount: S,
               header: T.intl.string(T.t.KAsfPT),
               asset: (0, r.jsx)("img", {
@@ -183,7 +183,7 @@ let k = i.memo(function(e) {
             }),
             t = (0, y.f2)(i, v.Eu4.TIER_1) ? T.intl.string(T.t.rOFcBg) : T.intl.string(T.t.hvVgAQ);
           return (0, r.jsx)(D, {
-            renderPopout: (0, r.jsx)(E.ZP, {
+            renderPopout: (0, r.jsx)(O.ZP, {
               onComponentMount: k,
               header: T.intl.string(T.t["36wK8/"]),
               asset: (0, r.jsx)("img", {
@@ -209,7 +209,7 @@ let k = i.memo(function(e) {
           });
         case l.z.GUILD_HEADER_ACTIVE_THREADS_NOTICE:
           return (0, r.jsx)(D, {
-            renderPopout: (0, r.jsx)(E.ZP, {
+            renderPopout: (0, r.jsx)(O.ZP, {
               className: P.tooltipOverrideColor,
               header: T.intl.string(T.t.hLUL3t),
               content: T.intl.string(T.t.ahWaPT),
@@ -221,7 +221,7 @@ let k = i.memo(function(e) {
           });
         case l.z.GUILD_HEADER_SOUNDBOARD_PERMISSION:
           return (0, r.jsx)(D, {
-            renderPopout: (0, r.jsx)(E.ZP, {
+            renderPopout: (0, r.jsx)(O.ZP, {
               header: T.intl.string(T.t.PZNQKC),
               content: T.intl.string(T.t.jQIyyM),
               buttonCTA: T.intl.string(T.t.RzWDqa),

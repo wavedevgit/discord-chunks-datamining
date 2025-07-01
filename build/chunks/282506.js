@@ -18,9 +18,9 @@ var i = n(570140),
   m = n(914010),
   b = n(979651),
   _ = n(981631),
-  E = n(65154);
+  O = n(65154);
 
-function O() {
+function E() {
   var e;
   let t = r;
   if (null == t || !h.Z.isOpen(t)) return !1;
@@ -34,7 +34,7 @@ function y() {
   if (function() {
       let e = f.Z.getChannelId(),
         t = g.Z.getChannelId();
-      if (!p.Z.supports(E.AN.VIDEO) || s.Z.getWindowOpen(_.KJ3.CHANNEL_CALL_POPOUT)) return !0;
+      if (!p.Z.supports(O.AN.VIDEO) || s.Z.getWindowOpen(_.KJ3.CHANNEL_CALL_POPOUT)) return !0;
       let n = c.Z.getAllActiveStreams().length > 0;
       if (!(null != e && Object.values(b.Z.getVideoVoiceStatesForChannel(e)).some(e => {
           let {
@@ -44,8 +44,8 @@ function y() {
         }) || n)) return !0;
       let r = d.Z.hasLayers();
       return !(r && d.Z.getLayers().includes(_.S9g.RTC_DEBUG)) && (!!r || e === t)
-    }()) return O();
-  if (n || O(), null == t) return !1;
+    }()) return E();
+  if (n || E(), null == t) return !1;
   let a = u.Z.getChannel(t);
   return !(null == a || h.Z.isOpen(t)) && (i.Z.wait(() => l.bA(a.id, _.NYg.VIDEO, {
     channel: a
