@@ -1,6 +1,6 @@
 /**
   Module ID: 89795
-  Original File Name: 306f64acdf468ba5
+  Original File Name: 1a95b0846712bec8
 **/
 .upsellOuter__50e68 {
     border-radius: var(--radius-sm);
@@ -5775,14 +5775,12 @@ button.button__67645.enabled__67645.redGlow__67645:hover,span.button__67645.enab
 .premiumOfferPill__81281 {
     align-items: center;
     background: linear-gradient(90deg,#db00a4,#5968f0);
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
-    height: 30px;
-    margin-bottom: 20px;
-    padding: 0 12px;
+    margin-bottom: 12px;
+    padding: 0 4px;
     position: relative;
     text-transform: uppercase;
-    top: -10px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
@@ -19239,4 +19237,4 @@ html .invoiceCancelRow__968a4 {
     overflow: visible
 }
 
-/*# sourceMappingURL=306f64acdf468ba5.css.map*/
+/*# sourceMappingURL=1a95b0846712bec8.css.map*/

@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(313201),
   m = n(542578),
   f = n(203143),
-  g = n(79390),
-  _ = n(839963),
+  _ = n(79390),
+  g = n(839963),
   h = n(139256),
   b = n(294608),
   E = n(388032),
@@ -49,8 +49,8 @@ function x(e) {
   } = e, s = (0, p.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, b.pE)(), [_, h] = i.useState(""), [E, x] = i.useState(!1), v = "" !== _ && E, O = i.useCallback(() => {
-    h((0, g.e1)(u, c, a))
+  } = (0, b.pE)(), [g, h] = i.useState(""), [E, x] = i.useState(!1), v = "" !== g && E, O = i.useCallback(() => {
+    h((0, _.e1)(u, c, a))
   }, [u, c, a]), j = i.useCallback(() => {
     O(), x(!0)
   }, [O]), I = i.useCallback(() => {
@@ -82,7 +82,7 @@ function x(e) {
           variant: "text-sm/normal",
           color: "text-muted",
           scaleFontToUserSetting: !0,
-          children: _
+          children: g
         }),
         forceOpen: v,
         "aria-label": !1,
@@ -112,7 +112,7 @@ function x(e) {
         }
       }), v && (0, r.jsx)(o.T, {
         id: s,
-        children: _
+        children: g
       })]
     }) : T, (0, r.jsxs)(d.Text, {
       variant: "text-md/bold",
@@ -159,19 +159,19 @@ function O(e) {
     answersInteraction: t,
     didSelfVote: i
   }).with({
-    answersInteraction: _.Y7.RADIO_BUTTONS
+    answersInteraction: g.Y7.RADIO_BUTTONS
   }, () => (0, r.jsx)(h.Og, {
     isSelected: n,
     size: 24,
     className: o
   })).with({
-    answersInteraction: _.Y7.CHECKBOXES
+    answersInteraction: g.Y7.CHECKBOXES
   }, () => (0, r.jsx)(h.zs, {
     isSelected: n,
     size: 20,
     className: o
   })).with({
-    answersInteraction: _.Y7.LIST,
+    answersInteraction: g.Y7.LIST,
     didSelfVote: !0
   }, () => (0, r.jsx)(h.ZY, {
     isVictor: l,
@@ -191,7 +191,7 @@ function j(e) {
   } = e, c = !0 === t.isSelected, u = !0 === t.didSelfVote, p = !0 === t.isVictor, m = t.shouldAnimateTransition;
   return (0, r.jsxs)("div", {
     className: a()(y.answerInner, {
-      [y.currentlyVoting]: i !== _.Y7.LIST,
+      [y.currentlyVoting]: i !== g.Y7.LIST,
       [y.selected]: c
     }),
     children: [l ? (0, r.jsx)(v, {

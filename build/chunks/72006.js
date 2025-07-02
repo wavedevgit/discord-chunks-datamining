@@ -2,7 +2,7 @@
 n.d(t, {
   FZ: () => N,
   Hl: () => L,
-  NJ: () => k,
+  NJ: () => w,
   R8: () => F,
   Sq: () => R,
   Wg: () => Z,
@@ -10,7 +10,7 @@ n.d(t, {
   c2: () => A,
   eE: () => M,
   iE: () => D,
-  iK: () => w,
+  iK: () => k,
   lv: () => P,
   nR: () => T,
   q0: () => l.a,
@@ -155,17 +155,17 @@ function A(e, t) {
   return j(e, t, 0, n.length)
 }
 
-function w(e, t) {
+function k(e, t) {
   let n = t.getSelection();
   return n = (n = n.set("focusOffset", e)).set("anchorOffset", e), r.EditorState.forceSelection(t, n)
 }
 
-function k(e) {
-  return w(e.getCurrentContent().getFirstBlock().getText().length, e)
+function w(e) {
+  return k(e.getCurrentContent().getFirstBlock().getText().length, e)
 }
 
 function M(e) {
-  return w(0, e)
+  return k(0, e)
 }
 
 function F(e) {

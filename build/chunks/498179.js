@@ -50,8 +50,8 @@ function m(e) {
     fullWidth: n = !1,
     size: m = l.zxk.Sizes.LARGE,
     color: f,
-    customDisabledColor: g,
-    hideNotLaunchable: _,
+    customDisabledColor: _,
+    hideNotLaunchable: g,
     tooltipPosition: h,
     onClick: b,
     className: E,
@@ -62,7 +62,7 @@ function m(e) {
     fullWidth: n,
     size: m,
     color: f,
-    customDisabledColor: g,
+    customDisabledColor: _,
     tooltipPosition: h,
     onClick: b,
     className: E,
@@ -75,7 +75,7 @@ function m(e) {
   })) : S ? (0, r.jsx)("div", {
     children: "deprecated!"
   }) : (0, r.jsx)(c.Z, p(d({}, v), {
-    hideNotLaunchable: _,
+    hideNotLaunchable: g,
     applicationId: t.id
   }))
 }

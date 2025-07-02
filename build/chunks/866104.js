@@ -15,8 +15,8 @@ var r = n(255367),
   p = n(565138),
   m = n(353254),
   f = n(695346),
-  g = n(271383),
-  _ = n(594174),
+  _ = n(271383),
+  g = n(594174),
   h = n(671533),
   b = n(51144),
   E = n(506071),
@@ -83,11 +83,11 @@ function T(e) {
   } = e, m = l.id, {
     nickname: f,
     nickcolor: h
-  } = (0, o.cj)([g.ZP, _.default], () => {
+  } = (0, o.cj)([_.ZP, g.default], () => {
     var e, t;
-    let n = _.default.getCurrentUser();
+    let n = g.default.getCurrentUser();
     a()(null != n, "user cannot be null");
-    let r = g.ZP.getMember(m, n.id);
+    let r = _.ZP.getMember(m, n.id);
     return {
       nickname: null != (e = null == r ? void 0 : r.nick) ? e : b.ZP.getName(n),
       nickcolor: null != (t = null == r ? void 0 : r.colorString) ? t : void 0

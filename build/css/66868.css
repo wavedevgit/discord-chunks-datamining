@@ -1,6 +1,6 @@
 /**
   Module ID: 66868
-  Original File Name: 004ce264678ce20d
+  Original File Name: 8ab01898ff1d6e60
 **/
 .container__11014 {
     background-color: var(--background-base-lowest);
@@ -105,8 +105,11 @@
 }
 
 .right__58ae6 {
-    background-color: var(--background-base-lower);
     padding-right: 0
+}
+
+.right__58ae6,.rightContent__58ae6 {
+    background-color: var(--background-base-lower)
 }
 
 .headerContainer__58ae6 {
@@ -131,4 +134,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=004ce264678ce20d.css.map*/
+/*# sourceMappingURL=8ab01898ff1d6e60.css.map*/

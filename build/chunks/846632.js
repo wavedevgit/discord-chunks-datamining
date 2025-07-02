@@ -1,6 +1,6 @@
 /** Chunk was on 66868 **/
 n.d(t, {
-  default: () => h
+  default: () => m
 });
 var r = n(255367);
 n(73800);
@@ -8,8 +8,8 @@ var a = n(120356),
   i = n.n(a),
   o = n(442837),
   l = n(481060),
-  d = n(840720),
-  s = n(742409),
+  s = n(840720),
+  d = n(742409),
   c = n(430824),
   u = n(594174),
   g = n(731722),
@@ -37,7 +37,7 @@ function C(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,11 +50,11 @@ function m(e, t) {
   }), e
 }
 
-function h(e) {
+function m(e) {
   var t, n, {
       guildId: a
     } = e,
-    h = function(e, t) {
+    m = function(e, t) {
       if (null == e) return {};
       var n, r, a = function(e, t) {
         if (null == e) return {};
@@ -79,11 +79,11 @@ function h(e) {
       isAdopting: O,
       onAdoptTag: y,
       onEditProfile: x
-    } = (0, f.Z)(a, h.onClose);
-  if (null != j && (0, g.up)(j) && (0, g.jq)(j)) return (0, r.jsxs)(l.Y0X, m(C({
+    } = (0, f.Z)(a, m.onClose);
+  if (null != j && (0, g.up)(j) && (0, g.jq)(j)) return (0, r.jsxs)(l.Y0X, h(C({
     className: _.modal,
     size: l.CgR.DYNAMIC
-  }, h), {
+  }, m), {
     parentComponent: "GuildTagAdoptModal",
     children: [(0, r.jsxs)(l.hzk, {
       className: _.modalContent,
@@ -101,7 +101,7 @@ function h(e) {
               variant: "text-md/normal",
               children: p.intl.string(b.default.kHxfDw)
             })]
-          }), (0, r.jsx)(d.Z, {
+          }), (0, r.jsx)(s.Z, {
             className: _.guildRow,
             guildId: j.id,
             guildName: j.name,
@@ -115,7 +115,7 @@ function h(e) {
               text: p.intl.string(b.default.WlENZm),
               tooltipContentClassName: _.tooltip,
               shouldShow: v,
-              children: e => (0, r.jsx)(l.zxk, m(C({}, e), {
+              children: e => (0, r.jsx)(l.zxk, h(C({}, e), {
                 fullWidth: !0,
                 onClick: y,
                 submitting: O,
@@ -132,7 +132,8 @@ function h(e) {
         })
       }), (0, r.jsx)("div", {
         className: i()(_.modalContentChild, _.right),
-        children: (0, r.jsx)(s.Z, {
+        children: (0, r.jsx)(d.Z, {
+          className: _.rightContent,
           guildId: j.id,
           tag: j.profile.tag,
           badge: null != (n = j.profile.badge) ? n : ""
@@ -140,7 +141,7 @@ function h(e) {
       })]
     }), (0, r.jsx)(l.olH, {
       className: _.close,
-      onClick: h.onClose
+      onClick: m.onClose
     })]
   }))
 }

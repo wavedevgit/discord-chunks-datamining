@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(481060),
   m = n(911969),
   f = n(456100),
-  g = n(595519),
-  _ = n(566620),
+  _ = n(595519),
+  g = n(566620),
   h = n(403404),
   b = n(100527),
   E = n(906732),
@@ -97,8 +97,8 @@ function U(e, t, n, i, l, o) {
     message: d,
     compact: m,
     channel: f,
-    isInteractionUserBlocked: g,
-    isInteractionUserIgnored: _,
+    isInteractionUserBlocked: _,
+    isInteractionUserIgnored: g,
     showAvatarPopout: h,
     showTargetAvatarPopout: b,
     onClickAvatar: E,
@@ -108,7 +108,7 @@ function U(e, t, n, i, l, o) {
     onPopoutRequestClose: v
   } = e;
   if (m && 1 === n) return null;
-  if (m && null == d.activityInstance || g || _) return (0, r.jsx)("div", {
+  if (m && null == d.activityInstance || _ || g) return (0, r.jsx)("div", {
     className: k.replyBadge,
     children: (0, r.jsx)(M, {
       className: k.commandIcon
@@ -234,7 +234,7 @@ function H(e) {
     K = (0, N.Sw)(null == (t = l.interaction) ? void 0 : t.user, o),
     Y = (0, N.Sw)(z, o),
     X = i.useMemo(() => e.compact ? (0, w.Z)((0, T.vc)(u()(), "LT")) : null, [e.compact]),
-    q = (0, g.NX)(o.id),
+    q = (0, _.NX)(o.id),
     Q = l.interaction;
   if (null == Q || null == K) return null;
   let J = () => {
@@ -348,7 +348,7 @@ function H(e) {
         channel: o,
         openInPopout: !1,
         analyticsLocations: c
-      }), (0, _.w1)({
+      }), (0, g.w1)({
         guildId: o.guild_id
       })
     };

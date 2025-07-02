@@ -32,8 +32,8 @@ var r = n(255367),
   T = n(246946),
   N = n(594174),
   A = n(585483),
-  w = n(63063),
-  k = n(405656),
+  k = n(63063),
+  w = n(405656),
   M = n(51144),
   F = n(854709),
   Z = n(981631),
@@ -49,7 +49,7 @@ function H(e, t, n) {
   }) : e[t] = n, e
 }
 
-function B(e) {
+function U(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -62,7 +62,7 @@ function B(e) {
   return e
 }
 
-function U(e, t) {
+function B(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -222,7 +222,7 @@ let z = h()("2015-05-15").local(),
       })]
     })
   },
-  V = e => (0, r.jsx)(Q, U(B({}, e), {
+  V = e => (0, r.jsx)(Q, B(U({}, e), {
     className: D.user,
     renderResult: W
   })),
@@ -243,7 +243,7 @@ let z = h()("2015-05-15").local(),
     },
     [Z.dCx.FILTER_IN]: {
       titleText: () => L.intl.string(L.t.vHyCgo),
-      component: e => (0, r.jsx)(Q, U(B({}, e), {
+      component: e => (0, r.jsx)(Q, B(U({}, e), {
         renderResult: K
       }))
     },
@@ -292,7 +292,7 @@ let z = h()("2015-05-15").local(),
         let h = "",
           p = s.useMemo(() => {
             var e;
-            return e = l.text, k.kG(e).map((e, t, n) => k.Fr(e, n[t + 1]) ? e : new y.WU(e.getFullMatch(), y.Xe))
+            return e = l.text, w.kG(e).map((e, t, n) => w.Fr(e, n[t + 1]) ? e : new y.WU(e.getFullMatch(), y.Xe))
           }, [l.text]).map(e => {
             let t = e.getFullMatch();
             if ("" === t.trim()) return null;
@@ -307,7 +307,7 @@ let z = h()("2015-05-15").local(),
               children: t
             }, e.type + t)
           });
-        return (0, r.jsxs)(g.P3F, U(B({
+        return (0, r.jsxs)(g.P3F, B(U({
           className: D.option,
           onClick: t,
           onFocus: n
@@ -328,11 +328,11 @@ let z = h()("2015-05-15").local(),
       groupTip: () => (0, r.jsx)(g.ua7, {
         text: L.intl.string(L.t.hvVgAQ),
         position: "left",
-        children: e => (0, r.jsx)("div", U(B({
+        children: e => (0, r.jsx)("div", B(U({
           className: D.searchLearnMore
         }, e), {
           children: (0, r.jsx)(g.eee, {
-            href: w.Z.getArticleURL(Z.BhN.USING_SEARCH),
+            href: k.Z.getArticleURL(Z.BhN.USING_SEARCH),
             title: L.intl.string(L.t.hvVgAQ),
             children: (0, r.jsx)(g.idN, {
               size: "md",
@@ -350,8 +350,8 @@ let z = h()("2015-05-15").local(),
             searchId: o
           } = e,
           c = G(e, ["result", "onSelect", "onFocus", "showFilter", "searchId"]);
-        let u = k.Ko(null != (t = n.token) ? t : "");
-        return (0, r.jsxs)(g.P3F, U(B({
+        let u = w.Ko(null != (t = n.token) ? t : "");
+        return (0, r.jsxs)(g.P3F, B(U({
           className: a()(D.option, D.searchOption),
           onClick: s,
           onFocus: l
@@ -437,8 +437,8 @@ class X extends s.PureComponent {
       } = e;
       if (l.type !== i.mode.type) this.setSelectedIndex(-1);
       else if (t.selectedIndex >= 0 && (t.selectedIndex === n || i.autocompletes.length !== a.length)) {
-        let e = k.zV(i.autocompletes, i.mode)[t.selectedIndex],
-          n = k.zV(a, l).indexOf(e); - 1 !== n ? this.setSelectedIndex(n) : t.selectedIndex >= s && this.setSelectedIndex(s - 1)
+        let e = w.zV(i.autocompletes, i.mode)[t.selectedIndex],
+          n = w.zV(a, l).indexOf(e); - 1 !== n ? this.setSelectedIndex(n) : t.selectedIndex >= s && this.setSelectedIndex(s - 1)
       }
     }), H(this, "focusNextOption", () => {
       this.focusOtherOption(1)
@@ -450,14 +450,14 @@ class X extends s.PureComponent {
       } = this.state, {
         resultsState: n
       } = this.props;
-      k.Fz(n.mode.filter) || this.focusOption(t + e)
+      w.Fz(n.mode.filter) || this.focusOption(t + e)
     }), H(this, "focusOption", e => {
       let t = e,
         {
           autocompletes: n
         } = this.props.resultsState,
         r = this.shouldShowSearchQuery();
-      t < -1 || !r && t < 0 ? t = k.BU(n) - 1 : r && t >= k.BU(n) ? t = -1 : !r && t >= k.BU(n) && (t = 0), this.setSelectedIndex(t)
+      t < -1 || !r && t < 0 ? t = w.BU(n) - 1 : r && t >= w.BU(n) ? t = -1 : !r && t >= w.BU(n) && (t = 0), this.setSelectedIndex(t)
     }), H(this, "selectOption", e => {
       let t = e;
       if (null == t && (t = this.state.selectedIndex), t < 0) return !1;
@@ -465,8 +465,8 @@ class X extends s.PureComponent {
         autocompletes: n,
         mode: r
       } = this.props.resultsState;
-      if (k.Fz(r.filter)) return;
-      let s = k.zV(n, r);
+      if (w.Fz(r.filter)) return;
+      let s = w.zV(n, r);
       if (t >= s.length) return !1;
       let l = s[t],
         a = function(e) {
@@ -496,7 +496,7 @@ class X extends s.PureComponent {
       let {
         mode: e
       } = this.props.resultsState;
-      return e.type !== Z.Sap.FILTER && e.type !== Z.Sap.EMPTY && !k.Fz(e.filter)
+      return e.type !== Z.Sap.FILTER && e.type !== Z.Sap.EMPTY && !w.Fz(e.filter)
     }), H(this, "renderDatePicker", () => (0, r.jsxs)("div", {
       className: D.datePicker,
       children: [(0, r.jsx)(q, {
@@ -529,7 +529,7 @@ class X extends s.PureComponent {
         autocompletes: s,
         mode: l
       } = this.props.resultsState;
-      if (k.Fz(l.filter)) return this.renderDatePicker();
+      if (w.Fz(l.filter)) return this.renderDatePicker();
       let a = -1;
       return s.map(s => {
         var i, o, c;
@@ -555,7 +555,7 @@ class X extends s.PureComponent {
             var i, o;
             if (null == l || null == s) return null;
             let c = e === (a += 1);
-            return (0, r.jsx)(g, B({
+            return (0, r.jsx)(g, U({
               searchId: n,
               group: null != (i = l.group) ? i : s.group,
               result: l,
@@ -579,10 +579,10 @@ let Y = s.forwardRef((e, t) => {
         r = null != e ? e : n ? Z.aib.DMS : t;
       o()(null != r, "SearchPopout.getStateFromStores - invalid searchId");
       let s = I.Z.getState(r),
-        l = k.BU(s.autocompletes);
+        l = w.BU(s.autocompletes);
       return [r, s, l]
     });
-  return (0, r.jsx)(X, U(B({}, e), {
+  return (0, r.jsx)(X, B(U({}, e), {
     searchId: s,
     resultsState: l,
     totalResults: a,

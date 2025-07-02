@@ -4,7 +4,7 @@ n.d(t, {
   Kt: () => b,
   Yt: () => h,
   a1: () => E,
-  bN: () => _
+  bN: () => g
 });
 var r = n(81643),
   i = n(974814),
@@ -18,15 +18,15 @@ var r = n(81643),
   p = n(981631),
   m = n(388032);
 let f = new Date("06/16/2020"),
-  g = [p.V_K.AGE_RESTRICTED, p.V_K.EXPLICIT];
+  _ = [p.V_K.AGE_RESTRICTED, p.V_K.EXPLICIT];
 
-function _() {
+function g() {
   let e = s.default.getCurrentUser();
   return null != e && c.default.extractTimestamp(e.id) > f.getTime() && null == e.nsfwAllowed
 }
 
 function h(e) {
-  return g.includes(e.nsfwLevel)
+  return _.includes(e.nsfwLevel)
 }
 
 function b() {

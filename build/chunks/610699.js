@@ -14,8 +14,8 @@ var r = n(255367),
   p = n(317381),
   m = n(100527),
   f = n(906732),
-  g = n(758199),
-  _ = n(943762),
+  _ = n(758199),
+  g = n(943762),
   h = n(914498),
   b = n(880251),
   E = n(515344),
@@ -124,8 +124,8 @@ function D(e) {
       getAcceptInviteContext: u
     } = e,
     {
-      approximate_member_count: g,
-      approximate_presence_count: _,
+      approximate_member_count: _,
+      approximate_presence_count: g,
       target_type: h,
       target_application: b
     } = a;
@@ -187,8 +187,8 @@ function D(e) {
       isMember: H,
       channel: k,
       guild: C,
-      members: g,
-      membersOnline: _,
+      members: _,
+      membersOnline: g,
       isActivityActive: R,
       submitting: G,
       isDisabled: V,
@@ -230,7 +230,7 @@ function M(e) {
     disabledReason: y && null != C ? C : void 0,
     onClick: x
   }], [x, m, y, s, f, C]);
-  return (0, r.jsx)(g.W, (t = function(e) {
+  return (0, r.jsx)(_.W, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -260,7 +260,7 @@ function M(e) {
         guild: u,
         hasEnded: !m,
         textColor: "none"
-      }), s ? A > 0 && (0, r.jsx)(_.K, {
+      }), s ? A > 0 && (0, r.jsx)(g.K, {
         activityUsers: o,
         guildId: u.id,
         activityText: Z.intl.string(Z.t.BMTj29)

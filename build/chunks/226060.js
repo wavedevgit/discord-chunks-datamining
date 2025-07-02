@@ -1,6 +1,6 @@
 /** Chunk was on 61668 **/
 n.d(t, {
-  Z: () => _
+  Z: () => g
 });
 var r = n(255367);
 n(73800);
@@ -15,16 +15,16 @@ var i = n(512722),
   p = n(240864),
   m = n(57949),
   f = n(400916),
-  g = n(388032);
+  _ = n(388032);
 
-function _(e) {
+function g(e) {
   let {
     guildId: t,
     guildProductListingId: n,
     sourceAnalyticsLocations: i
-  } = e, _ = (0, a.e7)([p.Z], () => p.Z.getGuildProduct(n)), h = (0, a.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, u.n)();
-  return (l()(null != h, "guild cannot be null"), l()(null != _, "guildProductListing cannot be null"), (0, d.SO)(h)) ? (0, r.jsx)(o.ua7, {
-    text: g.intl.string(g.t.sAJr9f),
+  } = e, g = (0, a.e7)([p.Z], () => p.Z.getGuildProduct(n)), h = (0, a.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, u.n)();
+  return (l()(null != h, "guild cannot be null"), l()(null != g, "guildProductListing cannot be null"), (0, d.SO)(h)) ? (0, r.jsx)(o.ua7, {
+    text: _.intl.string(_.t.sAJr9f),
     children: e => {
       var t, n;
       return (0, r.jsx)(o.zxk, (t = function(e) {
@@ -47,7 +47,7 @@ function _(e) {
       }({}, e), n = n = {
         color: o.zxk.Colors.BRAND,
         disabled: !0,
-        children: g.intl.string(g.t.xUi3BA)
+        children: _.intl.string(_.t.xUi3BA)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -59,21 +59,21 @@ function _(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))
     }
-  }) : _.has_entitlement ? null != _.attachments ? (0, r.jsx)(f.Z, {
+  }) : g.has_entitlement ? null != g.attachments ? (0, r.jsx)(f.Z, {
     guildId: h.id,
-    productId: _.id
+    productId: g.id
   }) : (0, r.jsx)(o.zxk, {
     color: o.zxk.Colors.PRIMARY,
     disabled: !0,
-    children: g.intl.string(g.t.RcTOGB)
+    children: _.intl.string(_.t.RcTOGB)
   }) : (0, r.jsx)(o.gtL, {
     shineSize: o.gtL.ShineSizes.SMALL,
     pauseAnimation: b || !E,
     onClick: () => (0, m.z)({
-      guildProductListing: _,
+      guildProductListing: g,
       guildId: h.id,
       sourceAnalyticsLocations: i
     }),
-    children: g.intl.string(g.t.xUi3BA)
+    children: _.intl.string(_.t.xUi3BA)
   })
 }

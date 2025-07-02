@@ -21,14 +21,14 @@ function d(e) {
     linkId: m
   } = e, {
     analyticsLocations: f
-  } = (0, l.ZP)(i.Z.ACTIVITY_BOOKMARK), [g] = (0, s.Z)([t]), _ = null != g && (0, a.ye)(g), {
+  } = (0, l.ZP)(i.Z.ACTIVITY_BOOKMARK), [_] = (0, s.Z)([t]), g = null != _ && (0, a.ye)(_), {
     data: h,
     error: b
-  } = (0, c.h)(null == g ? void 0 : g.id, m);
-  return null == g || !1 === _ ? null : null != m && null == b && null != h ? (0, r.jsx)(l.Gt, {
+  } = (0, c.h)(null == _ ? void 0 : _.id, m);
+  return null == _ || !1 === g ? null : null != m && null == b && null != h ? (0, r.jsx)(l.Gt, {
     value: f,
     children: (0, r.jsx)(u.b, {
-      application: g,
+      application: _,
       customId: n,
       customLink: h,
       embedUrl: p,
@@ -37,7 +37,7 @@ function d(e) {
   }) : (0, r.jsx)(l.Gt, {
     value: f,
     children: (0, r.jsx)(o.O, {
-      app: g,
+      app: _,
       embedUrl: p,
       linkType: o.U.ACTIVITY,
       activityCustomId: n,

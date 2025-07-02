@@ -38,7 +38,7 @@ let T = e => {
       })), null != t) return (0, i.jsx)("div", {
       className: v.premiumOfferPill,
       children: (0, i.jsx)(o.Text, {
-        variant: "redesign/heading-18/bold",
+        variant: "text-xs/bold",
         color: "always-white",
         children: t
       })
