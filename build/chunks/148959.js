@@ -24,7 +24,7 @@ function f(e, t, n) {
 }
 let _ = 10 * c.Z.Millis.SECOND,
   p = 10 * c.Z.Millis.SECOND,
-  h = 2e3;
+  h = 500;
 var m = function(e) {
   return e.RequestedSSRCsUpdate = "requested-ssrcs-update", e.RequestedStreamsUpdate = "requested-streams-update", e
 }({});
