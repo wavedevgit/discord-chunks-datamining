@@ -151,7 +151,7 @@ function S() {
     targetElementRef: e,
     popoutPosition: "bottom",
     popoutAlign: "center",
-    spacing: 3,
+    spacing: 4,
     children: (t, n, i) => (0, r.jsx)(C, {
       ref: e,
       selectedOverride: n,

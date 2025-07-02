@@ -5,5 +5,6 @@ n.r(e.exports = {
   caretTopCenter: "caretTopCenter__53b23",
   imageContainer: "imageContainer__53b23",
   image: "image__53b23",
-  close: "close__53b23"
+  close: "close__53b23",
+  innerClose: "innerClose__53b23"
 })

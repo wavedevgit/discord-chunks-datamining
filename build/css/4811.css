@@ -1,6 +1,6 @@
 /**
   Module ID: 4811
-  Original File Name: 84b6187dddfcb375
+  Original File Name: a95d9993962d43c6
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -2526,15 +2526,16 @@
 
 .caughtUpContainer_ea5470 {
     background-color: var(--background-feedback-positive);
-    cursor: pointer;
     display: flex;
     flex-direction: row;
     gap: 4px;
-    justify-content: space-between;
+    justify-content: center;
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
     overflow: hidden;
+    padding-bottom: 8px;
+    padding-top: 8px;
     position: relative
 }
 
@@ -2545,16 +2546,26 @@
 .caughtUpContent_ea5470 {
     display: flex;
     flex-direction: row;
-    gap: 4px;
-    justify-content: space-between;
+    gap: 8px;
+    justify-content: center;
     max-height: 26px;
     overflow: hidden;
     padding: 4px 12px;
-    width: 100%
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.full-motion .caughtUpContainer_ea5470 {
+    transition: padding .3s ease;
+    transition-delay: .5s
 }
 
 .full-motion .caughtUpContainer_ea5470.hide_ea5470 {
-    display: flex
+    display: flex;
+    padding-bottom: 0;
+    padding-top: 0;
+    transition-delay: 0s
 }
 
 .full-motion .caughtUpContent_ea5470 {
@@ -2573,10 +2584,15 @@
     text-align: center
 }
 
-.caughtUpIcon_ea5470 {
+.caughtUpCloseIcon_ea5470 {
+    align-items: center;
+    bottom: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
     position: absolute;
     right: 12px;
-    top: 4px
+    top: auto
 }
 
 .full-motion .headerButton_ea5470 {
@@ -2586,7 +2602,6 @@
 .headerButton_ea5470 {
     align-items: center;
     border-radius: var(--radius-xs);
-    cursor: pointer;
     display: flex;
     justify-content: center;
     padding: 4px
@@ -3950,12 +3965,18 @@ div:has(>.repositionLayerSidebarPopout_fc71d3) {
     color: #fff!important;
     opacity: .75!important;
     position: absolute;
-    right: var(--space-6);
-    top: var(--space-8)
+    right: var(--space-4);
+    top: var(--space-4)
 }
 
 .close__53b23:hover {
     opacity: 1!important
+}
+
+.innerClose__53b23 {
+    color: #fff;
+    height: 18px;
+    width: 18px
 }
 
 @keyframes progressPulse_eff079 {
@@ -8699,4 +8720,4 @@ div:has(>.positionLayer__4f4b6) {
     width: 96px
 }
 
-/*# sourceMappingURL=84b6187dddfcb375.css.map*/
+/*# sourceMappingURL=a95d9993962d43c6.css.map*/

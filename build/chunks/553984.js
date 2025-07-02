@@ -221,7 +221,6 @@ function S(e) {
       }))
     },
     children: e => (0, r.jsx)(s.ua7, {
-      align: "left",
       position: "bottom",
       forceOpen: h,
       shouldShow: h && !c,
